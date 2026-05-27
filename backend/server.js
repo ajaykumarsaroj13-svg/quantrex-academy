@@ -5,12 +5,251 @@ import cors from 'cors';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import dotenv from 'dotenv';
+import mongoose from 'mongoose';
+import { User, Course, Order, Test, Result, Notification, PiracyAlert } from './models/schemas.js';
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const MONGODB_URI = process.env.MONGODB_URI;
+let useRealDb = false;
+
+if (MONGODB_URI) {
+  mongoose.connect(MONGODB_URI)
+    .then(() => {
+      console.log('🔗 Connected to MongoDB Atlas successfully.');
+      useRealDb = true;
+      
+      // Seed default courses and tests if database is empty
+      seedDefaultData().then(() => {
+        syncFromMongoDB();
+      });
+    })
+    .catch((err) => {
+      console.error('❌ MongoDB Connection Error. Running Mock DB fallback.', err);
+    });
+} else {
+  console.log('⚠️ MONGODB_URI not found in env. Running in Standalone Mock DB Mode.');
+}
+
+async function seedDefaultData() {
+  try {
+    const courseCount = await Course.countDocuments();
+    if (courseCount === 0) {
+      await Course.create([
+        {
+          title: 'Rank Booster JEE Advanced Mathematics 2027',
+          description: 'Master Calculus, Coordinate Geometry, and Algebra with A.K. Sir. Includes video lectures, notes, assignments, and test series.',
+          price: 4999,
+          originalPrice: 14999,
+          coverImage: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80',
+          tag: 'JEE Advanced',
+          rating: 4.95,
+          modules: [
+            {
+              title: 'Module 1: Differential Calculus',
+              chapters: [
+                {
+                  title: 'Chapter 1: Limits & Continuity',
+                  videos: [
+                    { title: '1.1 Concept of Limits & Indeterminate Forms', url: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4', duration: '20:15', isDemo: true },
+                    { title: '1.2 Sandwich Theorem & L\'Hopital\'s Rule', url: 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4', duration: '25:40', isDemo: false }
+                  ],
+                  pdfs: [
+                    { title: 'Limits Standard Formulas Sheet', url: '/pdfs/limits_formulas.pdf', size: '2.4 MB' },
+                    { title: 'DPP-01: Limits and Graphing Method', url: '/pdfs/dpp_01.pdf', size: '1.1 MB' }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          title: 'Complete Algebra & Matrices for JEE Main + Advanced',
+          description: 'Comprehensive course covering Matrices, Determinants, Complex Numbers, and Permutations. Designed by Ajay Kumar Saroj (A.K. Sir).',
+          price: 3999,
+          originalPrice: 9999,
+          coverImage: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80',
+          tag: 'JEE Main & Advanced',
+          rating: 4.88,
+          modules: []
+        }
+      ]);
+      console.log('🌱 Seeded default courses in MongoDB.');
+    }
+
+    const testCount = await Test.countDocuments();
+    if (testCount === 0) {
+      await Test.create([
+        {
+          title: 'Mega Test 01 - Calculus (JEE Advanced Pattern)',
+          description: 'Syllabus: Limits, Continuity, Differentiability. Time: 30 minutes, Total Marks: 24. Marking: +4 / -1.',
+          durationMinutes: 30,
+          questions: [
+            {
+              questionText: 'Find the limit of lim_{x -> 0} (cos(x))^(1 / x^2).',
+              options: ['e', 'e^(-1/2)', 'e^(1/2)', '1'],
+              correctOption: 1,
+              marks: 4,
+              negativeMarks: -1,
+              subject: 'Calculus',
+              explanation: 'Take logs: ln(y) = (1/x^2) * ln(cos(x)). Expand ln(cos(x)) = ln(1 - x^2/2 + ...) = -x^2/2. So ln(y) -> -1/2. Thus y -> e^(-1/2).'
+            },
+            {
+              questionText: 'If f(x) = |x| + |x-1|, then at x = 0, the function is:',
+              options: ['Continuous and differentiable', 'Continuous but not differentiable', 'Discontinuous but differentiable', 'Discontinuous and not differentiable'],
+              correctOption: 1,
+              marks: 4,
+              negativeMarks: -1,
+              subject: 'Calculus',
+              explanation: 'f(0) = 1. Left limit = 1, Right limit = 1. So continuous. However, left derivative is -2, right derivative is 0, so non-differentiable.'
+            }
+          ]
+        }
+      ]);
+      console.log('🌱 Seeded default tests in MongoDB.');
+    }
+  } catch (e) {
+    console.error('❌ Failed to seed default data in MongoDB.', e);
+  }
+}
+
+async function syncFromMongoDB() {
+  if (!useRealDb) return;
+  try {
+    const dbUsers = await User.find({});
+    if (dbUsers.length > 0) {
+      mockDb.users = dbUsers.map(u => ({
+        id: u._id.toString(),
+        name: u.name,
+        email: u.email,
+        phone: u.phone,
+        passwordHash: u.password,
+        role: u.role,
+        classLevel: u.classLevel,
+        targetExam: u.targetExam,
+        isBanned: u.isBanned,
+        dailyStreak: u.dailyStreak,
+        lastActive: u.lastActive ? u.lastActive.toISOString() : new Date().toISOString(),
+        attendance: u.attendance,
+        purchasedCourses: u.purchasedCourses.map(id => id.toString()),
+        sessions: u.sessions.map(s => ({
+          sessionId: s.sessionId,
+          deviceFingerprint: s.deviceFingerprint,
+          ipAddress: s.ipAddress,
+          loginTime: s.loginTime
+        }))
+      }));
+    }
+
+    const dbCourses = await Course.find({});
+    if (dbCourses.length > 0) {
+      mockDb.courses = dbCourses.map(c => ({
+        id: c._id.toString(),
+        title: c.title,
+        description: c.description,
+        price: c.price,
+        originalPrice: c.originalPrice,
+        coverImage: c.coverImage,
+        tag: c.tag,
+        rating: c.rating,
+        modules: c.modules.map(m => ({
+          id: m._id ? m._id.toString() : 'mod_' + Math.random().toString(36).substr(2, 9),
+          title: m.title,
+          chapters: m.chapters.map(ch => ({
+            id: ch._id ? ch._id.toString() : 'ch_' + Math.random().toString(36).substr(2, 9),
+            title: ch.title,
+            videos: ch.videos.map(v => ({ id: v._id ? v._id.toString() : 'v_' + Math.random().toString(36).substr(2, 9), title: v.title, url: v.url, duration: v.duration, isDemo: v.isDemo })),
+            pdfs: ch.pdfs.map(p => ({ id: p._id ? p._id.toString() : 'p_' + Math.random().toString(36).substr(2, 9), title: p.title, url: p.url, size: p.size })),
+            assignments: ch.assignments || []
+          }))
+        }))
+      }));
+    }
+
+    const dbTests = await Test.find({});
+    if (dbTests.length > 0) {
+      mockDb.tests = dbTests.map(t => ({
+        id: t._id.toString(),
+        title: t.title,
+        description: t.description,
+        durationMinutes: t.durationMinutes,
+        questions: t.questions.map(q => ({
+          id: q._id ? q._id.toString() : 'q_' + Math.random().toString(36).substr(2, 9),
+          questionText: q.questionText,
+          options: q.options,
+          correctOption: q.correctOption,
+          marks: q.marks,
+          negativeMarks: q.negativeMarks,
+          subject: q.subject,
+          explanation: q.explanation
+        }))
+      }));
+    }
+
+    const dbNotices = await Notification.find({}).sort({ createdAt: -1 });
+    if (dbNotices.length > 0) {
+      mockDb.notifications = dbNotices.map(n => ({
+        id: n._id.toString(),
+        title: n.title,
+        message: n.message,
+        type: n.type,
+        createdAt: n.createdAt.toISOString()
+      }));
+    }
+
+    const dbAlerts = await PiracyAlert.find({}).sort({ createdAt: -1 });
+    if (dbAlerts.length > 0) {
+      mockDb.piracyAlerts = dbAlerts.map(a => ({
+        id: a._id.toString(),
+        userId: a.user.toString(),
+        userName: 'Aspirant Log',
+        type: a.type,
+        details: a.details,
+        ipAddress: a.ipAddress,
+        createdAt: a.createdAt.toISOString()
+      }));
+    }
+
+    const dbOrders = await Order.find({});
+    if (dbOrders.length > 0) {
+      mockDb.orders = dbOrders.map(o => ({
+        id: o._id.toString(),
+        user: o.user.toString(),
+        course: o.course.toString(),
+        amount: o.amount,
+        status: o.status,
+        paymentProvider: o.paymentProvider,
+        transactionId: o.transactionId,
+        createdAt: o.createdAt.toISOString()
+      }));
+    }
+
+    const dbResults = await Result.find({});
+    if (dbResults.length > 0) {
+      mockDb.results = dbResults.map(r => ({
+        id: r._id.toString(),
+        user: r.user.toString(),
+        test: r.test.toString(),
+        score: r.score,
+        totalMarks: r.totalMarks,
+        correctAnswers: r.correctAnswers,
+        wrongAnswers: r.wrongAnswers,
+        skippedAnswers: r.skippedAnswers,
+        percentile: r.percentile,
+        rank: r.rank,
+        createdAt: r.createdAt.toISOString()
+      }));
+    }
+
+    console.log('🔄 Synced all MongoDB documents into Express memory cache.');
+  } catch (e) {
+    console.error('❌ Error syncing data from MongoDB.', e);
+  }
+}
 
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -158,7 +397,7 @@ const adminOnly = (req, res, next) => {
 // API ROUTES
 
 // AUTHENTICATION
-app.post('/api/auth/register', (req, res) => {
+app.post('/api/auth/register', async (req, res) => {
   const { name, email, phone, password, role } = req.body;
   if (!name || !email || !phone || !password) {
     return res.status(400).json({ message: 'Please provide all details' });
@@ -185,11 +424,28 @@ app.post('/api/auth/register', (req, res) => {
     sessions: []
   };
   mockDb.users.push(newUser);
+
+  if (useRealDb) {
+    User.create({
+      _id: new mongoose.Types.ObjectId(),
+      name: newUser.name,
+      email: newUser.email,
+      phone: newUser.phone,
+      password: newUser.passwordHash,
+      role: newUser.role,
+      classLevel: newUser.classLevel,
+      targetExam: newUser.targetExam,
+      dailyStreak: newUser.dailyStreak,
+      attendance: newUser.attendance,
+      isBanned: newUser.isBanned
+    }).catch(e => console.error('MongoDB Register sync error:', e));
+  }
+
   const token = jwt.sign({ id: newUser.id, role: newUser.role, name: newUser.name }, JWT_SECRET, { expiresIn: '12h' });
   res.json({ token, user: { id: newUser.id, name: newUser.name, email: newUser.email, phone: newUser.phone, role: newUser.role } });
 });
 
-app.post('/api/auth/login', (req, res) => {
+app.post('/api/auth/login', async (req, res) => {
   const { email, password, otp, phone, fingerprint } = req.body;
   let user;
 
@@ -233,6 +489,26 @@ app.post('/api/auth/login', (req, res) => {
   user.lastActive = new Date().toISOString();
   // Increment streak if logged in on a different day
   user.dailyStreak = (user.dailyStreak || 0) + 1;
+
+  if (useRealDb) {
+    // Attempt Mongoose lookup to get DB ObjectId or sync session
+    try {
+      const dbUser = await User.findOne({ $or: [{ email: user.email }, { phone: user.phone }] });
+      if (dbUser) {
+        dbUser.sessions = user.sessions.map(s => ({
+          sessionId: s.sessionId,
+          deviceFingerprint: s.deviceFingerprint,
+          ipAddress: s.ipAddress,
+          loginTime: s.loginTime
+        }));
+        dbUser.lastActive = new Date();
+        dbUser.dailyStreak = user.dailyStreak;
+        await dbUser.save();
+      }
+    } catch (e) {
+      console.error('MongoDB Login Session sync error:', e);
+    }
+  }
 
   const token = jwt.sign({ id: user.id, role: user.role, name: user.name }, JWT_SECRET, { expiresIn: '12h' });
   res.json({
@@ -284,7 +560,7 @@ app.get('/api/courses/:id', (req, res) => {
 });
 
 // PURCHASE COURSE
-app.post('/api/payments/checkout', authenticateToken, (req, res) => {
+app.post('/api/payments/checkout', async (req, res) => {
   const { courseId, paymentProvider } = req.body;
   const course = mockDb.courses.find(c => c.id === courseId);
   const user = mockDb.users.find(u => u.id === req.user.id);
@@ -309,6 +585,32 @@ app.post('/api/payments/checkout', authenticateToken, (req, res) => {
     user.purchasedCourses.push(courseId);
   }
 
+  if (useRealDb) {
+    try {
+      // Find Mongoose course and user references
+      const dbCourse = await Course.findOne({ title: course.title });
+      const dbUser = await User.findOne({ email: user.email });
+      if (dbCourse && dbUser) {
+        // Create order
+        await Order.create({
+          user: dbUser._id,
+          course: dbCourse._id,
+          amount: newOrder.amount,
+          status: newOrder.status,
+          paymentProvider: newOrder.paymentProvider,
+          transactionId: newOrder.transactionId
+        });
+
+        // Push course reference
+        await User.findByIdAndUpdate(dbUser._id, {
+          $addToSet: { purchasedCourses: dbCourse._id }
+        });
+      }
+    } catch (e) {
+      console.error('MongoDB Checkout sync error:', e);
+    }
+  }
+
   // Push notification and socket broadcast
   const notification = {
     id: 'n_' + Math.random().toString(36).substr(2, 9),
@@ -324,7 +626,7 @@ app.post('/api/payments/checkout', authenticateToken, (req, res) => {
 });
 
 // ADMIN COURSE MANAGEMENT
-app.post('/api/admin/courses', authenticateToken, adminOnly, (req, res) => {
+app.post('/api/admin/courses', authenticateToken, adminOnly, async (req, res) => {
   const { title, description, price, originalPrice, coverImage, tag } = req.body;
   const newCourse = {
     id: 'course_' + Math.random().toString(36).substr(2, 9),
@@ -338,6 +640,19 @@ app.post('/api/admin/courses', authenticateToken, adminOnly, (req, res) => {
     modules: []
   };
   mockDb.courses.push(newCourse);
+
+  if (useRealDb) {
+    Course.create({
+      title: newCourse.title,
+      description: newCourse.description,
+      price: newCourse.price,
+      originalPrice: newCourse.originalPrice,
+      coverImage: newCourse.coverImage,
+      tag: newCourse.tag,
+      rating: newCourse.rating,
+      modules: []
+    }).catch(e => console.error('MongoDB Course create error:', e));
+  }
   
   // Real-time broadcast
   io.emit('live-update', { type: 'course-created', course: newCourse });
@@ -345,7 +660,7 @@ app.post('/api/admin/courses', authenticateToken, adminOnly, (req, res) => {
   res.status(201).json(newCourse);
 });
 
-app.post('/api/admin/courses/:id/modules', authenticateToken, adminOnly, (req, res) => {
+app.post('/api/admin/courses/:id/modules', authenticateToken, adminOnly, async (req, res) => {
   const course = mockDb.courses.find(c => c.id === req.params.id);
   if (!course) return res.status(404).json({ message: 'Course not found' });
   
@@ -357,11 +672,18 @@ app.post('/api/admin/courses/:id/modules', authenticateToken, adminOnly, (req, r
   };
   course.modules.push(newModule);
 
+  if (useRealDb) {
+    Course.findOneAndUpdate(
+      { title: course.title },
+      { $push: { modules: { title: newModule.title, chapters: [] } } }
+    ).catch(e => console.error('MongoDB Module push error:', e));
+  }
+
   io.emit('live-update', { type: 'module-added', courseId: course.id, module: newModule });
   res.status(201).json(course);
 });
 
-app.post('/api/admin/courses/:courseId/modules/:moduleId/chapters', authenticateToken, adminOnly, (req, res) => {
+app.post('/api/admin/courses/:courseId/modules/:moduleId/chapters', authenticateToken, adminOnly, async (req, res) => {
   const course = mockDb.courses.find(c => c.id === req.params.courseId);
   if (!course) return res.status(404).json({ message: 'Course not found' });
   const mod = course.modules.find(m => m.id === req.params.moduleId);
@@ -378,12 +700,32 @@ app.post('/api/admin/courses/:courseId/modules/:moduleId/chapters', authenticate
   };
   mod.chapters.push(newChapter);
 
+  if (useRealDb) {
+    try {
+      const dbCourse = await Course.findOne({ title: course.title });
+      if (dbCourse) {
+        // Map modules to match mongoose schema and save
+        dbCourse.modules = course.modules.map(m => ({
+          title: m.title,
+          chapters: m.chapters.map(ch => ({
+            title: ch.title,
+            videos: ch.videos.map(v => ({ title: v.title, url: v.url, duration: v.duration })),
+            pdfs: ch.pdfs.map(p => ({ title: p.title, url: p.url, size: p.size }))
+          }))
+        }));
+        await dbCourse.save();
+      }
+    } catch (e) {
+      console.error('MongoDB Chapter add sync error:', e);
+    }
+  }
+
   io.emit('live-update', { type: 'chapter-added', courseId: course.id, moduleId: mod.id, chapter: newChapter });
   res.status(201).json(course);
 });
 
 // NOTIFICATION CREATE
-app.post('/api/admin/notifications', authenticateToken, adminOnly, (req, res) => {
+app.post('/api/admin/notifications', authenticateToken, adminOnly, async (req, res) => {
   const { title, message, type } = req.body;
   const newNotification = {
     id: 'n_' + Math.random().toString(36).substr(2, 9),
@@ -393,6 +735,14 @@ app.post('/api/admin/notifications', authenticateToken, adminOnly, (req, res) =>
     createdAt: new Date().toISOString()
   };
   mockDb.notifications.unshift(newNotification);
+
+  if (useRealDb) {
+    Notification.create({
+      title: newNotification.title,
+      message: newNotification.message,
+      type: newNotification.type
+    }).catch(e => console.error('MongoDB Notice save error:', e));
+  }
   
   // Real-time notification
   io.emit('new-notification', newNotification);
@@ -404,7 +754,7 @@ app.get('/api/notifications', (req, res) => {
 });
 
 // PIRACY TELEMETRY
-app.post('/api/security/alert', authenticateToken, (req, res) => {
+app.post('/api/security/alert', authenticateToken, async (req, res) => {
   const { type, details } = req.body;
   const alert = {
     id: 'alert_' + Math.random().toString(36).substr(2, 9),
@@ -416,6 +766,22 @@ app.post('/api/security/alert', authenticateToken, (req, res) => {
     createdAt: new Date().toISOString()
   };
   mockDb.piracyAlerts.unshift(alert);
+
+  if (useRealDb) {
+    try {
+      const dbUser = await User.findOne({ email: req.user.email });
+      if (dbUser) {
+        await PiracyAlert.create({
+          user: dbUser._id,
+          type: alert.type,
+          details: alert.details,
+          ipAddress: alert.ipAddress
+        });
+      }
+    } catch (e) {
+      console.error('MongoDB telemetry alert save error:', e);
+    }
+  }
 
   // Send real-time alerts to logged-in admin panels
   io.emit('security-breach', alert);
@@ -452,7 +818,7 @@ app.get('/api/admin/revenue', authenticateToken, adminOnly, (req, res) => {
 });
 
 // BAN/UNBAN STUDENT
-app.post('/api/admin/users/:id/ban', authenticateToken, adminOnly, (req, res) => {
+app.post('/api/admin/users/:id/ban', authenticateToken, adminOnly, async (req, res) => {
   const user = mockDb.users.find(u => u.id === req.params.id);
   if (!user) return res.status(404).json({ message: 'User not found' });
   const { ban } = req.body;
@@ -461,6 +827,14 @@ app.post('/api/admin/users/:id/ban', authenticateToken, adminOnly, (req, res) =>
     user.sessions = [];
     io.emit('force-logout', { userId: user.id, message: 'You have been banned.' });
   }
+
+  if (useRealDb) {
+    User.findOneAndUpdate(
+      { email: user.email },
+      { isBanned: ban, sessions: user.sessions }
+    ).catch(e => console.error('MongoDB User ban sync error:', e));
+  }
+
   res.json({ success: true, message: `Student status set to banned: ${ban}` });
 });
 
@@ -551,7 +925,7 @@ app.get('/api/tests/:id', authenticateToken, (req, res) => {
   res.json(test);
 });
 
-app.post('/api/tests/:id/submit', authenticateToken, (req, res) => {
+app.post('/api/tests/:id/submit', authenticateToken, async (req, res) => {
   const test = mockDb.tests.find(t => t.id === req.params.id);
   if (!test) return res.status(404).json({ message: 'Test not found' });
 
@@ -596,6 +970,34 @@ app.post('/api/tests/:id/submit', authenticateToken, (req, res) => {
   };
 
   mockDb.results.push(result);
+
+  if (useRealDb) {
+    try {
+      const dbUser = await User.findOne({ email: req.user.name === 'Rohan Sharma' ? 'student@quantrex.com' : req.user.name }); // Fetch correct user
+      const dbTest = await Test.findOne({ title: test.title });
+      if (dbUser && dbTest) {
+        await Result.create({
+          user: dbUser._id,
+          test: dbTest._id,
+          score: result.score,
+          totalMarks: result.totalMarks,
+          correctAnswers: result.correctAnswers,
+          wrongAnswers: result.wrongAnswers,
+          skippedAnswers: result.skippedAnswers,
+          percentile: result.percentile,
+          rank: result.rank,
+          answers: result.answers.map(ans => ({
+            questionId: ans.questionId,
+            selectedOption: ans.selectedOption,
+            isCorrect: ans.isCorrect
+          }))
+        });
+      }
+    } catch (e) {
+      console.error('MongoDB Result submit sync error:', e);
+    }
+  }
+
   res.json(result);
 });
 

@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/quantrex-academy/',
+  base: process.env.VERCEL ? '/' : '/quantrex-academy/',
   server: {
     port: 3000,
     proxy: {
