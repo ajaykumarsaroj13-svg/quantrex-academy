@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Users, BookOpen, Bell, AlertOctagon, TrendingUp, Lock, ShieldAlert, Ban, Check, DollarSign, PlusCircle } from 'lucide-react';
+import { Users, BookOpen, Bell, AlertOctagon, TrendingUp, Lock, ShieldAlert, Ban, Check, DollarSign, PlusCircle, Sparkles, Trash2, Calendar, FileText, Play, Plus, Book } from 'lucide-react';
 
-export default function AdminDashboard({ user, courses, setCourses }) {
-  const [adminTab, setAdminTab] = useState('revenue'); // revenue, students, course-manager, security, notice
+export default function AdminDashboard({ user, courses, setCourses, setCustomLogo, syllabus, setSyllabus, toppers, setToppers }) {
+  const [adminTab, setAdminTab] = useState('revenue'); // revenue, students, course-manager, security, notice, settings
   
   // Dashboard Metric States
   const [metrics, setMetrics] = useState({
@@ -16,12 +16,45 @@ export default function AdminDashboard({ user, courses, setCourses }) {
   const [students, setStudents] = useState([]);
   const [securityAlerts, setSecurityAlerts] = useState([]);
   
-  // Course creation inputs
+  // Syllabus state controls
+  const [selectedClass, setSelectedClass] = useState('jee-advanced');
+  const [selectedChapterId, setSelectedChapterId] = useState('');
+  
+  // Resource upload fields
+  const [resType, setResType] = useState('video'); // video, pdf, formula, pyq
+  const [resTitle, setResTitle] = useState('');
+  const [resUrl, setResUrl] = useState('');
+  const [resDetail, setResDetail] = useState(''); // duration, size, or formula content
+  const [restrictDownload, setRestrictDownload] = useState(true);
+  
+  // Toppers fields
+  const [topperName, setTopperName] = useState('');
+  const [topperRank, setTopperRank] = useState('');
+  const [topperScore, setTopperScore] = useState('');
+  const [topperYear, setTopperYear] = useState('');
+  const [topperPhoto, setTopperPhoto] = useState('');
+  
+  // Mock Test Builder state
+  const [mockTestTitle, setMockTestTitle] = useState('');
+  const [mockTestDuration, setMockTestDuration] = useState(60);
+  const [mockTestType, setMockTestType] = useState('link'); // link, structured
+  const [mockTestLink, setMockTestLink] = useState('');
+  
+  // Structured Mock Test questions builder array
+  const [questions, setQuestions] = useState([]);
+  const [qText, setQText] = useState('');
+  const [qOptions, setQOptions] = useState(['', '', '', '']);
+  const [qCorrect, setQCorrect] = useState(0);
+  const [qMarks, setQMarks] = useState(4);
+  const [qNegMarks, setQNegMarks] = useState(-1);
+  const [qExplanation, setQExplanation] = useState('');
+
+  // Course creation inputs (legacy course manager)
   const [courseTitle, setCourseTitle] = useState('');
   const [courseDesc, setCourseDesc] = useState('');
   const [coursePrice, setCoursePrice] = useState(4999);
   
-  // Chapter creation inputs
+  // Chapter creation inputs (legacy course manager)
   const [selectedCourseId, setSelectedCourseId] = useState('');
   const [selectedModuleId, setSelectedModuleId] = useState('');
   const [newModuleName, setNewModuleName] = useState('');
@@ -34,6 +67,205 @@ export default function AdminDashboard({ user, courses, setCourses }) {
   // Notification inputs
   const [noticeTitle, setNoticeTitle] = useState('');
   const [noticeMsg, setNoticeMsg] = useState('');
+
+  // Syllabus resource management handlers
+  const handleAddResource = (e) => {
+    e.preventDefault();
+    if (!selectedChapterId) {
+      alert('Please select a chapter folder first!');
+      return;
+    }
+    if (!resTitle) {
+      alert('Please enter a title!');
+      return;
+    }
+    
+    let resource = null;
+    if (resType === 'video') {
+      resource = {
+        id: 'vid_' + Math.random().toString(36).substr(2, 9),
+        title: resTitle,
+        url: resUrl || 'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        duration: resDetail || '30:00',
+        downloadBlocked: restrictDownload
+      };
+    } else if (resType === 'pdf') {
+      resource = {
+        id: 'pdf_' + Math.random().toString(36).substr(2, 9),
+        title: resTitle,
+        url: resUrl || '/pdfs/dpp.pdf',
+        size: resDetail || '1.5 MB',
+        downloadBlocked: restrictDownload
+      };
+    } else if (resType === 'formula') {
+      resource = {
+        id: 'form_' + Math.random().toString(36).substr(2, 9),
+        title: resTitle,
+        content: resDetail || 'Quick formulas sheet text.'
+      };
+    } else if (resType === 'pyq') {
+      resource = {
+        id: 'pyq_' + Math.random().toString(36).substr(2, 9),
+        title: resTitle,
+        year: resDetail || '2025',
+        url: resUrl || '/pdfs/pyq.pdf'
+      };
+    }
+    
+    const updatedSyllabus = { ...syllabus };
+    const classData = updatedSyllabus[selectedClass];
+    if (classData) {
+      classData.chapters = classData.chapters.map(ch => {
+        if (ch.id === selectedChapterId) {
+          if (resType === 'video') ch.videos = [...(ch.videos || []), resource];
+          if (resType === 'pdf') ch.pdfs = [...(ch.pdfs || []), resource];
+          if (resType === 'formula') ch.formulas = [...(ch.formulas || []), resource];
+          if (resType === 'pyq') ch.pyqs = [...(ch.pyqs || []), resource];
+        }
+        return ch;
+      });
+      setSyllabus(updatedSyllabus);
+      alert(`Published ${resType.toUpperCase()} content into selected chapter successfully!`);
+      setResTitle('');
+      setResUrl('');
+      setResDetail('');
+    }
+  };
+
+  const handleDeleteResource = (chapterId, type, resId) => {
+    const updatedSyllabus = { ...syllabus };
+    const classData = updatedSyllabus[selectedClass];
+    if (classData) {
+      classData.chapters = classData.chapters.map(ch => {
+        if (ch.id === chapterId) {
+          if (type === 'video') ch.videos = ch.videos.filter(v => v.id !== resId);
+          if (type === 'pdf') ch.pdfs = ch.pdfs.filter(p => p.id !== resId);
+          if (type === 'formula') ch.formulas = ch.formulas.filter(f => f.id !== resId);
+          if (type === 'pyq') ch.pyqs = ch.pyqs.filter(p => p.id !== resId);
+        }
+        return ch;
+      });
+      setSyllabus(updatedSyllabus);
+      alert('Resource deleted successfully from folder.');
+    }
+  };
+
+  // Mock Test Builder handlers
+  const handleAddQuestion = () => {
+    if (!qText || qOptions.some(o => o.trim() === '')) {
+      alert('Please fill out the question text and all 4 choices!');
+      return;
+    }
+    const newQ = {
+      id: 'q_' + Math.random().toString(36).substr(2, 9),
+      questionText: qText,
+      options: [...qOptions],
+      correctOption: parseInt(qCorrect),
+      marks: parseInt(qMarks),
+      negativeMarks: parseInt(qNegMarks),
+      subject: 'Mathematics',
+      explanation: qExplanation
+    };
+    setQuestions([...questions, newQ]);
+    setQText('');
+    setQOptions(['', '', '', '']);
+    setQCorrect(0);
+    setQExplanation('');
+    alert('Question registered in mock test builder buffer!');
+  };
+
+  const handlePublishMockTest = (e) => {
+    e.preventDefault();
+    if (!selectedChapterId) {
+      alert('Please select a chapter folder first!');
+      return;
+    }
+    if (!mockTestTitle) {
+      alert('Enter Mock Test Exam Name!');
+      return;
+    }
+
+    let mockTestObj = {
+      id: 'mock_' + Math.random().toString(36).substr(2, 9),
+      title: mockTestTitle,
+      durationMinutes: parseInt(mockTestDuration),
+      type: mockTestType
+    };
+
+    if (mockTestType === 'link') {
+      if (!mockTestLink) {
+        alert('Paste AI Generated Quiz / external link!');
+        return;
+      }
+      mockTestObj.linkUrl = mockTestLink;
+    } else {
+      if (questions.length === 0) {
+        alert('Builder requires at least 1 question for structured mode!');
+        return;
+      }
+      mockTestObj.questions = questions;
+    }
+
+    const updatedSyllabus = { ...syllabus };
+    const classData = updatedSyllabus[selectedClass];
+    if (classData) {
+      classData.chapters = classData.chapters.map(ch => {
+        if (ch.id === selectedChapterId) {
+          ch.mockTests = [...(ch.mockTests || []), mockTestObj];
+        }
+        return ch;
+      });
+      setSyllabus(updatedSyllabus);
+      alert('Published Mock Test successfully! Synced to student exam dashboards.');
+      setMockTestTitle('');
+      setMockTestLink('');
+      setQuestions([]);
+    }
+  };
+
+  const handleDeleteMockTest = (chapterId, testId) => {
+    const updatedSyllabus = { ...syllabus };
+    const classData = updatedSyllabus[selectedClass];
+    if (classData) {
+      classData.chapters = classData.chapters.map(ch => {
+        if (ch.id === chapterId) {
+          ch.mockTests = (ch.mockTests || []).filter(t => t.id !== testId);
+        }
+        return ch;
+      });
+      setSyllabus(updatedSyllabus);
+      alert('Mock Test deleted successfully.');
+    }
+  };
+
+  // Topper/Results Handlers
+  const handleAddTopper = (e) => {
+    e.preventDefault();
+    if (!topperName || !topperRank || !topperScore) {
+      alert('Please enter Name, Rank/Percentile, and Score!');
+      return;
+    }
+    const newTopper = {
+      id: 'topper_' + Math.random().toString(36).substr(2, 9),
+      name: topperName,
+      rank: topperRank,
+      score: topperScore,
+      year: topperYear || 'JEE Advanced 2026',
+      photo: topperPhoto || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80'
+    };
+    setToppers([...toppers, newTopper]);
+    setTopperName('');
+    setTopperRank('');
+    setTopperScore('');
+    setTopperYear('');
+    setTopperPhoto('');
+    alert('Topper result published live to the Hall of Fame!');
+  };
+
+  const handleDeleteTopper = (topperId) => {
+    setToppers(toppers.filter(t => t.id !== topperId));
+    alert('Topper deleted from Hall of Fame.');
+  };
 
   // Fetch dashboards data
   const fetchData = async () => {
@@ -268,7 +500,8 @@ export default function AdminDashboard({ user, courses, setCourses }) {
               { id: 'students', label: 'Manage Students', icon: Users },
               { id: 'course-manager', label: 'Manage Courses', icon: BookOpen },
               { id: 'security', label: 'Anti-Piracy Logs', icon: AlertOctagon },
-              { id: 'notice', label: 'Broadcast Alerts', icon: Bell }
+              { id: 'notice', label: 'Broadcast Alerts', icon: Bell },
+              { id: 'settings', label: 'Branding Settings', icon: Sparkles }
             ].map((tab) => {
               const Icon = tab.icon;
               return (
@@ -396,155 +629,430 @@ export default function AdminDashboard({ user, courses, setCourses }) {
             </div>
           )}
 
-          {/* COURSE MANAGER TAB */}
+          {/* SYLLABUS & CONTENT MANAGER TAB */}
           {adminTab === 'course-manager' && (
-            <div className="space-y-8">
-              <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">Syllabus Infrastructure</h3>
-
-              {/* Course Creator Form */}
-              <form onSubmit={handleCreateCourse} className="p-5 bg-cyberdark/60 border border-white/5 rounded-xl space-y-4">
-                <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Create New Course Package</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <input
-                    type="text"
-                    required
-                    value={courseTitle}
-                    onChange={(e) => setCourseTitle(e.target.value)}
-                    placeholder="Course Title (e.g. Integral Calculus Master)"
-                    className="p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                  />
-                  <input
-                    type="text"
-                    required
-                    value={courseDesc}
-                    onChange={(e) => setCourseDesc(e.target.value)}
-                    placeholder="Brief description"
-                    className="p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                  />
-                  <input
-                    type="number"
-                    required
-                    value={coursePrice}
-                    onChange={(e) => setCoursePrice(e.target.value)}
-                    placeholder="Price (INR)"
-                    className="p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="px-5 py-2.5 bg-electric hover:bg-cyan-400 text-obsidian font-bold text-xs rounded-lg uppercase tracking-wider transition-colors flex items-center gap-1.5"
-                >
-                  <PlusCircle className="h-4 w-4" />
-                  Publish Course Live
-                </button>
-              </form>
-
-              {/* Module & Lecture Creator Form */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                {/* 1. Add Module Form */}
-                <form onSubmit={handleAddModule} className="p-5 bg-cyberdark/40 border border-white/5 rounded-xl space-y-4">
-                  <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Add Module Segment</h4>
-                  <div className="space-y-3">
-                    <select
-                      value={selectedCourseId}
-                      onChange={(e) => setSelectedCourseId(e.target.value)}
-                      className="w-full p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                    >
-                      <option value="">-- Choose Course --</option>
-                      {courses.map(c => <option key={c.id} value={c.id}>{c.title}</option>)}
-                    </select>
-                    <input
-                      type="text"
-                      required
-                      value={newModuleName}
-                      onChange={(e) => setNewModuleName(e.target.value)}
-                      placeholder="Module Name (e.g. Limits and Continuity)"
-                      className="w-full p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                    />
-                  </div>
-                  <button type="submit" className="w-full py-2.5 bg-gold hover:bg-yellow-500 text-obsidian font-bold text-xs rounded-lg uppercase tracking-wider transition-colors">
-                    Add Module Live
-                  </button>
-                </form>
-
-                {/* 2. Add Lecture Chapter Form */}
-                <form onSubmit={handleAddChapter} className="p-5 bg-cyberdark/40 border border-white/5 rounded-xl space-y-4">
-                  <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Upload Lecture & Notes</h4>
-                  <div className="space-y-2.5">
-                    <select
-                      value={selectedCourseId}
-                      onChange={(e) => {
-                        setSelectedCourseId(e.target.value);
-                        setSelectedModuleId('');
-                      }}
-                      className="w-full p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                    >
-                      <option value="">-- Choose Course --</option>
-                      {courses.map(c => <option key={c.id} value={c.id}>{c.title}</option>)}
-                    </select>
-
-                    <select
-                      value={selectedModuleId}
-                      onChange={(e) => setSelectedModuleId(e.target.value)}
-                      className="w-full p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                    >
-                      <option value="">-- Choose Module --</option>
-                      {courses.find(c => c.id === selectedCourseId)?.modules?.map(m => (
-                        <option key={m.id} value={m.id}>{m.title}</option>
-                      ))}
-                    </select>
-
-                    <input
-                      type="text"
-                      required
-                      value={chapterTitle}
-                      onChange={(e) => setChapterTitle(e.target.value)}
-                      placeholder="Chapter / Lecture Title"
-                      className="w-full p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                    />
-
-                    <div className="grid grid-cols-2 gap-2">
-                      <input
-                        type="text"
-                        value={videoTitle}
-                        onChange={(e) => setVideoTitle(e.target.value)}
-                        placeholder="Video Title"
-                        className="p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                      />
-                      <input
-                        type="text"
-                        value={videoUrl}
-                        onChange={(e) => setVideoUrl(e.target.value)}
-                        placeholder="Video MP4 URL"
-                        className="p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                      />
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-2">
-                      <input
-                        type="text"
-                        value={pdfTitle}
-                        onChange={(e) => setPdfTitle(e.target.value)}
-                        placeholder="PDF Notes Title"
-                        className="p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                      />
-                      <input
-                        type="text"
-                        value={pdfUrl}
-                        onChange={(e) => setPdfUrl(e.target.value)}
-                        placeholder="PDF Path"
-                        className="p-3 bg-obsidian border border-white/5 text-xs rounded-lg text-white font-mono"
-                      />
-                    </div>
-                  </div>
-                  
-                  <button type="submit" className="w-full py-2.5 bg-electric hover:bg-cyan-400 text-obsidian font-bold text-xs rounded-lg uppercase tracking-wider transition-colors">
-                    Upload & Sync Live
-                  </button>
-                </form>
-
+            <div className="space-y-6 animate-fade-in">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">Mathematics Syllabus Infrastructure</h3>
+                <span className="text-xs text-gold font-mono uppercase bg-gold/10 px-3 py-1 rounded border border-gold/20">Class 6th to 12th & JEE Portal</span>
               </div>
+              
+              {/* Folder Selector Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-5 bg-obsidian/60 border border-white/5 rounded-xl font-mono text-xs">
+                <div className="space-y-1.5">
+                  <label className="text-[10px] text-gray-500 uppercase block">Select Target Grade / Category</label>
+                  <select
+                    value={selectedClass}
+                    onChange={(e) => {
+                      setSelectedClass(e.target.value);
+                      setSelectedChapterId('');
+                    }}
+                    className="w-full p-3 bg-cyberdark border border-white/10 rounded-lg text-white focus:outline-none"
+                  >
+                    {Object.keys(syllabus || {}).map(key => (
+                      <option key={key} value={key}>{syllabus[key].label}</option>
+                    ))}
+                  </select>
+                </div>
+                <div className="space-y-1.5">
+                  <label className="text-[10px] text-gray-500 uppercase block">Select Chapter Folder</label>
+                  <select
+                    value={selectedChapterId}
+                    onChange={(e) => setSelectedChapterId(e.target.value)}
+                    className="w-full p-3 bg-cyberdark border border-white/10 rounded-lg text-white focus:outline-none"
+                  >
+                    <option value="">-- Choose Chapter --</option>
+                    {syllabus[selectedClass]?.chapters?.map(ch => (
+                      <option key={ch.id} value={ch.id}>{ch.title}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              {selectedChapterId ? (
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {/* Left Column: Form to Upload Content */}
+                  <div className="space-y-6">
+                    {/* Upload General Resource Form */}
+                    <form onSubmit={handleAddResource} className="p-5 bg-cyberdark/50 border border-white/5 rounded-xl space-y-4 font-mono text-xs">
+                      <div className="flex items-center justify-between border-b border-white/5 pb-2">
+                        <h4 className="text-xs font-bold text-white uppercase tracking-wider text-glow-blue flex items-center gap-1.5">
+                          <Book className="h-4 w-4 text-electric" /> Upload Lecture, Notes & Tips
+                        </h4>
+                      </div>
+                      
+                      <div className="space-y-1.5">
+                        <label className="text-[10px] text-gray-500 uppercase block">Resource Type</label>
+                        <div className="flex bg-obsidian/60 p-1 border border-white/5 rounded-lg justify-between gap-1">
+                          {[
+                            { id: 'video', label: '🎥 Video' },
+                            { id: 'pdf', label: '📄 PDF' },
+                            { id: 'formula', label: '⚡ Formula/Trick' },
+                            { id: 'pyq', label: '📝 PYQ' }
+                          ].map(t => {
+                            if (t.id === 'pyq' && !selectedClass.startsWith('jee')) return null;
+                            return (
+                              <button
+                                key={t.id}
+                                type="button"
+                                onClick={() => setResType(t.id)}
+                                className={`flex-1 py-1.5 text-[10px] font-bold rounded transition-all uppercase ${resType === t.id ? 'bg-cyberdark border border-white/5 text-electric shadow-[0_0_10px_rgba(0,240,255,0.1)]' : 'text-gray-400'}`}
+                              >
+                                {t.label}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+
+                      <div className="space-y-1.5">
+                        <label className="text-[10px] text-gray-500 uppercase block">Resource Title</label>
+                        <input
+                          type="text"
+                          required
+                          value={resTitle}
+                          onChange={(e) => setResTitle(e.target.value)}
+                          placeholder={resType === 'video' ? 'e.g. Concept of Continuity' : resType === 'pdf' ? 'e.g. DPP-01: Continuity Practice' : 'e.g. Limits Quick Formula List'}
+                          className="w-full p-3 bg-obsidian border border-white/5 rounded-lg text-white"
+                        />
+                      </div>
+
+                      {resType !== 'formula' && (
+                        <div className="space-y-1.5">
+                          <label className="text-[10px] text-gray-500 uppercase block">Resource Asset Link / URL</label>
+                          <input
+                            type="text"
+                            value={resUrl}
+                            onChange={(e) => setResUrl(e.target.value)}
+                            placeholder={resType === 'video' ? 'https://example.com/lecture.mp4' : '/pdfs/document.pdf'}
+                            className="w-full p-3 bg-obsidian border border-white/5 rounded-lg text-white"
+                          />
+                        </div>
+                      )}
+
+                      <div className="space-y-1.5">
+                        <label className="text-[10px] text-gray-500 uppercase block">
+                          {resType === 'video' && 'Duration (e.g. 45:12)'}
+                          {resType === 'pdf' && 'File Size (e.g. 2.4 MB)'}
+                          {resType === 'formula' && 'Formula & Cheat Sheet Content'}
+                          {resType === 'pyq' && 'PYQ Year (e.g. 2025)'}
+                        </label>
+                        {resType === 'formula' ? (
+                          <textarea
+                            required
+                            rows={4}
+                            value={resDetail}
+                            onChange={(e) => setResDetail(e.target.value)}
+                            placeholder="Enter formulas, tricks, equations in LaTeX (e.g. $$\lim_{x \to 0} \frac{\sin x}{x} = 1$$)..."
+                            className="w-full p-3 bg-obsidian border border-white/5 rounded-lg text-white focus:outline-none focus:border-electric/40"
+                          />
+                        ) : (
+                          <input
+                            type="text"
+                            value={resDetail}
+                            onChange={(e) => setResDetail(e.target.value)}
+                            placeholder={resType === 'video' ? '30:00' : resType === 'pdf' ? '1.5 MB' : '2025'}
+                            className="w-full p-3 bg-obsidian border border-white/5 rounded-lg text-white"
+                          />
+                        )}
+                      </div>
+
+                      {(resType === 'video' || resType === 'pdf') && (
+                        <div className="flex items-center gap-2 py-2">
+                          <input
+                            type="checkbox"
+                            id="download-block-toggle"
+                            checked={restrictDownload}
+                            onChange={(e) => setRestrictDownload(e.target.checked)}
+                            className="h-4 w-4 accent-electric cursor-pointer"
+                          />
+                          <label htmlFor="download-block-toggle" className="text-[11px] text-gray-300 font-bold uppercase tracking-wider cursor-pointer">
+                            🔒 Restrict Download & Force Safe-Player Canvas Viewer
+                          </label>
+                        </div>
+                      )}
+
+                      <button type="submit" className="w-full py-3 bg-electric hover:bg-cyan-400 text-obsidian font-bold rounded-lg uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5 shadow-[0_0_15px_rgba(0,240,255,0.15)]">
+                        <Plus className="h-4 w-4" /> Add Chapter Content
+                      </button>
+                    </form>
+
+                    {/* AI Mock Test Creator Form */}
+                    <form onSubmit={handlePublishMockTest} className="p-5 bg-cyberdark/50 border border-white/5 rounded-xl space-y-4 font-mono text-xs">
+                      <div className="flex items-center justify-between border-b border-white/5 pb-2">
+                        <h4 className="text-xs font-bold text-white uppercase tracking-wider text-glow-gold flex items-center gap-1.5">
+                          <Calendar className="h-4 w-4 text-gold" /> Mock Test & Exam Generator
+                        </h4>
+                      </div>
+                      
+                      <div className="space-y-1.5">
+                        <label className="text-[10px] text-gray-500 uppercase block">Mock Test Title</label>
+                        <input
+                          type="text"
+                          required
+                          value={mockTestTitle}
+                          onChange={(e) => setMockTestTitle(e.target.value)}
+                          placeholder="e.g. Chapter Practice Test - Medium Level"
+                          className="w-full p-3 bg-obsidian border border-white/5 rounded-lg text-white"
+                        />
+                      </div>
+
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="space-y-1.5">
+                          <label className="text-[10px] text-gray-500 uppercase block">Duration (Minutes)</label>
+                          <input
+                            type="number"
+                            value={mockTestDuration}
+                            onChange={(e) => setMockTestDuration(e.target.value)}
+                            className="w-full p-3 bg-obsidian border border-white/5 rounded-lg text-white"
+                          />
+                        </div>
+                        <div className="space-y-1.5">
+                          <label className="text-[10px] text-gray-500 uppercase block">Test Mode</label>
+                          <select
+                            value={mockTestType}
+                            onChange={(e) => setMockTestType(e.target.value)}
+                            className="w-full p-3 bg-obsidian border border-white/5 rounded-lg text-white focus:outline-none"
+                          >
+                            <option value="link">AI Generated Link Embed</option>
+                            <option value="structured">Interactive Test Builder</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      {mockTestType === 'link' ? (
+                        <div className="space-y-1.5">
+                          <label className="text-[10px] text-gray-500 uppercase block">Paste Claude/Gemini generated Quiz URL</label>
+                          <input
+                            type="text"
+                            value={mockTestLink}
+                            onChange={(e) => setMockTestLink(e.target.value)}
+                            placeholder="https://forms.gle/... or external exam link"
+                            className="w-full p-3 bg-obsidian border border-white/5 rounded-lg text-white font-mono text-[11px]"
+                          />
+                        </div>
+                      ) : (
+                        <div className="p-4 bg-obsidian/60 border border-white/5 rounded-lg space-y-3">
+                          <span className="text-[10px] text-gold uppercase tracking-wider block font-bold">Interactive MCQ Builder ({questions.length} Added)</span>
+                          
+                          <input
+                            type="text"
+                            value={qText}
+                            onChange={(e) => setQText(e.target.value)}
+                            placeholder="Enter Question Text"
+                            className="w-full p-2.5 bg-cyberdark border border-white/5 rounded text-xs text-white"
+                          />
+
+                          <div className="grid grid-cols-2 gap-2">
+                            {qOptions.map((opt, idx) => (
+                              <input
+                                key={idx}
+                                type="text"
+                                value={opt}
+                                onChange={(e) => {
+                                  const copy = [...qOptions];
+                                  copy[idx] = e.target.value;
+                                  setQOptions(copy);
+                                }}
+                                placeholder={`Choice Option ${String.fromCharCode(65 + idx)}`}
+                                className="w-full p-2 bg-cyberdark border border-white/5 rounded text-xs text-white"
+                              />
+                            ))}
+                          </div>
+
+                          <div className="grid grid-cols-3 gap-2">
+                            <div>
+                              <label className="text-[8px] text-gray-500 uppercase block mb-0.5 font-bold">Correct Option</label>
+                              <select
+                                value={qCorrect}
+                                onChange={(e) => setQCorrect(e.target.value)}
+                                className="w-full p-1.5 bg-cyberdark border border-white/5 rounded text-xs text-white"
+                              >
+                                <option value="0">A</option>
+                                <option value="1">B</option>
+                                <option value="2">C</option>
+                                <option value="3">D</option>
+                              </select>
+                            </div>
+                            <div>
+                              <label className="text-[8px] text-gray-500 uppercase block mb-0.5 font-bold">Marks (+)</label>
+                              <input
+                                type="number"
+                                value={qMarks}
+                                onChange={(e) => setQMarks(e.target.value)}
+                                className="w-full p-1.5 bg-cyberdark border border-white/5 rounded text-xs text-white"
+                              />
+                            </div>
+                            <div>
+                              <label className="text-[8px] text-gray-500 uppercase block mb-0.5 font-bold">Neg (-)</label>
+                              <input
+                                type="number"
+                                value={qNegMarks}
+                                onChange={(e) => setQNegMarks(e.target.value)}
+                                className="w-full p-1.5 bg-cyberdark border border-white/5 rounded text-xs text-white"
+                              />
+                            </div>
+                          </div>
+
+                          <input
+                            type="text"
+                            value={qExplanation}
+                            onChange={(e) => setQExplanation(e.target.value)}
+                            placeholder="Explanation / Solution Steps"
+                            className="w-full p-2.5 bg-cyberdark border border-white/5 rounded text-xs text-white"
+                          />
+
+                          <button
+                            type="button"
+                            onClick={handleAddQuestion}
+                            className="w-full py-2 bg-gold/10 hover:bg-gold hover:text-obsidian text-gold border border-gold/30 font-bold rounded text-[10px] uppercase tracking-wider transition-colors"
+                          >
+                            Add Question to Test
+                          </button>
+                        </div>
+                      )}
+
+                      <button type="submit" className="w-full py-3 bg-gold hover:bg-yellow-500 text-obsidian font-bold rounded-lg uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5 shadow-[0_0_15px_rgba(255,215,0,0.15)]">
+                        <PlusCircle className="h-4 w-4" /> Publish Mock Exam
+                      </button>
+                    </form>
+                  </div>
+
+                  {/* Right Column: List of Existing Content in Selected Chapter */}
+                  <div className="space-y-6 font-mono text-xs">
+                    <div className="p-5 bg-cyberdark/40 border border-white/5 rounded-xl space-y-4">
+                      <h4 className="text-xs font-bold text-white uppercase tracking-wider border-b border-white/5 pb-2">
+                        Folder Contents: {syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.title}
+                      </h4>
+                      
+                      {/* Videos List */}
+                      <div className="space-y-2">
+                        <span className="text-[10px] text-electric uppercase font-bold tracking-wider block">🎥 Video Lectures</span>
+                        {(!syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.videos || syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.videos.length === 0) ? (
+                          <p className="text-[10px] text-gray-600 italic">No video lectures uploaded yet.</p>
+                        ) : (
+                          syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.videos?.map(v => (
+                            <div key={v.id} className="flex justify-between items-center bg-obsidian/60 border border-white/5 p-2.5 rounded-lg gap-4">
+                              <div className="min-w-0 flex-1">
+                                <h5 className="text-white font-semibold truncate text-[11px]">{v.title}</h5>
+                                <span className="text-[9px] text-gray-500 block">Duration: {v.duration} {v.downloadBlocked && '• 🔒 Secured'}</span>
+                              </div>
+                              <button
+                                onClick={() => handleDeleteResource(selectedChapterId, 'video', v.id)}
+                                className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-red-500/10 rounded transition-colors"
+                              >
+                                <Trash2 className="h-3.5 w-3.5" />
+                              </button>
+                            </div>
+                          ))
+                        )}
+                      </div>
+
+                      {/* PDFs List */}
+                      <div className="space-y-2 pt-2 border-t border-white/5">
+                        <span className="text-[10px] text-electric uppercase font-bold tracking-wider block">📄 PDF Notes & DPPs</span>
+                        {(!syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.pdfs || syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.pdfs.length === 0) ? (
+                          <p className="text-[10px] text-gray-600 italic">No PDF notes uploaded.</p>
+                        ) : (
+                          syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.pdfs?.map(p => (
+                            <div key={p.id} className="flex justify-between items-center bg-obsidian/60 border border-white/5 p-2.5 rounded-lg gap-4">
+                              <div className="min-w-0 flex-1">
+                                <h5 className="text-white font-semibold truncate text-[11px]">{p.title}</h5>
+                                <span className="text-[9px] text-gray-500 block">Size: {p.size} {p.downloadBlocked && '• 🔒 Protected'}</span>
+                              </div>
+                              <button
+                                onClick={() => handleDeleteResource(selectedChapterId, 'pdf', p.id)}
+                                className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-red-500/10 rounded transition-colors"
+                              >
+                                <Trash2 className="h-3.5 w-3.5" />
+                              </button>
+                            </div>
+                          ))
+                        )}
+                      </div>
+
+                      {/* Formulas & Tricks List */}
+                      <div className="space-y-2 pt-2 border-t border-white/5">
+                        <span className="text-[10px] text-gold uppercase font-bold tracking-wider block">⚡ Formulas & Quick Tricks</span>
+                        {(!syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.formulas || syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.formulas.length === 0) ? (
+                          <p className="text-[10px] text-gray-600 italic">No quick tricks added.</p>
+                        ) : (
+                          syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.formulas?.map(f => (
+                            <div key={f.id} className="flex justify-between items-start bg-obsidian/60 border border-white/5 p-2.5 rounded-lg gap-4">
+                              <div className="min-w-0 flex-1">
+                                <h5 className="text-white font-semibold text-[11px]">{f.title}</h5>
+                                <p className="text-[9px] text-gray-500 mt-1 line-clamp-2 leading-relaxed bg-black/25 p-1 rounded font-mono">{f.content}</p>
+                              </div>
+                              <button
+                                onClick={() => handleDeleteResource(selectedChapterId, 'formula', f.id)}
+                                className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-red-500/10 rounded transition-colors"
+                              >
+                                <Trash2 className="h-3.5 w-3.5" />
+                              </button>
+                            </div>
+                          ))
+                        )}
+                      </div>
+
+                      {/* PYQs (only for JEE levels) */}
+                      {selectedClass.startsWith('jee') && (
+                        <div className="space-y-2 pt-2 border-t border-white/5">
+                          <span className="text-[10px] text-gold uppercase font-bold tracking-wider block">📝 Previous Year Questions (PYQs)</span>
+                          {(!syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.pyqs || syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.pyqs.length === 0) ? (
+                            <p className="text-[10px] text-gray-600 italic">No PYQs uploaded.</p>
+                          ) : (
+                            syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.pyqs?.map(p => (
+                              <div key={p.id} className="flex justify-between items-center bg-obsidian/60 border border-white/5 p-2.5 rounded-lg gap-4">
+                                <div className="min-w-0 flex-1">
+                                  <h5 className="text-white font-semibold truncate text-[11px]">{p.title}</h5>
+                                  <span className="text-[9px] text-gray-500 block">Year: {p.year}</span>
+                                </div>
+                                <button
+                                  onClick={() => handleDeleteResource(selectedChapterId, 'pyq', p.id)}
+                                  className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-red-500/10 rounded transition-colors"
+                                >
+                                  <Trash2 className="h-3.5 w-3.5" />
+                                </button>
+                              </div>
+                            ))
+                          )}
+                        </div>
+                      )}
+
+                      {/* Mock Tests List */}
+                      <div className="space-y-2 pt-2 border-t border-white/5">
+                        <span className="text-[10px] text-gold uppercase font-bold tracking-wider block">🏆 Mock Tests & Exams</span>
+                        {(!syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.mockTests || syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.mockTests.length === 0) ? (
+                          <p className="text-[10px] text-gray-600 italic">No mock exams published yet.</p>
+                        ) : (
+                          syllabus[selectedClass]?.chapters?.find(ch => ch.id === selectedChapterId)?.mockTests?.map(t => (
+                            <div key={t.id} className="flex justify-between items-center bg-obsidian/60 border border-white/5 p-2.5 rounded-lg gap-4">
+                              <div className="min-w-0 flex-1">
+                                <h5 className="text-white font-semibold truncate text-[11px]">{t.title}</h5>
+                                <span className="text-[9px] text-gray-500 block font-mono">
+                                  {t.type === 'link' ? 'AI Quiz Embed' : 'JEE Exam Builder'} • {t.durationMinutes} mins
+                                </span>
+                              </div>
+                              <button
+                                onClick={() => handleDeleteMockTest(selectedChapterId, t.id)}
+                                className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-red-500/10 rounded transition-colors"
+                              >
+                                <Trash2 className="h-3.5 w-3.5" />
+                              </button>
+                            </div>
+                          ))
+                        )}
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex flex-col items-center justify-center p-12 bg-cyberdark/20 border border-white/5 border-dashed rounded-xl min-h-[30vh]">
+                  <BookOpen className="h-10 w-10 text-gray-600 mb-2" />
+                  <p className="text-xs text-gray-500 font-mono">Select a Chapter Folder from the dropdown above to manage content.</p>
+                </div>
+              )}
             </div>
           )}
 
@@ -624,6 +1132,192 @@ export default function AdminDashboard({ user, courses, setCourses }) {
                   Broadcast Live Notification
                 </button>
               </form>
+            </div>
+          )}
+
+          {/* SETTINGS / BRANDING & RESULTS TAB */}
+          {adminTab === 'settings' && (
+            <div className="space-y-8 animate-fade-in font-mono text-xs">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                {/* Left Column: Branding Custom Logo */}
+                <div className="p-6 bg-cyberdark/60 border border-white/5 rounded-xl space-y-6">
+                  <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display border-b border-white/5 pb-2 text-glow-blue">Branding Controls</h3>
+                  
+                  <div>
+                    <h4 className="text-[11px] font-bold text-white uppercase tracking-wider mb-2">Upload Custom Brand Logo</h4>
+                    <p className="text-[10px] text-gray-400 mb-4 leading-relaxed">
+                      Select a new logo image (PNG/JPG/SVG). The image will be converted to a Base64 string and stored dynamically to customize the top navbar brand image.
+                    </p>
+                    
+                    <div className="flex flex-col sm:flex-row gap-4 items-center">
+                      <label className="w-full sm:w-auto px-5 py-3 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian font-bold text-xs rounded-lg uppercase tracking-wider transition-all cursor-pointer text-center shadow-lg hover:shadow-cyan-500/20">
+                        Choose Logo File
+                        <input 
+                          type="file" 
+                          accept="image/*" 
+                          onChange={(e) => {
+                            const file = e.target.files[0];
+                            if (file) {
+                              const reader = new FileReader();
+                              reader.onload = (event) => {
+                                const base64 = event.target.result;
+                                localStorage.setItem('custom_logo', base64);
+                                if (setCustomLogo) setCustomLogo(base64);
+                                alert('Logo updated successfully! Changes are applied across the ecosystem.');
+                              };
+                              reader.readAsDataURL(file);
+                            }
+                          }}
+                          className="hidden" 
+                        />
+                      </label>
+                      
+                      <button
+                        onClick={() => {
+                          localStorage.removeItem('custom_logo');
+                          if (setCustomLogo) setCustomLogo(null);
+                          alert('Logo reset to default.');
+                        }}
+                        className="w-full sm:w-auto px-5 py-3 bg-red-950/20 border border-red-900/50 hover:bg-red-900/20 text-red-400 font-bold text-xs rounded-lg uppercase tracking-wider transition-all"
+                      >
+                        Reset to Default
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 border-t border-white/5 flex items-center gap-4">
+                    <div className="h-14 w-14 rounded-lg overflow-hidden border border-electric/30 bg-obsidian flex items-center justify-center p-1">
+                      <img 
+                        src={localStorage.getItem('custom_logo') || '/quantrex-academy/logo.png'} 
+                        alt="Brand Logo Preview" 
+                        className="max-h-full max-w-full object-contain"
+                        onError={(e) => {
+                          e.target.src = 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=80&q=80';
+                        }}
+                      />
+                    </div>
+                    <div>
+                      <span className="text-[9px] text-gray-500 uppercase block">Active Logo Status</span>
+                      <span className="text-xs font-bold text-white">
+                        {localStorage.getItem('custom_logo') ? 'Custom Uploaded Logo' : 'Default Brand Logo'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Column: Toppers / Results Registry Form */}
+                <div className="p-6 bg-cyberdark/60 border border-white/5 rounded-xl space-y-6">
+                  <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display border-b border-white/5 pb-2 text-glow-gold">Hall of Fame Results Registry</h3>
+                  
+                  <form onSubmit={handleAddTopper} className="space-y-3.5">
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-1">
+                        <label className="text-[9px] text-gray-500 uppercase block">Student Name</label>
+                        <input
+                          type="text"
+                          required
+                          value={topperName}
+                          onChange={(e) => setTopperName(e.target.value)}
+                          placeholder="e.g. Kabir Mehta"
+                          className="w-full p-2.5 bg-obsidian border border-white/5 rounded-lg text-white"
+                        />
+                      </div>
+                      <div className="space-y-1">
+                        <label className="text-[9px] text-gray-500 uppercase block">Rank / Board %</label>
+                        <input
+                          type="text"
+                          required
+                          value={topperRank}
+                          onChange={(e) => setTopperRank(e.target.value)}
+                          placeholder="e.g. AIR 4 / 99.8%"
+                          className="w-full p-2.5 bg-obsidian border border-white/5 rounded-lg text-white"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-1">
+                        <label className="text-[9px] text-gray-500 uppercase block">Math Score / Percentile</label>
+                        <input
+                          type="text"
+                          required
+                          value={topperScore}
+                          onChange={(e) => setTopperScore(e.target.value)}
+                          placeholder="e.g. 118 / 120 (Maths)"
+                          className="w-full p-2.5 bg-obsidian border border-white/5 rounded-lg text-white"
+                        />
+                      </div>
+                      <div className="space-y-1">
+                        <label className="text-[9px] text-gray-500 uppercase block">Exam details & Year</label>
+                        <input
+                          type="text"
+                          value={topperYear}
+                          onChange={(e) => setTopperYear(e.target.value)}
+                          placeholder="e.g. JEE Advanced 2026"
+                          className="w-full p-2.5 bg-obsidian border border-white/5 rounded-lg text-white"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="space-y-1">
+                      <label className="text-[9px] text-gray-500 uppercase block">Profile Image URL</label>
+                      <input
+                        type="text"
+                        value={topperPhoto}
+                        onChange={(e) => setTopperPhoto(e.target.value)}
+                        placeholder="Paste image URL (or leave blank for default avatar)"
+                        className="w-full p-2.5 bg-obsidian border border-white/5 rounded-lg text-white"
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="w-full py-2.5 bg-gold hover:bg-yellow-500 text-obsidian font-bold rounded-lg uppercase tracking-wider transition-colors shadow-lg hover:shadow-yellow-500/10 flex items-center justify-center gap-1"
+                    >
+                      <Plus className="h-4 w-4" /> Add Student Result
+                    </button>
+                  </form>
+                </div>
+
+              </div>
+
+              {/* Toppers Achievement List */}
+              <div className="p-6 bg-cyberdark/40 border border-white/5 rounded-xl space-y-4">
+                <h4 className="text-sm font-bold text-white uppercase tracking-wider border-b border-white/5 pb-2 text-glow-gold">Registered Hall of Fame Toppers</h4>
+                
+                {toppers.length === 0 ? (
+                  <p className="text-gray-500 italic text-center py-6">No topper results listed yet.</p>
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {toppers.map(t => (
+                      <div key={t.id} className="bg-obsidian border border-white/5 p-4 rounded-xl flex items-center gap-3 relative group">
+                        <div className="h-11 w-11 rounded-full overflow-hidden border border-gold/30 bg-cyberdark shrink-0">
+                          <img 
+                            src={t.photo} 
+                            alt={t.name} 
+                            className="h-full w-full object-cover"
+                            onError={(e) => {
+                              e.target.src = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80";
+                            }}
+                          />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <span className="text-[10px] text-gold font-bold uppercase tracking-wider">{t.rank}</span>
+                          <h5 className="text-white font-bold text-xs truncate mt-0.5">{t.name}</h5>
+                          <span className="text-[9px] text-gray-500 block truncate">{t.year} • {t.score}</span>
+                        </div>
+                        <button
+                          onClick={() => handleDeleteTopper(t.id)}
+                          className="absolute top-2 right-2 p-1 text-gray-600 hover:text-red-400 rounded transition-colors bg-cyberdark/50 border border-transparent hover:border-red-500/10"
+                        >
+                          <Trash2 className="h-3.5 w-3.5" />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           )}
 

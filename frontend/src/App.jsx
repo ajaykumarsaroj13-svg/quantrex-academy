@@ -7,6 +7,7 @@ import StudentDashboard from './pages/StudentDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import TestSystem from './pages/TestSystem';
 import { Shield } from 'lucide-react';
+import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 
 export default function App() {
   const [activePage, setActivePage] = useState('home');
@@ -14,6 +15,36 @@ export default function App() {
   const [user, setUser] = useState(null);
   const [courses, setCourses] = useState([]);
   const [examTest, setExamTest] = useState(null);
+  const [customLogo, setCustomLogo] = useState(localStorage.getItem('custom_logo') || null);
+
+  const [syllabus, setSyllabus] = useState(() => {
+    const saved = localStorage.getItem('quantrex_syllabus');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch (e) {}
+    }
+    return DEFAULT_SYLLABUS;
+  });
+
+  const [toppers, setToppers] = useState(() => {
+    const saved = localStorage.getItem('quantrex_toppers');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch (e) {}
+    }
+    return DEFAULT_TOPPERS;
+  });
+
+  // Save changes to localStorage
+  useEffect(() => {
+    localStorage.setItem('quantrex_syllabus', JSON.stringify(syllabus));
+  }, [syllabus]);
+
+  useEffect(() => {
+    localStorage.setItem('quantrex_toppers', JSON.stringify(toppers));
+  }, [toppers]);
 
   // Parse user object from localStorage
   useEffect(() => {
@@ -139,6 +170,7 @@ export default function App() {
           setActivePage={setActivePage} 
           user={user} 
           onLogout={handleLogout} 
+          customLogo={customLogo}
         />
       )}
 
@@ -151,6 +183,7 @@ export default function App() {
             courses={courses}
             setCourses={setCourses}
             onEnrollSuccess={handleEnrollSuccess} 
+            toppers={toppers}
           />
         )}
         {activePage === 'login' && (
@@ -165,6 +198,7 @@ export default function App() {
             courses={courses} 
             setActivePage={setActivePage}
             setExamTest={setExamTest}
+            syllabus={syllabus}
           />
         )}
         {activePage === 'admin-dashboard' && (
@@ -172,6 +206,11 @@ export default function App() {
             user={user} 
             courses={courses}
             setCourses={setCourses}
+            setCustomLogo={setCustomLogo}
+            syllabus={syllabus}
+            setSyllabus={setSyllabus}
+            toppers={toppers}
+            setToppers={setToppers}
           />
         )}
         {activePage === 'exam-mode' && (

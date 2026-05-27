@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, Sparkles, BookOpen, Star, HelpCircle, PhoneCall, Gift, MessageCircle, CreditCard, CheckCircle2, ChevronRight, UserCheck } from 'lucide-react';
 
-export default function Home({ onEnrollSuccess, user, setActivePage, courses, setCourses }) {
+export default function Home({ onEnrollSuccess, user, setActivePage, courses, setCourses, toppers }) {
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [paymentStep, setPaymentStep] = useState('select'); // select, checkout, success
   const [paymentProvider, setPaymentProvider] = useState('Razorpay');
-
-  // Slide content for Toppers
-  const toppers = [
-    { name: 'Kanishk Mittal', rank: 'AIR 1', year: 'JEE Advanced 2025', percent: '100% in Maths' },
-    { name: 'Aarav Singhal', rank: 'AIR 14', year: 'JEE Advanced 2025', percent: '96/120 in Maths' },
-    { name: 'Riya Gupta', rank: 'AIR 32', year: 'JEE Advanced 2024', percent: '100% in Calculus' }
-  ];
 
   const handleEnrollClick = (course) => {
     if (!user) {
@@ -140,19 +133,31 @@ export default function Home({ onEnrollSuccess, user, setActivePage, courses, se
       <section className="bg-cyberdark/30 border-y border-white/5 py-12 px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <p className="text-center text-xs tracking-[0.2em] font-semibold text-gold uppercase mb-8">
-            QUANTREX TOPPERS • RECENT JEE ADVANCED Ranks
+            QUANTREX TOPPERS • HALL OF FAME ACCOMPLISHMENTS
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {toppers.map((t, idx) => (
-              <div key={idx} className="bg-obsidian border border-white/5 p-6 rounded-xl hover:border-gold/30 hover:scale-[1.02] transition-all relative overflow-hidden group">
-                <div className="absolute top-0 right-0 h-16 w-16 bg-gradient-to-bl from-gold/10 to-transparent pointer-events-none" />
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-black text-gold font-display">{t.rank}</span>
-                  <span className="text-[10px] bg-white/5 border border-white/10 px-2 py-0.5 rounded text-gray-400">{t.year}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {(toppers || []).map((t, idx) => (
+              <div key={idx} className="bg-obsidian border border-white/5 p-5 rounded-xl hover:border-gold/30 hover:scale-[1.02] transition-all relative overflow-hidden group flex items-center gap-4">
+                <div className="absolute top-0 right-0 h-16 w-16 bg-gradient-to-bl from-gold/5 to-transparent pointer-events-none" />
+                <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-gold/30 bg-cyberdark shrink-0">
+                  <img 
+                    src={t.photo || "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80"} 
+                    alt={t.name} 
+                    className="h-full w-full object-cover"
+                    onError={(e) => {
+                      e.target.src = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80";
+                    }}
+                  />
                 </div>
-                <h4 className="text-white font-semibold text-lg">{t.name}</h4>
-                <p className="text-xs text-electric font-mono mt-1">{t.percent}</p>
+                <div className="flex-grow min-w-0">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-lg font-black text-gold font-display truncate">{t.rank}</span>
+                    <span className="text-[8px] bg-white/5 border border-white/10 px-2 py-0.5 rounded text-gray-500 font-mono shrink-0">{t.year}</span>
+                  </div>
+                  <h4 className="text-white font-bold text-sm truncate mt-0.5">{t.name}</h4>
+                  <p className="text-[10px] text-electric font-mono truncate">{t.score || t.percent}</p>
+                </div>
               </div>
             ))}
           </div>

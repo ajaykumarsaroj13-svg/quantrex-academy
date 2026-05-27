@@ -1,7 +1,8 @@
 import React from 'react';
 import { Shield, Sparkles, Flame, User, LogOut, BookOpen, Layers } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 
-export default function Navbar({ activePage, setActivePage, user, onLogout }) {
+export default function Navbar({ activePage, setActivePage, user, onLogout, customLogo }) {
   return (
     <nav className="sticky top-0 z-50 w-full bg-obsidian/85 backdrop-blur-md border-b border-white/5 py-4 px-6 md:px-12 flex items-center justify-between">
       {/* Brand logo */}
@@ -10,8 +11,8 @@ export default function Navbar({ activePage, setActivePage, user, onLogout }) {
         className="flex items-center gap-2 cursor-pointer group"
         id="nav-logo"
       >
-        <div className="relative p-2 bg-gradient-to-br from-electric to-blue-600 rounded-lg shadow-[0_0_15px_rgba(0,240,255,0.3)]">
-          <Layers className="h-5 w-5 text-obsidian" />
+        <div className="relative h-9 w-9 rounded-lg overflow-hidden border border-electric/30 shadow-[0_0_15px_rgba(0,240,255,0.25)] bg-obsidian">
+          <img src={customLogo || logoImg} alt="Quantrex Logo" className="h-full w-full object-cover" />
         </div>
         <div>
           <span className="font-bold text-lg md:text-xl tracking-wider uppercase font-display bg-gradient-to-r from-white via-electric to-gold bg-clip-text text-transparent">
