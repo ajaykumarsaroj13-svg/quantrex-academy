@@ -7,12 +7,14 @@ import bcrypt from 'bcryptjs';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import { User, Course, Order, Test, Result, Notification, PiracyAlert } from './models/schemas.js';
+import { paymentRouter } from './routes/paymentRoute.js';
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use('/api/payments', paymentRouter);
 
 const MONGODB_URI = process.env.MONGODB_URI;
 let useRealDb = false;
