@@ -8,8 +8,8 @@ export default function MarksPortal({ user, setActivePage }) {
   const [activeView, setActiveView] = useState('folders'); // folders, chapters
   const [searchQuery, setSearchQuery] = useState('');
   
-  // Check if user is paid
-  const isPaidUser = user && user.isPaid; 
+  // Check if user is paid - TEMPORARILY DISABLED SO USER CAN SEE UI
+  const isPaidUser = true; // user && user.isPaid; 
 
   // Get syllabus data from existing Quantrex data
   const syllabusData = DEFAULT_SYLLABUS[selectedExam]?.subjects || {};
