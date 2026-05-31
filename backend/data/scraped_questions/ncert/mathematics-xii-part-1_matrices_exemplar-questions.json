@@ -1,0 +1,3379 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m5hpil2s",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If a matrix has 28 elements, what are the possible orders it can have? What if it has 13 elements?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We know that, if a matrix is of order $m \\times n$, it has $m n$ elements, where $m$ and $n$ are natural numbers.</p>\n<p>We have, $m \\times n=28$</p>\n<p>$$\\Rightarrow \\quad(m, n)=\\{(1,28),(2,14),(4,7),(7,4),(14,2),(28,1)\\}$$</p>\n<p>So, the possible orders are $1 \\times 28,2 \\times 14,4 \\times 7,7 \\times 4,14 \\times 2,28 \\times 1$.</p>\n<p>Also, if it has 13 elements, then $m \\times n=13$</p>\n<p>$$\\Rightarrow \\quad(m, n)=\\{(1,13),(13,1)\\}$$</p>\n<p>Hence, the possible orders are $1 \\times 13,13 \\times 1$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpie3o",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In the matrix $A=\\left[\\begin{array}{ccc}a & 1 & x \\\\ 2 & \\sqrt{3} & x^2-y \\\\ 0 & 5 & \\frac{-2}{5}\\end{array}\\right]$, write</p>\n<p>(i) the order of the matrix $A$.</p>\n<p>(ii) the number of elements.</p>\n<p>(iii) elements $a_{23}, a_{31}$ and $a_{12}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{ccc}a & 1 & x \\\\ 2 & \\sqrt{3} & x^2-y \\\\ 0 & 5 & \\frac{-2}{5}\\end{array}\\right]$</p>\n<p>(i) the order of matrix $A=3 \\times 3$</p>\n<p>(ii) the number of elements $=3 \\times 3=9$ [since, the number of elements in an $m \\times n$ matrix will be equal to $m \\times n=m n$ ]</p>\n<p>(iii) $a_{23}=x^2-y, a_{31}=0, a_{12}=1$\n[since, we know that $a_{i j}$, is a representation of element lying in the $i$ th row and $j$th column]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphzh6",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Construct $a_{2 \\times 2}$ matrix, where</p>\n<p>(i) $a_{i j}=\\frac{(i-2 j)^2}{2}\\quad$\n(ii) $a_{i j}=|-2 i+3 j|$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We know that, the notation, namely $A=\\left[a_{i j}\\right]_{m \\times n}$ indicates that $A$ is a matrix of order $m \\times n$, also $1 \\leq i \\leq m, 1 \\leq j \\leq n ; i, j \\in N$.</p>\n<p>(i) Here, $A=\\left[a_{i j}\\right]_{2 \\times 2}$</p>\n<p>$$\\Rightarrow \\quad A=\\frac{(i-2 j)^2}{2}, 1 \\leq i \\leq 2 ; 1 \\leq j \\leq 2\\quad\\text{..... (i)}$$</p>\n<p>$$\\begin{aligned}\n\\therefore\\quad& a_{11}=\\frac{(1-2)^2}{2}=\\frac{1}{2} \\\\\n& a_{12}=\\frac{(1-2 \\times 2)^2}{2}=\\frac{9}{2} \\\\\n& a_{21}=\\frac{(2-2 \\times 1)^2}{2}=0 \\\\\n& a_{22}=\\frac{(2-2 \\times 2)^2}{2}=2 \\\\\n\\text{Thus,}\\quad & A=\\left[\\begin{array}{ll}\n\\frac{1}{2} & \\frac{9}{2} \\\\\n0 & 2\n\\end{array}\\right]_{2 \\times 2}\n\\end{aligned}$$</p>\n<p>(ii) Here, $A=\\left[a_{\\mathrm{ij}}\\right]_{2 \\times 2}=|-2 i+3 j|, 1 \\leq i \\leq 2 ; 1 \\leq j \\leq 2$</p>\n<p>$$\\begin{aligned}\n\\therefore\\quad a_{11} & =|-2 \\times 1+3 \\times 1|=1 \\\\\na_{12} & =|-2 \\times 1+3 \\times 2|=4  \\quad[\\because|-1|=1]\\\\\na_{21} & =|-2 \\times 2+3 \\times 1|=1 \\\\\na_{22} & =|-2 \\times 2+3 \\times 2|=2 \\\\\n\\therefore\\quad A & =\\left|\\begin{array}{ll}\n1 & 4 \\\\\n1 & 2\n\\end{array}\\right|_{2 \\times 2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiauu",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Construct a $3 \\times 2$ matrix whose elements are given by $a_{i j}=e^{i \\cdot x}=\\sin j x$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Since, } A=\\left[a_{i j}\\right]_{m \\times n} \\quad 1 \\leq i \\leq m \\text { and } 1 \\leq j \\leq n, i, j \\in N \\\\\n& \\therefore \\quad A=\\left[e^{i \\cdot x} \\sin j x\\right]_{3 \\times 2} ; 1 \\leq i \\leq 3 ; 1 \\leq j \\leq 2 \\\\\n& \\Rightarrow \\quad a_{11}=e^{1 \\cdot x} \\cdot \\sin 1 \\cdot x=e^x \\sin x \\\\\n& a_{12}=e^{1 \\cdot x} \\cdot \\sin 2 \\cdot x=e^x \\sin 2 x \\\\\n& a_{21}=e^{2 \\cdot x} \\cdot \\sin 1 \\cdot x=e^{2 x} \\sin x \\\\\n& a_{22}=e^{2 \\cdot x} \\cdot \\sin 2 \\cdot x=e^{2 x} \\sin 2 x \\\\\n& a_{31}=e^{3 \\cdot x} \\cdot \\sin 1 \\cdot x=e^{3 x} \\sin x \\\\\n& a_{32}=e^{3 \\cdot x} \\cdot \\sin 2 \\cdot x=e^{3 x} \\sin 2 x \\\\\n\\therefore\\quad& A=\\left[\\begin{array}{ll}\ne^x \\sin x & e^x \\sin 2 x \\\\\ne^{2 x} \\sin x & e^{2 x} \\sin 2 x \\\\\ne^{3 x} \\sin x & e^{3 x} \\sin 2 x\n\\end{array}\\right]_{3 \\times 2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphv0a",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the values of $a$ and $b$, if $A=B$, where\n\n$$\nA=\\left[\\begin{array}{cc}\na+4 & 3 b \\\\\n8 & -6\n\\end{array}\\right] \\text { and } B=\\left[\\begin{array}{cc}\n2 a+2 & b^2+2 \\\\\n8 & b^2-5 b\n\\end{array}\\right]$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$A=\\left[\\begin{array}{cc}\na+4 & 3 b \\\\\n8 & -6\n\\end{array}\\right]_{2 \\times 2} \\text { and } B=\\left[\\begin{array}{cc}\n2 a+2 & b^2+2 \\\\\n8 & b^2-5 b\n\\end{array}\\right]_{2 \\times 2}$$</p>\n<p>Also, $$A=B$$</p>\n<p>By equality of matrices we know that each element of $A$ is equal to the corresponding element of $B$, that is $a_{i j}=b_{i j}$ for all $i$ and $j$.\n\n$$\n\\begin{array}{lll}\n\\therefore & a_{11}=b_{11} \\Rightarrow a+4=2 a+2 \\Rightarrow a=2 & \\\\\n& a_{12}=b_{12} \\Rightarrow 3 b=b^2+2 \\Rightarrow b^2=3 b-2 & \\\\\n\\text { and } & a_{22}=b_{22} \\Rightarrow-6=b^2-5 b & \\\\\n\\Rightarrow & -6=3 b-2-5 b \\quad \\left[\\because b^2=3 b-2\\right]\\\\\n\\Rightarrow & 2 b=4 \\Rightarrow b=2 & \\\\\n\\therefore & a =2 \\text { and } b=2\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiboo",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If possible, find the sum of the matrices $A$ and $B$, where $A=\\left[\\begin{array}{cc}\\sqrt{3} & 1 \\\\ 2 & 3\\end{array}\\right]$ and $B=\\left[\\begin{array}{lll}x & y & z \\\\ a & b & c\\end{array}\\right]$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, \n$$A=\\left[\\begin{array}{cc}\n\\sqrt{3} & 1 \\\\\n2 & 3\n\\end{array}\\right]_{2 \\times 2} \\text { and } B=\\left[\\begin{array}{lll}\nx & y & z \\\\\na & b & 6\n\\end{array}\\right]_{2 \\times 3}$$\n</p>\n<p>Here, $A$ and $B$ are of different orders. Also, we know that the addition of two matrices $A$ and $B$ is possible only if order of both the matrices $A$ and $B$ should be same. Hence, the sum of matrices $A$ and $B$ is not possible.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphzjb",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $X=\\left[\\begin{array}{rrr}3 & 1 & -1 \\\\ 5 & -2 & -3\\end{array}\\right]$ and $Y=\\left[\\begin{array}{rrr}2 & 1 & -1 \\\\ 7 & 2 & 4\\end{array}\\right]$, then find</p>\n<p>(i) $X+Y$.</p>\n<p>(ii) $2 X-3 Y$.</p>\n<p>(iii) a matrix $Z$ such that $X+Y+Z$ is a zero matrix.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $X=\\left[\\begin{array}{ccc}3 & 1 & -1 \\\\ 5 & -2 & -3\\end{array}\\right]_{2 \\times 3}$ and $Y=\\left[\\begin{array}{ccc}2 & 1 & -1 \\\\ 7 & 2 & 4\\end{array}\\right]_{2 \\times 3}$</p>\n<p>(i) $X+Y=\\left[\\begin{array}{ccc}3+2 & 1+1 & -1-1 \\\\ 5+7 & -2+2 & -3+4\\end{array}\\right]=\\left[\\begin{array}{ccc}5 & 2 & -2 \\\\ 12 & 0 & 1\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n\\text{(ii) }\\quad & \\because 2 X=2\\left[\\begin{array}{lll}\n3 & 1 & -1 \\\\\n5 & -2 & -3\n\\end{array}\\right]=\\left[\\begin{array}{rrr}\n6 & 2 & -2 \\\\\n10 & -4 & -6\n\\end{array}\\right] \\\\\n& \\text { and } \\\\\n& 3 Y=3\\left[\\begin{array}{ccc}\n2 & 1 & -1 \\\\\n7 & 2 & 4\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n6 & 3 & -3 \\\\\n21 & 6 & 12\n\\end{array}\\right] \\\\\n& \\therefore \\quad 2 X-3 Y=\\left[\\begin{array}{ccc}\n6-6 & 2-3 & -2+3 \\\\\n10-21 & -4-6 & -6-12\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n0 & -1 & 1 \\\\\n-11 & -10 & -18\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>(iii) $X+Y=\\left[\\begin{array}{ccc}3+2 & 1+1 & -1-1 \\\\ 5+7 & -2+2 & -3+4\\end{array}\\right]=\\left[\\begin{array}{ccc}5 & 2 & -2 \\\\ 12 & 0+1\\end{array}\\right]$</p>\n<p>Also, $$X+Y+Z=\\left[\\begin{array}{lll}\n0 & 0 & 0 \\\\\n0 & 0 & 0\n\\end{array}\\right]$$</p>\n<p>We see that $Z$ is the additive inverse of $(X+Y)$ or negative of $(X+Y)$.</p>\n<p>$$\\therefore \\quad Z=\\left[\\begin{array}{ccc}\n-5 & -2 & 2 \\\\\n-12 & 0 & -1\n\\end{array}\\right]  \\quad [\\because Z=-(X+Y)]$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphfc8",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find non-zero values of $x$ satisfying the matrix equation\n\n$$\nx\\left[\\begin{array}{cc}\n2 x & 2 \\\\\n3 & x\n\\end{array}\\right]+2\\left[\\begin{array}{ll}\n8 & 5 x \\\\\n4 & 4 x\n\\end{array}\\right]=2\\left[\\begin{array}{cc}\n\\left(x^2+8\\right) & 24 \\\\\n(10) & 6 x\n\\end{array}\\right]$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given that, }\\\\\n&\\begin{array}{cc} \n& x\\left[\\begin{array}{cc}\n2 x & 2 \\\\\n3 & x\n\\end{array}\\right]+2\\left[\\begin{array}{ll}\n8 & 5 x \\\\\n4 & 4 x\n\\end{array}\\right]=2\\left[\\begin{array}{cc}\n\\left(x^2+8\\right) & 24 \\\\\n10 & 6 x\n\\end{array}\\right] \\\\\n\\Rightarrow & {\\left[\\begin{array}{cc}\n2 x^2 & 2 x \\\\\n3 x & x^2\n\\end{array}\\right]+\\left[\\begin{array}{cc}\n16 & 10 x \\\\\n8 & 8 x\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n2 x^2+16 & 48 \\\\\n20 & 12 x\n\\end{array}\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{cc}\n2 x^2+16 & 2 x+10 x \\\\\n3 x+8 & x^2+8 x\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n2 x^2+16 & 48 \\\\\n20 & 12 x\n\\end{array}\\right]} \\\\\n\\Rightarrow & 2 x+10 x=48 \\\\\n\\Rightarrow & 12 x=48 \\\\\n\\therefore & x=\\frac{48}{12}=4\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpibqu",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{ll}0 & 1 \\\\ 1 & 1\\end{array}\\right]$ and $B=\\left[\\begin{array}{cc}0 & -1 \\\\ 1 & 0\\end{array}\\right]$, then show that $$(A+B)(A-B) \\neq A^2-B^2 .$$\n</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad A & =\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 1\n\\end{array}\\right] \\text { and } B=\\left[\\begin{array}{cc}\n0 & -1 \\\\\n1 & 0\n\\end{array}\\right] \\\\\n\\therefore\\quad(A+B) & =\\left[\\begin{array}{ll}\n0+0 & 1-1 \\\\\n1+1 & 1+0\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n0 & 0 \\\\\n2 & 1\n\\end{array}\\right]_{2 \\times 2} \\\\\n\\text{and}\\quad(A-B) & =\\left[\\begin{array}{ll}\n0-0 & 1+1 \\\\\n1-1 & 1-0\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n0 & 2 \\\\\n0 & 1\n\\end{array}\\right]_{2 \\times 2}\n\\end{aligned}$$</p>\n<p>Since, $(A+B) \\cdot(A-B)$ is defined, if the number of columns of $(A+B)$ is equal to the number of rows of $(A-B)$, so here multiplication of matrices $(A+B) \\cdot(A-B)$ is possible.</p>\n<p>Now, $$(A+B)_{2 \\times 2} \\cdot(A-B)_{2 \\times 2}=\\left[\\begin{array}{ll}\n0+0 & 0+0 \\\\\n0+0 & 4+1\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 5\n\\end{array}\\right]\\quad\\text{.... (i)}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Also, }\\\\\n&\\begin{aligned}\nA^2 & =A \\cdot A \\\\\n& =\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 1\n\\end{array}\\right] \\cdot\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 1\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n0+1 & 0+1 \\\\\n0+1 & 1+1\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 1 \\\\\n1 & 2\n\\end{array}\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { and } B^2=B \\cdot B & =\\left[\\begin{array}{cc}\n0 & -1 \\\\\n1 & 0\n\\end{array}\\right]\\left[\\begin{array}{cc}\n0 & -1 \\\\\n1 & 0\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n0-1 & 0+0 \\\\\n0+0 & -1+0\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n-1 & 0 \\\\\n0 & -1\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$\\therefore \\quad A^2-B^2=\\left[\\begin{array}{ll}1 & 1 \\\\ 1 & 2\\end{array}\\right]-\\left[\\begin{array}{cc}-1 & 0 \\\\ 0 & -1\\end{array}\\right]=\\left[\\begin{array}{ll}2 & 1 \\\\ 1 & 3\\end{array}\\right]\\quad\\text{.... (ii)}$</p>\n<p>Thus, we see that</p>\n<p>$$\\begin{aligned}\n(A+B) \\cdot(A-B) & \\neq A^2-B^2 \\quad\\text{using Eqs. (i) and (ii)]}\\\\\n\\Rightarrow {\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 5\n\\end{array}\\right] } & \\neq\\left[\\begin{array}{ll}\n2 & 1 \\\\\n1 & 3\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpige2",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $x$, if $\\left[\\begin{array}{lll}1 & x & 1\\end{array}\\right]\\left[\\begin{array}{ccc}1 & 3 & 2 \\\\ 2 & 5 & 1 \\\\ 15 & 3 & 2\\end{array}\\right]\\left[\\begin{array}{l}1 \\\\ 2 \\\\ x\\end{array}\\right]=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\n\\left[\\begin{array}{lll}\nx & 1\n\\end{array}\\right]_{1 \\times 3}\\left[\\begin{array}{ccc}\n1 & 3 & 2 \\\\\n2 & 5 & 1 \\\\\n15 & 3 & 2\n\\end{array}\\right]_{3 \\times 3}\\left[\\begin{array}{l}\n1 \\\\\n2 \\\\\nx\n\\end{array}\\right]_{3 \\times 1}=0\n$$\n</p>\n<p>$\\Rightarrow\\left[\\begin{array}{lll}1+2 x+15 & 3+5 x+3 & 2+x+2\\end{array}\\right]_{1 \\times 3} \\left[\\begin{array}{l} \n\\\\\n1 \\\\\n2 \\\\\nx\n\\end{array}\\right]_{3 \\times 1}=0$</p>\n<p>$\\Rightarrow \\quad[16+2 x \\quad 5 x+6 \\quad x+4]_{1 \\times 3}\\left[\\begin{array}{c}\n1 \\\\\n2 \\\\\nx\n\\end{array}\\right]_{3 \\times 1}=0$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad& {[16+2 x+(5 x+6) \\cdot 2+(x+4) \\cdot x]_{1 \\times 1} } =0 \\\\\n\\Rightarrow\\quad& {\\left[16+2 x+10 x+12+x^2+4 x\\right] } =0 \\\\\n\\Rightarrow \\quad& {\\left[x^2+16 x+28\\right] } =0 \\\\\n\\Rightarrow \\quad& {\\left[x^2+2 x+14 x+28\\right] } =0 \\\\\n\\Rightarrow \\quad& (x+2)(x+14) =0 \\\\\n\\therefore \\quad& x =-2,-14\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpijru",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $A=\\left[\\begin{array}{cc}5 & 3 \\\\ -1 & -2\\end{array}\\right]$ satisfies the equation $A^2-3 A-7 I=0$ and hence find the value of $A^{-1}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\n\\begin{aligned}\nA & =\\left[\\begin{array}{cc}\n5 & 3 \\\\\n-1 & -2\n\\end{array}\\right] \\\\\n\\therefore\\quad A^2 & =A \\cdot A=\\left[\\begin{array}{cc}\n5 & 3 \\\\\n-1 & -2\n\\end{array}\\right] \\cdot\\left[\\begin{array}{cc}\n5 & 3 \\\\\n-1 & -2\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\left[\\begin{array}{ll}\n25-3 & 15-6 \\\\\n-5+2 & -3+4\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n22 & 9 \\\\\n-3 & 1\n\\end{array}\\right] \\\\\n3 A & =3\\left[\\begin{array}{cc}\n5 & 3 \\\\\n-1 & -2\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n15 & 9 \\\\\n-3 & -6\n\\end{array}\\right] \\\\\n\\text{and}\\quad 7 I & =7\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n7 & 0 \\\\\n0 & 7\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad A^2-3 A-7 I & =\\left[\\begin{array}{cc}\n22 & 9 \\\\\n-3 & 1\n\\end{array}\\right]-\\left[\\begin{array}{cc}\n15 & 9 \\\\\n-3 & -6\n\\end{array}\\right]-\\left[\\begin{array}{ll}\n7 & 0 \\\\\n0 & 7\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n22-15-7 & 9-9-0 \\\\\n-3+3-0 & 1+6-7\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 0\n\\end{array}\\right] \\\\\n& =0\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{l}\n\\text { Since, } & A^2-3 A-7 I =0 \\\\\n\\Rightarrow & A^{-1}\\left[\\left(A^2\\right)-3 A-7 I\\right] =A^{-1} 0 \\\\\n\\Rightarrow & A^{-1} A \\cdot A-3 A^{-1} A-7 A^{-1} I=0 \\quad \\left[\\because A^{-1} 0=0\\right]\\\\\n\\Rightarrow & I A-3 I-7 A^{-1}=0 \\quad \\left[\\because A^{-1} A=I\\right]\\\\\n\\Rightarrow & A-3 I-7 A^{-1}=0\\quad \\left[\\because A^{-1} I=A^{-1}\\right]\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad -7 A^{-1} & =-A+3 I \\\\\n& =\\left[\\begin{array}{cc}\n-5 & -3 \\\\\n1 & 2\n\\end{array}\\right]+\\left[\\begin{array}{ll}\n3 & 0 \\\\\n0 & 3\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n-2 & -3 \\\\\n1 & 5\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$\\therefore \\quad A^{-1}=\\frac{-1}{7}\\left[\\begin{array}{cc}-2 & -3 \\\\ 1 & 5\\end{array}\\right]$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpibtp",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the matrix $A$ satisfying the matrix equation\n\n$$\n\\left[\\begin{array}{ll}\n2 & 1 \\\\\n3 & 2\n\\end{array}\\right] A\\left[\\begin{array}{cc}\n-3 & 2 \\\\\n5 & -3\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right] .\n$$\n</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\n\\left[\\begin{array}{ll}\n2 & 1 \\\\\n3 & 2\n\\end{array}\\right]_{2 \\times 2} A \\cdot\\left[\\begin{array}{cc}\n-3 & 2 \\\\\n5 & -3\n\\end{array}\\right]_{2 \\times 2}=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]_{2 \\times 2}\n$$\n</p>\n<p>Let $A=\\left[\\begin{array}{ll}a & b \\\\ c & d\\end{array}\\right]_{2 \\times 2}$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & {\\left[\\begin{array}{ll}\n2 & 1 \\\\\n3 & 2\n\\end{array}\\right]\\left[\\begin{array}{ll}\na & b \\\\\nc & d\n\\end{array}\\right]\\left[\\begin{array}{cc}\n-3 & 2 \\\\\n5 & -3\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{cc}\n2 a+c & 2 b+d \\\\\n3 a+2 c & 3 b+2 d\n\\end{array}\\right]\\left[\\begin{array}{cc}\n-3 & 2 \\\\\n5 & -3\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{cc}\n-6 a-3 c+10 b+5 d & 4 a+2 c-6 b-3 d \\\\\n-9 a-6 c+15 b+10 d & 6 a+4 c-9 b-6 d\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]} \\\\\n\\Rightarrow & -6 a-3 c+10 b+5 d=1\\quad\\text{.... (i)}\n\\end{array}$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & 4 a+2 c-6 b-3 d=0 \\quad\\text{.... (ii)}\\\\\n\\Rightarrow & -9 a-6 c+15 b+10 d=0 \\quad\\text{.... (iii)}\\\\\n\\Rightarrow & 6 a+4 c-9 b-6 d=1\\quad\\text{.... (iv)}\n\\end{array}$$</p>\n<p>On adding Eqs. (i) and (iv), we get</p>\n<p>$$c+b-d=2 \\Rightarrow d=c+b-2\\quad\\text{.... (v)}$$</p>\n<p>On adding Eqs. (ii) and (iii), we get</p>\n<p>$$-5 a-4 c+9 b+7 d=0\\quad\\text{.... (vi)}$$</p>\n<p>On adding Eqs. (vi) and (iv), we get</p>\n<p>$$a+0+0+d=1 \\Rightarrow d=1-a\\quad\\text{.... (vii)}$$</p>\n<p>From Eqs. (v) and (vii),</p>\n<p>$$c+b-2=1-a \\Rightarrow a+b+c=3\\quad\\text{.... (viii)}$$</p>\n<p>$$\\Rightarrow \\quad a=3-b-c$$</p>\n<p>$$\\begin{aligned}\n&\\text { Now, using the values of a and } d \\text { in Eq. (iii), we get }\\\\\n&\\begin{array}{l} \n& -9(3-b-c)-6 c+15 b+10(-2+b+c) =0 \\\\\n\\Rightarrow & -27+9 b+9 c-6 c+15 b-20+10 b+10 c =0 \\\\\n\\Rightarrow & 34 b+13 c =47\\quad\\text{.... (ix)}\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Now, using the values of a and } d \\text { in Eq. (ii), we get }\\\\\n&\\begin{array}{lrl} \n& 4(3-b-c)+2 c-6 b-3(b+c-2) \\\\\n\\Rightarrow & 12-4 b-4 c+2 c-6 b-3 b-3 c+6 =0 \\\\\n\\Rightarrow & -13 b-5 c =-18\\quad\\text{.... (x)}\n\\end{array}\n\\end{aligned}$$</p>\n<p>On multiplying Eq. (ix) by 5 and Eq. (x) by 13, then adding, we get</p>\n<p>$\\begin{gathered}-169 b-65 c=-234 \\\\ \\frac{170 b+65 c=235}{b=1}\\end{gathered}$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & -13 \\times 1-5 c=-18 \\quad\\text{[from Eq. (x)]}\\\\\n\\Rightarrow & -5 c=-18+13=-5 \\Rightarrow c=1 \\\\\n\\therefore & a=3-1-1=1 \\text { and } d=1-1=0 \\\\\n\\therefore & A=\\left[\\begin{array}{ll}\n1 & 1 \\\\\n1 & 0\n\\end{array}\\right]\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpil53",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find $A$, if $\\left[\\begin{array}{l}4 \\\\ 1 \\\\ 3\\end{array}\\right] A=\\left[\\begin{array}{lll}-4 & 8 & 4 \\\\ -1 & 2 & 1 \\\\ -3 & 6 & 3\\end{array}\\right]$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\left[\\begin{array}{l}4 \\\\ 1 \\\\ 3\\end{array}\\right]_{3 \\times 1} \\quad A=\\left[\\begin{array}{ccc}-4 & 8 & 4 \\\\ -1 & 2 & 1 \\\\ -3 & 6 & 3\\end{array}\\right]_{3 \\times 3}$</p>\n<p>$$\\begin{gathered}\n\\text{Let}\\quad A=[x y z] \\\\\n\\therefore\\quad {\\left[\\begin{array}{l}\n4 \\\\\n1 \\\\\n3\n\\end{array}\\right]_{3 \\times 1}[x y y z]_{1 \\times 3}=\\left[\\begin{array}{ccc}\n-4 & 8 & 4 \\\\\n-1 & 2 & 1 \\\\\n-3 & 6 & 3\n\\end{array}\\right]_{3 \\times 3}} \\\\\n\\Rightarrow\\quad {\\left[\\begin{array}{ccc}\n4 x & 4 y & 4 z \\\\\nx & y & z \\\\\n3 x & 3 y & 3 z\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n-4 & 8 & 4 \\\\\n-1 & 2 & 1 \\\\\n-3 & 6 & 3\n\\end{array}\\right]}\n\\end{gathered}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & 4 x=-4 \\Rightarrow x=-1,4 y=8 \\\\\n\\Rightarrow & y=2 \\text { and } 4 z=4 \\\\\n\\Rightarrow & z=1 \\\\\n\\therefore & A=\\left[\\begin{array}{lll}\n-1 & 2 & 1\n\\end{array}\\right]\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphkya",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A\\left[\\begin{array}{cc}3 & -4 \\\\ 1 & 1 \\\\ 2 & 0\\end{array}\\right]$ and $B=\\left[\\begin{array}{lll}2 & 1 & 2 \\\\ 1 & 2 & 4\\end{array}\\right]$, then verify $(B A)^2 \\neq B^2 A^2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\nA=\\left[\\begin{array}{cc}\n3 & -4 \\\\\n1 & 1 \\\\\n2 & 0\n\\end{array}\\right]_{3 \\times 2} \\text { and } B=\\left[\\begin{array}{lll}\n2 & 1 & 2 \\\\\n1 & 2 & 4\n\\end{array}\\right]_{2 \\times 3}$$</p>\n<p>$\\therefore\\quad B A=\\left[\\begin{array}{lll}2 & 1 & 2 \\\\ 1 & 2 & 4\\end{array}\\right]_{2 \\times 3}\\left[\\begin{array}{cc}3 & -4 \\\\ 1 & 1 \\\\ 2 & 0\\end{array}\\right]_{3 \\times 2}$</p>\n<p>$=\\left[\\begin{array}{ll}6+1+4 & -8+1+0 \\\\ 3+2+8 & -4+2+0\\end{array}\\right]=\\left[\\begin{array}{ll}11 & -7 \\\\ 13 & -2\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n\\text{and}\\quad (B A) \\cdot(B A) & =\\left[\\begin{array}{ll}\n11 & -7 \\\\\n13 & -2\n\\end{array}\\right]\\left[\\begin{array}{cc}\n11 & -7 \\\\\n13 & -2\n\\end{array}\\right] \\\\\n\\Rightarrow\\quad (B A)^2 & =\\left[\\begin{array}{cc}\n121-91 & -77+14 \\\\\n143-26 & -91+4\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n30 & -63 \\\\\n117 & -87\n\\end{array}\\right] \\quad\\text{... (i)}\\\\\n\\text{Also,}\\quad B^2 & =B \\cdot B=\\left[\\begin{array}{lll}\n2 & 1 & 2 \\\\\n1 & 2 & 4\n\\end{array}\\right]_{2 \\times 3}\\left[\\begin{array}{lll}\n2 & 1 & 2 \\\\\n1 & 2 & 4\n\\end{array}\\right]_{2 \\times 3}\n\\end{aligned}$$</p>\n<p>So, $B^2$ is not possible, since the $B$ is not a square matrix.</p>\n<p>Hence, $(B A)^2 \\neq B^2 A^2$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiax7",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If possible, find the value of $B A$ and $A B$, where \n$$\nA=\\left[\\begin{array}{lll}\n2 & 1 & 2 \\\\\n1 & 2 & 4\n\\end{array}\\right] \\text { and } B=\\left[\\begin{array}{ll}\n4 & 1 \\\\\n2 & 3 \\\\\n1 & 2\n\\end{array}\\right] \\text {. }$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{lll}2 & 1 & 2 \\\\ 1 & 2 & 4\\end{array}\\right]_{2 \\times 3}$ and $B=\\left[\\begin{array}{ll}4 & 1 \\\\ 2 & 3 \\\\ 1 & 2\\end{array}\\right]_{3 \\times 2}$</p>\n<p>So, $A B$ and $B A$ both are possible.</p>\n<p>[since, in both $A \\cdot B$ and $B \\cdot A$, the number of columns of first is equal to the number of rows of second.]</p>\n<p>$$\\begin{aligned}\n\\therefore\\quad A B & =\\left[\\begin{array}{lll}\n2 & 1 & 2 \\\\\n1 & 2 & 4\n\\end{array}\\right]_{2 \\times 3} \\cdot\\left[\\begin{array}{ll}\n4 & 1 \\\\\n2 & 3 \\\\\n1 & 2\n\\end{array}\\right]_{3 \\times 2} \\\\\n& =\\left[\\begin{array}{ll}\n8+2+2 & 2+3+4 \\\\\n4+4+4 & 1+6+8\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n12 & 9 \\\\\n12 & 15\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{and}\\quad B A & =\\left[\\begin{array}{ll}\n4 & 1 \\\\\n2 & 3 \\\\\n1 & 2\n\\end{array}\\right]_{3 \\times 2}\\left[\\begin{array}{lll}\n2 & 1 & 2 \\\\\n1 & 2 & 4\n\\end{array}\\right]_{2 \\times 3} \\\\\n& =\\left[\\begin{array}{ccc}\n4 \\times 2+1 & 4+2 & 8+4 \\\\\n4+3 & 2+6 & 4+12 \\\\\n2+2 & 1+4 & 2+8\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n9 & 6 & 12 \\\\\n7 & 8 & 16 \\\\\n4 & 5 & 10\n\\end{array}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpibvy",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show by an example that for $A \\neq 0, B \\neq 0$ and $A B=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Let}\\quad A & =\\left[\\begin{array}{cc}\n0 & -4 \\\\\n0 & 2\n\\end{array}\\right] \\neq 0 \\text { and } B=\\left[\\begin{array}{ll}\n3 & 5 \\\\\n0 & 0\n\\end{array}\\right] \\neq 0 \\\\\n\\therefore\\quad A B & =\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 0\n\\end{array}\\right]=0\n\\end{aligned}$$</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphehj",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Given, $A=\\left[\\begin{array}{lll}2 & 4 & 0 \\\\ 3 & 9 & 6\\end{array}\\right]$ and $B=\\left[\\begin{array}{ll}1 & 4 \\\\ 2 & 8 \\\\ 1 & 3\\end{array}\\right]$. is $(A B)^{\\prime}=B^{\\prime} A^{\\prime}$ ?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{lll}2 & 4 & 0 \\\\ 3 & 9 & 6\\end{array}\\right]_{2 \\times 3}$ and $B=\\left[\\begin{array}{ll}1 & 4 \\\\ 2 & 8 \\\\ 1 & 3\\end{array}\\right]_{3 \\times 2}$</p>\n<p>$\\therefore\\quad A B=\\left[\\begin{array}{cc}2+8+0 & 8+32+0 \\\\ 3+18+6 & 12+72+18\\end{array}\\right]=\\left[\\begin{array}{cc}10 & 40 \\\\ 27 & 102\\end{array}\\right]$</p>\n<p>$\\text{and}\\quad (A B)^{\\prime}=\\left[\\begin{array}{cc}10 & 27 \\\\ 40 & 102\\end{array}\\right]\\quad\\text{..... (i)}$</p>\n<p>$\\text{Also,}\\quad B^{\\prime}=\\left[\\begin{array}{lll}1 & 2 & 1 \\\\ 4 & 8 & 3\\end{array}\\right]_{2 \\times 3}$ and $A^{\\prime}=\\left[\\begin{array}{ll}2 & 3 \\\\ 4 & 9 \\\\ 0 & 6\\end{array}\\right]_{3 \\times 2}$</p>\n<p>$\\therefore\\quad B^{\\prime} A^{\\prime}=\\left[\\begin{array}{cc}2+8+0 & 3+18+6 \\\\ 8+32+0 & 12+72+18\\end{array}\\right]=\\left[\\begin{array}{cc}10 & 27 \\\\ 40 & 102\\end{array}\\right]\\quad\\text{.... (ii)}$</p>\n<p>Thus, we see that, $(A B)^{\\prime}=B^{\\prime} A^{\\prime}$ [using Eqs. (i) and (ii)]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpie5i",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve for $x$ and $y, x\\left[\\begin{array}{l}2 \\\\ 1\\end{array}\\right]+y\\left[\\begin{array}{l}3 \\\\ 5\\end{array}\\right]+\\left[\\begin{array}{c}-8 \\\\ -11\\end{array}\\right]=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad x\\left[\\begin{array}{l}\n2 \\\\\n1\n\\end{array}\\right]+y\\left[\\begin{array}{l}\n3 \\\\\n5\n\\end{array}\\right]+\\left[\\begin{array}{c}\n-8 \\\\\n-11\n\\end{array}\\right] & =0 \\\\\n\\Rightarrow\\quad{\\left[\\begin{array}{c}\n2 x \\\\\nx\n\\end{array}\\right]+\\left[\\begin{array}{l}\n3 \\cdot y \\\\\n5 \\cdot y\n\\end{array}\\right]+\\left[\\begin{array}{c}\n-8 \\\\\n-11\n\\end{array}\\right] } & =0 \\\\\n\\Rightarrow\\quad{\\left[\\begin{array}{cc}\n2 x & 3 y \\\\\nx & -8 \\\\\nx & -11\n\\end{array}\\right] } & =\\left[\\begin{array}{l}\n0 \\\\\n0\n\\end{array}\\right] \\\\\n\\therefore\\quad 2 x+3 y-8 & =0 \\\\\n\\Rightarrow\\quad 4 x+6 y & =16 \\quad\\text{.... (i)}\\\\\n\\text{and}\\quad x+5 y-11 & =0 \\\\\n\\Rightarrow\\quad 4 x+20 y & =44\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On subtracting Eq. (i) from Eq. (ii), we get }\\\\\n&\\begin{array}{lc} \n& 14 y=28 \\Rightarrow y=2 \\\\\n\\therefore & 2 x+3 \\times 2-8=0 \\\\\n\\Rightarrow & 2 x=2 \\Rightarrow x=1 \\\\\n\\therefore & x=1 \\text { and } y=2\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpilvi",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $X$ and $Y$ are $2 \\times 2$ matrices, then solve the following matrix equations for $X$ and $Y$</p>\n<p>$$2 X+3 Y=\\left[\\begin{array}{ll}\n2 & 3 \\\\\n4 & 0\n\\end{array}\\right], 3 X+2 Y=\\left[\\begin{array}{cr}\n-2 & 2 \\\\\n1 & -5\n\\end{array}\\right]$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,</p>\n<p>$$\n\\begin{aligned}\n& 2 X+3 Y=\\left[\\begin{array}{ll}\n2 & 3 \\\\\n4 & 0\n\\end{array}\\right] \\quad\\text{.... (i)}\\\\\n\\text{and}\\quad & 3 X+2 Y=\\left[\\begin{array}{cr}\n-2 & 2 \\\\\n1 & -5\n\\end{array}\\right]\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On subtracting Eq. (i) from Eq. (ii), we get }\\\\\n&\\begin{aligned}\n\\therefore \\quad(3 X+2 Y)-(2 X+3 Y) & =\\left[\\begin{array}{cc}\n-2-2 & 2-3 \\\\\n1-4 & -5-0\n\\end{array}\\right] \\\\\n(X-Y) & =\\left[\\begin{array}{l}\n-4-1 \\\\\n-3-5\n\\end{array}\\right]\\quad\\text{.... (iii)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On adding Eqs. (i) and (ii), we get }\\\\\n&\\begin{aligned}\n(5 X+5 Y) & =\\left[\\begin{array}{rr}\n0 & 5 \\\\\n5 & -5\n\\end{array}\\right] \\\\\n(X+Y) & =\\frac{1}{5}\\left[\\begin{array}{rr}\n0 & 5 \\\\\n5 & -5\n\\end{array}\\right]=\\left[\\begin{array}{rr}\n0 & 1 \\\\\n1 & -1\n\\end{array}\\right]\\quad\\text{.... (iv)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>On adding Eqs. (iii) and (iv), we get</p>\n<p>$$\\begin{aligned}\n(X-Y)+(X+Y) & =\\left[\\begin{array}{rr}\n-4 & 0 \\\\\n-2 & -6\n\\end{array}\\right] \\\\\n\\Rightarrow\\quad 2 X & =2\\left[\\begin{array}{rr}\n-2 & 0 \\\\\n-1 & -3\n\\end{array}\\right] \\\\\n\\therefore\\quad X & =\\left[\\begin{array}{rr}\n-2 & 0 \\\\\n-1 & -3\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>From Eq. (iv),</p>\n<p>$$\\begin{aligned}\n& {\\left[\\begin{array}{rr}\n-2 & 0 \\\\\n-1 & -3\n\\end{array}\\right]+Y }=\\left[\\begin{array}{rr}\n0 & 1 \\\\\n1 & -1\n\\end{array}\\right] \\\\\n\\therefore\\quad & Y=\\left[\\begin{array}{ll}\n2 & 1 \\\\\n2 & 2\n\\end{array}\\right] \\text { and } X=\\left[\\begin{array}{lr}\n-2 & 0 \\\\\n-1 & -3\n\\end{array}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpil76",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{ll}3 & 5\\end{array}\\right]$ and $B=\\left[\\begin{array}{ll}7 & 3\\end{array}\\right]$, then find a non-zero matrix $C$ such that $A C=B C$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{ll}3 & 5\\end{array}\\right]_{1 \\times 2}$ and $B=\\left[\\begin{array}{ll}7 & 3\\end{array}\\right]_{1 \\times 2}$</p>\n<p>Let $C=\\left[\\begin{array}{l}x \\\\ y\\end{array}\\right]_{2 \\times 1}$ is a non-zero matrix of order $2 \\times 1$.</p>\n<p>$\\begin{array}{ll}\\therefore & A C=\\left[\\begin{array}{ll}3 & 5\\end{array}\\right]\\left[\\begin{array}{l}x \\\\ y\\end{array}\\right]=[3 x+5 y] \\\\ \\text { and } & B C=\\left[\\begin{array}{ll}7 & 3\\end{array}\\right]\\left[\\begin{array}{l}x \\\\ y\\end{array}\\right]=[7 x+3 y]\\end{array}$</p>\n<p>For $A C=B C$,</p>\n<p>$$[3 x+5 y]=[7 x+3 y]$$</p>\n<p>On using equality of matrix, we get</p>\n<p>$$\\begin{array}{lrl} \n& 3 x+5 y & =7 x+3 y \\\\\n\\Rightarrow & 4 x & =2 y \\\\\n\\Rightarrow & x & =\\frac{1}{2} y \\\\\n\\therefore & y & =2 x \\\\\n\\Rightarrow & C & =\\left[\\begin{array}{c}\nx \\\\\n2 x\n\\end{array}\\right]\n\\end{array}$$</p>\n<p>We see that on taking $C$ of order $2 \\times 1,2 \\times 2,2 \\times 3, \\ldots$, we get</p>\n<p>$$\\mathrm{C}=\\left[\\begin{array}{c}\nx \\\\\n2 x\n\\end{array}\\right] \\cdot\\left[\\begin{array}{cc}\nx & x \\\\\n2 x & 2 x\n\\end{array}\\right] \\cdot\\left[\\begin{array}{ccc}\nx & x & x \\\\\n2 x & 2 x & 2 x\n\\end{array}\\right] \\ldots$$</p>\n<p>In general,</p>\n<p>$$C=\\left[\\begin{array}{c}\nk \\\\\n2 k\n\\end{array}\\right] \\cdot\\left[\\begin{array}{cc}\nk & k \\\\\n2 k & 2 k\n\\end{array}\\right] \\text { etc... }$$</p>\n<p>where, $k$ is any real number.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpigfx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Give an example of matrices $A, B$ and $C$, such that $A B=A C$, where $A$ is non-zero matrix but $B \\neq C$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let</p>\n<p>$$A=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 0\n\\end{array}\\right], B=\\left[\\begin{array}{ll}\n2 & 3 \\\\\n4 & 0\n\\end{array}\\right] \\text { and } C=\\left[\\begin{array}{ll}\n2 & 3 \\\\\n4 & 4\n\\end{array}\\right]\\quad [\\because B \\neq C]$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & A B=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 0\n\\end{array}\\right]\\left[\\begin{array}{ll}\n2 & 3 \\\\\n4 & 0\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n2 & 3 \\\\\n0 & 0\n\\end{array}\\right] \\quad\\text{.... (i)}\\\\\n\\text { and } & A C=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 0\n\\end{array}\\right] \\cdot\\left[\\begin{array}{ll}\n2 & 3 \\\\\n4 & 4\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n2 & 3 \\\\\n0 & 0\n\\end{array}\\right]\\quad\\text{.... (ii)}\n\\end{array}$$</p>\n<p>Thus, we see that $\\quad A B=A C\\quad$ [using Eqs. (i) and (ii)]</p>\n<p>where, $A$ is non-zero matrix but $B \\neq C$.</p>\n"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpin96",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{cc}1 & 2 \\\\ -2 & 1\\end{array}\\right], B=\\left[\\begin{array}{cc}2 & 3 \\\\ 3 & -4\\end{array}\\right]$ and $C=\\left[\\begin{array}{cc}1 & 0 \\\\ -1 & 0\\end{array}\\right]$, verify</p>\n<p>(i) $(A B) C=A(B C)$.</p>\n<p>(ii) $A(B+C)=A B+A C$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{cc}1 & 2 \\\\ -2 & 1\\end{array}\\right], B=\\left[\\begin{array}{cc}2 & 3 \\\\ 3 & -4\\end{array}\\right]$ and $C=\\left[\\begin{array}{cc}1 & 0 \\\\ -1 & 0\\end{array}\\right]$</p>\n<p>(i) $(A B)=\\left[\\begin{array}{cc}1 & 2 \\\\ -2 & 1\\end{array}\\right]\\left[\\begin{array}{cc}2 & 3 \\\\ 3 & -4\\end{array}\\right]=\\left[\\begin{array}{cc}2+6 & 3-8 \\\\ -4+3 & -6-4\\end{array}\\right]=\\left[\\begin{array}{cc}8 & -5 \\\\ -1 & -10\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n\\text { and } \\quad (A B) C & =\\left[\\begin{array}{cc}\n8 & -5 \\\\\n-1 & -10\n\\end{array}\\right]\\left[\\begin{array}{cc}\n1 & 0 \\\\\n-1 & 0\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n8+5 & 0 \\\\\n-1+10 & 0\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n13 & 0 \\\\\n9 & 0\n\\end{array}\\right]\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { Again, } \\quad (B C) & =\\left[\\begin{array}{cc}\n2 & 3 \\\\\n3 & -4\n\\end{array}\\right]\\left[\\begin{array}{cc}\n1 & 0 \\\\\n-1 & 0\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n2-3 & 0 \\\\\n3+4 & 0\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n-1 & 0 \\\\\n7 & 0\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{and}\\quad A(B C) & =\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-2 & 1\n\\end{array}\\right]\\left[\\begin{array}{cc}\n-1 & 0 \\\\\n7 & 0\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n-1+14 & 0 \\\\\n+2+7 & 0\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n13 & 0 \\\\\n9 & 0\n\\end{array}\\right]\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$\\therefore \\quad(A B) C=A(B C) \\quad$ [using Eqs. (i) and (ii)]</p>\n<p>$$\\begin{aligned}\n&\\text { (ii) }\\\\\n&\\begin{aligned}\n& (B+C)=\\left[\\begin{array}{cc}\n2 & 3 \\\\\n3 & -4\n\\end{array}\\right]+\\left[\\begin{array}{cc}\n1 & 0 \\\\\n-1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n3 & 3 \\\\\n2 & -4\n\\end{array}\\right] \\\\\n& \\text { and } \\\\\n& A \\cdot(B+C)=\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-2 & 1\n\\end{array}\\right]\\left[\\begin{array}{cc}\n3 & 3 \\\\\n2 & -4\n\\end{array}\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$=\\left[\\begin{array}{cc}3+4 & 3-8 \\\\ -6+2 & -6-4\\end{array}\\right]=\\left[\\begin{array}{cc}7 & -5 \\\\ -4 & -10\\end{array}\\right]\\quad\\text{.... (iii)}$</p>\n<p>$$\\begin{aligned}\n&\\text { Also, }\\\\\n&\\begin{aligned}\nA B & =\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-2 & 1\n\\end{array}\\right] \\cdot\\left[\\begin{array}{cc}\n2 & 3 \\\\\n3 & -4\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n2+6 & 3-8 \\\\\n-4+3 & -6-4\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n8 & -5 \\\\\n-1 & -10\n\\end{array}\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>and\n\n$$\nA C=\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-2 & 1\n\\end{array}\\right]\\left[\\begin{array}{cc}\n1 & 0 \\\\\n-1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n1-2 & 0 \\\\\n-2-1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n-1 & 0 \\\\\n-3 & 0\n\\end{array}\\right]$$</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{ll}\n\\therefore & A B+A C=\\left[\\begin{array}{cc}\n8 & -5 \\\\\n-1 & -10\n\\end{array}\\right]+\\left[\\begin{array}{ll}\n-1 & 0 \\\\\n-3 & 0\n\\end{array}\\right] \\\\\n\\Rightarrow & A B+A C=\\left[\\begin{array}{cc}\n7 & -5 \\\\\n-4 & -10\n\\end{array}\\right]\\quad\\text{.... (iv)}\n\\end{array}\\\\\n&\\text { From Eqs. (iii) and (iv), }\\\\\n&A(B+C)=A B+A C\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiaze",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $P=\\left[\\begin{array}{ccc}x & 0 & 0 \\\\ 0 & \\mathrm{y} & 0 \\\\ 0 & 0 & \\mathrm{z}\\end{array}\\right]$ and $Q=\\left[\\begin{array}{ccc}\\mathrm{a} & 0 & 0 \\\\ 0 & \\mathrm{~b} & 0 \\\\ 0 & 0 & \\mathrm{c}\\end{array}\\right]$, then prove that $P Q=\\left[\\begin{array}{ccc}x \\mathrm{a} & 0 & 0 \\\\ 0 & \\mathrm{yb} & 0 \\\\ 0 & 0 & \\mathrm{zc}\\end{array}\\right]=Q P$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\n\\begin{aligned}\n& P Q=\\left[\\begin{array}{lll}\nx & 0 & 0 \\\\\n0 & y & 0 \\\\\n0 & 0 & z\n\\end{array}\\right]\\left[\\begin{array}{lll}\na & 0 & 0 \\\\\n0 & b & 0 \\\\\n0 & 0 & c\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\nx a & 0 & 0 \\\\\n0 & y b & 0 \\\\\n0 & 0 & z c\n\\end{array}\\right] \\quad\\text{.... (i)}\\\\\n& \\text { and } Q P=\\left[\\begin{array}{lll}\na & 0 & 0 \\\\\n0 & b & 0 \\\\\n0 & 0 & c\n\\end{array}\\right]\\left[\\begin{array}{ccc}\nx & 0 & 0 \\\\\n0 & y & 0 \\\\\n0 & 0 & z\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\na x & 0 & 0 \\\\\n0 & b y & 0 \\\\\n0 & 0 & z c\n\\end{array}\\right]\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>Thus, we see that, $P Q=Q P$ [usings Eq. (i) and (ii)] Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpil9g",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left[\\begin{array}{lll}2 & 1 & 3\\end{array}\\right]\\left[\\begin{array}{ccc}-1 & 0 & -1 \\\\ -1 & 1 & 0 \\\\ 0 & 1 & 1\\end{array}\\right]\\left[\\begin{array}{c}1 \\\\ 0 \\\\ -1\\end{array}\\right]=A$, then find the value of $A$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\left[\\begin{array}{lll}2 & 1 & 3\\end{array}\\right]\\left[\\begin{array}{ccc}-1 & 0 & -1 \\\\ -1 & 1 & 0 \\\\ 0 & 1 & 1\\end{array}\\right]\\left[\\begin{array}{c}1 \\\\ 0 \\\\ -1\\end{array}\\right]=A$\n\n$$\n\\begin{aligned}\n\\therefore \\quad\\left[\\begin{array}{lll}\n2 & 3\n\\end{array}\\right]\\left[\\begin{array}{ccc}\n-1 & 0 & -1 \\\\\n-1 & 1 & 0 \\\\\n0 & 1 & 1\n\\end{array}\\right] & =\\left[\\begin{array}{lll}\n-2-1+0 & 0+1+3 & -2+0+3\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{lll}\n-3 & 4 & 1\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>Now,</p>\n<p>$$\\begin{aligned}\n{\\left[\\begin{array}{lll}\n-3 & 4 & 1\n\\end{array}\\right]\\left[\\begin{array}{c}\n1 \\\\\n0 \\\\\n-1\n\\end{array}\\right] } & =A \\\\\n\\therefore\\quad A & =\\left[\\begin{array}{lll}\n-3 & 4 & 1\n\\end{array}\\right]\\left[\\begin{array}{c}\n1 \\\\\n0 \\\\\n-1\n\\end{array}\\right] \\\\\n& =[-3+0-1]=[-4]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiby6",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=[21], B=\\left[\\begin{array}{lll}5 & 3 & 4 \\\\ 8 & 7 & 6\\end{array}\\right]$ and $C=\\left[\\begin{array}{ccc}-1 & 2 & 1 \\\\ 1 & 0 & 2\\end{array}\\right]$, then verify that $A(B+C)=(A B+A C)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have to verify that, $A(B+C)=A B+A C$</p>\n<p>We have, $$A=\\left[\\begin{array}{ll}\n2 & 1\n\\end{array}\\right], B=\\left[\\begin{array}{lll}\n5 & 3 & 4 \\\\\n8 & 7 & 6\n\\end{array}\\right] \\text { and } C=\\left[\\begin{array}{ccc}\n-1 & 2 & 1 \\\\\n1 & 0 & 2\n\\end{array}\\right]$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad A(B+C) & =\\left[\\begin{array}{ll}\n2 & 1\n\\end{array}\\right]\\left[\\begin{array}{lll}\n5-1 & 3+2 & 4+1 \\\\\n8+1 & 7+0 & 6+2\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n2 & 1\n\\end{array}\\right]\\left[\\begin{array}{lll}\n4 & 5 & 5 \\\\\n9 & 7 & 8\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{lll}\n8+9 & 10+7 & 10+8\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{lll}\n17 & 17 & 18\n\\end{array}\\right]\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { Also, } \\quad A B & =\\left[\\begin{array}{ll}\n2 & 1\n\\end{array}\\right]\\left[\\begin{array}{lll}\n5 & 3 & 4 \\\\\n8 & 7 & 6\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{lll}\n10+8 & 6+7 & 8+6\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n18 & 13 & 14\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{and}\\quad A C & =\\left[\\begin{array}{ll}\n2 & 1\n\\end{array}\\right]\\left[\\begin{array}{ccc}\n-1 & 2 & 1 \\\\\n1 & 0 & 2\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{lll}\n-2+1 & 4+0 & 2+2\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n-1 & 4 & 4\n\\end{array}\\right] \\\\\n\\therefore\\quad A B+A C & =\\left[\\begin{array}{lll}\n18 & 13 & 14\n\\end{array}\\right]+\\left[\\begin{array}{lll}\n-1 & 4 & 4\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{lll}\n17 & 17 & 18\n\\end{array}\\right] \\quad\\text{.... (ii)}\\\\\n\\therefore\\quad A(B+C) & =(A B+A C)\\quad\\text{[using Eqs. (i) and (ii)]}\n\\end{aligned}$$</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpie7p",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{ccc}1 & 0 & -1 \\\\ 2 & 1 & 3 \\\\ 0 & 1 & 1\\end{array}\\right]$, then verify that $A^2+A=(A+I)$, where $I$ is $3 \\times 3$ unit matrix.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&A=\\left[\\begin{array}{ccc}\n1 & 0 & -1 \\\\\n2 & 1 & 3 \\\\\n0 & 1 & 1\n\\end{array}\\right]\\\\\n&\\therefore \\quad A^2=A \\cdot A\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n& =\\left[\\begin{array}{ccc}\n1 & 0 & -1 \\\\\n2 & 1 & 3 \\\\\n0 & 1 & 1\n\\end{array}\\right]\\left[\\begin{array}{ccc}\n1 & 0 & -1 \\\\\n2 & 1 & 3 \\\\\n0 & 1 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & -1 & -2 \\\\\n4 & 4 & 4 \\\\\n2 & 2 & 4\n\\end{array}\\right] \\\\\n\\therefore \\quad A^2+A & =\\left[\\begin{array}{ccc}\n1 & -1 & -2 \\\\\n4 & 4 & 4 \\\\\n2 & 2 & 4\n\\end{array}\\right]+\\left[\\begin{array}{ccc}\n1 & 0 & -1 \\\\\n2 & 1 & 3 \\\\\n0 & 1 & 1\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ccc}\n2 & -1 & -3 \\\\\n6 & 5 & 7 \\\\\n2 & 3 & 5\n\\end{array}\\right]\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>Now, and\n\n$$\n\\begin{aligned}\nA+I & =\\left[\\begin{array}{ccc}\n1 & 0 & -1 \\\\\n2 & 1 & 3 \\\\\n0 & 1 & 1\n\\end{array}\\right]+\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n2 & 0 & -1 \\\\\n2 & 2 & 3 \\\\\n0 & 1 & 2\n\\end{array}\\right] \\\\\n\\text{and}\\quad A(A+I) & =\\left[\\begin{array}{ccc}\n1 & 0 & -1 \\\\\n2 & 1 & 3 \\\\\n0 & 1 & 1\n\\end{array}\\right] \\cdot\\left[\\begin{array}{ccc}\n2 & 0 & -1 \\\\\n2 & 2 & 3 \\\\\n0 & 1 & 2\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n2 & -1 & -3 \\\\\n6 & 5 & 7 \\\\\n2 & 3 & 5\n\\end{array}\\right]\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>Thus, we see that $A^2+A=A(A+I)$ [using Eqs. (i) and (ii)]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphfef",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{ccc}0 & -1 & 2 \\\\ 4 & 3 & -4\\end{array}\\right]$ and $B=\\left[\\begin{array}{ll}4 & 0 \\\\ 1 & 3 \\\\ 2 & 6\\end{array}\\right]$, then verify that</p>\n<p>(i) $\\left(A^{\\prime}\\right)^{\\prime}=A$</p>\n<p>(ii) $(A B)^{\\prime}=B^{\\prime} A^{\\prime}$</p>\n<p>(iii) $(k A)^{\\prime}=\\left(k A^{\\prime}\\right)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{ccc}0 & -1 & 2 \\\\ 4 & 3 & -4\\end{array}\\right]$ and $B=\\left[\\begin{array}{cc}4 & 0 \\\\ 1 & 3 \\\\ 2 & 6\\end{array}\\right]$</p>\n<p>(i) We have to verify that, $A^{\\prime}=A$</p>\n<p>$$\\begin{aligned}\n\\therefore\\quad & A^{\\prime}=\\left[\\begin{array}{cc}\n0 & 4 \\\\\n-1 & 3 \\\\\n2 & -4\n\\end{array}\\right] \\\\\n\\text{and}\\quad & A^{\\prime}=\\left[\\begin{array}{ccc}\n0 & -1 & 2 \\\\\n4 & 3 & -4\n\\end{array}\\right]=A\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { (ii) We have to verify that, } A B^{\\prime}=B^{\\prime} A^{\\prime}\\\\\n&\\begin{array}{ll}\n\\therefore & A B=\\left[\\begin{array}{cc}\n3 & 9 \\\\\n11 & -15\n\\end{array}\\right] \\\\\n\\Rightarrow & (A B)^{\\prime}=\\left[\\begin{array}{cc}\n3 & 11 \\\\\n9 & -15\n\\end{array}\\right]\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{rlr}\n\\text{and}\\quad B^{\\prime} A^{\\prime} & =\\left[\\begin{array}{lll}\n4 & 1 & 2 \\\\\n0 & 3 & 6\n\\end{array}\\right]\\left[\\begin{array}{rr}\n0 & 4 \\\\\n-1 & 3 \\\\\n2 & -4\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n3 & 11 \\\\\n9 & -15\n\\end{array}\\right] \\\\\n& =(A B)^{\\prime} \\quad \\text { Hence proved. }\n\\end{array}$$</p>\n<p>(iii) We have to verify that, $(k A)^{\\prime}=\\left(k A^{\\prime}\\right)$</p>\n<p>$$\\begin{aligned}\n\\text{Now,}\\quad (k A) & =\\left[\\begin{array}{ccc}\n0 & -k & 2 k \\\\\n4 k & 3 k & -4 k\n\\end{array}\\right] \\\\\n\\text{and}\\quad (k A)^{\\prime} & =\\left[\\begin{array}{cc}\n0 & 4 k \\\\\n-k & 3 k \\\\\n2 k & -4 k\n\\end{array}\\right] \\\\\n\\text{Also,}\\quad k A^{\\prime} & =\\left[\\begin{array}{cc}\n0 & 4 k \\\\\n-k & 3 k \\\\\n2 k & -4 k\n\\end{array}\\right] \\\\\n& =(k A)^{\\prime}\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpic0l",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{ll}1 & 2 \\\\ 4 & 1 \\\\ 5 & 6\\end{array}\\right]$ and $B=\\left[\\begin{array}{ll}1 & 2 \\\\ 6 & 4 \\\\ 7 & 3\\end{array}\\right]$, then verify that</p>\n(i) $(2 A+B)^{\\prime}=2 A \\mathrm{~A}+B^{\\prime}$.</p>\n<p>(ii) $(A-B)^{\\prime}=A^{\\prime}-B^{\\prime}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\nA=\\left[\\begin{array}{ll}\n1 & 2 \\\\\n4 & 1 \\\\\n5 & 6\n\\end{array}\\right] \\text { and } B=\\left[\\begin{array}{ll}\n1 & 2 \\\\\n6 & 4 \\\\\n7 & 3\n\\end{array}\\right]$$</p>\n<p>(i)\n$\\therefore(2 A+B)=\\left[\\begin{array}{cc}2 & 4 \\\\ 8 & 2 \\\\ 10 & 12\\end{array}\\right]+\\left[\\begin{array}{ll}1 & 2 \\\\ 6 & 4 \\\\ 7 & 3\\end{array}\\right]=\\left[\\begin{array}{cc}3 & 6 \\\\ 14 & 6 \\\\ 17 & 15\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n\\text{and}\\quad (2 A+B)^{\\prime} & =\\left[\\begin{array}{lll}\n3 & 14 & 17 \\\\\n6 & 6 & 15\n\\end{array}\\right] \\\\\n\\text{Also,}\\quad 2 A^{\\prime}+B^{\\prime} & =2\\left[\\begin{array}{lll}\n1 & 4 & 5 \\\\\n2 & 1 & 6\n\\end{array}\\right]+\\left[\\begin{array}{lll}\n1 & 6 & 7 \\\\\n2 & 4 & 3\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{lll}\n3 & 14 & 17 \\\\\n6 & 6 & 15\n\\end{array}\\right]=(2 A+B)^{\\prime}\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>\n<p>(ii) $(A-B)=\\left[\\begin{array}{ll}1 & 2 \\\\ 4 & 1 \\\\ 5 & 6\\end{array}\\right]-\\left[\\begin{array}{ll}1 & 2 \\\\ 6 & 4 \\\\ 7 & 3\\end{array}\\right]=\\left[\\begin{array}{cc}0 & 0 \\\\ -2 & -3 \\\\ -2 & 3\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n&\\text { and }\\\\\n&\\begin{aligned}\n(A-B)^{\\prime} & =\\left[\\begin{array}{llr}\n0 & -2 & -2 \\\\\n0 & -3 & 3\n\\end{array}\\right] \\\\\n\\text{Also,}\\quad A^{\\prime}-B^{\\prime} & =\\left[\\begin{array}{lll}\n1 & 4 & 5 \\\\\n2 & 1 & 6\n\\end{array}\\right]-\\left[\\begin{array}{lll}\n1 & 6 & 7 \\\\\n2 & 4 & 3\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{llr}\n0 & -2 & -2 \\\\\n0 & -3 & 3\n\\end{array}\\right] \\\\\n& =(A-B)^{\\prime}\\quad\\text{Hence proved.}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphzl9",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $A^{\\prime} A$ and $A A^{\\prime}$ are both symmetric matrices for any matrix A.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Let}\\quad P & =A^{\\prime} A \\\\\n\\therefore\\quad P^{\\prime} & =\\left(A A^{\\prime}\\right)^{\\prime} \\\\\n& =A^{\\prime}\\left(A^{\\prime}\\right)^{\\prime} \\quad \\left[\\because\\left(A B^{\\prime}\\right)^{\\prime}=B^{\\prime} A^{\\prime}\\right]\\\\\n& =A^{\\prime} A=P\n\\end{aligned}$$</p>\n<p>So, $A^{\\prime} A$ is symmetric matrix for any matrix $A$.</p>\n<p>Similarly, let $$Q=A A^{\\prime}$$</p>\n<p>$$\\begin{array}{l}\n\\therefore \\quad Q^{\\prime} & =\\left(A A^{\\prime}\\right)^{\\prime}=\\left(A^{\\prime}\\right)^{\\prime}(A)^{\\prime} \\\\\n& =A\\left(A^{\\prime}\\right)^{\\prime}=Q\n\\end{array}$$</p>\n<p>So, AA' is symmetric matrix for any matrix A.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiht6",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Let $A$ and $B$ be square matrices of the order $3 \\times 3$. Is $(A B)^2=A^2 B^2$ ? Give reasons.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Since, } A \\text { and } B \\text { are square matrices of order } 3 \\times 3 \\text {. }\\\\\n&\\therefore \\quad A B^2=A B \\cdot A B\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =A B A B \\\\\n& =A A B B \\\\\n& =A^2 B^2\n\\end{aligned} \\quad[\\because A B=B A]$$</p>\n<p>So, $A B^2=A^2 B^2$ is true when $A B=B A$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpinbj",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that, if $A$ and $B$ are square matrices such that $A B=B A$, then $(A+B)^2=A^2+2 A B+B^2$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Since, } A \\text { and } B \\text { are square matrices such that } A B=B A \\text {. }\\\\\n&\\begin{aligned}\n\\therefore \\quad(A+B)^2 & =(A+B) \\cdot(A+B) \\\\\n& =A^2+A B+B A+B^2 \\\\\n& =A^2+A B+A B+B^2 \\quad [\\because A B=B A]\\\\\n& =A^2+2 A B+B^2\\quad \\text{Hence proved.}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpigje",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{cc}1 & 2 \\\\ -1 & 3\\end{array}\\right], B=\\left[\\begin{array}{cc}4 & 0 \\\\ 1 & 5\\end{array}\\right], C=\\left[\\begin{array}{cc}2 & 0 \\\\ 1 & -2\\end{array}\\right], a=4$, and $b=-2$, then show that</p>\n<p>(i) $A+(B+C)=(A+B)+C$</p>\n<p>(ii) $A(B C)=(A B) C$</p>\n<p>(iii) $(a+b) B=a B+b B$</p>\n<p>(iv) $a(C-A)=a C-a A$</p>\n<p>(v) $\\left(A^T\\right)^T=A$</p>\n<p>(vi) $(b A)^T=b A^T$</p>\n<p>(vii) $(A B)^T=B^T A^T$</p>\n<p>(viii) $(A-B) C=A C-B C$</p>\n<p>(ix) $(A-B)^T=A^T-B^T$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,</p>\n<p>$$\\begin{aligned}\n& A=\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-1 & 3\n\\end{array}\\right], B=\\left[\\begin{array}{ll}\n4 & 0 \\\\\n1 & 5\n\\end{array}\\right] \\\\\n& C=\\left[\\begin{array}{cc}\n2 & 0 \\\\\n1 & -2\n\\end{array}\\right] \\text { and } a=4, b=-2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { (i) }\\\\\n&\\begin{aligned}\n& A+(B+C)=\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-1 & 3\n\\end{array}\\right]+\\left[\\begin{array}{ll}\n6 & 0 \\\\\n2 & 3\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n7 & 2 \\\\\n1 & 6\n\\end{array}\\right] \\\\\n& \\text { and } \\\\\n& (A+B)+C=\\left[\\begin{array}{ll}\n5 & 2 \\\\\n0 & 8\n\\end{array}\\right]+\\left[\\begin{array}{cc}\n2 & 0 \\\\\n1 & -2\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n7 & 2 \\\\\n1 & 6\n\\end{array}\\right]=A+(B+C)\\quad\\text{Hence proved.}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { (ii) }(B C)=\\left[\\begin{array}{ll}\n4 & 0 \\\\\n1 & 5\n\\end{array}\\right]\\left[\\begin{array}{cc}\n2 & 0 \\\\\n1 & -2\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n8 & 0 \\\\\n7 & -10\n\\end{array}\\right] \\\\\n& \\text { and } \\\\\n& A(B C)=\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-1 & 3\n\\end{array}\\right]\\left[\\begin{array}{cc}\n8 & 0 \\\\\n7 & -10\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n8+14 & 0-20 \\\\\n-8+21 & 0-30\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n22 & -20 \\\\\n13 & -30\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Also, }\\\\\n&\\begin{aligned}\n(A B) & =\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-1 & 3\n\\end{array}\\right] \\cdot\\left[\\begin{array}{ll}\n4 & 0 \\\\\n1 & 5\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n6 & 10 \\\\\n-1 & 15\n\\end{array}\\right] \\\\\n(A B) C & =\\left[\\begin{array}{cc}\n6 & 10 \\\\\n-1 & 15\n\\end{array}\\right]\\left[\\begin{array}{cc}\n2 & 0 \\\\\n1 & -2\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n22 & -20 \\\\\n13 & -30\n\\end{array}\\right]=A(B C)\\quad\\text{Hence proved.}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>(iii) $(a+b) B=(4-2)\\left[\\begin{array}{ll}4 & 0 \\\\ 1 & 5\\end{array}\\right]\\quad$ $$[\\because a=4, b=-2]$$</p>\n<p>$$\\begin{aligned}\n& =\\left[\\begin{array}{cc}\n8 & 0 \\\\\n2 & 10\n\\end{array}\\right] \\\\\n\\text{and}\\quad a B+b B & =4 B-2 B \\\\\n& =\\left[\\begin{array}{cc}\n16 & 0 \\\\\n4 & 20\n\\end{array}\\right]-\\left[\\begin{array}{cc}\n8 & 0 \\\\\n2 & 10\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n8 & 0 \\\\\n2 & 10\n\\end{array}\\right] \\\\\n& =(a+b) B\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { (iv) }\\\\\n&\\begin{aligned}\n& (C-A)=\\left[\\begin{array}{cc}\n2-1 & 0-2 \\\\\n1+1 & -2-3\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & -2 \\\\\n2 & -5\n\\end{array}\\right] \\\\\n& \\text { and } \\\\\n& a(C-A)=\\left[\\begin{array}{ll}\n4 & -8 \\\\\n8 & -20\n\\end{array}\\right]\\quad [\\because a=4]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { Also, } \\quad a C-a A & =\\left[\\begin{array}{cc}\n8 & 0 \\\\\n4 & -8\n\\end{array}\\right]-\\left[\\begin{array}{cc}\n4 & 8 \\\\\n-4 & 12\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n4 & -8 \\\\\n8 & -20\n\\end{array}\\right] \\\\\n& =a(C-A)\\quad \\text{Hence proved.}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { (v) }\\\\\n&\\begin{aligned}\nA^T=\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-1 & 3\n\\end{array}\\right]^T & =\\left[\\begin{array}{cc}\n1 & -1 \\\\\n2 & 3\n\\end{array}\\right]^{\\top} \\\\\n\\text { Now, } \\quad\\left(A^T\\right)^T & =\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-1 & 3\n\\end{array}\\right]^T \\\\\n& =A\\quad\\text{Hence proved.}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>(vi) $(b A)^{\\top}=\\left[\\begin{array}{cc}-2 & -4 \\\\ 2 & -6\\end{array}\\right]^{\\top}\\quad$ $$[\\because b=-2]$$</p>\n<p>$$\\begin{aligned}\n& =\\left[\\begin{array}{cc}\n-2 & 2 \\\\\n-4 & -6\n\\end{array}\\right] \\\\\n\\text{and}\\quad A^T & =\\left[\\begin{array}{cc}\n1 & -1 \\\\\n2 & 3\n\\end{array}\\right] \\\\\n\\therefore\\quad b A^T & =\\left[\\begin{array}{cc}\n-2 & 2 \\\\\n-4 & -6\n\\end{array}\\right]=(b A)^T\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { (vii) } A B=\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-1 & 3\n\\end{array}\\right]\\left[\\begin{array}{ll}\n4 & 0 \\\\\n1 & 5\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n4+2 & 0+10 \\\\\n-4+3 & 0+15\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n6 & 10 \\\\\n-1 & 15\n\\end{array}\\right] \\\\\n& \\therefore \\quad(A B)^T=\\left[\\begin{array}{cc}\n6 & -1 \\\\\n10 & 15\n\\end{array}\\right] \\\\\n& \\text { Now, } \\\\\n& B^T A^T=\\left[\\begin{array}{ll}\n4 & 1 \\\\\n0 & 5\n\\end{array}\\right]\\left[\\begin{array}{cc}\n1 & -1 \\\\\n2 & 3\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n6 & -1 \\\\\n10 & 15\n\\end{array}\\right] \\\\\n& =(A B)^T\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>\n<p>$$\\text { (viii) } \\begin{aligned}\n&(A-B)=\\left[\\begin{array}{cc}\n1-4 & 2-0 \\\\\n-1-1 & 3-5\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n-3 & 2 \\\\\n-2 & -2\n\\end{array}\\right] \\\\\n&(A-B) C=\\left[\\begin{array}{lc}\n-3 & 2 \\\\\n-2 & -2\n\\end{array}\\right]\\left[\\begin{array}{cc}\n2 & 0 \\\\\n1 & -2\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n-4 & -4 \\\\\n-6 & 4\n\\end{array}\\right]\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>Now,</p>\n<p>$$\\begin{aligned}\n& A C=\\left[\\begin{array}{cc}\n1 & 2 \\\\\n-1 & 3\n\\end{array}\\right]\\left[\\begin{array}{cc}\n2 & 0 \\\\\n1 & -2\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n4 & -4 \\\\\n1 & -6\n\\end{array}\\right] \\quad\\text{.... (ii)}\\\\\n\\text{and}\\quad & B C=\\left[\\begin{array}{ll}\n4 & 0 \\\\\n1 & 5\n\\end{array}\\right]\\left[\\begin{array}{cc}\n2 & 0 \\\\\n1 & -2\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n8 & 0 \\\\\n7 & -10\n\\end{array}\\right]\\quad\\text{.... (iii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad A C-B C & =\\left[\\begin{array}{cc}\n4-8 & -4-0 \\\\\n1-7 & -6+10\n\\end{array}\\right] \\quad \\text{[using Eqs. (ii) and (iii)]}\\\\\n& =\\left[\\begin{array}{cc}\n-4 & -4 \\\\\n-6 & 4\n\\end{array}\\right] \\\\\n& =(A-B) C\\quad\\text{[using Eq. (i)] Hence proved.}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { (ix) } \\quad&(A-B)^T=\\left[\\begin{array}{cc}\n1-4 & 2-0 \\\\\n-1-1 & 3-5\n\\end{array}\\right]^{\\top} \\\\\n&=\\left[\\begin{array}{cc}\n-3 & 2 \\\\\n-2 & -2\n\\end{array}\\right]^{\\top}=\\left[\\begin{array}{cc}\n-3 & -2 \\\\\n2 & -2\n\\end{array}\\right] \\\\\n& A^T-B^T=\\left[\\begin{array}{cc}\n1 & -1 \\\\\n2 & 3\n\\end{array}\\right]-\\left[\\begin{array}{cc}\n4 & 1 \\\\\n0 & 5\n\\end{array}\\right] \\\\\n&=\\left[\\begin{array}{cc}\n-3 & -2 \\\\\n2 & -2\n\\end{array}\\right]=(A-B)^T\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphfgo",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{cc}\\cos q & \\sin q \\\\ -\\sin q & \\cos q\\end{array}\\right]$, then show that $A^2=\\left[\\begin{array}{cc}\\cos 2 q & \\sin 2 q \\\\ -\\sin 2 q & \\cos 2 q\\end{array}\\right]$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { We have, } A=\\left[\\begin{array}{cc}\n\\cos q & \\sin q \\\\\n-\\sin q & \\cos q\n\\end{array}\\right] \\\\\n& \\therefore \\quad A^2=A \\cdot A=\\left[\\begin{array}{cc}\n\\cos q & \\sin q \\\\\n-\\sin q & \\cos q\n\\end{array}\\right] \\cdot\\left[\\begin{array}{cc}\n\\cos q & \\sin q \\\\\n-\\sin q & \\cos q\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\left[\\begin{array}{cc}\n\\cos ^2 q-\\sin ^2 q & \\cos q \\cdot \\sin q+\\sin q \\cos q \\\\\n-\\sin q \\cos q-\\cos q \\sin q & -\\sin ^2 q+\\cos ^2 q\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n\\cos 2 q & 2 \\sin q \\cos q \\\\\n-2 \\sin q \\cos q & \\cos 2 q\n\\end{array}\\right] \\quad\\left[\\because \\cos ^2 \\theta-\\sin ^2 \\theta=\\cos 2 \\theta\\right] \\\\\n& =\\left[\\begin{array}{cc}\n\\cos 2 q & \\sin 2 q \\\\\n-\\sin 2 q & \\cos 2 q\n\\end{array}\\right] \\quad[\\because \\sin 2 \\theta=2 \\sin \\theta \\cdot \\cos \\theta] \\text { Hence proved. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphjma",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{cc}0 & -x \\\\ x & 0\\end{array}\\right], B=\\left[\\begin{array}{ll}0 & 1 \\\\ 1 & 0\\end{array}\\right]$ and $x^2=-1$, then show that $(A+B)^2=A^2+B^2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{aligned}\nA & =\\left[\\begin{array}{cc}\n0 & -x \\\\\nx & 0\n\\end{array}\\right], B=\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 0\n\\end{array}\\right] \\text { and } x^2=-1 \\\\\n\\therefore\\quad (A+B) & =\\left[\\begin{array}{cc}\n0 & -x+1 \\\\\nx+1 & 0\n\\end{array}\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { and } \\quad (A+B)^2 & =\\left[\\begin{array}{cc}\n0 & -x+1 \\\\\nx+1 & 0\n\\end{array}\\right]\\left[\\begin{array}{cc}\n0 & -x+1 \\\\\nx+1 & 0\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n1-x^2 & 0 \\\\\n0 & 1-x^2\n\\end{array}\\right]\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { Also, }\\quad & A^2=A \\cdot A=\\left[\\begin{array}{cc}\n0 & -x \\\\\nx & 0\n\\end{array}\\right]\\left[\\begin{array}{cc}\n0 & -x \\\\\nx & 0\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n-x^2 & 0 \\\\\n0 & -x^2\n\\end{array}\\right] \\\\\n\\text{and}\\quad & B^2=B \\cdot B=\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 0\n\\end{array}\\right]\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n&\\text { Now, }\\\\\n&\\begin{aligned}\nA^2+B^2 & =\\left[\\begin{array}{cc}\n-x^2+1 & 0 \\\\\n0 & -x^2+1\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n1-x^2 & 0 \\\\\n0 & 1-x^2\n\\end{array}\\right] \\quad\\text{using Eq. (i)]}\\\\\n& =(A+B)^2\\quad\\text{Hence proved.}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpilb9",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Verify that $A^2=I$, when $A=\\left[\\begin{array}{ccc}0 & 1 & -1 \\\\ 4 & -3 & 4 \\\\ 3 & -3 & 4\\end{array}\\right]$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{ccc}0 & 1 & -1 \\\\ 4 & -3 & 4 \\\\ 3 & -3 & 4\\end{array}\\right]$</p>\n<p>$\\therefore\\quad A^2=\\left[\\begin{array}{ccc}0 & 1 & -1 \\\\ 4 & -3 & 4 \\\\ 3 & -3 & 4\\end{array}\\right] \\cdot\\left[\\begin{array}{ccc}0 & 1 & -1 \\\\ 4 & -3 & 4 \\\\ 3 & -3 & 4\\end{array}\\right] \\quad\\left[\\because A^2=A \\cdot A\\right]$</p>\n<p>$$=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=I$$ Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpic31",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove by mathematical induction that $\\left(A^{\\prime}\\right)^n=\\left(A^n\\right)^{\\prime}$ where $n \\in N$ for any square matrix $A$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$P(n):\\left(A^n\\right)^n=\\left(A^n\\right)^{\\prime}$$</p>\n<p>$\\therefore \\quad P(1):(A)^1=(A)^{\\prime}$</p>\n<p>$\\Rightarrow \\quad A^{\\prime}=A^{\\prime} \\Rightarrow P(1)$ is true.</p>\n<p>Now, $$\\quad P(k):(A)^k=\\left(A^k\\right)^{\\prime}$$</p>\n<p>where $k \\in N$</p>\n<p>and $$\\quad P(k+1):\\left(A^{\\prime}\\right)^{k+1}=\\left(A^{k+1}\\right)^{\\prime}$$</p>\n<p>$$\\begin{aligned}\n&\\text { where } P(k+1) \\text { is true whenever } P(k) \\text { is true. }\\\\\n&\\begin{aligned}\n\\therefore \\quad P(k+1):\\left(A^{\\prime}\\right)^k \\cdot\\left(A^{\\prime}\\right)^{\\prime} & =\\left[A^{k+1}\\right]^{\\prime} \\\\\n\\left(A^k\\right)^{\\prime} \\cdot(A)^{\\prime} & =\\left[A^{k+1}\\right]^{\\prime} \\\\\n\\left(A \\cdot A^k\\right)^{\\prime} & =\\left[A^{k+1}\\right]^{\\prime} \\quad \\left[\\because(A)^{\\prime k}=\\left(A^k\\right)^{\\prime} \\text { and }(A B)=B^{\\prime} A^{\\prime}\\right]\\\\\n\\left(A^{k+1}\\right)^{\\prime} & =\\left[A^{k+1}\\right]^{\\prime}\\text{Hence proved.}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpily0",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find inverse, by elementary row operations (if possible), of the following matrices.\n(i) $\\left[\\begin{array}{cc}1 & 3 \\\\ -5 & 7\\end{array}\\right]$\n(ii) $\\left[\\begin{array}{cc}1 & -3 \\\\ -2 & 6\\end{array}\\right]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) Let $A=\\left[\\begin{array}{cc}1 & 3 \\\\ -5 & 7\\end{array}\\right]$</p>\n<p>In order to use elementary row operations we may write $A=I A$.</p>\n<p>$$\\begin{array}{ll}\n\\therefore\\quad{\\left[\\begin{array}{cc}\n1 & 3 \\\\\n-5 & 7\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right] A} \\\\\n\\Rightarrow\\quad{\\left[\\begin{array}{cc}\n1 & 3 \\\\\n0 & 22\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n5 & 1\n\\end{array}\\right] A} & {\\left[\\because R_2 \\rightarrow R_2+5 R_1\\right]} \\\\\n\\Rightarrow\\quad{\\left[\\begin{array}{ll}\n1 & 3 \\\\\n0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n1 & 0 \\\\\n5 / 22 & 1 / 22\n\\end{array}\\right] A} & {\\left[\\because R_2 \\rightarrow \\frac{1}{22} R_2\\right]} \\\\\n\\Rightarrow\\quad{\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n7 / 22 & -3 / 22 \\\\\n5 / 22 & 1 / 22\n\\end{array}\\right] A} & {\\left[\\because R_1 \\rightarrow R_1-3 R_2\\right]} \\\\\n\\Rightarrow\\quad{\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]=\\frac{1}{22}\\left[\\begin{array}{cc}\n7 & -3 \\\\\n5 & 1\n\\end{array}\\right] A}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\Rightarrow I=B A \\text {, where } B \\text { is the inverse of } A \\text {. }\\\\\n& \\therefore\\quad  B=\\frac{1}{22}\\left[\\begin{array}{ll}\n7 & -3 \\\\\n5 & -1\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>(ii) Let $A=\\left[\\begin{array}{cc}1 & -3 \\\\ -2 & 6\\end{array}\\right]$</p>\n<p>In order to use elementary row operations, we write $\\mathrm{A}=I \\mathrm{~A}$</p>\n<p>$$\\begin{array}{lll}\n\\Rightarrow & {\\left[\\begin{array}{cc}\n1 & -3 \\\\\n-2 & 6\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right] A} & \\\\\n\\Rightarrow & {\\left[\\begin{array}{cc}\n1 & -3 \\\\\n0 & 0\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n2 & 1\n\\end{array}\\right] A} & {\\left[\\because R_2 \\rightarrow R_2+2 R_1\\right]}\n\\end{array}$$</p>\n<p>Since, we obtain all zeroes in a row of the matrix $A$ on LHS, so $A^{-1}$ does not exist.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphejm",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left[\\begin{array}{cc}x y & 4 \\\\ z+6 & x+y\\end{array}\\right]=\\left[\\begin{array}{cc}8 & w \\\\ 0 & 6\\end{array}\\right]$, then find the values of $x, y, z$ and $w$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,</p>\n<p>$$\\left[\\begin{array}{cc}\nx y & 4 \\\\\nz+6 & x+y\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n8 & w \\\\\n0 & 6\n\\end{array}\\right]$$</p>\n<p>$$\n\\begin{aligned}\n& \\text { By equality of matrix, } \\\\\n& \\Rightarrow \\quad x=6-y \\text { and }(6-y) \\cdot y=8 \\\\\n& \\Rightarrow \\quad y^2-6 y+8=0 \\\\\n& \\Rightarrow \\quad y^2-4 y-2 y+8=0 \\\\\n& \\Rightarrow \\quad(y-2)(y-4)=0 \\\\\n& \\Rightarrow \\quad y=2 \\text { or } y=4 \\\\\n& \\therefore \\quad x=6-2=4 \\\\\n& \\text { or } \\\\\n& x=6-4=2 \\quad [\\because x=6-y]\\\\\n& \\text { Also, } \\\\\n& z+6=0 \\\\\n& \\Rightarrow \\quad\n z=-6 \\text { and } w=4 \\\\\n& \\therefore \\quad x=2, y=4 \\text { or } x=4, y=2, z=-6 \\text { and } w=4\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpild5",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{cc}1 & 5 \\\\ 7 & 12\\end{array}\\right]$ and $B=\\left[\\begin{array}{ll}9 & 1 \\\\ 7 & 8\\end{array}\\right]$, then find a matrix $C$ such that $3 A+5 B+2 C$ is a null matrix.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{cc}1 & 5 \\\\ 7 & 12\\end{array}\\right]$ and $B=\\left[\\begin{array}{ll}9 & 1 \\\\ 7 & 8\\end{array}\\right]$</p>\n<p>Let $$C=\\left[\\begin{array}{ll}\na & b \\\\\nc & d\n\\end{array}\\right]$$</p>\n<p>$$\\begin{aligned}\n& \\therefore \\quad 3 A+5 B+2 C=0 \\\\\n& \\Rightarrow\\left[\\begin{array}{cc}\n3 & 15 \\\\\n21 & 36\n\\end{array}\\right]+\\left[\\begin{array}{cc}\n45 & 5 \\\\\n35 & 40\n\\end{array}\\right]+\\left[\\begin{array}{cc}\n2 \\mathrm{a} & 2 \\mathrm{~b} \\\\\n2 \\mathrm{c} & 2 \\mathrm{~d}\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 0\n\\end{array}\\right] \\\\\n& \\Rightarrow \\quad\\left[\\begin{array}{ll}\n48+2 a & 20+2 b \\\\\n56+2 c & 76+2 d\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 0\n\\end{array}\\right] \\\\\n& \\Rightarrow \\quad 2 a+48=0 \\Rightarrow a=-24 \\\\\n& \\text { Also, } \\quad 20+2 b=0 \\Rightarrow b=-10 \\\\\n& 56+2 c=0 \\Rightarrow c=-28 \\\\\n& \\text { and } \\quad 76+2 d=0 \\Rightarrow d=-38 \\\\\n& \\therefore\\quad C=\\left[\\begin{array}{ll}\n-24 & -10 \\\\\n-28 & -38\n\\end{array}\\right]\n\\end{aligned}\n$$\n</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi0sm",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{cc}3 & -5 \\\\ -4 & 2\\end{array}\\right]$, then find $A^2-5 A-14 I$. Hence, obtain $A^3$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad A & =\\left[\\begin{array}{cc}\n3 & -5 \\\\\n-4 & 2\n\\end{array}\\right] \\quad\\text{.... (i)}\\\\\n\\therefore\\quad A^2 & =A \\cdot A=\\left[\\begin{array}{cc}\n3 & -5 \\\\\n-4 & 2\n\\end{array}\\right]\\left[\\begin{array}{cc}\n3 & -5 \\\\\n-4 & 2\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n29 & -25 \\\\\n-20 & 24\n\\end{array}\\right]\\quad \\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad A^2-5 A-14 I & =\\left[\\begin{array}{cc}\n29 & -25 \\\\\n-20 & 24\n\\end{array}\\right]-\\left[\\begin{array}{cc}\n15 & -25 \\\\\n-20 & 10\n\\end{array}\\right]-\\left[\\begin{array}{cc}\n14 & 0 \\\\\n0 & 14\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 0\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { Now, } & A^2-5 A-14 I =0 \\\\\n\\Rightarrow & \\quad A \\cdot A^2-5 A \\cdot A-14 A I  =0 \\\\\n\\Rightarrow & \\quad A^3-5 A^2-14 A =0 \\quad [\\because AI=A]\\\\\n\\Rightarrow & \\quad A^3 =5 A^2=14 A\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =5\\left[\\begin{array}{cc}\n29 & -25 \\\\\n-20 & 24\n\\end{array}\\right]+14\\left[\\begin{array}{cc}\n3 & -5 \\\\\n-4 & 2\n\\end{array}\\right] \\quad \\text { [using Eqs. (i) and (ii)] } \\\\\n& =\\left[\\begin{array}{cc}\n145 & -125 \\\\\n-100 & 120\n\\end{array}\\right]+\\left[\\begin{array}{cc}\n42 & -70 \\\\\n-56 & 28\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{cc}\n187 & -195 \\\\\n-156 & 148\n\\end{array}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpign7",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the values of $a, b, c$ and $d$, if\n\n$$\n3\\left[\\begin{array}{ll}\na & b \\\\\nc & d\n\\end{array}\\right]=\\left[\\begin{array}{cc}\na & 6 \\\\\n-1 & 2\n\\end{array}\\right]+\\left[\\begin{array}{cc}\n4 & a+b \\\\\nc+d & 3\n\\end{array}\\right] z .\n$$\n</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\n3\\left[\\begin{array}{ll}\na & b \\\\\nc & d\n\\end{array}\\right]=\\left[\\begin{array}{cc}\na & 6 \\\\\n-1 & 2 d\n\\end{array}\\right]+\\left[\\begin{array}{cc}\n4 & a+b \\\\\nc+d & 3\n\\end{array}\\right]\n$$\n</p>\n<p>$$\\begin{array}{rlrl}\n\\Rightarrow & {\\left[\\begin{array}{cc}\n3 a & 3 b \\\\\n3 c & 3 d\n\\end{array}\\right]} =\\left[\\begin{array}{cc}\na+4 & 6+a+b \\\\\nc+d-1 & 3+2 d\n\\end{array}\\right] \\\\\n\\Rightarrow & 3 a =a+4 \\Rightarrow a=2 ; \\\\\n\\Rightarrow & 3 b =6+a+b \\\\\n\\Rightarrow & 3 b-b =8 \\Rightarrow b=4 ; \\\\\n& 3 d =3+2 d \\Rightarrow d=3\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\text { and } \\Rightarrow & 3 c=c+d-1 \\\\\n\\Rightarrow & 2 c=3-1 c=1 \\\\\n\\therefore & a=2, b=4, c=1 \\text { and } d=3\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpihvb",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the matrix $A$ such that $\\left[\\begin{array}{cc}2 & -1 \\\\ 1 & 0 \\\\ -3 & 4\\end{array}\\right] A=\\left[\\begin{array}{ccc}-1 & -8 & -10 \\\\ 1 & -2 & -5 \\\\ 9 & 22 & 15\\end{array}\\right]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$\\left[\\begin{array}{cc}\n2 & -1 \\\\\n1 & 0 \\\\\n-3 & 4\n\\end{array}\\right]_{3 \\times 2} \\quad A=\\left[\\begin{array}{ccc}\n-1 & -8 & -10 \\\\\n1 & -2 & -5 \\\\\n9 & 22 & 15\n\\end{array}\\right]_{3 \\times 3}$$</p>\n<p>From the given equation, it is clear that order of $A$ should be $2 \\times 3$.</p>\n<p>Let $$A=\\left[\\begin{array}{lll}\na & b & c \\\\\nd & e & f\n\\end{array}\\right]$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & {\\left[\\begin{array}{cc}\n2 & -1 \\\\\n1 & 0 \\\\\n-3 & 4\n\\end{array}\\right]\\left[\\begin{array}{lll}\na & b & c \\\\\nd & e & f\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n-1 & -8 & -10 \\\\\n1 & -2 & -5 \\\\\n9 & 22 & 15\n\\end{array}\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n2 a-d & 2 b-e & 2 c-f \\\\\na+0 d & b+0 \\cdot e & c+0 \\cdot f \\\\\n-3 a+4 d & -3 b+4 e & -3 c+4 f\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n-1 & -8 & -10 \\\\\n1 & -2 & -5 \\\\\n9 & 22 & 15\n\\end{array}\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n2 a-d & 2 b-e & 2 c-f \\\\\na & b & c \\\\\n-3 a+4 d & -3 b+4 e & -3 c+4 f\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n-1 & -8 & -10 \\\\\n1 & -2 & -5 \\\\\n9 & 22 & 15\n\\end{array}\\right]}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\text { By equality of matrices, we get } \\\\\n& a=1, b=-2, c=-5 \\\\\n\\text { and } \\quad & 2 a-d=-1 \\Rightarrow d=2 a+1=3 \\text {; } \\\\\n\\Rightarrow\\quad & 2 b-e=-8 \\Rightarrow e=2(-2)+8=4 \\\\\n& 2 c-f=-10 \\Rightarrow f=2 c+10=0 \\\\\n& \\therefore \\quad\nA=\\left[\\begin{array}{ccc}\n1 & -2 & -5 \\\\\n3 & 4 & 0\n\\end{array}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphfim",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{ll}1 & 2 \\\\ 4 & 1\\end{array}\\right]$, then find $A^2+2 A+7 I$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{ll}1 & 2 \\\\ 4 & 1\\end{array}\\right]$</p>\n<p>$\\therefore \\quad A^2=\\left[\\begin{array}{ll}1 & 2 \\\\ 4 & 1\\end{array}\\right]\\left[\\begin{array}{ll}1 & 2 \\\\ 4 & 1\\end{array}\\right] \\quad\\left[\\because A^2=A \\cdot A\\right]$</p>\n<p>$$\n\\begin{aligned}\n& =\\left[\\begin{array}{lll}\n1+8 & 2+2 \\\\\n4+4 & 8+1\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n9 & 4 \\\\\n8 & 9\n\\end{array}\\right] \\\\\n\\therefore\\quad A^2+2 A+7 I & =\\left[\\begin{array}{ll}\n9 & 4 \\\\\n8 & 9\n\\end{array}\\right]+\\left[\\begin{array}{ll}\n2 & 4 \\\\\n8 & 2\n\\end{array}\\right]+\\left[\\begin{array}{ll}\n7 & 0 \\\\\n0 & 7\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n18 & 8 \\\\\n16 & 18\n\\end{array}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpic50",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{rr}\\cos \\alpha & \\sin \\alpha \\\\ -\\sin \\alpha & \\cos \\alpha\\end{array}\\right]$ and $A^{-1}=A^{\\prime}$, then find the value of $\\alpha$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{cc}\\cos a & \\sin a \\\\ -\\sin a & \\cos a\\end{array}\\right]$ and $A^{\\prime}=\\left[\\begin{array}{cc}\\cos a & -\\sin a \\\\ \\sin a & \\cos a\\end{array}\\right]$</p>\n<p>$$\\begin{array}{lrl}\n\\text { Also, } & A^{-1} & =A^{\\prime} \\\\\n\\Rightarrow & A A^{-1} & =A A^{\\prime}\n\\end{array}$$</p>\n<p>$\\left.\\begin{array}{lll}\\Rightarrow & I & =\\left[\\begin{array}{cc}\\cos \\alpha & \\sin \\alpha \\\\ -\\sin \\alpha & \\cos \\alpha\\end{array}\\right]\\end{array} \\begin{array}{cc}\\cos \\alpha & -\\sin \\alpha \\\\ \\sin \\alpha & \\cos \\alpha\\end{array}\\right]$</p>\n<p>$\\Rightarrow \\quad\\left[\\begin{array}{ll}1 & 0 \\\\ 0 & 1\\end{array}\\right]=\\left[\\begin{array}{lc}\\cos ^2 \\alpha+\\sin ^2 \\alpha & 0 \\\\ 0 & \\sin ^2 \\alpha+\\cos ^2 \\alpha\\end{array}\\right]$</p>\n<p>By using equality of matrices, we get</p>\n<p>$$\\cos ^2 \\alpha+\\sin ^2 \\alpha=1$$</p>\n<p>which is true for all real values of $\\alpha$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphjoy",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If matrix $\\left[\\begin{array}{ccc}0 & a & 3 \\\\ 2 & b & -1 \\\\ c & 1 & 0\\end{array}\\right]$ is a skew-symmetric matrix, then find the values of $a, b$ and $c$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $A=\\left[\\begin{array}{ccc}0 & a & 3 \\\\ 2 & b & -1 \\\\ c & 1 & 0\\end{array}\\right]$ Since, $A$ is skew-symmetric matrix.</p>\n<p>$$\\therefore \\quad A^{\\prime}=-A$$</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{ll}\n\\Rightarrow \\quad {\\left[\\begin{array}{ccc}\n0 & 2 & c \\\\\na & b & 1 \\\\\n3 & -1 & 0\n\\end{array}\\right]=-\\left[\\begin{array}{ccc}\n0 & a & 3 \\\\\n2 & b & -1 \\\\\nc & 1 & 0\n\\end{array}\\right]} \\\\\n\\Rightarrow \\quad\\left[\\begin{array}{ccc}\n0 & 2 & c \\\\\na & b & 1 \\\\\n3 & -1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n0 & -a & -3 \\\\\n-2 & -b & +1 \\\\\n-c & -1 & 0\n\\end{array}\\right]\n\\end{array}\\\\\n&\\text { By equality of matrices, we get }\\\\\n&\\begin{array}{ll} \n& a=-2, c=-3 \\text { and } b=-b \\Rightarrow b=0 \\\\\n\\therefore & a=-2, b=0 \\text { and } c=-3\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpijuc",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\quad P(x)=\\left[\\begin{array}{cc}\\cos x & \\sin x \\\\ -\\sin x & \\cos x\\end{array}\\right]$, then show that $P(x) \\cdot P(y)=P(x+y)$ $=P(y) \\cdot P(x)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{array}{ll} \n& P(x)=\\left[\\begin{array}{lll}\n\\cos x & \\sin x \\\\\n-\\sin x & \\cos x\n\\end{array}\\right] \\\\\n\\therefore & P(y)=\\left[\\begin{array}{ll}\n\\cos y & \\sin y \\\\\n-\\sin y & \\cos y\n\\end{array}\\right]\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { Now, } \\quad P(x) \\cdot P(y) & =\\left[\\begin{array}{ll}\n\\cos x & \\sin x \\\\\n-\\sin x & \\cos x\n\\end{array}\\right]\\left[\\begin{array}{cc}\n\\cos y & \\sin y \\\\\n-\\sin y & \\cos y\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n\\cos x \\cdot \\cos y-\\sin x \\cdot \\sin y & \\cos x \\cdot \\sin y+\\sin x \\cdot \\cos y \\\\\n-\\sin x \\cdot \\cos y-\\cos x \\cdot \\sin y & -\\sin x \\cdot \\sin y+\\cos x \\cdot \\cos y\n\\end{array}\\right]\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\quad\\left[\\begin{array}{l}\n\\because \\cos (x+y)=\\cos x \\cdot \\cos y-\\sin x \\cdot \\sin y \\\\\n\\text { and } \\sin (x+y)=\\sin x \\cdot \\cos y+\\cos x \\cdot \\sin y\n\\end{array}\\right] \\\\\n& \\text { and } \\quad P(x+y)=\\left[\\begin{array}{lr}\n\\cos (x+y) & \\sin (x+y) \\\\\n-\\sin (x+y) & \\cos (x+y)\n\\end{array}\\right]\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>Also, $\\quad P(y) \\cdot P(x)=\\left[\\begin{array}{ll}\\cos y & \\sin y \\\\ -\\sin y & \\cos y\\end{array}\\right]\\left[\\begin{array}{lc}\\cos x & \\sin x \\\\ -\\sin x & \\cos x\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n& =\\left[\\begin{array}{lr}\n\\cos y \\cdot \\cos x-\\sin y \\cdot \\sin x & \\cos y \\cdot \\sin x+\\sin y \\cdot \\cos x \\\\\n-\\sin y \\cdot \\cos x-\\sin x \\cdot \\cos y & -\\sin y \\cdot \\sin x+\\cos y \\cdot \\cos x\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n\\cos (x+y) & \\sin (x+y) \\\\\n-\\sin (x+y) & \\cos (x+y)\n\\end{array}\\right]\\quad\\text{.... (iii)}\n\\end{aligned}$$</p>\n<p>Thus, we see from the Eqs. (i), (ii) and (iii) that,</p>\n<p>$$P(x) \\cdot P(y)=P(x+y)=P(y) \\cdot P(x)$$ Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphelj",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is square matrix such that $A^2=A$, then show that $(I+A)^3=7 A+I$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { Since, } A^2=A \\text { and }(I+A) \\cdot(I+A)=I^2 & +I A+A I+A^2 \\\\\n& =I^2+2 A I+A^2 \\\\\n& =I+2 A+A=I+3 A\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { and } \\quad (I+A) \\cdot(I+A)(I+A) & =(I+A)(I+3 A) \\\\\n& =I^2+3 A I+A I+3 A^2 \\\\\n& =I+4 A I+3 A \\\\\n& =I+7 A=7 A+I\\quad\\text{Hence proved.}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphzmz",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A, B$ are square matrices of same order and $B$ is a skew-symmetric matrix, then show that $A^{\\prime} B A$ is skew-symmetric.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Since, $A$ and $B$ are square matrices of same order and $B$ is a skew-symmetric matrix i.e., $B^{\\prime}=-B$</p>\n<p>$$\n\\begin{aligned}\n&\\text { Now, we have to prove that } A^{\\prime} B A \\text { is a skew-symmetric matrix. }\\\\\n&\\begin{array}{rlrl}\n\\therefore \\quad A^{\\prime} B A^{\\prime} & =A^{\\prime} B A^{\\prime}=B A^{\\prime} A^{\\prime} \\quad [\\because AB'=B'A']\\\\\n& =A^{\\prime} B^{\\prime} A=A^{\\prime}-B A=-A^{\\prime} B A\n\\end{array}\n\\end{aligned}$$</p>\n<p>Hence, $A'BA$ is a skew-symmetric matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphfkt",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A B=B A$ for any two square matrices, then prove by mathematical induction that $(A B)^n=A^n B^n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { Let } \\quad & P(n):(A B)^n=A^n B^n \\\\\n\\therefore\\quad & P(1):(A B)^1=A^1 B^1 \\Rightarrow A B=A B\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>So, $P(1)$ is true.</p>\n<p>Now, $$P(k):(A B)^k=A^k B^k, k \\in N$$</p>\n<p>So, $P(K)$ is true, whenever $P(k+1)$ is true.</p>\n<p>$$\\therefore \\quad P(K+1: A B)^{K+1}=A^{k+1} B^{k+1}\\quad\\text{.... (i)}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & A B^k \\cdot A B^1 \\quad [\\because AB=BA]\\\\\n\\Rightarrow & A^k B^k \\cdot B A \\Rightarrow A^k B^{k+1} A \\\\\n\\Rightarrow & A^k \\cdot A \\cdot B^{k+1} \\Rightarrow A^{k+1} B^{k+1} \\\\\n\\Rightarrow & (A \\cdot B)^{k+1}=A^{k+1} B^{k+1}\n\\end{array}$$</p>\n<p>So, $P(k+1)$ is true for all $n \\in N$, whenever $P(k)$ is true.</p>\n<p>By mathematical induction $(A B)=A^n B^n$ is true for all $n \\in N$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpigqb",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find $x, y$ and $z$, if $A=\\left[\\begin{array}{ccc}0 & 2 y & z \\\\ x & y & -z \\\\ x & -y & z\\end{array}\\right]$ satisfies $A^{\\prime}=A^{-1}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{ccc}0 & 2 y & z \\\\ x & y & -z \\\\ x & -y & z\\end{array}\\right]$ and $A^{\\prime}=\\left[\\begin{array}{ccc}0 & x & x \\\\ 2 y & y & -y \\\\ z & -z & z\\end{array}\\right]$</p>\n<p>By using elementary row transformations, we get</p>\n<p>$$\\mathrm{A}=I \\mathrm{~A}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow\\left[\\begin{array}{ccc}\n0 & 2 y & z \\\\\nx & y & -z \\\\\nx & -y & z\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right] A \\\\\n& \\Rightarrow \\quad\\left[\\begin{array}{ccc}\n0 & 2 y & z \\\\\nx & y & -z \\\\\n0 & -2 y & 2 z\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & -1 & 1\n\\end{array}\\right] A \\quad\\left[\\because R_3 \\rightarrow R_3-R_2\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lll}\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n0 & 2 y & z \\\\\nx & 3 y & 0 \\\\\n0 & 0 & 3 z\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n1 & 1 & 0 \\\\\n1 & -1 & 1\n\\end{array}\\right] A} & {\\left[\\begin{array}{l}\n\\because R_3 \\rightarrow R_3+R_1 \\\\\n\\text { and } R_2 \\rightarrow R_2+R_1\n\\end{array}\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n-x & -y & z \\\\\nx & 3 y & 0 \\\\\n0 & 0 & z\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n0 & -1 & 0 \\\\\n1 & 1 & 0 \\\\\n\\frac{1}{3} & \\frac{-1}{3} & \\frac{1}{3}\n\\end{array}\\right] A} & {\\left[\\begin{array}{l}\n\\because \\rightarrow R_1 \\rightarrow R_2 \\\\\n\\text { and } R_3 \\rightarrow \\frac{1}{3} R_3\n\\end{array}\\right]}\n\\end{array}$$</p>\n<p>$\\Rightarrow \\quad\\left[\\begin{array}{ccc}-x & -y & 0 \\\\ x & 3 y & 0 \\\\ 0 & 0 & z\\end{array}\\right]=\\left[\\begin{array}{ccc}\\frac{-1}{3} & \\frac{-2}{3} & \\frac{-1}{3} \\\\ 1 & 1 & 0 \\\\ \\frac{1}{3} & \\frac{-1}{3} & \\frac{1}{3}\\end{array}\\right] A \\quad\\left[\\because R_1 \\rightarrow R_1-R_3\\right]$</p>\n<p>$\\Rightarrow \\quad\\left[\\begin{array}{ccc}-x & -y & 0 \\\\ 0 & 2 y & 0 \\\\ 0 & 0 & z\\end{array}\\right]=\\left[\\begin{array}{ccc}\\frac{-1}{3} & \\frac{-2}{3} & \\frac{-1}{3} \\\\ \\frac{2}{3} & \\frac{1}{3} & \\frac{-1}{3} \\\\ \\frac{1}{3} & \\frac{-1}{3} & \\frac{1}{3}\\end{array}\\right] A \\quad\\left[\\because R_2 \\rightarrow R_2+R_1\\right]$</p>\n<p>$\\Rightarrow \\quad\\left[\\begin{array}{ccc}-x & 0 & 0 \\\\ 0 & 2 y & 0 \\\\ 0 & 0 & z\\end{array}\\right]=\\left[\\begin{array}{ccc}0 & \\frac{-1}{2} & \\frac{-1}{2} \\\\ \\frac{2}{3} & \\frac{1}{3} & \\frac{-1}{3} \\\\ \\frac{1}{3} & \\frac{-1}{3} & \\frac{1}{3}\\end{array}\\right] A \\quad\\left[\\because R_1 \\rightarrow R_1+\\frac{1}{2} R_2\\right]$</p>\n<p>$\\Rightarrow \\quad\\left[\\begin{array}{ccc}1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1\\end{array}\\right]=\\left[\\begin{array}{ccc}0 & \\frac{1}{2 x} & \\frac{1}{2 x} \\\\ \\frac{1}{3 y} & \\frac{1}{6 y} & \\frac{-1}{6 y} \\\\ \\frac{1}{3 z} & \\frac{-1}{3 z} & \\frac{1}{3 z}\\end{array}\\right] A \\quad\\left[\\begin{array}{l}\\because R_1 \\rightarrow \\frac{-1}{x} R_1 \\\\ R_2 \\rightarrow \\frac{1}{2 y} R_2 \\\\ \\text { and } R_3 \\rightarrow \\frac{1}{z} R_3\\end{array}\\right]$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & A^{-1}=\\left[\\begin{array}{ccc}\n0 & \\frac{1}{2 x} & \\frac{1}{2 x} \\\\\n\\frac{1}{3 y} & \\frac{1}{6 y} & \\frac{-1}{6 y} \\\\\n\\frac{1}{3 z} & \\frac{-1}{3 z} & \\frac{1}{3 z}\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n0 & x & x \\\\\n2 y & y & -y \\\\\nz & -z & z\n\\end{array}\\right] \\\\\n\\Rightarrow & \\frac{1}{2 x}=x \\Rightarrow= \\pm \\frac{1}{\\sqrt{2}} \\\\\n\\Rightarrow & \\frac{1}{6 y}=y \\Rightarrow y= \\pm \\frac{1}{\\sqrt{6}} \\\\\n\\text { and } & \\frac{1}{3 z}=z \\Rightarrow z= \\pm \\frac{1}{\\sqrt{3}}\n\\end{array}$$</p>\n<p>We have, $A=\\left[\\begin{array}{ccc}0 & 2 y & z \\\\ x & y & -z \\\\ x & -y & z\\end{array}\\right]$ and $A^{\\prime}=\\left[\\begin{array}{ccc}0 & x & x \\\\ 2 y & y & -y \\\\ z & -z & z\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{ll}\n\\text { Also, } & A^{\\prime}=A^{-1} \\\\\n\\Rightarrow & A A^{\\prime}=A A^{-1} \\quad \\left[\\because \\mathrm{AA}^{-1}=I\\right]\\\\\n\\Rightarrow & A A^{\\prime}=I\n\\end{array}\\\\\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\quad\\left[\\begin{array}{ccc}0 & 2 y & z \\\\ x & y & -z \\\\ x & -y & z\\end{array}\\right]\\left[\\begin{array}{ccc}0 & x & x \\\\ 2 y & y & -y \\\\ z & -z & z\\end{array}\\right]=\\left[\\begin{array}{lll}1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1\\end{array}\\right]$</p>\n<p>$\\Rightarrow\\left[\\begin{array}{ccc}4 y^2+z^2 & 2 y^2-z^2 & -2 y^2+z^2 \\\\ 2 y^2-z^2 & x^2+y^2+z^2 & x^2-y^2-z^2 \\\\ -2 y^2+z^2 & x^2-y^2-z^2 & x^2+y^2+z^2\\end{array}\\right]=\\left[\\begin{array}{ccc}1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1\\end{array}\\right]$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & 2 y^2-z^2=0 \\Rightarrow 2 y^2=z^2 \\\\\n\\Rightarrow & 4 y^2+z^2=1 \\\\\n\\Rightarrow & 2 \\cdot z^2+z^2=1\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\nz & = \\pm \\frac{1}{\\sqrt{3}} \\\\\n\\therefore\\quad y^2=\\frac{z^2}{2} \\Rightarrow y & = \\pm \\frac{1}{\\sqrt{6}}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Also, }\\\\\n&x^2+y^2+z^2=1\\\\\n&\\begin{array}{lrl}\n\\Rightarrow \\quad x^2=1-y^2-z^2 =1-\\frac{1}{6}-\\frac{1}{3} \\\\\n=1-\\frac{3}{6}=\\frac{1}{2} \\\\\n\\Rightarrow \\quad x = \\pm \\frac{1}{\\sqrt{2}} \\\\\n\\therefore \\quad x = \\pm, \\frac{1}{\\sqrt{2}}, y= \\pm \\frac{1}{\\sqrt{6}} \\\\\n\\text { and } \\quad z = \\pm \\frac{1}{\\sqrt{3}}\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpigv2",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Q. 51 If possible, using elementary row transformations, find the inverse of the following matrices.\n(i) $\\left[\\begin{array}{ccc}2 & -1 & 3 \\\\ -5 & 3 & 1 \\\\ -3 & 2 & 3\\end{array}\\right]$\n(ii) $\\left[\\begin{array}{ccc}2 & 3 & -3 \\\\ -1 & -2 & 2 \\\\ 1 & 1 & -1\\end{array}\\right]$\n(iii) $\\left[\\begin{array}{ccc}2 & 0 & -1 \\\\ 5 & 1 & 0 \\\\ 0 & 1 & 3\\end{array}\\right]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>For getting the inverse of the given matrix $A$ by row elementary operations we may write the given matrix as</p>\n<p>$$A=I A$$</p>\n<p>(i) $\\because\\left[\\begin{array}{ccc}2 & -1 & 3 \\\\ -5 & 3 & 1 \\\\ -3 & 2 & 3\\end{array}\\right]=\\left[\\begin{array}{lll}1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1\\end{array}\\right] A$</p>\n<p>$$\\begin{array}{lll}\n\\Rightarrow \\quad {\\left[\\begin{array}{ccc}\n2 & -1 & 3 \\\\\n-3 & 2 & 4 \\\\\n-3 & 2 & 3\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n1 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right] A} & {\\left[\\because R_2 \\rightarrow R_2+R_1\\right]} \\\\\n\\Rightarrow \\quad\\left[\\begin{array}{ccc}\n2 & -1 & 3 \\\\\n-3 & 2 & 4 \\\\\n0 & 0 & -1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n1 & 1 & 0 \\\\\n-1 & -1 & 1\n\\end{array}\\right] A & {\\left[\\because R_3 \\rightarrow R_3-R_2\\right]}\n\\end{array}$$</p>\n<p>$$\\begin{array}{lll}\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n-1 & 1 & 7 \\\\\n-3 & 2 & 4 \\\\\n0 & 0 & -1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n2 & 1 & 0 \\\\\n1 & 1 & 0 \\\\\n-1 & -1 & 1\n\\end{array}\\right] A} & {\\left[\\because R_1 \\rightarrow R_1+R_2\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n-1 & 1 & 7 \\\\\n0 & -1 & -17 \\\\\n0 & 0 & -1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n2 & 1 & 0 \\\\\n-5 & -2 & 0 \\\\\n-1 & -1 & 1\n\\end{array}\\right] A} & {\\left[\\because R_2 \\rightarrow R_2-3 R_1\\right]}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad\\left[\\begin{array}{ccc}\n-1 & 1 & 7 \\\\\n0 & -1 & -17 \\\\\n0 & 0 & -1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n2 & 1 & 0 \\\\\n-5 & -2 & 0 \\\\\n-1 & -1 & 1\n\\end{array}\\right] A \\quad\\left[\\because R_2 \\rightarrow R_2-3 R_1\\right] \\\\\n& \\Rightarrow \\quad\\left[\\begin{array}{ccc}\n-1 & 0 & -10 \\\\\n0 & -1 & -17 \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n-3 & -1 & 0 \\\\\n-5 & -2 & 0 \\\\\n1 & 1 & -1\n\\end{array}\\right] A \\quad\\left[\\begin{array}{l}\n\\because R_1 \\rightarrow R_1+R_2 \\\\\n\\text { and } R_3 \\rightarrow-1 \\cdot R_3\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{llc}\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n-1 & 0 & 0 \\\\\n0 & -1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n7 & 9 & -10 \\\\\n12 & 15 & -17 \\\\\n1 & 1 & -1\n\\end{array}\\right] A} & {\\left[\\begin{array}{l}\n\\because R_1 \\rightarrow R_1+10 R_3 \\\\\n\\text { and } R_2 \\rightarrow R_2+17 R_3\n\\end{array}\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n-7 & -9 & 10 \\\\\n-12 & -15 & 17 \\\\\n1 & 1 & -1\n\\end{array}\\right] A} & {\\left[\\begin{array}{l}\n\\because R_1 \\rightarrow-1 R_1 \\\\\n\\text { and } R_2 \\rightarrow-1 R_2\n\\end{array}\\right]}\n\\end{array}$$</p>\n<p>So, the inverse of $A$ is $\\left[\\begin{array}{ccc}-7 & -9 & 10 \\\\ -12 & -15 & 17 \\\\ 1 & 1 & -1\\end{array}\\right]$.</p>\n<p>$$\\begin{aligned}\n&\\text { (ii) } \\therefore\\\\\n&\\begin{aligned}\n& {\\left[\\begin{array}{ccc}\n2 & 3 & -3 \\\\\n-1 & -2 & 2 \\\\\n1 & 1 & -1\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right] A} \\\\\n\\Rightarrow\\quad & {\\left[\\begin{array}{ccc}\n0 & 1 & -1 \\\\\n0 & -1 & 1 \\\\\n1 & 1 & -1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & -2 \\\\\n0 & 1 & 1 \\\\\n0 & 0 & 1\n\\end{array}\\right] A} \\quad \\left[\\begin{array}{l}\n\\because R_2 \\rightarrow R_2+R_3 \\\\\n\\text { and } R_1 \\rightarrow R_1-2 R_3\n\\end{array}\\right]\\\\\n\\Rightarrow\\quad & {\\left[\\begin{array}{ccc}\n0 & 1 & -1 \\\\\n0 & 0 & 0 \\\\\n1 & 1 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & -2 \\\\\n2 & 1 & -2 \\\\\n0 & 0 & 1\n\\end{array}\\right] A}\\quad \\left[\\because R_2 \\rightarrow R_2+R_1\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Since, second row of the matrix $A$ on LHS is containing all zeroes, so we can say that inverse of matrix $A$ does not exist.</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { (iii) } \\therefore \\quad & {\\left[\\begin{array}{ccc}\n2 & 0 & -1 \\\\\n5 & 1 & 0 \\\\\n0 & 1 & 3\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right] A} \\\\\n\\Rightarrow\\quad & {\\left[\\begin{array}{ccc}\n2 & 0 & -1 \\\\\n3 & 1 & 1 \\\\\n0 & 1 & 3\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n-1 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right] A} \\quad \\left[\\because R_2 \\rightarrow R_2-R_1\\right]\n\\end{aligned}\\\\\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lll}\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n2 & 0 & -1 \\\\\n1 & 1 & 2 \\\\\n2 & 1 & 2\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n-2 & 1 & 0 \\\\\n1 & 0 & 1\n\\end{array}\\right] A} & {\\left[\\begin{array}{l}\n\\because R_2 \\rightarrow R_2-R_1 \\\\\n\\text { and } R_3 \\rightarrow R_3+R_1\n\\end{array}\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n2 & 0 & -1 \\\\\n0 & 1 & \\frac{5}{2} \\\\\n4 & 1 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n\\frac{-5}{2} & 1 & 0 \\\\\n2 & 0 & 1\n\\end{array}\\right] A} & {\\left[\\begin{array}{l}\n\\because R_3 \\rightarrow R_3+R_1 \\\\\n\\text { and } R_2 \\rightarrow R_2-\\frac{1}{2} R_1\n\\end{array}\\right]}\n\\end{array}$$</p>\n<p>$$\\begin{array}{lll}\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n2 & 0 & -1 \\\\\n0 & 1 & \\frac{5}{2} \\\\\n0 & 1 & 3\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n\\frac{-5}{2} & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right] A} & {\\left[\\because R_3 \\rightarrow R_3-2 R_1\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{ccc}\n2 & 0 & -1 \\\\\n0 & 1 & \\frac{5}{2} \\\\\n0 & 0 & \\frac{1}{2}\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n\\frac{-5}{2} & 1 & 0 \\\\\n\\frac{5}{2} & -1 & 1\n\\end{array}\\right] A} & {\\left[\\because R_3 \\rightarrow R_3-R_2\\right]}\n\\end{array}$$</p>\n<p>$$\n\\begin{array}{lll}\n\\Rightarrow & {\\left[\\begin{array}{lll}\n1 & 0 & \\frac{-1}{2} \\\\\n0 & 1 & \\frac{5}{2} \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n\\frac{1}{2} & 0 & 0 \\\\\n\\frac{-5}{2} & 1 & 0 \\\\\n5 & -2 & 2\n\\end{array}\\right] A} & {\\left[\\begin{array}{l}\n\\because R_1 \\rightarrow \\frac{1}{2} R_1 \\\\\n\\text { and } R_3 \\rightarrow 2 R_3\n\\end{array}\\right]} \\\\\n\\Rightarrow & {\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n3 & -1 & 1 \\\\\n-15 & 6 & -5 \\\\\n5 & -2 & 2\n\\end{array}\\right] A}\n\\end{array} \\quad\\left[\\begin{array}{l}\n\\because \\rightarrow R_1+\\frac{1}{2} R_3 \\\\\n\\text { and } R_2 \\rightarrow R_2-\\frac{5}{2} R_3\n\\end{array}\\right] .$$</p>\n<p>Hence, $\\left[\\begin{array}{rrr}3 & -1 & 1 \\\\ -15 & 6 & -5 \\\\ 5 & -2 & 2\\end{array}\\right]$ is the inverse of given matrix $A$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphzp5",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>2 Express the matrix $\\left[\\begin{array}{ccc}2 & 3 & 1 \\\\ 1 & -1 & 2 \\\\ 4 & 1 & 2\\end{array}\\right]$ as the sum of a symmetric and a skew-symmetric matrix.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{aligned}\n& A=\\left[\\begin{array}{ccc}\n2 & 3 & 1 \\\\\n1 & -1 & 2 \\\\\n4 & 1 & 2\n\\end{array}\\right] \\\\\n\\therefore\\quad & A^{\\prime}=\\left[\\begin{array}{ccc}\n2 & 1 & 4 \\\\\n3 & -1 & 1 \\\\\n1 & 2 & 2\n\\end{array}\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{Now,}\\quad & \\frac{A+A^{\\prime}}{2}=\\frac{1}{2}\\left[\\begin{array}{ccc}\n4 & 4 & 5 \\\\\n4 & -2 & 3 \\\\\n5 & 3 & 4\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n2 & 2 & \\frac{5}{2} \\\\\n2 & -1 & \\frac{3}{2} \\\\\n\\frac{5}{2} & \\frac{3}{2} & 2\n\\end{array}\\right] \\\\\n\\text{and}\\quad & \\frac{A-A^{\\prime}}{2}=\\frac{1}{2}\\left[\\begin{array}{ccc}\n0 & 2 & -3 \\\\\n-2 & 0 & 1 \\\\\n3 & -1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n0 & 1 & \\frac{-3}{2} \\\\\n-1 & 0 & \\frac{1}{2} \\\\\n\\frac{3}{2} & \\frac{-1}{2} & 0\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\therefore \\quad \\frac{A+A^{\\prime}}{2}+\\frac{A-A^{\\prime}}{2}=\\left[\\begin{array}{ccc}\n2 & 2 & \\frac{5}{2} \\\\\n2 & -1 & \\frac{3}{2} \\\\\n\\frac{5}{2} & \\frac{3}{2} & 2\n\\end{array}\\right]+\\left[\\begin{array}{ccc}\n0 & 1 & \\frac{-3}{2} \\\\\n-1 & 0 & \\frac{1}{2} \\\\\n\\frac{3}{2} & \\frac{-1}{2} & 0\n\\end{array}\\right]\\\\\n&\\text { which is the required expression. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphzro",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The matrix $P=\\left[\\begin{array}{lll}0 & 0 & 4 \\\\ 0 & 4 & 0 \\\\ 4 & 0 & 0\\end{array}\\right]$ is a\n</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "square matrix\n"
+            },
+            {
+              "identifier": "B",
+              "content": "diagonal matrix\n"
+            },
+            {
+              "identifier": "C",
+              "content": "unit matrix\n"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these\n"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, in a square matrix number of rows are equal to the number of columns, so the matrix $P=\\left[\\begin{array}{lll}0 & 0 & 4 \\\\ 0 & 4 & 0 \\\\ 4 & 0 & 0\\end{array}\\right]$ is a square matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 18948,
+        "correct": 45,
+        "wrong": 55,
+        "options": {
+          "0": 45,
+          "1": 40,
+          "2": 4,
+          "3": 11
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpim0p",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p><p>Total number of possible matrices of order $3\\times3$ with each entry 2 or 0 is</p></p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "9"
+            },
+            {
+              "identifier": "B",
+              "content": "27"
+            },
+            {
+              "identifier": "C",
+              "content": "81"
+            },
+            {
+              "identifier": "D",
+              "content": "512"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Total number of possible matrices of order $3\\times3$ with each entry 2 or 0 is $2^9$ i.e., 512.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 39667,
+        "correct": 55,
+        "wrong": 45,
+        "options": {
+          "0": 16,
+          "1": 14,
+          "2": 14,
+          "3": 55
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpijx3",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left[\\begin{array}{ll}2 x+y & 4 x \\\\ 5 x-7 & 4 x\\end{array}\\right]=\\left[\\begin{array}{cc}7 & 7 y-13 \\\\ y & x+6\\end{array}\\right]$, then the value of $x+y$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$x=3, y=1$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$x=2, y=3$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$x=2, y=4$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$x=3, y=3$\n"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $$4 x=x+6 \\Rightarrow x=2$$</p>\n<p>and $4 x=7 y-13 \\Rightarrow 8=7 y-13$</p>\n<p>$\\Rightarrow 7 y=21 \\Rightarrow y=3$</p>\n<p>$\\therefore \\quad x+y=2+3=5$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 75242,
+        "correct": 94,
+        "wrong": 6,
+        "options": {
+          "0": 3,
+          "1": 94,
+          "2": 2,
+          "3": 1
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphjrw",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\frac{1}{\\pi}\\left[\\begin{array}{cc}\\sin ^{-1}(x \\pi) & \\tan ^{-1}\\left(\\frac{x}{\\pi}\\right) \\\\ \\sin ^{-1}\\left(\\frac{x}{\\pi}\\right) & \\cot ^{-1}(\\pi x)\\end{array}\\right]$ and $B=\\frac{1}{\\pi}\\left[\\begin{array}{cc}-\\cos ^{-1}(x \\pi) & \\tan ^{-1}\\left(\\frac{x}{\\pi}\\right) \\\\ \\sin ^{-1}\\left(\\frac{x}{\\pi}\\right) & -\\tan ^{-1}(\\pi x)\\end{array}\\right]$, then $A-B$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$I$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "0\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$2 I$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\frac{1}{2} I$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $A=\\left[\\begin{array}{ll}\\frac{1}{\\pi} \\sin ^{-1} x \\pi & \\frac{1}{\\pi} \\tan ^{-1} \\frac{x}{\\pi} \\\\ \\frac{1}{\\pi} \\sin ^{-1} \\frac{x}{\\pi} & \\frac{1}{\\pi} \\cot ^{-1} \\pi x\\end{array}\\right]$</p>\n<p>and $$B=\\left[\\begin{array}{ll}\n\\frac{-1}{\\pi} \\cos ^{-1} x \\pi & \\frac{1}{\\pi} \\tan ^{-1} \\frac{x}{\\pi} \\\\\n\\frac{1}{\\pi} \\sin ^{-1} \\frac{x}{\\pi} & \\frac{-1}{\\pi} \\tan ^{-1} \\pi x\n\\end{array}\\right]$$</p>\n<p>$$\\begin{array}{rlr}\n\\therefore \\quad A-B & =\\left[\\begin{array}{ll}\n\\frac{1}{\\pi}\\left(\\sin ^{-1} x \\pi+\\cos ^{-1} x \\pi\\right) & \\frac{1}{\\pi}\\left(\\tan ^{-1} \\frac{x}{\\pi}-\\tan ^{-1} \\frac{x}{\\pi}\\right) \\\\\n\\frac{1}{\\pi}\\left(\\sin ^{-1} \\frac{x}{\\pi}-\\sin ^{-1} \\frac{x}{\\pi}\\right) & \\frac{1}{\\pi} \\cot ^{-1} \\pi x+\\tan ^{-1} \\pi x\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{lll}\n\\frac{1}{\\pi} & \\frac{\\pi}{2} & 0 \\\\\n0 & \\frac{1}{\\pi} & \\cdot \\frac{\\pi}{2}\n\\end{array}\\right] & {\\left[\\begin{array}{ll}\n\\because \\sin ^{-1} x+\\cos ^{-1} x=\\frac{\\pi}{2} \\\\\n\\text { and } \\tan ^{-1} x+\\cot ^{-1} x=\\frac{\\pi}{2}\n\\end{array}\\right]} \\\\\n& =\\frac{1}{2}\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right] \\\\\n& =\\frac{1}{2} I\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 67381,
+        "correct": 33,
+        "wrong": 67,
+        "options": {
+          "0": 31,
+          "1": 24,
+          "2": 13,
+          "3": 33
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphzu0",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are two matrices of the order $3 \\times \\mathrm{m}$ and $3 \\times n$, respectively and $m=n$, then order of matrix $(5 A-2 B)$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$m \\times 3$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$3 \\times 3$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$m \\times n$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$3 \\times n$\n"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>$A_{3 \\times m}$ and $B_{3 \\times n}$ are two matrices. If $m=n$, then $A$ and $B$ have same orders as $3 \\times n$ each, so the order of $(5 A-2 B)$ should be same as $3 \\times n$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 56008,
+        "correct": 38,
+        "wrong": 62,
+        "options": {
+          "0": 2,
+          "1": 44,
+          "2": 16,
+          "3": 38
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphzwd",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left[\\begin{array}{ll}0 & 1 \\\\ 1 & 0\\end{array}\\right]$, then $A^2$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\left[\\begin{array}{ll}0 & 1 \\\\ 1 & 0\\end{array}\\right]$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\left[\\begin{array}{ll}1 & 0 \\\\ 1 & 0\\end{array}\\right]$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\left[\\begin{array}{ll}0 & 1 \\\\ 0 & 1\\end{array}\\right]$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\left[\\begin{array}{ll}1 & 0 \\\\ 0 & 1\\end{array}\\right]$\n"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\because A^2=A \\cdot A=\\left[\\begin{array}{ll}0 & 1 \\\\ 1 & 0\\end{array}\\right] \\cdot\\left[\\begin{array}{ll}0 & 1 \\\\ 1 & 0\\end{array}\\right]=\\left[\\begin{array}{ll}1 & 0 \\\\ 0 & 1\\end{array}\\right]$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 45233,
+        "correct": 72,
+        "wrong": 28,
+        "options": {
+          "0": 22,
+          "1": 5,
+          "3": 72
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpigz4",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If matrix $A=\\left[a_{i j}\\right]_{2 \\times 2}$, where $a_{i j}=1$, if $i \\neq j=0$ and if $i=j$, then $A^2$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$I$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$A$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "0\n"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text {We have, } A=\\left[a_{i j}\\right]_{2 \\times 2} \\text {, where } \\mathrm{a}_{i j}=1 \\text {, if } i \\neq j=0 \\text { and if } i=j\\\\\n&\\begin{array}{ll}\n\\therefore & A=\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 0\n\\end{array}\\right] \\\\\n\\text { and } & A^2=\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 0\n\\end{array}\\right]\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]=I\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 59875,
+        "correct": 64,
+        "wrong": 36,
+        "options": {
+          "0": 64,
+          "1": 17,
+          "2": 14,
+          "3": 6
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpieb3",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The matrix $\\left[\\begin{array}{ccc}1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 4\\end{array}\\right]$ is a</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "identity matrix\n"
+            },
+            {
+              "identifier": "B",
+              "content": "symmetric matrix\n"
+            },
+            {
+              "identifier": "C",
+              "content": "skew-symmetric matrix\n"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Let</p>\n<p>$$\\begin{aligned}\n& A=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 2 & 0 \\\\\n0 & 0 & 4\n\\end{array}\\right] \\\\\n\\therefore\\quad & A^{\\prime}=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 2 & 0 \\\\\n0 & 0 & 4\n\\end{array}\\right]=A\n\\end{aligned}$$</p>\n<p>So, the given matrix is a symmetric matrix.\n[since, in a square matrix $A$, if $A^{\\prime}=A$, then $A$ is called symmetric matrix]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 22607,
+        "correct": 64,
+        "wrong": 36,
+        "options": {
+          "0": 9,
+          "1": 64,
+          "2": 7,
+          "3": 19
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphv39",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The matrix $\\left[\\begin{array}{ccc}0 & -5 & 8 \\\\ 5 & 0 & 12 \\\\ -8 & -12 & 0\\end{array}\\right]$ is a</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "diagonal matrix\n"
+            },
+            {
+              "identifier": "B",
+              "content": "symmetric matrix\n"
+            },
+            {
+              "identifier": "C",
+              "content": "skew-symmetric matrix\n"
+            },
+            {
+              "identifier": "D",
+              "content": "scalar matrix\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, in a square matrix, if $b_{i j}=0$, when $i \\neq j$, then it is said to be a diagonal matrix. Here, $b_{12}, b_{13}, \\ldots \\neq 0$, so the given matrix is not a diagonal matrix.</p>\n<p>$$\\begin{aligned}\n\\text{Now,}\\quad B & =\\left[\\begin{array}{ccc}\n0 & -5 & 8 \\\\\n5 & 0 & 12 \\\\\n-8 & -12 & 0\n\\end{array}\\right] \\\\\n\\therefore\\quad B^{\\prime} & =\\left[\\begin{array}{ccc}\n0 & 5 & -8 \\\\\n-5 & 0 & -12 \\\\\n8 & 12 & 0\n\\end{array}\\right]=-\\left[\\begin{array}{ccc}\n0 & -5 & 8 \\\\\n5 & 0 & 12 \\\\\n-8 & -12 & 0\n\\end{array}\\right]=-B\n\\end{aligned}$$</p>\n<p>So, the given matrix is a skew-symmetric matrix, since we know that in a square matrix $B$, if $B^{\\prime}=-B$, then it is called skew-symmetric matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 14351,
+        "correct": 86,
+        "wrong": 14,
+        "options": {
+          "0": 9,
+          "1": 2,
+          "2": 86,
+          "3": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpindq",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is matrix of order $m \\times n$ and $B$ is a matrix such that $A B^{\\prime}$ and $B^{\\prime} A$ are both defined, then order of matrix $B$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$m \\times m$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$n \\times n$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$n \\times m$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$m \\times n$\n"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $$A=\\left[a_{i j}\\right]_{m \\times n} \\text { and } B=\\left[b_{i j}\\right]_{p \\times q}$$</p>\n<p>$$\\therefore \\quad B^{\\prime}=\\left[b_{j i}\\right]_{q \\times p}$$</p>\n<p>Now, $A B^{\\prime}$ is defined, so $n=q$ and $B A$ is also defined, so $p=m$</p>\n</p>$\\therefore \\quad$ Order of $B^{\\prime}=\\left[b_{j i}\\right]_{n \\times m}$</p>\n<p>and order of $B=\\left[b_{i j}\\right]_{m \\times n}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 56470,
+        "correct": 44,
+        "wrong": 56,
+        "options": {
+          "0": 3,
+          "1": 13,
+          "2": 40,
+          "3": 44
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphv5t",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are matrices of same order, then $\\left(A B^{\\prime}-B A^{\\prime}\\right)$ is \n</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "skew-symmetric matrix\n"
+            },
+            {
+              "identifier": "B",
+              "content": "null matrix\n"
+            },
+            {
+              "identifier": "C",
+              "content": "symmetric matrix\n"
+            },
+            {
+              "identifier": "D",
+              "content": "unit matrix\n"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We have matrices $A$ and $B$ of same order.</p>\n<p>$$\\begin{aligned}\n\\text{Let}\\quad P & =\\left(A B^{\\prime}-B A^{\\prime}\\right) \\\\\n\\text{Then,}\\quad P^{\\prime} & =\\left(A B^{\\prime}-B A^{\\prime}\\right)^{\\prime}=\\left(A B^{\\prime}\\right)^{\\prime}-\\left(B A^{\\prime}\\right)^{\\prime} \\\\\n& =\\left(B^{\\prime}\\right)^{\\prime}(A)^{\\prime}-\\left(A^{\\prime}\\right)^{\\prime} B^{\\prime}=B A^{\\prime}-A B^{\\prime} \\\\\n& =-\\left(A B^{\\prime}-B A\\right)=-P\n\\end{aligned}$$</p>\n<p>Hence, $\\left(A B^{\\prime}-B A^{\\prime}\\right)$ is a skew-symmetric matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 45813,
+        "correct": 56,
+        "wrong": 44,
+        "options": {
+          "0": 56,
+          "1": 21,
+          "2": 16,
+          "3": 7
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpic7k",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is a square matrix such that $A^2=I$, then $(A-I)^3+(A+I)^3-7 A$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$A$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$I-A$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$I+A$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$3 A$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, } A^2=I\\\\\n&\\begin{aligned}\n\\therefore(A-I)^3+(A+I)^3-7 A= & {\\left[(A-I)+(A+I)\\left\\{(A-I)^2\\right.\\right.} \\\\\n& \\left.\\left.+(A+I)^2-(A-I)(A+I)\\right\\}\\right]-7 A \\\\\n& {\\left[\\because a^3+b^3=(a+b)\\left(a^2+b^2-a b\\right)\\right] }\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lr}\n=\\left[(2 A)\\left\\{A^2+I^2-2 A I+A^2+I^2+A I-\\left(A^2-I^2\\right)\\right\\}\\right]-7 A & \\\\\n=2 A\\left[I+I^2+I+I^2-A^2+I^2\\right]-7 A & {\\left[\\because A^2=A I\\right]} \\\\\n=2 A[5 I-I]-7 A & \\\\\n=8 A I-7 A I & {[\\because A=A I]} \\\\\n=A I=A &\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 87936,
+        "correct": 38,
+        "wrong": 62,
+        "options": {
+          "0": 38,
+          "1": 27,
+          "2": 17,
+          "3": 18
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpheny",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>For any two matrices $A$ and $B$, we have\n</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$A B=B A$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$A B \\neq B A$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$A B=O$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these\n"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>For any two matrices $A$ and $B$, we may have $A B=B A=I, A B \\neq B A$ and $A B=O$ but it is not always true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 19231,
+        "correct": 19,
+        "wrong": 81,
+        "options": {
+          "0": 28,
+          "1": 49,
+          "2": 5,
+          "3": 19
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpieeh",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Q. 66 On using elementary column operations $C_2 \\rightarrow C_2-2 C_1$ in the following matrix equation $\\left[\\begin{array}{cc}1 & -3 \\\\ 2 & 4\\end{array}\\right]=\\left[\\begin{array}{cc}1 & -1 \\\\ 0 & 1\\end{array}\\right]\\left[\\begin{array}{ll}3 & 1 \\\\ 2 & 4\\end{array}\\right]$, we have</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\left[\\begin{array}{cc}1 & -5 \\\\ 0 & 4\\end{array}\\right]=\\left[\\begin{array}{cc}1 & -1 \\\\ -2 & 2\\end{array}\\right]\\left[\\begin{array}{cc}3 & -5 \\\\ 2 & 0\\end{array}\\right]$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\left[\\begin{array}{cc}1 & -5 \\\\ 0 & 4\\end{array}\\right]=\\left[\\begin{array}{cc}1 & -1 \\\\ 0 & 1\\end{array}\\right]\\left[\\begin{array}{cc}3 & -5 \\\\ -0 & 2\\end{array}\\right]$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\left[\\begin{array}{cc}1 & -5 \\\\ 2 & 0\\end{array}\\right]=\\left[\\begin{array}{cc}1 & -3 \\\\ 0 & 1\\end{array}\\right]\\left[\\begin{array}{cc}3 & 1 \\\\ -2 & 4\\end{array}\\right]$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\left[\\begin{array}{cc}1 & -5 \\\\ 2 & 0\\end{array}\\right]=\\left[\\begin{array}{cc}1 & -1 \\\\ 0 & 1\\end{array}\\right]\\left[\\begin{array}{cc}3 & -5 \\\\ 2 & 0\\end{array}\\right]$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $\\left[\\begin{array}{lr}1 & -3 \\\\ 2 & 4\\end{array}\\right]=\\left[\\begin{array}{rr}1 & -1 \\\\ 0 & 1\\end{array}\\right]\\left[\\begin{array}{ll}3 & 1 \\\\ 2 & 4\\end{array}\\right]$</p>\n<p>On using $C_2 \\rightarrow C_2-2 C_1 \\cdot\\left[\\begin{array}{rr}1 & -5 \\\\ 2 & 0\\end{array}\\right]=\\left[\\begin{array}{cc}1 & -1 \\\\ 0 & 1\\end{array}\\right]\\left[\\begin{array}{cc}3 & -5 \\\\ 2 & 0\\end{array}\\right]$</p>\n<p>Since, on using elementary column operation on $X=A B$, we apply these operations simultaneously on $X$ and on the second matrix $B$ of the product $A B$ on RHS.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 80348,
+        "correct": 33,
+        "wrong": 67,
+        "options": {
+          "0": 12,
+          "1": 20,
+          "2": 35,
+          "3": 33
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpik01",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>On using elementary row operation $R_1 \\rightarrow R_1-3 R_2$ in the following matrix equation $\\left[\\begin{array}{ll}4 & 2 \\\\ 3 & 3\\end{array}\\right]=\\left[\\begin{array}{ll}1 & 2 \\\\ 0 & 3\\end{array}\\right]\\left[\\begin{array}{ll}2 & 0 \\\\ 1 & 1\\end{array}\\right]$, we have</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\left[\\begin{array}{rr}-5 & -7 \\\\ 3 & 3\\end{array}\\right]=\\left[\\begin{array}{cc}1 & -7 \\\\ 0 & 3\\end{array}\\right]\\left[\\begin{array}{ll}2 & 0 \\\\ 1 & 1\\end{array}\\right]$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\left[\\begin{array}{rr}-5 & -7 \\\\ 3 & 3\\end{array}\\right]=\\left[\\begin{array}{ll}1 & 2 \\\\ 0 & 3\\end{array}\\right]\\left[\\begin{array}{rr}-1 & -3 \\\\ 1 & 1\\end{array}\\right]$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\left[\\begin{array}{rr}-5 & -7 \\\\ 3 & 3\\end{array}\\right]=\\left[\\begin{array}{rr}1 & 2 \\\\ 1 & -7\\end{array}\\right]\\left[\\begin{array}{ll}2 & 0 \\\\ 1 & 1\\end{array}\\right]$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\left[\\begin{array}{rr}4 & 2 \\\\ -5 & -7\\end{array}\\right]=\\left[\\begin{array}{rr}1 & 2 \\\\ -3 & -3\\end{array}\\right]\\left[\\begin{array}{ll}2 & 0 \\\\ 1 & 1\\end{array}\\right]$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $\\left[\\begin{array}{ll}4 & 2 \\\\ 3 & 3\\end{array}\\right]=\\left[\\begin{array}{ll}1 & 2 \\\\ 0 & 3\\end{array}\\right]\\left[\\begin{array}{ll}2 & 0 \\\\ 1 & 1\\end{array}\\right]$</p>\n<p>Using elementary row operation $R_1 \\rightarrow R_1-3 R_2$,</p>\n<p>$$\\left[\\begin{array}{cc}\n-5 & -7 \\\\\n3 & 3\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n1 & -7 \\\\\n0 & 3\n\\end{array}\\right]\\left[\\begin{array}{ll}\n2 & 0 \\\\\n1 & 1\n\\end{array}\\right]$$</p>\n<p>Since, on using elementary row operation on $X=A B$, we apply these operation simultaneously on $X$ and on the first matrix $A$ of the product $A B$ on RHS.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 73741,
+        "correct": 50,
+        "wrong": 50,
+        "options": {
+          "0": 50,
+          "1": 31,
+          "2": 9,
+          "3": 9
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphepg",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>........... matrix is both symmetric and skew-symmetric matrix.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Null matrix is both symmetric and skew-symmetric matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpim28",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Sum of two skew-symmetric matrices is always ........... matrix.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $A$ is a given matrix, then $(-A)$ is a skew-symmetric matrix. Similarly, for a given matrix $-B$ is a skew-symmetric matrix. Hence, $-A-B=-(A+B) \\Rightarrow$ sum of two skew-symmetric matrices is always skew-symmetric matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hphjtt",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The negative of a matrix is obtained by multiplying it by ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $A$ is a given matrix.</p>\n<p>$\\therefore \\quad-A=-1[A]$</p>\n<p>So, the negative of a matrix is obtained by multiplying it by $-1$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpib12",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The product of any matrix by the scalar .............  is the null matrix.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The product of any matrix by the scalar 0 is the null matrix. i.e., $0 \\cdot A=0$.\n[where, $A$ is any matrix]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpib2h",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A matrix which is not a square matrix is called a ........... matrix.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>A matrix which is not a square matrix is called a rectangular matrix. For example a rectangular matrix is $A=\\left[a_{i j}\\right]_{m \\times n}$, where $m \\neq n$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpilf0",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Matrix multiplication is ........... over addition.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Matrix multiplication is distributive over addition.</p>\n<p>e.g., For three matrices $A, B$ and $C$,</p>\n<p>(i) $A(B+C)=A B+A C$</p>\n<p>(ii) $(A+B) C=A C+B C$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hphfmk",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is a symmetric matrix, then $A^3$ is a ............ matrix.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $A$ is a symmetric matrix, then $A^3$ is a symmetric matrix.</p>\n<p>$$\\begin{aligned}\n\\because\\quad A^{\\prime} & =A \\\\\n\\therefore\\quad \\left(A^3\\right)^{\\prime} & =A^3 \\\\\n& =A^3\\quad \\left[\\because\\left(A^{\\prime}\\right)^n=\\left(A^n\\right)^{\\prime}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hphzxz",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is a skew-symmetric matrix, then $A^2$ is a .............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $A$ is a skew-symmetric matrix, then $A^2$ is a symmetric matrix.</p>\n<p>$$\\begin{aligned}\n\\because\\quad A^{\\prime} & =-A \\\\\n\\therefore\\quad \\left(A^2\\right)^{\\prime} & =\\left(A^{\\prime}\\right)^2 \\\\\n& =(-A)^2 \\\\\n& =A^2\n\\end{aligned} \\quad\\left[\\because A^{\\prime}=-A\\right]$$</p>\n<p>So, A$^2$ is a symmetric matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpher8",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are square matrices of the same order, then</p>\n<p>(i) $(A B)^{\\prime}=$ ...........</p>\n<p>(ii) $(k A)^{\\prime}=$ ........... (where, $k$ is any scalar)</p>\n<p>(iii) $[k(A-B)]^{\\prime}=$ ..............</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) $(A B)^{\\prime}=B^{\\prime} A^{\\prime}$</p>\n<p>(ii) $(k A)^{\\prime}=k A^{\\prime}$</p>\n<p>(iii) $[k(A-B)]^{\\prime}=k\\left(A^{\\prime}-B^{\\prime}\\right)$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpinfb",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is a skew-symmetric, then $k A$ is a ............ (where, $k$ is any scalar).</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $A$ is a skew-symmetric, then $k A$ is a skew-symmetric matrix (where, $k$ is any scalar).</p>\n<p>$$\\left[\\because A^{\\prime}=-A \\Rightarrow(k A)^{\\prime}=k(A)^{\\prime}=-(k A)\\right]$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpih0w",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are symmetric matrices, then</p>\n<p>(i) $A B-B A$ is a .............</p>\n<p>(ii) $B A-2 A B$ is a ...........</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) $A B-B A$ is a skew-symmetric matrix.</p>\n<p>Since,</p>\n<p>$$\\begin{array}{rlr}\n{[A B-B A]^{\\prime}} & =(A B)^{\\prime}-(B A)^{\\prime} & \\\\\n& =B^{\\prime} A^{\\prime}-A^{\\prime} B^{\\prime} & {\\left[\\because(A B)^{\\prime}=B^{\\prime} A^{\\prime}\\right]} \\\\\n& =B A-A B & {\\left[\\because A^{\\prime}=A \\text { and } B^{\\prime}=B\\right]} \\\\\n& =-[A B-B A] &\n\\end{array}$$</p>\n<p>So, $[A B-B A]$ is a skew-symmetric matrix.</p>\n<p>(ii) $[B A-2 A B]$ is a neither symmetric nor skew-symmetric matrix.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad(B A-2 A B)^{\\prime} & =(B A)^{\\prime}-2(A B)^{\\prime} \\\\\n& =A^{\\prime} B^{\\prime}-2 B^{\\prime} A^{\\prime} \\\\\n& =A B-2 B A \\\\\n& =-(2 B A-A B)\n\\end{aligned}$$</p>\n<p>So, $[B A-2 A B]$ is neither symmetric nor skew-symmetric matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hphesx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is symmetric matrix, then $B^{\\prime} A B$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $A$ is a symmetric matrix, then $B^{\\prime} A B$ is a symmetric metrix.</p>\n<p>$$\\begin{aligned}\n\\because\\quad{\\left[B^{\\prime} A B\\right]^{\\prime} } & =\\left[B^{\\prime}(A B)\\right]^{\\prime} \\\\\n& =(A B)^{\\prime}\\left(B^{\\prime}\\right)^{\\prime} \\quad \\left[\\because(A B)^{\\prime}=B^{\\prime} A^{\\prime}\\right]\\\\\n& =B^{\\prime} A^{\\prime} B\\\\\n& =\\left[B^{\\prime} A^{\\prime} B\\right] \\quad\\left[\\because A^{\\prime}=A\\right]\n\\end{aligned}$$</p>\n<p>So, $B^{\\prime} A B$ is a symmetric matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpihxl",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are symmetric matrices of same order, then $A B$ is symmetric if and only if ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $A$ and $B$ are symmetric matrices of same order, then $A B$ is symmetric if and only if $A B=B A$.</p>\n<p>$$\\begin{aligned}\n\\therefore\\quad & (A B)^{\\prime} \\\\\n= & B^{\\prime} A^{\\prime}=B A \\\\\n= & A B\n\\end{aligned} \\quad[\\because A B=B A]$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpingz",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In applying one or more row operations while finding $A^{-1}$ by elementary row operations, we obtain all zeroes in one or more, then $A^{-1} \\ldots \\ldots .$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>In applying one or more row operations while finding $A^{-1}$ by elementary row operations, we obtain all zeroes in one or more, then $A^{-1}$ does not exist.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hphl0d",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A matrix denotes a number.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>A matrix is an ordered rectangular array of numbers or functions.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 9313,
+        "correct": 77,
+        "wrong": 23,
+        "options": {
+          "0": 23,
+          "1": 77
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpi0uw",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Matrices of any order can be added.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Two matrices are added, if they are of the same order.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 8529,
+        "correct": 87,
+        "wrong": 13,
+        "options": {
+          "0": 13,
+          "1": 87
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphfok",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Two matrices are equal, if they have same number of rows and same number of columns.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>If two matrices have same number of rows and same number of columns, then they are said to be square matrix and if two square matrices have same elements in both the matrices, only then they are called equal.\n</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 13640,
+        "correct": 52,
+        "wrong": 48,
+        "options": {
+          "0": 48,
+          "1": 52
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphl28",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Matrices of different order cannot be subtracted.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Two matrices of same order can be subtracted</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 9755,
+        "correct": 83,
+        "wrong": 17,
+        "options": {
+          "0": 83,
+          "1": 17
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpihze",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Matrix addition is associative as well as commutative.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Matrix addition is associative as well as commutative i.e., $(A+B)+C=A+(B+C)$ and $A+B=B+A$, where $A, B$ and $C$ are matrices of same order.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 8606,
+        "correct": 89,
+        "wrong": 11,
+        "options": {
+          "0": 89,
+          "1": 11
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpiniy",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Matrix multiplication is commutative.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, $A B \\neq B A$ is possible when $A B$ and $B A$ are both defined.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 9758,
+        "correct": 57,
+        "wrong": 43,
+        "options": {
+          "0": 43,
+          "1": 57
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpik2q",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A square matrix where every element is unity is called an identity matrix.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, in an identity matrix, the diagonal elements are all one and rest are all zero.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 16458,
+        "correct": 69,
+        "wrong": 31,
+        "options": {
+          "0": 31,
+          "1": 69
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpib43",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are two square matrices of the same order, then $A+B=B+A$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, matrix addition is commutative i.e., $A+B=B+A$, where $A$ and $B$ are two square matrices.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 12453,
+        "correct": 92,
+        "wrong": 8,
+        "options": {
+          "0": 92,
+          "1": 8
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpii1e",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are two matrices of the same order, then $A-B=B-A$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, the addition of two matrices of same order are commutative.</p>\n<p>$$\\therefore \\quad A+(-B)=A-B=-[B-A] \\neq B-A$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 12158,
+        "correct": 77,
+        "wrong": 23,
+        "options": {
+          "0": 23,
+          "1": 77
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpib5x",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If matrix $A B=0$, then $A=0$ or $B=0$ or both $A$ and $B$ are null matrices.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, for two non-zero matrices $A$ and $B$ of same order, it can be possible that $A \\cdot B=0=$ null matrix</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 17780,
+        "correct": 47,
+        "wrong": 53,
+        "options": {
+          "0": 53,
+          "1": 47
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpim3x",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Transpose of a column matrix is a column matrix.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Transpose of a column matrix is a row matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 13970,
+        "correct": 77,
+        "wrong": 23,
+        "options": {
+          "0": 23,
+          "1": 77
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphv7v",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are two square matrices of the same order, then $A B=B A$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>For two square matrices of same order it is not always true that $A B=B A$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 16375,
+        "correct": 70,
+        "wrong": 30,
+        "options": {
+          "0": 30,
+          "1": 70
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpik4y",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If each of the three matrices of the same order are symmetric, then their sum is a symmetric matrix.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $A, B$ and $C$ are three matrices of same order</p>\n<p>$$\\begin{array}{rlrl}\n\\therefore & A^{\\prime} =A, B^{\\prime}=B \\text { and } C^{\\prime}=C \\\\\n\\therefore & (A+B+C)^{\\prime} =A^{\\prime}+B^{\\prime}+C^{\\prime} \\\\\n& =(A+B+C)\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 25202,
+        "correct": 72,
+        "wrong": 28,
+        "options": {
+          "0": 72,
+          "1": 28
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpim5k",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are any two matrices of the same order, then $(A B)^{\\prime}=A^{\\prime} B^{\\prime}$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\because(A B)^{\\prime}=B^{\\prime} A^{\\prime}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 14165,
+        "correct": 66,
+        "wrong": 34,
+        "options": {
+          "0": 34,
+          "1": 66
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphjvt",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Q. 96 If $(A B)^{\\prime}=B^{\\prime} A^{\\prime}$, where $A$ and $B$ are not square matrices, then number of rows in $A$ is equal to number of columns in $B$ and number of columns in $A$ is equal to number of rows in $B$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $A$ is of order $m \\times n$ and $B$ is of order $p \\times q$.</p>\n<p>Since, $(A B)^{\\prime}=B^{\\prime} A^{\\prime}\\quad\\text{.... (i)}$</p>\n<p>$$\\therefore \\quad A_{(m \\times n)} B(p \\times q) \\text { is defined } \\Rightarrow n=p$$\n</p>\n<p>and $A B$ is of order $m \\times q$.</p>\n<p>$\\Rightarrow(A B)^{\\prime}$ is of order $q \\times m\\quad\\text{.... (ii)}$</p>\n<p>$$\\begin{aligned}\n&\\text { Also, } B^{\\prime} \\text { is of order } q \\times p \\text { and } A^{\\prime} \\text { is of order } n \\times m\\\\\n&\\begin{array}{ll}\n\\therefore & B^{\\prime} A^{\\prime} \\text { is defined } \\Rightarrow p=n \\\\\n\\text { and } & B^{\\prime} A^{\\prime} \\text { is of order } q \\times m.\\quad\\text{.... (iii)}\n\\end{array}\n\\end{aligned}$$</p>\n<p>Also, equality of matrices $(A B)^{\\prime}=B^{\\prime} A^{\\prime}$, we get the given statement as true.</p>\n<p>e.g., If $A$ is of order $(3 \\times 1)$ and $B$ is of order $(1 \\times 3)$,</p>\n<p>we get Order of $(A B)^{\\prime}=\\operatorname{Order}$ of $\\left(B^{\\prime} A^{\\prime}\\right)=3 \\times 3$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 34012,
+        "correct": 71,
+        "wrong": 29,
+        "options": {
+          "0": 71,
+          "1": 29
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpieh6",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A, B$ and $C$ are square matrices of same order, then $A B=A C$ always implies that $B=C$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>If $A B=A C=0$, then it can be possible that $B$ and $C$ are two non-zero matrices such that $B \\neq C$.</p>\n<p>$$\n\\begin{array}{ll}\n\\therefore & A \\cdot B=0=A \\cdot C \\\\\n\\text { Let } & A=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 0\n\\end{array}\\right], B=\\left[\\begin{array}{ll}\n0 & 0 \\\\\n1 & 3\n\\end{array}\\right] \\\\\n\\text { and } & C=\\left[\\begin{array}{ll}\n0 & 0 \\\\\n3 & 1\n\\end{array}\\right] \\\\\n\\therefore & A B=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 0\n\\end{array}\\right]\\left[\\begin{array}{ll}\n0 & 0 \\\\\n1 & 3\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 0\n\\end{array}\\right] \\\\\n\\text { and } & A C=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 0\n\\end{array}\\right] \\cdot\\left[\\begin{array}{ll}\n0 & 0 \\\\\n3 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 0\n\\end{array}\\right] \\\\\n\\Rightarrow & A B=A C \\quad\n\\text { but } B \\neq C\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 21227,
+        "correct": 53,
+        "wrong": 47,
+        "options": {
+          "0": 46,
+          "1": 54
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpiejd",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$A A^{\\prime}$ is always a symmetric matrix for any matrix $A$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\because\\left[A A^{\\prime}\\right]^{\\prime}=\\left(A^{\\prime}\\right)^{\\prime} A^{\\prime}=\\left[A A^{\\prime}\\right]$$\n</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 25010,
+        "correct": 62,
+        "wrong": 38,
+        "options": {
+          "0": 62,
+          "1": 38
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphjya",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left|\\begin{array}{ccc}2 & 3 & -1 \\\\ 1 & 4 & 2\\end{array}\\right|$ and $B=\\left|\\begin{array}{cc}2 & 3 \\\\ 4 & 5 \\\\ 2 & 1\\end{array}\\right|$, then $A B$ and $B A$ are defined and equal.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, AB is defined.</p>\n<p>$\\therefore \\quad A B=\\left[\\begin{array}{ccc}2 & 3 & -1 \\\\ 1 & 4 & 2\\end{array}\\right]\\left[\\begin{array}{ll}2 & 3 \\\\ 4 & 5 \\\\ 2 & 1\\end{array}\\right]=\\left[\\begin{array}{ll}14 & 20 \\\\ 22 & 25\\end{array}\\right]$</p>\n<p>Also, BA is defined,</p>\n<p>$$\\begin{array}{ll}\n\\therefore & B A=\\left[\\begin{array}{ll}\n2 & 3 \\\\\n4 & 5 \\\\\n2 & 1\n\\end{array}\\right]\\left[\\begin{array}{ccc}\n2 & 3 & -1 \\\\\n1 & 4 & 2\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ccc}\n7 & 18 & 4 \\\\\n13 & 32 & 6 \\\\\n5 & 10 & 0\n\\end{array}\\right] \\\\\n\\therefore \\quad A B \\neq B A\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 33853,
+        "correct": 59,
+        "wrong": 41,
+        "options": {
+          "0": 41,
+          "1": 59
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpim81",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is skew-symmetric matrix, then $A^2$ is a symmetric matrix.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\because\\quad {\\left[A^2\\right]^{\\prime} } & =\\left[A^{\\prime}\\right]^2 \\\\\n& =[-A]^2 \\quad \\left[\\because A^{\\prime}=-A\\right]\\\\\n& =A^2\n\\end{aligned}$$</p>\n<p>Hence, A$^2$ is symmetric matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 16856,
+        "correct": 79,
+        "wrong": 21,
+        "options": {
+          "0": 79,
+          "1": 21
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpimai",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "matrices",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$(A B)^{-1}=A^{-1} \\cdot B^{-1}$, where $A$ and $B$ are invertible matrices satisfying commutative property with respect to multiplication.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, if $A$ and $B$ are invertible matrices of the same order, then</p>\n<p>$$\\begin{aligned}\n(A B)^{-1} & =(B A)^{-1} \\quad [\\because A B=B A]\\\\\n\\text{Here,}\\quad (A B)^{-1} & =(A B)^{-1} \\\\\n\\Rightarrow\\quad B^{-1} A^{-1} & =A^{-1} B^{-1}\n\\end{aligned}$$</p>\n<p>[since, $A$ and $B$ are satisfying commutative property with respect to multiplications].</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 16470,
+        "correct": 43,
+        "wrong": 57,
+        "options": {
+          "0": 43,
+          "1": 57
+        }
+      }
+    }
+  ]
+}

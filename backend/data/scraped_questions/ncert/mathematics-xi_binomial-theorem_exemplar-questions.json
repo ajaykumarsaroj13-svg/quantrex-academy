@@ -1,0 +1,1255 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m1kb5rv0",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the term independent of $x$, where $x \\neq 0$, in the expansion of $\\left(\\frac{3 x^2}{2}-\\frac{1}{3 x}\\right)^{15}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(\\frac{3 x^2}{2}-\\frac{1}{3 x}\\right)^{15}$.</p>\n<p>Let $T_{r+1}$ term is the general term.</p>\n<p>Then,</p>\n<p>$$\\begin{aligned}\nT_{r+1} & ={ }^{15} C_r\\left(\\frac{3 x^2}{2}\\right)^{15-r}\\left(-\\frac{1}{3 x}\\right)^r \\\\\n& ={ }^{15} C_r 3^{15-r} x^{30-2 r} 2^{r-15}(-1)^r \\cdot 3^{-r} \\cdot x^{-r} \\\\\n& ={ }^{15} C_r(-1)^r 3^{15-2 r} 2^{r-15} x^{30-3 r}\n\\end{aligned}$$</p>\n<p>For independent of $x$,</p>\n<p>$$\\begin{aligned}\n30-3 r & =0 \\\\\n3 r & =30 \\Rightarrow r=10 \\\\\n\\because \\quad  T_{r+1} & =T_{10+1}=1 \\text { th term is independent of } x . \\\\\n\\therefore \\quad T_{10+1} & ={ }^{15} C_{10}(-1)^{10} 3^{15-20} 2^{10-15} \\\\\n& ={ }^{15} C_{10} 3^{-5} 2^{-5} \\\\\n& ={ }^{15} C_{10}(6)^{-5} \\\\\n& ={ }^{15} C_{10}\\left(\\frac{1}{6}\\right)^5\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8o93",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the term free from $x$ in the expansion of $\\left(\\sqrt{x}-\\frac{k}{x^2}\\right)^{10}$ is 405 , then find the value of $k$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p> Given expansion is $\\left(\\sqrt{x}-\\frac{k}{x^2}\\right)^{10}$.</p>\n<p>Let $T_{t+1}$ is the general term.</p>\n<p>Then,</p>\n<p>$$\\begin{aligned}\nT_{r+1} & ={ }^{10} C_r(\\sqrt{x})^{10-r}\\left(\\frac{-k}{x^2}\\right)^r \\\\\n& ={ }^{10} C_r(x)^{\\frac{1}{2}(10-r)}(-k)^r \\cdot x^{-2 r} \\\\\n& ={ }^{10} C_r x^{5-\\frac{r}{2}}(-k)^r \\cdot x^{-2 r} \\\\\n& ={ }^{10} C_r x^{5-\\frac{r}{2}-2 r}(-k)^r \\\\\n& ={ }^{10} C_r x^{\\frac{10-5 r}{2}}(-k)^r\n\\end{aligned}$$</p>\n<p>For free from $x$,</p>\n<p>$$\\begin{aligned}\n\\frac{10-5 r}{2} & =0 \\\\\n10-5 r & =0 \\Rightarrow r=2\n\\end{aligned}$$</p>\n<p>Since, $T_{2+1}=T_3$ is free from $x$.</p>\n<p>$$\\begin{array}{ll}\n\\therefore & T_{2+1}={ }^{10} C_2(-k)^2=405 \\\\\n\\Rightarrow & \\frac{10 \\times 9 \\times 8!}{2!\\times 8!}(-k)^2=405 \\\\\n\\Rightarrow & 45 k^2=405 \\Rightarrow k^2=\\frac{405}{45}=9 \\\\\n\\therefore & k= \\pm 3\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8oau",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the coefficient of $x$ in the expansion of $\\left(1-3 x+7 x^2\\right)(1-x)^{16}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given,</p>\n<p>$$\\begin{aligned}\n\\text { expansion } & =\\left(1-3 x+7 x^2\\right)(1-x)^{16} \\\\\n& =\\left(1-3 x+7 x^2\\right)\\left({ }^{16} C_0 1^{16}-{ }^{16} C_1 1^{15} x^1+{ }^{16} C_2 1^{14} x^2+\\ldots+{ }^{16} C_{16} x^{16}\\right) \\\\\n& =\\left(1-3 x+7 x^2\\right)\\left(1-16 x+120 x^2+\\ldots\\right)\n\\end{aligned}$$</p>\n<p>$\\therefore \\quad$ Coefficient of $x=-3-16=-19$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7mz3",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the term independent of $x$ in the expansion of $\\left(3 x-\\frac{2}{x^2}\\right)^{15}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(3 x-\\frac{2}{x^2}\\right)^{15}$.</p>\n<p>Let $T_{r+1}$ is the general term.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad T_{r+1} & ={ }^{15} C_r(3 x)^{15-r}\\left(\\frac{-2}{x^2}\\right)^r={ }^{15} C_r(3 x)^{15-r}(-2)^r x^{-2 r} \\\\\n& ={ }^{15} C_r 3^{15-r} x^{15-3 r}(-2)^r\n\\end{aligned}$$</p>\n<p>For independent of $x, \\quad 15-3 r=0 \\Rightarrow r=5$</p>\n<p>Since, $T_{5+1}=T_6$ is independent of $x$.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad T_{5+1} & ={ }^{15} C_5 3^{15-5}(-2)^5 \\\\\n& =-\\frac{15 \\times 14 \\times 13 \\times 12 \\times 11 \\times 10!}{5 \\times 4 \\times 3 \\times 2 \\times 1 \\times 10!} \\cdot 3^{10} \\cdot 2^5 \\\\\n& =-3003 \\cdot 3^{10} \\cdot 2^5\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5gzq",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the middle term (terms) in the expansion of</p>\n<p>(i) $\\left(\\frac{x}{a}-\\frac{a}{x}\\right)^{10}$</p>\n<p>(ii) $\\left(3 x-\\frac{x^3}{6}\\right)^9$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) Given expansion is $\\left(\\frac{x}{a}-\\frac{a}{x}\\right)^{10}$.</p>\n<p>Here, the power of Binomial i.e., $n=10$ is even.</p>\n<p>Since, it has one middle term $\\left(\\frac{10}{2}+1\\right)$ th term i.e., 6th term.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad T_6 & =T_{5+1}={ }^{10} C_5\\left(\\frac{x}{a}\\right)^{10-5}\\left(\\frac{-a}{x}\\right)^5 \\\\\n& =-{ }^{10} C_5\\left(\\frac{x}{a}\\right)^5\\left(\\frac{a}{x}\\right)^5 \\\\\n& =-\\frac{10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5!}{5!\\times 5 \\times 4 \\times 3 \\times 2 \\times 1}\\left(\\frac{x}{a}\\right)^5\\left(\\frac{x}{a}\\right)^{-5} \\\\\n& =-9 \\times 4 \\times 7=-252\n\\end{aligned}$$</p>\n<p>(ii) Given expansion is $\\left(3 x-\\frac{x^3}{6}\\right)^9$.</p>\n<p>Here, $n=9$ [odd]</p>\n<p>Since, the Binomial expansion has two middle terms i.e., $\\left(\\frac{9+1}{2}\\right)$ th and $\\left(\\frac{9+1}{2}+1\\right)$ th i.e., 5 th term and 6 th term.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad T_5 & =T_{(4+1)}={ }^9 C_4(3 x)^{9-4}\\left(-\\frac{x^3}{6}\\right)^4 \\\\\n& =\\frac{9 \\times 8 \\times 7 \\times 6 \\times 5!}{4 \\times 3 \\times 2 \\times 1 \\times 5!} 3^5 x^5 x^{12} 6^{-4} \\\\\n& =\\frac{7 \\times 6 \\times 3 \\times 3^1}{2^4} x^{17}=\\frac{189}{8} x^{17}\n\\end{aligned}$$</p>\n<p>\n$$\n\\begin{aligned}\n& \\therefore \\quad T_6=T_{5+1}={ }^9 C_5(3 x)^{9-5}\\left(-\\frac{x^3}{6}\\right)^5 \\\\\n& =-\\frac{9 \\times 8 \\times 7 \\times 6 \\times 5!}{5!\\times 4 \\times 3 \\times 2 \\times 1} \\cdot 3^4 \\cdot x^4 \\cdot x^{15} \\cdot 6^{-5} \\\\\n& =\\frac{-21 \\times 6}{3 \\times 2^5} x^{19}=\\frac{-21}{16} x^{19}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7fjh",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the coefficient of $x^{15}$ in the expansion of $\\left(x-x^2\\right)^{10}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(x-x^2\\right)^{10}$.</p>\n<p>Let the term $T_{r+1}$ is the general term.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad T_{r+1} & ={ }^{10} C_r x^{10-r}\\left(-x^2\\right)^r \\\\\n& =(-1)^r \\cdot{ }^{10} C_r \\cdot x^{10-r} \\cdot x^{2 r} \\\\\n& =(-1)^{10} C_r x^{10+r}\n\\end{aligned}$$</p>\n<p>For the coefficient of $x^{15}$,</p>\n<p>$$\\begin{aligned}\n10+r & =15 \\Rightarrow r=5 \\\\\nT_{5+1} & =(-1)^5{ }^{10} C_5 x^{15} \\\\\n\\therefore \\quad \\text { Coefficient of } x^{15} & =-1 \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5!}{5 \\times 4 \\times 3 \\times 2 \\times 1 \\times 5!} \\\\\n& =-3 \\times 2 \\times 7 \\times 6=-252\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb74kg",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the coefficient of $\\frac{1}{x^{17}}$ in the expansion of $\\left(x^4-\\frac{1}{x^3}\\right)^{15}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(x^4-\\frac{1}{x^3}\\right)^{15}$.</p>\n<p>Let the term $T_{r+1}$ contains the coefficient of $\\frac{1}{x^{17}}$ i.e., $x^{-17}$.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad T_{r+1} & ={ }^{15} C_r\\left(x^4\\right)^{15-r}\\left(-\\frac{1}{x^3}\\right)^r \\\\\n& ={ }^{15} C_r x^{60-4 r}(-1)^r x^{-3 r} \\\\\n& ={ }^{15} C_r x^{60-7 r}(-1)^r\n\\end{aligned}$$</p>\n<p>For the coefficient $x^{-17}$,</p>\n<p>$$\\begin{aligned}\n& 60-7 r=-17 \\\\\n& \\begin{array}{lrl}\n\\Rightarrow & 7 r & =77 \\Rightarrow r=11 \\\\\n\\Rightarrow & T_{11+1} & ={ }^{15} C_{11} x^{60-77}(-1)^{11}\n\\end{array} \\\\\n& \\therefore \\quad \\text { Coefficient of } x^{-17}=\\frac{-15 \\times 14 \\times 13 \\times 12 \\times 11!}{11!\\times 4 \\times 3 \\times 2 \\times 1} \\\\\n& =-15 \\times 7 \\times 13=-1365\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8oct",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the sixth term of the expansion $\\left(y^{1 / 2}+x^{1 / 3}\\right)^n$, if the Binomial coefficient of the third term from the end is 45.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(y^{1 / 2}+x^{1 / 3}\\right)^n$.</p>\n<p>The sixth term of this expansion is</p>\n<p>$$T_6=T_{5+1}={ }^n C_5\\left(y^{1 / 2}\\right)^{n-5}\\left(x^{1 / 3}\\right)^5\\quad \\text{... (i)}$$</p>\n<p>Now, given that the Binomial coefficient of the third term from the end is 45 .</p>\n<p>We know that, Binomial coefficient of third term from the end = Binomial coefficient of third term from the begining $={ }^n \\mathrm{C}_2$</p>\n<p>$$\\begin{aligned}\n\\because \\quad & { }^n C_2 =45 \\\\\n\\Rightarrow \\quad & \\frac{n(n-1)(n-2)!}{2!(n-2)!} =45 \\\\\n\\Rightarrow \\quad & n(n-1) =90 \\\\\n\\Rightarrow \\quad & n^2-n-90 =0 \\\\\n\\Rightarrow \\quad & n^2-10 n+9 n-90 =0 \\\\\n\\Rightarrow \\quad & n(n-10)+9(n-10) =0 \\\\\n\\Rightarrow \\quad & (n-10)(n+9) =0 \\\\\n\\Rightarrow \\quad & (n+9) =0 \\text { or }(n-10)=0 \\\\\n\\therefore \\quad & n =10\\quad [\\because n \\neq-9]\n\\end{aligned}$$</p>\n<p>From Eq. (i),</p>\n<p>$$T_6={ }^{10} C_5 y^{5 / 2} x^{5 / 3}=252 y^{5 / 2} \\cdot x^{5 / 3}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5rwu",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $r$, if the coefficients of $(2 r+4)$ th and $(r-2)$ th terms in the expansion of $(1+x)^{18}$ are equal.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $(1+x)^{18}$.</p>\n<p>Now, $(2 r+4)$ th term i.e., $T_{2 r+3+1}$.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad T_{2 r+3+1} & ={ }^{18} C_{2 r+3}(1)^{18-2 r-3}(x)^{2 r+3} \\\\\n& ={ }^{18} C_{2 r+3} x^{2 r+3}\n\\end{aligned}$$</p>\n<p>Now, $(r-2)$ th term i.e., $T_{r-3+1}$.</p>\n<p>$$\\begin{array}{l}\n\\therefore & T_{r-3+1} ={ }^{18} C_{r-3} x^{r-3} \\\\\n\\text { As, } & { }^{18} C_{2 r+3} ={ }^{18} C_{r-3} \\quad \\left[\\because{ }^n C_x={ }^n C_y \\Rightarrow x+y=n\\right]\\\\\n\\Rightarrow & 2 r+3+r-3 =18 \\\\\n\\Rightarrow & 3 r =18 \\\\\n\\therefore & r =6\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8fcu",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the coefficient of second, third and fourth terms in the expansion of $(1+x)^{2n}$ are in A.P, then show that $2n^2-9n+7=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $(1+x)^{2 n}$.</p>\n<p>Now,</p>\n<p>$$\\begin{aligned}\n& \\text { coefficient of } 2 \\text { nd term }={ }^{2 n} \\mathrm{C}_1 \\\\\n& \\text { Coefficient of 3rd term }={ }^{2 n} \\mathrm{C}_2 \\\\\n& \\text { Coefficient of 4th term }={ }^{2 n} C_3\n\\end{aligned}$$</p>\n<p>Given that, ${ }^{2 n} C_1,{ }^{2 n} C_2$ and ${ }^{2 n} C_3$ are in AP.</p>\n<p>$$\\begin{aligned}\n& \\text { Then, } & 2^{2{ }^{2 n} C_2} & ={ }^{2 n} C_1+{ }^{2 n} C_3 \\\\\n\\Rightarrow & & 2\\left[\\frac{2 n(2 n-1)(2 n-2)!}{2 \\times 1 \\times(2 n-2)!}\\right] & =\\frac{2 n(2 n-1)!}{(2 n-1)!}+\\frac{2 n(2 n-1)(2 n-2)(2 n-3)!}{3!(2 n-3)!} \\\\\n\\Rightarrow & & n(2 n-1) & =n+\\frac{n(2 n-1)(2 n-2)}{6} \\\\\n\\Rightarrow & & n(12 n-6) & =n\\left(6+4 n^2-4 n-2 n+2\\right) \\\\\n\\Rightarrow & & 12 n-6 & =\\left(4 n^2-6 n+8\\right) \\\\\n\\Rightarrow & & 6(2 n-1) & =2\\left(2 n^2-3 n+4\\right) \\\\\n\\Rightarrow & & 3(2 n-1) & =2 n^2-3 n+4 \\\\\n\\Rightarrow & & 2 n^2-3 n+4-6 n+3 & =0 \\\\\n\\Rightarrow & & 2 n^2-9 n+7 & =0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6i4s",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the coefficient of $x^4$ in the expansion of $\\left(1+x+x^2+x^3\\right)^{11}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given, expansion</p>\n<p>$$\\begin{aligned}\n& =\\left(1+x+x^2+x^3\\right)^{11}=\\left[(1+x)+x^2(1+x)\\right]^{11} \\\\\n& =\\left[(1+x)\\left(1+x^2\\right)\\right]^{11}=(1+x)^{11} \\cdot\\left(1+x^2\\right)^{11}\n\\end{aligned}$$</p>\n<p>Now, above expansion becomes</p>\n<p>$$\\begin{aligned}\n& =\\left({ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x^2+{ }^{11} C_3 x^3+{ }^{11} C_4 x^4+\\ldots\\right)\\left({ }^{11} C_0+{ }^{11} C_1 x^2+{ }^{11} C_2 x^4+\\ldots\\right) \\\\\n& =\\left(1+11 x+55 x^2+165 x^3+330 x^4+\\ldots\\right)\\left(1+11 x^2+55 x^4+\\ldots\\right)\n\\end{aligned}$$</p>\n<p>$\\therefore$ Coefficient of $x^4=55+605+330=990$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8ze2",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $p$ is a real number and the middle term in the expansion of $\\left(\\frac{p}{2}+2\\right)^8$ is 1120 , then find the value of $p$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(\\frac{p}{2}+2\\right)^8$.</p>\n<p>Here, $n=8\\quad$ [even]</p>\n<p>Since, this Binomial expansion has only one middle term i.e., $\\left(\\frac{8}{2}+1\\right)$ th $=5$ th term</p>\n<p>$$\\begin{array}{l} \n& T_5 & =T_{4+1}={ }^8 C_4\\left(\\frac{p}{2}\\right)^{8-4} \\cdot 2^4 \\\\\n\\Rightarrow \\quad & 1120 & ={ }^8 C_4 p^4 \\cdot 2^{-4} 2^4 \\\\\n\\Rightarrow \\quad & 1120 & =\\frac{8 \\times 7 \\times 6 \\times 5 \\times 4!}{4!\\times 4 \\times 3 \\times 2 \\times 1} p^4\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad 1120=7 \\times 2 \\times 5 \\times p^4 \\\\\n& \\Rightarrow \\quad p^4=\\frac{1120}{70}=16 \\Rightarrow p^4=2^4 \\\\\n& \\Rightarrow \\quad p^2=4 \\Rightarrow p= \\pm 2\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb86u0",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that the middle term in the expansion of $\\left(x-\\frac{1}{x}\\right)^{2 n}$ is $$\\frac{1 \\times 3 \\times 5 \\times \\ldots \\times(2 n-1)}{n!} \\times(-2)^n$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given, expansion is $\\left(x-\\frac{1}{x}\\right)^{2 n}$. This Binomial expansion has even power. So, this has one middle term.</p>\n<p>$$\\begin{aligned}\n\\text{i.e.,}\\quad \\left(\\frac{2 n}{2}+1\\right) \\text { th term }=(n+1) \\text { th term } \\\\\nT_{n+1} & ={ }^{2 n} C_n(x)^{2 n-n}\\left(-\\frac{1}{x}\\right)^n={ }^{2 n} C_n x^n(-1)^n x^{-n} \\\\\n& ={ }^{2 n} C_n(-1)^n=(-1)^n \\frac{(2 n)!}{n!n!}=\\frac{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\ldots(2 n-1)(2 n)}{n!n!}(-1)^n \\\\\n& =\\frac{1 \\cdot 3 \\cdot 5 \\ldots(2 n-1) \\cdot 2 \\cdot 4 \\cdot 6 \\ldots(2 n)}{12 \\cdot 3 \\cdot \\ldots n(n!)}(-1)^n \\\\\n& =\\frac{1 \\cdot 3 \\cdot 5 \\ldots(2 n-1) \\cdot 2^n(1 \\cdot 2 \\cdot 3 \\ldots n)(-1)^n}{(1 \\cdot 2 \\cdot 3 \\ldots n)(n!)} \\\\\n& =\\frac{[1 \\cdot 3 \\cdot 5 \\ldots(2 n-1)]}{n!}(-2)^n \\quad \\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8oeu",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find $n$ in the Binomial $\\left(\\sqrt[3]{2}+\\frac{1}{\\sqrt[3]{3}}\\right)^n$, if the ratio of 7 th term from the beginning to the 7 th term from the end is $\\frac{1}{6}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Here, the Binomial expansion is $\\left(\\sqrt[3]{2}+\\frac{1}{\\sqrt[3]{3}}\\right)^n$.</p>\n<p>Now, 7 thterm from beginning $T_7=T_{6+1}={ }^n C_6(\\sqrt[3]{2})^{n-6}\\left(\\frac{1}{\\sqrt[3]{3}}\\right)^6\\quad \\text{... (i)}$</p>\n<p>and 7 th term from end i.e., $T_7$ from the beginning of $\\left(\\frac{1}{\\sqrt[3]{3}}+\\sqrt[3]{2}\\right)^n$</p>\n<p>i.e., $$T_7={ }^n C_6\\left(\\frac{1}{\\sqrt[3]{3}}\\right)^{n-6}(\\sqrt[3]{2})^6\\quad \\text{.... (ii)}$$</p>\n<p>Given that, $\\frac{{ }^n C_6(\\sqrt[3]{2})^{n-6}\\left(\\frac{1}{\\sqrt[3]{3}}\\right)^6}{{ }^n C_6\\left(\\frac{1}{\\sqrt[3]{3}}\\right)^{n-6}(\\sqrt[3]{2})^6}=\\frac{1}{6} \\Rightarrow \\frac{2^{\\frac{n-6}{3}} \\cdot 3^{-6 / 3}}{3^{-\\left(\\frac{n-6}{3}\\right)} \\cdot 2^{6 / 3}}=\\frac{1}{6}$</p>\n<p>$\\Rightarrow\\left(2^{\\frac{n-6}{3}} \\cdot 2^{\\frac{-6}{3}}\\right)\\left(3^{\\frac{-6}{3}} \\cdot 3^{\\frac{(n-6)}{3}}\\right)=6^{-1}$</p>\n<p>$\\begin{array}{rlrl}\\Rightarrow & \\left(2^{\\frac{n-6}{3}-\\frac{6}{3}}\\right) \\cdot\\left(3^{\\frac{n-6}{3}-\\frac{6}{3}}\\right) & =6^{-1} \\Rightarrow(2 \\cdot 3)^{\\frac{n}{3}-4}=6^{-1} \\\\ \\Rightarrow & \\frac{n}{3}-4 & =-1 \\Rightarrow \\frac{n}{3}=3 \\\\ \\therefore \\quad n & =9\\end{array}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7wkr",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In the expansion of $(x+a)^n$, if the sum of odd terms is denoted by 0 and the sum of even term by $E$. Then, prove that</p>\n<p>(i) $O^2-E^2=\\left(x^2-a^2\\right)^n$.</p>\n<p>(ii) $40 E=(x+a)^{2 n}-(x-a)^{2 n}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) Given expansion is $(x+a)^n$.</p>\n<p>$$\\therefore(x+a)^n={ }^n C_0 x^n a^0+{ }^n C_1 x^{n-1} a^1+{ }^n C_2 x^{n-2} a^2+{ }^n C_3 x^{n-3} a^3+\\ldots+{ }^n C_n a^n$$</p>\n<p>Now, sum of odd terms</p>\n<p>i.e., $$O={ }^n C_0 x^n+{ }^n C_2 x^{n-2} a^2+\\ldots$$</p>\n<p>and sum of even terms</p>\n<p>i.e., $$E={ }^n C_1 x^{n-1} a+{ }^n C_3 x^{n-3} a^3+\\ldots$$</p>\n<p>$$\\begin{aligned}\n\\because \\quad & (x+a)^n =O+E \\quad \\text{.... (i)}\\\\\n\\text { Similarly, } \\quad & (x-a)^n =O-E & \\ldots \\text { (ii) } \\\\\n\\therefore \\quad & (O+E)(O-E) & =(x+a)^n(x-a)^n & \\text { [on multiplying Eqs. (i) and (ii)] } \\\\\n\\Rightarrow \\quad & O^2-E^2 & =\\left(x^2-a^2\\right)^n &\n\\end{aligned}$$</p>\n<p>(ii) $4 O E=(O+E)^2-(O-E)^2=\\left[(x+a)^n\\right]^2-\\left[(x-a)^n\\right]^2\\quad \\text{[from Eqs. (i) and (ii)]\n}$</p>\n<p>$$=(x+a)^{2 n}-(x-a)^{2 n}$$ Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6r1a",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x^p$ occurs in the expansion of $\\left(x^2+\\frac{1}{x}\\right)^{2 n}$, then prove that its coefficient is $\\frac{2 n!}{\\frac{(4 n-p)!}{3!} \\frac{(2 n+p)!}{3!}}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $${\\left( {{x^2} + {1 \\over x}} \\right)^{2n}}$$.</p>\n<p>Let $x^p$ occur in the expansion of $${\\left( {{x^2} + {1 \\over x}} \\right)^{2n}}$$.</p>\n<p>$${T_{r + 1}} = {}^{2n}{C_r}{({x^2})^{2n - r}}{\\left( {{1 \\over x}} \\right)^r}$$</p>\n<p>$$ = {}^{2n}{C_r}{x^{4n - 2r}}{x^{ - r}} = {}^{2n}{C_r}{x^{4n - 3r}}$$</p>\n<p>Let $$4n - 3r = p$$</p>\n<p>$$ \\Rightarrow 3r = 4n - p \\Rightarrow r = {{4n - p} \\over 3}$$</p>\n<p>$\\therefore$ Coefficient of $${x^p} = {}^{2n}{C_r} = {{(2n)!} \\over {r!(2n - r)!}} = {{(2n)!} \\over {\\left( {{{4n - p} \\over 3}} \\right)!\\left( {2n - {{4n - p} \\over 3}} \\right)!}}$$</p>\n<p>$$ = {{(2n)!} \\over {\\left( {{{4n - p} \\over 3}} \\right)!\\left( {{{6n - 4n + p} \\over 3}} \\right)!}} = {{(2n)!} \\over {\\left( {{{4n - p} \\over 3}} \\right)!\\left( {{{2n + p} \\over 3}} \\right)!}}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6r3k",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the term independent of $x$ in the expansion of</p>\n<p>$$\\left(1+x+2 x^3\\right)\\left(\\frac{3}{2} x^2-\\frac{1}{3 x}\\right)^9$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(1+x+2 x^3\\right)\\left(\\frac{3}{2} x^2-\\frac{1}{3 x}\\right)^9$</p>\n<p>Now, consider $\\left(\\frac{3}{2} x^2-\\frac{1}{3 x}\\right)^9$</p>\n<p>$$\\begin{aligned}\nT_{r+1} & ={ }^9 C_r\\left(\\frac{3}{2} x^2\\right)^{9-r}\\left(-\\frac{1}{3 x}\\right)^r \\\\\n& ={ }^9 C_r\\left(\\frac{3}{2}\\right)^{9-r} x^{18-2 r}\\left(-\\frac{1}{3}\\right)^r x^{-r}={ }^9 C_r\\left(\\frac{3}{2}\\right)^{9-r}\\left(-\\frac{1}{3}\\right)^r x^{18-3 r}\n\\end{aligned}$$</p>\n<p>Hence, the general term in the expansion of $\\left(1+x+2 x^3\\right)\\left(\\frac{3}{2} x^2-\\frac{1}{3 x}\\right)^9$</p>\n<p>$$={ }^9 C_r\\left(\\frac{3}{2}\\right)^{9-r}\\left(-\\frac{1}{3}\\right)^r x^{18-3 r}+{ }^9 C_r\\left(\\frac{3}{2}\\right)^{9-r}\\left(-\\frac{1}{3}\\right)^r x^{19-3 r}+2 \\cdot{ }^9 C_r\\left(\\frac{3}{2}\\right)^{9-r}\\left(-\\frac{1}{3}\\right)^r x^{21-3 r}$$</p>\n<p>For term independent of $x$, putting $18-3 r=0,19-3 r=0$ and $21-3 r=0$, we get</p>\n<p>$$r=6, r=19 / 3, r=7$$</p>\n<p>Since, the possible value of $r$ are 6 and 7.</p>\n<p>Hence, second term is not independent of $x$.</p>\n<p>$$\\begin{aligned}\n& =\\frac{9 \\times 8 \\times 7 \\times 6!}{6!\\times 3 \\times 2} \\cdot \\frac{3^3}{2^3} \\cdot \\frac{1}{3^6}-2 \\cdot \\frac{9 \\times 8 \\times 7!}{7!\\times 2 \\times 1} \\cdot \\frac{3^2}{2^2} \\cdot \\frac{1}{3^7} \\\\\n& =\\frac{84}{8} \\cdot \\frac{1}{3^3}-\\frac{36}{4} \\cdot \\frac{2}{3^5}=\\frac{7}{18}-\\frac{2}{27}=\\frac{21-4}{54}=\\frac{17}{54}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb74mt",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>18 The total number of terms in the expansion of $(x+a)^{100}+(x-a)^{100}$ after simplification is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "50"
+            },
+            {
+              "identifier": "B",
+              "content": "202"
+            },
+            {
+              "identifier": "C",
+              "content": "51"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Here, $(x+a)^{100}+(x-a)^{100}$</p>\n<p>Total number of terms is 102 in the expansion of $(x+a)^{100}+(x-a)^{100}$</p>\n<p>50 terms of $(x+a)^{100}$ cancel out 50 terms of $(x-a)^{100}$. 51 terms of $(x+a)^{100}$ get added to the 51 terms of $(x-a)^{100}$.</p>\n<p>Alternate Method</p>\n<p>$$\\begin{aligned}\n(x+a)^{100}+(x-a)^{100}= & { }^{100} C_0 x^{100}+{ }^{100} C_1 x^{99} a+\\ldots+{ }^{100} C_{100} a^{100} \\\\\n& \\quad+{ }^{100} C_0 x^{100}-{ }^{100} C_1 x^{99} a+\\ldots+{ }^{100} C_{100} a^{100} \\\\\n= & 2 \\underbrace{\\left[{ }^{100} C_0 x^{100}+{ }^{100} C_2 x^{98} a^2+\\ldots+{ }^{100} C_{100} a^{100}\\right]}_{51 \\text { terms }}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 48105,
+        "correct": 63,
+        "wrong": 37,
+        "options": {
+          "0": 7,
+          "1": 21,
+          "2": 63,
+          "3": 9
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb6d71",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the integers $r>1, n>2$ and coefficients of $(3 r)$ th and $(r+2)$ nd terms in the Binomial expansion of $(1+x)^{2 n}$ are equal, then</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $n=2 r$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $n=3 r$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $n=2 r+1$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " None of these"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $r>1, n>2$ and the coefficients of $(3 r)$ th and $(r+2)$ th term are equal in the expansion of $(1+x)^{2 n}$.</p>\n<p>$$\\begin{aligned}\n& \\text { Then, } \\quad T_{3 r}=T_{3 r-1+1}={ }^{2 n} C_{3 r-1} x^{3 r-1} \\\\\n& \\text { and } \\quad T_{t+2}=T_{r+1+1}={ }^{2 n} C_{r+1} x^{r+1} \\\\\n& \\text { Given, } \\quad { }^{2 n} C_{3 r-1}={ }^{2 n} C_{r+1} \\quad{\\left[\\because{ }^n C_x={ }^n C_y \\Rightarrow x+y=n\\right]}\\\\\n& \\Rightarrow \\quad 3 r-1+r+1=2 n \\\\\n& \\Rightarrow \\quad 4 r=2 n \\Rightarrow n=\\frac{4 r}{2} \\\\\n& \\therefore \\quad n=2 r\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 89719,
+        "correct": 25,
+        "wrong": 75,
+        "options": {
+          "0": 25,
+          "1": 19,
+          "2": 50,
+          "3": 6
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb7wrg",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The two successive terms in the expansion of $(1+x)^{24}$ whose coefficients are in the ratio $1:4$ are</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " 3rd and 4th\n"
+            },
+            {
+              "identifier": "B",
+              "content": " 4th and 5th\n"
+            },
+            {
+              "identifier": "C",
+              "content": " 5th and 6th\n"
+            },
+            {
+              "identifier": "D",
+              "content": " 6th and 7th\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Let two successive terms in the expansion of $(1+x)^{24}$ are $(r+1)$ th and $(r+2)$ th terms.</p>\n<p>$$\\begin{array}{ll}\n\\therefore & T_{r+1}={ }^{24} C_r x^r \\\\\n\\text { and } & T_{r+2}={ }^{24} C_{r+1} x^{r+1}\n\\end{array}$$</p>\n<p>Given that, $\\quad \\frac{{ }^{24} C_r}{{ }^{24} C_{r+1}}=\\frac{1}{4}$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad & \\frac{\\frac{(24)!}{r!(24-r)!}}{\\frac{(24)!}{(r+1)!(24-r-1)!}} =\\frac{1}{4} \\\\\n\\Rightarrow \\quad & \\frac{(r+1) r!(23-r)!}{r!(24-r)(23-r)!} =\\frac{1}{4} \\\\\n\\Rightarrow \\quad & \\frac{r+1}{24-r}  =\\frac{1}{4} \\Rightarrow 4 r+4=24-r \\\\\n\\Rightarrow \\quad & 5 r =20 \\Rightarrow r=4 \\\\\n\\therefore \\quad & T_{4+1} =T_5 \\text { and } T_{4+2}=T_6\n\\end{aligned}$$</p>\n<p>Hence, 5th and 6th terms.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb7n1e",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The coefficient of $x^n$ in the expansion of $(1+x)^{2 n}$ and $(1+x)^{2 n-1}$ are in the ratio\n</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $1: 2$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $1: 3$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $3: 1$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $2:1$\n"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\because$ Coefficient of $x^n$ in the expansion of $(1+x)^{2 n}={ }^{2 n} C_n$</p>\n<p>and coefficient of $x^n$ in the expansion of $(1+x)^{2 n-1}={ }^{2 n-1} C_n$</p>\n<p>$$\\begin{aligned}\n\\because \\quad \\frac{{ }^{2 n} C_n}{{ }^{2 n-1} C_n} & =\\frac{\\frac{(2 n)!}{n!n!}}{\\frac{(2 n-1)!}{n!(n-1)!}} \\\\\n& =\\frac{(2 n)!n!(n-1)!}{n!n!(2 n-1)!} \\\\\n& =\\frac{2 n(2 n-1)!n!(n-1)!}{n!n(n-1)!(2 n-1)!} \\\\\n& =\\frac{2 n}{n}=\\frac{2}{1}=2: 1\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb86wj",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the coefficients of 2 nd , 3 rd and the 4 th terms in the expansion of $(1+x)^n$ are in AP, then the value of $n$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "2"
+            },
+            {
+              "identifier": "B",
+              "content": "7"
+            },
+            {
+              "identifier": "C",
+              "content": "11"
+            },
+            {
+              "identifier": "D",
+              "content": "14"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>The expansion of $(1+x)^n$ is ${ }^n C_0+{ }^n C_1 x+{ }^n C_2 x^2+{ }^n C_3 x^3+\\ldots+{ }^n C_n x^n$</p>\n<p>$\\therefore \\quad$ Coefficient of 2 nd term $={ }^n C_1$,</p>\n<p>Coefficient of 3rd term $={ }^n \\mathrm{C}_2$,</p>\n<p>and coefficient of 4 th term $={ }^n \\mathrm{C}_3$.</p>\n<p>Given that, ${ }^n C_1,{ }^n C_2$ and ${ }^n C_3$ are in AP.</p>\n<p>$$\\begin{aligned}\n& \\therefore \\quad 2{ }^n C_2={ }^n C_1+{ }^n C_3 \\\\\n& \\Rightarrow \\quad 2\\left[\\frac{(n)!}{(n-2)!2!}\\right]=\\frac{(n)!}{(n-1)!}+\\frac{(n)!}{3!(n-3)!} \\\\\n& \\Rightarrow \\quad \\frac{2 \\cdot n(n-1)(n-2)!}{(n-2)!2!}=\\frac{n(n-1)!}{(n-1)!}+\\frac{n(n-1)(n-2)(n-3)!}{3 \\cdot 2 \\cdot 1(n-3)!} \\\\\n& \\Rightarrow \\quad n(n-1)=n+\\frac{n(n-1)(n-2)}{6} \\\\\n& \\Rightarrow \\quad 6 n-6=6+n^2-3 n+2 \\\\\n& \\Rightarrow \\quad n^2-9 n+14=0 \\\\\n& \\Rightarrow \\quad n^2-7 n-2 n+14=0 \\\\\n& \\Rightarrow \\quad n(n-7)-2(n-7)=0 \\\\\n& \\Rightarrow \\quad(n-7)(n-2)=0 \\\\\n& \\therefore \\quad n=2 \\text { or } n=7\n\\end{aligned}$$</p>\n<p>Since, $n=2$ is not possible.</p>\n<p>$$\\therefore \\quad n=7$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb7flw",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are coefficient of $x^n$ in the expansions of $(1+x)^{2 n}$ and $(1+x)^{2 n-1}$ respectively, then $\\frac{A}{B}$ equals to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "1"
+            },
+            {
+              "identifier": "B",
+              "content": "2"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{1}{2}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\frac{1}{n}$\n"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, the coefficient of $x^n$ in the expansion of $(1+x)^{2 n}$ is ${ }^{2 n} C_n$.</p>\n<p>$$\\therefore \\quad A={ }^{2 n} C_n$$</p>\n<p>Now, the coefficient of $x^n$ in the expansion of $(1+x)^{2 n-1}$ is ${ }^{2 n-1} C_n$.</p>\n<p>$$\\therefore \\quad B={ }^{2 n-1} C_n$$</p>\n<p>Now, $$\\frac{A}{B}=\\frac{{ }^{2 n} C_n}{{ }^{2 n-1} C_n}=\\frac{2}{1}=2$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb5h2g",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the middle term of $\\left(\\frac{1}{x}+x \\sin x\\right)^{10}$ is equal to $7 \\frac{7}{8}$, then the value of $x$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$2 n \\pi+\\frac{\\pi}{6}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $n \\pi+\\frac{\\pi}{6}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $n \\pi+(-1)^n \\frac{\\pi}{6}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $n \\pi+(-1)^n \\frac{\\pi}{3}$\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(\\frac{1}{x}+x \\sin x\\right)^{10}$.</p>\n<p>Since, $n=10$ is even, so this expansion has only one middle term i.e., 6th term.</p>\n<p>$$\\begin{array}{ll}\n\\therefore & T_6=T_{5+1}={ }^{10} C_5\\left(\\frac{1}{x}\\right)^{10-5}(x \\sin x)^5 \\\\\n\\Rightarrow & \\frac{63}{8}={ }^{10} C_5 x^{-5} x^5 \\sin ^5 x \\\\\n\\Rightarrow & \\frac{63}{8}=\\frac{10 \\cdot 9 \\cdot 8 \\cdot 7 \\cdot 6 \\cdot 5!}{5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 \\cdot 5!} \\sin ^5 x \\\\\n\\Rightarrow & \\frac{63}{8}=2 \\cdot 9 \\cdot 2 \\cdot 7 \\cdot \\sin ^5 x \\\\\n\\Rightarrow & \\sin ^5 x=\\frac{1}{32} \\\\\n\\Rightarrow & \\sin ^5 x=\\left(\\frac{1}{2}\\right)^5 \\\\\n\\Rightarrow & \\sin x=\\frac{1}{2} \\\\\n\\therefore & x=n \\pi+(-1)^n \\pi / 6\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb7n38",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The largest coefficient in the expansion of $(1+x)^{30}$ is .............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Largest coefficient in the expansion of $(1+x)^{30}={ }^{30} \\mathrm{C}_{30 / 2}={ }^{30} \\mathrm{C}_{15}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb6r5i",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of terms in the expansion of $(x+y+z)^n$ ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $(x+y+z)^n=[x+(y+z)]^n$.</p>\n<p>$$\\begin{aligned}\n{[x+(y+z)]^n={ }^n C_0 x^n+{ }^n C_1 x^{n-1}(} & (y) z) \\\\\n& +{ }^n C_2 x^{n-2}(y+z)^2+\\ldots+{ }^n C_n(y+z)^n\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Number of terms } & =1+2+3+\\ldots+n+(n+1) \\\\\n& =\\frac{(n+1)(n+2)}{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb74om",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In the expansion of $\\left(x^2-\\frac{1}{x^2}\\right)^{16}$, the value of constant term is ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let constant be $T_{t+1}$.</p>\n<p>$$\\begin{aligned}\nT_{r+1} & ={ }^{16} C_r\\left(x^2\\right)^{16-r}\\left(-\\frac{1}{x^2}\\right)^r \\\\\n& ={ }^{16} C_r x^{32-2 r}(-1)^r x^{-2 r} \\\\\n& ={ }^{16} C_r x^{32-4 r}(-1)^r\n\\end{aligned}$$</p>\n<p>For constant term, $\\quad 32-4 r=0 \\Rightarrow r=8$</p>\n<p>$$\\therefore \\quad T_{8+1}={ }^{16} C_8$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb95z7",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the seventh term from the beginning and the end in the expansion of $\\left(\\sqrt[3]{2}+\\frac{1}{\\sqrt[3]{3}}\\right)^n$ are equal, then $n$ equals to ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansions is $\\left(\\sqrt[3]{2}+\\frac{1}{\\sqrt[3]{3}}\\right)^n$.</p>\n<p>$$T_7=T_{6+1}={ }^n C_6(\\sqrt[3]{2})^{n-6}\\left(\\frac{1}{\\sqrt[3]{3}}\\right)^6\\quad \\text{.... (i)}$$</p>\n<p>Since, $T_7$ from end is same as the $T_7$ from beginning of $\\left(\\frac{1}{\\sqrt[3]{3}}+\\sqrt[3]{2}\\right)^n$.</p>\n<p>Then, $$T_7={ }^n C_6\\left(\\frac{1}{\\sqrt[3]{3}}\\right)^{n-6}(\\sqrt[3]{2})^6\\quad \\text{.... (ii)}$$</p>\n<p>Given that,<p>\n<p>$${ }^n C_6(2)^{\\frac{n-6}{3}}(3)^{-6 / 3}={ }^n C_6(3)^{-\\frac{(n-6)}{3}} 2^{6 / 3}$$</p>\n<p>$\\Rightarrow\\quad (2)^{\\frac{n-12}{3}}=\\left(\\frac{1}{3^{1 / 3}}\\right)^{n-12}$</p>\n<p>which is true, when $\\frac{n-12}{3}=0$.</p>\n<p>$$\\Rightarrow \\quad n-12=0 \\Rightarrow n=12$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb7x93",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The coefficient of $a^{-6} b^4$ in the expansion of $\\left(\\frac{1}{a}-\\frac{2 b}{3}\\right)^{10}$ is $\\qquad$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(\\frac{1}{a}-\\frac{2 b}{3}\\right)^{10}$.</p>\n<p>Let $T_{t+1}$ has the coefficient of $a^{-6} b^4$.</p>\n<p>$\\therefore \\quad T_{r+1}={ }^{10} C_r\\left(\\frac{1}{a}\\right)^{10-r}\\left(-\\frac{2 b}{3}\\right)^t$</p>\n<p>For coefficient of $a^{-6} b^4, \\quad 10-r=6 \\Rightarrow r=4$</p>\n<p>Coefficient of $a^{-6} b^4={ }^{10} C_4(-2 / 3)^4$</p>\n<p>$$\\therefore \\quad =\\frac{10 \\cdot 9 \\cdot 8 \\cdot 7 \\cdot 6!}{61 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1} \\cdot \\frac{2^4}{3^4}=\\frac{1120}{27}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb960x",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Middle term in the expansion of $\\left(a^3+b a\\right)^{28}$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(a^3+b a\\right)^{28}$.</p>\n<p>$$\\begin{aligned}\n& \\because \\quad n=28 \\quad \\text{[even]}\\\\\n& \\therefore \\quad \\text { Middle term }=\\left(\\frac{28}{2}+1\\right) \\text { th term }=15 \\text { th term } \\\\\n& \\therefore \\quad T_{15}=T_{14+1} \\\\\n& ={ }^{28} C_{14}\\left(a^3\\right)^{28-14}(b a)^{14} \\\\\n& ={ }^{28} C_{14} a^{42} b^{14} a^{14} \\\\\n& ={ }^{28} C_{14} a^{56} b^{14}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb5ryh",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The ratio of the coefficients of $x^p$ and $x^q$ in the expansion of $(1+x)^{p+q}$ is .............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $(1+x)^{p+q}$.</p>\n<p>$\\therefore \\quad$ Coefficient of $x^p={ }^{p+q} C_P$</p>\n<p>and coefficient of $x^q={ }^{p+q} C_q$</p>\n<p>$\\therefore \\quad \\frac{{ }^{p+q} C_p}{{ }^{p+q} C_q}=\\frac{p+q C_p}{p+q} C_p=1: 1$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb5zoy",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The position of the term independent of $x$ in the expansion of $\\left(\\sqrt{\\frac{x}{3}}+\\frac{3}{2 x^2}\\right)^{10}$ is ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left(\\sqrt{\\frac{x}{3}}+\\frac{3}{2 x^2}\\right)^{10}$.</p>\n<p>Let the constant term be $T_{r+1}$.</p>\n<p>Then,</p>\n<p>$$\\begin{aligned}\nT_{r+1} & ={ }^{10} C_r\\left(\\sqrt{\\frac{x}{3}}\\right)^{10-r}\\left(\\frac{3}{2 x^2}\\right)^r \\\\\n& ={ }^{10} C_r \\cdot x^{\\frac{10-r}{2}} \\cdot 3^{\\frac{-10+r}{2}} \\cdot 3^r \\cdot 2^{-r} \\cdot x^{-2 r} \\\\\n& ={ }^{10} C_r x^{\\frac{10-5 r}{2}} 3^{\\frac{-10+3 r}{2}} 2^{-r}\n\\end{aligned}$$</p>\n<p>For constant term, $10-5 r=0 \\Rightarrow r=2$</p>\n<p>Hence, third term is independent of $x$./p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb86yd",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $25^{15}$ is divided by 13 , then the remainder is .............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let</p>\n<p>$$\\begin{aligned}\n25^{15} & =(26-1)^{15} \\\\\n& ={ }^{15} C_0 26^{15}-{ }^{15} C_1 26^{14}+\\ldots-{ }^{15} C_{15} \\\\\n& ={ }^{15} C_0 26^{15}-{ }^{15} C_1 26^{14}+\\ldots-1-13+13 \\\\\n& ={ }^{15} C_0 26^{15}-{ }^{15} C_1 26^{14}+\\ldots-13+12\n\\end{aligned}$$</p>\n<p>It is clear that, when $25^{15}$ is divided by 13 , then remainder will be 12 .</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb7xcy",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The sum of the series $\\sum_\\limits{r=0}^{10}{ }^{20} C_r$ is $2^{19}+\\frac{{ }^{20} C_{10}}{2}$.\n</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given series</p>\n<p>$$\\begin{aligned}\n& =\\sum_{r=0}^{10}{ }^{20} \\mathrm{C}_r={ }^{20} \\mathrm{C}_0+{ }^{20} \\mathrm{C}_1+{ }^{20} \\mathrm{C}_2+\\supset+{ }^{20} \\mathrm{C}_{10} \\\\\n& ={ }^{20} \\mathrm{C}_0+{ }^{20} \\mathrm{C}_1+\\supset+{ }^{20} \\mathrm{C}_{10}+{ }^{20} \\mathrm{C}_{11}+\\supset{ }^{20} \\mathrm{C}_{20}-\\left({ }^{20} \\mathrm{C}_{11}+\\supset+{ }^{20} \\mathrm{C}_{20}\\right) \\\\\n& =2^{20}-\\left({ }^{20} \\mathrm{C}_{11}+\\supset+{ }^{20} \\mathrm{C}_{20}\\right)\n\\end{aligned}$$</p>\n<p>Hence, the given statement is false.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 40813,
+        "correct": 50,
+        "wrong": 50,
+        "options": {
+          "0": 50,
+          "1": 50
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb962y",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The expression $7^9+9^7$ is divisible by 64 .</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { Given expression } & =7^9+9^7=(1+8)^7-(1-8)^9 \\\\\n& =\\left({ }^7 C_0+{ }^7 C_1 8+{ }^7 C_2 8^2+\\ldots+{ }^7 C_7 8^7\\right)-\\left({ }^9 C_0-{ }^9 C_1 8+{ }^9 C_2 8^2 \\ldots-{ }^9 C_9 8^9\\right) \\\\\n& =\\left(1+7 \\times 8+21 \\times 8^2+\\ldots\\right)-\\left(1-9 \\times 8+36 \\times 8^2+\\ldots-8^9\\right) \\\\\n& =(7 \\times 8+9 \\times 8)+\\left(21 \\times 8^2-36 \\times 8^2\\right)+\\ldots \\\\\n& =2 \\times 64+(21-36) 64+\\ldots\n\\end{aligned}$$</p>\n<p>which is divisible by 64 .</p>\n<p>Hence, the statement is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb8oh3",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of terms in the expansion of $\\left[\\left(2 x+y^3\\right)^4\\right]^7$ is 8 .\n</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given expansion is $\\left[\\left(2 x+y^3\\right)^4\\right]^7=\\left(2 x+y^3\\right)^{28}$.</p>\n<p>Since, this expansion has 29 terms.</p>\n<p>So, the given statement is false.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb5h4k",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The sum of coefficients of the two middle terms in the expansion of $(1+x)^{2 n-1}$ is equal to ${ }^{2 n-1} C_n$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Here, the Binomial expansion is $(1+x)^{2 n-1}$.</p>\n<p>Since, this expansion has two middle term i.e., $\\left(\\frac{2 n-1+1}{2}\\right)$ th term and $\\left(\\frac{2 n-1+1}{2}+1\\right)$ th term i.e., $n$th term and $(n+1)$ th term.</p>\n<p>$$\\therefore \\quad \\begin{aligned}\n\\text { Coefficient of } n \\text { thterm } & ={ }^{2 n-1} C_{n-1} \\\\\n\\text { Coefficient of }(n+1) \\text { thterm } & ={ }^{2 n-1} C_n \\\\\n\\text { Sum of coefficients } & ={ }^{2 n-1} C_{n-1}+{ }^{2 n-1} C_n \\\\\n& ={ }^{2 n-1+1} C_n={ }^{2 n} C_n \\quad\\left[\\because{ }^n C_r+{ }^n C_{r-1}={ }^{n+1} C_r\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb6i6r",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The last two digits of the numbers $3^{400}$ are 01 .</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $\\quad 3^{400}=9^{200}=(10-1)^{200}$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & (10-1)^{200}={ }^{200} \\mathrm{C}_0 10^{200}-{ }^{200} \\mathrm{C}_1 10^{199}+\\ldots-{ }^{200} \\mathrm{C}_{199} 10^1+{ }^{200} \\mathrm{C}_{200} 1^{200} \\\\\n\\Rightarrow & (10-1)^{200}=10^{200}-200 \\times 10^{199}+\\ldots-10 \\times 200+1\n\\end{array}$$</p>\n<p>So, it is clear that the last two digits are 01.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb5zr1",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the expansion of $\\left(x-\\frac{1}{x^2}\\right)^{2 n}$ contains a term independent of $x$, then $n$ is a multiple of 2.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given Binomial expansion is $\\left(x-\\frac{1}{x^2}\\right)^{2 n}$.</p>\n<p>Let $T_{r+1}$ term is independent of $x$.</p>\n<p>Then,</p>\n<p>$$\\begin{aligned}\nT_{r+1} & ={ }^{2 n} C_r(x)^{2 n-r}\\left(-\\frac{1}{x^2}\\right)^r \\\\\n& ={ }^{2 n} C_r x^{2 n-r}(-1)^r x^{-2 r}={ }^{2 n} C_r x^{2 n-3 r}(-1)^r\n\\end{aligned}$$</p>\n<p>For independent of $x$,</p>\n<p>$$\\begin{aligned}\n2 n-3 r & =0 \\\\\n\\therefore \\quad r & =\\frac{2 n}{3}\n\\end{aligned}$$</p>\n<p>which is not a integer.</p>\n<p>So, the given expansion is not possible.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb8zfz",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "binomial-theorem",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of terms in the expansion of $(a+b)^n$, where $n \\in N$, is one less than the power $n$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, the number of terms in the expansion of $(a+b)^n$, where $n \\in N$, is one more than the power $n$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 16438,
+        "correct": 75,
+        "wrong": 25,
+        "options": {
+          "0": 25,
+          "1": 75
+        }
+      }
+    }
+  ]
+}

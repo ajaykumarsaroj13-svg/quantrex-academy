@@ -1,0 +1,2063 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m5hphjzz",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{cc}x^2-x+1 & x-1 \\\\ x+1 & x+1\\end{array}\\right|$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\left|\\begin{array}{cc}x^2-x+1 & x-1 \\\\ x+1 & x+1\\end{array}\\right|=\\left|\\begin{array}{cc}x^2-2 x+2 & x-1 \\\\ 0 & x+1\\end{array}\\right|\\quad \\left[\\because C_1 \\rightarrow C_1-C_2\\right]$</p>\n<p>$$\\begin{aligned}\n& =\\left(x^2-2 x+2\\right) \\cdot(x+1)-(x-1) \\cdot 0 \\\\\n& =x^3-2 x^2+2 x+x^2-2 x+2 \\\\\n& =x^3-x^2+2\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpih2n",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{ccc}a+x & y & z \\\\ x & a+y & z \\\\ x & y & a+z\\end{array}\\right|$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\left|\\begin{array}{ccc}a+x & y & z \\\\ x & a+y & z \\\\ x & y & a+z\\end{array}\\right|=\\left|\\begin{array}{ccc}a & -a & 0 \\\\ 0 & a & -a \\\\ x & y & a+z\\end{array}\\right|$</p>\n<p>$$\\left[\\begin{array}{cc}\n\\because & R_1 \\rightarrow R_1-R_2 \\\\\n\\text { and } & R_2 \\rightarrow R_2-R_3\n\\end{array}\\right]$$</p>\n<p>$$\\begin{aligned}\n& =\\left|\\begin{array}{ccc}\na & 0 & 0 \\\\\n0 & a & -a \\\\\nx & x+y & a+z\n\\end{array}\\right| \\quad \\left[\\because C_2 \\rightarrow C_2+C_1\\right]\\\\\n& =a\\left(a^2+a z+a x+a y\\right) \\\\\n& =a^2(a+z+x+y)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi0wf",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{ccc}0 & x y^2 & x z^2 \\\\ x^2 y & 0 & y z^2 \\\\ x^2 z & z y^2 & 0\\end{array}\\right|$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad\\left|\\begin{array}{ccc}0 & x y^2 & x z^2 \\\\ x^2 y & 0 & y z^2 \\\\ x^2 z & z y^2 & 0\\end{array}\\right|=x^2 y^2 z^2\\left|\\begin{array}{ccc}0 & x & x \\\\ y & 0 & y \\\\ z & z & 0\\end{array}\\right|$</p>\n<p>$$\\begin{aligned}\n&\\text { [taking } x^2, y^2 \\text { and } z^2 \\text { common from } C_1, C_2 \\text { and } C_3 \\text {, respectively] }\\\\\n&\\begin{aligned}\n& =x^2 y^2 z^2\\left|\\begin{array}{ccc}\n0 & 0 & x \\\\\ny & -y & y \\\\\nz & z & 0\n\\end{array}\\right| \\\\\n& =x^2 y^2 z^2[x(y z+y z)] \\\\\n& =x^2 y^2 z^2 \\cdot 2 x y z=2 x^3 y^3 z^3\n\\end{aligned} \\quad\\left[\\because C_2 \\rightarrow C_2-C_3\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphev7",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{ccc}3 x & -x+y & -x+z \\\\ x-y & 3 y & z-y \\\\ x-z & y-z & 3 z\\end{array}\\right|$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad\\left|\\begin{array}{ccc}3 x & -x+y & -x+z \\\\ x-y & 3 y & z-y \\\\ x-z & y-z & 3 z\\end{array}\\right|$</p>\n<p>Applying, $C_1 \\rightarrow C_1+C_2+C_3$,</p>\n<p>$$\\begin{aligned}\n& =\\left|\\begin{array}{ccc}\nx+y+z & -x+y & -x+z \\\\\nx+y+z & 3 y & z-y \\\\\nx+y+z & y-z & 3 z\n\\end{array}\\right| \\\\\n& =(x+y+z)\\left|\\begin{array}{ccc}\n1 & -x+y & -x+z \\\\\n1 & 3 y & z-y \\\\\n1 & y-z & 3 z\n\\end{array}\\right| \\quad \\text { [taking } \\left.(x+y+z) \\text { common from column } C_1\\right]\\\\\n& =(x+y+z)\\left|\\begin{array}{ccc}\n1 & -x+y & -x+z \\\\\n0 & 2 y+x & x-y \\\\\n0 & x-z & 2 z+x\n\\end{array}\\right| \\quad {\\left[\\because R_2 \\rightarrow R_2-R_1 \\text { and } R_3 \\rightarrow R_3-R_1\\right]}\\\\\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Now, expanding along first column, we get }\\\\\n&\\begin{aligned}\n& (x+y+z) \\cdot 1[(2 y+x)(2 z+x)-(x-y)(x-z)] \\\\\n= & (x+y+z)\\left(4 y z+2 y x+2 x z+x^2-x^2+x z+y x-y z\\right) \\\\\n= & (x+y+z)(3 y z+3 y x+3 x z) \\\\\n= & 3(x+y+z)(y z+y x+x z)\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi0ym",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{ccc}x+4 & x & x \\\\ x & x+4 & x \\\\ x & x & x+4\\end{array}\\right|$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\left|\\begin{array}{ccc}x+4 & x & x \\\\ x & x+4 & x \\\\ x & x & x+4\\end{array}\\right|=\\left|\\begin{array}{ccc}2 x+4 & 2 x+4 & 2 x \\\\ x & x+4 & x \\\\ x & x & x+4\\end{array}\\right|\\quad$ $$\\left[\\because R_1 \\rightarrow R_1+R_2\\right]$$</p>\n<p>$$\\begin{aligned}\n&=\\left|\\begin{array}{ccc}\n2 x & 2 x & 2 x \\\\\nx & x+4 & x \\\\\nx & x & x+4\n\\end{array}\\right|+\\left|\\begin{array}{ccc}\n4 & 4 & 0 \\\\\nx & x+4 & x \\\\\nx & x & x+4\n\\end{array}\\right|\\\\\n&\\text { [here, given determinant is expressed in sum of two determinants] }\\\\\n&=2 x\\left|\\begin{array}{ccc}\n1 & 1 & 1 \\\\\nx & x+4 & x \\\\\nx & x & x+4\n\\end{array}\\right|+4\\left|\\begin{array}{ccc}\n1 & 1 & 0 \\\\\nx & x+4 & x \\\\\nx & x & x+4\n\\end{array}\\right|\n\\end{aligned}$$</p>\n<p>[taking $2 x$ common from first row of first determinant and 4 from first row of second determinant]</p>\n<p>Applying $C_1 \\rightarrow C_1-C_3$ and $C_2 \\rightarrow C_2-C_3$ in first and applying $C_1 \\rightarrow C_1-C_2$ in second, we get</p>\n<p>$=2 x\\left|\\begin{array}{ccc}0 & 0 & 1 \\\\ 0 & 4 & x \\\\ -4 & -4 & x+4\\end{array}\\right|+4\\left|\\begin{array}{ccc}0 & 1 & 0 \\\\ -4 & x+4 & x \\\\ 0 & x & x+4\\end{array}\\right|$</p>\n<p>$$\\begin{aligned}\n&\\text { Expanding both the along first column, we get }\\\\\n&\\begin{aligned}\n2 x & {[-4(-4)]+4[4(x+4-0)] } \\\\\n& =2 x \\times 16+16(x+4) \\\\\n& =32 x+16 x+64 \\\\\n& =16(3 x+4)\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpilgp",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{ccc}a-b-c & 2 a & 2 a \\\\ 2 b & b-c-a & 2 b \\\\ 2 c & 2 c & c-a-b\\end{array}\\right|$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { We have, } \\quad &\\left|\\begin{array}{ccc}\na-b-c & 2 a & 2 a \\\\\n2 b & b-c-a & 2 b \\\\\n2 c & 2 c & c-a-b\n\\end{array}\\right| \\\\\n&=\\left|\\begin{array}{ccc}\na+b+c & a+b+c & a+b+c \\\\\n2 b & b-c-a & 2 b \\\\\n2 c & 2 c & c-a-b\n\\end{array}\\right|\\quad \\left[\\because R_1 \\rightarrow R_1+R_2+R_3\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{gathered}\n=(a+b+c)\\left|\\begin{array}{ccc}\n1 & 1 & 1 \\\\\n2 b & b-c-a & 2 b \\\\\n2 c & 2 c & c-a-b\n\\end{array}\\right| \\\\\n{[\\text { taking }(a+b+c) \\text { common from the first row }]}\n\\end{gathered}$$</p>\n<p>$$=(a+b+c)\\left|\\begin{array}{ccc}\n0 & 0 & 1 \\\\\n0 & -(a+b+c) & 2 b \\\\\n(a+b+c) & (a+b+c) & (c-a-b)\n\\end{array}\\right|$$</p>\n<p>$\\left[\\because C_1 \\rightarrow C_1-C_3\\right.$ and $\\left.C_2 \\rightarrow C_2-C_3\\right]$</p>\n<p>$$\\begin{aligned}\n&\\text { Expanding along } R_1 \\text {, }\\\\\n&\\begin{aligned}\n& =(a+b+c)\\left[1\\left\\{0+\\left(a+b+c^2\\right\\}\\right]\\right. \\\\\n& =(a+b+c)\\left[(a+b+c)^2\\right] \\\\\n& =(a+b+c)^3\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiel8",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{ccc}y^2 z^2 & y z & y+z \\\\ z^2 x^2 & z x & z+x \\\\ x^2 y^2 & x y & x+y\\end{array}\\right|=0$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have to prove,</p>\n<p>$\\left|\\begin{array}{ccc}y^2 z^2 & y z & y+z \\\\ z^2 x^2 & z x & z+x \\\\ x^2 y^2 & x y & x+y\\end{array}\\right|=0$</p>\n<p>$$\\begin{array}{r}\n\\therefore\\quad \\mathrm{LHS}=\\left|\\begin{array}{rll}\ny^2 z^2 & y z & y+z \\\\\nz^2 x^2 & z x & z+x \\\\\nx^2 y^2 & x y & x+y\n\\end{array}\\right|=\\frac{1}{x y z}\\left|\\begin{array}{rrr}\nx y^2 z^2 & x y z & x y+x z \\\\\nx^2 y z^2 & x y z & y z+x y \\\\\nx^2 y^2 z & x y z & x z+y z\n\\end{array}\\right| \\\\\n{\\left[\\because R_1 \\rightarrow x R_1, R_2 \\rightarrow y R_2, R_3 \\rightarrow z R_3\\right]}\n\\end{array}$$</p>\n<p>$$=\\frac{1}{x y z}(x y z)^2\\left|\\begin{array}{ccc}\ny z & 1 & x y+x z \\\\\nx z & 1 & y z+x y \\\\\nx y & 1 & x z+y z\n\\end{array}\\right|\\quad$$ \n[taking $(x y z)$ common from $\\mathrm{C}_1$ and $\\mathrm{C}_2$]</p>\n<p>$$\\begin{aligned}\n& =x y z\\left|\\begin{array}{ccc}\ny z & 1 & x y+y z+z x \\\\\nx z & 1 & x y+y z+z x \\\\\nx y & 1 & x y+y z+z x\n\\end{array}\\right|\\left[C_3 \\rightarrow C_3+C_1\\right] \\\\\n& =x y z(x y+y z+z x)\\left|\\begin{array}{ccc}\ny z & 1 & 1 \\\\\nx z & 1 & 1 \\\\\nx y & 1 & 1\n\\end{array}\\right|\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lr}\n=0 & {\\left[\\text { taking }(x y+y z+z x) \\text { common from } C_3\\right]} \\\\\n=\\text { RHS } & {\\left[\\text { since, } C_2 \\text { and } C_3 \\text { are identicals }\\right]} \\\\\n\\text { Hence proved. }\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpic9h",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{ccc}y+z & z & y \\\\ z & z+x & x \\\\ y & x & x+y\\end{array}\\right|=4 x y z$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have to prove,</p>\n<p>$\\left|\\begin{array}{ccc}y+z & z & y \\\\ z & z+x & x \\\\ y & x & x+y\\end{array}\\right|=4 x y z$</p>\n<p>$$\\begin{aligned}\n\\mathrm{LHS} & =\\left|\\begin{array}{ccc}\ny+z & z & y \\\\\nz & z+x & x \\\\\ny & x & x+y\n\\end{array}\\right| \\\\\n& =\\left|\\begin{array}{ccc}\ny+z+z+y & z & y \\\\\nz+z+x+x & z+x & x \\\\\ny+x+x+y & x & x+y\n\\end{array}\\right| \\quad\\left[\\because C_1 \\rightarrow C_1+C_2+C_3\\right]\n\\end{aligned}$$</p>\n<p>$$=2\\left|\\begin{array}{ccc}\n(y+z) & z & y \\\\\n(z+x) & z+x & x \\\\\n(x+y) & x & x+y\n\\end{array}\\right|\\quad$$\n[taking 2 common from $\\mathrm{C}_1$ ]</p>\n<p>$$\\begin{array}{ll}\n=2\\left|\\begin{array}{ccc}\ny & z & y \\\\\n0 & z+x & x \\\\\ny & x & x+y\n\\end{array}\\right| & {\\left[\\because C_1 \\rightarrow C_1-C_2\\right]} \\\\\n=2\\left|\\begin{array}{ccc}\n0 & z-x & -x \\\\\n0 & z+x & x \\\\\ny & x & x+y\n\\end{array}\\right| & {\\left[\\because R_1 \\rightarrow R_1-R_3\\right]}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& =2\\left[y\\left(x z-x^2+x z+x^2\\right)\\right] \\\\\n& =4 x y z=\\mathrm{RHS}\n\\end{aligned}\\\\\n&\\text { Hence proved. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpii3g",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{ccc}a^2+2 a & 2 a+1 & 1 \\\\ 2 a+1 & a+2 & 1 \\\\ 3 & 3 & 1\\end{array}\\right|=(a-1)^3$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have to prove,</p>\n<p>$\\left|\\begin{array}{ccc}a^2+2 a & 2 a+1 & 1 \\\\ 2 a+1 & a+2 & 1 \\\\ 3 & 3 & 1\\end{array}\\right|=(a-1)^3$</p>\n<p>$\\therefore \\quad$ LHS $=\\left|\\begin{array}{ccc}a^2+2 a & 2 a+1 & 1 \\\\ 2 a+1 & a+2 & 1 \\\\ 3 & 3 & 1\\end{array}\\right|$</p>\n<p>$$\\begin{aligned}\n=\\left|\\begin{array}{ccc}\na^2+2 a-2 a-1 & 2 a+1-a-2 & 0 \\\\\n2 a+1-3 & a+2-3 & 0 \\\\\n3 & 3 & 1\n\\end{array}\\right| & \\\\\n& {\\left[\\because R_1 \\rightarrow R_1-R_2 \\text { and } R_2 \\rightarrow R_2-R_3\\right] }\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&=\\left|\\begin{array}{ccc}\n(a-1)(a+1) & (a-1) & 0 \\\\\n2(a-1) & (a-1) & 0 \\\\\n3 & 3 & 1\n\\end{array}\\right|=(a-1)^2\\left|\\begin{array}{ccc}\n(a+1) & 1 & 0 \\\\\n2 & 1 & 0 \\\\\n3 & 3 & 1\n\\end{array}\\right| \\\\\n&\\text { [taking } \\left.(a-1) \\text { common from } R_1 \\text { and } R_2 \\text { each] }\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =(a-1)^2[1(a+1)-2]=(a-1)^3 \\\\\n& =\\text { RHS }\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpik6w",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A+B+C=0$, then prove that $\\left|\\begin{array}{ccc}1 & \\cos C & \\cos B \\\\ \\cos C & 1 & \\cos A \\\\ \\cos B & \\cos A & 1\\end{array}\\right|=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have to prove, }\\left|\\begin{array}{ccc}\n1 & \\cos C & \\cos B \\\\\n\\cos C & 1 & \\cos A \\\\\n\\cos B & \\cos A & 1\n\\end{array}\\right|=0\\\\\n&\\therefore \\quad \\mathrm{LHS}=\\left|\\begin{array}{ccc}\n1 & \\cos C & \\cos B \\\\\n\\cos C & 1 & \\cos A \\\\\n\\cos B & \\cos A & 1\n\\end{array}\\right|\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =1\\left(1-\\cos ^2 A\\right)-\\cos C(\\cos C-\\cos A \\cdot \\cos B)+\\cos B(\\cos C \\cdot \\cos A-\\cos B) \\\\\n& =\\sin ^2 A-\\cos ^2 C+\\cos A \\cdot \\cos B \\cdot \\cos C+\\cos A \\cdot \\cos B \\cdot \\cos C-\\cos ^2 B \\\\\n& =\\sin ^2 A-\\cos ^2 B+2 \\cos A \\cdot \\cos B \\cdot \\cos C-\\cos ^2 C \\\\\n& =-\\cos (A+B) \\cdot \\cos (A-B)+2 \\cos A \\cdot \\cos B \\cdot \\cos C-\\cos ^2 C \\\\\n& \\quad\\left[\\because \\cos ^2 B-\\sin ^2 A=\\cos (A+B) \\cdot \\cos (A-B)\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =-\\cos (-C) \\cdot \\cos (A-B)+\\cos C(2 \\cos A \\cdot \\cos B-\\cos C) \\quad[\\because \\cos (-\\theta)=\\cos \\theta] \\\\\n& =-\\cos C(\\cos A \\cdot \\cos B+\\sin A \\cdot \\sin B-2 \\cos A \\cdot \\cos B+\\cos C) \\\\\n& =\\cos C(\\cos A \\cdot \\cos B-\\sin A \\cdot \\sin B-\\cos C) \\\\\n& =\\cos C[\\cos (A+B)-\\cos C] \\\\\n& =\\cos C(\\cos C-\\cos C)=0=\\text { RHS } \\quad \\text { Hence proved. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphk1y",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the coordinates of the vertices of an equilateral triangle with sides of length ' $a$ ' are $\\left(x_1, y_1\\right),\\left(x_2, y_2\\right)$ and $\\left(x_3, y_3\\right)$, then</p>\n<p>$$\\left|\\begin{array}{lll}\nx_1 & y_1 & 1 \\\\\nx_2 & y_2 & 1 \\\\\nx_3 & y_3 & 1\n\\end{array}\\right|^2=\\frac{3 a^4}{4}$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Since, we know that area of a triangle with vertices }\\left(x_1, y_1\\right),\\left(x_2, y_2\\right) \\text { and }\\left(x_3, y_3\\right) \\text {, is given by }\\\\\n&\\begin{aligned}\n\\Delta & =\\frac{1}{2}\\left|\\begin{array}{lll}\nx_1 & y_1 & 1 \\\\\nx_2 & y_2 & 1 \\\\\nx_3 & y_3 & 1\n\\end{array}\\right| \\\\\n\\Rightarrow\\quad \\Delta^2 & =\\frac{1}{4}\\left|\\begin{array}{lll}\nx_1 & y_1 & 1 \\\\\nx_2 & y_2 & 1 \\\\\nx_3 & y_3 & 1\n\\end{array}\\right|\\quad\\text{.... (i)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n&\\text { We know that, area of an equilateral triangle with side } a \\text {, }\\\\\n&\\begin{aligned}\n\\Delta =\\frac{1}{2}\\left(\\frac{\\sqrt{3}}{2}\\right) a^2=\\frac{\\sqrt{3}}{4} a^2 \\\\\n\\Rightarrow \\quad \\Delta^2 =\\frac{3}{16} a^4\\quad\\text{.... (ii)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>From Eqs. (i) and (ii), $\\quad \\frac{3}{16} a^4=\\frac{1}{4}\\left|\\begin{array}{lll}x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1\\end{array}\\right|^2$</p>\n<p>$\\Rightarrow \\quad\\left|\\begin{array}{lll}x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1\\end{array}\\right|^2=\\frac{3}{4} a^4\\quad$ Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphexl",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $\\theta$ satisfying $\\left[\\begin{array}{rrc}1 & 1 & \\sin 3 \\theta \\\\ -4 & 3 & \\cos 2 \\theta \\\\ 7 & -7 & -2\\end{array}\\right]=0$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\n\\left|\\begin{array}{rrc}\n1 & 1 & \\sin 3 \\theta \\\\\n-4 & 3 & \\cos 2 \\theta \\\\\n7 & -7 & -2\n\\end{array}\\right|=0$$</p>\n<p>$\\Rightarrow \\quad\\left|\\begin{array}{rrc}0 & 1 & \\sin 3 \\theta \\\\ -7 & 3 & \\cos 2 \\theta \\\\ 14 & -7 & -2\\end{array}\\right|=0 \\quad\\left[\\because C_1 \\rightarrow C_1-C_2\\right]$</p>\n<p>$$\n\\Rightarrow \\quad 7\\left|\\begin{array}{ccc}\n0 & 1 & \\sin 3 \\theta \\\\\n-1 & 3 & \\cos 2 \\theta \\\\\n2 & -7 & -2\n\\end{array}\\right|=0\\quad$$ \n[taking 7 common from $\\mathrm{C}_1$ ]</p>\n<p>$\\Rightarrow \\quad 7[0-1(2-2 \\cos 2 \\theta)+\\sin 3 \\theta(7-6)]=0 \\quad\\left[\\right.$ expanding along $\\left.R_1\\right]$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & 7[-2(1-\\cos 2 \\theta)+\\sin 3 \\theta]=0 \\\\\n\\Rightarrow & -14+14 \\cos 2 \\theta+7 \\sin 3 \\theta=0 \\\\\n\\Rightarrow & 14 \\cos 2 \\theta+7 \\sin 3 \\theta=14 \\\\\n\\Rightarrow & 14\\left(1-2 \\sin ^2 \\theta\\right)+7\\left(3 \\sin \\theta-4 \\sin ^3 \\theta\\right)=14 \\\\\n\\Rightarrow & -28 \\sin ^2 \\theta+14+21 \\sin \\theta-28 \\sin ^3 \\theta=14 \\\\\n\\Rightarrow & -28 \\sin ^2 \\theta-28 \\sin ^3 \\theta+21 \\sin \\theta=0 \\\\\n\\Rightarrow & 28 \\sin ^3 \\theta+28 \\sin ^2 \\theta-21 \\sin \\theta=0 \\\\\n\\Rightarrow & 4 \\sin ^3 \\theta+4 \\sin ^2 \\theta-3 \\sin \\theta=0 \\\\\n\\Rightarrow & \\sin \\theta\\left(4 \\sin ^2 \\theta+4 \\sin \\theta-3\\right)=0 \\\\\n\\Rightarrow & \\text { Either } \\sin \\theta=0, \\\\\n\\Rightarrow & \\theta=n \\pi \\text { or } 4 \\sin ^2 \\theta+4 \\sin \\theta-3=0\n\\end{array}$$</p>\n<p>$$\n\\begin{aligned}\n& \\therefore \\quad \\sin \\theta=\\frac{-4 \\pm \\sqrt{16+48}}{8}=\\frac{-4 \\pm \\sqrt{64}}{8} \\\\\n& =\\frac{-4 \\pm 8}{8}=\\frac{4}{8}, \\frac{-12}{8} \\\\\n& \\sin \\theta=\\frac{1}{2}, \\frac{-3}{2} \\\\\n& \\text { If } \\quad \\sin \\theta=\\frac{1}{2}=\\sin \\frac{\\pi}{6} \\text {, then } \\\\\n& \\theta=n \\pi+(-1)^n \\frac{\\pi}{6} \\\\\n& \\text { Hence, } \\quad \\sin \\theta=\\frac{-3}{2}\\quad \\text { [not possible because }-1 \\leq \\sin \\theta \\leq 1 \\text { ] }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphzzp",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left[\\begin{array}{lll}4-x & 4+x & 4+x \\\\ 4+x & 4-x & 4+x \\\\ 4+x & 4+x & 4-x\\end{array}\\right]=0$, then find the value of $x$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given, $$\\left|\\begin{array}{lll}\n4-x & 4+x & 4+x \\\\\n4+x & 4-x & 4+x \\\\\n4+x & 4+x & 4-x\n\\end{array}\\right|=0$$</p>\n<p>$\\Rightarrow \\quad\\left|\\begin{array}{ccc}12+x & 12+x & 12+x \\\\ 4+x & 4-x & 4+x \\\\ 4+x & 4+x & 4-x\\end{array}\\right|=0 \\quad\\left[\\because R_1 \\rightarrow R_1+R_2+R_3\\right]$</p>\n<p>$\\Rightarrow \\quad(12+x)\\left|\\begin{array}{ccc}1 & 1 & 1 \\\\ 4+x & 4-x & 4+x \\\\ 4+x & 4+x & 4-x\\end{array}\\right|=0 \\quad$ [taking $(12+x)$ common from $R_1$ ]</p>\n<p>$$\n\\begin{aligned}\n\\Rightarrow \\quad & (12+x)\\left|\\begin{array}{ccc}\n0 & 0 & 1 \\\\\n0 & 8 & 4+x \\\\\n2 x & 8 & 4-x\n\\end{array}\\right| =0 \\quad\\left[\\because C_1 \\rightarrow C_1-C_3 \\text { and } C_2 \\rightarrow C_2+C_3\\right] \\\\\n\\Rightarrow \\quad & (12+x)[1 \\cdot(-16 x)] =0 \\\\\n\\Rightarrow \\quad & (12+x)(-16 x) =0 \\\\\n\\therefore \\quad & x =-12,0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpib7n",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $a_1, a_2, a_3, \\ldots, a_r$ are in GP, then prove that the determinant $\\left|\\begin{array}{ccc}a_{r+1} & a_{r+5} & a_{r+9} \\\\ a_{r+7} & a_{r+11} & a_{r+15} \\\\ a_{r+11} & a_{r+17} & a_{r+21}\\end{array}\\right|$ is independent of $r$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We know that, $$a_{r+1}=A R^{(r+1)-1}=A ^r\n$$</p>\n<p>where $r=r$ th term of a GP, A = First term of a GP and $R=$ Common ratio of GP</p>\n<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{aligned}\n&\\left|\\begin{array}{ccc}\na_{r+1} & a_{r+5} & a_{r+9} \\\\\na_{r+7} & a_{r+11} & a_{r+15} \\\\\na_{r+11} & a_{r+17} & a_{r+21}\n\\end{array}\\right| \\\\\n&=\\left|\\begin{array}{ccc}\nA R^r & A R^{r+4} & A R^{r+8} \\\\\nA R^{r+6} & A R^{r+10} & A R^{r+14} \\\\\nA R^{r+10} & A R^{r+16} & A R^{r+20}\n\\end{array}\\right| \\\\\n&=A R^r \\cdot A R^{r+6} \\cdot A R^{r+10}\\left|\\begin{array}{ccc}\n1 & A R^4 & A R^8 \\\\\n1 & A R^4 & A R^8 \\\\\n1 & A R^6 & A R^{10}\n\\end{array}\\right|\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$\\begin{array}{r}\\text { [taking } A R^r, A R^{r+6} \\text { and } A R^{r+10} \\text { common from } R_1, R_2 \\text { and } R_3, \\text { respectively] } \\\\ =0 \\text { [since, } R_1 \\text { and } R_2 \\text { are identicals] }\\end{array}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpii5b",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that the points $(a+5, a-4),(a-2, a+3)$ and $(a, a)$ do not lie on a straight line for any value of $a$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given, the points are }(a+5, a-4),(a-2, a+3) \\text { and }(a, a) \\text {. }\\\\\n&\\therefore \\quad \\Delta=\\frac{1}{2}\\left|\\begin{array}{ccc}\na+5 & a-4 & 1 \\\\\na-2 & a+3 & 1 \\\\\na & a & 1\n\\end{array}\\right|\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& =\\frac{1}{2}\\left|\\begin{array}{rrr}\n5 & -4 & 0 \\\\\n-2 & 3 & 0 \\\\\na & a & 1\n\\end{array}\\right| \\quad\\left[\\because R_1 \\rightarrow R_1-R_3 \\text { and } R_2 \\rightarrow R_2-R_3\\right] \\\\\n& =\\frac{1}{2}[1(15-8)] \\\\\n\\Rightarrow\\quad & =\\frac{7}{2} \\neq 0\n\\end{aligned}\\\\\n&\\text { Hence, given points form a triangle i.e., points do not lie in a straight line. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpih4l",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $\\triangle A B C$ is an isosceles triangle, if the determinant\n\n$$\n\\Delta=\\left|\\begin{array}{ccc}\n1 & 1 & 1 \\\\\n1+\\cos A & 1+\\cos B & 1+\\cos C \\\\\n\\cos ^2 A+\\cos A & \\cos ^2 B+\\cos B & \\cos ^2 C+\\cos C\n\\end{array}\\right|=0 .$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\Delta=\\left|\\begin{array}{ccc}1 & 1 & 1 \\\\ 1+\\cos A & 1+\\cos B & 1+\\cos C \\\\ \\cos ^2 A+\\cos A & \\cos ^2 B+\\cos B & \\cos ^2 C+\\cos C\\end{array}\\right|=0$</p>\n<p>$\\Delta=\\left|\\begin{array}{ccc}0 & 0 & 1 \\\\ \\cos A-\\cos C & \\cos B-\\cos C & 1+\\cos C \\\\ \\cos ^2 A+\\cos A-\\cos ^2 C-\\cos C & \\cos ^2 B+\\cos B-\\cos ^2 C-\\cos C \\cos ^2 C+\\cos C\\end{array}\\right|=0\\quad \\left[\\begin{array}{ll}\n\\therefore & \\left.C_1 \\rightarrow C_1-C_3 \\text { and } C_2 \\rightarrow C_2-C_3\\right]\n\\end{array}\\right.$</p>\n<p>$\\Rightarrow(\\cos A-\\cos C) \\cdot(\\cos B-\\cos C)$</p>\n<p>$\\left|\\begin{array}{ccc}0 & 0 & 1 \\\\ 1 & 1 & 1+\\cos C \\\\ \\cos A+\\cos C+1 & \\cos B+\\cos C+1 & \\cos ^2 C+\\cos C\\end{array}\\right|=0$</p>\n<p>[taking $(\\cos A-\\cos C)$ common from $C_1$ and $(\\cos B-\\cos C)$ common from $C_2$ ]</p>\n<p>$$\\begin{array}{lrl}\n\\Rightarrow & (\\cos A-\\cos C) \\cdot(\\cos B-\\cos C)[(\\cos B+\\cos C+1)-(\\cos A+\\cos C+1)] & =0 \\\\\n\\Rightarrow & (\\cos A-\\cos C) \\cdot(\\cos B-\\cos C)(\\cos B+\\cos C+1-\\cos A-\\cos C-1) & =0 \\\\\n\\Rightarrow & (\\cos A-\\cos C) \\cdot(\\cos B-\\cos C)(\\cos B-\\cos A) & =0 \\\\\n\\text { i.e., } & \\cos A=\\cos C \\text { or } \\cos B=\\cos C \\text { or } \\cos B=\\cos A \\\\\n\\Rightarrow & A=C \\text { or } B=C \\text { or } B=A\n\\end{array}$$</p>\n<p>Hence, $A B C$ is an isosceles triangle.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphf00",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find $A^{-1}$, if $A=\\left|\\begin{array}{lll}0 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 1 & 1 & 0\\end{array}\\right|$ and show that $A^{-1}=\\frac{A^2-3 I}{2}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad A=\\left|\\begin{array}{lll}0 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 1 & 1 & 0\\end{array}\\right|$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & A_{11}=-1, A_{12}=1, A_{13}=1, A_{21}=1, A_{22}=-1, A_{23}=1, A_{31}=1, A_{32}=1 \\text { and } A_{33}=-1 \\\\\n\\therefore & \\text { adj } A=\\left|\\begin{array}{rrr}\n-1 & 1 & 1 \\\\\n1 & -1 & 1 \\\\\n1 & 1 & -1\n\\end{array}\\right|^{\\top}=\\left|\\begin{array}{rrr}\n-1 & 1 & 1 \\\\\n1 & -1 & 1 \\\\\n1 & 1 & -1\n\\end{array}\\right|\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { and }\\quad & |A|=-1(-1)+1 \\cdot 1=2 \\\\\n\\therefore\\quad & A^{-1}=\\frac{\\operatorname{adj} A}{|A|}=\\frac{1}{2}\\left[\\begin{array}{rrr}\n-1 & 1 & 1 \\\\\n1 & -1 & 1 \\\\\n1 & 1 & -1\n\\end{array}\\right]\\quad\\text{.... (i)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>and\n\n$$\nA^2=\\left[\\begin{array}{lll}\n0 & 1 & 1 \\\\\n1 & 0 & 1 \\\\\n1 & 1 & 0\n\\end{array}\\right] \\cdot\\left[\\begin{array}{lll}\n0 & 1 & 1 \\\\\n1 & 0 & 1 \\\\\n1 & 1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n2 & 1 & 1 \\\\\n1 & 2 & 1 \\\\\n1 & 1 & 2\n\\end{array}\\right]\\quad\\text{..... (ii)}$$</p>\n<p>$\\begin{aligned} \\therefore \\quad \\frac{A^2-3 I}{2} & \\left.=\\frac{1}{2}\\left\\{\\left|\\begin{array}{lll}2 & 1 & 1 \\\\ 1 & 2 & 1 \\\\ 1 & 1 & 2\\end{array}\\right|-\\left|\\begin{array}{lll}3 & 0 & 0 \\\\ 0 & 3 & 0 \\\\ 0 & 0 & 3\\end{array}\\right|\\right\\}\\right\\}=\\frac{1}{2}\\left|\\begin{array}{ccc}-1 & 1 & 1 \\\\ 1 & -1 & 1 \\\\ 1 & 1 & -1\\end{array}\\right| \\\\ & =A^{-1}\\end{aligned}\\quad$ [using Eq. (i)]</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpimcm",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left|\\begin{array}{rrr}1 & 2 & 0 \\\\ -2 & -1 & -2 \\\\ 0 & -1 & 1\\end{array}\\right|$, then find the value of $A^{-1}$. Using $A^{-1}$, solve the system of linear equations $x-2 y=10$, $2 x-y-z=8$ and $-2 y+z=7$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$A=\\left|\\begin{array}{rrr}\n1 & 2 & 0 \\\\\n-2 & -1 & -2 \\\\\n0 & -1 & 1\n\\end{array}\\right|\\quad\\text{.... (i)}$$</p>\n<p>$$\\therefore \\quad|A|=1(-3)-2(-2)+0=1 \\neq 0$$</p>\n<p>Now, $A_{11}=-3, A_{12}=2, A_{13}=2, _{21}=-2, A_{22}=1, A_{23}=1, A_{31}=-4, A_{32}=2$ and $A_{33}=3$</p>\n<p>$$\\therefore \\quad \\operatorname{adj}(A)=\\left|\\begin{array}{lll}\n-3 & 2 & 2 \\\\\n-2 & 1 & 1 \\\\\n-4 & 2 & 3\n\\end{array}\\right|^{\\top}=\\left|\\begin{array}{rrr}\n-3 & -2 & -4 \\\\\n2 & 1 & 2 \\\\\n2 & 1 & 3\n\\end{array}\\right|$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & A^{-1}=\\frac{\\operatorname{adj} A}{|A|} \\\\\n& =\\frac{1}{1}\\left|\\begin{array}{rrr}\n-3 & -2 & -4 \\\\\n2 & 1 & 2 \\\\\n2 & 1 & 3\n\\end{array}\\right| \\\\\n\\Rightarrow & A^{-1}=\\left|\\begin{array}{rrr}\n-3 & -2 & -4 \\\\\n2 & 1 & 2 \\\\\n2 & 1 & 3\n\\end{array}\\right|\\quad\\text{.... (ii)}\n\\end{array}$$</p>\n<p>Also, we have the system of linear equations as</p>\n<p>$$\\begin{aligned}\nx-2 y & =10, \\\\\n2 x-y-z & =8 \\\\\n\\text{and\n}\\quad -2 y+z & =7\n\\end{aligned}$$</p>\n<p>In the form of $C X=D$,</p>\n<p>$\\left[\\begin{array}{rrr}1 & 2 & 0 \\\\ 2 & -1 & -1 \\\\ 0 & -2 & 1\\end{array}\\right]\\left[\\begin{array}{l}x \\\\ y \\\\ z\\end{array}\\right]=\\left[\\begin{array}{r}10 \\\\ 8 \\\\ 7\\end{array}\\right]$</p>\n<p>We know that, $$\\left(A^T\\right)^{-1}=\\left(A^{-1}\\right)^T$$</p>\n<p>$$\nC^T=\\left|\\begin{array}{rrr}\n1 & 2 & 0 \\\\\n-2 & -1 & -2 \\\\\n0 & -1 & 1\n\\end{array}\\right|=A$$ \n[using Eq. (i)]</p>\n<p>$$\\begin{array}{ll}\n\\therefore & X=C^{-1} D \\\\\n\\Rightarrow & {\\left[\\begin{array}{c}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n-3 & 2 & 2 \\\\\n-2 & 1 & 1 \\\\\n-4 & 2 & 3\n\\end{array}\\right]\\left[\\begin{array}{c}\n10 \\\\\n8 \\\\\n7\n\\end{array}\\right]}\n\\end{array}$$</p>\n<p>$=\\left[\\begin{array}{c}-30+16+14 \\\\ -20+8+7 \\\\ -40+16+21\\end{array}\\right]=\\left[\\begin{array}{r}0 \\\\ -5 \\\\ -3\\end{array}\\right]$</p>\n<p>$\\therefore \\quad x=0, y=-5$ and $z=-3$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiljo",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Using matrix method, solve the system of equations $3 x+2 y-2 z=3$, $x+2 y+3 z=6$ and $2 x-y+z=2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{r}\n\\text{Given system of equations is} \\quad 3 x+2 y-2 z=3 \\\\\nx+2 y+3 z=6 \\\\\n\\text{and}\\quad 2 x-y+z=2\n\\end{array}$$</p>\n<p>In the form of $A X=B$,</p>\n<p>$$\\left[\\begin{array}{rrr}\n3 & 2 & -2 \\\\\n1 & 2 & 3 \\\\\n2 & -1 & 1\n\\end{array}\\right]\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{l}\n3 \\\\\n6 \\\\\n2\n\\end{array}\\right]$$</p>\n<p>For $A^{-1}$,</p>\n<p>$$\\begin{aligned}\n|A| & =|3(5)-2(1-6)+(-2)(-5)| \\\\\n& =|15+10+10|=|35| \\neq 0\n\\end{aligned}$$</p>\n<p>$\\therefore \\quad A_{11}=5, A_{12}=5, A_{13}=-5, \\quad A_{21}=0, A_{22}=7, A_{23}=7, \\quad A_{31}=10, A_{32}=-11$ and $A_{33}=4$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & \\operatorname{adj} A=\\left|\\begin{array}{rrr}\n5 & 5 & -5 \\\\\n0 & 7 & 7 \\\\\n10 & -11 & 4\n\\end{array}\\right|^T=\\left|\\begin{array}{rrr}\n5 & 0 & 10 \\\\\n5 & 7 & -11 \\\\\n-5 & 7 & 4\n\\end{array}\\right| \\\\\n\\text { Now, } & A^{-1}=\\frac{\\operatorname{adj} A}{|A|}=\\frac{1}{35}\\left|\\begin{array}{rrr}\n5 & 0 & 10 \\\\\n5 & 7 & -11 \\\\\n-5 & 7 & 4\n\\end{array}\\right|\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\text { For } X=A^{-1} B, \\\\\n& \\qquad\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\frac{1}{35}\\left[\\begin{array}{rrr}\n5 & 0 & 10 \\\\\n5 & 7 & -11 \\\\\n-5 & 7 & 4\n\\end{array}\\right]\\left[\\begin{array}{l}\n3 \\\\\n6 \\\\\n2\n\\end{array}\\right] \\\\\n& \\\\\n& =\\frac{1}{35}\\left[\\begin{array}{c}\n15+20 \\\\\n15+42-22 \\\\\n-15+42+8\n\\end{array}\\right]=\\frac{1}{35}\\left[\\begin{array}{l}\n35 \\\\\n35 \\\\\n35\n\\end{array}\\right]=\\left[\\begin{array}{l}\n1 \\\\\n1 \\\\\n1\n\\end{array}\\right] \\\\\n& \\therefore \\quad x=1, y=1 \\text { and } z=1\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpienv",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left|\\begin{array}{rrr}2 & 2 & -4 \\\\ -4 & 2 & -4 \\\\ 2 & -1 & 5\\end{array}\\right|$ and $B=\\left|\\begin{array}{rcr}1 & -1 & 0 \\\\ 2 & 3 & 4 \\\\ 0 & 1 & 2\\end{array}\\right|$, then find $B A$ and use this to solve the system of equations $y+2 z=7, x-y=3$ and $2 x+3 y+4 z=17$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad A & =\\left|\\begin{array}{rrr}\n2 & 2 & -4 \\\\\n-4 & 2 & -4 \\\\\n2 & -1 & 5\n\\end{array}\\right| \\text { and } B=\\left|\\begin{array}{ccc}\n1 & -1 & 0 \\\\\n2 & 3 & 4 \\\\\n0 & 1 & 2\n\\end{array}\\right| \\\\\n\\therefore\\quad B A & =\\left|\\begin{array}{rrr}\n1 & -1 & 0 \\\\\n2 & 3 & 4 \\\\\n0 & 1 & 2\n\\end{array}\\right|\\left|\\begin{array}{rrr}\n2 & 2 & -4 \\\\\n-4 & 2 & -4 \\\\\n2 & -1 & 5\n\\end{array}\\right|=\\left|\\begin{array}{lll}\n6 & 0 & 0 \\\\\n0 & 6 & 0 \\\\\n0 & 0 & 6\n\\end{array}\\right|=6 I \\\\\n\\therefore\\quad B^{-1} & =\\frac{A}{6}=\\frac{1}{6} A=\\frac{1}{6}\\left|\\begin{array}{rrr}\n2 & 2 & -4 \\\\\n-4 & 2 & -4 \\\\\n2 & -1 & 5\n\\end{array}\\right|\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>Also, $x-y=3,2 x+3 y+4 z=17$ and $y+2 z=7$</p>\n<p>$$\\Rightarrow \\quad\\left[\\begin{array}{rrr}\n1 & -1 & 0 \\\\\n2 & 3 & 4 \\\\\n0 & 1 & 2\n\\end{array}\\right]\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{r}\n3 \\\\\n17 \\\\\n7\n\\end{array}\\right]$$</p>\n<p>$\\left[\\begin{array}{l}x \\\\ y \\\\ z\\end{array}\\right]=\\left[\\begin{array}{rrr}1 & -1 & 0 \\\\ 2 & 3 & 4 \\\\ 0 & 1 & 2\\end{array}\\right]^{-1}\\left[\\begin{array}{r}3 \\\\ 17 \\\\ 7\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\therefore\\quad & =\\frac{1}{6}\\left[\\begin{array}{ccc}\n2 & 2 & -4 \\\\\n-4 & 2 & -4 \\\\\n2 & -1 & 5\n\\end{array}\\right]\\left[\\begin{array}{c}\n3 \\\\\n17 \\\\\n7\n\\end{array}\\right] \\quad \\text { [using Eq. (i)] }\\\\\n& =\\frac{1}{6}\\left[\\begin{array}{c}\n6+34-28 \\\\\n-12+34-28 \\\\\n6-17+35\n\\end{array}\\right]=\\frac{1}{6}\\left[\\begin{array}{c}\n12 \\\\\n-6 \\\\\n24\n\\end{array}\\right]=\\left[\\begin{array}{r}\n2 \\\\\n-1 \\\\\n4\n\\end{array}\\right] \\\\\n\\therefore\\quad & x=2, y=-1 \\text { and } z=4\n\\end{aligned}\\\\\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpinkq",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $a+b+c \\neq 0$ and $\\left|\\begin{array}{lll}a & b & c \\\\ b & c & a \\\\ c & a & b\\end{array}\\right|=0$, then prove that $a=b=c$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Let}\\quad A & =\\left|\\begin{array}{lll}\na & b & c \\\\\nb & c & a \\\\\nc & a & b\n\\end{array}\\right| \\\\\n& =\\left|\\begin{array}{ccc}\na+b+c & a+b+c & a+b+c \\\\\nb & c & a \\\\\nc & a & b\n\\end{array}\\right|\\quad\\text{\\left[\\because R_1 \\rightarrow R_1+R_2+R_3\\right]}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =(a+b+c)\\left|\\begin{array}{lll}\n1 & 1 & 1 \\\\\nb & c & a \\\\\nc & a & b\n\\end{array}\\right| \\\\\n& =(a+b+c)\\left|\\begin{array}{ccc}\n0 & 0 & 1 \\\\\nb-a & c-a & a \\\\\nc-b & a-b & b\n\\end{array}\\right| \\quad\\left[\\because C_1 \\rightarrow C_1-C_3 \\text { and } C_2 \\rightarrow C_2-C_3\\right]\n\\end{aligned}$$</p>\n<p>Expanding along $R_1$,</p>\n<p>$$\\begin{aligned}\n& =(a+b+c)[1(b-a)(a-b)-(c-a)(c-b)] \\\\\n& =(a+b+c)\\left(b a-b^2-a^2+a b-c^2+c b+a c-a b\\right) \\\\\n& =\\frac{-1}{2}(a+b+c) \\times(-2)\\left(-a^2-b^2-c^2+a b+b c+c a\\right) \\\\\n& =\\frac{-1}{2}(a+b+c)\\left[a^2+b^2+c^2-2 a b-2 b c-2 c a+a^2+b^2+c^2\\right] \\\\\n& =-\\frac{1}{2}(a+b+c)\\left[a^2+b^2-2 a b+b^2+c^2-2 b c+c^2+a^2-2 a c\\right] \\\\\n& =\\frac{-1}{2}(a+b+c)\\left[(a-b)^2+(b-c)^2+(c-a)^2\\right]\n\\end{aligned}$$</p>\n<p>Also,</p>\n<p>$$\\begin{aligned}\nA= & 0 \\\\\n= & \\frac{-1}{2}(a+b+c)\\left[(a-b)^2+(b-c)^2+(c-a)^2\\right]=0 \\\\\n& (a-b)^2+(b-c)^2+(c-a)^2=0 \\quad[\\because a+b+c \\neq 0 \\text {, given }]\n\\end{aligned}$$</p>\n<p>$$\\Rightarrow \\quad a-b=b-c=c-a=0$$</p>\n<p>$$a=b=c\\quad \\text{Hence proved.}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi10y",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that $\\left|\\begin{array}{lll}b c-a^2 & c a-b^2 & a b-c^2 \\\\ c a-b^2 & a b-c^2 & b c-a^2 \\\\ a b-c^2 & b c-a^2 & c a-b^2\\end{array}\\right|$ is divisible by $(a+b+c)$ and find the quotient.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$\\Delta=\\left|\\begin{array}{lll}\nb c-a^2 & c a-b^2 & a b-c^2 \\\\\nc a-b^2 & a b-c^2 & b c-a^2 \\\\\na b-c^2 & b c-a^2 & c a-b^2\n\\end{array}\\right|$$</p>\n<p>$\\begin{array}{r}=\\left|\\begin{array}{lll}b c-a^2-c a+b^2 & c a-b^2-a b+c^2 & a b-c^2 \\\\ c a-b^2-a b+c^2 & a b-c^2-b c+a^2 & b c-a^2 \\\\ a b-c^2-b c+a^2 & b c-a^2-c a+b^2 & c a-b^2\\end{array}\\right| \\\\ \\quad\\left[\\because C_1 \\rightarrow C_1-C_2 \\text { and } C_2 \\rightarrow C_2-C_3\\right]\\end{array}$</p>\n<p>$$\\begin{aligned}\n& =\\left|\\begin{array}{lll}\n(b-a)(a+b+c) & (c-b)(a+b+c) & a b-c^2 \\\\\n(c-b)(a+b+c) & (a-c)(a+b+c) & b c-a^2 \\\\\n(a-c)(a+b+c) & (b-a)(a+b+c) & c a-b^2\n\\end{array}\\right| \\\\\n& =(a+b+c)^2\\left|\\begin{array}{lll}\nb-a & c-b & a b-c^2 \\\\\nc-b & a-c & b c-a^2 \\\\\na-c & b-a & c a-b^2\n\\end{array}\\right|\\quad \\text { [taking }(a+b+c) \\text { common from } C_1 \\text { and } C_2 \\text { each] }\n\\end{aligned}$$</p>\n<p>$\\begin{array}{r}=(a+b+c)^2\\left|\\begin{array}{ccc}0 & 0 & a b+b c+c a-\\left(a^2+b^2+c^2\\right) \\\\ c-b & a-c & b c-a^2 \\\\ a-c & b-a & c a-b^2\\end{array}\\right| \\\\ \\quad\\left[\\because R_1 \\rightarrow R_1+R_2+R_3\\right]\\end{array}$</p>\n<p>$$\\begin{aligned}\n&\\text { Now, expanding along } R_1 \\text {, }\\\\\n&\\begin{aligned}\n& \\left.=(a+b+c)^2\\left[a b+b c+c a-\\left(a^2+b^2+c^2\\right)\\right](c-b)(b-a)-(a-c)^2\\right] \\\\\n& =(a+b+c)^2\\left(a b+b c+c a-a^2-b^2-c^2\\right) \\\\\n& \\quad \\quad\\left(c b-a c-b^2+a b-a^2-c^2+2 a c\\right) \\\\\n& =(a+b+c)^2\\left(a^2+b^2+c^2-a b-b c-c a\\right) \\\\\n& \\quad\\left(a^2+b^2+c^2-a c-a b-b c\\right) \\\\\n& =\\frac{1}{2}(a+b+c)\\left[(a+b+c)\\left(a^2+b^2+c^2-a b-b c-c a\\right)\\right] \\\\\n& \\quad\\left[(a-b)^2+(b-c)^2+(c-a)^2\\right] \\\\\n& =\\frac{1}{2}(a+b+c)\\left(a^3+b^3+c^3-3 a b c\\right)\\left[(a-b)^2+(b-c)^2+(c-a)^2\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Hence, given determinant is divisible by }(a+b+c) \\text { and quotient is }\\\\\n&\\left(a^3+b^3+c^3-3 a b c\\right)\\left[(a-b)^2+(b-c)^2+(c-a)^2\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpicbw",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x+y+z=0$, then prove that $\\left|\\begin{array}{lll}x a & y b & z c \\\\ y c & z a & x b \\\\ z b & x c & y a\\end{array}\\right|=x y z\\left|\\begin{array}{lll}a & b & c \\\\ c & a & b \\\\ b & c & a\\end{array}\\right|$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Since, } x+y+z=0 \\text {, also we have to prove }\\\\\n&\\begin{aligned}\n\\left|\\begin{array}{ccc}\nx a & y b & z c \\\\\ny c & z a & x b \\\\\nz b & x c & y a\n\\end{array}\\right| & =x y z\\left|\\begin{array}{ccc}\na & b & c \\\\\nc & a & b \\\\\nb & c & a\n\\end{array}\\right| \\\\\n\\therefore\\quad \\text { LHS } & =\\left|\\begin{array}{ccc}\nx a & y b & z c \\\\\ny c & z a & x b \\\\\nz b & x c & y a\n\\end{array}\\right|\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =x a(z a \\cdot y a-x b \\cdot x c)-y b(y c \\cdot y a-x b \\cdot z b)+z c(y c \\cdot x c-z a \\cdot z b) \\\\\n& =x a\\left(a^2 y z-x^2 b c\\right)-y b\\left(y^2 a c-b^2 x z\\right)+z c\\left(c^2 x y-z^2 a b\\right) \\\\\n& =x y z a^3-x^3 a b c-y^3 a b c+b^3 x y z+c^3 x y z-z^3 a b c \\\\\n& =x y z\\left(a^3+b^3+c^3\\right)-a b c\\left(x^3+y^3+z^3\\right) \\\\\n& =x y z\\left(a^3+b^3+c^3\\right)-a b c(3 x y z) \\\\\n& \\quad \\quad\\left[\\because x+y+z=0 \\Rightarrow x^3+y^3+z^3-3 x y z\\right] \\\\\n& =x y z\\left(a^3+b^3+c^3-3 a b c\\right)\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>Now,\n\n$$\n\\mathrm{RHS}=x y z\\left|\\begin{array}{lll}\na & b & c \\\\\nc & a & b \\\\\nb & c & a\n\\end{array}\\right|=x y z\\left|\\begin{array}{lll}\na+b+c & b & c \\\\\na+b+c & a & b \\\\\na+b+c & c & a\n\\end{array}\\right| \\quad\\left[\\because C_1 \\rightarrow C_1+C_2+C_3\\right]$$\n<p>$=x y z(a+b+c)\\left|\\begin{array}{lll}1 & b & c \\\\ 1 & a & b \\\\ 1 & c & a\\end{array}\\right| \\quad\\left[\\operatorname{taking}(a+b+c)\\right.$ common from $\\left.C_1\\right]$</p>\n<p>$\\begin{aligned} &=x y z(a+b+c)\\left|\\begin{array}{ccc}0 & b-c & c-a \\\\ 0 & a-c & b-a \\\\ 1 & c & a\\end{array}\\right| \\\\ & {\\left[\\because R_1 \\rightarrow R_1-R_3 \\text { and } R_2 \\rightarrow R_2-R_3\\right] }\\end{aligned}$</p>\n<p>$$\\begin{aligned}\n&\\text { Expanding along } \\mathrm{C}_1 \\text {, }\\\\\n&\\begin{aligned}\n& =x y z(a+b+c)[1(b-c)(b-a)-(a-c)(c-a)] \\\\\n& =x y z(a+b+c)\\left(b^2-a b-b c+a c+a^2+c^2-2 a c\\right) \\\\\n& =x y z(a+b+c)\\left(a^2+b^2+c^2-a b-b c-c a\\right) \\\\\n& =x y z\\left(a^3+b^3+c^3-3 a b c\\right)\\quad\\text{.... (ii)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { From Eqs. (i) and (ii), }\\\\\n&\\mathrm{LHS}=\\mathrm{RHS}\\\\\n&\\Rightarrow \\quad\\left|\\begin{array}{lll}\nx a & y b & z c \\\\\ny c & z a & x b \\\\\nz b & x c & y a\n\\end{array}\\right|=x y z\\left|\\begin{array}{ccc}\na & b & c \\\\\nc & a & b \\\\\nb & c & a\n\\end{array}\\right|\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpinnd",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left|\\begin{array}{cc}2 x & 5 \\\\ 8 & x\\end{array}\\right|=\\left|\\begin{array}{cc}6 & -2 \\\\ 7 & 3\\end{array}\\right|$, then the value of $x$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "3"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\pm$3"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\pm$6"
+            },
+            {
+              "identifier": "D",
+              "content": "6"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{lrl}\n\\because & \\left|\\begin{array}{cc}\n2 x & 5 \\\\\n8 & x\n\\end{array}\\right| & =\\left|\\begin{array}{cc}\n6 & -2 \\\\\n7 & 3\n\\end{array}\\right| \\\\\n\\Rightarrow & 2 x^2-40 & =18+14 \\\\\n\\Rightarrow & 2 x^2 & =32+40 \\\\\n\\Rightarrow & x^2 & =\\frac{72}{2}=36 \\\\\n\\therefore & x & = \\pm 6\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 50368,
+        "correct": 57,
+        "wrong": 43,
+        "options": {
+          "0": 25,
+          "1": 16,
+          "2": 57,
+          "3": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpicey",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\left|\\begin{array}{lll}a-b & b+c & a \\\\ b-a & c+a & b \\\\ c-a & a+b & c\\end{array}\\right|$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$a^3+b^3+c^3$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$3 b c$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$a^3+b^3+c^3-3 a b c$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\n\\left|\\begin{array}{lll}\na-b & b+c & a \\\\\nb-a & c+a & b \\\\\nc-a & a+b & c\n\\end{array}\\right|=\\left|\\begin{array}{lll}\na+c & b+c+a & a \\\\\nb+c & c+a+b & b \\\\\nc+b & a+b+c & c\n\\end{array}\\right| \\quad\\left[\\because C_1 \\rightarrow C_1+C_2 \\text { and } C_2 \\rightarrow C_2+C_3\\right]$$</p>\n<p>$=(a+b+c)\\left|\\begin{array}{lll}a+c & 1 & a \\\\ b+c & 1 & b \\\\ c+b & 1 & c\\end{array}\\right| \\quad\\left[\\right.$ taking $(a+b+c)$ common from $\\left.C_2\\right]$</p>\n<p>$=(a+b+c)\\left|\\begin{array}{ccc}a-b & 0 & a-c \\\\ 0 & 0 & b-c \\\\ c+b & 1 & c\\end{array}\\right| \\quad\\left[\\because R_2 \\rightarrow R_2-R_3\\right.$ and $\\left.R_1 \\rightarrow R_1-R_3\\right]$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& =(a+b+c)[-(b-c) \\cdot(a-b)] \\\\\n& =(a+b+c)(c-b)(a-b)\n\\end{aligned}\\\\\n&\\text { [expanding along } R_2 \\text { ] }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 96987,
+        "correct": 30,
+        "wrong": 70,
+        "options": {
+          "0": 9,
+          "1": 11,
+          "2": 49,
+          "3": 30
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphva5",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the area of a triangle with vertices $(-3,0),(3,0)$ and $(0, k)$ is 9 sq units. Then, the value of $k$ will be</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "9"
+            },
+            {
+              "identifier": "B",
+              "content": "3"
+            },
+            {
+              "identifier": "C",
+              "content": "$-$9"
+            },
+            {
+              "identifier": "D",
+              "content": "6"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We know that, area of a triangle with vertices }\\left(x_1, y_1\\right),\\left(x_2, y_2\\right) \\text { and }\\left(x_3, y_3\\right) \\text { is given by }\\\\\n&\\begin{array}{ll} \n& \\Delta=\\frac{1}{2}\\left|\\begin{array}{lll}\nx_1 & y_1 & 1 \\\\\nx_2 & y_2 & 1 \\\\\nx_3 & y_3 & 1\n\\end{array}\\right| \\\\\n\\therefore & \\Delta=\\frac{1}{2}\\left|\\begin{array}{ccc}\n-3 & 0 & 1 \\\\\n3 & 0 & 1 \\\\\n0 & k & 1\n\\end{array}\\right|\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Expanding along } R_1 \\text {, }\\\\\n&\\begin{aligned}\n& 9=\\frac{1}{2}[-3(-k)-0+1(3 k)] \\\\\n& \\Rightarrow \\quad 18=3 k+3 k=6 k \\\\\n& \\therefore \\quad k=\\frac{18}{6}=3\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 64246,
+        "correct": 80,
+        "wrong": 20,
+        "options": {
+          "0": 4,
+          "1": 80,
+          "2": 9,
+          "3": 7
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphf37",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The determinant $\\left|\\begin{array}{lll}b^2-a b & b-c & b c-a c \\\\ a b-a^2 & a-b & b^2-a b \\\\ b c-a c & c-a & a b-a^2\\end{array}\\right|$ equals to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$a b c(b-c)(c-a)(a-b)$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$(b-c)(c-a)(a-b)$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$(a+b+c)(b-c)(c-a)(a-b)$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\n\\left|\\begin{array}{lll}\nb^2-a b & b-c & b c-a c \\\\\na b-a^2 & a-b & b^2-a b \\\\\nb c-a c & c-a & a b-a^2\n\\end{array}\\right|=\\left|\\begin{array}{lll}\nb(b-a) & b-c & c(b-a) \\\\\na(b-a) & a-b & b(b-a) \\\\\nc(b-a) & c-a & a(b-a)\n\\end{array}\\right|$$</p>\n<p>$$\\begin{aligned}\n&=(b-a)^2\\left|\\begin{array}{lll}\nb & b-c & c \\\\\na & a-b & b \\\\\nc & c-a & a\n\\end{array}\\right|\\\\\n&\\text { [on taking }(b-a) \\text { common from } C_1 \\text { and } C_3 \\text { each] }\\\\\n&\\begin{aligned}\n& =(b-a)^2\\left|\\begin{array}{lll}\nb-c & b-c & c \\\\\na-b & a-b & b \\\\\nc-a & c-a & a\n\\end{array}\\right| \\quad\\left[\\because C_1 \\rightarrow C_1-C_3\\right] \\\\\n& =0\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>[since, two columns $C_1$ and $C_2$ are identical, so the value of determinant is zero]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 72885,
+        "correct": 42,
+        "wrong": 58,
+        "options": {
+          "0": 21,
+          "1": 10,
+          "2": 27,
+          "3": 42
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpi02k",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of distinct real roots of $\\left|\\begin{array}{lll}\\cos x & \\sin x & \\cos x \\\\ \\cos x & \\cos x & \\sin x\\end{array}\\right|=0$ in the interval $-\\frac{\\pi}{4} \\leq x \\leq \\frac{\\pi}{4}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "2"
+            },
+            {
+              "identifier": "C",
+              "content": "1"
+            },
+            {
+              "identifier": "D",
+              "content": "3"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $\\left|\\begin{array}{ccc}\\sin x & \\cos x & \\cos x \\\\ \\cos x & \\sin x & \\cos x \\\\ \\cos x & \\cos x & \\sin x\\end{array}\\right|=0$</p>\n<p>Applying $C_1 \\rightarrow C_1+C_2+C_3$,\n\n$$\n\\left|\\begin{array}{lll}\n2 \\cos x+\\sin x & \\cos x & \\cos x \\\\\n2 \\cos x+\\sin x & \\sin x & \\cos x \\\\\n2 \\cos x+\\sin x & \\cos x & \\sin x\n\\end{array}\\right|=0$$</p>\n<p>$$\\begin{aligned}\n&\\text { On taking }(2 \\cos x+\\sin x) \\text { common from } C_1 \\text {, we get }\\\\\n&\\begin{aligned}\n& \\Rightarrow \\quad(2 \\cos x+\\sin x)\\left|\\begin{array}{ccc}\n1 & \\cos x & \\cos x \\\\\n1 & \\sin x & \\cos x \\\\\n1 & \\cos x & \\sin x\n\\end{array}\\right|=0 \\\\\n& \\Rightarrow \\quad(2 \\cos x+\\sin x)\\left|\\begin{array}{ccc}\n1 & \\cos x & \\cos x \\\\\n0 & \\sin x-\\cos x & 0 \\\\\n0 & 0 & (\\sin x-\\cos x)\n\\end{array}\\right|=0 \\\\\n& {\\left[\\because R_2 \\rightarrow R_2-R_1 \\text { and } R_3 \\rightarrow R_3-R_1\\right]}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n&\\text { Expanding along } C_1 \\text {, }\\\\\n&\\begin{array}{lrlrl} \n& (2 \\cos x+\\sin x)\\left[1 \\cdot(\\sin x-\\cos x)^2\\right] =0 \\\\\n\\Rightarrow & (2 \\cos x+\\sin x)(\\sin x-\\cos x)^2 =0 \\\\\n&\\text { Either } \\quad 2 \\cos x =-\\sin x \\\\\n\\Rightarrow & \\cos x =-\\frac{1}{2} \\sin x \\\\\n\\Rightarrow &\\tan x =-2\\quad\\text{.... (i)}\n\\end{array}\n\\end{aligned}$$</p>\n<p>But here for $-\\frac{\\pi}{4} \\leq x \\leq \\frac{\\pi}{4}$, we get $-1 \\leq \\tan x \\leq 1$ so, no solution possible</p>\n<p>and for</p>\n<p>$$\\begin{aligned}\n(\\sin x-\\cos x)^2 & =0, \\sin x=\\cos x \\\\\n\\Rightarrow\\quad \\tan x & =1=\\tan \\frac{\\pi}{4} \\\\\n\\therefore\\quad x & =\\frac{\\pi}{4}\n\\end{aligned}$$</p>\n<p>So, only one distinct real root exist.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 38453,
+        "correct": 28,
+        "wrong": 72,
+        "options": {
+          "0": 45,
+          "1": 21,
+          "2": 28,
+          "3": 6
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpih7a",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A, B$ and $C$ are angles of a triangle, then the determinant $\\left|\\begin{array}{ccc}-1 & \\cos C & \\cos B \\\\ \\cos C & -1 & \\cos A \\\\ \\cos B & \\cos A & -1\\end{array}\\right|$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "$-$1"
+            },
+            {
+              "identifier": "C",
+              "content": "1"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $\\left|\\begin{array}{ccc}-1 & \\cos C & \\cos B \\\\ \\cos C & -1 & \\cos A \\\\ \\cos B & \\cos A & -1\\end{array}\\right|$</p>\n<p>Applying $C_1 \\rightarrow a C_1+b C_2+c C_3$,</p>\n<p>$\\left|\\begin{array}{ccc}-a+b \\cos C+c \\cos B & \\cos C & \\cos B \\\\ a \\cos C-b+c \\cos A & -1 & \\cos A \\\\ a \\cos B+b \\cos A-c & \\cos A & -1\\end{array}\\right|$</p>\n<p>Also, by projection rule in a triangle, we know that</p>\n<p>$$a=b \\cos C+c \\cos B, b=c \\cos A+a \\cos C \\text { and } c=a \\cos B+b \\cos A$$</p>\n<p>Using above equation in column first, we get</p>\n<p>$$\\left|\\begin{array}{ccc}\n-a+a & \\cos C & \\cos B \\\\\nb-b & -1 & \\cos A \\\\\nc-c & \\cos A & -1\n\\end{array}\\right|=\\left|\\begin{array}{ccc}\n0 & \\cos C & \\cos B \\\\\n0 & -1 & \\cos A \\\\\n0 & \\cos A & -1\n\\end{array}\\right|=0$$</p>\n<p>[since, determinant having all elements of any column or row gives value of determinant as zero]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 60408,
+        "correct": 39,
+        "wrong": 61,
+        "options": {
+          "0": 39,
+          "1": 16,
+          "2": 20,
+          "3": 24
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphl4o",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f(t)=\\left[\\begin{array}{ccc}\\cos t & t & 1 \\\\ 2 \\sin t & t & 2 t \\\\ \\sin t & t & t\\end{array}\\right]$, then $\\lim _\\limits{t \\rightarrow 0} \\frac{f(t)}{t^2}$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "$-$1"
+            },
+            {
+              "identifier": "C",
+              "content": "2"
+            },
+            {
+              "identifier": "D",
+              "content": "3"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $f(t)=\\left|\\begin{array}{ccc}\\cos t & t & 1 \\\\ 2 \\sin t & t & 2 t \\\\ \\sin t & t & t\\end{array}\\right|$</p>\n<p>Expanding along C$_1$,</p>\n<p>$$\\begin{aligned}\n& =\\cos t\\left(t^2-2 t^2\\right)-2 \\sin t\\left(t^2-t\\right)+\\sin t\\left(2 t^2-t\\right) \\\\\n& =-t^2 \\cos t-\\left(t^2-t\\right) 2 \\sin t+\\left(2 t^2-t\\right) \\sin t \\\\\n& =-t^2 \\cos t-t^2 \\cdot 2 \\sin t+t \\cdot 2 \\sin t+2 t^2 \\sin t \\\\\n& =-t^2 \\cos t+2 t \\sin t\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\lim _{t \\rightarrow 0} \\frac{f(t)}{t^2} & =\\lim _{t \\rightarrow 0} \\frac{\\left(-t^2 \\cos t\\right)}{t^2}+\\lim _{t \\rightarrow 0} \\frac{2 t \\sin t}{t^2} \\\\\n& =-\\lim _{t \\rightarrow 0} \\cos t+2 \\cdot \\lim _{t \\rightarrow 0} \\frac{\\sin t}{t} \\\\\n& =-1+1 \\quad \\left[\\because \\lim _{t \\rightarrow 0} \\frac{\\sin t}{t}=1 \\text { and } \\cos 0=1\\right]\\\\\n& =0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 64721,
+        "correct": 53,
+        "wrong": 47,
+        "options": {
+          "0": 53,
+          "1": 33,
+          "2": 14
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpici0",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The maximum value of $\\Delta=\\left|\\begin{array}{ccc}1 & 1 & 1 \\\\ 1 & 1+\\sin \\theta & 1 \\\\ 1+\\cos \\theta & 1 & 1\\end{array}\\right|$ is (where, $\\theta$ is real number)</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{1}{2}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{\\sqrt{3}}{2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\sqrt{2}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{2 \\sqrt{3}}{4}$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Since,</p>\n<p>$$\\begin{aligned}\n\\Delta & =\\left|\\begin{array}{ccc}\n1 & 1 & 1 \\\\\n1 & 1+\\sin \\theta & 1 \\\\\n1+\\cos \\theta & 1 & 1\n\\end{array}\\right| \\\\\n& =\\left|\\begin{array}{ccc}\n0 & 0 & 1 \\\\\n0 & \\sin \\theta & 1 \\\\\n\\cos \\theta & 0 & 1\n\\end{array}\\right| \\quad\\left[\\because C_1 \\rightarrow C_1-C_3 \\text { and } C_2 \\rightarrow C_2-C_3\\right] \\\\\n& =1(\\sin \\theta \\cdot \\cos \\theta) \\\\\n& =\\frac{1}{2} \\cdot 2 \\sin \\theta \\cos \\theta=\\frac{1}{2} \\sin 2 \\theta\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Since, the maximum value of } \\sin 2 \\theta \\text { is } 1 \\text {. So, for maximum value of } \\theta \\text { should be } 45^{\\circ} \\text {. }\\\\\n&\\therefore \\quad \\begin{aligned}\n\\Delta & =\\frac{1}{2} \\sin 2 \\cdot 45^{\\circ} \\\\\n& =\\frac{1}{2} \\sin 90^{\\circ}=\\frac{1}{2} \\cdot 1=\\frac{1}{2}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 71239,
+        "correct": 48,
+        "wrong": 52,
+        "options": {
+          "0": 48,
+          "1": 28,
+          "2": 13,
+          "3": 11
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpimfi",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f(x)=\\left|\\begin{array}{ccc}0 & x-a & x-b \\\\ x+a & 0 & x-c \\\\ x+b & x+c & 0\\end{array}\\right|$, then</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $f(a)=0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $f(b)=0$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $f(0)=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $f(1)=0$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>We have,\n\n$$\nf(x)=\\left|\\begin{array}{ccc}\n0 & x-a & x-b \\\\\nx+a & 0 & x-c \\\\\nx+b & x+c & 0\n\\end{array}\\right|$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad f(a) & =\\left|\\begin{array}{ccc}\n0 & 0 & a-b \\\\\n2 a & 0 & a-c \\\\\na+b & a+c & 0\n\\end{array}\\right| \\\\\n& =[(a-b)\\{2 a \\cdot(a+c)\\}] \\neq 0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad f(b) & =\\left|\\begin{array}{ccc}\n0 & b-a & 0 \\\\\nb+a & 0 & b-c \\\\\n2 b & b+c & 0\n\\end{array}\\right| \\\\\n& =-(b-a)[2 b(b-c)] \\\\\n& =-2 b(b-a)(b-c) \\neq 0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad f(0) & =\\left|\\begin{array}{ccc}\n0 & -a & -b \\\\\na & 0 & -c \\\\\nb & c & 0\n\\end{array}\\right| \\\\\n& =a(b c)-b(a c) \\\\\n& =a b c-a b c=0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 75049,
+        "correct": 54,
+        "wrong": 46,
+        "options": {
+          "0": 17,
+          "1": 5,
+          "2": 54,
+          "3": 24
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpih9s",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A=\\left|\\begin{array}{rrr}2 & \\lambda & -3 \\\\ 0 & 2 & 5 \\\\ 1 & 1 & 3\\end{array}\\right|$, then $A^{-1}$ exists, if</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\lambda=2$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\lambda \\neq 2$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\lambda \\neq-2$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>We have,</p>\n<p>$A=\\left|\\begin{array}{rrr}2 & \\lambda & -3 \\\\ 0 & 2 & 5 \\\\ 1 & 1 & 3\\end{array}\\right|$</p>\n<p>Expanding along $R_1$,</p>\n<p>$$|A|=2(6-5)-\\lambda(-5)-3(-2)=2+5 \\lambda+6$$</p>\n<p>We know that, $A^{-1}$ exists, if $A$ is non-singular matrix i.e., $|A| \\neq 0$.</p>\n<p>$$\\begin{array}{lr}\n\\therefore & 2+5 \\lambda+6 \\neq 0 \\\\\n\\Rightarrow & 5 \\lambda \\neq-8 \\\\\n\\therefore & \\lambda \\neq \\frac{-8}{5}\n\\end{array}$$</p>\n<p>So, $A^{-1}$ exists if and only if $\\lambda \\neq \\frac{-8}{5}$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 63878,
+        "correct": 47,
+        "wrong": 53,
+        "options": {
+          "0": 16,
+          "1": 20,
+          "2": 16,
+          "3": 47
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpimhx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are invertible matrices, then which of the following is not correct?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\operatorname{adj} A=|A| \\cdot A^{-1}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\operatorname{det}(A)^{-1}=[\\operatorname{det}(A)]^{-1}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $(A B)^{-1}=B^{-1} A^{-1}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $(A+B)^{-1}=B^{-1}+A^{-1}$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Since, } A \\text { and } B \\text { are invertible matrices. So, we can say that }\\\\\n&(A B)^{-1}=B^{-1} A^{-1}\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{array}{lr}\n\\text { Also, } & A^{-1}=\\frac{1}{|A|}(\\operatorname{adj} A) \\\\\n\\Rightarrow & \\operatorname{adj} A=|A| \\cdot A^{-1} \\quad\\text{.... (ii)}\\\\\n\\text { Also, } & \\operatorname{det}(A)^{-1}=[\\operatorname{det}(A)]^{-1} \\\\\n\\Rightarrow & \\operatorname{det}(A)^{-1}=\\frac{1}{[\\operatorname{det}(A)]} \\\\\n\\Rightarrow & \\operatorname{det}(A) \\cdot \\operatorname{det}(A)^{-1}=1\\quad\\text{.... (iii)}\n\\end{array}$$</p>\n<p>which is true.</p>\n<p>Again, $$(A+B)^{-1}=\\frac{1}{|(A+B)|} \\operatorname{adj}(A+B)$$</p>\n<p>$$\\begin{aligned}\n&\\Rightarrow \\quad(A+B)^{-1} \\neq B^{-1}+A^{-1}\\quad\\text{.... (iv)}\\\\\n&\\text { So, only option (d) is incorrect. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 36042,
+        "correct": 52,
+        "wrong": 48,
+        "options": {
+          "0": 10,
+          "1": 21,
+          "2": 17,
+          "3": 52
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpihcd",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x, y$ and $z$ are all different from zero and $\\left|\\begin{array}{ccc}1+x & 1 & 1 \\\\ 1 & 1+y & 1 \\\\ 1 & 1 & 1+z\\end{array}\\right|=0$, then the value of $x^{-1}+y^{-1}+z^{-1}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$x y z$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$x^{-1} y^{-1} z^{-1}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $-x-y-z$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$-1$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>We have,</p>\n<p>$$\\left|\\begin{array}{ccc}\n1+x & 1 & 1 \\\\\n1 & 1+y & 1 \\\\\n1 & 1 & 1+z\n\\end{array}\\right|=0$$</p>\n<p>Applying $C_1 \\rightarrow C_1-C_3$ and $C_2 \\rightarrow C_2-C_3$,</p>\n<p>$$\\Rightarrow \\quad\\left|\\begin{array}{rcc}\nx & 0 & 1 \\\\\n0 & y & 1 \\\\\n-z & -z & 1+z\n\\end{array}\\right|=0$$</p>\n<p>Expanding along $R_1$,</p>\n<p>$$\\begin{array}{l} \n& x[y(1+z)+z]-0+1(y z)=0 \\\\\n\\Rightarrow & x(y+y z+z)+y z=0 \\\\\n\\Rightarrow & x y+x y z+x z+y z=0 \\\\\n\\Rightarrow & \\frac{x y}{x y z}+\\frac{x y z}{x y z}+\\frac{x z}{x y z}+\\frac{y z}{x y z}=0 \\quad \\text { [on dividing }(x y z) \\text { from both sides] } \\\\\n\\Rightarrow & \\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}+1=0 \\\\\n\\Rightarrow & \\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}=-1 \\\\\n\\therefore & x^{-1}+y^{-1}+z^{-1}=-1\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 76857,
+        "correct": 57,
+        "wrong": 43,
+        "options": {
+          "0": 20,
+          "1": 17,
+          "2": 6,
+          "3": 57
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpi13w",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\left|\\begin{array}{ccc}x & x+y & x+2 y \\\\ x+2 y & x & x+y \\\\ x+y & x+2 y & x\\end{array}\\right|$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$9 x^2(x+y)$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$9 y^2(x+y)$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$3 y^2(x+y)$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$7 x^2(x+y)$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { We have, } & \\left|\\begin{array}{ccc}\nx & x+y & x+2 y \\\\\nx+2 y & x & x+y \\\\\nx+y & x+2 y & x\n\\end{array}\\right| \\\\\n& =\\left|\\begin{array}{ccc}\n3(x+y) & x+y & y \\\\\n3(x+y) & x & y \\\\\n3(x+y) & x+2 y & -2 y\n\\end{array}\\right| \\quad\\left[\\because C_1 \\rightarrow C_1+C_2+C_3 \\text { and } C_3 \\rightarrow C_3-C_2\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =3(x+y)\\left|\\begin{array}{ccc}\n1 & (x+y) & y \\\\\n1 & x & y \\\\\n1 & (x+2 y) & -2 y\n\\end{array}\\right|  \\quad \\text { [taking } 3(x+y) \\text { common from first column] }\\\\\n& =3(x+y)\\left|\\begin{array}{ccc}\n0 & y & 0 \\\\\n1 & x & y \\\\\n1 & (x+2 y) & -2 y\n\\end{array}\\right|\\quad \\left[\\because R_1 \\rightarrow R_1-R_2\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Expanding along } R_1 \\text {, }\\\\\n&\\begin{aligned}\n& =3(x+y)[-y(-2 y-y)] \\\\\n& =3 y^2 \\cdot 3(x+y)=9 y^2(x+y)\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 103757,
+        "correct": 51,
+        "wrong": 49,
+        "options": {
+          "0": 24,
+          "1": 51,
+          "2": 24
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpik8q",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is a matrix of order $3 \\times 3$, then $|3 A|$ is equal to ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $A$ is a matrix of order $3 \\times 3$, then $|3 A|=3 \\times 3 \\times 3|A|=27|A|$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpi04g",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is invertible matrix of order $3 \\times 3$, then $\\left|A^{-1}\\right|$ is equal to ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $A$ is invertible matrix of order $3 \\times 3$, then $\\left|A^{-1}\\right|=\\frac{1}{|A|}$. $\\left[\\right.$ since, $\\left.|A| \\cdot\\left|A^{-1}\\right|=1\\right]$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpihee",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x, y, z \\in R$, then the value of $\\left|\\begin{array}{lll}\\left(2^x+2^{-x}\\right)^2 & \\left(2^x-2^{-x}\\right)^2 & 1 \\\\ \\left(3^x+3^{-x}\\right)^2 & \\left(3^x-3^{-x}\\right)^2 & 1 \\\\ \\left(4^x+4^{-x}\\right)^2 & \\left(4^x-4^{-x}\\right)^2 & 1\\end{array}\\right|$ is</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,</p>\n<p>$$\\begin{aligned}\n& \\left|\\begin{array}{lll}\n\\left(2^x+2^{-x}\\right)^2 & \\left(2^x-2^{-x}\\right)^2 & 1 \\\\\n\\left(3^x+3^{-x}\\right)^2 & \\left(3^x-3^{-x}\\right)^2 & 1 \\\\\n\\left(4^x+4^{-x}\\right)^2 & \\left(4^x-4^{-x}\\right)^2 & 1\n\\end{array}\\right| \\\\\n& =\\left|\\begin{array}{lll}\n\\left(2 \\cdot 2^x\\right)\\left(2 \\cdot 2^{-x}\\right) & \\left(2^x-2^{-x}\\right)^2 & 1 \\\\\n\\left(2 \\cdot 3^x\\right)\\left(2 \\cdot 3^{-x}\\right) & \\left(3^x-3^{-x}\\right)^2 & 1 \\\\\n\\left(2 \\cdot 4^x\\right)\\left(2 \\cdot 4^{-x}\\right) & \\left(4^x-4^{-x}\\right)^2 & 1\n\\end{array}\\right|\\quad \\begin{array}{r}\n{\\left[\\because(a+b)^2-(a-b)^2=4 a b\\right]} \\\\\n{\\left[\\because C_1 \\rightarrow C_1-C_2\\right]}\n\\end{array}\n\\end{aligned}$$</p>\n<p>$=\\left|\\begin{array}{lll}4 & \\left(2^x-2^{-x}\\right)^2 & 1 \\\\ 4 & \\left(3^x-3^{-x}\\right)^2 & 1 \\\\ 4 & \\left(4^x-4^{-x}\\right)^2 & 1\\end{array}\\right|=0 \\quad$ [since, $C_1$ and $C_3$ are proportional to each other]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpib9m",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\cos 2 \\theta=0$, then $\\left|\\begin{array}{ccc}0 & \\cos \\theta & \\sin \\theta \\\\ \\cos \\theta & \\sin \\theta & 0 \\\\ \\sin \\theta & 0 & \\cos \\theta\\end{array}\\right|^2$ is equal to ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Since, } \\cos 2 \\theta=0\\\\\n&\\begin{array}{lc}\n\\Rightarrow & \\cos 2 \\theta=\\cos \\frac{\\pi}{2} \\Rightarrow 2 \\theta=\\frac{\\pi}{2} \\\\\n\\Rightarrow & \\theta=\\frac{\\pi}{4} \\\\\n\\therefore & \\sin \\frac{\\pi}{4}=\\frac{1}{\\sqrt{2}} \\text { and } \\cos \\frac{\\pi}{4}=\\frac{1}{\\sqrt{2}} \\\\\n\\therefore & \\left|\\begin{array}{ccc}\n0 & \\frac{1}{\\sqrt{2}} & \\frac{1}{\\sqrt{2}} \\\\\n\\frac{1}{\\sqrt{2}} & \\frac{1}{\\sqrt{2}} & 0 \\\\\n\\frac{1}{\\sqrt{2}} & 0 & \\frac{1}{\\sqrt{2}}\n\\end{array}\\right|^2\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Expanding along } R_1 \\text {, }\\\\\n&=\\left[-\\frac{1}{\\sqrt{2}}\\left(\\frac{1}{2}\\right)+\\frac{1}{\\sqrt{2}}\\left(-\\frac{1}{2}\\right)\\right]^2=\\left[\\frac{-2}{2 \\sqrt{2}}\\right]^2=\\left(\\frac{-1}{\\sqrt{2}}\\right)^2=\\frac{1}{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hphf5b",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is a matrix of order $3 \\times 3$, then $\\left(A^2\\right)^{-1}$ is equal to ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $A$ is a matrix of order $3 \\times 3$, then $\\left(A^2\\right)^{-1}=\\left(A^{-1}\\right)^2$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpicjr",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is a matrix of order $3 \\times 3$, then $\\left(A^2\\right)^{-1}$ is equal to .............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $A$ is a matrix of order $3 \\times 3$, then $\\left(A^2\\right)^{-1}=\\left(A^{-1}\\right)^2$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpika5",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ is a matrix of order $3 \\times 3$, then the number of minors in determinant of $A$ are .......... .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p> If $A$ is a matrix of order $3 \\times 3$, then the number of minors in determinant of $A$ are 9 . [since, in a $3 \\times 3$ matrix, there are 9 elements]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpieq0",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The sum of products of elements of any row with the cofactors of corresponding elements is equal to ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The sum of products of elements of any row with the cofactors of corresponding elements is equal to value of the determinant.</p>\n<p>$$\\text { Let } \\Delta=\\left|\\begin{array}{lll}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23} \\\\\na_{31} & a_{32} & a_{33}\n\\end{array}\\right|$$</p>\n<p>Expanding along $R_1$,</p>\n<p>$$\\begin{aligned}\n& \\Delta=a_{11} A_{11}+a_{12} A_{12}+a_{13} A_{13} \\\\\n&=\\text { Sum of products of elements of } R_1 \\text { with their } \\\\\n& \\text { corresponding cofactors }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hphfq8",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x=-9$ is a root of $\\left|\\begin{array}{lll}x & 3 & 7 \\\\ 2 & x & 2 \\\\ 7 & 6 & x\\end{array}\\right|=0$, then other two roots are ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Since, $\\left|\\begin{array}{lll}x & 3 & 7 \\\\ 2 & x & 2 \\\\ 7 & 6 & x\\end{array}\\right|=0$</p>\n<p>Expanding along $R_1$,</p>\n<p>$$\\begin{array}{rrrl} \n& x\\left(x^2-12\\right)-3(2 x-14)+7(12-7 x) & =0 \\\\\n\\Rightarrow & x^3-12 x-6 x+42+84-49 x=0 \\\\\n\\Rightarrow & x^3-67 x+126=0\\quad\\text{.... (i)}\n\\end{array}$$</p>\n<p>Here, $$126 \\times 1=9 \\times 2 \\times 7$$</p>\n<p>For $x=2,2^3-67 \\times 2+126=134-134=0$</p>\n<p>Hence, $x=2$ is a root.</p>\n<p>For $x=7,7^3-67 \\times 7+126=469-469=0$</p>\n<p>Hence, $x=7$ is also a root.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hphvc5",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{ccc}0 & x y z & x-z \\\\ y-x & 0 & y-z \\\\ z-x & z-y & 0\\end{array}\\right|$ is equal to ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\left|\\begin{array}{ccc}0 & x y z & x-z \\\\ y-x & 0 & y-z \\\\ z-x & z-y & 0\\end{array}\\right|=\\left|\\begin{array}{ccc}z-x & x y z & x-z \\\\ z-x & 0 & y-z \\\\ z-x & z-y & 0\\end{array}\\right|\\quad$ $$\n\\left[\\because C_1 \\rightarrow C_1-C_3\\right]$$</p>\n<p>$$\n=(z-x)\\left|\\begin{array}{ccc}\n1 & x y z & x-z \\\\\n1 & 0 & y-z \\\\\n1 & z-y & 0\n\\end{array}\\right|\\quad$$ [taking $(z-x)$ common from column 1]</p>\n<p>$$\\begin{aligned}\n&\\text { Expanding along } R_1 \\text {, }\\\\\n&\\begin{aligned}\n& =(z-x)[1 \\cdot\\{-(y-z)(z-y)\\}-x y z(z-y)+(x-z)(z-y)] \\\\\n& =(z-x)(z-y)(-y+z-x y z+x-z) \\\\\n& =(z-x)(z-y)(x-y-x y z) \\\\\n& =(z-x)(y-z)(y-x+x y z)\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpinph",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$$\\text { If } \\begin{aligned}\nf(x) & =\\left|\\begin{array}{ccc}\n(1+x)^{17} & (1+x)^{19} & (1+x)^{23} \\\\\n(1+x)^{23} & (1+x)^{29} & (1+x)^{34} \\\\\n(1+x)^{41} & (1+x)^{43} & (1+x)^{47}\n\\end{array}\\right| \\\\\n& =A+B x+C x^2+\\ldots, \\text { then } A \\text { is equal to ............. .}\n\\end{aligned}$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Since,</p>\n<p>$$\\begin{aligned}\n&f(x)=(1+x)^{17}(1+x)^{23}(1+x)^{41}\\left|\\begin{array}{ccc}\n1 & (1+x)^2 & (1+x)^6 \\\\\n1 & (1+x)^6 & (1+x)^{11} \\\\\n1 & (1+x)^2 & (1+x)^6\n\\end{array}\\right|=0\\\\\n&\\text { [since, } R_1 \\text { and } R_3 \\text { are identical] }\\\\\n\\therefore\\quad &A=0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpillr",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left(A^3\\right)^{-1}=\\left(A^{-1}\\right)^3$, where $A$ is a square matrix and $|A| \\neq 0$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, $\\left(A^n\\right)^{-1}=\\left(A^{-1}\\right)^n$, where $n \\in N$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 14370,
+        "correct": 78,
+        "wrong": 22,
+        "options": {
+          "0": 78,
+          "1": 22
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpi069",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$(a A)^{-1}=\\frac{1}{a} A^{-1}$, where $a$ is any real number and $A$ is a square matrix.\n</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, we know that, if $A$ is a non-singular square matrix, then for any scalar a (non-zero), $a A$ is invertible such that</p>\n<p>$$\\begin{aligned}\n(aA)\\left(\\frac{1}{a} A^{-1}\\right) & =\\left(a \\cdot \\frac{1}{a}\\right)\\left(A \\cdot A^{-1}\\right) \\\\\n& =I\n\\end{aligned}$$</p>\n<p>i.e., $(a A)$ is inverse of $\\left(\\frac{1}{a} A^{-1}\\right)$ or $(a A)^{-1}=\\frac{1}{a} A^{-1}$, where $a$ is any non-zero scalar.</p>\n<p>In the above statement $a$ is any real number. So, we can conclude that above statement is false.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 14720,
+        "correct": 48,
+        "wrong": 52,
+        "options": {
+          "0": 52,
+          "1": 48
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpihge",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|A^{-1}\\right| \\neq|A|^{-1}$, where $A$ is a non-singular matrix.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\left|A^{-1}\\right|=|A|^{-1}$, where $A$ is a non-singular matrix.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 12596,
+        "correct": 44,
+        "wrong": 56,
+        "options": {
+          "0": 56,
+          "1": 44
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpinr9",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $A$ and $B$ are matrices of order 3 and $|A|=5,|B|=3$, then $|3 A B|=27 \\times 5 \\times 3=405$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We know that, }\\quad |A B| & =|A| \\cdot|B| \\\\\n\\therefore\n\\quad |3 A B| & =27|A B| \\\\\n& =27|A| \\cdot|B| \\\\\n& =27 \\times 5 \\times 3=405\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 23300,
+        "correct": 78,
+        "wrong": 22,
+        "options": {
+          "0": 78,
+          "1": 22
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpintg",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the value of a third order determinant is 12 , then the value of the determinant formed by replacing each element by its cofactor will be 144.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $A$ is the determinant.</p>\n<p>$$\\therefore \\quad|A|=12$$</p>\n<p>Also, we know that, if $A$ is a square matrix of order $n$, then $|\\operatorname{adj} A|=|A|^{n-1}$</p>\n<p>For $n=3,|\\operatorname{adj} A|=|A|^{3-1}=|A|^2$</p>\n<p>$$=(12)^2=144$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 23651,
+        "correct": 70,
+        "wrong": 30,
+        "options": {
+          "0": 70,
+          "1": 30
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpi169",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|\\begin{array}{lll}x+1 & x+2 & x+a \\\\ x+2 & x+3 & x+b \\\\ x+3 & x+4 & x+c\\end{array}\\right|=0$, where $a, b$ and $c$ are in AP.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Since, } a, b \\text { and } c \\text { are in AP, then } 2 b=a+c\\\\\n&\\therefore \\quad\\left|\\begin{array}{lll}\nx+1 & x+2 & x+a \\\\\nx+2 & x+3 & x+b \\\\\nx+3 & x+4 & x+c\n\\end{array}\\right|=0\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lll}\n\\Rightarrow & \\left|\\begin{array}{ccc}\n2 x+4 & 2 x+6 & 2 x+a+c \\\\\nx+2 & x+3 & x+b \\\\\nx+3 & x+4 & x+c\n\\end{array}\\right|=0 & {\\left[\\because R_1 \\rightarrow R_1+R_3\\right]} \\\\\n\\Rightarrow & \\left|\\begin{array}{ccc}\n2(x+2) & 2(x+3) & 2(x+b) \\\\\nx+2 & x+3 & x+b \\\\\nx+3 & x+4 & x+c\n\\end{array}\\right|=0 & {[\\because 2 b=a+c]}\n\\end{array}$$</p>\n<p>$\\Rightarrow \\quad 0=0 \\quad$ [since, $R_1$ and $R_2$ are in proportional to each other]</p>\n<p>Hence, statement is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 42872,
+        "correct": 79,
+        "wrong": 21,
+        "options": {
+          "0": 79,
+          "1": 21
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpimk0",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$|\\operatorname{adj} A|=|A|^2$, where $A$ is a square matrix of order two.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { If } A \\text { is a square matrix of order } n \\text {, then }\\\\\n&\\qquad |\\operatorname{adj} A|=|A|^{n-1}\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\quad|\\operatorname{adj} A|=|A|^{2-1}=|A| \\quad[\\because n=2]$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 12774,
+        "correct": 68,
+        "wrong": 32,
+        "options": {
+          "0": 32,
+          "1": 68
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphfsw",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The determinant $\\left|\\begin{array}{lll}\\sin A & \\cos A & \\sin A+\\cos B \\\\ \\sin B & \\cos A & \\sin B+\\cos B \\\\ \\sin C & \\cos A & \\sin C+\\cos B\\end{array}\\right|$ is equal to zero.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, $\\left|\\begin{array}{lll}\\sin A & \\cos A & \\sin A+\\cos B \\\\ \\sin B & \\cos A & \\sin B+\\cos B \\\\ \\sin C & \\cos A & \\sin C+\\cos B\\end{array}\\right|=\\left|\\begin{array}{lll}\\sin A & \\cos A & \\sin A \\\\ \\sin B & \\cos A & \\sin B \\\\ \\sin C & \\cos A & \\sin C\\end{array}\\right|+\\left|\\begin{array}{lll}\\sin A & \\cos A & \\cos B \\\\ \\sin B & \\cos A & \\cos B \\\\ \\sin C & \\cos A & \\cos B\\end{array}\\right|$</p>\n<p>$$\\begin{aligned}\n&=0+\\left|\\begin{array}{lll}\n\\sin A & \\cos A & \\cos B \\\\\n\\sin B & \\cos A & \\cos B \\\\\n\\sin C & \\cos A & \\cos B\n\\end{array}\\right|\\\\\n&\\text { [since, in first determinant } C_1 \\text { and } C_3 \\text { are identicals] }\\\\\n&=\\cos A \\cdot \\cos B\\left|\\begin{array}{lll}\n\\sin A & 1 & 1 \\\\\n\\sin B & 1 & 1 \\\\\n\\sin C & 1 & 1\n\\end{array}\\right|\n\\end{aligned}$$</p>\n<p>[taking $\\cos A$ common from $C_2$ and $\\cos B$ common from $C_3$ ] $=0 \\quad$ [since, $C_2$ and $C_3$ are identicals]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 32346,
+        "correct": 73,
+        "wrong": 27,
+        "options": {
+          "0": 73,
+          "1": 27
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpi08m",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the determinant $\\left|\\begin{array}{lll}x+a & p+u & l+f \\\\ y+b & q+v & m+g \\\\ z+c & r+w & n+h\\end{array}\\right|$ splits into exactly $k$ determinants of order 3, each element of which contains only one term, then the value of $k$ is 8 .</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, $\\quad\\left|\\begin{array}{ccc}x+a & p+u & l+f \\\\ y+b & q+v & m+g \\\\ z+c & r+w & n+h\\end{array}\\right|$</p>\n<p>$$\n=\\left|\\begin{array}{ccc}\nx & p & l \\\\\ny+b & q+v & m+g \\\\\nz+c & r+w & n+h\n\\end{array}\\right|+\\left|\\begin{array}{ccc}\na & u & f \\\\\ny+b & q+v & m+g \\\\\nz+c & r+w & n+h\n\\end{array}\\right|\\quad\\text{[splitting first row]}$$</p>\n<p>$=\\left|\\begin{array}{ccc}x & p & l \\\\ y & q & m \\\\ z+c & r+m & n+h\\end{array}\\right|+\\left|\\begin{array}{ccc}x & p & l \\\\ b & v & g \\\\ z+c & r+w & n+h\\end{array}\\right|$</p>\n<p>$+\\left|\\begin{array}{ccc}a & u & f \\\\ y & q & m \\\\ z+c & r+w & n+h\\end{array}\\right|+\\left|\\begin{array}{ccc}a & u & f \\\\ b & v & g \\\\ z+c & r+w & n+h\\end{array}\\right| \\quad$ [splitting second row]</p>\n<p>Similarly, we can split these 4 determinants in 8 determinants by splitting each one in two determinants further. So, given statement is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 38222,
+        "correct": 53,
+        "wrong": 47,
+        "options": {
+          "0": 53,
+          "1": 47
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpi18t",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\Delta=\\left|\\begin{array}{lll}a & p & x \\\\ b & q & y \\\\ c & r & z\\end{array}\\right|=16$, then $\\Delta_1=\\left|\\begin{array}{lll}p+x & a+x & a+p \\\\ q+y & b+y & b+q \\\\ r+z & c+z & c+r\\end{array}\\right|=32$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $$\n\\Delta=\\left|\\begin{array}{lll}\na & p & x \\\\\nb & q & y \\\\\nc & r & z\n\\end{array}\\right|=16$$</p>\n<p>and we have to prove, $\\quad \\Delta_1=\\left|\\begin{array}{lll}p+x & a+x & a+p \\\\ q+y & b+y & b+q \\\\ r+z & c+z & c+r\\end{array}\\right|=32$</p>\n<p>$\\Delta_1=\\left|\\begin{array}{ccc}2 p+2 x+2 a & a+x & a+p \\\\ 2 q+2 y+2 b & b+y & b+q \\\\ 2 r+2 z+2 c & c+z & c+r\\end{array}\\right| \\quad\\left[\\because C_1 \\rightarrow C_1+C_2+C_3\\right]$</p>\n<p>$=2\\left|\\begin{array}{ccc}p & x-p & a+p \\\\ q & y-q & b+q \\\\ r & z-r & c+r\\end{array}\\right|$</p>\n<p>[taking 2 common from $C_1$ and then $C_1 \\rightarrow C_1-C_2, C_2 \\rightarrow C_2-C_3$ ]</p>\n<p>$$=2\\left[\\begin{array}{ccc}\np & x & a+p \\\\\nq & y & b+q \\\\\nr & z & c+r\n\\end{array}\\right]-\\left[\\begin{array}{ccc}\np & p & a+p \\\\\nq & q & b+q \\\\\nr & r & c+r\n\\end{array}\\right]$$</p>\n<p>$$=2\\left|\\begin{array}{lll}\np & x & a+p \\\\\nq & y & b+q \\\\\nr & z & c+r\n\\end{array}\\right|-0$$</p>\n<p>[since, two columns $C_1$ and $C_2$ are identicals]</p>\n<p>$$\\begin{aligned}\n& =2\\left|\\begin{array}{lll}\np & x & a \\\\\nq & y & b \\\\\nr & z & c\n\\end{array}\\right|+2\\left|\\begin{array}{lll}\np & x & p \\\\\nq & y & q \\\\\nr & z & r\n\\end{array}\\right| \\\\\n& =2\\left|\\begin{array}{lll}\na & p & x \\\\\nb & q & y \\\\\nc & r & z\n\\end{array}\\right|+0\n\\end{aligned}$$</p>\n<p>[since, $C_1$ and $C_3$ are identical in second determinant and in first determinant, $C_1 \\leftrightarrow C_2$ and then $C_1 \\leftrightarrow C_3$ ]</p>\n<p>$$\\begin{aligned}\n& =2 \\times 16 \\\\\n& =32\\quad [\\because \\Delta=16]\n\\end{aligned}$$</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 42275,
+        "correct": 47,
+        "wrong": 53,
+        "options": {
+          "0": 47,
+          "1": 53
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphfvc",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "determinants",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The maximum value of $\\left|\\begin{array}{ccc}1 & 1 & 1 \\\\ 1 & 1+\\sin \\theta & 1 \\\\ 1 & 1 & 1+\\cos \\theta\\end{array}\\right|$ is $\\frac{1}{2}$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Since, $\\left|\\begin{array}{ccc}1 & 1 & 1 \\\\ 0 & \\sin \\theta & 0 \\\\ 0 & 0 & \\cos \\theta\\end{array}\\right| \\quad\\left[\\because R_2 \\rightarrow R_2-R_1\\right.$ and $\\left.R_3 \\rightarrow R_3-R_1\\right]$</p>\n<p>On expanding along third row, we get the value of the determinant</p>\n<p>$$=\\cos \\theta \\cdot \\sin \\theta=\\frac{1}{2} \\sin 2 \\theta=\\frac{1}{2}$$</p>\n<p>[when $\\theta$ is $45^{\\circ}$ which gives maximum value]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 34797,
+        "correct": 78,
+        "wrong": 22,
+        "options": {
+          "0": 78,
+          "1": 22
+        }
+      }
+    }
+  ]
+}

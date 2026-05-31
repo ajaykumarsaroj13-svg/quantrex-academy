@@ -1,0 +1,2177 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "title": "Mathematics",
+      "_id": "Mathematics",
+      "questions": [
+        {
+          "question_id": "m6oqwk7b",
+          "chapter": "relations-and-functions",
+          "chapterGroup": "relations-and-functions",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-function-f-mathbbr-rightarrow-mathbbr-defined-class-12-mathematics-complex-numbers-86eanu6jmduy61qi",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>A function $f: \\mathbb{R} \\rightarrow \\mathbb{R}$ defined as $f(x)=x^2-4 x+5$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "injective but not surjective\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": "surjective but not injective\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "both injective and surjective\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": "neither injective nor surjective"
+                }
+              ],
+              "correct_options": [
+                "D"
+              ],
+              "answer": null,
+              "explanation": "<p>$$\\begin{aligned}\n& \\text { Given, } f: R \\rightarrow R \\\\\n& f(x)=x^2-4 x+5\n\\end{aligned}$$</p>\n<p>One-One (Injective)</p>\n<p>$$\\begin{array}{l} \n& f\\left(x_1\\right) =f\\left(x_2\\right) \\\\\n\\Rightarrow & x_1^2-4 x_1+5 =x_1^2-4 x_2+5 \\\\\n\\Rightarrow & x_1^2-x_2^2 =4\\left(x_1-x_2\\right) \\\\\n\\Rightarrow & \\left(x_1-x_2\\right)\\left(x_1+x_2\\right) =4\\left(x_1-x_2\\right) \\\\\n\\Rightarrow & x_1+x_2 =4 \\\\\n\\Rightarrow & x_1 =4-x_2\n\\end{array}$$</p>\n<p>Thus, $f(x)$ is not an injective mapping. onto surjective</p>\n<p>$$\\begin{array}{rlr}\n\\text { let } & y =x^2-4 x+5 \\\\\n\\Rightarrow & y =(x-2)^2+1 \\\\\n\\Rightarrow & y-1 =(x-2)^2 \\\\\n\\Rightarrow & x =\\sqrt{(y-1)}+2\n\\end{array}$$</p>\n<p>Thus, for any value of $y<1, x \\notin \\mathrm{R}$. So, we don't have a pre-image for all $y \\in \\mathrm{R}$ in $x \\in \\mathrm{R}$.</p>\n<p>Thus,\n$f(x)=x^2-4 x+5$ is not surjective.</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Relations and Functions • Mathematics",
+              "excerpt": "A function $f: \\mathbb{R} \\rightarrow \\mathbb{R}$ defined as $f(x)=x^2-4 x+5$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6oqwk8h",
+          "chapter": "matrices",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pif-aleftbeginarrayccca--c--1--b--0--5--class-12-mathematics-complex-numbers-iuc1o0ww4kofd3ke",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>If $A=\\left[\\begin{array}{ccc}a & c & -1 \\\\ b & 0 & 5 \\\\ 1 & -5 & 0\\end{array}\\right]$ is a skew-symmetric matrix, then the value of $2 a-(b+c)$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "0"
+                },
+                {
+                  "identifier": "B",
+                  "content": "1"
+                },
+                {
+                  "identifier": "C",
+                  "content": "$-$10"
+                },
+                {
+                  "identifier": "D",
+                  "content": "10"
+                }
+              ],
+              "correct_options": [
+                "A"
+              ],
+              "answer": null,
+              "explanation": "<p>We know that, if matrix A is skew symmetric, then</p>\n<p>$$\\begin{aligned}\nA^{\\prime} & =-A \\\\\n\\therefore \\quad\\left[\\begin{array}{ccc}\na & b & 1 \\\\\nc & 0 & -5 \\\\\n-1 & 5 & 0\n\\end{array}\\right] & =\\left[\\begin{array}{ccc}\n-a & -c & 1 \\\\\n-b & 0 & -5 \\\\\n-1 & 5 & 0\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>On comparing matrices, we get</p>\n<p>$$\\begin{aligned}\na & =-a \\Rightarrow 2 a=0 \\Rightarrow a=0 \\\\\nb & =-c \\text { and } c=-b\n\\end{aligned}$$</p>\n<p>Now, $\\quad 2 a+(b+c)=2 \\times 0+(b-b)=0$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Matrices • Mathematics",
+              "excerpt": "If $A=\\left[\\begin{array}{ccc}a & c & -1 \\\\ b & 0 & 5 \\\\ 1 & -5 & 0\\end{array}\\right]$ is a skew-symmetric matrix, then the value of $2 a-(b+c)$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6oqwk9i",
+          "chapter": "determinants",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pif-a-is-a-square-matrix-of-order-3-such-that-the-value-class-12-mathematics-complex-numbers-3bx22layia1simzi",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>If $A$ is a square matrix of order 3 such that the value of $\\mid$ adj. $A \\mid=8$, then the value of $\\left|\\mathrm{A}^{\\mathrm{T}}\\right|$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": " $\\sqrt{2}$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": " $-\\sqrt{2}$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "8"
+                },
+                {
+                  "identifier": "D",
+                  "content": "$2 \\sqrt{2}$"
+                }
+              ],
+              "correct_options": [
+                "D"
+              ],
+              "answer": null,
+              "explanation": "<p>We know that </p>\n<p>$|\\operatorname{adj} A|=|A|^{n-1}$</p>\n<p>where $n$ is the order of square matrix $A$</p>\n<p>$$\\begin{array}{llrl}\n\\text { Given } & & |\\operatorname{adj} A| & =8 \\\\\n\\therefore & & |A|^{n-1} & =8 \\\\\n\\Rightarrow & & |A|^{3-1} & =8 \\\\\n\\Rightarrow & & |A|^2 & =8 \\\\\n\\Rightarrow & & |A| & =2 \\sqrt{2}\n\\end{array}$$</p>\n<p>Also, determinant of a matrix and its transpose has same values.</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Determinants • Mathematics",
+              "excerpt": "If $A$ is a square matrix of order 3 such that the value of $\\mid$ adj. $A \\mid=8$, then the value of $\\left|\\mathrm{A}^{\\mathrm{T}}\\right|$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6oqwkal",
+          "chapter": "determinants",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pif-inverse-of-matrix-leftbeginarrayccc7--3--3-class-12-mathematics-complex-numbers-sompeppmkb7stcwm",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>If inverse of matrix $\\left[\\begin{array}{ccc}7 & -3 & -3 \\\\ -1 & 1 & 0 \\\\ -1 & 0 & 1\\end{array}\\right]$ is the matrix $\\left[\\begin{array}{lll}1 & 3 & 3 \\\\ 1 & \\lambda & 3 \\\\ 1 & 3 & 4\\end{array}\\right]$ then value of $\\lambda$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "$-$4"
+                },
+                {
+                  "identifier": "B",
+                  "content": "1"
+                },
+                {
+                  "identifier": "C",
+                  "content": "3"
+                },
+                {
+                  "identifier": "D",
+                  "content": "4"
+                }
+              ],
+              "correct_options": [
+                "D"
+              ],
+              "answer": null,
+              "explanation": "<p>Given,</p>\n<p>$$A=\\left[\\begin{array}{ccc}\n7 & -3 & -3 \\\\\n-1 & 1 & 0 \\\\\n-1 & 0 & 1\n\\end{array}\\right]$$</p>\n<p>and $$A^{-1}=\\left[\\begin{array}{lll}\n1 & 3 & 3 \\\\\n1 & \\lambda & 3 \\\\\n1 & 3 & 4\n\\end{array}\\right]$$</p>\n<p>Since, $A A^{-1}=I$</p>\n<p>$$\\begin{aligned}\n& \\therefore\\left[\\begin{array}{ccc}\n7 & -3 & -3 \\\\\n-1 & 1 & 0 \\\\\n-1 & 0 & 1\n\\end{array}\\right]\\left[\\begin{array}{lll}\n1 & 3 & 3 \\\\\n1 & \\lambda & 3 \\\\\n1 & 3 & 4\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 0\n\\end{array}\\right] \\\\\n& {\\left[\\begin{array}{ccc}\n1 & 12-3 \\lambda & 0 \\\\\n0 & -3+\\lambda & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]}\n\\end{aligned}$$</p>\n<p>On comparing matrices, we get</p>\n<p>$$\\begin{aligned}\n& 12-3 \\lambda=0 \\text { and }-3+\\lambda=1 \\\\\n& \\Rightarrow \\lambda=4 \\text { and } \\lambda=4\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Determinants • Mathematics",
+              "excerpt": "If inverse of matrix $\\left[\\begin{array}{ccc}7 & -3 & -3 \\\\ -1 & 1 & 0 \\\\ -1 & 0 & 1\\end{array}\\right]$ is the matrix $\\left[\\begin{array}{lll}1 & 3 & 3 \\\\ 1 & \\lambda & 3 \\\\ 1 & 3 & 4\\end{array}\\right]$ then value of $\\lambda$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6oqwkbt",
+          "chapter": "matrices",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pif-leftbeginarraylllx--2--0endarrayrightl-class-12-mathematics-complex-numbers-gjky6jdszwebodg2",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>If $\\left[\\begin{array}{lll}x & 2 & 0\\end{array}\\right]\\left[\\begin{array}{c}5 \\\\ -1 \\\\ x\\end{array}\\right]=\\left[\\begin{array}{ll}3 & 1\\end{array}\\right]\\left[\\begin{array}{c}-2 \\\\ x\\end{array}\\right]$, then value of $x$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "$-$1"
+                },
+                {
+                  "identifier": "B",
+                  "content": "0"
+                },
+                {
+                  "identifier": "C",
+                  "content": "1"
+                },
+                {
+                  "identifier": "D",
+                  "content": "2"
+                }
+              ],
+              "correct_options": [
+                "A"
+              ],
+              "answer": null,
+              "explanation": "<p>We have,</p>\n<p>$$\\begin{aligned}\n{\\left[\\begin{array}{lll}\nx & 2 & 0\n\\end{array}\\right]\\left[\\begin{array}{c}\n5 \\\\\n-1 \\\\\nx\n\\end{array}\\right] } & =\\left[\\begin{array}{ll}\n3 & 1\n\\end{array}\\right]\\left[\\begin{array}{c}\n-2 \\\\\nx\n\\end{array}\\right] \\\\\n5 x-2 & =-6+x \\\\\n4 x & =-4 \\\\\nx & =-1\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Matrices • Mathematics",
+              "excerpt": "If $\\left[\\begin{array}{lll}x & 2 & 0\\end{array}\\right]\\left[\\begin{array}{c}5 \\\\ -1 \\\\ x\\end{array}\\right]=\\left[\\begin{array}{ll}3 & 1\\end{array}\\right]\\left[\\begin{array}{c}-2 \\\\ x\\end{array}\\right]$, then value of $x$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6oqwkdy",
+          "chapter": "matrices",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pfind-the-matrix-mathrma2-where-aleftai-jri-class-12-mathematics-complex-numbers-vdc4myt269g36fcx",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Find the matrix $\\mathrm{A}^2$, where $A=\\left[a_{i j}\\right]$ is a $2 \\times 2$ matrix whose elements are given by $a_{i j}=$ maximum $(i, j)-$ minimum $(i, j)$</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": " $\\left[\\begin{array}{ll}0 & 0 \\\\ 0 & 0\\end{array}\\right]$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": " $\\left[\\begin{array}{ll}0 & 1 \\\\ 1 & 0\\end{array}\\right]$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": " $\\left[\\begin{array}{ll}1 & 0 \\\\ 0 & 1\\end{array}\\right]$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": " $\\left[\\begin{array}{ll}1 & 1 \\\\ 1 & 1\\end{array}\\right]$"
+                }
+              ],
+              "correct_options": [
+                "C"
+              ],
+              "answer": null,
+              "explanation": "<p>Given for matrix $A=\\left[\\mathrm{a}_{\\mathrm{ij}}\\right]_{2 \\times 2}$</p>\n<p>$$\\begin{array}{ll}\n\\text { we have } & \\mathrm{a}_{\\mathrm{ij}}=\\max (\\mathrm{i}, \\mathrm{j})-\\min (\\mathrm{i}, \\mathrm{j}) \\\\\n\\therefore & a_{11}=1-1=0 \\\\\n& a_{12}=2-1=1 \\\\\n& a_{21}=2-1=1 \\\\\n& a_{22}=2-2=0\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & A=\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 0\n\\end{array}\\right] \\\\\n\\text { Now, } & A^2=\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 0\n\\end{array}\\right]\\left[\\begin{array}{ll}\n0 & 1 \\\\\n1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]\n\\end{array}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Matrices • Mathematics",
+              "excerpt": "Find the matrix $\\mathrm{A}^2$, where $A=\\left[a_{i j}\\right]$ is a $2 \\times 2$ matrix whose elements are given by $a_{i j}=$ maximum $(i, j)-$ minimum $(i, j)$"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wbd6",
+          "chapter": "continuity-and-differentiability",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pif-x-ey1-then-the-value-of-fracd-yd-x-at-x1-class-12-mathematics-complex-numbers-lbi1t48dd1jgp8dy",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>If $x e^y=1$, then the value of $\\frac{d y}{d x}$ at $x=1$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "$-1$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": "$1$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "$-e$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": "$-\\frac{1}{e}$"
+                }
+              ],
+              "correct_options": [
+                "A"
+              ],
+              "answer": null,
+              "explanation": "<p>We have,</p>\n<p>$$x e^y=1$$</p>\n<p>Differentiating w.r.t. ' $x$ ' both sides</p>\n<p>$$\\begin{aligned}\n1 . e^y+x e^y \\frac{d y}{d x} & =0 \\\\\nx e^y \\frac{d y}{d x} & =-e^y \\\\\n\\frac{d y}{d x} & =-\\frac{1}{x} \\\\\n\\left.\\therefore \\quad \\frac{d y}{d x}\\right|_{x=1} & =-1\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Continuity and Differentiability • Mathematics",
+              "excerpt": "If $x e^y=1$, then the value of $\\frac{d y}{d x}$ at $x=1$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wbgl",
+          "chapter": "continuity-and-differentiability",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pderivative-of-esin-2-x-with-respect-to-cos-x-is-class-12-mathematics-complex-numbers-5orqftl3npk6bzup",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Derivative of $e^{\\sin ^2 x}$ with respect to $\\cos x$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": " $\\sin x e^{\\sin ^2 x}$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": " $\\cos x e^{\\sin ^2 x}$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": " $-2 \\cos x e^{\\sin ^2 x}$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": " $-2 \\sin ^2 x \\cos x e^{\\sin ^2 x}$"
+                }
+              ],
+              "correct_options": [
+                "C"
+              ],
+              "answer": null,
+              "explanation": "<p>Let $\\quad u=e^{\\sin ^2 x}$ and $v=\\cos x$</p>\n<p> $\\therefore \\quad \\frac{d u}{d x}=e^{\\sin ^2 x}(2 \\sin x) \\cos x$</p>\n<p>and $$\\frac{d v}{d x}=-\\sin x$$</p>\n<p>Thus,</p>\n<p>$$\\begin{aligned}\n\\frac{d u}{d v} & =\\frac{d u / d x}{d v / d x} \\\\\n& =\\frac{e^{\\sin ^2 x} \\cdot 2 \\sin x \\cdot \\cos x}{-\\sin x} \\\\\n& =-2 \\cos x e^{\\sin ^2 x}\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Continuity and Differentiability • Mathematics",
+              "excerpt": "Derivative of $e^{\\sin ^2 x}$ with respect to $\\cos x$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wbjy",
+          "chapter": "application-of-derivatives",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pthe-function-fxfracx2frac2x-has-a-local-m-class-12-mathematics-complex-numbers-u8zwamujhvzks0b9",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>The function $f(x)=\\frac{x}{2}+\\frac{2}{x}$ has a local minima at $x$ equal to</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "2"
+                },
+                {
+                  "identifier": "B",
+                  "content": "1"
+                },
+                {
+                  "identifier": "C",
+                  "content": "0"
+                },
+                {
+                  "identifier": "D",
+                  "content": "$-$2"
+                }
+              ],
+              "correct_options": [
+                "A"
+              ],
+              "answer": null,
+              "explanation": "<p>We have,</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& f(x)=\\frac{x}{2}+\\frac{2}{x} \\\\\n& f^{\\prime}(x)=\\frac{1}{2}-\\frac{2}{x^2} \\\\\n& \\text { Put, } \\quad f^{\\prime}(x)=0 \\Rightarrow \\frac{1}{2}-\\frac{2}{x^2}=0 \\\\\n& \\Rightarrow \\quad \\frac{1}{2}=\\frac{2}{x^2} \\\\\n& \\Rightarrow \\quad x^2=4 \\\\\n& \\Rightarrow \\quad x= \\pm 2 \\\\\n& \\text { Now, } \\quad f^{\\prime}(x)=\\frac{6}{x^3} \\\\\n& \\text { At } x=2, \\quad f^{\\prime \\prime}(2)=\\frac{6}{8}>0 \\\\\n& \\text { At } x=-2, \\quad f^{\\prime \\prime}(-2)=-\\frac{6}{8}<0\n\\end{aligned}\\\\\n&\\text { Thus, } f(x) \\text { has local minima at } x=2 \\text {. }\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Application of Derivatives • Mathematics",
+              "excerpt": "The function $f(x)=\\frac{x}{2}+\\frac{2}{x}$ has a local minima at $x$ equal to"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wbnc",
+          "chapter": "application-of-derivatives",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pgiven-a-curve-y7-x-x3-and-x-increases-at-the-rate-o-class-12-mathematics-complex-numbers-j15dxrv9z1fdu2uc",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Given a curve $y=7 x-x^3$ and $x$ increases at the rate of 2 units per second. The rate at which the slope of the curve is changing, when $x=5$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "$-60$ units/s\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": "$60$ units $/ \\mathrm{s}$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "$- 70$ units/s\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": "$-140$ units $/ \\mathrm{s}$"
+                }
+              ],
+              "correct_options": [
+                "A"
+              ],
+              "answer": null,
+              "explanation": "<p>$$\\begin{aligned}\n&\\text { Given, }\\\\\n&y=7 x-x^3\n\\end{aligned}$$</p>\n<p>Differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\frac{d y}{d x}=7-3 x^2$$</p>\n<p>Thus, slope, $\\quad s=7-3 x^2$</p>\n<p>Now, differentiating w.r.t. ' $t$ ', we get</p>\n<p>$$\\begin{array}{rlrl}\n\\frac{d s}{d t} & =-6 x \\frac{d x}{d t} \\\\\n\\therefore & \\left.\\frac{d s}{d t}\\right|_{\\text {at } x=5} & =-6 \\times 5 \\times 2\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\quad\\left[\\because \\frac{d x}{d t}=2 \\text { units } / \\mathrm{s} \\text { (given) }\\right] \\\\\n& =-60 \\mathrm{units} / \\mathrm{s}\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Application of Derivatives • Mathematics",
+              "excerpt": "Given a curve $y=7 x-x^3$ and $x$ increases at the rate of 2 units per second. The rate at which the slope of the curve is changing, when $x=5$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wbqc",
+          "chapter": "indefinite-integration",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pint-frac1xlog-x2-d-x-is-equal-top-class-12-mathematics-complex-numbers-odlvuc5mgacnlmri",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>$\\int \\frac{1}{x(\\log x)^2} d x$ is equal to</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": " $2 \\log (\\log x)+c$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": " $-\\frac{1}{\\log x}+c$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": " $\\frac{(\\log x)^3}{3}+c$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": " $\\frac{3}{(\\log x)^3}+c$"
+                }
+              ],
+              "correct_options": [
+                "B"
+              ],
+              "answer": null,
+              "explanation": "<p>$$\\begin{aligned}\n& \\text { Let } \\quad I=\\int \\frac{1}{x(\\log x)^2}=d x \\\\\n& \\log x=t \\Rightarrow \\frac{1}{x} d x=d t\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & I=\\int \\frac{d t}{t^2}=-\\frac{1}{t}+C \\\\\n\\text { Thus, } & I=-\\frac{1}{\\log x}+C\n\\end{array}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Indefinite Integration • Mathematics",
+              "excerpt": "$\\int \\frac{1}{x(\\log x)^2} d x$ is equal to"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wbt5",
+          "chapter": "definite-integration",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pthe-value-of-int-11-xx-d-x-isp-class-12-mathematics-complex-numbers-uq7kgxxaokkoxff8",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>The value of $\\int_{-1}^1 x|x| d x$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "$\\frac{1}{6}$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": "$\\frac{1}{3}$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "$-\\frac{1}{6}$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": "$0$"
+                }
+              ],
+              "correct_options": [
+                "D"
+              ],
+              "answer": null,
+              "explanation": "<p>$$\\begin{aligned}\n&\\text { We have }\\\\\n&\\begin{aligned}\nI= & \\int_{-1}^1 x|x| d x=0 \\\\\n& {[\\text { as } x|x| \\text { is an odd function] }}\n\\end{aligned}\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Definite Integration • Mathematics",
+              "excerpt": "The value of $\\int_{-1}^1 x|x| d x$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1we8r",
+          "chapter": "differential-equations",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pthe-order-of-the-differential-equation-fracd4-yd-x-class-12-mathematics-complex-numbers-lrd8ajxmqqdqlhge",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>The order of the differential equation $\\frac{d^4 y}{d x^4}-\\sin \\left(\\frac{d^2 y}{d x^2}\\right)=5$</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "4"
+                },
+                {
+                  "identifier": "B",
+                  "content": "3"
+                },
+                {
+                  "identifier": "C",
+                  "content": "2"
+                },
+                {
+                  "identifier": "D",
+                  "content": "not defined"
+                }
+              ],
+              "correct_options": [
+                "A"
+              ],
+              "answer": null,
+              "explanation": "<p>Highest order derivative present in the given differential equation is 4 .</p>\n<p>Thus, order of differential equation $=4$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Differential Equations • Mathematics",
+              "excerpt": "The order of the differential equation $\\frac{d^4 y}{d x^4}-\\sin \\left(\\frac{d^2 y}{d x^2}\\right)=5$"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wf7x",
+          "chapter": "three-dimensional-geometry",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pthe-angle-which-the-line-fracx1fracy-1frac-class-12-mathematics-complex-numbers-gox15joaysc8qpko",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>The angle which the line $\\frac{x}{1}=\\frac{y}{-1}=\\frac{z}{0}$ makes with the positive direction of Y -axis is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": " $\\frac{5 \\pi}{6}$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": " $\\frac{3 \\pi}{4}$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": " $\\frac{5 \\pi}{4}$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": " $\\frac{7 \\pi}{4}$"
+                }
+              ],
+              "correct_options": [
+                "B"
+              ],
+              "answer": null,
+              "explanation": "<p>$$\\begin{aligned}\n&\\text { Given line is }\\\\\n&\\frac{x}{1}=\\frac{y}{-1}=\\frac{z}{0}\n\\end{aligned}$$</p>\n<p>$\\therefore$ Direction ratios of line are: $1,-1,0$</p>\n<p>We know that direction ratio of $y$-axis are $0,1,0$</p>\n<p>$$\\begin{aligned}\n\\cos \\theta & =\\frac{\\vec{b}_1 \\cdot \\vec{b}_2}{\\left|\\vec{b}_1\\right| \\cdot\\left|\\vec{b}_2\\right|} \\\\\n& =\\frac{(\\hat{i}-\\hat{j}) \\cdot(\\hat{j})}{\\sqrt{(1)^2+(-1)^2} \\cdot \\sqrt{(1)^2}} \\\\\n& {\\left[\\because \\overrightarrow{b_1}=\\hat{i}-\\hat{j} \\text { and } \\overrightarrow{b_2}=\\hat{j}\\right] } \\\\\n& =\\frac{-1}{\\sqrt{2}}\n\\end{aligned}$$</p>\n<p>$\\therefore \\quad \\cos \\theta=\\cos \\left(\\frac{3 \\pi}{4}\\right)$</p>\n<p>$\\Rightarrow \\quad \\theta=\\frac{3 \\pi}{4}$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Three Dimensional Geometry • Mathematics",
+              "excerpt": "The angle which the line $\\frac{x}{1}=\\frac{y}{-1}=\\frac{z}{0}$ makes with the positive direction of Y -axis is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfb3",
+          "chapter": "three-dimensional-geometry",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pthe-cartesian-equation-of-the-line-passing-through-the-po-class-12-mathematics-complex-numbers-tgxvqvum6rdptyel",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>The Cartesian equation of the line passing through the point $(1,-3,2)$ and parallel to the line $\\vec{r}=(2+\\lambda) \\hat{i}+\\lambda \\hat{j}+(2 \\lambda-1) \\hat{k}$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "$\\frac{x-1}{2}=\\frac{y+3}{0}=\\frac{z-2}{-1}$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": "$\\frac{x+1}{1}=\\frac{y-3}{1}=\\frac{z+2}{2}$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "$\\frac{x+1}{2}=\\frac{y-3}{0}=\\frac{z+2}{-1}$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": "$\\frac{x-1}{1}=\\frac{y+3}{1}=\\frac{z-2}{2}$"
+                }
+              ],
+              "correct_options": [
+                "D"
+              ],
+              "answer": null,
+              "explanation": "<p>$$\\begin{aligned}\n&\\text { Given line is }\\\\\n&\\begin{aligned}\n\\vec{r} & =(2+\\lambda) \\hat{i}+\\lambda \\hat{j}+(2 \\lambda-1) \\hat{k} \\\\\n\\vec{r} & =(2 \\hat{i}-\\hat{k})+\\lambda(\\hat{i}+\\hat{j}+2 \\hat{k})\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>which is of the form</p>\n<p>$$\\vec{r}=a+\\lambda \\vec{b}$$</p>\n<p>$\\therefore$ Required line is</p>\n<p>$$\\frac{x-1}{1}=\\frac{y+3}{1}=\\frac{z-2}{2}$$</p>\n<p>[As lines passes through $(1,-3,2)$ and having Direction cosines $(1,1,2)]$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Three Dimensional Geometry • Mathematics",
+              "excerpt": "The Cartesian equation of the line passing through the point $(1,-3,2)$ and parallel to the line $\\vec{r}=(2+\\lambda) \\hat{i}+\\lambda \\hat{j}+(2 \\lambda-1) \\hat{k}$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfe4",
+          "chapter": "probability",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pif-a-and-b-are-events-such-that-pa--bpb--a-n-class-12-mathematics-complex-numbers-pyycsvdxoa3ovxac",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>If $A$ and $B$ are events such that $P(A / B)=P(B / A) \\neq 0$, then</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "$A \\subset B$, but $A \\neq B$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": "$A=B$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "$A \\cap B=\\phi$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": "$P(A)=P(B)$"
+                }
+              ],
+              "correct_options": [
+                "D"
+              ],
+              "answer": null,
+              "explanation": "<p>Given</p>\n<p>$$P\\left(\\frac{A}{B}\\right)=P\\left(\\frac{B}{A}\\right)$$</p>\n<p>$$\\begin{array}{cc}\n\\Rightarrow & \\frac{P(A \\cap B)}{P(B)}=\\frac{P(B \\cap A)}{P(A)} \\\\\n\\Rightarrow & \\frac{P(A \\cap B)}{P(B)}=\\frac{P(A \\cap B)}{P(A)} \\\\\n\\Rightarrow & P(A)=P(B)\n\\end{array}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Probability • Mathematics",
+              "excerpt": "If $A$ and $B$ are events such that $P(A / B)=P(B / A) \\neq 0$, then"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfh3",
+          "chapter": "inverse-trigonometric-function",
+          "chapterGroup": "relations-and-functions",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "passertion-a-domain-of-ycos--1x-is--11-class-12-mathematics-complex-numbers-6os5z8gntqw73be8",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Assertion (A): Domain of $y=\\cos ^{-1}(x)$ is $[-1,1]$.</p>\n<p>Reason ( R ): The range of the principal value branch of $y=\\cos ^{-1}(x)$ is $[0, \\pi]-\\left\\{\\frac{\\pi}{2}\\right\\}$</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "Both Assertion (A) and Reason (R) are true and the Reason ( $R$ ) is the correct explanation of the Assertion (A).\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": "Both Assertion (A) and Reason (R) are true and Reason (R) is not the correct explanation of the Assertion (A).\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "Assertion (A) is true, but Reason (R) is false.\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": "Assertion (A) is false, but Reason (R) is true."
+                }
+              ],
+              "correct_options": [
+                "C"
+              ],
+              "answer": null,
+              "explanation": "<p>Range of $\\cos ^{-1} x$ is $[0, \\pi]$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Inverse Trigonometric Function • Mathematics",
+              "excerpt": "Assertion (A): Domain of $y=\\cos ^{-1}(x)$ is $[-1,1]$.\nReason ( R ): The range of the principal value branch of $y=\\cos ^{-1}(x)$ is $[0, \\pi]-\\left\\{\\frac{\\pi}{2}\\right\\}$"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfk6",
+          "chapter": "vector-algebra",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "passertion-a-the-vectorsp-pbeginaligned--ve-class-12-mathematics-complex-numbers-zbijupevoye5u2uf",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Assertion (A): The vectors</p>\n<p>$$\\begin{aligned}\n& \\vec{a}=6 \\hat{i}+2 \\hat{j}-8 \\hat{k} \\\\\n& \\vec{b}=10 \\hat{i}-2 \\hat{j}-6 \\hat{k} \\\\\n& \\vec{c}=4 \\hat{i}-4 \\hat{j}+2 \\hat{k}\n\\end{aligned}$$</p>\n<p>represent the sides of a right angled triangle.</p>\n<p>Reason (R): Three non-zero vectors of which none of two are collinear forms a triangle if their resultant is zero vector or sum of any two vectors is equal to the third.</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "Both Assertion (A) and Reason (R) are true and the Reason ( $R$ ) is the correct explanation of the Assertion (A).\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": "Both Assertion (A) and Reason (R) are true and Reason (R) is not the correct explanation of the Assertion (A).\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "Assertion (A) is true, but Reason (R) is false.\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": "Assertion (A) is false, but Reason (R) is true."
+                }
+              ],
+              "correct_options": [
+                "B"
+              ],
+              "answer": null,
+              "explanation": "<p>Assertion:</p>\n<p>$$\\begin{aligned}\n& |\\vec{a}|=\\sqrt{(6)^2+(2)^2+(-8)^2}=\\sqrt{104} \\\\\n& |\\vec{b}|=\\sqrt{(10)^2+(-2)^2+(-6)^2}=\\sqrt{140}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n|\\vec{c}| & =\\sqrt{(4)^2+(-4)^2+(2)^2}=\\sqrt{36} \\\\\n(\\sqrt{140})^2 & =(\\sqrt{104})^2+(\\sqrt{36})^2\n\\end{aligned}$$</p>\n<p>Hence, it forms a right angle triangle.</p>\n<p>Reason: Reason is correct but not the explanation of Assertion.</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Vector Algebra • Mathematics",
+              "excerpt": "Assertion (A): The vectors\n$$\\begin{aligned}\n& \\vec{a}=6 \\hat{i}+2 \\hat{j}-8 \\hat{k} \\\\\n& \\vec{b}=10 \\hat{i}-2 \\hat{j}-6 \\hat{k} \\\\\n& \\vec{c}=4 \\hat{i}-4 \\hat{j}+2 \\hat{k}\n\\end{aligned}$$\nrepresent the sides of a right angled triangle.\nReas..."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wpc9",
+          "chapter": "vector-algebra",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pthe-position-vectors-of-points-p-and-q-are-vecp-and-class-12-mathematics-complex-numbers-kmjtpnkqfmyho1ze",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>The position vectors of points P and Q are $\\vec{p}$ and $\\vec{q}$ respectively. The point $R$ divides line segment $P Q$ in the ratio $3: 1$ and S is the mid-point of line segment PR. The position vector of $S$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": " $\\frac{\\vec{p}+3 \\vec{q}}{4}$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": " $\\frac{\\vec{p}+3 \\vec{q}}{8}$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": " $\\frac{5 \\vec{p}+3 \\vec{q}}{4}$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": " $\\frac{5 \\vec{p}+3 \\vec{q}}{8}$"
+                }
+              ],
+              "correct_options": [
+                "D"
+              ],
+              "answer": null,
+              "explanation": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6pd5ven/e11752b0-a2c5-4e1c-bd0c-3957383f4d07/c617ccf0-e259-11ef-9fcc-0b7d8b55eb07/file-jaoe38c1m6pd5veo.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6pd5ven/e11752b0-a2c5-4e1c-bd0c-3957383f4d07/c617ccf0-e259-11ef-9fcc-0b7d8b55eb07/file-jaoe38c1m6pd5veo.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"CBSE 12th Mathematics Delhi Set 1 - 2024 Mathematics - Vector Algebra Question 1 English Explanation\"></p>\n<p>Position vector of R,</p>\n<p>$$\\vec{r}=\\frac{3 \\vec{q}+\\vec{p}}{3+1}$$</p>\n<p>or $\\quad \\vec{r}=\\frac{3 \\vec{q}+\\vec{p}}{4}$</p>\n<p>Given S is the mid-point of PR</p>\n<p>$\\therefore$ Position vector of $S$,</p>\n<p>$$\\begin{aligned}\n\\vec{S} &amp; =\\frac{\\vec{p}+\\vec{r}}{2} \\\\\n&amp; =\\frac{\\vec{p}\\left(\\frac{3 \\vec{q}+\\vec{p}}{4}\\right)}{2}\n\\end{aligned}$$</p>\n<p>$=\\frac{5 \\vec{p}+3 \\vec{q}}{8}$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Vector Algebra • Mathematics",
+              "excerpt": "The position vectors of points P and Q are $\\vec{p}$ and $\\vec{q}$ respectively. The point $R$ divides line segment $P Q$ in the ratio $3: 1$ and S is the mid-point of line segment PR. The position vector of $S$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wpij",
+          "chapter": "application-of-integration",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 1,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "parea-of-the-region-bounded-by-curve-y24-x-and-the-x-class-12-mathematics-complex-numbers-0ognzedfniq3tjkg",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Area of the region bounded by curve $y^2=4 x$ and the $X$-axis between $x=0$ and $x=1$ is</p>",
+              "options": [
+                {
+                  "identifier": "A",
+                  "content": "$\\frac{2}{3}$\n"
+                },
+                {
+                  "identifier": "B",
+                  "content": "$\\frac{8}{3}$\n"
+                },
+                {
+                  "identifier": "C",
+                  "content": "$3$\n"
+                },
+                {
+                  "identifier": "D",
+                  "content": "$\\frac{4}{3}$"
+                }
+              ],
+              "correct_options": [
+                "B"
+              ],
+              "answer": null,
+              "explanation": "<p>Given,</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6pcy4wl/622b4e80-8397-48ed-b46c-0333ec947199/eef50850-e258-11ef-9fcc-0b7d8b55eb07/file-jaoe38c1m6pcy4wm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6pcy4wl/622b4e80-8397-48ed-b46c-0333ec947199/eef50850-e258-11ef-9fcc-0b7d8b55eb07/file-jaoe38c1m6pcy4wm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"CBSE 12th Mathematics Delhi Set 1 - 2024 Mathematics - Application of Integration Question 1 English Explanation\"></p>\n<p>$$\\begin{aligned}\n\\text { Required Area } &amp; =2 \\int_0^1 y d x \\\\\n&amp; =2 \\int_0^1 2 \\sqrt{x} d x \\\\\n&amp; =4 \\int_0^1 x^{1 / 2} d x \\\\\n&amp; =4\\left[\\frac{x^{3 / 2}}{3 / 2}\\right]_0^1 \\\\\n&amp; =\\frac{8}{3} \\text { square units }\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 154285,
+          "topic": null,
+          "type": "mcq",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Application of Integration • Mathematics",
+              "excerpt": "Area of the region bounded by curve $y^2=4 x$ and the $X$-axis between $x=0$ and $x=1$ is"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfmm",
+          "chapter": "inverse-trigonometric-function",
+          "chapterGroup": "relations-and-functions",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 2,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pfind-value-of-k-if-sin--1leftk-tan-left2-cos-class-12-mathematics-complex-numbers-0rn9yrvlr6xfwcq4",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Find value of $k$ if $\\sin ^{-1}\\left[k \\tan \\left(2 \\cos ^{-1} \\frac{\\sqrt{3}}{2}\\right)\\right]=\\frac{\\pi}{3}$.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>We have,</p>\n<p>$$\\begin{aligned}\n\\sin ^{-1}\\left[k \\tan \\left(2 \\cos ^{-1} \\frac{\\sqrt{3}}{2}\\right)\\right] & =\\frac{\\pi}{3} \\\\\nk\\left[\\tan \\left(2 \\cos ^{-1}\\left(\\cos \\frac{\\pi}{6}\\right)\\right)\\right] & =\\sin \\frac{\\pi}{3} \\\\\nk \\tan \\left(\\frac{\\pi}{3}\\right) & =\\frac{\\sqrt{3}}{2} \\\\\nk \\sqrt{3} & =\\frac{\\sqrt{3}}{2} \\\\\nk & =\\frac{1}{2}\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 308570,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Inverse Trigonometric Function • Mathematics",
+              "excerpt": "Find value of $k$ if $\\sin ^{-1}\\left[k \\tan \\left(2 \\cos ^{-1} \\frac{\\sqrt{3}}{2}\\right)\\right]=\\frac{\\pi}{3}$."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfp4",
+          "chapter": "continuity-and-differentiability",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 2,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-verify-whether-the-function-f-defined-by-fxlef-class-12-mathematics-complex-numbers-widbff2dkbmzkn2h",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>(a) Verify whether the function $f$ defined by $f(x)=\\left\\{\\begin{array}{cl}x \\sin \\left(\\frac{1}{x}\\right), & x \\neq 0 \\\\ 0, & x=0\\end{array}\\right.$ is continuous at $x=0$ or not.</p>\n<p>OR</p>\n<p>(b) Check for differentiability of the function $f$ defined by $f(x)=|x-5|$, at the point $x=5$.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>(a) Given, $$f(x)= \\begin{cases}x \\sin \\left(\\frac{1}{x}\\right), & x \\neq 0 \\\\ 0, & x=0\\end{cases}$$</p>\n<p>$$\\begin{aligned}\n\\text{for a continuous function,}\\\\\n\\mathrm{LHL} & =\\mathrm{RHL}=f(a) \\\\\n\\text{Now,}\\quad \\mathrm{LHL} & =\\lim _{x \\rightarrow 0^{-}} x \\sin \\frac{1}{x}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\lim _{h \\rightarrow 0}(0-h) \\sin \\left(\\frac{1}{0-h}\\right) \\\\\n& =\\lim _{h \\rightarrow 0}-h \\sin \\left(-\\frac{1}{h}\\right) \\\\\n& =\\lim _{h \\rightarrow 0} h \\sin \\left(\\frac{1}{h}\\right) \\\\\n& =0 \\times \\sin (\\infty) \\\\\n& =0\n\\end{aligned}$$</p>\n<p>and $$\\begin{aligned}\n\\mathrm{RHL} & =\\lim _{x \\rightarrow 0^{+}} x \\sin \\frac{1}{x} \\\\\n& =\\lim _{h \\rightarrow 0}(0+h) \\sin \\left(\\frac{1}{0+h}\\right) \\\\\n& =\\lim _{h \\rightarrow 0} h \\sin \\left(\\frac{1}{h}\\right) \\\\\n& =0 \\cdot \\sin (\\infty)=0\n\\end{aligned}$$</p>\n<p>So, $\\quad$ LHL $=$ RHL $=f(0)$</p>\n<p>Hence, $f(x)$ is continuous at $x=0$</p>\n<p>OR</p>\n<p>$$\\begin{aligned}\n& \\text { (b) Given } \\\\\n& f(x)=|x-5| \\\\\n& \\therefore \\quad f(x)=\\left\\{\\begin{array}{cc}\n(x-5) & x \\geq 5 \\\\\n-(x-5) & x<5\n\\end{array}\\right.\n\\end{aligned}$$</p>\n<p>Here,</p>\n<p>$$\\begin{aligned}\n\\text { LHD } & =\\lim _{h \\rightarrow 0} \\frac{f(x-h)-f(x)}{-h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{f(5-h)-f(5)}{-h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{-(5-h-5)-0}{-h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{h}{-h}=-1\n\\end{aligned}$$</p>\n<p>and</p>\n<p>$$\\begin{aligned}\n\\text { RHD } & =\\lim _{h \\rightarrow 0} \\frac{f(5+h)-f(5)}{h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{(5+h-5)-0}{h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{h}{h} \\\\\n& =1\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 308570,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Continuity and Differentiability • Mathematics",
+              "excerpt": "(a) Verify whether the function $f$ defined by $f(x)=\\left\\{\\begin{array}{cl}x \\sin \\left(\\frac{1}{x}\\right), & x \\neq 0 \\\\ 0, & x=0\\end{array}\\right.$ is continuous at $x=0$ or not.\nOR\n(b) Check for differentiability of the function $f$ de..."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfrw",
+          "chapter": "application-of-derivatives",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 2,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pthe-area-of-the-circle-is-increasing-at-a-uniform-rate-of-class-12-mathematics-complex-numbers-dgf4eyj0vejkddpx",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>The area of the circle is increasing at a uniform rate of $2 \\mathrm{~cm}^2 / \\mathrm{s}$. How fast is the circumference of the circle increasing when the radius $r=5 \\mathrm{~cm}$ ?</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>$$\\begin{aligned}\n&\\text { Let radius of the circle be } r \\mathrm{~cm} \\text {. }\\\\\n&\\begin{aligned}\n& \\text { Given } & \\frac{d A}{d t} & =2 \\mathrm{~cm}^2 / \\mathrm{s} \\\\\n& \\text { since } & A & =\\pi r^2 \\\\\n& \\therefore & \\frac{d A}{d t} & =2 \\pi r \\frac{d r}{d t}\\quad\\text{.... (i)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Also, circumference, } C=2 \\pi r\\\\\n&\\therefore \\quad \\frac{d C}{d t}=2 \\pi \\frac{d r}{d t}\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{llrl}\n\\text { from (i), } & 2 =2 \\pi r \\frac{d r}{d t} \\\\\n\\Rightarrow & \\frac{d r}{d t} =\\frac{1}{\\pi r}\n\\end{array}$$</p>\n<p>Now, substituting the value of $\\frac{d r}{d t}$ in eq. (ii) we get</p>\n<p>$$\\begin{aligned}\n\\frac{d c}{d t} & =2 \\pi \\frac{1}{\\pi r}=\\frac{2}{r} \\\\\n\\text{Now,}\\quad\\left.\\frac{d C}{d t}\\right|_{\\text {at } r=5} & =\\frac{2}{5} \\\\\n& =0.4 \\mathrm{~cm} / \\mathrm{s}\n\\end{aligned}$$</p>\n<p>Thus, circumference of circle increases at the rate of $0.4 \\mathrm{~cm} / \\mathrm{s}$.</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 308570,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Application of Derivatives • Mathematics",
+              "excerpt": "The area of the circle is increasing at a uniform rate of $2 \\mathrm{~cm}^2 / \\mathrm{s}$. How fast is the circumference of the circle increasing when the radius $r=5 \\mathrm{~cm}$ ?"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfu5",
+          "chapter": "indefinite-integration",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 2,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-find-int-cos-3-x-elog-sin-x-d-xp-por-class-12-mathematics-complex-numbers-fq8bs1kihjsczura",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>(a) Find: $\\int \\cos ^3 x e^{\\log \\sin x} d x$</p>\n<p>OR</p>\n<p>(b) Find: $\\int \\frac{1}{5+4 x-x^2} d x$</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>$$\\begin{array}{ll}\n\\text { (a) Let } & I=\\int \\cos ^3 x e^{\\log \\sin x} d x \\\\\n\\text { or } & I=\\int \\cos ^3 x \\sin x d x\n\\end{array}$$</p>\n<p>Put $\\cos x=t \\Rightarrow-\\sin x d x=d t$</p>\n<p>$$\\therefore \\quad I=-\\int t^3 d t$$</p>\n<p>or, $$I=-\\frac{t^4}{4}+C$$</p>\n<p>or, $$I=-\\frac{\\cos ^4 x}{4}+C$$</p>\n<p>OR</p>\n<p>(b) Let</p>\n<p>$$\\begin{aligned}\nI & =\\int \\frac{d x}{5+4 x-x^2} \\\\\n& =\\int \\frac{d x}{5+4-4+4 x-x^2} \\\\\n& =\\int \\frac{d x}{(3)^2-(x-2)^2} \\\\\n& =\\frac{1}{2 \\times 3} \\log \\left|\\frac{3+(x-2)}{3-(x-2)}\\right|+C \\\\\n{[\\text { using }} & \\left.\\int \\frac{1}{a^2-x^2} d x=\\frac{1}{2 a} \\log \\left|\\frac{a+x}{a-x}\\right|+C\\right] \\\\\n& =\\frac{1}{6} \\log \\left|\\frac{x+1}{5-x}\\right|+C\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 308570,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Indefinite Integration • Mathematics",
+              "excerpt": "(a) Find: $\\int \\cos ^3 x e^{\\log \\sin x} d x$\nOR\n(b) Find: $\\int \\frac{1}{5+4 x-x^2} d x$"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfwb",
+          "chapter": "three-dimensional-geometry",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 2,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pfind-the-vector-equation-of-the-line-passing-through-the-class-12-mathematics-complex-numbers-xms1o7vqdfjesmqb",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Find the vector equation of the line passing through the point $(2,3,-5)$ and making equal angles with the co-ordinate axes.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>Given $$\\alpha=\\beta=\\gamma$$</p>\n<p>Now,</p>\n<p>$$\\begin{aligned}\n& \\cos ^2 \\alpha+\\cos ^2 \\beta+\\cos ^2 \\beta=1 \\\\\n& \\therefore \\quad 3 \\cos ^2 \\alpha=1\\quad [\\because \\alpha=\\beta=\\gamma]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { or, }\\quad\\cos ^2 \\alpha & =\\frac{1}{3} \\\\\n\\text { or, }\\quad\\cos \\alpha & = \\pm \\frac{1}{\\sqrt{3}}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Thus, $\\cos \\alpha=\\cos \\beta=\\cos \\gamma= \\pm \\frac{1}{\\sqrt{3}}=l=m=n$</p>\n<p>Let required equation of line is $\\vec{r}=\\vec{a}+k \\vec{b}$</p>\n<p>Here,</p>\n<p>$$\\begin{aligned}\n\\vec{a} & =2 \\hat{i}+3 \\hat{j}-5 \\hat{k} \\\\\n\\vec{b} & = \\pm \\frac{1}{\\sqrt{3}}(\\hat{i}+\\hat{j}+\\hat{k})\n\\end{aligned}$$</p>\n<p>Thus, required equation is</p>\n<p>$$\\vec{r}=(2 \\hat{i}+3 \\hat{j}-5 \\hat{k}) \\pm \\frac{1}{\\sqrt{3}}(\\hat{i}+\\hat{j}+\\hat{k})$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 308570,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Three Dimensional Geometry • Mathematics",
+              "excerpt": "Find the vector equation of the line passing through the point $(2,3,-5)$ and making equal angles with the co-ordinate axes."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wfyu",
+          "chapter": "continuity-and-differentiability",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 3,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-find-fracd-yd-x--if-cos-xycos-yx-class-12-mathematics-complex-numbers-wpljwvuhnfva5uak",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>(a) Find $\\frac{d y}{d x}$, , if $(\\cos x)^y=(\\cos y)^x$.</p>\n<p>OR</p>\n<p>(b) If $\\sqrt{1-x^2}+\\sqrt{1-y^2}=a(x-y)$, prove that $\\frac{d y}{d x}=\\sqrt{\\frac{1-y^2}{1-x^2}}$.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>(a) Given, $\\quad(\\cos x)^y=(\\cos y)^x$</p>\n<p>Taking $\\log$ on both sides, we get</p>\n<p>$$y \\log (\\cos x)=x \\log (\\cos y)$$</p>\n<p>Differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\frac{d y}{d x} \\cdot \\log (\\cos x)+y \\cdot\\left(\\frac{-\\sin x}{\\cos x}\\right)=1 \\cdot \\log (\\cos y)+x \\cdot\\left(\\frac{-\\sin y}{\\cos y}\\right) \\frac{d y}{d x}$$</p>\n<p>$$\\begin{aligned}\n\\frac{d y}{d x} \\cdot \\log (\\cos x)-\\frac{y \\sin x}{\\cos x} & =\\log (\\cos y)-\\frac{x \\sin y}{\\cos y} \\frac{d y}{d x} \\\\\n\\frac{d y}{d x}\\left[\\log (\\cos x)+\\frac{y \\sin y}{\\cos y}\\right] & =\\log (\\cos y)+\\frac{y \\sin x}{\\cos x} \\\\\n\\frac{d y}{d x}(\\log \\cos x+x \\tan y) & =\\log (\\cos y)+y \\tan x \\\\\n\\frac{d y}{d x} & =\\frac{\\log (\\cos y)+y \\tan x}{\\log (\\cos x)+\\tan y}\n\\end{aligned}$$</p>\n<p>OR</p>\n<p>(b) Given, $\\sqrt{1-x^2}+\\sqrt{1-y^2}=a(x-y)$</p>\n<p>Put $$x=\\sin \\theta \\text { and } y=\\sin \\phi$$</p>\n<p>$$\\therefore \\quad \\theta=\\sin ^{-1} x \\text { and } \\phi=\\sin ^{-1} y$$</p>\n<p>Now, $\\sqrt{1-\\sin ^2 \\theta}+\\sqrt{1-\\sin ^2 \\phi}=a(\\sin \\theta-\\sin \\phi)$</p>\n<p>$$\\begin{aligned}\n\\cos \\theta+\\cos \\phi & =a(\\sin \\theta-\\sin \\phi) \\\\\n2 \\cos \\left(\\frac{\\theta+\\phi}{2}\\right) \\cos \\left(\\frac{\\theta-\\phi}{2}\\right) & =2 a \\cos \\left(\\frac{\\theta+\\phi}{2}\\right) \\cdot \\sin \\left(\\frac{\\theta-\\phi}{2}\\right)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\frac{\\cos \\left(\\frac{\\theta-\\phi}{2}\\right)}{\\sin \\left(\\frac{\\theta-\\phi}{2}\\right)} & =a \\\\\n\\cot \\left(\\frac{\\theta-\\phi}{2}\\right) & =a \\\\\n\\frac{\\theta-\\phi}{2} & =\\cot ^{-1} a \\\\\n\\theta-\\phi & =2 \\cot ^{-1} a \\\\\n\\therefore \\quad \\sin ^{-1} x-\\sin ^{-1} y & =2 \\cot ^{-1} a\n\\end{aligned}\\\\\n&\\text { Differentiating w.r.t. } x \\text {, we get }\\\\\n&\\begin{aligned}\n\\frac{1}{\\sqrt{1-x^2}}-\\frac{1}{\\sqrt{1-y^2}} \\frac{d y}{d x} & =0 \\\\\n\\frac{d y}{d x} & =\\sqrt{\\frac{1-y^2}{1-x^2}}\n\\end{aligned}\n\\end{aligned}$$<p>\n<p>Hence proved.</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 462855,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Continuity and Differentiability • Mathematics",
+              "excerpt": "(a) Find $\\frac{d y}{d x}$, , if $(\\cos x)^y=(\\cos y)^x$.\nOR\n(b) If $\\sqrt{1-x^2}+\\sqrt{1-y^2}=a(x-y)$, prove that $\\frac{d y}{d x}=\\sqrt{\\frac{1-y^2}{1-x^2}}$."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wg1d",
+          "chapter": "application-of-derivatives",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 3,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pif-xa-sin-3-theta-yb-cos-3-thetathen-find-f-class-12-mathematics-complex-numbers-hmv2mdujgcboxrqu",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>If $x=a \\sin ^3 \\theta, y=b \\cos ^3 \\theta$,then find $\\frac{d^2 y}{d x^2}$ at $\\theta=\\frac{\\pi}{4}$.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>Given, $x=a \\sin ^3 \\theta$ and $y=a \\cos ^3 \\theta$</p>\n<p>$$\\begin{aligned}\n& \\frac{d x}{d \\theta}=3 a \\sin ^2 \\theta \\cos \\theta \\\\\n& \\frac{d y}{d \\theta}=-3 a \\cos ^2 \\theta \\sin \\theta \\\\\n& \\text { and } \\\\\n& \\therefore \\quad \\frac{d y}{d x}=\\frac{-3 a \\cos ^2 \\theta \\sin \\theta}{3 a \\sin ^2 \\theta \\cos \\theta} \\\\\n& =-\\cot \\theta \\\\\n& \\text { and } \\quad \\frac{d^2 y}{d x^2}=\\frac{d}{d \\theta}(-\\cot \\theta) \\frac{d \\theta}{d x} \\\\\n& =\\operatorname{cosec}^2 \\theta \\frac{1}{3 a \\sin ^2 \\theta \\cos \\theta} \\\\\n& =\\frac{1}{3 a \\sin ^4 \\theta \\cos \\theta} \\\\\n& \\text { Now, }\\left.\\quad \\frac{d^2 y}{d x^2}\\right|_{\\text {at } x=\\frac{\\pi}{4}}=\\frac{1}{3 \\cdot a\\left(\\frac{1}{\\sqrt{2}}\\right)^4 \\cdot \\frac{1}{\\sqrt{2}}} \\\\\n& =\\frac{1}{3 \\cdot a \\frac{1}{4} \\cdot \\frac{1}{\\sqrt{2}}}=\\frac{4 \\sqrt{2}}{3 a}\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 462855,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Application of Derivatives • Mathematics",
+              "excerpt": "If $x=a \\sin ^3 \\theta, y=b \\cos ^3 \\theta$,then find $\\frac{d^2 y}{d x^2}$ at $\\theta=\\frac{\\pi}{4}$."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wg45",
+          "chapter": "definite-integration",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 3,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-evaluate-int0pi-fracecos-xecos-xe-class-12-mathematics-complex-numbers-4lbsp3xsntqpkfdt",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>(a) Evaluate: $\\int_0^\\pi \\frac{e^{\\cos x}}{e^{\\cos x}+e^{-\\cos x}} d x$</p>\n<p>OR</p>\n<p>(b) Find: $\\int \\frac{2 x+1}{(x+1)^2(x-1)} d x$</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>$$\\begin{aligned}\n\\text{Let}\\quad & I=\\int_0^\\pi \\frac{e^{\\cos x}}{e^{\\cos x}+e^{-\\cos x}} d x \\quad\\text{.... (i)}\\\\\n\\therefore\\quad & I=\\int_0^\\pi \\frac{e^{\\cos (\\pi-x)}}{e^{\\cos (\\pi-x)}+e^{-\\cos (\\pi-x)} d x} \\\\\n& {\\left[\\text { Using } \\int_0^\\pi f(x) d x=\\int_0^\\pi f(a-x) d x\\right]} \\\\\n\\text{or,}\\quad & I=\\int_0^\\pi \\frac{e^{-\\cos x}}{e^{-\\cos x}+e^{\\cos x}} d x\\quad\\text{... (ii)}\n\\end{aligned}$$</p>\n<p>On adding eqs. (i) \\& (ii), we get</p>\n<p>$$\\begin{aligned}\n2 I & =\\int_0^\\pi \\frac{e^{\\cos x}+e^{-\\cos x}}{e^{\\cos x}+e^{-\\cos x}} d x \\\\\n& =\\int_0^\\pi d x \\\\\n& =[x]_0^\\pi=\\pi \\\\\n\\therefore \\quad I & =\\frac{\\pi}{2}\n\\end{aligned}$$</p>\n<p>OR</p>\n<p>(b) Let $$I=\\int \\frac{2 x+1}{(x+1)^2(x-1)} d x$$</p>\n<p>Let $\\frac{2 x+1}{(x+1)^2(x-1)}=\\frac{A}{(x+1)}+\\frac{B}{(x+1)^2}+\\frac{C}{(x-1)}$</p>\n<p>$$\\begin{aligned}\n& 2 x+1=A(x+1)(x-1)+B(x-1)+C(x+1)^2 \\\\\n& 2 x+1=A\\left(x^2-1\\right)+B x-B+C\\left(x^2+2 x+1\\right)\n\\end{aligned}$$</p>\n<p>On comparing, we get</p>\n<p>$$A+C=0 ; B+2 C=2 \\text { and }-A-B+C=1$$</p>\n<p>On solving, we get</p>\n<p>$$\\begin{aligned}\n& A=\\frac{-3}{4}, B=\\frac{1}{2} \\text { and } C=\\frac{3}{4} \\\\\n& \\therefore \\quad \\frac{2 x+1}{(x+1)^2(x-1)}=\\frac{-3}{4(x+1)}+\\frac{1}{2(x+1)^2}+\\frac{3}{4(x-1)}\n\\end{aligned}$$</p>\n<p>Thus, $\\int \\frac{2 x+1}{(x+1)^2(x-1)} d x$</p>\n<p>$$\\begin{aligned}\n& =-\\frac{3}{4} \\int \\frac{1}{(x+1)} d x+\\frac{1}{2} \\int \\frac{1}{(x+1)^2} d x+\\frac{3}{4} \\int \\frac{1}{(x-1)} d x \\\\\n& =-\\frac{3}{4} \\log |x+1|+\\frac{1}{2} I_1+\\frac{3}{4} \\log |x-1|+C_1\n\\end{aligned}$$</p>\n<p>How, $\\quad I_1=\\int \\frac{1}{(x+1)^2} d x$</p>\n<p>let $x+1=u \\Rightarrow d x=d u$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad I_1 & =\\int \\frac{1}{u^2} d u=\\frac{u^{-2+1}}{-2+1}+C_2 \\\\\n& =-\\frac{1}{u}+C_2=-\\frac{1}{(x+1)}+C_2\n\\end{aligned}$$</p>\n<p>Therefore, $\\int \\frac{2 x+1}{(x+1)^2(x-1)} d x$</p>\n<p>$$=-\\frac{3}{4} \\log |x+1|-\\frac{1}{2(x+1)}+\\frac{3}{4} \\log |x-1|+\\mathrm{C}$$</p>\n<p>Where $C=C_1+C_2$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 462855,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Definite Integration • Mathematics",
+              "excerpt": "(a) Evaluate: $\\int_0^\\pi \\frac{e^{\\cos x}}{e^{\\cos x}+e^{-\\cos x}} d x$\nOR\n(b) Find: $\\int \\frac{2 x+1}{(x+1)^2(x-1)} d x$"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wg74",
+          "chapter": "differential-equations",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 3,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-find-the-particular-solution-of-the-differential-equa-class-12-mathematics-complex-numbers-ygs85dyigjqbq7wd",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>(a) Find the particular solution of the differential equation $\\frac{d y}{d x}-2 x y=3^{x^2} e^{x^2} ; y(0)=5$.</p>\n<p>OR</p>\n<p>(b) Solve the following differential equation:\n\n$$\nx^2 d y+y(x+y) d x=0\n$$\n</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>(a) Given differential equation is</p>\n<p>$$\\frac{d y}{d x}-2 x y=3 x^2 e^{x^2}$$</p>\n<p>On comparing the above equation with</p>\n<p>$$\\frac{d y}{d x}+P y=Q$$</p>\n<p>We get $P=-2 x, Q=3 x^2 e^{x^2}$</p>\n<p>$$\\therefore \\quad I=e^{\\int P d x}=e^{-\\int 2 x d x}$$</p>\n<p>$$\\begin{aligned}\n& =e^{-2\\left(\\frac{x^2}{2}\\right)}=e^{-x^2} \\\\\ny \\cdot e^{-x^2} & =\\int 3 x^2 e^{x^2} \\cdot\\left(e^{-x^2}\\right) d x+C\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{or,}\\quad y \\cdot e^{-x^2} & =3 \\int x^2 d x+C \\\\\n\\text{or,\n}\\quad \\frac{y}{e^{x^2}} & =3\\left[\\frac{x^3}{3}\\right]+C\n\\end{aligned}$$</p>\n<p>or, $$\\frac{y}{e^{x^2}}=x^3+C$$</p>\n<p>or, $$y=e^{x^2} x^3+C e^{x^2}$$</p>\n<p>Given $$y(0)=5$$</p>\n<p>$$\\therefore \\quad 5=0+C e^0 \\Rightarrow C=5$$</p>\n<p>Thus, required solution is</p>\n<p>or $$y=e^{x^2}\\left(x^3+5\\right)$$</p>\n<p>OR</p>\n<p>(b) We have,</p>\n<p>$$\\begin{aligned}\nx^2 d y+y(x+y) d x & =0 \\\\\n\\frac{x^2}{y} \\frac{d y}{d x}+(x+y) & =0 \\\\\n\\frac{x^2}{y^2} \\frac{d y}{d x}+\\frac{x}{y}+1 & =0\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{Put }\\quad y & =v x \\\\\n\\Rightarrow\\quad\\frac{d y}{d x} & =V+x \\frac{d V}{d x}\n\\end{aligned}$$</p>\n<p>From eq (i), we get</p>\n<p>$$\\begin{aligned}\n& & \\frac{1}{V^2}\\left(V+x \\frac{d V}{d x}\\right)+\\frac{1}{V}+1 & =0 \\\\\n\\Rightarrow & & x \\frac{d V}{d x} & =-\\left(2 V+V^2\\right) \\\\\n\\Rightarrow & & \\frac{1}{2}\\left[\\frac{1}{V}-\\frac{1}{V+2}\\right] d V & =-\\frac{d x}{x}\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\Rightarrow \\quad \\frac{1}{2}(\\log V-\\log V+2)=-\\log x+C_1$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{1}{2} \\log \\left(\\frac{V}{V+2}\\right)=-\\log x+C_1 \\\\\n\\Rightarrow & \\log \\left(\\frac{V}{V+2}\\right)=-2 \\log x+\\log k\n\\end{array}$$</p>\n<p>where $k=e^{2 C_1}$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & & \\log \\left(\\frac{V}{V+2}\\right) & =\\log \\left(\\frac{k}{x^2}\\right) \\\\\n\\Rightarrow & & \\frac{V}{V+2} & =\\frac{k}{x^2}\n\\end{aligned}$$</p>\n<p>Substituting $V=\\frac{y}{x}$, we get</p>\n<p>$$\\begin{aligned}\n& \\frac{y}{2 x+y}=\\frac{k}{x^2} \\\\\n& \\Rightarrow x^2 y=C^2(2 x+y) \\text { where } k=C^2\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 462855,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Differential Equations • Mathematics",
+              "excerpt": "(a) Find the particular solution of the differential equation $\\frac{d y}{d x}-2 x y=3^{x^2} e^{x^2} ; y(0)=5$.\nOR\n(b) Solve the following differential equation:\n\n$$\nx^2 d y+y(x+y) d x=0\n$$\n"
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wga0",
+          "chapter": "vector-algebra",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 3,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pfind-a-vector-of-magnitude-4-units-perpendicular-to-each-class-12-mathematics-complex-numbers-inut3foay4ta9byz",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Find a vector of magnitude 4 units perpendicular to each of the vectors $2 \\hat{i}-\\hat{j}+\\hat{k}$ and $\\hat{i}+\\hat{j}-\\hat{k}$ and hence verify your answer.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>Given vectors are :</p>\n<p>$$\\begin{aligned}\n\\vec{a} & =2 \\hat{i}-\\hat{j}+\\hat{k} \\\\\n\\vec{b} & =\\hat{i}+\\hat{j}-\\hat{k} \\\\\n\\vec{a} \\times \\vec{b} & =\\left|\\begin{array}{ccc}\n\\hat{i} & \\hat{j} & \\hat{k} \\\\\n2 & -1 & 1 \\\\\n1 & 1 & -1\n\\end{array}\\right| \\\\\n& =\\hat{i}(1-1)-\\hat{j}(-2-1)+\\hat{k}(2+1) \\\\\n& =3 \\hat{j}+3 \\hat{k}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Now, }\\\\\n&\\begin{aligned}\n|\\vec{a} \\times \\vec{b}| & =\\sqrt{(3)^2+(3)^2}=\\sqrt{9+9} \\\\\n& =\\sqrt{18}=3 \\sqrt{2}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Therefore required vector is, } 4\\left(\\frac{\\vec{a} \\times \\vec{b}}{|\\vec{a} \\times \\vec{b}|}\\right)\\\\\n&\\begin{aligned}\n& =\\frac{4}{3 \\sqrt{2}}(3 \\hat{j}+3 \\hat{k}) \\\\\n& =\\frac{2 \\sqrt{2}}{3} \\times 3(\\hat{j}+\\hat{k}) \\\\\n& =2 \\sqrt{2}(\\hat{j}+\\hat{k})\n\\end{aligned}\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 462855,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Vector Algebra • Mathematics",
+              "excerpt": "Find a vector of magnitude 4 units perpendicular to each of the vectors $2 \\hat{i}-\\hat{j}+\\hat{k}$ and $\\hat{i}+\\hat{j}-\\hat{k}$ and hence verify your answer."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1whw1",
+          "chapter": "matrices",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 4,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-if-aleftbeginarrayccc1--2--3--2--0--class-12-mathematics-complex-numbers-a4xlrpxfgyqa2npj",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>(a) If $A=\\left[\\begin{array}{ccc}1 & 2 & -3 \\\\ 2 & 0 & -3 \\\\ 1 & 2 & 0\\end{array}\\right]$, then find $A^{-1}$ and hence solve the following system of equations:</p>\n<p>$$\\begin{array}{r}\nx+2 y-3 z=1 \\\\\n2 x-3 z=2 \\\\\nx+2 y=3\n\\end{array}$$</p>\n<p>OR</p>\n<p>(b) Find the product of the matrices $\\left[\\begin{array}{ccc}1 & 2 & -3 \\\\ 2 & 3 & 2 \\\\ 3 & -3 & -4\\end{array}\\right]\\left[\\begin{array}{ccc}-6 & 17 & 13 \\\\ 14 & 5 & -8 \\\\ -15 & 9 & -1\\end{array}\\right]$ and hence solve the system of linear equations:</p>\n<p>$$\\begin{aligned}\nx+2 y-3 z & =4 \\\\\n2 x+3 y+2 z & =2 \\\\\n3 x-3 y-4 z & =11\n\\end{aligned}$$</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>Given,</p>\n<p>$$\\begin{aligned}\nA & =\\left[\\begin{array}{ccc}\n1 & 2 & -3 \\\\\n2 & 0 & -3 \\\\\n1 & 2 & 0\n\\end{array}\\right] \\\\\n|A| & =1(0+6)-2(0+3)-3(4-0) \\\\\n& =6-6-12=-12 \\neq 0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\Rightarrow \\text { inverse exists co-factors are }\\\\\n&\\begin{aligned}\n& C_{11}=(-1)^2\\left|\\begin{array}{cc}\n0 & -3 \\\\\n2 & 0\n\\end{array}\\right|=6 \\\\\n& C_{12}=(-1)^3\\left|\\begin{array}{cc}\n2 & -3 \\\\\n1 & 0\n\\end{array}\\right|=-3 \\\\\n& C_{13}=(-1)^4\\left|\\begin{array}{ll}\n2 & 0 \\\\\n1 & 2\n\\end{array}\\right|=4 \\\\\n& C_{21}=(-1)^3\\left|\\begin{array}{cc}\n2 & -3 \\\\\n2 & 0\n\\end{array}\\right|=-6 \\\\\n& C_{22}=(-1)^4\\left|\\begin{array}{ll}\n1 & -3 \\\\\n1 & 0\n\\end{array}\\right|=3 \\\\\n& C_{23}=(-1)^5\\left|\\begin{array}{ll}\n1 & 2 \\\\\n1 & 2\n\\end{array}\\right|=0 \\\\\n& C_{31}=(-1)^4\\left|\\begin{array}{ll}\n2 & -3 \\\\\n0 & -3\n\\end{array}\\right|=-6 \\\\\n& C_{32}=(-1)^5\\left|\\begin{array}{ll}\n1 & -3 \\\\\n2 & -3\n\\end{array}\\right|=-3\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&C_{33}=(-1)^6\\left|\\begin{array}{ll}\n1 & 2 \\\\\n2 & 0\n\\end{array}\\right|=-4\\\\\n&\\text { The adjoint of the matrix } \\mathrm{A} \\text { is given by }\\\\\n&\\begin{aligned}\n\\operatorname{adj}(A) & =\\left[\\begin{array}{lll}\nC_{11} & C_{21} & C_{31} \\\\\nC_{12} & C_{22} & C_{32} \\\\\nC_{13} & C_{23} & C_{33}\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ccc}\n6 & -6 & -6 \\\\\n-3 & 3 & -3 \\\\\n4 & 0 & -4\n\\end{array}\\right] \\\\\n\\therefore \\quad A^{-1} & =\\frac{(\\operatorname{adj} A)}{|A|}=-\\frac{1}{12}\\left[\\begin{array}{ccc}\n6 & -6 & -6 \\\\\n-3 & 3 & -3 \\\\\n4 & 0 & -4\n\\end{array}\\right] \\\\\n& =\\frac{1}{12}\\left[\\begin{array}{ccc}\n-6 & 6 & 6 \\\\\n3 & -3 & 3 \\\\\n-4 & 0 & 4\n\\end{array}\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Given system of linear equations are</p>\n<p>$$\\begin{array}{r}\nx+2 y-3 z=1 \\\\\n2 x-3 z=2 \\\\\nx+2 y=3\n\\end{array}$$</p>\n<p>Represent it in matrix form</p>\n<p>$$\\left[\\begin{array}{ccc}\n1 & 2 & -3 \\\\\n2 & 0 & -3 \\\\\n0 & 2 & 1\n\\end{array}\\right]\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{l}\n1 \\\\\n2 \\\\\n3\n\\end{array}\\right]$$</p>\n<p>Which is in the form $A X=B$</p>\n<p>$$X=A^{-1} B$$</p>\n<p>$$\\begin{aligned}\n&=\\frac{1}{12}\\left[\\begin{array}{ccc}\n-6 & 6 & 6 \\\\\n3 & -3 & 3 \\\\\n-4 & 0 & 4\n\\end{array}\\right]\\left[\\begin{array}{l}\n1 \\\\\n2 \\\\\n3\n\\end{array}\\right] \\\\\n&=\\frac{1}{12}\\left[\\begin{array}{c}\n24 \\\\\n6 \\\\\n8\n\\end{array}\\right] \\\\\n&=\\left[\\begin{array}{l}\n2 \\\\\n\\frac{1}{2} \\\\\n\\frac{2}{3}\n\\end{array}\\right] \\\\\n& \\therefore \\quad\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{l}\n2 \\\\\n\\frac{1}{2} \\\\\n\\frac{2}{3}\n\\end{array}\\right] \\\\\n& \\text { or, } x=2, y=\\frac{1}{2} \\text { and } z=\\frac{2}{3} \\\\\n& \\text { OR }\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { (b) We have, }\\\\\n&\\begin{aligned}\nA B & =\\left[\\begin{array}{ccc}\n1 & 2 & -3 \\\\\n2 & 3 & 2 \\\\\n3 & -3 & -4\n\\end{array}\\right]\\left[\\begin{array}{ccc}\n-6 & 17 & 13 \\\\\n14 & 5 & -8 \\\\\n-15 & 9 & -1\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ccc}\n-6+28+45 & 17+10-27 & 13-16+3 \\\\\n-12+42-30 & 34+15+18 & 26-24-2 \\\\\n-18-42+60 & 51-15-36 & 39+24+4\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ccc}\n67 & 0 & 0 \\\\\n0 & 67 & 0 \\\\\n0 & 0 & 67\n\\end{array}\\right] \\\\\n& =67\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{rlrl}\n\\text { Thus, } & A B =67 I \\\\\n\\Rightarrow & A\\left(\\frac{1}{67} B\\right) =I \\\\\n\\Rightarrow & A^{-1} =\\frac{1}{67}(B)\n\\end{array}$$</p>\n<p>Given system of linear equation is</p>\n<p>$$\\begin{aligned}\nx+2 y-3 z & =-4 \\\\\n2 x+3 y+2 z & =2 \\\\\n3 x-3 y-4 z & =11\n\\end{aligned}$$</p>\n<p>Represent it in matrix form as</p>\n<p>$$\\left[\\begin{array}{ccc}\n1 & 2 & -3 \\\\\n2 & 3 & 2 \\\\\n3 & -3 & -4\n\\end{array}\\right]\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{c}\n-4 \\\\\n2 \\\\\n11\n\\end{array}\\right]$$</p>\n<p>$$\\begin{aligned}\n&\\text { which is of the form } A X=D\\\\\n&\\therefore X=A^{-1} D\\\\\n&\\begin{aligned}\n&=\\frac{1}{67}(B) \\cdot D \\\\\n&=\\frac{1}{67}\\left[\\begin{array}{ccc}\n-6 & 17 & 13 \\\\\n14 & 5 & -8 \\\\\n-15 & 9 & -1\n\\end{array}\\right]\\left[\\begin{array}{c}\n-4 \\\\\n2 \\\\\n11\n\\end{array}\\right] \\\\\n&=\\frac{1}{67}\\left[\\begin{array}{c}\n201 \\\\\n-134 \\\\\n67\n\\end{array}\\right] \\\\\n&=\\left[\\begin{array}{c}\n3 \\\\\n-2 \\\\\n1\n\\end{array}\\right] \\\\\n& \\therefore x=3, y=-2 \\text { and } z=1\n\\end{aligned}\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 771425,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Matrices • Mathematics",
+              "excerpt": "(a) If $A=\\left[\\begin{array}{ccc}1 & 2 & -3 \\\\ 2 & 0 & -3 \\\\ 1 & 2 & 0\\end{array}\\right]$, then find $A^{-1}$ and hence solve the following system of equations:\n$$\\begin{array}{r}\nx+2 y-3 z=1 \\\\\n2 x-3 z=2 \\\\\nx+2 y=3\n\\end{array}$$\nOR\n(b) Fi..."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wjoa",
+          "chapter": "three-dimensional-geometry",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 4,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-find-the-co-ordinates-of-the-foot-of-the-perpendicula-class-12-mathematics-complex-numbers-8jrxhmevxuwuyujc",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>(a) Find the co-ordinates of the foot of the perpendicular drawn from the point $(2,3,-8)$ to the line $\\frac{4-x}{2}=\\frac{y}{6}=\\frac{1-z}{3}$.</p>\n<p>OR</p>\n<p>(b). Find the shortest distance between the lines $\\mathrm{L}_1 \\& \\mathrm{~L}_2$ given below:\n$\\mathrm{L}_1$ : The line passing through $(2,-1,1)$ and parallel to $\\frac{x}{1}=\\frac{y}{1}=\\frac{z}{3} \\mathrm{~L}_2: \\vec{r}=\\hat{i}+(2 \\mu+1) \\hat{j}-(\\mu+2) \\hat{k}$.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>(a) Given line is $\\frac{4-x}{2}=\\frac{y}{6}=\\frac{1-z}{3}$</p>\n<p>or, $\\quad \\frac{x-4}{-2}=\\frac{y}{6}=\\frac{z-1}{-3}=\\lambda$</p>\n<p>Now, the co-ordinates of any points $Q$ on the line are $(-2 \\lambda+4,6 \\lambda,-3 \\lambda+1)$.</p>\n<p>Also, the given point is $p(2,3,-8)$</p>\n<p>The direction ratios of PQ are $-2 \\lambda+4-2,6 \\lambda-3,-3 \\lambda$</p>\n<p>$$+1+8 \\text { i.e., }-2 \\lambda+2,6 \\lambda-3,-3 \\lambda+9$$</p>\n<p>Also, the direction cosines of the given line are $-2,6-3$.</p>\n<p>If $\\mathrm{PQ} \\perp$ line, then</p>\n<p>$$\\begin{aligned}\n-2(-2 \\lambda+2)+6(6 \\lambda-3)-3(-3 \\lambda+9) & =0 \\\\\n4 \\lambda-4+36 \\lambda-18+9 \\lambda-27 & =0 \\\\\n49 \\lambda-49 & =0 \\\\\n\\lambda & =1\n\\end{aligned}$$</p>\n<p>Now, the foot of the perpendicular is</p>\n<p>$$[-2(1)+4,6(1),-3(1)+1] \\text { i.e., }(2,6,-2)$$</p>\n<p>Hence, the distance PQ is</p>\n<p>$$\\begin{aligned}\n& =\\sqrt{(2-2)^2+(3-6)^2+(-8+2)^2} \\\\\n& =\\sqrt{0+9+36}=\\sqrt{45}=3 \\sqrt{5} \\text { units }\n\\end{aligned}$$</p>\n<p>OR</p>\n<p>(b) Given, $\\mathrm{L}_1$ : The line passing through $(2,-1,1)$ and parallel to $\\frac{x}{1}=\\frac{y}{1}=\\frac{z}{3}\\quad\\text{.... (i)}$</p>\n<p>Direction ratios of line (i) are $(1,1,3)$</p>\n<p>$\\therefore$ Vector equation of line passing through $(2,-1,1)$ having direction ratios is</p>\n<p>$\\vec{r}=(2 \\hat{i}-\\hat{j}+\\hat{k})+\\lambda(\\hat{i}+\\hat{j}+3 \\hat{k})\\quad\\text{.... (i)}$</p>\n<p>$$\\begin{aligned}\n\\text { Given, } & & \\mathrm{L}_2: \\vec{r} & =\\hat{i}+(3 \\mu+1) \\hat{j}-(\\mu+2) \\hat{k} \\\\\n\\text { or, } & & \\vec{r} & =(\\hat{i}+\\hat{j}-2 \\hat{k})+\\mu(3 \\hat{j}-\\hat{k})\\quad\\text{.... (iii)}\n\\end{aligned}$$</p>\n<p>Now, shortest distance between lines (ii) \\& (iii) is given by</p>\n<p>Here, $\\quad \\overrightarrow{a_1}=(2 \\hat{i}-\\hat{j}+\\hat{k}) \\overrightarrow{a_2}=(\\hat{i}+\\hat{j}-2 \\hat{k})$</p>\n<p>$$d=\\frac{\\left(\\vec{b}_1 \\times \\vec{b}_2\\right) \\cdot\\left(\\vec{a}_2 \\times \\vec{a}_1\\right)}{\\left|\\vec{b}_1 \\times \\vec{b}_2\\right|}$$</p>\n<p>$$\\overrightarrow{b_1}=(\\hat{i}+\\hat{j}+3 \\hat{k}), \\overrightarrow{b_2}=(3 \\hat{j}-\\hat{k})$$</p>\n<p>Now,</p>\n<p>$$\\begin{array}{r}\n\\overrightarrow{a_2}-\\overrightarrow{a_1}=(1-2) \\hat{i}+(1+1) \\hat{j}+(-2-1) \\hat{k} \\\\\n=-\\hat{i}+2 \\hat{j}-3 \\hat{k}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\overrightarrow{b_1} \\times \\overrightarrow{b_2} & =\\left|\\begin{array}{ccc}\n\\hat{i} & \\hat{j} & \\hat{k} \\\\\n1 & 1 & 3 \\\\\n0 & 3 & -1\n\\end{array}\\right| \\\\\n& =\\hat{i}(-1-9)-\\hat{j}(-1-0)+\\hat{k}(3-0) \\\\\n& =-10 \\hat{i}+\\hat{j}+3 \\hat{k}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { and } \\quad \\left|\\vec{b}_1 \\times \\vec{b}_2\\right| & =\\sqrt{(-10)^2+(1)^2+(3)^2} \\\\\n& =\\sqrt{100+1+9} \\\\\n& =\\sqrt{110} \\\\\n\\therefore \\quad d & =\\left|\\frac{(-\\hat{i}+2 \\hat{j}-3 \\hat{k})(-10 \\hat{i}+\\hat{j}+3 \\hat{k})}{\\sqrt{110}}\\right| \\\\\n& =\\left|\\frac{10+2-3}{\\sqrt{110}}\\right|=\\frac{9}{\\sqrt{110}} \\text { unit }\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 771425,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Three Dimensional Geometry • Mathematics",
+              "excerpt": "(a) Find the co-ordinates of the foot of the perpendicular drawn from the point $(2,3,-8)$ to the line $\\frac{4-x}{2}=\\frac{y}{6}=\\frac{1-z}{3}$.\nOR\n(b). Find the shortest distance between the lines $\\mathrm{L}_1 \\& \\mathrm{~L}_2$ given bel..."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wosq",
+          "chapter": "probability",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 5,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-departmental-store-sends-bills-to-charge-its-customers-class-12-mathematics-complex-numbers-rrgldhvo5i8eflog",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>A departmental store sends bills to charge its customers once a month. Past experience shows that $70 \\%$ of its customers pay their first month bill in time. The store also found that the customer who pays the bill in time has the probability of 0.8 of paying in time next month and the customer who doesn't pay in time has the probability of 0.4 of paying in time the next month.</p>\n<p>Based on the above information, answer the following questions:</p>\n<p>(i) Let $E_1$ and $E_2$ respectively, denote the event of customer paying or not paying the first month bill in time.</p>\n<p>(ii) Let A denotes the event of customer paying second month's bill in time, then find $P\\left(A \\mid E_1\\right)$ and $P\\left(A \\mid E_2\\right)$.</p>\n<p>(iii) Find the probability of customer paying second month's bill in time.</p>\n<p>OR</p>\n<p>(iii) Find the probability of customer paying first month's bill in time if it is found that customer has paid the second month's bill in time.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>(i) $P\\left(E_1\\right)=$ Probability that customer pyas the bill in first time</p>\n<p>$P\\left(E_2\\right)=$ Probability that customer does not pay the bill in first time.</p>\n<p>$\\therefore \\quad P\\left(E_1\\right)=\\frac{70}{100}=\\frac{7}{10}$</p>\n<p>and $$P\\left(E_2\\right)=\\frac{30}{100}=\\frac{3}{10}$$</p>\n<p>(ii) $A=$ Event that customer pay the bill in $2^{\\text {nd }}$ month on time</p>\n<p>$$\\begin{aligned}\nP\\left(\\frac{A}{E_1}\\right) & =0.8=\\frac{8}{10} \\\\\n\\text { and } \\quad P\\left(\\frac{A}{E_2}\\right) & =0.4=\\frac{4}{10}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{(iii)}\\quad P(A) & =P\\left(E_1\\right) \\cdot P\\left(\\frac{A}{E_1}\\right)+P\\left(E_2\\right) \\cdot P\\left(\\frac{A}{E_2}\\right) \\\\\n& =\\frac{7}{10} \\times \\frac{8}{10}+\\frac{3}{10} \\times \\frac{4}{10} \\\\\n& =\\frac{56}{100}+\\frac{12}{100} \\\\\n& =\\frac{68}{100}=\\frac{17}{25}\n\\end{aligned}$$</p>\n<p>OR</p>\n<p>$P\\left(\\frac{E_1}{A}\\right)=\\frac{P\\left(E_1\\right) \\cdot P\\left(\\frac{A}{E_1}\\right)}{P\\left(E_1\\right) \\cdot P\\left(\\frac{A}{E_1}\\right)+P\\left(E_2\\right) \\cdot P\\left(\\frac{A}{E_2}\\right)}$</p>\n<p>$$\\begin{aligned}\n& =\\frac{\\frac{7}{10} \\times \\frac{8}{10}}{\\frac{7}{10} \\times \\frac{8}{10}+\\frac{3}{10} \\times \\frac{4}{10}} \\\\\n& =\\frac{\\frac{56}{100}}{\\frac{68}{100}}=\\frac{56}{68}=\\frac{14}{17}\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 617140,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Probability • Mathematics",
+              "excerpt": "A departmental store sends bills to charge its customers once a month. Past experience shows that $70 \\%$ of its customers pay their first month bill in time. The store also found that the customer who pays the bill in time has the probabil..."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1woyd",
+          "chapter": "probability",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 3,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pthe-random-variable-x-has-the-following-probability-dis-class-12-mathematics-complex-numbers-bda3o5wbsqdlrbjy",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>The random variable $X$ has the following probability distribution where $a$ and $b$ are some constants:</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 675px\"><colgroup>\n<col style=\"width: 104px\">\n<col style=\"width: 115px\">\n<col style=\"width: 108px\">\n<col style=\"width: 107px\">\n<col style=\"width: 111px\">\n<col style=\"width: 130px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-7btt\">X</th>\n    <th class=\"tg-7btt\">1</th>\n    <th class=\"tg-7btt\">2</th>\n    <th class=\"tg-7btt\">3</th>\n    <th class=\"tg-7btt\">4</th>\n    <th class=\"tg-7btt\">5</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-7btt\">P(X)</td>\n    <td class=\"tg-c3ow\">0.2</td>\n    <td class=\"tg-c3ow\">a</td>\n    <td class=\"tg-c3ow\">a</td>\n    <td class=\"tg-c3ow\">0.2</td>\n    <td class=\"tg-c3ow\">b</td>\n  </tr>\n</tbody>\n</table></p>\n<p>If the mean $E(X)=3$, then find values of $a$ and $b$ and hence determine $P(X \\geq 3)$.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>We have,</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}\n</style>\n</p><table class=\"tg\" style=\"undefined;table-layout: fixed; width: 675px\"><colgroup>\n<col style=\"width: 104px\">\n<col style=\"width: 115px\">\n<col style=\"width: 108px\">\n<col style=\"width: 107px\">\n<col style=\"width: 111px\">\n<col style=\"width: 130px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-7btt\">X</th>\n    <th class=\"tg-7btt\">1</th>\n    <th class=\"tg-7btt\">2</th>\n    <th class=\"tg-7btt\">3</th>\n    <th class=\"tg-7btt\">4</th>\n    <th class=\"tg-7btt\">5</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-7btt\">P(X)</td>\n    <td class=\"tg-c3ow\">0.2</td>\n    <td class=\"tg-c3ow\">a</td>\n    <td class=\"tg-c3ow\">a</td>\n    <td class=\"tg-c3ow\">0.2</td>\n    <td class=\"tg-c3ow\">b</td>\n  </tr>\n</tbody>\n</table><p></p>\n<p>$$\\begin{aligned}\n\\text { Given }\\quad &amp;E(X)=3\\\\\n&amp;\\text { Since, } \\quad E(X)=\\sum X P(X)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore &amp; &amp; 3 &amp; =0.2+2 a+3 a+0.8+5 b \\\\\n\\text { or, } &amp; &amp; 3 &amp; =5 a+5 b+1 \\\\\n&amp; \\text { or, } &amp; 5 a+5 b &amp; =2 \\quad\\text{... (i)}\\\\\n&amp; \\text { Also, } &amp; \\Sigma P(X) &amp; =1\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{r}\n\\therefore &amp; 0.2+a+a+0.2+b =1 \\\\\n\\text { or, } &amp; 2 a+b =1-0.4 \\\\\n\\text { or, } &amp; 2 a+b =0.6\\quad\\text{.... (ii)}\n\\end{array}$$</p>\n<p>eq (i) $\\times 5-$ eq (i), we get</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6pgnnd3/a6c8e810-c8f9-4569-a050-1b2cd54b14b3/6fdd7cf0-e267-11ef-a8dd-7599bf507557/file-jaoe38c1m6pgnnen.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6pgnnd3/a6c8e810-c8f9-4569-a050-1b2cd54b14b3/6fdd7cf0-e267-11ef-a8dd-7599bf507557/file-jaoe38c1m6pgnnen.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"CBSE 12th Mathematics Delhi Set 1 - 2024 Mathematics - Probability Question 1 English Explanation\"></p>\n<p>$$a=\\frac{1}{5}=0.2$$</p>\n<p>Substituting value of a in eq (i), we get</p>\n<p>$$\\begin{aligned}\n5\\left(\\frac{1}{5}\\right)+5 b &amp; =2 \\\\\n5 b &amp; =1 \\\\\nb &amp; =\\frac{1}{5}=0.2\n\\end{aligned}$$</p>\n<p>Thus, $a=0.2$ and $b=0.2$</p>\n<p>Now,</p>\n<p>$$\\begin{aligned}\nP(X \\geq 3) &amp; =P(X=3)+P(X=4)+P(X=5) \\\\\n&amp; =a+0.2+b \\\\\n&amp; =0.2+0.2+0.2 \\\\\n&amp; =0.6\n\\end{aligned}$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 462855,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Probability • Mathematics",
+              "excerpt": "The random variable $X$ has the following probability distribution where $a$ and $b$ are some constants:\n\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, san..."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wp29",
+          "chapter": "application-of-derivatives",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 5,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "p37-a-rectangular-visiting-card-is-to-contain-24-mathrm-class-12-mathematics-complex-numbers-4rd7pnptjk5t53nf",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>37. A rectangular visiting card is to contain $24 \\mathrm{sq} . \\mathrm{cm}$. of printed matter. The margins at the top and bottom of the card are to be 1 cm and the margins on the left and right are to be $1 \\frac{1}{2} \\mathrm{~cm}$ as shown below:</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6pvaltw/fd6b1cf0-edf5-43a7-882b-a31beb0245a7/ae10dc40-e2a0-11ef-8d97-1bdf76a53a83/file-jaoe38c1m6pvaltx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6pvaltw/fd6b1cf0-edf5-43a7-882b-a31beb0245a7/ae10dc40-e2a0-11ef-8d97-1bdf76a53a83/file-jaoe38c1m6pvaltx.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"CBSE 12th Mathematics Delhi Set 1 - 2024 Mathematics - Application of Derivatives Question 1 English\"></p>\n<p>On the basis of the above information, answer the following questions:</p>\n<p>(i) Write the expression for the area of the visiting card in terms of $x$.</p>\n<p>(ii) Obtain the dimensions of the card of minimum area.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>(i) Given, $x=$ length of printed area</p>\n<p>$y=$ breadth of printed area</p>\n<p>Area of printed part $=x y$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { or, }\\quad 24 & =x y \\\\\n\\text { or, }\\quad y & =\\frac{24}{x}\\quad\\text{.... (i)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Now, area of visiting card $=(x+3)(y+2)$</p>\n<p>$$\\begin{aligned}\n\\text{or, }\\quad & A=(x+3)(y+2) \\\\\n\\text{or, }\\quad & A=(x+3)\\left(\\frac{24}{x}+2\\right)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { or, }\\quad & A=\\frac{(x+3)(24+2 x)}{x} \\\\\n\\text { or, }\\quad & A=\\frac{2 x^2+30 x+72}{x} \\\\\n\\text { or, }\\quad & A=2 x+30+\\frac{72}{x}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { (ii) We have, Area, } A=2 x+30+\\frac{72}{x}\\\\\n&\\begin{array}{ll}\n\\therefore & \\frac{d A}{d x}=2+0-\\frac{72}{x^2} \\\\\n\\text { and } & \\frac{d^2 A}{d x^2}=\\frac{144}{x^3}\n\\end{array}\n\\end{aligned}$$</p>\n<p>for minimum area, put $\\frac{d A}{d x}=0$</p>\n<p>i.e., $$2-\\frac{72}{x^2}=0$$</p>\n<p>or, $$x^2=36 \\Rightarrow x= \\pm 6$$</p>\n<p>At $x=6 \\cdot \\frac{d^2 A}{d x^2}>0$ Hence, minimum</p>\n<p>Therefore, length of vising card</p>\n<p>$$\\begin{aligned}\n& =x+3=6+3=9 \\mathrm{~cm} \\\\\n\\text { and breadth of visiting card }\\quad & =y+2=\\frac{24}{x}+2 \\\\\n& =\\frac{24}{6}+2=6 \\mathrm{~cm}\n\\end{aligned}$$</p>\n"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 617140,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Application of Derivatives • Mathematics",
+              "excerpt": "37. A rectangular visiting card is to contain $24 \\mathrm{sq} . \\mathrm{cm}$. of printed matter. The margins at the top and bottom of the card are to be 1 cm and the margins on the left and right are to be $1 \\frac{1}{2} \\mathrm{~cm}$ as sh..."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wp5t",
+          "chapter": "linear-programming",
+          "chapterGroup": "algebra",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 4,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pbeginaligned-text--solve-the-following-l-p-p-g-class-12-mathematics-complex-numbers-fzslvx2a3e46dq17",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>$$\\begin{aligned}\n&\\text { Solve the following L. P. P. graphically: }\\\\\n&\\begin{array}{rlrl} \n\\text { Maximise } & Z =60 x+40 y \\\\\n\\text { Subject to } & x+2 y \\leq 12 \\\\\n& 2 x+y \\leq 12 \\\\\n& 4 x+5 y \\geq 20 \\\\\n& x, y \\geq 0\n\\end{array}\n\\end{aligned}$$</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>Given LPP is</p>\n<p>Max $$Z=60 x+40 y$$</p>\n<p>$$\\begin{aligned}\n\\text { Subject to } \\quad x+2 y &amp; \\leq 12 \\quad\\text{.... (i)}\\\\\n2 x+y &amp; \\leq 12 \\quad\\text{.... (ii)}\\\\\n4 x+5 y &amp; \\geq 20 \\quad\\text{.... (iii)}\\\\\nx, y &amp; \\geq 0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6pv0u1b/2b83528e-3ff9-404c-a22a-20f7031a283f/9e5039f0-e29f-11ef-8d97-1bdf76a53a83/file-jaoe38c1m6pv0u1c.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6pv0u1b/2b83528e-3ff9-404c-a22a-20f7031a283f/9e5039f0-e29f-11ef-8d97-1bdf76a53a83/file-jaoe38c1m6pv0u1c.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"CBSE 12th Mathematics Delhi Set 1 - 2024 Mathematics - Linear Programming Question 1 English Explanation\"></p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n</p><table class=\"tg\" style=\"undefined;table-layout: fixed; width: 351px\"><colgroup>\n<col style=\"width: 166px\">\n<col style=\"width: 185px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\">Corner points</th>\n    <th class=\"tg-amwm\">$Z=60x+40y$</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">A(0, 4)</td>\n    <td class=\"tg-baqh\">1600</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">B(0, 6)</td>\n    <td class=\"tg-baqh\">2400</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">C(4, 4)</td>\n    <td class=\"tg-baqh\">4000 (max)</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">D(6, 0)</td>\n    <td class=\"tg-baqh\">3600</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">E(5, 0)</td>\n    <td class=\"tg-baqh\">3000</td>\n  </tr>\n</tbody>\n</table><p></p>\n<p>Thus, maximum value of Z is 4000 which occurs at the point C(4, 4).</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 771425,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Linear Programming • Mathematics",
+              "excerpt": "$$\\begin{aligned}\n&\\text { Solve the following L. P. P. graphically: }\\\\\n&\\begin{array}{rlrl} \n\\text { Maximise } & Z =60 x+40 y \\\\\n\\text { Subject to } & x+2 y \\leq 12 \\\\\n& 2 x+y \\leq 12 \\\\\n& 4 x+5 y \\geq 20 \\\\\n& x, y \\geq 0\n\\end{array}\n\\e..."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wp8q",
+          "chapter": "application-of-integration",
+          "chapterGroup": "calculus",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 4,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pfind-the-area-of-the-region-bounded-by-the-curve-4-x2-class-12-mathematics-complex-numbers-ckespjf6kx9ctaxo",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>Find the area of the region bounded by the curve $4 x^2$ $+y^2=36$ using integration.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>Given curve is $4 x^2+y^2=36$</p>\n<p>or, $\\quad \\frac{x^2}{9}+\\frac{y^2}{36}=1$</p>\n<p>or, $\\quad \\frac{x^2}{3^2}+\\frac{y^2}{6^2}=1$</p>\n<p>since, ellipse is symmetrical along</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6pulma8/7ffb2243-9b01-4210-ac93-8e26c7054c21/f7301100-e29d-11ef-8d97-1bdf76a53a83/file-jaoe38c1m6pulma9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6pulma8/7ffb2243-9b01-4210-ac93-8e26c7054c21/f7301100-e29d-11ef-8d97-1bdf76a53a83/file-jaoe38c1m6pulma9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"CBSE 12th Mathematics Delhi Set 1 - 2024 Mathematics - Application of Integration Question 2 English Explanation\"></p>\n<p>$x$-axis and $y$-axis</p>\n<p>$$\\begin{aligned}\n\\text { Area of ellipse } &amp; =\\text { Area of ABCD } \\\\\n&amp; =4 \\times \\text { Area of OBC } \\\\\n&amp; =4 \\times \\int_0^3 y d x \\\\\n&amp; =4 \\times \\int_0^3\\left(2 \\sqrt{9-x^2}\\right) d x \\\\\n&amp; =8 \\int_0^3 \\sqrt{9-x^2} d x\n\\end{aligned}$$</p>\n<p>[since OBC is above $x$-axis]</p>\n<p>$$=8 \\int_0^3 \\sqrt{3^2-x^2} d x$$</p>\n<p>$$=8\\left[\\frac{x}{2} \\sqrt{3^2-x^2}+\\frac{3^2}{2} \\sin ^{-1} \\frac{x}{3}\\right]_0^3$$</p>\n<p>$$=8\\left[\\frac{x}{2} \\sqrt{9-x^2}+\\frac{9}{2} \\sin ^{-1} \\frac{x}{3}\\right]_0^3$$</p>\n<p>$$=8\\left[0+\\frac{9}{2} \\sin ^{-1}(1)-(0+0)\\right]$$</p>\n<p>$$=8 \\times \\frac{9}{2} \\times \\frac{\\pi}{2}$$</p>\n<p>$$=2 \\times 9 \\pi$$</p>\n<p>$$=18 \\pi \\text { sq. units }$$</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 771425,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Application of Integration • Mathematics",
+              "excerpt": "Find the area of the region bounded by the curve $4 x^2$ $+y^2=36$ using integration."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        },
+        {
+          "question_id": "m6q1wpf1",
+          "chapter": "relations-and-functions",
+          "chapterGroup": "relations-and-functions",
+          "country": "in",
+          "difficulty": null,
+          "exam": "class-12",
+          "examGroup": "cbse",
+          "languages": [
+            "en"
+          ],
+          "marks": 5,
+          "negMarks": 0,
+          "paperId": "cbse-12th-mathematics-delhi-set-1-2024",
+          "paperTitle": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+          "permalink": "pa-students-of-a-school-are-taken-to-a-railway-museum-to-class-12-mathematics-complex-numbers-fx1hhw48ocbqfxwk",
+          "question": {
+            "en": {
+              "comprehension": null,
+              "direction": null,
+              "content": "<p>(a) Students of a school are taken to a railway museum to learn about railways heritage and its history.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6pv79qs/4a8420df-4565-4cc6-846b-f2c45a6c7dbb/514d4d40-e2a0-11ef-8d97-1bdf76a53a83/file-jaoe38c1m6pv79qt.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6pv79qs/4a8420df-4565-4cc6-846b-f2c45a6c7dbb/514d4d40-e2a0-11ef-8d97-1bdf76a53a83/file-jaoe38c1m6pv79qt.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"CBSE 12th Mathematics Delhi Set 1 - 2024 Mathematics - Relations and Functions Question 1 English\"></p>\n<p>An exhibit in the museum depicted many rail lines on the track near the railway station. Let $L$ be the set of all rail lines on the railway track and $R$ be the relation on $L$ defined by</p>\n<p>$R=\\left\\{l_1, l_2\\right): l_1$ is parallel to $\\left.l_2\\right\\}$</p>\n<p>On the basis of the above information, answer the following questions:</p>\n<p>(i) Find whether the relation R is symmetric or not.</p>\n<p>(ii) Find whether the relation R is transitive or not.</p>\n<p>(iii) If one of the rail lines on the railway track is represented by the equation $y=3 x+2$, then find the set of rail lines in R related to it.</p>\n<p>OR</p>\n<p>(b) Let $S$ be the relation defined by $S=\\left\\{\\left(l_1, l_2\\right): l_1\\right.$ is perpendicular to $l_2$ \\} check whether the relation $S$ is symmetric and transitive.</p>",
+              "options": [],
+              "correct_options": [],
+              "answer": null,
+              "explanation": "<p>(a) (i) Given Relation, $R=\\left\\{\\left(l_1, l_2\\right): d_1\\right.$ is parallel to $l_2$</p>\n<p>$$\\because l_1\\left\\|l_2 \\Rightarrow l_2\\right\\| l_1$$</p>\n<p>Hence, given relation is symmetric.</p>\n<p>(ii) Let $l_1 \\| l_2$ and $l_2\\left\\|l_3 \\Rightarrow l_1\\right\\| l_3$</p>\n<p>[As parallel lines are parallel to each other]</p>\n<p>(iii) Given equation of line : $y=3 x+2$</p>\n<p>Comparing with $y=m x+C$</p>\n<p>$$m=\\text { slope }=3$$</p>\n<p>Slope of parallel, lines is same</p>\n<p>$\\therefore$ Equation of set of rall line is given by</p>\n<p>$$y=3 x+\\lambda \\quad \\lambda \\in R$$</p>\n<p>OR</p>\n<p>(b) Given relation, $S=\\left\\{\\left(l_1, l_2\\right): l_1\\right.$ is perpendicular to $\\left.l_2\\right\\}$</p>\n<p>Symmetric $l_1 \\perp l_2 \\Rightarrow l_2 \\perp l_1$</p>\n<p>(Two lines are perpendicular to each other)</p>\n<p>Hence, S is symmetric.</p>\n<p>Transitive:</p>\n<p>Let $L_1 \\perp L_2$ and $l_2 \\perp l_3 \\Rightarrow l_1 \\| l_3$</p>\n<p>Thus, relation $S$ is not transitive.</p>"
+            }
+          },
+          "section": [
+            "chapter",
+            "paper"
+          ],
+          "subject": "mathematics",
+          "timeAllotted": 617140,
+          "topic": null,
+          "type": "subjective",
+          "year": 2024,
+          "isOutOfSyllabus": false,
+          "isBonus": false,
+          "bookmark": {
+            "en": {
+              "title": "CBSE 12th Mathematics Delhi Set 1 - 2024",
+              "subTitle": "Relations and Functions • Mathematics",
+              "excerpt": "(a) Students of a school are taken to a railway museum to learn about railways heritage and its history.\n\nAn exhibit in the museum depicted many rail lines on the track near the railway station. Let $L$ be the set of all rail lines on the r..."
+            }
+          },
+          "yearKey": "cbse-12th-mathematics-delhi-set-1-2024"
+        }
+      ]
+    }
+  ]
+}

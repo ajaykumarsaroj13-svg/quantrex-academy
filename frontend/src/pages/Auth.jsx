@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ShieldAlert, Mail, Lock, Phone, UserCheck, Key, ShieldCheck } from 'lucide-react';
 
 export default function Auth({ onLoginSuccess, setActivePage }) {
-  const [authMode, setAuthMode] = useState('student-login'); // student-login, student-signup, admin-login
+  const [authMode, setAuthMode] = useState('admin-login'); // admin-login only
   const [loginMethod, setLoginMethod] = useState('password'); // password, otp
   
   // Inputs
@@ -131,207 +131,80 @@ export default function Auth({ onLoginSuccess, setActivePage }) {
     <div className="relative z-10 min-h-[80vh] flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-md bg-cyberdark border border-white/5 rounded-2xl shadow-2xl overflow-hidden glass-panel">
         
-        {/* Toggle selectors */}
-        <div className="flex border-b border-white/5">
-          <button 
-            onClick={() => { setAuthMode('student-login'); setOtpSent(false); }}
-            className={`flex-1 py-4 text-xs font-bold tracking-widest uppercase transition-all ${authMode === 'student-login' ? 'bg-obsidian border-b-2 border-electric text-electric' : 'text-gray-400 hover:text-white'}`}
-          >
-            Student Signin
-          </button>
-          <button 
-            onClick={() => { setAuthMode('student-signup'); setOtpSent(false); }}
-            className={`flex-1 py-4 text-xs font-bold tracking-widest uppercase transition-all ${authMode === 'student-signup' ? 'bg-obsidian border-b-2 border-electric text-electric' : 'text-gray-400 hover:text-white'}`}
-          >
-            Student Signup
-          </button>
-          <button 
-            onClick={() => { setAuthMode('admin-login'); setOtpSent(false); }}
-            className={`flex-1 py-4 text-xs font-bold tracking-widest uppercase transition-all ${authMode === 'admin-login' ? 'bg-obsidian border-b-2 border-gold text-gold' : 'text-gray-400 hover:text-white'}`}
-          >
-            Admin 2FA
-          </button>
-        </div>
-
         <form onSubmit={handleSubmit} className="p-8 space-y-6">
-          <div className="text-center">
-            <h3 className="text-lg font-bold text-white uppercase tracking-wider font-display">
-              {authMode === 'student-login' && 'Student Login Portal'}
-              {authMode === 'student-signup' && 'Create Student Account'}
-              {authMode === 'admin-login' && 'Secured Admin Gateway'}
+          <div className="text-center space-y-1.5">
+            <h3 className="text-lg font-bold text-white uppercase tracking-wider font-display text-glow-gold flex items-center justify-center gap-2">
+              <Key className="h-5 w-5 text-gold" /> Secured Admin Gateway
             </h3>
-            <p className="text-[10px] text-gray-500 font-mono mt-1">
-              {authMode === 'admin-login' ? 'Ajay Kumar Saroj — Core Systems' : 'Where Rankers Are Engineered'}
+            <p className="text-[10px] text-gray-500 font-mono">
+              Quantrex Academy — Ajay Kumar Saroj (A.K. Sir)
             </p>
           </div>
 
-          {/* Student login methods toggle */}
-          {authMode === 'student-login' && (
-            <div className="flex bg-obsidian/60 p-1 border border-white/5 rounded-lg justify-between">
-              <button
-                type="button"
-                onClick={() => setLoginMethod('password')}
-                className={`flex-1 py-1.5 text-[10px] font-bold rounded transition-all uppercase ${loginMethod === 'password' ? 'bg-cyberdark border border-white/5 text-electric' : 'text-gray-400'}`}
-              >
-                Password Login
-              </button>
-              <button
-                type="button"
-                onClick={() => setLoginMethod('otp')}
-                className={`flex-1 py-1.5 text-[10px] font-bold rounded transition-all uppercase ${loginMethod === 'otp' ? 'bg-cyberdark border border-white/5 text-electric' : 'text-gray-400'}`}
-              >
-                OTP Verification
-              </button>
-            </div>
-          )}
-
           <div className="space-y-4">
-            {/* Name - Signup only */}
-            {authMode === 'student-signup' && (
-              <div className="space-y-1.5">
-                <label className="text-[10px] font-bold text-gray-400 uppercase font-mono">Full Name</label>
-                <div className="relative">
-                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-500">
-                    <UserCheck className="h-4 w-4" />
-                  </span>
-                  <input
-                    type="text"
-                    required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Enter full name"
-                    className="w-full pl-10 pr-4 py-3 bg-obsidian/75 border border-white/5 focus:border-electric/40 text-sm rounded-lg focus:outline-none transition-all text-white placeholder-gray-600"
-                  />
-                </div>
+            <div className="space-y-1.5">
+              <label className="text-[10px] font-bold text-gray-400 uppercase font-mono">Email ID</label>
+              <div className="relative">
+                <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-500">
+                  <Mail className="h-4 w-4" />
+                </span>
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="admin@quantrex.com"
+                  className="w-full pl-10 pr-4 py-3 bg-obsidian/75 border border-white/5 focus:border-gold/40 text-sm rounded-lg focus:outline-none transition-all text-white placeholder-gray-600 font-mono"
+                />
               </div>
-            )}
+            </div>
 
-            {/* Email - Password Mode & Admin Mode */}
-            {(authMode === 'student-signup' || (authMode === 'student-login' && loginMethod === 'password') || authMode === 'admin-login') && (
-              <div className="space-y-1.5">
-                <label className="text-[10px] font-bold text-gray-400 uppercase font-mono">Email ID</label>
-                <div className="relative">
-                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-500">
-                    <Mail className="h-4 w-4" />
-                  </span>
-                  <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder={authMode === 'admin-login' ? 'admin@quantrex.com' : 'student@quantrex.com'}
-                    className="w-full pl-10 pr-4 py-3 bg-obsidian/75 border border-white/5 focus:border-electric/40 text-sm rounded-lg focus:outline-none transition-all text-white placeholder-gray-600 font-mono"
-                  />
-                </div>
+            <div className="space-y-1.5">
+              <label className="text-[10px] font-bold text-gray-400 uppercase font-mono">Password</label>
+              <div className="relative">
+                <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-500">
+                  <Lock className="h-4 w-4" />
+                </span>
+                <input
+                  type="password"
+                  required
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="••••••••"
+                  className="w-full pl-10 pr-4 py-3 bg-obsidian/75 border border-white/5 focus:border-gold/40 text-sm rounded-lg focus:outline-none transition-all text-white placeholder-gray-600"
+                />
               </div>
-            )}
+            </div>
 
-            {/* Phone - OTP Mode & Signup Mode */}
-            {(authMode === 'student-signup' || (authMode === 'student-login' && loginMethod === 'otp')) && (
-              <div className="space-y-1.5">
-                <label className="text-[10px] font-bold text-gray-400 uppercase font-mono">Mobile Number</label>
-                <div className="relative">
-                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-500">
-                    <Phone className="h-4 w-4" />
-                  </span>
-                  <input
-                    type="tel"
-                    required
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    placeholder="9876543210"
-                    className="w-full pl-10 pr-4 py-3 bg-obsidian/75 border border-white/5 focus:border-electric/40 text-sm rounded-lg focus:outline-none transition-all text-white placeholder-gray-600 font-mono"
-                  />
-                </div>
+            <div className="space-y-1.5">
+              <label className="text-[10px] font-bold text-gold uppercase font-mono">2-Factor Authentication Code</label>
+              <div className="relative">
+                <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gold/60">
+                  <ShieldCheck className="h-4 w-4" />
+                </span>
+                <input
+                  type="text"
+                  required
+                  value={twoFactor}
+                  onChange={(e) => setTwoFactor(e.target.value)}
+                  placeholder="Sandbox default: 1234"
+                  className="w-full pl-10 pr-4 py-3 bg-obsidian/75 border border-gold/20 focus:border-gold/50 text-sm rounded-lg focus:outline-none transition-all text-white placeholder-gold/30 font-mono"
+                />
               </div>
-            )}
-
-            {/* Password - Password Mode & Admin Mode */}
-            {(authMode === 'student-signup' || (authMode === 'student-login' && loginMethod === 'password') || authMode === 'admin-login') && (
-              <div className="space-y-1.5">
-                <label className="text-[10px] font-bold text-gray-400 uppercase font-mono">Password</label>
-                <div className="relative">
-                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-500">
-                    <Lock className="h-4 w-4" />
-                  </span>
-                  <input
-                    type="password"
-                    required
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder="••••••••"
-                    className="w-full pl-10 pr-4 py-3 bg-obsidian/75 border border-white/5 focus:border-electric/40 text-sm rounded-lg focus:outline-none transition-all text-white placeholder-gray-600"
-                  />
-                </div>
-              </div>
-            )}
-
-            {/* OTP - OTP Mode Only */}
-            {authMode === 'student-login' && loginMethod === 'otp' && (
-              <div className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <label className="text-[10px] font-bold text-gray-400 uppercase font-mono">OTP Code</label>
-                  <button 
-                    type="button" 
-                    onClick={handleSendOtp} 
-                    className="text-[10px] text-electric hover:underline font-bold uppercase font-mono"
-                  >
-                    {otpSent ? 'Resend OTP' : 'Send Test OTP'}
-                  </button>
-                </div>
-                <div className="relative">
-                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-500">
-                    <Key className="h-4 w-4" />
-                  </span>
-                  <input
-                    type="text"
-                    required={otpSent}
-                    disabled={!otpSent}
-                    value={otp}
-                    onChange={(e) => setOtp(e.target.value)}
-                    placeholder="Enter 4-digit OTP"
-                    className="w-full pl-10 pr-4 py-3 bg-obsidian/75 border border-white/5 text-sm rounded-lg focus:outline-none transition-all text-white placeholder-gray-600 font-mono disabled:opacity-50"
-                  />
-                </div>
-              </div>
-            )}
-
-            {/* 2-Factor Authentication Code - Admin Only */}
-            {authMode === 'admin-login' && (
-              <div className="space-y-1.5">
-                <label className="text-[10px] font-bold text-gold uppercase font-mono">2-Factor Authentication Code</label>
-                <div className="relative">
-                  <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gold/60">
-                    <ShieldCheck className="h-4 w-4" />
-                  </span>
-                  <input
-                    type="text"
-                    required
-                    value={twoFactor}
-                    onChange={(e) => setTwoFactor(e.target.value)}
-                    placeholder="Sandbox default: 1234"
-                    className="w-full pl-10 pr-4 py-3 bg-obsidian/75 border border-gold/20 focus:border-gold/50 text-sm rounded-lg focus:outline-none transition-all text-white placeholder-gold/30 font-mono"
-                  />
-                </div>
-              </div>
-            )}
+            </div>
           </div>
 
           <button
             type="submit"
-            className={`w-full py-4 text-xs font-bold tracking-widest uppercase rounded-lg shadow-lg transition-all ${
-              authMode === 'admin-login'
-                ? 'bg-gradient-to-r from-gold to-yellow-600 text-obsidian hover:shadow-yellow-500/20'
-                : 'bg-gradient-to-r from-electric to-blue-600 text-obsidian hover:shadow-cyan-500/20'
-            }`}
+            className="w-full py-4 text-xs font-bold tracking-widest uppercase rounded-lg shadow-lg bg-gradient-to-r from-gold to-yellow-600 text-obsidian hover:shadow-yellow-500/20 transition-all"
           >
-            {loading ? 'Authenticating Secures...' : 'CONFIRM ACCESS'}
+            {loading ? 'Authenticating Secure...' : 'CONFIRM ACCESS'}
           </button>
         </form>
 
         <div className="p-4 bg-obsidian/50 border-t border-white/5 text-center text-[10px] text-gray-500 font-mono flex items-center justify-center gap-1.5">
-          <ShieldAlert className="h-3.5 w-3.5 text-gold" />
-          Secured Sandbox limits logins to active students only.
+          <ShieldAlert className="h-3.5 w-3.5 text-gold animate-pulse" />
+          Secured Gateway: Unauthorized operations are monitored.
         </div>
       </div>
     </div>

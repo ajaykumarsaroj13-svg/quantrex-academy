@@ -1,16 +1,37 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, Video, FileText, Bot, BarChart2, Flame, Award, Download, Clock, ShieldCheck, PlayCircle, Send, AlertTriangle } from 'lucide-react';
+import { BarChart, BookOpen, Clock, PlayCircle, LogOut, CheckCircle, Lock, ShieldCheck, Trophy, Sparkles, Target, ArrowRight, BrainCircuit, FileText } from 'lucide-react';
+import { loadDbFromBlob } from '../blob';
 import VideoPlayer from '../components/VideoPlayer';
 import PdfViewer from '../components/PdfViewer';
+import testsData from '../utils/testsData2.json';
+import advancedTestsData from '../utils/advancedTestsData.json';
+import PyqViewer from '../components/PyqViewer';
+import { getPyqsByChapter, fetchPyqsBySearch } from '../utils/dummyPyqs';
 
-export default function StudentDashboard({ user, courses, setActivePage, setExamTest, syllabus }) {
-  const [activeTab, setActiveTab] = useState('courses'); // courses, live, tests, ai-analytics, doubts
+export default function StudentDashboard({ user, courses, setActivePage, setExamTest, syllabus, initialClass, initialTab, initialChapterTab }) {
+  const [tests, setTests] = useState([]);
+  const [testCategory, setTestCategory] = useState('jee-mains'); // jee-mains, jee-advanced
+  const [activeTab, setActiveTab] = useState(initialTab || 'courses'); // courses, live, tests, ai-analytics, doubts
   const [purchasedList, setPurchasedList] = useState([]);
   
   // Syllabus selection states
-  const [selectedSyllabusClass, setSelectedSyllabusClass] = useState('jee-advanced');
+  const [selectedSyllabusClass, setSelectedSyllabusClass] = useState(initialClass || 'jee-mains');
   const [selectedSyllabusChapterId, setSelectedSyllabusChapterId] = useState('');
-  const [chapterTab, setChapterTab] = useState('videos'); // videos, pdfs, formulas, pyqs, mockTests
+  const [selectedSyllabusSubject, setSelectedSyllabusSubject] = useState('mathematics');
+  const [chapterTab, setChapterTab] = useState(initialChapterTab || 'videos'); // videos, pdfs, formulas, pyqs, mockTests
+  const [inlinePdf, setInlinePdf] = useState(null); // { url, title } for inline PDF/image viewer
+  const [pyqsData, setPyqsData] = useState([]);
+  const [isLoadingPyqs, setIsLoadingPyqs] = useState(false);
+  
+  const hasCourseAccess = (courseKey) => {
+    // Make all syllabus courses unlocked and visible to students by default
+    return true;
+  };
+
+  const isResourceUnlocked = (item) => {
+    // Everything is free — no locks for any student
+    return true;
+  };
   
   // Lecture player states
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -24,8 +45,50 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
   ]);
   const [aiLoading, setAiLoading] = useState(false);
 
-  // Available tests list
-  const [tests, setTests] = useState([]);
+  useEffect(() => {
+    if (initialClass) {
+      setSelectedSyllabusClass(initialClass);
+      setSelectedSyllabusChapterId('');
+    }
+  }, [initialClass]);
+
+  // Auto-select PDF tab and first chapter for JEE Advanced since there are no videos yet
+  useEffect(() => {
+    if (selectedSyllabusClass === 'jee-advanced') {
+      setChapterTab('pdfs');
+      if (!selectedSyllabusChapterId && syllabus['jee-advanced']?.subjects?.mathematics?.chapters?.length > 0) {
+        setSelectedSyllabusChapterId(syllabus['jee-advanced'].subjects.mathematics.chapters[0].id);
+      }
+    }
+  }, [selectedSyllabusClass, syllabus]);
+
+  useEffect(() => {
+    if (chapterTab === 'pyqs' && selectedSyllabusChapterId) {
+      setIsLoadingPyqs(true);
+      const chapter = syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters?.find(ch => ch.id === selectedSyllabusChapterId);
+      if (chapter) {
+        fetchPyqsBySearch(chapter.title).then(data => {
+          setPyqsData(data);
+          setIsLoadingPyqs(false);
+        });
+      } else {
+        setPyqsData([]);
+        setIsLoadingPyqs(false);
+      }
+    }
+  }, [chapterTab, selectedSyllabusChapterId, syllabus, selectedSyllabusClass, selectedSyllabusSubject]);
+
+  useEffect(() => {
+    if (initialTab) {
+      setActiveTab(initialTab);
+    }
+  }, [initialTab]);
+
+  useEffect(() => {
+    if (initialChapterTab) {
+      setChapterTab(initialChapterTab);
+    }
+  }, [initialChapterTab]);
 
   // Fetch student courses and tests
   useEffect(() => {
@@ -33,24 +96,14 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
     const list = courses.filter(c => user?.purchasedCourses?.includes(c.id));
     setPurchasedList(list);
 
-    // Fetch tests
-    fetch('/api/tests', {
-      headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
-    })
-      .then(res => res.json())
-      .then(data => setTests(data))
-      .catch(() => {
-        // Mock tests fallback
-        setTests([
-          {
-            id: 'test1',
-            title: 'Calculus Mega Test 01 (JEE Advanced)',
-            description: 'Limits, Continuity, Differentiability. Negative marking +4/-1',
-            durationMinutes: 30
-          }
-        ]);
-      });
-  }, [courses, user]);
+    // Fetch tests from Cloud DB
+    const loadTests = async () => {
+      const activeData = testCategory === 'jee-advanced' ? advancedTestsData : testsData;
+      setTests(activeData);
+      localStorage.setItem('quantrex_tests', JSON.stringify(activeData));
+    };
+    loadTests();
+  }, [courses, user, testCategory]);
 
   const handleSecurityBreach = async (type, details) => {
     try {
@@ -127,15 +180,22 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
       {/* 1. SIDEBAR PROFILE PANEL */}
       <div className="lg:col-span-1 space-y-6">
         <div className="glass-panel p-6 rounded-2xl border border-white/5 space-y-6">
-          <div className="flex flex-col items-center text-center">
-            <div className="h-20 w-20 rounded-full bg-gradient-to-tr from-electric to-blue-600 border border-electric/40 flex items-center justify-center text-3xl font-bold font-display text-white mb-4">
-              {user?.name?.charAt(0)}
+          <div className="flex flex-col items-center text-center relative">
+            <div className="relative h-24 w-24 mb-4 group cursor-pointer">
+              {/* Premium Progress Ring Animation */}
+              <svg className="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" className="text-white/5" strokeWidth="4" />
+                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" className="text-electric" strokeWidth="4" strokeDasharray="283" strokeDashoffset="56" strokeLinecap="round" style={{ transition: 'stroke-dashoffset 1s ease-in-out' }} />
+              </svg>
+              <div className="absolute inset-1 rounded-full bg-gradient-to-tr from-electric/80 to-blue-600/80 border-2 border-obsidian flex items-center justify-center text-3xl font-bold font-display text-white overflow-hidden shadow-[0_0_15px_rgba(0,180,216,0.3)] group-hover:shadow-[0_0_25px_rgba(0,180,216,0.6)] transition-shadow">
+                {user?.name?.charAt(0)}
+              </div>
             </div>
             <h3 className="text-white font-bold text-lg tracking-wide leading-tight">{user?.name}</h3>
-            <span className="text-[10px] text-gold font-mono uppercase tracking-widest mt-1">JEE Mathematics Aspirant</span>
+            <span className="text-[10px] text-gold font-mono uppercase tracking-widest mt-1 bg-gold/10 px-2 py-0.5 rounded border border-gold/20">JEE Mathematics Aspirant</span>
           </div>
 
-          <div className="border-t border-white/5 pt-4 space-y-3.5 text-xs font-mono">
+          <div className="border-t border-white/10 pt-5 space-y-3.5 text-xs font-mono">
             <div className="flex justify-between">
               <span className="text-gray-500">Target Exam:</span>
               <span className="text-white text-right max-w-[130px] truncate">{user?.targetExam || 'JEE Advanced'}</span>
@@ -152,22 +212,35 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
         </div>
 
         {/* Dynamic Nav Menu */}
-        <div className="glass-panel rounded-2xl border border-white/5 overflow-hidden flex flex-row lg:flex-col justify-around">
+        <div className="glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-row lg:flex-col justify-around shadow-lg">
           {[
             { id: 'courses', label: 'My Courses', icon: BookOpen },
             { id: 'live', label: 'Live Classes', icon: Clock },
-            { id: 'tests', label: 'Mock Tests', icon: Award },
-            { id: 'ai-analytics', label: 'AI Strengths', icon: BarChart2 },
-            { id: 'doubts', label: 'AI Doubt Solver', icon: Bot }
+            { id: 'tests', label: 'Mock Tests', icon: Trophy },
+            { id: 'test-series', label: 'Full Test Series', icon: FileText, isPage: true, pageId: 'test-series' },
+            { id: 'pyq', label: 'JEE Main PYQs', icon: Target, isPlatform: true },
+            { id: 'ai-analytics', label: 'AI Strengths', icon: BarChart },
+            { id: 'doubts', label: 'AI Doubt Solver', icon: BrainCircuit }
           ].map((item) => {
             const Icon = item.icon;
+            const isActive = activeTab === item.id;
             return (
               <button
                 key={item.id}
-                onClick={() => { setActiveTab(item.id); setSelectedVideo(null); }}
-                className={`w-full py-4 px-4 text-xs font-bold tracking-wider uppercase text-left transition-colors flex items-center gap-2.5 ${activeTab === item.id ? 'bg-obsidian border-l-2 border-electric text-electric' : 'text-gray-400 hover:text-white'}`}
+                onClick={() => { 
+                  if (item.isPlatform) {
+                    setActivePage('examgoal-platform');
+                  } else if (item.isPage) {
+                    setActivePage(item.pageId);
+                  } else {
+                    setActiveTab(item.id); 
+                    setSelectedVideo(null); 
+                  }
+                }}
+                className={`w-full py-4 px-5 text-xs font-bold tracking-wider uppercase text-left transition-all duration-300 flex items-center gap-3 relative overflow-hidden group ${isActive ? 'text-electric bg-white/5' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
               >
-                <Icon className="h-4.5 w-4.5" />
+                {isActive && <div className="absolute left-0 top-0 bottom-0 w-1 bg-electric shadow-[0_0_10px_rgba(0,180,216,1)]"></div>}
+                <Icon className={`h-5 w-5 transition-transform duration-300 ${isActive ? 'scale-110' : 'group-hover:scale-110'}`} />
                 <span className="hidden lg:inline">{item.label}</span>
               </button>
             );
@@ -286,232 +359,357 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   <span className="text-[10px] text-gray-500 uppercase tracking-widest block font-bold">Mathematics Curriculum Portal</span>
                   <div className="flex flex-wrap gap-1.5 p-1 bg-obsidian/60 border border-white/5 rounded-xl">
                     {[
-                      { id: 'class-6', label: 'Class 6th' },
-                      { id: 'class-7', label: 'Class 7th' },
-                      { id: 'class-8', label: 'Class 8th' },
-                      { id: 'class-9', label: 'Class 9th' },
-                      { id: 'class-10', label: 'Class 10th' },
-                      { id: 'class-11', label: 'Class 11th' },
-                      { id: 'class-12', label: 'Class 12th' },
-                      { id: 'jee-mains', label: 'JEE Mains' },
-                      { id: 'jee-advanced', label: 'JEE Advanced' }
-                    ].map(grade => (
-                      <button
-                        key={grade.id}
-                        onClick={() => {
-                          setSelectedSyllabusClass(grade.id);
-                          setSelectedSyllabusChapterId('');
-                        }}
-                        className={`px-3 py-2 rounded-lg text-[10px] font-bold uppercase transition-all ${selectedSyllabusClass === grade.id ? 'bg-electric text-obsidian shadow-[0_0_12px_rgba(0,240,255,0.2)]' : 'text-gray-400 hover:text-white'}`}
-                      >
-                        {grade.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* 2. Syllabus Sidebar & Workspace Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-2">
-                  {/* Left Column: Chapters Sidebar */}
-                  <div className="md:col-span-1 space-y-2 border-r border-white/5 pr-4 max-h-[50vh] overflow-y-auto pr-1">
-                    <span className="text-[9px] text-gray-500 uppercase font-bold tracking-widest block mb-2">Chapters Folder</span>
-                    {syllabus[selectedSyllabusClass]?.chapters?.length === 0 ? (
-                      <p className="text-[10px] text-gray-600 italic">No chapters configured.</p>
-                    ) : (
-                      syllabus[selectedSyllabusClass]?.chapters?.map(ch => (
+                      { id: 'jee-mains', label: 'JEE Main' },
+                      { id: 'jee-advanced', label: 'JEE Advanced' },
+                      { id: 'mht-cet', label: 'MHT-CET' },
+                      { id: 'bitsat', label: 'BITSAT' },
+                      { id: 'nda', label: 'NDA' },
+                      { id: 'class-9', label: 'Class 9th Math' },
+                      { id: 'class-11', label: 'Class 11th Math' },
+                      { id: 'class-12', label: 'Class 12th Math' },
+                      { id: 'foundation-6-12', label: 'Foundation Math (6-12)' }
+                    ].map(grade => {
+                      const hasAccess = hasCourseAccess(grade.id);
+                      return (
                         <button
-                          key={ch.id}
-                          onClick={() => setSelectedSyllabusChapterId(ch.id)}
-                          className={`w-full p-2.5 rounded-lg text-[10px] text-left font-semibold uppercase transition-all truncate block ${selectedSyllabusChapterId === ch.id ? 'bg-electric/10 text-electric border border-electric/25' : 'text-gray-400 hover:text-platinum hover:bg-white/[0.02] border border-transparent'}`}
-                          title={ch.title}
+                          key={grade.id}
+                          onClick={() => {
+                            setSelectedSyllabusClass(grade.id);
+                            setSelectedSyllabusChapterId('');
+                            setSelectedSyllabusSubject('mathematics');
+                          }}
+                          className={`px-3 py-2 rounded-lg text-[10px] font-bold uppercase transition-all flex items-center gap-1.5 ${
+                            selectedSyllabusClass === grade.id 
+                              ? 'bg-electric text-obsidian shadow-[0_0_12px_rgba(0,240,255,0.2)]' 
+                              : 'text-gray-400 hover:text-white hover:bg-white/[0.02]'
+                          }`}
                         >
-                          {ch.title}
+                          {!hasAccess && <Lock className="h-3 w-3 text-red-400 animate-pulse" />}
+                          {grade.label}
                         </button>
-                      ))
-                    )}
-                  </div>
-
-                  {/* Right Column: Chapter Contents Panel */}
-                  <div className="md:col-span-3">
-                    {selectedSyllabusChapterId ? (
-                      (() => {
-                        const chapter = syllabus[selectedSyllabusClass]?.chapters?.find(ch => ch.id === selectedSyllabusChapterId);
-                        if (!chapter) return null;
-                        
-                        return (
-                          <div className="space-y-4">
-                            <h4 className="text-white font-bold text-sm uppercase tracking-wider text-glow-blue border-b border-white/5 pb-2">
-                              {chapter.title}
-                            </h4>
-
-                            {/* Sub-tab selection */}
-                            <div className="flex bg-obsidian/60 p-1 border border-white/5 rounded-lg justify-between gap-1 overflow-x-auto">
-                              {[
-                                { id: 'videos', label: '🎥 Lectures' },
-                                { id: 'pdfs', label: '📄 Notes/DPPs' },
-                                { id: 'formulas', label: '⚡ Formulas' },
-                                { id: 'pyqs', label: '📝 PYQs' },
-                                { id: 'mockTests', label: '🏆 Mock Tests' }
-                              ].map(subTab => {
-                                if (subTab.id === 'pyqs' && !selectedSyllabusClass.startsWith('jee')) return null;
-                                return (
-                                  <button
-                                    key={subTab.id}
-                                    onClick={() => setChapterTab(subTab.id)}
-                                    className={`flex-1 py-1.5 px-2 text-[9px] font-bold rounded transition-all uppercase whitespace-nowrap ${chapterTab === subTab.id ? 'bg-cyberdark border border-white/5 text-electric' : 'text-gray-400'}`}
-                                  >
-                                    {subTab.label}
-                                  </button>
-                                );
-                              })}
-                            </div>
-
-                            {/* Tab Contents Panel */}
-                            <div className="p-4 bg-obsidian/30 border border-white/5 rounded-xl min-h-[25vh]">
-                              
-                              {/* 1. Lectures */}
-                              {chapterTab === 'videos' && (
-                                <div className="space-y-2">
-                                  {(!chapter.videos || chapter.videos.length === 0) ? (
-                                    <p className="text-gray-500 italic py-6 text-center">No video lectures uploaded yet for this chapter.</p>
-                                  ) : (
-                                    chapter.videos.map(v => (
-                                      <div key={v.id} className="flex justify-between items-center p-3 bg-cyberdark/60 border border-white/5 rounded-lg">
-                                        <div>
-                                          <h5 className="text-white font-semibold text-xs">{v.title}</h5>
-                                          <span className="text-[9px] text-gray-500 block mt-0.5">Duration: {v.duration} {v.downloadBlocked && '• 🔒 Secured'}</span>
-                                        </div>
-                                        <button
-                                          onClick={() => { setSelectedVideo(v); setPlayerTab('video'); }}
-                                          className="px-3.5 py-1.5 bg-electric hover:bg-cyan-400 text-obsidian font-bold text-[9px] uppercase rounded-lg flex items-center gap-1.5 transition-colors shadow-md hover:shadow-cyan-500/10"
-                                        >
-                                          <PlayCircle className="h-3.5 w-3.5" /> Play
-                                        </button>
-                                      </div>
-                                    ))
-                                  )}
-                                </div>
-                              )}
-
-                              {/* 2. Notes & DPPs */}
-                              {chapterTab === 'pdfs' && (
-                                <div className="space-y-2">
-                                  {(!chapter.pdfs || chapter.pdfs.length === 0) ? (
-                                    <p className="text-gray-500 italic py-6 text-center">No PDF notes or handouts available.</p>
-                                  ) : (
-                                    chapter.pdfs.map(p => (
-                                      <div key={p.id} className="flex justify-between items-center p-3 bg-cyberdark/60 border border-white/5 rounded-lg">
-                                        <div>
-                                          <h5 className="text-white font-semibold text-xs">{p.title}</h5>
-                                          <span className="text-[9px] text-gray-500 block mt-0.5">Size: {p.size} {p.downloadBlocked && '• 🔒 Encrypted'}</span>
-                                        </div>
-                                        <button
-                                          onClick={() => { setSelectedVideo({ ...p, url: null }); setSelectedPdf(p); setPlayerTab('notes'); }}
-                                          className="px-3.5 py-1.5 bg-electric hover:bg-cyan-400 text-obsidian font-bold text-[9px] uppercase rounded-lg flex items-center gap-1.5 transition-colors shadow-md hover:shadow-cyan-500/10"
-                                        >
-                                          <FileText className="h-3.5 w-3.5" /> Read
-                                        </button>
-                                      </div>
-                                    ))
-                                  )}
-                                </div>
-                              )}
-
-                              {/* 3. Formulas & Tricks */}
-                              {chapterTab === 'formulas' && (
-                                <div className="grid grid-cols-1 gap-3">
-                                  {(!chapter.formulas || chapter.formulas.length === 0) ? (
-                                    <p className="text-gray-500 italic py-6 text-center">No formulas sheet or shortcut tricks uploaded yet.</p>
-                                  ) : (
-                                    chapter.formulas.map(f => (
-                                      <div key={f.id} className="p-4 bg-cyberdark/40 border border-white/5 rounded-xl space-y-2">
-                                        <h5 className="text-gold font-bold text-xs border-b border-white/5 pb-1 flex items-center gap-1.5">
-                                          <Flame className="h-4 w-4 fill-current text-gold" /> {f.title}
-                                        </h5>
-                                        <p className="text-gray-300 leading-relaxed whitespace-pre-line text-[11px] font-mono leading-relaxed bg-obsidian/30 p-2.5 rounded border border-white/5">{f.content}</p>
-                                      </div>
-                                    ))
-                                  )}
-                                </div>
-                              )}
-
-                              {/* 4. PYQs (JEE only) */}
-                              {chapterTab === 'pyqs' && (
-                                <div className="space-y-2">
-                                  {(!chapter.pyqs || chapter.pyqs.length === 0) ? (
-                                    <p className="text-gray-500 italic py-6 text-center">No previous year questions uploaded.</p>
-                                  ) : (
-                                    chapter.pyqs.map(p => (
-                                      <div key={p.id} className="flex justify-between items-center p-3 bg-cyberdark/60 border border-white/5 rounded-lg">
-                                        <div>
-                                          <h5 className="text-white font-semibold text-xs">{p.title}</h5>
-                                          <span className="text-[9px] text-electric font-mono block mt-0.5">Exam Year: {p.year}</span>
-                                        </div>
-                                        <a
-                                          href={p.url}
-                                          target="_blank"
-                                          rel="noopener noreferrer"
-                                          className="px-3.5 py-1.5 bg-electric hover:bg-cyan-400 text-obsidian font-bold text-[9px] uppercase rounded-lg flex items-center gap-1.5 transition-colors"
-                                        >
-                                          <Download className="h-3.5 w-3.5" /> Get Question Paper
-                                        </a>
-                                      </div>
-                                    ))
-                                  )}
-                                </div>
-                              )}
-
-                              {/* 5. Mock Tests */}
-                              {chapterTab === 'mockTests' && (
-                                <div className="space-y-2">
-                                  {(!chapter.mockTests || chapter.mockTests.length === 0) ? (
-                                    <p className="text-gray-500 italic py-6 text-center">No mock exams uploaded yet.</p>
-                                  ) : (
-                                    chapter.mockTests.map(t => (
-                                      <div key={t.id} className="p-4 bg-cyberdark/60 border border-white/5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
-                                        <div className="space-y-1">
-                                          <h5 className="text-white font-bold text-xs">{t.title}</h5>
-                                          <span className="text-[9px] text-gray-500 block">
-                                            Duration: {t.durationMinutes} minutes • Type: {t.type === 'link' ? 'AI Quiz Embed Link' : 'Quantrex JEE Pattern'}
-                                          </span>
-                                        </div>
-                                        {t.type === 'link' ? (
-                                          <a
-                                            href={t.linkUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="px-4 py-2 bg-gradient-to-r from-gold to-yellow-600 text-obsidian font-bold text-[9px] uppercase rounded-lg hover:shadow-lg transition-all"
-                                          >
-                                            Take External AI Quiz
-                                          </a>
-                                        ) : (
-                                          <button
-                                            onClick={() => handleLaunchTest(t)}
-                                            className="px-4 py-2 bg-electric hover:bg-cyan-400 text-obsidian font-bold text-[9px] uppercase rounded-lg shadow-md hover:shadow-cyan-500/10 transition-colors"
-                                          >
-                                            Start JEE Mock Exam
-                                          </button>
-                                        )}
-                                      </div>
-                                    ))
-                                  )}
-                                </div>
-                              )}
-
-                            </div>
-                          </div>
-                        );
-                      })()
-                    ) : (
-                      <div className="flex flex-col items-center justify-center p-8 bg-cyberdark/20 border border-white/5 border-dashed rounded-xl min-h-[30vh]">
-                        <BookOpen className="h-10 w-10 text-gray-600 mb-2" />
-                        <p className="text-[10px] text-gray-500 font-mono">Select a Chapter Folder from the left list to browse content.</p>
-                      </div>
-                    )}
+                      );
+                    })}
                   </div>
                 </div>
-              </div>
-            )}
+
+                {/* 2. Subject Selector Row */}
+                <div className="space-y-1.5">
+                  <span className="text-[9px] text-gray-500 uppercase tracking-widest block font-bold">Select Subject</span>
+                  <div className="flex gap-2 font-mono text-[10px]">
+                    {[
+                      { id: 'mathematics', label: '🧮 Mathematics' },
+                      { id: 'physics', label: '⚛️ Physics' },
+                      { id: 'chemistry', label: '🧪 Chemistry' }
+                    ].map(subj => {
+                      const hasPCM = ['jee-mains', 'jee-advanced', 'mht-cet', 'bitsat', 'nda'].includes(selectedSyllabusClass);
+                      if (subj.id !== 'mathematics' && !hasPCM) return null;
+                      
+                      return (
+                        <button
+                          key={subj.id}
+                          onClick={() => setSelectedSyllabusSubject(subj.id)}
+                          className={`px-4 py-2 rounded-lg font-bold uppercase transition-all ${
+                            selectedSyllabusSubject === subj.id 
+                              ? 'bg-electric/10 text-electric border border-electric/25' 
+                              : 'bg-obsidian border border-white/5 text-gray-400 hover:text-white'
+                          }`}
+                        >
+                          {subj.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* 3. Render Subject Workspaces */}
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-2">
+                    {/* Left Column: Chapters Sidebar */}
+                    <div className="md:col-span-1 space-y-2 border-r border-white/5 pr-4 max-h-[50vh] overflow-y-auto pr-1">
+                      <span className="text-[9px] text-gray-500 uppercase font-bold tracking-widest block mb-2">Chapters Folder</span>
+                      {!syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters || syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters?.length === 0 ? (
+                        <p className="text-[10px] text-gray-600 italic">No chapters configured.</p>
+                      ) : (
+                        syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters?.map(ch => (
+                          <button
+                            key={ch.id}
+                            onClick={() => setSelectedSyllabusChapterId(ch.id)}
+                            className={`w-full p-2.5 rounded-lg text-[10px] text-left font-semibold uppercase transition-all truncate block ${selectedSyllabusChapterId === ch.id ? 'bg-electric/10 text-electric border border-electric/25' : 'text-gray-400 hover:text-platinum hover:bg-white/[0.02] border border-transparent'}`}
+                            title={ch.title}
+                          >
+                            {ch.title}
+                          </button>
+                        ))
+                      )}
+                    </div>
+
+                    {/* Right Column: Chapter Contents Panel */}
+                    <div className="md:col-span-3">
+                      {selectedSyllabusChapterId ? (
+                        (() => {
+                          const chapter = syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters?.find(ch => ch.id === selectedSyllabusChapterId);
+                          if (!chapter) return null;
+                          
+                          return (
+                            <div className="space-y-4">
+                              <h4 className="text-white font-bold text-sm uppercase tracking-wider text-glow-blue border-b border-white/5 pb-2">
+                                {chapter.title}
+                              </h4>
+
+                              {/* Topics covered */}
+                              {chapter.topics && chapter.topics.length > 0 && (
+                                <div className="p-4 bg-cyberdark/60 border border-white/5 rounded-xl space-y-1.5">
+                                  <span className="text-[9px] text-gray-500 uppercase font-bold tracking-wider block">Topics covered in this chapter:</span>
+                                  <div className="flex flex-wrap gap-2">
+                                    {chapter.topics.map(t => (
+                                      <span key={t.id} className="text-[10px] text-platinum bg-white/5 px-2 py-0.5 rounded border border-white/5">
+                                        • {t.title}
+                                      </span>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
+
+                              {/* Sub-tab selection */}
+                              <div className="flex bg-obsidian/60 p-1 border border-white/5 rounded-lg justify-between gap-1 overflow-x-auto">
+                                {[
+                                  { id: 'videos', label: '🎥 Lectures' },
+                                  { id: 'pdfs', label: '📄 Notes/DPPs' },
+                                  { id: 'formulas', label: '⚡ Formulas' },
+                                  { id: 'pyqs', label: '📝 PYQs' },
+                                  { id: 'mockTests', label: '🏆 Chapter Tests' }
+                                ].map(subTab => {
+                                  if (subTab.id === 'pyqs' && !selectedSyllabusClass.startsWith('jee')) return null;
+                                  return (
+                                    <button
+                                      key={subTab.id}
+                                      onClick={() => setChapterTab(subTab.id)}
+                                      className={`flex-1 py-1.5 px-2 text-[9px] font-bold rounded transition-all uppercase whitespace-nowrap ${chapterTab === subTab.id ? 'bg-cyberdark border border-white/5 text-electric' : 'text-gray-400'}`}
+                                    >
+                                      {subTab.label}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+
+                              {/* Tab Contents Panel */}
+                              <div className="p-4 bg-obsidian/30 border border-white/5 rounded-xl min-h-[25vh]">
+                                
+                                {/* 1. Lectures */}
+                                {chapterTab === 'videos' && (
+                                  <div className="space-y-2">
+                                    {(!chapter.videos || chapter.videos.length === 0) ? (
+                                      <p className="text-gray-500 italic py-6 text-center">No video lectures uploaded yet for this chapter.</p>
+                                    ) : (
+                                      chapter.videos.map(v => {
+                                        const unlocked = isResourceUnlocked(v);
+                                        return (
+                                          <div key={v.id} className="flex justify-between items-center p-3 bg-cyberdark/60 border border-white/5 rounded-lg">
+                                            <div>
+                                              <div className="flex items-center gap-1.5">
+                                                <h5 className="text-white font-semibold text-xs">{v.title}</h5>
+                                                {v.isFree && <span className="text-[8px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-1.5 py-0.2 rounded font-bold">DEMO</span>}
+                                                {!unlocked && <span className="text-[8px] bg-red-500/10 text-red-400 border border-red-500/20 px-1.5 py-0.2 rounded font-bold">LOCKED</span>}
+                                              </div>
+                                              <span className="text-[9px] text-gray-500 block mt-0.5">Duration: {v.duration} {v.downloadBlocked && '• 🔒 Secured'}</span>
+                                            </div>
+                                            <button
+                                              onClick={() => {
+                                                if (!unlocked) {
+                                                  alert('Premium Course Video Locked. Please enroll in this course or contact A.K. Sir for permission clearance.');
+                                                  return;
+                                                }
+                                                setSelectedVideo(v); 
+                                                setPlayerTab('video'); 
+                                              }}
+                                              className={`px-3.5 py-1.5 font-bold text-[9px] uppercase rounded-lg flex items-center gap-1.5 transition-colors ${
+                                                unlocked 
+                                                  ? 'bg-electric hover:bg-cyan-400 text-obsidian shadow-md hover:shadow-cyan-500/10' 
+                                                  : 'bg-red-950/20 border border-red-900 text-red-400 cursor-not-allowed'
+                                              }`}
+                                            >
+                                              {unlocked ? <PlayCircle className="h-3.5 w-3.5" /> : <Lock className="h-3 w-3" />} 
+                                              {unlocked ? 'Play' : 'Locked'}
+                                            </button>
+                                          </div>
+                                        );
+                                      })
+                                    )}
+                                  </div>
+                                )}
+
+                                {/* 2. Notes & DPPs */}
+                                {chapterTab === 'pdfs' && (
+                                  <div className="space-y-3">
+                                    {(!chapter.pdfs || chapter.pdfs.length === 0) ? (
+                                      <p className="text-gray-500 italic py-6 text-center">No PDF notes or handouts available.</p>
+                                    ) : (
+                                      chapter.pdfs.map(p => {
+                                        const unlocked = isResourceUnlocked(p);
+                                        const isActive = inlinePdf?.id === p.id;
+                                        return (
+                                          <div key={p.id} className="space-y-2">
+                                            <div className="flex justify-between items-center p-3 bg-cyberdark/60 border border-white/5 rounded-lg">
+                                              <div>
+                                                <div className="flex items-center gap-1.5">
+                                                  <h5 className="text-white font-semibold text-xs">{p.title}</h5>
+                                                  {p.isFree && <span className="text-[8px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-1.5 py-0.2 rounded font-bold">FREE</span>}
+                                                  {!unlocked && <span className="text-[8px] bg-red-500/10 text-red-400 border border-red-500/20 px-1.5 py-0.2 rounded font-bold">LOCKED</span>}
+                                                </div>
+                                                <span className="text-[9px] text-gray-500 block mt-0.5">Size: {p.size || 'Unknown'}</span>
+                                              </div>
+                                              <button
+                                                onClick={() => {
+                                                  if (!unlocked) return;
+                                                  setInlinePdf(isActive ? null : { id: p.id, url: p.url, title: p.title });
+                                                }}
+                                                className={`px-3.5 py-1.5 font-bold text-[9px] uppercase rounded-lg flex items-center gap-1.5 transition-colors ${
+                                                  unlocked 
+                                                    ? isActive
+                                                      ? 'bg-gold text-obsidian'
+                                                      : 'bg-electric hover:bg-cyan-400 text-obsidian shadow-md' 
+                                                    : 'bg-red-950/20 border border-red-900 text-red-400 cursor-not-allowed'
+                                                }`}
+                                              >
+                                                {unlocked ? <FileText className="h-3.5 w-3.5" /> : <Lock className="h-3 w-3" />} 
+                                                {unlocked ? (isActive ? 'Close' : 'Read / View') : 'Locked'}
+                                              </button>
+                                            </div>
+                                            {isActive && (
+                                               <div className="animate-fade-in mt-3">
+                                                 <PdfViewer
+                                                   pdfUrl={p.url}
+                                                   pdfTitle={p.title}
+                                                   studentInfo={user}
+                                                 />
+                                               </div>
+                                             )}
+                                          </div>
+                                        );
+                                      })
+                                    )}
+                                  </div>
+                                )}
+
+                                {/* 3. Formulas & Tricks */}
+                                {chapterTab === 'formulas' && (
+                                  <div className="grid grid-cols-1 gap-3">
+                                    {(!chapter.formulas || chapter.formulas.length === 0) ? (
+                                      <p className="text-gray-500 italic py-6 text-center">No formulas sheet or shortcut tricks uploaded yet.</p>
+                                    ) : (
+                                      chapter.formulas.map(f => {
+                                         const isActive = inlinePdf?.id === `formula-${f.id}`;
+                                         return (
+                                           <div key={f.id} className="p-4 bg-cyberdark/40 border border-white/5 rounded-xl space-y-2">
+                                             <h5 className="text-gold font-bold text-xs border-b border-white/5 pb-1 flex items-center justify-between gap-1.5">
+                                               <span className="flex items-center gap-1.5">
+                                                 <Flame className="h-4 w-4 fill-current text-gold" /> {f.title}
+                                               </span>
+                                               {f.url && (
+                                                 <button
+                                                   onClick={() => setInlinePdf(isActive ? null : { id: `formula-${f.id}`, url: f.url, title: f.title })}
+                                                   className={`px-2.5 py-1 text-[9px] font-bold uppercase rounded-lg flex items-center gap-1 ${
+                                                     isActive ? 'bg-gold text-obsidian' : 'bg-electric/10 text-electric border border-electric/20 hover:bg-electric/20'
+                                                   }`}
+                                                 >
+                                                   {isActive ? 'Close' : '📄 View File'}
+                                                 </button>
+                                               )}
+                                             </h5>
+                                             {f.content && (
+                                               <p className="text-gray-300 leading-relaxed whitespace-pre-line text-[11px] font-mono leading-relaxed bg-obsidian/30 p-2.5 rounded border border-white/5">{f.content}</p>
+                                             )}
+                                             {f.url && (f.url.startsWith('data:image/') || /\.(png|jpg|jpeg|gif|webp)$/i.test(f.url)) && !isActive && (
+                                               <img src={f.url} alt={f.title} className="max-w-full rounded-lg border border-white/5 mt-2" style={{maxHeight:'320px',objectFit:'contain'}} />
+                                             )}
+                                             {isActive && (
+                                               <div className="animate-fade-in mt-2">
+                                                 <PdfViewer
+                                                   pdfUrl={f.url}
+                                                   pdfTitle={f.title}
+                                                   studentInfo={user}
+                                                   onReportBreach={handleSecurityBreach}
+                                                 />
+                                               </div>
+                                             )}
+                                           </div>
+                                         );
+                                       })
+                                    )}
+                                  </div>
+                                )}
+
+                                {/* 4. PYQs (JEE only) */}
+                                {chapterTab === 'pyqs' && (
+                                  <div className="space-y-4">
+                                    <div className="flex items-center gap-2 mb-2 p-3 bg-electric/10 border border-electric/20 rounded-lg">
+                                      <Sparkles className="h-5 w-5 text-electric" />
+                                      <p className="text-xs text-cyan-100 font-medium leading-relaxed">
+                                        Welcome to the Premium Custom PYQ Module. These questions are integrated beautifully with MathJax and feature step-by-step solutions!
+                                      </p>
+                                    </div>
+                                    {isLoadingPyqs ? (
+                                      <div className="flex justify-center items-center py-10">
+                                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-electric"></div>
+                                      </div>
+                                    ) : (
+                                      <PyqViewer questions={pyqsData} />
+                                    )}
+                                  </div>
+                                )}
+
+                                {/* 5. Mock Tests */}
+                                {chapterTab === 'mockTests' && (
+                                  <div className="space-y-2">
+                                    {(!chapter.mockTests || chapter.mockTests.length === 0) ? (
+                                      <p className="text-gray-500 italic py-6 text-center">No mock exams uploaded yet.</p>
+                                    ) : (
+                                      chapter.mockTests.map(t => (
+                                        <div key={t.id} className="p-4 bg-cyberdark/60 border border-white/5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                          <div className="space-y-1">
+                                            <h5 className="text-white font-bold text-xs">{t.title}</h5>
+                                            <span className="text-[9px] text-gray-500 block">
+                                              Duration: {t.durationMinutes} minutes • Type: {t.type === 'link' ? 'AI Quiz Embed Link' : 'Quantrex JEE Pattern'}
+                                            </span>
+                                          </div>
+                                          {t.type === 'link' ? (
+                                            <a
+                                              href={t.linkUrl}
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                              className="px-4 py-2 bg-gradient-to-r from-gold to-yellow-600 text-obsidian font-bold text-[9px] uppercase rounded-lg hover:shadow-lg transition-all"
+                                            >
+                                              Take External AI Quiz
+                                            </a>
+                                          ) : (
+                                            <button
+                                              onClick={() => handleLaunchTest(t)}
+                                              className="px-4 py-2 bg-electric hover:bg-cyan-400 text-obsidian font-bold text-[9px] uppercase rounded-lg shadow-md hover:shadow-cyan-500/10 transition-colors"
+                                            >
+                                              Start JEE Mock Exam
+                                            </button>
+                                          )}
+                                        </div>
+                                      ))
+                                    )}
+                                  </div>
+                                )}
+
+                              </div>
+                            </div>
+                          );
+                        })()
+                      ) : (
+                        <div className="flex flex-col items-center justify-center p-12 bg-obsidian/30 border border-white/5 rounded-2xl min-h-[40vh] text-center space-y-3">
+                          <div className="h-12 w-12 bg-white/5 rounded-full flex items-center justify-center text-gray-500">
+                            <BookOpen className="h-5 w-5" />
+                          </div>
+                          <p className="text-xs text-gray-500 font-mono">Select a chapter from the left menu to view contents.</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
 
             {/* LIVE CLASSES TAB */}
             {activeTab === 'live' && (
@@ -539,7 +737,23 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
             {/* MOCK TESTS TAB */}
             {activeTab === 'tests' && (
               <div className="space-y-6">
-                <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">JEE Test Series Portal</h3>
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                  <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">JEE Test Series Portal</h3>
+                  <div className="flex bg-obsidian/60 p-1 border border-white/5 rounded-lg">
+                    <button
+                      onClick={() => setTestCategory('jee-mains')}
+                      className={`px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'jee-mains' ? 'bg-electric text-obsidian shadow-[0_0_10px_rgba(0,240,255,0.3)]' : 'text-gray-400 hover:text-white'}`}
+                    >
+                      JEE Main
+                    </button>
+                    <button
+                      onClick={() => setTestCategory('jee-advanced')}
+                      className={`px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'jee-advanced' ? 'bg-gold text-obsidian shadow-[0_0_10px_rgba(255,215,0,0.3)]' : 'text-gray-400 hover:text-white'}`}
+                    >
+                      JEE Advanced
+                    </button>
+                  </div>
+                </div>
                 
                 <div className="space-y-4">
                   {tests.map((test) => (

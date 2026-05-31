@@ -1,153 +1,351 @@
-import React, { useState, useEffect } from 'react';
-import { Shield, Sparkles, BookOpen, Star, HelpCircle, PhoneCall, Gift, MessageCircle, CreditCard, CheckCircle2, ChevronRight, UserCheck } from 'lucide-react';
+import React, { useState } from 'react';
+import { Shield, Sparkles, BookOpen, Star, HelpCircle, PhoneCall, Gift, MessageCircle, Bot, FileText, Flame, Award, Layers, ChevronRight, Zap, Target, TrendingUp, Rocket, Trophy, CheckCircle } from 'lucide-react';
 
-export default function Home({ onEnrollSuccess, user, setActivePage, courses, setCourses, toppers }) {
-  const [selectedCourse, setSelectedCourse] = useState(null);
-  const [paymentStep, setPaymentStep] = useState('select'); // select, checkout, success
-  const [paymentProvider, setPaymentProvider] = useState('Razorpay');
+export default function Home({ user, setActivePage, courses, setCourses, toppers, onStartLearning }) {
+  const [activeFaq, setActiveFaq] = useState(null);
 
-  const handleEnrollClick = (course) => {
-    if (!user) {
-      alert('Please Login or Register to enroll in courses!');
-      setActivePage('login');
-      return;
+  const mathHubCards = [
+    {
+      id: 'jee-main',
+      icon: Target,
+      label: 'JEE Main Mathematics',
+      desc: 'Complete 20 chapters — Algebra, Calculus, Geometry & more',
+      color: 'from-cyan-500 to-blue-600',
+      glow: 'shadow-cyan-500/20',
+      border: 'border-cyan-500/20',
+      iconBg: 'bg-cyan-500/10 text-cyan-400',
+      tag: 'JEE Main',
+      gradeId: 'jee-mains',
+      tab: 'courses',
+      chapterTab: 'videos'
+    },
+    {
+      id: 'jee-advanced',
+      icon: Zap,
+      label: 'JEE Advanced Mathematics',
+      desc: 'Advanced level — Complex Numbers, Vectors, 3D Geometry & more',
+      color: 'from-gold to-yellow-500',
+      glow: 'shadow-yellow-500/20',
+      border: 'border-yellow-500/20',
+      iconBg: 'bg-yellow-500/10 text-yellow-400',
+      tag: 'JEE Advanced',
+      gradeId: 'jee-advanced',
+      tab: 'courses',
+      chapterTab: 'videos'
+    },
+    {
+      id: 'mock-tests',
+      icon: Award,
+      label: 'Mock Tests',
+      desc: 'JEE Pattern chapter-wise + full syllabus mock exams',
+      color: 'from-purple-500 to-violet-600',
+      glow: 'shadow-purple-500/20',
+      border: 'border-purple-500/20',
+      iconBg: 'bg-purple-500/10 text-purple-400',
+      tag: 'Test Series',
+      gradeId: 'jee-mains',
+      tab: 'tests',
+      chapterTab: 'mockTests'
+    },
+    {
+      id: 'notes-pdfs',
+      icon: FileText,
+      label: 'Notes & PDFs',
+      desc: 'Handwritten lecture notes, DPPs, and past year question papers',
+      color: 'from-emerald-500 to-teal-600',
+      glow: 'shadow-emerald-500/20',
+      border: 'border-emerald-500/20',
+      iconBg: 'bg-emerald-500/10 text-emerald-400',
+      tag: 'Study Material',
+      gradeId: 'jee-mains',
+      tab: 'courses',
+      chapterTab: 'pdfs'
+    },
+    {
+      id: 'formulas',
+      icon: Flame,
+      label: 'Formula Sheets',
+      desc: 'Chapter-wise formula cheat sheets and shortcut tricks',
+      color: 'from-orange-500 to-red-500',
+      glow: 'shadow-orange-500/20',
+      border: 'border-orange-500/20',
+      iconBg: 'bg-orange-500/10 text-orange-400',
+      tag: 'Quick Revision',
+      gradeId: 'jee-mains',
+      tab: 'courses',
+      chapterTab: 'formulas'
+    },
+    {
+      id: 'ai-doubt',
+      icon: Bot,
+      label: 'AI Doubt Solver',
+      desc: 'Ask any maths problem — get LaTeX-formatted step-by-step solutions',
+      color: 'from-pink-500 to-rose-600',
+      glow: 'shadow-pink-500/20',
+      border: 'border-pink-500/20',
+      iconBg: 'bg-pink-500/10 text-pink-400',
+      tag: 'AI Powered',
+      gradeId: 'jee-mains',
+      tab: 'doubts',
+      chapterTab: 'videos'
     }
-    // Check if course already purchased
-    if (user.purchasedCourses?.includes(course.id)) {
-      alert('You have already enrolled in this course. Accessing student portal!');
-      setActivePage('student-dashboard');
-      return;
+  ];
+
+  const faqs = [
+    {
+      q: 'Is everything really free on Quantrex Academy?',
+      a: 'Yes! 100% free. No hidden charges, no subscriptions, no login required. All mathematics content — videos, notes, formulas, PDFs, and mock tests — is freely accessible to every student.'
+    },
+    {
+      q: 'Do I need to register or login to study?',
+      a: 'No registration or login needed for students. Just click any topic and start studying instantly. Only admins need to login to upload content.'
+    },
+    {
+      q: 'What is covered in JEE Main vs JEE Advanced?',
+      a: 'Both include all 20 mathematics chapters. JEE Advanced content has more rigorous and harder problems, including advanced calculus, vector algebra, 3D geometry, complex numbers, and special problems from past IIT papers.'
+    },
+    {
+      q: 'Can I access this on mobile?',
+      a: 'Absolutely! Quantrex Academy is fully mobile-responsive. Study anywhere — videos, formulas, tests all work perfectly on phones and tablets.'
     }
-    setSelectedCourse(course);
-    setPaymentStep('checkout');
-  };
-
-  const handleProcessPayment = async () => {
-    if (!selectedCourse) return;
-    setPaymentStep('processing');
-
-    try {
-      const response = await fetch('/api/payments/checkout', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem('token')}`
-        },
-        body: JSON.stringify({
-          courseId: selectedCourse.id,
-          paymentProvider
-        })
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        setPaymentStep('success');
-        onEnrollSuccess?.(selectedCourse.id);
-      } else {
-        // Fallback for standalone mockup mode (when backend is not running)
-        setTimeout(() => {
-          setPaymentStep('success');
-          onEnrollSuccess?.(selectedCourse.id);
-        }, 1500);
-      }
-    } catch (e) {
-      // Offline fallback
-      setTimeout(() => {
-        setPaymentStep('success');
-        onEnrollSuccess?.(selectedCourse.id);
-      }, 1500);
-    }
-  };
+  ];
 
   return (
-    <div className="relative w-full overflow-hidden">
-      {/* 1. HERO SECTION */}
-      <section className="relative z-10 pt-20 pb-28 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
-        {/* Top tagline badge */}
-        <div className="flex items-center gap-2 px-4 py-1.5 bg-electric/10 border border-electric/30 text-electric rounded-full text-xs font-semibold tracking-wider uppercase mb-8 shadow-[0_0_15px_rgba(0,240,255,0.1)]">
-          <Sparkles className="h-4 w-4 text-gold animate-spin" />
-          <span>ADMISSIONS OPEN FOR JEE MAIN & ADVANCED 2027</span>
-        </div>
+    <div className="relative w-full overflow-hidden bg-obsidian">
+      {/* Premium Animated Background Orbs */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-electric/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
+        <div className="absolute top-[20%] right-[-10%] w-96 h-96 bg-blue-600/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-[-20%] left-[20%] w-[500px] h-[500px] bg-gold/10 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-4000"></div>
+      </div>
 
-        {/* Brand headline */}
-        <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-white mb-6 uppercase max-w-5xl leading-none">
-          Where <span className="bg-gradient-to-r from-electric via-white to-gold bg-clip-text text-transparent">Rankers</span> Are Engineered
-        </h1>
+      {/* ==================== FACULTY CREDENTIALS SECTION ==================== */}
+      <section className="py-24 px-6 md:px-12 bg-cyberdark/40 border-t border-white/5 relative overflow-hidden">
+        {/* Background Accent */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-electric/5 rounded-full filter blur-[100px] pointer-events-none"></div>
 
-        {/* Subtitle */}
-        <p className="text-gray-400 text-sm md:text-xl max-w-3xl mb-10 leading-relaxed font-mono">
-          High-end cognitive math infrastructure designed exclusively for IIT-JEE Advanced aspirants. Guided by <span className="text-gold font-bold text-glow-gold">A.K. Sir (Ajay Kumar Saroj)</span>.
-        </p>
-
-        {/* CTA triggers */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-16">
-          <button 
-            onClick={() => {
-              const el = document.getElementById('courses-section');
-              el?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="px-8 py-4 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian font-bold text-sm tracking-wider uppercase rounded-lg shadow-lg hover:shadow-cyan-500/20 transform hover:-translate-y-0.5 transition-all"
-          >
-            Explore Courses
-          </button>
-          <button 
-            onClick={() => setActivePage('login')}
-            className="px-8 py-4 border border-white/10 hover:border-electric/40 text-platinum hover:text-white font-bold text-sm tracking-wider uppercase rounded-lg bg-cyberdark/40 backdrop-blur transition-all"
-          >
-            Start Free Demo
-          </button>
-        </div>
-
-        {/* Interactive Mathematics Animations Widget */}
-        <div className="w-full max-w-4xl glass-panel rounded-2xl p-6 border border-white/5 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
-          {/* Animated Function 1 */}
-          <div className="flex-1 flex flex-col items-center p-4 bg-obsidian/60 border border-white/5 rounded-xl float-math-1">
-            <span className="text-[10px] text-electric uppercase tracking-widest font-semibold mb-2">Limit Calculus</span>
-            <div className="text-xl font-bold font-display text-glow-blue py-3">
-              {"$$\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$$"}
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
+          <div className="flex-1 w-full flex justify-center lg:justify-start">
+            <div className="relative max-w-md w-full bg-obsidian border border-electric/30 p-3 rounded-2xl shadow-2xl glow-blue group">
+              <div className="relative h-[500px] w-full bg-cyberdark rounded-xl overflow-hidden">
+                <img
+                  src="/images/aksir-profile.jpg"
+                  alt="A.K. Sir (Ajay Kumar Saroj)"
+                  className="w-full h-full object-cover object-[center_20%] opacity-90 group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
+                <div className="absolute bottom-8 left-8 right-8">
+                  <h4 className="text-white font-black text-3xl tracking-wider uppercase font-display">Ajay Kumar Saroj</h4>
+                  <p className="text-sm text-electric font-bold uppercase tracking-widest mt-2 bg-electric/10 inline-block px-3 py-1 rounded border border-electric/20">Founder, Quantrex Academy &bull; B.Tech, NIT Rourkela</p>
+                </div>
+              </div>
             </div>
-            <p className="text-[10px] text-gray-400 font-mono text-center">Engineered limits mapping curve equations</p>
           </div>
 
-          {/* Animated Function 2 */}
-          <div className="flex-1 flex flex-col items-center p-4 bg-obsidian/60 border border-white/5 rounded-xl float-math-2">
-            <span className="text-[10px] text-gold uppercase tracking-widest font-semibold mb-2">Parabolic Reflector</span>
-            <div className="text-xl font-bold font-display text-glow-gold py-3">
-              {"$$y^2 = 4ax$$"}
+          <div className="flex-1 space-y-10">
+            <div>
+              <span className="text-xs font-bold text-gold uppercase tracking-widest flex items-center gap-2 mb-3">
+                <Star className="h-4 w-4 fill-current" /> MASTER MATHEMATICS FACULTY
+              </span>
+              <h2 className="text-4xl md:text-6xl font-black uppercase text-white leading-tight font-display mb-6">
+                8+ Years of <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-blue-500">Excellence</span>
+              </h2>
+              <p className="text-gray-100 text-base md:text-lg leading-relaxed font-semibold border-l-4 border-electric/80 pl-5">
+                Specialized in JEE Main & Advanced Mathematics. A dedicated mentor whose philosophy revolves around building unbreakable analytical thinking and problem-solving abilities.
+              </p>
             </div>
-            <p className="text-[10px] text-gray-400 font-mono text-center">Coordinate geometry parabolic focal rays</p>
-          </div>
 
-          {/* Animated Function 3 */}
-          <div className="flex-1 flex flex-col items-center p-4 bg-obsidian/60 border border-white/5 rounded-xl float-math-3">
-            <span className="text-[10px] text-electric uppercase tracking-widest font-semibold mb-2">Complex Plane</span>
-            <div className="text-xl font-bold font-display text-glow-blue py-3">
-              {"$$e^{i\\pi} + 1 = 0$$"}
+            <div className="space-y-6">
+              <h3 className="text-white font-black text-xl uppercase tracking-wider border-b border-white/20 pb-3 flex items-center gap-3">
+                <Award className="h-6 w-6 text-gold" /> Professional Experience
+              </h3>
+              <ul className="space-y-5">
+                <li className="flex items-start gap-4">
+                  <div className="mt-1.5 h-2.5 w-2.5 rounded-full bg-electric shadow-[0_0_12px_rgba(0,240,255,0.9)]"></div>
+                  <div>
+                    <h4 className="text-white font-black text-base tracking-wide">Ex-JEE Advanced Mathematics Faculty</h4>
+                    <p className="text-sm text-gray-300 font-bold mt-1">ALLEN Career Institute</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="mt-1.5 h-2.5 w-2.5 rounded-full bg-electric shadow-[0_0_12px_rgba(0,240,255,0.9)]"></div>
+                  <div>
+                    <h4 className="text-white font-black text-base tracking-wide">Former Centre Head & Mathematics Faculty</h4>
+                    <p className="text-sm text-gray-300 font-bold mt-1">Axis Institute, Koelnagar, Rourkela, Odisha</p>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <p className="text-[10px] text-gray-400 font-mono text-center">Euler's identity complex rotational coordinate</p>
+
+            <div className="space-y-6">
+              <h3 className="text-white font-black text-xl uppercase tracking-wider border-b border-white/20 pb-3 flex items-center gap-3">
+                <Trophy className="h-6 w-6 text-gold" /> Key Achievements
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div className="bg-obsidian border-2 border-gold/40 p-5 rounded-xl shadow-[0_0_20px_rgba(245,158,11,0.15)] hover:border-gold transition-colors">
+                  <h4 className="text-4xl font-black text-gold font-display mb-2">500+</h4>
+                  <p className="text-xs text-white uppercase tracking-widest font-black leading-relaxed">Students Qualified<br/>in JEE Advanced</p>
+                </div>
+                <div className="bg-obsidian border-2 border-electric/40 p-5 rounded-xl shadow-[0_0_20px_rgba(0,240,255,0.15)] hover:border-electric transition-colors">
+                  <h4 className="text-4xl font-black text-electric font-display mb-2">3000+</h4>
+                  <p className="text-xs text-white uppercase tracking-widest font-black leading-relaxed">Students Qualified<br/>in JEE Main</p>
+                </div>
+                <div className="bg-cyberdark border border-emerald-500/40 p-4 rounded-xl sm:col-span-2 shadow-lg">
+                  <p className="text-sm text-white font-bold flex items-center gap-3 tracking-wide">
+                    <CheckCircle className="h-5 w-5 text-emerald-400" /> Outstanding Results in Board Examinations
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* 2. RESULTS / HALL OF FAME SLIDER */}
-      <section className="bg-cyberdark/30 border-y border-white/5 py-12 px-6 overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-center text-xs tracking-[0.2em] font-semibold text-gold uppercase mb-8">
-            QUANTREX TOPPERS • HALL OF FAME ACCOMPLISHMENTS
-          </p>
+      {/* ==================== HERO SECTION ==================== */}
+      <section className="relative z-10 pt-24 pb-20 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
+        {/* Badge */}
+        <div className="flex flex-col sm:flex-row items-center gap-3 px-6 py-2 bg-electric/10 border border-electric/30 text-electric rounded-full text-xs font-bold tracking-widest uppercase mb-8 shadow-[0_0_20px_rgba(0,240,255,0.15)]">
+          <Sparkles className="h-4 w-4 text-gold animate-spin" />
+          <span>NIT Rourkela Alumnus</span>
+          <span className="hidden sm:block text-white/30">•</span>
+          <span>Ex-ALLEN Career Institute Faculty</span>
+        </div>
+
+        {/* Headline */}
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-6 uppercase max-w-5xl leading-none font-display">
+          Concepts Create <br/>
+          <span className="bg-gradient-to-r from-electric via-cyan-300 to-gold bg-clip-text text-transparent">Destiny</span>
+        </h1>
+
+        {/* Sub-headline */}
+        <p className="text-gray-100 text-base md:text-xl max-w-4xl mb-8 leading-relaxed font-semibold">
+          Mathematics is not about memorizing formulas; it is about developing analytical thinking, problem-solving ability, and the confidence to tackle challenging questions. Strong concepts today create future success.
+        </p>
+        
+        <div className="flex flex-wrap justify-center gap-4 mb-10 text-xs md:text-sm font-black text-white uppercase tracking-widest">
+           <span className="px-4 py-1.5 border border-white/20 rounded-lg bg-cyberdark/80 shadow-[0_0_15px_rgba(255,255,255,0.1)]">8+ Years Experience</span>
+           <span className="px-4 py-1.5 border border-white/20 rounded-lg bg-cyberdark/80 shadow-[0_0_15px_rgba(255,255,255,0.1)]">500+ JEE Adv. Qualifiers</span>
+           <span className="px-4 py-1.5 border border-white/20 rounded-lg bg-cyberdark/80 shadow-[0_0_15px_rgba(255,255,255,0.1)]">3000+ JEE Main Qualifiers</span>
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-5 mb-20">
+          <button
+            onClick={() => onStartLearning('jee-mains', 'courses', 'videos')}
+            className="group relative px-8 py-4 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian font-bold text-sm tracking-widest uppercase rounded-xl shadow-[0_0_20px_rgba(0,180,216,0.4)] hover:shadow-[0_0_35px_rgba(0,180,216,0.6)] transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+            <span className="relative flex items-center gap-2">
+              <Rocket className="h-4 w-4" /> Start JEE Main Now — Free
+            </span>
+          </button>
+          <button
+            onClick={() => onStartLearning('jee-advanced', 'courses', 'videos')}
+            className="px-8 py-4 border-2 border-gold/40 hover:border-gold text-gold hover:text-white font-bold text-sm tracking-widest uppercase rounded-xl bg-cyberdark/40 backdrop-blur shadow-[0_0_15px_rgba(245,158,11,0.1)] hover:shadow-[0_0_25px_rgba(245,158,11,0.3)] hover:bg-gold/10 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+          >
+            <Zap className="h-4 w-4" /> JEE Advanced Portal
+          </button>
+        </div>
+
+        {/* Math formula ticker */}
+        <div className="w-full max-w-5xl glass-panel-glow rounded-3xl p-8 border border-white/10 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-gradient-to-br from-cyberdark/80 to-obsidian/90">
+          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
           
+          <div className="flex-1 flex flex-col items-center p-6 bg-obsidian/80 border border-white/5 rounded-2xl float-math-1 shadow-lg group hover:border-electric/50 transition-colors">
+            <span className="text-[10px] text-electric uppercase tracking-widest font-semibold mb-2">Limit Calculus</span>
+            <div className="text-xl font-bold font-display text-glow-blue py-3">
+              {"$$\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$$"}
+            </div>
+            <p className="text-[10px] text-gray-400 font-mono text-center">Fundamental trigonometric limit</p>
+          </div>
+          <div className="flex-1 flex flex-col items-center p-6 bg-obsidian/80 border border-white/5 rounded-2xl float-math-2 shadow-lg group hover:border-gold/50 transition-colors">
+            <span className="text-[10px] text-gold uppercase tracking-widest font-semibold mb-2">Parabolic Geometry</span>
+            <div className="text-xl font-bold font-display text-glow-gold py-3 group-hover:scale-105 transition-transform">
+              {"$$y^2 = 4ax$$"}
+            </div>
+            <p className="text-[10px] text-gray-400 font-mono text-center">Standard parabola focus equation</p>
+          </div>
+          <div className="flex-1 flex flex-col items-center p-6 bg-obsidian/80 border border-white/5 rounded-2xl float-math-3 shadow-lg group hover:border-electric/50 transition-colors">
+            <span className="text-[10px] text-electric uppercase tracking-widest font-semibold mb-2">Euler's Identity</span>
+            <div className="text-xl font-bold font-display text-glow-blue py-3 group-hover:scale-105 transition-transform">
+              {"$$e^{i\\pi} + 1 = 0$$"}
+            </div>
+            <p className="text-[10px] text-gray-400 font-mono text-center">The most beautiful equation in math</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== MATHEMATICS QUICK HUB ==================== */}
+      <section className="py-20 px-6 md:px-12 max-w-7xl mx-auto">
+        <div className="flex flex-col items-center mb-14 text-center">
+          <span className="text-xs font-semibold text-electric uppercase tracking-widest mb-3">INSTANT ACCESS</span>
+          <h2 className="text-3xl md:text-5xl font-bold uppercase text-white mb-4">
+            Mathematics Study Hub
+          </h2>
+          <p className="text-gray-400 text-sm font-mono max-w-xl">
+            Click any card below — start studying instantly, no login needed.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {mathHubCards.map((card) => {
+            const Icon = card.icon;
+            return (
+              <button
+                key={card.id}
+                onClick={() => onStartLearning(card.gradeId, card.tab, card.chapterTab)}
+                className={`group relative bg-cyberdark/50 border ${card.border} rounded-2xl p-6 text-left overflow-hidden hover:shadow-lg ${card.glow} hover:scale-[1.02] transition-all duration-300`}
+              >
+                {/* Background gradient glow */}
+                <div className={`absolute top-0 right-0 h-32 w-32 bg-gradient-to-bl ${card.color} opacity-5 rounded-full blur-2xl group-hover:opacity-10 transition-opacity`} />
+
+                {/* Tag */}
+                <span className={`inline-block text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded mb-4 border ${card.border} ${card.iconBg}`}>
+                  {card.tag}
+                </span>
+
+                {/* Icon */}
+                <div className={`h-12 w-12 rounded-xl ${card.iconBg} flex items-center justify-center mb-4 border ${card.border}`}>
+                  <Icon className="h-6 w-6" />
+                </div>
+
+                {/* Content */}
+                <h3 className="text-white font-bold text-base mb-2 leading-tight">{card.label}</h3>
+                <p className="text-gray-400 text-xs font-mono leading-relaxed mb-4">{card.desc}</p>
+
+                {/* CTA Arrow */}
+                <div className={`flex items-center gap-1 text-xs font-bold bg-gradient-to-r ${card.color} bg-clip-text text-transparent`}>
+                  Start Now <ChevronRight className="h-3.5 w-3.5 text-current opacity-70 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* ==================== TOPPERS / HALL OF FAME ==================== */}
+      <section className="bg-cyberdark/30 border-y border-white/5 py-16 px-6 overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col items-center mb-10 text-center">
+            <p className="text-xs tracking-[0.2em] font-semibold text-gold uppercase mb-2">
+              QUANTREX TOPPERS • HALL OF FAME
+            </p>
+            <p className="text-gray-500 text-xs font-mono">Students who cracked IIT with A.K. Sir's guidance</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {(toppers || []).map((t, idx) => (
-              <div key={idx} className="bg-obsidian border border-white/5 p-5 rounded-xl hover:border-gold/30 hover:scale-[1.02] transition-all relative overflow-hidden group flex items-center gap-4">
+              <div
+                key={idx}
+                className="bg-obsidian border border-white/5 p-5 rounded-xl hover:border-gold/30 hover:scale-[1.02] transition-all relative overflow-hidden group flex items-center gap-4"
+              >
                 <div className="absolute top-0 right-0 h-16 w-16 bg-gradient-to-bl from-gold/5 to-transparent pointer-events-none" />
                 <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-gold/30 bg-cyberdark shrink-0">
-                  <img 
-                    src={t.photo || "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80"} 
-                    alt={t.name} 
+                  <img
+                    src={t.photo || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80'}
+                    alt={t.name}
                     className="h-full w-full object-cover"
-                    onError={(e) => {
-                      e.target.src = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80";
-                    }}
+                    onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80'; }}
                   />
                 </div>
                 <div className="flex-grow min-w-0">
@@ -164,273 +362,154 @@ export default function Home({ onEnrollSuccess, user, setActivePage, courses, se
         </div>
       </section>
 
-      {/* 3. COURSE SHOWCASE CARDS */}
+      {/* ==================== ALL COURSES GRID ==================== */}
       <section id="courses-section" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
         <div className="flex flex-col items-center mb-16 text-center">
-          <span className="text-xs font-semibold text-electric uppercase tracking-widest mb-3">CURRICULUM SUITE</span>
-          <h2 className="text-3xl md:text-5xl font-bold uppercase text-white">IIT-JEE Mathematics Courses</h2>
+          <span className="text-xs font-semibold text-electric uppercase tracking-widest mb-3">FULL CURRICULUM</span>
+          <h2 className="text-3xl md:text-5xl font-bold uppercase text-white">All Mathematics Courses</h2>
           <p className="text-gray-400 text-xs md:text-sm font-mono max-w-xl mt-3">
-            Fully comprehensive systems including interactive video players, watermarked DPPs, test evaluation dashboards, and AI support.
+            Every course is free and open — no fees, no login, just mathematics.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {courses.map((course) => {
-            const hasPurchased = user?.purchasedCourses?.includes(course.id);
+          {courses.map((course) => (
+            <div
+              key={course.id}
+              className="bg-cyberdark/40 border border-white/5 rounded-2xl overflow-hidden shadow-lg hover:border-electric/30 hover:shadow-electric/5 transition-all flex flex-col group"
+            >
+              <div className="relative h-48 w-full bg-obsidian overflow-hidden">
+                <img
+                  src={course.coverImage}
+                  alt={course.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+                />
+                <div className="absolute top-4 left-4 bg-obsidian/80 border border-electric/40 text-electric text-[10px] font-bold px-2.5 py-1 rounded font-display tracking-widest uppercase">
+                  {course.tag}
+                </div>
+                <div className="absolute top-4 right-4 bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-[9px] font-bold px-2 py-0.5 rounded font-mono uppercase tracking-wider">
+                  FREE
+                </div>
+              </div>
+
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-1 text-gold mb-2">
+                    <Star className="h-4 w-4 fill-current" />
+                    <span className="text-xs font-bold text-white font-mono">{course.rating}</span>
+                    <span className="text-gray-500 text-[10px] font-mono">(Open Access)</span>
+                  </div>
+                  <h3 className="text-white font-bold text-lg mb-3 tracking-wide">{course.title}</h3>
+                  <p className="text-xs text-gray-400 line-clamp-3 leading-relaxed mb-6 font-mono">
+                    {course.description}
+                  </p>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="text-[10px] text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 font-bold px-2 py-0.5 rounded font-mono uppercase tracking-wider">
+                      ✨ 100% Free — No Login
+                    </span>
+                  </div>
+                  <button
+                    onClick={() => onStartLearning(course.id, 'courses', 'videos')}
+                    className="w-full py-3 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-md hover:shadow-cyan-500/20"
+                  >
+                    Start Learning Free →
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ==================== STATS STRIP ==================== */}
+      <section className="py-16 px-6 bg-cyberdark/20 border-y border-white/5">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {[
+            { num: '20+', label: 'Chapters Per Course', icon: BookOpen },
+            { num: '500+', label: 'Practice Problems', icon: Target },
+            { num: '100%', label: 'Free Forever', icon: Sparkles },
+            { num: '1500+', label: 'Students Mentored', icon: TrendingUp }
+          ].map((stat, i) => {
+            const Icon = stat.icon;
             return (
-              <div 
-                key={course.id} 
-                className="bg-cyberdark/40 border border-white/5 rounded-2xl overflow-hidden shadow-lg hover:border-electric/30 hover:shadow-electric/5 transition-all flex flex-col group"
-              >
-                <div className="relative h-48 w-full bg-obsidian overflow-hidden">
-                  <img 
-                    src={course.coverImage} 
-                    alt={course.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
-                  />
-                  <div className="absolute top-4 left-4 bg-obsidian/80 border border-electric/40 text-electric text-[10px] font-bold px-2.5 py-1 rounded font-display tracking-widest uppercase">
-                    {course.tag}
-                  </div>
-                  {hasPurchased && (
-                    <div className="absolute top-4 right-4 bg-emerald-500 text-obsidian text-[10px] font-bold px-2.5 py-1 rounded font-display tracking-widest uppercase flex items-center gap-1">
-                      <UserCheck className="h-3 w-3" />
-                      ENROLLED
-                    </div>
-                  )}
-                </div>
-
-                <div className="p-6 flex-1 flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center gap-1 text-gold mb-2">
-                      <Star className="h-4.5 w-4.5 fill-current" />
-                      <span className="text-xs font-bold text-white font-mono">{course.rating}</span>
-                      <span className="text-gray-500 text-[10px] font-mono">(420 reviews)</span>
-                    </div>
-                    <h3 className="text-white font-bold text-lg mb-3 tracking-wide">{course.title}</h3>
-                    <p className="text-xs text-gray-400 line-clamp-3 leading-relaxed mb-6 font-mono">
-                      {course.description}
-                    </p>
-                  </div>
-
-                  <div>
-                    <div className="flex items-baseline gap-2 mb-6">
-                      <span className="text-2xl font-bold text-white font-display">₹{course.price}</span>
-                      <span className="text-xs text-gray-500 line-through font-mono">₹{course.originalPrice}</span>
-                      <span className="text-[10px] text-emerald-400 font-bold font-mono">70% OFF</span>
-                    </div>
-
-                    <button 
-                      onClick={() => handleEnrollClick(course)}
-                      className={`w-full py-3 text-xs font-bold tracking-wider uppercase rounded-lg transition-all ${
-                        hasPurchased 
-                          ? 'bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-obsidian' 
-                          : 'bg-obsidian border border-white/10 hover:border-electric text-white hover:text-electric'
-                      }`}
-                    >
-                      {hasPurchased ? 'ACCESS DASHBOARD' : 'ENROLL NOW'}
-                    </button>
+              <div key={i} className="space-y-2">
+                <div className="flex justify-center">
+                  <div className="h-10 w-10 rounded-xl bg-electric/10 border border-electric/20 flex items-center justify-center">
+                    <Icon className="h-5 w-5 text-electric" />
                   </div>
                 </div>
+                <div className="text-2xl md:text-3xl font-black text-white font-display">{stat.num}</div>
+                <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">{stat.label}</div>
               </div>
             );
           })}
         </div>
       </section>
 
-      {/* 4. FOUNDER SECTION: A.K. SIR */}
-      <section className="py-24 px-6 md:px-12 bg-cyberdark/20 border-t border-white/5">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-          {/* Visual card */}
-          <div className="flex-1 w-full flex justify-center">
-            <div className="relative max-w-sm w-full bg-obsidian border border-gold/20 p-4 rounded-2xl shadow-xl glow-gold group">
-              <div className="relative h-[400px] w-full bg-cyberdark rounded-xl overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" 
-                  alt="A.K. Sir (Ajay Kumar Saroj)"
-                  className="w-full h-full object-cover opacity-80 filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6">
-                  <h4 className="text-white font-bold text-xl tracking-wider">A.K. SIR</h4>
-                  <p className="text-xs text-gold font-mono uppercase mt-1">Founder, Ajay Kumar Saroj</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Description content */}
-          <div className="flex-1 space-y-6">
-            <span className="text-xs font-semibold text-gold uppercase tracking-widest">FOUNDER & MASTER CLASS INSTRUCTOR</span>
-            <h2 className="text-3xl md:text-5xl font-bold uppercase text-white leading-tight">AJAY KUMAR SAROJ</h2>
-            <p className="text-gray-400 text-sm md:text-base leading-relaxed font-mono">
-              Widely acknowledged for engineering top ranks in IIT-JEE Mathematics. Coached over 1,500 students into premiere IITs and NITs. Ajay Kumar Saroj (A.K. Sir) brings a structured algebraic and geometric analysis methodology that reduces complex calculus constraints into visual, intuitive patterns.
-            </p>
-            
-            <div className="grid grid-cols-2 gap-6 pt-4">
-              <div className="border-l-2 border-electric pl-4">
-                <h5 className="text-white font-bold text-lg font-display">12+ Years</h5>
-                <p className="text-xs text-gray-500 font-mono mt-1">Teaching Excellence</p>
-              </div>
-              <div className="border-l-2 border-gold pl-4">
-                <h5 className="text-white font-bold text-lg font-display">1500+</h5>
-                <p className="text-xs text-gray-500 font-mono mt-1">IITians Mentored</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* 5. FAQS & REVIEWS */}
-      <section className="py-24 px-6 md:px-12 max-w-5xl mx-auto">
+      {/* ==================== FAQ SECTION ==================== */}
+      <section className="py-24 px-6 md:px-12 max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-xs font-semibold text-electric uppercase tracking-widest mb-3">RESOLVING DOUBTS</span>
+          <span className="text-xs font-semibold text-electric uppercase tracking-widest mb-3 block">RESOLVING DOUBTS</span>
           <h2 className="text-3xl font-bold text-white uppercase">Frequently Asked Questions</h2>
         </div>
 
-        <div className="space-y-4">
-          {[
-            { q: 'How does the content protection and anti-piracy system work?', a: 'Quantrex utilizes session device-fingerprinting (max 1 device login), dynamic identity watermarking on videos (incorporating name, phone, and IP), custom web-safe PDF visualizers that disable print/download tags, and visibility-detection blur overlays.' },
-            { q: 'Is there support for UPI, Net Banking, and Card payments?', a: 'Yes! We support complete integrations of payments using Razorpay, Stripe, and direct scan UPI. Upon successful transaction, your course is unlocked in real-time.' },
-            { q: 'Can I access lectures on mobile?', a: 'Quantrex is a responsive mobile-first web app. You can log in on any mobile browser, view lectures, download watermarked notes, and play live mock examinations.' }
-          ].map((faq, idx) => (
-            <div key={idx} className="bg-cyberdark/30 border border-white/5 p-6 rounded-xl space-y-2">
-              <h4 className="text-white font-semibold text-sm flex items-center gap-2">
-                <HelpCircle className="h-4.5 w-4.5 text-electric shrink-0" />
-                {faq.q}
-              </h4>
-              <p className="text-xs text-gray-400 font-mono leading-relaxed pl-6">
-                {faq.a}
-              </p>
+        <div className="space-y-3">
+          {faqs.map((faq, idx) => (
+            <div
+              key={idx}
+              className={`bg-cyberdark/30 border rounded-xl overflow-hidden transition-all cursor-pointer ${activeFaq === idx ? 'border-electric/30' : 'border-white/5 hover:border-white/10'}`}
+              onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
+            >
+              <div className="flex items-center justify-between p-5 gap-4">
+                <h4 className="text-white font-semibold text-sm flex items-center gap-2">
+                  <HelpCircle className={`h-4 w-4 shrink-0 ${activeFaq === idx ? 'text-electric' : 'text-gray-500'}`} />
+                  {faq.q}
+                </h4>
+                <ChevronRight className={`h-4 w-4 text-gray-500 shrink-0 transition-transform ${activeFaq === idx ? 'rotate-90 text-electric' : ''}`} />
+              </div>
+              {activeFaq === idx && (
+                <div className="px-5 pb-5 pt-0">
+                  <p className="text-xs text-gray-400 font-mono leading-relaxed pl-6 border-l border-electric/30">
+                    {faq.a}
+                  </p>
+                </div>
+              )}
             </div>
           ))}
         </div>
       </section>
 
-      {/* 6. MOBILE STICKY FLOATING ACTION FOOTER */}
+      {/* ==================== MOBILE STICKY FOOTER ==================== */}
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-obsidian/90 backdrop-blur-md border-t border-white/10 py-3.5 px-4 md:hidden flex justify-around items-center">
-        <a 
-          href="https://wa.me/919876543210" 
-          target="_blank" 
+        <a
+          href="https://wa.me/919876543210"
+          target="_blank"
           rel="noreferrer"
           className="flex flex-col items-center text-[10px] text-emerald-400 font-semibold font-mono"
         >
           <MessageCircle className="h-5 w-5 fill-emerald-500/10 mb-1" />
           WhatsApp
         </a>
-        <a 
-          href="tel:+919876543210" 
+        <a
+          href="tel:+919876543210"
           className="flex flex-col items-center text-[10px] text-electric font-semibold font-mono"
         >
           <PhoneCall className="h-5 w-5 fill-electric/10 mb-1" />
           Call Now
         </a>
-        <button 
-          onClick={() => {
-            const el = document.getElementById('courses-section');
-            el?.scrollIntoView({ behavior: 'smooth' });
-          }}
+        <button
+          onClick={() => onStartLearning('jee-mains', 'courses', 'videos')}
           className="flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-electric to-blue-600 text-obsidian font-bold text-[10px] tracking-wider uppercase rounded-lg shadow"
         >
           <Gift className="h-3.5 w-3.5" />
-          Join Demo
+          Study Free
         </button>
       </div>
-
-      {/* 7. PREMIUM PAYMENT GATEWAY CHECKOUT MODAL */}
-      {selectedCourse && paymentStep !== 'select' && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="w-full max-w-md bg-cyberdark border border-white/10 rounded-2xl overflow-hidden shadow-2xl animate-fade-in relative z-50">
-            {/* Modal Header */}
-            <div className="p-5 bg-obsidian border-b border-white/5 flex items-center justify-between">
-              <div>
-                <h4 className="text-sm font-bold text-white uppercase tracking-wider font-display">Secure Checkout</h4>
-                <span className="text-[10px] text-gray-500 font-mono">Quantrex Secure Layer v1.02</span>
-              </div>
-              <button 
-                onClick={() => setSelectedCourse(null)} 
-                className="text-gray-400 hover:text-white transition-colors text-xs font-bold"
-              >
-                ✕ CLOSE
-              </button>
-            </div>
-
-            {paymentStep === 'checkout' && (
-              <div className="p-6 space-y-6">
-                <div className="bg-obsidian/50 p-4 border border-white/5 rounded-xl">
-                  <span className="text-[10px] text-gray-500 font-mono uppercase block mb-1">Purchasing Course</span>
-                  <h5 className="text-white font-bold text-sm">{selectedCourse.title}</h5>
-                  <div className="flex items-baseline gap-2 mt-2">
-                    <span className="text-2xl font-bold text-white font-display">₹{selectedCourse.price}</span>
-                    <span className="text-xs text-gray-500 line-through font-mono">₹{selectedCourse.originalPrice}</span>
-                  </div>
-                </div>
-
-                {/* Choose Payment Options */}
-                <div className="space-y-3">
-                  <label className="text-xs font-semibold text-gray-400 font-mono">SELECT PAYMENT PROVIDER</label>
-                  <div className="grid grid-cols-2 gap-3">
-                    <button 
-                      onClick={() => setPaymentProvider('Razorpay')}
-                      className={`p-3 border rounded-xl flex items-center justify-center gap-2 transition-all font-display text-xs ${paymentProvider === 'Razorpay' ? 'border-electric bg-electric/10 text-electric font-bold' : 'border-white/5 bg-obsidian/50 text-platinum'}`}
-                    >
-                      <CreditCard className="h-4 w-4" />
-                      Razorpay
-                    </button>
-                    <button 
-                      onClick={() => setPaymentProvider('Stripe')}
-                      className={`p-3 border rounded-xl flex items-center justify-center gap-2 transition-all font-display text-xs ${paymentProvider === 'Stripe' ? 'border-electric bg-electric/10 text-electric font-bold' : 'border-white/5 bg-obsidian/50 text-platinum'}`}
-                    >
-                      <CreditCard className="h-4 w-4" />
-                      Stripe
-                    </button>
-                  </div>
-                </div>
-
-                <button 
-                  onClick={handleProcessPayment}
-                  className="w-full py-4 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian font-bold text-sm tracking-wider uppercase rounded-xl shadow-lg hover:shadow-cyan-500/20 transition-all flex items-center justify-center gap-2"
-                >
-                  Pay ₹{selectedCourse.price} via {paymentProvider}
-                </button>
-
-                <div className="flex items-center justify-center gap-2 text-[10px] text-gray-500 font-mono">
-                  <Shield className="h-3.5 w-3.5 text-emerald-500" />
-                  SSL Encrypted • Fraud Prevention Sandbox Active
-                </div>
-              </div>
-            )}
-
-            {paymentStep === 'processing' && (
-              <div className="p-12 flex flex-col items-center justify-center space-y-4">
-                <div className="h-10 w-10 border-4 border-electric border-t-transparent rounded-full animate-spin" />
-                <h5 className="text-white font-bold text-sm uppercase font-display tracking-widest animate-pulse">Contacting Gateway...</h5>
-                <p className="text-gray-400 text-xs font-mono text-center max-w-[250px]">Validating SSL signatures and verifying account balance.</p>
-              </div>
-            )}
-
-            {paymentStep === 'success' && (
-              <div className="p-8 flex flex-col items-center justify-center text-center space-y-4">
-                <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-full text-emerald-400 animate-bounce">
-                  <CheckCircle2 className="h-10 w-10" />
-                </div>
-                <h5 className="text-white font-bold text-lg uppercase font-display tracking-widest">Enrolled Successfully!</h5>
-                <p className="text-gray-400 text-xs font-mono max-w-[280px]">
-                  Payment verified. The Course has been linked to your student dashboard. Instant WhatsApp invoice sent.
-                </p>
-                <button 
-                  onClick={() => {
-                    setSelectedCourse(null);
-                    setActivePage('student-dashboard');
-                  }}
-                  className="w-full mt-4 py-3 bg-emerald-500 hover:bg-emerald-400 text-obsidian font-bold text-xs tracking-wider uppercase rounded-xl transition-all"
-                >
-                  GO TO PORTAL
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
     </div>
   );
 }

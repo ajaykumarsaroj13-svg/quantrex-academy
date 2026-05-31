@@ -1,0 +1,2060 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m5hpi7d4",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $\\tan ^{-1}\\left(\\tan \\frac{5 \\pi}{6}\\right)+\\cos ^{-1}\\left(\\cos \\frac{13 \\pi}{6}\\right)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We know that, $\\tan ^{-1} \\tan x=x ; x \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ and $\\cos ^{-1} \\cos x=x ; x \\in[0, \\pi]$</p>\n<p>$$\\begin{aligned}\n& \\therefore \\quad \\tan ^{-1}\\left(\\tan \\frac{5 \\pi}{6}\\right)+\\cos ^{-1}\\left(\\cos \\frac{13 \\pi}{6}\\right) \\\\\n&= \\tan ^{-1}\\left[\\tan \\left(\\pi-\\frac{\\pi}{6}\\right)\\right]+\\cos ^{-1}\\left[\\cos \\left(\\pi+\\frac{7 \\pi}{6}\\right)\\right] \\\\\n&= \\tan ^{-1}\\left(-\\tan \\frac{\\pi}{6}\\right)+\\cos ^{-1}\\left(-\\cos \\frac{7 \\pi}{6}\\right) \\quad[\\because \\cos (\\pi+\\theta)=-\\cos \\theta] \\\\\n&=-\\tan ^{-1}\\left(\\tan \\frac{\\pi}{6}\\right)+\\pi-\\left[\\cos ^{-1} \\cos \\left(\\frac{7 \\pi}{6}\\right)\\right] \\\\\n&\\left\\{\\because \\tan ^{-1}(-x)=-\\tan ^{-1} x ; x \\in R \\operatorname{and} \\cos ^{-1}(-x)=\\pi-\\cos ^{-1} x ; x \\in[-1,1]\\right\\} \\\\\n&=-\\tan ^{-1}\\left(\\tan \\frac{\\pi}{6}\\right)+\\pi-\\cos ^{-1}\\left[\\cos \\left(\\pi+\\frac{\\pi}{6}\\right)\\right] \\quad[\\because \\cos (\\pi+\\theta)=-\\cos \\theta] \\\\\n&=-\\tan ^{-1}\\left(\\tan \\frac{\\pi}{6}\\right)+\\pi-\\left[\\cos ^{-1}\\left(-\\cos \\frac{\\pi}{6}\\right)\\right] \\quad\\left[\\because \\cos ^{-1}(-x)=\\pi-\\cos ^{-1} x\\right] \\\\\n&=-\\tan ^{-1}\\left(\\tan \\frac{\\pi}{6}\\right)+\\pi-\\pi+\\cos ^{-1}\\left(\\cos \\frac{\\pi}{6}\\right) \\quad \\\\\n&=-\\frac{\\pi}{6}+0+\\frac{\\pi}{6}=0 \\quad\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpikpk",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Evaluate $\\cos \\left[\\cos ^{-1}\\left(\\frac{-\\sqrt{3}}{2}\\right)+\\frac{\\pi}{6}\\right]$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\cos \\left[\\cos ^{-1}\\left(\\frac{-\\sqrt{3}}{2}\\right)+\\frac{\\pi}{6}\\right]=\\cos \\left[\\cos ^{-1}\\left(\\cos \\frac{5 \\pi}{6}\\right)+\\frac{\\pi}{6}\\right] \\quad\\left[\\because \\cos \\frac{5 \\pi}{6}=\\frac{-\\sqrt{3}}{2}\\right]$</p>\n<p>$$\\begin{aligned}\n& =\\cos \\left(\\frac{5 \\pi}{6}+\\frac{\\pi}{6}\\right) \\quad\\left\\{\\because \\cos ^{-1} \\cos x=x ; x \\in[0, \\pi]\\right\\} \\\\\n& =\\cos \\left(\\frac{6 \\pi}{6}\\right) \\\\\n& =\\cos (\\pi)=-1\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi7f4",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that $\\cot \\left(\\frac{\\pi}{4}-2 \\cot ^{-1} 3\\right)=7$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\n\\begin{array}{lr}\n\\text { We have to prove, } & \\cot \\left(\\frac{\\pi}{4}-2 \\cot ^{-1} 3\\right)=7 \\\\\n\\Rightarrow & \\left(\\frac{\\pi}{4}-2 \\cot ^{-1} 3\\right)=\\cot ^{-1} 7 \\\\\n\\Rightarrow & \\left(2 \\cot ^{-1} 3\\right)=\\frac{\\pi}{4}-\\cot ^{-1} 7 \\\\\n\\Rightarrow & 2 \\tan ^{-1} \\frac{1}{3}=\\frac{\\pi}{4}-\\tan ^{-1} \\frac{1}{7} \\\\\n\\Rightarrow & 2 \\tan ^{-1} \\frac{1}{3}+\\tan ^{-1} \\frac{1}{7}=\\frac{\\pi}{4} \\\\\n\\Rightarrow & \\tan ^{-1} \\frac{2 / 3}{1-(1 / 3)^2}+\\tan ^{-1} \\frac{1}{7}=\\frac{\\pi}{4} \\\\\n\\Rightarrow & \\tan ^{-1} \\frac{2 / 3}{8 / 9}+\\tan ^{-1} \\frac{1}{7}=\\frac{\\pi}{4} \\\\\n\\Rightarrow & \\tan ^{-1} \\frac{3}{4}+\\tan ^{-1} \\frac{1}{7}=\\frac{\\pi}{4} \\\\\n\\Rightarrow & \\frac{3}{4}+\\frac{1}{7} \\\\\n\\Rightarrow & \\tan ^{-1} \\frac{3}{1-\\frac{3}{4} \\cdot \\frac{1}{7}}=\\frac{\\pi}{4} \\\\\n\\Rightarrow & \\tan ^{-1} \\frac{(21+4) / 28}{(28-3) / 28}=\\frac{\\pi}{4} \\\\\n\\Rightarrow & \\tan ^{-1} \\frac{25}{25}=\\frac{\\pi}{4} \\\\\n\\Rightarrow & 1=\\tan \\frac{\\pi}{4} \\\\\n\\Rightarrow & 1=1 \\\\\n\\Rightarrow & \\text{LHS = RHS}\\quad\\text{Hence proved.}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpin6k",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $\\tan ^{-1}\\left(-\\frac{1}{\\sqrt{3}}\\right)+\\cot ^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right)+\\tan ^{-1}\\left[\\sin \\left(\\frac{-\\pi}{2}\\right)\\right]$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\tan ^{-1}\\left(-\\frac{1}{\\sqrt{3}}\\right)+\\cot ^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right)+\\tan ^{-1}\\left[\\sin \\left(\\frac{-\\pi}{2}\\right)\\right]$</p>\n<p>$$\\begin{aligned}\n& =\\tan ^{-1}\\left(\\tan \\frac{5 \\pi}{6}\\right)+\\cot ^{-1}\\left(\\cot \\frac{\\pi}{3}\\right)+\\tan ^{-1}(-1) \\\\\n& =\\tan ^{-1}\\left[\\tan \\left(\\pi-\\frac{\\pi}{6}\\right)\\right]+\\cot ^{-1}\\left[\\cot \\left(\\frac{\\pi}{3}\\right)\\right]+\\tan ^{-1}\\left[\\tan \\left(\\pi-\\frac{\\pi}{4}\\right)\\right] \\\\\n& =\\tan ^{-1}\\left(-\\tan \\frac{\\pi}{6}\\right)+\\cot ^{-1}\\left(\\cot \\frac{\\pi}{3}\\right)+\\tan ^{-1}\\left(-\\tan \\frac{\\pi}{4}\\right)\n\\end{aligned}$$</p>\n<p>$\\left[\\begin{array}{lrl}\\because & \\tan ^{-1}(\\tan x) & =x, x \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right) \\\\ & \\cot ^{-1}(\\cot x) & =x, x \\in(0, \\pi) \\\\ \\text { and } \\quad \\tan ^{-1}(-x) & =-\\tan ^{-1} x\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n& =-\\frac{\\pi}{6}+\\frac{\\pi}{3}-\\frac{\\pi}{4}=\\frac{-2 \\pi+4 \\pi-3 \\pi}{12} \\\\\n& =\\frac{-5 \\pi+4 \\pi}{12}=-\\frac{\\pi}{12}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi0iy",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $\\tan ^{-1}\\left(\\tan \\frac{2 \\pi}{3}\\right)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\tan ^{-1}\\left(\\tan \\frac{2 \\pi}{3}\\right)=\\tan ^{-1} \\tan \\left(\\pi-\\frac{\\pi}{3}\\right)$</p>\n<p>$$\\begin{array}{lr}\n=\\tan ^{-1}\\left(-\\tan \\frac{\\pi}{3}\\right) & {\\left[\\because \\tan ^{-1}(-x)=-\\tan ^{-1} x\\right]} \\\\\n=-\\tan ^{-1} \\tan \\frac{\\pi}{3}=-\\frac{\\pi}{3} & {\\left[\\because \\tan ^{-1}(\\tan x)=x, x \\in\\left(\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right)\\right]}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphkin",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $2 \\tan ^{-1}(-3)=\\frac{-\\pi}{2}+\\tan ^{-1}\\left(\\frac{-4}{3}\\right)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$\\mathrm{LHS}=2 \\tan ^{-1}(-3)=-2 \\tan ^{-1} 3 \\quad\\left[\\because \\tan ^{-1}(-x)=-\\tan ^{-1} x, x \\in R\\right]$</p>\n<p>$=-\\left[\\cos ^{-1} \\frac{1-3^2}{1+3^2}\\right] \\quad\\left[\\because 2 \\tan ^{-1} x=\\cos ^{-1} \\frac{1-x^2}{1+x^2}, x \\geq 0\\right]$</p>\n<p>$$\\begin{aligned}\n& =-\\left[\\cos ^{-1}\\left(\\frac{-8}{10}\\right)\\right]=-\\left[\\cos ^{-1}\\left(\\frac{-4}{5}\\right)\\right] \\\\\n& =-\\left[\\pi-\\cos ^{-1}\\left(\\frac{4}{5}\\right)\\right] \\\\\n& =-\\pi+\\cos ^{-1}\\left(\\frac{4}{5}\\right)\\left[\\text { let } \\cos ^{-1}\\left(\\frac{4}{5}\\right)=\\theta \\Rightarrow \\cos \\theta=\\frac{4}{5} \\Rightarrow \\tan \\theta=\\frac{3}{4} \\Rightarrow \\theta=\\tan ^{-1} \\frac{3}{4}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =-\\pi+\\tan ^{-1}\\left(\\frac{3}{4}\\right)=-\\pi+\\left[\\frac{\\pi}{2}-\\cot ^{-1}\\left(\\frac{3}{4}\\right)\\right] \\\\\n& =-\\frac{\\pi}{2}-\\cot ^{-1} \\frac{3}{4}=-\\frac{\\pi}{2}-\\tan ^{-1} \\frac{4}{3} \\\\\n& =-\\frac{\\pi}{2}+\\tan ^{-1}\\left(\\frac{-4}{3}\\right) \\quad \\left[\\because \\tan ^{-1}(-x)=-\\tan ^{-1} x\\right]\\\\\n& =\\text { RHS }\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpionx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the real solution of $$\\tan ^{-1} \\sqrt{x(x+1)}+\\sin ^{-1} \\sqrt{x^2+x+1}=\\frac{\\pi}{2} .$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5cfuuif/f24c69c7-f7c8-463d-94f6-8f0d6319519d/e7115780-c771-11ef-9488-a1fc2172260d/file-jaoe38c1m5cfuuig.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5cfuuif/f24c69c7-f7c8-463d-94f6-8f0d6319519d/e7115780-c771-11ef-9488-a1fc2172260d/file-jaoe38c1m5cfuuig.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>We have, $\\tan ^{-1} \\sqrt{x(x+1)}+\\sin ^{-1} \\sqrt{x^2+x+1}=\\frac{\\pi}{2}\\quad\\text{.... (i)}$</p>\n<p>Let $$\\sin ^{-1} \\sqrt{x^2+x+1}=\\theta$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow &amp; \\sin \\theta=\\sqrt{\\frac{x^2+x+1}{1}} \\\\\n\\Rightarrow &amp; \\tan \\theta=\\frac{\\sqrt{x^2+x+1}}{\\sqrt{-x^2-x}} \\quad \\left[\\because \\tan \\theta=\\frac{\\sin \\theta}{\\cos \\theta}\\right]\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\because\\quad\\theta &amp; =\\tan ^{-1} \\frac{\\sqrt{x^2+x+1}}{\\sqrt{-x^2-x}} \\\\\n&amp; =\\sin ^{-1} \\sqrt{x^2+x+1}\n\\end{aligned}$$</p>\n<p>On putting the value of $\\theta$ in Eq. (i), we get</p>\n<p>$$\\tan ^{-1} \\sqrt{x(x+1)}+\\tan ^{-1} \\frac{\\sqrt{x^2+x+1}}{\\sqrt{-x^2-x}}=\\frac{\\pi}{2}$$</p>\n<p>We know that, $$\\tan ^{-1} x+\\tan ^{-1} y=\\tan ^{-1}\\left(\\frac{x+y}{1-x y}\\right), x y&lt; 1$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore &amp; \\tan ^{-1}\\left[\\frac{\\sqrt{x(x+1)}+\\sqrt{\\frac{x^2+x+1}{-x^2-x}}}{1-\\sqrt{x(x+1)} \\cdot \\sqrt{\\frac{x^2+x+1}{-x^2-x}}}\\right]=\\frac{\\pi}{2} \\\\\n\\Rightarrow &amp; \\tan ^{-1}\\left[\\frac{\\sqrt{x^2+x}+\\sqrt{\\frac{x^2+x+1}{-1\\left(x^2+x\\right)}}}{1-\\sqrt{\\left(x^2+x\\right) \\cdot \\frac{\\left(x^2+x+1\\right)}{-1\\left(x^2+x\\right)}}}\\right]=\\frac{\\pi}{2} \\\\\n\\Rightarrow &amp; \\frac{x^2+x+\\sqrt{-\\left(x^2+x+1\\right)}}{\\left[1-\\sqrt{-\\left(x^2+x+1\\right.}\\right] \\sqrt{\\left(x^2+x\\right)}}=\\tan \\frac{\\pi}{2}=\\frac{1}{0}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\begin{array}{lr}\n\\Rightarrow &amp; {\\left[1-\\sqrt{-\\left(x^2+x+1\\right)}\\right] \\sqrt{\\left(x^2+x\\right)}=0} \\\\\n\\Rightarrow &amp; -\\left(x^2+x+1\\right)=1 \\text { or } x^2+x=0 \\\\\n\\Rightarrow &amp; -x^2-x-1=1 \\text { or } x(x+1)=0 \\\\\n\\Rightarrow &amp; x^2+x+2=0 \\text { or } x(x+1)=0 \\\\\n\\therefore &amp; x=\\frac{-1 \\pm \\sqrt{1-4 \\times 2}}{2} \\\\\n\\Rightarrow &amp; x=0 \\text { or } x=-1\n\\end{array}\\\\\n&amp;\\text { For real solution, we have } x=0,-1 \\text {. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi7h6",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $\\sin \\left(2 \\tan ^{-1} \\frac{1}{3}\\right)+\\cos \\left(\\tan ^{-1} 2 \\sqrt{2}\\right)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\sin \\left(2 \\tan ^{-1} \\frac{1}{3}\\right)+\\cos \\left(\\tan ^{-1} 2 \\sqrt{2}\\right)$</p>\n<p>$\\begin{array}{r}\\left.=\\sin \\left[\\sin ^{-1}\\left\\{\\frac{2 \\times \\frac{1}{3}}{1+\\left(\\frac{1}{3}\\right)^2}\\right\\}\\right]+\\cos \\left(\\cos ^{-1} \\frac{1}{3}\\right)\\right] \\\\ {\\left[\\because 2 \\tan ^{-1} x=\\cos ^{-1} \\frac{1}{\\sqrt{1+x^2}}\\right]} \\\\ {\\left[\\because=\\sin ^{-1} \\frac{2 x}{1+x^2},-1 \\leq x \\leq 1 \\text { and } \\tan ^{-1}(2 \\sqrt{2})=\\cos ^{-1} \\frac{1}{3}\\right]}\\end{array}$</p>\n<p>$=\\sin \\left[\\sin ^{-1}\\left(\\frac{\\frac{2}{3}}{1+\\frac{1}{9}}\\right)\\right]+\\frac{1}{3} \\quad\\left\\{\\because \\cos \\left(\\cos ^{-1} x\\right)=x ; x \\in[-1,1]\\right\\}$</p>\n<p>$$\\begin{aligned}\n& =\\sin \\left[\\sin ^{-1}\\left(\\frac{2 \\times 9}{3 \\times 10}\\right)\\right]+\\frac{1}{3}=\\sin \\left[\\sin ^{-1}\\left(\\frac{3}{5}\\right)\\right]+\\frac{1}{3} \\quad\\left[\\because \\sin \\left(\\sin ^{-1} x\\right)=x\\right] \\\\\n& =\\frac{3}{5}+\\frac{1}{3}=\\frac{9+5}{15}=\\frac{14}{15}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphg7l",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $2 \\tan ^{-1}(\\cos \\theta)=\\tan ^{-1}(2 \\operatorname{cosec} \\theta)$, then show that $\\theta=\\frac{\\pi}{4}$, where $n$ is any integer.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, } \\quad 2 \\tan ^{-1}(\\cos \\theta)=\\tan ^{-1}(2 \\operatorname{cosec} \\theta)\\\\\n&\\begin{aligned}\n& \\Rightarrow \\quad \\tan ^{-1}\\left(\\frac{2 \\cos \\theta}{1-\\cos ^2 \\theta}\\right)=\\tan ^{-1}(2 \\operatorname{cosec} \\theta) \\\\\n& {\\left[\\because 2 \\tan ^{-1} x=\\tan ^{-1}\\left(\\frac{2 x}{1-x^2}\\right)\\right]} \\\\\n& \\Rightarrow \\quad\\left(\\frac{2 \\cos \\theta}{\\sin ^2 \\theta}\\right)=(2 \\operatorname{cosec} \\theta) \\\\\n& \\Rightarrow \\quad(\\cot \\theta \\cdot 2 \\operatorname{cosec} \\theta)=(2 \\operatorname{cosec} \\theta) \\Rightarrow \\cot \\theta=1 \\\\\n& \\Rightarrow \\quad \\cot \\theta=\\cot \\frac{\\pi}{4} \\Rightarrow \\theta=\\frac{\\pi}{4}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphkkz",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $\\cos \\left(2 \\tan ^{-1} \\frac{1}{7}\\right)=\\sin \\left(4 \\tan ^{-1} \\frac{1}{3}\\right)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad \\cos \\left(2 \\tan ^{-1} \\frac{1}{7}\\right)=\\sin \\left(4 \\tan ^{-1} \\frac{1}{3}\\right)$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad \\cos \\left[\\cos ^{-1}\\left(\\frac{1-\\left(\\frac{1}{7}\\right)^2}{1+\\left(\\frac{1}{7}\\right)^2}\\right)\\right]=\\sin \\left[2 \\cdot 2 \\tan ^{-1} \\frac{1}{3}\\right] \\quad\\left[\\because 2 \\tan ^{-1} x=\\cos ^{-1}\\left(\\frac{1-x^2}{1+x^2}\\right)\\right] \\\\\n& \\Rightarrow \\quad \\cos \\left[\\cos ^{-1}\\left(\\frac{\\frac{48}{49}}{\\frac{50}{49}}\\right)\\right]=\\sin \\left[2 \\cdot\\left(\\tan ^{-1} \\frac{\\frac{2}{3}}{1-\\left(\\frac{1}{3}\\right)^2}\\right)\\right] \\quad\\left[\\because 2 \\tan ^{-1} x=\\tan ^{-1}\\left(\\frac{2 x}{1-x^2}\\right)\\right] \\\\\n& \\Rightarrow \\quad \\cos \\left[\\cos ^{-1}\\left(\\frac{48 \\times 49}{50 \\times 49}\\right)\\right]=\\sin \\left[2 \\tan ^{-1}\\left(\\frac{18}{24}\\right)\\right] \\\\\n& \\Rightarrow \\quad \\cos \\left[\\cos ^{-1}\\left(\\frac{24}{25}\\right)\\right]=\\sin \\left(2 \\tan ^{-1} \\frac{3}{4}\\right) \\\\\n& \\Rightarrow \\quad \\cos \\left[\\cos ^{-1}\\left(\\frac{24}{25}\\right)\\right]=\\sin \\left(\\sin ^{-1} \\frac{2 \\times \\frac{3}{4}}{1+\\frac{9}{16}}\\right) \\quad\\left[\\because 2 \\tan ^{-1} x=\\sin ^{-1} \\frac{2 x}{1+x^2}\\right] \\\\\n& \\Rightarrow \\quad \\frac{24}{25}=\\sin \\left(\\sin ^{-1} \\frac{3 / 2}{25 / 16}\\right) \\\\\n& \\Rightarrow \\quad \\frac{24}{25}=\\frac{48}{50} \\Rightarrow \\frac{24}{25}=\\frac{24}{25} \\\\\n& \\therefore \\quad \\text { LHS }=\\text { RHS } \\\\\n& \\text { Hence proved. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphodb",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve the equation $\\cos \\left(\\tan ^{-1} x\\right)=\\sin \\left(\\cot ^{-1} \\frac{3}{4}\\right)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad \\cos \\left(\\tan ^{-1} x\\right)=\\sin \\left(\\cot ^{-1} \\frac{3}{4}\\right)$</p>\n<p>$$\\begin{array}{lll}\n\\Rightarrow & \\cos \\left(\\cos ^{-1} \\frac{1}{\\sqrt{x^2+1}}\\right)=\\sin \\left(\\sin ^{-1} \\frac{4}{5}\\right) \\\\\n\\text { Let } & \\tan ^{-1} x=\\theta_1 \\quad \\Rightarrow \\tan \\theta_1=\\frac{x}{1} \\\\\n\\Rightarrow & \\cos \\theta_1=\\frac{1}{\\sqrt{x^2+1}} \\quad \\Rightarrow \\theta_1=\\cos ^{-1} \\frac{1}{\\sqrt{x^2+1}} \\\\\n\\text { and } & \\cot ^{-1} \\frac{3}{4}=\\theta_2 \\quad \\Rightarrow \\cot \\theta_2=\\frac{3}{4} \\\\\n\\Rightarrow & \\sin \\theta_2=\\frac{4}{5} \\quad \\Rightarrow \\theta_2=\\sin ^{-1} \\frac{4}{5}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\Rightarrow \\quad \\frac{1}{\\sqrt{x^2+1}}=\\frac{4}{5} \\\\\n&\\left\\{\\because \\cos \\left(\\cos ^{-1} x\\right)=x, x \\in[-1,1] \\text { and } \\sin \\left(\\sin ^{-1} x\\right)=x, x \\in[-1,1]\\right\\}\n\\end{aligned}\\\\\n&\\text { On squaring both sides, we get }\\\\\n&\\begin{aligned}\n16\\left(x^2+1\\right) & =25 \\\\\n\\Rightarrow\\quad 16 x^2 & =9 \\\\\n\\Rightarrow\\quad x^2 & =\\left(\\frac{3}{4}\\right)^2 \\\\\n\\therefore\\quad x & = \\pm \\frac{3}{4}=\\frac{-3}{4}, \\frac{3}{4}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpikrp",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that $\\tan ^{-1}\\left(\\frac{\\sqrt{1+x^2}+\\sqrt{1-x^2}}{\\sqrt{1+x^2}-\\sqrt{1-x^2}}\\right)=\\frac{\\pi}{4}+\\frac{1}{2} \\cos ^{-1} x^2.$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{aligned}\n\\tan ^{-1}\\left(\\frac{\\sqrt{1+x^2}+\\sqrt{1-x^2}}{\\sqrt{1+x^2}-\\sqrt{1-x^2}}\\right) & =\\frac{\\pi}{4}+\\frac{1}{2} \\cos ^{-1} x^2 \\\\\n\\therefore\\quad\\text { LHS } & =\\tan ^{-1}\\left(\\frac{\\sqrt{1+x^2}+\\sqrt{1-x^2}}{\\sqrt{1+x^2}-\\sqrt{1-x^2}}\\right)\\quad\\text{..... (i)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n{\\left[\\text { let } x^2\\right.} & \\left.=\\cos 2 \\theta=\\left(\\cos ^2 \\theta-\\sin ^2 \\theta\\right)=1-2 \\sin ^2 \\theta=2 \\cos ^2 \\theta-1\\right] \\\\\n\\Rightarrow\\quad\\cos ^{-1} x^2 & =2 \\theta \\Rightarrow \\theta=\\frac{1}{2} \\cos ^{-1} x^2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\therefore \\quad \\begin{aligned}\n\\sqrt{1+x^2} & =\\sqrt{1+\\cos 2 \\theta} \\\\\n& =\\sqrt{1+2 \\cos ^2 \\theta-1}=\\sqrt{2} \\cos \\theta\n\\end{aligned} \\\\\n& \\text { and } \\quad \\begin{aligned}\n\\sqrt{1-x^2} & =\\sqrt{1-\\cos 2 \\theta} \\\\\n& =\\sqrt{1-1+2 \\sin ^2 \\theta}=\\sqrt{2} \\sin \\theta\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\mathrm{LHS} & =\\tan ^{-1}\\left(\\frac{\\sqrt{2} \\cos \\theta+\\sqrt{2} \\sin \\theta}{\\sqrt{2} \\cos \\theta-\\sqrt{2} \\sin \\theta}\\right) \\\\\n& =\\tan ^{-1}\\left(\\frac{\\cos \\theta+\\sin \\theta}{\\cos \\theta-\\sin \\theta}\\right) \\\\\n& =\\tan ^{-1}\\left(\\frac{1+\\tan \\theta}{1-\\tan \\theta}\\right)=\\tan ^{-1}\\left(\\frac{\\tan \\frac{\\pi}{4}+\\tan \\theta}{1-\\tan \\frac{\\pi}{4} \\cdot \\tan \\theta}\\right) \\\\\n& =\\tan ^{-1}\\left[\\tan \\left(\\frac{\\pi}{4}+\\theta\\right)\\right] \\quad\\left[\\because \\tan (x+y)=\\frac{\\tan x+\\tan y}{1-\\tan x \\cdot \\tan y}\\right] \\\\\n& =\\frac{\\pi}{4}+\\theta=\\frac{\\pi}{4}+\\frac{1}{2} \\cos ^{-1} x^2 \\\\\n& =\\text { RHS } \\quad \\text { Hence proved. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiode",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the simplified form of\n\n$$\n\\cos ^{-1}\\left(\\frac{3}{5} \\cos x+\\frac{4}{5} \\sin x\\right) \\text {, where } x \\in\\left[\\frac{-3 \\pi}{4}, \\frac{\\pi}{4}\\right]\n$$\n</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5cgo3i9/b864ce34-7d72-4060-b4cf-b48d593443a7/147b2310-c775-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgo3ia.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5cgo3i9/b864ce34-7d72-4060-b4cf-b48d593443a7/147b2310-c775-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgo3ia.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>We have, $\\quad \\cos ^{-1}\\left[\\frac{3}{5} \\cos x+\\frac{4}{5} \\sin x\\right], x \\in\\left[\\frac{-3 \\pi}{4}, \\frac{\\pi}{4}\\right]$</p><p>$$\\begin{array}{ll}\n\\text { Let } &amp; \\cos y=\\frac{3}{5} \\\\\n\\Rightarrow &amp; \\sin y=\\frac{4}{5}\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow &amp; y=\\cos ^{-1} \\frac{3}{5}=\\sin ^{-1} \\frac{4}{5}=\\tan ^{-1}\\left(\\frac{4}{3}\\right) \\\\\n\\therefore &amp; \\cos ^{-1}[\\cos y \\cdot \\cos x+\\sin y \\cdot \\sin x]\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&amp; =\\cos ^{-1}[\\cos (y-x)] \\quad[\\because \\cos (A-B)=\\cos A \\cdot \\cos B+\\sin A \\cdot \\sin B] \\\\\n&amp; =y-x=\\tan ^{-1} \\frac{4}{3}-x \\quad\\left[\\because y=\\tan ^{-1} \\frac{4}{3}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpio3c",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that $\\sin ^{-1} \\frac{8}{17}+\\sin ^{-1} \\frac{3}{5}=\\sin ^{-1} \\frac{77}{85}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5cgr11w/90a9d62f-3fdc-4207-94fd-a3d6a80b2817/66032d40-c775-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgr11x.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5cgr11w/90a9d62f-3fdc-4207-94fd-a3d6a80b2817/66032d40-c775-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgr11x.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{aligned}\n&amp;\\text { We have, } \\quad \\sin ^{-1} \\frac{8}{17}+\\sin ^{-1} \\frac{3}{5}=\\sin ^{-1} \\frac{77}{85}\\\\\n&amp;\\begin{aligned}\n\\therefore \\quad \\text { LHS } &amp; =\\sin ^{-1} \\frac{8}{17}+\\sin ^{-1} \\frac{3}{5} \\\\\n&amp; =\\tan ^{-1} \\frac{8}{15}+\\tan ^{-1} \\frac{3}{4}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\text { Let } &amp; \\sin ^{-1} \\frac{8}{17}=\\theta_1 \\Rightarrow \\sin \\theta_1=\\frac{8}{17} \\\\\n\\Rightarrow &amp; \\tan \\theta_1=\\frac{8}{15} \\Rightarrow \\theta_1=\\tan ^{-1} \\frac{8}{15} \\\\\n\\text { and } &amp; \\sin ^{-1} \\frac{3}{5}=\\theta_2 \\Rightarrow \\sin \\theta_2=\\frac{3}{5} \\\\\n\\Rightarrow &amp; \\tan \\theta_2=\\frac{3}{4} \\Rightarrow \\theta_2=\\tan ^{-1} \\frac{3}{4}\n\\end{array}$$</p>\n<p>$=\\tan ^{-1}\\left[\\frac{\\frac{8}{15}+\\frac{3}{4}}{1-\\frac{8}{15} \\times \\frac{3}{4}}\\right] \\quad\\left[\\because \\tan ^{-1} x+\\tan ^{-1} y=\\tan ^{-1}\\left(\\frac{x+y}{1-x y}\\right)\\right]$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5cgt8x0/e7c426d3-de49-4867-ab07-ddb68b405138/a3b4a240-c775-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgt8x1.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5cgt8x0/e7c426d3-de49-4867-ab07-ddb68b405138/a3b4a240-c775-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgt8x1.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Let $$\\theta_3=\\tan ^{-1} \\frac{77}{36} \\Rightarrow \\tan \\theta_3=\\frac{77}{36}$$</p>\n<p>$$\\Rightarrow \\quad \\sin \\theta_3=\\frac{77}{\\sqrt{5929+1296}}=\\frac{77}{85}$$</p>\n<p>$$\\begin{aligned}\n\\therefore\\quad\\theta_3 &amp; =\\sin ^{-1} \\frac{77}{85} \\\\\n&amp; =\\sin ^{-1} \\frac{77}{85}=\\text { RHS }\n\\end{aligned}$$</p>\n<p>Hence proved.</p>\n<p>Alternate method</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5cgw1iu/db503405-41d9-48d9-8e2c-aa957b741588/f16bf560-c775-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgw1iv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5cgw1iu/db503405-41d9-48d9-8e2c-aa957b741588/f16bf560-c775-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgw1iv.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>To prove, $\\quad \\sin ^{-1} \\frac{8}{17}+\\sin ^{-1} \\frac{3}{5}=\\sin ^{-1} \\frac{77}{85}$</p>\n<p>Let $$\\sin ^{-1} \\frac{8}{17}=x$$</p>\n<p>$\\Rightarrow \\quad \\sin x=\\frac{8}{17}$</p>\n<p>$\\Rightarrow \\quad \\cos x=\\sqrt{1-\\sin ^2 x}=\\sqrt{1-\\left(\\frac{8}{17}\\right)^2}$</p>\n<p>$=\\sqrt{\\frac{289-64}{289}}=\\sqrt{\\frac{225}{289}}=\\frac{15}{17}$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5cgz263/5c76da58-dd5c-4a9a-ad91-bd48ac9f1d2c/455918b0-c776-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgz264.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5cgz263/5c76da58-dd5c-4a9a-ad91-bd48ac9f1d2c/455918b0-c776-11ef-9488-a1fc2172260d/file-jaoe38c1m5cgz264.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{aligned}\n\\text{Let}\\quad\\sin ^{-1} \\frac{3}{5} &amp; =y \\\\\n\\Rightarrow\\quad\\sin y &amp; =\\frac{3}{5} \\Rightarrow \\sin ^2 y=\\frac{9}{25} \\\\\n\\therefore\\quad\\cos ^2 y &amp; =1-\\frac{9}{25} \\\\\n\\Rightarrow\\quad\\cos ^2 y &amp; =\\left(\\frac{4}{5}\\right)^2 \\Rightarrow \\cos y=\\frac{4}{5}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { Now, }\\\\\n&amp;\\begin{aligned}\n\\sin (x+y) &amp; =\\sin x \\cdot \\cos y+\\cos x \\cdot \\sin y \\\\\n&amp; =\\frac{8}{17} \\cdot \\frac{4}{5}+\\frac{15}{17} \\cdot \\frac{3}{5} \\\\\n&amp; =\\frac{32}{85}+\\frac{45}{85}=\\frac{77}{85}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lrl}\n\\Rightarrow &amp; (x+y) &amp; =\\sin ^{-1}\\left(\\frac{77}{85}\\right) \\\\\n\\Rightarrow &amp; \\sin ^{-1} \\frac{8}{17}+\\sin ^{-1} \\frac{3}{5} &amp; =\\sin ^{-1} \\frac{77}{85}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpio6r",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $\\sin ^{-1} \\frac{5}{13}+\\cos ^{-1} \\frac{3}{5}=\\tan ^{-1} \\frac{63}{16}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5ch4czd/23b19bf7-c263-4f95-8aed-66b34df68b63/d8bf2a90-c776-11ef-9488-a1fc2172260d/file-jaoe38c1m5ch4cze.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5ch4czd/23b19bf7-c263-4f95-8aed-66b34df68b63/d8bf2a90-c776-11ef-9488-a1fc2172260d/file-jaoe38c1m5ch4cze.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>We have, $\\sin ^{-1} \\frac{5}{13}+\\cos ^{-1} \\frac{3}{5}=\\tan ^{-1} \\frac{63}{16}$</p>\n<p>Let $$\\sin ^{-1} \\frac{5}{13}=x$$</p>\n<p>$$\\begin{array}{lrl}\n\\Rightarrow &amp; \\sin x &amp; =\\frac{5}{13} \\\\\n\\text { and } &amp; \\cos ^2 x &amp; =1-\\sin ^2 x \\\\\n&amp; \\qquad=1-\\frac{25}{169}=\\frac{144}{169} \\\\\n\\Rightarrow &amp; \\cos x &amp; =\\sqrt{\\frac{144}{169}}=\\frac{12}{13} \\\\\n\\therefore &amp; \\tan x &amp; =\\frac{\\sin x}{\\cos x}=\\frac{5 / 13}{12 / 13}=\\frac{5}{12} \\quad\\text{.... (ii)}\\\\\n\\Rightarrow &amp; \\tan x &amp; =5 / 12\\quad\\text{.... (iii)}\n\\end{array}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5ch7ra5/ff15bbe7-8835-4330-917a-29e4b9e32103/373858d0-c777-11ef-9488-a1fc2172260d/file-jaoe38c1m5ch7ra6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5ch7ra5/ff15bbe7-8835-4330-917a-29e4b9e32103/373858d0-c777-11ef-9488-a1fc2172260d/file-jaoe38c1m5ch7ra6.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{aligned}\n\\text{Again, let}\\quad\\cos ^{-1} \\frac{3}{5} &amp; =y \\Rightarrow \\cos y=\\frac{3}{5} \\\\\n\\therefore\\quad\\sin y &amp; =\\sqrt{1-\\cos ^2 y} \\\\\n&amp; =\\sqrt{1-\\left(\\frac{3}{5}\\right)^2}=\\sqrt{1-\\frac{9}{25}} \\\\\n\\sin y &amp; =\\sqrt{\\frac{16}{25}}=\\frac{4}{5} \\\\\n\\Rightarrow\\quad\\tan y &amp; =\\frac{\\sin y}{\\cos y}=\\frac{4 / 5}{3 / 5}=\\frac{4}{3}\\quad\\text{.... (iii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { We know that, }\\\\\n&amp;\\begin{aligned}\n&amp; \\tan (x+y) =\\frac{\\tan x+\\tan y}{1-\\tan x \\cdot \\tan y} \\\\\n\\Rightarrow \\quad &amp; \\tan (x+y) =\\frac{\\frac{5}{12}+\\frac{4}{3}}{1-\\frac{5}{12} \\cdot \\frac{4}{3}} \\Rightarrow \\tan (x+y)=\\frac{\\frac{15+48}{36}}{\\frac{36-20}{36}} \\\\\n\\Rightarrow \\quad &amp; \\tan (x+y) =\\frac{63 / 36}{16 / 36} \\\\\n\\Rightarrow \\quad &amp; \\tan (x+y) =\\frac{63}{16} \\\\\n\\Rightarrow \\quad &amp; x+y =\\tan ^{-1} \\frac{63}{16} \\\\\n\\Rightarrow \\quad &amp; \\tan ^{-1} \\frac{5}{12}+\\tan ^{-1} \\frac{4}{3} =\\tan ^{-1} \\frac{63}{16}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpiku1",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that $\\tan ^{-1} \\frac{1}{4}+\\tan ^{-1} \\frac{2}{9}=\\sin ^{-1} \\frac{1}{\\sqrt{5}}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad\\tan ^{-1} \\frac{1}{4}+\\tan ^{-1} \\frac{2}{9} & =\\sin ^{-1} \\frac{1}{\\sqrt{5}} \\quad\\text{.... (i)}\\\\\n\\text{Let}\\quad\\tan ^{-1} \\frac{1}{4} & =x \\\\\n\\Rightarrow\\quad\\tan x & =\\frac{1}{4} \\\\\n\\Rightarrow\\quad\\tan ^2 x & =\\frac{1}{16} \\\\\n\\Rightarrow\\quad\\sec ^2 x-1 & =\\frac{1}{16} \\\\\n\\Rightarrow\\quad\\sec ^2 x & =1+\\frac{1}{16}=\\frac{17}{16} \\\\\n\\Rightarrow\\quad\\frac{1}{\\cos ^2 x} & =\\frac{17}{16} \\\\\n\\Rightarrow\\quad\\cos ^2 x & =\\frac{16}{17} \\\\\n\\Rightarrow\\quad\\cos ^x & =\\frac{4}{\\sqrt{17}} \\\\\n\\Rightarrow\\quad\\sin 2 x & =1-\\cos ^2 x=1-\\frac{16}{17}=\\frac{1}{17} \\\\\n\\Rightarrow\\quad\\sin x & =\\frac{1}{\\sqrt{17}} \\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lc}\n\\text { Again, let } & \\tan ^{-1} \\frac{2}{9}=y \\\\\n\\Rightarrow & \\tan y=\\frac{2}{9} \\Rightarrow \\tan ^2 y=\\frac{4}{81} \\\\\n\\Rightarrow & \\sec ^2 y-1=\\frac{4}{81} \\\\\n\\Rightarrow & \\sec ^2 y=\\frac{4}{81}+1=\\frac{85}{81} \\\\\n\\Rightarrow & \\cos ^2 y=\\frac{81}{85} \\Rightarrow \\cos y=\\frac{9}{\\sqrt{85}} \\\\\n\\Rightarrow & \\sin ^2 y=1-\\cos ^2 y=1-\\frac{81}{85}=\\frac{4}{85} \\\\\n\\Rightarrow & \\sin y=\\frac{2}{\\sqrt{85}}\\quad\\text{.... (iii)}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\text { We know that, } \\sin (x+y) & =\\sin x \\cdot \\cos y+\\cos x \\cdot \\sin y \\\\\n& =\\frac{1}{\\sqrt{17}} \\cdot \\frac{9}{\\sqrt{85}}+\\frac{4}{\\sqrt{17}} \\cdot \\frac{2}{\\sqrt{85}} \\\\\n& =\\frac{17}{\\sqrt{17} \\cdot \\sqrt{85}}=\\frac{\\sqrt{17}}{\\sqrt{17} \\cdot \\sqrt{5}}=\\frac{1}{\\sqrt{5}} \\\\\n\\Rightarrow \\quad(x+y) & =\\sin ^{-1} \\frac{1}{\\sqrt{5}} \\\\\n\\Rightarrow \\quad \\tan ^{-1} \\frac{1}{4}+\\tan ^{-1} \\frac{2}{9} & =\\sin ^{-1} \\frac{1}{\\sqrt{5}}\n\\end{aligned}$$</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphknc",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $4 \\tan ^{-1} \\frac{1}{5}-\\tan ^{-1} \\frac{1}{239}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $4 \\tan ^{-1} \\frac{1}{5}-\\tan ^{-1} \\frac{1}{239}$</p>\n<p>$$\\begin{aligned}\n& =2 \\cdot 2 \\tan ^{-1} \\frac{1}{5}-\\tan ^{-1} \\frac{1}{239} \\quad \\left[\\because 2 \\tan ^{-1} x=\\tan ^{-1}\\left(\\frac{2 x}{1-x^2}\\right)\\right]\\\\\n& =2 \\cdot\\left[\\tan ^{-1} \\frac{\\frac{2}{5}}{1-\\left(\\frac{1}{5}\\right)^2}\\right]-\\tan ^{-1} \\frac{1}{239} \\quad\\left[\\because 2 \\tan ^{-1} x=\\tan ^{-1}\\left(\\frac{2 x}{1-x^2}\\right)\\right] \\\\\n& =2 \\cdot\\left[\\tan ^{-1}\\left(\\frac{\\frac{2}{5}}{1-\\frac{1}{25}}\\right)\\right]-\\tan ^{-1} \\frac{1}{239} \\\\\n& =2 \\cdot\\left[\\tan ^{-1}\\left(\\frac{2 / 5}{24 / 25}\\right)\\right]-\\tan ^{-1} \\frac{1}{239} \\\\\n& =2 \\tan ^{-1} \\frac{5}{12}-\\tan ^{-1} \\frac{1}{239}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n& =\\tan ^{-1} \\frac{2 \\cdot \\frac{5}{12}}{1-\\left(\\frac{5}{12}\\right)^2}-\\tan ^{-1} \\frac{1}{239} \\\\\n& =\\tan ^{-1}\\left(\\frac{\\frac{5}{6}}{1-\\frac{25}{144}}\\right)-\\tan ^{-1} \\frac{1}{239} \\\\\n& =\\tan ^{-1}\\left(\\frac{144 \\times 5}{119 \\times 6}\\right)-\\tan ^{-1} \\frac{1}{239} \\\\\n& =\\tan ^{-1}\\left(\\frac{120}{119}\\right)-\\tan ^{-1} \\frac{1}{239} \\\\\n& =\\tan ^{-1}\\left(\\frac{\\frac{120}{119}-\\frac{1}{239}}{1+\\frac{120}{119} \\cdot \\frac{1}{239}}\\right) \\quad \\left[\\because \\tan ^{-1} x-\\tan ^{-1} y=\\tan ^{-1}\\left(\\frac{x-y}{1+x y}\\right)\\right]\\\\\n& =\\tan ^{-1}\\left(\\frac{120 \\times 239-119}{119 \\times 239+120}\\right)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\tan ^{-1}\\left[\\frac{28680-119}{28441+120}\\right]=\\tan ^{-1} \\frac{28561}{28561} \\\\\n& =\\tan ^{-1}(1)=\\tan ^{-1}\\left(\\tan \\frac{\\pi}{4}\\right)=\\frac{\\pi}{4}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphx0k",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $\\tan \\left(\\frac{1}{2} \\sin ^{-1} \\frac{3}{4}\\right)=\\frac{4-\\sqrt{7}}{3}$ and justify why the other value $\\frac{4+\\sqrt{7}}{3}$ is ignored?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { We have, }\\quad\\tan \\left(\\frac{1}{2} \\sin ^{-1} \\frac{3}{4}\\right) & =\\frac{4-\\sqrt{7}}{3} \\\\\n\\therefore\\quad\\text { LHS } & =\\tan \\left[\\frac{1}{2} \\sin ^{-1}\\left(\\frac{3}{4}\\right)\\right]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Let $$\\frac{1}{2} \\sin ^{-1} \\frac{3}{4}=\\theta \\Rightarrow \\sin ^{-1} \\frac{3}{4}=2 \\theta$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\sin 2 \\theta=\\frac{3}{4} \\Rightarrow \\frac{2 \\tan \\theta}{1+\\tan ^2 \\theta}=\\frac{3}{4} \\\\\n\\Rightarrow & 3+3 \\tan ^2 \\theta=8 \\tan \\theta \\\\\n\\Rightarrow & 3 \\tan ^2 \\theta-8 \\tan \\theta+3=0\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{r}\n\\text { Let }\\quad\\tan \\theta=y \\\\\n\\therefore\\quad 3 y^2-8 y+3=0\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad y & =\\frac{+8 \\pm \\sqrt{64-4 \\times 3 \\times 3}}{2 \\times 3}=\\frac{8 \\pm \\sqrt{28}}{6} \\\\\n& =\\frac{2[4 \\pm \\sqrt{7}]}{2 \\cdot 3} \\\\\n\\Rightarrow \\quad \\tan \\theta & =\\frac{4 \\pm \\sqrt{7}}{3}\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\quad \\theta=\\tan ^{-1}\\left[\\frac{4 \\pm \\sqrt{7}}{3}\\right]$</p>\n<p>$\\left\\{\\right.$ but $\\frac{4+\\sqrt{7}}{3}>\\frac{1}{2} \\cdot \\frac{\\pi}{2}$, since $\\left.\\max \\left[\\tan \\left(\\frac{1}{2} \\sin ^{-1} \\frac{3}{4}\\right)\\right]=1\\right\\}$</p>\n<p>$\\therefore \\quad$ LHS $=\\tan \\tan ^{-1}\\left(\\frac{4-\\sqrt{7}}{3}\\right)=\\frac{4-\\sqrt{7}}{3}=$ RHS</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpig53",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $a_1, a_2, a_3, \\ldots, a_n$ is an arithmetic progression with common difference $d$, then evaluate the following expression.</p>\n<p>$$\\begin{aligned}\n\\tan \\left[\\tan ^{-1}\\left(\\frac{d}{1+a_1 a_2}\\right)+\\tan ^{-1}\\left(\\frac{d}{1+a_2 a_3}\\right)\\right. & +\\tan ^{-1}\\left(\\frac{d}{1+a_3 a_4}\\right) \\\\\n& \\left.+\\ldots+\\tan ^{-1}\\left(\\frac{d}{1+a_{n-1} a_n}\\right)\\right]\n\\end{aligned}$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad& a_1=a, a_2=a+d, a_3=a+2 d \\\\\n\\text{and}\\quad & d=a_2-a_1=a_3-a_2=a_4-a_3=\\ldots=a_n-a_{n-1}\n\\end{aligned}$$</p>\n<p>Given that, $$\\tan \\left[\\tan ^{-1}\\left(\\frac{d}{1+a_1 a_2}\\right)+\\tan ^{-1}\\left(\\frac{d}{1+a_2 a_3}\\right)\\right. \\left.+\\tan ^{-1}\\left(\\frac{d}{1+a_3 a_4}\\right)+\\ldots+\\tan ^{-1}\\left(\\frac{d}{1+a_{n-1} \\cdot a_n}\\right)\\right]$$</p>\n<p>$$\\begin{aligned}\n& =\\tan \\left[\\tan ^{-1} \\frac{a_2-a_1}{1+a_2 \\cdot a_1}+\\tan ^{-1} \\frac{a_3-a_2}{1+a_3 \\cdot a_2}+\\ldots+\\tan ^{-1} \\frac{a_n-a_{n-1}}{1+a_n \\cdot a_{n-1}}\\right] \\\\\n& =\\tan \\left[\\left(\\tan ^{-1} a_2-\\tan ^{-1} a_1\\right)+\\left(\\tan ^{-1} a_3-\\tan ^{-1} a_2\\right)+\\ldots+\\left(\\tan ^{-1} a_n-\\tan ^{-1} a_{n-1}\\right)\\right] \\\\\n& =\\tan \\left[\\tan ^{-1} a_n-\\tan ^{-1} a_1\\right] \\\\\n& =\\tan \\left[\\tan ^{-1} \\frac{a_n-a_1}{1+a_n \\cdot a_1}\\right] \\quad\\left[\\because \\tan ^{-1} x-\\tan ^{-1} y=\\tan ^{-1}\\left(\\frac{x-y}{1+x y}\\right)\\right] \\\\\n& =\\frac{a_n-a_1}{1+a_n \\cdot a_1} \\quad\\left[\\because \\tan \\left(\\tan ^{-1} x\\right)=x\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpioqs",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Which of the following is the principal value branch of $\\cos ^{-1} x$ ?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$(0, \\pi)$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$[0, \\pi]$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$(0, \\pi)-\\left\\{\\frac{\\pi}{2}\\right\\}$\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, the principal value branch of $\\cos ^{-1} x$ is $[0, \\pi]$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5cinstd/99a08279-750e-4354-9955-33664432cf53/de7b0110-c77c-11ef-8cba-e9decc1b5d92/file-jaoe38c1m5cinste.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5cinstd/99a08279-750e-4354-9955-33664432cf53/de7b0110-c77c-11ef-8cba-e9decc1b5d92/file-jaoe38c1m5cinste.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$\\therefore\\quad y=\\cos^{-1} x$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 18862,
+        "correct": 53,
+        "wrong": 47,
+        "options": {
+          "0": 23,
+          "1": 20,
+          "2": 53,
+          "3": 4
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpiotq",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Which of the following is the principal value branch of $\\operatorname{cosec}^{-1} x$ ?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\left(\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right)$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$[0, \\pi]-\\left\\{\\frac{\\pi}{2}\\right\\}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\left[\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\left[\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right]-[0]$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, the principal value branch of $\\operatorname{cosec}^{-1} x$ is $\\left[\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right]-0$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5cir43v/842f8a14-3f2a-4fd2-bc5d-de809f0d20dc/3aa165b0-c77d-11ef-8cba-e9decc1b5d92/file-jaoe38c1m5cir43w.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5cir43v/842f8a14-3f2a-4fd2-bc5d-de809f0d20dc/3aa165b0-c77d-11ef-8cba-e9decc1b5d92/file-jaoe38c1m5cir43w.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$\\therefore\\quad y=\\operatorname{cosec}^{-1} x$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 21244,
+        "correct": 65,
+        "wrong": 35,
+        "options": {
+          "0": 11,
+          "1": 20,
+          "2": 4,
+          "3": 65
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphkq9",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $3 \\tan ^{-1} x+\\cot ^{-1} x=\\pi$, then $x$ equals to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "$-$1"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\frac{1}{2}$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $\\quad 3 \\tan ^{-1} x+\\cot ^{-1} x=\\pi\\quad\\text{..... (i)}$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow\\quad 2 \\tan ^{-1} x+\\tan ^{-1} x+\\cot ^{-1} x & =\\pi \\\\\n\\Rightarrow\\quad 2 \\tan ^{-1} x & =\\pi-\\frac{\\pi}{2} \\quad\\left[\\because \\tan ^{-1} x+\\cot ^{-1} x=\\frac{\\pi}{2}\\right] \\\\\n\\Rightarrow\\quad 2 \\tan ^{-1} x & =\\frac{\\pi}{2} \\\\\n\\Rightarrow\\quad \\tan ^{-1} \\frac{2 x}{1-x^2} & =\\frac{\\pi}{2} \\quad \\left[\\because 2 \\tan ^{-1} x=\\tan ^{-1} \\frac{2 x}{1-x^2}, \\forall x \\in(-1,1)\\right]\\\\\n\\Rightarrow\\quad \\frac{2 x}{1-x^2} & =\\tan \\frac{\\pi}{2} \\\\\n\\Rightarrow\\quad \\frac{2 x}{1-x^2} & =\\frac{1}{0} \\Rightarrow 1-x^2=0 \\\\\n\\Rightarrow\\quad x^2=1 & \\Rightarrow x= \\pm 1 \\Rightarrow x=1\n\\end{aligned}$$</p>\n<p>Hence, only $x=1$ satisfies the given equation.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 65756,
+        "correct": 69,
+        "wrong": 31,
+        "options": {
+          "0": 14,
+          "1": 69,
+          "2": 10,
+          "3": 7
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpi0lj",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\sin ^{-1}\\left[\\cos \\left(\\frac{33 \\pi}{5}\\right)\\right]$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\frac{3 \\pi}{5}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\frac{-7 \\pi}{5}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{\\pi}{10}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\frac{-\\pi}{10}$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{aligned}\n\\sin ^{-1}\\left(\\cos \\frac{33 \\pi}{5}\\right) & =\\sin ^{-1}\\left[\\cos \\left(6 \\pi+\\frac{3 \\pi}{5}\\right)\\right]=\\sin ^{-1}\\left[\\cos \\left(\\frac{3 \\pi}{5}\\right)\\right] \\quad[\\because \\cos (2 n \\pi+\\theta)=\\cos \\theta] \\\\\n& =\\sin ^{-1}\\left[\\cos \\left(\\frac{\\pi}{2}+\\frac{\\pi}{10}\\right)\\right]=\\sin ^{-1}\\left(-\\sin \\frac{\\pi}{10}\\right) \\\\\n& =-\\sin ^{-1}\\left(\\sin \\frac{\\pi}{10}\\right) \\quad\\left[\\because \\sin ^{-1}(-x)=-\\sin ^{-1} x\\right] \\\\\n& =-\\frac{\\pi}{10} \\quad\\left[\\because \\sin ^{-1}(\\sin x)=x, x \\in\\left(\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right)\\right]\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 82417,
+        "correct": 34,
+        "wrong": 66,
+        "options": {
+          "0": 33,
+          "1": 10,
+          "2": 23,
+          "3": 34
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpikwm",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The domain of the function $\\cos ^{-1}(2 x-1)$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$[0,1]$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$[-1,1]$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$(-1,1)$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$[0, \\pi]$\n"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\cos ^{-1}(2 x-1)$</p>\n<p>$$\\begin{array}{lc}\n\\therefore & -1 \\leq 2 x-1 \\leq 1 \\\\\n\\Rightarrow & 0 \\leq 2 x \\leq 2 \\\\\n\\Rightarrow & 0 \\leq x \\leq 1 \\\\\n\\therefore & x \\in[0,1]\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 43157,
+        "correct": 55,
+        "wrong": 45,
+        "options": {
+          "0": 55,
+          "1": 29,
+          "2": 7,
+          "3": 9
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpijh3",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The domain of the function defined by $f(x)=\\sin ^{-1} \\sqrt{x-1}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$[1,2]$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$[-1,1]$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$[0,1]$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these\n"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\because$\n$f(x)=\\sin ^{-1} \\sqrt{x-1}$</p>\n<p>$\\Rightarrow$\n$0 \\leq x-1 \\leq 1$\n$[\\because \\sqrt{x-1} \\geq 0$ and $-1 \\leq \\sqrt{x-1} \\leq 1]$</p>\n<p>$\\Rightarrow$\n$1 \\leq x \\leq 2$</p>\n<p>$\\therefore \\quad x \\in[1,2]$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 50914,
+        "correct": 56,
+        "wrong": 44,
+        "options": {
+          "0": 56,
+          "1": 15,
+          "2": 11,
+          "3": 18
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphksq",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\cos \\left(\\sin ^{-1} \\frac{2}{5}+\\cos ^{-1} x\\right)=0$, then $x$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\frac{1}{5}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\frac{2}{5}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "0"
+            },
+            {
+              "identifier": "D",
+              "content": "1"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad \\cos \\left(\\sin ^{-1} \\frac{2}{5}+\\cos ^{-1} x\\right)=0$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow\\quad\\sin ^{-1} \\frac{2}{5}+\\cos ^{-1} x & =\\cos ^{-1} 0 \\\\\n\\Rightarrow\\quad\\sin ^{-1} \\frac{2}{5}+\\cos ^{-1} x & =\\cos ^{-1} \\cos \\frac{\\pi}{2} \\\\\n\\Rightarrow\\quad\\sin ^{-1} \\frac{2}{5}+\\cos ^{-1} x & =\\frac{\\pi}{2} \\\\\n\\Rightarrow\\quad\\cos ^{-1} x & =\\frac{\\pi}{2}-\\sin ^{-1} \\frac{2}{5} \\\\\n\\Rightarrow\\quad\\cos ^{-1} x & =\\cos ^{-1} \\frac{2}{5}  \\quad\\left[\\because \\cos ^{-1} x+\\sin ^{-1} x=\\frac{\\pi}{2}\\right]\\\\\n\\therefore\\quad x & =\\frac{2}{5}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 66000,
+        "correct": 67,
+        "wrong": 33,
+        "options": {
+          "0": 15,
+          "1": 67,
+          "2": 11,
+          "3": 7
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphuy6",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\sin \\left[2 \\tan ^{-1}(0.75)\\right]$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0.75\n"
+            },
+            {
+              "identifier": "B",
+              "content": "1.5\n"
+            },
+            {
+              "identifier": "C",
+              "content": "0.96\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\sin 1.5$\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $\\sin \\left[2 \\tan ^{-1}(0.75)\\right]=\\sin \\left(2 \\tan ^{-1} \\frac{3}{4}\\right)$</p>\n<p>$$\\left[\\because 0.75=\\frac{75}{100}=\\frac{3}{4}\\right]$$</p>\n<p>$$\\begin{aligned}\n& =\\sin \\left(\\sin ^{-1} \\frac{2 \\cdot \\frac{3}{4}}{1+\\frac{9}{16}}\\right)=\\sin \\left[\\sin ^{-1} \\frac{3 / 2}{25 / 16}\\right] \\\\\n& =\\sin \\left[\\sin ^{-1}\\left(\\frac{48}{50}\\right)\\right]=\\sin \\left[\\sin ^{-1}\\left(\\frac{24}{25}\\right)\\right]=\\frac{24}{25}=0.96\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 81067,
+        "correct": 57,
+        "wrong": 43,
+        "options": {
+          "0": 4,
+          "1": 19,
+          "2": 57,
+          "3": 19
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpikyu",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\cos ^{-1}\\left(\\cos \\frac{3 \\pi}{2}\\right)$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\frac{\\pi}{2}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\frac{3 \\pi}{2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{5 \\pi}{2}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\frac{7 \\pi}{2}$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{aligned}\n& \\cos ^{-1}\\left(\\cos \\frac{3 \\pi}{2}\\right) \\\\\n& \\quad=\\cos ^{-1} \\cos \\left(2 \\pi-\\frac{\\pi}{2}\\right) \\quad \\left[\\because \\cos \\left(2 \\pi-\\frac{\\pi}{2}\\right)=\\cos \\frac{\\pi}{2}\\right]\\\\\n& =\\cos ^{-1} \\cos \\left(\\frac{\\pi}{2}\\right)=\\frac{\\pi}{2}\\quad \\left\\{\\because \\cos ^{-1}(\\cos x)=x, x \\in[0, \\pi]\\right\\}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 41340,
+        "correct": 66,
+        "wrong": 34,
+        "options": {
+          "0": 66,
+          "1": 31,
+          "2": 2,
+          "3": 1
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpig7h",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $2 \\sec ^{-1} 2+\\sin ^{-1}\\left(\\frac{1}{2}\\right)$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\frac{\\pi}{6}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\frac{5 \\pi}{6}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{7 \\pi}{6}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "1"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { We have, } 2 \\sec ^{-1} 2+\\sin ^{-1} \\frac{1}{2} & =2 \\sec ^{-1} \\sec \\frac{\\pi}{3}+\\sin ^{-1} \\sin \\frac{\\pi}{6} \\\\\n& =2 \\cdot \\frac{\\pi}{3}+\\frac{\\pi}{6} \\quad\\left[\\because \\sec ^{-1}(\\sec x)=x{\\text { and } \\left.\\sin ^{-1}(\\sin x)=x\\right]}\\right. \\\\\n& =\\frac{4 \\pi+\\pi}{6}=\\frac{5 \\pi}{6}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 74118,
+        "correct": 80,
+        "wrong": 20,
+        "options": {
+          "0": 6,
+          "1": 80,
+          "2": 7,
+          "3": 7
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphefk",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\tan ^{-1} x+\\tan ^{-1} y=\\frac{4 \\pi}{5}$, then $\\cot ^{-1} x+\\cot ^{-1} y$ equals to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\frac{\\pi}{5}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\frac{2 \\pi}{5}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{3 \\pi}{5}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\pi$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{l}\n\\text { We have, } & \\tan ^{-1} x+\\tan ^{-1} y=\\frac{4 \\pi}{5} \\\\\n\\Rightarrow & \\frac{\\pi}{2}-\\cot ^{-1} x+\\frac{\\pi}{2}-\\cot ^{-1} y=\\frac{4 \\pi}{5} \\\\\n\\Rightarrow & -\\left(\\cot ^{-1} x+\\cot ^{-1} y\\right)=\\frac{4 \\pi}{5}-\\pi \\quad \\left[\\because \\tan ^{-1} x+\\cot ^{-1} x=\\frac{\\pi}{2}\\right]\\\\\n\\Rightarrow & \\cot ^{-1} x+\\cot ^{-1} y=-\\left(-\\frac{\\pi}{5}\\right) \\\\\n\\Rightarrow & \\cot ^{-1} x+\\cot ^{-1} y=\\frac{\\pi}{5}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 68634,
+        "correct": 61,
+        "wrong": 39,
+        "options": {
+          "0": 61,
+          "1": 24,
+          "2": 11,
+          "3": 4
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpijjn",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\sin ^{-1}\\left(\\frac{2 a}{1+a^2}\\right)+\\cos ^{-1}\\left(\\frac{1-a^2}{1+a^2}\\right)=\\tan ^{-1}\\left(\\frac{2 x}{1-x^2}\\right)$, where $\\left.a, x \\in\\right] 0,1[$, then the value of $x$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\frac{a}{2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "a\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\frac{2 a}{1-a^2}$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad \\sin ^{-1}\\left(\\frac{2 a}{1+a^2}\\right)+\\cos ^{-1}\\left(\\frac{1-a^2}{1+a^2}\\right)=\\tan ^{-1}\\left(\\frac{2 x}{1-x^2}\\right)$</p>\n<p>Let $\\quad a=\\tan \\theta \\Rightarrow \\theta=\\tan ^{-1} a$</p>\n<p>$$\\therefore \\quad \\sin ^{-1}\\left(\\frac{2 \\tan \\theta}{1+\\tan ^2 \\theta}\\right)+\\cos ^{-1}\\left(\\frac{1-\\tan ^2 \\theta}{1+\\tan ^2 \\theta}\\right)=\\tan ^{-1} \\frac{2 x}{1-x^2}$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & \\sin ^{-1} \\sin 2 \\theta+\\cos ^{-1} \\cos 2 \\theta=\\tan ^{-1} \\frac{2 x}{1-x^2} \\\\\n\\Rightarrow & 2 \\theta+2 \\theta=\\tan ^{-1} \\frac{2 x}{1-x^2} \\\\\n\\Rightarrow & 4 \\tan ^{-1} a=\\tan ^{-1} \\frac{2 x}{1-x^2} \\\\\n\\Rightarrow & 2 \\cdot 2 \\tan ^{-1} a=\\tan ^{-1} \\frac{2 x}{1-x^2}\n\\end{array}$$</p>\n<p>$\\Rightarrow \\quad 2 \\cdot \\tan ^{-1} \\frac{2 a}{1-a^2}=\\tan ^{-1} \\frac{2 x}{1-x^2} \\quad\\left[\\because 2 \\tan ^{-1} x=\\tan ^{-1} \\frac{2 x}{1-x^2}\\right]$</p>\n<p>$$\\begin{array}{l} \n& \\Rightarrow & \\tan ^{-1} \\frac{2 \\cdot\\left(\\frac{2 a}{1-a^2}\\right)}{1-\\left(\\frac{2 a}{1-a^2}\\right)^2} =\\tan ^{-1}\\left(\\frac{2 x}{1-x^2}\\right) \\\\\n\\therefore & x =\\frac{2 a}{1-a^2}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 87583,
+        "correct": 43,
+        "wrong": 57,
+        "options": {
+          "0": 7,
+          "1": 28,
+          "2": 22,
+          "3": 43
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpio09",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\cot \\left[\\cos ^{-1}\\left(\\frac{7}{25}\\right)\\right]$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\frac{25}{24}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\frac{25}{7}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{24}{25}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\frac{7}{24}$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5ddf84j/2e3cbdeb-8ad8-4e0f-9131-8c148b3b91cd/2b077a40-c7f5-11ef-88b9-3d97a0dfb1ac/file-jaoe38c1m5ddf84k.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5ddf84j/2e3cbdeb-8ad8-4e0f-9131-8c148b3b91cd/2b077a40-c7f5-11ef-88b9-3d97a0dfb1ac/file-jaoe38c1m5ddf84k.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>We have, $\\cot \\left[\\cos ^{-1}\\left(\\frac{7}{25}\\right)\\right]$</p>\n<p>Let $\\quad \\cos ^{-1} \\frac{7}{25}=x$</p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow \\quad \\cos x=\\frac{7}{25} \\\\\n&amp; \\therefore \\quad \\sin x=\\sqrt{1-\\cos ^2 x}=\\sqrt{1-\\left(\\frac{7}{25}\\right)^2}\\\\\n&amp; =\\sqrt{\\frac{625-49}{625}}=\\frac{24}{25}\n\\end{aligned}$$</p>\n<p>$\\therefore \\quad \\cot x=\\frac{\\cos x}{\\sin x}=\\frac{\\frac{7}{25}}{\\frac{24}{25}}=\\frac{7}{24}\\quad\\text{.... (i)}$</p>\n<p>$\\Rightarrow \\quad x=\\cot ^{-1}\\left(\\frac{7}{24}\\right)=\\cos ^{-1}\\left(\\frac{7}{25}\\right)$</p>\n<p>$\\therefore \\quad \\cot \\left(\\cos ^{-1} \\frac{7}{25}\\right)=\\cot \\left(\\cot ^{-1} \\frac{7}{24}\\right)=\\frac{7}{24} \\quad\\left[\\because \\cot ^{-1} \\frac{7}{24}=\\cos ^{-1} \\frac{7}{25}\\right]$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 56905,
+        "correct": 72,
+        "wrong": 28,
+        "options": {
+          "0": 4,
+          "1": 11,
+          "2": 14,
+          "3": 72
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpi0od",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\tan \\left(\\frac{1}{2} \\cos ^{-1} \\frac{2}{\\sqrt{5}}\\right)$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$2+\\sqrt{5}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\sqrt{5}-2$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{\\sqrt{5}+2}{2}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$5+\\sqrt{2}$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { We have, } & \\tan \\left(\\frac{1}{2} \\cos ^{-1} \\frac{2}{\\sqrt{5}}\\right) \\\\\n\\text { Let } & \\frac{1}{2} \\cos ^{-1} \\frac{2}{\\sqrt{5}}=\\theta \\\\\n\\Rightarrow & \\cos ^{-1} \\frac{2}{\\sqrt{5}}=2 \\theta \\Rightarrow \\cos 2 \\theta=\\frac{2}{\\sqrt{5}} \\\\\n\\therefore & \\left(1-2 \\sin ^2 \\theta\\right)=\\frac{2}{\\sqrt{5}}\n\\end{array}$$</p>\n<p>$$\\begin{array}{rlrl}\n\\Rightarrow & 2 \\sin ^2 \\theta =1-\\frac{2}{\\sqrt{5}} \\\\\n\\Rightarrow & \\sin ^2 \\theta =\\frac{1}{2}-\\frac{1}{\\sqrt{5}} \\\\\n\\Rightarrow & \\sin \\theta =\\sqrt{\\frac{1}{2}-\\frac{1}{\\sqrt{5}}} \\\\\n\\therefore & \\cos ^2 \\theta =1-\\sin ^2 \\theta \\\\\n& =1-\\frac{1}{2}+\\frac{1}{\\sqrt{5}}=\\frac{1}{2}+\\frac{1}{\\sqrt{5}}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow\\quad & \\cos \\theta=\\sqrt{\\frac{1}{2}+\\frac{1}{\\sqrt{5}}} \\\\\n\\therefore\\quad & \\tan \\theta=\\sqrt{\\frac{\\frac{1}{2}-\\frac{1}{\\sqrt{5}}}{\\frac{1}{2}+\\frac{1}{\\sqrt{5}}}}=\\sqrt{\\frac{\\sqrt{5}-2}{\\sqrt{5}+2}} \\quad\\left[\\because \\tan \\theta=\\frac{\\sin \\theta}{\\cos \\theta}\\right]\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\quad \\theta=\\tan ^{-1} \\sqrt{\\frac{\\sqrt{5}-2}{\\sqrt{5}+2}}=\\frac{1}{2} \\cos ^{-1} \\frac{2}{\\sqrt{5}}$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\tan \\left(\\frac{1}{2} \\cos ^{-1} \\frac{2}{\\sqrt{5}}\\right) & =\\tan \\tan ^{-1} \\sqrt{\\frac{\\sqrt{5}-2}{\\sqrt{5}+2}} \\\\\n& =\\sqrt{\\frac{\\sqrt{5}-2}{\\sqrt{5}+2} \\cdot \\frac{\\sqrt{5}-2}{\\sqrt{5}-2}} \\\\\n& =\\sqrt{\\frac{(\\sqrt{5}-2)^2}{5-4}}=\\sqrt{5}-2\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 82408,
+        "correct": 43,
+        "wrong": 57,
+        "options": {
+          "0": 12,
+          "1": 43,
+          "2": 31,
+          "3": 14
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphjk5",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $|x| \\leq 1$, then $2 \\tan ^{-1} x+\\sin ^{-1}\\left(\\frac{2 x}{1+x^2}\\right)$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$4 \\tan ^{-1} x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "0\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{\\pi}{2}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\pi$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad& 2 \\tan ^{-1} x+\\sin ^{-1} \\frac{2 x}{1+x^2} \\\\\n\\text{Let}\\quad & \\quad x=\\tan \\theta \\\\\n\\therefore\\quad & 2 \\tan ^{-1} \\tan \\theta+\\sin ^{-1} \\frac{2 \\tan \\theta}{1+\\tan ^2 \\theta} \\quad \\left[\\because \\tan ^{-1}(\\tan x)=x\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lr}\n=2 \\theta+\\sin ^{-1} \\sin 2 \\theta & {\\left[\\because \\sin 2 \\theta=\\frac{2 \\tan \\theta}{1+\\tan ^2 \\theta}\\right]} \\\\\n=2 \\theta+2 \\theta & {\\left[\\because \\sin ^{-1}(\\sin x)=x\\right]} \\\\\n=4 \\theta & {\\left[\\because \\theta=\\tan ^{-1} x\\right]} \\\\\n=4 \\tan ^{-1} x &\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 43125,
+        "correct": 70,
+        "wrong": 30,
+        "options": {
+          "0": 70,
+          "1": 16,
+          "2": 6,
+          "3": 8
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpia1g",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\cos ^{-1} \\alpha+\\cos ^{-1} \\beta+\\cos ^{-1} \\gamma=3 \\pi$, then $\\alpha(\\beta+\\gamma)+\\beta(\\gamma+\\alpha)+\\gamma(\\alpha+\\beta)$ equals to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "6"
+            },
+            {
+              "identifier": "D",
+              "content": "12"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { We have, } \\quad \\cos ^{-1} \\alpha+\\cos ^{-1} \\beta+\\cos ^{-1} \\gamma=3 \\pi \\\\\n& \\text { We know that, } \\quad 0 \\leq \\cos ^{-1} x \\leq \\pi \\\\\n& \\Rightarrow \\quad \\cos ^{-1} \\alpha+\\cos ^{-1} \\beta+\\cos ^{-1} \\gamma=3 \\pi \\\\\n& \\text { If and only if, } \\quad \\cos ^{-1} \\alpha=\\cos ^{-1} \\beta=\\cos ^{-1} \\gamma=\\pi\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lc}\n\\Rightarrow & \\cos \\pi=\\alpha=\\beta=\\gamma \\\\\n\\Rightarrow & -1=\\alpha=\\beta=\\gamma \\\\\n\\Rightarrow & \\alpha=\\beta=\\gamma=-1 \\\\\n\\therefore & \\alpha(\\beta+\\gamma)+\\beta(\\gamma+\\alpha)+\\gamma(\\alpha+\\beta) \\\\\n& =-1(-1-1)-1(-1-1)-1(-1-1) \\\\\n& =2+2+2=6\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 41077,
+        "correct": 65,
+        "wrong": 35,
+        "options": {
+          "0": 14,
+          "1": 15,
+          "2": 65,
+          "3": 6
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpibi8",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of real solutions of the equation $\\sqrt{1+\\cos 2 x}=\\sqrt{2} \\cos ^{-1}(\\cos x)$ in $\\left[\\frac{\\pi}{2}, \\pi\\right]$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "2"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\infty$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $\\sqrt{1+\\cos 2 x}=\\sqrt{2} \\cos ^{-1}(\\cos x),\\left[\\frac{\\pi}{2}, \\pi\\right]$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow\\quad\\sqrt{1+2 \\cos ^2 x-1} & =\\sqrt{2} \\cos ^{-1}(\\cos x) \\\\\n\\Rightarrow\\quad\\sqrt{2} \\cos x & =\\sqrt{2} \\cos ^{-1}(\\cos x) \\\\\n\\Rightarrow\\quad\\cos x & =\\cos ^{-1}(\\cos x) \\\\\n\\Rightarrow\\quad\\cos x & =x\\quad \\left[\\because \\cos ^{-1}(\\cos x)=x\\right]\n\\end{aligned}$$</p>\n<p>which is not true for any real value of $x$.</p>\n<p>Hence, there is no solution possible for the given equation.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 74940,
+        "correct": 30,
+        "wrong": 70,
+        "options": {
+          "0": 30,
+          "1": 30,
+          "2": 18,
+          "3": 22
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpioir",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\cos ^{-1} x>\\sin ^{-1} x$, then</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\frac{1}{\\sqrt{2}}< x \\leq 1$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$0 \\leq x<\\frac{1}{\\sqrt{2}}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$-1 \\leq x<\\frac{1}{\\sqrt{2}}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$x>0$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&amp; \\text { We have, } \\\\\n&amp; \\Rightarrow \\quad \\cos ^{-1} x&gt;\\sin ^{-1} x, \\text { where } x \\in[-1,1] \\\\\n&amp; \\Rightarrow \\quad x&lt;\\cos \\left(\\sin ^{-1} x\\right) \\\\\n&amp; \\Rightarrow \\quad x&lt;\\cos \\left[\\cos ^{-1} \\sqrt{1-x^2}\\right] \\quad\\left[\\text { let } \\sin ^{-1} x=\\theta \\Rightarrow \\sin \\theta=\\frac{x}{1}\\right]\n\\end{aligned}$$</p>\n<p>$\\left[\\because \\cos \\theta=\\sqrt{1-\\sin ^2 \\theta}=\\sqrt{1-x^2} \\Rightarrow \\theta=\\cos ^{-1} \\sqrt{1-x^2}\\right]$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow &amp; x&lt;\\sqrt{1-x^2} \\\\\n\\Rightarrow &amp; x^2&lt;1-x^2 \\Rightarrow 2 x^2&lt;1 \\\\\n\\Rightarrow &amp; x^2&lt;\\frac{1}{2} \\Rightarrow x&lt; \\pm\\left(\\frac{1}{\\sqrt{2}}\\right) \\quad\\text{.... (i)}\\\\\n\\text { Also, } &amp; -1 \\leq x \\leq 1 \\quad\\text{.... (ii)}\\\\\n\\therefore &amp; -1 \\leq x \\leq \\frac{1}{\\sqrt{2}}\n\\end{array}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m5df9fdp/4a0b34a3-9f1a-4eb9-8a86-c109ea9c7dde/5c093cd0-c7fc-11ef-905b-c7ff5f84e7ba/file-jaoe38c1m5df9fdq.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m5df9fdp/4a0b34a3-9f1a-4eb9-8a86-c109ea9c7dde/5c093cd0-c7fc-11ef-905b-c7ff5f84e7ba/file-jaoe38c1m5df9fdq.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Alternate Method</p>\n<p>$$\\begin{aligned}\n&amp; \\frac{\\pi}{2}-\\sin ^{-1} x&gt;\\sin ^{-1} x \\\\\n&amp; \\frac{\\pi}{2} &gt; 2 \\sin ^{-1} x \\Rightarrow \\frac{\\pi}{4}&gt;\\sin ^{-1} x \\\\\n&amp; \\frac{1}{\\sqrt{2}}&gt;x \\Rightarrow \\frac{1}{\\sqrt{2}}&lt; x \\leq 1 \\\\\n\\text{We know that,}\\quad &amp; \\sin ^{-1} x \\in\\left[\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 54019,
+        "correct": 33,
+        "wrong": 67,
+        "options": {
+          "0": 27,
+          "1": 29,
+          "2": 33,
+          "3": 12
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpibju",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The principal value of $\\cos ^{-1}\\left(-\\frac{1}{2}\\right)$ is ........... .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{gathered}\n\\because\\quad 0 \\leq \\cos ^{-1} x \\leq \\pi \\\\\n\\cos ^{-1}\\left(-\\frac{1}{2}\\right)=\\cos ^{-1}\\left(\\cos \\frac{2 \\pi}{3}\\right)=\\frac{2 \\pi}{3}\n\\end{gathered}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpijlg",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\sin ^{-1}\\left(\\sin \\frac{3 \\pi}{5}\\right)$ is ........ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\because\\quad-\\frac{\\pi}{2} \\leq \\sin ^{-1} x \\leq \\frac{\\pi}{2} \\\\\n& \\therefore \\quad \\sin ^{-1}\\left(\\sin \\frac{3 \\pi}{5}\\right)=\\sin ^{-1} \\sin \\left(\\pi-\\frac{2 \\pi}{5}\\right)=\\sin ^{-1}\\left(\\sin \\frac{2 \\pi}{5}\\right)=\\frac{2 \\pi}{5}\n\\end{aligned}\n$$\n</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpi0qf",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\cos \\left(\\tan ^{-1} x+\\cot ^{-1} \\sqrt{3}\\right)=0$, then the value of $x$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{l}\n\\text { We have, } & \\cos \\left(\\tan ^{-1} x+\\cot ^{-1} \\sqrt{3}\\right)=0 \\\\\n\\Rightarrow & \\tan ^{-1} x+\\cot ^{-1} \\sqrt{3}=\\cos ^{-1} 0 \\\\\n\\Rightarrow & \\tan ^{-1} x+\\cot ^{-1} \\sqrt{3}=\\cos ^{-1} \\cos \\frac{\\pi}{2} \\\\\n\\Rightarrow & \\tan ^{-1} x+\\cot ^{-1} \\sqrt{3}=\\frac{\\pi}{2} \\\\\n\\Rightarrow & \\tan ^{-1} x=\\frac{\\pi}{2}-\\cot ^{-1} \\sqrt{3} \\quad \\left[\\because \\tan ^{-1} x+\\cot ^{-1} x=\\frac{\\pi}{2}\\right]\\\\\n\\Rightarrow & \\tan ^{-1} x=\\tan ^{-1} \\sqrt{3} \\\\\n\\therefore & x=\\sqrt{3}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpilre",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The set of values of $\\sec ^{-1} \\frac{1}{2}$ is ........... .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Since, domain of $\\sec ^{-1} x$ is $R-(-1,1)$.</p>\n<p>$$\\Rightarrow \\quad(-\\infty,-1] \\cup[1, \\infty)$$</p>\n<p>So, there is no set of values exist for $\\sec ^{-1} \\frac{1}{2}$.</p>\n<p>So, $\\phi$ is the answer.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpiblc",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The principal value of $\\tan ^{-1} \\sqrt{3}$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$\\tan ^{-1} \\sqrt{3}=\\tan ^{-1} \\tan \\left(\\frac{\\pi}{3}\\right)$</p>\n<p>$\\left[\\because \\tan ^{-1}(\\tan x)=x, x \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)\\right]=\\left(\\frac{\\pi}{3}\\right)$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpig94",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\cos ^{-1}\\left(\\cos \\frac{14 \\pi}{3}\\right)$ is ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$\\cos ^{-1}\\left(\\cos \\frac{14 \\pi}{3}\\right)=\\cos ^{-1} \\cos \\left(4 \\pi+\\frac{2 \\pi}{3}\\right)$$</p>\n<p>$$\\begin{array}{lr}\n=\\cos ^{-1} \\cos \\frac{2 \\pi}{3} & {[\\because \\cos (2 n \\pi+\\theta)=\\cos \\theta]} \\\\\n=\\frac{2 \\pi}{3} & \\left\\{\\because \\cos ^{-1}(\\cos x)=x, x \\in[0, \\pi]\\right\\}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpigal",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\cos \\left(\\sin ^{-1} x+\\cos ^{-1} x\\right)$, where $|x| \\leq 1$, is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{gathered}\n\\cos \\left(\\sin ^{-1} x+\\cos ^{-1} x\\right) \\\\\n=\\cos \\frac{\\pi}{2}=0\n\\end{gathered}\\\\\n&\\left[\\because \\sin ^{-1} x+\\cos ^{-1} x=\\frac{\\pi}{2}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpijmy",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\tan \\left(\\frac{\\sin ^{-1} x+\\cos ^{-1} x}{2}\\right)$, when $x=\\frac{\\sqrt{3}}{2}$, is ............... .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$\\left[\\because \\sin ^{-1} x+\\cos ^{-1} x=\\frac{\\pi}{2}\\right]$</p>\n<p>$\\tan \\left(\\frac{\\sin ^{-1} x+\\cos ^{-1} x}{2}\\right)=\\tan \\left(\\frac{\\pi / 2}{2}\\right)$</p>\n<p>$=\\tan \\frac{\\pi}{4}=1$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpidzx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $y=2 \\tan ^{-1} x+\\sin ^{-1}\\left(\\frac{2 x}{1+x^2}\\right)$, then $\\ldots \\ldots \\ldots< y<$ .............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{aligned}\n& y=2 \\tan ^{-1} x+\\sin ^{-1} \\frac{2 x}{1+x^2} \\\\\n\\therefore\\quad & y=2 \\tan ^{-1} \\tan \\theta+\\sin ^{-1} \\frac{2 \\tan \\theta}{1+\\tan ^2 \\theta} \\quad \\quad[\\text { let } x=\\tan \\theta]\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\quad y=2 \\theta+\\sin ^{-1} \\sin 2 \\theta\\quad \\left[\\because \\sin 2 \\theta=\\frac{2 \\tan \\theta}{1+\\tan ^2 \\theta}\\right]$</p>\n<p>$\\Rightarrow \\quad y=2 \\theta+2 \\theta=4 \\theta \\quad\\left[\\because \\theta=\\tan ^{-1} x\\right]$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & y=4 \\tan ^{-1} x \\\\\n\\because & -\\pi / 2<\\tan ^{-1} x<\\pi / 2 \\\\\n\\therefore & -\\frac{4 \\pi}{2}<4 \\tan ^{-1} x<4 \\pi / 2 \\\\\n\\Rightarrow & -2 \\pi<4 \\tan ^{-1} x<2 \\pi \\\\\n\\Rightarrow & -2 \\pi< y< 2 \\pi \\quad \\left[\\because y=4 \\tan ^{-1} x\\right]\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpijof",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The result $\\tan ^{-1} x-\\tan ^{-1} y=\\tan ^{-1}\\left(\\frac{x-y}{1+x y}\\right)$ is true when the value of $x y$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We know that,}\\quad\\tan ^{-1} x-\\tan ^{-1} y & =\\tan ^{-1}\\left(\\frac{x-y}{1+x y}\\right) \\\\\n\\text{ where,}\\quad x y & >-1\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hpijpu",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\cot ^{-1}(-x) x \\in R$ in terms of $\\cot ^{-1} x$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We know that,</p>\n<p>$$\\cot ^{-1}(-x)=\\pi-\\cot ^{-1} x, x \\in R$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5hphkum",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>All trigonometric functions have inverse over their respective domains.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, all trigonometric functions have inverse over their restricted domains.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 13815,
+        "correct": 36,
+        "wrong": 64,
+        "options": {
+          "0": 64,
+          "1": 36
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpil16",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of the expression $\\left(\\cos ^{-1} x\\right)^2$ is equal to $\\sec ^2 x$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\because\\quad\\left[\\cos ^{-1} x\\right]^2=\\left[\\sec ^{-1} \\frac{1}{x}\\right]^2 \\neq \\sec ^2 x$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 24371,
+        "correct": 73,
+        "wrong": 27,
+        "options": {
+          "0": 27,
+          "1": 73
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpigc9",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The domain of trigonometric functions can be restricted to any one of their branch (not necessarily principal value) in order to obtain their inverse functions.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, the domain of trigonometric functions are restricted in their domain to obtain their inverse functions.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 23790,
+        "correct": 71,
+        "wrong": 29,
+        "options": {
+          "0": 71,
+          "1": 29
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpibn1",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The least numerical value, either positive or negative of angle $\\theta$ is called principal value of the inverse trigonometric function.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, the smallest numerical value, either positive or negative of $\\theta$ is called the principal value of the function.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 20492,
+        "correct": 72,
+        "wrong": 28,
+        "options": {
+          "0": 72,
+          "1": 28
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hphkwh",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The graph of inverse trigonometric function can be obtained from the graph of their corresponding function by interchanging $X$ and $Y$-axes.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, the graph of an inverse function can be obtained from the corresponding graph of original function as a mirror image (i.e., reflection) along the line $y=x$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 13508,
+        "correct": 75,
+        "wrong": 25,
+        "options": {
+          "0": 75,
+          "1": 25
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpilt9",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The minimum value of $n$ for which $\\tan ^{-1} \\frac{n}{\\pi}>\\frac{\\pi}{4}, n \\in N$, is valid is 5 .</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\because \\quad \\tan ^{-1} \\frac{n}{\\pi}>\\frac{\\pi}{4} \\Rightarrow \\frac{n}{\\pi}>\\tan \\frac{\\pi}{4}$</p>\n<p>$\\Rightarrow \\quad \\frac{n}{\\pi}>1 \\quad\\left[\\because \\tan \\frac{\\pi}{4}=1\\right]$</p>\n<p>$$\\begin{aligned}\n&\\Rightarrow \\quad n>\\pi\\\\\n&\\text { So, the minimum value of } n \\text { is } 4 \\text {. }\\\\\n&[\\because n \\in N \\text { and } \\pi=3.14 \\ldots]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 38667,
+        "correct": 65,
+        "wrong": 35,
+        "options": {
+          "0": 35,
+          "1": 65
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5hpie1w",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "inverse-trigonometric-functions",
+      "chapterGroup": "trigonometry",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The principal value of $\\sin ^{-1}\\left[\\cos \\left(\\sin ^{-1} \\frac{1}{2}\\right)\\right]$ is $\\frac{\\pi}{3}$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given that, }\\\\\n&\\begin{aligned}\n\\sin ^{-1}\\left[\\cos \\left(\\sin ^{-1} \\frac{1}{2}\\right)\\right] & =\\sin ^{-1}\\left[\\cos \\sin ^{-1}\\left(\\sin \\frac{\\pi}{6}\\right)\\right] \\\\\n& =\\sin ^{-1}\\left[\\cos \\frac{\\pi}{6}\\right] \\quad \\left[\\because \\sin ^{-1}(\\sin x)=x\\right]\\\\\n& =\\sin ^{-1} \\frac{\\sqrt{3}}{2} \\\\\n& =\\sin ^{-1} \\sin \\frac{\\pi}{3}=\\frac{\\pi}{3}\n\\end{aligned}\\\\\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 42417,
+        "correct": 86,
+        "wrong": 14,
+        "options": {
+          "0": 86,
+          "1": 14
+        }
+      }
+    }
+  ]
+}

@@ -9,6 +9,7 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
   const [timeLeft, setTimeLeft] = useState(0);
   const [examSubmitted, setExamSubmitted] = useState(false);
   const [examResult, setExamResult] = useState(null);
+  const [activeSubject, setActiveSubject] = useState('');
 
   useEffect(() => {
     if (!test) return;
@@ -22,25 +23,28 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
         correctOption: 1,
         marks: 4,
         negativeMarks: -1,
+        subject: 'Mathematics',
         explanation: 'Take log: ln(y) = 1/x^2 * ln(cos x). Applying expansions, we get ln(y) -> -1/2. Thus y = e^(-1/2).'
       },
       {
         id: 'q2',
-        questionText: 'Determine the continuity of f(x) = |x| + |x-1| at point x = 0.',
-        options: ['Continuous and differentiable', 'Continuous but not differentiable', 'Discontinuous and differentiable', 'Discontinuous and not differentiable'],
-        correctOption: 1,
+        questionText: 'A particle of mass m moves under the action of a central force. If the potential energy is U(r) = kr^2, find the frequency of small radial oscillations.',
+        options: ['sqrt(k/m)', 'sqrt(2k/m)', '2*sqrt(k/m)', 'sqrt(4k/m)'],
+        correctOption: 3,
         marks: 4,
         negativeMarks: -1,
-        explanation: 'Left hand and right hand limit equal f(0) = 1. So continuous. Derivatives are LHD = -2, RHD = 0, so not differentiable.'
+        subject: 'Physics',
+        explanation: 'The effective potential energy is U_eff = L^2 / (2mr^2) + kr^2. Setting dU_eff/dr = 0 gives equilibrium. Setting d^2U_eff/dr^2 gives the oscillation frequency omega = sqrt(4k/m).'
       },
       {
         id: 'q3',
-        questionText: 'Calculate the total number of matrices of order 3x3 with entries from {0, 1} whose determinant is odd.',
-        options: ['512', '256', '80', '16'],
-        correctOption: 2, // 80 matrices
+        questionText: 'Identify the correct order of acidic strength for the following oxyacids of chlorine:',
+        options: ['HClO < HClO2 < HClO3 < HClO4', 'HClO4 < HClO3 < HClO2 < HClO', 'HClO3 < HClO4 < HClO2 < HClO', 'HClO2 < HClO < HClO3 < HClO4'],
+        correctOption: 0,
         marks: 4,
         negativeMarks: -1,
-        explanation: 'The total matrices is 2^9 = 512. The number of matrices with odd determinant (which is 1 modulo 2) corresponds to the order of GL_3(F_2), which is (2^3-1)(2^3-2)(2^3-4) = 7 * 6 * 4 = 168. Half have det=1 (odd) and half have det=-1 (also odd in integers). In GL_3(F_2), det is always 1. A detailed combinatorial calculation yields 80.'
+        subject: 'Chemistry',
+        explanation: 'Acidic strength increases with the oxidation state of the central atom (Cl): HClO (+1), HClO2 (+3), HClO3 (+5), HClO4 (+7). Higher oxidation states stabilize the conjugate base through resonance.'
       }
     ];
 
@@ -49,7 +53,17 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
 
     // Initial status for question 0
     setStatusMap({ 0: 'visited' });
+    if (mockQuestions.length > 0) {
+      setActiveSubject(mockQuestions[0].subject || 'Mathematics');
+    }
   }, [test]);
+
+  // Sync activeSubject when user navigates using Prev/Next or question palette
+  useEffect(() => {
+    if (questions[currentIdx]) {
+      setActiveSubject(questions[currentIdx].subject || 'Mathematics');
+    }
+  }, [currentIdx, questions]);
 
   // Exam Timer Countdown
   useEffect(() => {
@@ -197,49 +211,113 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
             </div>
           </div>
 
-          {/* Solutions list */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider font-mono">Question Analysis & Solutions</h3>
-            <div className="space-y-4">
-              {questions.map((q, idx) => {
-                const studentAns = selectedAnswers[idx] !== undefined ? selectedAnswers[idx] : -1;
-                const isCorrect = studentAns === q.correctOption;
+          {/* Subject-Wise Analysis Grid */}
+          <div className="space-y-3 pt-4 border-t border-white/5">
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider font-mono">Subject-Wise Performance Breakdown</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
+              {['Mathematics', 'Physics', 'Chemistry'].map(subj => {
+                const subjQuestions = questions.filter(q => q.subject?.toLowerCase() === subj.toLowerCase());
+                if (subjQuestions.length === 0) return null;
+                
+                let subjScore = 0;
+                let subjCorrect = 0;
+                let subjWrong = 0;
+                let subjSkipped = 0;
+                
+                subjQuestions.forEach(q => {
+                  const qIdx = questions.indexOf(q);
+                  const ans = selectedAnswers[qIdx] !== undefined ? selectedAnswers[qIdx] : -1;
+                  if (ans === -1) {
+                    subjSkipped++;
+                  } else if (ans === q.correctOption) {
+                    subjScore += q.marks || 4;
+                    subjCorrect++;
+                  } else {
+                    subjScore += q.negativeMarks || -1;
+                    subjWrong++;
+                  }
+                });
+                
+                const subjTotal = subjQuestions.reduce((sum, q) => sum + (q.marks || 4), 0);
+                const accuracy = (subjCorrect + subjWrong) > 0 ? ((subjCorrect / (subjCorrect + subjWrong)) * 100).toFixed(0) : 0;
+                
                 return (
-                  <div key={idx} className={`p-5 rounded-xl border font-mono text-xs ${isCorrect ? 'bg-emerald-950/10 border-emerald-900/40' : studentAns === -1 ? 'bg-white/[0.02] border-white/5' : 'bg-red-950/10 border-red-900/40'}`}>
-                    <div className="flex justify-between items-center mb-3">
-                      <span className="font-bold text-white">Question {idx + 1}</span>
-                      <span className={`text-[10px] font-bold uppercase ${isCorrect ? 'text-emerald-400' : studentAns === -1 ? 'text-gray-500' : 'text-red-400'}`}>
-                        {isCorrect ? 'Correct (+4)' : studentAns === -1 ? 'Skipped' : 'Incorrect (-1)'}
-                      </span>
+                  <div key={subj} className="bg-obsidian/60 border border-white/5 p-4 rounded-xl space-y-2">
+                    <span className="text-glow-blue text-xs font-bold text-electric uppercase block mb-1">{subj}</span>
+                    <div className="flex justify-between">
+                      <span className="text-gray-500">Score:</span>
+                      <span className="text-white font-bold">{subjScore} / {subjTotal}</span>
                     </div>
-
-                    <p className="text-platinum leading-relaxed mb-4">{q.questionText}</p>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
-                      {q.options.map((opt, oIdx) => (
-                        <div 
-                          key={oIdx}
-                          className={`p-2.5 rounded border text-[11px] ${
-                            oIdx === q.correctOption
-                              ? 'bg-emerald-500/10 border-emerald-500 text-emerald-400 font-bold'
-                              : oIdx === studentAns
-                                ? 'bg-red-500/10 border-red-500 text-red-400'
-                                : 'bg-obsidian/40 border-white/5 text-gray-500'
-                          }`}
-                        >
-                          {opt}
-                        </div>
-                      ))}
+                    <div className="flex justify-between">
+                      <span className="text-gray-500">Correct/Wrong:</span>
+                      <span className="text-emerald-400 font-bold">{subjCorrect} <span className="text-gray-500">/</span> <span className="text-red-400">{subjWrong}</span></span>
                     </div>
-
-                    <div className="mt-4 p-3.5 bg-obsidian/60 border border-white/5 rounded-lg text-gray-400 leading-relaxed text-[11px]">
-                      <span className="text-gold font-bold uppercase block mb-1">A.K. Sir Solution Strategy:</span>
-                      {q.explanation}
+                    <div className="flex justify-between">
+                      <span className="text-gray-500">Accuracy:</span>
+                      <span className="text-electric font-bold">{accuracy}%</span>
                     </div>
                   </div>
                 );
               })}
             </div>
+          </div>
+
+          {/* Solutions list grouped by subject */}
+          <div className="space-y-6">
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider font-mono">Question Analysis & Solutions</h3>
+            {['Mathematics', 'Physics', 'Chemistry'].map(subj => {
+              const subjQuestions = questions.filter(q => q.subject?.toLowerCase() === subj.toLowerCase());
+              if (subjQuestions.length === 0) return null;
+              
+              return (
+                <div key={subj} className="space-y-4 border-b border-white/5 pb-4 last:border-0 last:pb-0">
+                  <h4 className="text-glow-gold text-xs font-bold text-gold uppercase tracking-wider border-l-2 border-gold pl-2 font-mono">
+                    {subj} Section
+                  </h4>
+                  <div className="space-y-4">
+                    {subjQuestions.map(q => {
+                      const idx = questions.indexOf(q);
+                      const studentAns = selectedAnswers[idx] !== undefined ? selectedAnswers[idx] : -1;
+                      const isCorrect = studentAns === q.correctOption;
+                      return (
+                        <div key={idx} className={`p-5 rounded-xl border font-mono text-xs ${isCorrect ? 'bg-emerald-950/10 border-emerald-900/40' : studentAns === -1 ? 'bg-white/[0.02] border-white/5' : 'bg-red-950/10 border-red-900/40'}`}>
+                          <div className="flex justify-between items-center mb-3">
+                            <span className="font-bold text-white">Question {idx + 1}</span>
+                            <span className={`text-[10px] font-bold uppercase ${isCorrect ? 'text-emerald-400' : studentAns === -1 ? 'text-gray-500' : 'text-red-400'}`}>
+                              {isCorrect ? 'Correct (+4)' : studentAns === -1 ? 'Skipped' : 'Incorrect (-1)'}
+                            </span>
+                          </div>
+
+                          <p className="text-platinum leading-relaxed mb-4">{q.questionText}</p>
+
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
+                            {q.options.map((opt, oIdx) => (
+                              <div 
+                                key={oIdx}
+                                className={`p-2.5 rounded border text-[11px] ${
+                                  oIdx === q.correctOption
+                                    ? 'bg-emerald-500/10 border-emerald-500 text-emerald-400 font-bold'
+                                    : oIdx === studentAns
+                                      ? 'bg-red-500/10 border-red-500 text-red-400'
+                                      : 'bg-obsidian/40 border-white/5 text-gray-500'
+                                }`}
+                              >
+                                {opt}
+                              </div>
+                            ))}
+                          </div>
+
+                          <div className="mt-4 p-3.5 bg-obsidian/60 border border-white/5 rounded-lg text-gray-400 leading-relaxed text-[11px]">
+                            <span className="text-gold font-bold uppercase block mb-1">A.K. Sir Solution Strategy:</span>
+                            {q.explanation}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           <button
@@ -271,6 +349,38 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
           <span>TIME LEFT: {formatTimer(timeLeft)}</span>
         </div>
       </header>
+
+      {/* Subject Navigation Tabs */}
+      {(() => {
+        const availableSubjects = Array.from(new Set(questions.map(q => q.subject || 'Mathematics')));
+        if (availableSubjects.length <= 1) return null;
+        return (
+          <div className="bg-[#0e1015] border-b border-white/5 px-6 md:px-12 py-2.5 flex items-center gap-2 overflow-x-auto">
+            {availableSubjects.map(subj => {
+              const isActive = activeSubject?.toLowerCase() === subj.toLowerCase();
+              return (
+                <button
+                  key={subj}
+                  onClick={() => {
+                    setActiveSubject(subj);
+                    const firstIdx = questions.findIndex(q => (q.subject || 'Mathematics').toLowerCase() === subj.toLowerCase());
+                    if (firstIdx !== -1) {
+                      setCurrentIdx(firstIdx);
+                    }
+                  }}
+                  className={`px-4 py-1.5 rounded-lg text-xs font-bold uppercase transition-all border ${
+                    isActive
+                      ? 'bg-electric/10 border-electric text-electric shadow-[0_0_12px_rgba(6,182,212,0.15)] font-bold'
+                      : 'bg-cyberdark border-white/5 text-gray-400 hover:text-white'
+                  }`}
+                >
+                  {subj}
+                </button>
+              );
+            })}
+          </div>
+        );
+      })()}
 
       {/* Main split work-screen */}
       <main className="flex-1 grid grid-cols-1 lg:grid-cols-4 overflow-hidden">
@@ -359,10 +469,15 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
 
         {/* Right side: Question status palette map sidebar */}
         <div className="lg:col-span-1 border-t lg:border-t-0 lg:border-l border-white/5 bg-obsidian/50 p-6 space-y-6 overflow-y-auto">
-          <h4 className="text-xs font-bold text-white uppercase tracking-wider border-b border-white/5 pb-2">Question Palette</h4>
+          <h4 className="text-xs font-bold text-white uppercase tracking-wider border-b border-white/5 pb-2">
+            Question Palette {activeSubject ? `(${activeSubject})` : ''}
+          </h4>
           
           <div className="grid grid-cols-4 sm:grid-cols-5 gap-2">
-            {questions.map((_, idx) => {
+            {questions.map((q, idx) => {
+              const qSubj = q.subject || 'Mathematics';
+              if (activeSubject && qSubj.toLowerCase() !== activeSubject.toLowerCase()) return null;
+              
               const status = statusMap[idx];
               let btnClass = 'bg-cyberdark border-white/5 text-gray-400';
               if (idx === currentIdx) {

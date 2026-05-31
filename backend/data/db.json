@@ -1,0 +1,1469 @@
+{
+  "users": [
+    {
+      "id": "student1",
+      "name": "Rohan Sharma",
+      "email": "student@quantrex.com",
+      "phone": "9876543210",
+      "passwordHash": "$2a$08$jUdkKgEuHKDk3G55aAOqR.8o5UIkpP8ykoC2nr2ZYe7qagHqMB1ku",
+      "role": "student",
+      "classLevel": "12th Pass",
+      "targetExam": "JEE Advanced 2027",
+      "purchasedCourses": [
+        "course1"
+      ],
+      "dailyStreak": 12,
+      "lastActive": "2026-05-30T17:37:26.004Z",
+      "attendance": 98,
+      "isBanned": false,
+      "sessions": [
+        {
+          "sessionId": "sess_1",
+          "deviceFingerprint": "chrome-windows-fingerprint",
+          "ipAddress": "192.168.1.1",
+          "loginTime": "2026-05-30T17:37:26.005Z"
+        }
+      ]
+    },
+    {
+      "id": "admin1",
+      "name": "Ajay Kumar Saroj (A.K. Sir)",
+      "email": "admin@quantrex.com",
+      "phone": "9999999999",
+      "passwordHash": "$2a$08$YXASFMojWVrvuP1u8KO43OP8Xwu6tIxnMuE5f2NutFl8FZhqmy876",
+      "role": "admin",
+      "isBanned": false,
+      "sessions": []
+    }
+  ],
+  "courses": [
+    {
+      "id": "jee-mains",
+      "title": "JEE Main Mathematics Suite",
+      "description": "Complete syllabus course covering all 20 units of NTA JEE Main Mathematics. Includes notes, DPPs, cheat sheets, and time-based mock tests.",
+      "price": 0,
+      "originalPrice": 0,
+      "coverImage": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80",
+      "tag": "JEE Main",
+      "rating": 4.96,
+      "modules": []
+    },
+    {
+      "id": "jee-advanced",
+      "title": "Ultimate JEE Advanced Mathematics",
+      "description": "In-depth rigorous mathematics library for JEE Advanced aspirants. Complex problem solving, calculus modules, vectors, and rank boosting practice tests.",
+      "price": 0,
+      "originalPrice": 0,
+      "coverImage": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80",
+      "tag": "JEE Advanced",
+      "rating": 4.98,
+      "modules": []
+    },
+    {
+      "id": "mht-cet",
+      "title": "MHT-CET Mathematics Preparation",
+      "description": "Speed, tricks, and formula-focused mathematics syllabus for MHT-CET aspirants. Quick shortcut lectures and exam mock sheets.",
+      "price": 0,
+      "originalPrice": 0,
+      "coverImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+      "tag": "MHT-CET",
+      "rating": 4.85,
+      "modules": []
+    },
+    {
+      "id": "bitsat",
+      "title": "BITSAT Mathematics & Strategy",
+      "description": "Time-bound practice and speed mathematics for BITSAT. Solve mock tests, review quick tips and formulas with zero delay.",
+      "price": 0,
+      "originalPrice": 0,
+      "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&w=800&q=80",
+      "tag": "BITSAT",
+      "rating": 4.9,
+      "modules": []
+    },
+    {
+      "id": "nda",
+      "title": "NDA Mathematics Crack Course",
+      "description": "Complete guide for UPSC NDA mathematics paper. Features algebraic shortcuts, trig heights/distances, and year-wise PYQs.",
+      "price": 0,
+      "originalPrice": 0,
+      "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+      "tag": "NDA",
+      "rating": 4.92,
+      "modules": []
+    },
+    {
+      "id": "class-12",
+      "title": "Class 12th Board Mathematics",
+      "description": "Structured course covering relations, functions, inverse trigonometry, matrices, and complete calculus for Class 12th board exams.",
+      "price": 0,
+      "originalPrice": 0,
+      "coverImage": "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?auto=format&fit=crop&w=800&q=80",
+      "tag": "Class 12th Math",
+      "rating": 4.94,
+      "modules": []
+    },
+    {
+      "id": "class-11",
+      "title": "Class 11th Mathematics & Foundation",
+      "description": "Build strong fundamentals in algebra, trigonometry, and coordinate geometry. Designed to ease transition to competitive exams.",
+      "price": 0,
+      "originalPrice": 0,
+      "coverImage": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80",
+      "tag": "Class 11th Math",
+      "rating": 4.88,
+      "modules": []
+    },
+    {
+      "id": "class-9",
+      "title": "Class 9th Mathematics Foundation",
+      "description": "Introduction to advanced concepts, number systems, and polynomials. Lay the groundwork for JEE/NEET prep early.",
+      "price": 0,
+      "originalPrice": 0,
+      "coverImage": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80",
+      "tag": "Class 9th Math",
+      "rating": 4.82,
+      "modules": []
+    },
+    {
+      "id": "foundation-6-12",
+      "title": "Foundation Mathematics (Classes 6-12)",
+      "description": "Master standard arithmetic, integers, mensuration, and basic geometry. Perfect revision for classes 6th to 12th.",
+      "price": 0,
+      "originalPrice": 0,
+      "coverImage": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80",
+      "tag": "Foundation Math (6-12)",
+      "rating": 4.9,
+      "modules": []
+    }
+  ],
+  "orders": [],
+  "tests": [
+    {
+      "id": "test1",
+      "title": "JEE Main Full Syllabus Grand Mock Test 01",
+      "description": "JEE Main Pattern Test. 3 Sections: Math, Physics, Chemistry. Marking: +4 / -1.",
+      "durationMinutes": 180,
+      "questions": [
+        {
+          "id": "q1",
+          "questionText": "Find the limit of lim_{x -> 0} (cos(x))^(1 / x^2).",
+          "options": [
+            "e",
+            "e^(-1/2)",
+            "e^(1/2)",
+            "1"
+          ],
+          "correctOption": 1,
+          "marks": 4,
+          "negativeMarks": -1,
+          "subject": "Mathematics",
+          "explanation": "Take logs: ln(y) = (1/x^2) * ln(cos(x)). Expand ln(cos(x)) = ln(1 - x^2/2 + ...) = -x^2/2. So ln(y) -> -1/2. Thus y -> e^(-1/2)."
+        },
+        {
+          "id": "q2",
+          "questionText": "A particle of mass m moves under the action of a central force. If the potential energy is U(r) = kr^2, find the frequency of small radial oscillations.",
+          "options": [
+            "sqrt(k/m)",
+            "sqrt(2k/m)",
+            "2*sqrt(k/m)",
+            "sqrt(4k/m)"
+          ],
+          "correctOption": 3,
+          "marks": 4,
+          "negativeMarks": -1,
+          "subject": "Physics",
+          "explanation": "The effective potential energy is U_eff = L^2 / (2mr^2) + kr^2. Setting dU_eff/dr = 0 gives equilibrium. Setting d^2U_eff/dr^2 gives the oscillation frequency omega = sqrt(4k/m)."
+        },
+        {
+          "id": "q3",
+          "questionText": "Identify the correct order of acidic strength for the following oxyacids of chlorine:",
+          "options": [
+            "HClO < HClO2 < HClO3 < HClO4",
+            "HClO4 < HClO3 < HClO2 < HClO",
+            "HClO3 < HClO4 < HClO2 < HClO",
+            "HClO2 < HClO < HClO3 < HClO4"
+          ],
+          "correctOption": 0,
+          "marks": 4,
+          "negativeMarks": -1,
+          "subject": "Chemistry",
+          "explanation": "Acidic strength increases with the oxidation state of the central atom (Cl): HClO (+1), HClO2 (+3), HClO3 (+5), HClO4 (+7). Higher oxidation states stabilize the conjugate base through resonance."
+        }
+      ]
+    }
+  ],
+  "results": [],
+  "notifications": [
+    {
+      "id": "n1",
+      "title": "Live Session Today",
+      "message": "Calculus Doubt Clearing Session by A.K. Sir at 6:00 PM today. Do not miss it!",
+      "type": "live-class",
+      "createdAt": "2026-05-30T17:37:26.048Z"
+    },
+    {
+      "id": "n2",
+      "title": "New DPP Uploaded",
+      "message": "DPP-02 for Limits has been uploaded under differential calculus module.",
+      "type": "new-content",
+      "createdAt": "2026-05-30T17:37:26.048Z"
+    }
+  ],
+  "piracyAlerts": [],
+  "syllabus": {
+    "jee-mains": {
+      "label": "JEE Main",
+      "subjects": {
+        "mathematics": {
+          "label": "Mathematics",
+          "chapters": [
+            {
+              "id": "jm_ch1",
+              "title": "Sets, Relations and Functions",
+              "topics": [
+                {
+                  "id": "jm_ch1_t1",
+                  "title": "Representation of Sets & Venn Diagrams"
+                },
+                {
+                  "id": "jm_ch1_t2",
+                  "title": "Types of Relations & Equivalence Relations"
+                },
+                {
+                  "id": "jm_ch1_t3",
+                  "title": "Domain, Range & Types of Functions"
+                }
+              ],
+              "videos": [
+                {
+                  "id": "jm_ch1_v1",
+                  "title": "1.1 Introduction to Set Theory & Venn Diagrams",
+                  "url": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+                  "duration": "18:45",
+                  "downloadBlocked": true,
+                  "isLocked": false,
+                  "isFree": true,
+                  "isVisible": true
+                },
+                {
+                  "id": "jm_ch1_v2",
+                  "title": "1.2 Cartesian Product & Types of Relations",
+                  "url": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+                  "duration": "24:10",
+                  "downloadBlocked": true,
+                  "isLocked": true,
+                  "isFree": false,
+                  "isVisible": true
+                }
+              ],
+              "pdfs": [
+                {
+                  "id": "jm_ch1_p1",
+                  "title": "Sets & Relations Lecture Handout",
+                  "url": "/pdfs/sets_handout.pdf",
+                  "size": "1.8 MB",
+                  "downloadBlocked": true,
+                  "isLocked": false,
+                  "isFree": true,
+                  "isVisible": true
+                },
+                {
+                  "id": "jm_ch1_p2",
+                  "title": "DPP-01: Equivalance Relations & Mappings",
+                  "url": "/pdfs/sets_dpp.pdf",
+                  "size": "2.1 MB",
+                  "downloadBlocked": true,
+                  "isLocked": true,
+                  "isFree": false,
+                  "isVisible": true
+                }
+              ],
+              "formulas": [
+                {
+                  "id": "jm_ch1_f1",
+                  "title": "Sets Laws & Relation Properties Cheat Sheet",
+                  "content": "De Morgan's Laws:\n1. (A U B)' = A' n B'\n2. (A n B)' = A' U B'\n\nNumber of elements:\nn(A U B) = n(A) + n(B) - n(A n B)\n\nRelation R on Set A is Equivalence if:\n- Reflexive: (a, a) in R\n- Symmetric: (a, b) in R => (b, a) in R\n- Transitive: (a, b), (b, c) in R => (a, c) in R"
+                }
+              ],
+              "pyqs": [
+                {
+                  "id": "jm_ch1_q1",
+                  "title": "JEE Main 2025: Set Theory PYQ Paper",
+                  "year": "2025",
+                  "url": "/pdfs/pyq_sets_2025.pdf"
+                }
+              ],
+              "mockTests": [
+                {
+                  "id": "jm_ch1_t1",
+                  "title": "Chapter Test: Sets & Relations",
+                  "durationMinutes": 15,
+                  "type": "structured",
+                  "questions": [
+                    {
+                      "id": "jm_ch1_q_mcq1",
+                      "questionText": "If Set A has 3 elements and Set B has 4 elements, find the number of injection (one-one) functions from A to B.",
+                      "options": [
+                        "12",
+                        "24",
+                        "64",
+                        "81"
+                      ],
+                      "correctOption": 1,
+                      "marks": 4,
+                      "negativeMarks": -1,
+                      "subject": "Mathematics",
+                      "explanation": "The number of one-one functions from Set A (size m) to Set B (size n) is nPm. Here m=3, n=4. 4P3 = 4 * 3 * 2 = 24."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "jm_ch2",
+              "title": "Complex Numbers & Quadratic Equations",
+              "topics": [
+                {
+                  "id": "jm_ch2_t1",
+                  "title": "Algebra of Complex Numbers & Modulus/Argument"
+                },
+                {
+                  "id": "jm_ch2_t2",
+                  "title": "Roots of Quadratic Equations & Nature of Roots"
+                },
+                {
+                  "id": "jm_ch2_t3",
+                  "title": "Formation of Quadratic Equations"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch3",
+              "title": "Matrices & Determinants",
+              "topics": [
+                {
+                  "id": "jm_ch3_t1",
+                  "title": "Types of Matrices & Operations"
+                },
+                {
+                  "id": "jm_ch3_t2",
+                  "title": "Properties of Determinants & Cramer's Rule"
+                },
+                {
+                  "id": "jm_ch3_t3",
+                  "title": "Adjoint and Inverse of a Matrix"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch4",
+              "title": "Permutations & Combinations",
+              "topics": [
+                {
+                  "id": "jm_ch4_t1",
+                  "title": "Fundamental Principle of Counting"
+                },
+                {
+                  "id": "jm_ch4_t2",
+                  "title": "Permutations of n Objects"
+                },
+                {
+                  "id": "jm_ch4_t3",
+                  "title": "Combinations & Selection Problems"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch5",
+              "title": "Binomial Theorem",
+              "topics": [
+                {
+                  "id": "jm_ch5_t1",
+                  "title": "Binomial Expansion for Positive Integral Index"
+                },
+                {
+                  "id": "jm_ch5_t2",
+                  "title": "General and Middle Terms"
+                },
+                {
+                  "id": "jm_ch5_t3",
+                  "title": "Properties of Binomial Coefficients"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch6",
+              "title": "Sequence & Series",
+              "topics": [
+                {
+                  "id": "jm_ch6_t1",
+                  "title": "Arithmetic Progression (AP) & Properties"
+                },
+                {
+                  "id": "jm_ch6_t2",
+                  "title": "Geometric Progression (GP) & Infinite GP Sum"
+                },
+                {
+                  "id": "jm_ch6_t3",
+                  "title": "Arithmetic-Geometric Progression (AGP)"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch7",
+              "title": "Mathematical Induction",
+              "topics": [
+                {
+                  "id": "jm_ch7_t1",
+                  "title": "Principle of Mathematical Induction & Application"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch8",
+              "title": "Trigonometric Ratios, Identities & Equations",
+              "topics": [
+                {
+                  "id": "jm_ch8_t1",
+                  "title": "Trigonometric Ratios and Identities"
+                },
+                {
+                  "id": "jm_ch8_t2",
+                  "title": "Trigonometric Equations"
+                },
+                {
+                  "id": "jm_ch8_t3",
+                  "title": "Properties of Triangles"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch9",
+              "title": "Inverse Trigonometric Functions",
+              "topics": [
+                {
+                  "id": "jm_ch9_t1",
+                  "title": "Domain, Range & Principal Value Branches"
+                },
+                {
+                  "id": "jm_ch9_t2",
+                  "title": "Graphs of Inverse Trigonometric Functions"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch10",
+              "title": "Straight Lines & Pair of Straight Lines",
+              "topics": [
+                {
+                  "id": "jm_ch10_t1",
+                  "title": "Slope of a Line & Different Forms of Equations"
+                },
+                {
+                  "id": "jm_ch10_t2",
+                  "title": "Distance of a Point from a Line"
+                },
+                {
+                  "id": "jm_ch10_t3",
+                  "title": "Pair of Straight Lines & Angle Between Them"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch11",
+              "title": "Circle",
+              "topics": [
+                {
+                  "id": "jm_ch11_t1",
+                  "title": "Standard and General Equation of a Circle"
+                },
+                {
+                  "id": "jm_ch11_t2",
+                  "title": "Tangents, Normals & Chord of Contact"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch12",
+              "title": "Conic Sections",
+              "topics": [
+                {
+                  "id": "jm_ch12_t1",
+                  "title": "Parabola (Standard Equations & Properties)"
+                },
+                {
+                  "id": "jm_ch12_t2",
+                  "title": "Ellipse (Standard Equations & Properties)"
+                },
+                {
+                  "id": "jm_ch12_t3",
+                  "title": "Hyperbola (Standard Equations & Properties)"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch13",
+              "title": "Limits, Continuity & Differentiability",
+              "topics": [
+                {
+                  "id": "jm_ch13_t1",
+                  "title": "Limits (Indeterminate Forms & Expansion Method)"
+                },
+                {
+                  "id": "jm_ch13_t2",
+                  "title": "Continuity of Functions"
+                },
+                {
+                  "id": "jm_ch13_t3",
+                  "title": "Differentiability & Derivatives"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch14",
+              "title": "Application of Derivatives",
+              "topics": [
+                {
+                  "id": "jm_ch14_t1",
+                  "title": "Rate of Change, Tangents & Normals"
+                },
+                {
+                  "id": "jm_ch14_t2",
+                  "title": "Monotonicity & Maxima/Minima"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch15",
+              "title": "Integral Calculus",
+              "topics": [
+                {
+                  "id": "jm_ch15_t1",
+                  "title": "Indefinite Integration & Substitution"
+                },
+                {
+                  "id": "jm_ch15_t2",
+                  "title": "Definite Integration & Properties"
+                },
+                {
+                  "id": "jm_ch15_t3",
+                  "title": "Area Under Curve"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch16",
+              "title": "Differential Equations",
+              "topics": [
+                {
+                  "id": "jm_ch16_t1",
+                  "title": "Order, Degree & Formulation of Differential Equations"
+                },
+                {
+                  "id": "jm_ch16_t2",
+                  "title": "Homogeneous & Linear Differential Equations"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch17",
+              "title": "Vector Algebra",
+              "topics": [
+                {
+                  "id": "jm_ch17_t1",
+                  "title": "Dot Product & Cross Product"
+                },
+                {
+                  "id": "jm_ch17_t2",
+                  "title": "Scalar Triple Product & Vector Triple Product"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch18",
+              "title": "Three Dimensional Geometry",
+              "topics": [
+                {
+                  "id": "jm_ch18_t1",
+                  "title": "Direction Cosines and Direction Ratios"
+                },
+                {
+                  "id": "jm_ch18_t2",
+                  "title": "Equation of Line & Plane in 3D Space"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch19",
+              "title": "Statistics",
+              "topics": [
+                {
+                  "id": "jm_ch19_t1",
+                  "title": "Measures of Dispersion (Variance & Standard Deviation)"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "jm_ch20",
+              "title": "Probability",
+              "topics": [
+                {
+                  "id": "jm_ch20_t1",
+                  "title": "Conditional Probability & Bayes Theorem"
+                },
+                {
+                  "id": "jm_ch20_t2",
+                  "title": "Bernoulli Trials & Binomial Distribution"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            }
+          ]
+        },
+        "physics": {
+          "label": "Physics",
+          "chapters": []
+        },
+        "chemistry": {
+          "label": "Chemistry",
+          "chapters": []
+        }
+      }
+    },
+    "jee-advanced": {
+      "label": "JEE Advanced",
+      "subjects": {
+        "mathematics": {
+          "label": "Mathematics",
+          "chapters": [
+            {
+              "id": "ja_ch1",
+              "title": "Sets, Relations and Functions",
+              "topics": [
+                {
+                  "id": "ja_ch1_t1",
+                  "title": "Representation of Sets & Venn Diagrams"
+                },
+                {
+                  "id": "ja_ch1_t2",
+                  "title": "Types of Relations & Equivalence Relations"
+                },
+                {
+                  "id": "ja_ch1_t3",
+                  "title": "Domain, Range & Types of Functions"
+                }
+              ],
+              "videos": [
+                {
+                  "id": "ja_ch1_v1",
+                  "title": "1.1 Introduction to Set Theory & Venn Diagrams",
+                  "url": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+                  "duration": "18:45",
+                  "downloadBlocked": true,
+                  "isLocked": false,
+                  "isFree": true,
+                  "isVisible": true
+                },
+                {
+                  "id": "ja_ch1_v2",
+                  "title": "1.2 Cartesian Product & Types of Relations",
+                  "url": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+                  "duration": "24:10",
+                  "downloadBlocked": true,
+                  "isLocked": true,
+                  "isFree": false,
+                  "isVisible": true
+                }
+              ],
+              "pdfs": [
+                {
+                  "id": "ja_ch1_p1",
+                  "title": "Sets & Relations Lecture Handout",
+                  "url": "/pdfs/sets_handout.pdf",
+                  "size": "1.8 MB",
+                  "downloadBlocked": true,
+                  "isLocked": false,
+                  "isFree": true,
+                  "isVisible": true
+                },
+                {
+                  "id": "ja_ch1_p2",
+                  "title": "DPP-01: Equivalance Relations & Mappings",
+                  "url": "/pdfs/sets_dpp.pdf",
+                  "size": "2.1 MB",
+                  "downloadBlocked": true,
+                  "isLocked": true,
+                  "isFree": false,
+                  "isVisible": true
+                }
+              ],
+              "formulas": [
+                {
+                  "id": "ja_ch1_f1",
+                  "title": "Sets Laws & Relation Properties Cheat Sheet",
+                  "content": "De Morgan's Laws:\n1. (A U B)' = A' n B'\n2. (A n B)' = A' U B'\n\nNumber of elements:\nn(A U B) = n(A) + n(B) - n(A n B)\n\nRelation R on Set A is Equivalence if:\n- Reflexive: (a, a) in R\n- Symmetric: (a, b) in R => (b, a) in R\n- Transitive: (a, b), (b, c) in R => (a, c) in R"
+                }
+              ],
+              "pyqs": [
+                {
+                  "id": "ja_ch1_q1",
+                  "title": "JEE Main 2025: Set Theory PYQ Paper",
+                  "year": "2025",
+                  "url": "/pdfs/pyq_sets_2025.pdf"
+                }
+              ],
+              "mockTests": [
+                {
+                  "id": "ja_ch1_t1",
+                  "title": "Chapter Test: Sets & Relations",
+                  "durationMinutes": 15,
+                  "type": "structured",
+                  "questions": [
+                    {
+                      "id": "ja_ch1_q_mcq1",
+                      "questionText": "If Set A has 3 elements and Set B has 4 elements, find the number of injection (one-one) functions from A to B.",
+                      "options": [
+                        "12",
+                        "24",
+                        "64",
+                        "81"
+                      ],
+                      "correctOption": 1,
+                      "marks": 4,
+                      "negativeMarks": -1,
+                      "subject": "Mathematics",
+                      "explanation": "The number of one-one functions from Set A (size m) to Set B (size n) is nPm. Here m=3, n=4. 4P3 = 4 * 3 * 2 = 24."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ja_ch2",
+              "title": "Complex Numbers & Quadratic Equations",
+              "topics": [
+                {
+                  "id": "ja_ch2_t1",
+                  "title": "Algebra of Complex Numbers & Modulus/Argument"
+                },
+                {
+                  "id": "ja_ch2_t2",
+                  "title": "Roots of Quadratic Equations & Nature of Roots"
+                },
+                {
+                  "id": "ja_ch2_t3",
+                  "title": "Formation of Quadratic Equations"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch3",
+              "title": "Matrices & Determinants",
+              "topics": [
+                {
+                  "id": "ja_ch3_t1",
+                  "title": "Types of Matrices & Operations"
+                },
+                {
+                  "id": "ja_ch3_t2",
+                  "title": "Properties of Determinants & Cramer's Rule"
+                },
+                {
+                  "id": "ja_ch3_t3",
+                  "title": "Adjoint and Inverse of a Matrix"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch4",
+              "title": "Permutations & Combinations",
+              "topics": [
+                {
+                  "id": "ja_ch4_t1",
+                  "title": "Fundamental Principle of Counting"
+                },
+                {
+                  "id": "ja_ch4_t2",
+                  "title": "Permutations of n Objects"
+                },
+                {
+                  "id": "ja_ch4_t3",
+                  "title": "Combinations & Selection Problems"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch5",
+              "title": "Binomial Theorem",
+              "topics": [
+                {
+                  "id": "ja_ch5_t1",
+                  "title": "Binomial Expansion for Positive Integral Index"
+                },
+                {
+                  "id": "ja_ch5_t2",
+                  "title": "General and Middle Terms"
+                },
+                {
+                  "id": "ja_ch5_t3",
+                  "title": "Properties of Binomial Coefficients"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch6",
+              "title": "Sequence & Series",
+              "topics": [
+                {
+                  "id": "ja_ch6_t1",
+                  "title": "Arithmetic Progression (AP) & Properties"
+                },
+                {
+                  "id": "ja_ch6_t2",
+                  "title": "Geometric Progression (GP) & Infinite GP Sum"
+                },
+                {
+                  "id": "ja_ch6_t3",
+                  "title": "Arithmetic-Geometric Progression (AGP)"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch7",
+              "title": "Mathematical Induction",
+              "topics": [
+                {
+                  "id": "ja_ch7_t1",
+                  "title": "Principle of Mathematical Induction & Application"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch8",
+              "title": "Trigonometric Ratios, Identities & Equations",
+              "topics": [
+                {
+                  "id": "ja_ch8_t1",
+                  "title": "Trigonometric Ratios and Identities"
+                },
+                {
+                  "id": "ja_ch8_t2",
+                  "title": "Trigonometric Equations"
+                },
+                {
+                  "id": "ja_ch8_t3",
+                  "title": "Properties of Triangles"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch9",
+              "title": "Inverse Trigonometric Functions",
+              "topics": [
+                {
+                  "id": "ja_ch9_t1",
+                  "title": "Domain, Range & Principal Value Branches"
+                },
+                {
+                  "id": "ja_ch9_t2",
+                  "title": "Graphs of Inverse Trigonometric Functions"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch10",
+              "title": "Straight Lines & Pair of Straight Lines",
+              "topics": [
+                {
+                  "id": "ja_ch10_t1",
+                  "title": "Slope of a Line & Different Forms of Equations"
+                },
+                {
+                  "id": "ja_ch10_t2",
+                  "title": "Distance of a Point from a Line"
+                },
+                {
+                  "id": "ja_ch10_t3",
+                  "title": "Pair of Straight Lines & Angle Between Them"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch11",
+              "title": "Circle",
+              "topics": [
+                {
+                  "id": "ja_ch11_t1",
+                  "title": "Standard and General Equation of a Circle"
+                },
+                {
+                  "id": "ja_ch11_t2",
+                  "title": "Tangents, Normals & Chord of Contact"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch12",
+              "title": "Conic Sections",
+              "topics": [
+                {
+                  "id": "ja_ch12_t1",
+                  "title": "Parabola (Standard Equations & Properties)"
+                },
+                {
+                  "id": "ja_ch12_t2",
+                  "title": "Ellipse (Standard Equations & Properties)"
+                },
+                {
+                  "id": "ja_ch12_t3",
+                  "title": "Hyperbola (Standard Equations & Properties)"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch13",
+              "title": "Limits, Continuity & Differentiability",
+              "topics": [
+                {
+                  "id": "ja_ch13_t1",
+                  "title": "Limits (Indeterminate Forms & Expansion Method)"
+                },
+                {
+                  "id": "ja_ch13_t2",
+                  "title": "Continuity of Functions"
+                },
+                {
+                  "id": "ja_ch13_t3",
+                  "title": "Differentiability & Derivatives"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch14",
+              "title": "Application of Derivatives",
+              "topics": [
+                {
+                  "id": "ja_ch14_t1",
+                  "title": "Rate of Change, Tangents & Normals"
+                },
+                {
+                  "id": "ja_ch14_t2",
+                  "title": "Monotonicity & Maxima/Minima"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch15",
+              "title": "Integral Calculus",
+              "topics": [
+                {
+                  "id": "ja_ch15_t1",
+                  "title": "Indefinite Integration & Substitution"
+                },
+                {
+                  "id": "ja_ch15_t2",
+                  "title": "Definite Integration & Properties"
+                },
+                {
+                  "id": "ja_ch15_t3",
+                  "title": "Area Under Curve"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch16",
+              "title": "Differential Equations",
+              "topics": [
+                {
+                  "id": "ja_ch16_t1",
+                  "title": "Order, Degree & Formulation of Differential Equations"
+                },
+                {
+                  "id": "ja_ch16_t2",
+                  "title": "Homogeneous & Linear Differential Equations"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch17",
+              "title": "Vector Algebra",
+              "topics": [
+                {
+                  "id": "ja_ch17_t1",
+                  "title": "Dot Product & Cross Product"
+                },
+                {
+                  "id": "ja_ch17_t2",
+                  "title": "Scalar Triple Product & Vector Triple Product"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch18",
+              "title": "Three Dimensional Geometry",
+              "topics": [
+                {
+                  "id": "ja_ch18_t1",
+                  "title": "Direction Cosines and Direction Ratios"
+                },
+                {
+                  "id": "ja_ch18_t2",
+                  "title": "Equation of Line & Plane in 3D Space"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch19",
+              "title": "Statistics",
+              "topics": [
+                {
+                  "id": "ja_ch19_t1",
+                  "title": "Measures of Dispersion (Variance & Standard Deviation)"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            },
+            {
+              "id": "ja_ch20",
+              "title": "Probability",
+              "topics": [
+                {
+                  "id": "ja_ch20_t1",
+                  "title": "Conditional Probability & Bayes Theorem"
+                },
+                {
+                  "id": "ja_ch20_t2",
+                  "title": "Bernoulli Trials & Binomial Distribution"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            }
+          ]
+        },
+        "physics": {
+          "label": "Physics",
+          "chapters": []
+        },
+        "chemistry": {
+          "label": "Chemistry",
+          "chapters": []
+        }
+      }
+    },
+    "mht-cet": {
+      "label": "MHT-CET",
+      "subjects": {
+        "mathematics": {
+          "label": "Mathematics",
+          "chapters": [
+            {
+              "id": "mc_ch1",
+              "title": "Trigonometric Functions",
+              "topics": [
+                {
+                  "id": "mc_ch1_t1",
+                  "title": "Principal & General Solutions"
+                },
+                {
+                  "id": "mc_ch1_t2",
+                  "title": "Inverse Trigonometric Functions"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            }
+          ]
+        },
+        "physics": {
+          "label": "Physics",
+          "chapters": []
+        },
+        "chemistry": {
+          "label": "Chemistry",
+          "chapters": []
+        }
+      }
+    },
+    "bitsat": {
+      "label": "BITSAT",
+      "subjects": {
+        "mathematics": {
+          "label": "Mathematics",
+          "chapters": [
+            {
+              "id": "bs_ch1",
+              "title": "Complex Numbers & Quadratics",
+              "topics": [
+                {
+                  "id": "bs_ch1_t1",
+                  "title": "Algebra of Complex Numbers"
+                },
+                {
+                  "id": "bs_ch1_t2",
+                  "title": "Roots of Quadratic Equations"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            }
+          ]
+        },
+        "physics": {
+          "label": "Physics",
+          "chapters": []
+        },
+        "chemistry": {
+          "label": "Chemistry",
+          "chapters": []
+        }
+      }
+    },
+    "nda": {
+      "label": "NDA",
+      "subjects": {
+        "mathematics": {
+          "label": "Mathematics",
+          "chapters": [
+            {
+              "id": "nd_ch1",
+              "title": "Algebra & Trigonometry (NDA Spec)",
+              "topics": [
+                {
+                  "id": "nd_ch1_t1",
+                  "title": "Sequences and Series"
+                },
+                {
+                  "id": "nd_ch1_t2",
+                  "title": "Height and Distance Problems"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            }
+          ]
+        },
+        "physics": {
+          "label": "Physics",
+          "chapters": []
+        },
+        "chemistry": {
+          "label": "Chemistry",
+          "chapters": []
+        }
+      }
+    },
+    "class-9": {
+      "label": "Class 9 Mathematics",
+      "subjects": {
+        "mathematics": {
+          "label": "Mathematics",
+          "chapters": [
+            {
+              "id": "c9_ch1",
+              "title": "Number Systems",
+              "topics": [
+                {
+                  "id": "c9_ch1_t1",
+                  "title": "Rational & Irrational Numbers"
+                },
+                {
+                  "id": "c9_ch1_t2",
+                  "title": "Laws of Exponents for Real Numbers"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            }
+          ]
+        }
+      }
+    },
+    "class-11": {
+      "label": "Class 11 Mathematics",
+      "subjects": {
+        "mathematics": {
+          "label": "Mathematics",
+          "chapters": [
+            {
+              "id": "c11_ch1",
+              "title": "Relations & Functions",
+              "topics": [
+                {
+                  "id": "c11_ch1_t1",
+                  "title": "Ordered Pairs & Cartesian Products"
+                },
+                {
+                  "id": "c11_ch1_t2",
+                  "title": "Domain, Codomain & Range"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            }
+          ]
+        }
+      }
+    },
+    "class-12": {
+      "label": "Class 12 Mathematics",
+      "subjects": {
+        "mathematics": {
+          "label": "Mathematics",
+          "chapters": [
+            {
+              "id": "c12_ch1",
+              "title": "Relations and Functions",
+              "topics": [
+                {
+                  "id": "c12_ch1_t1",
+                  "title": "Types of Relations (Reflexive, Symmetric, Transitive)"
+                },
+                {
+                  "id": "c12_ch1_t2",
+                  "title": "One-one and Onto Functions (Bijective)"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            }
+          ]
+        }
+      }
+    },
+    "foundation-6-12": {
+      "label": "Foundation Mathematics (Classes 6-12)",
+      "subjects": {
+        "mathematics": {
+          "label": "Mathematics",
+          "chapters": [
+            {
+              "id": "fd_ch1",
+              "title": "Class 6 Foundation: Numbers & Integers",
+              "topics": [
+                {
+                  "id": "fd_ch1_t1",
+                  "title": "Knowing Our Numbers & Whole Numbers"
+                },
+                {
+                  "id": "fd_ch1_t2",
+                  "title": "Integers & Basic Arithmetic Rules"
+                }
+              ],
+              "videos": [],
+              "pdfs": [],
+              "formulas": [],
+              "pyqs": [],
+              "mockTests": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}

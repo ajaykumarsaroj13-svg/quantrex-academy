@@ -1,0 +1,1994 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m1kb56ut",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>For a positive integer $n$, find the value of $(1-i)^n\\left(1-\\frac{1}{i}\\right)^n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Given expression }=(1-i)^n\\left(1-\\frac{1}{i}\\right)^n \\\\\n& =(1-i)^n(i-1)^n \\cdot i^{-n}=(1-i)^n(1-i)^n(-1)^n \\cdot i^{-n} \\\\\n& =\\left[(1-i)^2\\right]^n(-1)^n \\cdot i^{-n}=\\left(1+i^2-2 i\\right)^n(-1)^n i^{-n} \\\\\n& {\\left[\\because i^2=-1\\right]} \\\\\n& =(1-1-2 i)^n(-1)^n i^{-n}=(-2)^n \\cdot i^n(-1)^n i^{-n} \\\\\n& =(-1)^{2 n} \\cdot 2^n=2^n\n\\end{aligned}\n$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7ktz",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Evaluate $\\sum_\\limits{n=1}^{13}\\left(i^n+i^{n+1}\\right)$, where $n \\in N$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $\\sum_\\limits{n=1}^{13}\\left(i^n+i^{n+1}\\right), n \\in N$</p>\n<p>$$\\begin{aligned}\n= & \\left(i+i^2+i^3+i^4+i^5+i^6+i^7+i^8+i^9+i^{10}+i^{11}+i^{12}+i^{13}\\right) \\\\\n& \\quad+\\left(i^2+i^3+i^4+i^5+i^6+i^7+i^8+i^9+i^{10}+i^{11}+i^{12}+i^{13}+i^{14}\\right) \\\\\n= & \\left(i+2 i^2+2 i^3+2 i^4+2 i^5+2 i^6+2 i^7+2 i^8+2 i^9+2 i^{10}+2 i^{11}+2 i^{12}+2 i^{13}+i^{14}\\right) \\\\\n= & i-2-2 i+2+2 i+2\\left(i^4\\right) i^2+2(i)^4 i^3+2\\left(i^2\\right)^4+2\\left(i^2\\right)^4 i+2\\left(i^2\\right)^5 \\\\\n& +2\\left(i^2\\right)^5 \\cdot i+2\\left(i^2\\right)^6+2\\left(i^2\\right)^6 \\cdot i+\\left(i^2\\right)^7 \\\\\n= & i-2-2 i+2+2 i-2-2 i+2+2 i-2-2 i+2+2 i-1-1+i\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Alternate Method }\\\\\n&\\begin{aligned}\n& \\sum_{n-1}^{13}\\left(i^n+i^{n+1}\\right), n \\in N=\\sum_{n-1}^{13} i^n(1+i) \\\\\n& \\quad=(1+i)\\left[i+i^2+i^3+i^4+i^5+i^6+i^7+i^8+i^9+i^{10}+i^{11}+i^{12}+i^{13}\\right] \\\\\n& =(1+i)\\left[i^{13}\\right] \\quad[\\because i^n+i^{n+1}+i^{n+2}+i^{n+3}=0 \\text {, where } n \\in N i . e ., \\sum_{n=1}^{12} i^n=0 \\\\\n& =(1+i) i \\quad [\\because (i^4)^3.i=i]\\\\\n& =\\left(i^2+i\\right)=i-1\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6ha7",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left(\\frac{1+i}{1-i}\\right)^3-\\left(\\frac{1-i}{1+i}\\right)^3=x+i y$, then find $(x, y)$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $\\left(\\frac{1+i}{1-i}\\right)^3-\\left(\\frac{1-i}{1+i}\\right)^3=x+i y\\quad \\text{... (i)}$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad\\left(\\frac{1+i}{1-i}\\right)^3 & =\\frac{1+i^3+3 i(1+i)}{1-i^3-3 i(1-i)}=\\frac{1-i+3 i+3 i^2}{1+i-3 i+3 i^2} \\\\\n& =\\frac{2 i-2}{-2 i-2}=\\frac{i-1}{-i-1}=\\frac{1-i}{1+i} \\\\\n& =\\frac{(1-i)}{(1+i)} \\frac{(1-i)}{(1-i)}=\\frac{1+i^2-2 i}{1+1}=\\frac{1-1-2 i}{2} \\\\\n\\Rightarrow \\quad\\left(\\frac{1+i}{1-i}\\right)^3 & =-i\\quad \\text{... (ii)}\n\\end{aligned}$$</p>\n<p>Similarly, $\\quad\\left(\\frac{1-i}{1+i}\\right)^3=\\frac{-1}{i}=\\frac{i^2}{i}=i\\quad \\text{... (iii)}$</p>\n<p>Using Eqs. (ii) and (iii) in Eq. (i), we get</p>\n<p>$$\\begin{aligned}\n-i-i & =x+i y \\\\\n-2 i & =x+i y\n\\end{aligned}$$</p>\n<p>On comparing real and imaginary part of complex number, we get</p>\n<p>$x=0$ and $y=-2$</p>\n<p>So, $$(x, y)=(0,-2)$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6nji",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\frac{(1+i)^2}{2-i}=x+i y$, then find the value of $x+y$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given that, } & \\frac{(1+i)^2}{2-i}=x+i y \\\\\n\\Rightarrow & \\frac{\\left(1+i^2+2 i\\right)}{2-i}=x+i y \\Rightarrow \\frac{2 i}{2-i}=x+i y \\\\\n\\Rightarrow & \\frac{2 i(2+i)}{(2-i)(2+i)}=x+i y \\Rightarrow \\frac{4 i+2 i^2}{4-i^2}=x+i y\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\Rightarrow \\quad \\frac{4 i-2}{4+1}=x+i y \\Rightarrow \\frac{-2}{5}+\\frac{4 i}{5}=x+i y\\\\\n&\\text { On comparing both sides, we get }\\\\\n&x=-2 / 5 \\Rightarrow y=4 / 5\\\\\n&\\Rightarrow \\quad x+y=\\frac{-2}{5}+\\frac{4}{5}=2 / 5\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb95fd",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left(\\frac{1-i}{1+i}\\right)^{100}=a+i b$, then find $(a, b)$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Given that, }\\left(\\frac{1-i}{1+i}\\right)^{100}=a+i b \\\\\n& \\Rightarrow \\quad\\left[\\frac{(1-i)}{(1+i)} \\cdot \\frac{(1-i)}{(1-i)}\\right]^{100}=a+i b \\Rightarrow\\left(\\frac{1+i^2-2 i}{1-i^2}\\right)^{100}=a+i b \\\\\n& \\Rightarrow \\quad\\left(\\frac{-2 i}{2}\\right)^{100}=a+i b \\quad [\\because i^2=-1]\\\\\n& \\Rightarrow \\quad\\left(i^4\\right)^{25}=a+i b \\Rightarrow 1=a+i b \\\\\n& \\text { Then, } \\\\\n& a=1 \\text { and } b=0 \\quad [\\because i^4=1]\\\\\n& \\therefore \\quad(a, b)=(1,0)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb56wm",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $a=\\cos \\theta+i \\sin \\theta$, then find the value of $\\frac{1+a}{1-a}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $\\quad a=\\cos \\theta+i \\sin \\theta$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{1+a}{1-a} & =\\frac{1+\\cos \\theta+i \\sin \\theta}{1-\\cos \\theta-i \\sin \\theta} \\\\\n& =\\frac{1+2 \\cos ^2 \\theta / 2-1+2 i \\sin \\theta / 2 \\cdot \\cos \\theta / 2}{1-1+2 \\sin ^2 \\theta / 2-2 i \\sin \\theta / 2 \\cdot \\cos \\theta / 2}=\\frac{2 \\cos \\theta / 2(\\cos \\theta / 2+i \\sin \\theta / 2)}{2 \\sin \\theta / 2(\\sin \\theta / 2-i \\cos \\theta / 2)} \\\\\n& =-\\frac{2 \\cos \\theta / 2(\\cos \\theta / 2+i \\sin \\theta / 2)}{2 i \\sin \\theta / 2(\\cos \\theta / 2+i \\sin \\theta / 2)}=-\\frac{1}{i} \\cot \\theta / 2 \\\\\n& =\\frac{+i^2}{i} \\cot \\theta / 2=i \\cot \\theta / 2 \\quad\\left[\\because \\frac{-1}{i}=\\frac{i^2}{i}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6hc2",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $(1+i) z=(1-i) \\bar{z}$, then show that $z=-i \\bar{z}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$(1+i) z=(1-i) \\bar{z} \\Rightarrow \\frac{z}{\\bar{z}}=\\frac{(1-i)}{(1+i)}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{z}{\\bar{z}}=\\frac{(1-i)}{(1+i)} \\frac{(1-i)}{(1-i)} \\Rightarrow \\frac{z}{\\bar{z}}=\\frac{1+i^2-2 i}{1-i^2} \\quad [\\because i^2=-1]\\\\\n\\Rightarrow & \\frac{z}{\\bar{z}}=\\frac{1-1-2 i}{2} \\Rightarrow \\frac{z}{\\bar{z}}=-i\n\\end{array}$$</p>\n<p>$\\therefore\\quad z=-i\\bar{z}$</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb95h3",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $z=x+i y$, then show that $z \\bar{z}+2(z+\\bar{z})+b=0$, where $b \\in R$, represents a circle.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Given that, } \\quad z=x+i y \\\\\n& \\text { Then, }  \\quad \\bar{z}=x-iy\\\\\n& \\text { Now, } \\quad z \\bar{z}+2(z+\\bar{z})+b=0 \\\\\n& \\Rightarrow \\quad(x+i y)(x-i y)+2(x+i y+x-i y)+b=0 \\\\\n& \\Rightarrow \\quad x^2+y^2+4 x+b=0,\\\\\n&\\text {which is the equation of a circle. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5z4e",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the real part of $\\frac{\\bar{z}+2}{\\bar{z}-1}$ is 4 , then show that the locus of the point representing $z$ in the complex plane is a circle.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Let}\\quad z & =x+i y \\\\\n\\text{Now,}\\quad \\frac{\\bar{z}+2}{\\bar{z}-1} & =\\frac{x-i y+2}{x-i y-1}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{[(x+2)-i y][(x-1)+i y]}{[(x-1)-i y][(x-1)+i y]} \\\\\n& =\\frac{(x-1)(x+2)-i y(x-1)+i y(x+2)+y^2}{(x-1)^2+y^2} \\\\\n& =\\frac{(x-1)(x+2)+y^2+i[(x+2) y-(x-1) y]}{(x-1)^2+y^2} \\quad\\left[\\because-i^2=1\\right]\n\\end{aligned}$$</p>\n<p>Taking real part, $\\quad \\frac{(x-1)(x+2)+y^2}{(x-1)^2+y^2}=4$</p>\n<p>$\\Rightarrow \\quad x^2-x+2 x-2+y^2=4\\left(x^2-2 x+1+y^2\\right)$</p> <p>$\\Rightarrow \\quad 3 x^2+3 y^2-9 x+6=0$, which represents a circle.</p>\n<p>Hence, $z$ lies on the circle.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb83vw",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that the complex number $z$, satisfying the condition arg $\\left(\\frac{z-1}{z+1}\\right)=\\frac{\\pi}{4}$ lies on a circle.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Let } \\quad z=x+i y \\\\\n& \\text { Given that, } \\quad \\arg \\left(\\frac{z-1}{z+1}\\right)=\\pi / 4 \\\\\n& \\Rightarrow \\quad \\arg (z-1)-\\arg (z+1)=\\pi / 4 \\\\\n& \\Rightarrow \\quad \\arg (x+i y-1)-\\arg (x+i y+1)=\\pi / 4 \\\\\n& \\Rightarrow \\quad \\arg (x-1+i y)-\\arg (x+1+i y)=\\pi / 4\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad \\tan ^{-1} \\frac{y}{x-1}-\\tan ^{-1} \\frac{y}{x+1}=\\pi / 4 \\\\\n& \\Rightarrow \\quad \\tan ^{-1}\\left[\\frac{\\frac{y}{x-1}-\\frac{y}{x+1}}{1+\\left(\\frac{y}{x-1}\\right)\\left(\\frac{y}{x+1}\\right)}\\right]=\\pi / 4 \\\\\n& \\Rightarrow \\quad \\frac{y\\left[\\frac{x+1-x+1}{x^2-1}\\right]}{\\frac{x^2-1+y^2}{x^2-1}}=\\tan \\pi / 4 \\\\\n& \\Rightarrow \\quad \\frac{2 y}{x^2+y^2-1}=1 \\\\\n& \\Rightarrow \\quad x^2+y^2-1=2 y \\\\\n& \\Rightarrow \\quad x^2+y^2-2 y-1=0 \\text {, which represents a circle. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6he5",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve the equation $|z|=z+1+2 i$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The given equation is $|z|=z+1+2 i$</p>\n<p>Let $\\quad z=x+i y$ .... (i)</p>\n<p>From Eq. (i), $\\quad|x+i y|=x+i y+1+2 i$</p>\n<p>$\\Rightarrow \\quad \\sqrt{x^2+y^2}=x+i y+1+2 i$\n$\\left[\\because|z|+\\sqrt{x^2=y^2}\\right]$\n$\\Rightarrow \\quad \\sqrt{x^2+y^2}=(x+1)+i(y+2)$</p>\n<p>On squaring both sides, we get</p>\n<p>$$\\begin{array}{ll} \n& x^2+y^2=(x+1)^2+i^2(y+2)^2+2 i(x+1)(y+2) \\\\\n\\Rightarrow \\quad & x^2+y^2=x^2+2 x+1-y^2-4 y-4+2 i(x+1)(y+2)\n\\end{array}$$</p>\n<p>On comparing real and imaginary parts,</p>\n<p>$$\\begin{aligned}\n& x^2+y^2=x^2+2 x+1-y^2-4 y-4 \\\\\n& \\text { i.e., } \\quad 2 y^2=2 x-4 y-3 \\quad \\text{... (ii)}\\\\\n& \\text { and } \\quad 2(x+1)(y+2)=0 \\\\\n& (x+1)=0 \\text { or }(y+2)=0 \\\\\n& \\Rightarrow \\quad x=-1 \\text { or } y=-2 \\\\\n& \\text { For } x=-1 \\text {, } \\quad 2 y^2=-2-4 y-3\n\\end{aligned}$$</p>\n<p>$2 y^2+4 y+5=0$ [using Eq. (ii)]</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{lrl}\n\\Rightarrow & y & =\\frac{-4 \\pm \\sqrt{16-2 \\times 4 \\times 5}}{4} \\\\\n\\Rightarrow & y & =\\frac{-4 \\pm \\sqrt{-24}}{4} \\notin R \\\\\n\\text { For } y=-2, & 2(-2)^2 & =2 x-4(-2)-3 \\quad \\text{\\text { [usign Eq. (ii)] }}\\\\\n\\Rightarrow & 8 & =2 x+8-3 \\\\\n\\Rightarrow & 2 x & =3 \\Rightarrow x=3 / 2 \\\\\n\\therefore & z & =x+i y=3 / 2-2 i\n\\end{array}\\\\\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5p43",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>12 If $|z+1|=z+2(1+i)$, then find the value of $z$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Given that, } \\\\\n& |z+1|=z+2(1+i) \\quad \\text{... (i)}\\\\\n& z=x+i y \\\\\n& \\text { Then, } \\quad|x+i y+1|=x+i y+2(1+i) \\\\\n& \\Rightarrow \\quad|x+1+i y|=(x+2)+i(y+2) \\\\\n& \\Rightarrow \\quad \\sqrt{(x+1)^2+y^2}=(x+2)+i(y+2)\n\\end{aligned}$$</p>\n<p>On squaring both sides, we get</p>\n<p>$$\\begin{array}{rlrl} \n& (x+1)^2+y^2 =(x+2)^2+i^2(y+2)^2+2 i(x+2)(y+2) \\\\\n\\Rightarrow & x^2+2 x+1+y^2 =x^2+4 x+4-y^2-4 y-4+2 i(x+2)(y+2) \\\\\n\\Rightarrow & x^2+y^2+2 x+1 =x^2-y^2+4 x-4 y+2 i(x+2)(y+2)\n\\end{array}$$</p>\n<p>On comparing real and imaginary parts, we get</p>\n<p>$$\\begin{aligned}\n& & x^2+y^2+2 x+1 & =x^2-y^2+4 x-4 y \\\\\n\\Rightarrow & & 2 y^2-2 x+4 y+1 & =0 \\quad \\text{.... (ii)}\\\\\n\\text { and } & & 2(x+2)(y+2) & =0 \\\\\n\\Rightarrow & & x+2=0 \\text { or } y+2 & =0 \\\\\n& & x & =-2 \\text { or } y=-2\\quad \\text{... (iii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\text { For } x=-2, & 2 y^2+4+4 y+1=0 \\quad \\text{[using Eq. (ii)]}\\\\\n\\Rightarrow & 2 y^2+4 y+5=0 \\\\\n\\Rightarrow & 16-4 \\times 2 \\times 5<0 \\\\\n\\therefore \\text { Discriminant, } & D=b^2-4 a c<0 \\\\\n\\Rightarrow & 2 y^2+4 y+5 \\text { has no real roots. }\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\text { For } y=-2, & 2(-2)^2-2 x+4(-2)+1 & =0 \\quad \\text{[using Eq. (ii)]}\\\\\n\\Rightarrow & 8-2 x-8+1 =0 \\\\\n\\Rightarrow & x =1 / 2 \\\\\n\\therefore & z  =x+i y=\\frac{1}{2}-2 i\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8uxe",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\arg (z-1)=\\arg (z+3 i)$, then find $x-1: y$, where $z=x+i y$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Given that, } \\quad \\arg (z-1)=\\arg (z+3 i) \\\\\n& \\text { and let } z=x+i y \\\\\n& \\text { Now, } \\quad \\arg (z-1)=\\arg (z+3 i) \\\\\n& \\Rightarrow \\quad \\arg (x+i y-1)=\\arg (x+i y+3 i) \\\\\n& \\Rightarrow \\quad \\arg (x-1+i y)=\\arg [x+i(y+3)] \\\\\n& \\Rightarrow \\quad \\tan ^{-1} \\frac{y}{x-1}=\\tan ^{-1} \\frac{y+3}{x} \\\\\n& \\Rightarrow \\quad \\frac{y}{x-1}=\\frac{y+3}{x} \\Rightarrow x y=(x-1)(y+3) \\\\\n& \\Rightarrow \\quad x y=x y-y+3 x-3 \\Rightarrow 3 x-3=y\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{3(x-1)}{y}=1 \\Rightarrow \\frac{x-1}{y}=\\frac{1}{3} \\\\\n\\therefore & (x-1): y=1: 3\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb95iy",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $\\left|\\frac{z-2}{z-3}\\right|=2$ represents a circle. Find its centre and radius.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $z=x+i y$</p>\n<p>Given, equation is $\\left|\\frac{z-2}{z-3}\\right|=2 \\Rightarrow\\left|\\frac{z-2}{z-3}\\right|=2$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad\\left|\\frac{x+i y-2}{x+i y-3}\\right|=2 \\\\\n& \\Rightarrow \\quad|x-2+i y|=2|x-3+i y| \\\\\n& \\Rightarrow \\quad \\sqrt{(x-2)^2+y^2}=2 \\sqrt{(x-3)^2+y^2}\n\\end{aligned}$$</p>\n<p>$$\\left[\\because|x+i y|=\\sqrt{x^2+y^2}\\right]$$</p>\n<p>On squaring both sides, we get</p>\n<p>$$\\begin{aligned}\n& x^2-4 x+4+y^2 =4\\left(x^2-6 x+9+y^2\\right) \\\\\n\\Rightarrow \\quad & 3 x^2+3 y^2-20 x+32 =0 \\\\\n\\Rightarrow \\quad & x^2+y^2-\\frac{20}{3} x+\\frac{32}{3} =0\\quad \\text{... (i)}\n\\end{aligned}$$</p>\n<p>On comparing the above equation with $x^2+y^2+2 g x+2 f y+c=0$, we get</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad 2 g=\\frac{-20}{3} \\Rightarrow g=\\frac{-10}{3} \\\\\n& \\text { and } \\quad 2 f=0 \\Rightarrow f=0 \\text { and } c=\\frac{32}{3} \\\\\n& \\therefore \\quad \\text { Centre }=(-g,-f)=(10 / 3,0) \\\\\n& \\text { Also, } \\quad \\text { radius }(r)=\\sqrt{(10 / 3)^2+0-32 / 3} \\\\\n& {\\left[\\because r=\\sqrt{g^2+f^2-c}\\right]} \\\\\n& =\\frac{1}{3} \\sqrt{(100-96)}=2 / 3\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6hg4",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\frac{z-1}{z+1}$ is a purely imaginary number $(z \\neq-1)$, then find the value of $|z|$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Let}\\quad z & =x+i y \\\\\n\\frac{z-1}{z+1} & =\\frac{x+i y-1}{x+i y+1}, z \\neq-1 \\\\\n& =\\frac{x-1+i y}{x+1+i y}=\\frac{(x-1+i y)(x+1-i y)}{(x+1+i y)(x+1-i y)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{\\left(x^2-1\\right)+i y(x+1)-i y(x-1)-i^2 y^2}{(x+1)^2-(i y)^2} \\\\\n\\Rightarrow \\quad \\frac{z-1}{z+1} & =\\frac{\\left(x^2-1\\right)+y^2+i[y(x+1)-y(x-1)]}{(x+1)^2+y^2}\n\\end{aligned}$$</p>\n<p>Given that, $\\frac{z-1}{z+1}$ is a purely imaginary numbers.</p>\n<p>Then, $$\\frac{\\left(x^2-1\\right)+y^2}{(x+1)^2+y^2}=0$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & x^2-1+y^2=0 \\Rightarrow x^2+y^2=1 \\\\\n\\Rightarrow & \\sqrt{x^2+y^2}=\\sqrt{1} \\Rightarrow|z|=1\\quad \\left[\\because|z|=\\sqrt{x^2+y^2}\\right]\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6nn8",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$z_1$ and $z_2$ are two complex numbers such that $\\left|z_1\\right|=\\left|z_2\\right|$ and $\\arg \\left(z_1\\right)+\\arg \\left(z_2\\right)=\\pi$, then show that $z_1=-\\bar{z}_2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $z_1=r_1\\left(\\cos \\theta_1+i \\sin \\theta_1\\right)$ and $z_2=r_2\\left(\\cos \\theta_2+i \\sin \\theta_2\\right)$ are two complex numbers.</p>\n<p>Given that,  $\\left|z_1\\right|=\\left|z_2\\right|$</p>\n<p> and $$\\arg \\left(z_1\\right)+\\arg \\left(z_2\\right) =\\pi$$</p>\n<p>If $\\left|z_1\\right| =\\left|z_2\\right|$</p>\n<p>$\\Rightarrow \\quad r_1 =r_2\\quad \\text{... (i)}$</p>\n<p>$$\\begin{aligned}\n\\text { and if } & \\arg \\left(z_1\\right)+\\arg \\left(z_2\\right) =\\pi \\\\\n\\Rightarrow \\quad & \\theta_1+\\theta_2 =\\pi \\\\\n\\Rightarrow \\quad & \\theta_1 =\\pi-\\theta_2\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lll}\n\\text { Now, } & z_1=r_1\\left(\\cos \\theta_1+i \\sin \\theta_1\\right) & \\\\\n\\Rightarrow & z_1=r_2\\left[\\cos \\left(\\pi-\\theta_2\\right)+i \\sin \\left(\\pi-\\theta_2\\right)\\right] & {\\left[\\because r_1=r_2 \\text { and } \\theta_1=\\left(\\pi-\\theta_2\\right)\\right]} \\\\\n\\Rightarrow & z_1=r_2\\left(-\\cos \\theta_2+i \\sin \\theta_2\\right) & \\\\\n\\Rightarrow & z_1=-r_2\\left(\\cos \\theta_2-i \\sin \\theta_2\\right) & \\\\\n\\Rightarrow & z_1=-\\left[r_2\\left(\\cos \\theta_2-i \\sin \\theta_2\\right)\\right] & \\\\\n\\Rightarrow & z_1=-\\bar{z}_2 & {\\left[\\because \\bar{z}_2=r_2\\left(\\cos \\theta_2-i \\sin \\theta_2\\right)\\right]}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7kvy",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left|z_1\\right|=1\\left(z_1 \\neq-1\\right)$ and $z_2=\\frac{z_1-1}{z_1+1}$, then show that the real part of $z_2$ is zero.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$z_1=x+i y$$</p>\n<p>$\\Rightarrow \\quad\\left|z_1\\right|=\\sqrt{x^2+y^2}=1$\n$\\left[\\because\\left|z_1\\right|=1\\right.$, given $] \\ldots$ (i)</p>\n<p>$$\\begin{aligned}\n\\text{Now,}\\quad z_2 & =\\frac{z_1-1}{z_1+1}=\\frac{x+i y-1}{x+i y+1} \\\\\n& =\\frac{x-1+i y}{x+1+i y}=\\frac{(x-1+i y)(x+1-i y)}{(x+1+i y)(x+1-i y)} \\\\\n& =\\frac{x^2-1+i y(x+1)-i y(x-1)-i^2 y^2}{(x+1)^2-i^2 y^2} \\\\\n& =\\frac{x^2-1+i x y+i y-i x y+i y+y^2}{(x+1)^2+y^2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{x^2+y^2-1+2 i y}{(x+1)^2+y^2}=\\frac{1-1+2 i y}{(x+1)^2+y^2} \\quad\\left[\\because x^2+y^2=1\\right] \\\\\n& =0+\\frac{2 y i}{(x+1)^2+y^2}\n\\end{aligned}$$</p>\n<p>Hence, the real part of $z_2$ is zero.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb71z8",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $z_1, z_2$ and $z_3, z_4$ are two pairs of conjugate complex numbers, then find arg $\\left(\\frac{z_1}{z_4}\\right)+\\arg \\left(\\frac{z_2}{z_3}\\right)$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $z_1=r_1\\left(\\cos \\theta_1+i \\sin \\theta_1\\right)$</p>\n<p>$$\\begin{aligned}\n\\text{Then,}\\quad & z_2=\\bar{z}_1=r_1\\left(\\cos \\theta_1-i \\sin \\theta_1\\right)=r_1\\left[\\cos \\left(-\\theta_1\\right)+\\sin \\left(-\\theta_1\\right)\\right] \\\\\n\\text { Also, }\\quad & \\text { let } z_3=r_2\\left(\\cos \\theta_2+i \\sin \\theta_2\\right) \\text {, } \\\\\n\\text{Then,}\\quad & z_4=\\bar{z}_3=r_2\\left(\\cos \\theta_2-i \\sin \\theta_2\\right) \\\\\n& \\arg \\left(\\frac{z_1}{z_4}\\right)+\\arg \\left(\\frac{z_2}{z_3}\\right)=\\arg \\left(z_1\\right)-\\arg \\left(z_4\\right)+\\arg \\left(z_2\\right)-\\arg \\left(z_3\\right) \\\\\n& =\\theta_1-\\left(-\\theta_2\\right)+\\left(-\\theta_1\\right)-\\theta_2 \\quad [\\because \\arg(z)=\\theta]\\\\\n& =\\theta_1+\\theta_2-\\theta_1-\\theta_2=0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5p6a",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left|z_1\\right|=\\left|z_2\\right|=\\cdots=\\left|z_n\\right|=1$, then show that $$\n\\left|z_1+z_2+z_3+\\cdots+z_n\\right|=\\left|\\frac{1}{z_1}+\\frac{1}{z_2}+\\frac{1}{z_3}+\\cdots+\\frac{1}{z_n}\\right| \\text {. }$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given that, } & \\left|z_1\\right|=\\left|z_2\\right|=\\cdots=\\left|z_n\\right|=1 \\\\\n\\Rightarrow & \\left|z_1\\right|^2=\\left|z_2\\right|^2=\\cdots=\\left|z_n\\right|^2=1 \\\\\n\\Rightarrow & z_1 \\bar{z}_1=z_2 \\bar{z}_2=z_3 \\bar{z}_3=\\cdots=z_n \\bar{z}_n=1 \\\\\n\\Rightarrow & z_1=\\frac{1}{\\bar{z}_1}, z_2=\\frac{1}{\\bar{z}_2}=\\cdots=z_n=\\frac{1}{\\bar{z}_n}\n\\end{array}$$</p>\n<p>Now,\n\n$$\n\\begin{aligned}\n& \\left|z_1+z_2+z_3+z_4+\\cdots+z_n\\right| \\\\\n& =\\left|\\frac{z_1 \\bar{z}_1}{\\bar{z}_1}+\\frac{z_2 \\bar{z}_2}{\\bar{z}_2}+\\frac{z_3 \\bar{z}_3}{\\bar{z}_3}+\\cdots+\\frac{z_n \\bar{z}_n}{\\bar{z}_n}\\right| \\quad\\left[\\because z_1 \\bar{z}=1 \\text {, where } z_1=\\frac{1}{z}, z_1=\\frac{\\bar{z}}{\\bar{z}-\\bar{z}}, z_1=\\bar{z}\\right] \\\\\n& =\\left|\\frac{\\left|z_1\\right|^2}{\\bar{z}_1}+\\frac{\\left|z_2\\right|^2}{\\bar{z}_2}+\\frac{\\left|z_3\\right|^2}{z_3}+\\cdots+\\frac{\\left|z_n\\right|^2}{\\bar{z}_n}\\right| \\\\\n& =\\left|\\frac{1}{\\bar{z}_1}+\\frac{1}{\\bar{z}_2}+\\frac{1}{\\bar{z}_3}+\\cdots+\\frac{1}{\\bar{z}_n}\\right|=\\sqrt{\\frac{1}{\\bar{z}_1}+\\frac{1}{\\bar{z}_2}+\\frac{1}{\\bar{z}_3}} \\\\\n& =\\left|\\frac{1}{z_1}+\\frac{1}{z_2}+\\cdots+\\frac{1}{z_n}\\right| \\quad \\text { Hence proved. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8aij",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the complex numbers $z_1$ and $z_2, \\arg \\left(z_1\\right)-\\arg \\left(z_2\\right)=0$, then show that $\\left|z_1-z_2\\right|=\\left|z_1\\right|-\\left|z_2\\right|$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\text { Let } \\quad z_1=r_1\\left(\\cos \\theta_1+i \\sin \\theta_1\\right) \\\\\n& \\text { and } \\quad z_2=r_2\\left(\\cos \\theta_2+i \\sin \\theta_2\\right) \\\\\n& \\Rightarrow \\quad \\arg \\left(z_1\\right)=\\theta_1 \\text { and } \\arg \\left(z_2\\right)=\\theta_2\n\\end{aligned}\\\\\n&\\text { Given that, } \\quad \\arg \\left(z_1\\right)-\\arg \\left(z_2\\right)=0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\theta_1-\\theta_2 & =0 \\Rightarrow \\theta_1=\\theta_2 \\\\\nz_2 & =r_2\\left(\\cos \\theta_1+i \\sin \\theta_1\\right) \\quad [\\because \\theta_1=\\theta_2]\\\\\nz_1-z_2 & =\\left(r_1 \\cos \\theta_1-r_2 \\cos \\theta_1\\right)+i\\left(r_1 \\sin \\theta_1-r_2 \\sin \\theta_1\\right) \\\\\n\\left|z_1-z_2\\right| & =\\sqrt{\\left(r_1 \\cos \\theta_1-r_2 \\cos \\theta_1\\right)^2+\\left(r_1 \\sin \\theta_1-r_2 \\sin \\theta_1\\right)^2} \\\\\n& =\\sqrt{r_1^2+r_2^2-2 r_1 r_2 \\cos ^2 \\theta_1-2 r_1 r_2 \\sin ^2 \\theta_1} \\\\\n& =\\sqrt{r_1^2+r_2^2-2 r_1 r_2\\left(\\sin ^2 \\theta_1+\\cos ^2 \\theta_1\\right)} \\\\\n& =\\sqrt{r_1^2+r_2^2-2 r_1 r_2}=\\sqrt{\\left(r_1-r_2\\right)^2} \\\\\n\\Rightarrow \\quad \\left|z_1-z_2\\right| & =r_1-r_2 \\quad [\\because r=|z|]\\\\\n& =\\left|z_1\\right|-\\left|z_2\\right|\\quad \\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8uz9",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve the system of equations $\\operatorname{Re}\\left(z^2\\right)=0,|z|=2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $$\\operatorname{Re}\\left(z^2\\right)=0,|z|=2$$</p>\n<p>$$\\begin{aligned}\n& \\text { Let } \\quad z=x+i y \\\\\n& |z|=\\sqrt{x^2+y^2} \\\\\n& \\because \\quad \\sqrt{x^2+y^2}=2 \\\\\n& \\Rightarrow \\quad x^2+y^2=4 \\quad \\text{.... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { and } \\quad & \\operatorname{Re}(z) =x \\\\\n\\text { Also, } \\quad & z =x+i y \\\\\n\\Rightarrow \\quad & z^2 =x^2+2 i x y-y^2 \\\\\n\\Rightarrow \\quad & z^2 =\\left(x^2-y^2\\right)+2 i x y \\\\\n\\Rightarrow \\quad & \\operatorname{Re}\\left(z^2\\right) =x^2-y^2 \\quad [\\because Re(z^2)=0]\\\\\n\\Rightarrow \\quad & x^2-y^2 =0\\quad \\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>From Eqs. (i) and (ii),</p>\n<p>$$\\begin{aligned}\n& x^2+x^2=4 \\\\\n& \\Rightarrow \\quad 2 x^2=4 \\Rightarrow x^2=2 \\\\\n& \\Rightarrow \\quad x= \\pm \\sqrt{2} \\\\\n& \\therefore \\quad y= \\pm \\sqrt{2} \\\\\n& \\because \\quad z=x+i y \\\\\n& \\Rightarrow \\quad z=\\sqrt{2} \\pm i \\sqrt{2},-\\sqrt{2} \\pm i \\sqrt{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7218",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the complex number satisfying the equation $z+\\sqrt{2}|(z+1)|+i=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given equation is $$z+\\sqrt{2}|(z+1)|+i=0\\quad \\text{.... (i)}$$</p>\n<p>Let $$z=x+i y$$</p>\n<p>$$\\begin{array}{l} \n\\Rightarrow \\quad x+i y+\\sqrt{2}|x+i y+1|+i  =0 \\\\\n\\Rightarrow \\quad  x+i(1+y)+\\sqrt{2}\\left[\\sqrt{(x+1)^2+y^2}\\right] =0 \\\\\n\\Rightarrow \\quad x+i(1+y)+\\sqrt{2} \\sqrt{\\left(x^2+2 x+1+y^2\\right)} =0 \\\\\n\\Rightarrow \\quad x+\\sqrt{2} \\sqrt{x^2+2 x+1+y^2} =0 \\\\\n\\Rightarrow \\quad x^2 =2\\left(x^2+2 x+1+y^2\\right. \\\\\n\\Rightarrow \\quad x^2+4 x+2 y^2+2 =0 \\quad \\text{... (ii)}\\\\\n\\Rightarrow \\quad 1+y =0 \\\\\n\\Rightarrow \\quad y =-1\n\\end{array}$$</p>\n<p>$$\\text { For } y=-1, \\quad x^2+4 x+2+2=0\\quad \\text{[using Eq. (ii)]}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad & x^2+4 x+4 =0 \\Rightarrow(x+2)^2=0 \\\\\n\\Rightarrow \\quad & x+2 =0 \\Rightarrow x=-2 \\\\\n\\therefore \\quad & z =x+i y=-2-i\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7c7v",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Write the complex number $z=\\frac{1-i}{\\cos \\frac{\\pi}{3}+i \\sin \\frac{\\pi}{3}}$ in polar form.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that,\n\n$$\n\\begin{aligned}\nz & =\\frac{1-i}{\\cos \\frac{\\pi}{3}+i \\sin \\frac{\\pi}{3}}=\\frac{-\\sqrt{2}\\left[\\frac{-1}{\\sqrt{2}}+i \\frac{1}{\\sqrt{2}}\\right]}{\\cos \\frac{\\pi}{3}+i \\sin \\frac{\\pi}{3}} \\\\\n& =\\frac{-\\sqrt{2}[\\cos (\\pi-\\pi / 4)+i \\sin (\\pi-\\pi / 4)]}{\\cos \\pi / 3+i \\sin \\pi / 3} \\\\\n& =\\frac{-\\sqrt{2}[\\cos 3 \\pi / 4+i \\sin 3 \\pi / 4]}{\\cos \\pi / 3+i \\sin \\pi / 3} \\\\\n& =-\\sqrt{2}\\left[\\cos \\left(\\frac{3 \\pi}{4}-\\frac{\\pi}{3}\\right)+i \\sin \\left(\\frac{3 \\pi}{4}-\\frac{\\pi}{3}\\right)\\right] \\\\\n& =-\\sqrt{2}\\left[\\cos \\frac{5 \\pi}{12}+i \\sin \\frac{5 \\pi}{12}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5p8b",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $z$ and $w$ are two complex numbers such that $|z w|=1$ and $\\arg (z)-\\arg (w)=\\frac{\\pi}{2}$, then show that $\\bar{z} w=-i$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Let } \\quad z=r_1\\left(\\cos \\theta_1+i \\sin \\theta_1\\right) \\text { and } w=r_2\\left(\\cos \\theta_2+i \\sin \\theta_2\\right) \\\\\n& \\text { Also, } \\quad|z w|=|z||w|=r_1 r_2=1 \\\\\n& \\therefore \\quad r_1 r_2=1 \\\\\n& \\text { Further, } \\quad \\arg (z)=\\theta_1 \\text { and } \\arg (w)=\\theta_2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { But } \\quad \\arg (z)-\\arg (w)=\\frac{\\pi}{2} \\\\\n& \\Rightarrow \\quad \\theta_1-\\theta_2=\\frac{\\pi}{2} \\\\\n& \\Rightarrow \\quad \\arg \\left(\\frac{z}{w}\\right)=\\frac{\\pi}{2} \\\\\n& \\text { Now, to prove } \\bar{z} W=-i \\\\\n& \\text { LHS }=\\bar{z} W \\\\\n& =r_1\\left(\\cos \\theta_1-i \\sin \\theta_1\\right) r_2\\left(\\cos \\theta_2+i \\sin \\theta_2\\right) \\\\\n& =r_1 r_2\\left[\\cos \\left(\\theta_2-\\theta_1\\right)+i \\sin \\left(\\theta_2-\\theta_1\\right)\\right] \\\\\n& =r_1 r_2[\\cos (-\\pi / 2)+i \\sin (-\\pi / 2)] \\\\\n& =1[0-i] \\\\\n& =-i=\\mathrm{RHS}\\quad \\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb56zj",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Fill in the blanks of the following.</p>\n<p>(i) For any two complex numbers $z_1, z_2$ and any real numbers $a, b$, $\\left|a z_1-b z_2\\right|^2+\\left|b z_1+a z_2\\right|^2=\\cdots$</p>\n<p>(ii) The value of $\\sqrt{-25} \\times \\sqrt{-9}$ is ...</p>\n<p>(iii) The number $\\frac{(1-i)^3}{1-i^3}$ is equal to ...</p>\n<p>(iv) The sum of the series $i+i^2+i^3+\\cdots$ upto 1000 terms is $\\ldots$</p>\n<p>(v) Multiplicative inverse of $1+i$ is $\\ldots$</p>\n<p>(vi) If $z_1$ and $z_2$ are complex numbers such that $z_1+z_2$ is a real number, then $z_1=\\cdots$</p>\n<p>(vii) $\\arg (z)+\\arg \\bar{z}$ where, $(\\bar{z} \\neq 0)$ is $\\ldots$</p>\n<p>(viii) If $|z+4| \\leq 3$, then the greatest and least values of $|z+1|$ are $\\ldots$ and ...</p>\n<p>(ix) If $\\left|\\frac{z-2}{z+2}\\right|=\\frac{\\pi}{6}$, then the locus of $z$ is ...</p>\n<p>(x) If $|z|=4$ and $\\arg (z)=\\frac{5 \\pi}{6}$, then $z=\\cdots$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) $$\\begin{aligned}\n&\\left|a z_1-b z_2\\right|^2+\\left|b z_1+a z_2\\right|^2 \\\\\n&=\\left|a z_1\\right|^2+\\left|b z_2\\right|^2-2 \\operatorname{Re}\\left(a z_1 \\cdot b \\bar{z}_2\\right)+\\left|b z_1\\right|^2+\\left|a z_2\\right|^2+2 \\operatorname{Re}\\left(a z_1 \\cdot b \\bar{z}_2\\right) \\\\\n&=\\left(a^2+b^2\\right)\\left|z_1\\right|^2+\\left(a^2+b^2\\right)\\left|z_2\\right|^2 \\\\\n&=\\left(a^2+b^2\\right)\\left(\\left|z_1\\right|^2+\\left|z_2\\right|^2\\right)\n\\end{aligned}$$</p>\n<p>(ii) $\\sqrt{-25} \\times \\sqrt{-9}=i \\sqrt{25} \\times i \\sqrt{9}=i^2(5 \\times 3)=-15$</p>\n<p>$$\\text { (iii) } \\begin{aligned}\n\\frac{(1-i)^3}{1-i^3} & =\\frac{(1-i)^3}{(1-i)\\left(1+i+i^2\\right)} \\\\\n& =\\frac{(1-i)^2}{i}=\\frac{1+i^2-2 i}{i}=\\frac{-2 i}{i}=-2\n\\end{aligned}$$</p>\n<p>(iv) $i+i^2+i^3+\\ldots$ upto 1000 terms $=i+i^2+i^3+i^4+\\ldots i^{1000}=0$\n$\\left[\\because i^n+i^{n+1}+i^{n+2}+i^{n+3}=0\\right.$, where $n \\in$ Ni.e., $\\left.\\sum_{n=1}^{1000} i^n=0\\right]$</p>\n<p>(v) Multiplicative inverse of $1+i=\\frac{1}{1+i}=\\frac{1-i}{1-i^2}=\\frac{1}{2}(1-i)$</p>\n<p>(vi) Let $z_1=x_1+i y_1$ and $z_2=x_2+i y_2$</p>\n<p>$z_1+z_2=\\left(x_1+x_2\\right)+i\\left(y_1+y_2\\right)$, which is real.</p>\n<p>If $z_1+z_2$ is real, then $y_1+y_2=0$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & y_1=-y_2 \\\\\n\\because & z_2=x_2-i y_1 \\\\\n\\Rightarrow & z_2=\\bar{z}_1\\quad [\\text{when } x_1=x_2]\n\\end{array}$$</p>\n<p>(vii) $$\\begin{aligned}\n& \\arg (z)+\\arg (\\bar{z}),(\\bar{z} \\neq 0) \\\\\n& \\Rightarrow \\quad \\theta+(-\\theta)=0\n\\end{aligned}$$</p>\n<p>(viii) Given that, $|z+4| \\leq 3$</p>\n<p>For the greatest value of $|z+1|$.</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad |z+1| & =|z+4-3| \\leq|z+4|+|-3| \\\\\n& =|z+4-3| \\leq 3+3 \\\\\n& =|z+4-3| \\leq 6\n\\end{aligned}$$</p>\n<p>So, greatest value of $|z+1|=6$</p>\n<p>For, now, least value of $|z+1|$, we know that the least value of the modulus of a complex number is zero. So, the least value of $|z+1|$ is zero.</p>\n<p>$$\\begin{aligned}\n& \\text { (ix) Given that, } \\\\\n& \\left|\\frac{z-2}{z+2}\\right|=\\frac{\\pi}{6} \\\\\n& \\Rightarrow \\quad \\frac{|x+i y-2|}{|x+i y+2|}=\\frac{\\pi}{6} \\Rightarrow \\frac{|x-2+i y|}{|x+2+i y|}=\\frac{\\pi}{6} \\\\\n& \\Rightarrow \\quad 6|x-2+i y|=\\pi|x+2+i y| \\\\\n& \\Rightarrow \\quad 6 \\sqrt{(x-2)^2+y^2}=\\pi \\sqrt{(x+2)^2+y^2} \\\\\n& \\Rightarrow \\quad 36\\left[x^2+4-4 x+y^2\\right]=\\pi^2\\left[x^2+4 x+4+y^2\\right] \\\\\n& \\Rightarrow\\left(36-\\pi^2\\right) x^2+\\left(36-\\pi^2\\right) y^2-\\left(144+4 \\pi^2\\right) x+144+4 \\pi^2=0 \\text {, which is a circle. }\n\\end{aligned}$$</p>\n<p>(x) Given that, $|z|=4$ and $\\arg (z)=\\frac{5 \\pi}{6}$</p>\n<p>$$\\begin{aligned}\n& \\text { Let } \\quad z=x+i y=r(\\cos \\theta+i \\sin \\theta) \\\\\n& \\Rightarrow \\quad|z|=r=4 \\text { and } \\arg (z)=\\theta \\\\\n& \\because \\quad \\tan \\theta=\\frac{5 \\pi}{6} \\\\\n& \\Rightarrow \\quad z=4\\left(\\cos \\frac{\\pi}{6}+i \\sin \\frac{\\pi}{6}\\right)=4[\\cos (\\pi-\\pi / 6)+i \\sin (\\pi-\\pi / 6)] \\\\\n& =4\\left[-\\cos \\frac{\\pi}{6}+i \\sin \\frac{\\pi}{6}\\right]=4\\left[\\frac{-\\sqrt{3}}{2}+i \\frac{1}{2}\\right]=-2 \\sqrt{3}+2 i\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5drn",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>State true or false for the following.</p>\n<p>The order relation is defined on the set of complex numbers.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>We can compare two complex numbers when they are purely real. Otherwise comparison of complex number is not possible.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 24848,
+        "correct": 39,
+        "wrong": 61,
+        "options": {
+          "0": 61,
+          "1": 39
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb6hi8",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>State true or false for the following.</p>\n<p>Multiplication of a non-zero complex number by $-i$ rotates the point about origin through a right angle in the anti-clockwise direction.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$(x, y)\\left[\\begin{array}{c}0 \\\\ -1\\end{array}\\right]=\\left[\\begin{array}{c}0 \\\\ -y\\end{array}\\right]$, which is false.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb6hk0",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>State true or false for the following.</p>\n<p>For any complex number $z$, the minimum value of $|z|+|z-1|$ is 1 .</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let</p>\n<p>$$\\begin{aligned}\nz & =x+i y \\\\\n|z|+|z-1| & =\\sqrt{x^2+y^2}+\\sqrt{(x-1)^2+y^2}\n\\end{aligned}$$</p>\n<p>If $x=0, y=0$, then the value of $|z|+|z-1|=1$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb5z6o",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>State true or false for the following.</p>\n<p>The locus represented by $|z-1|=|z-i|$ is a line perpendicular to the join of the points $(1,0)$ and $(0,1)$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let</p>\n<p>$$\\begin{aligned}\nz & =x+i y \\\\\n|z-1| & =|z-i| \\\\\n\\text{Then,}\\quad |x-1+i y| & =|x-i(1-y)| \\\\\n(x-1)^2+y^2 & =x^2+(1-y)^2 \\\\\nx^2-2 x+1+y^2 & =x^2+1+y^2-2 y \\\\\n-2 x+1 & =1-2 y \\\\\n-2 x+2 y & =0 \\\\\nx-y & =0 \\quad \\text{... (i)}\n\\end{aligned}$$</p>\n<p>Equation of a line through the points $(1,0)$ and $(0,1)$,</p>\n<p>$$\\begin{aligned}\ny-0 & =\\frac{1-0}{0-1}(x-1) \\\\\n\\Rightarrow \\quad y & =-(x-1) \\Rightarrow x+y=1\\quad \\text{... (ii)}\n\\end{aligned}$$</p>\n<p>which is perpendicular to the line $x-y=0$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb5z8m",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>State true or false for the following.</p>\n<p>If $z$ is a complex number such that $z \\neq 0$ and $\\operatorname{Re}(z)=0$, then, $\\operatorname{Im}\\left(z^2\\right)=0$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Let } z=x+i y, z \\neq 0 \\text { and } \\operatorname{Re}(z)=0 \\\\\n& \\text { i.e., } \\quad x=0 \\\\\n& \\therefore \\quad z=i y \\\\\n& \\operatorname{Im}\\left(z^2\\right)=i^2 y^2=-y^2 \\text { which is real. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb8v1d",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>State true or false for the following.</p>\n<p>The inequality $|z-4|<|z-2|$ represents the region given by $x>3$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Given inequality,}\\quad |z-4| & <|z-2| \\\\\n\\text{Let}\\quad z & =x+i y\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\begin{array}{lc}\n\\therefore & |x-4+i y|<|x-2+i y| \\\\\n\\Rightarrow & \\sqrt{(x-4)^2+y^2}<\\sqrt{(x-2)^2+y^2}\n\\end{array} \\\\\n& \\Rightarrow \\quad(x-4)^2+y^2<(x-2)^2+y^2 \\\\\n& \\Rightarrow \\quad x^2-8 x+16+y^2< x^2-4 x+4+y^2 \\\\\n& \\Rightarrow \\quad-8 x+16 < -4 x+4 \\\\\n& \\Rightarrow \\quad-8 x < -4 x-12 \\\\\n& \\Rightarrow \\quad-4 x < -12 \\\\\n& \\Rightarrow \\quad 4 x > 12 \\\\\n& \\Rightarrow \\quad x > 3\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb8al3",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>State true or false for the following.</p>\n<p>Let $z_1$ and $z_2$ be two complex numbers such that $\\left|z_1+z_2\\right|=\\left|z_1\\right|+\\left|z_2\\right|$, then $\\arg \\left(z_1-z_2\\right)=0$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $\\quad z_1=x_1+i y_1$ and $z_2=x_2+i y_2$</p>\n<p>$$\\begin{aligned}\n& \\text { Given that, } \\\\\n& \\left|z_1+z_2\\right|=\\left|z_1\\right|+\\left|z_2\\right| \\\\\n& \\left|x_1+i y_1+x_2+i y_2\\right|=\\left|x_1+i y_1\\right|+\\left|x_2+i y_2\\right| \\\\\n& \\Rightarrow \\quad \\sqrt{\\left(x_1+x_2\\right)^2+\\left(y_1+y_2\\right)^2}=\\sqrt{\\left(x_1^2+y_1^2\\right)}+\\sqrt{\\left(x_2^2+y_2^2\\right)}\n\\end{aligned}$$</p>\n<p>On squaring both sides, we get</p>\n<p>$$\\begin{array}{cc} \n& \\left(x_1+x_2\\right)^2+\\left(y_1+y_2\\right)^2=\\left(x_1^2+y_1^2\\right)+\\left(x_2^2+y_2^2\\right)+2 \\sqrt{\\left(x_1^2+y_1^2\\right)\\left(x_2^2+y_2^2\\right)} \\\\\n\\Rightarrow & x_1^2+x_2^2+2 x_1 x_2+y_1^2+y_2^2+2 y_1 y_2=x_1^2+y_1^2+x_2^2+y_2^2+2 \\sqrt{\\left(x_1^2+y_1^2\\right)\\left(x_2^2+y_2^2\\right)} \\\\\n\\Rightarrow & 2 x_1 x_2+2 y_1 y_2=2 \\sqrt{\\left(x_1^2+y_1^2\\right)\\left(x_2^2+y_2^2\\right)} \\\\\n\\Rightarrow & x_1 x_2+y_1 y_2=\\sqrt{\\left(x_1^2+y_1^2\\right)\\left(x_2^2+y_2^2\\right)}\n\\end{array}$$</p>\n<p>On squaring both sides, we get</p>\n<p>$$\\begin{aligned}\n& x_1^2 x_2^2+y_1^2 y_2^2+2 x_1 x_2 y_1 y_2=x_1^2 x_2^2+y_1^2 x_2^2+x_1^2 y_2^2+y_1^2 y_2^2 \\\\\n& \\Rightarrow \\quad\\left(x_1 y_2-x_2 y_1\\right)^2=0 \\\\\n& \\Rightarrow \\quad x_1 y_2=x_2 y_1 \\\\\n& \\Rightarrow \\quad \\frac{y_1}{x_1}=\\frac{y_2}{x_2} \\\\\n& \\Rightarrow \\quad\\left(\\frac{y_1}{x_1}\\right)-\\left(\\frac{y_2}{x_2}\\right)=0 \\\\\n& \\Rightarrow \\quad \\arg \\left(z_1\\right)-\\arg \\left(z_2\\right)=0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb7c9w",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>State true or false for the following.</p>\n<p>2 is not a complex number.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, 2 is a real number.</p>\n<p>Since, 2 is not a complex number.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb9jvj",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Match the statements of Column A and Column B.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 728px\"><colgroup>\n<col style=\"width: 76px\">\n<col style=\"width: 266px\">\n<col style=\"width: 83px\">\n<col style=\"width: 303px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column A</th>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column B</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">(i)</td>\n    <td class=\"tg-0lax\">The polar form of $i+\\sqrt{3}$ is</td>\n    <td class=\"tg-baqh\">(a)</td>\n    <td class=\"tg-0lax\">Perpendicular bisector of segment joining $(-2,0)$ and $(2,0)$.</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(ii)</td>\n    <td class=\"tg-0lax\">The amplitude of $-1+\\sqrt{-3}$ is</td>\n    <td class=\"tg-baqh\">(b)</td>\n    <td class=\"tg-0lax\">On or outside the circle having centre of $(0,-4)$ and radius 3.</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iii)</td>\n    <td class=\"tg-0lax\">It $|z+2|=|z-2|$, then locus of z is</td>\n    <td class=\"tg-baqh\">(c)</td>\n    <td class=\"tg-0lax\">$\\frac{2\\pi}{3}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iv)</td>\n    <td class=\"tg-0lax\">It $|z+2i|=|z-2i|$, then locus of z is</td>\n    <td class=\"tg-baqh\">(d)</td>\n    <td class=\"tg-0lax\">Perpendicular bisector of segment joining $(0,-2)$ and $(0,2)$.</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(v)</td>\n    <td class=\"tg-0lax\">Region represented by</td>\n    <td class=\"tg-baqh\">(e)</td>\n    <td class=\"tg-0lax\">$2\\left(\\cos\\frac{\\pi}{6}+i\\sin\\frac{\\pi}{6}\\right)$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(vi)</td>\n    <td class=\"tg-0lax\">Region represented by $|z+4|\\le3$ is</td>\n    <td class=\"tg-baqh\">(f)</td>\n    <td class=\"tg-0lax\">On or inside the circle having centre $(-4,0)$ and radius 3 units.</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(vii)</td>\n    <td class=\"tg-0lax\">Conjugate of $\\frac{1+2i}{1-i}$ lies in</td>\n    <td class=\"tg-baqh\">(g)</td>\n    <td class=\"tg-0lax\">First quadrant</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(viii)</td>\n    <td class=\"tg-0lax\">Reciprocal of $1-i$ lies in</td>\n    <td class=\"tg-baqh\">(h)</td>\n    <td class=\"tg-0lax\">Third quadrant</td>\n  </tr>\n</tbody></table></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&amp; \\text { (i) Given, } \\\\\n&amp; \\mathrm{z}=i+\\sqrt{3}=r(\\cos \\theta+\\sin \\theta) \\\\\n&amp; \\because \\quad r \\cos \\theta=\\sqrt{3}, r \\sin \\theta=1 \\\\\n&amp; \\Rightarrow \\quad r^2=1+3=4 \\Rightarrow r=2 \\quad [\\because r &gt; 0]\\\\\n&amp; \\Rightarrow \\quad \\tan \\alpha=\\left|\\frac{r \\sin \\theta}{r \\cos \\theta}\\right|=\\frac{1}{\\sqrt{3}} \\\\\n&amp; \\Rightarrow \\quad \\tan \\alpha=\\frac{1}{\\sqrt{3}} \\Rightarrow \\alpha=\\frac{\\pi}{6} \\\\\n&amp; \\because \\quad x&gt;0, y&gt;0 \\\\\n&amp; \\text { and } \\quad \\arg (z)=\\theta=\\frac{\\pi}{6}\n\\end{aligned}$$</p>\n<p>So the polar form of $z$ is $2\\left(\\cos \\frac{\\pi}{6}+i \\sin \\frac{\\pi}{6}\\right)$.</p>\n<p>$$\\begin{aligned}\n&amp;\\text { (ii) Given that, }\\\\\n&amp;\\begin{aligned}\nz &amp; =-1+\\sqrt{-3}=-1+i \\sqrt{3} \\\\\n\\therefore \\quad \\tan \\alpha &amp; =\\left|\\frac{\\sqrt{3}}{-1}\\right|=\\sqrt{3} \\\\\n\\Rightarrow\\quad \\tan \\alpha &amp; =\\tan \\frac{\\pi}{3} \\Rightarrow \\alpha=\\frac{\\pi}{3}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m18ow1jz/4e3a332c-8386-4062-8263-cbcd392b55d8/3a5db6f0-7631-11ef-bd8f-8b9ad114efab/file-jaoe38c1m18ow1k0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m18ow1jz/4e3a332c-8386-4062-8263-cbcd392b55d8/3a5db6f0-7631-11ef-bd8f-8b9ad114efab/file-jaoe38c1m18ow1k0.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{array}{ll}\n\\because &amp; x&lt;0, y&gt;0 \\\\\n\\Rightarrow &amp; \\theta=\\pi-\\alpha=\\pi-\\frac{\\pi}{3}=\\frac{2 \\pi}{3}\n\\end{array}$$</p>\n<p>(iii) Given that, $$|z+2|=|z-2|$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad &amp; |x+2+i y|  =|x-2+i y| \\\\\n\\Rightarrow \\quad &amp; (x+2)^2+y^2 =(x-2)^2+y^2 \\\\\n\\Rightarrow \\quad &amp; x^2+4 x+4 =x^2-4 x+4 \\Rightarrow 8 x=0 \\\\\n\\therefore \\quad &amp;  x =0\n\\end{aligned}$$</p>\n<p>It is a straight line which is a perpendicular bisector of segment joining the points $(-2,0)$ and $(2,0)$.</p>\n<p>(iv) Given that, $$|z+2 i|=|z-2 i|$$</p>\n<p>$$\\begin{array}{lrl}\n\\Rightarrow \\quad &amp; |x+i(y+2)| =|x+i(y-2)| \\\\\n\\Rightarrow \\quad &amp; x^2+(y+2)^2 =x^2+(y-2)^2 \\\\\n\\Rightarrow \\quad &amp; 4 y =0 \\Rightarrow y=0\n\\end{array}$$</p>\n<p>It is a straight line, which is a perpendicular bisector of segment joining $(0,-2)$ and $(0,2)$.</p>\n<p>(v) Given that,</p>\n<p>$$\\begin{aligned}\n|z+4 i| \\geq 3 &amp; =|x+i y+4 i| \\geq 3 \\\\\n&amp; =|x+i(y+4)| \\geq 3 \\\\\n&amp; =\\sqrt{x^2+(y+4)^2} \\geq 3 \\\\\n&amp; =x^2+(y+4)^2 \\geq 9 \\\\\n&amp; =x^2+y^2+8 y+16 \\geq 9 \\\\\n&amp; =x^2+y^2+8 y+7 \\geq 0\n\\end{aligned}$$</p>\n<p>Which represent a circle. On or outside having centre $(0,-4)$ and radius 3 .</p>\n<p>(vi) Given that, $$|z+4| \\leq 3$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow &amp; |x+i y+4| \\leq 3 \\\\\n\\Rightarrow &amp; |x+4+i y| \\leq 3 \\\\\n\\Rightarrow &amp; \\sqrt{(x+4)^2+y^2} \\leq 3 \\\\\n\\Rightarrow &amp; (x+4)^2+y^2 \\leq 9 \\\\\n\\Rightarrow &amp; x^2+8 x+16+y^2 \\leq 9 \\\\\n\\Rightarrow &amp; x^2+8 x+y^2+7 \\leq 0\n\\end{array}$$</p>\n<p>It represent the region which is on or inside the circle having the centre $(-4,0)$ and radius 3 .</p>\n<p>(vii) Given that,</p>\n<p>$$\\begin{aligned}\nz &amp; =\\frac{1+2 i}{1-i}=\\frac{(1+2 i)(1+i)}{(1-i)(1+i)} \\\\\n&amp; =\\frac{1+2 i+i+2 i^2}{1-i^2}=\\frac{1-2+3 i}{1+1}=\\frac{-1+3 i}{2} \\\\\n\\bar{z} &amp; =\\frac{-1}{2}-\\frac{3 i}{2}\n\\end{aligned}$$</p>\n<p>Hence, $\\left(\\frac{-1}{2}, \\frac{-3}{2}\\right)$ lies in third quadrant.</p>\n<p>(viii) Given that, $z=1-i$</p>\n<p>$$\\therefore \\quad \\frac{1}{z}=\\frac{1}{1-i}=\\frac{1+i}{(1-i)(1+i)}=\\frac{1+i}{1-i^2}=\\frac{1}{2}(1+i)$$</p>\n<p>Hence, $\\left(\\frac{1}{2}, \\frac{1}{2}\\right)$ lies in first quadrant.</p>\n<p>Hence, the correct matches are (a) $\\rightarrow$ (v), (b) $\\rightarrow$ (iii), (c) $\\rightarrow$ (i), (d) $\\rightarrow$ (iv), (e) $\\rightarrow$ (ii), (f) $\\rightarrow$ (vi), (g) $\\rightarrow$ (viii), (h) $\\rightarrow$ (vii)</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb95ku",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>What is the conjugate of $\\frac{2-i}{(1-2 i)^2}$ ?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that,</p>\n<p>$$\n\\begin{aligned}\nz & =\\frac{2-i}{(1-2 i)^2}=\\frac{2-i}{1+4 i^2-4 i} \\\\\n& =\\frac{2-i}{1-4-4 i}=\\frac{2-i}{-3-4 i} \\\\\n& =\\frac{(2-i)}{-(3+4 i)}=-\\left[\\frac{(2-i)(3-4 i)}{(3+4 i)(3-4 i)}\\right] \\\\\n& =-\\left(\\frac{6-8 i-3 i+4 i^2}{9+16}\\right)=-\\frac{(-11 i+2)}{25} \\\\\n& =\\frac{-1}{25}(2-11 i) \\Rightarrow z=\\frac{1}{25}(-2+11 i) \\\\\n\\therefore \\quad\\bar{z} & =\\frac{1}{25}(-2-11 i)=\\frac{-2}{25}-\\frac{11}{25} i\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7cbi",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left|z_1\\right|=\\left|z_2\\right|$, is it necessary that $z_1=z_2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $$\\left|z_1\\right|=\\left|z_2\\right|$$</p>\n<p>Let $z_1=x_1+iy_1$ and $z_2=x_2+iy_2$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad & \\left|x_1+i y_1\\right|  =\\left|x_2+i y_2\\right| \\\\\n\\Rightarrow \\quad & x_1^2+y_1^2 =x_2^2+y_2^2 \\\\\n\\Rightarrow \\quad & x_1^2 =x_2^2, y_1^2=y_2^2 \\\\\n\\Rightarrow \\quad & x_1 = \\pm x_2, y_1= \\pm y_2 \\\\\n\\Rightarrow \\quad & z_1 =x_1+i y_1 \\text { or } z_1= \\pm x_2 \\pm i y_2\n\\end{aligned}$$</p>\n<p>Hence, it is not neccessary that $z_1=z_2$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7cdb",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\frac{\\left(a^2+1\\right)^2}{2 a-i}=x+i y$, then what is the value of $x^2+y^2$ ?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $\\quad \\frac{\\left(a^2+1\\right)^2}{2 a-i}=x+i y \\Rightarrow \\frac{\\left(a^2+1\\right)^2}{(2 a-i)}=x+i y$</p>\n<p>$\\begin{aligned} & \\Rightarrow \\quad \\frac{\\left(a^2+1\\right)^2(2 a+i)}{(2 a-i)(2 a+i)}=x+i y \\\\ & \\Rightarrow \\quad \\frac{\\left(a^2+1\\right)^2(2 a+i)}{4 a^2+1}=x+i y\\end{aligned}$</p>\n<p>$\\begin{aligned} \\Rightarrow \\quad x & =\\frac{2 a\\left(a^2+1\\right)^2}{4 a^2+1} \\text { and } y=\\frac{\\left(a^2+1\\right)^2}{4 a^2+1} \\\\ \\therefore \\quad x^2+y^2 & =4 a^2\\left[\\frac{\\left(a^2+1\\right)^2}{4 a^2+1}\\right]^2+\\left[\\frac{\\left(a^2+1\\right)^2}{4 a^2+1}\\right]^2 \\\\ & =\\frac{\\left(4 a^2+1\\right)\\left(a^2+1\\right)^4}{\\left(4 a^2+1\\right)^2}=\\frac{\\left(a^2+1\\right)^4}{\\left(4 a^2+1\\right)}\\end{aligned}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7232",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $z$, if $|z|=4$ and $\\arg (z)=\\frac{5 \\pi}{6}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$z=r(\\cos \\theta+i \\sin \\theta)$$</p>\nAlso, $$|z|=r=4 \\text { and } \\theta=\\frac{5 \\pi}{6} \\quad[\\because \\arg (z)=\\theta]$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad z & =4\\left[\\cos \\frac{5 \\pi}{6}+i \\sin \\frac{5 \\pi}{6}\\right] [\\because z=r(\\cos \\theta+i \\sin \\theta)]\\\\\n& =4\\left[\\cos \\left(\\pi-\\frac{\\pi}{6}\\right)+i \\sin \\left(\\pi-\\frac{\\pi}{6}\\right)\\right] \\\\\n& =4\\left[-\\cos \\frac{\\pi}{6}+i \\sin \\frac{\\pi}{6}\\right] \\\\\n& =4\\left[-\\frac{\\sqrt{3}}{2}+i \\frac{1}{2}\\right]=-2 \\sqrt{3}+2 i\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7wat",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $\\left|(1+i) \\frac{(2+i)}{(3+i)}\\right|$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that,\n\n$$\n\\begin{aligned}\n\\left|(1+i) \\frac{(2+i)}{(3+i)}\\right| & =\\left|\\frac{\\left(2+i+2 i+i^2\\right)}{(3+i)}\\right|=\\left|\\frac{2+3 i-1}{3+i}\\right| \\\\\n& =\\left|\\frac{1+3 i}{3+i}\\right|=\\left|\\frac{(1+3 i)(3-i)}{(3+i)(3-i)}\\right| \\\\\n& =\\left|\\frac{3+9 i-i-3 i^2}{9-i^2}\\right|=\\left|\\frac{3+8 i+3}{9+1}\\right|=\\left|\\frac{6+8 i}{10}\\right| \\\\\n& =\\sqrt{\\frac{6^2}{100}+\\frac{8^2}{100}}=\\sqrt{\\frac{36+64}{100}}=\\sqrt{\\frac{100}{100}}=1\n\\end{aligned}\n$$\n</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5dto",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the principal argument of $(1+i\\sqrt3)^2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{lrl}\n\\text { Given that, } & & z=(1+i \\sqrt{3})^2 \\\\\n\\Rightarrow & & z=1-3+2 i \\sqrt{3} \\Rightarrow z=-2+i 2 \\sqrt{3} \\\\\n\\Rightarrow & & \\tan \\alpha=\\left|\\frac{2 \\sqrt{3}}{-2}\\right|=|-\\sqrt{3}|=\\sqrt{3} \\left[\\because \\tan \\alpha=\\left|\\frac{\\operatorname{lm}(z)}{\\operatorname{Re}(z)}\\right|\\right]\\\\\n\\Rightarrow & & \\tan \\alpha=\\tan \\frac{\\pi}{3} \\Rightarrow \\alpha=\\frac{\\pi}{3} \\\\\n\\because & & \\operatorname{Re}(z)<0 \\text { and } \\operatorname{lm}(z)>0 \\\\\n\\Rightarrow & & \\arg (z)=\\pi-\\frac{\\pi}{3} \\Rightarrow=\\frac{2 \\pi}{3}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5zae",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Where does $z$ lie, if $\\left|\\frac{z-5 i}{z+5 i}\\right|=1$ ?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$z=x+i y$$</p>\n<p>Given that, $\\quad\\left|\\frac{z-5 i}{z+5 i}\\right|=\\left|\\frac{x+i y-5 i}{x+i y+5 i}\\right|$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\left|\\frac{z-5 i}{z+5 i}\\right|=\\frac{|x+i(y-5)|}{|x+i(y+5)|} \\\\\n\\Rightarrow & \\left|\\frac{z-5 i}{z+5 i}\\right|=\\frac{\\sqrt{x^2+(y-5)^2}}{\\sqrt{x^2+(y+5)^2}} \\quad \\left[\\because\\left|\\frac{z-5 i}{z+5 i}\\right|=1\\right]\n\\end{array}$$</p>\n<p>On squaring both sides, we get</p>\n<p>$$\\begin{array}{rlrl} \n& x^2+(y-5)^2 =x^2+(y+5)^2 \\\\\n\\Rightarrow & -10 y =+10 y \\\\\n\\Rightarrow & 20 y =0 \\\\\n\\therefore & y =0\n\\end{array}$$</p>\n<p>So, $z$ lies on real axis.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5dvy",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sin x+i \\cos 2 x$ and $\\cos x-i \\sin 2 x$ are conjugate to each other for</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $x=n \\pi$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $x=\\left(n+\\frac{1}{2}\\right) \\frac{\\pi}{2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $x=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " No value of $x$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{rlrl} \n& \\text { Let } z =\\sin x+i \\cos 2 x \\\\\n& \\text { and } \\bar{z} =\\sin x-i \\cos 2 x \\quad \\text{... (i)}\\\\\n& \\text { Given that, } \\bar{z} =\\cos x-i \\sin 2 x \\quad \\text{... (ii)}\\\\\n& \\therefore \\sin x-i \\cos 2 x =\\cos x-i \\sin 2 x \\\\\n\\Rightarrow & \\sin x =\\cos x \\text { and } \\cos 2 x=\\sin 2 x \\\\\n\\Rightarrow & \\tan x =1 \\text { and } \\tan 2 x=1 \\\\\n\\Rightarrow & \\tan x =\\tan \\frac{\\pi}{4} \\text { and } \\tan 2 x=\\tan \\frac{\\pi}{4} \\\\\n\\Rightarrow & x =n \\pi+\\frac{\\pi}{4} \\text { and } 2 x=n \\pi+\\frac{\\pi}{4} \\\\\n\\Rightarrow & 2 x-x =0 \\Rightarrow x=0\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 67556,
+        "correct": 18,
+        "wrong": 82,
+        "options": {
+          "0": 20,
+          "1": 42,
+          "2": 20,
+          "3": 18
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb5dyh",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The real value of $\\alpha$ for which the expression $\\frac{1-i \\sin \\alpha}{1+2 i \\sin \\alpha}$ is purely real is</p>\n<p>where, $n\\in N$</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $(n+1) \\frac{\\pi}{2}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $(2 n+1) \\frac{\\pi}{2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $n \\pi$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " None of these"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given expression,</p>\n<p>$\\begin{aligned} z & =\\frac{1-i \\sin \\alpha}{1+2 i \\sin \\alpha} \\quad \\text{[let]}\\\\ & =\\frac{(1-i \\sin \\alpha)(1-2 i \\sin \\alpha)}{(1+2 i \\sin \\alpha)(1-2 i \\sin \\alpha)} \\\\ & =\\frac{1-i \\sin \\alpha-2 i \\sin \\alpha+2 i^2 \\sin ^2 \\alpha}{1-4 i^2 \\sin ^2 \\alpha} \\\\ & =\\frac{1-3 i \\sin \\alpha-2 \\sin ^2 \\alpha}{1+4 \\sin ^2 \\alpha} \\\\ & =\\frac{1-2 \\sin ^2 \\alpha}{1+4 \\sin ^2 \\alpha}-\\frac{3 i \\sin \\alpha}{1+4 \\sin ^2 \\alpha}\\end{aligned}$</p>\n<p>It is given that z is a purely real.</p>\n<p>$$\\begin{array}{l}\n\\therefore \\frac{-3 \\sin \\alpha}{1+4 \\sin ^2 \\alpha} =0 \\\\\n\\Rightarrow \\quad-3 \\sin \\alpha =0 \\Rightarrow \\sin \\alpha=0 \\\\\n\\alpha =n \\pi\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 78000,
+        "correct": 46,
+        "wrong": 54,
+        "options": {
+          "0": 13,
+          "1": 28,
+          "2": 46,
+          "3": 13
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb83yd",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $z=x+i y$ lies in the third quadrant, then $\\frac{\\bar{z}}{z}$ also lies in the third quadrant, if</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $x>y>0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $x< y<0$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $y< x<0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $y>x>0$\n"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $z=x+i y$ lies in third quadrant.</p>\n<p>$x<0$ and $y<0$.</p>\n<p>Now,</p>\n<p>$$\\begin{aligned}\n& \\frac{\\bar{z}}{z}=\\frac{x-i y}{x+i y}=\\frac{(x-i y)(x-i y)}{(x+i y)(x-i y)}=\\frac{x^2-y^2-2 i x y}{x^2+y^2} \\\\\n& \\frac{\\bar{z}}{z}=\\frac{x^2-y^2}{x^2+y^2}-\\frac{2 i x y}{x^2+y^2}\n\\end{aligned}$$</p>\n<p>Since, $\\frac{\\bar{z}}{z}$ also lies in third quadrant.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad & \\frac{x^2-y^2}{x^2+y^2}<0 \\text { and } \\frac{-2 x y}{x^2+y^2}<0 \\\\\n& x^2-y^2<0 \\text { and }-2 x y<0 \\\\\n& \\Rightarrow \\quad x^2< y^2 \\text { and } x y>0 \\\\\n& \\text { So, }  x< y<0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 78912,
+        "correct": 47,
+        "wrong": 53,
+        "options": {
+          "0": 24,
+          "1": 47,
+          "2": 26,
+          "3": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb5pax",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $(z+3)(\\bar{z}+3)$ is equivalent to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $|z+3|^2$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $|z-3|$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $z^2+3$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " None of these\n"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $(z+3)(\\bar{z}+3)$</p>\n<p>$$\\begin{aligned}\n\\text{Let}\\quad z & =x+i y \\\\\n\\Rightarrow \\quad & (z+3)(\\bar{z}+3)=(x+i y+3)(x+3-i y)\\\\\n& =(x+3)^2-(i y)^2=(x+3)^2+y^2 \\\\\n& =|x+3+i y|^2=|z+3|^2\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 71316,
+        "correct": 63,
+        "wrong": 37,
+        "options": {
+          "0": 63,
+          "1": 13,
+          "2": 8,
+          "3": 16
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb5e0w",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\left(\\frac{1+i}{1-i}\\right)^x=1$, then\nwhere, $n \\in N$</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $x=2 n+1$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $x=4 n$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $x=2 n$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $x=4 n+1$\n"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $\\quad\\left(\\frac{1+i}{1-i}\\right)^x=1$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad\\left[\\frac{(1+i)(1+i)}{(1-i)(1+i)}\\right]^x=1 \\Rightarrow\\left[\\frac{1+2 i+i^2}{1-i^2}\\right]^x=1 \\\\\n& \\Rightarrow \\quad\\left[\\frac{2 i}{1+1}\\right]^x=1 \\Rightarrow\\left[\\frac{2 i}{2}\\right]^x=1 \\\\\n& \\Rightarrow \\quad i^x=1 \\Rightarrow i^x=\\left(i^{4 n}\\right) {\\left[\\therefore i^{4 n}=1, n \\in N\\right]}\\\\\n& \\Rightarrow \\quad x=4 n\n\\end{aligned}\n$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 43632,
+        "correct": 74,
+        "wrong": 26,
+        "options": {
+          "0": 13,
+          "1": 74,
+          "2": 13
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb5e3c",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A real value of $x$ satisfies the equation $\\left(\\frac{3-4 i x}{3+4 i x}\\right)=\\alpha-i \\beta(\\alpha, \\beta \\in R)$, if $\\alpha^2+\\beta^2$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "1"
+            },
+            {
+              "identifier": "B",
+              "content": "$-1$"
+            },
+            {
+              "identifier": "C",
+              "content": "2"
+            },
+            {
+              "identifier": "D",
+              "content": "$-2$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given equation, $\\quad\\left(\\frac{3-4 i x}{3+4 i x}\\right)=\\alpha-i \\beta(\\alpha, \\beta \\in R)$</p>\n<p>$\\Rightarrow \\quad\\left[\\frac{3-4 i x}{3+4 i x}\\right]=\\alpha-i \\beta$</p>\n<p>Now,</p>\n<p>$(\\alpha-i \\beta)=\\frac{(3-4 i x)(3-4 i x)}{(3+4 i x)(3-4 i x)}=\\frac{9+16 i^2 x^2-24 i x}{9-16 i^2 x^2}$</p>\n<p>$\\Rightarrow \\quad \\alpha-i \\beta=\\frac{9-16 x^2-24 i x}{9+16 x^2}$</p>\n<p>$\\Rightarrow \\quad \\alpha-i \\beta=\\frac{9-16 x^2}{9+16 x^2}-\\frac{i 24 x}{9+16 x^2}\\quad \\text{... (i)}$</p>\n<p>$\\therefore \\quad \\alpha+i \\beta=\\frac{9-16 x^2}{9+16 x^2}+\\frac{i 24 x}{9+16 x^2}\\quad \\text{.... (ii)}$</p>\n<p>$$\\begin{aligned}\n\\text { So, } \\quad (\\alpha-i \\beta)(\\alpha+i \\beta) & =\\left(\\frac{9-16 x^2}{9+16 x^2}\\right)^2-\\left(\\frac{i 24 x}{9+16 x^2}\\right)^2 \\\\\n\\therefore \\quad \\alpha^2+\\beta^2 & =\\frac{81+256 x^4-288 x^2+576 x^2}{\\left(9+16 x^2\\right)^2} \\\\\n& =\\frac{81+256 x^4+288 x^2}{\\left(9+16 x^2\\right)^2} \\\\\n& =\\frac{\\left(9+16 x^2\\right)^2}{\\left(9+16 x^2\\right)^2}=1\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb5pde",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Which of the following is correct for any two complex numbers $z_1$ and $z_2$ ?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\left|z_1 z_2\\right|=\\left|z_1\\right|\\left|z_2\\right|$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\arg \\left(z_1 z_2\\right)=\\arg \\left(z_1\\right) \\cdot \\arg \\left(z_2\\right)$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\left|z_1+z_2\\right|=\\left|z_1\\right|+\\left|z_2\\right|$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\left|z_1+z_2\\right| \\geq\\left|z_1\\right|-\\left|z_2\\right|$\n"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $\\quad z_1=r_1\\left(\\cos \\theta_1+i \\sin \\theta_1\\right)$</p>\n<p>$\\Rightarrow \\quad\\left|z_1\\right|=r_1\\quad \\text{... (i)}$</p>\n<p>and $\\quad \\mathrm{z}_2=r_2\\left(\\cos \\theta_2+i \\sin \\theta_2\\right)$</p>\n<p>$\\Rightarrow \\quad\\left|z_2\\right|=r_2\\quad \\text{.... (ii)}$</p>\n<p>Now, $\\qquad z_1 z_2=r_1 r_2\\left[\\cos \\theta_1 \\cos \\theta_2+i \\sin \\theta_1 \\cos \\theta_2+i \\cos \\theta_1 \\sin \\theta_2+i^2 \\sin \\theta_1 \\sin \\theta_2\\right]$</p>\n<p>$$\\begin{aligned}\n& & & =r_1 r_2\\left[\\cos \\left(\\theta_1+\\theta_2\\right)+i \\sin \\left(\\theta_1+\\theta_2\\right)\\right] \\\\\n\\Rightarrow & & \\left|z_1 z_2\\right| & =r_1 r_2 \\\\\n\\therefore & & \\left|z_1 z_2\\right| & =\\left|z_1\\right|\\left|z_2\\right| \\quad \\text{[using Eqs. (i) and (ii)]}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 24590,
+        "correct": 62,
+        "wrong": 38,
+        "options": {
+          "0": 62,
+          "1": 15,
+          "2": 13,
+          "3": 10
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb7kyf",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The point represented by the complex number $(2-i)$ is rotated about origin through an angle $\\frac{\\pi}{2}$ in the clockwise direction, the new position of point is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $1+2 i$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $-1-2 i$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $2+i$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $-1+2 i$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $z=2-i$</p>\n<p>It is rotated about origin through an angle $\\frac{\\pi}{2}$ in the clockwise direction</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { New position } & =z e^{-i \\pi / 2}=(2-i) e^{-i \\pi / 2} \\\\\n& =(2-i)\\left[\\cos \\left(\\frac{-\\pi}{2}\\right)+i \\sin \\left(\\frac{-\\pi}{2}\\right)\\right]=(2-i)[0-i] \\\\\n& =-2 i-1=-1-2 i\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 48387,
+        "correct": 45,
+        "wrong": 55,
+        "options": {
+          "0": 19,
+          "1": 45,
+          "2": 26,
+          "3": 10
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb840q",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x, y \\in R$, then $x+i y$ is a non-real complex number, if</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $x=0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y=0$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $x \\neq 0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $y \\neq 0$\n"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $x, y \\in R$</p>\n<p>Then, $x+i y$ is non-real complex number if and only if $y \\neq 0$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 23111,
+        "correct": 24,
+        "wrong": 76,
+        "options": {
+          "0": 42,
+          "1": 18,
+          "2": 16,
+          "3": 24
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb7l0r",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $a+i b=c+i d$, then</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $a^2+c^2=0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $b^2+c^2=0$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $b^2+d^2=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $a^2+b^2=c^2+d^2$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given that, } & a+i b=c+i d \\\\\n\\Rightarrow & |a+i b|=|c+i d| \\\\\n\\Rightarrow & \\sqrt{a^2+b^2}=\\sqrt{c^2+d^2}\n\\end{array}$$</p>\n<p>On squaring both sides, we get</p>\n<p>$$a^2+b^2=c^2+d^2$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 26927,
+        "correct": 91,
+        "wrong": 9,
+        "options": {
+          "0": 5,
+          "1": 4,
+          "3": 91
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb7wcy",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The complex number $z$ which satisfies the condition $\\left|\\frac{i+z}{i-z}\\right|=1$ lies on</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " circle $x^2+y^2=1$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " the $X$-axis\n"
+            },
+            {
+              "identifier": "C",
+              "content": " the $Y$-axis\n"
+            },
+            {
+              "identifier": "D",
+              "content": " the line $x+y=1$\n"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $$\\left|\\frac{i+z}{i-z}\\right|=1$$</p>\n<p>Let $$z=x+i y$$</p>\n<p>$$\\begin{array}{llrl} \n \\therefore & \\left|\\frac{x+i(y+1)}{-x-i(y-1)}\\right| =1 \\Rightarrow \\frac{x^2+(y+1)^2}{x^2+(y-1)^2}=1 \\\\\n\\Rightarrow & x^2+(y+1)^2 =x^2+(y-1)^2 \\\\\n\\Rightarrow & 4 y =0 \\Rightarrow y=0\n\\end{array}$$</p>\n<p>So, $z$ lies on $X$-axis (real axis).</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 44351,
+        "correct": 27,
+        "wrong": 73,
+        "options": {
+          "0": 43,
+          "1": 27,
+          "2": 19,
+          "3": 11
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb6nr1",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $z$ is a complex number, then</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\left|z^2\\right|>|z|$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\left|z^2\\right|=|z|^2$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\left|z^2\\right|<|z|^2$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\left|z^2\\right| \\geq|z|^2$\n"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>If $z$ is a complex number, then $z=x+i y$</p>\n<p>$$\\begin{array}{rlrl} \n& |z|=|x+i y| \\text { and }|z|^2=|x+i y|^2 \\\\\n\\Rightarrow & |z|^2 =x^2+y^2 \\quad \\text{... (i)}\\\\\n\\text { and } & z^2 =(x+i y)^2=x^2+i^2 y^2+i 2 x y \\\\\n& z^2 =x^2-y^2+i 2 x y \\\\\n\\Rightarrow & \\left|z^2\\right| =\\sqrt{\\left(x^2-y^2\\right)^2+(2 x y)^2} \\\\\n\\Rightarrow & \\left|z^2\\right| =\\sqrt{x^4+y^4-2 x^2 y^2+4 x^2 y^2} \\\\\n\\Rightarrow & \\left|z^2\\right| =\\sqrt{x^4+y^4+2 x^2 y^2}=\\sqrt{\\left(x^2+y^2\\right)^2} \\\\\n\\Rightarrow & \\left|z^2\\right| =x^2+y^2\\quad \\text{... (ii)}\n\\end{array}$$</p>\n<p>From Eqs. (i) and (ii),</p>\n<p>$$|z|^2=\\left|z^2\\right|$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 18867,
+        "correct": 64,
+        "wrong": 36,
+        "options": {
+          "0": 24,
+          "1": 64,
+          "2": 4,
+          "3": 7
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb6nvc",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left|z_1+z_2\\right|=\\left|z_1\\right|+\\left|z_2\\right|$ is possible, if</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $z_2=\\bar{z}_1$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $z_2=\\frac{1}{z_1}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\arg \\left(z_1\\right)=\\arg \\left(z_2\\right)$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\left|z_1\\right|=\\left|z_2\\right|$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\text { Given that, } \\quad\\left|z_1+z_2\\right|=\\left|z_1\\right|+\\left|z_2\\right| \\\\\n& \\Rightarrow\\left|r_1\\left(\\cos \\theta_1+i \\sin \\theta_1\\right)+r_2\\left(\\cos \\theta_2+i \\sin \\theta_2\\right)\\right|=\\left|r_1\\left(\\cos \\theta_1+i \\sin \\theta_1\\right)\\right| \\\\\n& +\\left|r_2\\left(\\cos \\theta_2+i \\sin \\theta_2\\right)\\right| \\\\\n& \\Rightarrow\\left|\\left(r_1 \\cos \\theta_1+r_2 \\cos \\theta\\right)+i\\left(r_1 \\sin \\theta_1+r_2 \\sin \\theta_2\\right)\\right|=r_1+r_2 \\\\\n& \\Rightarrow \\quad \\sqrt{r_1^2 \\cos ^2 \\theta_1+r_2^2 \\cos ^2 \\theta_2+2 r_1 r_2 \\cos \\theta_1 \\cos \\theta_2+r_1^2 \\sin ^2 \\theta_1+r_2^2 \\sin ^2 \\theta_2} \\\\\n& \\sqrt{+2 r_1 r_2 \\sin \\theta_1 \\sin \\theta_2}=r_1+r_2 \\\\\n& \\Rightarrow \\quad \\sqrt{r_1^2+r_2^2+2 r_1 r_2\\left[\\cos \\left(\\theta_1-\\theta_2\\right)\\right]}=r_1+r_2\n\\end{aligned}\\\\\n&\\text { On squaring both sides, we get }\\\\\n&r_1^2+r_2^2+2 r_1 r_2 \\cos \\left(\\theta_1-\\theta_2\\right)=r_1^2+r_2^2+2 r_1 r_2\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{rr}\n\\Rightarrow & 2 r_1 r_2\\left[1-\\cos \\left(\\theta_1-\\theta_2\\right)\\right]=0 \\\\\n\\Rightarrow & 1-\\cos \\left(\\theta_1-\\theta_2\\right)=0 \\\\\n\\Rightarrow & \\cos \\left(\\theta_1-\\theta_2\\right)=1 \\\\\n\\Rightarrow & \\cos \\left(\\theta_1-\\theta_2\\right)=\\cos 0 \\Upsilon \\\\\n\\Rightarrow & \\theta_1-\\theta_2=0 \\Upsilon \\\\\n\\Rightarrow & \\theta_1=\\theta_2 \\\\\n\\therefore & \\arg \\left(z_1\\right)=\\arg \\left(z_2\\right)\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 23805,
+        "correct": 46,
+        "wrong": 54,
+        "options": {
+          "0": 7,
+          "1": 17,
+          "2": 46,
+          "3": 29
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb5zct",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The real value of $\\theta$ for which the expression $\\frac{1+i \\cos \\theta}{1-2 i \\cos \\theta}$ is a real number is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $n \\pi+\\frac{\\pi}{4}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $n \\pi+(-1)^n \\frac{\\pi}{4}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $2 n \\pi \\pm \\frac{\\pi}{2}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " None of these\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Given expression }=\\frac{1+i \\cos \\theta}{1-2 i \\cos \\theta}=\\frac{(1+i \\cos \\theta)(1+2 i \\cos \\theta)}{(1-2 i \\cos \\theta)(1+2 i \\cos \\theta)} \\\\\n& =\\frac{1+i \\cos \\theta+2 i \\cos \\theta+2 i^2 \\cos ^2 \\theta}{1-4 i^2 \\cos ^2 \\theta} \\\\\n& =\\frac{1+3 i \\cos \\theta-2 \\cos ^2 \\theta}{1+4 \\cos ^2 \\theta}\n\\end{aligned}$$</p>\n<p>For real value of $\\theta, \\frac{3 \\cos \\theta}{1+4 \\cos ^2 \\theta}=0$</p>\n<p>$$\\begin{array}{rlrl}\n\\Rightarrow & 3 \\cos \\theta =0 \\\\\n\\Rightarrow & \\cos \\theta =\\cos \\frac{\\pi}{2} \\\\\n\\Rightarrow & \\theta =2 n \\pi \\pm \\frac{\\pi}{2}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 49333,
+        "correct": 44,
+        "wrong": 56,
+        "options": {
+          "0": 22,
+          "1": 17,
+          "2": 44,
+          "3": 17
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb9kcg",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $\\arg(x)$, when $x < 0$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\frac{\\pi}{2}$"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\pi$"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $z=x+0i$ and $x &lt; 0$</p>\n<p>$|z|=\\sqrt{(-1)^2+(0^2)}=1$</p>\n<p>Since, the point $(x,0)$ represent $z=x+0i$ lies on the negative side of real axis.</p>\n<p>$\\therefore$ Principal $\\arg(z)=\\pi$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m18rfl2i/f84ea149-cc39-44dd-a5ea-41868403329c/2c12eac0-763b-11ef-af9c-a99fcb757601/file-jaoe38c1m18rfl2k.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m18rfl2i/f84ea149-cc39-44dd-a5ea-41868403329c/2c12eac0-763b-11ef-af9c-a99fcb757601/file-jaoe38c1m18rfl2k.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 30444,
+        "correct": 33,
+        "wrong": 67,
+        "options": {
+          "0": 22,
+          "1": 31,
+          "2": 33,
+          "3": 13
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb8bzl",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "complex-numbers-and-quadratic-equations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f(z)=\\frac{7-z}{1-z^2}$, where $z=1+2 i$, then $|f(z)|$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{|z|}{2}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $|z|$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $2|z|$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " None of these"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Let}\\quad z & =1+2 i \\\\\n\\Rightarrow \\quad |z| & =\\sqrt{1+4}=\\sqrt{5}\n\\end{aligned}$$</p>\n<p>Now, $$f(z)=\\frac{7-z}{1-z^2}=\\frac{7-1-2 i}{1-(1+2 i)^2}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{6-2 i}{1-1-4 i^2-4 i}=\\frac{6-2 i}{4-4 i} \\\\\n& =\\frac{(3-i)(2+2 i)}{(2-2 i)(2+2 i)} \\\\\n& =\\frac{6-2 i+6 i-2 i^2}{4-4 i^2}=\\frac{6+4 i+2}{4+4} \\\\\n& =\\frac{8+4 i}{8}=1+\\frac{1}{2} i \\\\\nf(z) & =1+\\frac{1}{2} i \\\\\n\\therefore \\quad |f(z)| & =\\sqrt{1+\\frac{1}{4}}=\\sqrt{\\frac{4+1}{4}}=\\frac{\\sqrt{5}}{2}=\\frac{|z|}{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 77974,
+        "correct": 39,
+        "wrong": 61,
+        "options": {
+          "0": 39,
+          "1": 11,
+          "2": 37,
+          "3": 13
+        }
+      }
+    }
+  ]
+}

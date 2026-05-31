@@ -1,0 +1,824 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m1kb8mc5",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Give an example of a statement $P(n)$ which is true for all $n \\geq 4$ but $P(1)$, $P(2)$ and $P(3)$ are not true. Justify your answer.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let the statement $P(n): 3 n< n!$</p>\n<p>For $n=1,3 \\times 1<1$ !\n[false]</p>\n<p>For $n=2,3 \\times 2<2!\\Rightarrow 6<2$\n[false]</p>\n<p>For $n=3,3 \\times 3<3!\\quad \\Rightarrow 9<6$ [false]</p>\n<p>For $n=4,3 \\times 4<4!\\quad \\Rightarrow \\quad 12<24$\n[true]</p>\n<p>For $n=5,3 \\times 5<5!\\Rightarrow 15<5 \\times 4 \\times 3 \\times 2 \\times 1 \\Rightarrow 15<120$\n[true]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8utq",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Give an example of a statement $P(n)$ which is true for all $n$. Justify your answer.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the statement</p>\n<p>$P(n): 1^2+2^2+3^2+\\supset+n^2=\\frac{n(n+1)(2 n+1)}{6}$</p>\n<p>$$\\begin{array}{ll}\n\\text { For } n=1, & 1=\\frac{1(1+1)(2 \\times 1+1)}{6} \\\\\n\\Rightarrow & 1=\\frac{2(3)}{6} \\\\\n\\Rightarrow & 1=1\n\\end{array}$$</p>\n<p>$$\n\\begin{array}{lr}\n\\text { For } n=2, & 1+2^2=\\frac{2(2+1)(4+1)}{6} \\\\\n\\Rightarrow & 5=\\frac{30}{6} \\Rightarrow 5=5\n\\end{array}$$</p>\n<p>$$\n\\begin{aligned}\n&\\begin{aligned}\n& \\text { For } n=3, \\quad 1+2^2+3^2=\\frac{3(3+1)(7)}{6} \\\\\n& \\Rightarrow \\quad 1+4+9=\\frac{3 \\times 4 \\times 7}{6} \\\\\n& \\Rightarrow \\quad 14=14\n\\end{aligned}\\\\\n\\end{aligned}$$</p>\n<p>Hence, the given statement is true for all n.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5dp7",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$4^n-1$ is divisible by 3, for each natural number n.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): 4^n-1$ is divisible by 3 for each natural number $n$.</p>\n<p>Step I Now, we observe that $P(1)$ is true.</p>\n<p>$$P(1)=4^1-1=3$$</p>\n<p>It is clear that 3 is divisible by 3 .</p>\n<p>Hence, $P(1)$ is true.</p>\n<p>Step II Assume that, $P(n)$ is true for $n=k$</p>\n<p>$P(k): 4^k-1$ is divisible by 3</p>\n<p>$$x 4^k-1=3 q$$</p>\n<p>Step III Now, to prove that $P(k+1)$ is true.</p>\n<p>$$\n\\begin{aligned}\n&\\begin{aligned}\n& P(k+1): 4^{k+1}-1 \\\\\n& =4^k \\cdot 4-1 \\\\\n& =4^k \\cdot 3+4^k-1 \\\\\n& =3 \\cdot 4^k+3 q \\quad {\\left[\\because 4^k-1=3 q\\right]} \\\\\n& =3\\left(4^k+q\\right)\n\\end{aligned}\\\\\n\\end{aligned}$$</p>\n<p>Thus, $P(k+1)$ is true whenever $P(k)$ is true.</p>\n<p>Hence, by the principle of mathematical induction $P(n)$ is true for all natural number n.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb68vq",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$2^{3 n}-1$ is divisible by 7 , for all natural numbers $n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): 2^{3 n}-1$ is divisible by 7</p>\n<p>Step I We observe that $P(1)$ is true.<p>\n<p>$$P(1): 2^{3 \\times 1}-1=2^3-1=8-1=7$$</p>\n<p>It is clear that $P(1)$ is true.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$,</p>\n<p>$P(k): 2^{3 k}-1$ is divisible by 7.</p>\n<p>$$\\Rightarrow \\quad 2^{3 k}-1=7 q$$</p>\n<p>$$\\begin{aligned}\n&\\text { Step III Now, to prove } P(k+1) \\text { is true. }\\\\\n&\\begin{aligned}\nP(k+1) & : 2^{3(k+1)}-1 \\\\\n& =2^{3 k} \\cdot 2^3-1 \\\\\n& =2^{3 k}(7+1)-1 \\\\\n& =7 \\cdot 2^{3 k}+2^{3 k}-1 \\\\\n& =7 \\cdot 2^{3 k}+7 q \\quad \\text{[from step II]}\\\\\n& =7\\left(2^{3 k}+q\\right)\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Hence, $P(k+1)$ : is true whenever $P(k)$ is true.</p>\n<p>So, by the principle of mathematical induction $P(n)$ is true for all natural number $n$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5yw7",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$n^3-7 n+3$ is divisible by 3 , for all natural numbers $n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): n^3-7 n+3$ is divisible by 3 , for all natural number $n$.</p>\n<p>Step I We observe that $P(1)$ is true.</p>\n<p>$$\\begin{aligned}\nP(1) & =(1)^3-7(1)+3 \\\\\n& =1-7+3 \\\\\n& =-3, \\text { which is divisible by } 3 .\n\\end{aligned}$$</p>\n<p>Hence, $P(1)$ is true.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$\\therefore \\quad P(k)=k^3-7 k+3=3 q$$</p>\n<p>Step III To prove $P(k+1)$ is true</p>\n<p>$$\\begin{aligned}\nP(k+1) & :(k+1)^3-7(k+1)+3 \\\\\n& =k^3+1+3 k(k+1)-7 k-7+3 \\\\\n& =k^3-7 k+3+3 k(k+1)-6 \\\\\n& =3 q+3[k(k+1)-2]\n\\end{aligned}$$</p>\n<p>Hence, $P(k+1)$ is true whenever $P(k)$ is true. [from step II]</p>\n<p>So, by the principle of mathematical induction $P(n)$ : is true for all natural number $n$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7w5z",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$3^{2 n}-1$ is divisible by 8, for all natural numbers $n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): 3^{2 n}-1$ is divisible by 8 , for all natural numbers.</p>\n<p>Step I We observe that $P(1)$ is true.</p>\n<p>$$\\begin{aligned}\nP(1): 3^{2(1)}-1 & =3^2-1 \\\\\n& =9-1=8 \\text {, which is divisible by } 8 .\n\\end{aligned}$$</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$P(k): 3^{2 k}-1=8 q$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true.</p>\n<p>$$\\begin{aligned}\nP(k+1) & : 3^{2(k+1)}-1 \\\\\n& =3^{2 k} \\cdot 3^2-1 \\\\\n& =3^{2 k} \\cdot(8+1)-1 \\\\\n& =8 \\cdot 3^{2 k}+3^{2 k}-1 \\\\\n& =8 \\cdot 3^{2 k}+8 q \\\\\n& =8\\left(3^{2 k}+9\\right)\\quad \\text{[from step II]}\n\\end{aligned}$$</p>\n<p>Hence, $P(k+1)$ is true whenever $P(k)$ is true.</p>\n<p>So, by the principle of mathematical induction $P(n)$ is true for all natural numbers n.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6h8c",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>For any natural numbers $n, 7^n-2^n$ is divisible by 5.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the given statement is $P(n): 7^n-2^n$ is divisible by 5 , for any natural number $n$.</p>\n<p>Step I We observe that $P(1)$ is true.</p>\n<p>$$P(1)=7^1-2^1=5 \\text {, which is divisible by } 5 \\text {. }$$</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$P(k)=7^k-2^k=5 q$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true,</p>\n<p>$$\\begin{gathered}\nP(k+1): 7^{k+1}-2^{k+1} \\\\\n=7^k \\cdot 7-2^k \\cdot 2\\\\\n\\begin{aligned}\n&\\begin{aligned}\n& =7^k \\cdot(5+2)-2^k \\cdot 2 \\\\\n& =7^k \\cdot 5+2 \\cdot 7^k-2^k \\cdot 2 \\\\\n& =5 \\cdot 7^k+2\\left(7^k-2^k\\right) \\\\\n& =5 \\cdot 7^k+2(5 q) \\\\\n& =5\\left(7^k+2 q\\right), \\text { which is divisible by } 5\n\\end{aligned}\\\\\n&\\text { [from step II] }\n\\end{aligned}\n\\end{gathered}$$</p>\n<p>So, $P(k+1)$ is true whenever $P(k)$ is true.</p>\n<p>Hence, by the principle of mathematical induction $P(n)$ is true for any natural number n.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb71xb",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>For any natural numbers $n, x^n-y^n$ is divisible by $x-y$, where $x$ and $y$ are any integers with $x \\neq y$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): x^n-y^n$ is divisible by $x-y$, where $x$ and $y$ are any integers with $x \\neq y$.</p>\n<p>Step I We observe that $P(1)$ is true.</p>\n<p>$$P(1): x^1-y^1=x-y$$</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$P(k): x^k-y^k \\text { is divisible by }(x-y) \\text {. }$$</p>\n<p>$$\\therefore \\quad x^k-y^k=q(x-y)$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true.</p>\n<p>$$\\begin{aligned}\nP(k+1) & : x^{k+1}-y^{k+1} \\\\\n& =x^k \\cdot x-y^k \\cdot y \\\\\n& =x^k \\cdot x-x^k \\cdot y+x^k \\cdot y-y^k \\cdot y \\\\\n& =x^k(x-y)+y\\left(x^k-y^k\\right) \\\\\n& =x^k(x-y)+y q(x-y) \\\\\n& =(x-y)\\left[x^k+y q\\right], \\text { which is divisible by }(x-y) . \\quad \\text { [from step II] }\n\\end{aligned}$$</p>\n<p>Hence, $P(k+1)$ is true whenever $P(k)$ is true. So, by the principle of mathematical induction $P(n)$ is true for any natural number $n$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5yyg",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$n^3-n$ is divisible by 6, for each natural number $n\\ge2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): n^3-n$ is divisible by 6 , for each natural number $n \\geq 2$.</p>\n<p>Step I We observe that $P(2)$ is true. $P(2):(2)^3-2$</p>\n<p>$\\Rightarrow \\quad 8-2=6$, which is divisible by 6.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$\\begin{aligned}\n& P(k): k^3-k \\text { is divisible by } 6 \\\\\n& k^3-k=6 q\n\\end{aligned}$$</p>\n<p>Step III To prove $P(k+1)$ is true</p>\n<p>$$\\begin{aligned}\nP(k & +1):(k+1)^3-(k+1) \\\\\n& =k^3+1+3 k(k+1)-(k+1) \\\\\n& =k^3+1+3 k^2+3 k-k-1 \\\\\n& =k^3-k+3 k^2+3 k \\\\\n& =6 q+3 k(k+1) \\quad \\text{[from step II]}\n\\end{aligned}$$</p>\n<p>We know that, $3 k(k+1)$ is divisible by 6 for each natural number $n=k$.</p>\n<p>So, $P(k+1)$ is true. Hence, by the principle of mathematical induction $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb83tu",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$n\\left(n^2+5\\right)$ is divisible by 6 , for each natural number $n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): n\\left(n^2+5\\right)$ is divisible by 6 , for each natural number $n$.</p>\n<p>Step I We observe that $P(1)$ is true.</p>\n<p>$P(1): 1\\left(1^2+5\\right)=6$, which is divisible by 6.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$\\begin{gathered}\n& P(k): k\\left(k^2+5\\right) \\text { is divisible by } 6 . \\\\\n& \\therefore \\quad k\\left(k^2+5\\right)=6 q\n\\end{gathered}$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true, we have</p>\n<p>$$\\begin{aligned}\nP(k+1): & (k+1)\\left[(k+1)^2+5\\right] \\\\\n& =(k+1)\\left[k^2+2 k+1+5\\right] \\\\\n& =(k+1)\\left[k^2+2 k+6\\right] \\\\\n& =k^3+2 k^2+6 k+k^2+2 k+6 \\\\\n& =k^3+3 k^2+8 k+6 \\\\\n& =k^3+5 k+3 k^2+3 k+6 \\\\\n& =k\\left(k^2+5\\right)+3\\left(k^2+k+2\\right) \\\\\n& =(6 q)+3\\left(k^2+k+2\\right)\n\\end{aligned}$$</p>\n<p>We know that, $k^2+k+2$ is divisible by 2, where, $k$ is even or odd.</p>\n<p>Since, $P(k+1): 6 q+3\\left(k^2+k+2\\right)$ is divisible by 6 . So, $P(k+1)$ is true whenever $P(k)$ is true.</p>\n<p>Hence, by the principle of mathematical induction $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5oy0",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$n^2<2^n$, for all natural numbers $n \\geq 5$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the given statement</p>\n<p>$P(n): n^2<2^n$ for all natural numbers $n \\geq 5$.</p>\n<p>Step I We observe that $P(5)$ is true</p>\n<p>$$\\begin{aligned}\nP(5): & 5^2<2^5 \\\\\n& =25<32\n\\end{aligned}$$</p>\n<p>Hence, $P(5)$ is true.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$P(k)=k^2<2^k \\text { is true. }$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true, we have to show that</p>\n<p>$$\\begin{aligned}\nP(k+1) & :(k+1)^2<2^{k+1} \\\\\n\\text{Now,}\\quad k^2<2^k & =k^2+2 k+1<2^k+2 k+1 \\\\\n& =(k+1)^2<2^k+2 k+1 \\quad \\text{.... (i)}\\\\\n\\text{Now, } (2k+1)< 2^k & =2^k+2 k+1<2^k+2^k \\\\\n& =2^k+2 k+1<2 \\cdot 2^k \\\\\n& =2^k+2 k+1<2^{k+1}\\quad \\text{... (ii)}\n\\end{aligned}$$</p>\n<p>From Eqs. (i) and (ii), we get $(k+1)^2<2^{k+1}$</p>\n<p>So, $P(k+1)$ is true, whenever $P(k)$ is true. Hence, by the principle of mathematical induction $P(n)$ is true for all natural numbers $n \\geq 5$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5p04",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$122 n<(n+2)$ ! for all natural numbers $n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the statement</p>\n<p>$P(n): 2 n<(n+2)$ ! for all natural number $n$.</p>\n<p>Step I We observe that, $P(1)$ is true. $P(1): 2(1)<(1+2)$ !</p>\n<p>$\\Rightarrow 2<3!\\Rightarrow 2<3 \\times 2 \\times 1 \\Rightarrow 2<6$</p>\n<p>Hence, $P(1)$ is true.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$,</p>\n<p>$$P(k): 2 k<(k+2)!\\text { is true. }$$</p>\n<p>Step III To prove $P(k+1)$ is true, we have to show that</p>\n<p>$$P(k+1): 2(k+1)<(k+1+2)!</p>\n<p>$$\\begin{aligned}\n\\text{Now,}\\quad 2 k & <(k+2)! \\\\\n2 k+2 & <(k+2)!+2 \\\\\n2(k+1) & <(k+2)!+2\\quad \\text{.... (i)}\n\\end{aligned}$$</p>\n<p>Also, $$(k+2)!+2<(k+3)!\\quad \\text{.... (ii)}$$</p>\n<p>From Eqs. (i) and (ii),</p>\n<p>$$2(k+1)<(k+1+2)!$$</p>\n<p>So, $P(k+1)$ is true, whenever $P(k)$ is true.</p>\n<p>Hence, by principle of mathematical induction $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5z0j",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sqrt{n}<\\frac{1}{\\sqrt{1}}+\\frac{1}{\\sqrt{2}}+\\supset+\\frac{1}{\\sqrt{n}}$, for all natural numbers $n \\geq 2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the statement</p>\n<p>$P(n): \\sqrt{n}<\\frac{1}{\\sqrt{1}}+\\frac{1}{\\sqrt{2}}+\\supset+\\frac{1}{\\sqrt{n}}$, for all natural numbers $n \\geq 2$.</p>\n<p>Step I We observe that $P(2)$ is true.</p>\n<p>$P(2): \\sqrt{2}<\\frac{1}{\\sqrt{1}}+\\frac{1}{\\sqrt{2}}$, which is true.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$P(k): \\sqrt{k}<\\frac{1}{\\sqrt{1}}+\\frac{1}{\\sqrt{2}}+\\supset+\\frac{1}{\\sqrt{k}} \\text { is true. }$$</p>\n<p>Step III To prove $P(k+1)$ is true, we have to show that</p>\n<p>$P(k+1): \\sqrt{k+1}<\\frac{1}{\\sqrt{1}}+\\frac{1}{\\sqrt{2}}+\\supset+\\frac{1}{\\sqrt{k+1}}$ is true.</p>\n<p>$$\\begin{aligned}\n& \\text { Given that, } \\quad \\sqrt{k}<\\frac{1}{\\sqrt{1}}+\\frac{1}{\\sqrt{2}}+\\supset+\\frac{1}{\\sqrt{k}} \\\\\n& \\Rightarrow \\quad \\sqrt{k}+\\frac{1}{\\sqrt{k+1}}<\\frac{1}{\\sqrt{1}}+\\frac{1}{\\sqrt{2}}+\\supset+\\frac{1}{\\sqrt{k}}+\\frac{1}{\\sqrt{k+1}} \\\\\n& \\Rightarrow \\quad \\frac{(\\sqrt{k})(\\sqrt{k+1})+1}{\\sqrt{k+1}}<\\frac{1}{\\sqrt{1}}+\\frac{1}{\\sqrt{2}}+\\frac{1}{\\sqrt{k}}+\\frac{1}{\\sqrt{k+1}} \\quad \\text{... (i)}\\\\\n& \\text { If } \\sqrt{k+1}<\\frac{\\sqrt{k} \\sqrt{k+1}+1}{\\sqrt{k+1}} \\\\\n& \\Rightarrow \\quad k+1<\\sqrt{k} \\sqrt{k+1}+1 \\\\\n& \\Rightarrow \\quad k<\\sqrt{k(k+1)} \\Rightarrow \\sqrt{k}<\\sqrt{k}+1 \\quad \\text{... (ii)}\n\\end{aligned}$$</p>\n<p>From Eqs. (i) and (ii),</p>\n<p>$$\\sqrt{k+1}<\\frac{1}{\\sqrt{1}}+\\frac{1}{\\sqrt{2}}+\\supset+\\frac{1}{\\sqrt{k+1}}$$</p>\n<p>So, $P(k+1)$ is true, whenever $P(k)$ is true. Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8uvi",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$142+4+6+\\supset+2 n=n^2+n$, for all natural numbers $n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): 2+4+6+\\supset+2 n=n^2+n$</p>\n<p>For all natural numbers $n$.</p>\n<p>Step I We observe that $P(1)$ is true.</p>\n<p>$$P(1): 2=1^2+1$$</p>\n<p>$2=2$, which is true.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$\\therefore \\quad P(k): 2+4+6+\\supset+2 k=k^2+k$$</p>\n<p>Step III To prove that $P(k+1)$ is true.</p>\n<p>$$\\begin{aligned}\nP(k+1): & 2+4+6+8+\\ldots+2 k+2(k+1) \\\\\n& =k^2+k+2(k+1) \\\\\n& =k^2+k+2 k+2 \\\\\n& =k^2+2 k+1+k+1 \\\\\n& =(k+1)^2+k+1\n\\end{aligned}$$</p>\n<p>So, $P(k+1)$ is true, whenever $P(k)$ is true.</p>\n<p>Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8agj",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$1+2+2^2+\\supset+2^n=2^{n+1}-1$ for all natural numbers $n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the given statement</p>\n<p>$P(n): 1+2+2^2+\\supset+2^n=2^{n+1}-1$, for all natural numbers $n$</p>\n<p>Step I We observe that $P(0)$ is true.</p>\n<p>$$\\begin{aligned}\nP(1): 1 & =2^{0+1}-1 \\\\\n1 & =2^1-1 \\\\\n1 & =2-1 \\\\\n1 & =1, \\text { which is true. }\n\\end{aligned}$$</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>So, $P(k): 1+2+2^2+\\supset+2^k=2^{k+1}-1$ is true.</p>\n<p>Step III Now, to prove $P(k+1)$ is true.</p>\n<p>$$\\begin{aligned}\nP(k+1): & 1+2+2^2+\\supset+2^k+2^{k+1} \\\\\n& =2^{k+1}-1+2^{k+1} \\\\\n& =2 \\cdot 2^{k+1}-1 \\\\\n& =2^{k+2}-1 \\\\\n& =2^{(k+1)+1}-1\n\\end{aligned}$$</p>\n<p>So, $P(k+1)$ is true, whenever $P(k)$ is true.</p>\n<p>Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb959a",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$1+5+9+\\supset+(4 n-3)=n(2 n-1)$, for all natural numbers $n$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): 1+5+9+\\supset+(4 n-3)=n(2 n-1)$, for all natural numbers $n$.</p>\n<p>Step I We observe that $P(1)$ is true.</p>\n<p>$P(1): 1=1(2 \\times 1-1), 1=2-1$ and $1=1$, which is true.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>So, $P(k): 1+5+9+\\supset+(4 k-3)=k(2 k-1)$ is true.</p>\n<p>Step III Now, to prove $P(k+1)$ is true.</p>\n<p>$$\\begin{aligned}\nP(k+1) & : 1+5+9+\\supset+(4 k-3)+4(k+1)-3 \\\\\n& =k(2 k-1)+4(k+1)-3 \\\\\n& =2 k^2-k+4 k+4-3 \\\\\n& =2 k^2+3 k+1 \\\\\n& =2 k^2+2 k+k+1 \\\\\n& =2 k(k+1)+1(k+1) \\\\\n& =(k+1)(2 k+1) \\\\\n& =(k+1)[2 k+1+1-1] \\\\\n& =(k+1)[2(k+1)-1]\n\\end{aligned}$$</p>\n<p>So, $P(k+1)$ is true, whenever $p(k)$ is true, hence $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7bz6",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A sequence $a_1, a_2, a_3, \\ldots$ is defined by letting $a_1=3$ and $a_k=7 a_{k-1}$, for all natural numbers $k \\geq 2$. Show that $a_n=3 \\cdot 7^{n-1}$ for all natural numbers.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>A sequence $a_1, a_2, a_3, \\ldots$ is defined by letting $a_1=3$ and $a_k=7 a_{k-1}$, for all natural numbers $k \\geq 2$.</p>\n<p>Let $\\quad P(n): a_n=3 \\cdot 7^{n-1}$ for all natural numbers.</p>\n<p>Step I We observe $P(2)$ is true.</p>\n<p>For $n=2$,</p>\n<p>$a_2=3 \\cdot 7^{2-1}=3 \\cdot 7^1=21$ is true.</p>\n<p>As $$a_1=3, a_k=7 a_{k-1}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & a_2=7 \\cdot a_{2-1}=7 \\cdot a_1 \\\\\n\\Rightarrow & a_2=7 \\times 3=21 \\quad [\\because a_1=3]\n\\end{array}$$</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$P(k): a_k=3 \\cdot 7^{k-1}$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true, we have to show that</p>\n<p>$$\\begin{aligned}\nP(k+1): a_{k+1} & =3 \\cdot 7^{k+1-1} \\\\\na_{k+1} & =7 \\cdot a_{k+1-1}=7 \\cdot a_k \\\\\n& =7 \\cdot 3 \\cdot 7^{k-1}=3 \\cdot 7^{k-1+1}\n\\end{aligned}$$</p>\n<p>So, $P(k+1)$ is true, whenever $p(k)$ is true. Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7c13",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A sequence $b_0, b_1, b_2, \\ldots$ is defined by letting $b_0=5$ and $b_k=4+b_{k-1}$, for all natural numbers $k$. Show that $b_n=5+4 n$, for all natural number $n$ using mathematical induction.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the given statement,</p>\n<p>$P(n): b_n=5+4 n$, for all natural numbers given that $b_0=5$ and $b_k=4+b_{k-1}$ Step I $P(1)$ is true.</p>\n<p>$$P(1): b_1=5+4 \\times 1=9$$</p>\n<p>As $$b_0=5, b_1=4+b_0=4+5=9$$</p>\n<p>Hence, $P(1)$ is true.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$P(k): b_k=5+4 k$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true, we have to show that</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad P(k+1): b_{k+1} & =5+4(k+1) \\\\\nb_{k+1} & =4+b_{k+1-1} \\\\\n& =4+b_k \\\\\n& =4+5+4 k=5+4(k+1)\n\\end{aligned}$$</p>\n<p>So, by the mathematical induction $P(k+1)$ is true whenever $P(k)$ is true, hence $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb95ba",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A sequence $d_1, d_2, d_3, \\ldots$ is defined by letting $d_1=2$ and $d_k=\\frac{d_{k-1}}{k}$, for all natural numbers, $k \\geq 2$. Show that $d_n=\\frac{2}{n!}$, for all $n \\in N$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n): d_n=\\frac{2}{n!}, \\forall n \\in N$, to prove $P(2)$ is true.</p>\n<p>Step I $$P(2): d_2=\\frac{2}{2!}=\\frac{2}{2 \\times 1}=1$$</p>\n<p>As, given</p> \n<p>$$\\begin{aligned}\nd_1 & =2 \\\\\nd_k & =\\frac{d_{k-1}}{k} \\\\\nd_2 & =\\frac{d_1}{2}=\\frac{2}{2}=1\n\\end{aligned}$$</p>\n<p>Hence, $P(2)$ is true.</p>\n<p>Step II Now, assume that $P(k)$ is true.</p>\n<p>$$P(k): d_k=\\frac{2}{k!}$$</p>\n<p>Step III Now, to prove that $P(k+1)$ is true, we have to show that $P(k+1): d_{k+1}=\\frac{2}{(k+1)!}$</p>\n<p>$$\\begin{aligned}\nd_{k+1} & =\\frac{d_{k+1-1}}{k}=\\frac{d_k}{k} \\\\\n& =\\frac{2}{k!k}=\\frac{2}{(k+1)!}\n\\end{aligned}$$</p>\n<p>So, $P(k+1)$ is true. Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7w8f",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that for all $n \\in N$\n\n$$\n\\begin{aligned}\n\\cos \\alpha+ & \\cos (\\alpha+\\beta)+\\cos (\\alpha+2 \\beta)+\\supset+\\cos [\\alpha+(n-1) \\beta] \\\\\n= & \\frac{\\cos \\left[\\alpha+\\left(\\frac{n-1}{2}\\right) \\beta\\right] \\sin \\left(\\frac{n \\beta}{2}\\right)}{\\sin \\frac{\\beta}{2}}\n\\end{aligned}$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $\\begin{aligned} P(n): \\cos \\alpha+\\cos (\\alpha+\\beta)+ & \\cos (\\alpha+2 \\beta)+\\supset+\\cos [\\alpha+(n-1) \\beta] \\\\ = & \\frac{\\cos \\left[\\alpha+\\left(\\frac{n-1}{2}\\right) \\beta\\right] \\sin \\left(\\frac{n \\beta}{2}\\right)}{\\sin \\frac{\\beta}{2}}\\end{aligned}$</p>\n<p>Step I We observe that $P(1)$</p>\n<p>$$\\begin{aligned}\nP(1): \\cos \\alpha & =\\frac{\\cos \\left[\\alpha+\\left(\\frac{1-1}{2}\\right)\\right] \\beta \\sin \\frac{\\beta}{2}}{\\sin \\frac{\\beta}{2}}=\\frac{\\cos (\\alpha+0) \\sin \\frac{\\beta}{2}}{\\sin \\frac{\\beta}{2}} \\\\\n\\cos \\alpha & =\\cos \\alpha\n\\end{aligned}$$</p>\n<p>Hence, $P(1)$ is true.</p>\n<p>Step II Now, assume that $P(n)$ is true for $n=k$.</p>\n<p>$$\\begin{aligned}\n& P(k): \\cos \\alpha+\\cos (\\alpha+\\beta)+\\cos (\\alpha+2 \\beta)+\\supset+\\cos [\\alpha+(k-1) \\beta] \\\\\n&= \\frac{\\cos \\left[\\alpha+\\left(\\frac{k-1}{2}\\right)\\right] \\beta \\sin \\frac{k \\beta}{2}}{\\sin \\frac{\\beta}{2}}\n\\end{aligned}$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true, we have to show that</p>\n<p>$\\begin{aligned} P(k+1): \\cos \\alpha+\\cos (\\alpha+\\beta)+\\cos (\\alpha+2 \\beta)+\\supset+\\cos [\\alpha+(k-1) \\beta] \\\\ +\\cos [\\alpha+(k+1-1) \\beta]=\\frac{\\cos \\left(\\alpha+\\frac{k \\beta}{2}\\right) \\sin (k+1) \\frac{\\beta}{2}}{\\sin \\frac{\\beta}{2}}\\end{aligned}$</p>\n<p>$$\\begin{aligned}\n\\mathrm{LHS} & =\\cos \\alpha+\\cos (\\alpha+\\beta)+\\cos (\\alpha+2 \\beta)+\\supset+\\cos [\\alpha+(k-1) \\beta]+\\cos (\\alpha+k \\beta) \\\\\n& =\\frac{\\cos \\left[\\alpha+\\left(\\frac{k-1}{2}\\right) \\beta\\right] \\sin \\frac{k \\beta}{2}}{\\sin \\frac{\\beta}{2}}+\\cos (\\alpha+k \\beta) \\\\\n& =\\frac{\\cos \\left[\\alpha+\\left(\\frac{k-1}{2}\\right) \\beta\\right] \\sin \\frac{k \\beta}{2}+\\cos (\\alpha+k \\beta) \\sin \\frac{\\beta}{2}}{\\sin \\frac{\\beta}{2}}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{\\sin \\left(\\alpha+\\frac{k \\beta}{2}-\\frac{\\beta}{2}+\\frac{k \\beta}{2}\\right)-\\sin \\left(\\alpha+\\frac{k \\beta}{2}-\\frac{\\beta}{2}-\\frac{k \\beta}{2}\\right)+\\sin \\left(\\alpha+k \\beta+\\frac{\\beta}{2}\\right)-\\sin \\left(\\alpha+k \\beta-\\frac{\\beta}{2}\\right)}{2 \\sin \\frac{\\beta}{2}} \\\\\n& =\\frac{\\sin \\left(\\alpha+k \\beta+\\frac{\\beta}{2}\\right)-\\sin \\left(\\alpha-\\frac{\\beta}{2}\\right)}{2 \\sin \\frac{\\beta}{2}} \\\\\n& =\\frac{2 \\cos \\frac{1}{2}\\left(\\alpha+\\frac{\\beta}{2}+k \\beta+\\alpha-\\frac{\\beta}{2}\\right) \\sin \\frac{1}{2}\\left(\\alpha+\\frac{\\beta}{2}+k \\beta-\\alpha+\\frac{\\beta}{2}\\right)}{2 \\sin \\frac{\\beta}{2}} \\\\\n& =\\frac{\\cos \\left(\\frac{2 \\alpha+k \\beta}{2}\\right) \\sin \\left(\\frac{k \\beta+\\beta}{2}\\right)}{\\sin \\frac{\\beta}{2}}=\\frac{\\cos \\left(\\alpha+\\frac{k \\beta}{2}\\right) \\sin (k+1) \\frac{\\beta}{2}}{\\sin \\frac{\\beta}{2}}=\\text { RHS }\n\\end{aligned}$$</p>\n<p>So, $P(k+1)$ is true. Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8me0",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that $\\cos \\theta \\cos 2 \\theta \\cos 2^2 \\theta D \\cos 2^{n-1} \\theta=\\frac{\\sin 2^n \\theta}{2^n \\sin \\theta}, \\forall n \\in N$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>\n$$\n\\begin{aligned}\n& \\text { Let } P(n): \\cos \\theta \\cos 2 \\theta \\supset \\cos 2^{n-1} \\theta=\\frac{\\sin 2^n \\theta}{2^n \\sin \\theta} \\\\\n& \\text { Step I For } n=1, P(1): \\cos \\theta=\\frac{\\sin 2^1 \\theta}{2^1 \\sin \\theta} \\\\\n& =\\frac{\\sin 2 \\theta}{2 \\sin \\theta}=\\frac{2 \\sin \\theta \\cos \\theta}{2 \\sin \\theta}=\\cos \\theta\n\\end{aligned}$$</p>\n<p>which is true.</p>\n<p>Step II Assume that $P(n)$ is true, for $n=k$.</p>\n<p>$P(k): \\cos \\theta \\cdot \\cos 2 \\theta \\cdot \\cos ^2 \\theta \\supset \\cos ^{k-1} \\theta=\\frac{\\sin 2^k \\theta}{2^k \\sin \\theta}$ is true.</p>\n<p>$$\\begin{aligned}\n&\\text { Step III To prove } P(k+1) \\text { is true. }\\\\\n&\\begin{aligned}\n& P(k+1): \\cos \\theta \\cdot \\cos 2 \\theta \\cdot \\cos 2^2 \\theta \\supset \\cos 2^{k-1} \\theta \\cdot \\cos 2^k \\theta \\\\\n&=\\frac{\\sin 2^k \\theta}{2^k \\sin \\theta} \\cdot \\cos 2^k \\theta \\\\\n&=\\frac{2 \\sin 2^k \\theta \\cdot \\cos 2^k \\theta}{2 \\cdot 2^k \\sin \\theta} \\\\\n&=\\frac{\\sin 2 \\cdot 2^k \\theta}{2^{k+1} \\sin \\theta}=\\frac{\\sin 2^{(k+1)} \\theta}{2^{k+1} \\sin \\theta}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>which is true.</p>\n<p>So, $P(k+1)$ is true. Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7c3k",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$$\n\\begin{aligned}\n& \\text { Prove that, } \\sin \\theta+\\sin 2 \\theta+\\sin 3 \\theta+\\supset+\\sin n \\theta=\\frac{\\frac{\\sin n \\theta}{2} \\sin \\frac{(n+1)}{2} \\theta}{\\sin \\frac{\\theta}{2}} \\text {, } \\\\\n& \\text { for all } n \\in N \\text {. }\n\\end{aligned}\n$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the given statement</p>\n<p>$$\\begin{aligned}\n& P(n): \\sin \\theta+\\sin 2 \\theta+\\sin 3 \\theta+\\supset+\\sin n \\theta \\\\\n& =\\frac{\\sin \\frac{n \\theta}{2} \\sin \\frac{(n+1) \\theta}{2}}{\\sin \\frac{\\theta}{2}} \\text {, for all } n \\in N\n\\end{aligned}$$</p>\n<p>Step I We observe that $P(1)$ is</p>\n<p>$$\\begin{aligned}\nP(1): \\sin \\theta & =\\frac{\\sin \\frac{\\theta}{2} \\cdot \\sin \\frac{(1+1)}{2} \\theta}{\\sin \\frac{\\theta}{2}}=\\frac{\\sin \\frac{\\theta}{2} \\cdot \\sin \\theta}{\\sin \\frac{\\theta}{2}} \\\\\n\\sin \\theta & =\\sin \\theta\n\\end{aligned}$$</p>\n<p>Hence, $P(1)$ is true.</p>\n<p>Step II Assume that $P(n)$ is true, for $n=k$.</p>\n<p>$$\\begin{aligned}\nP(k): \\sin \\theta+\\sin 2 \\theta & +\\sin 3 \\theta+\\supset+\\sin k \\theta \\\\\n& =\\frac{\\sin \\frac{k \\theta}{2} \\sin \\left(\\frac{k+1}{2}\\right) \\theta}{\\sin \\frac{\\theta}{2}} \\text { is true. }\n\\end{aligned}$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true.</p>\n<p>$$\\begin{gathered}\nP(k+1): \\sin \\theta+\\sin 2 \\theta+\\sin 3 \\theta+\\supset+\\sin k \\theta+\\sin (k+1) \\theta \\\\\n=\\frac{\\sin \\frac{(k+1) \\theta}{2} \\sin \\left(\\frac{k+1+1}{2}\\right) \\theta}{\\sin \\frac{\\theta}{2}}\n\\end{gathered}$$</p>\n<p>\n$$\n\\begin{aligned}\n\\text { LHS } & =\\sin \\theta+\\sin 2 \\theta+\\sin 3 \\theta+\\supset+\\sin k \\theta+\\sin (k+1) \\theta \\\\\n& =\\frac{\\sin \\frac{k \\theta}{2} \\sin \\left(\\frac{k+1}{2}\\right) \\theta}{\\sin \\frac{\\theta}{2}}+\\sin (k+1) \\theta=\\frac{\\sin \\frac{k \\theta}{2} \\sin \\left(\\frac{k+1}{2}\\right) \\theta+\\sin (k+1) \\theta \\cdot \\sin \\frac{\\theta}{2}}{\\sin \\frac{\\theta}{2}} \\\\\n& =\\frac{\\cos \\left[\\frac{k \\theta}{2}-\\left(\\frac{k+1}{2}\\right) \\theta\\right]-\\cos \\left[\\frac{k \\theta}{2}+\\left(\\frac{k+1}{2}\\right) \\theta\\right]+\\cos \\left[(k+1) \\theta-\\frac{\\theta}{2}\\right]-\\cos \\left[(k+1) \\theta+\\frac{\\theta}{2}\\right]}{2 \\sin \\frac{\\theta}{2}} \\\\\n& =\\frac{\\cos \\frac{\\theta}{2}-\\cos \\left(k \\theta+\\frac{\\theta}{2}\\right)+\\cos \\left(k \\theta+\\frac{\\theta}{2}\\right)-\\cos \\left(k \\theta+\\frac{3 \\theta}{2}\\right)}{2 \\sin \\frac{\\theta}{2}} \\\\\n& =\\frac{\\cos \\frac{\\theta}{2}-\\cos \\left(k \\theta+\\frac{3 \\theta}{2}\\right)}{2 \\sin \\frac{\\theta}{2}}=\\frac{2 \\sin \\frac{1}{2}\\left(\\frac{\\theta}{2}+k \\theta+\\frac{3 \\theta}{2}\\right) \\cdot \\sin \\frac{1}{2}\\left(k \\theta+\\frac{3 \\theta}{2}-\\frac{\\theta}{2}\\right)}{2 \\sin \\frac{\\theta}{2}} \\\\\n& =\\frac{\\sin \\left(\\frac{k \\theta+2 \\theta}{2}\\right) \\cdot \\sin \\left(\\frac{k \\theta+\\theta}{2}\\right)}{\\sin \\frac{\\theta}{2}}=\\frac{\\sin (k+1) \\frac{\\theta}{2} \\cdot \\sin (k+1+1) \\frac{\\theta}{2}}{\\sin \\frac{\\theta}{2}}\n\\end{aligned}\n$$\n\n\nSo, $P(k+1)$ is true, whenever $P(k)$ is true. Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb68xs",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $\\frac{n^5}{5}+\\frac{n^3}{3}+\\frac{7 n}{15}$ is a natural number, for all $n \\in N$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the given statement</p>\n<p>$P(n): \\frac{n^5}{5}+\\frac{n^3}{3}+\\frac{7 n}{15}$ is a natural number, for all $n \\in N$.</p>\n<p>Step I We observe that $P(1)$ is true.</p>\n<p>$P(1): \\frac{(1)^5}{5}+\\frac{1^3}{3}+\\frac{7(1)}{15}=\\frac{3+5+7}{15}=\\frac{15}{15}=1$, which is a natural number. Hence, $P(1)$ is true.</p>\n<p>Step II Assume that $P(n)$ is true, for $n=k$.</p>\n<p>$P(k): \\frac{k^5}{5}+\\frac{k^3}{3}+\\frac{7 k}{15}$ is natural number.</p>\n<p>Step III Now, to prove $P(k+1)$ is true.</p>\n<p>$$\\begin{aligned}\n& \\frac{(k+1)^5}{5}+\\frac{(k+1)^3}{3}+\\frac{7(k+1)}{15} \\\\\n& =\\frac{k^5+5 k^4+10 k^3+10 k^2+5 k+1}{5}+\\frac{k^3+1+3 k(k+1)}{3}+\\frac{7 k+7}{15} \\\\\n& =\\frac{k^5+5 k^4+10 k^3+10 k^2+5 k+1}{5}+\\frac{k^3+1+3 k^2+3 k}{3}+\\frac{7 k+7}{15} \\\\\n& =\\frac{k^5}{5}+\\frac{k^3}{3}+\\frac{7 k}{15}+\\frac{5 k^4+10 k^3+10 k^2+5 k+1}{5}+\\frac{3 k^2+3 k+1}{3}+\\frac{7 k+7}{15} \\\\\n& =\\frac{k^5}{5}+\\frac{k^3}{3}+\\frac{7 k}{15}+k^4+2 k^3+2 k^2+k+k^2+k+\\frac{1}{5}+\\frac{1}{3}+\\frac{7}{15} \\\\\n& =\\frac{k^5}{5}+\\frac{k^3}{3}+\\frac{7 k}{15}+k^4+2 k^3+3 k^2+2 k+1, \\text { which is a natural number }\n\\end{aligned}$$</p>\n<p>So, $P(k+1)$ is true, whenever $P(k)$ is true. Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb56sx",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that $\\frac{1}{n+1}+\\frac{1}{n+2}+\\supset+\\frac{1}{2 n}>\\frac{13}{24}$, for all natural numbers $n>1$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the given statement</p>\n<p>$P(n): \\frac{1}{n+1}+\\frac{1}{n+2}+\\supset+\\frac{1}{2 n}>\\frac{13}{24}$, for all natural numbers $n>1$</p>\n<p>Step I We observe that, $P(2)$ is true,</p>\n<p>$$\\begin{aligned}\nP(2): \\frac{1}{2+1}+\\frac{1}{2+2} & >\\frac{13}{24} \\\\\n\\frac{1}{3}+\\frac{1}{4} & >\\frac{13}{24} \\\\\n\\frac{4+3}{12} & >\\frac{13}{24} \\\\\n\\frac{7}{12} & >\\frac{13}{24}, \\text { which is true. }\n\\end{aligned}$$</p>\n<p>Hence, $P(2)$ is true.</p>\n<p>Step II Now, we assume that $P(n)$ is true,\nFor $n=k$,</p>\n<p>$$P(k): \\frac{1}{k+1}+\\frac{1}{k+2}+\\supset+\\frac{1}{2 k}>\\frac{13}{24}$$</p>\n<p>Step III Now, to prove $P(k+1)$ is true, we have to show that</p>\n<p>$$\n\\begin{aligned}\n&\\begin{aligned}\n& P(k+1): \\frac{1}{k+1}+\\frac{1}{k+2}+\\supset+\\frac{1}{2 k}+\\frac{1}{2(k+1)}>\\frac{13}{24} \\\\\n& \\text { Given, } \\quad \\frac{1}{k+1}+\\frac{1}{k+2}+\\supset+\\frac{1}{2 k}>\\frac{13}{24} \\\\\n& \\frac{1}{k+1}+\\frac{1}{k+2}+\\frac{1}{2 k}+\\frac{1}{2(k+1)}>\\frac{13}{24}+\\frac{1}{2(k+1)} \\\\\n& \\frac{13}{24}+\\frac{1}{2(k+1)}>\\frac{13}{24} \\\\\n& \\because \\quad \\frac{1}{k+1}+\\frac{1}{k+2}+\\supset+\\frac{1}{2 k}+\\frac{1}{2(k+1)}>\\frac{13}{24}\n\\end{aligned}\\\\\n\\end{aligned}$$</p>\n<p>So, $P(k+1)$ is true, whenever $P(k)$ is true. Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5p22",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that number of subsets of a set containing $n$ distinct elements is $2^n$, for all $n \\in N$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $P(n)$ : Number of subset of a set containing $n$ distinct elements is $2^n$, for all $n \\in N$.</p>\n<p>Step I We observe that $P(1)$ is true, for $n=1$.</p>\n<p>Number of subsets of a set contain 1 element is $2^1=2$, which is true.</p>\n<p>Step II Assume that $P(n)$ is true for $n=k$.</p>\n<p>$P(k)$ : Number of subsets of a set containing $k$ distinct elements is $2^k$, which is true.</p>\n<p>Step III To prove $P(k+1)$ is true, we have to show that</p>\n<p>$P(k+1)$ : Number of subsets of a set containing $(k+1)$ distinct elements is $2^{k+1}$.</p>\n<p>We know that, with the addition of one element in the set, the number of subsets become double.</p>\n<p>$\\therefore$ Number of subsets of a set containing $(k+1)$ distinct elements $=2 \\times 2^k=2^{k+1}$. So, $P(k+1)$ is true. Hence, $P(n)$ is true.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7ks0",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $10^n+3 \\cdot 4^{n+2}+k$ is divisible by 9 , for all $n \\in N$, then the least positive integral value of $k$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "5"
+            },
+            {
+              "identifier": "B",
+              "content": "3"
+            },
+            {
+              "identifier": "C",
+              "content": "7"
+            },
+            {
+              "identifier": "D",
+              "content": "1"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $P(n): 10^n+3 \\cdot 4^{n+2}+k$ is divisible by 9 , for all $n \\in N$.</p>\n<p>For $n=1$, the given statement is also true $10^1+3 \\cdot 4^{1+2}+k$ is divisible by 9 .</p>\n<p>$$\\begin{array}{ll}\n\\because \\quad & =10+3 \\cdot 64+k=10+192+k \\\\\n& =202+k\n\\end{array}$$</p>\n<p>If $(202+k)$ is divisible by 9 , then the least value of $k$ must be 5 .</p>\n<p>$$\\begin{array}{ll}\n\\because & 202+5=207 \\text { is divisible by } 9 \\\\\n\\Rightarrow & \\frac{207}{9}=23\n\\end{array}$$</p>\n<p>Hence, the least value of $k$ is 5 .</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb95dm",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>For all $n \\in N, 3 \\cdot 5^{2 n+1}+2^{3 n+1}$ is divisible by</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "19"
+            },
+            {
+              "identifier": "B",
+              "content": "17"
+            },
+            {
+              "identifier": "C",
+              "content": "23"
+            },
+            {
+              "identifier": "D",
+              "content": "25"
+            }
+          ],
+          "correct_options": [
+            "B",
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $3 \\cdot 5^{2 n+1}+2^{3 n+1}$</p>\n<p>For $n=1$,</p>\n<p>$$\\begin{aligned}\n& 3 \\cdot 5^{2(1)+1}+2^{3(1)+1} \\\\\n& =3 \\cdot 5^3+2^4 \\\\\n& =3 \\times 125+16=375+16=391\n\\end{aligned}$$</p>\n<p>Now, $$391=17 \\times 23$$</p>\n<p>which is divisible by both 17 and 23 .</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcqm"
+    },
+    {
+      "questionId": "bqf-m1kb8mg9",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x^n-1$ is divisible by $x-k$, then the least positive integral value of $k$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "1"
+            },
+            {
+              "identifier": "B",
+              "content": "2"
+            },
+            {
+              "identifier": "C",
+              "content": "3"
+            },
+            {
+              "identifier": "D",
+              "content": "4"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $P(n): x^n-1$ is divisible by $(x-k)$</p>\n<p>For $n=1, x^1-1$ is divisible by $(x-k)$.</p>\n<p>Since, if $x-1$ is divisible by $x-k$. Then, the least possible integral value of $k$ is 1 .</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb5z2l",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $P(n): 2 n < n!, n \\in N$, then $P(n)$ is true for all $n \\geq$ ........... .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $$P(n):2n < n!,n \\in N$$</p>\n<p>$$\\begin{aligned}\n\\text{For n = 1, }\\quad 2 & < ! \\quad \\text{[false]\n}\\\\\n\\text{For n = 2, }\\quad 2 \\times 2< 2!4 & < 2 \\quad \\text{[false]\n}\\\\\n\\text{For n = 3, }\\quad 2 \\times 3 & < 3! \\\\\n6 & < 3! \\\\\n6 & < 3 \\times 2 \\times 1 \\\\\n(6 & < 6) \\quad \\text{[false]\n}\\\\\n\\text{For n = 4, }\\quad 2 \\times 4 & < 4! \\\\\n8 & < 4 \\times 3 \\times 2 \\times 1 \\\\\n(8 & < 24) \\quad \\text{[true]\n}\\\\\n\\text{For n = 5, }\\quad 2 \\times 5 & < 5! \\\\\n10 & < 5 \\times 4 \\times 3 \\times 2 \\times 1 \\\\\n(10 & < 120) \\quad \\text{[true]\n}\n\\end{aligned}$$</p>\n<p>Hence, $P(n)$ is for all $n\\ge4$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb7c65",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "principle-of-mathematical-induction",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Let $P(n)$ be a statement and let $P(k) \\Rightarrow P(k+1)$, for some natural number $k$, then $P(n)$ is true for all $n \\in N$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>The given statement is false because $P(1)$ is true has not been proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    }
+  ]
+}

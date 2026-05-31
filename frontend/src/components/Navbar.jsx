@@ -1,110 +1,166 @@
 import React from 'react';
-import { Shield, Sparkles, Flame, User, LogOut, BookOpen, Layers } from 'lucide-react';
+import { Shield, Sparkles, LogOut, Moon, Sun, BookOpen } from 'lucide-react';
 import logoImg from '../assets/logo.png';
 
-export default function Navbar({ activePage, setActivePage, user, onLogout, customLogo }) {
+export default function Navbar({ activePage, setActivePage, user, onLogout, customLogo, theme, onToggleTheme, themeColor, onColorChange }) {
+  const isLight = theme === 'light';
+
   return (
-    <nav className="sticky top-0 z-50 w-full bg-obsidian/85 backdrop-blur-md border-b border-white/5 py-4 px-6 md:px-12 flex items-center justify-between">
-      {/* Brand logo */}
-      <div 
-        onClick={() => setActivePage('home')} 
-        className="flex items-center gap-2 cursor-pointer group"
+    <nav className={`sticky top-0 z-50 w-full backdrop-blur-md border-b py-3.5 px-6 md:px-12 flex items-center justify-between transition-all duration-300 ${
+      isLight
+        ? 'bg-white/90 border-black/8 shadow-sm'
+        : 'bg-obsidian/85 border-white/5'
+    }`}>
+
+      {/* ── Brand Logo ── */}
+      <div
+        onClick={() => setActivePage('home')}
+        className="flex items-center gap-2.5 cursor-pointer group"
         id="nav-logo"
       >
-        <div className="relative h-9 w-9 rounded-lg overflow-hidden border border-electric/30 shadow-[0_0_15px_rgba(0,240,255,0.25)] bg-obsidian">
+        <div className={`relative h-9 w-9 rounded-xl overflow-hidden border shadow-md bg-gradient-to-br from-electric/20 to-blue-600/20 flex items-center justify-center ${
+          isLight ? 'border-blue-200' : 'border-electric/30'
+        }`}>
           <img src={customLogo || logoImg} alt="Quantrex Logo" className="h-full w-full object-cover" />
         </div>
         <div>
-          <span className="font-bold text-lg md:text-xl tracking-wider uppercase font-display bg-gradient-to-r from-white via-electric to-gold bg-clip-text text-transparent">
+          <span className={`font-logo font-black text-lg md:text-xl tracking-wide uppercase bg-gradient-to-r ${
+            isLight
+              ? 'from-blue-700 via-blue-500 to-amber-500'
+              : 'from-white via-electric to-gold'
+          } bg-clip-text text-transparent leading-none`}>
             Quantrex
           </span>
-          <span className="block text-[8px] tracking-[0.2em] font-semibold text-gold uppercase -mt-1 font-display">
+          <span className={`block text-[9px] tracking-[0.18em] font-bold uppercase -mt-0.5 font-logo ${
+            isLight ? 'text-amber-600' : 'text-gold'
+          }`}>
             Academy
           </span>
         </div>
       </div>
 
-      {/* Navigation options */}
-      <div className="hidden md:flex items-center gap-8">
-        <button 
+      {/* ── Desktop Nav Links ── */}
+      <div className="hidden md:flex items-center gap-7 text-xs font-semibold tracking-wide">
+        <button
           onClick={() => setActivePage('home')}
-          className={`text-sm font-semibold tracking-wider transition-colors ${activePage === 'home' ? 'text-electric' : 'text-platinum hover:text-white'}`}
+          className={`uppercase transition-all duration-200 hover:scale-105 ${
+            activePage === 'home'
+              ? (isLight ? 'text-blue-600' : 'text-electric')
+              : (isLight ? 'text-gray-600 hover:text-blue-600' : 'text-platinum hover:text-white')
+          }`}
         >
-          COURSES
+          Home
         </button>
 
-        {user && user.role === 'student' && (
-          <>
-            <button 
-              onClick={() => setActivePage('student-dashboard')}
-              className={`text-sm font-semibold tracking-wider transition-colors ${activePage === 'student-dashboard' ? 'text-electric' : 'text-platinum hover:text-white'}`}
-            >
-              STUDENT PORTAL
-            </button>
-          </>
-        )}
+        <button
+          onClick={() => setActivePage('student-dashboard')}
+          className={`uppercase transition-all duration-200 hover:scale-105 flex items-center gap-1 ${
+            activePage === 'student-dashboard'
+              ? (isLight ? 'text-blue-600' : 'text-electric')
+              : (isLight ? 'text-gray-600 hover:text-blue-600' : 'text-platinum hover:text-white')
+          }`}
+        >
+          <BookOpen className="h-3.5 w-3.5" />
+          Study Portal
+        </button>
+
+        <button
+          onClick={() => setActivePage('test-series')}
+          className={`uppercase transition-all duration-200 hover:scale-105 flex items-center gap-1 ${
+            activePage === 'test-series'
+              ? (isLight ? 'text-blue-600' : 'text-electric')
+              : (isLight ? 'text-gray-600 hover:text-blue-600' : 'text-platinum hover:text-white')
+          }`}
+        >
+          <Sparkles className="h-3.5 w-3.5 text-gold" />
+          Test Series
+        </button>
+
 
         {user && user.role === 'admin' && (
-          <button 
+          <button
             onClick={() => setActivePage('admin-dashboard')}
-            className={`text-sm font-semibold tracking-wider transition-colors ${activePage === 'admin-dashboard' ? 'text-gold' : 'text-platinum hover:text-gold'}`}
+            className={`uppercase transition-all duration-200 hover:scale-105 flex items-center gap-1 ${
+              activePage === 'admin-dashboard'
+                ? (isLight ? 'text-amber-600' : 'text-gold')
+                : (isLight ? 'text-gray-600 hover:text-amber-600' : 'text-platinum hover:text-gold')
+            }`}
           >
-            ADMIN PANEL
+            🔑 Admin Panel
           </button>
         )}
       </div>
 
-      {/* Action triggers */}
-      <div className="flex items-center gap-4">
+      {/* ── Right Side Actions ── */}
+      <div className="flex items-center gap-3">
+
+        {/* ── Theme Toggle ── */}
+        <button
+          onClick={onToggleTheme}
+          title={isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+          className={`theme-toggle-btn relative h-9 w-16 rounded-full border flex items-center transition-all duration-300 ${
+            isLight
+              ? 'bg-blue-50 border-blue-200 justify-end'
+              : 'bg-white/5 border-white/10 justify-start'
+          }`}
+        >
+          <span className={`absolute inset-y-0.5 w-7 rounded-full transition-all duration-300 flex items-center justify-center text-xs shadow-sm ${
+            isLight
+              ? 'right-0.5 bg-amber-400 text-white'
+              : 'left-0.5 bg-electric/80 text-obsidian'
+          }`}>
+            {isLight ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
+          </span>
+        </button>
+
+        {/* ── Theme Color Switcher ── */}
+        <div className={`hidden sm:flex items-center gap-1.5 px-2 py-1.5 rounded-full border ${isLight ? 'bg-white border-gray-200' : 'bg-black/20 border-white/10'}`}>
+          <button onClick={() => onColorChange('cyan')} className={`h-4 w-4 rounded-full bg-cyan-500 ${themeColor === 'cyan' ? 'ring-2 ring-offset-1 ring-cyan-500 dark:ring-offset-obsidian' : 'opacity-50 hover:opacity-100'}`} title="Cyan Theme"></button>
+          <button onClick={() => onColorChange('emerald')} className={`h-4 w-4 rounded-full bg-emerald-500 ${themeColor === 'emerald' ? 'ring-2 ring-offset-1 ring-emerald-500 dark:ring-offset-obsidian' : 'opacity-50 hover:opacity-100'}`} title="Emerald Theme"></button>
+          <button onClick={() => onColorChange('ruby')} className={`h-4 w-4 rounded-full bg-red-500 ${themeColor === 'ruby' ? 'ring-2 ring-offset-1 ring-red-500 dark:ring-offset-obsidian' : 'opacity-50 hover:opacity-100'}`} title="Ruby Theme"></button>
+          <button onClick={() => onColorChange('amethyst')} className={`h-4 w-4 rounded-full bg-purple-500 ${themeColor === 'amethyst' ? 'ring-2 ring-offset-1 ring-purple-500 dark:ring-offset-obsidian' : 'opacity-50 hover:opacity-100'}`} title="Amethyst Theme"></button>
+        </div>
+
+        {/* ── User / Login ── */}
         {user ? (
-          <div className="flex items-center gap-3 md:gap-5">
-            {/* Daily Streak Tracker */}
-            {user.role === 'student' && (
-              <div 
-                className="flex items-center gap-1.5 px-3 py-1 bg-amber-500/10 border border-amber-500/20 text-amber-500 rounded-full font-mono text-xs font-bold animate-pulse"
-                title="Daily Login Streak"
-              >
-                <Flame className="h-4 w-4 fill-current" />
-                <span>{user.dailyStreak || 1} STREAK</span>
+          <div className="flex items-center gap-2">
+            <div className={`flex items-center gap-2 px-3 py-1.5 rounded-lg border text-xs font-semibold ${
+              isLight
+                ? 'bg-blue-50 border-blue-100 text-blue-700'
+                : 'bg-white/5 border-white/10 text-platinum'
+            }`}>
+              <div className={`h-6 w-6 rounded-full flex items-center justify-center text-xs font-bold ${
+                isLight ? 'bg-blue-100 text-blue-700' : 'bg-electric/20 text-electric'
+              }`}>
+                {user.name?.charAt(0)?.toUpperCase()}
               </div>
-            )}
-
-            {/* Profile trigger */}
-            <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-full bg-cyberdark border border-white/10 flex items-center justify-center text-xs font-bold text-electric">
-                {user.name.charAt(0)}
-              </div>
-              <span className="hidden sm:inline text-xs font-semibold font-display text-platinum max-w-[120px] truncate">
-                {user.name}
-              </span>
+              <span className="hidden sm:inline max-w-[110px] truncate">{user.name}</span>
             </div>
-
-            <button 
+            <button
               onClick={onLogout}
-              className="p-2 hover:bg-red-500/10 border border-transparent hover:border-red-500/20 text-gray-400 hover:text-red-400 rounded-lg transition-all"
-              title="Logout Session"
+              className={`p-2 rounded-lg border transition-all ${
+                isLight
+                  ? 'border-red-100 text-red-400 hover:bg-red-50 hover:border-red-200'
+                  : 'border-transparent text-gray-400 hover:bg-red-500/10 hover:border-red-500/20 hover:text-red-400'
+              }`}
+              title="Logout"
               id="logout-btn"
             >
               <LogOut className="h-4 w-4" />
             </button>
           </div>
         ) : (
-          <div className="flex items-center gap-2">
-            <button 
-              onClick={() => setActivePage('login')}
-              className="px-4 py-2 border border-white/5 hover:border-electric/30 text-platinum hover:text-electric text-xs font-bold tracking-wider rounded-lg transition-all"
-              id="login-redirect-btn"
-            >
-              LOGIN
-            </button>
-            <button 
-              onClick={() => setActivePage('login')}
-              className="px-4 py-2 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian text-xs font-bold tracking-wider rounded-lg shadow-md hover:shadow-cyan-500/20 transition-all"
-              id="signup-redirect-btn"
-            >
-              JOIN FREE
-            </button>
-          </div>
+          <button
+            onClick={() => setActivePage('login')}
+            className={`px-4 py-2 rounded-lg text-xs font-bold tracking-wide uppercase border transition-all hover:scale-105 ${
+              isLight
+                ? 'border-amber-300 text-amber-700 bg-amber-50 hover:bg-amber-100'
+                : 'border-white/10 text-platinum hover:border-gold/30 hover:text-gold'
+            }`}
+            id="login-redirect-btn"
+          >
+            🔑 Admin Login
+          </button>
         )}
       </div>
     </nav>

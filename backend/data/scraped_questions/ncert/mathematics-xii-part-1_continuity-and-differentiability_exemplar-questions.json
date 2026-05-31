@@ -1,0 +1,3151 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m5hphl6i",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Examine the continuity of the function $f(x)=x^3+2 x^2-1$ at $x=1$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$f(x)=x^3+2 x^2-1 \\text { at } x=1 .$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & \\lim _\\limits{x \\rightarrow 1^{+}} f(x)=\\lim _\\limits{h \\rightarrow 0}(1+h)^3+2(1+h)^2-1=2 \\\\\n\\text { and } & \\lim _\\limits{x \\rightarrow 1^{-}} f(x)=\\lim _\\limits{h \\rightarrow 0}(1-h)^3+2(1-h)^2-1=2 \\\\\n\\therefore & \\lim _\\limits{x \\rightarrow 1^{+}} f(x)=\\lim _\\limits{x \\rightarrow 1^{-}} f(x)\n\\end{array}$$</p>\n<p>and $\\quad f(1)=1+2-1=2$</p>\n<p>So, $f(x)$ is continuous at $x=1$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpilne",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{cc}3 x+5, & \\text { if } x \\geq 2 \\\\ x^2, & \\text { if } x<2\\end{array}\\right.$ at $x=2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{cc}3 x+5, & \\text { if } x \\geq 2 \\\\ x^2, & \\text { if } x<2\\end{array}\\right.$ at $x=2$.</p>\n<p>At $x=2$, $$\\mathrm{LHL}=\\lim _{x \\rightarrow 2^{-}}(x)^2$$</p>\n<p>$=\\lim _\\limits{h \\rightarrow 0}(2-h)^2=\\lim _\\limits{h \\rightarrow 0}\\left(4+h^2-4 h\\right)=4$</p>\n<p>and</p>\n<p>$$\\begin{aligned}\n\\mathrm{RHL} & =\\lim _{x \\rightarrow 2^{+}}(3 x+5) \\\\\n& =\\lim _{h \\rightarrow 0}[3(2+h)+5]=11\n\\end{aligned}$$</p>\n<p>Since,\n$\\mathrm{LHL} \\neq \\mathrm{RHL}$ at $x=2$</p>\n<p>So, $f(x)$ is discontinuous at $x=2$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpihi3",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{ll}\\frac{1-\\cos 2 x}{x^2}, & \\text { if } x \\neq 0 \\\\ 5, & \\text { if } x=0\\end{array}\\right.$ at $x=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{ll}\\frac{1-\\cos 2 x}{x^2}, & \\text { if } x \\neq 0 \\\\ 5, & \\text { if } x=0\\end{array}\\right.$ at $x=0$.</p>\n<p>$$\\begin{aligned}\n\\text { At } x=0,\\quad\\mathrm{LHL} & =\\lim _{x \\rightarrow 0^{-}} \\frac{1-\\cos 2 x}{x^2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{1-\\cos 2(0-h)}{(0-h)^2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{1-\\cos 2 h}{h^2} \\quad [\\because \\cos (-\\theta)=\\cos \\theta]\\\\\n& =\\lim _{h \\rightarrow 0} \\frac{1-1+2 \\sin ^2 h}{h^2} \\quad \\left[\\because \\cos 2 \\theta=1-2 \\sin ^2 \\theta\\right]\\\\\n& =\\lim _{h \\rightarrow 0} \\frac{2(\\sin h)^2}{(h)^2} \\quad \\left[\\because \\lim _{h \\rightarrow 0} \\frac{\\sin h}{h}=1\\right]\\\\\n& =2 \\\\\n\\text { RHL } & =\\lim _{x \\rightarrow 0^{+}} \\frac{1-\\cos 2 x}{x^2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{1-\\cos 2(0+h)}{(0+h)^2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{2 \\sin ^2 h}{h^2}=2 \\quad \\left[\\because \\lim _{h \\rightarrow 0} \\frac{\\sin h}{h}=1\\right]\\\\\n\\text{and}\\quad f(0) & =5 \\\\\n\\text{Since,}\\quad \\text { LHL } & =\\text { RHL } \\neq f(0)\n\\end{aligned}$$</p>\n<p>Hence, $f(x)$ is not continuous at $x=0$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpierx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{ll}\\frac{2 x^2-3 x-2}{x-2}, & \\text { if } x \\neq 2 \\\\ 5, & \\text { if } x=2\\end{array}\\right.$ at $x=2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{ll}\\frac{2 x^2-3 x-2}{x-2}, & \\text { if } x \\neq 2 \\\\ 5, & \\text { if } x=2\\end{array}\\right.$ at $x=2$.</p>\n<p>$$\\begin{aligned}\n\\text { At } x=2, \\quad \\mathrm{LHL} & =\\lim _{x \\rightarrow 2^{-}} \\frac{2 x^2-3 x-2}{x-2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{2(2-h)^2-3(2-h)-2}{(2-h)-2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{8+2 h^2-8 h-6+3 h-2}{-h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{2 h^2-5 h}{-h}=\\lim _{h \\rightarrow 0} \\frac{h(2 h-5)}{-h}=5 \\\\\n\\mathrm{RHL} & =\\lim _{x \\rightarrow 2^{+}} \\frac{2 x^2-3 x-2}{x-2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\lim _{h \\rightarrow 0} \\frac{2(2+h)^2-3(2+h)-2}{(2+h)-2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{8+2 h^2+8 h-6-3 h-2}{h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{2 h^2+5 h}{h}=\\lim _{h \\rightarrow 0} \\frac{h(2 h+5)}{h}=5 \\\\\n& \\text { and } \\\\\n& f(2)=5 \\\\\n& \\therefore \\quad \\mathrm{LHL}=\\mathrm{RHL}=f(2)\n\\end{aligned}$$</p>\n<p>So, $f(x)$ is continuous at $x=2$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi1at",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{ll}\\frac{|x-4|}{2(x-4)}, & \\text { if } x \\neq 4 \\\\ 0, & \\text { if } x=4\\end{array}\\right.$ at $x=4$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$f(x)=\\left\\{\\begin{array}{ll}\n\\frac{|x-4|}{2(x-4)}, & \\text { if } x \\neq 4 \\\\\n0, & \\text { if } x=4\n\\end{array} \\text { at } x=4 .\\right.$$</p>\n<p>At $x=4$,</p>\n<p>$$\\begin{aligned}\n\\mathrm{LHL} & =\\lim _{x \\rightarrow 4^{-}} \\frac{|x-4|}{2(x-4)} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{|4-h-4|}{2[(4-h)-4]}=\\lim _{h \\rightarrow 0} \\frac{|0-h|}{(8-2 h-8)} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{h}{-2 h}=\\frac{-1}{2} \\quad \\text { and } \\quad f(4)=0 \\neq \\mathrm{LHL}\n\\end{aligned}$$</p>\n<p>So, $f(x)$ is discontinuous at $x=4$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphfx5",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{ll}|x| \\cos \\frac{1}{x}, & \\text { if } x \\neq 0 \\\\ 0, & \\text { if } x=0\\end{array}\\right.$ at $x=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{ll}|x| \\cos \\frac{1}{x}, & \\text { if } x \\neq 0 \\\\ 0, & \\text { if } x=0\\end{array}\\right.$ at $x=0$.</p>\n<p>At $x=0$,</p>\n<p>$$\\begin{aligned}\n\\mathrm{LHL} & =\\lim _{x \\rightarrow 0^{-}}|x| \\cos \\frac{1}{x}=\\lim _{h \\rightarrow 0}|0-h| \\cos \\frac{1}{0-h} \\\\\n& =\\lim _{h \\rightarrow 0} h \\cos \\left(\\frac{-1}{h}\\right) \\\\\n& =0 \\times[\\text { an oscillating number between }-1 \\text { and } 1]=0\n\\end{aligned}$$</p>\n<p>$$\\mathrm{RHL}=\\lim _\\limits{x \\rightarrow 0^{+}}|x| \\cos \\frac{1}{x}$$</p>\n<p>$$=\\lim _\\limits{h \\rightarrow 0}|0+h| \\cos \\frac{1}{(0+h)}$$</p>\n<p>$$=\\lim _\\limits{h \\rightarrow 0} h \\cos \\frac{1}{h}$$</p>\n<p>$=0 \\times[$ an oscillating number between $-1$ and $1$]$=0$</p>\n<p>and $$f(0)=0$$</p>\n<p>Since, $$\\mathrm{LHL}=\\mathrm{RHL}=f(0)$$</p>\n<p>So, $f(x)$ is continuous at $x=0$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpihk2",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{ll}|x-a| \\sin \\frac{1}{x-a}, & \\text { if } x \\neq 0 \\\\ 0, & \\text { if } x=a\\end{array}\\right.$ at $x=a$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{ll}|x-a| \\sin \\frac{1}{x-a}, & \\text { if } x \\neq 0 \\\\ 0, & \\text { if } x=a\\end{array}\\right.$ at $x=a$.</p>\n<p>At $x=a$,</p>\n<p>$$\\begin{aligned}\n\\mathrm{LHL} & =\\lim _{x \\rightarrow a^{-}}|x-a| \\sin \\frac{1}{x-a} \\\\\n& =\\lim _{h \\rightarrow 0}|a-h-a| \\sin \\left(\\frac{1}{a-h-a}\\right) \\\\\n& =\\lim _{h \\rightarrow 0}-h \\sin \\left(\\frac{1}{h}\\right) \\quad[\\because \\sin (-\\theta)=-\\sin \\theta] \\\\\n& =0 \\times[\\text { an oscillating number between }-1 \\text { and } 1]=0 \\\\\n\\mathrm{RHL} & =\\lim _{x \\rightarrow a^{+}}|x-a| \\sin \\left(\\frac{1}{x-a}\\right) \\\\\n& =\\lim _{h \\rightarrow 0}|a+h-a| \\sin \\left(\\frac{1}{a+h-a}\\right)=\\lim _{h \\rightarrow 0} h \\sin \\frac{1}{h} \\\\\n& =0 \\times[\\text { an oscillating number between }-1 \\text { and } 1]=0 \\\\\n\\end{aligned}$$</p>\n<p>and $f(a)=0$</p>\n<p>$$\\therefore$$ $\\mathrm{LHL = RHL}=f(a)$</p>\n<p>So, $f(x)$ is continuous at $x=a$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpinvb",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{ll}\\frac{e^{1 / x}}{1+e^{1 / x}}, & \\text { if } x \\neq 0 \\\\ 0, & \\text { if } x=0\\end{array}\\right.$ at $x=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{ll}\\frac{e^{1 / x}}{1+e^{1 / x}}, & \\text { if } x \\neq 0 \\\\ 0, & \\text { if } x=0\\end{array}\\right.$ at $x=0$.</p>\n<p>$$\\begin{aligned}\n&\\text { At } x=0 \\text {, }\\\\\n&\\begin{aligned}\n\\mathrm{LHL} & =\\lim _{x \\rightarrow 0^{-}} \\frac{e^{1 / x}}{1+e^{1 / x}}=\\lim _{h \\rightarrow 0} \\frac{e^{1 / 0-h}}{1+e^{1 / 0-h}} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{e^{-1 / h}}{1+e^{-1 / h}}=\\lim _{h \\rightarrow 0} \\frac{1}{e^{1 / h}\\left(1+e^{-1 / h}\\right)} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{1}{e^{1 / h}+1}=\\frac{1}{e^{\\infty}+1}=\\frac{1}{\\infty+1} \\quad \\quad\\left[\\because e^{\\infty}=\\infty\\right] \\\\\n& =\\frac{1}{\\frac{1}{0}}=0 \\\\\n\\mathrm{RHL} & =\\lim _{x \\rightarrow 0^{+}} \\frac{e^{1 / x}}{1+e^{1 / x}} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{e^{1 / 0+h}}{1+e^{1 / 0+h}}=\\lim _{h \\rightarrow 0} \\frac{e^{1 / h}}{1+e^{1 / h}}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& =\\lim _{h \\rightarrow 0} \\frac{1}{e^{-1 / h}+1}=\\frac{1}{e^{-\\infty}+1} \\\\\n& =\\frac{1}{0+1}=1\n\\end{aligned}\\\\\n&\\left[\\because e^{-\\infty}=0\\right]\n\\end{aligned}$$</p>\n<p>Hence, $\\quad \\mathrm{LHL} \\neq \\mathrm{RHL}$ at $x=0$.</p>\n<p>So, $f(x)$ is discontinuous at $x=0$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpibbn",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{ll}\\frac{x^2}{2}, & \\text { if } 0 \\leq x \\leq 1 \\\\ 2 x^2-3 x+\\frac{3}{2}, & \\text { if } 1< x \\leq 2\\end{array}\\right.$ at $x=1$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{ll}\\frac{x^2}{2}, & \\text { if } 0 \\leq x \\leq 1 \\\\ 2 x^2-3 x+\\frac{3}{2}, & \\text { if } 1< x \\leq 2\\end{array}\\right.$ at $x=1$.</p>\n<p>At $x=1$,</p>\n<p>$$\\begin{aligned}\n\\mathrm{HL} & =\\lim _{x \\rightarrow 1^{-}} \\frac{x^2}{2}=\\lim _{h \\rightarrow 0} \\frac{(1-h)^2}{2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{1+h^2-2 h}{2}=\\frac{1}{2} \\\\\n\\mathrm{RHL} & =\\lim _{x \\rightarrow 1^{+}}\\left(2 x^2-3 x+\\frac{3}{2}\\right) \\\\\n& =\\lim _{h \\rightarrow 0}\\left[2(1+h)^2-3(1+h)+\\frac{3}{2}\\right] \\\\\n& =\\lim _{h \\rightarrow 0}\\left(2+2 h^2+4 h-3-3 h+\\frac{3}{2}\\right)=-1+\\frac{3}{2}=\\frac{1}{2}\n\\end{aligned}$$</p>\n<p>and $$f(1)=\\frac{t^2}{2}=\\frac{1}{2}$$</p>\n<p>$$\\therefore \\quad \\mathrm{LHL}=\\mathrm{RHL}=f(1)$$</p>\n<p>Hence, $f(x)$ is continuous at $x=1$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphvdy",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=|x|+|x-1|$ at $x=1$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,</p>\n<p>$$\\begin{aligned}\nf(x) & =|x|+|x-1| \\text { at } x=1 \\\\\n\\text{At }x=1,\\quad \\mathrm{LHL} & =\\lim _{x \\rightarrow 1^{-}}[|x|+|x-1|] \\\\\n& =\\lim _{h \\rightarrow 0}[|1-h|+|1-h-1|]=1+0=1\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{and}\\quad \\mathrm{RHL} & =\\lim _{x \\rightarrow 1^{-}}[|x|+|x-1|] \\\\\n& =\\lim _{h \\rightarrow 0}[|1+h|+|1+h-1|]=1+0=1\n\\end{aligned}$$</p>\n<p>and $$f(1)=|1|+|0|=1$$</p>\n<p>$$\\therefore \\quad \\mathrm{LHL}=\\mathrm{RHL}=f(1)$$</p>\n<p>Hence, $f(x)$ is continuous at $x=1$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphvg6",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{aligned} 3 x-8, & \\text { if } x \\leq 5 \\\\ 2 k, & \\text { if } x>5\\end{aligned}\\right.$ at $x=5$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{aligned} 3 x-8, & \\text { if } x \\leq 5 \\\\ 2 k, & \\text { if } x>5\\end{aligned}\\right.$ at $x=5$.</p>\n<p>Since, $f(x)$ is continuous at $x=5$.</p>\n<p>$$\\therefore \\quad \\mathrm{LHL}=\\mathrm{RHL}=f(5)$$</p>\n<p>$$\\begin{aligned}\n&\\text { Now, }\\\\\n&\\begin{aligned}\n\\mathrm{LHL} & =\\lim _{x \\rightarrow 5^{-}}(3 x-8)=\\lim _{h \\rightarrow 0}[3(5-h)-8] \\\\\n& =\\lim _{h \\rightarrow 0}[15-3 h-8]=7\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$\\mathrm{RHL}=\\lim _\\limits{x \\rightarrow 5^{+}} 2 k=\\lim _\\limits{h \\rightarrow 0} 2 k=2 k=7 \\quad[\\because \\mathrm{LHL}=\\mathrm{RHL}]$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { and }\\quad f(5) & =3 \\times 5-8=7 \\\\\n\\therefore\\quad 2 k & =7 \\quad \\Rightarrow \\quad k=\\frac{7}{2}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi0am",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{cll}\\frac{2^{x+2}-16}{4^x-16}, & \\text { if } & x \\neq 2 \\\\ k, & \\text { if } & x=2\\end{array}\\right.$ at $x=2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{cll}\\frac{2^{x+2}-16}{4^x-16}, & \\text { if } & x \\neq 2 \\\\ k, & \\text { if } & x=2\\end{array}\\right.$ at $x=2$.</p>\n<p>$$\n\\begin{aligned}\n&\\text { Since, } f(x) \\text { is continuous at } x=2 \\text {. }\\\\\n&\\begin{aligned}\n& \\therefore \\quad \\mathrm{LHL=RHL=}f(2)\\\\\n& \\text { At } x=2, \\quad \\lim _{x \\rightarrow 2} \\frac{2^x \\cdot 2^2-2^4}{4^x-4^2}=\\lim _{x \\rightarrow 2} \\frac{4 \\cdot\\left(2^x-4\\right)}{\\left(2^x\\right)^2-(4)^2}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\lim _{x \\rightarrow 2} \\frac{4 \\cdot\\left(2^x-4\\right)}{\\left(2^x-4\\right)\\left(2^x+4\\right)} \\quad\\left[\\because a^2-b^2=(a+b)(a-b)\\right] \\\\\n& =\\lim _{x \\rightarrow 2} \\frac{4}{2^x+4}=\\frac{4}{8}=\\frac{1}{2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{But}\\quad f(2) & =k \\\\\n\\therefore\\quad k & =\\frac{1}{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpikbx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{cl}\\frac{\\sqrt{1+k x}-\\sqrt{1-k x}}{x}, & \\text { if }-1 \\leq x<0 \\\\ \\frac{2 x+1}{x-1}, & \\text { if } 0 \\leq x \\leq 1\\end{array}\\right.$ at $x=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{cl}\\frac{\\sqrt{1+k x}-\\sqrt{1-k x}}{x}, & \\text { if }-1 \\leq x<0 \\\\ \\frac{2 x+1}{x-1}, & \\text { if } 0 \\leq x \\leq 1\\end{array}\\right.$ at $x=0$.</p>\n<p>$$\\begin{aligned}\n\\therefore\\quad \\mathrm{LHL} & =\\lim _{x \\rightarrow 0^{-}} \\frac{\\sqrt{1+k x}-\\sqrt{1-k x}}{x} \\\\\n& =\\lim _{x \\rightarrow 0^{-}}\\left(\\frac{\\sqrt{1+k x}-\\sqrt{1-k x}}{x}\\right) \\cdot\\left(\\frac{\\sqrt{1+k x}+\\sqrt{1-k x}}{\\sqrt{1+k x}+\\sqrt{1-k x}}\\right) \\\\\n& =\\lim _{x \\rightarrow 0^{-}} \\frac{1+k x-1+k x}{x[\\sqrt{1+k x}+\\sqrt{1-k x}]} \\\\\n& =\\lim _{x \\rightarrow 0^{-}} \\frac{2 k x}{x \\sqrt{1+k x}+\\sqrt{1-k x}} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{2 k}{\\sqrt{1+k(0-h)+\\sqrt{1-k(0-h)}}} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{2 k}{\\sqrt{1-k h}+\\sqrt{1+k h}}=\\frac{2 k}{2}=k \\\\\n\\text{and}\\quad f(0) & =\\frac{2 \\times 0+1}{0-1}=-1 \\\\\n\\Rightarrow\\quad k & =-1 \\quad \\quad[\\because \\mathrm{LHL}=\\mathrm{RHL}=f(0)]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hphvi8",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{ll}\\frac{1-\\cos k x}{x \\sin x}, & \\text { if } x \\neq 0 \\\\ \\frac{1}{2}, & \\text { if } x=0\\end{array}\\right.$ at $x=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad f(x)=\\left\\{\\begin{array}{ll}\\frac{1-\\cos k x}{x \\sin x}, & \\text { if } x \\neq 0 \\\\ \\frac{1}{2}, & \\text { if } x=0\\end{array}\\right.$ at $x=0$</p>\n<p>At $x=0, \\quad \\mathrm{LHL}=\\lim _\\limits{x \\rightarrow 0^{-}} \\frac{1-\\cos k x}{x \\sin x}=\\lim _\\limits{h \\rightarrow 0} \\frac{1-\\cos k(0-h)}{(0-h) \\sin (0-h)}$</p>\n<p>$$\\begin{aligned}\n& =\\lim _{h \\rightarrow 0} \\frac{1-\\cos (-k h)}{-h \\sin (-h)} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{1-\\cos k h}{h \\sin h} \\quad[\\because \\cos (-\\theta)=\\cos \\theta, \\sin (-\\theta)=-\\sin \\theta]\n\\end{aligned}$$</p>\n<p>$$\n\\begin{array}{rlrl} \n& =\\lim _\\limits{h \\rightarrow 0} \\frac{1-1+2 \\sin ^2 \\frac{k h}{2}}{h \\sin h} & {\\left[\\because \\cos \\theta=1-2 \\sin ^2 \\frac{\\theta}{2}\\right]} \\\\\n& =\\lim _\\limits{h \\rightarrow 0} \\frac{2 \\sin ^2 \\frac{k h}{2}}{h \\sin h} \\\\\n& =\\lim _\\limits{h \\rightarrow 0} \\frac{2 \\sin \\frac{k h}{2}}{\\frac{k h}{2}} \\cdot \\frac{\\sin \\frac{k h}{2}}{\\frac{k h}{2}} \\cdot \\frac{1}{\\frac{\\sin h}{h}} \\cdot \\frac{k^2 h / 4}{h} \\\\\n& =\\frac{2 k^2}{4}=\\frac{k^2}{2} \\quad {\\left[\\because \\lim _\\limits{h \\rightarrow 0} \\frac{\\sin h}{h}=1\\right]} \\\\\n\\text{Also,}\\quad f(0) & =\\frac{1}{2} \\Rightarrow \\frac{k^2}{2}=\\frac{1}{2} \\Rightarrow k= \\pm 1 \\quad p\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpi0cj",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Prove that the function $f$ defined by $f(x)= \\begin{cases}\\frac{x}{|x|+2 x^2}, & \\text { if } x \\neq 0 \\\\ k, & \\text { if } x=0\\end{cases}$ remains discontinuous at $x=0$, regardless the choice of $k$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad f(x)= \\begin{cases}\\frac{x}{|x|+2 x^2}, & \\text { if } x \\neq 0 \\\\ k, & \\text { if } x=0\\end{cases}$</p>\n<p>At $x=0$, $$\\mathrm{LHL}=\\lim _\\limits{x \\rightarrow 0^{-}} \\frac{x}{|x|+2 x^2}=\\lim _\\limits{h \\rightarrow 0} \\frac{(0-h)}{|0-h|+2(0-h)^2}$$</p>\n<p>$$\\begin{aligned}\n& =\\lim _{h \\rightarrow 0} \\frac{-h}{h+2 h^2}=\\lim _{h \\rightarrow 0} \\frac{-h}{h(1+2 h)}=-1 \\\\\n\\mathrm{RHL} & =\\lim _{x \\rightarrow 0^{+}} \\frac{x}{|x|+2 x^2}=\\lim _{h \\rightarrow 0} \\frac{0+h}{|0+h|+2(0+h)^2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{h}{h+2 h^2}=\\lim _{h \\rightarrow 0} \\frac{h}{h(1+2 h)}=1\n\\end{aligned}$$</p>\n<p>and $\\quad f(0)=k$</p>\n<p>Since, $\\quad \\mathrm{LHL} \\neq \\mathrm{RHL}$ for any value of $k$.</p>\n<p>Hence, $f(x)$ is discontinuous at $x=0$ regardless the choice of $k$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5hpimlt",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the values of $a$ and $b$ such that the function $f$ defined by</p>\n<p>$$f(x)= \\begin{cases}\\frac{x-4}{|x-4|}+a, & \\text { if } x<4 \\\\ a+b, & \\text { if } x=4 \\\\ \\frac{x-4}{|x-4|}+b, & \\text { if } x>4\\end{cases}$$</p>\n<p>is a continuous function at $x=4$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{l}\\frac{x-4}{|x-4|}+a, \\text { if } x<4 \\\\ a+b, \\quad \\text { if } x=4 \\\\ \\frac{x-4}{|x-4|}+b, \\text { if } x>4\\end{array}\\right.$</p>\n<p>$$\\begin{aligned}\n&\\text { At } x=4 \\text {, }\\\\\n&\\begin{aligned}\n\\mathrm{LHL} & =\\lim _{x \\rightarrow 4^{-}} \\frac{x-4}{|x-4|}+a \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{4-h-4}{|4-h-4|}+a=\\lim _{h \\rightarrow 0} \\frac{-h}{h}+a \\\\\n& =-1+a\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\mathrm{RHL} & =\\lim _{x \\rightarrow 4^{+}} \\frac{x-4}{|x-4|}+b \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{4+h-4}{|4+h-4|}+b=\\lim _{h \\rightarrow 0} \\frac{h}{h}+b=1+b \\\\\nf(4) & =a+b \\Rightarrow-1+a=1+b=a+b \\\\\n\\Rightarrow \\quad-1+a & =a+b \\text { and } 1+b=a+b \\\\\n\\therefore \\quad b & =-1 \\text { and } a=1\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpefs",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the function $f(x)=\\frac{1}{x+2}$, then find the points of discontinuity of the composite function $y=f\\{f(x)\\}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have,</p>\n<p>$$\\begin{aligned}\nf(x) & =\\frac{1}{x+2} \\\\\n\\therefore\\quad y & =f\\{f(x)\\} \\\\\n& =f\\left(\\frac{1}{x+2}\\right)=\\frac{1}{\\frac{1}{x+2}+2} \\\\\n& =\\frac{1}{1+2 x+4} \\cdot(x+2)=\\frac{(x+2)}{(2 x+5)}\n\\end{aligned}$$</p>\n<p>So, the function $y$ will not be continuous at those points, where it is not defined as it is a rational function.</p>\n<p>Therefore, $y=\\frac{x+2}{(2 x+5)}$ is not defined, when $2 x+5=0$</p>\n<p>$$\\therefore \\quad x=\\frac{-5}{2}$$</p>\n<p>Hence, $y$ is discontinuous at $x=\\frac{-5}{2}$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpnv7",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find all points of discontinuity of the function $f(t)=\\frac{1}{t^2+t-2}$, where $$\nt=\\frac{1}{x-1}.$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad f(t) & =\\frac{1}{t^2+t-2} \\text { and } t=\\frac{1}{x-1} \\\\\n\\therefore\\quad f(t) & =\\frac{1}{\\left(\\frac{1}{x^2+1-2 x}\\right)+\\left(\\frac{1}{x-1}\\right)-\\frac{2}{1}} \\\\\n& =\\frac{1}{\\left(\\frac{1+x-1+\\left[-2(x-1)^2\\right]}{\\left(x^2+1-2 x\\right)}\\right)} \\\\\n& =\\frac{x^2+1-2 x}{x-2 x^2-2+4 x} \\\\\n& =\\frac{x^2+1-2 x}{-2 x^2+5 x-2} \\\\\n& =\\frac{(x-1)^2}{-\\left(2 x^2-5 x+2\\right)} \\\\\n& =\\frac{(x-1)^2}{(2 x-1)(2-x)}\n\\end{aligned}$$</p>\n<p>So, $f(t)$ is discontinuous at $2 x-1=0 \\Rightarrow x=1 / 2$</p>\n<p>and $$2-x=0 \\Rightarrow x=2$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqdm3",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that the function $f(x)=|\\sin x+\\cos x|$ is continuous at $x=\\pi$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$f(x)=|\\sin x+\\cos x| \\text { at } x=\\pi$$</p>\n<p>Let $g(x)=\\sin x+\\cos x$</p>\n<p>and $h(x)=|x|$</p>\n<p>$$\\begin{aligned}\n\\therefore\\quad \\operatorname{hog}(x) & =h[g(x)] \\\\\n& =h(\\sin x+\\cos x) \\\\\n& =|\\sin x+\\cos x|\n\\end{aligned}$$</p>\n<p>Since, $g(x)=\\sin x+\\cos x$ is a continuous function as it is forming with addition of two continuous functions $\\sin x$ and $\\cos x$.</p>\n<p>Also, $h(x)=|x|$ is also a continuous function. Since, we know that composite functions of two continuous functions is also a continuous function.</p>\n<p>Hence, $f(x)=|\\sin x+\\cos x|$ is a continuous function everywhere.</p>\n<p>So, $f(x)$ is continuous at $x=\\pi$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpc3o",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Examine the differentiability of $f$, where $f$ is defined by</p>\n<p>$$f(x)=\\left\\{\\begin{array}{ll}\nx[x], & \\text { if } 0 \\leq x<2 \\\\\n(x-1) x, & \\text { if } 2 \\leq x<3\n\\end{array} \\text { at } x=2 .\\right.$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$f(x)=\\left\\{\\begin{array}{ll}\nx[x], & \\text { if } 0 \\leq x<2 \\\\\n(x-1) x & \\text { if } 2 \\leq x<3\n\\end{array} \\text { at } x=2 .\\right.$$</p>\n<p>At $x=2$,</p>\n<p>$$L f^{\\prime}(2)=\\lim _{h \\rightarrow 0} \\frac{f(2-h)-f(2)}{-h}$$</p>\n<p>$$=\\lim _\\limits{h \\rightarrow 0} \\frac{(2-h)[2-h]-(2-1) 2}{-h}$$</p>\n<p>$\\{\\because[a-h]=[a-1]$, where $a$ is any positive number $\\}$</p>\n<p>$$=\\lim _\\limits{h \\rightarrow 0} \\frac{(2-h)(1)-2}{-h}$$</p>\n<p>$$=\\lim _\\limits{h \\rightarrow 0} \\frac{2-h-2}{-h}=\\lim _\\limits{h \\rightarrow 0} \\frac{-h}{-h}=1$$</p>\n<p>$$R f^{\\prime}(2)=\\lim _\\limits{h \\rightarrow 0} \\frac{f(2+h)-f(2)}{h}$$</p>\n<p>$$=\\lim _\\limits{h \\rightarrow 0} \\frac{(2+h-1)(2+h)-(2-1) \\cdot 2}{h}$$</p>\n<p>$$=\\lim _\\limits{h \\rightarrow 0} \\frac{(1+h)(2+h)-2}{h}$$</p>\n<p>$$=\\lim _\\limits{h \\rightarrow 0} \\frac{2+h+2 h+h^2-2}{h}$$</p>\n<p>$$=\\lim _\\limits{h \\rightarrow 0} \\frac{h^2+3 h}{h}=\\lim _\\limits{h \\rightarrow 0} \\frac{h(h+3)}{h}=3$$</p>\n<p>$$\\therefore \\quad L f^{\\prime}(2) \\neq R f^{\\prime}(2)$$</p>\n<p>So, $f(x)$ is not differentiable at $x=2$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpc5w",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{ll}x^2 \\sin \\frac{1}{x}, & \\text { if } x \\neq 0 \\\\ 0, & \\text { if } x=0\\end{array}\\right.$ at $x=0$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{ll}x^2 \\sin \\frac{1}{x}, & \\text { if } x \\neq 0 \\\\ 0, & \\text { if } x=0\\end{array}\\right.$ at $x=0$</p>\n<p>$$\\begin{aligned}\n&\\text { For differentiability at } x=0 \\text {, }\\\\\n&L f^{\\prime}(0)=\\lim _{x \\rightarrow 0^{-}} \\frac{f(x)-f(0)}{x-0}=\\lim _{x \\rightarrow 0^{-}} \\frac{x^2 \\sin \\frac{1}{x}-0}{x-0}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\lim _{h \\rightarrow 0} \\frac{(0-h)^2 \\sin \\left(\\frac{1}{0-h}\\right)}{0-h}=\\lim _{h \\rightarrow 0} \\frac{h^2 \\sin \\left(\\frac{-1}{h}\\right)}{-h} \\\\\n& =\\lim _{h \\rightarrow 0}+h \\sin \\left(\\frac{1}{h}\\right) \\quad[\\because \\sin (-\\theta)=-\\sin \\theta] \\\\\n& =0 \\times[\\text { an oscillating number between }-1 \\text { and } 1]=0 \\\\\nR f^{\\prime}(0) & =\\lim _{x \\rightarrow 0^{+}} \\frac{f(x)-f(0)}{x-0}=\\lim _{x \\rightarrow 0^{+}} \\frac{x^2 \\sin \\frac{1}{x}-0}{x-0} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{(0+h)^2 \\sin \\left(\\frac{1}{0+h}\\right)}{0+h}=\\lim _{h \\rightarrow 0} \\frac{h^2 \\sin (1 / h)}{h} \\\\\n& =\\lim _{h \\rightarrow 0} h \\sin (1 / h) \\quad \\\\\n& =0 \\times[\\text { an oscillating number between }-1 \\text { and } 1]=0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\because \\quad L f^{\\prime}(0)=R f^{\\prime}(0)\\\\\n&\\text { So, } f(x) \\text { is differentiable at } x=0 \\text {. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqdnx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\left\\{\\begin{array}{l}1+x, \\text { if } x \\leq 2 \\\\ 5-x, \\text { if } x>2\\end{array}\\right.$ at $x=2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{l}1+x, \\text { if } x \\leq 2 \\\\ 5-x, \\text { if } x>2\\end{array}\\right.$ at $x=2$.</p>\n<p>For differentiability at $x=2$,</p>\n<p>$$\n\\begin{aligned}\nL f^{\\prime}(2) & =\\lim _{x \\rightarrow 2^{-}} \\frac{f(x)-f(2)}{x-2}=\\lim _{x \\rightarrow 2^{-}} \\frac{(1+x)-(1+2)}{x-2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{(1+2-h)-3}{2-h-2}=\\lim _{h \\rightarrow 0} \\frac{-h}{-h}=1 \\\\\nR f^{\\prime}(2) & =\\lim _{x \\rightarrow 2^{+}} \\frac{f(x)-f(2)}{x-2}=\\lim _{x \\rightarrow 2^{+}} \\frac{(5-x)-3}{x-2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{5-(2+h)-3}{2+h-2} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{5-2-h-3}{h}=\\lim _{h \\rightarrow 0} \\frac{-h}{+h} \\\\\n& =-1 \\\\\n\\because\\quad L f^{\\prime}(2) & \\neq R f^{\\prime}(2)\n\\end{aligned}$$</p>\n<p>So, $f(x)$ is not differentiable at $x=2$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqcuu",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that $f(x)=|x-5|$ is continuous but not differentiable at $x=5$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad & f(x)=|x-5| \\\\\n\\therefore\\quad & f(x)=\\left\\{\\begin{array}{l}\n-(x-5) \\text {, if } x<5 \\\\\nx-5, \\quad \\text { if } x \\geq 5\n\\end{array}\\right.\n\\end{aligned}$$</p>\n<p>For continuity at $x=5$,</p>\n<p>$$\\begin{aligned}\n\\mathrm{LHL} & =\\lim _{x \\rightarrow 5^{-}}(-x+5) \\\\\n& =\\lim _{h \\rightarrow 0}[-(5-h)+5]=\\lim _{h \\rightarrow 0} h=0 \\\\\n\\mathrm{RHL} & =\\lim _{x \\rightarrow 5^{+}}(x-5) \\\\\n& =\\lim _{h \\rightarrow 0}(5+h-5)=\\lim _{h \\rightarrow 0} h=0 \\\\\n\\therefore \\quad \\mathrm{f}(5) & =5-5=0 \\\\\n\\Rightarrow \\quad \\mathrm{LHL} & =\\mathrm{RHL}=f(5)\n\\end{aligned}$$</p>\n<p>Hence, $f(x)$ is continuous at $x=5$.</p>\n<p>Now,</p>\n<p>$$\\begin{aligned}\nL f^{\\prime}(5) & =\\lim _{x \\rightarrow 5^{-}} \\frac{f(x)-f(5)}{x-5} \\\\\n& =\\lim _{x \\rightarrow 5^{-}} \\frac{-x+5-0}{x-5}=-1 \\\\\nR f^{\\prime}(5) & =\\lim _{x \\rightarrow 5^{+}} \\frac{f(x)-f(5)}{x-5} \\\\\n& =\\lim _{x \\rightarrow 5^{+}} \\frac{x-5-0}{x-5}=1\n\\end{aligned}$$</p>\n<p>$$\\therefore \\quad L f^{\\prime}(5) \\neq R f^{\\prime}(5)$$</p>\n<p>So, $f(x)=|x-5|$ is not differentiable at $x=5$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq21k",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A function $f: R \\rightarrow R$ satisfies the equation $f(x+y)=f(x) \\cdot f(y)$ for all $x, y \\in R, f(x) \\neq 0$. Suppose that the function is differentiable at $x=0$ and $f^{\\prime}(0)=2$, then prove that $f^{\\prime}(x)=2 f(x)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $f: R \\rightarrow R$ satisfies the equation $f(x+y)=f(x) \\cdot f(y), \\forall x, y \\in R, f(x) \\neq 0$.</p>\n<p>Let $f(x)$ is differentiable at $x=0$ and $f^{\\prime}(0)=2$.</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & f^{\\prime}(0)=\\lim _\\limits{x \\rightarrow 0} \\frac{f(x)-f(0)}{x-0} \\\\\n\\Rightarrow & 2=\\lim _\\limits{x \\rightarrow 0} \\frac{f(x)-f(0)}{x} \\\\\n\\Rightarrow & 2=\\lim _\\limits{h \\rightarrow 0} \\frac{f(0+h)-f(0)}{0+h} \\\\\n\\Rightarrow & 2=\\lim _\\limits{h \\rightarrow 0} \\frac{f(0) \\cdot f(h)-f(0)}{h} \\\\\n\\Rightarrow & 2=\\lim _\\limits{h \\rightarrow 0} \\frac{f(0)[f(h)-1]}{h}\\quad [\\because f(0)=f(h)] \\ldots(\\mathrm{i})\n\\end{array}$$</p>\n<p>Also, $$f^{\\prime}(x)=\\lim _\\limits{h \\rightarrow 0} \\frac{f(x+h)-f(x)}{h}$$</p>\n<p>$$\\begin{aligned}\n& =\\lim _{h \\rightarrow 0} \\frac{f(x) \\cdot f(h)-f(x)}{h} & {[\\because f(x+y)=f(x) \\cdot f(y)] } \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{f(x)[f(h)-1]}{h}=2 f(x) & \\quad \\text { [using Eq. (i)] } \\\\\n\\therefore\\quad f^{\\prime}(x) & =2 f(x) &\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqcwr",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$2^{\\cos ^2 x}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Let}\\quad y & =2^{\\cos ^2 x} \\\\\n\\therefore\\quad \\log y & =\\log 2^{\\cos ^2 x}=\\cos ^2 x \\cdot \\log 2\n\\end{aligned}$$</p>\n<p>On differentiating w.r.t. $x$, we get</p>\n<p>$$\\begin{aligned}\n\\frac{d}{d y} \\log y \\cdot \\frac{d y}{d x} & =\\frac{d}{d x} \\log 2 \\cdot \\cos ^2 x \\\\\n\\Rightarrow \\quad \\frac{1}{y} \\cdot \\frac{d y}{d x} & =\\log 2 \\frac{d}{d x}(\\cos x)^2 \\\\\n\\Rightarrow \\quad \\frac{1}{y} \\cdot \\frac{d y}{d x} & =\\log 2 \\cdot[2 \\cos x] \\cdot \\frac{d}{d x} \\cos x \\\\\n& =\\log 2 \\cdot 2 \\cos x \\cdot(-\\sin x) \\\\\n& =\\log 2 \\cdot[-(\\sin 2 x)] \\\\\n\\therefore \\quad \\frac{d y}{d x} & =-y \\cdot \\log 2(\\sin 2 x) \\\\\n& =-2^{\\cos ^2 x} \\cdot \\log 2(\\sin 2 x)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbomr0",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\frac{8^x}{x^8}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$y=\\frac{8^x}{x^8} \\Rightarrow \\log y=\\log \\frac{8^x}{x^8}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{d}{d y} \\log y \\cdot \\frac{d y}{d x}=\\frac{d}{d x}\\left[\\log 8^x-\\log x^8\\right] \\\\\n\\Rightarrow & \\frac{1}{y} \\cdot \\frac{d y}{d x}=\\frac{d}{d x}[x \\cdot \\log 8-8 \\cdot \\log x]\n\\end{array}$$</p>\n<p>On differentiating w.r.t. $x$, we get</p>\n<p>$$\\begin{aligned}\n& \\frac{1}{y} \\cdot \\frac{d y}{d x} =\\log 8 \\cdot 1-8 \\cdot \\frac{1}{x} \\\\\n\\Rightarrow \\quad & \\frac{1}{y} \\cdot \\frac{d y}{d x} =\\log 8-\\frac{8}{x} \\\\\n\\therefore \\quad & \\frac{d y}{d x} =y\\left(\\log 8-\\frac{8}{x}\\right)=\\frac{8^x}{x^8}\\left(\\log 8-\\frac{8}{x}\\right)\n\\end{aligned}\n$$\n</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqdps",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\log \\left(x+\\sqrt{x^2+a}\\right)$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { Let } \\quad & =\\log \\left(x+\\sqrt{x^2+a}\\right) \\\\\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d}{d x} \\log \\left(x+\\sqrt{x^2+a}\\right) \\\\\n& =\\frac{1}{\\left(x+\\sqrt{x^2+a}\\right)} \\cdot \\frac{d}{d x}\\left[x+\\sqrt{x^2+a}\\right] \\\\\n& =\\frac{1}{\\left(x+\\sqrt{x^2+a}\\right)}\\left[1+\\frac{1}{2}\\left(x^2+a\\right)^{-1 / 2} \\cdot 2 x\\right] \\\\\n& =\\frac{1}{\\left(x+\\sqrt{x^2+a}\\right)} \\cdot\\left(1+\\frac{x}{\\sqrt{x^2+a}}\\right) \\\\\n& =\\frac{\\left(\\sqrt{x^2+a}+x\\right)}{\\left(x+\\sqrt{x^2+a}\\right)\\left(\\sqrt{x^2+a}\\right)}=\\frac{1}{\\left(\\sqrt{x^2+a}\\right)}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpjjk",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\log \\left[\\log \\left(\\log x^5\\right)\\right]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\begin{aligned}\n\\text { Let } \\quad & y=\\log \\left[\\log \\left(\\log x^5\\right)\\right] \\\\\n&\\begin{aligned}\n\\therefore\\quad \\frac{d y}{d x} & =\\frac{d}{d x}\\left[\\log \\left(\\log \\log x^5\\right)\\right] \\\\\n& =\\frac{1}{\\log \\log x^5} \\cdot \\frac{d}{d x}\\left(\\log \\cdot \\log x^5\\right) \\\\\n& =\\frac{1}{\\log \\log x^5} \\cdot\\left(\\frac{1}{\\log x^5}\\right) \\cdot \\frac{d}{d x} \\log x^5 \\\\\n& =\\frac{1}{\\log \\log x^5} \\cdot \\frac{1}{\\log x^5} \\cdot \\frac{d}{d x}(5 \\log x)=\\frac{5}{x \\cdot \\log \\left(\\log x^5\\right) \\cdot \\log \\left(x^5\\right)}\n\\end{aligned}\n\\end{aligned} \\begin{array}{l}\n\\end{array} \\quad \\begin{aligned}\n\\\\\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqgjx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sin \\sqrt{x}+\\cos ^2 \\sqrt{x}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$y=\\sin \\sqrt{x}+(\\cos \\sqrt{x})^2$$\n</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d}{d x} \\sin \\left(x^{1 / 2}\\right)+\\frac{d}{d x}\\left[\\cos \\left(x^{1 / 2}\\right)\\right]^2 \\\\\n& =\\cos x^{1 / 2} \\cdot \\frac{d}{d x} x^{1 / 2}+2 \\cos \\left(x^{1 / 2}\\right) \\frac{d}{d x}\\left[\\cos \\left(x^{1 / 2}\\right)\\right] \\\\\n& =\\cos \\left(x^{1 / 2}\\right) \\frac{1}{2} x^{-1 / 2}+2 \\cdot \\cos \\left(x^{1 / 2}\\right) \\cdot\\left[-\\sin \\left(x^{1 / 2}\\right) \\cdot \\frac{d}{d x} x^{1 / 2}\\right] \\\\\n& =\\cos \\sqrt{x} \\cdot \\frac{1}{2 \\sqrt{x}}\\left[-2 \\cos \\left(x^{1 / 2}\\right)\\right] \\cdot \\sin x^{1 / 2} \\cdot \\frac{1}{2 \\sqrt{x}} \\\\\n& =\\frac{1}{2 \\sqrt{x}}[\\cos (\\sqrt{x})-\\sin (2 \\sqrt{x})]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sboujy",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sin ^n\\left(a x^2+b x+c\\right)$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $y=\\sin ^n\\left(a x^2+b x+c\\right)$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d}{d x}\\left[\\sin \\left(a x^2+b x+c\\right)\\right]^n \\\\\n& =n \\cdot\\left[\\sin \\left(a x^2+b x+c\\right)\\right]^{n-1} \\cdot \\frac{d}{d x} \\sin \\left(a x^2+b x+c\\right) \\\\\n& =n \\cdot \\sin ^{n-1}\\left(a x^2+b x+c\\right) \\cdot \\cos \\left(a x^2+b x+c\\right) \\cdot \\frac{d}{d x}\\left(a x^2+b x+c\\right) \\\\\n& =n \\cdot \\sin ^{n-1}\\left(a x^2+b x+c\\right) \\cdot \\cos \\left(a x^2+b x+c\\right) \\cdot(2 a x+b) \\\\\n& =n \\cdot(2 a x+b) \\cdot \\sin ^{n-1}\\left(a x^2+b x+c\\right) \\cdot \\cos \\left(a x^2+b x+c\\right)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sboulq",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\cos (\\tan \\sqrt{x+1})$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { Let } \\quad y & =\\cos (\\tan \\sqrt{x+1}) \\\\\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d}{d x} \\cos (\\tan \\sqrt{x+1})=-\\sin (\\tan \\sqrt{x+1}) \\cdot \\frac{d}{d x}(\\tan \\sqrt{x+1}) \\\\\n& =-\\sin (\\tan \\sqrt{x+1}) \\cdot \\sec ^2 \\sqrt{x+1} \\cdot \\frac{d}{d x}(x+1)^{1 / 2} \\quad\\left[\\because \\frac{d}{d x}(\\tan x)=\\sec ^2 x\\right] \\\\\n& =-\\sin (\\tan \\sqrt{x+1}) \\cdot(\\sec \\sqrt{x+1})^2 \\cdot \\frac{1}{2}(x+1)^{-1 / 2} \\cdot \\frac{d}{d x}(x+1) \\\\\n& =\\frac{-1}{2 \\sqrt{x+1}} \\cdot \\sin (\\tan \\sqrt{x+1}) \\cdot \\sec ^2(\\sqrt{x+1})\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqljo",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sin x^2+\\sin ^2 x+\\sin ^2\\left(x^2\\right)$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $\\quad y=\\sin x^2+\\sin ^2 x+\\sin ^2\\left(x^2\\right)$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d}{d x} \\sin \\left(x^2\\right)+\\frac{d}{d x}(\\sin x)^2+\\frac{d}{d x}\\left(\\sin x^2\\right)^2 \\\\\n& =\\cos \\left(x^2\\right) \\frac{d}{d x}\\left(x^2\\right)+2 \\sin x \\cdot \\frac{d}{d x} \\sin x+2 \\sin x^2 \\cdot \\frac{d}{d x} \\sin x^2 \\\\\n& =\\cos x^2 2 x+2 \\cdot \\sin x \\cdot \\cos x+2 \\sin x^2 \\cos x^2 \\cdot \\frac{d}{d x} x^2 \\\\\n& =2 x \\cos (x)^2+2 \\cdot \\sin x \\cdot \\cos x+2 \\sin x^2 \\cdot \\cos x^2 \\cdot 2 x \\\\\n& =2 x \\cos (x)^2+\\sin 2 x+\\sin 2(x)^2 \\cdot 2 x \\\\\n& =2 x \\cos \\left(x^2\\right)+2 x \\cdot \\sin 2\\left(x^2\\right)+\\sin 2 x\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sboqw7",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sin ^{-1} \\frac{1}{\\sqrt{x+1}}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { Let }\\quad y & =\\sin ^{-1} \\frac{1}{\\sqrt{x+1}} \\\\\n\\therefore\\quad\\frac{d y}{d x} & =\\frac{d}{d x} \\sin ^{-1} \\frac{1}{\\sqrt{x+1}}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{1}{\\sqrt{1-\\left(\\frac{1}{\\sqrt{x+1}}\\right)^2}} \\cdot \\frac{d}{d x} \\frac{1}{(x+1)^{1 / 2}} \\quad\\left[\\because \\frac{d}{d x}\\left(\\sin ^{-1} x\\right)=\\frac{1}{\\sqrt{1-x^2}}\\right] \\\\\n& =\\frac{1}{\\sqrt{\\frac{x+1-1}{x+1}}} \\cdot \\frac{d}{d x} \\cdot(x+1)^{-1 / 2} \\\\\n& =\\sqrt{\\frac{x+1}{x}} \\cdot \\frac{-1}{2}(x+1)^{-\\frac{1}{2}-1} \\cdot \\frac{d}{d x}(x+1) \\\\\n& =\\frac{(x+1)^{1 / 2}}{x^{1 / 2}} \\cdot\\left(-\\frac{1}{2}\\right)(x+1)^{-3 / 2}=\\frac{-1}{2 \\sqrt{x}} \\cdot\\left(\\frac{1}{x+1}\\right)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sboyxg",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$(\\sin x)^{\\cos x}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $\\quad y= (\\sin x)^{\\cos x}$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\log y=\\log (\\sin x)^{\\cos x}=\\cos x \\log \\sin x \\\\\n\\therefore & \\frac{d}{d y} \\log y \\cdot \\frac{d y}{d x}=\\frac{d}{d x}(\\cos x \\cdot \\log \\sin x)\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad \\frac{1}{y} \\cdot \\frac{d y}{d x} & =\\cos x \\cdot \\frac{d}{d x} \\log \\sin x+\\log \\sin x \\cdot \\frac{d}{d x} \\cos x \\\\\n& =\\cos x \\cdot \\frac{1}{\\sin x} \\cdot \\frac{d}{d x} \\sin x+\\log \\sin x \\cdot(-\\sin x)\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n& =\\cot x \\cdot \\cos x-\\log (\\sin x) \\cdot \\sin x \\quad \\left[\\because \\cot x=\\frac{\\cos x}{\\sin x}\\right]\\\\\n\\therefore\\quad \\frac{d y}{d x} & =y\\left[\\frac{\\cos ^2 x}{\\sin x}-\\sin x \\cdot \\log (\\sin x)\\right] \\\\\n& =\\sin x^{\\cos x}\\left[\\frac{\\cos ^2 x}{\\sin x}-\\sin x \\cdot \\log (\\sin x)\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqdrw",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sin ^m x \\cdot \\cos ^n x$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let, $y=\\sin ^m x \\cdot \\cos ^n x$</p>\n<p>$\\therefore \\quad \\frac{d y}{d x}=\\frac{d}{d x}\\left[(\\sin x)^m \\cdot(\\cos x)^n\\right]$</p>\n<p>$$\\begin{aligned}\n& =(\\sin x)^m \\cdot \\frac{d}{d x}(\\cos x)^n+(\\cos x)^n \\cdot \\frac{d}{d x}(\\sin x)^m \\\\\n& =(\\sin x)^m \\cdot n(\\cos x)^{n-1} \\cdot \\frac{d}{d x} \\cos x+(\\cos x)^n m(\\sin x)^{m-1} \\cdot \\frac{d}{d x} \\sin x \\\\\n& =(\\sin x)^m \\cdot n(\\cos x)^{n-1}(-\\sin x)+(\\cos x)^n \\cdot m(\\sin x)^{m-1} \\cos x \\\\\n& =-n \\sin ^m x \\cdot \\cos ^{n-1} x \\cdot(\\sin x)+m \\cos ^n x \\cdot \\sin ^{m-1} x \\cdot \\cos x \\\\\n& =-n \\cdot \\sin ^m x \\cdot \\sin x \\cdot \\cos ^n x \\cdot \\frac{1}{\\cos x}+m \\cdot \\sin ^m x \\cdot \\frac{1}{\\sin x} \\cdot \\cos ^n x \\cdot \\cos x \\\\\n& =-n \\cdot \\sin ^m x \\cdot \\cos ^n x \\cdot \\tan x+m \\sin ^m x \\cdot \\cos ^n x \\cdot \\cot x \\\\\n& =\\sin ^m x \\cdot \\cos ^n x[-n \\tan x+m \\cot x]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqcyq",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$(x+1)^2(x+2)^3(x+3)^4 $</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { Let } \\quad y & =(x+1)^2(x+2)^3(x+3)^4 \\\\\n\\therefore \\quad \\log y & =\\log \\left\\{(x+1)^2 \\cdot(x+2)^3(x+3)^4\\right\\} \\\\\n& =\\log (x+1)^2+\\log (x+2)^3+\\log (x+3)^4\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { and } \\quad & \\frac{d}{d y} \\log y \\cdot \\frac{d y}{d x}=\\frac{d}{d x}[2 \\log (x+1)]+\\frac{d}{d x} {[3 \\log (x+2)]+\\frac{d}{d x}[4 \\log (x+3)] } \\\\\n& \\frac{1}{y} \\cdot \\frac{d y}{d x}=\\frac{2}{(x+1)} \\cdot \\frac{d}{d x}(x+1)+3 \\cdot \\frac{1}{(x+2)} \\cdot \\frac{d}{d x}(x+2) \\\\\n&+4 \\cdot \\frac{1}{(x+3)} \\cdot \\frac{d}{d x}(x+3) \\quad\\left[\\because \\quad \\frac{d}{d x}(\\log x)=\\frac{1}{x}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{rlrl} \n& =\\left[\\frac{2}{x+1}+\\frac{3}{x+2}+\\frac{4}{x+3}\\right] \\\\\n\\therefore & \\frac{d y}{d x} =y\\left[\\frac{2}{(x+1)}+\\frac{3}{(x+2)}+\\frac{4}{(x+3)}\\right]\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& =(x+1)^2 \\cdot(x+2)^3 \\cdot(x+3)^4\\left[\\frac{2}{(x+1)}+\\frac{3}{(x+2)}+\\frac{4}{(x+3)}\\right] \\\\\n& =(x+1)^2 \\cdot(x+2)^3 \\cdot(x+3)^4 \\\\\n& \\quad\\left[\\frac{2(x+2)(x+3)+3(x+1)(x+3)+4(x+1)(x+2)}{(x+1)(x+2)(x+3)}\\right] \\\\\n& =\\frac{(x+1)^2(x+2)^3(x+3)^4}{(x+1)(x+2)(x+3)} \\\\\n& \\quad\\left[2\\left(x^2+5 x+6\\right)+3\\left(x^2+4 x+3\\right)+4\\left(x^2+3 x+2\\right)\\right] \\\\\n& =(x+1)(x+2)^2(x+3)^3 \\\\\n& \\quad\\left[2 x^2+10 x+12+3 x^2+12 x+9+4 x^2+12 x+8\\right] \\\\\n& =(x+1)(x+2)^2(x+3)^3\\left[9 x^2+34 x+29\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpjlf",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\cos ^{-1}\\left(\\frac{\\sin x+\\cos x}{\\sqrt{2}}\\right),-\\frac{\\pi}{4}< x< \\frac{\\pi}{4}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\text{Let}\\quad y=\\cos ^{-1}\\left(\\frac{\\sin x+\\cos x}{\\sqrt{2}}\\right)$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d}{d x} \\cos ^{-1}\\left(\\frac{\\sin x+\\cos x}{\\sqrt{2}}\\right) \\\\\n& =\\frac{-1}{\\sqrt{1-\\left(\\frac{\\sin x+\\cos x}{\\sqrt{2}}\\right)^2}} \\cdot \\frac{d}{d x}\\left(\\frac{\\sin x+\\cos x}{\\sqrt{2}}\\right)\n\\end{aligned}$$</p>\n<p>$\\left[\\because \\frac{d}{d x}(\\cos x)=-\\frac{1}{\\sqrt{1-x^2}}\\right]$</p>\n<p>$$\\begin{aligned}\n& =\\frac{-1}{\\sqrt{4-\\frac{\\left(\\sin ^2 x+\\cos ^2 x+2 \\sin x \\cdot \\cos x\\right)}{2}}}  \\cdot \\frac{1}{\\sqrt{2}}(\\cos x-\\sin x)\\\\\n& =\\frac{-1 \\cdot \\sqrt{2}}{\\sqrt{1-\\sin 2 x}} \\cdot \\frac{1}{\\sqrt{2}}(\\cos x-\\sin x) \\\\\n& {\\left[\\because 1-\\sin 2 x=(\\cos x-\\sin x)^2=\\cos ^2 x+\\sin ^2 x-2 \\sin x \\cos x\\right]} \\\\\n& =\\frac{-1(\\cos x-\\sin x)}{(\\cos x-\\sin x)}=-1\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq6xj",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\tan ^{-1} \\sqrt{\\frac{1-\\cos x}{1+\\cos x}},-\\frac{\\pi}{4}< x<\\frac{\\pi}{4}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { Let }\\quad y & =\\tan ^{-1} \\sqrt{\\frac{1-\\cos x}{1+\\cos x}} \\\\\n\\therefore\\quad \\frac{d y}{d x} & =\\frac{d}{d x} \\tan ^{-1} \\sqrt{\\frac{1-\\cos x}{1+\\cos x}}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$=\\frac{1}{1+\\sqrt{\\left(\\frac{1-\\cos x}{1+\\cos x}\\right)^2}} \\cdot \\frac{d}{d x}\\left[\\frac{1-\\cos x}{1+\\cos x}\\right]^{1 / 2} \\quad\\left[\\because \\frac{d}{d x}\\left(\\tan ^{-1} x\\right)=\\frac{1}{1+x^2}\\right]$</p>\n<p>$$\\begin{aligned}\n& =\\frac{1}{1+\\frac{1-\\cos x}{1+\\cos x}} \\cdot \\frac{1}{2}\\left[\\frac{1-\\cos x}{1+\\cos x}\\right]^{-1 / 2} \\cdot \\frac{d}{d x}\\left(\\frac{1-\\cos x}{1+\\cos x}\\right) \\\\\n& =\\frac{1}{\\frac{1+\\cos x+1-\\cos x}{1+\\cos x}} \\cdot \\frac{1}{2}\\left[\\frac{(1-\\cos x)}{(1+\\cos x)} \\cdot \\frac{(1-\\cos x)}{(1-\\cos x)}\\right]^{-1 / 2} \\cdot \\frac{(1+\\cos x) \\cdot \\sin x+(1-\\cos x) \\cdot \\sin x}{(1+\\cos x)^2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{(1+\\cos x)}{2} \\cdot \\frac{1}{2}\\left[\\frac{(1-\\cos x)^2}{\\left(1-\\cos ^2 x\\right)}\\right]^{-1 / 2}\\left[\\frac{\\sin x(1+\\cos x+1-\\cos x)}{(1+\\cos x)^2}\\right] \\\\\n& =\\frac{(1+\\cos x)}{2} \\cdot \\frac{1}{2}\\left[\\frac{(1-\\cos x)^2}{\\left(1-\\cos ^2 x\\right)}\\right]^{-1 / 2}\\left[\\frac{\\sin x(1+\\cos x+1-\\cos x)}{(1+\\cos x)^2}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{(1+\\cos x)}{2} \\cdot \\frac{1}{2}\\left[\\frac{(1-\\cos x)^2}{\\sin x}\\right]^{-1 / 2} \\cdot \\frac{2 \\sin x}{(1+\\cos x)^2} \\\\\n& =\\frac{(1+\\cos x)}{2} \\cdot \\frac{1}{2} \\cdot \\frac{\\sin x}{(1-\\cos x)} \\cdot \\frac{2 \\sin x}{(1+\\cos x)^2} \\\\\n& =\\frac{2 \\sin ^2 x}{4(1+\\cos x)(1-\\cos x)}=\\frac{1}{2} \\cdot \\frac{\\sin ^2 x}{\\left(1-\\cos ^2 x\\right)} \\\\\n& =\\frac{1}{2} \\cdot \\frac{\\sin ^2 x}{\\sin ^2 x}=\\frac{1}{2}\n\\end{aligned}$$</p>\n<p>Alternate Method</p>\n<p>Let $$y=\\tan ^{-1}\\left(\\sqrt{\\frac{1-\\cos x}{1+\\cos x}}\\right)$$</p>\n<p>$$\\begin{aligned}\n& =\\tan ^{-1}\\left(\\sqrt{\\frac{1-1+2 \\sin ^2 \\frac{x}{2}}{1+2 \\cos ^2 \\frac{x}{2}-1}}\\right) \\quad\\left[\\because \\cos x=1-2 \\sin ^2 \\frac{x}{2}=2 \\cos ^2 \\frac{x}{2}-1\\right] \\\\\n& =\\tan ^{-1}\\left(\\tan \\frac{x}{2}\\right)=\\frac{x}{2}\n\\end{aligned}$$</p>\n<p>On differentiating w.r.t. x, we get</p>\n<p>$\\frac{d y}{d x}=\\frac{1}{2}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbounh",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\tan ^{-1}(\\sec x+\\tan x), \\frac{-\\pi}{2}< x<\\frac{\\pi}{2}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $y=\\tan ^{-1}(\\sec x+\\tan x)$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d}{d x} \\tan ^{-1}(\\sec x+\\tan x) \\\\\n& =\\frac{1}{1+(\\sec x+\\tan x)^2} \\cdot \\frac{d}{d x}(\\sec x+\\tan x) \\quad\\left[\\because \\frac{d}{d x}\\left(\\tan ^{-1} x\\right)=\\frac{1}{1+x^2}\\right] \\\\\n& =\\frac{1}{1+\\sec ^2 x+\\tan ^2 x+2 \\sec x \\cdot \\tan x} \\cdot\\left[\\sec x \\cdot \\tan x+\\sec ^2 x\\right] \\\\\n& =\\frac{1}{\\left(\\sec ^2 x+\\sec ^2 x+2 \\sec x \\cdot \\tan x\\right)} \\cdot \\sec x \\cdot(\\sec x+\\tan x) \\\\\n& =\\frac{1}{2 \\sec x(\\tan x+\\sec x)} \\cdot \\sec x(\\sec x+\\tan x)=\\frac{1}{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpnx0",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\tan ^{-1}\\left(\\frac{a \\cos x-b \\sin x}{b \\cos x+a \\sin x}\\right), \\frac{-\\pi}{2}< x<\\frac{\\pi}{2}$ and $\\frac{a}{b} \\tan x>-1$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { Let } \\quad y & =\\tan ^{-1}\\left(\\frac{a \\cos x-b \\sin x}{b \\cos x+a \\sin x}\\right) \\\\\n& =\\tan ^{-1}\\left[\\frac{\\frac{a \\cos x}{b \\cos x}-\\frac{b \\sin x}{b \\cos x}}{\\frac{b \\cos x}{b \\cos x}+\\frac{a \\sin x}{b \\cos x}}\\right]=\\tan ^{-1}\\left[\\frac{\\frac{a}{b}-\\tan x}{1+\\frac{a}{b} \\tan x}\\right] \\\\\n& =\\tan ^{-1} \\frac{a}{b}-\\tan ^{-1} \\tan x \\quad \\left[\\because \\tan ^{-1} x-\\tan ^{-1} y=\\tan ^{-1}\\left(\\frac{x-y}{1+x y}\\right)\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{rlr} \n& =\\tan ^{-1} \\frac{a}{b}-x & \\\\\n\\therefore\\quad \\frac{d y}{d x} & =\\frac{d}{d x}\\left(\\tan ^{-1} \\frac{a}{b}\\right)-\\frac{d}{d x}(x) & \\\\\n& =0-1 & {\\left[\\because \\frac{d}{d x}\\left(\\frac{a}{b}\\right)=0\\right]} \\\\\n& =-1 &\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq6zp",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sec ^{-1}\\left(\\frac{1}{4 x^3-3 x}\\right), 0< x<\\frac{1}{\\sqrt{2}}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$y=\\sec ^{-1}\\left(\\frac{1}{4 x^3-3 x}\\right)\\quad \\text{..... (i)}$$</p>\n<p>On putting $x=\\cos \\theta$ in Eq. (i), we get</p>\n<p>$$\\begin{aligned}\ny & =\\sec ^{-1} \\frac{1}{4 \\cos ^3 \\theta-3 \\cos \\theta} \\\\\n& =\\sec ^{-1} \\frac{1}{\\cos 3 \\theta} \\\\\n& =\\sec ^{-1}(\\sec 3 \\theta)=3 \\theta \\\\\n& =3 \\cos ^{-1} x \\quad \\left[\\because \\theta=\\cos ^{-1} x\\right]\\\\\n\\therefore\\quad \\frac{d y}{d x} & =\\frac{d}{d x}\\left(3 \\cos ^{-1} x\\right) \\\\\n& =3 \\cdot \\frac{-1}{\\sqrt{1-x^2}}\n\\end{aligned}$$</p>\n"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq71i",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\tan ^{-1}\\left(\\frac{3 a^2 x-x^3}{a^3-3 a x^2}\\right), \\frac{-1}{\\sqrt{3}}<\\frac{x}{a}<\\frac{1}{\\sqrt{3}}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Let}\\quad & y=\\tan ^{-1}\\left(\\frac{3 a^2 x-x^3}{a^3-3 a x^2}\\right) \\\\\n\\text{Put}\\quad & x=\\operatorname{atan} \\theta \\Rightarrow \\theta=\\tan ^{-1} \\frac{x}{a}\n\\end{aligned}$$</p>\n<p>$\\therefore \\quad y=\\tan ^{-1}\\left[\\frac{3 \\tan \\theta-\\tan ^3 \\theta}{1-3 \\tan ^2 \\theta}\\right] \\quad\\left[\\because \\tan 3 \\theta=\\frac{3 \\tan \\theta-\\tan ^3 \\theta}{1-3 \\tan ^2 \\theta}\\right]$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& =\\tan ^{-1}(\\tan 3 \\theta)=3 \\theta \\\\\n& =3 \\tan ^{-1} \\frac{x}{a}\n\\end{aligned}\\\\\n&\\left[\\because \\theta=\\tan ^{-1} \\frac{x}{a}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{d y}{d x} & =3 \\cdot \\frac{d}{d x} \\tan ^{-1} \\frac{x}{a}=3 \\cdot\\left[\\frac{1}{1+\\frac{x^2}{a^2}}\\right] \\cdot \\frac{d}{d x} \\cdot\\left(\\frac{x}{a}\\right) \\\\\n& =3 \\cdot \\frac{a^2}{a^2+x^2} \\cdot \\frac{1}{a}=\\frac{3 a}{a^2+x^2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq23z",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\tan ^{-1}\\left[\\frac{\\sqrt{1+x^2}+\\sqrt{1-x^2}}{\\sqrt{1+x^2}-\\sqrt{1-x^2}}\\right],-1< x<1, x \\neq 0$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$y=\\tan ^{-1}\\left[\\frac{\\sqrt{1+x^2}+\\sqrt{1-x^2}}{\\sqrt{1+x^2}-\\sqrt{1-x^2}}\\right]$$</p>\n<p>Put $$x^2=\\cos 2 \\theta$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { Put }\\quad x^2 & =\\cos 2 \\theta \\\\\n\\therefore\\quad y & =\\tan ^{-1}\\left(\\frac{\\sqrt{1+\\cos 2 \\theta}+\\sqrt{1-\\cos 2 \\theta}}{\\sqrt{1+\\cos 2 \\theta}-\\sqrt{1-\\cos 2 \\theta}}\\right)\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\tan ^{-1}\\left(\\frac{\\sqrt{1+2 \\cos ^2 \\theta-1}+\\sqrt{1-1+2 \\sin ^2 \\theta}}{\\sqrt{1+2 \\cos ^2 \\theta-1}-\\sqrt{1-1+2 \\sin ^2 \\theta}}\\right) \\\\\n& =\\tan ^{-1}\\left(\\frac{\\sqrt{2} \\cos \\theta+\\sqrt{2} \\sin \\theta}{\\sqrt{2} \\cos \\theta-\\sqrt{2} \\sin \\theta}\\right)=\\tan ^{-1}\\left[\\frac{\\sqrt{2}(\\cos \\theta+\\sin \\theta)}{\\sqrt{2}(\\cos \\theta-\\sin \\theta)}\\right] \\\\\n& =\\tan ^{-1}\\left(\\frac{\\cos \\theta+\\sin \\theta}{\\cos \\theta-\\sin \\theta}\\right)=\\tan ^{-1}\\left(\\frac{\\frac{\\cos \\theta+\\sin \\theta}{\\cos \\theta}}{\\frac{\\cos \\theta-\\sin \\theta}{\\cos \\theta}}\\right) \\\\\n& =\\tan ^{-1}\\left(\\frac{1+\\tan \\theta}{1-\\tan \\theta}\\right)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\tan ^{-1} \\tan \\left(\\frac{\\pi}{4}+\\theta\\right) \\quad\\left[\\because \\tan (a+b)=\\frac{\\tan a+\\tan b}{1-\\tan a \\cdot \\tan b}\\right] \\\\\n& =\\frac{\\pi}{4}+\\theta=\\frac{\\pi}{4}+\\frac{1}{2} \\cos ^{-1} x^2 \\quad\\left[\\because 2 \\theta=\\cos ^{-1} x^2 \\Rightarrow \\theta=\\frac{1}{2} \\cos ^{-1} x^2\\right] \\\\\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d}{d x}\\left(\\frac{\\pi}{4}\\right)+\\frac{d}{d x}\\left(\\frac{1}{2} \\cos ^{-1} x^2\\right) \\\\\n& =0+\\frac{1}{2} \\cdot \\frac{-1}{\\sqrt{1-x^4}} \\cdot \\frac{d}{d x} x^2=\\frac{1}{2} \\cdot \\frac{-2 x}{\\sqrt{1-x^4}}=\\frac{-x}{\\sqrt{1-x^4}}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sboup8",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$x=t+\\frac{1}{t}, y=t-\\frac{1}{t}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{lll}\n\\because & x=t+\\frac{1}{t} \\text { and } y=t-\\frac{1}{t} \\\\\n\\therefore & \\frac{d x}{d t}=\\frac{d}{d t}\\left(t+\\frac{1}{t}\\right) \\quad \\text { and } \\quad \\frac{d y}{d t}=\\frac{d}{d t}\\left(t-\\frac{1}{t}\\right) \\\\\n\\Rightarrow & \\frac{d x}{d t}=1+(-1) t^{-2} \\text { and } \\quad \\frac{d y}{d t}=1-(-1) t^{-2} \\\\\n\\Rightarrow & \\frac{d x}{d t}=1-\\frac{1}{t^2} \\quad \\text { and } \\quad \\frac{d y}{d t}=1+\\frac{1}{t^2} \\\\\n\\Rightarrow & \\frac{d x}{d t}=\\frac{t^2-1}{t^2} \\quad \\text { and } \\frac{d y}{d t}=\\frac{t^2+1}{t^2} \\\\\n\\therefore & \\frac{d y}{d x}=\\frac{d y / d t}{d x / d t}=\\frac{t^2+1 / t^2}{t^2-1 / t^2}=\\frac{t^2+1}{t^2-1}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpehu",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$x=e^\\theta\\left(\\theta+\\frac{1}{\\theta}\\right), y=e^{-\\theta}\\left(\\theta-\\frac{1}{\\theta}\\right)$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$\\because\\quad x=e^\\theta\\left(\\theta+\\frac{1}{\\theta}\\right)$ and $y=e^{-\\theta}\\left(\\theta-\\frac{1}{\\theta}\\right)$</p>\n<p>$\\therefore \\quad \\frac{d x}{d \\theta}=\\frac{d}{d \\theta}\\left[e^\\theta \\cdot\\left(\\theta+\\frac{1}{\\theta}\\right)\\right]$</p>\n<p>$$\\begin{aligned}\n& =e^\\theta \\cdot \\frac{d}{d \\theta}\\left(\\theta+\\frac{1}{\\theta}\\right)+\\left(\\theta+\\frac{1}{\\theta}\\right) \\cdot \\frac{d}{d \\theta} e^\\theta \\\\\n& =e^\\theta\\left(1-\\frac{1}{\\theta^2}\\right)+\\left(\\theta+\\frac{1}{\\theta}\\right) e^\\theta \\\\\n& =e^\\theta\\left(1-\\frac{1}{\\theta^2}+\\theta+\\frac{1}{\\theta}\\right) \\\\\n& =e^\\theta\\left(\\frac{\\theta^2-1+\\theta^3+\\theta}{\\theta^2}\\right)\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>and $$\\frac{d y}{d \\theta}=\\frac{d}{d \\theta}\\left[e^{-\\theta} \\cdot\\left(\\theta-\\frac{1}{\\theta}\\right)\\right]$$</p>\n<p>$$\\begin{aligned}\n& =e^{-\\theta} \\cdot \\frac{d}{d \\theta}\\left(\\theta-\\frac{1}{\\theta}\\right)+\\frac{d}{d \\theta} e^{-\\theta}\\left(\\theta-\\frac{1}{\\theta}\\right) \\\\\n& =e^{-\\theta}\\left(1+\\frac{1}{\\theta^2}\\right)+\\left(\\theta-\\frac{1}{\\theta}\\right) e^{-\\theta} \\cdot \\frac{d}{d \\theta}(-\\theta) \\\\\n& =e^{-\\theta}\\left[\\frac{\\theta^2+1}{\\theta^2}-\\frac{\\theta^2-1}{\\theta}\\right]=e^{-\\theta}\\left[\\frac{\\theta^2+1-\\theta^3+\\theta}{\\theta^2}\\right]\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d y / d \\theta}{d x / d \\theta}=\\frac{e^{-\\theta}\\left(\\frac{\\theta^2+1-\\theta^3+\\theta}{\\theta^2}\\right)}{e^\\theta\\left(\\frac{\\theta^2-1+\\theta^3+\\theta}{\\theta^2}\\right)} \\\\\n& =e^{-2 \\theta}\\left(\\frac{-\\theta^3+\\theta^2+\\theta+1}{\\theta^3+\\theta^2+\\theta-1}\\right)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqdtt",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$x=3 \\cos \\theta-2 \\cos ^3 \\theta, y=3 \\sin \\theta-2 \\sin ^3 \\theta$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\because\\quad x & =3 \\cos \\theta-2 \\cos ^3 \\theta \\text { and } y=3 \\sin \\theta-2 \\sin ^3 \\theta \\\\\n\\therefore\\quad \\frac{d x}{d \\theta} & =\\frac{d}{d \\theta}(3 \\cos \\theta)-\\frac{d}{d \\theta}\\left(2 \\cos ^3 \\theta\\right) \\\\\n& =3 \\cdot(-\\sin \\theta)-2 \\cdot 3 \\cos ^2 \\theta \\cdot \\frac{d}{d \\theta} \\cdot \\cos \\theta \\\\\n& =-3 \\sin \\theta+6 \\cos ^2 \\theta \\sin \\theta \\\\\n\\text{and}\\quad\\frac{d y}{d \\theta} & =3 \\cos A-2 \\cdot 3 \\sin ^2 \\theta \\cdot \\frac{d}{d \\theta} \\cdot \\sin \\theta \\\\\n& =3 \\cos \\theta-6 \\sin ^2 \\theta \\cdot \\cos \\theta \\\\\n\\text{Now,}\\quad \\frac{d y}{d x} & =\\frac{d y / d \\theta}{d x / d \\theta}=\\frac{3 \\cos \\theta-6 \\sin ^2 \\theta \\cos \\theta}{-3 \\sin \\theta+6 \\cos ^2 \\theta \\sin \\theta} \\\\\n& =\\frac{3 \\cos \\theta\\left(1-2 \\sin ^2 \\theta\\right)}{3 \\sin \\theta\\left(-1+2 \\cos ^2 \\theta\\right)}=\\cot \\theta \\cdot \\frac{\\cos 2 \\theta}{\\cos 2 \\theta}=\\cot \\theta\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpekb",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sin x=\\frac{2 t}{1+t^2}, \\tan y=\\frac{2 t}{1-t^2}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\because & \\sin x=\\frac{2 t}{1+t^2} \\quad\\text{.... (i)}\\\\\n\\text { and } & \\tan y=\\frac{2 t}{1-t^2}\\quad\\text{.... (ii)}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\begin{aligned}\n\\therefore \\quad \\frac{d}{d x} \\sin x \\cdot \\frac{d x}{d t} & =\\frac{d}{d t}\\left(\\frac{2 t}{1+t^2}\\right) \\\\\n\\Rightarrow \\quad \\cos x \\frac{d x}{d t} & =\\frac{\\left(1+t^2\\right) \\cdot \\frac{d}{d t}(2 t)-(2 t) \\cdot \\frac{d}{d t}\\left(1+t^2\\right)}{\\left(1+t^2\\right)^2} \\\\\n& =\\frac{2\\left(1+t^2\\right)-2 t \\cdot 2 t}{\\left(1+t^2\\right)^2}=\\frac{2+2 t^2-4 t^2}{\\left(1+t^2\\right)^2} \\\\\n\\Rightarrow \\quad \\frac{d x}{d t} & =\\frac{2\\left(1-t^2\\right)}{\\left(1+t^2\\right)^2} \\cdot \\frac{1}{\\cos x} \\\\\n\\Rightarrow \\quad \\frac{d x}{d t} & =\\frac{2\\left(1-t^2\\right)}{\\left(1+t^2\\right)^2} \\cdot \\frac{1}{\\sqrt{1-\\sin ^2 x}}=\\frac{2\\left(1-t^2\\right)}{\\left(1+t^2\\right)^2} \\cdot \\frac{1}{\\sqrt{1-\\left(\\frac{2 t}{\\left.1+t^2\\right)^2}\\right.}}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\quad \\frac{d x}{d t}=\\frac{2\\left(1-t^2\\right)}{\\left(1+t^2\\right)^2} \\cdot \\frac{\\left(1+t^2\\right)}{\\left(1-t^2\\right)}=\\frac{2}{1+t^2}\\quad\\text{..... (iii)}$</p>\n<p>$$\\begin{aligned}\n&\\text { Also, }\\\\\n&\\begin{aligned}\n\\frac{d}{d y} \\tan y \\cdot \\frac{d y}{d t} & =\\frac{d}{d t}\\left(\\frac{2 t}{1-t^2}\\right) \\\\\n\\sec ^2 y \\frac{d y}{d t} & =\\frac{\\left(1-t^2\\right) \\frac{d}{d t} \\cdot(2 t)-2 t \\cdot \\frac{d}{d t}\\left(1-t^2\\right)}{\\left(1-t^2\\right)^2} \\\\\n\\frac{d y}{d t} & =\\frac{2-2 t^2+4 t^2}{\\left(1-t^2\\right)^2} \\cdot \\frac{1}{\\sec ^2 y} \\\\\n& =\\frac{2\\left(1+t^2\\right)}{\\left(1-t^2\\right)^2} \\cdot \\frac{1}{\\left(1+\\tan ^2 y\\right)}=\\frac{2\\left(1+t^2\\right)}{\\left(1-t^2\\right)^2} \\cdot \\frac{1}{1+\\frac{4 t^2}{\\left(1-t^2\\right)^2}}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{2\\left(1+t^2\\right)}{\\left(1-t^2\\right)^2} \\cdot \\frac{\\left(1-t^2\\right)^2}{\\left(1+t^2\\right)^2}=\\frac{2}{1+t^2} \\quad\\text{.... (iv)}\\\\\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d y / d t}{d x / d t}=\\frac{2 / 1+t^2}{2 / 1+t^2}=1\\quad\\text{[from Eqs. (iii) and (iv)]}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpjnc",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$x=\\frac{1+\\log t}{t^2}, y=\\frac{3+2 \\log t}{t}$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\because \\quad x=\\frac{1+\\log t}{t^2} \\text { and } y=\\frac{3+2 \\log t}{t} \\\\\n& \\therefore \\quad \\frac{d x}{d t}=\\frac{t^2 \\cdot \\frac{d}{d t}(1+\\log t)-(1+\\log t) \\cdot \\frac{d}{d t} t^2}{\\left(t^2\\right)^2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{t^2 \\cdot \\frac{1}{t}-(1+\\log t) \\cdot 2 t}{t^4}=\\frac{t-(1+\\log t) \\cdot 2 t}{t^4} \\\\\n& =\\frac{t}{t^4}\\left[1-2(1+\\log t)=\\frac{-1-2 \\log t}{t^3}\\right. \\quad\\text{.... (i)}\\\\\n\\text{and}\\quad \\frac{d y}{d t} & =\\frac{t \\cdot \\frac{d}{d t}(3+2 \\log t)-(3+2 \\log t) \\cdot \\frac{d}{d t} t}{t^2} \\\\\n& =\\frac{t \\cdot 2 \\cdot \\frac{1}{t}-(3+2 \\log t) \\cdot 1}{t^2} \\\\\n& =\\frac{2-3-2 \\log t}{t^2}=\\frac{-1-2 \\log t}{t^2} \\quad \\quad\\text{.... (ii)}\\\\\n\\therefore\\quad \\frac{d y}{d x} & =\\frac{d y / d t}{d x / d t}=\\frac{-1-2 \\log t / t^2}{-1-2 \\log t / t^3}=t\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbomtj",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x=e^{\\cos 2 t}$ and $y=e^{\\sin 2 t}$, then prove that $\\frac{d y}{d x}=-\\frac{y \\log x}{x \\log y}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\because \\quad x=e^{\\cos 2 t} \\text { and } y=e^{\\sin 2 t} \\\\\n& \\therefore \\quad \\frac{d x}{d t}=\\frac{d}{d t} e^{\\cos 2 t}=e^{\\cos 2 t} \\cdot \\frac{d}{d t} \\cos 2 t \\\\\n& =e^{\\cos 2 t} \\cdot(-\\sin 2 t) \\cdot \\frac{d}{d t}(2 t)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\frac{d x}{d t} & =-2 e^{\\cos 2 t} \\cdot \\sin 2 t \\quad\\text{.... (i)}\\\\\n\\text{and}\\quad \\frac{d y}{d t} & =\\frac{d}{d t} e^{\\sin 2 t}=e^{\\sin 2 t} \\cdot \\frac{d}{d t} \\sin 2 t \\\\\n& =e^{\\sin 2 t} \\cos 2 t \\cdot \\frac{d}{d t} 2 t \\\\\n& =2 e^{\\sin 2 t} \\cdot \\cos 2 t\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d y / d t}{d x / d t}=\\frac{2 e^{\\sin 2 t} \\cdot \\cos 2 t}{-2 e^{\\cos 2 t} \\cdot \\sin 2 t} \\\\\n& =\\frac{e^{\\sin 2 t} \\cdot \\cos 2 t}{e^{\\cos 2 t} \\cdot \\sin 2 t}\\quad\\text{.... (iii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { We know that, }\\quad \\log x & =\\cos 2 t \\cdot \\log e=\\cos 2 t \\quad\\text{.... (iv)}\\\\\n\\text { and }\\quad \\log y & =\\sin 2 t \\cdot \\log e=\\sin 2 t \\quad\\text{..... (v)}\\\\\n\\therefore\\quad \\frac{d y}{d x} & =\\frac{-y \\log x}{x \\log y}\\quad \\text { [using Eqs. (iv) and (v) in Eq. (iii) and } x=e^{\\cos 2 t}, y=e^{\\sin 2 t} \\text { ] }\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbp3xt",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x=a \\sin 2 t(1+\\cos 2 t)$ and $y=b \\cos 2 t(1-\\cos 2 t)$, then show that $\\left(\\frac{d y}{d x}\\right)_{t=\\pi / 4}=\\frac{b}{a}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{rlrl}\n&\\because & x & =a \\sin 2 t(1+\\cos 2 t) \\text { and } y=b \\cos 2 t(1-\\cos 2 t) \\\\\n& \\therefore & \\frac{d x}{d t} & =a\\left[\\sin 2 t \\cdot \\frac{d}{d t}(1+\\cos 2 t)+(1+\\cos 2 t) \\cdot \\frac{d}{d t} \\sin 2 t\\right]\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& =a\\left[\\sin 2 t \\cdot(-\\sin 2 t) \\cdot \\frac{d}{d t} 2 t+(1+\\cos 2 t) \\cdot \\cos 2 t \\cdot \\frac{d}{d t} 2 t\\right] \\\\\n& =-2 a \\sin ^2 2 t+2 a \\cos 2 t(1+\\cos 2 t)\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{d x}{d t}=-2 a\\left[\\sin ^2 2 t-\\cos 2 t(1+\\cos 2 t)\\right] \\quad\\text{.... (i)}\\\\\n\\text { and } & \\frac{d y}{d t}=b\\left[\\cos 2 t \\cdot \\frac{d}{d t}(1-\\cos 2 t)+(1-\\cos 2 t) \\cdot \\frac{d}{d t} \\cos 2 t\\right]\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& =b\\left[\\cos 2 t \\cdot(\\sin 2 t) \\frac{d}{d t} 2 t+(1-\\cos 2 t)(-\\sin 2 t) \\cdot \\frac{d}{d t} 2 t\\right] \\\\\n& =b[2 \\sin 2 t \\cdot \\cos 2 t+2(1-\\cos 2 t)(-\\sin 2 t)] \\\\\n& =2 b[\\sin 2 t \\cdot \\cos 2 t-(1-\\cos 2 t) \\sin 2 t]\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore \\quad \\frac{d y}{d x}=\\frac{d y / d t}{d x / d t}=\\frac{-2 b[-\\sin 2 t \\cdot \\cos 2 t+(1-\\cos 2 t) \\sin 2 t]}{-2 a\\left[\\sin ^2 2 t-\\cos 2 t(1+\\cos 2 t)\\right]} \\\\\n\\Rightarrow \\quad\\left(\\frac{d y}{d x}\\right)_{t=\\pi / 4}=\\frac{b}{a} \\frac{\\left[-\\sin \\frac{\\pi}{2} \\cos \\frac{\\pi}{2}+\\left(1-\\cos \\frac{\\pi}{2}\\right) \\sin \\frac{\\pi}{2}\\right]}{\\left[\\sin ^2 \\frac{\\pi}{2}-\\cos \\frac{\\pi}{2}\\left(1+\\cos \\frac{\\pi}{2}\\right)\\right]}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{b}{a} \\cdot \\frac{(0+1)}{(1-0)} \\quad \\left[\\because \\sin \\frac{\\pi}{2}=1 \\text { and } \\cos \\frac{\\pi}{2}=0\\right]\\\\\n& =\\frac{b}{a}\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sboqy7",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x=3 \\sin t-\\sin 3 t, y=3 \\cos t-\\cos 3 t$, then find $\\frac{d y}{d x}$ at $t=\\frac{\\pi}{3}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\because \\quad & x =3 \\sin t-\\sin 3 t \\text { and } y=3 \\cos t-\\cos 3 t \\\\\n\\therefore \\quad & \\frac{d x}{d t} =3 \\cdot \\frac{d}{d t} \\sin t-\\frac{d}{d t} \\sin 3 t\n\\end{aligned}$$</p>\n<p>$=3 \\cos t-\\cos 3 t \\cdot \\frac{d}{d t} 3 t=3 \\cos t-3 \\cos 3 t\\quad\\text{.... (i)}$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { and }\\quad\\frac{d y}{d t} & =3 \\cdot \\frac{d}{d t} \\cos t-\\frac{d}{d t} \\cos 3 t \\\\\n& =-3 \\sin t+\\sin 3 t \\cdot \\frac{d}{d t} 3 t\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\frac{d y}{d t}=3 \\sin 3 t-3 t \\sin t \\quad\\text{.... (ii)}\\\\\n\\therefore \\quad \\frac{d y}{d x} =\\frac{d y / d t}{d x / d t}=\\frac{3(\\sin 3 t-\\sin t)}{3(\\cos t-\\cos 3 t)}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\text { Now, } \\quad \\left(\\frac{d y}{d x}\\right)_{t=\\pi / 3} & =\\frac{\\sin \\frac{3 \\pi}{3}-\\sin \\frac{\\pi}{3}}{\\left(\\cos \\frac{\\pi}{3}-\\cos 3 \\frac{\\pi}{3}\\right)}=\\frac{0-\\sqrt{3} / 2}{\\frac{1}{2}-(-1)} \\\\\n& =\\frac{-\\sqrt{3} / 2}{3 / 2}=\\frac{-\\sqrt{3}}{3}=\\frac{-1}{\\sqrt{3}}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqdvr",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Differentiate $\\frac{x}{\\sin x}$ w.r.t. $\\sin x$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { Let }\\quad u & =\\frac{x}{\\sin x} \\text { and } v=\\sin x \\\\\n\\therefore\\quad \\frac{d u}{d x} & =\\frac{\\sin x \\cdot \\frac{d}{d x} x-x \\cdot \\frac{d}{d x} \\sin x}{(\\sin x)^2} \\\\\n& =\\frac{\\sin x-x \\cos x}{\\sin ^2 x}\\quad\\text{.... (i)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { and }\\quad & \\frac{d v}{d x}=\\frac{d}{d x} \\sin x=\\cos x \\quad\\text{..... (ii)}\\\\\n\\therefore\\quad & \\frac{d u}{d v}=\\frac{d u / d x}{d v / d x}=\\frac{\\sin x-x \\cos x / \\sin ^2 x}{\\cos x}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{\\sin x-x \\cos x}{\\sin ^2 x \\cos x}=\\frac{\\frac{\\sin x-x \\cos x}{\\cos x}}{\\frac{\\sin ^2 x \\cos x}{\\cos x}} \\quad\\text{[dividing by cos x in both numerator and denominator]}\\\\\n& =\\frac{\\tan x-x}{\\sin ^2 x}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpvq7",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Differentiate $\\tan ^{-1} \\frac{\\sqrt{1+x^2}-1}{x}$ w.r.t. $\\tan ^{-1} x$, when $x \\neq 0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $$u=\\tan ^{-1} \\frac{\\sqrt{1+x^2}-1}{x} \\text { and } v=\\tan ^{-1} x$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & x=\\tan \\theta \\\\\n\\Rightarrow & u=\\tan ^{-1} \\frac{\\sqrt{1+\\tan ^2 \\theta}-1}{\\tan \\theta}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& =\\tan ^{-1} \\frac{(\\sec \\theta-1) \\cos \\theta}{\\sin \\theta} \\\\\n& =\\tan ^{-1}\\left(\\frac{1-\\cos \\theta}{\\sin \\theta}\\right) \\\\\n& =\\tan ^{-1}\\left[\\frac{1-1+2 \\sin ^2 \\theta / 2}{2 \\sin \\theta / 2 \\cdot \\cos \\theta / 2}\\right] \\quad\\left[\\because \\cos \\theta=1-2 \\sin ^2 \\theta\\right]\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n& =\\tan ^{-1}\\left[\\tan \\frac{\\theta}{2}\\right] \\\\\n& =\\frac{\\theta}{2}=\\frac{1}{2} \\tan ^{-1} x \\\\\n\\therefore\\quad \\frac{d u}{d x} & =\\frac{1}{2} \\frac{d}{d x} \\tan ^{-1} x=\\frac{1}{2} \\cdot \\frac{1}{1+x^2} \\quad\\text{.... (i)}\\\\\n\\text{and}\\quad \\frac{d v}{d x} & =\\frac{d}{d x} \\tan ^{-1} x=\\frac{1}{1+x^2} \\quad\\text{.... (ii)}\\\\\n\\therefore\\quad \\frac{d u}{d v} & =\\frac{d u / d x}{d v / d x} \\\\\n& =\\frac{1 / 2\\left(1+x^2\\right)}{1 /\\left(1+x^2\\right)}=\\frac{\\left(1+x^2\\right)}{2\\left(1+x^2\\right)}=\\frac{1}{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqdxp",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$$\\sin (x y)+\\frac{x}{y}=x^2-y$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad \\sin (x y)+\\frac{x}{y}=x^2-y$</p>\n<p>On differentiating both sides w.r.t. $x$, we get $$\\frac{d}{d x}(\\sin x y)+\\frac{d}{d x}\\left(\\frac{x}{y}\\right)=\\frac{d}{d x} x^2-\\frac{d}{d x} y$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\cos x y \\cdot \\frac{d}{d x}(x y)+\\frac{y \\frac{d}{d x} x-x \\cdot \\frac{d}{d x} y}{y^2}=2 x-\\frac{d y}{d x} \\\\\n\\Rightarrow & \\cos x y \\cdot\\left[x \\cdot \\frac{d}{d x} y+y \\cdot \\frac{d}{d x} \\cdot x\\right]+\\frac{y-x \\frac{d y}{d x}}{y^2}=2 x-\\frac{d y}{d x} \\\\\n\\Rightarrow & x \\cos x y \\cdot \\frac{d y}{d x}+y \\cos x y+\\frac{y}{y^2}-\\frac{x}{y^2} \\frac{d y}{d x}=2 x-\\frac{d y}{d x}\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{d y}{d x}\\left[x \\cos x y-\\frac{x}{y^2}+1\\right]=2 x-y \\cos x y-\\frac{y}{y^2} \\\\\n\\therefore & \\frac{d y}{d x}=\\left[\\frac{2 x y-y^2 \\cos x y-1}{y}\\right]\\left[\\frac{y^2}{x y^2 \\cos x y-x+y^2}\\right]\n\\end{array}$$</p>\n<p>$=\\frac{\\left(2 x y-y^2 \\cos x y-1\\right) y}{\\left(x y^2 \\cos x y-x+y^2\\right)}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpems",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\sec (x+y)=x y$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\sec (x+y)=x y$</p>\n<p>On differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\frac{d}{d x} \\sec (x+y)=\\frac{d}{d x}(x y)$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\sec (x+y) \\cdot \\tan (x+y) \\cdot \\frac{d}{d x}(x+y)=x \\cdot \\frac{d}{d x} y+y \\cdot \\frac{d}{d x} x \\\\\n\\Rightarrow & \\sec (x+y) \\cdot \\tan (x+y) \\cdot\\left(1+\\frac{d y}{d x}\\right)=x \\frac{d y}{d x}+y\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\sec (x+y) \\tan (x+y)+\\sec (x+y) \\cdot \\tan (x+y) \\cdot \\frac{d y}{d x}=x \\frac{d y}{d x}+y \\\\\n\\Rightarrow & \\frac{d y}{d x}[\\sec (x+y) \\cdot \\tan (x+y)-x]=y-\\sec (x+y) \\cdot \\tan (x+y) \\\\\n\\therefore & \\frac{d y}{d x}=\\frac{y-\\sec (x+y) \\cdot \\tan (x+y)}{\\sec (x+y) \\cdot \\tan (x+y)-x}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbomvq",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\tan ^{-1}\\left(x^2+y^2\\right)=a$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\tan ^{-1}\\left(x^2+y^2\\right)=a$</p>\n<p>On differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\frac{d}{d x} \\tan ^{-1}\\left(x^2+y^2\\right)=\\frac{d}{d x}(a)$$</p>\n<p>$$\\begin{array}{rr} \n& \\frac{d}{d x} \\tan ^{-1}\\left(x^2+y^2\\right)=\\frac{d}{d x}(a) \\\\\n\\Rightarrow & \\frac{1}{1+\\left(x^2+y^2\\right)^2} \\cdot \\frac{d}{d x}\\left(x^2+y^2\\right)=0 \\\\\n\\Rightarrow & 2 x+\\frac{d}{d y} y^2 \\cdot \\frac{d y}{d x}=0 \\\\\n\\therefore & 2 y \\cdot \\frac{d y}{d x}=-2 x \\\\\n\\Rightarrow & \\frac{d y}{d x}=\\frac{-2 x}{2 y}=\\frac{-x}{y}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqlli",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\left(x^2+y^2\\right)^2=x y$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\left(x^2+y^2\\right)^2=x y$</p>\n<p>On differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\frac{d}{d x}\\left(x^2+y^2\\right)^2=\\frac{d}{d x}(x y)$$</p>\n<p>$$\n\\begin{aligned}\n& \\Rightarrow \\quad 2\\left(x^2+y^2\\right) \\cdot \\frac{d}{d x}\\left(x^2+y^2\\right)=x \\cdot \\frac{d}{d x} y+y \\cdot \\frac{d}{d x} x \\\\\n& \\Rightarrow \\quad 2\\left(x^2+y^2\\right) \\cdot\\left(2 x+2 y \\frac{d y}{d x}\\right)=x \\frac{d y}{d x}+y \\\\\n& \\Rightarrow \\quad 2 x^2 \\cdot 2 x+2 x^2 \\cdot 2 y \\frac{d y}{d x}+2 y^2 \\cdot 2 x+2 y^2 \\cdot 2 y \\frac{d y}{d x}=x \\frac{d y}{d x}+y \\\\\n& \\Rightarrow \\quad \\frac{d y}{d x}\\left[4 x^2 y+4 y^3-x\\right]=y-4 x^3-4 x y^2 \\\\\n& \\therefore \\quad \\frac{d y}{d x}=\\frac{\\left(y-4 x^3-4 x y^2\\right)}{\\left(4 x^2 y+4 y^3-x\\right)}\\\\\n&\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqdzt",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $a x^2+2 h x y+b y^2+2 g x+2 f y+c=0$, then show that $\\frac{d y}{d x} \\cdot \\frac{d x}{d y}=1$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $a x^2+2 h x y+b y^2+2 g x+2 f y+c=0\\quad\\text{.... (i)}$</p>\n<p>On differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\frac{d}{d x}\\left(a x^2\\right)+\\frac{d}{d x}(2 h x y)+\\frac{d}{d x}\\left(b y^2\\right)+\\frac{d}{d x}(2 g x)+\\frac{d}{d x}(2 f y)+\\frac{d}{d x}(c)=0$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad 2 a x+2 h\\left(x \\cdot \\frac{d y}{d x}+y \\cdot 1\\right)+b \\cdot 2 y \\frac{d y}{d x}+2 g+2 f \\frac{d y}{d x}+0=0 \\\\\n& \\Rightarrow \\quad \\frac{d y}{d x}[2 h x+2 h y+2 f]=-2 a x-2 h y-2 g \\\\\n& \\Rightarrow \\quad \\frac{d y}{d x}=\\frac{-2(a x+h y+g)}{2(h x+b y+f)} \\\\\n&=\\frac{-(a x+h y+g)}{(h x+b y+f)}\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Now, differentiating Eq. (i) w.r.t. y, we get }\\\\\n&\\begin{gathered}\n\\quad \\frac{d}{d y}\\left(a x^2\\right)+\\frac{d}{d y}(2 h x y)+\\frac{d}{d y}\\left(b y^2\\right)+\\frac{d}{d y}(2 g x)+\\frac{d}{d y}(2 f y)+\\frac{d}{d y}(c)=0 \\\\\n\\Rightarrow \\quad a \\cdot 2 x \\cdot \\frac{d x}{d y}+2 h \\cdot\\left(x \\cdot \\frac{d}{d y} y+y \\cdot \\frac{d}{d y} x\\right)+b \\cdot 2 y+2 g \\cdot \\frac{d x}{d y}+2 f+0=0\n\\end{gathered}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n& \\Rightarrow \\quad \\frac{d x}{d y}[2 a x+2 h y+2 g]=-2 h x-2 b y-2 f \\\\\n& \\Rightarrow \\quad \\frac{d x}{d y}=\\frac{-2(h x+b y+f)}{2(a x+h y+g)}=\\frac{-(h x+b y+f)}{(a x+h y+g)} \\quad\\text{.... (iii)}\\\\\n& \\therefore \\quad \\frac{d y}{d x} \\cdot \\frac{d x}{d y}=\\frac{-(a x+h y+g)}{(h x+b y+f)} \\cdot \\frac{-(h x+b y+f)}{(a x+h y+g)} \\\\\n& =1=\\mathrm{RHS}\\quad\\text{[using Eqs. (ii) and (iii)]}\n\\end{aligned}$$</p>\n<p>Hence proved.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbomxp",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x=e^{x / y}$, then prove that $\\frac{d y}{d x}=\\frac{x-y}{x \\log x}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{aligned}\nx & =\\mathrm{e}^{x / y} \\\\\n\\therefore\\quad \\frac{d}{d x} x & =\\frac{d}{d x} e^{x / y}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & 1=e^{x / y} \\cdot \\frac{d}{d x}(x / y) \\\\\n\\Rightarrow & 1=e^{x / y} \\cdot\\left[\\frac{y \\cdot 1-x \\cdot d y / d x}{y^2}\\right] \\\\\n\\Rightarrow & y^2=y \\cdot e^{x / y}-x \\cdot \\frac{d y}{d x} \\cdot e^{x / y}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad x \\cdot \\frac{d y}{d x} \\cdot e^{x / y} & =y e^{x / y}-y^2 \\\\\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{y\\left(e^{x / y}-y\\right)}{x \\cdot e^{x / y}} \\\\\n& =\\frac{\\left(e^{x / y}-y\\right)}{e^{x / y} \\cdot \\frac{x}{y}} \\quad \\left[\\because x=\\mathrm{e}^{x / y} \\Rightarrow \\log x=\\frac{x}{y}\\right]\\\\\n& =\\frac{x-y}{x \\cdot \\log x}\\quad\\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq268",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $y^x=e^{y-x}$, then prove that $\\frac{d y}{d x}=\\frac{(1+\\log y)^2}{\\log y}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { We have, }\\quad y^x & =\\mathrm{e}^{y-x} \\\\\n\\Rightarrow\\quad \\log y^x & =\\log e^{y-x} \\\\\n\\Rightarrow\\quad x \\log y & =y-x \\cdot \\log _e=(y-x) \\quad \\left[\\because \\log _e=1\\right]\\\\\n\\Rightarrow\\quad \\log y & =\\frac{(y-x)}{x}\\quad\\text{.... (i)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Now, differentiating w.r.t. $x$, we get</p>\n<p>$$\\frac{d}{d y} \\log y \\cdot \\frac{d y}{d x}=\\frac{d}{d x} \\frac{(y-x)}{x}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{1}{y} \\cdot \\frac{d y}{d x}=\\frac{x \\cdot \\frac{d}{d x}(y-x)-(y-x) \\cdot \\frac{d}{d x} \\cdot x}{x^2} \\\\\n\\Rightarrow & \\frac{1}{y} \\frac{d y}{d x}=\\frac{x\\left(\\frac{d y}{d x}-1\\right)-(y-x)}{x^2}\n\\end{array}$$</p>\n<p>$$\n\\begin{array}{llrl}\n\\Rightarrow & \\frac{x^2}{y} \\cdot \\frac{d y}{d x} =x \\frac{d y}{d x}-x-y+x \\\\\n\\Rightarrow & \\frac{d y}{d x}\\left(\\frac{x^2}{y}-x\\right) =-y\n\\end{array}$$</p>\n<p>$\\therefore \\quad \\frac{d y}{d x}=\\frac{-y^2}{x^2-x y}=\\frac{-y^2}{x(x-y)}$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& =\\frac{y^2}{x(y-x)} \\cdot \\frac{x}{x}=\\frac{y^2}{x^2} \\cdot \\frac{1}{\\frac{(y-x)}{x}} \\\\\n& =\\frac{(1+\\log y)^2}{\\log y}\\left[\\because \\log y=\\frac{y-x}{x} \\log y=\\frac{y}{x}-1 \\Rightarrow 1+\\log y=\\frac{y}{x}\\right]\n\\end{aligned}\\\\\n&\\text { Hence proved. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpnyy",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $y=(\\cos x)^{(\\cos x)^{\\left.(\\cos x)^{-\\infty}\\right)}}$, then show that $\\frac{d y}{d x}=\\frac{y^2 \\tan x}{y \\log \\cos x-1}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $y=(\\cos x)^{(\\cos x)^{\\left.(\\cos x)^{-\\infty}\\right)}}$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & y=(\\cos x)^y \\\\\n\\therefore & \\log y=\\log (\\cos x)^y \\\\\n\\Rightarrow & \\log y=y \\log \\cos x\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On differentiating w.r.t. } x \\text {, we get }\\\\\n&\\begin{aligned}\n& \\frac{1}{y} \\cdot \\frac{d y}{d x}=y \\cdot \\frac{d}{d x} \\log \\cos x+\\log \\cos x \\cdot \\frac{d y}{d x} \\\\\n\\Rightarrow \\quad & \\frac{1}{y} \\cdot \\frac{d y}{d x}=\\frac{y}{\\cos x} \\cdot \\frac{d}{d x} \\cos x+\\log \\cos x \\cdot \\frac{d y}{d x}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad \\frac{d y}{d x}\\left[\\frac{1}{y}-\\log \\cos x\\right] & =\\frac{-y \\sin x}{\\cos x}=-y \\tan x \\\\\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{-y^2 \\tan x}{(1-y \\log \\cos x)} \\\\\n& =\\frac{y^2 \\tan x}{y \\log \\cos x-1}\\quad \\text{Hence proved.}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpo0u",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x \\sin (a+y)+\\sin a \\cdot \\cos (a+y)=0$, then prove that $$\\frac{d y}{d x}=\\frac{\\sin ^2(a+y)}{\\sin a}$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, }\\\\\n&\\begin{array}{cc} \n& x \\sin (a+y)+\\sin a \\cdot \\cos (a+y)=0 \\\\\n\\Rightarrow & x \\sin (a+y)=-\\sin a \\cdot \\cos (a+y) \\\\\n\\Rightarrow & x=\\frac{-\\sin a \\cdot \\cos (a+y)}{\\sin (a+y)}\n\\end{array}\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\quad x=-\\sin a \\cdot \\cot (a+y)$</p>\n<p>$\\therefore \\quad \\frac{d x}{d y}=-\\sin a \\cdot\\left[-\\operatorname{cosec}^2(a+y)\\right] \\cdot \\frac{d}{d y}(a+y)$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& =\\sin a \\cdot \\frac{1}{\\sin ^2(a+y)} \\cdot 1 \\\\\n& =\\frac{\\sin ^2(a+y)}{\\sin a}\n\\end{aligned}\\\\\n&\\text { Hence proved. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq73k",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\sqrt{1-x^2}+\\sqrt{1-y^2}=a(x-y)$, then prove that $\\frac{d y}{d x}=\\sqrt{\\frac{1-y^2}{1-x^2}}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\sqrt{1-x^2}+\\sqrt{1-y^2}=a(x-y)$</p>\n<p>$\\begin{aligned} & \\text { On putting } x=\\sin \\alpha \\text { and } y=\\sin \\beta \\text {, we get } \\\\ & \\qquad \\sqrt{1-\\sin ^2 \\alpha}+\\sqrt{1-\\sin ^2 \\beta}=a(\\sin \\alpha-\\sin \\beta)\\end{aligned}$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\cos \\alpha+\\cos \\beta=a(\\sin \\alpha-\\sin \\beta) \\\\\n\\Rightarrow & 2 \\cos \\frac{\\alpha+\\beta}{2} \\cdot \\cos \\frac{\\alpha-\\beta}{2}=a\\left(2 \\cos \\frac{\\alpha+\\beta}{2} \\cdot \\sin \\frac{\\alpha-\\beta}{2}\\right)\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\cos \\frac{\\alpha-\\beta}{2}=a \\sin \\frac{\\alpha-\\beta}{2} \\\\\n\\Rightarrow & \\cot \\frac{\\alpha-\\beta}{2}=a\n\\end{array}$$</p>\n<p>$$\\begin{array}{l}\n\\Rightarrow & \\frac{\\alpha-\\beta}{2} =\\cot ^{-1} a \\\\\n\\Rightarrow & \\alpha-\\beta =2 \\cot ^{-1} a \\\\\n\\Rightarrow & \\sin ^{-1} x-\\sin ^{-1} y =2 \\cot ^{-1} a  \\quad[\\because x=\\sin \\alpha \\text { and } y=\\sin \\beta]\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On differentiating both sides w.r.t. } x \\text {, we get }\\\\\n&\\begin{array}{ll} \n& \\frac{1}{\\sqrt{1-x^2}}-\\frac{1}{\\sqrt{1-y^2}} \\frac{d y}{d x}=0 \\\\\n\\therefore & \\frac{d y}{d x}=\\frac{\\sqrt{1-y^2}}{\\sqrt{1-x^2}}=\\sqrt{\\frac{1-y^2}{1-x^2}}\\quad\\text{Hence proved.}\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq75o",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $y=\\tan ^{-1} x$, then find $\\frac{d^2 y}{d x^2}$ in terms of $y$ alone.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { We have, }\\quad y & =\\tan ^{-1} x \\quad \\text { [on differentiating w.r.t. } x \\text { ] }\\\\\n\\therefore\\quad \\frac{d y}{d x} & =\\frac{1}{1+x^2}\\quad \\text { [again differentiating w.r.t. } x \\text { ] }\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Now, $$\\frac{d^2 y}{d x^2}=\\frac{d}{d x}\\left(1+x^2\\right)^{-1}$$</p>\n<p>$$\\begin{aligned}\n& =-1\\left(1+x^2\\right)^{-2} \\cdot \\frac{d}{d x}\\left(1+x^2\\right) \\\\\n& =-\\frac{1}{\\left(1+x^2\\right)^2} \\cdot 2 x \\\\\n& =\\frac{-2 \\tan y}{\\left(1+\\tan ^2 y\\right)^2} \\quad\\left[\\because y=\\tan ^{-1} x \\Rightarrow \\tan y=x\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\frac{-2 \\tan y}{\\left(\\sec ^2 y\\right)^2} \\\\\n& =-2 \\frac{\\sin y}{\\cos y} \\cdot \\cos ^2 y \\cdot \\cos ^2 y \\\\\n& =-\\sin 2 y \\cdot \\cos ^2 y \\quad[\\because \\sin 2 x=2 \\sin x \\cos x]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpeoq",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=x(x-1)^2$ in $[0,1]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=x(x-1)^2$ in $[0,1]$.</p>\n<p>(i) Since, $f(x)=x(x-1)^2$ is a polynomial function.</p>\n<p>So, it is continuous in $[0,1]$.</p>\n<p>$$\\begin{aligned}\n&\\text { (ii) Now, }\\\\\n&\\begin{aligned}\nf^{\\prime}(x) & =x \\cdot \\frac{d}{d x}(x-1)^2+(x-1)^2 \\frac{d}{d x} x \\\\\n& =x \\cdot 2(x-1) \\cdot 1+(x-1)^2 \\\\\n& =2 x^2-2 x+x^2+1-2 x \\\\\n& =3 x^2-4 x+1 \\text { which exists in }(0,1)\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>So, $f(x)$ is differentiable in $(0,1)$.\n(iii) Now, $f(0)=0$ and $f(1)=0 \\Rightarrow f(0)=f(1)$</p>\n<p>$f$ satisfies the above conditions of Rolle's theorem.</p>\n<p>Hence, by Rolle's theorem $\\exists c \\in(0,1)$ such that</p>\n<p>$$\\begin{aligned}\nf^{\\prime}(c) & =0 \\\\\n\\Rightarrow\\quad 3 c^2-4 c+1 & =0 \\\\\n\\Rightarrow\\quad 3 c^2-3 c-c+1 & =0 \\\\\n\\Rightarrow\\quad 3 c(c-1)-1(c-1) & =0 \\\\\n\\Rightarrow\\quad (3 c-1)(c-1) & =0 \\\\\n\\Rightarrow\\quad c & =\\frac{1}{3}, 1 \\Rightarrow \\frac{1}{3} \\in(0,1)\n\\end{aligned}$$</p>\n<p>Thus, we see that there exists a real number c in the open interval $(0,1)$. Hence, Rolle's theorem has been verified.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpo2x",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\sin ^4 x+\\cos ^4 x$ in $\\left[0, \\frac{\\pi}{2}\\right]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\sin ^4 x+\\cos ^4 x$ in $\\left[0, \\frac{\\pi}{2}\\right]\\quad\\text{.... (i)}$</p>\n<p>(i) $f(x)$ is continuous in $\\left[0, \\frac{\\pi}{2}\\right]$</p>\n<p>[since, $\\sin ^4 x$ and $\\cos ^4 x$ are continuous functions and we know that, if $g$ and $h$ be continuous functions, then $(g+h)$ is a continuous function.]</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { (ii) }\\quad f^{\\prime}(x) & =4(\\sin x)^3 \\cdot \\cos x+4(\\cos x)^3 \\cdot(-\\sin x) \\\\\n& =4 \\sin ^3 x \\cdot \\cos x-4 \\sin x \\cdot \\cos ^3 x \\\\\n& =4 \\sin x \\cos x\\left(\\sin ^2 x-\\cos ^2 x\\right) \\text { which exists in }\\left(0, \\frac{\\pi}{2}\\right)\\quad\\text{.... (ii)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Hence, $f(x)$ is differentiable in $\\left(0, \\frac{\\pi}{2}\\right)$.</p>\n<p>(iii) Also, $f(0)=0+1=1$ and $f\\left(\\frac{\\pi}{2}\\right)=1+0=1$</p>\n<p>$$\\Rightarrow \\quad f(0)=f\\left(\\frac{\\pi}{2}\\right)$$</p>\n<p>Conditions of Rolle's theorem are satisfied.</p>\n<p>Hence, there exists at least one $c\\in\\left(0, \\frac{\\pi}{2}\\right)$ such that $f^{\\prime}(c)=0$.</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{lr}\n\\therefore & 4 \\sin c \\cos c\\left(\\sin ^2 c-\\cos ^2 c\\right)=0 \\\\\n\\Rightarrow & 4 \\operatorname{sinc} \\cos c(-\\cos 2 c)=0 \\\\\n\\Rightarrow & -2 \\sin 2 c \\cdot \\cos 2 c=0 \\\\\n\\Rightarrow & -\\sin 4 c=0 \\\\\n\\Rightarrow & \\sin 4 c=0 \\\\\n\\Rightarrow & 4 c=\\pi \\\\\n\\Rightarrow & c=\\frac{\\pi}{4} \\\\\n\\text { and } & \\frac{\\pi}{4} \\in\\left(0, \\frac{\\pi}{2}\\right)\n\\end{array}\\\\\n&\\text { Hence, Rolle's theorem has been verified. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqe27",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\log \\left(x^2+2\\right)-\\log 3$ in $[-1,1]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$f(x)=\\log \\left(x^2+2\\right)-\\log 3$$</p>\n<p>(i) Logarithmic functions are continuous in their domain. Hence, $f(x)=\\log \\left(x^2+2\\right)-\\log 3$ is continuous in $[-1,1]$.</p>\n<p>$$\\begin{aligned}\n\\text{(ii)}\\quad f^{\\prime}(x) & =\\frac{1}{x^2+2} \\cdot 2 x-0 \\\\\n& =\\frac{2 x}{x^2+2}, \\text { which exists in }(-1,1)\n\\end{aligned}$$</p>\n<p>Hence, $f(x)$ is differentiable in $(-1,1)$.</p>\n<p>$$\\begin{aligned}\n& \\text { (iii) } f(-1)=\\log \\left[(-1)^2+2\\right]-\\log 3=\\log 3-\\log 3=0 \\text { and } \\\\\n& f(1)=\\log \\left(1^2+2\\right)-\\log 3=\\log 3-\\log 3=0 \\\\\n& \\Rightarrow \\quad f(-1)=f(1)\n\\end{aligned}$$</p>\n<p>Conditions of Rolle's theorem are satisfied.</p>\n<p>Hence, there exists a real number c such that</p>\n<p>$$\\begin{aligned}\nf^{\\prime}(c) =0 \\\\\n\\Rightarrow \\quad \\frac{2 c}{c^2+2} & =0 \\\\\n\\Rightarrow \\quad c =0 \\in(-1,1)\n\\end{aligned}$$</p>\n<p>Hence, Rolle's theorem has been verified.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqgmb",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=x(x+3) e^{-x / 2}$ in $[-3,0]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$f(x)=x(x+3) \\mathrm{e}^{-x / 2}$$</p>\n<p>(i) $f(x)$ is a continuous function. [since, it is a combination of polynomial functions $x(x+3)$ and an exponential function $\\mathrm{e}^{-x / 2}$ which are continuous functions]</p>\n<p>So, $f(x)=x(x+3) \\mathrm{e}^{-x / 2}$ is continuous in $[-3,0]$.</p>\n<p>(ii) $\\therefore \\quad \\quad f(x)=\\left(x^2+3 x\\right) \\cdot \\frac{d}{d x} \\mathrm{e}^{-x / 2}+\\mathrm{e}^{-x / 2} \\cdot \\frac{d}{d x}\\left(x^2+3 x\\right)$</p>\n<p>$$\\begin{aligned}\n& =\\left(x^2+3 x\\right) \\cdot \\mathrm{e}^{-x / 2} \\cdot\\left(-\\frac{1}{2}\\right)+\\mathrm{e}^{-x / 2} \\cdot(2 x+3) \\\\\n& =\\mathrm{e}^{-x / 2}\\left[2 x+3-\\frac{1}{2} \\cdot\\left(x^2+3 x\\right)\\right] \\\\\n& =\\mathrm{e}^{-x / 2}\\left[\\frac{4 x+6-x^2-3 x}{2}\\right] \\\\\n& =\\mathrm{e}^{-x / 2} \\cdot \\frac{1}{2}\\left[-x^2+x+6\\right] \\\\\n& =\\frac{-1}{2} \\mathrm{e}^{-x / 2}\\left[x^2-x-6\\right] \\\\\n& =\\frac{-1}{2} \\mathrm{e}^{-x / 2}\\left[x^2-3 x+2 x-6\\right] \\\\\n& =\\frac{-1}{2} \\mathrm{e}^{-x / 2}[(x+2)(x-3)] \\text { which exists in }(-3,0) .\n\\end{aligned}$$</p>\n<p>Hence, $f(x)$ is differentiable in $(-3,0)$.\n(iii) $\\therefore$ $$f(-3)=-3(-3+3) e^{-3 / 2}=0$$</p>\n<p>and $$f(0)=0(0+3) e^{-0 / 2}=0$$</p>\n<p>$$\\Rightarrow \\quad f(-3)=f(0)$$</p>\n<p>Since, conditions of Rolle's theorem are satisfied.</p>\n<p>Hence, there exists a real number $c$ such that $f(c)=0$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & -\\frac{1}{2} e^{-c / 2}(c+2)(c-3)=0 \\\\\n\\Rightarrow & c=-2,3 \\text { where }-2 \\in(-3,0)\n\\end{array}$$</p>\n<p>Therefore, Rolle's theorem has been verified.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbp404",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\sqrt{4-x^2}$ in $[-2,2]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\sqrt{4-x^2}=\\left(4-x^2\\right)^{1 / 2}$</p>\n<p>(i) $f(x)=\\sqrt{4-x^2}$ is a continuous function.</p>\n<p>[since every polynomial function is a continuous function]</p>\n<p>Hence, $f(x)$ is continuous in $[-2,2]$.</p>\n<p>(ii) $f^{\\prime}(x)=\\frac{1}{2}\\left(4-x^2\\right)^{-1 / 2} \\cdot(-2 x)$</p>\n<p>$=-x \\cdot \\frac{1}{\\sqrt{4-x^2}}$, which exists everywhere except at $x= \\pm 2$.</p>\n<p>Hence, $f(x)$ is differentiable in $(-2,2)$.</p>\n<p>$$\\begin{aligned}\n\\text{(iii)}\\quad f(-2)=\\sqrt{(4-4)}=0 \\text { and } f(2)=\\sqrt{(4-4)} & =0 \\\\\n\\Rightarrow \\quad f(-2) & =f(2)\n\\end{aligned}$$</p>\n<p>conditions of Rolle's theorem are satisfied.</p>\n<p>Hence, there exists a real number $c$ such that $f^{\\prime}(c)=0$.</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\Rightarrow \\quad-c \\frac{1}{\\sqrt{4-c^2}}=0 \\\\\n& \\Rightarrow \\quad c=0 \\in(-2,2)\n\\end{aligned}\\\\\n&\\text { Hence, Rolle's theorem has been verified. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq77p",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$$\\begin{aligned}\n&\\text { Discuss the applicability of Rolle's theorem on the function given by }\\\\\n&f(x)= \\begin{cases}x^2+1, & \\text { if } 0 \\leq x \\leq 1 \\\\ 3-x, & \\text { if } 1 \\leq x \\leq 2\\end{cases}\n\\end{aligned}$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $$f(x)=\\left\\{\\begin{array}{l}\nx^2+1, \\text { if } 0 \\leq x \\leq 1 \\\\\n3-x, \\text { if } 1 \\leq x \\leq 2\n\\end{array}\\right.$$</p>\n<p>We know that, polynomial function is everywhere continuous and differentiability.</p>\n<p>So, $f(x)$ is continuous and differentiable at all points except possibly at $x=1$.</p>\n<p>Now, check the differentiability at $x=1$,</p>\n<p>At $x=1$,</p>\n<p>$$\\begin{aligned}\n& \\mathrm{LDH}=\\lim _{x \\rightarrow 1^{-}} \\frac{f(x)-f(1)}{x-1} \\\\\n&=\\lim _{x \\rightarrow 1} \\frac{\\left(x^2+1\\right)-(1+1)}{x-1} \\quad \\quad\\left[\\because f(x)=x^2+1, \\forall 0 \\leq x \\leq 1\\right] \\\\\n&=\\lim _{x \\rightarrow 1} \\frac{x^2-1}{x-1}=\\lim _{x \\rightarrow 1} \\frac{(x+1)(x-1)}{x-1} \\\\\n& \\quad=2 \\\\\n\\text{and}\\quad & \\mathrm{RDH}=\\lim _{x \\rightarrow 1^{+}} \\frac{f(x)-f(1)}{x-1}=\\lim _{x \\rightarrow 1} \\frac{(3-x) f(1+1)}{(x-1)} \\\\\n&=\\lim _{x \\rightarrow 1} \\frac{3-x-2}{x-1}=\\lim _{x \\rightarrow 1} \\frac{-(x-1)}{x-1}=-1 \\\\\n\\therefore\\quad & \\mathrm{LHD} \\neq \\mathrm{RHD}\n\\end{aligned}$$</p>\n<p>So, $f(x)$ is not differentiable at $x=1$.</p>\n<p>Hence, Polle's theorem is not applicable on the interval $[0,2]$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbor09",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the points on the curve $y=(\\cos x-1)$ in $[0,2 \\pi]$, where the tangent is parallel to $X$-axis.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The equation of the curve is $y=\\cos x-1$.</p>\n<p>Now, we have to find a point on the curve in $[0,2 \\pi]$.</p>\n<p>where the tangent is parallel to $X$-axis $i . e$., the tangent to the curve at $x=c$ has a slope o , wherec $\\in] 0,2 \\pi[$.</p>\n<p>Let us apply Rolle's theorem to get the point.</p>\n<p>(i) $y=\\cos x-1$ is a continuous function in $[0,2 \\pi]$.</p>\n<p>[since it is a combination of cosine function and a constant function]</p>\n<p>(ii) $y^{\\prime}=-\\sin x$, which exists in $(0,2 \\pi)$.</p>\n<p>Hence, $y$ is differentiable in $(0,2 \\pi)$.</p>\n<p>(iii) $y(0)=\\cos 0-1=0$ and $y(2 \\pi)=\\cos 2 \\pi-1=0$,</p>\n<p>$$\\therefore \\quad y(0)=y(2 \\pi)$$</p>\n<p>Since, conditions of Rolle's theorem are satisfied.</p>\n<p>Hence, there exists a real number c such that</p>\n<p>$$\\begin{aligned}\nf^{\\prime}(c) & =0 \\\\\n\\Rightarrow\\quad -\\sin c & =0\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & c=\\pi \\text { or } 0, \\text { where } \\pi \\in(0,2 \\pi) \\\\\n\\Rightarrow & x=\\pi \\\\\n\\therefore & y=\\cos \\pi-1=-2\n\\end{array}$$</p>\n<p>Hence, the required point on the curve, where the tangent drawn is parallel to the X-axis is $(\\pi,-2)$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq289",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Using Rolle's theorem, find the point on the curve $y=x(x-4), x \\in[0,4]$, where the tangent is parallel to $X$-axis.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $y=x(x-4), x \\in[0,4]$</p>\n<p>(i) $y$ is a continuous function since $x(x-4)$ is a polynomial function.</p>\n<p>Hence, $y=x(x-4)$ is continuous in $[0,4]$.</p>\n<p>(ii) $y^{\\prime}=(x-4) \\cdot 1+x \\cdot 1=2 x-4$ which exists in (0,4).</p>\n<p>Hence, $y$ is differentiable in $(0,4)$.</p>\n<p>(iii) $y(0)=0(0-4)=0$</p>\n<p>$$\\begin{array}{ll}\n\\text { and } & y(4)=4(4-4)=0 \\\\\n\\Rightarrow & y(0)=y(4)\n\\end{array}$$</p>\n<p>Since, conditions of Rolle's theorem are satisfied.</p>\n<p>Hence, there exists a point $c$ such that</p>\n<p>$f^{\\prime}(c)=0$ in $(0,4) \\quad\\left[\\because f(x)=y^{\\prime}\\right]$</p>\n<p>$$\\begin{array}{rrl}\n\\Rightarrow & 2 c-4 =0 \\\\\n\\Rightarrow & c =2 \\\\\n\\Rightarrow & x=2 ; y =2(2-4)=-4\n\\end{array}$$</p>\n<p>Thus, $(2,-4)$ is the point on the curve at which the tangent drawn is parallel to $X$-axis.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqlnh",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\frac{1}{4 x-1}$ in $[1,4]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\frac{1}{4 x-1}$ in $[1,4]$</p>\n<p>(i) $f(x)$ is continuous in $[1,4]$.</p>\n<p>Also, at $x=\\frac{1}{4}, f(x)$ is discontinuous.</p>\n<p>Hence, $f(x)$ is continuous in $[1,4]$.</p>\n<p>(ii) $f^{\\prime}(x)=-\\frac{4}{(4 x-1)^2}$, which exists in (1, 4).</p>\n<p>Since, conditions of mean value theorem are satisfied.</p>\n<p>Hence, there exists a real number $c \\in] 1,4$ [ such that</p>\n<p>$f^{\\prime}(c)=\\frac{f(4)-f(1)}{4-1}$</p>\n<p>$\\Rightarrow \\quad \\frac{-4}{(4 c-1)^2}=\\frac{\\frac{1}{16-1}-\\frac{1}{4-1}}{4-1}=\\frac{\\frac{1}{15}-\\frac{1}{3}}{3}$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{-4}{(4 c-1)^2}=\\frac{1-5}{45}=\\frac{-4}{45} \\\\\n\\Rightarrow & (4 c-1)^2=45 \\\\\n\\Rightarrow & 4 c-1= \\pm 3 \\sqrt{5} \\\\\n\\Rightarrow & c=\\frac{3 \\sqrt{5}+1}{4} \\in(1,4)\\quad \\text{[neglecting ( -ve ) value]}\n\\end{array}$$</p>\n<p>Hence, mean value theorem has been verified.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpc7w",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=x^3-2 x^2-x+3$ in $[0,1]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=x^3-2 x^2-x+3$ in $[0,1]$</p>\n<p>(i) Since, $f(x)$ is a polynomial function.</p>\n<p>Hence, $f(x)$ is continuous in $[0,1]$.</p>\n<p>(ii) $f^{\\prime}(x)=3 x^2-4 x-1$, which exists in $(0,1)$.</p>\n<p>Hence, $f(x)$ is differentiable in $(0,1)$.</p>\n<p>Since, conditions of mean value theorem are satisfied.</p>\n<p>Therefore, by mean value theorem $\\exists c \\in(0,1)$, such that</p>\n<p>$$f^{\\prime}(c)=\\frac{f(1)-f(0)}{1-0}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & 3 c^2-4 c-1=\\frac{[1-2-1+3]-[0+3]}{1-0} \\\\\n\\Rightarrow & 3 c^2-4 c-1=\\frac{-2}{1}\n\\end{array}$$</p>\n<p>$$\\begin{array}{rrr}\n\\Rightarrow & 3 c^2-4 c+1 =0 \\\\\n\\Rightarrow & 3 c^2-3 c-c+1 =0 \\\\\n\\Rightarrow & 3 c(c-1)-1(c-1) =0 \\\\\n\\Rightarrow & (3 c-1)(c-1) =0 \\\\\n\\Rightarrow & c =1 / 3,1, \\text { where } \\frac{1}{3} \\in(0,1)\n\\end{array}$$</p>\n<p>Hence, the mean value theorem has been verified.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqe45",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\sin x-\\sin 2 x$ in $[0, \\pi]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\sin x-\\sin 2 x$ in $[0, \\pi]$</p>\n<p>(i) Since, we know that sine functions are continuous functions hence $f(x)=\\sin x-\\sin 2 x$ is a continuous function in $[0, \\pi]$.</p>\n<p>(ii) $f^{\\prime \\prime}(x)=\\cos x-\\cos 2 x \\cdot 2=\\cos x-2 \\cos 2 x$, which exists in $(0, \\pi)$.</p>\n<p>So, $f(x)$ is differentiable in $(0, \\pi)$.</p> <p>Conditions of mean value theorem are satisfied. Hence, $\\exists c \\in(0, \\pi)$ such that, $f(c)=\\frac{f(\\pi)-f(0)}{\\pi-0}$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\cos c-2 \\cos 2 c=\\frac{\\sin \\pi-\\sin 2 \\pi-\\sin 0+\\sin 2 \\cdot 0}{\\pi-0} \\\\\n\\Rightarrow & 2 \\cos 2 c-\\cos c=\\frac{0}{\\pi} \\\\\n\\Rightarrow & 2 \\cdot\\left(2 \\cos ^2 c-1\\right)-\\cos c=0 \\\\\n\\Rightarrow & 4 \\cos ^2 c-2-\\cos c=0 \\\\\n\\Rightarrow & 4 \\cos ^2 c-\\cos c-2=0\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\cos c=\\frac{1 \\pm \\sqrt{1+32}}{8}=\\frac{1 \\pm \\sqrt{33}}{8} \\\\\n\\therefore & c=\\cos ^{-1}\\left(\\frac{1 \\pm \\sqrt{33}}{8}\\right)\n\\end{array}$$</p>\n<p>Also, $$\\cos ^{-1}\\left(\\frac{1 \\pm \\sqrt{33}}{8}\\right) \\in(0, \\pi)$$</p>\n<p>Hence, mean value theorem has been verified.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbp424",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$f(x)=\\sqrt{25-x^2}$ in $[1,5]$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\sqrt{25-x^2}$ in $[1,5]$</p>\n<p>(i) Since, $f(x)=\\left(25-x^2\\right)^{1 / 2}$, where $25-x^2 \\geq 0$</p>\n<p>$$\\Rightarrow \\quad x^2 \\leq \\pm 5 \\Rightarrow-5 \\leq x \\leq 5$$</p>\n<p>Hence, $f(x)$ is continuous in $[1,5]$.</p>\n<p>(ii) $f^{\\prime}(x)=\\frac{1}{2}\\left(25-x^2\\right)^{-1 / 2}-2 x=\\frac{-x}{\\sqrt{25-x^2}}$, which exists in $(1,5)$.</p>\n<p>Hence, $f^{\\prime}(x)$ is differentiable in $(1,5)$.</p>\n<p>Since, conditions of mean value theorem are satisfied. By mean value theorem $\\exists c \\in(1,5)$ such that</p>\n<p>$f(c)=\\frac{f(5)-f(1)}{5-1} \\Rightarrow \\frac{-c}{\\sqrt{25-c^2}}=\\frac{0-\\sqrt{24}}{4}$</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{lr}\n\\Rightarrow & \\frac{c^2}{25-c^2}=\\frac{24}{16} \\\\\n\\Rightarrow & 16 c^2=600-24 c^2 \\\\\n\\Rightarrow & c^2=\\frac{600}{40}=15 \\\\\n\\therefore & c= \\pm \\sqrt{15} \\\\\n\\text { Also, } & c=\\sqrt{15} \\in(1,5)\n\\end{array}\\\\\n&\\text { Hence, the mean value theorem has been verified. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbp441",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find a point on the curve $y=(x-3)^2$, where the tangent is parallel to the chord joining the points $(3,0)$ and $(4,1)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $y=(x-3)^2$, which is continuous in $x_1=3$ and $x_2=4$ i.e., $[3,4]$.</p>\n<p>Also, $y^{\\prime}=2(x-3) \\cdot 1=2(x-3)$ which exists in $(3,4)$.</p>\n<p>Hence, by mean value theorem there exists a point on the curve at which tangent drawn is parallel to the chord joining the points $(3,0)$ and $(4,1)$.</p>\n<p>Thus, $$f(c)=\\frac{f(4)-f(3)}{4-3}$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & 2(c-3)=\\frac{(4-3)^2-(3-3)^2}{4-3} \\\\\n\\Rightarrow & 2 c-6=\\frac{1-0}{1} \\Rightarrow c=\\frac{7}{2} \\\\\n\\text { For } x=\\frac{7}{2}, & \\quad y=\\left(\\frac{7}{2}-3\\right)^2=\\left(\\frac{1}{2}\\right)^2=\\frac{1}{4}\n\\end{array}$$</p>\n<p>So, $\\left(\\frac{7}{2}, \\frac{1}{4}\\right)$ is the point on the curve at which tangent drawn is parallel to the chord joining the points $(3,0)$ and $(4,1)$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpc9x",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Using mean value theorem, prove that there is a point on the curve $y=2 x^2-5 x+3$ between the points $A(1,0)$ and $B(2,1)$, where tangent is parallel to the chord $A B$. Also, find that point.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $y=2 x^2-5 x+3$, which is continuous in $[1,2]$ as it is a polynomial function.</p>\n<p>Also, $y^{\\prime}=4 x-5$, which exists in $(1,2)$.</p>\n<p>By mean value theorem, $\\exists c \\in(1,2)$ at which drawn tangent is parallel to the chord $A B$, where $A$ and $B$ are $(1,0)$ and $(2,1)$, respectively.</p>\n<p>$$\\therefore\\quad f(c)=\\frac{f(2)-f(1)}{2-1}$$</p>\n<p>$$\\begin{array}{lrl}\n\\Rightarrow & 4 c-5 & =\\frac{(8-10+3)-(2-5+3)}{1} \\\\\n\\Rightarrow & 4 c-5 & =1 \\\\\n\\therefore & c & =\\frac{6}{4}=\\frac{3}{2} \\in(1,2) \\\\\n\\text { For } x=\\frac{3}{2}, & y & =2\\left(\\frac{3}{2}\\right)^2-5\\left(\\frac{3}{2}\\right)+3 \\\\\n& & =2 \\times \\frac{9}{4}-\\frac{15}{2}+3=\\frac{9-15+6}{2}=0\n\\end{array}$$</p>\n<p>Hence, $\\left(\\frac{3}{2}, 0\\right)$ is the point on the curve $y=2 x^2-5 x+3$ between the points $A(1,0)$ and $B(2,1)$, where tangent is parallel to the chord $A B$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbqe6b",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the values of $p$ and $q$, so that $f(x)=\\left\\{\\begin{array}{ll}x^2+3 x+p, & \\text { if } x \\leq 1 \\\\ q x+2, & \\text { if } x>1\\end{array}\\right.$ is differentiable at $x=1$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, } f(x)=\\left\\{\\begin{array}{ll}\nx^2+3 x+p, & \\text { if } x \\leq 1 \\\\\nq x+2, & \\text { if } x>1\n\\end{array} \\text { is differentiable at } x=1\\right. \\text {. }\\\\\n&\\therefore \\quad L f^{\\prime}(1)=\\lim _{x \\rightarrow 1^{-}} \\frac{f(x)-f(1)}{x-1}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =\\lim _{x \\rightarrow 1^{-}} \\frac{\\left(x^2+3 x+p\\right)-(1+3+p)}{x-1} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{\\left[(1-h)^2+3(1-h)+p\\right]-[1+3+p]}{(1-h)-1} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{\\left[1+h^2-2 h+3-3 h+p\\right]-[4+p]}{-h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{\\left[h^2-5 h+p+4-4-p\\right]}{-h}=\\lim _{h \\rightarrow 0} \\frac{h[h-5]}{-h} \\\\\n& =\\lim _{h \\rightarrow 0}-[h-5]=5\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\nR f^{\\prime}(1) & =\\lim _{x \\rightarrow 1^{+}} \\frac{f(x)-f(1)}{x-1}=\\lim _{x \\rightarrow 1^{+}} \\frac{(q x+2)-(1+3+p)}{x-1} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{[q(1+h)+2]-(4+p)}{1+h-1} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{[q+q h+2-4-p]}{h}=\\lim _{h \\rightarrow 0} \\frac{q h+(q-2-p)}{h}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n&\\begin{array}{ll}\n\\Rightarrow & q-2-p=0 \\Rightarrow p-q=-2 \\quad\\text{.... (i)}\\\\\n\\Rightarrow & \\lim _\\limits{h \\rightarrow 0} \\frac{q h+0}{h}=q\\quad\\text{[for existing the limit]}\n\\end{array}\\\\\n&\\text { If } L f^{\\prime}(1)=R f^{\\prime}(1) \\text {, then } 5=q\\\\\n&\\begin{aligned}\n\\Rightarrow & \\quad p-5 =-2 \\Rightarrow p=3 \\\\\n\\therefore & \\quad p =3 \\text { and } q=5\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpere",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x^m \\cdot y^n=(x+y)^{m+n}$, prove that</p>\n<p>(i) $\\frac{d y}{d x}=\\frac{y}{x}$ and</p>\n<p>(ii) $\\frac{d^2 y}{d x^2}=0$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $\\quad x^m \\cdot y^n=(x+y)^{m+n}\\quad\\text{.... (i)}$</p>\n<p>(i) Differentiating Eq. (i) w.r.t. $x$, we get</p>\n<p>$\\frac{d}{d x}\\left(x^m \\cdot y^n\\right)=\\frac{d}{d x}(x+y)^{m+n}$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & x^m \\cdot \\frac{d}{d y} y^n \\cdot \\frac{d y}{d x}+y^n \\cdot \\frac{d}{d x} x^m=(m+n)(x+y)^{m+n-1} \\frac{d}{d x}(x+y) \\\\\n\\Rightarrow & x^m \\cdot n y^{n-1} \\frac{d y}{d x}+y^n \\cdot m x^{m-1}=(m+n)(x+y)^{m+n-1}\\left(1+\\frac{d y}{d x}\\right)\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{d y}{d x}\\left[x^m \\cdot n y^{n-1}-(m+n) \\cdot(x+y)^{m+n-1}\\right]=(m+n)(x+y)^{m+n-1}-y^n m x^{m-1} \\\\\n\\Rightarrow & \\frac{d y}{d x}\\left[n x^m y^{n-1}-(m+n)(x+y)^{m+n-1}\\right]=(m+n) \\cdot(x+y)^{m+n-1}-\\frac{y^{n-1} \\cdot y \\cdot m x^m}{x}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{\\frac{(m+n)(x+y)^{m+n}}{(x+y)}-\\frac{y^{n-1} \\cdot y \\cdot m x^m}{x}}{\\frac{n x^m y^n}{y}-(m+n)(x+y)^{m+n} \\frac{1}{(x+y)}} \\\\\n& =\\frac{\\frac{x(m+n)(x+y)^{m+n}-(x+y) \\cdot y \\cdot{ }^{n-1} y \\cdot m x^m}{(x+y) \\cdot x}}{\\frac{(x+y) n x^m y^n-y(m+n)(x+y)^{m+n}}{(x+y) \\cdot y}}\n\\end{aligned}$$</p>\n<p>$=\\frac{\\frac{x(m+n) \\cdot x^m \\cdot y^n-m(x+y) y^n x^m}{(x+y) \\cdot x}}{\\frac{(x+y) n x^m \\cdot y^n-y(m+n) \\cdot x^m \\cdot y^n}{(x+y) \\cdot y}} \\quad\\left[\\because(x+y)^{m+n}=x^m \\cdot y^n\\right]$</p>\n<p>$$\\begin{aligned}\n& =\\frac{x^m y^n[m x+n x-m x-m y] \\cdot(x+y) y}{x^m y^n[n x+n y-m y-n y] \\cdot(x+y) \\cdot x} \\\\\n& =\\frac{y}{x}\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>Hence proved.</p>\n<p>(ii) Further, differentiating Eq. (ii) i.e., $\\frac{d y}{d x}=\\frac{y}{x}$ on both the sides w.r.t. $x$, we get</p>\n<p>$$\\begin{array}{rlr}\n\\frac{d^2 y}{d x^2} & =\\frac{x \\cdot \\frac{d y}{d x}-y \\cdot 1}{x^2} & \\\\\n& =\\frac{x \\cdot \\frac{y}{x}-y}{x^2} & {\\left[\\because \\frac{d y}{d x}=\\frac{y}{x}\\right]} \\\\\n& =0 & \\text { Hence proved. }\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbq7a2",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$$\\begin{aligned}\n&\\text { If } x=\\sin t \\text { and } y=\\sin p t \\text {, then prove that }\\\\\n&\\left(1-x^2\\right) \\frac{d^2 y}{d x^2}-x \\frac{d y}{d x}+p^2 y=0\n\\end{aligned}$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { We have, } x=\\sin t \\text { and } y=\\sin p t \\\\\n& \\therefore \\quad \\frac{d x}{d t}=\\cos t \\text { and } \\frac{d y}{d t}=\\cos p t \\cdot p\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\quad \\frac{d y}{d x}=\\frac{d y / d t}{d x / d t}=\\frac{p \\cdot \\cos p t}{\\cos t}\\quad\\text{.... (i)}$</p>\n<p>$$\\begin{aligned}\n&\\text { Again, differentiating both sides w.r.t. } x \\text {, we get }\\\\\n&\\begin{aligned}\n\\frac{d^2 y}{d x^2} & =\\frac{\\cos t \\cdot \\frac{d}{d t}(p \\cdot \\cos p t) \\frac{d t}{d x}-p \\cos p t \\cdot \\frac{d}{d t} \\cos t \\cdot \\frac{d t}{d x}}{\\cos ^2 t} \\\\\n& =\\frac{[\\cos t \\cdot p \\cdot(-\\sin p t) \\cdot p-p \\cos p t \\cdot(-\\sin t)] \\frac{d t}{d x}}{\\cos ^2 t}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$=\\frac{\\left[-p^2 \\sin p t \\cdot \\cos t+p \\sin t \\cdot \\cos p t\\right] \\cdot \\frac{1}{\\cos t}}{\\cos ^2 t}$</p>\n<p>$\\Rightarrow \\quad \\frac{d^2 y}{d x^2}=\\frac{-p^2 \\sin p t \\cdot \\cos t+p \\cos p t \\cdot \\sin t}{\\cos ^3 t}\\quad\\text{.... (ii)}$</p>\n<p>Since, we have to prove</p>\n<p>$\\left(1-x^2\\right) \\frac{d^2 y}{d x^2}-x \\frac{d y}{d x}+p^2 y=0$</p>\n<p>$\\therefore \\quad \\mathrm{LHS}=\\left(1-\\sin ^2 t\\right) \\frac{\\left[-p^2 \\sin p t \\cdot \\cos t+p \\cos p t \\cdot \\sin t\\right]}{\\cos ^3 t} -\\sin t \\cdot \\frac{p \\cos p t}{\\cos t}+p^2 \\sin p t$</p>\n<p>$$\\begin{aligned}\n& =\\frac{1}{\\cos ^3 t}\\left[\\begin{array}{l}\n\\left(1-\\sin ^2 t\\right)\\left(-p^2 \\sin p t \\cdot \\cos t+p \\cos p t \\cdot \\sin t\\right) \\\\\n-p \\cos p t \\cdot \\sin t \\cdot \\cos ^2 t+p^2 \\sin p t \\cdot \\cos ^3 t\n\\end{array}\\right] \\\\\n& =\\frac{1}{\\cos ^3 t}\\left[\\begin{array}{l}\n-p^2 \\sin p t \\cdot \\cos ^3 t+p \\cos p t \\cdot \\sin t \\cdot \\cos ^2 t \\\\\n-p \\cos p t \\cdot \\sin t \\cdot \\cos ^2 t+p^2 \\sin p t \\cdot \\cos ^3 t\n\\end{array}\\right]\\left[\\because 1-\\sin ^2 t=\\cos ^2 t\\right] \\\\\n& =\\frac{1}{\\cos ^3 t} \\cdot 0 \\\\\n& =0 \\quad \\quad \\text { Hence proved. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpetq",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the value of $\\frac{d y}{d x}$, if $y=x^{\\tan x}+\\sqrt{\\frac{x^2+1}{2}}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have, $y=x^{\\tan x}+\\sqrt{\\frac{x^2+1}{2}}\\quad\\text{.... (i)}$</p>\n<p>Taking $u=x^{\\tan x}$ and $v=\\sqrt{\\frac{x^2+1}{2}}$</p>\n<p>$$\\begin{aligned}\n\\log u & =\\tan x \\log x \\quad\\text{.... (ii)}\\\\\n\\text{and}\\quad v^2 & =\\frac{x^2+1}{2}\\quad\\text{.... (iii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On, differentiating Eq. (ii) w.r.t. } x \\text {, we get }\\\\\n&\\begin{aligned}\n\\frac{1}{u} \\cdot \\frac{d u}{d x} & =\\tan x \\cdot \\frac{1}{x}+\\log x \\cdot \\sec ^2 x \\\\\n\\Rightarrow\\quad \\frac{d u}{d x} & =u\\left[\\frac{\\tan x}{x}+\\log x \\cdot \\sec ^2 x\\right] \\\\\n& =x^{\\tan x}\\left[\\frac{\\tan x}{x}+\\log x \\cdot \\sec ^2 x\\right]\\quad\\text{.... (iv)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Also, differentiating Eq. (iii) w.r.t. } x \\text {, we get }\\\\\n&2 v \\cdot \\frac{d v}{d x}=\\frac{1}{2}(2 x) \\Rightarrow \\frac{d v}{d x}=\\frac{1}{4 v} \\cdot(2 x)\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\quad \\frac{d v}{d x}=\\frac{1}{4 \\cdot \\sqrt{\\frac{x^2+1}{2}}} \\cdot 2 x=\\frac{x \\cdot \\sqrt{2}}{2 \\sqrt{x^2+1}}$</p>\n<p>$\\Rightarrow \\quad \\frac{d v}{d x}=\\frac{x}{\\sqrt{2\\left(x^2+1\\right)}}\\quad\\text{.... (v)}$</p>\n<p>$$\\begin{aligned}\n\\text { Now, } \\quad y & =u+v \\\\\n\\therefore \\quad \\frac{d y}{d x} & =\\frac{d u}{d x}+\\frac{d v}{d x} \\\\\n& =x^{\\tan x}\\left[\\frac{\\tan x}{x}+\\log x \\cdot \\sec ^2 x\\right]+\\frac{x}{\\sqrt{2\\left(x^2+1\\right)}}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m5sbpewg",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f(x)=2 x$ and $g(x)=\\frac{x^2}{2}+1$, then which of the following can be a discontinuous function?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $f(x)+g(x)$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $f(x)-g(x)$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $f(x) \\cdot g(x)$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{g(x)}{f(x)}$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, if $f$ and $g$ be continuous functions, then</p>\n<p>(a) $f+g$ is continuous</p>\n<p>(b) $f-g$ is continuous.</p>\n<p>(c) $f g$ is continuous</p>\n<p>(d) $\\frac{f}{g}$ is continuous at these points, where $g(x) \\neq 0$.</p>\n<p>Here, $$\\frac{g(x)}{f(x)}=\\frac{\\frac{x^2}{2}+1}{2 x}=\\frac{x^2+2}{4 x}$$</p>\n<p>which is discontinuous at $x=0$.</p>\n"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 55203,
+        "correct": 70,
+        "wrong": 30,
+        "options": {
+          "0": 6,
+          "1": 9,
+          "2": 16,
+          "3": 70
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbq7d4",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The function $f(x)=\\frac{4-x^2}{4 x-x^3}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " discontinuous at only one point\n"
+            },
+            {
+              "identifier": "B",
+              "content": " discontinuous at exactly two points\n"
+            },
+            {
+              "identifier": "C",
+              "content": " discontinuous at exactly three points\n"
+            },
+            {
+              "identifier": "D",
+              "content": " None of the above"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>We have,</p>\n<p>$$\\begin{aligned}\nf(x) & =\\frac{4-x^2}{4 x-x^3}=\\frac{\\left(4-x^2\\right)}{x\\left(4-x^2\\right)} \\\\\n& =\\frac{\\left(4-x^2\\right)}{x\\left(2^2-x^2\\right)}=\\frac{4-x^2}{x(2+x)(2-x)}\n\\end{aligned}$$</p>\n<p>Clearly, $f(x)$ is discontinuous at exactly three points $x=0, x=-2$ and $x=2$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 39871,
+        "correct": 29,
+        "wrong": 71,
+        "options": {
+          "0": 39,
+          "1": 23,
+          "2": 29,
+          "3": 10
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbq7fs",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The set of points where the function $f$ given by $f(x)=|2 x-1| \\sin x$ is differentiable is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $R$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $R-\\left(\\frac{1}{2}\\right)$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $(0, \\infty)$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " None of these"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=|2 x-1| \\sin x$</p>\n<p>At $x=\\frac{1}{2}, f(x)$ is not differentiable.</p>\n<p>Hence, $f(x)$ is differentiable in $R-\\left(\\frac{1}{2}\\right)$.</p>\n<p>$\\because \\quad R f^{\\prime}\\left(\\frac{1}{2}\\right)=\\lim _\\limits{h \\rightarrow 0} \\frac{f\\left(\\frac{1}{2}+h\\right)-f\\left(\\frac{1}{2}\\right)}{h}$</p>\n<p>$$\\begin{aligned}\n& =\\lim _{h \\rightarrow 0} \\frac{\\left|2\\left(\\frac{1}{2}+h\\right)-1\\right| \\sin \\left(\\frac{1}{2}+h\\right)-0}{h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{|2 h| \\cdot \\sin \\left(\\frac{1+2 h}{2}\\right)}{h}=2 \\cdot \\sin \\frac{1}{2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{and}\\quad L f'\\left(\\frac{1}{2}\\right) & =\\lim _{h \\rightarrow 0} \\frac{f\\left(\\frac{1}{2}-h\\right)-f\\left(\\frac{1}{2}\\right)}{-h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{\\left|2\\left(\\frac{1}{2}-h\\right)^{-1}\\right|-\\sin \\left(\\frac{1}{2}-h\\right)-0}{-h} \\\\\n& =\\lim _{h \\rightarrow 0} \\frac{|0-2 h|-\\sin \\left(\\frac{1}{2}-h\\right)}{-h}=-2 \\sin \\left(\\frac{1}{2}\\right)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\because\\quad &R f'\\left(\\frac{1}{2}\\right) \\neq L f'\\left(\\frac{1}{2}\\right)\\\\\n&\\text { So, } f(x) \\text { is not differentiable at } x=\\frac{1}{2} \\text {. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 53569,
+        "correct": 65,
+        "wrong": 35,
+        "options": {
+          "0": 20,
+          "1": 65,
+          "2": 12,
+          "3": 4
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbq2au",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The function $f(x)=\\cot x$ is discontinuous on the set</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\{x=n \\pi: n \\in Z\\}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\{x=2 n \\pi: n \\in Z\\}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\left\\{x=(2 n+1) \\frac{\\pi}{2} ; n \\in Z\\right\\}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\left\\{x=\\frac{n \\pi}{2} ; n \\in Z\\right\\}$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, $f(x)=\\cot x$ is continuous in $R-\\{n \\pi: n \\in Z\\}$.</p>\n<p>Since, $$f(x)=\\cot x=\\frac{\\cos x}{\\sin x}\\quad$$ [since, $\\sin x=0$ at $n \\pi, n \\in Z$ ]</p>\n<p>Hence, $f(x)=\\cot x$ is discontinuous on the set $\\{x=n \\pi: n \\in Z\\}$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 40778,
+        "correct": 39,
+        "wrong": 61,
+        "options": {
+          "0": 39,
+          "1": 13,
+          "2": 35,
+          "3": 13
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbpez2",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The function $f(x)=e^{|x|}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " continuous everywhere but not differentiable at $x=0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " continuous and differentiable everywhere\n"
+            },
+            {
+              "identifier": "C",
+              "content": " not continuous at $x=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " None of the above"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\begin{aligned}\n\\text { Let } u(x)=|x| \\text { and } v(x) & =e^x \\\\\n\\therefore \\quad f(x) & =\\operatorname{vou}(x)=v[u(x)] \\\\\n& =v|x|=e^{|x|}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Since, $u(x)$ and $v(x)$ are both continuous functions.</p>\n<p>So, $f(x)$ is also continuous function but $u(x)=|x|$ is not differentiable at $x=0$, whereas $v(x)=e^x$ is differentiable at everywhere.</p>\n<p>Hence, $f(x)$ is continuous everywhere but not differentiable at $x=0$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 35559,
+        "correct": 44,
+        "wrong": 56,
+        "options": {
+          "0": 44,
+          "1": 37,
+          "2": 19
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbqe8q",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f(x)=x^2 \\sin \\frac{1}{x}$, where $x \\neq 0$, then the value of the function $f$ at $x=0$, so that the function is continuous at $x=0$, is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "$-$1"
+            },
+            {
+              "identifier": "C",
+              "content": "1"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\because f(x)=x^2 \\sin \\left(\\frac{1}{x}\\right)$, where $x \\neq 0$</p>\n<p>Hence, value of the function $f$ at $x=0$, so that it is continuous at $x=0$ is 0 .</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 44191,
+        "correct": 49,
+        "wrong": 51,
+        "options": {
+          "0": 49,
+          "1": 15,
+          "2": 26,
+          "3": 11
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbp46u",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f(x)=\\left[\\begin{array}{ll}m x+1, & \\text { if } x \\leq \\frac{\\pi}{2} \\\\ \\sin x+n, & \\text { if } x>\\frac{\\pi}{2}\\end{array}\\right.$ is continuous at $x=\\frac{\\pi}{2}$, then</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $m=1, n=0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $m=\\frac{n \\pi}{2}+1$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $n=\\frac{m \\pi}{2}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $m=n=\\frac{\\pi}{2}$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>We have, $f(x)=\\left\\{\\begin{array}{ll}m x+1, & \\text { if } x \\leq \\frac{\\pi}{2} \\\\ (\\sin x+n), & \\text { if } x>\\frac{\\pi}{2}\\end{array}\\right.$ is continuous at $x=\\frac{\\pi}{2}$</p>\n<p>$\\therefore \\quad \\mathrm{LHL}=\\lim _\\limits{x \\rightarrow \\frac{\\pi^{-}}{2}}(m x+1)=\\lim _\\limits{h \\rightarrow 0}\\left[m\\left(\\frac{\\pi}{2}-h\\right)+1\\right]=\\frac{m \\pi}{2}+1$</p>\n<p>$$\\begin{aligned}\n\\text { and } \\quad \\mathrm{RHL} & =\\lim _{x \\rightarrow \\frac{\\pi^{+}}{2}}(\\sin x+n)=\\lim _{h \\rightarrow 0}\\left[\\sin \\left(\\frac{\\pi}{2}+h\\right)+n\\right] \\\\\n& =\\lim _{h \\rightarrow 0} \\cos h+n=1+n\n\\end{aligned}$$</p>\n<p>$\\therefore \\quad \\mathrm{LHL}=\\mathrm{RHL} \\qquad\\left[\\right.$ to be continuous at $\\left.x=\\frac{\\pi}{2}\\right]$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad & m \\cdot \\frac{\\pi}{2}+1 =n+1 \\\\\n\\therefore \\quad & n =m \\cdot \\frac{\\pi}{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 80951,
+        "correct": 63,
+        "wrong": 37,
+        "options": {
+          "0": 12,
+          "1": 17,
+          "2": 63,
+          "3": 7
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbqd1h",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f(x)=|\\sin x|$, then</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $f$ is everywhere differentiable\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $f$ is everywhere continuous but not differentiable at $x=n \\pi, n \\in Z$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $f$ is everywhere continuous but not differentiable at $x=(2 n+1) \\frac{\\pi}{2}, n \\in Z$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " None of the above"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{rlrl}\n\\text { We have, } \\quad f(x) & =|\\sin x| \\\\\n\\text { Let } \\quad f(x) & =\\operatorname{vou}(x)=v[u(x)] \\quad \\text { [where, } u(x)=\\sin x \\text { and } v(x)=|x|]\\\\\n& =v(\\sin x)=|\\sin x|\n\\end{array}$$</p>\n<p>where, $u(x)$ and $v(x)$ are both continuous.</p>\n<p>Hence, $f(x)=v o u(x)$ is also a continuous function but $v(x)$ is not differentiable at $x=0$.</p>\n<p>So, $f(x)$ is not differentiable where $\\sin x=0 \\Rightarrow x=n \\pi, n \\in Z$</p>\n<p>Hence, $f(x)$ is continuous everywhere but not differentiable at $x=n \\pi, n \\in Z$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 31945,
+        "correct": 71,
+        "wrong": 29,
+        "options": {
+          "0": 15,
+          "1": 71,
+          "2": 11,
+          "3": 4
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbq7il",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $y=\\log \\left(\\frac{1-x^2}{1+x^2}\\right)$, then $\\frac{d y}{d x}$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{4 x^3}{1-x^4}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{-4 x}{1-x^4}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{1}{4-x^4}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{-4 x^3}{1-x^4}$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{We have,}\\quad y & =\\log \\left(\\frac{1-x^2}{1+x^2}\\right) \\\\\n\\therefore\\quad \\frac{d y}{d x} & =\\frac{1}{\\frac{1-x^2}{1+x^2}} \\cdot \\frac{d}{d x}\\left(\\frac{1-x^2}{1+x^2}\\right) \\\\\n& =\\frac{\\left(1+x^2\\right)}{\\left(1-x^2\\right)} \\cdot \\frac{\\left(1+x^2\\right) \\cdot(-2 x)-\\left(1-x^2\\right) \\cdot 2 x}{\\left(1+x^2\\right)^2} \\\\\n& =\\frac{-2 x\\left[1+x^2+1-x^2\\right]}{\\left(1-x^2\\right) \\cdot\\left(1+x^2\\right)}=\\frac{-4 x}{1-x^4}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 83419,
+        "correct": 37,
+        "wrong": 63,
+        "options": {
+          "0": 19,
+          "1": 37,
+          "2": 14,
+          "3": 30
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbpvsm",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $y=\\sqrt{\\sin x+y}$, then $\\frac{d y}{d x}$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{\\cos x}{2 y-1}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{\\cos x}{1-2 y}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{\\sin x}{1-2 y}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{\\sin x}{2 y-1}$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{lrl}\n\\because & y & =(\\sin x+y)^{1 / 2} \\\\\n\\therefore & \\frac{d y}{d x} & =\\frac{1}{2}(\\sin x+y)^{-1 / 2} \\cdot \\frac{d}{d x}(\\sin x+y)\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{d y}{d x}=\\frac{1}{2} \\cdot \\frac{1}{(\\sin x+y)^{1 / 2}} \\cdot\\left(\\cos x+\\frac{d y}{d x}\\right) \\\\\n\\Rightarrow & \\frac{d y}{d x}=\\frac{1}{2 y}\\left(\\cos x+\\frac{d y}{d x}\\right)\\quad \\left[\\because(\\sin x+y)^{1 / 2}=y\\right]\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad& \\frac{d y}{d x}\\left(1-\\frac{1}{2 y}\\right) =\\frac{\\cos x}{2 y} \\\\\n\\therefore \\quad& \\frac{d y}{d x} =\\frac{\\cos x}{2 y} \\cdot \\frac{2 y}{2 y-1}=\\frac{\\cos x}{2 y-1}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 82000,
+        "correct": 75,
+        "wrong": 25,
+        "options": {
+          "0": 75,
+          "1": 22,
+          "3": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbq7kt",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The derivative of $\\cos ^{-1}\\left(2 x^2-1\\right)$ w.r.t. $\\cos ^{-1} x$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "2\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{-1}{2 \\sqrt{1-x^2}}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{2}{x}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $1-x^2$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $u=\\cos ^{-1}\\left(2 x^2-1\\right)$ and $v=\\cos ^{-1} x$</p>\n<p>$\\therefore \\quad \\frac{d v}{d x}=\\frac{+-1}{\\sqrt{1-\\left(2 x^2-1\\right)^2}} \\cdot 4 x=\\frac{-4 x}{\\sqrt{1-\\left(4 x^4+1-4 x^2\\right)}}$</p>\n<p>$$\\begin{aligned}\n& =\\frac{-4 x}{\\sqrt{-4 x^4+4 x^2}}=\\frac{-4 x}{\\sqrt{4 x^2\\left(1-x^2\\right)}} \\\\\n& =\\frac{-2}{\\sqrt{1-x^2}}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\text { and } & \\frac{d u}{d x}=\\frac{-1}{\\sqrt{1-x^2}} \\\\\n\\therefore & \\frac{d x}{d v}=\\frac{d u / d x}{d v / d x}=\\frac{-2 / \\sqrt{1-x^2}}{-1 / \\sqrt{1-x^2}}=2\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 92909,
+        "correct": 30,
+        "wrong": 70,
+        "options": {
+          "0": 30,
+          "1": 48,
+          "2": 15,
+          "3": 6
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbon2a",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $x=t^2$ and $y=t^3$, then $\\frac{d^2 y}{d x^2}$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{3}{2}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{3}{4 t}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{3}{2 t}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{3}{2 t}$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { We have, } x=t^2 \\text { and } y=t^3\\\\\n&\\begin{array}{ll}\n\\therefore & \\frac{d x}{d t}=2 t \\text { and } \\frac{d y}{d t}=3 t^2 \\\\\n\\therefore & \\frac{d y}{d x}=\\frac{d y / d t}{d x / d t}=\\frac{3 t^2}{2 t}=\\frac{3}{2} t\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On further differentiating w.r.t. } x \\text {, we get }\\\\\n&\\begin{aligned}\n\\frac{d^2 y}{d x^2} & =\\frac{3}{2} \\cdot \\frac{d}{d t} t \\cdot \\frac{d t}{d x} \\\\\n& =\\frac{3}{2} \\cdot \\frac{1}{2 t} \\\\\n& =\\frac{3}{4 t}\n\\end{aligned} \\quad\\left[\\because \\frac{d t}{d x}=\\frac{1}{2 t}\\right]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 72861,
+        "correct": 47,
+        "wrong": 53,
+        "options": {
+          "0": 25,
+          "1": 47,
+          "2": 25,
+          "3": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbq7n7",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The value of $c$ in Rolle's theorem for the function $f(x)=x^3-3 x$ in the interval $[0, \\sqrt{3}]$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$1$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$-1$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{3}{2}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\frac{1}{3}$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\because \\quad f^{\\prime}(c)=0 \\quad\\left[\\because f^{\\prime}(x)=3 x^2-3\\right]$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad& 3 c^2-3 =0 \\\\\n\\Rightarrow \\quad& c^2=\\frac{3}{3} =1 \\\\\n\\Rightarrow \\quad& c = \\pm 1, \\text { where } 1 \\in(0, \\sqrt{3}) \\\\\n\\therefore \\quad& c =1\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m5sbqeb7",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>For the function $f(x)=x+\\frac{1}{x}, x \\in[1,3]$, the value of $c$ for mean value theorem is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "1"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\sqrt3$"
+            },
+            {
+              "identifier": "C",
+              "content": "2"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\because \\quad f^{\\prime}(c)=\\frac{f(b)-f(a)}{b-a}$</p>\n<p>$\\Rightarrow \\quad 1-\\frac{1}{c^2}=\\frac{\\left[3+\\frac{1}{3}\\right]-\\left[1+\\frac{1}{1}\\right]}{3-1} \\quad\\left[\\begin{array}{l}\\because f^{\\prime}(x)=1-\\frac{1}{x^2} \\\\ \\text { and } b=3, a=1\\end{array}\\right]$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad& \\frac{c^2-1}{c^2} =\\frac{\\frac{10}{3}-2}{2} \\\\\n\\Rightarrow \\quad& \\frac{c^2-1}{c^2} =\\frac{4}{3 \\times 2}=\\frac{2}{3} \\\\\n\\Rightarrow \\quad& 3\\left(c^2-1\\right) =2 c^2 \\\\\n\\Rightarrow \\quad& 3 c^2-2 c^2 =3 \\\\\n\\Rightarrow \\quad& c^2 =3 \\Rightarrow c= \\pm \\sqrt{3} \\\\\n\\because \\quad& c =\\sqrt{3} \\in(1,3)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m5sbpcbw",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>An example of a function which is continuous everywhere but fails to be differentiable exactly at two points is ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$|x|+|x-1|$ is continuous everywhere but fails to be differentiable exactly at two points $x=0$ and $x=1$.</p>\n<p>So, there can be more such examples of functions.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5sbq7p5",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Derivative of $x^2$ w.r.t. $x^3$ is ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": " ",
+          "explanation": "<p>Derivative of $x^2$ w.r.t. $x^3$ is $\\frac{2}{3 x}$.</p>\n<p>Let $$u=x^2 \\text { and } v=x^3$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & \\frac{d u}{d x}=2 x \\text { and } \\frac{d v}{d x}=3 x^2 \\\\\n\\Rightarrow & \\frac{d u}{d v}=\\frac{2 x}{3 x^2}=\\frac{2}{3 x}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5sbpcdg",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f(x)=|\\cos x|$, then $f^{\\prime}\\left(\\frac{\\pi}{4}\\right)$ is equal to ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If $f(x)=|\\cos x|$, then $f^{\\prime}\\left(\\frac{\\pi}{4}\\right)$</p>\n<p>$\\because \\quad 0< x<\\frac{\\pi}{2}, \\cos x>0$.</p>\n<p>$$\\begin{array}{l}\n\\therefore & f(x) & =+\\cos x & \\\\\n\\Rightarrow & f^{\\prime}(x) & =(-\\sin x) \\\\\n\\Rightarrow & f^{\\prime}\\left(\\frac{\\pi}{4}\\right) & =-\\sin \\frac{\\pi}{4}=\\frac{-1}{\\sqrt{2}} & {\\left[\\because \\sin \\frac{\\pi}{4}=\\frac{1}{\\sqrt{2}}\\right]}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5sbpo56",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f(x)=|\\cos x-\\sin x|$, then $f^{\\prime}\\left(\\frac{\\pi}{3}\\right)$ is equal to ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\because\\quad f(x) & =|\\cos x-\\sin x|, \\\\\n\\therefore\\quad f^{\\prime}\\left(\\frac{\\pi}{3}\\right) & =\\frac{\\sqrt{3}+1}{2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { We know that, } \\frac{\\pi}{4}< x<\\frac{\\pi}{2}, \\sin x>\\cos x\\\\\n&\\therefore \\cos x-\\sin x \\leq 0 \\text { i.e., } \\quad f(x)=-(\\cos x-\\sin x)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\nf^{\\prime}(x) & =-[-\\sin x-\\cos x] \\\\\n\\therefore\\quad f^{\\prime}\\left(\\frac{\\pi}{3}\\right) & =-\\left(\\frac{-\\sqrt{3}}{2}-\\frac{1}{2}\\right)=\\left(\\frac{\\sqrt{3}+1}{2}\\right)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5sbpvuf",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>For the curve $\\sqrt{x}+\\sqrt{y}=1, \\frac{d y}{d x}$ at $\\left(\\frac{1}{4}, \\frac{1}{4}\\right)$ is ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>For the curve $\\sqrt{x}+\\sqrt{y}=1, \\frac{d y}{d x}$ at $\\left(\\frac{1}{4}, \\frac{1}{4}\\right)$ is $-1$.</p>\n<p>$$\\begin{array}{lrl}\n\\text { We have, } & \\sqrt{x}+\\sqrt{y} & =1 \\\\\n\\Rightarrow & \\frac{1}{2 \\sqrt{x}}+\\frac{1}{2 \\sqrt{y}} \\frac{d y}{d x} & =0 \\\\\n\\Rightarrow & \\frac{d y}{d x} & =-\\frac{\\sqrt{y}}{\\sqrt{x}} \\\\\n\\therefore & \\left(\\frac{d y}{d x}\\right)_{\\left(\\frac{1}{4} \\cdot \\frac{1}{4}\\right)} & =\\frac{-\\frac{1}{2}}{\\frac{1}{2}}=-1\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m5sbq7qx",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Rolle's theorem is applicable for the function $f(x)=|x-1|$ in $[0,2]$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Hence, $f(x)=|x-1|$ in $[0,2]$ is not differentiable at $x=1 \\in(0,2)$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 13686,
+        "correct": 45,
+        "wrong": 55,
+        "options": {
+          "0": 55,
+          "1": 45
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbpo6y",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f$ is continuous on its domain $D$, then $|f|$ is also continuous on $D$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": null
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 12122,
+        "correct": 61,
+        "wrong": 39,
+        "options": {
+          "0": 61,
+          "1": 39
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbpjpa",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The composition of two continuous function is a continuous function.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": null
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 8980,
+        "correct": 74,
+        "wrong": 26,
+        "options": {
+          "0": 74,
+          "1": 26
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbq7sk",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Trigonometric and inverse trigonometric functions are differentiable in their respective domain.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": null
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 8776,
+        "correct": 86,
+        "wrong": 14,
+        "options": {
+          "0": 86,
+          "1": 14
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m5sbpjr9",
+      "book": "mathematics-xii-part-1",
+      "bookGroup": "ncert",
+      "chapter": "continuity-and-differentiability",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $f \\cdot g$ is continuous at $x=a$, then $f$ and $g$ are separately continuous at $x=a$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Let $\\quad f(x)=\\sin x$ and $g(x)=\\cot x$</p>\n<p>$\\therefore \\quad f(x) \\cdot g(x)=\\sin x \\cdot \\frac{\\cos x}{\\sin x}=\\cos x$</p>\n<p>which is continuous at $x=0$ but $\\cot x$ is not continuous at $x=0$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f",
+      "user_stats": {
+        "timeSpent": 17500,
+        "correct": 37,
+        "wrong": 63,
+        "options": {
+          "0": 63,
+          "1": 37
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,3390 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m661wdxn",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the solution of $\\frac{d y}{d x}=2^{y-x}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{r}\n\\text{Given that,}\\quad \\frac{d y}{d x} & =2^{y-x} \\\\\n\\Rightarrow\\quad\\frac{d y}{d x} & =\\frac{2^y}{2^x} \\\\\n\\Rightarrow\\quad\\frac{d y}{2^y} & =\\frac{d x}{2^x}\n\\end{array} \\quad\\left[\\because a^{m-n}=\\frac{a^m}{a^n}\\right]$$</p>\n<p>$$\\begin{aligned}\n&\\text { On integrationg both sides, we get }\\\\\n&\\begin{array}{l} \n& \\int 2^{-y} d y =\\int 2^{-x} d x \\\\\n\\Rightarrow & \\frac{-2^{-y}}{\\log 2} =\\frac{-2^{-x}}{\\log 2}+C \\\\\n\\Rightarrow & -2^{-y}+2^{-x}=+C \\log 2 \\\\\n\\Rightarrow & 2^{-x}-2^{-y}=-C \\log 2 \\\\\n\\Rightarrow & 2^{-x}-2^{-y}=K\\quad\\text { [where, } K=+C \\log 2 \\text { ] }\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661we8e",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the differential equation of all non-vertical lines in a plane.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Since, the family of all non-vertical line is $y=m x+c$, where $m \\neq \\tan \\frac{\\pi}{2}$.</p>\n<p>On differentiating w.r.t. $x$, we get</p>\n<p>$$\\frac{d y}{d x}=m$$</p>\n<p>Again, differentiating w.r.t. $x$, we get</p>\n<p>$$\\frac{d^2 y}{d x^2}=0$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w9pq",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $\\frac{d y}{d x}=e^{-2 y}$ and $y=0$ when $x=5$, then find the value of $x$ when $y=3$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\text { Given that, } \\quad \\frac{d y}{d x}=e^{-2 y} \\Rightarrow \\quad \\frac{d y}{e^{-2 y}}=d x \\\\\n& \\Rightarrow \\quad \\int e^{2 y} d y=\\int d x \\Rightarrow \\frac{e^{2 y}}{2}=x+C\\quad\\text{..... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { When } x=5 \\text { and } y=0 \\text {, then substituting these values in Eq. (i), we get }\\\\\n&\\begin{array}{l} \n& \\frac{e^0}{2}=5+C \\\\\n\\Rightarrow & \\frac{1}{2} =5+C \\quad \\Rightarrow \\quad C=\\frac{1}{2}-5=-\\frac{9}{2} \\\\\n\\text { Eq. (i) becomes } & e^{2 y} =2 x-9 \\\\\n\\text { When } y=3 \\text {, then } & e^6 =2 x-9 \\Rightarrow 2 x=e^6+9 \\\\\n\\therefore & x =\\frac{\\left(e^6+9\\right)}{2}\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w75e",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve $\\left(x^2-1\\right) \\frac{d y}{d x}+2 x y=\\frac{1}{x^2-1}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\left(x^2-1\\right) \\frac{d y}{d x}+2 x y=\\frac{1}{x^2-1}$$</p>\n<p>$\\Rightarrow \\quad \\frac{d y}{d x}+\\left(\\frac{2 x}{x^2-1}\\right) y=\\frac{1}{\\left(x^2-1\\right)^2}$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\frac{d y}{d x}+P y=Q$, we get</p>\n<p>$$\\begin{aligned}\nP & =\\frac{2 x}{x^2-1}, Q=\\frac{1}{\\left(x^2-1\\right)^2} \\\\\n\\mathrm{IF} & =e^{\\int P d x}=e^{\\int\\left(\\frac{2 x}{x^2-1}\\right)^{d x}} \\\\\n\\text{Put}\\quad x^2-1 & =t \\Rightarrow 2 x d x=d t \\\\\n\\therefore\\quad\\mathrm{IF} & =e^{\\int \\frac{d t}{t}}=e^{\\log t}=t=\\left(x^2-1\\right)\n\\end{aligned}$$</p>\n<p>The complete solution is</p>\n<p>$$\\begin{aligned}\ny \\cdot \\mathrm{IF} & =\\int Q \\cdot \\mathrm{IF}+K \\\\\n\\Rightarrow\\quad y \\cdot\\left(x^2-1\\right) & =\\int \\frac{1}{\\left(x^2-1\\right)^2} \\cdot\\left(x^2-1\\right) d x+K \\\\\n\\Rightarrow\\quad y \\cdot\\left(x^2-1\\right) & =\\int \\frac{d x}{\\left(x^2-1\\right)}+K \\\\\n\\Rightarrow\\quad y \\cdot\\left(x^2-1\\right) & =\\frac{1}{2} \\log \\left(\\frac{x-1}{x+1}\\right)+K\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wci5",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve $\\frac{d y}{d x}+2 x y=y.$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $$\\frac{d y}{d x}+2 x y=y$$</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{ll}\n\\Rightarrow & \\frac{d y}{d x}+2 x y-y=0 \\\\\n\\Rightarrow & \\frac{d y}{d x}+(2 x-1) y=0\n\\end{array}\\\\\n&\\text { which is a linear differential equation. }\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On comparing it with } \\frac{d y}{d x}+P y=Q \\text {, we get }\\\\\n&\\begin{aligned}\nP & =(2 x-1), Q=0 \\\\\n\\mathrm{IF} & =e^{\\int P d x}=e^{\\int(2 x-1) d x} \\\\\n& =e^{\\left(\\frac{2 x^2}{2}-x\\right)}=e^{x^2-x}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>The complete solution is</p>\n<p>$$\\begin{array}{l} \n& y \\cdot e^{x^2-x} =\\int Q \\cdot e^{x^2-x} d x+C \\\\\n\\Rightarrow & y \\cdot e^{x^2-x} =0+C \\\\\n\\Rightarrow & y =C e^{x-x^2}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w7bk",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the general solution of $\\frac{d y}{d x}+a y=e^{m x}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\frac{d y}{d x}+a y=e^{m x}$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\quad \\frac{d y}{d x}+P y=Q$, we get</p>\n<p>$$\\begin{aligned}\nP & =a, Q=e^{m x} \\\\\n\\mathrm{IF} & =e^{\\int P d x}=e^{\\int a d x}=e^{a x}\n\\end{aligned}$$</p>\n<p>The general solution is $\\quad y \\cdot e^{a x}=\\int e^{m x} \\cdot e^{a x} d x+C$</p>\n<p>$$\\begin{array}{l}\n\\Rightarrow & y \\cdot e^{a x}=\\int e^{(m+a) x} d x+C \\\\\n\\Rightarrow & y \\cdot e^{a x}=\\frac{e^{(m+a) x}}{(m+a)}+C \\\\\n\\Rightarrow & (m+a) y=\\frac{e^{(m+a) x}}{e^{a x}}+\\frac{(m+a) C}{e^{a x}} \\\\\n\\Rightarrow & (m+a) y=e^{m x}+K e^{-a x}\\quad [\\because K=(m+a) C]\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wdy8",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve the differential equation $\\frac{d y}{d x}+1=e^{x+y}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is $\\quad \\frac{d y}{d x}+1=e^{x+y}\\quad\\text{.... (i)}$</p>\n<p>On substituting $x+y=t$, we get</p>\n<p>$$1+\\frac{d y}{d x}=\\frac{d t}{d x}$$</p>\n<p>Eq. (i) becomes $$\\frac{d t}{d x}=e^t$$</p>\n<p>$$\n\\begin{array}{ll}\n\\Rightarrow & e^{-t} d t=d x \\\\\n\\Rightarrow & -e^{-t}=x+C \\\\\n\\Rightarrow & \\frac{-1}{e^{x+y}}=x+C \\\\\n\\Rightarrow & -1=(x+C) e^{x+y}\\\\\n\\Rightarrow & (x+C) e^{x+y}+1=0\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w761",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve $y d x-x d y=x^2 y d x$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given that, }\\quad y d x-x d y=x^2 y d x\\\\\n&\\begin{array}{l}\n\\Rightarrow & \\frac{1}{x^2}-\\frac{1}{x y} \\cdot \\frac{d y}{d x}=1 \\quad \\text { [dividing throughout by } x^2 y d x \\text { ] }\\\\\n\\Rightarrow & -\\frac{1}{x y} \\cdot \\frac{d y}{d x}+\\frac{1}{x^2}-1=0 \\\\\n\\Rightarrow & \\frac{d y}{d x}-\\frac{x y}{x^2}+x y=0 \\\\\n\\Rightarrow & \\frac{d y}{d x}-\\frac{y}{x}+x y=0 \\\\\n\\Rightarrow & \\frac{d y}{d x}+\\left(x-\\frac{1}{x}\\right) y=0\n\\end{array}\n\\end{aligned}$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\frac{d y}{d x}+P y=Q$, we get</p>\n<p>$$\\begin{aligned}\nP & =\\left(x-\\frac{1}{x}\\right), Q=0 \\\\\n\\mathrm{IF} & =e^{\\int P d x} \\\\\n& =e^{\\int\\left(x-\\frac{1}{x}\\right) d x} \\\\\n& =e^{\\frac{x^2}{2}-\\log x} \\\\\n& =e^{\\frac{x^2}{x}}, e^{-\\log x} \\\\\n& =\\frac{1}{x} e^{\\frac{x^2}{2}}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { The general solution is }\\\\\n&\\begin{array}{l} \n& y \\cdot \\frac{1}{x} e^{x^2 / 2} =\\int 0 \\cdot \\frac{1}{x} e^{x^2 / 2} d x+C \\\\\n\\Rightarrow & y \\cdot \\frac{1}{x} e^{x^2 / 2} =C \\\\\n\\Rightarrow & y =C x e^{-x^2 / 2}\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w7c2",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve the differential equation $\\frac{d y}{d x}=1+x+y^2+x y^2$, when $y=0$ and $x=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Given that,}\\quad \\frac{d y}{d x} & =1+x+y^2+x y^2 \\\\\n\\Rightarrow\\quad\\frac{d y}{d x} & =(1+x)+y^2(1+x) \\\\\n\\Rightarrow\\quad\\frac{d y}{d x} & =\\left(1+y^2\\right)(1+x) \\\\\n\\Rightarrow\\quad\\frac{d y}{1+y^2} & =(1+x) d x\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On integrating both sides, we get }\\\\\n&\\tan ^{-1} y=x+\\frac{x^2}{2}+K\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>When $y=0$ and $x=0$, then substituting these values in Eq. (i), we get</p>\n<p>$$\\begin{aligned}\n\\tan ^{-1}(0) & =0+0+K \\\\\n\\Rightarrow \\quad K & =0 \\\\\n\\Rightarrow \\quad \\tan ^{-1} y & =x+\\frac{x^2}{2} \\\\\n\\Rightarrow \\quad y & =\\tan \\left(x+\\frac{x^2}{2}\\right)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wdyt",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the general solution of $\\left(x+2 y^3\\right) \\frac{d y}{d x}=y$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $$\\left(x+2 y^3\\right) \\frac{d y}{d x}=y$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & y \\cdot \\frac{d x}{d y}=x+2 y^3 \\\\\n\\Rightarrow & \\frac{d x}{d y}=\\frac{x}{y}+2 y^2 \\quad\\text{[dividing throughout by y]}\\\\\n\\Rightarrow & \\frac{d x}{d y}-\\frac{x}{y}=2 y^2\n\\end{array}$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\frac{d x}{d y}+P x=Q$, we get</p>\n<p>$$\n\\begin{aligned}\nP & =-\\frac{1}{y}, Q=2 y^2 \\\\\n\\mathrm{IF} & =e^{\\int-\\frac{1}{y} d y}=e^{-\\int \\frac{1}{y} d y} \\\\\n\\therefore\\quad & =e^{-\\log y}=\\frac{1}{y}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\text { The general solution is } & x \\cdot \\frac{1}{y}=\\int 2 y^2 \\cdot \\frac{1}{y} d y+C \\\\\n\\Rightarrow & \\frac{x}{y}=\\frac{2 y^2}{2}+C \\\\\n\\Rightarrow & \\frac{x}{y}=y^2+C \\\\\n\\Rightarrow & x=y^3+C y\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w614",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $y(x)$ is a solution of $\\left(\\frac{2+\\sin x}{1+y}\\right) \\frac{d y}{d x}=-\\cos x$ and $y(0)=1$, then find the value of $y\\left(\\frac{\\pi}{2}\\right)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $\\quad\\left(\\frac{2+\\sin x}{1+y}\\right) \\frac{d y}{d x}=-\\cos x$</p>\n<p>$\\Rightarrow \\quad \\frac{d y}{1+y}=-\\frac{\\cos x}{2+\\sin x} d x$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\int \\frac{1}{1+y} d y=-\\int \\frac{\\cos x}{2+\\sin x} d x$$</p>\n<p>$\\Rightarrow \\quad \\log (1+y)=-\\log (2+\\sin x)+\\log C$</p>\n<p>$$\\begin{array}{r}\n\\Rightarrow & \\log (1+y)+\\log (2+\\sin x)=\\log C \\\\\n\\Rightarrow & \\log (1+y)(2+\\sin x)=\\log C \\\\\n\\Rightarrow & (1+y)(2+\\sin x)=C \\\\\n\\Rightarrow & 1+y=\\frac{C}{2+\\sin x} \\\\\n\\Rightarrow & y=\\frac{C}{2+\\sin x}-1\\quad\\text{.... (i)}\n\\end{array}$$</p>\n<p>$$\n\\begin{aligned}\n&\\text { When } x=0 \\text { and } y=1 \\text {, then }\\\\\n&1=\\frac{C}{2}-1\\\\\n\\Rightarrow\\quad &=C=4\n\\end{aligned}$$</p>\n<p>On putting C = 4 in Eq. (i), we get</p>\n<p>$$\\begin{aligned}\ny & =\\frac{4}{2+\\sin x}-1 \\\\\n\\therefore\\quad y\\left(\\frac{\\pi}{2}\\right) & =\\frac{4}{2+\\sin \\frac{\\pi}{2}}-1=\\frac{4}{2+1}-1 \\\\\n& =\\frac{4}{3}-1=\\frac{1}{3}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w3ij",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $y(t)$ is a solution of $(1+t) \\frac{d y}{d t}-t y=1$ and $y(0)=-1$, then show that $y(1)=-\\frac{1}{2}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given that, }\\\\\n&(1+t) \\frac{d y}{d t}-t y=1\\\\\n&\\Rightarrow \\quad \\frac{d y}{d t}-\\left(\\frac{t}{1+t}\\right) y=\\frac{1}{1+t}\n\\end{aligned}$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\frac{d y}{d t}+P y=Q$, we get</p>\n<p>$$\\begin{aligned}\nP & =-\\left(\\frac{t}{1+t}\\right), Q=\\frac{1}{1+t} \\\\\nI F & =e^{-\\int \\frac{t}{1+t} d t}=e^{-\\int\\left(1-\\frac{1}{1+t}\\right) d t=e^{-[t-\\log (1+t)]}} \\\\\n& =e^{-t} \\cdot e^{\\log (1+t)} \\\\\n& =e^{-t}(1+t)\n\\end{aligned}$$</p>\n<p>The general solution is</p>\n<p>$$\\begin{aligned}\ny(t) \\cdot \\frac{(1+t)}{e^t} & =\\int \\frac{(1+t) \\cdot e^{-t}}{(1+t)} d t+C \\\\\n\\Rightarrow\\quad y(t) & =\\frac{e^{-t}}{(-1)} \\cdot \\frac{e^t}{1+t}+C^{\\prime}, \\text { where } C^{\\prime}=\\frac{C e^t}{1+t} \\\\\n\\Rightarrow\\quad y(t) & =-\\frac{1}{1+t}+C^{\\prime}\n\\end{aligned}$$</p>\n<p>When $t=0$ and $y=-1$, then</p>\n<p>$$\\begin{aligned}\n-1 & =-1+C^{\\prime} \\Rightarrow C^{\\prime}=0 \\\\\ny(t) & =-\\frac{1}{1+t} \\Rightarrow y(1)=-\\frac{1}{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wc9o",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Form the differential equation having $y=\\left(\\sin ^{-1} x\\right)^2+A \\cos ^{-1} x+B$, where $A$ and $B$ are arbitrary constants, as its general solution.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $$y=\\left(\\sin ^{-1} x\\right)^2+A \\cos ^{-1} x+B$$</p>\n<p>On differentiating w.r.t. $x$, we get</p>\n<p>$$\\begin{aligned}\n\\frac{d y}{d x} & =\\frac{2 \\sin ^{-1} x}{\\sqrt{1-x^2}}+\\frac{(-A)}{\\sqrt{1-x^2}} \\\\\n\\Rightarrow \\quad \\sqrt{1-x^2} \\frac{d y}{d x} & =2 \\sin ^{-1} x-A\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Again, differentiating w.r.t. } x \\text {, we get }\\\\\n&\\sqrt{1-x^2} \\frac{d^2 y}{d x^2}+\\frac{d y}{d x} \\cdot \\frac{-2 x}{2 \\sqrt{1+x^2}}=\\frac{2}{\\sqrt{1-x^2}}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & \\left(1-x^2\\right) \\frac{d^2 y}{d x^2}-\\frac{x}{\\sqrt{1-x^2}} \\cdot \\sqrt{1-x^2} \\frac{d y}{d x}=2 \\\\\n\\Rightarrow & \\left(1-x^2\\right) \\frac{d^2 y}{d x^2}-x \\frac{d y}{d x}=2 \\\\\n\\Rightarrow & \\left(1-x^2\\right) \\frac{d^2 y}{d x^2}-x \\frac{d y}{d x}-2=0\n\\end{array}$$</p>\n<p>which is the required differential equation.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wca6",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Form the differential equation of all circles which pass through origin and whose centres lie on $Y$-axis.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>It is given that, circles pass through origin and their centreslie on $Y$-axis. Let $(0, k)$ be the centre of the circle and radius is $k$.</p>\n<p>So, the equation of circle is</p>\n<p>$$\\begin{aligned}\n(x-0)^2+(y-k)^2 & =k^2 \\\\\n\\Rightarrow\\quad x^2+(y-k)^2 & =k^2 \\\\\n\\Rightarrow\\quad x^2+y^2-2 k y & =0 \\\\\n\\Rightarrow\\quad \\frac{x^2+y^2}{2 y} & =k\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>On differentiating Eq. (i) w.r.t. $x$, we get</p>\n<p>$\\frac{2 y\\left(2 x+2 y \\frac{d y}{d x}\\right)-\\left(x^2+y^2\\right) \\frac{2 d y}{d x}}{4 y^2}=0$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & 4 y\\left(x+y \\frac{d y}{d x}\\right)-2\\left(x^2+y^2\\right) \\frac{d y}{d x}=0 \\\\\n\\Rightarrow & 4 x y+4 y^2 \\frac{d y}{d x}-2\\left(x^2+y^2\\right) \\frac{d y}{d x}=0 \\\\\n\\Rightarrow & {\\left[4 y^2-2\\left(x^2+y^2\\right)\\right] \\frac{d y}{d x}+4 x y=0} \\\\\n\\Rightarrow & \\left(4 y^2-2 x^2-2 y^2\\right) \\frac{d y}{d x}+4 x y=0 \\\\\n\\Rightarrow & \\left(2 y^2-2 x^2\\right) \\frac{d y}{d x}+4 x y=0 \\\\\n\\Rightarrow & \\left(y^2-x^2\\right) \\frac{d y}{d x}+2 x y=0 \\\\\n\\Rightarrow & \\left(x^2-y^2\\right) \\frac{d y}{d x}-2 x y=0\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w9hg",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the equation of a curve passing through origin and satisfying the differential equation $\\left(1+x^2\\right) \\frac{d y}{d x}+2 x y=4 x^2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $$\\left(1+x^2\\right) \\frac{d y}{d x}+2 x y=4 x^2$$</p>\n<p>$$\\Rightarrow \\quad \\frac{d y}{d x}+\\frac{2 x}{1+x^2} \\cdot y=\\frac{4 x^2}{1+x^2}$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\frac{d y}{d x}+P y=Q$, we get</p>\n<p>$$\\begin{aligned}\n& P=\\frac{2 x}{1+x^2}, Q=\\frac{4 x^2}{1+x^2} \\\\\n\\therefore\\quad & I F=e^{\\int P d x}=e^{\\int \\frac{2 x}{1+x^2} d x}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Put } 1+x^2=t \\Rightarrow 2 x d x=d t\\\\\n&\\mathrm{IF}=1+x^2=e^{\\int \\frac{d t}{t}}=e^{\\log t}=e^{\\log \\left(1+x^2\\right)}\n\\end{aligned}$$</p>\n<p>The general solution is</p>\n<p>$$\\begin{aligned}\n& y \\cdot\\left(1+x^2\\right)=\\int \\frac{4 x^2}{1+x^2}\\left(1+x^2\\right) d x+C \\\\\n& \\Rightarrow \\quad y \\cdot\\left(1+x^2\\right)=\\int 4 x^2 d x+C \\\\\n& \\Rightarrow \\quad y \\cdot\\left(1+x^2\\right)=4 \\frac{x^3}{3}+C\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>Since, the curve passes through origin, then substituting</p>\n<p>$x=0$ and $y=0$ in Eq. (i), we get $C=0$</p>\n<p>The required equation of curve is</p>\n<p>$$\\begin{aligned}\ny\\left(1+x^2\\right) & =\\frac{4 x^3}{3} \\\\\n\\Rightarrow\\quad y & =\\frac{4 x^3}{3\\left(1+x^2\\right)}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wfdo",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve $x^2 \\frac{d y}{d x}=x^2+x y+y^2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $$x^2 \\frac{d y}{d x}=x^2+x y+y^2$$</p>\n<p>$\\Rightarrow \\quad \\frac{d y}{d x}=1+\\frac{y}{x}+\\frac{y^2}{x^2}\\quad\\text{.... (i)}$</p>\n<p>Let, $$f(x, y)=1+\\frac{y}{x}+\\frac{y^2}{x^2}$$</p>\n<p>$$\\begin{aligned}\nf(\\lambda x, \\lambda y) & =1+\\frac{\\lambda y}{\\lambda x}+\\frac{\\lambda^2 y^2}{\\lambda^2 x^2} \\\\\nf(\\lambda x, \\lambda y) & =\\lambda^0\\left(1+\\frac{y}{x}+\\frac{y^2}{x^2}\\right) \\\\\n& =\\lambda^0 f(x, y)\n\\end{aligned}$$</p>\n<p>which is homogeneous expression of degree 0.</p>\n<p>Put $$y=v x \\Rightarrow \\frac{d y}{d x}=v+x \\frac{d v}{d x}$$</p>\n<p>On substituting these values in Eq. (i), we get</p>\n<p>$$\\left(v+x \\frac{d v}{d x}\\right)=1+v+v^2$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & x \\frac{d v}{d x}=1+v+v^2-v \\\\\n\\Rightarrow & x \\frac{d v}{d x}=1+v^2 \\\\\n\\Rightarrow & \\frac{d v}{1+v^2}=\\frac{d x}{x}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On integrating both sides, we get }\\\\\n&\\begin{aligned}\n\\tan ^{-1} v & =\\log |x|+C \\\\\n\\Rightarrow\\quad \\tan ^{-1}\\left(\\frac{y}{x}\\right) & =\\log |x|+C\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wcas",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the general solution of the differential equation $\\left(1+y^2\\right)+\\left(x-e^{\\tan ^{-1} y}\\right) \\frac{d y}{d x}=0$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given, differential equation is }\\\\\n&\\Rightarrow \\quad \\begin{aligned}\n\\left(1+y^2\\right)+\\left(x-e^{\\tan ^{-1} y}\\right) \\frac{d y}{d x} & =0 \\\\\n\\left(1+y^2\\right) & =-\\left(x-e^{\\tan ^{-1} y}\\right) \\frac{d y}{d x} \\\\\n\\left(1+y^2\\right) \\frac{d x}{d y} & =-x+e^{\\tan ^{-1} y}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\left(1+y^2\\right) \\frac{d x}{d y}+x=e^{\\tan ^{-1} y} \\\\\n\\Rightarrow & \\frac{d x}{d y}+\\frac{x}{1+y^2}=\\frac{e^{\\tan ^{-1} y}}{1+y^2}\\quad \\text { [dividing throughout by }\\left(1+y^2\\right) \\text { ] }\n\\end{array}$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\frac{d x}{d y}+P x=Q$, we get</p>\n<p>$$\\begin{aligned}\n& P=\\frac{1}{1+y^2}, Q=\\frac{e^{\\tan ^{-1} y}}{1+y^2} \\\\\n& \\text { IF }=e^{\\int P d y}=e^{\\int \\frac{1}{1+y^2} d y}=e^{\\tan ^{-1} y}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { The general solution is } \\quad x \\cdot e^{\\tan ^{-1} y}=\\int \\frac{e^{\\tan ^{-1} y}}{1+y^2} \\cdot e^{\\tan ^{-1} y} d y+C \\\\\n& \\Rightarrow \\quad x \\cdot e^{\\tan ^{-1} y}=\\int \\frac{\\left(e^{\\tan ^{-1} y}\\right)^2}{1+y^2} \\cdot d y+C\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\text { Put } \\tan ^{-1} y=t \\Rightarrow & \\frac{1}{1+y^2} d y=d t \\\\\n\\therefore & x \\cdot e^{\\tan ^{-1} y}=\\int e^{2 t} d t+C\n\\end{array}$$</p>\n<p>$$\n\\begin{array}{ll}\n\\Rightarrow & x \\cdot e^{\\tan ^{-1} y}=\\frac{1}{2} e^{2 \\tan ^{-1} y}+C \\\\\n\\Rightarrow & 2 x \\mathrm{e}^{\\tan ^{-1} y}=e^{2 \\tan ^{-1} y}+2 C \\\\\n\\Rightarrow & 2 x \\mathrm{e}^{\\tan ^{-1} y}=e^{2 \\tan ^{-1} y}+K\\quad[\\because K=2 C]\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wfec",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the general solution of $y^2 d x+\\left(x^2-x y+y^2\\right) d y=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\begin{array}{l}\n\\Rightarrow & y^2 d x+\\left(x^2-x y+y^2\\right) d y =0 \\\\\n\\Rightarrow & y^2 d x =-\\left(x^2-x y+y^2\\right) d y \\\\\n\\Rightarrow & y^2 \\frac{d x}{d y} =-\\left(x^2-x y+y^2\\right) \\\\\n\\Rightarrow & \\frac{d x}{d y} =-\\left(\\frac{x^2}{y^2}-\\frac{x}{y}+1\\right)\\quad\\text{.... (i)}\n\\end{array}$$</p>\n<p>which is a homogeneous differential equation.</p>\n<p>Put $$\\frac{x}{y}=v \\text { or } x=v y$$</p>\n<p>$\\Rightarrow \\quad \\frac{d x}{d y}=v+y \\frac{d v}{d y}$</p>\n<p>On substituting these values in Eq. (i), we get</p>\n<p>$$v+y \\frac{d v}{d y}=-\\left[v^2-v+1\\right]$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & y \\frac{d v}{d y}=-v^2+v-1-v \\\\\n\\Rightarrow & y \\frac{d v}{d y}=-v^2-1 \\Rightarrow \\frac{d v}{v^2+1}=-\\frac{d y}{y}\n\\end{array}$$</p>\n<p>$$\n\\begin{aligned}\n&\\text { On integrating both sides, we get }\\\\\n&\\begin{aligned}\n& \\tan ^{-1}(v)=-\\log y+C \\\\\n\\Rightarrow\\quad & \\tan ^{-1}\\left(\\frac{x}{y}\\right)+\\log y=C\\quad \\left[\\because v=\\frac{x}{y}\\right]\n\\end{aligned}\\\\\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wcin",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve $(x+y)(d x-d y)=d x+d y$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\begin{aligned}\n(x+y)(d x-d y) & =d x+d y \\\\\n\\Rightarrow\\quad (x+y)\\left(1-\\frac{d y}{d x}\\right) & =1+\\frac{d y}{d x} \\quad\\text{.... (i)}\\\\\n\\text{Put}\\quad x+y & =z \\\\\n\\Rightarrow\\quad 1+\\frac{d y}{d x} & =\\frac{d z}{d x}\n\\end{aligned}$$</p>\n<p>On substituting these values in Eq. (i), we get</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & z\\left(1-\\frac{d z}{d x}+1\\right) =\\frac{d z}{d x} \\\\\n\\Rightarrow \\quad & z\\left(2-\\frac{d z}{d x}\\right) =\\frac{d z}{d x} \\\\\n\\Rightarrow & 2 z-z \\frac{d z}{d x}-\\frac{d z}{d x} =0\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & 2 z-(z+1) \\frac{d z}{d x}=0 \\\\\n\\Rightarrow & \\frac{d z}{d x}=\\frac{2 z}{z+1} \\\\\n\\Rightarrow & \\left(\\frac{z+1}{z}\\right) d z=2 d x\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On integrating both sides, we get }\\\\\n&\\int\\left(1+\\frac{1}{z}\\right) d z=2 \\int d x\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{lrl}\n\\Rightarrow & z+\\log z & =2 x-\\log C \\\\\n\\Rightarrow & (x+y)+\\log (x+y) & =2 x-\\log C \\quad[\\because z=x+y]\\\\\n\\Rightarrow & 2 x-x-y & =\\log C+\\log (x+y) \\\\\n\\Rightarrow & x-y & =\\log |C(x+y)| \\\\\n\\Rightarrow & e^{x-y} & =C(x+y) \\\\\n\\Rightarrow & (x+y) & =\\frac{1}{C} e^{x-y} \\\\\n\\Rightarrow & x+y & =K e^{x-y}\\quad\\left[\\because K=\\frac{1}{C}\\right]\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wcba",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve $2(y+3)-x y \\frac{d y}{d x}=0$, given that $y(1)=-2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Given that,}\\quad 2(y+3)-x y \\frac{d y}{d x} & =0 \\\\\n\\Rightarrow\\quad 2(y+3) & =x y \\frac{d y}{d x} \\\\\n\\Rightarrow\\quad 2 \\frac{d x}{x} & =\\left(\\frac{y}{y+3}\\right) d y \\\\\n\\Rightarrow\\quad 2 \\cdot \\frac{d x}{x} & =\\left(\\frac{y+3-3}{y+3}\\right) d y \\\\\n\\Rightarrow\\quad 2 \\cdot \\frac{d x}{x} & =\\left(1-\\frac{3}{y+3}\\right) d y\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$2 \\log x=y-3 \\log (y+3)+C\\quad\\text{.... (i)}$$</p>\n<p>When $x=1$ and $y=-2$, then</p>\n<p>$$\\begin{aligned}\n2 \\log 1 & =-2-3 \\log (-2+3)+C \\\\\n\\Rightarrow\\quad 2 \\cdot 0 & =-2-3 \\cdot 0+C \\\\\n\\Rightarrow \\quad C & =2\n\\end{aligned}$$</p>\n<p>On substituting the value of $C$ in Eq. (i), we get</p>\n<p>$$2 \\log x=y-3 \\log (y+3)+2$$</p>\n<p>$$\n\\begin{array}{rr}\n\\Rightarrow & 2 \\log x+3 \\log (y+3)=y+2 \\\\\n\\Rightarrow & \\log x^2+\\log (y+3)^3=(y+2) \\\\\n\\Rightarrow & \\log x^2(y+3)^3=y+2 \\\\\n\\Rightarrow & x^2(y+3)^3=e^{y+2}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w4vc",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve the differential equation $d y=\\cos x(2-y \\operatorname{cosec} x) d x$ given that $y=2$, when $x=\\frac{\\pi}{2}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation,</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{d y}{}=\\cos x(2-y \\operatorname{cosec} x) d x \\\\\n\\Rightarrow & \\frac{d y}{d x}=\\cos x(2-y \\operatorname{cosec} x) \\\\\n\\Rightarrow & \\frac{d y}{d x}=2 \\cos x-y \\operatorname{cosec} x \\cdot \\cos x \\\\\n\\Rightarrow & \\frac{d y}{d x}+y \\cot x=2 \\cos x\n\\end{array}$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\frac{d y}{d x}+P y=Q$, we get</p>\n<p>$$\\begin{aligned}\nP & =\\cot x, Q=2 \\cos x \\\\\n\\mathrm{IF} & =e^{\\int P d x}=e^{\\int \\cot x d x}=e^{\\log \\sin x}=\\sin x\n\\end{aligned}$$</p>\n<p>The general solution is</p>\n<p>$$\n\\begin{array}{ll} \n& y \\cdot \\sin x=\\int 2 \\cos x \\cdot \\sin x d x+C \\\\\n\\Rightarrow & y \\cdot \\sin x=\\int \\sin 2 x d x+C  \\quad[\\because \\sin 2 x=2 \\sin x \\cos x]\\\\\n\\Rightarrow & y \\cdot \\sin x=-\\frac{\\cos 2 x}{2}+C\\quad\\text{.... (i)}\n\\end{array}$$</p>\n<p>When $x=\\frac{\\pi}{2}$ and $y=2$, then</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n2 \\cdot \\sin \\frac{\\pi}{2} & =-\\frac{\\cos \\left(2 \\times \\frac{\\pi}{2}\\right)}{2}+C \\\\\n\\Rightarrow\\quad 2 \\cdot 1 & =+\\frac{1}{2}+C \\\\\n\\Rightarrow\\quad 2-\\frac{1}{2} & =C \\Rightarrow \\frac{4-1}{2}=C \\\\\n\\Rightarrow\\quad C & =\\frac{3}{2}\n\\end{aligned}\\\\\n&\\text { On substituting the value of } C \\text { in Eq. (i), we get }\\\\\n&y \\sin x=-\\frac{1}{2} \\cos 2 x+\\frac{3}{2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w9hz",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Form the differential equation by eliminating $A$ and $B$ in $$A x^2+B y^2=1$$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is $\\quad A x^2+B y^2=1$</p>\n<p>On differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\begin{aligned}\n2 A x+2 B y \\frac{d y}{d x} & =0 \\\\\n\\Rightarrow\\quad 2 B y \\frac{d y}{d x} & =-2 A x \\\\\n\\Rightarrow\\quad B y \\frac{d y}{d x} & =-A x \\Rightarrow \\frac{y}{x} \\cdot \\frac{d y}{d x}=-\\frac{A}{B}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Again, differentiating w.r.t. } x \\text {, we get }\\\\\n&\\begin{aligned}\n& \\frac{y}{x} \\cdot \\frac{d^2 y}{d x^2}+\\frac{d y}{d x} \\cdot\\left(\\frac{x \\frac{d y}{d x}-y}{x^2}\\right)=0 \\\\\n\\Rightarrow \\quad & \\frac{y}{x} \\cdot \\frac{d^2 y}{d x^2}+\\frac{x\\left(\\frac{d y}{d x}\\right)^2-y\\left(\\frac{d y}{d x}\\right)}{x^2}=0 \\\\\n\\Rightarrow \\quad & x y \\frac{d^2 y}{d x^2}+x\\left(\\frac{d y}{d x}\\right)^2-y\\left(\\frac{d y}{d x}\\right)=0 \\\\\n\\Rightarrow \\quad & x y y^{\\prime \\prime}+x\\left(y^{\\prime}\\right)^2-y y^{\\prime}=0\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wcon",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve the differential equation $\\left(1+y^2\\right) \\tan ^{-1} x d x+2 y\\left(1+x^2\\right) d y=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & & \\left(1+y^2\\right) \\tan ^{-1} x d x+2 y\\left(1+x^2\\right) d y & =0 \\\\\n\\Rightarrow & & \\left(1+y^2\\right) \\tan ^{-1} x d x & =-2 y\\left(1+x^2\\right) d y \\\\\n& & \\frac{\\tan ^{-1} x d x}{1+x^2} & =-\\frac{2 y}{1+y^2} d y\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\int \\frac{\\tan ^{-1} x}{1+x^2} d x=-\\int \\frac{2 y}{1+y^2} d y$$</p>\n<p>Put $\\tan ^{-1} x=t$ in LHS, we get</p>\n<p>$$\\frac{1}{1+x^2} d x=d t$$</p>\n<p>and put $1+y^2=u$ in RHS, we get</p>\n<p>$$\\begin{array}{l}\n& 2 y d y =d u \\\\\n\\Rightarrow & \\int t d t =-\\int \\frac{1}{u} d u \\Rightarrow \\frac{t^2}{2}=-\\log u+C \\\\\n\\Rightarrow & \\frac{1}{2}\\left(\\tan ^{-1} x\\right)^2 =-\\log \\left(1+y^2\\right)+C \\\\\n\\Rightarrow & \\frac{1}{2}\\left(\\tan ^{-1} x\\right)^2+\\log \\left(1+y^2\\right) =C\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661we8x",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the differential equation of system of concentric circles with centre $(1,2)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The family of concentric circles with centre $(1,2)$ and radius $a$ is given by</p>\n<p>$$\\begin{aligned}\n& (x-1)^2+(y-2)^2 & =a^2 \\\\\n&\\Rightarrow \\quad x^2+1-2 x+y^2+4-4 y =a^2 \\\\\n&\\Rightarrow \\quad x^2+y^2-2 x-4 y+5 =a^2\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>On differentiating Eq. (i) w.r.t. $x$, we get</p>\n<p>$$\\begin{array}{rlr}\n& 2 x+2 y \\frac{d y}{d x}-2-4 \\frac{d y}{d x}=0 \\\\\n\\Rightarrow & (2 y-4) \\frac{d y}{d x}+2 x-2=0 \\\\\n\\Rightarrow & (y-2) \\frac{d y}{d x}+(x-1)=0\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w1q0",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve $y+\\frac{d}{d x}(x y)=x(\\sin x+\\log x)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\begin{array}{cc} \n& y+\\frac{d}{d x}(x y)=x(\\sin x+\\log x) \\\\\n\\Rightarrow & y+x \\frac{d y}{d x}+y=x(\\sin x+\\log x) \\\\\n\\Rightarrow & x \\frac{d y}{d x}+2 y=x(\\sin x+\\log x) \\\\\n\\Rightarrow & \\frac{d y}{d x}+\\frac{2}{x} y=\\sin x+\\log x\n\\end{array}$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\quad \\frac{d y}{d x}+P y=Q$, we get</p>\n<p>$$\\begin{aligned}\n& P=\\frac{2}{x}, Q=\\sin x+\\log x \\\\\n& \\text { IF }=e^{\\int \\frac{2}{x} \\frac{2 x}{x}}=e^{2 \\log x}=x^2\n\\end{aligned}$$</p>\n<p>The general solution is</p>\n<p>$$\n\\begin{array}{ll} \n& y \\cdot x^2=\\int(\\sin x+\\log x) x^2 d x+C \\\\\n\\Rightarrow & y \\cdot x^2=\\int\\left(x^2 \\sin x+x^2 \\log x\\right) d x+C \\\\\n\\Rightarrow & y \\cdot x^2=\\int x^2 \\sin x d x+\\int x^2 \\log x d x+C \\\\\n\\Rightarrow\\quad & y \\cdot x^2=I_1+I_2+C\\quad\\text{.... (i)}\n\\end{array}$$</p>\n<p>$$\n\\begin{aligned}\n&\\begin{aligned}\n\\text { Now, } \\quad & I_1 =\\int x^2 \\sin x d x \\\\\n& =x^2(-\\cos x)+\\int 2 x \\cos x d x \\\\\n& =-x^2 \\cos x+\\left[2 x(\\sin x)-\\int 2 \\sin x d x\\right] \\\\\n& I_1 =-x^2 \\cos x+2 x \\sin x+2 \\cos x \\quad\\text{.... (ii)}\\\\\n\\text { and }\\quad & I_2 =\\int x^2 \\log x d x\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& =\\log x \\cdot \\frac{x^3}{3}-\\int \\frac{1}{x} \\cdot \\frac{x^3}{3} d x \\\\\n& =\\log x \\cdot \\frac{x^3}{3}-\\frac{1}{3} \\int x^2 d x \\\\\n& =\\log x \\cdot \\frac{x^3}{3}-\\frac{1}{3} \\cdot \\frac{x^3}{3}\\quad\\text{.... (iii)}\n\\end{aligned}\\\\\n&\\text { On substituting the value of } I_1 \\text { and } I_2 \\text { in Eq. (i), we get }\\\\\n&\\begin{aligned}\ny \\cdot x^2 & =-x^2 \\cos x+2 x \\sin x+2 \\cos x+\\frac{x^3}{3} \\log x-\\frac{1}{9} x^3+C \\\\\n\\therefore \\quad y & =-\\cos x+\\frac{2 \\sin x}{x}+\\frac{2 \\cos x}{x^2}+\\frac{x}{3} \\log x-\\frac{x}{9}+C x^{-2}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wcp5",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the general solution of $(1+\\tan y)(d x-d y)+2 x d y=0$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is $(1+\\tan y)(d x-d y)+2 x d y=0$</p>\n<p>on dividing throughout by $d y$, we get</p>\n<p>$$\\begin{aligned}\n& (1+\\tan y)\\left(\\frac{d x}{d y}-1\\right)+2 x =0 \\\\\n\\Rightarrow \\quad& (1+\\tan y) \\frac{d x}{d y}-(1+\\tan y)+2 x =0 \\\\\n\\Rightarrow \\quad& (1+\\tan y) \\frac{d x}{d y}+2 x =(1+\\tan y) \\\\\n\\Rightarrow \\quad& \\frac{d x}{d y}+\\frac{2 x}{1+\\tan y} =1\n\\end{aligned}$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\frac{d x}{d y}+P x=Q$, we get</p>\n<p>$$\\begin{aligned}\nP & =\\frac{2}{1+\\tan y}, Q=1 \\\\\n\\text { IF } & =e^{\\int \\frac{2}{1+\\tan y} d y}=e^{\\int \\frac{2 \\cos y}{\\cos y+\\sin y} d y} \\\\\n& =e^{\\int \\frac{\\cos y+\\sin y+\\cos y-\\sin y}{\\cos y+\\sin y} d y} \\\\\n& =e^{\\int\\left(1+\\frac{\\cos y-\\sin y}{\\cos y+\\sin y}\\right) d y}=e^{y+\\log (\\cos y+\\sin y)} \\\\\n& =e^y \\cdot(\\cos y+\\sin y)\\quad \\left[\\because e^{\\log x}=x\\right]\n\\end{aligned}$$</p>\n<p>The general solution is</p>\n<p>$$\\begin{array}{ll} \n& \\\\\n& x \\cdot e^y(\\cos y+\\sin y)=\\int 1 \\cdot e^y(\\cos y+\\sin y) d y+C \\\\\n\\Rightarrow & x \\cdot e^y(\\cos y+\\sin y)=\\int e^y(\\sin y+\\cos y) d y+C \\\\\n\\Rightarrow & x \\cdot e^y(\\cos y+\\sin y)=e^y \\sin y+C \\quad\\left[\\because \\int e^x\\left\\{f(x)+f^{\\prime}(x)\\right\\} d x=e^x f(x)\\right] \\\\\n\\Rightarrow & x(\\sin y+\\cos y)=\\sin y+C e^{-y}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w1r5",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve $\\frac{d y}{d x}=\\cos (x+y)+\\sin (x+y)$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given, $$\\frac{d y}{d x}=\\cos (x+y)+\\sin (x+y)\\quad\\text{.... (i)}$$</p>\n<p>Put $\\quad x+y=z$</p>\n<p>$$\\Rightarrow \\quad 1+\\frac{d y}{d x}=\\frac{d z}{d x}$$</p>\n<p>On substituting these values in Eq. (i), we get</p>\n<p>$$\\begin{array}{ll} \n& \\left(\\frac{d z}{d x}-1\\right)=\\cos z+\\sin z \\\\\n\\Rightarrow & \\frac{d z}{d x}=(\\cos z+\\sin z+1) \\\\\n\\Rightarrow \\quad & \\frac{d z}{\\cos z+\\sin z+1}=d x\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On integrating both sides, we get }\\\\\n&\\begin{aligned}\n& \\int \\frac{d z}{\\cos z+\\sin z+1}=\\int 1 d x \\\\\n& \\Rightarrow \\quad \\int \\frac{d z}{\\frac{1-\\tan ^2 z / 2}{1+\\tan ^2 z / 2}+\\frac{2 \\tan z / 2}{1+\\tan ^2 z / 2}+1}=\\int d x \\\\\n& \\Rightarrow \\quad \\int \\frac{d z}{\\frac{1-\\tan ^2 z / 2+2 \\tan z / 2+1+\\tan ^2 z / 2}{\\left(1+\\tan ^2 z / 2\\right)}}=\\int d x \\\\\n& \\Rightarrow \\quad \\int \\frac{\\left(1+\\tan ^2 z / 2\\right) d z}{2+2 \\tan ^2 z / 2}=\\int d x \\\\\n& \\Rightarrow \\quad \\int \\frac{\\sec ^2 z / 2 d z}{2(1+\\tan z / 2)}=\\int d x \\\\\n& \\text { Put } 1+\\tan z / 2=t \\Rightarrow \\quad\\left(\\frac{1}{2} \\sec ^2 z / 2\\right) d z=d t \\\\\n& \\Rightarrow \\quad \\int \\frac{d t}{t}=\\int d x \\\\\n& \\Rightarrow \\quad \\log |t|=x+C \\\\\n& \\Rightarrow \\quad \\log |1+\\tan z / 2|=x+C \\\\\n& \\Rightarrow \\quad \\log \\left|1+\\tan \\frac{(x+y)}{2}\\right|=x+C\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w7cp",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the general solution of $\\frac{d y}{d x}-3 y=\\sin 2 x$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given, $$\\frac{d y}{d x}-3 y=\\sin 2 x$$</p>\n<p>which is a linear differential equation.</p>\n<p>On comparing it with $\\frac{d y}{d x}+P y=Q$, we get</p>\n<p>$$\\begin{aligned}\nP & =-3, Q=\\sin 2 x \\\\\nI F & =e^{-3 \\int d x}=e^{-3 x}\n\\end{aligned}$$</p>\n<p>The general solution is</p>\n<p>$$y\\,.\\,{e^{ - 3x}} = \\int {\\mathop {\\sin 2x}\\limits_I \\mathop {{e^{ - 3x}}}\\limits_{II} dx} $$</p>\n<p>Let $$y\\,.\\,{e^{ - 3x}} = I\\quad\\text{.... (i)}$$</p>\n<p>$$\\therefore\\quad I = \\int {\\mathop {{e^{ - 3x}}}\\limits_{II} \\mathop {\\sin 2x}\\limits_I } $$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & I=\\sin 2 x\\left(\\frac{e^{-3 x}}{-3}\\right)-\\int 2 \\cos 2 x\\left(\\frac{e^{-3 x}}{-3}\\right) d x+C_1 \\\\\n\\Rightarrow & I=-\\frac{1}{3} e^{-3 x} \\sin 2 x+\\frac{2}{3} \\int e^{-3 x} \\cos 2 x d x+C_1 \\\\\n\\Rightarrow & I=-\\frac{1}{3} e^{-3 x} \\sin 2 x+\\frac{2}{3}\\left(\\cos 2 x \\frac{e^{-3 x}}{-3}-\\int(-2 \\sin 2 x) \\frac{e^{-3 x}}{-3} d x\\right)+C_1+C_2 \\\\\n\\Rightarrow & I=-\\frac{1}{3} e^{-3 x} \\sin 2 x-\\frac{2}{9} \\cos 2 x e^{-3 x}-\\frac{4}{9} I+C^{\\prime} \\quad \\quad \\quad\\left[\\text { where }, C^{\\prime}=C_1+C_2\\right] \\\\\n\\Rightarrow & I+\\frac{41}{9} 2=+e^{-3 x}\\left(-\\frac{1}{3} \\sin 2 x-\\frac{2}{9} \\cos 2 x\\right)+C^{\\prime}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad \\frac{13}{9} I=e^{-3 x}\\left(-\\frac{1}{3} \\sin 2 x-\\frac{2}{9} \\cos 2 x\\right)+C^{\\prime} \\\\\n& \\Rightarrow \\quad I=\\frac{9}{13} \\mathrm{e}^{-3 x}\\left(-\\frac{1}{3} \\sin 2 x-\\frac{2}{9} \\cos 2 x\\right)+C \\quad \\left[\\text { where } C=\\frac{9 C^{\\prime}}{13}\\right]\\\\\n& \\Rightarrow \\quad I=\\frac{3}{13} e^{-3 x}\\left(-\\sin 2 x-\\frac{2}{3} \\cos 2 x\\right)+C \\\\\n& \\Rightarrow \\quad=\\frac{3}{13} e^{-3 x} \\frac{(-3 \\sin 2 x-2 \\cos 2 x)}{3}+C \\\\\n& \\Rightarrow \\quad=\\frac{e^{-3 x}}{13}(-3 \\sin 2 x-2 \\cos 2 x)+C \\\\\n& \\Rightarrow \\quad I=-\\frac{e^{-3 x}}{13}(2 \\cos 2 x+3 \\sin 2 x)+C\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On substituting the value of } I \\text { in Eq. (i), we get }\\\\\n&\\begin{aligned}\ny \\cdot e^{-3 x} & =-\\frac{e^{-3 x}}{13}(2 \\cos 2 x+3 \\sin 2 x)+C \\\\\n\\Rightarrow \\quad y & =-\\frac{1}{13}(2 \\cos 2 x+3 \\sin 2 x)+C e^{3 x}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661we9e",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the equation of a curve passing through $(2,1)$, if the slope of the tangent to the curve at any point $(x, y)$ is $\\frac{x^2+y^2}{2 x y}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { It is given that, the slope of tangent to the curve at point }(x, y) \\text { is } \\frac{x^2+y^2}{2 x y} \\text {. }\\\\\n&\\begin{array}{lrl}\n\\therefore & \\left(\\frac{d y}{d x}\\right)_{(x, y)} & =\\frac{x^2+y^2}{2 x y} \\\\\n\\Rightarrow & \\frac{d y}{d x} & =\\frac{1}{2}\\left(\\frac{x}{y}+\\frac{y}{x}\\right)\n\\end{array}\n\\end{aligned}$$</p>\n<p>which is homogeneous differential equation.</p>\n<p>$$\\begin{array}{ll}\n& \\begin{aligned}\n\\text { Put } y & =v x \\\\\n\\Rightarrow \\quad & \\frac{d y}{d x}\n\\end{aligned}=v+x \\frac{d v}{d x}\n\\end{array}$$</p>\n<p>On substituting these values in Eq. (i), we get</p>\n<p>$$\\begin{aligned}\n& v+x \\frac{d v}{d x} =\\frac{1}{2}\\left(\\frac{1}{v}+v\\right) \\\\\n\\Rightarrow \\quad & v+x \\frac{d v}{d x} =\\frac{1}{2}\\left(\\frac{1+v^2}{v}\\right) \\\\\n\\Rightarrow \\quad & x \\frac{d v}{d x} =\\frac{1+v^2}{2 v}-v \\\\\n\\Rightarrow \\quad & x \\frac{d v}{d x} =\\frac{1+v^2-2 v^2}{2 v} \\\\\n\\Rightarrow \\quad & x \\frac{d v}{d x} =\\frac{1-v^2}{2 v} \\\\\n\\Rightarrow \\quad & \\frac{2 v}{1-v^2} d v =\\frac{d x}{x}\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\int \\frac{2 v}{1-v^2} d v=\\int \\frac{d x}{x}$$</p>\n<p>Put $1-v^2=t$ in LHS, we get</p>\n<p>$$-2 v d v=d t$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & -\\int \\frac{d t}{t}=\\int \\frac{d x}{x} \\\\\n\\Rightarrow & -\\log t=\\log x+\\log C \\\\\n\\Rightarrow & -\\log \\left(1-v^2\\right)=\\log x+\\log C \\\\\n\\Rightarrow & -\\log \\left(1-\\frac{y^2}{x^2}\\right)=\\log x+\\log C \\\\\n\\Rightarrow & \\log \\left(\\frac{x^2-y^2}{x^2}\\right)=\\log x+\\log C \\\\\n\\Rightarrow & \\left.\\frac{x^2}{x^2-y^2}\\right)=\\log x+\\log C \\\\\n\\Rightarrow & \\frac{x^2}{x^2-y^2}=C x\\quad\\text{.... (i)}\n\\end{array}$$</p>\n<p>Since, the curve passes through the point $(2,1)$.</p>\n<p>$$\\therefore \\quad \\frac{(2)^2}{(2)^2-(1)^2}=C(2) \\Rightarrow C=\\frac{2}{3}$$</p>\n<p>So, the required solution is $2\\left(x^2-y^2\\right)=3 x$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wfeu",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the equation of the curve through the point $(1,0)$, if the slope of the tangent to the curve at any point $(x, y)$ is $\\frac{y-1}{x^2+x}$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>It is given that, slope of tangent to the curve at any point $(x, y)$ is $\\frac{y-1}{x^2+x}$.</p>\n<p>$$\\begin{array}{lr}\n\\therefore & \\left(\\frac{d y}{d x}\\right)_{(x, y)}=\\frac{y-1}{x^2+x} \\\\\n\\Rightarrow & \\frac{d y}{d x}=\\frac{y-1}{x^2+x} \\\\\n\\Rightarrow & \\frac{d y}{y-1}=\\frac{d x}{x^2+x}\n\\end{array}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\int \\frac{d y}{y-1}=\\int \\frac{d x}{x^2+x} \\\\\n\\Rightarrow & \\int \\frac{d y}{y-1}=\\int \\frac{d x}{x(x+1)} \\\\\n\\Rightarrow & \\int \\frac{d y}{y-1}=\\int\\left(\\frac{1}{x}-\\frac{1}{x+1}\\right) d x \\\\\n\\Rightarrow & \\log (y-1)=\\log x-\\log (x+1)+\\log C \\\\\n\\Rightarrow & \\log (y-1)=\\log \\left(\\frac{x C}{x+1}\\right)\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Since, the given curve passes through point }(1,0) \\text {. }\\\\\n&\\therefore \\quad 0-1=\\frac{1 \\cdot C}{1+1} \\Rightarrow C=-2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { The particular solution is } \\quad y-1=\\frac{-2 x}{x+1} \\\\\n&\\begin{aligned}\n \\Rightarrow \\quad (y-1)(x+1) & =-2 x \\\\\n\\Rightarrow \\quad(y-1)(x+1)+2 x & =0\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661w76m",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the equation of a curve passing through origin, if the slope of the tangent to the curve at any point $(x, y)$ is equal to the square of the difference of the abcissa and ordinate of the point.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Slope of tangent to the curve $=\\frac{d y}{d x}$</p>\n<p>and difference of abscissa and ordinate $=x-y$</p>\n<p>According to the question,</p>\n<p>$$\\frac{d y}{d x}=(x-y)^2\\quad\\text{.... (i)}$$</p>\n<p>$$\\begin{aligned}\n& \\text { Put } \\quad x-y=z \\\\\n& \\Rightarrow\\quad 1-\\frac{d y}{d x}=\\frac{d z}{d x} \\\\\n& \\Rightarrow \\quad\\frac{d y}{d x}=1-\\frac{d z}{d x}\n\\end{aligned}$$</p>\n<p>On substituting these values in Eq. (i), we get</p>\n<p>$$\\begin{array}{rlrl} \n& 1-\\frac{d z}{d x} =z^2 \\\\\n\\Rightarrow & 1-z^2 =\\frac{d z}{d x} \\\\\n\\Rightarrow & d x =\\frac{d z}{1-z^2}\n\\end{array}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\n\\begin{aligned}\n\\int d x & =\\int \\frac{d z}{1-z^2} \\\\\n\\Rightarrow\\quad x & =\\frac{1}{2} \\log \\left|\\frac{1+z}{1-z}\\right|+C \\\\\n\\Rightarrow\\quad \\mathrm{t} x & =\\frac{1}{2} \\log \\left|\\frac{1+x-y}{1-x+y}\\right|+C\\quad\\text{... (ii)}\n\\end{aligned}$$</p>\n<p>Since, the curve passes through the origin.</p>\n<p>$$\\begin{array}{lc}\n\\therefore & 0=\\frac{1}{2} \\log \\left|\\frac{1+0-0}{1-0+0}\\right|+C \\\\\n\\Rightarrow & C=0\n\\end{array}$$</p>\n<p>On substituting the value of $C$ in Eq. (ii), we get</p>\n<p>$$\\begin{array}{rlrl} \n& x =\\frac{1}{2} \\log \\left|\\frac{1+x-y}{1-x+y}\\right| \\\\\n\\Rightarrow & 2 x =\\log \\left|\\frac{1+x-y}{1-x+y}\\right| \\\\\n\\Rightarrow  \\quad & e^{2 x} =\\left|\\frac{1+x-y}{1-x+y}\\right| \\\\\n\\Rightarrow \\quad & (1-x+y) e^{2 x} =1+x-y\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wfps",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the equation of a curve passing through the point $(1,1)$, if the tangent drawn at any point $P(x, y)$ on the curve meets the coordinate axes at $A$ and $B$ such that $P$ is the mid-point of $A B$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The below figure obtained by the given information</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m60bh24w/5e5a01e3-cf60-4753-a62a-481297beea93/92b2d810-d493-11ef-a1d3-797aa62f25af/file-jaoe38c1m60bh24x.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m60bh24w/5e5a01e3-cf60-4753-a62a-481297beea93/92b2d810-d493-11ef-a1d3-797aa62f25af/file-jaoe38c1m60bh24x.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Let the coordinate of the point $P$ is $(x, y)$. It is given that, $P$ is mid-point of $A B$.</p> \n<p>So, the coordinates of points $A$ and $B$ are $(2 x, 0)$ and $(0,2 y)$, respectively.</p>\n<p>$\\therefore \\quad$ Slope of $A B=\\frac{0-2 y}{2 x-0}=-\\frac{y}{x}$</p>\n<p>Since, the segment $A B$ is a tangent to the curve at $P$.</p>\n<p>$$\\begin{array}{ll}\n\\therefore &amp; \\frac{d y}{d x}=-\\frac{y}{x} \\\\\n\\Rightarrow &amp; \\frac{d y}{y}=-\\frac{d x}{x}\n\\end{array}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{aligned}\n&amp; \\log y=-\\log x+\\log C \\\\\n&amp; \\log y=\\log \\frac{C}{x}\\quad\\text{.... (i)}\n\\end{aligned}$$</p>\n<p>Since, the given curve passes through $(1,1)$.</p>\n<p>$$\\begin{array}{ll}\n\\therefore &amp; \\log 1=\\log \\frac{C}{1} \\\\\n\\Rightarrow &amp; 0=\\log C \\\\\n\\Rightarrow &amp; C=1\n\\end{array}$$</p>\n<p>$$\\begin{array}{lc}\n\\therefore &amp; \\log y=\\log \\frac{1}{x} \\\\\n\\Rightarrow &amp; y=\\frac{1}{x} \\\\\n\\Rightarrow &amp; x y=1\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wao9",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solve $x \\frac{d y}{d x}=y(\\log y-\\log x+1)$</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given, } & x \\frac{d y}{d x}=y(\\log y-\\log x+1) \\\\\n\\Rightarrow & x \\frac{d y}{d x}=y \\log \\left(\\frac{y}{x}+1\\right) \\\\\n\\Rightarrow & \\frac{d y}{d x}=\\frac{y}{x}\\left(\\log \\frac{y}{x}+1\\right)\\quad\\text{.... (i)}\n\\end{array}$$</p>\n<p>which is a homogeneous equation.</p>\n<p>$$\\begin{aligned}\n\\text { Put } & \\frac{y}{x} =v \\text { or } y=v x \\\\\n\\therefore & \\frac{d y}{d x} =v+x \\frac{d v}{d x}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On substituting these values in Eq.(i), we get }\\\\\n&\\begin{array}{rlrl}\n\\Rightarrow & v+x \\frac{d v}{d x} =v(\\log v+1) \\\\\n\\Rightarrow & x \\frac{d v}{d x} =v(\\log v+1- \\\\\n\\Rightarrow & x \\frac{d v}{d x} =v(\\log v) \\\\\n\\Rightarrow & \\frac{d v}{v \\log v}=\\frac{d x}{x}\n\\end{array}\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\int \\frac{d v}{v \\log v}=\\int \\frac{d x}{x}$$</p>\n<p>On putting $\\log v=u$ in LHS integral, we get</p>\n<p>$$\\begin{aligned}\n& \\frac{1}{v} \\cdot d v=d u \\\\\n& \\int \\frac{d u}{u}=\\int \\frac{d x}{x}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad & \\log u =\\log x+\\log C \\\\\n\\Rightarrow \\quad & \\log u =\\log C x \\\\\n\\Rightarrow \\quad & u =C x \\\\\n\\Rightarrow \\quad & \\log v =C x \\\\\n\\Rightarrow \\quad & \\log \\left(\\frac{y}{x}\\right)  =C x\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m661wdzt",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The degree of the differential equation $\\left(\\frac{d^2 y}{d x^2}\\right)^2+\\left(\\frac{d y}{d x}\\right)^2=x \\sin \\left(\\frac{d y}{d x}\\right)$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "1"
+            },
+            {
+              "identifier": "B",
+              "content": "2"
+            },
+            {
+              "identifier": "C",
+              "content": "3"
+            },
+            {
+              "identifier": "D",
+              "content": "not defined"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>The degree of above differential equation is not defined because when we expand $\\sin \\left(\\frac{d y}{d x}\\right)$ we get an infinite series in the increasing powers of $\\frac{d y}{d x}$. Therefore its degree is not defined.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 20430,
+        "correct": 44,
+        "wrong": 56,
+        "options": {
+          "0": 3,
+          "1": 52,
+          "2": 1,
+          "3": 44
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m661w4we",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The degree of the differential equation $\\left[1+\\left(\\frac{d y}{d x}\\right)^2\\right]^{3 / 2}=\\frac{d^2 y}{d x^2}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$4$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\frac{3}{2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "not defined\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$2$\n"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that $\\left[1+\\left(\\frac{d y}{d x}\\right)^2\\right]^{3 / 2}=\\frac{d^2 y}{d x^2}$</p>\n<p>On squaring both sides, we get</p>\n<p>$$\\left[1+\\left(\\frac{d y}{d x}\\right)^2\\right]^3=\\left(\\frac{d^2 y}{d x^2}\\right)^2$$</p>\n<p>So, the degree of differential equation is 2.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 27611,
+        "correct": 75,
+        "wrong": 25,
+        "options": {
+          "1": 8,
+          "2": 17,
+          "3": 75
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m661w4xg",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The order and degree of the differential equation $\\frac{d^2 y}{d x^2}+\\left(\\frac{d y}{d x}\\right)^{1 / 4}+x^{1 / 5}=0$ respectively, are</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " 2 and 4\n"
+            },
+            {
+              "identifier": "B",
+              "content": " 2 and 2\n"
+            },
+            {
+              "identifier": "C",
+              "content": " 2 and 3\n"
+            },
+            {
+              "identifier": "D",
+              "content": " 3 and 3"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given that, }\\\\\n&\\frac{d^2 y}{d x^2}+\\left(\\frac{d y}{d x}\\right)^{1 / 4}=-x^{1 / 5}\\\\\n&\\Rightarrow \\quad \\frac{d^2 y}{d x^2}+\\left(\\frac{d y}{d x}\\right)^{1 / 4}=-x^{1 / 5}\\\\\n&\\Rightarrow \\quad\\left(\\frac{d y}{d x}\\right)^{1 / 4}=-\\left(x^{1 / 5}+\\frac{d^2 y}{d x^2}\\right)\n\\end{aligned}$$</p>\n<p>On squaring both sides, we get</p>\n<p>$\\left(\\frac{d y}{d x}\\right)^{1 / 2}=\\left(x^{1 / 5}+\\frac{d^2 y}{d x^2}\\right)^2$</p>\n<p>Again, on squaring both sides, we get</p>\n<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=\\left(x^{1 / 5}+\\frac{d^2 y}{d x^2}\\right)^4 \\\\\n& \\text { order }=2, \\text { degree }=4\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 41855,
+        "correct": 86,
+        "wrong": 14,
+        "options": {
+          "0": 86,
+          "1": 12,
+          "2": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m661w625",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If $y=e^{-x}(A \\cos x+B \\sin x)$, then $y$ is a solution of</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{d^2 y}{d x^2}+2 \\frac{d y}{d x}=0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{d^2 y}{d x^2}-2 \\frac{d y}{d x}+2 y=0$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{d^2 y}{d x^2}+2 \\frac{d y}{d x}+2 y=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{d^2 y}{d x^2}+2 y=0$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $y=e^{-x}(A \\cos x+B \\sin x)$</p>\n<p>On differentiating both sides w.r.t., $x$ we get</p>\n<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=-e^{-x}(A \\cos x+B \\sin x)+e^{-x}(-A \\sin x+B \\cos x) \\\\\n& \\frac{d y}{d x}=-y+e^{-x}(-A \\sin x+B \\cos x)\n\\end{aligned}$$</p>\n<p>Again, differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\begin{array}{ll} \n& \\frac{d^2 y}{d x^2}=\\frac{-d y}{d x}+e^{-x}(-\\cos x-B \\sin x)-e^{-x}(-A \\sin x+B \\cos x) \\\\\n\\Rightarrow & \\frac{d^2 y}{d x^2}=-\\frac{d y}{d x}-y-\\left[\\frac{d y}{d x}+y\\right] \\\\\n\\Rightarrow & \\frac{d^2 y}{d x^2}=-\\frac{d y}{d x}-y-\\frac{d y}{d x}-y \\\\\n\\Rightarrow & \\frac{d^2 y}{d x^2}=-2 \\frac{d y}{d x}-2 y \\\\\n\\Rightarrow & \\frac{d^2 y}{d x^2}+2 \\frac{d y}{d x}+2 y=0\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 89429,
+        "correct": 54,
+        "wrong": 46,
+        "options": {
+          "0": 17,
+          "1": 23,
+          "2": 54,
+          "3": 6
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m661w3jq",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The differential equation for $y=A \\cos \\alpha x+B \\sin \\alpha x$, where $A$ and $B$ are arbitrary constants is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{d^2 y}{d x^2}-\\alpha^2 y=0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{d^2 y}{d x^2}+\\alpha^2 y=0$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{d^2 y}{d x^2}+\\alpha y=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{d^2 y}{d x^2}-\\alpha y=0$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given, $y=A \\cos \\alpha+B \\sin \\alpha$</p>\n<p>$$\\Rightarrow \\quad \\frac{d y}{d x}=-\\alpha A \\sin \\alpha x+\\alpha B \\cos \\alpha x$$</p>\n<p>Again, differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\begin{aligned}\n\\frac{d^2 y}{d x^2} & =-A \\alpha^2 \\cos \\alpha x-\\alpha^2 B \\sin \\alpha x \\\\\n\\Rightarrow \\quad \\frac{d^2 y}{d x^2} & =-\\alpha^2(A \\cos \\alpha x+B \\sin \\alpha x) \\\\\n\\Rightarrow \\quad \\frac{d^2 y}{d x^2} & =-\\alpha^2 y \\\\\n\\Rightarrow \\quad \\frac{d^2 y}{d x^2}+\\alpha^2 y & =0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w4yh",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of differential equation $x d y-y d x=0$ represents</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " a rectangular hyperbola\n"
+            },
+            {
+              "identifier": "B",
+              "content": " parabola whose vertex is at origin\n"
+            },
+            {
+              "identifier": "C",
+              "content": " straight line passing through origin\n"
+            },
+            {
+              "identifier": "D",
+              "content": " a circle whose centre is at origin"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Given that,}\\quad x d y-y d x & =0 \\\\\n\\Rightarrow\\quad x d y & =y d x \\\\\n\\Rightarrow\\quad \\frac{d y}{y} & =\\frac{d x}{x}\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{aligned}\n& \\log y=\\log x+\\log C \\\\\n& \\Rightarrow\\quad \\log y=\\log C x \\\\\n& \\Rightarrow \\quad y=C x\n\\end{aligned}$$</p>\n<p>which is a straight line passing through origin.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 45196,
+        "correct": 65,
+        "wrong": 35,
+        "options": {
+          "0": 24,
+          "1": 7,
+          "2": 65,
+          "3": 4
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m661wcce",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The integrating factor of differential equation $\\cos x \\frac{d y}{d x}+y \\sin x=1$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\cos x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\tan x$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\sec x$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\sin x$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given that, } & \\cos x \\frac{d y}{d x}+y \\sin x=1 \\\\\n\\Rightarrow & \\frac{d y}{d x}+y \\tan x=\\sec x\n\\end{array}$$</p>\n<p>$$\n\\begin{aligned}\n&\\text { Here, } P=\\tan x \\text { and } Q=\\sec x\\\\\n&\\begin{array}{rlrl} \n& & \\mathrm{IF} & =e^{\\int P d x}=e^{\\int \\tan x d x}=e^{\\log \\sec x} \\\\\n\\therefore\\quad & & =\\sec x\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 56375,
+        "correct": 55,
+        "wrong": 45,
+        "options": {
+          "0": 10,
+          "1": 28,
+          "2": 55,
+          "3": 8
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m661we0w",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of differential equation $\\tan y \\sec ^2 x d x+\\tan x \\sec ^2 y d y=0$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\tan x+\\tan y=k$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\tan x-\\tan y=k$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{\\tan x}{\\tan y}=k$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\tan x \\cdot \\tan y=k$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given that, } & \\tan y \\sec ^2 x d x+\\tan x \\sec ^2 y d y=0 \\\\\n\\Rightarrow & \\tan \\sec ^2 x d x=-\\tan x \\sec ^2 y d y \\\\\n\\Rightarrow & \\frac{\\sec ^2 x}{\\tan x} d x=\\frac{-\\sec ^2 y}{\\tan y} d y\n\\end{array}$$</p>\n<p>On integrating both sides, we have</p>\n<p>$$\\int \\frac{\\sec ^2 x}{\\tan x} d x=-\\int \\frac{\\sec ^2 y}{\\tan y} d y$$</p>\n<p>Put $\\tan x=t$ in LHS integral, we get</p>\n<p>$$\\sec ^2 x d x=d t \\Rightarrow \\sec ^2 x d x=d t$$</p>\n<p>$$\\begin{aligned}\n\\text{and}\\quad\\tan y & =u \\text { in RHS integral, we get } \\\\\n\\sec ^2 y d y & =d u\n\\end{aligned}$$</p>\n<p>On substituting these values in Eq. (i), we get</p>\n<p>$$\\int \\frac{d t}{t}=-\\int \\frac{d u}{u}$$</p>\n<p>$$\\begin{array}{rlrl} \n& \\log t =-\\log u+\\log k \\\\\n\\Rightarrow & \\log (t \\cdot u) =\\log k \\\\\n\\Rightarrow & \\log (\\tan x \\tan y) =\\log k \\\\\n\\Rightarrow & \\tan x \\tan y =k\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 112742,
+        "correct": 42,
+        "wrong": 58,
+        "options": {
+          "0": 13,
+          "1": 16,
+          "2": 29,
+          "3": 42
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m661w7ed",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The family $y=A x+A^3$ of curves is represented by differential equation of degree</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "1"
+            },
+            {
+              "identifier": "B",
+              "content": "2"
+            },
+            {
+              "identifier": "C",
+              "content": "3"
+            },
+            {
+              "identifier": "D",
+              "content": "4"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given that, }\\\\\n&y=A x+A^3\\\\\n&\\Rightarrow \\quad \\frac{d y}{d x}=A\n\\end{aligned}$$</p>\n<p>[we can differential above equation only once because it has only one arbitrary constant] $\\therefore \\quad$ Degree $=1$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 30323,
+        "correct": 71,
+        "wrong": 29,
+        "options": {
+          "0": 71,
+          "1": 10,
+          "2": 19
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m661w4zn",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The integrating factor of $\\frac{x d y}{d x}-y=x^4-3 x$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\log x$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{1}{x}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $-x$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given that, } & x \\frac{d y}{d x}-y=x^4-3 x \\\\\n\\Rightarrow & \\frac{d y}{d x}-\\frac{y}{x}=x^3-3\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text{Here,}\\quad P & =-\\frac{1}{x}, Q=x^3-3 \\\\\n\\therefore\\quad\\mathrm{IF} & =e^{\\int P d x}=e^{-\\int \\frac{1}{x} d x}=e^{-\\log x} \\\\\n& =\\frac{1}{x}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661wcq8",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of $\\frac{d y}{d x}-y=1, y(0)=1$ is given by</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $x y=-\\mathrm{e}^x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $x y=-\\mathrm{e}^{-x}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $x y=-1$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $y=2 e^x-1$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that,</p>\n<p>$$\\begin{aligned}\n\\frac{d y}{d x}-y & =1 \\\\\n\\Rightarrow\\quad \\frac{d y}{d x} & =1+y \\\\\n\\Rightarrow\\quad \\frac{d y}{1+y} & =d x\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\log (1+y)=x+C\\quad\\text{.... (i)}$$</p>\n<p>When $x=0$ and $y=1$, then</p>\n<p>$$\\begin{aligned}\n\\log 2 & =0+c \\\\\n\\Rightarrow\\quad C & =\\log 2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { The required solution is }\\\\\n&\\begin{array}{rlrl} \n& \\log (1+y) =x+\\log 2 \\\\\n\\Rightarrow & \\log \\left(\\frac{1+y}{2}\\right) =x \\\\\n\\Rightarrow & \\frac{1+y}{2} =e^x \\\\\n\\Rightarrow & 1+y =2 e^x \\\\\n\\Rightarrow & y =2 e^x-1\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661wffx",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of solutions of $\\frac{d y}{d x}=\\frac{y+1}{x-1}$, when $y(1)=2$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "none"
+            },
+            {
+              "identifier": "B",
+              "content": "one"
+            },
+            {
+              "identifier": "C",
+              "content": "two"
+            },
+            {
+              "identifier": "D",
+              "content": "infinite"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given that, }\\\\\n&\\frac{d y}{d x}=\\frac{y+1}{x-1}\\\\\n&\\Rightarrow \\quad \\frac{d y}{y+1}=\\frac{d x}{x-1}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On integrating both sides, we get }\\\\\n&\\begin{aligned}\n\\log (y+1) & =\\log (x-1)-\\log C \\\\\nC(y+1) & =(x-1) \\\\\n\\Rightarrow\\quad C & =\\frac{x-1}{y+1}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>When $x=1$ and $y=2$, then $C=0$</p>\n<p>So, the required solution is $x-1=0$.</p>\n<p>Hence, only one solution exist.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661wcjr",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Which of the following is a second order differential equation?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\left(y^{\\prime}\\right)^2+x=y^2$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y^{\\prime} y^{\\prime \\prime}+y=\\sin x$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $y^{\\prime \\prime \\prime}+\\left(y^{\\prime \\prime}\\right)^2+y=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $y^{\\prime}=y^2$\n"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>The second order differential equation is $y^{\\prime} y^{\\prime \\prime}+y=\\sin x$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w50n",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The integrating factor of differential equation $\\left(1-x^2\\right) \\frac{d y}{d x}-x y=1$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $-x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{x}{1+x^2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\sqrt{1-x^2}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{1}{2} \\log \\left(1-x^2\\right)$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given that, } & \\left(1-x^2\\right) \\frac{d y}{d x}-x y=1 \\\\\n\\Rightarrow & \\frac{d y}{d x}-\\frac{x}{1-x^2} y=\\frac{1}{1-x^2}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { which is a linear differential equation. }\\\\\n&\\therefore \\quad \\mathrm{IF}=e^{-\\int \\frac{x}{1-x^2} d x}\n\\end{aligned}$$</p>\n<p>Put $$1-x^2=t \\Rightarrow-2 x d x=d t \\Rightarrow x d x=-\\frac{d t}{2}$$</p>\n<p>Now, $$\\mathrm{IF}=e^{\\frac{1}{2} \\int \\frac{d t}{t}}=e^{\\frac{1}{2} \\log t}=e^{\\frac{1}{2} \\log \\left(1-x^2\\right)}=\\sqrt{1-x^2}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w7fg",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\tan ^{-1} x+\\tan ^{-1} y=C$ is general solution of the differential equation</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{d y}{d x}=\\frac{1+y^2}{1+x^2}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{d y}{d x}=\\frac{1+x^2}{1+y^2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\left(1+x^2\\right) d y+\\left(1+y^2\\right) d x=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\left(1+x^2\\right) d x+\\left(1+y^2\\right) d y=0$\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $\\tan ^{-1} x+\\tan ^{-1} y=C$</p>\n<p>On differentiating w.r.t. $x$, we get</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & \\frac{1}{1+x^2}+\\frac{1}{1+y^2} \\cdot \\frac{d y}{d x} =0 \\\\\n\\Rightarrow & \\frac{1}{1+y^2} \\cdot \\frac{d y}{d x} =-\\frac{1}{1+x^2} \\\\\n\\Rightarrow & \\left(1+x^2\\right) d y+\\left(1+y^2\\right) d x =0\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{array}{rlrl} \n& \\frac{y^2}{2} =C x-\\frac{x^2}{2}+K \\\\\n\\Rightarrow & \\frac{x^2}{2}+\\frac{y^2}{2} =C x+K \\\\\n\\Rightarrow \\quad & \\frac{x^2}{2}+\\frac{y^2}{2}-C x =K\n\\end{array}$$</p>\n<p>which represent family of circles.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w7gj",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The general solution of $e^x \\cos y d x-e^x \\sin y d y=0$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\mathrm{e}^x \\cos y=k$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$\\mathrm{e}^x \\sin y=k$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\mathrm{e}^x=k \\cos y$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\mathrm{e}^x=k \\sin y$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n& \\begin{array}{rlrl} \n\\text { Given that, } & e^x \\cos y d x-e^x \\sin y d y =0 \\\\\n\\Rightarrow & e^x \\cos y d x =e^x \\sin y d y \\\\\n\\Rightarrow & \\frac{d x}{d y} =\\tan y \\\\\n\\Rightarrow & d x =\\tan y d y\n\\end{array}\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{l} \n& x =\\log \\sec y+C \\\\\n\\Rightarrow & x-C =\\log \\sec y \\\\\n\\Rightarrow & \\sec y =e^{x-C} \\\\\n\\Rightarrow & \\sec y =e^x e^{-C} \\\\\n\\Rightarrow & \\frac{1}{\\cos y}=\\frac{e^x}{e^C} \\\\\n\\Rightarrow & e^x \\cos y=e^C \\\\\n\\Rightarrow & e^x \\cos y=K\n\\end{array}\\\\\n&\\text { [where, } K=e^C \\text { ] }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w77y",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The degree of differential equation $\\frac{d^2 y}{d x^2}+\\left(\\frac{d y}{d x}\\right)^3+6 y^5=0$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "1"
+            },
+            {
+              "identifier": "B",
+              "content": "2"
+            },
+            {
+              "identifier": "C",
+              "content": "3"
+            },
+            {
+              "identifier": "D",
+              "content": "5"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\frac{d^2 y}{d x^2}+\\left(\\frac{d y}{d x}\\right)^3+6 y^5=0$$</p>\n<p>We know that, the degree of a differential equation is exponent heighest of order derivative.</p>\n<p>$$\\therefore \\quad \\text { Degree }=1$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w7hk",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": " <p>The solution of $\\frac{d y}{d x}+y=e^{-x}, y(0)=0$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$y=e^x(x-1)$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y=x e^{-x}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $y=x e^{-x}+1$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $y=(x+1) \\mathrm{e}^{-x}$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $$\\frac{d y}{d x}+y=e^{-x}$$</p>\n<p>Here, $$P=1, Q=e^{-x}$$</p>\n<p>$\\mathrm{IF}=\\mathrm{e}^{\\int P d x}=\\mathrm{e}^{\\int d x}=\\mathrm{e}^x$</p>\n<p>The general solution is</p>\n<p>$$\\begin{array}{ll} \n& y \\cdot e^x=\\int e^{-x} e^x d x+C \\\\\n\\Rightarrow & y \\cdot e^x=\\int d x+C \\\\\n\\Rightarrow & y \\cdot e^x=x+C\\quad\\text{.... (i)}\n\\end{array}$$</p>\n<p>When $x=0$ and $y=0$, then</p>\n<p>$$\\begin{array}{l} \n& &0 =0+C \\Rightarrow C=0 \\\\\n& \\text { Eq. (i) becomes } & y \\cdot e^x =x \\\\\n&\\Rightarrow & y =x \\mathrm{e}^{-x}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w636",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The integrating factor of differential equation $\\frac{d y}{d x}+y \\tan x-\\sec x=0$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\cos x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\sec x$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $e^{\\cos x}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\mathrm{e}^{\\sec x}$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $\\frac{d y}{d x}+y \\tan x-\\sec x=0$</p>\n<p>Here, $$P=\\tan x, Q=\\sec x$$</p>\n<p>$$\\begin{aligned}\n\\text { IF } & =e^{\\int P d x}=e^{\\int \\tan x d x} \\\\\n& =\\mathrm{e}^{(\\log \\sec x)} \\\\\n& =\\sec x\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661we1y",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of differential equation $\\frac{d y}{d x}=\\frac{1+y^2}{1+x^2}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $y=\\tan ^{-1} x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y-x=k(1+x y)$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $x=\\tan ^{-1} y$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\tan (x y)=k$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { Given that, }\\quad &\\frac{d y}{d x}=\\frac{1+y^2}{1+x^2}\\\\\n\\Rightarrow \\quad &\\frac{d y}{1+y^2}=\\frac{d x}{1+x^2}\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{array}{rlrl} \n&  \\tan ^{-1} y =\\tan ^{-1} x+C \\\\\n\\Rightarrow & \\tan ^{-1} y-\\tan ^{-1} x =C \\\\\n\\Rightarrow & \\tan ^{-1}\\left(\\frac{y-x}{1+x y}\\right) =C \\\\\n\\Rightarrow & \\frac{y-x}{1+x y} =\\tan C \\\\\n\\Rightarrow & y-x =\\tan C(1+x y) \\\\\n\\Rightarrow & y-x =K(1+x y) \\\\\n\\text { where, } \\quad &  k =\\tan C\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w7io",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The integrating factor of differential equation $\\frac{d y}{d x}+y=\\frac{1+y}{x}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{x}{\\mathrm{e}^x}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{\\mathrm{e}^x}{x}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $x \\mathrm{e}^x$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\mathrm{e^x}$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given that, }\\quad\\frac{d y}{d x}+y=\\frac{1+y}{x}\\\\\n&\\begin{array}{ll}\n\\Rightarrow & \\frac{d y}{d x}=\\frac{1+y}{x}-y \\\\\n\\Rightarrow & \\frac{d y}{d x}=\\frac{1+y-x y}{x} \\\\\n\\Rightarrow & \\frac{d y}{d x}=\\frac{1}{x}+\\frac{y(1-x)}{x} \\\\\n\\Rightarrow & \\frac{d y}{d x}-\\left(\\frac{1-x}{x}\\right) y=\\frac{1}{x}\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{Here, }\\quad P & =\\frac{-(1-x)}{x}, Q=\\frac{1}{x} \\\\\n\\mathrm{IF} & =e^{\\int P d x}=e^{-\\int \\frac{1-x}{x} d x}=e^{\\int \\frac{x-1}{x} d x} \\\\\n& =e^{\\int\\left(1-\\frac{1}{x}\\right) d x} \\\\\n& =e^{\\int x-\\log x} \\\\\n& =e^x \\cdot e^{\\log \\left(\\frac{1}{x}\\right)} \\\\\n& =e^x \\cdot \\frac{1}{x}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w51o",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$y=a e^{m x}+b e^{-m x}$ satisfies which of the following differential equation?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{d y}{d x}+m y=0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{d y}{d x}-m y=0$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{d^2 y}{d x^2}-m^2 y=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{d^2 y}{d x^2}+m^2 y=0$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $\\quad y=a e^{m x}+b e^{-m x}$</p>\n<p>On differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\frac{d y}{d x}=m a e^{m x}-b m e^{-m x}$$</p>\n<p>Again, differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\n\\begin{aligned}\n& \\frac{d^2 y}{d x^2} =m^2 a e^{m x}+b m^2 e^{-m x} \\\\\n\\Rightarrow \\quad & \\frac{d^2 y}{d x^2} =m^2\\left(a e^{m n}+b e^{-m n}\\right) \\\\\n\\Rightarrow \\quad & \\frac{d^2 y}{d x^2} =m^2 y \\\\\n\\Rightarrow \\quad & \\frac{d^2 y}{d x^2}-m^2 y =0\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w1yz",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of differential equation $\\cos x \\sin y d x+\\sin x \\cos y d y=0$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{\\sin x}{\\sin y}=C$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\sin x \\sin y=C$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\sin x+\\sin y=C$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\cos x \\cos y=C$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\begin{array}{lrl} \n& & \\cos x \\sin y d x+\\sin x \\cos y d y=0 \\\\\n\\Rightarrow & \\cos x \\sin y d x & =-\\sin x \\cos y d y \\\\\n\\Rightarrow & \\frac{\\cos x}{\\sin x} d x & =-\\frac{\\cos y}{\\sin y} d y \\\\\n\\Rightarrow & \\cot x d x & =-\\cot y d y \\\\\n& \\text { On integrating both sides, we get } & \\\\\n\\Rightarrow & \\text { logsin} x & =-\\log \\sin y+\\log C \\\\\n\\Rightarrow & \\text { logsin } x \\sin y & =\\log C \\\\\n\\Rightarrow & \\sin x \\cdot \\sin y & =C\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w9iy",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of $x \\frac{d y}{d x}+y=e^x$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $y=\\frac{\\mathrm{e}^x}{x}+\\frac{k}{x}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y=x e^x+C x$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $y=x e^x+k$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $x=\\frac{e^y}{y}+\\frac{k}{y}$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{array}{ll}\n\\text { Given that, } & x \\frac{d y}{d x}+y=e^x \\\\\n\\Rightarrow & \\frac{d y}{d x}+\\frac{y}{x}=\\frac{e^x}{x}\n\\end{array}\\\\\n&\\text { which is a linear differential equation. }\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\therefore \\quad \\quad \\mathrm{IF}=e^{\\int \\frac{1}{x} d x}=\\mathrm{e}^{(\\log x)}=x\\\\\n&\\text { The general solution is } y \\cdot x=\\int\\left(\\frac{d^x}{x} \\cdot x\\right) d x\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & y \\cdot x=\\int e^x d x \\\\\n\\Rightarrow & y \\cdot x=e^x+k \\\\\n\\Rightarrow & y=\\frac{e^x}{x}+\\frac{k}{x}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w1sp",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The differential equation of the family of curves $x^2+y^2-2 a y=0$, where $a$ is arbitrary constant, is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\left(x^2-y^2\\right) \\frac{d y}{d x}=2 x y$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $2\\left(x^2+y^2\\right) \\frac{d y}{d x}=x y$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $2\\left(x^2-y^2\\right) \\frac{d y}{d x}=x y$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\left(x^2+y^2\\right) \\frac{d y}{d x}=2 x y$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given equation of curve is</p>\n<p>$$\\begin{aligned}\nx^2+y^2-2 a y & =0 \\\\\n\\Rightarrow\\quad \\frac{x^2+y^2}{y} & =2 a\n\\end{aligned}$$</p>\n<p>On differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\begin{array}{rlrl} \n& \\frac{y\\left(2 x+2 y \\frac{d y}{d x}\\right)-\\left(x^2+y^2\\right) \\frac{d y}{d x}}{y^2} =0 \\\\\n\\Rightarrow & 2 x y+2 y^2 \\frac{d y}{d x}-\\left(x^2+y^2\\right) \\frac{d y}{d x} =0 \\\\\n\\Rightarrow &  \\left(2 y^2-x^2-y^2\\right) \\frac{d y}{d x} =-2 x y \\\\\n\\Rightarrow & \\left(y^2-x^2\\right) \\frac{d y}{d x} =-2 x y \\\\\n\\Rightarrow & \\left(x^2-y^2\\right) \\frac{d y}{d x} =2 x y\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661we2z",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The family $Y=A x+A^3$ of curves will correspond to a differential equation of order</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "3"
+            },
+            {
+              "identifier": "B",
+              "content": "2"
+            },
+            {
+              "identifier": "C",
+              "content": "1"
+            },
+            {
+              "identifier": "D",
+              "content": "not defined"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given family of curves is $\\quad y=A x+A^3\\quad\\text{.... (i)}$</p>\n<p>$\\Rightarrow \\quad \\frac{d y}{d x}=A$</p>\n<p>$$\n\\begin{aligned}\n&\\text { Replacing } A \\text { by } \\frac{d y}{d x} \\text { in Eq. (i), we get }\\\\\n&\\begin{aligned}\ny & =x \\frac{d y}{d x}+\\left(\\frac{d y}{d x}\\right)^3 \\\\\n\\therefore\\quad \\text { Order } & =1\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w7jq",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The general solution of $\\frac{d y}{d x}=2 x e^{x^2-y}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\mathrm{e}^{x^2-y}=C$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\mathrm{e}^{-y}+\\mathrm{e}^{x^2}=C$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\mathrm{e}^y=\\mathrm{e}^{x^2}+C$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\mathrm{e}^{x^2+y}=C$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\begin{array}{ll}\n\\text { Given that, } & \\frac{d y}{d x}=2 x \\mathrm{e}^{x^2-y}=2 x \\mathrm{e}^{x^2} \\cdot e^{-y} \\\\\n\\Rightarrow & e^y \\frac{d y}{d x}=2 x \\mathrm{e}^{x^2} \\\\\n\\Rightarrow & e^y d y=2 x e^{x^2} d x\n\\end{array}\\\\\n&\\text { On integrating both sides, we get }\\\\\n&\\int e^y d y=2 \\int x e^{x^2} d x\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Put } x^2=t \\text { in RHS integral, we get }\\\\\n&\\begin{aligned}\n2 x d x & =d t \\\\\n\\int e^y d y & =\\int e^t d t\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & e^y=e^t+C \\\\\n\\Rightarrow & e^y=e^{x^2}+C\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w647",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The curve for which the slope of the tangent at any point is equal to the ratio of the abcissa to the ordinate of the point is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " an ellipse\n"
+            },
+            {
+              "identifier": "B",
+              "content": " parabola\n"
+            },
+            {
+              "identifier": "C",
+              "content": " circle\n"
+            },
+            {
+              "identifier": "D",
+              "content": " rectangular hyperbola"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Slope of tangent to the curve $=\\frac{d y}{d x}$</p>\n<p>and ratio of abscissa to the ordinate $=\\frac{x}{y}$</p>\n<p>According to the question, $\\quad \\frac{d y}{d x}=\\frac{x}{y}$</p>\n<p>$$y d y=x d x$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{aligned}\n\\frac{y^2}{2} & =\\frac{x^2}{2}+C \\\\\n\\Rightarrow \\quad \\frac{y^2}{2}-\\frac{x^2}{2} & =C \\Rightarrow y^2-x^2=2 C\n\\end{aligned}$$</p>\n<p>which is an equation of rectangular hyperbola.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661wcdp",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The general solution of differential equation $\\frac{d y}{d x}=e^{\\frac{x^2}{2}}+x y$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $y=C e^{-x^2 / 2}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y=C e^{x^2 / 2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $y=(x+C) e^{x^{2 / 2}}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "  $y=(C-x) e^{x^2 / 2}$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{lrl}\n\\text { Given that, } & \\frac{d y}{d x} & =e^{x^2 / 2}+x y \\\\\n\\Rightarrow & \\frac{d y}{d x}-x y & =e^{x^2 / 2}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{ll}\n\\text { Here, } & P=-x, Q=e^{x^2 / 2} \\\\\n\\therefore & I F=e^{\\int-x d x}=e^{-x^2 / 2}\n\\end{array}\\\\\n&\\text { The general solution is }\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{rlrl} \n& y \\cdot e^{-x^2 / 2} =\\int \\mathrm{e}^{-x^2 / 2}-\\mathrm{e}^{x^2 / 2} d x+C \\\\\n\\Rightarrow & y e^{-x^2 / 2} =\\int 1 d x+C \\\\\n\\Rightarrow & y \\cdot e^{-x^2 / 2} =x+C \\\\\n\\Rightarrow & y =x \\mathrm{e}^{x^2 / 2}+C e^{+x^2 / 2} \\\\\n\\Rightarrow & y =(x+C) e^{x^2 / 2}\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661wfh2",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of equation $(2 y-1) d x-(2 x+3) d y=0$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\frac{2 x-1}{2 y+3}=k$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{2 y+1}{2 x-3}=k$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\frac{2 x+3}{2 y-1}=k$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{2 x-1}{2 y-1}=k$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $\\quad(2 y-1) d x-(2 x+3) d y=0$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & (2 y-1) d x=(2 x+3) d y \\\\\n\\Rightarrow & \\frac{d x}{2 x+3}=\\frac{d y}{2 y-1}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On integrating both sides, we get }\\\\\n&\\begin{aligned}\n\\frac{1}{2} \\log (2 x+3) & =\\frac{1}{2} \\log (2 y-1)+\\log C \\\\\n\\Rightarrow \\quad \\frac{1}{2}[\\log \\cdot(2 x+3)-\\log (2 y-1)] & =\\log C\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{1}{2} \\log \\left(\\frac{2 x+3}{2 y-1}\\right)=\\log C \\\\\n\\Rightarrow & \\left(\\frac{2 x+3}{2 y-1}\\right)^{1 / 2}=C\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{2 x+3}{2 y-1}=C^2 \\\\\n\\Rightarrow & \\frac{2 x+3}{2 y-1}=k, \\text { where } K=C^2\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661wapb",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The differential equation for which $y=a \\cos x+b \\sin x$ is a solution, is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$\\frac{d^2 y}{d x^2}+y=0$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{d^2 y}{d x^2}-y=0$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$\\frac{d^2 y}{d x^2}+(a+b) y=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$\\frac{d^2 y}{d x^2}+(a-b) y=0$\n"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $y=a \\cos x+b \\sin x$</p>\n<p>On differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\frac{d y}{d x}=-a \\sin x+b \\cos x$$</p>\n<p>$$\\begin{aligned}\n&\\text { Again, differentiating w.r.t. } x \\text {, we get }\\\\\n&\\begin{array}{l}\n\\frac{d^2 y}{d x^2} =-a \\sin x+b \\cos x \\\\\n\\Rightarrow \\quad \\frac{d^2 y}{d x^2} =-y \\\\\n\\Rightarrow \\quad \\frac{d^2 y}{d x^2}+y =0\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661waqf",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of $\\frac{d y}{d x}+y=e^{-x}, y(0)=0$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $y=\\mathrm{e}^{-x}(x-1)$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y=x e^x$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $y=x \\mathrm{e}^{-x}+1$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $y=x e^{-x}$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $$\\frac{d y}{d x}+y=e^{-x}$$</p>\n<p>which is a linear differential equation.</p>\n<p>Here, $P=1$ and $Q=e^{-x}$</p>\n<p>$$\\mathrm{IF}=\\mathrm{e}^{\\int d x}=\\mathrm{e}^x$$</p>\n<p>The general solution is</p>\n<p>$$\\begin{array}{ll} \n& y \\cdot e^x=\\int e^{-x} \\cdot e^x d x+C \\\\\n\\Rightarrow \\quad & y e^x=\\int d x+C \\\\\n\\Rightarrow & y e^x=x+C\\quad\\text{... (i)}\n\\end{array}$$</p>\n<p>When $x=0$ and $y=0$ then, $0=0+C \\Rightarrow C=0$</p>\n<p>Eq. (i) becomes $y \\cdot e^x=x \\Rightarrow y=x \\mathrm{e}^{-x}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w9jz",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The order and degree of differential equation</p>\n<p>$$\\left(\\frac{d^3 y}{d x^3}\\right)^2-3 \\frac{d^2 y}{d x^2}+2\\left(\\frac{d y}{d x}\\right)^4=y^4 \\text { are }$$</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$1, 4$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$3, 4$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$2,4$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$3,2$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given that, } & \\left(\\frac{d^3 y}{d x^3}\\right)^2-3 \\frac{d^2 y}{d x^2}+2\\left(\\frac{d y}{d x}\\right)^4=y^4 \\\\\n\\therefore & \\text { Order }=3 \\\\\n\\text { and } & \\text { degree }=2\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661we42",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The order and degree of differential equation $\\left[1+\\left(\\frac{d y}{d x}\\right)^2\\right]=\\frac{d^2 y}{d x^2}$ are</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$2, \\frac{3}{2}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$2, 3$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$2,1$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$3,4$\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $$\\left[1+\\left(\\frac{d y}{d x}\\right)^2\\right]=\\frac{d^2 y}{d x^2}$$</p>\n<p>$\\therefore\\quad$ Order $=2$ and degree $=1$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661wcks",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The differential equation of family of curves $y^2=4 a(x+a)$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$y^2=4 \\frac{d y}{d x}\\left(x+\\frac{d y}{d x}\\right)$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$2 y \\frac{d y}{d x}=4 a$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$y \\frac{d^2 y}{d x^2}+\\left(\\frac{d y}{d x}\\right)^2=0$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$2 x \\frac{d y}{d x}+y\\left(\\frac{d y}{d x}\\right)^2-y=0$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $$y^2=4 a(x+a)\\quad\\text{.... (i)}$$</p>\n<p>On differentiating both sides w.r.t. $x$, we get</p>\n<p>$$\\begin{aligned}\n& 2 y \\frac{d y}{d x}=4 a \\Rightarrow 2 y \\frac{d y}{d x}=4 a \\\\\n\\Rightarrow \\quad & y \\frac{d y}{d x}=2 a \\Rightarrow a=\\frac{1}{2} y \\frac{d y}{d x}\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On putting the value of a from Eq. (ii) in Eq. (i), we get }\\\\\n&\\begin{array}{ll} \n& y^2=2 y \\frac{d y}{d x}\\left(x+\\frac{1}{2} y \\frac{d y}{d x}\\right) \\\\\n\\Rightarrow & y^2=2 x y \\frac{d y}{d x}+y^2\\left(\\frac{d y}{d x}\\right)^2 \\\\\n\\Rightarrow & 2 x \\frac{d y}{d x}+y\\left(\\frac{d y}{d x}\\right)^2-y=0\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w3kx",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Which of the following is the general solution of $\\frac{d^2 y}{d x^2}-2 \\frac{d y}{d x}+y=0$ ?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $y=(A x+B) e^x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y=(A x+B) \\mathrm{e}^{-x}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $y=A e^x+B e^{-x}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $y=A \\cos x+B \\sin x$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{r}\n\\text{Given that, }\\quad\\frac{d^2 y}{d x^2}-2 \\frac{d y}{d x}+y=0 \\\\\nD^2 y-2 D y+y=0\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { where }\\quad D & =\\frac{d}{d x} \\\\\n\\left(D^2-2 D+1\\right) y & =0\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { The auxiliary equation is }\\\\\n&\\begin{aligned}\nm^2-2 m+1 & =0 \\\\\n(m-1)^2 & =0 \\Rightarrow m=1,1\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Since, the roots are real and equal.</p>\n<p>$$\\therefore \\quad C F=(A x+B) e^x \\Rightarrow y=(A x+B) e^x$$</p>\n<p>[since, if roots of Auxilliary equation are real and equal say $(m)$, then $\\mathrm{CF}=\\left(C_1 x+C_2\\right) \\mathrm{e}^{m x}$ ]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w1uv",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The general solution of $\\frac{d y}{d x}+y \\tan x=\\sec x$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $y \\sec x=\\tan x+C$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y \\tan x=\\sec x+C$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\tan x=y \\tan x+C$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $x \\sec x=\\tan y+C$\n"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\frac{d y}{d x}+y \\tan x=\\sec x$$</p>\n<p>which is a linear differential equation</p>\n<p>$$\\begin{array}{ll}\n\\text { Here, } & P=\\tan x, Q=\\sec x, \\\\\n\\therefore & \\mathrm{IF}=e^{\\int \\tan x d x}=e^{\\log |\\sec x|}=\\sec x\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { The general solution is }\\\\\n&\\begin{array}{ll} \n& y \\cdot \\sec x=\\int \\sec x \\cdot \\sec x+C \\\\\n\\Rightarrow & y \\cdot \\sec x=\\int \\sec ^2 x d x+C \\\\\n\\Rightarrow & y \\cdot \\sec x=\\tan x+C\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661wfi1",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of differential equation $\\frac{d y}{d x}+\\frac{y}{x}=\\sin x$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$x(y+\\cos x)=\\sin x+C$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$x(y-\\cos x)=\\sin x+C$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$x y \\cos x=\\sin x+C$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$x(y+\\cos x)=\\cos x+C$\n"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\frac{d y}{d x}+y \\frac{1}{x}=\\sin x$$</p>\n<p>which is linear differential equation.</p>\n<p>$$\\begin{gathered}\n\\text{Here,}\\quad P=\\frac{1}{x} \\text { and } Q=\\sin x \\\\\n\\therefore\\quad \\mathrm{IF}=e^{\\int \\frac{1}{x} d x}=e^{\\log x}=x\n\\end{gathered}$$</p>\n<p>The general solution is</p>\n<p>$$\\begin{aligned}\ny \\cdot x & =\\int x \\cdot \\sin x d x+C \\quad\\text{.... (i)}\\\\\n\\text{Take}\\quad I & =\\int x \\sin x d x\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{gathered}\n-x \\cos x-\\int-\\cos x d x \\\\\n=-x \\cos x+\\sin x\n\\end{gathered}\\\\\n&\\text { Put the value of } I \\text { in Eq. (i), we get }\\\\\n&\\begin{aligned}\nx y & =-x \\cos x+\\sin x+C \\\\\n\\Rightarrow \\quad x(y+\\cos x) & =\\sin x+C\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661warn",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The general solution of differential equation $\\left(e^x+1\\right) y d y=(y+1) e^x d x$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $(y+1)=k\\left(e^x+1\\right)$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $y+1=e^x+1+k$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $y=\\log \\left\\{k(y+1)\\left(e^x+1\\right)\\right\\}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $y=\\log \\left\\{\\frac{e^x+1}{y+1}\\right\\}+k$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given differential equation</p>\n<p>$$\\begin{array}{l} \n\\left(e^x+1\\right) y d y =(y+1) e^x d x \\\\\n\\Rightarrow \\quad \\frac{d y}{d x} =\\frac{e^x(1+y)}{\\left(e^x+1\\right) y} \\Rightarrow \\frac{d x}{d y}=\\frac{\\left(e^x+1\\right) y}{e^x(1+y)} \\\\\n\\Rightarrow \\quad \\frac{d x}{d y} =\\frac{e^x y}{e^x(1+y)}+\\frac{y}{e^x(1+y)} \\\\\n\\Rightarrow \\quad \\frac{d x}{d y} =\\frac{y}{1+y}+\\frac{y}{(1+y) e^x} \\\\\n\\Rightarrow \\quad \\frac{d x}{d y} =\\frac{y}{1+y}\\left(1+\\frac{1}{e^x}\\right) \\\\\n\\Rightarrow \\quad \\frac{d x}{d y} =\\frac{y}{1+y}\\left(\\frac{e^x+1}{e^x}\\right)\\\\\n\\Rightarrow\\left(\\frac{y}{1+y}\\right) d y=\\left(\\frac{e^x}{e^x+1}\\right) d x\n\\end{array}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{aligned}\n\\int \\frac{y}{1+y} d y & =\\int \\frac{e^x}{1+e^x} d x \\\\\n\\Rightarrow\\quad \\int \\frac{1+y-1}{1+y} d y & =\\int \\frac{e^x}{1+e^x} d x\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad \\int 1 d y-\\int \\frac{1}{1+y} d y =\\int \\frac{e^x}{1+e^x} d x \\\\\n\\Rightarrow \\quad y-\\log \\mid(1+y) =\\log \\mid\\left(1+e^x\\right)+\\log k \\\\\n\\Rightarrow \\quad y =\\log (1+y)+\\log \\left(1+e^x\\right)+\\log (k) \\\\\n\\Rightarrow \\quad y =\\log \\left\\{k(1+y)\\left(1+e^x\\right)\\right\\}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661w9kx",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of differential equation $\\frac{d y}{d x}=e^{x-y}+x^2 e^{-y}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $y=e^{x-y}-x^2 \\mathrm{e}^{-y}+C$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\mathrm{e}^y-\\mathrm{e}^x=\\frac{x^3}{3}+\\mathrm{C}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\mathrm{e}^x+\\mathrm{e}^y=\\frac{x^3}{3}+\\mathrm{C}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\mathrm{e}^x-\\mathrm{e}^y=\\frac{x^3}{3}+C$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{ll}\n\\text { Given that, } & \\frac{d y}{d x}=e^{x-y}+x^2 e^{-y} \\\\\n\\Rightarrow & \\frac{d y}{d x}=e^x e^{-y}+x^2 e^{-y} \\\\\n\\Rightarrow & \\frac{d y}{d x}=\\frac{e^x+x^2}{e^y} \\\\\n\\Rightarrow & e^y d y=\\left(e^x+x^2\\right) d x\n\\end{array}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{array}{rlrl} \n& \\int e^y d y =\\int\\left(e^x+x^2\\right) d x \\\\\n\\Rightarrow & e^y =e^x+\\frac{x^3}{3}+C \\\\\n\\Rightarrow & e^y-e^x=\\frac{x^3}{3}+C\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661we52",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of differential equation $\\frac{d y}{d x}+\\frac{2 x y}{1+x^2}=\\frac{1}{\\left(1+x^2\\right)^2}$ is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $y\\left(1+x^2\\right)=C+\\tan ^{-1} x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{y}{1+x^2}=C+\\tan ^{-1} x$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $y \\log \\left(1+x^2\\right)=C+\\tan ^{-1} x$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $y\\left(1+x^2\\right)=C+\\sin ^{-1} x$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given that, }\\\\\n&\\begin{aligned}\n\\frac{d y}{d x}+\\frac{2 x y}{1+x^2} & =\\frac{1}{\\left(1+x^2\\right)^2} \\\\\n\\text{Here,}\\quad P & =\\frac{2 x}{1+x^2} \\text { and } Q=\\frac{1}{\\left(1+x^2\\right)^2}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { which is a linear differential equation. }\\\\\n&\\begin{array}{lrl}\n\\therefore & \\mathrm{IF} & =e^{\\int \\frac{2 x}{1+x^2} d x} \\\\\n\\text { Put } & 1+x^2 & =t \\Rightarrow 2 x d x=d t\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\therefore \\quad \\quad \\mathrm{IF}=e^{\\int \\frac{d t}{t}}=e^{\\log t}=e^{\\log \\left(1+x^2\\right)}=1+x^2\\\\\n&\\text { The general solution is }\\\\\n&\\begin{array}{ll}\n\\Rightarrow & y \\cdot\\left(1+x^2\\right)=\\int\\left(1+x^2\\right) \\frac{1}{\\left(1+x^2\\right)^2}+C \\\\\n\\Rightarrow & y\\left(1+x^2\\right)=\\int \\frac{1}{1+x^2} d x+C \\\\\n\\Rightarrow & y\\left(1+x^2\\right)=\\tan ^{-1} x+C\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m661wclo",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The degree of the differential equation $\\frac{d^2 y}{d x^2}+e^{d y / d x}=0$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\frac{d^2 y}{d x^2}+e^{\\frac{d y}{d x}}=0$$</p>\n<p>Degree of this equation is not defined.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661wcmb",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The degree of the differential equation $\\sqrt{1+\\left(\\frac{d y}{d x}\\right)^2}=x$ is ................. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is $\\sqrt{1+\\left(\\frac{d y}{d x}\\right)^2}=x$</p>\n<p>So, degree of this equation is two.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661w1zi",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of arbitrary constants in the general solution of a differential equation of order three is .......... .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>There are three arbitrary constants.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661w525",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>$\\frac{d y}{d x}+\\frac{y}{x \\log x}=\\frac{1}{x}$ is an equation of the type ........... .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is $\\frac{d y}{d x}+\\frac{y}{x \\log x}=\\frac{1}{x}$</p>\n<p>The equation is of the type $\\frac{d y}{d x}+P y=Q$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661wcqq",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>General solution of the differential equation of the type is given by ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\frac{d x}{d y}+P_1 x=Q_1$$</p>\n<p>The general solution is</p>\n<p>$$x \\cdot \\mathrm{IF}=\\int Q(\\mathrm{IF}) d y+C \\text { i.e., } x \\mathrm{e}^{\\int P d y}=\\int Q\\left\\{e^{\\int P d y}\\right\\} d y+C$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661wea1",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of the differential equation $\\frac{x d y}{d x}+2 y=x^2$ is ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$x \\frac{d y}{d x}+2 y=x^2 \\Rightarrow \\frac{d y}{d x}+\\frac{2 y}{x}=x$$</p>\n<p>This equation of the form $\\frac{d y}{d x}+P y=Q$.</p>\n<p>$$\\therefore\\quad \\mathrm{IF}=e^{\\int \\frac{2}{x} d x}=e^{2 \\log x}=x^2$$</p>\n<p>$$\\begin{aligned}\n&\\begin{array}{ll} \n\\text { The general solution is }\\\\\ny x^2=\\int x \\cdot x^2 d x+C \\\\\n\\Rightarrow \\quad y x^2=\\frac{x^4}{4}+C \\\\\n\\Rightarrow \\quad y=\\frac{x^2}{4}+C x^{-2}\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661wcr8",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of $\\left(1+x^2\\right) \\frac{d y}{d x}+2 x y-4 x^2=0$ is .............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\begin{array}{r}\n\\left(1+x^2\\right) \\frac{d y}{d x}+2 x y-4 x^2=0 \\\\\n\\Rightarrow\\quad \\frac{d y}{d x}+\\frac{2 x y}{1+x^2}-\\frac{4 x^2}{1+x^2}=0\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad \\frac{d y}{d x}+\\frac{2 x}{1+x^2} y=\\frac{4 x^2}{1+x^2} \\\\\n\\therefore\\quad & \\mathrm{IF}=e^{\\int \\frac{2 x}{1+x^2} d x} \\\\\n& \\text { Put } \\quad 1+x^2=t \\Rightarrow 2 x d x=d t \\\\\n\\therefore\\quad & \\text { IF }=e^{\\int \\frac{d t}{t}}=e^{\\log t}=e^{\\log \\left(1+x^2\\right)}=1+x^2\n\\end{aligned}$$</p>\n<p>The general solution is</p>\n<p>$$\\begin{aligned}\n& y \\cdot\\left(1+x^2\\right)=\\int\\left(1+x^2\\right) \\frac{.4 x^2}{\\left(1+x^2\\right)} d x+C \\\\\n\\Rightarrow \\quad & \\left(1+x^2\\right) y=\\int 4 x^2 d x+C \\\\\n\\Rightarrow \\quad & \\left(1+x^2\\right) y=4 \\frac{x^3}{3}+C \\\\\n\\Rightarrow \\quad & y=\\frac{4 x^3}{3\\left(1+x^2\\right)}+C\\left(1+x^2\\right)^{-1}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661wce7",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of the differential equation $y d x+(x+x y) d y=0$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given differential equation is }\\\\\n&\\begin{array}{rlrl}\n\\Rightarrow & y d x+(x+x y) d y =0 \\\\\n\\Rightarrow & y d x+x(1+y) d y =0 \\\\\n\\Rightarrow & \\frac{d x}{-x} =\\left(\\frac{1+y}{y}\\right) d y \\\\\n\\Rightarrow & \\int \\frac{1}{x} d x =-\\int\\left(\\frac{1}{y}+1\\right) d y \\quad\\text{[on integrating]}\\\\\n\\Rightarrow & \\log (x) =-\\log (y)-y+\\log A \\\\\n\\Rightarrow & \\log (x)+\\log (y)+y =\\log A \\\\\n\\Rightarrow & \\log (x y)+y =\\log A \\\\\n\\Rightarrow & \\log x y+\\log e^y =\\log A \\\\\n\\Rightarrow & x y e^y =A \\\\\n\\Rightarrow & x y =A e^{-y}\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661wfij",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>General solution of $\\frac{d y}{d x}+y=\\sin x$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\begin{aligned}\n\\frac{d y}{d x}+y & =\\sin x \\\\\n\\text { IF } & =\\int e^{1 d x}=e^x\n\\end{aligned}$$</p>\n<p>The general solution is</p>\n<p>$$y \\cdot e^x=\\int e^x \\sin x d x+C\\quad\\text{.... (i)}$$</p>\n<p>$$\\begin{aligned}\n\\text{Let}\\quad I & =\\int e^x \\sin x d x \\\\\nI & =\\sin x \\mathrm{e}^x-\\int \\cos x \\mathrm{e}^x d x \\\\\n& =\\sin x \\mathrm{e}^x-\\cos x \\mathrm{e}^x+\\int(-\\sin x) \\mathrm{e}^x d x \\\\\n2 I & =\\mathrm{e}^x(\\sin x-\\cos x) \\\\\nI & =\\frac{1}{2} e^x(\\sin x-\\cos x)\n\\end{aligned}$$</p>\n<p>From Eq. (i),</p>\n<p>$$\\begin{aligned}\ny \\cdot e^x & =\\frac{x}{2}(\\sin x-\\cos x)+C \\\\\n\\Rightarrow\\quad y & =\\frac{1}{2}(\\sin x-\\cos x)+C \\cdot e^{-x}\n\\end{aligned}$$</p>\n"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661w64r",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of differential equation $\\cot y dx=xdy$ is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given differential equation is }\\\\\n&\\begin{aligned}\n\\cot y d x & =x d y \\\\\n\\Rightarrow\\quad \\frac{1}{x} d x & =\\tan y d y\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\int \\frac{1}{x} d x=\\int \\tan y d y \\\\\n\\Rightarrow & \\log (x)=\\log (\\sec y)+\\log C\n\\end{array}$$</p>\n<p>$\\Rightarrow \\quad \\log \\left(\\frac{x}{\\sec y}\\right)=\\log C$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad& \\frac{x}{\\sec y} =C \\\\\n\\Rightarrow \\quad & x =C \\sec y\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661wcmt",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The integrating factor of $\\frac{d y}{d x}+y=\\frac{1+y}{x}$ is ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given differential equation is</p>\n<p>$$\\begin{aligned}\n&\\text { Given differential equation is }\\\\\n&\\begin{aligned}\n\\frac{d y}{d x}+y & =\\frac{1+y}{x} \\\\\n\\frac{d y}{d x}+y & =\\frac{1}{x}+\\frac{y}{x} \\\\\n\\Rightarrow \\quad \\frac{d y}{d x}+y\\left(1-\\frac{1}{x}\\right) & =\\frac{1}{x}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\therefore\\quad \\mathrm{IF} & =e^{\\int\\left(1-\\frac{1}{x}\\right) d x} \\\\\n& =e^{x-\\log x} \\\\\n& =e^x \\cdot e^{-\\log x}=\\frac{e^x}{x}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m661w52z",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Integrating factor of the differential of the form $\\frac{d x}{d y}+P_1 x=Q_1$ is given by $e^{\\int P_1 d y}$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Given differential equation, }\\\\\n&\\begin{aligned}\n\\frac{d x}{d y}+P_1 x & =Q_1 \\\\\n\\therefore\\quad \\mathrm{IF} & =e^{\\int \\rho_1 d y}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661wfj9",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solution of the differential equation of the type $\\frac{d x}{d y}+P_1 x=Q_1$ is given by $x \\cdot \\mathrm{IF}=\\int(\\mathrm{IF}) \\times Q_1 d y$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": null
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661wfjs",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Correct substitution for the solution of the differential equation of the type $\\frac{d y}{d x}=f(x, y)$, where $f(x, y)$ is a homogeneous function of zero degree is $y=v x$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": null
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661wcrw",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Correct substitution for the solution of the differential equation of the type $\\frac{d y}{d x}=g(x, y)$, where $g(x, y)$ is a homogeneous function of the degree zero is $x=v y$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": null
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661w78n",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Number of arbitrary constants in the particular solution of $a$ differential equation of order two is two.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>There is no arbitrary constant in the particular solution of a differential equation.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661wcso",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The differential equation representing the family of circles $x^2+(y-a)^2=a^2$ will be of order two.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, order of the differential equation = number of arbitrary constant Here, number of arbitrary constant $=1$.\nSo order is one.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661w3lp",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of $\\frac{d y}{d x}=\\left(\\frac{y}{x}\\right)^{1 / 3}$ is $y^{2 / 3}-x^{2 / 3}=c$</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{l}\n\\text { Given differential equation, } & \\frac{d y}{d x} =\\left(\\frac{y}{x}\\right)^{1 / 3} \\\\\n\\Rightarrow & \\frac{d y}{d x} =\\frac{y^{1 / 3}}{x^{1 / 3}} \\\\\n\\Rightarrow & y^{-1 / 3} d y =x^{-1 / 3} d x\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&\\text { On integrating both sides, we get }\\\\\n&\\begin{array}{rlrl} \n& \\int y^{-1 / 3} d y =\\int x^{-1 / 3} d x \\\\\n\\Rightarrow & \\frac{y^{-1 / 3+1}}{\\frac{-1}{3}+1} =\\frac{x^{-1 / 3+1}}{\\frac{-1}{3}+1}+C^{\\prime} \\\\\n\\Rightarrow & \\frac{3}{2} y^{2 / 3}=\\frac{3}{2} x^{2 / 3}+C^{\\prime} \\\\\n\\Rightarrow & y^{2 / 3}-x^{2 / 3} =C^{\\prime}\\quad \\left[\\text { where, } \\frac{2}{3} C^{\\prime}=C\\right]\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661wasd",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Differential equation representing the family of curves $y=e^x(A \\cos x+B \\sin x)$ is $\\frac{d^2 y}{d x^2}-2 \\frac{d y}{d x}+2 y=0$</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, $$y=e^x(A \\cos x+B \\sin x)$$</p>\n<p>On differentiating w.r.t. $x$, we get</p>\n<p>$$\\begin{aligned}\n\\frac{d y}{d x} & =e^x(-A \\sin x+B \\cos x)+e^x(A \\cos x+B \\sin x) \\\\\n\\Rightarrow \\quad \\frac{d y}{d x}-y & =e^x(-A \\sin x+B \\cos x)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Again differentiating w.r.t. } x \\text {, we get }\\\\\n&\\begin{array}{rlrl} \n\\frac{d^2 y}{d x^2}-\\frac{d y}{d x} & =e^x(-A \\cos x-B \\sin x)+e^x(-A \\sin x+B \\cos x) \\\\\n\\Rightarrow \\quad \\frac{d^2 y}{d x^2}-\\frac{d y}{d x}+y & =\\frac{d y}{d x}-y \\\\\n\\Rightarrow \\quad \\frac{d^2 y}{d x^2}-2 \\frac{d y}{d x}+2 y & =0\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661weat",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The solution of the differential equation $\\frac{d y}{d x}=\\frac{x+2 y}{x}$ is $x+y=k x^2$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text{Given that,}\\quad \\frac{d y}{d x} & =\\frac{x+2 y}{x} \\Rightarrow \\frac{d y}{d x}=1+\\frac{2}{x} \\cdot y \\\\\n\\Rightarrow\\quad \\frac{d y}{d x}-\\frac{2}{x} y & =1 \\\\\n\\text { IF } & =e^{\\frac{-2}{x} d x}=e^{-2 \\log x}=x^{-2}\n\\end{aligned}$$</p>\n<p>The differential solution,</p>\n<p>$$\\begin{aligned}\n& y \\cdot x^{-2} =\\int x^{-2} \\cdot 1 d x+k \\\\\n\\Rightarrow & \\frac{y}{x^2} =\\frac{x^{-2+1}}{-2+1}+k \\\\\n\\Rightarrow & \\frac{y}{x^2} =\\frac{-1}{x}+k \\\\\n\\Rightarrow & y =-x+k x^2 \\\\\n\\Rightarrow & x+y =k x^2\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661we5y",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Solution of $\\frac{x d y}{d x}=y+x \\tan \\frac{y}{x}$ is $\\sin \\left(\\frac{y}{x}\\right)=c x$</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given differential equation,</p>\n<p>$$\\begin{aligned}\n\\frac{x d y}{d x} & =y+x \\tan \\left(\\frac{y}{x}\\right) \\\\\n\\Rightarrow\\frac{d y}{d x} & =\\frac{y}{x}+\\tan \\left(\\frac{y}{x}\\right) . \\\\\n\\text{Put}\\quad \\frac{y}{x} & =v \\text { i.e., } y=v x \\\\\n\\Rightarrow\\frac{d y}{d x} & =v+\\frac{x d v}{d x}\n\\end{aligned}$$</p>\n<p>On substituting these values in Eq. (i), we get</p>\n<p>$$\\begin{aligned}\n\\frac{x d v}{d x}+v & =v+\\tan v \\\\\n\\Rightarrow \\quad \\frac{d x}{x} & =\\frac{d v}{\\tan v}\n\\end{aligned}$$</p>\n<p>On integrating both sides, we get</p>\n<p>$$\\begin{array}{l} \n& & \\int \\frac{1}{x} d x & =\\int \\frac{1}{\\tan v} d x \\\\\n\\Rightarrow & \\log (x) & =\\log (\\sin v)+\\log C^{\\prime} \\\\\n\\Rightarrow & & \\log \\left(\\frac{x}{\\sin v}\\right) =\\log C^{\\prime} \\\\\n\\Rightarrow & & \\sin v  =C^{\\prime} \\\\\n\\Rightarrow & & \\sin v  =C x \\quad \\left[\\text { where, } C=\\frac{1}{C^{\\prime}}\\right]\\\\\n\\Rightarrow & & \\sin \\frac{y}{x}  =C x\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m661w3mp",
+      "book": "mathematics-xii-part-2",
+      "bookGroup": "ncert",
+      "chapter": "differential-equations",
+      "chapterGroup": "calculus",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The differential equation of all non horizontal lines in a plane is $\\frac{d^2 x}{d y^2}=0$</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let any non-horizontal line in a plane is given by</p>\n<p>$$y=m x+c$$</p>\n<p>On differentiating w.r.t. $x$, we get</p>\n<p>$$\\frac{d y}{d x}=m$$</p>\n<p>Again, differentiating w.r.t. $x$, we get</p>\n<p>$$\\frac{d^2 y}{d x^2}=0$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    }
+  ]
+}

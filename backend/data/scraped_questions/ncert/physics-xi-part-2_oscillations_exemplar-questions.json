@@ -1,0 +1,1556 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m0jjtphg",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The displacement of a particle is represented by the equation $y=3 \\cos \\left(\\frac{\\pi}{4}-2 \\omega t\\right)$. The motion of the particle is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " simple harmonic with period $2 \\pi / \\omega$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " simple harmonic with period $\\pi / \\omega$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " periodic but not simple harmonic\n"
+            },
+            {
+              "identifier": "D",
+              "content": " non- periodic"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given, $y=3 \\cos \\left(\\frac{\\pi}{4}-2 \\omega t\\right)$</p>\n<p>Velocity of the particle</p>\n<p>$$\\begin{aligned}\nv & =\\frac{d y}{d t}=\\frac{d}{d t}\\left[3 \\cos \\left(\\frac{\\pi}{4}-2 \\omega t\\right)\\right] \\\\\n& =3(-2 \\omega)\\left[-\\sin \\left(\\frac{\\pi}{4}-2 \\omega t\\right)\\right] \\\\\n& =6 \\omega \\sin \\left(\\frac{\\pi}{4}-2 \\omega t\\right)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Acceleration, }\\\\\n&\\begin{aligned}\na & =\\frac{d v}{d t}=\\frac{d}{d t}\\left[6 \\omega \\sin \\left(\\frac{\\pi}{4}-2 \\omega t\\right)\\right] \\\\\n& =6 \\omega \\times(-2 \\omega) \\cos \\left(\\frac{\\pi}{4}-2 \\omega t\\right)=-12 \\omega^2 \\cos \\left(\\frac{\\pi}{4}-2 \\omega t\\right) \\\\\n& =-4 \\omega^2\\left[3 \\cos \\left(\\frac{\\pi}{4}-2 \\omega t\\right)\\right] \\\\\n\\Rightarrow \\quad a & =-4 \\omega^2 y\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$\\Rightarrow$ As acceleration, $a \\propto-y$</p>\n<p>Hence, due to negative sign motion is SHM. </p>\n<p>Clearly, from the equation</p>\n<p>$$\\begin{aligned}\n\\omega^{\\prime} & =2 \\omega \\quad [\\because \\text { Standard equation } y=a \\cos (\\omega t+\\phi)]\\\\\n\\Rightarrow \\quad \\frac{2 \\pi}{T^{\\prime}} & =2 \\omega \\Rightarrow T^{\\prime}=\\frac{2 \\pi}{2 \\omega}=\\frac{\\pi}{\\omega} \\quad \\text { [and given equation } y=3 \\cos \\left(-2 \\omega t+\\frac{\\pi}{4}\\right) \\text { ] }\n\\end{aligned}$$</p>\n<p>So, motion is SHM with period $\\frac{\\pi}{\\omega}$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 47253,
+        "correct": 59,
+        "wrong": 41,
+        "options": {
+          "0": 22,
+          "1": 59,
+          "2": 16,
+          "3": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjtpk7",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The displacement of a particle is represented by the equation $y=\\sin ^3 \\omega t$.\nThe motion is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " non-periodic\n"
+            },
+            {
+              "identifier": "B",
+              "content": " periodic but not simple harmonic\n"
+            },
+            {
+              "identifier": "C",
+              "content": " simple harmonic with period $2 \\pi / \\omega$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " simple harmonic with period $\\pi / \\omega$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Given equation of motion is</p>\n<p>$$\\begin{aligned}\ny & =\\sin ^3 \\omega t \\\\\n& =(3 \\sin \\omega t-4 \\sin 3 \\omega t) / 4 \\quad\\left[\\because \\sin 3 \\theta=3 \\sin \\theta-4 \\sin ^3 \\theta\\right] \\\\\n\\Rightarrow \\quad \\frac{d y}{d t} & =\\left[\\frac{d}{d t}(3 \\sin \\omega t)-\\frac{d}{d t}(4 \\sin 3 \\omega t)\\right] / 4 \\\\\n\\Rightarrow \\quad 4 \\frac{d y}{d t} & =3 \\omega \\cos \\omega t-4 \\times[3 \\omega \\cos 3 \\omega t] \\\\\n\\Rightarrow \\quad 4 \\times \\frac{d^2 y}{d t^2} & =-3 \\omega^2 \\sin \\omega t+12 \\omega \\sin 3 \\omega t \\\\\n\\Rightarrow \\quad \\frac{d^2 y}{d t^2} & =-\\frac{3 \\omega^2 \\sin \\omega t+12 \\omega^2 \\sin 3 \\omega t}{4}\n\\end{aligned}$$</p>\n<p>$\\Rightarrow \\frac{d^2 y}{d t^2}$ is not proportional to $y$.</p>\n<p>Hence, motion is not SHM.</p>\n<p>As the expression is involving sine function, hence it will be periodic.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 30264,
+        "correct": 52,
+        "wrong": 48,
+        "options": {
+          "0": 22,
+          "1": 52,
+          "2": 18,
+          "3": 8
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjtpml",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The relation between acceleration and displacement of four particles are given below</p>\n<p>Which, one of the particle is exempting simple harmonic motion?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$a_x=+2 x$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $a_x=+2 x^2$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $a_x=-2 x^2$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $a_x=-2 x$\n"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>For motion to be SHM acceleration of the particle must be proportional to negative of displacement.</p>\n<p>$$\\text { i.e., } \\quad a \\propto-(\\operatorname{yor} x)$$</p>\n<p>We should be clear that $y$ has to be linear.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 26313,
+        "correct": 51,
+        "wrong": 49,
+        "options": {
+          "0": 7,
+          "1": 7,
+          "2": 35,
+          "3": 51
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjw2vx",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Motion of an oscillating liquid column in a U-tube is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " periodic but not simple harmonic\n"
+            },
+            {
+              "identifier": "B",
+              "content": " non-periodic\n"
+            },
+            {
+              "identifier": "C",
+              "content": " simple harmonic and time period is independent of the density of the liquid\n"
+            },
+            {
+              "identifier": "D",
+              "content": " simple harmonic and time period is directly proportional to the density of the liquid"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Consider the diagram in which a liquid column oscillates. In this case, restoring force acts on the liquid due to gravity. Acceleration of the liquid column, can be calculated in terms of restoring force.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0gy75a2/68941b6f-92a6-46cd-b45f-5bc6630fed03/af1f5da0-66ef-11ef-8e41-1324d4a511ac/file-jaoe38c1m0gy75a3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0gy75a2/68941b6f-92a6-46cd-b45f-5bc6630fed03/af1f5da0-66ef-11ef-8e41-1324d4a511ac/file-jaoe38c1m0gy75a3.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{aligned}\n&amp;\\begin{array}{ll}\n\\text { Restoring force } &amp; f=\\text { Weight of liquid column of height } 2 y \\\\\n\\Rightarrow &amp; f=-(A \\times 2 y \\times \\rho) \\times g=-2 A \\rho g y \\quad [\\because \\eta=\\rho v]\\\\\n\\Rightarrow f \\propto-y \\Rightarrow \\text { Motion } &amp; \\text { is SHM with force constant } k=2 A \\rho g \\\\\n\\Rightarrow \\text { Time period } &amp; T=2 \\pi \\sqrt{\\frac{m}{k}}=2 \\pi \\sqrt{\\frac{A \\times 2 h \\times \\rho}{2 A \\rho g}}=2 \\pi \\sqrt{\\frac{h}{g}} \\\\\n&amp; T=2 \\pi \\sqrt{\\frac{l}{g}}, \\text { where } l=h\n\\end{array}\\\\\n&amp;\\text { Which is independent of the density of the liquid. }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 30605,
+        "correct": 39,
+        "wrong": 61,
+        "options": {
+          "0": 16,
+          "1": 6,
+          "2": 39,
+          "3": 39
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjtra2",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A particle is acted simultaneously by mutually perpendicular simple harmonic motion $$x=a \\cos \\omega t$$ and $$y=a \\sin \\omega t$$. The trajectory of motion of the particle will be</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "an ellipse\n"
+            },
+            {
+              "identifier": "B",
+              "content": " a parabola\n"
+            },
+            {
+              "identifier": "C",
+              "content": " a circle\n"
+            },
+            {
+              "identifier": "D",
+              "content": " a straight line"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given,</p>\n<p>$$\\begin{gathered}\nx=a \\cos \\omega t \\quad \\text{... (i)}\\\\\ny=a \\sin \\omega t \\quad \\text{... (ii)}\n\\end{gathered}$$</p>\n<p>Squaring and adding Eqs. (i) and (ii),</p>\n<p>$$x^2+y^2=a^2 \\quad\\left(\\cos ^2 \\omega t+\\sin ^2 \\omega t\\right)$$</p>\n<p>$$=a^2 \\Rightarrow x^2+y^2=a^2 \\quad\\left[\\because \\cos ^2 \\omega t+\\sin ^2 \\omega t=1\\right]$$</p>\n<p>This is the equation of a circle</p>\n<p>Clearly, the locus is a circle of constant radius a.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 31108,
+        "correct": 40,
+        "wrong": 60,
+        "options": {
+          "0": 28,
+          "1": 20,
+          "2": 40,
+          "3": 12
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjtrcl",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The displacement of a particle varies with time according to the relation $y=a \\sin \\omega t+b \\cos \\omega t$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " The motion is oscillatory but not SHM\n"
+            },
+            {
+              "identifier": "B",
+              "content": " The motion is SHM with amplitude $a+b$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " The motion is SHM with amplitude $a^2+b^2$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " The motion is SHM with amplitude $\\sqrt{a^2+b^2}$"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>According to the question, the displacement</p>\n<p>$$\\begin{aligned}\n& y=a \\sin \\omega t+b \\cos \\omega t \\\\\n\\text{Let}\\quad & a=A \\sin \\phi \\text { and } b=A \\cos \\phi \\\\\n\\text{Now,}\\quad & a^2+b^2=A^2 \\sin ^2 \\phi+A^2 \\cos ^2 \\phi \\\\\n& =A^2 \\Rightarrow A=\\sqrt{a^2+b^2} \\\\\n& y=A \\sin \\phi \\cdot \\sin \\omega t+A \\cos \\phi \\cdot \\cos \\omega t \\\\\n& =A \\sin (\\omega t+\\phi) \\\\\n& \\frac{d y}{d t}=A \\omega \\cos (\\omega t+\\phi) \\\\\n& \\frac{d^2 y}{d t^2}=-A \\omega^2 \\sin (\\omega t+\\phi)=-A y \\omega^2=\\left(-A \\omega^2\\right) y \\\\\n& \\Rightarrow \\quad \\frac{d^2 y}{d t^2} \\propto(-y)\n\\end{aligned}$$</p>\n<p>Hence, it is an equation of SHM with amplitude $A=\\sqrt{a^2+b^2}$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 26021,
+        "correct": 82,
+        "wrong": 18,
+        "options": {
+          "0": 6,
+          "1": 3,
+          "2": 9,
+          "3": 82
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjw2yx",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Four pendulums A, B, C and D are suspended from the same</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0gz3iyt/9464ce98-561c-46a9-ae44-a08fe55e073a/3396c660-66f3-11ef-81ee-25c24eb36a12/file-jaoe38c1m0gz3iyu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0gz3iyt/9464ce98-561c-46a9-ae44-a08fe55e073a/3396c660-66f3-11ef-81ee-25c24eb36a12/file-jaoe38c1m0gz3iyu.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>elastic support as shown in figure. $A$ and $C$ are of the same length, while $B$ is smaller than $A$ and $D$ is larger than $A$. If $A$ is given a transerse displacement,</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $D$ will vibrate with maximum amplitude\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $C$ will vibrate with maximum amplitude\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $B$ will vibrate with maximum amplitude\n"
+            },
+            {
+              "identifier": "D",
+              "content": " All the four will oscillate with equal amplitude"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>According to the question, A is given a transverse displacement.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0gz5fmg/a7d18a4a-a75c-4fd9-beeb-c8684d1c8cdd/689fbd80-66f3-11ef-81ee-25c24eb36a12/file-jaoe38c1m0gz5fmh.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0gz5fmg/a7d18a4a-a75c-4fd9-beeb-c8684d1c8cdd/689fbd80-66f3-11ef-81ee-25c24eb36a12/file-jaoe38c1m0gz5fmh.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Through the elastic support the disturbance is transferred to all the pendulums. $A$ and $C$ are having same length, hence they will be in resonance, because their time period of oscillation.</p>\n<p>$T=2 \\pi \\sqrt{\\frac{l}{g}}$ and hence, frequency is same.</p>\n<p>So, amplitude of $A$ and $C$ will be maximum.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 55242,
+        "correct": 14,
+        "wrong": 86,
+        "options": {
+          "0": 24,
+          "1": 14,
+          "2": 22,
+          "3": 40
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjw320",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Figure shows the circular motion of a particle. The radius of the circle, the period, sense of revolution and the initial position are indicated on the figure. The simple harmonic motion of the $x$-projection of the radius vector of the rotating particle $P$ is</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0hkwska/3840a7a4-b2a1-40cf-97d5-b43290104dcf/812dbfa0-6748-11ef-9b63-3373b5e00cb8/file-jaoe38c1m0hkwskb.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0hkwska/3840a7a4-b2a1-40cf-97d5-b43290104dcf/812dbfa0-6748-11ef-9b63-3373b5e00cb8/file-jaoe38c1m0hkwskb.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $x(t)=B \\sin \\left(\\frac{2 \\pi t}{30}\\right)$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $x(t)=B \\cos \\left(\\frac{\\pi t}{15}\\right)$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $x(t)=B \\sin \\left(\\frac{\\pi t}{15}+\\frac{\\pi}{2}\\right)$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $x(t)=B \\cos \\left(\\frac{\\pi t}{15}+\\frac{\\pi}{2}\\right)$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Let angular velocity of the particle executing circular motion is $\\omega$ and when it is at $Q$ makes and angle $\\theta$ as shown in the diagram.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0hky9fh/55494200-06ce-4e31-ad90-cce3463b4b15/aa049cf0-6748-11ef-8382-a91e43cf6a22/file-jaoe38c1m0hky9fj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0hky9fh/55494200-06ce-4e31-ad90-cce3463b4b15/aa049cf0-6748-11ef-8382-a91e43cf6a22/file-jaoe38c1m0hky9fj.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Clearly, $$\\theta=\\omega t$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { Now, we can write }\\quad O R=O Q \\cos (90-\\theta)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; =O Q \\sin \\theta=O Q \\sin \\omega t \\\\\n&amp; =r \\sin \\omega t \\quad [\\because O Q=r]\\\\\nx &amp; =r \\sin \\omega t=B \\sin \\omega t \\quad [\\because r=B]\\\\\n&amp; =B \\sin \\frac{2 \\pi}{T} t=B \\sin \\left(\\frac{2 \\pi}{30} t\\right)\n\\end{aligned}$$</p>\n<p>Clearly, this equation represents SHM.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 66025,
+        "correct": 27,
+        "wrong": 73,
+        "options": {
+          "0": 27,
+          "1": 24,
+          "2": 34,
+          "3": 16
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjtwmd",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The equation of motion of a particle is $x=a \\cos (\\alpha t)^2$. The motion is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " periodic but not oscillatory\n"
+            },
+            {
+              "identifier": "B",
+              "content": " periodic and oscillatory\n"
+            },
+            {
+              "identifier": "C",
+              "content": " oscillatory but not periodic\n"
+            },
+            {
+              "identifier": "D",
+              "content": " neither periodic nor oscillatory"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>As the given equation is</p>\n<p>$$x=a \\cos (\\alpha t)^2$$</p>\n<p>is a cosine function. Hence, it is an oscillatory motion.</p>\n<p>Now, putting $t+T$ in place of $t$</p>\n<p>$$\\begin{aligned}\nx(t+T) & =a \\cos [\\alpha(t+T)]^2 \\quad\\left[\\because x(t)=\\operatorname{acos}(\\alpha t)^2\\right] \\\\\n& =a \\cos \\left[\\alpha t^2+\\alpha T^2+2 \\alpha t T\\right] \\neq x(t)\n\\end{aligned}$$</p>\n<p>where, $T$ is supposed as period of the function $\\omega(t)$.</p>\n<p>Hence, it is not periodic.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 30817,
+        "correct": 18,
+        "wrong": 82,
+        "options": {
+          "0": 34,
+          "1": 37,
+          "2": 18,
+          "3": 10
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjtwoz",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A particle executing SHM has a maximum speed of $30 \\mathrm{~cm} / \\mathrm{s}$ and a maximum acceleration of $60 \\mathrm{~cm} / \\mathrm{s}^2$. The period of oscillation is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $\\pi \\mathrm{sec}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\frac{\\pi}{2} \\mathrm{sec}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $2 \\pi \\mathrm{sec}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\frac{\\pi}{t} \\mathrm{sec}$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n&\\text { Let equation of an SHM is represented by } y=a \\sin \\omega t\\\\\n&v=\\frac{d y}{d t}=a \\omega \\cos \\omega t\n\\end{aligned}$$</p>\n<p>$$\\Rightarrow \\quad(v)_{\\max }=a \\omega=30\\quad \\text{... (i)}$$</p>\n<p>$$\\begin{gathered}\n\\text { Acceleration }(A)=\\frac{d x^2}{d t^2}=-a \\omega^2 \\sin \\omega t \\\\\nA_{\\max }=\\omega^2 a=60\\quad \\text{.... (ii)}\n\\end{gathered}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Eqs. (i) and (ii), we get } \\omega(\\omega a)=60 \\Rightarrow \\omega(30)=60\\\\\n&\\begin{array}{ll}\n\\Rightarrow & \\omega=2 \\mathrm{rad} / \\mathrm{s} \\\\\n\\Rightarrow & \\frac{2 \\pi}{T}=2 \\mathrm{rad} / \\mathrm{s} \\Rightarrow T=\\pi \\mathrm{sec}\n\\end{array}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 55829,
+        "correct": 74,
+        "wrong": 26,
+        "options": {
+          "0": 74,
+          "1": 14,
+          "2": 10,
+          "3": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjw35g",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>When a mass $m$ is connected individually to two springs $S_1$ and $S_2$, the oscillation frequencies are $v_1$ and $v_2$. If the same mass is attached to the two springs as shown in figure, the oscillation frequency would be</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0hlmam5/a5989eae-3880-4217-8ec3-f798f911a2e2/465a0ed0-674b-11ef-bb75-eb55abf9ee49/file-jaoe38c1m0hlmam6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0hlmam5/a5989eae-3880-4217-8ec3-f798f911a2e2/465a0ed0-674b-11ef-bb75-eb55abf9ee49/file-jaoe38c1m0hlmam6.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " $v_1+v_2$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " $\\sqrt{v_1^2+v_2^2}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $\\left(\\frac{1}{v_1}+\\frac{1}{v_2}\\right)^{-1}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $\\sqrt{v_1^2-v_2^2}$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0hlnjdu/95deb6dd-8a7e-4127-b730-956687bd718d/68ef5c20-674b-11ef-bb75-eb55abf9ee49/file-jaoe38c1m0hlnjdv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0hlnjdu/95deb6dd-8a7e-4127-b730-956687bd718d/68ef5c20-674b-11ef-bb75-eb55abf9ee49/file-jaoe38c1m0hlnjdv.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Consider the diagram, two springs can be considered as parallel.</p>\n<p>Hence,</p>\n<p>$$\\begin{aligned}\nk_{\\text {eq }} &amp; =\\text { Equivalent spring constant } \\\\\n&amp; =k_1+k_2\n\\end{aligned}$$</p>\n<p>Time period of oscillation of the spring block- system</p>\n<p>$$\\begin{aligned}\nT &amp; =2 \\pi \\sqrt{\\frac{m}{k_{\\text {eq }}}}=2 \\pi \\sqrt{\\frac{m}{k_1+k_2}} \\\\\nv &amp; =\\frac{1}{T}=\\frac{1}{2 \\pi} \\times \\sqrt{\\frac{k_1+k_2}{m}} \\quad \\text{.... (i)}\\\\\n&amp; =\\text { Equivalent oscillation frequency. }\n\\end{aligned}$$</p>\n<p>When the mass is connected to the two springs individually</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0hltqnl/1ae5ff84-faf0-4213-a4ce-6beec0e551fd/15680a10-674c-11ef-bb75-eb55abf9ee49/file-jaoe38c1m0hltqnm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0hltqnl/1ae5ff84-faf0-4213-a4ce-6beec0e551fd/15680a10-674c-11ef-bb75-eb55abf9ee49/file-jaoe38c1m0hltqnm.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{aligned}\n&amp; v_1=\\frac{1}{2 \\pi} \\sqrt{\\frac{k_1}{m}} \\quad \\text{... (ii)}\\\\\n&amp; v_2=\\frac{1}{2 \\pi} \\sqrt{\\frac{k_2}{m}} \\quad \\text{... (iii)}\n\\end{aligned}$$</p>\n<p>From Eqs. (i), (ii) and (iii),</p>\n<p>$$\n\\begin{aligned}\nv &amp; =\\frac{1}{2 \\pi}\\left[\\frac{k_1}{m}+\\frac{k_2}{m}\\right]^{1 / 2} \\\\\n&amp; =\\frac{1}{2 \\pi}\\left[\\frac{4 \\pi^2 v_1^2}{1}+\\frac{4 \\pi^2 v_2^2}{1}\\right]^{1 / 2} \\\\\n&amp; \\left.[\\because \\text { from Eq. (ii) } \\frac{k_1}{m}=4 \\pi^2 v_1^2 \\text { and from Eq. (iii), } \\frac{k_2}{m}=4 \\pi^2 v_2^2\\right] \\\\\n&amp; =\\frac{2 \\pi}{2 \\pi}\\left[v_1^2+v_2^2\\right]^{1 / 2} \\Rightarrow v=\\sqrt{v_1^2+v_2^2}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcqm",
+      "user_stats": {
+        "timeSpent": 62179,
+        "correct": 53,
+        "wrong": 47,
+        "options": {
+          "0": 13,
+          "1": 60,
+          "2": 18,
+          "3": 9
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjtzgp",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The rotation of earth about its axis is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " periodic motion\n"
+            },
+            {
+              "identifier": "B",
+              "content": " simple harmonic motion\n"
+            },
+            {
+              "identifier": "C",
+              "content": " periodic but not simple harmonic motion\n"
+            },
+            {
+              "identifier": "D",
+              "content": " non-periodic motion"
+            }
+          ],
+          "correct_options": [
+            "A",
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>The rotation of earth about its axis is periodic because it repeats after a regular interval of time.</p>\n<p>The rotation of earth is obviously not a to and from type of motion about a fixed point, hence its motion is not SHM.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcqm",
+      "user_stats": {
+        "timeSpent": 14101,
+        "correct": 24,
+        "wrong": 76,
+        "options": {
+          "0": 37,
+          "1": 13,
+          "2": 49,
+          "3": 0
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjw38z",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Motion of a ball bearing inside a smooth curved bowl, when released from a point slightly above the lower point is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " simple harmonic motion\n"
+            },
+            {
+              "identifier": "B",
+              "content": " non-periodic motion\n"
+            },
+            {
+              "identifier": "C",
+              "content": " periodic motion\n"
+            },
+            {
+              "identifier": "D",
+              "content": " periodic but not SHM"
+            }
+          ],
+          "correct_options": [
+            "A",
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Consider the motion of the ball inside a smooth curved bowl.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0hmhjza/144c2262-4ddb-4041-ab44-bacf87c64cbb/abab3950-674e-11ef-bdaf-b50610dd2faa/file-jaoe38c1m0hmhjzb.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0hmhjza/144c2262-4ddb-4041-ab44-bacf87c64cbb/abab3950-674e-11ef-bdaf-b50610dd2faa/file-jaoe38c1m0hmhjzb.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>For small angular displacement or slightly released motion, it can be considered as angular SHM.</p>\n<p>When the ball is at an angle of $$\\theta$$ the restoring force (g sin $$\\theta$$) m acts as shown.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0hmixdb/e2b722c8-f017-4c8b-b3cb-8de5d1e10802/d1d25ff0-674e-11ef-bdaf-b50610dd2faa/file-jaoe38c1m0hmixdc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0hmixdb/e2b722c8-f017-4c8b-b3cb-8de5d1e10802/d1d25ff0-674e-11ef-bdaf-b50610dd2faa/file-jaoe38c1m0hmixdc.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{aligned}\n\\because \\quad m a &amp; =m g \\sin \\theta \\\\\n\\Rightarrow \\quad a &amp; =g \\sin \\theta \\\\\n\\Rightarrow \\quad \\frac{d^2 x}{d t^2} &amp; =-g \\sin \\theta=-g \\times \\frac{x}{R} \\quad[\\therefore \\sin \\theta \\simeq \\theta=x / R]\n\\end{aligned}$$</p>\n<p>Hence , motion is SHM</p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow \\quad d 2 x / d t^2 \\propto(-x) \\quad (\\therefore a \\propto -x)\\\\\n&amp; \\Rightarrow \\quad \\omega=\\sqrt{g / R} \\\\\n&amp; \\text { Time period } T=\\frac{2 \\pi}{\\omega}=2 \\pi \\sqrt{\\frac{R}{g}} \\text {. }\n\\end{aligned}$$</p>\n<p>As motion is SHM, hence it must be periodic.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcqm",
+      "user_stats": {
+        "timeSpent": 20151,
+        "correct": 32,
+        "wrong": 68,
+        "options": {
+          "0": 44,
+          "1": 9,
+          "2": 30,
+          "3": 16
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjw3c3",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Displacement versus time curve for a particle executing SHM is shown in figure. Choose the correct statements.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0hn1icn/443caff0-722c-4369-aafe-5a726072d114/d69a8470-6750-11ef-b6f1-f928c03e26c6/file-jaoe38c1m0hn1id3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0hn1icn/443caff0-722c-4369-aafe-5a726072d114/d69a8470-6750-11ef-b6f1-f928c03e26c6/file-jaoe38c1m0hn1id3.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " Phase of the oscillator is same at $t=0 \\mathrm{~s}$ and $t=2 \\mathrm{~s}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " Phase of the oscillator is same at $t=2 \\mathrm{~s}$ and $t=6 \\mathrm{~s}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " Phase of the oscillator is same at $t=1 \\mathrm{~s}$ and $t=7 \\mathrm{~s}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " Phase of the oscillator is same at $t=1 \\mathrm{~s}$ and $t=5 \\mathrm{~s}$"
+            }
+          ],
+          "correct_options": [
+            "B",
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>It is clear from the curve that points corresponding to $t=2 \\mathrm{~s}$ and $t=6 \\mathrm{~s}$ are separated by a distance belongs to one time period. Hence, these points must be in same phase.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0hn27r8/39ab0e3e-4176-495e-b5b9-394a89e828e8/ea380840-6750-11ef-b6f1-f928c03e26c6/file-jaoe38c1m0hn27r9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0hn27r8/39ab0e3e-4176-495e-b5b9-394a89e828e8/ea380840-6750-11ef-b6f1-f928c03e26c6/file-jaoe38c1m0hn27r9.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Similarly, points belong to $t=1 \\mathrm{~s}$ and $t=5 \\mathrm{~s}$ are at separation of one time period, hence must be in phase.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcqm",
+      "user_stats": {
+        "timeSpent": 30025,
+        "correct": 36,
+        "wrong": 64,
+        "options": {
+          "0": 8,
+          "1": 41,
+          "2": 15,
+          "3": 36
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jju442",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Which of the following statements is/are true for a simple harmonic oscillator?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " Force acting is directly proportional to displacement from the mean position and opposite to it\n"
+            },
+            {
+              "identifier": "B",
+              "content": " Motion is periodic\n"
+            },
+            {
+              "identifier": "C",
+              "content": " Acceleration of the oscillator is constant\n"
+            },
+            {
+              "identifier": "D",
+              "content": " The velocity is periodic"
+            }
+          ],
+          "correct_options": [
+            "A",
+            "B",
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Let the equation for the SHM is $x=a \\sin \\omega t$.</p>\n<p>Clearly, it is a periodic motion because it involves sine function.</p>\n<p>$$\\text { Velocity } v=\\frac{d x}{d t}=\\frac{d}{d t}(a \\sin \\omega t)=a \\omega \\cos \\omega t$$</p>\n<p>Velocity is also periodic because of cosine function.</p>\n<p>Acceleration,</p>\n<p>$$A=\\frac{d v}{d t}=\\frac{d^2 x}{d t^2}=-a \\omega^2 \\sin \\omega t$$</p>\n<p>[ $\\because$ Acceleration is a sine function, hence cannot be constant]</p>\n<p>$$=-\\left(\\omega^2 a\\right) \\sin \\omega t=-\\omega^2 x$$</p>\n<p>Force,</p>\n<p>$$\\begin{aligned}\nF & =\\text { mass } \\times \\text { acceleration } \\\\\n& =m A=-m \\omega^2 x\n\\end{aligned}$$</p>\n<p>Hence, force acting is directly proportional to displacement from the mean position and opposite to it.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcqm",
+      "user_stats": {
+        "timeSpent": 15776,
+        "correct": 40,
+        "wrong": 60,
+        "options": {
+          "0": 43,
+          "1": 33,
+          "2": 6,
+          "3": 18
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjw3f8",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The displacement-time graph of a particle executing SHM is shown in figure. Which of the following statement is/are true ?</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i724v2/fd745790-9272-456e-b8d3-93cfd6314ea4/1e9113e0-679f-11ef-8462-57b856774ed7/file-jaoe38c1m0i724v3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i724v2/fd745790-9272-456e-b8d3-93cfd6314ea4/1e9113e0-679f-11ef-8462-57b856774ed7/file-jaoe38c1m0i724v3.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " The force is zero at $t=\\frac{3 T}{4}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " The acceleration is maximum at $t=\\frac{4 T}{4}$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " The velocity is maximum at $t=\\frac{T}{4}$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " The PE is equal to KE of oscillation at $t=\\frac{T}{2}$"
+            }
+          ],
+          "correct_options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Consider the diagram</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i73lv9/6c1911ab-2a4e-4887-9658-5a2d59b47ce2/47831a50-679f-11ef-8462-57b856774ed7/file-jaoe38c1m0i73lva.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i73lv9/6c1911ab-2a4e-4887-9658-5a2d59b47ce2/47831a50-679f-11ef-8462-57b856774ed7/file-jaoe38c1m0i73lva.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>From the given diagram; it is clear that</p>\n<p>(a) A $t t=\\frac{3 T}{4}$, the displacement of the particle is zero. Hence, the particle executing SHM will be at mean position i.e., $x=0$. So, acceleration is zero and force is also zero.</p>\n<p>(b) At $t=\\frac{4 T}{4}$, displacement is maximum i.e., extreme position, so acceleration is maximum.</p>\n<p>(c) At $t=\\frac{T}{4}$, corresponds to mean position, so velocity will be maximum at this position.</p>\n<p>(d) At $t=\\frac{2 T}{4}=\\frac{T}{2}$, corresponds to extreme position, so $\\mathrm{KE}=0$ and $\\mathrm{PE}=$ maximum.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcqm",
+      "user_stats": {
+        "timeSpent": 36573,
+        "correct": 38,
+        "wrong": 63,
+        "options": {
+          "0": 29,
+          "1": 29,
+          "2": 31,
+          "3": 12
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jju63a",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A body is performing SHM, then its</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " average total energy per cycle is equal to its maximum kinetic energy\n"
+            },
+            {
+              "identifier": "B",
+              "content": " average kinetic energy per cycle is equal to half of its maximum kinetic energy\n"
+            },
+            {
+              "identifier": "C",
+              "content": " mean velocity over a complete cycle is equal to $\\frac{2}{\\pi}$ times of its maximum velocity\n"
+            },
+            {
+              "identifier": "D",
+              "content": " root mean square velocity is $\\frac{1}{\\sqrt{2}}$ times of its maximum velocity"
+            }
+          ],
+          "correct_options": [
+            "A",
+            "B",
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Let the equation of a SHM is represented as $x=$ a $\\sin \\omega t$ Assume mass of the body is $m$.</p>\n(a) Total mechanical energy of the body at any time $t$ is</p>\n<p>$$E=\\frac{1}{2} m \\omega^2 a^2\\quad \\text{... (i)}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Kinetic energy at any instant } t \\text { is }\\\\\n&\\begin{aligned}\nK & =\\frac{1}{2} m v^2=\\frac{1}{2} m\\left[\\frac{d x}{d t}\\right]^2 & {\\left[\\because v=\\frac{d x}{d t}\\right] } \\\\\n& =\\frac{1}{2} m \\omega^2 a^2 \\cos ^2 \\omega t & {[\\because x=a \\sin \\omega t] } \\\\\n\\Rightarrow \\quad K_{\\max } & =\\frac{1}{2} m \\omega^2 a^2=E & {\\left[\\because \\text { for } k_{\\max }, \\cos \\omega t=1\\right] \\ldots \\text { (ii) } }\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { (b) } \\mathrm{KE} \\text { at any instant } t \\text { is }\\\\\n&\\begin{aligned}\nK & =\\frac{1}{2} m \\omega^2 a^2 \\cos ^2 \\omega t \\\\\n\\left(K_{\\mathrm{av}}\\right) \\text { for a cycle } & =\\frac{1}{2} m \\omega^2 a^2\\left[\\left(\\cos ^2 \\omega t\\right)_{\\mathrm{av}}\\right] \\text { for a cycle } \\\\\n& =\\frac{1}{2} m \\omega^2 a^2\\left[\\frac{0+1}{2}\\right] \\\\\n& =\\frac{1}{4} m \\omega^2 a^2=\\frac{K_{\\max }}{2} \\quad \\text { [from Eq. (ii)] }\n\\end{aligned}\\\\\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { (c) Velocity }=v=\\frac{d x}{d t}=a \\omega \\cos \\omega t \\\\\n& \\qquad \\begin{aligned}\nv_{\\text {mean }} & =\\frac{v_{\\max }+v_{\\min }}{2} \\\\\n& =\\frac{a \\omega+(-a \\omega)}{2}=0 \\\\\nv_{\\max } & \\neq v_{\\text {mean }}\n\\end{aligned} \\text { [For a complete cycle] }\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { (d) } v_{\\mathrm{mss}}=\\sqrt{\\frac{v_1^2+v_2^2}{2}} & =\\sqrt{\\frac{0+a^2 \\omega^2}{2}}=\\frac{a \\omega}{\\sqrt{2}} \\\\\n\\Rightarrow \\quad V_{\\mathrm{rms}} & =\\frac{v_{\\mathrm{max}}}{\\sqrt{2}}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcqm",
+      "user_stats": {
+        "timeSpent": 28352,
+        "correct": 12,
+        "wrong": 88,
+        "options": {
+          "0": 26,
+          "1": 25,
+          "2": 20,
+          "3": 30
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jjw3iw",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A particle is in linear simple harmonic motion between two points. $A$ and $B, 10 \\mathrm{~cm}$ apart (figure.) take the direction from $A$ to $B$ as the positive direction and choose the correct statements.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i7dtxs/855e947d-28b2-4129-b9ae-7b4db0bba6f2/63d66d00-67a0-11ef-8462-57b856774ed7/file-jaoe38c1m0i7dtxt.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i7dtxs/855e947d-28b2-4129-b9ae-7b4db0bba6f2/63d66d00-67a0-11ef-8462-57b856774ed7/file-jaoe38c1m0i7dtxt.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>AO = OB = 5 cm</p>\n<p>BC = 8 cm</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " The sign of velocity, acceleration and force on the particle when it is 3 cm away from $A$ going towards $B$ are positive\n"
+            },
+            {
+              "identifier": "B",
+              "content": " The sign of velocity of the particle at $C$ going towards $B$ is negative\n"
+            },
+            {
+              "identifier": "C",
+              "content": " The sign of velocity, acceleration and force on the particle when it is 4 cm away from $B$ going towards $A$ are negative\n"
+            },
+            {
+              "identifier": "D",
+              "content": " The sign of acceleration and force on the particle when it is at points $B$ is negative"
+            }
+          ],
+          "correct_options": [
+            "A",
+            "C",
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Consider the diagram,</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i7fkg4/3b84b54d-432d-4b0b-bbaf-3cc67c1b02ee/94200750-67a0-11ef-8462-57b856774ed7/file-jaoe38c1m0i7fkg5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i7fkg4/3b84b54d-432d-4b0b-bbaf-3cc67c1b02ee/94200750-67a0-11ef-8462-57b856774ed7/file-jaoe38c1m0i7fkg5.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>(a) When the particle is 3 cm away from $A$ going towards $B$, velocity is towards $A B$ i.e., positive.̌/p&gt;\n</p><p>In SHM, acceleration is always towards mean position ( $O$ ) in this case.</p>\n<p>Hence, it is positive.</p>\n<p>(b) When the particle is at $C$, velocity is towards $B$ hence positive.</p>\n<p>(c) When the particle is 4 cm away from $B$ going towards $A$ velocity is negative and acceleration is towards mean position ( $O$ ) hence negative.</p>\n<p>(d) Acceleration is always towards mean position ( $O$ ). When the particle is at $B$ acceleration and force are towards $B A$ that is negative.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcqm",
+      "user_stats": {
+        "timeSpent": 43067,
+        "correct": 22,
+        "wrong": 78,
+        "options": {
+          "0": 28,
+          "1": 16,
+          "2": 28,
+          "3": 28
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m0jju7e0",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Displacement versus time curve for a particle executing SHM is shown in figure. Identify the points marked at which (i) velocity of the oscillator is zero, (ii) speed of the oscillator is maximum.</p>\n<p>Displacement versus time curve for a particle executing SHM is shown in figure. Identify the points marked at which (i) velocity of the oscillator is zero, (ii) speed of the oscillator is maximum.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>In SHM y-t graph, zero displacement values correspond to mean position; where velocity of the oscillator is maximum.</p>\n<p>Whereas the crest and troughs represent extreme positions, where displacement is maximum and velocity of the oscillator is minimum and is zero. Hence,</p>\n<p>(a) $A, C, E, G$ are either crest or trough having zero velocity.</p>\n<p>(b) speed is maximum at mean positions represented by $B, D, F, H$ points.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw3ln",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Two identical springs of spring constant $k$ are attached to a block of mass $m$ and to fixed supports as shown in figure. When the mass is displaced from equilibrium position by a distance $x$ towards right, find the restoring force.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i7wlp8/bf246592-b7cc-4a74-9f60-734beff581b7/6dd911c0-67a2-11ef-94db-85adbd73e118/file-jaoe38c1m0i7wlp9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i7wlp8/bf246592-b7cc-4a74-9f60-734beff581b7/6dd911c0-67a2-11ef-94db-85adbd73e118/file-jaoe38c1m0i7wlp9.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the diagram in which the block is displaced right through x.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i7xfol/89cd0876-8880-480f-9d6c-e6a34b224db3/85022d50-67a2-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i7xfom.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i7xfol/89cd0876-8880-480f-9d6c-e6a34b224db3/85022d50-67a2-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i7xfom.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>The right spring gets compressed by $x$ developing a restoring force $k x$ towards left on the block. The left spring is stretched by an amount $x$ developing a restoring force $k x$ towards left on the block as given in the free body diagram of the block.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i7ytlw/3ded3a7b-90dd-400c-aa11-8b65d51a352c/ab931240-67a2-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i7ytlx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i7ytlw/3ded3a7b-90dd-400c-aa11-8b65d51a352c/ab931240-67a2-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i7ytlx.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{aligned}\n\\text { Hence, total force (restoring) } &amp; =(k x+k x) \\quad[\\because \\text { Both forces are in same direction }] \\\\\n&amp; =2 k x \\text { towards left }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jju9tj",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>What are the two basic characteristics of a simple harmonic motion?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The two basic characteristics of a simple harmonic motion</p>\n<p>(i) Acceleration is directly proportional to displacement.</p>\n<p>(ii) The direction of acceleration is always towards the mean position, that is opposite to displacement.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw3nx",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>When will the motion of a simple pendulum be simple harmonic?</p>\n",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the diagram of a simple pendulum.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i89ncl/266083b1-97bf-4f0a-bc79-0a5f1af1b4fa/d8a3fa50-67a3-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i89ncm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i89ncl/266083b1-97bf-4f0a-bc79-0a5f1af1b4fa/d8a3fa50-67a3-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i89ncm.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>The bob is displaced through an angle $\\theta$ shown.</p>\n<p>The restoring torque about the fixed point $O$ is</p>\n<p>$$\\tau=-m g \\sin \\theta$$</p>\n<p>If $\\theta$ is small angle in radians, then $\\sin \\theta \\approx \\theta$</p>\n<p>$$\\Rightarrow \\quad \\tau \\approx-m g \\theta \\Rightarrow \\tau \\propto(-\\theta)$$</p>\n<p>Hence, motion of a simple pendulum is SHM for small angle of oscillations.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjubbt",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>What is the ratio of maximum acceleration to the maximum velocity of a simple harmonic oscillator?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let $x=A \\sin \\omega t$ is the displacement function of SHM.</p>\n<p>Velocity,</p>\n<p>$$\\begin{aligned}\nv & =\\frac{d x}{d t}=A \\omega \\cos \\omega t \\\\\nv_{\\max } & =A \\omega|\\cos \\omega t|_{\\max } \\\\\n& =A \\omega \\times 1=\\omega A \\quad \\left[\\because|\\cos \\omega t|_{\\max }=1\\right] \\ldots \\text { (i) }\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { Acceleration, } a=\\frac{d v}{d t}=-\\omega A \\cdot \\omega \\sin \\omega t & \\\\\n& =-\\omega^2 A \\sin \\omega t \\\\\n\\left|a_{\\max }\\right| & =\\left|\\left(-\\omega^2 A\\right)(+1)\\right| \\quad \n\\left[\\because(\\sin \\omega t)_{\\max }=1\\right]\n\\\\\n\\left|a_{\\max }\\right| & =\\omega^2 A\\quad \\text{... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&\\text { From Eqs. (i) and (ii), we get }\\\\\n&\\begin{array}{ll}\n\\Rightarrow & \\frac{v_{\\max }}{a_{\\max }}=\\frac{\\omega A}{\\omega^2 A}=\\frac{1}{\\omega} \\\\\n\\Rightarrow \\quad & \\frac{a_{\\max }}{v_{\\max }}=\\omega\n\\end{array}\n\\end{aligned}$$</p>\n"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw3py",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>What is the ratio between the distance travelled by the oscillator in one time period and amplitude?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The diagram represents</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i8l08i/f1184d25-31f6-4148-870f-f64beaf14091/147ee520-67a5-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i8l08j.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i8l08i/f1184d25-31f6-4148-870f-f64beaf14091/147ee520-67a5-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i8l08j.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>the motion of a particle executing SHM between $A$ and $B$.</p>\n<p>Total distance travelled while it goes from $A$ to $B$ and returns to $A$ is</p>\n<p>$$\\begin{aligned}\n&amp; =A O+O B+B O+O A \\\\\n&amp; =A+A+A+A=4 A \\quad [\\because O A=A]\n\\end{aligned}$$</p>\n<p>Amplitude $=O A=A$</p>\n<p>Hence, ratio of distance and amplitude $=\\frac{4 A}{A}=4$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw3s3",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In figure, what will be the sign of the velocity of the point $P^{\\prime}$, which is the projection of the velocity of the reference particle $P . P$ is moving in a circle of radius $R$ in anti-clockwise direction.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i8zxsx/90824b80-e5e0-482e-b7a4-f84881720e06/b3c0e510-67a6-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i8zxsy.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i8zxsx/90824b80-e5e0-482e-b7a4-f84881720e06/b3c0e510-67a6-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i8zxsy.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>As the particle on reference circle moves in anti-iclockwise direction. The projection will move from $P$ 'to $O$ towards left.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i97ocr/f33fe695-87f9-4a3b-9f1e-70a5d6540a88/8aed6db0-67a7-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i97ocs.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i97ocr/f33fe695-87f9-4a3b-9f1e-70a5d6540a88/8aed6db0-67a7-11ef-a449-e5f4d9a0afd3/file-jaoe38c1m0i97ocs.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Hence, in the position shown the velocity is directed from $P^{\\prime} \\rightarrow P^{\\prime \\prime}$ i.e., from right to left, hence sign is negative.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjuepr",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that for a particle executing SHM, velocity and displacement have a phase difference of $\\pi / 2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let us assume the displacement function of SHM</p>\n<p>$$\\begin{aligned}\n\\text{where,}\\quad x & =a \\cos \\omega t \\\\\na & =\\text { amplitude of motion } \\\\\n\\text { velocity } v & =\\frac{d x}{d t}\n\\end{aligned}$$</p>\n<p>or $\\frac{d x}{d t}=a(-\\sin \\omega t) \\omega=-\\omega a \\sin \\omega t$</p>\n<p>or $v=-\\omega a \\sin \\omega t$</p>\n<p>$$=\\omega \\operatorname{acos}\\left(\\frac{\\pi}{2}+\\omega t\\right) \\quad\\left[\\because \\sin \\omega t=-\\cos \\left(\\frac{\\pi}{2}+\\omega t\\right)\\right]$$</p>\n<p>Now, phase of displacement $=\\omega t$</p>\n<p>Phase of velocity $=\\frac{\\pi}{2}+\\omega t$</p>\n<p>$\\therefore$ Difference in phase of velocity to that of phase of displacement</p>\n<p>$$=\\frac{\\pi}{2}+\\omega t-\\omega t=\\frac{\\pi}{2}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw3un",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Draw a graph to show the variation of $\\mathrm{PE}, \\mathrm{KE}$ and total energy of a simple harmonic oscillator with displacement.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Potential energy ( PE ) of a simple harmonic oscillator is where,</p>\n<p>$$\\begin{aligned}\n&amp; =\\frac{1}{2} k x^2=\\frac{1}{2} m \\omega^2 x^2 \\quad \\text{.... (i)}\\\\\nk &amp; =\\text { force constant }=m \\omega^2\n\\end{aligned}$$</p>\n<p>where, $$\\quad k=\\text { force constant }=m \\omega^2$$</p>\n<p>When, PE is plotted against displacement $x$, we will obtain a parabola.</p>\n<p>When $x=0, \\mathrm{PE}=0$</p>\n<p>When $x= \\pm A, P E=$ maximum</p>\n<p>$$=\\frac{1}{2} m \\omega^2 A^2$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { KE of a simple harmonic oscillator }=\\frac{1}{2} m v^2\\quad \\left[\\because v=\\omega \\sqrt{A^2-x^2}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; =\\frac{1}{2} m\\left[\\omega \\sqrt{A^2-x^2}\\right]^2 \\\\\n&amp; =\\frac{1}{2} m \\omega^2\\left(A^2-x^2\\right)\\quad \\text{... (ii)}\n\\end{aligned}$$</p>\n<p>This is also parabola, if plot KE against displacement $x$.</p>\n<p>$$\\begin{aligned}\n\\text{i.e.}\\quad &amp; \\mathrm{KE}=0 \\text { at } x= \\pm A \\\\\n\\text{and}\\quad &amp; \\mathrm{KE}=\\frac{1}{2} m \\omega^2 A^2 \\text { at } x=0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { Now, total energy of the simple harmonic oscillator }=\\mathrm{PE}+\\mathrm{KE} \\quad \\text { [using Eqs. (i) and (ii)] }\\\\\n&amp;\\begin{aligned}\n&amp; =\\frac{1}{2} m \\omega^2 x^2+\\frac{1}{2} m \\omega^2\\left(A^2-x^2\\right) \\\\\n&amp; =\\frac{1}{2} m \\omega^2 x^2+\\frac{1}{2} m \\omega^2 A^2-\\frac{1}{2} m \\omega^2 x^2 \\\\\n\\mathrm{TE} &amp; =\\frac{1}{2} m \\omega^2 A^2\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Which is constant and does not depend on $x$.\nPlotting under the above guidelines KE, PE and TE versus displacement $x$-graph as follows</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0i9ogv5/282fa35c-9ea7-4d95-8fdf-5f6ae7652638/5de5cd10-67a9-11ef-b8ca-8d439c57bada/file-jaoe38c1m0i9ogv6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0i9ogv5/282fa35c-9ea7-4d95-8fdf-5f6ae7652638/5de5cd10-67a9-11ef-b8ca-8d439c57bada/file-jaoe38c1m0i9ogv6.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjufrp",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The length of a second's pendulum on the surface of earth is 1 m . What will be the length of a second's pendulum on the moon?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>A second's pendulum means a simple pendulum having time period $T=2 \\mathrm{~s}$.</p>\n<p>For a simple pendulum,</p>\n<p>$$T=2 \\pi \\sqrt{\\frac{l}{g}}$$</p>\n<p>where, $l=$ length of the pendulum and\n$g=$ acceleration due to gravity on surface of the earth.</p>\n<p>$$T_e=2 \\pi \\sqrt{\\frac{l_e}{g_e}}\\quad \\text{.... (i)}$$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n\\text { On the surface of the moon, }\\quad & T_m=2 \\pi \\sqrt{\\frac{l_m}{g_m}} \\quad \\text{... (ii)}\\\\\n\\therefore \\quad & \\frac{T_e}{T_m}=\\frac{2 \\pi}{2 \\pi} \\sqrt{\\frac{l_e}{g_e}} \\times \\sqrt{\\frac{g_m}{l_m}}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&T_e=T_m \\text { to maintain the second's pendulum time period. }\\\\\n&\\therefore \\quad 1=\\sqrt{\\frac{l_e}{l_m} \\times \\frac{g_m}{g_e}}\\quad \\text{.... (iii)}\n\\end{aligned}$$</p>\n<p>But the acceleration due to gravity at moon is $1 / 6$ of the acceleration due to gravity at earth, i.e.,</p>\n<p>$$g_m=\\frac{g_e}{6}$$</p>\n<p>Squaring Eq. (iii) and putting this value,</p>\n<p>$$\\begin{aligned}\n1 & =\\frac{l_e}{l_m} \\times \\frac{g_e / 6}{g_e}=\\frac{l_e}{l_m} \\times \\frac{1}{6} \\\\\n\\Rightarrow \\quad \\frac{l_e}{6 l_m} & =1 \\Rightarrow 6 l_m=l_e \\\\\n\\Rightarrow \\quad l_m & =\\frac{1}{6} l_e=\\frac{1}{6} \\times 1=\\frac{1}{6} \\mathrm{~m}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw3xx",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the time period of mass $M$ when displaced from its equilibrium position and then released for the system shown in figure.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0iaiwbb/d7e18b75-361e-49c0-878f-eff0760a69f6/ac1b2270-67ac-11ef-91b1-49915b490124/file-jaoe38c1m0iaiwbc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0iaiwbb/d7e18b75-361e-49c0-878f-eff0760a69f6/ac1b2270-67ac-11ef-91b1-49915b490124/file-jaoe38c1m0iaiwbc.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>For the calculation purpose, in this situation we will neglect gravity because it is constant throughout and will not effect the net restoring force.</p>\n<p>Let in the equilibrium position, the spring has extended by an amount $x_0$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0iak9ao/d089ee0b-f4f4-4e2e-bc2b-afc64d2f0259/d1f19100-67ac-11ef-91b1-49915b490124/file-jaoe38c1m0iak9ap.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0iak9ao/d089ee0b-f4f4-4e2e-bc2b-afc64d2f0259/d1f19100-67ac-11ef-91b1-49915b490124/file-jaoe38c1m0iak9ap.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Now, if the mass is given a further displacement downwards by an amount $x$. The string and spring both should increase in length by $x$.\nBut, string is inextensible, hence the spring alone will contribute the total extension $x+x=2 x$, to lower the mass down by $x$ from initial equilibrium mean position $x_0$. So, net extension in the spring $\\left(=2 x+x_0\\right)$.\nNow force on the mass before bulling (in the $x_0$ extension case)</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0ial5mw/df0a312c-8da5-4f91-bc65-7ab1cea8dc9c/eaecd480-67ac-11ef-91b1-49915b490124/file-jaoe38c1m0ial5mx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0ial5mw/df0a312c-8da5-4f91-bc65-7ab1cea8dc9c/eaecd480-67ac-11ef-91b1-49915b490124/file-jaoe38c1m0ial5mx.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{aligned}\n&amp;\\begin{array}{ll} \n&amp; F=2 T \\\\\n\\text { But } &amp; T=k x_0 \\quad \\text { [where } k \\text { is spring constant] }\\\\\n\\therefore &amp; F=2 k x_0 \\quad \\text{... (i)}\n\\end{array}\\\\\n&amp;\\end{aligned}$$</p>\n<p>When the mass is lowered down further by $x$,</p>\n<p>$$F^{\\prime}=2 T^{\\prime}$$</p>\n<p>But new spring length $=\\left(2 x+x_0\\right)$</p>\n<p>$$\\therefore \\quad F^{\\prime}=2 k\\left(2 x+x_0\\right)\\quad \\text{.... (ii)}$$</p>\n<p>Restoring force on the system.</p>\n<p>$$F_{\\text {restoring }}=-\\left[F^{\\prime}-F\\right]$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0iapsg0/2c202ab8-d5ba-451f-b413-f4ba437c056a/6bc7e400-67ad-11ef-91b1-49915b490124/file-jaoe38c1m0iapsg1.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0iapsg0/2c202ab8-d5ba-451f-b413-f4ba437c056a/6bc7e400-67ad-11ef-91b1-49915b490124/file-jaoe38c1m0iapsg1.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Using Eqs. (i) and (ii), we get</p>\n<p>$$\n\\begin{aligned}\nF_{\\text {restoring }} &amp; =-\\left[2 k\\left(2 x+x_0\\right)-2 k x_0\\right] \\\\\n&amp; =-\\left[2 \\times 2 k x+2 k x_0-2 k x_0\\right] \\\\\n&amp; =-4 k x \\\\\n\\text{or}\\quad M a &amp; =-4 k x \\\\\n\\text{where},\\quad a &amp; =\\text { acceleration } \\quad \\text{(As, F = ma)}\\\\\n\\Rightarrow \\quad a &amp; =-\\left(\\frac{4 k}{M}\\right) x\n\\end{aligned}$$</p>\n<p>$k, M$ being constant.</p>\n<p>$\\therefore$ $a \\propto-x$</p>\n<p>Hence, motion is SHM.</p>\n<p>Comparing the above acceleration expression with standard SHM equation $a=-\\omega^2 x$, we get</p>\n<p>$$\\begin{aligned}\n&amp;\\omega^2=\\frac{4 k}{M} \\Rightarrow \\omega=\\sqrt{\\frac{4 k}{M}}\\\\\n\\therefore \\quad &amp;\\text { Time period } T=\\frac{2 \\pi}{\\omega}=\\frac{2 \\pi}{\\sqrt{\\frac{4 k}{M}}}=2 \\pi \\sqrt{\\frac{M}{4 k}}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjulf0",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Show that the motion of a particle represented by $y=\\sin \\omega t-\\cos \\omega t$ is simple harmonic with a period of $2 \\pi / \\omega$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We have to convert the given combination of two harmonic functions to a single harmonic (sine or cosine) function.</p>\n<p>Given, displacement function</p>\n<p>$$\\begin{aligned}\ny & =\\sin \\omega t-\\cos \\omega t \\\\\n& =\\sqrt{2}\\left(\\frac{1}{\\sqrt{2}} \\cdot \\sin \\omega t-\\frac{1}{\\sqrt{2}} \\cdot \\cos \\omega t\\right) \\\\\n& =\\sqrt{2}\\left[\\cos \\left(\\frac{\\pi}{4}\\right) \\cdot \\sin \\omega t-\\sin \\left(\\frac{\\pi}{4}\\right) \\cdot \\cos \\omega t\\right] \\\\\n& =\\sqrt{2}\\left[\\sin \\left(\\omega t-\\frac{\\pi}{4}\\right)\\right]=\\sqrt{2}\\left[\\sin \\left(\\omega t-\\frac{\\pi}{4}\\right)\\right]\n\\end{aligned}$$</p>\n<p>Comparing with standard equation</p>\n<p>$$y=\\operatorname{asin}(\\omega t+\\phi), \\text { we get }=\\omega=\\frac{2 \\pi}{T} \\Rightarrow T=\\frac{2 \\pi}{\\omega}$$</p>\n<p>Clearly, the function represents SHM with a period $T=\\frac{2 \\pi}{\\omega}$.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjulh3",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the displacement of a simple harmonic oscillator at which its PE is half of the maximum energy of the oscillator.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let us assume that the required displacement be $x$.</p>\n<p>$\\therefore$ Potential energy of the simple harmonic oscillator $=\\frac{1}{2} k x^2$</p>\n<p>$$\\begin{aligned}\n\\text{where,}\\quad k & =\\text { force constant }=m \\omega^2 \\\\\n\\therefore \\quad \\mathrm{PE} & =\\frac{1}{2} m \\omega^2 x^2\\quad \\text{... (i)}\n\\end{aligned}$$</p>\n<p>Maximum energy of the oscillator</p>\n<p>$$\n\\begin{aligned}\n&\\mathrm{TE}=\\frac{1}{2} m \\omega^2 A^2 \\quad\\left[\\because x_{\\max }=A\\right] \\quad\\text { ....(ii) }\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text{where,}\\quad A & =\\text { amplitude of motion } \\\\\n\\text{Given,}\\quad\\mathrm{PE} & =\\frac{1}{2} \\mathrm{TE}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad & \\frac{1}{2} m \\omega^2 x^2 =\\frac{1}{2}\\left[\\frac{1}{2} m \\omega^2 A^2\\right] \\\\\n\\Rightarrow \\quad & x^2 =\\frac{A^2}{2} \\\\\n\\text { or } \\quad & x =\\sqrt{\\frac{A^2}{2}}= \\pm \\frac{A}{\\sqrt{2}}\n\\end{aligned}$$</p>\n<p>Sign $$\\pm$$ indicates either side of mean position.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjulj6",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A body of mass $m$ is situated in a potential field $U(x)=U_0(1-\\cos \\alpha x)$ when, $U_0$ and $\\alpha$ are constants. Find the time period of small oscillations.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given potential energy associated with the field</p>\n<p>$$U(x)=U_0(1-\\cos \\alpha x)\\quad \\text{... (i)}$$</p>\n<p>Now, force $F=-\\frac{d U(x)}{d x}$</p>\n<p>$$\\left[\\because \\text { for conservatine force } f, \\text { we can write } f=\\frac{-d u}{d x}\\right]$$</p>\n<p>$$\\begin{aligned}\n&\\text { [We have assumed the field to be conservative] }\\\\\n&\\begin{aligned}\n& F=-\\frac{d}{d x}\\left(U_0-U_0 \\cos \\alpha x\\right)=-U_0 \\alpha \\sin \\alpha x \\\\\n& F=-U_0 \\alpha^2 x\\quad \\text{... (ii)}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$[\\because \\text { for small oscillations } \\alpha x \\text { is small, } \\sin \\alpha x \\approx \\alpha x \\text { ] }$$</p>\n<p>$$\\Rightarrow \\quad F \\propto(-x)$$</p>\n<p>As, $U_0, \\alpha$ being constant.</p>\n<p>$\\therefore$ Motion is SHM for small oscillations.</p>\n<p>Standard equation for SHM</p>\n<p>$$F=-m \\omega^2 x\\quad \\text{... (iii)}$$</p>\n<p>Comparing Eqs. (ii) and (iii), we get</p>\n<p>$$\\begin{aligned}\nm \\omega^2 & =U_0 \\alpha^2 \\\\\n\\omega^2 & =\\frac{U_0 \\alpha^2}{m} \\text { or } \\omega=\\sqrt{\\frac{U_0 \\alpha^2}{m}} \\\\\n\\therefore \\quad \\text { Time period } T & =\\frac{2 \\pi}{\\omega}=2 \\pi \\sqrt{\\frac{m}{U_0 \\alpha^2}}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw417",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A mass of 2 kg is attached to the spring of spring constant $50 \\mathrm{Nm}^{-1}$. The block is pulled to a distance of 5 cm from its equilibrium position at $x=0$ on a horizontal frictionless surface from rest at $t=0$. Write the expression for its displacement at anytime $t$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the diagram of the spring block system. It is a SHM with amplitude of 5 cm about the mean position shown.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0ibpmey/54a1b67d-adfc-447f-9528-a5071ecf6c2c/5040a1a0-67b1-11ef-91b1-49915b490124/file-jaoe38c1m0ibpmez.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0ibpmey/54a1b67d-adfc-447f-9528-a5071ecf6c2c/5040a1a0-67b1-11ef-91b1-49915b490124/file-jaoe38c1m0ibpmez.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Given, $\\quad$ spring constant $k=50 \\mathrm{~N} / \\mathrm{m}$</p>\n<p>$m=$ mass attached $=2 \\mathrm{~kg}$</p>\n<p>$\\therefore \\quad$ Angular frequency $\\omega=\\sqrt{\\frac{k}{m}}=\\sqrt{\\frac{50}{2}}=\\sqrt{25}=5 \\mathrm{rad} / \\mathrm{s}$</p>\n<p>Assuming the displacement function</p>\n<p>$$y(t)=A \\sin (\\omega t+\\phi)$$</p>\n<p>where, $\\phi=$ initial phase</p>\n<p>But given at $t=0, y(t)=+A$</p>\n<p>$$y(0)=+A=A \\sin (\\omega \\times 0+\\phi)$$</p>\n<p>or $$\\quad \\sin \\phi=1 \\Rightarrow \\phi=\\frac{\\pi}{2}$$</p>\n<p>$\\therefore$ The desired equation is $\\quad y(t)=A \\sin \\left(\\omega t+\\frac{\\pi}{2}\\right)=A \\cos \\omega t$</p>\n<p>Putting $A=5 \\mathrm{~cm}, \\omega=5 \\mathrm{rad} / \\mathrm{s}$</p>\n<p>we get, $y(t)=5 \\sin 5 t$</p>\n<p>where, $t$ is in second and $y$ is in centimetre.</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw445",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Consider a pair of identical pendulums, which oscillate with equal amplitude independently such that when one pendulum is at its extreme position making an angle of $2^{\\circ}$ to the right with the vertical, the other pendulum makes an angle of $1^{\\circ}$ to the left of the vertical. What is the phase difference between the pendulums?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the situations shown in the diagram (i) and (ii)</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0ic15v4/e94c0045-c7bf-489f-b1c4-e6b4745c4954/912d4f00-67b2-11ef-91b1-49915b490124/file-jaoe38c1m0ic15v5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0ic15v4/e94c0045-c7bf-489f-b1c4-e6b4745c4954/912d4f00-67b2-11ef-91b1-49915b490124/file-jaoe38c1m0ic15v5.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Assuming the two pendulums follow the following functions of their angular displacements</p>\n<p>$$\\begin{array}{ll} \n&amp; \\theta_1=\\theta_0 \\sin \\left(\\omega t+\\phi_1\\right) \\quad \\text{... (i)}\\\\\n\\text { and } &amp; \\theta_2=\\theta_0 \\sin \\left(\\omega t+\\phi_2\\right)\\quad \\text{... (ii)}\n\\end{array}$$</p>\n<p>As it is given that amplitude and time period being equal but phases being different.</p> \n<p>Now, for first pendulum at any time $t$</p>\n<p>$\\theta_1=+\\theta_0\\quad$ [Right extreme]</p>\n<p>From Eq. (i), we get</p>\n<p>$$\\begin{aligned}\n\\Rightarrow\\quad \\theta_0 &amp; =\\theta_0 \\sin \\left(\\omega t+\\phi_1\\right) \\text { or } 1=\\sin \\left(\\omega t+\\phi_1\\right) \\\\\n\\Rightarrow\\quad \\sin \\frac{\\pi}{2} &amp; =\\sin \\left(\\omega t+\\phi_1\\right) \\\\\n\\text{or}\\quad \\left(\\omega t+\\phi_1\\right) &amp; =\\frac{\\pi}{2}\\quad \\text{... (iii)}\n\\end{aligned}$$</p>\n<p>Similarly, at the same instant t for pendulum second, we have</p>\n<p>$$\\theta_2=-\\frac{\\theta_0}{2}$$</p>\n<p>where $\\theta_0=2^{\\circ}$ is the angular amplitude of first pendulum. For the second pendulum, the angular displacement is one degree ,therefore $\\theta_2=\\frac{\\theta_0}{2}$ and negative sign is taken to show for being left to mean position.</p>\n<p>From Eq. (ii), then</p>\n<p>$$-\\frac{\\theta_0}{2}=\\theta_0 \\sin \\left(\\omega t+\\phi_2\\right)$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow\\quad\\sin \\left(\\omega t+\\phi_2\\right) &amp; =-\\frac{1}{2} \\Rightarrow\\left(\\omega t+\\phi_2\\right)=-\\frac{\\pi}{6} \\text { or } \\frac{7 \\pi}{6} \\\\\n\\text{or}\\quad \\left(\\omega t+\\phi_2\\right) &amp; =-\\frac{\\pi}{6} \\text { or } \\frac{7 \\pi}{6}\\quad \\text{.... (iv)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { From Eqs. (iv) and (iii), the difference in phases }\\\\\n&amp;\\begin{gathered}\n\\left(\\omega t+\\phi_2\\right)-\\left(\\omega t+\\phi_1\\right)=\\frac{7 \\pi}{6}-\\frac{\\pi}{2}=\\frac{7 \\pi-3 \\pi}{6}=\\frac{4 \\pi}{6} \\\\\n\\text { or }\\quad \\left(\\phi_2-\\phi_1\\right)=\\frac{4 \\pi}{6}=\\frac{2 \\pi}{3}=120^{\\circ}\n\\end{gathered}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw47q",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A person normally weighing 50 kg stands on a massless platform which oscillates up and down harmonically at a frequency of $2.0 \\mathrm{~s}^{-1}$ and an amplitude 5.0 cm . A weighing machine on the platform gives the persons weight against time.</p>\n<p>(a) Will there be any change in weight of the body, during the oscillation?</p>\n<p>(b) If answer to part (a) is yes, what will be the maximum and minimum reading in the machine and at which position?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>In this case acceleration is variable. In accelerated motion, weight of body depends on the magnitude and direction of acceleration for upward or downward motion.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0ie4klh/81292baa-fdf9-4a73-989e-92503a785f39/c23e3750-67ba-11ef-9f98-2bfeae2701ea/file-jaoe38c1m0ie4kli.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0ie4klh/81292baa-fdf9-4a73-989e-92503a785f39/c23e3750-67ba-11ef-9f98-2bfeae2701ea/file-jaoe38c1m0ie4kli.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>(a) Hence, the weight of the body changes during oscillations</p>\n<p>(b) Considering the situation in two extreme positions, as their acceleration is maximum in magnitude.</p>\n<p>we have,</p>\n<p>$$m g-N=m a$$</p>\n<p>$\\because$ At the highest point, the platform is accelerating downward.</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad N &amp; =m g-m a \\\\\n\\text{But}\\quad a &amp; =\\omega^2 A \\quad \\text{[in magnitude]}\\\\\n\\therefore \\quad N &amp; =m g-m \\omega^2 A \\\\\n\\text{where,}\\quad A &amp; =\\text { amplitude of motion. } \\\\\n\\text{Given,}\\quad m &amp; =50 \\mathrm{~kg}, \\text { frequency } v=2 \\mathrm{~s}^{-1} \\\\\n\\therefore\\quad \\omega &amp; =2 \\pi v=4 \\pi \\mathrm{rad} / \\mathrm{s} \\\\\nA &amp; =5 \\mathrm{~cm}=5 \\times 10^{-2} \\mathrm{~m} \\\\\n\\therefore \\quad N &amp; =50 \\times 9.8-50 \\times(4 \\pi)^2 \\times 5 \\times 10^{-2} \\\\\n&amp; =50\\left[9.8-16 \\pi^2 \\times 5 \\times 10^{-2}\\right] \\\\\n&amp; =50[9.8-7.89] \\\\\n&amp; =50 \\times 1.91 \\\\\n&amp; =95.5 \\mathrm{~N}\n\\end{aligned}$$</p>\n<p>When the platform is at the lowest position of its oscillation,</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0ie8wm3/08c34960-742e-401c-8a4b-5db79b5f8cf3/3ac32eb0-67bb-11ef-9f98-2bfeae2701ea/file-jaoe38c1m0ie8wm4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0ie8wm3/08c34960-742e-401c-8a4b-5db79b5f8cf3/3ac32eb0-67bb-11ef-9f98-2bfeae2701ea/file-jaoe38c1m0ie8wm4.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>It is accelerating towards mean position that is vertically upwards. Writing equation of motion</p>\n<p>$$\\begin{aligned}\nN-m g &amp; =m a=m \\omega^2 A \\\\\n\\text{or}\\quad N &amp; =m g+m \\omega^2 A \\\\\n&amp; =m\\left[g+\\omega^2 A\\right] \\\\\n\\text{Putting the data}\\quad N &amp; =50\\left[9.8+(4 \\pi)^2 \\times 5 \\times 10^{-2}\\right] \\\\\n&amp; =50\\left[9.8+(12.56)^2 \\times 5 \\times 10^{-2}\\right] \\\\\n&amp; =50[9.8+7.88] \\\\\n&amp; =50 \\times 17.68=884 \\mathrm{~N}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n&amp;\\text { Now, the machine reads the normal reaction. It is clear that }\\\\\n&amp;\\begin{aligned}\n&amp; \\text { maximum weight }=884 \\mathrm{~N} \\quad \\text{(at lowest point)}\\\\\n&amp; \\text { minimum weight }=95.5 \\mathrm{~N} \\quad \\text{(at top point)}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw4ba",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A body of mass $m$ is attached to one end of a massless spring which is suspended vertically from a fixed point. The mass is held in hand, so that the spring is neither stretched nor compressed. Suddenly, the support of the hand is removed. The lowest position attained by the mass during oscillation is 4 cm below the point, where it was held in hand.</p>\n<p>(a) What is the amplitude of oscillation?</p>\n<p>(b) Find the frequency of oscillation?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>When the support of the hand is removed, the body oscillates about a mean position.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0izvfdy/a0f695fe-a273-4d71-a0f4-f336ff1e2045/ccc73460-680f-11ef-af6a-6dda80cad5a1/file-jaoe38c1m0izvfdz.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0izvfdy/a0f695fe-a273-4d71-a0f4-f336ff1e2045/ccc73460-680f-11ef-af6a-6dda80cad5a1/file-jaoe38c1m0izvfdz.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Suppose $x$ is the maximum extension in the spring when it reaches the lowest point in oscillation.</p>\n<p>Loss in PE of the block $=m g x\\quad \\text{... (i)}$</p>\n<p>where, $m=$ mass of the block</p>\n<p>Gain in elastic potential energy of the spring</p>\n<p>$$=\\frac{1}{2} k x^2\\quad\\text{... (ii)}$$</p>\n<p>As the two are equal, conserving the mechanical energy, we get,</p>\n<p>$$m g x=\\frac{1}{2} k x^2 \\text { or } x=\\frac{2 m g}{k}\\quad \\text{.... (iii)}$$</p>\n<p>Now, the mean position of oscillation will be, when the block is balanced by the spring.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0izy4yb/56727458-1ca2-41f4-93d0-3f0a53f22b05/18252e30-6810-11ef-8add-17f293659ee8/file-jaoe38c1m0izy4yc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0izy4yb/56727458-1ca2-41f4-93d0-3f0a53f22b05/18252e30-6810-11ef-8add-17f293659ee8/file-jaoe38c1m0izy4yc.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>$$\\begin{aligned}\n&amp;\\text { If } x^{\\prime} \\text { is the extension in that case, then }\\\\\n&amp;\\begin{array}{lrl} \n&amp; F &amp; =+k x^{\\prime} \\\\\n\\text { But } &amp; F &amp; =m g \\\\\n\\Rightarrow &amp; m g &amp; =+k x^{\\prime} \\\\\n\\text { or } &amp; x^{\\prime} &amp; =\\frac{m g}{k}\\quad \\text{... (iv)}\n\\end{array}\n\\end{aligned}$$</p>\n<p>Dividing Eq. (iii) by Eq. (iv),</p>\n<p>$$\\begin{aligned}\n\\frac{x}{x^{\\prime}} &amp; =\\frac{2 m g}{k} / \\frac{m g}{k}=2 \\\\\nx &amp; =2 x^{\\prime}\n\\end{aligned}$$</p>\n<p>But given $x=4 \\mathrm{~cm}$ (maximum extension from the unstretched position)</p>\n<p>$$\\begin{array}{lr}\n\\therefore &amp; 2 x^{\\prime}=4 \\\\\n\\therefore &amp; x^{\\prime}=\\frac{4}{2}=2 \\mathrm{~cm}\n\\end{array}$$</p>\n<p>But the displacement of mass from the mean position to the position when spring attains its natural length is equal to amplitude of the oscillation.</p>\n<p>$$\\therefore \\quad A=x^{\\prime}=2 \\mathrm{~cm}$$</p>\n<p>where, $A=$ amplitude of the motion.</p>\n<p>(b) Time period of the oscillating system depends on mass spring constant given by</p>\n<p>$$T=2 \\pi \\sqrt{\\frac{m}{k}}$$</p>\n<p>It does not depend on the amplitude.</p>\n<p>But from Eq. (iii),</p>\n<p>$$\\begin{aligned}\n\\frac{2 m g}{k} &amp; =x \\quad \\text{(maximum extension)}\\\\\n\\frac{2 m g}{k} &amp; =4 \\mathrm{~cm}=4 \\times 10^{-2} \\mathrm{~m} \\\\\n\\therefore\\quad \\frac{m}{k} &amp; =\\frac{4 \\times 10^{-2}}{2 g}=\\frac{2 \\times 10^{-2}}{g} \\\\\n\\therefore \\quad \\frac{k}{m} &amp; =\\frac{g}{2 \\times 10^{-2}} \\\\\n\\text{and}\\quad v &amp; =\\text { frequency }=\\frac{1}{T}=\\frac{1}{2 \\pi} \\sqrt{\\frac{k}{m}} \\\\\n\\therefore \\quad v &amp; =\\frac{1}{2 \\times 3.14} \\sqrt{\\frac{g}{2 \\times 10^{-2}}} \\\\\n&amp; =\\frac{1}{2 \\times 3.14} \\sqrt{\\frac{4.9}{10^{-2}}}=\\frac{1}{628} \\times \\sqrt{4.9 \\times 100} \\\\\n&amp; =\\frac{10}{628} \\times 2.21=3.51 \\mathrm{~Hz} .\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw4et",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A cylindrical $\\log$ of wood of height $h$ and area of cross-section $A$ floats in water. It is pressed and then released. Show that the log would execute SHM with a time period.</p>\n<p>$$T=2 \\pi \\sqrt{\\frac{m}{A \\rho g}}$$</p>\n<p>where, $m$ is mass of the body and $\\rho$ is density of the liquid.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the diagram,</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0j140t4/1f5146f2-66d1-4fb8-a743-91c64f6f8b5f/a4ed6270-6814-11ef-afee-294b4a824b69/file-jaoe38c1m0j140t5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0j140t4/1f5146f2-66d1-4fb8-a743-91c64f6f8b5f/a4ed6270-6814-11ef-afee-294b4a824b69/file-jaoe38c1m0j140t5.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Let the log be pressed and let the vertical displacement at the equilibrium position be $x_0$.</p>\n<p>At equilibrium,</p>\n<p>$$m g=\\text { buoyant force }=\\left(\\rho A x_0\\right) g \\quad\\left[\\because m=V \\rho=\\left(A x_o\\right) \\rho\\right]$$</p>\n<p>When it is displaced by a further displacement $x$, the buoyant force is $A\\left(x_0+x\\right) \\rho g$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\text { Net restoring force } &amp; =\\text { Buoyant force }- \\text { Weight } \\\\\n&amp; =A\\left(x_0+x\\right) \\rho g-m g\n\\end{aligned}$$</p>\n<p>$$=(A \\rho g) x \\quad\\left[\\because m g=\\rho A x_0 g\\right]$$</p>\n<p>As displacement $x$ is downward and restoring force is upward, we can write</p>\n<p>$$\\begin{aligned}\nF_{\\text {restoring }} &amp; =-(A \\rho g) x \\\\\n&amp; =-k x\\end{aligned}$$</p>\n<p>where $$k=\\text { constant }=A \\rho g$$</p>\n<p>So, the motion is SHM</p>\n<p>($\\because F \\propto -x$)</p>\n<p>$$\\text { Now, } \\quad \\text { Acceleration } a=\\frac{F_{\\text {restoring }}}{m}=-\\frac{k}{m} x$$</p>\n<p>$$\\begin{aligned}\n\\text{Comparing with}\\quad a &amp; =-\\omega^2 x \\\\\n\\Rightarrow \\quad \\omega^2 &amp; =\\frac{k}{m} \\Rightarrow \\omega=\\sqrt{\\frac{k}{m}} \\\\\n\\Rightarrow \\quad \\frac{2 \\pi}{T} &amp; =\\sqrt{\\frac{k}{m}} \\Rightarrow T=2 \\pi \\sqrt{\\frac{m}{k}} \\\\\n\\Rightarrow \\quad T &amp; =2 \\pi \\sqrt{\\frac{m}{A \\rho g}}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw4ic",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>One end of a $V$-tube containing mercury is connected to a suction pump and the other end to atmosphere. The two arms of the tube are inclined to horizontal at an angle of $45^{\\circ}$ each. A small pressure difference is created between two columns when the suction pump is removed. Will the column of mercury in $V$-tube execute simple harmonic motion? Neglect capillary and viscous forces. Find the time period of oscillation.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the diagram shown below</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0j2p1vs/04d3c69e-7f39-47a2-8407-18e14d071b6a/d6e0f480-681a-11ef-a467-2149cf9de207/file-jaoe38c1m0j2p1vt.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0j2p1vs/04d3c69e-7f39-47a2-8407-18e14d071b6a/d6e0f480-681a-11ef-a467-2149cf9de207/file-jaoe38c1m0j2p1vt.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Let us consider an infinitesimal liquid column of length $d x$ at a height $x$ from the horizontal line.</p>\n<p>If $\\rho=$ density of the liquid</p>\n<p>$$A=\\text { cross-sectional area of } V \\text {-tube }$$</p>\n<p>PE of element $d x$ will be given as</p>\n<p>$$P E=d m g x=(A p d x) g x \\quad[\\because d m=p V=p A d x]$$</p>\n<p>where $$\\quad A p d x=d m=\\text { mass of element } d x$$</p>\n<p>$\\therefore$ Total PE of the left column</p>\n<p>$$\\begin{aligned}\n&amp; =\\int_0^{h_1} A \\rho g x d x \\\\\n&amp; =A \\rho g \\int_0^{h_1} x d x \\\\\n&amp; =A \\rho g\\left|\\frac{x^2}{2}\\right|_0^{h_1}=A \\rho g \\frac{h_1^2}{2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { But, }\\\\\n&amp;h_1=l \\sin 45^{\\circ}\\\\\n&amp;\\therefore \\quad P E=\\frac{A \\rho g}{2} l^2 \\sin ^2 45^{\\circ} \\quad \\text{... (i)}\n\\end{aligned}$$</p>\n<p>In a similar way,</p>\n<p>$$\n\\begin{aligned}\n\\text { PE of right column } &amp; =\\frac{A \\rho g}{2} l^2 \\sin ^2 45^{\\circ} \\\\\n\\text { Total PE } &amp; =\\frac{A \\rho g}{2} l^2 \\sin ^2 45^{\\circ}+\\frac{A \\rho g}{2} l^2 \\sin ^2 45^{\\circ} \\quad \\text{... (ii)}\\\\\n&amp; =2 \\times \\frac{1}{2} A \\rho g l^2\\left(\\frac{1}{\\sqrt{2}}\\right)^2=\\frac{A \\rho g l^2}{2}\\quad \\text{... (iii)}\n\\end{aligned}$$</p>\n<p>If due to pressure difference created y element of left side moves on the right side, then</p>\n<p>liquid present in the left arm $=l-y$</p>\n<p>liquid present in the right arm $=l+y$</p>\n<p>$$\\begin{array}{ll}\n\\therefore \\quad &amp; \\text { Total PE }=A \\rho g(l-y)^2 \\sin ^2 45^{\\circ}+A \\rho g(l+y)^2 \\sin ^2 45^{\\circ} \\\\\n&amp; \\text { Changes in } \\mathrm{PE}=(\\mathrm{PE})_{\\text {tinal }}-(\\mathrm{PE})_{\\text {initial }}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n\\text{or}\\quad \\Delta \\mathrm{PE} &amp; =\\frac{A \\rho g}{2}\\left[(l-y)^2+(l+y)^2-l^2\\right] \\\\\n&amp; =\\frac{A \\rho g}{2}\\left[l^2+y^2-2 l y+l^2+y^2+2 l y-l^2\\right] \\\\\n&amp; =\\frac{A \\rho g}{2}\\left[2\\left(l^2+y^2\\right)\\right] \\\\\n&amp; =A \\rho g\\left(l^2+y^2\\right)\\quad \\text{... (iv)}\n\\end{aligned}$$</p>\n<p>If $v$ is the change in velocity of the total liquid column, then change in KE</p>\n<p>$$\\begin{aligned}\n\\Delta \\mathrm{KE} &amp; =\\frac{1}{2} m v^2 \\\\\n\\text{But}\\quad m &amp; =A \\rho(2 l) \\\\\n\\therefore \\quad \\Delta \\mathrm{KE} &amp; =\\frac{1}{2} A \\rho 2 l v^2=A \\rho l v^2\\quad \\text{... (v)}\n\\end{aligned}$$</p>\n<p>From Eqs. (iv) and (v),</p>\n<p>$$\\Delta \\mathrm{PE}+\\Delta \\mathrm{KE}=A \\rho g\\left(l^2+y^2\\right)+A \\rho l v^2\\quad \\text{... (vi)}$$</p>\n<p>System being conservative.</p>\n<p>$\\therefore$ Change in total energy $=0$</p>\n<p>From Eq. (vi), $$\\quad A \\rho g\\left(l^2+y^2\\right)+A \\rho l v^2=0$$</p>\n<p>Differentiating both sides with respect to time $(t)$, we get</p>\n<p>$$\\begin{aligned}\n&amp; A \\rho g\\left[0+2 y \\frac{d y}{d t}\\right]+A \\rho l(2 v) \\frac{d v}{d t}=0 \\\\\n\\text{But,}\\quad &amp; \\frac{d y}{d t}=v \\text { and } \\frac{d v}{d t}=a \\quad \\text{[acceleration]}\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{l}\n\\Rightarrow \\quad A \\rho g(2 y v)+A \\rho l(2 v) a=0 \\\\\n\\Rightarrow \\quad (g y+l a) 2 A \\rho v=0 \\\\\n2 A \\rho v=\\text { constant and } 2 A \\rho v \\neq 0\n\\end{array}$$</p>\n<p>$$\n\\begin{aligned}\n\\therefore \\quad l a+g y &amp; =0 \\\\\na+\\left(\\frac{g}{l}\\right) y &amp; =0 \\\\\n\\text{or}\\quad \\frac{d^2 y}{d t^2}+\\left(\\frac{g}{l}\\right) y &amp; =0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { This is the standard differential equation for SHM of the form }\\\\\n&amp;\\begin{aligned}\n\\frac{d^2 y}{d t^2}+\\omega^2 y &amp; =0 \\\\\n\\therefore\\quad \\omega &amp; =\\sqrt{\\frac{g}{l}} \\\\\n\\therefore\\quad T=\\frac{2 \\pi}{\\omega} &amp; =2 \\pi \\sqrt{\\frac{l}{g}}\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw4lz",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A tunnel is dug through the centre of the earth. Show that a body of mass $m$ when dropped from rest from one end of the tunnel will execute simple harmonic motion.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the situation shown in the diagram.</p>\n<p>The gravitational force on the particle at a distance $r$ from the centre of the earth arises entirely from that portion of matter of the earth in shells internal to the position of the particle. The external shells exert no force on the particle.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0j3bmrw/abd2cd4f-0695-41d5-9ae4-c0346d7e0e4b/4ad1abd0-681d-11ef-8526-eb1a147a5690/file-jaoe38c1m0j3bmry.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0j3bmrw/abd2cd4f-0695-41d5-9ae4-c0346d7e0e4b/4ad1abd0-681d-11ef-8526-eb1a147a5690/file-jaoe38c1m0j3bmry.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>More clearly, let $g^{\\prime}$ be the acceleration at $P$.</p>\n<p>So, $$g^{\\prime}=g\\left(1-\\frac{d}{R}\\right)=g\\left(\\frac{R-d}{R}\\right)$$</p>\n<p>$$\\begin{aligned}\n&amp;\\begin{aligned}\n&amp;\\text { From figure, }\\quad \nR-d =y \\\\\n\\Rightarrow \\quad g^{\\prime} &amp; =g \\frac{y}{R}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { Force on body at } p \\text {, }\\\\\n&amp;F=-m g^{\\prime}=\\frac{-m g}{R} y\\quad \\text{... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\Rightarrow \\quad F \\propto-y \\quad \\text { [where, } y \\text { is distance from the centre] }\\\\\n&amp;\\text { So, motion is SHM. }\n\\end{aligned}$$</p>\n<p>For time period, we can write Eq. (i)</p>\n<p>As $$m a=-\\frac{M g}{R} y \\Rightarrow a=-\\frac{g}{R} y$$</p>\n<p>Comparing with $a=-\\omega^2 y$</p>\n<p>$$\\begin{aligned}\n\\omega^2 &amp; =\\frac{g}{R} \\\\\n\\Rightarrow \\quad\\left(\\frac{2 \\pi}{T}\\right) &amp; =\\frac{g}{R} \\Rightarrow T=2 \\pi \\sqrt{\\frac{R}{g}}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m0jjw4pa",
+      "book": "physics-xi-part-2",
+      "bookGroup": "ncert",
+      "chapter": "oscillations",
+      "chapterGroup": "mechanics",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A simple pendulum of time period $1 s$ and length $l$ is hung from a fixed support at 0 . Such that the bob is at a distance $H$ vertically above $A$ on the ground (figure) the amplitude is $\\theta_0$ the string snaps at $\\theta=\\theta_0 / 2$. Find the time taken by the bob to hit the ground. Also find distance from $A$ where bob hits the ground. Assume $\\theta_0$ to be small, so that $\\sin \\theta_0 \\simeq \\theta_0$ and $\\cos \\theta_0 \\simeq 1$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0j3u1kp/17d54050-3516-403d-81d1-2d6151298468/4ad0af80-681f-11ef-a26f-a5352ad60c1e/file-jaoe38c1m0j3u1kq.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0j3u1kp/17d54050-3516-403d-81d1-2d6151298468/4ad0af80-681f-11ef-a26f-a5352ad60c1e/file-jaoe38c1m0j3u1kq.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Consider the diagram,</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m0j3v1kp/239a286a-8cc1-49ab-a0f3-0672c1a3d73f/669fd380-681f-11ef-8c55-8959b7e4cab1/file-jaoe38c1m0j3v1kq.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0j3v1kp/239a286a-8cc1-49ab-a0f3-0672c1a3d73f/669fd380-681f-11ef-8c55-8959b7e4cab1/file-jaoe38c1m0j3v1kq.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Let us assume $t=0$ when $\\theta=\\theta_0$, then $\\theta=\\theta_0 \\cos \\omega t$</p>\n<p>Given a seconds pendulum $\\omega=2 \\pi \\Rightarrow \\theta=\\theta_0 \\cos 2 \\pi t\\quad \\text{... (i)}$</p>\n<p>At time $t_1$ let $\\theta=\\theta_0 / 2$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\cos 2 \\pi t_1 &amp; =1 / 2 \\Rightarrow t_1=\\frac{1}{6} \\quad\\left[\\because \\cos 2 \\pi t_1=\\cos \\frac{\\pi}{3} \\Rightarrow 2 \\pi t_1=\\frac{\\pi}{3}\\right] \\\\\n\\frac{d \\theta}{d t} &amp; =-\\left(\\theta_0 2 \\pi\\right) \\sin 2 \\pi t \\quad \\text{[from Eq. (i)]}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { At } \\quad t &amp; =t_1=\\frac{1}{6} \\\\\n\\frac{d \\theta}{d t} &amp; =-\\theta_0 2 \\pi \\sin \\frac{2 \\pi}{6}=-\\sqrt{3} \\pi \\theta_0\n\\end{aligned}$$</p>\n<p>Negative sign shows that it is going left.</p>\n<p>Thus, the linear velocity is</p>\n<p>$$u=-\\sqrt{3} \\pi \\theta_0 l \\text { perpendicular to the string. }$$</p>\n<p>The vertical component is</p>\n<p>$$u_y=-\\sqrt{3} \\pi \\theta_0 l \\sin \\left(\\theta_0 / 2\\right)$$</p>\n<p>and the horizontal component is</p>\n<p>$$u_x=-\\sqrt{3} \\pi \\theta_0 l \\cos \\left(\\theta_0 / 2\\right)$$</p>\n<p>At the time it snaps, the vertical height is</p>\n<p>$$H^{\\prime}=H+l\\left(1-\\cos \\left(\\theta_0 / 2\\right)\\right)\\quad \\text{... (ii)}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { Let the time required for fall be } t \\text {, then }\\\\\n&amp;H^{\\prime}=u_y t+(1 / 2) g t^2 \\quad \\text { (notice } g \\text { also in the negative direction) }\n\\end{aligned}$$</p>\n<p>or $$\\frac{1}{2} g t^2+\\sqrt{3} \\pi \\theta_0 l \\sin \\frac{\\theta_o}{2} t-H^{\\prime}=0$$</p>\n<p>$\\therefore$ $$t=\\frac{-\\sqrt{3} \\pi \\theta_0 l \\sin \\frac{\\theta_0}{2} \\pm \\sqrt{3 \\pi^2 \\theta_0^2 l^2 \\sin ^2 \\frac{\\theta_0}{2}+2 g H^{\\prime}}}{g}$$</p>\n<p>$$=\\frac{-\\sqrt{3} \\pi l \\frac{\\theta_0^2}{2} \\pm \\sqrt{3 \\pi^2\\left(\\frac{\\theta_0{ }^4}{4}\\right) l^2+2 g H^{\\prime}}}{g}\\left[\\because \\sin \\frac{\\theta_0}{2} \\approx \\frac{\\theta_0}{2} \\text { for small angle }\\right]$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { Given that } \\theta_0 \\text { is small, hence neglecting terms of order } \\theta_0^2 \\text { and higher }\\\\\n&amp;t=\\sqrt{\\frac{2 H^{\\prime}}{g}} \\quad \\text{[from Eq. (iii)]}\n\\end{aligned}$$</p>\n<p>Now, $$H^{\\prime} \\approx H+l(1-1) \\quad\\left[\\therefore \\cos \\theta_0 / 2 \\approx 1\\right]$$</p>\n<p>$$\n\\begin{aligned}\n&amp;\\begin{aligned}\n&amp; =H \\quad \\text { [from Eq. (ii)] }\\\\\n\\Rightarrow \\quad t &amp; =\\sqrt{\\frac{2 H}{g}}\n\\end{aligned}\\\\\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { The distance travelled in the } x \\text {-direction is } u_x t \\text { to the left of where the bob is snapped }\\\\\n&amp;\\begin{gathered}\nX=U x t=\\sqrt{3} \\pi \\theta_0 l \\operatorname{Cos}\\left(\\frac{\\theta_0}{2}\\right) \\sqrt{\\frac{2 H}{g}} \\mathrm{~s} \\\\\n\\text { As } \\theta_0 \\text { is small } \\Rightarrow \\cos \\left(\\frac{\\theta_0}{2}\\right) \\approx 1 \\\\\nX=\\sqrt{3} \\pi \\theta_0 l \\sqrt{\\frac{2 H}{g}}=\\sqrt{\\frac{6 H}{g}} \\theta_0 l \\pi\n\\end{gathered}\n\\end{aligned}$$</p>\n<p>At the time of snapping, the bob was at a horizontal distance of $l \\sin \\left(\\theta_0 / 2\\right) \\approx l \\frac{\\theta_0}{2}$ from $A$.</p>\n<p>Thus, the distance of bob from $A$ where it meets the ground is</p>\n<p>$$\\begin{aligned}\n&amp; =\\frac{l \\theta_0}{2}-X=\\frac{l \\theta_0}{2}-\\sqrt{\\frac{6 H}{g}} \\theta_0 l \\pi \\\\\n&amp; =\\theta_0 l\\left(\\frac{1}{2}-\\pi \\sqrt{\\frac{6 H}{g}}\\right)\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "math_s1",
+    "chapter": "Sets, Relations and Functions",
+    "questionText": "If $A = \\{x \\in \\mathbb{R} : |x| < 2\\}$ and $B = \\{x \\in \\mathbb{R} : |x - 2| \\ge 3\\}$, then $A \\cap B$ is equal to:",
+    "options": ["$[-1, 2)$", "$\\{x \\in \\mathbb{R} : -2 < x \\le -1\\}$", "$\\{x \\in \\mathbb{R} : -1 \\le x < 2\\}$", "$\\emptyset$"],
+    "explanation": "Given $A = (-2, 2)$ and $B = (-\\infty, -1] \\cup [5, \\infty)$.<br>Intersection $A \\cap B = (-2, -1]$.",
+    "year": "JEE Main 2020",
+    "shift": "2nd Sept Evening Shift"
+  },
+  {
+    "id": "math_s2",
+    "chapter": "Sets, Relations and Functions",
+    "questionText": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be defined as $f(x) = 2x - 1$ and $g : \\mathbb{R} \\setminus \\{1\\} \\to \\mathbb{R}$ be defined as $g(x) = \\frac{x - 1/2}{x - 1}$. Then the composition $f(g(x))$ is:",
+    "options": ["One-one but not onto", "Onto but not one-one", "Neither one-one nor onto", "Both one-one and onto"],
+    "explanation": "$f(g(x)) = 2\\left(\\frac{x - 1/2}{x - 1}\\right) - 1 = \\frac{2x - 1 - x + 1}{x - 1} = \\frac{x}{x - 1}$.<br>Let $h(x) = \\frac{x}{x-1}$. It is easy to see that $h(x)$ is one-one. However, $y = 1$ has no pre-image, so it is not onto.",
+    "year": "JEE Main 2021",
+    "shift": "24th Feb Morning Shift"
+  },
+  {
+    "id": "math_s3",
+    "chapter": "Sets, Relations and Functions",
+    "questionText": "Two sets A and B are as under: $A = \\{(a, b) \\in \\mathbb{R} \\times \\mathbb{R} : |a - 5| < 1, |b - 5| < 1\\}$ and $B = \\{(a, b) \\in \\mathbb{R} \\times \\mathbb{R} : 4(a - 6)^2 + 9(b - 5)^2 \\le 36\\}$. Then:",
+    "options": ["$A \\subset B$", "$A \\cap B = \\emptyset$", "$B \\subset A$", "neither $A \\subset B$ nor $B \\subset A$"],
+    "explanation": "$A$ is a square centered at $(5,5)$ with side length 2. $B$ is an ellipse centered at $(6,5)$. By checking bounds, the square $A$ is strictly contained within the ellipse $B$. Thus $A \\subset B$.",
+    "year": "JEE Main 2018",
+    "shift": "15th April Morning Shift"
+  },
+  {
+    "id": "math_s4",
+    "chapter": "Complex Numbers and Quadratic Equations",
+    "questionText": "If $z = \\frac{\\sqrt{3}}{2} + \\frac{i}{2}$, then $(1 + iz + z^5 + iz^8)^9$ is equal to:",
+    "options": ["$0$", "$1$", "$(-1)$", "$(-1 + i)$"],
+    "explanation": "$z = e^{i\\pi/6}$. Evaluating the terms, we get $(1 + i e^{i\\pi/6} + e^{i5\\pi/6} + i e^{i8\\pi/6})^9$. <br>This simplifies to $(-1)$.",
+    "year": "JEE Main 2022",
+    "shift": "25th July Evening Shift"
+  },
+  {
+    "id": "math_s5",
+    "chapter": "Complex Numbers and Quadratic Equations",
+    "questionText": "Let $\\alpha$ and $\\beta$ be the roots of the equation $x^2 + x + 1 = 0$. Then for $y \\neq 0$, $\\begin{vmatrix} y + 1 & \\alpha & \\beta \\\\ \\alpha & y + \\beta & 1 \\\\ \\beta & 1 & y + \\alpha \\end{vmatrix}$ is equal to:",
+    "options": ["$y^3$", "$y^3 - 1$", "$y(y^2 - 1)$", "$y^3 + 1$"],
+    "explanation": "Since $\\alpha, \\beta$ are roots of $x^2+x+1=0$, they are complex cube roots of unity $\\omega, \\omega^2$. <br>$\\alpha + \\beta = -1$ and $\\alpha\\beta = 1$. The determinant simplifies to $y^3$.",
+    "year": "JEE Main 2019",
+    "shift": "11th Jan Morning Shift"
+  }
+]

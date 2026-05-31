@@ -1,0 +1,2129 @@
+{
+  "statusCode": 0,
+  "results": [
+    {
+      "questionId": "bqf-m1kb7f66",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Eight chairs are numbered 1 to 8 . Two women and 3 men wish to occupy one chair each. First the women choose the chairs from amongst the chairs 1 to 4 and then men select from the remaining chairs. Find the total number of possible arrangements.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>First women choose the chairs from among 1 to 4 chairs. i.e., total number of chairs is 4 .</p>\n<p>Since, there are two women, so number of arrangements $={ }^4 P_2$ ways.</p>\n<p>Now, men have to choose chairs from remaining 6 chairs.</p>\n<p>Since, there are 3 men, so number can be arranged in ${ }^6 P_3$ ways.</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Total number of possible arrangements } & ={ }^4 P_2 \\times{ }^6 P_3 \\\\\n& =\\frac{4!}{4-2!} \\times \\frac{6!}{6-3!} \\\\\n& =\\frac{4!}{2!} \\times \\frac{6!}{3!} \\\\\n& =\\frac{4 \\times 3 \\times 2!}{2!} \\times \\frac{6 \\times 5 \\times 4 \\times 3!}{3!} \\\\\n& =4 \\times 3 \\times 6 \\times 5 \\times 4=1440\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6hr4",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If the letters of the word 'RACHIT' are arranged in all possible ways as listed in dictionary. Then, what is the rank of the word 'RACHIT'?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The letters of the word 'RACHIT' in alphabetical order are A, C, H, I, R and T.</p>\n<p>Now, words beginning with $A=5$ !</p>\n<p>words beginning with $C=5$ !</p>\n<p>words beginning with $H=5$ !</p>\n<p>words beginning with $I=5$ !</p>\n<p>Word beginning with R i.e., RACHIT $=1$</p>\n<p>$\\therefore \\quad$ Rank of the word 'RACHIT' in dictionary $=4 \\times 5!+1=4 \\times 120+1$</p>\n<p>$=480+1=481$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6htb",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A candidate is required to answer 7 questions out of 12 questions, which are divided into two groups, each containing 6 questions. He is not permitted to attempt more than 5 questions from either group. Find the number of different ways of doing questions.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Since, candidate cannot attempt more than 5 questions from either group. Thus, he is able to attempt minimum two questions from either group. The number of questions attempted from each group is given in following table</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 434px\"><colgroup>\n<col style=\"width: 95px\">\n<col style=\"width: 86px\">\n<col style=\"width: 86px\">\n<col style=\"width: 84px\">\n<col style=\"width: 83px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\">Group I</th>\n    <th class=\"tg-baqh\">5</th>\n    <th class=\"tg-baqh\">4</th>\n    <th class=\"tg-baqh\">3</th>\n    <th class=\"tg-baqh\">2</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-amwm\">Group II</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">3</td>\n    <td class=\"tg-baqh\">4</td>\n    <td class=\"tg-baqh\">5</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$$\\begin{aligned}\n&\\text { Since, each group have } 6 \\text { questions and total attempted } 7 \\text { questions. }\\\\\n&\\begin{aligned}\n\\therefore \\text { Total number of possible ways } & ={ }^6 C_5 \\times{ }^6 C_2+{ }^6 C_4 \\times{ }^6 C_3+{ }^6 C_3 \\times{ }^6 C_4+{ }^6 C_2 \\times{ }^6 C_5 \\\\\n& =2\\left[{ }^6 C_5 \\times{ }^6 C_2+{ }^6 C_4 \\times{ }^6 C_3\\right] \\\\\n& =2[6 \\times 15+15 \\times 20] \\\\\n& =2[90+300] \\\\\n& =2 \\times 390=780\n\\end{aligned}\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5gu0",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Out of 18 points in a plane, no three are in the same line except five points which are collinear. Find the number of lines that can be formed joining the point.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Total number of points $=18$</p>\n<p>Out of which 5 points are collinear, we get a straight line by joining any two points.</p>\n<p>$\\therefore$ Number of straight line formed by joining the 18 points taking 2 at a time $={ }^{18} \\mathrm{C}_2$ and number of straight line formed by joining 5 points taking 2 at a time $={ }^5 \\mathrm{C}_2$</p>\n<p>But 5 collinear points, when joined pairwise give only one line.</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Required number of straight line } & ={ }^{18} \\mathrm{C}_2-{ }^5 \\mathrm{C}_2+1 \\\\\n& =153-10+1=144\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7f82",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>We wish to select 6 person from 8 but, if the person $A$ is chosen, then $B$ must be chosen. In how many ways can selections be made?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Total number of person $=8$</p>\n<p>Number of person to be selected $=6$</p>\n<p>It is given that, if $A$ is chosen then, $B$ must be chosen.</p>\n<p>Therefore, following cases arise.</p>\n<p>Case I When $A$ is chosen, $B$ must be chosen.</p>\n<p>Number of ways $={ }^{8-2} C_{6-2}={ }^6 C_4$</p>\n<p>Case II When A is not chosen.</p>\n<p>Then, $B$ may be chosen.</p>\n<p>$\\therefore \\quad$ Number of ways $={ }^{8-1} C_6={ }^7 C_6$</p>\n<p>Hence, required number of ways $={ }^6 C_4+{ }^7 C_6$</p>\n<p>$$=15+7=22$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7weo",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>How many committee of five person with a chairperson can be selected from 12 persons?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$\\because \\quad$ Total number of persons $=12$</p>\n<p>and number of persons to be selected $=5$</p>\n<p>Out of 12 persons a chairperson is selected $={ }^{12} C_1=12$ ways</p>\n<p>Now, remaining 4 persons are selected out of 11 persons.</p>\n<p>$\\therefore \\quad$ Number of ways $={ }^{11} C_4=330$</p>\n<p>$\\therefore$ Total number of ways to form a committee of 5 persons $=12 \\times 330=3960$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6d16",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>How many automobile license plates can be made, if each plate contains two different letters followed by three different digits?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>There are 26 English alphabets and 10 digits (0 to 9).</p>\n<p>Since, it is given that each plate contains two different letters followed by three different digits.</p>\n<p>$\\therefore$ Arrangement of 26 letters, taken 2 at a time $={ }^{26} P_2=\\frac{26!}{24!}=26 \\times 25=650$</p>\n<p>and three-digit number can be formed out of the 10 digits $={ }^{10} P_3=10 \\times 9 \\times 8=720$ ways</p>\n<p>$\\therefore$ Total number of licence plates $=650 \\times 720=468000$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb58jz",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A bag contains 5 black and 6 red balls, determine the number of ways in which 2 black and 3 red balls can be selected from the lot.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>It is given that bag contains 5 black and 6 red balls.</p>\n<p>So, 2 black balls is selected from 5 black balls in ${ }^5 \\mathrm{C}_2$ ways.</p>\n<p>and 3 red balls are selected from 6 red balls in ${ }^6 C_3$ ways.</p>\n<p>$\\therefore$ Total number of ways in which 2 black and 3 red balls are selected $={ }^5 C_2 \\times{ }^6 C_3$</p>\n<p>$$=10 \\times 20=200 \\text { ways }$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5gvv",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the number of permutations of $n$ distinct things taken $r$ together, in which 3 particular things must occur together.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Total number of things $=n$</p>\n<p>We have to arrange $r$ things out of $n$ in which three things must occur together.</p>\n<p>Therefore, combination of $n$ things taken $r$ at a time in which 3 things always occurs</p>\n<p>$$={ }^{n-{ }^3} C_{r-3}$$</p>\n<p>If three things taken together, then it is considered as 1 group.</p>\n<p>Arrangement of these three things $=3$ !</p>\n<p>Now, we have to arrange $=r-3+1=(r-2)$ objects</p>\n<p>$\\therefore \\quad$ Arranged of $(r-2)$ objects $=r-2$ !</p>\n<p>$\\therefore$ Total number of arrangements $={ }^{n-3} C_{r-3} \\times r-2!\\times 3!$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7mo5",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the number of different words that can be formed from the letters of the word 'TRIANGLE', so that no vowels are together.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Number of letters in the word 'TRIANGLE' $=8$, out of which 5 are consonants and 3 are vowels.</p>\n<p>If vowels are not together, then we have following arrangement.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 608px\"><colgroup>\n<col style=\"width: 54px\">\n<col style=\"width: 54px\">\n<col style=\"width: 53px\">\n<col style=\"width: 54px\">\n<col style=\"width: 55px\">\n<col style=\"width: 52px\">\n<col style=\"width: 59px\">\n<col style=\"width: 57px\">\n<col style=\"width: 56px\">\n<col style=\"width: 58px\">\n<col style=\"width: 56px\">\n</colgroup>\n<thead>\n  <tr>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n  </tr></thead>\n</table></p>\n<p>Consonants can be arranged in $=5!=120$ ways and vowels can occupy at 6 places.</>\n<p>The 3 vowels can be arranged at 6 place in ${ }^6 P_3$ ways $=\\frac{6!}{6-3!}=\\frac{6!}{3!}$</p>\n<p>$$=\\frac{6 \\times 5 \\times 4 \\times 3!}{3!}=120$$</p>\n<p>Total number of arrangement $=120 \\times 120=14400$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb9ktv",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the number of positive integers greater than 6000 and less than 7000 which are divisible by 5 , provided that no digit is to be repeated.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>We know that a number is divisible by 5 , If at the units place of the number is 0 or 5 . We have to form 4 -digit number which is greater than 6000 and less than 7000 . So, unit digit can be filled in 2 ways.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m1av5aov/ec2d1b23-7ac2-4efa-8719-71383cca30f8/43c77ef0-7763-11ef-98f2-d16eabdc1013/file-jaoe38c1m1av5aow.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m1av5aov/ec2d1b23-7ac2-4efa-8719-71383cca30f8/43c77ef0-7763-11ef-98f2-d16eabdc1013/file-jaoe38c1m1av5aow.png\" loading=\"lazy\" style=\"max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline\"></p>\n<p>Since, repeatition is not allowed. Therefore, tens place can be filled in 7 ways, similarily hundreds place can be filled in 8 ways.</p>\n<p>But we have to form a number greater than 6000 and less than 7000 .</p>\n<p>Hence, thousand place can be filled in only 1 ways.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 514px\"><colgroup>\n<col style=\"width: 116px\">\n<col style=\"width: 124px\">\n<col style=\"width: 131px\">\n<col style=\"width: 143px\">\n</colgroup>\n<thead>\n  <tr>\n    <td class=\"tg-baqh\">6</td>\n    <td class=\"tg-baqh\">8</td>\n    <td class=\"tg-baqh\">7</td>\n    <td class=\"tg-baqh\">2</td>\n  </tr></thead>\n</table></p>\n<p>Total number of integers</p>\n<p>$=1\\times8\\times7\\times2$</p>\n<p>$=14\\times8=112$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7mqb",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>There are 10 persons named $P_1, P_2, P_3, \\ldots, P_{10}$. Out of 10 persons, 5 persons are to be arranged in a line such that in each arrangement $P_1$ must occur whereas $P_4$ and $P_5$ do not occur. Find the number of such possible arrangements.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, $P_1, P_2, \\ldots, P_{10}$, are 10 persons, out of which 5 persons are to be arranged but $P_1$ must occur whereas $P_4$ and $P_5$ never occur.</p>\n<p>$\\therefore$ Selection depends on only $10-3=7$ persons</p>\n<p>As, we have already occur $P_1$, Therefore, we have to select only 4 persons out of 7 .</p>\n<p>Number of selection $={ }^7 C_4=\\frac{7!}{4!(7-4)!}=\\frac{7!}{4!3!}=\\frac{5040}{24 \\times 6}=35$</p>\n<p>$\\therefore$ Required number of arrangement of 5 persons $=35 \\times 5!=35 \\times 120=4200$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5rpm",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>There are 10 lamps in a hall. Each one of them can be switched on independently. Find the number of ways in which the hall can be illuminated.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { Total number of ways } & ={ }^{10} \\mathrm{C}_1+{ }^{10} \\mathrm{C}_2+{ }^{10} \\mathrm{C}_3+{ }^{10} \\mathrm{C}_4+{ }^{10} \\mathrm{C}_5+{ }^{10} \\mathrm{C}_6+\\ldots+{ }^{10} \\mathrm{C}_{10} \\\\\n& =2^{10}-1 \\quad [\\because \\quad ^nC_0+^nC_1+^nC_2+...=2^n]\\\\\n& =1024-1=1023\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb86k0",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A box contains two white, three black and four red balls. In how many ways can three balls be drawn from the box, if atleast one black ball is to be included in the draw?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>There are 2 white, three black and four red balls.</p>\n<p>We have to draw 3 balls, out of these 9 balls in which atleast one black ball is included. Hence, we can select the balls in the following ways.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 402px\"><colgroup>\n<col style=\"width: 150px\">\n<col style=\"width: 81px\">\n<col style=\"width: 83px\">\n<col style=\"width: 88px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\">Black balls</th>\n    <th class=\"tg-baqh\">1</th>\n    <th class=\"tg-baqh\">2</th>\n    <th class=\"tg-baqh\">3</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-amwm\">Other than black</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Required number of selections } & ={ }^3 \\mathrm{C}_1 \\times{ }^6 \\mathrm{C}_2+{ }^3 \\mathrm{C}_2 \\times{ }^6 \\mathrm{C}_1+{ }^3 \\mathrm{C}_3 \\times{ }^6 \\mathrm{C}_0 \\\\\n& =3 \\times 15+3 \\times 6+1 \\\\\n& =45+18+1=64\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8nyn",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If ${ }^n C_{r-1}=36,{ }^n C_r=84$ and ${ }^n C_{r+1}=126$, then find the value of ${ }^r C_2$.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{array}{lr}\n\\text { Given, } & { }^n C_{r-1}=36 \\quad \\text{... (i)}\\\\\n\\Rightarrow & { }^n C_r=84 \\quad \\text{... (ii)}\\\\\n\\Rightarrow & { }^n C_{r+1}=126 \\quad \\text{... (iii)}\n\\end{array}$$</p>\n<p>On dividing Eq. (i) by Eq. (ii), we get</p><p>$\\frac{{ }^n C_{r-1}}{{ }^n C_r}=\\frac{36}{84} \\quad\\left[\\begin{array}{l}\\because{ }^n C_r=\\frac{n!}{(n-r!r!)} \\\\ \\text { and } n!=n(n-1)!\\end{array}\\right]$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\frac{n!}{(r-1)!\\{n-(r-1)\\}!} \\cdot \\frac{r!(n-r)!}{n!}=\\frac{3}{7} \\\\\n\\Rightarrow & \\frac{1}{(r-1)!(n-r+1)!} \\cdot \\frac{r(r-1)!(n-r)!}{1}=\\frac{3}{7} \\\\\n\\Rightarrow & \\frac{1 \\cdot r}{(n-r+1)(n-r)!} \\cdot(n-r)!=\\frac{3}{7} \\Rightarrow \\frac{r}{n-r+1}=\\frac{3}{7} \\\\\n\\Rightarrow & 7 r=3 n-3 r+3 \\\\\n\\Rightarrow & 10 r-3 n=3\\quad \\text{(iv)}\n\\end{array}$$</p>\n<p>On dividing Eq. (ii) by Eq. (iii), we get</p>\n<p>$$\\begin{array}{rlrl} \n& \\frac{{ }^n C_r}{{ }^n C_{r+1}} =\\frac{84}{126} \\\\\n\\Rightarrow & \\frac{n!}{r!(n-r)!} \\cdot \\frac{(r+1)!(n-r-1)!}{n!} =\\frac{14}{21} \\\\\n\\Rightarrow & \\frac{1}{r!(n-r)!(n-r-1)!} \\cdot \\frac{(r+1) r!(n-r-1)!}{r} =\\frac{2}{3} \\Rightarrow \\frac{r+1}{n-r}=\\frac{2}{3} \\\\\n\\Rightarrow & 3 r+3=2 n-2 r \\Rightarrow \\quad 2 n-5 r=3\\quad \\text{... (v)}\n\\end{array}$$</p>\n<p>On multiplying Eq. (iv) by 2 and Eq. (v) by 3, we get</p>\n<p>$$\\begin{aligned}\n& 20 r-6 n=6 \\quad \\text{... (vi)}\\\\\n& 6 n-15 r=9\\quad \\text{... (vii)}\n\\end{aligned}$$</p>\n<p>On adding Eqs. (vi) and (vii),</p>\n<p>From Eq. (v),</p>\n<p>$$\\begin{aligned}\n5 r & =15 \\quad \\Rightarrow \\quad r=3 \\\\\n2 n & =3+15 \\\\\n2 n & =18 \\quad \\Rightarrow \\quad n=9\n\\end{aligned}$$</p>\n<p>$$\\therefore \\quad \\quad{ }^r C_2={ }^3 C_2=\\frac{3!}{2!1!} \\quad=\\frac{3 \\times 2!}{2!}=3$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7wgh",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Find the number of integers greater than 7000 that can be formed with the digits 3, 5, 7, 8 and 9 where no digits are repeated.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Here, we have to find the number of integers greater than 7000 with the digits $3,5,7,8$ and 9. So, with these digits we can make maximum five-digit number because repeatition is not allowed.</p>\n<p>Now, all the five-digit numbers are greater than 7000 .</p>\n<p>Number of ways of forming 5 -digit number $=5 \\times 4 \\times 3 \\times 2 \\times 1=120$</p>\n<p>and all the four-digit numbers greater than 7000 can be formed in following manner.</p>\nThousand place can be filled in 3 ways. Hundred place can be filled in 4 ways. Tenth place can be filled in 3 ways. Units place can be filled in 2 ways.</p>\n<p>Thus, we have total number of 4-digit number $=3 \\times 4 \\times 3 \\times 2=72$</p>\n<p>$\\therefore$ Total number of integers $=120+72=192$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6hvf",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If 20 lines are drawn in a plane such that no two of them are parallel and no three are concurrent, in how many points will they intersect each other?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>It is given that no two lines are parallel means all line are intersecting and no three lines are concurrent means three lines intersect at a point.</p>\n<p>Since, we know that for one point of intersection, we required two lines.</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Number of point of intersection } & ={ }^{20} C_2=\\frac{20!}{2!18!}=\\frac{20 \\times 19 \\times 18!}{2 \\times 1 \\times 18!} \\\\\n& =\\frac{20 \\times 19}{2}=19 \\times 10=190\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb86m3",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In a certain city, all telephone numbers have six digits, the first two digits always being 41 or 42 or 46 or 62 or 64 . How many telephone numbers have all six digits distinct?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>If first two digit is 41 , the remaining 4 digits can be arranged in</p>\n<p>$$\\begin{aligned}\n& ={ }^8 P_4=\\frac{8!}{8-4!}=\\frac{8!}{4!} \\\\\n& =\\frac{8 \\times 7 \\times 6 \\times 5 \\times 4!}{4!} \\\\\n& =8 \\times 7 \\times 6 \\times 5=1680\n\\end{aligned}$$</p>\n<p>Similarly, if first two digit is $42,46,62$, or 64 , the remaining 4 digits can be arranged in ${ }^8 P_4$ ways i.e., 1680 ways.</p>\n<p>$\\therefore$ Total number of telephone numbers have all six digits distinct $=5 \\times 1680=8400$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7ms4",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In an examination, a student has to answer 4 questions out of 5 questions, questions 1 and 2 are however compulsory. Determine the number of ways in which the student can make the choice.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>It is given that 2 questions are compulsory out of 5 questions.</p>\n<p>So, these two questions are always included in the selection.</p>\n<p>We know that, the selection of $n$ distinct objects taken $r$ at a time in which $p$ objects are always included in ${ }^{n-p} C_{r-p}$ ways.</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Total number of ways } & ={ }^{5-2} C_{4-2}={ }^3 C_2 \\\\\n& =\\frac{3!}{2!1!}=\\frac{3 \\times 2!}{2!}=3\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6d2x",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If a convex polygon has 44 diagonals, then find the number of its sides.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let the convex polygon has $n$ sides.</p>\n<p>$\\therefore$ Number of diagonals $={ }^n C_2-n$</p>\n<p>According to the question,</p>\n<p>$$\\begin{aligned}\n& { }^n C_2-n=44 \\\\\n& \\frac{n!}{2!(n-2)!}-n=44 \\\\\n& \\Rightarrow \\quad \\frac{n(n-1)}{2}-n=44 \\\\\n& \\Rightarrow \\quad n\\left[\\frac{(n-1)}{2}-1\\right]=44 \\quad \\Rightarrow n\\left(\\frac{n-1-2}{2}\\right)=44 \\\\\n& \\Rightarrow \\quad n(n-3)=44 \\times 2 \\Rightarrow n(n-3)=88 \\\\\n& \\Rightarrow \\quad n^2-3 n-88=0 \\quad \\Rightarrow(n-11)(n+8)=0 \\\\\n& \\Rightarrow \\quad n=11,-8 \\\\\n& \\therefore \\quad n=11\\quad [\\because n \\neq-8]\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6hx6",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>18 mice were placed in two experimental groups and one control group with all groups equally large. In how many ways can the mice be placed into three groups?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>It is given that 18 mice were placed equally in two experimental groups and one control group i.e., three groups.</p>\n<p>$\\therefore \\quad$ Required arrangements $=\\frac{\\text { Total arrangement }}{\\text { Equally likely arrangement }}=\\frac{18!}{6!6!6!}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb5rre",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A bag contains six white marbles and five red marbles. Find the number of ways in which four marbles can be drawn from the bag, if (i) they can be of any colour. (ii) two must be white and two red. (iii) they must all be of the same colour.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Total number of marbles $=6$ white +5 red $=11$ marbles</p>\n<p>(i) If they can be of any colour means we have to select 4 marbles out of 11.</p>\n<p>$\\therefore$ Required number of ways $={ }^{11} C_4$</p>\n<p>(ii) If two must be white, then selection will be ${ }^6 \\mathrm{C}_2$ and two must be red, then selection will be ${ }^5 \\mathrm{C}_2$.</p>\n<p>$\\therefore$ Required number of ways $={ }^6 C_2 \\times{ }^5 C_2$</p>\n<p>(iii) If they all must be of same colour, then selection of 4 white marbles out of $6={ }^6 C_4$</p>\n<p>and selection of 4 red marble out of $5={ }^5 C_4$</p>\n<p>$\\therefore \\quad$ Required number of ways $={ }^6 C_4+{ }^5 C_4$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6d4p",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In how many ways can a football team of 11 players be selected from 16 players? How many of them will</p>\n<p>(i) include 2 particular players?</p>\n<p>(ii) exclude 2 particular players?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Total number of players $=16$</p>\n<p>We have to select a team of 11 players</p>\n<p>(i) include 2 particular players $={ }^{16-2} C_{11-2}={ }^{14} C_9$</p>\n<p>[since, selection of $n$ objects taken $r$ at a time in which pobjects are always included is ${ }^{n-p} C_{r-p}$ ]</p>\n<p>(ii) Exclude 2 particular players $={ }^{16-2} C_{11}={ }^{14} C_{11}$</p>\n<p>[since, selection of $n$ objects taken $r$ at a time in which p objects are never included is $\\left.{ }^{n-p} C_r\\right]$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7fa7",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A sports team of 11 students is to be constituted, choosing atleast 5 from class XI and atleast 5 from class XII. If there are 20 students in each of these classes, in how many ways can the team be constituted?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Total students in each class $=20$</p>\n<p>We have to selects atleast 5 students from each class.</p>\n<p>Hence, selection of sport team of 11 students from each class is given in following table</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 314px\"><colgroup>\n<col style=\"width: 150px\">\n<col style=\"width: 81px\">\n<col style=\"width: 83px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-7btt\">Class XI</th>\n    <th class=\"tg-c3ow\">5</th>\n    <th class=\"tg-c3ow\">6</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-7btt\">Class XII</td>\n    <td class=\"tg-c3ow\">6</td>\n    <td class=\"tg-c3ow\">5</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$\\begin{aligned} \\therefore \\text { Total number of ways of selecting a team of } 11 \\text { players } & ={ }^{20} C_5 \\times{ }^{20} C_6+{ }^{20} C_6 \\times{ }^{20} C_5 \\\\ & =2 \\times{ }^{20} C_5 \\times{ }^{20} C_6\\end{aligned}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb86nz",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A group consists of 4 girls and 7 boys. In how many ways can a team of 5 members be selected, if the team has</p>\n<p>(i) no girls.</p>\n<p>(ii) atleast one boy and one girl.</p>\n<p>(iii) atleast three girls.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Number of girls $=4$ and Number of boys $=7$</p>\n<p>We have to select a team of 5 members provided that</p>\n<p>(i) team having no girls.</p>\n<p>$$\\therefore \\quad \\text { Required selection }={ }^7 C_5=\\frac{7!}{5!2!}=\\frac{7 \\times 6}{2}=21$$</p>\n<p>(ii) atleast one boy and one girl</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Required selection } & ={ }^7 C_1 \\times{ }^4 C_4+{ }^7 C_2 \\times{ }^4 C_3+{ }^7 C_3 \\times{ }^4 C_2+{ }^7 C_4 \\times{ }^4 C_1 \\\\\n& =7 \\times 1+21 \\times 4+35 \\times 6+35 \\times 4 \\\\\n& =7+84+210+140=441\n\\end{aligned}$$</p>\n<p>(iii) when atleast three girls are included $={ }^4 C_3 \\times{ }^7 C_2+{ }^4 C_4 \\times{ }^7 C_1$</p>\n<p>$$=4 \\times 21+7=84+7=91$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb58lv",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A committee of 6 is to be chosen from 10 men and 7 women, so as to contain atleast 3 men and 2 women. In how many different ways can this be done, if two particular women refuse to serve on the same committee?</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$\\because\\quad$ Total number of men = 10</p>\n<p>and total number of women =7</p>\n<p>We have to form a committee containing atleast 3 men and 2 women.</p>\n<p>Number of ways $={ }^{10} \\mathrm{C}_3 \\times{ }^7 C_3+{ }^{10} C_4 \\times{ }^7 C_2$</p>\n<p>If two particular women to be always there .</p>\n<p>$\\therefore \\quad$ Number of ways $={ }^{10} C_4 \\times{ }^5 C_0+{ }^{10} C_3 \\times{ }^5 C_1$</p>\n<p>Total number of committee when two particular women are never together</p>\n<p>$$\\begin{aligned}\n& =\\text { Total }- \\text { Together } \\\\\n& =\\left({ }^{10} C_3 \\times{ }^7 C_3+{ }^{10} C_4 \\times{ }^7 C_2\\right)-\\left({ }^{10} C_4 \\times{ }^5 C_0+{ }^{10} C_3 \\times{ }^5 C_1\\right) \\\\\n& =(120 \\times 35+210 \\times 21)-(210+120 \\times 5) \\\\\n& =4200+4410-(210+600) \\\\\n& =8610-810=7800\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb7fcs",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If ${ }^n C_{12}={ }^n C_8$, then $n$ is equal to</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "20"
+            },
+            {
+              "identifier": "B",
+              "content": "12"
+            },
+            {
+              "identifier": "C",
+              "content": "6"
+            },
+            {
+              "identifier": "D",
+              "content": "30"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, ${ }^n C_{12} ={ }^n C_8$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & & { }^n C_{n-12} & ={ }^n C_8 \\quad \\left[\\because{ }^n C_r={ }^n C_{n-r}\\right]\\\\\n\\Rightarrow & & n-12 & =8 \\\\\n\\Rightarrow & & n & =12+8=20\n\\end{aligned}$$</p>\n\n"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 46449,
+        "correct": 77,
+        "wrong": 23,
+        "options": {
+          "0": 77,
+          "1": 20,
+          "2": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb7muf",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of possible outcomes when a coin is tossed 6 times is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "36"
+            },
+            {
+              "identifier": "B",
+              "content": "64"
+            },
+            {
+              "identifier": "C",
+              "content": "12"
+            },
+            {
+              "identifier": "D",
+              "content": "32"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Number of outcomes when tossing a coin 1 times = 2 (head or tail)</p>\n<p>$\\therefore$ Total possible outcomes when a coin tossed 6 times $=2^6=64$ [$\\because 2^n$ for n time tossed coin]</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 29985,
+        "correct": 66,
+        "wrong": 34,
+        "options": {
+          "0": 19,
+          "1": 66,
+          "2": 15
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb5zjh",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of different four-digit numbers that can be formed with the digits 2, 3, 4, 7 and using each digit only once is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "120"
+            },
+            {
+              "identifier": "B",
+              "content": "96"
+            },
+            {
+              "identifier": "C",
+              "content": "24"
+            },
+            {
+              "identifier": "D",
+              "content": "100"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given digits 2, 3, 4 and 7, we have to form four-digit numbers using these digits.</p>\n<p>$\\therefore$ Required number of ways $=^4P_4=4!=4\\times3\\times2!=24$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 44574,
+        "correct": 84,
+        "wrong": 16,
+        "options": {
+          "0": 4,
+          "1": 10,
+          "2": 84,
+          "3": 1
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb8z7s",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The sum of the digits in unit place of all the numbers formed with the help of 3, 4, 5 and 6 taken all at a time is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "432"
+            },
+            {
+              "identifier": "B",
+              "content": "108"
+            },
+            {
+              "identifier": "C",
+              "content": "36"
+            },
+            {
+              "identifier": "D",
+              "content": "18"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>If we fixed 3 at units place.</p>\n<p>Total possible number is 3 ! i.e., 6 .</p>\n<p>Sum of the digits in unit place of all these numbers $=3!\\times 3$</p>\n<p>Similarly, if we fixed 4,5 and 6 at units place, in each case total possible numbers are 3 !.</p>\n<p>$$\\begin{aligned}\n\\text { Required sum of unit digits of all such numbers } & =(3+4+5+6) \\times 3! \\\\\n& =18 \\times 3!=18 \\times 6=108\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 75288,
+        "correct": 42,
+        "wrong": 58,
+        "options": {
+          "0": 13,
+          "1": 42,
+          "2": 17,
+          "3": 27
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb6qq6",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The total number of words formed by 2 vowels and 3 consonants taken from 4 vowels and 5 consonants is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "60"
+            },
+            {
+              "identifier": "B",
+              "content": "120"
+            },
+            {
+              "identifier": "C",
+              "content": "7200"
+            },
+            {
+              "identifier": "D",
+              "content": "720"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>Given that, total number of vowels $=4$</p>\n<p>and total number of consonants $=5$</p>\n<p>Total number of words formed by 2 vowels and 3 consonants</p>\n<p>$$\\begin{aligned}\n& ={ }^4 C_2 \\times{ }^5 C_3=\\frac{4!}{2!2!} \\times \\frac{5!}{3!2!} \\\\\n& =\\frac{4 \\times 3!}{2!2!} \\times \\frac{5 \\times 4 \\times 3 \\times 2!}{3!\\times 2!}=\\frac{4 \\times 5 \\times 4 \\times 3}{4} \\\\\n& =5 \\times 4 \\times 3=60\n\\end{aligned}$$</p>\n<p>Choose what order they appear in 5 ! i.e., 120.</p>\n<p>So, total number of words $=60 \\times 120=7200$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 59946,
+        "correct": 30,
+        "wrong": 70,
+        "options": {
+          "0": 41,
+          "1": 20,
+          "2": 30,
+          "3": 9
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb8f1l",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If a five-digit number divisible by 3 is to be formed using the numbers $0,1,2,3,4$ and 5 without repetitions, then the total number of ways this can be done is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "216"
+            },
+            {
+              "identifier": "B",
+              "content": "600"
+            },
+            {
+              "identifier": "C",
+              "content": "240"
+            },
+            {
+              "identifier": "D",
+              "content": "3125"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>We know that, a number is divisible by 3 , when sum of digits in the number must be divisible by 3 .</p>\n<p>So, if we consider the digits $0,1,2,4,5$, then $(0+1+2+4+5)=12)$</p>\n<p>We see that, sum is divisible by 3 . Therefore, five-digit numbers using the digit</p>\n<p>$0,1,2,4,5=4 \\times 4 \\times 3 \\times 2 \\times 1=96$</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 403px\"><colgroup>\n<col style=\"width: 83px\">\n<col style=\"width: 82px\">\n<col style=\"width: 80px\">\n<col style=\"width: 78px\">\n<col style=\"width: 80px\">\n</colgroup>\n<thead>\n  <tr>\n    <td class=\"tg-baqh\">4</td>\n    <td class=\"tg-baqh\">4</td>\n    <td class=\"tg-baqh\">3</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr></thead>\n</table></p>\n<p>and if we consider the digit $1,2,3,4,5$, then $(1+2+3+4+5=15)$</p>\n<p>This sum is also divisible by 3 .</p>\n<p>So, five-digit number can be formed using the digit $1,2,3,4,5$ in 5 ! ways.</p>\n<p>Total number of ways $=96+5!=96+120=216$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 108476,
+        "correct": 40,
+        "wrong": 60,
+        "options": {
+          "0": 40,
+          "1": 24,
+          "2": 29,
+          "3": 7
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb7wit",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Everybody in a room shakes hands with everybody else. If the total number of hand shakes is 66 , then the total number of persons in the room is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "11"
+            },
+            {
+              "identifier": "B",
+              "content": "12"
+            },
+            {
+              "identifier": "C",
+              "content": "13"
+            },
+            {
+              "identifier": "D",
+              "content": "14"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Let the total number of person in the room is $n$.</p>\n<p>We know that, two person form 1 hand shaken.</p>\n<p>$\\therefore$ Required number of hand shakes $={ }^n C_2=\\frac{n!}{2!(n-2)!}=\\frac{n(n-1)}{2}$</p>\n<p>According to the question, $\\frac{n(n-1)}{2}=66$</p>\n<p>$$\\begin{array}{l}\n\\Rightarrow & n(n-1) =132 \\\\\n\\Rightarrow & n^2-n-132 =0 \\\\\n\\Rightarrow & (n-12)(n+11) =0 \\\\\n\\Rightarrow & n =12,-11 \\quad \\text{[inadmissible]}\\\\\n\\therefore & n =12\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 76609,
+        "correct": 74,
+        "wrong": 26,
+        "options": {
+          "0": 17,
+          "1": 74,
+          "2": 7,
+          "3": 2
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb8za1",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of triangles that are formed by choosing the vertices from a set of 12 points, seven of which lie on the same line is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "105"
+            },
+            {
+              "identifier": "B",
+              "content": "15"
+            },
+            {
+              "identifier": "C",
+              "content": "175"
+            },
+            {
+              "identifier": "D",
+              "content": "185"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>Total number of triangles formed from 12 points taking 3 at a time $={ }^{12} \\mathrm{C}_3$</p>\n<p>But out of 12 points 7 are collinear. So, these 7 points constitute a straight line mean no triangle is formed by joining these 7 points.</p>\n<p>$\\therefore$ Required number of triangles $={ }^{12} C_3-{ }^7 C_3=220-35=185$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 80919,
+        "correct": 46,
+        "wrong": 54,
+        "options": {
+          "0": 24,
+          "1": 8,
+          "2": 22,
+          "3": 46
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb58od",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of parallelograms that can be formed from a set of four parallel lines intersecting another set of three parallel lines is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "6"
+            },
+            {
+              "identifier": "B",
+              "content": "18"
+            },
+            {
+              "identifier": "C",
+              "content": "12"
+            },
+            {
+              "identifier": "D",
+              "content": "9"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>To form parallelogram we required a pair of line from a set of 4 lines and another pair of line from another set of 3 lines.</p>\n<p>$\\therefore$ Required number of parallelograms $={ }^4 C_2 \\times{ }^3 C_2=6 \\times 3=18$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 65763,
+        "correct": 61,
+        "wrong": 39,
+        "options": {
+          "0": 16,
+          "1": 61,
+          "2": 16,
+          "3": 8
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb58qq",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of ways in which a team of eleven players can be selected from 22 players always including 2 of them and excluding 4 of them is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " ${ }^{16} C_{11}$\n"
+            },
+            {
+              "identifier": "B",
+              "content": " ${ }^{16} \\mathrm{C}_5$\n"
+            },
+            {
+              "identifier": "C",
+              "content": " ${ }^{16} \\mathrm{C}_9$\n"
+            },
+            {
+              "identifier": "D",
+              "content": " ${ }^{20} \\mathrm{C}_9$\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p> Total number of players $=22$</p>\n<p>We have to select a team of 11 players. Selection of 11 players when 2 of them is always included and 4 are never included.</p>\n<p>Total number of players $=22-2-4=16$</p>\n<p>$\\therefore$ Required number of selections $={ }^{16} \\mathrm{C}_9$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 61976,
+        "correct": 74,
+        "wrong": 26,
+        "options": {
+          "0": 5,
+          "1": 14,
+          "2": 74,
+          "3": 7
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb74dr",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of 5 -digit telephone numbers having atleast one of their digits repeated is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "90000\n"
+            },
+            {
+              "identifier": "B",
+              "content": " 10000\n"
+            },
+            {
+              "identifier": "C",
+              "content": " 30240\n"
+            },
+            {
+              "identifier": "D",
+              "content": "69760"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>If all the digits repeated, then number of 5 digit telephone numbers can be formed in $10^5$ ways and if no digit repeated, then 5 -digit telephone numbers can be formed in ${ }^{10} P_5$ ways.</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Required number of ways } & =10^5-{ }^{10} P_5=100000-\\frac{10!}{5!} \\\\\n& =100000-10 \\times 9 \\times 8 \\times 7 \\times 6 \\\\\n& =100000-30240=69760\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 80419,
+        "correct": 35,
+        "wrong": 65,
+        "options": {
+          "0": 13,
+          "1": 19,
+          "2": 32,
+          "3": 35
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb7ffg",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of ways in which we can choose a committee from four men and six women, so that the committee includes atleast two men and exactly twice as many women as men is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "94"
+            },
+            {
+              "identifier": "B",
+              "content": "126"
+            },
+            {
+              "identifier": "C",
+              "content": "128"
+            },
+            {
+              "identifier": "D",
+              "content": "None of these"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$\\because$ Number of men $=4$</p>\n<p>and number of women $=6$</p>\n<p>It is given that committee includes two men and exactly twice as many women as men.</p>\n<p>Thus, possible selection is given in following table</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 211px\"><colgroup>\n<col style=\"width: 101px\">\n<col style=\"width: 110px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\">Men</th>\n    <th class=\"tg-amwm\">Women</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">4</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">3</td>\n    <td class=\"tg-baqh\">6</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$\\begin{aligned} \\text { Required number of committee formed } & ={ }^4 C_2 \\times{ }^6 C_4+{ }^4 C_3 \\times{ }^6 C_6 \\\\ & =6 \\times 15+4 \\times 1=94\\end{aligned}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb8f40",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The total number of 9-digit numbers which have all different digits is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " 10 !\n"
+            },
+            {
+              "identifier": "B",
+              "content": " 9 !\n"
+            },
+            {
+              "identifier": "C",
+              "content": " $9 \\times 9$ !\n"
+            },
+            {
+              "identifier": "D",
+              "content": " $10 \\times 10$ !\n"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "<p>We have to form 9 -digit numbers with the digit $0,1,2,3,4,5,6,7,8,9,0$ cannot be placed at the first place from left. So, first place from left can be filled in 9 ways.</p>\n<p>Since, repetition is not allowed, so remaining 8 places can be filled in 9 ! ways.</p>\n<p>$\\therefore$ Required number of ways $=9 \\times 9$ !</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 29425,
+        "correct": 57,
+        "wrong": 43,
+        "options": {
+          "0": 13,
+          "1": 28,
+          "2": 57,
+          "3": 3
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb6qt6",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of words which can be formed out of the letters of the word 'ARTICLE', so that vowels occupy the even place is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": " 1440\n"
+            },
+            {
+              "identifier": "B",
+              "content": " 144\n"
+            },
+            {
+              "identifier": "C",
+              "content": " 7 !\n"
+            },
+            {
+              "identifier": "D",
+              "content": " ${ }^4 C_4 \\times{ }^3 C_3$\n"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Total number of letters in the word article is 7 , out of which $A, E, I$ are vowels and R, T, $C, L$ are consonants.</p>\n<p>Since, it is given that vowels occupy even place, therefore the arrangement of vowel, consonant can be understand with the help of following diagram.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 566px\"><colgroup>\n<col style=\"width: 83px\">\n<col style=\"width: 82px\">\n<col style=\"width: 80px\">\n<col style=\"width: 78px\">\n<col style=\"width: 80px\">\n<col style=\"width: 81px\">\n<col style=\"width: 82px\">\n</colgroup>\n<thead>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">3</td>\n    <td class=\"tg-baqh\">4</td>\n    <td class=\"tg-baqh\">5</td>\n    <td class=\"tg-baqh\">6</td>\n    <td class=\"tg-baqh\">7</td>\n  </tr></thead>\n</table></p>\n<p>Now, vowels can be placed at 2, 4 and 6 th position.</p>\n<p>Therefore, number of arrangement $={ }^3 P_3=3!=6$ ways</p>\n<p>and consonants can be placed at 1,3,5 and 7 th position.</p>\n<p>Therefore, number of arrangement $={ }^4 P_4=4!=24$</p>\n<p>$\\therefore$ Total number of words $=6 \\times 24=144$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq",
+      "user_stats": {
+        "timeSpent": 79162,
+        "correct": 59,
+        "wrong": 41,
+        "options": {
+          "0": 8,
+          "1": 59,
+          "3": 32
+        }
+      }
+    },
+    {
+      "questionId": "bqf-m1kb86qd",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Given 5 different green dyes, four different blue dyes and three different red dyes, the number of combinations of dyes which can be chosen taking atleast one green and one blue dye is</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "3600"
+            },
+            {
+              "identifier": "B",
+              "content": "3720"
+            },
+            {
+              "identifier": "C",
+              "content": "3800"
+            },
+            {
+              "identifier": "D",
+              "content": "3600"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Possible number of choosing green dyes $=2^5$</p>\n<p>Possible number of choosing blue dyes $=2^4$</p>\n<p>Possible number of choosing red dyes $=2^3$</p>\n<p>If atleast one blue and one green dyes are selected.</p>\n<p>Then, total number of selection $=\\left(2^5-1\\right)\\left(2^4-1\\right) \\times 2^3=3720$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "mcq"
+    },
+    {
+      "questionId": "bqf-m1kb8o0n",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If ${ }^n P_r=840$ and ${ }^n C_r=35$, then $r$ is equal to ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Given that, ${ }^n P_r=840$ and ${ }^n C_r=35$</p>\n<p>$$\\begin{array}{ll}\n\\because\\quad { }^n P_r={ }^n C_r \\cdot r! \\\\ \\Rightarrow \\quad &840=35 \\times r! \\\\\n\\Rightarrow & r!=\\frac{840}{35}=24 \\\\\n\\Rightarrow & r!=4 \\times 3 \\times 2 \\times 1 \\\\\n\\Rightarrow & r!=4! \\\\\n\\Rightarrow & r=4\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb58sh",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>${ }^{15} C_8+{ }^{15} C_9-{ }^{15} C_6-{ }^{15} C_7$ is equal to ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n{ }^{15} C_8+{ }^{15} C_9-{ }^{15} C_6-{ }^{15} C_7 & ={ }^{15} C_{15-8}+{ }^{15} C_{15-9}-{ }^{15} C_6-{ }^{15} C_7 \\quad\\left[\\because{ }^n C_r={ }^n C_{n-r}\\right] \\\\\n& ={ }^{15} C_7+{ }^{15} C_6-{ }^{15} C_6-{ }^{15} C_7 \\\\\n& =0\n\\end{aligned}\n$$\n</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb8f5q",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of permutations of n different objects, taken r at a line, when repetitions are allowed, is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Number of permutations of n different things taken r at a time when repetition is allowed $=n^r$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb8f7x",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of different words that can be formed from the letters of the word 'INTERMEDIATE' such that two vowels never come together is ........... .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Total number of letters in the word 'INTERMEDIATE' $=12$ out of which 6 are consonants and 6 are vowels. The arrangement of these 12 alphabets in which two vowels never come together can be understand with the help of follow manner.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 702px\"><colgroup>\n<col style=\"width: 53px\">\n<col style=\"width: 57px\">\n<col style=\"width: 55px\">\n<col style=\"width: 56px\">\n<col style=\"width: 58px\">\n<col style=\"width: 52px\">\n<col style=\"width: 57px\">\n<col style=\"width: 53px\">\n<col style=\"width: 54px\">\n<col style=\"width: 54px\">\n<col style=\"width: 54px\">\n<col style=\"width: 50px\">\n<col style=\"width: 49px\">\n</colgroup>\n<thead>\n  <tr>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n    <td class=\"tg-baqh\">C</td>\n    <td class=\"tg-baqh\">V</td>\n  </tr></thead>\n</table></p>\n<p>6 consonants out of which 2 are alike can be placed in $\\frac{6!}{2!}$ ways and 6 vowels, out of which 3 E's alike and 2 I's are alike can be arranged at seven place in ${ }^7 P_6 \\times \\frac{1}{3!} \\times \\frac{1}{2!}$ ways.</p>\n<p>$\\therefore$ Total number of words $=\\frac{6!}{2!} \\times{ }^7 P_6 \\times \\frac{1}{3!} \\times \\frac{1}{2!}=151200$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb74ff",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Three balls are drawn from a bag containing 5 red, 4 white and 3 black balls. The number of ways in which this can be done, if atleast 2 are red, is.</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { Required number of ways } & ={ }^5 \\mathrm{C}_2 \\times{ }^7 \\mathrm{C}_1+{ }^5 \\mathrm{C}_3 \\quad \\text{[since, at least two red]}\\\\\n& =10 \\times 7+10 \\\\\n& =70+10=80\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb5rt7",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The number of six-digit numbers all digits of which are odd, is .......... .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Among the digits $0,1,2,3,4,5,6,7,8,9$, clearly $1,3,5,7$ and 9 are odd.</p>\n<p>$\\therefore$ Number of six-digit numbers $=5 \\times 5 \\times 5 \\times 5 \\times 5 \\times 5=5^6$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb6hz2",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In a football championship, 153 matches were played. Every two teams played one match with each other. The number of teams, participating in the championship is ............ .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Let the number of team participating in championship be $n$.</p>\n<p>Since, it is given that every two teams played one match with each other.</p>\n<p>$\\therefore$ Total match played $={ }^n C_2$</p>\n<p>According to the question,</p>\n<p>$$\\begin{array}{r} \n&  { }^n C_2 =153 \\\\\n\\Rightarrow & \\frac{n(n-1)}{2} =153 \\\\\n\\Rightarrow & n^2-n =306 \\\\\n\\Rightarrow & n^2-n-306  =0 \\\\\n\\Rightarrow & (n-18)(n+17) =0 \\\\\n\\Rightarrow & n =18,-17 \\quad \\text{\n[inadmissible]}\\\\\n\\therefore & n =18\n\\end{array}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb7mwx",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>The total number of ways in which six ' + ' and four '$-$' signs can be arranged in a line such that no two signs '$-$' occur together, is ............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>The arrangement can be understand with the help of following figure.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 702px\"><colgroup>\n<col style=\"width: 53px\">\n<col style=\"width: 57px\">\n<col style=\"width: 55px\">\n<col style=\"width: 56px\">\n<col style=\"width: 58px\">\n<col style=\"width: 52px\">\n<col style=\"width: 57px\">\n<col style=\"width: 53px\">\n<col style=\"width: 54px\">\n<col style=\"width: 54px\">\n<col style=\"width: 54px\">\n<col style=\"width: 50px\">\n<col style=\"width: 49px\">\n</colgroup>\n<thead>\n  <tr>\n    <td class=\"tg-baqh\">$-$</td>\n    <td class=\"tg-baqh\">$+$</td>\n    <td class=\"tg-baqh\">$-$</td>\n    <td class=\"tg-baqh\">$+$</td>\n    <td class=\"tg-baqh\">$-$</td>\n    <td class=\"tg-baqh\">$+$</td>\n    <td class=\"tg-baqh\">$-$</td>\n    <td class=\"tg-baqh\">$+$</td>\n    <td class=\"tg-baqh\">$-$</td>\n    <td class=\"tg-baqh\">$+$</td>\n    <td class=\"tg-baqh\">$-$</td>\n    <td class=\"tg-baqh\">$+$</td>\n    <td class=\"tg-baqh\">$-$</td>\n  </tr></thead>\n</table></p>\n<p>Thus, '+' sign can be arranged in 1 way because all are identical. and 4 negative signs can be arranged at 7 places in ${ }^7 C_4$ ways.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad \\text { total number of ways } & ={ }^7 C_4 \\times 1 \\\\\n& =\\frac{7!}{4!3!}=\\frac{7 \\times 6 \\times 5 \\times 4!}{3!\\times 4!} \\\\\n& =\\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1}=35 \\text { ways }\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb5gxm",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A box contains 2 white balls, 3 black balls and 4 red balls. The number of ways three balls be drawn from the box, if atleast one black ball is to be included in the draw is .............. .</p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>Since, there are 2 white, 3 black and 4 red balls. It is given that atleast one black ball is to be included in the draw.</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Required number of ways } & ={ }^3 \\mathrm{C}_1 \\times{ }^6 \\mathrm{C}_2+{ }^3 \\mathrm{C}_2 \\times{ }^6 \\mathrm{C}_1+{ }^3 \\mathrm{C}_3 \\\\\n& =3 \\times 15+3 \\times 6+1 \\\\\n& =45+18+1=64\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "fill-blanks"
+    },
+    {
+      "questionId": "bqf-m1kb5zla",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>There are 12 points in a plane of which 5 points are collinear, then the number of lines obtained by joining these points in pairs is ${ }^{12} C_2-{ }^5 C_2$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Required number of lines $={ }^{12} \\mathrm{C}_2-{ }^5 \\mathrm{C}_2+1$\n</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb86sa",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Three letters can be posted in five letter boxes in $3^5$ ways.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Required number of ways $=5^3=125$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb7fhq",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In the permutations of $n$ things $r$, taken together, the number of permutations in which $m$ particular things occur together is ${ }^{n-m} P_{r-m} \\times{ }^r P_m$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>Arrangement of $n$ things, taken $r$ at a time in which $m$ things occur together, we considered these $m$ things as 1 group.</p>\n<p>Number of object excluding those $m$ objects $=(r-m)$</p>\n<p>Now, first we have to arrange $(r-m+1)$ objects.</p>\n<p>Number of arrangements $=(r-m+1)$ ! and m objects which we consider as 1 group, can be arranged in $m$ ! ways.</p>\n<p>$\\therefore$ Required number of arrangements $=(r-m+1)!\\times m!$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb8o2e",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>In a steamer there are stalls for 12 animals and there are horses, cows and calves (not less than 12 each) ready to be shipped. They can be loaded in $3^{12}$ ways.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>There are three types of animals and stalls available for 12 animals.</p>\n<p>Number of ways of loading $=3^{12}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb5zn9",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>If some or all of $n$ objects are taken at a time, then the number of combinations is $2^n-1$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>If some or all objects taken at a time, then number of selection would be</p>\n<p>$${ }^n C_1+{ }^n C_2+{ }^n C_3+\\ldots+{ }^n C_n=2^n-1 \\quad\\left[\\because{ }^n C_0+{ }^n C_1+{ }^n C_2+\\ldots+{ }^n C_n=2^n\\right]\n$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb58uf",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>There will be only 24 selections containing atleast one red ball out of a bag containing 4 red and 5 black balls. It is being given that the balls of the same colour are identical.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>$$\\begin{aligned}\n\\text { Total number of selection } & =[(4+1)(5+1)-1]-5 \\\\\n& =(5 \\times 6-1)-5 \\\\\n& =(30-1)-5=24\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb8zc0",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Eighteen guests are to be seated, half on each side of a long table. Four particular guests desire to sit on one particular side and three others on other side of the table. The number of ways in which the seating arrangements can be made is $\\frac{11!}{5!6!}(9!)(9!)$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>After seating 4 on one side and 3 on the other side, we have to select out of $11 ; 5$ on one side and 6 on the other side.</p>\n<p>Now, remaining selecting of one half side $={ }^{(18-4-3)} C_5={ }^{11} C_5$</p>\n<p>and $\\quad$ the other half side $={ }^{(11-5)} C_6={ }^6 C_6$</p>\n<p>Total arrangements $={ }^{11} C_5 \\times 9!\\times{ }^6 C_6 \\times 9$ !</p>\n<p>$$\\begin{aligned}\n& =\\frac{11!}{5!6!} \\times 9!\\times 1 \\times 9! \\\\\n& =\\frac{11!}{5!6!} \\times 9!\\times 9!\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb74ht",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>A candidate is required to answer 7 questions, out of 12 questions which are divided into two groups, each containing 6 questions. He is not permitted to attempt more than 5 questions from either group. He can choose the seven questions in 650 ways.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>He can attempt questions in following manner</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 458px\"><colgroup>\n<col style=\"width: 114px\">\n<col style=\"width: 87px\">\n<col style=\"width: 87px\">\n<col style=\"width: 83px\">\n<col style=\"width: 87px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\">Group (A)</th>\n    <th class=\"tg-baqh\">2</th>\n    <th class=\"tg-baqh\">3</th>\n    <th class=\"tg-baqh\">4</th>\n    <th class=\"tg-baqh\">5</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-amwm\">Group (B)</td>\n    <td class=\"tg-baqh\">5</td>\n    <td class=\"tg-baqh\">4</td>\n    <td class=\"tg-baqh\">3</td>\n    <td class=\"tg-baqh\">2</td>\n  </tr>\n</tbody>\n</table></p>\n<p>Number of ways of attempting 7 questions</p>\n<p>$$\\begin{aligned}\n& ={ }^6 C_2 \\times{ }^6 C_5+{ }^6 C_3 \\times{ }^6 C_4+{ }^6 C_4 \\times{ }^6 C_3+{ }^6 C_5 \\times{ }^6 C_2 \\\\\n& =2\\left({ }^6 C_2 \\times{ }^6 C_5+{ }^6 C_3 \\times{ }^6 C_4\\right) \\\\\n& =2(15 \\times 6+20 \\times 15) \\\\\n& =2(90+300) \\\\\n& =2 \\times 390=780\n\\end{aligned}$$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb8o4f",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>To fill 12 vacancies there are 25 candidates of which 5 are from scheduled castes. If 3 of the vacancies are reserved for scheduled caste candidates while the rest are open to all, the number of ways in which the selection can be made is ${ }^5 C_3 \\times{ }^{20} C_9$.</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "TRUE"
+            },
+            {
+              "identifier": "B",
+              "content": "FALSE"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>We have to select 3 scheduled caste candidate out of 5 in ${ }^5 C_3$ ways.</p>\n<p>and we have to select 9 other candidates out of 22 in ${ }^{22} \\mathrm{C}_9$ ways.</p>\n<p>$\\therefore$ Total number of selections $={ }^5 C_3 \\times{ }^{22} C_9$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "t/f"
+    },
+    {
+      "questionId": "bqf-m1kb6i1t",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>There are 3 books on Mathematics, 4 on Physics and 5 on English. How many different collections can be made such that each collection consists?</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 479px\"><colgroup>\n<col style=\"width: 66px\">\n<col style=\"width: 208px\">\n<col style=\"width: 60px\">\n<col style=\"width: 145px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column I</th>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column II</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">(i)</td>\n    <td class=\"tg-0lax\">One book of each subject</td>\n    <td class=\"tg-baqh\">(a)</td>\n    <td class=\"tg-0lax\">3968</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(ii)</td>\n    <td class=\"tg-0lax\">Atleast one book of each subject</td>\n    <td class=\"tg-baqh\">(b)</td>\n    <td class=\"tg-0lax\">60</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iii)</td>\n    <td class=\"tg-0lax\">Atleast one book of English</td>\n    <td class=\"tg-baqh\">(c)</td>\n    <td class=\"tg-0lax\">3255</td>\n  </tr>\n</tbody>\n</table></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>There are three books of Mathematics 4 of Physics and 5 on English.</p>\n<p>$$\\begin{aligned}\n\\text { (i) One book of each subject } & ={ }^3 C_1 \\times{ }^4 C_1 \\times{ }^5 C_1 \\\\\n& =3 \\times 4 \\times 5=60\n\\end{aligned}$$</p>\n<p>(ii) Atleast one book of each subject $=\\left(2^3-1\\right) \\times\\left(2^4-1\\right) \\times\\left(2^5-1\\right)$</p>\n<p>$$=7 \\times 15 \\times 31=3255$$</p>\n<p>(iii) Atleast one book of English = Selection based on following manner</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 552px\"><colgroup>\n<col style=\"width: 114px\">\n<col style=\"width: 87px\">\n<col style=\"width: 87px\">\n<col style=\"width: 83px\">\n<col style=\"width: 87px\">\n<col style=\"width: 94px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\">English book</th>\n    <th class=\"tg-baqh\">1</th>\n    <th class=\"tg-baqh\">2</th>\n    <th class=\"tg-baqh\">3</th>\n    <th class=\"tg-baqh\">4</th>\n    <th class=\"tg-baqh\">5</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-amwm\">Others</td>\n    <td class=\"tg-baqh\">11</td>\n    <td class=\"tg-baqh\">10</td>\n    <td class=\"tg-baqh\">9</td>\n    <td class=\"tg-baqh\">8</td>\n    <td class=\"tg-baqh\">7</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$\\begin{aligned} & =\\left(2^5-1\\right) \\times 2^7 \\\\ & =128 \\times 31=3968\\end{aligned}$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6qvr",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Five boys and five girls form a line. Find the number of ways of making the seating arrangement under the following condition.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 498px\"><colgroup>\n<col style=\"width: 69px\">\n<col style=\"width: 216px\">\n<col style=\"width: 62px\">\n<col style=\"width: 151px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column I</th>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column II</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">(i)</td>\n    <td class=\"tg-0lax\">Boys and girls alternate</td>\n    <td class=\"tg-baqh\">(a)</td>\n    <td class=\"tg-0lax\">$5!\\times6!$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(ii)</td>\n    <td class=\"tg-0lax\">No two girls sit together</td>\n    <td class=\"tg-baqh\">(b)</td>\n    <td class=\"tg-0lax\">$10!-5! 6!$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iii)</td>\n    <td class=\"tg-0lax\">All the girls sit together</td>\n    <td class=\"tg-baqh\">(c)</td>\n    <td class=\"tg-0lax\">$(5!)^2+(5!)^2$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iv)</td>\n    <td class=\"tg-0lax\">All the girls are never together</td>\n    <td class=\"tg-baqh\">(d)</td>\n    <td class=\"tg-0lax\">$2! 5! 5!$</td>\n  </tr>\n</tbody>\n</table></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) Boys and girls alternate</p>\n<p>Total arrangements $=(5!)^2+(5!)^2$</p>\n<p>(ii) No two girls sit together $=5 ! 6 !$</p>\n<p>(iii) All the girls sit together $=2!5 ! 5 !$</p>\n<p>(iv) All the girls are never together $=10!-5 ! 6 !$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8o6q",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>There are 10 professors and 20 lecturers, out of whom a committee of 2 professors and 3 lecturers is to be formed. Find</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 498px\"><colgroup>\n<col style=\"width: 69px\">\n<col style=\"width: 216px\">\n<col style=\"width: 62px\">\n<col style=\"width: 151px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column I</th>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column II</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">(i)</td>\n    <td class=\"tg-0lax\">In how many ways committee can be formed?</td>\n    <td class=\"tg-baqh\">(a)</td>\n    <td class=\"tg-0lax\">${ }^{10} C_2 \\times{ }^{19} C_3$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(ii)</td>\n    <td class=\"tg-0lax\">in how many ways a particular professor is included?</td>\n    <td class=\"tg-baqh\">(b)</td>\n    <td class=\"tg-0lax\">${ }^{10} C_2 \\times{ }^{19} C_2$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iii)</td>\n    <td class=\"tg-0lax\">in how many ways a particular lecturer is included?</td>\n    <td class=\"tg-baqh\">(c)</td>\n    <td class=\"tg-0lax\">${ }^{9} C_1 \\times{ }^{20} C_3$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iv)</td>\n    <td class=\"tg-0lax\">in how many ways a particular lecturer is excluded?</td>\n    <td class=\"tg-baqh\">(d)</td>\n    <td class=\"tg-0lax\">${ }^{10} C_2 \\times{ }^{20} C_3$</td>\n  </tr>\n</tbody></table></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) We have to select 2 professors out of 10 and 3 lecturers out of $20={ }^{10} \\mathrm{C}_2 \\times{ }^{20} \\mathrm{C}_3$</p>\n<p>(ii) When a particular professor included $={ }^{10-1} C_1 \\times{ }^{20} C_3={ }^9 C_1 \\times{ }^{20} C_3$</p>\n<p>(iii) When a particular lecturer included $={ }^{10} \\mathrm{C}_2 \\times{ }^{19} \\mathrm{C}_2$</p>\n<p>(iv) When a particular lecturer excluded $={ }^{10} \\mathrm{C}_2 \\times{ }^{19} \\mathrm{C}_3$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb6qys",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>Using the digits $1,2,3,4,5,6,7$, a number of 4 different digits is formed. Find</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 498px\"><colgroup>\n<col style=\"width: 69px\">\n<col style=\"width: 216px\">\n<col style=\"width: 62px\">\n<col style=\"width: 151px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column I</th>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column II</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">(i)</td>\n    <td class=\"tg-0lax\">how many numbers are formed?</td>\n    <td class=\"tg-baqh\">(a)</td>\n    <td class=\"tg-0lax\">840</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(ii)</td>\n    <td class=\"tg-0lax\">how many numbers are exactly divisible by 2?</td>\n    <td class=\"tg-baqh\">(b)</td>\n    <td class=\"tg-0lax\">200</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iii)</td>\n    <td class=\"tg-0lax\">how many numbers are exactly divisible by 25?</td>\n    <td class=\"tg-baqh\">(c)</td>\n    <td class=\"tg-0lax\">360</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iv)</td>\n    <td class=\"tg-0lax\">how many of these are exactly divisible by 4?</td>\n    <td class=\"tg-baqh\">(d)</td>\n    <td class=\"tg-0lax\">40</td>\n  </tr>\n</tbody>\n</table></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) Total numbers of 4 digit formed with digits 1, 2, 3, 4, 5, 6, 7</p>\n<p>$$=7 \\times 6 \\times 5 \\times 4=840$$</p>\n<p>(ii) When a number is divisible by 2 . At its unit place only even numbers occurs.</p>\n<p>$$\\text { Total numbers }=4 \\times 5 \\times 6 \\times 3=360$$</p>\n<p>(iii) Total numbers which are divisible by $25=40$</p>\n<p>(iv) A number is divisible by 4 , If its last two digit is divisible by 4 .</p>\n<p>$\\therefore$ Total such numbers $=200$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    },
+    {
+      "questionId": "bqf-m1kb8fam",
+      "book": "mathematics-xi",
+      "bookGroup": "ncert",
+      "chapter": "permutations-and-combinations",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "languages": [
+        "en"
+      ],
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>How many words (with or without dictionary meaning) can be made from the letters of the word MONDAY, assuming that no letter is repeated, if</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 497px\"><colgroup>\n<col style=\"width: 68px\">\n<col style=\"width: 216px\">\n<col style=\"width: 62px\">\n<col style=\"width: 151px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column I</th>\n    <th class=\"tg-amwm\"></th>\n    <th class=\"tg-amwm\">Column II</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">(i)</td>\n    <td class=\"tg-0lax\">4 letters are used at a time</td>\n    <td class=\"tg-baqh\">(a)</td>\n    <td class=\"tg-0lax\">720</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(ii)</td>\n    <td class=\"tg-0lax\">All letters are used at a time</td>\n    <td class=\"tg-baqh\">(b)</td>\n    <td class=\"tg-0lax\">240</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">(iii)</td>\n    <td class=\"tg-0lax\">All letters are used but the first is a vowel.</td>\n    <td class=\"tg-baqh\">(c)</td>\n    <td class=\"tg-0lax\">360</td>\n  </tr>\n</tbody>\n</table></p>",
+          "options": [],
+          "correct_options": [],
+          "answer": null,
+          "explanation": "<p>(i) 4 letters are used at a time $={ }^6 P_4=\\frac{6!}{2!}=6 \\times 5 \\times 4 \\times =360$</p>\n<p>(ii) All letters used at a time $=6$ ! $=6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1=720$</p>\n<p>(iii) All letters used but first is vowel $=2 \\times 5$ ! $=2 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1=240$</p>"
+        }
+      },
+      "section": "exemplar-questions",
+      "topic": null,
+      "type": "subjective"
+    }
+  ]
+}
