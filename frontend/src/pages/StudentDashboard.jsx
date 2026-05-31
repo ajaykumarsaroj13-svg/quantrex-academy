@@ -214,11 +214,11 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
         {/* Dynamic Nav Menu */}
         <div className="glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-row lg:flex-col justify-around shadow-lg">
           {[
+            { id: 'marks-portal', label: 'Marks Portal', icon: Target, isPage: true, pageId: 'marks-portal' },
             { id: 'courses', label: 'My Courses', icon: BookOpen },
             { id: 'live', label: 'Live Classes', icon: Clock },
             { id: 'tests', label: 'Mock Tests', icon: Trophy },
             { id: 'test-series', label: 'Full Test Series', icon: FileText, isPage: true, pageId: 'test-series' },
-            { id: 'marks-portal', label: 'Marks Portal', icon: Target, isPage: true, pageId: 'marks-portal' },
             { id: 'pyq', label: 'JEE Main PYQs', icon: Target, isPlatform: true },
             { id: 'ai-analytics', label: 'AI Strengths', icon: BarChart },
             { id: 'doubts', label: 'AI Doubt Solver', icon: BrainCircuit }
