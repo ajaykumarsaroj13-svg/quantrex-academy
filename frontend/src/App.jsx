@@ -12,6 +12,7 @@ import TestSystem from './pages/TestSystem';
 import TestSeriesPage from './pages/TestSeriesPage';
 import TestSeriesExam from './pages/TestSeriesExam';
 import TestSeriesResult from './pages/TestSeriesResult';
+import MarksPortal from './pages/MarksPortal/MarksPortal';
 import { Shield } from 'lucide-react';
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 
@@ -193,6 +194,14 @@ export default function App() {
             user={user}
             onStartTest={handleStartTestSeries}
             onBack={() => setActivePage(user ? 'student-dashboard' : 'home')}
+          />
+        )}
+
+        {/* ─── MARKS PORTAL ─── */}
+        {activePage === 'marks-portal' && (
+          <MarksPortal
+            user={user}
+            setActivePage={setActivePage}
           />
         )}
 

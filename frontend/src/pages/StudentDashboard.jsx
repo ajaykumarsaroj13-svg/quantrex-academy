@@ -218,6 +218,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
             { id: 'live', label: 'Live Classes', icon: Clock },
             { id: 'tests', label: 'Mock Tests', icon: Trophy },
             { id: 'test-series', label: 'Full Test Series', icon: FileText, isPage: true, pageId: 'test-series' },
+            { id: 'marks-portal', label: 'Marks Portal', icon: Target, isPage: true, pageId: 'marks-portal' },
             { id: 'pyq', label: 'JEE Main PYQs', icon: Target, isPlatform: true },
             { id: 'ai-analytics', label: 'AI Strengths', icon: BarChart },
             { id: 'doubts', label: 'AI Doubt Solver', icon: BrainCircuit }
