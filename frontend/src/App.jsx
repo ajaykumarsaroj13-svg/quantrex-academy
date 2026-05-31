@@ -27,7 +27,7 @@ export default function App() {
   const [testResult, setTestResult] = useState(null);
 
   const [syllabus, setSyllabus] = useState(() => {
-    const saved = localStorage.getItem('quantrex_syllabus');
+    const saved = localStorage.getItem('quantrex_syllabus_v2');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
@@ -35,7 +35,7 @@ export default function App() {
   });
 
   const [toppers, setToppers] = useState(() => {
-    const saved = localStorage.getItem('quantrex_toppers');
+    const saved = localStorage.getItem('quantrex_toppers_v2');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
@@ -43,11 +43,11 @@ export default function App() {
   });
 
   useEffect(() => {
-    localStorage.setItem('quantrex_syllabus', JSON.stringify(syllabus));
+    localStorage.setItem('quantrex_syllabus_v2', JSON.stringify(syllabus));
   }, [syllabus]);
 
   useEffect(() => {
-    localStorage.setItem('quantrex_toppers', JSON.stringify(toppers));
+    localStorage.setItem('quantrex_toppers_v2', JSON.stringify(toppers));
   }, [toppers]);
 
   useEffect(() => {
