@@ -32,6 +32,48 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   useEffect(() => {
     if (!testId) return;
     setLoading(true);
+    
+    // Intercept demo test IDs
+    if (String(testId).startsWith('d')) {
+      setTimeout(() => {
+        const subjects = ['Mathematics', 'Physics', 'Chemistry'];
+        if (testId === 'd5') subjects.length = 1; // NDA Math only has Mathematics
+        
+        const mockQuestions = [];
+        let qNum = 1;
+        subjects.forEach(sub => {
+          for (let i = 0; i < 15; i++) {
+            const isNumerical = i >= 10;
+            mockQuestions.push({
+              questionNumber: qNum++,
+              subject: sub,
+              section: isNumerical ? 'B' : 'A',
+              questionType: isNumerical ? 'NUMERICAL' : 'MCQ',
+              marks: 4,
+              negativeMarks: -1,
+              questionText: `<p>This is a sample practice question for ${sub}. Evaluate the expression or choose the correct option.</p>`,
+              options: isNumerical ? [] : ['Option A', 'Option B', 'Option C', 'Option D'],
+              correctOption: isNumerical ? null : Math.floor(Math.random() * 4),
+              correctAnswer: isNumerical ? '42' : null,
+              solution: `<p>Sample solution explanation for ${sub} question.</p>`
+            });
+          }
+        });
+
+        setTestData({
+          id: testId,
+          title: testId === 'd5' ? 'NDA & NA (I) 2025 — Mathematics' : 'Practice Mock Test',
+          durationMinutes: 180,
+          sections: subjects.map(s => ({ name: s })),
+          questions: mockQuestions
+        });
+        setTimeLeft(180 * 60);
+        setLoading(false);
+        setTimeout(() => { if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise(); }, 300);
+      }, 500);
+      return;
+    }
+
     fetch(`${API_BASE}/api/test-series/${testId}`)
       .then(r => r.json())
       .then(data => {
