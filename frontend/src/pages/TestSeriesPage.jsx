@@ -859,7 +859,7 @@ const TestCard = ({ test, onStartTest }) => {
               background: 'linear-gradient(135deg, #15803d, #16a34a)',
               boxShadow: hovered ? '0 4px 16px rgba(22,163,74,0.4)' : 'none',
             }}
-            onClick={() => onStartTest(test._id || test.id, 'exam')}
+            onClick={() => onStartTest(test.id || test._id, 'exam')}
           >
             ▶ Start Test
           </button>
@@ -870,7 +870,7 @@ const TestCard = ({ test, onStartTest }) => {
               borderColor: 'rgba(59,130,246,0.35)',
               background: hovered ? 'rgba(59,130,246,0.08)' : 'transparent',
             }}
-            onClick={() => onStartTest(test._id || test.id, 'practice')}
+            onClick={() => onStartTest(test.id || test._id, 'practice')}
           >
             📝 Practice
           </button>
