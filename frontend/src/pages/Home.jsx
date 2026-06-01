@@ -487,7 +487,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
       {/* ==================== MOBILE STICKY FOOTER ==================== */}
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-obsidian/90 backdrop-blur-md border-t border-white/10 py-3.5 px-4 md:hidden flex justify-around items-center">
         <a
-          href="https://wa.me/919876543210"
+          href="https://wa.me/918700508344"
           target="_blank"
           rel="noreferrer"
           className="flex flex-col items-center text-[10px] text-emerald-400 font-semibold font-mono"
@@ -496,7 +496,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
           WhatsApp
         </a>
         <a
-          href="tel:+919876543210"
+          href="tel:+918700508344"
           className="flex flex-col items-center text-[10px] text-electric font-semibold font-mono"
         >
           <PhoneCall className="h-5 w-5 fill-electric/10 mb-1" />
