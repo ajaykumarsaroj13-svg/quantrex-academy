@@ -277,7 +277,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
     <div style={{ minHeight: '100vh', background: '#0d1117', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ textAlign: 'center', color: '#fff' }}>
         <div style={{ fontSize: 48, marginBottom: 16 }}>❌</div>
-        <div style={{ fontSize: 20 }}>Failed to load test</div>
+        <div style={{ fontSize: 20 }}>Failed to load test (ID: {testId})</div>
         <div style={{ color: '#94a3b8', margin: '8px 0 24px' }}>{error}</div>
         <button onClick={onExit} style={{ padding: '10px 24px', background: '#3b82f6', color: '#fff', border: 'none', borderRadius: 8, cursor: 'pointer', fontSize: 15 }}>← Go Back</button>
       </div>
