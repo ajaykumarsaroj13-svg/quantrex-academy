@@ -97,7 +97,14 @@ app.get('/api/pyqs/chapters', async (req, res) => {
     await connectDB();
     const { exam } = req.query; // e.g. 'JEE Main', 'BITSAT'
     const filter = {};
-    if (exam) filter.exam = exam;
+    if (exam) {
+      if (exam === 'JEE Main') {
+        // Fallback for older data that doesn't have the exam field yet
+        filter.$or = [{ exam: 'JEE Main' }, { exam: { $exists: false } }];
+      } else {
+        filter.exam = exam;
+      }
+    }
     
     const chapters = await PyqChapter.find(filter).lean();
     const grouped = { mathematics: [], physics: [], chemistry: [] };
