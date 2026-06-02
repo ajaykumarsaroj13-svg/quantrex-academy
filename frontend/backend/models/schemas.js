@@ -137,6 +137,7 @@ export const Syllabus = mongoose.model('Syllabus', SyllabusSchema);
 const PyqChapterSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   name: { type: String, required: true },
+  exam: { type: String, default: 'JEE Main' },
   subject: { type: String, required: true },
   count: { type: Number, default: 0 },
   weightage: { type: String, default: '5%' }
@@ -145,6 +146,7 @@ const PyqChapterSchema = new mongoose.Schema({
 // PYQ SCHEMA
 const PyqSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
+  exam: { type: String, default: 'JEE Main' },
   chapterId: { type: String, required: true },
   title: { type: String },
   year: { type: String },

@@ -6,18 +6,17 @@ export let PYQ_CHAPTERS = { mathematics: [], physics: [], chemistry: [] };
 let isChaptersLoaded = false;
 const qsCache = new Map();
 
-export async function fetchChapters() {
-  if (isChaptersLoaded) return PYQ_CHAPTERS;
+export async function fetchChapters(exam = 'JEE Main') {
+  // We don't cache globally if they switch exams often, but we can cache by exam
   try {
-    const res = await fetch('/api/pyqs/chapters');
+    const res = await fetch(`/api/pyqs/chapters?exam=${encodeURIComponent(exam)}`);
     if (res.ok) {
-      PYQ_CHAPTERS = await res.json();
-      isChaptersLoaded = true;
+      return await res.json();
     }
   } catch (err) {
     console.error('Failed to fetch chapters:', err);
   }
-  return PYQ_CHAPTERS;
+  return { mathematics: [], physics: [], chemistry: [] };
 }
 
 export async function fetchPyqsByChapter(chapterId) {

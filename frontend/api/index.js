@@ -26,6 +26,32 @@ const TestSeriesQuestionSchema = new mongoose.Schema({
   difficulty: { type: String, default: 'Medium' }
 });
 
+const PyqChapterSchema = new mongoose.Schema({
+  id: { type: String, required: true, unique: true },
+  exam: { type: String, default: 'JEE Main' },
+  name: { type: String, required: true },
+  subject: { type: String, required: true },
+  count: { type: Number, default: 0 },
+  weightage: { type: String, default: '5%' }
+}, { timestamps: true });
+
+const PyqSchema = new mongoose.Schema({
+  id: { type: String, required: true, unique: true },
+  exam: { type: String, default: 'JEE Main' },
+  chapterId: { type: String, required: true },
+  title: { type: String },
+  year: { type: String },
+  difficulty: { type: String, enum: ['Easy', 'Medium', 'Hard'], default: 'Medium' },
+  type: { type: String, enum: ['SCQ', 'NUMERICAL'], default: 'SCQ' },
+  question: { type: String, required: true },
+  options: [{ type: String }],
+  correctOptionIndex: { type: Number },
+  solution: { type: String },
+  marks: { type: Number, default: 4 },
+  negativeMarks: { type: Number, default: -1 },
+  topic: { type: String, default: 'General' }
+}, { timestamps: true });
+
 const FullTestSeriesSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   title: { type: String, required: true },
@@ -46,6 +72,8 @@ const FullTestSeriesSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 // Prevent model re-registration in serverless
+const PyqChapter = mongoose.models.PyqChapter || mongoose.model('PyqChapter', PyqChapterSchema);
+const Pyq = mongoose.models.Pyq || mongoose.model('Pyq', PyqSchema);
 const FullTestSeries = mongoose.models.FullTestSeries || mongoose.model('FullTestSeries', FullTestSeriesSchema);
 
 // =============================================
@@ -59,6 +87,62 @@ async function connectDB() {
   await mongoose.connect(uri, { serverSelectionTimeoutMS: 10000 });
   isConnected = true;
 }
+
+// =============================================
+// PYQ (CHAPTERWISE) ROUTES
+// =============================================
+
+app.get('/api/pyqs/chapters', async (req, res) => {
+  try {
+    await connectDB();
+    const { exam } = req.query; // e.g. 'JEE Main', 'BITSAT'
+    const filter = {};
+    if (exam) filter.exam = exam;
+    
+    const chapters = await PyqChapter.find(filter).lean();
+    const grouped = { mathematics: [], physics: [], chemistry: [] };
+    for (const ch of chapters) {
+      if (!grouped[ch.subject]) grouped[ch.subject] = [];
+      grouped[ch.subject].push(ch);
+    }
+    res.json(grouped);
+  } catch (e) {
+    console.error('[/api/pyqs/chapters] Error:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.get('/api/pyqs/questions', async (req, res) => {
+  try {
+    await connectDB();
+    const { chapterId } = req.query;
+    if (!chapterId) return res.status(400).json({ error: 'chapterId required' });
+    const qs = await Pyq.find({ chapterId }).lean();
+    res.json(qs);
+  } catch (e) {
+    console.error('[/api/pyqs/questions] Error:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.get('/api/pyqs/search', async (req, res) => {
+  try {
+    await connectDB();
+    const { q } = req.query;
+    if (!q) return res.status(400).json({ error: 'q required' });
+    
+    const targetId = q.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/(^_|_$)/g, '');
+    const words = targetId.split('_').filter(w => w.length > 3);
+    if (words.length === 0) return res.json([]);
+
+    const conditions = words.map(w => ({ chapterId: { $regex: w, $options: 'i' } }));
+    const qs = await Pyq.find({ $or: conditions }).lean();
+    res.json(qs);
+  } catch (e) {
+    console.error('[/api/pyqs/search] Error:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
 
 // =============================================
 // TEST SERIES ROUTES

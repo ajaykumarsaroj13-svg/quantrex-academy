@@ -11,10 +11,11 @@ export default function ExamGoalPlatform({ user, onBack, onStartTest, onStartPra
   // Navigation State
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [activeMenu, setActiveMenu] = useState('pyq');
-  const [expandedMenus, setExpandedMenus] = useState({ 'pyq': true, 'jee-main': true });
+  const [expandedMenus, setExpandedMenus] = useState({ 'pyq': true, 'JEE Main': true });
   
   // Content State
-  const [activeSubject, setActiveSubject] = useState('mathematics'); // physics, chemistry, mathematics
+  const [activeSubject, setActiveSubject] = useState('Mathematics'); 
+  const [activeExam, setActiveExam] = useState('JEE Main');
   const [selectedChapter, setSelectedChapter] = useState(null);
   const [chapterTab, setChapterTab] = useState('topic-wise');
   
@@ -33,11 +34,12 @@ export default function ExamGoalPlatform({ user, onBack, onStartTest, onStartPra
   const [selectedFolder, setSelectedFolder] = useState(null);
 
   useEffect(() => {
-    fetchChapters().then(data => {
-      setChaptersObj(data || { mathematics: [], physics: [], chemistry: [] });
+    setIsLoadingChapters(true);
+    fetchChapters(activeExam).then(data => {
+      setChaptersObj(data || { Mathematics: [], Physics: [], Chemistry: [] });
       setIsLoadingChapters(false);
     });
-  }, []);
+  }, [activeExam]);
 
   useEffect(() => {
     if (selectedChapter) {
@@ -77,27 +79,78 @@ export default function ExamGoalPlatform({ user, onBack, onStartTest, onStartPra
       label: 'Previous Year Question',
       children: [
         { 
-          id: 'jee-main', 
+          id: 'JEE Main', 
           label: 'JEE Main',
           children: [
-            { id: 'physics', label: 'Physics', type: 'subject' },
-            { id: 'chemistry', label: 'Chemistry', type: 'subject' },
-            { id: 'mathematics', label: 'Mathematics', type: 'subject' }
+            { id: 'Physics', label: 'Physics', type: 'subject', exam: 'JEE Main' },
+            { id: 'Chemistry', label: 'Chemistry', type: 'subject', exam: 'JEE Main' },
+            { id: 'Mathematics', label: 'Mathematics', type: 'subject', exam: 'JEE Main' }
           ]
         },
         { 
-          id: 'jee-adv', 
+          id: 'JEE Advanced', 
           label: 'JEE Advanced',
           children: [
-            { id: 'adv-physics', label: 'Physics', type: 'subject' },
-            { id: 'adv-chemistry', label: 'Chemistry', type: 'subject' },
-            { id: 'adv-mathematics', label: 'Mathematics', type: 'subject' }
+            { id: 'Physics', label: 'Physics', type: 'subject', exam: 'JEE Advanced' },
+            { id: 'Chemistry', label: 'Chemistry', type: 'subject', exam: 'JEE Advanced' },
+            { id: 'Mathematics', label: 'Mathematics', type: 'subject', exam: 'JEE Advanced' }
+          ]
+        },
+        { 
+          id: 'BITSAT', 
+          label: 'BITSAT',
+          children: [
+            { id: 'Physics', label: 'Physics', type: 'subject', exam: 'BITSAT' },
+            { id: 'Chemistry', label: 'Chemistry', type: 'subject', exam: 'BITSAT' },
+            { id: 'Mathematics', label: 'Mathematics', type: 'subject', exam: 'BITSAT' }
+          ]
+        },
+        { 
+          id: 'IAT', 
+          label: 'IAT (IISER)',
+          children: [
+            { id: 'Physics', label: 'Physics', type: 'subject', exam: 'IAT' },
+            { id: 'Chemistry', label: 'Chemistry', type: 'subject', exam: 'IAT' },
+            { id: 'Mathematics', label: 'Mathematics', type: 'subject', exam: 'IAT' },
+            { id: 'Biology', label: 'Biology', type: 'subject', exam: 'IAT' }
+          ]
+        },
+        { 
+          id: 'NDA', 
+          label: 'NDA',
+          children: [
+            { id: 'Mathematics', label: 'Mathematics', type: 'subject', exam: 'NDA' },
+            { id: 'GAT', label: 'General Ability Test', type: 'subject', exam: 'NDA' }
           ]
         }
       ]
     },
-    { id: 'tests', icon: FileText, label: 'Test Series', badge: 'New' },
-    { id: 'ncert', icon: BookOpen, label: 'NCERT' }
+    { 
+      id: 'ncert', 
+      icon: BookOpen, 
+      label: 'NCERT',
+      children: [
+        {
+          id: 'NCERT Class 11',
+          label: 'Class 11',
+          children: [
+            { id: 'Physics', label: 'Physics', type: 'subject', exam: 'NCERT Class 11' },
+            { id: 'Chemistry', label: 'Chemistry', type: 'subject', exam: 'NCERT Class 11' },
+            { id: 'Mathematics', label: 'Mathematics', type: 'subject', exam: 'NCERT Class 11' }
+          ]
+        },
+        {
+          id: 'NCERT Class 12',
+          label: 'Class 12',
+          children: [
+            { id: 'Physics', label: 'Physics', type: 'subject', exam: 'NCERT Class 12' },
+            { id: 'Chemistry', label: 'Chemistry', type: 'subject', exam: 'NCERT Class 12' },
+            { id: 'Mathematics', label: 'Mathematics', type: 'subject', exam: 'NCERT Class 12' }
+          ]
+        }
+      ]
+    },
+    { id: 'tests', icon: FileText, label: 'Full Test Series', badge: 'New' }
   ];
 
   const toggleMenu = (menuId) => {
@@ -113,6 +166,7 @@ export default function ExamGoalPlatform({ user, onBack, onStartTest, onStartPra
     } else if (item.type === 'subject') {
       setActiveMenu(item.id);
       setActiveSubject(item.id);
+      setActiveExam(item.exam || 'JEE Main');
       setSelectedChapter(null);
     } else {
       setActiveMenu(item.id);
@@ -322,7 +376,7 @@ export default function ExamGoalPlatform({ user, onBack, onStartTest, onStartPra
     const chapters = chaptersObj[activeSubject] || [];
     return (
       <div className="p-8 animate-fade-in max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-2 capitalize">JEE Main {activeSubject}</h2>
+        <h2 className="text-3xl font-bold text-white mb-2 capitalize">{activeExam} {activeSubject}</h2>
         <p className="text-gray-400 mb-8">Select a chapter to practice previous year questions.</p>
         
         {isLoadingChapters ? (
