@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Book, ChevronRight, ArrowLeft, PlayCircle } from 'lucide-react';
-import blackBookDataFull from '../utils/blackBookDataFull.json';
+import { blackBookDemoData } from '../utils/blackBookData';
 
 export default function BookChapterList({ book, setActivePage, setPracticeChapter, theme }) {
   const isLight = theme === 'light';
   
-  // Currently we only have blackBookDataFull, but you could load dynamically based on book.id
-  const bookData = book.id === 'black-book-maths' ? blackBookDataFull : null;
+  // Currently we only have blackBookDemoData, but you could load dynamically based on book.id
+  const bookData = book.id === 'black-book-maths' ? blackBookDemoData : null;
 
   if (!bookData) {
     return (
