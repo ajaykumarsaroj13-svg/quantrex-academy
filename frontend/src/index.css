@@ -262,6 +262,23 @@ html.light .shimmer {
 .animate-fade-in { animation: fadeIn 0.3s ease-out both; }
 
 /* ================================================================
+   MARQUEE ANIMATION
+================================================================ */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
+/* ================================================================
    THEME TOGGLE BUTTON TRANSITION
 ================================================================ */
 .theme-toggle-btn {

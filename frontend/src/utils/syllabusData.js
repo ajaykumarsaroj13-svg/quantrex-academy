@@ -3699,40 +3699,608 @@ export const DEFAULT_SYLLABUS = {
         ]
       }
     }
+  },
+  "nda": {
+      "label": "NDA",
+      "subjects": {
+          "english": {
+              "label": "English",
+              "chapters": [
+                  {
+                      "id": "nda_english_rearranging-sentences-in-a-paragraph",
+                      "title": "Rearranging Sentences In A Paragraph",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_english_synonyms",
+                      "title": "Synonyms",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_english_idioms-and-phrases",
+                      "title": "Idioms And Phrases",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_english_improvement-of-sentence",
+                      "title": "Improvement Of Sentence",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_english_antonyms",
+                      "title": "Antonyms",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_english_reading-comprehension",
+                      "title": "Reading Comprehension",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_english_sentence-completion",
+                      "title": "Sentence Completion",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_english_cloze",
+                      "title": "Cloze",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_english_word-classes",
+                      "title": "Word Classes",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  }
+              ]
+          },
+          "general-science": {
+              "label": "General-science",
+              "chapters": [
+                  {
+                      "id": "nda_general-science_biology",
+                      "title": "Biology",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_general-science_physics",
+                      "title": "Physics",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_general-science_chemistry",
+                      "title": "Chemistry",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_general-science_synonyms",
+                      "title": "Synonyms",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  }
+              ]
+          },
+          "general-studies": {
+              "label": "General-studies",
+              "chapters": [
+                  {
+                      "id": "nda_general-studies_general-knowledge",
+                      "title": "General Knowledge",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_general-studies_polity",
+                      "title": "Polity",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_general-studies_geography",
+                      "title": "Geography",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_general-studies_history",
+                      "title": "History",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_general-studies_economy",
+                      "title": "Economy",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_general-studies_synonyms",
+                      "title": "Synonyms",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  }
+              ]
+          },
+          "mathematics": {
+              "label": "Mathematics",
+              "chapters": [
+                  {
+                      "id": "nda_mathematics_determinants",
+                      "title": "Determinants",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_matrices",
+                      "title": "Matrices",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_binomial-theorem",
+                      "title": "Binomial Theorem",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_permutations-and-combinations",
+                      "title": "Permutations And Combinations",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_quadratic-equations-and-inequalities",
+                      "title": "Quadratic Equations And Inequalities",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_sets-relations-and-functions",
+                      "title": "Sets Relations And Functions",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_sequence-and-series",
+                      "title": "Sequence And Series",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_trigonometric-angles-and-equations",
+                      "title": "Trigonometric Angles And Equations",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_height-and-distance",
+                      "title": "Height And Distance",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_inverse-trigonometric-function",
+                      "title": "Inverse Trigonometric Function",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_complex-numbers",
+                      "title": "Complex Numbers",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_coordinate-system-and-straight-line",
+                      "title": "Coordinate System And Straight Line",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_functions",
+                      "title": "Functions",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_differential-equations",
+                      "title": "Differential Equations",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_logarithms",
+                      "title": "Logarithms",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_parabola",
+                      "title": "Parabola",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_definite-integration",
+                      "title": "Definite Integration",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_indefinite-integration",
+                      "title": "Indefinite Integration",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_application-of-derivatives",
+                      "title": "Application Of Derivatives",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_differentiation",
+                      "title": "Differentiation",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_limit-continuity-and-differentiability",
+                      "title": "Limit Continuity And Differentiability",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_area-under-the-curves",
+                      "title": "Area Under The Curves",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_circle",
+                      "title": "Circle",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_ellipse",
+                      "title": "Ellipse",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_properties-of-triangles",
+                      "title": "Properties Of Triangles",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_three-dimensional-geometry",
+                      "title": "Three Dimensional Geometry",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_vector-algebra",
+                      "title": "Vector Algebra",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_probability",
+                      "title": "Probability",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_statistics",
+                      "title": "Statistics",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_hyperbola",
+                      "title": "Hyperbola",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  },
+                  {
+                      "id": "nda_mathematics_conic-section",
+                      "title": "Conic Section",
+                      "url": "#",
+                      "videos": [],
+                      "pdfs": [],
+                      "formulas": [],
+                      "pyqs": [],
+                      "mockTests": [],
+                      "module": "General"
+                  }
+              ]
+          }
+      }
   }
 };
 
 export const DEFAULT_TOPPERS = [
   {
     "id": "t1",
-    "name": "Aarav Singhal",
-    "rank": "AIR 1",
-    "score": "352 / 360",
-    "year": "JEE Advanced 2025",
-    "photo": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80"
+    "name": "YASH PANT",
+    "rank": "AIR 41,264",
+    "score": "97.38 Percentile",
+    "year": "JEE MAIN 2026",
+    "photo": "/images/toppers/yash-pant.jpg"
   },
   {
     "id": "t2",
-    "name": "Ishita Goel",
-    "rank": "AIR 14",
-    "score": "340 / 360",
-    "year": "JEE Advanced 2025",
-    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80"
+    "name": "DIBYANSHU SAHOO",
+    "rank": "AIR 36,453",
+    "score": "97.69 Percentile",
+    "year": "JEE MAIN 2026",
+    "photo": "/images/toppers/dibyanshu.jpg"
   },
   {
     "id": "t3",
-    "name": "Kabir Mehta",
-    "rank": "AIR 32",
-    "score": "328 / 360",
-    "year": "JEE Advanced 2025",
-    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
-  },
-  {
-    "id": "t4",
-    "name": "Sneha Reddy",
-    "rank": "99.85 Percentile",
-    "score": "99.85%",
-    "year": "CBSE Class 12th 2025",
-    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+    "name": "ARKADEEP JANA",
+    "rank": "AIR 36,453",
+    "score": "97.69 Percentile",
+    "year": "JEE MAIN 2026",
+    "photo": "/images/toppers/arkadeep.jpg"
   }
 ];
+

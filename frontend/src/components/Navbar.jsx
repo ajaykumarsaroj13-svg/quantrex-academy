@@ -76,6 +76,17 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
           Test Series
         </button>
 
+        <button
+          onClick={() => setActivePage('books')}
+          className={`uppercase transition-all duration-200 hover:scale-105 flex items-center gap-1 ${
+            activePage === 'books'
+              ? (isLight ? 'text-blue-600' : 'text-electric')
+              : (isLight ? 'text-gray-600 hover:text-blue-600' : 'text-platinum hover:text-white')
+          }`}
+        >
+          <BookOpen className="h-3.5 w-3.5 text-gold" />
+          Books
+        </button>
 
         {user && user.role === 'admin' && (
           <button
@@ -166,3 +177,4 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
     </nav>
   );
 }
+

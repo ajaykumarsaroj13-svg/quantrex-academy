@@ -398,11 +398,33 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   <span className="text-[9px] text-gray-500 uppercase tracking-widest block font-bold">Select Subject</span>
                   <div className="flex gap-2 font-mono text-[10px]">
                     {[
-                      { id: 'mathematics', label: '🧮 Mathematics' },
+                      { id: 'mathematics', label: '∑ Mathematics' },
                       { id: 'physics', label: '⚛️ Physics' },
-                      { id: 'chemistry', label: '🧪 Chemistry' }
+                      { id: 'chemistry', label: '⚗️ Chemistry' },
+                      { id: 'english', label: '📚 English' },
+                      { id: 'general-science', label: '🔬 General Science' },
+                      { id: 'general-studies', label: '🌍 General Studies' }
                     ].map(subj => {
                       const hasPCM = ['jee-mains', 'jee-advanced', 'mht-cet', 'bitsat', 'nda'].includes(selectedSyllabusClass);
+                      const isNDA = selectedSyllabusClass === 'nda';
+                      
+                      // NDA has all subjects
+                      if (isNDA) return (
+                        <button
+                          key={subj.id}
+                          onClick={() => setSelectedSyllabusSubject(subj.id)}
+                          className={`px-4 py-2 rounded-lg font-bold uppercase transition-all ${
+                            selectedSyllabusSubject === subj.id 
+                              ? 'bg-electric/10 text-electric border border-electric/25' 
+                              : 'bg-obsidian border border-white/5 text-gray-400 hover:text-white'
+                          }`}
+                        >
+                          {subj.label}
+                        </button>
+                      );
+                      
+                      // Others only have PCM
+                      if (['english', 'general-science', 'general-studies'].includes(subj.id)) return null;
                       if (subj.id !== 'mathematics' && !hasPCM) return null;
                       
                       return (

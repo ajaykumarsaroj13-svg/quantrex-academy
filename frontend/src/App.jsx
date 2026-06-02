@@ -14,6 +14,10 @@ import TestSeriesExam from './pages/TestSeriesExam';
 import TestSeriesResult from './pages/TestSeriesResult';
 import MarksPortal from './pages/MarksPortal/MarksPortal';
 import { Shield } from 'lucide-react';
+import BooksLibrary from './pages/BooksLibrary';
+import BookReader from './pages/BookReader';
+import BookChapterList from './pages/BookChapterList';
+import BookPractice from './pages/BookPractice';
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 
 export default function App() {
@@ -25,7 +29,9 @@ export default function App() {
   const [customLogo, setCustomLogo] = useState(localStorage.getItem('custom_logo') || null);
   const [activeTestId, setActiveTestId] = useState(null);
   const [activeTestMode, setActiveTestMode] = useState('exam'); // 'exam' | 'practice'
-  const [testResult, setTestResult] = useState(null);
+    const [testResult, setTestResult] = useState(null);
+  const [readingBook, setReadingBook] = useState(null);
+  const [practiceChapter, setPracticeChapter] = useState(null);
 
   const [syllabus, setSyllabus] = useState(() => {
     const saved = localStorage.getItem('quantrex_syllabus_v2');
@@ -36,10 +42,6 @@ export default function App() {
   });
 
   const [toppers, setToppers] = useState(() => {
-    const saved = localStorage.getItem('quantrex_toppers_v2');
-    if (saved) {
-      try { return JSON.parse(saved); } catch (e) {}
-    }
     return DEFAULT_TOPPERS;
   });
 
@@ -47,9 +49,7 @@ export default function App() {
     localStorage.setItem('quantrex_syllabus_v2', JSON.stringify(syllabus));
   }, [syllabus]);
 
-  useEffect(() => {
-    localStorage.setItem('quantrex_toppers_v2', JSON.stringify(toppers));
-  }, [toppers]);
+
 
   useEffect(() => {
     const savedUser = localStorage.getItem('user');
@@ -152,8 +152,20 @@ export default function App() {
         />
       )}
 
-      <div className="flex-grow">
-        {activePage === 'home' && (
+        <div className="flex-grow">
+          {activePage === 'books' && (
+            <BooksLibrary setActivePage={setActivePage} setReadingBook={setReadingBook} theme="dark" />
+          )}
+          {activePage === 'book-reader' && (
+            <BookReader book={readingBook} setActivePage={setActivePage} theme="dark" />
+          )}
+          {activePage === 'book-chapters' && (
+            <BookChapterList book={readingBook} setActivePage={setActivePage} setPracticeChapter={setPracticeChapter} theme="dark" />
+          )}
+          {activePage === 'book-practice' && (
+            <BookPractice chapter={practiceChapter} setActivePage={setActivePage} theme="dark" />
+          )}
+          {activePage === 'home' && (
           <Home
             setActivePage={setActivePage}
             user={user}
@@ -276,3 +288,4 @@ export default function App() {
     </div>
   );
 }
+

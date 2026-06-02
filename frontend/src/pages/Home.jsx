@@ -119,6 +119,152 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
         <div className="absolute bottom-[-20%] left-[20%] w-[500px] h-[500px] bg-gold/10 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-4000"></div>
       </div>
 
+      {/* ==================== HERO SECTION ==================== */}
+      <section className="relative z-10 pt-24 pb-20 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
+        {/* Badge */}
+        <div className="flex flex-col sm:flex-row items-center gap-3 px-6 py-2 bg-electric/10 border border-electric/30 text-electric rounded-full text-xs font-bold tracking-widest uppercase mb-8 shadow-[0_0_20px_rgba(0,240,255,0.15)]">
+          <Sparkles className="h-4 w-4 text-gold animate-spin" />
+          <span>NIT Rourkela Alumnus</span>
+          <span className="hidden sm:block text-white/30">•</span>
+          <span>Ex-ALLEN Career Institute Faculty</span>
+        </div>
+
+        {/* Headline */}
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-6 uppercase max-w-5xl leading-none font-display">
+          Concepts Create <br/>
+          <span className="bg-gradient-to-r from-electric via-cyan-300 to-gold bg-clip-text text-transparent">Destiny</span>
+        </h1>
+
+        {/* Sub-headline */}
+        <p className="text-gray-100 text-base md:text-xl max-w-4xl mb-8 leading-relaxed font-semibold">
+          Mathematics is not about memorizing formulas; it is about developing analytical thinking, problem-solving ability, and the confidence to tackle challenging questions. Strong concepts today create future success.
+        </p>
+        
+        <div className="flex flex-wrap justify-center gap-4 mb-10 text-xs md:text-sm font-black text-white uppercase tracking-widest">
+           <span className="px-4 py-1.5 border border-white/20 rounded-lg bg-cyberdark/80 shadow-[0_0_15px_rgba(255,255,255,0.1)]">8+ Years Experience</span>
+           <span className="px-4 py-1.5 border border-white/20 rounded-lg bg-cyberdark/80 shadow-[0_0_15px_rgba(255,255,255,0.1)]">500+ JEE Adv. Qualifiers</span>
+           <span className="px-4 py-1.5 border border-white/20 rounded-lg bg-cyberdark/80 shadow-[0_0_15px_rgba(255,255,255,0.1)]">3000+ JEE Main Qualifiers</span>
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-5 mb-20">
+          <button
+            onClick={() => onStartLearning('jee-mains', 'courses', 'videos')}
+            className="group relative px-8 py-4 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian font-bold text-sm tracking-widest uppercase rounded-xl shadow-[0_0_20px_rgba(0,180,216,0.4)] hover:shadow-[0_0_35px_rgba(0,180,216,0.6)] transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+            <span className="relative flex items-center gap-2">
+              <Rocket className="h-4 w-4" /> Start JEE Main Now — Free
+            </span>
+          </button>
+          <button
+            onClick={() => onStartLearning('jee-advanced', 'courses', 'videos')}
+            className="px-8 py-4 border-2 border-gold/40 hover:border-gold text-gold hover:text-white font-bold text-sm tracking-widest uppercase rounded-xl bg-cyberdark/40 backdrop-blur shadow-[0_0_15px_rgba(245,158,11,0.1)] hover:shadow-[0_0_25px_rgba(245,158,11,0.3)] hover:bg-gold/10 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+          >
+            <Zap className="h-4 w-4" /> JEE Advanced Portal
+          </button>
+        </div>
+
+        {/* Math formula ticker */}
+        <div className="w-full max-w-5xl glass-panel-glow rounded-3xl p-8 border border-white/10 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-gradient-to-br from-cyberdark/80 to-obsidian/90">
+          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
+          
+          <div className="flex-1 flex flex-col items-center p-6 bg-obsidian/80 border border-white/5 rounded-2xl float-math-1 shadow-lg group hover:border-electric/50 transition-colors">
+            <span className="text-[10px] text-electric uppercase tracking-widest font-semibold mb-2">Limit Calculus</span>
+            <div className="text-xl font-bold font-display text-glow-blue py-3">
+              {"$$\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$$"}
+            </div>
+            <p className="text-[10px] text-gray-400 font-mono text-center">Fundamental trigonometric limit</p>
+          </div>
+          <div className="flex-1 flex flex-col items-center p-6 bg-obsidian/80 border border-white/5 rounded-2xl float-math-2 shadow-lg group hover:border-gold/50 transition-colors">
+            <span className="text-[10px] text-gold uppercase tracking-widest font-semibold mb-2">Parabolic Geometry</span>
+            <div className="text-xl font-bold font-display text-glow-gold py-3 group-hover:scale-105 transition-transform">
+              {"$$y^2 = 4ax$$"}
+            </div>
+            <p className="text-[10px] text-gray-400 font-mono text-center">Standard parabola focus equation</p>
+          </div>
+          <div className="flex-1 flex flex-col items-center p-6 bg-obsidian/80 border border-white/5 rounded-2xl float-math-3 shadow-lg group hover:border-electric/50 transition-colors">
+            <span className="text-[10px] text-electric uppercase tracking-widest font-semibold mb-2">Euler's Identity</span>
+            <div className="text-xl font-bold font-display text-glow-blue py-3 group-hover:scale-105 transition-transform">
+              {"$$e^{i\\pi} + 1 = 0$$"}
+            </div>
+            <p className="text-[10px] text-gray-400 font-mono text-center">The most beautiful equation in math</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== TOPPERS / HALL OF FAME ==================== */}
+      <section className="bg-cyberdark/30 border-y border-white/5 py-20 px-6 overflow-hidden relative">
+        <div className="absolute top-0 right-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay pointer-events-none"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="flex flex-col items-center mb-12 text-center">
+            <span className="text-xs font-semibold text-gold uppercase tracking-widest flex items-center gap-2 mb-3">
+              <Trophy className="h-4 w-4 fill-current" /> HALL OF FAME
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black uppercase text-white font-display mb-4">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-400">Achievers</span>
+            </h2>
+              <p className="text-gray-400 text-sm font-mono max-w-xl">
+                Outstanding results by students who prepared under the expert guidance of A.K. Sir.
+              </p>
+            </div>
+            
+            {/* FEATURED TOPPERS (2024 & 2022) */}
+            <div className="w-full max-w-5xl mx-auto mb-16 px-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                {/* Left: Dibyanshu 2024 */}
+                <div className="relative group bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-2xl hover:border-gold transition-all duration-500 hover:-translate-y-2">
+                  <img src="/images/toppers/dibyanshu-2024.jpg" alt="Dibyanshu Sahoo 2024" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+                </div>
+                
+                {/* Right: Rakshit 2022 */}
+                <div className="relative group bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-2xl hover:border-electric transition-all duration-500 hover:-translate-y-2">
+                  <img src="/images/toppers/rakshit-2022.jpg" alt="Rakshit Aryan 2022" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full overflow-hidden"><div className="animate-marquee gap-8 py-4 px-4 flex flex-row flex-nowrap">
+            {[...(toppers || []), ...(toppers || []), ...(toppers || []), ...(toppers || [])].map((t, idx) => (
+              <div
+                key={idx}
+                className="w-[300px] md:w-[400px] shrink-0 group relative bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-2xl hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 flex flex-col"
+              >
+                {/* Glow effect behind */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Image Container */}
+                <div className="relative w-full aspect-[4/3] bg-cyberdark overflow-hidden">
+                  <img
+                    src={t.photo}
+                    alt={t.name}
+                    className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-700"
+                    onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80'; }}
+                  />
+                  {/* Subtle overlay border */}
+                  <div className="absolute inset-0 border-[4px] border-obsidian/20 pointer-events-none mix-blend-overlay"></div>
+                </div>
+
+                {/* Details Footer */}
+                <div className="p-5 flex items-center justify-between bg-gradient-to-r from-obsidian to-cyberdark/80 border-t border-white/5 relative z-10">
+                  <div>
+                    <h4 className="text-white font-black text-lg tracking-wide group-hover:text-gold transition-colors">{t.name}</h4>
+                    <p className="text-[10px] text-gray-400 font-mono mt-1">{t.year}</p>
+                  </div>
+                  <div className="text-right">
+                    <span className="block text-xl font-black text-electric font-display">{t.rank}</span>
+                    <span className="text-[10px] bg-electric/10 text-electric border border-electric/20 px-2 py-0.5 rounded font-mono uppercase tracking-wider inline-block mt-1">
+                      {t.score || t.percent}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ==================== FACULTY CREDENTIALS SECTION ==================== */}
       <section className="py-24 px-6 md:px-12 bg-cyberdark/40 border-t border-white/5 relative overflow-hidden">
         {/* Background Accent */}
@@ -202,80 +348,6 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
         </div>
       </section>
 
-      {/* ==================== HERO SECTION ==================== */}
-      <section className="relative z-10 pt-24 pb-20 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
-        {/* Badge */}
-        <div className="flex flex-col sm:flex-row items-center gap-3 px-6 py-2 bg-electric/10 border border-electric/30 text-electric rounded-full text-xs font-bold tracking-widest uppercase mb-8 shadow-[0_0_20px_rgba(0,240,255,0.15)]">
-          <Sparkles className="h-4 w-4 text-gold animate-spin" />
-          <span>NIT Rourkela Alumnus</span>
-          <span className="hidden sm:block text-white/30">•</span>
-          <span>Ex-ALLEN Career Institute Faculty</span>
-        </div>
-
-        {/* Headline */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-6 uppercase max-w-5xl leading-none font-display">
-          Concepts Create <br/>
-          <span className="bg-gradient-to-r from-electric via-cyan-300 to-gold bg-clip-text text-transparent">Destiny</span>
-        </h1>
-
-        {/* Sub-headline */}
-        <p className="text-gray-100 text-base md:text-xl max-w-4xl mb-8 leading-relaxed font-semibold">
-          Mathematics is not about memorizing formulas; it is about developing analytical thinking, problem-solving ability, and the confidence to tackle challenging questions. Strong concepts today create future success.
-        </p>
-        
-        <div className="flex flex-wrap justify-center gap-4 mb-10 text-xs md:text-sm font-black text-white uppercase tracking-widest">
-           <span className="px-4 py-1.5 border border-white/20 rounded-lg bg-cyberdark/80 shadow-[0_0_15px_rgba(255,255,255,0.1)]">8+ Years Experience</span>
-           <span className="px-4 py-1.5 border border-white/20 rounded-lg bg-cyberdark/80 shadow-[0_0_15px_rgba(255,255,255,0.1)]">500+ JEE Adv. Qualifiers</span>
-           <span className="px-4 py-1.5 border border-white/20 rounded-lg bg-cyberdark/80 shadow-[0_0_15px_rgba(255,255,255,0.1)]">3000+ JEE Main Qualifiers</span>
-        </div>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-5 mb-20">
-          <button
-            onClick={() => onStartLearning('jee-mains', 'courses', 'videos')}
-            className="group relative px-8 py-4 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian font-bold text-sm tracking-widest uppercase rounded-xl shadow-[0_0_20px_rgba(0,180,216,0.4)] hover:shadow-[0_0_35px_rgba(0,180,216,0.6)] transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
-            <span className="relative flex items-center gap-2">
-              <Rocket className="h-4 w-4" /> Start JEE Main Now — Free
-            </span>
-          </button>
-          <button
-            onClick={() => onStartLearning('jee-advanced', 'courses', 'videos')}
-            className="px-8 py-4 border-2 border-gold/40 hover:border-gold text-gold hover:text-white font-bold text-sm tracking-widest uppercase rounded-xl bg-cyberdark/40 backdrop-blur shadow-[0_0_15px_rgba(245,158,11,0.1)] hover:shadow-[0_0_25px_rgba(245,158,11,0.3)] hover:bg-gold/10 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
-          >
-            <Zap className="h-4 w-4" /> JEE Advanced Portal
-          </button>
-        </div>
-
-        {/* Math formula ticker */}
-        <div className="w-full max-w-5xl glass-panel-glow rounded-3xl p-8 border border-white/10 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-gradient-to-br from-cyberdark/80 to-obsidian/90">
-          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
-          
-          <div className="flex-1 flex flex-col items-center p-6 bg-obsidian/80 border border-white/5 rounded-2xl float-math-1 shadow-lg group hover:border-electric/50 transition-colors">
-            <span className="text-[10px] text-electric uppercase tracking-widest font-semibold mb-2">Limit Calculus</span>
-            <div className="text-xl font-bold font-display text-glow-blue py-3">
-              {"$$\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$$"}
-            </div>
-            <p className="text-[10px] text-gray-400 font-mono text-center">Fundamental trigonometric limit</p>
-          </div>
-          <div className="flex-1 flex flex-col items-center p-6 bg-obsidian/80 border border-white/5 rounded-2xl float-math-2 shadow-lg group hover:border-gold/50 transition-colors">
-            <span className="text-[10px] text-gold uppercase tracking-widest font-semibold mb-2">Parabolic Geometry</span>
-            <div className="text-xl font-bold font-display text-glow-gold py-3 group-hover:scale-105 transition-transform">
-              {"$$y^2 = 4ax$$"}
-            </div>
-            <p className="text-[10px] text-gray-400 font-mono text-center">Standard parabola focus equation</p>
-          </div>
-          <div className="flex-1 flex flex-col items-center p-6 bg-obsidian/80 border border-white/5 rounded-2xl float-math-3 shadow-lg group hover:border-electric/50 transition-colors">
-            <span className="text-[10px] text-electric uppercase tracking-widest font-semibold mb-2">Euler's Identity</span>
-            <div className="text-xl font-bold font-display text-glow-blue py-3 group-hover:scale-105 transition-transform">
-              {"$$e^{i\\pi} + 1 = 0$$"}
-            </div>
-            <p className="text-[10px] text-gray-400 font-mono text-center">The most beautiful equation in math</p>
-          </div>
-        </div>
-      </section>
-
       {/* ==================== MATHEMATICS QUICK HUB ==================== */}
       <section className="py-20 px-6 md:px-12 max-w-7xl mx-auto">
         <div className="flex flex-col items-center mb-14 text-center">
@@ -321,44 +393,6 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
               </button>
             );
           })}
-        </div>
-      </section>
-
-      {/* ==================== TOPPERS / HALL OF FAME ==================== */}
-      <section className="bg-cyberdark/30 border-y border-white/5 py-16 px-6 overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col items-center mb-10 text-center">
-            <p className="text-xs tracking-[0.2em] font-semibold text-gold uppercase mb-2">
-              QUANTREX TOPPERS • HALL OF FAME
-            </p>
-            <p className="text-gray-500 text-xs font-mono">Students who cracked IIT with A.K. Sir's guidance</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {(toppers || []).map((t, idx) => (
-              <div
-                key={idx}
-                className="bg-obsidian border border-white/5 p-5 rounded-xl hover:border-gold/30 hover:scale-[1.02] transition-all relative overflow-hidden group flex items-center gap-4"
-              >
-                <div className="absolute top-0 right-0 h-16 w-16 bg-gradient-to-bl from-gold/5 to-transparent pointer-events-none" />
-                <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-gold/30 bg-cyberdark shrink-0">
-                  <img
-                    src={t.photo || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80'}
-                    alt={t.name}
-                    className="h-full w-full object-cover"
-                    onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80'; }}
-                  />
-                </div>
-                <div className="flex-grow min-w-0">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-lg font-black text-gold font-display truncate">{t.rank}</span>
-                    <span className="text-[8px] bg-white/5 border border-white/10 px-2 py-0.5 rounded text-gray-500 font-mono shrink-0">{t.year}</span>
-                  </div>
-                  <h4 className="text-white font-bold text-sm truncate mt-0.5">{t.name}</h4>
-                  <p className="text-[10px] text-electric font-mono truncate">{t.score || t.percent}</p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
