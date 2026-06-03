@@ -6,9 +6,23 @@ export let PYQ_CHAPTERS = { mathematics: [], physics: [], chemistry: [] };
 let isChaptersLoaded = false;
 const qsCache = new Map();
 
+// Convert friendly exam name to DB slug format
+function toExamSlug(exam) {
+  if (!exam || exam === 'All') return null;
+  if (exam === 'JEE Main') return 'jee-main';
+  if (exam === 'JEE Advanced') return 'jee-advanced';
+  if (exam === 'BITSAT') return 'bitsat';
+  if (exam === 'NDA') return 'nda';
+  return exam.toLowerCase().replace(/\s+/g, '-');
+}
+
 export async function fetchChapters(exam = 'JEE Main') {
   try {
-    const res = await fetch(`/api/pyqs/chapters?exam=${encodeURIComponent(exam)}`);
+    const slug = toExamSlug(exam);
+    const url = slug
+      ? `/api/pyqs/chapters?exam=${encodeURIComponent(slug)}`
+      : `/api/pyqs/chapters`;
+    const res = await fetch(url);
     if (res.ok) {
       return await res.json();
     }
@@ -24,9 +38,10 @@ export async function fetchPyqsByChapter(chapterId, exam = null) {
     return qsCache.get(cacheKey);
   }
   try {
-    const url = exam && exam !== 'All' 
-        ? `/api/pyqs/questions?chapterId=${encodeURIComponent(chapterId)}&exam=${encodeURIComponent(exam)}`
-        : `/api/pyqs/questions?chapterId=${encodeURIComponent(chapterId)}`;
+    const slug = toExamSlug(exam);
+    const url = slug
+      ? `/api/pyqs/questions?chapterId=${encodeURIComponent(chapterId)}&exam=${encodeURIComponent(slug)}`
+      : `/api/pyqs/questions?chapterId=${encodeURIComponent(chapterId)}`;
     const res = await fetch(url);
     if (res.ok) {
       const data = await res.json();
