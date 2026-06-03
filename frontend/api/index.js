@@ -28,29 +28,40 @@ const TestSeriesQuestionSchema = new mongoose.Schema({
 
 const PyqChapterSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
-  exams: [{ type: String }],
-  name: { type: String, required: true },
-  subject: { type: String, required: true },
-  count: { type: Number, default: 0 },
-  weightage: { type: String, default: '5%' }
-}, { timestamps: true });
+  name: String,
+  subject: String,
+  questionCount: Number,
+  topicCount: Number,
+  topics: [String],
+  chapterGroup: String,
+  exams: [String],
+});
 
 const PyqSchema = new mongoose.Schema({
-  id: { type: String, required: true, unique: true },
-  exam: { type: String, default: 'JEE Main' },
-  chapterId: { type: String, required: true },
-  title: { type: String },
-  year: { type: String },
-  difficulty: { type: String, enum: ['Easy', 'Medium', 'Hard'], default: 'Medium' },
-  type: { type: String, enum: ['SCQ', 'NUMERICAL'], default: 'SCQ' },
-  question: { type: String, required: true },
-  options: [{ type: String }],
-  correctOptionIndex: { type: Number },
-  solution: { type: String },
-  marks: { type: Number, default: 4 },
-  negativeMarks: { type: Number, default: -1 },
-  topic: { type: String, default: 'General' }
-}, { timestamps: true });
+  question_id: { type: String, required: true },
+  chapterId: { type: String, required: true, index: true },
+  subject: String,
+  chapter: String,
+  chapterGroup: String,
+  topic: String,
+  exam: String,
+  examGroup: String,
+  paperId: String,
+  paperTitle: String,
+  year: Number,
+  difficulty: String,
+  type: String,
+  marks: Number,
+  negMarks: Number,
+  isBonus: Boolean,
+  isOutOfSyllabus: Boolean,
+  permalink: String,
+  question: mongoose.Schema.Types.Mixed,
+  tags: [String],
+  options: [String],
+  correctOptionIndex: Number,
+  solution: String
+});
 
 const FullTestSeriesSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
@@ -109,13 +120,14 @@ app.get('/api/pyqs/chapters', async (req, res) => {
     const grouped = { mathematics: [], physics: [], chemistry: [] };
     for (const ch of chapters) {
       if (!grouped[ch.subject]) grouped[ch.subject] = [];
-      // Return exam-specific count if filtering by exam
-      const chCopy = { ...ch };
-      if (exam && ch.examCounts && ch.examCounts[exam] !== undefined) {
-        chCopy.count = ch.examCounts[exam];
-      }
-      grouped[ch.subject].push(chCopy);
+      grouped[ch.subject].push(ch);
     }
+    
+    // Sort each subject's chapters by questionCount descending
+    for (const subj of Object.keys(grouped)) {
+      grouped[subj].sort((a, b) => (b.questionCount || 0) - (a.questionCount || 0));
+    }
+
     res.json(grouped);
   } catch (e) {
     console.error('[/api/pyqs/chapters] Error:', e.message);
