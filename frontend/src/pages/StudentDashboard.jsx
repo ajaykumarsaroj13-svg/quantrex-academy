@@ -5,8 +5,6 @@ import VideoPlayer from '../components/VideoPlayer';
 import PdfViewer from '../components/PdfViewer';
 import testsData from '../utils/testsData2.json';
 import advancedTestsData from '../utils/advancedTestsData.json';
-import PyqViewer from '../components/PyqViewer';
-import { getPyqsByChapter, fetchPyqsBySearch } from '../utils/dummyPyqs';
 
 export default function StudentDashboard({ user, courses, setActivePage, setExamTest, syllabus, initialClass, initialTab, initialChapterTab }) {
   const [tests, setTests] = useState([]);
@@ -20,9 +18,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
   const [selectedSyllabusSubject, setSelectedSyllabusSubject] = useState('mathematics');
   const [chapterTab, setChapterTab] = useState(initialChapterTab || 'videos'); // videos, pdfs, formulas, pyqs, mockTests
   const [inlinePdf, setInlinePdf] = useState(null); // { url, title } for inline PDF/image viewer
-  const [pyqsData, setPyqsData] = useState([]);
-  const [isLoadingPyqs, setIsLoadingPyqs] = useState(false);
-  
+
   const hasCourseAccess = (courseKey) => {
     // Make all syllabus courses unlocked and visible to students by default
     return true;
@@ -62,21 +58,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
     }
   }, [selectedSyllabusClass, syllabus]);
 
-  useEffect(() => {
-    if (chapterTab === 'pyqs' && selectedSyllabusChapterId) {
-      setIsLoadingPyqs(true);
-      const chapter = syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters?.find(ch => ch.id === selectedSyllabusChapterId);
-      if (chapter) {
-        fetchPyqsBySearch(chapter.title).then(data => {
-          setPyqsData(data);
-          setIsLoadingPyqs(false);
-        });
-      } else {
-        setPyqsData([]);
-        setIsLoadingPyqs(false);
-      }
-    }
-  }, [chapterTab, selectedSyllabusChapterId, syllabus, selectedSyllabusClass, selectedSyllabusSubject]);
+
 
   useEffect(() => {
     if (initialTab) {
@@ -465,10 +447,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                   { id: 'videos', label: '🎥 Lectures' },
                                   { id: 'pdfs', label: '📄 Notes/DPPs' },
                                   { id: 'formulas', label: '⚡ Formulas' },
-                                  { id: 'pyqs', label: '📝 PYQs' },
                                   { id: 'mockTests', label: '🏆 Chapter Tests' }
                                 ].map(subTab => {
-                                  if (subTab.id === 'pyqs' && !selectedSyllabusClass.startsWith('jee')) return null;
                                   return (
                                     <button
                                       key={subTab.id}
@@ -628,24 +608,6 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                   </div>
                                 )}
 
-                                {/* 4. PYQs (JEE only) */}
-                                {chapterTab === 'pyqs' && (
-                                  <div className="space-y-4">
-                                    <div className="flex items-center gap-2 mb-2 p-3 bg-electric/10 border border-electric/20 rounded-lg">
-                                      <Sparkles className="h-5 w-5 text-electric" />
-                                      <p className="text-xs text-cyan-100 font-medium leading-relaxed">
-                                        Welcome to the Premium Custom PYQ Module. These questions are integrated beautifully with MathJax and feature step-by-step solutions!
-                                      </p>
-                                    </div>
-                                    {isLoadingPyqs ? (
-                                      <div className="flex justify-center items-center py-10">
-                                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-electric"></div>
-                                      </div>
-                                    ) : (
-                                      <PyqViewer questions={pyqsData} />
-                                    )}
-                                  </div>
-                                )}
 
                                 {/* 5. Mock Tests */}
                                 {chapterTab === 'mockTests' && (
