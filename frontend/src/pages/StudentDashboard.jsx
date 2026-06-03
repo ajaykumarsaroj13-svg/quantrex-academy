@@ -159,7 +159,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
   };
 
 
-  const isFocusMode = selectedVideo || selectedPdf || (activeTab === 'courses' && selectedSyllabusChapterId);
+  const isFocusMode = activeTab === 'courses';
   const isTrueFullScreen = selectedVideo || selectedPdf;
 
   const globalThemeCSS = `
@@ -320,7 +320,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
         </div>
       )}
 
-      <div className={`study-portal-wrapper ${theme === 'light' ? 'theme-light' : 'theme-dark'} px-4 md:px-12 py-10 mx-auto grid grid-cols-1 gap-8 transition-all duration-300 ${isFocusMode ? 'max-w-[1600px] lg:grid-cols-1' : 'max-w-7xl lg:grid-cols-4'} themed-root`}>
+      {!isTrueFullScreen && (<div className={`study-portal-wrapper ${theme === 'light' ? 'theme-light' : 'theme-dark'} px-4 md:px-12 py-10 mx-auto grid grid-cols-1 gap-8 transition-all duration-300 ${isFocusMode ? 'max-w-[1600px] lg:grid-cols-1' : 'max-w-7xl lg:grid-cols-4'} themed-root`}>
 
       {/* 1. SIDEBAR PROFILE PANEL */}
         {!isFocusMode && (
