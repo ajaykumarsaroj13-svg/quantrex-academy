@@ -316,3 +316,8 @@ html:not(.light) .nta-question-text *, html:not(.light) .nta-option-text *, html
 html.light .nta-exam-wrapper { --bg-body: #ffffff !important; --bg-panel: #ffffff !important; --text-primary: #000000 !important; }
 html:not(.light) .nta-exam-wrapper { --bg-body: #000000 !important; --bg-panel: #111111 !important; --text-primary: #ffffff !important; --bg-white: #111111 !important; --bg-sidebar: #1a1a1a !important; --bg-sidebar-dark: #000000 !important; --border-light: #333333 !important; --border-medium: #444444 !important; }
 
+
+/* Extended Light Mode Overrides for Full Visibility */
+html.light .text-gray-50, html.light .text-gray-200, html.light .text-slate-200, html.light .text-slate-300, html.light .text-slate-400, html.light .text-zinc-200, html.light .text-zinc-300, html.light .text-zinc-400, html.light .text-gray-300 { color: #1e293b !important; }
+html.light .bg-white\/5 { background-color: rgba(0,0,0,0.05) !important; border-color: rgba(0,0,0,0.1) !important; }
+

@@ -152,7 +152,7 @@ export default function App() {
           user={user}
           onLogout={handleLogout}
           customLogo={customLogo}
-          isLight={isLight}
+          theme={isLight ? 'light' : 'dark'}
           onToggleTheme={() => setIsLight(!isLight)}
         />
       )}
@@ -190,8 +190,7 @@ export default function App() {
             setActivePage={setActivePage}
             setExamTest={setExamTest}
             syllabus={syllabus}
-            isLight={isLight}
-            onToggleTheme={() => setIsLight(!isLight)}
+
           />
         )}
         {activePage === 'admin-dashboard' && (
@@ -213,8 +212,7 @@ export default function App() {
             user={user}
             onStartTest={handleStartTestSeries}
             onBack={() => setActivePage(user ? 'student-dashboard' : 'home')}
-            isLight={isLight}
-            onToggleTheme={() => setIsLight(!isLight)}
+
           />
         )}
 
@@ -275,4 +273,5 @@ export default function App() {
     </div>
   );
 }
+
 
