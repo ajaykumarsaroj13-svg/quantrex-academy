@@ -6,8 +6,7 @@ import Auth from './pages/Auth';
 import StudentDashboard from './pages/StudentDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import NtaTestInterface from './pages/NtaTestInterface';
-import ExamGoalPlatform from './pages/ExamGoalPlatform';
-import ExamGoalPracticeInterface from './pages/ExamGoalPracticeInterface';
+
 import TestSystem from './pages/TestSystem';
 import TestSeriesPage from './pages/TestSeriesPage';
 import TestSeriesExam from './pages/TestSeriesExam';
@@ -133,15 +132,14 @@ export default function App() {
     setActivePage('test-series-result');
   };
 
-  const isExamMode = activePage === 'exam-mode' || activePage === 'examgoal-test'
-    || activePage === 'examgoal-practice' || activePage === 'test-series-exam';
-  const isPlatformMode = activePage === 'examgoal-platform';
+  const isExamMode = activePage === 'exam-mode' || activePage === 'test-series-exam';
+
 
   return (
     <div className="relative min-h-screen bg-obsidian flex flex-col justify-between">
       <MathCanvas />
 
-      {!isExamMode && !isPlatformMode && (
+      {!isExamMode && (
         <Navbar
           activePage={activePage}
           setActivePage={setActivePage}
@@ -233,24 +231,7 @@ export default function App() {
           />
         )}
 
-        {/* ─── EXISTING EXAMGOAL PLATFORM ─── */}
-        {(activePage === 'examgoal-platform' || activePage === 'examgoal-test' || activePage === 'examgoal-practice') && (
-          <div className={activePage === 'examgoal-platform' ? 'block' : 'hidden'}>
-            <ExamGoalPlatform
-              user={user}
-              onBack={() => setActivePage('student-dashboard')}
-              onStartTest={(testData) => { setExamTest(testData); setActivePage('examgoal-test'); }}
-              onStartPractice={(testData) => { setExamTest(testData); setActivePage('examgoal-practice'); }}
-            />
-          </div>
-        )}
-        {(activePage === 'examgoal-test' || activePage === 'examgoal-practice') ? (
-          <ExamGoalPracticeInterface
-            test={examTest}
-            user={user}
-            onBackToDashboard={() => setActivePage('examgoal-platform')}
-          />
-        ) : null}
+
         {activePage === 'exam-mode' && (
           <TestSystem
             test={examTest}

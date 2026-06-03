@@ -214,7 +214,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
         {/* Dynamic Nav Menu */}
         <div className="glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-row lg:flex-col justify-around shadow-lg">
           {[
-            { id: 'pyq', label: 'JEE Mains & Advanced PYQ (Chapter-wise)', icon: Target, isPlatform: true },
+
             { id: 'courses', label: 'My Courses', icon: BookOpen },
             { id: 'live', label: 'Live Classes', icon: Clock },
             { id: 'tests', label: 'Mock Tests', icon: Trophy },
