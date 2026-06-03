@@ -263,7 +263,7 @@ app.post('/api/test-series/:id/submit', async (req, res) => {
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  res.json({ status: 'ok', timestamp: new Date().toISOString(), version: 'v2-schema-fix' });
 });
 
 export default app;
