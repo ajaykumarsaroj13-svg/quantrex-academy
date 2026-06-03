@@ -338,7 +338,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                 
                 {/* 1. Grade Selectors Grid */}
                 <div className="space-y-2">
-                  <span className="text-[10px] text-gray-500 uppercase tracking-widest block font-bold">JEE Mains & Advanced PYQ Curriculum Portal</span>
+                  <span className="text-[10px] text-gray-500 uppercase tracking-widest block font-bold">JEE Mains & Advanced Study Portal</span>
                   <div className="flex flex-wrap gap-1.5 p-1 bg-obsidian/60 border border-white/5 rounded-xl">
                     {[
                       { id: 'jee-mains', label: 'JEE Main' },
@@ -397,7 +397,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-2">
                     {/* Left Column: Chapters Sidebar */}
                     <div className="md:col-span-1 space-y-2 border-r border-white/5 pr-4 max-h-[50vh] overflow-y-auto pr-1">
-                      <span className="text-[9px] text-gray-500 uppercase font-bold tracking-widest block mb-2">Chapters Folder</span>
+                      <span className="text-[9px] text-gray-500 uppercase font-bold tracking-widest block mb-2">Chapters List</span>
                       {!syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters || syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters?.length === 0 ? (
                         <p className="text-[10px] text-gray-600 italic">No chapters configured.</p>
                       ) : (
