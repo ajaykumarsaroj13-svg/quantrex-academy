@@ -338,7 +338,7 @@ export default function ExamGoalPlatform({ user, onBack, onStartPractice }) {
     
     // STRICT FILTERING BY THE REAL TOPIC FIELD VALUE
     if (selectedSubtopic && selectedSubtopic !== 'All Questions') {
-       processedQuestions = processedQuestions.filter(q => q.topic === selectedSubtopic);
+       processedQuestions = processedQuestions.filter(q => (q.topic || 'General') === selectedSubtopic);
     }
 
     if (sortOrder === 'Old to New') {

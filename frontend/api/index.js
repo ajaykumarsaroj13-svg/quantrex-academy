@@ -96,9 +96,13 @@ app.get('/api/pyqs/chapters', async (req, res) => {
   try {
     await connectDB();
     const { exam } = req.query; // e.g. 'JEE Main', 'BITSAT'
+    let examSlug;
     const filter = {};
-    if (exam) {
-      filter.exams = exam;
+    if (exam && exam !== 'All') {
+      examSlug = exam === 'JEE Main' ? 'jee-main' 
+                 : exam === 'JEE Advanced' ? 'jee-advanced' 
+                 : exam.toLowerCase().replace(/\s+/g, '-');
+      filter.exams = examSlug;
     }
     
     const chapters = await PyqChapter.find(filter).lean();
@@ -125,8 +129,11 @@ app.get('/api/pyqs/questions', async (req, res) => {
     const { chapterId, exam } = req.query;
     if (!chapterId) return res.status(400).json({ error: 'chapterId required' });
     const filter = { chapterId };
-    if (exam) {
-      filter.exam = exam;
+    if (exam && exam !== 'All') {
+      const examSlug = exam === 'JEE Main' ? 'jee-main' 
+                     : exam === 'JEE Advanced' ? 'jee-advanced' 
+                     : exam.toLowerCase().replace(/\s+/g, '-');
+      filter.exam = examSlug;
     }
     const qs = await Pyq.find(filter).lean();
     res.json(qs);
