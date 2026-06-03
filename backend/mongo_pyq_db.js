@@ -18,21 +18,54 @@ export async function connectDB() {
   isConnected = true;
 }
 
-export async function getChapters() {
+export async function getChapters(exam) {
   await connectDB();
-  const chapters = await PyqChapter.find({}).lean();
+  
+  // If exam filter provided, find chapters that have questions for that exam
+  let filter = {};
+  if (exam && exam !== 'All') {
+    // Map user-facing exam names to DB values
+    const examSlug = exam === 'JEE Main' ? 'jee-main' 
+                   : exam === 'JEE Advanced' ? 'jee-advanced' 
+                   : exam.toLowerCase().replace(/\s+/g, '-');
+    filter.exams = examSlug;
+  }
+  
+  const chapters = await PyqChapter.find(filter).lean();
   const grouped = { mathematics: [], physics: [], chemistry: [] };
+  
   for (const ch of chapters) {
     if (grouped[ch.subject]) {
+      // If exam filter, get accurate count for that specific exam
+      if (exam && exam !== 'All') {
+        const examSlug = exam === 'JEE Main' ? 'jee-main' 
+                       : exam === 'JEE Advanced' ? 'jee-advanced' 
+                       : exam.toLowerCase().replace(/\s+/g, '-');
+        const count = await Pyq.countDocuments({ chapterId: ch.id, exam: examSlug });
+        ch.questionCount = count;
+      }
       grouped[ch.subject].push(ch);
     }
   }
+  
+  // Sort each subject's chapters by questionCount descending
+  for (const subj of Object.keys(grouped)) {
+    grouped[subj].sort((a, b) => (b.questionCount || 0) - (a.questionCount || 0));
+  }
+  
   return grouped;
 }
 
-export async function getPyqs(chapterId) {
+export async function getPyqs(chapterId, exam) {
   await connectDB();
-  const questions = await Pyq.find({ chapterId }).lean();
+  const filter = { chapterId };
+  if (exam && exam !== 'All') {
+    const examSlug = exam === 'JEE Main' ? 'jee-main' 
+                   : exam === 'JEE Advanced' ? 'jee-advanced' 
+                   : exam.toLowerCase().replace(/\s+/g, '-');
+    filter.exam = examSlug;
+  }
+  const questions = await Pyq.find(filter).sort({ year: -1 }).lean();
   return questions;
 }
 

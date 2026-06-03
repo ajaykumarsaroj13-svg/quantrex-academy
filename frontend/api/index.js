@@ -28,7 +28,7 @@ const TestSeriesQuestionSchema = new mongoose.Schema({
 
 const PyqChapterSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
-  exam: { type: String, default: 'JEE Main' },
+  exams: [{ type: String }],
   name: { type: String, required: true },
   subject: { type: String, required: true },
   count: { type: Number, default: 0 },
@@ -98,19 +98,19 @@ app.get('/api/pyqs/chapters', async (req, res) => {
     const { exam } = req.query; // e.g. 'JEE Main', 'BITSAT'
     const filter = {};
     if (exam) {
-      if (exam === 'JEE Main') {
-        // Fallback for older data that doesn't have the exam field yet
-        filter.$or = [{ exam: 'JEE Main' }, { exam: { $exists: false } }];
-      } else {
-        filter.exam = exam;
-      }
+      filter.exams = exam;
     }
     
     const chapters = await PyqChapter.find(filter).lean();
     const grouped = { mathematics: [], physics: [], chemistry: [] };
     for (const ch of chapters) {
       if (!grouped[ch.subject]) grouped[ch.subject] = [];
-      grouped[ch.subject].push(ch);
+      // Return exam-specific count if filtering by exam
+      const chCopy = { ...ch };
+      if (exam && ch.examCounts && ch.examCounts[exam] !== undefined) {
+        chCopy.count = ch.examCounts[exam];
+      }
+      grouped[ch.subject].push(chCopy);
     }
     res.json(grouped);
   } catch (e) {
@@ -122,9 +122,13 @@ app.get('/api/pyqs/chapters', async (req, res) => {
 app.get('/api/pyqs/questions', async (req, res) => {
   try {
     await connectDB();
-    const { chapterId } = req.query;
+    const { chapterId, exam } = req.query;
     if (!chapterId) return res.status(400).json({ error: 'chapterId required' });
-    const qs = await Pyq.find({ chapterId }).lean();
+    const filter = { chapterId };
+    if (exam) {
+      filter.exam = exam;
+    }
+    const qs = await Pyq.find(filter).lean();
     res.json(qs);
   } catch (e) {
     console.error('[/api/pyqs/questions] Error:', e.message);

@@ -26,7 +26,8 @@ const app = express();
 // PYQ API Routes
 app.get('/api/pyqs/chapters', async (req, res) => {
   try {
-    const chapters = await getChapters();
+    const { exam } = req.query;
+    const chapters = await getChapters(exam);
     res.json(chapters);
   } catch(e) {
     res.status(500).json({ error: e.message });
@@ -47,9 +48,9 @@ app.get('/api/pyqs/search', async (req, res) => {
 
 app.get('/api/pyqs/questions', async (req, res) => {
   try {
-    const { chapterId } = req.query;
+    const { chapterId, exam } = req.query;
     if (!chapterId) return res.status(400).json({ error: 'chapterId required' });
-    const qs = await getPyqs(chapterId);
+    const qs = await getPyqs(chapterId, exam);
     res.json(qs);
   } catch(e) {
     res.status(500).json({ error: e.message });

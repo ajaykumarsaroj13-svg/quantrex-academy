@@ -12,7 +12,6 @@ import TestSystem from './pages/TestSystem';
 import TestSeriesPage from './pages/TestSeriesPage';
 import TestSeriesExam from './pages/TestSeriesExam';
 import TestSeriesResult from './pages/TestSeriesResult';
-import MarksPortal from './pages/MarksPortal/MarksPortal';
 import { Shield } from 'lucide-react';
 import BooksLibrary from './pages/BooksLibrary';
 import BookReader from './pages/BookReader';
@@ -209,13 +208,7 @@ export default function App() {
           />
         )}
 
-        {/* ─── MARKS PORTAL ─── */}
-        {activePage === 'marks-portal' && (
-          <MarksPortal
-            user={user}
-            setActivePage={setActivePage}
-          />
-        )}
+
 
         {/* ─── NTA EXAM PLAYER ─── */}
         {activePage === 'test-series-exam' && (

@@ -16,37 +16,9 @@ const EXAM_CONFIG = {
     bg: 'rgba(124,58,237,0.12)',
     border: 'rgba(124,58,237,0.35)',
   },
-  NDA: {
-    color: '#4ade80',
-    gradient: 'linear-gradient(135deg, #14532d, #16a34a)',
-    glow: 'rgba(22,163,74,0.35)',
-    bg: 'rgba(22,163,74,0.12)',
-    border: 'rgba(22,163,74,0.35)',
-  },
-  BITSAT: {
-    color: '#fb923c',
-    gradient: 'linear-gradient(135deg, #9a3412, #ea580c)',
-    glow: 'rgba(234,88,12,0.35)',
-    bg: 'rgba(234,88,12,0.12)',
-    border: 'rgba(234,88,12,0.35)',
-  },
-  'NCERT 11': {
-    color: '#e11d48',
-    gradient: 'linear-gradient(135deg, #9f1239, #e11d48)',
-    glow: 'rgba(225,29,72,0.35)',
-    bg: 'rgba(225,29,72,0.12)',
-    border: 'rgba(225,29,72,0.35)',
-  },
-  'NCERT 12': {
-    color: '#06b6d4',
-    gradient: 'linear-gradient(135deg, #0891b2, #06b6d4)',
-    glow: 'rgba(6,182,212,0.35)',
-    bg: 'rgba(6,182,212,0.12)',
-    border: 'rgba(6,182,212,0.35)',
-  },
 };
 
-const FILTER_TABS = ['All', 'JEE Main', 'JEE Advanced', 'NDA', 'BITSAT', 'NCERT 11', 'NCERT 12'];
+const FILTER_TABS = ['All', 'JEE Main', 'JEE Advanced'];
 
 // ─── Inline Global Styles ───────────────────────────────────────────────────────
 const GLOBAL_CSS = `
@@ -924,7 +896,7 @@ const TestSeriesPage = ({ user, onStartTest }) => {
   // Counts per tab
   const tabCounts = useMemo(() => {
     const counts = { All: tests.length };
-    ['JEE Main', 'JEE Advanced', 'NDA', 'BITSAT', 'NCERT 11', 'NCERT 12'].forEach(tab => {
+    ['JEE Main', 'JEE Advanced'].forEach(tab => {
       counts[tab] = tests.filter(t => t.examType === tab).length;
     });
     return counts;
@@ -957,10 +929,6 @@ const TestSeriesPage = ({ user, onStartTest }) => {
     'All': '📚',
     'JEE Main': '🔷',
     'JEE Advanced': '💎',
-    'NDA': '🛡️',
-    'BITSAT': '⚡',
-    'NCERT 11': '📖',
-    'NCERT 12': '📕',
   };
 
   return (
@@ -997,7 +965,7 @@ const TestSeriesPage = ({ user, onStartTest }) => {
             Master Your Exam<br />with Real Papers
           </h1>
           <p className="tsp-hero-desc">
-            Practice with official JEE Main, JEE Advanced, NDA, BITSAT, and NCERT Class 11th & 12th papers.
+            Practice with official JEE Main and JEE Advanced papers.
             Timed exam mode or flexible practice — your choice.
           </p>
         </div>
@@ -1159,24 +1127,6 @@ const DEMO_TESTS = [
     examDate: 'May 26, 2024',
     totalQuestions: 54, duration: 180, totalMarks: 183,
     isOfficial: true, isFree: false,
-  },
-  {
-    _id: 'd5',
-    examType: 'NDA',
-    title: 'NDA & NA (I) 2025 — Mathematics',
-    year: 2025, session: 1, shift: 'Paper 1',
-    examDate: 'Apr 13, 2025',
-    totalQuestions: 120, duration: 150, totalMarks: 300,
-    isOfficial: true, isFree: true,
-  },
-  {
-    _id: 'd6',
-    examType: 'BITSAT',
-    title: 'BITSAT 2025 — Full Mock Test',
-    year: 2025, session: 1, shift: 'Morning',
-    examDate: 'May 20, 2025',
-    totalQuestions: 130, duration: 180, totalMarks: 390,
-    isOfficial: false, isFree: true,
   },
 ];
 

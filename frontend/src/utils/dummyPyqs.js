@@ -1,4 +1,4 @@
-// JEE Main PYQ Database - Now fetched from the Backend SQLite Database!
+// JEE Main PYQ Database - Now fetched from the Backend MongoDB Database!
 
 export let PYQ_DATABASE = [];
 export let PYQ_CHAPTERS = { mathematics: [], physics: [], chemistry: [] };
@@ -7,7 +7,6 @@ let isChaptersLoaded = false;
 const qsCache = new Map();
 
 export async function fetchChapters(exam = 'JEE Main') {
-  // We don't cache globally if they switch exams often, but we can cache by exam
   try {
     const res = await fetch(`/api/pyqs/chapters?exam=${encodeURIComponent(exam)}`);
     if (res.ok) {
@@ -19,15 +18,19 @@ export async function fetchChapters(exam = 'JEE Main') {
   return { mathematics: [], physics: [], chemistry: [] };
 }
 
-export async function fetchPyqsByChapter(chapterId) {
-  if (qsCache.has(chapterId)) {
-    return qsCache.get(chapterId);
+export async function fetchPyqsByChapter(chapterId, exam = null) {
+  const cacheKey = exam ? `${chapterId}_${exam}` : chapterId;
+  if (qsCache.has(cacheKey)) {
+    return qsCache.get(cacheKey);
   }
   try {
-    const res = await fetch(`/api/pyqs/questions?chapterId=${encodeURIComponent(chapterId)}`);
+    const url = exam && exam !== 'All' 
+        ? `/api/pyqs/questions?chapterId=${encodeURIComponent(chapterId)}&exam=${encodeURIComponent(exam)}`
+        : `/api/pyqs/questions?chapterId=${encodeURIComponent(chapterId)}`;
+    const res = await fetch(url);
     if (res.ok) {
       const data = await res.json();
-      qsCache.set(chapterId, data);
+      qsCache.set(cacheKey, data);
       return data;
     }
   } catch (err) {
@@ -48,18 +51,12 @@ export async function fetchPyqsBySearch(title) {
   return [];
 }
 
-// For backward compatibility where synchronous get was expected, we return from cache if available.
-// However, the UI should be updated to use the async functions above.
 export function getPyqsByChapter(chapterTitle) {
   const targetId = chapterTitle ? chapterTitle.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/(^_|_$)/g, '') : '';
   if (qsCache.has(targetId)) {
     return qsCache.get(targetId);
   }
-  // If not in cache, try fuzzy match on ALL cached questions as fallback
-  let allQs = [];
-  qsCache.forEach(qs => { allQs = allQs.concat(qs); });
-  const words = targetId.split('_').filter(w => w.length > 3);
-  return allQs.filter(q => words.some(w => q.chapterId.includes(w)));
+  return [];
 }
 
 export default PYQ_DATABASE;

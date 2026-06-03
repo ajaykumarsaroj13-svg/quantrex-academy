@@ -214,12 +214,11 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
         {/* Dynamic Nav Menu */}
         <div className="glass-panel rounded-2xl border border-white/10 overflow-hidden flex flex-row lg:flex-col justify-around shadow-lg">
           {[
-            { id: 'marks-portal', label: 'Marks Portal', icon: Target, isPage: true, pageId: 'marks-portal' },
+            { id: 'pyq', label: 'JEE Mains & Advanced PYQ (Chapter-wise)', icon: Target, isPlatform: true },
             { id: 'courses', label: 'My Courses', icon: BookOpen },
             { id: 'live', label: 'Live Classes', icon: Clock },
             { id: 'tests', label: 'Mock Tests', icon: Trophy },
             { id: 'test-series', label: 'Full Test Series', icon: FileText, isPage: true, pageId: 'test-series' },
-            { id: 'pyq', label: 'JEE Main PYQs', icon: Target, isPlatform: true },
             { id: 'ai-analytics', label: 'AI Strengths', icon: BarChart },
             { id: 'doubts', label: 'AI Doubt Solver', icon: BrainCircuit }
           ].map((item) => {
@@ -357,18 +356,11 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                 
                 {/* 1. Grade Selectors Grid */}
                 <div className="space-y-2">
-                  <span className="text-[10px] text-gray-500 uppercase tracking-widest block font-bold">Mathematics Curriculum Portal</span>
+                  <span className="text-[10px] text-gray-500 uppercase tracking-widest block font-bold">JEE Mains & Advanced PYQ Curriculum Portal</span>
                   <div className="flex flex-wrap gap-1.5 p-1 bg-obsidian/60 border border-white/5 rounded-xl">
                     {[
                       { id: 'jee-mains', label: 'JEE Main' },
-                      { id: 'jee-advanced', label: 'JEE Advanced' },
-                      { id: 'mht-cet', label: 'MHT-CET' },
-                      { id: 'bitsat', label: 'BITSAT' },
-                      { id: 'nda', label: 'NDA' },
-                      { id: 'class-9', label: 'Class 9th Math' },
-                      { id: 'class-11', label: 'Class 11th Math' },
-                      { id: 'class-12', label: 'Class 12th Math' },
-                      { id: 'foundation-6-12', label: 'Foundation Math (6-12)' }
+                      { id: 'jee-advanced', label: 'JEE Advanced' }
                     ].map(grade => {
                       const hasAccess = hasCourseAccess(grade.id);
                       return (
@@ -400,33 +392,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                     {[
                       { id: 'mathematics', label: '∑ Mathematics' },
                       { id: 'physics', label: '⚛️ Physics' },
-                      { id: 'chemistry', label: '⚗️ Chemistry' },
-                      { id: 'english', label: '📚 English' },
-                      { id: 'general-science', label: '🔬 General Science' },
-                      { id: 'general-studies', label: '🌍 General Studies' }
+                      { id: 'chemistry', label: '⚗️ Chemistry' }
                     ].map(subj => {
-                      const hasPCM = ['jee-mains', 'jee-advanced', 'mht-cet', 'bitsat', 'nda'].includes(selectedSyllabusClass);
-                      const isNDA = selectedSyllabusClass === 'nda';
-                      
-                      // NDA has all subjects
-                      if (isNDA) return (
-                        <button
-                          key={subj.id}
-                          onClick={() => setSelectedSyllabusSubject(subj.id)}
-                          className={`px-4 py-2 rounded-lg font-bold uppercase transition-all ${
-                            selectedSyllabusSubject === subj.id 
-                              ? 'bg-electric/10 text-electric border border-electric/25' 
-                              : 'bg-obsidian border border-white/5 text-gray-400 hover:text-white'
-                          }`}
-                        >
-                          {subj.label}
-                        </button>
-                      );
-                      
-                      // Others only have PCM
-                      if (['english', 'general-science', 'general-studies'].includes(subj.id)) return null;
-                      if (subj.id !== 'mathematics' && !hasPCM) return null;
-                      
                       return (
                         <button
                           key={subj.id}
