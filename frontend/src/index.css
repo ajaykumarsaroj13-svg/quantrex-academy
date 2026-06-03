@@ -306,3 +306,13 @@ html.light .shimmer {
   display: block;
   margin: 0 auto;
 }
+
+/* Force Exam Text Visibility */
+html.light .nta-question-text *, html.light .nta-option-text *, html.light .nta-solution-text *, html.light .nta-question-text, html.light .nta-option-text { color: #000000 !important; }
+html:not(.light) .nta-question-text *, html:not(.light) .nta-option-text *, html:not(.light) .nta-solution-text *, html:not(.light) .nta-question-text, html:not(.light) .nta-option-text { color: #ffffff !important; }
+
+
+/* NTA Exam Interface Global Theme Overrides */
+html.light .nta-exam-wrapper { --bg-body: #ffffff !important; --bg-panel: #ffffff !important; --text-primary: #000000 !important; }
+html:not(.light) .nta-exam-wrapper { --bg-body: #000000 !important; --bg-panel: #111111 !important; --text-primary: #ffffff !important; --bg-white: #111111 !important; --bg-sidebar: #1a1a1a !important; --bg-sidebar-dark: #000000 !important; --border-light: #333333 !important; --border-medium: #444444 !important; }
+

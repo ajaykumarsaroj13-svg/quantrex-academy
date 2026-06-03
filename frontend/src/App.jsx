@@ -28,6 +28,7 @@ export default function App() {
   const [activeTestId, setActiveTestId] = useState(null);
   const [activeTestMode, setActiveTestMode] = useState('exam'); // 'exam' | 'practice'
     const [testResult, setTestResult] = useState(null);
+  const [isLight, setIsLight] = useState(() => localStorage.getItem('quantrex_theme') === 'light');
   const [readingBook, setReadingBook] = useState(null);
   const [practiceChapter, setPracticeChapter] = useState(null);
 
@@ -46,6 +47,11 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('quantrex_syllabus_v2', JSON.stringify(syllabus));
   }, [syllabus]);
+
+  useEffect(() => {
+    localStorage.setItem('quantrex_theme', isLight ? 'light' : 'dark');
+    document.documentElement.classList.toggle('light', isLight);
+  }, [isLight]);
 
 
 
@@ -146,6 +152,8 @@ export default function App() {
           user={user}
           onLogout={handleLogout}
           customLogo={customLogo}
+          isLight={isLight}
+          onToggleTheme={() => setIsLight(!isLight)}
         />
       )}
 
@@ -182,6 +190,8 @@ export default function App() {
             setActivePage={setActivePage}
             setExamTest={setExamTest}
             syllabus={syllabus}
+            isLight={isLight}
+            onToggleTheme={() => setIsLight(!isLight)}
           />
         )}
         {activePage === 'admin-dashboard' && (
@@ -203,6 +213,8 @@ export default function App() {
             user={user}
             onStartTest={handleStartTestSeries}
             onBack={() => setActivePage(user ? 'student-dashboard' : 'home')}
+            isLight={isLight}
+            onToggleTheme={() => setIsLight(!isLight)}
           />
         )}
 
@@ -216,6 +228,7 @@ export default function App() {
             user={user}
             onSubmit={handleTestSubmit}
             onExit={() => setActivePage('test-series')}
+            isLight={isLight}
           />
         )}
 

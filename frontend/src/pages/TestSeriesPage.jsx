@@ -28,19 +28,19 @@ const GLOBAL_CSS = `
 
   .tsp-root {
     font-family: 'Inter', sans-serif;
-    background: #0a0a1a;
+    background: var(--bg-primary, #0a0a1a);
     min-height: 100vh;
-    color: #e2e8f0;
+    color: var(--text-primary, #e2e8f0);
   }
 
   /* ── Scrollbar ── */
   ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { background: #0d0d22; }
+  ::-webkit-scrollbar-track { background: var(--scrollbar-track, #0d0d22); }
   ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
 
   /* ── Header ── */
   .tsp-header {
-    background: linear-gradient(135deg, #0d0d2b 0%, #0f1535 40%, #0a0a1a 100%);
+    background: var(--glass-bg, linear-gradient(135deg, #0d0d2b 0%, #0f1535 40%, #0a0a1a 100%));
     border-bottom: 1px solid rgba(255,255,255,0.06);
     padding: 0 24px;
     position: sticky;
@@ -177,7 +177,7 @@ const GLOBAL_CSS = `
 
   /* ── Stats Bar ── */
   .tsp-stats-bar {
-    background: rgba(255,255,255,0.03);
+    background: var(--bg-cyberdark, rgba(255,255,255,0.03));
     border-top: 1px solid rgba(255,255,255,0.05);
     border-bottom: 1px solid rgba(255,255,255,0.05);
     padding: 0 24px;
@@ -252,7 +252,7 @@ const GLOBAL_CSS = `
     border-radius: 14px;
     padding: 13px 16px 13px 44px;
     font-size: 14px;
-    color: #e2e8f0;
+    color: var(--text-primary, #e2e8f0);
     outline: none;
     font-family: 'Inter', sans-serif;
     transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
@@ -277,7 +277,7 @@ const GLOBAL_CSS = `
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #94a3b8;
+    color: var(--text-secondary, #94a3b8);
     font-size: 12px;
     transition: background 0.2s;
   }
@@ -299,7 +299,7 @@ const GLOBAL_CSS = `
     padding: 8px 18px;
     border-radius: 100px;
     border: 1px solid rgba(255,255,255,0.08);
-    background: rgba(255,255,255,0.03);
+    background: var(--bg-cyberdark, rgba(255,255,255,0.03));
     font-size: 13px;
     font-weight: 600;
     color: #64748b;
@@ -311,7 +311,7 @@ const GLOBAL_CSS = `
   }
   .tsp-tab:hover {
     border-color: rgba(255,255,255,0.15);
-    color: #94a3b8;
+    color: var(--text-secondary, #94a3b8);
     background: rgba(255,255,255,0.06);
   }
   .tsp-tab-count {
@@ -413,7 +413,7 @@ const GLOBAL_CSS = `
     border-radius: 6px;
     font-size: 11px;
     font-weight: 600;
-    color: #94a3b8;
+    color: var(--text-secondary, #94a3b8);
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.08);
   }
@@ -555,7 +555,7 @@ const GLOBAL_CSS = `
     border-radius: 8px;
   }
   .tsp-skeleton-card {
-    background: rgba(255,255,255,0.03);
+    background: var(--bg-cyberdark, rgba(255,255,255,0.03));
     border: 1px solid rgba(255,255,255,0.06);
     border-radius: 20px;
     overflow: hidden;

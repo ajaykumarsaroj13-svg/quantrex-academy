@@ -12,7 +12,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -23,7 +23,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -34,7 +34,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -45,7 +45,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -56,7 +56,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -67,7 +67,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -78,7 +78,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -89,7 +89,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -100,7 +100,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -111,7 +111,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -122,7 +122,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -133,7 +133,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -144,7 +144,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -155,7 +155,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Mechanics"
           },
@@ -166,7 +166,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Electricity"
           },
@@ -177,7 +177,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Electricity"
           },
@@ -188,7 +188,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Electricity"
           },
@@ -199,7 +199,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Electricity"
           },
@@ -210,7 +210,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Electricity"
           },
@@ -221,7 +221,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Electricity"
           },
@@ -232,7 +232,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Electricity"
           },
@@ -243,7 +243,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Electricity"
           },
@@ -254,7 +254,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Optics"
           },
@@ -265,7 +265,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Optics"
           },
@@ -276,7 +276,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Modern Physics"
           },
@@ -287,7 +287,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Modern Physics"
           },
@@ -298,7 +298,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Modern Physics"
           },
@@ -309,7 +309,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Modern Physics"
           }
@@ -325,7 +325,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -336,7 +336,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -347,7 +347,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -358,7 +358,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -369,7 +369,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -380,7 +380,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -391,7 +391,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -402,7 +402,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -413,7 +413,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -424,7 +424,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -435,7 +435,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -446,7 +446,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Physical Chemistry"
           },
@@ -457,7 +457,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -468,7 +468,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -479,7 +479,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -490,7 +490,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -501,7 +501,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -512,7 +512,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -523,7 +523,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -534,7 +534,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -545,7 +545,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -556,7 +556,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Inorganic Chemistry"
           },
@@ -567,7 +567,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           },
@@ -578,7 +578,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           },
@@ -589,7 +589,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           },
@@ -600,7 +600,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           },
@@ -611,7 +611,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           },
@@ -622,7 +622,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           },
@@ -633,7 +633,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           },
@@ -644,7 +644,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           },
@@ -655,7 +655,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           },
@@ -666,7 +666,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Organic Chemistry"
           }
@@ -760,7 +760,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -863,7 +863,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -973,7 +973,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1076,7 +1076,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1193,7 +1193,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1310,7 +1310,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1455,7 +1455,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1544,7 +1544,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1640,7 +1640,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1757,7 +1757,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1839,7 +1839,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1928,7 +1928,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1939,7 +1939,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -1950,7 +1950,7 @@ export const DEFAULT_SYLLABUS = {
             "videos": [],
             "pdfs": [],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Algebra"
           },
@@ -2032,7 +2032,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Trigonometry"
           },
@@ -2149,7 +2149,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Trigonometry"
           },
@@ -2238,7 +2238,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Trigonometry"
           },
@@ -2320,7 +2320,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Trigonometry"
           },
@@ -2402,7 +2402,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Trigonometry"
           },
@@ -2498,7 +2498,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Coordinate Geometry"
           },
@@ -2594,7 +2594,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Coordinate Geometry"
           },
@@ -2690,7 +2690,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Coordinate Geometry"
           },
@@ -2786,7 +2786,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Coordinate Geometry"
           },
@@ -2882,7 +2882,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Coordinate Geometry"
           },
@@ -2971,7 +2971,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Calculus"
           },
@@ -3123,7 +3123,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Calculus"
           },
@@ -3219,7 +3219,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Calculus"
           },
@@ -3308,7 +3308,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Calculus"
           },
@@ -3404,7 +3404,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Calculus"
           },
@@ -3500,7 +3500,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Calculus"
           },
@@ -3610,7 +3610,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Calculus"
           },
@@ -3692,7 +3692,7 @@ export const DEFAULT_SYLLABUS = {
               }
             ],
             "formulas": [],
-            "pyqs": [],
+
             "mockTests": [],
             "module": "Calculus"
           }
@@ -3713,7 +3713,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3724,7 +3724,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3735,7 +3735,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3746,7 +3746,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3757,7 +3757,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3768,7 +3768,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3779,7 +3779,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3790,7 +3790,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3801,7 +3801,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   }
@@ -3817,7 +3817,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3828,7 +3828,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3839,7 +3839,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3850,7 +3850,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   }
@@ -3866,7 +3866,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3877,7 +3877,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3888,7 +3888,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3899,7 +3899,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3910,7 +3910,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3921,7 +3921,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   }
@@ -3937,7 +3937,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3948,7 +3948,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3959,7 +3959,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3970,7 +3970,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3981,7 +3981,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -3992,7 +3992,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4003,7 +4003,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4014,7 +4014,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4025,7 +4025,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4036,7 +4036,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4047,7 +4047,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4058,7 +4058,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4069,7 +4069,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4080,7 +4080,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4091,7 +4091,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4102,7 +4102,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4113,7 +4113,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4124,7 +4124,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4135,7 +4135,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4146,7 +4146,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4157,7 +4157,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4168,7 +4168,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4179,7 +4179,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4190,7 +4190,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4201,7 +4201,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4212,7 +4212,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4223,7 +4223,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4234,7 +4234,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4245,7 +4245,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4256,7 +4256,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   },
@@ -4267,7 +4267,7 @@ export const DEFAULT_SYLLABUS = {
                       "videos": [],
                       "pdfs": [],
                       "formulas": [],
-                      "pyqs": [],
+
                       "mockTests": [],
                       "module": "General"
                   }
