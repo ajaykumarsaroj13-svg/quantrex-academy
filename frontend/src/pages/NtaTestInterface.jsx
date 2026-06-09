@@ -200,14 +200,9 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
               <div className="font-bold text-lg">Q.{currentIdx + 1}</div>
               <div className="flex-1 space-y-6">
                 <div className="flex items-center gap-3 mb-2 border-b border-gray-200 pb-2">
-                  {currentQ.year && (
+                  {(currentQ.title || currentQ.year) && (
                     <span className="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded shadow-sm border border-blue-200">
-                      {currentQ.year}
-                    </span>
-                  )}
-                  {currentQ.shift && (
-                    <span className="bg-orange-100 text-orange-800 text-xs font-bold px-2.5 py-1 rounded shadow-sm border border-orange-200">
-                      {currentQ.shift}
+                      {currentQ.title || currentQ.year}
                     </span>
                   )}
                 </div>
