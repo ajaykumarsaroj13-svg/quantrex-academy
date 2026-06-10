@@ -319,7 +319,14 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                               return res.json();
                             })
                             .then(data => {
-                              // Transform flat data to topics -> questions
+                              // If data is already in the exact format we need:
+                              if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
+                                setDebugInfo(prev => prev + `\nPre-formatted data loaded. Topics: ${data.topics.length}`);
+                                setActivePyqData(data);
+                                return;
+                              }
+
+                              // Transform flat data to topics -> questions (Legacy support)
                               const topicsMap = {};
                               const topicsList = [];
                               
@@ -327,9 +334,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                               setDebugInfo(prev => prev + `\nData received. Array: ${Array.isArray(data)}, Length: ${questionsArray.length}`);
                               if (questionsArray.length > 0) {
                                 questionsArray.forEach(q => {
-                                  // Normalize id field - API returns question_id / _id but components use q.id
                                   if (!q.id) q.id = q.question_id || q._id || `q_${Math.random().toString(36).slice(2)}`;
-                                  // Normalize answer field for numerical questions
                                   if (!q.correctAnswer && q.answer) q.correctAnswer = q.answer;
 
                                   let tName = q.topic || 'General';
@@ -567,6 +572,10 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                         fetch(`/data/questions/${slug}.json?_t=${Date.now()}`)
                                           .then(res => res.json())
                                           .then(data => {
+                                            if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
+                                              setActivePyqData(data);
+                                              return;
+                                            }
                                             const topicsMap = {};
                                             const topicsList = [];
                                             const questionsArray = Array.isArray(data) ? data : (data.data || []);
@@ -611,6 +620,10 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                             fetch(`/data/questions/${slug}.json?_t=${Date.now()}`)
                                               .then(res => res.json())
                                               .then(data => {
+                                                if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
+                                                  setActivePyqData(data);
+                                                  return;
+                                                }
                                                 const topicsMap = {};
                                                 const topicsList = [];
                                                 const questionsArray = Array.isArray(data) ? data : (data.data || []);
