@@ -27,6 +27,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
   const [activePracticeMode, setActivePracticeMode] = useState('test'); // 'practice' or 'test'
   
   const [activePyqData, setActivePyqData] = useState(null);
+  const [debugInfo, setDebugInfo] = useState('');
   const [isPyqLoading, setIsPyqLoading] = useState(false);
   const [practiceModalConfig, setPracticeModalConfig] = useState(null);
   const [modalQuestionOrder, setModalQuestionOrder] = useState('newest'); // newest, oldest, random
@@ -183,6 +184,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
               chapterName={examGoalOverviewConfig.title}
               pyqData={activePyqData} 
               isLight={false}
+              debugInfo={debugInfo}
               initialTab={examGoalOverviewConfig.startTab}
               onBack={() => setExamGoalOverviewConfig(null)} 
               onPracticeMode={(questions, mode = 'practice', skipModal = false, startIndex = 0) => {
@@ -309,15 +311,20 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                           
                           setIsPyqLoading(true);
                           setActivePyqData(null);
+                          setDebugInfo('Starting fetch...');
                           const slug = ch.url ? ch.url.split('/').pop() : ch.id;
                           fetch(`/data/questions/${slug}.json?_t=${Date.now()}`)
-                            .then(res => res.json())
+                            .then(res => {
+                              setDebugInfo(prev => prev + `\nFetch Res: ${res.ok} ${res.status}`);
+                              return res.json();
+                            })
                             .then(data => {
                               // Transform flat data to topics -> questions
                               const topicsMap = {};
                               const topicsList = [];
                               
                               const questionsArray = Array.isArray(data) ? data : (data.data || []);
+                              setDebugInfo(prev => prev + `\nData received. Array: ${Array.isArray(data)}, Length: ${questionsArray.length}`);
                               if (questionsArray.length > 0) {
                                 questionsArray.forEach(q => {
                                   // Normalize id field - API returns question_id / _id but components use q.id
@@ -344,6 +351,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                             })
                             .catch(err => {
                               console.error('Error fetching PYQs:', err);
+                              setDebugInfo(prev => prev + `\nFetch Error: ${err.message}`);
                               setActivePyqData({ topics: [], questions: {} });
                             })
                             .finally(() => setIsPyqLoading(false));

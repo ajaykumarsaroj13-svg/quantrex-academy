@@ -19,7 +19,7 @@ const stripLatex = (html) => {
   return text.trim();
 };
 
-export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, isLight, onPracticeMode, onBack, initialTab = 'topic' }) {
+export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, isLight, onPracticeMode, onBack, initialTab = 'topic', debugInfo = '' }) {
   const { progress, stats, updateProgress, bookmarkGroups, addBookmarkGroup } = usePYQProgress(chapterId);
   const [activeTab, setActiveTab] = useState(initialTab);
   const [bookmarkModalOpen, setBookmarkModalOpen] = useState(false);
@@ -204,7 +204,13 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
 
   return (
     <div className="w-full flex flex-col space-y-6 bg-[#111115] min-h-screen p-4 md:p-6 rounded-2xl text-sans">
-      
+      {debugInfo && (
+        <div className="bg-red-900/30 border-l-4 border-red-500 text-red-200 p-4 text-xs font-mono whitespace-pre-wrap mt-2 mb-4">
+          <h3 className="text-white font-bold mb-1">Debug Info:</h3>
+          {debugInfo}
+        </div>
+      )}
+        
       {/* Header with Back Button */}
         <div className="flex items-center gap-4 mb-4">
           <button onClick={onBack} className="p-2 hover:bg-white/10 rounded-full text-white transition-all hover:scale-105 active:scale-95">
