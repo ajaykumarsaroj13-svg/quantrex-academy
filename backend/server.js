@@ -10,7 +10,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import multer from 'multer';
-import { User, Course, Order, Test, Result, Notification, PiracyAlert, Syllabus, FullTestSeries, TestAttempt } from './models/schemas.js';
+import { User, Course, Order, Test, Result, Notification, PiracyAlert, Syllabus, FullTestSeries, TestAttempt, BlackBookQuestion, BlackBookChapter, BlackBookProgress } from './models/schemas.js';
 import { paymentRouter } from './routes/paymentRoute.js';
 import { getChapters, getPyqs, searchPyqsByChapterTitle, connectDB } from './mongo_pyq_db.js';
 
@@ -26,8 +26,7 @@ const app = express();
 // PYQ API Routes
 app.get('/api/pyqs/chapters', async (req, res) => {
   try {
-    const { exam } = req.query;
-    const chapters = await getChapters(exam);
+    const chapters = await getChapters();
     res.json(chapters);
   } catch(e) {
     res.status(500).json({ error: e.message });
@@ -48,13 +47,107 @@ app.get('/api/pyqs/search', async (req, res) => {
 
 app.get('/api/pyqs/questions', async (req, res) => {
   try {
-    const { chapterId, exam } = req.query;
+    const { chapterId } = req.query;
     if (!chapterId) return res.status(400).json({ error: 'chapterId required' });
-    const qs = await getPyqs(chapterId, exam);
+    const qs = await getPyqs(chapterId);
     res.json(qs);
   } catch(e) {
     res.status(500).json({ error: e.message });
   }
+});
+
+// =====================================================
+// BLACK BOOK API ROUTES
+// =====================================================
+
+// GET all Black Book chapters
+app.get('/api/blackbook/chapters', async (req, res) => {
+  try {
+    await connectDB();
+    const chapters = await BlackBookChapter.find({}).lean();
+    res.json(chapters);
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// GET questions for a chapter+exercise
+app.get('/api/blackbook/:chapterId/questions', async (req, res) => {
+  try {
+    await connectDB();
+    const { exerciseName } = req.query;
+    const filter = { chapterId: req.params.chapterId };
+    if (exerciseName) filter.exerciseName = exerciseName;
+    const questions = await BlackBookQuestion.find(filter)
+      .sort({ exerciseName: 1, questionIndex: 1 })
+      .lean();
+    res.json(questions);
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// GET all questions for a chapter (all exercises)
+app.get('/api/blackbook/:chapterId/all-questions', async (req, res) => {
+  try {
+    await connectDB();
+    const questions = await BlackBookQuestion.find({ chapterId: req.params.chapterId })
+      .sort({ exerciseName: 1, questionIndex: 1 })
+      .lean();
+    res.json(questions);
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// GET user progress for a chapter
+app.get('/api/blackbook/:chapterId/progress', async (req, res) => {
+  try {
+    await connectDB();
+    const { userId } = req.query;
+    if (!userId) return res.status(400).json({ error: 'userId required' });
+    const progress = await BlackBookProgress.find({
+      userId,
+      chapterId: req.params.chapterId
+    }).lean();
+    // Convert to nested object: { exerciseName: { questionIndex: { ...state } } }
+    const result = {};
+    progress.forEach(p => {
+      if (!result[p.exerciseName]) result[p.exerciseName] = {};
+      result[p.exerciseName][p.questionIndex] = {
+        selectedIdx: p.selectedIdx,
+        isChecked: p.isChecked,
+        isCorrect: p.isCorrect,
+        revealed: p.revealed,
+      };
+    });
+    res.json(result);
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// POST / save progress for a single question
+app.post('/api/blackbook/:chapterId/progress', async (req, res) => {
+  try {
+    await connectDB();
+    const { userId, exerciseName, questionIndex, selectedIdx, isChecked, isCorrect, revealed } = req.body;
+    if (!userId || exerciseName === undefined || questionIndex === undefined) {
+      return res.status(400).json({ error: 'userId, exerciseName, questionIndex required' });
+    }
+    await BlackBookProgress.findOneAndUpdate(
+      { userId, chapterId: req.params.chapterId, exerciseName, questionIndex },
+      { selectedIdx, isChecked, isCorrect, revealed, seenAt: new Date() },
+      { upsert: true, new: true }
+    );
+    res.json({ success: true });
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// DELETE progress (reset) for a user+chapter
+app.delete('/api/blackbook/:chapterId/progress', async (req, res) => {
+  try {
+    await connectDB();
+    const { userId, exerciseName, questionIndex } = req.query;
+    if (!userId) return res.status(400).json({ error: 'userId required' });
+    const filter = { userId, chapterId: req.params.chapterId };
+    if (exerciseName) filter.exerciseName = exerciseName;
+    if (questionIndex !== undefined) filter.questionIndex = parseInt(questionIndex);
+    await BlackBookProgress.deleteMany(filter);
+    res.json({ success: true });
+  } catch(e) { res.status(500).json({ error: e.message }); }
 });
 
 // =====================================================
@@ -592,6 +685,24 @@ const mockDb = {
         "mathematics": {
           label: "Mathematics",
           chapters: [
+
+            {
+              id: "jee_main_math_progression_series",
+              title: "Sequence and Series",
+              topics: [
+                { id: "jm_math_ch4_t1", title: "Arithmetic Progression (A.P.)" },
+                { id: "jm_math_ch4_t2", title: "Geometric Progression (G.P.)" },
+                { id: "jm_math_ch4_t3", title: "Harmonic Progression (H.P.)" },
+                { id: "jm_math_ch4_t4", title: "Properties of A.M., G.M., H.M." },
+                { id: "jm_math_ch4_t5", title: "Arithmetico-Geometric Progression (A.G.P.)" },
+                { id: "jm_math_ch4_t6", title: "Sum of Special Series" }
+              ],
+              videos: [],
+              pdfs: [],
+              formulas: [],
+              pyqTests: [],
+              tests: []
+            },
             {
               id: "jm_ch1",
               title: "Sets, Relations and Functions",
@@ -826,6 +937,24 @@ const mockDb = {
         "mathematics": {
           label: "Mathematics",
           chapters: [
+
+            {
+              id: "jee_main_math_progression_series",
+              title: "Sequence and Series",
+              topics: [
+                { id: "jm_math_ch4_t1", title: "Arithmetic Progression (A.P.)" },
+                { id: "jm_math_ch4_t2", title: "Geometric Progression (G.P.)" },
+                { id: "jm_math_ch4_t3", title: "Harmonic Progression (H.P.)" },
+                { id: "jm_math_ch4_t4", title: "Properties of A.M., G.M., H.M." },
+                { id: "jm_math_ch4_t5", title: "Arithmetico-Geometric Progression (A.G.P.)" },
+                { id: "jm_math_ch4_t6", title: "Sum of Special Series" }
+              ],
+              videos: [],
+              pdfs: [],
+              formulas: [],
+              pyqTests: [],
+              tests: []
+            },
             {
               id: "ja_ch1",
               title: "Sets, Relations and Functions",
@@ -1060,6 +1189,24 @@ const mockDb = {
         "mathematics": {
           label: "Mathematics",
           chapters: [
+
+            {
+              id: "jee_main_math_progression_series",
+              title: "Sequence and Series",
+              topics: [
+                { id: "jm_math_ch4_t1", title: "Arithmetic Progression (A.P.)" },
+                { id: "jm_math_ch4_t2", title: "Geometric Progression (G.P.)" },
+                { id: "jm_math_ch4_t3", title: "Harmonic Progression (H.P.)" },
+                { id: "jm_math_ch4_t4", title: "Properties of A.M., G.M., H.M." },
+                { id: "jm_math_ch4_t5", title: "Arithmetico-Geometric Progression (A.G.P.)" },
+                { id: "jm_math_ch4_t6", title: "Sum of Special Series" }
+              ],
+              videos: [],
+              pdfs: [],
+              formulas: [],
+              pyqTests: [],
+              tests: []
+            },
             {
               id: "mc_ch1",
               title: "Trigonometric Functions",
@@ -1087,6 +1234,24 @@ const mockDb = {
         "mathematics": {
           label: "Mathematics",
           chapters: [
+
+            {
+              id: "jee_main_math_progression_series",
+              title: "Sequence and Series",
+              topics: [
+                { id: "jm_math_ch4_t1", title: "Arithmetic Progression (A.P.)" },
+                { id: "jm_math_ch4_t2", title: "Geometric Progression (G.P.)" },
+                { id: "jm_math_ch4_t3", title: "Harmonic Progression (H.P.)" },
+                { id: "jm_math_ch4_t4", title: "Properties of A.M., G.M., H.M." },
+                { id: "jm_math_ch4_t5", title: "Arithmetico-Geometric Progression (A.G.P.)" },
+                { id: "jm_math_ch4_t6", title: "Sum of Special Series" }
+              ],
+              videos: [],
+              pdfs: [],
+              formulas: [],
+              pyqTests: [],
+              tests: []
+            },
             {
               id: "bs_ch1",
               title: "Complex Numbers & Quadratics",
@@ -1114,6 +1279,24 @@ const mockDb = {
         "mathematics": {
           label: "Mathematics",
           chapters: [
+
+            {
+              id: "jee_main_math_progression_series",
+              title: "Sequence and Series",
+              topics: [
+                { id: "jm_math_ch4_t1", title: "Arithmetic Progression (A.P.)" },
+                { id: "jm_math_ch4_t2", title: "Geometric Progression (G.P.)" },
+                { id: "jm_math_ch4_t3", title: "Harmonic Progression (H.P.)" },
+                { id: "jm_math_ch4_t4", title: "Properties of A.M., G.M., H.M." },
+                { id: "jm_math_ch4_t5", title: "Arithmetico-Geometric Progression (A.G.P.)" },
+                { id: "jm_math_ch4_t6", title: "Sum of Special Series" }
+              ],
+              videos: [],
+              pdfs: [],
+              formulas: [],
+              pyqTests: [],
+              tests: []
+            },
             {
               id: "nd_ch1",
               title: "Algebra & Trigonometry (NDA Spec)",
@@ -1141,6 +1324,24 @@ const mockDb = {
         "mathematics": {
           label: "Mathematics",
           chapters: [
+
+            {
+              id: "jee_main_math_progression_series",
+              title: "Sequence and Series",
+              topics: [
+                { id: "jm_math_ch4_t1", title: "Arithmetic Progression (A.P.)" },
+                { id: "jm_math_ch4_t2", title: "Geometric Progression (G.P.)" },
+                { id: "jm_math_ch4_t3", title: "Harmonic Progression (H.P.)" },
+                { id: "jm_math_ch4_t4", title: "Properties of A.M., G.M., H.M." },
+                { id: "jm_math_ch4_t5", title: "Arithmetico-Geometric Progression (A.G.P.)" },
+                { id: "jm_math_ch4_t6", title: "Sum of Special Series" }
+              ],
+              videos: [],
+              pdfs: [],
+              formulas: [],
+              pyqTests: [],
+              tests: []
+            },
             {
               id: "c9_ch1",
               title: "Number Systems",
@@ -1160,6 +1361,24 @@ const mockDb = {
         "mathematics": {
           label: "Mathematics",
           chapters: [
+
+            {
+              id: "jee_main_math_progression_series",
+              title: "Sequence and Series",
+              topics: [
+                { id: "jm_math_ch4_t1", title: "Arithmetic Progression (A.P.)" },
+                { id: "jm_math_ch4_t2", title: "Geometric Progression (G.P.)" },
+                { id: "jm_math_ch4_t3", title: "Harmonic Progression (H.P.)" },
+                { id: "jm_math_ch4_t4", title: "Properties of A.M., G.M., H.M." },
+                { id: "jm_math_ch4_t5", title: "Arithmetico-Geometric Progression (A.G.P.)" },
+                { id: "jm_math_ch4_t6", title: "Sum of Special Series" }
+              ],
+              videos: [],
+              pdfs: [],
+              formulas: [],
+              pyqTests: [],
+              tests: []
+            },
             {
               id: "c11_ch1",
               title: "Relations & Functions",
@@ -1179,6 +1398,24 @@ const mockDb = {
         "mathematics": {
           label: "Mathematics",
           chapters: [
+
+            {
+              id: "jee_main_math_progression_series",
+              title: "Sequence and Series",
+              topics: [
+                { id: "jm_math_ch4_t1", title: "Arithmetic Progression (A.P.)" },
+                { id: "jm_math_ch4_t2", title: "Geometric Progression (G.P.)" },
+                { id: "jm_math_ch4_t3", title: "Harmonic Progression (H.P.)" },
+                { id: "jm_math_ch4_t4", title: "Properties of A.M., G.M., H.M." },
+                { id: "jm_math_ch4_t5", title: "Arithmetico-Geometric Progression (A.G.P.)" },
+                { id: "jm_math_ch4_t6", title: "Sum of Special Series" }
+              ],
+              videos: [],
+              pdfs: [],
+              formulas: [],
+              pyqTests: [],
+              tests: []
+            },
             {
               id: "c12_ch1",
               title: "Relations and Functions",
@@ -1198,6 +1435,24 @@ const mockDb = {
         "mathematics": {
           label: "Mathematics",
           chapters: [
+
+            {
+              id: "jee_main_math_progression_series",
+              title: "Sequence and Series",
+              topics: [
+                { id: "jm_math_ch4_t1", title: "Arithmetic Progression (A.P.)" },
+                { id: "jm_math_ch4_t2", title: "Geometric Progression (G.P.)" },
+                { id: "jm_math_ch4_t3", title: "Harmonic Progression (H.P.)" },
+                { id: "jm_math_ch4_t4", title: "Properties of A.M., G.M., H.M." },
+                { id: "jm_math_ch4_t5", title: "Arithmetico-Geometric Progression (A.G.P.)" },
+                { id: "jm_math_ch4_t6", title: "Sum of Special Series" }
+              ],
+              videos: [],
+              pdfs: [],
+              formulas: [],
+              pyqTests: [],
+              tests: []
+            },
             {
               id: "fd_ch1",
               title: "Class 6 Foundation: Numbers & Integers",

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "mnswhvip",
+    "questionNumber": 61,
+    "questionText": "<p>For the function $f:[1, \\infty) \\rightarrow[1, \\infty)$ defined by $f(x)=(x-1)^4+1$, among the two statements:</p>\n<p>(I) The set $\\mathrm{S}=\\left\\{x \\in[1, \\infty): f(x)=f^{-1}(x)\\right\\}$ contains exactly two elements, and</p>\n<p>(II) The set $\\mathrm{S}=\\left\\{x \\in[1, \\infty): f(x)=f^{-1}(x+1)\\right\\}$ is an empty set,</p>\n",
+    "options": [
+      "<p>only (I) is TRUE</p>\n",
+      "<p>only (II) is TRUE</p>\n",
+      "<p>both (I) and (II) are TRUE</p>\n",
+      "<p>neither (I) nor (II) is TRUE</p>"
+    ],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "inverse-functions",
+    "difficulty": "hard",
+    "solution": "<p>For  </p>\n<p>$$ f:[1,\\infty)\\to [1,\\infty),\\qquad f(x)=(x-1)^4+1, $$</p>\n<p>we first find the inverse function.</p>\n<p>Since for $x\\ge 1$, the function $(x-1)^4+1$ is strictly increasing, $f$ is one-one and onto from $[1,\\infty)$ to $[1,\\infty)$.</p>\n<p>Let</p>\n<p>$$ y=(x-1)^4+1. $$</p>\n<p>Then</p>\n<p>$$ y-1=(x-1)^4. $$</p>\n<p>Since $x\\ge 1$, we take the positive fourth root:</p>\n<p>$$ x-1=(y-1)^{1/4}. $$</p>\n<p>Hence</p>\n<p>$$ f^{-1}(y)=1+(y-1)^{1/4}. $$</p>\n<p>So</p>\n<p>$$ f^{-1}(x)=1+(x-1)^{1/4}. $$</p>\n<p>Now check the two statements one by one.</p>\n\n<h2>Statement (I)</h2>\n<p>We need to solve</p>\n<p>$$ f(x)=f^{-1}(x). $$</p>\n<p>That is,</p>\n<p>$$ (x-1)^4+1=1+(x-1)^{1/4}. $$</p>\n<p>So</p>\n<p>$$ (x-1)^4=(x-1)^{1/4}. $$</p>\n<p>Put</p>\n<p>$$ t=x-1 \\quad \\text{where } t\\ge 0. $$</p>\n<p>Then the equation becomes</p>\n<p>$$ t^4=t^{1/4}. $$</p>\n<p>Now solve:</p>\n<p>$$ t^4-t^{1/4}=0. $$</p>\n<p>This gives</p>\n<p>$$ t^{1/4}\\left(t^{15/4}-1\\right)=0. $$</p>\n<p>Hence</p>\n<p>$$ t=0 \\quad \\text{or} \\quad t^{15/4}=1. $$</p>\n<p>Since $t\\ge 0$, from $t^{15/4}=1$ we get</p>\n<p>$$ t=1. $$</p>\n<p>Therefore</p>\n<p>$$ x-1=0 \\Rightarrow x=1, $$</p>\n<p>or</p>\n<p>$$ x-1=1 \\Rightarrow x=2. $$</p>\n<p>So the set</p>\n<p>$$ S=\\{x\\in[1,\\infty): f(x)=f^{-1}(x)\\} $$</p>\n<p>contains exactly two elements:</p>\n<p>$$ S=\\{1,2\\}. $$</p>\n<p>Thus, Statement (I) is TRUE.</p>\n\n<h2>Statement (II)</h2>\n<p>We need to solve</p>\n<p>$$ f(x)=f^{-1}(x+1). $$</p>\n<p>Now</p>\n<p>$$ f(x)=(x-1)^4+1, $$</p>\n<p>and</p>\n<p>$$ f^{-1}(x+1)=1+\\big((x+1)-1\\big)^{1/4}=1+x^{1/4}. $$</p>\n<p>So the equation becomes</p>\n<p>$$ (x-1)^4+1=1+x^{1/4}. $$</p>\n<p>Hence</p>\n<p>$$ (x-1)^4=x^{1/4}. $$</p>\n<p>Again put</p>\n<p>$$ t=x^{1/4}, \\quad t\\ge 1 \\text{ since } x\\ge 1. $$</p>\n<p>Then</p>\n<p>$$ x=t^4. $$</p>\n<p>So the equation becomes</p>\n<p>$$ (t^4-1)^4=t. $$</p>\n<p>Instead of solving this directly, test simple values.</p>\n<p>For $x=1$:</p>\n<p>$$ f(1)=(1-1)^4+1=1, $$</p>\n<p>and</p>\n<p>$$ f^{-1}(1+1)=f^{-1}(2)=1+(2-1)^{1/4}=2. $$</p>\n<p>So $x=1$ is not a solution.</p>\n<p>For $x=2$:</p>\n<p>$$ f(2)=(2-1)^4+1=2, $$</p>\n<p>and</p>\n<p>$$ f^{-1}(2+1)=f^{-1}(3)=1+(3-1)^{1/4}=1+2^{1/4}\\neq 2. $$</p>\n<p>So $x=2$ is not a solution.</p>\n<p>Now define</p>\n<p>$$ g(x)=(x-1)^4-x^{1/4}, \\qquad x\\ge 1. $$</p>\n<p>We need to check whether $g(x)=0$ has any solution.</p>\n<p>Observe:</p>\n<p>$$ g(1)=0-1=-1<0, $$</p>\n<p>and</p>\n<p>$$ g(2)=1-2^{1/4}<0, $$</p>\n<p>while</p>\n<p>$$ g(3)=16-3^{1/4}>0. $$</p>\n<p>Since $g$ is continuous, there is at least one root in $(2,3)$.</p>\n<p>So the set</p>\n<p>$$ S=\\{x\\in[1,\\infty): f(x)=f^{-1}(x+1)\\} $$</p>\n<p>is not empty.</p>\n<p>Thus, Statement (II) is FALSE.</p>\n\n<p>Therefore, the correct option is</p>\n<p>$$ \\boxed{\\text{Option A: only (I) is TRUE}} $$</p>",
+    "section": "A"
+  },
+  {
+    "id": "1lgoxs5ux",
+    "questionNumber": 69,
+    "questionText": "<p>The range of $$f(x)=4 \\sin ^{-1}\\left(\\frac{x^{2}}{x^{2}+1}\\right)$$ is</p>",
+    "options": [
+      "$$[0,2 \\pi]$$",
+      "$$[0,2 \\pi)$$",
+      "$$[0, \\pi)$$",
+      "$$[0, \\pi]$$"
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "inverse-functions",
+    "difficulty": "medium",
+    "solution": "$$\n\\begin{aligned}\n& \\frac{x^2}{1+x^2}=1-\\frac{1}{1+x^2}<1 \\\\\\\\\n\\therefore & 0 \\leq \\frac{x^2}{1+x^2}<1 \\\\\\\\\n\\Rightarrow & 0 \\leq \\sin ^{-1}\\left(\\frac{x^2}{1+x^2}\\right)<\\frac{\\pi}{2} \\\\\\\\\n\\Rightarrow & 0 \\leq 4 \\sin ^{-1}\\left(\\frac{x^2}{1+x^2}\\right)<2 \\pi\n\\end{aligned}\n$$",
+    "section": "A"
+  },
+  {
+    "id": "3KiVygqDw488GbnoRq1kmjaxjig",
+    "questionNumber": 68,
+    "questionText": "The inverse of $$y = {5^{\\log x}}$$ is :",
+    "options": [
+      "$$x = {5^{\\log y}}$$",
+      "$$x = {y^{{1 \\over {\\log 5}}}}$$",
+      "$$x = {5^{{1 \\over {\\log y}}}}$$",
+      "$$x = {y^{\\log 5}}$$"
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "inverse-functions",
+    "difficulty": "medium",
+    "solution": "$$y = {5^{\\log x}}$$<br><br>$$ \\Rightarrow \\log y = \\log x.log5$$<br><br>$$ \\Rightarrow \\log x = {{\\log y} \\over {\\log 5}} = {\\log _5}y$$<br><br>$$ \\Rightarrow x = {e^{{{\\log }_5}y}}$$<br><br>$$ \\Rightarrow x = {y^{{{\\log }_5}e}}$$<br><br>$$ \\Rightarrow x = {y^{{1 \\over {\\log 5}}}}$$",
+    "section": "A"
+  },
+  {
+    "id": "LQM2NmZMuUOeUUPSBE1kmm3nlbt",
+    "questionNumber": 67,
+    "questionText": "Let f : R $$-$$ {3} $$ \\to $$ R $$-$$ {1} be defined by f(x) = $${{x - 2} \\over {x - 3}}$$.<br><br>Let g : R $$ \\to $$ R be given as g(x) = 2x $$-$$ 3. Then, the sum of all the values of x for which f<sup>$$-$$1</sup>(x) + g<sup>$$-$$1</sup>(x) = $${{13} \\over 2}$$ is equal to :",
+    "options": [
+      "3",
+      "5",
+      "2",
+      "7"
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "inverse-functions",
+    "difficulty": "medium",
+    "solution": "Finding inverse of f(x)<br><br>$$y = {{x - 2} \\over {x - 3}} \\Rightarrow xy - 3y = x - 2 \\Rightarrow x(y - 1) = 3y - 2$$<br><br>$$ \\therefore $$ $${f^{ - 1}}(x) = {{3x - 2} \\over {x - 1}}$$<br><br>Similarly for $${g^{ - 1}}(x)$$<br><br>$$y = 2x - 3 \\Rightarrow x = {{y + 3} \\over 2} \\Rightarrow {g^{ - 1}}(x) = {{x + 3} \\over 2}$$<br><br>$$ \\therefore $$ $${{3x - 2} \\over {x - 1}} + {{x + 3} \\over 2} = {{13} \\over 2}$$<br><br>$$ \\Rightarrow 6x - 4 + {x^2} + 2x - 3 = 13x - 13$$<br><br>$$ \\Rightarrow {x^2} - 5x + 6 = 0$$<br><br>$$ \\Rightarrow (x - 2)(x - 3) = 0$$<br><br>$$ \\Rightarrow $$ x = 2 or 3",
+    "section": "A"
+  },
+  {
+    "id": "S9ViRTELMsFpCdXCyu7k9k2k5gzd75n",
+    "questionNumber": 59,
+    "questionText": "The inverse function of\n<br><br>f(x) = $${{{8^{2x}} - {8^{ - 2x}}} \\over {{8^{2x}} + {8^{ - 2x}}}}$$, x $$ \\in $$ (-1, 1), is :",
+    "options": [
+      "$${1 \\over 4}{\\log _e}\\left( {{{1 - x} \\over {1 + x}}} \\right)$$",
+      "$${1 \\over 4}\\left( {{{\\log }_8}e} \\right){\\log _e}\\left( {{{1 - x} \\over {1 + x}}} \\right)$$",
+      "$${1 \\over 4}\\left( {{{\\log }_8}e} \\right){\\log _e}\\left( {{{1 + x} \\over {1 - x}}} \\right)$$",
+      "$${1 \\over 4}{\\log _e}\\left( {{{1 + x} \\over {1 - x}}} \\right)$$"
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "inverse-functions",
+    "difficulty": "medium",
+    "solution": "f(x) = $${{{8^{2x}} - {8^{ - 2x}}} \\over {{8^{2x}} + {8^{ - 2x}}}}$$ = y\n<br><br>$$ \\therefore $$ $${{y + 1} \\over {y - 1}} = {{{{2.8}^{2x}}} \\over { - {{2.8}^{ - 2x}}}}$$\n<br><br>$$ \\Rightarrow $$ $${{1 + y} \\over {1 - y}}$$ = 8<sup>4x</sup>\n<br><br>$$ \\Rightarrow $$ $${\\log _e}\\left( {{{1 + y} \\over {1 - y}}} \\right)$$ = 4x $${\\log _e}8$$\n<br><br>$$ \\Rightarrow $$ x = $${1 \\over {4{{\\log }_e}8}}{\\log _e}\\left( {{{1 + y} \\over {1 - y}}} \\right)$$\n<br><br>$$ \\therefore $$ f<sup>-1</sup>(x) = $${1 \\over 4}\\left( {{{\\log }_8}e} \\right){\\log _e}\\left( {{{1 + x} \\over {1 - x}}} \\right)$$",
+    "section": "A"
+  },
+  {
+    "id": "NmOxptYb4egNVmQdBRShM",
+    "questionNumber": 70,
+    "questionText": "Let <i> f</i> : A $$ \\to $$ B be a function defined as f(x) = $${{x - 1} \\over {x - 2}},$$ Where A = <b>R</b> $$-$$ {2} and B = <b>R</b> $$-$$ {1}.  Then &nbsp; <i>f</i> &nbsp; is  : ",
+    "options": [
+      "invertible and  $${f^{ - 1}}(y) = $$ $${{3y - 1} \\over {y - 1}}$$ ",
+      "invertible and $${f^{ - 1}}\\left( y \\right) = {{2y - 1} \\over {y - 1}}$$ ",
+      "invertible and $${f^{ - 1}}\\left( y \\right) = {{2y + 1} \\over {y - 1}}$$",
+      "not invertible"
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "inverse-functions",
+    "difficulty": "medium",
+    "solution": "Assume,\n<br><br>y = f(x)\n<br><br>$$ \\Rightarrow $$ y = $${{x - 1} \\over {x - 2}}$$\n<br><br>$$ \\Rightarrow $$ yx - 2y = x - 1\n<br><br>$$ \\Rightarrow $$ (y - 1)x = 2y - 1\n<br><br>$$ \\Rightarrow $$ x = $${{2y - 1} \\over {y - 1}}$$ = f<sup> -1</sup>(y)\n<br><br>As on the given domain the function is invertible and its inverse can be computed as shown above.",
+    "section": "A"
+  },
+  {
+    "id": "1l2vm4wvt",
+    "questionNumber": 45,
+    "questionText": "<p>Let $$f:(0,1) \\to R$$ be defined by $$f(x) = {{b - x} \\over {1 - bx}}$$, where b is a constant such that $$0 < b < 1$$. Then</p>",
+    "options": [
+      "f is not invertible on (0, 1).",
+      "f $$\\ne$$ f<sup>$$-$$1</sup> on (0, 1) and $$f'(b) = {1 \\over {f'(0)}}$$.",
+      "f = f<sup>$$-$$1</sup> on (0, 1) and $$f'(b) = {1 \\over {f'(0)}}$$.",
+      "f<sup>$$-$$1</sup> is differentiable on (0, 1)."
+    ],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "inverse-functions",
+    "difficulty": "medium",
+    "solution": "<p>Here, $$f(x) = {{b - x} \\over {1 - bx}}$$</p>\n<p>where, 0 < b < 1, 0 < x < 1</p>\n<p>For function to be invertible it should be one-one onto.</p>\n<p>$$\\therefore$$ Check range :</p>\n<p>Let $$f(x) = y \\Rightarrow y = {{b - x} \\over {1 - bx}}$$</p>\n<p>$$ \\Rightarrow y - bxy = b - x \\Rightarrow x(1 - by) = b - y$$</p>\n<p>$$ \\Rightarrow x = {{b - y} \\over {1 - by}}$$</p>\n<p>where, 0 < x < 1</p>\n<p>$$\\therefore$$ $$0 < {{b - y} \\over {1 - by}} < 1$$</p>\n<p>$${{b - y} \\over {1 - by}} > 0$$ and $${{b - y} \\over {1 - by}} < 1$$</p>\n<p>$$ \\Rightarrow y < b$$ or $$y > {1 \\over b}$$ .... (i)<p>\n<p>$${{(b - 1)(y + 1)} \\over {1 - by}} <  - 1 < y < {1 \\over b}$$ ..... (ii)</p>\n<p>From Eqs. (i) and (ii), we get</p>\n<p>$$y \\in \\left( { - 1,{1 \\over b}} \\right) \\subset $$ Codomain</p>\n<p>Thus, f(x) is not invertible.</p>",
+    "section": "Sec 1",
+    "instruction": ""
+  },
+  {
+    "id": "P2kpm503moP4bUr9",
+    "questionNumber": 54,
+    "questionText": "<p>If the function $$f(x) = {x^3} + {e^{x/2}}$$ and $$g(x) = {f^{ - 1}}(x)$$, then the value of $$g'(1)$$ is _________.</p>",
+    "options": [],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "NUMERICAL",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "inverse-functions",
+    "difficulty": "easy",
+    "solution": "<p>We have $$f(0) = 1,f'(x) = 3{x^2} + {1 \\over 2}{e^{x/2}}$$</p>\n<p>$$ \\Rightarrow f'(g(x))g'(x) = 1$$</p>\n<p>Substituting $$x = 0 \\Rightarrow g'(1) = {1 \\over {f'(0)}} = 2$$.</p>",
+    "section": "Sec 4",
+    "instruction": ""
+  }
+]

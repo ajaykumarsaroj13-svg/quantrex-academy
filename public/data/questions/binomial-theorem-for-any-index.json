@@ -1,0 +1,165 @@
+[
+  {
+    "id": "m6t9xst0",
+    "questionNumber": 55,
+    "questionText": "<p>If in the expansion of $(1+x)^{\\mathrm{p}}(1-x)^{\\mathrm{q}}$, the coefficients of $x$ and $x^2$ are 1 and -2 , respectively, then $\\mathrm{p}^2+\\mathrm{q}^2$ is equal to :</p>",
+    "options": [
+      "8",
+      "20",
+      "13",
+      "18"
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "binomial-theorem-for-any-index",
+    "difficulty": "medium",
+    "solution": "<p>$$\\begin{aligned}\n& (1+\\mathrm{x})^{\\mathrm{p}}(1-\\mathrm{x})^{\\mathrm{q}}=\\left({ }^{\\mathrm{p}} \\mathrm{C}_0+{ }^{\\mathrm{p}} \\mathrm{C}_1 \\mathrm{x}+{ }^{\\mathrm{p}} \\mathrm{C}_2 \\mathrm{x}^2+\\ldots\\right)\\left({ }^q \\mathrm{C}_0-{ }^q \\mathrm{C}_1 \\mathrm{x}+{ }^q \\mathrm{C}_2 \\mathrm{x}^2+\\ldots\\right) \\\\\n& \\text { coff of } \\mathrm{x} \\equiv{ }^{\\mathrm{p}} \\mathrm{C}_0{ }^{\\mathrm{q}} \\mathrm{C}_1-{ }^{\\mathrm{p}} \\mathrm{C}_1{ }^q \\mathrm{C}_0=1 \\\\\n& \\mathrm{p}-\\mathrm{q}=1 \\\\\n& \\text { coff of } \\mathrm{x}^2 \\equiv{ }^{\\mathrm{p}} \\mathrm{C}_0{ }^q \\mathrm{C}_2-{ }^{\\mathrm{p}} \\mathrm{C}_1{ }^q \\mathrm{C}_1+{ }^{\\mathrm{p}} \\mathrm{C}_2{ }^{\\mathrm{q}} \\mathrm{C}_0=-2 \\\\\n& \\frac{\\mathrm{q}(\\mathrm{q}-1)}{2}-\\mathrm{pq}+\\frac{\\mathrm{p}(\\mathrm{p}-1)}{2}=-2 \\\\\n& \\mathrm{q}^2-\\mathrm{q}-2 \\mathrm{pq}+\\mathrm{p}^2-\\mathrm{p}=-4 \\\\\n& (\\mathrm{p}-\\mathrm{q})^2-(\\mathrm{p}+\\mathrm{q})=-4 \\\\\n& \\mathrm{p}+\\mathrm{q}=5 \\\\\n& \\mathrm{p}=3 \\\\\n& \\mathrm{q}=2 \\\\\n& \\text { so } \\mathrm{p}^2+\\mathrm{q}^2=13\n\\end{aligned}$$</p>",
+    "section": "A"
+  },
+  {
+    "id": "m6qhcws0",
+    "questionNumber": 53,
+    "questionText": "<p>The least value of <b>n</b> for which the number of integral terms in the Binomial expansion of $(\\sqrt[3]{7}+\\sqrt[12]{11})^n$ is 183, is :</p>",
+    "options": [
+      "<p>2184</p>",
+      "<p>2172</p>",
+      "<p>2196</p>",
+      "<p>2148</p>"
+    ],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "binomial-theorem-for-any-index",
+    "difficulty": "medium",
+    "solution": "<p>$$\\begin{aligned}\n& \\text { General term }={ }^n C_r\\left(7^{1 / 3}\\right)^{n-r}\\left(11^{1 / 12}\\right)^r \\\\\n& ={ }^n C_r(7)^{\\frac{n-r}{3}}(11)^{r / 12}\n\\end{aligned}$$</p>\n<p>For integral terms, $r$ must be multiple of 12</p>\n<p>$$\\therefore \\mathrm{r}=12 \\mathrm{k}, \\mathrm{k} \\in \\mathrm{~W}$$</p>\n<p>Total values of $\\mathrm{r}=183$</p>\n<p>Hence $\\max r=12(182)$</p>\n<p>$$=2184$$</p>\n<p>Min value of $n=2184$</p>",
+    "section": "A"
+  },
+  {
+    "id": "m9dmtesk",
+    "questionNumber": 53,
+    "questionText": "<p>The number of integral terms in the expansion of $ \\left( {5^\\frac{1}{2}} + 7^\\frac{1}{8} \\right)^{1016} $ is:</p>",
+    "options": [
+      "<p>127</p>",
+      "<p>128</p>",
+      "<p>130</p>",
+      "<p>129</p>"
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "binomial-theorem-for-any-index",
+    "difficulty": "medium",
+    "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\mathrm{T}_{\\mathrm{r}}={ }^{1016} \\mathrm{C}_{\\mathrm{r}}(5)^{\\frac{1016-\\mathrm{r}}{2}} 7^{\\frac{\\mathrm{r}}{8}} \\\\\n& \\Rightarrow \\mathrm{r}=0,8,16,24, \\ldots ., 1016 \\\\\n& 1016=0+(\\mathrm{n}-1) 8 \\\\\n& \\Rightarrow \\mathrm{n}-1=\\frac{1016}{8}=127\n\\end{aligned}\\\\\n&\\text { So, } \\mathrm{n}=128 \\text {. }\n\\end{aligned}$$</p>",
+    "section": "A"
+  },
+  {
+    "id": "lsamwj6p",
+    "questionNumber": 64,
+    "questionText": "Let $m$ and $n$ be the coefficients of seventh and thirteenth terms respectively<br/><br/> in the expansion of $\\left(\\frac{1}{3} x^{\\frac{1}{3}}+\\frac{1}{2 x^{\\frac{2}{3}}}\\right)^{18}$. Then $\\left(\\frac{\\mathrm{n}}{\\mathrm{m}}\\right)^{\\frac{1}{3}}$ is :",
+    "options": [
+      "$\\frac{1}{9}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{4}{9}$",
+      "$\\frac{9}{4}$"
+    ],
+    "correctOption": 3,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "binomial-theorem-for-any-index",
+    "difficulty": "medium",
+    "solution": "$\\begin{aligned} & \\mathrm{t}_7={ }^{18} \\mathrm{C}_6\\left(\\frac{\\mathrm{x}^{\\frac{1}{3}}}{3}\\right)^{12}\\left(\\frac{\\mathrm{x}^{\\frac{-2}{3}}}{2}\\right)^6={ }^{18} \\mathrm{C}_6 \\frac{1}{(3)^{12}} \\cdot \\frac{1}{2^6} \\\\\\\\ & \\mathrm{t}_{13}={ }^{18} \\mathrm{C}_{12}\\left(\\frac{\\mathrm{x}^{\\frac{1}{3}}}{3}\\right)^6\\left(\\frac{\\mathrm{x}^{\\frac{-2}{3}}}{2}\\right)^{12}={ }^{18} \\mathrm{C}_{12} \\frac{1}{(3)^6} \\cdot \\frac{1}{2^{12}} \\cdot \\mathrm{x}^{-6}\\end{aligned}$\n<br/><br/>$$ \\therefore $$ $m={ }^{18} C_6\\left(\\frac{1}{3}\\right)^{12}\\left(\\frac{1}{2}\\right)^6$\n<br/><br/>$n={ }^{18} C_{12}\\left(\\frac{1}{3}\\right)^6\\left(\\frac{1}{2}\\right)^{12}$\n<br/><br/>$\\begin{aligned}\\left(\\frac{m}{n}\\right)^{\\frac{1}{3}} & =\\left(\\frac{{ }^{18} C_6\\left(\\frac{1}{3}\\right)^{12}\\left(\\frac{1}{2}\\right)^6}{{ }^{18} C_{12}\\left(\\frac{1}{3}\\right)^6\\left(\\frac{1}{2}\\right)^{12}}\\right)^{\\frac{1}{3}} \\\\\\\\ & =\\left(\\frac{\\left(\\frac{1}{3}\\right)^6}{\\left(\\frac{1}{2}\\right)^6}\\right)^{\\frac{1}{3}}=\\left(\\left(\\frac{2}{3}\\right)^6\\right)^{\\frac{1}{3}}=\\frac{4}{9}\\end{aligned}$\n<br/><br/>$\\therefore\\left(\\frac{n}{m}\\right)^{\\frac{1}{3}}=\\frac{9}{4}$",
+    "section": "A"
+  },
+  {
+    "id": "1lsgcji8h",
+    "questionNumber": 82,
+    "questionText": "<p>$$\\text { Number of integral terms in the expansion of }\\left\\{7^{\\left(\\frac{1}{2}\\right)}+11^{\\left(\\frac{1}{6}\\right)}\\right\\}^{824} \\text { is equal to _________. }$$</p>",
+    "options": [],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "NUMERICAL",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "binomial-theorem-for-any-index",
+    "difficulty": "medium",
+    "solution": "<p>General term in expansion of $$\\left((7)^{1 / 2}+(11)^{1 / 6}\\right)^{824}$$ is $$\\mathrm{t}_{\\mathrm{r}+1}={ }^{824} \\mathrm{C}_{\\mathrm{r}}(7)^{\\frac{824-\\mathrm{r}}{2}}(11)^{\\mathrm{r} / 6}$$</p>\n<p>For integral term, $$r$$ must be multiple of 6.</p>\n<p>Hence $$r=0,6,12, ....... 822$$</p>",
+    "section": "B"
+  },
+  {
+    "id": "lv0vxd0y",
+    "questionNumber": 64,
+    "questionText": "<p>The sum of all rational terms in the expansion of $$\\left(2^{\\frac{1}{5}}+5^{\\frac{1}{3}}\\right)^{15}$$ is equal to :</p>",
+    "options": [
+      "633",
+      "6131",
+      "3133",
+      "931"
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "binomial-theorem-for-any-index",
+    "difficulty": "medium",
+    "solution": "<p>$$\\begin{aligned}\n& T_{r+1}={ }^{15} \\mathrm{C}_r\\left(2^{1 / 5}\\right)^{15-r}\\left(5^{1 / 3}\\right)^r \\\\\n& ={ }^{15} C_r 5^{r / 3} 2^{\\left(3-\\frac{r}{5}\\right)}\n\\end{aligned}$$</p>\n<p>For rational terms,</p>\n<p>$$\\frac{r}{3}$$ and $$\\frac{r}{5}$$ must be integer</p>\n<p>3 and 5 divide $$r \\Rightarrow 15$$ divides $$r \\Rightarrow r=0$$ and $$r=15$$</p>\n<p>$${ }^{15} C_0 5^0 2^3+{ }^{15} C_{15} 5^5 2^{(0)}$$</p>\n<p>$$\\begin{aligned}\n& =8+3125 \\\\\n& =3133\n\\end{aligned}$$</p>",
+    "section": "A"
+  },
+  {
+    "id": "1krzmg688",
+    "questionNumber": 63,
+    "questionText": "The lowest integer which is greater <br><br>than $${\\left( {1 + {1 \\over {{{10}^{100}}}}} \\right)^{{{10}^{100}}}}$$ is ______________.",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "binomial-theorem-for-any-index",
+    "difficulty": "hard",
+    "solution": "Let $$P = {\\left( {1 + {1 \\over {{{10}^{100}}}}} \\right)^{{{10}^{100}}}}$$<br><br>Let $$x = {10^{100}}$$<br><br>$$ \\Rightarrow P = {\\left( {1 + {1 \\over x}} \\right)^x}$$<br><br>$$ \\Rightarrow P = 1 + (x)\\left( {{1 \\over x}} \\right) + {{(x)(x - 1)} \\over {\\left| \\!{\\underline {\\,\n  2 \\,}} \\right. }}.{1 \\over {{x^2}}} + {{(x)(x - 1)(x - 2)} \\over {\\left| \\!{\\underline {\\,\n  3 \\,}} \\right. }}.{1 \\over {{x^3}}} + ....$$<br><br>(upto 10<sup>100</sup> + 1 terms)<br><br>$$ \\Rightarrow P = 1 + 1 + \\left( {{1 \\over {\\left| \\!{\\underline {\\,\n  2 \\,}} \\right. }} - {1 \\over {\\left| \\!{\\underline {\\,\n  2 \\,}} \\right. {x^2}}}} \\right) + \\left( {{1 \\over {\\left| \\!{\\underline {\\,\n  3 \\,}} \\right. }} - ...} \\right) + ...$$ so on<br><br>$$ \\Rightarrow P = 2 + \\left( {Positive\\,value\\,less\\,than\\,{1 \\over {\\left| \\!{\\underline {\\,\n  2 \\,}} \\right. }} + {1 \\over {\\left| \\!{\\underline {\\,\n  3 \\,}} \\right. }} + {1 \\over {\\left| \\!{\\underline {\\,\n  4 \\,}} \\right. }} + ...} \\right)$$<br><br>Also $$e = 1 + {1 \\over {\\left| \\!{\\underline {\\,\n  1 \\,}} \\right. }} + {1 \\over {\\left| \\!{\\underline {\\,\n  2 \\,}} \\right. }} + {1 \\over {\\left| \\!{\\underline {\\,\n  3 \\,}} \\right. }} + {1 \\over {\\left| \\!{\\underline {\\,\n  4 \\,}} \\right. }} + ...$$<br><br>$$ \\Rightarrow {1 \\over {\\left| \\!{\\underline {\\,\n  2 \\,}} \\right. }} + {1 \\over {\\left| \\!{\\underline {\\,\n  3 \\,}} \\right. }} + {1 \\over {\\left| \\!{\\underline {\\,\n  4 \\,}} \\right. }} + ... = e - 2$$<br><br>$$\\Rightarrow$$ P = 2 + (positive value less than e $$-$$ 2)<br><br>$$\\Rightarrow$$ P $$\\in$$ (2, 3)<br><br>$$\\Rightarrow$$ least integer value of P is 3",
+    "section": "A"
+  },
+  {
+    "id": "5d6Ld5edVvT7r0SH",
+    "questionNumber": 156,
+    "questionText": "The positive integer just greater than $${\\left( {1 + 0.0001} \\right)^{10000}}$$ is ",
+    "options": [
+      "4 ",
+      "5 ",
+      "2 ",
+      "3 "
+    ],
+    "correctOption": 3,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "binomial-theorem-for-any-index",
+    "difficulty": "medium",
+    "solution": "$${\\left( {1 + 0.0001} \\right)^{10000}}$$  = $${\\left( {1 + {1 \\over {{{10}^4}}}} \\right)^{10000}}$$\n<br><br>= 1 + 10000$${ \\times {1 \\over {{{10}^4}}}}$$ + $${{10000\\left( {9999} \\right)} \\over {2!}} \\times {\\left( {{1 \\over {{{10}^4}}}} \\right)^2}$$+......$$\\infty $$\n<br><br>&lt; 1 + 1 + $${1 \\over {2!}}$$ + $${1 \\over {3!}}$$ + ...... $$\\infty $$ = e = 2.71828 &lt; 3",
+    "section": "A"
+  }
+]

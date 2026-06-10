@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================================================
+   QUANTREX ACADEMY — GLOBAL DESIGN SYSTEM
+   Fonts: Poppins (headings) + Inter (body) + Roboto Mono (code)
+   Themes: Dark (default) + Light (via .light class on html)
+================================================================ */
+
+@layer base {
+  /* ── MULTI-COLOR THEMES ── */
+  
+  /* 1. Default (Cyan/Electric) */
+  :root, html[data-theme="cyan"] {
+    --bg-primary: #0B0C10;
+    --bg-secondary: #1F2833;
+    --bg-card: rgba(31, 40, 51, 0.60);
+    --text-primary: #F0F4F8;
+    --text-secondary: #9CA3AF;
+    --text-muted: #6B7280;
+    --border-subtle: rgba(255, 255, 255, 0.07);
+    --border-accent: rgba(0, 180, 216, 0.30);
+    --scrollbar-track: #0B0C10;
+    --scrollbar-thumb: #2d3b4c;
+    --scrollbar-hover: #00B4D8;
+    --glass-bg: rgba(31, 40, 51, 0.50);
+    --glass-border: rgba(255, 255, 255, 0.06);
+    
+    /* Dynamic Accent Colors */
+    --color-electric: #00B4D8;
+    --color-electric-dark: #0077B6;
+    --color-gold: #F59E0B;
+  }
+  
+  html.light, html.light[data-theme="cyan"] {
+    --bg-primary: #F4F6FA;
+    --bg-secondary: #FFFFFF;
+    --bg-card: rgba(255, 255, 255, 0.85);
+    --text-primary: #0F172A;
+    --text-secondary: #374151;
+    --text-muted: #6B7280;
+    --border-subtle: rgba(0, 0, 0, 0.08);
+    --border-accent: rgba(0, 119, 182, 0.30);
+    --scrollbar-track: #F4F6FA;
+    --scrollbar-thumb: #CBD5E1;
+    --scrollbar-hover: #0077B6;
+    --glass-bg: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(0, 0, 0, 0.07);
+    
+    --color-electric: #0077B6;
+    --color-electric-dark: #00B4D8;
+    --color-gold: #D97706;
+  }
+
+  /* 2. Emerald (Green) */
+  html[data-theme="emerald"] {
+    --color-electric: #10B981;
+    --color-electric-dark: #047857;
+    --color-gold: #F59E0B;
+    --border-accent: rgba(16, 185, 129, 0.30);
+  }
+  html.light[data-theme="emerald"] {
+    --color-electric: #059669;
+    --color-electric-dark: #10B981;
+    --border-accent: rgba(5, 150, 105, 0.30);
+  }
+
+  /* 3. Ruby (Red) */
+  html[data-theme="ruby"] {
+    --color-electric: #EF4444;
+    --color-electric-dark: #B91C1C;
+    --color-gold: #F59E0B;
+    --border-accent: rgba(239, 68, 68, 0.30);
+  }
+  html.light[data-theme="ruby"] {
+    --color-electric: #DC2626;
+    --color-electric-dark: #EF4444;
+    --border-accent: rgba(220, 38, 38, 0.30);
+  }
+
+  /* 4. Amethyst (Purple) */
+  html[data-theme="amethyst"] {
+    --color-electric: #8B5CF6;
+    --color-electric-dark: #5B21B6;
+    --color-gold: #F59E0B;
+    --border-accent: rgba(139, 92, 246, 0.30);
+  }
+  html.light[data-theme="amethyst"] {
+    --color-electric: #7C3AED;
+    --color-electric-dark: #8B5CF6;
+    --border-accent: rgba(124, 58, 237, 0.30);
+  }
+
+  /* ── BASE TYPOGRAPHY ── */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 0.9375rem;   /* 15px */
+    line-height: 1.65;
+    letter-spacing: 0.01em;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--text-primary);
+  }
+
+  h1 { font-size: clamp(2rem, 5vw, 4.5rem); font-weight: 800; }
+  h2 { font-size: clamp(1.5rem, 3vw, 2.75rem); font-weight: 700; }
+  h3 { font-size: clamp(1.125rem, 2vw, 1.75rem); font-weight: 600; }
+  h4 { font-size: clamp(1rem, 1.5vw, 1.25rem); font-weight: 600; }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-secondary);
+    line-height: 1.75;
+  }
+
+  .font-logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+  }
+
+  .font-mono, code, pre {
+    font-family: 'Roboto Mono', 'Fira Code', monospace;
+    font-size: 0.875em;
+  }
+}
+
+/* ================================================================
+   SCROLLBAR THEMING
+================================================================ */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover); }
+
+/* ================================================================
+   GLASS / PANEL SYSTEM
+================================================================ */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-panel-glow {
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-accent);
+  box-shadow: 0 0 24px rgba(0, 180, 216, 0.10);
+}
+
+/* ================================================================
+   GLOW EFFECTS
+================================================================ */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.25);
+}
+.glow-blue-hover:hover {
+  box-shadow: 0 0 32px rgba(0, 180, 216, 0.40);
+}
+.glow-gold {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+}
+.text-glow-blue {
+  text-shadow: 0 0 12px rgba(0, 180, 216, 0.70);
+}
+.text-glow-gold {
+  text-shadow: 0 0 12px rgba(245, 158, 11, 0.70);
+}
+
+/* ================================================================
+   LIGHT MODE OVERRIDES FOR SPECIFIC DARK UTILITY CLASSES
+================================================================ */
+html.light body {
+  background-color: #F4F6FA;
+  color: #0F172A;
+}
+html.light .bg-obsidian { background-color: #FFFFFF !important; }
+html.light .bg-obsidian\/90 { background-color: rgba(255,255,255,0.95) !important; }
+html.light .bg-obsidian\/85 { background-color: rgba(255,255,255,0.92) !important; }
+html.light .bg-cyberdark { background-color: #F4F6FA !important; }
+html.light .bg-cyberdark\/40 { background-color: rgba(244,246,250,0.85) !important; }
+html.light .bg-cyberdark\/30 { background-color: rgba(232,236,244,0.75) !important; }
+html.light .bg-cyberdark\/20 { background-color: rgba(232,236,244,0.60) !important; }
+html.light .bg-obsidian\/60 { background-color: rgba(244,246,250,0.80) !important; }
+html.light .bg-obsidian\/30 { background-color: rgba(244,246,250,0.60) !important; }
+html.light .text-white { color: #0F172A !important; }
+html.light .text-gray-100 { color: #1E293B !important; }
+html.light .text-gray-300 { color: #334155 !important; }
+html.light .text-platinum { color: #334155 !important; }
+html.light .text-gray-400 { color: #475569 !important; }
+html.light .text-gray-500 { color: #64748B !important; }
+html.light .text-gray-600 { color: #94A3B8 !important; }
+html.light .border-white\/5 { border-color: rgba(0,0,0,0.08) !important; }
+html.light .border-white\/10 { border-color: rgba(0,0,0,0.10) !important; }
+html.light .border-white\/5 { border-color: rgba(0,0,0,0.07) !important; }
+html.light .glass-panel {
+  background: rgba(255,255,255,0.85) !important;
+  border-color: rgba(0,0,0,0.08) !important;
+}
+html.light .text-glow-blue { text-shadow: 0 0 10px rgba(0,119,182,0.4); }
+html.light .text-glow-gold { text-shadow: 0 0 10px rgba(180,100,0,0.4); }
+html.light .electric { color: #0077B6 !important; }
+html.light .text-electric { color: #0077B6 !important; }
+
+/* ================================================================
+   FLOATING MATH ANIMATIONS
+================================================================ */
+.float-math-1 { animation: float 8s ease-in-out infinite; }
+.float-math-2 { animation: float 11s ease-in-out infinite 2s; }
+.float-math-3 { animation: float 9s ease-in-out infinite 1s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
+}
+
+/* ================================================================
+   SHIMMER SKELETON LOADER
+================================================================ */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, #1F2833 25%, #2d3b4c 50%, #1F2833 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+html.light .shimmer {
+  background: linear-gradient(90deg, #e2e8f0 25%, #f0f4f8 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes sweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-sweep {
+  animation: sweep 2s infinite linear;
+}
+
+/* ================================================================
+   FADE IN ANIMATION
+================================================================ */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fadeIn 0.3s ease-out both; }
+
+/* ================================================================
+   MARQUEE ANIMATION
+================================================================ */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
+/* ================================================================
+   THEME TOGGLE BUTTON TRANSITION
+================================================================ */
+.theme-toggle-btn {
+  transition: all 0.2s ease;
+}
+.theme-toggle-btn:active {
+  transform: scale(0.92);
+}
+
+/* ================================================================
+   PDF / IMAGE VIEWER
+================================================================ */
+.pdf-viewer-frame {
+  width: 100%;
+  min-height: 560px;
+  border: none;
+  border-radius: 0.5rem;
+  background: white;
+}
+.image-viewer-frame {
+  max-width: 100%;
+  max-height: 640px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Force Exam Text Visibility */
+html.light .nta-question-text *, html.light .nta-option-text *, html.light .nta-solution-text *, html.light .nta-question-text, html.light .nta-option-text { color: #202124 !important; }
+html:not(.light) .nta-question-text *, html:not(.light) .nta-option-text *, html:not(.light) .nta-solution-text *, html:not(.light) .nta-question-text, html:not(.light) .nta-option-text { color: #ffffff !important; }
+
+
+/* NTA Exam Interface Global Theme Overrides */
+html.light .nta-exam-wrapper { --bg-body: #ffffff !important; --bg-panel: #ffffff !important; --text-primary: #000000 !important; }
+html:not(.light) .nta-exam-wrapper { --bg-body: #000000 !important; --bg-panel: #111111 !important; --text-primary: #ffffff !important; --bg-white: #111111 !important; --bg-sidebar: #1a1a1a !important; --bg-sidebar-dark: #000000 !important; --border-light: #333333 !important; --border-medium: #444444 !important; }
+
+
+/* Extended Light Mode Overrides for Full Visibility */
+html.light .text-gray-50, html.light .text-gray-200, html.light .text-slate-200, html.light .text-slate-300, html.light .text-slate-400, html.light .text-zinc-200, html.light .text-zinc-300, html.light .text-zinc-400, html.light .text-gray-300 { color: #1e293b !important; }
+html.light .bg-white\/5 { background-color: rgba(0,0,0,0.05) !important; border-color: rgba(0,0,0,0.1) !important; }
+
+
+
+/* ─── Solution Box Styling ─── */
+.nta-solution-box {
+  margin-top: 25px;
+  padding: 20px;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.nta-solution-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #2980b9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid #e1e8ed;
+  padding-bottom: 8px;
+}
+
+.nta-solution-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #34495e;
+}
+
+.nta-solution-text p {
+  margin-bottom: 12px;
+}
+
+.nta-solution-text img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nta-solution-text .MathJax {
+  font-size: 1.1em !important;
+}
+
+/* Ensure instructions are clearly visible */
+.nta-section-instruction {
+  color: #111827 !important;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+.nta-section-instruction ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+.nta-section-instruction li {
+  margin-bottom: 6px;
+}
+
+
+/* User Fixes */
+.nta-solution-text, .nta-solution-text * {
+  color: #0f172a !important;
+}
+.nta-solution-text img {
+  filter: contrast(1.1);
+  position: relative;
+}
+
+/* Watermark */
+.nta-solution-box {
+  position: relative;
+  overflow: hidden;
+}
+.nta-solution-box::before {
+  content: 'Quantrex Academy';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.04);
+  pointer-events: none;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.nta-check-answer-wrap {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin-top: 20px;
+}
+.nta-check-answer-btn {
+  margin: 0 auto !important;
+}
+
+.nta-option.correct {
+  background-color: #d1fae5 !important;
+  border-color: #10b981 !important;
+  color: #064e3b !important;
+}
+.nta-option.correct * {
+  color: #064e3b !important;
+}
+.nta-option.wrong {
+  background-color: #fee2e2 !important;
+  border-color: #ef4444 !important;
+  color: #7f1d1d !important;
+}
+.nta-option.wrong * {
+  color: #7f1d1d !important;
+}
+
+
+/* Additional fixes for flex and mathjax */
+.nta-solution-box {
+  flex-shrink: 0 !important;
+  min-height: min-content !important;
+  padding-bottom: 40px !important; /* Ensure enough space at bottom */
+}
+
+.nta-question-panel {
+  padding-bottom: 50px !important; /* Extra scroll space */
+}
+
+.nta-option.correct, .nta-option.correct *, .nta-option.correct .MathJax, .nta-option.correct mjx-container {
+  color: #064e3b !important;
+  fill: #064e3b !important;
+}
+
+.nta-option.wrong, .nta-option.wrong *, .nta-option.wrong .MathJax, .nta-option.wrong mjx-container {
+  color: #7f1d1d !important;
+  fill: #7f1d1d !important;
+}
+
+.nta-solution-text, .nta-solution-text *, .nta-solution-text .MathJax, .nta-solution-text mjx-container {
+  color: #0f172a !important;
+  fill: #0f172a !important;
+}
+
+
+/* ========================================================================= */
+/* WATERMARK REMOVER (THRESHOLDING FILTER)                                   */
+/* ========================================================================= */
+/* Watermark remover filter removed */
+
+/* Normalize ExamGoal HTML Content */
+.exam-math-content *, .dashboard-preview-html * {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
+  background-color: transparent !important;
+}
+
+/* Enforce dark black text for light mode Practice Interface */
+.bg-white .exam-math-content *, .bg-gray-50 .exam-math-content * {
+  color: #202124 !important;
+}
+
+/* Enforce light text for dark mode / Dashboard preview cards */
+.bg-\[\#1e1e24\] .exam-math-content *, .bg-\[\#1e1e24\] .dashboard-preview-html *, .bg-\[\#111115\] .dashboard-preview-html * {
+  color: #e5e7eb !important; /* gray-200 */
+}
+
+
+/* Strip inline styles injected by third-party data (ExamGoal) */
+.exam-math-content :not(mjx-container):not(mjx-container *), 
+.dashboard-preview-html :not(mjx-container):not(mjx-container *),
+.nta-q-content :not(mjx-container):not(mjx-container *),
+.nta-option-text :not(mjx-container):not(mjx-container *) {
+  color: inherit !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
+  background-color: transparent !important;
+}
+
+
+/* Fix MathJax rendering broken by global inherited properties */
+mjx-container, mjx-container * {
+  letter-spacing: normal !important;
+  line-height: normal !important;
+  box-sizing: content-box !important;
+  border-color: currentColor !important;
+}
+mjx-container svg {
+  display: inline !important;
+}

@@ -137,6 +137,7 @@ export const Syllabus = mongoose.model('Syllabus', SyllabusSchema);
 const PyqChapterSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   name: { type: String, required: true },
+  exam: { type: String, default: 'JEE Main' },
   subject: { type: String, required: true },
   count: { type: Number, default: 0 },
   weightage: { type: String, default: '5%' }
@@ -145,6 +146,7 @@ const PyqChapterSchema = new mongoose.Schema({
 // PYQ SCHEMA
 const PyqSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
+  exam: { type: String, default: 'JEE Main' },
   chapterId: { type: String, required: true },
   title: { type: String },
   year: { type: String },
@@ -241,3 +243,56 @@ const TestAttemptSchema = new mongoose.Schema({
 
 export const FullTestSeries = mongoose.model('FullTestSeries', FullTestSeriesSchema);
 export const TestAttempt = mongoose.model('TestAttempt', TestAttemptSchema);
+
+// =====================================================
+// BLACK BOOK SCHEMAS
+// =====================================================
+
+const BlackBookQuestionSchema = new mongoose.Schema({
+  chapterId: { type: String, required: true },
+  exerciseName: { type: String, required: true },
+  exerciseNo:   { type: String },
+  questionIndex: { type: Number },
+  text:         { type: String, required: true },
+  options:      [{ type: String }],
+  correctOption:  { type: Number, default: -1 },
+  correctOptionsArray: [{ type: Number }],
+  answerKeyStr: { type: String },
+  solution:     { type: String },
+  has_graph:    { type: Boolean, default: false },
+  imageUrl:     { type: String },
+  typeLabel:    { type: String },
+}, { timestamps: true });
+
+const BlackBookChapterSchema = new mongoose.Schema({
+  id:           { type: String, required: true, unique: true },
+  title:        { type: String, required: true },
+  book:         { type: String, default: 'Black Book' },
+  subject:      { type: String, default: 'Mathematics' },
+  exercises: [{
+    exerciseNo:   String,
+    exerciseName: String,
+    totalQuestions: Number,
+  }],
+  totalQuestions: { type: Number, default: 0 },
+}, { timestamps: true });
+
+const BlackBookProgressSchema = new mongoose.Schema({
+  userId:       { type: String, required: true },
+  chapterId:    { type: String, required: true },
+  exerciseName: { type: String, required: true },
+  questionIndex:{ type: Number, required: true },
+  selectedIdx:  { type: Number, default: -1 },
+  isChecked:    { type: Boolean, default: false },
+  isCorrect:    { type: mongoose.Schema.Types.Mixed },
+  revealed:     { type: Boolean, default: false },
+  seenAt:       { type: Date, default: Date.now },
+}, { timestamps: true });
+BlackBookProgressSchema.index(
+  { userId: 1, chapterId: 1, exerciseName: 1, questionIndex: 1 },
+  { unique: true }
+);
+
+export const BlackBookQuestion = mongoose.model('BlackBookQuestion', BlackBookQuestionSchema);
+export const BlackBookChapter  = mongoose.model('BlackBookChapter',  BlackBookChapterSchema);
+export const BlackBookProgress = mongoose.model('BlackBookProgress', BlackBookProgressSchema);

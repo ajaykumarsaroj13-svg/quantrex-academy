@@ -1,0 +1,58 @@
+Created At: 2026-06-05T08:22:13Z
+Completed At: 2026-06-05T08:22:13Z
+File Path: `file:///C:/Users/Admin/.gemini/antigravity/scratch/quantrexacadmy/src/pages/StudentDashboard.jsx`
+Total Lines: 1096
+Total Bytes: 61557
+Showing lines 1 to 50
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import React, { useState, useEffect } from 'react';
+2: import { BarChart, BookOpen, Clock, PlayCircle, LogOut, CheckCircle, Lock, ShieldCheck, Trophy, Sparkles, Target, ArrowRight, BrainCircuit, FileText, Download, Flame, Send } from 'lucide-react';
+3: import { loadDbFromBlob } from '../blob';
+4: import VideoPlayer from '../components/VideoPlayer';
+5: import PdfViewer from '../components/PdfViewer';
+6: import ExamGoalPracticeInterface from '../components/ExamGoalPracticeInterface';
+7: import ChapterPYQDashboard from '../components/ChapterPYQDashboard';
+8: import { usePYQProgress } from '../hooks/usePYQProgress';
+9: import pyqSetsRelationData from '../../backend/data/test_series/examgoal_pyqs_sets_relation.json';
+10: import testsData from '../utils/testsData2.json';
+11: import advancedTestsData from '../utils/advancedTestsData.json';
+12: 
+13: export default function StudentDashboard({ user, courses, setActivePage, setExamTest, syllabus, initialClass, initialTab, initialChapterTab }) {
+14:   const [tests, setTests] = useState([]);
+15:   const [testCategory, setTestCategory] = useState('jee-mains'); // jee-mains, jee-advanced
+16:   const [activeTab, setActiveTab] = useState(initialTab || 'courses'); // courses, live, tests, ai-analytics, doubts
+17:   const [purchasedList, setPurchasedList] = useState([]);
+18:   
+19:   // Syllabus selection states
+20:   const [selectedSyllabusClass, setSelectedSyllabusClass] = useState(initialClass || 'jee-mains');
+21:   const [selectedSyllabusChapterId, setSelectedSyllabusChapterId] = useState('');
+22:   const [selectedSyllabusSubject, setSelectedSyllabusSubject] = useState('mathematics');
+23:   const [chapterTab, setChapterTab] = useState(initialChapterTab || 'videos'); // videos, pdfs, formulas, pyqs, mockTests
+24:   const [inlinePdf, setInlinePdf] = useState(null);
+25:   const [selectedPyqTopic, setSelectedPyqTopic] = useState(null);
+26:   const [customPracticeQuestions, setCustomPracticeQuestions] = useState(null);
+27: 
+28:   const pyqSetsProgress = usePYQProgress('sets_and_relations');
+29: 
+30:   const hasCourseAccess = (courseKey) => {
+31:     // Make all syllabus courses unlocked and visible to students by default
+32:     return true;
+33:   };
+34: 
+35:   const isResourceUnlocked = (item) => {
+36:     // Everything is free — no locks for any student
+37:     return true;
+38:   };
+39:   
+40:   // Lecture player states
+41:   const [selectedVideo, setSelectedVideo] = useState(null);
+42:   const [selectedCourse, setSelectedCourse] = useState(null);
+43:   const [selectedPdf, setSelectedPdf] = useState(null);
+44:   const [playerTab, setPlayerTab] = useState('video'); // video, notes
+45: 
+46:   
+47:   // AI Doubt Solver states
+48:   const [doubtInput, setDoubtInput] = useState('');
+49:   const [doubtChat, setDoubtChat] = useState([
+50:     { role: 'ai', text: 'Hello! I am your Quantrex AI Math Mentor. Ask me any IIT-JEE Mathematics equation or problem from Calculus, Geometry, or Algebra.' }
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

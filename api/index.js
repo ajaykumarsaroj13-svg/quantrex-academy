@@ -7,8 +7,24 @@ app.use(cors());
 app.use(express.json());
 
 // =============================================
-// MONGOOSE SCHEMAS (matching exact DB structure)
+// MONGOOSE SCHEMAS (inline to avoid path issues)
 // =============================================
+
+const TestSeriesQuestionSchema = new mongoose.Schema({
+  questionNumber: { type: Number, required: true },
+  subject: { type: String, required: true },
+  section: { type: String, default: 'A' },
+  questionText: { type: String, required: true },
+  options: [{ type: String }],
+  correctOption: { type: Number },
+  correctAnswer: { type: String },
+  questionType: { type: String, enum: ['MCQ', 'NUMERICAL'], default: 'MCQ' },
+  marks: { type: Number, default: 4 },
+  negativeMarks: { type: Number, default: -1 },
+  solution: { type: String, default: '' },
+  topic: { type: String, default: 'General' },
+  difficulty: { type: String, default: 'Medium' }
+});
 
 const PyqChapterSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
@@ -47,22 +63,6 @@ const PyqSchema = new mongoose.Schema({
   solution: String
 });
 
-const TestSeriesQuestionSchema = new mongoose.Schema({
-  questionNumber: { type: Number, required: true },
-  subject: { type: String, required: true },
-  section: { type: String, default: 'A' },
-  questionText: { type: String, required: true },
-  options: [{ type: String }],
-  correctOption: { type: Number },
-  correctAnswer: { type: String },
-  questionType: { type: String, enum: ['MCQ', 'NUMERICAL'], default: 'MCQ' },
-  marks: { type: Number, default: 4 },
-  negativeMarks: { type: Number, default: -1 },
-  solution: { type: String, default: '' },
-  topic: { type: String, default: 'General' },
-  difficulty: { type: String, default: 'Medium' }
-});
-
 const FullTestSeriesSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   title: { type: String, required: true },
@@ -99,14 +99,6 @@ async function connectDB() {
   isConnected = true;
 }
 
-// Helper to convert friendly exam name to slug
-function toExamSlug(exam) {
-  if (!exam || exam === 'All') return null;
-  if (exam === 'JEE Main') return 'jee-main';
-  if (exam === 'JEE Advanced') return 'jee-advanced';
-  return exam.toLowerCase().replace(/\s+/g, '-');
-}
-
 // =============================================
 // PYQ (CHAPTERWISE) ROUTES
 // =============================================
@@ -114,22 +106,29 @@ function toExamSlug(exam) {
 app.get('/api/pyqs/chapters', async (req, res) => {
   try {
     await connectDB();
-    const { exam } = req.query;
+    const { exam } = req.query; // e.g. 'JEE Main', 'BITSAT'
+    let examSlug;
     const filter = {};
-    const slug = toExamSlug(exam);
-    if (slug) filter.exams = slug;
-
+    if (exam && exam !== 'All') {
+      examSlug = exam === 'JEE Main' ? 'jee-main' 
+                 : exam === 'JEE Advanced' ? 'jee-advanced' 
+                 : exam.toLowerCase().replace(/\s+/g, '-');
+      filter.exams = examSlug;
+    }
+    
     const chapters = await PyqChapter.find(filter).lean();
     const grouped = { mathematics: [], physics: [], chemistry: [] };
     for (const ch of chapters) {
-      const subj = ch.subject || 'mathematics';
-      if (!grouped[subj]) grouped[subj] = [];
-      grouped[subj].push(ch);
+      if (!grouped[ch.subject]) grouped[ch.subject] = [];
+      grouped[ch.subject].push(ch);
     }
-    // Sort by question count descending
+    
+    // Sort each subject's chapters by questionCount descending
     for (const subj of Object.keys(grouped)) {
       grouped[subj].sort((a, b) => (b.questionCount || 0) - (a.questionCount || 0));
     }
+
+    res.set('Cache-Control', 'public, s-maxage=600, max-age=120, stale-while-revalidate=1200');
     res.json(grouped);
   } catch (e) {
     console.error('[/api/pyqs/chapters] Error:', e.message);
@@ -143,9 +142,15 @@ app.get('/api/pyqs/questions', async (req, res) => {
     const { chapterId, exam } = req.query;
     if (!chapterId) return res.status(400).json({ error: 'chapterId required' });
     const filter = { chapterId };
-    const slug = toExamSlug(exam);
-    if (slug) filter.exam = slug;
+    if (exam && exam !== 'All') {
+      const examSlug = exam === 'JEE Main' ? 'jee-main' 
+                     : exam === 'JEE Advanced' ? 'jee-advanced' 
+                     : exam.toLowerCase().replace(/\s+/g, '-');
+      filter.exam = examSlug;
+    }
     const qs = await Pyq.find(filter).lean();
+    // Cache for 5 min on CDN, 1 min in browser — questions rarely change
+    res.set('Cache-Control', 'public, s-maxage=300, max-age=60, stale-while-revalidate=600');
     res.json(qs);
   } catch (e) {
     console.error('[/api/pyqs/questions] Error:', e.message);
@@ -158,8 +163,11 @@ app.get('/api/pyqs/search', async (req, res) => {
     await connectDB();
     const { q } = req.query;
     if (!q) return res.status(400).json({ error: 'q required' });
-    const words = q.toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ').filter(w => w.length > 3);
+    
+    const targetId = q.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/(^_|_$)/g, '');
+    const words = targetId.split('_').filter(w => w.length > 3);
     if (words.length === 0) return res.json([]);
+
     const conditions = words.map(w => ({ chapterId: { $regex: w, $options: 'i' } }));
     const qs = await Pyq.find({ $or: conditions }).lean();
     res.json(qs);
@@ -173,6 +181,7 @@ app.get('/api/pyqs/search', async (req, res) => {
 // TEST SERIES ROUTES
 // =============================================
 
+// GET all tests (list, no questions)
 app.get('/api/test-series', async (req, res) => {
   try {
     await connectDB();
@@ -192,6 +201,7 @@ app.get('/api/test-series', async (req, res) => {
   }
 });
 
+// GET single test with questions
 app.get('/api/test-series/:id', async (req, res) => {
   try {
     await connectDB();
@@ -204,6 +214,7 @@ app.get('/api/test-series/:id', async (req, res) => {
   }
 });
 
+// POST submit test
 app.post('/api/test-series/:id/submit', async (req, res) => {
   try {
     await connectDB();
@@ -231,9 +242,10 @@ app.post('/api/test-series/:id/submit', async (req, res) => {
         else { skipped++; }
       }
 
-      if (q.subject === 'Physics') physicsScore += marksAwarded;
-      else if (q.subject === 'Chemistry') chemScore += marksAwarded;
-      else if (q.subject === 'Mathematics') mathScore += marksAwarded;
+      const subScore = marksAwarded;
+      if (q.subject === 'Physics') physicsScore += subScore;
+      else if (q.subject === 'Chemistry') chemScore += subScore;
+      else if (q.subject === 'Mathematics') mathScore += subScore;
 
       return { questionNumber: q.questionNumber, subject: q.subject, userAnswer, isCorrect, marksAwarded, correctOption: q.correctOption, correctAnswer: q.correctAnswer };
     });
@@ -254,7 +266,7 @@ app.post('/api/test-series/:id/submit', async (req, res) => {
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString(), version: 'v3-root-api-fix' });
+  res.json({ status: 'ok', timestamp: new Date().toISOString(), version: 'v2-schema-fix' });
 });
 
 export default app;

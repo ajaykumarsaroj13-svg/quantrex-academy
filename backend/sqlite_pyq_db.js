@@ -1,5 +1,4 @@
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
+import { createClient } from '@libsql/client';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -9,16 +8,29 @@ const __dirname = path.dirname(__filename);
 
 const dbPath = path.join(__dirname, 'data', 'pyqs.sqlite');
 
-let dbPromise = null;
+let client = null;
 
 export async function getDb() {
-  if (!dbPromise) {
-    dbPromise = open({
-      filename: dbPath,
-      driver: sqlite3.Database, mode: process.env.VERCEL ? sqlite3.OPEN_READONLY : undefined
-    });
+  if (!client) {
+    client = createClient({ url: 'file:' + dbPath });
   }
-  return dbPromise;
+  return {
+    get: async (sql, args) => {
+      const rs = await client.execute({ sql, args: args || [] });
+      return rs.rows[0];
+    },
+    all: async (sql, args) => {
+      const rs = await client.execute({ sql, args: args || [] });
+      return rs.rows;
+    },
+    exec: async (sql) => client.executeMultiple(sql),
+    prepare: async (sql) => {
+      return {
+        run: async (...args) => client.execute({ sql, args }),
+        finalize: async () => {}
+      };
+    }
+  };
 }
 
 export async function initializePyqDb() {

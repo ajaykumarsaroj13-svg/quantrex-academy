@@ -1,128 +1,93 @@
-import os
-import sys
 import fitz
+import requests
 import json
+import base64
 import time
-import google.generativeai as genai
-from pydantic import BaseModel
-from PIL import Image
-import io
+import os
 
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-model = genai.GenerativeModel('gemini-2.5-flash')
+API_KEY = 'AQ.Ab8RN6K29KzZs6qrxfgiRK-ScGo5TDyjPqpmNy-mCt6hRtMQ5g'
+url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={API_KEY}'
 
-class Question(BaseModel):
-    id: str
-    text: str
-    options: list[str]
-    correctOption: int
-    solution: str
-    questionType: str
-
-class ExtractionResult(BaseModel):
-    is_new_chapter: bool
-    chapter_title: str
-    questions: list[Question]
-
-def extract_page(doc, page_num):
-    page = doc.load_page(page_num)
-    pix = page.get_pixmap(dpi=150)
-    img = Image.open(io.BytesIO(pix.tobytes("png")))
-
-    prompt = """
-    Extract all math questions from this page.
-    Format the output as JSON.
-    Important instructions:
-    1. Use LaTeX for ALL math formulas and symbols. Wrap inline math in $...$.
-    2. For options, put the full text. If no correct option is marked, use -1. Leave solution empty string if none is provided.
-    3. questionType: Identify if the question is "Single Correct", "More than One Correct", "Comprehension", "Matrix Match" etc based on the section header. You MUST include this information in the questionType field for EVERY question exactly as it's categorized in the book.
-    4. Detect if this page contains the START of a new chapter. The chapter title should be exact like "Chapter 1: Functions" or "Chapter 2: Limits".
-       If it does, set is_new_chapter to true and provide the chapter_title.
-    """
+def extract_page(page_num, doc):
+    print(f'Processing page {page_num}...')
+    pix = doc[page_num].get_pixmap(matrix=fitz.Matrix(2, 2))
+    img_data = pix.tobytes('png')
+    img_b64 = base64.b64encode(img_data).decode('utf-8')
     
-    max_retries = 10
-    base_wait = 15
-    for attempt in range(max_retries):
-        try:
-            resp = model.generate_content(
-                [prompt, img], 
-                generation_config=genai.GenerationConfig(
-                    response_mime_type="application/json", 
-                    response_schema=ExtractionResult
-                )
-            )
-            return json.loads(resp.text)
-        except Exception as e:
-            err_msg = str(e)
-            print(f"Error on page {page_num} (attempt {attempt+1}): {err_msg}")
-            if "429" in err_msg or "Quota exceeded" in err_msg:
-                wait_time = base_wait * (attempt + 1)
-                print(f"Rate limited. Waiting for {wait_time} seconds...")
-                time.sleep(wait_time)
-            else:
-                raise e
-    return None
-
-if __name__ == "__main__":
-    if len(sys.argv) < 5:
-        print("Usage: python extract_all.py <pdf_path> <start_page> <end_page> <output_json>")
-        sys.exit(1)
-
-    pdf_path = sys.argv[1]
-    start_page = int(sys.argv[2])
-    end_page = int(sys.argv[3])
-    output_json = sys.argv[4]
-
-    doc = fitz.open(pdf_path)
+    prompt = '''
+You are an expert at extracting mathematical questions from textbook pages.
+Extract ALL the questions from this image into a JSON array.
+Use standard LaTeX/MathJax for all mathematical formulas, enclosed in single dollar signs $ for inline math, and  for block math. Do not use \( or \). 
+Convert any text like 'Exercise-1 : Single Choice Problems' to set the exercise context for the following questions.
+For each question, return a JSON object with this exact schema:
+{
+  "questionNumber": <integer>,
+  "questionType": <string> (e.g., "SINGLE CORRECT", "MULTIPLE CORRECT", "COMPREHENSION", "MATCH THE COLUMN", "SUBJECTIVE TYPE"),
+  "text": <string> (The question text with MathJax),
+  "options": <array of strings> (The 4 options A,B,C,D if present, with MathJax. Leave empty [] if it is subjective/matching),
+  "exerciseName": <string> (e.g., "Exercise 1", "Exercise 2", etc.),
+  "has_graph": false,
+  "chapter": "Functions"
+}
+For "MATCH THE COLUMN" questions, format the text exactly like this:
+"Match Column-I with Column-II. Column-I: (A) ... ; (B) ... Column-II: (P) ... ; (Q) ..."
+For answer keys (if there is an Answers table), DO NOT extract them as questions. Instead, if you see an Answers table, extract it as a single JSON object in the array with a special field:
+{
+  "isAnswerKey": true,
+  "answers": {"1": "b", "2": "c", "3": "a,b,c", ...} 
+}
+Return ONLY the raw JSON array of objects without any markdown formatting like \\\json.
+'''
     
-    # Load existing if available so we don't start from scratch and can resume
-    if os.path.exists(output_json):
-        try:
-            with open(output_json, "r", encoding="utf-8") as f:
-                all_chapters = json.load(f)
-        except:
-            all_chapters = []
-    else:
-        all_chapters = []
-
-    current_chapter = all_chapters[-1] if all_chapters else None
-    
-    for p_num in range(start_page, end_page + 1):
-        print(f"Processing page {p_num}...")
-        result = extract_page(doc, p_num)
-        
-        if result:
-            if result.get("is_new_chapter") or not current_chapter:
-                title = result.get("chapter_title") or f"Chapter {len(all_chapters) + 1}"
-                if current_chapter and current_chapter["title"].lower() == title.lower():
-                    # Same chapter name, ignore new chapter signal
-                    pass
-                else:
-                    current_chapter = {
-                        "id": f"ch_{len(all_chapters) + 1}",
-                        "title": title,
-                        "questions": []
+    payload = {
+        "contents": [{
+            "parts": [
+                {"text": prompt},
+                {
+                    "inline_data": {
+                        "mime_type": "image/png",
+                        "data": img_b64
                     }
-                    all_chapters.append(current_chapter)
-                    print(f"Found new chapter: {title}")
-            
-            qs = result.get("questions", [])
-            added = 0
-            for q in qs:
-                # Check for duplicates based on the first 30 chars of the text
-                is_duplicate = False
-                prefix = q["text"][:30]
-                for existing_q in current_chapter["questions"]:
-                    if existing_q["text"][:30] == prefix:
-                        is_duplicate = True
-                        break
-                
-                if not is_duplicate:
-                    q['id'] = f"q{len(current_chapter['questions']) + 1}"
-                    current_chapter["questions"].append(q)
-                    added += 1
-            print(f"Extracted {len(qs)} questions, {added} were new (no repeats).")
-                
-            # Save progress after every page
-            with open(output_json, "w", encoding="utf-8") as f:
-                json.dump(all_chapters, f, indent=2, ensure_ascii=False)
+                }
+            ]
+        }],
+        "generationConfig": {
+            "temperature": 0.1
+        }
+    }
+    
+    retries = 3
+    for attempt in range(retries):
+        try:
+            resp = requests.post(url, json=payload, headers={'Content-Type': 'application/json'})
+            if resp.status_code == 200:
+                res_json = resp.json()
+                text_res = res_json['candidates'][0]['content']['parts'][0]['text']
+                text_res = text_res.strip().removeprefix('`json').removesuffix('`').strip()
+                try:
+                    return json.loads(text_res)
+                except json.JSONDecodeError:
+                    print(f'JSON decode error on page {page_num}')
+                    return []
+            else:
+                print(f'API error {resp.status_code}: {resp.text[:200]}')
+                time.sleep(2)
+        except Exception as e:
+            print(f'Error on page {page_num}: {e}')
+            time.sleep(2)
+    return []
+
+doc = fitz.open('C:/Users/Admin/Downloads/function back boook.pdf')
+
+all_data = []
+# Pages 5 to 30 (0-indexed, so 5 to 30)
+for i in range(5, 31):
+    res = extract_page(i, doc)
+    if res:
+        all_data.extend(res)
+    time.sleep(1) # small delay
+
+with open('extracted_full.json', 'w', encoding='utf-8') as f:
+    json.dump(all_data, f, indent=2)
+
+print('Extraction complete!')

@@ -20,10 +20,7 @@ async function migrate() {
   await mongoose.connect(process.env.MONGODB_URI);
   console.log('Connected!');
 
-  let dataPath = path.join(__dirname, '..', 'src', 'utils', 'dummyPyqsData.json');
-  if (!fs.existsSync(dataPath)) {
-    dataPath = path.join(__dirname, '..', 'frontend', 'src', 'utils', 'dummyPyqsData.json');
-  }
+  const dataPath = path.join(__dirname, '..', 'src', 'utils', 'dummyPyqsData.json');
   console.log(`Reading data from ${dataPath}...`);
   const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
