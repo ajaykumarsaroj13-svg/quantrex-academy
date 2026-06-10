@@ -1,0 +1,295 @@
+{
+  "testId": "tst-19g61moed74zu",
+  "title": "Probability Test - 2 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "xg4cskgCDB8Bot3s",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "A ship is fitted with three engines $${E_1},{E_2}$$ and $${E_3}$$. The engines function independently of each other with respective probabilities $${1 \\over 2},{1 \\over 4}$$ and $${1 \\over 4}$$. For the ship to be operational at least two of its engines must function. Let $$X$$ denote the event that the ship is operational and Let $${X_1},{X_2}$$ and $${X_3}$$ denote respectively the events that the engines $${E_1},{E_2}$$ and $${E_3}$$ are functioning. Which of the following is (are) true?",
+      "options": [
+        "$$P\\left[ {X_1^c|X} \\right] = {3 \\over {16}}$$ ",
+        "$$P$$ [exactly two engines of the ship are functioning $$\\left. {|X} \\right] = {7 \\over 8}$$ ",
+        "$$P\\left[ {X|{X_2}} \\right] = {5 \\over {16}}$$ ",
+        "$$P\\left[ {X|{X_1}} \\right] = {7 \\over {16}}$$ "
+      ],
+      "correctOption": 3,
+      "solution": "<p>$$\\begin{array}{r}\n\\text { Given, } \\mathrm{P}\\left(\\mathrm{X}_1\\right)=\\frac{1}{2} \\Rightarrow \\mathrm{P}\\left(\\overline{\\mathrm{X}}_1\\right)=1-\\frac{1}{2}=\\frac{1}{2} \\\\\n\\mathrm{P}\\left(\\mathrm{X}_2\\right)=\\frac{1}{4} \\Rightarrow \\mathrm{P}\\left(\\bar{X}_2\\right)=1-\\frac{1}{4}=\\frac{3}{4} \\\\\n\\mathrm{P}\\left(\\mathrm{X}_3\\right)=\\frac{1}{4} \\Rightarrow \\mathrm{P}\\left(\\bar{X}_3\\right)=1-\\frac{1}{4}=\\frac{3}{4}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\text { Now, } P(X)=P\\left(E_1 E_2 E_3\\right)+P\\left(\\bar{E}_1 E_2 E_3\\right)+P\\left(E_1\\right. \\\\\n& \\left.\\overline{\\mathrm{E}}_2 \\mathrm{E}_3\\right)+\\mathrm{P}\\left(\\mathrm{E}_1 \\mathrm{E}_2 \\overline{\\mathrm{E}}_3\\right) \\\\\n& =\\frac{1}{2} \\cdot \\frac{1}{4} \\cdot \\frac{1}{4}+\\frac{1}{2} \\cdot \\frac{1}{4} \\cdot \\frac{1}{4}+\\frac{1}{2} \\cdot \\frac{3}{4} \\cdot \\frac{1}{4}+\\frac{1}{2} \\cdot \\frac{1}{4} \\cdot \\frac{3}{4} \\\\\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& P(X)=\\frac{1}{32}+\\frac{1}{32}+\\frac{3}{32}+\\frac{3}{32} \\\\\n& P(X)=\\frac{1}{4}\n\\end{aligned}$$</p>\n<p>(i) $$\\mathrm{P}\\left(\\frac{\\mathrm{X}_1^c}{\\mathrm{X}}\\right)=\\frac{\\mathrm{P}\\left(\\mathrm{X}_1^c \\cap \\mathrm{X}\\right)}{\\mathrm{P}(\\mathrm{X})}$$</p>\n<p>Now, $$X_1^c \\cap X$$ indicates the event that the ship is operational but $$\\mathrm{E}_1$$ is not functioning.</p>\n<p>$$\\begin{aligned}\n& \\therefore \\quad \\mathrm{P}\\left(\\mathrm{X}_1^c \\cap \\mathrm{X}\\right)=\\frac{1}{2} \\times \\frac{1}{4} \\times \\frac{1}{4}=\\frac{1}{32} \\\\\n& \\therefore \\mathrm{P}\\left(\\frac{\\mathrm{X}_1^c}{\\mathrm{X}}\\right)=\\frac{\\frac{1}{32}}{\\frac{1}{4}}=\\frac{1}{8}\n\\end{aligned}$$</p>\n<p>(ii) P (Exactly two engines of the ship are functioning $$\\mid X$$)</p>\n<p>$$\\begin{aligned}\n& =\\frac{\\mathrm{P}\\left(\\overline{\\mathrm{E}}_1 \\mathrm{E}_2 \\mathrm{E}_3\\right)+\\mathrm{P}\\left(\\mathrm{E}_1 \\overline{\\mathrm{E}}_2 \\mathrm{E}_3\\right)+1\\left(\\mathrm{E}_1 \\mathrm{E}_2 \\overline{\\mathrm{E}}_3\\right)}{\\mathrm{P}(\\mathrm{X})} \\\\\n& =\\frac{\\frac{1}{2} \\times \\frac{1}{4} \\times \\frac{1}{4}+\\frac{1}{2} \\times \\frac{3}{4} \\times \\frac{1}{4}+\\frac{1}{2} \\times \\frac{1}{4} \\times \\frac{3}{4}}{\\frac{1}{4}} \\\\\n& =\\frac{7}{8}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { (iii) } & P\\left(X \\mid X_2\\right)=\\frac{P\\left(X \\cap X_2\\right)}{P\\left(X_2\\right)} \\\\\n& =\\frac{P\\left(E_1 E_2 E_3\\right)+P\\left(\\bar{E}_1 E_2 E_3\\right)+P\\left(E_1 E_2 \\bar{E}_3\\right)}{P\\left(X_2\\right)} \\\\\n& =\\frac{\\frac{1}{2} \\times \\frac{1}{4} \\times \\frac{1}{4}+\\frac{1}{2} \\times \\frac{1}{4} \\times \\frac{1}{4}+\\frac{1}{2} \\times \\frac{1}{4} \\times \\frac{3}{4}}{\\frac{1}{4}} \\\\\n& =\\frac{5}{8}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { (iv) } & P\\left(X \\mid X_1\\right)=\\frac{P\\left(X \\cap X_1\\right)}{P\\left(X_1\\right)} \\\\\n= & \\frac{P\\left(E_1 E_2 E_3\\right)+P\\left(E_1 \\bar{E}_2 E_3\\right)+P\\left(E_1 E_2 \\bar{E}_3\\right)}{P\\left(X_1\\right)} \\\\\n= & \\frac{\\frac{1}{2} \\times \\frac{1}{4} \\times \\frac{1}{4}+\\frac{1}{2} \\times \\frac{3}{4} \\times \\frac{1}{4}+\\frac{1}{2} \\times \\frac{1}{4} \\times \\frac{3}{4}}{\\frac{1}{2}} \\\\\n= & \\frac{7}{16}\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "tlme8nbczy",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.1389em;\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span><span class=\"mrel\">=</span></span><span class=\"base\"><span class=\"mord\">1/3</span></span></span></span>, <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.1389em;\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right: 0.0502em;\">B</span><span class=\"mclose\">)</span><span class=\"mrel\">=</span></span><span class=\"base\"><span class=\"mord\">1/2</span></span></span></span> and <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.1389em;\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mbin\">∩</span></span><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.0502em;\">B</span><span class=\"mclose\">)</span><span class=\"mrel\">=</span></span><span class=\"base\"><span class=\"mord\">1/4</span></span></span></span>, then what is the value of <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.1389em;\">P</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">A|</span><span class=\"mord mathnormal\" style=\"margin-right: 0.0502em;\">B</span><sup><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8413em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right: 0.0715em;\">C</span></span></span></span></span></span></span></sup></span><span class=\"mclose\">)</span></span></span></span>?",
+      "options": [
+        "1/8",
+        "3/8",
+        "5/8",
+        "7/8"
+      ],
+      "correctOption": 1,
+      "solution": "<p>We know these probabilities:</p>\n<p><span class=\"math-tex\">$ P(A) = \\frac{1}{3} $</span></p>\n<p><span class=\"math-tex\">$ P(B) = \\frac{1}{2} $</span></p>\n<p><span class=\"math-tex\">$ P(A \\cap B) = \\frac{1}{4} $</span></p>\n<p>We want to find the probability <span class=\"math-tex\">$ P(B \\mid A^{C}) $</span>.</p>\n<p>By the conditional probability formula:</p>\n<p><span class=\"math-tex\">$ P(B \\mid A^C) = \\frac{P(B) - P(A \\cap B)}{1 - P(A)} $</span></p>\n<p>Substitute the given values:</p>\n<p><span class=\"math-tex\">$ P(B \\mid A^C) = \\frac{\\frac{1}{2} - \\frac{1}{4}}{1 - \\frac{1}{3}} $</span></p>\n<p>Compute the numerator:</p>\n<p><span class=\"math-tex\">$ \\frac{1}{2} - \\frac{1}{4} = \\frac{2}{4} - \\frac{1}{4} = \\frac{1}{4} $</span></p>\n<p>Compute the denominator:</p>\n<p><span class=\"math-tex\">$ 1 - \\frac{1}{3} = \\frac{3}{3} - \\frac{1}{3} = \\frac{2}{3} $</span></p>\n<p>Now divide:</p>\n<p><span class=\"math-tex\">$ P(B \\mid A^C) = \\frac{\\frac{1}{4}}{\\frac{2}{3}} = \\frac{1}{4} \\times \\frac{3}{2} = \\frac{3}{8} $</span></p>\n<p><b>Hence, the correct answer is Option B.</b></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Probability"
+    },
+    {
+      "id": "wcFmUM2A9VVSs7CPqj7k9k2k5gz74fk",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let A and B be two independent events such\nthat<br> P(A) = $${1 \\over 3}$$ and P(B) = $${1 \\over 6}$$.<br> Then, which of\nthe following is TRUE?",
+      "options": [
+        "$$P\\left( {{A \\over {A \\cup B}}} \\right) = {1 \\over 4}$$",
+        "$$P\\left( {{A \\over B}} \\right) = {2 \\over 3}$$",
+        "$$P\\left( {{{A'} \\over {B'}}} \\right) = {1 \\over 3}$$",
+        "$$P\\left( {{A \\over {B'}}} \\right) = {1 \\over 3}$$"
+      ],
+      "correctOption": 3,
+      "solution": "Given  P(A) = $${1 \\over 3}$$ and P(B) = $${1 \\over 6}$$\n<br><br>A and B are independent\n<br><br>So P(A$$ \\cap $$B) = $${1 \\over 3} \\times {1 \\over 6}$$ = $${1 \\over {18}}$$\n<br><br>P(A$$ \\cup $$B) =  P(A) + P(B) – P(A $$ \\cap $$ B)\n<br><br>= $${1 \\over 3}$$ + $${1 \\over 6}$$ - $${1 \\over {18}}$$\n<br><br>= $${4 \\over 9}$$\n<br><br>$$P\\left( {{A \\over {B'}}} \\right)$$\n<br><br>= $${{P\\left( {A \\cap B'} \\right)} \\over {P\\left( {B'} \\right)}}$$\n<br><br>= $${{P\\left( A \\right) - P\\left( {A \\cap B} \\right)} \\over {1 - P\\left( B \\right)}}$$\n<br><br>= $${{{1 \\over 3} - {1 \\over {18}}} \\over {1 - {1 \\over 6}}}$$ = $${{1 \\over 3}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "izhPmlaiTmaj8SvcuP7k9k2k5khcyom",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If 10 different balls are to be placed in 4 distinct\nboxes at random, then the probability that two\nof these boxes contain exactly 2 and 3 balls is :",
+      "options": [
+        "$${{965} \\over {{2^{11}}}}$$",
+        "$${{965} \\over {{2^{10}}}}$$",
+        "$${{945} \\over {{2^{11}}}}$$",
+        "$${{945} \\over {{2^{10}}}}$$"
+      ],
+      "correctOption": 3,
+      "solution": "Total ways of distribution = 4<sup>10</sup> = 2<sup>20</sup>\n<br><br>Number of ways selecting two boxes out of four = <sup>4</sup>C<sub>2</sub>\n<br><br>Then number of ways selecting 5 balls out of 10 = <sup>10</sup>C<sub>5</sub>\n<br><br>Then no of ways of distributing 5 balls into two groups of 2 balls and 3 balls = <sup>5</sup>C<sub>3</sub>.2!\n<br><br>Then number of ways to distributing remaining balls into two boxes = 2<sup>5</sup>\n<br><br>Number of ways placing exactly 2 and 3 balls in two of these boxes \n<br><br>= <sup>4</sup>C<sub>2</sub> $$ \\times $$ <sup>10</sup>C<sub>5</sub> $$ \\times $$ <sup>5</sup>C<sub>3</sub>.2! $$ \\times $$ 2<sup>5</sup>\n<br><br>= $${{{{6.252.10.2.2}^5}} \\over {{2^{20}}}}$$\n<br><br>= $${{945} \\over {{2^{10}}}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "mnsik7q9",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>A bag contains 6 blue and 6 green balls. Pairs of balls are drawn without replacement until the bag is empty. The probability that each drawn pair consists of one blue and one green ball is :</p>\n",
+      "options": [
+        "<p>$\\frac{63}{925}$</p>\n",
+        "<p>$\\frac{17}{231}$</p>\n",
+        "<p>$\\frac{16}{231}$</p>\n",
+        "<p>$\\frac{64}{925}$</p>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>We want every pair drawn to have <b>one blue</b> and <b>one green</b>. Since there are 6 blue and 6 green balls, we will draw a total of 6 pairs.</p>\n<p>For each pair to be mixed (one of each colour), we must match the 6 blue balls with the 6 green balls in pairs. The number of such “good” pairings is counted by choosing and matching one ball of one colour with one ball of the other colour.</p>\n<p>The total number of ways to split 12 balls into 6 pairs (without caring about the order of drawing inside a pair) is counted separately. The required probability is:</p>\n<p>Probability $=\\frac{\\lfloor 6 \\times\\lfloor 6}{\\left(\\frac{12}{\\left(\\lfloor 2)^6\\lfloor 6\\right.}\\right) \\times\\lfloor 6}=\\frac{16}{231}$</p>\n<p>So, the probability that each drawn pair consists of one blue and one green ball is $\\frac{16}{231}$.</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "1l55iov0n",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The probability that a randomly chosen one-one function from the set {a, b, c, d} to the set {1, 2, 3, 4, 5} satisfies f(a) + 2f(b) $$-$$ f(c) = f(d) is :</p>",
+      "options": [
+        "$${1 \\over {24}}$$",
+        "$${1 \\over {40}}$$",
+        "$${1 \\over {30}}$$",
+        "$${1 \\over {20}}$$"
+      ],
+      "correctOption": 3,
+      "solution": "Number of one-one function from $\\{a, b, c, d\\}$ to set $\\{1,2,3,4,5\\}$ is ${ }^{5} P_{4}=120 n(s)$.\n<br/><br/>\nThe required possible set of value (f(a), $f(b), f(c), f(d))$ such that $f(a)+2 f(b)-f(c)=f(d)$ are $(5,3,2,1),(5,1,2,3),(4,1,3,5),(3,1,4,5)$, $(5,4,3,2)$ and $(3,4,5,2)$\n<br/><br/>\n$\\therefore n(E)=6$\n<br/><br/>\n$\\therefore $ Required probability $=\\frac{n(E)}{n(S)}=\\frac{6}{120}=\\frac{1}{20}$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "tlmnk0kpnv",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The probability that a family owns a laptop is 0.68; that it also owns a desktop is 0.56. If the probability that it owns both is 0.48, then what is the probability that a randomly selected family owns a laptop or a desktop?",
+      "options": [
+        "<span style=\"\">0.80</span>",
+        "<span style=\"\">&nbsp;0.76</span>",
+        "<span style=\"\">0.36</span>",
+        "<span style=\"\">&nbsp;0.28</span>"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Let</p>\n<ul>\n<li><p>$P(L) = 0.68$ be the probability that a family owns a laptop</p></li>\n<li><p>$P(D) = 0.56$ be the probability that a family owns a desktop</p></li>\n<li><p>$P(L \\cap D) = 0.48$ be the probability that a family owns both</p></li>\n</ul>\n<p>We have to find the probability that a family owns a laptop or a desktop, that is $P(L \\cup D)$.</p>\n<p>Using the formula:</p>\n<p>$$ P(L \\cup D) = P(L) + P(D) - P(L \\cap D) $$</p>\n<p>Substitute the values:</p>\n<p>$$ P(L \\cup D) = 0.68 + 0.56 - 0.48 $$</p>\n<p>$$ P(L \\cup D) = 1.24 - 0.48 = 0.76 $$</p>\n<p>So, the required probability is:</p>\n<p>$$ \\boxed{0.76} $$</p>\n<p>Hence, the correct option is Option 2.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Probability"
+    },
+    {
+      "id": "ys2abeQH99za49tLBzsHL",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "A box 'A' contains $$2$$ white, $$3$$ red and $$2$$ black balls. Another box 'B' contains $$4$$ white, $$2$$ red and $$3$$ black balls. If two balls are drawn at random, without eplacement, from a randomly selected box and one ball turns out to be white while the other ball turns out to be red,  then the probability that both balls are drawn from box 'B' is : ",
+      "options": [
+        "$${9 \\over {16}}$$ ",
+        "$${7 \\over {16}}$$",
+        "$${9 \\over {32}}$$",
+        "$${7 \\over {8}}$$"
+      ],
+      "correctOption": 1,
+      "solution": "Probability of drawing a white ball and then a red ball \n<br><br>from bag  B is given by \n$${{{}^4{C_1} \\times {}^2{C_1}} \\over {{}^9{C_2}}}$$ = $${2 \\over 9}$$\n<br><br>Probability of drawing a white ball and then a red ball \n<br><br>from bag A is given by $${{{}^2{C_1} \\times {}^3{C_1}} \\over {{}^7{C_2}}}$$ = $${2 \\over 7}$$\n<br><br>Hence, the probability of drawing a white ball and then \n<br><br>a red ball from bag B = $${{{2 \\over 9}} \\over {{2 \\over 7} + {2 \\over 9}}}$$ = $${{2 \\times 7} \\over {18 + 14}}$$ = $${7 \\over {16}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "aXHQRXYYpHINc0geBR1kls3ppy8",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "When a missile is fired from a ship, the probability that it is intercepted is $${1 \\over 3}$$ and the probability that the missile hits the target, given that it is not intercepted, is $${3 \\over 4}$$. If three missiles are fired independently from the ship, then the probability that all three hit the target, is :",
+      "options": [
+        "$${3 \\over 4}$$",
+        "$${3 \\over 8}$$",
+        "$${1 \\over 27}$$",
+        "$${1 \\over 8}$$"
+      ],
+      "correctOption": 3,
+      "solution": "Probability of not getting intercepted = $${2 \\over 3}$$<br><br>When it is not intercepted, probability of missile hitting target = $${3 \\over 4}$$<br><br>$$\\therefore$$ So when such 3 missiles launched\nthen P (all 3 hitting the target) \n<br><br>= $${\\left( {{2 \\over 3} \\times {3 \\over 4}} \\right)} $$ $$ \\times $$ $${\\left( {{2 \\over 3} \\times {3 \\over 4}} \\right)} $$ $$ \\times $$ $${\\left( {{2 \\over 3} \\times {3 \\over 4}} \\right)} $$  \n\n<br><br>$$= {1 \\over 8}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "m9gxgeou",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If the probability that the random variable $X$ takes the value $x$ is given by</p>\n<p>$P(X=x)=k(x+1) 3^{-x}, x=0,1,2,3 \\ldots$, where $k$ is a constant, then $P(X \\geq 3)$ is equal to </p>",
+      "options": [
+        "$\\frac{1}{9}$\n",
+        "$\\frac{8}{27}$\n",
+        "$\\frac{7}{27}$\n",
+        "$\\frac{4}{9}$"
+      ],
+      "correctOption": 0,
+      "solution": "<p>To find $ P(X \\geq 3) $, we first determine the constant $ k $ using the total probability for $ X $.</p>\n<p>The probability $ P(X = x) $ is given by:</p>\n<p>$ P(X = x) = k(x+1) \\cdot 3^{-x}, \\quad x = 0, 1, 2, 3, \\ldots $</p>\n<p>The total probability must equal 1:</p>\n<p>$ s = \\sum_{x = 0}^{\\infty} k(x+1) \\cdot 3^{-x} $</p>\n<p>Calculating that series:</p>\n<p>$ s = \\frac{k}{3^0} + \\frac{2k}{3} + \\frac{3k}{3^2} + \\ldots $</p>\n<p>Therefore, dividing the series by 3:</p>\n<p>$ \\frac{s}{3} = \\frac{k}{3} + \\frac{2k}{3^2} + \\ldots $</p>\n<p>Subtracting these:</p>\n<p>$ s - \\frac{s}{3} = k + \\frac{k}{3} + \\frac{k}{3^2} + \\ldots $</p>\n<p>The resulting series is a geometric series:</p>\n<p>$ \\frac{2s}{3} = k \\left( 1 + \\frac{1}{3} + \\frac{1}{3^2} + \\ldots \\right) $</p>\n<p>The sum of the infinite geometric series is:</p>\n<p>$ \\frac{2s}{3} = k \\cdot \\frac{1}{1-\\frac{1}{3}} = \\frac{3k}{2} $</p>\n<p>Equating:</p>\n<p>$ s = \\frac{9k}{4} = 1 $</p>\n<p>Thus, solving for $ k $:</p>\n<p>$ k = \\frac{4}{9} $</p>\n<p>Next, compute $ P(X \\geq 3) $:</p>\n<p>$ P(X \\geq 3) = 1 - (P(X = 0) + P(X = 1) + P(X = 2)) $</p>\n<p>Calculating these:</p>\n<p>$ P(X = 0) = k = \\frac{4}{9} $</p>\n<p>$ P(X = 1) = \\frac{2k}{3} = \\frac{8}{27} $</p>\n<p>$ P(X = 2) = \\frac{3k}{9} = \\frac{4}{27} $</p>\n<p>Adding these probabilities:</p>\n<p>$ P(X = 0) + P(X = 1) + P(X = 2) = \\frac{4}{9} + \\frac{8}{27} + \\frac{4}{27} = \\frac{8}{9} $</p>\n<p>Finally, calculate $ P(X \\geq 3) $:</p>\n<p>$ P(X \\geq 3) = 1 - \\frac{8}{9} = \\frac{1}{9} $</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "8pKDwjndu91hVdqw",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "An urn contains nine balls of which three are red, four are blue and two are green. Three balls are drawn at random without replacement from the urn.  The probability that the three balls have different colours is :",
+      "options": [
+        "$${2 \\over 7}$$",
+        "$${1 \\over 21}$$",
+        "$${1 \\over 23}$$",
+        "$${1 \\over 3}$$"
+      ],
+      "correctOption": 0,
+      "solution": "Out of nine balls three balls can be chosen = $${}^9{C_3}$$ ways\n<br><br>$$\\therefore$$ Sample space = $${}^9{C_3}$$ = $${{9!} \\over {3!6!}}$$ = $${{9 \\times 8 \\times 7} \\over 6}$$ = 84\n<br><br>According to the question, all three ball should be different. So out of 3 red balls 1 is chosen and out of 4 blue 1 is chosen and out of 2 green 1 is chosen.\n<br><br>$$\\therefore$$ Total cases = $${}^3{C_1} \\times {}^4{C_1} \\times {}^2{C_1}$$ = 3 $$ \\times $$ 4 $$ \\times $$ 2 = 24\n<br><br>$$\\therefore$$ Probability = $${{24} \\over {84}}$$ = $${{2} \\over {7}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "9tucb0kVsi88la1U",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "It is given that the events $$A$$ and $$B$$ are such that \n<br>$$P\\left( A \\right) = {1 \\over 4},P\\left( {A|B} \\right) = {1 \\over 2}$$ and $$P\\left( {B|A} \\right) = {2 \\over 3}.$$ Then $$P(B)$$ is :",
+      "options": [
+        "$${1 \\over 6}$$",
+        "$${1 \\over 3}$$",
+        "$${2 \\over 3}$$",
+        "$${1 \\over 2}$$"
+      ],
+      "correctOption": 1,
+      "solution": "Given that,\n<br><br>$$P\\left( {{A \\over B}} \\right) = {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $${{P\\left( {A \\cap B} \\right)} \\over {P\\left( B \\right)}}$$ = $${1 \\over 2}$$.............. equation (1)\n<br><br>$$P\\left( {{B \\over A}} \\right) = {2 \\over 3}$$\n<br><br>$$ \\Rightarrow $$ $${{P\\left( {A \\cap B} \\right)} \\over {P\\left( A \\right)}}$$ = $${2 \\over 3}$$.............. equation (2)\n<br><br>Dividing equation (1) by equation (2) we get,\n<br><br>$${{P\\left( A \\right)} \\over {P\\left( B \\right)}}$$ = $${3 \\over 4}$$\n<br><br>$$ \\Rightarrow $$ $${P\\left( B \\right)}$$ = $${4 \\over 3}$$ $$ \\times $$ $${P\\left( A \\right)}$$\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $${4 \\over 3}$$ $$ \\times $$ $${1 \\over 4}$$\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $${1 \\over 3}$$\n<br><br>$$\\therefore$$ Option (B) is correct.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "1l6givpji",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$\\mathrm{E}_{1}, \\mathrm{E}_{2}, \\mathrm{E}_{3}$$ be three mutually exclusive events such that $$\\mathrm{P}\\left(\\mathrm{E}_{1}\\right)=\\frac{2+3 \\mathrm{p}}{6}, \\mathrm{P}\\left(\\mathrm{E}_{2}\\right)=\\frac{2-\\mathrm{p}}{8}$$ and $$\\mathrm{P}\\left(\\mathrm{E}_{3}\\right)=\\frac{1-\\mathrm{p}}{2}$$. If the maximum and minimum values of $$\\mathrm{p}$$ are $$\\mathrm{p}_{1}$$ and $$\\mathrm{p}_{2}$$, then $$\\left(\\mathrm{p}_{1}+\\mathrm{p}_{2}\\right)$$ is equal to :</p>",
+      "options": [
+        "$$\\frac{2}{3}$$",
+        "$$\\frac{5}{3}$$",
+        "$$\\frac{5}{4}$$",
+        "1"
+      ],
+      "correctOption": 1,
+      "solution": "<p>$$0 \\le {{2 + 3P} \\over 6} \\le 1 \\Rightarrow P \\in \\left[ { - {2 \\over 3},{4 \\over 3}} \\right]$$</p>\n<p>$$0 \\le {{2 - P} \\over 8} \\le 1 \\Rightarrow P \\in [ - 6,2]$$</p>\n<p>$$0 \\le {{1 - P} \\over 2} \\le 1 \\Rightarrow P \\in [ - 1,1]$$</p>\n<p>$$0 < P({E_1}) + P({E_2}) + P({E_3}) \\le 1$$</p>\n<p>$$0 < {{13} \\over {12}} - {P \\over 8} \\le 1$$</p>\n<p>$$P \\in \\left[ {{2 \\over 3},{{26} \\over 3}} \\right]$$</p>\n<p>Taking intersection of all</p>\n<p>$$P \\in \\left[ {{2 \\over 3},1} \\right)$$</p>\n<p>$${P_1} + {P_2} = {5 \\over 3}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    },
+    {
+      "id": "tllxlrvuuf",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the probability that Q and U sit&nbsp;together?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{2}{3}$</span>",
+        "<span class=\"math-tex\">$\\frac{1}{4}$</span>",
+        "<span class=\"math-tex\">$\\frac{5}{6}$</span>",
+        "<span class=\"math-tex\">$\\frac{1}{3}$</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>To solve this problem, let's start by determining the total number of ways to arrange the six individuals (P, Q, R, S, T, U) in a row. Since there are 6 people, the total number of permutations is:</p>\n\n<p>$$ 6! = 720 $$</p>\n\n<p>Now, let's consider the number of ways Q and U can sit together. We can treat Q and U as a single unit, which means we now have 5 units to arrange (the unit containing Q and U, and the other 4 individuals P, R, S, T). The number of ways to arrange these 5 units is:</p>\n\n<p>$$ 5! = 120 $$</p>\n\n<p>Within the Q and U unit, Q and U can switch places. There are 2 ways to arrange Q and U within their unit:</p>\n\n<p>$$ 2! = 2 $$</p>\n\n<p>Therefore, the number of ways Q and U can sit together is:</p>\n\n<p>$$ 5! \\times 2! = 120 \\times 2 = 240 $$</p>\n\n<p>The probability that Q and U sit together is the number of favorable outcomes divided by the total number of outcomes:</p>\n\n<p>$$ \\text{Probability} = \\frac{5! \\times 2!}{6!} = \\frac{240}{720} = \\frac{1}{3} $$</p>\n\n<p>Therefore, the correct option is D:</p>\n\n<p>$$ \\frac{1}{3} $$</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Probability"
+    },
+    {
+      "id": "1l56744uu",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The probability, that in a randomly selected 3-digit number at least two digits are odd, is :</p>",
+      "options": [
+        "$${{19} \\over {36}}$$",
+        "$${{15} \\over {36}}$$",
+        "$${{13} \\over {36}}$$",
+        "$${{23} \\over {36}}$$"
+      ],
+      "correctOption": 0,
+      "solution": "At least two digits are odd = exactly two digits are odd + exactly there 3 digits\nare odd <br><br>For exactly three digits are odd <br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lc8eefiq/e8de7882-e991-47ff-999d-2ea9ce2e3c3f/ccd33f20-8716-11ed-92bb-e57e64e1a06d/file-1lc8eefir.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lc8eefiq/e8de7882-e991-47ff-999d-2ea9ce2e3c3f/ccd33f20-8716-11ed-92bb-e57e64e1a06d/file-1lc8eefir.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 28th June Morning Shift Mathematics - Probability Question 122 English Explanation\"><br>\nFor exactly two digits odd :<br><br>\nIf 0 is used then $: 2 \\times 5 \\times 5=50$<br><br>\nIf 0 is not used then : ${ }^3 \\mathrm{C}_1 \\times 4 \\times 5 \\times 5=300$<br><br>\nRequired Probability $=\\frac{475}{900}=\\frac{19}{36}$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Probability"
+    }
+  ]
+}

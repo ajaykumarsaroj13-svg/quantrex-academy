@@ -1,0 +1,270 @@
+{
+  "testId": "tst-19g71mnq2wy7f",
+  "title": "Sequences and Series - 3 (Topic Test )",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "r4WC0aKydDZkqNCmrD5bM",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The sum of all natural numbers 'n' such that\n100 &lt; n &lt; 200 and H.C.F. (91, n) &gt; 1 is :",
+      "options": [
+        "3221",
+        "3121",
+        "3203",
+        "3303"
+      ],
+      "correctOption": 1,
+      "solution": "$$ \\because $$ 91 = 13 $$ \\times $$ 7\n<br><br>So the required numbers are either divisible by\n7 or 13.\n<br><br>S<sub>A</sub>\n= sum of numbers between 100 and 200 which are divisible by 7.\n<br><br>$$ \\Rightarrow $$ S<sub>A</sub> = 105 + 112 + ..... + 196\n<br><br>S<sub>A</sub> = $${{14} \\over 2}\\left[ {105 + 196} \\right]$$ = 2107\n<br><br>S<sub>B</sub>\n= Sum of numbers between 100 and 200 which are divisible by 13.\n<br><br>S<sub>B</sub> = 104 + 117 + ....... + 195\n<br><br>S<sub>B</sub> = $${8 \\over 2}\\left[ {104 + 195} \\right]$$ = 1196\n<br><br>S<sub>C</sub> = Sum of numbers between 100 and 200 which are divisible by 7 and 13.\n<br><br>S<sub>C</sub> = 182\n<br><br>Sum of numbers divisible by\n7 or 13 = Sum of no. divisible by\n7 + sum of the no. divisible by 13 – Sum of the\nnumbers divisible by 7 and 13\n<br><br> = 2107 + 1196 - 182\n<br><br>= 3121",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "qJBoOi84bbZpOZlOUr1kls5n6t7",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let A<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub>, ....... be squares such that for each n $$ \\ge $$ 1, the length of the side of A<sub>n</sub> equals the length of diagonal of A<sub>n+1</sub>. If the length of A<sub>1</sub> is 12 cm, then the smallest value of n for which area of A<sub>n</sub> is less than one, is __________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<img src=\"https://imagex.cdn.examgoal.net/1krcwgme0/dd908946-5f89-410e-bbf2-25c3dd404f98/05b72490-e9d0-11eb-8bfb-cf6b1defe4fe/file-1krcwgme1.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Morning Shift Mathematics - Sequences and Series Question 206 English Explanation\">\n<br><br>$$ \\therefore $$ Side lengths are in G.P.<br><br>$${T_n} = {{12} \\over {{{\\left( {\\sqrt 2 } \\right)}^{n - 1}}}}$$<br><br>$$ \\therefore $$  Area $$ = {{144} \\over {{2^{n - 1}} }}$$ &lt; 1<br><br>$$ \\Rightarrow {2^{n - 1}} &gt; 144$$<br><br>Smallest n = 9",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "1l1983pto",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If one GM, g and two AM's p and q are inserted between two numbers a and b, then (2p $$-$$ q) (p $$-$$ 2q) is equal to</p>",
+      "options": [
+        "g<sup>2</sup>",
+        "$$-$$g<sup>2</sup>",
+        "2g",
+        "3g<sup>2</sup>"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Since, $$g = \\sqrt {ab} $$. Also, a, p, q and b are in AP.</p>\n<p>So, common difference d is $${{b - a} \\over 3}$$.</p>\n<p>$$\\therefore$$ $$p = a + d = a + {{b - a} \\over 3} = {{2a + b} \\over 3}$$</p>\n<p>$$q = b - d = b - {{b - a} \\over 3} = {{a + 2b} \\over 3}$$</p>\n<p>Now, $$(2p - q)(p - 2q)$$</p>\n<p>$$ = {{(4a + 2b - a - 2b)} \\over 3}\\,.\\,{{(2a + b - 2a - 4b)} \\over 3}$$</p>\n<p>$$ =  - ab =  - {g^2}$$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "l7einj5i",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$a_{1}, a_{2}, a_{3}, \\ldots$$ be an arithmetic progression with $$a_{1}=7$$ and common difference 8. Let $$T_{1}, T_{2}, T_{3}, \\ldots$$ be such that $$T_{1}=3$$ and $$T_{n+1}-T_{n}=a_{n}$$ for $$n \\geq 1$$. Then, which of the following is/are TRUE ?</p>",
+      "options": [
+        "$$T_{20}=1604$$",
+        "$$\\sum\\limits_{k=1}^{20} T_{k}=10510$$",
+        "$$T_{30}=3454$$",
+        "$$\\sum\\limits_{k=1}^{30} T_{k}=35610$$"
+      ],
+      "correctOption": 1,
+      "solution": "Here $a_n=7+(n-1) 8$ and $\\mathrm{T}_1=3$, $a_1=7, d=8$\n<br/><br/>Also, $ \\mathrm{T}_{n+1}=\\mathrm{T}_n+a_n$\n<br/><br/>$\\mathrm{T}_n=\\mathrm{T}_{n-1}+a_{n-1}$\n<br/><br/>$\\mathrm{T}_2=\\mathrm{T}_1+a_1$\n<br/><br/>$\\therefore \\mathrm{T}_{n+1}=\\left(\\mathrm{T}_{n-1}+a_{n-1}\\right)+a_n$\n<br/><br/>$\\mathrm{T}_{n+1}=\\mathrm{T}_{n-2}+a_{n-2}+a_{n-1}+a_n$\n<br/><br/>So\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{T}_{n+1}=\\mathrm{T}_1+a_1+a_2 \\ldots \\ldots a_n \\\\\\\\\n& \\mathrm{~T}_{n+1}=\\mathrm{T}_1+\\frac{n}{2}(2 \\times 7+(n-1) 8) \\\\\\\\\n& \\mathrm{T}_{n+1}=\\mathrm{T}_1+n(4 n+3) ........(1)\n\\end{aligned}\n$$\n<br/><br/>For (A), if $ n=19, \\mathrm{~T}_{20}=3+(19)(79)=1504$\n<br/><br/>For (C), if $n=29, \\mathrm{~T}_{30}=3+29(119)=3454$\n<br/><br/>For (B),\n<br/><br/>$$\n \\begin{aligned}\n& \\sum_{k=1}^{20} \\mathrm{~T}_k =\\sum_{k=1}^{20}\\left(\\mathrm{~T}_1+4 n^2+3 n\\right)+3 \\\\\\\\\n& = 3+\\sum_{k=1}^{20}\\left(3+4 n^2+3 n\\right) \\\\\\\\\n&= 3+3(19)+\\frac{3(19)(20)}{2}  +\\frac{4(19)(20)(34)}{6} \\\\\\\\\n&= 3+10507=10510\n\\end{aligned}\n$$\n<br/><br/>Similarly, for (D)\n<br/><br/>$$\n\\sum\\limits_{k=1}^{30} \\mathrm{~T}_k=3+\\sum\\limits_{k=1}^{29}\\left(4 n^2+3 n+3\\right)=35615\n$$",
+      "marks": 4,
+      "negativeMarks": -2,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "1lsgb2052",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$S_n$$ denote the sum of first $$n$$ terms of an arithmetic progression. If $$S_{20}=790$$ and $$S_{10}=145$$, then $$\\mathrm{S}_{15}-\\mathrm{S}_5$$ is :</p>",
+      "options": [
+        "405",
+        "390",
+        "410",
+        "395"
+      ],
+      "correctOption": 3,
+      "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\mathrm{S}_{20}=\\frac{20}{2}[2 \\mathrm{a}+19 \\mathrm{~d}]=790 \\\\\n& 2 \\mathrm{a}+19 \\mathrm{~d}=79 \\quad \\text{.... (1)}\\\\\n& \\mathrm{~S}_{10}=\\frac{10}{2}[2 \\mathrm{a}+9 \\mathrm{~d}]=145 \\\\\n& 2 \\mathrm{a}+9 \\mathrm{~d}=29 \\quad \\text{.... (2)}\n\\end{aligned}\\\\\n&\\text { From (1) and (2) } a=-8, d=5\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& S_{15}-S_5=\\frac{15}{2}[2 a+14 d]-\\frac{5}{2}[2 a+4 d] \\\\\n& =\\frac{15}{2}[-16+70]-\\frac{5}{2}[-16+20] \\\\\n& =405-10 \\\\\n& =395\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "lvc57uf2",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let the first term of a series be $$T_1=6$$ and its $$r^{\\text {th }}$$ term $$T_r=3 T_{r-1}+6^r, r=2,3$$,\n............ $$n$$. If the sum of the first $$n$$ terms of this series is $$\\frac{1}{5}\\left(n^2-12 n+39\\right)\\left(4 \\cdot 6^n-5 \\cdot 3^n+1\\right)$$, then $$n$$ is equal to ___________.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>$$\\begin{aligned}\n& T_r=3 T_{r-1}+6^r \\\\\n& \\Rightarrow \\text { solving homogenous part } \\\\\n& T_r=3 T_{r-1} \\\\\n& \\Rightarrow x=3 \\text { is the root }\n\\end{aligned}$$</p>\n<p>$$\\therefore T_r=a .3^r$$</p>\n<p>Solving for particular part</p>\n<p>$$\\begin{aligned}\n& T_r=b .6^r \\\\\n& b .6^r=3 b 6^{r-1}+6^r \\\\\n& \\Rightarrow 6 b=3 b+6 \\\\\n& \\Rightarrow 3 b=6 \\\\\n& \\Rightarrow b=2 \\\\\n& T_r=a^n+a^p \\\\\n& T_r=a 3^{b r}+2.6^r \\quad \\text{.... (i)} \\\\\n& T_r=3 T_{r-1}+6^r\n\\end{aligned}$$</p>\n<p>Putting $$r=2$$</p>\n<p>$$T_2=18+36=54 \\quad \\text{.... (ii)}$$</p>\n<p>Using equation (i) and (ii)</p>\n<p>$$\\begin{aligned}\n& 54=9 a+72 \\Rightarrow-18=9 a \\Rightarrow a=-2 \\\\\n& \\therefore T_r=2 \\cdot 6^r-2 \\cdot 3^r=2\\left(6^r-3^r\\right) \\\\\n& \\sum_{r=1}^n T_r=2 \\sum 6^r-2 \\sum 3^r \\\\\n& =2 \\cdot 6 \\frac{\\left(6^n-1\\right)}{5}-2 \\cdot 3 \\frac{\\left(3^n-1\\right)}{2} \\\\\n& =\\frac{3}{5}\\left(4 \\cdot 6^n-5 \\cdot 3^n+1\\right) \\\\\n& \\therefore n^2-12 n+39=3 \\\\\n& n^2-12 n+36=0 \\\\\n& (n-6)^2=0 \\\\\n& \\therefore n=6\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "C38geiuYcGLB2P3ZAY1klrmzqlk",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The sum of first four terms of a geometric progression (G. P.) is $${{65} \\over {12}}$$ and the sum of their respective reciprocals is $${{65} \\over {18}}$$. If the product of first three terms of the G.P. is 1, and the third term is $$\\alpha$$, then 2$$\\alpha$$ is _________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "Let the terms are $$a,ar,a{r^2},a{r^3}$$<br><br>$$a + ar + a{r^2} + a{r^3} = {{65} \\over {12}}$$ ..........(1)<br><br>$${1 \\over a} + {1 \\over {ar}} + {1 \\over {a{r^2}}} + {1 \\over {a{r^3}}} = {{65} \\over {18}}$$<br><br>$${1 \\over a}\\left( {{{{r^3} + {r^2} + r + 1} \\over {{r^3}}}} \\right) = {{65} \\over {18}}$$ ...............(2)<br><br>Doing $${{(1)} \\over {(2)}},$$\n<br><br>$${a^2}{r^3} = {{18} \\over {12}} = {3 \\over 2}$$<br><br>Also given, $${a^3}{r^3} = 1 \\Rightarrow a\\left( {{3 \\over 2}} \\right) = 1 \\Rightarrow a = {2 \\over 3}$$<br><br>$${4 \\over 9}{r^3} = {3 \\over 2} \\Rightarrow {r^3} = {{{3^3}} \\over {{2^3}}} \\Rightarrow r = {3 \\over 2}$$<br><br>$$\\alpha  = a{r^2} = {2 \\over 3}.{\\left( {{3 \\over 2}} \\right)^2} = {3 \\over 2}$$<br><br>$$2\\alpha  = 3$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "mnswhwp2",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The sum of the first ten terms of an A.P. is 160 and the sum of the first two terms of a G.P. is 8 . If the first term of the A.P. is equal to the common ratio of the G.P. and the first term of the G.P. is equal to common difference of the A.P., then the sum of all possible values of the first term of the G.P. is:</p>\n",
+      "options": [
+        "<p>$\\frac{34}{9}$</p>\n",
+        "<p>$\\frac{34}{13}$</p>\n",
+        "<p>$\\frac{32}{9}$</p>\n",
+        "<p>$\\frac{32}{13}$</p>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>Let the first term of the A.P. be $a$ and common difference be $d$.</p>\n<p>Then, from the question:</p>\n<ul>\n<li><p>first term of the G.P. $= d$</p></li>\n<li><p>common ratio of the G.P. $= a$</p></li>\n</ul>\n<p>Now use the given conditions one by one.</p>\n<h2>1. Sum of first 10 terms of the A.P.</h2>\n<p>We know,</p>\n<p>$$ S_{10}=\\frac{10}{2}\\left[2a+(10-1)d\\right] $$</p>\n<p>So,</p>\n<p>$$ 160=5(2a+9d) $$</p>\n<p>$$ 2a+9d=32 \\qquad ...(1) $$</p>\n\n<h2>2. Sum of first 2 terms of the G.P.</h2>\n<p>The G.P. has first term $d$ and common ratio $a$.</p>\n<p>So its first two terms are:</p>\n<p>$$ d,\\ da $$</p>\n<p>Their sum is $8$:</p>\n<p>$$ d+da=8 $$</p>\n<p>$$ d(1+a)=8 \\qquad ...(2) $$</p>\n\n<h2>3. Express $d$ from equation (1)</h2>\n<p>From</p>\n<p>$$ 2a+9d=32 $$</p>\n<p>we get</p>\n<p>$$ 9d=32-2a $$</p>\n<p>$$ d=\\frac{32-2a}{9} $$</p>\n<p>Substitute this in equation (2):</p>\n<p>$$ \\frac{32-2a}{9}(1+a)=8 $$</p>\n<p>Multiply by $9$:</p>\n<p>$$ (32-2a)(1+a)=72 $$</p>\n<p>Expand:</p>\n<p>$$ 32+32a-2a-2a^2=72 $$</p>\n<p>$$ 32+30a-2a^2=72 $$</p>\n<p>$$ -2a^2+30a-40=0 $$</p>\n<p>Divide by $-2$:</p>\n<p>$$ a^2-15a+20=0 $$</p>\n\n<h2>4. Find values of $a$</h2>\n<p>Using quadratic formula:</p>\n<p>$$ a=\\frac{15\\pm\\sqrt{225-80}}{2} $$</p>\n<p>$$ a=\\frac{15\\pm\\sqrt{145}}{2} $$</p>\n<p>Now we need the possible values of the first term of the G.P., which is $d$.</p>\n\n<h2>5. Find corresponding values of $d$</h2>\n<p>From equation (1):</p>\n<p>$$ d=\\frac{32-2a}{9} $$</p>\n<p>For the two values of $a$, the two values of $d$ are obtained. But the question asks for the <strong>sum of all possible values of the first term of the G.P.</strong>, i.e. sum of both possible values of $d$.</p>\n<p>Let the two roots of the quadratic in $a$ be $a_1$ and $a_2$.</p>\n<p>Then corresponding values of $d$ are</p>\n<p>$$ d_1=\\frac{32-2a_1}{9}, \\qquad d_2=\\frac{32-2a_2}{9} $$</p>\n<p>So,</p>\n<p>$$ d_1+d_2=\\frac{32-2a_1}{9}+\\frac{32-2a_2}{9} $$</p>\n<p>$$ d_1+d_2=\\frac{64-2(a_1+a_2)}{9} $$</p>\n<p>For the quadratic</p>\n<p>$$ a^2-15a+20=0 $$</p>\n<p>sum of roots is</p>\n<p>$$ a_1+a_2=15 $$</p>\n<p>Hence,</p>\n<p>$$ d_1+d_2=\\frac{64-2(15)}{9} $$</p>\n<p>$$ d_1+d_2=\\frac{64-30}{9}=\\frac{34}{9} $$</p>\n<p>Therefore, the required sum is</p>\n<p>$$ \\boxed{\\frac{34}{9}} $$</p>\n<p>So the correct option is <strong>A</strong>.</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "l7eigpt2",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $$l_{1}, l_{2}, \\ldots, l_{100}$$ be consecutive terms of an arithmetic progression with common difference $$d_{1}$$, and let $$w_{1}, w_{2}, \\ldots, w_{100}$$ be consecutive terms of another arithmetic progression with common difference $$d_{2}$$, where $$d_{1} d_{2}=10$$. For each $$i=1,2, \\ldots, 100$$, let $R_{i}$ be a rectangle with length $$l_{i}$$, width $$w_{i}$$ and area $A_{i}$. If $$A_{51}-A_{50}=1000$$, then the value of $$A_{100}-A_{90}$$ is __________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>Given,</p>\n<p>$${l_1},{l_2},\\,.......,\\,{l_{100}}$$ are in A.P with common difference $${d_1}$$.</p>\n<p>So from property of A.P we can say,</p>\n<p>$${l_2} = {l_1} + {d_1}$$</p>\n<p>$${l_3} = {l_1} + 2{d_1}$$</p>\n<p>$$ \\vdots $$</p>\n<p>$${l_{100}} = {l_1} + 99{d_1}$$</p>\n<p>Also given,</p>\n<p>$${w_1},{w_2},\\,......\\,,\\,{w_{100}}$$ are in A.P with common difference $${d_2}$$.</p>\n<p>$$\\therefore$$ From the property of A.P we can say,</p>\n<p>$${w_2} = {w_1} + {d_2}$$</p>\n<p>$${w_3} = {w_1} + 2{d_2}$$</p>\n<p>$$ \\vdots $$</p>\n<p>$${w_{100}} = {w_1} + 99{d_2}$$</p>\n<p>Now, also given,</p>\n<p>$${d_1}{d_2} = 10$$</p>\n<p>and $${R_i}$$ is a rectangle whose length is $${l_i}$$ and width is $${w_i}$$ and area $${A_i}$$.</p>\n<p>$$\\therefore$$ We know, area of rectangle</p>\n<p>$${A_i} = {l_i} \\times {w_i}$$</p>\n<p>$$\\therefore$$ $${A_{51}} = {l_{51}} \\times {w_{51}}$$</p>\n<p>and $${A_{50}} = {l_{50}} \\times {w_{50}}$$</p>\n<p>Given, $${A_{51}} - {A_{50}} = 1000$$</p>\n<p>$$ \\Rightarrow ({l_1} + 50{d_1})({w_1} + 50{d_2}) - ({l_1} + 49{d_1})({w_1} + 49{d_2}) = 1000$$</p>\n<p>$$ \\Rightarrow [{l_1}{w_1} + 2500{d_1}{d_2} + 50({l_1}{d_2} + {d_1}{w_1})] - [{l_1}{w_1} + 49 \\times 49{d_1}{d_2} + 49({l_1}{d_2} + {w_1}{d_1})] = 1000$$</p>\n<p>$$ \\Rightarrow [{(50)^2}{d_1}{d_2} - {(49)^2}{d_1}{d_2}] + (50 - 49)({l_1}{d_2} + {d_1}{w_1}) = 1000$$</p>\n<p>$$ \\Rightarrow (99 \\times 1){d_1}{d_2} + {l_1}{d_2} + {d_1}{w_1} = 1000$$</p>\n<p>$$ \\Rightarrow 99 \\times 10 + {l_1}{d_2} + {w_1}{d_1} = 1000$$</p>\n<p>$$ \\Rightarrow {l_1}{d_2} + {w_1}{d_1} = 10$$</p>\n<p>Now,</p>\n<p>$${A_{100}} - {A_{90}}$$</p>\n<p>$$ = {l_{100}}\\,.\\,{w_{100}} - {l_{90}}\\,.\\,{w_{90}}$$</p>\n<p>$$ = ({l_1} + 99{d_1})({w_1} + 99{d_2}) - ({l_1} + 89{d_1})({w_1} + 89{d_2})$$</p>\n<p>$$ = [{l_1}{w_1} + {(99)^2}{d_1}{d_2} + 99({l_1}{d_2} + {w_1}{d_1})] - [{l_1}{w_1} + {(89)^2}{d_1}{d_2} + 89({l_1}{d_2} + {w_1}{d_1})]$$</p>\n<p>$$ = [{(99)^2} - {89^2}]{d_1}{d_2} + 10({l_1}{d_2} + {w_1}{d_1})$$</p>\n<p>$$ = 188 \\times 10 \\times {d_1}{d_2} + 10 \\times 10$$</p>\n<p>$$ = 188 \\times 10 \\times 10 + 100$$</p>\n<p>$$ = 18800 + 100$$</p>\n<p>$$ = 18900$$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "1ldybitxm",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>For three positive integers p, q, r, $${x^{p{q^2}}} = {y^{qr}} = {z^{{p^2}r}}$$ and r = pq + 1 such that 3, 3 log$$_yx$$, 3 log$$_zy$$, 7 log$$_xz$$ are in A.P. with common difference $$\\frac{1}{2}$$. Then r-p-q is equal to</p>",
+      "options": [
+        "12",
+        "$$-$$6",
+        "6",
+        "2"
+      ],
+      "correctOption": 3,
+      "solution": "$x^{p q^{2}}=y^{q r}=z^{p^{2} r}$\n<br/><br/>\n$$\n3 \\log _{y} x=\\frac{7}{2}, 3 \\log _{z} y=4,7 \\log _{x} z=\\frac{9}{2}\n$$\n<br/><br/>\n$$\n\\begin{aligned}\n& \\Rightarrow x=y^{\\frac{7}{6}}, y=z^{\\frac{4}{3}}, z=x^{\\frac{9}{14}} \\\\\\\\\n& y^{\\frac{7}{6} p q^{2}}=y^{q r}=y^{\\frac{3}{4} p^{2} r} \\\\\\\\\n& \\Rightarrow \\frac{7}{6} p q^{2}=q r=\\frac{3}{4} p^{2} r \\\\\\\\\n& \\therefore 7 p q=6 r, 4 q=3 p^{2} \\\\\\\\\n& r=p q+1 \\\\\\\\\n& r=\\frac{6 r}{7}+1 \\Rightarrow r=7 \\\\\\\\\n& p q=6 \\\\\\\\\n& p\\left(\\frac{3 p^{2}}{4}\\right)=6 \\\\\\\\\n& p=2, q=3 \\\\\\\\\n& r-p-q=7-5=2\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "m7pup797",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If $ \\sum\\limits_{k=1}^{n} k(k+1)(k-1)=p n^{4}+q n^{3}+t n^{2}+s n $, where $ p, q, t $ and $ s $ are constants, then the value of $ s $ is equal to",
+      "options": [
+        "$ -\\frac{1}{4} $",
+        "$ -\\frac{1}{2} $",
+        "$ \\frac{1}{2} $",
+        "$ \\frac{1}{4} $"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Let $ S=\\sum\\limits_{k=1}^{n} k(k+1)(k-1) $</p><p>$ =\\sum\\limits_{k=1}^{n} k^{3}-k $</p><p>We know that</p><p>$ \\sum\\limits_{r=1}^{P} r=\\frac{P(P+1)}{2} $</p><p>and $ \\quad \\sum\\limits_{r=1}^{P} r^{3}=\\left[\\frac{P(P+1)}{2}\\right]^{2} $</p><p>$ \\begin{aligned} \\therefore & =\\left[\\frac{n(n+1)}{2}\\right]^{2}-\\left[\\frac{n(n+1)}{2}\\right] \\\\ & =\\frac{n(n+1)}{2}\\left[\\frac{n(n+1)}{2}-1\\right] \\\\ & =\\left(\\frac{n^{2}+n}{2}\\right)\\left[\\frac{n^{2}+n-2}{2}\\right] \\\\ & =\\frac{n^{4}}{4}+\\frac{n^{3}}{2}-\\frac{n^{2}}{4}-\\frac{n}{2} \\end{aligned} $</p><p>Now, by comparing $ p n^{4}+q n^{3}+t n^{2}+s n $ with Eq. (i),</p><p>$ S=-\\frac{1}{2} $</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "1ktioa9ro",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The sum of 10 terms of the series \n<br><br>$${3 \\over {{1^2} \\times {2^2}}} + {5 \\over {{2^2} \\times {3^2}}} + {7 \\over {{3^2} \\times {4^2}}} + ....$$ is :",
+      "options": [
+        "1",
+        "$${{120} \\over {121}}$$",
+        "$${{99} \\over {100}}$$",
+        "$${{143} \\over {144}}$$"
+      ],
+      "correctOption": 1,
+      "solution": "$$S = {{{2^2} - {1^2}} \\over {{1^2} \\times {2^2}}} + {{{3^2} - {2^2}} \\over {{2^2} \\times {3^2}}} + {{{4^2} - {3^2}} \\over {{3^2} \\times {4^2}}} + ...$$<br><br>$$ = \\left[ {{1 \\over {{1^2}}} - {1 \\over {{2^2}}}} \\right] + \\left[ {{1 \\over {{2^2}}} - {1 \\over {{3^2}}}} \\right] + \\left[ {{1 \\over {{3^2}}} - {1 \\over {{4^2}}}} \\right] + .... + \\left[ {{1 \\over {{{10}^2}}} - {1 \\over {{{11}^2}}}} \\right]$$<br><br>$$ = 1 - {1 \\over {121}}$$<br><br>$$ = {{120} \\over {121}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "1lgvpd2gn",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If $$\\mathrm{S}_{n}=4+11+21+34+50+\\ldots$$ to $$n$$ terms, then $$\\frac{1}{60}\\left(\\mathrm{~S}_{29}-\\mathrm{S}_{9}\\right)$$ is equal to :</p>",
+      "options": [
+        "227",
+        "226",
+        "220",
+        "223"
+      ],
+      "correctOption": 3,
+      "solution": "Given that\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{S}_n=4+11+21+24+50+\\ldots+\\mathrm{T}_n \\\\\\\\\n& \\mathrm{~S}_n=~~~~~~~~4+11+21+34++\\mathrm{T}_{n-1}+\\mathrm{T}_n \\\\\n& -\\quad-\\quad-\\quad-\\quad-\\quad-\\quad- \\\\\n& \\hline 0=4+7+10+13+16+\\ldots\\left(\\mathrm{T}_n-\\mathrm{T}_{n-2}\\right)-\\mathrm{T}_n\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow \\mathrm{T}_n=4+7+10+13+16+\\ldots . \\text { to } n \\text { terms } \\\\\\\\\n& \\Rightarrow \\mathrm{T}_n=\\frac{n}{2}[2 \\times 4+(n-1) 3] \\\\\\\\\n& \\mathrm{T}_n=\\frac{3}{2} n^2+\\frac{5}{2} n\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { So } \\mathrm{S}_n=\\Sigma \\mathrm{T}_n=\\frac{3}{2} \\Sigma n^2+\\frac{5}{2} \\Sigma n \\\\\\\\\n& \\Rightarrow \\mathrm{S}_n=\\frac{3}{2} \\times \\frac{n(n+1)(2 n+1)}{6}+\\frac{5}{2} \\times \\frac{n(n+1)}{2}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow S_n=\\frac{n(n+1)}{4}(2 n+1+5)=\\frac{n(n+1)(n+3)}{2} \\\\\\\\\n& \\text { Hence, } \\frac{1}{60}\\left(S_{29}-S_9\\right)=\\frac{1}{60} \\times \\frac{1}{2}(29 \\times 30 \\times 32-9 \\times 10 \\times 12) \\\\\\\\\n& =223\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "XHol4qKySWK9HAFu5P1kmlix67q",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "$${1 \\over {{3^2} - 1}} + {1 \\over {{5^2} - 1}} + {1 \\over {{7^2} - 1}} + .... + {1 \\over {{{(201)}^2} - 1}}$$ is equal to ",
+      "options": [
+        "$${{101} \\over {404}}$$",
+        "$${{25} \\over {101}}$$",
+        "$${{101} \\over {408}}$$",
+        "$${{99} \\over {400}}$$"
+      ],
+      "correctOption": 1,
+      "solution": "$$S = \\sum\\limits_{r = 1}^{100} {{1 \\over {{{(2n + 1)}^2} - 1}}} $$<br><br>$$ = \\sum\\limits_{r = 1}^{100} {{1 \\over {(2n + 1 + 1)(2n + 1 - 1)}}} $$<br><br>$$ = \\sum\\limits_{r = 1}^{100} {{1 \\over {2n(2n + 2)}}} $$<br><br>$$ = {1 \\over 4}\\sum\\limits_{r = 1}^{100} {{1 \\over {n(n + 1)}}} $$<br><br>$$ = {1 \\over 4}\\sum\\limits_{r = 1}^{100} {{{(n + 1) - n} \\over {n(n + 1)}}} $$<br><br>$$ = {1 \\over 4}\\sum\\limits_{r = 1}^{100} {\\left( {{1 \\over n} - {1 \\over {n + 1}}} \\right)} $$<br><br>$$S = {1 \\over 4}\\left( {\\left( {1 - {1 \\over 2}} \\right) + \\left( {{1 \\over 2} - {1 \\over 3}} \\right) + \\left( {{1 \\over 3} - {1 \\over 4}} \\right) + ...... + \\left( {{1 \\over {100}} - {1 \\over {101}}} \\right)} \\right)$$<br><br>$$ \\therefore $$ $$S = {1 \\over 4}\\left[ {{{100} \\over {101}}} \\right] = {{25} \\over {101}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    },
+    {
+      "id": "PS85QIo4S7Avsvyt1bjgy2xukf49qm01",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If m arithmetic means (A.Ms) and three\ngeometric means (G.Ms) are inserted between\n3 and 243 such that 4<sup>th</sup> A.M. is equal to 2<sup>nd</sup>\nG.M., then m is equal to _________ .",
+      "options": [],
+      "correctOption": 0,
+      "solution": "Given m arithmetic means (A.Ms) present between 3 and 243<br><br>$$ \\therefore $$ Common difference, $$d = {{b - a} \\over {m + 1}} = {{240} \\over {m + 1}}$$<br><br>$$ \\therefore $$ 4th A.M. = a + 4d<br><br>= 3 + 4 $$ \\times $$ $${{240} \\over {m + 1}}$$<br><br>Also there are 3 G.M between 3 and 243<br><br>$$ \\therefore $$ Common ratio (r) = $${\\left( {{b \\over a}} \\right)^{{1 \\over {n + 1}}}}$$<br><br>where n = number of G.M inserted.<br><br>$$ \\therefore $$ r = $${\\left( {{{243} \\over 3}} \\right)^{{1 \\over {3 + 1}}}} = 3$$<br><br>Given, <br><br>4<sup>th</sup> A.M = 2<sup>nd</sup> G.M<br><br>$$ \\Rightarrow 3 + 4 \\times {{240} \\over {m + 1}} = 3{(3)^2}$$<br><br>$$ \\Rightarrow {{960} \\over {m + 1}} = 24$$<br><br>$$ \\Rightarrow m = 39$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sequences and Series"
+    }
+  ]
+}

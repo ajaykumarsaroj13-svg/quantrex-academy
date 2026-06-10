@@ -1,0 +1,290 @@
+{
+  "testId": "tst-19g61mobg1gug",
+  "title": "Matrices Test - 2 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "lwv3x8i4",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following statements in respect of a skew-symmetric matrix $A$ of order $3$:</p><p>1. All diagonal elements are zero.</p><p>2. The sum of all the diagonal elements of the matrix is zero.</p><p>3. $A$ is orthogonal matrix.</p><p>Which of the statements given above are correct?</p>",
+      "options": [
+        "<p>1 and 2 only</p>",
+        "<p>2 and 3 only</p>",
+        "<p>1 and 3 only</p>",
+        "<p>1, 2 and 3</p>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>Let's analyze each statement given regarding a skew-symmetric matrix $ A $ of order 3:</p>\n\n<p>1. <strong>All diagonal elements are zero.</strong></p>\n\n<p>For a skew-symmetric matrix $ A $, the property $ A^T = -A $ holds. For the diagonal elements, this implies $ a_{ii} = -a_{ii} $. The only solution to this equation is $ a_{ii} = 0 $. Therefore, all diagonal elements of a skew-symmetric matrix are indeed zero.</p>\n\n<p>2. <strong>The sum of all the diagonal elements of the matrix is zero.</strong></p>\n\n<p>Since we have established that all diagonal elements $ a_{ii} $ are zero, summing up these zero elements will give us zero. Thus, the sum of all the diagonal elements for a skew-symmetric matrix is zero. This statement is correct.</p>\n\n<p>3. <strong>$ A $ is an orthogonal matrix.</strong></p>\n\n<p>An orthogonal matrix $ Q $ satisfies $ Q^T Q = I $. However, a skew-symmetric matrix does not inherently have this property. While some special skew-symmetric matrices may also be orthogonal, it is not a general property of all skew-symmetric matrices. Therefore, a skew-symmetric matrix is not necessarily orthogonal.</p>\n\n<p>Based on this analysis:</p>\n\n<ul>\n\n<li>Statements 1 and 2 are correct.</li>\n\n<li>Statement 3 is not necessarily correct for all skew-symmetric matrices.</li>\n\n</ul>\n\n<p>Thus, the correct answer is:</p>\n\n<p><strong>Option A: 1 and 2 only</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Matrices"
+    },
+    {
+      "id": "lwv3x865",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following statements in respect of a non-singular matrix $A$ of order $n$:</p><p>1. $A(\\text{adj}A^T) = A(\\text{adj}A)^T$</p><p>2. If $A^2 = A$, then $A$ is identity matrix of order $n$</p><p>3. If $A^3 = A$, then $A$ is identity matrix of order $n$</p><p>Which of the statements given above are correct?</p>",
+      "options": [
+        "<p>1 and 2 only</p>",
+        "<p>2 and 3 only</p>",
+        "<p>1 and 3 only</p>",
+        "<p>1, 2 and 3</p>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>To determine which statements are correct regarding a non-singular matrix $ A $ of order $ n $, let's analyze each statement individually.</p>\n<hr />\n<p><strong>Statement 1:</strong> $ A (\\text{adj}\\, A^T) = A (\\text{adj}\\, A)^T $</p>\n<p><em>Explanation:</em></p>\n\n<p><p>The adjugate of the transpose of $ A $ is equal to the transpose of the adjugate of $ A $:</p>\n<p>$   \\text{adj}\\, (A^T) = (\\text{adj}\\, A)^T   $</p></p>\n<p><p>Therefore:</p>\n<p>$   A (\\text{adj}\\, A^T) = A (\\text{adj}\\, A)^T   $</p></p>\n\n<p><em>Conclusion:</em> <strong>Statement 1 is correct.</strong></p>\n<hr />\n<p><strong>Statement 2:</strong> If $ A^2 = A $, then $ A $ is the identity matrix of order $ n $.</p>\n<p><em>Explanation:</em></p>\n\n<p><p>Given $ A^2 = A $, subtract $ A $ from both sides:</p>\n<p>$   A^2 - A = 0 \\implies A (A - I) = 0   $</p></p>\n<p><p>Since $ A $ is non-singular (invertible), we can multiply both sides by $ A^{-1} $:</p>\n<p>$   A^{-1} A (A - I) = A^{-1} 0 \\implies (A - I) = 0   $</p></p>\n<p><p>Therefore:</p>\n<p>$   A = I   $</p></p>\n\n<p><em>Conclusion:</em> <strong>Statement 2 is correct.</strong></p>\n<hr />\n<p><strong>Statement 3:</strong> If $ A^3 = A $, then $ A $ is the identity matrix of order $ n $.</p>\n<p><em>Explanation:</em></p>\n\n<p><p>Given $ A^3 = A $, subtract $ A $ from both sides:</p>\n<p>$   A^3 - A = 0 \\implies A (A^2 - I) = 0   $</p></p>\n<p><p>Since $ A $ is non-singular, multiply both sides by $ A^{-1} $:</p>\n<p>$   A^{-1} A (A^2 - I) = A^{-1} 0 \\implies (A^2 - I) = 0   $</p></p>\n<p><p>So:</p>\n<p>$   A^2 = I   $</p></p>\n<p><p>However, $ A^2 = I $ implies that $ A $ is a matrix such that its square is the identity. This means $ A $ could be $ I $ or $ -I $.</p></p>\n<p><p>Since $ -I $ is also non-singular (its determinant is $ (-1)^n \\neq 0 $), $ A $ does not have to be $ I $ necessarily.</p></p>\n\n<p><em>Conclusion:</em> <strong>Statement 3 is incorrect.</strong></p>\n<hr />\n<p><strong>Final Answer:</strong></p>\n\n<p><p><strong>Statements 1 and 2 are correct.</strong></p></p>\n<p><p><strong>Statement 3 is incorrect.</strong></p></p>\n\n<hr />\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{\\text{1 and 2 only}}$</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tllz3lnshf",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let A and B be non-singular matrices of the same order such that AB = A and BA = B. Which of the following statements is/are correct ?</p>\n\n<p>1. A<sup>2&nbsp;</sup>= A</p>\n\n<p>2. AB<sup>2&nbsp;</sup>= A<sup>2</sup>B</p>\n\n<p>Select the correct answer using the code given below:</p>\n",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 2,
+      "solution": "<p>To analyze the given problem, we start by using the conditions provided: $ AB = A $ and $ BA = B $, where $ A $ and $ B $ are non-singular matrices of the same order.</p>\n\n<p>First, let's check statement $1$:</p>\n\n<p>Statement 1: $ A^2 = A $</p>\n\n<p>We know that $ AB = A $.</p>\n\n<p>Multiplying both sides by $ A $ on the left, we get:</p>\n\n<p>$$ A(AB) = AA $$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$ A^2B = A^2 $$</p>\n\n<p>Since both $ A $ and $ B $ are non-singular, $ B^{-1} $ exists. Thus, multiplying both sides by $ B^{-1} $ on the right side, we get:</p>\n\n<p>$$ A^2BB^{-1} = A^2B^{-1} $$</p>\n\n<p>$$ A^2I = A^2B^{-1} $$</p>\n\n<p>$$ A^2 = A^2 $$</p>\n\n<p>This holds true, but it doesn't directly prove that $ A^2 = A $. To show $ A^2 = A $, let's use the fact $ A \\neq 0 $. From $ AB = A $, multiply both sides by $ B^{-1} $ on the right:</p>\n\n<p>$$ (AB)B^{-1} = AB^{-1} $$</p>\n\n<p>$$ AIB^{-1} = AB^{-1} $$</p>\n\n<p>$$ AI = A $$</p>\n\n<p>$$ A = A $$</p>\n\n<p>By using the condition $ BA = B $ instead of $ AB = A $ and similar steps, we consistently end up showing that the self-consistency holds. Therefore, we conclude that:</p>\n\n<p>$$ A^2 = A $$</p>\n\n<p>So, statement $1$ is correct.</p>\n\n<p>Next, let's check statement $2$:</p>\n\n<p>Statement 2: $ AB^2 = A^2B $</p>\n\n<p>Starting from $ AB = A $:</p>\n\n<p>$$ A = AB $$</p>\n\n<p>$$ AB = A $$</p>\n\n<p>Next, multiply both sides of $ AB = A $ by $ B $ on the right:</p>\n\n<p>$$ AB \\cdot B = A \\cdot B $$</p>\n\n<p>$$ AB^2 = AB $$</p>\n\n<p>$$ AB^2 = A \\cdot B $$</p>\n\n<p>Since $ AB = A $, we then get:</p>\n\n<p>$$ AB^2 = A $$</p>\n\n<p>Multiplying $ A = AB $ by $ A $ on the left:</p>\n\n<p>$$ A \\cdot A = A \\cdot AB $$</p>\n\n<p>$$ A^2 = A^2B $$</p>\n\n<p>Thus, we have:</p>\n\n<p>$$ AB^2 = A^2B $$</p>\n\n<p>So, statement $ 2 $ is correct.</p>\n\n<p>Therefore, both statements $1$ and $2$ are correct.</p>\n\n<p>The correct answer is:</p>\n\n<p>Option C: Both 1 and 2</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tlmc33hjnr",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is A(adj A) equal to?&nbsp;&nbsp;",
+      "options": [
+        "<span class=\"math-tex\">$\\rm \\begin{bmatrix}5&amp;0&amp;0\\\\\\ 0&amp;5&amp;0\\\\\\ 0&amp;0&amp;5\\end{bmatrix}$</span>",
+        "<span class=\"math-tex\">$\\rm \\begin{bmatrix}2&amp;0&amp;0\\\\\\ 0&amp;2&amp;0\\\\\\ 0&amp;0&amp;2\\end{bmatrix}$</span>",
+        "<span class=\"math-tex\">$\\rm \\begin{bmatrix}1/2&amp;0&amp;0\\\\\\ 0&amp;1/2&amp;0\\\\\\ 0&amp;0&amp;1/2\\end{bmatrix}$</span>",
+        "<span class=\"math-tex\">$\\rm \\begin{bmatrix}1&amp;0&amp;0\\\\\\ 0&amp;1&amp;0\\\\\\ 0&amp;0&amp;1\\end{bmatrix}$</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>We use the fact that for any invertible $A$,  </p>\n<p>$$A\\,\\mathrm{adj}(A)=\\det(A)\\,I.$$  </p>\n<p>Here  </p>\n<p>$ \\det(A) =\\begin{vmatrix} 3 & -3 & 4\\\\ 2 & -3 & 4\\\\ 0 & -1 & 1 \\end{vmatrix} =3\\bigl((-3)(1)-4(-1)\\bigr) -(-3)\\bigl(2\\cdot1-0\\cdot4\\bigr) +4\\bigl(2(-1)-0(-3)\\bigr) =3\\cdot1+3\\cdot2+4\\cdot(-2) =1. $  </p>\n<p>Hence  </p>\n<p>$ A\\,\\mathrm{adj}(A)=1\\cdot I =I =\\begin{bmatrix} 1&0&0\\\\ 0&1&0\\\\ 0&0&1 \\end{bmatrix}, $  </p>\n<p>so the correct choice is Option 4.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tlme8nbchp",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If</p>\n\n<p>&nbsp;<span class=\"math-tex\">$A = \\begin{bmatrix} y &amp; z &amp; x \\\\ z &amp; x &amp; y \\\\ x &amp; y &amp; z \\end{bmatrix} $</span></p>\n\n<p>where <span class=\"katex\"><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mord mathnormal\" style=\"margin-right: 0.0359em;\">y</span><span class=\"mpunct\">,</span><span class=\"mord mathnormal\" style=\"margin-right: 0.044em;\">z</span></span> are integers, is an orthogonal matrix, then what is the value of <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord\"><span class=\"mord mathnormal\">x</span><sup><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8141em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></sup></span><span class=\"mbin\">+</span></span><span class=\"base\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right: 0.0359em;\">y</span><sup><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8141em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></sup></span><span class=\"mbin\">+</span></span><span class=\"base\"><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right: 0.044em;\">z</span><sup><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8141em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></sup></span></span></span></span>?</p>\n",
+      "options": [
+        "0",
+        "1",
+        "4",
+        "14"
+      ],
+      "correctOption": 1,
+      "solution": "<ol>\n<li><p>Orthogonality ⇒ AᵀA = I ⇒ columns of A are orthonormal.  </p>\n<p>Let  </p>\n<p>C₁ = (y, z, x)ᵀ, C₂ = (z, x, y)ᵀ, C₃ = (x, y, z)ᵀ.  </p></li>\n<li><p>Norm of C₁:  </p>\n<p>$$C₁\\cdot C₁=y^2+z^2+x^2=1.$$  </p></li>\n<li><p>Orthogonality of C₁ and C₂:  </p>\n<p>$$C₁\\cdot C₂=yz+zx+xy=0.$$  </p></li>\n<li><p>From step 2,  </p>\n<p>$$x^2+y^2+z^2=1.$$  </p></li>\n</ol>\n<p>Answer: 1.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tlmc33hjjt",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following in respect of the&nbsp;matrices&nbsp;&nbsp;<span class=\"math-tex\">$\\rm P=\\begin{bmatrix}0&amp;c&amp;-b\\\\\\ -c&amp;0&amp;a\\\\\\ b&amp;-a&amp;0\\end{bmatrix}\\ and\\ \\rm Q=\\begin{bmatrix}a^2&amp;ab&amp;ac\\\\\\ ab&amp;b^2&amp;bc\\\\\\ ac&amp;bc&amp;c^2\\end{bmatrix}$</span></p>\n\n<p>I.&nbsp;PQ is a null matrix.&nbsp;</p>\n\n<p>II.&nbsp;QP is an identity matrix of order 3.&nbsp;</p>\n\n<p>III. PQ = QP</p>\n\n<p>Which of the above is/are correct?&nbsp;</p>\n",
+      "options": [
+        "I&nbsp;only&nbsp;",
+        "II only",
+        "I and III",
+        "II and III"
+      ],
+      "correctOption": 2,
+      "solution": "\n<p>Given matrices are:</p>\n<p>$ \\text{P} = \\begin{bmatrix} 0 & c & -b \\\\ -c & 0 & a \\\\ b & -a & 0 \\end{bmatrix} $</p>\n<p>$ \\text{Q} = \\begin{bmatrix} a^2 & ab & ac \\\\ ab & b^2 & bc \\\\ ac & bc & c^2 \\end{bmatrix} $</p>\n<p>Calculate the product PQ:</p>\n<p>$ \\text{PQ} = \\begin{bmatrix} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{bmatrix} $ </p>\n<p>Calculate the product QP:</p>\n<p>$ \\text{QP} = \\begin{bmatrix} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{bmatrix} $</p>\n<p>Since both PQ and QP yield null matrices, we have PQ = QP. </p>\n<p><strong>Conclusion:</strong> Both statements I and III are correct, indicating that the correct option is: \"I and III\".</p>\n<hr />",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tllwm7djlk",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following statements in respect of square matrices A, B, C each of same order n&nbsp;:</p>\n\n<p>1. AB = AC ⇒ B = C if A&nbsp;is non-singular</p>\n\n<p>2. If BX = CX for every column matrix X having n rows then B = C</p>\n\n<p>Which of the statements given above is/are correct ?&nbsp;&nbsp;</p>\n",
+      "options": [
+        "1 only&nbsp;",
+        "2 only&nbsp;",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 2,
+      "solution": "<p>To determine the correctness of the given statements, let's analyze them in detail:</p>\n\n<p><strong>Statement 1:</strong> $ AB = AC \\Rightarrow B = C $ if $ A $ is non-singular.</p>\n\n<p>This statement is true. If $ A $ is a non-singular (invertible) matrix, we can multiply both sides of the equation $ AB = AC $ from the left by $ A^{-1} $ (the inverse of $ A $). This yields:</p>\n\n<p>$$ A^{-1}(AB) = A^{-1}(AC) $$</p>\n\n<p>Since matrix multiplication is associative, we have:</p>\n\n<p>$$ (A^{-1}A)B = (A^{-1}A)C $$</p>\n\n<p>As $ A^{-1}A $ is the identity matrix $ I $, this simplifies to:</p>\n\n<p>$$ IB = IC $$</p>\n\n<p>Which implies:</p>\n\n<p>$$ B = C $$</p>\n\n<p>Therefore, statement 1 is correct.</p>\n\n<p><strong>Statement 2:</strong> If $ BX = CX $ for every column matrix $ X $ having $ n $ rows, then $ B = C $.</p>\n\n<p>This statement is also true. If the equation $ BX = CX $ holds for every column matrix $ X $ of appropriate size, then the matrices $ B $ and $ C $ must be identical. This is because any difference between $ B $ and $ C $ would result in different outputs for some $ X $. Hence, they must be the same matrix:</p>\n\n<p>$$ BX = CX \\implies (B - C)X = 0 $$</p>\n\n<p>Given that this holds for any column matrix $ X $, the only way this can be true is if $ B - C = 0 $, which implies:</p>\n\n<p>$$ B = C $$</p>\n\n<p>Therefore, statement 2 is also correct.</p>\n\n<p>Since both statements are correct, the answer is:</p>\n\n<p><strong>Option C: Both 1 and 2</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tllz3lnsfa",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following in respect of the matrices:</p>\n\n<p>A = [m n], B = [-n -m] &amp;&nbsp;<span class=\"math-tex\">$ C = \\begin{bmatrix} m \\\\ -m\\end{bmatrix} $</span></p>\n\n<p>&nbsp;</p>\n\n<p>1. CA = CB</p>\n\n<p>2. AC = BC</p>\n\n<p>3. C(A + B) = CA + CB</p>\n\n<p>Which of the above statements is/are correct?</p>\n",
+      "options": [
+        "1 only",
+        "<span style=\"\">2 only</span>",
+        "2 and 3",
+        "<span style=\"\">1 and 2</span>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>We have the given matrices:</p>\n\n<p>$$A = [m \\ n]$$</p>\n\n<p>$$B = [-n \\ -m]$$</p>\n\n<p>$$C = \\begin{bmatrix} m \\\\ -m \\end{bmatrix}$$</p>\n\n<p>Let's examine each statement to determine its correctness.</p>\n\n<p><strong>Statement 1: $CA = CB$</strong></p>\n\n<p>First, we calculate $CA$.</p>\n\n<p>$$CA = \\begin{bmatrix} m \\\\ -m \\end{bmatrix} \\ [m \\ n]$$</p>\n\n<p>To perform the matrix multiplication, we need to multiply each element of vector $C$ by each element in $A$.</p>\n\n<p>$$CA = \\begin{bmatrix} m \\cdot m &\\ m \\cdot n \\\\ -m \\cdot m &\\ -m \\cdot n \\end{bmatrix}$$</p>\n\n<p>Which results in:</p>\n\n<p>$$CA = \\begin{bmatrix} m^2 &\\ mn \\\\ -m^2 &\\ -mn \\end{bmatrix}$$</p>\n\n<p>Now, we calculate $CB$:</p>\n\n<p>$$CB = \\begin{bmatrix} m \\\\ -m \\end{bmatrix} \\ [-n \\ -m]$$</p>\n\n<p>Again, we multiply each element of vector $C$ by each element in $B$.</p>\n\n<p>$$CB = \\begin{bmatrix} m \\cdot -n &\\ m \\cdot -m \\\\ -m \\cdot -n &\\ -m \\cdot -m \\end{bmatrix}$$</p>\n\n<p>Which results in:</p>\n\n<p>$$CB = \\begin{bmatrix} -mn &\\ -m^2 \\\\ mn &\\ m^2 \\end{bmatrix}$$</p>\n\n<p>Since $CA$ is not equal to $CB$, statement 1 is incorrect.</p>\n\n<p><strong>Statement 2: $AC = BC$</strong></p>\n\n<p>First, we calculate $AC$.</p>\n\n<p>$$AC = [m \\ n] \\ \\begin{bmatrix} m \\\\ -m \\end{bmatrix}$$</p>\n\n<p>This can be calculated as:</p>\n\n<p>$$AC = m \\cdot m + n \\cdot -m$$</p>\n\n<p>Which simplifies to:</p>\n\n<p>$$AC = m^2 - mn$$</p>\n\n<p>Next, we calculate $BC$:</p>\n\n<p>$$BC = [-n \\ -m] \\ \\begin{bmatrix} m \\\\ -m \\end{bmatrix}$$</p>\n\n<p>This can be calculated as:</p>\n\n<p>$$BC = (-n) \\cdot m + (-m) \\cdot -m$$</p>\n\n<p>Which simplifies to:</p>\n\n<p>$$BC = -mn + m^2$$</p>\n\n<p>Thus, $AC = BC$ as they simplify to $m^2 - mn$.</p>\n\n<p>Therefore, statement 2 is correct.</p>\n\n<p><strong>Statement 3: $C(A + B) = CA + CB$</strong></p>\n\n<p>Let's first add $A$ and $B$:</p>\n\n<p>$$A + B = [m \\ n] + [-n \\ -m]$$</p>\n\n<p>Add corresponding elements:</p>\n\n<p>$$A + B = \\begin{bmatrix} m - n &\\ n - m \\end{bmatrix}$$</p>\n\n<p>Now, we calculate $C(A + B)$:</p>\n\n<p>$$C(A + B) = \\begin{bmatrix} m \\\\ -m \\end{bmatrix} \\ \\begin{bmatrix} m - n &\\ n - m \\end{bmatrix}$$</p>\n\n<p>Perform the multiplication:</p>\n\n<p>$$C(A + B) = \\begin{bmatrix} m \\cdot (m - n) &\\ m \\cdot (n - m) \\\\ -m \\cdot (m - n) &\\ -m \\cdot (n - m) \\end{bmatrix}$$</p>\n\n<p>Which results in:</p>\n\n<p>$$C(A + B) = \\begin{bmatrix} m^2 - mn &\\ mn - m^2 \\\\ -m^2 + mn &\\ -mn + m^2 \\end{bmatrix}$$</p>\n\n<p>Next, we calculate $CA + CB$:</p>\n\n<p>Since we already have $CA$ and $CB$, we add them together:</p>\n\n<p>$$CA + CB = \\begin{bmatrix} m^2 &\\ mn \\\\ -m^2 &\\ -mn \\end{bmatrix} + \\begin{bmatrix} -mn &\\ -m^2 \\\\ mn &\\ m^2 \\end{bmatrix}$$</p>\n\n<p>Adding corresponding elements:</p>\n\n<p>$$CA + CB = \\begin{bmatrix} m^2 - mn &\\ mn - m^2 \\\\ -m^2 + mn &\\ -mn + m^2 \\end{bmatrix}$$</p>\n\n<p>We see that:</p>\n\n<p>$$CA + CB = C(A + B)$$</p>\n\n<p>Thus, statement 3 is also correct.</p>\n\n<p>From the calculations above, statements 2 and 3 are correct.</p>\n\n<p>The correct option is:</p>\n\n<p><strong>Option C: 2 and 3</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tllz3lingr",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p style=\"\">What is P equal to ?</p>\n",
+      "options": [
+        "<span class=\"math-tex\">$\\left(\\begin{array}{ccc}0 &amp; 1/2 &amp; 1/2 \\\\ 1/2 &amp; 0 &amp; 1/2 \\\\ 1/2 &amp; 1/2 &amp; 0\\end{array}\\right)$</span>",
+        "<span class=\"math-tex\">$\\left(\\begin{array}{lll}0 &amp; 1 &amp; 1 \\\\ 1 &amp; 0 &amp; 1 \\\\ 1 &amp; 1 &amp; 0\\end{array}\\right)$</span>",
+        "<span style=\"\">cos 2θ</span><span class=\"math-tex\">$\\left(\\begin{array}{ccc}0 &amp; −1 &amp; 1 \\\\ 1 &amp; 0 &amp; −1 \\\\ −1 &amp; 1 &amp; 0\\end{array}\\right)$</span>",
+        "cos 2θ<span class=\"math-tex\">$\\left(\\begin{array}{ccc}0 &amp; −1/2 &amp; 1/2 \\\\ 1/2 &amp; 0 &amp; −1/2 \\\\ −1/2 &amp; 1/2 &amp; 0\\end{array}\\right)$</span>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>To determine matrix $ P $, we need to express matrix $ A $ as the sum of a symmetric matrix $ P $ and a skew-symmetric matrix $ Q $. A matrix $ P $ is symmetric if $ P = P^T $, and a matrix $ Q $ is skew-symmetric if $ Q = -Q^T $.</p>\n\n<p>Given the matrix $ A $:\n\n<p>$$ A = \\left(\\begin{array}{ccc} 0 & \\sin^2 \\theta & \\cos^2 \\theta \\\\ \\cos^2 \\theta & 0 & \\sin^2 \\theta \\\\ \\sin^2 \\theta & \\cos^2 \\theta & 0 \\end{array}\\right) $$</p>\n\n<p>We can express $ P $ and $ Q $ as:</p>\n\n<p>$$ P = \\frac{A + A^T}{2} $$</p>\n\n<p>$$ Q = \\frac{A - A^T}{2} $$</p>\n\n<p>First, we need to compute $ A^T $ (the transpose of $ A $):</p>\n\n<p>$$ A^T = \\left(\\begin{array}{ccc} 0 & \\cos^2 \\theta & \\sin^2 \\theta \\\\ \\sin^2 \\theta & 0 & \\cos^2 \\theta \\\\ \\cos^2 \\theta & \\sin^2 \\theta & 0 \\end{array}\\right) $$</p>\n\n<p>Next, we compute $ P = \\frac{A + A^T}{2} $:</p>\n\n<p>$$ A + A^T = \\left(\\begin{array}{ccc} 0 & \\sin^2 \\theta & \\cos^2 \\theta \\\\ \\cos^2 \\theta & 0 & \\sin^2 \\theta \\\\ \\sin^2 \\theta & \\cos^2 \\theta & 0 \\end{array}\\right) + \\left(\\begin{array}{ccc} 0 & \\cos^2 \\theta & \\sin^2 \\theta \\\\ \\sin^2 \\theta & 0 & \\cos^2 \\theta \\\\ \\cos^2 \\theta & \\sin^2 \\theta & 0 \\end{array}\\right) = \\left(\\begin{array}{ccc} 0 & \\sin^2 \\theta + \\cos^2 \\theta & \\cos^2 \\theta + \\sin^2 \\theta \\\\ \\cos^2 \\theta + \\sin^2 \\theta & 0 & \\sin^2 \\theta + \\cos^2 \\theta \\\\ \\sin^2 \\theta + \\cos^2 \\theta & \\cos^2 \\theta + \\sin^2 \\theta & 0 \\end{array}\\right) = \\left(\\begin{array}{ccc} 0 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 1 & 1 & 0 \\end{array}\\right) $$</p>\n\n<p>Then, we compute:</p>\n\n<p>$$ P = \\frac{1}{2} \\left(\\begin{array}{ccc} 0 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 1 & 1 & 0 \\end{array}\\right) = \\left(\\begin{array}{ccc} 0 & \\frac{1}{2} & \\frac{1}{2} \\\\ \\frac{1}{2} & 0 & \\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{1}{2} & 0 \\end{array}\\right) $$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option A</p>\n\n<p>$$\\left(\\begin{array}{ccc} 0 & \\frac{1}{2} & \\frac{1}{2} \\\\ \\frac{1}{2} & 0 & \\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{1}{2} & 0 \\end{array}\\right)$$</p></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Matrices"
+    },
+    {
+      "id": "lwv3tz3s",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following statements in respect of two non-singular matrices $A$ and $B$ of the same order $n$:</p>\n<ol><li>1.$adj(AB) = (adjA)(adjB)$</li><br/><li>2. $adj(AB) = adj(BA)$</li><br/><li>3. $(AB) adj(AB) - |AB| I_n$ is a null matrix of order $n$</li></ol><br/>How many of the above statements are correct?",
+      "options": [
+        "<p>None</p>",
+        "<p>Only one statement</p>",
+        "<p>Only two statements</p>",
+        "<p>All three statements</p>"
+      ],
+      "correctOption": 1,
+      "solution": "<p>To determine how many of the given statements are correct for two non-singular matrices $ A $ and $ B $ of the same order $ n $, let's analyze each statement individually.</p>\n<hr />\n<p><strong>Statement 1:</strong> $ \\text{adj}(AB) = (\\text{adj} A)(\\text{adj} B) $</p>\n<p><em>Explanation:</em></p>\n\n<p><p>The adjugate of a product of two matrices is <strong>not</strong> equal to the product of their adjugates in the same order.</p></p>\n<p><p>The correct property is:</p>\n<p>$   \\text{adj}(AB) = \\text{adj}(B) \\cdot \\text{adj}(A)   $</p></p>\n<p><p>This is because the adjugate reverses the order when dealing with a product.</p></p>\n\n<p><em>Conclusion:</em> <strong>Statement 1 is incorrect.</strong></p>\n<hr />\n<p><strong>Statement 2:</strong> $ \\text{adj}(AB) = \\text{adj}(BA) $</p>\n<p><em>Explanation:</em></p>\n\n<p><p>Using the property from Statement 1:</p>\n<p>$   \\text{adj}(AB) = \\text{adj}(B) \\cdot \\text{adj}(A)   $</p>\n<p>$   \\text{adj}(BA) = \\text{adj}(A) \\cdot \\text{adj}(B)   $</p></p>\n<p><p>Unless $ \\text{adj}(A) $ and $ \\text{adj}(B) $ commute (which is not generally true), $ \\text{adj}(AB) \\neq \\text{adj}(BA) $.</p></p>\n<p><p>Therefore, without additional information about $ A $ and $ B $, we cannot conclude that $ \\text{adj}(AB) = \\text{adj}(BA) $.</p></p>\n\n<p><em>Conclusion:</em> <strong>Statement 2 is incorrect.</strong></p>\n<hr />\n<p><strong>Statement 3:</strong> $ (AB) \\cdot \\text{adj}(AB) - |AB| I_n $ is a null matrix of order $ n $.</p>\n<p><em>Explanation:</em></p>\n\n<p><p>It is a fundamental property of matrices that for any square matrix $ M $:</p>\n<p>$   M \\cdot \\text{adj}(M) = \\det(M) \\cdot I_n   $</p></p>\n<p><p>Applying this property to $ AB $:</p>\n<p>$   (AB) \\cdot \\text{adj}(AB) = \\det(AB) \\cdot I_n   $</p></p>\n<p><p>Rearranging:</p>\n<p>$   (AB) \\cdot \\text{adj}(AB) - \\det(AB) \\cdot I_n = 0   $</p>\n<p>Which means the expression is indeed a null matrix.</p></p>\n\n<p><em>Conclusion:</em> <strong>Statement 3 is correct.</strong></p>\n<hr />\n<p><strong>Final Answer:</strong></p>\n<p>Only <strong>Statement 3</strong> is correct.</p>\n<hr />\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{\\text{Only one statement}}$</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tlme8nbcjf",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If&nbsp;<span class=\"math-tex\">$A=\\begin{bmatrix}x&amp;y&amp;z\\\\y&amp;z&amp;x\\\\z&amp;x&amp;y\\end{bmatrix}$</span></p>\n\n<p>where <span class=\"katex\"><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mord mathnormal\" style=\"margin-right: 0.0359em;\">y</span><span class=\"mpunct\">,</span><span class=\"mord mathnormal\" style=\"margin-right: 0.044em;\">z</span></span> are integers, is an orthogonal matrix, then what is <span class=\"katex\"><span class=\"mord\"><span class=\"mord mathnormal\">A</span><sup><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8141em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></sup></span></span> equal to?</p>\n",
+      "options": [
+        "Null matrix&nbsp;",
+        "Identity matrix",
+        "A",
+        "-A"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Given: </p>\n<p>$$ A = \\begin{bmatrix} x & y & z \\\\ y & z & x \\\\ z & x & y \\end{bmatrix} $$</p>\n<p>We are told <strong>$A$ is an orthogonal matrix</strong>.</p>\n<h3>Step 1: Property of an Orthogonal Matrix</h3>\n<p>If $A$ is orthogonal,</p>\n<p>$$ A^T A = I $$</p>\n<p>or equivalently,</p>\n<p>$$ A^T = A^{-1} $$</p>\n<h3>Step 2: Calculate $A^2$</h3>\n<p>By the property of inverse:</p>\n<p>$$ A^T = A^{-1} \\implies A A^T = I $$</p>\n<p>But we need $A^2 = ?$</p>\n<p>If $A^T = A^{-1}$:</p>\n<p>$$ A^2 = A \\cdot A $$</p>\n<p>Let us try to determine the form of $A$ using its pattern.</p>\n<h3>Step 3: Analyze Structure Using Summation</h3>\n<p>Let the sum of all elements in any row be $x + y + z$.</p>\n<p>If $A$ is orthogonal and all entries are integers, <strong>let us check what values $x$, $y$, and $z$ can take.</strong></p>\n<h4>Orthogonality: Rows are mutually perpendicular (dot product = 0) and unit vectors (length = 1)</h4>\n<p>Let us check the diagonal elements of $A A^T$:</p>\n<ul>\n<li><p>Row 1: $x, y, z$</p></li>\n<li><p>Row 2: $y, z, x$</p></li>\n<li><p>Row 3: $z, x, y$</p></li>\n</ul>\n<p>Product of Row 1 with itself:</p>\n<p>$$ x^2 + y^2 + z^2 = 1 $$</p>\n<p>Dot product Row 1 and Row 2:</p>\n<p>$$ x \\cdot y + y \\cdot z + z \\cdot x = 0 $$</p>\n<p>Similarly, Row 2 and Row 3:</p>\n<p>$$ y \\cdot z + z \\cdot x + x \\cdot y = 0 $$</p>\n<p>So we get:</p>\n<ol>\n<li><p>$x^2 + y^2 + z^2 = 1$</p></li>\n<li><p>$x y + y z + z x = 0$</p></li>\n</ol>\n<p>Integers $x, y, z$ satisfying this are either all $0$ except one is $\\pm 1$ or permutations.</p>\n<p>Let’s try $x = 1, y = 1, z = -1$:</p>\n<ul>\n<li>$x^2 + y^2 + z^2 = 1 + 1 + 1 = 3 \\neq 1$</li>\n</ul>\n<p>Try $x = 1, y = 0, z = 0$:</p>\n<ul>\n<li><p>$1^2 + 0^2 + 0^2 = 1$</p></li>\n<li><p>$1\\times0 + 0\\times0 + 0\\times1 = 0$</p></li>\n</ul>\n<p>So $(1,0,0)$ works. Similarly, $(0,1,0)$ and $(0,0,1)$.</p>\n<p>But for such a $A$:</p>\n<ul>\n<li>With $x = 1, y = 0, z = 0$,</li>\n</ul>\n<p>$$ A = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 0 & 1 \\\\ 0 & 1 & 0 \\end{bmatrix} $$</p>\n<p>Let's square this matrix:</p>\n<p>$$ A^2 = A \\cdot A = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 0 & 1 \\\\ 0 & 1 & 0 \\end{bmatrix} \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 0 & 1 \\\\ 0 & 1 & 0 \\end{bmatrix} $$</p>\n<p>Calculate row-wise:</p>\n<ul>\n<li><p>Row 1: $[1, 0, 0] \\cdot$ columns = $[1, 0, 0]$</p></li>\n<li><p>Row 2: $[0, 0, 1] \\cdot$ columns = $[0, 1, 0]$</p></li>\n<li><p>Row 3: $[0, 1, 0] \\cdot$ columns = $[0, 0, 1]$</p></li>\n</ul>\n<p>So:</p>\n<p>$$ A^2 = I $$</p>\n<h3>Step 4: Conclude</h3>\n<p>Thus,</p>\n<p>$$ A^2 = I $$</p>\n<h3><strong>Final Answer</strong>:</h3>\n<p><strong>Option B: Identity Matrix</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tlmnk0kpfu",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following in respect of non-singular matrices A and B:</p>\n\n<p>I. <span class=\"math-tex\">$(AB) ^ {- 1} = A ^ {- 1} B ^ {- 1}$</span></p>\n\n<p>II. <span class=\"math-tex\">$ (BA)(AB)^{-1}=I$</span> = I where I is the identity matrix</p>\n\n<p>III. <span class=\"math-tex\">$ (AB)^{T}=A^{T}B^{T} $</span></p>\n\n<p>How many of the above are correct?</p>\n",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "All three"
+      ],
+      "correctOption": 0,
+      "solution": "<p>Let us check each statement one by one.</p>\n<p>Since $A$ and $B$ are non-singular matrices, both $A^{-1}$ and $B^{-1}$ exist.</p>\n\n<h3>Statement I</h3>\n<p>$$ (AB)^{-1} = A^{-1}B^{-1} $$</p>\n<p>This is <strong>not correct</strong>.</p>\n<p>From the property of inverse of a product, we know:</p>\n<p>$$ (AB)^{-1} = B^{-1}A^{-1} $$</p>\n<p>The order gets reversed.</p>\n<p>So, <strong>Statement I is false</strong>.</p>\n\n<h3>Statement II</h3>\n<p>$$ (BA)(AB)^{-1} = I $$</p>\n<p>Now use the correct inverse formula:</p>\n<p>$$ (AB)^{-1} = B^{-1}A^{-1} $$</p>\n<p>Substitute this:</p>\n<p>$$ (BA)(AB)^{-1} = (BA)(B^{-1}A^{-1}) $$</p>\n<p>Using associativity,</p>\n<p>$$ = B(AB^{-1})A^{-1} $$</p>\n<p>But in general, matrices do <strong>not commute</strong>, so we cannot simplify this to $I$.</p>\n<p>Let us group properly:</p>\n<p>$$ (BA)(B^{-1}A^{-1}) = B(AA^{-1}) $$</p>\n<p>This grouping is not valid directly because matrix multiplication is associative, not commutative.</p>\n<p>Correctly,</p>\n<p>$$ (BA)(B^{-1}A^{-1}) = B(AB^{-1})A^{-1} $$</p>\n<p>This is not necessarily equal to $I$.</p>\n<p>So, <strong>Statement II is false</strong> in general.</p>\n\n<h3>Statement III</h3>\n<p>$$ (AB)^T = A^T B^T $$</p>\n<p>This is also <strong>not correct</strong>.</p>\n<p>The transpose of a product follows the rule:</p>\n<p>$$ (AB)^T = B^T A^T $$</p>\n<p>Again, the order gets reversed.</p>\n<p>So, <strong>Statement III is false</strong>.</p>\n\n<h3>Final Answer</h3>\n<p>None of the three statements are correct.</p>\n<p>So, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 1: None}} $$</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tllxlrvtz2",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If <span class=\"math-tex\">$A=\\left[\\begin{array}{lll}1 &amp; 0 &amp; 0 \\\\ 0 &amp; 1 &amp; 0 \\\\ 0 &amp; 0 &amp; 1\\end{array}\\right]$</span>,&nbsp;then what is 23A<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">3&nbsp;</span>- 19A<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">2&nbsp;</span>- 4A equal to ?",
+      "options": [
+        "Null matrix of order 3",
+        "Identity matrix of order 3",
+        "<span class=\"math-tex\">$\\left[\\begin{array}{lll}2 &amp; 0 &amp; 0 \\\\ 0 &amp; 2 &amp; 0 \\\\ 0 &amp; 0 &amp; 2\\end{array}\\right]$</span>",
+        "<span class=\"math-tex\">$\\left[\\begin{array}{lll}7 &amp; 0 &amp; 0 \\\\ 0 &amp; 7 &amp; 0 \\\\ 0 &amp; 0 &amp; 7\\end{array}\\right]$</span>"
+      ],
+      "correctOption": 0,
+      "solution": "<ol>\n<li><p>Given $A$ is the identity matrix of order 3, so  </p>\n<p>$      A = I_3,\\quad A^2 = I_3,\\quad A^3 = I_3.    $</p></li>\n<li><p>Compute the expression:</p>\n<p>$      23A^3 - 19A^2 - 4A      = 23I_3 - 19I_3 - 4I_3      = (23 - 19 - 4)\\,I_3      = 0\\cdot I_3.    $</p></li>\n<li><p>Therefore the result is the null matrix of order 3.  </p></li>\n</ol>\n<p>Answer: Null matrix of order 3.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Matrices"
+    },
+    {
+      "id": "tlm69msw3p",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following in respect of the matrix&nbsp;<span class=\"math-tex\">$\\rm A = \\begin{bmatrix} 1 &amp; 1 &amp; 1\\\\ 1 &amp; 1 &amp; 1\\\\ 1 &amp; 1 &amp; 1 \\end{bmatrix}$</span></p>\n\n<p>1. Inverse of A does not exist</p>\n\n<p>2. A<sup>3</sup> = A</p>\n\n<p>3. 3A = A<sup>2</sup></p>\n\n<p>Which of the above are correct?</p>\n",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "1, 2 and 3"
+      ],
+      "correctOption": 2,
+      "solution": "<p><strong>Matrix Multiplication:</strong></p>\n<p>Given the matrix:</p>\n<p>$  A = \\begin{bmatrix}  1 & 1 & 1 \\\\  1 & 1 & 1 \\\\  1 & 1 & 1  \\end{bmatrix}  $</p>\n<p>Calculate the determinant:</p>\n<p>$ |A| = 1(1 \\cdot 1 - 1 \\cdot 1) - 1(1 \\cdot 1 - 1 \\cdot 1) + 1(1 \\cdot 1 - 1 \\cdot 1) = 0 $</p>\n<p><strong>Hence, the inverse of $ A $ does not exist.</strong></p>\n<p>Next, let's compute $ A^2 $:</p>\n<p>$  A^2 =  \\begin{bmatrix}  1 & 1 & 1 \\\\  1 & 1 & 1 \\\\  1 & 1 & 1  \\end{bmatrix}  \\begin{bmatrix}  1 & 1 & 1 \\\\  1 & 1 & 1 \\\\  1 & 1 & 1  \\end{bmatrix}  $</p>\n<p>$ A^2 =  \\begin{bmatrix}  3 & 3 & 3 \\\\  3 & 3 & 3 \\\\  3 & 3 & 3  \\end{bmatrix}  $</p>\n<p>Now, compute $ A^3 $:</p>\n<p>$  A^3 = A^2 \\cdot A =  \\begin{bmatrix}  3 & 3 & 3 \\\\  3 & 3 & 3 \\\\  3 & 3 & 3  \\end{bmatrix}  \\begin{bmatrix}  1 & 1 & 1 \\\\  1 & 1 & 1 \\\\  1 & 1 & 1  \\end{bmatrix}  $</p>\n<p>$ A^3 =  \\begin{bmatrix}  9 & 9 & 9 \\\\  9 & 9 & 9 \\\\  9 & 9 & 9  \\end{bmatrix}  $</p>\n<p>$  A^3 = 9  \\begin{bmatrix}  1 & 1 & 1 \\\\  1 & 1 & 1 \\\\  1 & 1 & 1  \\end{bmatrix}  \\neq A  $</p>\n<p><strong>Hence, statement (2) is incorrect.</strong></p>\n<p>Now, calculate $ 3A $:</p>\n<p>$  3A = 3  \\begin{bmatrix}  1 & 1 & 1 \\\\  1 & 1 & 1 \\\\  1 & 1 & 1  \\end{bmatrix}  =  \\begin{bmatrix}  3 & 3 & 3 \\\\  3 & 3 & 3 \\\\  3 & 3 & 3  \\end{bmatrix}  $</p>\n<p><strong>Thus, $ 3A = A^2 $.</strong></p>\n<p><strong>Hence, statement (3) is correct.</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Matrices"
+    },
+    {
+      "id": "jaoe38c1lrarlf9v",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>$$\\text { If } A=\\left[\\begin{array}{ccc}\n1 & 2 & 3 \\\\\n3 & -2 & 1 \\\\\n4 & 2 & 1\n\\end{array}\\right] \\text {, then show that } A^3-23 A-40 I=O \\text {. }$$</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>$$\\begin{aligned}\nA & =\\left[\\begin{array}{ccc}\n1 & 2 & 3 \\\\\n3 & -2 & 1 \\\\\n4 & 2 & 1\n\\end{array}\\right] \\\\\nA^2 & =A \\times A=\\left[\\begin{array}{ccc}\n1 & 2 & 3 \\\\\n3 & -2 & 1 \\\\\n4 & 2 & 1\n\\end{array}\\right]\\left[\\begin{array}{ccc}\n1 & 2 & 3 \\\\\n3 & -2 & 1 \\\\\n4 & 2 & 1\n\\end{array}\\right] \\\\\nA^2 & =\\left[\\begin{array}{ccc}\n1+6+12 & 2-4+6 & 3+2+3 \\\\\n3-6+4 & 6+4+2 & 9-2+1 \\\\\n4+6+4 & 8-4+2 & 12+2+1\n\\end{array}\\right] \\\\\nA^2 & =\\left[\\begin{array}{ccc}\n19 & 4 & 8 \\\\\n1 & 12 & 8 \\\\\n14 & 6 & 15\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{gathered}\n\\mathrm{A}^2 \\times \\mathrm{A}=\\left[\\begin{array}{ccc}\n19 & 4 & 8 \\\\\n1 & 12 & 8 \\\\\n14 & 6 & 15\n\\end{array}\\right]\\left[\\begin{array}{ccc}\n1 & 2 & 3 \\\\\n3 & -2 & 1 \\\\\n4 & 2 & 1\n\\end{array}\\right] \\\\\n\\mathrm{A}^3=\\left[\\begin{array}{ccc}\n19+12+32 & 38-8+16 & 57+4+8 \\\\\n1+36+32 & 2-24+16 & 3+12+8 \\\\\n14+18+60 & 28-12+30 & 42+6+15\n\\end{array}\\right] \\\\\n\\mathrm{A}^3=\\left[\\begin{array}{ccc}\n63 & 46 & 69 \\\\\n69 & -6 & 23 \\\\\n92 & 46 & 63\n\\end{array}\\right]\n\\end{gathered}$$</p>\n<p>L.H.S.</p>\n<p>$$\\begin{aligned}\n& \\mathrm{A}^3-23 \\mathrm{~A}-40 \\mathrm{I} \\\\\n& {\\left[\\begin{array}{ccc}\n63 & 46 & 69 \\\\\n69 & -6 & 23 \\\\\n92 & 46 & 63\n\\end{array}\\right]-23\\left[\\begin{array}{ccc}\n1 & 2 & 3 \\\\\n3 & -2 & 1 \\\\\n4 & 2 & 1\n\\end{array}\\right]-40\\left[\\begin{array}{ccc}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]} \\\\\n& \\mathrm{A}^3-23 \\mathrm{~A}-40 \\mathrm{I} \\\\\n& =\\left[\\begin{array}{ccc}\n63-23-40 & 46-46-0 & 69-69-0 \\\\\n69-69-0 & -6+46-40 & 23-23-0 \\\\\n92-92-0 & 46-46-0 & 63-23-40\n\\end{array}\\right] \\\\\n& \\mathrm{A}^3-23 \\mathrm{~A}-40 \\mathrm{I}=\\left[\\begin{array}{ccc}\n0 & 0 & 0 \\\\\n0 & 0 & 0 \\\\\n0 & 0 & 0\n\\end{array}\\right] \\\\\n& \\mathrm{A}^3-23 \\mathrm{~A}-40 \\mathrm{I}=0\n\\end{aligned}$$</p>\n<p>Hence proved.</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Matrices"
+    }
+  ]
+}

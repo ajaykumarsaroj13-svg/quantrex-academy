@@ -1,0 +1,285 @@
+{
+  "testId": "tst-19g61moo5w85z",
+  "title": "Functions Test - 3 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "tllz3lnsxx",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If f(x) = 4x + 3, then what is f <span style=\"font-size:12px;\">o</span> f <span style=\"font-size:12px;\">o</span> f(-1) equal to?",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctOption": 0,
+      "solution": "<p>To solve for $ f \\circ f \\circ f(-1) $, we first need to evaluate each step sequentially. Given the function $ f(x) = 4x + 3 $, let's begin by finding $ f(-1) $.</p>\n\n<p>1. Calculate $ f(-1) $:</p>\n\n<p>$$ f(-1) = 4(-1) + 3 = -4 + 3 = -1 $$</p>\n\n<p>So, $ f(-1) = -1 $.</p>\n\n<p>2. Next, we need to find $ f(f(-1)) $. From the previous step, we know $ f(-1) = -1 $, so:</p>\n\n<p>$$ f(f(-1)) = f(-1) = -1 $$</p>\n\n<p>3. Finally, we need to find $ f(f(f(-1))) $. Again, since $ f(f(-1)) = -1 $, we get:</p>\n\n<p>$$ f(f(f(-1))) = f(-1) = -1 $$</p>\n\n<p>Therefore, $ f \\circ f \\circ f(-1) $ is equal to -1.</p>\n\n<p>The correct option is:</p>\n\n<p><strong>Option A: -1</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Functions"
+    },
+    {
+      "id": "tXk6WTp3s2gOZF5efd1kls4q62e",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let f, g : N $$ \\to $$ N such that f(n + 1) = f(n) + f(1) $$\\forall $$ n$$\\in$$N and g be any arbitrary function. Which of the following statements is NOT true?",
+      "options": [
+        "If g is onto, then fog is one-one",
+        "f is one-one",
+        "If f is onto, then f(n) = n $$\\forall $$n$$\\in$$N",
+        "If fog is one-one, then g is one-one"
+      ],
+      "correctOption": 0,
+      "solution": "$$f(n + 1) = f(n) + 1$$<br><br>$$f(2) = 2f(1)$$<br><br>$$f(3) = 3f(1)$$<br><br>$$f(4) = 4f(1)$$<br><br>.....<br><br>$$f(n) = nf(1)$$<br><br>$$f(x)$$ is one-one",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "ZNZvKXKTjS5gHSHCiC1kk3zk1zy",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let the function f : [0, 1] $$ \\to $$ R be defined by<br><br>$$f(x) = {{{4^x}} \\over {{4^x} + 2}}$$<br><br>Then the value of $$f\\left( {{1 \\over {40}}} \\right) + f\\left( {{2 \\over {40}}} \\right) + f\\left( {{3 \\over {40}}} \\right) + ... + f\\left( {{{39} \\over {40}}} \\right) - f\\left( {{1 \\over 2}} \\right)$$ is ..........",
+      "options": [],
+      "correctOption": 0,
+      "solution": "The given function f : [0, 1] $$ \\to $$ R be define by<br><br>$$f(x) = {{{4^x}} \\over {{4^x} + 2}}$$<br><br>$$ \\because $$ $$f(1 - x) = {{{4^{1 - x}}} \\over {{4^{1 - x}} + 2}} = {2 \\over {2 + {4^x}}}$$<br><br>$$ \\therefore $$ $$f(x) + f(1 - x) = {{{4^x}} \\over {{4^x} + 2}} + {2 \\over {2 + {4^x}}}$$<br><br>$$ = {{{4^x} + 2} \\over {{4^x} + 2}}$$<br><br>So, f(x) + f(1 $$-$$ x) = 1 .....(i)<br><br>$$ \\therefore $$ $$f\\left( {{1 \\over {40}}} \\right) + f\\left( {{2 \\over {40}}} \\right) + f\\left( {{3 \\over {40}}} \\right) + ... + f\\left( {{{39} \\over {40}}} \\right) - f\\left( {{1 \\over 2}} \\right)$$<br><br>$$ = \\left[ {f\\left( {{1 \\over {40}}} \\right) + f\\left( {{{39} \\over {40}}} \\right)} \\right] + \\left[ {f\\left( {{2 \\over {40}}} \\right) + f\\left( {{{38} \\over {40}}} \\right)} \\right] + ... + \\left[ {f\\left( {{{18} \\over {40}}} \\right) + f\\left( {{{22} \\over {40}}} \\right)} \\right] + \\left[ {f\\left( {{{19} \\over {40}}} \\right) + f\\left( {{{21} \\over {40}}} \\right)} \\right] + \\left[ {f\\left( {{{20} \\over {40}}} \\right) - f\\left( {{1 \\over 2}} \\right)} \\right]$$<br><br>$$ = \\{ 1 + 1 + ... + 1 + 1\\}  + f\\left( {{1 \\over 2}} \\right) - f\\left( {{1 \\over 2}} \\right)$$\n<br><br> $$ = \\{ 1 + 1 + ... + 1 + 1\\}$$(19 times)\n{from Eq. (i)}<br><br>= 19.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "ml7upoy9",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Given below are two statements :</p>\n<p><b>Statement I :</b> The function $f: \\mathbb{R} \\to \\mathbb{R}$ defined by $f(x) = \\frac{x}{1 + |x|}$ is one-one.</p>\n<p><b>Statement II :</b> The function $f: \\mathbb{R} \\to \\mathbb{R}$ defined by $f(x) = \\frac{x^2 + 4x - 30}{x^2 - 8x + 18}$ is many-one.</p>\n<p>In the light of the above statements, choose the <b>correct answer</b> from the options given below :</p>",
+      "options": [
+        "<p><b>Statement I</b> is true but <b>Statement II</b> is false</p>",
+        "<p>Both <b>Statement I</b> and <b>Statement II</b> are false</p>",
+        "<p>Both <b>Statement I</b> and <b>Statement II</b> are true</p>",
+        "<p><b>Statement I</b> is false but <b>Statement II</b> is true</p>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Statement I: $f(x)=\\frac{x}{1+|x|}$ is one-one</p>\n<p>To check if a function is one-one (injective), we can check its monotonicity (whether it's always increasing or always decreasing).</p>\n<ol>\n\n<li><p>For $x \\geq 0: f(x)=\\frac{x}{1+x}$. The derivative is $f^{\\prime}(x)=\\frac{1}{(1+x)^2}$, which is always positive.</p></li>\n\n<li><p>For $x<0$ : $f(x)=\\frac{x}{1-x}$. The derivative is $f^{\\prime}(x)=\\frac{1}{(1-x)^2}$, which is also always positive.</p></li>\n\n</ol>\n<p>Since the derivative is positive for all $x$ in the domain, the function is strictly increasing. A strictly monotonic function is always one-one.</p>\n<p>Statement I is True.</p>\n<p>Statement II: $f(x)=\\frac{x^2+4 x-30}{x^2-8 x+18}$ is many-one</p>\n<p>Discriminant of Denominator: For $x^2-8 x+18, D=(-8)^2-4(1)(18)=64- 72=-8$. Since $D<0$, the denominator is always positive and the function is continuous for all $x \\in \\mathbb{R}$.</p>\n<p>Behavior at Infinity: As $x \\rightarrow \\infty$ and $x \\rightarrow-\\infty$, the value of $f(x)$ approaches 1 (the ratio of the leading coefficients).</p>\n<p>Turning Points: Since the function starts near $y=1$ at $-\\infty$, moves through various values, and returns toward $y=1$ at $+\\infty$, it must have at least one local maximum or minimum. This means a horizontal line will intersect the graph at more than one point.</p>\n<p>Also, let</p>\n<p>$$ y=\\frac{x^2+4 x-30}{x^2-8 x+18} $$</p>\n<p>Cross multiply:</p>\n<p>$$ y\\left(x^2-8 x+18\\right)=x^2+4 x-30 $$</p>\n<p>Rearrange:</p>\n<p>$$ (y-1) x^2+(-8 y-4) x+(18 y+30)=0 $$</p>\n<p>This is a quadratic in $x$.</p>\n<p>For many values of $y$, this quadratic has two distinct real solutions. Function is MANY-ONE</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "1l19holtp",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The solution set of $${{|x - 2|\\, - 1} \\over {|x - 2|\\, - 2}} \\le 0$$ is</p>",
+      "options": [
+        "[0, 1] $$\\cup$$ (3, 4)",
+        "[0, 1] $$\\cup$$ [3, 4]",
+        "[$$-$$1, 1] $$\\cup$$ (3, 4]",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Given, $${{|x - 2|\\, - 1} \\over {|x - 2|\\, - 2}} \\le 0$$</p>\n<p>Let $$|x - 2|\\, = k$$</p>\n<p>Then, given equation,</p>\n<p>$${{k - 1} \\over {k - 2}} \\le 0 \\Rightarrow {{(k - 1)(k - 2)} \\over {{{(k - 2)}^2}}} \\le 0$$</p>\n<p>$$ \\Rightarrow (k - 1)(k - 2) \\le 0 \\Rightarrow 1 \\le k \\le 2$$</p>\n<p>$$ \\Rightarrow 1 \\le |x - 2|\\, \\le 2$$</p>\n<p>Case I When $$1 \\le |x - 2|$$</p>\n<p>$$ \\Rightarrow |x - 2| \\ge 1$$</p>\n<p>$$ \\Rightarrow x - 2 \\ge 1$$ or $$x - 2 \\le  - 1$$</p>\n<p>$$ \\Rightarrow x \\ge 3$$ and $$x \\le 1$$ ..... (i)</p>\n<p>Case II When $$|x - 2| \\le 2$$</p>\n<p>$$ \\Rightarrow  - 2 \\le x - 2 \\le 2$$</p>\n<p>$$ \\Rightarrow  - 2 + 2 \\le x \\le 2 + 2$$</p>\n<p>$$ \\Rightarrow 0 \\le x \\le 4$$ ..... (ii)</p>\n<p>From Eqs. (i) and (ii), $$x \\in [0,1] \\cup [3,4]$$.</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "40599u2jl19iez72",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let f<sub>1</sub> : R $$ \\to $$ R, f<sub>2</sub> : [0, $$\\infty $$) $$ \\to $$ R, f<sub>3</sub> : R $$ \\to $$ R, and f<sub>4</sub> : R $$ \\to $$ [0, $$\\infty $$) be defined by\n<p>$${f_1}\\left( x \\right) = \\left\\{ {\\matrix{\n   {\\left| x \\right|} &amp; {if\\,x &lt; 0,}  \\cr \n   {{e^x}} &amp; {if\\,x \\ge 0;}  \\cr \n\n } } \\right.$$</p>\n<p>f<sub>2</sub>(x) = x<sup>2</sup> ;</p>\n$${f_3}\\left( x \\right) = \\left\\{ {\\matrix{\n   {\\sin x} &amp; {if\\,x &lt; 0,}  \\cr \n   x &amp; {if\\,x \\ge 0;}  \\cr \n\n } } \\right.$$\n<p>and</p>\n<p>$${f_4}\\left( x \\right) = \\left\\{ {\\matrix{\n   {{f_2}\\left( {{f_1}\\left( x \\right)} \\right)} &amp; {if\\,x &lt; 0,}  \\cr \n   {{f_2}\\left( {{f_1}\\left( x \\right)} \\right) - 1} &amp; {if\\,x \\ge 0;}  \\cr \n\n } } \\right.$$</p>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l1aapt42/96cebc15-689f-448f-b4bc-df01b3c97581/94d70820-ae5b-11ec-a458-a14cb955046d/file-1l1aapt43.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l1aapt42/96cebc15-689f-448f-b4bc-df01b3c97581/94d70820-ae5b-11ec-a458-a14cb955046d/file-1l1aapt43.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2014 Paper 2 Offline Mathematics - Functions Question 18 English\">",
+      "options": [
+        "P - 3, Q - 1, R - 4, S - 2",
+        "P - 1, Q - 3, R - 4, S - 2",
+        "P - 3, Q - 1, R - 2, S - 4",
+        "P - 1, Q - 3, R - 2, S - 4"
+      ],
+      "correctOption": 3,
+      "solution": "<p>$$\\text { Given } f_2(x)=x^2 \\text { for } x \\in[0, \\infty) \\text { and co-domain } \\mathrm{R} \\text {. }$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzqpm23j/ad58fb7a-2ae6-4a1e-9b66-4741762b00f1/bac14af0-5881-11ef-898f-a10dcec80905/file-jaoe38c1lzqpm23k.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzqpm23j/ad58fb7a-2ae6-4a1e-9b66-4741762b00f1/bac14af0-5881-11ef-898f-a10dcec80905/file-jaoe38c1lzqpm23k.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2014 Paper 2 Offline Mathematics - Functions Question 18 English Explanation 1\"></p>\n<p>It is clear that $$f_2(x)$$ is continuous, differential and one-one but not onto because range of $$f_2(x)$$ is $$[0, \\infty)$$ and given co-domain is R.</p>\n<p>Hence $$S$$ match with 4.</p>\n<p>Given, $$f_3(x)=\\left\\{\\begin{array}{cc}\\sin x, &amp; \\text { if } x&lt;0 \\\\ x, &amp; \\text { if } x \\geq 0\\end{array}\\right.$$. Domain of $$f_2(x)$$ is $$R$$ and co-domain $$R$$.</p>\n<p>Draw the graph of $$f_3(x)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzqpnygo/cf5db5bf-6baa-4ed1-9d0a-5efea957aa00/ef90bb80-5881-11ef-898f-a10dcec80905/file-jaoe38c1lzqpnygp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzqpnygo/cf5db5bf-6baa-4ed1-9d0a-5efea957aa00/ef90bb80-5881-11ef-898f-a10dcec80905/file-jaoe38c1lzqpnygp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2014 Paper 2 Offline Mathematics - Functions Question 18 English Explanation 2\"></p>\n<p>Range of $$f_3(x) \\in(-\\infty, 1] \\neq$$ co-domain of $$f_3(x)$$</p>\n<p>So, $$f_3(x)$$ is not onto.</p>\n<p>$$\\because \\sin x$$ is not one-one function for $$x \\geq 0$$</p>\n<p>$$\\therefore f_3(x)$$ is not one-one function.</p>\n<p>We know $$y=\\sin x$$ and $$y=x$$ both are continuous in the given domain.</p>\n<p>At $$\\quad x=0$$</p>\n<p>$$\\begin{aligned}\n\\lim _{x \\rightarrow 0^{+}} f_3(x) &amp; =\\lim _{x \\rightarrow 0^{+}} \\sin x=0 \\\\\n\\lim _{x \\rightarrow 0^{-}} f_3(x) &amp; =\\lim _{x \\rightarrow 0^{-}} x=0 \\\\\nf_3(0) &amp; =\\sin 0=0 \\\\\n\\Rightarrow \\lim _{x \\rightarrow 0^{+}} f_3(x) &amp; =\\lim _{x \\rightarrow 0^{-}} f_3(x)=f_3(0)\n\\end{aligned}$$</p>\n<p>$$\\therefore f_3(x)$$ is continuous for all $$x \\in \\mathrm{R}$$.</p>\n<p>We know that $$y=\\sin x$$ and $$y=x$$ both are differentiable in the given domain R.H.D at $$x=0$$ is</p>\n<p>$$\\lim _\\limits{h \\rightarrow 0} \\frac{f_3(0+h)-f_3(0)}{h}=\\lim _\\limits{h \\rightarrow 0} \\frac{\\sin h-0}{h}=1$$</p>\n<p>L.H.D at $$x=0$$ is</p>\n<p>$$\\lim _\\limits{h \\rightarrow 0} \\frac{f_3(0-h)-f_3(0)}{-h}=\\lim _\\limits{h \\rightarrow 0} \\frac{-h-0}{-h}=1$$</p>\n<p>$$\\Rightarrow$$ R.H.D $$=$$ L.H.D at $$x=0$$</p>\n<p>$$\\therefore f_3(x)$$ is differentiable for all $$x \\in R$$.</p>\n<p>Hence, Q match with 3.</p>\n<p>Now, $$f_2{ }^{\\circ} f_1(x)= \\begin{cases}x^2, &amp; x&lt;0 \\\\ e^{2 x}, &amp; x \\geq 0\\end{cases}$$</p>\n<p>Draw the graph of $$y=f_2{ }^{\\circ} f_1(x)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzqq0ms7/c2791b71-34fd-4374-bd3b-15cb53ce986f/500ffd80-5883-11ef-898f-a10dcec80905/file-jaoe38c1lzqq0ms8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzqq0ms7/c2791b71-34fd-4374-bd3b-15cb53ce986f/500ffd80-5883-11ef-898f-a10dcec80905/file-jaoe38c1lzqq0ms8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2014 Paper 2 Offline Mathematics - Functions Question 18 English Explanation 3\"></p><p>It is clear that $$f_2{ }^{\\circ} f_1(x)$$ is neither continuous nor one-one.</p>\n<p>Hence, R match with 2.</p>\n<p>Given, $$f_4: \\mathrm{R} \\rightarrow[0, \\infty)$$ and</p>\n<p>$$f_4(x)=\\left\\{\\begin{array}{l}\nf_2\\left(f_1(x)\\right), \\text { if } x&lt;0 \\\\\nf_2\\left(f_1(x)\\right)-1, \\text { if } x \\geq 0\n\\end{array}\\right.$$</p>\n<p>Draw the graph of $$y=f_4(x)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzqq2cz2/ae0518f9-7c65-4bb6-83cd-1ecf46fea833/801a44e0-5883-11ef-898f-a10dcec80905/file-jaoe38c1lzqq2cz3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzqq2cz2/ae0518f9-7c65-4bb6-83cd-1ecf46fea833/801a44e0-5883-11ef-898f-a10dcec80905/file-jaoe38c1lzqq2cz3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2014 Paper 2 Offline Mathematics - Functions Question 18 English Explanation 4\"></p>\n<p>Range of $$f_4(x)=$$ co-domain of $$f_4(x)=[0, \\infty)$$</p>\n<p>$$\\therefore \\quad f_4(x)$$ is an onto function</p>\n<p>$$f_4(x)$$ is continuous, on to but not one-one.</p>\n<p>Hence, P match with 1.</p>\n<p>Hint:</p>\n<p>(i) If $$f(x)$$ is continuous at $$x=a$$, if and only if $$\\lim _\\limits{x \\rightarrow a^{+}} f(x)=\\lim _\\limits{x \\rightarrow a^{-}} f(x)=f(a)$$.</p>\n<p>(ii) If $$f(x)$$ is differentiable at $$x=a$$ if and only if $$\\lim _\\limits{h \\rightarrow 0} \\frac{f(a+h)-f(a)}{h}=\\lim _\\limits{h \\rightarrow 0} \\frac{f(a-h)-f(a)}{-h}$$.</p>\n<p>(iii) If Range of $$f(x)=\\operatorname{co-domain}$$ of $$f(x)$$, then $$f(x)$$ is called an onto function.</p>\n<p>(iv) If $$f\\left(x_1\\right)=f\\left(x_2\\right)$$ is possible only for $$x_1=x_2$$, then $$f(x)$$ is called an one-one function.</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "YES7TxcXPLt3WXthh83rsa0w2w9jwy29l0i",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let f(x) = e<sup>x</sup> – x and g(x) = x<sup>2</sup> – x, $$\\forall $$ x $$ \\in $$ R. Then the set of all x $$ \\in $$ R, where the function h(x) = (fog) (x) is increasing, is :",
+      "options": [
+        "[0, $$\\infty $$)",
+        "$$\\left[ { - 1, - {1 \\over 2}} \\right] \\cup \\left[ {{1 \\over 2},\\infty } \\right)$$",
+        "$$\\left[ { - {1 \\over 2},0} \\right] \\cup \\left[ {1,\\infty } \\right)$$",
+        "$$\\left[ {0,{1 \\over 2}} \\right] \\cup \\left[ {1,\\infty } \\right)$$"
+      ],
+      "correctOption": 3,
+      "solution": "f(x) = ex – x, g(x) = x<sup>2</sup> – x<br><br>\nf(g(x)) = e<sup>(x<sup>2</sup> - x)</sup> - (x<sup>2</sup> - x)<br><br>\nIf f(g(x)) is increasing function<br><br>\n(f (g(x)))<sup>x</sup> = $${e^{\\left( {{x^2} - x} \\right)}} \\times (2x - 1) - 2x + 1$$<br><br>\n$$ \\Rightarrow \\mathop {(2x - 1)}\\limits_A \\mathop {[{e^{\\left( {{x^2} - x} \\right)}} - 1]}\\limits_B $$<br><br>\nA &amp; B are either both positive or negative<br><br>\n<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/jf76dm0jz4xg23t/3be6206e-ee6e-45af-b1bb-fe28a62e1692/8b5ef990-bb17-11e9-98a9-d9fba6ebbc7e/file-jf76dm0jz4xg23u-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/jf76dm0jz4xg23t/3be6206e-ee6e-45af-b1bb-fe28a62e1692/8b5ef990-bb17-11e9-98a9-d9fba6ebbc7e/file-jf76dm0jz4xg23u-500w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/jf76dm0jz4xg23t/3be6206e-ee6e-45af-b1bb-fe28a62e1692/8b5ef990-bb17-11e9-98a9-d9fba6ebbc7e/file-jf76dm0jz4xg23u-680w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th April Morning Slot Mathematics - Functions Question 136 English Explanation\"></picture>\nfor (f (g(x)))<sup>'</sup> $$ \\ge $$ 0,<br><br>\n$$x \\in \\left[ {0,{1 \\over 2}} \\right] \\cup \\left[ {1,\\infty } \\right)$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "l7eiz5xb",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$|M|$$ denote the determinant of a square matrix $$M$$. Let $$g:\\left[0, \\frac{\\pi}{2}\\right] \\rightarrow \\mathbb{R}$$ be the function defined by</p>\n<p>$$\ng(\\theta)=\\sqrt{f(\\theta)-1}+\\sqrt{f\\left(\\frac{\\pi}{2}-\\theta\\right)-1}\n$$</p>\n<p>where</p>\n<p>$$\nf(\\theta)=\\frac{1}{2}\\left|\\begin{array}{ccc}\n1 & \\sin \\theta & 1 \\\\\n-\\sin \\theta & 1 & \\sin \\theta \\\\\n-1 & -\\sin \\theta & 1\n\\end{array}\\right|+\\left|\\begin{array}{ccc}\n\\sin \\pi & \\cos \\left(\\theta+\\frac{\\pi}{4}\\right) & \\tan \\left(\\theta-\\frac{\\pi}{4}\\right) \\\\\n\\sin \\left(\\theta-\\frac{\\pi}{4}\\right) & -\\cos \\frac{\\pi}{2} & \\log _{e}\\left(\\frac{4}{\\pi}\\right) \\\\\n\\cot \\left(\\theta+\\frac{\\pi}{4}\\right) & \\log _{e}\\left(\\frac{\\pi}{4}\\right) & \\tan \\pi\n\\end{array}\\right| .\n$$</p>\n<p>Let $$p(x)$$ be a quadratic polynomial whose roots are the maximum and minimum values of the function $$g(\\theta)$$, and $$p(2)=2-\\sqrt{2}$$. Then, which of the following is/are TRUE ?</p>",
+      "options": [
+        "$$p\\left(\\frac{3+\\sqrt{2}}{4}\\right)<0$$",
+        "$$p\\left(\\frac{1+3 \\sqrt{2}}{4}\\right)>0$$",
+        "$$p\\left(\\frac{5 \\sqrt{2}-1}{4}\\right)>0$$",
+        "$$p\\left(\\frac{5-\\sqrt{2}}{4}\\right)<0$$"
+      ],
+      "correctOption": 0,
+      "solution": "Given,\n<p>$$\nf(\\theta)=\\frac{1}{2}\\left|\\begin{array}{ccc}\n1 & \\sin \\theta & 1 \\\\\n-\\sin \\theta & 1 & \\sin \\theta \\\\\n-1 & -\\sin \\theta & 1\n\\end{array}\\right|+\\left|\\begin{array}{ccc}\n\\sin \\pi & \\cos \\left(\\theta+\\frac{\\pi}{4}\\right) & \\tan \\left(\\theta-\\frac{\\pi}{4}\\right) \\\\\n\\sin \\left(\\theta-\\frac{\\pi}{4}\\right) & -\\cos \\frac{\\pi}{2} & \\log _{e}\\left(\\frac{4}{\\pi}\\right) \\\\\n\\cot \\left(\\theta+\\frac{\\pi}{4}\\right) & \\log _{e}\\left(\\frac{\\pi}{4}\\right) & \\tan \\pi\n\\end{array}\\right|\n$$</p>\n<p>Here $\\cos \\left(\\theta+\\frac{\\pi}{4}\\right)=-\\sin \\left(\\theta-\\frac{\\pi}{4}\\right)$\n<br/><br/> and $\\tan \\left(\\theta-\\frac{\\pi}{4}\\right)=-\\cot \\left(\\theta+\\frac{\\pi}{4}\\right)$\n<br/><br/> and $\\log _e\\left(\\frac{4}{\\pi}\\right)=-\\log _e\\left(\\frac{\\pi}{4}\\right)$\n<br/><br/>Also $\\sin \\pi=-\\cos \\frac{\\pi}{2}=\\tan \\pi=0$</p>\n<p>$$ \\Rightarrow $$ $$\nf(\\theta)=\\frac{1}{2}\\left|\\begin{array}{ccc}\n2 & \\sin \\theta & 1 \\\\\n0 & 1 & \\sin \\theta \\\\\n0 & -\\sin \\theta & 1\n\\end{array}\\right|+\\left|\\begin{array}{ccc}\n0 & -\\sin \\left(\\theta-\\frac{\\pi}{4}\\right) & \\tan \\left(\\theta-\\frac{\\pi}{4}\\right) \\\\\n\\sin \\left(\\theta-\\frac{\\pi}{4}\\right) & 0 & \\log _{\\mathrm{e}}\\left(\\frac{4}{\\pi}\\right) \\\\\n-\\tan \\left(\\theta-\\frac{\\pi}{4}\\right) & -\\log _{\\mathrm{e}}\\left(\\frac{4}{\\pi}\\right) & 0\n\\end{array}\\right|\n$$</p>\n<p>$$\n\\begin{aligned}\n& f(\\theta)=\\left(1+\\sin ^2 \\theta\\right)+0 \\text { (skew symmetric) } \\\\\\\\\n& g(\\theta)=\\sqrt{f(\\theta)-1}+\\sqrt{f\\left(\\frac{\\pi}{2}-\\theta\\right)-1} \\\\\\\\\n& =|\\sin \\theta|+|\\cos \\theta| \\quad  \\\\\\\\\n& g(\\theta) \\in[1, \\sqrt{2}] \\text { for } \\theta \\in\\left[0, \\frac{\\pi}{2}\\right]\n\\end{aligned}\n$$</p>\n<p>Again let $\\mathrm{P}(\\mathrm{x})=\\mathrm{k}(\\mathrm{x}-\\sqrt{2})(\\mathrm{x}-1)$\n<br/><br/>$$\n\\begin{aligned}\n& 2-\\sqrt{2}=\\mathrm{k}(2-\\sqrt{2})(2-1) \\\\\\\\\n& \\Rightarrow \\mathrm{k}=1 \\quad(\\mathrm{P}(2)=2-\\sqrt{2} \\text { given }) \\\\\\\\\n& \\therefore \\mathrm{P}(\\mathrm{x})=(\\mathrm{x}-\\sqrt{2})(\\mathrm{x}-1)\n\\end{aligned}\n$$</p>\n<p>For option (A) $P\\left(\\frac{3+\\sqrt{2}}{4}\\right)<0$ Correct.\n<br/><br/>For option (B) $P\\left(\\frac{1+3 \\sqrt{2}}{4}\\right)<0$ Incorrect.\n<br/><br/>For option (C) $P\\left(\\frac{5 \\sqrt{2}-1}{4}\\right)>0$ Correct.\n<br/><br/>For option (D) $P\\left(\\frac{5-\\sqrt{2}}{4}\\right)>0$ Incorrect.</p>",
+      "marks": 4,
+      "negativeMarks": -2,
+      "topic": "Functions"
+    },
+    {
+      "id": "m9gxgcq5",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If the domain of the function $f(x)=\\log _7\\left(1-\\log _4\\left(x^2-9 x+18\\right)\\right)$ is $(\\alpha, \\beta) \\cup(\\gamma, o)$, then $\\alpha+\\beta+\\gamma+\\hat{o}$ is equal to</p>\n",
+      "options": [
+        "17",
+        "15",
+        "16",
+        "18"
+      ],
+      "correctOption": 3,
+      "solution": "<p>$$\\begin{aligned}\n&amp; 1-\\log _4\\left(x^2-9 x+18\\right)&gt;0 \\\\\n&amp; \\log _4\\left(x^2-9 x+18\\right)&lt;1 \\\\\n&amp; x^2-9 x+18&lt;4 \\\\\n&amp; x^2-9 x+14&lt;0 \\\\\n&amp; x \\in(2,7) \\\\\n&amp; x^2-9 x+18&gt;0 \\\\\n&amp; x \\in(-\\infty, 3) \\cup(6, \\infty)\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9z86fxm/15bd262e-33e2-4e2e-9ebe-ec599dc4489a/c4ef48a0-232a-11f0-99e8-5f2c09d57200/file-jaoe38c1m9z86fxn.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9z86fxm/15bd262e-33e2-4e2e-9ebe-ec599dc4489a/c4ef48a0-232a-11f0-99e8-5f2c09d57200/file-jaoe38c1m9z86fxn.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Evening Shift Mathematics - Functions Question 18 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; x \\in(2,3) \\cup(6,7) \\\\\n&amp; \\alpha+\\beta+\\gamma+\\delta=18\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "1ldsvim1d",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$f:R \\to R$$ be a function such that $$f(x) = {{{x^2} + 2x + 1} \\over {{x^2} + 1}}$$. Then</p>",
+      "options": [
+        "$$f(x)$$ is many-one in $$( - \\infty , - 1)$$",
+        "$$f(x)$$ is one-one in $$( - \\infty ,\\infty )$$",
+        "$$f(x)$$ is one-one in $$[1,\\infty )$$ but not in $$( - \\infty ,\\infty )$$",
+        "$$f(x)$$ is many-one in $$(1,\\infty )$$"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$f(x) = {{{x^2} + 2x + 1} \\over {({x^2} + 1)}}$$</p>\n<p>$$ \\Rightarrow f'(x) = {{({x^2} + 1)(2x + 2) - ({x^2} + 2x + 1)(2x)} \\over {{{({x^2} + 1)}^2}}}$$</p>\n<p>$$ \\Rightarrow f'(x) = {{2 - 2{x^2}} \\over {{{({x^2} + 1)}^2}}}$$</p>\n<p>$$ = {{2\\left( {1 + x} \\right)\\left( {1 - x} \\right)} \\over {{{\\left( {{x^2} + 1} \\right)}^2}}}$$</p>\n<p>$$ \\therefore $$ $$f'(x) = 0$$ at x = 1 and x = -1. So, x = 1 and x = -1 are point of maxima/minima.</p>\n<p><b>Option A :</b> $$f(x)$$ is many-one in $$( - \\infty , - 1)$$.\n<br/><br/>As x = -1 is a point of maxima/minima. So it is a boundary point in the range $$( - \\infty , - 1)$$. So, $$f(x)$$ is one-one in $$( - \\infty , - 1)$$.\n<br/><br/>$$ \\therefore $$ Option A is incorrect.</p>\n<p><b>Option B :</b> $$f(x)$$ is one-one in $$( - \\infty ,\\infty )$$.\n<br/><br/>As, x = 1 and x = -1 are point of maxima/minima which is present inside the range $$( - \\infty ,\\infty )$$. So, $$f(x)$$ is many-one function in $$( - \\infty ,\\infty )$$.\n<br/><br/>$$ \\therefore $$ Option B is incorrect.</p>\n<p><b>Option C :</b> $$f(x)$$ is one-one in $$[1,\\infty )$$ but not in $$( - \\infty ,\\infty )$$.\n<br/><br/>As x = 1 is a point of maxima/minima. So it is a boundary point in the range $$[1,\\infty )$$. So, $$f(x)$$ is one-one in $$[1,\\infty )$$.\n<br/><br/>As, x = 1 and x = -1 are point of maxima/minima which is present inside the range $$( - \\infty ,\\infty )$$. So, $$f(x)$$ is many-one function in $$( - \\infty ,\\infty )$$ .\n<br/><br/>$$ \\therefore $$ Option C is correct.</p>\n<p><b>Option D :</b> $$f(x)$$ is many-one in $$(1,\\infty )$$.\n<br/><br/>As x = 1 is a point of maxima/minima. So it is a boundary point in the range $$[1,\\infty )$$. So, $$f(x)$$ is one-one in $$[1,\\infty )$$.\n<br/><br/>$$ \\therefore $$ Option D is incorrect.</p>\n<p><b>Note :</b></p>\n<p><b>Methods to Check One-One Function :</b>\n\n<br/><br/>(i) If a function is one-one, any line parallel to $x$-axis cuts the graph of the function maximum at one point.\n<br/><br/>(ii) Any continuous function which is entirely increasing or decreasing (no maxima/minima is present) in whole domain will always be one-one function.\n</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "lv2erz8l",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the function $$f: \\mathbb{R} \\rightarrow \\mathbb{R}$$ defined by $$f(x)=\\frac{2 x}{\\sqrt{1+9 x^2}}$$. If the composition of $$f, \\underbrace{(f \\circ f \\circ f \\circ \\cdots \\circ f)}_{10 \\text { times }}(x)=\\frac{2^{10} x}{\\sqrt{1+9 \\alpha x^2}}$$, then the value of $$\\sqrt{3 \\alpha+1}$$ is equal to _______.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>$$f(x)=\\frac{2 x}{\\sqrt{1+9 x^2}}$$</p>\n<p>$$(f \\circ f)(x)=\\frac{2 f(x)}{\\sqrt{1+9(f(x))^2}}=\\frac{\\frac{4 x}{\\sqrt{1+9 x^2}}}{\\sqrt{1+9 \\times \\frac{4 x^2}{1+9 x^2}}}=\\frac{4 x}{\\sqrt{1+45 x^2}}$$</p>\n<p>$$(f \\circ f \\circ f)(x)=\\frac{4 \\times \\frac{2 x}{\\sqrt{1+9 x^2}}}{\\sqrt{1+45 \\times \\frac{4 x^2}{1+9 x^2}}}=\\frac{8 x}{\\sqrt{1+21 \\times 9 x^2}}$$</p>\n<p>$$(f \\circ f \\circ f \\circ f)(x)=\\frac{16 x}{\\sqrt{1+85 \\times 9 x^2}}$$</p>\n<p>$$\\Rightarrow \\alpha$$ is $$10^{\\text {th }}$$ term of $$1,5,21,85, \\ldots \\alpha$$ is $$10^{\\text {th }}$$ term of</p>\n<p>$$\\begin{aligned}\n& \\frac{\\left(2^1\\right)^2-1}{3}, \\frac{\\left(2^2\\right)^2-1}{3}, \\frac{\\left(2^3\\right)^2-1}{3}, \\frac{\\left(2^4\\right)^2-1}{3}, \\ldots \\\\\n\\Rightarrow \\quad & \\alpha=\\frac{\\left(2^{10}\\right)^2-1}{3} \\\\\n\\Rightarrow \\quad & \\sqrt{3 \\alpha+1}=2^{10}=1024\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "tlmc33hjqx",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Which one of the following is f(x)?&nbsp;",
+      "options": [
+        "cos x",
+        "cos x<sup>2</sup>",
+        "cos<sup>2</sup>&nbsp;x",
+        "cos |x|"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Let’s find $f$ and $g$ so that  </p>\n\n<p><p>$f\\bigl(g(x)\\bigr)=\\cos^2\\!\\bigl(\\sqrt{x}\\bigr)$,  </p></p>\n<p><p>$g\\bigl(f(x)\\bigr)=\\lvert\\cos x\\rvert$.  </p></p>\n\n<p>A natural choice is  </p>\n\n<p><p>$g(x)=\\sqrt{x}$,  </p></p>\n<p><p>$f(x)=\\cos^2x$.  </p></p>\n\n<p>Check:  </p>\n\n<p><p>$f\\bigl(g(x)\\bigr)=f(\\sqrt{x})=\\cos^2(\\sqrt{x})$.  </p></p>\n<p><p>$g\\bigl(f(x)\\bigr)=\\sqrt{\\cos^2x}=\\lvert\\cos x\\rvert$.  </p></p>\n\n<p>Hence  </p>\n<p>$ \\boxed{f(x)=\\cos^2x} $</p>\n<p>(which is Option 3).</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Functions"
+    },
+    {
+      "id": "vZDInSndsBCwo3mCTX18hoxe66ijvwp4erx",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$ where the function\nƒ satisfies \n<br>ƒ(x + y) = ƒ(x)ƒ(y) for all natural\nnumbers x, y and ƒ(1) = 2. then the natural\nnumber 'a' is",
+      "options": [
+        "2",
+        "16",
+        "4",
+        "3"
+      ],
+      "correctOption": 3,
+      "solution": "Given ƒ(1) = 2\n<br><br> and ƒ(x + y) = ƒ(x)ƒ(y)\n<br><br>When x = 1 and y = 1 then,\n<br><br>ƒ(1 + 1) = ƒ(1)ƒ(1)\n<br><br>$$ \\Rightarrow $$ f(2) = (f(1))<sup>2</sup> = 2<sup>2</sup>\n<br><br>Also when x = 2 and y = 1 then,\n<br><br>ƒ(2 + 1) = ƒ(2)ƒ(1)\n<br><br>$$ \\Rightarrow $$ f(3) = 2<sup>3</sup>\n<br><br>$$ \\therefore $$ Similarly f(4) = 2<sup>4</sup>\n<br>.\n<br>.\n<br>.\n<br>.\n<br><br>f(x) = 2<sup>x</sup>\n<br><br>$$ \\therefore $$ f(a + k) = 2<sup>a + k</sup>\n<br><br>Now given,\n<br><br>$$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$\n<br><br>$$ \\Rightarrow $$ $$\\sum\\limits_{k = 1}^{10} {{2^{a + k}}} $$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^{a + 1}} + {2^{a + 2}} + .... + {2^{a + 10}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a}\\left[ {2 + {2^2} + .... + {2^{10}}} \\right]$$ =  $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} \\times {{2\\left( {{2^{10}} + 1} \\right)} \\over {2 - 1}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} = 8$$\n<br><br>$$ \\Rightarrow $$ $$a$$ = 3",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Functions"
+    },
+    {
+      "id": "tllxlrvuca",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the greatest value of the function?",
+      "options": [
+        "√3",
+        "√6",
+        "√8",
+        "4"
+      ],
+      "correctOption": 2,
+      "solution": "\n<p>$ f(x)=\\sqrt{2-x}+\\sqrt{2+x} $</p>\n<p>Let $ f(x) = y $.</p>\n<p>Squaring both sides, we get:</p>\n<p>$ [f(x)]^2 = y^2 = (2-x) + (2+x) + 2\\sqrt{(2-x)(2+x)} $</p>\n<p>Simplifying the equation:</p>\n<p>$ y^2 = 4 + 2\\sqrt{4-x^2} $</p>\n<p>The value of $ y^2 $ is maximized when $ x $ is at its minimum value, which is 0.</p>\n<p>Hence, the function reaches its maximum when $ x = 0 $.</p>\n<p>The greatest value is given by:</p>\n<p>$ y^2_{\\text{max}} = 4 + 2\\sqrt{4-0^2} $</p>\n<p>$ y^2_{\\text{max}} = 8 $</p>\n<p>Therefore:</p>\n<p>$ y_{\\text{max}} = \\sqrt{8} $</p>\n<p>The greatest value of the function $ \\sqrt{2-x} + \\sqrt{2+x} $ is $ \\sqrt{8} $.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Functions"
+    },
+    {
+      "id": "tlme8nbcwx",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is <em>f</em>(16) equal to?",
+      "options": [
+        "18",
+        "27",
+        "54",
+        "81"
+      ],
+      "correctOption": 3,
+      "solution": "\n<p><p>Find f(1):  </p>\n<p>Set y=1 in the given relation  </p>\n<p>$$f\\!\\bigl(\\tfrac{x}{1}\\bigr)=\\frac{f(x)}{f(1)}$$  </p>\n<p>But $f(x/1)=f(x)$.  So  </p>\n<p>$$f(x)=\\frac{f(x)}{f(1)}\\quad\\Longrightarrow\\quad f(1)=1.$$</p></p>\n<p><p>Show f is multiplicative:  </p>\n<p>For any positive $a,b$, let $x=ab$ and $y=b$.  Then  </p>\n<p>$$f\\!\\bigl(\\tfrac{ab}{b}\\bigr)=\\frac{f(ab)}{f(b)}$$  </p>\n<p>i.e.  </p>\n<p>$$f(a)=\\frac{f(ab)}{f(b)}\\quad\\Longrightarrow\\quad f(ab)=f(a)\\,f(b).$$</p></p>\n<p><p>General form of f:  </p>\n<p>A positive, multiplicative function satisfying $f(1)=1$ is  </p>\n<p>$$f(x)=x^k$$  </p>\n<p>for some constant $k$.</p></p>\n<p><p>Determine k using f(2)=3:  </p>\n<p>$$f(2)=2^k=3\\quad\\Longrightarrow\\quad k=\\frac{\\ln 3}{\\ln 2}.$$</p></p>\n<p><p>Compute f(16):  </p>\n<p>$$f(16)=16^k=\\bigl(2^4\\bigr)^k=2^{4k}=\\bigl(2^k\\bigr)^4=3^4=81.$$</p></p>\n\n<p>Answer: Option D (81).</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Functions"
+    }
+  ]
+}

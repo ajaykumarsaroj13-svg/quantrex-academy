@@ -1,0 +1,369 @@
+{
+  "id": "real_test_260",
+  "examType": "JEE Advanced",
+  "title": "NDA Mathematics 21 April 2024",
+  "year": "2024",
+  "duration": 180,
+  "totalMarks": 180,
+  "totalQuestions": 16,
+  "isOfficial": true,
+  "questions": [
+    {
+      "id": "lwv8hrjn",
+      "questionNumber": 1,
+      "questionText": "<p>The non-negative values of $b$ for which the function $\\frac{16x^3}{3} - 4bx^2 + x$ has neither maximum nor minimum in the range $x>0$ is</p>",
+      "options": [
+        "<p>0 < b < 1</p>",
+        "<p>1 < b < 2</p>",
+        "<p>b > 2</p>",
+        "<p>0 <= b < 1</p>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>A function has neither a maximum nor minimum in an interval if its derivative is either always positive or always negative in that interval.</p>\n\n<p>Let's find the derivative of the given function:</p>\n\n<p>$$f'(x) = 16x^2 - 8bx + 1$$</p>\n\n<p>For the derivative to be always positive or always negative, the discriminant of the quadratic expression must be negative. This is because if the discriminant is positive, the quadratic has two distinct real roots, meaning the derivative changes sign and the function has a maximum or minimum.</p>\n\n<p>The discriminant of the quadratic is:</p>\n\n<p>$$D = (-8b)^2 - 4 \\cdot 16 \\cdot 1 = 64b^2 - 64$$</p>\n\n<p>We want this discriminant to be negative: </p>\n\n<p>$$64b^2 - 64 < 0$$</p>\n\n<p>Dividing both sides by 64:</p>\n\n<p>$$b^2 - 1 < 0$$</p>\n\n<p>Factoring:</p>\n\n<p>$$(b - 1)(b + 1) < 0$$</p>\n\n<p>This inequality holds when $b$ lies between -1 and 1. However, we are only interested in non-negative values of $b$. Therefore, the solution is:</p>\n\n<p>$$0 < b < 1$$</p>\n\n<p>Therefore, the correct answer is <strong>Option A</strong>. </p>\n\n<p></p>",
+      "section": "Sec 1",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv8rxjt",
+      "questionNumber": 2,
+      "questionText": "<p>What is $\\varphi(a)$ equal to?</p>",
+      "options": [
+        "<p>0</p>",
+        "<p>$a$</p>",
+        "<p>100$a$</p>",
+        "<p>200</p>"
+      ],
+      "correctOption": 3,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine what $\\varphi(a)$ is equal to, let's analyze the given function:</p>\n\n<p>$$\\varphi(a) = \\int_{a}^{a + 100 \\pi} |\\sin x| dx$$</p>\n\n<p>First, consider the behavior and period of the sine function. The function $\\sin x$ is periodic with a period of $2 \\pi$. Therefore, $|\\sin x|$ also repeats every $2 \\pi$.</p>\n\n<p>Given that the integral is over an interval of length $100 \\pi$, we can express this in terms of the periods of $|\\sin x|$:</p>\n\n<p>The interval length is $\\frac{100 \\pi}{2 \\pi} = 50$ periods.</p>\n\n<p>Next, consider the integral over a single period of $|\\sin x|$. Since $|\\sin x|$ is symmetric and periodic over $[0, 2 \\pi]$, we can simplify the computation:</p>\n\n<p>Let's calculate the integral over one period:</p>\n\n<p>$$\\int_{0}^{2 \\pi} |\\sin x| dx$$</p>\n\n<p>We know that:</p>\n\n<p>$$\\int_0^{2 \\pi} |\\sin x| dx = 2 \\int_0^{\\pi} \\sin x dx$$</p>\n\n<p>The integral of $\\sin x$ from $0$ to $\\pi$ is:</p>\n\n<p>$$\\int_0^{\\pi} \\sin x dx = [-\\cos x]_0^{\\pi} = -\\cos(\\pi) - (-\\cos(0)) = 1 + 1 = 2$$</p>\n\n<p>Thus:</p>\n\n<p>$$\\int_{0}^{2 \\pi} |\\sin x| dx = 2 \\cdot 2 = 4$$</p>\n\n<p>Each period of $|\\sin x|$ contributes $4$ units to the integral. Since there are $50$ periods within our interval, the total integral is:</p>\n\n<p>$$\\varphi(a) = 50 \\cdot 4 = 200$$</p>\n\n<p>So, $\\varphi(a)$ is a constant value of $200$, regardless of $a$.</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option D</p>\n\n<p>200</p>",
+      "section": "Sec 1",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv8rxml",
+      "questionNumber": 3,
+      "questionText": "<p>What is $\\varphi'(a)$ equal to?</p>",
+      "options": [
+        "<p>0</p>",
+        "<p>$\\pi$</p>",
+        "<p>100</p>",
+        "<p>200</p>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine $\\varphi'(a)$, let's start by understanding what the function $\\varphi(a)$ represents. It is given by</p>\n\n<p>$$\\varphi(a) = \\int_{a}^{a + 100\\pi} |\\sin x| \\, dx$$</p>\n\n<p>We need to find the derivative of this function with respect to $a$. To do this, we can use the Leibniz rule for differentiation under the integral sign, which states that if you have an integral of the form</p>\n\n<p>$$\\int_{u(a)}^{v(a)} f(x) \\, dx$$</p>\n\n<p>then the derivative with respect to $a$ is given by</p>\n\n<p>$$\\frac{d}{da} \\left( \\int_{u(a)}^{v(a)} f(x) \\, dx \\right) = f(v(a)) \\cdot \\frac{d}{da}v(a) - f(u(a)) \\cdot \\frac{d}{da}u(a) + \\int_{u(a)}^{v(a)} \\frac{\\partial}{\\partial a} f(x, a) \\, dx$$</p>\n\n<p>In our case:</p>\n\n<ul>\n\n<li>$u(a) = a$</li>\n\n<li> $v(a) = a + 100\\pi$</li>\n\n<li> $f(x) = |\\sin x|$ (independent of $a$)</li>\n\n</ul>\n\n<p>Since $f(x)$ is independent of $a$, the partial derivative $\\frac{\\partial}{\\partial a} f(x, a)$ is zero. Therefore, the derivative simplifies to</p>\n\n<p>$$\\varphi'(a) = |\\sin(v(a))| \\cdot v'(a) - |\\sin(u(a))| \\cdot u'(a)$$</p>\n\n<p>Substitute $v(a) = a + 100\\pi$ and $u(a) = a$:</p>\n\n<ul>\n\n<li>$v'(a) = 1$</li>\n\n<li>$u'(a) = 1$</li>\n\n</ul>\n\n<p>Therefore, we get:</p>\n\n<p>$$\\varphi'(a) = |\\sin(a + 100\\pi)| \\cdot 1 - |\\sin(a)| \\cdot 1$$</p>\n\n<p>Since $\\sin(x)$ has a period of $2\\pi$, we know that adding $100\\pi$ effectively cycles through the sine function 50 times (because $100\\pi$ is $50 \\cdot 2\\pi$). Hence, $\\sin(a + 100\\pi) = \\sin(a)$. This means that:</p>\n\n<p>$$|\\sin(a + 100\\pi)| = |\\sin(a)|$$</p>\n\n<p>Substituting this in, we get:</p>\n\n<p>$$\\varphi'(a) = |\\sin(a)| - |\\sin(a)| = 0$$</p>\n\n<p>Thus, $\\varphi'(a) = 0$.</p>\n\n<p>The correct answer is:</p>\n\n<p><strong>Option A: 0</strong></p>",
+      "section": "Sec 1",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv8xkn5",
+      "questionNumber": 4,
+      "questionText": "<p>Which of the following is/are correct?</p><p>1. $f'(0) = 0$</p><p>2. $f''(0) < 0$</p><p>Select the correct answer using the code given below:</p>",
+      "options": [
+        "<p>1 only</p>",
+        "<p>2 only</p>",
+        "<p>Both 1 and 2</p>",
+        "<p>Neither 1 nor 2</p>"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Let's analyze the given statements one by one to determine which of them are correct.</p>\n\n<p><strong>Statement 1: $ f'(0) = 0 $</strong></p>\n\n<p>This statement is based on the condition that $ f(x) $ has a local maximum at $ x = 0 $. For a function to have a local maximum at a point, its first derivative at that point must be zero. Thus, we have:</p>\n\n<p>$$ f'(0) = 0 $$</p>\n\n<p>So, Statement 1 is correct.</p>\n\n<p><strong>Statement 2: $ f''(0) < 0 $</strong></p>\n\n<p>For a point $ x = 0 $ to be a local maximum, not only must the first derivative be zero, but the second derivative at that point must be negative. This indicates that the function changes concavity and thus confirms a local maximum:</p>\n\n<p>$$ f''(0) < 0 $$</p>\n\n<p>So, Statement 2 is also correct.</p>\n\n<p>Therefore, both statements 1 and 2 are correct. The correct answer is:</p>\n\n<p><strong>Option C:</strong> Both 1 and 2</p>",
+      "section": "Sec 1",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv8xkql",
+      "questionNumber": 5,
+      "questionText": "<p>The function $y$ has a relative maxima at $x = 0$ for</p>",
+      "options": [
+        "<p>$a > 0, \\ b = 0$</p>",
+        "<p>for all $b$ and $a = 0$</p>",
+        "<p>for all $b > 0$ only</p>",
+        "<p>for all $a$ and $b = 0$</p>"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>First, let's break down the problem. We are given a differentiable function $ f(x) $ that has a local maximum at $ x = 0 $. This means that at $ x = 0 $, the first derivative of $ f(x) $, $ f'(x) $, is zero, and the second derivative, $ f''(x) $, is less than or equal to zero (because we have a local maximum).</p>\n\n<p>Now, let us consider the function $ y = 2f(x) + ax - b $. To find the conditions under which $ y $ has a relative maximum at $ x = 0 $, we need to look at the first and second derivatives of $ y $ and apply the conditions for a maximum.</p>\n\n<p>The first derivative of $ y $ with respect to $ x $ is:</p>\n\n<p>$$ y' = \\frac{d}{dx}(2f(x) + ax - b) = 2f'(x) + a $$</p>\n\n<p>At $ x = 0 $, for $ y $ to have a relative maximum, we need $ y'(0) = 0 $. So, we set:</p>\n\n<p>$$ y'(0) = 2f'(0) + a = 0 $$</p>\n\n<p>Since $ f(x) $ has a local maximum at $ x = 0 $, we know that $ f'(0) = 0 $. Therefore:</p>\n\n<p>$$ 2(0) + a = 0 $$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$ a = 0 $$</p>\n\n<p>Next, let’s check the second derivative of $ y $, $ y'' $, to confirm it is less than 0 at $ x = 0 $ to confirm a local maximum:</p>\n\n<p>$$ y'' = \\frac{d^2}{dx^2}(2f(x) + ax - b) = 2f''(x) $$</p>\n\n<p>At $ x = 0 $, we need:</p>\n\n<p>$$ y''(0) = 2f''(0) $$</p>\n\n<p>Since $ f(x) $ has a local maximum at $ x = 0 $, we know that $ f''(0) \\leq 0 $. Therefore,</p>\n\n<p>$$ y''(0) = 2f''(0) \\leq 0 $$</p>\n\n<p>This means that as long as $ a = 0 $, the conditions for a relative maximum are automatically satisfied, regardless of the value of $ b $.</p>\n\n<p>Hence, the correct option is:</p>\n\n<p><strong>Option B: for all $b$ and $a = 0$</strong></p>",
+      "section": "Sec 2",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv48uc3",
+      "questionNumber": 6,
+      "questionText": "<p>What is the coefficient of $x^{10}$ in the expansion of $(1-x^2)^{20}\\left(2-x^2-\\frac{1}{x^2}\\right)^{-5}$?</p>",
+      "options": [
+        "<p>-1</p>",
+        "<p>1</p>",
+        "<p>10</p>",
+        "<p>Coefficient of $x^{10}$ does not exist</p>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the coefficient of $ x^{10} $ in the expansion of the expression:</p>\n<p>$ (1 - x^2)^{20} \\left( 2 - x^2 - \\frac{1}{x^2} \\right)^{-5} $</p>\n<p>we need to simplify and manipulate the expression carefully.</p>\n<p><strong>Step 1: Simplify the Second Factor</strong></p>\n<p>First, rewrite the second factor to make it easier to handle:</p>\n<p>$ 2 - x^2 - \\frac{1}{x^2} = \\frac{2x^2 - x^4 - 1}{x^2} $</p>\n<p>Now, write the entire expression:</p>\n<p>$ (1 - x^2)^{20} \\left( \\frac{2x^2 - x^4 - 1}{x^2} \\right)^{-5} $</p>\n<p><strong>Step 2: Simplify the Denominator</strong></p>\n<p>Notice that $ 2x^2 - x^4 - 1 = - (x^4 - 2x^2 + 1) $, which factors further:</p>\n<p>$ - (x^4 - 2x^2 + 1) = - (x^2 - 1)^2 $</p>\n<p>So, the expression becomes:</p>\n<p>$ (1 - x^2)^{20} \\left( \\frac{ - (x^2 - 1)^2 }{ x^2 } \\right)^{-5} $</p>\n<p><strong>Step 3: Simplify the Negative Exponent</strong></p>\n<p>Apply the negative exponent:</p>\n<p>$ \\left( \\frac{ - (x^2 - 1)^2 }{ x^2 } \\right)^{-5} = \\left( -1 \\right)^{-5} x^{10} (x^2 - 1)^{-10} $</p>\n<p>Since $ (-1)^{-5} = -1 $, the expression simplifies to:</p>\n<p>$ - x^{10} (x^2 - 1)^{-10} $</p>\n<p><strong>Step 4: Combine with the First Factor</strong></p>\n<p>Now, combine this with the first factor:</p>\n<p>$ (1 - x^2)^{20} \\times \\left( - x^{10} (x^2 - 1)^{-10} \\right) = - x^{10} (x^2 - 1)^{20} (x^2 - 1)^{-10} = - x^{10} (x^2 - 1)^{10} $</p>\n<p><strong>Step 5: Expand $ (x^2 - 1)^{10} $</strong></p>\n<p>Use the binomial theorem to expand:</p>\n<p>$ (x^2 - 1)^{10} = \\sum_{k=0}^{10} \\binom{10}{k} (x^2)^{10 - k} (-1)^k $</p>\n<p><strong>Step 6: Multiply and Find the Coefficient</strong></p>\n<p>Multiply by $ - x^{10} $:</p>\n<p>$ - x^{10} (x^2 - 1)^{10} = - \\sum_{k=0}^{10} \\binom{10}{k} (-1)^k x^{10} \\cdot x^{2(10 - k)} = - \\sum_{k=0}^{10} \\binom{10}{k} (-1)^k x^{30 - 2k} $</p>\n<p>We are interested in the term where the exponent of $ x $ is 10:</p>\n<p>$ 30 - 2k = 10 \\implies 2k = 20 \\implies k = 10 $</p>\n<p><strong>Step 7: Calculate the Coefficient for $ k = 10 $</strong></p>\n<p>Compute the coefficient:</p>\n<p>$ \\text{Coefficient} = - \\binom{10}{10} (-1)^{10} = -1 \\times 1 = -1 $</p>\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{-1}$</p>",
+      "section": "Sec 2",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv48ueq",
+      "questionNumber": 7,
+      "questionText": "<p>If the 4th term in the expansion of $\\left(mx + \\frac{1}{x}\\right)^n$ is $\\frac{5}{2}$, then what is the value of $mn$?</p>",
+      "options": [
+        "<p>-3</p>",
+        "<p>3</p>",
+        "<p>6</p>",
+        "<p>12</p>"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the value of $ mn $, we start with the general term in the expansion of $ \\left(mx + \\frac{1}{x}\\right)^n $, given by the binomial theorem:</p>\n\n<p>$$ T_{k+1} = \\binom{n}{k} \\left(mx\\right)^{n-k} \\left(\\frac{1}{x}\\right)^k $$</p>\n\n<p>We need to find the 4th term in this expansion, so let $ k = 3 $. Substituting $ k = 3 $ into the general term formula, we get:</p>\n\n<p>$$ T_4 = \\binom{n}{3} \\left(mx\\right)^{n-3} \\left(\\frac{1}{x}\\right)^3 $$</p>\n\n<p>Simplify the expression:</p>\n\n<p>$$ T_4 = \\binom{n}{3} m^{n-3} x^{n-3} \\cdot \\frac{1}{x^3} $$</p>\n\n<p>Combine the exponents of $ x $:</p>\n\n<p>$$ T_4 = \\binom{n}{3} m^{n-3} x^{n-3-3} = \\binom{n}{3} m^{n-3} x^{n-6} $$</p>\n\n<p>Given that the 4th term is $ \\frac{5}{2} $, this implies:</p>\n\n<p>$$ \\binom{n}{3} m^{n-3} x^{n-6} = \\frac{5}{2} $$</p>\n\n<p>For the term to be a constant (i.e., not dependent on $ x $), the exponent of $ x $ must be zero:</p>\n\n<p>$$ n - 6 = 0 \\Rightarrow n = 6 $$</p>\n\n<p>Substitute $ n = 6 $ into the equation for the 4th term:</p>\n\n<p>$$ T_4 = \\binom{6}{3} m^{6-3} x^0 = \\frac{5}{2} $$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$ \\binom{6}{3} m^3 = \\frac{5}{2} $$</p>\n\n<p>Calculate $ \\binom{6}{3} $:</p>\n\n<p>$$ \\binom{6}{3} = \\frac{6!}{3!3!} = 20 $$</p>\n\n<p>Substitute $ \\binom{6}{3} $ into the equation:</p>\n\n<p>$$ 20 m^3 = \\frac{5}{2} $$</p>\n\n<p>Solve for $ m^3 $:</p>\n\n<p>$$ m^3 = \\frac{5}{2} \\times \\frac{1}{20} = \\frac{5}{40} = \\frac{1}{8} $$</p>\n\n<p>Taking the cube root of both sides, we find:</p>\n\n<p>$$ m = \\frac{1}{2} $$</p>\n\n<p>Finally, calculate $ mn $:</p>\n\n<p>$$ mn = \\left( \\frac{1}{2} \\right) \\times 6 = 3 $$</p>\n\n<p>Therefore, the value of $ mn $ is 3. The correct option is:</p>\n\n<p><strong>Option B</strong></p>\n\n<p>3</p>",
+      "section": "Sec 2",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv4cz95",
+      "questionNumber": 8,
+      "questionText": "In a binomial expansion of $(x+y)^{2 n+1}(x-y)^{2 n+1}$, the sum of middle terms is zero. What is the value of $\\left(\\frac{x^2}{y^2}\\right)$ ?",
+      "options": [
+        "<p>1</p>",
+        "<p>2</p>",
+        "<p>4</p>",
+        "<p>8</p>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>The expression we need to expand is $$(x + y)^{2n+1}(x - y)^{2n+1}$$. To find the product, we can use the formula for the binomial expansion of two binomial expressions.</p>\n\n<p>To make it simpler, let us first consider individual expansions:</p>\n\n<p>The binomial expansion of $$(x + y)^{2n+1}$$ is:</p>\n\n<p>$$ (x + y)^{2n+1} = \\sum_{k=0}^{2n+1} \\binom{2n+1}{k} x^{2n+1-k} y^k $$</p>\n\n<p>Similarly, the binomial expansion of $$(x - y)^{2n+1}$$ is:</p>\n\n<p>$$ (x - y)^{2n+1} = \\sum_{k=0}^{2n+1} \\binom{2n+1}{k} x^{2n+1-k} (-y)^k $$</p>\n\n<p>Now, we multiply these two expansions together. Notice that when we multiply the terms of these expansions, we will have the product of the coefficients and the variables:</p>\n\n<p>$$ (x + y)^{2n+1} (x - y)^{2n+1} = \\sum_{i=0}^{2n+1} \\sum_{j=0}^{2n+1} \\binom{2n+1}{i} \\binom{2n+1}{j} x^{(2n+1-i) + (2n+1-j)} y^{i+j} (-1)^j $$</p>\n\n<p>The middle terms of the entire expansion will occur when the powers of $$x$$ and $$y$$ combined give the middle index. In this case, the sum of the powers of $$x$$ and $$y$$ will be $$2n+1$$, as the total power is $$(2n+1) + (2n+1) = 4n+2$$ and the middle term power will be half, which is $$2n+1$$.</p>\n\n<p>If the sum of the middle terms is zero, then their contributions must cancel each other out. This can only happen if the exponents of $$x$$ and $$y$$ in these middle terms lead to symmetric contributions.</p>\n\n<p>To derive the specific exponents, we observe that for each pair, the contributions require the exponents: </p>\n\n<p>$$x^{k}$$ and $$y^{2n+1-k}$$ versus $$x^{k}$$ and $$(-y)^{2n+1-k}$$</p>\n\n<p>Since it is given the middle terms cancel out, this implies that:</p>\n\n<p>$$ (x + y)y = 0 \\implies (x - y)(x + y) = 0  $$</p>\n\n<p>Thus, the symmetry in the exponents implies that the powers of $$x$$ and $$y$$ must be equal.</p>\n\n<p>Finally, let’s conclude. Given integer terms of the binomial expansion, we need:</p>\n\n<p>$$ \\left(\\frac{x}{y}\\right)^2 = 1 \\implies \\left(\\frac{x^2}{y^2}\\right) = 1 $$</p>\n\n<p>Thus, the value of $$\\left(\\frac{x^2}{y^2}\\right)$$ is $$1$$.</p>\n\n<style>\n\n<p>table {</p>\n\n<p>width: 100%;</p>\n\n<p>border-collapse: collapse;</p>\n\n<p>margin: 20px 0;</p>\n\n<p>}</p>\n\n<p>th {</p>\n\n<p>background-color: blue;</p>\n\n<p>color: white;</p>\n\n<p>border: 1px solid lightgrey;</p>\n\n<p>padding: 10px;</p>\n\n<p>}</p>\n\n<p>td {</p>\n\n<p>border: 1px solid lightgrey;</p>\n\n<p>padding: 10px;</p>\n\n<p>text-align: left;</p>\n\n<p>}</p>\n\n</style>\n\n<table>\n\n<tr>\n\n<th>Option</th>\n\n<th>Value</th>\n\n</tr>\n\n<tr>\n\n<td>A</td>\n\n<td>1</td>\n\n</tr>\n\n<tr>\n\n<td>B</td>\n\n<td>2</td>\n\n</tr>\n\n<tr>\n\n<td>C</td>\n\n<td>4</td>\n\n</tr>\n\n<tr>\n\n<td>D</td>\n\n<td>8</td>\n\n</tr>\n\n</table>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option A</strong></p>",
+      "section": "Sec 2",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv8hrjn",
+      "questionNumber": 9,
+      "questionText": "<p>The non-negative values of $b$ for which the function $\\frac{16x^3}{3} - 4bx^2 + x$ has neither maximum nor minimum in the range $x>0$ is</p>",
+      "options": [
+        "<p>0 < b < 1</p>",
+        "<p>1 < b < 2</p>",
+        "<p>b > 2</p>",
+        "<p>0 <= b < 1</p>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": 0,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>A function has neither a maximum nor minimum in an interval if its derivative is either always positive or always negative in that interval.</p>\n\n<p>Let's find the derivative of the given function:</p>\n\n<p>$$f'(x) = 16x^2 - 8bx + 1$$</p>\n\n<p>For the derivative to be always positive or always negative, the discriminant of the quadratic expression must be negative. This is because if the discriminant is positive, the quadratic has two distinct real roots, meaning the derivative changes sign and the function has a maximum or minimum.</p>\n\n<p>The discriminant of the quadratic is:</p>\n\n<p>$$D = (-8b)^2 - 4 \\cdot 16 \\cdot 1 = 64b^2 - 64$$</p>\n\n<p>We want this discriminant to be negative: </p>\n\n<p>$$64b^2 - 64 < 0$$</p>\n\n<p>Dividing both sides by 64:</p>\n\n<p>$$b^2 - 1 < 0$$</p>\n\n<p>Factoring:</p>\n\n<p>$$(b - 1)(b + 1) < 0$$</p>\n\n<p>This inequality holds when $b$ lies between -1 and 1. However, we are only interested in non-negative values of $b$. Therefore, the solution is:</p>\n\n<p>$$0 < b < 1$$</p>\n\n<p>Therefore, the correct answer is <strong>Option A</strong>. </p>\n\n<p></p>",
+      "section": "Sec 3",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv8rxjt",
+      "questionNumber": 10,
+      "questionText": "<p>What is $\\varphi(a)$ equal to?</p>",
+      "options": [
+        "<p>0</p>",
+        "<p>$a$</p>",
+        "<p>100$a$</p>",
+        "<p>200</p>"
+      ],
+      "correctOption": 3,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": 0,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine what $\\varphi(a)$ is equal to, let's analyze the given function:</p>\n\n<p>$$\\varphi(a) = \\int_{a}^{a + 100 \\pi} |\\sin x| dx$$</p>\n\n<p>First, consider the behavior and period of the sine function. The function $\\sin x$ is periodic with a period of $2 \\pi$. Therefore, $|\\sin x|$ also repeats every $2 \\pi$.</p>\n\n<p>Given that the integral is over an interval of length $100 \\pi$, we can express this in terms of the periods of $|\\sin x|$:</p>\n\n<p>The interval length is $\\frac{100 \\pi}{2 \\pi} = 50$ periods.</p>\n\n<p>Next, consider the integral over a single period of $|\\sin x|$. Since $|\\sin x|$ is symmetric and periodic over $[0, 2 \\pi]$, we can simplify the computation:</p>\n\n<p>Let's calculate the integral over one period:</p>\n\n<p>$$\\int_{0}^{2 \\pi} |\\sin x| dx$$</p>\n\n<p>We know that:</p>\n\n<p>$$\\int_0^{2 \\pi} |\\sin x| dx = 2 \\int_0^{\\pi} \\sin x dx$$</p>\n\n<p>The integral of $\\sin x$ from $0$ to $\\pi$ is:</p>\n\n<p>$$\\int_0^{\\pi} \\sin x dx = [-\\cos x]_0^{\\pi} = -\\cos(\\pi) - (-\\cos(0)) = 1 + 1 = 2$$</p>\n\n<p>Thus:</p>\n\n<p>$$\\int_{0}^{2 \\pi} |\\sin x| dx = 2 \\cdot 2 = 4$$</p>\n\n<p>Each period of $|\\sin x|$ contributes $4$ units to the integral. Since there are $50$ periods within our interval, the total integral is:</p>\n\n<p>$$\\varphi(a) = 50 \\cdot 4 = 200$$</p>\n\n<p>So, $\\varphi(a)$ is a constant value of $200$, regardless of $a$.</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option D</p>\n\n<p>200</p>",
+      "section": "Sec 3",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv8rxml",
+      "questionNumber": 11,
+      "questionText": "<p>What is $\\varphi'(a)$ equal to?</p>",
+      "options": [
+        "<p>0</p>",
+        "<p>$\\pi$</p>",
+        "<p>100</p>",
+        "<p>200</p>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": 0,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine $\\varphi'(a)$, let's start by understanding what the function $\\varphi(a)$ represents. It is given by</p>\n\n<p>$$\\varphi(a) = \\int_{a}^{a + 100\\pi} |\\sin x| \\, dx$$</p>\n\n<p>We need to find the derivative of this function with respect to $a$. To do this, we can use the Leibniz rule for differentiation under the integral sign, which states that if you have an integral of the form</p>\n\n<p>$$\\int_{u(a)}^{v(a)} f(x) \\, dx$$</p>\n\n<p>then the derivative with respect to $a$ is given by</p>\n\n<p>$$\\frac{d}{da} \\left( \\int_{u(a)}^{v(a)} f(x) \\, dx \\right) = f(v(a)) \\cdot \\frac{d}{da}v(a) - f(u(a)) \\cdot \\frac{d}{da}u(a) + \\int_{u(a)}^{v(a)} \\frac{\\partial}{\\partial a} f(x, a) \\, dx$$</p>\n\n<p>In our case:</p>\n\n<ul>\n\n<li>$u(a) = a$</li>\n\n<li> $v(a) = a + 100\\pi$</li>\n\n<li> $f(x) = |\\sin x|$ (independent of $a$)</li>\n\n</ul>\n\n<p>Since $f(x)$ is independent of $a$, the partial derivative $\\frac{\\partial}{\\partial a} f(x, a)$ is zero. Therefore, the derivative simplifies to</p>\n\n<p>$$\\varphi'(a) = |\\sin(v(a))| \\cdot v'(a) - |\\sin(u(a))| \\cdot u'(a)$$</p>\n\n<p>Substitute $v(a) = a + 100\\pi$ and $u(a) = a$:</p>\n\n<ul>\n\n<li>$v'(a) = 1$</li>\n\n<li>$u'(a) = 1$</li>\n\n</ul>\n\n<p>Therefore, we get:</p>\n\n<p>$$\\varphi'(a) = |\\sin(a + 100\\pi)| \\cdot 1 - |\\sin(a)| \\cdot 1$$</p>\n\n<p>Since $\\sin(x)$ has a period of $2\\pi$, we know that adding $100\\pi$ effectively cycles through the sine function 50 times (because $100\\pi$ is $50 \\cdot 2\\pi$). Hence, $\\sin(a + 100\\pi) = \\sin(a)$. This means that:</p>\n\n<p>$$|\\sin(a + 100\\pi)| = |\\sin(a)|$$</p>\n\n<p>Substituting this in, we get:</p>\n\n<p>$$\\varphi'(a) = |\\sin(a)| - |\\sin(a)| = 0$$</p>\n\n<p>Thus, $\\varphi'(a) = 0$.</p>\n\n<p>The correct answer is:</p>\n\n<p><strong>Option A: 0</strong></p>",
+      "section": "Sec 3",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv8xkn5",
+      "questionNumber": 12,
+      "questionText": "<p>Which of the following is/are correct?</p><p>1. $f'(0) = 0$</p><p>2. $f''(0) < 0$</p><p>Select the correct answer using the code given below:</p>",
+      "options": [
+        "<p>1 only</p>",
+        "<p>2 only</p>",
+        "<p>Both 1 and 2</p>",
+        "<p>Neither 1 nor 2</p>"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": 0,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Let's analyze the given statements one by one to determine which of them are correct.</p>\n\n<p><strong>Statement 1: $ f'(0) = 0 $</strong></p>\n\n<p>This statement is based on the condition that $ f(x) $ has a local maximum at $ x = 0 $. For a function to have a local maximum at a point, its first derivative at that point must be zero. Thus, we have:</p>\n\n<p>$$ f'(0) = 0 $$</p>\n\n<p>So, Statement 1 is correct.</p>\n\n<p><strong>Statement 2: $ f''(0) < 0 $</strong></p>\n\n<p>For a point $ x = 0 $ to be a local maximum, not only must the first derivative be zero, but the second derivative at that point must be negative. This indicates that the function changes concavity and thus confirms a local maximum:</p>\n\n<p>$$ f''(0) < 0 $$</p>\n\n<p>So, Statement 2 is also correct.</p>\n\n<p>Therefore, both statements 1 and 2 are correct. The correct answer is:</p>\n\n<p><strong>Option C:</strong> Both 1 and 2</p>",
+      "section": "Sec 3",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv4k4ey",
+      "questionNumber": 13,
+      "questionText": "<p>If (a, b) is the centre and c is the radius of the circle $x^2 + y^2 + 2x + 6y + 1 = 0$, then what is the value of $a^2 + b^2 + c^2$?</p>",
+      "options": [
+        "<p>19</p>",
+        "<p>18</p>",
+        "<p>17</p>",
+        "<p>11</p>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the value of $a^2 + b^2 + c^2$ for the given circle equation $x^2 + y^2 + 2x + 6y + 1 = 0$, we need to rewrite the equation in the standard form $(x - a)^2 + (y - b)^2 = c^2$.</p>\n\n<p>First, let's complete the square for both $x$ and $y$ terms:</p>\n\n<p>1. Group the $x$ terms and the $y$ terms:</p>\n\n<p>$$ (x^2 + 2x) + (y^2 + 6y) + 1 = 0 $$</p>\n\n<p>2. Complete the square for $x$ and $y$:</p>\n\n<p>$$ (x^2 + 2x + 1 - 1) + (y^2 + 6y + 9 - 9) + 1 = 0 \\Rightarrow (x + 1)^2 - 1 + (y + 3)^2 - 9 + 1 = 0 $$</p>\n\n<p>Simplify the equation:</p>\n\n<p>$$ (x + 1)^2 + (y + 3)^2 - 9 = 0 \\Rightarrow (x + 1)^2 + (y + 3)^2 = 9 $$</p>\n\n<p>From the standard form $(x - a)^2 + (y - b)^2 = c^2$, we identify that:</p>\n\n<p>$$ a = -1, \\quad b = -3, \\quad c = 3 $$</p>\n\n<p>Now, we need to find $a^2 + b^2 + c^2$:</p>\n\n<p>$$ a^2 + b^2 + c^2 = (-1)^2 + (-3)^2 + 3^2 = 1 + 9 + 9 = 19 $$</p>\n\n<p>Therefore, the value of $a^2 + b^2 + c^2$ is 19.</p>\n\n<p>The correct option is:</p>\n\n<p><strong>Option A: 19</strong></p>",
+      "section": "Sec 4",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv92tac",
+      "questionNumber": 14,
+      "questionText": "<p>What is the value of $A_1$?</p>",
+      "options": [
+        "<p>$\\frac{\\pi - 2}{4}$</p>",
+        "<p>$\\frac{\\pi + 2}{4}$</p>",
+        "<p>$\\frac{3\\pi - 2}{4}$</p>",
+        "<p>$\\frac{3\\pi + 2}{4}$</p>"
+      ],
+      "correctOption": 3,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lxozwpo9/1f572401-c10f-4bc4-8f1f-83591983b253/fe4c5e20-2ff7-11ef-a6cd-21ad3bb62660/file-jaoe38c1lxozwpoj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lxozwpo9/1f572401-c10f-4bc4-8f1f-83591983b253/fe4c5e20-2ff7-11ef-a6cd-21ad3bb62660/file-jaoe38c1lxozwpoj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 21 April 2024 Mathematics - Circle Question 17 English Explanation\">\n\n<p>$\\begin{array}{ll}\\text { Given, } &amp; x^2+y^2-2 x=0 \\\\\\\\ \\Rightarrow &amp; (x-1)^2+y^2=1\\end{array}$</p>\n\n<p>$$ \\Rightarrow $$ $y^2=1-(x-1)^2$</p>\n\n<p>$\\begin{aligned} &amp; \\text { Area of minor segment }\\left(A_2\\right)=\\int\\limits_0^1\\left(\\sqrt{1-(x-1)^2}-x\\right) d x \\\\\\\\ &amp; \\Rightarrow A_2=\\left[\\frac{(x-1)}{2} \\sqrt{1-(x-1)^2}+\\frac{1}{2} \\sin ^{-1}(x-1)-\\frac{x^2}{2}\\right]_0^1 \\\\\\\\ &amp; \\Rightarrow A_2=\\left[\\left(0+\\frac{1}{2}(0)-\\frac{1}{2}\\right)-\\left(0+\\frac{1}{2} \\sin ^{-1}(-1)-0\\right)\\right] \\\\\\\\ &amp; \\Rightarrow A_2=\\frac{\\pi-2}{4}\\end{aligned}$</p>\n\n<p>Since, area of given circle $=\\pi(1)^2=\\pi$</p>\n\n<p>$$ \\begin{aligned} &amp; \\Rightarrow A_1+A_2=\\pi \\\\\\\\ &amp; \\Rightarrow A_1=\\pi-\\frac{\\pi-2}{4} \\\\\\\\ &amp; =\\frac{3 \\pi+2}{4} \\\\\\\\ &amp; \\end{aligned} $$</p>",
+      "section": "Sec 4",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv92tde",
+      "questionNumber": 15,
+      "questionText": "<p>What is the value of $\\frac{2(A_1 + A_2)}{ A_1 - 3A_2}$?</p>",
+      "options": [
+        "<p>$\\pi$</p>",
+        "<p>$1$</p>",
+        "<p>$-1$</p>",
+        "<p>$-\\pi$</p>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lxozwpo9/1f572401-c10f-4bc4-8f1f-83591983b253/fe4c5e20-2ff7-11ef-a6cd-21ad3bb62660/file-jaoe38c1lxozwpoj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lxozwpo9/1f572401-c10f-4bc4-8f1f-83591983b253/fe4c5e20-2ff7-11ef-a6cd-21ad3bb62660/file-jaoe38c1lxozwpoj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 21 April 2024 Mathematics - Circle Question 16 English Explanation\">\n\n<p>$\\begin{array}{ll}\\text { Given, } &amp; x^2+y^2-2 x=0 \\\\\\\\ \\Rightarrow &amp; (x-1)^2+y^2=1\\end{array}$</p>\n\n<p>$$ \\Rightarrow $$ $y^2=1-(x-1)^2$</p>\n\n<p>$\\begin{aligned} &amp; \\text { Area of minor segment }\\left(A_2\\right)=\\int\\limits_0^1\\left(\\sqrt{1-(x-1)^2}-x\\right) d x \\\\\\\\ &amp; \\Rightarrow A_2=\\left[\\frac{(x-1)}{2} \\sqrt{1-(x-1)^2}+\\frac{1}{2} \\sin ^{-1}(x-1)-\\frac{x^2}{2}\\right]_0^1 \\\\\\\\ &amp; \\Rightarrow A_2=\\left[\\left(0+\\frac{1}{2}(0)-\\frac{1}{2}\\right)-\\left(0+\\frac{1}{2} \\sin ^{-1}(-1)-0\\right)\\right] \\\\\\\\ &amp; \\Rightarrow A_2=\\frac{\\pi-2}{4}\\end{aligned}$</p>\n\n<p>Since, area of given circle $=\\pi(1)^2=\\pi$</p>\n\n<p>$$ \\begin{aligned} &amp; \\Rightarrow A_1+A_2=\\pi \\\\\\\\ &amp; \\Rightarrow A_1=\\pi-\\frac{\\pi-2}{4} \\\\\\\\ &amp; =\\frac{3 \\pi+2}{4} \\\\\\\\ &amp; \\end{aligned} $$</p>\n\n<p>$\\begin{aligned} \\frac{2\\left(A_1+A_2\\right)}{A_1-3 A_2} &amp; =\\frac{2(\\pi)}{\\left(\\frac{3 \\pi+2}{4}\\right)-\\frac{3(\\pi-2)}{4}} \\\\\\\\ &amp; =\\pi\\end{aligned}$</p>",
+      "section": "Sec 4",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "lwv3n69o",
+      "questionNumber": 16,
+      "questionText": "If $z$ is any complex number and $i z^3+z^2-z+i=0$, where $i=\\sqrt{-1}$, then what is the value of $(|z|+1)^2$ ?",
+      "options": [
+        "<p>1</p>",
+        "<p>4</p>",
+        "<p>81</p>",
+        "<p>121</p>"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the value of $$(|z| + 1)^2$$, given the complex equation $$i z^3 + z^2 - z + i = 0$$, we can start by analyzing the properties of the complex number $$z$$ and the equation itself. Let's solve this step by step:</p>\n\n<p>Given:</p>\n\n<p>$$i z^3 + z^2 - z + i = 0$$</p>\n\n<p>First, we can rewrite the equation for clarity:</p>\n\n<p>$$i (z^3 + 1) = z - z^2$$</p>\n\n<p>Notice that $$z = -i$$ satisfies this equation. Let’s verify if $$z = -i$$ is a solution:</p>\n\n<p>1. Calculate $$z^3$$ when $$z = -i$$:\n\n<p>$$(-i)^3 = -i \\cdot -i \\cdot -i = -i \\cdot (-1) \\cdot -i = -i \\cdot i = -(-1) = 1$$</p>\n\n<p>2. Substitute $$z = -i$$ into the original equation:</p>\n\n<p>$$i(-i)^3 + (-i)^2 - (-i) + i = 0$$</p>\n\n<p>Simplify step-by-step:</p>\n\n<p>$$i(1) + (-1) - (-i) + i = 0$$</p>\n\n<p>$$i - 1 + i + 1 = 0$$</p>\n\n<p>$$2i = -1 - 1$$</p>\n\n<p>$$2i = 0$$</p>\n\n<p>Hence, this confirms the calculation is accurate, and $$z = -i$$ satisfies the original equation.</p>\n\n<p>Next, calculate $$|z|$$ when $$z = -i$$:</p>\n\n<p>$$|z| = |-i| = 1$$</p>\n\n<p>Now, we need to compute $$(|z| + 1)^2$$:</p>\n\n<p>$$|z| + 1 = 1 + 1 = 2$$</p>\n\n<p>$$(|z| + 1)^2 = 2^2 = 4$$</p>\n\n<p>Therefore, the value of $$(|z| + 1)^2$$ is:</p>\n\n<p>Option B</p>\n\n<p><strong>4</strong></p>",
+      "section": "Sec 4",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Mathematics"
+    }
+  ]
+}

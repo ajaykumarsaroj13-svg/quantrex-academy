@@ -1,0 +1,285 @@
+{
+  "testId": "tst-19g61moaeuem9",
+  "title": "Sets and Relation Test - 3 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "ml89h84z",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let the relation R on the set $\\mathrm{M}=\\{1,2,3, \\ldots, 16\\}$ be given by $\\mathrm{R}=\\{(x, y): 4 y=5 x-3, x, y \\in \\mathrm{M}\\}$.</p>\n<p>Then the minimum number of elements required to be added in R , in order to make the relation symmetric, is equal to</p>\n",
+      "options": [
+        "<p>4</p>\n",
+        "<p>3</p>\n",
+        "<p>1</p>\n",
+        "<p>2</p>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>$$ \\begin{aligned} &\\begin{aligned} & M=\\{1,2,3 \\ldots .16\\} \\\\ & R=\\{(x, y) / 4 y=5 x-3, x, y \\in N\\} \\\\ & 4 y=5 x-3 \\\\ & y=\\frac{5 x-3}{4} \\end{aligned}\\\\ &\\text { No of order pairs }=4 \\end{aligned} $$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "ml8t8ood",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider two sets $\\mathrm{A}=\\{x \\in \\mathrm{Z}:|(|x-3|-3)| \\leq 1\\}$ and \n<br/><br/>$\\mathrm{B}=\\left\\{x \\in \\mathbb{R}-\\{1,2\\}: \\frac{(x-2)(x-4)}{x-1} \\log _e(|x-2|)=0\\right\\}$. Then the number of \n<br/><br/>onto functions $f: \\mathrm{A} \\rightarrow \\mathrm{B}$ is equal to :</p>\n",
+      "options": [
+        "<p>32</p>\n",
+        "<p>81</p>\n",
+        "<p>79</p>\n",
+        "<p>62</p>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>$\\begin{aligned} & \\text { Set } A=\\{x \\in \\mathbb{Z}:|(|x-3|-3)| \\leq 1\\} \\\\\\\\ & |(|x-3|-3)| \\leq 1 \\quad\\{|x| \\leq a \\Rightarrow x \\in[-a, a]\\}\\end{aligned}$</p>\n<p>$$\\Rightarrow $$ $(|x-3|-3) \\in[-1,1]$</p>\n<p>$$\\Rightarrow $$ $ |x-3| \\in[2,4] $</p>\n<p>$  \\text { Using }|x| \\in[\\alpha, \\beta] \\Rightarrow x \\in[-\\beta,-\\alpha] \\cup[\\alpha, \\beta] $</p>\n<p>$  x-3 \\in[-4,-2] \\cup[2,4]$</p>\n<p>$$\\Rightarrow $$ $$ x \\in[-1,1] \\cup[5,7] $$</p>\n<p>Since $x \\in \\mathbb{Z}$ (integers), $x=-1,0,1,5,6,7$</p>\n<p>So set $A=\\{-1,0,1,5,6,7\\}$</p>\n<p>Set $B=\\left\\{x \\in \\mathbb{R}-\\{1,2\\}, \\frac{(x-2)(x-4)}{(x-1)} \\log _e(|x-2|)=0\\right\\}$</p>\n<p>$\\frac{(x-2)(x-4)}{(x-1)} \\log _e(|x-2|)=0$</p>\n<p>$$\\Rightarrow $$ $x-2=0 \\Rightarrow x=2$ but $x \\neq 2$</p>\n<p>$$\\Rightarrow $$ $x-4=0 \\Rightarrow x=4$</p>\n<p>$$\\Rightarrow $$ $\\log _e|x-2|=0 \\Rightarrow|x-2|=1$</p>\n<p>$$ \\begin{aligned} & x-2= \\pm 1 \\Rightarrow x=3,1 \\text { but } x \\neq 1 \\\\ & \\text { So set } B=\\{3,4\\} \\\\ & \\text { Let } n(A) \\& n(B) \\text { be number of elements in set } A \\text { and } B \\\\ & \\text { respectively } \\\\ & n(A)=6, n(B)=2 \\end{aligned} $$</p>\n<p>Number of onto function $f: A \\rightarrow B$ is</p>\n<p>= Total function - Into function</p>\n<p>Total function $=(n(B))^{n(A)}=2^6$</p>\n<p>number of Into function can be find using inclusion-exclusion principle</p>\n<p>Number of into function $={ }^2 C_1(1)^6$</p>\n<p>${ }^2 C_1(1)^6=$ only one image or range left from set $B$.</p>\n<p>Number of onto function $=2^6-{ }^2 C_1(1)^6$</p>\n<p>$=64-2=62$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "1l18z2pli",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If $$A = \\{ x:{x^2} = 1\\} $$ and $$B = \\{ x:{x^4} = 1\\} $$, then A $$\\Delta$$ B is equal to</p>",
+      "options": [
+        "$$\\{  - i,i\\} $$",
+        "$$\\{  - 1,i\\} $$",
+        "$$\\{  - 1,1, - i,i\\} $$",
+        "None of these"
+      ],
+      "correctOption": 0,
+      "solution": "<p>Given that, $$A = \\{ x:{x^2} = 1\\}  = \\{  - 1,1\\} $$ and $$B = \\{ x:{x^4} = 1\\}  = \\{  - 1,1, - i,i\\} $$</p>\n<p>Now, $$A - B = \\phi $$ and $$B - A = \\{  - i,i\\} $$</p>\n<p>$$\\therefore$$ $$A\\Delta B = (A - B) \\cup (B - A) = \\{  - i,i\\} $$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "ljad974k",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Consider the following relations \n<br/><br/>$R=\\{(x, y) \\mid x, y$ are real numbers and $x=w y$ for some rational number $w\\}$; \n<br/><br/>$S=\\left\\{\\left(\\frac{m}{n}, \\frac{p}{q}\\right) \\mid m, n, p\\right.$ and $q$ are integers such that $n, q \\neq 0$ and $q m=p m\\}$. Then",
+      "options": [
+        "$R$ is an equivalence relation but $S$ is not an equivalence relation\n",
+        "Neither $R$ nor $S$ is an equivalence relation",
+        "$S$ is an equivalence relation but $R$ is not an equivalence relation",
+        "$R$ and $S$ both are equivalence relations"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Let&#39;s evaluate each relation for the properties of an equivalence relation: reflexivity, symmetry, and transitivity.</p>\n<p><b>Relation R :</b> $R=(x, y) \\mid x, y$ are real numbers and $x=w y$ for some rational number $w$.</p>\n<ul>\n<li>Reflexivity : For all $x$ in $R$, $x = 1x$. Since 1 is a rational number, every element is related to itself.</li>\n<br/><li>Symmetry : For all $x, y$ in $R$, if $x = w y$ for some rational $w$, then $y = \\frac{1}{w}x$. However, if $w = 0$, then $\\frac{1}{w}$ is undefined, and therefore, $R$ doesn&#39;t satisfy symmetry.</li>\n<br/><li>Transitivity : If $x = w y$ and $y = v z$ for some rational numbers $w$ and $v$, then $x = (w v)z$. Since the product of rational numbers is rational, if $x$ is related to $y$ and $y$ is related to $z$, then $x$ is related to $z$.</li>\n</ul>\n<p>Therefore, $R$ is not an equivalence relation on $R$ since it does not satisfy the symmetry property.</p>\n<p><b>Relation S :</b> $S=\\left\\{\\left(\\frac{m}{n}, \\frac{p}{q}\\right) \\mid m, n, p\\right.$ and $q$ are integers such that $n, q \\neq 0$ and $q m=p m\\}$</p>\n<ul>\n<li>Reflexivity : For all $\\frac{m}{n}$, $\\frac{m}{n} = \\frac{m}{n}$. Since $n \\neq 0$ and $m = m$, every element is related to itself.</li>\n<br/><li>Symmetry : For all $\\frac{m}{n}$, $\\frac{p}{q}$, if $q m = p n$, then $n p = m n$. So if $\\frac{m}{n}$ is related to $\\frac{p}{q}$, then $\\frac{p}{q}$ is related to $\\frac{m}{n}$.</li>\n<br/><li>Transitivity : \n<br/><br/>$$\n\\begin{array}{rlr}\n  \\frac{m}{n} R \\frac{p}{q} \\text { and } \\frac{p}{q} R \\frac{r}{s} \\\\\\\\\n\\Rightarrow  m q=n p \\text { and } p s=r q \\\\\\\\\n\\Rightarrow  m q \\cdot p s=n p \\cdot r q \\\\\\\\\n\\Rightarrow  \\quad m s=n r \\\\\\\\\n\\Rightarrow  \\frac{m}{n}=\\frac{r}{s} \\Rightarrow \\frac{m}{n} R \\frac{r}{s}\n\\end{array}\n$$\n\n<br/><br/> So if $\\frac{m}{n}$ is related to $\\frac{p}{q}$ and $\\frac{p}{q}$ is related to $\\frac{r}{s}$, then $\\frac{m}{n}$ is related to $\\frac{r}{s}$. The relation $S$ is transitive.</li>\n</ul>\n<p>Therefore, $S$ is an equivalence relation on the set of all fractions where denominator is not zero.</p>\n<p>In conclusion, the correct answer is \n<br/><br/><b>Option C :</b> $S$ is an equivalence relation but $R$ is not an equivalence relation.</p>\n",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "B2HRGK7dEczQF7C94Njgy2xukf0qgrp2",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Consider the two sets :\n<br>A = {m $$ \\in $$ R : both the roots of<br> x<sup>2</sup>\n – (m + 1)x + m + 4 = 0 are real} \n<br>and B = [–3, 5).\n<br>Which of the following is not true?",
+      "options": [
+        "A $$ \\cap $$ B = {–3}",
+        "B – A = (–3, 5)",
+        "A $$ \\cup $$ B = R",
+        "A - B = ($$ - $$$$ \\propto $$, $$ - $$3) $$ \\cup $$ (5, $$ \\propto $$)"
+      ],
+      "correctOption": 3,
+      "solution": "As roots are real so, $$D \\ge 0$$<br><br>$${(m + 1)^2} - 4(m + 4) \\ge 0$$<br><br>$$ \\Rightarrow {m^2} - 2m - 15 \\ge 0$$<br><br>$$ \\Rightarrow $$ $$(m - 5)(m + 3) \\ge 0$$<br><br>$$m\\, \\in \\,$$($$ - $$$$ \\propto $$, $$ - $$3] $$ \\cup $$ [5, $$ \\propto $$)<br><br>$$A= ( - $$$$ \\propto $$, $$ - $$3] $$ \\cup $$ [5, $$ \\propto $$)<br><br>Given B = [$$ - $$3, 5)<br><p>Now, let&#39;s examine the options.</p>\n<p><b>Option A :</b> A ∩ B = {–3}\nThe intersection of sets A and B would be the set of elements common to both sets. In this case, the only common element is -3. So, option A is true.</p>\n<p><b>Option B :</b> B – A = (–3, 5)\nThe subtraction (or difference) of sets A from B is the set of elements that are in B but not in A. B is [–3, 5), and A is (-∞, -3] U [5, ∞). Subtracting A from B would leave an open interval (-3, 5), not including -3 and 5. So, option B is also true.</p>\n<p><b>Option C :</b> A ∪ B = R\nThe union of sets A and B is the set of elements that are in A, or B, or both. Here, A U B would cover all real numbers. So, option C is true.</p>\n<p><b>Option D :</b> A - B = (-∞, -3) ∪ (5, ∞)\nThe subtraction (or difference) of set B from A is the set of elements that are in A but not in B. B is [–3, 5), and A is (-∞, -3] U [5, ∞). Subtracting B from A would leave (-∞, -3) U [5, ∞), not including -3 and 5. But according to the convention for writing intervals, it should be (-∞, -3) U (5, ∞). So, option D is not true.</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "m6srmy8w",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $\\mathrm{R}=\\{(1,2),(2,3),(3,3)\\}$ be a relation defined on the set $\\{1,2,3,4\\}$. Then the minimum number of elements, needed to be added in R so that R becomes an equivalence relation, is:</p>",
+      "options": [
+        "9",
+        "8",
+        "7",
+        "10"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$\\mathrm{A}=\\{1,2,3,4\\}$$</p>\n<p>For relation to be reflexive</p>\n<p>$$\\mathrm{R}=\\{(1,2),(2,3),(3,3)\\}$$</p>\n<p>Minimum elements added will be</p>\n<p>$$\\begin{aligned}\n& (1,1),(2,2),(4,4)(2,1)(3,2)(3,2)(3,1)(1,3) \\\\\n& \\therefore \\text { Minimum number of elements }=7\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "jaoe38c1lsd55mch",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$A=\\{1,2,3, \\ldots \\ldots \\ldots \\ldots, 100\\}$$. Let $$R$$ be a relation on $$\\mathrm{A}$$ defined by $$(x, y) \\in R$$ if and only if $$2 x=3 y$$. Let $$R_1$$ be a symmetric relation on $$A$$ such that $$R \\subset R_1$$ and the number of elements in $$R_1$$ is $$\\mathrm{n}$$. Then, the minimum value of $$\\mathrm{n}$$ is _________.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>$$\\begin{aligned}\n& \\mathrm{R}=\\{(3,2),(6,4),(9,6),(12,8), \\ldots \\ldots \\ldots .(99,66)\\} \\\\\n& \\mathrm{n}(\\mathrm{R})=33 \\\\\n& \\therefore 66\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "1ldwxc9aj",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The minimum number of elements that must be added to the relation R = {(a, b), (b, c), (b, d)} on the set {a, b, c, d} so that it is an equivalence relation, is __________.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "$R=\\{(a, b)(b, c)(b, d)\\}$\n<br/><br/>\n$S:\\{a, b, c, d\\}$\n<br/><br/>\nAdding $(a, a),(b, b),(c, c),(d, d)$ make reflexive.\n<br/><br/>\nAdding $(b, a),(c, b),(d, b)$ make Symmetric\n<br/><br/>\nAnd adding $(a, d),(a, c)$ to make transitive\n<br/><br/>\nFurther $(d, a) \\&(c, a)$ to be added to make Symmetricity.\n<br/><br/>\nFurther $(c, d) \\&(d, c)$ also be added.\n<br/><br/>\nSo total 13 elements to be added to make equivalence.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "lv3vefnm",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$A=\\{2,3,6,8,9,11\\}$$ and $$B=\\{1,4,5,10,15\\}$$. Let $$R$$ be a relation on $$A \\times B$$ defined by\n$$(a, b) R(c, d)$$ if and only if $$3 a d-7 b c$$ is an even integer. Then the relation $$R$$ is</p>",
+      "options": [
+        "reflexive but not symmetric.\n",
+        "an equivalence relation.\n",
+        "reflexive and symmetric but not transitive.\n",
+        "transitive but not symmetric."
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$(a, b) R(c, d) \\Rightarrow 3 a d-7 b c \\in$$ even</p>\n<p>For reflexive</p>\n<p>$$(a, b) R(a, b) \\Rightarrow 3 a b-7 b a=-4 a b \\in$$ even</p>\n<p>For symmetric</p>\n<p>$$(a, b) R(c, d)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lw4jkysz/b1310f77-4268-428b-aeb5-13316c958a9a/413519a0-10ec-11ef-8836-ed8ff380bbe9/file-1lw4jkyt6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lw4jkysz/b1310f77-4268-428b-aeb5-13316c958a9a/413519a0-10ec-11ef-8836-ed8ff380bbe9/file-1lw4jkyt6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 8th April Evening Shift Mathematics - Sets and Relations Question 39 English Explanation\"></p>\n<p>then</p>\n<p>$$(c, d) R(a, b)=3 b c-7 a d$$</p>\n<p>$$\\in$$ even</p>\n<p>Now check for transitive</p>\n<p>$$\\begin{aligned}\n&amp; \\begin{array}{ll}\n(a, b) R(c, d) \\text { and }(c, d) R(e, f) \\text { then }(a, b) R(e, f) \\\\\n3 a d-7 b c=2 m \\quad \\Rightarrow (2,5) R(6,8) \\text { and } \\\\\n3 c f-7 e d=2 n \\quad (6,8) R(9,4) \\\\\n\\text { then } 3 a f-7 e b \\neq \\text { even } \\notin(2,5) R(9,4) \\\\\n\\Rightarrow \\text { Not transitive option }(3)\n\\end{array}\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "Ped5VSnU29ThaR3uOOjgy2xukf3yias0",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let R<sub>1</sub>\n and R<sub>2</sub>\n be two relation defined as\nfollows :\n<br>R<sub>1</sub>\n = {(a, b) $$ \\in $$ R<sup>2</sup>\n : a<sup>2</sup>\n + b<sup>2</sup> $$ \\in $$ Q} and\n<br>R<sub>2</sub>\n = {(a, b) $$ \\in $$ R<sup>2</sup>\n : a<sup>2</sup>\n + b<sup>2</sup> $$ \\notin $$ Q}, \n<br>where Q is the\nset of all rational numbers. Then :",
+      "options": [
+        "Neither R<sub>1</sub>\n nor R<sub>2</sub>\n is transitive.",
+        "R<sub>2</sub>\n is transitive but R<sub>1</sub>\n is not transitive.",
+        "R<sub>1</sub>\n and R<sub>2</sub>\n are both transitive.",
+        "R<sub>1</sub>\n is transitive but R<sub>2</sub>\n is not transitive."
+      ],
+      "correctOption": 0,
+      "solution": "For R<sub>1</sub> :<br><br>Let a = 1 + $$\\sqrt 2 $$, b = 1 $$-$$ $$\\sqrt 2 $$, c = $${8^{{1 \\over 4}}}$$<br><br>aR<sub>1</sub>b : a<sup>2</sup> + b<sup>2</sup> = 6 $$ \\in $$ Q<br><br>bR<sub>1</sub>c : b<sup>2</sup> + c<sup>2</sup> = 3 $$-$$ 2$$\\sqrt 2 $$ + 2$$\\sqrt 2 $$ = 3 $$ \\in $$ Q<br><br>aR<sub>1</sub>c : a<sup>2</sup> + c<sup>2</sup> = 3 + 2$$\\sqrt 2 $$ + 2$$\\sqrt 2 $$ $$ \\notin $$ Q<br><br>$$ \\therefore $$ R<sub>1</sub> is not transitive.<br><br>For R<sub>2</sub> : <br><br>Let a = 1 + $$\\sqrt 2 $$, b = $$\\sqrt 2 $$, c = 1 $$-$$ $$\\sqrt 2 $$<br><br>aR<sub>2</sub>b : a<sup>2</sup> + b<sup>2</sup> = 5 + 2$$\\sqrt 2 $$ $$ \\notin $$ Q<br><br>bR<sub>2</sub>c : b<sup>2</sup> + c<sup>2</sup> = 5 $$-$$ 2$$\\sqrt 2 $$ $$ \\notin $$ Q<br><br>aR<sub>2</sub>c : a<sup>2</sup> + c<sup>2</sup> = 3 + 2$$\\sqrt 2 $$ + 3 $$-$$ 2$$\\sqrt 2 $$ = 6 $$ \\in $$ Q<br><br>$$ \\therefore $$ R<sub>2</sub> is not transitive.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "m6t9xss4",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $\\mathrm{A}=\\{(x, y) \\in \\mathbf{R} \\times \\mathbf{R}:|x+y| \\geqslant 3\\}$ and $\\mathrm{B}=\\{(x, y) \\in \\mathbf{R} \\times \\mathbf{R}:|x|+|y| \\leq 3\\}$.\nIf $\\mathrm{C}=\\{(x, y) \\in \\mathrm{A} \\cap \\mathrm{B}: x=0$ or $y=0\\}$, then $\\sum_{(x, y) \\in \\mathrm{C}}|x+y|$ is :</p>",
+      "options": [
+        "18",
+        "24",
+        "15",
+        "12"
+      ],
+      "correctOption": 3,
+      "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7j60oli/2fba6627-d284-44f6-9fe1-a1e3238792f5/595d9260-f2bd-11ef-839d-2d40708f8cbd/file-jaoe38c1m7j60olj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7j60oli/2fba6627-d284-44f6-9fe1-a1e3238792f5/595d9260-f2bd-11ef-839d-2d40708f8cbd/file-jaoe38c1m7j60olj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 23rd January Evening Shift Mathematics - Sets and Relations Question 28 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\mathrm{C}=\\{(3,0),(-3,0),(0,3),(0,-3)\\} \\\\\n&amp; \\Sigma|\\mathrm{x}+\\mathrm{y}|=12\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "1ldselj5c",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let R be a relation defined on $$\\mathbb{N}$$ as $$a\\mathrm{R}b$$ if $$2a+3b$$ is a multiple of $$5,a,b\\in \\mathbb{N}$$. Then R is</p>",
+      "options": [
+        "an equivalence relation",
+        "non reflexive",
+        "symmetric but not transitive",
+        "transitive but not symmetric"
+      ],
+      "correctOption": 0,
+      "solution": "<p>a R b if 2a + 3b = 5m, m $$\\in$$ $$l$$</p>\n<p>(1) $$(a,a) \\in R$$ as $$2a + 3a = 5a,a \\in N$$</p>\n<p>Hence, R is reflexive</p>\n<p>(2) If $$(a,b) \\in R$$ then $$2a + 3 = 5m$$</p>\n<p>Now, $$5(a + b) = 5n$$</p>\n<p>$$3a + 2b + 2a + 3b = 5n$$</p>\n<p>$$\\therefore$$ $$3a + 2b = 5(n - m)$$</p>\n<p>$$\\therefore$$ $$(b,a) \\in R$$</p>\n<p>$$\\therefore$$ R is symmetric</p>\n<p>(3) If $$(a,b) \\in R$$ and $$(b,c) \\in R$$ then</p>\n<p>$$2a + 3b = 5m,2b + 3c = 5n$$</p>\n<p>$$ \\Rightarrow 2a + 5b + 3c = 5(m + n)$$</p>\n<p>$$ \\Rightarrow 2a + 3c = 5(m = n - b)$$</p>\n<p>$$\\therefore$$ $$(a,c) \\in R$$</p>\n<p>$$\\therefore$$ R is transitive</p>\n<p>Hence, R is equivalence relation.</p>\n<p>Option (1) is correct.</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "WSabZw5gL3VAFWgcOz1qpqahkk8e9ppyl",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let X = {1, 2, 3, 4, 5}. The number of different ordered pairs (Y, Z) that can be formed such that Y $$ \\subseteq $$ X, Z $$ \\subseteq $$ X and Y $$ \\cap $$ Z is empty, is :",
+      "options": [
+        "3<sup>5</sup>",
+        "2<sup>5</sup>",
+        "5<sup>3</sup>",
+        "5<sup>2</sup>"
+      ],
+      "correctOption": 0,
+      "solution": "For any element x<sub>i</sub> present in X, 4 cases arises while making subsets Y and Z.\n<br><br><b>Case- 1 :</b> x<sub>i</sub> $$ \\in $$ Y, x<sub>i</sub> $$ \\in $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z $$ \\ne $$ $$\\phi $$\n<br><br><b>Case- 2 :</b> x<sub>i</sub> $$ \\in $$ Y, x<sub>i</sub> $$ \\notin $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z = $$\\phi $$\n<br><br><b>Case- 3 :</b> x<sub>i</sub> $$ \\notin $$ Y, x<sub>i</sub> $$ \\in $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z = $$\\phi $$\n<br><br><b>Case- 4 :</b> x<sub>i</sub> $$ \\notin $$ Y, x<sub>i</sub> $$ \\notin $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z = $$\\phi $$\n<br><br>$$ \\therefore $$ For every element, number of ways = 3 for which Y $$ \\cap $$ Z = $$\\phi $$\n<br><br>$$ \\Rightarrow $$ Total ways = 3 × 3 × 3 × 3 × 3 [$$ \\because $$ no. of elements in set X = 5]\n<br><br>= 3<sup>5</sup>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "UWZpD3f8zFp3ctRl2Z1kmm3f6jr",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Define a relation R over a class of n $$\\times$$ n real matrices A and B as <br><br>\"ARB iff there exists a non-singular matrix P such that PAP<sup>$$-$$1</sup> = B\". <br><br>Then which of the following is true?",
+      "options": [
+        "R is reflexive, transitive but not symmetric",
+        "R is symmetric, transitive but not reflexive.",
+        "R is reflexive, symmetric but not transitive",
+        "R is an equivalence relation"
+      ],
+      "correctOption": 3,
+      "solution": "For reflexive relation,<br/><br/> $\\forall(A, A) \\in R$ for matrix $P$.<br/><br/>\n$\\Rightarrow A=P A P^{-1}$ is true for $P=1$<br/><br/>\nSo, $R$ is reflexive relation.<br/><br/>\nFor symmetric relation,<br/><br/>\nLet $(A, B) \\in R$ for matrix $P$.<br/><br/>\n$$\n\\Rightarrow \\quad A=P B P^{-1}\n$$<br/><br/>\nAfter pre-multiply by $P^{-1}$ and post-multiply by $P$, we get<br/><br/>\n$$\nP^{-1} A P=B\n$$<br/><br/>\nSo, $(B, A) \\in R$ for matrix $P^{-1}$.<br/><br/>\nSo, $R$ is a symmetric relation.<br/><br/>\nFor transitive relation,<br/><br/>\nLet $A R B$ and $B R C$<br/><br/>\nSo, $A=P B P^{-1}$ and $B=P C P^{-1}$<br/><br/>\nNow, $A=P\\left(P C P^{-1}\\right) P^{-1}$<br/><br/>\n$\\Rightarrow A=(P)^2 C\\left(P^{-1}\\right)^2 \\Rightarrow A=(P)^2 \\cdot C \\cdot\\left(P^2\\right)^{-1}$<br/><br/>\n$\\therefore(A, C) \\in R$ for matrix $P^2$.<br/><br/>\n$\\therefore R$ is transitive relation.<br/><br/>\nHence, $R$ is an equivalence relation.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    },
+    {
+      "id": "DOhFcGHeiIM3tbQSkae3L",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let <b>N</b> denote the set of all natural numbers. Define two binary relations on <b>N</b> as <sub>R</sub> = {(x, y) $$ \\in $$ <b>N $$ \\times $$ N</b> : 2x + y = 10} and R<sub>2</sub> = {(x, y) $$ \\in $$ <b>N $$ \\times $$ N</b>  :  x  +  2y = 10}. Then : ",
+      "options": [
+        "Range of R<sub>1</sub> is {2, 4, 8).",
+        "Range of R<sub>2</sub> is {1, 2, 3, 4}.",
+        "Both R<sub>1</sub> and R<sub>2</sub> are symmetric relations.",
+        "Both R<sub>1</sub> and R<sub>2</sub> are transitive relations."
+      ],
+      "correctOption": 1,
+      "solution": "For R<sub>1</sub>; 2x + y = 10 and x, y $$ \\in $$ N possible values for x and y are : \n<br><br>x = 1, y = 8 &nbsp;&nbsp; i.e. &nbsp;&nbsp;(1, 8);\n<br><br>x = 2, y = 6 &nbsp;&nbsp; i.e &nbsp;&nbsp; (2, 6);\n<br><br>x = 3, y = 4 &nbsp;&nbsp; i.e &nbsp;&nbsp; (3, 4);\n<br><br>x = 4, y = 2 &nbsp;&nbsp; i.e &nbsp;&nbsp; (4, 2) \n<br><br>$$\\therefore\\,\\,\\,$$ R<sub>1</sub> = { (1, 8), (2, 6), (3, 4), (4, 2) }\n<br><br>$$\\therefore\\,\\,\\,$$ Range of R<sub>1</sub> is {2, 4, 6, 8}\n<br><br>R<sub>1</sub> is not symmetric.\n<br><br>R<sub>1</sub> is not transitive also as \n<br><br>(3, 4), (4, 2) $$ \\in $$ R , but (3, 2) $$ \\notin $$ R<sub>1</sub>\n<br><br>For R<sub>2</sub> : x + 2y = 10 and x, y $$ \\in $$ N\n<br><br>Possible values of x, and y are : \n<br><br>x = 8, y= 1 &nbsp;&nbsp; i.e &nbsp;&nbsp; (8, 1)\n<br><br>x = 6, y = 2 &nbsp;&nbsp; i.e &nbsp;&nbsp; (6, 2)\n<br><br>x = 4, y = 3 &nbsp;&nbsp; i.e &nbsp;&nbsp; (4, 3) and\n<br><br>x = 2, y = 4 &nbsp;&nbsp; i.e &nbsp;&nbsp; (2, 4)\n<br><br>$$\\therefore\\,\\,\\,$$ R<sub>2</sub> = {(8, 1) (6, 2) (4, 3) (2, 4)}\n<br><br>$$\\therefore\\,\\,\\,$$ Range of R<sub>2</sub> = $$\\left\\{ {1,2,3,4} \\right\\}$$\n<br><br>R<sub>2</sub> is not symmetric and transitive",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Sets and Relation"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "testId": "tst-19g61moo6lfit",
+  "title": "Limits Test - 2 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "LyYVn5Xz5QYZhjEVYw7qG",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let S = {($$\\lambda $$, $$\\mu $$) $$ \\in $$ <b>R</b> $$ \\times $$ <b>R</b> : f(t) = (|$$\\lambda $$| e<sup>|t|</sup> $$-$$ $$\\mu $$).  sin (2|t|), <b>t</b>  $$ \\in $$ <b>R</b>, is a differentiable function}.  Then S is a subset of : ",
+      "options": [
+        "<b>R</b> $$ \\times $$ [0, $$\\infty $$)",
+        "[0, $$\\infty $$) $$ \\times $$ <b>R</b>",
+        "<b>R</b> $$ \\times $$ ($$-$$ $$\\infty $$, 0)",
+        "($$-$$ $$\\infty $$, 0) $$ \\times $$ <b>R</b>"
+      ],
+      "correctOption": 0,
+      "solution": "S = {($$\\lambda $$, $$\\mu $$) $$ \\in $$ <b>R</b> $$ \\times $$ <b>R</b> :  f(t) = $$\\left( {\\left| \\lambda  \\right|{e^{\\left| t \\right|}} - \\mu } \\right)$$ sin $$\\left( {2\\left| t \\right|} \\right),$$ t $$ \\in $$ <b>R</b>\n<br><br>f(t) = $$\\left( {\\left| \\lambda  \\right|{e^{\\left| t \\right|}} - \\mu } \\right)\\sin \\left( {2\\left| t \\right|} \\right)$$\n<br><br>= $$\\left\\{ {\\matrix{\n   {\\left( {\\left| \\lambda  \\right|{e^t} - \\mu } \\right)\\sin 2t,} &amp; {t &gt; 0}  \\cr \n   {\\left( {\\left| \\lambda  \\right|{e^{ - t}} - \\mu } \\right)\\left( { - \\sin 2t} \\right),} &amp; {t &lt; 0}  \\cr \n\n } } \\right.$$\n<br><br>f'(t) = $$\\left\\{ {\\matrix{\n   {\\left( {\\left| \\lambda  \\right|{e^t}} \\right)\\sin 2t + \\left( {\\left| \\lambda  \\right|{e^t} - \\mu } \\right)\\left( {2\\cos 2t} \\right),\\,\\,t &gt; 0}  \\cr \n   {\\left| \\lambda  \\right|{e^{ - t}}\\sin 2t + \\left( {\\left| \\lambda  \\right|{e^{ - t}} - \\mu } \\right)\\left( {-2\\cos 2t} \\right),t &lt; 0}  \\cr \n\n } } \\right.$$\n<br><br>As,  f(t)  is differentiable\n<br><br>$$ \\therefore $$&nbsp;&nbsp;<b>LHD</b> = <b>RHD</b>  at  t = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp; $$\\left| \\lambda  \\right|$$ . sin2(0) + $$\\left( {\\left| \\lambda  \\right|{e^0} - \\mu } \\right)$$2cos(0)\n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= $$\\left| \\lambda  \\right|{e^{ - 0}}\\,$$ . sin 2(0) $$-$$ 2 cos (0) $$\\left( {\\left| \\lambda  \\right|{e^{ - 0}} - \\mu } \\right)$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 0 + $$\\left( {\\left| \\lambda  \\right| - \\mu } \\right)$$2 = 0 $$-$$ 2$$\\left( {\\left| \\lambda  \\right| - \\mu } \\right)$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;4$$\\left( {\\left| \\lambda  \\right| - \\mu } \\right)$$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$\\left| \\mu  \\right|$$&nbsp;=&nbsp;$$\\mu $$\n<br><br>So, S $$ \\equiv $$ ($$\\lambda $$, $$\\mu $$) = {$$\\lambda $$ $$ \\in $$ <b>R</b> &amp; $$\\mu $$ $$ \\in $$ [0, $$\\infty $$)}\n<br><br>Therefore set S is subset of R $$ \\times $$ [0, $$\\infty $$)",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "QzdCEqaQd0aBzCfs",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let the function $$g:\\left( { - \\infty ,\\infty } \\right) \\to \\left( { - {\\pi  \\over 2},{\\pi  \\over 2}} \\right)$$ be given by\n<br><br/>$$g\\left( u \\right) = 2{\\tan ^{ - 1}}\\left( {{e^u}} \\right) - {\\pi  \\over 2}.$$ Then, $$g$$ is ",
+      "options": [
+        "even and is strictly increasing in $$\\left( {0,\\infty } \\right)$$ ",
+        "odd and is strictly decreasing in $$\\left( { - \\infty ,\\infty } \\right)$$ ",
+        "odd and is strictly increasing in $$\\left( { - \\infty ,\\infty } \\right)$$ ",
+        "neither even nor odd, but is strictly increasing in $$\\left( { - \\infty ,\\infty } \\right)$$"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Given that,</p>\n<p>$$g(u) = 2{\\tan ^{ - 1}}({e^u}) - {\\pi  \\over 2}$$ for $$u \\in ( - \\infty ,\\infty )$$</p>\n<p>$$g( - u) = 2{\\tan ^{ - 1}}{e^{ - u}} - {\\pi  \\over 2} = 2{\\cot ^{ - 1}}({e^u}) - {\\pi  \\over 2}$$</p>\n<p>$$ = 2\\left( {{\\pi  \\over 2} - {{\\tan }^{ - 1}}({e^u}) - {\\pi  \\over 2}} \\right)$$</p>\n<p>$$ =  - 2{\\tan ^{ - 1}}({e^u}) + {\\pi  \\over 2}$$</p>\n<p>$$ =  - g(u)$$</p>\n<p>$$\\therefore$$ $$g(u) =  - g(u)$$</p>\n<p>$$ \\Rightarrow g(u)$$ is an odd function</p>\n<p>We have, $$g(u) = 2{\\tan ^{ - 1}}({e^u}) - {\\pi  \\over 2}$$</p>\n<p>$$g'(u) = {{2{e^u}} \\over {1 + 2{e^{2u}}}}$$</p>\n<p>$$g'(u) > 0,\\forall u \\in R$$ [$$\\because$$ $${e^u} > 0$$]<?p>\n<p>So, $$g'(u)$$ is increasing function.</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "WtrrL787R3wCQZqP",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "For each t $$ \\in R$$, let [t] be the greatest integer less than or equal to t.\n<br><br>Then $$\\mathop {\\lim }\\limits_{x \\to {0^ + }} x\\left( {\\left[ {{1 \\over x}} \\right] + \\left[ {{2 \\over x}} \\right] + ..... + \\left[ {{{15} \\over x}} \\right]} \\right)$$",
+      "options": [
+        "does not exist in R",
+        "is equal to 0",
+        "is equal to 15",
+        "is equal to 120"
+      ],
+      "correctOption": 3,
+      "solution": "Given, \n<br><br>$$\\mathop {lim}\\limits_{x \\to {0^ + }} \\,\\,x\\,\\left( {\\left[ {{1 \\over x}} \\right] + \\left[ {{2 \\over x}} \\right]} \\right. + $$ $$\\left. {\\,.\\,.\\,.\\,.\\,.\\, + \\left[ {{{15} \\over x}} \\right]} \\right)$$\n<br><br>as we know that\n<br><br>$${1 \\over x} = \\left[ {{1 \\over x}} \\right] + \\left\\{ {{1 \\over x}} \\right\\}$$\n<br><br>$$ \\Rightarrow \\,\\,\\,\\,\\left[ {{1 \\over x}} \\right] = {1 \\over x} - \\left\\{ {{1 \\over x}} \\right\\}$$\n<br><br>$$ = \\,\\,\\,\\,\\mathop {\\lim }\\limits_{x \\to {0^ + }} \\,\\,x\\left[ {{1 \\over x} - \\left\\{ {{1 \\over x}} \\right\\} + {2 \\over 2} - \\left\\{ {{2 \\over x}} \\right\\} + ........{{15} \\over x} - \\left\\{ {{{15} \\over x}} \\right\\}} \\right]$$\n<br><br>$$ = \\,\\,\\,\\,\\mathop {\\lim }\\limits_{x \\to {0^ + }} \\,\\left[ {x.{1 \\over x} + x.{2 \\over x} + .....x.{{15} \\over x}} \\right]$$ \n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, - \\,\\left[ {x.\\left\\{ {{1 \\over 2}} \\right\\} + .. + x.\\left\\{ {{{15} \\over x}} \\right\\}} \\right]$$\n<br><br>We know $$\\left\\{ {{1 \\over x}} \\right\\}$$ is fractional part of $${1 \\over x}.$$\n<br><br>So, the range of $$\\,\\left\\{ {{1 \\over x}} \\right\\}$$ is $$0 \\le \\left\\{ {{1 \\over x}} \\right\\} &lt; 1$$\n<br><br>So, $$\\mathop {lim}\\limits_{x \\to {0^ + }} \\,\\,x\\,\\left\\{ {{1 \\over x}} \\right\\} = 0.$$ (finite no) $$=0$$\n<br><br>Similarly  $$\\mathop {\\lim }\\limits_{x \\to {0^ + }} x.\\left\\{ {{2 \\over x}} \\right\\} = 0$$\n<br><br>$$ = \\,\\,\\,\\,\\left( {1 + 2 + ... + 15} \\right) - \\left( {0 + 0...} \\right)$$\n<br><br>$$ = \\,\\,\\,\\,{{15 \\times 16} \\over 2}$$\n<br><br>$$ = \\,\\,\\,\\,120$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "1krrwrbii",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let a function g : [ 0, 4 ] $$\\to$$ R be defined as <br><br>$$g(x) = \\left\\{ {\\matrix{\n   {\\mathop {\\max }\\limits_{0 \\le t \\le x} \\{ {t^3} - 6{t^2} + 9t - 3),} &amp; {0 \\le x \\le 3}  \\cr \n   {4 - x,} &amp; {3 &lt; x \\le 4}  \\cr \n\n } } \\right.$$, then the number of points in the interval (0, 4) where g(x) is NOT differentiable, is ____________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "$$f(x) = {x^3} - 6{x^2} + 9x - 3$$<br><br>$$f(x) = 3{x^2} - 12x + 9 = 3(x - 1)(x - 3)$$<br><br>$$f(1) = 1$$, $$f(3) = 3$$<br><br>$$g(x) = \\left[ {\\matrix{\n   {f(9x)} &amp; {0 \\le x \\le 1}  \\cr \n   0 &amp; {1 \\le x \\le 3}  \\cr \n   { - 1} &amp; {3 &lt; x \\le 4}  \\cr \n\n } } \\right.$$<br><br>g(x) is continuous<br><br>$$g'(x) = \\left[ {\\matrix{\n   {3(x - 1)(x - 3)} &amp; {0 \\le x \\le 1}  \\cr \n   0 &amp; {1 \\le x \\le 3}  \\cr \n   { - 1} &amp; {3 &lt; x \\le 4}  \\cr \n\n } } \\right.$$<br><br>g(x) is non-differentiable at x = 3",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "lsaq12m0",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $\\{x\\}$ denote the fractional part of $x$ and $f(x)=\\frac{\\cos ^{-1}\\left(1-\\{x\\}^2\\right) \\sin ^{-1}(1-\\{x\\})}{\\{x\\}-\\{x\\}^3}, x \\neq 0$. If $\\mathrm{L}$ and $\\mathrm{R}$ respectively denotes the left hand limit and the right hand limit of $f(x)$ at $x=0$, then $\\frac{32}{\\pi^2}\\left(\\mathrm{~L}^2+\\mathrm{R}^2\\right)$ is equal to ___________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "Finding right hand limit\n<br/><br/>R = $$\n\\begin{gathered}\n\\lim _{x \\rightarrow 0^{+}} f(x)=\\lim _{h \\rightarrow 0} f(0+h)\n=\\lim _{h \\rightarrow 0} f(h)\n\\end{gathered}\n$$\n<br/><br/>$\\begin{aligned} & =\\lim _{h \\rightarrow 0} \\frac{\\cos ^{-1}\\left(1-h^2\\right) \\sin ^{-1}(1-h)}{h\\left(1-h^2\\right)} \\\\\\\\ & =\\lim _{\\mathrm{h} \\rightarrow 0} \\frac{\\cos ^{-1}\\left(1-\\mathrm{h}^2\\right)}{\\mathrm{h}}\\left(\\frac{\\sin ^{-1} 1}{1}\\right)\\end{aligned}$\n<br/><br/>Let $\\cos ^{-1}\\left(1-h^2\\right)=\\theta \\Rightarrow \\cos \\theta=1-h^2$\n<br/><br/>$$\n\\begin{aligned}\n& =\\frac{\\pi}{2} \\lim _{\\theta \\rightarrow 0} \\frac{\\theta}{\\sqrt{1-\\cos \\theta}} \\\\\\\\\n& =\\frac{\\pi}{2} \\lim _{\\theta \\rightarrow 0} \\frac{1}{\\sqrt{\\frac{1-\\cos \\theta}{\\theta^2}}} \\\\\\\\\n& =\\frac{\\pi}{2} \\frac{1}{\\sqrt{1 / 2}} \\\\\\\\\n& \\therefore \\mathrm{R}=\\frac{\\pi}{\\sqrt{2}}\n\\end{aligned}\n$$\n<br/><br/>Now finding left hand limit\n<br/><br/>$$\n\\begin{aligned}\n& L=\\lim _{x \\rightarrow 0^{-}} f(x) =\\lim _{h \\rightarrow 0} f(-h)\n\\end{aligned}\n$$\n<br/><br/>$\\begin{aligned} & =\\lim _{h \\rightarrow 0} \\frac{\\cos ^{-1}\\left(1-\\{-h\\}^2\\right) \\sin ^{-1}(1-\\{-h\\})}{\\{-h\\}-\\{-h\\}^3} \\\\\\\\ & =\\lim _{h \\rightarrow 0} \\frac{\\cos ^{-1}\\left(1-(-h+1)^2\\right) \\sin ^{-1}(1-(-h+1))}{(-h+1)-(-h+1)^3} \\\\\\\\ & =\\lim _{h \\rightarrow 0} \\frac{\\cos ^{-1}\\left(-h^2+2 h\\right) \\sin ^{-1} h}{(1-h)\\left(1-(1-h)^2\\right)}\\end{aligned}$\n<br/><br/>$\\begin{aligned} & =\\lim _{h \\rightarrow 0}\\left(\\frac{\\pi}{2}\\right) \\frac{\\sin ^{-1} h}{\\left(1-(1-h)^2\\right)} \\\\\\\\ & =\\frac{\\pi}{2} \\lim _{h \\rightarrow 0}\\left(\\frac{\\sin ^{-1} h}{-h^2+2 h}\\right) \\\\\\\\ & =\\frac{\\pi}{2} \\lim _{h \\rightarrow 0}\\left(\\frac{\\sin ^{-1} h}{h}\\right)\\left(\\frac{1}{-h+2}\\right) \\\\\\\\ & \\quad L=\\frac{\\pi}{4}\\end{aligned}$\n<br/><br/>$\\begin{aligned} & \\frac{32}{\\pi^2}\\left(\\mathrm{~L}^2+\\mathrm{R}^2\\right)=\\frac{32}{\\pi^2}\\left(\\frac{\\pi^2}{2}+\\frac{\\pi^2}{16}\\right) \\\\\\\\ & =16+2 \\\\\\\\ & =18\\end{aligned}$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "1lg5cyl0u",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$f(x) = {{{x^2} - 6x + 5} \\over {{x^2} - 5x + 6}}$$.</p>\n<p>Match the conditions/expressions in Column I with statements in Column II.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 472px\">\n<colgroup>\n<col style=\"width: 48px\">\n<col style=\"width: 192px\">\n<col style=\"width: 53px\">\n<col style=\"width: 179px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-7btt\"></th>\n    <th class=\"tg-7btt\">Column I</th>\n    <th class=\"tg-7btt\"></th>\n    <th class=\"tg-7btt\">Column II</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-c3ow\">(A)</td>\n    <td class=\"tg-0pky\">If $$ - 1 &lt; x &lt; 1$$, then $$f(x)$$ satisfies</td>\n    <td class=\"tg-c3ow\">(P)</td>\n    <td class=\"tg-0pky\">$$0 &lt; f(x) &lt; 1$$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">(B)</td>\n    <td class=\"tg-0pky\">If $$1 &lt; x &lt; 2$$, then $$f(x)$$ satisfies</td>\n    <td class=\"tg-c3ow\">(Q)</td>\n    <td class=\"tg-0pky\">$$f(x) &lt; 0$$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">(C)</td>\n    <td class=\"tg-0pky\">If $$3 &lt; x &lt; 5$$, then $$f(x)$$ satisfies</td>\n    <td class=\"tg-c3ow\">(R)</td>\n    <td class=\"tg-0pky\">$$f(x) &gt; 0$$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">(D)</td>\n    <td class=\"tg-0pky\">If $$x &gt; 5$$, then $$f(x)$$ satisfies</td>\n    <td class=\"tg-c3ow\">(S)</td>\n    <td class=\"tg-0pky\">$$f(x) &lt; 1$$</td>\n  </tr>\n</tbody>\n</table></p>",
+      "options": [
+        "$$\\mathrm{A-(p), (s);B-(q),(s);C-(q),(s);D-(p),(r)}$$",
+        "$$\\mathrm{A-(p), (q), (s);B-(q),(s);C-(q),(s);D-(p),(r),(s)}$$",
+        "$$\\mathrm{A-(s);B-(q),(s);C-(q),(s);D-(s)}$$",
+        "$$\\mathrm{A-(p), (q), (s);B-(q),(s);C-(s);D-(r),(s)}$$"
+      ],
+      "correctOption": 1,
+      "solution": "<p>First, factor the numerator and denominator of $$f(x)$$:</p>\n<p>$$f(x)=\\frac{x^{2}-6x+5}{x^{2}-5x+6} = \\frac{(x-5)(x-1)}{(x-2)(x-3)}$$</p>\n<p><b>(A) When $$-1 < x < 1$$:</b></p>\n<p>Let's check the sign of each factor in this interval:</p>\n<p>\n\nFor $$x$$ between $$-1$$ and $$1$$:\n\n<ul>\n\n  <li>$$x-5 < 0$$ (negative)</li>\n\n  <li>$$x-1 < 0$$ (negative)</li>\n\n  <li>$$x-2 < 0$$ (negative)</li>\n\n  <li>$$x-3 < 0$$ (negative)</li>\n\n</ul>\n\n</p>\n<p>So, multiplying two negatives in the numerator and two negatives in the denominator:\n\n$$f(x) = \\frac{(negative) \\times (negative)}{(negative) \\times (negative)} = \\frac{positive}{positive} > 0$$</p>\n<p>Now check if $$f(x) < 1$$. \n\nLet's look at $$f(x) - 1$$:\n\n$$f(x)-1 = \\frac{-(x+1)}{(x-2)(x-3)}$$</p>\n<p>For $$-1 < x < 1$$, $$(x+1) > 0$$ and $$(x-2), (x-3) < 0$$. \n\nSo numerator is negative, denominator is positive (since two negatives). Therefore, $$f(x)-1 < 0 \\implies f(x) < 1$$.</p>\n<p>So, for $$-1 < x < 1$$: $$0 < f(x) < 1$$. This matches option (P).</p>\n<p><b>(B) When $$1 < x < 2$$:</b></p>\n<p>\n\n<ul>\n\n  <li>$$x-5 < 0$$ (negative)</li>\n\n  <li>$$x-1 > 0$$ (positive)</li>\n\n  <li>$$x-2 < 0$$ (negative)</li>\n\n  <li>$$x-3 < 0$$ (negative)</li>\n\n</ul>\n\n</p>\n<p>So, numerator: $$negative \\times positive = negative$$. Denominator: negative $$\\times$$ negative = positive.</p>\n<p>So $$f(x) = \\frac{negative}{positive} = negative$$, i.e., $$f(x) < 0$$. This matches (Q).</p>\n<p><b>(C) When $$3 < x < 5$$:</b></p>\n<p>\n\n<ul>\n\n  <li>$$x-5 < 0$$ (negative)</li>\n\n  <li>$$x-1 > 0$$ (positive)</li>\n\n  <li>$$x-2 > 0$$ (positive)</li>\n\n  <li>$$x-3 > 0$$ (positive)</li>\n\n</ul>\n\n</p>\n<p>Numerator: $$negative \\times positive = negative$$.<br>\n\nDenominator: $$positive \\times positive = positive$$.</p>\n<p>So $$f(x) = \\frac{negative}{positive} = negative$$, so $$f(x) < 0$$. This matches (Q).</p>\n<p><b>(D) When $$x > 5$$:</b></p>\n<p>\n\n<ul>\n\n  <li>$$x-5 > 0$$ (positive)</li>\n\n  <li>$$x-1 > 0$$ (positive)</li>\n\n  <li>$$x-2 > 0$$ (positive)</li>\n\n  <li>$$x-3 > 0$$ (positive)</li>\n\n</ul>\n\n</p>\n<p>Numerator: $$positive \\times positive = positive$$.<br>\n\nDenominator: $$positive \\times positive = positive$$.</p>\n<p>So $$f(x) = \\frac{positive}{positive} = positive$$, i.e., $$f(x) > 0$$.</p>\n<p>Also, let's check $$f(x) < 1$$ again. Use previous result:\n\n$$f(x) - 1 = \\frac{-(x+1)}{(x-2)(x-3)}$$\n\nFor $$x > 5$$, numerator is negative, denominator is positive, so $$f(x)-1 < 0$$, so $$f(x) < 1$$.</p>\n<p>Therefore, for $$x > 5$$, $$0 < f(x) < 1$$, which matches (P).</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "MCKjvmuPcTeZAzZD",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If $$\\mathop {\\lim }\\limits_{x \\to \\infty } {\\left( {1 + {a \\over x} + {b \\over {{x^2}}}} \\right)^{2x}} = {e^2}$$, then the value of $$a$$ and $$b$$, are",
+      "options": [
+        "$$a$$ = 1 and $$b$$ = 2",
+        "$$a$$ = 1 and $$b$$ $$ \\in R$$",
+        "$$a$$ $$ \\in R$$ and $$b$$ = 2",
+        "$$a$$ $$ \\in R$$ and $$b$$ $$ \\in R$$"
+      ],
+      "correctOption": 1,
+      "solution": "We know that $$\\mathop {\\lim }\\limits_{x \\to \\infty } \\left( {1 + x{1 \\over x}} \\right) = e$$\n<br><br>$$\\therefore$$ $$\\mathop {\\lim }\\limits_{x \\to \\infty } {\\left( {1 + {a \\over x} + {b \\over {{x^2}}}} \\right)^{2x}} = {e^2}$$\n<br><br>$$ \\Rightarrow \\mathop {\\lim }\\limits_{x \\to \\infty } {\\left[ {\\left( {1 + {a \\over x} + {b \\over {{x^2}}}} \\right)\\left( {{1 \\over {{a \\over x} + {b \\over {{x^2}}}}}} \\right)} \\right]^{2x\\left( {{a \\over x} + {b \\over {{x^2}}}} \\right)}} = {e^2}$$\n<br><br>$$ \\Rightarrow {e^{\\mathop {\\lim }\\limits_{x \\to \\infty } 2\\left[ {a + {b \\over x}} \\right]}} = {e^2} \\Rightarrow {e^{2a}} = e{}^2 \\Rightarrow a = 1$$ \n<br><br>and $$b \\in R$$ ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "fyMDR3N15sswpQy8CW3rsa0w2w9jx5crbn3",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If $$\\alpha $$ and $$\\beta $$ are the roots of the equation 375x<sup>2</sup>\n– 25x – 2 = 0, then $$\\mathop {\\lim }\\limits_{n \\to \\infty } \\sum\\limits_{r = 1}^n {{\\alpha ^r}}  + \\mathop {\\lim }\\limits_{n \\to \\infty } \\sum\\limits_{r = 1}^n {{\\beta ^r}} $$ is equal to : ",
+      "options": [
+        "$${7 \\over {116}}$$",
+        "$${{29} \\over {348}}$$",
+        "$${1 \\over {12}}$$",
+        "$${{21} \\over {346}}$$"
+      ],
+      "correctOption": 1,
+      "solution": "$$\\alpha $$ and $$\\beta $$ are the two root of 375x<sup>2</sup> - 25x - 2 = 0<br><br>\nBoth of the roots are lie in (-1, 1) hence sum of given series is finite<br><br>\n$$\\mathop {\\lim }\\limits_{n \\to \\infty } \\left( {{\\alpha  \\over {1 - \\alpha }} + {\\beta  \\over {1 - \\beta }}} \\right) = {{\\alpha (1 - \\beta ) + \\beta (1 - \\alpha )} \\over {(1 - \\alpha )(1 - \\beta )}}$$<br><br>\n$$ \\Rightarrow {{\\left( {\\alpha  + \\beta } \\right) - 2\\alpha \\beta } \\over {1 - (\\alpha  + \\beta ) + \\alpha \\beta }} = {{25 - 2( - 2)} \\over {375 - 25 - 2}} = {{29} \\over {348}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "y7O1HQyyVZdVut5VBA1kjtewsez",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let f : R $$ \\to $$ R and g : R $$ \\to $$ R be two non-constant differentiable functions. If f'(x) = (e<sup>(f(x) $$-$$ g(x))</sup>) g'(x) for all x $$ \\in $$ R and f(1) = g(2) = 1, then which of the following statement(s) is (are) TRUE?",
+      "options": [
+        "f(2) &lt; 1 $$-$$ log<sub>e</sub> 2",
+        "f(2) &gt; 1 $$-$$ log<sub>e</sub> 2",
+        "g(1) &gt; 1 $$-$$ log<sub>e</sub> 2",
+        "g(1) &lt; 1 $$-$$ log<sub>e</sub> 2"
+      ],
+      "correctOption": 1,
+      "solution": "We have,<br><br>$$f'(x) = {e^{(f(x) - g(x))}}g'(x)\\forall x \\in R$$<br><br>$$ \\Rightarrow f'(x) = {{{e^{f(x)}}} \\over {{e^{g(x)}}}}g'(x)$$<br><br>$$ \\Rightarrow {{f'(x)} \\over {{e^{f(x)}}}} = {{g'(x)} \\over {{e^{g(x)}}}}$$<br><br>$$ \\Rightarrow {e^{ - f(x)}}f'(x) = {e^{ - g(x)}}g'(x)$$<br><br>On integrating both side, we get<br><br>$${e^{ - f(x)}}$$ = $${e^{ - g(x)}}$$ + C<br><br>At x = 1<br><br>$${e^{ - f(1)}}$$ = $${e^{ - g(1)}}$$ + C<br><br>$${e^{ - 1}} = {e^{ - g(1)}} + C$$ [$$ \\because $$ f(1) = 1] ...(i)<br><br>At x = 2<br><br>$${e^{ - f(2)}}$$ = $${e^{ - g(2)}}$$ + C<br><br>$$ \\Rightarrow $$ $${e^{ - f(2)}}$$ = $${e^{ - 1}}$$ + C [$$ \\because $$ g(2) = 1] .... (ii)<br><br>From Eqs. (i) and (ii)<br><br>$${e^{ - f(2)}}$$ = $$2{e^{ - 1}}$$ $$-$$ $${{e^{ - g(1)}}}$$ ...(iii)<br><br>$$ \\Rightarrow $$ $${e^{ - f(2)}}$$ &gt; $$2{e^{ - 1}}$$<br><br>We know that, e<sup>$$-$$x</sup> is decreasing<br><br>$$ \\therefore $$ $$-$$f(2) &lt; log<sub>e</sub> 2$$-$$1<br><br>f(2) &gt; 1 $$-$$ log<sub>e</sub> 2<br><br>$$ \\Rightarrow $$ $${{e^{ - g(1)}}}$$ + $${e^{ - f(2)}}$$ = $$2{e^{ - 1}}$$ [from Eq. (iii)]<br><br>$$ \\Rightarrow $$ $${{e^{ - g(1)}}}$$ &lt; $$2{e^{ - 1}}$$ $$-$$g(1) &lt; log<sub>e</sub> 2 $$-$$1<br><br>$$ \\Rightarrow $$ g(1) &gt;$$-$$log<sub>e</sub> 2",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "m6qvb1cz",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let the function,</p>\n<p>$$f(x)= \\begin{cases}-3 \\mathrm{ax}^2-2, & x<1 \\\\ \\mathrm{a}^2+\\mathrm{b} x, & x \\geqslant 1\\end{cases}$$</p>\n<p>be differentiable for all $x \\in \\mathbf{R}$, where $\\mathrm{a}>1, \\mathrm{~b} \\in \\mathbf{R}$. If the area of the region enclosed by $y=f(x)$ and the line $y=-20$ is $\\alpha+\\beta \\sqrt{3}, \\alpha, \\beta \\in Z$, then the value of $\\alpha+\\beta$ is ___________ .</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>$\\mathrm{f}(\\mathrm{x})$ is continuous and differentiable</p>\n<p>$$ \\begin{array}{ll} \\text { at } x=1 ; &amp; \\text { LHL }=\\text { RHL, LHD }=\\text { RHD } \\\\ &amp; -3 a-2=a^2+b,-6 a=b \\\\ &amp; a=2,1 ; b=-12 \\end{array} $$</p>\n<p>$f(x)=\\left\\{\\begin{array}{cc}-6 x^2-2, &amp; x&lt;1 \\\\ 4-12 x, &amp; x \\geq 1\\end{array}\\right.$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7bv0v0l/2fd78c2e-7cb1-4b2c-931d-08a772ae7f49/dd5b8350-eeb8-11ef-baef-2dd92b974f3e/file-jaoe38c1m7bv0v0m.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7bv0v0l/2fd78c2e-7cb1-4b2c-931d-08a772ae7f49/dd5b8350-eeb8-11ef-baef-2dd92b974f3e/file-jaoe38c1m7bv0v0m.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 22nd January Morning Shift Mathematics - Limits, Continuity and Differentiability Question 44 English Explanation\"></p>\n<p>$\\begin{aligned} &amp; \\left.\\text { Area }=\\int_{-\\sqrt{3}}^1\\left(-6 x^2-2+20\\right) d x+\\int_1^2(4-12 x+20) d x\\right] \\\\\\\\ &amp; =16+12 \\sqrt{3}+6=22+12 \\sqrt{3} \\\\\\\\ &amp; \\therefore \\quad \\alpha+\\beta=34\\end{aligned}$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "m9dmbz1i",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Given below are two statements:</p>\n<p><b>Statement I:</b> $ \\lim\\limits_{x \\to 0} \\left( \\frac{\\tan^{-1} x + \\log_e \\sqrt{\\frac{1+x}{1-x}} - 2x}{x^5} \\right) = \\frac{2}{5} $</p>\n<p><b>Statement II:</b> $ \\lim\\limits_{x \\to 1} \\left( x^{\\frac{2}{1-x}} \\right) = \\frac{1}{e^2} $</p>\n<p>In the light of the above statements, choose the <b>correct</b> answer from the options given below:</p>",
+      "options": [
+        "<p>Statement I is false but Statement II is true</p>",
+        "<p>Both Statement I and Statement II are false</p>",
+        "<p>Both Statement I and Statement II are true</p>",
+        "<p>Statement I is true but Statement II is false</p>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\lim _{x \\rightarrow 0} \\frac{\\tan ^{-1} x+\\frac{1}{2}[\\ln (1+x)-\\ln (1-x)]-2 x}{x^5} \\\\\n& =\\lim _{x \\rightarrow 0} \\frac{\\left(x-\\frac{x^3}{3}+\\frac{x^5}{5} \\ldots\\right)+\\frac{1}{2}\\left[x-\\frac{x^2}{2}+\\frac{x^3}{3} \\ldots-\\left(-x-\\frac{x^2}{2}-\\frac{x^3}{3} \\ldots\\right)\\right]-2 x}{x^5} \\\\\n& =\\lim _{x \\rightarrow 0} \\frac{2 x+\\frac{2 x^5}{5} \\ldots .-2 x}{x^5}=\\frac{2}{5} \\\\\n& \\lim _{x \\rightarrow 1} x^{\\frac{2}{(1-x)}}=e^{\\lim _{x \\rightarrow 1}\\left(\\frac{2}{1-x}\\right)(x-1)}=e^{-2}\n\\end{aligned}\\\\\n&\\Rightarrow \\text { Both statements correct }\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "1l0byr23c",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$\\alpha$$, $$\\beta$$ $$\\in$$ R be such that $$\\mathop {\\lim }\\limits_{x \\to 0} {{{x^2}\\sin (\\beta x)} \\over {\\alpha x - \\sin x}} = 1$$. Then 6($$\\alpha$$ + $$\\beta$$) equals _________.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>Here, $$\\mathop {\\lim }\\limits_{x \\to 0} {{{x^2}\\sin (\\beta x)} \\over {\\alpha x - \\sin x}} = 1$$</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 0} {{{x^2}\\left( {\\beta x - {{{{(\\beta x)}^3}} \\over {3!}} + {{{{(\\beta x)}^5}} \\over {5!}} - ....} \\right)} \\over {\\alpha x - \\left( {x - {{{x^3}} \\over {3!}} + {{{x^5}} \\over {5!}} - ....} \\right)}} = 1$$</p>\n<p>$$ \\Rightarrow \\mathop {\\lim }\\limits_{x \\to 0} {{{x^3}\\left( {\\beta  - {{{\\beta ^3}{x^2}} \\over {3!}} + {{{\\beta ^5}{x^4}} \\over {5!}} - ....} \\right)} \\over {(\\alpha  - 1)x + {{{x^3}} \\over {3!}} + {{{x^5}} \\over {5!}} - ...}} = 1$$</p>\n<p>Limit exists only, when $$\\alpha$$ $$-$$ 1 = 0</p>\n<p>$$\\Rightarrow$$ $$\\alpha$$ = 1 ...... (i)</p>\n<p>$$\\therefore$$ $$ \\Rightarrow \\mathop {\\lim }\\limits_{x \\to 0} {{{x^3}\\left( {\\beta  - {{{\\beta ^3}{x^2}} \\over {3!}} + {{{\\beta ^5}{x^4}} \\over {5!}} - ....} \\right)} \\over {{x^3}\\left( {{1 \\over {3!}} - {{{x^2}} \\over {5!}} - ...} \\right)}} = 1$$</p>\n<p>$$\\Rightarrow$$ 6$$\\beta$$ = 1 ....... (ii)</p>\n<p>From Eqs. (i) and (ii), we get</p>\n<p>6($$\\alpha$$ + $$\\beta$$) = 6$$\\alpha$$ + 6$$\\beta$$</p>\n<p>= 6 + 1</p>\n<p>= 7</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "1lgow7xsy",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If $$\\lim_\\limits{x \\rightarrow 0} \\frac{e^{a x}-\\cos (b x)-\\frac{cx e^{-c x}}{2}}{1-\\cos (2 x)}=17$$, then $$5 a^{2}+b^{2}$$ is equal to</p>",
+      "options": [
+        "64",
+        "68",
+        "72",
+        "76"
+      ],
+      "correctOption": 1,
+      "solution": "<p>The Taylor series for $e^x$, $\\cos x$, and $e^{-x}$ around $x=0$ are:</p>\n<p>$$e^{ax} = 1 + ax + \\frac{(ax)^2}{2!} + \\ldots,$$\n<br/><br/>$$\\cos(bx) = 1 - \\frac{(bx)^2}{2!} + \\ldots,$$\n<br/><br/>$$e^{-cx} = 1 - cx + \\frac{(cx)^2}{2!} - \\ldots.$$</p>\n<p>Substituting these into the limit and simplifying:</p>\n<p>$$\\lim\\limits_{x \\rightarrow 0} \\frac{(1+ax+\\frac{(ax)^2}{2!})-(1-\\frac{(bx)^2}{2!})-\\frac{cx}{2}(1-(cx)+\\frac{(cx)^2}{2!})}{1-\\cos 2x}.$$</p>\n<p>This simplifies to:</p>\n<p>$$\\lim\\limits _{x \\rightarrow 0} \\frac{(a-\\frac{c}{2})x + (\\frac{a^2+b^2+c^2}{2})x^2 + \\ldots}{\\left(\\frac{1-\\cos 2 x}{(2 x)^2}\\right) \\times 4 x^2}.$$</p>\n<p>Let&#39;s evaluate this expression:</p>\n<p>$$(\\frac{1-\\cos 2x}{(2x)^2}) \\times 4x^2.$$</p>\n<p>We know that $1 - \\cos 2x$ can be rewritten using the double-angle formula for cosine, which is $\\cos 2x = 1 - 2\\sin^2x$. So, $1 - \\cos 2x = 2\\sin^2x$.</p>\n<p>Substituting this into our expression we get:</p>\n<p>$$(\\frac{2\\sin^2x}{(2x)^2}) \\times 4x^2.$$</p>\n<p>This simplifies to:</p>\n<p>$${1 \\over 2}$$$$(\\frac{\\sin x}{x})^2 \\times 4x^2 = {1 \\over 2} \\times 4x^2 = 2x^2.$$</p>\n<p>So, </p>\n<p>$$(\\frac{1-\\cos 2x}{(2x)^2}) \\times 4x^2 = 2x^2.$$ </p>\n\n\n<p>$$ \\therefore $$ $$\\lim _{x \\rightarrow 0} \\frac{(a-\\frac{c}{2})x + (\\frac{a^2+b^2+c^2}{2})x^2 + \\ldots}{2x^2} = 17.$$</p>\n<p>Now, for the limit to exist, the coefficient of $x$ in the numerator must be zero, as the limit would be undefined otherwise. This gives us the equation:</p>\n<p>$$a-\\frac{c}{2} = 0 \\Rightarrow c=2a.$$</p>\n<p>Then, for the limit to equal $17$, the coefficient of $x^2$ in the numerator must equal $17 \\times 2 = 34$. This gives us the equation:</p>\n<p>$$\\frac{a^2+b^2+c^2}{2} = 34 \\Rightarrow a^2+b^2+c^2 = 68.$$</p>\n<p>Since $c=2a$, we can substitute $c$ in the equation to get:</p>\n<p>$$a^2 + b^2 + (2a)^2 = 68 \\Rightarrow 5a^2 + b^2 = 68.$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "1lg5cn0nq",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>For $$k > 0$$, the set of all values of $$k$$ for which $$k e^{x}-x=0$$ has two distinct roots is</p>",
+      "options": [
+        "$$\\left(0, \\frac{1}{e}\\right)$$",
+        "$$\\left(\\frac{1}{e}, 1\\right)$$",
+        "$$\\left(\\frac{1}{e}, \\infty\\right)$$",
+        "$$(0,1)$$"
+      ],
+      "correctOption": 0,
+      "solution": "<p>We want the equation $ k e^{x} - x = 0 $ to have two different (distinct) solutions for $ x $.</p>\n<p>Let’s call the function $ f(x) = k e^{x} - x $. For this equation to have two different solutions, the graph of $ f(x) $ must cross the x-axis at two points.</p>\n<p>This will happen if the lowest point (minimum) of $ f(x) $ is below zero, or $ f(x)_{\\min} < 0 $.</p>\n<p>To find the minimum, take the derivative: $ f'(x) = k e^{x} - 1 $. Set this to zero: $ k e^{x} - 1 = 0 \\implies e^{x} = \\frac{1}{k} \\implies x = -\\log k $.</p>\n<p>Now, plug $ x = -\\log k $ back into $ f(x) $:<br> $ f(-\\log k) = k e^{-\\log k} - (-\\log k) = k \\cdot \\frac{1}{k} + \\log k = 1 + \\log k $.</p>\n<p>For two distinct roots, this minimum must be less than zero:<br> $ 1 + \\log k < 0 $ </p>\n<p>This means $ \\log k < -1 $, or $ k < \\frac{1}{e} $. We also need $ k > 0 $.</p>\n<p>So the possible values for $ k $ are $ 0 < k < \\frac{1}{e} $.</p>\n<p>Therefore, $ k \\in \\left(0, \\frac{1}{e}\\right) $.</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    },
+    {
+      "id": "1lg5b677f",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$f(x)=2+\\cos x$$ for all real $$x$$.</p>\n<p><b>STATEMENT - 1 :</b> For each real $$t$$, there exists a point $$c$$ in $$[t, t+\\pi]$$ such that $$f^{\\prime}(C)=0$$.</p>\n<p><b>STATEMENT - 2 :</b> $$f(t)=f(t+2 \\pi)$$ for each real $$t$$.</p>",
+      "options": [
+        "Statement-1 is True, Statement-2 is True; Statement-2 is a correct explanation for Statement-1",
+        "Statement-1 is True, Statement-2 is True; Statement-2 is NOT a correct explanation for Statement-1",
+        "Statement-1 is True, Statement-2 is False",
+        "Statement-1 is False, Statement-2 is True"
+      ],
+      "correctOption": 1,
+      "solution": "<p>$$f(x)=2+\\cos x$$ is differentiable everywhere and $$f'(x)=-\\sin x$$</p>\n<p>$$\\therefore f'(c)=0 \\Rightarrow c=0, \\pm \\pi, \\pm 2 \\pi, \\pm 3 \\pi \\ldots \\ldots$$.</p>\n<p>$$\\therefore$$ for each real $$t,[t, t+\\pi]$$ contains a value from $$(0, \\pm \\pi, \\pm 2 \\pi, \\pm 3 \\pi \\ldots)$$</p>\n<p>$$\\therefore$$ Statement 1 is true.</p>\n<p>$$f(t+2 \\pi)=2+\\cos (t+2 \\pi)=2+\\cos t=f(t)$$</p>\n<p>So, statement 2 is true.</p>\n<p>Therefore, $$f(x)$$ is a periodic function of period $$2 \\pi$$.</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Limits"
+    }
+  ]
+}

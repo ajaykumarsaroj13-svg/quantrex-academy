@@ -1,0 +1,280 @@
+{
+  "testId": "tst-19g71mp2akxzy",
+  "title": "Area Under The Curves Test - 2 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "1lgswa4aj",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If A is the area in the first quadrant enclosed by the curve $$\\mathrm{C: 2 x^{2}-y+1=0}$$, the tangent to $$\\mathrm{C}$$ at the point $$(1,3)$$ and the line $$\\mathrm{x}+\\mathrm{y}=1$$, then the value of $$60 \\mathrm{~A}$$ is _________.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lie8i8gh/9671b86e-ee06-496d-abb6-609a695b7ace/c0004c10-0115-11ee-9f57-5de63d0f488b/file-1lie8i8gi.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lie8i8gh/9671b86e-ee06-496d-abb6-609a695b7ace/c0004c10-0115-11ee-9f57-5de63d0f488b/file-1lie8i8gi.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 11th April Evening Shift Mathematics - Area Under The Curves Question 67 English Explanation\">\n<br><br>$$\ny=2 x^2+1\n$$\n<br><br>Tangent at (1, 3) : $y-3=4(x-1)$\n<br><br>$$\ny=4 x-1\n$$\n<br><br>$\\mathrm{A}=\\int\\limits_0^1\\left(2 \\mathrm{x}^2+1\\right) \\mathrm{dx}-$ area of $(\\Delta \\mathrm{QOT})-$ area of $(\\Delta \\mathrm{PQR})+$ area of $(\\Delta \\mathrm{QRS})$\n<br><br>$$\n\\mathrm{A}=\\left(\\frac{2}{3}+1\\right)-\\frac{1}{2}-\\frac{9}{8}+\\frac{9}{40}=\\frac{16}{60}\n$$\n<br><br>$$ \\therefore $$ $$ 60 A=16 $$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "lv9s20di",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The area enclosed between the curves $$y=x|x|$$ and $$y=x-|x|$$ is :</p>",
+      "options": [
+        "$$\\frac{8}{3}$$\n",
+        "$$\\frac{2}{3}$$\n",
+        "$$\\frac{4}{3}$$",
+        "1"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$y=x|x|$$ &amp; $$y=x-|x|$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lweeutim/25a3e531-aad5-453f-b0c9-bc32519834c1/9c0ef0e0-1659-11ef-b26b-2993e9de41b8/file-1lweeutin.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lweeutim/25a3e531-aad5-453f-b0c9-bc32519834c1/9c0ef0e0-1659-11ef-b26b-2993e9de41b8/file-1lweeutin.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 5th April Evening Shift Mathematics - Area Under The Curves Question 40 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; y=x|x|= \\begin{cases}x^2, &amp; x&gt;0 \\\\\n-x^2, &amp; x&lt;0\\end{cases} \\\\\n&amp; y=x-|x|= \\begin{cases}0, &amp; x&gt;0 \\\\\n2 x, &amp; x&lt;0\\end{cases}\n\\end{aligned}$$</p>\n<p>Point of intersections are $$(0,0)$$ &amp; $$(-2,4)$$.</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad &amp; \\text { Area }=\\int_\\limits{-2}^0\\left(-x^2-2 x\\right) d x \\\\\n&amp; =\\left[\\frac{-x^3}{3}-\\frac{2 x^2}{2}\\right]_{-2}^0 \\\\\n&amp; =-\\left[\\frac{8}{3}-4\\right]=\\frac{4}{3} \\text { sq. unit }\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "mnswhwmt",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The area of the region $\\{(x, y): y \\leq \\pi-|x|, y \\leq|x \\sin x|, y \\geq 0\\}$ is:</p>",
+      "options": [
+        "$1+\\frac{\\pi^2}{8}$\n",
+        "<p>$$ 2+\\frac{\\pi^2}{4} $$</p>",
+        "<p>$$ \\frac{\\pi^2}{8}-1 $$</p>",
+        "<p>$$ 4+\\frac{\\pi^2}{2} $$</p>"
+      ],
+      "correctOption": 1,
+      "solution": "<p>We need the area of the region</p>\n<p>$$ \\{(x,y): y\\le \\pi-|x|,\\; y\\le |x\\sin x|,\\; y\\ge 0\\}. $$</p>\n<p>This means the required area is the area under the curve</p>\n<p>$$ y=\\min(\\pi-|x|,\\; |x\\sin x|) $$</p>\n<p>and above the $x$-axis.</p>\n<p>So the area is</p>\n<p>$$ A=\\int \\min(\\pi-|x|,\\; |x\\sin x|)\\,dx $$</p>\n<p>over the values of $x$ where the region exists.</p>\n<p>Since $y\\ge 0$ and $y\\le \\pi-|x|$, we must have</p>\n<p>$$ \\pi-|x|\\ge 0 \\implies |x|\\le \\pi. $$</p>\n<p>Hence the region lies in $[-\\pi,\\pi]$.</p>\n<p>Also, both functions $\\pi-|x|$ and $|x\\sin x|$ are even functions, so the region is symmetric about the $y$-axis. Therefore,</p>\n<p>$$ A=2\\int_0^\\pi \\min(\\pi-x,\\; x\\sin x)\\,dx. $$</p>\n<p>Now for $0\\le x\\le \\pi$, we have $\\sin x\\ge 0$, so</p>\n<p>$$ |x\\sin x|=x\\sin x. $$</p>\n<p>Thus,</p>\n<p>$$ A=2\\int_0^\\pi \\min(\\pi-x,\\; x\\sin x)\\,dx. $$</p>\n<p>Now compare $\\pi-x$ and $x\\sin x$ on $[0,\\pi]$.</p>\n<p>At $x=0$,</p>\n<p>$$ \\pi-x=\\pi,\\qquad x\\sin x=0. $$</p>\n<p>At $x=\\pi$,</p>\n<p>$$ \\pi-x=0,\\qquad x\\sin x=0. $$</p>\n<p>Check where they meet:</p>\n<p>$$ x\\sin x=\\pi-x. $$</p>\n<p>It is easy to see that $x=\\dfrac{\\pi}{2}$ satisfies this, because</p>\n<p>$$ \\frac{\\pi}{2}\\sin\\frac{\\pi}{2}=\\frac{\\pi}{2}=\\pi-\\frac{\\pi}{2}. $$</p>\n<p>Also, on $[0,\\pi/2]$, we have $x\\sin x\\le \\pi-x$, and on $[\\pi/2,\\pi]$, we have $\\pi-x\\le x\\sin x$.</p>\n<p>So,</p>\n<p>$$ A=2\\left[\\int_0^{\\pi/2} x\\sin x\\,dx+\\int_{\\pi/2}^\\pi (\\pi-x)\\,dx\\right]. $$</p>\n<p>Now evaluate each integral.</p>\n<p>First,</p>\n<p>$$ \\int x\\sin x\\,dx=-x\\cos x+\\int \\cos x\\,dx=-x\\cos x+\\sin x. $$</p>\n<p>Therefore,</p>\n<p>$$ \\int_0^{\\pi/2} x\\sin x\\,dx =\\left[-x\\cos x+\\sin x\\right]_0^{\\pi/2} =1. $$</p>\n<p>Next,</p>\n<p>$$ \\int_{\\pi/2}^\\pi (\\pi-x)\\,dx. $$</p>\n<p>Let $u=\\pi-x$. Then as $x$ goes from $\\pi/2$ to $\\pi$, $u$ goes from $\\pi/2$ to $0$. Or directly,</p>\n<p>$$ \\int_{\\pi/2}^\\pi (\\pi-x)\\,dx =\\left[\\pi x-\\frac{x^2}{2}\\right]_{\\pi/2}^{\\pi}. $$</p>\n<p>Compute:</p>\n<p>At $x=\\pi$,</p>\n<p>$$ \\pi^2-\\frac{\\pi^2}{2}=\\frac{\\pi^2}{2}. $$</p>\n<p>At $x=\\frac{\\pi}{2}$,</p>\n<p>$$ \\pi\\cdot \\frac{\\pi}{2}-\\frac{1}{2}\\left(\\frac{\\pi}{2}\\right)^2 =\\frac{\\pi^2}{2}-\\frac{\\pi^2}{8} =\\frac{3\\pi^2}{8}. $$</p>\n<p>So,</p>\n<p>$$ \\int_{\\pi/2}^\\pi (\\pi-x)\\,dx =\\frac{\\pi^2}{2}-\\frac{3\\pi^2}{8} =\\frac{\\pi^2}{8}. $$</p>\n<p>Hence,</p>\n<p>$$ A=2\\left(1+\\frac{\\pi^2}{8}\\right) =2+\\frac{\\pi^2}{4}. $$</p>\n<p>Therefore, the correct answer is</p>\n<p>$$ \\boxed{2+\\frac{\\pi^2}{4}} $$</p>\n<p>So, Option B is correct.</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "lvb294kx",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If the area of the region $$\\left\\{(x, y): \\frac{\\mathrm{a}}{x^2} \\leq y \\leq \\frac{1}{x}, 1 \\leq x \\leq 2,0<\\mathrm{a}<1\\right\\}$$ is $$\\left(\\log _{\\mathrm{e}} 2\\right)-\\frac{1}{7}$$ then the value of $$7 \\mathrm{a}-3$$ is equal to :</p>",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "$$-$$1"
+      ],
+      "correctOption": 3,
+      "solution": "<p>$$\\left\\{(x, y): \\frac{a}{x^2} \\leq y \\leq \\frac{1}{x}, 1 \\leq x \\leq 2,0< a<1\\right\\}$$</p>\n<p>$$ \\Rightarrow \\int\\limits_1^2 {\\left( {{1 \\over x} - {a \\over {{x^2}}}} \\right)dx = \\left| {\\ln |x| + {a \\over x}} \\right|_1^2} $$</p>\n<p>$$\\begin{aligned}\n& \\left(\\ln 2+\\frac{a}{2}\\right)-(\\ln 1+a)=\\ln 2-\\frac{a}{2} \\\\\n& \\Rightarrow \\quad \\frac{a}{2}=\\frac{1}{7} \\\\\n& \\Rightarrow \\quad a=\\frac{2}{7} \\\\\n& \\quad 7 a-3=\\frac{2}{7} \\times 7-3=-1\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "VgYeNczCUuvuSa2x6S3rsa0w2w9jx61y3q1",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If the area (in sq. units) of the region {(x, y) : y<sup>2</sup>\n$$ \\le $$ 4x, x + y $$ \\le $$ 1, x $$ \\ge $$ 0, y $$ \\ge $$ 0} is a $$\\sqrt 2 $$ + b, then a – b is equal\nto :",
+      "options": [
+        "$${8 \\over 3}$$",
+        "$$ - {2 \\over 3}$$",
+        "6",
+        "$${{10} \\over 3}$$"
+      ],
+      "correctOption": 2,
+      "solution": "<img src=\"https://imagex.cdn.examgoal.net/3rsa0w4kejxtcdoyy/3dcaedbf-4eb5-4183-a555-23df199a3285/535f20a0-a0ec-11e9-a4ff-cd603c22e5ad/file-3rsa0w4kejxtcdoyz.jpg\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th April Morning Slot Mathematics - Area Under The Curves Question 137 English Explanation\">\nLet P be the point common to x + y = 1 and y<sup>2</sup> = 4x<br><br>\nThen y<sup>2</sup> = 4(1-y) $$ \\Rightarrow $$ y<sup>2</sup> - 4y - 4 = 0 <br><br>\n$$ \\Rightarrow y = {{ - 4 \\pm \\sqrt {16 + 16} } \\over 2}$$<br><br>\n$$ \\Rightarrow y =  - 2 + 2\\sqrt 2 $$<br><br>\nThen P is (3 - $$ 2\\sqrt 2$$, -2 + $$ 2\\sqrt 2$$).<br><br>\nHence shaded area = Area of region (OPN) + area of ($$\\Delta OPQ$$)<br><br>\n$$ \\Rightarrow {\\int\\limits_0^{3 - 2\\sqrt 2 } {2\\sqrt {xdx}  + {1 \\over 2}\\left[ {1 - (3 - 2\\sqrt 2 )} \\right]} ^2}$$<br><br>\n$$ \\Rightarrow {2 \\over 3}2\\left( {\\sqrt 2  - 1} \\right)\\left( {3 - 2\\sqrt 2 } \\right) + {1 \\over 2}{\\left[ {2(\\sqrt 2  - 1)} \\right]^2}$$<br><br>\n$$ \\Rightarrow {4 \\over 3}\\left\\{ { - 7 + 5\\sqrt 2 } \\right\\} + 2\\left( {3 - 2\\sqrt 2 } \\right)$$<br><br>\n$$ \\Rightarrow \\left( {{{20} \\over 3} - 4} \\right)\\sqrt 2  + 6 - {{28} \\over 3}$$<br><br>\n$$ \\Rightarrow {8 \\over 3}\\sqrt 2  - {{10} \\over 3}$$<br><br>\nThen a = $${8 \\over 3}$$ and b = $${-10 \\over 3}$$, so a - b = 6",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "ldqwiizg",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $q$ be the maximum integral value of $p$ in $[0,10]$ for which the roots of the equation $x^2-p x+\\frac{5}{4} p=0$ are rational. Then the area of the region $\\left\\{(x, y): 0 \\leq y \\leq(x-q)^2, 0 \\leq x \\leq q\\right\\}$ is :",
+      "options": [
+        "$\\frac{125}{3}$",
+        "243",
+        "164",
+        "25"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Given equation : $$4{x^2} - 4px + 5p = 0$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1leolev6m/9d2f1ed0-3ff3-4daa-b4d0-ae63d5dd71a4/31fa37e0-b797-11ed-b103-ed967fad3dff/file-1leolev6n.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1leolev6m/9d2f1ed0-3ff3-4daa-b4d0-ae63d5dd71a4/31fa37e0-b797-11ed-b103-ed967fad3dff/file-1leolev6n.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 30th January Evening Shift Mathematics - Area Under The Curves Question 81 English Explanation\"></p>\n<p>for rational roots, D must be perfect square</p>\n<p>$$D = 16{p^2} - 4 \\times 4 \\times 5p = 16p(p - 5)$$</p>\n<p>So, max. Integral value of $$p = 9$$ for making D is perfect square</p>\n<p>$$\\therefore$$ $$q = 9$$</p>\n<p>Area of shared region</p>\n<p>$$ = \\int\\limits_0^9 {{{(x - 9)}^2}dx} $$</p>\n<p>$$ = \\left. {{{{{(x - 9)}^3}} \\over 3}} \\right|_0^9 = {{{9^3}} \\over 3} = 243$$ sq. units</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "ev69psbeho98LVk3LE7k9k2k5fjbh1k",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The area (in sq. units) of the region\n<br>{(x, y) $$ \\in $$ R<sup>2</sup> | 4x<sup>2</sup> $$ \\le $$ y $$ \\le $$ 8x + 12} is :",
+      "options": [
+        "$${{125} \\over 3}$$",
+        "$${{128} \\over 3}$$",
+        "$${{127} \\over 3}$$",
+        "$${{124} \\over 3}$$"
+      ],
+      "correctOption": 1,
+      "solution": "For point of intersection\n 4x<sup>2</sup>\n = 8x + 12\n<br><br>$$ \\Rightarrow $$ x<sup>2</sup> - 2x - 3 = 0\n<br>$$ \\Rightarrow $$ x = –1, 3 \n<img src=\"https://imagex.cdn.examgoal.net/7kd4dk6ur9007/47221e29-5f07-424b-b881-a8b0847f8b79/34d8c570-53e1-11ea-b62d-51ccc5d4afb6/file-7kd4dk6ur9008-427w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 7th January Evening Slot Mathematics - Area Under The Curves Question 134 English Explanation\">\n<br><br>Required area = area of the shaded region\n<br><br>= $$\\int\\limits_{ - 1}^3 {\\left( {8x + 12 - 4{x^2}} \\right)dx} $$\n<br><br>= $$4\\left[ {2.{{{x^2}} \\over 2} + 3x - {{{x^3}} \\over 3}} \\right]_{ - 1}^3$$\n<br><br>= (36 + 36 – 36) – (4 – 12 + $${4 \\over 3}$$)\n<br><br>= $${{128} \\over 3}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "tlmnk0kplq",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the area bounded by the curve f(x) the x-axis and the lines x = - 2 and x = 1",
+      "options": [
+        "1/3",
+        "2/3",
+        "5/2",
+        "3"
+      ],
+      "correctOption": 3,
+      "solution": "<p><img alt=\"NDA Mathematics 14th September 2025 Mathematics - Area Under The Curves Question 1 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mnppxr1n/e36e0734-c120-4ffb-b989-83df1d834011/685f0fb0-331b-11f1-82ad-95801ecaa576/file-6y3zli1mnppxr1o.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mnppxr1n/e36e0734-c120-4ffb-b989-83df1d834011/685f0fb0-331b-11f1-82ad-95801ecaa576/file-6y3zli1mnppxr1o.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The required area is:</p>\n<p><span class=\"math-tex\">$ \\left| \\int_{-2}^{0} x^2 \\, dx \\right| + \\int_{0}^{1} x^2 \\, dx $</span></p>\n<p><span class=\"math-tex\">$ = -\\left[ \\frac{x^3}{3} \\right]_{-2}^{0} + \\left[ \\frac{x^3}{3} \\right]_{0}^{1} $</span></p>\n<p><span class=\"math-tex\">$ = \\left[ 0 + \\frac{8}{3} \\right] + \\left[ \\frac{1}{3} - 0 \\right] = \\frac{8}{3} + \\frac{1}{3} = \\frac{9}{3} = 3 $</span></p>\n<p><strong>Therefore, the correct answer is Option 4.</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "lgnz10hf",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If the area bounded by the curve $2 y^{2}=3 x$, lines $x+y=3, y=0$ and outside the circle $(x-3)^{2}+y^{2}=2$ is $\\mathrm{A}$, then $4(\\pi+4 A)$ is equal to ____________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgrn6cu8/fb34c18c-fa58-4f6a-a195-c84349a81234/e04c5800-e0dc-11ed-9ecd-e999028462e7/file-1lgrn6cu9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgrn6cu8/fb34c18c-fa58-4f6a-a195-c84349a81234/e04c5800-e0dc-11ed-9ecd-e999028462e7/file-1lgrn6cu9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Area Under The Curves Question 71 English Explanation\"><br>\n$$\n\\begin{aligned}\n&amp; y^2=\\frac{3 x}{2}, x+y=3, y=0 \\\\\\\\\n&amp; 2 y^2=3(3-y) \\\\\\\\\n&amp; 2 y^2+3 y-9=0 \\\\\\\\\n&amp; 2 y^2-3 y+6 y-9=0 \\\\\\\\\n&amp; (2 y-3)(y+2)=0 ; y=3 / 2 \\\\\\\\\n&amp; \\text { Area }\\left(\\int_0^{\\frac{3}{2}}\\left(x_R-x_2\\right) d y\\right)-A_1 \\\\\\\\\n&amp; =\\int_0^{\\frac{3}{2}}\\left((3-y)-\\frac{2 y^2}{3}\\right) d y-\\frac{\\pi}{8}(2) \\\\\\\\\n&amp; A=\\left(3 y-\\frac{y^2}{2}-\\frac{2 y^3}{9}\\right)_0^{\\frac{3}{2}}-\\frac{\\pi}{4} \\\\\\\\\n&amp; 4 \\mathrm{~A}+\\pi=4\\left[\\frac{9}{2}-\\frac{9}{8}-\\frac{3}{4}\\right]=\\frac{21}{2}=10.50 \\\\\\\\\n&amp; \\therefore 4(4 \\mathrm{~A}+\\pi)=42\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "lsan1ar0",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The sum of squares of all possible values of $k$, for which area of the region bounded by the parabolas $2 y^2=\\mathrm{k} x$ and $\\mathrm{ky}^2=2(y-x)$ is maximum, is equal to :",
+      "options": [],
+      "correctOption": 0,
+      "solution": "Given $k y^2=2(y-x)$ .........(i)\n<br/><br/>$$\n2 y^2=k x\n$$ .........(ii)\n\n<br/><br/>Point of intersection of (i) and (ii)\n<br/><br/>$$\n\\begin{aligned}\n& k y^2=2\\left(y-\\frac{2 y^2}{k}\\right) \\\\\\\\\n& \\Rightarrow y=0, k y=2\\left(1-\\frac{2 y}{k}\\right)\n\\end{aligned}\n$$\n<br/><br/>$\\begin{aligned} & k y+\\frac{4 y}{k}=2 \\\\\\\\ & y=\\frac{2}{k+\\frac{4}{k}}=\\frac{2 k}{k^2+4}\\end{aligned}$\n<br/><br/>$\\begin{aligned} & A=\\int\\limits_6^{\\frac{2 k}{k^2+4}}\\left(\\left(y-\\frac{k y^2}{2}\\right)-\\frac{2 y^2}{k}\\right) d y \\\\\\\\ & A=\\left[\\frac{y^2}{2}-\\left(\\frac{k}{2}+\\frac{2}{k}\\right) \\frac{y^3}{3}\\right]_0^{\\frac{2 k}{k^2+4}}\\end{aligned}$\n<br/><br/>$\\begin{aligned} & =\\left(\\frac{2 k}{k^2+4}\\right)^2\\left[\\frac{1}{2}-\\frac{k^2+4}{2 k}\\left(\\frac{1}{3}\\right)\\left(\\frac{2 k}{k^2+4}\\right)\\right] \\\\\\\\ & =\\frac{1}{6} \\times 4 \\times\\left(\\frac{1}{k+\\frac{4}{k}}\\right)^2\\end{aligned}$\n<br/><br/>$\\begin{aligned} & \\text { A.M. } \\geq \\text { G.M. } \\\\\\\\ & \\frac{\\left(k+\\frac{4}{k}\\right)}{2} \\geq 2 \\\\\\\\ & k+\\frac{4}{k} \\geq 4\\end{aligned}$\n<br/><br/>$\\therefore$ Area is maximum when $k=\\frac{4}{k}$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore k^2=4 \\\\\\\\\n& k= \\pm 2 \\\\\\\\\n& k_1=2, k_2=-2 \\\\\\\\\n& \\therefore k_1^2+k_2^2=(+2)^2+(-2)^2 \\\\\\\\\n& =4+4 \\\\\\\\\n& =08\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "1lgoxjwx4",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The area of the region $$\\left\\{(x, y): x^{2} \\leq y \\leq\\left|x^{2}-4\\right|, y \\geq 1\\right\\}$$ is</p>",
+      "options": [
+        "$$\\frac{4}{3}(4 \\sqrt{2}+1)$$",
+        "$$\\frac{3}{4}(4 \\sqrt{2}+1)$$",
+        "$$\\frac{4}{3}(4 \\sqrt{2}-1)$$",
+        "$$\\frac{3}{4}(4 \\sqrt{2}-1)$$"
+      ],
+      "correctOption": 2,
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lh2jl21d/1eaa8b9f-d025-4054-8bc8-91786b0e9ad1/73b7e010-e6db-11ed-948f-4b963ec65c15/file-1lh2jl21e.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lh2jl21d/1eaa8b9f-d025-4054-8bc8-91786b0e9ad1/73b7e010-e6db-11ed-948f-4b963ec65c15/file-1lh2jl21e.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 13th April Evening Shift Mathematics - Area Under The Curves Question 70 English Explanation\">\n<br><br>$$\n\\begin{aligned}\n&amp; \\text { Required area }=2\\left[\\int_1^2 \\sqrt{y} d y+\\int_4^2 \\sqrt{4-y} d y\\right] \\\\\\\\\n&amp; \\left.\\left.=2\\left[\\frac{y^{3 / 2}}{\\frac{3}{2}}\\right]_1^2-\\frac{2(4-y)^{3 / 2}}{3}\\right]_2^4\\right] \\\\\\\\\n&amp; =\\frac{4}{3}(4 \\sqrt{2}-1)\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "1krxjjxgo",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The area of the region bounded by y $$-$$ x = 2 and x<sup>2</sup> = y is equal to :",
+      "options": [
+        "$${{16} \\over 3}$$",
+        "$${{2} \\over 3}$$",
+        "$${{9} \\over 2}$$",
+        "$${{4} \\over 3}$$"
+      ],
+      "correctOption": 2,
+      "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ks2r5qt3/1b93a478-621f-4a11-ba06-e8666a1c1250/aa77a780-f807-11eb-8e1b-d9252ac0b96d/file-1ks2r5qt4.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Evening Shift Mathematics - Area Under The Curves Question 114 English Explanation\"><br><br>y $$-$$ x = 2, x<sup>2</sup> = y<br><br>Now, x<sup>2</sup> = 2 + x<br><br>$$\\Rightarrow$$ x<sup>2</sup> $$-$$ x $$-$$ 2 = 0<br><br>$$\\Rightarrow$$ (x + 1)(x $$-$$ 2) = 0<br><br>Area = $$\\int\\limits_{ - 1}^2 {(2 + x - {x^2})} $$<br><br>$$ = \\left| {2x + {{{x^2}} \\over 2} - {{{x^3}} \\over 3}} \\right|_{ - 1}^2$$<br><br>$$ = \\left( {4 + 2 - {8 \\over 3}} \\right) - \\left( { - 2 + {1 \\over 2} + {1 \\over 3}} \\right)$$<br><br>$$ = 6 - 3 + 2 - {1 \\over 2} = {9 \\over 2}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "jYiGJS0vOPirByaUJpCZg",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The area (in sq. units) of the region bounded by the curve x<sup>2</sup> = 4y and the straight line x = 4y – 2 is :\n",
+      "options": [
+        "$${3 \\over 4}$$",
+        "$${5 \\over 4}$$",
+        "$${7 \\over 8}$$",
+        "$${9 \\over 8}$$"
+      ],
+      "correctOption": 3,
+      "solution": "<img src=\"https://imagex.cdn.examgoal.net/G7bog5Hte1qYJelw8/CFsN8OA52JPuPV8tikDAQ5AU5n47A/FSov53wvyQU9qgZuwHJ2wB/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 11th January Morning Slot Mathematics - Area Under The Curves Question 145 English Explanation\">\n<br>x = 4y $$-$$ 2 &amp; x<sup>2</sup> = 4y\n<br><br>$$ \\Rightarrow $$&#160;&#160;x<sup>2</sup> = x + 2 $$ \\Rightarrow $$&#160;x<sup>2</sup> $$-$$ x $$-$$ 2 = 0\n<br><br>x = 2, $$-$$ 1\n<br><br>So, &#160;&#160;$$\\int\\limits_{ - 1}^2 {\\left( {{{x + 2} \\over 4} - {{{x^2}} \\over 4}} \\right)\\,dx = {9 \\over 8}} $$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "Ln6s5OIuo2KWZAUu98dpB",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If the area enclosed between the curves y = kx<sup>2</sup> and x = ky<sup>2</sup>, (k &gt; 0), is 1 square unit. Then k is -",
+      "options": [
+        "$$\\sqrt 3 $$",
+        "$${{\\sqrt 3 } \\over 2}$$",
+        "$${2 \\over {\\sqrt 3 }}$$",
+        "$${1 \\over {\\sqrt 3 }}$$"
+      ],
+      "correctOption": 3,
+      "solution": "Area bounded by \n<br><br>y<sup>2</sup> = 4ax &amp; x<sup>2</sup> = 4by, a, b $$ \\ne $$ 0\n<br><br>is&nbsp;$$\\left| {{{16ab} \\over 3}} \\right|$$\n<br><br>by using formula : \n<br><br>4a $$=$$ $${1 \\over k} = 4b,k &gt; 0$$\n<br><br>Area $$ = \\left| {{{16.{1 \\over {4k}}.{1 \\over {4k}}} \\over 3}} \\right| = 1$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;k<sup>2</sup> $$ = {1 \\over 3}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;k $$ = {1 \\over {\\sqrt 3 }}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    },
+    {
+      "id": "1l6kk0129",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider a curve $$y=y(x)$$ in the first quadrant as shown in the figure. Let the area $$\\mathrm{A}_{1}$$ is twice the area $$\\mathrm{A}_{2}$$. Then the normal to the curve perpendicular to the line $$2 x-12 y=15$$ does NOT pass through the point.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l6ou8r1g/e72a8fa6-4236-4233-b47c-487ffb0c7011/ff0d8a40-1957-11ed-8f2a-2be009977168/file-1l6ou8r1h.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l6ou8r1g/e72a8fa6-4236-4233-b47c-487ffb0c7011/ff0d8a40-1957-11ed-8f2a-2be009977168/file-1l6ou8r1h.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 27th July Evening Shift Mathematics - Area Under The Curves Question 89 English\"></p>",
+      "options": [
+        "(6, 21)",
+        "(8, 9)",
+        "(10, $$-$$4)",
+        "(12, $$-$$15)"
+      ],
+      "correctOption": 2,
+      "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7qa2cbj/f16ef20a-d0a5-47f2-a99e-77b83471fd40/deec2e00-2dee-11ed-a744-1fb8f3709cfa/file-1l7qa2cbk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7qa2cbj/f16ef20a-d0a5-47f2-a99e-77b83471fd40/deec2e00-2dee-11ed-a744-1fb8f3709cfa/file-1l7qa2cbk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 27th July Evening Shift Mathematics - Area Under The Curves Question 89 English Explanation\"></p>\n<p>$${A_1} + {A_2} = xy - 8$$ &amp; $${A_1} = 2{A_2}$$</p>\n<p>$${A_1} + {{{A_1}} \\over 2} = xy - 8$$</p>\n<p>$${A_1} = {2 \\over 3}(xy - 8)$$</p>\n<p>$$\\int\\limits_4^x {f(x)dx = {2 \\over 3}(xf(x) - 8)} $$</p>\n<p>Differentiate w.r.t. x</p>\n<p>$$f(x) = {2 \\over 3}\\{ xf'(x) + f(x)\\} $$</p>\n<p>$${2 \\over 3}xf'(x) = {1 \\over 3}f(x)$$</p>\n<p>$$2\\int {{{f'(x)} \\over {f(x)}}dx = \\int {{{dx} \\over x}} } $$</p>\n<p>$$2\\ln f(x) = \\ln x + \\ln c$$</p>\n<p>$${f^2}(x) = cx$$</p>\n<p>Which passes through (4, 2)</p>\n<p>$$4 = c \\times 4 \\Rightarrow c = 1$$</p>\n<p>Equation of required curve</p>\n<p>$${y^2} = x$$</p>\n<p>Equation of normal having slope ($$-$$6) is</p>\n<p>$$y =  - 6x - 2\\left( {{1 \\over 4}} \\right)( - 6) - {1 \\over 4}{( - 6)^3}$$</p>\n<p>$$y =  - 6x + 57$$</p>\n<p>Which does not pass through $$(10,\\, - 4)$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Area Under The Curves"
+    }
+  ]
+}

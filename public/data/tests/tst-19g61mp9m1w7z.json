@@ -1,0 +1,260 @@
+{
+  "testId": "tst-19g61mp9m1w7z",
+  "title": "Alternating Current Test - 2 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "ldqw2z2d",
+      "questionNumber": 1,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "In an ac generator, a rectangular coil of 100 turns each having area $14 \\times 10^{-2} \\mathrm{~m}^{2}$ is rotated at $360 ~\\mathrm{rev} / \\mathrm{min}$ about an axis perpendicular to a uniform magnetic field of magnitude $3.0 \\mathrm{~T}$. The maximum value of the emf produced will be ________ $V$.\n<br/><br/>\n$\\left(\\right.$ Take $\\left.\\pi=\\frac{22}{7}\\right)$",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>$$\\phi=B.A$$</p>\n<p>$$\\phi=\\mathrm{BNA}\\cos\\omega t$$</p>\n<p>So, $$Emf = {{ - d\\phi } \\over {dt}} = NBA\\omega \\sin \\omega t$$</p>\n<p>So maximum value of emf is</p>\n<p>$${E_{\\max }} = NBA\\omega $$</p>\n<p>$$ = 100 \\times 3 \\times 14 \\times {10^{ - 2}} \\times {{360 \\times 2\\pi } \\over {60}} = 1584$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "1lgyf3l3z",
+      "questionNumber": 2,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Given below are two statements:</p>\n<p>Statement I : Maximum power is dissipated in a circuit containing an inductor, a capacitor and a resistor connected in series with an AC source, when resonance occurs</p>\n<p>Statement II : Maximum power is dissipated in a circuit containing pure resistor due to zero phase difference between current and voltage.</p>\n<p>In the light of the above statements, choose the correct answer from the options given below:</p>",
+      "options": [
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are true"
+      ],
+      "correctOption": 3,
+      "solution": "<p>In a series LCR circuit connected to an AC source, resonance occurs at a particular frequency at which the inductive reactance is equal to the capacitive reactance, resulting in the minimum impedance of the circuit. At this frequency, the circuit draws maximum current from the source, and thus, the maximum power is dissipated in the circuit. Therefore, Statement I is true.</p>\n<p>In a circuit containing only a resistor, the power dissipated is given by P = VI = I$^2$R, where V is the voltage across the resistor, I is the current flowing through the resistor, and R is the resistance of the resistor. The voltage and current are in phase in a purely resistive circuit, which means that the power is maximized. Therefore, Statement II is also true.</p>\n",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "m6ulvdsr",
+      "questionNumber": 3,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>An alternating current is given by $\\mathrm{I}=\\mathrm{I}_{\\mathrm{A}} \\sin \\omega \\mathrm{t}+\\mathrm{I}_{\\mathrm{B}} \\cos \\omega \\mathrm{t}$. The r.m.s current will be</p>",
+      "options": [
+        "$\\frac{\\sqrt{\\mathrm{I}_{\\mathrm{A}}^2+\\mathrm{I}_{\\mathrm{B}}^2}}{2}$\n",
+        "$\\sqrt{\\frac{\\mathrm{I}_{\\mathrm{A}}^2+\\mathrm{I}_{\\mathrm{B}}^2}{2}}$\n",
+        "$\\frac{\\left|\\mathrm{I}_{\\mathrm{A}}+\\mathrm{I}_{\\mathrm{B}}\\right|}{\\sqrt{2}}$\n",
+        "$\\sqrt{\\mathrm{I}_{\\mathrm{A}}^2+\\mathrm{I}_{\\mathrm{B}}^2}$"
+      ],
+      "correctOption": 1,
+      "solution": "<p>$$ I_{\\text{rms}} = \\sqrt{\\frac{I_A^2 + I_B^2}{2}} $$</p>\n<p>To determine the root mean square (r.m.s) value of the alternating current given by</p>\n<p>$$ I(t) = I_A \\sin (\\omega t) + I_B \\cos (\\omega t), $$</p>\n<p>we start by squaring the current:</p>\n<p>$$ I(t)^2 = I_A^2 \\sin^2 (\\omega t) + I_B^2 \\cos^2 (\\omega t) + 2 I_A I_B \\sin (\\omega t) \\cos (\\omega t). $$</p>\n<p>The r.m.s value is defined as the square root of the average of this squared current over one complete period. When averaging over a full cycle, we utilize the known averages:</p>\n<p>$$ \\langle \\sin^2 (\\omega t) \\rangle = \\frac{1}{2}, \\quad \\langle \\cos^2 (\\omega t) \\rangle = \\frac{1}{2}, \\quad \\langle \\sin (\\omega t) \\cos (\\omega t) \\rangle = 0. $$</p>\n<p>Thus, the time-averaged square of the current becomes:</p>\n<p>$$ \\langle I(t)^2 \\rangle = I_A^2 \\frac{1}{2} + I_B^2 \\frac{1}{2} = \\frac{I_A^2 + I_B^2}{2}. $$</p>\n<p>Taking the square root gives the r.m.s current:</p>\n<p>$$ I_{\\text{rms}} = \\sqrt{\\frac{I_A^2 + I_B^2}{2}}. $$</p>\n<p>This corresponds to Option B.</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "1kybdrtfx",
+      "questionNumber": 4,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The impedance of a series LCR circuit is -",
+      "options": [
+        "$$R + {X_L} + {X_C}$$",
+        "$$\\sqrt {{1 \\over {X_C^2}} + {1 \\over {X_L^2}} + {R^2}} $$",
+        "$$\\sqrt {X_L^2 - X_C^2 + {R^2}} $$",
+        "$$\\sqrt {{R^2} + {{({X_L} - {X_C})}^2}} $$"
+      ],
+      "correctOption": 3,
+      "solution": "<p>In a series LCR circuit, the total impedance $Z$ can be determined using the resistance $R$, inductive reactance $X_L$, and capacitive reactance $X_C$. The impedance is given by the formula:</p>\n\n<p>$$Z = \\sqrt{R^2 + (X_L - X_C)^2}$$</p>\n\n<p>This formula accounts for the vector addition of resistance and the net reactance (the difference between inductive reactance and capacitive reactance). Therefore, the correct option is:</p>\n\n<p>Option D:</p>\n\n<p>$$\\sqrt {R^2 + ({X_L} - {X_C})^2}$$</p>",
+      "marks": 0.77,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "1l59p78c8",
+      "questionNumber": 5,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>A sinusoidal voltage V(t) = 210 sin 3000 t volt is applied to a series LCR circuit in which L = 10 mH, C = 25 $$\\mu$$F and R = 100 $$\\Omega$$. The phase difference ($$\\Phi $$) between the applied voltage and resultant current will be :</p>",
+      "options": [
+        "tan<sup>$$-$$1</sup>(0.17)",
+        "tan<sup>$$-$$1</sup>(9.46)",
+        "tan<sup>$$-$$1</sup>(0.30)",
+        "tan<sup>$$-$$1</sup>(13.33)"
+      ],
+      "correctOption": 0,
+      "solution": "<p>$${X_L} = 3000 \\times 10 \\times {10^{ - 3}} = 30\\,\\Omega $$</p>\n<p>$${X_C} = {1 \\over {3000 \\times 25}} \\times {10^6} = {{40} \\over 3}\\,\\Omega $$</p>\n<p>So $${X_L} - {X_C} = 30 - {{40} \\over 3} = {{50} \\over 3}\\,\\Omega $$</p>\n<p>$$\\tan \\theta  = {{{X_L} - {X_C}} \\over R} = {{50/3} \\over {100}} = {1 \\over 6}$$</p>\n<p>So $$\\theta  = {\\tan ^{ - 1}}(0.17)$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "m6t9xvqu",
+      "questionNumber": 6,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>In a series LCR circuit, a resistor of $300 \\Omega$, a capacitor of 25 nF and an inductor of 100 mH are used. For maximum current in the circuit, the angular frequency of the ac source is _________ $\\times 10^4$ radians $\\mathrm{s}^{-1}$</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>$$ \\omega = \\frac{1}{\\sqrt{LC}} $$</p>\n<p>For a series LCR circuit, the maximum current occurs at resonance, where the inductive reactance equals the capacitive reactance. Given the values:</p>\n\n<p><p>Inductance: $$ L = 100 \\, \\text{mH} = 0.1 \\, \\text{H} $$</p></p>\n<p><p>Capacitance: $$ C = 25 \\, \\text{nF} = 25 \\times 10^{-9} \\, \\text{F} $$</p></p>\n\n<p>we first calculate the product $$ LC $$:</p>\n<p>$$ LC = 0.1 \\times 25 \\times 10^{-9} = 2.5 \\times 10^{-9} $$</p>\n<p>Next, compute the square root of the product:</p>\n<p>$$ \\sqrt{LC} = \\sqrt{2.5 \\times 10^{-9}} $$</p>\n<p>Recognize that:</p>\n<p>$$ \\sqrt{2.5 \\times 10^{-9}} = \\sqrt{2.5} \\times \\sqrt{10^{-9}} \\approx 1.581 \\times 10^{-4.5} $$</p>\n<p>Since $$ 10^{-4.5} = 3.162 \\times 10^{-5} $$, we have:</p>\n<p>$$ \\sqrt{LC} \\approx 1.581 \\times 3.162 \\times 10^{-5} \\approx 5.0 \\times 10^{-5} $$</p>\n<p>Now, the angular frequency at resonance becomes:</p>\n<p>$$ \\omega = \\frac{1}{5.0 \\times 10^{-5}} = 2.0 \\times 10^{4} \\, \\text{radians/s} $$</p>\n<p>Thus, the angular frequency of the AC source for maximum current in the circuit is:</p>\n<p>$$ \\omega = 2 \\times 10^4 \\, \\text{radians/s} $$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "44MzeCC1nuPxzqf3q5jgy2xukf15pezu",
+      "questionNumber": 7,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "A 750 Hz, 20 V (rms) source is connected to a\nresistance of 100 $$\\Omega $$, an inductance of 0.1803 H\nand a capacitance of 10 $$\\mu $$F all in series. The\ntime in which the resistance (heat capacity\n2 J/<sup>o</sup>C) will get heated by 10<sup>o</sup>C. (assume no loss\nof heat to the surroudnings) is close to :",
+      "options": [
+        "348 s",
+        "418 s",
+        "245 s",
+        "365 s"
+      ],
+      "correctOption": 0,
+      "solution": "f = 750 Hz, V<sub>rms</sub> = 20 V,\n<br><br>R = 100 $$\\Omega $$, L = 0.1803 H,\n<br><br>C = 10$$\\mu $$ F, S = 2 J/°C\n<br><br>|Z| = $$\\sqrt {{R^2} + {{\\left( {{X_L} - {X_C}} \\right)}^2}} $$\n<br><br>= $$\\sqrt {{R^2} + {{\\left( {\\omega L - {1 \\over {\\omega C}}} \\right)}^2}} $$\n<br><br>= $$\\sqrt {{R^2} + {{\\left( {2\\pi fL - {1 \\over {2\\pi fC}}} \\right)}^2}} $$\n<br><br>= $$\\sqrt {{{(100)}^2} + {{\\left( {2 \\times 3.14 \\times 750 \\times 0.1803 - {1 \\over {2 \\times 3.14 \\times 750 \\times {{10}^{ - 5}}}}} \\right)}^2}} $$\n<br><br> = 834 $$\\Omega $$\n<br><br>In AC, power (P) = i<sub>rms</sub>V<sub>rms</sub> cos $$\\phi $$\n<br><br> and i<sub>rms</sub> = $${{{V_{rms}}} \\over {\\left| Z \\right|}}$$\n<br><br>Power factor (cos $$\\phi $$) = $${R \\over {\\left| Z \\right|}}$$\n<br><br>$$ \\therefore $$ P = $${{{V_{rms}}} \\over {\\left| Z \\right|}}.{V_{rms}}.{R \\over {\\left| Z \\right|}}$$\n<br><br>= $${\\left( {{{{V_{rms}}} \\over {\\left| Z \\right|}}} \\right)^2}R$$\n<br><br>= $${\\left( {{{20} \\over {834}}} \\right)^2} \\times 100$$\n<br><br>= 0.0575 J/S\n<br><br>Also, H = Pt = S$$\\Delta $$$$\\theta $$\n<br><br>$$ \\Rightarrow $$ t = $${{2\\left( {10} \\right)} \\over {0.0575}}$$ = 348 sec",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "ftYWCKEbBX1ANDU6Gijgy2xukg0kk5t5",
+      "questionNumber": 8,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "In a series LR circuit, power of 400W is dissipated from a source of 250 V, 50 Hz. The power factor\nof the circuit is 0.8. In order to bring the power factor to unity, a capacitor of value C is added in\nseries to the L and R. Taking the value of C as $$\\left( {{n \\over {3\\pi }}} \\right)$$ $$\\mu $$F,  then value of n is __________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "Given, power factor of LR circuit,\n<br><br>cos $$\\phi $$ = 0.8 = $${R \\over {\\sqrt {{R^2} + X_L^2} }}$$ = $${R \\over Z}$$\n<br><br>We know, \n<br>Power, P = $${{V_{rms}^2} \\over {{Z^2}}} \\times R$$\n<br><br>$$ \\Rightarrow $$ 400 = $${{{{\\left( {250} \\right)}^2} \\times 0.8Z} \\over {{Z^2}}}$$\n<br><br>$$ \\Rightarrow $$ Z = 125\n<br><br>$$ \\therefore $$ R = 0.8 $$ \\times $$ 125 = 100 $$\\Omega $$\n<br><br>As Z<sup>2</sup> = $$X_L^2 + {R^2}$$\n<br><br>$$ \\Rightarrow $$ $${\\left( {125} \\right)^2} = X_L^2 + {\\left( {100} \\right)^2}$$\n<br><br>$$ \\Rightarrow $$ X<sub>L</sub> = 75\n<br><br>In 2<sup>nd</sup> case given.\n<br><br>Power factor = 1\n<br><br>that means\nX<sub>L</sub>\n = X<sub>C</sub>\n (Resonance condition)\n<br><br>X<sub>L</sub> = $${1 \\over {{\\omega _c}}}$$\n<br><br>$$ \\Rightarrow $$ 75 = $${1 \\over {\\left( {2\\pi F} \\right)C}}$$\n<br><br>$$ \\Rightarrow $$ C = $${1 \\over {\\left( {2\\pi  \\times 50} \\right)75}}$$\n<br><br>Also given, C = $$\\left( {{n \\over {3\\pi }}} \\right)$$ $$\\mu $$F\n<br><br>$$ \\therefore $$ $${1 \\over {\\left( {2\\pi  \\times 50} \\right)75}} = {{n \\times {{10}^{ - 6}}} \\over {3\\pi }}$$\n<br><br>$$ \\Rightarrow $$ n = 400",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "YEww4HpdQL4O8otA",
+      "questionNumber": 9,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The self inductance of the motor of an electric fan is $$10$$ $$H$$. In order to impart maximum power at $$50$$ $$Hz$$, it should be connected to a capacitance of ",
+      "options": [
+        "$$8\\mu F$$ ",
+        "$$4\\mu F$$",
+        "$$2\\mu F$$",
+        "$$1\\mu F$$"
+      ],
+      "correctOption": 3,
+      "solution": "For maximum power, $${X_L} = X{}_C,$$ which yields \n<br><br>$$C = {1 \\over {{{\\left( {2\\pi n} \\right)}^2}L}} = {1 \\over {4{\\pi ^2} \\times 50 \\times 50 \\times 10}}$$\n<br><br>$$\\therefore$$ $$C = 0.1 \\times {10^{ - 5}}F = 1\\mu F$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "1ktfodray",
+      "questionNumber": 10,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "An ac circuit has an inductor and a resistor resistance R in series, such that X<sub>L</sub> = 3R. Now, a capacitor is added in series such that X<sub>C</sub> = 2R. The ratio of new power factor with the old power factor of the circuit is $$\\sqrt 5 :x$$. The value of x is ___________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktqt15j5/b7bbd168-3c77-4ad5-8eda-59b59d2bc739/04049b10-190e-11ec-9e1c-4f8f7e7dad5b/file-1ktqt15j6-320w.png\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktqt15j5/b7bbd168-3c77-4ad5-8eda-59b59d2bc739/04049b10-190e-11ec-9e1c-4f8f7e7dad5b/file-1ktqt15j6-500w.png\"><img src=\"https://imagex.cdn.examgoal.net/1ktqt15j5/b7bbd168-3c77-4ad5-8eda-59b59d2bc739/04049b10-190e-11ec-9e1c-4f8f7e7dad5b/file-1ktqt15j6.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th August Evening Shift Physics - Alternating Current Question 109 English Explanation\"></picture><br>$$\\cos \\phi  = {R \\over {\\sqrt {{R^2} + 3{R^2}} }}$$<br><br>$$ = {1 \\over {\\sqrt {10} }}$$<br><br>$$\\cos \\phi ' = {R \\over {\\sqrt {{R^2} + {R^2}} }}$$<br><br>$$ = {1 \\over {\\sqrt 2 }}$$<br><br>$${{\\cos \\phi '} \\over {\\cos \\phi }} = {{\\sqrt {10} } \\over {\\sqrt 2 }} = {{\\sqrt 5 } \\over 1}$$<br><br>$$\\therefore$$ x = 1",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "ml7z6q8v",
+      "questionNumber": 11,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>An inductor stores 16 J of magnetic field energy and dissipates 32 W of thermal energy due to its resistance when an a.c. current of 2 A (rms) and frequency 50 Hz flows through it. The ratio of inductive reactance to its resistance is ______. ($\\pi = 3.14$)</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>Energy stored ( U ) in inductor is $\\mathrm{U}=16 \\mathrm{~J}$</p>\n<p>Power dissipated in resistance is $\\mathrm{P}=32 \\mathrm{~W}$</p>\n<p>RMS current in the circuit is $\\mathrm{I}_{\\mathrm{rms}}=2 \\mathrm{~A}$</p>\n<p>Frequency (f) of the ac source is $f=50 \\mathrm{~Hz}$</p>\n<p><img alt=\"JEE Main 2026 (Online) 28th January Evening Shift Physics - Alternating Current Question 9 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlg9fx8j/7a8966fa-34df-4af8-ab38-13d8fb93298d/69eba530-064f-11f1-9c0e-cff5e3170228/file-6y3zli1mlg9fx8k.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlg9fx8j/7a8966fa-34df-4af8-ab38-13d8fb93298d/69eba530-064f-11f1-9c0e-cff5e3170228/file-6y3zli1mlg9fx8k.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Power is dissipated only through the resistive component of the inductor.</p>\n<p>$$ \\mathrm{P}=\\mathrm{I}_{\\mathrm{rms}}^2 \\cdot \\mathrm{R} $$</p>\n<p>$$\\Rightarrow $$ $32=(2)^2 \\cdot \\mathrm{R} \\Rightarrow 32=4 \\mathrm{R} \\Rightarrow \\mathrm{R}=8 \\Omega$</p>\n<p>Magnetic energy is stored in the inductor.</p>\n<p>$$ \\mathrm{U}=\\frac{1}{2} \\mathrm{~L} \\cdot i^2 $$</p>\n<p>Where $L$ is the self inductance of the inductor and $i$ is the current through it. As the current source is AC, so energy stored is equivalent to current corresponding to the DC source, $i=i_{\\text {rms }}$</p>\n<p>Substituting the values in energy formula :</p>\n<p>$$ \\mathrm{U}=\\frac{1}{2} \\mathrm{~L}\\left(\\mathrm{I}_{\\mathrm{rms}}^2\\right) $$</p>\n<p>$$\\Rightarrow $$ $16=\\frac{L}{2} \\cdot(2)^2 \\Rightarrow 16=2 L $\n\n<br><br>$$\\Rightarrow $$ $ L=8 H$</p>\n<p>The inductive reactance $\\left(X_L\\right)$ given as $X_L=\\omega L=2 \\pi f L$</p>\n<p>$$ X_L=2 \\times 3.14 \\times 50 \\times 8 $$\n\n<br><br>$$\\Rightarrow $$ $$X_L=2512 \\Omega $$</p>\n<p>So the ratio of $\\left(\\frac{X_L}{R}\\right)$ is,</p>\n<p>$$ \\frac{X_L}{R}=\\frac{2512}{8}=314 $$</p>\n<p>Therefore, the ratio of the inductive reactance to the resistance of the inductor is 314. </p>\n<p>Hence, the correct answer is $\\mathbf{3 1 4}$.</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "9dRlbRiHU2IJPiTo",
+      "questionNumber": 12,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "An inductor of inductance $$L=400$$ $$mH$$ and resistors of resistance $${R_1} = 2\\Omega $$ and $${R_2} = 2\\Omega $$ are connected to a battery of $$emf$$ $$12$$ $$V$$ as shown in the figure. The internal resistance of the battery is negligible. The switch $$S$$ is closed at $$t=0.$$ The potential drop across $$L$$ as a function of time is : \n<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/IGJGcmXziV76bLghV/xPkVZPoV2xVpMy6p6SBshm5IZf3Zf/KdVUUEjhjCjDJi4MF012hn/image.png\" loading=\"lazy\" alt=\"AIEEE 2009 Physics - Alternating Current Question 175 English\"> ",
+      "options": [
+        "$${{12} \\over t}{e^{ - 3t}}V$$ ",
+        "$$6\\left( {1 - {e^{ - t/0.2}}} \\right)V$$ ",
+        "$$12{e^{ - 5t}}V$$ ",
+        "$$6{e^{ - 5t}}V$$ "
+      ],
+      "correctOption": 2,
+      "solution": "Growth in current in $$L{R_2}$$ branch when switch is closed is given by\n<br><br>$$i = {E \\over {{R_2}}}\\left[ {1 - {e^{ - {R_2}t/L}}} \\right]$$\n<br><br>$$ \\Rightarrow {{di} \\over {dt}} = {E \\over {{R_2}}}.{{{R_2}} \\over L}.{e^{ - {R_{2t/L}}}}$$\n<br><br>$$ = {E \\over L}{e^{{{{R_2}t} \\over L}}}$$\n<br><br>Hence, potential drop across\n<br><br>$$L = \\left( {{E \\over L}{e^{ - {R_2}t/L}}} \\right)L = E{e^{ - {R_2}t/L}}$$\n<br><br>$$ = 12{e^{ - {{2t} \\over {400 \\times {{10}^{ - 3}}}}}} = 12{e^{ - 5t}}V$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "1ldujqk2f",
+      "questionNumber": 13,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>An LCR series circuit of capacitance 62.5 nF and resistance of 50 $$\\Omega$$, is connected to an A.C. source of frequency 2.0 kHz. For maximum value of amplitude of current in circuit, the value of inductance is __________ mH.</p>\n<p>(Take $$\\pi^2=10$$)</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": " $\\because$ For maximum amplitude of current, circuit should be at resonance.\n<br/><br/>\n$$\n\\begin{aligned}\n& \\therefore X_{L}=X_{C} \\\\\\\\\n& \\omega L=\\frac{1}{\\omega C} \\\\\\\\\n& L=\\frac{1}{\\omega^{2} C} \\\\\\\\\n& =\\frac{1}{\\left(2 \\pi \\times 2 \\times 10^{3}\\right)^{2} \\times 62.5 \\times 10^{-9}} \\\\\\\\\n& =100 ~\\mathrm{mH}\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "1l55m1te8",
+      "questionNumber": 14,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>In the given circuit, the magnitude of V<sub>L</sub> and V<sub>C</sub> are twice that of V<sub>R</sub>. Given that f = 50 Hz, the inductance of the coil is $${1 \\over {K\\pi }}$$ mH. The value of K is ____________.</p>\n<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l57debdu/fd9395d9-044c-4a20-bb75-4797d9a74699/94333730-fbf0-11ec-a838-9d46935e6482/file-1l57debdv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l57debdu/fd9395d9-044c-4a20-bb75-4797d9a74699/94333730-fbf0-11ec-a838-9d46935e6482/file-1l57debdv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 28th June Evening Shift Physics - Alternating Current Question 103 English\"> </p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>$${V_L} = 2{V_R}$$</p>\n<p>So $$\\omega Li = 2\\,Ri$$</p>\n<p>$$ \\Rightarrow L = {{2R} \\over \\omega } = {{2 \\times 5} \\over {2\\pi  \\times 50}} = {1 \\over {10\\pi }}H = {{100} \\over \\pi }H$$</p>\n<p>So $$k = {1 \\over {100}} \\simeq 0$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    },
+    {
+      "id": "1krsv7oe0",
+      "questionNumber": 15,
+      "subject": "Physics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Match List - I with List - II<br><br><table>\n<thead>\n  <tr>\n    <th></th>\n    <th>List - I</th>\n    <th></th>\n    <th>List - II</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>(a)</td>\n    <td>$$\\omega L &gt; {1 \\over {\\omega C}}$$</td>\n    <td>(i)</td>\n    <td>Current is in phase with emf</td>\n  </tr>\n  <tr>\n    <td>(b)</td>\n    <td>$$\\omega L = {1 \\over {\\omega C}}$$</td>\n    <td>(ii)</td>\n    <td>Current lags behind the applied emf</td>\n  </tr>\n  <tr>\n    <td>(c)</td>\n    <td>$$\\omega L &lt; {1 \\over {\\omega C}}$$</td>\n    <td>(iii)</td>\n    <td>Maximum current occurs</td>\n  </tr>\n  <tr>\n    <td>(d)</td>\n    <td>Resonant frequency</td>\n    <td>(iv)</td>\n    <td>Current leads the emf</td>\n  </tr>\n</tbody>\n</table><br><br>Choose the correct answer from the options given below ",
+      "options": [
+        "a(ii), b(i), c(iv), d(iii)",
+        "a(ii), b(i), c(iii), d(iv)",
+        "a(iii), b(i), c(iv), d(ii)",
+        "a(iv), b(iii), c(ii), d(i)"
+      ],
+      "correctOption": 0,
+      "solution": "$$\\omega L = {1 \\over {\\omega C}},{X_L} = {X_C}$$<br><br>So current in phase with EMF<br><br>At resonance, current have maximum value.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Alternating Current"
+    }
+  ]
+}

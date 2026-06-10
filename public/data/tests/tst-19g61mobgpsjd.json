@@ -1,0 +1,485 @@
+{
+  "testId": "tst-19g61mobgpsjd",
+  "title": "Determinants - Chapter Test",
+  "examType": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "totalQuestions": 25,
+  "questions": [
+    {
+      "id": "tllwm7djwr",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If&nbsp;Δ(a, b, c,&nbsp;α) = 0&nbsp;for every&nbsp;α &gt; 0, then which one of the following is correct ?&nbsp;",
+      "options": [
+        "a, b, c are in AP&nbsp;",
+        "a, b, c are in GP&nbsp;",
+        "a, 2b, c are in AP&nbsp;",
+        "a, 2b, c are in GP"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Given:</p>\n\n<p>$ \\Delta(a, b, c, \\alpha) = \\left|\\begin{array}{ccc}  a & b & a\\alpha + b \\\\  b & c & b\\alpha + c \\\\  a\\alpha + b & b\\alpha + c & 0  \\end{array}\\right| $</p>\n\n<p>We apply the column operation $C_3 \\rightarrow C_3 - (\\alpha C_1 + C_2)$:</p>\n\n<p>$ \\Delta(a, b, c, \\alpha) = \\left|\\begin{array}{ccc}  a & b & 0 \\\\  b & c & 0 \\\\  a\\alpha + b & b\\alpha + c & -(a\\alpha^2 + 2b\\alpha + c)  \\end{array}\\right| $</p>\n\n<p>Expanding the determinant along the third column:</p>\n\n<p>$ \\Delta(a, b, c, \\alpha) = -(a\\alpha^2 + 2b\\alpha + c) \\left|\\begin{array}{cc}  a & b \\\\  b & c  \\end{array}\\right| $</p>\n\n<p>The 2x2 determinant is:</p>\n\n<p>$ \\left|\\begin{array}{cc}  a & b \\\\  b & c  \\end{array}\\right| = ac - b^2 $</p>\n\n<p>So we have:</p>\n\n<p>$ \\Delta(a, b, c, \\alpha) = -(a\\alpha^2 + 2b\\alpha + c)(ac - b^2) $</p>\n\n<p>Given that $\\Delta(a, b, c, \\alpha) = 0$ for every $\\alpha > 0$, the product must be zero for all $\\alpha$. This means:</p>\n\n<p>$ a\\alpha^2 + 2b\\alpha + c = 0 $</p>\n\n<p>This equation must be true for all $\\alpha$, which can only happen if the coefficients are such that the quadratic equation is always zero. This means:</p>\n\n<p>$ ac - b^2 = 0 $</p>\n\n<p>Rewriting, we get:</p>\n\n<p>$ b^2 = ac $</p>\n\n<p>This relationship implies that $a$, $b$, and $c$ are in geometric progression (GP), because for three numbers to be in GP, the square of the middle number should be equal to the product of the other two:</p>\n\n<p>$ b^2 = ac $</p>\n\n<p>Thus, the correct option is <strong>Option B: a, b, c are in GP</strong>.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlmnk0kpfr",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "In obtaining the solution of the system of equations x + y + z = 7 x + 2y + 3z = 16 and x + 3y + 4z = 22 by Cramer's rule, the value of y is obtained by dividing D by <span class=\"math-tex\">$D_{2}$</span> where&nbsp;<br>\n<span class=\"math-tex\">$D=\\left|\\begin{matrix}1&amp;1&amp;1\\\\ 1&amp;2&amp;3\\\\ 1&amp;3&amp;4\\end{matrix}\\right|$</span>&nbsp;What is the value of the determinant <span class=\"math-tex\">$D_{2}$</span>&nbsp;?",
+      "options": [
+        "<span style=\"\">-13</span>",
+        "&nbsp;-3",
+        "3",
+        "13"
+      ],
+      "correctOption": 1,
+      "solution": "<p>For the system</p>\n<p>$$ x+y+z=7 $$</p>\n<p>$$ x+2y+3z=16 $$</p>\n<p>$$ x+3y+4z=22 $$</p>\n<p>the coefficient matrix is</p>\n<p>$$ D=\\begin{vmatrix} 1&1&1\\\\ 1&2&3\\\\ 1&3&4 \\end{vmatrix} $$</p>\n<p>In Cramer’s rule, to find $y$, we replace the second column of the coefficient matrix by the constants $7,16,22$.</p>\n<p>So,</p>\n<p>$$ D_2=\\begin{vmatrix} 1&7&1\\\\ 1&16&3\\\\ 1&22&4 \\end{vmatrix} $$</p>\n<p>Now let us evaluate this determinant:</p>\n<p>$$ D_2= 1\\begin{vmatrix} 16&3\\\\ 22&4 \\end{vmatrix} -7\\begin{vmatrix} 1&3\\\\ 1&4 \\end{vmatrix} +1\\begin{vmatrix} 1&16\\\\ 1&22 \\end{vmatrix} $$</p>\n<p>$$ =1(16\\cdot 4-22\\cdot 3)-7(1\\cdot 4-1\\cdot 3)+1(1\\cdot 22-1\\cdot 16) $$</p>\n<p>$$ =(64-66)-7(4-3)+(22-16) $$</p>\n<p>$$ =-2-7+6 $$</p>\n<p>$$ =-3 $$</p>\n<p>Hence,</p>\n<p>$$ D_2=-3 $$</p>\n<p>So the correct option is:</p>\n<p>$$ \\boxed{-3} $$</p>\n<p>Option 2.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlme8nbceo",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>. Consider the following statements in respect of the determinant&nbsp;</p>\n\n<p><span class=\"math-tex\">$ \\Delta = \\begin{vmatrix} k(k+2) &amp; 2k+1 &amp; 1 \\\\ 2k+1 &amp; k+2 &amp; 1 \\\\ 3 &amp; 3 &amp; 1 \\end{vmatrix} $</span></p>\n\n<p>I. <span class=\"katex\"><span class=\"mord\">Δ</span></span> is positive if <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.0315em;\">k</span><span class=\"mrel\">&gt;</span></span><span class=\"base\"><span class=\"mord\">0</span></span></span></span>.</p>\n\n<p>II. <span class=\"katex\"><span class=\"mord\">Δ</span></span> is negative if <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.0315em;\">k</span><span class=\"mrel\">&lt;</span></span><span class=\"base\"><span class=\"mord\">0</span></span></span></span>.</p>\n\n<p>III. <span class=\"katex\"><span class=\"mord\">Δ</span></span> is zero if <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.0315em;\">k</span><span class=\"mrel\">=</span></span><span class=\"base\"><span class=\"mord\">0</span></span></span></span>.</p>\n\n<p>How many of the statements given above are correct?</p>\n",
+      "options": [
+        "None&nbsp;",
+        "One&nbsp;",
+        "Two&nbsp;",
+        "All three"
+      ],
+      "correctOption": 1,
+      "solution": "<p>We are asked to evaluate the truth of three statements about the determinant  </p>\n<p>$$ \\Delta = \\begin{vmatrix}  k(k+2) & 2k+1 & 1 \\\\  2k+1 & k+2 & 1 \\\\  3 & 3 & 1  \\end{vmatrix}. $$  </p>\n\n<h3>Step 1: Expand the determinant</h3>\n<p>Let us expand along the third row for simplicity:</p>\n<p>$ \\Delta = 3 \\begin{vmatrix}  2k+1 & 1 \\\\  k+2 & 1  \\end{vmatrix} - 3 \\begin{vmatrix}  k(k+2) & 1 \\\\  2k+1 & 1  \\end{vmatrix} + 1 \\cdot \\begin{vmatrix}  k(k+2) & 2k+1 \\\\  2k+1 & k+2  \\end{vmatrix}. $</p>\n\n<h3>Step 2: Evaluate each minor</h3>\n<ol>\n<li><p>$ \\begin{vmatrix}  2k+1 & 1 \\\\  k+2 & 1  \\end{vmatrix}  = (2k+1)(1) - (1)(k+2)  = 2k+1 -k -2  = k -1. $</p></li>\n</ol>\n<p>So, first term = $3(k-1)$.</p>\n\n<ol start=\"2\">\n<li><p>$ \\begin{vmatrix}  k(k+2) & 1 \\\\  2k+1 & 1  \\end{vmatrix}  = k(k+2)(1) - (1)(2k+1)  = k^2+2k -2k -1  = k^2 -1. $</p></li>\n</ol>\n<p>So, second term = $-3(k^2-1)$.</p>\n\n<ol start=\"3\">\n<li><p>$ \\begin{vmatrix}  k(k+2) & 2k+1 \\\\  2k+1 & k+2  \\end{vmatrix}  = k(k+2)(k+2) - (2k+1)(2k+1). $</p></li>\n</ol>\n<p>Simplify:  </p>\n<p>$ = k(k^2 + 4k + 4) - (4k^2+4k+1)  = k^3 + 4k^2 + 4k -4k^2 -4k -1  = k^3 -1. $</p>\n\n<h3>Step 3: Combine results</h3>\n<p>So,</p>\n<p>$ \\Delta = 3(k-1) - 3(k^2-1) + (k^3-1). $</p>\n<p>Simplify:</p>\n<p>$ = (3k -3) - 3k^2 + 3 + k^3 -1 = k^3 - 3k^2 + 3k -1. $</p>\n<p>Notice this is a standard expansion:</p>\n<p>$ \\Delta = (k-1)^3. $</p>\n\n<h3>Step 4: Check statements</h3>\n<ul>\n<li><p><strong>If $k>0$:</strong>  </p>\n<p>$\\Delta = (k-1)^3$.  </p>\n<p>For $k>1$, $\\Delta >0$ (true).  </p>\n<p>For $0<k<1$, $\\Delta <0$ (not positive).  </p>\n<p>Hence statement I is <strong>false</strong>.</p></li>\n<li><p><strong>If $k<0$:</strong>  </p>\n<p>$(k-1)<0$, so cube is negative → $\\Delta<0$. True.  </p>\n<p>So statement II is <strong>true</strong>.</p></li>\n<li><p><strong>If $k=0$:</strong>  </p>\n<p>$\\Delta = (0-1)^3 = -1 \\neq 0$.  </p>\n<p>So statement III is <strong>false</strong>.</p></li>\n</ul>\n\n<h3>Final Answer:</h3>\n<p>Only <strong>one statement</strong> (statement II) is correct.  </p>\n<p><strong>Correct Option: B (One)</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tllz3line7",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the value of <span class=\"math-tex\">$a_{21}C_{11}+a_{22}C_{12}+a_{23}C_{13}$</span>?",
+      "options": [
+        "0",
+        "1",
+        "Δ",
+        "−Δ"
+      ],
+      "correctOption": 0,
+      "solution": "<p>We recall the important property of determinants:  </p>\n<p>For a determinant $Δ = \\det(A)$ of the $3 \\times 3$ matrix  </p>\n<p>$$A = \\begin{bmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33} \\end{bmatrix},$$  </p>\n<p>and the cofactors of the elements of the <strong>first row</strong> being $C_{11}, C_{12}, C_{13}$, we have:  </p>\n<ul>\n<li><p><strong>Expansion along the first row:</strong></p>\n<p>$$   Δ = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13}   $$</p></li>\n<li><p><strong>Property of cofactors:</strong></p>\n<p>If we take any <em>other row</em> (for example, the second row $\\{a_{21}, a_{22}, a_{23}\\}$) and multiply it with the cofactors of the <em>first row</em>, the result is always <strong>0</strong>.  </p></li>\n</ul>\n<p>That is,  </p>\n<p>$$a_{21}C_{11} + a_{22}C_{12} + a_{23}C_{13} = 0.$$</p>\n\n<h3>Final Answer:</h3>\n<p><strong>Option A: 0</strong> ✅</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tllz3lnsa6",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If&nbsp;<span class=\"math-tex\">$Δ_1 = \\begin{vmatrix} 1 &amp; p &amp; q \\\\ 1 &amp; q &amp; r \\\\ 1 &amp; r &amp; p\\end{vmatrix} \\ \\text{and} \\ Δ_2 = \\begin{vmatrix} 1 &amp; 1 &amp; 1 \\\\ q &amp; r &amp; p \\\\ r &amp; p &amp; q \\end{vmatrix}$</span>&nbsp;where p&nbsp;≠ q&nbsp;≠ r, then&nbsp;Δ<sub>1</sub> + Δ<sub>2</sub> is",
+      "options": [
+        "0",
+        "always positive",
+        "<span style=\"\">always negative</span>",
+        "positive if p, q, r are positive else negative"
+      ],
+      "correctOption": 2,
+      "solution": "<u><strong>Formula Used:</strong></u>\n\n<p>$(a - b)^2 = a^2 + b^2 - 2ab$</p>\n\n<u><strong>Calculation:</strong></u>\n\n<p>Given:</p>\n\n<p>$\\Delta_1 = \\begin{vmatrix} 1 & p & q \\\\ 1 & q & r \\\\ 1 & r & p \\end{vmatrix}$ and $\\Delta_2 = \\begin{vmatrix} 1 & 1 & 1 \\\\ q & r & p \\\\ r & p & q \\end{vmatrix}$</p>\n\n<p>Now,</p>\n\n<p>$\\Delta_1 = \\begin{vmatrix} 1 & p & q \\\\ 1 & q & r \\\\ 1 & r & p \\end{vmatrix}$</p>\n\n<p>Perform the row operations: $R_2 \\rightarrow R_2 - R_1$ and $R_3 \\rightarrow R_3 - R_1$:</p>\n\n<p>$ \\Delta_1 = \\begin{vmatrix} 1 & p & q \\\\ 0 & q-p & r-q \\\\ 0 & r-p & p-q \\end{vmatrix} $</p>\n\n<p>$ \\Delta_1 = 1 \\cdot \\left[(q - p)(p - q) - (r - p)(r - q)\\right] $</p>\n\n<p>$ \\Delta_1 = - (p - q)^2 - (r - p)(r - q) $</p>\n\n<p>$ \\Delta_1 = - (p^2 - 2pq + q^2) - (r^2 - qr - pr + pq) $</p>\n\n<p>$ \\Delta_1 = - p^2 + 2pq - q^2 - r^2 + qr + pr - pq $</p>\n\n<p>$ \\Delta_1 = - p^2 - q^2 - r^2 + qr + pr + pq \\quad \\text{(equation i)} $</p>\n\n<p>Similarly for $\\Delta_2$,</p>\n\n<p>$\\Delta_2 = \\begin{vmatrix} 1 & 1 & 1 \\\\ q & r & p \\\\ r & p & q \\end{vmatrix}$</p>\n\n<p>Perform the column operations: $C_2 \\rightarrow C_2 - C_1$ and $C_3 \\rightarrow C_3 - C_1$:</p>\n\n<p>$ \\Delta_2 = \\begin{vmatrix} 1 & 0 & 0 \\\\ q & r-q & p-q \\\\ r & p-r & q-r \\end{vmatrix} $</p>\n\n<p>$ \\Delta_2 = 1 \\cdot \\left[(r - q)(q - r) - (p - q)(p - r)\\right] $</p>\n\n<p>$ \\Delta_2 = - (q - r)^2 - (p - q)(p - r) $</p>\n\n<p>$ \\Delta_2 = - (q^2 + r^2 - 2qr) - (p^2 - pq - pr + qr) $</p>\n\n<p>$ \\Delta_2 = - q^2 - r^2 - p^2 + pq + pr + qr \\quad \\text{(equation ii)} $</p>\n\n<p>Adding equations (i) and (ii), we get:</p>\n\n<p>$ \\Delta_1 + \\Delta_2 = - p^2 - q^2 - r^2 + qr + pr + pq - q^2 - r^2 - p^2 + pq + pr + qr $</p>\n\n<p>$ \\Delta_1 + \\Delta_2 = - \\left[p^2 + q^2 - 2pq + q^2 + r^2 - 2qr + r^2 + p^2 - 2pr\\right] $</p>\n\n<p>$ \\Delta_1 + \\Delta_2 = -\\left[(p - q)^2 + (q - r)^2 + (r - p)^2\\right] $</p>\n\n<p>This sum is always negative.</p>\n\n<strong>$\\Delta_1 + \\Delta_2$ is always negative.</strong>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlme8nbci0",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following in respect of a non-singular matrix <span class=\"katex\"><span class=\"mord mathnormal\" style=\"margin-right: 0.109em;\">M</span></span>:</p>\n\n<p>I. <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord\">∣</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right: 0.109em;\">M<sup>2</sup></span></span><span class=\"mord\">∣</span><span class=\"mrel\">=</span></span><span class=\"base\"><span class=\"mord\">∣</span><span class=\"mord mathnormal\" style=\"margin-right: 0.109em;\">M</span><span class=\"mord\"><span class=\"mord\">∣</span><sup><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8141em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></sup></span></span></span></span></p>\n\n<p>II. <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord\">∣</span><span class=\"mord mathnormal\" style=\"margin-right: 0.109em;\">M</span><span class=\"mord\">∣</span><span class=\"mrel\">=</span></span><span class=\"base\"><span class=\"mord\">∣</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right: 0.109em;\">M</span><sup><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8141em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></sup></span><span class=\"mord\">∣</span></span></span></span></p>\n\n<p>III. <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord\">∣</span><span class=\"mord mathnormal\" style=\"margin-right: 0.109em;\">M</span><span class=\"mord\">∣</span><span class=\"mrel\">=</span></span><span class=\"base\"><span class=\"mord\">∣</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right: 0.109em;\">M</span><sup><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8413em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right: 0.1389em;\">T</span></span></span></span></span></span></span></sup></span><span class=\"mord\">∣</span></span></span></span></p>\n\n<p>How many of the above are correct?</p>\n",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "All three"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Let us check each statement according to the <strong>NCERT rules</strong> for determinants.</p>\n\n<p><strong>I.</strong> $|M^2| = |M|^2$</p>\n<ul>\n<li><p><strong>NCERT Rule</strong>: The determinant of the product of two square matrices is equal to the product of their determinants:</p>\n<p>$$   |AB| = |A| \\cdot |B|   $$</p></li>\n<li><p>So,</p>\n<p>$$   |M^2| = |M \\cdot M| = |M| \\cdot |M| = |M|^2   $$</p></li>\n<li><p><strong>Correct</strong></p></li>\n</ul>\n\n<p><strong>II.</strong> $|M| = |M^{-1}|$</p>\n<ul>\n<li><p><strong>NCERT Rule</strong>: For a non-singular matrix $M$, </p>\n<p>$$   |M^{-1}| = \\frac{1}{|M|}   $$</p>\n<p>Therefore, $|M| = |M^{-1}|$ is only true if $|M| = 1$ which is not always true.</p></li>\n\n<li><p><strong>Incorrect</strong></p></li>\n</ul>\n\n<p><strong>III.</strong> $|M| = |M^T|$</p>\n<ul>\n<li><p><strong>NCERT Rule</strong>: The determinant of a matrix and its transpose are always equal:</p>\n<p>$$   |M| = |M^T|   $$</p></li>\n<li><p><strong>Correct</strong></p></li>\n</ul>\n\n<p><strong>Conclusion:</strong>  </p>\n<p>Number of correct statements $= 2$</p>\n<p><strong>Correct option: Option C (Two statements are correct)</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlmnk0kpg9",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If a, b, c are the sides of a triangle ABC and p is the perimeter of the triangle, then what is equal to? det <span class=\"math-tex\">$\\left|\\begin{matrix}p+c&amp;a&amp;b\\\\ c&amp;p+a&amp;b\\\\ c&amp;a&amp;p+b\\end{matrix}\\right|$</span>",
+      "options": [
+        "<span class=\"math-tex\">$p ^ 3$</span>",
+        "<span class=\"math-tex\">$ 2p ^ 3$</span>",
+        "<span class=\"math-tex\">$3p ^ 3$</span>",
+        "<span class=\"math-tex\">$ 4p ^ 3$</span>"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Let</p>\n<p>$$ D=\\begin{vmatrix} p+c & a & b\\\\ c & p+a & b\\\\ c & a & p+b \\end{vmatrix} $$</p>\n<p>We have to find its value in terms of $p$, where $p$ is the perimeter of the triangle.</p>\n<p>Since $p$ is the perimeter,</p>\n<p>$$ p=a+b+c $$</p>\n<p>Now observe the determinant carefully.</p>\n<p>Write the rows as:</p>\n<p>$$ R_1=(p+c,\\ a,\\ b) $$</p>\n<p>$$ R_2=(c,\\ p+a,\\ b) $$</p>\n<p>$$ R_3=(c,\\ a,\\ p+b) $$</p>\n<p>Now apply row operations:</p>\n<p>$$ R_1 \\to R_1-R_3,\\qquad R_2 \\to R_2-R_3 $$</p>\n<p>Then,</p>\n<p>$$ R_1-R_3=(p,0,-p) $$</p>\n<p>because</p>\n<p>$$ (p+c)-c=p,\\quad a-a=0,\\quad b-(p+b)=-p $$</p>\n<p>Similarly,</p>\n<p>$$ R_2-R_3=(0,p,-p) $$</p>\n<p>So the determinant becomes</p>\n<p>$$ D= \\begin{vmatrix} p & 0 & -p\\\\ 0 & p & -p\\\\ c & a & p+b \\end{vmatrix} $$</p>\n<p>Now take $p$ common from the first two rows:</p>\n<p>$$ D=p^2 \\begin{vmatrix} 1 & 0 & -1\\\\ 0 & 1 & -1\\\\ c & a & p+b \\end{vmatrix} $$</p>\n<p>Now expand along the first row:</p>\n<p>$$ \\begin{vmatrix} 1 & 0 & -1\\\\ 0 & 1 & -1\\\\ c & a & p+b \\end{vmatrix} =1\\begin{vmatrix}1 & -1\\\\ a & p+b\\end{vmatrix} +(-1)\\begin{vmatrix}0 & 1\\\\ c & a\\end{vmatrix} $$</p>\n<p>Now compute each minor:</p>\n<p>$$ \\begin{vmatrix}1 & -1\\\\ a & p+b\\end{vmatrix} =1(p+b)-(-1)a=p+b+a $$</p>\n<p>and</p>\n<p>$$ \\begin{vmatrix}0 & 1\\\\ c & a\\end{vmatrix} =0\\cdot a-1\\cdot c=-c $$</p>\n<p>So,</p>\n<p>$$ = (p+b+a)+(-1)(-c) = p+a+b+c $$</p>\n<p>But since</p>\n<p>$$ p=a+b+c $$</p>\n<p>therefore</p>\n<p>$$ p+a+b+c=p+p=2p $$</p>\n<p>Hence,</p>\n<p>$$ D=p^2(2p)=2p^3 $$</p>\n<p>Therefore, the correct answer is</p>\n<p>$$ \\boxed{2p^3} $$</p>\n<p>So, Option 2 is correct.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlmnk0kpfx",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<div class=\"WaaZC\">\n<div class=\"RJPOee EIJn2\" style=\"animation: auto ease 0s 1 normal none running none !important;\">\n<div class=\"rPeykc\" data-hveid=\"CAgQAQ\" data-ved=\"2ahUKEwjVs7bkjfKQAxV3R2wGHTv2MPcQo_EKegQICBAB\" style=\"margin: 0px 0px 10px;\"><span data-huuid=\"9729828962112371459\">The value of the determinant&nbsp;<span class=\"math-tex\">$\\left|\\begin{matrix}a&amp;b&amp;c\\\\ l&amp;m&amp;n\\\\ p&amp;q&amp;r\\end{matrix}\\right|$</span></span>&nbsp;is equal to</div>\n</div>\n</div>\n",
+      "options": [
+        "<span class=\"math-tex\">$ \\left|\\begin{matrix}a&amp;b&amp;c\\\\ p&amp;q&amp;r\\\\ l&amp;m&amp;n\\end{matrix}\\right|$</span>",
+        "<span class=\"math-tex\">$\\left|\\begin{matrix}l&amp;m&amp;n\\\\ a&amp;b&amp;c\\\\ p&amp;q&amp;r\\end{matrix}\\right| $</span>",
+        "<span class=\"math-tex\">$\\left|\\begin{matrix}p&amp;q&amp;r\\\\ a&amp;b&amp;c\\\\ l&amp;m&amp;n\\end{matrix}\\right|$</span>",
+        "<span class=\"math-tex\">$\\left|\\begin{matrix}a&amp;p&amp;l\\\\ b&amp;q&amp;m\\\\ c&amp;r&amp;n\\end{matrix}\\right|$</span>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Let</p>\n<p>$$ \\Delta=\\left|\\begin{matrix} a&b&c\\\\ l&m&n\\\\ p&q&r \\end{matrix}\\right| $$</p>\n<p>Now we use properties of determinants.</p>\n<h3>Property 1:</h3>\n<p>If we interchange two rows, the sign of the determinant changes.</p>\n<h3>Property 2:</h3>\n<p>The determinant of a matrix is equal to the determinant of its transpose.</p>\n\n<p>Check each option:</p>\n<h3>Option 1</h3>\n<p>$$ \\left|\\begin{matrix} a&b&c\\\\ p&q&r\\\\ l&m&n \\end{matrix}\\right| $$</p>\n<p>Here, row 2 and row 3 are interchanged compared to the original determinant.</p>\n<p>So its value is</p>\n<p>$$ -\\Delta $$</p>\n<p>Hence, not equal to the given determinant.</p>\n\n<h3>Option 2</h3>\n<p>$$ \\left|\\begin{matrix} l&m&n\\\\ a&b&c\\\\ p&q&r \\end{matrix}\\right| $$</p>\n<p>Here, row 1 and row 2 are interchanged.</p>\n<p>So its value is</p>\n<p>$$ -\\Delta $$</p>\n<p>Hence, not equal to the given determinant.</p>\n\n<h3>Option 3</h3>\n<p>$$ \\left|\\begin{matrix} p&q&r\\\\ a&b&c\\\\ l&m&n \\end{matrix}\\right| $$</p>\n<p>This is obtained by cyclically changing the rows:</p>\n<ul>\n<li><p>row 1 goes to row 2</p></li>\n<li><p>row 2 goes to row 3</p></li>\n<li><p>row 3 goes to row 1</p></li>\n</ul>\n<p>A cyclic permutation of rows can be done by two interchanges, so the sign does not change.</p>\n<p>Therefore,</p>\n<p>$$ \\left|\\begin{matrix} p&q&r\\\\ a&b&c\\\\ l&m&n \\end{matrix}\\right|=\\Delta $$</p>\n\n<h3>Option 4</h3>\n<p>$$ \\left|\\begin{matrix} a&p&l\\\\ b&q&m\\\\ c&r&n \\end{matrix}\\right| $$</p>\n<p>This is neither the original determinant nor its transpose.</p>\n<p>The transpose of the given determinant is</p>\n<p>$$ \\left|\\begin{matrix} a&l&p\\\\ b&m&q\\\\ c&n&r \\end{matrix}\\right| $$</p>\n<p>So option 4 is not equal to the given determinant in general.</p>\n\n<p>Therefore, the correct answer is</p>\n<p>$$ \\boxed{\\left|\\begin{matrix} p&q&r\\\\ a&b&c\\\\ l&m&n \\end{matrix}\\right|} $$</p>\n<p>So, <strong>Option 3</strong> is correct.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlm69mp48p",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, _ _ _ _ _, a<sub>9</sub> are in GP, then what is the value of the following determinant?</p>\n\n<p><span class=\"math-tex\">$\\left| {\\begin{array}{*{20}{c}} {{ln\\:a_1}}&amp;{{ln\\:a_2}}&amp;{{ln\\:a_3}}\\\\ {{ln\\:a_4}}&amp;{{ln\\:a_5}}&amp;{{ln\\:a_6}}\\\\ {{ln\\:a_7}}&amp;{{ln\\:a_8}}&amp;{{ln\\:a_9}} \\end{array}} \\right|$</span></p>\n",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "correctOption": 0,
+      "solution": "\n<p>Let $ r $ be the common ratio of the GP.</p>\n<p>We consider the determinant:</p>\n<p>$ \\left|  \\begin{array}{ccc} \\ln a_1 & \\ln a_2 & \\ln a_3 \\\\ \\ln a_4 & \\ln a_5 & \\ln a_6 \\\\ \\ln a_7 & \\ln a_8 & \\ln a_9  \\end{array}  \\right| $</p>\n<p>Transform the columns as follows: </p>\n\n<p><p>$ C_2 \\rightarrow C_2 - C_1 $</p></p>\n<p><p>$ C_3 \\rightarrow C_3 - C_2 $</p></p>\n\n<p>This results in:</p>\n<p>$ \\left|  \\begin{array}{ccc} \\ln a_1 & \\ln a_2 - \\ln a_1 & \\ln a_3 - \\ln a_2 \\\\ \\ln a_4 & \\ln a_5 - \\ln a_4 & \\ln a_6 - \\ln a_5 \\\\ \\ln a_7 & \\ln a_8 - \\ln a_7 & \\ln a_9 - \\ln a_8  \\end{array}  \\right| $</p>\n<p>Rewriting using the common ratio, $ \\ln a_{p+1} - \\ln a_p = \\ln r $, the matrix becomes:</p>\n<p>$ \\left|  \\begin{array}{ccc} \\ln a_1 & \\ln r & \\ln r \\\\ \\ln a_4 & \\ln r & \\ln r \\\\ \\ln a_7 & \\ln r & \\ln r  \\end{array}  \\right| $</p>\n<p>Since columns $ C_2 $ and $ C_3 $ are identical, the determinant evaluates to zero:</p>\n<p>$ = 0 $</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tllz3lnsg6",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "For what value of k is the matrix&nbsp;<span class=\"math-tex\">$\\begin{bmatrix} 2\\cos 2\\theta &amp; 2\\cos 2\\theta &amp; 6 \\\\ 1 -2 \\sin^2\\theta &amp; 2 \\cos^2\\theta -1 &amp; 3 \\\\ k &amp; 2k &amp; 1 \\end{bmatrix}$</span>&nbsp;singular?",
+      "options": [
+        "0 only",
+        "<span style=\"\">1 only</span>",
+        "<span style=\"\">2 only</span>",
+        "<span style=\"\">Any real value</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<ol>\n\n<li>The determinant of a matrix with two identical rows or columns is zero.</li>\n\n<li>A matrix is <strong>singular</strong> if and only if its determinant is zero. A singular square matrix does not have an inverse.</li>\n\n</ol>\n\n<p><strong>Formula Used:</strong></p>\n\n<p>The trigonometric identity: $ \\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta = 1 - 2\\sin^2 \\theta = 2\\cos^2 \\theta - 1 $</p>\n\n<p><strong>Calculation:</strong></p>\n\n<p>Let $ A = \\begin{bmatrix}  2\\cos 2\\theta & 2\\cos 2\\theta & 6 \\\\  1 -2 \\sin^2 \\theta & 2 \\cos^2 \\theta -1 & 3 \\\\  k & 2k & 1  \\end{bmatrix} $</p>\n\n<p>Using the trigonometric identities, the matrix simplifies to:</p>\n\n<p>$ A = \\begin{bmatrix}  2\\cos 2\\theta & 2\\cos 2\\theta & 6 \\\\  \\cos 2\\theta & \\cos 2\\theta & 3 \\\\  k & 2k & 1  \\end{bmatrix} $</p>\n\n<p>We factor out a 2 from the first row:</p>\n\n<p>$ A = 2 \\begin{bmatrix}  \\cos 2\\theta & \\cos 2\\theta & 3 \\\\  \\cos 2\\theta & \\cos 2\\theta & 3 \\\\  k & 2k & 1  \\end{bmatrix} $</p>\n\n<p>Notice that $ R_1 $ and $ R_2 $ (the first and second rows) are identical.</p>\n\n<p>Therefore, the determinant of $ A $ is zero:</p>\n\n<p>$ \\Rightarrow |A| = 0 $</p>\n\n<p><strong>Therefore, the matrix is singular for any real value of $ k $.</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tllz3lin6g",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p style=\"\">Consider the determinant</p>\n\n<p style=\"\">Δ =&nbsp;<span class=\"math-tex\">$\\left|\\begin{array}{lll}\\text{a}_{11} &amp; \\text{a}_{12} &amp; \\text{a}_{13} \\\\ \\text{a}_{21} &amp; \\text{a}_{22} &amp; \\text{a}_{23} \\\\ \\text{a}_{31} &amp; \\text{a}_{32} &amp; \\text{a}_{33}\\end{array}\\right|$</span></p>\n\n<p style=\"\">If a<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">13</span>&nbsp;= yz, a<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">23</span>&nbsp;= zx, a<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">33</span>&nbsp;= xy and the minors of a<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">13</span>, a<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">23</span>, a<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">33</span>&nbsp;are respectively (z − y), (z − x), (y − x) then what is the value of&nbsp;Δ&nbsp;?</p>\n",
+      "options": [
+        "(z − y) (z − x) (y − x)",
+        "(x − y) (y − z) (x − z)",
+        "(x − y) (z − x) (y − z) (x + y + z)",
+        "(xy + yz + zx) (x + y + z)"
+      ],
+      "correctOption": 0,
+      "solution": "<ol>\n<li>Expansion of Δ along the third column  </li>\n</ol>\n<p>$$ Δ \\;=\\; a_{13}C_{13}\\;+\\;a_{23}C_{23}\\;+\\;a_{33}C_{33}, $$  </p>\n<p>where $C_{i3}=(-1)^{i+3}M_{i3}$.</p>\n<ol start=\"2\">\n<li>Cofactors  </li>\n</ol>\n<p>– $C_{13}=(-1)^{1+3}M_{13}=+M_{13}=z-y$  </p>\n<p>– $C_{23}=(-1)^{2+3}M_{23}=-\\,M_{23}=-(z-x)=x-z$  </p>\n<p>– $C_{33}=(-1)^{3+3}M_{33}=+M_{33}=y-x$</p>\n<ol start=\"3\">\n<li>Substitute  </li>\n</ol>\n<p>$$ Δ \\;=\\;yz\\,(z-y)\\;+\\;zx\\,(x-z)\\;+\\;xy\\,(y-x). $$</p>\n<ol start=\"4\">\n<li>Expand and collect terms  </li>\n</ol>\n<p>$$ \\begin{aligned} Δ &=y z^2 -y^2 z \\;+\\;z x^2 -z^2 x\\;+\\;x y^2 -x^2 y\\\\ &=x y^2 +y z^2 +z x^2 \\;-\\;(x^2 y +y^2 z +z^2 x)\\\\ &=(x - y)(y - z)(z - x). \\end{aligned} $$</p>\n<ol start=\"5\">\n<li>Observe  </li>\n</ol>\n<p>$$ (x - y)(y - z)(z - x) \\;=\\;(z - y)(z - x)(y - x), $$  </p>\n<p>so Δ matches Option A.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlmnk0kpfm",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The system of equations 15y - 10x + 50 = 0, 2x - 3y - 5 = 0",
+      "options": [
+        "has a unique solution",
+        "has infinitely many solutions",
+        "is inconsistent",
+        "is consistent and has exactly two solutions"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Write the equations in standard form:</p>\n<p>$$-10x + 15y + 50 = 0$$</p>\n<p>$$2x - 3y - 5 = 0$$</p>\n<p>Now compare the coefficients:</p>\n<p>For the first equation,</p>\n<p>$$a_1 = -10,\\quad b_1 = 15,\\quad c_1 = 50$$</p>\n<p>For the second equation,</p>\n<p>$$a_2 = 2,\\quad b_2 = -3,\\quad c_2 = -5$$</p>\n<p>Now find the ratios:</p>\n<p>$$\\frac{a_1}{a_2} = \\frac{-10}{2} = -5$$</p>\n<p>$$\\frac{b_1}{b_2} = \\frac{15}{-3} = -5$$</p>\n<p>$$\\frac{c_1}{c_2} = \\frac{50}{-5} = -10$$</p>\n<p>So,</p>\n<p>$$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\ne \\frac{c_1}{c_2}$$</p>\n<p>By NCERT rule:</p>\n<ul>\n<li><p>if $$\\frac{a_1}{a_2} \\ne \\frac{b_1}{b_2}$$, the pair has a unique solution</p></li>\n<li><p>if $$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$$, the pair has infinitely many solutions</p></li>\n<li><p>if $$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\ne \\frac{c_1}{c_2}$$, the pair is inconsistent</p></li>\n</ul>\n<p>Here the third case happens.</p>\n<p>So, the system of equations is inconsistent.</p>\n<p>Therefore, the correct answer is:</p>\n<p>$$\\boxed{\\text{Option 3: is inconsistent}}$$</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlmnk0kpj5",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following statements:</p>\n\n<p>Statement-l: If X is an nn matrix, then det(mX) = <span class=\"math-tex\">$m ^ n$</span> det(X), where m is a scalar.</p>\n\n<p>Statement-II: If Y is a matrix obtained from X by multiplying any row or column by a scalar m, then det (Y) = m det (X).</p>\n\n<p>Which one of the following is correct in respect of the above statements?</p>\n",
+      "options": [
+        "Both Statement-1 and Statement-II are correct and Statement-II explains Statement-I",
+        "&nbsp;Both Statement-I and Statement-II are correct but Statement-II does not explain Statement-1",
+        "Statement-I is correct but Statement-II is not correct",
+        "&nbsp;Statement-I is not correct but Statement-II is correct"
+      ],
+      "correctOption": 0,
+      "solution": "<p>For an $n \\times n$ matrix $X$, let us check both statements carefully.</p>\n<h3>Statement-I</h3>\n<p>It says:</p>\n<p>$$ \\det(mX) = m^n \\det(X) $$</p>\n<p>where $m$ is a scalar.</p>\n<p>This is correct.</p>\n<p>Reason: In the matrix $mX$, every row of $X$ is multiplied by $m$.  </p>\n<p>Now, by the property of determinants, if one row is multiplied by $m$, the determinant also gets multiplied by $m$.</p>\n<p>Since there are $n$ rows in an $n \\times n$ matrix, multiplying all $n$ rows by $m$ gives:</p>\n<p>$$ \\det(mX) = m \\cdot m \\cdot \\ldots \\cdot m \\det(X) = m^n \\det(X) $$</p>\n<p>So, Statement-I is true.</p>\n\n<h3>Statement-II</h3>\n<p>It says:</p>\n<p>If $Y$ is obtained from $X$ by multiplying any one row or any one column by a scalar $m$, then</p>\n<p>$$ \\det(Y) = m \\det(X) $$</p>\n<p>This is also correct.</p>\n<p>This is a standard property of determinants:</p>\n<ul>\n<li><p>multiplying one row by $m$ multiplies the determinant by $m$,</p></li>\n<li><p>similarly, multiplying one column by $m$ also multiplies the determinant by $m$.</p></li>\n</ul>\n<p>So, Statement-II is true.</p>\n\n<h3>Does Statement-II explain Statement-I?</h3>\n<p>Yes.</p>\n<p>Statement-I follows directly from Statement-II applied repeatedly to all $n$ rows of the matrix.</p>\n<p>Since $mX$ is obtained by multiplying each row of $X$ by $m$, using Statement-II $n$ times gives:</p>\n<p>$$ \\det(mX) = m^n \\det(X) $$</p>\n<p>Hence, Statement-II explains Statement-I.</p>\n\n<h3>Correct option:</h3>\n<p>$$ \\boxed{\\text{Option 1}} $$</p>\n<p>Both Statement-I and Statement-II are correct and Statement-II explains Statement-I.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tllxlrvu90",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The function attains local minimum value at :",
+      "options": [
+        "<span class=\"math-tex\">${x}=-\\frac{28}{3}$</span>",
+        "x = -1",
+        "x = 0",
+        "<span class=\"math-tex\">${x}=\\frac{28}{3}$</span>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>The function is defined by</p>\n<p>$$ f(x) = \\left|\\begin{array}{ccc} x+1 & 2 & 3 \\\\ 2 & x+4 & 6 \\\\ 3 & 6 & x+9 \\end{array}\\right| $$</p>\n<p>To find the local minimum of the determinant of this matrix, calculate the determinant:</p>\n<p>$$ \\begin{vmatrix} x+1 & 2 & 3 \\\\ 2 & x+4 & 6 \\\\ 3 & 6 & x+9 \\end{vmatrix} $$</p>\n<p>Using cofactor expansion along the first row:</p>\n<p>$$ f(x) = (x+1) \\begin{vmatrix} x+4 & 6 \\\\ 6 & x+9 \\end{vmatrix} - 2 \\begin{vmatrix} 2 & 6 \\\\ 3 & x+9 \\end{vmatrix} + 3 \\begin{vmatrix} 2 & x+4 \\\\ 3 & 6 \\end{vmatrix} $$</p>\n<p>Calculating the minors:</p>\n<p>$$ \\begin{vmatrix} x+4 & 6 \\\\ 6 & x+9 \\end{vmatrix} = (x+4)(x+9) - 36 = x^2 + 13x + 36 - 36 = x^2 + 13x $$</p>\n<p>$$ \\begin{vmatrix} 2 & 6 \\\\ 3 & x+9 \\end{vmatrix} = 2(x+9) - 18 = 2x + 18 - 18 = 2x $$</p>\n<p>$$ \\begin{vmatrix} 2 & x+4 \\\\ 3 & 6 \\end{vmatrix} = 2(6) - 3(x+4) = 12 - 3x - 12 = -3x $$</p>\n<p>Substitute these results back into the cofactor expansion:</p>\n<p>$$ f(x) = (x+1)(x^2 + 13x) - 2(2x) + 3(-3x) $$</p>\n<p>Simplify:</p>\n<p>$$ f(x) = (x^3 + 13x^2 + x^2 + 13x) - 4x - 9x = x^3 + 14x^2 + 13x - 13x = x^3 + 14x^2 $$</p>\n<p>Now, solving for the critical points:</p>\n<p>$$ f'(x) = 3x^2 + 28x $$</p>\n<p>Set the derivative to zero:</p>\n<p>$$ 3x^2 + 28x = 0 $$</p>\n<p>Factorize:</p>\n<p>$$ x(3x + 28) = 0 $$</p>\n<p>So,</p>\n<p>$$ x = 0 \\quad \\text{or} \\quad x = -\\frac{28}{3} $$</p>\n<p>To determine which critical point is a local minimum, perform the second derivative test:</p>\n<p>$$ f''(x) = 6x + 28 $$</p>\n<p>Evaluate the second derivative at the critical points:</p>\n<p>For $ x = 0 $:</p>\n<p>$$ f''(0) = 28 > 0 \\quad \\text{(local minimum)} $$</p>\n<p>For $ x = -\\frac{28}{3} $:</p>\n<p>$$ f''\\left(-\\frac{28}{3}\\right) = -\\frac{168}{3} + 28 = -56 < 0 \\quad \\text{(local maximum)} $$</p>\n<p>Thus, the function attains its local minimum value at $ x = 0 $. Therefore, the correct option is:</p>\n<p><strong>Option C: x = 0</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "m6oqwkal",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If inverse of matrix $\\left[\\begin{array}{ccc}7 & -3 & -3 \\\\ -1 & 1 & 0 \\\\ -1 & 0 & 1\\end{array}\\right]$ is the matrix $\\left[\\begin{array}{lll}1 & 3 & 3 \\\\ 1 & \\lambda & 3 \\\\ 1 & 3 & 4\\end{array}\\right]$ then value of $\\lambda$ is</p>",
+      "options": [
+        "$-$4",
+        "1",
+        "3",
+        "4"
+      ],
+      "correctOption": 3,
+      "solution": "<p>Given,</p>\n<p>$$A=\\left[\\begin{array}{ccc}\n7 & -3 & -3 \\\\\n-1 & 1 & 0 \\\\\n-1 & 0 & 1\n\\end{array}\\right]$$</p>\n<p>and $$A^{-1}=\\left[\\begin{array}{lll}\n1 & 3 & 3 \\\\\n1 & \\lambda & 3 \\\\\n1 & 3 & 4\n\\end{array}\\right]$$</p>\n<p>Since, $A A^{-1}=I$</p>\n<p>$$\\begin{aligned}\n& \\therefore\\left[\\begin{array}{ccc}\n7 & -3 & -3 \\\\\n-1 & 1 & 0 \\\\\n-1 & 0 & 1\n\\end{array}\\right]\\left[\\begin{array}{lll}\n1 & 3 & 3 \\\\\n1 & \\lambda & 3 \\\\\n1 & 3 & 4\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 0\n\\end{array}\\right] \\\\\n& {\\left[\\begin{array}{ccc}\n1 & 12-3 \\lambda & 0 \\\\\n0 & -3+\\lambda & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]}\n\\end{aligned}$$</p>\n<p>On comparing matrices, we get</p>\n<p>$$\\begin{aligned}\n& 12-3 \\lambda=0 \\text { and }-3+\\lambda=1 \\\\\n& \\Rightarrow \\lambda=4 \\text { and } \\lambda=4\n\\end{aligned}$$</p>",
+      "marks": 1,
+      "negativeMarks": -1,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlm69mp454",
+      "questionNumber": 16,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If the determinant&nbsp;<span class=\"math-tex\">$\\left| {\\begin{array}{*{20}{c}} x&amp;1&amp;3\\\\ 0&amp;0&amp;1\\\\ 1&amp;x&amp;4 \\end{array}} \\right| = 0$</span>&nbsp;then what is x equal to?</p>\n",
+      "options": [
+        "02 or 2",
+        "-3 or 3",
+        "-1 or 1",
+        "3 or 4"
+      ],
+      "correctOption": 2,
+      "solution": "<p>To find the value of  <em>x</em>, we need to compute the determinant and solve the resulting equation. The determinant of a 3x3 matrix $$ \\begin{vmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{vmatrix} $$ is calculated as:  $$ a(ei - fh) - b(di - fg) + c(dh - eg) $$</p>\n<p>Applying this to the given matrix:</p>\n<p>$$ \\begin{vmatrix} x & 1 & 3 \\\\ 0 & 0 & 1 \\\\ 1 & x & 4 \\end{vmatrix} = x(0 \\times 4 - 1 \\times x) - 1(0 \\times 4 - 1 \\times 1) + 3(0 \\times x - 0 \\times 1) = 0 $$</p>\n<p>Simplifying the expression:</p>\n<p>$$ x(0 - x) - 1(0 - 1) + 3(0 - 0) = 0 $$</p>\n<p>$$ -x^2 + 1 = 0 $$</p>\n<p>$$ x^2 = 1 $$</p>\n<p>$$ x = \\pm \\sqrt{1} $$</p>\n<p>$$ x = \\pm 1 $$</p>\n<p>Therefore, the values of <em>x</em> are 1 and -1.</p>\n<p><strong>Correct Option: C</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tllxlrvtzk",
+      "questionNumber": 17,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If <span class=\"math-tex\">$A_k=\\left[\\begin{array}{cc} k-1 &amp; k \\\\ k-2 &amp; k+1 \\end{array}\\right] $</span>,&nbsp;then what is&nbsp;det(A<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">1</span>) + det(A<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">2</span>) + det(A<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">3</span>) + ... + det(A<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">100</span>)&nbsp;equal to ?",
+      "options": [
+        "100",
+        "1000",
+        "9900",
+        "10000"
+      ],
+      "correctOption": 3,
+      "solution": "<ol>\n<li><p>For each $k$,  </p>\n<p>$      A_k=\\begin{pmatrix}k-1 & k\\\\[6pt]k-2 & k+1\\end{pmatrix}.    $  </p>\n<p>Its determinant is  </p>\n<p>$      \\det(A_k)=(k-1)(k+1)-k(k-2).    $  </p></li>\n<li><p>Expand and simplify:  </p>\n<p>$      (k-1)(k+1)=k^2-1,\\quad k(k-2)=k^2-2k,    $  </p>\n<p>so  </p>\n<p>$      \\det(A_k)=\\bigl(k^2-1\\bigr)-\\bigl(k^2-2k\\bigr)                 =k^2-1-k^2+2k                 =2k-1.    $  </p></li>\n<li><p>We need  </p>\n<p>$      S=\\sum_{k=1}^{100}\\det(A_k)        =\\sum_{k=1}^{100}(2k-1).    $  </p></li>\n<li><p>Note $\\sum_{k=1}^{100}(2k-1)$ is the sum of the first 100 odd numbers, which equals $100^2=10000$.  </p>\n<p>Alternatively,  </p>\n<p>$      \\sum_{k=1}^{100}(2k-1)=2\\sum_{k=1}^{100}k-\\sum_{k=1}^{100}1                               =2\\cdot\\frac{100\\cdot101}{2}-100                               =100\\cdot101-100                               =10100-100                               =10000.    $  </p></li>\n</ol>\n<p>Answer: 10000  (Option D)</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "lwv447nj",
+      "questionNumber": 18,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If $a, b, c$ are the sides of a triangle $ABC$, then what is $$ \\begin{vmatrix} a^2 & b \\sin A & c \\sin A \\\\ b \\sin A & 1 & \\cos A \\\\ c \\sin A & \\cos A & 1 \\end{vmatrix}$$ equal to?</p>",
+      "options": [
+        "<p>Zero</p>",
+        "<p>Area of triangle</p>",
+        "<p>Perimeter of triangle</p>",
+        "<p>$a^2 + b^2 + c^2$</p>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>To solve the given determinant, we will first write it down clearly and then proceed step-by-step to find its value. The determinant in question is:</p>\n\n<p>$$ \\begin{vmatrix}  a^2 & b \\sin A & c \\sin A \\\\  b \\sin A & 1 & \\cos A \\\\  c \\sin A & \\cos A & 1  \\end{vmatrix} $$</p>\n\n<p>Let's denote this determinant as $$D$$ for simplicity:</p>\n\n<p>$$ D = \\begin{vmatrix}  a^2 & b \\sin A & c \\sin A \\\\  b \\sin A & 1 & \\cos A \\\\  c \\sin A & \\cos A & 1  \\end{vmatrix} $$</p>\n\n<p>To evaluate this determinant, we can use cofactor expansion along the first row:</p>\n\n<p>$$ D = a^2 \\begin{vmatrix}  1 & \\cos A \\\\  \\cos A & 1  \\end{vmatrix} - b \\sin A \\begin{vmatrix}  b \\sin A & \\cos A \\\\  c \\sin A & 1  \\end{vmatrix} + c \\sin A \\begin{vmatrix}  b \\sin A & 1 \\\\  c \\sin A & \\cos A  \\end{vmatrix} $$</p>\n\n<p>The 2x2 determinants are as follows:</p>\n\n<p>$$ \\begin{vmatrix}  1 & \\cos A \\\\  \\cos A & 1  \\end{vmatrix} = 1 \\cdot 1 - \\cos A \\cdot \\cos A = 1 - \\cos^2 A = \\sin^2 A $$</p>\n\n<p>$$ \\begin{vmatrix}  b \\sin A & \\cos A \\\\  c \\sin A & 1  \\end{vmatrix} = b \\sin A \\cdot 1 - \\cos A \\cdot c \\sin A = b \\sin A - c \\sin A \\cos A $$</p>\n\n<p>$$ \\begin{vmatrix}  b \\sin A & 1 \\\\  c \\sin A & \\cos A  \\end{vmatrix} = b \\sin A \\cos A - 1 \\cdot c \\sin A = b \\sin A \\cos A - c \\sin A $$</p>\n\n<p>Now, substituting these back into the determinant:</p>\n\n<p>$$ D = a^2 \\sin^2 A - b \\sin A (b \\sin A - c \\sin A \\cos A) + c \\sin A (b \\sin A \\cos A - c \\sin A) $$</p>\n\n<p>$$ D = a^2 \\sin^2 A - b^2 \\sin^2 A + bc \\sin^2 A \\cos A + bc \\sin^2 A \\cos A - c^2 \\sin^2 A $$</p>\n\n<p>$$ D = \\sin^2 A (a^2 - b^2 + 2bc \\cos A - c^2) $$</p>\n\n<p>Given that $$ a, b, c $$ are the sides of a triangle and $$ A $$ is an angle, we know that:</p>\n\n<p>$$ b^2 + c^2 - 2bc \\cos A = a^2 $$</p>\n\n<p>Thus, substituting this in, we get:</p>\n\n<p>$$ D = \\sin^2 A (a^2 - b^2 + 2bc \\cos A - c^2) $$</p>\n\n<p>$$ D = \\sin^2 A (a^2 - (b^2 + c^2 - 2bc \\cos A)) $$</p>\n\n<p>$$ D = \\sin^2 A (a^2 - a^2) = \\sin^2 A \\cdot 0 = 0 $$</p>\n\n<p>Therefore, the value of the determinant is 0.</p>\n\n<p><b>Option A: Zero</b></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlme8nbcf0",
+      "questionNumber": 19,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If&nbsp;<span class=\"math-tex\">$ \\begin{vmatrix} 2 &amp; 3+i &amp; -1 \\\\ 3-i &amp; 0 &amp; i -1 \\\\ -1 &amp;-1 -i &amp; 1 \\end{vmatrix} = A + iB $</span></p>\n\n<p>where <span class=\"katex\"><span class=\"mord mathnormal\">i</span><span class=\"mrel\">=&nbsp;<span class=\"math-tex\">$\\sqrt{-1}$</span></span></span>&nbsp;,&nbsp; then what is A+B equal to?</p>\n",
+      "options": [
+        "-10",
+        "-6",
+        "0",
+        "6"
+      ],
+      "correctOption": 1,
+      "solution": "<ol>\n<li><p>Det $D = \\begin{vmatrix}2 & 3+i & -1\\\\[6pt]3-i & 0 & i-1\\\\[3pt]-1 & -1-i & 1\\end{vmatrix}$  </p></li>\n<li><p>Expand along the first row:  </p>\n<p>$$    D = 2\\begin{vmatrix}0 & i-1\\\\-1-i & 1\\end{vmatrix}        -\\,(3+i)\\begin{vmatrix}3-i & i-1\\\\-1 & 1\\end{vmatrix}        +(-1)\\begin{vmatrix}3-i & 0\\\\-1 & -1-i\\end{vmatrix}.    $$</p></li>\n<li><p>Compute each $2\\times2$ minor:  </p>\n<p>a) $M_{11}=\\begin{vmatrix}0 & i-1\\\\-1-i & 1\\end{vmatrix}      =0\\cdot1-(i-1)(-1-i)      =-[(i-1)(-1-i)]      =-2.$  </p>\n<p>b) $M_{12}=\\begin{vmatrix}3-i & i-1\\\\-1 & 1\\end{vmatrix}      =(3-i)\\cdot1-(i-1)(-1)      =3-i+i-1      =2.$  </p>\n<p>c) $M_{13}=\\begin{vmatrix}3-i & 0\\\\-1 & -1-i\\end{vmatrix}      =(3-i)(-1-i)-0      =-4-2i.$  </p></li>\n<li><p>Substitute back:  </p>\n<p>$$    D=2\\cdot(-2)\\;-\\;(3+i)\\cdot2\\;+\\;(-1)\\cdot(-4-2i)      =-4\\;-\\;2(3+i)\\;+\\;(4+2i)      =-4-6-2i+4+2i      =-6.    $$</p></li>\n<li><p>Hence $D=A+iB=-6+0\\cdot i$, so $A=-6,\\;B=0$ and  </p>\n<p>$$    A+B=-6+0=-6.    $$</p></li>\n</ol>\n<p>Answer: –6.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tllxlrvtya",
+      "questionNumber": 20,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If&nbsp;<span class=\"math-tex\">$\\left|\\begin{array}{ccc} x^2+3 x &amp; x-1 &amp; x+3 \\\\ x+1 &amp; -2 x &amp; x-4 \\\\ x-3 &amp; x+4 &amp; 3 x \\end{array}\\right|$</span>&nbsp;=&nbsp;ax<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">4</span>&nbsp;+ bx<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">3</span>&nbsp;+ cx<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">2</span>&nbsp;+ dx + e,&nbsp;then what is the value of e?\"",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctOption": 1,
+      "solution": "<p>To find the value of $ e $ in the given determinant expansion:</p>\n<p>$ \\left|\\begin{array}{ccc} x^2 + 3x & x - 1 & x + 3 \\\\ x + 1 & -2x & x - 4 \\\\ x - 3 & x + 4 & 3x \\end{array}\\right| = ax^4 + bx^3 + cx^2 + dx + e $</p>\n<p><strong>Step 1: Compute the Determinant</strong></p>\n<p>We will expand the determinant using the method of cofactors.</p>\n<p><strong>Compute the minors:</strong></p>\n\n<p><strong>Minor $ M_{11} $:</strong></p>\n\n<p>$ M_{11} = \\left|\\begin{array}{cc} -2x & x - 4 \\\\ x + 4 & 3x \\end{array}\\right| = (-2x)(3x) - (x - 4)(x + 4) = -6x^2 - (x^2 - 16) = -7x^2 + 16 $</p>\n<ol start=\"2\">\n<p><strong>Minor $ M_{12} $:</strong></p>\n\n<p>$ M_{12} = \\left|\\begin{array}{cc} x + 1 & x - 4 \\\\ x - 3 & 3x \\end{array}\\right| = (x + 1)(3x) - (x - 4)(x - 3) = (3x^2 + 3x) - (x^2 - 7x + 12) = 2x^2 + 10x - 12 $</p>\n<ol start=\"3\">\n<p><strong>Minor $ M_{13} $:</strong></p>\n\n<p>$ M_{13} = \\left|\\begin{array}{cc} x + 1 & -2x \\\\ x - 3 & x + 4 \\end{array}\\right| = (x + 1)(x + 4) - (-2x)(x - 3) = (x^2 + 5x + 4) + (2x^2 - 6x) = 3x^2 - x + 4 $</p>\n<p><strong>Step 2: Expand the Determinant</strong></p>\n<p>$ D = (x^2 + 3x)(-7x^2 + 16) - (x - 1)(2x^2 + 10x - 12) + (x + 3)(3x^2 - x + 4) $</p>\n<p><strong>Compute each term:</strong></p>\n\n<p><strong>First Term:</strong></p>\n\n<p>$ (x^2 + 3x)(-7x^2 + 16) = -7x^4 - 21x^3 + 16x^2 + 48x $</p>\n<ol start=\"2\">\n<p><strong>Second Term:</strong></p>\n\n<p>$ - (x - 1)(2x^2 + 10x - 12) = - [2x^3 + 8x^2 - 22x + 12] = -2x^3 - 8x^2 + 22x - 12 $</p>\n<ol start=\"3\">\n<p><strong>Third Term:</strong></p>\n\n<p>$ (x + 3)(3x^2 - x + 4) = 3x^3 + 8x^2 + x + 12 $</p>\n<p><strong>Step 3: Combine Like Terms</strong></p>\n<p>Add all the terms together:</p>\n<p>$ D = \\left( -7x^4 \\right) + \\left( -21x^3 - 2x^3 + 3x^3 \\right) + \\left( 16x^2 - 8x^2 + 8x^2 \\right) + \\left( 48x + 22x + x \\right) + \\left( -12 + 12 \\right) $</p>\n<p>Simplify:</p>\n\n<p><p>$ x^4 $ term: $ -7x^4 $</p></p>\n<p><p>$ x^3 $ terms: $ -20x^3 $</p></p>\n<p><p>$ x^2 $ terms: $ 16x^2 $</p></p>\n<p><p>$ x $ terms: $ 71x $</p></p>\n<p><p>Constant terms: $ 0 $</p></p>\n\n<p><strong>Final Expression:</strong></p>\n<p>$ D = -7x^4 - 20x^3 + 16x^2 + 71x $</p>\n<p><strong>Step 4: Identify the Value of $ e $</strong></p>\n<p>Since there is no constant term, $ e = 0 $.</p>\n<hr />\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{0}$</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlm69mp3sw",
+      "questionNumber": 21,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The element in the i<sup>th</sup> row and the j<sup>th</sup> column of a determinant of third order is equal to 2(i + j). What is the value of the determinant?",
+      "options": [
+        "0",
+        "2",
+        "4",
+        "6"
+      ],
+      "correctOption": 0,
+      "solution": "<p>To find the value of the determinant, first construct the matrix using the given formula for each element $ a_{ij} = 2(i + j) $.</p>\n<p>For a 3x3 matrix, the elements are:</p>\n\n<p><p>$ a_{11} = 2(1 + 1) = 4 $</p></p>\n<p><p>$ a_{12} = 2(1 + 2) = 6 $</p></p>\n<p><p>$ a_{13} = 2(1 + 3) = 8 $</p></p>\n<p><p>$ a_{21} = 2(2 + 1) = 6 $</p></p>\n<p><p>$ a_{22} = 2(2 + 2) = 8 $</p></p>\n<p><p>$ a_{23} = 2(2 + 3) = 10 $</p></p>\n<p><p>$ a_{31} = 2(3 + 1) = 8 $</p></p>\n<p><p>$ a_{32} = 2(3 + 2) = 10 $</p></p>\n<p><p>$ a_{33} = 2(3 + 3) = 12 $</p></p>\n\n<p>Thus, the matrix is:</p>\n<p>$  A = \\begin{bmatrix}  4 & 6 & 8 \\\\  6 & 8 & 10 \\\\  8 & 10 & 12  \\end{bmatrix}  $</p>\n<p>The determinant of a 3x3 matrix $ A = \\begin{bmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{bmatrix} $ is given by:</p>\n<p>$  \\text{det}(A) = a(ei - fh) - b(di - fg) + c(dh - eg)  $</p>\n<p>Applying this formula to our matrix:</p>\n<p>$  \\text{det}(A) = 4(8 \\times 12 - 10 \\times 10) - 6(6 \\times 12 - 10 \\times 8) + 8(6 \\times 10 - 8 \\times 8)  $</p>\n<p>Calculate each part separately:</p>\n\n<p><p>$ 8 \\times 12 - 10 \\times 10 = 96 - 100 = -4 $</p></p>\n<p><p>$ 6 \\times 12 - 10 \\times 8 = 72 - 80 = -8 $</p></p>\n<p><p>$ 6 \\times 10 - 8 \\times 8 = 60 - 64 = -4 $</p></p>\n\n<p>Plug these results back into the determinant formula:</p>\n<p>$  \\text{det}(A) = 4(-4) - 6(-8) + 8(-4)  $</p>\n<p>$  = -16 + 48 - 32  $</p>\n<p>$  = 0  $</p>\n<p>The value of the determinant is $0$. Thus, the correct answer is:</p>\n<p><strong>Option A: 0</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlm69mp49r",
+      "questionNumber": 22,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let&nbsp;<span class=\"math-tex\">$A = \\left| {\\begin{array}{*{20}{c}} p&amp;q\\\\ r&amp;s \\end{array}} \\right|$</span></p>\n\n<p>where p, q, r and s are any four different prime numbers less than 20. What is the maximum value of the determinant?</p>\n",
+      "options": [
+        "215",
+        "311",
+        "317",
+        "323"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Choosing the prime numbers less than 20, which are 2, 3, 5, 7, 11, 13, 17, and 19, we need to maximize the determinant of the matrix:</p>\n<p>$$ A = \\begin{vmatrix} p & q \\\\ r & s \\end{vmatrix} $$</p>\n<p>The formula for the determinant of a 2x2 matrix is:</p>\n<p>$$ \\text{det}(A) = ps - qr $$</p>\n<p>To maximize this value, consider the pairs $ (p, s) $ and $ (q, r) $ where $ p, q, r, s $ are four different primes from the list above. We aim to maximize the difference $ ps - qr $.</p>\n<p>One optimal choice is:</p>\n\n<p><p>$ p = 19 $</p></p>\n<p><p>$ s = 17 $</p></p>\n<p><p>$ q = 2 $</p></p>\n<p><p>$ r = 3 $</p></p>\n\n<p>Substitute these values into the determinant formula:</p>\n<p>$$ ps = 19 \\times 17 = 323 $$</p>\n<p>$$ qr = 2 \\times 3 = 6 $$</p>\n<p>Thus, the determinant becomes:</p>\n<p>$$ \\text{det}(A) = 323 - 6 = 317 $$</p>\n<p>Therefore, the maximum value of the determinant is 317. This corresponds to:</p>\n<p><strong>Option C: 317</strong>.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tllz3lindm",
+      "questionNumber": 23,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p style=\"\">What is the value of a<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">11</span>C<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">11</span>&nbsp;+ a<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">12</span>C<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">12</span>&nbsp;+ a<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">13</span>C<span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">13</span>&nbsp;?</p>\n",
+      "options": [
+        "<span style=\"\">0</span>",
+        "1",
+        "Δ",
+        "−Δ"
+      ],
+      "correctOption": 2,
+      "solution": "<ol>\n<li><p>For a $3\\times3$ matrix $A=\\bigl[a_{ij}\\bigr]$, the cofactor $C_{ij}$ is defined by  </p>\n<p>$$    C_{ij}=(-1)^{\\,i+j}\\,M_{ij},    $$  </p>\n<p>where $M_{ij}$ is the minor obtained by deleting the $i$-th row and $j$-th column.</p></li>\n<li><p>The determinant $\\Delta=\\det A$ can be expanded along the first row (Laplace’s expansion):  </p>\n<p>$$    \\Delta    =a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13}.    $$</p></li>\n<li><p>Hence  </p>\n<p>$$    a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13}=\\Delta.    $$</p></li>\n</ol>\n<p>Answer: $\\displaystyle \\Delta\\,$. (Option C)</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlm69msvw7",
+      "questionNumber": 24,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<span style=\"\">If&nbsp;</span><span class=\"math-tex\">$\\rm \\begin{vmatrix} a &amp; -b &amp; a - b - c\\\\ -a &amp; b &amp; -a + b - c\\\\ -a &amp; -b &amp; -a - b + c \\end{vmatrix} - kabc = 0$</span><span style=\"\">&nbsp;(a ≠ 0, b ≠ 0, c ≠ 0)then what is the value of k?</span>",
+      "options": [
+        "-4",
+        "-2",
+        "2",
+        "4"
+      ],
+      "correctOption": 0,
+      "solution": "<p>Given:</p>\n<p>$  \\begin{vmatrix}  a & -b & a - b - c \\\\  -a & b & -a + b - c \\\\  -a & -b & -a - b + c  \\end{vmatrix} = kabc  $</p>\n<p>Perform the row operation:</p>\n<p>$ R_2 \\rightarrow R_2 + R_1 $</p>\n<p>Resulting matrix:</p>\n<p>$  \\begin{vmatrix}  a & -b & a - b - c \\\\  0 & 0 & -2c \\\\  -a & -b & -a - b + c  \\end{vmatrix} = kabc  $</p>\n<p>Now, calculate the determinant:</p>\n<p>$  \\text{det} = a[-(-2c)(-b)] - (-b)[-(-2c)(-a)]  $</p>\n<p>Breaking it down further:</p>\n<p>$  -2abc - 2abc + (a - b - c) \\times 0 = kabc  $</p>\n<p>This simplifies to:</p>\n<p>$  -4abc = kabc  $</p>\n<p>Thus, solving for $ k $:</p>\n<p>$  k = -4  $</p>\n<p><strong>Therefore, the value of $ k $ is -4.</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Determinants"
+    },
+    {
+      "id": "tlmc33hjhu",
+      "questionNumber": 25,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If&nbsp;<span class=\"math-tex\">$\\rm z=\\frac{1}{3}\\begin{vmatrix}i&amp;2i&amp;1\\\\\\ 2i&amp;3i&amp;2\\\\\\ 3&amp;1&amp;3\\end{vmatrix}=x+iy;i=\\sqrt{-1}$</span>&nbsp;then what is modulus of Z equal to?&nbsp;&nbsp;",
+      "options": [
+        "1",
+        "√2",
+        "2",
+        "√3"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Let’s compute step by step:</p>\n\n<p><p>Expand the determinant by the first row:  </p>\n<p>$$\\det=\\;i\\begin{vmatrix}3i&2\\\\1&3\\end{vmatrix}    \\;-\\;2i\\begin{vmatrix}2i&2\\\\3&3\\end{vmatrix}    \\;+\\;1\\begin{vmatrix}2i&3i\\\\3&1\\end{vmatrix}$$</p></p>\n<p><p>Evaluate each 2×2 minor:  </p>\n<p>– For the first: $3i\\cdot3 - 2\\cdot1 = 9i -2$, so  </p>\n<p>$$i(9i-2)=9i^2-2i=-9-2i.$$  </p>\n<p>– For the second: $2i\\cdot3-2\\cdot3=6i-6$, so  </p>\n<p>$$-2i(6i-6)=-12i(i-1)=12+12i.$$  </p>\n<p>– For the third: $2i\\cdot1-3i\\cdot3=2i-9i=-7i.$  </p></p>\n<p><p>Sum them up:  </p>\n<p>$$\\det=(-9-2i)+(12+12i)+(-7i)=3+3i.$$</p></p>\n<p><p>Hence  </p>\n<p>$$z=\\frac{1}{3}(3+3i)=1+i,$$  </p>\n<p>and its modulus is  </p>\n<p>$$|z|=\\sqrt{1^2+1^2}=\\sqrt2.$$</p></p>\n\n<p>Answer: √2.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Determinants"
+    }
+  ]
+}

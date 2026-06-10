@@ -1,0 +1,290 @@
+{
+  "testId": "tst-19g71mp1gle5g",
+  "title": "Application of Derivatives Test - 1 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "1kteoog7u",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The number of distinct real roots of the equation 3x<sup>4</sup> + 4x<sup>3</sup> $$-$$ 12x<sup>2</sup> + 4 = 0 is _____________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "3x<sup>4</sup> + 4x<sup>3</sup> $$-$$ 12x<sup>2</sup> + 4 = 0<br><br>So, let f(x) = 3x<sup>4</sup> + 4x<sup>3</sup> $$-$$ 12x<sup>2</sup> + 4<br><br>$$\\therefore$$ f'(x) = 12x(x<sup>2</sup> + x $$-$$ 2)<br><br>= 12x (x + 2) (x $$-$$ 1)<br><br>$$ \\therefore $$ f'(x) = 12x<sup>3</sup> + 12x<sup>2</sup> – 24x = 12x(x + 2) (x – 1)\n<br><br>Points of extrema are at x = 0, –2, 1\n<br><br>f(0) = 4 \n<br><br>f(–2) = –28\n<br><br>f(1) = –1\n<br><br>So, 4 Real Roots\n<br><img src=\"https://imagex.cdn.examgoal.net/1ktquhv7s/59316dd6-223c-4470-92e4-17492a10fc8a/bdef1c80-1913-11ec-9e1c-4f8f7e7dad5b/file-1ktquhv7t.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th August Morning Shift Mathematics - Application of Derivatives Question 109 English Explanation\">",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "tlmnk0kpnn",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following statements:</p>\n\n<p>Statement-I: The function &nbsp;<span class=\"math-tex\">$f(x)=\\frac{x^{3}+128}{x}$</span>&nbsp;has a minimum value 48 at x = 4</p>\n\n<p>Statement-II: As x increases through 4, f'(x) changes sign from positive to negative.</p>\n\n<p>Which one of the following is correct in respect of the above statements?</p>\n",
+      "options": [
+        "Both Statement-I and Statement-II are correct and Statement-II explains Statement-I",
+        "&nbsp;Both Statement-I and Statement-II are correct but Statement-II does not explain Statement-I",
+        "&nbsp;Statement-I is correct but Statement-II is not correct",
+        "Statement-I is not correct but Statement-II is correct"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Given</p>\n<p>$$ f(x)=\\frac{x^3+128}{x}=x^2+\\frac{128}{x}, \\qquad x\\ne 0 $$</p>\n<p>We will check both statements.</p>\n<p>First, find the derivative:</p>\n<p>$$ f'(x)=\\frac{d}{dx}\\left(x^2+\\frac{128}{x}\\right) =2x-\\frac{128}{x^2} $$</p>\n<p>Now check at $x=4$:</p>\n<p>$$ f(4)=4^2+\\frac{128}{4}=16+32=48 $$</p>\n<p>So at $x=4$, the function value is indeed $48$.</p>\n<p>Now solve $f'(x)=0$:</p>\n<p>$$ 2x-\\frac{128}{x^2}=0 $$</p>\n<p>$$ 2x=\\frac{128}{x^2} $$</p>\n<p>$$ 2x^3=128 $$</p>\n<p>$$ x^3=64 $$</p>\n<p>$$ x=4 $$</p>\n<p>So $x=4$ is a critical point.</p>\n<p>Now check the sign of $f'(x)$ around $x=4$.</p>\n<ul>\n<li>For $x<4$, take $x=3$:</li>\n</ul>\n<p>$$ f'(3)=2(3)-\\frac{128}{9}=6-\\frac{128}{9}<0 $$</p>\n<ul>\n<li>For $x>4$, take $x=5$:</li>\n</ul>\n<p>$$ f'(5)=10-\\frac{128}{25}>0 $$</p>\n<p>So, as $x$ increases through $4$, $f'(x)$ changes from negative to positive, not from positive to negative.</p>\n<p>This means:</p>\n<ul>\n<li><p>$f(x)$ has a minimum at $x=4$</p></li>\n<li><p>minimum value is $48$</p></li>\n</ul>\n<p>Therefore, Statement-I is correct.</p>\n<p>But Statement-II is not correct.</p>\n<p>Hence, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 3}} $$</p>\n<p>Statement-I is correct but Statement-II is not correct.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "jaoe38c1lsfkgqg0",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The function $$f(x)=\\frac{x}{x^2-6 x-16}, x \\in \\mathbb{R}-\\{-2,8\\}$$</p>",
+      "options": [
+        "decreases in $$(-\\infty,-2) \\cup(-2,8) \\cup(8, \\infty)$$\n",
+        "increases in $$(-\\infty,-2) \\cup(-2,8) \\cup(8, \\infty)$$\n",
+        "decreases in $$(-2,8)$$ and increases in $$(-\\infty,-2) \\cup(8, \\infty)$$\n",
+        "decreases in $$(-\\infty,-2)$$ and increases in $$(8, \\infty)$$"
+      ],
+      "correctOption": 0,
+      "solution": "<p>$$f(x)=\\frac{x}{x^2-6 x-16}$$</p>\n<p>Now,</p>\n<p>$$\\begin{aligned}\n& \\mathrm{f}^{\\prime}(\\mathrm{x})=\\frac{-\\left(\\mathrm{x}^2+16\\right)}{\\left(\\mathrm{x}^2-6 \\mathrm{x}-16\\right)^2} \\\\\n& \\mathrm{f}^{\\prime}(\\mathrm{x})<0\n\\end{aligned}$$</p>\n<p>Thus $$f(x)$$ is decreasing in</p>\n<p>$$(-\\infty,-2) \\cup(-2,8) \\cup(8, \\infty)$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "WIZrag7XacI8iKDxjV1klrk8szp",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "For which of the following curves, the line $$x + \\sqrt 3 y = 2\\sqrt 3 $$ is the tangent at the point $$\\left( {{{3\\sqrt 3 } \\over 2},{1 \\over 2}} \\right)$$?",
+      "options": [
+        "$$2{x^2} - 18{y^2} = 9$$",
+        "$${y^2} = {1 \\over {6\\sqrt 3 }}x$$",
+        "$${x^2} + 9{y^2} = 9$$",
+        "$${x^2} + {y^2} = 7$$"
+      ],
+      "correctOption": 2,
+      "solution": "Tangent to $${x^2} + 9{y^2} = 9$$ at \n<br><br>point $$\\left( {{{3\\sqrt 3 } \\over 2},{1 \\over 2}} \\right)$$ is $$x\\left( {{{3\\sqrt 3 } \\over 2}} \\right) + 9y\\left( {{1 \\over 2}} \\right) = 9$$<br><br>$$3\\sqrt 3 x + 9y = 18 \\Rightarrow x + \\sqrt 3 y = 2\\sqrt 3 $$<br><br>$$ \\Rightarrow $$ option (1) is true.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "jaoe38c1lram3n3p",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The derivative of $$x^{2 x}$$ w.r.t. $$x$$ is:</p>",
+      "options": [
+        "$$x^{2 x-1}$$\n",
+        "$$2 x^{2 x} \\log x$$\n",
+        "$$2 x^{2 x}(1+\\log x)$$\n",
+        "$$2 x^{2 x}(1-\\log x)$$"
+      ],
+      "correctOption": 2,
+      "solution": "<p>To find the derivative of $$x^{2 x}$$ with respect to $$x$$, we use the logarithmic differentiation technique due to the variable exponents. Let's define the function as $$y = x^{2x}$$ and then differentiate both sides with respect to $$x$$.</p>\n\n<p>First, we take the natural logarithm of both sides to simplify differentiation:</p>\n$$\\ln{y} = \\ln{(x^{2x})}$$\n\n<p>Using properties of logarithms, we can simplify the right hand side:</p>\n$$\\ln{y} = 2x\\ln{x}$$\n\n<p>Next, differentiate both sides with respect to $$x$$:</p>\n$$\\frac{1}{y}\\frac{dy}{dx} = 2\\ln{x} + 2x\\cdot\\frac{1}{x}$$\n\n<p>Simplifying gives us:</p>\n$$\\frac{1}{y}\\frac{dy}{dx} = 2\\ln{x} + 2$$\n\n<p>Remember that $$y = x^{2x}$$, so substituting back gives us:</p>\n$$\\frac{dy}{dx} = x^{2x}\\left(2\\ln{x} + 2\\right)$$\n\n<p>Therefore, the derivative of $$x^{2x}$$ with respect to $$x$$ is $$2x^{2x}(1 + \\log{x})$$.</p>\n<p>Thus, the correct answer is <strong>Option C</strong>: $$2x^{2x}(1+\\log{x})$$.</p>",
+      "marks": 1,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "U1DtFitPjt3mM5fLmUIkD",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The maximum volume (in cu.m) of the right circular cone having slant height 3 m is :",
+      "options": [
+        "2$$\\sqrt3$$$$\\pi $$",
+        "3$$\\sqrt3$$$$\\pi $$",
+        "6$$\\pi $$",
+        "$${4 \\over 3}\\pi $$"
+      ],
+      "correctOption": 0,
+      "solution": "<img src=\"https://imagex.cdn.examgoal.net/MAbzGgUMRziPVuIL2/BB4tBWt5hMp2H7JXTe2jbGgxJ2y6M/dGYf14mtu82vsx1M2giVrb/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th January Morning Slot Mathematics - Application of Derivatives Question 181 English Explanation\">\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;h = 3 cos$$\\theta $$\n<br><br>r = 3 sin$$\\theta $$\n<br><br>We know volume of right circular cone, \n<br><br>V = $${1 \\over 3}\\pi {r^2}h$$\n<br><br>= $${1 \\over 3}\\pi $$(3 sin$$\\theta $$)<sup>2</sup> 3 cos$$\\theta $$\n<br><br>= 9 $$\\pi $$ sin<sup>2</sup>$$\\theta $$ cos$$\\theta $$\n<br><br>For maximum or minimum value of volume, \n<br><br>$${{dv} \\over {d\\theta }}$$ = 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;(2sin$$\\theta $$ cos$$\\theta $$) cos$$\\theta $$ + 3sin<sup>2</sup>$$\\theta $$ .($$-$$ sin$$\\theta $$) = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;2 sin$$\\theta $$ cos<sup>2</sup>$$\\theta $$ $$-$$ sin<sup>3</sup>$$\\theta $$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;2 sin$$\\theta $$(1 $$-$$ sin<sup>2</sup>$$\\theta $$) $$-$$ sin<sup>3</sup> $$\\theta $$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;2 sin$$\\theta $$ $$-$$ 2 sin<sup>3</sup>$$\\theta $$ $$-$$ sin<sup>3</sup>$$\\theta $$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;3 sin<sup>3</sup>$$\\theta $$ = 2 sin$$\\theta $$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;sin<sup>2</sup>$$\\theta $$ = $${2 \\over 3}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;sin$$\\theta $$ = $$\\sqrt {{2 \\over 3}} $$\n<br><br>$${{{d^2}v} \\over {d{\\theta ^2}}}$$ = 2cos$$\\theta $$ $$-$$ 3(3sin$$\\theta $$ cos$$\\theta $$)\n<br><br>= 2 cos$$\\theta $$ $$-$$ 9 sin$$\\theta $$ cos$$\\theta $$\n<br><br>= 2 $$ \\times $$ $${1 \\over {\\sqrt 3 }}$$ $$-$$ 9 $$ \\times $$ $${{\\sqrt 2 } \\over {\\sqrt 3 }}$$ $$ \\times $$ $${1 \\over {\\sqrt 3 }}$$\n<br><br>= $${2 \\over {\\sqrt 3 }} - 3\\sqrt 2 \\, &lt; 0$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Volume is maximum \n<br><br>when sin$$\\theta $$ = $$\\sqrt {{2 \\over 3}} $$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Maximum volume is \n<br><br>= 9 $$\\pi $$ $${\\left( {\\sqrt {{2 \\over 3}} } \\right)^2} \\times {1 \\over {\\sqrt 3 }}$$\n<br><br>= 9 $$\\pi $$ $$ \\times $$ $${2 \\over 3} \\times {1 \\over {\\sqrt 3 }}$$\n<br><br>= $$2\\sqrt 3 \\,\\pi $$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "7xmtfPK7UFAAvV0N",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The normal to the curve x = a(1 + cos $$\\theta $$), $$y = a\\sin \\theta $$ at $$'\\theta '$$ always passes through the fixed point",
+      "options": [
+        "$$(a, a)$$ ",
+        "$$(0, a)$$ ",
+        "$$(0, 0)$$ ",
+        "$$(a, 0)$$ "
+      ],
+      "correctOption": 3,
+      "solution": "$${{dx} \\over {d\\theta }} =  - a\\sin \\theta $$ and $${{dy} \\over {d\\theta }} = a\\cos \\theta $$\n<br><br>$$\\therefore$$ $${{dy} \\over {dx}} =  - \\cot \\theta .$$\n<br><br>$$\\therefore$$ The slope of the normal at $$\\theta  $$ = $$ - {1 \\over { - \\cot \\theta }}$$$$= \\tan \\theta $$\n<br><br>$$\\therefore$$ The equation of the normal at $$\\theta $$ is\n<br><br>$$y - a\\sin \\theta  = \\tan \\theta \\left( {x - a - a\\cos \\theta } \\right)$$\n<br><br>$$ \\Rightarrow $$ $$y - a\\sin \\theta  =$$ $${{\\sin \\theta } \\over {\\cos \\theta }}$$ $$\\left( {x - a - a\\cos \\theta } \\right)$$\n<br><br>$$ \\Rightarrow y\\cos \\theta  - a\\sin \\theta \\cos \\theta $$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$ = x\\sin \\theta  - a\\sin \\theta  - a\\sin \\theta \\cos \\theta $$\n<br><br>$$ \\Rightarrow x\\sin \\theta  - y\\cos \\theta  = a\\sin \\theta $$\n<br><br>$$ \\Rightarrow y = \\left( {x - a} \\right)\\tan \\theta $$\n<br><br>which always passes through $$(a, 0)$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "bsO11rG2h8VURkIcQKDH2",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If S<sub>1</sub> and S<sub>2</sub> are respectively the sets of local\nminimum and local maximum points of the function, \n<br><br>ƒ(x) = 9x<sup>4</sup> + 12x<sup>3</sup> – 36x<sup>2</sup> + 25, x $$ \\in $$ R,\nthen :",
+      "options": [
+        "S<sub>1</sub> = {–1}; S<sub>2</sub> = {0, 2}",
+        "S<sub>1</sub> = {–2}; S<sub>2</sub> = {0, 1}",
+        "S<sub>1</sub> = {–2, 0}; S<sub>2</sub> = {1}",
+        "S<sub>1</sub> = {–2, 1}; S<sub>2</sub> = {0}"
+      ],
+      "correctOption": 3,
+      "solution": "ƒ(x) = 9x<sup>4</sup> + 12x<sup>3</sup> – 36x<sup>2</sup> + 25\n<br><br>ƒ'(x) = 36x<sup>3</sup> + 36x<sup>2</sup> – 72x\n<br><br>ƒ'(x) = 36x(x<sup>2</sup> + x – 2)\n<br><br>ƒ'(x) = 36x(x + 2)(x - 1)\n<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0trpftr/5f0e1eff-71b5-4d0d-a88e-74ee4f331bcb/e9176ef0-dc8c-11e9-acf6-6d09a288f7f2/file-7km5fk0trpfts-320w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7km5fk0trpftr/5f0e1eff-71b5-4d0d-a88e-74ee4f331bcb/e9176ef0-dc8c-11e9-acf6-6d09a288f7f2/file-7km5fk0trpfts-500w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Morning Slot Mathematics - Application of Derivatives Question 173 English Explanation\"></picture>\n<br><br>While moving\nleft to right on x-axis whenever derivative changes sign from\nnegative to positive, we get local minima, and\nwhenever derivative changes sign from positive\nto negative, we get local maxima.\n<br><br>$$ \\therefore $$ S<sub>1</sub> = {–2, 1}\n<br><br>S<sub>2</sub> = {0}",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "1l59ke5cr",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Water is being filled at the rate of 1 cm<sup>3</sup> / sec in a right circular conical vessel (vertex downwards) of height 35 cm and diameter 14 cm. When the height of the water level is 10 cm, the rate (in cm<sup>2</sup> / sec) at which the wet conical surface area of the vessel increases is</p>",
+      "options": [
+        "5",
+        "$${{\\sqrt {21} } \\over 5}$$",
+        "$${{\\sqrt {26} } \\over 5}$$",
+        "$${{\\sqrt {26} } \\over {10}}$$"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$\\because$$ $$V = {1 \\over 3}\\pi {r^2}h$$ and $${r \\over h} = {7 \\over {35}} = {1 \\over 5}$$</p>\n<p>$$ \\Rightarrow V = {1 \\over {75}}\\pi {h^3}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5th5qtk/a97fb8bf-1c8b-4d95-accc-6e78d7642980/88a53880-0818-11ed-98aa-f9038709a939/file-1l5th5qtl.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5th5qtk/a97fb8bf-1c8b-4d95-accc-6e78d7642980/88a53880-0818-11ed-98aa-f9038709a939/file-1l5th5qtl.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 25th June Evening Shift Mathematics - Application of Derivatives Question 93 English Explanation\"></p>\n<p>$${{dV} \\over {dt}} = {1 \\over {25}}\\pi {h^2}{{dh} \\over {dt}} = 1$$</p>\n<p>$$ \\Rightarrow {{dh} \\over {dt}} = {{25} \\over {\\pi {h^2}}}$$</p>\n<p>Now, $$S = \\pi rl = \\pi \\left( {{h \\over 5}} \\right)\\sqrt {{h^2} + {{{h^2}} \\over {25}}}  = {\\pi  \\over {25}}\\sqrt {26} {h^2}$$</p>\n<p>$$ \\Rightarrow {{dS} \\over {dt}} = {{2\\sqrt {26} \\pi h} \\over {25}}\\,.\\,{{dh} \\over {dt}} = {{2\\sqrt {26} } \\over h}$$</p>\n<p>$$ \\Rightarrow {{dS} \\over {d{t_{(h = 10)}}}} = {{\\sqrt {26} } \\over 5}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "boajRKD8w1QSY5sgpYNZA",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If $$\\beta $$ is one of the angles between the normals to the ellipse, x<sup>2</sup> + 3y<sup>2</sup> = 9 at the points (3 cos $$\\theta $$, $$\\sqrt 3 \\sin \\theta $$)  and ($$-$$ 3 sin $$\\theta $$, $$\\sqrt 3 \\,\\cos \\theta $$); $$\\theta  \\in \\left( {0,{\\pi  \\over 2}} \\right);$$ then $${{2\\,\\cot \\beta } \\over {\\sin 2\\theta }}$$ is equal to :",
+      "options": [
+        "$${2 \\over {\\sqrt 3 }}$$",
+        "$${1 \\over {\\sqrt 3 }}$$",
+        "$$\\sqrt 2 $$",
+        "$${{\\sqrt 3 } \\over 4}$$ "
+      ],
+      "correctOption": 0,
+      "solution": "Since,  x<sup>2</sup> + 3y<sup>2</sup> = 9\n<br><br>$$ \\Rightarrow $$ 2x + 6y $${{dy} \\over {dx}}$$ = 0\n<br><br>$$ \\Rightarrow $$ $${{dy} \\over {dx}}$$ = $${{ - x} \\over {3y}}$$\n<br><br>Slope of normal is $$-$$ $${{dx} \\over {dy}}$$ = $${{3y} \\over x}$$\n<br><br>$$ \\Rightarrow $$ $${\\left( { - {{dx} \\over {dy}}} \\right)_{\\left( {3\\cos \\theta ,\\sqrt 3 \\sin \\theta } \\right)}}$$ \n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= $${{3\\sqrt 3 \\sin \\theta } \\over {3\\cos \\theta }}$$ = $$\\sqrt 3 \\tan \\theta $$ = m<sub>1</sub> \n<br><br>&amp; &nbsp;&nbsp;$${\\left( { - {{dx} \\over {dy}}} \\right)_{\\left( { - 3\\sin \\theta ,\\sqrt 3 \\cos \\theta } \\right)}}$$\n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= $${{3\\sqrt 3 \\cos \\theta } \\over { - 3\\sin \\theta }}$$ = $$ - \\sqrt 3 \\cot \\theta $$ = m<sub>2</sub>\n<br><br>As, $$\\beta $$ is the angle between the normals to the given ellipse then\n<br><br>tan$$\\beta $$ = $$\\left| {{{{m_1} - {m_2}} \\over {1 + {m_1}{m_2}}}} \\right|$$\n<br><br>= $$\\left| {{{\\sqrt 3 \\tan \\theta  + \\sqrt 3 \\cot \\theta } \\over {1 - 3\\tan \\theta \\cot \\theta }}} \\right|$$ = $$\\left| {{{\\sqrt 3 \\tan \\theta  + \\sqrt 3 \\cot \\theta } \\over {1 - 3}}} \\right|$$\n<br><br>So, tan $$\\beta $$ = $${{\\sqrt 3 } \\over 2}$$ $$\\left| {\\tan \\theta  + \\cot \\theta } \\right|$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over {\\cot \\beta }} = {{\\sqrt 3 } \\over 2}\\left| {{{\\sin \\theta } \\over {\\cos \\theta }} + {{\\cos \\theta } \\over {\\sin \\theta }}} \\right|$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over {\\cot \\beta }} = {{\\sqrt 3 } \\over 2}$$ $$\\left| {{1 \\over {\\sin \\theta \\cos \\theta }}} \\right|$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over {\\cot \\beta }} = {{\\sqrt 3 } \\over {\\sin 2\\theta }}$$\n<br><br>$$ \\Rightarrow $$ $${{2\\cot \\beta } \\over {\\sin 2\\theta }}$$ = $${2 \\over {\\sqrt 3 }}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "9i0za95SuBx6OsEG",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If $$f$$ and $$g$$ are differentiable functions in $$\\left[ {0,1} \\right]$$ satisfying \n<br>$$f\\left( 0 \\right) = 2 = g\\left( 1 \\right),g\\left( 0 \\right) = 0$$ and $$f\\left( 1 \\right) = 6,$$ then for some $$c \\in \\left] {0,1} \\right[$$ ",
+      "options": [
+        "$$f'\\left( c \\right) = g'\\left( c \\right)$$ ",
+        "$$f'\\left( c \\right) = 2g'\\left( c \\right)$$",
+        "$$2f'\\left( c \\right) = g'\\left( c \\right)$$",
+        "$$2f'\\left( c \\right) = 3g'\\left( c \\right)$$"
+      ],
+      "correctOption": 1,
+      "solution": "Since, $$f$$ and $$g$$ both are continuous function on $$\\left[ {0,1} \\right]$$\n<br><br>and differentiable on $$\\left( {0,1} \\right)$$ then $$\\exists c \\in \\left( {0,1} \\right)$$ such that\n<br><br>$$f'\\left( c \\right) = {{f\\left( 1 \\right) - f\\left( 0 \\right)} \\over 1} = {{6 - 2} \\over 1} = 4$$\n<br><br>and $$g'\\left( c \\right) = {{g\\left( 1 \\right) - g\\left( 0 \\right)} \\over 1} = {{2 - 0} \\over 1} = 2$$\n<br><br>Thus, we get $$f'\\left( c \\right) = 2g'\\left( c \\right)$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "8ffCZxoD0TRKsnKUmshBK",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The tangent to the curve y = x<sup>2</sup> – 5x + 5, parallel to the line 2y = 4x + 1, also passes through the point :",
+      "options": [
+        "$$\\left\\{ {{1 \\over 4},{7 \\over 2}} \\right\\}$$",
+        "$$\\left( { - {1 \\over 8},7} \\right)$$",
+        "$$\\left( {{7 \\over 2},{1 \\over 4}} \\right)$$",
+        "$$\\left( {{1 \\over 8}, - 7} \\right)$$"
+      ],
+      "correctOption": 3,
+      "solution": "y = x<sup>2</sup> $$-$$ 5x + 5\n<br><br>$${{dy} \\over {dx}} = 2x - 5 = 2 \\Rightarrow x = {7 \\over 2}$$\n<br><br>at&nbsp;&nbsp;x = $${7 \\over 2}$$,&nbsp;y = $${{ - 1} \\over 4}$$\n<br><br>Equation of tangent at \n<br><br>$$\\left( {{7 \\over 2},{{ - 1} \\over 4}} \\right)$$ is 2x $$-$$ y $$-$$ $${{29} \\over 4}$$ = 0\n<br><br>Now check options\n<br><br>x = $${1 \\over 8}$$, y = $$-$$7",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "tlm69mswhd",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The tangent to the curve x<sup>2</sup> = y at (1, 1) makes an angle&nbsp;θ with the positive direction of x-axis. Which one of the following is correct?",
+      "options": [
+        "<span class=\"math-tex\">$\\rm \\theta &lt; \\frac{\\pi}{6}$</span>",
+        "<span class=\"math-tex\">$\\rm \\frac{\\pi}{6} &lt; \\theta &lt; \\frac{\\pi}{4}$</span>",
+        "<span class=\"math-tex\">$\\rm \\frac{\\pi}{4} &lt; \\theta &lt; \\frac{\\pi}{3}$</span>",
+        "<span class=\"math-tex\">$\\rm \\frac{\\pi}{3} &lt; \\theta &lt; \\frac{\\pi}{2}$</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>Let's work through the problem step by step:</p>\n\n<p><p>The curve is given by:</p>\n<p>$$ x^2 = y $$</p></p>\n\n<p><p>Differentiate both sides with respect to $$x$$ to get the slope of the tangent line:</p>\n<p>$$ \\frac{d}{dx}(x^2) = \\frac{dy}{dx} \\quad \\Rightarrow \\quad 2x = \\frac{dy}{dx} $$</p></p>\n\n<p><p>At the point $$(1, 1)$$, substitute $$x = 1$$:</p>\n<p>$$ \\frac{dy}{dx} = 2 \\cdot 1 = 2 $$</p>\n<p>So, the slope $$m=2$$.</p></p>\n<p><p>The angle $$\\theta$$ that the tangent makes with the positive $$x$$-axis satisfies:</p>\n<p>$$ \\tan \\theta = m = 2 $$</p>\n<p>Therefore:</p>\n<p>$$ \\theta = \\tan^{-1}(2) $$</p></p>\n<p><p>Approximating:</p>\n<p>$$ \\theta \\approx \\tan^{-1}(2) \\approx 1.107 \\text{ radians} $$</p>\n<p>(or about $$63.4^\\circ$$)</p></p>\n<p><p>Comparing with the given options:</p></p>\n\n\n<p><p>$$\\frac{\\pi}{3} \\approx 1.047 \\text{ radians}$$</p></p>\n<p><p>$$\\frac{\\pi}{2} \\approx 1.571 \\text{ radians}$$</p>\n<p>Since:</p>\n<p>$$ \\frac{\\pi}{3} < 1.107 < \\frac{\\pi}{2} $$</p>\n<p>The correct interval corresponds to Option D:</p>\n<p>$$ \\frac{\\pi}{3} < \\theta < \\frac{\\pi}{2} $$</p></p>\n\n<p>Thus, the answer is Option D.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "1hCumHByo0ZaOkXiKDLcf",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let f(x) = sin<sup>4</sup>x + cos<sup>4</sup> x.  Then <i>f</i> is an increasing function in the interval : ",
+      "options": [
+        "$$] 0, \\frac{\\pi}{4}[$$",
+        "$$] \\frac{\\pi}{4}, \\frac{\\pi}{2}[$$",
+        "$$] \\frac{\\pi}{2}, \\frac{5 \\pi}{8}[$$",
+        "$$] \\frac{5 \\pi}{8}, \\frac{3 \\pi}{4}[$$"
+      ],
+      "correctOption": 1,
+      "solution": "f(x) = sin<sup>4</sup>x + cos<sup>4</sup>x\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;f'(x) = 4sin<sup>3</sup>x cosx + 4cos<sup>3</sup>x ($$-$$ sinx)\n<br><br>= 4sinx cosx (sin<sup>2</sup>x $$-$$ cos<sup>2</sup>x)\n<br><br>= $$-$$ 2sin2x cos2x\n<br><br>= $$-$$ sin4x\n<br><br>As, f(x) is increasing function when f'(x) &gt; 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp; $$-$$ sin4x &gt; 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;sin4x &lt; 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$$\\pi $$ &lt; 4x &lt; 2$$\\pi $$\n<br><br>$${\\pi  \\over 4} &lt; x &lt; {\\pi  \\over 2}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;x $$ \\in $$ $$\\left( {{\\pi  \\over 4},{\\pi  \\over 2}} \\right)$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Application of Derivatives"
+    },
+    {
+      "id": "tlm69mswfn",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider the following statements in respect of the function f(x) = x +&nbsp;<span class=\"math-tex\">$\\rm \\frac{1}{x}$</span>:</p>\n\n<p>1. The local maximum value of f(x) is less than its local minimum value.</p>\n\n<p>2. The local maximum value of f(x) occurs at x = 1.</p>\n\n<p>Which of the above statements is/are correct?</p>\n",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 0,
+      "solution": "<p>Let's analyze the function step-by-step. We have:</p>\n<p>$$f(x) = x + \\frac{1}{x}$$</p>\n<p>with the understanding that $ x \\neq 0 $.</p>\n\n<p>Find the critical points by differentiating $ f(x) $:</p>\n\n\n<p><p>First derivative:</p>\n<p>$$f'(x) = 1 - \\frac{1}{x^2}$$</p></p>\n<p><p>Set $ f'(x) = 0 $:</p>\n<p>$$1 - \\frac{1}{x^2} = 0 \\quad \\Rightarrow \\quad \\frac{1}{x^2} = 1 \\quad \\Rightarrow \\quad x^2 = 1$$</p>\n<p>This gives two critical points: $ x = 1 $ and $ x = -1 $.</p></p>\n\n\n<p>Determine the nature of the critical points using the second derivative:</p>\n\n\n<p><p>Second derivative:</p>\n<p>$$f''(x) = \\frac{d}{dx} \\left(1 - \\frac{1}{x^2}\\right) = \\frac{2}{x^3}$$</p></p>\n<p><p>At $ x = 1 $:</p>\n<p>$$f''(1) = \\frac{2}{1^3} = 2 > 0$$</p>\n<p>So, $ f(x) $ has a local minimum at $ x = 1 $.</p></p>\n<p><p>At $ x = -1 $:</p>\n<p>$$f''(-1) = \\frac{2}{(-1)^3} = -2 < 0$$</p>\n<p>So, $ f(x) $ has a local maximum at $ x = -1 $.</p></p>\n\n\n<p>Calculate the function values at these points:</p>\n\n\n<p><p>For $ x = 1 $ (local minimum):</p>\n<p>$$f(1) = 1 + \\frac{1}{1} = 2$$</p></p>\n\n<p><p>For $ x = -1 $ (local maximum):</p>\n<p>$$f(-1) = -1 + \\frac{1}{-1} = -1 - 1 = -2$$</p></p>\n\n<p>Now, let’s evaluate the statements given:</p>\n\n<p><p><strong>Statement 1:</strong> “The local maximum value of $ f(x) $ is less than its local minimum value.”</p>\n<p>Comparison: </p></p>\n<p><p>Local maximum value: $-2$</p></p>\n<p><p>Local minimum value: $2$</p>\n<p>Since $-2 < 2$, this statement is correct.</p></p>\n<p><p><strong>Statement 2:</strong> “The local maximum value of $ f(x) $ occurs at $ x = 1 $.”</p>\n<p>We found that the local maximum occurs at $ x = -1 $, not $ x = 1 $. Hence, this statement is incorrect.</p></p>\n\n<p>Thus, the correct answer is:</p>\n<p>Option A: 1 only.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Application of Derivatives"
+    }
+  ]
+}
