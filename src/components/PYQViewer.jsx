@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { CheckCircle, Bookmark, Trash2, ArrowRight, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
+import TeacherSolution from './TeacherSolution';
 
 export default function PYQViewer({ pyqData, topic, onClose, isLight }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -19,22 +20,6 @@ export default function PYQViewer({ pyqData, topic, onClose, isLight }) {
     return fixed;
   };
 
-  const formatUniqueSolution = (html) => {
-    if (!html) return '<p>Detailed solution is not available for this question.</p>';
-    let text = html;
-    text = text.replace(/\$\$(.*?)\$\$/gs, '\\($1\\)'); // Fix MathJax
-    text = text.replace(/<b([^>]*)>(.*?)<\/b>/gi, '<b$1 style="color: #2e7d32; text-decoration: underline wavy #2e7d32;">$2</b>');
-    text = text.replace(/<strong([^>]*)>(.*?)<\/strong>/gi, '<strong$1 style="color: #2e7d32; text-decoration: underline wavy #2e7d32;">$2</strong>');
-    text = text.replace(/\\\((.*?)\\\)/g, '<span style="color: #d32f2f; font-weight: 600;">\\($1\\)</span>');
-    
-    const bgClass = isLight ? 'bg-[#fffde7] border-[#ffb300]' : 'bg-[#332b00] border-[#ffb300]';
-    const textClass = isLight ? 'text-gray-800' : 'text-gray-200';
-    
-    return `<div class="${bgClass} ${textClass} p-5 rounded-xl border-l-4 shadow-sm" style="font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; font-size: 1.05rem; line-height: 1.8;">
-      <div style="color: #f57c00; font-weight: 800; margin-bottom: 12px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; font-family: ui-sans-serif, system-ui, sans-serif;">💡 Quantrex Expert Breakdown</div>
-      ${text}
-    </div>`;
-  };
 
   // Load questions and sort them
   const rawQuestions = pyqData.questions[topic.id] || [];
@@ -384,9 +369,7 @@ export default function PYQViewer({ pyqData, topic, onClose, isLight }) {
                 )}
               </div>
                 <div className={`mt-5 pt-5 border-t ${isLight ? 'border-green-200' : 'border-white/10'}`}>
-                  <div 
-                    dangerouslySetInnerHTML={{ __html: formatUniqueSolution(currentQuestion.solution) }}
-                  />
+                  <TeacherSolution html={currentQuestion.solution} />
                 </div>
             </div>
           )}

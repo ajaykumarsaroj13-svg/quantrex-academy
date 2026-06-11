@@ -16,7 +16,7 @@ const BooksLibrary = React.lazy(() => import('./pages/BooksLibrary'));
 const BookReader = React.lazy(() => import('./pages/BookReader'));
 const BookChapterList = React.lazy(() => import('./pages/BookChapterList'));
 const BookPractice = React.lazy(() => import('./pages/BookPractice'));
-const TestSeries2027 = React.lazy(() => import('./pages/TestSeries2027'));
+
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 
 export default function App() {
@@ -61,7 +61,11 @@ export default function App() {
   const [initialChapterTab, setInitialChapterTab] = useState(() => localStorage.getItem('quantrex_initial_chapter_tab') || null);
 
   const [syllabus, setSyllabus] = useState(() => {
-    const saved = localStorage.getItem('quantrex_syllabus_v6');
+    // Clear old v6 syllabus cache if exists
+    if (localStorage.getItem('quantrex_syllabus_v6')) {
+      localStorage.removeItem('quantrex_syllabus_v6');
+    }
+    const saved = localStorage.getItem('quantrex_syllabus_v7');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
@@ -69,7 +73,7 @@ export default function App() {
   });
 
   const [toppers, setToppers] = useState(() => {
-    const saved = localStorage.getItem('quantrex_toppers');
+    const saved = localStorage.getItem('quantrex_toppers_v2');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
@@ -80,6 +84,16 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('quantrex_active_page', activePage);
   }, [activePage]);
+
+  // Persist syllabus when updated (e.g. from Admin Dashboard)
+  useEffect(() => {
+    localStorage.setItem('quantrex_syllabus_v7', JSON.stringify(syllabus));
+  }, [syllabus]);
+
+  // Persist toppers when updated
+  useEffect(() => {
+    localStorage.setItem('quantrex_toppers_v2', JSON.stringify(toppers));
+  }, [toppers]);
 
   useEffect(() => {
     if (readingBook) {
@@ -340,6 +354,8 @@ export default function App() {
             initialClass={initialClass}
             initialTab={initialTab}
             initialChapterTab={initialChapterTab}
+            isLight={isLight}
+            onToggleTheme={() => setIsLight(!isLight)}
           />
         )}
         {activePage === 'admin-dashboard' && (
@@ -365,18 +381,6 @@ export default function App() {
           />
         )}
 
-        {/* ─── JEE MAIN TEST SERIES 2027 ─── */}
-        {activePage === 'test-series-2027' && (
-          <TestSeries2027
-            setActivePage={setActivePage}
-            theme={isLight ? 'light' : 'dark'}
-            onStartTest={handleStartTestSeries}
-            onBack={() => setActivePage(user ? 'student-dashboard' : 'home')}
-          />
-        )}
-
-
-
         {/* ─── NTA EXAM PLAYER ─── */}
         {activePage === 'test-series-exam' && (
           <TestSeriesExam
@@ -386,6 +390,7 @@ export default function App() {
             onSubmit={handleTestSubmit}
             onExit={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')}
             isLight={isLight}
+            onToggleTheme={() => setIsLight(!isLight)}
           />
         )}
 

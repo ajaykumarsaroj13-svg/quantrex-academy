@@ -73,6 +73,25 @@
   padding: 0;
 }
 
+/* ─── Dark Theme Overrides ───────────────────────────────── */
+.nta-exam-wrapper.dark-theme {
+  --bg-body:           #0f172a;
+  --bg-white:          #1e293b;
+  --bg-panel:          #0f172a;
+  --bg-sidebar:        #1e2340;
+  --bg-sidebar-dark:   #151829;
+  --bg-sidebar-card:   #252b4a;
+
+  --text-primary:      #f8fafc;
+  --text-secondary:    #cbd5e1;
+  --text-muted:        #94a3b8;
+  --text-white:        #ffffff;
+  --text-light:        #e2e8f0;
+
+  --border-light:      #334155;
+  --border-medium:     #475569;
+}
+
 /* ─── Exam Wrapper ───────────────────────────────────────── */
 .nta-exam-wrapper {
   display: flex;

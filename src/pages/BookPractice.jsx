@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { fetchBlackBookProgress, saveBlackBookProgress, resetBlackBookProgress } from '../utils/blackBookApi';
 import MathRenderer from '../utils/MathRenderer';
+import TeacherSolution from '../components/TeacherSolution';
 
 const OPTION_LABELS = ['A', 'B', 'C', 'D', 'E'];
 
@@ -164,13 +165,27 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
 
   const handleSelectOption = (optIdx) => {
     if (isAttempted) return;
-    setProgress(prev => ({
-      ...prev,
-      [activeExercise]: {
-        ...(prev[activeExercise] || {}),
-        [currentIdx]: { ...(prev[activeExercise]?.[currentIdx] || {}), selectedIdx: optIdx, isChecked: false }
+    setProgress(prev => {
+      const currentSelected = prev[activeExercise]?.[currentIdx]?.selectedIdx;
+      let newSelected;
+      if (isMultiCorrect) {
+        const arr = Array.isArray(currentSelected) ? currentSelected : (currentSelected !== undefined && currentSelected !== -1 ? [currentSelected] : []);
+        if (arr.includes(optIdx)) {
+          newSelected = arr.filter(i => i !== optIdx);
+        } else {
+          newSelected = [...arr, optIdx].sort((a, b) => a - b);
+        }
+      } else {
+        newSelected = optIdx;
       }
-    }));
+      return {
+        ...prev,
+        [activeExercise]: {
+          ...(prev[activeExercise] || {}),
+          [currentIdx]: { ...(prev[activeExercise]?.[currentIdx] || {}), selectedIdx: newSelected, isChecked: false }
+        }
+      };
+    });
   };
 
   const handleCheckAnswer = () => {
@@ -178,9 +193,9 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
     let correct = false;
 
     if (isMultiCorrect) {
-      // For multi-correct, just mark as checked; isCorrect = selectedIdx is in correctOptionsArray
       const correctArr = q.correctOptionsArray || [];
-      correct = correctArr.includes(selectedIdx ?? -1);
+      const currentSelection = Array.isArray(selectedIdx) ? selectedIdx : (selectedIdx !== undefined && selectedIdx !== -1 ? [selectedIdx] : []);
+      correct = correctArr.length > 0 && correctArr.length === currentSelection.length && currentSelection.every(val => correctArr.includes(val));
     } else {
       correct = selectedIdx === q.correctOption;
     }
@@ -329,7 +344,11 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
   if (!question) return null;
   const stats = getExStats();
   const currentExProgress = progress[activeExercise] || {};
-  const hasPendingOption = currentExProgress[currentIdx]?.selectedIdx !== undefined && !isAttempted;
+  const _selIdx = currentExProgress[currentIdx]?.selectedIdx;
+  const hasPendingOption = isMultiCorrect 
+    ? (Array.isArray(_selIdx) ? _selIdx.length > 0 : _selIdx !== undefined && _selIdx !== -1)
+    : (_selIdx !== undefined && _selIdx !== -1);
+  const isPending = hasPendingOption && !isAttempted;
 
   // format time
   const formatTime = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
@@ -535,7 +554,9 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
                 <>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
                     {(question.options || []).map((opt, i) => {
-                      const isSelected = selectedIdx === i;
+                      const isSelected = isMultiCorrect 
+                          ? (Array.isArray(selectedIdx) ? selectedIdx.includes(i) : selectedIdx === i)
+                          : selectedIdx === i;
                       const correctArr = question.correctOptionsArray;
                       const isActuallyCorrect = correctArr
                         ? correctArr.includes(i)
@@ -639,14 +660,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
                       <Eye className="w-4 h-4" /> View Solution
                     </button>
                   ) : (
-                    <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl animate-fade-in">
-                      <h3 className="font-bold text-amber-800 mb-3 flex items-center gap-2 text-[13px] uppercase tracking-wide">
-                        💡 Solution
-                      </h3>
-                        <div className="text-[14px] sm:text-[15px] leading-relaxed font-semibold text-black">
-                          <MathRenderer text={question.solution} />
-                        </div>
-                    </div>
+                      <TeacherSolution html={question.solution} />
                   )}
                 </div>
               )}
@@ -682,7 +696,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
               {!isAttempted && (
                  <button
                    onClick={() => {
-                     if (hasPendingOption) handleCheckAnswer();
+                     if (isPending) handleCheckAnswer();
                      else {
                        handleRevealAnswer();
                        setTimeout(() => { if (scrollRef.current) scrollRef.current.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' }); }, 100);
@@ -694,7 +708,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
                        : 'bg-white hover:bg-gray-50 text-[#1976d2] shadow-sm border-2 border-[#1976d2]'
                    }`}
                  >
-                   {hasPendingOption ? <><CheckCircle className="w-4 h-4" /> Check Answer</> : <><Eye className="w-4 h-4" /> View Solution</>}
+                   {isPending ? <><CheckCircle className="w-4 h-4" /> Check Answer</> : <><Eye className="w-4 h-4" /> View Solution</>}
                  </button>
               )}
             </div>

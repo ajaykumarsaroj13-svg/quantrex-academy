@@ -88,17 +88,6 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
           Books
         </button>
 
-        <button
-          onClick={() => setActivePage('test-series-2027')}
-          className={`uppercase transition-all duration-200 hover:scale-105 flex items-center gap-1 ${
-            activePage === 'test-series-2027'
-              ? (isLight ? 'text-blue-600' : 'text-electric')
-              : (isLight ? 'text-gray-600 hover:text-blue-600' : 'text-platinum hover:text-white')
-          }`}
-        >
-          <Sparkles className="h-3.5 w-3.5 text-cyan-400" />
-          JEE Main Test Series 2027
-        </button>
 
         {user && user.role === 'admin' && (
           <button
@@ -136,13 +125,7 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
           </span>
         </button>
 
-        {/* ── Theme Color Switcher ── */}
-        <div className={`hidden sm:flex items-center gap-1.5 px-2 py-1.5 rounded-full border ${isLight ? 'bg-white border-gray-200' : 'bg-black/20 border-white/10'}`}>
-          <button onClick={() => onColorChange('cyan')} className={`h-4 w-4 rounded-full bg-cyan-500 ${themeColor === 'cyan' ? 'ring-2 ring-offset-1 ring-cyan-500 dark:ring-offset-obsidian' : 'opacity-50 hover:opacity-100'}`} title="Cyan Theme"></button>
-          <button onClick={() => onColorChange('emerald')} className={`h-4 w-4 rounded-full bg-emerald-500 ${themeColor === 'emerald' ? 'ring-2 ring-offset-1 ring-emerald-500 dark:ring-offset-obsidian' : 'opacity-50 hover:opacity-100'}`} title="Emerald Theme"></button>
-          <button onClick={() => onColorChange('ruby')} className={`h-4 w-4 rounded-full bg-red-500 ${themeColor === 'ruby' ? 'ring-2 ring-offset-1 ring-red-500 dark:ring-offset-obsidian' : 'opacity-50 hover:opacity-100'}`} title="Ruby Theme"></button>
-          <button onClick={() => onColorChange('amethyst')} className={`h-4 w-4 rounded-full bg-purple-500 ${themeColor === 'amethyst' ? 'ring-2 ring-offset-1 ring-purple-500 dark:ring-offset-obsidian' : 'opacity-50 hover:opacity-100'}`} title="Amethyst Theme"></button>
-        </div>
+
 
         {/* ── User / Login ── */}
         {user ? (

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import '../components/NTAExamInterface.css';
+import TeacherSolution from '../components/TeacherSolution';
 
 // ─── Constants ────────────────────────────────────────────────
 const STATUS = {
@@ -14,7 +15,7 @@ const DEFAULT_SUBJECT_ORDER = ['Physics', 'Chemistry', 'Mathematics'];
 const ADV_SUBJECT_ORDER = ['Mathematics', 'Physics', 'Chemistry'];
 
 // ─── Main Component ───────────────────────────────────────────
-export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, onExit }) {
+export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, onExit, isLight, onToggleTheme }) {
   const [testData, setTestData]         = useState(null);
   const [loading, setLoading]           = useState(true);
   const [error, setError]               = useState(null);
@@ -310,7 +311,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   const canCheckAnswer = mode === 'practice' && isAnswered && !answerChecked;
 
   return (
-    <div className="nta-exam-wrapper">
+    <div className={`nta-exam-wrapper ${!isLight ? 'dark-theme' : ''}`}>
       {/* FORCE STYLES FOR PRACTICE MODE CORRECT/WRONG OPTIONS AND SOLUTION TEXT */}
       <style>{`
         .nta-option.correct, .nta-option.correct .nta-option-text, .nta-option.correct .tex2jax_process, .nta-option.correct *, .nta-option.correct .MathJax, .nta-option.correct mjx-container {
@@ -324,8 +325,8 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           font-weight: bold !important;
         }
         .nta-solution-text, .nta-solution-text p, .nta-solution-text span, .nta-solution-text div, .nta-solution-text *, .nta-solution-text .MathJax, .nta-solution-text mjx-container {
-          color: #0f172a !important;
-          fill: #0f172a !important;
+          color: ${isLight ? '#0f172a' : '#cbd5e1'} !important;
+          fill: ${isLight ? '#0f172a' : '#cbd5e1'} !important;
           font-weight: 600 !important;
         }
         .nta-solution-box {
@@ -372,6 +373,26 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
             <div className="nta-candidate-avatar">{(user?.name || 'A')[0].toUpperCase()}</div>
             <div className="nta-candidate-name">{user?.name || 'Candidate'}</div>
           </div>
+          <button
+            onClick={onToggleTheme}
+            title={isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+            className="theme-toggle-btn relative h-7 w-12 rounded-full border flex items-center transition-all duration-300 mx-3"
+            style={{ 
+               backgroundColor: isLight ? '#eff6ff' : '#1e293b', 
+               borderColor: isLight ? '#bfdbfe' : '#334155',
+               justifyContent: isLight ? 'flex-end' : 'flex-start'
+            }}
+          >
+            <span className="absolute inset-y-0.5 w-5 h-5 rounded-full transition-all duration-300 flex items-center justify-center text-[10px] shadow-sm"
+                  style={{
+                    right: isLight ? '2px' : 'auto',
+                    left: isLight ? 'auto' : '2px',
+                    backgroundColor: isLight ? '#fbbf24' : '#3b82f6',
+                    color: isLight ? '#fff' : '#0f172a'
+                  }}>
+              {isLight ? '☀' : '☾'}
+            </span>
+          </button>
           {mode !== 'practice' && (
             <div className={`nta-timer-box ${isLowTime ? 'low-time' : ''}`}>
               <span className="nta-timer-label">⏱ Time Left</span>
@@ -535,41 +556,8 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
 
           {/* Practice mode: Solution box */}
           {mode === 'practice' && answerChecked && showSolution && question?.solution && (
-            <div className="nta-solution-box" style={{ 
-              marginTop: '25px', 
-              padding: '25px', 
-              backgroundColor: '#f8fafc', 
-              border: '1px solid #cbd5e1', 
-              borderRadius: '12px', 
-              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-              color: '#0f172a',
-              fontFamily: '"Inter", "Segoe UI", sans-serif'
-            }}>
-              <div className="nta-solution-title" style={{
-                fontSize: '1.25rem',
-                fontWeight: 'bold',
-                color: '#2563eb',
-                marginBottom: '15px',
-                borderBottom: '2px solid #e2e8f0',
-                paddingBottom: '10px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}>
-                <span style={{fontSize:'1.5rem'}}>💡</span> Detailed Solution
-              </div>
-              <div 
-                className="nta-solution-text tex2jax_process" 
-                style={{ 
-                  color: '#1e293b', 
-                  fontSize: '16px', 
-                  lineHeight: '1.8',
-                  overflowX: 'auto'
-                }} 
-              >
-                <style>{`#nta-sol-content * { color: #0f172a !important; fill: #0f172a !important; font-weight: 600 !important; }`}</style>
-                <div id="nta-sol-content" dangerouslySetInnerHTML={{ __html: question.solution }} />
-              </div>
+            <div className="mt-6">
+              <TeacherSolution html={question.solution} />
             </div>
           )}
 

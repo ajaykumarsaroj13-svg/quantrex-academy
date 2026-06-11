@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import TeacherSolution from '../components/TeacherSolution';
 
 const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
 
@@ -51,35 +52,6 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
   }
 
   // Helper formatting functions
-  const formatUniqueSolution = (html) => {
-    if (!html) return '<p>Detailed solution is not available.</p>';
-    let text = html;
-    
-    // Simplify English to make it very easy to understand
-    text = text.replace(/\bTherefore\b/gi, 'So');
-    text = text.replace(/\bHence\b/gi, 'So');
-    text = text.replace(/\bimplies that\b/gi, 'means');
-    text = text.replace(/\bSubstituting\b/gi, 'Putting');
-    text = text.replace(/\bConsequently\b/gi, 'As a result');
-    text = text.replace(/\bIt is evident that\b/gi, 'We can clearly see that');
-    
-    // MathJax Fix
-    text = text.replace(/\$\$(.*?)\$\$/gs, '\\($1\\)');
-    
-    // Multi-color attractive styling
-    text = text.replace(/<b([^>]*)>(.*?)<\/b>/gi, '<b$1 style="color: #34d399; text-decoration: underline wavy #34d399;">$2</b>');
-    text = text.replace(/<strong([^>]*)>(.*?)<\/strong>/gi, '<strong$1 style="color: #34d399; text-decoration: underline wavy #34d399;">$2</strong>');
-    text = text.replace(/\\\((.*?)\\\)/g, '<span style="color: #f472b6; font-weight: 700;">\\($1\\)</span>');
-    
-    return `<div style="background: rgba(30, 41, 59, 0.6); color: #f8fafc; padding: 24px; border-radius: 16px; border-left: 5px solid #fbbf24; font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive; font-size: 16px; line-height: 1.8; position: relative; margin-top: 16px;">
-      <div style="position: absolute; top: -14px; left: 20px; background: #fbbf24; color: #1e293b; font-weight: 800; font-family: system-ui, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; padding: 4px 12px; border-radius: 12px; box-shadow: 0 4px 10px rgba(251, 191, 36, 0.2);">
-        💡 Quantrex Easy Solution
-      </div>
-      <div style="margin-top: 8px;">
-        ${text}
-      </div>
-    </div>`;
-  };
 
   const formatTime = (seconds) => {
     if (!seconds) return '0m 0s';
@@ -825,7 +797,7 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                   {/* Solution block */}
                   {activeQuestion.solution && (
                     <div className="tsr-solution-card">
-                      <div className="tsr-sol-text tex2jax_process" dangerouslySetInnerHTML={{ __html: formatUniqueSolution(activeQuestion.solution) }} />
+                      <TeacherSolution html={activeQuestion.solution} />
                     </div>
                   )}
                 </div>

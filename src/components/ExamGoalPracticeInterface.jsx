@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Plus, AlertCircle, Clock, Bookmark, ZoomIn, ZoomOut, CheckCircle, Eye } from 'lucide-react';
 import BookmarkGroupModal from './BookmarkGroupModal';
+import TeacherSolution from './TeacherSolution';
 
-export default function ExamGoalPracticeInterface({ pyqData, topic, customQuestions, practiceMode, onProgressUpdate, onClose, isLight, bookmarkGroups = [], addBookmarkGroup = () => {}, progress = {} }) {
+export default function ExamGoalPracticeInterface({ pyqData, topic, customQuestions, practiceMode, onProgressUpdate, onClose, isLight, onToggleTheme, bookmarkGroups = [], addBookmarkGroup = () => {}, progress = {} }) {
   const storageKey = `quantrex_practice_progress_${topic ? topic.id : 'custom'}`;
   const scrollContainerRef = useRef(null);
 
@@ -24,6 +25,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
   }, [topic]);
   const [selectedOption, setSelectedOption] = useState('');
   const [isAnswerChecked, setIsAnswerChecked] = useState(false);
+  const [isTestSubmitted, setIsTestSubmitted] = useState(false);
   const [savedAnswers, setSavedAnswers] = useState(() => {
     try {
       const saved = localStorage.getItem(storageKey);
@@ -55,22 +57,6 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
     return fixed;
   };
 
-  // Multi-color handwritten pen effect
-  const formatUniqueSolution = (html) => {
-    if (!html) return '<p>No explanation provided.</p>';
-    let text = html;
-    text = text.replace(/<b([^>]*)>(.*?)<\/b>/gi, '<b$1 style="color: #2e7d32; text-decoration: underline wavy #2e7d32;">$2</b>');
-    text = text.replace(/<strong([^>]*)>(.*?)<\/strong>/gi, '<strong$1 style="color: #2e7d32; text-decoration: underline wavy #2e7d32;">$2</strong>');
-    text = text.replace(/\\\((.*?)\\\)/g, '<span style="color: #d32f2f; font-weight: 600;">\\($1\\)</span>');
-    
-    const bgClass = isLight !== false ? 'bg-[#fffde7] border-[#ffb300]' : 'bg-[#332b00] border-[#ffb300]';
-    const textClass = isLight !== false ? 'text-black' : 'text-gray-200';
-    
-    return `<div class="${bgClass} ${textClass} p-5 rounded-xl border-l-4 shadow-sm" style="font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; font-size: 1.05rem; line-height: 1.8;">
-      <div style="color: #f57c00; font-weight: 800; margin-bottom: 12px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; font-family: ui-sans-serif, system-ui, sans-serif;">💡 Quantrex Expert Breakdown</div>
-      ${text}
-    </div>`;
-  };
 
   useEffect(() => {
     const data = {
@@ -96,22 +82,22 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
 
   // Timer effect
   useEffect(() => {
-    if (isAnswerChecked) return; // Stop timer if already answered
+    if (isAnswerChecked || isTestSubmitted) return; // Stop timer if already answered
     const timer = setInterval(() => {
       setTimeSpent(prev => prev + 1);
     }, 1000);
     return () => clearInterval(timer);
-  }, [isAnswerChecked, currentQuestionIndex]);
+  }, [isAnswerChecked, isTestSubmitted, currentQuestionIndex]);
 
   useEffect(() => {
     if (window.MathJax && window.MathJax.typesetPromise) {
       window.MathJax.typesetPromise().catch((err) => console.log('MathJax error:', err));
     }
-  }, [currentQuestionIndex, isAnswerChecked]);
+  }, [currentQuestionIndex, isAnswerChecked, isTestSubmitted]);
 
   if (!currentQuestion) {
     return (
-      <div className="fixed inset-0 z-50 flex flex-col font-sans bg-[#f4f5f8] overflow-hidden">
+      <div className={`fixed inset-0 z-50 flex flex-col font-sans overflow-hidden ${isLight ? 'bg-[#f4f5f8]' : 'bg-[#0f172a]'}`}>
         {/* Header */}
         <div className="h-14 bg-[#3f51b5] text-white flex items-center px-4 shadow-md justify-between shrink-0">
           <div className="flex items-center gap-3">
@@ -122,12 +108,12 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
           </div>
         </div>
         {/* Main Content Area */}
-        <div className="flex-1 overflow-y-auto bg-[#f4f5f8] flex justify-center items-center w-full p-4">
-           <div className="max-w-md w-full bg-white p-8 rounded-xl shadow-sm border border-gray-200 text-center">
-              <div className="w-16 h-16 bg-[#e8eaf6] text-[#3f51b5] rounded-full flex items-center justify-center mx-auto mb-4">
+        <div className={`flex-1 overflow-y-auto flex justify-center items-center w-full p-4 ${isLight ? 'bg-[#f4f5f8]' : 'bg-[#0f172a]'}`}>
+           <div className={`max-w-md w-full p-8 rounded-xl shadow-sm border text-center ${isLight ? 'bg-white border-gray-200' : 'bg-[#1e293b] border-gray-700'}`}>
+              <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${isLight ? 'bg-[#e8eaf6] text-[#3f51b5]' : 'bg-[#312e81] text-[#818cf8]'}`}>
                  <AlertCircle className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-black mb-2">Questions Coming Soon!</h3>
+              <h3 className={`text-xl font-bold mb-2 ${isLight ? 'text-black' : 'text-white'}`}>Questions Coming Soon!</h3>
               <p className="text-gray-500 mb-6">We are currently preparing detailed, visual, and handwritten step-by-step solutions for this chapter. Stay tuned!</p>
               <button onClick={onClose} className="px-6 py-2 bg-[#3f51b5] text-white rounded font-bold hover:bg-[#303f9f] transition-colors">Go Back</button>
            </div>
@@ -140,8 +126,15 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
   const isNumerical = !isSubjective && (currentQuestion.type === 'Numerical Value' || currentQuestion.type === 'Integer' || currentQuestion.type === 'numerical' || currentQuestion.type === 'NUMERICAL' || currentQuestion.type === 'integer-value' || (currentQuestion.options && currentQuestion.options.length === 0));
 
   const handleOptionSelect = (val) => {
-    if (isAnswerChecked) return;
+    if (isAnswerChecked || isTestSubmitted) return;
     setSelectedOption(val);
+    setSavedAnswers(prev => ({
+      ...prev,
+      [currentQuestionIndex]: { 
+        selectedOption: val, 
+        isAnswerChecked: false 
+      }
+    }));
   };
 
   const handleCheckAnswer = () => {
@@ -218,7 +211,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
   }
 
   return (
-    <div className="fixed inset-0 z-[100] flex flex-col font-sans bg-[#f5f5f5] overflow-hidden">
+    <div className={`fixed inset-0 z-[100] flex flex-col font-sans overflow-hidden ${isLight ? 'bg-[#f5f5f5]' : 'bg-[#0f172a]'}`}>
       
       {/* Top Header */}
       <div className="h-[52px] bg-[#2962ff] text-white flex items-center px-4 shadow-md justify-between shrink-0">
@@ -227,12 +220,34 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
             <ArrowLeft className="w-5 h-5" />
           </button>
           <span className="text-[16px] font-medium">{topic ? topic.name : 'Practice Session'}</span>
+           {isTestSubmitted && (
+             <span className="px-2.5 py-0.5 rounded bg-yellow-500/10 text-yellow-500 border border-yellow-500/20 text-[10px] font-bold uppercase tracking-wider animate-pulse">
+               Review Mode
+             </span>
+           )}
         </div>
         <div className="flex items-center gap-4">
-           {/* Mock icons for top right */}
-           <svg className="w-5 h-5 opacity-80" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-           <svg className="w-5 h-5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-           <svg className="w-5 h-5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+           {/* Theme Toggle Button */}
+           <button
+            onClick={onToggleTheme}
+            title={isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+            className="theme-toggle-btn relative h-7 w-12 rounded-full border flex items-center transition-all duration-300 mx-3"
+            style={{ 
+               backgroundColor: isLight ? '#eff6ff' : '#1e293b', 
+               borderColor: isLight ? '#bfdbfe' : '#334155',
+               justifyContent: isLight ? 'flex-end' : 'flex-start'
+            }}
+          >
+            <span className="absolute inset-y-0.5 w-5 h-5 rounded-full transition-all duration-300 flex items-center justify-center text-[10px] shadow-sm"
+                  style={{
+                    right: isLight ? '2px' : 'auto',
+                    left: isLight ? 'auto' : '2px',
+                    backgroundColor: isLight ? '#fbbf24' : '#3b82f6',
+                    color: isLight ? '#fff' : '#0f172a'
+                  }}>
+              {isLight ? '☀' : '☾'}
+            </span>
+          </button>
         </div>
       </div>
 
@@ -265,7 +280,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
       <div className="flex-1 flex overflow-hidden">
         
         {/* Left Side: Question and Options */}
-        <div className="flex-1 flex flex-col bg-white relative shadow-sm z-10">
+        <div className={`flex-1 flex flex-col relative shadow-sm z-10 ${isLight ? 'bg-white' : 'bg-[#1e293b]'}`}>
           
           <div className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 w-full pb-10" ref={scrollContainerRef}>
              <div className="max-w-5xl mx-auto w-full">
@@ -277,8 +292,6 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                     <Clock className="w-3.5 h-3.5 text-blue-500" />
                     <span>{String(Math.floor(timeSpent / 60)).padStart(2, '0')}:{String(timeSpent % 60).padStart(2, '0')}</span>
                  </div>
-                 <span className="text-[#28a745] font-bold">+4</span>
-                 <span className="text-[#dc3545] font-bold">-1</span>
                  
                  <button 
                    onClick={() => setBookmarkModalOpen(true)}
@@ -321,7 +334,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
             {/* Question Text */}
               <div className="mb-6 select-text" style={{ fontSize: `${fontSize}px` }}>
                 <div 
-                className="text-black font-medium leading-relaxed exam-math-content"
+                className={`font-medium leading-relaxed exam-math-content ${isLight ? 'text-black' : 'text-gray-100'}`}
                 dangerouslySetInnerHTML={{ __html: fixMathJax(currentQuestion.question) }}
                 />
               </div>
@@ -335,50 +348,32 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                       <span className="text-sm font-bold text-gray-700">📝 Subjective Question</span>
                       <span className="px-2 py-0.5 bg-purple-100 text-purple-700 text-[10px] font-bold rounded">Write Answer</span>
                     </div>
-                    {!isAnswerChecked ? (
-                      <button
-                        onClick={() => {
-                          setIsAnswerChecked(true);
-                          setSavedAnswers(prev => ({...prev, [currentQuestionIndex]: { selectedOption: 'viewed', isAnswerChecked: true }}));
-                          if (onProgressUpdate) onProgressUpdate(currentQuestion.id, { status: 'correct', timeSpentSeconds: timeSpent });
-                          setTimeout(() => { if (scrollContainerRef.current) scrollContainerRef.current.scrollTo({ top: scrollContainerRef.current.scrollHeight, behavior: 'smooth' }); }, 100);
-                        }}
-                        className="px-6 py-3 bg-[#3f51b5] text-white font-bold rounded-lg hover:bg-[#303f9f] transition-colors"
-                      >
-                        View Answer / Solution
-                      </button>
-                    ) : (
-                      <div className="mt-4">
-                        <div className="text-sm font-bold text-[#28a745] mb-2">✓ Model Answer:</div>
-                        <div className="text-black font-medium exam-math-content p-3 bg-white rounded border border-[#28a745]/30" style={{ fontSize: `${fontSize}px` }} dangerouslySetInnerHTML={{ __html: currentQuestion.correctAnswer || currentQuestion.solution || '<em>Solution shown below</em>' }} />
-                      </div>
-                    )}
                   </div>
                 </div>
               ) : !isNumerical ? (
                 (currentQuestion.options || []).map((opt, idx) => {
-                  const isSelected = selectedOption === idx;
-                  const isCorrectOption = idx === currentQuestion.correctOptionIndex;
+                  const isSelected = selectedOption === idx || selectedOption === String(idx);
+                  const isCorrectOption = idx === parseInt(currentQuestion.correctOptionIndex, 10);
                   
-                  let boxClass = 'border-gray-200 bg-white hover:border-gray-300';
+                  let boxClass = isLight ? 'border-gray-200 bg-white hover:border-gray-300' : 'border-gray-700 bg-[#1e293b] hover:border-gray-600 text-gray-200';
                   let circleClass = 'bg-[#1976d2] text-white';
 
-                  if (isAnswerChecked) {
+                  if (isAnswerChecked || isTestSubmitted) {
                     if (isSelected && isCorrectOption) {
-                      boxClass = 'border-[#28a745] bg-[#e8f5e9]';
+                      boxClass = isLight ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-[#28a745] bg-[#064e3b] text-white';
                       circleClass = 'bg-[#28a745] text-white';
                     } else if (isSelected && !isCorrectOption) {
-                      boxClass = 'border-[#dc3545] bg-[#fdecea]';
+                      boxClass = isLight ? 'border-[#dc3545] bg-[#fdecea]' : 'border-[#dc3545] bg-[#7f1d1d] text-white';
                       circleClass = 'bg-[#dc3545] text-white';
                     } else if (!isSelected && isCorrectOption) {
-                      boxClass = 'border-[#28a745] bg-[#e8f5e9]';
+                      boxClass = isLight ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-[#28a745] bg-[#064e3b] text-white';
                       circleClass = 'bg-[#28a745] text-white';
                     } else {
-                      boxClass = 'border-gray-200 bg-white opacity-50';
+                      boxClass = isLight ? 'border-gray-200 bg-white opacity-50' : 'border-gray-700 bg-[#1e293b] opacity-50';
                       circleClass = 'bg-gray-400 text-white';
                     }
                   } else if (isSelected) {
-                    boxClass = 'border-[#2962ff] bg-[#f0f4ff]';
+                    boxClass = isLight ? 'border-[#2962ff] bg-[#f0f4ff]' : 'border-[#60a5fa] bg-[#1e3a8a] text-white';
                   }
 
                   const labelChar = String.fromCharCode(65 + idx); // A, B, C, D
@@ -389,39 +384,26 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                       onClick={() => {
                         handleOptionSelect(idx);
                       }}
-                      disabled={isAnswerChecked}
+                      disabled={isAnswerChecked || isTestSubmitted}
                       className={`w-full text-left p-4 flex items-start gap-4 border rounded-xl transition-all shadow-sm relative overflow-hidden ${boxClass}`}
                     >
                       <div className={`w-[30px] h-[30px] shrink-0 rounded-full flex items-center justify-center font-bold text-[13px] ${circleClass}`}>
                         {labelChar}
                       </div>
-                      <div className="flex-1 mt-1 text-black font-medium exam-math-content" style={{ fontSize: `${Math.max(14, fontSize - 1)}px` }} dangerouslySetInnerHTML={{ __html: fixMathJax(opt) }} />
-                      
-                      {/* Correct Answer Badge */}
-                      {isAnswerChecked && isCorrectOption && (
-                        <div className="absolute top-0 right-0 bg-[#28a745] text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg">
-                           Your answer | Correct answer
-                        </div>
-                      )}
-                      {/* Users Percentage Mock */}
-                      {isAnswerChecked && (
-                        <div className="absolute bottom-2 right-2 px-1.5 py-0.5 bg-gray-500 text-white text-[9px] font-bold rounded">
-                           {Math.floor(Math.random() * 40 + 10)}% users
-                        </div>
-                      )}
+                      <div className={`flex-1 mt-1 font-medium exam-math-content ${isLight ? 'text-black' : 'text-gray-100'}`} style={{ fontSize: `${Math.max(14, fontSize - 1)}px` }} dangerouslySetInnerHTML={{ __html: fixMathJax(opt) }} />
                     </button>
                   );
                 })
               ) : (
                 <div className="col-span-1 md:col-span-2">
-                  <div className={`p-6 border rounded-xl shadow-sm ${isAnswerChecked ? (isCorrect ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-[#dc3545] bg-[#fdecea]') : 'border-gray-200 bg-white'}`}>
+                  <div className={`p-6 border rounded-xl shadow-sm ${isAnswerChecked || isTestSubmitted ? (isCorrect ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-[#dc3545] bg-[#fdecea]') : 'border-gray-200 bg-white'}`}>
                     <label className="block text-sm font-bold text-gray-700 mb-3">Your Answer:</label>
                     <input
                       type="text"
                       value={selectedOption || ''}
                       onChange={(e) => handleOptionSelect(e.target.value)}
-                      disabled={isAnswerChecked}
-                      className={`w-full max-w-xs px-4 py-3 border rounded-lg outline-none text-lg font-mono font-bold ${isAnswerChecked ? 'bg-white' : 'border-gray-300 focus:border-[#2962ff]'}`}
+                      disabled={isAnswerChecked || isTestSubmitted}
+                      className={`w-full max-w-xs px-4 py-3 border rounded-lg outline-none text-lg font-mono font-bold ${isAnswerChecked || isTestSubmitted ? 'bg-white' : 'border-gray-300 focus:border-[#2962ff]'}`}
                       placeholder="Type integer value..."
                     />
                   </div>
@@ -429,18 +411,12 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
               )}
             </div>
 
-            {/* Check Answer Button moved to Bottom Action Bar */}
-
             {/* Explanation Section */}
-            {(isAnswerChecked || savedAnswers[currentQuestionIndex]) && (
-              <div className="mt-8">
-                 <div 
-                    dangerouslySetInnerHTML={{ __html: formatUniqueSolution(currentQuestion.solution) }}
-                 />
+            {(isAnswerChecked || isTestSubmitted) && (
+               <div className="mt-8">
+                 <TeacherSolution html={currentQuestion.solution} isLight={isLight} />
                  <div className="bg-transparent mt-4 flex justify-end">
-                    <button className="text-[#1976d2] text-xs font-bold px-3 py-1 border border-[#1976d2] rounded hover:bg-[#e3f2fd] transition-colors">
-                      Add a Note
-                    </button>
+                    <button className="text-[#1976d2] text-xs font-bold px-3 py-1 border border-[#1976d2] rounded hover:bg-[#e3f2fd] transition-colors">Add a Note</button>
                  </div>
               </div>
              )}
@@ -448,7 +424,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
           </div>
 
           {/* Bottom Action Bar (Fixed to left content area) */}
-          <div className="bg-white border-t border-gray-200 px-4 sm:px-6 py-3 flex justify-between items-center z-10 shadow-[0_-4px_10px_rgba(0,-4px,10px,0.03)] shrink-0 h-auto sm:h-16 flex-wrap sm:flex-nowrap gap-2">
+          <div className={`border-t px-4 sm:px-6 py-3 flex justify-between items-center z-10 shadow-[0_-4px_10px_rgba(0,-4px,10px,0.03)] shrink-0 h-auto sm:h-16 flex-wrap sm:flex-nowrap gap-2 ${isLight ? 'bg-white border-gray-200' : 'bg-[#1e293b] border-gray-700'}`}>
             
             <div className="flex items-center gap-2">
               <button 
@@ -470,31 +446,25 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
             </div>
 
             <div className="flex-1 flex justify-center">
-              {practiceMode !== 'test' && !isAnswerChecked && !isSubjective && (
-                 <button 
-                   onClick={() => {
-                     if (selectedOption === '') {
-                        setIsAnswerChecked(true);
-                        setSavedAnswers(prev => ({...prev, [currentQuestionIndex]: { selectedOption: '', isAnswerChecked: true }}));
-                        setTimeout(() => {
-                          if (scrollContainerRef.current) scrollContainerRef.current.scrollTo({ top: scrollContainerRef.current.scrollHeight, behavior: 'smooth' });
-                        }, 100);
-                     } else {
+              {!isTestSubmitted && practiceMode !== 'test' && (
+                  <button 
+                    onClick={() => {
+                      if (selectedOption === '' || selectedOption === undefined) {
+                         setIsAnswerChecked(true); // Just show solution
+                      } else if (!isAnswerChecked) {
                         handleCheckAnswer();
-                     }
-                   }}
-                   className={`px-6 sm:px-10 py-2.5 rounded-lg font-bold text-[14px] uppercase tracking-wide transition-all duration-300 flex items-center justify-center gap-2 shadow-sm ${
-                     selectedOption !== '' 
-                       ? 'bg-[#28a745] hover:bg-[#218838] text-white shadow-[#28a745]/30 transform hover:-translate-y-0.5 border border-[#218838]'
-                       : 'bg-white hover:bg-gray-50 text-[#1976d2] shadow-sm border-2 border-[#1976d2]'
-                   }`}
-                 >
-                   {selectedOption !== '' ? (
-                     <><CheckCircle className="w-4 h-4" /> Check Answer</>
-                   ) : (
-                     <><Eye className="w-4 h-4" /> View Solution</>
-                   )}
-                 </button>
+                      }
+                    }}
+                    className={`px-8 py-2.5 rounded shadow-sm text-[13px] uppercase font-bold tracking-wider transition-all flex items-center justify-center gap-2
+                      ${isAnswerChecked || isTestSubmitted 
+                        ? 'bg-transparent border-2 border-[#1976d2] text-[#1976d2] opacity-50 cursor-not-allowed' 
+                        : (selectedOption !== '' && selectedOption !== undefined)
+                          ? 'bg-[#28a745] hover:bg-[#218838] text-white shadow-md transform hover:-translate-y-0.5' 
+                          : 'bg-white border-2 border-[#1976d2] text-[#1976d2] hover:bg-gray-50 shadow-sm'}`}
+                    disabled={isAnswerChecked || isTestSubmitted}
+                  >
+                    {selectedOption !== '' && selectedOption !== undefined ? <><CheckCircle className="w-4 h-4" /> Check Answer</> : <><Eye className="w-4 h-4" /> View Solution</>}
+                  </button>
               )}
             </div>
 
@@ -512,7 +482,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
         </div>
 
         {/* Right Sidebar: Bubble Grid */}
-        <div className="w-[320px] bg-white border-l border-gray-200 flex flex-col shrink-0 overflow-hidden shadow-[-4px_0_10px_rgba(0,0,0,0.02)] z-0">
+        <div className={`w-[320px] border-l flex flex-col shrink-0 overflow-hidden shadow-[-4px_0_10px_rgba(0,0,0,0.02)] z-0 ${isLight ? 'bg-white border-gray-200' : 'bg-[#0f172a] border-gray-800'}`}>
           
           {/* Status Legend */}
           <div className="p-4 border-b border-gray-100 grid grid-cols-2 gap-y-3">
@@ -524,9 +494,9 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
           </div>
 
           {/* Subject Header with Counts */}
-          <div className="px-4 py-3 border-b border-gray-100 bg-[#f8f9fa]">
-             <h4 className="font-semibold text-black text-[14px] mb-3">{topic?.name || 'Mathematics'}</h4>
-             <div className="flex items-center justify-between text-[11px] font-semibold text-gray-700">
+          <div className={`px-4 py-3 border-b ${isLight ? 'border-gray-100 bg-[#f8f9fa]' : 'border-gray-800 bg-[#1e293b]'}`}>
+             <h4 className={`font-semibold text-[14px] mb-3 ${isLight ? 'text-black' : 'text-gray-100'}`}>{topic?.name || 'Mathematics'}</h4>
+             <div className={`flex items-center justify-between text-[11px] font-semibold ${isLight ? 'text-gray-700' : 'text-gray-300'}`}>
                 <span className="flex items-center gap-1"><div className="w-2.5 h-2.5 rounded-full bg-[#28a745]"></div> {(() => {
                   let count = 0;
                   questions.forEach((q, idx) => {
