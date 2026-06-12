@@ -19,6 +19,11 @@ const BookPractice = React.lazy(() => import('./pages/BookPractice'));
 
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 
+if (DEFAULT_SYLLABUS['jee-advanced'] && DEFAULT_SYLLABUS['jee-advanced'].subjects && DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics && DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics.chapters) {
+    DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics.chapters = DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics.chapters.slice(0, 4);
+}
+
+
 export default function App() {
   const [activePage, setActivePage] = useState(() => localStorage.getItem('quantrex_active_page') || 'home');
   const [token, setToken] = useState(localStorage.getItem('token') || null);
@@ -65,7 +70,7 @@ export default function App() {
     if (localStorage.getItem('quantrex_syllabus_v6')) {
       localStorage.removeItem('quantrex_syllabus_v6');
     }
-    const saved = localStorage.getItem('quantrex_syllabus_v7');
+    const saved = localStorage.getItem('quantrex_syllabus_v8');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
@@ -87,7 +92,7 @@ export default function App() {
 
   // Persist syllabus when updated (e.g. from Admin Dashboard)
   useEffect(() => {
-    localStorage.setItem('quantrex_syllabus_v7', JSON.stringify(syllabus));
+    localStorage.setItem('quantrex_syllabus_v8', JSON.stringify(syllabus));
   }, [syllabus]);
 
   // Persist toppers when updated
