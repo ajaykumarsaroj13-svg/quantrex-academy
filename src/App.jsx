@@ -78,7 +78,11 @@ export default function App() {
   });
 
   const [toppers, setToppers] = useState(() => {
-    const saved = localStorage.getItem('quantrex_toppers_v3');
+    // Clear old cache
+    if (localStorage.getItem('quantrex_toppers_v3')) {
+      localStorage.removeItem('quantrex_toppers_v3');
+    }
+    const saved = localStorage.getItem('quantrex_toppers_v4');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
@@ -97,7 +101,7 @@ export default function App() {
 
   // Persist toppers when updated
   useEffect(() => {
-    localStorage.setItem('quantrex_toppers_v3', JSON.stringify(toppers));
+    localStorage.setItem('quantrex_toppers_v4', JSON.stringify(toppers));
   }, [toppers]);
 
   useEffect(() => {
