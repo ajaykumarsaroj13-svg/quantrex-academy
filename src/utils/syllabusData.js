@@ -1,6 +1,2 @@
-
-import DEFAULT_SYLLABUS from './syllabus.json';
-import DEFAULT_TOPPERS from './toppers.json';
-
-export { DEFAULT_SYLLABUS, DEFAULT_TOPPERS };
-
+export const DEFAULT_SYLLABUS = window.DEFAULT_SYLLABUS || {};
+export const DEFAULT_TOPPERS = window.DEFAULT_TOPPERS || [];
