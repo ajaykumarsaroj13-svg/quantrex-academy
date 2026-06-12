@@ -1,4 +1,6 @@
-const s = '$$mn$$';
-console.log('Original:', s);
-console.log('Replace string:', s.replace(/\$\$/g, '$'));
-console.log('Replace function:', s.replace(/\$\$/g, () => '$'));
+
+const fs = require('fs');
+const d = require('./src/utils/syllabusData.js');
+console.log('Got syllabus data. Is it an object?', typeof d);
+console.log('Keys:', Object.keys(d));
+
