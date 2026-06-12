@@ -41,6 +41,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
   const [examGoalOverviewConfig, setExamGoalOverviewConfig] = useState(null);
 
   const pyqSetsProgress = usePYQProgress(selectedPyqTopic?.id || 'sets_and_relations');
+  const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
 
   const hasCourseAccess = (courseKey) => {
     return true;
@@ -97,9 +98,15 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
     setPurchasedList(list);
 
     const loadTests = async () => {
-      const activeData = testCategory === 'jee-advanced' ? advancedTestsData : testsData;
-      setTests(activeData);
-      localStorage.setItem('quantrex_tests', JSON.stringify(activeData));
+      try {
+        const examType = testCategory === 'jee-advanced' ? 'JEE Advanced' : 'JEE Main';
+        const res = await fetch(`${API_BASE}/api/test-series?exam=${examType}`);
+        const activeData = await res.json();
+        setTests(activeData);
+        localStorage.setItem('quantrex_tests', JSON.stringify(activeData));
+      } catch (err) {
+        console.error('Failed to load tests', err);
+      }
     };
     loadTests();
   }, [courses, user, testCategory]);
@@ -335,7 +342,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
 
                           const slug = ch.url ? ch.url.split('/').pop() : ch.id;
                           const fetchSlug = selectedSyllabusClass === 'jee-advanced' ? 'adv-' + slug : slug;
-                          fetch(`/data/questions/${fetchSlug}.json?_t=${Date.now()}`)
+                          const examTypeStr = selectedSyllabusClass === 'jee-advanced' ? 'JEE%20Advanced' : 'JEE%20Main';
+                          fetch(`${API_BASE}/api/pyqs/questions?chapterId=${ch.id}&exam=${examTypeStr}`)
                             .then(res => res.json())
                             .then(data => {
                               if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
@@ -596,7 +604,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                         onClick={() => {
                                           setIsPyqLoading(true);
                                           setActivePyqData(null);
-                                          fetch(`/data/questions/${fetchSlug}.json?_t=${Date.now()}`)
+                                          const examTypeStr = selectedSyllabusClass === 'jee-advanced' ? 'JEE%20Advanced' : 'JEE%20Main';
+                                          fetch(`${API_BASE}/api/pyqs/questions?chapterId=${chapter.id}&exam=${examTypeStr}`)
                                             .then(res => res.json())
                                             .then(data => {
                                               if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
@@ -643,7 +652,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                             onClick={() => {
                                               setIsPyqLoading(true);
                                               setActivePyqData(null);
-                                              fetch(`/data/questions/${fetchSlug}.json?_t=${Date.now()}`)
+                                              const examTypeStr = selectedSyllabusClass === 'jee-advanced' ? 'JEE%20Advanced' : 'JEE%20Main';
+                                              fetch(`${API_BASE}/api/pyqs/questions?chapterId=${chapter.id}&exam=${examTypeStr}`)
                                                 .then(res => res.json())
                                                 .then(data => {
                                                   if (data && data.topics && data.questions && !Array.isArray(data.questions)) {

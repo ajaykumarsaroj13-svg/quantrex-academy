@@ -19,6 +19,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   const [testData, setTestData]         = useState(null);
   const [loading, setLoading]           = useState(true);
   const [error, setError]               = useState(null);
+  const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
   const [currentSubjectIdx, setCurrentSubjectIdx] = useState(0);
   const [currentSection, setCurrentSection] = useState('A'); // 'A' or 'B'
   const [currentQIdx, setCurrentQIdx]   = useState(0);
@@ -36,9 +37,12 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   useEffect(() => {
     if (!testId) return;
     setLoading(true);
-    fetch(`/data/tests/${testId}.json?v=3`)
+    fetch(`${API_BASE}/api/test-series/${testId}`)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(data => {
+        // Map API field names for backward compatibility
+        data.examType = data.examType || data.exam;
+        data.duration = data.duration || data.durationMinutes;
         // Sort questions: Physics → Chemistry → Mathematics, then Section A before B
         if (data.questions) {
           data.questions = sortQuestions(data.questions, data.examType);

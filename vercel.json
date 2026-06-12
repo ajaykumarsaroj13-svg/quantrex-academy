@@ -1,4 +1,7 @@
 {
   "name": "quantrexacademy",
-  "alias": ["quantrexacademy.vercel.app", "quantrexacademy.com"]
+  "alias": ["quantrexacademy.vercel.app", "quantrexacademy.com"],
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" }
+  ]
 }

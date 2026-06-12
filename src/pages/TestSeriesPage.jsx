@@ -13,7 +13,7 @@ const TestSeriesPage = ({ user, onStartTest, onBack }) => {
   const fetchTests = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/data/test-series.json');
+      const res = await fetch(`${API_BASE}/api/test-series`);
       if (!res.ok) throw new Error(`Server error: ${res.status}`);
       const data = await res.json();
       const arr = Array.isArray(data) ? data : (data.tests || data.data || []);
