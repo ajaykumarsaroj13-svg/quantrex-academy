@@ -1,4 +1,4 @@
-[
+window.DEFAULT_BLACKBOOK = [
   {
     "id": "black_book_ch1_functions",
     "chapterNumber": 1,
@@ -10422,4 +10422,4 @@
       }
     ]
   }
-]
+];

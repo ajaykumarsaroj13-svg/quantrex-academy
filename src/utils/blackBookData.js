@@ -1,4 +1,4 @@
-import fullData from './blackBookDataFull.json';
+const fullData = window.DEFAULT_BLACKBOOK || [];
 
 export const blackBookDemoData = {
   id: "black-book-maths",

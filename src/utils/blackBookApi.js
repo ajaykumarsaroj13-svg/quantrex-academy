@@ -16,8 +16,8 @@ export async function fetchBlackBookQuestions(chapterId = 'function') {
     return await res.json();
   } catch (e) {
     console.warn('[BlackBook] API fetch failed, using local JSON:', e.message);
-    // Fallback: import local JSON
-    const { default: fullData } = await import('./blackBookDataFull.json');
+    // Fallback: use global variable
+    const fullData = window.DEFAULT_BLACKBOOK || [];
     const chapter = fullData[0];
     return chapter?.questions?.map((q, idx) => ({
       ...q,
