@@ -37,7 +37,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   useEffect(() => {
     if (!testId) return;
     setLoading(true);
-    fetch(`${API_BASE}/api/test-series/${testId}`)
+    fetch(`/data/tests/${testId}.json?v=3`)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(data => {
         // Map API field names for backward compatibility

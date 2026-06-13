@@ -20,10 +20,10 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
   useEffect(() => {
     if (!result?.testId) return;
     setLoading(true);
-    fetch(`${API_BASE}/api/test-series/${result.testId}`)
+    fetch(`/data/tests/${result.testId}.json?v=3`)
       .then((r) => r.json())
       .then((data) => {
-        if (!data.error) {
+        if (data) {
           setTestDetails(data);
         }
         setLoading(false);
