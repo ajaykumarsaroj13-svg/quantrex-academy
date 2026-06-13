@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Clock from 'lucide-react/dist/esm/icons/clock';
-import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle2';
+import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2';
 import AlertCircle from 'lucide-react/dist/esm/icons/alert-circle';
 import FileText from 'lucide-react/dist/esm/icons/file-text';
 import ChevronLeft from 'lucide-react/dist/esm/icons/chevron-left';

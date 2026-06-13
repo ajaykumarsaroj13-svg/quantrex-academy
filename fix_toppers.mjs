@@ -1,0 +1,53 @@
+import fs from 'fs';
+let code = fs.readFileSync('src/utils/syllabusData.js', 'utf8');
+
+code = code.replace(/const DEFAULT_TOPPERS = \[[\s\S]*?\];/, `const DEFAULT_TOPPERS = [
+  {
+    "id": "t1",
+    "name": "Dibyanshu Sahoo",
+    "rank": "JEE Main 2026",
+    "score": "JEE Main",
+    "year": "2026",
+    "photo": "/images/toppers/dibyanshu_main.jpg",
+    "isPoster": true
+  },
+  {
+    "id": "t2",
+    "name": "Dibyanshu Sahoo",
+    "rank": "JEE Advanced 2026",
+    "score": "JEE Advanced",
+    "year": "2026",
+    "photo": "/images/toppers/dibyanshu_adv.jpg",
+    "isPoster": true
+  },
+  {
+    "id": "t3",
+    "name": "Rakshit Aryan",
+    "rank": "2022",
+    "score": "JEE Main",
+    "year": "2022",
+    "photo": "/images/toppers/rakshit-2022.jpg",
+    "isPoster": true
+  },
+  {
+    "id": "t4",
+    "name": "Arkadeep Jana",
+    "rank": "97.69 %ile",
+    "score": "JEE Main",
+    "year": "2024",
+    "photo": "/images/toppers/arkadeep.jpg",
+    "isPoster": true
+  },
+  {
+    "id": "t5",
+    "name": "Yash Pant",
+    "rank": "97.38 %ile",
+    "score": "JEE Main",
+    "year": "2024",
+    "photo": "/images/toppers/yash-pant.jpg",
+    "isPoster": true
+  }
+];`);
+
+fs.writeFileSync('src/utils/syllabusData.js', code);
+console.log('done syllabus');

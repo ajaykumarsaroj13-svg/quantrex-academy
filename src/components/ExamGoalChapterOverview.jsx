@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
 import Clock from 'lucide-react/dist/esm/icons/clock';
 import Target from 'lucide-react/dist/esm/icons/target';
-import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle2';
+import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2';
 import XCircle from 'lucide-react/dist/esm/icons/x-circle';
 import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
 import Filter from 'lucide-react/dist/esm/icons/filter';
