@@ -70,11 +70,27 @@ export default function App() {
     if (localStorage.getItem('quantrex_syllabus_v6')) {
       localStorage.removeItem('quantrex_syllabus_v6');
     }
-    const saved = localStorage.getItem('quantrex_syllabus_v8');
+    if (localStorage.getItem('quantrex_syllabus_v8')) {
+      localStorage.removeItem('quantrex_syllabus_v8');
+    }
+    const saved = localStorage.getItem('quantrex_syllabus_v9');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
-    return DEFAULT_SYLLABUS;
+    // Ensure we read the latest window object since loadScript finishes after imports
+    const activeSyllabus = window.DEFAULT_SYLLABUS && Object.keys(window.DEFAULT_SYLLABUS).length > 0 
+      ? window.DEFAULT_SYLLABUS 
+      : DEFAULT_SYLLABUS;
+      
+    // Apply slice for advanced mathematics chapters if present
+    if (activeSyllabus['jee-advanced'] && activeSyllabus['jee-advanced'].subjects && 
+        activeSyllabus['jee-advanced'].subjects.mathematics && 
+        activeSyllabus['jee-advanced'].subjects.mathematics.chapters) {
+        activeSyllabus['jee-advanced'].subjects.mathematics.chapters = 
+            activeSyllabus['jee-advanced'].subjects.mathematics.chapters.slice(0, 4);
+    }
+    
+    return activeSyllabus;
   });
 
   const [toppers, setToppers] = useState(() => {
@@ -86,7 +102,10 @@ export default function App() {
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
-    return DEFAULT_TOPPERS;
+    const activeToppers = window.DEFAULT_TOPPERS && window.DEFAULT_TOPPERS.length > 0 
+      ? window.DEFAULT_TOPPERS 
+      : DEFAULT_TOPPERS;
+    return activeToppers;
   });
 
   // Keep page and states persistent across browser refresh
@@ -96,7 +115,7 @@ export default function App() {
 
   // Persist syllabus when updated (e.g. from Admin Dashboard)
   useEffect(() => {
-    localStorage.setItem('quantrex_syllabus_v8', JSON.stringify(syllabus));
+    localStorage.setItem('quantrex_syllabus_v9', JSON.stringify(syllabus));
   }, [syllabus]);
 
   // Persist toppers when updated
