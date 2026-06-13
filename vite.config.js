@@ -6,15 +6,8 @@ export default defineConfig({
   plugins: [react()],
   base: process.env.VERCEL ? '/' : '/quantrex-academy/',
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'vendor-react': ['react', 'react-dom'],
-          'vendor-icons': ['lucide-react'],
-        }
-      }
-    },
-    chunkSizeWarningLimit: 600,
+    minify: false,
+    chunkSizeWarningLimit: 2000,
   },
   server: {
     port: 3000,
