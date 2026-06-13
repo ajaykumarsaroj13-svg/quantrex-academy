@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { ArrowLeft, ZoomIn, ZoomOut } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
 
 export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);

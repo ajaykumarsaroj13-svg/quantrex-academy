@@ -1,5 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Play, Pause, RotateCcw, Volume2, Maximize2, Settings, MessageSquare, BookOpen, AlertTriangle } from 'lucide-react';
+import Play from 'lucide-react/dist/esm/icons/play';
+import Pause from 'lucide-react/dist/esm/icons/pause';
+import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
+import Volume2 from 'lucide-react/dist/esm/icons/volume2';
+import Maximize2 from 'lucide-react/dist/esm/icons/maximize2';
+import Settings from 'lucide-react/dist/esm/icons/settings';
+import MessageSquare from 'lucide-react/dist/esm/icons/message-square';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import AlertTriangle from 'lucide-react/dist/esm/icons/alert-triangle';
 
 export default function VideoPlayer({ videoUrl, videoTitle, studentInfo, onReportBreach }) {
   const videoRef = useRef(null);

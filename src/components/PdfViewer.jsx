@@ -1,8 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react';
-import {
-  FileText, Image, Download, Eye, ZoomIn, ZoomOut, RotateCw,
-  CheckCircle, ExternalLink, Maximize2, X
-} from 'lucide-react';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
+import Image from 'lucide-react/dist/esm/icons/image';
+import Download from 'lucide-react/dist/esm/icons/download';
+import Eye from 'lucide-react/dist/esm/icons/eye';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
+import RotateCw from 'lucide-react/dist/esm/icons/rotate-cw';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
+import ExternalLink from 'lucide-react/dist/esm/icons/external-link';
+import Maximize2 from 'lucide-react/dist/esm/icons/maximize2';
+import X from 'lucide-react/dist/esm/icons/x';
 
 /**
  * SmartViewer — renders PDFs (base64 or URL) inline via <iframe>

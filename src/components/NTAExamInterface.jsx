@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { ZoomIn, ZoomOut } from 'lucide-react';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
 import './NTAExamInterface.css';
 
 const QUESTION_STATUS = {

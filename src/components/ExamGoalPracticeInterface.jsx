@@ -1,5 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowLeft, Plus, AlertCircle, Clock, Bookmark, ZoomIn, ZoomOut, CheckCircle, Eye } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import Plus from 'lucide-react/dist/esm/icons/plus';
+import AlertCircle from 'lucide-react/dist/esm/icons/alert-circle';
+import Clock from 'lucide-react/dist/esm/icons/clock';
+import Bookmark from 'lucide-react/dist/esm/icons/bookmark';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
+import Eye from 'lucide-react/dist/esm/icons/eye';
 import BookmarkGroupModal from './BookmarkGroupModal';
 import TeacherSolution from './TeacherSolution';
 

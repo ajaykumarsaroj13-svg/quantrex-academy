@@ -1,5 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { CheckCircle, Bookmark, Trash2, ArrowRight, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
+import Bookmark from 'lucide-react/dist/esm/icons/bookmark';
+import Trash2 from 'lucide-react/dist/esm/icons/trash2';
+import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
 import TeacherSolution from './TeacherSolution';
 
 export default function PYQViewer({ pyqData, topic, onClose, isLight }) {

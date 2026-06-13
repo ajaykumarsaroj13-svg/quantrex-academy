@@ -1,5 +1,10 @@
 import React from 'react';
-import { Shield, Sparkles, LogOut, Moon, Sun, BookOpen } from 'lucide-react';
+import Shield from 'lucide-react/dist/esm/icons/shield';
+import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
+import LogOut from 'lucide-react/dist/esm/icons/log-out';
+import Moon from 'lucide-react/dist/esm/icons/moon';
+import Sun from 'lucide-react/dist/esm/icons/sun';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
 import logoImg from '../assets/logo.png';
 
 export default function Navbar({ activePage, setActivePage, user, onLogout, customLogo, theme, onToggleTheme, themeColor, onColorChange }) {

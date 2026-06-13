@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { X, Plus, Bookmark } from 'lucide-react';
+import X from 'lucide-react/dist/esm/icons/x';
+import Plus from 'lucide-react/dist/esm/icons/plus';
+import Bookmark from 'lucide-react/dist/esm/icons/bookmark';
 
 export default function BookmarkGroupModal({ 
   isOpen, 

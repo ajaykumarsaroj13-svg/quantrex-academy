@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { ShieldAlert, Mail, Lock, Phone, UserCheck, Key, ShieldCheck } from 'lucide-react';
+import ShieldAlert from 'lucide-react/dist/esm/icons/shield-alert';
+import Mail from 'lucide-react/dist/esm/icons/mail';
+import Lock from 'lucide-react/dist/esm/icons/lock';
+import Phone from 'lucide-react/dist/esm/icons/phone';
+import UserCheck from 'lucide-react/dist/esm/icons/user-check';
+import Key from 'lucide-react/dist/esm/icons/key';
+import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check';
 
 export default function Auth({ onLoginSuccess, setActivePage }) {
   const [authMode, setAuthMode] = useState('admin-login'); // admin-login only

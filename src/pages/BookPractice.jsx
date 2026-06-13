@@ -1,8 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {
-  ArrowLeft, CheckCircle, XCircle, Eye, ChevronRight, ChevronLeft,
-  Clock, RotateCcw, BookOpen, Award, Target, CloudOff, Cloud, RefreshCw, ZoomIn, ZoomOut
-} from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
+import XCircle from 'lucide-react/dist/esm/icons/x-circle';
+import Eye from 'lucide-react/dist/esm/icons/eye';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
+import ChevronLeft from 'lucide-react/dist/esm/icons/chevron-left';
+import Clock from 'lucide-react/dist/esm/icons/clock';
+import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import Award from 'lucide-react/dist/esm/icons/award';
+import Target from 'lucide-react/dist/esm/icons/target';
+import CloudOff from 'lucide-react/dist/esm/icons/cloud-off';
+import Cloud from 'lucide-react/dist/esm/icons/cloud';
+import RefreshCw from 'lucide-react/dist/esm/icons/refresh-cw';
+import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
+import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
 import { fetchBlackBookProgress, saveBlackBookProgress, resetBlackBookProgress } from '../utils/blackBookApi';
 import MathRenderer from '../utils/MathRenderer';
 import TeacherSolution from '../components/TeacherSolution';

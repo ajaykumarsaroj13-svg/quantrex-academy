@@ -1,8 +1,59 @@
 import React, { useState } from 'react';
-import { Shield, Sparkles, BookOpen, Star, HelpCircle, PhoneCall, Gift, MessageCircle, Bot, FileText, Flame, Award, Layers, ChevronRight, Zap, Target, TrendingUp, Rocket, Trophy, CheckCircle } from 'lucide-react';
+import Shield from 'lucide-react/dist/esm/icons/shield';
+import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import Star from 'lucide-react/dist/esm/icons/star';
+import HelpCircle from 'lucide-react/dist/esm/icons/help-circle';
+import PhoneCall from 'lucide-react/dist/esm/icons/phone-call';
+import Gift from 'lucide-react/dist/esm/icons/gift';
+import MessageCircle from 'lucide-react/dist/esm/icons/message-circle';
+import Bot from 'lucide-react/dist/esm/icons/bot';
+import FileText from 'lucide-react/dist/esm/icons/file-text';
+import Flame from 'lucide-react/dist/esm/icons/flame';
+import Award from 'lucide-react/dist/esm/icons/award';
+import Layers from 'lucide-react/dist/esm/icons/layers';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
+import Zap from 'lucide-react/dist/esm/icons/zap';
+import Target from 'lucide-react/dist/esm/icons/target';
+import TrendingUp from 'lucide-react/dist/esm/icons/trending-up';
+import Rocket from 'lucide-react/dist/esm/icons/rocket';
+import Trophy from 'lucide-react/dist/esm/icons/trophy';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
 
 export default function Home({ user, setActivePage, courses, setCourses, toppers, onStartLearning }) {
   const [activeFaq, setActiveFaq] = useState(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const heroSlides = [
+    {
+      src: "https://raw.githubusercontent.com/ajaykumarsaroj13-svg/quantrex-academy/main/public/images/toppers/dibyanshu_main.jpg?v=3",
+      alt: "Divyanshu Sahu",
+      border: "border-gold/20",
+      glow: "shadow-[0_0_30px_rgba(245,158,11,0.15)]",
+      hover: "hover:border-gold hover:shadow-[0_0_40px_rgba(245,158,11,0.3)]"
+    },
+    {
+      src: "https://raw.githubusercontent.com/ajaykumarsaroj13-svg/quantrex-academy/main/public/images/toppers/arkadeep.jpg?v=3",
+      alt: "Arc Deep",
+      border: "border-electric/20",
+      glow: "shadow-[0_0_30px_rgba(0,240,255,0.15)]",
+      hover: "hover:border-electric hover:shadow-[0_0_40px_rgba(0,240,255,0.3)]"
+    },
+    {
+      src: "https://raw.githubusercontent.com/ajaykumarsaroj13-svg/quantrex-academy/main/public/images/toppers/yash-pant.jpg?v=3",
+      alt: "Yashwant",
+      border: "border-emerald-500/20",
+      glow: "shadow-[0_0_30px_rgba(16,185,129,0.15)]",
+      hover: "hover:border-emerald-500 hover:shadow-[0_0_40px_rgba(16,185,129,0.3)]"
+    }
+  ];
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [heroSlides.length]);
 
   const mathHubCards = [
     {
@@ -139,25 +190,50 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
               </p>
             </div>
             
-            {/* FEATURED TOPPERS (2024 & 2022) */}
-            <div className="w-full max-w-5xl mx-auto mb-20 px-4 flex flex-col items-center gap-10">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full">
-                {/* Left: Dibyanshu Main */}
-                <div className="relative group bg-obsidian border border-gold/20 rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(245,158,11,0.15)] hover:border-gold hover:shadow-[0_0_40px_rgba(245,158,11,0.3)] transition-all duration-500 hover:-translate-y-2">
-                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <img src="https://raw.githubusercontent.com/ajaykumarsaroj13-svg/quantrex-academy/main/public/images/toppers/dibyanshu_main.jpg?v=3" alt="Dibyanshu Sahoo JEE Main 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
-                </div>
-                
-                {/* Right: Dibyanshu Advanced */}
-                <div className="relative group bg-obsidian border border-electric/20 rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(0,240,255,0.15)] hover:border-electric hover:shadow-[0_0_40px_rgba(0,240,255,0.3)] transition-all duration-500 hover:-translate-y-2">
-                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <img src="https://raw.githubusercontent.com/ajaykumarsaroj13-svg/quantrex-academy/main/public/images/toppers/dibyanshu_adv.jpg?v=3" alt="Dibyanshu Sahoo JEE Advanced 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
-                </div>
+            {/* FEATURED TOPPERS SLIDER (Arc Deep, Yashwant, Divyanshu Sahu) */}
+            <div className="w-full max-w-4xl mx-auto mb-20 px-4 flex flex-col items-center gap-6">
+              <div className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-2xl border border-white/10 shadow-2xl group">
+                {heroSlides.map((slide, idx) => (
+                  <div
+                    key={idx}
+                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                  >
+                    <div className={`w-full h-full relative bg-obsidian border ${slide.border} rounded-2xl overflow-hidden ${slide.glow} ${slide.hover} transition-all duration-500`}>
+                      <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" />
+                      <div className="absolute bottom-6 left-0 right-0 text-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <span className="bg-obsidian/80 backdrop-blur border border-white/20 text-white font-bold px-4 py-2 rounded-full uppercase tracking-widest text-sm shadow-xl">
+                          {slide.alt}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+
+                {/* Left/Right Arrows */}
+                <button 
+                  onClick={() => setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length)}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full backdrop-blur border border-white/10 transition-all opacity-0 group-hover:opacity-100"
+                >
+                  <ChevronRight className="h-6 w-6 rotate-180" />
+                </button>
+                <button 
+                  onClick={() => setCurrentSlide((prev) => (prev + 1) % heroSlides.length)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full backdrop-blur border border-white/10 transition-all opacity-0 group-hover:opacity-100"
+                >
+                  <ChevronRight className="h-6 w-6" />
+                </button>
               </div>
 
-              {/* Third Photo: Rakshit Aryan */}
-              <div className="w-full md:w-[60%] lg:w-[50%] relative group bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-500 hover:-translate-y-2">
-                <img src="https://raw.githubusercontent.com/ajaykumarsaroj13-svg/quantrex-academy/main/public/images/toppers/rakshit-2022.jpg?v=3" alt="Rakshit Aryan 2022" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+              {/* Slider Dots */}
+              <div className="flex gap-3 justify-center items-center mt-4">
+                {heroSlides.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setCurrentSlide(idx)}
+                    className={`h-2 transition-all duration-300 rounded-full ${idx === currentSlide ? 'w-8 bg-electric' : 'w-2 bg-white/20 hover:bg-white/40'}`}
+                  />
+                ))}
               </div>
             </div>
 

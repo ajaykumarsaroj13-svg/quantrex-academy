@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import MathCanvas from './components/MathCanvas';
 import Home from './pages/Home';
 import Auth from './pages/Auth';
-import Shield from 'lucide-react/dist/esm/icons/shield';
+import { Shield } from 'lucide-react';
 
 const StudentDashboard = React.lazy(() => import('./pages/StudentDashboard'));
 const AdminDashboard = React.lazy(() => import('./pages/AdminDashboard'));

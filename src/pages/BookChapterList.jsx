@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { Book, ChevronRight, ArrowLeft, PlayCircle } from 'lucide-react';
+import Book from 'lucide-react/dist/esm/icons/book';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import PlayCircle from 'lucide-react/dist/esm/icons/play-circle';
 import { blackBookDemoData } from '../utils/blackBookData';
 
 export default function BookChapterList({ book, setActivePage, setPracticeChapter, theme }) {

@@ -1,5 +1,8 @@
 import React from 'react';
-import { Book, ChevronRight, Download, ArrowLeft } from 'lucide-react';
+import Book from 'lucide-react/dist/esm/icons/book';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
+import Download from 'lucide-react/dist/esm/icons/download';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
 
 export default function BooksLibrary({ setActivePage, theme, setReadingBook, user }) {
   const isLight = theme === 'light';

@@ -1,5 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { ArrowLeft, Search, PlayCircle, BookOpen, Clock, Target, Calendar } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import Search from 'lucide-react/dist/esm/icons/search';
+import PlayCircle from 'lucide-react/dist/esm/icons/play-circle';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import Clock from 'lucide-react/dist/esm/icons/clock';
+import Target from 'lucide-react/dist/esm/icons/target';
+import Calendar from 'lucide-react/dist/esm/icons/calendar';
 
 const TestSeriesPage = ({ user, onStartTest, onBack }) => {
   const [tests, setTests] = useState([]);

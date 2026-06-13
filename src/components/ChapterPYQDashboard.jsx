@@ -1,5 +1,22 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { ArrowLeft, PlayCircle, Target, CheckCircle2, XCircle, Clock, AlertTriangle, BarChart2, Filter, ChevronDown, List, BookOpen, Search, Bookmark, AlignLeft, Flag, MoreVertical, Flame } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import PlayCircle from 'lucide-react/dist/esm/icons/play-circle';
+import Target from 'lucide-react/dist/esm/icons/target';
+import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle2';
+import XCircle from 'lucide-react/dist/esm/icons/x-circle';
+import Clock from 'lucide-react/dist/esm/icons/clock';
+import AlertTriangle from 'lucide-react/dist/esm/icons/alert-triangle';
+import BarChart2 from 'lucide-react/dist/esm/icons/bar-chart2';
+import Filter from 'lucide-react/dist/esm/icons/filter';
+import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
+import List from 'lucide-react/dist/esm/icons/list';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import Search from 'lucide-react/dist/esm/icons/search';
+import Bookmark from 'lucide-react/dist/esm/icons/bookmark';
+import AlignLeft from 'lucide-react/dist/esm/icons/align-left';
+import Flag from 'lucide-react/dist/esm/icons/flag';
+import MoreVertical from 'lucide-react/dist/esm/icons/more-vertical';
+import Flame from 'lucide-react/dist/esm/icons/flame';
 import { usePYQProgress } from '../hooks/usePYQProgress';
 import BookmarkGroupModal from './BookmarkGroupModal';
 
