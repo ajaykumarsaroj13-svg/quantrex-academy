@@ -8,7 +8,7 @@ import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
 import RotateCw from 'lucide-react/dist/esm/icons/rotate-cw';
 import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
 import ExternalLink from 'lucide-react/dist/esm/icons/external-link';
-import Maximize2 from 'lucide-react/dist/esm/icons/maximize2';
+import Maximize2 from 'lucide-react/dist/esm/icons/maximize-2';
 import X from 'lucide-react/dist/esm/icons/x';
 
 /**

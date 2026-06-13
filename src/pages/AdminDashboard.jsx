@@ -11,7 +11,7 @@ import Check from 'lucide-react/dist/esm/icons/check';
 import DollarSign from 'lucide-react/dist/esm/icons/dollar-sign';
 import PlusCircle from 'lucide-react/dist/esm/icons/plus-circle';
 import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
-import Trash2 from 'lucide-react/dist/esm/icons/trash2';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
 import Calendar from 'lucide-react/dist/esm/icons/calendar';
 import FileText from 'lucide-react/dist/esm/icons/file-text';
 import Play from 'lucide-react/dist/esm/icons/play';
