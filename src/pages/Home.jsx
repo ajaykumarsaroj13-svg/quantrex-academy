@@ -142,16 +142,16 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
             {/* FEATURED TOPPERS (2024 & 2022) */}
             <div className="w-full max-w-5xl mx-auto mb-20 px-4 flex flex-col items-center gap-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full">
-                {/* Left: Dibyanshu Main */}
-                <div className="relative group bg-obsidian border border-gold/20 rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(245,158,11,0.15)] hover:border-gold hover:shadow-[0_0_40px_rgba(245,158,11,0.3)] transition-all duration-500 hover:-translate-y-2">
-                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <img src="/images/toppers/dibyanshu_main.jpg" alt="Dibyanshu Sahoo JEE Main 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
-                </div>
-                
-                {/* Right: Dibyanshu Advanced */}
+                {/* Left: Dibyanshu Advanced */}
                 <div className="relative group bg-obsidian border border-electric/20 rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(0,240,255,0.15)] hover:border-electric hover:shadow-[0_0_40px_rgba(0,240,255,0.3)] transition-all duration-500 hover:-translate-y-2">
                   <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <img src="/images/toppers/dibyanshu_adv.jpg" alt="Dibyanshu Sahoo JEE Advanced 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
+                </div>
+                
+                {/* Right: Dibyanshu Main */}
+                <div className="relative group bg-obsidian border border-gold/20 rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(245,158,11,0.15)] hover:border-gold hover:shadow-[0_0_40px_rgba(245,158,11,0.3)] transition-all duration-500 hover:-translate-y-2">
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <img src="/images/toppers/dibyanshu_main.jpg" alt="Dibyanshu Sahoo JEE Main 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
                 </div>
               </div>
 
