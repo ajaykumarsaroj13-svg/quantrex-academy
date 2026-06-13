@@ -31,6 +31,16 @@ const loadScript = (src) => new Promise((resolve, reject) => {
   document.head.appendChild(script);
 });
 
+// Safely patch localStorage to prevent QuotaExceededError crashes
+const originalSetItem = localStorage.setItem;
+localStorage.setItem = function(key, value) {
+  try {
+    originalSetItem.apply(this, arguments);
+  } catch (e) {
+    console.warn(`localStorage quota exceeded or unavailable. Could not save key: ${key}`);
+  }
+};
+
 // Load massive data scripts dynamically to prevent Vite from hanging during build
 Promise.all([
   loadScript('/data-script.js?v=3.0'),
