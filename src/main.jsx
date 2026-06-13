@@ -33,8 +33,8 @@ const loadScript = (src) => new Promise((resolve, reject) => {
 
 // Load massive data scripts dynamically to prevent Vite from hanging during build
 Promise.all([
-  loadScript('/data-script.js?v=2.5'),
-  loadScript('/blackbook-script.js?v=2.5')
+  loadScript('/data-script.js?v=3.0'),
+  loadScript('/blackbook-script.js?v=3.0')
 ]).then(() => {
   ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
