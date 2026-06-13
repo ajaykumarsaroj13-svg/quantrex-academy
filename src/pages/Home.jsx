@@ -166,43 +166,12 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
                 <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-obsidian to-transparent z-10 pointer-events-none"></div>
                 <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-obsidian to-transparent z-10 pointer-events-none"></div>
                 <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-8 py-6 px-4">
-                {[...(toppers || []), ...(toppers || [])].map((t, idx) => (
+                                {[...(toppers || []), ...(toppers || [])].map((t, idx) => (
                 <div
                   key={idx}
-                  className={`shrink-0 snap-center group relative bg-gradient-to-b from-obsidian to-cyberdark/80 border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold/40 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transition-all duration-500 hover:-translate-y-2 flex flex-col ${t.isPoster ? 'w-[400px] md:w-[500px]' : 'w-[300px] md:w-[400px]'}`}
+                  className="shrink-0 snap-center group relative bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold/40 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transition-all duration-500 hover:-translate-y-2 flex flex-col w-[300px] md:w-[400px]"
                 >
-                  {t.isPoster ? (
-                    <img src={t.photo} alt={t.name} className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
-                  ) : (
-                    <>
-                      {/* Glow effect behind */}
-                      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      
-                      {/* Image Container */}
-                      <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/3' }}>
-                        <img 
-                          src={t.photo} 
-                          alt={`${t.name} - ${t.score}`}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      </div>
-
-                      {/* Details Footer */}
-                      <div className="p-6 flex items-center justify-between border-t border-white/5 relative z-10 flex-1 bg-gradient-to-t from-obsidian to-transparent">
-                        <div>
-                          <h4 className="text-white font-black text-lg tracking-wide group-hover:text-gold transition-colors duration-300 drop-shadow-md">{t.name}</h4>
-                          <p className="text-[11px] text-gray-400 font-mono mt-1 tracking-wider">{t.year}</p>
-                        </div>
-                        <div className="text-right">
-                          <span className="block text-2xl font-black text-electric font-display drop-shadow-[0_0_8px_rgba(0,240,255,0.3)]">{t.rank}</span>
-                          <span className="text-[10px] bg-electric/10 text-electric border border-electric/30 px-2.5 py-1 rounded font-mono uppercase tracking-widest inline-block mt-1.5 shadow-[0_0_10px_rgba(0,240,255,0.1)]">
-                            {t.score || t.percent}
-                          </span>
-                        </div>
-                      </div>
-                    </>
-                  )}
+                  <img src={t.photo} alt={t.name} className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
                 </div>
               ))}
               </div>
