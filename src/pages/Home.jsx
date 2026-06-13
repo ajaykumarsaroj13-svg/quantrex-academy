@@ -161,10 +161,12 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
               </div>
             </div>
 
-            {/* SLIDER SECTION (No Repeats) */}
-            <div className="w-full overflow-hidden relative">
-              <div className="flex flex-row overflow-x-auto gap-8 py-6 px-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-              {(toppers || []).map((t, idx) => (
+            {/* SLIDER SECTION (Infinite Auto-scroll) */}
+              <div className="w-full overflow-hidden relative group">
+                <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-obsidian to-transparent z-10 pointer-events-none"></div>
+                <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-obsidian to-transparent z-10 pointer-events-none"></div>
+                <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-8 py-6 px-4">
+                {[...(toppers || []), ...(toppers || [])].map((t, idx) => (
                 <div
                   key={idx}
                   className={`shrink-0 snap-center group relative bg-gradient-to-b from-obsidian to-cyberdark/80 border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold/40 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transition-all duration-500 hover:-translate-y-2 flex flex-col ${t.isPoster ? 'w-[400px] md:w-[500px]' : 'w-[300px] md:w-[400px]'}`}
