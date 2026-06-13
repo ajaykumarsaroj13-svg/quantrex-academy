@@ -19,9 +19,7 @@ const BookPractice = React.lazy(() => import('./pages/BookPractice'));
 
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 
-if (DEFAULT_SYLLABUS['jee-advanced'] && DEFAULT_SYLLABUS['jee-advanced'].subjects && DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics && DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics.chapters) {
-    DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics.chapters = DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics.chapters.slice(0, 4);
-}
+
 
 
 export default function App() {
@@ -73,7 +71,10 @@ export default function App() {
     if (localStorage.getItem('quantrex_syllabus_v8')) {
       localStorage.removeItem('quantrex_syllabus_v8');
     }
-    const saved = localStorage.getItem('quantrex_syllabus_v9');
+    if (localStorage.getItem('quantrex_syllabus_v9')) {
+      localStorage.removeItem('quantrex_syllabus_v9');
+    }
+    const saved = localStorage.getItem('quantrex_syllabus_v10');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
@@ -81,14 +82,6 @@ export default function App() {
     const activeSyllabus = window.DEFAULT_SYLLABUS && Object.keys(window.DEFAULT_SYLLABUS).length > 0 
       ? window.DEFAULT_SYLLABUS 
       : DEFAULT_SYLLABUS;
-      
-    // Apply slice for advanced mathematics chapters if present
-    if (activeSyllabus['jee-advanced'] && activeSyllabus['jee-advanced'].subjects && 
-        activeSyllabus['jee-advanced'].subjects.mathematics && 
-        activeSyllabus['jee-advanced'].subjects.mathematics.chapters) {
-        activeSyllabus['jee-advanced'].subjects.mathematics.chapters = 
-            activeSyllabus['jee-advanced'].subjects.mathematics.chapters.slice(0, 4);
-    }
     
     return activeSyllabus;
   });
