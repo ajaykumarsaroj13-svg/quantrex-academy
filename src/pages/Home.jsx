@@ -1,66 +1,8 @@
 import React, { useState } from 'react';
-import Shield from 'lucide-react/dist/esm/icons/shield';
-import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
-import BookOpen from 'lucide-react/dist/esm/icons/book-open';
-import Star from 'lucide-react/dist/esm/icons/star';
-import HelpCircle from 'lucide-react/dist/esm/icons/help-circle';
-import PhoneCall from 'lucide-react/dist/esm/icons/phone-call';
-import Gift from 'lucide-react/dist/esm/icons/gift';
-import MessageCircle from 'lucide-react/dist/esm/icons/message-circle';
-import Bot from 'lucide-react/dist/esm/icons/bot';
-import FileText from 'lucide-react/dist/esm/icons/file-text';
-import Flame from 'lucide-react/dist/esm/icons/flame';
-import Award from 'lucide-react/dist/esm/icons/award';
-import Layers from 'lucide-react/dist/esm/icons/layers';
-import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
-import Zap from 'lucide-react/dist/esm/icons/zap';
-import Target from 'lucide-react/dist/esm/icons/target';
-import TrendingUp from 'lucide-react/dist/esm/icons/trending-up';
-import Rocket from 'lucide-react/dist/esm/icons/rocket';
-import Trophy from 'lucide-react/dist/esm/icons/trophy';
-import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
-import useScrollReveal from '../hooks/useScrollReveal';
+import { Shield, Sparkles, BookOpen, Star, HelpCircle, PhoneCall, Gift, MessageCircle, Bot, FileText, Flame, Award, Layers, ChevronRight, Zap, Target, TrendingUp, Rocket, Trophy, CheckCircle } from 'lucide-react';
 
 export default function Home({ user, setActivePage, courses, setCourses, toppers, onStartLearning }) {
   const [activeFaq, setActiveFaq] = useState(null);
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const revealRef1 = useScrollReveal();
-  const revealRef2 = useScrollReveal();
-  const revealRef3 = useScrollReveal();
-  const revealRef4 = useScrollReveal();
-  const revealRef5 = useScrollReveal();
-
-  const heroSlides = [
-    {
-      src: "/images/toppers/dibyanshu_adv.jpg?v=3",
-      alt: "Divyanshu Sahu JEE Advanced 2026",
-      border: "border-gold/20",
-      glow: "shadow-[0_0_30px_rgba(245,158,11,0.15)]",
-      hover: "hover:border-gold hover:shadow-[0_0_40px_rgba(245,158,11,0.3)]"
-    },
-    {
-      src: "/images/toppers/dibyanshu_main.jpg?v=3",
-      alt: "Divyanshu Sahu JEE Main 2026",
-      border: "border-electric/20",
-      glow: "shadow-[0_0_30px_rgba(0,240,255,0.15)]",
-      hover: "hover:border-electric hover:shadow-[0_0_40px_rgba(0,240,255,0.3)]"
-    },
-    {
-      src: "/images/toppers/rakshit-2022.jpg?v=3",
-      alt: "Rakshit Aryan 2022",
-      border: "border-emerald-500/20",
-      glow: "shadow-[0_0_30px_rgba(16,185,129,0.15)]",
-      hover: "hover:border-emerald-500 hover:shadow-[0_0_40px_rgba(16,185,129,0.3)]"
-    }
-  ];
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 4000);
-    return () => clearInterval(timer);
-  }, [heroSlides.length]);
 
   const mathHubCards = [
     {
@@ -177,6 +119,99 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
         <div className="absolute bottom-[-20%] left-[20%] w-[500px] h-[500px] bg-gold/10 rounded-full mix-blend-screen filter blur-[120px] animate-blob animation-delay-4000"></div>
       </div>
 
+    {/* ==================== TOPPERS / HALL OF FAME ==================== */}
+      <section className="bg-gradient-to-b from-obsidian via-cyberdark/60 to-obsidian border-y border-white/5 pt-32 pb-24 px-6 overflow-hidden relative">
+        <div className="absolute top-0 right-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay pointer-events-none"></div>
+        {/* Glowing Orbs for Hall of Fame */}
+        <div className="absolute top-[-10%] right-[-5%] w-[400px] h-[400px] bg-gold/10 rounded-full mix-blend-screen filter blur-[100px] pointer-events-none"></div>
+        <div className="absolute bottom-[20%] left-[-10%] w-[300px] h-[300px] bg-electric/10 rounded-full mix-blend-screen filter blur-[100px] pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="flex flex-col items-center mb-16 text-center">
+            <span className="text-xs font-black text-gold uppercase tracking-widest flex items-center gap-2 mb-4 bg-gold/10 px-4 py-1.5 rounded-full border border-gold/20 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+              <Trophy className="h-4 w-4 fill-current" /> HALL OF FAME
+            </span>
+            <h2 className="text-4xl md:text-6xl font-black uppercase text-white font-display mb-4 tracking-tight">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-yellow-300 to-yellow-500 drop-shadow-[0_0_10px_rgba(245,158,11,0.4)]">Achievers</span>
+            </h2>
+              <p className="text-gray-400 text-sm md:text-base font-mono max-w-2xl leading-relaxed">
+                Outstanding results by students who prepared under the expert guidance of A.K. Sir.
+              </p>
+            </div>
+            
+            {/* FEATURED TOPPERS (2024 & 2022) */}
+            <div className="w-full max-w-5xl mx-auto mb-20 px-4 flex flex-col items-center gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full">
+                {/* Left: Dibyanshu Main */}
+                <div className="relative group bg-obsidian border border-gold/20 rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(245,158,11,0.15)] hover:border-gold hover:shadow-[0_0_40px_rgba(245,158,11,0.3)] transition-all duration-500 hover:-translate-y-2">
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <img src="https://raw.githubusercontent.com/ajaykumarsaroj13-svg/quantrex-academy/main/public/images/results/dibyanshu_mains.jpg?v=3" alt="Dibyanshu Sahoo JEE Main 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
+                </div>
+                
+                {/* Right: Dibyanshu Advanced */}
+                <div className="relative group bg-obsidian border border-electric/20 rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(0,240,255,0.15)] hover:border-electric hover:shadow-[0_0_40px_rgba(0,240,255,0.3)] transition-all duration-500 hover:-translate-y-2">
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <img src="https://raw.githubusercontent.com/ajaykumarsaroj13-svg/quantrex-academy/main/public/images/results/dibyanshu_adv.jpg?v=3" alt="Dibyanshu Sahoo JEE Advanced 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
+                </div>
+              </div>
+
+              {/* Third Photo: Rakshit Aryan */}
+              <div className="w-full md:w-[60%] lg:w-[50%] relative group bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-500 hover:-translate-y-2">
+                <img src="https://raw.githubusercontent.com/ajaykumarsaroj13-svg/quantrex-academy/main/public/images/results/rakshit.jpg?v=3" alt="Rakshit Aryan 2022" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+              </div>
+            </div>
+
+            {/* MARQUEE SECTION */}
+            <div className="w-full overflow-hidden relative" style={{ maskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)' }}>
+              <div className="animate-marquee gap-8 py-6 px-4 flex flex-row flex-nowrap w-max hover:[animation-play-state:paused]">
+              {[...(toppers || []), ...(toppers || []), ...(toppers || []), ...(toppers || [])].map((t, idx) => (
+                <div
+                  key={idx}
+                  className={`shrink-0 group relative bg-gradient-to-b from-obsidian to-cyberdark/80 border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold/40 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transition-all duration-500 hover:-translate-y-2 flex flex-col ${t.isPoster ? 'w-[400px] md:w-[500px]' : 'w-[300px] md:w-[400px]'}`}
+                >
+                  {t.isPoster ? (
+                    <img src={t.photo} alt={t.name} className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+                  ) : (
+                    <>
+                      {/* Glow effect behind */}
+                      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      
+                      {/* Image Container */}
+                      {t.photo && (
+                      <div className="relative w-full aspect-[4/3] bg-cyberdark overflow-hidden">
+                        <img
+                          src={t.photo}
+                          alt={t.name}
+                          className="w-full h-full object-cover object-[center_10%] group-hover:scale-[1.05] transition-transform duration-700"
+                          onError={(e) => { e.target.style.display = 'none'; }}
+                        />
+                        {/* Subtle overlay border */}
+                        <div className="absolute inset-0 border-[4px] border-obsidian/40 pointer-events-none mix-blend-overlay"></div>
+                      </div>
+                      )}
+
+                      {/* Details Footer */}
+                      <div className="p-6 flex items-center justify-between border-t border-white/5 relative z-10 flex-1 bg-gradient-to-t from-obsidian to-transparent">
+                        <div>
+                          <h4 className="text-white font-black text-lg tracking-wide group-hover:text-gold transition-colors duration-300 drop-shadow-md">{t.name}</h4>
+                          <p className="text-[11px] text-gray-400 font-mono mt-1 tracking-wider">{t.year}</p>
+                        </div>
+                        <div className="text-right">
+                          <span className="block text-2xl font-black text-electric font-display drop-shadow-[0_0_8px_rgba(0,240,255,0.3)]">{t.rank}</span>
+                          <span className="text-[10px] bg-electric/10 text-electric border border-electric/30 px-2.5 py-1 rounded font-mono uppercase tracking-widest inline-block mt-1.5 shadow-[0_0_10px_rgba(0,240,255,0.1)]">
+                            {t.score || t.percent}
+                          </span>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              ))}
+              </div>
+            </div>
+          </div>
+      </section>
+
 
       {/* ==================== HERO SECTION ==================== */}
       <section className="relative z-10 pt-16 pb-20 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
@@ -209,7 +244,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
         <div className="flex flex-col sm:flex-row gap-5 mb-20">
           <button
             onClick={() => onStartLearning('jee-mains', 'courses', 'videos')}
-            className="group relative px-8 py-4 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian font-bold text-sm tracking-widest uppercase rounded-xl shadow-[0_0_20px_rgba(0,180,216,0.4)] hover:shadow-[0_0_35px_rgba(0,180,216,0.6)] transform hover:-translate-y-1 active:scale-95 transition-all duration-300 overflow-hidden"
+            className="group relative px-8 py-4 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian font-bold text-sm tracking-widest uppercase rounded-xl shadow-[0_0_20px_rgba(0,180,216,0.4)] hover:shadow-[0_0_35px_rgba(0,180,216,0.6)] transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
           >
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
             <span className="relative flex items-center gap-2">
@@ -218,7 +253,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
           </button>
           <button
             onClick={() => onStartLearning('jee-advanced', 'courses', 'videos')}
-            className="px-8 py-4 border-2 border-gold/40 hover:border-gold text-gold hover:text-white font-bold text-sm tracking-widest uppercase rounded-xl bg-cyberdark/40 backdrop-blur shadow-[0_0_15px_rgba(245,158,11,0.1)] hover:shadow-[0_0_25px_rgba(245,158,11,0.3)] hover:bg-gold/10 transform hover:-translate-y-1 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2"
+            className="px-8 py-4 border-2 border-gold/40 hover:border-gold text-gold hover:text-white font-bold text-sm tracking-widest uppercase rounded-xl bg-cyberdark/40 backdrop-blur shadow-[0_0_15px_rgba(245,158,11,0.1)] hover:shadow-[0_0_25px_rgba(245,158,11,0.3)] hover:bg-gold/10 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
           >
             <Zap className="h-4 w-4" /> JEE Advanced Portal
           </button>
@@ -257,7 +292,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
         {/* Background Accent */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-electric/5 rounded-full filter blur-[100px] pointer-events-none"></div>
 
-        <div ref={revealRef2} className="reveal max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
           <div className="flex-1 w-full flex justify-center lg:justify-start">
             <div className="relative max-w-md w-full bg-obsidian border border-electric/30 p-3 rounded-2xl shadow-2xl glow-blue group">
               <div className="relative h-[500px] w-full bg-cyberdark rounded-xl overflow-hidden">
@@ -337,7 +372,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
 
       {/* ==================== MATHEMATICS QUICK HUB ==================== */}
       <section className="py-20 px-6 md:px-12 max-w-7xl mx-auto">
-        <div ref={revealRef3} className="reveal flex flex-col items-center mb-14 text-center">
+        <div className="flex flex-col items-center mb-14 text-center">
           <span className="text-xs font-semibold text-electric uppercase tracking-widest mb-3">INSTANT ACCESS</span>
           <h2 className="text-3xl md:text-5xl font-bold uppercase text-white mb-4">
             Mathematics Study Hub
@@ -385,7 +420,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
 
       {/* ==================== ALL COURSES GRID ==================== */}
       <section id="courses-section" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <div ref={revealRef4} className="reveal flex flex-col items-center mb-16 text-center">
+        <div className="flex flex-col items-center mb-16 text-center">
           <span className="text-xs font-semibold text-electric uppercase tracking-widest mb-3">FULL CURRICULUM</span>
           <h2 className="text-3xl md:text-5xl font-bold uppercase text-white">All Mathematics Courses</h2>
           <p className="text-gray-400 text-xs md:text-sm font-mono max-w-xl mt-3">
@@ -434,7 +469,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
                   </div>
                   <button
                     onClick={() => onStartLearning(course.id, 'courses', 'videos')}
-                    className="w-full py-3 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian text-xs font-bold uppercase tracking-wider rounded-lg transition-all active:scale-95 shadow-md hover:shadow-cyan-500/20"
+                    className="w-full py-3 bg-gradient-to-r from-electric to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-obsidian text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-md hover:shadow-cyan-500/20"
                   >
                     Start Learning Free →
                   </button>
@@ -474,7 +509,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
 
       {/* ==================== FAQ SECTION ==================== */}
       <section className="py-24 px-6 md:px-12 max-w-4xl mx-auto">
-        <div ref={revealRef5} className="reveal text-center mb-16">
+        <div className="text-center mb-16">
           <span className="text-xs font-semibold text-electric uppercase tracking-widest mb-3 block">RESOLVING DOUBTS</span>
           <h2 className="text-3xl font-bold text-white uppercase">Frequently Asked Questions</h2>
         </div>
