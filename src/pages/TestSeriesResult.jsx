@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TeacherSolution from '../components/TeacherSolution';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
 
@@ -9,6 +10,11 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
   const [selectedSubject, setSelectedSubject] = useState('All');
   const [selectedFilter, setSelectedFilter] = useState('All'); // 'All' | 'Correct' | 'Incorrect' | 'Unattempted'
   const [selectedQIdx, setSelectedQIdx] = useState(0);
+
+  const revealRef1 = useScrollReveal();
+  const revealRef2 = useScrollReveal();
+  const revealRef3 = useScrollReveal();
+  const revealRef4 = useScrollReveal();
 
   // Fetch full test details (with questions and solutions) for review
   useEffect(() => {
@@ -181,6 +187,9 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
         .tsr-btn-retake:hover {
           transform: translateY(-1px);
           box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+        }
+        .tsr-btn-retake:active, .tsr-btn-back:active, .tsr-q-btn:active {
+          transform: scale(0.95);
         }
 
         /* Stats Grid */
@@ -540,7 +549,7 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
 
       <div className="tsr-container">
         {/* HEADER */}
-        <div className="tsr-header">
+        <div ref={revealRef1} className="tsr-header reveal">
           <div className="tsr-title-group">
             <h1>{result.testTitle || 'Test Attempt Result'}</h1>
             <p className="tsr-subtitle">
@@ -558,7 +567,7 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
         </div>
 
         {/* STATS TILES */}
-        <div className="tsr-stats-grid">
+        <div ref={revealRef2} className="tsr-stats-grid reveal delay-100">
           <div className="tsr-stat-card score">
             <div className="tsr-stat-icon">🎯</div>
             <div className="tsr-stat-info">
@@ -590,7 +599,7 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
         </div>
 
         {/* SUBJECT-WISE PERFORMANCE */}
-        <div className="tsr-subjects-wrapper">
+        <div ref={revealRef3} className="tsr-subjects-wrapper reveal delay-200">
           <h2 className="tsr-panel-title">Subject-wise Analytics</h2>
           <div className="tsr-subjects-grid">
             {/* Physics */}
@@ -662,7 +671,8 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
         </div>
 
         {/* DETAILED QUESTION REVIEW */}
-        <h2 className="tsr-panel-title">Question-by-Question Review</h2>
+        <div ref={revealRef4} className="reveal delay-300">
+          <h2 className="tsr-panel-title">Question-by-Question Review</h2>
         
         {loading ? (
           <div style={{ padding: '40px 0', textAlign: 'center', color: '#94a3b8' }}>
@@ -802,15 +812,12 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                   )}
                 </div>
               ) : (
-                <div style={{ textAlign: 'center', padding: '40px 0', color: '#94a3b8' }}>
-                  <p>Please select a question from the left sidebar to see the details.</p>
-                </div>
+                <div style={{ textAlign: 'center', color: '#94a3b8', padding: '40px 0' }}>Select a question to view details</div>
               )}
             </div>
-
           </div>
         )}
-
+        </div>
       </div>
     </div>
   );
