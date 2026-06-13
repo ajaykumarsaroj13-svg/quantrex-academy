@@ -145,29 +145,29 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
                 {/* Left: Dibyanshu Advanced */}
                 <div className="relative group bg-obsidian border border-electric/20 rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(0,240,255,0.15)] hover:border-electric hover:shadow-[0_0_40px_rgba(0,240,255,0.3)] transition-all duration-500 hover:-translate-y-2">
                   <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <img src="/images/toppers/dibyanshu_adv.jpg" alt="Dibyanshu Sahoo JEE Advanced 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
+                  <img src="/images/toppers/dibyanshu_adv.jpg?v=new" alt="Dibyanshu Sahoo JEE Advanced 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
                 </div>
                 
                 {/* Right: Dibyanshu Main */}
                 <div className="relative group bg-obsidian border border-gold/20 rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(245,158,11,0.15)] hover:border-gold hover:shadow-[0_0_40px_rgba(245,158,11,0.3)] transition-all duration-500 hover:-translate-y-2">
                   <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <img src="/images/toppers/dibyanshu_main.jpg" alt="Dibyanshu Sahoo JEE Main 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
+                  <img src="/images/toppers/dibyanshu_main.jpg?v=new" alt="Dibyanshu Sahoo JEE Main 2026" className="w-full h-auto object-cover group-hover:scale-[1.03] transition-transform duration-700" />
                 </div>
               </div>
 
               {/* Third Photo: Rakshit Aryan */}
               <div className="w-full md:w-[60%] lg:w-[50%] relative group bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-500 hover:-translate-y-2">
-                <img src="/images/toppers/rakshit-2022.jpg" alt="Rakshit Aryan 2022" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+                <img src="/images/toppers/rakshit-2022.jpg?v=new" alt="Rakshit Aryan 2022" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
               </div>
             </div>
 
-            {/* MARQUEE SECTION */}
-            <div className="w-full overflow-hidden relative" style={{ maskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)' }}>
-              <div className="animate-marquee gap-8 py-6 px-4 flex flex-row flex-nowrap w-max hover:[animation-play-state:paused]">
-              {[...(toppers || []), ...(toppers || []), ...(toppers || []), ...(toppers || [])].map((t, idx) => (
+            {/* SLIDER SECTION (No Repeats) */}
+            <div className="w-full overflow-hidden relative">
+              <div className="flex flex-row overflow-x-auto gap-8 py-6 px-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+              {(toppers || []).map((t, idx) => (
                 <div
                   key={idx}
-                  className={`shrink-0 group relative bg-gradient-to-b from-obsidian to-cyberdark/80 border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold/40 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transition-all duration-500 hover:-translate-y-2 flex flex-col ${t.isPoster ? 'w-[400px] md:w-[500px]' : 'w-[300px] md:w-[400px]'}`}
+                  className={`shrink-0 snap-center group relative bg-gradient-to-b from-obsidian to-cyberdark/80 border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold/40 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transition-all duration-500 hover:-translate-y-2 flex flex-col ${t.isPoster ? 'w-[400px] md:w-[500px]' : 'w-[300px] md:w-[400px]'}`}
                 >
                   {t.isPoster ? (
                     <img src={t.photo} alt={t.name} className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
@@ -177,18 +177,14 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
                       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       
                       {/* Image Container */}
-                      {t.photo && (
-                      <div className="relative w-full aspect-[4/3] bg-cyberdark overflow-hidden">
-                        <img
-                          src={t.photo}
-                          alt={t.name}
-                          className="w-full h-full object-cover object-[center_10%] group-hover:scale-[1.05] transition-transform duration-700"
-                          onError={(e) => { e.target.style.display = 'none'; }}
+                      <div className="relative w-full overflow-hidden" style={{ aspectRatio: '4/3' }}>
+                        <img 
+                          src={t.photo} 
+                          alt={`${t.name} - ${t.score}`}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         />
-                        {/* Subtle overlay border */}
-                        <div className="absolute inset-0 border-[4px] border-obsidian/40 pointer-events-none mix-blend-overlay"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
-                      )}
 
                       {/* Details Footer */}
                       <div className="p-6 flex items-center justify-between border-t border-white/5 relative z-10 flex-1 bg-gradient-to-t from-obsidian to-transparent">

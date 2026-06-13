@@ -95,10 +95,10 @@ export default function App() {
 
   const [toppers, setToppers] = useState(() => {
     // Clear old cache
-    if (localStorage.getItem('quantrex_toppers_v3')) {
-      localStorage.removeItem('quantrex_toppers_v3');
+    if (localStorage.getItem('quantrex_toppers_v4')) {
+      localStorage.removeItem('quantrex_toppers_v4');
     }
-    const saved = localStorage.getItem('quantrex_toppers_v4');
+    const saved = localStorage.getItem('quantrex_toppers_v5');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
@@ -127,7 +127,7 @@ export default function App() {
   // Persist toppers when updated
   useEffect(() => {
     try {
-      localStorage.setItem('quantrex_toppers_v4', JSON.stringify(toppers));
+      localStorage.setItem('quantrex_toppers_v5', JSON.stringify(toppers));
     } catch(e) {}
   }, [toppers]);
 
