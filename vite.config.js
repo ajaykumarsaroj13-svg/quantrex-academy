@@ -5,10 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: process.env.VERCEL ? '/' : '/quantrex-academy/',
-  build: {
-    minify: false,
-    chunkSizeWarningLimit: 2000,
-  },
   server: {
     port: 3000,
     proxy: {
