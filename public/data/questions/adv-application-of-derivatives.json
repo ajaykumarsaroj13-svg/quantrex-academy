@@ -159,7 +159,7 @@
       "it is at a constant distance from the origin ",
       "none of these "
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 3,
     "correctAnswer": "",
     "solution": "",
     "marks": 1,
@@ -2064,7 +2064,9 @@
       "$$ - {1 \\over 4} &lt; f\\left( x \\right) &lt; 1$$ ",
       "$$ - \\infty  &lt; f\\left( x \\right) &lt; 0$$ "
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>Given, $$f(0)=f(1)=0$$</p>\n<p>$$\\begin{aligned}\n&amp; \\text { And } f^{\\prime \\prime}(x)-2 f^{\\prime}(x)+f(x) \\geq e^x, x \\in[0,1] \\\\\n&amp; \\Rightarrow e^{-x} f^{\\prime \\prime}(x)-e^{-x} f^{\\prime}(x)-e^{-x} f^{\\prime}(x)+e^{-x} f(x) \\geq 1 \\\\\n&amp; \\Rightarrow\\left(e^{-x} f^{\\prime}(x)\\right)^{\\prime}-\\left(e^{-x} f^{\\prime}(x)\\right)-\\left(e^{-x} f(x)\\right)^{\\prime} \\geq 1 \\\\\n&amp; \\Rightarrow\\left(e^{-x} f^{\\prime}(x)-e^{-x} f(x)\\right)^{\\prime} \\geq 1 \\\\\n&amp; \\Rightarrow\\left(e^{-x} f(x)\\right)^{\\prime \\prime} \\geq 1\n\\end{aligned}$$</p>\n<p>Let $$g(x)=e^{-x} f(x)$$</p>\n<p>Now, $$g(0)=e^{-0} f(0)=0$$ and $$g(1)=e^{-1} f(1)=0$$</p>\n<p>Here, $$g^{\\prime \\prime}(x)=\\left(e^{-x} f(x)\\right)^{\\prime \\prime} \\geq 1&gt;0$$</p>\n<p>$$\\therefore$$ Concavity of $$g(x)$$ is up and $$g(0)=g(1)=0$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzs13b3p/117ad3c9-6583-422f-9593-f7ddbcef32e0/67895250-593b-11ef-8ba0-f97c84f62bab/file-jaoe38c1lzs13b3q.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzs13b3p/117ad3c9-6583-422f-9593-f7ddbcef32e0/67895250-593b-11ef-8ba0-f97c84f62bab/file-jaoe38c1lzs13b3q.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 2 Offline Mathematics - Application of Derivatives Question 32 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow g(x)=e^{-x} f(x)&lt;0 \\forall x \\in(0,1) \\\\\n&amp; \\Rightarrow f(x)&lt;0\n\\end{aligned}$$</p>\n<p>Hints:</p>\n<p>(i) $$f^{\\prime \\prime}(x)&gt;0$$ implies the concavity of $$f(x)$$ is upward and $$f^{\\prime \\prime}(x)&lt;0$$ implies the concavity of $$f(x)$$ is downward.</p>\n<p>(ii) $$f^{\\prime \\prime}(x)&gt;0 \\quad \\forall x \\in(a, b)$$ and $$f(a)=f(b)=0$$ implies that the concavity of the function is upward and $$f(x)$$ lies below the $x$-axis in the interval $$x \\in(a, b)$$</p>",
     "marks": 4,
@@ -2200,7 +2202,7 @@
     "title": "JEE Advanced 2016 Paper 2 Offline",
     "year": 2016,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let f: R $$ \\to \\left( {0,\\infty } \\right)$$ and g : R $$ \\to $$ R be twice differentiable functions such that f'' and g'' are continuous functions on R. Suppose f'$$(2)$$ $$=$$ g$$(2)=0$$, f''$$(2)$$$$ \\ne 0$$ and g'$$(2)$$ $$ \\ne 0$$. If \n<br>$$\\mathop {\\lim }\\limits_{x \\to 2} {{f\\left( x \\right)g\\left( x \\right)} \\over {f'\\left( x \\right)g'\\left( x \\right)}} = 1,$$ then ",
     "options": [
       "$$f$$ has a local minimum at $$x=2$$ ",
@@ -2208,7 +2210,10 @@
       "$$f''(2)&gt;f(2)$$",
       "$$f(x)-f''(x)=0$$ for at least one $$x \\in R$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p>Let f : R $$\\to$$ (0, $$\\infty$$) and g : R $$\\to$$ R.</p>\n<p>f(x) > 0 $$\\forall$$x $$\\in$$ R</p>\n<p>It is given that f'(2) = 0, g(2) = 0, f''(2) $$\\ne$$ 0 and g'(2) $$\\ne$$ 0.</p>\n<p>It is also given that</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 2} {{f(x)g(x)} \\over {f'(x)g'(x)}} = 1$$ $$\\left( {{0 \\over 0}} \\right)$$</p>\n<p>Applying L' Hospital rule, we get</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 2} {{f'(x)g(x) + g'(x)f(x)} \\over {f''(x)g'(x) + f'(x)g''(x)}} = 1$$</p>\n<p>For finite limit, we get</p>\n<p>$${{f'(2)g(2) + g'(2)f(2)} \\over {f''(2)g'(2) + f'(2)g''(2)}} = 1$$</p>\n<p>$${{g'(2)f(2)} \\over {f''(2)g'(2)}} = 1$$</p>\n<p>$${{f(2)} \\over {f''(2)}} = 1 \\Rightarrow f''(2) = f(2) > 0$$ and f'(2) = 0 which means that f(x) has local minima at x = 2.</p>\n<p>Hence, option (A) is correct.</p>\n<p>$$f(2) - f''(2) = 0$$</p>\n<p>Therefore, we can say that $$f(x) - f''(x) = 0$$ has at least one solution in x $$\\in$$ R.</p>\n<p>Hence, option (D) is correct.</p>",
     "marks": 4,
@@ -2504,9 +2509,9 @@
       "<p>Number of points of local minima of $f$ in the interval $[2\\pi, 4\\pi]$ is 1</p>"
     ],
     "correctOptionIndex": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "correctAnswer": "",
     "solution": "<p>$$ \\begin{aligned} &amp; \\lim _{x \\rightarrow 0^{+}} f(x)=\\lim _{x \\rightarrow 0^{-}} f(x)=3 \\\\ &amp; \\text { since } 3&gt;\\frac{7}{3} \\Rightarrow 3&gt;f(0) \\end{aligned} $$</p>\n<p>$\\Rightarrow \\mathrm{x}=0$ is local minima ….option (B) is correct</p>\n<p>Now,</p>\n<p>$$ \\begin{aligned} &amp; f(x)=\\frac{6 x+\\sin x}{2 x+\\sin x}=1+\\frac{4 x}{2 x+\\sin x} \\\\ &amp; f^{\\prime}(x)=\\frac{4[(2 x+\\sin x) \\cdot 1-x(2+\\cos x)]}{(2 x+\\sin x)^2}=\\frac{4(\\sin x-x \\cos x)}{(2 x+\\sin x)^2} \\\\ &amp; =\\frac{4 \\cos x(\\tan x-x)}{(2 x+\\sin x)^2} \\end{aligned} $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1maz2om3m/4fa33f8f-c8b1-4797-8809-c3e17f4742d4/7eddec20-36e1-11f0-846e-b3355723c14c/file-jaoe38c1maz2om3n.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1maz2om3m/4fa33f8f-c8b1-4797-8809-c3e17f4742d4/7eddec20-36e1-11f0-846e-b3355723c14c/file-jaoe38c1maz2om3n.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 2 Online Mathematics - Application of Derivatives Question 6 English Explanation 1\"></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1maz2ppg5/1dbb1587-8c90-417d-9ea8-6b907863118d/9d434b60-36e1-11f0-846e-b3355723c14c/file-jaoe38c1maz2ppg6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1maz2ppg5/1dbb1587-8c90-417d-9ea8-6b907863118d/9d434b60-36e1-11f0-846e-b3355723c14c/file-jaoe38c1maz2ppg6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 2 Online Mathematics - Application of Derivatives Question 6 English Explanation 2\"></p>\n<p>$$ \\text { Options (C) &amp; (D) are also correct. } $$</p>",
@@ -3298,7 +3303,9 @@
       "$$[0, 1]$$",
       "$$\\left[\\frac{1}{2}, 1\\right]$$"
     ],
-    "correctOptionIndex": 3,
+    "correctOptionIndex": [
+      3
+    ],
     "correctAnswer": "$$\\left[\\frac{1}{2}, 1\\right]$$",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3452,7 +3459,9 @@
       "Statement-1 is true, statement-2 is false",
       "Statement-1 is false, statement-2 is true"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "Statement-1 is true, statement-2 is true and statement-2 is correct explanation for statement-1",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3521,7 +3530,9 @@
       "$$\\left[1 - \\frac{\\pi}{2}, 1 + \\frac{\\pi}{2}\\right]$$",
       "$$\\left[\\frac{\\pi}{2} - 1, \\frac{\\pi}{2} + 1\\right]$$"
     ],
-    "correctOptionIndex": 2,
+    "correctOptionIndex": [
+      2
+    ],
     "correctAnswer": "$$\\left[1 - \\frac{\\pi}{2}, 1 + \\frac{\\pi}{2}\\right]$$",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3556,7 +3567,9 @@
       "$$x^n + ax + b = 0$$ where $$n$$ is an even natural number has atmost two real solution $$a, b \\in \\mathbb{R}$$.",
       "$$x^3 - 3x + c = 0, c > 0$$ has two real solution for $$x \\in (0, 1)$$"
     ],
-    "correctOptionIndex": 2,
+    "correctOptionIndex": [
+      2
+    ],
     "correctAnswer": "$$x^n + ax + b = 0$$ where $$n$$ is an even natural number has atmost two real solution $$a, b \\in \\mathbb{R}$$.",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3591,7 +3604,9 @@
       "$$\\left(-\\sqrt{3}, -\\frac{\\sqrt{3}}{4}\\right)$$",
       "$$\\left(1, \\frac{1}{2}\\right)$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "$$(0, 0)$$",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3643,7 +3658,9 @@
       "no root in $$(-1, 1)$$",
       "no root in $$(0, 2)$$"
     ],
-    "correctOptionIndex": 1,
+    "correctOptionIndex": [
+      1
+    ],
     "correctAnswer": "atleast one root in $$(0, 1)$$",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3678,7 +3695,9 @@
       "$$a = 11, b \\in \\mathbb{R}$$",
       "$$a = 22, b = -6$$"
     ],
-    "correctOptionIndex": 2,
+    "correctOptionIndex": [
+      2
+    ],
     "correctAnswer": "$$a = 11, b \\in \\mathbb{R}$$",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3696,7 +3715,9 @@
       "$$f(x) = (x - 1)|x - 1|$$",
       "$$f(x) = |x - 1|$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "$$f(x) = \\begin{cases} \\frac{3}{2} - x & , \\quad x < \\frac{3}{2} \\\\ \\left(\\frac{3}{2} - x\\right)^2 & , \\quad x \\ge \\frac{3}{2} \\end{cases}$$",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3748,7 +3769,9 @@
       "$$x - y = \\frac{2}{3\\sqrt{3}}$$",
       "$$x - y = \\frac{-2}{3\\sqrt{3}}$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3766,7 +3789,9 @@
       "There exist $$c_1, c_2 \\in [0, 8]$$ where $$8f'(c_1)f(c_2) = 1$$",
       "There exist some $$\\alpha, \\beta \\in (0, 2)$$ such that $$\\int_0^8 f(t) dt = 3(\\alpha^2 f(\\alpha^3) + \\beta^2 f(\\beta^3))$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3784,7 +3809,9 @@
       "global maximum value of $$f(x) \\forall\\ x \\in R$$ is $$\\pi$$",
       "global minimum value of $$f(x) \\forall\\ x \\in R$$ is $$0$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, c)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3802,7 +3829,9 @@
       "$$f$$ has an global minimum at $$x = 0$$",
       "$$f''$$ is continuous $$\\forall\\ x \\in R$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, c)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3820,7 +3849,9 @@
       "$$f(-2) = 3$$",
       "$$f\\left(\\frac{1}{2}\\right) = \\frac{1}{5}$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, b, c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3838,7 +3869,9 @@
       "$$f(x)$$ has a maximum on $$[-3, 4]$$",
       "if $$f(3) = f(4)$$, then $$f(x)$$ has a critical point on $$[-3, 4]$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(b, c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3856,7 +3889,9 @@
       "$$f(0) + f(2) > 2f(1)$$",
       "$$2f(0) + f(2) > 3f\\left(\\frac{2}{3}\\right)$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3874,7 +3909,9 @@
       "$$g(x) = 0$$ has atleast one real root lying in interval $$(-1, 0)$$",
       "$$g(x) = 0$$, has 3 distinct real roots"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(b, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3892,7 +3929,9 @@
       "$$\\lambda \\in (-3, 3)$$",
       "$$\\lambda \\in (1, \\infty)$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, b, c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3910,7 +3949,9 @@
       "strictly decreasing for $$x \\in (-1, 0)$$",
       "strictly decreasing for $$x \\in (0, 1)$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, c)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3928,7 +3969,9 @@
       "maximum value of $$f(x, y)$$ is $$\\frac{m^n n^m k^{m+n}}{(m+n)^{m+n}}$$",
       "maximum value of $$f(x, y)$$ is $$\\frac{k^{m+n} m^m n^n}{(m+n)^{m+n}}$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3946,7 +3989,9 @@
       "$$y + \\sqrt{2}(x - 2) = 0$$",
       "$$y - \\sqrt{2}(x - 2) = 0$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3964,7 +4009,9 @@
       "$$y = \\frac{2(x - 1)}{x^2}$$",
       "$$y = \\frac{1 - x^2}{2x}$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -3982,7 +4029,9 @@
       "$$3$$",
       "$$4$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(b, c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4000,7 +4049,9 @@
       "$$9$$",
       "$$12$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4018,7 +4069,9 @@
       "$$a \\in (1, \\infty)$$",
       "$$a \\in (-\\infty, 1)$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(b, c)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4036,7 +4089,9 @@
       "$$y = f(-x)$$ and $$y = f^{-1}(x)$$ are orthogonal",
       "$$y = f(-x)$$ and $$y = f^{-1}(-x)$$ are orthogonal"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(b, c)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4054,7 +4109,9 @@
       "The number of point of local maxima is 1",
       "The number of point of local minima is 1"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4072,7 +4129,9 @@
       "only one real root which is negative if $$a < -1, b < 0$$",
       "only one real root which is positive if $$a < -1, b < 0$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, b, c)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4090,7 +4149,9 @@
       "Graph (c)",
       "Graph (d)"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, b)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4108,7 +4169,9 @@
       "There exist a number '$$c$$' in $$\\left(0, \\frac{\\pi}{2}\\right)$$ such that $$f'(c) = 0$$",
       "The equation $$f(x) = 0$$ has only two roots in $$\\left[0, \\frac{\\pi}{2}\\right]$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, b, c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4126,7 +4189,9 @@
       "$$-\\frac{1}{4}$$",
       "$$-1$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(b, c)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4144,7 +4209,9 @@
       "The points of inflection of the curve $$y = f(x)$$ lie on the curve $$x \\tan x + 1 = 0$$",
       "Number of critical points of $$y = f(x)$$ in $$(0, 10\\pi)$$ are 19"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, b, c)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4162,7 +4229,9 @@
       "there is no point of local maxima of $$F(x)$$ in $$(-1, 1)$$",
       "for some $$c \\in (-1, 1), F(c) \\ge 6, F'(c) = 0$$ and $$F''(c) \\le 0$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, b, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4180,7 +4249,9 @@
       "absolute maximum at $$x = 0$$",
       "absolute maximum at $$x = -1$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4215,7 +4286,9 @@
       "When $$\\lambda \\in (0, \\infty)$$ equation has 1 real root",
       "When $$\\lambda \\in (-e, 0)$$ equation has no real root"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(b, c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4233,7 +4306,9 @@
       "$$a < b$$",
       "$$a + b = \\frac{19}{5}$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4251,7 +4326,9 @@
       "$$f(x)$$ has a local minimum at $$x = 1$$",
       "$$\\int_{-\\pi}^{\\pi} (\\cos x) f(x) dx = 0$$"
     ],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": [
+      -1
+    ],
     "correctAnswer": "(a, b, c, d)",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4473,7 +4550,9 @@
       "$$\\left(-\\infty, \\frac{1}{4}\\right]$$",
       "$$\\left[-\\frac{1}{4}, \\infty\\right)$$"
     ],
-    "correctOptionIndex": 2,
+    "correctOptionIndex": [
+      2
+    ],
     "correctAnswer": "$$\\left(-\\infty, \\frac{1}{4}\\right]$$",
     "solution": "",
     "topic": "Application of Derivatives",
@@ -4491,7 +4570,9 @@
       "$$[-1, 1]$$",
       "$$[0, 2]$$"
     ],
-    "correctOptionIndex": 1,
+    "correctOptionIndex": [
+      1
+    ],
     "correctAnswer": "$$[0, 1]$$",
     "solution": "",
     "topic": "Application of Derivatives",

@@ -1484,7 +1484,9 @@
       "$$\\left( {{{e - 1} \\over 2},e - 1} \\right)$$ ",
       "$$\\left( {0,{{e - 1} \\over 2}} \\right)$$ "
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>Given, $$f(x)$$ be a positive, non-constant and differentiable function and $$f\\left(\\frac{1}{2}\\right)=1$$.</p>\n<p>Also given $$f^{\\prime}(x)<2 f(x)$$</p>\n<p>$$\\Rightarrow f^{\\prime}(x)-2 f(x)<0$$</p>\n<p>Multiply both side by $$e^{-2 x}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow e^{-2 x} f^{\\prime}(x)-2 e^{-2 x} f(x)<0 \\\\\n& \\Rightarrow d\\left(e^{-2 x} f(x)\\right)<0\n\\end{aligned}$$</p>\n<p>Let $$g(x)=e^{-2 x} f(x) \\forall x \\in\\left[\\frac{1}{2}, 1\\right]$$</p>\n<p>$$\\Rightarrow d(g(x))<0$$</p>\n<p>Hence, $$g(x)$$ is a decreasing function in the Given, domain $$x \\in\\left[\\frac{1}{2}, 1\\right]$$</p>\n<p>$$\\begin{aligned}\n& \\because \\quad g(x)< g\\left(\\frac{1}{2}\\right) \\\\\n& \\Rightarrow e^{-2 x} f(x) < e^{-1} \\cdot f\\left(\\frac{1}{2}\\right) \\\\\n& \\Rightarrow f(x) < e^{2 x-1} \\cdot 1 \\\\\n& \\therefore \\quad f(x) \\text { is always positive } \\\\\n& \\therefore \\quad 0 < f(x) < e^{2 x-1} \\\\\n& \\Rightarrow 0 < \\int_{\\frac{1}{2}}^1 f(x) d x < \\int_{\\frac{1}{2}}^1 e^{2 x-1} d x \\\\\n& \\Rightarrow 0 < \\int_{\\frac{1}{2}}^1 f(x) d x < \\left[\\frac{e^{2 x-1}}{2}\\right]_{\\frac{1}{2}}^1 \\\\\n& \\Rightarrow 0 < \\int_{\\frac{1}{2}}^1 f(x) d x < \\frac{e-1}{2} \\\\\n& \\Rightarrow \\int_{\\frac{1}{2}}^1 f(x) d x \\in\\left(0, \\frac{e-1}{2}\\right)\n\\end{aligned}$$</p>\n<p>Hints:</p>\n<p>$$\\Rightarrow$$ (i) if $$f(x)$$ is a decreasing function for $$x \\in[a, b]$$, then $$f(b) < f(x) < f(a)$$</p>\n<p>(ii) Recall that $$e^{-2 x} f^{\\prime}(x)-2 e^{-2 x} f(x)=d\\left(e^{-2 x} f(x)\\right)$$</p>",
     "marks": 4,
@@ -1550,7 +1552,9 @@
       "$$P = 3,Q = 2,R = 1,S = 4$$",
       "$$P = 2,Q = 3,R = 1,S = 4$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>(P) Let $$p(x)=a x^2+b x+c$$</p>\n<p>Given, $$p(0)=0$$</p>\n<p>$$\\Rightarrow \\quad c=0$$</p>\n<p>Also given $$\\int_0^1 f(x) d x=1$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & \\int_0^1\\left(a x^2+b x\\right) d x=1 \\\\\n\\Rightarrow & {\\left[\\frac{a x^3}{3}+\\frac{b x^2}{2}\\right]_0^1=1} \\\\\n\\Rightarrow & \\frac{a}{3}+\\frac{b}{2}=1 \\\\\n\\Rightarrow & 2 a+3 b=6\n\\end{array}$$</p>\n<p>Here, $$a$$ and $$b$$ are non negative integer</p>\n<p>$$\\therefore(a, b)=(3,0),(0,2)$$</p>\n<p>Hence, possible equation of $$p(x)$$ are $$3 x^2$$ and $$2 x$$.</p>\n<p>So, P Match with 2.</p>\n<p>(Q) Given $$f(x)=\\sin x^2+\\cos x^2$$</p>\n<p>Differentiate $$f(x)$$ w.r.t. $$x$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow f^{\\prime}(x)=2 x \\cdot \\cos x^2-2 x \\cdot \\sin x^2 \\\\\n& \\Rightarrow f^{\\prime}(x)=2 x\\left(\\cos x^2-\\sin x^2\\right)\n\\end{aligned}$$</p>\n<p>Apply $$f^{\\prime}(x)=0$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow x=0, \\tan x^2=1 \\\\\n& \\Rightarrow x=0, \\pm \\sqrt{\\frac{\\pi}{4}}, \\pm \\sqrt{\\frac{5 \\pi}{4}}, \\pm \\sqrt{\\frac{9 \\pi}{4}}, \\pm \\sqrt{\\frac{13 \\pi}{4}}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { Differentiate } f^{\\prime}(x) \\text { w.r.t. } x \\\\\n& \\Rightarrow f^{\\prime \\prime}(x)=2\\left(\\cos x^2-\\sin x^2\\right) \\\\\n& +2 x\\left(-2 x \\sin x^2-2 x \\cos x^2\\right) \\\\\n& \\Rightarrow f^{\\prime \\prime}(x)=2\\left(\\cos x^2-\\sin x^2\\right) \\\\\n& -4 x^2\\left(\\sin x^2+\\cos x^2\\right) \\\\\n& \\Rightarrow f^{\\prime \\prime}(x)<0 \\text { at } x= \\pm \\sqrt{\\frac{\\pi}{4}}, \\pm \\sqrt{\\frac{9 \\pi}{4}} \\\\\n\\end{aligned}$$</p>\n<p>So, $f(x)$ is maximum at four points.\nHence, Q match with 3.\n(R) Let $$\\mathrm{I}=\\int_{-2}^2 \\frac{3 x^2}{1+e^x} d x\\quad \\text{... (i)}$$</p>\n<p>Apply the property $$\\int_a^b f(x) d x=\\int_a^b f(a+b-x) d x$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad \\mathrm{I}=\\int_{-2}^2 \\frac{3(-x)^2}{1+e^{-x}} d x \\\\\n& \\Rightarrow \\quad \\mathrm{I}=\\int_{-2}^2 \\frac{3 x^2 e^x}{e^x+1} d x \\quad \\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>Add equation (i) and (ii)</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad 2 \\mathrm{I}=\\int_{-2}^2 \\frac{3 x^2}{e^x+1}\\left[1+e^x\\right] d x \\\\\n& \\Rightarrow \\quad \\mathrm{I}=\\frac{3}{2} \\int_{-2}^2 x^2 \\cdot d x \\\\\n& \\Rightarrow \\quad \\mathrm{I}=\\frac{3}{2}\\left[\\frac{x^3}{3}\\right]_{-2}^2 \\\\\n& \\Rightarrow \\quad \\mathrm{I}=16\n\\end{aligned}$$</p>\n<p>(S) We know the property</p>\n<p>$$\\int_{-a}^a f(x) d x=\\left\\{\\begin{array}{l}\n2 \\int_0^a f(x) d x, \\text { when } f(x) \\text { is } \\\\\n\\text { an even function } \\\\\n0, \\text { when } f(x) \\text { is an odd function }\n\\end{array}\\right.$$</p>\n<p>$$\\begin{aligned}\n& \\text { Let } g(x)=\\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right) \\\\\n& \\Rightarrow g(-x)=\\cos (-x) \\log \\left(\\frac{1-x}{1+x}\\right) \\\\\n& \\Rightarrow g(-x)=\\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right)^{-1} \\\\\n& \\Rightarrow g(-x)=-\\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right)\n\\end{aligned}$$</p>\n<p>$$\\Rightarrow g(-x)=-g(x)$$</p>\n<p>Hence, $$g(x)$$ is an odd function</p>\n<p>So, $$\\int_{\\frac{-1}{2}}^{\\frac{1}{2}} \\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right) d x=0$$</p>\n<p>$$\\Rightarrow \\frac{\\frac{\\int_{-1}^2}{\\frac{1}{2}} \\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right) d x}{\\int_0^{\\frac{1}{2}} \\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right) d x}=0$$</p>\n<p>Hence, $$S$$ match with 4.</p>\n<p>Hint:</p>\n<p>(i) Recall the property</p>\n<p>$$\\int_a^b f(x) d x=\\int_a^b f(a+b-x) d x$$</p>\n<p>(ii) Recall the property</p>\n<p>$$\n\\int_{-a}^a f(x) d x=\\left\\{\\begin{array}{l}\n2 \\int_0^a f(x) d x, \\text { when } f(x) \\text { is an even function}\\\\\n0, \\text { when } f(x) \\text { is an oden function }\n\\end{array}\\right.$$</p>\n<p>(iii) At the point of local maxima, first derivative of the function is zero and second derivative of the function is negative.</p>",
     "marks": 3,
@@ -1777,7 +1781,7 @@
     "title": "JEE Advanced 2016 Paper 2 Offline",
     "year": 2016,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let <br>$$f\\left( x \\right) = \\mathop {\\lim }\\limits_{n \\to \\infty } {\\left( {{{{n^n}\\left( {x + n} \\right)\\left( {x + {n \\over 2}} \\right)...\\left( {x + {n \\over n}} \\right)} \\over {n!\\left( {{x^2} + {n^2}} \\right)\\left( {{x^2} + {{{n^2}} \\over 4}} \\right)....\\left( {{x^2} + {{{n^2}} \\over {{n^2}}}} \\right)}}} \\right)^{{x \\over n}}},$$ for\n<br><br>all $$x&gt;0.$$ Then",
     "options": [
       "$$f\\left( {{1 \\over 2}} \\right) \\ge f\\left( 1 \\right)$$ ",
@@ -1785,7 +1789,10 @@
       "$$\\,f'\\left( 2 \\right) \\le 0$$ ",
       "$$\\,{{f'\\left( 3 \\right)} \\over {f\\left( 3 \\right)}} \\ge {{f'\\left( 2 \\right)} \\over {f\\left( 2 \\right)}}$$ "
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      1,
+      2
+    ],
     "correctAnswer": "",
     "solution": "<p>$$f(x) = \\mathop {\\lim }\\limits_{n \\to \\infty } {\\left\\{ {{{{n^{2n}}\\left( {{x \\over n} + 1} \\right)\\left( {{x \\over n} + {1 \\over 2}} \\right)...\\left( {{x \\over n} + {1 \\over n}} \\right)} \\over {n!{n^{2n}}\\left( {{{{x^2}} \\over {{n^2}}} + 1} \\right)\\left( {{{{x^2}} \\over {{n^2}}} + {1 \\over {{2^2}}}} \\right)....\\left( {{{{x^2}} \\over {{n^2}}} + {1 \\over {{n^2}}}} \\right)}}} \\right\\}^{{x \\over n}}}$$</p>\n<p>By taking logarithm we have</p>\n<p>$$\\ln f(x) = \\mathop {\\lim }\\limits_{n \\to \\infty } {x \\over n}\\left\\{ {\\sum\\limits_{r = 1}^n {\\ln \\left( {1 + {{rx} \\over n}} \\right) - \\sum\\limits_{r = 1}^n {\\ln \\left( {1 + {{{r^2}{x^2}} \\over {{n^2}}}} \\right)} } } \\right\\}$$</p>\n<p>By definite integration, we can write it as</p>\n<p>$$\\ln f(x) = x\\int\\limits_0^1 {\\ln (1 + xy)dy - x\\int\\limits_0^1 {\\ln (1 + {x^2}{y^2})dy} } $$</p>\n<p>Let xy = u</p>\n<p>Then, $$\\ln f(x) = \\int\\limits_0^x {\\ln (1 + u)du - \\int\\limits_0^x {\\ln (1 + {u^2})du} } $$</p>\n<p>Using Newton-Leibnitz formula, we get</p>\n<p>$${1 \\over {f(x)}}\\,.\\,f'(x) = log\\left( {{{1 + x} \\over {1 + {x^2}}}} \\right)$$ ...... (i)</p>\n<p>Here, at x = 1,</p>\n<p>$${{f'(1)} \\over {f(1)}} = \\log (1) = 0$$</p>\n<p>$$\\therefore$$ $$f'(1) = 0$$</p>\n<p>Now, sign scheme of f'(x) is shown below</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0rijq07/df2464bb-dd03-423a-aefc-bb2bdd267cba/50477770-a407-11ec-9e3c-d721fdc6a078/file-1l0rijq08.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0rijq07/df2464bb-dd03-423a-aefc-bb2bdd267cba/50477770-a407-11ec-9e3c-d721fdc6a078/file-1l0rijq08.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 2 Offline Mathematics - Definite Integration Question 66 English Explanation\"></p>\n<p>$$\\therefore$$ At x = 1, function attains maximum. Since, f(x) increases on (0, 1).</p>\n<p>$$\\therefore$$ f(1) &gt; f(1/2)</p>\n<p>$$\\therefore$$ Option (a) is incorrect.</p>\n<p>f(1/3) &lt; f(2/3)</p>\n<p>$$\\therefore$$ Option (b) is correct.</p>\n<p>Also, f'(x) &lt; 0, when x &gt; 1</p>\n<p>$$\\Rightarrow$$ f'(2) &lt; 0</p>\n<p<>$$\\therefore$$ Option (c) is correct.<p></p>\n<p>Also, $${{f'(x)} \\over {f(x)}} = \\log \\left( {{{1 + x} \\over {1 + {x^2}}}} \\right)$$</p>\n<p>$$\\therefore$$ $${{f'(3)} \\over {f(3)}} - {{f'(2)} \\over {f(2)}} = \\log \\left( {{4 \\over {10}}} \\right) - \\log \\left( {{3 \\over 5}} \\right)$$</p>\n<p>$$ = \\log (2/3) &lt; 0$$</p>\n<p>$$ \\Rightarrow {{f'(3)} \\over {f(3)}} &lt; {{f'(2)} \\over {f(2)}}$$</p>\n<p>$$\\therefore$$ Option (d) is incorrect.</p></p<>",
     "marks": 4,
@@ -1985,7 +1992,8 @@
       "$$g(x) \\le {2 \\over 3}{x^3} - {2 \\over 5}{x^5} + {1 \\over 7}{x^7}$$, for all $$x \\in \\left( {0,{1 \\over 2}} \\right)$$"
     ],
     "correctOptionIndex": [
-      1,
+      0,
+      2,
       3
     ],
     "correctAnswer": "",
@@ -2002,7 +2010,7 @@
     "title": "JEE Advanced 2021 Paper 2 Online",
     "year": 2021,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let $$f:\\left[ { - {\\pi  \\over 2},{\\pi  \\over 2}} \\right] \\to R$$ be a continuous function such that $$f(0) = 1$$ and $$\\int_0^{{\\pi  \\over 3}} {f(t)dt = 0} $$. Then which of the following statements is(are) TRUE?",
     "options": [
       "The equation $$f(x) - 3\\cos 3x = 0$$ has at least one solution in $$\\left( {0,{\\pi  \\over 3}} \\right)$$",
@@ -2010,7 +2018,12 @@
       "$$\\mathop {\\lim }\\limits_{x \\to 0} {{x\\int_0^x {f(t)dt} } \\over {1 - {e^{{x^2}}}}} =  - 1$$",
       "$$\\mathop {\\lim }\\limits_{x \\to 0} {{\\sin x\\int_0^x {f(t)dt} } \\over {{x^2}}} =  - 1$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "Given, f(0) = 1 and $$\\int_0^{\\pi /3} {f(t)\\,dt = 0} $$<br/><br/>For option (a)<br/><br/>Consider a function<br/><br/>$$g(x) = \\int_0^\\pi  {f(t)\\,dt - \\sin 3x} $$<br/><br/>g(x) is continuous and differentiable function and g(0) = g($$\\pi$$/3) = 0<br/><br/>$$\\therefore$$ By Rolle's theorem, g'(x) = 0 has at least one solution in (0, $$\\pi$$/3).<br/><br/>i.e. g'(x) = f(x) $$\\times$$ 1 $$-$$ 3cos 3x = 0 for some $$x \\in \\left( {0,{\\pi  \\over 3}} \\right)$$<br/><br/>For option (b)<br/><br/>Consider the function<br/><br/>$$\\phi (x) = \\int_0^x {f(t)dt + \\cos 3x + {6 \\over \\pi }x} $$<br/><br/>$$\\phi$$(x) is continuous and differentiable function as well as $$\\phi$$(0) = $$\\phi$$($$\\pi$$/3) = 1<br/><br/>Hence, by Rolle's theorem, $$\\phi$$'(x) = 0 has at least one solution in (0, $$\\pi$$ / 3). <br/><br/>i.e. $$\\phi$$'(x) = f(x) $$\\times$$ 1 $$-$$ 3sin 3x + $${6 \\over \\pi } = 0$$ for some $$x \\in \\left( {0,{\\pi  \\over 3}} \\right)$$.<br/><br/>For option (c)<br/><br/>Let $$L = \\mathop {\\lim }\\limits_{x \\to 0} {{x\\int_0^x {f(t)dt} } \\over {1 - {e^{{x^2}}}}}$$ (form $${0 \\over 0}$$)<br/><br/>$$ \\Rightarrow L = \\mathop {\\lim }\\limits_{x \\to 0} {{xf(x) + \\int_0^x {f(t)dt} } \\over { - 2x{e^{{x^2}}}}}$$ (Using L-Hospital Rule)<br/><br/>Again, using L'-Hospital Rule ($$\\therefore$$ form $${0 \\over 0}$$)<br/><br/>$$L = \\mathop {\\lim }\\limits_{x \\to 0} {{xf'(x) + f(x) + f(x)} \\over { - 4{x^2}{e^{{x^2}}} - 2{e^{{x^2}}}}} = {{0 + 2f(0)} \\over { - 0 - 2}} =  - 1$$ ($$\\because$$ f(0) = 1)<br/><br/>For option (d)<br/><br/>Let $$P = \\mathop {\\lim }\\limits_{x \\to 0} {{\\sin x.\\int_0^x {f(t)dt} } \\over {{x^2}}}$$ (form $${0 \\over 0}$$)<br/><br/>Applying L-Hospital Rule,<br/><br/>$$P = \\mathop {\\lim }\\limits_{x \\to 0} {{\\sin x.f(x) + \\cos x.\\int_0^x {f(t)dt} } \\over {2x}}$$ (form $${0 \\over 0}$$)<br/><br/>Again using L-Hospital Rule,<br/><br/>$$P = \\mathop {\\lim }\\limits_{x \\to 0} {{[\\cos x.f(x) + \\sin x.f'(x) + \\cos x.f(x) - \\sin x\\int_0^x {f(t)dt]} } \\over 2}$$<br/><br/>$$ \\Rightarrow P = {{1 \\times f(0) + 0 \\times f'(0) + 1 \\times f(0) - 0 \\times 0} \\over 2}$$<br/><br/>$$ \\Rightarrow P = {{1 + 0 + 1 - 0} \\over 2} = 1$$",
     "marks": 4,

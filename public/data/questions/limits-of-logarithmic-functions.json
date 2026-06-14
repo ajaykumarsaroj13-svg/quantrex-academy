@@ -18,7 +18,8 @@
     "topic": "limits-of-logarithmic-functions",
     "difficulty": "medium",
     "solution": "<p>$$ \\ln \\left(\\lim\\limits _{x \\rightarrow 1}\\left(\\frac{f(x+2)}{f(3)}\\right)^{\\frac{18}{(x-1)^2}}\\right)\\left(1^{\\infty}\\right) $$</p>\n<p>$$In\\left( {{e^{\\mathop {\\lim }\\limits_{x \\to 1} }}{{18} \\over {{{(x - 1)}^2}}}\\left( {{{f(x + 2)} \\over {f(3)}} - 1} \\right)} \\right)$$</p>\n<p>$$In\\left( {{e^{\\mathop {\\lim }\\limits_{x \\to 1} }}{{f'(x + 2)} \\over {2(X - 1)}}} \\right)$$</p>\n<p><p></p>\n<p>$$In\\left( {{e^{\\mathop {\\lim }\\limits_{x \\to 1} }}{{f''(x + 2)} \\over 2}} \\right)$$</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 1} {{f''(3)} \\over 2} = {4 \\over 2} = 2$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "l7eibhyh",
@@ -35,7 +36,8 @@
     "difficulty": "hard",
     "solution": "<p>$$\\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} f(g(x)) = f\\left( {\\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} g(x)} \\right)$$ [As $$f(x)$$ is continuous function so we can write this]</p>\n<p>Now,</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} g(x)$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {{2{{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )} \\over {{{\\log }_e}\\left( {{e^{\\sqrt x }} - {e^{\\sqrt \\alpha  }}} \\right)}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {{2{{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )} \\over {{{\\log }_e}\\left( {{e^{\\sqrt \\alpha  }}\\left( {{{{e^{\\sqrt x }}} \\over {{e^{\\sqrt \\alpha  }}}} - 1} \\right)} \\right)}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {{2{{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )} \\over {{{\\log }_e}\\left[ {{e^{\\sqrt \\alpha  }}({e^{\\sqrt x  - \\sqrt \\alpha  }} - 1)} \\right]}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {{2{{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )} \\over {{{\\log }_e}{e^{\\sqrt \\alpha  }} + {{\\log }_e}({e^{\\sqrt x  - \\sqrt \\alpha  }} - 1)}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {{2{{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )} \\over {\\sqrt \\alpha   + {{\\log }_e}\\left[ {{{{e^{\\sqrt x  - \\sqrt \\alpha  }} - 1} \\over {(\\sqrt x  - \\sqrt \\alpha  )}} \\times (\\sqrt x  - \\sqrt \\alpha  )} \\right]}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {{2{{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )} \\over {\\sqrt \\alpha   + {{\\log }_e}\\left[ {\\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} \\left( {{{{e^{\\sqrt x  - \\sqrt \\alpha  }} - 1} \\over {(\\sqrt x  - \\sqrt \\alpha  )}} \\times (\\sqrt x  - \\sqrt \\alpha  )} \\right)} \\right]}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {{2{{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )} \\over {\\sqrt \\alpha   + {{\\log }_e}(1 \\times \\sqrt x  - \\sqrt \\alpha  )}}$$ [using $$\\mathop {\\lim }\\limits_{x \\to 0} {{{e^2} - 1} \\over x} = 1$$]</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {{2{{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )} \\over {\\sqrt \\alpha   + {{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {2 \\over {{{\\sqrt \\alpha  } \\over {{{\\log }_e}(\\sqrt x  - \\sqrt \\alpha  )}} + 1}}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7upwekm/4c3bacbb-665d-418a-bf38-8432fd08740d/ee789660-305f-11ed-be02-29ec3fdd6583/file-1l7upwekn.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7upwekm/4c3bacbb-665d-418a-bf38-8432fd08740d/ee789660-305f-11ed-be02-29ec3fdd6583/file-1l7upwekn.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2022 Paper 1 Online Mathematics - Limits, Continuity and Differentiability Question 26 English Explanation\"></p>\n<p>From graph you can see $$\\log _e^{{0^ + }} \\to \\, - \\alpha $$</p>\n<p>$$\\therefore$$ $$\\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {\\log _e}(\\sqrt x  - \\sqrt \\alpha  ) = \\log _e^{{0^ + }} =  - \\alpha $$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} {2 \\over {{{\\sqrt \\alpha  } \\over { - \\alpha }} + 1}}$$</p>\n<p>$$ = {2 \\over {0 + 1}}$$</p>\n<p>$$ = 2$$</p>\n<p>$$\\therefore$$ $$f\\left( {\\mathop {\\lim }\\limits_{x \\to {\\alpha ^ + }} g(x)} \\right) = f(2) = \\sin \\left( {{{\\pi  \\times 2} \\over {12}}} \\right) = \\sin {\\pi  \\over 6} = {1 \\over 2}$$</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l6ggon0k",
@@ -56,7 +58,8 @@
     "topic": "limits-of-logarithmic-functions",
     "difficulty": "medium",
     "solution": "<p>$$f(x) = \\left\\{ {\\matrix{\n   {{{{{\\log }_e}(1 - x + {x^2}) + {{\\log }_e}(1 + x + {x^2})} \\over {\\sec x - \\cos x}}} & , & {x \\in \\left( {{{ - \\pi } \\over 2},{\\pi  \\over 2}} \\right) - \\{ 0\\} }  \\cr \n   k & , & {x = 0}  \\cr \n\n } } \\right.$$</p>\n<p>for continuity at $$x = 0$$</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 0} f(x) = k$$</p>\n<p>$$\\therefore$$ $$k = \\mathop {\\lim }\\limits_{x \\to 0} {{{{\\log }_e}({x^4} + {x^2} + 1)} \\over {\\sec x - \\cos x}}\\left( {{0 \\over 0}\\,\\mathrm{form}} \\right)$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to 0} {{\\cos x{{\\log }_e}({x^4} + {x^2} + 1)} \\over {{{\\sin }^2}x}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to 0} {{{{\\log }_e}({x^4} + {x^2} + 1)} \\over {{x^2}}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to 0} {{\\ln (1 + {x^2} + {x^4})} \\over {{x^2} + {x^4}}}\\,.\\,{{{x^2} + {x^4}} \\over {{x^2}}}$$</p>\n<p>$$ = 1$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "R5XYqyMrRxDibGRVXB1kjtg9z2p",
@@ -73,7 +76,8 @@
     "difficulty": "medium",
     "solution": "$${({({\\log _2}9)^2})^{{1 \\over {{{\\log }_2}({{\\log }_2}9)}}}} \\times {(\\sqrt 7 )^{{1 \\over {{{\\log }_4}7}}}}$$<br><br>$$ = {({\\log _2}9)^{{{2.{{\\log }_2}} \\over {{{\\log }_2}9}}}} \\times {7^{{1 \\over 2}.{{\\log }_7}4}}$$<br><br>$$ = {({\\log _2}9)^{{{\\log }_{\\log {2^{{9^{{2^2}}}}}}}}} \\times {7^{{{\\log }_7}2}}$$<br><br>$$ = {2^2} \\times 2 = 8$$",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "gJ8W4ffbWbmqeEai",
@@ -94,7 +98,8 @@
     "topic": "limits-of-logarithmic-functions",
     "difficulty": "easy",
     "solution": "$$\\mathop {\\lim }\\limits_{x \\to 0} {{\\log \\left( {3 + x} \\right) - \\log \\left( {3 - x} \\right)} \\over x} = K$$ \n<br><br>(by $$L'$$  Hospital rule)\n<br><br>$$\\mathop {\\lim }\\limits_{x \\to 0} {{{1 \\over {3 + x}} - {{ - 1} \\over {3 - x}}} \\over 1} = K$$\n<br><br>$$\\therefore$$ $${2 \\over 3} = K$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "DZUSj4MdIWEgezAl",
@@ -115,6 +120,7 @@
     "topic": "limits-of-logarithmic-functions",
     "difficulty": "easy",
     "solution": "Since $$\\mathop {\\lim }\\limits_{x \\to 0} \\left[ x \\right]$$ does not exist, hence the required limit does not exist. ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

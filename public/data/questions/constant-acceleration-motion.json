@@ -18,7 +18,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "<p>Let's denote the constant acceleration with which the body moves as $$a$$. We know that the displacement $$S$$ covered by a body starting from rest under a constant acceleration $$a$$ in time $$t$$ is given by the equation of motion: $$S = \\frac{1}{2} a t^2$$.</p>\n\n<p>Considering the displacement $$\\mathrm{S}_1$$ in first $$(p-1)$$ seconds, we apply the equation of motion:</p>\n$$ \\mathrm{S}_1 = \\frac{1}{2} a (p-1)^2 $$\n\n<p>Similarly, for the displacement $$\\mathrm{S}_2$$ in first $$p$$ seconds:</p>\n$$ \\mathrm{S}_2 = \\frac{1}{2} a p^2 $$\n\n<p>To find out the total time it will take to cover the displacement $$\\mathrm{S}_1+\\mathrm{S}_2$$, we first find the sum of these two displacements:</p>\n$$ \\mathrm{S}_1+\\mathrm{S}_2 = \\frac{1}{2} a (p-1)^2 + \\frac{1}{2} a p^2 $$\n\n<p>Let's simplify this:</p>\n$$ \\mathrm{S}_1+\\mathrm{S}_2 = \\frac{1}{2} a \\left((p-1)^2 + p^2\\right) $$\n$$ \\mathrm{S}_1+\\mathrm{S}_2 = \\frac{1}{2} a \\left(p^2 - 2p + 1 + p^2\\right) $$\n$$ \\mathrm{S}_1+\\mathrm{S}_2 = \\frac{1}{2} a \\left(2p^2 - 2p + 1\\right) $$\n$$ \\mathrm{S}_1+\\mathrm{S}_2 = a \\left(\\frac{2p^2 - 2p + 1}{2}\\right) $$\n\n<p>If we consider the total displacement $$\\mathrm{S}_1+\\mathrm{S}_2$$ is to be covered in a time $$t$$ seconds from rest, we should set this equal to the equation of motion:</p>\n$$ \\mathrm{S}_1+\\mathrm{S}_2 = \\frac{1}{2} a t^2 $$\n\n<p>Equating the two equations:</p>\n$$ a \\left(\\frac{2p^2 - 2p + 1}{2}\\right) = \\frac{1}{2} a t^2 $$\n\n<p>Since $$a \\neq 0$$, we can simplify by dividing both sides by $$ \\frac{1}{2} a$$:</p>\n$$ \\frac{2p^2 - 2p + 1}{2} = \\frac{t^2}{2} $$\n$$ 2p^2 - 2p + 1 = t^2 $$\n\n<p>To find $$t$$, we take the square root of both sides:</p>\n$$ t = \\sqrt{2p^2 - 2p + 1} $$\n\n<p>Therefore, the time taken to cover the displacement $$\\mathrm{S}_1+\\mathrm{S}_2$$ will be:</p>\n$$ t = \\sqrt{(2p^2 - 2p + 1)}\\ s $$\n\n<p>Hence, the correct option would be:</p>\nOption D: $$ \\sqrt{(2p^2 - 2p + 1)}\\ s $$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lsgxiwe5",
@@ -27,14 +28,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "<p>The displacement and the increase in the velocity of a moving particle from time $$t$$ to $$(t + 1) \\mathrm{s}$$ are $$125 \\mathrm{~m}$$ and $$50 \\mathrm{~m} / \\mathrm{s}$$, respectively. The distance traveled by the particle in $$(\\mathrm{t} + 2)^{\\mathrm{th}} \\mathrm{s}$$ is calculated as follows:\n\n<p>Given that the acceleration is constant, we start with: </p>\n\n<p>$$ v = u + at $$</p>\n\n<p>When the velocity has increased by $$50 \\mathrm{~m}/\\mathrm{s}$$, the equation becomes:</p>\n\n<p>$$ u + 50 = u + a \\quad \\Rightarrow \\quad a = 50 \\mathrm{~m}/\\mathrm{s}^2 $$</p>\n\n<p>Next, we consider the displacement: </p>\n\n<p>$$ 125 = u t + \\frac{1}{2} a t^2 $$</p>\n\n<p>Since this is given over a unit time interval (from $$t$$ to $$(t + 1)$$), we use: </p>\n\n<p>$$ 125 = u + \\frac{a}{2} $$</p>\n\n<p>Substituting $$a = 50 \\mathrm{~m}/\\mathrm{s}^2$$: </p>\n\n<p>$$ 125 = u + \\frac{50}{2} \\quad \\Rightarrow \\quad  125 = u + 25 \\quad \\Rightarrow \\quad u = 100 \\mathrm{~m}/\\mathrm{s} $$</p>\n\n<p>To find the distance traveled by the particle in $$(t + 2)^\\text{th}$$ second, we use: </p>\n\n<p>$$ S_n = u + \\frac{a}{2} [2n - 1] $$</p>\n\n<p>For $$n = t + 2$$ (i.e., the (t+2)th second): </p>\n\n<p>$$ S_{(t+2)} = u + \\frac{a}{2} [2(t+2) - 1] $$</p>\n\n<p>With $$u = 100$$ and $$a = 50$$:\n\n<p>\n\n<p>$$ S_{(t+2)} = 100 + \\frac{50}{2} [2(t+2) - 1] = 100 + 25 \\times [2(t+2) - 1] = 100 + 25 \\times (2t + 4 - 1) = 100 + 25 \\times (2t + 3) = 100 + 25 \\times 5 = 100 + 125 = 225 \\mathrm{~m} $$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "lv2er9lr",
@@ -50,7 +52,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "<p>A bus traveling along a straight highway at a speed of 72 km/h comes to a stop within 4 seconds after the brakes are applied. To find the distance the bus travels during this time (assuming uniform deceleration), follow these steps:</p>\n\n<p>First, convert the initial speed from km/h to m/s:</p>\n\n<p>\n\n<p>$$\\begin{aligned} u &= 72 \\times \\frac{5}{18} = 20 \\, \\text{m/s}  \\end{aligned}$$</p>\n\n</p>\n\n<p>Given: <br>\n\n<p>Initial speed ($ u $) = 20 m/s <br></p>\n\n<p>Final speed ($ v $) = 0 m/s <br></p>\n\n<p>Time ($ t $) = 4 s </p></p>\n\n<p>Using the first equation of motion:</p>\n\n<p>\n\n<p>$$\\begin{aligned} v &= u + at \\\\ 0 &= 20 + 4a \\\\ a &= -5 \\, \\text{m/s}^2  \\end{aligned}$$</p>\n\n</p>\n\n<p>Now, use the second equation of motion to find the distance traveled ($ S $):</p>\n\n<p>\n\n<p>$$\\begin{aligned} S &= ut + \\frac{1}{2}at^2 \\\\ S &= 20 \\times 4 + \\frac{1}{2} \\times (-5) \\times 4^2 \\\\ S &= 80 - 40 \\\\ S &= 40 \\, \\text{m} \\end{aligned}$$</p>\n\n</p>\n\n<p>Therefore, the distance traveled by the bus during the time the brakes are applied is 40 meters.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "lv0vxlz6",
@@ -71,7 +74,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "<p>The distance covered by a body in the $$n^{\\text{th}}$$ second can be found using the equation:</p>\n\n<p>$$S_{n} = u + \\dfrac{1}{2}a(2n-1)$$</p>\n\n<p>where,</p>\n\n<ul>\n\n<li>$$S_{n}$$ is the distance covered in the $$n^{\\text{th}}$$ second,</li>\n\n<li>$$u$$ is the initial velocity,</li>\n\n<li>$$a$$ is the acceleration, and</li>\n\n<li>$$n$$ is the nth second.</li>\n\n</ul>\n\n<p>The distance covered in the $$n^{\\text{th}}$$ second is given as $$102.5 \\, \\text{m}$$, so we have:</p>\n\n<p>$$102.5 = u + \\dfrac{1}{2}a(2n-1)$$ ---- (1)</p>\n\n<p>For the $$(n + 2)^{\\text{th}}$$ second, the distance covered is:</p>\n\n<p>$$S_{n+2} = u + \\dfrac{1}{2}a(2(n+2)-1)$$</p>\n\n<p>Substituting $$n + 2$$ in place of $$n$$, we get:</p>\n\n<p>$$115.0 = u + \\dfrac{1}{2}a(2n+3)$$ ---- (2)</p>\n\n<p>Subtracting equation (1) from equation (2), we get:</p>\n\n<p>$$115.0 - 102.5 = \\dfrac{1}{2}a(2n + 3 - 2n + 1)$$</p>\n\n<p>$$12.5 = \\dfrac{1}{2}a(4)$$</p>\n\n<p>So, solving for $$a$$ gives:</p>\n\n<p>$$a = \\dfrac{12.5 \\times 2}{4} = \\dfrac{25}{4} = 6.25 \\, \\text{m/s}^2$$</p>\n\n<p>Therefore, the acceleration of the body is:</p>\n\n<p>$$6.25 \\, \\text{m/s}^2$$</p>\n\n<p>Which corresponds to Option A: $$6.25 \\, \\text{m/s}^2$$.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lv7v3txf",
@@ -87,7 +91,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "<p>Given that a body is moving on a frictionless plane and starts from rest, the motion can be assumed to be uniformly accelerated motion. The formula for the distance covered in uniformly accelerated motion from rest is given by $$s = ut + \\frac{1}{2}at^2$$, where:\n\n<ul>\n<li>$$s$$ is the distance covered,</li><br>\n<li>$$u$$ is the initial velocity (which is 0 since the body starts from rest),</li><br>\n<li>$$a$$ is the acceleration, and</li><br>\n<li>$$t$$ is the time.</li>\n</ul>\n<p>Since the body starts from rest ($$u=0$$), the formula simplifies to $$s = \\frac{1}{2}at^2$$.</p>\n\n<p>The distance moved between $$t = n - 1$$ and $$t = n$$, denoted as $$S_n$$, can be found by calculating the distance covered by the end of time $$n$$ and subtracting the distance covered by the end of time $$n-1$$. Let's denote the total distance covered by time $$n$$ as $$S(n)$$, which according to the formula is $$S(n) = \\frac{1}{2}a n^2$$. Thus, $$S_n = S(n) - S(n-1)$$.</p>\n\n<p>Therefore, we have:</p>\n\n<p>$$S_n = \\frac{1}{2}an^2 - \\frac{1}{2}a(n-1)^2$$</p>\n\n<p>Simplifying this, we get:</p>\n\n<p>$$S_n = \\frac{1}{2}a(n^2 - (n^2 - 2n + 1))$$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$S_n = \\frac{1}{2}a(2n - 1)$$</p>\n\n<p>Similarly,</p>\n\n<p>$$S_{n-1} = \\frac{1}{2}a((n-1)^2 - (n-2)^2)$$</p>\n\n<p>Simplifying:</p>\n\n<p>$$S_{n-1} = \\frac{1}{2}a((n-1)^2 - (n^2 - 4n + 4))$$</p>\n\n<p>Which further simplifies to:</p>\n\n<p>$$S_{n-1} = \\frac{1}{2}a(2n - 3)$$</p>\n\n<p>Hence, the ratio $$\\frac{S_{n-1}}{S_n}$$ can be calculated:</p>\n\n<p>$$\\frac{S_{n-1}}{S_n} = \\frac{\\frac{1}{2}a(2n - 3)}{\\frac{1}{2}a(2n - 1)} = \\frac{2n - 3}{2n - 1}$$</p>\n\n<p>For $$n = 10$$,</p>\n\n<p>$$\\frac{S_{n-1}}{S_n} = \\frac{2(10) - 3}{2(10) - 1} = \\frac{20 - 3}{20 - 1} = \\frac{17}{19}$$</p>\n\n<p>Given that the ratio is represented as $$\\left(1 - \\frac{2}{x}\\right)$$, we have:</p>\n\n<p>$$\\frac{17}{19} = 1 - \\frac{2}{x}$$</p>\n\n<p>Solving this equation for $$x$$ gives:</p>\n\n<p>$$1 - \\frac{17}{19} = \\frac{2}{x}$$</p>\n\n<p>$$\\frac{2}{19} = \\frac{2}{x}$$</p>\n\n<p>Thus:</p>\n\n<p>$$x = 19$$</p></p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "luxwdjas",
@@ -108,7 +113,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "<p>Let's analyze the given information before determining the distance between the two cars when they come to rest. Each car is traveling towards the other at a speed of $$20 \\, \\text{m s}^{-1}$$ and they both start braking when they are $$300 \\, \\text{m}$$ apart. The deceleration (negative acceleration) of each car is given as $$2 \\, \\text{m s}^{-2}.$$</p>\n\n<p>To find the distance each car travels before coming to rest, we can use the kinematic equation that relates initial velocity ($$v_i$$), final velocity ($$v_f$$), acceleration ($$a$$), and distance ($$d$$), which is:</p>\n\n<p>$$v_f^2 = v_i^2 + 2ad$$</p>\n\n<p>Since the final velocity $$v_f = 0$$ (they come to rest), we can rearrange the equation to solve for $$d$$ (the distance each car travels before stopping):</p>\n\n<p>$$0 = v_i^2 + 2ad \\Rightarrow d = -\\frac{v_i^2}{2a}$$</p>\n\n<p>Plugging in the values for each car (noting that acceleration $$a$$ is negative because it is deceleration, so $$a = -2 \\, \\text{m s}^{-2}$$):</p>\n\n<p>$$d = -\\frac{(20)^2}{2(-2)} = -\\frac{400}{-4} = 100 \\, \\text{m}$$</p>\n\n<p>Each car travels $$100 \\, \\text{m}$$ before coming to rest. Since they both start $$300 \\, \\text{m}$$ apart and each travels $$100 \\, \\text{m}$$ towards the other, the total distance covered by both cars before stopping is $$2 \\times 100 \\, \\text{m} = 200 \\, \\text{m}$$.</p>\n\n<p>To find the distance between them when they come to rest, we subtract the total distance covered by both cars from the original distance between them:</p>\n\n<p>$$300 \\, \\text{m} - 200 \\, \\text{m} = 100 \\, \\text{m}$$</p>\n\n<p>So, the distance between the cars when they come to rest is $$100 \\, \\text{m}$$. Therefore, the correct option is:</p>\n\n<p>Option B\n100 m</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldnzu2i0",
@@ -117,14 +123,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "By using $3^{\\text {rd }}$ equation of motion\n<br/><br/>$$\n\\begin{aligned}\n& v^2=u^2+2 a s \\\\\\\\\n& (0)^2=u^2+2 a s \\\\\\\\\n& u^2=-2 a s \\\\\\\\\n& S=\\frac{u^2}{2 a}-\\frac{(20)^2}{2 \\times a}=500 \\\\\\\\\n& \\text { acceleration of the train, } a=-\\frac{400}{1000}=-0.4 \\mathrm{~m} / \\mathrm{sec}\n\\end{aligned}\n$$\n<br/><br/>Now, if the brakes are applied at $S=250 \\mathrm{~m}$ i.e. half of the distance\n<br/><br/>$$\n\\begin{aligned}\n& v^2=u^2+2 a s \\\\\\\\\n& v^2=(20)^2+2(-0.4) \\times 250 \\\\\\\\\n& v^2=400-2 \\times \\frac{4}{10} \\times 250 \\\\\\\\\n& v^2=200 \\\\\\\\\n& v=\\sqrt{200} \\\\\\\\\n& \\text { Given } \\Rightarrow v=\\sqrt{x} \\\\\\\\\n& \\therefore x=200\n\\end{aligned}\n$$",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "1lh2zn7yx",
@@ -145,7 +152,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "<p>To find the time taken by the particle to reach the velocity of $$60.0 \\mathrm{~ms}^{-1}$$, we can use the formula:</p>\n<p>$$\nv = u + at\n$$</p>\n<p>Where:\n$$v$$ is the final velocity,\n$$u$$ is the initial velocity,\n$$a$$ is the acceleration, and\n$$t$$ is the time taken.</p>\n<p>Plugging in the given values:</p>\n<p>$$\n60.0 \\mathrm{~ms}^{-1} = 10.0 \\mathrm{~ms}^{-1} + 2.0 \\mathrm{~ms}^{-2} \\cdot t\n$$</p>\n<p>Solve for $$t$$:</p>\n<p>$$\n50.0 \\mathrm{~ms}^{-1} = 2.0 \\mathrm{~ms}^{-2} \\cdot t\n$$</p>\n<p>$$\nt = \\frac{50.0 \\mathrm{~ms}^{-1}}{2.0 \\mathrm{~ms}^{-2}} = 25 \\mathrm{s}\n$$</p>\n<p>So, the time taken by the particle to reach the velocity of $$60.0 \\mathrm{~ms}^{-1}$$ is 25 seconds.</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6dzqwfz",
@@ -154,14 +162,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "<p>$${F_R}\\,d = {1 \\over 2}m{v^2}$$</p>\n<p>$${{{d_2}} \\over {{d_1}}} = {\\left( {{{{v_2}} \\over {{v_1}}}} \\right)^2} = {\\left( {{1 \\over 3}} \\right)^2}$$</p>\n<p>$${d_2} = {d_1} \\times {1 \\over 9} = 3m$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "1l6kmlo5h",
@@ -182,7 +191,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "<p>S = 4 cm</p>\n<p>$$v{'_4} = {v \\over 3}$$, a = constant</p>\n<p>$${v_{4 + x}} = 0$$</p>\n<p>$$\\left( {{v^2} - {{{v^2}} \\over a}} \\right) = 2a(4)$$</p>\n<p>$$({v^2} - 0) = 2a(4 + x)$$</p>\n<p>$${4 \\over {4 + x}} = {8 \\over 9}$$</p>\n<p>$$ \\Rightarrow x = 0.5$$ m</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l54uibr0",
@@ -203,7 +213,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "<p>A small toy begins to move from a standstill with a constant acceleration. It covers a distance of 10 meters in t seconds. We need to determine the distance the toy will travel in the subsequent t seconds.</p>\n\n<p>First, we know that the initial distance traveled is given by the formula for constant acceleration starting from rest:</p>\n\n<p>$$\\frac{1}{2} a t^2 = 10 \\text{ m}$$</p>\n\n<p>Next, we calculate the total distance traveled after 2t seconds:</p>\n\n<p>$$\\frac{1}{2} a (2t)^2 = \\frac{1}{2} a \\cdot 4t^2 = 2 a t^2$$</p>\n\n<p>Since we know from the initial condition that $ \\frac{1}{2} a t^2 = 10 \\text{ m} $, multiplying it by 4 gives</p>\n\n<p>$$2 a t^2 = 40 \\text{ m}$$</p>\n\n<p>Thus, the additional distance traveled in the next t seconds is:</p>\n\n<p>$$\\text{Total distance after 2t seconds} - \\text{Distance already traveled in t seconds}$$</p>\n\n<p>$$= 40 \\text{ m} - 10 \\text{ m}$$</p>\n\n<p>$$= 30 \\text{ m}$$</p>\n\n<p></p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lyhEKI3Puvr1IK36cr1kmj1t82f",
@@ -224,7 +235,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ko7h7eqi/3fc6c26c-b8ae-40dc-a65f-c6a13fb23763/cb332ba0-ab6f-11eb-b998-914ca047e327/file-1ko7h7eqj.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 17th March Morning Shift Physics - Motion in a Straight Line Question 82 English Explanation\">\n<br>$${t_1} + {t_2} = t,$$ $$V' = 0 + \\alpha {t_1}$$<br><br>$$V = u + at$$<br><br>$$0 = \\alpha {t_1} - \\beta {t_2}$$<br><br>$${t_2} = {\\alpha  \\over \\beta }{t_1} = t$$<br><br>$${t_1} = \\left( {{\\beta  \\over {\\alpha  + \\beta }}} \\right)t$$<br><br>Distance $$ = {1 \\over 2}({t_1} + {t_2}) \\times \\alpha {t_1}$$ (area of triangle)<br><br>$$ = {1 \\over 2}t \\times \\alpha \\left( {{\\beta  \\over {\\alpha  + \\beta }}} \\right)t$$<br><br>$$ = {{\\alpha \\beta } \\over {2(\\alpha  + \\beta )}}{t^2}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "5JczKa1YBwDaPgOgOP1kmkrcrvd",
@@ -245,7 +257,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "Acceleration(a) is constant\n\n<br><br>$$ \\therefore $$ v $$ \\propto $$ t (straight line graph)\n<br><br>and x $$ \\propto $$ t<sup>2</sup>\n(parabolic graph)",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ypLfTlJ7kSZWdRZxbp1klrxixol",
@@ -266,7 +279,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1klxwjnsg/dda24f48-d0b7-4cb8-81c9-5043a74f5f8b/8396ea10-7e93-11eb-a28b-a1f033072627/file-1klxwjnsh-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1klxwjnsg/dda24f48-d0b7-4cb8-81c9-5043a74f5f8b/8396ea10-7e93-11eb-a28b-a1f033072627/file-1klxwjnsh-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1klxwjnsg/dda24f48-d0b7-4cb8-81c9-5043a74f5f8b/8396ea10-7e93-11eb-a28b-a1f033072627/file-1klxwjnsh-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1klxwjnsg/dda24f48-d0b7-4cb8-81c9-5043a74f5f8b/8396ea10-7e93-11eb-a28b-a1f033072627/file-1klxwjnsh-860w.jpeg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/1klxwjnsg/dda24f48-d0b7-4cb8-81c9-5043a74f5f8b/8396ea10-7e93-11eb-a28b-a1f033072627/file-1klxwjnsh-1040w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1klxwjnsg/dda24f48-d0b7-4cb8-81c9-5043a74f5f8b/8396ea10-7e93-11eb-a28b-a1f033072627/file-1klxwjnsh-1220w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Morning Shift Physics - Motion in a Straight Line Question 86 English Explanation\"></picture>\n<br> Let initial speed of train u. When midpoint of the train reach the signal post it's velocity becomes v<sub>0</sub>.<br><br>$$ \\therefore $$ $$v_0^2 = {u^2} + 2as$$ .......(1)<br><br>When train passes the signal post completely it's velocity becomes v.<br><br>$$ \\therefore $$ $${v^2} = v_0^2 + 2as$$ ......(2)<br><br>Subtracting (2) from (1) we get,<br><br>$$v_0^2 - {v^2} = {u^2} - v_0^2$$<br><br>$$ \\Rightarrow v_0^2 + v_0^2 = {u^2} + {v^2}$$<br><br>$$ \\Rightarrow {v_0} = \\sqrt {{{{u^2} + {v^2}} \\over 2}} $$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lBrfl6CGumvivDoYF1klukhpye",
@@ -287,7 +301,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1klwh0ryn/e15f2aa9-29c8-4311-84e9-abc59025f2bb/04d9f1f0-7dca-11eb-8899-2d60151feb7a/file-1klwh0ryo-332w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th February Evening Shift Physics - Motion in a Straight Line Question 84 English Explanation\">\n<br>From given information :<br><br>For 1<sup>st</sup> interval<br><br>$${a_1} = {{{v_0}} \\over {{t_1}}}$$<br><br>v<sub>0</sub> = a<sub>1</sub> t<sub>1</sub> ....... (1)<br><br>For 2<sup>nd</sup> interval<br><br>$${a_2} = {{{v_0}} \\over {{t_2}}}$$<br><br>v<sub>0</sub> = a<sub>2</sub> t<sub>2</sub> ..... (2)<br><br>from (1) &amp; (2)<br><br>a<sub>1</sub> t<sub>1</sub> = a<sub>2</sub> t<sub>2</sub><br><br>$${{{t_1}} \\over {{t_2}}} = {{{a_2}} \\over {{a_1}}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "U3xcTPNDrF9q7GuLFq5g4",
@@ -308,7 +323,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "$$\\overrightarrow S  = \\left( {5\\widehat i + 4} \\right)2 + {1 \\over 2}\\left( {4\\widehat i + 4\\widehat j} \\right)4$$\n<br><br>$$ = 10\\widehat i + 8\\widehat j + 8\\widehat i + 8\\widehat j$$\n<br><br>$$\\overrightarrow {{r_f}}  - \\overrightarrow {{r_i}}  = 18\\widehat i + 16\\widehat j$$\n<br><br>$$\\overrightarrow {{r_f}}  = 20\\widehat i + 20\\widehat j$$\n<br><br>$$\\left| {\\overrightarrow {{r_f}} } \\right| = 20\\sqrt 2 $$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "s5pd1xyXZdDWWlbt8dedb",
@@ -329,7 +345,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "For both car initial speed ($$\\mu $$) = 0\n<br><br>Let the acceleration of car A and car B is $$a$$<sub>1</sub>  and  $$a$$<sub>2</sub> respectively.\n<br><br>Also let the time taken to reach the finishing point for car A is t<sub>1</sub> and for car B is t<sub>2</sub>.\n<br><br>Let at finishing point speed of car A is $$v$$<sub>1</sub> and speed of car B is $$v$$<sub>2</sub>\n<br><br>According to the question, \n<br><br>t<sub>2</sub> $$-$$ t<sub>1</sub> = t\n<br><br>and &nbsp;&nbsp;$$v$$<sub>1</sub> $$-$$ $$v$$<sub>2</sub> = $$v$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$a$$<sub>1</sub>t<sub>1</sub> $$-$$ $$a$$<sub>2</sub>t<sub>2</sub> = $$v$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$a$$<sub>1</sub>t<sub>1</sub> $$-$$ $$a$$<sub>2</sub>(t + t<sub>1</sub>) = $$v$$ . . . . . . .(1)\n<br><br>As, Total distance covered by both car is equal.\n<br><br>So, &nbsp;&nbsp;x<sub>A</sub> = x<sub>B</sub>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$${1 \\over 2}{a_1}t_1^2 = {1 \\over 2}{a_2}t_2^2$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$a$$<sub>1</sub>t$$_1^2$$ = $$a$$<sub>2</sub> (t + t<sub>1</sub>)<sup>2</sup>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$\\sqrt {{a_1}} .{t_1}$$ = $$\\sqrt {{a_2}} $$ . (t + t<sub>1</sub>)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$\\sqrt {{a_1}} .{t_1} - \\sqrt {{a_2}} .{t_1} = \\sqrt {{a_2}} .t$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;t<sub>1</sub>  = $${{\\sqrt {{a_2}} .t} \\over {\\sqrt {{a_1}}  - \\sqrt {{a_2}} }}\\,\\,\\,\\,\\,\\,\\,.....(2)$$\n<br><br>Now put the value of t<sub>1</sub> in equation (2), \n<br><br>($$a$$<sub>1</sub> $$-$$ $$a$$<sub>2</sub>) t<sub>1</sub> $$-$$ $$a$$<sub>2</sub>t = $$v$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;(a<sub>1</sub> $$-$$ a<sub>2</sub>) . $${{\\sqrt {{a_2}} .t} \\over {\\sqrt {{a_1}}  - \\sqrt {{a_2}} }} - {a_2}t = v$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$\\left( {\\sqrt {{a_1}}  + \\sqrt {{a_2}} } \\right)\\sqrt {{a_2}} .t - {a_2}t = v$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$\\sqrt {{a_1}{a_2}} .t + {a_2}.t - {a_2}t = v$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$v$$ = $$\\sqrt {{a_1}{a_2}} .t$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "E5RyZp8ButbOCV2F4tLAR",
@@ -350,7 +367,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "<p>An automobile traveling at 40 km/h can be stopped within a distance of 40 meters by using brakes. If the same automobile is traveling at 80 km/h, we need to determine the minimum stopping distance in meters, assuming no skidding occurs.</p>\n\n<h3>First Case</h3>\n\n<ul>\n<li>Initial speed, $ u_1 = 40 \\, \\text{km/h} $</li><br>\n<li>Final speed, $ v_1 = 0 \\, \\text{m/s} $</li><br>\n<li>Stopping distance, $ s_1 = 40 \\, \\text{m} $</li>\n</ul>\n<p>Using the equation:</p>\n\n<p>$ v^2 - u^2 = 2as $</p>\n\n<p>For the first case:</p>\n\n<p>$ 0^2 - 40^2 = 2a \\times 40 $</p>\n\n<p>$ -1600 = 80a $</p>\n\n<p>$ a = -20 \\, \\text{m/s}^2 $</p>\n\n<h3>Second Case</h3>\n\n<ul>\n<li>Initial speed, $ u_2 = 80 \\, \\text{km/h} $</li><br>\n<li>Final speed, $ v_2 = 0 \\, \\text{m/s} $</li>\n</ul>\n<p>Similarly, using the same equation:</p>\n\n<p>$ 0^2 - 80^2 = 2a s_2 $</p>\n\n<p>$ -6400 = 2a s_2 $</p>\n\n<p>Since $ a = -20 \\, \\text{m/s}^2 $, divide both sides of the equation for the second case by the first case:</p>\n\n<p>$ \\frac{s_2}{40} = \\frac{80^2}{40^2} $</p>\n\n<p>$ s_2 = \\frac{80 \\times 80}{40} $</p>\n\n<p>$ s_2 = 160 \\, \\text{m} $</p>\n\n<p>Thus, the minimum stopping distance when the automobile is traveling at 80 km/h is 160 meters.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "FJLr8Z4hwAqCn4QY",
@@ -371,7 +389,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/CsqvEq2ff29aDlwQR/ALX4krm9NGWO1ELPs4aAZRDclHo8x/lLjGAdkSeCbwhhouD8dgWl/image.png\" loading=\"lazy\" alt=\"AIEEE 2005 Physics - Motion in a Straight Line Question 118 English Explanation\">\nInitially car starts from rest so u = 0.\n<br><br>Now distance from $$A$$ to $$B$$,\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$ S = {1 \\over 2}ft_1^2 $$\n<br><br>$$\\Rightarrow ft_1^2 = 2S$$\n<br><br>Distance from $$B$$ to $$C$$ $$ = \\left( {f{t_1}} \\right)t$$ \n<br><br>In B to C velocity is constant and v = $${f{t_1}}$$\n<br><br>Distance from $$C$$ to $$D$$ \n<br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$ = {{{u^2}} \\over {2a}} = {{{{\\left( {f{t_1}} \\right)}^2}} \\over {2\\left( {f/2} \\right)}} = ft_1^2 = 2S$$ \n<br><br>$$ \\Rightarrow S + f\\,{t_1}t + 2S = 15S $$\n<br><br>$$\\Rightarrow f\\,{t_1}t = 12S$$ ........(1)\n<br><br>But$$\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $${1 \\over 2}f\\,t_1^2 = S$$  .........(2)\n<br><br>On dividing the above two equations, we get $${t_1} = {t \\over 6}$$\n<br><br>$$ \\Rightarrow S = {1 \\over 2}f{\\left( {{t \\over 6}} \\right)^2} = {{f\\,{t^2}} \\over {72}}$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "kEn7LbtD3nafqy6u",
@@ -392,7 +411,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "Assume $$a$$ be the retardation for both the vehicle then\n<br><br>In case of automobile,\n<br><br>$$u_1^2 - 2a{s_1} = 0$$\n<br><br>$$ \\Rightarrow u_1^2 = 2a{s_1}$$\n<br><br>And in case for car,\n<br><br>$$u_2^2 = 2a{s_2}$$\n<br><br>$$\\therefore$$ $${\\left( {{{{u_2}} \\over {{u_1}}}} \\right)^2} = {{{s_2}} \\over {{s_1}}}$$\n<br><br>$$ \\Rightarrow {\\left( {{{120} \\over {60}}} \\right)^2} = {{{s_2}} \\over {20}}$$\n<br><br>$$ \\Rightarrow$$ s<sub>2</sub> = 80 m",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "Vgq2zysrfFM5zUnT",
@@ -413,7 +433,8 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "easy",
     "solution": "<b>For case 1 :</b>\n<br> u = 50 km/hr = $${{50 \\times 1000} \\over {3600}}$$ m/s = $${{125} \\over 9}$$ m/s, v = 0, s = 6 m, $$a$$ = ?\n<br><br>$$\\therefore$$ 0<sup>2</sup> = u<sup>2</sup> + 2$$a$$s\n<br><br>$$ \\Rightarrow $$ $$a =  - {{{u^2}} \\over {2s}}$$ <br><br>$$ \\Rightarrow $$  $$a =  - {{{{\\left( {{{125} \\over 9}} \\right)}^2}} \\over {2 \\times 6}}$$ = $$-$$16 m/s<sup>2</sup>\n<br><br><b>For case 2 :</b>\n<br>u = 100 km/hr = $${{100 \\times 1000} \\over {3600}}$$ m/s = $${{250} \\over 9}$$ m/s, v = 0, $$a$$ = $$-$$16, s = ?\n<br><br>$$\\therefore$$ 0<sup>2</sup> = u<sup>2</sup> + 2$$a$$s\n<br><br>$$ \\Rightarrow $$ $$s =  - {{{u^2}} \\over {2a}}$$ <br><br>$$ \\Rightarrow $$ $$s =  - {{{{\\left( {{{250} \\over 9}} \\right)}^2}} \\over {2 \\times -16}}$$ = 24 m",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "vR5XKzMNCb4t4dNl",
@@ -434,6 +455,7 @@
     "topic": "constant-acceleration-motion",
     "difficulty": "medium",
     "solution": "<p>Given the initial speeds of two identical cars as $u$ and $4u$, and considering that both cars eventually stop (final speed $v = 0$), we note that both cars decelerate with the same acceleration $-a$.</p>\n\n<p>Using the kinematic equation:</p>\n\n<p>$ v^2 = u^2 - 2as $</p>\n\n<p>Since $v = 0$,</p>\n\n<p>$ 0 = u^2 - 2as $</p>\n\n<p>Hence,</p>\n\n<p>$ u^2 = 2as $</p>\n\n<p>For the first car with speed $u$,</p>\n\n<p>$ u^2 = 2a s_1 \\quad \\text{...(i)} $</p>\n\n<p>For the second car with speed $4u$,</p>\n\n<p>$ (4u)^2 = 2a s_2 \\quad \\text{...(ii)} $</p>\n\n<p>Dividing equation (i) by equation (ii),</p>\n\n<p>$ \\frac{u^2}{(4u)^2} = \\frac{2a s_1}{2a s_2} $</p>\n\n<p>$ \\frac{u^2}{16u^2} = \\frac{s_1}{s_2} $</p>\n\n<p>$ \\frac{1}{16} = \\frac{s_1}{s_2} $</p>\n\n<p>Thus, the ratio of the stopping distances of the two cars is $\\frac{1}{16}$.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

@@ -30,7 +30,7 @@
       "$$tan{\\alpha  \\over 2} + \\tan {\\beta  \\over 2} + \\tan {\\gamma  \\over 2} =  - \\tan {\\alpha  \\over 2}\\tan {\\beta  \\over 2}\\tan {\\gamma  \\over 2}$$ ",
       "None of these."
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 1,
     "correctAnswer": "",
     "solution": "",
     "marks": 2,
@@ -1126,7 +1126,7 @@
       "1 ",
       "3 "
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 1,
     "correctAnswer": "",
     "solution": "",
     "marks": 2,
@@ -1298,7 +1298,9 @@
       "<p>$\\left(0, \\frac{\\pi}{8}\\right) \\cup\\left(\\frac{\\pi}{6}, \\frac{5 \\pi}{6}\\right)$</p>\n",
       "<p>$\\left(\\frac{41 \\pi}{48}, \\pi\\right)$</p>"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>We have the inequality: \n\n$$2 \\sin^2 \\theta - 5 \\sin \\theta + 2 > 0$$</p>\n<p><b>Step 1: Let $\\sin \\theta = t$</b></p>\n<p>The inequality becomes: \n\n$$2t^2 - 5t + 2 > 0$$</p>\n<p><b>Step 2: Factor the Quadratic</b></p>\n<p>We can write:\n\n$$2t^2 - 5t + 2 = (t-2)(2t-1)$$</p>\n<p>So, \n\n$$(t-2)(2t-1) > 0$$</p>\n<p><b>Step 3: Find When the Product is Positive</b></p>\n<p>A product $(t-a)(t-b) > 0$ when $t < \\min(a,b)$ or $t > \\max(a,b)$.</p>\n<p>Here, the roots are $t=2$ and $t=\\frac{1}{2}$, so:\n\n$$t < \\frac{1}{2} \\quad \\text{or} \\quad t > 2$$</p>\n<p><b>Step 4: Relate Back to $\\sin \\theta$</b></p>\n<p>So,\n\n$$\\sin \\theta < \\frac{1}{2} \\quad \\text{or} \\quad \\sin \\theta > 2$$</p>\n<p>But $\\sin \\theta$ cannot be bigger than $1$ for any real $\\theta$, so $\\sin \\theta > 2$ is not possible.</p>\n<p>So the only valid option is:\n\n$$\\sin \\theta < \\frac{1}{2}$$</p>\n<p><b>Step 5: Find the Values of $\\theta$</b></p>\n<p>For $0 < \\theta < 2\\pi$, $\\sin \\theta = \\frac{1}{2}$ at $\\theta = \\frac{\\pi}{6}$ and $\\theta = \\frac{5\\pi}{6}$.</p>\n<p>So, $\\sin \\theta < \\frac{1}{2}$ when $\\theta$ is between $0$ and $\\frac{\\pi}{6}$, or between $\\frac{5\\pi}{6}$ and $2\\pi$.</p>\n<p>So the solution is:\n\n$$\\theta \\in \\left(0, \\frac{\\pi}{6}\\right) \\cup \\left(\\frac{5\\pi}{6}, 2\\pi\\right)$$</p>",
     "marks": 3,
@@ -1520,7 +1522,7 @@
       "$$P \\not\\subset Q$$",
       "$$P = Q$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 3,
     "correctAnswer": "",
     "solution": "<p>$$P = \\{ \\theta :\\sin \\theta  - \\cos \\theta  = \\sqrt 2 \\cos \\theta \\} $$</p>\n<p>$$ \\Rightarrow \\cos \\theta \\left( {\\sqrt 2  + 1} \\right) = \\sin \\theta $$</p>\n<p>$$ \\Rightarrow \\tan \\theta  = \\sqrt 2  + 1$$ ..... (i)</p>\n<p>$$Q = \\{ \\theta :\\sin \\theta  + \\cos \\theta  = \\sqrt 2 \\sin \\theta \\} $$</p>\n<p>$$ \\Rightarrow \\sin \\theta \\left( {\\sqrt 2  - 1} \\right) = \\cos \\theta $$</p>\n<p>$$ \\Rightarrow \\tan \\theta  = {1 \\over {\\sqrt 2  - 1}} \\times {{\\sqrt 2  + 1} \\over {\\sqrt 2  + 1}}$$</p>\n<p>$$ = \\left( {\\sqrt 2  + 1} \\right)$$ ...... (ii)</p>\n<p>$$\\therefore$$ $$P = Q$$</p>",
     "marks": 3,

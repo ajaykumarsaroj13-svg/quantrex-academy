@@ -223,7 +223,9 @@
       "$(p-1)^2+1$",
       "$2 p-1$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>We must have $a^2-b^2=1 < p$</p>\n<p>$$ (a+b)(a-b)=1 < p $$</p>\n<p>Either $a-b=0$ or $a+b$ is a multiple of $p$ when $a=b$ number of matrices is $p$ and when $a+b$ $=$ multiple of $p$.</p>\n<p>$$ \\Rightarrow a, b \\text { has } p-1 $$</p>\n<p>$$ \\begin{aligned} \\text { Total number of matrices } & =p+p-1 \\\\\\\\ & =2 p-1 \\end{aligned} $$</p>",
     "marks": 3,
@@ -245,7 +247,9 @@
       "$(p-1)^2$",
       "$(p-1)\\left(p^2-2\\right)$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>We have an odd prime $p$.  Consider the set</p>\n<p>$ T_p \\;=\\;  \\Bigl\\{ A \\;=\\;\\begin{pmatrix} a & b \\\\[6pt] c & a \\end{pmatrix} \\;:\\; a,b,c \\in \\{0,1,2,\\dots,p-1\\} \\Bigr\\}. $</p>\n<p>We want to count the number of such matrices $A$ that satisfy:</p>\n\n<p><p>$\\text{trace}(A) \\not\\equiv 0 \\pmod{p}$.  </p>\n<p>Since $\\text{trace}(A) = a + a = 2a$, this means</p>\n<p>$    2a \\;\\not\\equiv\\; 0 \\pmod{p}.    $</p>\n<p>Because $p$ is an odd prime, $2$ is invertible $\\bmod\\,p$.  </p>\n<p>Hence $2a \\equiv 0 \\pmod{p}$ if and only if $a \\equiv 0 \\pmod{p}$.  </p>\n<p>Thus the condition </p>\n<p>$\\text{trace}(A) \\not\\equiv 0 \\pmod{p}$</p>\n<p>is equivalent to </p>\n<p>$    a \\;\\neq\\; 0 \\pmod{p}.    $</p>\n<p>In other words, $a$ must be a nonzero element modulo $p$; so</p>\n<p>$a\\in\\{1,2,\\dots,p-1\\}.$</p></p>\n<p><p>$\\det(A) \\equiv 0 \\pmod{p}$.  </p>\n<p>For the matrix </p>\n<p>$\\begin{pmatrix} a & b \\\\ c & a \\end{pmatrix},$ we have</p>\n<p>$    \\det(A) \\;=\\; a^2 - bc.    $</p>\n<p>The condition $\\det(A)\\equiv 0\\pmod{p}$ means</p>\n<p>$    a^2 \\;-\\; bc     \\;\\equiv\\; 0     \\pmod{p}    \\quad\\Longleftrightarrow\\quad    bc     \\;\\equiv\\; a^2     \\pmod{p}.    $</p></p>\n\n<p>Putting these two pieces together:</p>\n\n<p><p>$a$ is nonzero ($a \\in \\{1,\\dots,p-1\\}$).</p></p>\n<p><p>$bc \\equiv a^2 \\pmod{p}.$</p></p>\n\n<hr />\n<h2>Counting the solutions</h2>\n<p>We must count the number of triples $(a,b,c)$ with $a\\neq 0$ and $bc \\equiv a^2$.</p>\n\n<p><p><strong>Range for $a$</strong>  </p>\n<p>Since $a\\in \\{1,2,\\dots,p-1\\}$, there are $p-1$ possible values of $a$.</p></p>\n<p><p><strong>Condition $bc \\equiv a^2$ for given $a$</strong>  </p>\n<p>Since $a \\neq 0$, $a^2$ is also nonzero $\\bmod\\,p$.  </p></p>\n\n\n<p><p>If $b = 0$, then $bc \\equiv 0$, which would only be equal to $a^2$ if $a^2 \\equiv 0$.  But $a^2\\neq 0$ since $a\\neq 0$.  So $b=0$ gives no solutions.</p></p>\n<p><p>Similarly, if $c=0$, then $bc=0$, which again cannot equal the nonzero $a^2$.  So $c=0$ gives no solutions either.</p></p>\n<p><p>Therefore $b$ and $c$ must both be nonzero modulo $p$.  </p>\n<p>Once $b$ is chosen to be any nonzero element in $\\{1,\\dots,p-1\\}$, there is a unique $c \\equiv a^2 \\,b^{-1} \\pmod{p}$.  Hence:</p></p>\n<p><p>For each nonzero $b$ (that is, $b\\in\\{1,\\dots,p-1\\}$), there is exactly <strong>one</strong> $c\\in\\{1,\\dots,p-1\\}$ satisfying $bc \\equiv a^2$.</p></p>\n<p><p>Consequently, for each fixed nonzero $a$, the number of $(b,c)$-pairs is $p-1$.</p></p>\n\n\n<p><strong>Putting it all together</strong>  </p>\n\n\n<p><p>We have $p-1$ choices for $a\\neq 0$.</p></p>\n<p><p>For each such $a$, there are $p-1$ pairs $(b,c)$ satisfying $bc\\equiv a^2$.</p></p>\n<p><p>Therefore, in total, the number of matrices is</p>\n<p>$      (p-1)\\,\\times\\,(p-1)      \\;=\\;      (p-1)^2.      $</p></p>\n\n<p>Hence the correct answer matches option <strong>C</strong>, which is</p>\n<p>$ \\boxed{(p-1)^2.} $</p>",
     "marks": 3,
@@ -259,7 +263,7 @@
     "title": "IIT-JEE 2010 Paper 1 Offline",
     "year": 2010,
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "The number of A in $\\mathrm{T}_p$ such that $\\operatorname{det}(\\mathrm{A})$ is not divisible by $p$ is :",
     "options": [
       "$2 p^2$",
@@ -267,7 +271,7 @@
       "$p^3-3 p$",
       "$p^3-p^2$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 3,
     "correctAnswer": "",
     "solution": "<p>Let $p$ be an odd prime number, and consider the set</p>\n<p>$ T_{p} \\;=\\;  \\Bigl\\{ A \\;=\\;\\begin{pmatrix} a & b\\\\[6pt] c & a \\end{pmatrix} \\;:\\; a,b,c \\in \\{0,1,2,\\dots,p-1\\} \\Bigr\\}. $</p>\n<p>We want to count the number of matrices $A \\in T_p$ whose determinant is <strong>not</strong> divisible by $p$. </p>\n<p>Recall that for</p>\n<p>$ A \\;=\\; \\begin{pmatrix}  a & b \\\\  c & a  \\end{pmatrix}, $</p>\n<p>the determinant is</p>\n<p>$ \\det(A) \\;=\\; a^2 \\;-\\; b\\,c. $</p>\n<p>Hence $\\det(A)$ is <strong>not</strong> divisible by $p$ precisely when</p>\n<p>$ a^2 \\;-\\; b\\,c \\;\\not\\equiv\\; 0 \\pmod{p}, \\quad\\text{i.e.,}\\quad a^2 \\;\\neq\\; b\\,c \\pmod{p}. $</p>\n<hr />\n<h3>Total number of matrices</h3>\n<p>Since $a,b,c$ each range over $\\{0,1,\\dots,p-1\\}$, there are</p>\n<p>$ p^3 $</p>\n<p>total possible matrices in $T_p$.</p>\n<hr />\n<h3>Step 1: Count how many $(a,b,c)$ <strong>do</strong> satisfy $a^2 \\equiv b\\,c \\pmod{p}$</h3>\n<p>It will be easier to first count the number of triples $(a,b,c)$ for which</p>\n<p>$ a^2 \\;\\equiv\\; b\\,c \\pmod{p}, $</p>\n<p>and then subtract that from $p^3$.</p>\n<hr />\n<h4>Case A: $a = 0$</h4>\n<p>Then $a^2 = 0$.  We need </p>\n<p>$ b\\,c \\;\\equiv\\; 0 \\pmod{p}. $</p>\n<p>Over the field $\\mathbf{F}_p$, the product $b\\,c\\equiv 0$ if and only if at least one of $b$ or $c$ is $0$ (since $p$ is prime).</p>\n\n<p><p>If $b=0$, then $c$ can be anything in $\\{0,\\dots,p-1\\}$.  </p>\n<p>This gives $p$ possibilities.  </p></p>\n<p><p>If $c=0$, then $b$ can be anything in $\\{0,\\dots,p-1\\}$.  </p>\n<p>This also gives $p$ possibilities.  </p></p>\n<p><p>However, the pair $(b=0, c=0)$ is counted in both cases, so we must subtract it out once.</p></p>\n\n<p>Hence, for $a=0$, the number of $(b,c)$ such that $b\\,c \\equiv 0$ is</p>\n<p>$ p \\;+\\; p \\;-\\; 1  \\;=\\; 2p \\;-\\; 1. $</p>\n<hr />\n<h4>Case B: $a \\neq 0$</h4>\n<p>Then $a$ can be any nonzero element in $\\{1,2,\\dots,p-1\\}$; there are $p-1$ such choices.  In that scenario, $a^2 \\neq 0\\pmod{p}$.  We want</p>\n<p>$ b\\,c \\;\\equiv\\; a^2 \\pmod{p}. $</p>\n<p>Over $\\mathbf{F}_p$, a nonzero right-hand side $a^2$ can be written as $b\\,c$ in the following way:</p>\n\n<p><p>If $b=0$, then $b\\,c = 0$, which cannot equal $a^2\\neq 0$.  </p>\n<p>No solutions in that subcase.</p></p>\n<p><p>If $b \\neq 0$, then for each nonzero $b$ there is <strong>exactly one</strong> $c$ satisfying $b\\,c \\equiv a^2\\pmod{p}$, namely $c \\equiv a^2 b^{-1}\\pmod{p}$.  </p></p>\n\n<p>Since $b$ can be any of the $p-1$ nonzero elements, we get $p-1$ solutions $(b,c)$ for each nonzero $a$.  </p>\n<p>Thus, for each $a\\neq 0$, there are $p-1$ pairs $(b,c)$.  Hence, for $p-1$ values of $a$, the total number of solutions in this case is</p>\n<p>$ (p-1)\\,\\times\\,(p-1) \\;=\\; (p-1)^2. $</p>\n<hr />\n<h4>Total number of solutions to $a^2 = b\\,c$</h4>\n<p>Summing these two cases:</p>\n\n<p><p>Case A $(a=0)$: $2p - 1$ solutions.</p></p>\n<p><p>Case B $(a\\neq 0)$: $(p-1)^2$ solutions.</p></p>\n\n<p>Hence the total count of $(a,b,c)$ satisfying $a^2 \\equiv b\\,c$ is</p>\n<p>$ (2p -1) \\;+\\; (p-1)^2  \\;=\\; (2p -1) \\;+\\; \\bigl(p^2 \\;-\\;2p \\;+\\;1\\bigr) \\;=\\; p^2. $</p>\n<p>(A classic result: there are exactly $p^2$ solutions to $b\\,c = a^2$ over $\\mathbf{F}_p^3$.)</p>\n<hr />\n<h3>Step 2: Count how many $(a,b,c)$ satisfy $a^2 \\neq b\\,c$</h3>\n<p>Since there are $p^3$ total triples $(a,b,c)$, the number that satisfy</p>\n<p>$ a^2 \\;\\neq\\; b\\,c \\pmod{p} $</p>\n<p>is simply</p>\n<p>$ p^3 \\;-\\; p^2. $</p>\n<p>This directly corresponds to matrices $A$ whose determinant $a^2 - b\\,c$ is $\\not\\equiv 0\\pmod{p}$.  </p>\n<p>Hence, the number of matrices in $T_p$ with $\\det(A)$ <strong>not</strong> divisible by $p$ is</p>\n<p>$ \\boxed{p^3 - p^2}. $</p>\n<hr />\n<p>The expression $p^3 - p^2$ matches <strong>Option D</strong>.</p>",
     "marks": 3,
@@ -328,7 +332,9 @@
       "7",
       "6"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>Given, $${[\\matrix{\n   a & b & c  \\cr \n\n } ]_{1 \\times 3}}{\\left[ {\\matrix{\n   1 & 9 & 7  \\cr \n   8 & 2 & 7  \\cr \n   7 & 3 & 7  \\cr \n\n } } \\right]_{3 \\times 3}} = [\\matrix{\n   0 & 0 & 0  \\cr \n\n } ]$$</p>\n<p>$$ \\Rightarrow \\left[ {\\matrix{\n   {a + 8b + 7c}  \\cr \n   {9a + 2b + 3c}  \\cr \n   {7a + 7b + 7c}  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   0  \\cr \n   0  \\cr \n   0  \\cr \n\n } } \\right]$$</p>\n<p>$$ \\Rightarrow a + 8b + 7c = 0$$ ..... (i)</p>\n<p>$$ \\Rightarrow 9a + 2b + 3c = 0$$ .... (ii)</p>\n<p>$$ \\Rightarrow a + b + c = 0$$ ....... (iii)</p>\n<p>On multiplying Eq. (iii) by 2, then subtract from Eq. (ii), we get</p>\n<p>$$7a + c = 0$$ ..... (iv)</p>\n<p>Again multiplying Eq. (iii) by 3, then subtract from Eq. (ii), we get</p>\n<p>$$6a - b = 0$$ ..... (v)</p>\n<p>$$\\therefore$$ $$b = 6a$$ and $$c =  - 7a$$</p>\n<p>As (a, b, c) lies on $$2x + y + z = 1$$</p>\n<p>$$ \\Rightarrow 2a + b + c = 1$$</p>\n<p>$$ \\Rightarrow 2a + 6a - 7a = 1$$</p>\n<p>$$\\Rightarrow$$ a = 1, b = 6 and c = $$-$$7</p>\n<p>$$\\therefore$$ $$7a + b + c = 7 + 6 - 7 = 6$$</p>",
     "marks": 3,
@@ -496,7 +502,7 @@
     "title": "JEE Advanced 2013 Paper 1 Offline",
     "year": 2013,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "For 3 × 3 matrices M and N, which of the following statement(s)\nis(are) NOT correct?",
     "options": [
       "N<sup>T</sup>MN is symmetric or skew symmetric, according as M\nis symmetric or skew symmetric.",
@@ -504,7 +510,12 @@
       "MN is symmetric for all symmetric matrices M and N.",
       "(adj M)·(adj N) = adj(MN) for all invertible matrices M\nand N."
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p>In case of option (A),</p>\n<p>$${({N^T}MN)^T} = {N^T}{M^T}{({N^T})^T} = {N^T}{M^T}N$$</p>\n<p>Now, $${N^T}{M^T}N = \\left\\{ \\matrix{\n  {N^T}MN,\\,when\\,{M^T} = M \\hfill \\cr \n   - {N^T}MN,\\,when\\,{M^T} =  - M \\hfill \\cr}  \\right.$$</p>\n<p>$$\\therefore$$ N<sup>T</sup>MN is symmetric or skew symmetric according as M is symmetric or skew symmetric.</p>\n<p>In case of option (B),</p>\n<p>$${(MN - NM)^T} = {(MN)^T} - {(NM)^T}$$</p>\n<p>$$ = {N^T}{M^T} - {M^T}{N^T}$$</p>\n<p>$$ = NM - MN$$ [$$\\because$$ $${M^T} = M,\\,{N^T} = N$$]</p>\n<p>$$ =  - (MN - NM)$$</p>\n<p>$$\\therefore$$ $$MN - NM$$ is skew symmetric matrix.</p>\n<p>In case of option (C),</p>\n<p>$${(MN)^T} = {N^T}{M^T} = NM$$ [$$\\because$$ $${M^T} = M,\\,{N^T} = N$$]</p>\n<p>Now, MN cannot always be equal to NM</p>\n<p>$$\\therefore$$ MN is not symmetric matrix.</p>\n<p>In case of option (D),</p>\n<p>$$(Adj\\,M)(Adj\\,N) = Adj(NM) \\ne Adj(MN)$$</p>\n<p>Therefore, (C) and (D) are the correct options.</p>",
     "marks": 4,
@@ -641,7 +652,6 @@
       "If $$\\lambda$$ + $$\\mu$$ $$\\ne$$ 0, then the system has no solution for a = -3."
     ],
     "correctOptionIndex": [
-      0,
       1,
       2,
       3
@@ -660,7 +670,7 @@
     "title": "JEE Advanced 2016 Paper 1 Offline",
     "year": 2016,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "<p>Let $$P = \\left[ {\\matrix{\n   3 & { - 1} & { - 2}  \\cr \n   2 & 0 & \\alpha   \\cr \n   3 & { - 5} & 0  \\cr \n\n } } \\right]$$, where $$\\alpha$$ $$\\in$$ R. Suppose $$Q = [{q_{ij}}]$$ is a matrix such that PQ = kl, where k $$\\in$$ R, k $$\\ne$$ 0 and I is the identity matrix of order 3. If $${q_{23}} =  - {k \\over 8}$$ and $$\\det (Q) = {{{k^2}} \\over 2}$$, then</p>",
     "options": [
       "$$\\alpha$$ = 0, k = 8",
@@ -668,7 +678,10 @@
       "$$\\det (Padj(Q)) = {2^9}$$",
       "$$\\det (Qadj(P)) = {2^{13}}$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      1,
+      2
+    ],
     "correctAnswer": "",
     "solution": "<p>$$P = \\left[ {\\matrix{\n   3 & { - 1} & { - 2}  \\cr \n   2 & 0 & \\alpha   \\cr \n   3 & { - 5} & 0  \\cr \n\n } } \\right]$$</p>\n<p>Now, $$\\left| P \\right| = 3(5\\alpha ) + 1( - 3\\alpha ) - 2( - 10)$$</p>\n<p>$$ = 12\\alpha  + 20$$ ....... (i)</p>\n<p>$$\\therefore$$ $$(P) = {\\left[ {\\matrix{\n   {5\\alpha } & {2\\alpha } & { - 10}  \\cr \n   { - 10} & 6 & {12}  \\cr \n   { - \\alpha } & { - (3\\alpha  + 4)} & 2  \\cr \n\n } } \\right]^T}$$</p>\n<p>$$ = \\left[ {\\matrix{\n   {5\\alpha } & { - 10} & { - \\alpha }  \\cr \n   {2\\alpha } & 6 & { - 3\\alpha  - 4}  \\cr \n   { - 10} & {12} & 2  \\cr \n\n } } \\right]$$ ...... (ii)</p>\n<p>As, $$PQ = kI$$</p>\n<p>$$ \\Rightarrow \\left| P \\right|\\left| Q \\right| = \\left| {kI} \\right|$$</p>\n<p>$$ \\Rightarrow \\left| P \\right|\\left| Q \\right| = {k^3}$$</p>\n<p>$$ \\Rightarrow \\left| P \\right|\\left( {{{{k^2}} \\over 2}} \\right) = {k^3}$$ [given, $$\\left| Q \\right| = {{{k^2}} \\over 2}$$]</p>\n<p>$$ \\Rightarrow \\left| P \\right| = 2k$$ ......(iii)</p>\n<p>$$\\because$$ $$PQ = ki$$</p>\n<p>$$\\therefore$$ $$Q = k{p^{ - 1}}I$$</p>\n<p>$$ = k\\,.\\,{{adj\\,P} \\over {\\left| P \\right|}} = {{k(adj\\,P)} \\over {2k}}$$ [from Eq. (iii)]</p>\n<p>$$ = {{adj\\,P} \\over 2}$$</p>\n<p>$$ = {1 \\over 2}\\left[ {\\matrix{\n   {5\\alpha } & { - 10} & { - \\alpha }  \\cr \n   {2\\alpha } & 6 & { - 3\\alpha  - 4}  \\cr \n   { - 10} & {12} & 2  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ $${q_{23}} = {{ - 3\\alpha  - 4} \\over 2}$$ [given, $${q_{23}} =  - {k \\over 8}$$]</p>\n<p>$$ \\Rightarrow  - {{(3\\alpha  + 4)} \\over 2} =  - {k \\over 8}$$</p>\n<p>$$ \\Rightarrow (3\\alpha  + 4) \\times 4 = k$$</p>\n<p>$$ \\Rightarrow 12\\alpha  + 16 = k$$ ...... (iv)</p>\n<p>From Eq. (iii), $$\\left| P \\right| = 2k$$</p>\n<p>$$ \\Rightarrow 12\\alpha  + 20 = 2k$$ [from Eq. (i)] ...... (v)</p>\n<p>On solving Eqs. (iv) and (v), we get</p>\n<p>$$\\alpha$$ = $$-$$1 and k = 4 ....... (vi)</p>\n<p>$$\\therefore$$ $$4\\alpha  - k + 8 =  - 4 - 4 + 8 = 0$$</p>\n<p>$$\\therefore$$ Option (b) is correct.</p>\n<p>Now, $$\\left| {P\\,adj(Q)} \\right| = \\left| P \\right|\\left| {adj\\,Q} \\right|$$</p>\n<p>$$ = 2k{\\left( {{{{k^2}} \\over 2}} \\right)^2} = {{{k^5}} \\over 2} = {{{2^{10}}} \\over 2} = {2^9}$$</p>\n<p>$$\\therefore$$ Option (c) is correct.</p>",
     "marks": 4,
@@ -746,7 +759,12 @@
       "$$\\left[ {\\matrix{\n   { - 1} &amp; 0 &amp; 0  \\cr \n   0 &amp; { - 1} &amp; 0  \\cr \n   0 &amp; 0 &amp; { - 1}  \\cr \n\n } } \\right]$$",
       "$$\\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   0 &amp; 1 &amp; 0  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n\n } } \\right]$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p>For a matrix to be square of matrix with real entries, its determinant should be positive.</p>\n<p>Option (A) : $$\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 1 & 0  \\cr \n   0 & 0 & { - 1}  \\cr \n\n } } \\right]$$, determinant is NOT possible:</p>\n<p>1($$-$$1) $$-$$ 0(0) + 0(0) = $$-$$1</p>\n<p>Option (B) : $$\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & { - 1} & 0  \\cr \n   0 & 0 & { - 1}  \\cr \n\n } } \\right]$$, determinant is possible:</p>\n<p>1(1) $$-$$ 0(0) + 0(0) = +1</p>\n<p>Option (C) : $$\\left[ {\\matrix{\n   { - 1} & 0 & 0  \\cr \n   0 & { - 1} & 0  \\cr \n   0 & 0 & { - 1}  \\cr \n\n } } \\right]$$, determinant is NOT possible :</p>\n<p>$$-$$1(1) $$-$$ 0(0) + 0(0) = $$-$$1</p>\n<p>Option (D) : $$\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 1 & 0  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right]$$, determinant is possible:</p>\n(1) $$-$$ 0(0) + 0(0) = +1</p>\n<p>Thus, options (A) and (C) are NOT the square of a 3 $$\\times$$ 3 matrix with real entries.</p>",
     "marks": 4,
@@ -984,7 +1002,9 @@
     ],
     "correctOptionIndex": [
       0,
-      1
+      1,
+      2,
+      3
     ],
     "correctAnswer": "",
     "solution": "For option (a)<br/><br/>$$PEP = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 0 & 1  \\cr \n   0 & 1 & 0  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 & 2 & 3  \\cr \n   2 & 3 & 4  \\cr \n   8 & {13} & {18}  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 0 & 1  \\cr \n   0 & 1 & 0  \\cr \n\n } } \\right]$$<br/><br/>$$ = \\left[ {\\matrix{\n   1 & 2 & 3  \\cr \n   8 & {13} & {18}  \\cr \n   2 & 3 & 4  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 0 & 1  \\cr \n   0 & 1 & 0  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1 & 3 & 2  \\cr \n   8 & {18} & {13}  \\cr \n   2 & 4 & 3  \\cr \n\n } } \\right] = F$$<br/><br/>and $${P^2} = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 0 & 1  \\cr \n   0 & 1 & 0  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 0 & 1  \\cr \n   0 & 1 & 0  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 1 & 0  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right]$$<br/><br/>Hence, option (a) is correct.<br/><br/>For option (b)<br/><br/>$$\\left| {EQ + PF{Q^{ - 1}}} \\right| = \\left| {EQ} \\right| + \\left| {PF{Q^{ - 1}}} \\right|$$ .... (i)<br/><br/>$$\\because$$ | E | = 0 and | F | = 0 and | Q | $$\\ne$$ 0<br/><br/>$$\\therefore$$ $$\\left| {EQ} \\right| = \\left| E \\right|\\left| Q \\right| = 0$$<br/><br/>and $$\\left| {PF{Q^{ - 1}}} \\right| = {{\\left| P \\right|\\left| F \\right|} \\over {\\left| Q \\right|}} = 0$$<br/><br/>Let $$R = EQ + PF{Q^{ - 1}}$$ .... (ii)<br/><br/>$$ \\Rightarrow RQ = E{Q^2} + PF = E{Q^2} + {P^2}EP = E{Q^2} + EP$$ [$$\\because$$ P<sup>2</sup> = I]<br/><br/>$$ = E({Q^2} + P)$$<br/><br/>$$ \\Rightarrow \\left| {RQ} \\right| = \\left| {E({Q^2} + P)} \\right|$$<br/><br/>$$ \\Rightarrow \\left| R \\right|\\left| Q \\right| = \\left| E \\right|\\left| {{Q^2} + P} \\right| = 0$$ [$$\\because$$ | E | = O]<br/><br/>$$ \\Rightarrow \\left| R \\right| = 0$$ (as $$\\left| Q \\right| \\ne 0$$) ..... (iii)<br/><br/>From Eqs. (ii) and (iii), we get Eq. (i) is true.<br/><br/>Hence, option (b) is correct.<br/><br/>For option (c)<br/><br/>$$\\left| {{{(EF)}^3}} \\right| > {\\left| {EF} \\right|^2}$$<br/><br/>i.e. 0 > 0 which is false.<br/><br/>For option (d)<br/><br/>$$\\because$$ $${P^2} = I \\Rightarrow {P^{ - 1}} = P$$<br/><br/>$$\\therefore$$ $${P^{ - 1}}FP = PFP = PPEPP = E$$<br/><br/>So, $$E + {P^{ - 1}}FP = E + E = 2E$$<br/><br/>$$ \\Rightarrow Tr(E + {P^{ - 1}}FP) = Tr(2E) = 2Tr(E)$$ ..... (iv)<br/><br/>and $${P^{ - 1}}EP + F$$<br/><br/>$$ \\Rightarrow PEP + F = 2PEP$$ [$$\\because$$ F = PEP]<br/><br/>$$\\therefore$$ $$Tr(2PEP) = 2Tr(PEP) = 2Tr(F) = 2Tr(E)$$ ..... (v)<br/><br/>From Eqs. (iv) and (v) option (d) is also correct.",
@@ -1000,7 +1020,7 @@
     "title": "JEE Advanced 2021 Paper 1 Online",
     "year": 2021,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "For any 3 $$\\times$$ 3 matrix M, let |M| denote the determinant of M. Let I be the 3 $$\\times$$ 3 identity matrix. Let E and F be two 3 $$\\times$$ 3 matrices such that (I $$-$$ EF) is invertible. If G = (I $$-$$ EF)<sup>$$-$$1</sup>, then which of the following statements is (are) TRUE?",
     "options": [
       "| FE | = | I $$-$$ FE| | FGE |",
@@ -1008,7 +1028,12 @@
       "EFG = GEF",
       "(I $$-$$ FE)(I $$-$$ FGE) = I"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "$$\\because$$ I $$-$$ EF = G<sup>$$-$$1</sup> $$\\Rightarrow$$ G $$-$$ GEF = I ..... (i)<br/><br/>and G $$-$$ EFG = I ..... (ii)<br/><br/>Clearly, GEF = EFG $$\\to$$ option (c) is correct.<br/><br/>Also, (I $$-$$ FE) (I + FGE)<br/><br/>= I $$-$$ FE + FGE $$-$$ FEFGE<br/><br/>= I $$-$$ FE + FGE $$-$$ F(G $$-$$ I) E<br/><br/>= I $$-$$ FE + FGE $$-$$ FGE + FE<br/><br/>= I $$\\to$$ option (b) is correct but option (d) is incorrect.<br/><br/>$$\\because$$ (I $$-$$ FE) (I $$-$$ FGE) = I $$-$$ FE $$-$$ FGE + F(G $$-$$ I) E<br/><br/>= I $$-$$ 2FE<br/><br/>Now, (I $$-$$ FE) ($$-$$ FGE) = $$-$$ FE<br/><br/>$$\\Rightarrow$$ | I $$-$$ FE | | FGE | = | FE |<br/><br/>$$\\to$$ option (a) is correct.",
     "marks": 4,
@@ -1117,7 +1142,7 @@
     "title": "JEE Advanced 2023 Paper 2 Online",
     "year": 2023,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let $M=\\left(a_{i j}\\right), i, j \\in\\{1,2,3\\}$, be the $3 \\times 3$ matrix such that $a_{i j}=1$ if $j+1$ is divisible by $i$, otherwise $a_{i j}=0$. Then which of the following statements is(are) true?",
     "options": [
       "$M$ is invertible\n",
@@ -1125,7 +1150,10 @@
       "The set $\\left\\{X \\in \\mathbb{R}^3: M X=\\mathbf{0}\\right\\} \\neq\\{\\mathbf{0}\\}$, where $\\mathbf{0}=\\left(\\begin{array}{l}0 \\\\ 0 \\\\ 0\\end{array}\\right)$",
       "The matrix $(M-2 I)$ is invertible, where $I$ is the $3 \\times 3$ identity matrix"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "$M=\\left[\\begin{array}{lll}a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33}\\end{array}\\right]=\\left[\\begin{array}{ccc}1 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 0 & 1 & 0\\end{array}\\right]$\n<br/><br/>$|M|=-1+1=0 \\Rightarrow M$ is singular so non-invertible $$ \\Rightarrow $$ [A] is wrong.\n<br/><br/>(B) $M\\left[\\begin{array}{l}a_1 \\\\ a_2 \\\\ a_3\\end{array}\\right]=\\left[\\begin{array}{l}-a_1 \\\\ -a_2 \\\\ -a_3\\end{array}\\right] \\Rightarrow\\left[\\begin{array}{lll}1 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 0 & 1 & 0\\end{array}\\right]\\left[\\begin{array}{l}a_1 \\\\ a_2 \\\\ a_3\\end{array}\\right]=\\left[\\begin{array}{l}-a_1 \\\\ -a_2 \\\\ -a_3\\end{array}\\right]$\n<br/><br/>$$\n\\left.\\begin{array}{l}\na_1+a_2+a_3=-a_1 \\\\\na_1+a_3=-a_2 \\\\\na_2=-a_3\n\\end{array}\\right\\} \\Rightarrow a_1=0 \\text { and } a_2+a_3=0 \\text { infinite solutions exists [B] is correct. }\n$$\n<br/><br/>Option (D) :\n<br/><br/>$$\n\\begin{aligned}\n& M-2 I=\\left[\\begin{array}{lll}\n1 & 1 & 1 \\\\\n1 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{array}\\right]-2\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n-1 & 1 & 1 \\\\\n1 & -2 & 1 \\\\\n0 & 1 & -2\n\\end{array}\\right] \\\\\\\\\n& |M-2 I|=0 \\Rightarrow[D] \\text { is wrong }\n\\end{aligned}\n$$\n<br/><br/>Option (C) :\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{MX}=0 \\Rightarrow\\left[\\begin{array}{lll}\n1 & 1 & 1 \\\\\n1 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{array}\\right]\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{l}\n0 \\\\\n0 \\\\\n0\n\\end{array}\\right] \\\\\\\\\n& x+y+z=0 \\\\\\\\\n& x+z=0 \\\\\\\\\n& y=0 \\\\\\\\\n& \\therefore \\text { Infinite solution }\n\\end{aligned}\n$$\n<br/><br/>$[\\mathrm{C}]$ is correct",
     "marks": 4,
@@ -1186,7 +1214,9 @@
       " $(\\mathrm{P}) \\rightarrow(2) \\quad$ (Q) $\\rightarrow(4) \\quad(\\mathrm{R}) \\rightarrow(3) \\quad$ (S) $\\rightarrow$ (5)",
       " (P) $\\rightarrow$ (1) $\\quad$ (Q) $\\rightarrow$ (5) $\\quad$ (R) $\\rightarrow$ (3) $\\quad$ (S) $\\rightarrow$ (4)"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>$$\\alpha, \\beta$$ are roots of $$x^2+x-1=0$$</p>\n<p>$$\\begin{aligned}\n& \\therefore \\alpha+\\beta=-1 \\Rightarrow 1+\\alpha+\\beta=0 \\\\\n& M=\\left[\\begin{array}{lll}\n\\mathrm{a}_{11} & \\mathrm{a}_{12} & \\mathrm{a}_{13} \\\\\n\\mathrm{a}_{21} & \\mathrm{a}_{22} & \\mathrm{a}_{23} \\\\\n\\mathrm{a}_{31} & \\mathrm{a}_{32} & \\mathrm{a}_{33}\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>(P) $$\\quad M=\\left[\\begin{array}{lll}1 & \\alpha & \\beta \\\\ \\alpha & \\beta & 1 \\\\ \\beta & 1 & \\alpha\\end{array}\\right] \\Rightarrow 3 ! \\times 2=12$$</p>\n<p>For one arrangement of row 1 we can arrange other two rows exactly in two ways and row 1 can be arranged in 3! ways</p>\n<p>$$\\therefore 3!\\times 2=12 \\text { ways }$$</p>\n<p>(Q) $$\\quad M=\\left[\\begin{array}{lll}x & a & b \\\\ a & y & c \\\\ b & c & z\\end{array}\\right] \\Rightarrow$$ Consider one such arrangement with $$a=\\alpha, b=\\beta, c=1$$</p>\n<p>a, b, c can be arranged in 3! ways and corresponding entries can be arranged in 1 way.</p>\n<p>(R)</p>\n<p>$$\\begin{aligned}\n& {\\left[\\begin{array}{ccc}\n0 & a & b \\\\\n-a & 0 & c \\\\\n-b & -c & 0\n\\end{array}\\right]\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{c}\na \\\\\n0 \\\\\n-c\n\\end{array}\\right]} \\\\\n& a y+b z=a \\\\\n& -a x+c z=0 \\\\\n& -b x-c y=-c\n\\end{aligned}$$</p>\n<p>It is observed that $$\\mathrm{D}=\\mathrm{D}_{\\mathrm{x}}=\\mathrm{D}_{\\mathrm{y}}=\\mathrm{D}_{\\mathrm{z}}=0$$</p>\n<p>$$\\therefore$$ infinite solution</p>\n<p>(S)</p>\n<p>$$\\begin{aligned}\n& {\\left[\\begin{array}{lll}\n1 & \\alpha & \\beta \\\\\n\\beta & \\alpha & 1 \\\\\n\\alpha & 1 & \\beta\n\\end{array}\\right] } \\\\\n& \\Rightarrow \\alpha \\beta-1-\\alpha \\beta^2+\\alpha^2+\\beta^2-\\alpha^2 \\beta=0 \\quad(\\text { since } \\alpha \\beta=\\alpha+\\beta=-1)\n\\end{aligned}$$</p>",
     "marks": 3,
@@ -1252,7 +1282,9 @@
       "<p>The determinant of $Q - 3I$ is 15</p>",
       "<p>$yz = 2$</p>"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>Let us consider the matrices given:</p>\n\n<p><p>$ I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} $</p></p>\n<p><p>$ P = \\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix} $</p></p>\n<p><p>$ Q = \\begin{pmatrix} x & y \\\\ z & 4 \\end{pmatrix} $</p></p>\n<p><p>$ R = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} $</p></p>\n\n<p>where $ x, y, z, a, b, c, d $ are non-zero real numbers. We aim to verify properties of matrix $ Q $ given the relation $ Q R = R P $.</p>\n<h3>Steps and Calculations</h3>\n\n<p><p><strong>Matrix Equation Analysis:</strong></p>\n<p>Given $ Q R = R P $, we equate both sides:</p>\n<p>$    \\begin{pmatrix} a x + c y & b x + d y \\\\ a z + 4c & b z + 4d \\end{pmatrix} = \\begin{pmatrix} 2a & 3b \\\\ 2c & 3d \\end{pmatrix}    $</p>\n<p>From the matrix equality, we derive the following key equations:</p></p>\n\n\n<p><p>$ a x + c y = 2a $</p></p>\n<p><p>$ b x + d y = 3b $</p></p>\n<p><p>$ a z + 4c = 2c $</p></p>\n<p><p>$ b z + 4d = 3d $</p></p>\n\n\n<p><p><strong>Determinant Condition:</strong></p>\n<p>Comparing the equations:</p></p>\n\n\n<p><p>Set $ a z = -2c $ and $ b z = -d $, resulting in $ \\frac{a}{b} = \\frac{2c}{d} $.</p></p>\n<p><p>The requirement $ |R| \\neq 0 $ implies $ |P| = |Q| $. So, equating determinants gives us:</p>\n<p>$      |P| = |Q| \\Rightarrow 6 = 4x - yz \\quad \\text{(Equation 1)}      $</p></p>\n\n\n<p><p><strong>Condition for Non-Trivial Solutions:</strong></p>\n<p>From:</p></p>\n\n\n<p><p>$ a(x - z) + c y = 0 $ </p></p>\n<p><p>$ a z + 2c = 0 $</p>\n<p>implies a non-trivial solution matrix must have:</p>\n<p>$    \\left|\\begin{array}{cc} x-2 & y \\\\ z & 2 \\end{array}\\right| = 0 \\Rightarrow 2x - yz = 4 \\quad \\text{(Equation 2)}    $</p></p>\n\n\n<p><p><strong>Solve for $ x $, $ yz $:</strong></p>\n<p>Solving Equations 1 and 2:</p></p>\n\n\n<p><p>$ 4x - yz = 6 $ </p></p>\n<p><p>$ 2x - yz = 4 $</p>\n<p>Subtract the second from the first:</p>\n<p>$    (4x - yz) - (2x - yz) = 6 - 4 \\Rightarrow 2x = 2 \\Rightarrow x = 1    $</p>\n<p>Plugging $ x = 1 $ back, we find:</p>\n<p>$    4(1) - yz = 6 \\Rightarrow 4 - yz = 6 \\Rightarrow yz = -2    $</p></p>\n\n\n<p><strong>Verify Determinants:</strong></p>\n\n\n<p><p><strong>For $ Q - 2I $:</strong></p>\n<p>$      |Q - 2I| = \\left|\\begin{array}{cc} x-2 & y \\\\ z & 2 \\end{array}\\right| = 2x - yz = 0      $</p></p>\n<p><p><strong>For $ Q - 6I $:</strong></p>\n<p>$      |Q - 6I| = \\left|\\begin{array}{cc} x-6 & y \\\\ z & -2 \\end{array}\\right| = -2x + 12 - yz = 12      $</p></p>\n<p><p><strong>For $ Q - 3I $:</strong></p>\n<p>$      |Q - 3I| = \\left|\\begin{array}{cc} x-3 & y \\\\ z & 1 \\end{array}\\right| = x - 3 - yz = 0      $</p>\n<p>Therefore, using the derived values, the statements for the determinants align correctly. The findings are:</p></p>\n\n<p><p>$ |Q - 2I| = 0 $</p></p>\n<p><p>$ |Q - 6I| = 12 $</p></p>\n<p><p>$ yz = -2 $</p></p>\n\n<p>These calculations validate the conditions for matrix $ Q $ concerning the predefined matrix properties.</p>",
     "marks": 4,
@@ -1274,7 +1306,9 @@
       "<p>16</p>",
       "<p>24</p>"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      2
+    ],
     "correctAnswer": "",
     "solution": "<p>To find the number of $3 \\times 3$ invertible matrices $Q$ with integer entries that satisfy both $Q^{-1} = Q^T$ and $PQ = QP$, consider the given matrix $P$:</p>\n<p>$ P = \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} $</p>\n<p>The condition $PQ = QP$ implies:</p>\n<p>$ \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} \\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix} = \\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix} \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} $</p>\n<p>This results in:</p>\n<p>$ \\begin{pmatrix} 2a & 2b & 2c \\\\ 2d & 2e & 2f \\\\ 3g & 3h & 3i \\end{pmatrix} = \\begin{pmatrix} 2a & 2b & 3c \\\\ 2d & 2e & 3f \\\\ 2g & 2h & 3i \\end{pmatrix} $</p>\n<p>From this, we derive that:</p>\n<p>$ c = 0, \\quad f = 0, \\quad h = 0, \\quad g = 0 $</p>\n<p>Thus, the matrix $Q$ is of the form:</p>\n<p>$ Q = \\begin{pmatrix} a & b & 0 \\\\ c & d & 0 \\\\ 0 & 0 & e \\end{pmatrix} $</p>\n<p>Next, using the condition $Q^T = Q^{-1}$, we have the equation:</p>\n<p>$ Q Q^T = I $</p>\n<p>This results in:</p>\n<p>$ \\begin{pmatrix} a & b & 0 \\\\ c & d & 0 \\\\ 0 & 0 & i \\end{pmatrix} \\begin{pmatrix} a & c & 0 \\\\ b & d & 0 \\\\ 0 & 0 & i \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} $</p>\n<p>This simplifies to:</p>\n<p>$ \\begin{pmatrix} a^2 + b^2 & ac + bd & 0 \\\\ ac + bd & c^2 + d^2 & 0 \\\\ 0 & 0 & i^2 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} $</p>\n<p>From which we conclude:</p>\n<p>$ a^2 + b^2 = 1, \\quad ac + bd = 0, \\quad c^2 + d^2 = 1, \\quad i^2 = 1 $</p>\n<p>Considering all possible integer solutions for these equations:</p>\n<p><strong>Case I:</strong> </p>\n\n<p><p>$(a, b) = (0, 1)$ or $(0, -1)$,</p></p>\n<p><p>$(c, d) = (1, 0)$ or $(-1, 0)$</p></p>\n\n<p><strong>Case II:</strong> </p>\n\n<p><p>$(a, b) = (1, 0)$ or $(-1, 0)$,</p></p>\n<p><p>$(c, d) = (0, 1)$ or $(0, -1)$</p></p>\n\n<p>For each case, $e$ can be either 1 or -1 since $i^2=1$. Therefore, $e = \\pm 1$.</p>\n<p>Combining these options, we find a total of 16 possible matrices $Q$.</p>",
     "marks": 3,
@@ -1288,7 +1322,7 @@
     "title": "JEE Advanced 2026 Paper 1 Online",
     "year": 2026,
     "difficulty": "easy",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Which one of the following matrices can be obtained by performing elementary row transformations on the $3 \\times 3$ identity matrix?</p>",
     "options": [
       "<p>$$\\begin{bmatrix} 1 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \\end{bmatrix}$$</p>",
@@ -1296,7 +1330,7 @@
       "<p>$$\\begin{bmatrix} 1 & 1 & 1 \\\\ 2 & 3 & 4 \\\\ 2 & 5 & 8 \\end{bmatrix}$$</p>",
       "<p>$$\\begin{bmatrix} 1 & 1 & 1 \\\\ -1 & 1 & 2 \\\\ 0 & 2 & 3 \\end{bmatrix}$$</p>"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 1,
     "correctAnswer": "",
     "solution": "<p>Let us assume that the new matrix we get after performing elementary row operations on the identity matrix is $A$.</p>\n<p>This means,</p>\n<p>$$A = E_n E_{n-1} \\ldots E_1 I$$</p>\n<p>Here, each $E_i$ represents an elementary matrix (a matrix obtained by performing one elementary row operation on the identity matrix).</p>\n<p>Now, the determinant of $A$ can be written as:</p>\n<p>$$\\det(A) = \\prod\\limits_{k=1}^{n} \\det(E_k)$$</p>\n<p>For an elementary matrix, $\\det(E_k)$ can be either $1$, $-1$, or any non-zero number $k$. Therefore,</p>\n<p>$$\\det(A) \\ne 0$$</p>\n<p>This tells us that any matrix obtained from the identity matrix through elementary row transformations must have a non-zero determinant.</p>\n<p>Now, let’s check the determinant of each given option:</p>\n<p>(A) $$\\det\\left(\\begin{bmatrix}1 & 1 & 1\\\\1 & 1 & 1\\\\1 & 1 & 1\\end{bmatrix}\\right) = 0$$</p>\n<p>(B) $$\\det\\left(\\begin{bmatrix}1 & 1 & 1\\\\2 & 3 & 4\\\\1 & 2 & 1\\end{bmatrix}\\right) = -2 \\ne 0$$</p>\n<p>(C) $$\\det\\left(\\begin{bmatrix}1 & 1 & 1\\\\2 & 3 & 4\\\\2 & 5 & 8\\end{bmatrix}\\right) = 0$$</p>\n<p>(D) $$\\det\\left(\\begin{bmatrix}1 & 1 & 1\\\\-1 & 1 & 2\\\\0 & 2 & 3\\end{bmatrix}\\right) = 0$$</p>\n<p>Since only option (B) has a non-zero determinant, this means that it can be obtained from the identity matrix through elementary row operations.</p>\n<p>The steps to obtain matrix (B) from the $3 \\times 3$ identity matrix are shown below:</p>\n<p>Start with:</p>\n<p>$$I = \\begin{bmatrix}1 & 0 & 0\\\\0 & 1 & 0\\\\0 & 0 & 1\\end{bmatrix}$$</p>\n<p>Perform $R_2 \\rightarrow R_2 + 2R_3$ :</p>\n<p>$$\\begin{bmatrix}1 & 0 & 0\\\\0 & 1 & 2\\\\0 & 0 & 1\\end{bmatrix}$$</p>\n<p>Next, $R_1 \\rightarrow R_1 - R_3$ :</p>\n<p>$$\\begin{bmatrix}1 & 0 & -1\\\\0 & 1 & 2\\\\0 & 0 & 1\\end{bmatrix}$$</p>\n<p>Then, $R_3 \\rightarrow -2R_3$ :</p>\n<p>$$\\begin{bmatrix}1 & 0 & -1\\\\0 & 1 & 2\\\\0 & 0 & -2\\end{bmatrix}$$</p>\n<p>Now, $R_3 \\rightarrow R_3 + R_2$ :</p>\n<p>$$\\begin{bmatrix}1 & 0 & -1\\\\0 & 1 & 2\\\\0 & 1 & 0\\end{bmatrix}$$</p>\n<p>Next, $R_1 \\rightarrow R_1 + R_2$ :</p>\n<p>$$\\begin{bmatrix}1 & 1 & 1\\\\0 & 1 & 2\\\\0 & 1 & 0\\end{bmatrix}$$</p>\n<p>Then, $R_3 \\rightarrow R_3 + R_1$ :</p>\n<p>$$\\begin{bmatrix}1 & 1 & 1\\\\0 & 1 & 2\\\\1 & 2 & 1\\end{bmatrix}$$</p>\n<p>Finally, $R_2 \\rightarrow R_2 + 2R_1$ :</p>\n<p>$$\\begin{bmatrix}1 & 1 & 1\\\\2 & 3 & 4\\\\1 & 2 & 1\\end{bmatrix}$$</p>\n<p>Hence, option (B) can indeed be obtained by performing elementary row transformations on the $3 \\times 3$ identity matrix.</p>",
     "marks": 3,
@@ -1318,7 +1352,11 @@
       "<p>For any two given integers $m$ and $n$, there exist unique integers $x$ and $y$ such that</p><p>$$ px + qy = m \\quad \\text{and} \\quad rx + sy = n $$</p>",
       "<p>For each positive real number $t$, the system of linear equations</p><p> \\begin{align*} (a + t)x + by &= 1 \\\\ cx + (d + t)y &= -1 \\end{align*} </p><p>has a unique solution</p>"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p>We can write the matrix as</p>\n<p>$$ M = \\begin{bmatrix}2 & -1 \\\\ 1 & 0\\end{bmatrix} = \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} + \\begin{bmatrix}1 & 0 \\\\ 0 & 1\\end{bmatrix} $$</p>\n<p>So, let $ B = \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} $. Then $ M = B + I $.</p>\n<p><b>Find $ B^2 $</b></p>\n<p>$$ B^2 = \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} = \\begin{bmatrix}0 & 0 \\\\ 0 & 0\\end{bmatrix} $$</p>\n<p>This means $ B $ is a nilpotent matrix, i.e., its square is a zero matrix.</p>\n<p><b>Expand $ M^{26} $ using the Binomial Theorem</b></p>\n<p>$$ M^{26} = (B + I)^{26} = {^{26}C_0} I + {^{26}C_1} B + {^{26}C_2} B^2 + \\ldots + {^{26}C_{26}} B^{26} $$</p>\n<p>As $ B^2 = 0 $, all higher powers of $ B $ are zero. So,</p>\n<p>$$ M^{26} = I + 26B $$</p>\n<p><b>Substitute the values</b></p>\n<p>$$ M^{26} = \\begin{bmatrix}1 & 0 \\\\ 0 & 1\\end{bmatrix} + 26 \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} = \\begin{bmatrix}27 & -26 \\\\ 26 & -25\\end{bmatrix} $$</p>\n<p>So, $ p = 27, \\, q = -26, \\, r = 26, \\, s = -25. $</p>\n<p><b>Find the sum $ D = \\sum_{k=1}^{26} M^k $</b></p>\n<p>$$ D = M + M^2 + M^3 + \\ldots + M^{26} $$</p>\n<p>Substitute $ M = B + I $:</p>\n<p>$$ D = (B + I) + (B + I)^2 + (B + I)^3 + \\ldots + (B + I)^{26} $$</p>\n<p>Since $ (B + I)^k = I + kB $, we have</p>\n<p>$$ D = (I + B) + (I + 2B) + (I + 3B) + \\ldots + (I + 26B) $$</p>\n<p>Combine like terms:</p>\n<p>$$ D = 26I + B(1 + 2 + 3 + \\ldots + 26) $$</p>\n<p>The sum $ 1 + 2 + 3 + \\ldots + 26 = 351 $, so</p>\n<p>$$ D = 26I + 351B $$</p>\n<p>Substitute the matrices:</p>\n<p>$$ \\sum_{k=1}^{26} M^k = \\begin{bmatrix}377 & -351 \\\\ 351 & -325\\end{bmatrix} = \\begin{bmatrix}a & b \\\\ c & d\\end{bmatrix} $$</p>\n<p>Hence, $ a = 377, \\, b = -351, \\, c = 351, \\, d = -325. $</p>\n<p>So, option (B) is incorrect.</p>\n<p><b>Check option (C)</b></p>\n<p>Given system of equations:</p>\n<p>$$ 27x - 26y = m $$</p>\n<p>$$ 26x - 25y = n $$</p>\n<p>Determinant of coefficients:</p>\n<p>$$ \\left|\\begin{array}{rr} 27 & -26 \\\\ 26 & -25 \\end{array}\\right| \\neq 0 $$</p>\n<p>Since the determinant is non-zero, a unique solution exists.</p>\n<p>On solving, we get:</p>\n<p>$$ x = -24n - 25m, \\quad y = -23n - 26m $$</p>\n<p>Both $ x $ and $ y $ are integers. Hence, option (C) is correct.</p>\n<p><b>Check option (D)</b></p>\n<p>We have:</p>\n<p>$$ \\left|\\begin{array}{cc} a + t & b \\\\ c & d + t \\end{array}\\right| = ad + at + dt + t^2 - bc $$</p>\n<p>Substitute $ a = 377, b = -351, c = 351, d = -325 $:</p>\n<p>$$ = (377)(-325) + t(52) + t^2 + (351)(351) = t^2 + 52t + 676 = (t + 26)^2 $$</p>\n<p>Since $ (t + 26)^2 \\neq 0 $ for all $ t > 0 $, the determinant is non-zero, so a unique solution exists. Option (D) is correct.</p>\n<p><b>Check option (A)</b></p>\n<p>Let $ N = \\begin{bmatrix}j & k \\\\ l & m\\end{bmatrix} $.</p>\n<p>Compute $ MN $:</p>\n<p>$$ MN = \\begin{bmatrix}2 & -1 \\\\ 1 & 0\\end{bmatrix} \\begin{bmatrix}j & k \\\\ l & m\\end{bmatrix} = \\begin{bmatrix}2j - l & 2k - m \\\\ j & k\\end{bmatrix} $$</p>\n<p>Compute $ N\\begin{bmatrix}1 & 1 \\\\ 0 & 1\\end{bmatrix} $:</p>\n<p>$$ N\\begin{bmatrix}1 & 1 \\\\ 0 & 1\\end{bmatrix} = \\begin{bmatrix}j & j + k \\\\ l & l + m\\end{bmatrix} $$</p>\n<p>Comparing both, we get $ j = l $ and $ 2k - m = j + k $ ⟹ $ m - k = j $.</p>\n<p>Determinant of $ N $:</p>\n<p>$$ |N| = jm - lk = j(m - k) $$</p>\n<p>This is not always zero if $ j \\neq 0 $ and $ m \\neq k $, which means $ N $ can be invertible. Hence, option (A) is correct.</p>",
     "marks": 4,

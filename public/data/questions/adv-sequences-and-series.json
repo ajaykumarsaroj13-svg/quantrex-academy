@@ -140,10 +140,10 @@
     "title": "IIT-JEE 1984",
     "year": 1984,
     "difficulty": "medium",
-    "type": "FIB",
+    "type": "SCQ",
     "question": "The sum of integers from 1 to 100 that are divisible by 2 or 5 is ............",
     "options": [],
-    "correctOptionIndex": -1,
+    "correctOptionIndex": 1,
     "correctAnswer": "",
     "solution": "3050",
     "marks": 2,
@@ -1499,7 +1499,8 @@
     ],
     "correctOptionIndex": [
       0,
-      1
+      1,
+      2
     ],
     "correctAnswer": "",
     "solution": "For option (a)  $${S_n}(x) = \\sum\\limits_{k = 1}^n {{{\\cot }^{ - 1}}\\left[ {{{1 + k(k + 1){x^2}} \\over x}} \\right]} $$ can be written as <br/><br/>$${S_n}(x) = \\sum\\limits_{k = 1}^n {{{\\tan }^{ - 1}}\\left[ {{{(k + 1)x - kx} \\over {1 + kx\\,.\\,(k + 1)x}}} \\right]} $$<br/><br/>$$ = \\sum\\limits_{k = 1}^n {[{{\\tan }^{ - 1}}(k + 1)x - {{\\tan }^{ - 1}}(kx)]} $$<br/><br/>$$ = {\\tan ^{ - 1}}(n + 1)x - {\\tan ^{ - 1}}x$$<br/><br/>$$ = {\\tan ^{ - 1}}\\left( {{{nx} \\over {1 + (n + 1){x^2}}}} \\right)$$<br/><br/>Now, $${S_{10}}(x) = ta{n^{ - 1}}\\left( {{{10x} \\over {1 + 11{x^2}}}} \\right)$$<br/><br/>$$ = {\\pi  \\over 2} - {\\cot ^{ - 1}}\\left( {{{10x} \\over {1 + 11{x^2}}}} \\right) = {\\pi  \\over 2} - {\\tan ^{ - 1}}\\left( {{{1 + 11{x^2}} \\over {10x}}} \\right)$$<br/><br/>Option (a) is correct.<br/><br/>For option (b)<br/><br/>$$\\mathop {\\lim }\\limits_{n \\to \\infty } \\cot ({S_n}(x)) = \\cot \\left( {{{\\tan }^{ - 1}}\\left( {{x \\over {{x^2}}}} \\right)} \\right)$$<br/><br/>$$ = \\cot \\left( {{{\\tan }^{ - 1}}\\left( {{1 \\over x}} \\right)} \\right) = \\cot (co{t^{ - 1}}x) = x,\\,x > 0$$<br/><br/>Option (b) is correct.<br/><br/>For option (c)<br/><br/>$${S_3}(x) = {\\pi  \\over 4} \\Rightarrow {{3x} \\over {1 + 4{x^2}}} = 1$$<br/><br/>$$ \\Rightarrow 4{x^2} - 3x + 1 = 0$$ has no real root.<br/><br/>Option (c) is incorrect.<br/><br/>For option (d)<br/><br/>For $$x = 1,\\,\\tan ({S_n}(x)) = {n \\over {n + 2}}$$ which is greater than $${1 \\over 2}$$ for n $$\\ge$$ 3<br/><br/>Option (d) is incorrect.",

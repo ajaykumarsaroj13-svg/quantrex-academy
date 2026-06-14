@@ -18,7 +18,8 @@
     "topic": "mathematical-induction",
     "difficulty": "medium",
     "solution": "Given $$A = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   1 &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$$\\therefore$$ $$A \\times A$$ = $${A^2}$$ = $$\\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   2 &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>and $${A^3}$$ = $${A^2} \\times A$$ = $$\\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   3 &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>So we can say $${A^n}$$ = $$\\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   n &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>Now $$nA - \\left( {n - 1} \\right){\\rm I}$$\n<br><br>= $$\\left[ {\\matrix{\n   n &amp; 0  \\cr \n   n &amp; n  \\cr \n\n } } \\right]$$ - $$\\left[ {\\matrix{\n   {n - 1} &amp; 0  \\cr \n   0 &amp; {n - 1}  \\cr \n\n } } \\right]$$\n<br><br>= $$\\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   n &amp; 1  \\cr \n\n } } \\right]$$ = $${A^n}$$\n<br><br>$$\\therefore$$ $${A^n} = nA - \\left( {n - 1} \\right){\\rm I}$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "hj54pq327GNyXr3n",
@@ -39,7 +40,8 @@
     "topic": "mathematical-induction",
     "difficulty": "easy",
     "solution": "Given $$S(K)$$ $$ = 1 + 3 + 5... + \\left( {2K - 1} \\right) = 3 + {K^2}$$\n<br><br>When k = 1, S(1): 1 = 3 + 1, \n<br><br>L.H.S of S(k) $$ \\ne $$ R.H.S of S(k)\n<br><br>So S(1) is not true.\n<br><br>As S(1) is not true so principle of mathematical induction can not be used.\n<br><br>S(K+1) = 1 + 3 + 5... + (2K - 1) + (2K + 1) = 3 + (k + 1)<sup>2</sup>\n<br><br>Now let S(k) is true\n<br><br>$$\\therefore$$ 1 + 3 + 5 +........(2k - 1) = 3 + k<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ 1 + 3 + 5 +........(2k - 1) + (2k + 1) = 3 + k<sup>2</sup> + 2k +1\n<br><br>= 3 + (k + 1)<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ S(k + 1) is true.\n<br><br>$$\\therefore$$ S(k) $$ \\Rightarrow $$ S(k + 1)",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "3YLjdLeFsjhnI2wc",
@@ -60,6 +62,7 @@
     "topic": "mathematical-induction",
     "difficulty": "medium",
     "solution": "Given $${a_n} = \\sqrt {7 + \\sqrt {7 + \\sqrt {7 + .......} } } $$\n<br><br>$$\\therefore$$ $${a_n} = \\sqrt {7 + {a_n}} $$\n<br><br>$$ \\Rightarrow $$ $$a_n^2 = 7 + {a_n}$$\n<br><br>$$ \\Rightarrow $$ $$a_n^2 - {a_n} - 7 = 0$$\n<br><br>$$ \\Rightarrow {a_n} = {{1 \\pm \\sqrt {1 - 4 \\times 1 \\times  - 7} } \\over 2}$$\n<br><br>$$ \\Rightarrow {a_n} = {{1 \\pm \\sqrt {29} } \\over 2}$$\n<br><br>As $${a_n}$$ &gt; 0, \n<br><br>$$\\therefore$$ $${a_n} = {{1 + \\sqrt {29} } \\over 2}$$ = 3.19\n<br><br>So $${a_n} &gt; 3\\,\\,\\forall \\,\\,n \\ge 1$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

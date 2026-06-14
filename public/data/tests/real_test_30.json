@@ -108,7 +108,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
@@ -130,7 +130,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
@@ -138,7 +138,11 @@
       "difficulty": "medium",
       "solution": "<p>Let $n_m$ be the number of moles of the monoatomic ideal gas.</p>\n<p>For a monoatomic gas, the molar heat capacity at constant volume is $C_v = \\frac{3}{2}R$, and the adiabatic constant is</p>\n<p>$$\\gamma = \\frac{5}{3}$$</p>\n<p>For process $a \\rightarrow b$ (Isothermal Process):</p>\n<p>The temperature remains constant: $T_a = T_b = T_0 \\rightarrow \\Delta T_{ab} = 0$</p>\n<p>So, the change in internal energy is zero: $\\Delta U_{ab} = 0$</p>\n<p>The volume changes from $V_1$ to $V_2 (V_2 > V_1)$. So, it's an isothermal expansion.</p>\n<p>The work done by the gas during isothermal process is given as $W = nRT \\ln\\left(\\frac{V_f}{V_i}\\right)$, where $n$ is the amount of gas, $T$ is the temperature, $V_f$ is the final volume and $V_i$ is the initial volume.</p>\n<p>According to the first law of thermodynamics,</p>\n<p>$$Q_{ab} = \\Delta U_{ab} + W_{ab} = 0 + n_m R T_0 \\ln\\left(\\frac{V_2}{V_1}\\right)$$</p>\n<p>Since $V_2 > V_1$, $Q_{ab} > 0$. Which means heat is absorbed by the gas ($Q_{absorbed} = Q_{ab}$).</p>\n<p>For the process $b \\rightarrow c$ (Isochoric Process):</p>\n<p>The volume is kept constant, $V_c = V_b = V_2 \\rightarrow \\Delta V = 0$</p>\n<p>So, the work done is zero, $W_{bc} = 0$.</p>\n<p>Using first law of thermodynamics the heat transferred directly equals the change in internal energy:</p>\n<p>$$Q_{bc} = \\Delta U_{bc} = n_m C_v (T_c - T_b) = \\frac{3}{2} n_m R (T_c - T_0)$$</p>\n<p>For the process $c \\rightarrow a$ (Adiabatic Process):</p>\n<p>As in adiabatic process there is no heat is exchanged with the surroundings $Q_{ca} = 0$.</p>\n<p>The state changes from $(V_2, T_c)$ back to $(V_1, T_0)$ and completes the cycle.</p>\n<p>For a reversible adiabatic process ($c \\rightarrow a$), the relationship between temperature $T$ and volume $V$ is</p>\n<p>$$T V^{\\gamma - 1} = \\text{constant}$$</p>\n<p>Applying this equation at states $c$ and $a$:</p>\n<p>$$T_c V_c^{\\gamma - 1} = T_a V_a^{\\gamma - 1}$$</p>\n<p>Substituting $V_c = V_2$, $V_a = V_1$, and $T_a = T_0$:</p>\n<p>$$T_c V_2^{\\gamma - 1} = T_0 V_1^{\\gamma - 1} \\rightarrow \\frac{T_0}{T_c} = \\left(\\frac{V_2}{V_1}\\right)^{\\gamma - 1}$$</p>\n<p>For a monoatomic gas, $\\gamma - 1 = \\frac{5}{3} - 1 = \\frac{2}{3}$.</p>\n<p>Therefore :</p>\n\n<p>$$\\frac{T_0}{T_c} = \\left(\\frac{V_2}{V_1}\\right)^{2/3}$$</p>\n<p>When $\\frac{v_2}{v_1} = 8$</p>\n<p>$$\\frac{T_a}{T_c} = \\frac{T_a}{T_c} = (8)^{2/3} = (2^3)^{2/3} = 2^2 = 4$$</p>\n<p>Which means $T_a = 4\\,T_c$, i.e., the temperature of the gas at state a is exactly 4 times the temperature at state c.</p>\n<p>Thus, option (C) is correct.</p>\n<p>Process $a \\rightarrow b$ is isothermal ($T_a = T_b$). Using the ideal gas law $(PV = n_mRT)$:</p>\n<p>$$P_a\\,V_a = P_bV_b \\rightarrow P_aV_1 = P_bV_2$$</p>\n<p>$$\\frac{P_a}{P_b} = \\frac{V_2}{V_1}$$</p>\n<p>If $\\frac{v_2}{v_1} = 8$, then:</p>\n<p>$$\\frac{P_a}{P_b} = 8 \\rightarrow P_a = 8\\,P_b$$</p>\n<p>So, the pressure of the gas at a is 8 times the pressure of the gas at b. Thus, option (D) is incorrect.</p>\n<p>Since $T_a = T_0$ and $T_c = T_0/4$ when $\\frac{v_2}{v_1} = 8$, the temperature decreases during the constant-volume process $b \\rightarrow c$. The heat exchanged in process $b \\rightarrow c$ is:</p>\n<p>$$Q_{bc} = \\frac{3}{2}\\,n_m\\,R\\,(T_c - T_b) = \\frac{3}{2}\\,n_m\\,R\\left(\\frac{T_0}{4} - T_0\\right) = \\frac{3}{2}\\,n_m\\,R\\left(-\\frac{3}{4}T_0\\right) = -\\frac{9}{8}\\,n_m\\,R\\,T_0$$</p>\n<p>The negative sign indicates that heat is released by the system</p>\n<p>$$Q_{\\text{released}} = |Q_{bc}| = 1.125\\,n_m\\,R\\,T_0$$</p>\n<p>The heat absorbed during the isothermal process $a \\rightarrow b$:</p>\n<p>$$Q_{ab} = n_m\\,R\\,T_0\\,\\ln\\left(\\frac{V_2}{V_1}\\right) = n_m\\,R\\,T_0\\,\\ln(8) = n_m\\,R\\,T_0\\,\\ln(2^3) = 3\\,n_m\\,R\\,T_0\\,\\ln(2)$$</p>\n<p>Using the given approximation $\\ln(2) \\approx 0.7$:</p>\n<p>$$Q_{ab} \\approx 3\\,n_m\\,R\\,T_0(0.7) = 2.1\\,n_m\\,R\\,T_0$$</p>\n<p>So, heat released in $b \\rightarrow c$ is $Q_{\\text{released}} = 1.125\\,n_m\\,R\\,T_0$</p>\n<p>Heat absorbed in $a \\rightarrow b$ is $Q_{\\text{absorbed}} = 2.1\\,n_m\\,R\\,T_0$</p>\n<p>Hence, the heat released in process $b \\rightarrow c$ is smaller than the heat absorbed in process $a \\rightarrow b$. Thus, option (A) is correct.</p>\n<p>The net efficiency $\\eta$ of the cycle is,</p>\n<p>$$\\eta = \\frac{Q_{\\text{in}} - Q_{\\text{out}}}{Q_{\\text{in}}} = 1 - \\frac{Q_{\\text{out}}}{Q_{\\text{in}}}$$</p>\n<p>Here, $Q_{\\text{in}} = Q_{ab} = n_m\\,R\\,T_0\\,\\ln\\left(\\frac{v_2}{v_1}\\right)$ and $Q_{\\text{out}} = |Q_{bc}| = \\frac{3}{2}\\,n_m\\,R\\,(T_0 - T_c)$.</p>\n<p>Also, $T_c = T_0\\left(\\frac{V_1}{V_2}\\right)^{\\gamma - 1}$.</p>\n<p>Substituting into $Q_{\\text{out}}$,</p>\n\n<p>$$Q_{\\text{out}} = \\frac{3}{2} n_m R T_0 \\left[ 1 - \\left( \\frac{V_1}{V_2} \\right)^{\\gamma - 1} \\right]$$</p>\n<p>Substituting both heat expressions into the efficiency formula:</p>\n<p>$$\\eta = 1 - \\frac{\\frac{3}{2} n_m R T_0 \\left[ 1 - \\left( \\frac{V_1}{V_2} \\right)^{\\gamma - 1} \\right]}{n_m R T_0 \\ln\\left( \\frac{V_2}{V_1} \\right)}$$</p>\n<p>$$\\eta = 1 - \\frac{\\frac{3}{2} \\left[ 1 - \\left( \\frac{V_1}{V_2} \\right)^{2/3} \\right]}{\\ln\\left( \\frac{V_2}{V_1} \\right)}$$</p>\n<p>For a fixed volume ratio $V_2/V_1$, the efficiency $\\eta$ does not depend on the temperature of the isothermal process.</p>\n<p>Thus, option (B) is correct.</p>\n<p>Therefore, the correct options are (A), (B), and (C)</p>",
       "section": "Sec 2",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        2
+      ]
     },
     {
       "id": "mp9vjxn6",
@@ -152,7 +156,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
@@ -174,7 +178,7 @@
       ],
       "correctOption": 2,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
@@ -440,7 +444,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
@@ -462,7 +466,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
@@ -484,7 +488,7 @@
       ],
       "correctOption": 2,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
@@ -506,7 +510,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
@@ -604,7 +608,12 @@
       "difficulty": "hard",
       "solution": "<p>The reaction of oxygen gas with platinum hexafluoride can be written as:</p>\n<p>$$\\mathrm{O_2 + PtF_6 \\rightarrow X^{+}Y^{-}}$$</p>\n<p>The product formed is:</p>\n<p>$$\\mathrm{O_2^{+}[PtF_6]^{-}}$$</p>\n<p>Hence, we identify the ions as:</p>\n<p>$$\\mathrm{X^{+} \\rightarrow O_2^{+}}$$</p>\n<p>$$\\mathrm{Y^{-} \\rightarrow [PtF_6]^{-}}$$</p>\n<p><b>(A) For $\\mathrm{O_2^{+}}$, Bond Order (BO) = 2.5</b></p>\n<p>The molecular orbital electronic configuration of $\\mathrm{O_2^{+}}$ is:</p>\n<p>$$\\sigma 1s^2\\\\ \\sigma^{*}1s^2\\\\ \\sigma 2s^2\\\\ \\sigma^{*}2s^2\\\\ \\sigma 2p_z^2\\\\ \\pi 2p_x^2 = \\pi 2p_y^2\\\\ \\pi^{*}2p_x^1 = \\pi^{*}2p_y^0$$</p>\n<p>From this configuration, the bond order is calculated as:</p>\n<p>$$\\text{BO} = 2.5$$</p>\n<p>Therefore, statement A is incorrect as given.</p>\n<p><b>(B) In $\\mathrm{O_2^{+}[PtF_6]^{-}}$, oxidation state of Pt = +5</b></p>\n<p>We have $\\mathrm{Pt^{+5}}$ with the electronic configuration $5d^5$. The atomic configuration of Pt is $5d^9 6s^1$. Hence, the oxidation state of +5 is correct.</p>\n<p>So, statement B is correct.</p>\n<p><b>(C) $\\mathrm{PtF_6}$ acts as an oxidising agent</b></p>\n<p>As $\\mathrm{O_2}$ is oxidised to $\\mathrm{O_2^{+}}$, $\\mathrm{PtF_6}$ works as the oxidant that accepts electrons.</p>\n<p>Hence, statement C is correct.</p>\n<p><b>(D) No fluorine atom transfer occurs from $\\mathrm{PtF_6}$</b></p>\n<p>Since there is no fluorine transfer during the reaction, this statement is incorrect in this context.</p>",
       "section": "Sec 4",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        2,
+        3
+      ]
     },
     {
       "id": "mp9y229s",
@@ -692,7 +701,11 @@
       "difficulty": "hard",
       "solution": "<p>The plane <b>P</b> contains the line</p>\n<p>$$\\mathrm{L}: \\frac{\\mathrm{x}-1}{2}=\\frac{\\mathrm{y}-3}{3}=\\frac{\\mathrm{z}+2}{1}$$</p>\n<p>and is also perpendicular to the plane $x + 2y + 3z = 4.$</p>\n\n<p>The direction ratios of line $L$ are $2, 3, 1.$<br> The normal vector of the given plane $x + 2y + 3z = 4$ is $1, 2, 3.$</p>\n<p>Since plane $P$ is perpendicular to this plane, its normal vector $\\vec{n}$ must be perpendicular to $(1, 2, 3)$ and also perpendicular to the line’s direction $(2, 3, 1).$</p>\n<p>Thus, $\\vec{n}$ is given by the cross product:</p>\n<p>$$\\vec{n}=\\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 3 & 1 \\\\ 1 & 2 & 3 \\end{vmatrix}$$</p>\n<p>On simplifying,</p>\n<p>$$\\vec{n}=7\\hat{i}-5\\hat{j}+\\hat{k}$$</p>\n\n<p>The line passes through the point $(1, 3, -2)$, and since this point lies on the plane $P$, we use the point-normal form:</p>\n<p>$$7(x-1) - 5(y-3) + (z+2) = 0$$</p>\n<p>On simplifying,</p>\n<p>$$7x - 5y + z + (-7 + 15 + 2) = 0 \\Rightarrow 7x - 5y + z = -10$$</p>\n<p>Hence, equation of plane $P$ is:</p>\n<p>$$7x - 5y + z = -10$$</p>\n<p><b>Option A is correct.</b></p>\n\n<p>Plane $P_1$ is parallel to $P$. Hence it will have the same normal vector, so the general equation is:</p>\n<p>$$7x - 5y + z = d$$</p>\n<p>Since $P_1$ passes through the point $(4, 2, 2)$, substitute these coordinates:</p>\n<p>$$7(4) - 5(2) + 2 = d$$</p>\n<p>$$28 - 10 + 2 = d \\Rightarrow d = 20$$</p>\n<p>Therefore, equation of $P_1$ is</p>\n<p>$$7x - 5y + z = 20$$</p>\n\n<p>The distance between two parallel planes $A x + B y + C z + D_1 = 0$ and $A x + B y + C z + D_2 = 0$ is:</p>\n<p>$$\\frac{|D_1 - D_2|}{\\sqrt{A^2 + B^2 + C^2}}$$</p>\n<p>Here, $D_1 = -10$, $D_2 = -20$ (taking standard form). So,</p>\n<p>$$\\text{Distance} = \\frac{|-10 - 20|}{\\sqrt{7^2 + (-5)^2 + 1^2}} = \\frac{30}{\\sqrt{75}}$$</p>\n<p><b>Option B is incorrect.</b></p>\n\n<p>The formula for the perpendicular distance from point $(x_1, y_1, z_1)$ to plane $A x + B y + C z + D = 0$ is:</p>\n<p>$$\\frac{|A x_1 + B y_1 + C z_1 + D|}{\\sqrt{A^2 + B^2 + C^2}}$$</p>\n<p>For origin $(0, 0, 0)$:</p>\n<p>$$\\text{Distance} = \\frac{|0 + 0 + 0 - 10|}{\\sqrt{75}} = \\frac{10}{\\sqrt{75}} = \\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}$$</p>\n<p><b>Option C is incorrect.</b></p>\n<p><b>Acute angle between planes P and $2x + 2y + z = 3$</b></p>\n<p>Let the normal vectors be:</p>\n<p>$\\vec{n}_1 = (7, -5, 1)$ and $\\vec{n}_2 = (2, 2, 1)$.</p>\n<p>The cosine of the angle between two planes is given by:</p>\n<p>$$\\cos\\theta = \\frac{|\\vec{n}_1 \\cdot \\vec{n}_2|}{|\\vec{n}_1| |\\vec{n}_2|}$$</p>\n<p>Substitute the values:</p>\n<p>$$\\cos\\theta = \\frac{|7(2) + (-5)(2) + 1(1)|}{\\sqrt{75} \\times 3} = \\frac{1}{3\\sqrt{3}}$$</p>\n<p>Hence,</p>\n<p>$$\\theta = \\cos^{-1}\\left(\\frac{1}{3\\sqrt{3}}\\right)$$</p>\n<p><b>Option D is correct.</b></p>",
       "section": "Sec 1",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        1
+      ]
     },
     {
       "id": "mp9tuhs7",
@@ -772,7 +785,7 @@
       ],
       "correctOption": 1,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -780,7 +793,12 @@
       "difficulty": "medium",
       "solution": "<p><img alt=\"JEE Advanced 2026 Paper 1 Online Mathematics - Hyperbola Question 2 English Explanation 1\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpcjf08b/7aefbaae-0aa5-405f-ad53-74fb6560a18d/26a22bb0-5374-11f1-aed4-773fcb3828ea/file-6y3zli1mpcjf08c.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpcjf08b/7aefbaae-0aa5-405f-ad53-74fb6560a18d/26a22bb0-5374-11f1-aed4-773fcb3828ea/file-6y3zli1mpcjf08c.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$$ r=\\frac{|3(1)+4(2)-1|}{\\sqrt{3^2+4^2}}=\\frac{10}{5}=2 $$</p>\n<p>$$\\therefore $$ Equation of circle is $(x-1)^2+(y-2)^2=4$</p>\n<p>Passes through $(3,2) \\Rightarrow \\mathrm{P} \\rightarrow 3$</p>\n<p>(Q) Tangent to parabola: $y=m x+\\frac{2}{m}$</p>\n<p>Radius of circle, $r=\\sqrt{2}$</p>\n<p>Distance from $(0,0)$ to $m x-y+\\frac{2}{m}=0$ must be $\\sqrt{2}$</p>\n<p>$$ \\begin{aligned} &amp; \\therefore \\frac{\\frac{2}{m}}{\\sqrt{m^2+1}}=\\sqrt{2} \\Rightarrow \\frac{4}{m^2}=2\\left(m^2+1\\right) \\\\ &amp; \\Rightarrow m^4+m^2-2=0 \\\\ &amp; \\Rightarrow m^2=1 \\end{aligned} $$</p>\n<p>For positive slope, $m=1$</p>\n<p>$$\\therefore $$ Equation is $y=x+2$ passes through $(7,9) \\Rightarrow Q \\rightarrow 2$</p>\n<p><img alt=\"JEE Advanced 2026 Paper 1 Online Mathematics - Hyperbola Question 2 English Explanation 2\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpcjjeeq/95864bb5-0e93-43fd-b6da-ca6c35b02845/a0d28920-5374-11f1-aed4-773fcb3828ea/file-6y3zli1mpcjjeer.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpcjjeeq/95864bb5-0e93-43fd-b6da-ca6c35b02845/a0d28920-5374-11f1-aed4-773fcb3828ea/file-6y3zli1mpcjjeer.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$$ \\frac{x^2}{16}+\\frac{y^2}{12}=1, a^2=16, b^2=12, e=\\sqrt{1-\\frac{12}{16}}=\\frac{1}{2} $$</p>\n<p>Latus rectum point $M\\left(1^{\\text {st }}\\right.$ quadrant $): x=a e=4 \\times \\frac{1}{2}=2$</p>\n<p>$$ \\begin{aligned} &amp; y=\\frac{b^2}{a}=\\frac{12}{4}=3 \\\\ &amp; \\therefore M(2,3) \\end{aligned} $$</p>\n<p>Equation of normal at $(2,3)$ is</p>\n<p>$$ \\frac{a^2 x}{x_1}-\\frac{b^2 y}{y_1}=a^2 e^2 \\Rightarrow 2 x-y=1 $$</p>\n<p>which passes through $(1,1)$</p>\n<p><img alt=\"JEE Advanced 2026 Paper 1 Online Mathematics - Hyperbola Question 2 English Explanation 3\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpcjnadn/5cb8ff67-2f4c-4b83-bb7e-d1f8a11eb760/0cf221b0-5375-11f1-aed4-773fcb3828ea/file-6y3zli1mpcjnado.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpcjnadn/5cb8ff67-2f4c-4b83-bb7e-d1f8a11eb760/0cf221b0-5375-11f1-aed4-773fcb3828ea/file-6y3zli1mpcjnado.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$$ \\begin{aligned} &amp; a e=5, \\frac{a}{e}=\\frac{16}{5} \\\\ &amp; a^2=16 \\Rightarrow a=4 \\\\ &amp; \\therefore e=\\frac{5}{4} \\\\ &amp; b^2=a^2\\left(e^2-1\\right)=9 \\\\ &amp; \\therefore \\frac{x^2}{16}-\\frac{y^2}{9}=1 \\text { passes through }(8,3 \\sqrt{3}) \\Rightarrow S \\rightarrow 5 \\\\ &amp; (P) \\rightarrow(3),(Q) \\rightarrow(2),(R) \\rightarrow(1),(S) \\rightarrow(5) \\end{aligned} $$</p>\n<p>Option (B) is correct</p>",
       "section": "Sec 2",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        1,
+        3
+      ]
     },
     {
       "id": "mp9u29ee",
@@ -794,7 +812,7 @@
       ],
       "correctOption": 2,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -816,7 +834,7 @@
       ],
       "correctOption": 1,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -838,7 +856,7 @@
       ],
       "correctOption": 1,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -980,7 +998,11 @@
       "difficulty": "hard",
       "solution": "<p>(P)</p>\n<p>$$ \\begin{aligned} &amp; \\sin ^6 x+\\cos ^2 x=1, x \\in[-\\pi, \\pi] \\\\ &amp; \\because \\sin ^6 x \\leq \\sin ^2 x \\text { and } \\cos ^4 x \\leq \\cos ^2 x \\text { for } x \\in[-\\pi, \\pi] \\\\ &amp; \\therefore \\sin ^6 x+\\cos ^4 x \\leq \\sin ^2 x+\\cos ^2 x-1 \\end{aligned} $$</p>\n<p>Equality holds only when $\\sin ^6 x=\\sin ^2 x$ and $\\cos ^4 x=\\cos ^2 x$</p>\n<p>This occurs when $\\sin x \\in\\{-1,0,1\\}$ and $\\cos x \\in\\{-1,0,1\\}$</p>\n<p>$$ \\therefore x \\in\\left\\{-\\pi, \\frac{-\\pi}{2}, 0, \\frac{\\pi}{2}, \\pi\\right\\} \\Rightarrow 5 \\text { solutions } \\Rightarrow 5 \\text { elements } $$</p>\n<p>(Q)</p>\n<p>$$ \\begin{aligned} &amp; \\sin ^2 x+\\cos ^6 x=1 \\\\ &amp; 1-\\cos ^2 x+\\cos ^6 x=1 \\\\ &amp; \\cos ^6 x-\\cos ^2 x=0 \\\\ &amp; \\cos ^2 x\\left(\\cos ^4 x-1\\right)=0 \\\\ &amp; \\cos ^2 x\\left(\\cos ^2 x-1\\right)\\left(\\cos ^2 x+1\\right)=0 \\\\ &amp; \\because \\cos ^2 x+1 \\neq 0 \\\\ &amp; \\therefore \\cos ^2 x=0 \\Rightarrow x=\\frac{\\pi}{2}, \\frac{-\\pi}{2} \\\\ &amp; \\cos ^2 x=1 \\Rightarrow x=0 \\\\ &amp; \\therefore 3 \\text { elements. } \\end{aligned} $$</p>\n<p>(R)</p>\n<p>$$ \\begin{aligned} &amp; \\cos ^2 \\frac{x}{2}-\\sin ^2 x=\\frac{1}{2} \\\\ &amp; \\frac{1+\\cos x}{2}-\\left(1-\\cos ^2 x\\right)=\\frac{1}{2} \\\\ &amp; \\Rightarrow 1+\\cos x-2+2 \\cos ^2 x=1 \\\\ &amp; 2 \\cos ^2 x+\\cos -2=0 \\\\ &amp; \\cos x=\\frac{-1 \\pm \\sqrt{1+16}}{4} \\\\ &amp; \\cos x=\\frac{-1+\\sqrt{17}}{4}, \\frac{-1-\\sqrt{17}}{4} \\\\ &amp; \\text { only possibility } \\cos x=\\frac{-1+\\sqrt{17}}{4}, \\frac{-1-\\sqrt{17}}{4} \\end{aligned} $$</p>\n<p><img alt=\"JEE Advanced 2026 Paper 1 Online Mathematics - Trigonometric Functions &amp; Equations Question 2 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpcj4uq4/b5a8c52e-3a8c-4cbe-920d-0d255ca830e8/0c4a0cc0-5373-11f1-aed4-773fcb3828ea/file-6y3zli1mpcj4uq5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpcj4uq4/b5a8c52e-3a8c-4cbe-920d-0d255ca830e8/0c4a0cc0-5373-11f1-aed4-773fcb3828ea/file-6y3zli1mpcj4uq5.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Number of elements in $[-\\pi, \\pi]$ is 2</p>\n<p>(S)</p>\n<p>$$ \\begin{aligned} &amp; 6 \\sin ^2 \\frac{x}{2}-\\cos 3 x=3, x \\in[-2 \\pi, 2 \\pi] \\\\ &amp; 3(1-\\cos x)-\\cos 3 x=3 \\\\ &amp; \\Rightarrow-3 \\cos x-\\cos 3 x=0 \\\\ &amp; \\Rightarrow \\cos 3 x+3 \\cos x=0 \\\\ &amp; \\Rightarrow 4 \\cos ^3 x=0 \\Rightarrow \\cos x=0 \\end{aligned} $$</p>\n<p>For $x \\in[-2 \\pi, 2 \\pi]$</p>\n<p>$$ \\cos x=0 \\Rightarrow x \\in\\left\\{\\frac{-3 \\pi}{2}, \\frac{-\\pi}{2}, \\frac{\\pi}{2}, \\frac{3 \\pi}{2}\\right\\} $$</p>\n<p>$\\Rightarrow 4$ elements.</p>\n<p>$$ (P) \\rightarrow(5),(Q) \\rightarrow(3),(R) \\rightarrow(2),(S) \\rightarrow(4) $$</p>\n<p>Option (B) is correct.</p>",
       "section": "Sec 4",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        1
+      ]
     },
     {
       "id": "mp9uvk3d",

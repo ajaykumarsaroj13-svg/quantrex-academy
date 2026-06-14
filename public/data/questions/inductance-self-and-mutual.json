@@ -19,7 +19,8 @@
     "difficulty": "hard",
     "solution": "<p>The outer long solenoid has length $d$, area $S$, and number of turns per unit length $N$</p>\n<p>It connected to a capacitor C, forming an LC circuit.</p>\n<p>The inner short solenoid has length $\\frac{\\mathrm{d}}{2}$, area $\\frac{\\mathrm{S}}{2}$, and number of turns per unit length 2 N is placed completely inside it and short-circuited.</p>\n<p>For a long solenoid where end-effects are negligible ( $\\mathrm{d}^2 \\gg \\mathrm{~S}$ )</p>\n<p>The magnetic field inside it when carrying a current $\\mathrm{I}_1$ is :</p>\n<p>$$ \\mathrm{B}_1=\\mu_0 \\mathrm{NI}_1 $$</p>\n<p>The total number of turns in the outer coil is $\\mathrm{N}_1=\\mathrm{N} \\cdot \\mathrm{d}$.</p>\n<p>The total magnetic flux $\\Phi_1$ linking the outer coil itself is :</p>\n<p>$$ \\Phi_1=N_1\\left(B_1 S\\right)=(N d)\\left(\\mu_0 N I_1 S\\right)=\\mu_0 N^2 S d I_1 $$</p>\n<p>The self-inductance is $\\mathrm{L}=\\Phi_1 \\mathrm{I}_1$ :</p>\n<p>$$ \\mathrm{L}=\\mu_0 \\mathrm{~N}^2 \\mathrm{Sd} $$</p>\n<p>The length of the inner coil is $\\mathrm{d}_2=\\frac{\\mathrm{d}}{2}$ and cross-sectional area is $\\mathrm{S}_2=\\frac{\\mathrm{S}}{2}$.</p>\n<p>Its number of turns per unit length is $\\mathrm{N}_2=2 \\mathrm{~N}$.</p>\n<p>The total number of turns in the inner coil is:</p>\n<p>$$ \\mathrm{N}_{\\text {total }, 2}=\\mathrm{N}_2 \\cdot \\mathrm{~d}_2=(2 \\mathrm{~N})\\left(\\frac{\\mathrm{d}}{2}\\right)=\\mathrm{Nd} $$</p>\n<p>Using the self-inductance of a solenoid,</p>\n<p>$$ \\mathrm{L}_2=\\mu_0 \\mathrm{~N}_2^2 \\mathrm{~S}_2 \\mathrm{~d}_2 $$</p>\n<p>$$\\Rightarrow $$ $L_2=\\mu_0(2 N)^2\\left(\\frac{S}{2}\\right)\\left(\\frac{d}{2}\\right)=\\mu_0\\left(4 N^2\\right) \\frac{S d}{4}=\\mu_0 N^2 S d$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{L}_2=\\mathrm{L} $$</p>\n<p>When a current $\\mathrm{I}_1$ flows through the outer coil, it establishes a uniform magnetic field $\\mathrm{B}_1=\\mu_0 \\mathrm{~N} \\mathrm{I}_1$ inside its core. Since the inner coil is completely inside the outer coil, it experiences this exact magnetic field.</p>\n<p>The total flux $\\Phi_{21}$ linking the inner coil due to the outer coil's current is :</p>\n<p>$$ \\Phi_{21}=N_{\\text {total }, 2}\\left(B_1 S_2\\right) $$</p>\n<p>$$ \\Phi_{21}=(\\mathrm{Nd})\\left(\\mu_0 \\mathrm{NI}_1\\right)\\left(\\frac{\\mathrm{S}}{2}\\right)=\\frac{1}{2} \\mu_0 \\mathrm{~N}^2 \\mathrm{~S} \\mathrm{~d} \\mathrm{I}_1 $$</p>\n<p>The mutual inductance M is given by $\\mathrm{M}=\\Phi_{21} \\mathrm{I}_1$ :</p>\n<p>$$ M=\\frac{1}{2} \\mu_0 N^2 S d=\\frac{L}{2} $$</p>\n<p>Let q be the charge on the capacitor C at any instant, and $\\mathrm{I}_1=-\\frac{\\mathrm{dq}}{\\mathrm{dt}}$ be the current flowing through the outer loop containing the capacitor.</p>\n<p>Let $\\mathrm{I}_2$ be the induced current flowing through the short-circuited inner loop.</p>\n<img alt=\"JEE Advanced 2026 Paper 1 Online Physics - Electromagnetic Induction Question 2 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpfbdbqf/e17652e0-efcf-433e-927e-5f24ec812e47/08d0eb70-54fb-11f1-aa27-ef3fce574b6e/file-6y3zli1mpfbdbqg.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpfbdbqf/e17652e0-efcf-433e-927e-5f24ec812e47/08d0eb70-54fb-11f1-aa27-ef3fce574b6e/file-6y3zli1mpfbdbqg.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\">\n<p>Applying Kirchhoff’s Voltage Law (KVL) to inner short-circuited loop 2 :</p>\n<p>The total induced EMF in the inner loop must be zero because it has no ohmic resistance or external voltage sources (R=0) :</p>\n<p>$$-L_2 \\frac{dI_2}{dt} - M \\frac{dI_1}{dt} = 0$$</p>\n<p>Using $L_2 = L$ and $M = \\frac{L}{2}$:</p>\n<p>$$-L \\frac{dI_2}{dt} - \\frac{L}{2} \\frac{dI_1}{dt} = 0 \\rightarrow \\frac{dI_2}{dt} = -\\frac{1}{2} \\frac{dI_1}{dt}$$</p>\n<p>Assuming the system starts from rest where initial currents are zero:</p>\n<p>$$I_2 = -\\frac{1}{2} I_1$$</p>\n<p>Applying KVL to the loop 1</p>\n<p>$$\\frac{q}{C} - L \\frac{dI_1}{dt} - M \\frac{dI_2}{dt} = 0$$</p>\n<p>Substituting $M = \\frac{L}{2}$ and $\\frac{dI_2}{dt} = -\\frac{1}{2} \\frac{dI_1}{dt}$</p>\n<p>$$\\frac{q}{C} - L \\frac{dI_1}{dt} - \\left(\\frac{L}{2}\\right)\\left(-\\frac{1}{2} \\frac{dI_1}{dt}\\right) = 0$$</p>\n<p>$$\\frac{q}{C} - L \\frac{dI_1}{dt} + \\frac{L}{4} \\frac{dI_1}{dt} = 0$$</p>\n<p>$$\\frac{q}{C} - \\frac{3}{4} L \\frac{dI_1}{dt} = 0$$</p>\n<p>Since $I_1 = -\\frac{dq}{dt} \\rightarrow \\frac{dI_1}{dt} = -\\frac{d^2 q}{dt^2}$:</p>\n<p>$$\\frac{q}{C} - \\frac{3}{4} L \\left(-\\frac{d^2 q}{dt^2}\\right) = 0$$</p>\n<p>$$\\left(\\frac{3}{4} L\\right) \\frac{d^2 q}{dt^2} + \\left(\\frac{1}{C}\\right) q = 0$$</p>\n<p>$$\\frac{d^2 q}{dt^2} + \\left(\\frac{4}{3LC}\\right) q = 0$$</p>\n<p>On comparing with standard differential equation for simple harmonic motion,</p>\n<p>$$\\frac{d^2 q}{dt^2} + \\omega_0^2 q = 0,$$</p>\n<p>where $\\omega_0$ is the angular resonant frequency of the system:</p>\n<p>$$\\omega_0^2 = \\frac{4}{3LC}$$</p>\n<p>$$\\omega_0 = \\sqrt{\\frac{4}{3LC}} = \\frac{2}{\\sqrt{3LC}}$$</p>\n<p>Therefore, the correct option is (C).</p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "type": "MCQ"
   },
   {
     "id": "ml8t8lpx",
@@ -33,14 +34,15 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQ",
+    "questionType": "MCQM",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>The ammeter is placed in the main line to measure the total current drawn from the battery.</p>\n<p>An inductor resists any sudden change in the current flowing through it due to self-induction (Lenz's Law). The induced EMF opposes the applied voltage.</p>\n<p>Before the switch K is turned ON , the current in the circuit is zero. At the exact moment the switch is turned ON $(t=0)$, the inductors will strongly oppose the sudden increase in current.</p>\n<p>Therefore, at $\\mathrm{t}=0$, the current through any branch containing an inductor is exactly zero. Effectively, the inductors act as open circuits.</p>\n<p>Because the inductors act as open circuits the moment the switch is closed, no current flows through those two branches.</p>\n<p><img alt=\"JEE Main 2026 (Online) 22nd January Evening Shift Physics - Electromagnetic Induction Question 15 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlxj3g5l/db3dee2e-2c66-448b-ad81-e9da1146aff0/7d58d790-0fce-11f1-a394-37c86c2244c4/file-6y3zli1mlxj3g5m.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlxj3g5l/db3dee2e-2c66-448b-ad81-e9da1146aff0/7d58d790-0fce-11f1-a394-37c86c2244c4/file-6y3zli1mlxj3g5m.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>So, the initial current (I) drawn from the battery using Ohm's Law is:</p>\n<p>$$ I=\\frac{V}{R} \\Rightarrow I=\\frac{9}{9} A=1 A $$</p>\n<p>Therefore, the total reading of the ammeter at the exact moment the switch is turned ON is 1 A . Hence, option (C) is correct.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQM"
   },
   {
     "id": "ml89h5du",
@@ -56,7 +58,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>When an inductor is connected to a DC voltage source (V) with a resistance (R), it initially opposes the flow of current. Over time, the current increases until it reaches a steady, maximum state.</p>\n<p>Once the current is steady, the inductor acts like an ideal wire (zero resistance). Therefore, the maximum current ( $\\mathrm{i}_{\\text {max }}$ ) is determined by Ohm's Law :</p>\n<p>$$ \\mathrm{i}_{\\max }=\\frac{\\mathrm{V}}{\\mathrm{R}} $$</p>\n<p>For given circuit :</p>\n<ul>\n\n<li><p>Voltage $\\mathrm{V}=10 \\mathrm{~V}$</p></li>\n\n<li><p>Resistance $\\mathrm{R}=10 \\Omega$</p></li>\n\n</ul>\n<p>$$ \\mathrm{i}_{\\max }=\\frac{10}{10}=1 \\mathrm{~A} $$</p>\n<p>The current in the circuit is $\\frac{1}{\\mathrm{e}}$ time the maximum value, $\\mathrm{i}=\\mathrm{i}_{\\text {max }} \\times\\left(\\frac{1}{\\mathrm{e}}\\right)$</p>\n<p>$$ \\mathrm{i}=1 \\times\\left(\\frac{1}{\\mathrm{e}}\\right)=\\frac{1}{\\mathrm{e}} \\mathrm{~A} $$</p>\n<p>For a long solenoid, the energy stored in an inductor is: $\\mathrm{U}=\\frac{1}{2} \\mathrm{Li}^2$</p>\n<p>The inductance of a long solenoid is: $\\mathrm{L}=\\frac{\\mu_0 \\mathrm{~N}^2 \\mathrm{~A}}{\\mathrm{l}}$, where N is total turns, A is cross-sectional area, and l is length.</p>\n<p>The volume of the cylindrical core of the solenoid is: $\\mathrm{V}_{\\mathrm{vol}}=\\mathrm{A} \\times 1$</p>\n<p>Then the energy density formula is $\\mathrm{u}=\\frac{\\operatorname{energy}(\\mathrm{U})}{\\operatorname{volume}\\left(\\mathrm{V}_{\\text {vol }}\\right)}$</p>\n<p>$$ \\mathrm{u}=\\frac{\\frac{1}{2} \\mathrm{Li}^2}{\\mathrm{~A} \\cdot \\mathrm{l}} $$</p>\n<p>$$\\Rightarrow $$ $u=\\frac{\\frac{1}{2}\\left(\\frac{\\mu_0 N^2 A}{l}\\right) i^2}{A \\cdot l}$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{u}=\\frac{\\mu_0 \\mathrm{~N}^2 \\mathrm{i}^2}{2 \\mathrm{l}^2}$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{u}=\\frac{1}{2} \\mu_0 \\mathrm{n}^2 \\mathrm{i}^2 $$</p>\n<p>Where $\\mathrm{n}=\\frac{\\mathrm{N}}{\\mathrm{l}}$ is the number of turns per unit length.</p>\n<p>Putting the given values into the derived energy density formula :</p>\n<p>$$ \\begin{aligned} \\mu_0=4 \\pi \\times 10^{-7} \\mathrm{Tm} / \\mathrm{A}, \\mathrm{n}=10^4 \\mathrm{~m}^{-1}, \\mathrm{i}=\\frac{1}{\\mathrm{e}} \\mathrm{~A} ;\\end{aligned} $$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{u}=\\frac{1}{2} \\times\\left(4 \\pi \\times 10^{-7}\\right) \\times\\left(10^4\\right)^2 \\times\\left(\\frac{1}{\\mathrm{e}}\\right)^2$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{u}=20 \\pi \\times 1 / \\mathrm{e}^2 \\mathrm{~J} / \\mathrm{m}^3$</p>\n<p>$\\Rightarrow 20 \\pi \\times \\frac{1}{\\mathrm{e}^2}=\\alpha \\pi \\times \\frac{1}{\\mathrm{e}^2}$</p>\n<p>$$ \\Rightarrow \\alpha=20 . $$</p>\n<p>Therefore, the value of $\\alpha$ is 20.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "ml98p6k3",
@@ -77,7 +80,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>The force on a current-carrying wire is given by $\\mathrm{F}=\\mathrm{BI} \\mathrm{I} \\sin \\theta$</p>\n<p>$$ \\mathrm{B}=\\frac{\\mathrm{F}}{\\mathrm{I} \\cdot \\mathrm{l} \\sin \\theta} $$</p>\n<p>Dimensions of force $[\\mathrm{F}]=\\left[\\mathrm{MLT}^{-2}\\right]$</p>\n<p>Dimensions of current $[\\mathrm{I}]=[\\mathrm{A}]$</p>\n<p>Dimension of length $[\\mathrm{l}]=[\\mathrm{L}]$</p>\n<p>Dimension of trigonometric function is $\\left[\\mathrm{M}^0 \\mathrm{~L}^0 \\mathrm{~T}^0\\right]$, so $[\\sin \\theta]=\\left[\\mathrm{M}^0 \\mathrm{~L}^0 \\mathrm{~T}^0\\right]$</p>\n<p>So, the dimension of magnetic field is,</p>\n<p>$$ [\\mathrm{B}]=\\left[\\mathrm{MLT}^{-2}\\right][\\mathrm{A}][\\mathrm{L}]=\\left[\\mathrm{M} \\mathrm{~L}^{1-1} \\mathrm{~T}^{-2} \\mathrm{~A}^{-1}\\right] $$</p>\n<p>$$\\Rightarrow $$ $$ [\\mathrm{B}]=\\left[\\mathrm{M} \\mathrm{~L}^0 \\mathrm{~T}^{-2} \\mathrm{~A}^{-1}\\right] \\rightarrow(\\mathrm{III}) $$</p>\n<p>Magnetic flux is the product of magnetic field and area: $\\Phi=\\mathrm{B} \\cdot \\mathrm{A}$</p>\n<p>Dimensions of magnetic induction $[\\mathrm{B}]=\\left[\\mathrm{M} \\mathrm{T}^{-2} \\mathrm{~A}^{-1}\\right]$</p>\n<p>Dimensions of area $[\\mathrm{A}]=\\left[\\mathrm{L}^2\\right]$</p>\n<p>So, the dimension of magnetic flux is,</p>\n<p>$$ [\\Phi]=\\left[\\mathrm{M} \\mathrm{~T}^{-2} \\mathrm{~A}^{-1}\\right] \\times\\left[\\mathrm{L}^2\\right] $$</p>\n<p>$$\\Rightarrow $$ $[\\Phi]=\\left[\\mathrm{M} \\mathrm{L}^2 \\mathrm{~T}^{-2} \\mathrm{~A}^{-1}\\right] \\rightarrow(\\mathrm{IV})$</p>\n<p>From Ampere's Law or the force between two parallel wires : \n\n <br/><br/>$\\mathrm{F}=\\frac{\\mu \\mathrm{I}_1 \\mathrm{I}_2 \\mathrm{l}}{2 \\pi \\mathrm{r}}$.</p>\n<p>$$\\Rightarrow $$$$ \\mu=\\frac{\\mathrm{F} \\cdot 2 \\pi \\mathrm{r}}{\\mathrm{I}_1 \\mathrm{I}_2 \\cdot \\mathrm{l}} $$</p>\n<p>Dimensions of Force $[\\mathrm{F}]=\\left[\\mathrm{MLT}^{-2}\\right]$</p>\n<p>Dimensions of distance $[\\mathrm{r}]=[\\mathrm{L}]$</p>\n<p>Dimensions of 2 and $\\pi$ is $\\left[\\mathrm{M}^0 \\mathrm{~L}^0 \\mathrm{~T}^0\\right]$</p>\n<p>Dimensions of current $[\\mathrm{I}]=[\\mathrm{A}]$</p>\n<p>Dimensions of length $[\\mathrm{l}]=[\\mathrm{L}]$</p>\n<p>So, the dimensions of magnetic permeability is,</p>\n<p>$$ [\\mu]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right][\\mathrm{L}]}{[\\mathrm{A}][\\mathrm{A}][\\mathrm{L}]} $$</p>\n<p>$$\\Rightarrow $$ $[\\mu]=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{A}^2\\right][\\mathrm{L}]}=\\left[\\mathrm{ML}^{2-1} \\mathrm{~T}^{-2} \\mathrm{~A}^{-2}\\right]$</p>\n<p>$$\\Rightarrow $$ $$ [\\mu]=\\left[\\mathrm{M} \\mathrm{~L} \\mathrm{~T}^{-2} \\mathrm{~A}^{-2}\\right] \\rightarrow(\\mathrm{I}) $$</p>\n<p>The energy stored in an inductor is $\\mathrm{U}=\\frac{1}{2} \\mathrm{LI}^2$.</p>\n<p>$$ \\mathrm{L}=\\frac{2 \\mathrm{U}}{\\mathrm{I}^2} $$</p>\n<p>Dimensions of energy $[\\mathrm{U}]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$</p>\n<p>Dimensions of current $[\\mathrm{I}]=[\\mathrm{A}]$</p>\n<p>So, the dimensions of self-inductance is,</p>\n<p>$[\\mathrm{L}]=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{A}^2\\right]}$</p>\n<p>$$\\Rightarrow $$ $$ [\\mathrm{L}]=\\left[\\mathrm{M} \\mathrm{~L}^2 \\mathrm{~T}^{-2} \\mathrm{~A}^{-2}\\right] \\rightarrow(\\mathrm{II}) $$</p>\n<p>Hence, the correct match is A-III, B-IV, C-I, D-II. Therefore, the correct option is (D).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mnrrb7o9",
@@ -98,7 +102,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>Mutual inductance M is defined by the flux $\\Phi$ linked with one loop due to a current I in the other: $\\Phi=\\mathrm{MI}$.</p>\n<p>It is easier to calculate the magnetic field produced by the larger square loop at the centre where the small circular loop is located.</p>\n<p>A square loop consists of four wires of length $L$.</p>\n<p>The distance from the centre to each wire is $r=\\frac{L}{2}$.</p>\n<p><img alt=\"JEE Main 2026 (Online) 2nd April Evening Shift Physics - Electromagnetic Induction Question 7 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mol6hbsd/abc3013b-4673-439f-b43f-33d063606250/66f759d0-4468-11f1-8548-dba52a2c0879/file-6y3zli1mol6hbse.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mol6hbsd/abc3013b-4673-439f-b43f-33d063606250/66f759d0-4468-11f1-8548-dba52a2c0879/file-6y3zli1mol6hbse.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The magnetic field at the centre due to one wire of length L is :</p>\n<p>$$ \\mathrm{B}_{\\text {wire }}=\\frac{\\mu_0 \\mathrm{I}}{4 \\pi \\mathrm{r}}\\left(\\sin \\theta_1+\\sin \\theta_2\\right) $$</p>\n\n<p>For a square centre, $\\theta_1 = \\theta_2 = 45^\\circ$ and $r = \\frac{L}{2}$.</p>\n<p>$$B_{\\text{wire}} = \\frac{\\mu_0 I}{4\\pi (L/2)}\\left(\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}}\\right) = \\frac{\\mu_0 I}{2\\pi \\left(\\frac{\\sqrt{2}}{2}\\right)} = \\frac{\\mu_0 I}{\\sqrt{2}\\pi L}$$</p>\n<p>Total field at the centre due to four such wires:</p>\n<p>$$B_{\\text{total}} = 4 \\times \\frac{\\mu_0 I}{\\sqrt{2}\\pi L} = \\frac{2\\sqrt{2}\\mu_0 I}{\\pi L}$$</p>\n<p>Since $L \\gg R$, the magnetic field $B_{\\text{total}}$ can be considered uniform over the area of the circular loop ($A = \\pi R^2$).</p>\n<p>$$\\Phi = B_{\\text{total}} \\times A$$</p>\n<p>$$\\Phi = \\left(\\frac{2\\sqrt{2}\\mu_0 I}{\\pi L}\\right) \\times (\\pi R^2) = \\frac{2\\sqrt{2}\\mu_0 R^2 I}{L}$$</p>\n<p>Using $\\Phi = \\text{MI}$:</p>\n<p>$$\\text{MI} = \\frac{2\\sqrt{2}\\mu_0 R^2 I}{L}$$</p>\n<p>$$M = \\frac{2\\sqrt{2}\\mu_0 R^2}{L}$$</p>\n<p>Therefore, the mutual inductance between circular loop and square loop is $\\frac{2\\sqrt{2}\\mu_0 R^2}{L}$. Thus, the correct option is (D)</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mnswhujp",
@@ -107,14 +112,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>The magnetic energy ( $U$ ) stored in an inductor of inductance $L$ carrying a current $I$ is given by the formula:</p>\n<p>$$ \\mathrm{U}=\\frac{1}{2} \\mathrm{LI}^2 $$</p>\n<p>In the given circuit $\\mathrm{L}_1$ in series with a parallel combination of $\\mathrm{L}_2$ and $\\mathrm{L}_3$.</p>\n<p>Let the total current entering the circuit be I.</p>\n<p>Then the current through $\\mathrm{L}_1$ is $\\mathrm{I}_1=\\mathrm{I}$.</p>\n<p>Since $\\mathrm{L}_2$ and $\\mathrm{L}_3$ are in parallel and have the same inductance $\\left(\\mathrm{L}_2=\\mathrm{L}_3=\\mathrm{L}\\right)$, the current I will distribute equally between them.</p>\n<p>So, the current through $\\mathrm{L}_2$ is $\\mathrm{I}_2=\\frac{\\mathrm{I}}{2}$ and current through $\\mathrm{L}_3$ is $\\mathrm{I}_3=\\frac{\\mathrm{I}}{2}$.</p>\n<p>Using the energy formula for $L_2$ :</p>\n<p>$$ \\mathrm{U}_{\\mathrm{l}}=\\frac{1}{2} \\mathrm{~L}\\left(\\mathrm{I}_2\\right)^2=\\frac{1}{2} \\mathrm{~L}\\left(\\frac{\\mathrm{I}}{2}\\right)^2=\\frac{1}{2} \\mathrm{~L}\\left(\\frac{\\mathrm{I}^2}{4}\\right)=\\frac{\\mathrm{LI}^2}{8} $$</p>\n<p>The total energy is the sum of the energies stored in $\\mathrm{L}_1, \\mathrm{~L}_2$, and $\\mathrm{L}_3$ :</p>\n<p>$$ \\mathrm{U}_{\\mathrm{t}}=\\mathrm{U}_{\\mathrm{L} 1}+\\mathrm{U}_{\\mathrm{L} 2}+\\mathrm{U}_{\\mathrm{L} 3} $$</p>\n<p>$$\\Rightarrow $$ $U_t=\\frac{1}{2} L I^2+\\frac{1}{2} L\\left(\\frac{I}{2}\\right)^2+\\frac{1}{2} L\\left(\\frac{I}{2}\\right)^2$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{U}_{\\mathrm{t}}=\\frac{1}{2} \\mathrm{LI}^2+\\frac{1}{8} \\mathrm{LI}^2+\\frac{1}{8} \\mathrm{LI}^2$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{U}_{\\mathrm{t}}=\\frac{4 \\mathrm{LI}^2+\\mathrm{LI}^2+\\mathrm{LI}^2}{8}=\\frac{6 \\mathrm{LI}^2}{8}=\\frac{3}{4} \\mathrm{LI}^2 $$</p>\n<p>So, the ratio of magnetic energy stored is $\\frac{\\mathrm{U}_{\\mathrm{t}}}{\\mathrm{U}_{\\mathrm{l}}}$ is,</p>\n<p>$$ \\frac{\\mathrm{U}_{\\mathrm{t}}}{\\mathrm{U}_{\\mathrm{l}}}=\\frac{\\frac{3}{4} \\mathrm{LI}^2}{\\frac{1}{8} \\mathrm{LI}^2} $$</p>\n<p>$$\\Rightarrow $$ $$ \\frac{\\mathrm{U}_{\\mathrm{t}}}{\\mathrm{U}_{\\mathrm{l}}}=\\frac{3}{4} \\times 8=3 \\times 2=6 $$</p>\n<p>Therefore, the correct answer is 6 .</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "mnswht5m",
@@ -135,7 +141,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>When a battery is connected to an inductor $(\\mathrm{L})$ and a resistor $(\\mathrm{R})$ in series, the total voltage $(\\mathrm{E})$ provided by the battery is shared between the resistance and the inductance according to Kirchhoff's Voltage Law:</p>\n<p>$$ E=V_R+V_L $$</p>\n<p>Where, E is the E.M.F. of the battery. $\\mathrm{V}_{\\mathrm{R}}$ is the voltage across the resistance, calculated as $\\mathrm{V}_{\\mathrm{R}}=\\mathrm{iR} . \\mathrm{V}_{\\mathrm{L}}$ is the instantaneous voltage across the inductor.</p>\n<p>$$ V_L=E-i R $$</p>\n<p>The emf of the battery is $\\mathrm{E}=1.0 \\mathrm{~V}$ and connected resistance is $\\mathrm{R}=100 \\Omega$.</p>\n<p>Case 1 when the current passing through inductor is $\\mathrm{i}_1=2 \\mathrm{~mA}=2 \\times 10^{-3} \\mathrm{~A}$.</p>\n<p>$$ V_{L 1}=1.0-\\left(2 \\times 10^{-3} \\times 100\\right)=1.0-0.2=0.8 \\mathrm{~V} $$</p>\n<p>Case 2 when the current passing through inductor is $\\mathrm{i}_2=4 \\mathrm{~mA}=4 \\times 10^{-3} \\mathrm{~A}$.</p>\n<p>$$ V_{L 2}=1.0-\\left(4 \\times 10^{-3} \\times 100\\right)=1.0-0.4=0.6 \\mathrm{~V} $$</p>\n<p>So, the ratio of the instantaneous voltages is:</p>\n<p>$$ \\frac{V_{L 1}}{V_{L 2}}=\\frac{0.8}{0.6}=\\frac{8}{6}=\\frac{4}{3} $$</p>\n<p>Therefore, the correct option is (A).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mnsik6mv",
@@ -156,7 +163,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>According to Faraday's Law, a change in the magnetic flux $(\\Phi)$ through a coil induces an electromotive force (e.m.f.) in that coil. The magnitude of the induced e.m.f. ( $\\varepsilon$ ) is given by:</p>\n<p>$$ \\varepsilon=N \\frac{d \\Phi}{d t} $$</p>\n<p>Where N is the total number of turns. For a solenoid, the magnetic flux $\\Phi$ through each turn is $\\Phi=\\mathrm{B} \\cdot \\mathrm{A}$, where $B$ is the magnetic field inside the solenoid and $A$ is the cross-sectional area.</p>\n<p>The magnetic field $B$ inside an ideal solenoid is:</p>\n<p>$$ \\mathrm{B}=\\mu_0 \\mathrm{nI} $$</p>\n<p>Where $\\mu_0$ is the permeability of free space $\\left(4 \\pi \\times 10^{-7} \\mathrm{~T} \\cdot \\frac{\\mathrm{~m}}{\\mathrm{~A}}\\right)$, n is the number of turns per unit length and I is the current.</p>\n<p>The total flux linkage is $\\Psi=N \\Phi=(n l)(B A)=(n l)\\left(\\mu_0 n I A\\right)=\\mu_0 n^2 l A I$.</p>\n<p>Since $\\varepsilon=\\frac{\\mathrm{d} \\Psi}{\\mathrm{dt}}$,</p>\n<p>$$ \\varepsilon=\\mathrm{L} \\frac{\\mathrm{dI}}{\\mathrm{dt}} $$</p>\n<p>Where the self-inductance L is $\\mathrm{L}=\\mu_0 \\mathrm{n}^2$ lA</p>\n<p>The length of the solenoid is $\\mathrm{l}=30 \\mathrm{~cm}=0.3 \\mathrm{~m}$</p>\n<p>Turns per $\\mathrm{cm}=10$, so turns per meter will be $\\mathrm{n}=10 \\times 100=1000$ turns $/ \\mathrm{m}$.</p>\n<p>The area of cross-section is $\\mathrm{A}=5 \\mathrm{~cm}^2=5 \\times 10^{-4} \\mathrm{~m}^2$.</p>\n<p>So,</p>\n<p>$L=\\left(4 \\times 3.14 \\times 10^{-7}\\right) \\times(1000)^2 \\times 0.3 \\times\\left(5 \\times 10^{-4}\\right)$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{L}=12.56 \\times 10^{-7} \\times 10^6 \\times 0.3 \\times 5 \\times 10^{-4}$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{L}=12.56 \\times 1.5 \\times 10^{-5}=18.84 \\times 10^{-5} \\mathrm{H} $$</p>\n<p>The change in current is $\\Delta \\mathrm{I}=4 \\mathrm{~A}-2 \\mathrm{~A}=2 \\mathrm{~A}$.</p>\n<p>The time interval ( $\\Delta \\mathrm{t}$ ) is 3.14 s.</p>\n<p>$$ \\varepsilon=\\mathrm{L} \\frac{\\Delta \\mathrm{I}}{\\Delta \\mathrm{t}} $$</p>\n<p>$$\\Rightarrow $$ $\\varepsilon=\\left(18.84 \\times 10^{-5}\\right) \\times \\frac{2}{3.14}$</p>\n<p>$$\\Rightarrow $$ $\\varepsilon=6 \\times 2 \\times 10^{-5}$</p>\n<p>$$\\Rightarrow $$ $$ \\varepsilon=12 \\times 10^{-5} \\mathrm{~V}=\\alpha \\times 10^{-5} \\mathrm{~V} \\Rightarrow \\alpha=12 $$</p>\n<p>Therefore, the value of $\\alpha$ is 12 . </p>\n<p>Hence, the correct option is (B).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6srn3xq",
@@ -177,7 +185,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>Let's analyze each statement:</p>\n\n<p><p>$$\\textbf{A. The self-inductance of the coil depends on its geometry.}$$  </p>\n<p>This is true because the self-inductance of a coil is given by formulas that include its geometrical parameters (number of turns, cross-sectional area, length, etc.). For example, for a solenoid, </p>\n<p>$$ L = \\mu_0 \\mu_r \\frac{N^2 A}{l}, $$</p>\n<p>where $$N$$ is the number of turns, $$A$$ is the cross-sectional area, and $$l$$ is the length.</p></p>\n<p><p>$$\\textbf{B. Self-inductance does not depend on the permeability of the medium.}$$  </p>\n<p>This is false. The permeability of the medium (represented by $$\\mu = \\mu_0 \\mu_r$$) directly influences the inductance, as seen in the formula above. So, any change in the medium’s permeability will affect the inductance.</p></p>\n<p><p>$$\\textbf{C. Self-induced e.m.f. opposes any change in the current in a circuit.}$$  </p>\n<p>This is true, and it is a direct consequence of Lenz's law. The induced electromotive force (e.m.f.) always acts in a direction such that it opposes the change in current that produced it.</p></p>\n<p><p>$$\\textbf{D. Self-inductance is the electromagnetic analogue of mass in mechanics.}$$  </p>\n<p>This is true. Just as mass resists changes in velocity (inertia), inductance resists changes in current, which is why it is often compared to the inertial mass in mechanical systems.</p></p>\n<p><p>$$\\textbf{E. Work needs to be done against self-induced e.m.f. in establishing the current.}$$  </p>\n<p>This is true because, when you try to change the current, you must do work to overcome the opposing self-induced e.m.f., storing energy in the magnetic field of the inductor.</p></p>\n\n<p>Based on the above reasoning, the true statements are A, C, D, and E.</p>\n<p>Thus, the correct answer is:</p>\n<p>Option C  </p>\n<p>A, C, D, E only</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6qkyxgd",
@@ -198,7 +207,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\phi_1=\\mathrm{L}_1 \\mathrm{I}_1+\\mathrm{M}_{12} \\mathrm{I}_2 \\\\\n& \\varepsilon_1=-\\frac{\\mathrm{d} \\phi_1}{\\mathrm{dt}}=-\\mathrm{L}_1 \\frac{\\mathrm{dI}_1}{\\mathrm{dt}}-\\mathrm{M}_{12} \\frac{\\mathrm{dI}}{\\mathrm{dt}}\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lsan61ku",
@@ -219,7 +229,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>To find the current in the secondary coil of the transformer, we first need to calculate the output power, taking into account the efficiency. The efficiency ($$ \\eta $$) of the transformer is given by the ratio of the output power ($$ P_{\\text{out}} $$) to the input power ($$ P_{\\text{in}} $$) times 100%.</p>\n<p>The given efficiency is $$ \\eta = 80\\% $$ or $$ \\eta = 0.8 $$ in decimal form. The input power is also given as $$ P_{\\text{in}} = 4 \\text{kW} $$ or $$ P_{\\text{in}} = 4000 \\text{W} $$.</p>\n<p>Let&#39;s calculate $$ P_{\\text{out}} $$ using the efficiency formula:</p>\n<p>$$\nP_{\\text{out}} = \\eta \\times P_{\\text{in}} = 0.8 \\times 4000 \\text{W} = 3200 \\text{W}\n$$</p>\n<p>Now that we have $$ P_{\\text{out}} $$, we can calculate the secondary current ($$ I_{\\text{secondary}} $$) using the formula:</p>\n<p>$$\nP_{\\text{out}} = V_{\\text{secondary}} \\times I_{\\text{secondary}}\n$$</p>\n<p>We are given $$ V_{\\text{secondary}} = 240 \\text{V} $$.</p>\n<p>Isolating $$ I_{\\text{secondary}} $$ gives us:</p>\n<p>$$\nI_{\\text{secondary}} = \\frac{P_{\\text{out}}}{V_{\\text{secondary}}}\n$$</p>\n<p>Substituting the known values:</p>\n<p>$$\nI_{\\text{secondary}} = \\frac{3200 \\text{W}}{240 \\text{V}}\n$$</p>\n<p>$$\nI_{\\text{secondary}} = \\frac{3200}{240}\n$$</p>\n<p>$$\nI_{\\text{secondary}} = 13.33 \\text{A}\n$$</p>\n<p>Therefore, the current in the secondary coil is $$ 13.33 \\text{A} $$, which corresponds to Option B.</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "jaoe38c1lsc48f9n",
@@ -235,7 +246,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\phi=\\mathrm{Mi}=\\mathrm{Mi}_0 \\sin \\omega \\mathrm{t} \\\\\n& \\mathrm{EMF}=-\\mathrm{M} \\frac{\\mathrm{di}}{\\mathrm{dt}}=-0.002\\left(\\mathrm{i}_0 \\omega \\cos \\omega \\mathrm{t}\\right) \\\\\n& \\mathrm{EMF}_{\\max }=\\mathrm{i}_0 \\omega(0.002)=(5)(50 \\pi)(0.002) \\\\\n& \\mathrm{EMF}_{\\max }=\\frac{\\pi}{2} \\mathrm{~V}\n\\end{aligned}$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "jaoe38c1lse6wdsx",
@@ -251,7 +263,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lslumatj/08a420dc-d051-43e9-90c2-11fdf1acba69/e03d5c80-cb3f-11ee-ad47-a16d1086e690/file-6y3zli1lslumatk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lslumatj/08a420dc-d051-43e9-90c2-11fdf1acba69/e03d5c80-cb3f-11ee-ad47-a16d1086e690/file-6y3zli1lslumatk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 31st January Morning Shift Physics - Electromagnetic Induction Question 38 English Explanation\"></p>\n<p>Flux linkage for inner loop.</p>\n<p>$$\\begin{aligned}\n&amp; \\phi=\\mathrm{B}_{\\text {center }} \\cdot \\ell^2 \\\\\n&amp; =4 \\times \\frac{\\mu_0 \\mathrm{i}}{4 \\pi \\frac{\\mathrm{L}}{2}}(\\sin 45+\\sin 45) \\ell^2 \\\\\n&amp; \\phi=2 \\sqrt{2} \\frac{\\mu_0 \\mathrm{i}}{\\pi \\mathrm{L}} \\ell^2 \\\\\n&amp; \\mathrm{M}=\\frac{\\phi}{\\mathrm{i}}=\\frac{2 \\sqrt{2} \\mu_0 \\ell^2}{\\pi \\mathrm{L}}=2 \\sqrt{2} \\frac{\\mu_0}{\\pi} \\\\\n&amp; =2 \\sqrt{2} \\frac{4 \\pi}{\\pi} \\times 10^{-7} \\\\\n&amp; =8 \\sqrt{2} \\times 10^{-7} \\mathrm{H} \\\\\n&amp; =\\sqrt{128} \\times 10^{-7} \\mathrm{H} \\\\\n&amp; \\mathrm{x}=128\n\\end{aligned}$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "lv9s25n4",
@@ -260,14 +273,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>The induced emf ($\\varepsilon$) in an inductor is given by Faraday's law of electromagnetic induction, which in its differential form for an inductor can be expressed as:</p>\n\n<p>$$\\varepsilon = L \\frac{dI}{dt}$$</p>\n\n<p>where:</p>\n\n<ul>\n\n<li>$\\varepsilon$ is the induced emf in the inductor,</li>\n\n<li>$L$ is the inductance of the inductor,</li>\n\n<li>$\\frac{dI}{dt}$ is the rate of change of current through the inductor.</li>\n\n</ul>\n\n<p>Given that the current $I = (3t + 8)$, where $t$ is in seconds, we can find the rate of change of current by differentiating $I$ with respect to $t$.</p>\n\n<p>$$\\frac{dI}{dt} = \\frac{d}{dt}(3t + 8) = 3$$</p>\n\n<p>The given magnitude of induced emf is $12 \\, \\text{mV} = 12 \\times 10^{-3} \\, \\text{V}$ (since $1\\,\\text{mV} = 10^{-3} \\, \\text{V}$).</p>\n\n<p>Now, plug these values into the formula to find $L$:</p>\n\n<p>$$12 \\times 10^{-3} = L \\cdot 3$$</p>\n\n<p>Solving for $L$ gives:</p>\n\n<p>$$L = \\frac{12 \\times 10^{-3}}{3} = 4 \\times 10^{-3} \\, \\text{H} = 4 \\, \\text{mH}$$</p>\n\n<p>Therefore, the self-inductance of the inductor is <strong>4 mH</strong>.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "lv7v4ron",
@@ -288,7 +302,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\frac{\\phi_{A / B}}{I_B}=M \\\\\n& \\Rightarrow \\quad M=\\frac{\\mu_0 I_B \\times \\pi a^2}{2 b \\times I_B} \\\\\n& =\\frac{\\mu_0 \\pi a^2}{2 b}\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lvb295dx",
@@ -309,7 +324,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>To find the self-inductance of the coil, we can use the formula for induced electromotive force (emf), which is given by Faraday's law of electromagnetic induction as it applies to self-induction:</p>\n\n<p>$$ \\text{emf} = - L \\frac{\\Delta I}{\\Delta t} $$</p>\n\n<p>Where:</p>\n\n<ul>\n\n<li>$ \\text{emf} $ = induced voltage in volts (V)</li>\n\n<li>$ L $ = self-inductance of the coil in henries (H)</li>\n\n<li>$ \\Delta I $ = change in current in amperes (A)</li>\n\n<li>$ \\Delta t $ = time interval in seconds (s) over which the current change occurs</li>\n\n</ul>\n\n<p>Here, the problem gives us the following data:</p>\n\n<ul>\n\n<li>$ \\text{emf} = 0.1 \\, \\text{V} $</li>\n\n<li>$ \\Delta I = 2 \\, \\text{A} - (-2 \\, \\text{A}) = 4 \\, \\text{A} $</li>\n\n<li>$ \\Delta t = 0.2 \\, \\text{s} $</li>\n\n</ul>\n\n<p>Substituting the given values into the formula, we get:</p>\n\n<p>$$ 0.1 = -L \\frac{4}{0.2} $$</p>\n\n<p>Solving for $ L $, the equation becomes:</p>\n\n<p>$$ 0.1 = -L \\cdot 20 $$</p>\n\n<p>Therefore:</p>\n\n<p>$$ L = - \\frac{0.1}{20} $$</p>\n\n<p>Calculating the value of $ L $:</p>\n\n<p>$$ L = -0.005 \\, \\text{H} $$</p>\n\n<p>Or, expressing $ L $ in millihenries (mH):</p>\n\n<p>$$ L = -5 \\, \\text{mH} $$</p>\n\n<p>However, considering the absolute value (since inductance is a magnitude and cannot be negative in this context):</p>\n\n<p>$$ L = 5 \\, \\text{mH} $$</p>\n\n<p>Thus, the self-inductance of the coil is <strong>5 mH</strong>, which corresponds to <strong>Option D</strong>.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lgnyv190",
@@ -330,7 +346,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "When the switch is closed, the circuit is a simple DC circuit and the current in the circuit is given by Ohm's law:<br/><br/> $I = \\frac{V}{R} = \\frac{12\\text{V}}{6\\Omega} = 2\\text{A}$.\n<br/><br/>\nWhen the switch is opened, the current in the circuit drops to zero instantaneously. <br/><br/>However, the magnetic field generated by the current in the coil does not disappear immediately, and it continues to produce a back EMF that opposes the change in current. <br/><br/>This back EMF induces a voltage across the coil that can be calculated using Faraday's law of induction: $\\mathcal{E} = -L\\frac{\\Delta I}{\\Delta t}$, where $\\mathcal{E}$ is the induced voltage, $L$ is the inductance of the coil, and $\\Delta I/\\Delta t$ is the rate of change of current in the coil.\n<br/><br/>\nIn this case, we know that the induced voltage is $20\\text{V}$ and the rate of change of current is<br/><br/> $\\Delta I/\\Delta t = -2\\text{A}/(1\\text{ms}) = -2\\times 10^3\\text{A/s}$.<br/><br/> Substituting these values into the equation above, we get: $20\\text{V} = -L\\times(-2\\times 10^3\\text{A/s})$.\n<br/><br/>\nSolving for $L$, we get: $L = \\frac{20\\text{V}}{2\\times 10^3\\text{A/s}} = 0.01\\text{H}$.\n<br/><br/>\nTherefore, the inductance of the coil is $0.01\\text{H}$, or 10 mH.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldwsbfqk",
@@ -346,7 +363,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>After long time, inductors are shorted.</p>\n<p>Effective circuit becomes</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1le4deh44/b1217ea3-f19b-4a41-8dbf-ff553ce2b6d6/31164730-ac78-11ed-b725-7db87d3646da/file-1le4deh45.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1le4deh44/b1217ea3-f19b-4a41-8dbf-ff553ce2b6d6/31164730-ac78-11ed-b725-7db87d3646da/file-1le4deh45.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 24th January Evening Shift Physics - Electromagnetic Induction Question 62 English Explanation\"></p>\n<p>Current through battery $=\\frac{V}{\\mathrm{R}_{\\mathrm{eq}}}=\\frac{12 \\mathrm{~V}}{4 \\Omega}=3 \\mathrm{~A}$\n<br><br>\nwhere $\\mathrm{R}_{\\mathrm{eq}}=3$ resistors in parallel.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldso1b5o",
@@ -367,7 +385,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lei3q9e1/b707d484-0cd7-4eb2-a354-be8e4d9ce9b0/56a16f90-b405-11ed-8518-6f6f1908382a/file-1lei3q9e2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lei3q9e1/b707d484-0cd7-4eb2-a354-be8e4d9ce9b0/56a16f90-b405-11ed-8518-6f6f1908382a/file-1lei3q9e2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 29th January Morning Shift Physics - Electromagnetic Induction Question 64 English Explanation\"><br>\n$$\n\\begin{aligned}\n&amp; B \\text { at centre }=\\frac{\\mu_{0} i}{4 \\pi\\left(\\frac{L}{2}\\right)}\\left(\\frac{2}{\\sqrt{2}}\\right) \\times 4 \\\\\\\\\n&amp;= \\frac{\\sqrt{2} \\mu_{0} i}{2 \\pi L} \\times 4 \\\\\\\\\n&amp;=\\left(\\frac{2 \\sqrt{2} \\mu_{0} i}{\\pi L}\\right)\n\\end{aligned}\n$$\n<br><br>\nMutual inductance $=\\frac{B \\cdot A}{i}$\n<br><br>\n$$\n=\\frac{2 \\sqrt{2} \\mu_{0} i}{\\pi L} \\times \\frac{\\pi R^{2}}{i}\n$$\n<br><br>\n$$\n=\\left(\\frac{2 \\sqrt{2} \\mu_{0} R^{2}}{L}\\right)\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldr34jcr",
@@ -383,7 +402,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>From the circuit :</p>\n<p>$${V_A} - iR - {{Ldi} \\over {dt}} - 12 = {V_B}$$</p>\n<p>$$ \\Rightarrow {V_A} - {V_B} = 2 \\times 12 + 6( - 1) + 12$$ volts</p>\n<p>$$ = 30$$ volts</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lh30yif9",
@@ -399,7 +419,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>The magnetic field $$B_2$$ due to the current $$I_2$$ in the larger coil with 200 turns is given by:</p>\n<p>$$B_2 = \\frac{N_2 \\mu_0 I_2}{2r_2} = \\frac{200 \\mu_0 I_2}{2 \\times 10}$$</p>\n<p>The magnetic flux $$\\phi_{1,2}$$ through the smaller coil due to this magnetic field is given by:</p>\n<p>$$\\phi_{1,2} = N_1 \\vec{B}_2 \\cdot \\vec{A}_1 = N_1 N_2 \\frac{\\mu_0 I_2}{2 r_2} \\cdot \\pi r_1^2$$</p>\n<p>Since $$\\phi_{1,2} = MI_2$$, we can solve for the mutual inductance $$M$$:</p>\n<p>$$M = \\frac{N_1 N_2 \\frac{\\mu_0 I_2}{2 r_2} \\cdot \\pi r_1^2}{I_2}$$</p>\n<p>Substituting the given values for $$r_1$$, $$N_1$$, $$r_2$$, and $$N_2$$:</p>\n<p>$$M = \\frac{10 \\times 200 \\times 4 \\pi \\times 10^{-7} \\times \\pi \\times (0.01)^2}{2 \\times 10}$$</p>\n<p>Simplifying the expression, we get:</p>\n<p>$$M = 4 \\times 10^{-8} \\mathrm{H}$$</p>\n<p>So, the mutual inductance between the two concentric coils is $$4 \\times 10^{-8} \\mathrm{H}$$.</p>\n",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "l7ekj2z7",
@@ -408,7 +429,7 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -416,7 +437,8 @@
     "difficulty": "medium",
     "solution": "Emf induced in the circuit is\n<br><br>$$\n|E|=\\left|\\frac{d \\phi}{d t}\\right|  =\\frac{d}{d t}\\left(\\left(B_0+\\beta t\\right) A\\right) $$\n<br><br>$$\n =\\beta \\times A $$\n<br><br>$$\n =0.04 \\mathrm{~V}\n\n$$\n<br><br>So the circuit can be rearranged as\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1ld3dwgiq/969a81ad-9e5e-4c85-ba16-d64073e54a92/252a3820-9821-11ed-aa3e-97dd93f27123/file-1ld3dwgir.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1ld3dwgiq/969a81ad-9e5e-4c85-ba16-d64073e54a92/252a3820-9821-11ed-aa3e-97dd93f27123/file-1ld3dwgir.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2022 Paper 1 Online Physics - Electromagnetic Induction Question 13 English Explanation\">\n<br><br>Using Kirchhoff's law we can write\n<br><br>$$\n\\begin{aligned}\n&amp; E=L \\frac{d i}{d t}+\\frac{q}{C} \\\\\\\\\n&amp; L \\frac{d i}{d t}=E-\\frac{q}{C} \\\\\\\\\n&amp; \\text { Or } \\frac{d^2 q}{d t^2}=-\\frac{1}{L C}(q-C E)\n\\end{aligned}\n$$\n<br><br>Using SHM concept we can write\n<br><br>$$\nq=C E+A \\sin (\\omega t+\\phi)\\left(\\text { where } \\omega=\\frac{1}{\\sqrt{L C}}\\right)\n$$\n<br><br>at $t=0, q=0 \\&amp; i=0$\n<br><br>So $A=C E \\&amp; \\phi=-\\frac{\\pi}{2}$\n<br><br>$$\nq=C E-C E \\cos \\omega t\n$$\n<br><br>so $i=\\frac{d q}{d t}=C E \\omega \\sin \\omega t$\n<br><br>So, \n<br><br>$$ \ni_{\\max }  =\\frac{10^{-3} \\times 0.04}{\\sqrt{0.1 \\times 10^{-3}}} $$\n<br><br>$$ =4 \\mathrm{~mA}\n\n$$",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "1l6dytqj5",
@@ -437,7 +459,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>We know $$\\phi  = Mi$$</p>\n<p>Let i current be flowing in the larger loop</p>\n<p>$$ \\Rightarrow \\phi  \\simeq \\left[ {4 \\times {{{\\mu _0}i} \\over {4\\pi (L/2)}}[\\sin 45^\\circ  + \\sin 45^\\circ ]} \\right] \\times $$ Area</p>\n<p>$$ = {{2\\sqrt 2 {\\mu _0}i} \\over {\\pi L}} \\times {I^2}$$</p>\n<p>$$ \\Rightarrow M = {\\phi  \\over i} = {{2\\sqrt 2 {\\mu _0}{I^2}} \\over {\\pi L}}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l5algfye",
@@ -446,14 +469,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>$$U = {1 \\over 2}L{I^2}$$</p>\n<p>$$ = {1 \\over 2}2 \\times {2^2} = 4$$ J</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "1l58hwz9j",
@@ -474,7 +498,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<p>Self inductances are in series but their mutual inductances are linked oppositely so equivalent self inductance</p>\n<p>L = L<sub>1</sub> + L<sub>2</sub> $$-$$ M $$-$$ M = L<sub>1</sub> + L<sub>2</sub> $$-$$ 2M</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l58d0pwq",
@@ -483,14 +508,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5jhw3yo/4d242564-1414-4300-8c7c-e97049b43a97/8f574100-029b-11ed-a9b8-43edceee002f/file-1l5jhw3yp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5jhw3yo/4d242564-1414-4300-8c7c-e97049b43a97/8f574100-029b-11ed-a9b8-43edceee002f/file-1l5jhw3yp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th June Morning Shift Physics - Electromagnetic Induction Question 79 English Explanation\"></p>\n<p>Initially current, $${I_0} = {{20} \\over {10}} = 2A$$ (when initially switch closed)</p>\n<p>average emf induced in coil $$ = {{Ldi} \\over {dt}}$$</p>\n<p>$$ \\Rightarrow {e_{avg}} = {{20 \\times {{10}^{ - 3}} \\times (2 - 0)} \\over {100 \\times {{10}^{ - 6}}}}$$</p>\n<p>$${e_{avg}} = 400\\,V$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "1l6ntzhym",
@@ -506,7 +532,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<p>Just after closing the switch, $$i = {6 \\over {4 + 2}} = 1\\,A$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "3LTmhImqV9RuPxxjym1kmlw2i3l",
@@ -527,7 +554,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "Magnetic energy, U = $${1 \\over 2}$$LI$$_0^2$$<br><br>Given : U = 25% of U<sub>0</sub>.<br><br>$$ \\Rightarrow $$ $${1 \\over 2}L{I^2} = {1 \\over 4} \\times {1 \\over 2}LI_0^2$$<br><br>$$ \\Rightarrow {I^2} = {{I_0^2} \\over 4} \\Rightarrow I = {{{I_0}} \\over 2}$$<br><br>$$ \\therefore $$ $$I = {I_0}(1 - {e^{ - t/\\tau }})$$<br><br>$$ \\Rightarrow {{{I_0}} \\over 2} = {I_0}(1 - {e^{ - t/\\tau }})$$<br><br>$$ \\Rightarrow {1 \\over 2} = {e^{ - t/\\tau }}$$<br><br>$$ \\Rightarrow {e^{t/\\tau }} = 2$$<br><br>$$ \\Rightarrow t = \\tau \\ln 2$$<br><br>$$ \\Rightarrow t = {L \\over R}\\ln 2$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "KF0GnfKYFRM3Y3VAPq1klrngqo0",
@@ -548,7 +576,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "Given, resistance, R = 2$$\\Omega$$,<br><br>Inductance, L = 2 mH,<br><br>emf, E = 9 V<br><br>and i be the current.<br><br>$$\\because$$ At t = 0 when switch is closed, inductors behave as open circuit.<br><br>$$\\therefore$$ Effective circuit will be <br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kxkkcxgi/77599bb9-17fe-4078-8b6c-5b05e876fa3c/42f2b420-64d0-11ec-b334-61c7774f09f5/file-1kxkkcxgj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kxkkcxgi/77599bb9-17fe-4078-8b6c-5b05e876fa3c/42f2b420-64d0-11ec-b334-61c7774f09f5/file-1kxkkcxgj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2021 (Online) 24th February Evening Shift Physics - Electromagnetic Induction Question 100 English Explanation\"><br>By using Ohm's law, V = i R<sub>eq</sub><br><br>$$\\Rightarrow$$ i = V/R<sub>eq</sub><br><br>where, R<sub>eq</sub> is equivalent resistance of series resistors, <br><br>i.e., R<sub>eq</sub> = R + R = 2R = 2 $$\\times$$ 2 = 4 $$\\Omega$$<br><br>$$\\therefore$$ $$i = {9 \\over 4} = 2.25$$A",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "dIPKfRYQ1294ZL58rE1klryvhcd",
@@ -564,7 +593,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "$$L{{di} \\over {dt}} = \\varepsilon $$<br><br>$$ = 3t$$<br><br>$$L\\int {di = 3\\int {tdt} } $$<br><br>$$Li = {{3{t^2}} \\over 2}$$<br><br>$$i = {{3{t^2}} \\over {2L}}$$<br><br>energy, $$E = {1 \\over 2}L{i^2}$$<br><br>$$ = {1 \\over 2}L{\\left( {{{3{t^2}} \\over {2L}}} \\right)^2}$$<br><br>$$ = {1 \\over 2} \\times {{9{t^4}} \\over {4L}}$$<br><br>$$ = {9 \\over 8} \\times {{{{(4)}^4}} \\over {4 \\times 2}} = 144$$ J",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ktabt77x",
@@ -585,7 +615,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "$$U = {1 \\over 2}L{i^2} = 64 \\Rightarrow L = 2$$<br><br>$${i^2}R = 640$$<br><br>$$R = {{640} \\over {{{(8)}^2}}} = 10$$<br><br>$$\\tau  = {L \\over R} = {1 \\over 5} = 0.2$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1kth3zfh0",
@@ -606,7 +637,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ku8ee9b8/202b174c-cdc0-48b9-9830-985de070c4d2/e3358640-22ba-11ec-92a0-35c33c2a328d/file-1ku8ee9b9.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 31st August Morning Shift Physics - Electromagnetic Induction Question 86 English Explanation\"><br>$$B = \\left[ {{{{\\mu _0}} \\over {4\\pi }}{I \\over {b/2}} \\times 2\\sin 45} \\right] \\times 4$$<br><br>$$\\phi  = 2\\sqrt 2 {{{\\mu _0}} \\over \\pi }{I \\over b} \\times {a^2}$$<br><br>$$\\therefore$$ $$M = {\\phi  \\over I} = {{2\\sqrt 2 {\\mu _0}{a^2}} \\over {\\pi b}} = {{{\\mu _0}} \\over {4\\pi }}8\\sqrt 2 {{{a^2}} \\over b}$$<br><br>Option (a)",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "NknRVqUByBLy28sx3f1klgw52nt",
@@ -623,7 +655,8 @@
     "difficulty": "medium",
     "solution": "Mutual inductance is producing flux in same direction as self-inductance.<br><br>$$\\therefore$$ $$U = {1 \\over 2}{L_1}I_1^2 + {1 \\over 2}{L_2}I_2^2 + M{I_1}{I_2}$$<br><br>$$ \\Rightarrow U = {1 \\over 2} \\times (10 \\times {10^{ - 3}}){1^2} + {1 \\over 2} \\times (20 \\times {10^{ - 3}}) \\times {2^2} + (5 \\times {10^{ - 3}}) \\times 1 \\times 2$$<br><br>$$ = 55$$ mJ",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "qdJckTjSX35vhgIGYf7k9k2k5hh31x9",
@@ -644,7 +677,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "$$i = {i_0}\\left( {1 - {e^{ - t/{t_c}}}} \\right)$$\n<br><br>q = $$\\int\\limits_0^{{t_c}} {idt} $$\n<br><br>= $$\\int\\limits_0^{{t_c}} {{ \\in  \\over R}\\left( {1 - {e^{ - t/{t_c}}}} \\right)dt} $$\n<br><br>= $${ \\in  \\over R}\\left[ {t - {{{e^{ - t/{t_c}}}} \\over {\\left( { - {1 \\over {{t_c}}}} \\right)}}} \\right]_0^{{t_c}}$$\n<br><br>= $${ \\in  \\over R}\\left[ {\\left( {{t_c} + {t_c}{e^{ - 1}}} \\right) - \\left( {0 + {t_c}} \\right)} \\right]$$\n<br><br>= $${ \\in  \\over R}{t_c}.{1 \\over e}$$\n<br><br>= $${ \\in  \\over R}.{L \\over R}.{1 \\over e}$$\n<br><br>= $${{ \\in L} \\over {e{R^2}}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ZOxrrAmB8tJWYzEw3Z7k9k2k5intpa5",
@@ -653,14 +687,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": 0,
     "subject": "Physics",
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "V = $$\\left| {L{{di} \\over {dt}}} \\right|$$\n<br><br>$$ \\Rightarrow $$ L = $${V \\over {\\left| {{{di} \\over {dt}}} \\right|}}$$ = $${{100} \\over {{{0.25} \\over {0.025 \\times {{10}^{ - 3}}}}}}$$ = 10 mH",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "BkNuOWmJDOUd60izfKnnE",
@@ -681,7 +716,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "$$L{{di} \\over {dt}} = 25$$\n<br><br>$$L \\times {{15} \\over 1} = 25$$\n<br><br>$$L = {5 \\over 3}H$$\n<br><br>$$\\Delta E = {1 \\over 2} \\times {5 \\over 3} \\times ({25^2} - {10^2})$$\n<br><br>$$ = {5 \\over 6} \\times 525 = 437.5$$ J",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "yCabWsK3vTgWABXLGzecc",
@@ -702,7 +738,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "hard",
     "solution": "Total length L will remain constant\n<br><br>L = (3a) N &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N = total turns)\n<br><br>and length of winding = (d) N\n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d = diameter of wire)\n<br><br><img src=\"https://imagex.cdn.examgoal.net/RRFhCDlAmWm9mWrf0/hDv3RgnvMZ52QEIwWyeP6abAErBRA/NlUvnieUoYrRCpjfBESXSO/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 11th January Evening Slot Physics - Electromagnetic Induction Question 121 English Explanation\">\n<br>self inductance = $$\\mu $$<sub>0</sub>n<sup>2</sup>A$$\\ell $$\n<br><br>= $$\\mu $$<sub>0</sub>n<sup>2</sup>$$\\left( {{{\\sqrt 3 {a^2}} \\over 4}} \\right)$$ dN\n<br><br>$$ \\propto $$ a<sup>2</sup> N $$ \\propto $$ a\n<br><br>So self inductance will become 3 times",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "cBSvlyrMPPjhU4YyaaDFY",
@@ -723,7 +760,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "$$M = {\\mu _0}\\,{n_1}\\,{n_2}\\,\\pi r_1^2$$\n<br><br>$$L = {\\mu _0}\\,n_1^2\\,\\pi r_1^2$$\n<br><br>$$ \\Rightarrow \\,\\,{M \\over L} = {{{n_2}} \\over {{n_1}}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "GX3irRDIdEDhrTOQ00kKh",
@@ -744,7 +782,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "P<sub>R</sub> = i<sup>2</sup> × R<br><br>\nP<sub>B</sub> = V × i<br><br>\n$$ \\therefore $$ P<sub>L</sub> = Vi – i<sup>2</sup>R<br><br>\n$$ \\Rightarrow $$ Vi – i<sup>2</sup>R = i<sup>2</sup>R<br><br>\n$$ \\Rightarrow $$ $$i = {V \\over {2R}}\\,\\,and\\,\\,i = {V \\over R}\\left( {1 - {e^{ - t/\\tau }}} \\right)$$<br><br>\n$$ \\therefore $$ $${V \\over {2R}} = {V \\over R}\\left( {1 - {e^{ - t/\\tau }}} \\right)$$<br><br>\n$$ \\Rightarrow $$ t = $$\\tau $$ln(2) = $${{20} \\over {10}}ln(2) = 2ln(2)$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "IcSQGRlXSXy4MRyzYODvD",
@@ -765,7 +804,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "Mutual induction<br><br/>\n$${\\phi _q} = M{I_p}$$<br><br/>\n10<sup>–3</sup> = M(3)<br><br/>\n$$ \\Rightarrow M = {1 \\over 3} \\times {10^{ - 3}}$$<br><br>\n$${\\phi _p} = M{I_q}$$<br><br/>\n$$ \\Rightarrow {\\phi _p} = 6.67{\\rm{ }} \\times {\\rm{ }}{10^{-4}}{\\rm{ }}Wb$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "G6knEI7jVv54jc1vhHZlm",
@@ -786,7 +826,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "$$\\phi $$ = NBA = LI<br><br>\nN $$\\mu $$<sub>0</sub> nI$$\\pi $$R<sup>2</sup> = LI<br><br>\n$$N{\\mu _0}{N \\over l}l\\pi {R^2} = LI$$<br><br>\nN and R constant<br><br>\nSelf inductance (L) $$ \\propto {1 \\over l} \\propto {1 \\over {length}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "gxhMjY0G2z2Ydjhs",
@@ -808,7 +849,8 @@
     "difficulty": "hard",
     "solution": "<p>$${I_1} = {V \\over R}\\left( {1 - {e^{ - {{tR} \\over L}}}} \\right)$$</p>\n<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kyg0x6t3/77b4d3b5-8e60-42e5-a4e6-e9b79b1f00df/548d2c70-761d-11ec-860d-b35b50d4eea2/file-1kyg0x6t4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kyg0x6t3/77b4d3b5-8e60-42e5-a4e6-e9b79b1f00df/548d2c70-761d-11ec-860d-b35b50d4eea2/file-1kyg0x6t4.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2018 Paper 1 Offline Physics - Electromagnetic Induction Question 24 English Explanation\"> </p>\n<p>$${I_2} = {V \\over R}\\left( {1 - {e^{ - {{tR} \\over {2L}}}}} \\right)$$</p>\n<p>From principle of superposition,</p>\n<p>$$I = {I_1} - {I_2} \\Rightarrow I = {V \\over R}{e^{ - {{tR} \\over {2L}}}}\\left( {1 - {e^{ - {{tR} \\over {2L}}}}} \\right)$$ ...... (i)</p>\n<p>I is maximum when $${{dI} \\over {dt}} = 0$$, which gives</p>\n<p>$${e^{ - {{tR} \\over {2L}}}} = {1 \\over 2}$$ or $$t = {{2L} \\over R}\\ln 2$$</p>\n<p>Substituting this time in Eq. (i), we get</p>\n<p>$${I_{\\max }} = {V \\over {4R}}$$</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "1kz17lg67",
@@ -830,7 +872,8 @@
     "difficulty": "medium",
     "solution": "<p>Let i<sub>1</sub> be the current through L<sub>1</sub>, i<sub>2</sub> be the current through L<sub>2</sub> and i be the current through R.</p>\n\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kz1fwgiq/0a698432-89b3-4bb1-9a08-34cdbf23aa1e/5ed1d820-81e4-11ec-baf1-2587ab03986e/file-1kz1fwgir.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kz1fwgiq/0a698432-89b3-4bb1-9a08-34cdbf23aa1e/5ed1d820-81e4-11ec-baf1-2587ab03986e/file-1kz1fwgir.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2017 Paper 2 Offline Physics - Electromagnetic Induction Question 16 English Explanation\">\n\n<p>The inductors $ L_1 $ and $ L_2 $ are connected in parallel. Therefore, the self-induced emf in $ L_1 $ and $ L_2 $ are equal, which can be expressed as:</p>\n\n<p>$ \\varepsilon_1 = -L_1 \\frac{d i_1}{dt} = \\varepsilon_2 = -L_2 \\frac{d i_2}{dt} $</p>\n\n<p>Upon integrating this equation, we get :</p>\n\n<p>$ L_1 i_1 = L_2 i_2 $ ............(1)</p>\n\n<p>This indicates that the ratio of the currents through $ L_1 $ and $ L_2 $ is constant.</p>\n\n<p>Using Kirchhoff's current law at junction A, we have :</p>\n\n<p>$ i = i_1 + i_2 $ .............(2)</p>\n\n<p>At the moment the switch is closed (t = 0), the inductors act as open circuits (since the inductive reactance $ X_L = \\omega L $ approaches infinity as $ \\omega \\to \\infty $). Therefore, initially :</p>\n\n<p>$ i = i_1 + i_2 = 0 $</p>\n\n<p>and the current through the resistor is :</p>\n\n<p>$ i = i_1 + i_2 = 0 $</p>\n\n<p>After a long time, the inductive reactance of the inductors becomes zero. Applying Kirchhoff's loop law, the current through the resistor $ R $ is :</p>\n\n<p>$ i = \\frac{V}{R} $</p>\n\n<p>Substituting $ i = \\frac{V}{R} $ into equation (2) and solving equations (1) and (2), we find :</p>\n\n<p>$ i_1 = \\frac{V}{R} \\frac{L_2}{L_1 + L_2} $</p>\n\n<p>$ i_2 = \\frac{V}{R} \\frac{L_1}{L_1 + L_2} $</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "3vZjqnMh8d7OkCEtKaCgm",
@@ -851,7 +894,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "Mutual inductance, \n<br><br>M = $${{{\\mu _0}\\pi {N_1}{N_2}\\,{a^2}} \\over {2b}}$$\n<br><br>here $${{N_1}}$$ = N<sub>2</sub> = 1\n<br><br>$$\\therefore\\,\\,\\,$$ M = $${{{\\mu _0}\\pi {a^2}} \\over {2b}}$$ \n<br><br>Current I = I<sub>0</sub> cos ($$\\omega $$t)\n<br><br>According to Faraday's law,\n<br><br>e = $$-$$ M $${{dI} \\over {dt}}$$\n<br><br>= $$-$$ $${{{\\mu _0}\\pi {a^2}} \\over {2b}}$$  $${d \\over {dt}}$$ (I<sub>0</sub> cos $$\\omega $$t)\n<br><br>= + $${{{\\mu _0}\\pi {a^2}} \\over {2b}}$$ I<sub>0</sub> $$\\omega $$ sin $$\\omega $$t\n<br><br>= $${{\\pi {\\mu _0}{I_0}} \\over 2}$$ . $${{{a^2}} \\over b}$$ $$\\omega $$ sin $$\\omega $$ t ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "CX6LIM0VU4LtyGCLbz1klf0ythz",
@@ -873,7 +917,8 @@
     "difficulty": "hard",
     "solution": "The flux passing through the triangular wire if ' $i$ ' current flows through the infinitely long conducting wire.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1li36095o/80df0a8e-3f84-4bb9-b244-51045084addd/5a9349c0-faff-11ed-812e-dfff3aedbc0f/file-1li36095p.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1li36095o/80df0a8e-3f84-4bb9-b244-51045084addd/5a9349c0-faff-11ed-812e-dfff3aedbc0f/file-1li36095p.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 1 Offline Physics - Electromagnetic Induction Question 19 English Explanation 1\">\n\n<br>$$\n\\begin{aligned}\n\\frac{d \\mathrm{I}}{d t} &amp; =10 \\mathrm{As}^{-1} \\\\\\\\\n\\phi &amp; =\\int_0^{0.1} \\frac{\\mu_0 i}{2 \\pi x} \\times 2 x d x \\\\\\\\\n\\phi &amp; =\\frac{\\mu_0 i}{10 \\pi}=\\mathrm{M} i\n\\end{aligned}\n$$\n<br><br>$$\n\\therefore  \\mathrm{M}=\\frac{\\mu_0}{10 \\pi}\n$$\n<br><br>$$\n\\text { Induced emf in the wire }=\\frac{\\mathrm{M} d i}{d t}=\\frac{\\mu_0}{10 \\pi} \\times 10=\\frac{\\mu_0}{\\pi}\n$$\n<br><br>According to Lenz's law, the induced current opposes the flux change that creates it. Since the flux is increasing, the induced emf opposes the existing magnetic field and the current flows from left to right in the straight wire, that is, along the hypotenuse current. That is, there is a repulsive force between the wire and the loop.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1li3668ri/4f956045-fb87-4532-a7b9-2945be57e31c/01204fe0-fb00-11ed-8333-f921c26ec676/file-1li3668rj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1li3668ri/4f956045-fb87-4532-a7b9-2945be57e31c/01204fe0-fb00-11ed-8333-f921c26ec676/file-1li3668rj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 1 Offline Physics - Electromagnetic Induction Question 19 English Explanation 2\">\n<br>Also, if the loop is rotated about the wire, there is no change in the flux through the wire, so no extra induced emf is generated in the wire.",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "S0fuvXEuwhccTDHDQF1klf1q3si",
@@ -890,7 +935,8 @@
     "difficulty": "medium",
     "solution": "<p>The circuit is shown in the figure</p>\n\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1li36fljq/14d4415b-2479-42d3-9a1a-4d88ce24fead/0548a760-fb01-11ed-8333-f921c26ec676/file-1li36fljr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1li36fljq/14d4415b-2479-42d3-9a1a-4d88ce24fead/0548a760-fb01-11ed-8333-f921c26ec676/file-1li36fljr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 1 Offline Physics - Electromagnetic Induction Question 20 English Explanation 1\">\n\n<p>Initially, right after the circuit is switched on ($ t \\rightarrow 0^{+} $), the impedance (effective resistance) of inductors $ L_1 $ and $ L_2 $ is extremely high. Therefore, the inductors act as open circuits, and all the current flows through the resistor $ R = 12 \\Omega $. According to Kirchhoff's law, the current through the battery at this moment is $ i_{\\min} = \\frac{V}{R} = \\frac{5}{12} \\, \\text{A} $.</p>\n\n<p>As the circuit reaches steady state ($ t \\rightarrow \\infty $), the impedance of the inductors drops to zero, and they function as resistors with their specified internal resistances.</p>\n\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1li36i2z6/ccca250c-ff6f-43ba-8db7-29593a510370/4a5d9720-fb01-11ed-8333-f921c26ec676/file-1li36i2z7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1li36i2z6/ccca250c-ff6f-43ba-8db7-29593a510370/4a5d9720-fb01-11ed-8333-f921c26ec676/file-1li36i2z7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 1 Offline Physics - Electromagnetic Induction Question 20 English Explanation 2\">\n\n<br>The effective resistance of the circuit is $R_e=(12 \\Omega \\|$ $4 \\Omega)\\|3 \\Omega=3 \\Omega\\| 3 \\Omega=3 / 2 \\Omega$.\n\n<p>In the steady state, the current through the circuit is $ i_{\\max} = \\frac{V}{R_e} = \\frac{5}{\\frac{3}{2}} = \\frac{10}{3} \\, \\text{A} $.</p>\n\n<p>Therefore, the ratio of the maximum current to the minimum current is:</p>\n\n<p>$ \\frac{i_{\\max}}{i_{\\min}} = \\frac{\\frac{10}{3}}{\\frac{5}{12}} = \\frac{10}{3} \\times \\frac{12}{5} = 8 $</p>",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "irnszdUGj0LIsKov",
@@ -911,7 +957,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "$$\\mathop {F{}_1}\\limits^ \\to   = \\mathop {F{}_2}\\limits^ \\to   = 0$$ \n<br><br> because of action and reaction pair",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l227lmji",
@@ -928,7 +975,8 @@
     "difficulty": "medium",
     "solution": "<p>The magnetic flux through a wire loop with $ n $ turns, an area vector $ \\vec{S} $, placed in a uniform magnetic field $ \\vec{B} $, is given by the equation $ \\phi = n \\vec{B} \\cdot \\vec{S} $. For a circular loop of radius $ r $ that carries a current $ i $, the magnetic field at an axial point located a distance $ z $ from the center of the loop can be expressed as :</p>\n\n<p>$|\\vec{B}|=\\frac{\\mu_0 i r^2}{2\\left(r^2+z^2\\right)^{3 / 2}}$</p>\n\n<p>By substituting $ r = R $ and $ z = \\sqrt{3} R $ into the expression for the magnetic field at an axial point of a circular loop, we get the magnetic field $ |\\vec{B}| $ as follows:</p>\n\n<p>The formula for the magnetic field at an axial point $ z $ from a circular loop of radius $ r $ carrying a current $ i $ is given by:</p>\n\n<p>$ B = \\frac{\\mu_0 i r^2}{2 (r^2 + z^2)^{3/2}} $</p>\n\n<p>Substituting $ r = R $ and $ z = \\sqrt{3} R $ into this formula, we get:</p>\n\n<p>$ B = \\frac{\\mu_0 i R^2}{2 (R^2 + (\\sqrt{3} R)^2)^{3/2}} $</p>\n\n<p>Simplify the expression inside the parentheses:</p>\n\n<p>$ B = \\frac{\\mu_0 i R^2}{2 (R^2 + 3R^2)^{3/2}} $</p>\n\n<p>$ B = \\frac{\\mu_0 i R^2}{2 (4R^2)^{3/2}} $</p>\n\n<p>$ B = \\frac{\\mu_0 i R^2}{2 (4^{3/2} R^3)} $</p>\n\n<p>$ 4^{3/2} = 8 $</p>\n\n<p>$ B = \\frac{\\mu_0 i R^2}{2 (8 R^3)} $</p>\n\n<p>$ B = \\frac{\\mu_0 i R^2}{16 R^3} $</p>\n\n<p>$ B = \\frac{\\mu_0 i}{16 R} $</p>\n\n<p>Thus, the magnetic field at the axial point $ z = \\sqrt{3} R $ is:</p>\n\n<p>$ |\\vec{B}| = \\frac{\\mu_0 i}{16 R} $</p>\n\n<p>\n\n<p>This magnetic field is directed along the $ z $-axis and can be considered uniform at the location of the square loop (since $ a \\ll R $). Consequently, $ \\vec{B} $ forms an angle of $ 45^\\circ $ with the area vector $ \\vec{S} $ (where $ |\\vec{S}| = a^2 $) of the square loop. The magnetic flux through the square loop and the mutual inductance of the loops are given by:</p></p>\n\n<p>$\\begin{aligned} & \\phi=n|\\vec{B}||\\vec{S}| \\cos 45^{\\circ}=2 \\cdot \\frac{\\mu_0 i}{16 R} \\cdot a^2 \\cdot \\frac{1}{\\sqrt{2}}=\\frac{\\mu_0 i a^2}{2^{7 / 2} R}, \\\\\\\\ & M=\\frac{\\phi}{i}=\\frac{\\mu_0 a^2}{2^{7 / 2} R} .\\end{aligned}$</p>",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "xxjSa907za7ZQy9V",
@@ -949,7 +997,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "$$M = {{{\\mu _0}{N_1}{N_2}A} \\over \\ell }$$\n<br><br>$$ = {{4\\pi  \\times {{10}^{ - 7}} \\times 300 \\times 400 \\times 100 \\times {{10}^{ - 4}}} \\over {0.2}}$$\n<br><br>$$ = 2.4\\pi  \\times {10^{ - 4}}H$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "n9Ju0KjDnGigKZZU",
@@ -970,7 +1019,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "<b>KEY CONCEPT :</b> $$I = {I_0}\\left( {1 - {e^{ - {R \\over L}t}}} \\right)$$\n<br><br>(When current is in growth in $$LR$$ circuit) \n<br><br>$$ = {E \\over R}\\left( {1 - {e^{ - {R \\over L}t}}} \\right)$$\n<br><br>$$ = {5 \\over 5}\\left( {1 - {e^{ - {5 \\over {10}} \\times 2}}} \\right)$$\n<br><br>$$ = \\left( {1 - {e^{ - 1}}} \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ksDZGpPdqa85ZXsA",
@@ -991,7 +1041,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "medium",
     "solution": "Initially, when steady state is achieved,\n<br><br>$$i = {E \\over R}$$\n<br><br>Let $$E$$ is short circuited at a $$t=0.$$ Then \n<br><br>At $$t=0,$$ $${i_0} = {E \\over R}$$\n<br><br>Let during decay of current at any time the current \n<br><br>flowing is $$ - L{{di} \\over {dt}} - iR = 0$$\n<br><br>$$ \\Rightarrow {{di} \\over i} =  - {R \\over L}dt$$\n<br><br>$$ \\Rightarrow \\int\\limits_{{i_0}}^i {{{di} \\over i}}  = \\int\\limits_0^t { - {R \\over L}dt} $$\n<br><br>$$ \\Rightarrow {\\log _e}{i \\over {{i_0}}} =  - {R \\over L}t$$\n<br><br>$$ \\Rightarrow i = {i_0}\\,{e^{ - {R \\over L}t}}$$\n<br><br>$$ \\Rightarrow i = {E \\over R}{e^{{R \\over L}t}} = {{100} \\over {100}}{e^{{{ - 100 \\times {{10}^{ - 3}}} \\over {100 \\times {{10}^{ - 3}}}}}} = {1 \\over e}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "yhQHBFLrc6kZBeGI",
@@ -1012,7 +1063,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "Mutual inductance $$ = {\\phi  \\over I} = {{BA} \\over I}$$\n<br><br>[Henry] $$ = {{\\left[ {M{T^{ - 1}}{Q^{ - 1}}{L^2}} \\right]} \\over {\\left[ {Q{T^{ - 1}}} \\right]}} = M{L^2}{Q^{ - 2}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "FxlPB9jcTe9N6KcM",
@@ -1033,7 +1085,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "<b>KEY CONCEPT :</b> The charging of inductance given\n<br><br>by, $$i = {i_0}\\left( {1 - {e^{ - {{Rt} \\over L}}}} \\right)$$\n<br><br>$${{{i_0}} \\over 2} = {i_0}\\left( {1 - {e^{ - {{Rt} \\over L}}}} \\right) \\Rightarrow {e^{ - {{Rt} \\over L}}} = {1 \\over 2}$$\n<br><br>Taking log on both the sides,\n<br><br>$$ - {{Rt} \\over L} = \\log 1 - \\log 2$$\n<br><br>$$ \\Rightarrow t = {L \\over R}\\log 2 = {{300 \\times {{10}^{ - 3}}} \\over 2} \\times 0.69$$\n<br><br>$$ \\Rightarrow t - 0.1\\,\\sec .$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "uKfHsKpQPKa8APcC",
@@ -1054,7 +1107,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "Mutual conductance depends on the relative position and orientation of the two coils. ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "vfWyqHhFmRrnwIx4",
@@ -1075,7 +1129,8 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "$$e =  - {{\\Delta \\phi } \\over {\\Delta t}} = {{ - \\Delta \\left( {LI} \\right)} \\over {\\Delta t}} =  - L{{\\Delta I} \\over {\\Delta t}}$$\n<br><br>$$\\therefore$$ $$\\left| e \\right| = L{{\\Delta I} \\over {\\Delta t}} \\Rightarrow 8 = L \\times {4 \\over {0.05}}$$\n<br><br>$$ \\Rightarrow L = {{8 \\times 0.05} \\over 4} = 0.1H$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "BtUSKBr9A2PaZ8iQ",
@@ -1096,6 +1151,7 @@
     "topic": "inductance-self-and-mutual",
     "difficulty": "easy",
     "solution": "These three inductors are connected in parallel. The equivalent inductance $${L_P}$$ is given by\n<br><br>$${1 \\over {{L_P}}} = {1 \\over {{L_1}}} + {1 \\over {{L_2}}} + {1 \\over {{L_3}}}$$ $$ = {1 \\over 3} + {1 \\over 3} + {1 \\over 3} = {3 \\over 3} = 1$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

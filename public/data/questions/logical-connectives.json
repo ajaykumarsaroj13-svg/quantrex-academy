@@ -18,7 +18,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$$\n\\begin{array}{|c|c|c|c|c|c|c|c|c|}\n\\hline p & q & p \\wedge q & \\sim(p \\wedge q) & \\begin{array}{c}\np \\vee \\sim \\\\\n(p \\wedge q)\n\\end{array} & \\begin{array}{l}\n\\sim[p \\vee \\sim \\\\\n(p \\wedge q)]\n\\end{array} & p \\vee q & \\begin{array}{l}\n\\sim(p \\\\\n\\vee q)\n\\end{array} & \\begin{array}{l}\n(p \\wedge q) \\wedge \\\\\n\\quad(\\sim p)\n\\end{array} \\\\\n\\hline \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{F} \\\\\n\\hline \\mathrm{T} & \\mathrm{F} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{F} \\\\\n\\hline \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{F} \\\\\n\\hline \\mathrm{F} & \\mathrm{F} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} & \\mathrm{F} & \\mathrm{F} & \\mathrm{T} & \\mathrm{F} \\\\\n\\hline\n\\end{array}\n$$\n<br/><br/>$$\n\\therefore \\sim[p \\vee(\\sim(p \\wedge q))]=\\sim p \\wedge(p \\wedge q)\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgxhachl",
@@ -39,7 +40,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "The negation of the statement $(p \\vee q) \\wedge(q \\vee(\\sim r))$ is\n<br/><br/>$$\n\\begin{aligned}\n& =\\sim[(p \\vee q) \\wedge(q \\vee(\\sim r))] \\\\\\\\\n& =\\sim[(p \\vee q) \\vee \\sim(q \\vee(\\sim r)] \\\\\\\\\n& =((\\sim p) \\wedge \\sim q)) \\vee((\\sim q) \\wedge r))\n\\end{aligned}\n$$\n<br/><br/>Apply distribution law,\n<br/><br/>$$\n\\begin{aligned}\n& =\\sim q \\wedge((\\sim p) \\vee r)) \\\\\\\\\n& =((\\sim p) \\vee r) \\wedge(\\sim q)\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgsuhzhe",
@@ -60,7 +62,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "Converse of $((\\sim p) \\wedge q) \\Rightarrow r$\n<br/><br/>$$\n\\begin{aligned}\n& \\equiv \\mathrm{r} \\Rightarrow(\\sim \\mathrm{p} \\wedge \\mathrm{q}) \\\\\\\\\n& \\equiv \\sim \\mathrm{r} \\vee(\\sim \\mathrm{p} \\wedge \\mathrm{q}) \\\\\\\\\n& \\equiv \\sim \\mathrm{r} \\vee(\\mathrm{p} \\vee \\sim \\mathrm{q}) \\equiv(\\mathrm{p} \\vee \\sim \\mathrm{q}) \\Rightarrow \\sim \\mathrm{r}\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgrejueh",
@@ -81,7 +84,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\nS_1: & (p \\Rightarrow q) \\wedge(p \\wedge \\sim q) \\\\\\\\\n& \\equiv(\\sim p \\vee q) \\wedge(p \\wedge \\sim q) \\\\\\\\\n& \\equiv(\\sim p \\wedge p \\wedge \\sim q) \\vee(q \\wedge p \\wedge \\sim q) \\\\\\\\\n& \\equiv(f \\wedge \\sim q) \\vee(f \\wedge p) \\\\\\\\\n& \\equiv f \\vee f \\equiv f \\\\\\\\\nS_2: & (p \\wedge q) \\vee(\\sim p \\wedge q) \\vee(p \\wedge \\sim q) \\vee(\\sim p \\wedge \\sim q) \\\\\\\\\n& \\equiv((p \\vee \\sim p) \\wedge q) \\vee((p \\vee \\sim p) \\wedge \\sim q) \\\\\\\\\n& \\equiv(t \\wedge q) \\vee(t \\wedge \\sim q) \\equiv q \\vee \\sim q \\equiv t\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgoxllvb",
@@ -102,7 +106,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$$\n\\begin{array}{|c|c|c|c|c|c|c|}\n\\hline \\mathbf{p} & \\mathbf{q} & \\sim \\mathbf{q} & \\sim \\mathbf{p} & \\mathbf{p} \\wedge \\sim \\mathbf{q} & \\mathbf{\\sim p} \\wedge \\mathbf{q} & \\mathbf{\\sim p} \\wedge \\mathbf{\\sim q} \\\\\n\\hline T & T & F & F & F & F & F \\\\\nT & F & T & F & T & F & F \\\\\nF & T & F & T & F & T & F \\\\\nF & F & T & T & F & F & T \\\\\n\\hline\n\\end{array}\n$$\n<br/><br/>Using the truth table, we can see that the given statement is equivalent to $$(\\sim p) \\vee(\\sim q)$$.\n<br/><br/><b>Alternate Method :</b>\n<br/><br/>The given statement $$(p \\wedge(\\sim q)) \\vee((\\sim p) \\wedge q) \\vee((\\sim p) \\wedge(\\sim q))$$ can be simplified using the following steps:\n\n<br/><br/>$$\n\\begin{aligned}\n&(p \\wedge(\\sim q)) \\vee((\\sim p) \\wedge q) \\vee((\\sim p) \\wedge(\\sim q)) \\\\\\\\\n&= \\left(p \\wedge(\\sim q)\\right) \\vee \\left((\\sim p) \\wedge (q \\vee (\\sim q))\\right) \\\\\\\\\n&= \\left(p \\wedge(\\sim q)\\right) \\vee \\left((\\sim p) \\wedge t\\right) \\\\\\\\\n&= \\left(p \\wedge(\\sim q)\\right) \\vee (\\sim p) \\\\\\\\\n&= (\\sim p) \\vee \\left(p \\wedge (\\sim q)\\right) \\\\\\\\\n&= (\\sim p \\vee p) \\wedge (\\sim p \\vee \\sim q) \\\\\\\\\n&= t \\wedge (\\sim p \\vee \\sim q) \\\\\\\\\n&= \\sim p \\vee \\sim q\n\\end{aligned}\n$$\n\n<br/><br/>Therefore, the given statement is equivalent to $$(\\sim p) \\vee (\\sim q)$$.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgpxp5mt",
@@ -123,7 +128,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "$$((A \\wedge(B \\vee C)) \\Rightarrow(A \\vee B)) \\Rightarrow A$$\n<br/><br/>$$ \\equiv $$ $$\n[\\sim(\\mathrm{A} \\wedge(\\mathrm{B} \\vee \\mathrm{C})) \\vee(\\mathrm{A} \\vee \\mathrm{B})] \\Rightarrow \\mathrm{A}\n$$\n<br/><br/>$$ \\equiv $$ $$\n\\sim(\\sim(A \\wedge(B \\vee C)) \\vee(A \\vee B)) \\vee A\n$$\n<br/><br/>$$ \\equiv $$ $$\n(A \\wedge(B \\vee C)) \\wedge \\sim(A \\vee B) \\vee A\n$$\n<br/><br/>$$ \\equiv $$ $$\n(f \\vee A)=A\n$$\n<br/><br/>$$\n\\therefore \\text { Negation of statement }=\\sim A\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lgnwpeal",
@@ -144,7 +150,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<p>The given statement is:</p>\n<p>$p \\wedge (q \\wedge \\sim(p \\wedge q))$</p>\n<p>We want to find the negation of this statement. To do that, we negate the whole expression:</p>\n<p>$\\sim (p \\wedge (q \\wedge \\sim(p \\wedge q)))$</p>\n<p>Now, we will use De Morgan&#39;s laws to simplify the expression. De Morgan&#39;s laws state:</p>\n<ol>\n<li>$\\sim (A \\wedge B) \\equiv \\sim A \\vee \\sim B$</li>\n<li>$\\sim (A \\vee B) \\equiv \\sim A \\wedge \\sim B$</li>\n</ol>\n<p>Applying the first De Morgan&#39;s law to the outer conjunction of the negated expression:</p>\n<p>$\\sim p \\vee \\sim (q \\wedge \\sim (p \\wedge q))$</p>\n<p>Now we need to address the inner conjunction $(q \\wedge \\sim (p \\wedge q))$. To simplify this part of the expression, we again apply the first De Morgan's law:\n</p>\n<p>$\\sim p \\vee (\\sim q \\vee (p \\wedge q))$\n</p>\n<p>Distribute the disjunction over the inner conjunction:</p>\n<p>$$\n\\sim \\mathrm{p} \\vee((\\sim \\mathrm{q} \\vee \\mathrm{p}) \\wedge(\\sim \\mathrm{q} \\vee \\mathrm{q}))\n$$</p>\n\n<p>Apply the law of excluded middle (A ∨ ¬A = T) on the last term:</p>\n<p>$$\n\\sim \\mathrm{p} \\vee(\\sim \\mathrm{q} \\vee \\mathrm{p})\n$$</p>\n <p>Apply De Morgan's law on the inner disjunction:\n</p>\n<p>$$\n\\sim(\\mathrm{p} \\wedge \\mathrm{q}) \\vee \\mathrm{p}\n$$\n</p>\n<p>Now, comparing this with the provided options, it matches with Option B :</p>\n\n<p>$(\\sim(p \\wedge q)) \\vee p$</p>\n\n<p>So, the negation of the given statement is :</p>\n\n<p>$(\\sim(p \\wedge q)) \\vee p$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldo5et0w",
@@ -165,7 +172,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$\\begin{aligned} & \\sim p \\rightarrow q \\equiv \\sim(\\sim p) \\vee q \\equiv p \\vee q \\\\\\\\ & p \\wedge q \\rightarrow(\\sim p \\rightarrow q) \\\\\\\\ & \\equiv p \\wedge q \\rightarrow(p \\vee q) \\\\\\\\ & \\equiv \\sim(p \\wedge q) \\vee(p \\vee q) \\\\\\\\ & \\equiv(\\sim p \\vee \\sim q) \\vee(p \\vee q) \\\\\\\\ & \\equiv(\\sim p \\vee(p \\vee q)) \\vee(\\sim q \\vee(p \\vee q)) \\\\\\\\ & \\equiv T \\vee T \\\\\\\\ & \\equiv T\\end{aligned}$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldon2nkk",
@@ -186,7 +194,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$q \\vee(\\sim q \\wedge p)$\n\n<br/><br/>$\\Rightarrow(q \\vee \\sim q) \\wedge(q \\vee p)$\n\n<br/><br/>$\\Rightarrow T \\wedge(q \\vee p)$\n\n<br/><br/>$\\Rightarrow q \\vee p$\n\n<br/><br/>Now,\n\n<br/><br/>$\\sim(q \\vee p)$\n\n<br/><br/>$=\\sim q \\wedge \\sim p$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldwx7ql1",
@@ -207,7 +216,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>Making truth table $(E \\equiv \\sim(p \\wedge(p \\Rightarrow \\sim q))$</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-0pky\">$p$</th>\n    <th class=\"tg-0pky\">$q$</th>\n    <th class=\"tg-0pky\">$\\sim p$</th>\n    <th class=\"tg-0pky\">$\\sim q$</th>\n    <th class=\"tg-0pky\">$p \\vee q$</th>\n    <th class=\"tg-0pky\">$p \\wedge q$</th>\n    <th class=\"tg-0pky\">$\\begin{aligned}p \\Rightarrow p \\sim q\\end{aligned}$</th>\n    <th class=\"tg-0pky\">$p \\wedge (p \\Rightarrow \\sim q)$</th>\n    <th class=\"tg-0pky\">$\\mathrm{E}$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$\\&$</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-0pky\">$\\sim p \\vee q$</th>\n    <th class=\"tg-0pky\">$p \\vee(\\sim p \\wedge q)$</th>\n    <th class=\"tg-0pky\">$p \\vee(p \\wedge q)$</th>\n    <th class=\"tg-0pky\">$p \\vee(p \\wedge \\sim q)$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">$\\mathrm{T}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n    <td class=\"tg-0pky\">$\\mathrm{F}$</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$\\therefore \\sim(p \\wedge(p \\Rightarrow \\sim q))$ is equivalent to $\\sim p \\vee q$</p>\n\n<p><b>Other Method :</b></p>\n<p>$$ \\sim \\left( {p \\vee \\left( {p \\to  \\sim q} \\right.} \\right)$$</p>\n<p>$$ =  \\sim p \\vee  \\sim \\left( {p \\to  \\sim q} \\right)$$</p>\n<p>$$ =  \\sim p \\vee  \\sim \\left( { \\sim p \\vee  \\sim q} \\right)$$</p>\n<p>$$= \\sim p \\vee \\left( {p \\wedge q} \\right)$$</p>\n<p>$$ = \\left( { \\sim p \\vee p} \\right) \\wedge \\left( { \\sim p \\vee q} \\right)$$</p>\n<p>$$ = t \\wedge \\left( { \\sim p \\vee q} \\right)$$</p>\n<p>$$ =  \\sim p \\vee q$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldyb76lo",
@@ -228,7 +238,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n&(\\sim(P \\wedge Q)) \\vee((\\sim P) \\wedge Q) \\Rightarrow((\\sim P) \\wedge(\\sim Q)) \\\\\\\\\n&(\\sim P \\vee \\sim Q) \\vee(\\sim P \\wedge Q) \\Rightarrow(\\sim P \\wedge \\sim Q) \\\\\\\\\n& \\Rightarrow(\\sim P \\vee \\sim Q \\vee \\sim P) \\wedge(\\sim P \\vee \\sim Q \\vee Q) \\Rightarrow(\\sim P \\wedge \\sim Q) \\\\\\\\\n& \\Rightarrow(\\sim P \\vee \\sim Q) \\wedge(T) \\Rightarrow(\\sim P \\wedge \\sim Q) \\\\\\\\\n& \\Rightarrow(\\sim P \\vee \\sim Q) \\Rightarrow(\\sim P \\wedge \\sim Q) \\\\\\\\\n& \\Rightarrow \\sim(\\sim P \\vee \\sim Q) \\vee(\\sim P \\wedge \\sim Q) \\\\\\\\\n& \\Rightarrow(P \\wedge Q) \\vee(\\sim P \\wedge \\sim Q) \\Rightarrow(\\sim P \\vee Q) \\wedge(\\bullet Q \\vee P)\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldu5bbnv",
@@ -249,7 +260,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "$(p \\longrightarrow q) \\Delta(p \\nabla q)$\n<br/><br/>\n$\\Rightarrow \\left(p^{\\prime} \\vee q\\right) \\Delta(p \\nabla q)\\quad...(i)$\n<br/><br/>\n$$\n\\text { If } \\Delta=v, \\nabla=v\n$$\n<br/><br/>\n(i) becomes $\\left(p^{\\prime} \\vee q\\right) \\vee(p \\vee q) \\equiv T$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldv1942z",
@@ -270,7 +282,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>Making truth table (Let $(p \\wedge \\sim q) \\Rightarrow(p \\Rightarrow \\sim q)=E$ )</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-c3ow\">$p$</th>\n    <th class=\"tg-c3ow\">$q$</th>\n    <th class=\"tg-c3ow\">$\\sim p$</th>\n    <th class=\"tg-c3ow\">$\\sim q$</th>\n    <th class=\"tg-c3ow\">$p \\wedge \\sim q$</th>\n    <th class=\"tg-c3ow\">$p \\Rightarrow \\sim q$</th>\n    <th class=\"tg-c3ow\">$E$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$\\therefore E$ is a tautology</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldsegiln",
@@ -291,7 +304,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lfq8buii/842105db-2a88-4b01-bc04-d2093d4bdf40/d00809a0-cc49-11ed-b18d-8994bf82aa9d/file-1lfq8buij.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lfq8buii/842105db-2a88-4b01-bc04-d2093d4bdf40/d00809a0-cc49-11ed-b18d-8994bf82aa9d/file-1lfq8buij.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 29th January Evening Shift Mathematics - Mathematical Reasoning Question 18 English Explanation 1\">\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lfq8cntz/beed2e58-b43d-4388-abf6-ef1deae3f8c5/e6adeb70-cc49-11ed-b18d-8994bf82aa9d/file-1lfq8cnu0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lfq8cntz/beed2e58-b43d-4388-abf6-ef1deae3f8c5/e6adeb70-cc49-11ed-b18d-8994bf82aa9d/file-1lfq8cnu0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 29th January Evening Shift Mathematics - Mathematical Reasoning Question 18 English Explanation 2\">",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldsv5zz0",
@@ -312,7 +326,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-7btt\"></th>\n    <th class=\"tg-7btt\">$\\mathrm{p}$</th>\n    <th class=\"tg-7btt\">$\\mathrm{q}$</th>\n    <th class=\"tg-7btt\">$\\mathrm{r}$</th>\n    <th class=\"tg-7btt\">$(p \\vee q) \\wedge((\\sim p) \\vee r)$</th>\n    <th class=\"tg-7btt\">$\\sim \\mathrm{q} \\vee \\mathrm{r}$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-c3ow\">$(1)$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">$(2)$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">$(3)$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">$(4)$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n  </tr>\n</tbody>\n</table><br/>\nSo, $(p \\vee q) \\wedge(\\sim q \\vee r) \\rightarrow(\\sim p \\vee r)$ will be False.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldr5iqx7",
@@ -333,7 +348,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>$${S1}:\\left( {(p \\vee q) \\Rightarrow r} \\right) \\Leftrightarrow (p \\Rightarrow r)$$</p>\n<p>$${S2}:\\left( {(p \\vee q) \\Rightarrow r} \\right) \\Leftrightarrow \\left( {(p \\Rightarrow r) \\vee (q \\Rightarrow r)} \\right)$$</p>\n<p>In $$S1:$$ If $$p=F, q=T, r=F$$ then $$S_1$$ is false</p>\n<p>In $$S2:$$ If $$p=T, q=F, r=F$$ then $$S_2$$ is false</p>\n<p>$$\\therefore$$ Neither S1 nor S2 is a tautology</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ldo8e0p7",
@@ -354,7 +370,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "$((p \\wedge q) \\Rightarrow(r \\vee q)) \\wedge((p \\wedge r) \\Rightarrow q) \\equiv T$ (given)\n\n<br/><br/>$\\equiv((\\sim p \\vee \\sim q) \\vee(r \\vee q)) \\wedge(\\sim p \\vee \\sim r \\vee q)$\n\n<br/><br/>$\\equiv((\\sim p \\vee r) \\vee(\\sim q \\vee q)) \\wedge(\\sim p \\vee \\sim r \\vee q)$\n\n<br/><br/>$\\equiv \\sim p \\vee \\sim r \\vee q$\n\n<br/><br/>For above statement to be tautology\n\n<br/><br/>$r$ can be $\\sim p$ or $q$\n\n<br/><br/>$\\therefore $ Two values of $r$ are possible.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldpt87pz",
@@ -375,7 +392,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lek3mdx9/896912c9-3981-4e34-b46a-5223559fea7c/7c31fad0-b51e-11ed-accc-792fddd82133/file-1lek3mdxa.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lek3mdx9/896912c9-3981-4e34-b46a-5223559fea7c/7c31fad0-b51e-11ed-accc-792fddd82133/file-1lek3mdxa.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 31st January Morning Shift Mathematics - Mathematical Reasoning Question 21 English Explanation 1\">\n<br><br>$\\therefore \\mathrm{S} 1$ is correct.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lek3nk24/09e41b34-c9d0-4e6b-a3aa-b005fb90770b/9cbe58c0-b51e-11ed-8c61-834212db4998/file-1lek3nk25.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lek3nk24/09e41b34-c9d0-4e6b-a3aa-b005fb90770b/9cbe58c0-b51e-11ed-8c61-834212db4998/file-1lek3nk25.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 31st January Morning Shift Mathematics - Mathematical Reasoning Question 21 English Explanation 2\">\n<br><br>$\\therefore \\mathrm{S} 2$ is incorrect.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lh2yajqy",
@@ -396,7 +414,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "(S1) : $$(p \\Rightarrow q) \\vee((\\sim p) \\wedge q)$$\n<br/><br/>$$\n\\begin{array}{|c|c|c|c|c|c|}\n\\hline \\mathrm{P} & \\mathrm{Q} & \\sim p & \\sim p \\wedge q & p \\Rightarrow q & \\begin{array}{c}\n(p \\Rightarrow q) \\vee \\\\\n(\\sim p \\wedge q)\n\\end{array} \\\\\n\\hline \\mathrm{T} & \\mathrm{T} & \\mathrm{F} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} \\\\\n\\hline \\mathrm{T} & \\mathrm{F} & \\mathrm{F} & \\mathrm{F} & \\mathrm{F} & \\mathrm{F} \\\\\n\\hline \\mathrm{F} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} \\\\\n\\hline \\mathrm{F} & \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} \\\\\n\\hline\n\\end{array}\n$$\n<br/><br/>Here, for every value of components compound statement (last column) are not true. Hence, $S_1$ is not a tautology. \n<br/><br/>$S_2:(q \\Rightarrow p) \\Rightarrow((\\sim p) \\wedge q)$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lh22nyhl",
@@ -417,7 +436,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "We have, $(P \\Rightarrow Q) \\wedge(R \\Rightarrow Q)$\n<br/><br/>$$\n\\begin{aligned}\n& \\equiv(\\sim P \\vee Q) \\wedge(\\sim R \\vee Q) \\\\\\\\\n& \\equiv(\\sim P \\wedge \\sim R) \\vee Q \\text { (by distributive law) }\\\\\\\\\n& \\equiv \\sim(P \\vee R) \\vee Q \\\\\\\\\n& \\equiv(P \\vee R) \\Rightarrow Q\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgylheex",
@@ -438,7 +458,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\n& (p \\wedge(\\sim q)) \\vee(\\sim p) \\\\\\\\\n& \\equiv(p \\vee \\sim p) \\wedge(\\sim q \\vee \\sim p) \\\\\\\\\n& \\equiv \\mathrm{T} \\wedge(\\sim q \\vee \\sim p) \\\\\\\\\n& \\equiv \\sim q \\vee \\sim p \\text { negation } p \\wedge q\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgzzynuh",
@@ -459,7 +480,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "Given: $(p \\rightarrow q) \\rightarrow(q \\rightarrow p)$ \n<br/><br/>Negation of above statement is :\n<br/><br/>$$\n\\begin{aligned}\n& \\sim[(p \\rightarrow q) \\rightarrow(q \\rightarrow p)] \\\\\\\\\n& \\equiv \\sim[\\sim p \\rightarrow q \\wedge q \\rightarrow p] \\\\\\\\\n& \\equiv p \\rightarrow q \\wedge \\sim q \\rightarrow p \\\\\\\\\n& \\equiv \\sim p \\vee q \\wedge q \\wedge \\sim p] \\\\\\\\\n& \\equiv q \\wedge(\\sim p)\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l5c1xxom",
@@ -480,7 +502,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "Let $x:(p \\Delta q) \\Rightarrow(p \\Delta \\sim q) \\vee(\\sim p \\Delta q)$\n<br/><br/>\n<b>Case-I</b>\n<br/><br/>\nWhen $\\Delta$ is same as $v$\n<br/><br/>\nThen $(p \\Delta \\sim q) \\vee(\\sim p \\Delta q)$ becomes\n<br/><br/>\n$(p \\vee \\sim q) \\vee(\\sim p \\vee q)$ which is always true, so $x$ becomes a tautology.\n<br/><br/>\n<b>Case-II</b>\n<br/><br/>\nWhen $\\Delta$ is same as $\\wedge$\n<br/><br/>\nThen $(p \\wedge q) \\Rightarrow(p \\wedge \\sim q) \\vee(\\sim p \\wedge q)$\n<br/><br/>\nIf $p \\wedge q$ is $T$, then $(p \\wedge \\sim q) \\vee(\\sim p \\wedge q)$ is $F$\n<br/><br/>\nso $x$ cannot be a tautology.\n<br/><br/>\n<b>Case-III</b>\n<br/><br/>\nWhen $\\Delta$ is same as $\\Rightarrow$\n<br/><br/>\nThen $(p \\Rightarrow \\sim q) \\vee(\\sim p \\Rightarrow q)$ is same at $(\\sim p \\vee \\sim q) \\vee$ $(p \\vee q)$, which is always true, so $x$ becomes a tautology.\n<br/><br/>\n<b>Case-IV</b>\n<br/><br/>\nWhen $\\Delta$ is same as $\\Leftrightarrow$\n<br/><br/>\nThen $(p \\Leftrightarrow q) \\Rightarrow(p \\Leftrightarrow \\sim q) \\vee(\\sim p \\Leftrightarrow q)$\n<br/><br/>\n$p \\Leftrightarrow q$ is true when $p$ and $q$ have same truth values, then $p \\Leftrightarrow \\sim q$ and $\\sim p \\Leftrightarrow q$ both are false. Hence $x$ cannot be a tautology.\n<br/><br/>\nSo finally $x$ can be $\\vee$ or $\\Rightarrow$.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6dwvb9t",
@@ -501,7 +524,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "Truth Table<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l97slo37/df9ec0ac-a06c-4e60-b3b5-9f73d35cb598/e7215830-4b5c-11ed-bfde-e1cb3fafe700/file-1l97slo38.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l97slo37/df9ec0ac-a06c-4e60-b3b5-9f73d35cb598/e7215830-4b5c-11ed-bfde-e1cb3fafe700/file-1l97slo38.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Mathematical Reasoning Question 34 English Explanation\">",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l59kxe1t",
@@ -522,7 +546,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>Let $$S:(( \\sim q) \\wedge p) \\Rightarrow (( \\sim p) \\vee q)$$</p>\n<p>$$ \\Rightarrow S:\\, \\sim (( \\sim q) \\wedge p) \\vee (( \\sim p) \\vee q)$$</p>\n<p>$$ \\Rightarrow S:(q \\vee ( \\sim p)) \\vee (( \\sim p) \\vee q)$$</p>\n<p>$$ \\Rightarrow S:( \\sim p) \\vee q$$</p>\n<p>$$ \\Rightarrow S:p \\Rightarrow q$$</p>\n<p>So, negation of S will be $$ \\sim (p \\Rightarrow q)$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l5ai3ak1",
@@ -543,7 +568,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "Given $p \\rightarrow(\\sim p \\vee q)$ is false <br/><br/>$\\Rightarrow \\sim p \\vee q$ is false and $p$ is true<br/><br/>\nNow $p=$ True.<br/><br/>\n$\\sim T \\vee q=F$<br/><br/>\n$F \\vee q=F \\Rightarrow q$ is false<br/><br/>\n$P 1: \\sim(T \\rightarrow \\sim F) \\equiv \\sim(T \\rightarrow T) \\equiv$ False.<br/><br/>\n$$\n\\begin{aligned}\nP 2:(T \\wedge \\sim F) \\wedge(\\sim T \\vee F) & \\equiv(T \\wedge T) \\wedge(F \\vee F) \\\\\\\\\n& \\equiv T \\wedge F \\equiv \\text { False }\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6hz70ir",
@@ -564,7 +590,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<p>$$p \\Leftrightarrow (q \\Rightarrow p)$$</p>\n<p>$$ \\sim (p \\Leftrightarrow (q \\Leftrightarrow p))$$</p>\n<p>$$ \\equiv p \\Leftrightarrow \\, \\sim (q \\Rightarrow p)$$</p>\n<p>$$ \\equiv p \\Leftrightarrow (q \\wedge  \\sim p)$$</p>\n<p>$$ \\equiv (p \\Rightarrow (q \\wedge  \\sim p)) \\wedge ((q \\wedge  \\sim p) \\Rightarrow p))$$</p>\n<p>$$ \\equiv ( \\sim p \\vee (q \\wedge  \\sim p)) \\wedge (( \\sim q \\vee p) \\vee p))$$</p>\n<p>$$ \\equiv (( \\sim p \\vee q) \\wedge  \\sim p) \\wedge ( \\sim q \\vee p)$$</p>\n<p>$$ \\equiv  \\sim p \\wedge ( \\sim q \\vee p)$$</p>\n<p>$$ \\equiv ( \\sim p \\wedge  \\sim q) \\vee ( \\sim p \\wedge p)$$</p>\n<p>$$ \\equiv ( \\sim p \\wedge  \\sim q) \\vee c$$</p>\n<p>$$ \\equiv ( \\sim p \\wedge  \\sim q)$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6gj6vbd",
@@ -585,7 +612,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>$$\\sim$$ (p $$ \\Leftrightarrow $$ $$\\sim$$ q) $$\\wedge$$ q</p>\n<p>= (p $$ \\Leftrightarrow $$ q) $$\\wedge$$ q</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">p $$ \\leftrightarrow $$ q</th>\n    <th class=\"tg-baqh\">(p$$ \\to $$ q) $$ \\wedge $$ q</th>\n    <th class=\"tg-baqh\">(p $$ \\to $$ q)</th>\n    <th class=\"tg-baqh\">(p $$ \\to $$ q) $$ \\wedge $$ q</th>\n    <th class=\"tg-baqh\">(p $$ \\to $$ q) $$ \\wedge $$ p</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$$\\therefore$$ ($$\\sim$$ (p $$ \\Leftrightarrow $$ $$\\sim$$ q)) $$\\wedge$$ q is equivalent to (p $$ \\Rightarrow $$ q) $$\\wedge$$ p.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l58grngd",
@@ -606,7 +634,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>Clearly r must be equal to $$\\sim$$ p</p>\n<p>$$\\because$$ $$\\sim$$ p $$\\vee$$ $$\\sim$$ p = $$\\sim$$ p</p>\n<p>and (p  $$\\wedge$$ q) $$\\vee$$ $$\\sim$$ p = p</p>\n<p>$$\\therefore$$ $$\\sim$$ p $$\\Rightarrow$$ p = tautology.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l58abzlk",
@@ -627,7 +656,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<b>Case-I</b><br/><br/>\nIf $\\nabla$ is same as $\\wedge$<br/><br/>\nThen $(p \\wedge q) \\Rightarrow((p \\Delta q) \\wedge r)$<br/><br/> is equivalent to $\\sim(p \\wedge q) \\vee$ $((p \\Delta q) \\wedge r)$<br/><br/> is equivalent to $(\\sim(p \\wedge q) \\vee(p \\Delta q)) \\wedge(\\sim(p \\wedge$ $q) \\vee r)$<br/><br/>\nWhich cannot be a tautology<br/><br/>\nFor both $\\Delta$ (i.e. $\\vee$ or $\\wedge$ )<br/><br/>\n<b>Case-II</b><br/><br/>\nIf $\\nabla$ is same as $v$<br/><br/>\nThen $(p \\vee q) \\Rightarrow((p \\Delta q) \\vee r)$ is equivalent to $\\sim(p \\vee q) \\vee(p \\Delta q) \\vee r$<br/><br/> which can be a tautology if $\\Delta$ is also same as $\\vee$.<br/><br/>\nHence both $\\Delta$ and $\\nabla$ are same as $v$.<br/><br/>\nNow $(p \\nabla q) \\Delta r$ is equivalent to $(p \\vee q \\vee r)$.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6kl6wn5",
@@ -648,7 +678,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$\\mathrm{X} \\Rightarrow \\mathrm{Y}$ is a false<br/><br/>\nwhen $X$ is true and $Y$ is false<br/><br/>\nSo, $\\mathrm{P} \\rightarrow \\mathrm{T}, \\mathrm{Q} \\rightarrow \\mathrm{F}, \\mathrm{R} \\rightarrow \\mathrm{F}$<br/><br/>\n(A) $\\mathrm{P} \\vee \\mathrm{Q} \\rightarrow \\sim \\mathrm{R}$ is $\\mathrm{T}$<br/><br/>\n(B) $\\mathrm{R} \\vee \\mathrm{Q} \\rightarrow \\sim \\mathrm{P}$ is $\\mathrm{T}$<br/><br/>\n(C) $\\sim(\\mathrm{P} \\vee \\mathrm{Q}) \\rightarrow \\sim \\mathrm{R}$ is $\\mathrm{T}$<br/><br/>\n(D) $\\sim(\\mathrm{R} \\vee \\mathrm{Q}) \\rightarrow \\sim \\mathrm{P}$ is $\\mathrm{F}$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6jcwca3",
@@ -669,7 +700,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<p>The truth table</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-c3ow\">p</th>\n    <th class=\"tg-c3ow\">q</th>\n    <th class=\"tg-c3ow\">$$ \\sim $$ p</th>\n    <th class=\"tg-c3ow\">$$ \\sim $$ q</th>\n    <th class=\"tg-c3ow\">p $$ \\wedge $$ q</th>\n    <th class=\"tg-c3ow\">p $$ \\wedge $$&nbsp;&nbsp;$$ \\sim $$ q</th>\n    <th class=\"tg-c3ow\">p $$ \\wedge $$ q $$ \\Leftrightarrow $$ p $$ \\wedge $$ $$ \\sim $$ q</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n  </tr>\n</tbody>\n</table></p>\n<p>Clearly p $$\\wedge$$ q $$\\Leftrightarrow$$ p $$\\wedge$$ $$\\sim$$ q $$\\equiv$$ $$\\sim$$ p</p>\n<p>$$\\therefore$$ r = q</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l56rnxj7",
@@ -690,7 +722,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>$$\\because$$ (($$\\sim$$ q) $$\\wedge$$ p) $$\\vee$$ (p $$\\vee$$ ($$\\sim$$ p))</p>\n<p>= ($$\\sim$$ q $$\\wedge$$ p) $$\\vee$$ t (t is tautology)</p>\n<p>$$\\equiv$$ t</p>\n<p>$$\\therefore$$ option (C) is correct.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l57ouws7",
@@ -711,7 +744,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>Making truth table</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 972px\">\n<colgroup>\n<col style=\"width: 49px\">\n<col style=\"width: 52px\">\n<col style=\"width: 139px\">\n<col style=\"width: 187px\">\n<col style=\"width: 214px\">\n<col style=\"width: 100px\">\n<col style=\"width: 89px\">\n<col style=\"width: 142px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">p $$ \\wedge $$ q</th>\n    <th class=\"tg-baqh\">$$ \\sim $$ p $$ \\wedge $$ q</th>\n    <th class=\"tg-baqh\">($$ \\sim $$ (p $$ \\wedge $$ q)) $$ \\vee $$ q</th>\n    <th class=\"tg-baqh\">p $$ \\vee $$ q</th>\n    <th class=\"tg-baqh\">p $$ \\to $$ q</th>\n    <th class=\"tg-baqh\">p $$ \\to $$ (p $$ \\vee $$ q)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\"></td>\n    <td class=\"tg-baqh\"></td>\n    <td class=\"tg-baqh\"></td>\n    <td class=\"tg-baqh\"></td>\n    <td class=\"tg-baqh\">Tautology</td>\n    <td class=\"tg-baqh\"></td>\n    <td class=\"tg-baqh\"></td>\n    <td class=\"tg-baqh\">Tautology</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$$\\therefore$$ ($$\\sim$$ (p $$\\wedge$$ q)) $$\\vee$$ q $$\\equiv$$ p $$\\to$$ (p $$\\vee$$ q)</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6m5e0bg",
@@ -732,7 +766,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<p>$$ * ,\\, \\odot  \\in \\{  \\wedge ,\\, \\vee \\} $$</p>\n<p>Now for $$(p * q) \\odot (p \\odot  \\sim q)$$ is tautology</p>\n<p>(A) $$( \\vee , \\wedge ):(p \\vee q) \\wedge (p \\wedge  \\sim q)$$ not a tautology</p>\n<p>(B) $$( \\vee , \\vee ):(p \\vee q) \\vee (p \\vee  \\sim q)$$</p>\n<p>$$ = P \\vee T$$ is tautology</p>\n<p>(C) $$( \\wedge , \\wedge ):(p \\wedge q) \\wedge (p \\wedge  \\sim q)$$</p>\n<p>$$ = (p \\wedge p) \\wedge (q \\wedge  \\sim q) = p \\wedge F$$ not a tautology (Fallasy)</p>\n<p>(D) $$( \\wedge , \\vee ):(p \\wedge q) \\vee (p \\vee  \\sim q)$$ not a tautology</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l55jdggk",
@@ -748,7 +783,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "There are total 9 compound propositions, out of which 6 contain $\\sim s$. So if we assign $s$ as false, these 6 propositions will be true.\n<br/><br/>\nIn remaining 3 compound propositions, two contain $p$ and the third contains $\\sim r$. So if we assign $p$ and $r$ as true and false respectively, these 3 propositions will also be true.\n<br/><br/>\nHence maximum number of propositions that can be true are 9.",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l567e91x",
@@ -769,7 +805,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<p>$${S_1}:( \\sim p \\vee q) \\vee ( \\sim p \\vee r)$$</p>\n<p>$$ \\cong ( \\sim p \\vee q \\vee r)$$</p>\n<p>$${S_2}: \\sim p \\vee (q \\vee r)$$</p>\n<p>Both are same</p>\n<p>So, option (C) is incorrect.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6rfes3g",
@@ -790,7 +827,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "$(\\mathrm{A})(p \\wedge(\\sim r)) \\Rightarrow q$\n\n<br/><br/>$$\n\\begin{aligned}\n&\\sim(p \\wedge \\sim r) \\vee q \\\\\\\\\n&\\equiv(\\sim p \\vee r) \\vee q \\\\\\\\\n&\\equiv \\sim p \\vee(r \\vee q) \\\\\\\\\n&\\equiv p \\rightarrow(q \\vee r) \\\\\\\\\n&\\equiv(p \\Rightarrow q) \\vee(p \\Rightarrow r)\n\\end{aligned}\n$$\n\n<br/><br/>(C) $p \\Rightarrow(q \\vee r)$\n\n<br/><br/>$$\n\\begin{aligned}\n&\\equiv \\sim p \\vee(q \\vee r) \\\\\\\\\n&\\equiv(\\sim p \\vee q) \\vee(\\sim p \\vee r) \\\\\\\\\n&\\equiv(p \\rightarrow q) \\vee(p \\rightarrow r)\n\\end{aligned}\n$$\n\n<br/><br/>(D) $(p \\wedge \\sim q) \\Rightarrow r$\n\n<br/><br/>$$\n\\equiv p \\Rightarrow(q \\vee r)\n$$\n\n<br/><br/>$$\n\\begin{aligned}\n& \\equiv(p \\Rightarrow q) \\vee(p \\Rightarrow r)\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6p294z9",
@@ -811,7 +849,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">$$p$$</th>\n    <th class=\"tg-baqh\">$$q$$</th>\n    <th class=\"tg-baqh\">$$r$$</th>\n    <th class=\"tg-baqh\">$$A = p\\, \\wedge q$$</th>\n    <th class=\"tg-baqh\">$$B = p\\, \\wedge r$$</th>\n    <th class=\"tg-baqh\">$$A \\to B$$</th>\n    <th class=\"tg-baqh\">$$q \\to B$$</th>\n    <th class=\"tg-baqh\">$$p \\to B$$</th>\n    <th class=\"tg-baqh\">$$B \\to A$$</th>\n    <th class=\"tg-baqh\">$$A \\to r$$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$$(p\\, \\wedge \\,q) \\Rightarrow (p\\, \\wedge \\,r)$$ is equivalent to $$(p\\, \\wedge \\,q) \\Rightarrow r$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l54tfxa2",
@@ -832,7 +871,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>Given,</p>\n<p>(p $$\\vee$$ q) $$\\Rightarrow$$ (($$\\sim$$ r) $$\\vee$$ p)</p>\n<p>Negation is</p>\n<p>$$\\sim$$ ((p $$\\vee$$ q) $$\\Rightarrow$$ ($$\\sim$$ r) $$\\vee$$ p))</p>\n<p>= (p $$\\vee$$ q) $$\\wedge$$ $$\\sim$$ (($$\\sim$$ r) $$\\vee$$ p)</p>\n<p>= (p $$\\vee$$ q) $$\\wedge$$ (r $$\\wedge$$ $$\\sim$$ p)</p>\n<p>[(p $$\\wedge$$ $$\\sim$$ p) $$\\vee$$ (q $$\\wedge$$ $$\\sim$$ p)] $$\\wedge$$ r</p>\n<p>= q $$\\wedge$$ $$\\sim$$ p $$\\wedge$$ r</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l5450e9z",
@@ -853,7 +893,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "$(p \\vee q) \\Rightarrow q$\n<br/><br/>\n$$\n\\begin{aligned}\n& \\sim(p \\vee q) \\vee q \\\\\\\\\n& =(\\sim p \\wedge \\sim q) \\vee q \\\\\\\\\n& =(\\sim p \\vee q) \\wedge(\\sim q \\vee q) \\\\\\\\\n& =(\\sim p \\vee q) \\wedge T \\\\\\\\\n& =\\sim p \\vee q\n\\end{aligned}\n$$\n<br/><br/>\nNow $(p \\wedge q) \\Delta(\\sim p \\vee q)$\n<br/><br/>\n$$\n\\begin{array}{cccccc}\np & q & \\sim p & p \\wedge q & \\sim p \\vee q & (p \\wedge q) \\Delta(\\sim p \\vee q) \\\\\nT & T & F & T & T & T \\\\\nT & F & F & F & F & T \\\\\nF & T & T & F & T & T \\\\\nF & F & T & F & T & T\n\\end{array}\n$$\n<br/><br/>\n$\\therefore \\Delta=\\Rightarrow$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l5w0obkl",
@@ -874,7 +915,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">r</th>\n    <th class=\"tg-baqh\">$$ \\sim $$ p</th>\n    <th class=\"tg-baqh\">A =<br>p $$ \\wedge $$ q</th>\n    <th class=\"tg-baqh\">B =<br>$$ \\sim $$ p $$ \\vee $$ r</th>\n    <th class=\"tg-baqh\">C =<br>(A $$ \\to $$ B)</th>\n    <th class=\"tg-baqh\">D =<br>(B $$ \\to $$ A)</th>\n    <th class=\"tg-baqh\">C $$ \\vee $$ D</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$$\\therefore$$ Given statement is a tautology.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1p2dl8GpcxkStpiRZt1kmhvyzos",
@@ -895,7 +937,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$$\\matrix{\n   p &amp; q &amp; {p \\wedge q} &amp; {p \\vee q} &amp; {p \\to q} &amp; {(p \\wedge q) \\to (p \\to q)}  \\cr \n   T &amp; T &amp; T &amp; T &amp; T &amp; T  \\cr \n   F &amp; T &amp; F &amp; T &amp; T &amp; T  \\cr \n   T &amp; F &amp; F &amp; T &amp; F &amp; T  \\cr \n   F &amp; F &amp; F &amp; F &amp; T &amp; T  \\cr \n\n } $$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "fbDsZRHROBb4k6QKaY1kmkmyoqc",
@@ -916,7 +959,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "$$(p \\wedge q)\\, \\to \\,(p \\to q)$$<br><br>$$(p \\wedge q)\\, \\to \\,( \\sim p \\vee q)$$<br><br>$$( \\sim p \\vee  \\sim q)\\, \\vee ( \\sim p \\vee q)$$<br><br>$$ \\sim p \\vee ( \\sim q \\vee q) \\Rightarrow $$ Tautology<br><br>$$ \\Rightarrow  \\odot  \\Rightarrow  \\to $$<br><br>$$ \\otimes  \\Rightarrow  \\to $$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "8hZxyvOr3nEBB8fFxy1kmjapolf",
@@ -937,7 +981,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<p>The Boolean expression</p>\n<p>$(p \\Rightarrow q) \\Leftrightarrow\\left(q^*(\\sim p)\\right)$ is a tautology.</p>\n<p>Making the truth table for this</p>\n<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-c3ow\">p</th>\n    <th class=\"tg-c3ow\">q</th>\n    <th class=\"tg-c3ow\">$p \\rightarrow q$</th>\n    <th class=\"tg-c3ow\">$q^* \\sim p$</th>\n    <th class=\"tg-c3ow\">$\\sim q$</th>\n    <th class=\"tg-c3ow\">$-q \\wedge p$</th>\n    <th class=\"tg-c3ow\">$\\sim(\\sim {q} \\wedge p)$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{F}$</td>\n    <td class=\"tg-c3ow\">$\\mathrm{T}$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">T</td>\n    <td class=\"tg-c3ow\">F</td>\n    <td class=\"tg-c3ow\">T</td>\n  </tr>\n</tbody>\n</table><br/>\n<p>$\\therefore \\quad \\sim(\\sim q \\wedge p)=q \\vee \\sim p=\\sim p \\vee q$</p>\n<p>$\\therefore{ }^*$ is equivalent to $v$.</p>\n<p>So, $\\quad p^* \\sim q=p \\vee \\sim q=\\sim q \\vee p$</p>\n<p>$=q \\Rightarrow p$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "nzAOiYmH4hkTFVNC2R1kmm3sgyz",
@@ -958,7 +1003,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<p>LHS of all the options are same i.e.</p>\n<p>$$((P \\to Q) \\wedge  \\sim Q)$$</p>\n<p>$$ \\equiv ( \\sim P \\vee Q) \\wedge  \\sim Q$$</p>\n<p>$$ \\equiv ( \\sim P \\wedge  \\sim Q) \\vee (Q \\wedge  \\sim Q)$$</p>\n<p>$$ \\equiv  \\sim P \\wedge  \\sim Q$$</p>\n<p>(A) $$( \\sim P \\wedge  \\sim Q) \\to Q$$</p>\n<p>$$ \\equiv  \\sim ( \\sim P \\wedge  \\sim Q) \\vee Q$$</p>\n<p>$$ \\equiv (P \\vee Q) \\vee Q \\ne $$ Tautology</p>\n<p>(B) $$( \\sim P \\wedge  \\sim Q) \\to P$$</p>\n<p>$$ \\equiv  \\sim ( \\sim P \\wedge  \\sim Q) \\vee  \\sim P$$</p>\n<p>$$ \\equiv (P \\vee Q) \\vee  \\sim P$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l3b0mtai/207863b7-e6a3-4fcf-9b41-05c186319670/5daac9b0-d659-11ec-9a06-bd4ec5b93eb4/file-1l3b0mtaj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l3b0mtai/207863b7-e6a3-4fcf-9b41-05c186319670/5daac9b0-d659-11ec-9a06-bd4ec5b93eb4/file-1l3b0mtaj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2021 (Online) 18th March Evening Shift Mathematics - Mathematical Reasoning Question 62 English Explanation\"></p>\n<p>(C) $$( \\sim P \\wedge  \\sim Q) \\to P$$</p>\n<p>$$ \\equiv (P \\wedge Q) \\wedge P \\ne $$ Tautology</p>\n<p>(D) $$( \\sim P \\wedge  \\sim Q) \\to (P \\vee Q)$$</p>\n<p>$$ \\equiv (P \\wedge Q) \\wedge (P \\vee Q) \\ne $$ Tautology</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1kto27r9o",
@@ -979,7 +1025,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">$$ \\sim $$ p</th>\n    <th class=\"tg-baqh\">$$ \\sim $$ q</th>\n    <th class=\"tg-baqh\">p $$ \\to $$ q</th>\n    <th class=\"tg-baqh\">$$ \\sim $$ (p $$ \\to $$ q)</th>\n    <th class=\"tg-baqh\">q $$ \\to $$ p</th>\n    <th class=\"tg-baqh\">$$ \\sim $$ (q $$ \\to $$ p)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody>\n</table><br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p $$ \\wedge $$ $$ \\sim $$ q</th>\n    <th class=\"tg-baqh\">$$ \\sim $$ p $$ \\to $$ $$ \\sim $$ q</th>\n    <th class=\"tg-baqh\">p $$ \\to $$ $$ \\sim $$ q</th>\n    <th class=\"tg-baqh\">$$ \\sim $$ (p $$ \\to $$ $$ \\sim $$ q)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody>\n</table><br><br>p $$\\wedge$$ $$\\sim$$ q $$ \\equiv $$ $$\\sim$$ (p $$\\to$$ q)<br><br>Option (d)",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1krpripml",
@@ -1000,7 +1047,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">$$ \\sim p$$</th>\n    <th class=\"tg-baqh\">$$ \\sim q$$</th>\n    <th class=\"tg-baqh\">$$p \\wedge  \\sim q$$</th>\n    <th class=\"tg-baqh\">$$q \\vee  \\sim p$$</th>\n    <th class=\"tg-baqh\">$$(p \\wedge  \\sim q) \\Rightarrow (q \\vee  \\sim p)$$</th>\n    <th class=\"tg-baqh\">$$p \\Rightarrow q$$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table><br><br>$$\\therefore$$ $$(p \\wedge  \\sim q) \\Rightarrow (q \\vee  \\sim p)$$<br><br>$$ \\equiv p \\Rightarrow q$$<br><br>So, option (2) is correct",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1kru3ommn",
@@ -1021,7 +1069,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "(1) (p $$\\to$$ q) $$\\vee$$ ($$\\sim$$ q $$\\to$$ p)<br><br>= ($$\\sim$$ p $$\\vee$$ q) $$\\vee$$ (q $$\\vee$$ p)<br><br>= ($$\\sim$$ p $$\\vee$$ p) $$\\vee$$ q<br><br>= t $$\\vee$$ q = t<br><br>(2) (q $$\\to$$ p) $$\\vee$$ ($$\\sim$$ q $$\\to$$ p)<br><br>= ($$\\sim$$ q $$\\vee$$ p) $$\\vee$$ (q $$\\vee$$ p)<br><br>= ($$\\sim$$ q $$\\vee$$ q) $$\\vee$$ p<br><br>= t $$\\vee$$ p = t<br><br>(3) (p $$\\to$$ $$\\sim$$ q) $$\\vee$$ ($$\\sim$$ q $$\\to$$ p)<br><br>= ($$\\sim$$ p $$\\vee$$ $$\\sim$$ p) $$\\vee$$ (q $$\\vee$$ p)<br><br>= ($$\\sim$$ p $$\\vee$$ p) $$\\vee$$ ($$\\sim$$ q $$\\vee$$ q)<br><br>= t $$\\vee$$ t = t<br><br>(4) ($$\\sim$$ q $$\\to$$ q) $$\\vee$$ ($$\\sim$$ q $$\\to$$ p)<br><br>= (p $$\\vee$$ q) $$\\vee$$ (q $$\\vee$$ p)<br><br>= (p $$\\vee$$ p) $$\\vee$$ (q $$\\vee$$ p)<br><br>= p $$\\vee$$ q<br><br>Which is not a tautology.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "Y4dstDxJfkHb7DfLzh1klrl963n",
@@ -1042,7 +1091,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1krh6367i/8c7a10eb-c8c1-4008-b798-a63113def03a/cd962bf0-ec28-11eb-ac03-4d74161d9b3d/file-1krh6367j-320w.png\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1krh6367i/8c7a10eb-c8c1-4008-b798-a63113def03a/cd962bf0-ec28-11eb-ac03-4d74161d9b3d/file-1krh6367j-500w.png\"><img src=\"https://imagex.cdn.examgoal.net/1krh6367i/8c7a10eb-c8c1-4008-b798-a63113def03a/cd962bf0-ec28-11eb-ac03-4d74161d9b3d/file-1krh6367j.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 24th February Evening Shift Mathematics - Mathematical Reasoning Question 69 English Explanation\"></picture>\n<br>(b) is tautologies<br><br>$$ \\therefore $$ a &amp; b are both tautologies.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ganiqHSEGa3zsqkGqV1klrl43pu",
@@ -1063,7 +1113,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1krh70sq6/bc7e722e-a27a-4fda-a205-bcc8c7ef5d39/74aeeff0-ec2c-11eb-a11d-51ef7b2852da/file-1krh70sq7.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 24th February Evening Shift Mathematics - Mathematical Reasoning Question 70 English Explanation\">\n<br>$$ \\therefore $$ $$ \\sim $$ p $$ \\wedge $$ (p $$ \\vee $$ q) $$ \\equiv $$ p $$ \\vee $$ $$ \\sim $$ q",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "e8m7fiFp2ii9uhwxX41klrhnfcs",
@@ -1084,7 +1135,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "Given, $$\\left[ {A \\wedge \\left( {A \\to B} \\right)} \\right] \\to B$$\n<br/><br/>= $$A \\wedge \\left( { \\sim A \\vee B} \\right) \\to B$$\n<br/><br/>= $$\\left[ {\\left( {A \\wedge  \\sim A} \\right) \\vee \\left( {A \\wedge B} \\right)} \\right] \\to B$$\n<br/><br/>= $$\\left( {A \\wedge B} \\right) \\to B$$\n<br/><br/>= $${ \\sim A \\vee  \\sim B \\vee B}$$\n<br/><br/>= t\n<br/><br/>Hence, $$\\left[ {A \\wedge \\left( {A \\to B} \\right)} \\right] \\to B$$ is a tautology.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "UiyDtnS5Vrk1mJy1Gf1kls47g1s",
@@ -1105,7 +1157,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$$A \\to (B \\to A)$$<br><br>$$ \\Rightarrow A \\to ( \\sim B \\vee A)$$<br><br>$$ \\Rightarrow \\, \\sim A \\vee ( \\sim B \\vee A)$$<br><br>$$ \\Rightarrow \\, \\sim B \\vee ( \\sim A \\vee A)$$<br><br>$$ \\Rightarrow \\, \\sim B \\vee t$$<br><br>= t (tantology)<br><br>From options :<br><br>(B) $$A \\to (A \\vee B)$$<br><br>$$ \\Rightarrow \\, \\sim A \\vee (A \\vee B)$$<br><br>$$ \\Rightarrow ( \\sim A \\vee A) \\vee B$$<br><br>$$ \\Rightarrow t \\vee B$$<br><br>$$ \\Rightarrow t$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1krvyssvv",
@@ -1126,7 +1179,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "$$(p \\to q) \\wedge (q \\to  \\sim p)$$<br><br>$$ \\equiv ( \\sim p \\vee q) \\wedge ( \\sim q \\vee  \\sim p)\\{ p \\to q \\equiv  \\sim p \\vee q\\} $$<br><br>$$ \\equiv ( \\sim p \\vee q) \\wedge ( \\sim p \\vee q)$$ {commutative property}<br><br>$$ \\equiv  \\sim p \\vee (q \\wedge  \\sim q)$$ {distributive property}<br><br>$$ \\equiv  \\sim p$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ktcznobe",
@@ -1147,7 +1201,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "S<sub>1</sub> : ($$\\sim$$ p $$ \\vee $$ q) $$ \\vee $$ (q $$ \\vee $$ p) = (q $$ \\vee $$ $$\\sim$$ p) $$ \\vee $$ (q $$ \\vee $$ p)<br><br>S<sub>1</sub> = q $$ \\vee $$ ($$\\sim$$ p $$ \\vee $$ p) = qvt = t = tautology<br><br>S<sub>2</sub> : (p $$ \\wedge $$ $$\\sim$$ q) $$ \\wedge $$ ($$\\sim$$ p $$\\vee$$ q) = (p $$ \\wedge $$ $$\\sim$$ q) $$ \\wedge $$ $$\\sim$$ (p $$ \\wedge $$ $$\\sim$$ q) = C = fallacy",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ktbgkdhv",
@@ -1168,7 +1223,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">r</th>\n    <th class=\"tg-baqh\">$$\\underbrace {p \\vee q}_a$$</th>\n    <th class=\"tg-baqh\">$$\\underbrace {q \\to r}_b$$</th>\n    <th class=\"tg-baqh\">$${a \\wedge b}$$</th>\n    <th class=\"tg-baqh\">$${ \\sim r}$$</th>\n    <th class=\"tg-baqh\">$$\\underbrace {a \\wedge b \\wedge ( \\sim r)}_c$$</th>\n    <th class=\"tg-baqh\">$$\\underbrace {p \\wedge q}_d$$</th>\n    <th class=\"tg-baqh\">$$c \\to d$$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "fPu8c7tDybZ3josxp31kluvu5ch",
@@ -1189,7 +1245,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "Truth table for F<sub>1</sub> :\n<br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-860w.jpeg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-1040w.jpeg\"><source media=\"(max-width: 1220px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-1220w.jpeg\"><source media=\"(max-width: 1400px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-1400w.jpeg\"><source media=\"(max-width: 1580px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-1580w.jpeg\"><source media=\"(max-width: 1760px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-1760w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1km1x70d0/8340dcfe-e562-4bab-b135-f966bf0fa965/2f81f540-80c9-11eb-87d5-bb923adfd561/file-1km1x70d1-1940w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th February Evening Shift Mathematics - Mathematical Reasoning Question 66 English Explanation 1\"></picture>\n$$ \\therefore $$ F<sub>1</sub> is not a tautology.\n<br><br>Truth table for F<sub>2</sub> :\n<br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-860w.jpeg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-1040w.jpeg\"><source media=\"(max-width: 1220px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-1220w.jpeg\"><source media=\"(max-width: 1400px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-1400w.jpeg\"><source media=\"(max-width: 1580px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-1580w.jpeg\"><source media=\"(max-width: 1760px)\" srcset=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-1760w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1km1xjcid/64362bbf-853a-413f-aded-ffb6e5efb47d/869a2450-80ca-11eb-87d5-bb923adfd561/file-1km1xjcie-1940w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th February Evening Shift Mathematics - Mathematical Reasoning Question 66 English Explanation 2\"></picture>\n<br> $$ \\therefore $$ F<sub>2</sub> is a tautology.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ktg2lye2",
@@ -1210,7 +1267,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "given statement says<br><br>\"if p and q both happen then p and q and r will happen\"<br><br>it simply implies \"If p and q both happen then 'r' too will happen\"<br><br>i.e.<br><br>\"if p and q both happen then r and p too will happen<br><br>i.e.<br><br>(p $$\\wedge$$ q) $$\\Rightarrow$$ (r $$\\wedge$$ p)",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ktekw6qp",
@@ -1231,7 +1289,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "(p $$ \\wedge $$ (p $$\\to$$ q) $$\\wedge$$ (q $$\\to$$ r)) $$\\to$$ r<br><br>$$\\equiv$$ (p $$\\wedge$$ ($$\\sim$$ p $$\\vee$$ q) $$\\vee$$ ($$\\sim$$ q $$\\vee$$ r)) $$\\to$$ r<br><br>$$\\equiv$$ ((p $$\\wedge$$ q) $$\\wedge$$ ($$\\sim$$ p $$\\vee$$ r)) $$\\to$$ r<br><br>$$\\equiv$$ (p $$\\wedge$$ q $$\\wedge$$ r) $$\\to$$ r<br><br>$$\\equiv$$ $$\\sim$$ (p $$\\wedge$$ q $$\\wedge$$ r) $$\\vee$$ r<br><br>$$\\equiv$$ ($$\\sim$$ p) $$\\vee$$ ($$\\sim$$ q) $$\\vee$$ ($$\\sim$$ r) $$\\vee$$ r<br><br>$$\\Rightarrow$$ tautology",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ks07sngu",
@@ -1252,7 +1311,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "Using Truth Table :<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks25jko2/e97fad3e-ea2f-4ab8-b7de-b0df54e998c9/2235f420-f7b3-11eb-b37d-c3b778e1195d/file-1ks25jko3-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks25jko2/e97fad3e-ea2f-4ab8-b7de-b0df54e998c9/2235f420-f7b3-11eb-b37d-c3b778e1195d/file-1ks25jko3-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks25jko2/e97fad3e-ea2f-4ab8-b7de-b0df54e998c9/2235f420-f7b3-11eb-b37d-c3b778e1195d/file-1ks25jko3-680w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ks25jko2/e97fad3e-ea2f-4ab8-b7de-b0df54e998c9/2235f420-f7b3-11eb-b37d-c3b778e1195d/file-1ks25jko3.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Morning Shift Mathematics - Mathematical Reasoning Question 55 English Explanation\"></picture>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ktk5iipi",
@@ -1273,7 +1333,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>Negative of (p $$\\vee$$ r) $$\\Rightarrow$$ (q $$\\vee$$ r)</p>\n<p>$$ \\equiv $$ $$\\sim$$ ((p $$\\vee$$ r) $$\\Rightarrow$$ (q $$\\vee$$ r)) $$\\equiv$$ (p $$\\vee$$ r) $$ \\wedge $$ ($$\\sim$$ (q $$\\vee$$ r))</p>\n<p>$$\\equiv$$ (p $$\\vee$$ r) $$\\wedge$$ ($$\\sim$$ q $$\\wedge$$ $$\\sim$$ r) $$\\equiv$$ (p $$\\vee$$ r) $$\\wedge$$ $$\\sim$$ r) $$\\wedge$$ $$\\sim$$ q</p>\n<p>$$\\equiv$$ ((p $$\\wedge$$ $$\\sim$$ r)) $$\\vee$$ (r $$\\wedge$$ $$\\sim$$ r) $$\\wedge$$ $$\\sim$$ q $$\\equiv$$ (p $$\\wedge$$ $$\\sim$$ r) $$\\wedge$$ f) $$\\wedge$$ $$\\sim$$ q</p>\n<p>$$\\equiv$$ (p $$\\wedge$$ $$\\sim$$ r) $$\\wedge$$ ($$\\sim$$ q) $$\\equiv$$ p $$\\wedge$$ $$\\sim$$ q $$\\wedge$$ $$\\sim$$ r</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ktio2w8d",
@@ -1294,7 +1355,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "(p $$\\wedge$$ $$\\sim$$ q) $$\\to$$ (p $$\\vee$$ q) is tautology<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">$$ \\sim $$ q</th>\n    <th class=\"tg-baqh\">p $$ \\wedge $$ $$ \\sim $$ q</th>\n    <th class=\"tg-baqh\">p $$ \\vee $$ q</th>\n    <th class=\"tg-baqh\">(p $$ \\wedge $$ $$ \\sim $$ q) $$ \\to $$ (p $$ \\vee $$ q)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "rkDqKdV7f4jhoxxZQhjgy2xukezbqrn0",
@@ -1315,7 +1377,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "~ p $$ \\wedge $$ (p $$ \\vee $$ q) $$ \\to $$ q<br><br>\n$$ \\equiv $$ (~ p $$ \\wedge $$ p) $$ \\vee $$ (~ p $$ \\wedge $$ q) $$ \\to $$ q<br><br>\n$$ \\equiv $$ C $$ \\vee $$ (~ p $$ \\wedge $$ q) $$ \\to $$ q&nbsp;&nbsp;&nbsp; [C = contradiction]<br><br>\n$$ \\equiv $$ (~ p $$ \\wedge $$ q) $$ \\to $$ q<br><br>\n$$ \\equiv $$ ~ (~ p $$ \\wedge $$ q) $$ \\vee $$ q<br><br>\n$$ \\equiv $$ (p $$ \\vee $$ ~ q) $$ \\vee $$ q<br><br>\n$$ \\equiv $$ (p $$ \\vee $$ q) $$ \\vee $$ (~ q $$ \\vee $$ q)<br><br>\n$$ \\equiv $$ (p $$ \\vee$$ q) $$ \\vee $$ t<br><br>\nso ~ p $$ \\wedge $$ (p $$ \\vee $$ q) $$ \\to $$ q is a tautology",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "nOq66cqiaklAbEp9Ztjgy2xukf3yrsm1",
@@ -1329,14 +1392,15 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQ",
+    "questionType": "MCQM",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "Given, (p $$ \\wedge $$ q) $$ \\to $$ ($$ \\sim $$q $$ \\vee $$ r) is false.<br><br>This statement is false when<br><br>p $$ \\wedge $$ q = T<br><br>and ($$ \\sim $$q $$ \\vee $$ r) = F<br><br>Now, p $$ \\wedge $$ q = T when<br><br>both p and q are True.<br><br>As q = T<br><br>$$ \\therefore $$ $$ \\sim $$q = F<br><br>Now, ($$ \\sim $$q $$ \\vee $$ r) = F when<br><br>r = F as $$ \\sim $$q is already false.<br><br>$$ \\therefore $$ p = T<br><br>q = T<br><br>r = F",
-    "section": "A"
+    "section": "A",
+    "type": "MCQM"
   },
   {
     "id": "FXaLJaXBdLHMOgP6Umjgy2xukf0yjac8",
@@ -1357,7 +1421,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$$p \\to \\, \\sim (p \\wedge  \\sim q)$$<br><br>$$ \\equiv p \\to ( \\sim p \\vee q)$$<br><br>$$ \\equiv \\, \\sim p \\vee ( \\sim p \\vee q)$$<br><br>$$ \\equiv \\, \\sim p \\vee q$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "hySFpWbwwA3tcTNjAMjgy2xukf8zn82s",
@@ -1378,7 +1443,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<b>Truth table for S<sub>1</sub> :\n<br><br></b><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-amwm\">p</th>\n    <th class=\"tg-amwm\">q</th>\n    <th class=\"tg-amwm\">~q</th>\n    <th class=\"tg-amwm\">$${q \\vee p}$$</th>\n    <th class=\"tg-amwm\">$${p \\leftrightarrow  \\sim q}$$</th>\n    <th class=\"tg-amwm\">$$\\left( {q \\vee p} \\right) \\to \\left( {p \\leftrightarrow  \\sim q} \\right)$$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table>\n<br>$$ \\therefore $$ S<sub>1</sub>\n is not correct.\n<br><br><b>Truth table for S<sub>2</sub> :</b>\n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-amwm\">p</th>\n    <th class=\"tg-amwm\">q</th>\n    <th class=\"tg-amwm\">~q</th>\n    <th class=\"tg-amwm\">~p</th>\n    <th class=\"tg-amwm\">$${ \\sim p \\leftrightarrow q}$$</th>\n    <th class=\"tg-amwm\">$$ \\sim q \\wedge \\left( { \\sim p \\leftrightarrow q} \\right)$$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody>\n</table>\n<br><br>$$ \\therefore $$ S<sub>2</sub>\n is also not correct.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "FrleKOpX9kV4yTWIC0jgy2xukfqcz1nw",
@@ -1399,7 +1465,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/jgy2xukh0imuzm/97072154-57c2-4168-a57a-5acafc65045b/61d2b420-1d06-11eb-8293-3b6cc591631c/file-jgy2xukh0imuzn-320w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 5th September Evening Slot Mathematics - Mathematical Reasoning Question 74 English Explanation\">\n<br><br>So it is tautology.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "x4gljq07Pu1OCLNlpwjgy2xukfjjl99r",
@@ -1420,7 +1487,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "We know, p $$ \\leftrightarrow $$  q $$ \\equiv $$ $$\\left( {p \\to q} \\right) \\wedge \\left( {q \\to p} \\right)$$\n<br><br>$$ \\therefore $$ x $$ \\leftrightarrow $$  ~ y $$ \\equiv $$ $$\\left( {x \\to  \\sim y} \\right) \\wedge \\left( { \\sim y \\to x} \\right)$$\n<br><br>[ Also $$p \\to q \\equiv  \\sim p \\vee q$$ ]\n<br><br>$$ \\Rightarrow $$ x $$ \\leftrightarrow $$  ~ y $$ \\equiv $$ $$\\left( { \\sim x \\vee  \\sim y} \\right) \\wedge \\left( {y \\vee x} \\right)$$\n<br><br>$$ \\therefore $$ $$ \\sim \\left( {x \\leftrightarrow  \\sim y} \\right) \\equiv \\left( {x \\wedge y} \\right) \\vee \\left( { \\sim y \\wedge  \\sim x} \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lOLfccfYozsLG7HBHYjgy2xukfurii1o",
@@ -1441,7 +1509,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "p $$ \\vee $$ (~p $$ \\wedge $$ q)\n<br><br>= (p $$ \\vee $$ ~p) $$ \\wedge $$ (p $$ \\vee $$ q)\n<br><br>= (T) $$ \\wedge $$ (p $$ \\vee $$ q)\n<br><br>= (p $$ \\vee $$ q)\n<br><br>Now negation of (p $$ \\vee $$ q) is\n<br><br>$$ \\sim $$(p $$ \\vee $$ q) = $$ \\sim p \\wedge  \\sim q$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "9I2l8OlGVOosJWMkWO7k9k2k5fmm2cv",
@@ -1462,7 +1531,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "Contrapositive of p $$ \\to $$ q is ~q $$ \\to $$ ~p\n<br><br>If A $$ \\subseteq $$ B and B $$ \\subseteq $$ D,\nthen A $$ \\subseteq $$ C means\n<br><br>(A $$ \\subseteq $$ B) $$ \\wedge $$ (B $$ \\subseteq $$ D) $$ \\to $$ (A $$ \\subseteq $$ C)\n<br><br>Contrapositive is\n<br><br>$$ \\sim $$(A $$ \\subseteq $$ C) $$ \\to $$ $$ \\sim $$(A $$ \\subseteq $$ B) $$ \\vee $$ $$ \\sim $$(B $$ \\subseteq $$ D)\n<br><br>$$ \\Rightarrow $$ A ⊈ C $$ \\to $$ (A ⊈ B) $$ \\vee $$ (B ⊈ D)",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "L5tV8VTiGQ5Joiaa5M7k9k2k5e4j5it",
@@ -1483,7 +1553,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "(p $$ \\Rightarrow $$ q) $$\\Lambda $$ ( q $$ \\Rightarrow $$ ~p)\n<br><br>$$ \\equiv $$ $$\\left( { \\sim p \\vee q} \\right) \\wedge \\left( { \\sim q \\vee  \\sim p} \\right)$$\n<br><br>$$ \\equiv $$ $$ \\sim p \\vee \\left( {q \\wedge  \\sim q} \\right)$$\n<br><br>$$ \\equiv $$ $$ \\sim $$p\n<br><br>As $${q \\wedge  \\sim q}$$ is a fallacy.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "hAUxfzeSOEKdF4vGZL7k9k2k5hizmsn",
@@ -1504,7 +1575,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7kd4dk73s5ucz/79eb6d80-23bd-44cb-8b49-61ff1d475fa4/d4085430-58d7-11ea-b62d-51ccc5d4afb6/file-7kd4dk73s5ud0-320w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7kd4dk73s5ucz/79eb6d80-23bd-44cb-8b49-61ff1d475fa4/d4085430-58d7-11ea-b62d-51ccc5d4afb6/file-7kd4dk73s5ud0-500w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 8th January Evening Slot Mathematics - Mathematical Reasoning Question 84 English Explanation\"></picture>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "eNuZyyW4HZ3ebDB5rx7k9k2k5gs3o9i",
@@ -1525,7 +1597,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<b>Option A :</b>\n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-wa1i\">P</th>\n    <th class=\"tg-amwm\">Q</th>\n    <th class=\"tg-amwm\">P $$ \\vee $$ Q</th>\n    <th class=\"tg-amwm\">P $$ \\wedge $$ (P $$ \\vee $$ Q)</th>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody></table>\n<br><br><b>Option B :</b>\n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-wa1i\">P</th>\n    <th class=\"tg-amwm\">Q</th>\n    <th class=\"tg-amwm\">P $$ \\wedge $$ Q</th>\n    <th class=\"tg-amwm\">P $$ \\vee $$ (P $$ \\wedge $$ Q)</th>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody></table>\n<br><br><b>Option C :</b>\n<br><br>Q $$ \\to $$ (P $$ \\wedge $$ (P $$ \\to $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge $$ (P $$ \\to $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge $$ (~P $$ \\vee $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge $$ ~P) $$ \\vee $$ (P $$ \\wedge $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (ƒ $$ \\vee $$ (P $$ \\wedge $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge$$ Q)\n<br><br>$$ \\equiv $$ (~Q $$ \\vee $$ P) $$ \\wedge $$ (~Q $$ \\vee $$ Q)\n<br><br>$$ \\equiv $$ (~ Q $$ \\vee $$ P) $$ \\wedge $$ t\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ P\n<br><br><b>Option D :</b>\n<br><br>(P $$ \\wedge $$ (P $$ \\to $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$  (P $$ \\wedge $$ (~P $$ \\vee $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$ ((P $$ \\wedge $$ ~P) $$ \\vee $$ (P $$ \\wedge $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$ (ƒ $$ \\vee $$ (P $$ \\wedge $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$ P $$ \\wedge $$ Q $$ \\to $$ Q\n<br><br>$$ \\equiv $$ ~ (P $$ \\wedge $$ Q) $$ \\vee $$ Q\n<br><br>$$ \\equiv $$ (~ P) $$ \\vee $$ (~Q) $$ \\vee $$ Q\n<br><br>$$ \\equiv $$ (~ P) $$ \\vee $$ t\n<br><br>$$ \\equiv $$ t\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "nFlqKR4iPQURZOKVmP7k9k2k5khoedh",
@@ -1546,7 +1619,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "p $$ \\to $$ (p $$ \\wedge $$ ~q) will be false only when p is true and (p $$ \\wedge $$ ~q) is false.\n<br><br>So, p = T, q = T",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ArQYSzpz7JMKTYCSCM3rsa0w2w9jx2f318i",
@@ -1567,7 +1641,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "~ s $$ \\vee $$ ( ~ r $$ \\wedge $$ s)<br><br>\n$$ \\equiv $$ (~s $$ \\vee $$ ~r) $$ \\wedge $$ (~s $$ \\vee $$ s)<br><br>\n$$ \\equiv $$ ( ~s $$ \\vee $$ ~r) $$ \\wedge $$ t<br><br>\n$$ \\equiv $$ ~s $$ \\vee $$ ~ r $$ \\equiv $$ ~ (s $$ \\wedge $$ r)<br><br>\n$$ \\therefore $$ Negation of ~s $$ \\vee $$ (~r $$ \\wedge $$ s) is s $$ \\wedge $$ r",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "L27qJHKqTbCWQYecUh3rsa0w2w9jwxnnauw",
@@ -1588,7 +1663,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "(p $$ \\vee $$ q) $$ \\vee $$ (p $$ \\vee $$ ~ q)<br><br>\n= p $$ \\vee $$ (q $$ \\vee $$ p) $$ \\vee $$ ~ q<br><br>\n= (p $$ \\vee $$ p) $$ \\vee $$ (q $$ \\vee $$ ~ q)<br><br>\n= p $$ \\vee $$ T<br><br>\n= T so first statement is tautology",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "xwfoVcp6WOGDPwSwrCee3",
@@ -1609,7 +1685,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "Given q is F and (p $$ \\wedge $$ q) $$ \\leftrightarrow $$ r is T\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;p $$ \\wedge $$ q is F which implies that r is F\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;q is F and r is F\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;(p $$ \\wedge $$ r) is always F\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;(p $$ \\wedge $$ r) $$ \\to $$ (p $$ \\vee $$ r) is tautology.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "EUw7UhsPl8bIWjmhL43rsa0w2w9jxadlhgq",
@@ -1630,7 +1707,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$$ \\sim \\left( {p \\to  \\sim q} \\right) \\Rightarrow  \\sim \\left( { \\sim p \\vee  \\sim q} \\right) \\Rightarrow p \\wedge q$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "FAPJ14zebD0AktYldM3rsa0w2w9jx66727a",
@@ -1651,7 +1729,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "p $$ \\to $$ ( ~ q $$ \\vee $$ r) $$ \\equiv $$ ~ p $$ \\wedge $$ ( ~ q $$ \\vee $$ r) $$ \\equiv $$ ( ~ p $$ \\vee $$ ~ q) $$ \\vee $$ r $$ \\equiv $$ ~ ( p $$ \\wedge $$ q ) $$ \\vee $$ r<br><br>\n<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width: 100%}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-s6z2{text-align:center}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-hgcj{font-weight:bold;text-align:center}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-hgcj\">p</th>\n    <th class=\"tg-hgcj\">q</th>\n    <th class=\"tg-amwm\">r</th>\n    <th class=\"tg-amwm\">(p $$ \\wedge $$ q) $$ \\vee $$ r </th>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody></table>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "u0jxs6AIyc81iqYkTi5ac",
@@ -1672,7 +1751,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/3dzmOObAHLYlYJDXM/IrxMXw8iCOjZOpA1KUsyD6X7uEdjz/oL8Wh4cTDJ5v7PFXAZWfWa/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th January Evening Slot Mathematics - Mathematical Reasoning Question 96 English Explanation\">",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "9p3XSt1mtpsZig0ryRz1S",
@@ -1693,7 +1773,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "((p $$ \\wedge $$ q) $$ \\vee $$ (p $$ \\vee $$ $$ \\sim $$ q)) $$ \\wedge $$ ($$ \\sim $$ p $$ \\wedge $$ $$ \\sim $$ q)\n<br><br>$$ \\equiv $$ $$\\left( {\\left( {\\left( {p \\vee \\left( {p \\vee  \\sim q} \\right)} \\right)} \\right) \\wedge \\left( {q \\vee \\left( {p \\vee  \\sim q} \\right)} \\right)} \\right) \\wedge \\left( { \\sim p \\wedge  \\sim q} \\right)$$\n<br><br>$$ \\equiv $$ $$\\left( {\\left( {p \\vee  \\sim q} \\right) \\wedge \\left( {q \\vee  \\sim q \\vee p} \\right)} \\right) \\wedge \\left( { \\sim p \\wedge  \\sim q} \\right)$$\n<br><br>$$ \\equiv $$ $$\\left( {\\left( {p \\vee  \\sim q} \\right) \\wedge \\left( {t \\vee p} \\right)} \\right) \\wedge \\left( { \\sim p \\wedge  \\sim q} \\right)$$\n<br><br>$$ \\equiv $$ $$\\left( {\\left( {p \\vee  \\sim q} \\right) \\wedge t} \\right) \\wedge \\left( { \\sim p \\wedge  \\sim q} \\right)$$\n<br><br>$$ \\equiv $$ $$\\left( {p \\vee  \\sim q} \\right) \\wedge \\left( { \\sim p \\wedge  \\sim q} \\right)$$\n<br><br>$$ \\equiv $$ $$\\left( {p \\wedge  \\sim p \\wedge  \\sim q} \\right) \\vee \\left( { \\sim q \\wedge  \\sim p \\wedge  \\sim q} \\right)$$\n<br><br>$$ \\equiv $$ $$\\left( {f \\wedge  \\sim q} \\right) \\vee \\left( { \\sim q \\wedge  \\sim p} \\right)$$\n<br><br>$$ \\equiv $$ $$f' \\vee \\left( { \\sim q \\wedge  \\sim p} \\right)$$\n<br><br>$$ \\equiv $$ $$\\left( { \\sim q \\wedge  \\sim p} \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "hY5nw44745zszMuFPd7ND",
@@ -1714,7 +1795,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "Here you have to check all the options.\n<br><br>We know,  p $$ \\to $$ q = $$ \\sim $$ p $$ \\vee $$ q\n<br><br>(A) (p $$ \\wedge $$ q) $$ \\to $$ (~ p) $$ \\vee $$ q\n<br><br>= $$ \\sim $$ (p $$ \\wedge $$ q) $$ \\vee $$ ((~ p) $$ \\vee $$ q)\n<br><br>= ($$ \\sim $$ p $$ \\vee $$ $$ \\sim $$ q) $$ \\vee $$ ((~ p) $$ \\vee $$ q)\n<br><br>= $$ \\sim $$ p $$ \\vee $$ (q $$ \\vee $$ $$ \\sim $$ q)\n<br><br>= $$ \\sim $$ p $$ \\vee $$ t \n<br><br>[(q $$ \\vee $$ $$ \\sim $$ q) = t (tautology)]\n<br><br>= t\n<br><br>(B) (p $$ \\wedge $$ q) $$ \\to $$ p\n<br><br>= $$ \\sim $$ (p $$ \\wedge $$ q) $$ \\vee $$ p\n<br><br>= $$ \\sim $$ p $$ \\vee $$ $$ \\sim $$ q $$ \\vee $$ p\n<br><br>= t $$ \\vee $$ $$ \\sim $$ q\n<br><br>= t\n<br><br>(C) ( p $$ \\vee $$ q)  $$ \\to $$  ( p $$ \\vee $$ (~q))\n<br><br>= $$ \\sim $$ ( p $$ \\vee $$ q)  $$ \\vee $$  ( p $$ \\vee $$ (~q))\n<br><br>= ($$ \\sim $$ p $$ \\wedge $$ $$ \\sim $$ q) $$ \\vee $$ ( p $$ \\vee $$ (~q))\n<br><br>= $$ \\sim $$ q $$ \\wedge $$ (p $$ \\vee $$ $$ \\sim $$p)\n<br><br>= $$ \\sim $$ q $$ \\wedge $$ t\n<br><br>= $$ \\sim $$ q (not tautology)\n<br><br>(D) p $$ \\to $$ ( p $$ \\vee $$ q)\n<br><br>= $$ \\sim $$ p $$ \\vee $$ ( p $$ \\vee $$ q)\n<br><br>= t $$ \\vee $$ q\n<br><br>= t",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "BEuYoTmWnNTkZjURIi18hoxe66ijvwvxo14",
@@ -1735,7 +1817,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "p $$ \\to $$ (q $$ \\vee $$ r)\n<br><br>= $$ \\sim $$ p $$ \\vee $$ (q $$ \\vee $$ r)\n<br><br>$$ \\sim $$ p $$ \\vee $$ (q $$ \\vee $$ r) is false when\n<br><br>(1) $$ \\sim $$ p = False $$ \\Rightarrow $$ P = True\n<br><br>and (2) (q $$ \\vee $$ r) is false $$ \\Rightarrow $$ q and r both are false.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "fjCe9jjDKWd14AIB6hdqt",
@@ -1756,7 +1839,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "$$ \\sim $$[p $$ \\vee $$ (~p $$ \\wedge $$ q)]\n<br><br>= $$ \\sim $$ p $$ \\wedge $$ ($$ \\sim $$($$ \\sim $$ p $$ \\vee $$ $$ \\sim $$q)\n<br><br>= $$ \\sim $$ p $$ \\wedge $$ ( p $$ \\vee $$ $$ \\sim $$q)\n<br><br>= ( $$ \\sim $$ p $$ \\wedge $$ p ) $$ \\vee $$ ($$ \\sim $$ p $$ \\wedge $$ $$ \\sim $$q)\n<br><br>= ($$ \\sim $$ p $$ \\wedge $$ $$ \\sim $$q) [ as $$ \\sim $$ p $$ \\wedge $$ p is always false)",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "SWEwhQ3jZbQCEVRMtlh3A",
@@ -1777,7 +1861,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/lFylFg1JYcRX1XbGB/a0FZOTrKwOA6UxbCOWke8CwdAuSUT/TA6LXWVx5BZdfRfZ39xBln/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th January Evening Slot Mathematics - Mathematical Reasoning Question 102 English Explanation\">",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "SzEiL7YZ0iQAZgnQKyN4R",
@@ -1798,7 +1883,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<img src=\"https://gateclass.cdn.examgoal.net/qTCfGCsgnLJmurfJO/mTRBMelO4xBQhIbdNCj3SfmvgSIpr/yQ9Y64EkKKeaEzp8Qw7Tue/uploadfile.jpg\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th January Morning Slot Mathematics - Mathematical Reasoning Question 103 English Explanation\">\n<br><br>Given that, (p $$ \\oplus $$ q) $$\\wedge$$ (~ p $$ \\odot $$ q) $$ \\equiv $$  p $$\\wedge$$ q.\n<br><br>From the truth table you can see this equivalence only hold when ordered pair $$\\left( { \\oplus , \\odot } \\right)$$ is = $$\\left( { \\wedge , \\vee } \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "zJmXVh9oZFlkQlvs",
@@ -1819,7 +1905,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/KGQBy2KN1RaOQNdxV/Z8k8WzVsSw3uP7Xz3EOFNCMgVcNdk/RUXOyGUFoplWNFCOiPHXfu/uploadfile.jpg\" loading=\"lazy\" alt=\"JEE Main 2018 (Offline) Mathematics - Mathematical Reasoning Question 121 English Explanation\">\n<br><br>From the table you can see ~p and\n<br> ~(p $$ \\vee $$ q) $$ \\vee $$ (~p $$ \\wedge $$ q) are equivalent.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "CARdLkhYP3rek0ixIlsbT",
@@ -1840,7 +1927,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/7Vb95b7k85ys9ytPy/eO9UER3yNPy9PZQx4zFFfN43uZDei/n16iicGVbGeZ2opyA7QykZ/uploadfile.jpg\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Online) 15th April Morning Slot Mathematics - Mathematical Reasoning Question 110 English Explanation\"><br>\nFrom the truth table you can see (p $$ \\wedge $$ ~q) $$ \\wedge $$ (p $$ \\wedge $$ r) $$\\to$$ ~p $$\\vee$$ q is <b>false</b> only when values of (p, q, r) is (T, F, T).",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "9i272wuPEKyF1Q1C6pQQl",
@@ -1854,14 +1942,15 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQ",
+    "questionType": "MCQM",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-hgcj\">p</th>\n    <th class=\"tg-amwm\">q</th>\n    <th class=\"tg-amwm\">~p</th>\n    <th class=\"tg-amwm\">~q</th>\n    <th class=\"tg-amwm\">~p $$ \\vee $$ ~q</th>\n    <th class=\"tg-amwm\">p $$ \\to $$ (~p $$\\vee$$ ~q)</th>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody></table><br>\nFrom the truth table,<br><br>\np $$ \\to $$ (~p $$\\vee$$ ~q) is false only when p and q both are true.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQM"
   },
   {
     "id": "IeXfuwNghZ9rPd4A",
@@ -1882,7 +1971,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "We have<br><br>\n<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-s6z2{text-align:center}\n.tg .tg-hgcj{font-weight:bold;text-align:center}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-hgcj\">p</th>\n    <th class=\"tg-hgcj\">q</th>\n    <th class=\"tg-hgcj\">~p</th>\n    <th class=\"tg-hgcj\">p$$\\to$$q</th>\n    <th class=\"tg-hgcj\">~p$$\\to$$q</th>\n    <th class=\"tg-hgcj\">(~p$$\\to$$q)$$\\to$$q</th>\n    <th class=\"tg-hgcj\">(p$$\\to$$q)$$\\to$$((~p$$\\to$$q)$$\\to$$q)</th>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">F</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n    <td class=\"tg-s6z2\">T</td>\n  </tr>\n</tbody></table>\n<br>\n$$ \\therefore $$ It is tautology.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "O1CrpwejP1w9RrxfWoFIc",
@@ -1903,7 +1993,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<img src=\"https://gateclass.static.cdn.examgoal.net/5zTbH8zwu0wJZaFke/tyBqLcGYS9Pq5EOlU5qNL491PuOUh/gEmh8rTirgAroJSmV6GPRz/uploadfile.jpg\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2017 (Online) 8th April Morning Slot Mathematics - Mathematical Reasoning Question 107 English Explanation\">",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "csz1CrCo9hs1gIxJ",
@@ -1924,7 +2015,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<img src=\"https://gateclass.cdn.examgoal.net/W3iUUKAK091ok1iYR/8HSPWtDptuwd7CcOkhxrHgDo4hy7f/t0aUb5WYW03FsXNGzU2q58/uploadfile.jpg\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2016 (Offline) Mathematics - Mathematical Reasoning Question 119 English Explanation\"><br>\nFrom the table you can see for both p $$\\vee$$ q and (p $$\\wedge$$ ~q) $$\\vee$$ q $$\\vee$$ (~p $$\\wedge$$ q) truth table matches so they are equivalent.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "z8kycnQh0D6zJpWr",
@@ -1945,7 +2037,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<img src=\"https://gateclass.static.cdn.examgoal.net/2OAgJSCgoisOIuHQi/0RUPnVokAM5r5pw4wQPIququqMxsm/6RBqA2leE55pxx7XCRommU/uploadfile.jpg\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2015 (Offline) Mathematics - Mathematical Reasoning Question 118 English Explanation\">\n<br>From the table you can see (s $$\\wedge$$ r) and negation of ~s $$\\vee$$ (~r $$\\wedge$$ s)  have same truth value. So they are equivalent.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "eFr6UeIkqoSt0gX8",
@@ -1966,7 +2059,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 664px\">\n<colgroup>\n<col style=\"width: 35px\">\n<col style=\"width: 43px\">\n<col style=\"width: 83px\">\n<col style=\"width: 83px\">\n<col style=\"width: 108px\">\n<col style=\"width: 92px\">\n<col style=\"width: 102px\">\n<col style=\"width: 118px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">$$ \\sim p$$</th>\n    <th class=\"tg-baqh\">$$ \\sim q$$</th>\n    <th class=\"tg-baqh\">$$p \\leftrightarrow q$$</th>\n    <th class=\"tg-baqh\">$$p \\leftrightarrow  \\sim q$$</th>\n    <th class=\"tg-baqh\">$$ \\sim p \\leftrightarrow q$$</th>\n    <th class=\"tg-baqh\">$$ \\sim (p \\leftrightarrow  \\sim q)$$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table></p>\n<p>From the truth table we can say that given statement is equivalent to $$p \\leftrightarrow q$$.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "w1f5gbWwTUKeqvXF",
@@ -1987,7 +2081,8 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p>Statement - I : $$(p \\wedge  \\sim q) \\wedge ( \\sim p \\wedge q)$$</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 608px\">\n<colgroup>\n<col style=\"width: 35px\">\n<col style=\"width: 43px\">\n<col style=\"width: 83px\">\n<col style=\"width: 83px\">\n<col style=\"width: 108px\">\n<col style=\"width: 92px\">\n<col style=\"width: 164px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">$$ \\sim p$$</th>\n    <th class=\"tg-baqh\">$$ \\sim q$$</th>\n    <th class=\"tg-baqh\">$$p \\wedge  \\sim q$$<br></th>\n    <th class=\"tg-baqh\">$$ \\sim p \\wedge q$$<br></th>\n    <th class=\"tg-baqh\">$$(p \\wedge  \\sim q) \\wedge ( \\sim p \\wedge q)$$<br></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody>\n</table></p>\n<p>Hence, statement-I is a fallacy.</p>\n<p>Statement - II : $$(p \\to q) \\leftrightarrow ( \\sim q \\to  \\sim p)$$</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 717px\">\n<colgroup>\n<col style=\"width: 35px\">\n<col style=\"width: 43px\">\n<col style=\"width: 83px\">\n<col style=\"width: 83px\">\n<col style=\"width: 108px\">\n<col style=\"width: 112px\">\n<col style=\"width: 253px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">$$ \\sim p$$</th>\n    <th class=\"tg-baqh\">$$ \\sim q$$</th>\n    <th class=\"tg-baqh\">$$p \\to q$$<br></th>\n    <th class=\"tg-baqh\">$$ \\sim q \\to  \\sim p$$<br></th>\n    <th class=\"tg-baqh\">$$(p \\to q) \\leftrightarrow ( \\sim q \\to  \\sim p)$$<br></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table></p>\n<p>Hence, statement - II is a tautology.</p>\n<p>Now, statement-II does not depend on statement-I.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "U4V9b6lrngYsbSHC",
@@ -2008,7 +2103,8 @@
     "topic": "logical-connectives",
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l3fdb05p/c9d4c926-25a7-47f2-b2d6-27e5c7d3dd72/0e89a3d0-d8be-11ec-bed7-8f98fee06619/file-1l3fdb05q.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l3fdb05p/c9d4c926-25a7-47f2-b2d6-27e5c7d3dd72/0e89a3d0-d8be-11ec-bed7-8f98fee06619/file-1l3fdb05q.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"AIEEE 2009 Mathematics - Mathematical Reasoning Question 112 English Explanation\">\n<p>Therefore, S1 is true and S2 is false.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "x3tbE32XVPE9RRjV",
@@ -2029,6 +2125,7 @@
     "topic": "logical-connectives",
     "difficulty": "easy",
     "solution": "<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 551px\">\n<colgroup>\n<col style=\"width: 52px\">\n<col style=\"width: 63px\">\n<col style=\"width: 81px\">\n<col style=\"width: 122px\">\n<col style=\"width: 101px\">\n<col style=\"width: 132px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">$$q \\to p$$</th>\n    <th class=\"tg-baqh\">$$p \\to (q \\to p)$$</th>\n    <th class=\"tg-baqh\">$$(p \\vee q)$$</th>\n    <th class=\"tg-baqh\">$$p \\to (p \\vee q)$$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$$\\therefore$$ Statement p $$\\to$$ (q $$\\to$$ p) is equivalent to p $$\\to$$ (p $$\\vee$$ q).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

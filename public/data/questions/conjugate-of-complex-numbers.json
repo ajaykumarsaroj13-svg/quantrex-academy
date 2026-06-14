@@ -18,7 +18,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "<p>$$ 4 z^2=\\bar{z}=0 $$</p>\n<p>Let $z=x+i y$</p>\n<p>$$ \\begin{aligned} & 4(x+i y)^2+x-i y=0 \\\\ & 4 x^2-4 y^2+8 x y i+x-i y=0 \\\\ & 4 x^2-4 y^2+x=0 \\& y(8 x-1)=0 \\\\ & \\Rightarrow y=0 \\text { or } x=\\frac{1}{8} \\end{aligned} $$</p>\n<p>If $y=0,4 x^2+x=0$</p>\n<p>$$ \\begin{array}{ll} x=0, \\frac{-1}{4} & \\\\ \\therefore z_1=0+0 . i & \\left|z_1\\right|^2=0 \\\\ z_2=-\\frac{1}{4}+0 i & \\left|z_2\\right|^2=\\frac{1}{16} \\end{array} $$</p>\n<p>If $x=\\frac{1}{8}$</p>\n<p>$$ \\begin{aligned} & 4 \\times \\frac{1}{64}-4 y^2+\\frac{1}{8}=0 \\Rightarrow 4 y^2=\\frac{3}{16} \\Rightarrow y= \\pm \\frac{\\sqrt{3}}{8} \\\\ & \\therefore z_3=\\frac{1}{8}+\\frac{\\sqrt{3}}{8} i \\quad\\left|z_3\\right|^2=\\frac{1}{64}+\\frac{3}{64}=\\frac{1}{16} \\\\ & z_4=\\frac{1}{8}-\\frac{\\sqrt{3}}{8} i \\quad\\left|z_4\\right|^2=\\frac{1}{64}+\\frac{3}{64}=\\frac{1}{16} \\\\ & \\therefore \\sum_{i=1}^n\\left|z_i\\right|^2=0+\\frac{1}{16}+\\frac{1}{16}+\\frac{1}{16}=\\frac{3}{16} \\end{aligned} $$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mnswhvmn",
@@ -32,14 +33,15 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQ",
+    "questionType": "MCQM",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "hard",
     "solution": "<p>Let</p>\n<p>$$ z = x+iy \\qquad \\text{where } x,y \\in \\mathbb{R}. $$</p>\n<p>Then</p>\n<p>$$ \\bar z = x-iy. $$</p>\n<p>The given equation is</p>\n<p>$$ z(\\bar z+2+i)+k(2+3i)=0. $$</p>\n<p>We have to find all real values of $k$ for which this equation has at least one complex solution $z$.</p>\n\n<p>First, simplify $z(\\bar z+2+i)$:</p>\n<p>$$ z(\\bar z+2+i)=z\\bar z+z(2+i). $$</p>\n<p>Now,</p>\n<p>$$ z\\bar z = |z|^2 = x^2+y^2 $$</p>\n<p>and</p>\n<p>$$ z(2+i)=(x+iy)(2+i). $$</p>\n<p>Let us multiply:</p>\n<p>$$ (x+iy)(2+i)=2x+ix+2iy+i^2y $$</p>\n<p>Since $i^2=-1$,</p>\n<p>$$ (x+iy)(2+i)=(2x-y)+i(x+2y). $$</p>\n<p>So,</p>\n<p>$$ z(\\bar z+2+i)=x^2+y^2+(2x-y)+i(x+2y). $$</p>\n<p>Hence the given equation becomes</p>\n<p>$$ \\left(x^2+y^2+2x-y\\right)+i(x+2y)+k(2+3i)=0. $$</p>\n<p>Now separate real and imaginary parts:</p>\n<p>$$ \\left(x^2+y^2+2x-y+2k\\right)+i\\left(x+2y+3k\\right)=0. $$</p>\n<p>Therefore,</p>\n<p>$$ x^2+y^2+2x-y+2k=0 \\qquad \\text{and} \\qquad x+2y+3k=0. $$</p>\n\n<p>From the second equation,</p>\n<p>$$ 3k=-(x+2y) $$</p>\n<p>so</p>\n<p>$$ k=-\\frac{x+2y}{3}. $$</p>\n<p>Substitute this into the first equation:</p>\n<p>$$ x^2+y^2+2x-y+2\\left(-\\frac{x+2y}{3}\\right)=0. $$</p>\n<p>Multiply by $3$:</p>\n<p>$$ 3x^2+3y^2+6x-3y-2x-4y=0 $$</p>\n<p>$$ 3x^2+3y^2+4x-7y=0. $$</p>\n<p>Now complete squares:</p>\n<p>$$ 3\\left(x^2+\\frac{4}{3}x\\right)+3\\left(y^2-\\frac{7}{3}y\\right)=0. $$</p>\n<p>$$ 3\\left[\\left(x+\\frac{2}{3}\\right)^2-\\frac{4}{9}\\right] +3\\left[\\left(y-\\frac{7}{6}\\right)^2-\\frac{49}{36}\\right]=0. $$</p>\n<p>$$ 3\\left(x+\\frac{2}{3}\\right)^2-\\frac{4}{3} +3\\left(y-\\frac{7}{6}\\right)^2-\\frac{49}{12}=0. $$</p>\n<p>$$ 3\\left(x+\\frac{2}{3}\\right)^2+3\\left(y-\\frac{7}{6}\\right)^2 =\\frac{4}{3}+\\frac{49}{12}. $$</p>\n<p>$$ 3\\left(x+\\frac{2}{3}\\right)^2+3\\left(y-\\frac{7}{6}\\right)^2 =\\frac{16+49}{12}=\\frac{65}{12}. $$</p>\n<p>So,</p>\n<p>$$ \\left(x+\\frac{2}{3}\\right)^2+\\left(y-\\frac{7}{6}\\right)^2=\\frac{65}{36}. $$</p>\n<p>This is a circle with centre</p>\n<p>$$ \\left(-\\frac{2}{3},\\frac{7}{6}\\right) $$</p>\n<p>and radius</p>\n<p>$$ \\frac{\\sqrt{65}}{6}. $$</p>\n\n<p>Now,</p>\n<p>$$ k=-\\frac{x+2y}{3}. $$</p>\n<p>So we need the range of the linear expression $x+2y$ on this circle.</p>\n<p>Let</p>\n<p>$$ S=x+2y. $$</p>\n<p>For a circle, maximum and minimum of a linear expression occur at the extreme points in the direction of its normal vector.</p>\n<p>At the centre,</p>\n<p>$$ S_c=-\\frac{2}{3}+2\\cdot\\frac{7}{6} =-\\frac{2}{3}+\\frac{7}{3} =\\frac{5}{3}. $$</p>\n<p>The vector corresponding to $x+2y$ is $(1,2)$, whose magnitude is</p>\n<p>$$ \\sqrt{1^2+2^2}=\\sqrt{5}. $$</p>\n<p>Hence the maximum variation from the centre is</p>\n<p>$$ \\text{radius} \\times \\sqrt{5} =\\frac{\\sqrt{65}}{6}\\cdot\\sqrt{5} =\\frac{\\sqrt{325}}{6} =\\frac{5\\sqrt{13}}{6}. $$</p>\n<p>Therefore,</p>\n<p>$$ S_{\\min}=\\frac{5}{3}-\\frac{5\\sqrt{13}}{6}, \\qquad S_{\\max}=\\frac{5}{3}+\\frac{5\\sqrt{13}}{6}. $$</p>\n<p>Since</p>\n<p>$$ k=-\\frac{S}{3}, $$</p>\n<p>the interval for $k$ is</p>\n<p>$$ \\left[-\\frac{S_{\\max}}{3},-\\frac{S_{\\min}}{3}\\right]. $$</p>\n<p>So if this interval is $[\\alpha,\\beta]$, then</p>\n<p>$$ \\alpha+\\beta = -\\frac{S_{\\max}+S_{\\min}}{3} = -\\frac{2\\cdot \\frac{5}{3}}{3} = -\\frac{10}{9}. $$</p>\n<p>Hence,</p>\n<p>$$ 9(\\alpha+\\beta)=9\\left(-\\frac{10}{9}\\right)=-10. $$</p>\n<p>Therefore, the correct answer is</p>\n<p>$$ \\boxed{-10}. $$</p>\n<p>So, Option A is correct.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQM"
   },
   {
     "id": "1lgsugbnn",
@@ -60,7 +62,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "We are given that $a \\in \\mathbb{C}$ and $z \\in \\mathbb{C}$.\n\n<br/><br/>Let $a = x_1 + iy_1$ and $z = x_2 + iy_2$ where $x_1, y_1, x_2, y_2 \\in \\mathbb{R}$\n\n<br/><br/>We are also given two sets A and B defined as follows :\n<br/><br/>- A is the set of all complex numbers $z$ for which the real part of $(a + \\overline{z})$ is greater than the imaginary part of $(\\overline{a} + z)$.\n<br/><br/>- B is the set of all complex numbers $z$ for which the real part of $(a + \\overline{z})$ is less than the imaginary part of $(\\overline{a} + z)$.\n\n<br/><br/>Statement (S1) says : If the real part and imaginary part of $a$ are both positive, then the set A contains all the real numbers. \n<br/><br/>Statement (S2) says : If the real part and imaginary part of $a$ are both negative, then the set B contains all the real numbers.\n\n<br/><br/>We need to determine which of these statements are true.\n\n<br/><br/>Let's evaluate each statement.\n\n<br/><br/>1. Statement (S1) : For $z \\in A$,\n    \n   <br/><br/> $Re(a + \\overline{z}) > Im(\\overline{a} + z)$\n    \n  <br/><br/>  This can be re-written as $x_1 + x_2 > y_2 - y_1$\n    \n   <br/><br/> If we consider only real z (i.e. $y_2 = 0$) and given that $x_1, y_1 > 0$, then the condition simplifies to $x_2 > -(x_1 + y_1)$.\n    \n  <br/><br/>  This indicates that A covers a part of the negative real axis, but not the entire real axis. Therefore, Statement (S1) is false.\n\n<br/><br/>2. Statement (S2) : For $z \\in B$,\n    \n  <br/><br/>  $Re(a + \\overline{z}) < Im(\\overline{a} + z)$\n    \n   <br/><br/> This can be re-written as $x_1 + x_2 < y_2 - y_1$\n    \n   <br/><br/> If we consider only real z (i.e. $y_2 = 0$) and given that $x_1, y_1 < 0$, then the condition simplifies to $x_2 < -(x_1 + y_1)$.\n    \n   <br/><br/> This indicates that B covers a part of the positive real axis, but not the entire real axis. Therefore, Statement (S2) is false.\n\n<br/><br/>Therefore, both (S1) and (S2) are false, so the answer is Option A : both are false.\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgow71ev",
@@ -81,7 +84,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "Let $z=x+i y$\n<br/><br/>$$\n\\begin{aligned}\n&\\bar{z}=i\\left(z^2+\\operatorname{Re}(\\bar{z})\\right) \\\\\\\\\n&\\Rightarrow x-i y=i\\left(x^2-y^2+2 i x y+x\\right) \\\\\\\\\n& x-i y=i\\left(x^2-y^2+x\\right)-2 x y \\\\\\\\\n &x=-2 x y \\Rightarrow x(2 y+1)=0 \\\\\\\\\n&\\Rightarrow x=0, y=\\frac{-1}{2}  ........(i)\\\\\\\\\n&-y=x^2-y^2+x ...........(ii)\n\\end{aligned}\n$$\n<br/><br/><b>Case (I)</b> $x=0$\n<br/><br/>$\\Rightarrow-y=-y^2 \\Rightarrow y^2-y=0 \\Rightarrow y=0,1$\n<br/><br/>$$ \\therefore $$ $z=0, i$\n<br/><br/><b>Case (II)</b> $y=\\frac{-1}{2}$\n<br/><br/>$\\Rightarrow \\frac{1}{2}=x^2-\\frac{1}{4}+x \\Rightarrow x^2+x-\\frac{3}{4}=0$ \n<br/><br/>$$ \\Rightarrow $$ $4 x+4 x-3=0 \\Rightarrow(2 x-1)(2 x+3)=0$ \n<br/><br/>$$ \\Rightarrow $$ $x=\\frac{1}{2}, \\frac{-3}{2}$\n<br/><br/>$$\n\\begin{aligned}\n& z=\\frac{1}{2}-\\frac{1}{2} i, \\frac{-3}{2}-\\frac{1}{2} i \\\\\\\\\n& \\sum|z|^2=0+1+\\frac{1}{2}+\\frac{5}{2}=4\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lgnyjdfm",
@@ -102,7 +106,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "Let $z_1=\\left(\\frac{z-\\bar{z}+z \\bar{z}}{2-3 z+5 \\bar{z}}\\right)$<br/><br/>\nLet $\\mathrm{z}=3+\\mathrm{iy}$<br/><br/> $\\bar{z}=3-i y$<br/><br/>\n$$\n\\begin{aligned}\n& z_1=\\frac{2 i y+\\left(9+y^2\\right)}{2-3(3+i y)+5(3-i y)} \\\\\\\\\n& =\\frac{9+y^2+i(2 y)}{8-8 i y} \\\\\\\\\n& =\\frac{\\left(9+y^2\\right)+i(2 y)}{8(1-i y)} \\\\\\\\\n& \\operatorname{Re}\\left(z_1\\right)=\\frac{\\left(9+y^2\\right)-2 y^2}{8\\left(1+y^2\\right)}\n\\end{aligned}\n$$<br/><br/>\n$$\n\\begin{aligned}\n& =\\frac{9-y^2}{8\\left(1+y^2\\right)} \\\\\\\\\n& =\\frac{1}{8}\\left[\\frac{10-\\left(1+y^2\\right)}{\\left(1+y^2\\right)}\\right] \\\\\\\\\n& =\\frac{1}{8}\\left[\\frac{10}{1+y^2}-1\\right] \\\\\\\\\n& 1+y^2 \\in[1, \\infty] \\\\\\\\\n& \\frac{1}{1+y^2} \\in(0,1] \\\\\\\\\n& \\frac{10}{1+y^2} \\in(0,10] \\\\\\\\\n& \\frac{10}{1+y^2}-1 \\in(-1,9] \\\\\\\\\n& \\operatorname{Re}\\left(\\mathrm{z}_1\\right) \\in\\left(\\frac{-1}{8}, \\frac{9}{8}\\right] \\\\\\\\\n& \\alpha=\\frac{-1}{8}, \\beta=\\frac{9}{8} \\\\\\\\\n& 24(\\beta-\\alpha)=24\\left(\\frac{9}{8}+\\frac{1}{8}\\right)=30\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "l7eidu17",
@@ -119,7 +124,8 @@
     "difficulty": "medium",
     "solution": "<p>For a complex number $$z = x + iy$$, it's conjugate $$\\overline z  = x - iy$$. Now z is purely real when $$y = 0$$.</p>\n<p>When $$y = 0$$ then $$z = x + i \\times (0) = x$$ and $$\\overline z  = x - i \\times (0) = x$$</p>\n<p>$$\\therefore$$ $$z = \\overline z $$ when z is purely real.</p>\n<p>Now given, $$w = {{2 + 3z + 4{z^2}} \\over {2 - 3z + 4{z^2}}}$$ is real</p>\n<p>$$\\therefore$$ $$w = \\overline w $$</p>\n<p>$$ \\Rightarrow {{2 + 3z + 4{z^2}} \\over {2 - 3z + 4{z^2}}} = \\left( {\\overline {{{2 + 3z + 4{z^2}} \\over {2 - 3z + 4{z^2}}}} } \\right)$$</p>\n<p>$$ \\Rightarrow {{2 + 3z + 4{z^2}} \\over {2 - 3z + 4{z^2}}} = {{2 + 3\\overline z  + 4{{(\\overline z )}^2}} \\over {2 - 3\\overline z  + 4{{(\\overline z )}^2}}}$$</p>\n<p>$$ \\Rightarrow 4 - 6\\overline z  + 8{(\\overline z )^2} + 6z - 9z\\overline z  + 12z{(\\overline z )^2} + 8{(\\overline z )^2} - 12{z^2}\\overline z  + 16{z^2}{(\\overline z )^2} = 4 + 6\\overline z  + 8{(\\overline z )^2} - 6z - 9z\\overline z  - 12z{(\\overline z )^2} + 8{z^2} + 12{z^2}\\overline z  + 16{z^2}{(\\overline z )^2}$$</p>\n<p>$$ \\Rightarrow  - 6\\overline z  + 6z + 12z{(\\overline z )^2} + 12{z^2}\\overline z  = 6\\overline z  - 6z - 12z{(\\overline z )^2} + 12{z^2}\\overline z $$</p>\n<p>$$ \\Rightarrow 6(z - \\overline z ) + 12z\\overline z (\\overline z  - z) = 6(\\overline z  - z) + 12z\\overline z (z - \\overline z )$$</p>\n<p>$$ \\Rightarrow 12(z - \\overline z ) + 24(\\overline z  - z)(z\\overline z ) = 0$$</p>\n<p>$$ \\Rightarrow 12(z - \\overline z )[1 - 2z\\overline z ] = 0$$</p>\n<p>$$ \\Rightarrow 12(x + iy - (x - iy))[1 - 2|z{|^2}] = 0$$ [as $$|z{|^2} = z\\overline z $$]</p>\n<p>$$ \\Rightarrow 12 \\times 2iy[1 - 2|z{|^2}] = 0$$</p>\n<p>$$ \\Rightarrow 24iy[1 - 2|z{|^2}] = 0$$</p>\n<p>$$\\therefore$$ $$y = 0$$ or $$1 - 2|z{|^2} = 0$$</p>\n<p>$$y = 0$$ not possible as given z is a complex number with non-zero imaginary part.</p>\n<p>$$\\therefore$$ $$1 - 2|z{|^2} = 0$$</p>\n<p>$$ \\Rightarrow |z{|^2} = {1 \\over 2} = 0.5$$</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "l7eiex96",
@@ -128,7 +134,7 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -136,7 +142,8 @@
     "difficulty": "medium",
     "solution": "<p>Let, $$z = x + iy$$</p>\n<p>$$\\therefore$$ $$\\overline z  = x - iy$$</p>\n<p>Given, $$\\overline z  - {z^2} = i(\\overline z  + {z^2})$$</p>\n<p>$$ \\Rightarrow (x - iy) - {(x + iy)^2} = i\\left[ {(x - iy) + {{(x + iy)}^2}} \\right]$$</p>\n<p>$$ \\Rightarrow (x - iy) - ({x^2} - {y^2} + 2ixy) = i[x - iy + {x^2} - {y^2} + 2ixy]$$</p>\n<p>$$ \\Rightarrow (x - {x^2} + {y^2}) - iy(1 + 2x) = xi - {i^2}y + {x^2}i - i{y^2} + 2{i^2}xy$$</p>\n<p>$$ \\Rightarrow (x - {x^2} + {y^2}) - iy(1 + 2x) = xi + y + i{x^2} - i{y^2} - 2xy$$</p>\n<p>$$ \\Rightarrow (x - {x^2} + {y^2}) - iy(1 + 2x) = y(1 - 2x) + i(x + {x^2} - {y^2})$$</p>\n<p>Comparing both sides real part we get,</p>\n<p>$$x - {x^2} + {y^2} = y - 2xy$$</p>\n<p>$$ \\Rightarrow x - {x^2} + {y^2} - y + 2xy = 0$$ ..... (1)</p>\n<p>And comparing both sides imaginary part we get,</p>\n<p>$$ - y(1 + 2x) = x + {x^2} - {y^2}$$</p>\n<p>$$ \\Rightarrow  - y - 2xy = x + {x^2} - {y^2}$$</p>\n<p>$$ \\Rightarrow x + {x^2} - {y^2} + y + 2xy = 0$$ ...... (2)</p>\n<p>Adding equation (1) and (2) we get,</p>\n<p>$$x - {x^2} + {y^2} - y + 2xy + x + {x^2} - {y^2} + y + 2xy = 0$$</p>\n<p>$$ \\Rightarrow 2x + 4xy = 0$$</p>\n<p>$$ \\Rightarrow 2x(1 + 2y) = 0$$</p>\n<p>$$\\therefore$$ $$x = 0$$ or $$1 + 2y = 0 \\Rightarrow y =  - {1 \\over 2}$$</p>\n<p>Case 1 : When $$x = 0$$ :</p>\n<p>Put  $$x = 0$$ at equation (1), we get</p>\n<p>$${y^2} - y = 0$$</p>\n<p>$$ \\Rightarrow y(y - 1) = 0$$</p>\n<p>$$ \\Rightarrow y = 0,1$$</p>\n<p>$$\\therefore$$ $$z = 0 + 0i$$ or $$0 + i$$</p>\n<p>Case 2 : When $$y =  - {1 \\over 2}$$ :</p>\n<p>Put $$y =  - {1 \\over 2}$$ in equation (1), we get</p>\n<p>$$x - {x^2} + {1 \\over 4} + {1 \\over 2} - x = 0$$</p>\n<p>$$ \\Rightarrow {x^2} = {1 \\over 4} + {1 \\over 2}$$</p>\n<p>$$ \\Rightarrow {x^2} = {3 \\over 4}$$</p>\n<p>$$ \\Rightarrow x = \\, \\pm \\,{{\\sqrt 3 } \\over 2}$$</p>\n<p>$$\\therefore$$ $$z = {{\\sqrt 3 } \\over 2} - {i \\over 2}$$ or $$z =  - {{\\sqrt 3 } \\over 2} - {i \\over 2}$$</p>\n<p>$$\\therefore$$ Number of distinct $$z = 4$$</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "1l6jennth",
@@ -152,7 +159,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "<p>$$\\because$$ $${z^2} + \\overline z  = 0$$</p>\n<p>Let $$z = x + iy$$</p>\n<p>$$\\therefore$$ $${x^2} - {y^2} + 2ixy + x - iy = 0$$</p>\n<p>$$({x^2} - {y^2} + x) + i(2xy - y) = 0$$</p>\n<p>$$\\therefore$$ $${x^2} + {y^2} = 0$$ and $$(2x - 1)y = 0$$</p>\n<p>if $$x = \\, + \\,{1 \\over 2}$$ then $$y = \\, \\pm \\,{{\\sqrt 3 } \\over 2}$$</p>\n<p>And if $$y = 0$$ then $$x = 0, - 1$$</p>\n<p>$$\\therefore$$ $$z = 0 + 0i, - 1 + 0i,{1 \\over 2} + {{\\sqrt 3 } \\over 2}i,{1 \\over 2} - {{\\sqrt 3 } \\over 2}i$$</p>\n<p>$$\\therefore$$ $$\\sum {\\left( {{R_e}(z) + m(z)} \\right) = 0} $$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l57ntha9",
@@ -173,7 +181,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "<p>$$\\overline z  = i{z^2}$$</p>\n<p>Let $$z = x + iy$$</p>\n<p>$$x - iy = i({x^2} - {y^2} + 2xiy)$$</p>\n<p>$$x - iy = i({x^2} - {y^2}) - 2xy$$</p>\n<p>$$\\therefore$$ $$x =  - 2yx$$ or $${x^2} - {y^2} =  - y$$</p>\n<p>$$x = 0$$ or $$y =  - {1 \\over 2}$$</p>\n<p>Case - I</p>\n<p>$$x = 0$$</p>\n<p>$$ - {y^2} =  - y$$</p>\n<p>$$y = 0,\\,\\,1$$</p>\n<p>Case - II</p>\n<p>$$y =  - {1 \\over 2}$$</p>\n<p>$$ \\Rightarrow {x^2} - {1 \\over 4} = {1 \\over 2} \\Rightarrow x =  \\pm {{\\sqrt 3 } \\over 2}$$</p>\n<p>$$x = \\left\\{ {0,i,{{\\sqrt 3 } \\over 2} - {i \\over 2},{{ - \\sqrt 3 } \\over 2} - {i \\over 2}} \\right\\}$$</p>\n<p>Area of polygon $$ = {1 \\over 2}\\left| {\\matrix{\n   0 & 1 & 1  \\cr \n   {{{\\sqrt 3 } \\over 2}} & {{{ - 1} \\over 2}} & 1  \\cr \n   {{{ - \\sqrt 3 } \\over 2}} & {{{ - 1} \\over 2}} & 1  \\cr \n\n } } \\right|$$</p>\n<p>$$ = {1 \\over 2}\\left| { - \\sqrt 3 \\,\\,\\, - {{\\sqrt 3 } \\over 2}} \\right| = {{3\\sqrt 3 } \\over 4}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l55j8k9n",
@@ -189,7 +198,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "Let $z=x+i y$\n<br/><br/>\nSo $2 x=(1+i)\\left(x^{2}-y^{2}+2 x y i\\right)$\n<br/><br/>\n$\\Rightarrow 2 x=x^{2}-y^{2}-2 x y\\quad$ ...(i) and\n<br/><br/>\n$$\nx^{2}-y^{2}+2 x y=0\\quad\\dots(ii)\n$$\n<br/><br/>\nFrom (i) and (ii) we get\n<br/><br/>\n$$\nx=0 \\text { or } y=-\\frac{1}{2}\n$$\n<br/><br/>\nWhen $x=0$ we get $y=0$\n<br/><br/>\nWhen $y=-\\frac{1}{2}$ we get $x^{2}-x-\\frac{1}{4}=0$\n<br/><br/>\n$\\Rightarrow \\quad x=\\frac{-1 \\pm \\sqrt{2}}{2}$\n<br/><br/>\nSo there will be total 3 possible values of $z$, which are $0,\\left(\\frac{-1+\\sqrt{2}}{2}\\right)-\\frac{1}{2} i$ and $\\left(\\frac{-1-\\sqrt{2}}{2}\\right)-\\frac{1}{2} i$\n<br/><br/>\nSum of squares of modulus\n<br/><br/>\n$$\n\\begin{aligned}\n&=0+\\left(\\frac{\\sqrt{2}-1}{2}\\right)^{2}+\\frac{1}{4}+\\left(\\frac{\\sqrt{2}+1}{2}\\right)^{2}=+\\frac{1}{4} \\\\\\\\\n&=2\n\\end{aligned}\n$$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l6p0k7zx",
@@ -210,7 +220,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "<p>$$z = (2 + 3i)$$</p>\n<p>$$ \\Rightarrow {z^5} = (2 + 3i){\\left( {{{(2 + 3i)}^2}} \\right)^2}$$</p>\n<p>$$ = (2 + 3i){( - 5 + 12i)^2}$$</p>\n<p>$$ = (2 + 3i)( - 119 - 120i)$$</p>\n<p>$$ =  - 238 - 240i - 357i + 360$$</p>\n<p>$$ = 122 - 597i$$</p>\n<p>$${\\overline z ^5} = 122 + 597i$$</p>\n<p>$${z^5} + {\\overline z ^5} = 244$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l5vz2v9s",
@@ -231,7 +242,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "<p>Given,</p>\n<p>$${{{{(1 + 2i)}^8}\\,.\\,{{(1 - 2i)}^2}} \\over {(3 + 2i)\\,.\\,\\overline {(4 - 6i)} }}$$</p>\n<p>$$ = {{{{(1 + 2i)}^2}{{(1 - 2i)}^2}{{(1 + 2i)}^6}} \\over {(3 + 2i)(4 + 6i)}}$$</p>\n<p>$$ = {{{{(1 - 4{i^2})}^2}{{(1 + 2i)}^6}} \\over {12 + 18i + 8i + 12{i^2}}}$$</p>\n<p>$$ = {{{{(1 + 5)}^2}{{\\left[ {{{(1 + 2i)}^2}} \\right]}^3}} \\over {12 + 26i - 12}}$$</p>\n<p>$$ = {{25{{(1 + 4{i^2} + 4i)}^3}} \\over {26i}}$$</p>\n<p>$$ = {{25{{(1 - 4 + 4i)}^3}} \\over {26i}}$$</p>\n<p>$$ = {{25{{( - 3 + 4i)}^3}} \\over {26i}}$$</p>\n<p>$$ = {{25} \\over {26i}}\\left[ {{{( - 3)}^3} + {{(4i)}^3} + 3\\,.\\,{{( - 3)}^2}\\,.\\,4i + 3( - 3)\\,.\\,{{(4i)}^2}} \\right]$$</p>\n<p>$$ = {{25} \\over {26i}}( - 27 - 64i + 108i + 144)$$</p>\n<p>$$ = {{25} \\over {26i}}(117 + 44i)$$</p>\n<p>$$ = {{25i} \\over {26{i^2}}}(117 + 44i)$$</p>\n<p>$$ = {{25i} \\over { - 26}}(117 + 44i)$$</p>\n<p>$$ = {{25 \\times 117i} \\over { - 26}} - {{25 \\times 44{i^2}} \\over {26}}$$</p>\n<p>$$ = {{25 \\times 117i} \\over { - 26}} + {{22 \\times 25} \\over {13}}$$</p>\n<p>$$ = {{25 \\times 117i} \\over { - 26}} + {{550} \\over {13}}$$</p>\n<p>$$\\therefore$$ Real part $$ = {{550} \\over {13}}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "l7gan82b",
@@ -253,7 +265,8 @@
     "difficulty": "hard",
     "solution": "<p>Let, complex number $${\\left( {\\overline z } \\right)^2} + {1 \\over {{z^2}}}$$ is a new complex number $$w$$.</p>\n<p>$$\\therefore$$ $$w = {\\left( {\\overline z } \\right)^2} + {1 \\over {{z^2}}}$$</p>\n<p>Now, let $$z = r{e^{i\\theta }}$$ where $$r = |z|$$ and $$\\theta$$ = argument</p>\n<p>$$\\therefore$$ $$w = {\\left( {r{e^{ - i\\theta }}} \\right)^2} + {1 \\over {{r^2}}}({e^{ - 2i\\theta }})$$</p>\n<p>$$ = \\left( {{r^2} + {1 \\over {{r^2}}}} \\right){e^{ - 2i\\theta }}$$</p>\n<p>$$ = \\left( {{r^2} + {1 \\over {{r^2}}}} \\right)(\\cos 2\\theta  - i\\sin 2\\theta )$$</p>\n<p>$$\\therefore$$ Real part of $$w = {\\mathop{\\rm Re}\\nolimits} (w) = \\left( {{r^2} + {1 \\over {{r^2}}}} \\right)\\cos 2\\theta $$</p>\n<p>Imaginary part of $$w = {\\mathop{\\rm Im}\\nolimits} (w) = \\left( {{r^2} + {1 \\over {{r^2}}}} \\right)( - \\sin 2\\theta )$$</p>\n<p>Given both $${\\mathop{\\rm Re}\\nolimits} (w)$$ and $${\\mathop{\\rm Im}\\nolimits} (w)$$ are integer.</p>\n<p>$$\\therefore$$ Let $$Re(w) = {I_1}$$</p>\n<p>and $${\\mathop{\\rm Im}\\nolimits} (w) = {I_2}$$</p>\n<p>$$\\therefore$$ $$I_1^2 + I_2^2 = {\\left( {{r^2} + {1 \\over {{r^2}}}} \\right)^2} = \\alpha $$ (where $$\\alpha$$ is an integer)</p>\n<p>[Note : As I<sub>1</sub> and I<sub>2</sub> are integer so $$I_1^2 + I_2^2$$ is also an integer.]</p>\n<p>Now, $${\\left( {{r^2} + {1 \\over {{r^2}}}} \\right)^2} = \\alpha $$</p>\n<p>$$ \\Rightarrow {r^4} + 2 + {1 \\over {{r^4}}} = \\alpha $$</p>\n<p>$$ \\Rightarrow {r^8} + 2{r^4} + 1 = {r^4}\\alpha $$</p>\n<p>$$ \\Rightarrow {r^8} - (\\alpha  - 2){r^4} + 1 = 0$$</p>\n<p>$$\\therefore$$ $${r^4} = {{(\\alpha  - 2)\\, \\pm \\,\\sqrt {{{(\\alpha  - 2)}^2} - 4\\,.\\,1\\,.\\,1} } \\over {2\\,.\\,1}}$$</p>\n<p>$$ \\Rightarrow r = {\\left( {{{(\\alpha  - 2)\\, \\pm \\,\\sqrt {{\\alpha ^2} - 4\\alpha } } \\over 2}} \\right)^{{1 \\over 4}}}$$</p>\n<p>$$ \\Rightarrow |z| = r = {\\left( {{{(\\alpha  - 2)\\, \\pm \\,\\sqrt {{\\alpha ^2} - 4\\alpha } } \\over 2}} \\right)^{{1 \\over 4}}}$$</p>\n<p>In option only positive sign is given so ignoring negative sign we get,</p>\n<p>$$|z| = r = {\\left( {{{(\\alpha  - 2) + \\sqrt {{\\alpha ^2} - 4\\alpha } } \\over 2}} \\right)^{{1 \\over 4}}}$$ ....... (1)</p>\n<p>From option (A),</p>\n<p>$$|z| = {\\left( {{{43 + 3\\sqrt {205} } \\over 2}} \\right)^{{1 \\over 4}}}$$</p>\n<p>Comparing with (1), we get</p>\n<p>$$\\alpha  - 2 = 43$$</p>\n<p>$$ \\Rightarrow \\alpha  = 45$$</p>\n<p>Putting $$\\alpha  = 45$$ in (1), we get</p>\n<p>$$|z| = {\\left( {{{43 + \\sqrt {45(41)} } \\over 2}} \\right)^{{1 \\over 4}}}$$</p>\n<p>$$ = {\\left( {{{43 + \\sqrt {9 \\times 5 \\times 41} } \\over 2}} \\right)^{{1 \\over 4}}}$$</p>\n<p>$$ = {\\left( {{{43 + 3\\sqrt {205} } \\over 2}} \\right)^{{1 \\over 4}}}$$</p>\n<p>$$\\therefore$$ Option (A) is correct.</p>\n<p>We can re-write</p>\n<p>$$|z| = {\\left( {{{(\\alpha  - 2) + \\sqrt {{\\alpha ^2} - 4\\alpha } } \\over 2}} \\right)^{{1 \\over 4}}}$$</p>\n<p>as $$|z| = {\\left( {{{2(\\alpha  - 2) + 2\\sqrt {\\alpha (\\alpha  - 4)} } \\over 4}} \\right)^{{1 \\over 4}}}$$</p>\n<p>Comparing with option (B) we get,</p>\n<p>$$2(\\alpha  - 2) = 7$$</p>\n<p>$$ \\Rightarrow 2\\alpha  = 11$$</p>\n<p>$$ \\Rightarrow \\alpha  = {{11} \\over 2}$$ $$\\ne$$ Integer</p>\n<p>$$\\therefore$$ Option (B) is incorrect.</p>\n<p>Similarly option (C) and (D) also incorrect.</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "LbJQB0EUlx4IaWnLwY1kmhzri06",
@@ -269,7 +282,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "Let z = x + iy<br><br>| z + i | = | z $$-$$ 3i |<br><br>$$ \\Rightarrow $$ y = 1<br><br>Now <br><br>$$\\omega$$ = x<sup>2</sup> + y<sup>2</sup> $$-$$ 2x $$-$$ 2iy + 2<br><br>$$\\omega$$ = x<sup>2</sup> + 1 $$-$$ 2x $$-$$ 2i + 2<br><br>Re($$\\omega$$) = x<sup>2</sup> $$-$$ 2x + 3<br><br>Re($$\\omega$$) = (x $$-$$ 1)<sup>2</sup> + 2<br><br>Re($$\\omega$$)<sub>min</sub> at x = 1 $$ \\Rightarrow $$ z = 1 + i<br><br>Now, <br><br>$$\\omega$$ = 1 + 1 $$-$$ 2 $$-$$ 2i + 2<br><br>$$\\omega$$ = 2(1 $$-$$ i) = 2$$\\sqrt 2 {e^{i\\left( {{{ - \\pi } \\over 4}} \\right)}}$$<br><br>$$\\omega$$<sup>n</sup> = 2$$\\sqrt 2 {e^{i\\left( {{{ - n\\pi } \\over 4}} \\right)}}$$<br><br>If $$\\omega$$<sup>n</sup> is real $$ \\Rightarrow $$ n = 4",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1kru4nljk",
@@ -290,7 +304,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "z<sup>2</sup> + 3$$\\overline z $$ = 0<br><br>Put z = x + iy<br><br>$$\\Rightarrow$$ x<sup>2</sup> $$-$$ y<sup>2</sup> + 2ixy + 3(x $$-$$ iy) = 0<br><br>$$\\Rightarrow$$ (x<sup>2</sup> $$-$$ y<sup>2</sup> + 3x) + i(2xy $$-$$ 3y) = 0 + i0<br><br>$$\\therefore$$ x<sup>2</sup> $$-$$ y<sup>2</sup> + 3x = 0 ..... (1)<br><br>2xy $$-$$ 3y = 0 ..... (2)<br><br>x = $${3 \\over 2}$$, y = 0<br><br>Put x = $${3 \\over 2}$$ in equation (1)<br><br>$${9 \\over 4} - {y^2} + {9 \\over 2} = 0$$<br><br>$${y^2} = {{27} \\over 4} \\Rightarrow y =  \\pm {{3\\sqrt 3 } \\over 2}$$<br><br>$$\\therefore$$ $$(x,y) = \\left( {{3 \\over 2},{{3\\sqrt 3 } \\over 2}} \\right),\\left( {{3 \\over 2},{{ - 3\\sqrt 3 } \\over 2}} \\right)$$<br><br>Put y = 0 $$\\Rightarrow$$ x<sup>2</sup> $$-$$ 0 + 3x = 0<br><br>x = 0, $$-$$3<br><br>$$\\therefore$$ (x, y) = (0, 0), ($$-$$3, 0)<br><br>$$\\therefore$$ No of solutions = n = 4<br><br>$$\\sum\\limits_{K = 0}^\\infty  {\\left( {{1 \\over {{n^k}}}} \\right)}  = \\sum\\limits_{K = 0}^\\infty  {\\left( {{1 \\over {4{n^k}}}} \\right)} $$<br><br>$$ = {1 \\over 1} + {1 \\over 4} + {1 \\over {16}} + {1 \\over {64}} + ......$$<br><br>$$ = {1 \\over {1 - {1 \\over 4}}} = {4 \\over 3}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "zRF8sEwtoachGxzvEr1klt7y6a1",
@@ -311,7 +326,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "easy",
     "solution": "1 $$-$$ 2i is the root of the equation. So other root is 1 $$+$$ 2i\n<br><br>$$ \\therefore $$ Sum of roots = 1 $$-$$ 2i + 1 $$+$$ 2i = 2 = -$$\\alpha $$\n<br><br>Product of roots = (1 $$-$$ 2i)(1 $$+$$ 2i) = 1 - 4i<sup>2</sup> = 5 = $$\\beta $$\n<br><br>$$ \\therefore $$ $$\\alpha $$ - $$\\beta $$ = -2 - 5 = -7",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "LNvcjihjOACPdCzciI7k9k2k5grsymq",
@@ -332,7 +348,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "x<sup>2</sup>\n + bx = 45 = 0 (b $$ \\in $$ R)\n<br>has roots $$\\alpha $$ + i$$\\beta $$, $$\\alpha $$ – i$$\\beta $$\n<br>sum of roots = – b = 2$$\\alpha $$\n<br>product of roots = 45 = \n$$\\alpha $$<sup>2</sup>\n + $$\\beta $$<sup>2</sup>\n<br><br>Let z = x + iy\n<br><br>$$ \\therefore $$ |x + iy +1| = 2$$\\sqrt {10} $$\n<br><br>$${\\left| {x + iy + 1} \\right|^2} = {\\left( {2\\sqrt {10} } \\right)^2}$$\n<br><br>$$ \\Rightarrow $$ (x + 1)<sup>2</sup> + y<sup>2</sup> = 40\n<br><br>$$ \\Rightarrow $$ ($$\\alpha $$ + 1)<sup>2</sup> + $$\\beta $$<sup>2</sup> = 40\n<br><br> [putting real part $$\\alpha $$ in place of x and imaginary part $$\\beta $$ in place of y]\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$<sup>2</sup> + 2$$\\alpha $$ + 1 + $$\\beta $$<sup>2</sup> = 40\n<br><br>$$ \\Rightarrow $$ 45 + 2$$\\alpha $$ + 1 = 40\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = -3\n<br><br>$$ \\therefore $$ -b = 2$$\\alpha $$ = 2$$ \\times $$(-3) = -6\n<br><br>$$ \\Rightarrow $$ b = 6\n<br><br>By checking options we found b<sup>2</sup> – b = 30.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "I5pK1RCzpUnmvnIyw53rsa0w2w9jwxjodf8",
@@ -353,7 +370,8 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
     "solution": "$$z = {{{{\\left( {1 + i} \\right)}^2}} \\over {a - i}} \\times {{a + i} \\over {a + i}}$$<br><br>\n$$ \\Rightarrow z = {{\\left( {1 - 1 + 2i} \\right)\\left( {a + i} \\right)} \\over {{a^2} + 1}} = {{2ai - 2} \\over {{a^2} + 1}}$$  <br><br>\n$$ \\Rightarrow \\left| z \\right| = \\sqrt {{{\\left( {{{ - 2} \\over {{a^2} + 1}}} \\right)}^2} + {{\\left( {{{2a} \\over {{a^2} + 1}}} \\right)}^2}}  = \\sqrt {{{4 + 4{a^2}} \\over {{{({a^2} + 1)}^2}}}} $$<br><br>\n$$ \\Rightarrow \\sqrt {{{4(1 + {a^2})} \\over {{{({a^2} + 1)}^2}}}}  = {2 \\over {\\sqrt {{a^2} + 1} }}$$.... (i)<br><br>\nNow given $$\\left| z \\right| = \\sqrt {{2 \\over 5}} $$<br><br>\nso $$\\sqrt {{2 \\over 5}}  = {2 \\over {\\sqrt {1 + {a^2}} }}$$ from equation (i)<br><br>\nBy squaring both sides<br><br>\n$$ \\Rightarrow {2 \\over 5} = {4 \\over {1 + {a^2}}}$$<br><br>\n$$ \\Rightarrow 1 + {a^2} = 10$$<br><br>\na<sup>2</sup> = 9<br><br>\n$$ \\Rightarrow $$ a = $$ \\pm $$ 3 \n<br><br>$$ \\because $$ (a &gt; 0) then a = 3\n<br><br>Now $$\\overline z  = {{{{\\left( {1 - i} \\right)}^2}} \\over {3 + i}}$$\n<br><br>= $${{\\left( {1 + {i^2} - 2i} \\right)} \\over {3 + i}}$$\n<br><br>= $${{\\left( {1 + {i^2} - 2i} \\right)\\left( {3 - i} \\right)} \\over {\\left( {3 + i} \\right)\\left( {3 - i} \\right)}}$$\n<br><br>= $${{\\left( { - 2i} \\right)\\left( {3 - i} \\right)} \\over {\\left( {9 - {i^2}} \\right)}}$$\n<br><br>= $${{\\left( { - 2i} \\right)\\left( {3 - i} \\right)} \\over {10}}$$\n<br><br>= $${{ - 6i + 2{i^2}} \\over {10}}$$\n<br><br>= $${{ - 6i - 2} \\over {10}}$$\n<br><br>= $$-{1 \\over 5} - {3 \\over 5}i$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "f7qFwPaiVPidoTXT0z1kjvdwtfz",
@@ -375,7 +393,8 @@
     "difficulty": "medium",
     "solution": "We have,<br><br>$$sz + t\\overline z  + r = 0$$ ...(i)<br><br>On taking conjugate,<br><br>$$\\overline {sz}  + \\overline t z + \\overline r  = 0$$ ... (ii)<br><br>On solving Eqs. (i) and (ii), we get<br><br>$$z = {{\\overline r t - r\\overline s } \\over {|s{|^2} - |t{|^2}}}$$<br><br>(a) For unique solutions of z<br><br>$$|s{|^2} - |t{|^2} \\ne 0 \\Rightarrow |s|\\, \\ne \\,|t|$$<br><br>It is true<br><br>(b) If |s| = |t|, then $${\\overline r t - r\\overline s }$$ may or may not be zero. So, z may have no solutions. <br><br>$$ \\therefore $$ L may be an empty set.<br><br>It is false.<br><br>(c) If elements of set L represents line, then this line and given circle intersect at maximum two point. Hence, it is true.<br><br>(d) In this case locus of z is a line, so L has infinite elements. Hence, it is true.",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "arpIODrTgHbKqJTw",
@@ -397,7 +416,8 @@
     "difficulty": "medium",
     "solution": "<p>Given, $$\\quad a=z^2+z+1$$</p>\n<p>$$\\Rightarrow z^2+z+1-a=0$$</p>\n<p>Using Sridharacharya Rule</p>\n<p>$$\\begin{aligned}\n& \\qquad z=\\frac{-1 \\pm \\sqrt{1^2-4(1-a)}}{2} \\\\\n& \\Rightarrow \\quad z=\\frac{-1 \\pm \\sqrt{1-4+4 a}}{2} \\\\\n& \\Rightarrow \\quad z=\\frac{-1 \\pm \\sqrt{4 a-3}}{2}\n\\end{aligned}$$</p>\n<p>Now, we can observe that if $$\\mathrm{a}=\\frac{3}{4}$$, then $$z= \\frac{-1}{2}$$ which will become purely real.</p>\n<p>Hence, if $$a \\neq \\frac{3}{4}$$, otherwise $$z$$ will be purely real.</p>\n<p>(i) Make quadratic equation in $$z$$ and apply Sridharacharya rule.</p>\n<p>(ii) Analyse the value of '$$a$$' for which '$$z$$' becomes purely real.</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "ZOQkVDoZgLs7zRLn",
@@ -419,7 +439,8 @@
     "difficulty": "medium",
     "solution": "<p>We have</p>\n<p>$$\\overline z {z^3} + z{\\overline z ^3} = 350$$</p>\n<p>Substituting $$z = x + iy$$, we get</p>\n<p>$$({x^2} + {y^2})({x^2} - {y^2}) = 175$$</p>\n<p>$$({x^2} + {y^2})({x^2} - {y^2}) = 5 \\times 5 \\times 7$$</p>\n<p>$${x^2} + {y^2} = 25$$</p>\n<p>$${x^2} - {y^2} = 7$$</p>\n<p>whose solutions are $$x =  \\pm 4$$ and $$y =  \\pm 3;x,y \\in I$$.</p>\n<p>Therefore, that is, area is found as $$8 \\times 6 = 48$$ sq. unit.</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "PM4qMlStSHAcQdgu",
@@ -440,6 +461,7 @@
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "easy",
     "solution": "$$\\left( {{1 \\over {i - 1}}} \\right) = {1 \\over { - i - 1}} = {{ - 1} \\over {i + 1}}$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

@@ -1641,7 +1641,9 @@
       "STATEMENT - 1 is True, STATEMENT - 2 is False ",
       "STATEMENT - 1 is False, STATEMENT - 2 is True "
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>As a, b, c, p, q $$\\in$$ R and the two given equations have exactly one common root.</p>\n<p>$$\\Rightarrow$$ Either both equations have real roots.</p>\n<p>Or both equations have imaginary roots.</p>\n<p>$$\\Rightarrow$$ Either $$\\Delta_1\\ge0$$ and $$\\Delta_2 > 0$$ or</p>\n<p>$$\\Delta_1 < 0$$ and $$\\Delta_2 < 0$$</p>\n<p>$$\\Rightarrow~p^2-q\\ge0$$ and $$b^2-ac\\ge0$$</p>\n<p>or $$p^2-q\\le0$$ and $$b^2-ac\\le0$$</p>\n<p>$$\\Rightarrow~(p^2-q)(b^2-ac)\\ge0$$</p>\n<p>$$\\therefore$$ Statement 1 is true.</p>\n<p>Also, we have $$\\alpha\\beta=q$$ and $${\\alpha  \\over \\beta } = {c \\over a}$$</p>\n<p>$$\\therefore$$ $${{\\alpha \\beta } \\over {{\\alpha  \\over \\beta }}} = {q \\over c} \\times a \\Rightarrow {\\beta ^2} = {{qa} \\over c}$$</p>\n<p>As $$\\beta  \\ne 1$$ or $$-1$$</p>\n<p>$$ \\Rightarrow {\\beta ^2} \\ne 1$$</p>\n<p>$$ \\Rightarrow {{qa} \\over c} \\ne 1$$ or $$c \\ne qa$$</p>\n<p>Again as exactly one root $$\\alpha$$ is common and $$\\beta\\ne1$$</p>\n<p>$$\\therefore$$ $$\\alpha  + \\beta  \\ne \\alpha  + {1 \\over \\beta } \\Rightarrow {{ - 2b} \\over a} \\ne  - 2P$$</p>\n<p>$$ \\Rightarrow b \\ne ap$$</p>\n<p>$$\\therefore$$ Statement 2 is correct.</p>\n<p>But Statement 2 is not correct explanation of Statement 1.</p>",
     "marks": 3,
@@ -2022,7 +2024,9 @@
       "8080",
       "16000"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "Given quadratic polynomials, x<sup>2</sup> + 20x $$-$$ 2020 and x<sup>2</sup> $$-$$ 20x + 2020 having a, b distinct real and c, d  distinct complex roots respectively.<br><br>So, a + b = $$-$$20, ab = $$-$$2020<br><br>and c + d = 20, cd = 2020<br><br>Now, ac(a $$-$$c) + ad(a $$-$$ d) + bc(b $$-$$c) + bd(b $$-$$ d)<br><br>= a<sup>2</sup>(c + d) $$-$$ a(c<sup>2</sup> + d<sup>2</sup>) + b<sup>2</sup>(c + d) $$-$$ b(c<sup>2</sup> + d<sup>2</sup>)<br><br>= (c + d) (a<sup>2</sup> + b<sup>2</sup>) $$-$$ (c<sup>2</sup> + d<sup>2</sup>) (a + b)<br><br>= (c + d)[(a + b)<sup>2</sup> $$-$$ 2ab] $$-$$ (a + b)[(c + d)<sup>2</sup> $$-$$ 2cd]<br><br>= 20[(20)<sup>2</sup> + 4040] + 20[(20)<sup>2</sup> $$-$$ 4040]<br><br>= 2 $$ \\times $$ 20 $$ \\times $$ (20)<sup>2</sup> = 40 $$ \\times $$ 400 = 16000",
     "marks": 3,
@@ -2117,7 +2121,9 @@
       "<p>If $c = 15$, then $ab = 8$</p>",
       "<p>If $b = 8$, then $x = 3$ is a root of the equation $ax^2 + bx + c = 0$</p>"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>Let the roots of the quadratic equation be $ \\alpha $ and $ \\beta $.</p>\n<p>From the relation between coefficients and roots, we know that:</p>\n<p>$$ \\alpha + \\beta = \\frac{-b}{a} = k_1 \\quad \\Rightarrow \\quad b = -a k_1 \\, \\text{where} \\, k_1 \\in \\mathbb{Z} $$</p>\n<p>Also,</p>\n<p>$$ \\alpha \\beta = \\frac{c}{a} = k_2 \\quad \\Rightarrow \\quad c = a k_2 \\, \\text{where} \\, k_2 \\in \\mathbb{Z} $$</p>\n<p>Since $ a, b, c $ are in arithmetic progression, we have:</p>\n<p>$$ c - b = b - a $$</p>\n<p>Substituting the values of $ b $ and $ c $ from above:</p>\n<p>$$ a k_2 + a k_1 = 2a k_1 + a \\Rightarrow k_2 = -2k_1 - 1 $$</p>\n<p>Now, the quadratic equation becomes:</p>\n<p>$$ x^2 - k_1 x + k_2 = 0 $$</p>\n<p>Substituting the value of $ k_2 $:</p>\n<p>$$ x^2 - k_1 x - 2k_1 - 1 = 0 $$</p>\n<p>Since $ \\alpha \\beta = k_2 $ is odd, both roots $ \\alpha $ and $ \\beta $ must be odd integers.</p>\n<p>Let us test some possible integer values. For example, if $ c = 15 $, the pairs of integer roots could be $ (-1, -15) $ or $ (-3, -5) $.</p>\n<p>If the roots are $ -1 $ and $ -15 $, then:\n\n<br>Sum of roots $ = -16 \\Rightarrow b = 16, \\; a = 17 $\n\n<br>The quadratic becomes $ 17x^2 + 16x + 15 = 0 $.</p>\n<p>This does not satisfy the condition because its roots are not the expected $ -1 $ and $ -15 $.</p>\n<p>Now, if the roots are $ -3 $ and $ -5 $, then:\n\n<br>Sum of roots $ = -8, \\; \\text{Product} = 15 $\n\n<br>Hence, the quadratic is $ x^2 + 8x + 15 = 0 $.</p>\n<p>This equation fits our condition with integer roots.</p>\n<p>For the equation $ x^2 - k_1 x - 2k_1 - 1 = 0 $, substitute $ x = 3 $:</p>\n<p>$$ 9 - 3k_1 - 2k_1 - 1 = 0 \\Rightarrow 8 - 5k_1 = 0 \\Rightarrow k_1 = \\frac{5}{8} $$</p>\n<p>Since $ k_1 $ must be an integer, this is not possible. Hence, 3 cannot be a root of the quadratic equation.</p>",
     "marks": 4,

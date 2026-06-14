@@ -13,7 +13,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>To find numbers of number greater than 5000 and less than 9000 so number will start with 5 or 9 of the form 5 abc and $a, b, c \\in\\{0,1,2,5,9\\}$ also the number is divisible by 3 .</p>\n<p>This means $5+\\mathrm{a}+\\mathrm{b}+\\mathrm{c}$ is divisible by 3</p>\n<p>so the sum $\\mathrm{a}+\\mathrm{b}+\\mathrm{c}$ is of the type $3 \\mathrm{n}+1$.</p>\n<p>unit place c determined by the sum of previous 3 places.</p>\n<p>rem(a $+b)=$ remainder of $a+b$</p>\n<table border=\"2\" cellpadding=\"10\" cellspacing=\"0\"\n\n       style=\"border-collapse:collapse; font-family:'Times New Roman', serif; width:100%;\">\n\n  <tr>\n\n    <th>rem(a+b)</th>\n\n    <th>combination (a,b)</th>\n\n    <th>value of c</th>\n\n    <th>total = combination (a, b) × c(choice)</th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>\n\n      (0, 0), (0, 9), (9, 0), (9, 9), (1, 2), (2, 1), (5, 1), (1, 5)\n\n    </td>\n\n    <td>1</td>\n\n    <td>8 × 1 = 8</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>\n\n      (0, 1), (9, 1), (1, 0), (1, 9), (2, 2), (2, 5), (5, 2), (5, 5)\n\n    </td>\n\n    <td>0, 9</td>\n\n    <td>8 × 2 = 16</td>\n\n  </tr>\n\n  <tr>\n\n    <td>2</td>\n\n    <td>\n\n      (0, 2), (0, 5), (9, 2), (9, 5), (2, 0), (2, 9), (5, 0), (5, 9), (1, 1)\n\n    </td>\n\n    <td>2, 5</td>\n\n    <td>9 × 2 = 18</td>\n\n  </tr>\n\n</table>\n<p>Total = $$8+16+18=42$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "ml7vhfcx",
@@ -29,7 +30,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>Given:</p>\n<ul>\n\n<li><p>The lift goes up to the $10^{\\text {th }}$ floor.</p></li>\n\n<li><p>The lift does not stop at $1^{\\text {st }}, 2^{\\text {nd }}, 3^{\\text {rd }}$ floors.</p></li>\n\n<li><p>So, the persons can get down only at the remaining floors.</p></li>\n\n</ul>\n<p>$$ 4,5,6,7,8,9,10 \\Rightarrow 7 \\text { floors } $$</p>\n<ul>\n\n<li><p>Now, all three persons must exit at three different floors (no two can get down at the same floor).</p></li>\n\n<li><p>Also, the three persons are distinct, so who gets down where matters.</p></li>\n\n</ul>\n<p>First, choose which 3 floors (out of 7) will be used:</p>\n<p>$$ { }^7 C_3=\\frac{7 \\cdot 6 \\cdot 5}{{3} \\cdot 2 \\cdot 1}=35 $$</p>\n<p>Next, assign (arrange) the 3 distinct persons to these 3 chosen floors:</p>\n<p>Number of arrangements of 3 persons:</p>\n<p>$$ 3!=6 $$</p>\n<p>So, total number of ways:</p>\n<p>$$ \\text { Total ways }={ }^7 C_3 \\times 3!=35 \\times 6=210 $$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "ml81k4mg",
@@ -50,7 +52,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>Given, $S=\\{1,2,3,4,5,6,7,8,9\\}$</p>\n<ol>\n\n<li><b>Calculation for x</b></li>\n\n</ol>\n<p>For $x$, we have to form a 9-digit number in which exactly one digit is repeated, and it is repeated exactly twice. So, one digit appears twice, and the remaining 7 digits appear once each.</p>\n<p>First, select the digit that will be repeated: from $S$, this can be done in ${ }^9 C_1$ ways.</p>\n<p>Now, from the remaining 8 digits, choose 7 digits that will appear once: this can be done in ${ }^8 C_7$ ways.</p>\n<p>Now we have 9 digits in total, but one digit is repeated twice. So, the number of different arrangements is $=\\frac{9!}{2!}$ ways.</p>\n<p>$$ x={ }^9 C_1 \\times{ }^8 C_7 \\times \\frac{9!}{2!} $$</p>\n<ol start=\"2\">\n\n<li><b>Calculation for y</b></li>\n\n</ol>\n<p>For $y$, we have to form a 9-digit number in which exactly two digits are repeated, and each of these is repeated exactly twice. So, two digits appear twice each (total 4 places), and the remaining 5 digits appear once each.</p>\n<p>First, select the 2 digits that will be repeated from $S$: this can be done in ${ }^9 C_2$ ways.</p>\n<p>Now, from the remaining 7 digits, choose 5 digits that will appear once: this can be done in ${ }^7 C_5$ ways.</p>\n<p>Now we have 9 digits in total, with two digits repeated twice each. So, the number of different arrangements is $=\\frac{9!}{2!2!}$ ways.</p>\n<p>$$ y={ }^9 C_2 \\times{ }^7 C_5 \\times \\frac{9!}{2!2!} $$</p>\n<p>To find the relation between $x$ and $y$, divide $x$ by $y$:</p>\n<p>To find the relation, divide x by y :</p>\n<p>$$ \\frac{x}{y}=\\frac{{ }^9 C_1 \\times{ }^8 C_7 \\times \\frac{1}{2}}{{ }^9 C_2 \\times{ }^7 C_5 \\times \\frac{1}{4}}=\\frac{9 \\times 8 \\times \\frac{1}{2}}{36 \\times 21 \\times \\frac{1}{4}} $$</p>\n<p>So,</p>\n<p>$\\frac{x}{y}=\\frac{36}{189}=\\frac{4}{21}$</p>\n<p>$\\Rightarrow 21 x=4 y$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mnrin3ma",
@@ -71,7 +74,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>We have to form a $7$-digit number using the digits $1,2,3,5,7$ such that <strong>each digit is used at least once</strong>.</p>\n<p>Since there are $5$ distinct digits and the number has $7$ places, after using each digit once, there are $2$ extra places.</p>\n<p>So, the repetition can happen in the following ways:</p>\n<h2>Case 1: One digit is repeated $3$ times</h2>\n<p>Then the distribution of digits is:</p>\n<p>$$3,1,1,1,1$$</p>\n<p>Choose the digit which appears $3$ times:</p>\n<p>$$^5C_1 = 5$$</p>\n<p>Now arrange the $7$ digits:</p>\n<p>$$\\frac{7!}{3!}$$</p>\n<p>So, total numbers in this case:</p>\n<p>$$5 \\times \\frac{7!}{3!} = 5 \\times \\frac{5040}{6} = 5 \\times 840 = 4200$$</p>\n\n<h2>Case 2: Two digits are repeated $2$ times each</h2>\n<p>Then the distribution is:</p>\n<p>$$2,2,1,1,1$$</p>\n<p>Choose the two digits which are repeated:</p>\n<p>$$^5C_2 = 10$$</p>\n<p>Now arrange the $7$ digits:</p>\n<p>$$\\frac{7!}{2!2!}$$</p>\n<p>So, total numbers in this case:</p>\n<p>$$10 \\times \\frac{7!}{2!2!} = 10 \\times \\frac{5040}{4} = 10 \\times 1260 = 12600$$</p>\n\n<h2>Total number of such $7$-digit numbers</h2>\n<p>$$4200 + 12600 = 16800$$</p>\n<p>Hence, the required number is</p>\n<p>$$\\boxed{16800}$$</p>\n<p>So, the correct option is <strong>Option C</strong>.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mnswhsyl",
@@ -92,7 +96,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "<p>We have a total of 4 boys and 3 girls. </p>\n<p>Total number of children = $4 + 3 = 7$.</p>\n<p>The total number of ways to arrange 7 children in a queue is given by the permutation of 7 distinct objects taken all at a time, which is $7!$.</p>\n<p>$$7! = 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 5040$$</p>\n<p><strong>Number of arrangements where all the girls are together</strong></p>\n<p>To find this, let us treat all 3 girls as a single unit or block, since they must remain together.</p>\n<p>Now, we have 4 boys and 1 unit of girls. This gives us a total of $4 + 1 = 5$ entities to arrange in the queue.</p>\n<p>These 5 entities can be arranged among themselves in $5!$ ways.</p>\n<p>Additionally, the 3 girls within their single unit can rearrange themselves in $3!$ ways.</p>\n<p>By the Fundamental Principle of Counting (Multiplication Principle), the total number of ways in which all the girls are together is:</p>\n<p>$$5! \\times 3!$$</p>\n<p>We know that $5! = 120$ and $3! = 6$, so:</p>\n<p>$$120 \\times 6 = 720$$</p>\n<p><strong>Number of arrangements where all the girls are NOT together</strong></p>\n<p>To find the required number of ways, we subtract the arrangements where all girls are together from the total possible arrangements.</p>\n<p>$$\\text{Required ways} = \\text{Total arrangements} - \\text{Arrangements with all girls together}$$</p>\n<p>$$\\text{Required ways} = 5040 - 720 = 4320$$</p>\n<p>Therefore, the number of ways of forming a queue such that all the girls are not together is 4320.</p>\n<p>The correct choice is Option D.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6rp5wrs",
@@ -113,7 +118,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>Let's break the problem down step by step:</p>\n\n<p><p>There are two blocks because all girls must stand together and all boys must stand together. The two blocks can be arranged in:</p>\n<p>$$2 \\text{ ways} \\quad \\text{(i.e., girls first then boys, or boys first then girls).}$$</p></p>\n<p><p>The girls can be arranged among themselves in:</p>\n<p>$$3! = 6 \\text{ ways.}$$</p></p>\n<p><p>For the boys (4 in total), they must be arranged such that the specific boys $B_1$ and $B_2$ are not adjacent.</p></p>\n\n\n<p><p>First, calculate the total number of arrangements of 4 boys:</p>\n<p>$$4! = 24.$$</p></p>\n<p><p>Next, count the arrangements where $B_1$ and $B_2$ are adjacent. Think of $B_1$ and $B_2$ as a single unit. This unit can be arranged in:</p>\n<p>$$2! = 2 \\text{ ways (since }B_1\\text{ and }B_2\\text{ can swap positions).}$$</p>\n<p>Now, with this new unit, we have 3 units in total (the $B_1B_2$ unit and the other 2 boys), which can be arranged in:</p>\n<p>$$3! = 6 \\text{ ways.}$$</p>\n<p>So, the number of arrangements where $B_1$ and $B_2$ are adjacent is:</p>\n<p>$$2! \\times 3! = 2 \\times 6 = 12.$$</p></p>\n<p><p>Therefore, the number of valid arrangements for the boys where $B_1$ and $B_2$ are not adjacent is:</p>\n<p>$$24 - 12 = 12.$$</p></p>\n\n\n<p><p>Finally, multiply all the factors together:</p>\n<p>$$\\text{Total ways} = 2 \\times 6 \\times 12 = 144.$$</p></p>\n\n<p>Thus, the number of ways in which the girls and boys can stand in the queue under the given conditions is $$\\boxed{144}.$$ </p>\n<p>This corresponds to Option D.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6t9xszj",
@@ -129,7 +135,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>A : number of ways that all boys sit together $=5!\\times 5!$</p>\n<p>B : number of ways if no 2 boys</p>\n<p>sit together $=4!\\times 5!$</p>\n<p>$\\mathrm{A} \\cap \\mathrm{B}=\\phi$</p>\n<p>Required no. of ways $=5!\\times 5!+4!\\times 5!=17280$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "m6srmykg",
@@ -150,7 +157,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>DAUGHTER</p>\n<p>Total words $=8$ !</p>\n<p>Total words in which vowels are together $=6!\\times 3!$ words in which all vowels are not together</p>\n<p>$$\\begin{aligned}\n& =8!-6!\\times 3! \\\\\n& =6![56-6] \\\\\n& =720 \\times 50 \\\\\n& =36000\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6w9o90s",
@@ -171,7 +179,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>Case I $5{ }_{---} 0$</p>\n<p>Case II $5{ }_{---} 1$</p>\n<p>$$\n\\begin{array}{ll}\n5 & 2 \\\\\n5 & 3 \\\\\n6 & 0 \\\\\n6 & 1 \\\\\n6 & 2 \\\\\n7 & 0\n\\end{array}$$</p>\n<p>Case IX $7{ }_{---} 1$</p>\n<p>$9 \\times(8 \\times 8 \\times 8)=4608$ but 50000 is not included, so total numbers $4608-1=4607$</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6qiiiec",
@@ -187,7 +196,8 @@
     "topic": "conditional-permutations",
     "difficulty": "hard",
     "solution": "<p>(i) Single letter is used, then no. of words $=5$</p>\n<p>(ii) Two distinct letters are used, then no. of words</p>\n<p>$${ }^5 \\mathrm{C}_2 \\times\\left(\\frac{6!}{2!4!} \\times 2+\\frac{6!}{3!3!}\\right)=10(30+20)=500$$</p>\n<p>(iii) Three distinct letters are used, then no. of words</p>\n<p>$${ }^5 \\mathrm{C}_3 \\times \\frac{6!}{2!2!2!}=900$$</p>\n<p>Total no. of words $=1405$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "lwpvvsrz",
@@ -204,7 +214,8 @@
     "difficulty": "hard",
     "solution": "<p>given $$|a-b| \\geq 2$$ so if</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzeat596/1deeeaba-9a91-4822-a902-1e277fdd34c1/6f2093a0-51ae-11ef-8049-292a7257bd55/file-jaoe38c1lzeat597.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzeat596/1deeeaba-9a91-4822-a902-1e277fdd34c1/6f2093a0-51ae-11ef-8049-292a7257bd55/file-jaoe38c1lzeat597.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2024 Paper 2 Online Mathematics - Permutations and Combinations Question 5 English Explanation\"></p>\n<p>i.e. Total elements in X is $${ }^{20} \\mathrm{C}_6$$</p>\n<p>Now for $$\\mathrm{n}(\\mathrm{Y})$$, range of R has exactly one element i.e. second elements must be constant in R and since R must have 6 element so it is not possible to satisfy both condition so $$\\mathrm{n}(\\mathrm{Y})=0$$.</p>\n<p>$$\\begin{aligned}\n\\text { for } \\quad \\mathrm{n}(\\mathrm{z}) \\quad &amp; 1 \\rightarrow 3,4,5,6 \\\\\n&amp; 2 \\rightarrow 4,5,6 \\\\\n&amp; 3 \\rightarrow 1,5,6 \\\\\n&amp; 4 \\rightarrow 1,2,6 \\\\\n&amp; 5 \\rightarrow 1,2,3 \\\\\n&amp; 6 \\rightarrow 1,2,3,4\n\\end{aligned}$$</p>\n<p>no. of relation that are function will be</p>\n<p>$$\\begin{aligned}\n&amp; ={ }^4 \\mathrm{C}_1 \\times{ }^3 \\mathrm{C}_1 \\times{ }^3 \\mathrm{C}_1 \\times{ }^3 \\mathrm{C}_1 \\times{ }^3 \\mathrm{C}_1 \\times{ }^4 \\mathrm{C}_1 \\\\\n&amp; =(4 \\times 3 \\times 3)^2=\\mathrm{k}^2 \\\\\n&amp; \\text { i.e. } \\mathrm{k}=36\n\\end{aligned}$$</p>",
     "section": "Sec 4",
-    "instruction": "<ul><li>This section contains <b>TWO (02)</b> question stems.</li><li>There are <b>TWO (02)</b> questions corresponding to each question stem.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +2 If ONLY the correct numerical value is entered at the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    "instruction": "<ul><li>This section contains <b>TWO (02)</b> question stems.</li><li>There are <b>TWO (02)</b> questions corresponding to each question stem.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +2 If ONLY the correct numerical value is entered at the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lgxwdlm3",
@@ -220,7 +231,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "Given that digits are $1,2,3,4,5,6,7$\n<br/><br/>Total permutations $=7$!\n<br/><br/>Let $p=$ Number which containing string 153\n<br/><br/>$q=$ Number which containing string 2467\n<br/><br/>$$\n\\begin{array}{ll}\n& \\therefore n(p)=5! \\times 1 \\\\\\\\\n& \\Rightarrow n(q)=4! \\times 1 \\\\\\\\\n& \\Rightarrow n(p \\cap q)=2!\n\\end{array}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore  n(p \\cup q)=n(p)+n(q)-n(p \\cap q) \\\\\\\\\n& = 5 !+4 !-2 !=120+24-2=142\n\\end{aligned}\n$$\n<br/><br/>$\\therefore n$ (neither string 143 nor string 2467)\n<br/><br/>$$\n=7 !-142=5040-142=4898\n$$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lgrefqkf",
@@ -241,7 +253,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "Since the five-digit number must be greater than 40000, the only options for the first digit are 5, 7, or 9. That leaves 3 remaining choices for the first digit. \n\n<br/><br/>Since the number has to be divisible by 5, the last digit must be 0 or 5. If the first digit is 5, the last digit can only be 0, since digits cannot be repeated. If the first digit is 7 or 9, the last digit can be 0 or 5, so there are 2 choices. \n\n<br/><br/>Five possible configurations for the first and last digits :\n\n<br/><br/>- 5xxx0\n<br/><br/>- 7xxx0\n<br/><br/>- 7xxx5\n<br/><br/>- 9xxx0\n<br/><br/>- 9xxx5\n\n<br/><br/>For each of these configurations, there are three places in the middle that can be filled with the remaining 4 unused digits. \n\n<br/><br/>Since repetition isn't allowed, there are 4 options for the second digit, 3 for the third, and 2 for the fourth, which can be represented as <sup>4</sup>P<sub>3</sub>, or permutations of 4 items taken 3 at a time. This is equal to 4 $$ \\times $$ 3 $$ \\times $$ 2 = 24.\n\n<br/><br/>So, for each of the 5 configurations, there are 24 ways to arrange the middle three digits. Therefore, the total number of five-digit numbers that meet the criteria is 5 $$ \\times $$ 24 = 120.\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgrgicm5",
@@ -257,7 +270,8 @@
     "topic": "conditional-permutations",
     "difficulty": "hard",
     "solution": "<p>The problem involves forming nine-digit numbers from three digits a, b, c which are in Arithmetic Progression (AP), used three times each, such that at least once, three consecutive digits are in AP.</p>\n<p>We have the two possible sequences for the AP :</p>\n<ol>\n<li>a, b, c</li>\n<li>c, b, a</li>\n</ol>\n<p>This shows the flexibility in ordering the three digits that are in AP in our nine-digit number.</p>\n<p>The next step is to choose the location of this sequence of three numbers within our nine-digit number.</p>\n<p>Since there are nine places in our number and our sequence takes up three places, we have seven different starting points for our sequence : it can start at the first place, the second place, and so on, up to the seventh place.</p>\n<p>Therefore, the number of ways to select 3 consecutive places out of the 9 places for the AP sequence is 7.</p>\n<p>However, we also have to account for the fact that our sequence can be in one of two orders (a, b, c or c, b, a). So, we multiply the number of starting points by 2 to get $^7C_1 \\times 2 = 14$ ways to arrange the sequence within our nine-digit number.</p>\n<p>The remaining 6 digits (two 'a', two 'b', two 'c\") can be arranged in $\\frac{6!}{2!2!2!}$ ways.</p>\n<p>Therefore, the total number of such nine-digit numbers is $^7C_1 \\times 2 \\times \\frac{6!}{2!2!2!} = 1260$.</p>\n",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lgoy7m2y",
@@ -273,7 +287,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "A number is divisible by 6 if it is divisible by both 2 and 3. A number is divisible by 2 if its last digit is even, which means it must be either 2 or 4 from the given digits. A number is divisible by 3 if the sum of its digits is divisible by 3.\n<br/><br/>$$\n\\begin{aligned}\n& (2,1,3),(2,3,4),(2,5,5),(2,2,5),(2,2,2) \\\\\\\\\n& (4,1,1),(4,4,1),(4,4,4),(4,3,5) \\\\\\\\\n& 2,1,3 \\Rightarrow 312,132 \\\\\\\\\n& 2,3,4 \\Rightarrow 342,432,234,324 \\\\\\\\\n& 2,5,5 \\Rightarrow 552 \\\\\\\\\n& 2,2,5 \\Rightarrow 252,522 \\\\\\\\\n& 2,2,2 \\Rightarrow 222 \\\\\\\\\n& 4,1,1 \\Rightarrow 114 \\\\\\\\\n& 4,4,1 \\Rightarrow 414,144 \\\\\\\\\n& 4,4,4 \\Rightarrow 444 \\\\\\\\\n& 4,3,5 \\Rightarrow 354,534\n\\end{aligned}\n$$\n<br/><br/>Total 16 numbers.",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "lgnwkhha",
@@ -294,7 +309,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "The number of three-digit numbers divisible by 3 by considering the possible sums of digits that are divisible by 3. Your approach is as follows:\n\n<br/><br/>1. Sum of digits is 3: $(1, 1, 1)$ - 1 possible number\n<br/><br/>2. Sum of digits is 9: $(1, 3, 5)$ and $(3, 3, 3)$ -\n<br/><br/> Let's consider the cases separately :\n\n<br/><br/><b>a.</b> Sum of digits is 9: $(1, 3, 5)$\n   For this case, we can arrange the digits in $3!$ ways :\n   135, 153, 315, 351, 513, and 531.\n\n<br/><br/><b>b.</b> Sum of digits is 9: $(3, 3, 3)$\n   For this case, since all the digits are the same, there is only 1 possible number :\n   333.\n\n<br/><br/>Now, the total number of possible numbers when the sum of digits is 9 is :\n\n<br/><br/>$$\n3! + 1 = 6 + 1 = 7\n$$\n\n<br/><br/>3. Sum of digits is 12: $(1, 3, 8)$ - $3!$ possible numbers\n<br/><br/>4. Sum of digits is 15: $(5, 5, 5)$ - 1 possible number\n<br/><br/>5. Sum of digits is 18: $(5, 5, 8)$ - $\\frac{3!}{2!}$ possible numbers (since 5 is repeated)\n<br/><br/>6. Sum of digits is 21: $(5, 8, 8)$ - $\\frac{3!}{2!}$ possible numbers (since 8 is repeated)\n<br/><br/>7. Sum of digits is 24: $(8, 8, 8)$ - 1 possible number\n\n<br/><br/>Adding up the possible numbers for each case, we get:\n\n<br/><br/>$$\n1 + 7 + 3! + 1 + \\frac{3!}{2!} + \\frac{3!}{2!} + 1 = 1 + 7 + 6 + 1 + 3 + 3 + 1 = 22\n$$\n<br/><br/>So, there are a total of 22 three-digit numbers divisible by 3 that can be formed using the digits $1, 3, 5, 8$ with repetition allowed.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lgnys0w5",
@@ -310,7 +326,8 @@
     "topic": "conditional-permutations",
     "difficulty": "hard",
     "solution": "Let the 4-digit ATM pin code be represented by the digits $$abxy$$, where all digits are different, the greatest digit is 7, and the sum of the first two digits is equal to the sum of the last two digits: $$a + b = x + y$$.\n\n<br><br>Since the greatest digit is 7, the possible digits for the pin code are $$0, 1, 2, 3, 4, 5, 6,$$ and $$7$$.\n\n<br><br>1. Let's denote the sum of the first two digits and the sum of the last two digits as $$\\lambda$$. Since the largest digit is 7, we can analyze different possible values for $$\\lambda$$.\n\n<br><br>We will analyze different possible values for $$\\lambda$$ and the corresponding possible pairs of digits:\n\n<br><br>- $$\\lambda = 7$$: The pairs of digits that have a sum of 7 are $(0,7),(7,0),(1,6),(6,1),(2,5),(5,2),(3,4),(4,3)$. Since 7 must be present, we consider the pairs with 7: $(0,7),(7,0)$. \n\n<br><br>When the pair $(0,7)$ is chosen, the other two digits can be any one of the remaining pairs: $(1,6),(6,1),(2,5),(5,2),(3,4),(4,3)$. For each of these pairs, there are 2 possible pin codes: $$07xy$$ and $$07yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 12 possible pin codes for this case.\n\n<br><br>When the pair $(7,0)$ is chosen, the other two digits can also be any one of the remaining pairs: $(1,6),(6,1),(2,5),(5,2),(3,4),(4,3)$. For each of these pairs, there are 2 possible pin codes: $$70xy$$ and $$70yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 12 possible pin codes for this case.\n\n<br><br><br>So, there are 24 possible pin codes for $$\\lambda = 7$$.<br>\n<br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgv2wsca/cbc5754b-29f9-4539-a370-acd512a8c4f5/c2331800-e2c0-11ed-920b-3fff2b1cb8d0/file-1lgv2wscg.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgv2wsca/cbc5754b-29f9-4539-a370-acd512a8c4f5/c2331800-e2c0-11ed-920b-3fff2b1cb8d0/file-1lgv2wscg.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 84 English Explanation 1\">\n\n<br><br>- $$\\lambda = 8$$: The pairs of digits that have a sum of 8 are $(1,7),(7,1),(2,6),(6,2),(3,5),(5,3)$. Since 7 must be present, we consider the pairs with 7: $(1,7),(7,1)$.\n\n<br><br>When the pair $(1,7)$ is chosen, the other two digits can be any one of the remaining pairs: $(2,6),(6,2),(3,5),(5,3)$. For each of these pairs, there are 2 possible pin codes: $$17xy$$ and $$17yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 8 possible pin codes for this case.\n\n<br><br>When the pair $(7,1)$ is chosen, the other two digits can also be any one of the remaining pairs: $(2,6),(6,2),(3,5),(5,3)$. For each of these pairs, there are 2 possible pin codes: $$71xy$$ and $$71yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 8 possible pin codes for this case.\n\n<br><br>So, there are 16 possible pin codes for $$\\lambda = 8$$.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgv2zu9s/f697b5a7-ed4b-4299-82b8-a7a0d3445b64/171d6000-e2c1-11ed-920b-3fff2b1cb8d0/file-1lgv2zu9t.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgv2zu9s/f697b5a7-ed4b-4299-82b8-a7a0d3445b64/171d6000-e2c1-11ed-920b-3fff2b1cb8d0/file-1lgv2zu9t.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 84 English Explanation 2\">\n\n<br><br>- $$\\lambda = 9$$: The pairs of digits that have a sum of 9 are $(2,7),(7,2),(3,6),(6,3),(4,5),(5,4)$. Since 7 must be present, we consider the pairs with 7: $(2,7),(7,2)$.\n\n<br><br>When the pair $(2,7)$ is chosen, the other two digits can be any one of the remaining pairs: $(3,6),(6,3),(4,5),(5,4)$. For each of these pairs, there are 2 possible pin codes: $$27xy$$ and $$27yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 8 possible pin codes for this case.\n\n<br><br>When the pair $(7,2)$ is chosen, the other two digits can also be any one of the remaining pairs: $(3,6),(6,3),(4,5),(5,4)$. For each of these pairs, there are 2 possible pin codes: $$72xy$$ and $$72yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 8 possible pin codes for this case.\n\n<br><br>So, there are 16 possible pin codes for $$\\lambda = 9$$.\n\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgv31bpl/c0980147-5172-44a2-a58d-c6cb14a3f1ab/4066ae30-e2c1-11ed-99f0-2347181d377e/file-1lgv31bpy.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgv31bpl/c0980147-5172-44a2-a58d-c6cb14a3f1ab/4066ae30-e2c1-11ed-99f0-2347181d377e/file-1lgv31bpy.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 84 English Explanation 3\">\n\n<br><br>- $$\\lambda = 10$$: The pairs of digits that have a sum of 10 are $(3,7),(7,3),(4,6),(6,4)$. Since 7 must be present, we consider the pairs with 7: $(3,7),(7,3)$.\n\n<br><br>When the pair $(3,7)$ is chosen, the other two digits can be any one of the remaining pairs: $(4,6),(6,4)$. For each of these pairs, there are 2 possible pin codes: $$37xy$$ and $$37yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 4 possible pin codes for this case.\n\n<br><br>When the pair $(7,3)$ is chosen, the other two digits can also be any one of the remaining pairs: $(4,6),(6,4)$. For each of these pairs, there are 2 possible pin codes: $$73xy$$ and $$73yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 4 possible pin codes for this case.\n\n<br><br>So, there are 8 possible pin codes for $$\\lambda = 10$$.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgv32tqq/b0d7959c-9018-4ef6-a138-3892ec03995b/6a221f20-e2c1-11ed-99f0-2347181d377e/file-1lgv32tqr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgv32tqq/b0d7959c-9018-4ef6-a138-3892ec03995b/6a221f20-e2c1-11ed-99f0-2347181d377e/file-1lgv32tqr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 84 English Explanation 4\">\n\n<br><br>- $$\\lambda = 11$$: The pairs of digits that have a sum of 11 are $(4,7),(7,4),(5,6),(6,5)$. Since 7 must be present, we consider the pairs with 7: $(4,7),(7,4)$.\n\n<br><br>When the pair $(4,7)$ is chosen, the other two digits can be any one of the remaining pairs: $(5,6),(6,5)$. For each of these pairs, there are 2 possible pin codes: $$47xy$$ and $$47yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 4 possible pin codes for this case.\n\n<br><br>When the pair $(7,4)$ is chosen, the other two digits can also be any one of the remaining pairs: $(5,6),(6,5)$. For each of these pairs, there are 2 possible pin codes: $$74xy$$ and $$74yx$$, where $$x$$ and $$y$$ are the digits from the chosen pair. In total, there are 4 possible pin codes for this case.\n\n<br><br>So, there are 8 possible pin codes for $$\\lambda = 11$$.\n\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgv34b44/8ad108c1-684d-453a-8d6e-de913d462fc1/935ca040-e2c1-11ed-99f0-2347181d377e/file-1lgv34b45.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgv34b44/8ad108c1-684d-453a-8d6e-de913d462fc1/935ca040-e2c1-11ed-99f0-2347181d377e/file-1lgv34b45.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 84 English Explanation 5\">\n\n<br><br>- $$\\lambda = 12$$: The only pair of digits that have a sum of 12 is $(5,7)$. Since 7 must be present, this case is not possible.\n\n<br><br>- $$\\lambda = 13$$: The only pair of digits that have a sum of 13 is $(6,7)$. Since 7 must be present, this case is not possible.\n\n<br><br>- $$\\lambda = 14$$: The only pair of digits that have a sum of 14 is $(7,7)$. Since all the digits must be different, this case is not possible.\n\n<br><br>Adding up all the possible pin codes for each value of $$\\lambda$$, we get:\n\n<br><br>$$16 + 24 + 24 + 16 + 8 = 72$$\n\n<br><br>Therefore, the maximum number of trials necessary to obtain the correct code is 72.",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldo7hjc5",
@@ -326,7 +343,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "A number will be divisible by 6 iff the digit at the unit place of the number is divisible by 2 and sum of all digits of the number is divisible by 3 .\n<br/><br/>Units, place must be occupied by 4 and hence, at \nleast one 4 must be there.\n<br/><br/>Possible combination of 4, 5, 9 are as follows :\n<br/><br/><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-0pky\">4</th>\n    <th class=\"tg-0pky\">5</th>\n    <th class=\"tg-0pky\">9</th>\n    <th class=\"tg-0pky\">Total number<br> of Number</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-0pky\">1</td>\n    <td class=\"tg-0pky\">1</td>\n    <td class=\"tg-0pky\">4</td>\n    <td class=\"tg-0pky\">$${{5!} \\over {4!}} = 5$$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">1</td>\n    <td class=\"tg-0pky\">4</td>\n    <td class=\"tg-0pky\">1</td>\n    <td class=\"tg-0pky\">$${{5!} \\over {4!}} = 5$$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">2</td>\n    <td class=\"tg-0pky\">2</td>\n    <td class=\"tg-0pky\">2</td>\n    <td class=\"tg-0pky\">$${{5!} \\over {2!2!}} = 30$$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">3</td>\n    <td class=\"tg-0pky\">0</td>\n    <td class=\"tg-0pky\">3</td>\n    <td class=\"tg-0pky\">$${{5!} \\over {2!3!}} = 10$$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">3</td>\n    <td class=\"tg-0pky\">3</td>\n    <td class=\"tg-0pky\">0</td>\n    <td class=\"tg-0pky\">$${{5!} \\over {2!3!}} = 10$$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">4</td>\n    <td class=\"tg-0pky\">1</td>\n    <td class=\"tg-0pky\">1</td>\n    <td class=\"tg-0pky\">$${{5!} \\over {3!}} = 20$$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0pky\">6</td>\n    <td class=\"tg-0pky\">0</td>\n    <td class=\"tg-0pky\">0</td>\n    <td class=\"tg-0pky\">$${{5!} \\over {5!}} = 1$$</td>\n  </tr>\n</tbody>\n</table>\n<br/><br/>Total = 5 + 5 + 30 + 10 + 10 + 20 + 1 = 81.",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldoo9cl4",
@@ -342,7 +360,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "Vowels : A,A,A,I,I,O\n<br/><br/>Consonants : S,S,S,S,N,N,T\n<br/><br/>$$ \\therefore $$ Total number of ways in which vowels come together\n<br/><br/>$=\\frac{8 !}{4 ! 2 !} \\times \\frac{6 !}{3 ! 2 !}=50400$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldu5hsr5",
@@ -363,7 +382,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "Numbers between 5000 &amp; 10000<br><br>\nUsing digits 1, 3, 5, 7, 9<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lef5alut/f8dc7152-4573-493d-a2cc-0b09243a1255/1b9fc550-b265-11ed-a126-5dfa1a9d5fb8/file-1lef5aluu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lef5alut/f8dc7152-4573-493d-a2cc-0b09243a1255/1b9fc550-b265-11ed-a126-5dfa1a9d5fb8/file-1lef5aluu.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 25th January Evening Shift Mathematics - Permutations and Combinations Question 91 English Explanation\"><br>\nTotal Numbers = 3 × 4 × 3 × 2 = 72",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldswvvgd",
@@ -379,7 +399,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "$1 \\ldots \\ldots \\ldots \\ldots \\ldots \\rightarrow{ }^{8} C_{5}=56$\n<br/><br/>\n23 $\\ldots\\ldots\\ldots\\ldots\\ldots\\rightarrow{ }^{6} C_{4}=\\frac{15}{71}$\n<br/><br/>\n$72^{\\text {th }}$ number $=245678$\n<br/><br/>\nSum $=32$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "ldqzur7j",
@@ -395,7 +416,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "<p>$$.......1 \\to {{6!} \\over {2!3!}} = 60$$</p>\n<p>$$.......3 \\to {{6!} \\over {3!}} = 120$$</p>\n<p>$$.......5 \\to {{6!} \\over {3!2!}} = 60$$</p>\n<p>Total = 240</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldr7rs32",
@@ -411,7 +433,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>We have to make 4 digit numbers using the\ndigits, 1, 2, 3 and 5.\n<br><br>The unit digit of the 4 digit number will be 5.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lf61sqp4/9a9d5f7b-a4f5-43a8-8dd7-0303f78b9d4c/98f24a80-c130-11ed-8b61-5f07d5ca97fb/file-1lf61sqp5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lf61sqp4/9a9d5f7b-a4f5-43a8-8dd7-0303f78b9d4c/98f24a80-c130-11ed-8b61-5f07d5ca97fb/file-1lf61sqp5.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 30th January Morning Shift Mathematics - Permutations and Combinations Question 100 English Explanation\"></p>\n<p>Now, the sum (x + y + z) should be of the (3p + 1).\n<br><br>Therefore, the possible cases are\n<br><br>(x, y, z) = (1, 1, 5), (1, 1, 2), (2, 2, 3), (2, 3, 5), (3, 3, 1) and\n(5, 5, 3).</p>\n<p>So, total arrangements are\n<br><br>For $(1,1,5) \\rightarrow \\frac{3 !}{2 !}=3 ;$ \n<br><br>For $(1,1,2) \\rightarrow \\frac{3 !}{2 !}=3 ;$\n<br><br>For $(2,2,3) \\rightarrow \\frac{3 !}{2 !}=3 ;$ \n<br><br>For $(2,3,5) \\rightarrow 3 !=6 ;$\n<br><br>For $(3,3,1) \\rightarrow \\frac{3 !}{2 !}=3 ;$\n<br><br>For $(5,5,3) \\rightarrow \\frac{3 !}{2 !}=3 ;$\n<br><br>So, total number of arrangements $=3+3+3+6+3+3=$ 21</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldptkt5n",
@@ -427,7 +450,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "Numbers which are divisible by 3 (4 digit) and less than or equal to 2800\n\n<br/><br/>$=\\frac{2799-1002}{3}+1=600$\n\n<br/><br/>Numbers which are divisible by 11 (4 digit) and less than or equal to 2800\n\n<br/><br/>$=\\frac{2794-1001}{11}+1=164$\n\n<br/><br/>Numbers which are divisible by 33 (4 digit) and less than or equal to 2800\n\n<br/><br/>$=\\frac{2772-1023}{33}+1=54$\n\n<br/><br/>$\\therefore$ Total numbers = $600+164-54=710$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lh2yrfzn",
@@ -443,7 +467,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "Given, word is UNIVERSE\n\n<br/><br/>Here, vowels are E, I, U and consonants are N, R, S, V \n<br/><br/>$\\therefore$ Required number of 4-letters words, with or without meaning, \n<br/><br/>each consisting of 2 vowels and 2 consonants\n<br/><br/>$$\n\\begin{aligned}\n& ={ }^3 C_2 \\times{ }^4 C_2 \\times 4 ! \\\\\\\\\n& ={ }^3 C_1 \\times{ }^4 C_2 \\times 24 \\\\\\\\\n& =3 \\times 6 \\times 24=432\n\\end{aligned}\n$$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lgylnv0d",
@@ -464,7 +489,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "$$\n\\text { Total number of words }=\\frac{11 !}{2 ! 2 ! 2 !}\n$$\n<br/><br/>Number of words in which $\\mathrm{C}$ and $\\mathrm{S}$ are together\n<br/><br/>$$\n=\\frac{10 !}{2 ! 2 ! 2 !} \\times 2 \\text { ! }\n$$\n<br/><br/>So, required number of words\n<br/><br/>$$\n\\begin{aligned}\n& =\\frac{11 !}{2 ! 2 ! 2 !}-\\frac{10 !}{2 ! 2 !} \\\\\\\\\n& =\\frac{11 \\times 10 !}{2 ! 2 ! 2 !}-\\frac{10 !}{2 ! 2 !} \\\\\\\\\n& =\\frac{10 !}{2 ! 2 !}\\left[\\frac{11}{2}-1\\right]=\\frac{10 !}{2 ! 2 !} \\times \\frac{9}{2} \\\\\\\\\n& =5670 \\times 6 ! \\\\\\\\\n& \\Rightarrow k(6 !)=5670 \\times 6 ! \\\\\\\\\n& \\Rightarrow k=5670\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgzxfup5",
@@ -485,7 +511,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "In the given word, <br/><br/>vowels are : I, E, E, E, E <br/><br/>Consonants are : N, D, P, N, D, N, C <br/><br/>So, number of words $=\\frac{8 !}{3 ! 2 !} \\times \\frac{5 !}{4 !}$ <br/><br/>$=\\frac{8 \\times 7 \\times 6 \\times 5 \\times 4}{2} \\times 5=16800$\n<br/><br/><b>Concept :</b>\n<br/><br/>Out of $n$ objects, if $r$ things are same, so number of ways $=\\frac{n !}{r !}$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "l7eih9yp",
@@ -502,7 +529,8 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7upxhst/da4b2380-d014-46b6-9317-320e4e3c2adc/0cc600d0-3060-11ed-be02-29ec3fdd6583/file-1l7upxhsu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7upxhst/da4b2380-d014-46b6-9317-320e4e3c2adc/0cc600d0-3060-11ed-be02-29ec3fdd6583/file-1l7upxhsu.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2022 Paper 1 Online Mathematics - Permutations and Combinations Question 10 English Explanation 1\"></p>\n<p>This is a 4-digit integer whose 0th digit called D, 10th digit called C, 100th digit called B and 1000th digit called A.</p>\n<p>Given range for possible number is 2022 to 4482.</p>\n<p>So, position A can have digits 2, 3 or 4.</p>\n<p>0, 6 and 7 can't put in A as number starts with 0, 6 or 7 don't fall in the range between 2022 to 4482.</p>\n<p>So, Position A can be filled with 2, 3 or 4 in $${}^3{C_1} = 3$$ ways.</p>\n<p>Position B can be filled by one of 0, 2, 3, 4, 6, 7</p>\n<p>So, total possible ways for position B = $${}^6{C_1} = 6$$ ways</p>\n<p>Similarly, Position C can be filled in $${}^6{C_1} = 6$$ ways</p>\n<p>Position D can be filled in $${}^6{C_1} = 6$$ ways</p>\n<p>$$\\therefore$$ Total possible integer numbers starting with 2 or 3 or 4</p>\n<p>$$ = 3 \\times 6 \\times 6 \\times 6 = 3 \\times 216 = 648$$</p>\n<p>Now lets find those numbers which starts with 2 and 4 but don't fall in the range between 2022 to 4482.</p>\n<p>Situation 1 :</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7uq0oxe/0c0ea2b8-2e3d-4c2d-bf01-83cb7665cadf/65b4e120-3060-11ed-be02-29ec3fdd6583/file-1l7uq0oxf.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7uq0oxe/0c0ea2b8-2e3d-4c2d-bf01-83cb7665cadf/65b4e120-3060-11ed-be02-29ec3fdd6583/file-1l7uq0oxf.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2022 Paper 1 Online Mathematics - Permutations and Combinations Question 10 English Explanation 2\"></p>\n<p>$$\\therefore$$ Total possible numbers starting with 200 are = 6</p>\n<p>Situation 2 :</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7uq0aph/16a9da3a-2f0c-465d-80fa-9fb5a68e83d5/5ab8d650-3060-11ed-be02-29ec3fdd6583/file-1l7uq0api.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7uq0aph/16a9da3a-2f0c-465d-80fa-9fb5a68e83d5/5ab8d650-3060-11ed-be02-29ec3fdd6583/file-1l7uq0api.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2022 Paper 1 Online Mathematics - Permutations and Combinations Question 10 English Explanation 3\"></p>\n<p>$$\\therefore$$ Total possible number in this case = 1</p>\n<p>Situation 3 :</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7upzqva/a600e94b-d185-4bb2-b37e-d6fce2fabce6/4b65a660-3060-11ed-be02-29ec3fdd6583/file-1l7upzqvb.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7upzqva/a600e94b-d185-4bb2-b37e-d6fce2fabce6/4b65a660-3060-11ed-be02-29ec3fdd6583/file-1l7upzqvb.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2022 Paper 1 Online Mathematics - Permutations and Combinations Question 10 English Explanation 4\"></p>\n<p>$$\\therefore$$ Total numbers in this case $$ = 2 \\times 6 \\times 6 = 72$$</p>\n<p>$$\\therefore$$ Total number that don't fall in the range 2022 to 4482 which starts with 2 or 4 are</p>\n<p>$$= 6 + 1 + 72 = 79$$</p>\n<p>$$\\therefore$$ Total numbers falls in the range 2022 to 4482</p>\n<p>$$=648-79$$</p>\n<p>$$=569$$</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l5bb1vut",
@@ -518,7 +546,8 @@
     "topic": "conditional-permutations",
     "difficulty": "hard",
     "solution": "Digits are $1,2,3,4,5,7,9$<br/><br/>\nMultiple of $11 \\rightarrow$ Difference of sum at even and odd place is divisible by 11 .<br/><br/>\nLet number of the form <b>abcdefg</b><br/><br/>\n$$\n\\begin{aligned}\n&\\therefore(\\mathrm{a}+\\mathrm{c}+\\mathrm{e}+\\mathrm{g})-(\\mathrm{b}+\\mathrm{d}+\\mathrm{f})=11 \\mathrm{x} \\\\\\\\\n&\\mathrm{a}+\\mathrm{b}+\\mathrm{c}+\\mathrm{d}+\\mathrm{e}+\\mathrm{f}=31 \\\\\\\\\n&\\therefore \\text { either } \\mathrm{a}+\\mathrm{c}+\\mathrm{e}+\\mathrm{g}=21 \\text { or } 10 \\\\\\\\\n&\\therefore \\mathrm{b}+\\mathrm{d}+\\mathrm{f}=10 \\text { or } 21\n\\end{aligned}\n$$<br/><br/>\n<b>Case-1</b><br/><br/>\n$$\n\\begin{aligned}\n&a+c+e+g=21 \\\\\\\\\n&b+d+f=10 \\\\\\\\\n&(b, d, f) \\in\\{(1,2,7)(2,3,5)(1,4,5)\\} \\\\\\\\\n&(a, c, e, g) \\in\\{(1,4,7,9),(3,4,5,9),(2,3,7,9)\\}\n\\end{aligned}\n$$<br/><br/>\n<b>Case-2</b><br/><br/>\n$$\n\\begin{aligned}\n&\\mathrm{a}+\\mathrm{c}+\\mathrm{e}+\\mathrm{g}=10 \\\\\\\\\n&\\mathrm{~b}+\\mathrm{d}+\\mathrm{f}=21 \\\\\\\\\n&(\\mathrm{a}, \\mathrm{b}, \\mathrm{e}, \\mathrm{g}) \\in\\{1,2,3,4)\\} \\\\\\\\\n&(\\mathrm{b}, \\mathrm{d}, \\mathrm{f}) \\&\\{(5,7,9)\\} \\\\\\\\\n&\\therefore \\text { Total number in case } 2=3 ! \\times 4 !=144 \\\\\\\\\n&\\therefore \\text { Total numbers }=144+432=576\n\\end{aligned}\n$$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l59le9dg",
@@ -534,7 +563,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>$$C - 1:$$ All digits are non-zero</p>\n<p>$${}^9{C_2}\\,.\\,2\\,.\\,{{3!} \\over 2} = 216$$</p>\n<p>$$C - 2$$ : One digit is 0</p>\n<p>$$0,\\,0,\\,x \\Rightarrow {}^9{C_1}\\,.\\,1 = 9$$</p>\n<p>$$0,x,\\,x \\Rightarrow {}^9{C_1}\\,.\\,2 = 18$$</p>\n<p>Total $$ = 216 + 27 = 243$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l5ajmbj0",
@@ -550,7 +580,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "For odd number unit place shall be $1,3,5,7$ or 9 .<br/><br/>\n$\\therefore$ x y 1, x y 3, x y 5, x y 7, x y 9 are the type of numbers. numbers.<br/><br/>\nIf $x \\,y\\, 1$ then $x+y=6,13,20$... Cases are required<br/><br/>\ni.e., $6+6+0+\\ldots=12$ ways<br/><br/>\nIf $x \\, y \\,3$ then<br/><br/>\n$x+y=4,11,18, \\ldots$ Cases are required<br/><br/>\ni.e., $4+8+1+0 \\ldots=13$ ways<br/><br/>\nSimilarly for $x \\,y \\,5$, we have $x+y=2,9,16, \\ldots$<br/><br/>\ni.e., $2+9+3=14$ ways<br/><br/>\nfor $x \\,y$ we have<br/><br/>\n$x+y=0,7,14, \\ldots$<br/><br/>\ni.e., $0+7+5=12$ ways<br/><br/>\nAnd for $x$ y we have<br/><br/>\n$$\nx+y=5,12,19 \\ldots\n$$<br/><br/>\ni.e., $5+7+0 \\ldots=12$ ways<br/><br/>\n$\\therefore$ Total 63 ways",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l6hzoa3g",
@@ -566,7 +597,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "Here 1<sup>st</sup> digit is 1 or 2 only<br><br>\n<b>Case-I</b><br><br>\nIf first digit is 1<br><br>\nThen last two digits can be 24, 32, 36, 52, 56, 64 <br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l97twac2/f9689a1f-abde-44d3-bf0b-1a1289bdd7bc/f788ec10-4b61-11ed-80b9-4154b7faa509/file-1l97twac3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l97twac2/f9689a1f-abde-44d3-bf0b-1a1289bdd7bc/f788ec10-4b61-11ed-80b9-4154b7faa509/file-1l97twac3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th July Evening Shift Mathematics - Permutations and Combinations Question 116 English Explanation 1\"><br>\n<b>Case – II </b><br><br>\nIf first digit is 2 then last two digit can be 16, 36,\n56, 64 <br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l97tyhd1/d57389e9-902a-407f-843c-e06ca2c6e0b2/3494f950-4b62-11ed-80b9-4154b7faa509/file-1l97tyhd2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l97tyhd1/d57389e9-902a-407f-843c-e06ca2c6e0b2/3494f950-4b62-11ed-80b9-4154b7faa509/file-1l97tyhd2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th July Evening Shift Mathematics - Permutations and Combinations Question 116 English Explanation 2\"><br>\nTotal ways = 12 + 18 = 30 ways ",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l6gjaknm",
@@ -582,7 +614,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>Factors of 36 = 2<sup>2</sup> . 3<sup>2</sup> . 1</p>\n<p>Five-digit combinations can be</p>\n<p>(1, 2, 2, 3, 3) (1, 4, 3, 3, 1), (1, 9, 2, 2, 1)</p>\n<p>(1, 4, 9, 11) (1, 2, 3, 6, 1) (1, 6, 6, 1, 1)</p>\n<p>i.e., total numbers</p>\n<p>$${{5!} \\over {2!2!}} + {{5!} \\over {2!2!}} + {{5!} \\over {2!2!}} + {{5!} \\over {3!}} + {{5!} \\over {2!}} + {{5!} \\over {3!2!}}$$</p>\n<p>$$ = (30 \\times 3) + 20 + 60 + 10 = 180$$.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l5668ose",
@@ -603,7 +636,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "To make a no. divisible by 3 we can use the digits\n1,2,5,6,7 or 1,2,3,5,7.<br/><br/>\n Using 1,2,5,6,7, number of even numbers is\n = 4 × 3 × 2 × 1 × 2 = 48<br/><br/>\n Using 1,2,3,5,7, number of even numbers is\n = 4 × 3 × 2 × 1 × 1 = 24<br/><br/>\n Required answer is 72.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6rflsnq",
@@ -619,7 +653,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<b>Case-I</b><br/><br/> When number is 4-digit number $(\\overline{a b c d})$ here $d$ is fixed as 5\n<br/><br/>\nSo, $(a, b, c)$ can be $(6,4,3),(3,4,6),(2,3,6)$, $(6,3,2),(3,2,4)$ or $(4,2,3)$\n<br/><br/>\n$\\Rightarrow 6$ numbers\n<br/><br/>\n<b>Case-II</b><br/><br/> No number possible",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l54udtan",
@@ -635,7 +670,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "If unit digit is 1 then $\\rightarrow 9 \\times$ s $10 \\times 10=900$ numbers <br/><br/>If unit digit is 2 then $\\rightarrow 4 \\times 5 \\times 5=100$ numbers <br/><br/>If unit digit is 3 then $\\rightarrow 3 \\times 4 \\times 4=48$ numbers<br/><br/> If unit digit is 4 then $\\rightarrow 2 \\times 3 \\times 3=18$ numbers<br/><br/> If unit digit is 5 then $\\rightarrow 1 \\times 2 \\times 2=4$ numbers <br/><br/>If unit digit is 6 then $\\rightarrow 1 \\times 2 \\times 2=4$ numbers\n<br/><br/>\nFor $7,8,9 \\rightarrow 4+4+4=12$ Numbers\n<br/><br/>\nTotal $=1086$ Numbers",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l546nn3x",
@@ -651,7 +687,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>There are 98 sets of three consecutive integer and 97 sets of four consecutive integers.</p>\n<p>Using the principle of inclusion and exclusion,</p>\n<p>Number of permutations of $b_{1} b_{2} b_{3} b_{4}=$ Number of permutations when $b_{1} b_{2} b_{3}$ are consecutive + Number of permutations when $b_{2} b_{3} b_{4}$ are consecutive - Number of permutations when $b_{1} b_{2}$ $b_{3} b_{4}$ are consecutive</p>\n<p>$=97 \\times 98+97 \\times 98-97=97 \\times 195=18915$.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l5w0pg9y",
@@ -667,7 +704,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>A number is multiple of 15 when the number is divisible by 5 and sum of digits of the number is divisible by 3.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l65uqr2z/3aa8732e-2bc7-4c8a-a45b-f53f925f4291/0f4fb6b0-0ee7-11ed-a7de-eff776fdb55c/file-1l65uqr30.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l65uqr2z/3aa8732e-2bc7-4c8a-a45b-f53f925f4291/0f4fb6b0-0ee7-11ed-a7de-eff776fdb55c/file-1l65uqr30.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 30th June Morning Shift Mathematics - Permutations and Combinations Question 119 English Explanation\"></p>\n<p>Among 1, 2, 3, 4, 5, 6, 7 unit place is filled with 5 so it is multiple of 5.</p>\n<p>Now to make it divisible by 3, take remaining 5 digits such a way that sum becomes divisible by 3.</p>\n<p>Remaining 5 digits can be</p>\n<p>(1) 1, 2, 3, 4, 6</p>\n<p>Here sum = 1 + 2 + 3 + 4 + 6 + 5 = 21 (divisible by 3)</p>\n<p>This 5 digits can be filled in those 5 placed without repetition in 5 $$\\times$$ 4 $$\\times$$ 3 $$\\times$$ 2 $$\\times$$ 1 = 51 = 120 ways</p>\n<p>(2) 2, 3, 4, 6, 7</p>\n<p>Here sum = 2 + 3 + 4 + 6 + 7 + 5 = 27 (divisible by 3)</p>\n<p>$$\\therefore$$ Number of ways = 51 = 120</p>\n<p>(3) 1, 2, 3, 6, 7</p>\n<p>Here sum = 1 + 2 + 3 + 6 + 7 + 5 = 24 (divisible by 3)</p>\n<p>$$\\therefore$$ Number of ways = 51 = 120</p>\n<p>$$\\therefore$$ Total possible 6 digit numbers divisible by 15</p>\n<p>= 120 + 120 + 120 = 360</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "v0HhheYanRw9k3ecDT1kmlj6yhm",
@@ -688,7 +726,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "Total possible numbers using 1, 2, 2 and 3 is\n<br><br>= $${{4!} \\over {2!}}$$ = 12\n<br><br>When unit place is 1, the total possible numbers using remaining 2, 2 and 3 are\n<br><br>= $${{3!} \\over {2!}}$$ = 3\n<br><br>When unit place is 2, the total possible numbers using remaining 1, 2 and 3 are\n<br><br>= 3! = 6\n<br><br>When unit place is 3, the total possible numbers using remaining 1, 2 and 2 are\n<br><br>= $${{3!} \\over {2!}}$$ = 3\n<br><br>$$ \\therefore $$ Sum of unit places of all (3 + 6 + 3) 12 numbers is \n<br><br>= ( 1$$ \\times $$3 + 2$$ \\times $$6 + 3$$ \\times $$3)\n<br><br>Similarly,\n<br><br>When 10<sup>th</sup> place is 1, the total possible numbers using remaining 2, 2 and 3 are\n<br><br>= $${{3!} \\over {2!}}$$ = 3\n<br><br>When 10<sup>th</sup> place is 2, the total possible numbers using remaining 1, 2 and 3 are\n<br><br>= 3! = 6\n<br><br>When 10<sup>th</sup> place is 3, the total possible numbers using remaining 1, 2 and 2 are\n<br><br>= $${{3!} \\over {2!}}$$ = 3\n<br><br>$$ \\therefore $$ Sum of 10<sup>th</sup> places of all (3 + 6 + 3) 12 numbers is \n<br><br>= ( 1$$ \\times $$3 + 2$$ \\times $$6 + 3$$ \\times $$3) $$ \\times $$ 10\n<br><br>Similarly,\n<br><br>Sum of 100<sup>th</sup> places of all (3 + 6 + 3) 12 numbers is \n<br><br>= ( 1$$ \\times $$3 + 2$$ \\times $$6 + 3$$ \\times $$3) $$ \\times $$ 100\n<br><br>and Sum of 1000<sup>th</sup> places of all (3 + 6 + 3) 12 numbers is \n<br><br>= ( 1$$ \\times $$3 + 2$$ \\times $$6 + 3$$ \\times $$3) $$ \\times $$ 1000\n<br><br>$$ \\therefore $$ Total sum = ( 1$$ \\times $$3 + 2$$ \\times $$6 + 3$$ \\times $$3) + ( 1$$ \\times $$3 + 2$$ \\times $$6 + 3$$ \\times $$3) $$ \\times $$ 10 \n<br><br>+ ( 1$$ \\times $$3 + 2$$ \\times $$6 + 3$$ \\times $$3) $$ \\times $$ 100 + ( 1$$ \\times $$3 + 2$$ \\times $$6 + 3$$ \\times $$3) $$ \\times $$ 1000\n<br><br>= (3 + 12 + 9) (1 + 10 + 100 + 1000) = 1111 $$ \\times $$ 24 = 26664",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "vTTgxkoqnfAoseQRCc1kmlj9jej",
@@ -704,7 +743,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "In single digit numbers = 1\n<br><br>In double digit numbers = 10 + 9 = 19\n<br><br>In triple digit numbers = 100 + 90 + 90 = 280\n<br><br>Total = 300 times",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ktobhmqv",
@@ -720,7 +760,8 @@
     "topic": "conditional-permutations",
     "difficulty": "hard",
     "solution": "First find all possible words and then subtract words\nfrom each case that have both R together.\n<br><br>FARMER (6)<br><br>A, E, F, M, R, R<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-0lax\">A</th>\n    <th class=\"tg-0lax\"></th>\n    <th class=\"tg-0lax\"></th>\n    <th class=\"tg-0lax\"></th>\n    <th class=\"tg-0lax\"></th>\n    <th class=\"tg-0lax\"></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-0lax\">E</td>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-0lax\"></td>\n  </tr>\n  <tr>\n    <td class=\"tg-0lax\">F</td>\n    <td class=\"tg-0lax\">A</td>\n    <td class=\"tg-0lax\">E</td>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-0lax\"></td>\n  </tr>\n  <tr>\n    <td class=\"tg-0lax\">F</td>\n    <td class=\"tg-0lax\">A</td>\n    <td class=\"tg-0lax\">M</td>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-0lax\"></td>\n  </tr>\n  <tr>\n    <td class=\"tg-0lax\">F</td>\n    <td class=\"tg-0lax\">A</td>\n    <td class=\"tg-0lax\">R</td>\n    <td class=\"tg-0lax\">E</td>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-0lax\"></td>\n  </tr>\n  <tr>\n    <td class=\"tg-0lax\">F</td>\n    <td class=\"tg-0lax\">A</td>\n    <td class=\"tg-0lax\">R</td>\n    <td class=\"tg-0lax\">M</td>\n    <td class=\"tg-0lax\">E</td>\n    <td class=\"tg-0lax\">R</td>\n  </tr>\n</tbody>\n</table><br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kwoqbke8/bc58d634-a369-4a42-b528-57c54b3ada02/7f0aa000-534e-11ec-9cbb-695a838b20fb/file-1kwoqbke9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kwoqbke8/bc58d634-a369-4a42-b528-57c54b3ada02/7f0aa000-534e-11ec-9cbb-695a838b20fb/file-1kwoqbke9.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 50vh\" alt=\"JEE Main 2021 (Online) 1st September Evening Shift Mathematics - Permutations and Combinations Question 134 English Explanation\">",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1kruajm92",
@@ -736,7 +777,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kruuwxxs/0cdfc0c2-3025-4a29-802d-1c6956ab8f81/1503b410-f3b0-11eb-a605-b34dacb82f1b/file-1kruuwxxt.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 22th July Evening Shift Mathematics - Permutations and Combinations Question 143 English Explanation\"><br>= 4 $$\\times$$ 4 $$\\times$$ 3 $$\\times$$ 2 = 96",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "IGIb0SRhLxdVea31gf1kls5ho0j",
@@ -752,7 +794,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "The numbers are lying between 100 and 1000\nthen each number is of three digits.\n<br><br>The possible combination of 3 digits numbers\nare\n<br><br>1, 2, 3; 1, 2, 4; 1, 2, 5; 1, 3, 4; 1, 3, 5; 1, 4, 5;\n2, 3, 4; 2, 3, 5; 2, 4, 5; and 3, 4, 5.\n<br><br>The possible combination of numbers which are divisible by 3 are 1, 2,\n3; 3, 4, 5; 1, 3, 5 and 2, 3, 4.\n<br>(If sum of digits of a number is divisible by 3 then the number is divisible by 3)\n<br><br>$$ \\therefore $$ Total number of numbers = 4 × 3! = 24\n<br><br>The possible combination of numbers divisible by 5 are 1, 2, 5; 2, 3, 5; 3, 4, 5; 1, 3, 5;\n1, 4, 5 and 2, 4, 5.\n<br>(If the last digit of a number is 0 or 5 then the number is divisible by 5)\n<br><br>$$ \\therefore $$ Total number of numbers = 6 × 2! = 12\n<br><br>The possible combination of number divisible by both 3 and 5 are 1, 3, 5 and 3, 4, 5.\n\n<br><br>$$ \\therefore $$ Total number of numbers = 2 $$ \\times $$ 2! = 4\n<br><br>$$ \\therefore $$ Total required number = 24 + 12 - 4 = 32",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ktbiwpdb",
@@ -768,7 +811,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "(i) When '0' is at unit place<br><br><img src=\"https://imagex.cdn.examgoal.net/1ktcvji8i/0960b949-dbbc-46ad-8cdd-ebbe0e205c7e/db8ff810-1164-11ec-8e70-b744652da63b/file-1ktcvji8j.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Morning Shift Mathematics - Permutations and Combinations Question 139 English Explanation 1\"><br><br>Number of numbers = 20<br><br>(ii) When 4 or 6 are at unit place <br><br><img src=\"https://imagex.cdn.examgoal.net/1ktcvk37l/a021f687-9936-4fe5-9830-037e399861ae/ebc3eb10-1164-11ec-8e70-b744652da63b/file-1ktcvk37m.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Morning Shift Mathematics - Permutations and Combinations Question 139 English Explanation 2\"><br><br>Number of numbers = 32<br><br>Total three digit even number = 20 + 32 = 52",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1kteplg92",
@@ -784,7 +828,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<table class=\"tg\">\n<thead>\n  <tr>\n    <td class=\"tg-baqh\">5</td>\n    <td class=\"tg-baqh\">a</td>\n    <td class=\"tg-baqh\">b</td>\n    <td class=\"tg-baqh\">b</td>\n    <td class=\"tg-baqh\">a</td>\n    <td class=\"tg-baqh\">5</td>\n  </tr>\n</thead>\n</table>\n<br><br>For divisible by 55 it shall be divisible by 11 and 5\nboth, for divisibility by 5 unit digit shall be 0 or 5 but\nas the number is six digit palindrome unit digit is 5.\n\n<br><br>A number is divisible by 11 if the difference between sum of the digits in the odd places and the sum of the digits in the even places is a multiple of 11 or zero.\n<br><br>Sum of the digits in the even place = a + b + 5\n<br><br>Sum of the digits in the odd places = a + b + 5\n<br><br>Difference between the two sums = (a + b + 5 ) - (a + b + 5) = 0\n<br><br>0 is divisible by 11.\n<br><br>Hence, 5abba5 is divisible by 11.\n<br><br>So, required number = 10 $$\\times$$ 10 = 100",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ktisnbyi",
@@ -800,7 +845,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "Total possible words = 6! = 720\n<br><br>When 4 consonants are together (V, W, L, S)\n<br>such cases = 3! ⋅ 4! = 144\n<br><br>All consonants should not be together<br><br>= Total $$-$$ All consonants together,<br><br>= 6! $$-$$ 3! 4! = 576",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "C8HGleU1NgkvV0IfgIjgy2xukfjjwd85",
@@ -816,7 +862,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "In 'SYLLABUS' word\n<br><br>1. Two S letters\n<br><br>2. Two L letters\n<br><br>3. One Y letter\n<br><br>4. One A letter\n<br><br>5. One B letter\n<br><br>6. One U letter\n<br><br>Number of ways we can select two alike\nletters = <sup>2</sup>C<sub>1</sub>\n<br><br>Then number of ways we can select two distinct\nletters = <sup>5</sup>C<sub>2</sub>\n<br><br>Then total arrangement of\nselected letters = $${{4!} \\over {2!}}$$\n<br><br>So total number of words, with or without meaning, that can be formed\n<br><br>= <sup>2</sup>C<sub>1</sub> $$ \\times $$ <sup>5</sup>C<sub>2</sub> $$ \\times $$ $${{4!} \\over {2!}}$$ = 240",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "E0UshBABGmQdzdNVQPjgy2xukg4n2d68",
@@ -832,7 +879,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "Consonants $$ \\to $$ LTTR\n<br>Vowels $$ \\to $$ EE\n<br><br>Total No of words = $${{6!} \\over {2!2!}}$$ = 180\n<br><br>Total no of words if vowels are together\n<br>= $${{5!} \\over {2!}}$$ = 60\n<br><br>$$ \\therefore $$ Total no of words where<br> vowels never come together = 180 – 60 = 120.",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "peQrKRXgQeisz7wOkTjgy2xukfuv9z75",
@@ -853,7 +901,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "F<sub>1</sub> $$ \\to $$ 3 members\n<br>F<sub>2</sub> $$ \\to $$ 3 members\n<br>F<sub>3</sub> $$ \\to $$ 4 members\n<br><br>Total arrangements of three families = 3!\n<br><br>Arrangement between members of F<sub>1</sub> family = 3!\n<br><br>Arrangement between members of F<sub>2</sub> family = 3!\n<br><br>Arrangement between members of F<sub>3</sub> family = 4!\n<br><br>$$ \\therefore $$ Total numbers of ways can they be seated so that the same family members are not separated\n<br><br>= 3! $$ \\times $$ 3! $$ \\times $$ 3!  $$ \\times $$ 4!\n<br><br>= (3!)<sup>3</sup>.(4!) ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "FnMRlmZon3hFFMIfYv7k9k2k5ior0st",
@@ -874,7 +923,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kd4dk65jigi7/d0d2eb32-e7be-475c-9d2b-79a92e71a0fc/5a9b39f0-4603-11ea-b62d-51ccc5d4afb6/file-7kd4dk65jigi8-345w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 9th January Morning Slot Mathematics - Permutations and Combinations Question 169 English Explanation\">\n<br><br>Except 1 and 2 there are eight options on first place and only one option at fourth place possible which is digit '2'.\n<br><br>Remaining three places can be filled by any three digits out of 1, 3, 4, 5, 6, 7, 8 and 9.\n<br><br>$$ \\therefore $$ No. of five digits numbers = 8 $$ \\times $$ 8 $$ \\times $$ 7 $$ \\times $$ 1 $$ \\times $$ 6 = 336 $$ \\times $$ 8\n<br><br>Also 336k = 336 $$ \\times $$ 8\n<br><br>$$ \\Rightarrow $$ k = 8",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "T7pubLMDX4L70jGUBQ3rsa0w2w9jwy0oxdn",
@@ -895,7 +945,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-860w.jpg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1040w.jpg\"><source media=\"(max-width: 1220px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1220w.jpg\"><source media=\"(max-width: 1400px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1400w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1580w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th April Morning Slot Mathematics - Permutations and Combinations Question 178 English Explanation\"></picture><br>\n digit 0, 1, 2, 5, 7, 9<br><br>\n$$\\left( {{a_1} + {a_3} + {a_5}} \\right) - \\left( {{a_2} + {a_4} + {a_6}} \\right) = 11\\,K$$<br><br>\nso (1, 2, 9) (0, 5, 7)<br><br>\nNow number of ways to arranging them<br><br>\n= 3! × 3! + 3! × 2 × 2<br><br>\n= 6 × 6 + 6 × 4<br><br>\n= 6 × 10<br><br>\n= 60",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "QpyXMtfVkQTUnuxoZ3qaz",
@@ -916,7 +967,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12cwvv5/e1820e51-959b-40f7-8768-b52f93a03f4e/1d0d6c10-e146-11e9-a7bc-b7b08ce8d541/file-7kejek12cwvv6-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12cwvv5/e1820e51-959b-40f7-8768-b52f93a03f4e/1d0d6c10-e146-11e9-a7bc-b7b08ce8d541/file-7kejek12cwvv6-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12cwvv5/e1820e51-959b-40f7-8768-b52f93a03f4e/1d0d6c10-e146-11e9-a7bc-b7b08ce8d541/file-7kejek12cwvv6-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12cwvv5/e1820e51-959b-40f7-8768-b52f93a03f4e/1d0d6c10-e146-11e9-a7bc-b7b08ce8d541/file-7kejek12cwvv6-860w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7kejek12cwvv5/e1820e51-959b-40f7-8768-b52f93a03f4e/1d0d6c10-e146-11e9-a7bc-b7b08ce8d541/file-7kejek12cwvv6-1040w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Evening Slot Mathematics - Permutations and Combinations Question 180 English Explanation 1\"></picture>\n<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dapyn/39a29563-8ff6-4c08-92bc-7beb68eb8f2b/9dd217f0-e147-11e9-a7bc-b7b08ce8d541/file-7kejek12dapyo-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dapyn/39a29563-8ff6-4c08-92bc-7beb68eb8f2b/9dd217f0-e147-11e9-a7bc-b7b08ce8d541/file-7kejek12dapyo-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dapyn/39a29563-8ff6-4c08-92bc-7beb68eb8f2b/9dd217f0-e147-11e9-a7bc-b7b08ce8d541/file-7kejek12dapyo-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dapyn/39a29563-8ff6-4c08-92bc-7beb68eb8f2b/9dd217f0-e147-11e9-a7bc-b7b08ce8d541/file-7kejek12dapyo-860w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7kejek12dapyn/39a29563-8ff6-4c08-92bc-7beb68eb8f2b/9dd217f0-e147-11e9-a7bc-b7b08ce8d541/file-7kejek12dapyo-1040w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Evening Slot Mathematics - Permutations and Combinations Question 180 English Explanation 2\"></picture>\n<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dlc0u/a89849db-4c4c-4791-b827-d43935f49e61/c4f423e0-e148-11e9-a7bc-b7b08ce8d541/file-7kejek12dlc0v-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dlc0u/a89849db-4c4c-4791-b827-d43935f49e61/c4f423e0-e148-11e9-a7bc-b7b08ce8d541/file-7kejek12dlc0v-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dlc0u/a89849db-4c4c-4791-b827-d43935f49e61/c4f423e0-e148-11e9-a7bc-b7b08ce8d541/file-7kejek12dlc0v-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dlc0u/a89849db-4c4c-4791-b827-d43935f49e61/c4f423e0-e148-11e9-a7bc-b7b08ce8d541/file-7kejek12dlc0v-860w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7kejek12dlc0u/a89849db-4c4c-4791-b827-d43935f49e61/c4f423e0-e148-11e9-a7bc-b7b08ce8d541/file-7kejek12dlc0v-1040w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Evening Slot Mathematics - Permutations and Combinations Question 180 English Explanation 3\"></picture>\n<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dv8np/32d2792d-dd1d-4a0c-b0de-9f84bb49f757/d8721c50-e149-11e9-a7bc-b7b08ce8d541/file-7kejek12dv8nq-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dv8np/32d2792d-dd1d-4a0c-b0de-9f84bb49f757/d8721c50-e149-11e9-a7bc-b7b08ce8d541/file-7kejek12dv8nq-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dv8np/32d2792d-dd1d-4a0c-b0de-9f84bb49f757/d8721c50-e149-11e9-a7bc-b7b08ce8d541/file-7kejek12dv8nq-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek12dv8np/32d2792d-dd1d-4a0c-b0de-9f84bb49f757/d8721c50-e149-11e9-a7bc-b7b08ce8d541/file-7kejek12dv8nq-860w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7kejek12dv8np/32d2792d-dd1d-4a0c-b0de-9f84bb49f757/d8721c50-e149-11e9-a7bc-b7b08ce8d541/file-7kejek12dv8nq-1040w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Evening Slot Mathematics - Permutations and Combinations Question 180 English Explanation 4\"></picture>\n<br>So total 4 digit numbers possibe = 216 + 72 + 18 + 4 = 310",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "VyKFCxCKFLUFzxl6WeXIp",
@@ -937,7 +989,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0r83c7c/631bc302-7fe0-4594-97e8-f1c89c0a8b3f/a3bd4080-db26-11e9-acf6-6d09a288f7f2/file-7km5fk0r83c7d-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0r83c7c/631bc302-7fe0-4594-97e8-f1c89c0a8b3f/a3bd4080-db26-11e9-acf6-6d09a288f7f2/file-7km5fk0r83c7d-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0r83c7c/631bc302-7fe0-4594-97e8-f1c89c0a8b3f/a3bd4080-db26-11e9-acf6-6d09a288f7f2/file-7km5fk0r83c7d-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0r83c7c/631bc302-7fe0-4594-97e8-f1c89c0a8b3f/a3bd4080-db26-11e9-acf6-6d09a288f7f2/file-7km5fk0r83c7d-860w.jpg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0r83c7c/631bc302-7fe0-4594-97e8-f1c89c0a8b3f/a3bd4080-db26-11e9-acf6-6d09a288f7f2/file-7km5fk0r83c7d-1040w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7km5fk0r83c7c/631bc302-7fe0-4594-97e8-f1c89c0a8b3f/a3bd4080-db26-11e9-acf6-6d09a288f7f2/file-7km5fk0r83c7d-1220w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Morning Slot Mathematics - Permutations and Combinations Question 181 English Explanation\"></picture>\n<br><br>For those three odd digit numbers 1, 1, 3 we can choose any three positions out of the four even positions.\n<br><br>$$ \\therefore $$ No of ways we can choose 3 positions out of the 4 positions = <sup>4</sup>C<sub>3</sub>\n<br><br>After choosing those three positions, number of ways we can arrange three odd digit numbers = <sup>4</sup>C<sub>3</sub> $$ \\times $$ $${{3!} \\over {2!}}$$\n<br><br>Then the remaining 6 digits can be arrange = $${{6!} \\over {2!4!}}$$ ways\n<br><br>$$ \\therefore $$ Total number of 9 digit numbers = <sup>4</sup>C<sub>3</sub> $$ \\times $$ $${{3!} \\over {2!}}$$ $$ \\times $$ $${{6!} \\over {2!4!}}$$ = 180\n\n\n\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "va6hXgEJsJa8x7wVuocWG",
@@ -958,7 +1011,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "Total no 1 digit numbers possible = 4 (allowed digits 1, 3, 7, 9)\n<br><br>Total no 2 digit numbers possible = 4$$ \\times $$5 = 20\n<br><br>Total no 3 digit numbers possible = 4$$ \\times $$5$$ \\times $$5 = 100\n<br><br>Total no 4 digit numbers possible = 2$$ \\times $$5$$ \\times $$5$$ \\times $$5 = 250\n<br><br>So the number of natural numbers less than 7,000 possible are\n<br>= 4 + 20 + 100 + 250 = 374",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "pOakikkdQhU84tLNpvMvZ",
@@ -979,7 +1033,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "Here total no of different letters present are,\n<br><br>(1)&nbsp;&nbsp;&nbsp;One M\n<br><br>(2)&nbsp;&nbsp;&nbsp;Three E (E E E)\n<br><br>(3)&nbsp;&nbsp;&nbsp;One D\n<br><br>(4)&nbsp;&nbsp;&nbsp;One I\n<br><br>(5)&nbsp;&nbsp;&nbsp;One T\n<br><br>(6)&nbsp;&nbsp;&nbsp;Two R (R R)\n<br><br>(7)&nbsp;&nbsp;&nbsp;Two A (A A)\n<br><br>(8)&nbsp;&nbsp;&nbsp; Two N (N N)\n<br><br>In the four letter word first letter is R and last letter is E.\n<br><br>$$ \\therefore $$ &nbsp;&nbsp;&nbsp; Word is = R _ _ E\n<br><br>Now remaining letters are, \n<br><br>M, EE, D, I, T, R, AA, NN\n<br><br>Those 2 empty places can be filled with identical letters [EE, AA, NN] in 3 ways.\n<br><br>Or two empty places can be filled with distinct letters [M, E,  D, I, T, R, A, N] in $${}^8{C_2} \\times 2!$$ ways.\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Total no of words = 3 + $${}^8{C_2} \\times 2!$$ = 59",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "uL7pv7JnnXVELZy3",
@@ -996,7 +1051,8 @@
     "difficulty": "medium",
     "solution": "Given: 5 boys and 5 girls<br/><br/>\n$n=$ number of ways of arranging them in a queue such that all the girls stand consecutively.<br/><br/>\nLet us consider 5 girls as one set<br/><br/>\nSo, we have to arrange 5 boys and one set of girls. They can be arranged in 6 ! ways.<br/><br/>\nAlso, the girls in the set can be arranged in 5 ! ways<br/><br/>\nSo, total number of ways $=6 ! \\times 5!$<br/><br/>\n$$\n\\Rightarrow n=6 ! \\times 5 ! \n$$<br/><br/>\nNow, $m=$ number of ways of arranging them in a queue, such that exactly four girls stand consecutively.<br/><br/>\n$\\because$ Exactly four girls can stand together so the remaining one girl must not stand consecutively with four girls.<br/><br/>\nLet us consider 2 cases:<br/><br/>\n<b>Case I</b> : The set of four girls is at the corner. Firstly, four girls are selected out of five girls in ${ }^5 \\mathrm{C}_4$ ways. These girls are arranged in 4 ! ways.<br/><br/>\nAlso, these girls can be placed in any of the two corners and the remaining one girl cannot stand next to the set of girls placed at the corner. So, the $5^{\\text {th }}$ girl can stand at (7-1-1 = 5 ways) And the boys can be arranged in 5 ! ways.<br/><br/>\n$$\n\\begin{aligned}\n\\text {So, number of ways } & =4 ! \\times 2 \\times{ }^5 \\mathrm{C}_4 \\times 5 ! \\times 5 \\\\\\\\\n& =2 \\times 5 \\times 5 ! \\times 5 !\n\\end{aligned}\n$$<br/><br/>\n<b>Case II</b>: The set of four girls are not placed at the corner.\n<br/><br/>\nSo, four girls can be selected and arranged among themselves in ${ }^5 C_4 \\times 4 !=5$ ! ways\nThese girls are not at the corner so they can be arranged at 5 places.<br/><br/>\nThe $5^{\\text {th }}$ girl can stand at $7-2-1=4$ ways. $\\{$ As she cannot stand at places near the set of four girls $\\}$ and the boys can be arranged in 5 ! ways.<br/><br/>\nSo, number of ways $=5 ! \\times 5 \\times 5 \\times 4 \\times 5!$<br/><br/>\n$$\n\\begin{aligned}\n\\Rightarrow m & =(2 \\times 5 \\times 5 ! \\times 5 !)+(5 \\times 4 \\times 5 ! \\times 5 !) \\\\\\\\\n& =5 ! \\times 5 !(10+20) \\\\\\\\\n& =30 \\times 5 ! \\times 5 ! \\\\\\\\\n\\therefore \\frac{m}{n} & =\\frac{30 \\times 5 ! \\times 5 !}{6 ! \\times 5 !} \\\\\\\\\n\\Rightarrow \\frac{m}{n} & \\left.=\\frac{30 \\times 5 !}{6 \\times 5 !} \\quad \\quad \\because n !=n(n-1) !\\right. \\\\\\\\\n\\Rightarrow \\frac{m}{n} & =5\n\\end{aligned}\n$$",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "W0PqDZs8HHIB6aw4",
@@ -1018,7 +1074,8 @@
     "difficulty": "medium",
     "solution": "<p>Here, 5 distinct balls are to be distributed amongst 3 persons so that each gets at least one \nball. So, two possible cases arises</p>\n<p>Case I : Two of the persons get one-one ball each and the third person gets three balls.</p>\n<p>i.e. <style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 357px\"><colgroup>\n<col style=\"width: 119px\">\n<col style=\"width: 116px\">\n<col style=\"width: 122px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">A</th>\n    <th class=\"tg-baqh\">B</th>\n    <th class=\"tg-baqh\">C</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">3</td>\n  </tr>\n</tbody>\n</table></p>\n<p>Now, A can get the ball in $${ }^5 \\mathrm{C}_1$$ ways. After that, $$B$$ can get one ball in $${ }^4 C_1$$ ways and then after $$C$$ can get three balls in $${ }^3 \\mathrm{C}_3$$ ways.</p>\n<p>Hence, Total number of ways</p>\n<p>$$\\begin{aligned}\n& ={ }^5 \\mathrm{C}_1 \\cdot{ }^4 \\mathrm{C}_1 \\cdot{ }^3 \\mathrm{C}_3 \\times \\frac{3!}{2!} \\\\\n& =5 \\times 4 \\times 1 \\times \\frac{3 \\times 2 \\times 1}{2 \\times 1} \\\\\n& =60\n\\end{aligned}$$</p>\n<p>Case II : Two of the persons get two-two balls each and the third person gets one ball.</p>\n<p>i.e. <style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 357px\"><colgroup>\n<col style=\"width: 119px\">\n<col style=\"width: 116px\">\n<col style=\"width: 122px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">A</th>\n    <th class=\"tg-baqh\">B</th>\n    <th class=\"tg-baqh\">C</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n</tbody>\n</table></p>\n<p>Now, A can get two balls in $${ }^5 \\mathrm{C}_2$$ ways. After that, $$B$$ can get 2 ball in $${ }^3 \\mathrm{C}_2$$ ways and then after $$C$$ can get 1 ball in $${ }^1 C_1$$ way. Hence, total number of ways</p>\n<p>$$\\begin{aligned}\n& ={ }^5 C_2 \\cdot{ }^3 C_2{ }^1 C_1 \\cdot \\frac{3!}{2!} \\\\\n& =\\frac{5 \\times 4}{2 \\times 1} \\times \\frac{3 \\times 2}{2 \\times 1} \\times 1 \\times \\frac{3 \\times 2 \\times 1}{2 \\times 1} \\\\\n& =90\n\\end{aligned}$$</p>\n<p>Hence, total number of ways to distribute 5 balls $$=60+90=150$$</p>\n<p>Combination with Repetition</p>\n<p>(i) Only two possible cases arises:</p>\n<p>Case I :</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 357px\"><colgroup>\n<col style=\"width: 119px\">\n<col style=\"width: 116px\">\n<col style=\"width: 122px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">A</th>\n    <th class=\"tg-baqh\">B</th>\n    <th class=\"tg-baqh\">C</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">3</td>\n  </tr>\n</tbody>\n</table></p>\n<p>Case II:</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 357px\"><colgroup>\n<col style=\"width: 119px\">\n<col style=\"width: 116px\">\n<col style=\"width: 122px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">A</th>\n    <th class=\"tg-baqh\">B</th>\n    <th class=\"tg-baqh\">C</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n</tbody>\n</table></p>\n<p>(iii) Use the concept of combination to find individual ways and then add up the total ways in each case.</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "yuDApgsWo6UEzX9E",
@@ -1040,7 +1097,8 @@
     "difficulty": "medium",
     "solution": "<p>For $$a_n$$</p>\n<p>Case I : If the unit digit is 1, and rest $$(n-1)$$ places are filled as $$a_{n-1}$$</p>\n<p>$$\\mathrm{\\underbrace {1\\underline {} \\,\\underline {} \\,\\underline {} \\,\\underline {...} \\,\\underline {...} \\,\\underline {} }_{(n - 1)\\,places}\\underline 1}$$</p>\n<p>Case II : If the unit digit is 0, then tenth place must be 1 and rest $$(n-2)$$ places are filled as $$a_{n-2}$$</p>\n<p>$$\\mathrm{\\underbrace {1\\underline {} \\,\\underline {} \\,\\underline {} \\,\\underline {} \\,....\\,\\underline {} }_{(n - 2)\\,place}\\underline 1 \\underline 0}$$</p>\n<p>$$\\begin{aligned}\n& \\text { Hence, } a_n =a_{n-1}+a_{n-2} \\\\\n\\Rightarrow \\quad & a_{17} =a_{16}+a_{15}\n\\end{aligned}$$</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "3o3q5ZOudIcw3Uyi",
@@ -1062,7 +1120,8 @@
     "difficulty": "medium",
     "solution": "<p>(A) Considering ENDEA as one group, remaining letters are N, O, E, L.</p>\n<p>So, no. of permutations = 5!</p>\n<p>(A) - (i)</p>\n<p>(B) E occurs in 1<sup>st</sup> and last positions. The remaining letters are N, N, D, A, O, E, L.</p>\n<p>No. of permutation</p>\n<p>$$ = {{7!} \\over {2!}} = {{7 \\times 6} \\over 2} \\times 5! = 21! \\times 5!$$</p>\n<p>(B) - (iv)</p>\n<p>(C) D, L, N should not occur in last five positions</p>\n<p>$$\\Rightarrow$$ D, L, N should occur in 1<sup>st</sup> four positions, but we have D, L, N, N.</p>\n<p>So, ways of arranging D, L, N, N in 1<sup>st</sup> four positions</p>\n<p>$$ = {{4!} \\over {2!}} = 12$$</p>\n<p>Ways of arranging remaining E, E, A, O, E in last five positions $$ = {{5!} \\over {3!}} = 20$$,</p>\n<p>Total $$=12\\times20=240=2\\times5!$$</p>\n<p>(C) - (iv)</p>\n<p>(D) A, E, O occur in odd positions.</p>\n<p>No. of odd positions = 5 and letters are E, E, E, A, O. i.e. 5</p>\n<p>Ways of arranging those 5 letters in 5 odd positions $$ = {{5!} \\over {3!}} = 20$$</p>\n<p>Remaining 4 letters D, L, N, N can be arranged in remaining 4 positions in $$ = {{4!} \\over {2!}} = 12$$ ways</p>\n<p>Total no. of permutations $$=20\\times12=240=2\\times5!$$</p>\n<p>(D) - (iii)</p>\n<p></p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "CtCfGCORzMr3qyUf",
@@ -1083,7 +1142,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<p>This problem is solved using gap method. As here no 'S' is adjacent to each other so we have to put them in the gap. So first write all the letters other than 'S' such a way that there is a gap between two letters.</p>\n<p>Given word is MISSISSIPPI.</p>\n<p>Here, I = 4 times, S = 4 times, P = 2 times, M = 1 time</p>\n<p>_M_I_I_I_I_P_P_</p>\n<p>Those seven letters M, I, I, I, I, P, P can be arranged in $${{7!} \\over {4!2!}}$$ ways</p>\n<p>Those seven letters creates 8 gaps and we have to choose 4 gaps from those 8 gaps to put those four 'S' letters.</p>\n<p>This can be done $${}^8{C_4}$$ ways.</p>\n<p>After placing those four 'S' letters we can arrange them in $${{4!} \\over {4!}}$$ ways.</p>\n<p>Therefore, required number of words</p>\n<p>$$ = {{7!} \\over {4!2!}} \\times {}^8{C_4} \\times {{4!} \\over {4!}}$$</p>\n<p>$$ = {{7\\,.\\,6!} \\over {4!4!}} \\times {}^8{C_4}$$</p>\n<p>$$ = 7\\,.\\,{}^6{C_4}\\,.\\,{}^8{C_4}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lg5a5tb1",
@@ -1105,7 +1165,8 @@
     "difficulty": "Medium",
     "solution": "<p>The letter of word COCHIN in alphabetic order are C, C, H, I, N, O</p>\n<p>Fixing $$1^{\\text {st }}$$ letter $$\\mathrm{C}$$ and keeping $$\\mathrm{C}$$ at second place, rest 4 can be arranged in 4 ! ways.</p>\n<p>Similarly, the words starting with $$\\mathrm{CH}, \\mathrm{CI}, \\mathrm{CN}$$ are 4 ! in each case</p>\n<p>Then fixing first two letters as CO next four places, when filled in alphabetic order give the word COCHIN.</p>\n<p>$$\\therefore$$ Number of words coming before COCHIN are $$4 \\times 4$$!</p>\n<p>$$=4\\times24=96$$</p>",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "n1oWTwJqCyxG22uT",
@@ -1126,7 +1187,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "In the word ''GARDEN'', there are two vowels A and E present, and A should come always before E.\n<br><br>$$\\therefore\\,\\,\\,$$ Total no of ways = $${{6!} \\over {2!}}$$ = 360\n<br><br>Here A and E  has  fixed order that is why we divide by 2!. ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "TIV9ByukNGgS1zIC",
@@ -1147,7 +1209,8 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "There are 3 possible ways that we can make number greater than 1000 but less than 4000 using the digits 0, 1, 2, 3, 4 where repetition is allowed\n<br><br><b>Case 1 :</b> First digit is 1 = 1 _ _ _\n<br><br>Possible numbers starting with 1 = 1$$ \\times $$5$$ \\times $$5$$ \\times $$5 = 125\n<br><br>But this includes 1000 also which does not satisfy the given condition of being greater than 1000. Hence there will be 124 numbers having 1 in the first place.\n<br><br><b>Case 2 :</b> First digit is 2 = 2 _ _ _\n<br><br>Possible numbers starting with 2 = 1$$ \\times $$5$$ \\times $$5$$ \\times $$5 = 125\n<br><br><b>Case 3 :</b> First digit is 3 = 3 _ _ _\n<br><br>Possible numbers starting with 3 = 1$$ \\times $$5$$ \\times $$5$$ \\times $$5 = 125\n<br><br>Total possible numbers = 124 + 125 + 125 = 374",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "e1EyFwNJvi8vSFaE",
@@ -1168,7 +1231,8 @@
     "topic": "conditional-permutations",
     "difficulty": "easy",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/2Yq95yiQwye1ShR7I/LqJlgLJMHJCICdnuqXVpYjCXs1irL/KxhvLEhyIWDvlR2xV2Kooy/image.png\" loading=\"lazy\" alt=\"AIEEE 2002 Mathematics - Permutations and Combinations Question 220 English Explanation\">\n<br>$$\\therefore$$ Total no of ways = 5$$ \\times $$6$$ \\times $$6$$ \\times $$$${}^4{C_1}$$ = 720",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "shaQfGQgffjfRATa",
@@ -1189,6 +1253,7 @@
     "topic": "conditional-permutations",
     "difficulty": "medium",
     "solution": "<b>Note :</b> For a number to be divisible by 3, the sum of digits should be divisible by 3.\n<br><br>Here given numbers are 0, 1, 2, 3, 4 and 5. Out of those 6 numbers possible sets of 5 numbers are (1, 2, 3, 4, 5) and (0, 1, 2, 4, 5) whose sum are divisible by 3.\n<br><br><b>Set 1 :</b> Set is = (1, 2, 3, 4, 5). Sum of digits = 1 + 2 + 3 + 4 + 5 = 15 (Divisible by 3)\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/o8KOhIH29o7j9qnK0/anP0DFZ8yzpMUikYtaGZ4IKXkuPX9/u4pypGVuaFuCUFJVKHufTs/image.png\" loading=\"lazy\" alt=\"AIEEE 2002 Mathematics - Permutations and Combinations Question 218 English Explanation 1\">\n<br><br>So total no of arrangement = 1$$ \\times $$2$$ \\times $$3$$ \\times $$4$$ \\times $$5 = 5!\n<br><br><b>Set 2 :</b> Set is = (0, 1, 2, 4, 5). Sum of digits = 0 + 1 + 2 + 4 + 5 = 12 (Divisible by 3)\n<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/6sbYLpJlBdS8WIVNJ/1nGWJAkeUHWCQYtn6mH0aveYyOefh/hUg1zTx1U7Vkwfx75USzkx/image.png\" loading=\"lazy\" alt=\"AIEEE 2002 Mathematics - Permutations and Combinations Question 218 English Explanation 2\">\n<br><br>So total no of arrangement = 4$$ \\times $$4$$ \\times $$3$$ \\times $$2$$ \\times $$1 = 4.4!\n<br><br>$$\\therefore$$ Total arrangement = 5! +  4.4! = 216",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

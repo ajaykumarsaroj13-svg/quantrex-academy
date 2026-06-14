@@ -18,7 +18,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<p>As the particle falls, two forces act on it :</p>\n<p><img alt=\"JEE Main 2026 (Online) 28th January Morning Shift Physics - Laws of Motion Question 11 English Explanation 1\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlgh59mu/9a03c92b-e2d0-43cb-a2a0-9ccec0145d2c/8aa13a60-066d-11f1-a9b4-b1c90605ad5c/file-6y3zli1mlgh59mv.webp?format=webp\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlgh59mu/9a03c92b-e2d0-43cb-a2a0-9ccec0145d2c/8aa13a60-066d-11f1-a9b4-b1c90605ad5c/file-6y3zli1mlgh59mv.webp\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<ul>\n\n<li><p>Weight $\\left(\\mathrm{F}_{\\mathrm{g}}=\\mathrm{mg}\\right)$ acting downwards.</p></li>\n\n<li><p>Resistive Force ( $\\mathrm{F}=\\mathrm{kv}$ ) acting upwards (opposing motion).</p></li>\n\n</ul>\n<p>The net force on the particle is,</p>\n<p>$$ \\mathrm{F}_{\\mathrm{net}}=\\mathrm{mg}-\\mathrm{kv} $$</p>\n<p>According to Newton's Second Law, $\\mathrm{F}_{\\mathrm{net}}=\\mathrm{m} \\cdot \\mathrm{a}=\\mathrm{m} \\frac{\\mathrm{dv}}{\\mathrm{dt}}$. Therefore</p>\n<p>$$ \\mathrm{m} \\frac{\\mathrm{dv}}{\\mathrm{dt}}=\\mathrm{mg}-\\mathrm{kv} $$</p>\n<p>$$\\Rightarrow $$ $$ \\frac{\\mathrm{dv}}{\\mathrm{mg}-\\mathrm{kv}}=\\frac{1}{\\mathrm{~m}} \\mathrm{dt} $$</p>\n<p>Integrate both sides, knowing that at $\\mathrm{t}=0, \\mathrm{v}=0$ (starting from rest) :</p>\n<p>$\\int\\limits_0^{\\mathrm{v}} \\frac{\\mathrm{dv}}{\\mathrm{mg}-\\mathrm{kv}}=\\frac{1}{\\mathrm{~m}} \\int\\limits_0^{\\mathrm{t}} \\mathrm{dt}$</p>\n<p>$$\\Rightarrow $$ $-\\frac{1}{\\mathrm{k}}[\\ln (\\mathrm{mg}-\\mathrm{kv})]_0^{\\mathrm{v}}=\\frac{\\mathrm{t}}{\\mathrm{m}}$</p>\n<p>$$\\Rightarrow $$ $\\ln \\left(\\frac{\\mathrm{mg}-\\mathrm{kv}}{\\mathrm{mg}}\\right)=-\\frac{\\mathrm{k}}{\\mathrm{m}} \\mathrm{t}$</p>\n<p>$$\\Rightarrow $$ $\\frac{m g-k v}{m g}=e^{-\\frac{k}{m} t}$</p>\n<p>$$\\Rightarrow $$$1-\\frac{\\mathrm{kv}}{\\mathrm{mg}}=\\mathrm{e}^{-\\frac{\\mathrm{k}}{\\mathrm{m}} \\mathrm{t}}$</p>\n<p>$$\\Rightarrow $$ $$ v(t)=\\frac{m g}{k}\\left(1-e^{-\\frac{k}{m} t}\\right) $$</p>\n<p>The resulting equation $\\mathrm{v}(\\mathrm{t})=\\mathrm{v}_{\\mathrm{t}}\\left(1-\\mathrm{e}^{-\\frac{\\mathrm{t}}{\\tau}}\\right)$ where $\\mathrm{v}_{\\mathrm{t}}=\\frac{\\mathrm{mg}}{\\mathrm{k}}$ is the terminal velocity.</p>\n<p>At $\\mathrm{t}=0, \\mathrm{v}=\\mathrm{v}_{\\mathrm{t}}(1-1)=0$. Hence, the graph must start at the origin $(0,0)$.</p>\n<p>As $\\mathrm{t} \\rightarrow \\infty$ the term $\\mathrm{e}^{-\\frac{\\mathrm{k}}{\\mathrm{m}} \\mathrm{t}}$ approaches 0 , so v approaches a constant value $\\frac{\\mathrm{mg}}{\\mathrm{k}}$ (terminal velocity).</p>\n<p>This is an exponential graph with a horizontal asymptote at $\\mathrm{v}=\\frac{\\mathrm{mg}}{\\mathrm{k}}$</p>\n<p><img alt=\"JEE Main 2026 (Online) 28th January Morning Shift Physics - Laws of Motion Question 11 English Explanation 2\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlghdddm/801f8099-d335-4f5b-b67c-dcfe88bdefb0/6bfeb5a0-066e-11f1-a9b4-b1c90605ad5c/file-6y3zli1mlghdddn.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlghdddm/801f8099-d335-4f5b-b67c-dcfe88bdefb0/6bfeb5a0-066e-11f1-a9b4-b1c90605ad5c/file-6y3zli1mlghdddn.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Hence, the correct option is (D).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ml89h6t0",
@@ -39,7 +40,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<p>According to Newton's Second Law $\\overrightarrow{\\mathrm{F}}=\\mathrm{m} \\overrightarrow{\\mathrm{a}}$.</p>\n<p>$$ \\overrightarrow{\\mathrm{a}}=\\frac{\\overrightarrow{\\mathrm{F}}}{\\mathrm{~m}} $$</p>\n<p>Given $\\mathrm{m}=4 \\mathrm{~kg}$ and $\\overrightarrow{\\mathrm{F}}=4 \\mathrm{t}^3 \\hat{\\imath}-3 \\mathrm{t} \\hat{\\jmath}$ :</p>\n<p>$$ \\vec{a}=\\frac{4 t^3 \\hat{\\imath}-3 t \\hat{\\jmath}}{4}=\\left(t^3 \\hat{\\imath}-\\frac{3}{4} t \\hat{\\jmath}\\right) \\mathrm{m} / \\mathrm{s}^2 $$</p>\n<p>Acceleration is the rate of change of velocity :</p>\n<p>$$ \\vec{a}=\\frac{d \\vec{v}}{d t} $$</p>\n<p>Since the mass starts from rest at the origin at $t=0$, we have $\\vec{v}(0)=0$</p>\n<p>$$ \\int\\limits_0^{\\vec{v}} d \\vec{v}=\\int\\limits_0^t\\left(t^3 \\hat{\\imath}-\\frac{3}{4} t \\hat{\\jmath}\\right) d t $$</p>\n<p>$$\\Rightarrow $$ $$ \\overrightarrow{\\mathrm{v}}=\\left(\\frac{\\mathrm{t}^4}{4} \\hat{\\imath}-\\frac{3 \\mathrm{t}^2}{8} \\hat{\\jmath}\\right) \\mathrm{m} / \\mathrm{s} $$</p>\n<p>So, velocity at $\\mathrm{t}=2 \\mathrm{~s}$ is :</p>\n<p>$$ \\overrightarrow{\\mathrm{v}}=\\frac{2^4}{4} \\hat{\\imath}-\\frac{3\\left(2^2\\right)}{8} \\hat{\\jmath}=\\frac{16}{4} \\hat{\\imath}-\\frac{12}{8} \\hat{\\jmath} $$</p>\n<p>$$\\Rightarrow $$ $$ \\vec{v}=\\left(4 \\hat{\\imath}-\\frac{3}{2} \\hat{\\jmath}\\right) \\mathrm{m} / \\mathrm{s} $$</p>\n<p>Velocity is the rate of change of position :</p>\n<p>$$ \\vec{v}=\\frac{d \\vec{r}}{d t} \\Rightarrow d \\vec{r}=\\vec{v} d t $$</p>\n<p>At $\\mathrm{t}=0$, the mass is at the origin ( $\\overrightarrow{\\mathrm{r}}=0$ ),</p>\n<p>$$ \\int\\limits_0^{\\overrightarrow{\\mathrm{r}}} \\mathrm{~d} \\overrightarrow{\\mathrm{r}}=\\int\\limits_0^{\\mathrm{t}}\\left(\\frac{\\mathrm{t}^4}{4} \\hat{\\imath}-\\frac{3 \\mathrm{t}^2}{8} \\hat{\\jmath}\\right) \\mathrm{dt} $$</p>\n<p>$$\\Rightarrow $$ $\\overrightarrow{\\mathrm{r}}=\\left(\\frac{\\mathrm{t}^5}{20} \\hat{\\imath}-\\frac{\\mathrm{t}^3}{8} \\hat{\\jmath}\\right)_0^{\\mathrm{t}} \\mathrm{m}$</p>\n<p>$$\\Rightarrow $$ $\\overrightarrow{\\mathrm{r}}=\\left[\\frac{\\mathrm{t}^5}{20} \\hat{\\imath}-\\frac{\\mathrm{t}^3}{8} \\hat{\\jmath}\\right]-\\left[\\frac{0^5}{20} \\hat{\\imath}-\\frac{0^3}{8} \\hat{\\jmath}\\right] \\mathrm{m}$</p>\n<p>$$\\Rightarrow $$ $$ \\vec{r}=\\left(\\frac{t^5}{20} \\hat{\\imath}-\\frac{t^3}{8} \\hat{\\jmath}\\right) $$</p>\n<p>Now, calculate position at $\\mathrm{t}=2 \\mathrm{~s}$ :</p>\n<p>$$ \\overrightarrow{\\mathrm{r}}=\\frac{2^5}{20} \\hat{\\imath}-\\frac{2^3}{8} \\hat{\\jmath}=\\frac{32}{20} \\hat{\\imath}-\\frac{8}{8} \\hat{\\jmath} $$</p>\n<p>$$\\Rightarrow $$ $\\overrightarrow{\\mathrm{r}}=\\frac{8}{5} \\hat{\\imath}-1 \\hat{\\jmath}=\\left(\\frac{8}{5} \\hat{\\imath}-\\hat{\\jmath}\\right) \\mathrm{m}$</p>\n<p>Therefore, at $t=2 \\mathrm{~s}$, the velocity is $\\vec{v}=4 \\hat{\\imath}-\\frac{3}{2} \\hat{\\jmath}$ and the position vector is $\\vec{r}=\\frac{8}{5} \\hat{\\imath}-\\hat{\\jmath}$. </p>\n<p>Hence, the correct option is (C).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6rju9w4",
@@ -60,7 +62,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m74pzj7k/0506b0d5-dd7e-46fc-9df9-1329a8deaf57/ae3c9000-eacb-11ef-be87-1347496dd836/file-jaoe38c1m74pzj7l.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m74pzj7k/0506b0d5-dd7e-46fc-9df9-1329a8deaf57/ae3c9000-eacb-11ef-be87-1347496dd836/file-jaoe38c1m74pzj7l.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 28th January Evening Shift Physics - Laws of Motion Question 19 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp;\\begin{aligned}\n&amp; F-m g=m a \\\\\n&amp; F=m a+m g \\\\\n&amp; F-(m-x) g=(m-x) 3 a\n\\end{aligned}\\\\\n&amp;\\text { Put F }\\\\\n&amp;\\begin{aligned}\n&amp; \\mathrm{Ma}+\\mathrm{mg}-\\mathrm{mg}+\\mathrm{xg}=3 \\mathrm{ma}-3 \\mathrm{xa} \\\\\n&amp; \\mathrm{x}=\\frac{2 \\mathrm{ma}}{\\mathrm{~g}+3 \\mathrm{a}}\n\\end{aligned}\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m9ejm6t2",
@@ -81,7 +84,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<p>To find the force acting on the object, we use the formula $ F = m \\times a $, where $ F $ is the force, $ m $ is the mass, and $ a $ is the acceleration.</p>\n\n<p><p>The velocity $ v $ is given as $ v = 4 \\sqrt{x} $.</p></p>\n<p><p>Squaring both sides, we have $ v^2 = 16x $.</p></p>\n<p><p>Differentiate $ v^2 $ with respect to $ x $: </p>\n<p>$    2v \\frac{dv}{dx} = 16    $</p></p>\n<p><p>Solving for $ \\frac{dv}{dx} $, we find:</p>\n<p>$    \\frac{v \\, dv}{dx} = \\frac{16}{2} = 8    $</p></p>\n<p><p>The force $ F $ is then calculated as:</p>\n<p>$    F = 0.5 \\times 8 = 4 \\, \\text{N}    $</p></p>\n\n<p>Thus, the force acting on the object is 4 N.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m9do23fv",
@@ -102,7 +106,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>To determine the velocity of the body as it emerges from the force field, we can break this process down as follows:</p>\n\n<p><p><strong>Force and Acceleration Calculation:</strong></p>\n<p>The body is subjected to a constant force of 6 N, which acts along the positive z-axis. The mass of the body is 2 kg.</p>\n<p>Using Newton's second law, $ \\vec{F} = m \\vec{a} $, the acceleration $ \\vec{a} $ can be calculated as:</p>\n<p>$    \\vec{a} = \\frac{\\vec{F}}{m} = \\frac{6 \\hat{k}}{2} = 3 \\hat{k} \\text{ ms}^{-2}    $</p></p>\n<p><p><strong>Initial Velocity:</strong></p>\n<p>The initial velocity of the body is given by:</p>\n<p>$    \\vec{u} = 3 \\hat{i} + 4 \\hat{j} \\text{ ms}^{-1}    $</p></p>\n<p><p><strong>Time of Motion:</strong></p>\n<p>The time the body spends in the force field is:</p>\n<p>$    t = \\frac{5}{3} \\text{ seconds}    $</p></p>\n<p><p><strong>Final Velocity Calculation:</strong></p>\n<p>The final velocity $ \\vec{v} $ is given by the equation of motion:</p>\n<p>$    \\vec{v} = \\vec{u} + \\vec{a} t    $</p>\n<p>Substituting the known values:</p>\n<p>$    \\vec{v} = (3 \\hat{i} + 4 \\hat{j}) + 3 \\hat{k} \\left(\\frac{5}{3}\\right)    $</p>\n<p>Simplifying the expression gives:</p>\n<p>$    \\vec{v} = 3 \\hat{i} + 4 \\hat{j} + 5 \\hat{k}    $</p></p>\n\n<p>Therefore, the velocity of the body as it exits the force field is $ 3 \\hat{i} + 4 \\hat{j} + 5 \\hat{k} \\text{ ms}^{-1} $.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mawqb7w4",
@@ -111,7 +116,7 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": 0,
     "subject": "Physics",
@@ -119,7 +124,8 @@
     "difficulty": "hard",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mayym9b4/64a09fab-32dc-441f-9658-b444ed389528/98d9ca00-36d1-11f0-9a5a-d7e71c43831e/file-jaoe38c1mayym9b5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mayym9b4/64a09fab-32dc-441f-9658-b444ed389528/98d9ca00-36d1-11f0-9a5a-d7e71c43831e/file-jaoe38c1mayym9b5.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 2 Online Physics - Laws of Motion Question 3 English Explanation\"></p>\n<p>$$ \\vec{F}_{n e t}=m \\frac{d \\vec{v}}{d t} $$</p>\n<p>$$ \\mathrm{m} \\overrightarrow{\\mathrm{~g}}+\\overrightarrow{\\mathrm{F}}=\\frac{\\mathrm{md} \\overrightarrow{\\mathrm{v}}}{\\mathrm{dt}} $$</p>\n<p>$$ \\mathrm{m} \\overrightarrow{\\mathrm{~g}}-\\mathrm{C} \\overrightarrow{\\mathrm{v}}=\\frac{\\mathrm{md} \\overrightarrow{\\mathrm{v}}}{\\mathrm{dt}} $$</p>\n<p>Horizontal direction</p>\n<p>$$ -\\mathrm{Cv}_{\\mathrm{x}}=\\frac{\\mathrm{mdv}_{\\mathrm{x}}}{\\mathrm{dt}} $$</p>\n<p>$\\begin{aligned} &amp; -\\frac{C}{m} \\int_0^t d t=\\int_{v_{0 x}}^{v_x} \\frac{d v_x}{v_x} \\\\ &amp; -\\frac{t}{2}=\\ln \\frac{v_x}{v_{0 x}} \\\\ &amp; \\frac{d x}{d t}=v_x=v_{0 x} e^{-t / 2} \\\\ &amp; \\int_0^{s_x} d x=v_{0 x} \\int_0^t e^{-t / 2} d t \\\\ &amp; S_x=2 v_{0 x}\\left(1-e^{-t / 2}\\right)\\end{aligned}$</p>\n<p>At t = 2 sec</p>\n<p>$\\begin{aligned} &amp; S_x=2 \\times 270 \\times \\cos 60^{\\circ}\\left[1-\\frac{1}{\\mathrm{e}}\\right] \\\\\\\\ &amp; S_x=270\\left(1-\\frac{1}{2.7}\\right) \\\\\\\\ &amp; =\\frac{270}{2.7} \\times(1.7) \\\\\\\\ &amp; =170 \\mathrm{~m} \\\\\\\\ &amp; S_x=170 \\mathrm{~m}\\end{aligned}$</p>",
     "section": "Sec 3",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>",
+    "type": "MCQ"
   },
   {
     "id": "lsamcmv7",
@@ -140,7 +146,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>To find the acceleration acting on the body, we first need to determine the resultant force acting on the body by adding the two forces $\\vec{F}_1$ and $\\vec{F}_2$ vectorially. Then, we apply Newton&#39;s second law of motion, which states that the acceleration $\\vec{a}$ of a body is directly proportional to the total force $\\vec{F}$ acting on it and inversely proportional to the mass $m$ of the body :</p>\n<p>$$ \\vec{F} = m \\cdot \\vec{a} $$</p>\n<p>or</p>\n<p>$$ \\vec{a} = \\frac{\\vec{F}}{m} $$</p>\n<p>Let&#39;s start by adding the forces:</p>\n<p>$$ \\vec{F}_1 + \\vec{F}_2 = (5 \\hat{i}+8 \\hat{j}+7 \\hat{k}) + (3 \\hat{i}-4 \\hat{j}-3 \\hat{k}) $$</p>\n<p>Performing the addition component-wise:</p>\n<p>$$\n\\vec{F}_{\\text{total}} = (5 + 3)\\hat{i} + (8 - 4)\\hat{j} + (7 - 3)\\hat{k} \\\n\\vec{F}_{\\text{total}} = 8 \\hat{i} + 4 \\hat{j} + 4 \\hat{k}\n$$</p>\n<p>Now, let&#39;s use the formula for acceleration with $m = 4 \\mathrm{~kg}$:</p>\n<p>$$\n\\vec{a} = \\frac{\\vec{F}_{\\text{total}}}{m} = \\frac{8 \\hat{i} + 4 \\hat{j} + 4 \\hat{k}}{4 \\mathrm{~kg}} \n$$</p>\n<p>Divide each component by the mass:</p>\n<p>$$\n\\vec{a} = 2 \\hat{i} + 1 \\hat{j} + 1 \\hat{k}\n$$</p>\n<p>So, the acceleration acting on the body is:</p>\n<p>$$ \\vec{a} = 2 \\hat{i} + \\hat{j} + \\hat{k}$$</p>\n<p>Thus, the correct option is:</p>\n<p>Option A :\n<br/><br/>$$2 \\hat{i}+\\hat{j}+\\hat{k}$$</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lsams161",
@@ -161,7 +168,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>The first step in solving this problem is to calculate the change in momentum of the ball when it is caught. The change in momentum, or impulse, is the product of the mass of the ball and the change in velocity (as momentum is mass times velocity).</p>\n\n<p>The ball is initially moving with a velocity of $v_i = 25 \\mathrm{~m/s}$ before the catch and finally comes to rest with a velocity of $v_f = 0 \\mathrm{~m/s}$ after the catch. Since the ball is caught, the final velocity is zero. The change in velocity $$\\Delta v = v_f - v_i = 0 - 25 = -25 \\mathrm{~m/s}.$$ Remember that the direction of the force exerted by the ball on the hand will be opposite to the direction of the ball's initial motion.</p>\n\n<p>The mass of the ball $m$ is given as $120 \\mathrm{~g}$ which needs to be converted into kilograms to maintain SI units:\n$$m = 120 \\mathrm{~g} = 120 \\times 10^{-3} \\mathrm{~kg} = 0.12 \\mathrm{~kg}.$$</p>\n\n<p>Now we can calculate the change in momentum (impulse):\n$$\\Delta p = m \\Delta v = 0.12 \\mathrm{~kg} \\times (-25 \\mathrm{~m/s}).$$</p>\n\n<p>Substituting the values we get:\n$$\\Delta p = 0.12 \\times -25 = -3 \\mathrm{~kg \\cdot m/s}.$$</p>\n\n<p>The negative sign indicates that the change in momentum is in the opposite direction of the ball's initial motion, which makes sense because the ball's velocity is reduced to zero.</p>\n\n<p>The magnitude of the impulse is independent of the sign and is $3 \\mathrm{~kg \\cdot m/s}$.</p>\n\n<p>Impulse is also equal to the average force exerted on the ball times the time interval during which the force is exerted. We can use the formula:\n$$\\Delta p = F_{avg} \\Delta t$$</p>\n\n<p>Where $F_{avg}$ is the average force and $\\Delta t$ is the time interval of $0.1 \\mathrm{~s}$. Re-arranging the formula to solve for $F_{avg}$ gives us:\n$$F_{avg} = \\frac{\\Delta p}{\\Delta t}.$$</p>\n\n<p>Substituting the known values we have:\n$$F_{avg} = \\frac{3}{0.1} = 30 \\mathrm{~N}.$$</p>\n\n<p>The magnitude of the average force exerted by the hand of the player to catch the ball is $30 \\mathrm{~N}$.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lv0vyukq",
@@ -182,7 +190,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<p>Acceleration (a) $$=\\frac{f-F}{m}$$</p>\n<p>When applied force became equal to $$f_{\\max }$$, block will start moving.</p>\n<p>As $$F$$ increases linearly, so acceleration of also moving block will increase linearly.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lv9s20sm",
@@ -203,7 +212,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<p>To find the angle between $$\\vec{F}$$ and $$\\overrightarrow{\\mathrm{p}}$$, we first need to understand the relationship between force and momentum. The force $$\\vec{F}$$ acting on a particle is related to the rate of change of its linear momentum $$\\overrightarrow{\\mathrm{p}}$$ with respect to time, as described by Newton's second law of motion:</p>\n\n<p>$$\\vec{F} = \\frac{d\\overrightarrow{\\mathrm{p}}}{dt}$$</p>\n\n<p>Given the expression for the momentum $$\\overrightarrow{\\mathrm{p}}(t) = \\hat{i} \\cos (kt) - \\hat{j} \\sin (kt)$$, we can find $$\\vec{F}$$ by differentiating $$\\overrightarrow{\\mathrm{p}}$$ with respect to $$t$$:</p>\n\n<p>$$\\frac{d\\overrightarrow{\\mathrm{p}}}{dt} = -k\\hat{i} \\sin (kt) - k\\hat{j} \\cos (kt)$$</p>\n\n<p>So, $$\\vec{F} = -k\\hat{i} \\sin (kt) - k\\hat{j} \\cos (kt)$$.</p>\n\n<p>Now, to find the angle between $$\\vec{F}$$ and $$\\overrightarrow{\\mathrm{p}}$$, we use the dot product formula:</p>\n\n<p>$$\\vec{F} \\cdot \\overrightarrow{\\mathrm{p}} = |\\vec{F}| |\\overrightarrow{\\mathrm{p}}| \\cos(\\theta)$$,</p>\n\n<p>where $$\\theta$$ is the angle between $$\\vec{F}$$ and $$\\overrightarrow{\\mathrm{p}}$$. However, in this case, it's more insightful to see if $$\\vec{F}$$ and $$\\overrightarrow{\\mathrm{p}}$$ are orthogonal (at a $$\\frac{\\pi}{2}$$ angle to each other), because the dot product of two perpendicular vectors is zero.</p>\n\n<p>The dot product of $$\\vec{F}$$ and $$\\overrightarrow{\\mathrm{p}}$$ is:</p>\n\n<p>$$(-k\\hat{i} \\sin (kt) - k\\hat{j} \\cos (kt)) \\cdot (\\hat{i} \\cos (kt) - \\hat{j} \\sin (kt)) =$$</p>\n\n<p>$$- k \\sin (kt) \\cos (kt) + k \\cos (kt) \\sin (kt) = 0$$</p>\n\n<p>The result is zero, indicating that the angle between $$\\vec{F}$$ and $$\\overrightarrow{\\mathrm{p}}$$ is indeed $$\\frac{\\pi}{2}$$.</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p>Option A $$\\frac{\\pi}{2}$$.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lv7v4nwq",
@@ -224,7 +234,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwgm8yho/7978575d-e5d9-4b5e-8190-aed9b17e81d4/166e6dc0-1790-11ef-bb26-2db663948712/file-1lwgm8yhp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwgm8yho/7978575d-e5d9-4b5e-8190-aed9b17e81d4/166e6dc0-1790-11ef-bb26-2db663948712/file-1lwgm8yhp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 5th April Morning Shift Physics - Laws of Motion Question 25 English Explanation\"></p>\n<p>To solve this problem, we'll analyze the forces acting on the combined system of the wooden block and the iron cylinder as they accelerate downward due to the yielding floor.</p>\n<p><strong>Given:</strong></p>\n\n<p></p><p>Mass of wooden block, $ m_1 = 5 \\, \\text{kg} $</p><p></p>\n<p></p><p>Mass of iron cylinder, $ m_2 = 25 \\, \\text{kg} $</p><p></p>\n<p></p><p>Total mass of the system, $ m = m_1 + m_2 = 30 \\, \\text{kg} $</p><p></p>\n<p></p><p>Acceleration of the system, $ a = 0.1 \\, \\text{m/s}^2 $ (downward)</p><p></p>\n<p></p><p>Acceleration due to gravity, $ g = 9.8 \\, \\text{m/s}^2 $</p><p></p>\n\n<p><strong>Step 1: Draw the Free Body Diagram (FBD)</strong></p>\n<p>For the combined system:</p>\n\n<p></p><p><strong>Downward Forces:</strong></p><p></p>\n<p></p><p>Weight of the system: $ W = m \\times g = 30 \\times 9.8 = 294 \\, \\text{N} $</p><p></p>\n<p></p><p><strong>Upward Forces:</strong></p><p></p>\n<p></p><p>Normal force from the floor: $ N $</p><p></p>\n\n<p><strong>Step 2: Apply Newton's Second Law</strong></p>\n<p>Since the system is accelerating downward, the net force is:</p>\n<p>$ \\text{Net Force} = \\text{Total Downward Force} - \\text{Total Upward Force} $</p>\n<p>According to Newton's second law:</p>\n<p>$ m \\times a = W - N $</p>\n<p><strong>Step 3: Solve for the Normal Force ($ N $)</strong></p>\n<p>$ N = W - m \\times a $</p>\n<p>Substitute the given values:</p>\n<p>$ N = 294 \\, \\text{N} - 30 \\, \\text{kg} \\times 0.1 \\, \\text{m/s}^2 $</p>\n<p>$ N = 294 \\, \\text{N} - 3 \\, \\text{N} $</p>\n<p>$ N = 291 \\, \\text{N} $</p>\n<p><strong>Step 4: Interpret the Result</strong></p>\n<p>The normal force ($ N $) is the force exerted by the floor on the system upward. By Newton's third law, the action force of the system on the floor is equal in magnitude and opposite in direction to the normal force.</p>\n<p><strong>Therefore, the action force of the system on the floor is $ 291 \\, \\text{N} $.</strong></p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lv5gs19s",
@@ -245,7 +256,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>The force exerted by the ball on the hand can be calculated using the formula derived from Newton's second law of motion, which is $$F = \\frac{\\Delta p}{\\Delta t}$$, where $$F$$ is the force, $$\\Delta p$$ represents the change in momentum, and $$\\Delta t$$ is the time over which this change occurs.</p>\n\n<p>The change in momentum, $$\\Delta p$$, can be calculated as the difference between the final momentum, $$p_f$$, and the initial momentum, $$p_i$$. In this scenario, because the ball comes to a stop in the player's hand, its final velocity (and hence, its final momentum) is 0. Therefore, the change in momentum is equal to the initial momentum of the ball (since final momentum is zero).</p>\n\n<p>The initial momentum, $$p_i$$, of the ball can be calculated using the formula $$p = mv$$, where $$m$$ is the mass of the ball and $$v$$ is its velocity. Given that the mass of the ball is $$150 \\, \\mathrm{g} = 0.15 \\, \\mathrm{kg}$$ (converting grams to kilograms) and its velocity is $$20 \\, \\mathrm{m/s}$$, we have:</p>\n\n<p>$$p_i = (0.15 \\, \\mathrm{kg}) \\times (20 \\, \\mathrm{m/s}) = 3 \\, \\mathrm{kg \\cdot m/s}$$</p>\n\n<p>Since the change in momentum, $$\\Delta p$$, equals the initial momentum ($$p_i$$) because the final momentum is 0, the force exerted can be found by substituting $$\\Delta p$$ and $$\\Delta t$$ into the first formula:</p>\n\n<p>$$F = \\frac{3 \\, \\mathrm{kg \\cdot m/s}}{0.1 \\, \\mathrm{s}} = 30 \\, \\mathrm{N}$$</p>\n\n<p>Therefore, the magnitude of force exerted by the ball on the hand of the player is <strong>30 N</strong>, which corresponds to Option C.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgswyy0y",
@@ -266,7 +278,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "Given that the velocity of the body varies with displacement x according to the relation:\n<br/><br/>\n$$\nv = 10\\sqrt{x}\\,\\mathrm{ms}^{-1}\n$$\n<br/><br/>\nTo find the force acting on the body, we first need to find its acceleration, which can be obtained by differentiating the velocity with respect to time. However, we don't have the velocity expressed as a function of time, but rather as a function of displacement. To work around this, we will use the chain rule:\n<br/><br/>\n$$\n\\frac{dv}{dt} = \\frac{dv}{dx} \\cdot \\frac{dx}{dt}\n$$\n<br/><br/>\nNow, differentiate the velocity with respect to displacement:\n<br/><br/>\n$$\n\\frac{dv}{dx} = \\frac{1}{2} \\cdot 10 \\cdot x^{-1/2} = 5x^{-1/2}\n$$\n<br/><br/>\nRecall that $$\\frac{dx}{dt}$$ is the velocity, so we have:\n<br/><br/>\n$$\n\\frac{dv}{dt} = 5x^{-1/2} \\cdot 10\\sqrt{x} = 50\n$$\n<br/><br/>\nThus, the acceleration is constant and equal to 50 m/s².\n\nNow we can find the force acting on the body using Newton's second law:\n<br/><br/>\n$$\nF = ma\n$$\n<br/><br/>\nFirst, convert the mass from grams to kilograms:\n<br/><br/>\n$$\nm = \\frac{500\\,\\mathrm{g}}{1000} = 0.5\\,\\mathrm{kg}\n$$\n<br/><br/>\nNow, calculate the force:\n<br/><br/>\n$$\nF = (0.5\\,\\mathrm{kg})(50\\,\\mathrm{ms}^{-2}) = 25\\,\\mathrm{N}\n$$\n<br/><br/>\nThe force acting on the body is 25 N.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "lgny9f5p",
@@ -287,7 +300,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "To find the direction of the net force experienced by the particle, we need to find the acceleration vector of the particle and then use Newton's second law, which states that the net force on an object is equal to its mass times its acceleration vector.\n<br/><br/>\nThe position vector of the particle is given by:\n<br/><br/>\n$$\n\\vec{r} = (10t\\hat{i} + 15t^2\\hat{j} + 7\\hat{k})\\,\\text{m}\n$$\n<br/><br/>\nDifferentiating $\\vec{r}$ twice with respect to time $t$, we get the acceleration vector:\n<br/><br/>\n$$\n\\vec{a} = \\frac{d^2\\vec{r}}{dt^2} = \\frac{d}{dt}(10\\hat{i} + 30t\\hat{j}) = 30\\hat{j}\\,\\text{m/s}^2\n$$\n<br/><br/>\nTherefore, the acceleration vector is $\\vec{a} = 30\\hat{j}\\,\\text{m/s}^2$. \n<br/><br/>\nUsing Newton's second law, the net force on the particle is given by:\n<br/><br/>\n$$\n\\vec{F}_{net} = m\\vec{a}\n$$\n<br/><br/>\nwhere $m$ is the mass of the particle.\n<br/><br/>\nSince we are only interested in the direction of the net force, we can ignore the magnitude of the acceleration and focus on its direction, which is along the positive $y$-axis.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldnxw0lp",
@@ -301,14 +315,15 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQ",
+    "questionType": "MCQM",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>As we know that impulse is given by</p>\n<p>$$I = \\Delta P = F \\times \\Delta t$$\n\n<br/><br/>or $ I=$ Area of $f-t$ graph</p>\n<p>For fig (a) \n<br/><br/>$\\rightarrow \\mathrm{I}=\\frac{1}{2} \\times$ base $\\times$ height</p>\n<p>$$\n=\\frac{1}{2} \\times 0.5 \\times 1=0.25 \\mathrm{~N}-\\mathrm{sec} .\n$$</p>\n<p>For fig (b),\n<br/><br/>$I=$ length $\\times$ width</p>\n<p>$$\n=2 \\times 0.5=1 \\mathrm{~N} \\text {-sec }\n$$</p>\n<p>For fig (c),\n<br/><br/> I $=\\frac{1}{2} \\times$ base $\\times$ height</p>\n<p>$$\n=\\frac{1}{2} \\times 1 \\times 0.75=0.375 \\mathrm{~N} \\text {-sec. }\n$$</p>\n<p>For fig (d),\n<br/><br/> $I=\\frac{1}{2} \\times$ base $\\times$ height</p>\n<p>$$\n=\\frac{1}{2} \\times 2 \\times 0.5=0.5 \\mathrm{~N}-\\mathrm{sec} \\text {. }\n$$</p>\n<p>Impulse is highest for that figure, whose area under $F$-t is maximum and i.e. figure(b)</p>\n<p>Option (D) is correct.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQM"
   },
   {
     "id": "1ldyei7ng",
@@ -329,7 +344,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<p><b>Statement I</b> says that when the weight of an elevator is balanced with the tension of its cable, it can move up or down with a uniform speed. This is true because the weight of the elevator is balanced by the tension in the cable, which allows it to move smoothly and at a constant speed.</p>\n\n<p><b>Statement II</b> says that the force exerted by the floor of an elevator on a person's foot is greater than their weight when the elevator goes down with increasing speed. This is false because the force exerted by the floor on a person's foot is equal to their weight, regardless of the speed of the elevator. The person's weight is a constant force and does not change with the speed of the elevator. The apparent weight of a person may change with the speed of the elevator, but this is due to the effects of acceleration and not an increase in the force exerted by the floor.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lds9gcsm",
@@ -350,7 +366,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>$$m = 20$$ kg</p>\n<p>$$t = 20$$ sec.</p>\n<p>Acceleration $$ = {F \\over {20}}$$ m/s$$^2$$</p>\n<p>$$\\therefore$$ $$v = u + at$$</p>\n<p>$$v = 0 + \\left( {{F \\over {20}}} \\right)(20)$$</p>\n<p>$$ = F$$ ms$$^{-1}$$</p>\n<p>Now for next 10 sec.</p>\n<p>$$S=ut$$</p>\n<p>$$50=F(10)$$</p>\n<p>$$F=5$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lh01adu4",
@@ -371,7 +388,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>Given the velocity vector of a particle $v = (2t \\hat{i}+3 t^{2} \\hat{j}) \\, \\text{ms}^{-1}$, the acceleration $a$ is the derivative of the velocity vector with respect to time. So, we have:</p>\n<p>$a = \\frac{dv}{dt} = (2 \\hat{i} + 6t \\hat{j}) \\, \\text{ms}^{-2}$.</p>\n<p>At $t=1 \\, \\text{s}$, the acceleration $a$ is $(2 \\hat{i} + 6 \\hat{j}) \\, \\text{ms}^{-2}$.</p>\n<p>According to Newton&#39;s second law, the force $F$ is equal to the mass $m$ times acceleration $a$. The mass $m$ is given as $500 \\, \\text{g}$, or equivalently, $0.5 \\, \\text{kg}$.</p>\n<p>Therefore, the force $F$ on the particle at $t=1 \\, \\text{s}$ is:</p>\n<p>$F = m \\cdot a = 0.5 \\cdot (2 \\hat{i} + 6 \\hat{j}) = (1 \\hat{i} + 3 \\hat{j}) \\, \\text{N}$.</p>\n<p>So, the force acting on the particle at $t=1 \\, \\text{s}$ is $(\\hat{i} + x \\hat{j}) \\, \\text{N}$, where $x=3$.</p>\n<p>Therefore, the answer is $x=3$.</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "liip5jt9",
@@ -393,7 +411,8 @@
     "difficulty": "medium",
     "solution": "<p>Given :\n<br/><br/>$ \\vec{v} = \\alpha(y \\hat{x} + 2x \\hat{y}) $</p>\n<p>For the x-component, $ v_x = \\alpha y $ :\n<br/><br/>$ \\frac{dv_x}{dt} = \\alpha \\frac{dy}{dt} = \\alpha v_y $\n<br/><br/>Given $ v_y = 2\\alpha x $ :\n<br/><br/>$ \\frac{dv_x}{dt} = \\alpha (2\\alpha x) = 2\\alpha^2 x $</p>\n<p>For the y-component, $ v_y = 2\\alpha x $ :\n<br/><br/>$ \\frac{dv_y}{dt} = 2\\alpha \\frac{dx}{dt} = 2\\alpha v_x $\n<br/><br/>Given $ v_x = \\alpha y $ :\n<br/><br/>$ \\frac{dv_y}{dt} = 2\\alpha (\\alpha y) = 2\\alpha^2 y $</p>\n<p>Thus, combining the components :\n<br/><br/>$ \\vec{a} = 2\\alpha^2 x \\hat{x} + 2\\alpha^2 y \\hat{y} $</p>\n<p>Now, the force acting on the particle is given by :\n<br/><br/>$ \\vec{F} = m\\vec{a} $\n<br/><br/>$ \\vec{F} = m\\alpha(2 \\alpha x \\hat{x} + 2 \\alpha y \\hat{y}) $\n<br/><br/>$ \\vec{F} = m\\alpha^2(2x \\hat{x} + 2y \\hat{y}) $</p>\n<p>This is equivalent to :\n<br/><br/>$ \\vec{F} = 2m\\alpha^2(x \\hat{x} + y \\hat{y}) $</p>\n<p>The correct answer is Option A :\n<br/><br/>$ \\vec{F} = 2m\\alpha^2(x \\hat{x} + y \\hat{y}) $</p>\n",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "1l5bbyej8",
@@ -414,7 +433,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<p>Let time taken to ascent is t<sub>1</sub> and that to descent is t<sub>2</sub>. Height will be same so</p>\n<p>$$H = {1 \\over 2} \\times 12t_1^2 = {1 \\over 2}\\times8t_2^2$$</p>\n<p>$$ \\Rightarrow {{{t_1}} \\over {{t_1}}} = {{\\sqrt 2 } \\over {\\sqrt 3 }}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l5alhxl9",
@@ -423,14 +443,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>$$\\overrightarrow F  = m\\overrightarrow a $$</p>\n<p>$$ \\Rightarrow \\overrightarrow a  = 100\\widehat i + 50\\widehat j$$</p>\n<p>So, $$\\overrightarrow S  = {1 \\over 2}\\overrightarrow a {t^2}$$</p>\n<p>$${1 \\over 2}\\left( {100\\widehat i + 50\\widehat j} \\right){2^2}$$</p>\n<p>$$ = 200\\widehat i + 100\\widehat j$$ m</p>\n<p>so a = 200 m and b = 100 m</p>\n<p>so $${a \\over b} = 2$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "1l6gn6xt5",
@@ -451,7 +472,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>T<sub>down</sub> = 50 $$\\times$$ (10 $$-$$ 4)</p>\n<p>= 50 $$\\times$$ 6</p>\n<p>= 300 N</p>\n<p>T<sub>up</sub> = 50 $$\\times$$ (10 + 5)</p>\n<p>= 50 $$\\times$$ 15</p>\n<p>= 750 N</p>\n<p>$$\\Rightarrow$$ Rope will break while climbing up.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l58bbgj4",
@@ -472,7 +494,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5jhk4i8/1078b4ea-843e-4fbd-ab7c-95acb1ffb190/420cfd00-029a-11ed-a9b8-43edceee002f/file-1l5jhk4i9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5jhk4i8/1078b4ea-843e-4fbd-ab7c-95acb1ffb190/420cfd00-029a-11ed-a9b8-43edceee002f/file-1l5jhk4i9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th June Morning Shift Physics - Laws of Motion Question 76 English Explanation\"></p>\n<p>N<sub>1</sub> = mg</p>\n<p>N<sub>2</sub> = mg + ma</p>\n<p>N<sub>3</sub> = mg $$-$$ ma</p>\n<p>N<sub>4</sub> = mg</p>\n<p>N<sub>5</sub> = mg</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l55jqcwa",
@@ -493,7 +516,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<p>$$F =  - 12x$$</p>\n<p>$$mv{{dv} \\over {dx}} =  - 12x$$</p>\n<p>$$\\int_4^v {vdv =  - 6\\int_{0.5}^{1.5} {xdx} } $$ ($$m = 2$$ kg)</p>\n<p>$${{{v^2} - 16} \\over 2} =  - 6\\left[ {{{{{1.5}^2} - {{0.5}^2}} \\over 2}} \\right]$$</p>\n<p>$${{{v^2} - 16} \\over 2} =  - 6$$</p>\n<p>$$v = 2$$ m/sec</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l54vduhg",
@@ -514,7 +538,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5gh6s6u/cc09286e-f749-405e-adc7-5dbd442ebfac/7511cd60-00f2-11ed-ba34-71a54c393c2b/file-1l5gh6s6v.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5gh6s6u/cc09286e-f749-405e-adc7-5dbd442ebfac/7511cd60-00f2-11ed-ba34-71a54c393c2b/file-1l5gh6s6v.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th June Evening Shift Physics - Laws of Motion Question 83 English Explanation\"></p>\n<p>Using Newton's second law</p>\n<p>$$mg - {{mg} \\over 4} = ma$$</p>\n<p>$$ \\Rightarrow a = {{3g} \\over 4}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "9fCSuMy5gG5HdR8mm21kmipz2gi",
@@ -523,14 +548,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "$$\\overrightarrow F  = (2\\widehat i + 3\\widehat j + 5\\widehat k)N$$<br><br>time = 4 sec<br><br>As body start from rest therefore <br>position vector initially $$\\overrightarrow {{r_i}}  = (0\\widehat i + 0\\widehat j + 0\\widehat k)$$ &amp; <br>u (initial velocity) = 0<br><br>given, $${r_f} = (x\\widehat i + y\\widehat j + z\\widehat k)$$<br><br>Now, from second equation of motion<br><br>$$\\overrightarrow s  = \\overrightarrow u t + {1 \\over 2}\\overrightarrow a {t^2}$$<br><br>$${r_f} - {r_i} = {1 \\over 2} \\times \\left( {{{2\\widehat i + 3\\widehat j + 5\\widehat k} \\over 2}} \\right) \\times {(4)^2}$$<br><br>$$ \\Rightarrow $$ $$(x\\widehat i + y\\widehat j + z\\widehat k) - (0\\widehat i + 0\\widehat j + 0\\widehat k) = 8\\widehat i + 12\\widehat j + 20\\widehat k$$<br><br>$$ \\Rightarrow $$ $$x\\widehat i + y\\widehat j + z\\widehat k = 8\\widehat i + 12\\widehat j + 20\\widehat k$$<br><br>$$ \\therefore $$ The value of b = 12",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "01alN6iufAWi8etiNE1kmks3t98",
@@ -546,7 +572,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kqbg67j4/3f40c253-24fa-4db4-a19e-cec8814c2ef5/520d1a00-d537-11eb-9dd8-1b2c1167abad/file-1kqbg67j5.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 18th March Morning Shift Physics - Laws of Motion Question 97 English Explanation\">\n<br><br>M<sub>bullet</sub> = 0.1 kg<br><br>V<sup>2</sup> = 4<sup>4</sup> + 2($$-$$a) $$\\times$$ 5<br><br>$$ \\Rightarrow $$ 0 = (10)<sup>2</sup> $$-$$ 2a $$\\times$$ (0.5)<br><br>Retardation $$(a) = {{1000} \\over {2 \\times 5}}$$ = 100 m/s<sup>2</sup><br><br>Retarding force (F) = ma = 0.1 $$\\times$$ 100<br><br>F<sub>R</sub> = 10 N",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "SnyVgljqbBEkhYYC5Y1klrnkrah",
@@ -567,7 +594,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "Given, speed of projection = v<sub>0</sub><br/><br/>Damping force, F = ma = $$-$$ $$\\alpha$$x<sup>2</sup><br/><br/>$$\\Rightarrow$$ a = $$-$$ $$\\alpha$$x<sup>2</sup> / m<br/><br/>Also, $$a = v{{dv} \\over {dx}}$$<br/><br/>$$ \\Rightarrow vdv = a\\,dx =  - {\\alpha  \\over m}{x^2}dx$$<br/><br/>Integrating both sides, we get<br/><br/>$$\\int_{{v_0}}^v {vdv = \\int_0^x { - {\\alpha  \\over m}{x^2}dx} } $$<br/><br/>$$ \\Rightarrow \\left( {{{{v^2}} \\over 2}} \\right)_{{v_0}}^0 =  - {\\alpha  \\over m}\\left( {{{{x^3}} \\over 3}} \\right)_0^x$$<br/><br/>$$ \\Rightarrow 0 - v_0^2/2 =  - {\\alpha  \\over m}{{{x^3}} \\over 3} \\Rightarrow x = {\\left( {{{3m} \\over 2}{{v_0^2} \\over \\alpha }} \\right)^{1/3}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1krw6mhih",
@@ -588,7 +616,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "$${{d\\overrightarrow v } \\over {dt}} = \\overrightarrow a  = {{\\overrightarrow F } \\over m} = (8\\widehat i + 2\\widehat j)m/{s^2}$$<br><br>$${{d\\overrightarrow r } \\over {dt}} = \\overrightarrow v  = (8t\\widehat i + 2t\\widehat j)m/s$$<br><br>$$\\overrightarrow r  = (8\\widehat i + 2\\widehat j){{{t^2}} \\over 2}m$$<br><br>At t = 10 sec<br><br>$$\\overrightarrow r  = \\left[ {(8\\widehat i + 2\\widehat j)50} \\right]m$$<br><br>$$ \\Rightarrow \\overrightarrow r  = (400\\widehat i + 100\\widehat j)m$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ktaf4evo",
@@ -609,7 +638,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ktcf1kem/fc4338c8-509a-4b17-b2ec-3ba081a4352f/569baae0-1124-11ec-9890-e1f55a1f69a0/file-1ktcf1ken.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Morning Shift Physics - Laws of Motion Question 92 English Explanation\"><br>$${F_{thrust}} = \\left( {{{dm} \\over {dt}}.{V_{rel}}} \\right)$$<br><br>$$\\left( {{{dm} \\over {dt}}{V_{rel}} - mg} \\right) = ma$$<br><br>$$ \\Rightarrow \\left( {{{dm} \\over {dt}}} \\right) \\times 500 - {10^3} \\times 10 = {10^3} \\times 20$$<br><br>$${{dm} \\over {dt}}$$ = (60 kg /s)",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "0jRvuUta5DawVBBzDm1kltk07z8",
@@ -625,7 +655,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "$$\\overrightarrow F  = 20\\widehat i + 10\\widehat j$$<br><br>$$\\overrightarrow a  = {{\\overrightarrow F } \\over m} = {{20\\widehat i + 10\\widehat j} \\over 2} = 10\\widehat i + 5\\widehat j$$<br><br>$$ \\therefore $$ $$\\overrightarrow s  = {1 \\over 2}\\overrightarrow a {t^2} = {1 \\over 2}\\left( {10\\widehat i + 5\\widehat j} \\right) \\times {\\left( {10} \\right)^2}$$<br><br>$$ = 50\\left( {10\\widehat i + 5\\widehat j} \\right)m$$<br><br>$$ \\therefore $$ Displacement along x-axis<br><br>= 50 $$\\times$$ 10 = 500 m",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "UOz9RWhqE536lvPDXO1kltjjskc",
@@ -634,14 +665,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<p>The apparent weight $W_{\\text{app}}$ of a person in an elevator moving with acceleration is given by:</p>\n<p>$$W_{\\text{app}} = m(g - a)$$</p>\n<p>where:</p>\n<ul>\n<li>$W_{\\text{app}}$ is the apparent weight,</li>\n<li>$m$ is the mass of the person,</li>\n<li>$g$ is the acceleration due to gravity,</li>\n<li>$a$ is the acceleration of the elevator.</li>\n</ul>\n<p>Given that the person&#39;s mass is 60 kg, the acceleration due to gravity is 10 m/s², and the acceleration of the lift is 1.8 m/s², we can substitute these values into the formula:</p>\n<p>$$W_{\\text{app}} = 60 \\, \\text{kg} \\times (10 \\, \\text{m/s}^2 - 1.8 \\, \\text{m/s}^2) = 60 \\, \\text{kg} \\times 8.2 \\, \\text{m/s}^2 = 492 \\, \\text{N}$$</p>\n<p>So, the apparent weight of the person when the lift descends with a uniform downward acceleration of 1.8 m/s² will be 492 N.</p>\n",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "1ks19p4v2",
@@ -662,7 +694,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "At t = 0, u = 0<br><br>$$a = {{{F_0}} \\over M} - {{{F_0}} \\over {M{T^2}}}{(t - T)^2} = {{dv} \\over {dt}}$$<br><br>$$\\int\\limits_0^v {dv = \\int\\limits_{t = 0}^{2T} {\\left( {{{{F_0}} \\over M} - {{{F_0}} \\over {M{T^2}}}{{(t - T)}^2}} \\right)dt} } $$<br><br>$$V = \\left[ {{{{F_0}} \\over M}t} \\right]_0^{2T} - {{{F_0}} \\over {M{T^2}}}\\left[ {{{{t^3}} \\over 3} - {t^2}T + {T^2}t} \\right]_0^{2T}$$<br><br>$$ \\Rightarrow $$ $$V = {{4{F_0}T} \\over {3M}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1kucb8igs",
@@ -671,7 +704,7 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -679,7 +712,8 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kx2rqqvx/85fa1287-3d1a-490b-bc5d-acaf4ce38bed/076a2be0-5b07-11ec-86b6-77bf7a2ad847/file-1kx2rqqvy.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kx2rqqvx/85fa1287-3d1a-490b-bc5d-acaf4ce38bed/076a2be0-5b07-11ec-86b6-77bf7a2ad847/file-1kx2rqqvy.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2021 Paper 1 Online Physics - Laws of Motion Question 15 English Explanation 1\"> <br>Range, $$R = {u_x} \\times T = {{2{u_x}{u_y}} \\over g} = {{2 \\times 5 \\times 5} \\over {10}} = 5$$ m<br><br>Time of flight, $$T = {{2{u_y}} \\over g} = {{2 \\times 5} \\over {10}} = 1$$ s<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kx2rcfsj/952503cc-0e90-4de4-807d-d0c0b6cff7e0/79842430-5b05-11ec-86b6-77bf7a2ad847/file-1kx2rcfsk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kx2rcfsj/952503cc-0e90-4de4-807d-d0c0b6cff7e0/79842430-5b05-11ec-86b6-77bf7a2ad847/file-1kx2rcfsk.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2021 Paper 1 Online Physics - Laws of Motion Question 15 English Explanation 2\"><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kx2rddrq/248b7863-631e-4eb8-bb77-b85be000b0ff/93c35960-5b05-11ec-86b6-77bf7a2ad847/file-1kx2rddrr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kx2rddrq/248b7863-631e-4eb8-bb77-b85be000b0ff/93c35960-5b05-11ec-86b6-77bf7a2ad847/file-1kx2rddrr.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2021 Paper 1 Online Physics - Laws of Motion Question 15 English Explanation 3\">\n<br>Both particle have no vertical velocity after splitting so both will take same time to reach the ground.\n<br><br>$$\\because$$ Time of motion of one part falling vertically downwards is 0.5 s<br><br>$$\\Rightarrow$$ Time of motion of another part, $$t = 0.5$$ s ",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "1kucb9541",
@@ -688,7 +722,7 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -696,7 +730,8 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kx2rqqvx/85fa1287-3d1a-490b-bc5d-acaf4ce38bed/076a2be0-5b07-11ec-86b6-77bf7a2ad847/file-1kx2rqqvy.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kx2rqqvx/85fa1287-3d1a-490b-bc5d-acaf4ce38bed/076a2be0-5b07-11ec-86b6-77bf7a2ad847/file-1kx2rqqvy.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2021 Paper 1 Online Physics - Laws of Motion Question 14 English Explanation 1\"> <br>Range, $$R = {u_x} \\times T = {{2{u_x}{u_y}} \\over g} = {{2 \\times 5 \\times 5} \\over {10}} = 5$$ m<br><br>Time of flight, $$T = {{2{u_y}} \\over g} = {{2 \\times 5} \\over {10}} = 1$$ s<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kx2rcfsj/952503cc-0e90-4de4-807d-d0c0b6cff7e0/79842430-5b05-11ec-86b6-77bf7a2ad847/file-1kx2rcfsk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kx2rcfsj/952503cc-0e90-4de4-807d-d0c0b6cff7e0/79842430-5b05-11ec-86b6-77bf7a2ad847/file-1kx2rcfsk.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2021 Paper 1 Online Physics - Laws of Motion Question 14 English Explanation 2\"><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kx2rddrq/248b7863-631e-4eb8-bb77-b85be000b0ff/93c35960-5b05-11ec-86b6-77bf7a2ad847/file-1kx2rddrr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kx2rddrq/248b7863-631e-4eb8-bb77-b85be000b0ff/93c35960-5b05-11ec-86b6-77bf7a2ad847/file-1kx2rddrr.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2021 Paper 1 Online Physics - Laws of Motion Question 14 English Explanation 3\"><br>Both particle have no vertical velocity after splitting so both will take same time to reach the ground.\n<br><br>$$\\because$$ Time of motion of one part falling vertically downwards is 0.5 s<br><br>$$\\Rightarrow$$ Time of motion of another part, $$t = 0.5$$ s <br><br>From momentum conservation, p<sub>i</sub> = p<sub>f</sub><br><br>2m $$\\times$$ 5 = m $$\\times$$ v<br><br>v = 10 m/s<br><br>Displacement of other part in 0.5 s in horizontal direction,<br><br>$$ = v\\left( {{T \\over 2}} \\right) = 10 \\times 0.5 = 5$$ m = R<br><br>$$\\therefore$$ Total distance of second part from point O is $$x = {{3R} \\over 2} = 3 \\times {5 \\over 2}$$<br><br>$$ \\Rightarrow $$ x = 7.5 m ",
     "section": "Sec 4",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "ulxLHuLXJPG9A6mOXgjgy2xukfaiunlm",
@@ -717,7 +752,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "hard",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kjohz7nj/09ecb04c-5887-4ad9-8a98-006b45d2e7fb/0e87c0f0-51cf-11eb-9953-cf54f4e43c47/file-1kjohz7nk-166w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 4th September Evening Slot Physics - Laws of Motion Question 113 English Explanation\">\n<br><br>F<sub>net</sub> = ma\n<br><br>$$ \\Rightarrow $$ -mg - mkv<sup>2</sup> = $$mv{{dv} \\over {ds}}$$\n<br><br>$$ \\Rightarrow $$ $$ds = {{ - vdv} \\over {g + k{v^2}}}$$\n<br><br>$$ \\Rightarrow $$ $$\\int\\limits_{s = 0}^{{H_{\\max }}} {ds}  = \\int\\limits_{v = u}^{v = 0} {{{ - vdv} \\over {g + k{v^2}}}} $$\n<br><br>$$ \\Rightarrow $$ H<sub>max</sub> = $${1 \\over {2k}}\\ln \\left( {{{g + k{u^2}} \\over g}} \\right)$$ = $${1 \\over {2k}}\\ln \\left( {1 + {{k{u^2}} \\over g}} \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "3XOkph5GPWn2fQaiPfjgy2xukfl1my99",
@@ -738,7 +774,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "Given $${{dM\\left( t \\right)} \\over {dt}}$$ = bv<sup>2</sup>(t)\n<br><br>In free space\nno external force\nso there in only thrust force on rocket.\n<br><br>F<sub>thrust</sub> = v$${{dm} \\over {dt}}$$\n<br><br>Force on satellite = $$ - \\overrightarrow v {{dm\\left( t \\right)} \\over {dt}}$$\n<br><br>M(t)a = – v (bv<sup>2</sup>)\n<br><br>$$ \\Rightarrow $$ a = $$ - {{b{v^3}} \\over {M\\left( t \\right)}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "SKiYDsQD4Ct55N6cgGjgy2xukg0ikgo3",
@@ -759,7 +796,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "Given $$\\overrightarrow F  = k\\left( {{v_y}\\widehat i + {v_x}\\widehat j} \\right)$$\n<br><br>$$ \\Rightarrow $$ m$$\\overrightarrow a $$ = $$k\\left( {{v_y}\\widehat i + {v_x}\\widehat j} \\right)$$\n<br><br>$$ \\Rightarrow $$ $$\\overrightarrow a  = {k \\over m}\\left( {{v_y}\\widehat i + {v_x}\\widehat j} \\right)$$\n<br><br>Also $${{d{v_x}} \\over {dt}} = {k \\over m}{v_x}$$\n<br><br>and $${{d{v_y}} \\over {dt}} = {k \\over m}{v_y}$$\n<br><br>$${{d{v_x}} \\over {d{v_y}}} = {{{v_y}} \\over {{v_x}}}$$\n<br><br>$$ \\Rightarrow $$ $$\\int {{v_x}d{v_x}}  = \\int {{v_y}} d{v_y}$$\n<br><br>$$ \\Rightarrow $$ $$v_y^2 = v_x^2 + C$$\n<br><br>$$ \\Rightarrow $$ $$v_y^2 - v_x^2 = C$$ = Constant\n<br><br>From Option (B),\n<br><br>$$\\overrightarrow v  \\times \\overrightarrow a $$\n<br><br>= $$\\left( {{v_x}\\widehat i + {v_y}\\widehat j} \\right) \\times {k \\over m}\\left( {{v_y}\\widehat i + {v_x}\\widehat j} \\right)$$\n<br><br>= $$\\left( {v_x^2\\widehat k - v_y^2\\widehat k} \\right) \\times {k \\over m}$$\n<br><br>= $$\\left( {v_x^2 - v_y^2} \\right) \\times {k \\over m}\\widehat k$$\n<br><br>= Constant",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "0IWF3lt2qg3jMHJA7D3rsa0w2w9jwzhb4yb",
@@ -780,7 +818,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "Given, resistance offered by the wall\n<br/><br/>$$\n=F=-25 \\times 10^{-2} \\mathrm{~N}\n$$\n<br/><br/>So, deacceleration of bullet,\n<br/><br/>$$\n\\begin{aligned}\na=\\frac{F}{m}=\\frac{-2.5 \\times 10^{-2}}{20 \\times 10^{-3}} & =-\\frac{5}{4} \\mathrm{~ms}^{-2} \\\\\\\\\n(\\because m & \\left.=20 \\mathrm{~g}=20 \\times 10^{-3} \\mathrm{~kg}\\right)\n\\end{aligned}\n$$\n<br/><br/>Now, using the equation of motion,\n<br/><br/>$$\nv^2-u^2=2 a s\n$$\n<br/><br/>We have,\n<br/><br/>$$\nv^2=1+2\\left(-\\frac{5}{4}\\right)\\left(20 \\times 10^{-2}\\right)\n$$\n<br/><br/>$$\n\\left(\\because u=1 \\mathrm{~ms}^{-1} \\text { and } s=20 \\mathrm{~cm}=20 \\times 10^{-2} \\mathrm{~m}\\right)\n$$\n<br/><br/>$$\n\\begin{array}{ll}\n\\Rightarrow  v^2=\\frac{1}{2} \\\\\\\\\n\\therefore  v=\\frac{1}{\\sqrt{2}} \\approx 0.7 \\mathrm{~ms}^{-1}\n\\end{array}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mmMYBOLq3HtxZ5llhX18hoxe66ijvzmxskq",
@@ -801,7 +840,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "hard",
     "solution": "Given, drag force, $F=m \\gamma v^2$ ......(i)\n<br/><br/>As we know, general equation of force\n<br/><br/>$$\n=m a\n$$ .........(ii)\n<br/><br/>Comparing Eqs. (i) and (ii), we get\n<br/><br/>$$\na=\\gamma v^2\n$$\n<br/><br/>\nThe net retardation of the ball when thrown vertically upward is therefore \n<br/><br/>$a_{\\text{net}} = - (g + \\gamma v^2) = \\frac{dv}{dt}$, where $g$ is the acceleration due to gravity.\n\n<br/><br/>Rearranging terms gives us :\n\n<br/><br/>$$\\frac{dv}{g + \\gamma v^2} = - dt$$\n\n<br/><br/>We now need to integrate both sides of this equation.\n\n<br/><br/>When the ball is thrown upward with velocity $v_0$ and reaches its zenith ( \"zenith\" refers to the highest point that the ball reaches in its upward trajectory.), the velocity is $0$. The time to reach the zenith is $t$.\n\n<br/><br/>So the integral equation is :\n\n<br/><br/>$$\\int\\limits_{v_0}^{0} \\frac{dv}{\\gamma v^2 + g} = - \\int\\limits_{0}^{t} dt$$\n\n<br/><br/>Separating the constants from the integral :\n\n<br/><br/>$$\\frac{1}{\\gamma} \\int\\limits_{v_0}^{0} \\frac{1}{\\left(\\frac{g}{\\gamma}+v^2\\right)} dv = - \\int\\limits_{0}^{t} dt$$\n\n<br/><br/>Recognizing the integral as the standard form $\\frac{1}{x^2 + a^2} = \\frac{1}{a} \\tan^{-1}\\left(\\frac{x}{a}\\right)$, we write the integral in terms of the arctangent function.\n\n<br/><br/>This gives us :\n\n<br/><br/>$$\\frac{1}{\\gamma} \\left(\\frac{1}{\\sqrt{\\frac{g}{\\gamma}}}\\right) \\left[\\tan^{-1}\\left(\\frac{v}{\\sqrt{\\frac{g}{\\gamma}}}\\right)\\right]_{v_0}^{0} = -t$$\n\n<br/><br/>Evaluating the integral at the bounds gives us :\n\n<br/><br/>$$\\frac{1}{\\sqrt{\\gamma g}} \\tan^{-1}\\left(\\frac{\\sqrt{\\gamma} v_0}{\\sqrt{g}}\\right) = t$$\n\n<br/><br/>Therefore, the time taken by the ball to rise to its zenith, considering the drag force, is given by \n\n<br/><br/>$$t = \\frac{1}{\\sqrt{\\gamma g}} \\tan^{-1}\\left(\\sqrt{\\frac{\\gamma}{g}} V_0\\right)$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "f6vhxNJ6dyy1P1hv5j9CK",
@@ -822,7 +862,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "4F<sup>2</sup> + 9F<sup>2</sup> + 12F<sup>2</sup> cos $$\\theta $$ = R<sup>2</sup>\n<br><br>4F<sup>2</sup> + 36F<sup>2</sup> + 24F<sup>2</sup> cos $$\\theta $$ = 4R<sup>2</sup>\n<br><br>4F<sup>2</sup> + 36F<sup>2</sup> + 24F<sup>2</sup> cos $$\\theta $$\n<br><br>= 4(13F<sup>2</sup> + 12F<sup>2</sup>cos$$\\theta $$) = 52F<sup>2</sup> + 48F<sup>2</sup>cos$$\\theta $$\n<br><br>cos $$\\theta $$  =  $$-$$ $${{12{F^2}} \\over {24{F^2}}}$$ = $$-$$ $${1 \\over 2}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "JoI3EiBtqJpkYWAt",
@@ -831,7 +872,7 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -839,7 +880,8 @@
     "difficulty": "medium",
     "solution": "<p>The block was initially at rest and its velocity just after the application of impulse is $$v(0) = {v_0}{e^{ - 0/\\tau }} = {v_0}$$. The applied impulse is equal to the change in linear momentum of the block i.e., J = mv<sub>0</sub>, which gives</p>\n<p>v<sub>0</sub> = J/m = 1/0.4 = 2.5 m/s.</p>\n<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kzwlzd8t/cecaff82-c616-40bb-8411-fdd368ba8a06/729ff5f0-9308-11ec-b99e-fbe4f8eda4e7/file-1kzwlzd8v.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kzwlzd8t/cecaff82-c616-40bb-8411-fdd368ba8a06/729ff5f0-9308-11ec-b99e-fbe4f8eda4e7/file-1kzwlzd8v.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2018 Paper 2 Offline Physics - Laws of Motion Question 19 English Explanation\"></p>\n<p>The velocity of the particle is given as</p>\n<p>$$v(t) = {v_0}{e^{ - t/\\tau }}$$.</p>\n<p>Integrate to get the displacement</p>\n<p>$$x(t) = \\int_0^t {{v_0}{e^{ - t/\\tau }}dt = {v_0}\\tau (} 1 - {e^{ - t/\\tau }})$$.</p>\n<p>Substitute t = $$\\tau$$ = 4 s and v<sub>0</sub> = 2.5 m/s to get x($$\\tau$$) = (2.5) (4) (1 $$-$$ e<sup>$$-$$1</sup>) = 6.3 m.</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "kQ3gPFzGjReG6774CXwiX",
@@ -860,7 +902,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "Given, \n<br><br>F = $${R \\over {{t^2}}}$$ v(t)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;m $${{dv} \\over {dt}}$$   =  $${R \\over {{t^2}}}$$ (v)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${{dv} \\over v}$$ = $${R \\over m}$$ $${{dt} \\over {{t^2}}}$$\n<br><br>Intergrating both sides, \n<br><br>$$\\int {{{dv} \\over v} = {R \\over m}\\int {{{dt} \\over {{t^2}}}} } $$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;lnv = $${{R \\over m}}$$ $$ \\times $$ $$\\left( { - {1 \\over t}} \\right)$$ + C\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;lnv = $$-$$ $${{R \\over m}}$$ $$\\left( {{1 \\over t}} \\right)$$ + C\n<br><br>Graph between lnv and $${{1 \\over t}}$$ will be straight line curve.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l17ih7a9",
@@ -882,7 +925,8 @@
     "difficulty": "medium",
     "solution": "<p>Let v be speed of the bead when it makes an angle $$\\theta$$ with the vertical direction.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l17pi3x7/e650938b-3633-4d38-9af8-405f375e965f/0db4b2b0-acef-11ec-915c-c385b35e7182/file-1l17pi3x8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l17pi3x7/e650938b-3633-4d38-9af8-405f375e965f/0db4b2b0-acef-11ec-915c-c385b35e7182/file-1l17pi3x8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2014 Paper 2 Offline Physics - Laws of Motion Question 11 English Explanation\"></p>\n<p>The forces acting on the bead are its weight mg and normal reaction N. Since all the forces acting on the bead are conservative, the mechanical energy of the bead is conserved i.e.,</p>\n<p>$$mgr(1 - \\cos \\theta ) = {1 \\over 2}m{v^2}$$ ..... (1)</p>\n<p>The radially inward components of force provide centripetal acceleration to the bead i.e.,</p>\n<p>$$mg\\cos \\theta  - N = m{v^2}/r$$ ...... (2)</p>\n<p>Eliminate v<sup>2</sup> from equations (1) and (2) to get</p>\n<p>$$N = mg(3\\cos \\theta  - 2)$$ ...... (3)</p>\n<p>When 3cos$$\\theta$$ &gt; 2, direction of N will be same as shown in figure, i.e., radially outward.</p>\n<p>When 3cos$$\\theta$$ &lt; 2, direction of N will be radially inward. Now, normal on the bead is opposite to the force applied on the wire by the bead, following Newton's third law. Therefore, the force applied on the bead by the wire is radially inwards initially and radially outwards later, as it moves from A to B.</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "OWQJHBEOpuPtncCK",
@@ -903,7 +947,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "Given that $$F\\left( t \\right) = {F_0}{e^{ - bt}} $$\n<br><br>$$\\Rightarrow m{{dv} \\over {dt}} = {F_0}{e^{ - bt}}$$\n<br><br>$${{dv} \\over {dt}} = {{{F_0}} \\over m}{e^{ - bt}} $$\n<br><br>$$\\Rightarrow \\int\\limits_0^v {dv}  = {{{F_0}} \\over m}\\int\\limits_0^t {{e^{ - bt}}} \\,dt$$\n<br><br>$$v = {{{F_0}} \\over m}\\left[ {{{{e^{ - bt}}} \\over { - b}}} \\right]_0^t = {{{F_0}} \\over {mb}}\\left[ { - \\left( {{e^{ - bt}} - {e^{ - 0}}} \\right)} \\right]$$ \n<br><br>$$ \\Rightarrow v = {{{F_0}} \\over {mb}}\\left[ {1 - {e^{ - bt}}} \\right]$$\n<br><br>$$ \\Rightarrow v_{max} = {{{F_0}} \\over {mb}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "eVLBrS79CUgsqmJP",
@@ -925,7 +970,8 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l4i9sawh/452d3673-01d7-4f8b-a2a3-2e46c9ab49a3/dc672a10-ee22-11ec-a735-e70f40715860/file-1l4i9sawi.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l4i9sawh/452d3673-01d7-4f8b-a2a3-2e46c9ab49a3/dc672a10-ee22-11ec-a735-e70f40715860/file-1l4i9sawi.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2011 Paper 1 Offline Physics - Laws of Motion Question 27 English Explanation\"></p>\n<p>Resolve T along the horizontal and the vertical directions. As the particle moves in a horizontal plane, net vertical fore on it is zero. Net horizontal force on it provides the necessary centripetal acceleration for circular motion. Apply Netwon's second law in the horizontal direction to get</p>\n<p>$$T\\sin \\theta  = m{\\omega ^2}r = m{\\omega ^2}(l\\sin \\theta )$$</p>\n<p>$$T = m{\\omega ^2}l$$</p>\n<p>$$\\omega  = \\sqrt {{T \\over {ml}}} $$</p>\n<p>Substituting the given values, we get</p>\n<p>$$\\omega  = \\sqrt {{{324} \\over {0.5 \\times 0.5}}}  = 36$$ rad/s</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "1lg4epolf",
@@ -947,7 +993,8 @@
     "difficulty": "medium",
     "solution": "<p>Statement 1 : Cloth can be pulled out without dislodging the dishes from the table because of inertia. Therefore, statement 1 true.</p>\n<p>Statement 2 : This is Newton's third law and hence true. But statement 2 is not a correct explanation of statement 1 .</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "fJbMFQFn6GMsZkU7",
@@ -969,7 +1016,8 @@
     "difficulty": "easy",
     "solution": "<p>Given that,</p>\n<p>$$\\overrightarrow{\\mathrm{P}}(t)=\\mathrm{A}[\\hat{i} \\cos (k t)-\\hat{j} \\sin (k t)]$$</p>\n<p>where, $$\\mathrm{A}$$ and $$k=$$ constant</p>\n<p>$$\\begin{aligned}\\text { Force }\\overrightarrow{\\mathrm{F}}) & =\\frac{d \\overrightarrow{\\mathrm{P}}}{d t}\\left(\\text { from Newton's } 2^{\\text {nd }}\\right. \\text { law) } \\\\\\\\\n\\Rightarrow \\quad \\overrightarrow{\\mathrm{F}} & =\\frac{d}{d t}[\\mathrm{~A}(\\hat{i} \\cos (k t)-\\hat{j} \\sin (k t))] \\\\\\\\& =\\mathrm{A} k[\\hat{i} \\cos (k t)-\\hat{j} \\sin (k t)]\\end{aligned}$$</p>\n<p>By applying dot product between $$\\vec{F} \\& \\vec{P}$$ we have</p>\n<p>$$\\begin{aligned}& \\overrightarrow{\\mathrm{F}} \\cdot \\overrightarrow{\\mathrm{P}}=0 \\\\\\\\\n& \\Rightarrow|\\vec{F}||\\vec{P}| \\cos \\theta=0 \\\\\\\\\n& \\Rightarrow \\quad \\cos \\theta=0 \\\\\\\\\n& \\text {Hence,} \\theta=90^{\\circ}\\end{aligned}$$</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "MCQ"
   },
   {
     "id": "9ZfE7PONnMRU4a6X",
@@ -990,7 +1038,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<br><br>Given F = - kx\n<br><br>$$\\Rightarrow$$ F = - 15$$ \\times {{20} \\over {100}}$$ = - 3 N\n<br><br>F = m.a = 3 N\n<br><br>$$\\Rightarrow$$ a = $${3 \\over m}$$ = $${3 \\over {0.3}}$$ = 10 m/s<sup>2</sup>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "HsgVEcvEfqI3xXKN",
@@ -1011,7 +1060,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "Here, thrust force is responsible to accelerate the rocket, \n<br><br>So initial thrust of the blast\n<br><br>= (Lift-off mass) × acceleration\n<br><br>= (3.5 × 10<sup>4</sup>) × (10)\n<br><br>= 3.5 × 10<sup>5</sup> N",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "Ins6qPffV9dWXmB1",
@@ -1032,7 +1082,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<br>Question says, both spring balance are light that means springs are massless.\n<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/uBJp8wPSVEFPVdWYD/gnPAttI5mMPIeJMwsOhiywab3sCr2/7kdhGAfV5xfeOTTe8gUA0D/image.svg\" loading=\"lazy\" alt=\"AIEEE 2003 Physics - Laws of Motion Question 144 English Explanation\"> \n<br>The Earth pulls the block by a force $$Mg.$$ The block in turn exerts a force $$Mg$$ on the spring of spring balance $${S_1}$$ which therefore shows a reading of $$Mkgf.$$ <br>\n<p>The spring $${S_1}$$ is massless. Therefore it exerts a force of $$Mg$$ on the spring of spring balance $${S_2}$$ which shows the reading of $$Mkgf.$$ </p> \n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "JLiClepAffsb2IFf",
@@ -1053,7 +1104,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "easy",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/DTa82XuCpt2bpxrF3/XlFSssEoDUR4o4ePRFXwqjr4YaPz8/vdZoogfdfiw3YXy4VlIi3y/image.png\" loading=\"lazy\" alt=\"AIEEE 2003 Physics - Laws of Motion Question 147 English Explanation\"> \n<br>When lift is stationary then, \n<br><br>T<sub>1</sub> = $$mg$$ = 49 N\n<br><br>$$m$$ = 5\n<br><br>For the bag accelerating down \n<br><br>$$mg-T=ma$$\n<br><br>$$\\therefore$$ $$T=m(g-a)$$\n<br><br>$$ = 5\\left( {9.8 - 5} \\right) = 24\\,N$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "diuKSXbhwS8den7U",
@@ -1074,7 +1126,8 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "Let acceleration of ball = $${\\overrightarrow a _b}$$ and acceleration of man is = $${\\overrightarrow a _m}$$\n<br><br>With respect to the man standing in the lift, the acceleration of the ball \n<br><br>$${\\overrightarrow a _{bm}} = {\\overrightarrow a _b} - {\\overrightarrow a _m}$$\n<br><br>$$ \\Rightarrow {a_{bm}} = g - a$$\n<br><br>Where $$a$$ is the acceleration of the man as the acceleration of the lift is $$a$$.\n<p>With respect to the man standing on the ground the acceleration of the ball\n<br><br>$${\\overrightarrow a _{bm}} = {\\overrightarrow a _b} - {\\overrightarrow a _m}$$ \n<br><br>$$ \\Rightarrow {a_{bm}} = g - 0$$\n<br><br>$$ = g$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ngTxARUoznWLIMIA",
@@ -1095,6 +1148,7 @@
     "topic": "newtons-laws-of-motion",
     "difficulty": "medium",
     "solution": "Let the two forces be $${F_1}$$ and $${F_2}$$ and let $${F_2}$$ is smaller than $$ {F_1} $$ and assume $$R$$ is the resultant force.\n<br><br>Given $${F_1} + {F_2} = 18$$ $$\\,\\,\\,\\,\\,\\,$$  ....$$(i)$$\n<br><br>From the right angle triangle, $$F_2^2 + {R^2} = F_1^2$$\n<br><br>or $$F_1^2 - F_2^2 = {R^2}$$\n<br><br>or $$\\left( {{F_1} + {F_2}} \\right)$$$$\\left( {{F_1} - {F_2}} \\right)$$ = $${R^2}$$\n<br><br>or $$\\left( {18} \\right)\\left( {{F_1} - {F_2}} \\right)$$ = $${\\left( {12} \\right)^2}$$ = 144\n<br><br>or $$\\left( {{F_1} - {F_2}} \\right) = 8$$ $$\\,\\,\\,\\,\\,\\,$$  ....$$(ii)$$\n<br><br>By solving equation $$(i)$$ and $$(ii)$$ we get,\n<br><br>$${{F_1} = 13\\,N}$$ and $${{F_2} = 5\\,N}$$\n<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/1CNJwyGbISt5nPqgl/i7MgjesnEtVzMfw5MnCPYW4hxjgUZ/SMFQ3DkUGLfdwqNBAwTzrv/image.svg\" loading=\"lazy\" alt=\"AIEEE 2002 Physics - Laws of Motion Question 150 English Explanation\">",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

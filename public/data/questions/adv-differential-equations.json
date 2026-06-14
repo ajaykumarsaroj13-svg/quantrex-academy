@@ -431,7 +431,9 @@
       "(A)$$\\to$$(S); (B)$$\\to$$(Q), (S); (C)$$\\to$$(P), (R), (S), (T); (D)$$\\to$$(R)",
       "(A)$$\\to$$(P); (B)$$\\to$$(Q), (S); (C)$$\\to$$(Q), (R), (T); (D)$$\\to$$(S)"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>(A) We have $$f'(x) &gt; 0,\\forall x \\in (0,\\pi /2)$$. Therefore,</p>\n<p>$$f(0) &lt; 0$$ and $$f(\\pi /2) &gt; 0$$</p>\n<p>Hence, there is no one solution.</p>\n<p>(B) Let us consider that $$(a,b,c)$$ is direction ratio of the intersected line. Therefore,</p>\n<p>$$ak + 4b + c = 0$$</p>\n<p>$$4a + kb + 2c = 0$$</p>\n<p>$${a \\over {8 - k}} = {b \\over {4 - 2k}} = {c \\over {{k^2} - 16}}$$</p>\n<p>We need to have</p>\n<p>$$2(8 - k) + 2(4 - 2k) + ({k^2} - 16) = 0$$</p>\n<p>$$ \\Rightarrow k = 2,4$$.</p>\n<p>(C) Let us consider</p>\n<p>$$f(x) = |x + 2| + |x + 1| + |x - 1| + |x - 2|$$</p>\n<p>Therefore, $$k$$ can take values: 2, 3, 4, 5.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lft5kfnd/e8c40f99-4b6a-483a-9b84-ee33bf011ac9/5d644290-cde5-11ed-9ce1-7bd2ccf24231/file-1lft5kfne.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lft5kfnd/e8c40f99-4b6a-483a-9b84-ee33bf011ac9/5d644290-cde5-11ed-9ce1-7bd2ccf24231/file-1lft5kfne.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2009 Paper 2 Offline Mathematics - Differential Equations Question 17 English Explanation\"></p>\n<p>(D) $$\\int {{{dy} \\over {y + 1}} = \\int {dx} } $$</p>\n<p>$$ \\Rightarrow f(x) = 2{e^x} - 1$$</p>\n<p>$$ \\Rightarrow f(\\ln 2) = 3$$</p>",
     "marks": 3,
@@ -641,7 +643,12 @@
       "intersects $$y = {\\left( {x + 2} \\right)^2}$$",
       "does NOT intersect $$\\,y = {\\left( {x + 3} \\right)^2}$$ "
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<b>Options (A) and (B)</b>: The given differential equation is<br><br>\n$$\n\\left[x^2+4 x+4+y(x+2)\\right] \\frac{d y}{d x}-y^2=0 \\quad(x&gt;0)\n$$<br><br>\nwhich is further simplified as follows:<br><br>\n$$\n\\left[(x+2)^2+y(x+2)\\right] \\frac{d y}{d x}-y^2=0\n$$<br><br>\nSubstituting $x+2=t$, we get<br><br>\n$$\n\\frac{d x}{d y}=\\frac{d t}{d y}\n$$<br><br>\nNow,<br><br>\n$$\n(x+2)^2+y(x+2)-y^2 \\frac{d x}{d y}=0\n$$<br><br>\nThat is,<br><br>\n$$\n\\begin{aligned}\n&amp;t^2+y t-y^2 \\frac{d t}{d y}  =0 \\\\\\\\\n&amp;y^2 \\frac{d t}{d y}-y t-t^2 =0 \\\\\\\\\n&amp;\\frac{1}{t^2} \\frac{d t}{d y}-\\frac{1}{y t} =\\frac{1}{y^2}\n\\end{aligned}\n$$<br><br>\nLet $\\frac{1}{t}=z$; therefore,<br><br>\n$$\n\\frac{d t}{d y}\\left(-\\frac{1}{t^2}\\right)=\\frac{d z}{d y}\n$$<br><br>\nNow, <br><br>$\\begin{aligned} \\frac{-d z}{d y}-\\frac{z}{y} &amp; =\\frac{1}{y^2} \\Rightarrow \\frac{d z}{d y}+\\frac{z}{y}=\\frac{-1}{y^2} \\\\\\\\ \\Rightarrow d(z y) &amp; =\\int-\\frac{1}{y} d y \\\\\\\\ \\Rightarrow z y &amp; =-\\ln |y|+\\ln c \\\\\\\\ \\Rightarrow \\frac{y}{t} &amp; =-\\ln |y|+\\ln c\\end{aligned}$\n<br><br>\n$$\n\\Rightarrow \\frac{y}{(x+2)}=-\\ln |y|+\\ln c ~~~~~...(1)\n$$<br><br>\nwhich passes through the point $(1,3)$. Therefore, from Eq. (1), we get<br><br>\n$$\n\\begin{aligned}\n &amp;\\frac{z}{3} =-\\ln 3+c \\Rightarrow c=\\ln 3 e \\\\\\\\\n &amp;\\frac{y}{x+2} =-\\ln |y|+\\ln 3 e=\\ln \\left(\\frac{3 e}{|y|}\\right) \\\\\\\\\n &amp;\\frac{3 e}{|y|} =e^{y /(x+2)} \\\\\\\\\n &amp;3 e =|y| e^{y /(x+2)}\n\\end{aligned}\n$$<br><br>\nSubstituting $y=(x+2)$, we get $3 e=|x+2| e^1$<br><br>\n$$\n|x+2|=3 \\Rightarrow x+2=-3,3 \\Rightarrow x=-5,1\n$$<br><br>\nTherefore, $x=1$ (since $x \\neq-5)$.<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1li7g4cgv/fb8c8272-38a3-48ac-afd4-50099912575f/0a423af0-fd5a-11ed-9057-a7f9a0e389da/file-1li7g4cgw.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1li7g4cgv/fb8c8272-38a3-48ac-afd4-50099912575f/0a423af0-fd5a-11ed-9057-a7f9a0e389da/file-1li7g4cgw.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 1 Offline Mathematics - Differential Equations Question 30 English Explanation\"><br>\nThat is, the solution curve intersects $y=(x+2)$ exactly at one point and not at two points. Therefore, option (A) is correct and option (B) is incorrect.<br><br>\n<b>Option (C)</b>: We have<br><br>\n$$\n\\frac{3 e}{\\left|(x+2)^2\\right|}=e^{(x+2)}\n$$<br><br>\nwhich meets at two points for $x&lt;0$ and for $x&gt;0$, there is no intersection point.<br><br>\nHence, option $(\\mathrm{C})$ is incorrect.<br><br>\n<b>Option (D)</b>: We have<br><br>\n$$\n\\frac{3 e}{(x+3)^2}=e^{\\frac{(x+3)^2}{(x+2)}}=e^{\\frac{(x+2)^2+1+2(x+2)}{(x+2)}}=e^{2+\\frac{1}{(x+2)}+(x+2)}\n$$<br><br>\nTherefore, there is no intersection point for $x&gt;0$. Hence option (D) is correct.",
     "marks": 4,

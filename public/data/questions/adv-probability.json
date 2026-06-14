@@ -1723,7 +1723,9 @@
       "STATEMENT - 1 is True, STATEMENT - 2 is False.",
       "STATEMENT - 1 is False, STATEMENT - 2 is True."
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>We have,</p>\n<p>$$ax + by = 0$$</p>\n<p>$$cx + dy = 0$$</p>\n<p>since, the system of homogeneous equation is always consistent and has a solution.</p>\n<p>Therefore, statement 2 is true.</p>\n<p>Now, $$\\Delta  = \\left| {\\matrix{\n   a & b  \\cr \n   c & d  \\cr \n\n } } \\right|$$ and $$a,b,c,d \\in \\{ 0,1\\} $$</p>\n<p>$$ = ad - bc$$</p>\n<p>No. of ways of selecting $$a,b,c,d$$ from the set {0, 1} is 2 $$\\times$$ 2 $$\\times$$ 2 $$\\times$$ 2 = 16</p>\n<p>If the system has unique solution,</p>\n<p>Then $$\\Delta\\ne0$$</p>\n<p>$$\\Rightarrow$$ either $$ad = 1,bc = 0$$ or $$ad = 0,bc = 1$$ favourable case = 6</p>\n<p>Therefore, probability that system of equation has unique solution is $${6 \\over {16}} = {3 \\over 8}$$. Statement 1 is True.</p>\n<p>Hence, the Statement 2 is True but is not a correct explanation of statement 1.</p>",
     "marks": 3,
@@ -1945,7 +1947,9 @@
     ],
     "correctOptionIndex": [
       0,
-      2
+      1,
+      2,
+      3
     ],
     "correctAnswer": "",
     "solution": "<p>Let's analyze the given conditions and evaluate which options are correct.</p>\n\n<p>Given:</p>\n\n<ol>\n<li>$$ P(X|Y) = \\frac{1}{2} $$</li><br>\n<li>$$ P(Y|X) = \\frac{1}{3} $$</li><br>\n<li>$$ P(X \\cap Y) = \\frac{1}{6} $$</li>\n</ol>\n<p>Now, let's proceed step by step through each option.</p>\n\n<p><strong>Option A:</strong> $$ P(X \\cup Y) = \\frac{2}{3} $$</p>\n\n<p>We can use the formula for the union of two events:</p>\n\n<p>$$ P(X \\cup Y) = P(X) + P(Y) - P(X \\cap Y) $$</p>\n\n<p>To find $$ P(X) $$ and $$ P(Y) $$, we use the definitions of conditional probability:</p>\n\n<p>$$ P(X|Y) = \\frac{P(X \\cap Y)}{P(Y)} $$</p>\n\n<p>$$ \\frac{1}{2} = \\frac{\\frac{1}{6}}{P(Y)} $$</p>\n\n<p>$$ P(Y) = \\frac{1}{6} \\times 2 = \\frac{1}{3} $$</p>\n\n<p>Similarly,</p>\n\n<p>$$ P(Y|X) = \\frac{P(X \\cap Y)}{P(X)} $$</p>\n\n<p>$$ \\frac{1}{3} = \\frac{\\frac{1}{6}}{P(X)} $$</p>\n\n<p>$$ P(X) = \\frac{1}{6} \\times 3 = \\frac{1}{2} $$</p>\n\n<p>Now, substituting these values into the union formula:</p>\n\n<p>$$ P(X \\cup Y) = \\frac{1}{2} + \\frac{1}{3} - \\frac{1}{6} $$</p>\n\n<p>To add these fractions, we need a common denominator. The common denominator is 6:</p>\n\n<p>$$ P(X \\cup Y) = \\frac{3}{6} + \\frac{2}{6} - \\frac{1}{6} = \\frac{4}{6} = \\frac{2}{3} $$</p>\n\n<p>Hence, <strong>Option A is correct</strong>.</p>\n\n<p><strong>Option B:</strong> $$ X $$ and $$ Y $$ are independent</p>\n\n<p>For two events $$ X $$ and $$ Y $$ to be independent, the following condition should hold:</p>\n\n<p>$$ P(X \\cap Y) = P(X) \\times P(Y) $$</p>\n\n<p>We already found that:</p>\n\n<p>$$ P(X) = \\frac{1}{2} $$</p>\n\n<p>$$ P(Y) = \\frac{1}{3} $$</p>\n\n<p>$$ P(X \\cap Y) = \\frac{1}{6} $$</p>\n\n<p>Checking the independence condition:</p>\n\n<p>$$ P(X) \\times P(Y) = \\frac{1}{2} \\times \\frac{1}{3} = \\frac{1}{6} $$</p>\n\n<p>Since this is equal to $$ P(X \\cap Y) $$, $$ X $$ and $$ Y $$ are indeed independent.</p>\n\n<p>Hence, <strong>Option B is correct</strong>.</p>\n\n<p><strong>Option C:</strong> $$ X $$ and $$ Y $$ are not independent</p>\n\n<p>From the previous analysis, we have shown that $$ X $$ and $$ Y $$ are independent.</p>\n\n<p>Hence, <strong>Option C is not correct</strong>.</p>\n\n<p><strong>Option D:</strong> $$ P((X^c) \\cap Y) = \\frac{1}{3} $$</p>\n\n<p>To find $$ P((X^c) \\cap Y) $$, we use the fact that:</p>\n\n<p>$$ P(Y) = P((X \\cap Y) \\cup (X^c \\cap Y)) $$</p>\n\n<p>Since $$ (X \\cap Y) $$ and $$ (X^c \\cap Y) $$ are disjoint events, we can write:</p>\n\n<p>$$ P(Y) = P(X \\cap Y) + P(X^c \\cap Y) $$</p>\n\n<p>Given:</p>\n\n<p>$$ P(Y) = \\frac{1}{3} $$</p>\n\n<p>$$ P(X \\cap Y) = \\frac{1}{6} $$</p>\n\n<p>Substituting these,</p>\n\n<p>$$ \\frac{1}{3} = \\frac{1}{6} + P(X^c \\cap Y) $$</p>\n\n<p>Solving for $$ P(X^c \\cap Y) $$:</p>\n\n<p>$$ P(X^c \\cap Y) = \\frac{1}{3} - \\frac{1}{6} = \\frac{2}{6} - \\frac{1}{6} = \\frac{1}{6} $$</p>\n\n<p>This contradicts Option D, as it says $$ \\frac{1}{3} $$.</p>\n\n<p>Hence, <strong>Option D is not correct</strong>.</p>\n\n<p>In conclusion:</p>\n\n<p><strong>Option A and Option B are correct.</strong></p>\n\n<p><strong>Option C and Option D are not correct.</strong></p>",
@@ -2035,7 +2039,9 @@
       "$${{3} \\over {256}}$$",
       "$${{253} \\over {256}}$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "<p>Let A, B, C, D are the events of solving a problem.</p>\n<p>Given: $$\\mathrm{P}(\\mathrm{A})=\\frac{1}{2}, \\mathrm{P}(\\mathrm{B})=\\frac{3}{4}, \\mathrm{P}(\\mathrm{C})=\\frac{1}{4}, \\mathrm{P}(\\mathrm{D})=\\frac{1}{8}$$</p>\n<p>Also given A, B, C, D are independent events.</p>\n<p>Let P is the probability of solved by at least one person.</p>\n<p>$$\\Rightarrow \\mathrm{P}=1-$$ (Probability that none of the person can solve the problem)</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\mathrm{P}=1-\\mathrm{P}(\\overline{\\mathrm{A}} \\cap \\overline{\\mathrm{B}} \\cap \\overline{\\mathrm{C}} \\cap \\overline{\\mathrm{D}}) \\\\\n& \\Rightarrow \\mathrm{P}=1-\\mathrm{P}(\\overline{\\mathrm{A}}) \\cdot \\mathrm{P}(\\overline{\\mathrm{B}}) \\cdot \\mathrm{P}(\\overline{\\mathrm{C}}) \\cdot \\mathrm{P}(\\overline{\\mathrm{D}}) \\\\\n& \\Rightarrow \\mathrm{P}=1-(1-\\mathrm{P}(\\mathrm{A}))(1-\\mathrm{P}(\\mathrm{B}))(1-\\mathrm{P}(\\mathrm{C}))(1-\\mathrm{P}(\\mathrm{D})) \\\\\n& \\Rightarrow \\mathrm{P}=1-\\left(1-\\frac{1}{2}\\right)\\left(1-\\frac{3}{4}\\right)\\left(1-\\frac{1}{4}\\right)\\left(1-\\frac{1}{8}\\right) \\\\\n& \\Rightarrow \\mathrm{P}=1-\\frac{1}{2} \\times \\frac{1}{4} \\times \\frac{3}{4} \\times \\frac{7}{8} \\\\\n& \\Rightarrow \\mathrm{P}=1-\\frac{21}{256}\\\\\n& \\Rightarrow \\mathrm{P}=\\frac{235}{256}\n\\end{aligned}$$</p>\n<p>Hints:</p>\n<p>$$\\Rightarrow$$ (i) If $$A$$ and $$B$$ are independent events, then</p>\n<p>$$\\begin{aligned}\n& \\rightarrow \\mathrm{P}(\\mathrm{A} \\cap \\mathrm{B})=\\mathrm{P}(\\mathrm{A}) \\cdot \\mathrm{P}(\\mathrm{B}) \\\\\n& \\rightarrow \\mathrm{P}(\\overline{\\mathrm{A}} \\cap \\overline{\\mathrm{B}})=\\mathrm{P}(\\overline{\\mathrm{A}}) \\cdot \\mathrm{P}(\\overline{\\mathrm{B}})=(1-\\mathrm{P}(\\mathrm{A}))(1-\\mathrm{P}(\\mathrm{B})) \\\\\n& \\rightarrow \\mathrm{P}(\\overline{\\mathrm{A}} \\cap \\mathrm{B})=\\mathrm{P}(\\overline{\\mathrm{A}}) \\cdot \\mathrm{P}(\\mathrm{B})=(1-\\mathrm{P}(\\mathrm{A})) \\mathrm{P}(\\mathrm{B}) \\\\\n& \\rightarrow \\mathrm{P}(\\mathrm{A} \\cap \\overline{\\mathrm{B}})=\\mathrm{P}(\\mathrm{A}) \\cdot \\mathrm{P}(\\overline{\\mathrm{B}})=\\mathrm{P}(\\mathrm{A}) \\cdot(1-\\mathrm{P}(\\mathrm{B}))\n\\end{aligned}$$</p>\n<p>(ii) Probability of at least one person can solve the problem $$= 1-$$ Probability that none of the persons can solve that problem.</p>",
     "marks": 4,
@@ -2162,7 +2168,10 @@
       "$${n_1} = 10$$ and $${n_2} = 20$$",
       "$${n_1} = 3$$ and $${n_2} = 6$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0why4o7/2f40fe1a-7d7e-4794-9fde-81248187b1ff/e30e5190-a6c4-11ec-b979-0d1c868c8af2/file-1l0why4o9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0why4o7/2f40fe1a-7d7e-4794-9fde-81248187b1ff/e30e5190-a6c4-11ec-b979-0d1c868c8af2/file-1l0why4o9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2015 Paper 2 Offline Mathematics - Probability Question 44 English Explanation\"></p>\n<p>$$\\therefore$$ P (drawing red ball from B<sub>1</sub>) = $${1 \\over 3}$$</p>\n<p>$$ \\Rightarrow \\left( {{{{n_1} - 1} \\over {{n_1} + {n_2} - 1}}} \\right)\\left( {{{{n_1}} \\over {{n_1} + {n_2}}}} \\right) + \\left( {{{{n_2}} \\over {{n_1} + {n_2}}}} \\right)\\left( {{{{n_1}} \\over {{n_1} + {n_2} - 1}}} \\right) = {1 \\over 3}$$</p>\n<p>$$ \\Rightarrow {{n_1^2 + {n_1}{n_2} - {n_1}} \\over {({n_1} + {n_2})({n_1} + {n_2} - 1)}} = {1 \\over 3}$$</p>\n<p>Clearly, options (c) and (d) satisfy.</p>",
     "marks": 4,
@@ -2485,7 +2494,7 @@
     "title": "JEE Advanced 2021 Paper 1 Online",
     "year": 2021,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let E, F and G be three events having probabilities $$P(E) = {1 \\over 8}$$, $$P(F) = {1 \\over 6}$$ and $$P(G) = {1 \\over 4}$$, and let P (E $$\\cap$$ F $$\\cap$$ G) = $${1 \\over {10}}$$. For any event H, if H<sup>c</sup> denotes the complement, then which of the following statements is (are) TRUE?",
     "options": [
       "$$P(E \\cap F \\cap {G^c}) \\le {1 \\over {40}}$$",
@@ -2493,7 +2502,12 @@
       "$$P(E \\cup F \\cup G) \\le {{13} \\over {24}}$$",
       "$$P({E^c} \\cup {F^c} \\cup {G^c}) \\le {5 \\over {12}}$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "For option (a)<br/><br/>$$P(E \\cap F \\cap {G^C}) = P(E \\cap F) - P(E \\cap F \\cap G) \\le P(E) - P(E \\cap F \\cap G)$$<br/><br/>$$ = {1 \\over 8} - {1 \\over {10}} = {1 \\over {40}}$$<br/><br/>For option (b)<br/><br/>$$P({E^C} \\cap F \\cap G) = P(F \\cap G) - P(E \\cap F \\cap G) \\le P(F) - P(E \\cap F \\cap G)$$<br/><br/>$$ = {1 \\over 6} - {1 \\over {10}} = {1 \\over {15}}$$<br/><br/>For option (c)<br/><br/>$$P(E \\cup F \\cup G) \\le P(E) + P(F) + P(G)$$<br/><br/>$$ = {1 \\over 8} + {1 \\over 6} + {1 \\over 4} = {{3 + 4 + 6} \\over {24}} = {{13} \\over {24}}$$<br/><br/>For option (d)<br/><br/>$$P({E^C} \\cap {F^C} \\cap {G^C}) = 1 - P(E \\cap F \\cap G) \\ge 1 - {{13} \\over {24}}$$<br/><br/>$$P({E^C} \\cap {F^C} \\cap {G^C}) \\ge {{11} \\over {24}} > {5 \\over {12}}$$",
     "marks": 4,
@@ -2817,7 +2831,12 @@
       "<p>The conditional probability $P(F_1|E_1)$ is equal to the conditional probability $P(F_1|E_2)$</p>",
       "<p>The conditional probability $P(F_1|E_1)$ is greater than the conditional probability $P(F_2|E_2)$</p>"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p><img alt=\"JEE Advanced 2026 Paper 1 Online Mathematics - Probability Question 2 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpcc90qm/e67cabab-e1bc-4aba-becd-d4c40a2e5ea9/204471e0-5358-11f1-be5c-9fee0252c862/file-6y3zli1mpcc90qn.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpcc90qm/e67cabab-e1bc-4aba-becd-d4c40a2e5ea9/204471e0-5358-11f1-be5c-9fee0252c862/file-6y3zli1mpcc90qn.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The first step is to define the given events clearly:</p>\n<p>$$ \\begin{array}{ll} E_1 \\rightarrow \\text{Ball from Box I} &amp; F_1 \\rightarrow \\text{Red Ball} \\\\\\\\ E_2 \\rightarrow \\text{Ball from Box II} &amp; F_2 \\rightarrow \\text{Green Ball} \\end{array} $$</p>\n<p><b>Find total and individual probabilities.</b></p>\n<p>Total number of balls in both boxes = $15 + 20 = 35$.</p>\n<p>So, we have:</p>\n<p>$$\\begin{array}{ll} P(E_1) = \\frac{15}{35}, &amp; P(E_2) = \\frac{20}{35} \\\\\\\\ P(F_1) = \\frac{14}{35}, &amp; P(F_2) = \\frac{21}{35} \\\\\\\\ P(E_1 \\cap F_1) = \\frac{6}{35}, &amp; P(E_1 \\cap F_2) = \\frac{9}{35} \\\\\\\\ P(E_2 \\cap F_1) = \\frac{8}{35}, &amp; P(E_2 \\cap F_2) = \\frac{12}{35} \\end{array}$$</p>\n<p><b>Check the given options.</b></p>\n<p><b>Option (A):</b></p>\n<p>$$P(E_1) \\cdot P(F_1) = \\frac{15}{35} \\times \\frac{14}{35} = \\frac{6}{35} = P(E_1 \\cap F_1)$$</p>\n<p>This statement is true.</p>\n<p><b>Option (B):</b></p>\n<p>$$P(E_2) \\cdot P(F_2) = \\frac{20}{35} \\times \\frac{21}{35} = \\frac{12}{35} = P(E_2 \\cap F_2)$$</p>\n<p>This statement also appears correct numerically, but let’s recheck later with the next steps.</p>\n<p><b>Option (C):</b></p>\n<p>Find the conditional probabilities:</p>\n<p>$$\\begin{array}{r} P(F_1 | E_1) = \\frac{\\frac{6}{35}}{\\frac{15}{35}} = \\frac{6}{15} = \\frac{2}{5}, \\\\\\\\ P(F_1 | E_2) = \\frac{\\frac{8}{35}}{\\frac{20}{35}} = \\frac{4}{20} = \\frac{2}{5} \\end{array}$$</p>\n<p>Since both are equal, $P(F_1 | E_1) = P(F_1 | E_2)$, this statement is true.</p>\n<p><b>Option (D):</b></p>\n<p>$$P(F_2 | E_2) = \\frac{\\frac{12}{35}}{\\frac{20}{35}} = \\frac{3}{5} &gt; P(F_1 | E_1)$$</p>\n<p>This means more green balls are likely from Box II than red balls from Box I.</p>\n<p><b>Conclusion</b></p>\n<p>The correct statements are <b>Options (A) and (C)</b>.</p>",
     "marks": 4,

@@ -18,7 +18,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p><b>Statement I :</b> $25^{13}+20^{13}+8^{13}+3^{13}$ is divisible by 7.</p>\n<p>Key concept : If $n$ is odd, $x^n+y^n=(x+y)\\left(x^{n-1}-x^{n-2} y+x^{n-3} y^2-\\cdots-x y^{n-2}+\\right. y^{n-1}$ ) So, $x^n+y^n$ is divisible by $x+y$.</p>\n<p>In the given statement :</p>\n<ul>\n\n<li><p>$25^{13}+3^{13}$ is divisible by $25+3=28$.</p></li>\n\n<li><p>$25^{13}+3^{13}$ is also divisible by 7 because 28 is divisible by 7 .</p></li>\n\n<li><p>So, $25^{13}+3^{13}=7 \\cdot I_1$.........(1) ( $I_1$ is a positive integer).</p></li>\n\n</ul>\n<p>Similarly :</p>\n<ul>\n\n<li><p>$20^{13}+8^{13}$ is divisible by $20+8=28$.</p></li>\n\n<li><p>$20^{13}+8^{13}$ is divisible by 7.</p></li>\n\n<li><p>So, $20^{13}+8^{13}=7 \\cdot I_2$ ..........(2) ( $I_2$ is a positive integer).</p></li>\n\n</ul>\n<p>Add (1) &amp; (2) :</p>\n<ul>\n\n<li>$25^{13}+3^{13}+20^{13}+8^{13}=7\\left(I_1+I_2\\right)$</li>\n\n</ul>\n<p>So, $25^{13}+20^{13}+8^{13}+3^{13}$ is divisible by 7 . Statement I is true.</p>\n<p><b>Statement :</b> The integral part of $(7+4 \\sqrt{3})^{25}$ is an odd number.</p>\n<p>Let $X=(7+4 \\sqrt{3})^{25}$. Let $I$ be the integral part and $f$ be the fractional part ( $0<f<1$ ), so $X=I+f$. Now, consider $f^{\\prime}=(7-4 \\sqrt{3})^{25}$. Since $4 \\sqrt{3}=\\sqrt{48}$, and $\\sqrt{49}=7$, we know $0<7-4 \\sqrt{3}<1$. Therefore, $0<f^{\\prime}<1$.</p>\n<p>Adding the two expansions:</p>\n<p>$$ (7+4 \\sqrt{3})^{25}+(7-4 \\sqrt{3})^{25}=I+f+f^{\\prime} $$</p>\n<p>Using the binomial expansion $(a+b)^n+(a-b)^n=2\\left[a^n+\\binom{n}{2} a^{n-2} b^2+\\ldots\\right]$, we see that the sum is always an even integer because of the factor of 2 .</p>\n<p>$$ I+f+f^{\\prime}=\\text { Even Integer } $$</p>\n<p>Since $I$ is an integer, $f+f^{\\prime}$ must also be an integer. Given $0 < f < 1$ and $0 < f^{\\prime} < 1$, the only possible integer value for their sum is $f+f^{\\prime}=1$.</p>\n<p>$$ I+1=\\text { Even Integer } $$</p>\n<p>$$ I=\\text { Even Integer }-1=\\text { Odd Integer } $$</p>\n<p>The integral part I is indeed an odd number. Statement II is True.</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6qhln2i",
@@ -39,7 +40,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& 7^{103}=7\\left(7^{102}\\right)=7(343)^{34}=7(345-2)^{34} \\\\\n& 7^{103}=23 \\mathrm{~K}_1+7.2^{34} \\\\\n& \\text { Now } 7.2^{34}=7 \\cdot 2^2 \\cdot 2^{32} \\\\\n& =28 \\cdot(256)^4 \\\\\n& =28(253+3)^4 \\\\\n& \\therefore 28 \\times 81 \\Rightarrow(23+5)(69+12) \\\\\n& 23 \\mathrm{~K}_2+60 \\\\\n& \\therefore \\text { Remainder }=14\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m9duno1a",
@@ -60,7 +62,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& V_3(50!)=\\left[\\frac{50}{3}\\right]+\\left[\\frac{50}{9}\\right]+\\left[\\frac{50}{27}\\right]+\\left[\\frac{50}{81}\\right]+\\ldots+\\left[\\frac{50}{3^n}\\right] \\\\\n& =16+5+1+0+0+0 \\ldots=22\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m9e5j6gp",
@@ -81,7 +84,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& 64^{64} \\Rightarrow(63+1)^{64}=63 \\lambda+1 \\\\\n& 64^{664^{64}} \\Rightarrow(63+1)^{64^{64}} \\\\\n& 63 \\lambda_1+1\n\\end{aligned}\\\\\n&\\text { Required remainder when divided } 7 \\text { is } 1 \\text {. }\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m9dmugpz",
@@ -97,7 +101,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& (1919)^{1919}=(1920-1)^{1919} \\\\\n& ={ }^{1919} \\mathrm{C}_0(1920)^{1919}-{ }^{1919} \\mathrm{C}_1(1920)^{1918}+\\ldots . \\\\\n& +{ }^{1919} \\mathrm{C}_{1918}(1920)^1-{ }^{1919} \\mathrm{C}_{1919} \\\\\n& =100 \\lambda+1919 \\times 1920-1 \\\\\n& =100 \\lambda+3684480-1 \\\\\n& =100 \\lambda+\\ldots \\ldots \\ldots . .79 \\text { (last two digit) } \\\\\n& \\Rightarrow \\text { Number having last two digit } 79 \\\\\n& \\therefore \\text { Product of last two digit } 63\n\\end{aligned}$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "jaoe38c1lsfl8i9p",
@@ -113,7 +118,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "easy",
     "solution": "<p>Let $$32^{32}=\\mathrm{t}$$</p>\n<p>$$\\begin{aligned}\n& 64^{32^{32}}=64^t=8^{2 t}=(9-1)^{2 t} \\\\\n& =9 \\mathrm{k}+1\n\\end{aligned}$$</p>\n<p>Hence remainder $$=1$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "luy9clej",
@@ -122,14 +128,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& 428=21 \\times 20+8 \\\\\n\\Rightarrow \\quad & (428)^{2024} \\equiv(20 \\times 21+8)^{2024} \\equiv 8^{2024}(\\bmod 21) \\\\\n& 8^2=21 \\times 3+1 \\\\\n& 8^{2024}=(21 \\times 3+1)^{1012} \\\\\n\\Rightarrow \\quad & 8^{2024} \\equiv(21 \\times 3+1)^{1012}(\\bmod 21) \\\\\n& \\equiv 1^{2012}(\\bmod 21) \\\\\n& 428^{2024} \\equiv 1(\\bmod 21)\n\\end{aligned}$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "1lgvpgm7l",
@@ -150,7 +157,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "We have, $(22)^{2022}+(2022)^{22}$\n<br/><br/>As 2022 is completely divisible by 3\n<br/><br/>So, $(2022)^{22}$ is also divisible by 3\n<br/><br/>$(22)^{2022}=(21+1)^{2022}=(3 \\times 7+1)^{2022}=7 m+1$\n<br/><br/>$\\Rightarrow(22)^{2022}$ leave a remainder 1 , when divisible by 3 .\n<br/><br/>$\\therefore(22)^{2022}+(2022)^{22}$ leave a remainder when divisible by 3\n<br/><br/>$\\therefore \\alpha=1$\n<br/><br/>$$\n\\begin{aligned}\n(22)^{2022}+(2022)^{22} & =(21+1)^{2022}+(2023-1)^{22} \\\\\\\\\n& =7 K+1+7 \\mu+1=7(K+\\mu)+2\n\\end{aligned}\n$$\n<br/><br/>$\\Rightarrow(22)^{2022}+(2022)^{22}$ leave a remainder 2 when divisible by 7\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore  \\beta=2 \\\\\\\\\n& \\text { Hence, }  \\alpha^2+\\beta^2=1^2+2^2=5\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgoy2e8y",
@@ -166,7 +174,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "easy",
     "solution": "$7^{103}=7 \\times 7^{102}$\n<br/><br/>$$\n\\begin{aligned}\n& =7 \\times(49)^{51} \\\\\\\\\n& =7 \\times(51-2)^{51}\n\\end{aligned}\n$$\n<br/><br/>Remainder = $7 \\times(-2)^{51}$\n<br/><br/>$$\n\\begin{aligned}\n& =-7\\left(2^3 \\cdot(16)^{12}\\right) \\\\\\\\\n& =-56(17-1)^{12}\n\\end{aligned}\n$$\n<br/><br/>Remainder $=-56 \\times(-1)^{12}=-56+68=12$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lgpy5uw8",
@@ -187,7 +196,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\n& \\left\\{\\frac{4^{2022}}{15}\\right\\}=\\left\\{\\frac{2^{4044}}{15}\\right\\} \\\\\\\\\n& =\\left\\{\\frac{(1+15)^{1011}}{15}\\right\\} \\\\\\\\\n& =\\frac{1}{15}\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldoo7i54",
@@ -203,7 +213,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "$19^{200}+23^{200}$\n\n<br/><br/>= $(21-2)^{200}+(21+2)^{200}=49 \\lambda+2^{201}$\n\n<br/><br/>Now, $2^{201}=8^{67}=(7+1)^{67}=49 \\lambda+7 \\times 67+1$\n\n<br/><br/>$=49 \\lambda+470$\n\n<br/><br/>$=49(\\lambda+9)+29$\n\n<br/><br/>$$ \\therefore $$ Remainder $=29$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldu60obo",
@@ -219,7 +230,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& (2023)^{2023} \\\\\\\\\n& =(2030-7)^{2023} \\\\\\\\\n& =(35 \\mathrm{~K}-7)^{2023} \\\\\\\\\n& ={ }^{2023} \\mathrm{C}_0(35 \\mathrm{~K})^{2023}(-7)^0+{ }^{2023} \\mathrm{C}_1(35 \\mathrm{~K})^{2022}(-7)+ \\\\\\\\\n& \\ldots . .+\\ldots \\ldots .+{ }^{2023} \\mathrm{C}_{2023}(-7)^{2023} \\\\\\\\\n& =35 \\mathrm{~N}-7^{2023} \\\\\\\\\n& \\text { Now },-7^{2023}=-7 \\times 7^{2022}=-7\\left(7^2\\right)^{1011} \\\\\\\\\n& =-7(50-1)^{1011} \\\\\\\\\n& =-7\\left({ }^{1011} \\mathrm{C}_0 50^{1011}-{ }^{1011} \\mathrm{C}_1(50)^{1010}+\\ldots \\ldots{ }^{1011} \\mathrm{C}_{1011}\\right) \\\\\\\\\n& =-7(5 \\lambda-1) \\\\\\\\\n& =-35 \\lambda+7\n\\end{aligned}\n$$<br/><br/>\n$\\therefore$ when $(2023)^{2023}$ is divided by 35 remainder is 7",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "ldr0sc3g",
@@ -228,14 +240,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p>Given $${x^{{1 \\over {50}}}} = 12 \\Rightarrow x = {12^{50}}$$</p>\n<p>$${y^{{1 \\over {50}}}} = 18 \\Rightarrow y = {18^{50}}$$</p>\n<p>$$12\\equiv13$$ (Mod 25)</p>\n<p>$$12^2\\equiv19$$ (Mod 25)</p>\n<p>$$12^3\\equiv-3$$ (Mod 25)</p>\n<p>$$12^9\\equiv-2$$ (Mod 25)</p>\n<p>$$12^{10}\\equiv-1$$ (Mod 25)</p>\n<p>$$12^{50}\\equiv-1$$ (Mod 25) ..... (i)</p>\n<p>Now</p>\n<p>$$18\\equiv7$$ (Mod 25)</p>\n<p>$$18^2\\equiv-1$$ (Mod 25)</p>\n<p>$$18^{-50}\\equiv-1$$ (Mod 25) ..... (ii)</p>\n<p>$$\\therefore$$ $$12^{50}+18^{50}\\equiv-2$$ (Mod 25)</p>\n<p>$$\\equiv23$$ (Mod 25)</p>\n<p>$$\\therefore$$ Answer = 23</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "1ldptern1",
@@ -251,7 +264,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "easy",
     "solution": "$5^{99}=5^{4} .5^{95}$\n\n<br/><br/>$=625\\left[5^{5}\\right]^{19}$\n\n<br/><br/>$=625[3125]^{19}$\n\n<br/><br/>$=625[3124+1]^{19}$\n\n<br/><br/>$=625[11 \\mathrm{k} \\times 19+1]$\n\n<br/><br/>$=625 \\times 11 \\mathrm{k} \\times 19+625$\n\n<br/><br/>$=11 \\mathrm{k}_{1}+616+9$\n\n<br/><br/>$=11\\left(\\mathrm{k}_{2}\\right)+9$\n\n<br/><br/>Remainder $=9$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lh2y2hd7",
@@ -272,7 +286,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "hard",
     "solution": "We have, $S_1$ : $(2023)^{2022}-(1999)^{2022}$\n<br/><br/>$$\n\\begin{aligned}\n& =(1999+24)^{2022}-(1999)^{2022}={ }^{2022} C_0(1999)^{2022}(24)^0 \\\\\\\\\n& +{ }^{2022} C_1(1999)^{2021}(24)^1+{ }^{2022} C_2(1999)^{2020}(24)^2 \\\\\\\\\n& +\\ldots-(1999)^{2022} \\\\\\\\\n& ={ }^{2022} C_1(1999)^{2021}(24)+{ }^{2022} C_2(1999)^{2022}(24)^2 \\\\\\\\\n& =24\\left({ }^{2022} C_1(1999)^{2021}+{ }^{2022} C_2(1999)^{2022}(24)+\\ldots+\\ldots\\right) \\\\\\\\\n& \\Rightarrow S_1 \\text { is divisible by } 24\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Now, } S_2: 13(13)^n-12 n-13 \\\\\\\\\n& \\text { Here, } 13^n=(1+12)^n \\\\\\\\\n& \\quad=1+{ }^n C_1 12+{ }^n C_2(12)^2+{ }^n C_3(12)^3 \\\\\\\\\n& \\begin{aligned}\n\\therefore S_2: & 13\\left(1+{ }^n C_1(12)+{ }^n C_2(12)^2+{ }^n C_3(12)^3+\\ldots\\right)-12 n-13 \\\\\\\\\n\\quad= & 13+156 n+13\\left({ }^n C_2(12)^2+{ }^n C_3(12)^3+\\ldots\\right)-12 n-13 \\\\\\\\\n\\quad= & 144 \\times 13\\left({ }^n C_2+{ }^n C_3(12)+\\ldots\\right)\n\\end{aligned}\n\\end{aligned}\n$$\n<br/><br/>$\\Rightarrow S_2$ is divisible by 144 for infinitely many $n \\in N$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lgyl43d6",
@@ -293,7 +308,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "The given expression is divisible by 6 and 17 .\n<br/><br/>Also, $25^{190}-8^{190}$ is not divisible by 7\n<br/><br/>but $19^{190}-2^{190}$ is divisible by 7 ,\n<br/><br/>So, $25^{190}-19^{190}-8^{190}+2^{190}$ is divisible by 34 but not by 14 .",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lh00oqex",
@@ -309,7 +325,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "easy",
     "solution": "We have,\n<br/><br/>$$\n\\begin{aligned}\n& {\\left[\\frac{66}{3}\\right]=22} \\\\\\\\\n& {\\left[\\frac{66}{3^2}\\right]=7} \\\\\\\\\n& {\\left[\\frac{66}{3^3}\\right]=2}\n\\end{aligned}\n$$\n<br/><br/>Highest powers of 3 is greater than 66. So, their g.i.f. is always 0.\n<br/><br/>$\\therefore$ Required natural number $=22+7+2=31$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l5bb3q9d",
@@ -325,7 +342,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p>Given,</p>\n<p>$$1 + 3 + {3^2} + {3^3} + \\,\\,.....\\,\\, + \\,\\,{3^{2021}}$$</p>\n<p>$$ = {3^0} + {3^1} + {3^2} + {3^3} + \\,\\,....\\,\\, + \\,\\,{3^{2021}}$$</p>\n<p>This is a G.P with common ratio = 3</p>\n<p>$$\\therefore$$ Sum $$ = {{1({3^{2022}} - 1)} \\over {3 - 1}}$$</p>\n<p>$$ = {{{3^{2022}} - 1} \\over 2}$$</p>\n<p>$$ = {{{{({3^2})}^{2011}} - 1} \\over 2}$$</p>\n<p>$$ = {{{{(10 - 1)}^{1011}} - 1} \\over 2}$$</p>\n<p>$$ = {{\\left[ {{}^{1011}{C_0}\\,.\\,{{10}^{1011}} - {}^{1011}{C_1}\\,.\\,{{10}^{1010}} + \\,\\,.....\\,\\, - \\,\\,{}^{1011}{C_{1009}}\\,.\\,{{(10)}^2} + {}^{1011}{C_{1010}}\\,.\\,10 - {}^{1011}{C_{1011}}} \\right] - 1} \\over 2}$$</p>\n<p>$$ = {{{{10}^2}\\left[ {{}^{1011}{C_0}\\,.\\,{{(10)}^{1009}} - {}^{1011}{C_1}\\,.\\,(1008) + \\,\\,.....\\,\\,{}^{1011}{C_{1009}}} \\right] + 10110 - 1 - 1} \\over 2}$$</p>\n<p>$$ = {{100k + 10110 - 2} \\over 2}$$</p>\n<p>$$ = {{100k + 10108} \\over 2}$$</p>\n<p>$$ = 50k + 5054$$</p>\n<p>$$ = 50k + 50 \\times 101 + 4$$</p>\n<p>$$ = 50[k + 101] + 4$$</p>\n<p>$$ = 50k' + 4$$</p>\n<p>$$\\therefore$$ By dividing 50 we get remainder as 4.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l5c0s15h",
@@ -346,7 +364,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "easy",
     "solution": "<p>$${3^{2022}}$$</p>\n<p>$$ = {({3^2})^{1011}}$$</p>\n<p>$$ = {(9)^{1011}}$$</p>\n<p>$$ = {(10 - 1)^{1011}}$$</p>\n<p>$$ = {}^{1011}{C_0}{(10)^{1011}} + \\,\\,.....\\,\\, + \\,\\,{}^{1011}{C_{1010}}\\,.\\,{(10)^1} - {}^{1011}{C_{1011}}$$</p>\n<p>$$ = 10\\left[ {{}^{1011}{C_0}{{(10)}^{1010}} + \\,\\,......\\,\\, + \\,\\,{}^{1011}{C_{1010}}} \\right] - 1$$</p>\n<p>$$ = 10\\,K - 1$$</p>\n<p>[As $$10\\left[ {{}^{1011}{C_0}\\,.\\,{{(10)}^{1010}} + \\,\\,......\\,\\, + \\,\\,{}^{1011}{C_{1010}}} \\right]$$ is multiple of 10]</p>\n<p>$$ = 10K + 5 - 5 - 1$$</p>\n<p>$$ = 10K - 5 + 5 - 1$$</p>\n<p>$$ = 5(2K - 1) + 4$$</p>\n<p>$$\\therefore$$ Unit digit = 4 when divided by 5.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6f0uwiw",
@@ -367,7 +386,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p>$${\\mathop{\\rm Re}\\nolimits} \\left( {{{{{(11)}^{1011}} + {{(1011)}^{11}}} \\over 9}} \\right) = {\\mathop{\\rm Re}\\nolimits} \\left( {{{{2^{1011}} + {3^{11}}} \\over 9}} \\right)$$</p>\n<p>For $${\\mathop{\\rm Re}\\nolimits} \\left( {{{{2^{1011}}} \\over 9}} \\right)$$</p>\n<p>$${2^{1011}} = {(9 - 1)^{337}} = {}^{337}{C_0}{9^{337}}{( - 1)^0} + {}^{337}{C_1}{9^{336}}{( - 1)^1} + {}^{337}{C_2}{9^{335}}{( - 1)^2} + \\,\\,.....\\,\\, + \\,\\,{}^{337}{C_{337}}{9^0}{( - 1)^{337}}$$</p>\n<p>So, remainder is 8 </p>\n<p>and $${\\mathop{\\rm Re}\\nolimits} \\left( {{{{3^{11}}} \\over 9}} \\right) = 0$$</p>\n<p>So, remainder is 8</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l5ai3wa2",
@@ -388,7 +408,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p>$${1 \\over {2\\,.\\,{3^{10}}}} + {1 \\over {{2^2}\\,.\\,{3^9}}} + \\,\\,....\\,\\, + \\,\\,{1 \\over {{2^{10}}\\,.\\,3}} = {K \\over {{2^{10}}\\,.\\,{3^{10}}}}$$</p>\n<p>$$ \\Rightarrow {1 \\over {2\\,.\\,{3^{10}}}}\\left[ {{{{{\\left( {{3 \\over 2}} \\right)}^{10}} - 1} \\over {{3 \\over 2} - 1}}} \\right] = {K \\over {{2^{10}}\\,.\\,{3^{10}}}}$$</p>\n<p>$$ = {{{3^{10}} - {2^{10}}} \\over {{2^{10}}\\,.\\,{3^{10}}}} = {K \\over {{2^{10}}\\,.\\,{3^{10}}}} \\Rightarrow K = {3^{10}} - {2^{10}}$$</p>\n<p>Now $$K = {(1 + 2)^{10}} - {2^{10}}$$</p>\n<p>$$ = {}^{10}{C_0} + {}^{10}{C_1}2 + {}^{10}{C_2}{2^3} + \\,\\,....\\,\\, + \\,\\,{}^{10}{C_{10}}{2^{10}} - {2^{10}}$$</p>\n<p>$$ = {}^{10}{C_0} + {}^{10}{C_1}2 + 6\\lambda  + {}^{10}{C_9}\\,.\\,{2^9}$$</p>\n<p>$$ = 1 + 20 + 5120 + 6\\lambda $$</p>\n<p>$$ = 5136 + 6\\lambda  + 5$$</p>\n<p>$$ = 6\\mu  + 5$$</p>\n<p>$$\\lambda ,\\,\\mu  \\in N$$</p>\n<p>$$\\therefore$$ remainder = 5</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l587i0nd",
@@ -409,7 +430,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "(2021)<sup>2023</sup></p>\n<p>= (2016 + 5)<sup>2023</sup> [here 2016 is divisible by 7]</p>\n<p>= <sup>2023</sup>C<sub>0</sub> (2016)<sup>2023</sup> + .......... + <sup>2023</sup>C<sub>2022</sub> (2016) (5)<sup>2022</sup> + <sup>2023</sup>C<sub>2023</sub> (5)<sup>2023</sup></p>\n<p>= 2016 [<sup>2023</sup>C<sub>0</sub> . (2016)<sup>2022</sup> + ....... + <sup>2023</sup>C<sub>2022</sub> . (5)<sup>2022</sup>] + (5)<sup>2023</sup></p>\n<p>= 2016$$\\lambda$$ + (5)<sup>2023</sup></p>\n<p>= 7 $$\\times$$ 288$$\\lambda$$ + (5)<sup>2023</sup></p>\n<p>= 7K + (5)<sup>2023</sup> ...... (1)</p>\n<p>Now, (5)<sup>2023</sup></p>\n<p>= (5)<sup>2022</sup> . 5</p>\n<p>= (5<sup>3</sup>)<sup>674</sup> . 5</p>\n<p>= (125)<sup>674</sup> . 5</p>\n<p>= (126 $$-$$ 1)<sup>674</sup> . 5</p>\n<p>= 5[<sup>674</sup>C<sub>0</sub> (126)<sup>674</sup> + ......... $$-$$ <sup>674</sup>C<sub>673</sub> (126) + <sup>674</sup>C<sub>674</sub>]</p>\n<p>= 5 $$\\times$$ 126 [<sup>674</sup>C<sub>0</sub>(126)<sup>673</sup> + ....... $$-$$ <sup>674</sup>C<sub>673</sub>] + 5</p>\n<p>= 5 . 7 . 18 [<sup>674</sup>C<sub>0</sub>(126)<sup>673</sup> + ....... $$-$$ <sup>674</sup>C<sub>673</sub>] + 5</p>\n<p>= 7$$\\lambda$$ + 5</p>\n<p>Replacing (5)<sup>2023</sup> in equation (1) with 7$$\\lambda$$ + 5, we get,</p>\n<p>(2021)<sup>2023</sup> = 7K + 7$$\\lambda$$ + 5</p>\n<p>= 7(K + $$\\lambda$$) + 5</p>\n<p>$$\\therefore$$ Remainer = 5",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6jb84eh",
@@ -430,7 +452,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "<p>$${(2021)^{2022}} + {(2022)^{2021}}$$</p>\n<p>$$ = {(7k - 2)^{2022}} + {(7{k_1} - 1)^{2021}}$$</p>\n<p>$$ = {\\left[ {{{(7k - 2)}^3}} \\right]^{674}} + {(7{k_1})^{2021}} - 2021{(7{k_1})^{2020}}\\, + \\,....\\, - 1$$</p>\n<p>$$ = {(7{k_2} - 1)^{674}} + (7m - 1)$$</p>\n<p>$$ = (7n + 1) + (7m - 1) = 7(m + n)$$ (multiple of 7)</p>\n<p>$$\\therefore$$ Remainder = 0</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6m5vk3w",
@@ -451,7 +474,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& 7^{2022}+3^{2022} \\\\\\\\\n& =\\left(7^2\\right)^{1011}+\\left(3^2\\right)^{1011} \\\\\\\\\n&=(50-1)^{1011}+(10-1)^{1011} \\\\\\\\\n&= (50^{1011}-1011.50^{1010}+\\ldots-1) \\\\\\\\\n& + (10^{1011}-1011.10^{1010}+\\ldots . .-1) \\\\\\\\\n&= 5 m-1+5 n-1=5(m+n)-2 \\\\\\\\\n&= 5(m+n)-5+3=5(m+n-1)+3 \\\\\\\\\n&= 5 k+3 \\\\\\\\\n& \\therefore \\text { Remainder }=3\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "5UlwtPdmE6ETPIebwf1kmjbieu8",
@@ -467,7 +491,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "2021 = 17m - 2\n<br><br>(2021)<sup>3762</sup> = (17m $$-$$ 2)<sup>3762</sup> = multiple of 17 + 2<sup>3762</sup><br><br>= 17$$\\lambda$$ + 2<sup>2</sup> (2<sup>4</sup>)<sup>940</sup><br><br>= 17$$\\lambda$$ + 4 (17 $$-$$ 1)<sup>940</sup><br><br>= 17$$\\lambda$$ + 4 (17$$\\mu$$ + 1)<br><br>= 17k + 4; (k $$\\in$$ I)<br><br>$$ \\therefore $$ Remainder = 4",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "aFW8brFlz4zwZsvzfZ1klt9oix2",
@@ -476,14 +501,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "Let x = 4k + 3<br><br>(2020 + x)<sup>2022</sup><br><br>= (2020 + 4k + 3)<sup>2022</sup><br><br>= (4(505) + 4k + 3)<sup>2022</sup>\n<br><br>= (4P + 3)<sup>2022</sup><br><br>= (4P + 4 $$-$$ 1)<sup>2022</sup><br><br>= (4A $$-$$ 1)<sup>2022</sup><br><br><sup>2022</sup>C<sub>0</sub>(4A)<sup>0</sup>($$-$$1)<sup>2022</sup> + <sup>2022</sup>C<sub>1</sub>(4A)<sup>1</sup>($$-$$1)<sup>2021</sup> + ......\n<br><br>= 1 + 2022(4A)(-1) + .....\n<br><br>= 1 + 8$$\\lambda$$<br><br>$$ \\therefore $$ Reminder is 1.",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "ofQvn9MZjWjzpi3QoA1klt9p75z",
@@ -492,14 +518,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "$$ \\because $$ $${7^n} = {(10 - 3)^n} = 10k + {( - 3)^n}$$<br><br>$${7^n} + {3^n} = 10k + {( - 3)^n} + {3^n}$$<br><br><picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kqzrz1im/fb2f5714-9c20-4d0c-b22e-0b0e008f7acb/47e098e0-e298-11eb-b56b-d3be10517f29/file-1kqzrz1in-320w.png\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kqzrz1im/fb2f5714-9c20-4d0c-b22e-0b0e008f7acb/47e098e0-e298-11eb-b56b-d3be10517f29/file-1kqzrz1in-500w.png\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1kqzrz1im/fb2f5714-9c20-4d0c-b22e-0b0e008f7acb/47e098e0-e298-11eb-b56b-d3be10517f29/file-1kqzrz1in-680w.png\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1kqzrz1im/fb2f5714-9c20-4d0c-b22e-0b0e008f7acb/47e098e0-e298-11eb-b56b-d3be10517f29/file-1kqzrz1in-860w.png\"><img src=\"https://imagex.cdn.examgoal.net/1kqzrz1im/fb2f5714-9c20-4d0c-b22e-0b0e008f7acb/47e098e0-e298-11eb-b56b-d3be10517f29/file-1kqzrz1in.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Evening Shift Mathematics - Binomial Theorem Question 175 English Explanation\"></picture><br><br>$$ \\therefore $$ 3<sup>n</sup> = 3<sup>2t</sup> = (10 $$-$$ 1)<sup>t</sup><br><br>= 10p + ($$-$$1)<sup>t</sup><br><br>= 10p $$\\pm$$ 1<br><br>$$ \\therefore $$ if n = even then 7<sup>n</sup> + 3<sup>n</sup> will not be multiply of 10<br><br>So if n is odd then only 7<sup>n</sup> + 3<sup>n</sup> will be multiply of 10<br><br>$$ \\therefore $$ n = 11, 13, 15, ..........., 99<br><br>$$ \\therefore $$ Ans : 45",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "1ktgq16qr",
@@ -508,14 +535,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "3(1 + 6)<sup>22</sup> + 2 . (1 + 9)<sup>22</sup> $$-$$ 44 = (3 + 2 $$-$$ 44) = 18 . I<br><br>= $$-$$ 39 + 18 . I<br><br>= (54 $$-$$ 39) + 18(I $$-$$ 3)<br><br>= 15 + 18I<sub>1</sub><br><br>$$\\Rightarrow$$ Remainder = 15",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "y6YAjngUyXiNUzKKBU7k9k2k5e343pn",
@@ -536,7 +564,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "1 + 49 + 49<sup>2</sup>\n + ..... + 49<sup>125</sup>\n<br><br>sum of G.P. = $${{1.\\left( {{{49}^{126}} - 1} \\right)} \\over {49 - 1}}$$\n<br><br>= $${{\\left( {{{49}^{63}} + 1} \\right)\\left( {{{49}^{63}} - 1} \\right)} \\over {48}}$$\n<br><br>Also 49<sup>63</sup> - 1\n<br><br>= (1 + 48)<sup>63</sup> - 1\n<br><br>= [<sup>63</sup>C<sub>0</sub>$$ \\times $$1 + <sup>63</sup>C<sub>1</sub>$$ \\times $$ 48 + <sup>63</sup>C<sub>2</sub>$$ \\times $$ (48)<sup>2</sup> + .... ] - 1\n<br><br>= [1 + 48$$\\lambda $$] - 1 = 48$$\\lambda $$\n<br><br>So $${{\\left( {{{49}^{63}} - 1} \\right)} \\over {48}}$$ = integer\n<br><br>$$ \\therefore $$ 49<sup>63</sup> + 1 is a factor.\n<br><br>So k = 63.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "njUyy7DYscXbuI3Jxazra",
@@ -557,7 +586,8 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "easy",
     "solution": "We have, \n<br><br>$${{{{\\left( {27} \\right)}^{999}}} \\over 7}$$\n<br><br>= $${{{{\\left( {28 - 1} \\right)}^{999}}} \\over 7}$$\n<br><br>= $${{28\\,\\lambda  - 1} \\over 7}$$\n<br><br>= $${{28\\,\\lambda  - 7 + 7 - 1} \\over \\lambda }$$\n<br><br>= $${{7\\left( {4\\lambda  - 1} \\right) + 6} \\over 7}$$\n<br><br>$$\\therefore\\,\\,\\,$$ Remainder = 6",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "PmsYoXcOZSnaCuzH",
@@ -578,6 +608,7 @@
     "topic": "divisibility-concept-and-remainder-concept",
     "difficulty": "medium",
     "solution": "$${8^{2n}} - {\\left( {62} \\right)^{2n + 1}}$$\n<br><br>= $${\\left( {{8^2}} \\right)^n} - {\\left( {62} \\right)^{2n + 1}}$$\n<br><br>= $${\\left( {1 + 63} \\right)^n} - {\\left( {1 - 63} \\right)^{2n + 1}}$$\n<br><br> = $$\\left( {1 + n.63 + {}^n{C_2}{{.63}^2} + ......} \\right)$$\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ $$\\left( {1 + {}^{2n + 1}{C_1}.\\left( { - 63} \\right) + {}^{2n + 1}{C_2}.{{\\left( { - 63} \\right)}^2} + ......} \\right)$$\n<br><br>= 2 + 63$$\\left[ {\\left( {n + {}^n{C_2} + ....} \\right) + \\left( { - {}^{2n + 1}{C_1} + {}^{2n + 1}{C_2}.63 + ......} \\right)} \\right]$$\n<br><br>= 63$$ \\times $$[Some integral value] + 2\n<br><br>63$$ \\times $$[Some integral value] + 2 by dividing with 9 we will get 2 as remainder as  63 is multiple of 9.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

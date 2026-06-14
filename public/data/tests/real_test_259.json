@@ -28,7 +28,11 @@
       "difficulty": "Medium",
       "solution": "<p>First, compute the derivative and find critical points:</p>\n\n<p><p>f ′(x)=d/dx[cos2x + x]=−2 sin2x + 1.  </p></p>\n<p><p>Set f ′(x)=0 ⇒ 1−2 sin2x=0 ⇒ sin2x=½  </p>\n<p>⇒ 2x=π/6 or 5π/6  ⇒ x=π/12 or 5π/12.</p></p>\n\n<p>Next, evaluate f(x)=cos2x + x at these and at the endpoints x=±π/2:</p>\n\n<p><p>At x=π/12:  </p>\n<p>$$f\\bigl(\\tfrac{\\pi}{12}\\bigr)=\\cos\\!\\bigl(\\tfrac{\\pi}{6}\\bigr)+\\tfrac{\\pi}{12}   =\\frac{\\sqrt3}{2}+\\frac{\\pi}{12}\\approx1.128.$$</p></p>\n<p><p>At x=5π/12:  </p>\n<p>$$f\\bigl(\\tfrac{5\\pi}{12}\\bigr)=\\cos\\!\\bigl(\\tfrac{5\\pi}{6}\\bigr)+\\tfrac{5\\pi}{12}   =-\\frac{\\sqrt3}{2}+\\frac{5\\pi}{12}\\approx0.443.$$</p></p>\n<p><p>At x=π/2:  </p>\n<p>$$f\\bigl(\\tfrac{\\pi}{2}\\bigr)=\\cos\\pi+\\tfrac{\\pi}{2}=-1+\\tfrac{\\pi}{2}\\approx0.571.$$</p></p>\n<p><p>At x=−π/2:  </p>\n<p>$$f\\bigl(-\\tfrac{\\pi}{2}\\bigr)=\\cos(-\\pi)-\\tfrac{\\pi}{2}=-1-\\tfrac{\\pi}{2}\\approx-2.571.$$</p></p>\n\n<p>The largest value is  </p>\n<p>$$\\frac{\\sqrt3}{2}+\\frac{\\pi}{12},$$  </p>\n<p>so Option 2 is correct.</p>",
       "section": "Sec 1",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        2
+      ]
     },
     {
       "id": "tlmc33hjrj",
@@ -108,7 +112,7 @@
       ],
       "correctOption": 2,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -130,7 +134,7 @@
       ],
       "correctOption": 1,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -152,7 +156,7 @@
       ],
       "correctOption": 3,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -174,7 +178,7 @@
       ],
       "correctOption": 1,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -292,7 +296,11 @@
       "difficulty": "Medium",
       "solution": "<p>First, rewrite the circle in standard form by completing the square:</p>\n<p>• For x:  </p>\n<p>$$x^2 - 4x + 3 = (x^2 - 4x + 4) + (3 - 4) = (x-2)^2 - 1$$  </p>\n<p>• For y:  </p>\n<p>$$y^2 - 6y + 8 = (y^2 - 6y + 9) + (8 - 9) = (y-3)^2 - 1$$  </p>\n<p>So the given equation  </p>\n<p>$$(x^2 - 4x + 3) + (y^2 - 6y + 8) = 0$$  </p>\n<p>becomes  </p>\n<p>$$(x-2)^2 - 1 \\;+\\;(y-3)^2 - 1 = 0$$  </p>\n<p>or  </p>\n<p>$$(x-2)^2 + (y-3)^2 = 2\\,. $$  </p>\n<p>That’s a circle with center $C=(2,3)$ and radius $r=\\sqrt2$.</p>\n<p>A pair of points $(x_1,y_1)$ and $(x_2,y_2)$ is a diameter if  </p>\n\n<p><p>Their midpoint is $(2,3)$.  </p></p>\n<p><p>The distance between them is $2r = 2\\sqrt2$, so squared distance $=8$.  </p></p>\n\n<p>Check each:</p>\n<p>I. $(1,2)$ &amp; $(3,4)$  </p>\n\n<p><p>Midpoint $\\bigl(\\frac{1+3}2,\\frac{2+4}2\\bigr)=(2,3)$  </p></p>\n<p><p>Squared distance $(3-1)^2+(4-2)^2=4+4=8$  </p></p>\n\n<p>⇒ valid diameter.</p>\n<p>II. $(1,4)$ &amp; $(3,2)$  </p>\n\n<p><p>Midpoint $\\bigl(\\frac{1+3}2,\\frac{4+2}2\\bigr)=(2,3)$  </p></p>\n<p><p>Squared distance $(3-1)^2+(2-4)^2=4+4=8$  </p></p>\n\n<p>⇒ valid diameter.</p>\n<p>III. $(2,4)$ &amp; $(4,2)$  </p>\n\n<p>Midpoint $\\bigl(\\frac{2+4}2,\\frac{4+2}2\\bigr)=(3,3)\\neq(2,3)$  </p>\n\n<p>⇒ not a diameter.</p>\n<p>So only I and II are correct.  </p>\n<p>Answer: Option 1 (I and II only).</p>",
       "section": "Sec 4",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        3
+      ]
     },
     {
       "id": "tlmc33hjp0",

@@ -14,7 +14,8 @@
     "difficulty": "medium",
     "solution": "<p>The formula for the wavelength of light absorbed in a transition for a hydrogen-like species is:</p>\n<p>$$\\frac{1}{\\lambda} = R_H z^2 \\left[ \\frac{1}{n_1^2} - \\frac{1}{n_2^2} \\right]$$</p>\n<p><b>For</b> $ X^{a+} $:</p>\n<p>$$\\frac{1}{\\lambda} = R_H (z_x)^2 \\left( \\frac{1}{1^2} - \\frac{1}{2^2} \\right) \\qquad \\ldots\\ldots\\ldots (1)$$</p>\n<p><b>For</b> $ Y^{b+} $:</p>\n<p>Since wavelength is $9\\lambda$,</p>\n<p>$$\\frac{1}{9\\lambda} = R_H (z_y)^2 \\left( \\frac{1}{2^2} - \\frac{1}{4^2} \\right) \\qquad \\ldots\\ldots\\ldots (2)$$</p>\n<p><b>Dividing Equation (1) by Equation (2):</b></p>\n<p>$$9 = \\frac{z_x^2}{z_y^2} \\times \\frac{\\left( \\frac{3}{4} \\right)}{\\left( \\frac{3}{16} \\right)}$$</p>\n<p>$$9 = \\frac{z_x^2}{z_y^2} \\times 4$$</p>\n<p>$$\\frac{z_x^2}{z_y^2} = \\frac{9}{4}$$</p>\n<p>$$\\frac{z_x}{z_y} = \\frac{3}{2}$$</p>\n<p><b>Choosing the smallest integer values</b> that satisfy the ratio:</p>\n<p>Let $ z_x = 3 $ and $ z_y = 2 $.</p>\n<p>For hydrogen-like ions, $ z = \\text{atomic number} = a + 1 $ (since one electron is left).</p>\n<p>Thus, for $ X^{a+} $: $ a = 3 - 1 = 2 $</p>\n<p>And for $ Y^{b+} $: $ b = 2 - 1 = 1 $</p>\n<p><b>Therefore, the lowest possible value of</b> $ a + b = 2 + 1 = 3 $.</p>",
     "section": "Sec 4",
-    "instruction": "<ul><li>This section contains <b>TWO (02)</b> question stems.</li><li>There are <b>TWO (02)</b> questions corresponding to each question stem.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +2 If ONLY the correct numerical value is entered at the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    "instruction": "<ul><li>This section contains <b>TWO (02)</b> question stems.</li><li>There are <b>TWO (02)</b> questions corresponding to each question stem.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +2 If ONLY the correct numerical value is entered at the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>",
+    "type": "NUMERICAL"
   },
   {
     "id": "ml7r1h0s",
@@ -35,7 +36,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "<p>For hydrogen spectral lines (emission),</p>\n<p>$$E=\\frac{hc}{\\lambda} \\;\\;\\Rightarrow\\;\\; E \\propto \\frac{1}{\\lambda}$$</p>\n<p>Using Rydberg formula (NCERT):</p>\n<p>$$\\frac{1}{\\lambda}=R\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)\\quad (n_2>n_1)$$</p>\n<p>So photon energy is proportional to:</p>\n<p>$$\\Delta=\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)$$</p>\n<p>Now identify each line:</p>\n<ul>\n<li><p><strong>Paschen series</strong>: $n_1=3$  </p></li>\n<li><p><strong>A (first line)</strong>: $n_2=4 \\to 3$</p></li>\n<li><p><strong>C (third line)</strong>: $n_2=6 \\to 3$</p></li>\n<li><p><strong>Balmer series</strong>: $n_1=2$  </p></li>\n<li><p><strong>B (second line)</strong>: $n_2=4 \\to 2$</p></li>\n<li><p><strong>Brackett series</strong>: $n_1=4$  </p></li>\n<li><p><strong>D (fourth line)</strong>: $n_2=8 \\to 4$</p></li>\n</ul>\n<p>Compute $\\Delta$ for each:</p>\n<p><strong>D:</strong> $8 \\to 4$</p>\n<p>$$\\Delta_D=\\frac{1}{4^2}-\\frac{1}{8^2}=\\frac{1}{16}-\\frac{1}{64}=\\frac{3}{64}=0.046875$$</p>\n<p><strong>A:</strong> $4 \\to 3$</p>\n<p>$$\\Delta_A=\\frac{1}{3^2}-\\frac{1}{4^2}=\\frac{1}{9}-\\frac{1}{16}=\\frac{7}{144}\\approx 0.04861$$</p>\n<p><strong>C:</strong> $6 \\to 3$</p>\n<p>$$\\Delta_C=\\frac{1}{3^2}-\\frac{1}{6^2}=\\frac{1}{9}-\\frac{1}{36}=\\frac{1}{12}\\approx 0.08333$$</p>\n<p><strong>B:</strong> $4 \\to 2$</p>\n<p>$$\\Delta_B=\\frac{1}{2^2}-\\frac{1}{4^2}=\\frac{1}{4}-\\frac{1}{16}=\\frac{3}{16}=0.1875$$</p>\n<p>Ascending order of energy (smallest $\\Delta$ to largest $\\Delta$):</p>\n<p>$$D < A < C < B$$</p>\n<p><strong>Correct option: C</strong></p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ml8t8m8a",
@@ -56,7 +58,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "<p>Balmer series means transitions <strong>ending at $n=2$</strong>.</p>\n<p>Photon energy emitted in a transition $n \\to 2$ is</p>\n<p>$$ E = 13.6\\,\\text{eV}\\left(\\frac{1}{2^2}-\\frac{1}{n^2}\\right) $$</p>\n<h3>First (lowest) Balmer line</h3>\n<p>This is the <strong>first line of Balmer series</strong>: $3 \\to 2$</p>\n<p>$$ E_1 = 13.6\\left(\\frac{1}{4}-\\frac{1}{9}\\right) =13.6\\left(\\frac{5}{36}\\right) $$</p>\n<p>Given $E_1 = x$ J.</p>\n<h3>Second Balmer line</h3>\n<p>This is $4 \\to 2$</p>\n<p>$$ E_2 = 13.6\\left(\\frac{1}{4}-\\frac{1}{16}\\right) =13.6\\left(\\frac{3}{16}\\right) $$</p>\n<h3>Ratio</h3>\n<p>$$ \\frac{E_2}{E_1} = \\frac{\\left(\\frac{3}{16}\\right)}{\\left(\\frac{5}{36}\\right)} = \\frac{3}{16}\\cdot\\frac{36}{5} = \\frac{108}{80} = 1.35 $$</p>\n<p>So,</p>\n<p>$$ E_2 = 1.35\\,x $$</p>\n<p><strong>Correct option: B) $1.35x$</strong></p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ml98p3te",
@@ -65,14 +68,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Chemistry",
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "<p>For hydrogen, the energy difference for a spectral line is given by</p>\n<p>$$\\Delta E=13.6 \\times Z^2\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)$$</p>\n<p><b>Step 1: Identify the transitions</b></p>\n<p>In the Lyman series, electrons fall to $n_1=1$. The first line $L_1$ is the transition $2 \\to 1$.</p>\n<p>In the Balmer series, electrons fall to $n_1=2$. The first line $B_1$ is the transition $3 \\to 2$.</p>\n<p><b>Step 2: Find energy of $L_1$</b></p>\n<p>$\\begin{aligned} & \\Delta \\mathrm{E}\\left(\\mathrm{L}_1\\right)=13.6 \\times \\mathrm{Z}^2\\left(\\frac{1}{1^2}-\\frac{1}{2^2}\\right)=13.6 \\mathrm{Z}^2 \\times \\frac{3}{4} \\end{aligned}$</p>\n<p><b>Step 3: Find energy of $B_1$</b></p>\n<p>$\\begin{aligned} & \\Delta \\mathrm{E}\\left(\\mathrm{B}_1\\right)=13.6 \\times \\mathrm{Z}^2 \\times\\left(\\frac{1}{2^2}-\\frac{1}{3^2}\\right)=13.6 \\times \\mathrm{Z}^2 \\times \\frac{5}{4 \\times 9} \\end{aligned}$</p>\n<p><b>Step 4: Take the ratio to get $x$</b></p>\n<p>The factor $13.6Z^2$ cancels in the ratio.</p>\n<p>$\\begin{aligned} & \\frac{\\Delta \\mathrm{E}\\left(\\mathrm{L}_1\\right)}{\\Delta \\mathrm{E}\\left(\\mathrm{B}_1\\right)}=\\frac{3}{5} \\times 9=\\frac{27}{5}=\\mathrm{x} \\end{aligned}$</p>\n<p><b>Step 5: Write in the asked form</b></p>\n<p>$\\begin{aligned} & \\mathrm{x}=\\left(\\frac{27}{5} \\times 10\\right) \\times 10^{-1}=54 \\times 10^{-1} \\end{aligned}$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "ml81k4zp",
@@ -93,7 +97,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "<p>Balmer series corresponds to transitions <strong>ending at</strong> $n_1=2$.</p>\n<p>For hydrogen, the wave number is given by</p>\n<p>$$ \\bar{\\nu}=R\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right), \\quad n_2>n_1 $$</p>\n<p>For Balmer series: $n_1=2$, so</p>\n<p>$$ \\bar{\\nu}=R\\left(\\frac{1}{4}-\\frac{1}{n_2^2}\\right), \\quad n_2=3,4,5,\\dots $$</p>\n<p>Now compute the first few Balmer lines:</p>\n<ol>\n<li>For $n_2=3$:</li>\n</ol>\n<p>$$ \\bar{\\nu}=R\\left(\\frac{1}{4}-\\frac{1}{9}\\right)=R\\left(\\frac{9-4}{36}\\right)=\\frac{5R}{36} $$</p>\n<ol start=\"2\">\n<li>For $n_2=4$:</li>\n</ol>\n<p>$$ \\bar{\\nu}=R\\left(\\frac{1}{4}-\\frac{1}{16}\\right)=R\\left(\\frac{4-1}{16}\\right)=\\frac{3R}{16} $$</p>\n<ol start=\"3\">\n<li>For $n_2=5$:</li>\n</ol>\n<p>$$ \\bar{\\nu}=R\\left(\\frac{1}{4}-\\frac{1}{25}\\right)=R\\left(\\frac{25-4}{100}\\right)=\\frac{21R}{100} $$</p>\n<p>These three values $\\left(\\frac{5R}{36}, \\frac{3R}{16}, \\frac{21R}{100}\\right)$ match <strong>Option A</strong>.</p>\n<p><strong>Correct option: A</strong></p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mnt2t744",
@@ -114,7 +119,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "<p>For hydrogen spectrum, the wave number is given by the Rydberg formula:</p>\n<p>$$ \\bar{\\nu} = R \\left( \\frac{1}{n_1^2} - \\frac{1}{n_2^2} \\right) $$</p>\n<p>where:</p>\n<ul>\n<li><p>$n_1$ = lower energy level</p></li>\n<li><p>$n_2$ = higher energy level</p></li>\n<li><p>$n_2 > n_1$</p></li>\n</ul>\n<p>Now let us find the first line of each series.</p>\n<h3>1. First line of Balmer series</h3>\n<p>For Balmer series:</p>\n<p>$$ n_1 = 2 $$</p>\n<p>The first line means transition from $n_2 = 3$ to $n_1 = 2$.</p>\n<p>So,</p>\n<p>$$ \\bar{\\nu}_B = R\\left(\\frac{1}{2^2} - \\frac{1}{3^2}\\right) = R\\left(\\frac{1}{4} - \\frac{1}{9}\\right) $$</p>\n<p>$$ \\bar{\\nu}_B = R\\left(\\frac{9-4}{36}\\right) = \\frac{5R}{36} $$</p>\n<h3>2. First line of Brackett series</h3>\n<p>For Brackett series:</p>\n<p>$$ n_1 = 4 $$</p>\n<p>The first line means transition from $n_2 = 5$ to $n_1 = 4$.</p>\n<p>So,</p>\n<p>$$ \\bar{\\nu}_{Br} = R\\left(\\frac{1}{4^2} - \\frac{1}{5^2}\\right) = R\\left(\\frac{1}{16} - \\frac{1}{25}\\right) $$</p>\n<p>$$ \\bar{\\nu}_{Br} = R\\left(\\frac{25-16}{400}\\right) = \\frac{9R}{400} $$</p>\n<h3>3. Required ratio</h3>\n<p>$$ \\bar{\\nu}_B : \\bar{\\nu}_{Br} = \\frac{5R}{36} : \\frac{9R}{400} $$</p>\n<p>Cancel $R$:</p>\n<p>$$ = \\frac{5}{36} : \\frac{9}{400} $$</p>\n<p>$$ = \\frac{5}{36} \\times \\frac{400}{9} $$</p>\n<p>So ratio:</p>\n<p>$$ \\bar{\\nu}_B : \\bar{\\nu}_{Br} = \\frac{2000}{324} = \\frac{500}{81} $$</p>\n<p>Now,</p>\n<p>$$ \\frac{500}{81} = \\frac{5 \\times 100}{81} $$</p>\n<p>and</p>\n<p>$$ \\frac{100}{81} \\approx 1.23 $$</p>\n<p>So,</p>\n<p>$$ \\bar{\\nu}_B : \\bar{\\nu}_{Br} = 5 : 0.81 $$</p>\n<p>Therefore, the correct answer is:</p>\n<p>$$ \\boxed{\\text{Option B } \\; 5 : 0.81} $$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "mnswhrk8",
@@ -135,7 +141,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "<p>For any hydrogen-like atom, the wavelength of emitted radiation is given by the Rydberg formula:</p>\n<p>$ \\frac{1}{\\lambda} = R Z^2 \\left( \\frac{1}{n_1^2} - \\frac{1}{n_2^2} \\right) $</p>\n<p>where  </p>\n<ul>\n<li><p>$ R $ is the Rydberg constant,  </p></li>\n<li><p>$ Z $ is the atomic number,  </p></li>\n<li><p>$ n_1 $ and $ n_2 $ are integers with $ n_2 > n_1 $.</p></li>\n</ul>\n\n<h3>For hydrogen atom ($Z = 1$) — Lyman series</h3>\n<p>For the <strong>Lyman series</strong>, $ n_1 = 1 $ and $ n_2 = 2, 3, 4, \\dots $</p>\n<ul>\n<li>The <strong>shortest wavelength</strong> corresponds to <strong>maximum energy difference</strong>, i.e. $ n_2 \\to \\infty $.</li>\n</ul>\n<p>$ \\frac{1}{x} = R (1)^2 \\left( \\frac{1}{1^2} - 0 \\right) = R $</p>\n<p>So,</p>\n<p>$ x = \\frac{1}{R} $</p>\n\n<h3>For helium ion, $\\mathrm{He}^+$ ($Z = 2$) — Balmer series</h3>\n<p>For the <strong>Balmer series</strong>, $ n_1 = 2 $ and $ n_2 = 3, 4, 5, \\dots $</p>\n<ul>\n<li>The <strong>longest wavelength</strong> corresponds to <strong>minimum energy difference</strong>, i.e. smallest $ n_2 $, which is $ n_2 = 3 $.</li>\n</ul>\n<p>$ \\frac{1}{\\lambda} = R (2)^2 \\left( \\frac{1}{2^2} - \\frac{1}{3^2} \\right) $</p>\n<p>Simplify:</p>\n<p>$ \\frac{1}{\\lambda} = 4R \\left( \\frac{1}{4} - \\frac{1}{9} \\right) = 4R \\left( \\frac{9 - 4}{36} \\right) = 4R \\times \\frac{5}{36} = \\frac{5R}{9} $</p>\n<p>Thus,</p>\n<p>$ \\lambda = \\frac{9}{5R} $</p>\n\n<h3>Express in terms of $x$</h3>\n<p>We have $ x = \\frac{1}{R} $.</p>\n<p>So,</p>\n<p>$ \\lambda = \\frac{9}{5R} = \\frac{9x}{5} $</p>\n\n<h3>✅ Final Answer</h3>\n<p>$ \\boxed{\\frac{9x}{5}} $</p>\n<p>That is, <strong>Option A</strong> is correct.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "ml89h79i",
@@ -156,7 +163,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "<p><strong>Statement I:</strong> True.  </p>\n<p>When electric discharge is passed through gaseous hydrogen, $H_2$ molecules dissociate into hydrogen atoms. These atoms get excited and, on returning to lower energy levels, emit radiation of <strong>discrete frequencies</strong>, giving a <strong>line spectrum</strong> (as per NCERT description of atomic spectra).</p>\n\n<p><strong>Statement II:</strong> True.  </p>\n<p>Use the Rydberg formula (NCERT) for hydrogen-like species:</p>\n<p>$$\\tilde{\\nu} = R Z^2\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)$$</p>\n<h3>(a) Second line of Balmer series of $\\mathrm{He}^+$</h3>\n<p>Balmer series means $n_1=2$.  </p>\n<p>Second line means transition $n_2=4 \\to n_1=2$.  </p>\n<p>For $\\mathrm{He}^+$, $Z=2$.</p>\n<p>$$\\tilde{\\nu}_{\\mathrm{He}^+}=R(2)^2\\left(\\frac{1}{2^2}-\\frac{1}{4^2}\\right) =4R\\left(\\frac{1}{4}-\\frac{1}{16}\\right) =4R\\left(\\frac{3}{16}\\right) =\\frac{3R}{4}$$</p>\n<h3>(b) First line of Lyman series of hydrogen atom</h3>\n<p>Lyman series means $n_1=1$.  </p>\n<p>First line means transition $n_2=2 \\to n_1=1$.  </p>\n<p>For hydrogen, $Z=1$.</p>\n<p>$$\\tilde{\\nu}_{H}=R(1)^2\\left(\\frac{1}{1^2}-\\frac{1}{2^2}\\right) =R\\left(1-\\frac{1}{4}\\right) =\\frac{3R}{4}$$</p>\n<p>So, $\\tilde{\\nu}_{\\mathrm{He}^+}=\\tilde{\\nu}_{H}$, hence their <strong>frequencies are equal</strong>.</p>\n\n<h2>Correct option: <strong>A</strong></h2>\n<p><strong>Both Statement I and Statement II are true.</strong></p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6t9yfu7",
@@ -177,7 +185,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7fxfksl/a1b9941c-3202-406b-8ef4-4d38c56cea8f/6b744350-f0f5-11ef-b2b3-ebf21cc94d34/file-jaoe38c1m7fxfksm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7fxfksl/a1b9941c-3202-406b-8ef4-4d38c56cea8f/6b744350-f0f5-11ef-b2b3-ebf21cc94d34/file-jaoe38c1m7fxfksm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 23rd January Evening Shift Chemistry - Structure of Atom Question 39 English Explanation\"></p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "m6srmtpt",
@@ -198,7 +207,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "<p>To determine which spectral line of the hydrogen atom suits the wavelength for heat treatment of muscular pain (900 nm), we begin by applying the Rydberg equation:</p>\n<p>$ \\frac{1}{\\lambda} = \\mathrm{R}_{\\mathrm{H}} \\mathrm{Z}^2 \\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right) $</p>\n<p>Given:</p>\n\n<p><p>$\\lambda = 900 \\text{ nm} = 9 \\times 10^{-5} \\text{ cm}$</p></p>\n<p><p>$\\mathrm{R}_{\\mathrm{H}} = 10^5 \\text{ cm}^{-1}$</p></p>\n<p><p>Hydrogen atom (Z = 1)</p></p>\n\n<p>We proceed by solving the equation:</p>\n<p>$ \\frac{1}{\\lambda \\times \\mathrm{R}_{\\mathrm{H}}} = \\frac{1}{n_1^2} - \\frac{1}{n_2^2} $</p>\n<p>Substituting the known values:</p>\n<p>$ \\frac{1}{9 \\times 10^{-5} \\text{ cm} \\times 10^5 \\text{ cm}^{-1}} = \\frac{1}{n_1^2} - \\frac{1}{n_2^2} $</p>\n<p>This simplifies to:</p>\n<p>$ \\frac{1}{9} = \\frac{1}{n_1^2} - \\frac{1}{n_2^2} $</p>\n<p>This condition is satisfied when $ n_1 = 3 $ and $ n_2 = \\infty $.</p>\n<p>Therefore, the appropriate spectral transition is from $ n_2 = \\infty $ to $ n_1 = 3 $, which corresponds to the Paschen series transition $ \\infty \\rightarrow 3 $.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "jaoe38c1lsfmnzhl",
@@ -219,7 +229,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "<p>A - II, B - IV, C - III, D - I</p>\n<p>Fact based.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1lsg85c7e",
@@ -235,7 +246,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& 5^{\\text {th }} \\text { excited state } \\Rightarrow n_1=6 \\\\\n& 1^{\\text {st }} \\text { excited state } \\Rightarrow n_2=2 \\\\\n& \\Delta n=n_1-n_2=6-2=4\n\\end{aligned}$$</p>\n<p>Maximum number of spectral lines</p>\n<p>$$=\\frac{\\Delta \\mathrm{n}(\\Delta \\mathrm{n}+1)}{2}=\\frac{4(4+1)}{2}=10$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "lv40v90v",
@@ -251,7 +263,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "<p>The wavenumber of a radiation is defined as the number of wavelengths per unit distance and is the reciprocal of the wavelength. Wavenumber is commonly represented in units of $$\\mathrm{cm}^{-1}$$.</p>\n\n<p>First, convert the given wavelength from angstroms ($$\\mathop A\\limits^o $$) to centimeters (cm). We know that:</p>\n\n<p>$$1 \\mathop A\\limits^o = 10^{-8} \\, \\text{cm}$$</p>\n\n<p>Given wavelength is 5800 $$\\mathop A\\limits^o $$:</p>\n\n<p>$$5800 \\mathop A\\limits^o = 5800 \\times 10^{-8} \\, \\text{cm}$$</p>\n\n<p>Now calculate the wavenumber ($$\\tilde{\\nu}$$) which is the reciprocal of the wavelength:</p>\n\n<p>$$\\tilde{\\nu} = \\frac{1}{{5800 \\times 10^{-8} \\, \\text{cm}}}$$</p>\n\n<p>Simplify the expression:</p>\n\n<p>$$\\tilde{\\nu} = \\frac{1}{5800 \\times 10^{-8} \\, \\text{cm}} = \\frac{10^8}{5800} \\, \\mathrm{cm}^{-1}$$</p>\n\n<p>Now, divide the numerator by the denominator to calculate the precise value:</p>\n\n<p>$$\\tilde{\\nu} = \\frac{10^8}{5800} \\approx 1.724 \\times 10^4 \\, \\mathrm{cm}^{-1}$$</p>\n\n<p>Here, it is given that the wavenumber is in the form of $$x \\times 10 \\, \\mathrm{cm}^{-1}$$, so $$x$$ would be the value we calculated divided by 10:</p>\n\n<p>$$x = \\frac{1.724 \\times 10^4}{10} = 1724$$</p>\n\n<p>Thus, the integer answer for the value of $$x$$ is:</p>\n\n<p><strong>1724</strong></p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldyhxf9x",
@@ -267,7 +280,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "$\\frac{1}{720}=R \\times\\left(\\frac{1}{9}-\\frac{1}{16}\\right)$\n<br/><br/>\n$$\n\\begin{aligned}\n& \\Rightarrow R=\\frac{9 \\times 16}{720 \\times 7} \\\\\\\\\n& \\frac{1}{\\lambda^{\\prime}}=\\frac{9 \\times 16}{720 \\times 7} \\times\\left(\\frac{1}{9}-\\frac{1}{25}\\right) \\\\\\\\\n& \\lambda^{\\prime}=492.18 \\mathrm{~nm} \\\\\\\\\n& \\lambda^{\\prime}=492 \\mathrm{~nm} \\text { (nearest integer) }\n\\end{aligned}\n$$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldsrgqai",
@@ -288,7 +302,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "For H: $\\frac{1}{\\lambda}=\\mathrm{R}_{\\mathrm{H}} \\times 1^{2}\\left(\\frac{1}{1^{2}}-\\frac{1}{\\infty^{2}}\\right) \\quad...(1)$\n<br/><br/>\n$$\n\\frac{1}{\\lambda_{\\mathrm{He}^{+}}}=\\mathrm{R}_{\\mathrm{H}} \\times 2^{2} \\times\\left(\\frac{1}{4}-\\frac{1}{9}\\right)\\quad...(2)\n$$\n<br/><br/>\nFrom (1) &amp; (2) $\\frac{\\lambda_{\\mathrm{He}^{+}}}{\\lambda}=\\frac{9}{5}$\n<br/><br/>\n$$\n\\begin{aligned}\n& \\lambda_{\\mathrm{He}^{+}}=\\lambda \\times \\frac{9}{5} \\\\\n& \\lambda_{\\mathrm{He}^{+}}=\\frac{9 \\lambda}{5}\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1ldpoziwp",
@@ -309,7 +324,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "$\\mathrm{He}^{+}$ion :\n<br/><br/>$$\n\\begin{aligned}\n& \\frac{1}{\\lambda(\\mathrm{H})}=\\mathrm{R}(1)^2\\left[\\frac{1}{\\mathrm{n}_1^2}-\\frac{1}{\\mathrm{n}_2^2}\\right] \\\\\\\\\n& \\frac{1}{\\lambda\\left(\\mathrm{He}^{+}\\right)}=\\mathrm{R}(2)^2\\left[\\frac{1}{2^2}-\\frac{1}{4^2}\\right] \\\\\\\\\n& \\text { Given } \\lambda(\\mathrm{H})=\\lambda\\left(\\mathrm{He}^{+}\\right) \\\\\\\\\n& \\mathrm{R}(1)^2\\left[\\frac{1}{\\mathrm{n}_1^2}-\\frac{1}{\\mathrm{n}_2^2}\\right]=\\mathrm{R}(4)\\left[\\frac{1}{2^2}-\\frac{1}{4^2}\\right] \\\\\\\\\n& \\frac{1}{\\mathrm{n}_1^2}-\\frac{1}{\\mathrm{n}_2^2}=\\frac{1}{1^2}-\\frac{1}{2^2}\n\\end{aligned}\n$$\n<br/><br/>On comparing $\\mathrm{n}_1=1 $ and $ \\mathrm{n}_2=2$.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "1l6f7mmva",
@@ -318,14 +334,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Chemistry",
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "Maximum number of emission lines\n<br/><br/>\n$$\n=\\frac{\\left(n_{2}-n_{1}\\right)\\left(n_{2}-n_{1}+1\\right)}{2}\n$$\n<br/><br/>\n$$\n\\begin{aligned}\n&\\mathrm{n}_{2}=5 \\\\\n&\\mathrm{n}_{1}=1 \\\\\n&\\Rightarrow \\frac{(5-1)(5-1+1)}{2}=10\n\\end{aligned}\n$$\n<br/><br/>\nHence maximum number of emission lines observed are $10 .$",
-    "section": "B"
+    "section": "B",
+    "type": "MCQ"
   },
   {
     "id": "fTRDvW7BzAYr0TJ9DNjgy2xukfcegnyw",
@@ -346,7 +363,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "For Shortest wavelength energy should be maximum.\n<br><br>For maximum energy transition must be form n = $$\\infty $$ to n = 1.\n<br><br>$${1 \\over {{\\lambda _1}}} = {R_H}{\\left( 1 \\right)^2}\\left[ {{1 \\over 1} - 0} \\right]$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over {{\\lambda _1}}} = {R_H}$$\n<br><br>For longest wavelength, $$\\Delta $$E = minimum. <br>For Blamer series n = 3 to n = 2 will have $$\\Delta $$E minimum\nfor He<sup>+</sup>,\n Z = 2\n<br><br>So $${1 \\over {{\\lambda _2}}} = {R_H}{\\left( 2 \\right)^2}\\left[ {{1 \\over 4} - {1 \\over 9}} \\right]$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over {{\\lambda _2}}} = {R_H} \\times {5 \\over 9}$$\n<br><br>$$ \\Rightarrow $$ $${\\lambda _2} = {\\lambda _1} \\times {9 \\over 5}$$\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "kJgtQcrQQjJh5krB8Djgy2xukf93lzve",
@@ -367,7 +385,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "In the hydrogen spectrum,\n<br>Balmer series lies in visible region.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "nHiB0rxXmLUhyOHZVe7k9k2k5h626lr",
@@ -388,7 +407,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "For balmer series : n<sub>1</sub> = 2, n<sub>2</sub> = 3, 4, 5, .....$$\\infty $$\n<br><br>For longest wavelength n<sub>2</sub> = 3\n<br><br>$${1 \\over \\lambda } = R\\left( {{1 \\over {{2^2}}} - {1 \\over {{3^2}}}} \\right)$$\n<br><br>As wavelength decreases the lines in the\nBalmer series converge. The correct\nstatements are (I), (II) and (III).",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "NmFzi45N1bd5Rwlmme3rsa0w2w9jx0wvawz",
@@ -409,7 +429,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "Shortest wavelength can found when n<sub>2</sub> = $$\\infty $$\n<br><br>$${\\lambda _{shortest}} = R{Z^2}\\left\\{ {{1 \\over {n_1^2}} - {1 \\over {{\\infty ^2}}}} \\right\\}$$\n<br><br>Here n<sub>1</sub> = series number.\n<br><br>$$ \\Rightarrow $$$${\\lambda _{shortest}} =$$ $${{{R{Z^2}} \\over {n_1^2}}}$$ = $${{{R{{\\left( 1 \\right)}^2}} \\over {n_1^2}}}$$\n<br><br>$$ \\therefore $$ $${{{\\lambda _A}} \\over {{\\lambda _B}}} = {\\left( {{{{n_B}} \\over {{n_A}}}} \\right)^2}$$\n<br><br>Given, $${\\left( {{{{n_B}} \\over {{n_A}}}} \\right)^2} = 9$$\n<br><br>$$ \\Rightarrow $$ $${{{n_B}} \\over {{n_A}}} = 3$$\n<br><br>$$ \\therefore $$ Series number of B = 3 $$ \\times $$ Series number of A\n<br><br>So,\n<br><br>If series number of A is Lyman( n = 1 )\n<br><br>then series number of B is Paschen( n = 3 ).",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "9se8wYIKEPrvyjqeqlSv2",
@@ -430,7 +451,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "(E)<sub>n<sup>th</sup></sub>  = (E<sub>GND</sub>)<sub>H</sub> . $${{{Z^2}} \\over {{n^2}}}$$\n<br><br>E<sub>3<sup>rd</sup></sub> (He<sup>+</sup>) = ($$-$$13.6eV) . $${{{2^2}} \\over {{3^2}}}$$ = $$-$$ 6.04 eV",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "QvCzsZ8ob1PHF1Ojjy15Q",
@@ -451,7 +473,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "Given, R<sub>H</sub> = 1 $$ \\times $$ 10<sup>5</sup> cm<sup>–1</sup>\n<br><br>$$ \\Rightarrow $$ $${1 \\over {{R_H}}}$$ = 10<sup>-5</sup> cm\n<br><br>$$ \\Rightarrow $$ $${1 \\over {{R_H}}}$$ = 10<sup>-7</sup> cm $$ \\times $$ 100\n<br><br>$$ \\Rightarrow $$ $${1 \\over {{R_H}}}$$ = 100 nm\n<br><br>We know,\n<br><br>$${1 \\over \\lambda } = \\nu  = {R_H} \\times {Z^2}\\left( {{1 \\over {n_L^2}} - {1 \\over {n_H^2}}} \\right)$$\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = $${1 \\over {{R_H} \\times {{\\left( 1 \\right)}^2}}} \\times {1 \\over {\\left( {{1 \\over {n_L^2}} - {1 \\over {n_H^2}}} \\right)}}$$\n<br><br>[For H atom Z = 1]\n<br><br>$$ \\Rightarrow $$ $$\\lambda  = {1 \\over {{R_H}}} \\times {1 \\over {\\left( {{1 \\over {n_L^2}} - {1 \\over {n_H^2}}} \\right)}}$$\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = $${{100} \\over {\\left( {{1 \\over {n_L^2}} - {1 \\over {n_H^2}}} \\right)}}$$\n<br><br>Given, $$\\lambda $$ = 900 nm\n<br><br>$$ \\therefore $$ $${{100} \\over {\\left( {{1 \\over {n_L^2}} - {1 \\over {n_H^2}}} \\right)}}$$ = 900\n<br><br>$$ \\Rightarrow $$ $${\\left( {{1 \\over {n_L^2}} - {1 \\over {n_H^2}}} \\right) = {1 \\over 9}}$$\n<br><br>By checking each options you can see\n<br><br>when n<sub>L</sub> = 3 and n<sub>H</sub> = $$\\infty $$ then \n<br><br>$${\\left( {{1 \\over {n_L^2}} - {1 \\over {n_H^2}}} \\right) = {1 \\over 9}}$$\n<br><br>$$ \\therefore $$ Option C is correct.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "Gv2q1O0hzNqS4xOrX48Dz",
@@ -472,7 +495,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "We know,\n<br><br>$$\\overline v  = R{Z^2}\\left( {{1 \\over {n_1^2}} - {1 \\over {n_2^2}}} \\right)$$\n<br><br>$$ \\therefore $$ For Lyman series,\n<br><br>$${\\Delta {{\\overline v }_{Lyman}}}$$ = $${\\Delta {{\\overline v }_{\\max }} - \\Delta {{\\overline v }_{\\min }}}$$\n<br><br>= $$\\left[ {{1 \\over 1} - {1 \\over \\infty }} \\right] - \\left[ {{1 \\over 1} - {1 \\over 4}} \\right]$$\n<br><br>= $${{1 \\over 4}}$$\n<br><br>$$ \\therefore $$ For Balmer series,\n<br><br>$${\\Delta {{\\overline v }_{Balmer}}}$$ = $${\\Delta {{\\overline v }_{\\max }} - \\Delta {{\\overline v }_{\\min }}}$$\n<br><br>= $$\\left[ {{1 \\over 4} - {1 \\over \\infty }} \\right] - \\left[ {{1 \\over 4} - {1 \\over 9}} \\right]$$\n<br><br>= $${{1 \\over 9}}$$\n<br><br>$$ \\therefore $$ $${{\\Delta {{\\overline v }_{Lyman}}} \\over {\\Delta {{\\overline v }_{Balmer}}}}$$ = $${{{1 \\over 4}} \\over {{1 \\over 9}}}$$ = $${{9 \\over 4}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "U946F4N0kaJUMwhd46fSu",
@@ -493,7 +517,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "We know, \n<br><br>$$\\overline v  = {1 \\over \\lambda } = {R_H}{Z^2}\\left[ {{1 \\over {n_f^2}} - {1 \\over {n_i^2}}} \\right]$$\n<br><br>here n<sub>i</sub> $$=$$ 8 and n<sub>f</sub> $$=$$ n\n<br><br>Z $$=$$ 1 for hydrogen\n<br><br>$$ \\therefore $$&#160;&#160;&#160;$$\\overline v  = {1 \\over \\lambda } = {R_H}\\left[ {{1 \\over {{n^2}}} - {1 \\over {{8^2}}}} \\right]$$\n<br><br>So, graph is $$ \\to $$\n<br><br><img src=\"https://imagex.cdn.examgoal.net/BWHl2kwEEpJ9BgAxY/ydWqn7kXQqto23yAwvAtcyq6vuagy/4yV42XfS5YDHUas3AHsxja/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th January Morning Slot Chemistry - Structure of Atom Question 182 English Explanation\">\n<br><br>So, graph will be linear with slope R<sub>H</sub>. ",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "YOSc4PhWSUSbPu2OX8wQV",
@@ -514,7 +539,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "<b><u>Note</u> :</b>\n<br><br>(1)&nbsp;&nbsp;&nbsp;In Lyman Series,  transition happens in n = 1 state \n<br>from n = 2, 3, . . . . . $$ \\propto $$\n<br><br>(2)&nbsp;&nbsp;&nbsp;In Balmer Series,  transition happens in n = 2 state \n<br>from n = 3, 4, . . . . . $$ \\propto $$\n<br><br>(3)&nbsp;&nbsp;&nbsp;In Paschen Series,  transition happens in n = 3 state\n<br>from  n = 4, 5, . . . . . $$ \\propto $$\n<br><br>(4)&nbsp;&nbsp;&nbsp;In Bracktt Series, transition happens in n = 4 state\n<br>from n = 5, 6 . . . . . . $$ \\propto $$\n<br><br>(5)&nbsp;&nbsp;&nbsp;In Pfund Series, transition happens in n = 5 state\n<br>from n = 6, 7, . . . . $$ \\propto $$\n\n\n<br><br>We know, \n<br><br>&nbsp;&nbsp;&nbsp;&nbsp; $${1 \\over \\lambda }$$ = Rz<sup>2</sup> ($${1 \\over {n_1^2}}$$ $$-$$ $${1 \\over {n_2^2}}$$)\n<br><br>The shortest wavelength of hydrogen atom in Lyman series is from n<sub>1</sub> = 1 to n<sub>2</sub> = $$ \\propto $$ \n<br><br>$$\\therefore\\,\\,\\,$$  $${1 \\over A}$$ = 1<sup>2</sup> R ($${1 \\over {{1^2}}}$$ $$-$$ $${1 \\over {{ \\propto ^2}}}$$) &nbsp;&nbsp; [for hydrogen, z = 1]\n<br><br>$$ \\Rightarrow $$ $$\\,\\,\\,$$ $${1 \\over A}$$ = R\n<br><br>The longest wavelength in pascal series of He<sup>+</sup> is from n<sub>1</sub> = 3 to n<sub>2</sub> = 4\n<br><br>For He<sup>+</sup>,  z = 2.\n<br><br>$${1 \\over \\lambda }$$ = RZ<sup>2</sup> ($${1 \\over {n_1^2}}$$ $$-$$ $${1 \\over {n_2^2}}$$)\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ $${1 \\over \\lambda }$$ = $${1 \\over A}$$ (2)<sup>2</sup> ($${1 \\over {{3^2}}}$$ $$-$$ $${1 \\over {{4^2}}}$$) \n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ $${1 \\over \\lambda }$$ = $${4 \\over A}$$ $$\\left( {{7 \\over {16 \\times 9}}} \\right)$$ = $${7 \\over {36A}}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ $$\\lambda $$ = $${{36A} \\over 7}$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "3kSEPthQdGxIdpC6YFNq7",
@@ -535,7 +561,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "medium",
     "solution": "Here electron is coming to the orbital of radius 211.6 pm. Now we have to find which series have radius of orbital 211.6 pm.\n<br><br>We know,\n<br><br>Radius, r = $$0.529 \\times {{{n^2}} \\over Z}\\,\\mathop A\\limits^ \\circ  $$\n<br><br>Given, r = 211.6 pm = 211.6 $$ \\times $$ 10<sup>-12</sup> m\n<br><br>and Z = 1 for hydrogen atom\n<br><br>$$ \\therefore $$ 211.6 $$ \\times $$ 10<sup>-12</sup> = $$0.529 \\times {{{n^2}} \\over 1}$$ $$ \\times $$ 10<sup>-10</sup>\n<br><br>$$ \\Rightarrow $$ n = 2\n<br><br>As n = 2 so the series is Balmer Series.",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "EJfaZP3w13VOJxuS",
@@ -556,7 +583,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "Given $$E$$ =  $$- 2.178 \\times {10^{ - 18}}J\\left( {{{{Z^2}} \\over {{n^2}}}} \\right)$$\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = $$ - 2.178 \\times {10^{ - 8}}{Z^2}\\left( {{1 \\over {n_2^2}} - {1 \\over {n_1^2}}} \\right)$$\n<br>Electron in an hydrogen atom exited from level n = 1 to n = 2. So n<sub>2</sub> = 2 and n<sub>1</sub> = 1.\n<br> And for H, Z = 1\n<br> $$\\therefore$$ $$E =  - 2.178 \\times {10^{ - 8}}\\left( {{1 \\over {{{\\left( 2 \\right)}^2}}} - {1 \\over {{{\\left( 1 \\right)}^2}}}} \\right)$$\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 1.6335 $$ \\times $$ 10<sup>-18</sup> J\n<br><br>We know $$E$$ = $${{hc} \\over \\lambda }$$\n<br>$$\\therefore$$ $${{hc} \\over \\lambda }$$ = 1.6335 $$ \\times $$ 10<sup>-18</sup>\n<br> then $$\\lambda  = {{6.62 \\times {{10}^{ - 34}} \\times 3 \\times {{10}^8}} \\over {1.6335 \\times {{10}^{ - 18}}}}$$\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  $$ = 1.214 \\times {10^{ - 7}}m$$",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "sZWnnkK82yYmQY9U",
@@ -577,7 +605,8 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "<b>Note :</b>\n<br><br>1 eV/atom = 96.485 $$ \\times $$ 10<sup>3</sup> J/mol\n<br><br>$$\\therefore$$ 13.6 eV/atom = 13.6$$ \\times $$ 96.485 $$ \\times $$ 10<sup>3</sup> J/mol = 1.312 × 10<sup>6</sup> J mol<sup>−1</sup>\n<br><br>Energy required to excite the electron from n<sub>1</sub> to n<sub>2</sub> is\n<br><br>$$\\Delta E = 13.6 \\times {Z^2}\\left( {{1 \\over {n_1^2}} - {1 \\over {n_2^2}}} \\right)$$\n<br><br>= 1.312 × 10<sup>6</sup> × 1$$\\left( {{1 \\over {{1^2}}} - {1 \\over {{2^2}}}} \\right)$$\n<br><br>= 1.312 × $${3 \\over 4}$$ × 10<sup>6</sup>\n<br><br>= 9.84 × 10<sup>5</sup> J mol<sup>−1</sup>",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   },
   {
     "id": "k09CJFg6NGiaTv7E",
@@ -598,6 +627,7 @@
     "topic": "hydrogen-spectrum",
     "difficulty": "easy",
     "solution": "We know Rydberg formula,\n<br><br>$${1 \\over \\lambda } = R \\times {Z^2}\\left( {{1 \\over {n_1^2}} - {1 \\over {n_2^2}}} \\right)$$\n<br><br>[ for hydrogen atom Z = 1 ]\n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= $$1.097 \\times {10^7}\\left( {{1 \\over {{1^2}}} - {1 \\over {{\\infty ^2}}}} \\right)$$\n<br><br>$$ \\therefore $$ $$\\lambda $$ = $${1 \\over {1.097 \\times {{10}^7}}}$$ \n<br><br>= 9.11 $$ \\times $$10<sup>-8</sup> m\n<br><br>= 91.1 $$ \\times $$10<sup>-9</sup> m\n<br><br>= 91.1 nm\n<br><br>[ as 1 nm = 10<sup>-9</sup> m ]\n",
-    "section": "A"
+    "section": "A",
+    "type": "MCQ"
   }
 ]

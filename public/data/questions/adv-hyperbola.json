@@ -492,7 +492,7 @@
     "title": "JEE Advanced 2017 Paper 1 Offline",
     "year": 2017,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "If $$2x - y + 1 = 0$$ is a tangent to the hyperbola $${{{x^2}} \\over {{a^2}}} - {{{y^2}} \\over {16}} = 1$$ then which of the following CANNOT be sides of a right angled triangle?",
     "options": [
       "a, 4, 1",
@@ -500,7 +500,12 @@
       "a, 4, 2",
       "2a, 8, 1"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p>Line y = mx + C is tangent to hyperbola $${{{x^2}} \\over {{a^2}}} - {{{y^2}} \\over {{b^2}}} = 1$$ if following condition is satisfied:</p>\n<p>$${C^2} = {a^2}{m^2} - {b^2}$$ ..... (1)</p>\n<p>Given : The equation of line = $$2x - y + 1 = 0$$</p>\n<p>Hyperbola = $${{{x^2}} \\over {{a^2}}} - {{{y^2}} \\over {{{16}^2}}} = 1$$</p>\n<p>Consider equation $$2x - y + 1 = 0$$</p>\n<p>$$ \\Rightarrow y = 2x + 1 \\Rightarrow m = 2$$ and C = 1</p>\n<p>From equation of hyperbola, we get b<sup>2</sup> = 16 and a<sup>2</sup></p>\n<p>Substituting all values in Eq. (1), we get</p>\n<p>$${1^2} = {a^2}{(2)^2} - 16$$</p>\n<p>$$1 = 4{a^2} - 16 \\Rightarrow 4{a^2} = 16 + 1 \\Rightarrow 4{a^2} = 17$$</p>\n<p>$$ \\Rightarrow {a^2} = {{17} \\over 4} \\Rightarrow a = \\sqrt {{{17} \\over 4}}  = {{\\sqrt {17} } \\over 2}$$</p>\n<p>Therefore, $$a = {{\\sqrt {17} } \\over 2}$$</p>\n<p>Option (A) : a, 4, 1 $$ \\Rightarrow {{\\sqrt {17} } \\over 2}$$, 4, 1 is not a right triangle (Since $$\\sqrt {{4^2} + {1^1}}  \\ne {{\\sqrt {17} } \\over 2}$$)</p>\n<p>Option (B) : 2a, 4, 1 $$\\sqrt {17} $$, 4, 1 is a right angled triangle (since $$\\sqrt {{4^2} + {1^2}}  = \\sqrt {16 + 1}  = \\sqrt {17} $$)</p>\n<p>Option (C) : a, 4, 2 $$ \\Rightarrow {{\\sqrt {17} } \\over 2}$$, 4, 2 is not a right angled triangle (Since $$\\sqrt {{4^2} + {2^2}}  \\ne {{\\sqrt {17} } \\over 2}$$)</p>\n<p>Option (D) : 2a, 8, 1 $$\\sqrt {17} $$, 8, 1 is not a right angled triangle (Since $$\\sqrt {{8^2} + {1^2}}  \\ne \\sqrt {17} $$)</p>",
     "marks": 4,
