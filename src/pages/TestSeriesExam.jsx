@@ -186,7 +186,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
     (question.correctOptionsArray && question.correctOptionsArray.length > 0) || 
     question.isMultiCorrect || 
     (question.question?.en?.correct_options && question.question.en.correct_options.length > 1) ||
-    (question.correctAnswer && (String(question.correctAnswer).includes(',') || String(question.correctAnswer).toLowerCase().includes('and') || String(currentQuestion.correctAnswer).includes('&'))) ||
+    (question.correctAnswer && (String(question.correctAnswer).includes(',') || String(question.correctAnswer).toLowerCase().includes('and') || String(question.correctAnswer).includes('&'))) ||
     Array.isArray(question.correctOptionIndex) ||
     (question.question?.en?.content && (
        question.question.en.content.toLowerCase().includes('one or more') ||
