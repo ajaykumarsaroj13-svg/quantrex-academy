@@ -169,6 +169,35 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
     // In test mode, do nothing extra
   };
 
+  const isAnsSelected = (selected) => {
+    if (selected === undefined || selected === '') return false;
+    if (Array.isArray(selected)) return selected.length > 0;
+    return true;
+  };
+
+  const isMultiCorrect = question && question.questionType !== 'NUMERICAL' && (
+    question.questionType === 'MULTI_CORRECT' || 
+    question.questionType === 'multi_correct' || 
+    question.questionType === 'multiple_correct' || 
+    question.questionType === 'MCQM' || 
+    question.questionType === 'mcqm' || 
+    question.questionType === 'MCQ (Multiple Correct)' || 
+    question.questionType === 'Multiple Correct' || 
+    (question.correctOptionsArray && question.correctOptionsArray.length > 0) || 
+    question.isMultiCorrect || 
+    (question.question?.en?.correct_options && question.question.en.correct_options.length > 1) ||
+    (question.correctAnswer && (String(question.correctAnswer).includes(',') || String(question.correctAnswer).toLowerCase().includes('and') || String(currentQuestion.correctAnswer).includes('&'))) ||
+    Array.isArray(question.correctOptionIndex) ||
+    (question.question?.en?.content && (
+       question.question.en.content.toLowerCase().includes('one or more') ||
+       question.question.en.content.toLowerCase().includes('multiple correct')
+    )) ||
+    (typeof question.question === 'string' && (
+       question.question.toLowerCase().includes('one or more') ||
+       question.question.toLowerCase().includes('multiple correct')
+    ))
+  );
+
   const checkAnswer = () => {
     setAnswerChecked(true);
     setShowSolution(true);
