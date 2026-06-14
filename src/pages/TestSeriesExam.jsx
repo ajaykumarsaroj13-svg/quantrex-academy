@@ -124,6 +124,16 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
     return testData.questions.filter(q => q.subject === subjectName && q.section === section);
   }, [testData]);
 
+  const getSectionTypeLabel = useCallback((subjectName, section) => {
+    const qs = getSectionQs(subjectName, section);
+    if (qs.length === 0) return '';
+    const t = qs[0].questionType;
+    if (t === 'MCQM') return ' (Multiple Correct)';
+    if (t === 'NUMERICAL') return ' (Numerical)';
+    if (t === 'SUBJECTIVE') return ' (Subjective)';
+    return ' (Single Correct)';
+  }, [getSectionQs]);
+
   const getSubjectQs = useCallback((subjectName) => {
     if (!testData?.questions) return [];
     return testData.questions.filter(q => q.subject === subjectName);
@@ -158,45 +168,33 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
 
   const isLowTime = timeLeft < 300 && mode !== 'practice';
 
+  const isMultiCorrect = question?.questionType === 'MCQM';
+
   const selectOption = (idx) => {
-    setAnswers(prev => ({ ...prev, [qKey]: idx }));
-    setStatusMap(prev => ({
-      ...prev,
-      [qKey]: (prev[qKey] === STATUS.MARKED || prev[qKey] === STATUS.ANSWERED_MARKED)
-        ? STATUS.ANSWERED_MARKED : STATUS.ANSWERED
-    }));
-    // In practice mode, don't auto-show solution; wait for "Check Answer" button
-    // In test mode, do nothing extra
+    if (isMultiCorrect) {
+      setAnswers(prev => {
+        const currentAns = Array.isArray(prev[qKey]) ? prev[qKey] : [];
+        const newAns = currentAns.includes(idx) ? currentAns.filter(i => i !== idx) : [...currentAns, idx].sort((a, b) => a - b);
+        return { ...prev, [qKey]: newAns.length > 0 ? newAns : undefined };
+      });
+      setStatusMap(prev => ({
+        ...prev,
+        [qKey]: (prev[qKey] === STATUS.MARKED || prev[qKey] === STATUS.ANSWERED_MARKED) ? STATUS.ANSWERED_MARKED : STATUS.ANSWERED
+      }));
+    } else {
+      setAnswers(prev => ({ ...prev, [qKey]: idx }));
+      setStatusMap(prev => ({
+        ...prev,
+        [qKey]: (prev[qKey] === STATUS.MARKED || prev[qKey] === STATUS.ANSWERED_MARKED) ? STATUS.ANSWERED_MARKED : STATUS.ANSWERED
+      }));
+    }
   };
 
   const isAnsSelected = (selected) => {
-    if (selected === undefined || selected === '') return false;
+    if (selected === undefined || selected === null || selected === '') return false;
     if (Array.isArray(selected)) return selected.length > 0;
     return true;
   };
-
-  const isMultiCorrect = question && question.questionType !== 'NUMERICAL' && (
-    question.questionType === 'MULTI_CORRECT' || 
-    question.questionType === 'multi_correct' || 
-    question.questionType === 'multiple_correct' || 
-    question.questionType === 'MCQM' || 
-    question.questionType === 'mcqm' || 
-    question.questionType === 'MCQ (Multiple Correct)' || 
-    question.questionType === 'Multiple Correct' || 
-    (question.correctOptionsArray && question.correctOptionsArray.length > 0) || 
-    question.isMultiCorrect || 
-    (question.question?.en?.correct_options && question.question.en.correct_options.length > 1) ||
-    (question.correctAnswer && (String(question.correctAnswer).includes(',') || String(question.correctAnswer).toLowerCase().includes('and') || String(question.correctAnswer).includes('&'))) ||
-    Array.isArray(question.correctOptionIndex) ||
-    (question.question?.en?.content && (
-       question.question.en.content.toLowerCase().includes('one or more') ||
-       question.question.en.content.toLowerCase().includes('multiple correct')
-    )) ||
-    (typeof question.question === 'string' && (
-       question.question.toLowerCase().includes('one or more') ||
-       question.question.toLowerCase().includes('multiple correct')
-    ))
-  );
 
   const checkAnswer = () => {
     setAnswerChecked(true);
@@ -303,13 +301,41 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
     let score = 0, correct = 0, wrong = 0, attempted = 0;
     testData?.questions?.forEach(q => {
       const ua = answers[q.questionNumber];
-      if (ua === undefined || ua === null || ua === '') return;
+      if (ua === undefined || ua === null || ua === '' || (Array.isArray(ua) && ua.length === 0)) return;
       attempted++;
-      const isCorrect = q.questionType === 'NUMERICAL'
-        ? String(ua).trim() === String(q.correctAnswer || '').trim()
-        : Number(ua) === Number(q.correctOption);
-      if (isCorrect) { score += (q.marks || 4); correct++; }
-      else if (q.questionType === 'MCQ') { score += (q.negativeMarks ?? -1); wrong++; }
+      
+      if (q.questionType === 'NUMERICAL') {
+        if (String(ua).trim() === String(q.correctAnswer || '').trim()) {
+          score += (q.marks || 4); correct++;
+        } else {
+          score += (q.negativeMarks ?? 0); wrong++;
+        }
+      } else if (q.questionType === 'MCQM') {
+        const correctArr = Array.isArray(q.correctOptionsArray) ? q.correctOptionsArray : [Number(q.correctOption)];
+        const userArr = Array.isArray(ua) ? ua : [Number(ua)];
+        
+        const isFullCorrect = correctArr.length === userArr.length && correctArr.every(val => userArr.includes(val));
+        const hasIncorrectSelection = userArr.some(val => !correctArr.includes(val));
+        
+        if (isFullCorrect) {
+          score += (q.marks || 4); correct++;
+        } else if (hasIncorrectSelection) {
+          score += (q.negativeMarks ?? -1); wrong++;
+        } else {
+          // Partial Marking logic
+          if (correctArr.length === 4 && userArr.length === 3) score += 3;
+          else if (correctArr.length >= 3 && userArr.length === 2) score += 2;
+          else if (correctArr.length >= 2 && userArr.length === 1) score += 1;
+          else score += userArr.length;
+          correct++;
+        }
+      } else {
+        if (Number(ua) === Number(q.correctOption)) {
+          score += (q.marks || 4); correct++;
+        } else {
+          score += (q.negativeMarks ?? -1); wrong++;
+        }
+      }
     });
     setShowSubmitModal(false);
     if (onSubmit) onSubmit({ score, correct, wrong, attempted, timeTaken, autoSubmitted: auto, answers, questions: testData?.questions });
@@ -465,6 +491,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
               onClick={() => { setCurrentSection(sec); setCurrentQIdx(0); }}
             >
               {sec.startsWith('Sec') ? sec : `Section ${sec}`}
+              <span style={{fontSize:'0.8em', opacity: 0.9, marginLeft: '4px'}}>{getSectionTypeLabel(currentSubject, sec)}</span>
             </button>
           ))}
           <span className="nta-section-info">
@@ -500,9 +527,18 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           <div className="nta-question-header">
             <div className="nta-q-meta">
               <span className="nta-q-number-badge">Q.{currentQIdx + 1}</span>
-              <span className={`nta-q-type-badge ${question?.questionType === 'NUMERICAL' ? 'numerical' : 'mcq'}`}>
-                {question?.questionType === 'NUMERICAL' ? '🔢 Integer Type' : '🔵 Single Correct'}
-              </span>
+              {(() => {
+                const t = question?.questionType || question?.type || 'SCQ';
+                const isMCQM = t === 'MCQM';
+                const isNum = t === 'NUMERICAL';
+                const isSubj = t === 'SUBJECTIVE';
+                let label = isMCQM ? 'Multiple Correct' : (isSubj ? 'Subjective' : (isNum ? 'Numerical Answer Type' : 'Single Correct'));
+                return (
+                  <span className={`nta-q-type-badge ${isNum ? 'numerical' : 'mcq'}`}>
+                    {label}
+                  </span>
+                );
+              })()}
               {question?.topic && <span className="nta-topic-tag">{question.topic}</span>}
             </div>
             <div className="nta-marks-info">
@@ -555,16 +591,32 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           ) : (
             <div className="nta-options">
               {(question?.options || []).map((opt, idx) => {
-                const isSelected = answers[qKey] === idx;
-                const isCorrect  = mode === 'practice' && answerChecked && question?.correctOption === idx;
-                const isWrong    = mode === 'practice' && answerChecked && isSelected && !isCorrect;
+                const isSelected = isMultiCorrect 
+                  ? (Array.isArray(answers[qKey]) && answers[qKey].includes(idx))
+                  : answers[qKey] === idx;
+                  
+                let isCorrect = false;
+                let isWrong = false;
+                if (mode === 'practice' && answerChecked) {
+                  if (isMultiCorrect) {
+                    const correctArr = Array.isArray(question.correctOptionsArray) ? question.correctOptionsArray : [Number(question.correctOption)];
+                    isCorrect = correctArr.includes(idx);
+                    isWrong = isSelected && !isCorrect;
+                  } else {
+                    isCorrect = question?.correctOption === idx;
+                    isWrong = isSelected && !isCorrect;
+                  }
+                }
+
                 return (
                   <div
                     key={idx}
                     className={`nta-option ${isSelected ? 'selected' : ''} ${isCorrect ? 'correct' : ''} ${isWrong ? 'wrong' : ''}`}
                     onClick={() => { if (!answerChecked || mode !== 'practice') selectOption(idx); }}
                   >
-                    <span className="nta-option-label">{String.fromCharCode(65 + idx)}</span>
+                    <span className="nta-option-label" style={{ borderRadius: isMultiCorrect ? '4px' : '50%' }}>
+                      {String.fromCharCode(65 + idx)}
+                    </span>
                     <div className="nta-option-text tex2jax_process">
                       {isCorrect && <style>{`#opt-${idx} * { color: #064e3b !important; fill: #064e3b !important; font-weight: bold !important; }`}</style>}
                       {isWrong && <style>{`#opt-${idx} * { color: #7f1d1d !important; fill: #7f1d1d !important; font-weight: bold !important; }`}</style>}
