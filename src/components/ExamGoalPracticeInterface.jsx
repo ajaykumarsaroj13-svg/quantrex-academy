@@ -425,9 +425,18 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                     <span className="text-[#28a745] text-[13px] font-medium">
                       {currentQuestion.shift || currentQuestion.title || currentQuestion.year}
                     </span>
-                    <span className="px-2 py-0.5 bg-[#e3f2fd] text-[#1976d2] text-[11px] font-bold rounded border border-[#bbdefb]">
-                      {currentQuestion.type || 'MCQ Single Answer'}
-                    </span>
+                    {(() => {
+                      const t = currentQuestion.type || currentQuestion.questionType || 'SCQ';
+                      const isMCQM = t === 'MULTI_CORRECT' || t === 'MCQM' || t === 'multi_correct' || t === 'multiple_correct' || t === 'mcqm' || (Array.isArray(currentQuestion.correctOptionIndex) && currentQuestion.correctOptionIndex.length > 1);
+                      const isSubj = t === 'SUBJECTIVE' || t === 'subjective';
+                      const isNum = t === 'NUMERICAL' || t === 'numerical' || currentQuestion.answerType === 'numerical';
+                      let label = isMCQM ? 'MCQM' : (isSubj ? 'SUBJECTIVE' : (isNum ? 'NUMERICAL' : 'SCQ'));
+                      return (
+                        <span className={`px-2 py-0.5 text-[11px] font-bold rounded border ${isMCQM ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' : (isNum ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' : (isSubj ? 'bg-purple-500/10 text-purple-500 border-purple-500/20' : 'bg-green-500/10 text-green-600 border-green-500/20'))}`}>
+                          {label}
+                        </span>
+                      );
+                    })()}
                   </div>
                 </div>
               </div>
@@ -443,8 +452,8 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
 
             {/* Options Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              {isMultiCorrect && <div className="col-span-1 md:col-span-2 mb-2 text-[14px] font-bold text-[#1976d2] px-4 py-2.5 bg-blue-50/50 rounded-lg border border-blue-100 inline-block">One or More Than One Correct Option</div>}
-              {!isMultiCorrect && !isNumerical && !isSubjective && <div className="col-span-1 md:col-span-2 mb-2 text-[14px] font-bold text-[#28a745] px-4 py-2.5 bg-green-50/50 rounded-lg border border-green-100 inline-block">Single Correct Option</div>}
+              
+              
               {isSubjective ? (
                 <div className="col-span-1 md:col-span-2">
                   <div className={`p-6 border rounded-xl shadow-sm ${isAnswerChecked ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-gray-200 bg-white'}`}>

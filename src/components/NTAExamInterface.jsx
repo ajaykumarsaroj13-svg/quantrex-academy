@@ -242,7 +242,13 @@ export default function NTAExamInterface({ testData, onSubmit, onExit }) {
 
           {/* Question Type Badge */}
           <div className="nta-question-type-badge">
-            {question?.questionType === 'NUMERICAL' ? '🔢 Numerical Answer Type' : '🔵 Multiple Choice Question'}
+            {(() => {
+              const t = question?.questionType || question?.type || 'SCQ';
+              const isMCQM = t === 'MULTI_CORRECT' || t === 'MCQM' || t === 'multi_correct' || t === 'multiple_correct' || t === 'mcqm' || (Array.isArray(question?.correctOptionIndex) && question.correctOptionIndex.length > 1);
+              const isNum = t === 'NUMERICAL' || t === 'numerical' || question?.answerType === 'numerical';
+              const isSubj = t === 'SUBJECTIVE' || t === 'subjective';
+              return isMCQM ? 'MCQM' : (isSubj ? 'SUBJECTIVE' : (isNum ? 'NUMERICAL' : 'SCQ'));
+            })()}
             &nbsp;|&nbsp; +{question?.marks || 4} / {question?.negativeMarks ?? -1}
           </div>
 

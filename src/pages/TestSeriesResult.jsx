@@ -98,7 +98,7 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
     if (Array.isArray(ua)) isAttempted = ua.length > 0;
 
     const isMultiCorrect = q.questionType !== 'NUMERICAL' && (
-        q.questionType === 'MULTI_CORRECT' || 
+        q.questionType === 'MULTI_CORRECT' || q.questionType === 'MCQM' || 
         q.questionType === 'multi_correct' || 
         q.questionType === 'multiple_correct' || 
         q.questionType === 'MCQM' || 
@@ -503,18 +503,20 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
           display: flex;
           align-items: center;
           gap: 16px;
+            position: relative;
+            border: 2px solid rgba(255,255,255,0.04);
         }
         .tsr-opt-card.correct {
           background: rgba(6, 95, 70, 0.15);
-          border-color: rgba(52, 211, 153, 0.3);
+          border-color: #22c55e;
         }
         .tsr-opt-card.user-selected {
           background: rgba(127, 29, 29, 0.15);
-          border-color: rgba(248, 113, 113, 0.3);
+          border-color: #ef4444;
         }
         .tsr-opt-card.correct.user-selected {
           background: rgba(6, 95, 70, 0.2);
-          border-color: rgba(52, 211, 153, 0.4);
+          border-color: #22c55e;
         }
         
         .tsr-opt-letter {
@@ -832,28 +834,45 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                     </div>
                   ) : (
                     <div className="tsr-opts-container">
-                      {(activeQuestion.options || []).map((opt, oIdx) => {
-                        const isCorrectOption = activeQuestion.correctOption === oIdx;
-                        const isUserOption = activeQuestion.userAnswer === oIdx;
-                        
-                        let cardClass = '';
-                        if (isCorrectOption) cardClass = 'correct';
-                        else if (isUserOption) cardClass = 'user-selected';
+                                              {(activeQuestion.options || []).map((opt, oIdx) => {
+                          const isMultiCorrect = activeQuestion.isMultiCorrect;
+                          const correctArr = activeQuestion.actualCorrectArr || [];
+                          const userArr = Array.isArray(activeQuestion.userAnswer) ? activeQuestion.userAnswer : [parseInt(activeQuestion.userAnswer)];
+                          
+                          const isCorrectOption = isMultiCorrect ? correctArr.includes(oIdx) : activeQuestion.correctOption === oIdx;
+                          const isUserOption = isMultiCorrect ? userArr.includes(oIdx) : activeQuestion.userAnswer === oIdx;
+                          
+                          let cardClass = "";
+                          if (isCorrectOption && isUserOption) cardClass = "correct user-selected";
+                          else if (isCorrectOption && !isUserOption) cardClass = "correct";
+                          else if (!isCorrectOption && isUserOption) cardClass = "user-selected user-wrong";
 
-                        return (
-                          <div key={oIdx} className={`tsr-opt-card ${cardClass}`}>
-                            <span className="tsr-opt-letter">{String.fromCharCode(65 + oIdx)}</span>
-                            <span className="tex2jax_process" dangerouslySetInnerHTML={{ __html: opt }} />
-                            
-                            {isCorrectOption && (
-                              <span className="tsr-opt-status-badge correct">Correct Option</span>
-                            )}
-                            {!isCorrectOption && isUserOption && (
-                              <span className="tsr-opt-status-badge user-wrong">Your Marked Option</span>
-                            )}
-                          </div>
-                        );
-                      })}
+                          let badgeText = null;
+                          let badgeBg = "";
+                          if (isCorrectOption && isUserOption) {
+                            badgeText = "Your answer | Correct answer";
+                            badgeBg = "bg-[#22c55e]";
+                          } else if (isCorrectOption && !isUserOption) {
+                            badgeText = "Correct answer";
+                            badgeBg = "bg-[#22c55e]";
+                          } else if (!isCorrectOption && isUserOption) {
+                            badgeText = "Your answer";
+                            badgeBg = "bg-[#ef4444]";
+                          }
+
+                          return (
+                            <div key={oIdx} className={`tsr-opt-card ${cardClass}`}>
+                              <span className="tsr-opt-letter">{String.fromCharCode(65 + oIdx)}</span>
+                              <span className="tex2jax_process flex-1" dangerouslySetInnerHTML={{ __html: opt }} />
+                              
+                              {badgeText && (
+                                <div className={`absolute -top-[10px] right-6 px-2.5 py-[2px] rounded-md text-[10px] font-bold text-white tracking-wide shadow-md ${badgeBg}`}>
+                                  {badgeText}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
                     </div>
                   )}
 
