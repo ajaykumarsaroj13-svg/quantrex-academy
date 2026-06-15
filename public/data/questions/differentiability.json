@@ -60,7 +60,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ f(x)= \\begin{cases}2 \\alpha\\left(x^2-2\\right)+2 \\beta x, & x<1 \\\\ (\\alpha+3) x+(\\alpha-\\beta), & x \\geq 1\\end{cases} $$</p>\n<p>Given $f(x)$ is differentiable at all $x \\in \\mathbb{R}$.</p>\n<p>This means $f(x)$ is continuous and differentiable at $x=1$.</p>\n<ol>\n\n<li>Continuity at $x=1$</li>\n\n</ol>\n<p>$$ \\begin{aligned} & \\text { L.H.L }=\\text { R.H.L }=f(1) \\\\ & \\lim _{x \\rightarrow 1^{-}} f(x)=\\lim _{x \\rightarrow 1^{+}} f(x) \\\\ & \\lim _{x \\rightarrow 1^{-}}\\left[2 \\alpha\\left(x^2-2\\right)+2 \\beta x\\right]=\\lim _{x \\rightarrow 1^{+}}[(\\alpha+3) x+(\\alpha-\\beta)] \\\\ & 2 \\alpha(1-2)+2 \\beta(1)=\\alpha+3+\\alpha-\\beta \\\\ & -2 \\alpha+2 \\beta=2 \\alpha-\\beta+3 \\\\ & 3 \\beta-4 \\alpha=3-(1) \\end{aligned} $$</p>\n<ol start=\"2\">\n\n<li>Differentiability at $x=1$</li>\n\n</ol>\n<p>$$ \\begin{gathered} f^{\\prime}(x)= \\begin{cases}2 \\alpha(2 x)+2 \\beta, & x<1 \\\\ \\alpha+3, & x>1\\end{cases} \\\\ \\text { L.H.D }=\\text { R.H.D } \\\\ f^{\\prime}\\left(1^{-}\\right)=f^{\\prime}\\left(1^{+}\\right) \\\\ 2 \\alpha(2 \\cdot 1)+2 \\beta=\\alpha+3 \\\\ 3 \\alpha+2 \\beta=3-(2) \\end{gathered} $$</p>\n<p>Solving equation (1) and (2)</p>\n<p>$$ \\begin{gathered} \\text { eqn }(1) \\times 2-\\text { eqn }(2) \\times 3 \\\\ -8 \\alpha-9 \\alpha=-3 \\Longrightarrow \\alpha=\\frac{3}{17} \\end{gathered} $$</p>\n<p>Substitute $\\alpha=\\frac{3}{17}$ in equation (1):</p>\n<p>$$ \\begin{gathered} 3 \\beta-4 \\times \\frac{3}{17}=3 \\\\ 3 \\beta=3+\\frac{12}{17}=\\frac{63}{17} \\end{gathered} $$</p>\n<p>$$ \\beta=\\frac{21}{17} $$</p>\n<p>Value of $34(\\alpha+\\beta)=34\\left(\\frac{3}{17}+\\frac{21}{17}\\right)=6+42=48$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhqok",
@@ -77,7 +77,7 @@
     "difficulty": "medium",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 4th April Evening Shift Mathematics - Limits, Continuity and Differentiability Question 6 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mozxwiua/744d7216-1f6a-4e6f-a13e-29dcff3e4259/9d217420-4c86-11f1-8557-21d2ff4ed907/file-6y3zli1mozxwiub.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mozxwiua/744d7216-1f6a-4e6f-a13e-29dcff3e4259/9d217420-4c86-11f1-8557-21d2ff4ed907/file-6y3zli1mozxwiub.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>First look at $|f(x)|$.</p>\n<p>For $x&lt;0$, we have $f(x)=e^{x-1}$, which is always positive, so $|f(x)|=e^{x-1}$. This part is continuous and differentiable for all $x&lt;0$.</p>\n<p>For $x\\\\ge 0$, $f(x)=x^2-5x+6=(x-2)(x-3)$. This becomes $0$ at $x=2$ and $x=3$, and it changes sign between $2$ and $3$. So when we take absolute value, $|f(x)|$ gets a “sharp corner” at $x=2$ and $x=3$, hence it is not differentiable at $x=2,3$.</p>\n<p>At $x=0$, check continuity of $|f(x)|$: left value tends to $|e^{-1}|=e^{-1}$, but right value is $|f(0)|=|6|=6$. Since these are not equal, $|f(x)|$ is discontinuous at $x=0$ (and therefore also not differentiable at $x=0$).</p>\n<p>Now consider $g(x)=f(|x|)+|f(x)|$.</p>\n<p>Here $f(|x|)$ always uses the $x\\\\ge 0$ definition because $|x|\\\\ge 0$. So $f(|x|)$ is continuous for all $x$, but it is not differentiable at $x=0$ because of $|x|$.</p>\n<p>So, discontinuity in $g$ can only come from $|f(x)|$, which happens at $x=0$ only. Also, $g$ will be non-differentiable where either term is non-differentiable, i.e., at $x=0,2,3$.</p>\n<p>$\\begin{aligned} &amp; |\\mathrm{f}(\\mathrm{x})| \\text { is discontinuous at } \\mathrm{x}=0 \\\\ &amp; |\\mathrm{f}(\\mathrm{x})| \\text { is non-diff. at } \\mathrm{x}=0,2,3 \\\\ &amp; \\mathrm{~g}(\\mathrm{x})=\\mathrm{f}(|\\mathrm{x}|)+|\\mathrm{f}(\\mathrm{x})| \\\\ &amp; \\mathrm{g}(\\mathrm{x}) \\text { will be discontinuous at } \\mathrm{x}=0 \\\\ &amp; \\mathrm{~g}(\\mathrm{x}) \\text { will be non diff at } \\mathrm{x}=0,2,3 \\\\ &amp; \\alpha=1, \\beta=3 \\\\ &amp; \\alpha+\\beta=1+3=4\\end{aligned}$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "mnswht0f",
@@ -116,7 +116,7 @@
     "difficulty": "easy",
     "solution": "<p>Let us define a new function $h(x)$ taking the difference between $f(x)$ and $g(x)$. </p>\n<p>$$h(x) = f(x) - g(x)$$</p>\n<p>Differentiating this function twice with respect to $x$, we get:</p>\n<p>$$h^{\\prime \\prime}(x) = f^{\\prime \\prime}(x) - g^{\\prime \\prime}(x)$$</p>\n<p>We are given that $f^{\\prime \\prime}(x) = g^{\\prime \\prime}(x)$ for all $x \\in \\mathbf{R}$. Therefore, their difference is zero:</p>\n<p>$$h^{\\prime \\prime}(x) = 0$$</p>\n<p>Now, let us integrate both sides with respect to $x$ to find $h^{\\prime}(x)$:</p>\n<p>$$h^{\\prime}(x) = \\int 0 \\,dx = c_1$$</p>\n<p>where $c_1$ is a constant of integration. </p>\n<p>We are given the values of the first derivatives at $x = 1$. Let us simplify them:</p>\n<p>$$f^{\\prime}(1) = 4$$</p>\n<p>$$2g^{\\prime}(1) = 4 \\implies g^{\\prime}(1) = 2$$</p>\n<p>Using these values, we can find the exact value of $h^{\\prime}(1)$:</p>\n<p>$$h^{\\prime}(1) = f^{\\prime}(1) - g^{\\prime}(1) = 4 - 2 = 2$$</p>\n<p>Since $h^{\\prime}(x) = c_1$ for all values of $x$, it follows that:</p>\n<p>$$c_1 = 2$$</p>\n<p>Substituting this back, we get our first derivative equation:</p>\n<p>$$h^{\\prime}(x) = 2$$</p>\n<p>Next, we need the original function $h(x)$. We find it by integrating $h^{\\prime}(x)$ with respect to $x$:</p>\n<p>$$h(x) = \\int 2 \\,dx = 2x + c_2$$</p>\n<p>where $c_2$ is another constant of integration.</p>\n<p>We are given the values of the functions at $x = 2$. Let us simplify these values as well:</p>\n<p>$$g(2) = 9$$</p>\n<p>$$3f(2) = 9 \\implies f(2) = 3$$</p>\n<p>Using these values, we can find the value of $h(2)$:</p>\n<p>$$h(2) = f(2) - g(2) = 3 - 9 = -6$$</p>\n<p>Now, substitute $x = 2$ and $h(2) = -6$ into our integrated equation for $h(x)$:</p>\n<p>$$h(2) = 2(2) + c_2$$</p>\n<p>$$-6 = 4 + c_2$$</p>\n<p>$$c_2 = -6 - 4$$</p>\n<p>$$c_2 = -10$$</p>\n<p>Substituting the value of $c_2$ back into the equation for $h(x)$, we have the completed function rule:</p>\n<p>$$h(x) = 2x - 10$$</p>\n<p>The question asks for the value of $f(25) - g(25)$, which is represented directly by $h(25)$. Let us substitute $x = 25$ into our function $h(x)$:</p>\n<p>$$h(25) = 2(25) - 10$$</p>\n<p>$$h(25) = 50 - 10$$</p>\n<p>$$h(25) = 40$$</p>\n<p>Therefore, $f(25) - g(25) = 40$.</p>\n<p>The correct answer is Option B.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnsik5yc",
@@ -138,7 +138,7 @@
     "difficulty": "medium",
     "solution": "<p>Here $f(x)=\\mathrm{e}^{\\sin |x|}-|x|$. Since $|x|$ is not differentiable at $x=0$, and also $\\sin|x|$ has a “kink” at $x=0$, the function $f$ is not differentiable at $x=0$. So, <b>Statement I is false</b>.</p>\n<p>Now take $x \\in\\left(-\\pi,-\\frac{\\pi}{2}\\right)$. Here $x<0$, so $|x|=-x$ and hence $\\sin|x|=\\sin(-x)=-\\sin x$. Therefore, on this interval we can write $f(x)=\\mathrm{e}^{-\\sin x}+x$ and differentiate to check whether $f$ is increasing.</p>\n<p>$$ \\begin{aligned} & f(x)=e^{-\\sin x}+x \\\\\\\\ & f^{\\prime}(x)=-e^{-\\sin x} \\cos x+1 \\\\\\\\ & \\text { for } x \\in\\left(-\\pi, \\frac{-\\pi}{2}\\right) \\quad \\cos x<0 \\\\\\\\ & \\therefore f^{\\prime}(x)>0 \\\\\\\\ & \\therefore f(x) \\text { is increasing } \\end{aligned} $$</p>\n<p>Since $\\cos x<0$ on $\\left(-\\pi,-\\frac{\\pi}{2}\\right)$ and $e^{-\\sin x}>0$, we get $-e^{-\\sin x}\\cos x>0$, so $f'(x)>0$ on this interval. Hence, <b>Statement II is true</b>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mauv236k",
@@ -161,7 +161,7 @@
     "solution": "<p>The function $ f : \\mathbb{R} \\to \\mathbb{R} $ is defined by:</p>\n<p>$ f(x) =  \\begin{cases}  2 - 2x^2 - x^2 \\sin \\frac{1}{x}, & \\text{if } x \\neq 0, \\\\ 2, & \\text{if } x = 0. \\end{cases} $</p>\n<p><strong>Explanation:</strong></p>\n<p>(A) To determine differentiability at $ x = 0 $, consider the right-hand derivative (RHD):</p>\n<p>$ \\lim\\limits_{h \\rightarrow 0} \\frac{(2 - 2h^2 - h^2 \\sin \\frac{1}{h}) - 2}{h} = 0 $</p>\n<p>Similarly, for the left-hand derivative (LHD) at $ x = 0 $, we also find it equals 0. Therefore, $ f $ is differentiable at $ x = 0 $.</p>\n<p>(B) For $ x \\in (0, \\delta) $, the derivative of $ f $ is:</p>\n<p>$ f^{\\prime}(x) = -\\left(4x + 2x \\sin \\frac{1}{x}\\right) + \\cos \\frac{1}{x} $</p>\n<p>Thus:</p>\n<p>$ f^{\\prime}(x) = -\\left(2x\\left(4 - \\sin \\frac{1}{x}\\right)\\right) + \\cos \\frac{1}{x} $</p>\n<p>Since $\\cos \\frac{1}{x}$ oscillates, we cannot assert that $ f(x) $ is strictly decreasing on $ (0, \\delta) $.</p>\n<p>(C) For $ x \\in (-\\delta, 0) $ and any $ \\delta > 0 $, $ f(x) $ is not increasing since $\\cos \\frac{1}{x}$ oscillates between -1 and 1.</p>\n<p>(D) Evaluating at $ x = 0 $:</p>\n<p>$ f(0) = 2 $</p>\n<p>For small $ h $:</p>\n<p>$ f(0 + h) < 2 \\quad \\text{and} \\quad f(0 - h) < 2 $</p>\n<p>Therefore, $ x = 0 $ is a local maximum, not a local minimum.</p>",
     "section": "Sec 1",
     "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mauw4x4e",
@@ -184,7 +184,7 @@
     "solution": "<p>$\\begin{aligned} &amp; \\text { (P) Let } g(x)=10 x^3-45 x^2+60 x+35 \\\\\\\\ &amp; g^{\\prime}(x)=30\\left(x^2-3 x+2\\right)=30(x-1)(x-2)\\end{aligned}$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mbdk4k02/fe558ae5-3030-447c-aa48-1553d93d6b71/ae7ab220-3ed8-11f0-a83c-090ddc267f1c/file-jaoe38c1mbdk4k03.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mbdk4k02/fe558ae5-3030-447c-aa48-1553d93d6b71/ae7ab220-3ed8-11f0-a83c-090ddc267f1c/file-jaoe38c1mbdk4k03.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 1 Online Mathematics - Limits, Continuity and Differentiability Question 7 English Explanation 1\"></p>\n<p>$\\Rightarrow g(x)$ is decreasing in $[1,2]$</p>\n<p>Now, $f(1)=\\left[\\frac{g(1)}{n}\\right]=\\left[\\frac{60}{n}\\right], f(2)=\\left[\\frac{55}{n}\\right]$</p>\n<p>For $f(x)$ to be continuous in $[1,2]$ its integral value should remain same in whole interval for $n=9, f(1)=6, f(2)=6$</p>\n<p>$(P) \\rightarrow(2)$</p>\n<p>(Q)</p>\n<p>$$ \\begin{aligned} &amp; g^{\\prime}(x)=\\left(2 n^2-13 n-15\\right)\\left(3 x^2+3\\right) \\\\ &amp; =(2 n-15)(n+1)\\left(3 x^2+3\\right)&gt;0 \\end{aligned} $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mbdkb5if/89b8c443-302a-47e2-8f33-f5957c05badd/65f33b70-3ed9-11f0-a83c-090ddc267f1c/file-jaoe38c1mbdkb5ig.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mbdkb5if/89b8c443-302a-47e2-8f33-f5957c05badd/65f33b70-3ed9-11f0-a83c-090ddc267f1c/file-jaoe38c1mbdkb5ig.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 1 Online Mathematics - Limits, Continuity and Differentiability Question 7 English Explanation 2\"></p>\n<p>for $g(x)$ to be increasing $\\min n=8$</p>\n<p>$\\Rightarrow Q \\rightarrow 1$ matching</p>\n<p>(R) $h(x)=\\left(x^2-9\\right)^n\\left(x^2+2 x+3\\right)$</p>\n<p>$h(3)=0$ for $n&gt;5$</p>\n<p>at $n=6 \\Rightarrow n(3+\\delta)&gt;h(3)$</p>\n<p>$$ n(3-\\delta)&gt;n(3) $$</p>\n<p>$\\Rightarrow h(x)$ has local minima at $x=3$ for $n=6$</p>\n<p>$R \\rightarrow 4$ matching</p>\n<p>(S) $\\quad I(x)=\\sin |x|+\\cos \\left|x+\\frac{1}{2}\\right|+\\sin |x-1|+\\cos \\left|x-\\frac{1}{2}\\right|$ $+\\ldots \\ldots+\\sin |x-4|+\\cos \\left|x-\\frac{7}{2}\\right|$ \n\n<br><br>as $\\sin |x-a|$ is non differentiable at $x=a$ \n\n<br><br>but $\\cos |x-a|$ remains differentiable at $x=a$ \n\n<br><br>$\\Rightarrow$ given $I(x)$ is non-differentiable at</p>\n\n$\\begin{aligned} &amp; x_0=0,1,2,3,4(5 \\text { points }) \\\\\\\\ &amp; (S) \\rightarrow(3) \\text { matching } \\\\\\\\ &amp; (P) \\rightarrow(2)(Q) \\rightarrow(1)(R) \\rightarrow(4)(S) \\rightarrow(3)\\end{aligned}$",
     "section": "Sec 2",
     "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qvb1cz",
@@ -201,7 +201,7 @@
     "difficulty": "medium",
     "solution": "<p>$\\mathrm{f}(\\mathrm{x})$ is continuous and differentiable</p>\n<p>$$ \\begin{array}{ll} \\text { at } x=1 ; &amp; \\text { LHL }=\\text { RHL, LHD }=\\text { RHD } \\\\ &amp; -3 a-2=a^2+b,-6 a=b \\\\ &amp; a=2,1 ; b=-12 \\end{array} $$</p>\n<p>$f(x)=\\left\\{\\begin{array}{cc}-6 x^2-2, &amp; x&lt;1 \\\\ 4-12 x, &amp; x \\geq 1\\end{array}\\right.$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7bv0v0l/2fd78c2e-7cb1-4b2c-931d-08a772ae7f49/dd5b8350-eeb8-11ef-baef-2dd92b974f3e/file-jaoe38c1m7bv0v0m.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7bv0v0l/2fd78c2e-7cb1-4b2c-931d-08a772ae7f49/dd5b8350-eeb8-11ef-baef-2dd92b974f3e/file-jaoe38c1m7bv0v0m.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 22nd January Morning Shift Mathematics - Limits, Continuity and Differentiability Question 44 English Explanation\"></p>\n<p>$\\begin{aligned} &amp; \\left.\\text { Area }=\\int_{-\\sqrt{3}}^1\\left(-6 x^2-2+20\\right) d x+\\int_1^2(4-12 x+20) d x\\right] \\\\\\\\ &amp; =16+12 \\sqrt{3}+6=22+12 \\sqrt{3} \\\\\\\\ &amp; \\therefore \\quad \\alpha+\\beta=34\\end{aligned}$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "m6v42xba",
@@ -223,7 +223,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x)=[x]+|x-2| \\quad-2< x<3$$</p>\n<p>$$f(x)=\\left\\{\\begin{array}{cc}\n-x, & -2< x<-1 \\\\\n-x+1, & -1 \\leq x<0 \\\\\n-x+2, & 0 \\leq x<1 \\\\\n-x+3, & 1 \\leq x<2 \\\\\nx, & 2 \\leq x<3\n\\end{array}\\right.$$</p>\n<p>So $f(x)$ is not continuous at 4 points and not differentiable at 4 point</p>\n<p>So $\\mathrm{m}+\\mathrm{n}=4+4=8$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6w9o11u",
@@ -262,7 +262,7 @@
     "difficulty": "medium",
     "solution": "<p>$\\cos |\\mathrm{x}|$ is always differentiable</p>\n<p>$\\therefore$ we have to check only for $\\left|\\mathrm{x}^2-\\mathrm{ax}+2\\right|$</p>\n<p>$\\therefore$ Not differentiable at</p>\n<p>$$x^2-a x+2=0$$</p>\n<p>One root is given, $\\alpha=2$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad 4 & -2 a+2=0 \\\\\n& a=3\n\\end{aligned}$$</p>\n<p>$\\therefore$ other root $\\beta=1$</p>\n<p>but for $x=1 f(x)$ is differentiable</p>\n<p>(Drop)</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9ghxm38",
@@ -324,7 +324,7 @@
     "difficulty": "medium",
     "solution": "$\\begin{aligned} &amp; f(x)=\\left|2 x^2+5\\right| x|-3| \\\\\\\\ &amp; \\text { Graph of } y=\\left|2 x^2+5 x-3\\right|\\end{aligned}$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsq9xozp/ba71121b-98fa-43fb-8b6d-a25522270b09/e89ef840-cdae-11ee-8e42-2f10126c4c2c/file-6y3zli1lsq9xozq.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsq9xozp/ba71121b-98fa-43fb-8b6d-a25522270b09/e89ef840-cdae-11ee-8e42-2f10126c4c2c/file-6y3zli1lsq9xozq.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 1st February Evening Shift Mathematics - Limits, Continuity and Differentiability Question 75 English Explanation 1\">\n<br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsqa8zwn/f12f5f83-13c0-4aa6-8f79-7a22074474aa/22f45480-cdb0-11ee-8e42-2f10126c4c2c/file-6y3zli1lsqa8zwo.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsqa8zwn/f12f5f83-13c0-4aa6-8f79-7a22074474aa/22f45480-cdb0-11ee-8e42-2f10126c4c2c/file-6y3zli1lsqa8zwo.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 1st February Evening Shift Mathematics - Limits, Continuity and Differentiability Question 75 English Explanation 2\">\n<br><br>Now $f(x)$ is continuous $\\forall x \\in R$ \n<br><br>but non- differentiable at $x=\\frac{-1}{2}, \\frac{1}{2}, 0$\n<br><br>$$\n\\begin{aligned}\n\\therefore m &amp; =0 \\\\\\\\\nn &amp; =3 \\\\\\\\\nm+n &amp; =3\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lsaowab9",
@@ -346,7 +346,7 @@
     "difficulty": "medium",
     "solution": "At $\\mathrm{x}=1, \\mathrm{f}(\\mathrm{x})$ is continuous therefore, <br/><br/>$\\mathrm{f}\\left(1^{-}\\right)=\\mathrm{f}(1)=\\mathrm{f}\\left(1^{+}\\right)$\n<br/><br/>$$\nf(1)=3+c\n$$ .........(1)\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{f}\\left(1^{+}\\right)=\\lim _{h \\rightarrow 0} 2(1+\\mathrm{h})+1 \\\\\\\\\n& \\mathrm{f}\\left(1^{+}\\right)=\\lim _{h \\rightarrow 0} 3+2 \\mathrm{~h}=3 .........(2)\n\\end{aligned}\n$$\n<br/><br/>from (1) and (2)\n<br/><br/>$$\n\\mathrm{c}=0\n$$\n<br/><br/>at $\\mathrm{x}=0, \\mathrm{f}(\\mathrm{x})$ is continuous therefore,\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{f}\\left(0^{-}\\right)=\\mathrm{f}(0)=\\mathrm{f}\\left(0^{+}\\right) ........(3) \\\\\\\\\n& \\mathrm{f}(0)=\\mathrm{f}\\left(0^{+}\\right)=2 ...........(4)\n\\end{aligned}\n$$\n<br/><br/>$\\mathrm{f}\\left(0^{-}\\right)$has to be equal to 2\n<br/><br/>$\\lim\\limits_{h \\rightarrow 0} \\frac{a-b \\cos (2 h)}{h^2}$\n<br/><br/>= $\\lim\\limits_{h \\rightarrow 0} \\frac{a-b\\left\\{1-\\frac{4 h^2}{2 !}+\\frac{16 h^4}{4 !}+\\ldots\\right\\}}{h^2}$\n<br/><br/>= $\\lim\\limits_{h \\rightarrow 0} \\frac{a-b+b\\left\\{2 h^2-\\frac{2}{3} h^4 \\ldots\\right\\}}{h^2}$\n<br/><br/>for limit to exist $a-b=0$ and limit is $2 b$ from (3), (4) and (5)\n<br/><br/>$$\n\\mathrm{a}=\\mathrm{b}=1\n$$\n<br/><br/>checking differentiability at $\\mathrm{x}=0$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { LHD : } \\lim _{h \\rightarrow 0} \\frac{\\frac{1-\\cos 2 h}{h^2}-2}{-h} \\\\\\\\\n& \\lim _{h \\rightarrow 0} \\frac{1-\\left(1-\\frac{4 h^2}{2 !}+\\frac{16 h^4}{4 !} \\ldots\\right)-2 h^2}{-h^3}=0 \\\\\\\\\n& \\text { RHD : } \\lim _{h \\rightarrow 0} \\frac{(0+h)^2+2-2}{h}=0\n\\end{aligned}\n$$\n\n<br/><br/>Function is differentiable at every point in its domain\n<br/><br/>$$\n\\therefore \\mathrm{m}=0\n$$\n<br/><br/>m + a + b + c = 0 + 1 + 1 + 0 = 2 ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lscn03is",
@@ -368,7 +368,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; f:(0,2) \\rightarrow R ; f(x)=\\frac{x}{2}+\\frac{2}{x} \\\\\n&amp; f^{\\prime}(x)=\\frac{1}{2}-\\frac{2}{x^2}\n\\end{aligned}$$</p>\n<p>$$\\therefore \\mathrm{f}(\\mathrm{x})$$ is decreasing in domain.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lt1qvsrr/82daf6e5-d235-46d9-8017-461f6f164b34/ce430770-d3fd-11ee-acd6-03dea0d2c848/file-1lt1qvsrs.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lt1qvsrr/82daf6e5-d235-46d9-8017-461f6f164b34/ce430770-d3fd-11ee-acd6-03dea0d2c848/file-1lt1qvsrs.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 27th January Evening Shift Mathematics - Limits, Continuity and Differentiability Question 69 English Explanation 1\"></p>\n<p>$$g(x)= \\begin{cases}\\frac{x}{2}+\\frac{2}{x} &amp; 0 &lt; x \\leq 1 \\\\ \\frac{3}{2}+x &amp; 1 &lt; x &lt; 2\\end{cases}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lt1qwxt1/0909b125-954a-4e40-9ed4-1383ae43484b/edf5f550-d3fd-11ee-acd6-03dea0d2c848/file-1lt1qwxt2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lt1qwxt1/0909b125-954a-4e40-9ed4-1383ae43484b/edf5f550-d3fd-11ee-acd6-03dea0d2c848/file-1lt1qwxt2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 27th January Evening Shift Mathematics - Limits, Continuity and Differentiability Question 69 English Explanation 2\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsflbgha",
@@ -424,7 +424,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; f:(0, \\infty) \\rightarrow R \\\\\n&amp; f(x)=e^{-\\left|\\log _e x\\right|}\n\\end{aligned}$$</p>\n<p>$$\\mathrm{f}(\\mathrm{x})=\\frac{1}{\\mathrm{e}^{|\\ln \\mathrm{x}|}}=\\left\\{\\begin{array}{l}\n\\frac{1}{\\mathrm{e}^{-\\ln \\mathrm{x}}} ; 0&lt;\\mathrm{x}&lt;1 \\\\\n\\frac{1}{\\mathrm{e}^{\\ln \\mathrm{x}}} ; \\mathrm{x} \\geq 1\n\\end{array}\\right.$$</p>\n<p>$$\\left\\{\\begin{array}{l}\n\\frac{1}{\\frac{1}{x}}=x ; 0&lt; x&lt;1 \\\\\n\\frac{1}{x}, x \\geq 1\n\\end{array}\\right.$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsjwnla3/94c1149f-a7b9-41cc-b180-4bf0cc496ba7/451674b0-ca2e-11ee-8854-3b5a6c9e9092/file-6y3zli1lsjwnla4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsjwnla3/94c1149f-a7b9-41cc-b180-4bf0cc496ba7/451674b0-ca2e-11ee-8854-3b5a6c9e9092/file-6y3zli1lsjwnla4.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 31st January Evening Shift Mathematics - Limits, Continuity and Differentiability Question 67 English Explanation\"></p>\n<p>$$\\mathrm{m}=0$$ (No point at which function is not continuous)</p>\n<p>$$\\mathrm{n}=1$$ (Not differentiable)</p>\n<p>$$\\therefore \\mathrm{m}+\\mathrm{n}=1$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv7v3v83",
@@ -480,7 +480,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n&amp; \\text { Sol. } f(x)=\\left\\{\\begin{array}{c}\nx+1, x&lt;0 \\\\\\\n1-x, 0 \\leq x&lt;1 \\\\\nx-1,1 \\leq x\n\\end{array}\\right. \\\\\\\\\n&amp; g(x)=\\left\\{\\begin{array}{c}\nx+1, x&lt;0 \\\\\n1, x \\geq 0\n\\end{array}\\right. \\\\\\\\\n&amp; g(f(x))=\\left\\{\\begin{array}{c}\nx+2, x&lt;-1 \\\\\n1, x \\geq-1\n\\end{array}\\right.\n\\end{aligned}\n$$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lifi9pn2/0d3d2e66-f8f7-4969-8143-a77c378e96f7/b6eee2e0-01c8-11ee-91de-e7d2360ea0c8/file-1lifi9pn3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lifi9pn2/0d3d2e66-f8f7-4969-8143-a77c378e96f7/b6eee2e0-01c8-11ee-91de-e7d2360ea0c8/file-1lifi9pn3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 11th April Evening Shift Mathematics - Limits, Continuity and Differentiability Question 83 English Explanation\">\n<br>$\\therefore \\mathrm{g}(\\mathrm{f}(\\mathrm{x}))$ is continuous everywhere\n<br><br>$\\mathrm{g}(\\mathrm{f}(\\mathrm{x}))$ is not differentiable at $\\mathrm{x}=-1$\nDifferentiable everywhere else.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lgnx6vt2",
@@ -502,7 +502,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& \\text { Let } g(x)=1+x+[x]=\\left\\{\\begin{array}{cc}\n1+x ; & x \\in[0,1) \\\\\\\n2+x ; & x \\in[1,2) \\\\\n5 ; & x=2\n\\end{array}\\right. \\\\\\\\\n& \\lambda(x)=x+2[x]=\\left\\{\\begin{array}{cc}\nx ; & x \\in[0,1) \\\\\nx+2 ; & x \\in[1,2) \\\\\n6 ; & x=2\n\\end{array}\\right. \\\\\\\\\n& r(x)=2+x \\\\\\\\\n& f(x)=\\left\\{\\begin{array}{cc}\n2+x ; & x \\in[0,2) \\\\\n6 ; & x=2\n\\end{array}\\right.\n\\end{aligned}\n$$\n<br/><br/>$\\mathrm{f}(\\mathrm{x})$ is discontinuous only at $x=2 \\Rightarrow \\mathrm{m}=1$ <br/><br/>$\\mathrm{f}(\\mathrm{x})$ is differentiable in $(0,2) \\Rightarrow \\mathrm{n}=0$\n<br/><br/>$$\n(m+n)^2+2=3\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldybn6xt",
@@ -524,7 +524,7 @@
     "difficulty": "medium",
     "solution": "<p>Given,</p>\n<p>$$f(x) = \\left\\{ {\\matrix{\n   {{x^2}\\sin \\left( {{1 \\over x}} \\right),} & {x \\ne 0}  \\cr \n   {0,} & {x = 0}  \\cr \n\n } } \\right.$$</p>\n<p>$$\\therefore$$ $$f'(x) = 2x\\sin \\left( {{1 \\over x}} \\right) - \\cos \\left( {{1 \\over x}} \\right)$$</p>\n<p>Now,</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 0} f'(x) = \\mathop {\\lim }\\limits_{x \\to 0} \\left[ {2x\\sin \\left( {{1 \\over x}} \\right) - \\cos \\left( {{1 \\over x}} \\right)} \\right]$$</p>\n<p>$$ = 0 - \\mathop {\\lim }\\limits_{x \\to 0} \\cos \\left( {{1 \\over x}} \\right)$$</p>\n<p>= Does not exist</p>\n<p>$$\\therefore$$ $$f'(x)$$ is discontinuous function at $$x = 0$$.</p>\n<p>L.H.D. $$ = \\mathop {\\lim }\\limits_{h \\to {0^ + }} {{f(0 - h) - f(0)} \\over { - h}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to {0^ + }} {{f( - h)} \\over { - h}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to {0^ + }} {{ - {h^2}\\sin \\left( {{1 \\over h}} \\right)} \\over { - h}} = 0$$</p>\n<p>R.H.D. $$ = \\mathop {\\lim }\\limits_{h \\to {0^ + }} {{f(0 + h) - f(0)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to {0^ + }} {{f(h)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to {0^ + }} {{{h^2}\\sin \\left( {{1 \\over h}} \\right)} \\over h} = 0$$</p>\n<p>$$\\therefore$$ L.H.D. = R.H.D.</p>\n<p>$$ \\Rightarrow f(x)$$ is differentiable at $$x = 0$$. So, f(x) is continuous.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldr770hb",
@@ -546,7 +546,7 @@
     "difficulty": "medium",
     "solution": "<p>$$5f(x + y) = f(x).f(y)$$</p>\n<p>$$5f(3) = f(1).f(2)$$</p>\n<p>$$5f(2) = {(f(1))^2}$$</p>\n<p>$$f(10) = 5$$</p>\n<p>$$f(1) = 20$$</p>\n<p>$$ \\Rightarrow f(1).{{{{(f(1))}^2}} \\over 5} = 1600$$</p>\n<p>$$\\sum\\limits_{n = 0}^5 {f(n) = f(0) + 20 + 80 + 320 + 1280 + 5120} $$</p>\n<p>$$ = 1750 + 5120 = 6825$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh23sso3",
@@ -580,7 +580,7 @@
     "difficulty": "medium",
     "solution": "Here, $$f(x)=\\left\\{\\begin{array}{cc}3 x^{2}+k \\sqrt{x+1}, & 0 < x < 1 \\\\ m x^{2}+k^{2}, & x \\geq 1\\end{array}\\right.$$\n<br/><br/>$\\because f(x)$ is differentiable at $x>0$\n<br/><br/>So, $f(x)$ is differentiable at $x=1$\n<br/><br/>$$\n\\begin{gathered}\nf\\left(1^{-}\\right)=f(1)=f\\left(1^{+}\\right) \\\\\\\\\n3+k \\sqrt{2}=m+k^2 ......(i)\n\\end{gathered}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& f^{\\prime}\\left(1^{-}\\right)=f^{\\prime}\\left(1^{+}\\right) \\\\\\\\\n& 6(1)+\\frac{k}{2 \\sqrt{1+1}}=2 m(1) \\\\\\\\\n& \\Rightarrow 6+\\frac{k}{2 \\sqrt{2}}=2 m ......(ii)\n\\end{aligned}\n$$\n<br/><br/>Using (i) and (ii),\n<br/><br/>$$\n\\begin{aligned}\n& 3+k \\sqrt{2}=3+\\frac{k}{4 \\sqrt{2}}+k^2 \\\\\\\\\n& \\Rightarrow k^2+k\\left[\\frac{1}{4 \\sqrt{2}}-\\sqrt{2}\\right]=0\n\\end{aligned}\n$$\n<br/><br/>$$\n\\Rightarrow k\\left[k+\\frac{1-8}{4 \\sqrt{2}}\\right]=0 \\Rightarrow k=0, \\frac{7}{4 \\sqrt{2}}\n$$\n<br/><br/>As the problem specifies k to be a positive real number, we can rule out k = 0. Hence, k = $\\frac{7}{4 \\sqrt{2}}$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { for } k=\\frac{7}{4 \\sqrt{2}}, m=3+\\frac{\\frac{7}{4 \\sqrt{2}}}{4 \\sqrt{2}} \\\\\\\\\n& =3+\\frac{7}{32}=\\frac{96+7}{32}=\\frac{103}{32}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\text { So, } \\frac{8 f^{\\prime}(8)}{f^{\\prime}\\left(\\frac{1}{8}\\right)}=\\frac{8 \\times\\left[2 \\times \\frac{103}{32} \\times 8\\right]}{6 \\times \\frac{1}{8}+\\frac{7}{4 \\sqrt{2}} \\times 2 \\sqrt{918}}\n$$\n<br/><br/>$$\n=\\frac{412}{\\frac{3}{4}+\\frac{7}{12}}=\\frac{412}{\\frac{9+7}{12}}=\\frac{412 \\times 12}{16}=309\n$$\n<br/><br/><b>Concept :</b>\n<br/><br/>$f(x)$ is differentiable at $x=a$, if $f^{\\prime}\\left(a^{-}\\right)=f'\\left(a^{+}\\right)$",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "liio4771",
@@ -603,7 +603,7 @@
     "solution": "$$\nf(x)=\\left\\{\\begin{array}{cc}\n0 & ; 0 < x  <\\frac{1}{4} \\\\\\\\\n\\left(x-\\frac{1}{4}\\right)^2\\left(x-\\frac{1}{2}\\right) ; & \\frac{1}{4} \\leq x<\\frac{1}{2} \\\\\\\\\n2\\left(x-\\frac{1}{4}\\right)^2\\left(x-\\frac{1}{2}\\right) ; & \\frac{1}{2} \\leq x<\\frac{3}{4} \\\\\\\\\n3\\left(x-\\frac{1}{4}\\right)^2\\left(x-\\frac{1}{2}\\right) ; & \\frac{3}{4} \\leq x<1\n\\end{array}\\right.\n$$\n<br/><br/>$$\nf(x) \\text { is discontinuous at } x=\\frac{3}{4} \\text { only }\n$$\n<br/><br/>$$\nf^{\\prime}(x)=\\left\\{\\begin{array}{cc}\n0 & ; 0 < x <\\frac{1}{4} \\\\\\\\\n2\\left(x-\\frac{1}{4}\\right)\\left(x-\\frac{1}{2}\\right)+\\left(x-\\frac{1}{4}\\right)^2 & ; \\quad \\frac{1}{4}< x <\\frac{1}{2} \\\\\\\\\n4\\left(x-\\frac{1}{4}\\right)\\left(x-\\frac{1}{2}\\right)+2\\left(x-\\frac{1}{4}\\right)^2 & ; \\frac{1}{2} < x <\\frac{3}{4} \\\\\\\\\n6\\left(x-\\frac{1}{4}\\right)\\left(x-\\frac{1}{2}\\right)+3\\left(x-\\frac{1}{4}\\right)^2 & ; \\frac{3}{4} < x < 1\n\\end{array}\\right.\n$$\n<br/><br/>$f(x)$ is non-differentiable at $x=\\frac{1}{2}$ and $\\frac{3}{4}$\n<br/><br/>Minimum values of $f(x)$ occur at $x=\\frac{5}{12}$ whose value is $-\\frac{1}{432}$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5b7z89d",
@@ -625,7 +625,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = \\left\\{ {\\matrix{\n   {{{\\sin (x - [x])} \\over {x[x]}}} & , & {x \\in ( - 2, - 1)}  \\cr \n   {\\max \\{ 2x,3[|x|]\\} } & , & {|x| < 1}  \\cr \n   1 & , & {otherwise}  \\cr \n\n } } \\right.$$</p>\n<p>$$f(x) = \\left\\{ {\\matrix{\n   {{{\\sin (x + 2)} \\over {x + 2}}} & , & {x \\in ( - 2, - 1)}  \\cr \n   0 & , & {x \\in ( - 1,0]}  \\cr \n   {2x} & , & {x \\in (0,1)}  \\cr \n   1 & , & {otherwise}  \\cr \n\n } } \\right.$$</p>\n<p>It clearly shows that f(x) is discontinuous</p>\n<p>At x = $$-$$1, 1 also non differentiable</p>\n<p>and at $$x = 0$$, $$L.H.D = \\mathop {\\lim }\\limits_{h \\to 0} {{f(0 - h) - f(0)} \\over { - h}} = 0$$</p>\n<p>$$R.H.D = \\mathop {\\lim }\\limits_{h \\to 0} {{f(0 + h) - f(0)} \\over h} = 2$$</p>\n<p>$$\\therefore$$ f(x) is not differentiable at x = 0</p>\n<p>$$\\therefore$$ m = 2, n = 3</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6dxbjjs",
@@ -664,7 +664,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = \\min \\{ 1,\\,1 + x\\sin x\\} $$, $$0 \\le x \\le x$$</p>\n<p>$$f(x) = \\left\\{ {\\matrix{\n   {1,} & {0 \\le x < \\pi }  \\cr \n   {1 + x\\sin x,} & {\\pi  \\le x \\le 2\\pi }  \\cr \n\n } } \\right.$$</p>\n<p>Now at $$x = \\pi ,\\,\\,\\mathop {\\lim }\\limits_{x \\to {\\pi ^ - }} f(x) = 1 = \\mathop {\\lim }\\limits_{x \\to {\\pi ^ + }} f(x)$$</p>\n<p>$$\\therefore$$ f(x) is continuous in [0, 2$$\\pi$$]</p>\n<p>Now, at x = $$\\pi$$ $$L.H.D = \\mathop {\\lim }\\limits_{h \\to 0} {{f(\\pi  - h) - f(\\pi )} \\over { - h}} = 0$$</p>\n<p>$$R.H.D = \\mathop {\\lim }\\limits_{h \\to 0} {{f(\\pi  + h) - f(\\pi )} \\over h} = 1 - {{(\\pi  + h)\\sin \\,h - 1} \\over h} =  - \\pi $$</p>\n<p>$$\\therefore$$ f(x) is not differentiable at x = $$\\pi$$</p>\n<p>$$\\therefore$$ (m, n) = (1, 0)</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l589h9sz",
@@ -686,7 +686,7 @@
     "difficulty": "hard",
     "solution": "<p>$$\\because$$ gof is differentiable at x = 0</p>\n<p>So R.H.D = L.H.D</p>\n<p>$${d \\over {dx}}(4{e^x} + {k_2}) = {d \\over {dx}}\\left( {{{( - |x + 3|)}^2} - {k_1}|x + 3|} \\right)$$</p>\n<p>$$ \\Rightarrow 4 = 6 - {k_1} \\Rightarrow {k_1} = 2$$</p>\n<p>Also $$f(f({0^ + })) = g(f({0^ - }))$$</p>\n<p>$$ \\Rightarrow 4 + {k_2} = 9 - 3{k_1} \\Rightarrow {k_2} =  - 1$$</p>\n<p>Now $$g(f( - 4)) + g(f(4))$$</p>\n<p>$$ = g( - 1) + g({e^4}) = (1 - {k_1}) + (4{e^4} + {k_2})$$</p>\n<p>$$ = 4{e^4} - 2$$</p>\n<p>$$ = 2(2{e^4} - 1)$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6m6jj6x",
@@ -742,7 +742,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f:R \\to R$$.</p>\n<p>$$f(x) = |x - 1|\\cos |x - 2|\\sin |x - 1| + (x - 3)|{x^2} - 5x + 4|$$</p>\n<p>$$ = |x - 1|\\cos |x - 2|\\sin |x - 1| + (x - 3)|x - 1||x - 4|$$</p>\n<p>$$ = |x - 1|[\\cos |x - 2|\\sin |x - 1| + (x - 3)|x - 4|]$$</p>\n<p>Sharp edges at $$x = 1$$ and $$x = 4$$</p>\n<p>$$\\therefore$$ Non-differentiable at $$x = 1$$ and $$x = 4$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "5A659Mvl7seLH4Q37Z1kmiwihi3",
@@ -764,7 +764,7 @@
     "difficulty": "medium",
     "solution": "$$f(x + 1) = xf(x)$$<br><br>$$\\ln (f(x + 1)) = \\ln x + \\ln f(x)$$<br><br>$$g(x + 1) = \\ln x + g(x)$$<br><br>$$g(x + 1) - g(x) = \\ln x$$ ..... (i)<br><br>$$g'(x + 1) - g'(x) = {1 \\over x}$$<br><br>$$g''(x + 1) - g''(x) = {{ - 1} \\over {{x^2}}}$$<br><br>$$g''(2) - g'(1) = {{ - 1} \\over 1}$$ .... (ii)<br><br>$$g''(3) - g''(2) = {{ - 1} \\over 4}$$ .... (iii)<br><br>$$g''(4) - g''(3) = {{ - 1} \\over 9}$$ ..... (iv)<br><br>$$g''(5) - g''(4) = {{ - 1} \\over {16}}$$ ....(v)<br><br>Adding (ii), (iii), (iv) &amp; (v)<br><br>$$g''(5) - g''(1) =  - \\left( {{1 \\over 1} + {1 \\over 4} + {1 \\over 9} + {1 \\over {16}}} \\right) = {{ - 205} \\over {144}}$$<br><br>$$|g''(5) - g''(1)|\\, = {{205} \\over {144}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "VY62ViQI22I2zXz9wn1kmhxcjph",
@@ -786,7 +786,7 @@
     "difficulty": "medium",
     "solution": "$$fog(x) = \\left\\{ {\\matrix{\n   {{x^3} + 2,} &amp; {x \\le 0}  \\cr \n   {{x^6},} &amp; {0 \\le x \\le 1}  \\cr \n   {{{(3x - 2)}^2},} &amp; {x \\ge 1}  \\cr \n\n } } \\right.$$<br><br>$$ \\because $$ fog(x) is discontinuous at x = 0 then non-differentiable at x = 0<br><br>Now, <br><br>at x = 1<br><br>$$RHD = \\mathop {\\lim }\\limits_{h \\to 0} {{f(1 + h) - f(1)} \\over h} = \\mathop {\\lim }\\limits_{h \\to 0} {{{{(3(1 + h) - 2)}^2} - 1} \\over h} = 6$$<br><br>$$LHD = \\mathop {\\lim }\\limits_{h \\to 0} {{f(1 - h) - f(1)} \\over { - h}} = \\mathop {\\lim }\\limits_{h \\to 0} {{{{(1 - h)}^6} - 1} \\over { - h}} = 6$$<br><br>Number of points of non-differentiability = 1",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Xf9fFqIdYJZD5on2nB1kmm49510",
@@ -825,7 +825,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = \\left\\{ {\\matrix{\n   {{1 \\over {|x|}},} &amp; {|x| \\ge 1}  \\cr \n   {a{x^2} + b,} &amp; {|x| &lt; 1}  \\cr \n\n } } \\right.$$<br><br>$$ = \\left\\{ {\\matrix{\n   { - {1 \\over x};} &amp; {x \\le  - 1}  \\cr \n   {a{x^2} + b;} &amp; { - 1 &lt; x &lt; 1}  \\cr \n   {{1 \\over x};} &amp; {x \\ge 1}  \\cr \n\n } } \\right.$$<br><br>As f(x) is differentiable so it is also continuous,<br><br> at x = 1,<br><br>$$\\mathop {\\lim }\\limits_{x \\to {1^ - }} f(x) = \\mathop {\\lim }\\limits_{x \\to {1^ + }} f(x)$$<br><br>$$ \\Rightarrow a + b = {1 \\over 1}$$<br><br>$$ \\Rightarrow a + b = 1$$ ...... (1)<br><br>As f(x) is differentiable, so at x = 1<br><br>L.H.D. = R.H.D.<br><br>$$ \\Rightarrow 2ax =  - {1 \\over {{x^2}}}$$<br><br>$$ \\Rightarrow 2a =  - 1$$<br><br>$$ \\Rightarrow a =  - {1 \\over 2}$$<br><br>From (1), $$b = {3 \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krrwrbii",
@@ -842,7 +842,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = {x^3} - 6{x^2} + 9x - 3$$<br><br>$$f(x) = 3{x^2} - 12x + 9 = 3(x - 1)(x - 3)$$<br><br>$$f(1) = 1$$, $$f(3) = 3$$<br><br>$$g(x) = \\left[ {\\matrix{\n   {f(9x)} &amp; {0 \\le x \\le 1}  \\cr \n   0 &amp; {1 \\le x \\le 3}  \\cr \n   { - 1} &amp; {3 &lt; x \\le 4}  \\cr \n\n } } \\right.$$<br><br>g(x) is continuous<br><br>$$g'(x) = \\left[ {\\matrix{\n   {3(x - 1)(x - 3)} &amp; {0 \\le x \\le 1}  \\cr \n   0 &amp; {1 \\le x \\le 3}  \\cr \n   { - 1} &amp; {3 &lt; x \\le 4}  \\cr \n\n } } \\right.$$<br><br>g(x) is non-differentiable at x = 3",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1krubclxp",
@@ -859,7 +859,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = \\left\\{ {\\matrix{\n   {3\\left( {{{1 - \\left| x \\right|} \\over 2}} \\right)} & {if\\,\\left| x \\right| \\le 2}  \\cr \n   0 & {if\\,\\left| x \\right| > 2}  \\cr \n\n } } \\right.$$</p>\n<p>$$g(x) = f(x + 2) - f(x - 2)$$</p>\n<p>$$f(x) = \\left\\{ {\\matrix{\n   {0,} & {x <  - 2}  \\cr \n   {{3 \\over 2}(1 + x),} & { - 2 \\le x < 0}  \\cr \n   {{3 \\over 2}(1 - x),} & {0 \\le x < 2}  \\cr \n   {0,} & {x > 2}  \\cr \n\n } } \\right.$$</p>\n<p>$$f(x + 2) = \\left\\{ {\\matrix{\n   {0,} & {x <  - 4}  \\cr \n   {{3 \\over 2}( 3 + x),} & { - 4 \\le x <  - 2}  \\cr \n   {{3 \\over 2}( - 1 - x),} & { - 2 \\le x < 0}  \\cr \n   {0,} & {x > 4}  \\cr \n\n } } \\right.$$</p>\n<p>$$f(x - 2) = \\left\\{ {\\matrix{\n   {0,} & {x < 0}  \\cr \n   {{3 \\over 2}(x - 1),} & {0 \\le x < 2}  \\cr \n   {{3 \\over 2}( - 1 - x),} & {2 \\le x < 4}  \\cr \n   {0,} & {x > 4}  \\cr \n\n } } \\right.$$</p>\n<p>$$g(x) = f(x + 2) + f(x - 2)$$</p>\n<p>$$ = \\left\\{ {\\matrix{\n   {{{3x} \\over 2} + 6,} & { - 4 \\le x \\le 2}  \\cr \n   { - {{3x} \\over 2},} & { - 2 < x < 2}  \\cr \n   {{{3x} \\over 2} - 6,} & {2 \\le x \\le 4}  \\cr \n   {0,} & {\\left| x \\right| > 4}  \\cr \n\n } } \\right.$$</p>\n<p>So, n = 0 and m = 4</p>\n<p>$$\\therefore$$ m + n = 4</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "G51JVSYGYUdeZKBExi1klt9xprc",
@@ -915,7 +915,7 @@
     "difficulty": "hard",
     "solution": "min{x $$-$$ [x], 1 $$-$$ x + [x]}<br><br>h(x) = min{x $$-$$ [x], 1 $$-$$ [x $$-$$ [x])}<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktkw1azo/6b49c7e3-ee5e-4cbe-ae02-d9b558e4adaa/0fb9da40-15cd-11ec-91e9-c738901c8293/file-1ktkw1azp-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktkw1azo/6b49c7e3-ee5e-4cbe-ae02-d9b558e4adaa/0fb9da40-15cd-11ec-91e9-c738901c8293/file-1ktkw1azp-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktkw1azo/6b49c7e3-ee5e-4cbe-ae02-d9b558e4adaa/0fb9da40-15cd-11ec-91e9-c738901c8293/file-1ktkw1azp-680w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ktkw1azo/6b49c7e3-ee5e-4cbe-ae02-d9b558e4adaa/0fb9da40-15cd-11ec-91e9-c738901c8293/file-1ktkw1azp.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Evening Shift Mathematics - Limits, Continuity and Differentiability Question 138 English Explanation\"></picture> <br><br>$$\\Rightarrow$$ always continuous in [$$-$$2, 2] but not differentiable at 7 points.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ZnqJ1UOMHCkoMDoY6E1kluvnyb9",
@@ -937,7 +937,7 @@
     "difficulty": "medium",
     "solution": "$$L = \\mathop {\\lim }\\limits_{x \\to a} {{xf(a) - af(x)} \\over {x - a}}$$ [$${0 \\over 0}$$ form] <br><br>Using L' Hospital rule we get<br><br>$$L = \\mathop {\\lim }\\limits_{x \\to a} {{f(a) - af'(x)} \\over 1}$$<br><br>$$f(a) - af'(a) = 4 - 2a$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krxlb5jm",
@@ -959,7 +959,7 @@
     "difficulty": "medium",
     "solution": "Graph of $$\\max \\{ \\sin t:0 \\le t \\le x\\} $$ in $$x \\in [0,\\pi ]$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ks4fiuuk/f1010c15-5a97-48b6-bb02-a9df3bacd67e/badb2ec0-f8f3-11eb-9953-f7d4974e1c68/file-1ks4fiuul.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Evening Shift Mathematics - Limits, Continuity and Differentiability Question 146 English Explanation 1\"><br><br>&amp; graph of cos x for $$x \\in [\\pi ,\\infty )$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ks4fj7pf/f768a0f3-4622-44e4-a6eb-653496f5a211/c4c9c130-f8f3-11eb-ba49-8f74269f66df/file-1ks4fj7pg.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Evening Shift Mathematics - Limits, Continuity and Differentiability Question 146 English Explanation 2\"><br><br>So graph of <br><br>$$f(x) = \\left\\{ {\\matrix{\n   {\\max \\{ \\sin t:0 \\le t \\le x\\} ,} &amp; {0 \\le x \\le \\pi }  \\cr \n   {2 + \\cos x,} &amp; {x &gt; \\pi}  \\cr \n\n } } \\right.$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ks4fjvqw/d4466774-6a71-43a2-9e98-32db84231000/d75bef80-f8f3-11eb-ba49-8f74269f66df/file-1ks4fjvqx.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Evening Shift Mathematics - Limits, Continuity and Differentiability Question 146 English Explanation 3\"><br><br>f(x) is differentiable everywhere in (0, $$\\infty$$)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ks0dcadh",
@@ -998,7 +998,7 @@
     "difficulty": "medium",
     "solution": "<p>f(0) = 0, f(1) = 1 and f(2) = 2</p>\n<p>Let h(x) = f(x) $$-$$ x</p>\n<p>Clearly h(x) is continuous and twice differentiable on (0, 2)</p>\n<p>Also, h(0) = h(1) = h(2) = 0</p>\n<p>$$\\therefore$$ h(x) satisfies all the condition of Rolle's theorem.</p>\n<p>$$\\therefore$$ there exist C<sub>1</sub> $$\\in$$(0, 1) such that h'(c<sub>1</sub>) = 0</p>\n<p>$$\\Rightarrow$$ f'(<sub>1</sub>) $$-$$ 1 = 0 $$\\Rightarrow$$ f'(c<sub>1</sub>) = 1</p>\n<p>also there exist c<sub>2</sub> $$\\in$$(1, 2) such that h'(c<sub>2</sub>) = 0</p>\n<p>$$\\Rightarrow$$ f'(c<sub>2</sub>) = 1</p>\n<p>Now, using Rolle's theorem on [c<sub>1</sub>, c<sub>2</sub>] for f'(x)</p>\n<p>We have f''(c) = 0, c$$\\in$$(c<sub>1</sub>, c<sub>2</sub>)</p>\n<p>Hence, f''(x) = 0 for some x$$\\in$$(0, 2).</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktipaq58",
@@ -1020,7 +1020,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = \\left| {(x - 3)(x + 1)} \\right|\\,.\\,{e^{{{(3x - 2)}^2}}}$$<br><br>$$f(x) = \\left\\{ {\\matrix{\n   {(x - 3)(x + 1).\\,{e^{{{(3x - 2)}^2}}}} &amp; ; &amp; {x \\in (3,\\infty )}  \\cr \n   { - (x - 3)(x + 1).\\,{e^{{{(3x - 2)}^2}}}} &amp; ; &amp; {x \\in [ - 1,3]}  \\cr \n   {(x - 3)\\,.\\,(x + 1).\\,{e^{{{(3x - 2)}^2}}}} &amp; ; &amp; {x \\in ( - \\infty , - 1)}  \\cr \n\n } } \\right.$$<br><br>Clearly, non-differentiable at x = $$-$$1 &amp; x = 3.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kudznmc4",
@@ -1043,7 +1043,7 @@
     "solution": "Given,<br><br>$$f(x) = {{{x^2} - 3x - 6} \\over {{x^2} + 2x + 4}}$$ .... (i)<br><br>$$ \\Rightarrow f'(x) = {{({x^2} + 2x + 4)(2x - 3) - ({x^2} - 3x - 6)(2x + 2)} \\over {{{({x^2} + 2x + 4)}^2}}}$$<br><br>$$ \\Rightarrow f'(x) = {{5x(x + 4)} \\over {{{({x^2} + 2x + 4)}^2}}}$$<br><br> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kxvq4ods/c0d9f8c1-0b8d-49ca-9180-d0b82f8dd647/7361f700-6af3-11ec-a3e9-2bf995e1067d/file-1kxvq4odt.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kxvq4ods/c0d9f8c1-0b8d-49ca-9180-d0b82f8dd647/7361f700-6af3-11ec-a3e9-2bf995e1067d/file-1kxvq4odt.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2021 Paper 1 Online Mathematics - Limits, Continuity and Differentiability Question 42 English Explanation 1\"> <br>Sign scheme for f'(x)<br><br>Here, f is decreasing in the interval ($$-$$2, $$-$$1) and f is increasing in the interval (1, 2).<br><br>Now, $$f( - 4) = {{11} \\over 6},f(0) = {{ - 3} \\over 2}$$ [from Eq. (i)]<br><br>and $$\\mathop {\\lim }\\limits_{x \\to  \\pm \\,\\infty } f(x) = 1$$<br><br>$$\\therefore$$ Range $$ = \\left[ {{{ - 3} \\over 2},{{11} \\over 6}} \\right]$$<br><br>Hence, f(x) is into.<br><br> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kxvq5hra/5b1a7786-3978-4f2e-a73a-0991a1b4aed9/8a12fc60-6af3-11ec-b350-33e20cd86462/file-1kxvq5hrb.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kxvq5hra/5b1a7786-3978-4f2e-a73a-0991a1b4aed9/8a12fc60-6af3-11ec-b350-33e20cd86462/file-1kxvq5hrb.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2021 Paper 1 Online Mathematics - Limits, Continuity and Differentiability Question 42 English Explanation 2\"> <br>f(x) has local maxima at x = $$-$$4<br><br>and local minima at x = 0.",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "HfDKVzSEUhJURn97TG1kjzptva4",
@@ -1066,7 +1066,7 @@
     "solution": "Given functions f : R $$ \\to $$ R be defined <br><br>by f(x) = x<sup>3</sup> $$-$$ x<sup>2</sup> + (x + 1) sin x and g : R $$ \\to $$ R be an arbitrary function.<br><br>Now, let g is continuous at x = 1, then<br><br>$$\\mathop {\\lim }\\limits_{x \\to {1^ - }} {{(fg)(x) - (fg)(1)} \\over {x - 1}}$$<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{(fg)(1 - h) - (fg)(1)} \\over {1 - h - 1}}$$<br><br>$$ \\because $$ $$(fg)(x) = f(x)\\,.\\,g(x)$$ (given)<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{f(1 - h)\\,.\\,g(1 - h) - f(1)\\,.\\,g(1)} \\over { - h}}$$<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{f(1 - h)\\,.\\,g(1)} \\over { - h}}$$<br><br>{$$ \\because $$ f(1) = 0 and g is continuous at x = 1, so g(1 $$-$$ h) = g(1)}<br><br>$$ = g(1)\\mathop {\\lim }\\limits_{h \\to 0} {{{{(1 - h)}^2}( - h) + ( - h)\\sin (1 - h)} \\over { - h}}$$<br><br>$$ = (1 + \\sin 1)g(1)$$<br><br>Similarly, $$\\mathop {\\lim }\\limits_{x \\to {1^ + }} {{(fg)(x) - (fg)(1)} \\over {x - 1}}$$<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{f(1 - h)\\,.\\,g(1)} \\over h}$$<br><br>$$ = g(1)\\mathop {\\lim }\\limits_{h \\to 0} {{{{(1 + h)}^2}(h) + h\\sin (1 + h)} \\over h}$$<br><br>$$ = (1 + \\sin 1)g(1)$$<br><br>$$ \\because $$ RHD and LHD of function fg at x = 1 is finitely exists and equal, so fg is differentiable at x = 1<br><br>Now, let (fg)(x) is differentiable at x = 1, so<br><br>$$\\mathop {\\lim }\\limits_{x \\to {1^ - }} {{(fg)(x) - (fg)(1)} \\over {x - 1}} = \\mathop {\\lim }\\limits_{x \\to {1^ + }} {{(fg)(x) - (fg)(1)} \\over {x - 1}}$$<br><br>$$ \\Rightarrow \\mathop {\\lim }\\limits_{x \\to {1^ - }} {{f(x)g(x) - f(1)g(1)} \\over {x - 1}} = \\mathop {\\lim }\\limits_{x \\to {1^ + }} {{f(x)g(x) - f(1)g(1)} \\over {x - 1}}$$<br><br>$$ \\Rightarrow $$ $$\\mathop {\\lim }\\limits_{x \\to {1^ - }} {{f(x)g(x)} \\over {x - 1}} = \\mathop {\\lim }\\limits_{x \\to {1^ + }} {{f(x)g(x)} \\over {x - 1}}$$ {$$ \\because $$ f(1) = 0}<br><br>$$ \\Rightarrow $$ $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(1 - h)\\,g(1 - h)} \\over { - h}} = \\mathop {\\lim }\\limits_{h \\to 0} {{f(1 + h)\\,g(1 + h)} \\over h}$$<br><br>$$ \\Rightarrow $$ $$\\mathop {\\lim }\\limits_{h \\to 0} {{[{{(1 - h)}^2}( - h) + ( - h)\\sin (1 + h)]g(1 + h)} \\over { - h}}$$<br><br>= $$\\mathop {\\lim }\\limits_{h \\to 0} {{[{{(1 + h)}^2}(h) + (h)\\sin (1 + h)]g(1 + h)} \\over h}$$<br><br>$$\\mathop {\\lim }\\limits_{h \\to 0} \\,[{(1 - h)^2} + \\sin (1 - h)]g(1 - h) $$\n<br><br>$$= \\mathop {\\lim }\\limits_{h \\to 0} \\,[{(1 + h)^2} + \\sin (1 + h)]g(1 + h)$$<br><br>It does not mean that g(x) is continuous or differentiable at x = 1.<br><br>But if g is differentiable at x = 1, then it must be continuous at x = 1 and so fg is differentiable at x = 1.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "GlHY4IIZvTcWb7nwUV1kk3tw92c",
@@ -1089,7 +1089,7 @@
     "solution": "The given function f : R $$ \\to $$ R is satisfying as<br><br>$$f(x + y) = f(x) + f(y) + f(x)f(y)$$<br><br>So, $$f'(x) = \\mathop {\\lim }\\limits_{h \\to 0} {{f(x + h) - f(x)} \\over h}$$<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{f(x) + f(h) + f(x)f(h) - f(x)} \\over h}$$<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{f(h)} \\over h}(1 + f(x))$$<br><br>$$ \\because $$ $$f(x) = xg(x) \\Rightarrow g(x) = {{f(x)} \\over x}$$<br><br>$$ \\therefore $$ $$\\mathop {\\lim }\\limits_{x \\to 0} {{f(x)} \\over x} = \\mathop {\\lim }\\limits_{x \\to 0} g(x) = 1$$ (given)<br><br>$$ \\therefore $$ $$f'(x) = 1 + f(x)) \\Rightarrow {{f'(x)} \\over {1 + f(x)}} = 1$$<br><br>$$ \\Rightarrow {\\log _e}(1 + f(x)) = x + c$$<br><br>$$ \\Rightarrow 1 + f(x) = {e^{x + c}}$$<br><br>$$ \\Rightarrow f(x) = {e^{x + c}} - 1$$<br><br>$$ \\because $$ $$f(0) = 0 \\Rightarrow c = 0$$<br><br>Therefore, $$f(x) = {e^x} - 1$$ is differentiable at every $$x \\in R$$.<br><br>And $$f'(x) = {e^x} \\Rightarrow f'(0) = 1$$<br><br>Now, $$g(x) = f{{(x)} \\over x} = {{{e^x} - 1} \\over x}$$ and if g(0) = 1<br><br>LHD (at x = 0) of <br><br>$$g(x) = \\mathop {\\lim }\\limits_{h \\to 0} {{g(0 - h) - g(0)} \\over { - h}}$$<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{{{e^{ - h}} - 1} \\over { - h}} - 1} \\over { - h}}$$<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{e^{ - h}} - 1 + h} \\over {{h^2}}} = {1 \\over 2}$$<br><br>and, RHD (at x = 0) of<br><br>$$g(x) = \\mathop {\\lim }\\limits_{h \\to 0} {{g(0 + h) - g(0)} \\over h}$$<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{e^h} - 1 - h} \\over {{h^2}}} = {1 \\over 2}$$<br><br>So, if g(0) = 1, then g is differentiable at every x$$ \\in $$R.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "NQ1pUMPuqzxQ3JslnJjgy2xukfah3nal",
@@ -1111,7 +1111,7 @@
     "difficulty": "medium",
     "solution": "$$\\mathop {\\lim }\\limits_{t \\to x} {{{t^2}{f^2}(x) - {x^2}{f^2}(t)} \\over {t - x}} = 0$$\n<br><br>(Using L'Hospital's Rule)<br><br>$$ \\Rightarrow \\mathop {\\lim }\\limits_{t \\to x} {{2t{f^2}(x) - 2{x^2}f(t).f'(t)} \\over 1} = 0$$\n<br><br>$$ \\Rightarrow $$ 2xf<sup>2</sup>(x) - 2x<sup>2</sup>.f(x).f'(x) = 0\n<br><br>$$ \\Rightarrow $$ 2xf(x){f(x) - xf'(x)} = 0 \n<br><br>[x $$ \\ne $$ 0, f(x) $$ \\ne $$ 0 as given <br>function $$f:\\left( {0,\\infty } \\right) \\to \\left( {0,\\infty } \\right)$$ only takes positive value as input and output]\n<br><br>$$ \\Rightarrow f(x) = xf'(x) $$\n<br><br>$$\\Rightarrow {{f'(x)} \\over {f(x)}} = {1 \\over x}$$<br><br>Integrating w.r.t x, we get<br><br>$$ \\Rightarrow ln\\,f(x) = ln\\,x + ln\\,C$$<br><br>$$ \\Rightarrow f(x) = Cx$$<br><br>$$ \\because $$ f(1) = e<br><br>$$ \\Rightarrow C = e;\\,so\\,f(x) = ex$$<br><br>When f(x) = 1 = ex<br><br>$$ \\Rightarrow x = {1 \\over e}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "fskTSdIfHZmkcWjazCjgy2xukfak0lbu",
@@ -1133,7 +1133,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x,} &amp; {x \\in \\left[ { - 1,1} \\right]}  \\cr \n   {{1 \\over 2}\\left( {x - 1} \\right),} &amp; {x &gt; 1}  \\cr \n   {{1 \\over 2}\\left( { - x - 1} \\right),} &amp; {x &lt;  - 1}  \\cr \n\n } } \\right.$$\n<br><br>At x = 1\n<br><br>L.H.L = $$\\mathop {\\lim }\\limits_{x \\to {1^ - }} \\left( {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x} \\right)$$ = $${{\\pi  \\over 4} + {\\pi  \\over 4}}$$ = $${{\\pi  \\over 2}}$$\n<br><br>f(1) = $${{\\pi  \\over 4} + {{\\tan }^{ - 1}}x}$$ = $${{\\pi  \\over 4} + {\\pi  \\over 4}}$$ = $${{\\pi  \\over 2}}$$\n<br><br>R.H.L = $$\\mathop {\\lim }\\limits_{x \\to {1^ + }} \\left( {{1 \\over 2}\\left( {x - 1} \\right)} \\right)$$ = 0\n<br><br>As L.H.L $$ \\ne $$ R.H.L so function is discontinuous $$ \\Rightarrow $$ non differentiable.\n<br><br>At x = -1\n<br><br>L.H.L = $$\\mathop {\\lim }\\limits_{x \\to  - {1^ - }} \\left( {{1 \\over 2}\\left( { - x - 1} \\right)} \\right)$$ = $${{1 \\over 2}\\left( { - \\left( { - 1} \\right) - 1} \\right)}$$ = 0\n<br><br>f(-1) = $${\\pi  \\over 4} + {\\tan ^{ - 1}}\\left( { - 1} \\right)$$ = $${\\pi  \\over 4} - {\\pi  \\over 4}$$ = 0\n<br><br>R.H.L = $$\\mathop {\\lim }\\limits_{x \\to  - {1^ + }} \\left( {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x} \\right)$$ <br><br>= $${\\pi  \\over 4} + {\\tan ^{ - 1}}\\left( { - 1} \\right)$$ = $${\\pi  \\over 4} - {\\pi  \\over 4}$$ = 0\n<br><br>As L.H.L = f(-1) = R.H.L so function is continuous.\n<br><br>$$f'\\left( x \\right) = \\left\\{ {\\matrix{\n   {{1 \\over {1 + {x^2}}},} &amp; {x \\in \\left[ { - 1,1} \\right]}  \\cr \n   {{1 \\over 2},} &amp; {x &gt; 1}  \\cr \n   { - {1 \\over 2},} &amp; {x &lt;  - 1}  \\cr \n\n } } \\right.$$\n<br><br>For differentiability at x = –1\n<br><br>L.H.D = $${ - {1 \\over 2}}$$\n<br><br>R.H.D. = $${{1 \\over 2}}$$\n<br><br>So, non differentiable at x = –1",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "hojNfgyrlIYlVlbyLXjgy2xukf8zuozg",
@@ -1172,7 +1172,7 @@
     "difficulty": "medium",
     "solution": "Given, $$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {{k_1}{{\\left( {x - \\pi } \\right)}^2} - 1,} &amp; {x \\le \\pi }  \\cr \n   {{k_2}\\cos x,} &amp; {x &gt; \\pi }  \\cr \n\n } } \\right.$$\n<br><br>Differentiating one time,\n<br><br>$$f'\\left( x \\right) = \\left\\{ {\\matrix{\n   {2{k_1}\\left( {x - \\pi } \\right),} &amp; {x \\le \\pi }  \\cr \n   { - {k_2}\\sin x,} &amp; {x &gt; \\pi }  \\cr \n\n } } \\right.$$\n<br><br>Differentiating one more time,\n<br><br>$$f''\\left( x \\right) = \\left\\{ {\\matrix{\n   {2{k_1},} &amp; {x \\le \\pi }  \\cr \n   { - {k_2}\\cos x,} &amp; {x &gt; \\pi }  \\cr \n\n } } \\right.$$\n<br><br>As f''(x) is differentiable so\n<br><br>f''($$\\pi $$<sup>+</sup>) = f''($$\\pi $$<sup>-</sup>)\n<br><br>$$ \\Rightarrow $$ -k<sub>2</sub>(-1) = 2k<sub>1</sub>\n<br><br>$$ \\Rightarrow $$ 2k<sub>1</sub> = k<sub>2</sub>\n<br><br>$$ \\therefore $$ (k<sub>1</sub>, k<sub>2</sub>) = $$\\left( {{1 \\over 2},1} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "hI9jZChLQ9ZIKlSkxWjgy2xukg38e1e8",
@@ -1194,7 +1194,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/jgy2xukg9cb630/7979679c-19e2-4b62-94d8-8eeffb5124e1/7c5fccc0-0e14-11eb-8293-3b6cc591631c/file-jgy2xukg9cb631-320w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 6th September Evening Slot Mathematics - Limits, Continuity and Differentiability Question 180 English Explanation\">\n<br>From graph you can see, \n<br>(1) when x &lt; 0 then y = x<sup>2</sup> is greater than y = x. That is why for f(x) that curved part is chosen.\n<br>(2) when 0 $$ \\le $$ x &lt; 1 then y = x is greater than y = x<sup>2</sup>. That is why for f(x) part of that straight line is chosen.\n<br>(3) when x $$ \\ge $$ 1 then y = x<sup>2</sup> is greater than y = x. That is why for f(x) that curved part is chosen.\n\n<br><br>Here on the graph of f(x) there is two sharp corner at x = 0 and x = 1. As we know no function is differentiable at the sharp corner. So f(x) is not differentiable at those two sharp corner.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tmzgtioYKrhGyobz5kjgy2xukg38nmd4",
@@ -1216,7 +1216,7 @@
     "difficulty": "medium",
     "solution": "f : R $$ \\to $$ R, with f(0) = f(1) = 0\n<br>and f'(0) = 0\n<br>$$ \\because $$ f(x) is differentiable and continuous\n<br>and f(0) = f(1) = 0\n<br><br>Applying Rolle’s theorem in [0, 1] for function f(x)\n<br>f'(c) = 0, c $$ \\in $$ (0, 1)\n<br><br>Now again\n<br>$$ \\because $$ f'(c) = 0, f'(0) = 0\n<br>again applying Rolles theorem in [0, c] for function f'(x)\n<br>f''(c<sub>1</sub>) = 0 for some c<sub>1</sub> $$ \\in $$ (0, c) $$ \\in $$ (0, 1)\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "k2z9XqI4UQVKoU9SK7jgy2xukfxgleez",
@@ -1250,7 +1250,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kd4dk6s1e062/21d9cf3a-4d5d-475a-8bd0-77c4639ef713/815c8ba0-5262-11ea-b62d-51ccc5d4afb6/file-7kd4dk6s1e063-347w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 7th January Morning Slot Mathematics - Limits, Continuity and Differentiability Question 202 English Explanation\">\n<br><br>f(x) is non-differentiable at x = 1, 3, 5\n<br><br>$$ \\therefore $$ S is {1, 3, 5}\n<br><br>$$\\sum\\limits_{x \\in S} {f(f(x))} $$\n<br><br>= f(f(1)) + f(f(3)) + f(f (5))\n<br><br>= f(0) + f(2) + f(0)\n<br><br> = 1 + 1 + 1 = 3",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "hdTiOWFqbqx1gGwexE7k9k2k5hiwqze",
@@ -1294,7 +1294,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kd4dk65uo56y/840728b0-d625-4bbf-a75a-b61a0c2f6349/fd24aaa0-462e-11ea-b62d-51ccc5d4afb6/file-7kd4dk65uo56z-355w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 9th January Morning Slot Mathematics - Limits, Continuity and Differentiability Question 197 English Explanation\">\n<br><br>It is clear from graph that, slope of AC $$&gt;$$ slope of CB\n<br><br>$$ \\Rightarrow $$ $${{f\\left( c \\right) - f\\left( a \\right)} \\over {c - a}}$$ $$&gt;$$ $${{f\\left( b \\right) - f\\left( c \\right)} \\over {b - c}}$$\n<br><br>$$ \\Rightarrow $$ $${{f\\left( c \\right) - f\\left( a \\right)} \\over {f\\left( b \\right) - f\\left( c \\right)}}$$ $$ &gt; {{c - a} \\over {b - c}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "WmaUwwhooWtFf9K0w71kjnwez1w",
@@ -1339,7 +1339,7 @@
     "difficulty": "medium",
     "solution": "$$g'(c) = \\mathop {\\lim }\\limits_{x \\to c} {{g(x) - g(c)} \\over {x - c}}$$<br><br>\n$$ \\Rightarrow g'(c) = \\mathop {\\lim }\\limits_{x \\to c} {{\\left| {f(x)} \\right| - \\left| {f(c)} \\right|} \\over {x - c}}$$<br><br>\n$$ \\therefore $$ f(c) = 0<br><br>\n$$ \\Rightarrow g'(c) = \\mathop {\\lim }\\limits_{x \\to c} {{\\left| {f(x)} \\right|} \\over {x - c}}$$<br><br>\n$$ \\Rightarrow g'(c) = \\mathop {\\lim }\\limits_{x \\to c} {{f(x)} \\over {x - c}}$$ if f(x) &gt; 0<br><br>\nand $$g'(c) = \\mathop {\\lim }\\limits_{x \\to c} {{ - f(x)} \\over {x - c}}$$ if f(x) &lt; 0<br><br>\n$$ \\Rightarrow g'(c) = f'(c) =  - f'(c)$$<br><br>\n$$ \\Rightarrow $$ 2f'(c) = 0<br><br>\n$$ \\Rightarrow $$ f'(c) = 0",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "UWIY66U2e4Fst3ZMSEOx2",
@@ -1361,7 +1361,7 @@
     "difficulty": "medium",
     "solution": "f : ($$-$$ 1, 1) $$ \\to $$ R\n<br><br>f(x) = max {$$-$$ $$\\left| x \\right|, - \\sqrt {1 - {x^2}} $$}\n<br><br><img src=\"https://imagex.cdn.examgoal.net/83qIJ557XJj7ty51M/CjGvPRRcFtUFviMZb1Fs9A7xeT334/evvGNaAEx8WvFPL9UuvPQf/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Evening Slot Mathematics - Limits, Continuity and Differentiability Question 225 English Explanation\">\n<br>Non-derivable at 3 points in ($$-$$1, 1)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "txkv94d31U1ZqKVvm4wJ2",
@@ -1383,7 +1383,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {8 + 2x,} &amp; { - 4 \\le x \\le  - 2}  \\cr \n   {{x^2},} &amp; { - 2 \\le x \\le  - 1}  \\cr \n   {\\left| x \\right|,} &amp; { - 1 &lt; x &lt; 1}  \\cr \n   {{x^2},} &amp; {1 \\le x \\le 2}  \\cr \n   {8 - 2x,} &amp; {2 &lt; x \\le 4}  \\cr \n\n } } \\right.$$\n<br><br><img src=\"https://imagex.cdn.examgoal.net/p2z4iAtUDdd7quMsy/ZaFYycuKJDGxhKsByJyXX3VP8339B/7IMZGysxWp5P0P9TZs6PL7/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Morning Slot Mathematics - Limits, Continuity and Differentiability Question 226 English Explanation\">\n<br>f(x)  is not differentiable at \n<br><br>x = $$\\left\\{ { - 2, - 1,0,1,2} \\right\\}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;S = {$$-$$2, $$-$$ 1, 0, 1, 2}\n<br><br>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ei04ZJBaNytj0HKOk0XL4",
@@ -1405,7 +1405,7 @@
     "difficulty": "easy",
     "solution": "f(x) = sin$$\\left| x \\right| - \\left| x \\right|$$ + 2(x $$-$$ $$\\pi $$) cosx\n<br><br>$$ \\because $$&nbsp;&nbsp;sin$$\\left| x \\right|$$ $$-$$ $$\\left| x \\right|$$ is differentiable function at c = 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;k = $$\\phi $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "iZbnjQ958X1XbdDcn9Kdv",
@@ -1427,7 +1427,7 @@
     "difficulty": "medium",
     "solution": "$$\\left| {f\\left( x \\right)} \\right| = \\left\\{ {\\matrix{\n   1 &amp; , &amp; { - 2 \\le x &lt; 0}  \\cr \n   {1 - {x^2}} &amp; , &amp; {0 \\le x &lt; 1}  \\cr \n   {{x^2} - 1} &amp; , &amp; {1 \\le x \\le 2}  \\cr \n\n } } \\right.$$\n<br><br>and&nbsp;&nbsp;$$f\\left( {\\left| x \\right|} \\right) = {x^2} - 1,x \\in \\left[ { - 2,2} \\right]$$\n<br><br>Hence&nbsp;&nbsp;$$g(x) = \\left\\{ {\\matrix{\n   {{x^2}} &amp; , &amp; {x \\in \\left[ { - 2,0} \\right]}  \\cr \n   0 &amp; , &amp; {x \\in \\left[ {0,1} \\right)}  \\cr \n   {2\\left( {{x^2} - 1} \\right)} &amp; , &amp; {x \\in \\left[ {1,2} \\right]}  \\cr \n\n } } \\right.$$\n<br><br>It is not differentiable at x = 1",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "fG7JGryJ49wVQOWIzE1lB",
@@ -1449,7 +1449,7 @@
     "difficulty": "medium",
     "solution": "$${{f'(x)} \\over {f(x)}} = 1\\forall x \\in R$$\n<br><br>Intergrate &amp; use f(1) = 2\n<br><br>f(x) = 2e<sup>x-1</sup> $$ \\Rightarrow $$   f '(x) = 2e<sup>x$$-$$1</sup>\n<br><br>h(x) = f(f(x)) $$ \\Rightarrow $$&nbsp;h'(x) = f '(f(x))  f'(x)\n<br><br>h'(1) = f '(f(1)) f'(1)\n<br><br>= f '(2) f '(1)\n<br><br>= 2e . 2 = 4e",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "00UBMw9xgFLk3qTNH0S2d",
@@ -1471,7 +1471,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/FZLDn4xcXUZzhUKyh/cgVZMUiizqh623qyrhj9PFKvYXRYF/IZkROwC9rBT7nDssogwE3y/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th January Morning Slot Mathematics - Limits, Continuity and Differentiability Question 219 English Explanation\">",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "5lu85xMvzqpVj7b8OfEQ8",
@@ -1493,7 +1493,7 @@
     "difficulty": "medium",
     "solution": "The general formula for indeterminate form 1<sup>$$\\infty $$</sup> is\n<br><br>$$\\mathop {\\lim }\\limits_{x \\to a} {\\left( {f\\left( x \\right)} \\right)^{g\\left( x \\right)}} = {e^{\\mathop {\\lim }\\limits_{x \\to a} g\\left( x \\right)\\left( {f\\left( x \\right) - 1} \\right)}}$$\n<br><br>I = $$\\mathop {\\lim }\\limits_{x \\to 0} {\\left( {{{1 + f(3 + x) - f(3)} \\over {1 + f(2 - x) - f(2)}}} \\right)^{{1 \\over x}}}$$\n<br><br>Here I is in 1<sup>$$\\infty $$</sup> form.\n<br><br>$$ \\therefore $$ I = $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{1 + f\\left( {3 + x} \\right) - f\\left( 3 \\right)} \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}} - 1} \\right){1 \\over x}}}$$\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{1 + f\\left( {3 + x} \\right) - f\\left( 3 \\right) - 1 - f\\left( {2 - x} \\right) + f\\left( 2 \\right)} \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}}} \\right){1 \\over x}}}$$\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{f\\left( {3 + x} \\right) - f\\left( 3 \\right) - f\\left( {2 - x} \\right) + f\\left( 2 \\right)} \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}}} \\right){1 \\over x}}}$$\n<br><br>Here $${{{f\\left( {3 + x} \\right) - f\\left( 3 \\right) - f\\left( {2 - x} \\right) + f\\left( 2 \\right)} \\over x}}$$ is in $${0 \\over 0}$$ form.\n<br><br>So using L'Hopital rule we get\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{f'\\left( {3 + x} \\right) + f'\\left( {2 - x} \\right)} \\over 1}} \\right).\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{1 \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}}} \\right)}}$$\n<br><br>= $${e^{\\left( {f'\\left( 3 \\right) + f'\\left( 2 \\right)} \\right).1}}$$\n<br><br>= e<sup>0</sup>  [ as given ƒ'(3) + ƒ'(2) = 0 ]\n<br><br>= 1",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "E1UPnoGMUo46JcFfe7wpS",
@@ -1515,7 +1515,7 @@
     "difficulty": "medium",
     "solution": "ƒ(x) = 15 – |x – 10|\n<br><br>g(x) = ƒ(ƒ(x)) = 15 – |ƒ(x) – 10|\n<br><br>= 15 – |15 – |x – 10| – 10|\n<br><br>= 15 – |5 – |x – 10||\n<br><br>As this is a linear expression so it is non differentiable when value inside the modulus is zero.\n<br><br>So non differentiable when\n<br><br>x – 10 = 0 $$ \\Rightarrow $$ x = 10\n<br><br>and 5 – |x – 10| = 0\n<br><br>$$ \\Rightarrow $$ |x – 10| = 5\n<br><br>$$ \\Rightarrow $$ x - 10 = $$ \\pm $$ 5\n<br><br>$$ \\Rightarrow $$ x = 5, 15\n<br><br>$$ \\therefore $$ g(x) is not differentiable at x = 5, 10, 15. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wbbrKgGHj0qYnoygPU1kjte847a",
@@ -1538,7 +1538,7 @@
     "solution": "We have,<br><br>$${(f(0))^2} + {(f'(0))^2} = 85$$<br><br>and $$f:R \\to [ - 2,2]$$<br><br>(a) Since, f is twice differentiable function, so f is continuous function.<br><br>$$ \\therefore $$ This is true for every continuous function.<br><br>Hence, we can always find x $$ \\in $$ (r, s), where f(x) is one-one.<br><br>$$ \\therefore $$ This statement is true.<br><br>(b) By L.M.V.T.<br><br>$$f'(c) = {{f(b) - f(a)} \\over {b - a}}$$<br><br>$$ \\Rightarrow |f'(c)| = \\left| {{{f(b) - f(a)} \\over {b - a}}} \\right|$$<br><br>$$ \\Rightarrow |f'({x_0})| = \\left| {{{f(0) - f( - 4)} \\over {0 + 4}}} \\right|$$<br><br>$$ = \\left| {{{f(0) - f( - 4)} \\over 4}} \\right|$$<br><br>Range of f is [$$-$$2, 2]<br><br>$$ \\therefore $$ $$ - 4 \\le f(0) - f( - 4) \\le 4$$<br><br>$$ \\Rightarrow 0 \\le \\left| {{{f(0) - f( - 4)} \\over 4}} \\right| \\le 1$$<br><br>Hence, |f'(x<sub>0</sub>)| = 1.<br><br>Hence, statement is true.<br><br>(c) As no function is given, then we assume<br><br>$$f(x) = 2\\sin \\left( {{{\\sqrt {85} x} \\over 2}} \\right)$$<br><br>$$ \\therefore $$ $$f'(x) = \\sqrt {85} \\cos \\left( {{{\\sqrt {85} x} \\over 2}} \\right)$$<br><br>Now, $${(f(0))^2} + {(f'(0))^2} = {(2\\sin 0)^2} + {(\\sqrt {85} \\cos 0)^2}$$<br><br>$${(f(0))^2} + {(f'(0))^2} = 85$$<br><br>and $$\\mathop {\\lim }\\limits_{x \\to \\infty } f(x)$$ does not exists.<br><br>Hence, statement is false.<br><br>(d) From option b, $$|f'({x_0})|\\, \\le 1$$<br><br>$${x_0} \\in ( - 4,0)$$<br><br>$$ \\therefore $$ $${(f'({x_0}))^2}\\, \\le 1$$<br><br>Hence, $$g({x_0}) = {(f({x_0}))^2} + {(f'({x_0}))^2}\\, \\le 4 + 1$$<br><br>[$$ \\because $$ f(x<sub>0</sub>) $$ \\in $$ [$$-$$2, 2]<br><br>$$ \\Rightarrow g({x_0})\\, \\le 5$$<br><br>Now, let p $$ \\in $$ ($$-$$4, 0) for which g(p) = 5<br><br>Similarly, let q be smallest positive number q $$ \\in $$ (0, 4)<br><br>such that g(q) = 5<br><br>Hence, by Rolle's theorem is (p, q)<br><br>g'(c) = 0 for $$\\alpha $$ $$ \\in $$ ($$-$$4, 4) and since g(x) is greater than 5 as we move from x = p to x = q<br><br>and f(x))<sup>2</sup> $$ \\le $$ 4<br><br>$$ \\Rightarrow $$ (f'(x))<sup>2</sup> $$ \\ge $$ 1 in (p, q)<br><br>Thus, g'(c) = 0<br><br>$$ \\Rightarrow $$ f'f + f'f\" = 0<br><br>So, f($$\\alpha $$) + f\"($$\\alpha $$) = 0 and f'($$\\alpha $$) $$ \\ne $$ 0<br><br>Hence, statement is true.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "y7O1HQyyVZdVut5VBA1kjtewsez",
@@ -1561,7 +1561,7 @@
     "solution": "We have,<br><br>$$f'(x) = {e^{(f(x) - g(x))}}g'(x)\\forall x \\in R$$<br><br>$$ \\Rightarrow f'(x) = {{{e^{f(x)}}} \\over {{e^{g(x)}}}}g'(x)$$<br><br>$$ \\Rightarrow {{f'(x)} \\over {{e^{f(x)}}}} = {{g'(x)} \\over {{e^{g(x)}}}}$$<br><br>$$ \\Rightarrow {e^{ - f(x)}}f'(x) = {e^{ - g(x)}}g'(x)$$<br><br>On integrating both side, we get<br><br>$${e^{ - f(x)}}$$ = $${e^{ - g(x)}}$$ + C<br><br>At x = 1<br><br>$${e^{ - f(1)}}$$ = $${e^{ - g(1)}}$$ + C<br><br>$${e^{ - 1}} = {e^{ - g(1)}} + C$$ [$$ \\because $$ f(1) = 1] ...(i)<br><br>At x = 2<br><br>$${e^{ - f(2)}}$$ = $${e^{ - g(2)}}$$ + C<br><br>$$ \\Rightarrow $$ $${e^{ - f(2)}}$$ = $${e^{ - 1}}$$ + C [$$ \\because $$ g(2) = 1] .... (ii)<br><br>From Eqs. (i) and (ii)<br><br>$${e^{ - f(2)}}$$ = $$2{e^{ - 1}}$$ $$-$$ $${{e^{ - g(1)}}}$$ ...(iii)<br><br>$$ \\Rightarrow $$ $${e^{ - f(2)}}$$ &gt; $$2{e^{ - 1}}$$<br><br>We know that, e<sup>$$-$$x</sup> is decreasing<br><br>$$ \\therefore $$ $$-$$f(2) &lt; log<sub>e</sub> 2$$-$$1<br><br>f(2) &gt; 1 $$-$$ log<sub>e</sub> 2<br><br>$$ \\Rightarrow $$ $${{e^{ - g(1)}}}$$ + $${e^{ - f(2)}}$$ = $$2{e^{ - 1}}$$ [from Eq. (iii)]<br><br>$$ \\Rightarrow $$ $${{e^{ - g(1)}}}$$ &lt; $$2{e^{ - 1}}$$ $$-$$g(1) &lt; log<sub>e</sub> 2 $$-$$1<br><br>$$ \\Rightarrow $$ g(1) &gt;$$-$$log<sub>e</sub> 2",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ppH8dXaEhhGCho4t",
@@ -1583,7 +1583,7 @@
     "difficulty": "medium",
     "solution": "Check differtiability at x = $$\\pi $$ and x = 0\n<br><br><b>at x = 0 : </b>\n<br><br>We have L. H. D = $$\\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {0 - h} \\right) - f\\left( 0 \\right)} \\over { - h}}$$\n<br><br>= $$\\mathop {\\lim }\\limits_{h \\to 0} {{\\left| { - h - \\pi } \\right|\\left( {{e^{\\left| { - h} \\right|}} - 1} \\right)\\sin \\left| h \\right| - 0} \\over { - h}} = 0$$\n<br><br>R. H. D = $$\\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {0 + h} \\right) - f\\left( 0 \\right)} \\over h}$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{\\left| {h - \\pi } \\right|\\left( {{e^{\\left| h \\right|}} - 1} \\right)\\sin \\left| h \\right| - o} \\over h}$$\n<br><br>= 0\n<br><br>$$\\therefore,\\,\\,$$ LHD = RHD\n<br><br>Therefore, function is differentiable at x = $$\\pi $$.\n<br><br><b>at x = $$\\pi $$ : </b>\n<br><br>L. H. D = $$\\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {\\pi  - h} \\right) - f\\left( \\pi  \\right)} \\over { - h}}$$\n<br><br>= $$\\mathop {\\lim }\\limits_{h \\to 0} {{\\left| {\\pi  - h - \\pi } \\right|\\left( {{e^{\\left| {\\pi  - h} \\right|}} - 1} \\right)\\sin \\left| {\\pi  - h} \\right| - 0.} \\over { - h}}$$\n<br><br>= 0\n<br><br>RH. D = $$\\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {\\pi  + h} \\right) - f\\left( \\pi  \\right)} \\over h}$$\n<br><br>= $$\\mathop {\\lim }\\limits_{h \\to 0} {{\\left| {\\pi  + h - \\pi } \\right|\\left( {{e^{\\left| {\\pi  + h} \\right|}} - 1} \\right)\\sin \\left| {\\pi  + h} \\right| - 0} \\over h}$$ \n<br><br>= 0\n<br><br>$$\\therefore\\,\\,\\,$$ L. H. D = R H D\n<br><br>Therefore, function is differentiable at x = $$\\pi $$,\n<br><br>Since, the function f(x) is differentiable at all the points including 0 and $$\\pi $$.\n<br><br>So, f(x) is differentiable everywhere.\n<br><br>Therefore, set S is empty set. \n<br><br>S = $$\\phi $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "LyYVn5Xz5QYZhjEVYw7qG",
@@ -1605,7 +1605,7 @@
     "difficulty": "medium",
     "solution": "S = {($$\\lambda $$, $$\\mu $$) $$ \\in $$ <b>R</b> $$ \\times $$ <b>R</b> :  f(t) = $$\\left( {\\left| \\lambda  \\right|{e^{\\left| t \\right|}} - \\mu } \\right)$$ sin $$\\left( {2\\left| t \\right|} \\right),$$ t $$ \\in $$ <b>R</b>\n<br><br>f(t) = $$\\left( {\\left| \\lambda  \\right|{e^{\\left| t \\right|}} - \\mu } \\right)\\sin \\left( {2\\left| t \\right|} \\right)$$\n<br><br>= $$\\left\\{ {\\matrix{\n   {\\left( {\\left| \\lambda  \\right|{e^t} - \\mu } \\right)\\sin 2t,} &amp; {t &gt; 0}  \\cr \n   {\\left( {\\left| \\lambda  \\right|{e^{ - t}} - \\mu } \\right)\\left( { - \\sin 2t} \\right),} &amp; {t &lt; 0}  \\cr \n\n } } \\right.$$\n<br><br>f'(t) = $$\\left\\{ {\\matrix{\n   {\\left( {\\left| \\lambda  \\right|{e^t}} \\right)\\sin 2t + \\left( {\\left| \\lambda  \\right|{e^t} - \\mu } \\right)\\left( {2\\cos 2t} \\right),\\,\\,t &gt; 0}  \\cr \n   {\\left| \\lambda  \\right|{e^{ - t}}\\sin 2t + \\left( {\\left| \\lambda  \\right|{e^{ - t}} - \\mu } \\right)\\left( {-2\\cos 2t} \\right),t &lt; 0}  \\cr \n\n } } \\right.$$\n<br><br>As,  f(t)  is differentiable\n<br><br>$$ \\therefore $$&nbsp;&nbsp;<b>LHD</b> = <b>RHD</b>  at  t = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp; $$\\left| \\lambda  \\right|$$ . sin2(0) + $$\\left( {\\left| \\lambda  \\right|{e^0} - \\mu } \\right)$$2cos(0)\n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= $$\\left| \\lambda  \\right|{e^{ - 0}}\\,$$ . sin 2(0) $$-$$ 2 cos (0) $$\\left( {\\left| \\lambda  \\right|{e^{ - 0}} - \\mu } \\right)$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 0 + $$\\left( {\\left| \\lambda  \\right| - \\mu } \\right)$$2 = 0 $$-$$ 2$$\\left( {\\left| \\lambda  \\right| - \\mu } \\right)$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;4$$\\left( {\\left| \\lambda  \\right| - \\mu } \\right)$$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$\\left| \\mu  \\right|$$&nbsp;=&nbsp;$$\\mu $$\n<br><br>So, S $$ \\equiv $$ ($$\\lambda $$, $$\\mu $$) = {$$\\lambda $$ $$ \\in $$ <b>R</b> &amp; $$\\mu $$ $$ \\in $$ [0, $$\\infty $$)}\n<br><br>Therefore set S is subset of R $$ \\times $$ [0, $$\\infty $$)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "aFiRiIu87JgdTUeLXl1kjy090on",
@@ -1628,7 +1628,7 @@
     "solution": "f'(x) is increasing<br><br>For some x in $$\\left( {{1 \\over 2},\\,1} \\right)$$<br><br>f'(x) = 1 [LMVT]<br><br>$$ \\therefore $$ f'(1) &gt; 1",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l0ru8eo8",
@@ -1651,7 +1651,7 @@
     "solution": "<p>$$f(x) = a\\cos (|{x^3} - x|) + b|x|\\sin (|{x^3} + x|)$$</p>\n<p>If $${x^3} - x \\ge 0$$</p>\n<p>$$ \\Rightarrow \\cos \\left| {{x^3} - x} \\right| = \\cos ({x^3} - x)$$</p>\n<p>and if $${x^3} - x \\le 0$$</p>\n<p>$$ \\Rightarrow \\cos |{x^3} - x| = \\cos ({x^3} - x)$$</p>\n<p>$$\\therefore$$ $$\\cos (|{x^3} - x|) = \\cos ({x^3} - x),\\,\\forall x \\in R$$ ..... (i)</p>\n<p>Again, if $${x^3} + x \\ge 0$$</p>\n<p>$$ \\Rightarrow |x|\\sin (|{x^3} + x|) = x\\sin ({x^3} + x)$$</p>\n<p>and if $${x^3} + x \\le 0$$</p>\n<p>$$ \\Rightarrow |x|\\sin (|{x^3} + x|) =  - x\\sin \\{  - ({x^3} + x)\\} $$</p>\n<p>$$\\therefore$$ $$|x|\\sin (|{x^3} + x|) = x\\sin ({x^3} + x),\\,\\forall x \\in R$$ ...... (ii)</p>\n<p>$$ \\Rightarrow f(x) = a\\cos (|{x^3} - x|) + b|x|\\sin (|{x^3} + x|)$$</p>\n<p>$$\\therefore$$ $$f(x) = a\\cos ({x^3} - x) + bx\\sin ({x^3} + x)$$ ..... (iii)</p>\n<p>For a function to be differentiable at x = 0, the function must be continuous.</p>\n<p>$$f(0) = a\\cos (0 - 0) + b(0)\\sin (0) = a$$</p>\n<p>Therefore,</p>\n<p>$$f({0^ + }) = \\mathop {\\lim }\\limits_{h \\to \\infty } [a\\cos ({h^3} - h) + bh\\sin ({h^3} + h)] = 0$$</p>\n<p>$$f({0^ - }) = \\mathop {\\lim }\\limits_{h \\to \\infty } [a(\\cos ( - {h^3} + h) + b( - h)\\sin ( - {h^3} - h)]$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to \\infty } [a\\cos ({h^3} - h) + bh\\sin ({h^3} + h)] = 0$$</p>\n<p>which is continuous at x = 0; hence, f(x) is differentiable for all values of a and b.</p>\n<p>Therefore,</p>\n<p>$$f(1) = a\\cos (1 - 1) + 1\\sin (1 + 1) = a + b\\sin 2$$</p>\n<p>$$f({1^ + }) = \\mathop {\\lim }\\limits_{h \\to 0} a\\cos {(1 + h)^3} - (1 + h) + b(1 + h)\\sin {(1 + h)^3} + (1 + h)$$</p>\n<p>$$ = f(1)$$</p>\n<p>$$f({1^ - }) = \\mathop {\\lim }\\limits_{h \\to 0} a\\cos {(1 - h)^3} - (1 - h) + b(1 - h)\\sin {(1 - h)^3} + (1 - h)$$</p>\n<p>$$ = f(1)$$</p>\n<p>Thus, f(x) is continuous and we can also see that f is differentiable at x = 0 and x = 1.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "dTkaSbOpd0NkpeiE",
@@ -1673,7 +1673,7 @@
     "difficulty": "medium",
     "solution": "$$g\\left( x \\right) = f\\left( {f\\left( x \\right)} \\right)$$\n<br><br>In the neighbourhood of $$x=0,$$\n<br><br>$$f\\left( x \\right) = \\left| {\\log 2 - \\sin \\,x} \\right| = \\left( {\\log 2 - \\sin x} \\right)$$ \n<br><br>$$\\therefore$$ $$g\\left( x \\right) = \\left| {\\log 2 - \\sin \\left. {\\left| {\\log 2 - \\sin x} \\right|} \\right|} \\right.$$\n<br><br>$$ = \\left( {\\log 2 - \\sin \\left( {\\log 2 - \\sin x} \\right)} \\right)$$\n<br><br>$$\\therefore$$ $$g(x)$$ is differentiable\n<br><br>and $$g'\\left( x \\right) =  - \\cos \\left( {\\log 2 - \\sin x} \\right)\\left( { - \\cos x} \\right)$$\n<br><br>$$ \\Rightarrow g'\\left( 0 \\right) = \\cos \\left( {\\log 2} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "hF8RmsEat5uIVIgrYz5HO",
@@ -1695,7 +1695,7 @@
     "difficulty": "medium",
     "solution": "As &nbsp;&nbsp;f(x) is differentiable at x = 1\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$$\\mathop {\\lim }\\limits_{x \\to {1^ - }} \\left( { - x} \\right) = \\mathop {\\lim }\\limits_{x \\to {1^ + }} \\left( {a + {{\\cos }^{ - 1}}\\left( {x + b} \\right)} \\right) = f(1)$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$-$$1 $$=$$ a + cos<sup>$$-$$1</sup>(1 + b)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;cos<sup>$$-$$1</sup> (1 + b) $$=$$ $$-$$1 $$-$$ a . . . . . .(1)\n<br><br>As &nbsp;&nbsp;f(x) is differentiable, so, \n<br><br>2 . H . D $$=$$ R . H . D\n<br><br>Here, L . H . D $$=$$ $$\\mathop {\\lim }\\limits_{h \\to 0} $$ $${{f\\left( {1 - h} \\right) - f\\left( 1 \\right)} \\over { - h}}$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{ - \\left( {1 - h} \\right) - \\left( { - 1} \\right)} \\over { - h}}$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{x \\to 0} {{ - 1 + h + 1} \\over { - h}}$$\n<br><br>$$=$$ $$ = \\mathop {\\lim }\\limits_{x \\to 0} {h \\over { - h}}$$\n<br><br>$$=$$ $$-$$ 1\n<br><br>R. H. D $$ = \\mathop {\\lim }\\limits_{x \\to 0} {{f\\left( {1 + h} \\right) - f\\left( 1 \\right)} \\over h}$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{a + {{\\cos }^{ - 1}}\\left( {1 + h + b} \\right) - \\left[ {a + {{\\cos }^{ - 1}}\\left( {1 + b} \\right)} \\right]} \\over h}$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{{\\cos }^{ - 1}}\\left( {1 + h + b} \\right) - {{\\cos }^{ - 1}}\\left( {1 + b} \\right)} \\over h}\\left[ {{0 \\over 0}\\,\\,form\\left. \\, \\right]} \\right.$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{ - 1} \\over {\\sqrt {1 - {{\\left( {1 + h + b} \\right)}^2}} }}$$ [ Using L' Hospital Rule]\n<br><br>$$ = {{ - 1} \\over {\\sqrt {1 - {{\\left( {1 + b} \\right)}^2}} }}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$$ - 1 = {{ - 1} \\over {\\sqrt {1 - {{\\left( {1 + b} \\right)}^2}} }}$$\n<br><br>$$ \\Rightarrow 1 - {\\left( {1 + b} \\right)^2} = 1$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$${\\left( {1 + b} \\right)^2} = 0$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$b =  - 1$$\n<br><br>putting value of  b in equation (1), we  get, \n<br><br>$${\\cos ^{ - 1}}\\left( {1 - 1} \\right) =  - 1 - a$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${\\pi  \\over 2} =  - 1 - a$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$a =  - 1 - {\\pi  \\over 2}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$${a \\over b} = {{ - 1 - {\\pi  \\over 2}} \\over { - 1}} = 1 + {\\pi  \\over 2} = {{\\pi  + 2} \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l1392lfz",
@@ -1718,7 +1718,7 @@
     "solution": "<p>Rewrite f as</p>\n<p>$$f(x) = \\left\\{ {\\matrix{\n   {g(x),} & {x > 0}  \\cr \n   0 & {x = 0}  \\cr \n   { - g(x),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>We have, $$f'(x) = \\left\\{ {\\matrix{\n   {g'(x),} & {x > 0}  \\cr \n   { - g'(x),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>At x = 0</p>\n<p>$$f'(0) = \\mathop {\\lim }\\limits_{h \\to 0} {{f(0 + h) - f(0)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{g(h) - 0} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{g(h) - g(0)} \\over h} = g'(0)$$</p>\n<p>$$f'(x) = \\left\\{ {\\matrix{\n   {g'(x),} & {x \\ge 0}  \\cr \n   { - g'(x),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>f is differentiable at x = 0.</p>\n<p>$$\\therefore$$ Option (a) is correct.</p>\n<p>(b) $$h(x) = {e^{|x|}} = \\left\\{ {\\matrix{\n   {{e^x},} & {x \\ge 0}  \\cr \n   {{e^{ - x}},} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>$$ \\Rightarrow h'(x) = \\left\\{ {\\matrix{\n   {{e^x},} & {x \\ge 0}  \\cr \n   { - {e^{ - x}},} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>$$ \\Rightarrow h'({0^ + }) = 1$$</p>\n<p>and $$h'({0^ - }) =  - 1$$</p>\n<p>So, h(x) is not differentiable at x = 0.</p>\n<p>$$\\therefore$$ Option (b) is not correct.</p>\n<p>(c) $$(foh)(x) = f\\{ h(x)\\} $$, as $$h(x) > 0$$</p>\n<p>$$ = \\left\\{ {\\matrix{\n   {g({e^x}),} & {x \\ge 0}  \\cr \n   {g({e^{ - x}}),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>$$ \\Rightarrow (foh)'(x) = \\left\\{ {\\matrix{\n   {{e^x}g'({e^x}),} & {x \\ge 0}  \\cr \n   { - {e^x}g'({e^{ - x}}),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>$$ \\Rightarrow (foh)'({0^ + }) = g'(1),(foh)'({0^ - })$$</p>\n<p>$$ =  - g'(1)$$</p>\n<p>So, $$(hof)(x)$$ is not differentiable at</p>\n<p>$$x = 0$$.</p>\n<p>$$\\therefore$$ Option (c) is not correct.</p>\n<p>(d) $$(hof)(x) = {e^{\\left| {f(x)} \\right|}} = \\left\\{ {\\matrix{\n   {{e^{\\left| {g(x)} \\right|}},} & {x \\ne 0}  \\cr \n   {{e^0} = 1,} & {x = 0}  \\cr \n\n } } \\right.$$</p>\n<p>Now, $$(hof)'(0) = \\mathop {\\lim }\\limits_{h \\to 0} {{{e^{\\left| {g(x)} \\right|}} - 1} \\over x}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{e^{\\left| {g(x)} \\right|}} - 1} \\over {|g(x)|}}\\,.\\,{{|g(x)|} \\over x}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{e^{\\left| {g(x)} \\right|}} - 1} \\over {|g(x)|}}\\,.\\,\\mathop {\\lim }\\limits_{h \\to 0} {{\\left| {g(x)| - 0} \\right|} \\over {|x|}}\\,.\\mathop {\\lim }\\limits_{h \\to 0} {{|x|} \\over x}$$</p>\n<p>$$ = 1\\,.\\,g'(0)\\,.\\,\\mathop {\\lim }\\limits_{h \\to 0} {{|x|} \\over x}$$</p>\n<p>= 0, as g'(0) = 0</p>\n<p>$$\\therefore$$ Option (d) is correct.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "RtZ9MK0tEqbtwJlp",
@@ -1740,7 +1740,7 @@
     "difficulty": "medium",
     "solution": "Since $$g(x)$$ is differentiable, -\n<br><br>it will be continuous at $$x=3$$\n<br><br>$$\\therefore$$ $$\\mathop {\\lim }\\limits_{x \\to {3^ - }} g\\left( x \\right) = \\mathop {\\lim }\\limits_{x \\to {3^ + }} g\\left( x \\right)$$\n<br><br>$$2k = 3m + 2\\,\\,\\,\\,\\,...\\left( 1 \\right)$$ \n<br><br>Also $$g(x)$$ is differentiable at $$x=0$$\n<br><br>$$\\therefore$$ $$\\mathop {\\lim }\\limits_{x \\to {3^ - }} g'\\left( x \\right) = \\mathop {\\lim }\\limits_{x \\to {3^ + }} g'\\left( x \\right)$$\n<br><br>$${K \\over {2\\sqrt {3 + 1} }} = m$$\n<br><br>$$k=4m$$ $$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( 2 \\right)$$\n<br><br>Solving $$(1)$$ and $$(2)$$, we get\n<br><br>$$m = {2 \\over 5},\\,\\,k = {8 \\over 5}$$\n<br><br>$$\\therefore$$ $$k+m=2$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ky893ufw",
@@ -1763,7 +1763,7 @@
     "solution": "Given that $$f:(a,b) \\to [1,\\infty )$$<br/><br/>and $$g(x) = \\left\\{ {\\matrix{\n   0 & , & {x < a}  \\cr \n   {\\int_a^x {f(t)dt} } & , & {a \\le x \\le b}  \\cr \n   {\\int_a^b {f(t)dt} } & , & {x > b}  \\cr \n\n } } \\right.$$<br/><br/>Now, $$g({a^ - }) = 0 = g({a^ + }) = g(a)$$<br/><br/>[as $$g({a^ + }) = \\mathop {\\lim }\\limits_{x \\to {a^ + }} \\int_a^x {f(t)dt = 0} $$ and $$g(a) = \\int_a^a {f(t)dt = 0} $$]<br/><br/>$$g({b^ - }) = g({b^ + }) = g(b) = \\int_a^b {f(t)dt} $$<br/><br/>$$\\Rightarrow$$ g is continuous, $$\\forall$$x$$\\in$$R.<br/><br/>Now, $$g'(x) = \\left\\{ {\\matrix{\n   0 & , & {x < a}  \\cr \n   {f(x)} & , & {a < x < b}  \\cr \n   0 & , & {x > b}  \\cr \n\n } } \\right.$$<br/><br/>g'(a<sup>$$-$$</sup>) = 0 but g'(a<sup>+</sup>) = f(a) $$\\ge$$ 1<br/><br/>[$$\\because$$ Range of f(x) is [1, $$\\infty$$), $$\\forall$$ x $$\\in$$[a, b]]<br/><br/>$$\\Rightarrow$$ g is non-differentiable at x = a<br/><br/>and g'(b<sup>+</sup>) = 0<br/><br/>but g'(b<sup>$$-$$</sup>) = f(b) $$\\ge$$ 1<br/><br/>$$\\Rightarrow$$ g is not differentiable at x = b.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "MCQM"
   },
   {
     "id": "1ky8brw7r",
@@ -1804,7 +1804,7 @@
     "solution": "<p>To check differentiable at x = 0</p>\n<p>$$R\\{ f'(0)\\}  = \\mathop {\\lim }\\limits_{h \\to 0} {{f(0 + h) - f(0)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{h^2}\\left| {\\cos {\\pi  \\over h}} \\right| - 0} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} h.\\,\\left| {\\cos {\\pi  \\over h}} \\right| = 0$$</p>\n<p>$$L\\{ f'(0)\\}  = \\mathop {\\lim }\\limits_{h \\to 0} {{f(0 - h) - f(0)} \\over { - h}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{h^2}\\left| {\\cos \\left( { - {\\pi  \\over h}} \\right)} \\right| - 0} \\over { - h}}$$<?p>\n<p>$$ = 0$$</p>\n<p>So, f(x) is differentiable at x = 0</p>\n<p>To check differentiability at x = 2</p>\n<p>$$R\\{ f'(2)\\}  = \\mathop {\\lim }\\limits_{h \\to 0} {{f(2 + h) - f(2)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{{(2 + h)}^2}\\left| {\\cos \\left( {{\\pi  \\over {2 + h}}} \\right)} \\right| - 0} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{{(2 + h)}^2}.\\cos \\left( {{\\pi  \\over {2 + h}}} \\right)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{{(2 + h)}^2}.\\sin \\left( {{\\pi  \\over 2} - {\\pi  \\over {2 + h}}} \\right)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{{(2 + h)}^2}.\\sin \\left( {{{\\pi h} \\over {2(2 + h)}}} \\right)} \\over {h.{\\pi  \\over {2(2 + h)}}.{\\pi  \\over {2(2 + h)}}}}$$</p>\n<p>$$ \\Rightarrow R\\left( {f'(2)} \\right) = \\pi $$</p>\n<p>$$L\\left( {f'(2)} \\right) = \\mathop {\\lim }\\limits_{h \\to 0} {{f(2 - h) - f(2)} \\over { - h}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{{(2 - h)}^2}.\\left| {\\cos {\\pi  \\over {2 - h}}} \\right| - {2^2}.\\left| {\\cos {\\pi  \\over 2}} \\right|} \\over { - h}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{{(2 - h)}^2} - \\left( { - \\cos {\\pi  \\over {2 - h}}} \\right) - 0} \\over { - h}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{ - {{(2 - h)}^2}.\\sin \\left( {{\\pi  \\over 2} - {\\pi  \\over {2 - h}}} \\right)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{{(2 - h)}^2}.\\sin \\left( { - {{\\pi h} \\over {2(2 - h)}}} \\right)} \\over {h \\times {{ - \\pi } \\over {2(2 - h)}} \\times {{ - \\pi } \\over {2(2 - h)}}}}$$<?p>\n<p>$$ \\Rightarrow L(f'(2)) =  - \\pi $$</p>\n<p>Thus, f(x) is differentiable at x = 0 but not at x = 2.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "vgUhS2v8cEKHz8Ex",
@@ -1826,7 +1826,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = \\left| {x - 2} \\right| = \\left\\{ {\\matrix{\n   {x - 2\\,\\,\\,,} &amp; {x - 2 \\ge 0}  \\cr \n   {2 - x\\,\\,\\,,} &amp; {x - 2 \\le 0}  \\cr \n\n } } \\right.$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = \\left\\{ {\\matrix{\n   {x - 2\\,\\,\\,,} &amp; {x \\ge 2}  \\cr \n   {2 - x\\,\\,\\,,} &amp; {x \\le 2}  \\cr \n\n } } \\right.$$\n<br><br>Similarly, $$f\\left( x \\right) = \\left| {x - 5} \\right| = \\left\\{ {\\matrix{\n   {x - 5\\,\\,\\,,} &amp; {x \\ge 5}  \\cr \n   {5 - x\\,\\,\\,,} &amp; {x \\le 5}  \\cr \n\n } } \\right.$$\n<br><br>$$\\therefore$$ $$f\\left( x \\right) = \\left| {x - 2} \\right| + \\left| {x - 5} \\right|$$\n<br><br>$$ = \\left\\{ {x - 2 + 5 - x = 3,2 \\le x \\le 5} \\right\\}$$\n<br><br>Thus $$\\,\\,\\,\\,\\,\\,\\,\\,\\,f\\left( x \\right) = 3,2 \\le x \\le 5$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,f'\\left( x \\right) = 0,2 &lt; x &lt; 5$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,f'\\left( 4 \\right) = 0$$\n<br><br>$$\\therefore$$ Statement $$1$$ is true.\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/sEvPtD4g5MC9F35VC/OgPbMZVjDrvta0cPejHWslhHvh0dH/BNBytYID4s4ohfJykHrLQH/image.png\" loading=\"lazy\" alt=\"AIEEE 2012 Mathematics - Limits, Continuity and Differentiability Question 252 English Explanation\">\n<br><br>As $$f\\left( 2 \\right) = 0 + \\left| {2 - 5} \\right| = 3$$ \n<br><br>and $$f\\left( 5 \\right) = \\left| {5 - 2} \\right| + 0 = 3$$\n<br><br>$$\\therefore$$ Statement - $$2$$ is also true but not a correct explanation for statement $$1.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l2vlum53",
@@ -1849,7 +1849,7 @@
     "solution": "<p>$$\\mathop {\\lim }\\limits_{x \\to {{{\\pi ^ - }} \\over 2}} f(x) = 0 = f( - \\pi /2)$$</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to {{{\\pi ^ + }} \\over 2}} f(x) = \\cos \\left( { - {\\pi  \\over 2}} \\right) = 0$$</p>\n<p>$$f'(x) = \\left\\{ {\\matrix{\n   { - 1,} & {x \\le  - \\pi /2}  \\cr \n   {\\sin x,} & { - \\pi /2 < x \\le 0}  \\cr \n   {1,} & {0 < x \\le 1}  \\cr \n   {1/x,} & {x > 1}  \\cr \n\n } } \\right.$$</p>\n<p>Clearly, f(x) is not differentiable at x = 0 as f'(0<sup>$$-$$</sup>) = 0 and f'(0<sup>+</sup>) = 1.</p>\n<p>f(x) is differentiable at x = 1 as $$f'({1^{ - 1}}) = f'({1^ + }) = 1$$.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l2sk9smb",
@@ -1872,7 +1872,7 @@
     "solution": "<p>Set x = 0 in the functional equation to obtain</p>\n<p>$$f(0) = f(0) + f(0)$$ $$\\therefore$$ $$f(0) = 0$$</p>\n<p>$$f'(x) = \\mathop {\\lim }\\limits_{h \\to 0} {{f(x + h) - f(x)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{f(x + h) - f(x + 0)} \\over h} = \\mathop {\\lim }\\limits_{h \\to 0} {{f(x) + f(h) - f(x) - f(0)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{f(h) - f(0)} \\over h} = f'(0)$$</p>\n<p>Thus, $$f'(x) = \\lambda $$ (say). Also $$f(x) = \\lambda x + \\mu $$</p>\n<p>As $$f(x) = 0$$ we have $$\\mu  = 0$$ $$\\therefore$$ $$f(x) = \\lambda x$$.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0QeoBy8todI83IoW",
@@ -1894,7 +1894,7 @@
     "difficulty": "medium",
     "solution": "Given that $$f\\left( x \\right) = x\\left| x \\right|\\,\\,$$ and $$\\,\\,g\\left( x \\right) = \\sin x$$\n<br><br>So that go \n<br><br>$$f\\left( x \\right) = g\\left( {f\\left( x \\right)} \\right)$$\n<br><br>$$ = g\\left( {x\\left| x \\right|} \\right) = \\sin x\\left| x \\right|$$\n<br><br>$$ = \\left\\{ {\\matrix{\n   {\\sin \\left( { - {x^2}} \\right),} &amp; {if\\,\\,\\,x &lt; 0}  \\cr \n   {\\sin \\left( {{x^2}} \\right),} &amp; {if\\,\\,\\,x \\ge 0}  \\cr \n\n } } \\right.$$\n<br><br>$$ = \\left\\{ {\\matrix{\n   { - \\sin \\,{x^2},} &amp; {if\\,\\,\\,x &lt; 0}  \\cr \n   {\\sin \\,\\,{x^2},} &amp; {if\\,\\,\\,x \\ge 0}  \\cr \n\n } } \\right.$$\n<br><br>$$\\therefore$$ $$\\left( {go\\,f} \\right)'\\,\\,\\left( x \\right) = \\left\\{ {\\matrix{\n   { - 2x\\,\\,\\cos \\,{x^2},\\,\\,\\,\\,if\\,\\,\\,\\,x &lt; 0}  \\cr \n   {2x\\,\\cos \\,{x^2},\\,\\,\\,if\\,\\,\\,\\,x \\ge 0}  \\cr \n\n } } \\right.$$\n<br><br>Here we observe\n<br><br>$$L\\left( {gof} \\right)'\\left( 0 \\right) = 0 = R\\left( {gof} \\right)'\\left( 0 \\right)$$\n<br><br>$$ \\Rightarrow $$ go $$f$$ is differentiable at $$x=0$$\n<br><br>and $$\\left( {go\\,f} \\right)'$$ is continuous at $$x=0$$ \n<br><br>Now $$\\left( {go\\,f} \\right)''\\left( x \\right) = \\left\\{ {\\matrix{\n   { - 2\\cos {x^2} + 4{x^2}\\sin {x^2},x &lt; 0}  \\cr \n   {2\\cos {x^2} - 4{x^2}\\sin {x^2},x \\ge 0}  \\cr \n\n } } \\right.$$ \n<br><br>Here $$L\\left( {gof} \\right)''\\left( 0 \\right) =  - 2$$ and $$R\\left( {go\\,f} \\right)''\\left( 0 \\right) = 2$$\n<br><br>As $$L{\\left( {go\\,f} \\right)^{''}}\\left( 0 \\right) \\ne R\\left( {go\\,f} \\right)''\\,\\,\\left( 0 \\right)$$\n<br><br>$$ \\Rightarrow go\\,f\\left( x \\right)$$ is not twice differentiable at $$x=0.$$ \n<br><br>$$\\therefore$$ Statement - $$1$$ is true but statement $$-2$$ is false.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfw8gyny",
@@ -1917,7 +1917,7 @@
     "solution": "<p>Given, $$g(x) = {{{{(x - 1)}^n}} \\over {\\log {{\\cos }^m}(x - 1)}},0 < x < 2,m \\ne 0,n > 0,m,n$$ are integer.</p>\n<p>Left hand derivative (L.H.D.) of $$|x - 1|$$ at $$x = 1$$ is P.</p>\n<p>As $$|x - 1| = \\left\\{ {\\matrix{\n   {x - 1,} & {x \\ge 1}  \\cr \n   { - (1 - x),} & {x < 1}  \\cr \n\n } } \\right.$$</p>\n<p>$$\\therefore$$ L.H.D. at $$x = 1$$ will be $$-1$$.</p>\n<p>[$$\\therefore$$ L.H.D. at $$x = 1$$ is $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(1 - h) - f(1)} \\over { - h}}$$]</p>\n<p>$$p =  - 1$$</p>\n<p>Also, $$\\mathop {\\lim }\\limits_{x \\to {1^ + }} g(x) = p =  - 1$$</p>\n<p>$$ \\Rightarrow \\mathop {\\lim }\\limits_{h \\to 0} {{{{(1 + h - 1)}^n}} \\over {\\log {{\\cos }^m}(1 + h - 1)}} =  - 1$$</p>\n<p>$$ \\Rightarrow \\mathop {\\lim }\\limits_{h \\to 0} {{{h^n}} \\over {\\log {{\\cos }^m}h}} =  - 1$$</p>\n<p>$$ \\Rightarrow \\mathop {\\lim }\\limits_{h \\to 0} {{{h^n}} \\over {m\\log \\cos \\,h}} =  - 1$$</p>\n<p>$$ \\Rightarrow \\mathop {\\lim }\\limits_{h \\to 0} {{n\\,.\\,{h^{n - 1}}} \\over {m\\log \\cos \\,h}} =  - 1$$ [using L. Hospital rule]</p>\n<p>$$ \\Rightarrow \\mathop {\\lim }\\limits_{h \\to 0} \\left( {{{ - n} \\over m}} \\right)\\,.\\,{{{h^{n - 2}}} \\over {\\left( {{{\\tan \\,h} \\over h}} \\right)}} =  - 1$$</p>\n<p>$$ \\Rightarrow \\left( {{n \\over m}} \\right)\\mathop {\\lim }\\limits_{h \\to 0} {{{h^{n - 2}}} \\over {\\left( {{{\\tan \\,h} \\over h}} \\right)}} = 1$$</p>\n<p>$$n - 2 = 0$$ and $${n \\over m} = 1 \\Rightarrow m = n = 2$$</p>\n<p>or</p>\n<p>$$[f(x) = |x - 1| =  - x + 1,x < 1f'(x) =  - 1$$</p>\n<p>So, L.H.D. at $$x =  - 1$$ is $$-1$$</p>\n<p>$$\\therefore$$ $$P =  - 1$$</p>\n<p>Now, $$\\mathop {\\lim }\\limits_{x \\to {1^ + }} {{{{(x - 1)}^n}} \\over {\\log {{\\cos }^m}(x - 1)}} = p$$ .... (i)</p>\n<p>Let $$x - 1 = t$$ in L.H.S. of eq. (i)</p>\n<p>$$\\mathop {\\lim }\\limits_{t \\to } {{{t^n}} \\over {m\\log \\cos \\,t}},\\left( {{0 \\over 0}\\,\\mathrm{form}} \\right)$$ [using L' Hospital rule]</p>\n<p>We get, $$\\mathop {\\lim }\\limits_{t \\to 0} {{n{t^{n - 1}}} \\over {m\\tan \\,t}} = {{ - n} \\over m}\\mathop {\\lim }\\limits_{t \\to 0} {{{t^{n - 1}}} \\over {\\tan \\,t}}\\left( {{0 \\over 0}\\,\\mathrm{form}} \\right)$$</p>\n<p>Again using L' Hospital rule,</p>\n<p>$${{ - n} \\over m}\\mathop {\\lim }\\limits_{t \\to 0} {{(n - 1){t^{n - 2}}} \\over {{{\\sec }^2}t}} = P$$</p>\n<p>$$ \\Rightarrow {{ + n} \\over m}\\mathop {\\lim }\\limits_{t \\to 0} {{(n - 1){t^{n - 2}}} \\over {{{\\sec }^2}t}} =  - 1$$</p>\n<p>For non-zero answer</p>\n<p>$$n - 2 = 0 \\Rightarrow n = 2$$ Also $$m = n = 2$$.</p>",
     "section": "Sec 4",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ah5YH7lVbDF5enBx",
@@ -1940,7 +1940,7 @@
     "solution": "<p>$$f(x)$$ is a non constant twice differential function such that <br/><br/>$$f(x) = f(1 - x) \\Rightarrow f'(x) =  - f'(1 - x)$$ .... (i)</p>\n<p>For $$x = {1 \\over 2}$$</p>\n<p>We get $$f'\\left( {{1 \\over 2}} \\right) =  - f'\\left( {1 - {1 \\over 2}} \\right)$$</p>\n<p>$$ = f'\\left( {{1 \\over 2}} \\right) + f'\\left( {{1 \\over 2}} \\right) = 0 \\Rightarrow f'\\left( {{1 \\over 2}} \\right) = 0$$</p>\n<p>For $$x = {1 \\over 4}$$, we get $$f'\\left( {{1 \\over 4}} \\right) =  - f'\\left( {{3 \\over 4}} \\right)$$</p>\n<p>But given that $$f'\\left( {{1 \\over 4}} \\right) = 0:f'\\left( {{1 \\over 4}} \\right) = f'\\left( {{3 \\over 4}} \\right) = 0$$</p>\n<p>Hence $$f'(x)$$ satisfies all conditions of roller's theorem for $$x \\in \\left[ {{1 \\over 4},{1 \\over 2}} \\right]$$ and $$\\left[ {{1 \\over 2},{3 \\over 4}} \\right]$$, so there exist at least one point $${C_1} \\in \\left( {{1 \\over 4},{1 \\over 2}} \\right)$$ and at least one point $${C_2} \\in \\left( {{1 \\over 2},{3 \\over 4}} \\right)$$ such that</p>\n<p>$$f''(G) = 0$$ and $$f''{(C)_2} = 0$$</p>\n<p>$$\\therefore$$ $$f''(x)$$ vanishes at least twice on [0, 1]</p>\n<p>Also using $$f(x) = f(1 - x)$$</p>\n<p>$$f\\left( {x + {1 \\over 2}} \\right) = f\\left( {1 - x - {1 \\over 2}} \\right) = f\\left( { - x + {1 \\over 2}} \\right)$$</p>\n<p>$$f'\\left( {x + {1 \\over 2}} \\right)$$ is an odd function</p>\n<p>$$ \\Rightarrow \\sin x\\,f\\left( {x + {1 \\over x}} \\right)$$ is an even function</p>\n<p>$$\\int\\limits_{{{ - 1} \\over 2}}^{{1 \\over 2}} {f\\left( {x + {1 \\over x}} \\right)\\sin x\\,dx = 0} $$</p>",
     "section": "Sec 4",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "v5U0RF1qlY6LUKdx",
@@ -1963,7 +1963,7 @@
     "solution": "<p>As when $$x \\in ( - 1,1),f'(x) < 0$$</p>\n<p>So, f(x) is decreasing on ($$-1,1$$) at x = 1</p>\n<p>$$f''(1) = {{4a} \\over {{{(a + 2)}^2}}} > 0$$</p>\n<p>So, local minima at x = 1</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "01SDTRQZ8xp9Z4WJ",
@@ -1985,7 +1985,7 @@
     "difficulty": "medium",
     "solution": "We have $$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {\\left( {x - 1} \\right)\\sin \\left( {{1 \\over {x - 1}}} \\right),} &amp; {if\\,\\,x \\ne 1}  \\cr \n   {0\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,} &amp; {if\\,\\,x = 1}  \\cr \n\n } } \\right.$$\n<br><br>$$Rf'\\left( 1 \\right) = \\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {1 + h} \\right) - f\\left( 1 \\right)} \\over h}$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{h\\,\\sin {1 \\over h} - 0} \\over h} = \\mathop {\\lim }\\limits_{h \\to 0} \\,\\,\\sin {1 \\over h} = a$$ finite number\n<br><br>Let this finite number be $$l$$\n<br><br>$$L$$ $$f'(1)$$ $$ = \\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {1 - h} \\right) - f\\left( 1 \\right)} \\over { - h}}$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{ - h\\,\\sin \\left( {{1 \\over { - h}}} \\right)} \\over { - h}} = \\mathop {\\lim }\\limits_{h \\to 0} \\,\\,\\sin \\left( {{1 \\over { - h}}} \\right)$$\n<br><br>$$ =  - \\mathop {\\lim }\\limits_{h \\to 0} \\sin \\left( {{1 \\over h}} \\right) =  - (\\,$$ a finite number $$\\,)$$ $$=-l$$\n<br><br>Thus $$Rf'\\left( 1 \\right) \\ne Lf'\\left( 1 \\right)$$\n<br><br>$$\\therefore$$  $$f$$ is not differentiable at $$x=1$$\n<br><br>Also, $$f'\\left( 0 \\right) = \\sin {1 \\over {\\left( {x - 1} \\right)}} - {{x - 1} \\over {{{\\left( {x - 1} \\right)}^2}}}\\cos {\\left. {\\left( {{1 \\over {x - 1}}} \\right)} \\right]_{x = 0}}$$\n<br><br>$$ =  - \\sin 1 + \\cos \\,1$$\n<br><br>$$\\therefore$$  $$f$$ is differentiable at $$x=0$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lg5b677f",
@@ -2008,7 +2008,7 @@
     "solution": "<p>$$f(x)=2+\\cos x$$ is differentiable everywhere and $$f'(x)=-\\sin x$$</p>\n<p>$$\\therefore f'(c)=0 \\Rightarrow c=0, \\pm \\pi, \\pm 2 \\pi, \\pm 3 \\pi \\ldots \\ldots$$.</p>\n<p>$$\\therefore$$ for each real $$t,[t, t+\\pi]$$ contains a value from $$(0, \\pm \\pi, \\pm 2 \\pi, \\pm 3 \\pi \\ldots)$$</p>\n<p>$$\\therefore$$ Statement 1 is true.</p>\n<p>$$f(t+2 \\pi)=2+\\cos (t+2 \\pi)=2+\\cos t=f(t)$$</p>\n<p>So, statement 2 is true.</p>\n<p>Therefore, $$f(x)$$ is a periodic function of period $$2 \\pi$$.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "O9Pfkq9XuIbELScm",
@@ -2030,7 +2030,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = \\min \\left\\{ {x + 1,\\left| x \\right| + 1} \\right\\}$$\n<br><br>$$ \\Rightarrow f\\left( x \\right) = x + 1\\,\\forall \\,x \\in R$$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/Qpm6lAJZzjErTv81o/TVrCMqLGc2wPQM0cQ0WnJuibjm41Z/Pledvr8S4l1VzhQUpyY7gJ/image.png\" loading=\"lazy\" alt=\"AIEEE 2007 Mathematics - Limits, Continuity and Differentiability Question 259 English Explanation\">\n<br><br>Hence, $$f(x)$$ is differentiable everywhere for all $$x \\in R.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lg0qb6gl",
@@ -2053,7 +2053,7 @@
     "solution": "<p>(A) $$y = x|x| = \\left\\{ {\\matrix{\n   { - {x^2}} &amp; {if\\,x &lt; 0}  \\cr \n   {{x^2}} &amp; {if\\,x \\ge 0}  \\cr \n\n } } \\right.$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mggqijup/0f1b73c5-4eb8-4edc-ba72-25a9e2b1d40b/194f7e20-a395-11f0-a089-8f220d161699/file-jaoe38c1mggqijuq.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mggqijup/0f1b73c5-4eb8-4edc-ba72-25a9e2b1d40b/194f7e20-a395-11f0-a089-8f220d161699/file-jaoe38c1mggqijuq.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2007 Paper 1 Offline Mathematics - Limits, Continuity and Differentiability Question 22 English Explanation 1\"></p>\n<p>From graph $$y=x|x|$$ is (continuous in ($$-1,1$$) (p) differentiable in ($$-1,1$$) (q) Strictly increasing in ($$-1,1$$) (r)</p>\n<p>(B) $$y = \\sqrt {|x|} $$</p>\n<p>$$ = \\left\\{ {\\matrix{\n   {\\sqrt { - x} } &amp; {if\\,x &lt; 0}  \\cr \n   {\\sqrt x } &amp; {if\\,x \\ge 0}  \\cr \n\n } } \\right.$$</p>\n<p>$${y^2} =  - x,x &lt; 0$$ {where y can take only +ve values}</p>\n<p>and $${y^2} = x,x \\ge 0$$</p>\n<p>$$\\therefore$$ Graph is as follows:</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mggqjuwi/f5d2126b-a43e-4a26-8cc2-c84b7fa000a6/3da7b120-a395-11f0-a089-8f220d161699/file-jaoe38c1mggqjuwj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mggqjuwi/f5d2126b-a43e-4a26-8cc2-c84b7fa000a6/3da7b120-a395-11f0-a089-8f220d161699/file-jaoe38c1mggqjuwj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2007 Paper 1 Offline Mathematics - Limits, Continuity and Differentiability Question 22 English Explanation 2\"></p>\n<p>From graph $$y = \\sqrt {|x|} $$ is continuous in ($$-1,1$$) (P) not differentiable at x = 0 (s)</p>\n<p>(C) Note this step</p>\n<p>$$y = x + [x] = \\left\\{ {\\matrix{\n   {x - 1,} &amp; { - 1 \\le x &lt; 0}  \\cr \n   {x,} &amp; {0 \\le x &lt; 1}  \\cr \n   {x + 1,} &amp; {x + 1}  \\cr \n\n } } \\right.$$</p>\n<p>$$\\therefore$$ Graph of $$y = x + [x]$$ is</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mggqlis4/905f8a5e-8012-4cc8-8727-619f60db1cae/6be8d140-a395-11f0-a089-8f220d161699/file-jaoe38c1mggqlis5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mggqlis4/905f8a5e-8012-4cc8-8727-619f60db1cae/6be8d140-a395-11f0-a089-8f220d161699/file-jaoe38c1mggqlis5.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2007 Paper 1 Offline Mathematics - Limits, Continuity and Differentiability Question 22 English Explanation 3\"></p>\n<p>From graph, $$y = x + [x]$$ is neither continuous, nor differentiable at x = 0 and hence in ($$-1,1$$) (s).</p>\n<p>(D) $$ = |x - 1| + |x + 1|$$</p>\n<p>$$ = \\left\\{ {\\matrix{\n   { - 2x} &amp; {x &lt;  - 1}  \\cr \n   2 &amp; { - 1 \\le x &lt; 1}  \\cr \n   {2x} &amp; {x \\ge 1}  \\cr \n\n } } \\right.$$</p>\n<p>Graph is as follows:</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mggqn8i7/dfa1c388-4c05-4ed4-9eec-5179b37eebf2/9b9715f0-a395-11f0-a089-8f220d161699/file-jaoe38c1mggqn8i8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mggqn8i7/dfa1c388-4c05-4ed4-9eec-5179b37eebf2/9b9715f0-a395-11f0-a089-8f220d161699/file-jaoe38c1mggqn8i8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2007 Paper 1 Offline Mathematics - Limits, Continuity and Differentiability Question 22 English Explanation 4\"></p>\n<p>From graph, $$y=f(x)$$ is continuous (p) differentiable (q) in ($$-1,1$$) but not strictly increasing in ($$-1,1$$).</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mguoq3k3",
@@ -2076,7 +2076,7 @@
     "solution": "<p>In this graph we can observe</p>\n<p></p>\n<p>$$ f(x)=1 $$(minimum of the given curve as $x&gt;1$ )</p><div></div> $f(x)=x^3$ (minimum of the curve as $x&lt;1$ )<p></p>\n<p>i.e, $f(x)=\\left\\{\\begin{array}{rr}x^3 &amp; x \\leq 1 \\\\ 1 &amp; x&gt;1\\end{array}\\right.$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgujaidz/7728f402-79c7-401d-ad7e-739f6ddd05c0/d2e4aa70-ab2b-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgujaie0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgujaidz/7728f402-79c7-401d-ad7e-739f6ddd05c0/d2e4aa70-ab2b-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgujaie0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Limits, Continuity and Differentiability Question 5 English Explanation 1\">From graph it is clear that</p>\n<p>$\\Rightarrow f(x)$ is continuous $\\forall x \\in \\mathbf{R}$</p>\n<p>$\\Rightarrow$ Since, the obtained $f(x)$ has sharp corner in graph at $x=1$ like $f(x)=|x|$ at $x=0$</p>\n<p>$\\therefore f(x)$ is non - differentiable at $x=1$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgujajva/b59fea55-ee9d-4941-93a7-9627ff807e37/d409a270-ab2b-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgujajvb.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgujajva/b59fea55-ee9d-4941-93a7-9627ff807e37/d409a270-ab2b-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgujajvb.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Limits, Continuity and Differentiability Question 5 English Explanation 2\">Concept: Function is non differentiable if it has sharp corner because it indicates that function change its definition abruptly results multiple tangent at that pointed part of curve.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "20IRL1dIRMRqkslc",
@@ -2098,7 +2098,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {{x \\over {1 - x}},} &amp; {x &lt; 0}  \\cr \n   {{x \\over {1 + x}},} &amp; {x \\ge 0}  \\cr \n\n } } \\right.$$ \n<br><br>$$ \\Rightarrow f'\\left( x \\right) = \\left\\{ {\\matrix{\n   {{x \\over {{{\\left( {1 - x} \\right)}^2}}},} &amp; {x &lt; 0}  \\cr \n   {{x \\over {{{\\left( {1 + x} \\right)}^2}}}} &amp; {x \\ge 0}  \\cr \n\n } } \\right.$$\n<br><br>$$\\therefore$$ $$f'\\left( x \\right)$$ exist at everywhere.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "U9v6NjxKosuCkmhk",
@@ -2120,7 +2120,7 @@
     "difficulty": "easy",
     "solution": "$$f'\\left( 1 \\right) = \\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {1 + h} \\right) - f\\left( 1 \\right)} \\over h};$$\n<br><br>As function is differentiable so it is continuous as it\n<br><br>is given that $$\\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {1 + h} \\right)} \\over h} = 5$$ and hence $$f(1)=0$$\n<br><br>Hence $$f'(1)$$ $$ = \\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {1 + h} \\right)} \\over h} = 5$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "err9ct1D8q5A5Tge",
@@ -2142,7 +2142,7 @@
     "difficulty": "easy",
     "solution": "$$f'\\left( x \\right) = \\mathop {\\lim }\\limits_{h \\to 0} {{f\\left( {x + h} \\right) - f\\left( x \\right)} \\over h}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\left| {f'\\left( x \\right)} \\right| = \\mathop {\\lim }\\limits_{h \\to 0} \\left| {{{f\\left( {x + h} \\right) - f\\left( x \\right)} \\over h}} \\right| \\le \\mathop {\\lim }\\limits_{h \\to 0} \\left| {{{{{\\left( h \\right)}^2}} \\over h}} \\right|$$\n<br><br>$$ \\Rightarrow \\left| {f'\\left( x \\right)} \\right| \\le 0 \\Rightarrow f'\\left( x \\right) = 0$$\n<br><br>$$ \\Rightarrow f\\left( x \\right) = $$ constant\n<br><br>As $$f\\left( 0 \\right) = 0 \\Rightarrow f\\left( 1 \\right) = 0$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "7X0bs7xPIHP0Q5wn",
@@ -2164,7 +2164,7 @@
     "difficulty": "easy",
     "solution": "$$\\mathop {\\lim }\\limits_{x \\to a} {{f\\left( a \\right)g'\\left( x \\right) - g\\left( a \\right)f'\\left( x \\right)} \\over {g'\\left( x \\right) - f'\\left( x \\right)}}$$ \n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ (By $$L'$$ Hospital rule)\n<br><br>$$\\mathop {\\lim }\\limits_{x \\to a} {{k\\,\\,g'\\left( x \\right) - k\\,\\,f'\\left( x \\right)} \\over {g'\\left( x \\right) - f'\\left( x \\right)}} = 4$$ \n<br><br>$$\\therefore$$ $$k=4.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "PmgTOqs8pMxk3diI",
@@ -2186,7 +2186,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( 0 \\right) = 0;\\,\\,f\\left( x \\right) = x{e^{ - \\left( {{1 \\over {\\left| x \\right|}} + {1 \\over x}} \\right)}}$$\n<br><br>$$R.H.L.\\,\\,$$ $$\\,\\,\\,\\mathop {\\lim }\\limits_{h \\to 0} \\left( {0 + h} \\right){e^{ - 2/h}}$$\n<br><br>$$ = \\,\\mathop {\\lim }\\limits_{h \\to 0} {h \\over {{e^{2/h}}}} = 0$$\n<br><br>$$L.H.L.$$ $$\\,\\,\\,\\mathop {\\lim }\\limits_{h \\to 0} \\left( {0 - h} \\right){e^{ - \\left( {{1 \\over h} - {1 \\over h}} \\right)}} = 0$$\n<br><br>therefore, $$f(x)$$ is continuous, \n<br><br>$$R.H.D=$$ $$\\,\\,\\,\\mathop {\\lim }\\limits_{h \\to 0} {{\\left( {0 + h} \\right){e^{ - \\left( {{1 \\over h} + {1 \\over h}} \\right)}} - 0} \\over h} = 0$$\n<br><br>$$L.H.D.$$ $$\\,\\,\\, = \\mathop {\\lim }\\limits_{h \\to 0} {{\\left( {0 - h} \\right){e^{ - \\left( {{1 \\over h} - {1 \\over h}} \\right)}} - 0} \\over { - h}} = 1$$ \n<br><br>therefore, $$L.H.D. \\ne R.H.D.$$\n<br><br>$$f(x)$$ is not differentiable at $$x=0.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "3Ip6iYJnQvKQ2klv",
@@ -2208,7 +2208,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( {x + y} \\right) = f\\left( x \\right) \\times f\\left( y \\right)$$\n<br><br>Differeniate with respect to $$x,$$ treating $$y$$ as constant\n<br><br>$$f'\\left( {x + y} \\right) = f'\\left( x \\right)f\\left( y \\right)$$\n<br><br>Putting $$x=0$$ and $$y=x$$, we get \n<br><br>$$f'\\left( x \\right) = f'\\left( 0 \\right)f\\left( x \\right);$$\n<br><br>$$ \\Rightarrow f'\\left( 5 \\right) = 3f\\left( 5 \\right) = 3 \\times 2 = 6.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "bX8g2hnm95fhLFjI",
@@ -2230,6 +2230,6 @@
     "difficulty": "medium",
     "solution": "<p>To find the value of $$f(x) - g(x)$$ at $$x = \\frac{3}{2}$$, we need to use the given conditions and properties of differentiable functions.</p>\n\n<p>First, we are told that:</p>\n\n<p>$$f''(x) - g''(x) = 0$$</p>\n\n<p>This implies that:</p>\n\n<p>$$f''(x) = g''(x)$$</p>\n\n<p>Since the second derivatives of both functions are equal, their difference, $$f'(x) - g'(x)$$, must be a linear function. Let’s denote it as:</p>\n\n<p>$$f'(x) - g'(x) = k$$</p>\n\n<p>We'll find the constant $$k$$ using the initial conditions of the derivatives:</p>\n\n<p>$$f'(1) = 2$$</p>\n\n<p>$$g'(1) = 4$$</p>\n\n<p>Thus,</p>\n\n<p>$$f'(1) - g'(1) = 2 - 4 = -2$$</p>\n\n<p>Therefore,</p>\n\n<p>$$f'(x) - g'(x) = -2$$</p>\n\n<p>Integrating the above result, we get:</p>\n\n<p>$$f(x) - g(x) = -2x + C$$</p>\n\n<p>To determine the constant $$C$$, we use the values of the functions at $$x = 2$$:</p>\n\n<p>$$f(2) = 3$$</p>\n\n<p>$$g(2) = 9$$</p>\n\n<p>Thus,</p>\n\n<p>$$f(2) - g(2) = 3 - 9 = -6$$</p>\n\n<p>Therefore,</p>\n\n<p>$$-2 \\cdot 2 + C = -6$$</p>\n\n<p>$$-4 + C = -6$$</p>\n\n<p>$$C = -2$$</p>\n\n<p>So the expression for $$f(x) - g(x)$$ is:</p>\n\n<p>$$f(x) - g(x) = -2x - 2$$</p>\n\n<p>We need to find $$f\\left( \\frac{3}{2} \\right) - g\\left( \\frac{3}{2} \\right)$$:</p>\n\n<p>$$f\\left( \\frac{3}{2} \\right) - g\\left( \\frac{3}{2} \\right) = -2 \\cdot \\frac{3}{2} - 2$$</p>\n\n<p>$$= -3 - 2$$</p>\n\n<p>$$= -5$$</p>\n\n<p>Thus, the value of $$f(x) - g(x)$$ at $$x = \\frac{3}{2}$$ is -5. </p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

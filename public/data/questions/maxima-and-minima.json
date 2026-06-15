@@ -20,7 +20,7 @@
     "solution": "<p>We are given the function:</p>\n<p>$$f(x)= \\sqrt{x}\\ln x - x + 1$$</p>\n\n<p>To find where the function increases or decreases, we take the derivative:</p>\n<p>$$f'(x)=\\frac{1}{\\sqrt{x}}+\\frac{\\ln x}{2\\sqrt{x}}-1$$</p>\n\n<p>$$f'(x)=\\frac{2+\\ln x-2\\sqrt{x}}{2\\sqrt{x}}$$</p>\n\n<p>$$f'(x)=\\frac{\\ln x+2}{2\\sqrt{x}}-1$$</p>\n\n<p>The second derivative tells us how the slope is changing:</p>\n<p>$$f''(x)=\\frac{\\left(\\frac{1}{x}\\right)(2\\sqrt{x})-(\\ln x+2)\\left(\\frac{1}{\\sqrt{x}}\\right)}{4x}$$</p>\n\n<p>$$f''(x)=-\\frac{\\ln x}{4x\\sqrt{x}}$$</p>\n\n<p>For $ x \\in (0,1) $, $ \\ln x < 0 $. Therefore,</p>\n<p>$$f''(x) > 0$$</p>\n<p>This means $ f'(x) $ is increasing in $ (0,1) $.</p>\n\n<p>$$\\frac{\\ln x + 2}{2\\sqrt{x}} - 1 = 0$$</p>\n<p>$$\\Rightarrow \\ln x + 2 = 2\\sqrt{x}$$</p>\n<p>Rearranging, we define:</p>\n<p>$$g(x) = 2\\sqrt{x} - \\ln x - 2$$</p>\n\n<p>$$g'(x) = \\frac{1}{\\sqrt{x}} - \\frac{1}{x} = \\frac{\\sqrt{x} - 1}{x}$$</p>\n<p>So, $ g'(x) = 0 $ when $ x = 1 $.</p>\n<p>For $ x < 1 $, $ g'(x) < 0 $ (decreasing), and for $ x > 1 $, $ g'(x) > 0 $ (increasing).</p>\n<p>Thus, minimum value of $ g(x) $ occurs at $ x = 1 $.</p>\n<p>At $ x = 1 $, $ g(1) = 2(1) - \\ln(1) - 2 = 0 $.</p>\n<p>Hence, $ g(x) \\geq 0 $ for all $ x > 0 $.</p>\n\n<p>$$f'(x) = -\\frac{g(x)}{2\\sqrt{x}}$$</p>\n<p>Since $ g(x) \\geq 0 $, we get $ f'(x) \\leq 0 $ for all $ x > 0 $.</p>\n<p>$ f'(x) = 0 $ only when $ x = 1 $.</p>\n\n<p>The derivative $ f'(x) $ is negative everywhere except at $ x = 1 $ where it is zero. However, the sign of the derivative does not change around $ x = 1 $.</p>\n<p>Therefore, the function $ f(x) $ is strictly decreasing throughout its domain, and the tangent at $ x = 1 $ is horizontal but not a turning point.</p>\n<p>Hence, the function has no local maximum or minimum.</p>",
     "section": "Sec 1",
     "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml89h6kk",
@@ -42,7 +42,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} & f(x)=x^{2025}-x^{2000} ; x \\in[0,1] \\\\ & f^{\\prime}(x)=2025 x^{2024}-200 x^{1999} \\\\ & =x^{1999}\\left(2025 x^5-2000\\right) \\\\ & f^{\\prime}(x)=0 \\Rightarrow x^5=\\frac{80}{81} \\\\ & f(x)=\\left(x^5\\right)^{81}-\\left(x^5\\right)^{80} \\\\ & =\\left(\\frac{80}{81}\\right)^{81}-\\left(\\frac{80}{81}\\right)^{80} \\\\ & =\\left(\\frac{80}{81}\\right)^{80}\\left(-\\frac{1}{81}\\right) \\\\ & =(80)^{80}(-81)^{-81} \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml8t8owu",
@@ -64,7 +64,7 @@
     "difficulty": "medium",
     "solution": "<p>$\\begin{aligned} & f(\\theta)=\\cos ^2 \\theta-6 \\sin \\theta \\cos \\theta+3 \\sin ^2 \\theta+2 \\\\ & f(\\theta)=\\frac{1+\\cos 2 \\theta}{2}-3 \\sin 2 \\theta+3\\left(\\frac{1-\\cos 2 \\theta}{2}\\right)+2 \\\\ & f(\\theta)=\\frac{1}{2}+\\frac{\\cos 2 \\theta}{2}-3 \\sin 2 \\theta+\\frac{3}{2}-\\frac{3 \\cos 2 \\theta}{2}+2 \\\\ & f(\\theta)=4-\\cos 2 \\theta-3 \\sin 2 \\theta \\\\ & f(\\theta)=4-(\\cos 2 \\theta+3 \\sin 2 \\theta) \\\\ & \\text { Let } g(\\theta)=\\cos 2 \\theta+3 \\sin 2 \\theta\\end{aligned}$</p>\n<p>The expression $a \\cos \\alpha+b \\sin \\alpha$ has a range of $\\left[-\\sqrt{a^2+b^2}, \\sqrt{a^2+b^2}\\right]$.</p>\n<p>$$ \\begin{aligned} & -\\sqrt{1^2+3^2} \\leq g(\\theta) \\leq \\sqrt{1^2+3^2} \\\\ & -\\sqrt{10} \\leq g(\\theta) \\leq \\sqrt{10} \\end{aligned} $$</p>\n<p>For least value of $f(\\theta)$</p>\n<p>$$ \\begin{aligned} & f(\\theta)=4-(\\max \\text { value of } g(\\theta)) \\\\ & f(\\theta)=4-\\sqrt{10} \\end{aligned} $$</p>\n<p>So, least value is $4-\\sqrt{10}$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml8t8mrp",
@@ -86,7 +86,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} & f(\\theta)=4\\left(\\sin ^{-1}\\left(\\frac{7 \\pi}{2}-\\theta\\right)+\\sin ^4(11 \\pi+\\theta)\\right) \\\\ & \\quad-2\\left(\\sin ^6\\left(\\frac{3 \\pi}{2}-\\theta\\right)+\\sin ^6(9 \\pi-\\theta)\\right) \\\\ & =4\\left(\\cos ^4 \\theta+\\sin ^4 \\theta \\cos ^2 \\theta\\right)-2\\left(\\cos ^2 \\theta+\\sin ^6 \\theta\\right) \\\\ & =4\\left(1-2 \\sin ^2 \\theta \\cos ^2 \\theta\\right) \\\\ & \\quad-2(1)\\left(\\sin ^4 \\theta+\\cos ^4 \\theta-\\sin ^2 \\theta \\cos ^2 \\theta\\right) \\\\ & =4-8 \\sin ^2 \\theta \\cos ^2 \\theta-2\\left(1-3 \\sin ^2 \\theta \\cos ^2 \\theta\\right) \\\\ & =2-2 \\sin ^2 \\theta \\cos ^2 \\theta \\\\ & =2-\\frac{(\\sin 2 \\theta)^2}{2} \\\\ & f(\\theta)_{\\max }=2=\\alpha \\quad f(\\theta)_{\\min }=2-\\frac{1}{2}=\\frac{3}{2}=\\beta \\\\ & \\alpha+2 \\beta=2+3=5 \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnrq1907",
@@ -108,7 +108,7 @@
     "difficulty": "medium",
     "solution": "<p>Given $f(x)$ is a polynomial of degree $5$</p>\n<p>Also, $f'(1)=0$; $f'(-1)=0$.</p>\n<p>Also $\\because\\ \\lim\\limits_{x\\rightarrow 0}\\dfrac{f(x)}{x^3}=-5$ (fixed and finite)</p>\n<p>$\\therefore\\ f(0)=0$; $f'(0)=0$; $f''(0)=0$</p>\n<p>$$\\dfrac{f'''(0)}{6}=-5 \\rightarrow f'''(0)=-30$$</p>\n<p>Hence, let</p>\n<p>$$f'(x)=(ax+b)(x-0)(x-1)(x+1)$$</p>\n<p>$$\\rightarrow f'(x)=ax^4+bx^3-ax^2-bx$$</p>\n<p>$$f''(x)=4ax^3+3bx^2-2ax-b$$</p>\n<p>$$\\therefore\\ f''(0)=0 \\rightarrow b=0$$</p>\n<p>$$f'''(x)=12ax^2+6bx-2a$$</p>\n<p>$$\\therefore\\ f'''(0)=-2a=-30$$</p>\n<p>$$\\rightarrow a=15$$</p>\n<p>$$\\therefore\\ f'(x)=15x.x.(x-1)(x+1)$$</p>\n<p>$$\\rightarrow f'(x)=15x^4-15x^2$$</p>\n<p>$$\\rightarrow f(x)=3x^5-5x^3+C$$</p>\n<p>$$\\therefore\\ f(0)=0 \\rightarrow C=0$$</p>\n<p>$$\\therefore\\ f(x)=3x^5-5x^3$$</p>\n<p>$$\\therefore\\ f(2)-f(-2)=112$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnrj9y6s",
@@ -130,7 +130,7 @@
     "difficulty": "hard",
     "solution": "<p>First check continuity at $x=0$:</p>\n<p>$\\lim _{x \\rightarrow 0}\\left|\\frac{\\sin x}{x}\\right|=1=f(0) \\rightarrow f(x)$ is continuous</p>\n<p>For $x \\neq 0$, write $g(x)=\\frac{\\sin x}{x}$. Then</p>\n<p>Now $\\frac{d}{d x}\\left(\\frac{\\sin x}{x}\\right)=\\frac{x \\cos x-\\sin x}{x^2}$</p>\n<p>To find critical points, we look for points in $(-2\\pi,2\\pi)$ where either $f'(x)=0$ or $f'(x)$ does not exist.</p>\n<p>At points where $\\frac{\\sin x}{x} \\neq 0$, the absolute value does not create a corner, so we can use $g'(x)=0$ to get stationary points:</p>\n<p>$\\Rightarrow \\mathrm{f}^{\\prime}(\\mathrm{x})=0 \\Rightarrow \\tan \\mathrm{x}=\\mathrm{x}$</p>\n<p>The equation $\\tan x=x$ has 3 solutions in $(-2\\pi,2\\pi)$ (one is $x=0$, and one each in $(\\pi, \\tfrac{3\\pi}{2})$ and $(-\\tfrac{3\\pi}{2},-\\pi)$):</p>\n<p><img alt=\"JEE Main 2026 (Online) 2nd April Morning Shift Mathematics - Application of Derivatives Question 4 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mp02hii1/4f45a6f5-ae4a-4062-a48d-ee8c60e3ad9d/89605d90-4c98-11f1-9864-53d65aa0ef81/file-6y3zli1mp02hii2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mp02hii1/4f45a6f5-ae4a-4062-a48d-ee8c60e3ad9d/89605d90-4c98-11f1-9864-53d65aa0ef81/file-6y3zli1mp02hii2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Next, $f'(x)$ does not exist at the zeros of $\\left|\\frac{\\sin x}{x}\\right|$, because $|\\,\\cdot\\,|$ creates a sharp corner when the inside changes sign. Here $\\sin x=0$ gives $x=\\pm \\pi$ (and $\\pm 2\\pi$ etc.). In the open interval $(-2\\pi,2\\pi)$, only $x=-\\pi$ and $x=\\pi$ lie inside.</p>\n<p>So we have $3$ critical points from $\\tan x=x$, and $2$ more critical points where $f'(x)$ does not exist at $x=-\\pi,\\pi$.</p>\n<p>total 5 points</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhqo1",
@@ -152,7 +152,7 @@
     "difficulty": "medium",
     "solution": "<p>$$E = 16\\\\sin\\frac{x}{2}\\cos^3\\frac{x}{2}$$</p>\n<p>$$E = 4\\sin x\\,[1 + \\cos x]$$</p>\n<p>$$\\frac{dE}{dx} = 4[\\cos x + \\cos 2x]$$</p>\n<p>$$= 8\\cos\\frac{3x}{2}\\cos\\frac{x}{2} = 0$$</p>\n<p>$$\\Rightarrow \\cos\\frac{3x}{2} = 0 \\quad \\text{or} \\quad \\cos\\frac{x}{2} = 0$$</p>\n<p>$$\\Rightarrow x = \\left\\{\\frac{\\pi}{3}, \\pi\\right\\} \\text{ are critical points of the function}$$</p>\n<p>$$E(0) = 0$$</p>\n<p>$$E(\\pi) = 0$$</p>\n<p>$$E\\left(\\frac{\\pi}{3}\\right) = 3\\sqrt{3}$$</p>\n<p>$\\therefore$ maximum value of $E = 3\\sqrt{3}$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhyie",
@@ -174,7 +174,7 @@
     "difficulty": "medium",
     "solution": "<p>Given</p>\n<p>$$ f\\left(\\frac{x+y}{3}\\right)=\\frac{f(x)+f(y)}{3}\\quad \\text{for all }x,y\\in \\mathbb{R}, $$</p>\n<p>and</p>\n<p>$$ f'(0)=3. $$</p>\n<p>We have to find the minimum value of</p>\n<p>$$ g(x)=3+e^x f(x). $$</p>\n<h2>Step 1: Find the form of $f(x)$</h2>\n<p>We are given a functional equation. We will use it carefully.</p>\n<p>Let</p>\n<p>$$ \\frac{x+y}{3}=t. $$</p>\n<p>Then</p>\n<p>$$ x+y=3t. $$</p>\n<p>The relation becomes</p>\n<p>$$ f(t)=\\frac{f(x)+f(y)}{3}\\quad \\text{whenever }x+y=3t. $$</p>\n<p>We now choose suitable values.</p>\n<h3>Put $x=y=0$</h3>\n<p>Then</p>\n<p>$$ f(0)=\\frac{f(0)+f(0)}{3}=\\frac{2f(0)}{3}. $$</p>\n<p>So,</p>\n<p>$$ 3f(0)=2f(0)\\implies f(0)=0. $$</p>\n<h3>Put $y=0$</h3>\n<p>Then</p>\n<p>$$ f\\left(\\frac{x}{3}\\right)=\\frac{f(x)+f(0)}{3}=\\frac{f(x)}{3}. $$</p>\n<p>Thus,</p>\n<p>$$ f(x)=3f\\left(\\frac{x}{3}\\right). $$</p>\n<p>Now differentiate both sides with respect to $x$:</p>\n<p>$$ f'(x)=3\\cdot f'\\left(\\frac{x}{3}\\right)\\cdot \\frac{1}{3}=f'\\left(\\frac{x}{3}\\right). $$</p>\n<p>So,</p>\n<p>$$ f'(x)=f'\\left(\\frac{x}{3}\\right). $$</p>\n<p>Repeating this,</p>\n<p>$$ f'(x)=f'\\left(\\frac{x}{3}\\right)=f'\\left(\\frac{x}{3^2}\\right)=\\cdots=f'\\left(\\frac{x}{3^n}\\right). $$</p>\n<p>As $n\\to\\infty$,</p>\n<p>$$ \\frac{x}{3^n}\\to 0. $$</p>\n<p>Since $f$ is differentiable, $f'$ is defined at $0$, so we get</p>\n<p>$$ f'(x)=f'(0)=3. $$</p>\n<p>Hence,</p>\n<p>$$ f'(x)=3\\quad \\text{for all }x. $$</p>\n<p>Therefore,</p>\n<p>$$ f(x)=3x+c. $$</p>\n<p>But $f(0)=0$, so</p>\n<p>$$ c=0. $$</p>\n<p>Thus,</p>\n<p>$$ f(x)=3x. $$</p>\n<h2>Step 2: Write $g(x)$</h2>\n<p>Now</p>\n<p>$$ g(x)=3+e^x f(x)=3+e^x(3x)=3+3xe^x. $$</p>\n<p>So,</p>\n<p>$$ g(x)=3\\bigl(1+xe^x\\bigr). $$</p>\n<h2>Step 3: Minimise $xe^x$</h2>\n<p>Let</p>\n<p>$$ h(x)=xe^x. $$</p>\n<p>Then</p>\n<p>$$ h'(x)=e^x+xe^x=e^x(1+x). $$</p>\n<p>Since $e^x>0$ for all $x$, we have</p>\n<p>$$ h'(x)=0 \\iff 1+x=0 \\iff x=-1. $$</p>\n<p>Now,</p>\n<ul>\n<li><p>for $x<-1$, $h'(x)<0$, so $h$ is decreasing,</p></li>\n<li><p>for $x>-1$, $h'(x)>0$, so $h$ is increasing.</p></li>\n</ul>\n<p>Hence $h(x)$ has a minimum at $x=-1$.</p>\n<p>Its minimum value is</p>\n<p>$$ h(-1)=(-1)e^{-1}=-\\frac{1}{e}. $$</p>\n<p>Therefore,</p>\n<p>$$ g_{\\min}=3\\left(1-\\frac{1}{e}\\right)=3\\left(\\frac{e-1}{e}\\right). $$</p>\n<h2>Final Answer</h2>\n<p>$$ \\boxed{3\\left(\\frac{e-1}{e}\\right)} $$</p>\n<p>So the correct option is <strong>B</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6rp62j4",
@@ -196,7 +196,7 @@
     "difficulty": "medium",
     "solution": "<p>We are given</p>\n<p>$$ f(x)=\\int_0^{x^2} \\frac{t^2-8t+15}{e^t}\\,dt, \\quad x\\in\\mathbb{R}. $$</p>\n<p>To find the local extrema, we first compute the derivative using the Fundamental Theorem of Calculus and the chain rule.</p>\n<p>Step 1. Rewrite the derivative:</p>\n<p>Let</p>\n<p>$$ F(u)=\\int_0^u \\frac{t^2-8t+15}{e^t}\\,dt, $$</p>\n<p>so that</p>\n<p>$$ f(x)=F(x^2). $$</p>\n<p>Then by the chain rule,</p>\n<p>$$ f'(x)=F'(x^2)\\cdot 2x. $$</p>\n<p>Since</p>\n<p>$$ F'(u)=\\frac{u^2-8u+15}{e^u}, $$</p>\n<p>we substitute $u=x^2$ to get</p>\n<p>$$ f'(x)=\\frac{(x^2)^2-8x^2+15}{e^{x^2}}\\cdot 2x = \\frac{2x\\,(x^4-8x^2+15)}{e^{x^2}}. $$</p>\n<p>Step 2. Factor and Identify Critical Points:</p>\n<p>Factor the polynomial $x^4-8x^2+15$ by writing it in terms of $x^2$. Let $y=x^2$, then</p>\n<p>$$ y^2-8y+15=(y-3)(y-5) $$</p>\n<p>so that</p>\n<p>$$ x^4-8x^2+15=(x^2-3)(x^2-5). $$</p>\n<p>Thus,</p>\n<p>$$ f'(x)=\\frac{2x\\,(x^2-3)(x^2-5)}{e^{x^2}}. $$</p>\n<p>Since $e^{x^2}>0$ for all $x$, the zeros of $f'(x)$ are determined by</p>\n<p>$$ 2x\\,(x^2-3)(x^2-5)=0. $$</p>\n<p>That gives the critical points:</p>\n\n<p><p>$2x=0 \\Rightarrow x=0$,</p></p>\n<p><p>$x^2-3=0 \\Rightarrow x=\\pm\\sqrt{3}$,</p></p>\n<p><p>$x^2-5=0 \\Rightarrow x=\\pm\\sqrt{5}$.</p></p>\n\n<p>Step 3. Analyzing the Sign of $f'(x)$:</p>\n<p>We need to determine the nature (maximum or minimum) by looking at the sign changes of $f'(x)$ on the intervals determined by the critical points $x=-\\sqrt{5}$, $x=-\\sqrt{3}$, $x=0$, $x=\\sqrt{3}$, and $x=\\sqrt{5}$. Notice that the factor $2x\\,(x^2-3)(x^2-5)$ will dictate the sign.</p>\n<p>Let’s define:</p>\n<p>$$ h(x)=x\\,(x^2-3)(x^2-5). $$</p>\n<p>Examine the sign of $h(x)$ in each interval:</p>\n\n<p>For $x < -\\sqrt{5}$:</p>\n\n\n<p><p>$x$ is negative.</p></p>\n<p><p>$x^2>5$ so $x^2-3>0$ and $x^2-5>0$.</p></p>\n<p><p>Product: negative $\\times$ positive $\\times$ positive = negative.</p></p>\n<p><p>Thus, $f'(x)<0$.</p></p>\n\n\n<p>For $-\\sqrt{5} < x < -\\sqrt{3}$:</p>\n\n\n<p><p>$x$ is negative.</p></p>\n<p><p>$x^2$ is between 3 and 5 so $x^2-3>0$ while $x^2-5<0$.</p></p>\n<p><p>Product: negative $\\times$ positive $\\times$ negative = positive.</p></p>\n<p><p>Thus, $f'(x)>0$.</p></p>\n\n\n<p>For $-\\sqrt{3} < x < 0$:</p>\n\n\n<p><p>$x$ is negative.</p></p>\n<p><p>$x^2<3$ so both $x^2-3<0$ and $x^2-5<0$.</p></p>\n<p><p>Product: negative $\\times$ negative $\\times$ negative = negative.</p></p>\n<p><p>Thus, $f'(x)<0$.</p></p>\n\n\n<p>For $0 < x < \\sqrt{3}$:</p>\n\n\n<p><p>$x$ is positive.</p></p>\n<p><p>$x^2<3$ so both $x^2-3<0$ and $x^2-5<0$.</p></p>\n<p><p>Product: positive $\\times$ negative $\\times$ negative = positive.</p></p>\n<p><p>Thus, $f'(x)>0$.</p></p>\n\n\n<p>For $\\sqrt{3} < x < \\sqrt{5}$:</p>\n\n\n<p><p>$x$ is positive.</p></p>\n<p><p>$x^2$ is between 3 and 5 so $x^2-3>0$ while $x^2-5<0$.</p></p>\n<p><p>Product: positive $\\times$ positive $\\times$ negative = negative.</p></p>\n<p><p>Thus, $f'(x)<0$.</p></p>\n\n\n<p>For $x > \\sqrt{5}$:</p>\n\n\n<p><p>$x$ is positive.</p></p>\n<p><p>$x^2>5$ so both $x^2-3>0$ and $x^2-5>0$.</p></p>\n<p><p>Product: positive $\\times$ positive $\\times$ positive = positive.</p></p>\n<p><p>Thus, $f'(x)>0$.</p></p>\n\n<p>Step 4. Classify the Critical Points:</p>\n\n<p><p>At $x=-\\sqrt{5}$: $f'(x)$ changes from negative to positive → local minimum.</p></p>\n<p><p>At $x=-\\sqrt{3}$: $f'(x)$ changes from positive to negative → local maximum.</p></p>\n<p><p>At $x=0$: $f'(x)$ changes from negative to positive → local minimum.</p></p>\n<p><p>At $x=\\sqrt{3}$: $f'(x)$ changes from positive to negative → local maximum.</p></p>\n<p><p>At $x=\\sqrt{5}$: $f'(x)$ changes from negative to positive → local minimum.</p></p>\n\n<p>Step 5. Conclusion:</p>\n<p>There are local maximum points at $x=-\\sqrt{3}$ and $x=\\sqrt{3}$ (2 points in total), and local minimum points at $x=-\\sqrt{5}$, $x=0$, and $x=\\sqrt{5}$ (3 points in total).</p>\n<p>Thus, the numbers of local maximum and local minimum points of $f$ are 2 and 3, respectively.</p>\n<p>The correct option is Option C.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6srmtjm",
@@ -235,7 +235,7 @@
     "difficulty": "medium",
     "solution": "<p>$\\mathrm{t} .\\left(9-\\frac{11 \\mathrm{t}^2}{3}-\\mathrm{t}\\right)$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7dc70ol/c8380a4b-b42a-437a-9fe6-6e63f1e4278a/cc6f4650-ef88-11ef-a61f-c1fcbecbcf7c/file-jaoe38c1m7dc70om.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7dc70ol/c8380a4b-b42a-437a-9fe6-6e63f1e4278a/cc6f4650-ef88-11ef-a61f-c1fcbecbcf7c/file-jaoe38c1m7dc70om.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 24th January Morning Shift Mathematics - Application of Derivatives Question 22 English Explanation 1\"></p>\n<p>$$\\begin{aligned}\n&amp; A=9 t-t^2-\\frac{11}{3} t^3 \\\\\n&amp; \\frac{d A}{d t}=9-2 t-11 t^2 \\\\\n&amp; \\Rightarrow 11 t^2+2 t-9=0 \\\\\n&amp; 11 t^2+11 t-9 t-9=0 \\\\\n&amp; t=-1 \\&amp; t=\\frac{9}{11}\n\\end{aligned}$$</p>\n<p>$\\therefore \\frac{\\mathrm{dA}}{\\mathrm{dt}}=$ <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7dcid0z/cd445e80-c223-49bf-8ca1-8c4b0101b398/07deec30-ef8a-11ef-a61f-c1fcbecbcf7c/file-jaoe38c1m7dcid10.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7dcid0z/cd445e80-c223-49bf-8ca1-8c4b0101b398/07deec30-ef8a-11ef-a61f-c1fcbecbcf7c/file-jaoe38c1m7dcid10.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 24th January Morning Shift Mathematics - Application of Derivatives Question 22 English Explanation 2\"></p>\n<p>$$\\begin{aligned}\n&amp; \\therefore \\text { largest area }=\\frac{9}{11}\\left(9-\\frac{11}{3}, \\frac{81}{121}-\\frac{9}{11}\\right) \\\\\n&amp; =\\frac{9}{11} \\cdot \\frac{63}{11}=\\frac{567}{121}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6w9o8s1",
@@ -257,7 +257,7 @@
     "difficulty": "medium",
     "solution": "<p>$f(x)=\\left\\{\\begin{array}{cc}1-2 x, &amp; x&lt;-1 \\\\ \\frac{1}{3}(7-2 x), &amp; -1 \\leq x \\leq 2 \\\\ \\frac{1}{3}(7+2 x) &amp; 0 \\leq x&lt;2 \\\\ \\frac{11}{18}(x-4)(x-5), &amp; x&gt;2\\end{array}\\right.$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m77nx3k2/fcac8f5e-e38f-4f85-9a5a-350b1e5e3b67/f2378220-ec69-11ef-a7f5-ed1df7ab36a3/file-jaoe38c1m77nx3k3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m77nx3k2/fcac8f5e-e38f-4f85-9a5a-350b1e5e3b67/f2378220-ec69-11ef-a7f5-ed1df7ab36a3/file-jaoe38c1m77nx3k3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 28th January Morning Shift Mathematics - Application of Derivatives Question 20 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp;\\therefore \\text { Local minimum values at } \\mathrm{A} \\&amp; \\mathrm{~B}\\\\\n&amp;\\begin{aligned}\n&amp; \\frac{7}{3}-\\frac{11}{72} \\\\\n&amp; \\Rightarrow \\frac{168-11}{72} \\Rightarrow \\frac{157}{72}\n\\end{aligned}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j2cm",
@@ -296,7 +296,7 @@
     "difficulty": "medium",
     "solution": "<p>To determine the value of $ f(3) $ for the function $ f(x) = 2x^3 - 9ax^2 + 12a^2x + 1 $, where $ a > 0 $, we follow these steps:</p>\n<p>First, find the critical points by setting the derivative equal to zero:</p>\n<p>$ f'(x) = 6x^2 - 18ax + 12a^2 = 0 $</p>\n<p>Factoring gives:</p>\n<p>$ 6(x - a)(x - 2a) = 0 $</p>\n<p>Thus, the critical points are $ x = a $ and $ x = 2a $.</p>\n\n<p><p>$ x = a $ corresponds to a local maximum.</p></p>\n<p><p>$ x = 2a $ corresponds to a local minimum.</p></p>\n\n<p>According to the problem, $ p^2 = q $. Substituting $ p = a $ and $ q = 2a $ gives:</p>\n<p>$ a^2 = 2a $</p>\n<p>Solving for $ a $ gives:</p>\n<p>$ a(a - 2) = 0 $</p>\n<p>Since $ a > 0 $, we have $ a = 2 $.</p>\n<p>Now, substitute $ a = 2 $ back into the function:</p>\n<p>$ f(x) = 2x^3 - 18x^2 + 48x + 1 $</p>\n<p>To find $ f(3) $:</p>\n<p>$ f(3) = 2(3)^3 - 18(3)^2 + 48(3) + 1 $</p>\n<p>Calculate each term:</p>\n\n<p><p>$ 2(3)^3 = 54 $</p></p>\n<p><p>$ 18(3)^2 = 162 $</p></p>\n<p><p>$ 48(3) = 144 $</p></p>\n\n<p>Thus, </p>\n<p>$ f(3) = 54 - 162 + 144 + 1 = 37 $</p>\n<p>So, $ f(3) = 37 $.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9gxgb7g",
@@ -318,7 +318,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; f(x)=\\left\\{\\begin{array}{cc}\n|-x-2+2 x| &amp; x \\leq-2 \\\\\n|x+2+2 x| &amp; -2 \\leq x \\leq 0 \\\\\n|x+2-2 x| &amp; x \\geq 0\n\\end{array}\\right. \\\\\n&amp; f(x)=\\left\\{\\begin{array}{lc}\n|-x-2+2 x| &amp; x \\leq-2 \\\\\n|x+2+2 x| &amp; -2 \\leq x \\leq 0 \\\\\n|x+2-2 x| &amp; x \\geq 0\n\\end{array}\\right. \\\\\n&amp; f(x)=\\left\\{\\begin{array}{cc}\n|x-2| &amp; x \\leq-2 \\\\\n|3 x+2| &amp; -2&lt; x \\leq 0 \\\\\n|2-x| &amp; x&gt;0\n\\end{array}\\right.\n\\end{aligned}$$</p>\n<p>$$\\begin{gathered}\nf(x)=\\left\\{\\begin{array}{cc}\n2-x &amp; x \\leq-2 \\\\\n-3 x-2 &amp; -2&lt; x \\leq-\\frac{2}{3} \\\\\n3 x+2 &amp; -\\frac{2}{3}&lt; x \\leq 0\n\\end{array}\\right. \\\\\nf(x)=\\left\\{\\begin{array}{cc}\n2-x &amp; x \\leq-2 \\\\\n-3 x-2 &amp; -2&lt; x \\leq-\\frac{2}{3} \\\\\n3 x+2 &amp; -\\frac{2}{3}&lt; x \\leq 0 \\\\\n2-x &amp; 0&lt; x&lt;2 \\\\\nx-2 &amp; x \\geq 2\n\\end{array}\\right.\n\\end{gathered}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9z89jqk/08da29cc-a398-45e7-a7b1-d58e3ccafd4b/1b4cf6c0-232b-11f0-99e8-5f2c09d57200/file-jaoe38c1m9z89jql.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9z89jqk/08da29cc-a398-45e7-a7b1-d58e3ccafd4b/1b4cf6c0-232b-11f0-99e8-5f2c09d57200/file-jaoe38c1m9z89jql.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Evening Shift Mathematics - Application of Derivatives Question 13 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\text { No. of maxima }=1 \\\\\n&amp; \\text { No. of minima }=2 \\\\\n&amp; m=2 \\\\\n&amp; n=1 \\\\\n&amp; m+n=3\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnusfr",
@@ -340,7 +340,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp;f(x)=6 x^3-45 a x^2+108 a^2 x+1\\\\\n&amp;\\text { For maxima or minima } f^{\\prime}(x)=0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9rtxz4o/b8ef9aff-e668-4ba4-85bb-7cbb173dbabe/9d207980-1f19-11f0-9588-0d31893f02ea/file-jaoe38c1m9rtxz4p.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9rtxz4o/b8ef9aff-e668-4ba4-85bb-7cbb173dbabe/9d207980-1f19-11f0-9588-0d31893f02ea/file-jaoe38c1m9rtxz4p.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 4th April Evening Shift Mathematics - Application of Derivatives Question 14 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; x_1 x_2=\\frac{108 a^2}{18}=54 \\\\\n&amp; \\Rightarrow a^2=9 \\Rightarrow a=3 \\\\\n&amp; \\text { Now, } a+x_1+x_2=3+\\frac{90}{6}=3+15=18\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9doiwrb",
@@ -362,7 +362,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\lim _{x \\rightarrow 0} \\frac{f(x)}{x^2}=5 \\\\\n& \\lim _{x \\rightarrow 0} \\frac{\\left.a x^4+b x^3+c x^2+d x+e\\right)}{x^2}=5 \\\\\n& c=5 \\text { and } d=e=0 \\\\\n& f(x)=a x^4+b x^3+5 x^2 \\\\\n& f^{\\prime}(x)=4 a x^3+3 b x^2+10 x \\\\\n& =x\\left(4 a x^2+3 b x+10\\right)\n\\end{aligned}$$</p>\n<p>has extremes at 4 and so $f^{\\prime}(4)=0 \\& f^{\\prime}(5)=0$</p>\n<p>so $\\mathrm{a}=\\frac{1}{8} \\& \\mathrm{~b}=\\frac{-3}{2}$</p>\n<p>so $f(2)=\\frac{1}{8} \\times 2^4-\\frac{3}{2} \\times 2^3+5 \\times 2^2$</p>\n<p>$$=2-12+20=10$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j745",
@@ -384,7 +384,7 @@
     "difficulty": "hard",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9kzw7c3/4e2add94-1d03-4ae5-959c-0e4f224999ab/66139730-1b57-11f0-9511-1dff36e0d350/file-jaoe38c1m9kzw7c4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9kzw7c3/4e2add94-1d03-4ae5-959c-0e4f224999ab/66139730-1b57-11f0-9511-1dff36e0d350/file-jaoe38c1m9kzw7c4.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 7th April Morning Shift Mathematics - Application of Derivatives Question 15 English Explanation\"></p>\n<p>$\\left.\\begin{array}{c}3-2 a-b=0 \\\\ 12+4 a+\\frac{b}{2}=0\\end{array}\\right\\} \\begin{aligned} &amp; a=\\frac{-9}{2} \\\\ &amp; b=12\\end{aligned}$</p>\n<p>$$\\begin{aligned}\n&amp; \\therefore f(x)=x^3-\\frac{9}{2} x^2+12 \\ln |x|+1 \\\\\n&amp; f(-1)=-1-\\frac{9}{2}+1=-\\frac{9}{2}=-4.5 \\\\\n&amp; f(-2)=-8-18+12 \\ln 2+1 \\\\\n&amp; \\quad=-25+12 \\ln 2=-16.6 \\\\\n&amp; f\\left(-\\frac{1}{2}\\right)=-\\frac{1}{8}-\\frac{9}{8}+12 \\ln \\left(\\frac{1}{2}\\right)+1=-8.5 \\\\\n&amp; |M+m|=|-16.6-4.5|=21.1\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mavai3xi",
@@ -407,7 +407,7 @@
     "solution": "<p>$$ \\begin{aligned} &amp; \\lim _{x \\rightarrow 0^{+}} f(x)=\\lim _{x \\rightarrow 0^{-}} f(x)=3 \\\\ &amp; \\text { since } 3&gt;\\frac{7}{3} \\Rightarrow 3&gt;f(0) \\end{aligned} $$</p>\n<p>$\\Rightarrow \\mathrm{x}=0$ is local minima ….option (B) is correct</p>\n<p>Now,</p>\n<p>$$ \\begin{aligned} &amp; f(x)=\\frac{6 x+\\sin x}{2 x+\\sin x}=1+\\frac{4 x}{2 x+\\sin x} \\\\ &amp; f^{\\prime}(x)=\\frac{4[(2 x+\\sin x) \\cdot 1-x(2+\\cos x)]}{(2 x+\\sin x)^2}=\\frac{4(\\sin x-x \\cos x)}{(2 x+\\sin x)^2} \\\\ &amp; =\\frac{4 \\cos x(\\tan x-x)}{(2 x+\\sin x)^2} \\end{aligned} $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1maz2om3m/4fa33f8f-c8b1-4797-8809-c3e17f4742d4/7eddec20-36e1-11f0-846e-b3355723c14c/file-jaoe38c1maz2om3n.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1maz2om3m/4fa33f8f-c8b1-4797-8809-c3e17f4742d4/7eddec20-36e1-11f0-846e-b3355723c14c/file-jaoe38c1maz2om3n.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 2 Online Mathematics - Application of Derivatives Question 6 English Explanation 1\"></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1maz2ppg5/1dbb1587-8c90-417d-9ea8-6b907863118d/9d434b60-36e1-11f0-846e-b3355723c14c/file-jaoe38c1maz2ppg6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1maz2ppg5/1dbb1587-8c90-417d-9ea8-6b907863118d/9d434b60-36e1-11f0-846e-b3355723c14c/file-jaoe38c1maz2ppg6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 2 Online Mathematics - Application of Derivatives Question 6 English Explanation 2\"></p>\n<p>$$ \\text { Options (C) &amp; (D) are also correct. } $$</p>",
     "section": "Sec 1",
     "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lscngs3o",
@@ -429,7 +429,7 @@
     "difficulty": "medium",
     "solution": "<p>$$g(x)=3 f\\left(\\frac{x}{3}\\right)+f(3-x) \\text { and } f^{\\prime \\prime}(x)>0 \\forall x \\in(0,3)$$</p>\n<p>$$\\Rightarrow \\mathrm{f}^{\\prime}(\\mathrm{x})$$ is increasing function</p>\n<p>$$\\begin{aligned}\n& g^{\\prime}(x)=3 \\times \\frac{1}{3} \\cdot f^{\\prime}\\left(\\frac{x}{3}\\right)-f^{\\prime}(3-x) \\\\\n& =f^{\\prime}\\left(\\frac{x}{3}\\right)-f^{\\prime}(3-x)\n\\end{aligned}$$</p>\n<p>If $$\\mathrm{g}$$ is decreasing in $$(0, \\alpha)$$</p>\n<p>$$\\begin{aligned}\n& \\mathrm{g}^{\\prime}(\\mathrm{x})<0 \\\\\n& \\mathrm{f}^{\\prime}\\left(\\frac{\\mathrm{x}}{3}\\right)-\\mathrm{f}^{\\prime}(3-\\mathrm{x})<0 \\\\\n& \\mathrm{f}^{\\prime}\\left(\\frac{\\mathrm{x}}{3}\\right)<\\mathrm{f}^{\\prime}(3-\\mathrm{x}) \\\\\n& \\Rightarrow \\frac{\\mathrm{x}}{3}<3-\\mathrm{x} \\\\\n& \\Rightarrow \\mathrm{x}<\\frac{9}{4}\n\\end{aligned}$$</p>\n<p>Therefore $$\\alpha=\\frac{9}{4}$$</p>\n<p>Then $$8 \\alpha=8 \\times \\frac{9}{4}=18$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsfksmfv",
@@ -451,7 +451,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; f(x)=2 x+3(x)^{\\frac{2}{3}} \\\\\n&amp; f^{\\prime}(x)=2+2 x^{\\frac{-1}{3}} \\\\\n&amp; =2\\left(1+\\frac{1}{x^{\\frac{1}{3}}}\\right) \\\\\n&amp; =2\\left(\\frac{x^{\\frac{1}{3}}+1}{x^{\\frac{1}{3}}}\\right)\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsr8t6nc/4c9643cb-de77-44b7-86fb-da033b7c270c/4abc4680-ce37-11ee-9412-cd4f9c6f2c40/file-6y3zli1lsr8t6nd.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsr8t6nc/4c9643cb-de77-44b7-86fb-da033b7c270c/4abc4680-ce37-11ee-9412-cd4f9c6f2c40/file-6y3zli1lsr8t6nd.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 29th January Evening Shift Mathematics - Application of Derivatives Question 43 English Explanation\"></p>\n<p>So, maxima (M) at x = $$-$$1 &amp; minima (m) at x = 0</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsf0sbol",
@@ -490,7 +490,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; \\mathrm{f}^{\\prime}(\\mathrm{x})=(\\mathrm{x}+3)^2 \\cdot 3(\\mathrm{x}-2)^2+(\\mathrm{x}-2)^3 2(\\mathrm{x}+3) \\\\\n&amp; =5(\\mathrm{x}+3)(\\mathrm{x}-2)^2(\\mathrm{x}+1) \\\\\n&amp; \\mathrm{f}^{\\prime}(\\mathrm{x})=0, \\mathrm{x}=-3,-1,2\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsoxw4nw/e2162195-84ee-4126-95ca-5b36a9ae1ecf/06e90dc0-ccf3-11ee-a330-494dca5e9a63/file-6y3zli1lsoxw4nx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsoxw4nw/e2162195-84ee-4126-95ca-5b36a9ae1ecf/06e90dc0-ccf3-11ee-a330-494dca5e9a63/file-6y3zli1lsoxw4nx.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 30th January Evening Shift Mathematics - Application of Derivatives Question 41 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; f(-4)=-216 \\\\\n&amp; f(-3)=0, f(4)=49 \\times 8=392 \\\\\n&amp; M=392, m=-216 \\\\\n&amp; M-m=392+216=608 \\\\\n&amp; \\text { Ans }=\\text { '3' }\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsg91cac",
@@ -512,7 +512,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsqngokt/b3ef22bc-e563-4b45-a320-95a6d263c505/cf5ad1d0-cde3-11ee-a0d3-7b75c4537559/file-6y3zli1lsqngoku.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsqngokt/b3ef22bc-e563-4b45-a320-95a6d263c505/cf5ad1d0-cde3-11ee-a0d3-7b75c4537559/file-6y3zli1lsqngoku.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 30th January Morning Shift Mathematics - Application of Derivatives Question 40 English Explanation\"></p>\n<p>Area of $$\\Delta$$</p>\n<p>$$\\begin{aligned}\n&amp; =\\frac{1}{2}\\left|\\begin{array}{ccc}\n0 &amp; 0 &amp; 1 \\\\\nx &amp; y &amp; 1 \\\\\n-x &amp; y &amp; 1\n\\end{array}\\right| \\\\\n&amp; \\Rightarrow\\left|\\frac{1}{2}(x y+x y)\\right|=|x y| \\\\\n&amp; \\operatorname{Area}(\\Delta)=|x y|=\\left|x\\left(-2 x^2+54\\right)\\right| \\\\\n&amp; \\frac{d(\\Delta)}{d x}=\\left|\\left(-6 x^2+54\\right)\\right| \\Rightarrow \\frac{d \\Delta}{d x}=0 \\text { at } x=3 \\\\\n&amp; \\text { Area }=3(-2 \\times 9+54)=108\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv2er3i1",
@@ -534,7 +534,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(x)=3 \\sqrt{x-2}+\\sqrt{4-x} \\\\\n& \\text { Let } x=2 \\sin ^2 \\theta+4 \\cos ^2 \\theta \\\\\n& =3 \\sqrt{2 \\sin ^2 \\theta+4 \\cos ^2 \\theta-2}+\\sqrt{4-2 \\sin ^2 \\theta-4 \\cos ^2 \\theta} \\\\\n& =3 \\sqrt{2 \\cos ^2 \\theta}+\\sqrt{2 \\sin ^2 \\theta} \\\\\n& =3 \\sqrt{2}|\\cos \\theta|+\\sqrt{2}|\\sin \\theta|\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow 3 \\sqrt{2} \\cos \\theta+\\sqrt{2} \\sin \\theta \\leq \\sqrt{18+2} \\\\\n& \\Rightarrow 3 \\sqrt{2} \\cos \\theta+\\sqrt{2} \\sin \\theta \\leq \\sqrt{20}\n\\end{aligned}$$</p>\n<p>Minimum value exists when $$\\theta=\\frac{\\pi}{2}$$</p>\n<p>$$\\begin{aligned}\n& \\text { So, minimum value }=\\sqrt{2} \\\\\n& \\Rightarrow \\alpha=\\sqrt{2} \\text { and } \\beta=\\sqrt{20} \\\\\n& \\Rightarrow \\alpha^2+2 \\beta^2=2+40 \\\\\n& =42\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv0vxd5u",
@@ -556,7 +556,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(x)=\\frac{2 x^2-3 x+8}{2 x^2+3 x+8}=y, 2 x^2+3 x+8>0 \\quad \\forall x \\in \\mathbb{R} \\\\\n& \\Rightarrow \\quad x^2(2 y-2)+x(3 y+3)+8 y-8=0\n\\end{aligned}$$</p>\n<p>Since $$x \\in \\mathbb{R}$$, the equation has real roots</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad D \\geq 0 \\\\\n& \\Rightarrow(3 y+3)^2-4(2 y-2)(8 y-8) \\geq 0 \\\\\n& \\Rightarrow 9(y+1)^2-64 y(y-1)^2 \\geq 0 \\\\\n& \\Rightarrow(3 y+3)^2-(8 y-8)^2 \\geq 0 \\\\\n& \\Rightarrow(11 y-5)(-5 y+11) \\geq 0 \\\\\n& \\Rightarrow\\left(y-\\frac{5}{11}\\right)\\left(y-\\frac{11}{5}\\right) \\leq 0 \\\\\n& \\Rightarrow y \\in\\left[\\frac{5}{11}, \\frac{11}{5}\\right]\n\\end{aligned}$$</p>\n<p>Sum of maximum and minimum value</p>\n<p>$$\\begin{aligned}\n& y_{\\max }+y_{\\min }=\\frac{5}{11}+\\frac{11}{5}=\\frac{25+121}{55} \\\\\n& =\\frac{146}{55}=\\frac{m}{n} \\Rightarrow m+n=201\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv9s20kb",
@@ -595,7 +595,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwgejsnu/15565bcf-b8bf-4793-9f53-176aa69e81ff/facbac90-1771-11ef-910c-8da948f7ddd9/file-1lwgejsnv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwgejsnu/15565bcf-b8bf-4793-9f53-176aa69e81ff/facbac90-1771-11ef-910c-8da948f7ddd9/file-1lwgejsnv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 5th April Morning Shift Mathematics - Application of Derivatives Question 29 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; P D=4 \\cos \\theta \\Rightarrow P S=4 \\cos \\theta+2 \\sin \\theta \\\\\n&amp; D S=2 \\sin \\theta \\\\\n&amp; A P=4 \\sin \\theta \\\\\n&amp; Q A=2 \\cos \\theta \\Rightarrow P Q=2 \\cos \\theta+4 \\sin \\theta \\\\\n&amp; \\Rightarrow \\text { Area of } P Q R S=4(2 \\cos \\theta+\\sin \\theta)(\\cos \\theta+2 \\sin \\theta) \\\\\n&amp;=4\\left[2 \\cos ^2 \\theta+2 \\sin ^2 \\theta+5 \\sin \\theta \\cos \\theta\\right] \\\\\n&amp;=8+10 \\sin 2 \\theta\n\\end{aligned}$$</p>\n<p>Area is maximum when $$\\sin 2 \\theta=1 \\Rightarrow \\theta=45^{\\circ}$$</p>\n<p>$$\\Rightarrow$$ Maximum area $$=8+10=18$$</p>\n<p>$$\\therefore P S=4 \\times \\frac{1}{\\sqrt{2}}+2 \\times \\frac{1}{\\sqrt{2}}=\\frac{6}{\\sqrt{2}}$$</p>\n<p>$$\\begin{aligned}\n&amp; P Q=2 \\times \\frac{1}{\\sqrt{2}}+4 \\times \\frac{1}{\\sqrt{2}}=\\frac{6}{\\sqrt{2}} \\\\\n\\therefore \\quad &amp; (a+b)^2=\\left(\\frac{6}{\\sqrt{2}}+\\frac{6}{\\sqrt{2}}\\right)^2=\\left(\\frac{12}{\\sqrt{2}}\\right)=(6 \\sqrt{2})^2=72\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv3ve65y",
@@ -617,7 +617,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(x)=6 x^2-18 a x+12 a^2 \\\\\n& =6\\left(x^2-3 a+2 a^2\\right) \\\\\n& =6(x-a)(x-2 a)=0 \\\\\n& x=a, 2 a\n\\end{aligned}$$</p>\n<p>$$a=\\alpha, \\quad 2 a=\\alpha^2 \\quad \\Rightarrow \\alpha=0,2$$</p>\n<p>$$\\begin{array}{lll}\na>0 & \\therefore & \\alpha=2 \\\\\n& & \\alpha^2=4\n\\end{array}$$</p>\n<p>$$\\therefore x^2-6 x+8=0$$ is the required quadratic equation.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv3vef38",
@@ -656,7 +656,7 @@
     "difficulty": "medium",
     "solution": "<p>To find the number of critical points of the function $$f(x)=(x-2)^{2 / 3}(2 x+1)$$, we need to determine where its derivative $$f'(x)$$ is equal to zero or undefined. Critical points occur where the derivative is zero or does not exist.</p>\n\n<p>First, let's find the derivative of the function:</p>\n\n<p>$$f(x)=(x-2)^{2 / 3}(2 x+1)$$</p>\n\n<p>We apply the product rule for differentiation, which states that $$(uv)' = u'v + uv'$$, where $$u = (x-2)^{2/3}$$ and $$v = 2x + 1$$.</p>\n\n<p>We need the derivatives of $$u$$ and $$v$$:</p>\n\n<p>For $$u = (x-2)^{2/3}$$, we use the chain rule:</p>\n\n<p>$$u'(x) = \\frac{d}{dx}[(x-2)^{2/3}] = \\frac{2}{3}(x-2)^{-1/3} \\cdot 1 = \\frac{2}{3}(x-2)^{-1/3}$$</p>\n\n<p>The derivative of $$v$$ is straightforward, as $$v = 2x + 1$$:</p>\n\n<p>$$v'(x) = 2$$</p>\n\n<p>Now we apply the product rule:</p>\n\n<p>$$f'(x) = u'(x)v(x) + u(x)v'(x)$$</p>\n\n<p>Substituting $$u$$, $$u'$$, and $$v$$, we get:</p>\n\n<p>$$f'(x) = \\left( \\frac{2}{3}(x-2)^{-1/3} \\right)(2x+1) + \\left( (x-2)^{2/3} \\right)(2)$$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$f'(x) = \\frac{2(2x + 1)}{3(x-2)^{1/3}} + 2(x-2)^{2/3}$$</p>\n\n<p>For critical points, we need to solve $$f'(x) = 0$$ or where it is undefined.</p>\n\n<p>1. <strong>Solve for where the derivative is zero:</strong></p>\n\n<p>$$\\frac{2(2x + 1)}{3(x-2)^{1/3}} + 2(x-2)^{2/3} = 0$$</p>\n\n<p>Combining like terms in a common denominator, we get:</p>\n\n<p>$$\\frac{2(2x + 1) + 6(x - 2)}{3(x-2)^{1/3}} = 0$$</p>\n\n<p>Simplifying the numerator:</p>\n\n<p>$$2(2x + 1) + 6(x-2) = 4x + 2 + 6x - 12 = 10x - 10 = 10(x-1)$$</p>\n\n<p>So:</p>\n\n<p>$$\\frac{10(x-1)}{3(x-2)^{1/3}} = 0$$</p>\n\n<p>The numerator is zero when:</p>\n\n<p>$$10(x-1) = 0$$</p>\n\n<p>Therefore:</p>\n\n<p>$$x = 1$$</p>\n\n<p>2. <strong>Solve for where the derivative is undefined:</strong></p>\n\n<p>The denominator, $$3(x-2)^{1/3}$$, is undefined when $$(x-2)^{1/3} = 0$$, which happens at:</p>\n\n<p>$$x = 2$$</p>\n\n<p>From the above analysis, the critical points are at $$x = 1$$ and $$x = 2$$. Thus, there are 2 critical points.</p>\n\n<p>Therefore, the number of critical points of the function $$f(x)=(x-2)^{2 / 3}(2 x+1)$$ is:</p>\n\n<p><b>Option A</b></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv5grwlv",
@@ -678,7 +678,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; f(x)=4 \\cos ^3 x+3 \\sqrt{3} \\cos ^2 x-10 \\\\\n&amp; f^{\\prime}(x)=12 \\cos ^2 x \\cdot(-\\sin x)+6 \\sqrt{3} \\cos x \\cdot(-\\sin x)=0 \\\\\n&amp; =-6 \\sqrt{3} \\cos x \\cdot \\sin x\\left(1+\\frac{2}{\\sqrt{3}} \\cos x\\right)=0 \\\\\n&amp; \\cos x=0, \\sin x=0, \\cos x=\\frac{-\\sqrt{3}}{2}\n\\end{aligned}$$</p>\n<p>Sign of $$f(x)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lw8slgdc/e7ec72d2-9c20-4762-a251-c217bf88f1ea/a3884200-1342-11ef-9cb4-095599b9956f/file-1lw8slgdd.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lw8slgdc/e7ec72d2-9c20-4762-a251-c217bf88f1ea/a3884200-1342-11ef-9cb4-095599b9956f/file-1lw8slgdd.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 8th April Morning Shift Mathematics - Application of Derivatives Question 32 English Explanation\"></p>\n<p>$$\\therefore \\text { Maxima at } \\frac{5 \\pi}{6}, \\frac{7 \\pi}{6}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luy9clmh",
@@ -718,7 +718,7 @@
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lrwd7map/8057ea51-717c-4732-b5d9-f51f4d086fc3/34896110-bd3c-11ee-aee6-afcaab65cfd7/file-6y3zli1lrwd7maq.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lrwd7map/8057ea51-717c-4732-b5d9-f51f4d086fc3/34896110-bd3c-11ee-aee6-afcaab65cfd7/file-6y3zli1lrwd7maq.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2023 Paper 1 Online Mathematics - Application of Derivatives Question 7 English Explanation\">\n<br><br>$\\mathrm{DR}^{\\prime} \\mathrm{S}$ of $\\mathrm{OG}=1,1,1$\n<br><br>DR'S of AF $=-1,1,1$\n<br><br>DR'S of CE = 1, 1, -1\n<br><br>$\\mathrm{DR}^{\\prime} \\mathrm{S}$ of $\\mathrm{BD}=1,-1,1$\n<br><br>Equation of $\\mathrm{OG} \\Rightarrow \\frac{\\mathrm{x}}{1}=\\frac{\\mathrm{y}}{1}=\\frac{\\mathrm{z}}{1}$\n<br><br> Equation of $\\mathrm{AB} \\Rightarrow \\frac{\\mathrm{x}-1}{1}=\\frac{\\mathrm{y}}{-1}=\\frac{\\mathrm{z}}{0}$\n<br><br>Normal to both the line's\n<br><br>$$\n=\\left|\\begin{array}{ccc}\n\\hat{i} &amp; \\hat{j} &amp; \\hat{k} \\\\\n1 &amp; 1 &amp; 1 \\\\\n1 &amp; -1 &amp; 0\n\\end{array}\\right|=\\hat{i}+\\hat{j}-2 \\hat{k}\n$$\n<br><br>$\\overrightarrow{\\mathrm{OA}}=\\hat{\\mathrm{i}}$\n<br><br>S.D. $=\\frac{|\\hat{\\mathrm{i}} \\cdot(\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}-2 \\hat{\\mathrm{k}})|}{|\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}-2 \\hat{\\mathrm{k}}|}=\\frac{1}{\\sqrt{6}}$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgxt9s39",
@@ -740,7 +740,7 @@
     "difficulty": "medium",
     "solution": "Given, length of square sheet of side is $30 \\mathrm{~cm}$.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lnbdiknq/edf7bbaa-df8b-4c8e-bede-daa23c7634e0/12049450-6280-11ee-95f7-df7702d42956/file-6y3zli1lnbdiknr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lnbdiknq/edf7bbaa-df8b-4c8e-bede-daa23c7634e0/12049450-6280-11ee-95f7-df7702d42956/file-6y3zli1lnbdiknr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 10th April Morning Shift Mathematics - Application of Derivatives Question 57 English Explanation\">\n<br><br>Let, side of small square be $x \\mathrm{~cm}$.\n<br><br>Since, a square piece of tin is to be made into a box without top by cutting square from each corner and folding up the flaps to from a box. Then, this shape formed a cuboidal shape.\n<br><br>Thus, volume of the box $(V)$\n<br><br>$$\n\\begin{aligned}\n\n&amp; =(30-2 x)(30-2 x) x \\\\\\\\\n&amp;\\Rightarrow  V =x(30-2 x)^2\n\\end{aligned}\n$$\n<br><br>On differentiating both side with respect to $x$, we get\n<br><br>$$\n\\begin{aligned}\n\\frac{d V}{d x} &amp; =(30-2 x)^2+x\\{2(30-2 x) \\cdot(-2)\\} \\\\\\\\\n&amp; =(30-2 x)^2-4 x(30-2 x) \\\\\\\\\n&amp; =(30-2 x)\\{30-6 x\\}\n\\end{aligned}\n$$\n<br><br>Therefore, maximum of $V, \\frac{d V}{d x}=0$\n<br><br>$$\n\\begin{array}{ll}\n&amp;\\Rightarrow  (30-2 x)(30-6 x)=0 \\\\\\\\\n&amp;\\Rightarrow  x=15 \\text { or } x=5 \\quad[x=15 \\text { (not taken) }]\n\\end{array} \n$$\n<br><br>Thus, $x=5$\n<br><br>So, the surface area\n<br><br>$$\n\\begin{array}{ll}\n=4 \\times(30-2 x) \\times x+(30-2 x)^2 &amp; \\\\\\\\\n=4 \\times(30-10) \\times 5+(30-10)^2 &amp; (\\text { Put } x=5) \\\\\\\\\n=400+400=800 &amp;\n\\end{array}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgrg9l7x",
@@ -762,7 +762,7 @@
     "difficulty": "hard",
     "solution": "$$\n\\text { Let } y=\\left(\\frac{\\sqrt{3 e}}{2 \\sin x}\\right)^{\\sin ^2 x}\n$$\n<br/><br/>$$\n\\ln \\mathrm{y}=\\sin ^2 \\mathrm{x} \\cdot \\ln \\left(\\frac{\\sqrt{3 \\mathrm{e}}}{2 \\sin \\mathrm{x}}\\right)\n$$\n<br/><br/>$$\n\\frac{1}{y} y^{\\prime}=\\ln \\left(\\frac{\\sqrt{3 e}}{2 \\sin x}\\right) 2 \\sin x \\cos x+\\sin ^2 x \\frac{2 \\sin x}{\\sqrt{3 e}} \\frac{\\sqrt{3 e}}{2}(-\\operatorname{cosec} x \\cot x)\n$$\n<br/><br/>For maxima or minima, $$\n\\frac{d y}{d x}=0\n$$\n<br/><br/>$$\n\\Rightarrow \\ln \\left(\\frac{\\sqrt{3 e}}{2 \\sin x}\\right) 2 \\sin x \\cos x-\\sin x \\cos x=0\n$$\n<br/><br/>$$\n\\Rightarrow \\sin x \\cos x\\left[2 \\ln \\left(\\frac{\\sqrt{3 e}}{2 \\sin x}\\right)-1\\right]=0\n$$\n<br/><br/>$$\n\\Rightarrow \\ln \\left(\\frac{3 \\mathrm{e}}{4 \\sin ^2 \\mathrm{x}}\\right)=1\n$$\n<br/><br/>$$\n\\Rightarrow \\frac{3 e}{4 \\sin ^2 x}=e\n$$\n<br/><br/>$$\n\\Rightarrow \\sin ^2 x=\\frac{3}{4}\n$$\n<br/><br/>$$\n\\Rightarrow \\sin \\mathrm{x}=\\frac{\\sqrt{3}}{2} \\quad\\left(\\text { as } \\mathrm{x} \\in\\left(0, \\frac{\\pi}{2}\\right)\\right)\n$$\n<br/><br/>$$\n\\Rightarrow \\text { Local max value }=\\left(\\frac{\\sqrt{3 \\mathrm{e}}}{\\sqrt{3}}\\right)^{3 / 4}=\\mathrm{e}^{3 / 8}=\\frac{\\mathrm{k}}{\\mathrm{e}}\n$$\n<br/><br/>$$\n\\Rightarrow \\mathrm{k}^8=\\mathrm{e}^{11}\n$$\n<br/><br/>$$ \\therefore $$ $$\n\\left(\\frac{k}{e}\\right)^8+\\frac{k^8}{e^5}+k^8=e^3+e^6+e^{11}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgq0kk6g",
@@ -784,7 +784,7 @@
     "difficulty": "medium",
     "solution": "<p>Given the function:</p>\n<p>$$\nf(x) = x - 2\\sin{x}\\cos{x} + \\frac{1}{3}\\sin{3x}\n$$</p>\n<p>We want to find the maximum value of this expression for $$0 \\leq x \\leq \\pi$$.</p>\n<p>Step 1: Rewrite the expression\n<br/><br/>Notice that we can rewrite the expression as:\n<br/><br/>$$\nf(x) = x - \\sin{2x} + \\frac{1}{3}\\sin{3x}\n$$</p>\n<p>Step 2: Find the first derivative\n<br/><br/>Now, let&#39;s find the derivative of this expression with respect to $$x$$:\n<br/><br/>$$\nf&#39;(x) = 1 - 2\\cos{2x} + \\cos{3x}\n$$</p>\n<p>Step 3: Find the critical points\n<br/><br/>To find the critical points, we set $$f&#39;(x) = 0$$:\n<br/><br/>$$\n1 - 2\\cos{2x} + \\cos{3x} = 0\n$$</p>\n<p>Step 4: Solve for x\n<br/><br/>This equation can be rewritten as:\n<br/><br/>$$\n(2\\cos{x} + \\sqrt{3})(2\\cos{x} - \\sqrt{3})(\\cos{x} - 1) = 0\n$$</p>\n<p>We get three possible solutions for $$x$$:\n<br/><br/>$$\n\\cos{x} = \\frac{-\\sqrt{3}}{2}, \\frac{\\sqrt{3}}{2}, 1\n$$</p>\n<p>Which gives us:\n$$\nx = \\frac{5\\pi}{6}, \\frac{\\pi}{6}, 0\n$$</p>\n<p>Step 5: Find the second derivative\n<br/><br/>Now, let&#39;s find the second derivative of the expression:\n<br/><br/>$$\nf&#39;&#39;(x) = 4\\sin{2x} - 3\\sin{3x}\n$$</p>\n<p>Step 6: Analyze the critical points\nEvaluate the second derivative at the critical points:</p>\n<ol>\n<li>$$f&#39;&#39;\\left(\\frac{5\\pi}{6}\\right) = -2\\sqrt{3} - \\sqrt{3} &lt; 0$$, indicating a local maximum.</li>\n<li>$$f&#39;&#39;\\left(\\frac{\\pi}{6}\\right) = 2\\sqrt{3} - \\sqrt{3} &gt; 0$$, indicating a local minimum.</li>\n<li>$$f&#39;&#39;(0) = 0$$, inconclusive.</li>\n</ol>\n<p>Step 7: Evaluate the function at the local maximum point and the boundary points\nSince we are looking for the maximum value of $$f(x)$$, we can now evaluate the function at the local maximum point and the boundary points:</p>\n<ol>\n<li>$$f\\left(\\frac{5\\pi}{6}\\right) = \\frac{5\\pi}{6} + \\frac{\\sqrt{3}}{2} + \\frac{1}{3} = \\frac{5\\pi + 2 + 3\\sqrt{3}}{6}$$</li>\n<li>$$f(0) = 0$$</li>\n<li>$$f(\\pi) = \\pi$$</li>\n</ol>\n<p>Step 8: Compare the values\nThe maximum value of $$f(x)$$ is given by $$f\\left(\\frac{5\\pi}{6}\\right) = \\frac{5\\pi + 2 + 3\\sqrt{3}}{6}$$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lgnz80z6",
@@ -801,7 +801,7 @@
     "difficulty": "medium",
     "solution": "We have a triangle with vertices $A(2,1)$, $B(0,0)$, and $C(t, 4)$, where $t$ belongs to the interval $[0,4]$.\n\n<br><br>We want to find the maximum and minimum perimeters of such triangles, which occur at $t=\\alpha$ and $t=\\beta$, respectively.\n\n<br><br>To find the minimum perimeter, we use a geometric approach. Reflect point $B$ over the line $y=4$ to get $B'(0,8)$. The line segment $AB'$ intersects the line $y=4$ (which is the $y$-coordinate of point $C$) at the point which gives the minimum perimeter.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1li61mesu/46698a3c-f1f2-4c38-a7f4-cdbe7d5c6371/8f09b1d0-fc94-11ed-8452-d7b44c8805e4/file-1li61mesv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1li61mesu/46698a3c-f1f2-4c38-a7f4-cdbe7d5c6371/8f09b1d0-fc94-11ed-8452-d7b44c8805e4/file-1li61mesv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Application of Derivatives Question 63 English Explanation\">\n<br>The slope of $AB'$ is :\n\n<br><br>$$m_{AB'} = \\frac{8 - 1}{0 - 2} = \\frac{-7}{2}$$\n\n<br><br>The equation of the line $AB'$ is then $y - 1 = m_{AB'}(x - 2)$, or $7x + 2y = 16$.\n\n<br><br>Solving this equation for $y = 4$ yields $x = \\frac{8}{7}$. So, the minimum perimeter is achieved at point $C\\left(\\frac{8}{7}, 4\\right)$, so $\\beta = \\frac{8}{7}$.\n\n<br><br>For the maximum perimeter, we notice that it will be achieved when point $C$ is either at $(0,4)$ or at $(4,4)$, since these are the furthest points from $A(2,1)$ within the range of $t$. By calculating the perimeters at these points, we find that the maximum perimeter is achieved at $\\alpha = 4$.\n\n<br><br>Finally, we calculate $6\\alpha + 21\\beta = 6 \\cdot 4 + 21 \\cdot \\frac{8}{7} = 24 + 24 = 48$.\n\n<br><br>Therefore, $6\\alpha + 21\\beta = 48$.",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1ldo4vr0v",
@@ -823,7 +823,7 @@
     "difficulty": "medium",
     "solution": "The sum of the absolute maximum and minimum values of the function $$f(x) = \\left|x^2 - 5x + 6\\right| - 3x + 2$$ in the interval $$[-1, 3]$$ can be found by finding the maximum and minimum values of $$f(x)$$ in this interval and then adding them.\n<br/><br/>\nFirst, let's find the critical points of $$f(x)$$. To do this, we will find the zeros of the expression inside the absolute value:\n<br/><br/>\n$$x^2 - 5x + 6 = 0$$\n<br/><br/>\nSolving this quadratic equation, we find that the zeros are $$x = 2$$ and $$x = 3$$. These are the critical points of $$f(x)$$.\n<br/><br/>\nNext, we evaluate $$f(x)$$ at these critical points and at the endpoints of the interval $$[-1, 3]$$:\n<br/><br/>\n$$f(-1) = \\left|(-1)^2 - 5(-1) + 6\\right| - 3(-1) + 2 = 17$$\n<br/><br/>\n$$f(2) = \\left|(2)^2 - 5(2) + 6\\right| - 3(2) + 2 = -4$$\n<br/><br/>\n$$f(3) = \\left|(3)^2 - 5(3) + 6\\right| - 3(3) + 2 = -7$$\n<br/><br/>\nSo, the minimum value of $$f(x)$$ is $$-7$$ and the maximum value is $$17$$.\n<br/><br/>\nSo, the sum of the absolute maximum and minimum values of the function is $$-7 + 17 = 10$$.\n<br/><br/><b>Note :</b> The absolute maximum and minimum values of a function are the largest and smallest values that the function takes on a given interval, respectively. These values are also called the \"extrema\" of the function. The absolute maximum value is the highest point on the graph of the function, and the absolute minimum value is the lowest point.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldu57hdx",
@@ -845,7 +845,7 @@
     "difficulty": "medium",
     "solution": "$f^{\\prime}(x)=6 x^{2}+2 x(2 p-7)+3(2 p-9)$\n<br/><br/>\n$x_{1}<0, x_{2}>0$\n<br/><br/>\n$\\Rightarrow f^{\\prime}(0)<0$\n<br/><br/>\n$\\Rightarrow p<\\frac{9}{2}$<br/><br/>\n$$p  \\in \\left( { - \\infty ,{9 \\over 2}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldv1bkyt",
@@ -867,7 +867,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& f(x)=8 x^3-36 x+8 \\\\\\\\\n& =4\\left(2 x^3-9 x+2\\right) \\\\\\\\\n& =4(x-2)\\left(2 x^2+4 x-1\\right) \\\\\\\\\n& =4(x-2)\\left(x-\\frac{-2+\\sqrt{6}}{2}\\right)\\left(x-\\frac{-2 \\sqrt{6}}{2}\\right)\n\\end{aligned}\n$$<br/><br/>\nLocal maxima occurs at $x=\\frac{-2+\\sqrt{6}}{2}=x_0$<br/><br/>\n$$\nf\\left(x_0\\right)=12 \\sqrt{6}-\\frac{33}{2}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ldqwo36h",
@@ -889,7 +889,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f'(x)=x^2+2b+ax$$</p>\n<p>$$g'(x)=x^2+a+2bx$$</p>\n<p>$$\\Rightarrow x=1$$ is common root</p>\n<p>$$a+2b+1=0$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldpsc9p1",
@@ -911,7 +911,7 @@
     "difficulty": "medium",
     "solution": "$ \\ell_{1}+\\ell_{2}=20 \\Rightarrow \\frac{\\mathrm{d} \\ell_{2}}{\\mathrm{~d} \\ell_{1}}=-1$\n\n<br/><br/>$\\mathrm{A}_{1}=\\left(\\frac{\\ell_{1}}{4}\\right)^{2}$ and $\\mathrm{A}_{2}=\\pi\\left(\\frac{\\ell_{2}}{2 \\pi}\\right)^{2}$\n\n<br/><br/>Let $\\mathrm{S}=2 \\mathrm{~A}_{1}+3 \\mathrm{~A}_{2}=\\frac{\\ell_{1}^{2}}{8}+\\frac{3 \\ell_{2}^{2}}{4 \\pi}$\n\n<br/><br/>$\\frac{\\mathrm{ds}}{\\mathrm{d} \\ell_1}=0 \\Rightarrow \\frac{2 \\ell_{1}}{8}+\\frac{6 \\ell_{2}}{4 \\pi} \\cdot \\frac{\\mathrm{d} \\ell_{2}}{\\mathrm{~d} \\ell_{1}}=0$\n\n<br/><br/>$\\Rightarrow \\frac{\\ell_{1}}{4}=\\frac{6 \\ell_{2}}{4 \\pi} $\n<br/><br/>$\\Rightarrow \\frac{\\pi \\ell_{1}}{\\ell_{2}}=6$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh00jkrz",
@@ -928,7 +928,7 @@
     "difficulty": "hard",
     "solution": "$$\n\\begin{aligned}\n&amp; \\text { Let } y=\\frac{x^3}{x^4+147} \\\\\\\\\n&amp; \\Rightarrow \\frac{d y}{d x}=\\frac{\\left(x^4+147\\right) \\times 3 x^2-x^3\\left(4 x^3\\right)}{\\left(x^4+147\\right)^2} \\\\\\\\\n&amp; =\\frac{3 x^6+441 x^2-4 x^6}{\\left(x^4+147\\right)^2}=\\frac{441 x^2-x^6}{\\left(x^4+147\\right)^2}\n\\end{aligned}\n$$\n<br><br>For maxima/minima, put $\\frac{d y}{d x}=0$\n<br><br>$$\n\\begin{aligned}\n&amp; \\Rightarrow 441 x^2-x^6=0 \\Rightarrow x^4=441 \\\\\\\\\n&amp; \\Rightarrow x= \\pm \\sqrt{21}, \\pm \\sqrt{21} i\n\\end{aligned}\n$$\n<br><br>Now, by descrates rule on number line we have\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lmls8gbc/7f8dbf18-7516-4da9-acc1-29bce97edc3b/409f8a70-546d-11ee-b10a-c342ea039081/file-6y3zli1lmls8gbd.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lmls8gbc/7f8dbf18-7516-4da9-acc1-29bce97edc3b/409f8a70-546d-11ee-b10a-c342ea039081/file-6y3zli1lmls8gbd.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 8th April Morning Shift Mathematics - Application of Derivatives Question 55 English Explanation\">\n<br><br>Since sign changes from negative to positive at 0 .\n<br><br>$\\therefore$ Maximum value of is at $x=\\sqrt{21}=4.58$\n<br><br>Now, $4&lt;4.5&lt;5$\n<br><br>$$\n\\begin{aligned}\n&amp; \\therefore \\text { yat } x=4=\\frac{64}{403}=0.159 \\\\\\\\\n&amp; y \\text { at } x=5=\\frac{125}{772}=0.162\n\\end{aligned}\n$$\n<br><br>So, $y$ is maximum at $x=5$\n<br><br>$$\n\\therefore \\alpha=5\n$$",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1l5c1bifq",
@@ -950,7 +950,7 @@
     "difficulty": "hard",
     "solution": "$f(x)=|(2 x-1)(x+2)|+\\frac{\\sin 2 x}{2}$\n<br/><br/>\n$0 \\leq x<\\frac{1}{2} \\quad f(x)=(1-2 x)(x+2)+\\frac{\\sin 2 x}{2}$\n<br/><br/>\n$f^{\\prime}(x)=-4 x-3+\\cos 2 x<0$\n<br/><br/>\nFor $x \\geq \\frac{1}{2}: \\quad f^{\\prime}(x)=4 x+3+\\cos 2 x>0$\n<br/><br/>\nSo, minima occurs at $x=\\frac{1}{2}$\n<br/><br/>\n$$\n\\begin{aligned}\n\\left.f(x)\\right|_{\\min } &=\\left|2\\left(\\frac{1}{2}\\right)^{2}+\\frac{3}{2}-2\\right|+\\sin \\left(\\frac{1}{2}\\right) \\cdot \\cos \\left(\\frac{1}{2}\\right) \\\\\\\\\n&=\\frac{1}{2} \\sin 1\n\\end{aligned}\n$$\n<br/><br/>\nSo, maxima is possible at $x=0$ or $x=1$\n<br/><br/>\nNow checking for $x=0$ and $x=1$, we can see it attains its maximum value at $x=1$\n<br/><br/>\n$$\n\\begin{aligned}\n\\left.f(x)\\right|_{\\max }=&|2+3-2|+\\frac{\\sin 2}{2} \\\\\\\\\n&=3+\\frac{1}{2} \\sin 2\n\\end{aligned}\n$$\n<br/><br/>\nSum of absolute maximum and minimum value \n<br/><br/>$=3+\\frac{1}{2}(\\sin 1+\\sin 2)$\n<br/><br/>$=3+\\frac{1}{2}(\\sin 1+2\\sin 1\\cos 1)$\n<br/><br/>= $$3 + {1 \\over 2}(1 + 2\\cos (1))\\sin (1)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6f3c9hf",
@@ -967,7 +967,7 @@
     "difficulty": "hard",
     "solution": "<p>$$f(x) = |5x - 7| + [{x^2} + 2x]$$</p>\n<p>$$ = |5x - 7| + [{(x + 1)^2}] - 1$$</p>\n<p>Critical points of</p>\n<p>$$f(x) = {7 \\over 5},\\sqrt 5  - 1,\\,\\sqrt 6  - 1,\\,\\sqrt 7  - 1,\\,\\sqrt 8  - 1,\\,2$$</p>\n<p>$$\\therefore$$ Maximum or minimum value of $$f(x)$$ occur at critical points or boundary points</p>\n<p>$$\\therefore$$ $$f\\left( {{5 \\over 4}} \\right) = {3 \\over 4} + 4 = {{19} \\over 4}$$</p>\n<p>$$f\\left( {{7 \\over 5}} \\right) = 0 + 4 = 4$$</p>\n<p>as both $$|5x - 7|$$ and $${x^2} + 2x$$ are increasing in nature after $$x = {7 \\over 5}$$</p>\n<p>$$\\therefore$$ $$f(2) = 3 + 8 = 11$$</p>\n<p>$$\\therefore$$ $$f{\\left( {{7 \\over 5}} \\right)_{\\min }} = 4$$ and $$f{(2)_{\\max }} = 11$$</p>\n<p>Sum is $$4 + 11 = 15$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1l6dv7vz2",
@@ -989,7 +989,7 @@
     "difficulty": "medium",
     "solution": "Given, $f(x)=\\underbrace{\\left(x^{2}-2 x+7\\right)}_{f_{1}(x)} \\underbrace{e^{\\left(4 x^{3}-12 x^{2}-180 x+31\\right)}}_{f_{2}(x)}$\n<br/><br/>\n$f_{1}(x)=x^{2}-2 x+7$\n<br/><br/>\n$f_{1}^{\\prime}(x)=2 x-2$, so $f(x)$ is decreasing in $[-3,0]$ and positive also\n<br/><br/>\n$f_{2}(x)=e^{4 x^{3}-12 x^{2}-180 x+31}$\n<br/><br/>\n$f_{2}^{\\prime}(x)=e^{4 x^{3}-12 x^{2}-180 x+31} \\cdot 12 x^{2}-24 x-180$\n<br/><br/>\n$=12(x-5)(x+3) e^{4 x^{3}-12 x^{2}-180 x+31}$\n<br/><br/>\nSo, $f_{2}(x)$ is also decreasing and positive in $\\{-3,0\\}$\n<br/><br/>\n$\\therefore$ absolute maximum value of $f(x)$ occurs at $x=-3$\n<br/><br/>\n$\\therefore \\quad \\alpha=-3$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6dvag5k",
@@ -1011,7 +1011,7 @@
     "difficulty": "medium",
     "solution": "$f(x)=y=a x^{3}+b x^{2}+c x+5 \\quad \\ldots$ (i)\n<br/><br/>\n$$\n\\frac{d y}{d x}=3 a x^{2}+2 b x+c \\quad \\ldots (ii)\n$$\n<br/><br/>\nTouches $x$-axis at $P(-2,0)$\n<br/><br/>\n$\\left.\\Rightarrow y\\right|_{x=-2}=0 \\Rightarrow-8 a+4 b-2 c+5=0 \\quad \\ldots ...(iii)$\n<br/><br/>\nTouches $x$-axis at $P(-2,0)$ also implies\n<br/><br/>\n$$\n\\left.\\frac{d y}{d x}\\right|_{x=-2}=0 \\Rightarrow 12 a-4 b+c=0 \\quad \\ldots...(iv)\n$$\n<br/><br/>\n$y=f(x)$ cuts $y$-axis at $(0,5)$\n<br/><br/>\nGiven, $\\left.\\frac{d y}{d x}\\right|_{x=0}=c=3$\n<br/><br/>\nFrom (iii), (iv) and (v)\n<br/><br/>\n$$\n\\begin{aligned}\n&a=-\\frac{1}{2}, b=-\\frac{3}{4}, c=3 \\\\\\\\\n&\\Rightarrow f(x)=\\frac{-x^{2}}{2}-\\frac{3}{4} x^{2}+3 x+5 \\\\\\\\\n&f^{\\prime}(x)=\\frac{-3}{2} x^{2}-\\frac{3}{2} x+3 \\\\\\\\\n&=\\frac{-3}{2}(x+2)(x-1) \\\\\\\\\n&f^{\\prime}(x)=0 \\text { at } x=-2 \\text { and } x=1\n\\end{aligned}\n$$\n<br/><br/>\nBy first derivative test $x=1$ in point of local maximum Hence local maximum value of $f(x)$ is $f(1)$\n<br/><br/>\ni.e., $\\frac{27}{4}$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l59lf1ub",
@@ -1050,7 +1050,7 @@
     "difficulty": "medium",
     "solution": "$\\text {Given, }$\n<br/><br/>$$\n \\begin{aligned}\nf_a(x) & =\\tan ^{-1} 2 x-3 a x+7 \\\\\\\\\nf_a^{\\prime}(x) & =\\frac{2}{1+4 x^2}-3 a\n\\end{aligned}\n$$\n<br/><br/>As the function $f_a^{\\prime}(x)$ is non-decreasing\n<br/><br/>$$\n\\begin{aligned}\n& \\text { in }\\left(-\\frac{\\pi}{6}, \\frac{\\pi}{6}\\right), \\\\\\\\\n& f_a^{\\prime}(x) \\geq 0\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow \\frac{2}{1+4 x^2}-3 a \\geq 0 \\Rightarrow \\frac{2}{1+4 x^2} \\geq 3 a \\\\\\\\\n& \\Rightarrow a \\leq \\frac{2}{3\\left(1+4 x^2\\right)}, \\text { when } x \\in\\left(-\\frac{\\pi}{6}, \\frac{\\pi}{6}\\right) \\\\\\\\\n& \\because a \\text { is maximum when } x^2=\\frac{\\pi^2}{36},\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\na_{\\max } & =\\frac{2}{3\\left(1+\\frac{4 \\pi^2}{36}\\right)}=\\frac{2 \\times 12}{36+4 \\pi^2} \\\\\\\\\n& =\\frac{6}{9+\\pi^2} \\\\\\\\\n\\therefore \\bar{a} & =\\frac{6}{9+\\pi^2}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore f_a(x)=\\tan ^{-1} 2 x-\\frac{18}{9+\\pi^2} x+7 \\\\\\\\\n& f_\\pi\\left(\\frac{\\pi}{8}\\right)=\\tan ^{-1} 2\\left(\\frac{\\pi}{8}\\right)-\\frac{18}{9+\\pi^2} \\times \\frac{\\pi}{8}+7 \\\\\\\\\n& =\\tan ^{-1} \\frac{\\pi}{4}-\\frac{9 \\pi}{36+4 \\pi^2}+7 \\\\\\\\\n& =8-\\frac{9 \\pi}{36+4 \\pi^2}=8-\\frac{9 \\pi}{4\\left(9+\\pi^2\\right)}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l58f6wgh",
@@ -1072,7 +1072,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\because$$ $${s_1} + {s_2} = k$$</p>\n<p>$$76{x^2} + 3\\pi {r^2} = k$$</p>\n<p>$$\\therefore$$ $$152x{{dx} \\over {dr}} + 6\\pi r = 0$$</p>\n<p>$$\\therefore$$ $${{dx} \\over {dr}} = {{ - 6\\pi r} \\over {152x}}$$</p>\n<p>Now $$V = 40{x^3} + {2 \\over 3}\\pi {r^3}$$</p>\n<p>$$\\therefore$$ $${{dv} \\over {dr}} = 120{x^2}\\,.\\,{{dx} \\over {dr}} + 2\\pi {r^2} = 0$$</p>\n<p>$$ \\Rightarrow 120{x^2}\\,.\\,\\left( {{{ - 6\\pi } \\over {152}}{r \\over x}} \\right) + 2\\pi {r^2} = 0$$</p>\n<p>$$ \\Rightarrow 120\\left( {{x \\over r}} \\right) = 2\\pi \\left( {{{152} \\over {6\\pi }}} \\right)$$</p>\n<p>$$ \\Rightarrow \\left( {{x \\over r}} \\right) = {{152} \\over 3}{1 \\over {120}} = {{19} \\over {45}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l589itwu",
@@ -1094,7 +1094,7 @@
     "difficulty": "medium",
     "solution": "$f(x)=\\left|x^2-3 x-2\\right|-x \\forall x \\in[-1,2]$<br><br>\n$\\Rightarrow f(x)=\\left\\{\\begin{array}{l}x^2-4 x-2 \\text { if }-1 \\leq x&lt;\\frac{3-\\sqrt{17}}{2} \\\\ -x^2+2 x+2 \\text { if } \\frac{3-\\sqrt{17}}{2} \\leq x \\leq 2\\end{array}\\right.$<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lc6nga5p/f6bd0c59-facc-4024-b756-658e8619a898/a12a41d0-8620-11ed-ba1b-3b1de775931b/file-1lc6nga5q.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lc6nga5p/f6bd0c59-facc-4024-b756-658e8619a898/a12a41d0-8620-11ed-ba1b-3b1de775931b/file-1lc6nga5q.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th June Morning Shift Mathematics - Application of Derivatives Question 98 English Explanation\"><br>\n$f(x)_{\\max }=3$<br><br>\n$f(x)_{\\min }=f\\left(\\frac{3-\\sqrt{17}}{2}\\right)$\n$=\\frac{\\sqrt{17}-3}{2}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6m63rp3",
@@ -1116,7 +1116,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = {{5{x^2}} \\over 2} + {\\alpha  \\over {{x^5}}}\\,\\,\\{ x &gt; 0\\} $$</p>\n<p>$$f'(x) = 5x - {{5\\alpha } \\over {{x^6}}} = 0$$</p>\n<p>$$ \\Rightarrow x = {(\\alpha )^{{1 \\over 7}}}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7rb2qy2/d1f9b6e9-ed06-4643-80c4-d9d8e53ea216/9bffa4a0-2e7f-11ed-8702-156c00ced081/file-1l7rb2qy3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7rb2qy2/d1f9b6e9-ed06-4643-80c4-d9d8e53ea216/9bffa4a0-2e7f-11ed-8702-156c00ced081/file-1l7rb2qy3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 28th July Morning Shift Mathematics - Application of Derivatives Question 75 English Explanation\"></p>\n<p>$$f{(x)_{\\min }} = {{5{{(\\alpha )}^{{2 \\over 7}}}} \\over 2} + {\\alpha  \\over {{\\alpha ^{{5 \\over 7}}}}} = 14$$</p>\n<p>$${5 \\over 2}{\\alpha ^{{2 \\over 7}}} + {\\alpha ^{{2 \\over 7}}} = 14$$</p>\n<p>$${7 \\over 2}{\\alpha ^{{2 \\over 7}}} = 14$$</p>\n<p>$$\\alpha  = 128$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6p31rwv",
@@ -1138,7 +1138,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = {3^{{{({x^2} - 2)}^3} + 4}},\\,x \\in R$$</p>\n<p>$$f(x) = {81.3^{{{({x^2} - 2)}^3}}}$$</p>\n<p>$$f'(x) = {81.3^{{{({x^2} - 2)}^3}}}\\ln 2.3({x^2} - 2)2x$$</p>\n<p>$$ = (486\\ln 2)\\left( {{3^{{{({x^2} - 2)}^3}}}({x^2} - 2)x} \\right)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7sso9mz/26e78098-e521-4cb7-8650-9f6cbc3d58bd/364659b0-2f51-11ed-85dd-19dc023e9ad1/file-1l7sso9n0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7sso9mz/26e78098-e521-4cb7-8650-9f6cbc3d58bd/364659b0-2f51-11ed-85dd-19dc023e9ad1/file-1l7sso9n0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th July Morning Shift Mathematics - Application of Derivatives Question 73 English Explanation\"></p>\n<p>$$ \\Rightarrow x = 0$$ is the local minima.</p>\n<p>$$f''(x) = (486\\ln 2)\\left( {{3^{{{({x^2} - 2)}^3}}}\\,.\\,({x^2} - 2)(5{x^2} - 2 + 6{x^2}\\ln 3({x^2} - 2))} \\right)$$</p>\n<p>$$f''(x) = 0\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,x = \\sqrt 2 $$</p>\n<p>$$f''\\left( {{{\\sqrt 2 }^ + }} \\right) &gt; 0$$</p>\n<p>$$f''\\left( {{{\\sqrt 2 }^ - }} \\right) &lt; 0$$</p>\n<p>$$ \\Rightarrow x = \\sqrt 2 $$ is point of inflection</p>\n<p>$$f''(x) &gt; 0\\,\\forall x &gt; \\sqrt 2 $$</p>\n<p>$$ \\Rightarrow f'(x)$$ is increasing for $$x &gt; \\sqrt 2 $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l545dst9",
@@ -1160,7 +1160,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5nil7kj/2ee06cba-de30-46ff-9d0f-1870cf0f243a/6bf44540-04d1-11ed-93b8-936002ac8631/file-1l5nil7kk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5nil7kj/2ee06cba-de30-46ff-9d0f-1870cf0f243a/6bf44540-04d1-11ed-93b8-936002ac8631/file-1l5nil7kk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th June Morning Shift Mathematics - Application of Derivatives Question 103 English Explanation\"></p>\n<p>$$4a + 3b = 22$$</p>\n<p>Total area $$ = A = {a^2} + {{\\sqrt 3 } \\over 4}{b^2}$$</p>\n<p>$$A = {\\left( {{{22 - 3b} \\over 4}} \\right)^2} + {{\\sqrt 3 } \\over 4}{b^2}$$</p>\n<p>$${{dA} \\over {dB}} = 2\\left( {{{22 - 3b} \\over 4}} \\right)\\left( {{{ - 3} \\over 4}} \\right) + {{\\sqrt 3 } \\over 4}\\,.\\,2b = 0$$</p>\n<p>$$ \\Rightarrow {{\\sqrt {3b} } \\over 2} = {3 \\over 8}(22 - 3b)$$</p>\n<p>$$ \\Rightarrow 4\\sqrt 3 b = 66 - 9b$$</p>\n<p>$$ \\therefore b = {{66} \\over {9 + 4\\sqrt 3 }}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5vzjzdv",
@@ -1182,7 +1182,7 @@
     "difficulty": "medium",
     "solution": "<p>Equation of line passing through the point (50 + $$\\alpha$$, 0) and (0, 50 + $$\\alpha$$) is</p>\n<p>$$y - 0 = {{50 + \\alpha  - 0} \\over {0 - (50 + \\alpha )}}\\left( {x - (50 + \\alpha )} \\right)$$</p>\n<p>$$ \\Rightarrow y =  - 1\\left( {x - (50 + \\alpha )} \\right)$$</p>\n<p>$$ \\Rightarrow y = (50 + \\alpha ) - x$$</p>\n<p>$$ \\Rightarrow x + y = 50 + \\alpha $$</p>\n<p>Let $$p = x{y^4}$$</p>\n<p>$$ = (50 + \\alpha  - y){y^4}$$</p>\n<p>$$ = (50 + \\alpha ){y^4} - {y^5}$$</p>\n<p>For maximum or minimum value of p,</p>\n<p>$${{dp} \\over {dy}} = 0$$</p>\n<p>$$ \\Rightarrow 4{y^3}(50 + \\alpha ) - 5{y^4} = 0$$</p>\n<p>$$ \\Rightarrow {y^3}[200 + 4\\alpha  - 5y] = 0$$</p>\n<p>$$\\therefore$$ $$y = 0$$</p>\n<p>or</p>\n<p>$$200 + 4\\alpha  - 5y = 0$$</p>\n<p>$$ \\Rightarrow y = {4 \\over 5}(50 + \\alpha )$$</p>\n<p>$$\\therefore$$ $$x = 50 + \\alpha  - y$$</p>\n<p>$$ = 50 + \\alpha  - {4 \\over 5}(50 + \\alpha )$$</p>\n<p>$$ = 50 + \\alpha \\left( {1 - {4 \\over 5}} \\right)$$</p>\n<p>$$ = {1 \\over 5}(50 + \\alpha )$$</p>\n<p>$$ \\Rightarrow 4x = {4 \\over 5}(50 + \\alpha ) = y$$</p>\n<p>$$ \\Rightarrow y = 4x$$</p>\n<p>$$\\therefore$$ (x, y) lies on the line y = 4x</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5vzpx90",
@@ -1204,7 +1204,7 @@
     "difficulty": "easy",
     "solution": "<p>Given,</p>\n<p>$$f(x) = 4{x^3} - 11{x^2} + 8x - 5$$</p>\n<p>$$\\therefore$$ $$f'(x) = 12{x^2} - 22x + 8$$</p>\n<p>$$ = 2(6{x^2} - 11x + 4)$$</p>\n<p>$$ = 2(6{x^2} - 8x - 3x + 4)$$</p>\n<p>$$ = 2\\left[ {2x(3x - 4) - 1(3x - 4)} \\right]$$</p>\n<p>$$ = 2\\left[ {(3x - 4)(2x - 1)} \\right]$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5ykgpbg/402463f1-cb39-4303-b051-0d9df56ac983/6004f6c0-0ae5-11ed-a51c-73986e88f75f/file-1l5ykgpbh.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5ykgpbg/402463f1-cb39-4303-b051-0d9df56ac983/6004f6c0-0ae5-11ed-a51c-73986e88f75f/file-1l5ykgpbh.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 30th June Morning Shift Mathematics - Application of Derivatives Question 84 English Explanation 1\"></p>\n<p>$$f'(x)$$ is positive before $${1 \\over 2}$$ means slope of f(x) is positive before $${1 \\over 2}$$ and f'(x) is negative after $${1 \\over 2}$$ means slope of f(x) is negative after $${1 \\over 2}$$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5yki2b2/272d4c44-a92f-4bfd-a59e-312affd66d01/85dcc4e0-0ae5-11ed-a51c-73986e88f75f/file-1l5yki2b3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5yki2b2/272d4c44-a92f-4bfd-a59e-312affd66d01/85dcc4e0-0ae5-11ed-a51c-73986e88f75f/file-1l5yki2b3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 30th June Morning Shift Mathematics - Application of Derivatives Question 84 English Explanation 2\"></p>\n<p>$$\\therefore$$ At $${1 \\over 2}$$, f(x) is local maximum</p>\n<p>Also, $$f'(x)$$ is negative before $${4 \\over 3}$$ means slope of f(x) is negative before $${4 \\over 3}$$ and f'(x) is positive after $${4 \\over 3}$$ means slope of f(x) is positive after $${4 \\over 3}$$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5ykjlo9/ac69243c-25e4-42c2-af51-acef287e6cb5/b0a1b690-0ae5-11ed-a51c-73986e88f75f/file-1l5ykjloa.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5ykjlo9/ac69243c-25e4-42c2-af51-acef287e6cb5/b0a1b690-0ae5-11ed-a51c-73986e88f75f/file-1l5ykjloa.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 30th June Morning Shift Mathematics - Application of Derivatives Question 84 English Explanation 3\"></p>\n<p>$$\\therefore$$ At $${4 \\over 3},\\,f(x)$$ is local minimum</p>\n<p>From wavy curve method,</p>\n<p>$$f'(x) &gt; 0,\\,\\forall x \\in \\left( { - \\alpha ,\\,{1 \\over 2}} \\right) \\cup \\left( {{4 \\over 3},\\,\\alpha } \\right)$$</p>\n<p>$$\\therefore$$ f(x) increasing in $$x \\in \\left( { - \\alpha ,\\,{1 \\over 2}} \\right) \\cup \\left( {{4 \\over 3},\\,\\alpha } \\right)$$</p>\n<p>$$f'(x) &lt; 0\\,\\forall x \\in \\left( {{1 \\over 2},{4 \\over 3}} \\right)$$</p>\n<p>$$\\therefore$$ f(x) decreasing in $$x \\in \\left( {{1 \\over 2},{4 \\over 3}} \\right)$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "l7gakja5",
@@ -1249,7 +1249,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = \\left| {\\matrix{\n   {{{\\sin }^2}x} &amp; {1 + {{\\cos }^2}x} &amp; {\\cos 2x}  \\cr \n   {1 + {{\\sin }^2}x} &amp; {{{\\cos }^2}x} &amp; {\\cos 2x}  \\cr \n   {{{\\sin }^2}x} &amp; {{{\\cos }^2}x} &amp; {\\sin 2x}  \\cr \n\n } } \\right|$$\n<br><br>$${C_1} \\to {C_1} + {C_2}$$<br><br>= $$\\left| {\\matrix{\n   2 &amp; {1 + {{\\cos }^2}x} &amp; {\\cos 2x}  \\cr \n   2 &amp; {{{\\cos }^2}x} &amp; {\\cos 2x}  \\cr \n   1 &amp; {{{\\cos }^2}x} &amp; {\\sin 2x}  \\cr \n\n } } \\right|$$<br><br>$${R_1} \\to {R_1} - {R_2}$$<br><br>= $$\\left| {\\matrix{\n   0 &amp; 1 &amp; 0  \\cr \n   2 &amp; {{{\\cos }^2}x} &amp; {\\cos 2x}  \\cr \n   1 &amp; {{{\\cos }^2}x} &amp; {\\sin 2x}  \\cr \n\n } } \\right|$$<br><br>$$ = ( - 1)[2\\sin 2x - \\cos 2x] = \\cos 2x - 2\\sin 2x$$\n<br><br>We know, maximum value of acosx $$ \\pm $$ bsinx\n<br><br>= $$\\sqrt {{a^2} + {b^2}} $$\n<br><br>$$ \\therefore $$ Here maximum value = $$\\sqrt {{1^2} + {{\\left( { - 2} \\right)}^2}} $$$$ = \\sqrt 5 $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "axb7TtMHVL2HxjaxWs1kmko64sd",
@@ -1288,7 +1288,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = {x^3} - 3{x^2} - {{3f''(2)} \\over 2}x + f''(1)$$ ..... (i)<br><br>$$f(x) = 3{x^2} - 6x - {3 \\over 2}f''(2)$$ ..... (ii)<br><br>$$f''(x) = 6x - 6$$ ..... (iii)<br><br>Now, is 3<sup>rd</sup> equation<br><br>$$f''(2) = 12 - 6 = 6$$<br><br>$$f''(11 = 0)$$<br><br>Use (ii)<br><br>$$f'(x) = 3{x^2} - 6x - {3 \\over 2}f''(2)$$<br><br>$$f'(x) = 3{x^2} - 6x - {3 \\over 2} \\times 6$$<br><br>$$f'(x) = 3{x^2} - 6x - 9$$<br><br>$$f'(x) = 0$$<br><br>$$3{x^2} - 6x - 9 = 0$$<br><br>$$\\Rightarrow$$ x = $$-$$1 &amp; 3<br><br>Use (iii)<br><br>$$f''(x) = 6x - 6$$<br><br>$$f''( - 1) =  - 12 &lt; 0$$ maxima<br><br>$$f''(3) = 12 &gt; 0$$ minima.<br><br>Use (i)<br><br>$$f(x) = {x^3} - 3{x^2} - {3 \\over 2}f''(2)x + f''(1)$$<br><br>$$f(x) = {x^3} - 3{x^2} - {3 \\over 2} \\times 6 \\times x + 0$$<br><br>$$f(x) = {x^3} - 3{x^2} - 9x$$<br><br>$$f(3) = 27 - 27 - 9 \\times 3 =  - 27$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krpwaqea",
@@ -1310,7 +1310,7 @@
     "difficulty": "medium",
     "solution": "$$A = \\left[ {\\matrix{\n   1 &amp; { - x} &amp; {2x + 1}  \\cr \n   { - x} &amp; 1 &amp; { - x}  \\cr \n   {2x + 1} &amp; { - x} &amp; 1  \\cr \n\n } } \\right]$$<br><br>$$\\left| A \\right| = 4{x^3} - 4{x^2} - 4x = f(x)$$<br><br>$$f'(x) = 4(3{x^2} - 2x - 1) = 0$$<br><br>$$ \\Rightarrow x = 1;x = {{ - 1} \\over 3}$$<br><br>$$\\therefore$$ $$f(1) =  - 4;f\\left( { - {1 \\over 3}} \\right) = {{20} \\over {27}}$$<br><br>Sum $$ =  - 4 + {{20} \\over 7} =  - {{88} \\over {27}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krpzb31f",
@@ -1332,7 +1332,7 @@
     "difficulty": "medium",
     "solution": "$${{ - B} \\over {2A}} = {3 \\over 4}$$<br><br>$$ \\Rightarrow {{ - (6)} \\over {2a}} = {3 \\over 4}$$<br><br>$$ \\Rightarrow a = {{ - 6 \\times 4} \\over 6} \\Rightarrow a =  - 4$$<br><br>$$\\therefore$$ $$g(x) = 4{x^2} - 6x + 15$$<br><br>Local max. at $$x = {{ - B} \\over {2A}} =  - {{( - 6)} \\over {2( - 4)}}$$<br><br>$$ = {{ - 3} \\over 4}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "XCWdLnNu3Bl74gtzgZ1klri0zmo",
@@ -1388,7 +1388,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = {\\left( {{2 \\over x}} \\right)^{{x^2}}}$$ ; x &gt; 0<br><br>$$\\ln f(x) = {x^2}(\\ln 2 - \\ln x)$$<br><br>$$f'(x) = f(x)\\{  - x + (\\ln 2 - \\ln x)2x\\} $$<br><br>$$f'(x) = \\underbrace {f(x)}_ + \\,.\\,\\underbrace x_ + \\underbrace {(2\\ln 2 - 2\\ln x - 1)}_{g(x)}$$<br><br>$$g(x) = 2{\\ln ^2} - 2\\ln x - 1$$<br><br>$$ = \\ln {4 \\over {{x^2}}} - 1 = 0 \\Rightarrow x = {2 \\over {\\sqrt e }}$$<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktkw6cqv/69037937-ba99-4fde-ac30-0faae63bd69c/9c20b170-15cd-11ec-91e9-c738901c8293/file-1ktkw6cqw-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktkw6cqv/69037937-ba99-4fde-ac30-0faae63bd69c/9c20b170-15cd-11ec-91e9-c738901c8293/file-1ktkw6cqw-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktkw6cqv/69037937-ba99-4fde-ac30-0faae63bd69c/9c20b170-15cd-11ec-91e9-c738901c8293/file-1ktkw6cqw-680w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ktkw6cqv/69037937-ba99-4fde-ac30-0faae63bd69c/9c20b170-15cd-11ec-91e9-c738901c8293/file-1ktkw6cqw.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Evening Shift Mathematics - Application of Derivatives Question 111 English Explanation\"></picture> <br><br>$$LM = {2 \\over {\\sqrt e }}$$<br><br>Local maximum value = $${\\left( {{2 \\over {2/\\sqrt e }}} \\right)^{{4 \\over e}}} = {e^{{2 \\over e}}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktbihwcy",
@@ -1427,7 +1427,7 @@
     "difficulty": "medium",
     "solution": "Given, $$y = {1 \\over 2}{x^4} - 5{x^3} + 18{x^2} - 19x$$\n<br><br>$${{dy} \\over {dx}} = {1 \\over 2} \\times 4{x^3} - 15{x^2} + 36x - 19$$<br><br>$$ \\Rightarrow $$ Slope M = $$2{x^3} - 15{x^2} + 36x - 19$$<br><br>At max of slope $${{dM} \\over {dx}} = 0$$<br><br>$$ \\therefore $$ $${{dM} \\over {dx}} = 6{x^2} - 30x + 36 = 0$$<br><br>$$ \\Rightarrow 6({x^2} - 5x + 6) = 0$$<br><br>$$ \\Rightarrow 6(x - 2)(x - 3) = 0$$<br><br>$$ \\therefore $$ $$x = 2,3$$<br><br>Now, $${{{d^2}M} \\over {d{x^2}}} = 6(2x - 5)$$<br><br>at $$x = 2,{{{d^2}M} \\over {d{x^2}}} = 6(4 - 5) =  - 6 &lt; 0$$<br><br>$$ \\therefore $$ at x = 2 slope is maximum.\n<br><br>At x = 2,\n<br><br>y = 8 - 40 + 72 - 38 = 2\n<br><br>$$ \\therefore $$ Required point = (2, 2)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktg2hnod",
@@ -1449,7 +1449,7 @@
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktsqx7k0/9d4870b4-c4b1-47a2-bfa9-1679cc1c78bc/5562a800-1a1f-11ec-a0b7-9b5a0860a9f1/file-1ktsqx7k1-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktsqx7k0/9d4870b4-c4b1-47a2-bfa9-1679cc1c78bc/5562a800-1a1f-11ec-a0b7-9b5a0860a9f1/file-1ktsqx7k1-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ktsqx7k0/9d4870b4-c4b1-47a2-bfa9-1679cc1c78bc/5562a800-1a1f-11ec-a0b7-9b5a0860a9f1/file-1ktsqx7k1.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th August Evening Shift Mathematics - Application of Derivatives Question 108 English Explanation 1\"></picture> <br><br>V = l . b . h = (a $$-$$ 2x)(b $$-$$ 2x) x<br><br>$$\\Rightarrow$$ V(x) = (2x $$-$$ a)(2x $$-$$ b) x<br><br>$$\\Rightarrow$$ V(x) = 4x<sup>3</sup> $$-$$ 2(a + b)x<sup>2</sup> + abx<br><br>$$ \\Rightarrow {d \\over {dx}}v(x) = 12{x^2} - 4(a + b)x + ab$$<br><br>$${d \\over {dx}}(v(x)) = 0 \\Rightarrow 12{x^2} - 4(a + b)x + ab = 0 &lt; _\\beta ^\\alpha $$<br><br>$$ \\Rightarrow x = {{4(a + b) \\pm \\sqrt {16{{(a + b)}^2} - 48ab} } \\over {2(12)}}$$<br><br>$$ = {{(a + b) \\pm \\sqrt {{a^2} + {b^2} - ab} } \\over 6}$$<br><br>Let $$x = \\alpha  = {{(a + b) + \\sqrt {{a^2} + {b^2} - ab} } \\over 6}$$<br><br>$$\\beta  = {{(a + b) - \\sqrt {{a^2} + {b^2} - ab} } \\over 6}$$<br><br>Now, $$12(x - \\alpha )(x - \\beta ) = 0$$<br><br> <img src=\"https://imagex.cdn.examgoal.net/1ktsqy4j8/3e279876-e273-43fb-acdf-be5b4889a3ee/6edc4340-1a1f-11ec-a0b7-9b5a0860a9f1/file-1ktsqy4j9.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th August Evening Shift Mathematics - Application of Derivatives Question 108 English Explanation 2\"> <br><br>$$\\therefore$$ x = $$\\beta$$ $$ = {{a + b - \\sqrt {{a^2} + {b^2} - ab} } \\over b}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kteodvui",
@@ -1471,7 +1471,7 @@
     "difficulty": "medium",
     "solution": "Let the wire is cut into two pieces of length x and 20 $$-$$ x.<br><br><img src=\"https://imagex.cdn.examgoal.net/1ktqu6l56/7cdaaa8f-f741-4bcf-a676-1230ae684954/8440aea0-1912-11ec-9e1c-4f8f7e7dad5b/file-1ktqu6l57.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th August Morning Shift Mathematics - Application of Derivatives Question 110 English Explanation\"><br><br>Area of square = $${\\left( {{x \\over 4}} \\right)^2}$$ <br><br>Area of regular hexagon = $$6 \\times {{\\sqrt 3 } \\over 4}{\\left( {{{20 - x} \\over 6}} \\right)^2}$$<br><br>Total area = $$A(x) = {{{x^2}} \\over {16}} + {{3\\sqrt 3 } \\over 2}{{{{(20 - x)}^2}} \\over {36}}$$<br><br>$$A'(x) = {{2x} \\over {16}} + {{3\\sqrt 3  \\times 2} \\over {2 \\times 36}}(20 - x)( - 1)$$<br><br>A'(x) = 0 at $$x = {{40\\sqrt 3 } \\over {3 + 2\\sqrt 3 }}$$<br><br>Length of side of regular Hexagon $$ = {1 \\over 6}(20 - x)$$<br><br>$$ = {1 \\over 6}\\left( {20 - {{4.\\sqrt 3 } \\over {3 + 2\\sqrt 3 }}} \\right)$$<br><br>$$ = {{10} \\over {2 + 2\\sqrt 3 }}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kteoog7u",
@@ -1488,7 +1488,7 @@
     "difficulty": "medium",
     "solution": "3x<sup>4</sup> + 4x<sup>3</sup> $$-$$ 12x<sup>2</sup> + 4 = 0<br><br>So, let f(x) = 3x<sup>4</sup> + 4x<sup>3</sup> $$-$$ 12x<sup>2</sup> + 4<br><br>$$\\therefore$$ f'(x) = 12x(x<sup>2</sup> + x $$-$$ 2)<br><br>= 12x (x + 2) (x $$-$$ 1)<br><br>$$ \\therefore $$ f'(x) = 12x<sup>3</sup> + 12x<sup>2</sup> – 24x = 12x(x + 2) (x – 1)\n<br><br>Points of extrema are at x = 0, –2, 1\n<br><br>f(0) = 4 \n<br><br>f(–2) = –28\n<br><br>f(1) = –1\n<br><br>So, 4 Real Roots\n<br><img src=\"https://imagex.cdn.examgoal.net/1ktquhv7s/59316dd6-223c-4470-92e4-17492a10fc8a/bdef1c80-1913-11ec-9e1c-4f8f7e7dad5b/file-1ktquhv7t.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th August Morning Shift Mathematics - Application of Derivatives Question 109 English Explanation\">",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1ktkevgzw",
@@ -1527,7 +1527,7 @@
     "difficulty": "medium",
     "solution": "Let $${e^x} = t &gt; 0$$<br><br>$$f(t) = {t^4} + 2{t^3} - t - 6 = 0$$<br><br>$$f'(t) = 4{t^3} + 6{t^2} - 1$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ku8f97nt/8741f6ee-aa5d-49ba-b4fe-81d27d925fa0/40047f90-22be-11ec-ae4a-1de5bfd9a290/file-1ku8f97nu.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 31st August Morning Shift Mathematics - Application of Derivatives Question 107 English Explanation 1\"><br><br>$$f''(t) = 12{t^2} + 12t &gt; 0$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ku8f9j2w/b31774f0-c2fe-4dec-b30d-bf813bdfadee/48d6a580-22be-11ec-92a0-35c33c2a328d/file-1ku8f9j2x.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 31st August Morning Shift Mathematics - Application of Derivatives Question 107 English Explanation 2\"><br><br>$$f(0) =  - 6,f(1) =  - 4,f(2) = 24$$<br><br>$$\\Rightarrow$$ Number of real roots = 1",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1H1sZhYuamCweVPWQl1kjzolgxm",
@@ -1550,7 +1550,7 @@
     "solution": "Given region is<br><br>$$\\{ (x,y) \\in R \\times R:0\\, \\le \\,x\\, \\le \\,{\\pi  \\over 2}$$<br><br>and $$0\\, \\le \\,y\\, \\le \\,2\\sin (2x)$$<br><br>On drawing the diagram,<br><br>Let the side PS on the X-axis, such that P(x, 0), and Q(x, 2sin(2x)), so length of the sides $$PS = QR = 2\\left( {{\\pi  \\over 4} - x} \\right)$$ and PQ = RS = 2sin 2x.<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks8oggiy/70d297d7-3892-4097-a057-c8f9f77e0c6d/ccef20a0-fb49-11eb-9a73-79dd636fc68a/file-1ks8oggiz-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks8oggiy/70d297d7-3892-4097-a057-c8f9f77e0c6d/ccef20a0-fb49-11eb-9a73-79dd636fc68a/file-1ks8oggiz-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks8oggiy/70d297d7-3892-4097-a057-c8f9f77e0c6d/ccef20a0-fb49-11eb-9a73-79dd636fc68a/file-1ks8oggiz-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks8oggiy/70d297d7-3892-4097-a057-c8f9f77e0c6d/ccef20a0-fb49-11eb-9a73-79dd636fc68a/file-1ks8oggiz-860w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ks8oggiy/70d297d7-3892-4097-a057-c8f9f77e0c6d/ccef20a0-fb49-11eb-9a73-79dd636fc68a/file-1ks8oggiz.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Advanced 2020 Paper 1 Offline Mathematics - Application of Derivatives Question 15 English Explanation\"></picture> <br><br>$$ \\therefore $$ Perimeter of the rectangle<br><br>$$y = 4\\left[ {{\\pi  \\over 4} - x + \\sin 2x} \\right]$$<br><br>For maximum, $${{dy} \\over {dx}} = 0$$<br><br>$$ \\Rightarrow  - 1 + 2\\cos 2x = 0\\, \\Rightarrow \\,\\cos 2x = {1 \\over 2}$$<br><br>$$ \\Rightarrow 2x = {\\pi  \\over 3}\\, \\Rightarrow \\,x = {\\pi  \\over 6}\\left\\{ {x \\in \\left[ {0,\\,{\\pi  \\over 2}} \\right]} \\right\\}$$<br><br>and $${\\left. {{{{d^2}y} \\over {d{x^2}}}} \\right|_{x = {\\pi  \\over 6}}} = {\\left. { - 4\\sin 2x} \\right|_{x = {\\pi  \\over 6}}}\\, &lt; \\,0$$<br><br>$$ \\therefore $$ At $$x = {\\pi  \\over 6}$$, the rectangle PQRS have maximum perimeter.<br><br>So length of sides<br><br>$$PS = QR = 2\\left( {{\\pi  \\over 4} - {\\pi  \\over 6}} \\right) = {\\pi  \\over 6}$$<br><br>and $$PQ = RS = 2\\sin \\left( {{\\pi  \\over 3}} \\right) = \\sqrt 3 $$<br><br>$$ \\therefore $$ Required area = $${\\pi  \\over 6} \\times \\sqrt 3  = {\\pi  \\over {2\\sqrt 3 }}$$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Bss5ARx998ScyyRnSIjgy2xukewssjfx",
@@ -1572,7 +1572,7 @@
     "difficulty": "medium",
     "solution": "Since p(x) has relative extreme at\n<br><br>x = 1 &amp; 2\n<br><br>so p'(x) = 0 at x = 1 &amp; 2\n<br><br>$$ \\therefore $$ Let p'(x) = A(x – 1) (x – 2)\n<br><br>$$ \\Rightarrow $$ p(x) = $$\\int {A\\left( {{x^2} - 3x + 2} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ p(x) = $${A\\left( {{{{x^2}} \\over 3} - 3{x^2} + 2x} \\right)}$$ + C ...(1)\n<br><br>As P(1) = 8\n<br><br>From (1)\n<br><br>$$8 = A\\left( {{1 \\over 3} - {3 \\over 2} + 2} \\right) + C$$\n<br><br>$$ \\Rightarrow $$ 8 = $${{5A} \\over 6} + C$$\n<br><br>$$ \\Rightarrow $$ 48 = 5A + 5C ...(2)\n<br><br>Also P(2) = 4\n<br><br>From (1)\n<br><br>$$4 = A\\left( {{8 \\over 3} - 6 + 4} \\right) + C$$\n<br><br>$$ \\Rightarrow $$ 4 = $${{2A} \\over 3} + C$$\n<br><br>$$ \\Rightarrow $$ 12 = 2A + 3C  ......(3)\n<br><br>Form (3) &amp; (4), C = –12, A = 24\n<br><br>Now p(0) = C = -12",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "HBKNx1NQFioVfmrFstjgy2xukfahe3zt",
@@ -1594,7 +1594,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kjdwwuia/709715be-b374-4242-92e0-ffb4464a173f/d68d2c30-4bfc-11eb-9fcd-cfed51f87abe/file-1kjdwwuib-386w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 4th September Evening Slot Mathematics - Application of Derivatives Question 144 English Explanation\">\n<br><br>Area (A) = 2t. (1$$ - $$t<sup>2</sup>)<br><br>(0 &lt; t &lt; 1)<br><br>A = 2t $$ - $$ 2t<sup>3</sup><br><br>$${{dA} \\over {dt}} = 2 - 6{t^2}$$ = 0<br><br>$$ \\Rightarrow $$ $$t = $$$$ \\pm $$$${1 \\over {\\sqrt 3 }}$$<br><br>$$ \\therefore $$ $$ {A_{\\max }} = |{2 \\over {\\sqrt 3 }}\\left( {1 - {1 \\over 3}} \\right)| = {4 \\over {3\\sqrt 3 }}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ZG73oFifL0rz2mngI3jgy2xukfqc6v02",
@@ -1616,7 +1616,7 @@
     "difficulty": "medium",
     "solution": "f(x) = (3x<sup>2</sup>\n + ax – 2 – a)e<sup>x</sup>\n<br><br>$$ \\therefore $$ f'(x) = e<sup>x</sup>(6x + a) + (3x<sup>2</sup>\n + ax – 2 – a)e<sup>x</sup>\n<br><br> = e<sup>x</sup>(3x<sup>2</sup> + x(6 + a) – 2)\n<br><br>f '(x) = 0 at x = 1\n<br><br>$$ \\Rightarrow $$ 3 + (6 + a) – 2 = 0\n<br><br>$$ \\Rightarrow $$ a = -7\n<br><br>$$ \\therefore $$  f'(x) = e<sup>x</sup>(3x<sup>2</sup> – x – 2)\n<br><br>= e<sup>x</sup>(x – 1) (3x + 2)\n<img src=\"https://imagex.cdn.examgoal.net/jgy2xukh1u50rb/da66a542-3bb5-464a-989b-e280a41c7461/27ea1270-1dc0-11eb-8293-3b6cc591631c/file-jgy2xukh1u50rc-331w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 5th September Evening Slot Mathematics - Application of Derivatives Question 141 English Explanation\">\n<br>x = 1 is a local minima and x = $$ - {2 \\over 3}$$ is a local\nmaxima of f.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "hOgXPc5U67INRRRyO9jgy2xukfg6uw39",
@@ -1638,7 +1638,7 @@
     "difficulty": "medium",
     "solution": "Given ellipse is $${{{x^2}} \\over 5} + {{{y^2}} \\over 4} = 1$$<br><br>Let point P is $$(\\sqrt 5 \\cos \\theta ,\\,2\\sin \\theta )$$<br><br>$${(PQ)^2}=5{\\cos ^2}\\theta  + {(2\\sin \\theta  + 4)^2}$$\n<br><br>$$ \\Rightarrow $$ (PQ)<sup>2</sup> = $$5{\\cos ^2}\\theta  + 4{\\sin ^2}\\theta  + 16\\sin \\theta  + 16$$\n<br><br>$$ \\Rightarrow $$ (PQ)<sup>2</sup> = $${\\cos ^2}\\theta  + 4{\\cos ^2}\\theta  + 4{\\sin ^2}\\theta  + 16\\sin \\theta  + 16$$\n<br><br>$$ \\Rightarrow $$ (PQ)<sup>2</sup> = $${\\cos ^2}\\theta  + 4 + 16\\sin \\theta  + 16$$\n<br><br>$$ \\Rightarrow $$ $${(PQ)^2} = {\\cos ^2}\\theta  + 16\\sin \\theta  + 20$$\n<br><br>$$ \\Rightarrow $$ $${(PQ)^2} =  - {\\sin ^2}\\theta  + 16\\sin \\theta  + 21$$\n<br><br>= $$ - \\left( {{{\\sin }^2}\\theta  - 2.8\\sin \\theta  + 64} \\right) + 64 + 21$$\n<br><br>= $$85 - {(\\sin \\theta  - 8)^2}$$<br><br>will be maximum when sin $$\\theta $$ = 1<br><br>$$ \\Rightarrow {(PQ)^2}_{\\max } = 85 - 49 = 36$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "bWXZpKvMYXQpzsJPLljgy2xukg38i6xk",
@@ -1660,7 +1660,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = \\left( {1 - {{\\cos }^2}x} \\right)\\left( {\\lambda  + \\sin x} \\right)$$\n<br><br>$$ \\Rightarrow $$ f(x) = sin<sup>2</sup> x($$\\lambda $$ + sinx)   ....(1)\n<br><br>$$ \\therefore $$ f'(x) = 2sinx cosx ($$\\lambda $$ +sinx) + sin<sup>2</sup>x (cosx)\n<br><br>$$ \\Rightarrow $$  f'(x) = sin2x($${{2\\lambda  + 3\\sin x} \\over 2}$$)\n<br><br>For maixma and minima, f'(x) = 0\n<br><br>$$ \\therefore $$ sin2x = 0 or 2$$\\lambda $$ + 3sinx = 0\n<br><br>when sin2x = 0 $$ \\Rightarrow $$ x = 0\n<br><br>or when 2$$\\lambda $$ + 3sinx = 0\n<br><br>$$ \\Rightarrow $$ sin x = $$ - {{2\\lambda } \\over 3}$$\n<br><br>As $$x \\in \\left( { - {\\pi  \\over 2},{\\pi  \\over 2}} \\right)$$\n<br><br>$$ \\therefore $$  -1 &lt; sinx &lt; 1\n<br><br>$$ \\Rightarrow $$ -1 &lt; $$ - {{2\\lambda } \\over 3}$$ &lt; 1\n<br><br>$$ \\Rightarrow $$ $$ - {3 \\over 2}$$ &lt; $$\\lambda $$ &lt; $$  {3 \\over 2}$$\n<br><br>$$ \\therefore $$ $$\\lambda $$ $$ \\in $$ $$\\left( { - {3 \\over 2},{3 \\over 2}} \\right)$$ - {0}\n<br><br><b>Note :</b> If $$\\lambda $$ = 0 $$ \\Rightarrow $$ f(x) = sin<sup>3</sup>x [from (1)]\n<br><br>Which is monotonic. so no maxima/minima.\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "cMYWcwhlFTJFfWbA6Ejgy2xukfw0x33e",
@@ -1682,7 +1682,7 @@
     "difficulty": "easy",
     "solution": "V<sub>av</sub> = $${{f\\left( {{t_2}} \\right) - f\\left( {{t_1}} \\right)} \\over {{t_2} - {t_1}}}$$ = f'(t)\n<br><br>$$ \\Rightarrow $$ $${{a\\left( {t_2^2 - t_1^2} \\right) - b\\left( {{t_2} - {t_1}} \\right)} \\over {{t_2} - {t_1}}}$$ = 2$$a$$t + b\n<br><br>$$ \\Rightarrow $$ a(t<sub>2</sub> + t<sub>1</sub>) + b = 2at + b\n<br><br>$$ \\Rightarrow $$ t = $${{{t_1} + {t_2}} \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mmwaTQKip2yYQJU89z7k9k2k5fo9w02",
@@ -1704,7 +1704,7 @@
     "difficulty": "medium",
     "solution": "let f(x) = ax<sup>5</sup> + bx<sup>4</sup> + cx<sup>3</sup> + dx<sup>2</sup> + ex + f\n<br><br>Given $$\\mathop {\\lim }\\limits_{x \\to 0} \\left( {2 + {{f\\left( x \\right)} \\over {{x^3}}}} \\right) = 4$$\n<br><br>$$ \\Rightarrow $$ $$\\mathop {\\lim }\\limits_{x \\to 0} \\left( {2 + {{a{x^5} + b{x^4} + c{x^3} + d{x^2} + ex + f} \\over {{x^3}}}} \\right)$$ = 4\n<br><br>As this limit exists so d = e = f = 0\n<br><br>$$ \\therefore $$ f(x) = ax<sup>5</sup> + bx<sup>4</sup> + cx<sup>3</sup>\n<br><br>$$\\mathop {\\lim }\\limits_{x \\to 0} \\left( {2 + {{a{x^5} + b{x^4} + c{x^3}} \\over {{x^3}}}} \\right)$$ = 4\n<br><br>$$ \\Rightarrow $$ 2 + c = 4\n<br><br>$$ \\Rightarrow $$ c = 2\n<br><br>$$ \\therefore $$ f(x) = ax<sup>5</sup> + bx<sup>4</sup> + 2x<sup>3</sup>\n<br><br>$$ \\Rightarrow $$ f'(x) = 5ax<sup>4</sup> + 4bx<sup>3</sup> + 6x<sup>2</sup>\n<br><br>As x = ±1 are its critical points so f'(x) = 0 at x = ±1.\n<br><br>f'(1) = 5a + 4b + 6 = 0 ....(1)\n<br><br>and f'(-1) = 5a - 4b + 6 = 0 .....(2)\n<br><br>Solving (1) and (2),\n<br><br>a = $$ - {6 \\over 5}$$ and b = 0\n<br><br>$$ \\therefore $$ f(x) = $$ - {6 \\over 5}{x^5} + 2{x^3}$$\n<br><br>So f'(x) = -6x<sup>4</sup> +  6x<sup>2</sup> = 6x<sup>2</sup>(1 + x)(1 - x)\n<br><br> Sign scheme for f'(x)\n<br><br><img src=\"https://imagex.cdn.examgoal.net/7kd4dk6w99svn/7cf57b11-0381-45e0-a6b9-89ac5badfa59/78202340-54b4-11ea-b62d-51ccc5d4afb6/file-7kd4dk6w99svo-485w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 7th January Evening Slot Mathematics - Application of Derivatives Question 159 English Explanation\">\n<br><br>It is clear that maxima at x = 1 and minima at x\n= –1.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lBNcIAtmid94BAZmo7k9k2k5hkbtc7",
@@ -1789,7 +1789,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/v56THIHilmgDO33Xt/HSJvitQWu7YsO4JXzQUXymrvlJuPN/wRbJ5nh1oKAe2pP84gb9yi/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Evening Slot Mathematics - Application of Derivatives Question 178 English Explanation\">\n<br>$$y - {x^{3/2}} = 7\\left( {x \\ge 0} \\right)$$\n<br><br>$${{dy} \\over {dx}} = {3 \\over 2}{x^{1/2}}$$\n<br><br>$$\\left( {{3 \\over 2}\\sqrt x } \\right)\\left( {{{7 - y} \\over {{1 \\over 2} - x}}} \\right) =  - 1$$\n<br><br>$$\\left( {{3 \\over 2}\\sqrt x } \\right)\\left( {{{ - {x^{3/2}}} \\over {{1 \\over 2} - x}}} \\right) =  - 1$$\n<br><br>$${3 \\over 2}.{x^2} = {1 \\over 2} - x$$\n<br><br>$$3{x^2} = 1 - 2x$$\n<br><br>$$3{x^2} + 2x - 1 = 0$$\n<br><br>$$3{x^2} + 3x - x - 1 = 0$$\n<br><br>$$\\left( {x + 1} \\right)\\left( {3x - 1} \\right) = 0$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;$$x =  - 1$$&nbsp;&nbsp;(rejected)\n<br><br>$$x = {1 \\over 3}$$\n<br><br>$$y = 7 + {x^{3/2}} = 7 + {\\left( {{1 \\over 3}} \\right)^{3/2}}$$\n<br><br>$${\\ell _{AB}} = \\sqrt {{{\\left( {{1 \\over 2} - {1 \\over 3}} \\right)}^2} + {{\\left( {{1 \\over 3}} \\right)}^3}}  = \\sqrt {{1 \\over {36}} + {1 \\over {27}}} $$\n<br><br>$$ = \\sqrt {{{3 + 4} \\over {9 \\times 12}}} $$\n<br><br>$$ = \\sqrt {{7 \\over {108}}}  = {1 \\over 6}\\sqrt {{7 \\over 3}} $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wQ3wgXwJYh85rfjWcJkJl",
@@ -1811,7 +1811,7 @@
     "difficulty": "medium",
     "solution": "Let points $$\\left( {{3 \\over 2},0} \\right),\\left( {{t^2},t} \\right),t &gt; 0$$\n<br><br>Distance = $$\\sqrt {{t^2} + {{\\left( {{t^2} - {3 \\over 2}} \\right)}^2}} $$\n<br><br>=  $$\\sqrt {{t^4} - 2{t^2} + {9 \\over 4}}  = \\sqrt {{{\\left( {{t^2} - 1} \\right)}^2} + {5 \\over 4}} $$\n<br><br>So minimum distance is $$\\sqrt {{5 \\over 4}}  = {{\\sqrt 5 } \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tOS3ma3QAHGsURo5qS5KT",
@@ -1833,7 +1833,7 @@
     "difficulty": "medium",
     "solution": "S = {x $$ \\in $$ R, x<sup>2</sup> + 30 $$-$$ 11x $$ \\le $$ 0}\n<br><br>= {x $$ \\in $$ R, 5 $$ \\le $$ x $$ \\le $$ 6}\n<br><br>Now f(x) = 3x<sup>3</sup> $$-$$ 18x<sup>2</sup> + 27x $$-$$ 40\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;f '(x) = 9(x $$-$$ 1)(x $$-$$ 3),\n<br><br>which is positive in [5, 6]\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;f(x) increasing in [5, 6]\n<br><br>Hence maximum value = f(6) = 122",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "2wavbu9DmtWZrZAiqfr4E",
@@ -1855,7 +1855,7 @@
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek14zgwoq/88e19d62-cafe-4a8e-96cd-989ad3f63b6f/e4029da0-e2b7-11e9-a7bc-b7b08ce8d541/file-7kejek14zgwor-320w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7kejek14zgwoq/88e19d62-cafe-4a8e-96cd-989ad3f63b6f/e4029da0-e2b7-11e9-a7bc-b7b08ce8d541/file-7kejek14zgwor-500w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Evening Slot Mathematics - Application of Derivatives Question 170 English Explanation\"></picture>\n<br>Here r = 3 cos$$\\theta $$\n<br><br>and $${h \\over 2}$$ = 3 sin$$\\theta $$\n<br><br>$$ \\Rightarrow $$ h = 6 sin$$\\theta $$\n<br><br>We know, Volume of cylinder\n<br><br>V = $$\\pi $$ r<sup>2</sup> h\n<br><br>$$ \\Rightarrow $$ V = $$\\pi $$ (9cos<sup>2</sup>$$\\theta $$)(6 sin$$\\theta $$)\n<br><br>$$ \\Rightarrow $$ V = 54$$\\pi $$ (sin$$\\theta $$ - sin<sup>3</sup>$$\\theta $$)\n<br><br>For maxima/minima of volume,\n<br><br>$${{dV} \\over {dh}} = 0$$\n<br><br>$$ \\Rightarrow $$ cos$$\\theta $$ - 3sin<sup>2</sup>$$\\theta $$ cos$$\\theta $$ = 0\n<br><br>$$ \\Rightarrow $$ cos$$\\theta $$(1 - 3sin<sup>2</sup>$$\\theta $$) = 0\n<br><br>$$ \\Rightarrow $$ cos$$\\theta $$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\theta $$ = $${\\pi  \\over 2}$$ (not possible)\n<br><br>or 1 - 3sin<sup>2</sup>$$\\theta $$ = 0\n<br><br>$$ \\Rightarrow $$ sin$$\\theta $$ = $${1 \\over {\\sqrt 3 }}$$\n<br><br>$$ \\therefore $$ h = 6 sin$$\\theta $$ = $${6 \\over {\\sqrt 3 }}$$ = $$2\\sqrt 3 $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "bsO11rG2h8VURkIcQKDH2",
@@ -1877,7 +1877,7 @@
     "difficulty": "medium",
     "solution": "ƒ(x) = 9x<sup>4</sup> + 12x<sup>3</sup> – 36x<sup>2</sup> + 25\n<br><br>ƒ'(x) = 36x<sup>3</sup> + 36x<sup>2</sup> – 72x\n<br><br>ƒ'(x) = 36x(x<sup>2</sup> + x – 2)\n<br><br>ƒ'(x) = 36x(x + 2)(x - 1)\n<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0trpftr/5f0e1eff-71b5-4d0d-a88e-74ee4f331bcb/e9176ef0-dc8c-11e9-acf6-6d09a288f7f2/file-7km5fk0trpfts-320w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7km5fk0trpftr/5f0e1eff-71b5-4d0d-a88e-74ee4f331bcb/e9176ef0-dc8c-11e9-acf6-6d09a288f7f2/file-7km5fk0trpfts-500w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Morning Slot Mathematics - Application of Derivatives Question 173 English Explanation\"></picture>\n<br><br>While moving\nleft to right on x-axis whenever derivative changes sign from\nnegative to positive, we get local minima, and\nwhenever derivative changes sign from positive\nto negative, we get local maxima.\n<br><br>$$ \\therefore $$ S<sub>1</sub> = {–2, 1}\n<br><br>S<sub>2</sub> = {0}",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "H7ek3BudnKTxOUvEFo54m",
@@ -1899,7 +1899,7 @@
     "difficulty": "medium",
     "solution": "Local extreme points of f(x) is at x = –1, 0, 1.\n<br><br>$$ \\therefore $$ f'(x) = 0 has three solutions x = –1, 0, 1.\n<br><br>$$ \\therefore $$ f'(x) = k(x + 1)x(x - 1)\n<br><br>$$\\int {f'(x)dx}  = \\int {k(x + 1)x(x - 1)dx} $$\n<br><br>f(x) = $$k\\left[ {{{{x^4}} \\over 4} - {{{x^2}} \\over 2}} \\right] + C$$\n<br><br>Also given that\n<br><br>ƒ(x) = ƒ(0)\n<br><br>$$ \\therefore $$ $$k\\left[ {{{{x^4}} \\over 4} - {{{x^2}} \\over 2}} \\right] + C$$ = C\n<br><br>$$ \\Rightarrow $$ $${{{x^2}} \\over 2}\\left( {{{{x^2}} \\over 2} - 1} \\right)$$ = 0\n<br><br>$$ \\Rightarrow $$ x = 0, $$ - \\sqrt 2 $$, $$ \\sqrt 2 $$\n<br><br>$$ \\therefore $$ x has two irrational and one rational value.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "U1DtFitPjt3mM5fLmUIkD",
@@ -1921,7 +1921,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/MAbzGgUMRziPVuIL2/BB4tBWt5hMp2H7JXTe2jbGgxJ2y6M/dGYf14mtu82vsx1M2giVrb/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th January Morning Slot Mathematics - Application of Derivatives Question 181 English Explanation\">\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;h = 3 cos$$\\theta $$\n<br><br>r = 3 sin$$\\theta $$\n<br><br>We know volume of right circular cone, \n<br><br>V = $${1 \\over 3}\\pi {r^2}h$$\n<br><br>= $${1 \\over 3}\\pi $$(3 sin$$\\theta $$)<sup>2</sup> 3 cos$$\\theta $$\n<br><br>= 9 $$\\pi $$ sin<sup>2</sup>$$\\theta $$ cos$$\\theta $$\n<br><br>For maximum or minimum value of volume, \n<br><br>$${{dv} \\over {d\\theta }}$$ = 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;(2sin$$\\theta $$ cos$$\\theta $$) cos$$\\theta $$ + 3sin<sup>2</sup>$$\\theta $$ .($$-$$ sin$$\\theta $$) = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;2 sin$$\\theta $$ cos<sup>2</sup>$$\\theta $$ $$-$$ sin<sup>3</sup>$$\\theta $$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;2 sin$$\\theta $$(1 $$-$$ sin<sup>2</sup>$$\\theta $$) $$-$$ sin<sup>3</sup> $$\\theta $$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;2 sin$$\\theta $$ $$-$$ 2 sin<sup>3</sup>$$\\theta $$ $$-$$ sin<sup>3</sup>$$\\theta $$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;3 sin<sup>3</sup>$$\\theta $$ = 2 sin$$\\theta $$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;sin<sup>2</sup>$$\\theta $$ = $${2 \\over 3}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;sin$$\\theta $$ = $$\\sqrt {{2 \\over 3}} $$\n<br><br>$${{{d^2}v} \\over {d{\\theta ^2}}}$$ = 2cos$$\\theta $$ $$-$$ 3(3sin$$\\theta $$ cos$$\\theta $$)\n<br><br>= 2 cos$$\\theta $$ $$-$$ 9 sin$$\\theta $$ cos$$\\theta $$\n<br><br>= 2 $$ \\times $$ $${1 \\over {\\sqrt 3 }}$$ $$-$$ 9 $$ \\times $$ $${{\\sqrt 2 } \\over {\\sqrt 3 }}$$ $$ \\times $$ $${1 \\over {\\sqrt 3 }}$$\n<br><br>= $${2 \\over {\\sqrt 3 }} - 3\\sqrt 2 \\, &lt; 0$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Volume is maximum \n<br><br>when sin$$\\theta $$ = $$\\sqrt {{2 \\over 3}} $$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Maximum volume is \n<br><br>= 9 $$\\pi $$ $${\\left( {\\sqrt {{2 \\over 3}} } \\right)^2} \\times {1 \\over {\\sqrt 3 }}$$\n<br><br>= 9 $$\\pi $$ $$ \\times $$ $${2 \\over 3} \\times {1 \\over {\\sqrt 3 }}$$\n<br><br>= $$2\\sqrt 3 \\,\\pi $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "YesRI3v7YkrCJy2r",
@@ -1943,7 +1943,7 @@
     "difficulty": "medium",
     "solution": "Given $$f\\left( x \\right) = {x^2} + {1 \\over {{x^2}}}$$ and $$g\\left( x \\right) = x - {1 \\over x}$$\n<br><br>As $$h\\left( x \\right) = {{f\\left( x \\right)} \\over {g\\left( x \\right)}}$$\n<br><br>= $${{{x^2} + {1 \\over {{x^2}}}} \\over {x - {1 \\over x}}}$$\n<br><br>= $${{{{\\left( {x - {1 \\over x}} \\right)}^2} + 2.x.{1 \\over x}} \\over {x - {1 \\over x}}}$$\n<br><br>= $${{{{\\left( {x - {1 \\over x}} \\right)}^2} + 2} \\over {x - {1 \\over x}}}$$\n<br><br>Let $${x - {1 \\over x} = t}$$\n<br><br>So $$f\\left( t \\right) = {{{t^2} + 2} \\over t}$$ = $$t + {2 \\over t}$$\n<br><br>then $$f'\\left( t \\right) = 1 - {2 \\over {{t^2}}}$$\n<br><br>At maximum or minimum $$f'\\left( t \\right) = 0$$.\n<br><br>$$\\therefore$$ $$1 - {2 \\over {{t^2}}} = 0$$\n<br><br>$$ \\Rightarrow t =  \\pm \\sqrt 2 $$\n<br><br>Now we need to find $$f''\\left( t \\right)$$ which will tell at which point among $$ + \\sqrt 2 $$ and $$ - \\sqrt 2 $$ will be maximum and minimum.\n<br><br>$$f''\\left( t \\right) =  + {4 \\over {{t^3}}}$$\n<br><br>So when $$t =  + \\sqrt 2 $$, then $$f''\\left( t \\right) =  + {4 \\over {{{\\left( {\\sqrt 2 } \\right)}^3}}}$$ = $$ + \\sqrt 2 $$\n<br><br>As $$f''\\left( t \\right) &gt; 0$$ when $$t =  + \\sqrt 2 $$ then at $$t =  + \\sqrt 2 $$ the function $$f\\left( t \\right)$$ will be minimum.\n<br><br>Min of $$f\\left( t \\right) = {{{{\\left( {\\sqrt 2 } \\right)}^2} + 2} \\over {\\sqrt 2 }}$$ = $${4 \\over {\\sqrt 2 }}$$ = $$2\\sqrt 2 $$\n<br><br>So local minimum of $$f\\left( t \\right)$$ = $$2\\sqrt 2 $$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "45nNp849vryhuiO8gPGhJ",
@@ -1965,7 +1965,7 @@
     "difficulty": "medium",
     "solution": "Sphere of radius r = 3 cm\n<br><br>Let b, h be base radius and height of cone respectively.\n<br><br>So, volume of cone = $${1 \\over 2}$$ $$\\pi $$b<sup>2</sup>h\n<br><br><img src=\"https://imagex.cdn.examgoal.net/VHGEMBIE8bQ9Hvcjo/qRcwZNM1ySPUQKDfIB3jCDH0dwnq9/NQzVfi4HBmwdPq2QZ6OwBX/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Online) 15th April Morning Slot Mathematics - Application of Derivatives Question 191 English Explanation\">\n<br><br>In right $$\\Delta $$ABC by Pythagoras theorem\n<br><br>(h $$-$$ r)<sup>2</sup> + b<sup>2</sup> = r<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ b<sup>2</sup> = r<sup>2</sup> $$-$$ (h $$-$$ r)<sup>2</sup> = r<sup>2</sup> $$-$$ (h<sup>2</sup> $$-$$ 2hr + r<sup>2</sup>) = 2hr $$-$$ h<sup>2</sup>\n<br><br>$$\\therefore\\,\\,\\,$$ Volume (v) = $${1 \\over 3}$$ $$\\pi $$h[2hr $$-$$ h<sup>2</sup>] = $${1 \\over 3}$$ [ 2h<sup>2</sup>r $$-$$ h<sup>3</sup>]\n<br><br>$${{dv} \\over {dh}}$$ = $${1 \\over 3}$$ [4hr $$-$$ 3h<sup>2</sup>] = 0 \n<br><br>$$ \\Rightarrow $$ h (4r $$-$$ 3h) = 0\n<br><br>$${{{d^2}v} \\over {d{h^2}}}$$ = $${1 \\over 3}$$ [4r $$-$$ 6h]\n<br><br>At h = $${{4r} \\over 3}$$, $${{{d^2}y} \\over {d{h^2}}}$$ = $${1 \\over 3}$$ $$\\left[ {4r - {{4r} \\over 3} \\times 6} \\right] = {1 \\over 3}\\left[ {4r - 8r} \\right] &lt; 0$$\n<br><br>$$ \\Rightarrow $$ maximum volume cours at h = $${{4r} \\over 3}$$ = $${4 \\over 3}$$ $$ \\times $$ 3 = 4 cm\n<br><br>As from (1),\n<br><br>(h $$-$$ r)<sup>2</sup> + b<sup>2</sup> = r<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ b<sup>2</sup> = 2hr $$-$$ h<sup>2</sup> = 2.$${{4r} \\over 3}$$ r $$-$$ $${{16{r^2}} \\over 9}$$ = $${{8{r^2}} \\over 3}$$ $$-$$ $${{16{r^2}} \\over 9}$$\n<br><br>= $${{\\left( {24 - 16} \\right){r^2}} \\over 9}$$ = $${{8{r^2}} \\over 9}$$\n<br><br>$$ \\Rightarrow $$ b = $${{2\\sqrt 2 } \\over 3}$$ r = 2 $$\\sqrt 2 \\,\\,m$$\n<br><br>Therefore curved surface area = $$\\pi bl$$\n<br><br>= $$\\pi $$b$$\\sqrt {{h^2} + {r^2}} $$ = $$\\pi $$2$$\\sqrt 2 $$ $$\\sqrt {{4^2} + 8} $$ = 8$$\\sqrt 3 $$$$\\pi $$ cm<sup>2</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "rkBBF51Mq0IdrNDlgz0jp",
@@ -1987,7 +1987,7 @@
     "difficulty": "medium",
     "solution": "<p>To determine the absolute maximum (M) and absolute minimum (m) of the function $ f(x) = 2x^3 - 9x^2 + 12x + 5 $ over the interval $[0, 3]$, we need to examine its critical points and endpoints.</p>\n\n<p>First, we find the derivative of the function, $ f'(x) $, to locate the critical points:</p>\n\n<p>\n\n<p>$$ f'(x) = \\frac{d}{dx} (2x^3 - 9x^2 + 12x + 5) = 6x^2 - 18x + 12 $$</p>\n\n</p>\n\n<p>Next, we set the derivative equal to zero to find the critical points:</p>\n\n<p>\n\n<p>$$ 6x^2 - 18x + 12 = 0 $$</p>\n\n</p>\n\n<p>Simplifying this equation by dividing by 6:</p>\n\n<p>\n\n<p>$$ x^2 - 3x + 2 = 0 $$</p>\n\n</p>\n\n<p>We solve this quadratic equation using the factorization method:</p>\n\n<p>\n\n<p>$$ (x - 1)(x - 2) = 0 $$</p>\n\n</p>\n\n<p>So, the critical points are:</p>\n\n<p>\n\n<p>$$ x = 1 \\quad \\text{and} \\quad x = 2 $$</p>\n\n</p>\n\n<p>We now evaluate the function $ f(x) $ at the critical points and at the endpoints of the interval [0, 3]:</p>\n\n<p>1. At $ x = 0 $:</p>\n\n<p>\n\n<p>$$ f(0) = 2(0)^3 - 9(0)^2 + 12(0) + 5 = 5 $$</p>\n\n</p>\n\n<p>2. At $ x = 1 $:</p>\n\n<p>\n\n<p>$$ f(1) = 2(1)^3 - 9(1)^2 + 12(1) + 5 = 2 - 9 + 12 + 5 = 10 $$</p>\n\n</p>\n\n<p>3. At $ x = 2 $:</p>\n\n<p>\n\n<p>$$ f(2) = 2(2)^3 - 9(2)^2 + 12(2) + 5 = 16 - 36 + 24 + 5 = 9 $$</p>\n\n</p>\n\n<p>4. At $ x = 3 $:</p>\n\n<p>\n\n<p>$$ f(3) = 2(3)^3 - 9(3)^2 + 12(3) + 5 = 54 - 81 + 36 + 5 = 14 $$</p>\n\n</p>\n\n<p>We now identify the absolute maximum (M) and absolute minimum (m) from the above values:</p>\n\n<ul>\n\n<li>Maximum value $ M = 14 $ at $ x = 3 $</li>\n\n<li>Minimum value $ m = 5 $ at $ x = 0 $</li>\n\n</ul>\n\n<p>Thus, the difference $ M - m $ is:</p>\n\n<p>\n\n<p>$$  M - m = 14 - 5 = 9 $$</p>\n\n</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p><strong>Option B: 9</strong></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "hg0NtKbysVv7jMdWsw1kjy5xfk7",
@@ -2010,7 +2010,7 @@
     "solution": "$$f(x) = \\left| {\\matrix{\n   {\\cos 2x} &amp; {\\cos 2x} &amp; {\\sin 2x}  \\cr \n   { - \\cos x} &amp; {\\cos x} &amp; { - \\sin x}  \\cr \n   {\\sin x} &amp; {\\sin x} &amp; {\\cos x}  \\cr \n\n } } \\right|$$<br><br>$$\\cos 2x({\\cos ^2}x + {\\sin ^2}x) - \\cos 2x( - {\\cos ^2}x + {\\sin ^2}x) + \\sin 2x( - \\sin 2x)$$<br><br>$$ = \\cos 2x + \\cos 4x$$<br><br>$$f'(x) =  - 2\\sin 2x - 4\\sin 4x$$<br><br>$$ =  - 2\\sin 2x(1 + 4\\cos 2x)$$<br><br>At x = 0<br><br>f'(x) = 0 and f(x) = 2<br><br>Also, f'(x) = 0 sin2x = 0 or $$\\cos 2x = {{ - 1} \\over 4}$$<br><br>$$ \\Rightarrow x = {{n\\pi } \\over 2}$$ or $$\\cos 2x =  - {1 \\over 4}$$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "JRHASG5PZuMAMaza",
@@ -2032,7 +2032,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kejek2z2igf6/74e74784-5ed5-496c-a00d-c266f6493ae4/85500820-070f-11ea-a7bc-b7b08ce8d541/file-7kejek2z2igf7-281w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2017 (Offline) Mathematics - Application of Derivatives Question 192 English Explanation\">\nWe have\n<br><br>Total length = r + r + r$$\\theta $$ = 20\n<br><br>$$ \\Rightarrow $$ 2r + r$$\\theta $$ = 20\n<br><br>$$ \\Rightarrow $$ $$\\theta  = {{20 - 2r} \\over r}$$ .......(1)\n<br><br>A = Area = $${\\theta  \\over {2\\pi }} \\times \\pi {r^2}$$ = $${1 \\over 2}{r^2}\\theta $$ = $${1 \\over 2}{r^2}\\left( {{{20 - 2r} \\over r}} \\right)$$\n<br><br>$$ \\Rightarrow $$ A = 10r – r<sup>2</sup>\n<br><br>For A to be maximum\n<br><br>$${{dA} \\over {dr}} = 0$$\n<br><br>$$ \\Rightarrow $$ 10 – 2r = 0\n<br><br>$$ \\Rightarrow $$ r = 5\n<br><br>$${{{d^2}A} \\over {d{r^2}}} =  - 2 &lt; 0$$\n<br><br>$$ \\therefore $$ For r = 5, A is maximum\nFrom (1)\n<br><br>$${\\theta  = {{20 - 2\\left( 5 \\right)} \\over r}}$$ = 2\n<br><br>A = $${2 \\over {2\\pi }} \\times \\pi {\\left( 5 \\right)^2}$$ = 25 sq. m",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "63vdWGkgD2s0zDcC",
@@ -2055,7 +2055,7 @@
     "solution": "It is given that<br/><br/>\n$$\n4 \\alpha x^2+\\frac{1}{x} \\geq 1 \\forall x>0\n$$<br/><br/>\nThat is, $4 \\alpha x^2 \\geq 1-\\frac{1}{x}$<br/><br/>\n$$\n4 \\alpha \\geq\\left(\\frac{1}{x^2}-\\frac{1}{x^3}\\right) \\forall x>0\n$$<br/><br/>\nNow, let us consider that<br/><br/>\n$$\nf(x)=\\frac{1}{x^2}-\\frac{1}{x^3}\n$$<br/><br/>\nTherefore, $f^{\\prime}(x)=\\frac{-2}{x^3}+\\frac{3}{x^4}=0$<br/><br/>\nWhen $x=3 / 2$ :<br/><br/>\n$$\n\\begin{gathered}\n(4 \\alpha) \\geq\\left(\\frac{1}{x^2}-\\frac{1}{x^3}\\right) \\\\\\\\\n4 \\alpha \\geq\\left(\\frac{4}{9}-\\frac{8}{27}\\right)\n\\end{gathered}\n$$<br/><br/>\nThat is,\n$$\n\\alpha \\geq \\frac{1}{27}\n$$<br/><br/>\nand hence the least value of $\\alpha$ is<br/><br/>\n$$\n\\alpha_{\\text {least }}=\\frac{1}{27}\n$$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IRa7sJHSuwJgiGJc",
@@ -2078,7 +2078,7 @@
     "solution": "<p>Let f : R $$\\to$$ (0, $$\\infty$$) and g : R $$\\to$$ R.</p>\n<p>f(x) > 0 $$\\forall$$x $$\\in$$ R</p>\n<p>It is given that f'(2) = 0, g(2) = 0, f''(2) $$\\ne$$ 0 and g'(2) $$\\ne$$ 0.</p>\n<p>It is also given that</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 2} {{f(x)g(x)} \\over {f'(x)g'(x)}} = 1$$ $$\\left( {{0 \\over 0}} \\right)$$</p>\n<p>Applying L' Hospital rule, we get</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 2} {{f'(x)g(x) + g'(x)f(x)} \\over {f''(x)g'(x) + f'(x)g''(x)}} = 1$$</p>\n<p>For finite limit, we get</p>\n<p>$${{f'(2)g(2) + g'(2)f(2)} \\over {f''(2)g'(2) + f'(2)g''(2)}} = 1$$</p>\n<p>$${{g'(2)f(2)} \\over {f''(2)g'(2)}} = 1$$</p>\n<p>$${{f(2)} \\over {f''(2)}} = 1 \\Rightarrow f''(2) = f(2) > 0$$ and f'(2) = 0 which means that f(x) has local minima at x = 2.</p>\n<p>Hence, option (A) is correct.</p>\n<p>$$f(2) - f''(2) = 0$$</p>\n<p>Therefore, we can say that $$f(x) - f''(x) = 0$$ has at least one solution in x $$\\in$$ R.</p>\n<p>Hence, option (D) is correct.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jrSbPCcMERZCP1ui",
@@ -2100,7 +2100,7 @@
     "difficulty": "medium",
     "solution": "$$4x + 2\\pi r = 2$$ $$\\,\\,\\,$$ $$ \\Rightarrow 2x + \\pi r = 1$$\n<br><br>$$S = {x^2} + \\pi {r^2}$$\n<br><br>$$S = {\\left( {{{1 - \\pi r} \\over 2}} \\right)^2} + \\pi {r^2}$$\n<br><br>$${{dS} \\over {dr}} = 2\\left( {{{1 - \\pi r} \\over 2}} \\right)\\left( {{{ - \\pi } \\over 2}} \\right) + 2\\pi r$$\n<br><br>$$ \\Rightarrow {{ - \\pi } \\over 2} + {{{\\pi ^2}r} \\over 2} + 2\\pi r = 0$$\n<br><br>$$ \\Rightarrow r = {1 \\over {\\pi  + 4}}$$\n<br><br>$$ \\Rightarrow x = {2 \\over {\\pi  + 4}}\\,$$\n<br><br>$$ \\Rightarrow x = 2r$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "byueGoFmiFA0tNnAffoxb",
@@ -2122,7 +2122,7 @@
     "difficulty": "medium",
     "solution": "Let point on the curve \n<br><br>y = x<sup>2</sup> $$-$$ 4 is ($$\\alpha $$<sup>2</sup>,&nbsp;$$\\alpha $$<sup>2</sup> $$-$$ 4)\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Distance of the point ($$\\alpha $$<sup>2</sup>, $$\\alpha $$<sup>2</sup> $$-$$ 4) from origin,\n<br><br>D = $$\\sqrt {{\\alpha ^2} + {{\\left( {{\\alpha ^2} - 4} \\right)}^2}} $$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;D<sup>2</sup> = $$\\alpha $$<sup>2</sup> + $$\\alpha $$<sup>4</sup> + 16 $$-$$ 8$$\\alpha $$<sup>2</sup>\n<br><br>$$=$$ $$\\alpha $$<sup>4</sup> $$-$$ 7$$\\alpha $$<sup>2</sup> + 16\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp; $${{d{D^2}} \\over {d\\alpha }}$$ = 4$$\\alpha $$<sup>3</sup> $$-$$ 14$$\\alpha $$\n<br><br>Now, $${{d{D^2}} \\over {d\\alpha }}$$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;4$$\\alpha $$<sup>3</sup> $$-$$ 14$$\\alpha $$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;2$$\\alpha $$ (2$$\\alpha $$<sup>2</sup> $$-$$ 7) = 0\n<br><br>$$\\alpha $$ = 0 &nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;$$\\alpha $$<sup>2</sup> = $${7 \\over 2}$$\n<br><br>$${{{d^2}{D^2}} \\over {d{\\alpha ^2}}} = 12{\\alpha ^2} - 14$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$${\\left( {{{{d^2}{D^2}} \\over {d{\\alpha ^2}}}} \\right)_{at\\,\\,\\alpha  = 0}} =  - 14 &lt; 0$$\n<br><br>$${\\left( {{{{d^2}{D^2}} \\over {d{\\alpha ^2}}}} \\right)_{at\\,\\,{\\alpha ^2} = {7 \\over 2}}} = 28 &gt; 0$$\n<br><br>$$\\therefore\\,\\,\\,$$ Distance is minimum at $$\\alpha $$<sup>2</sup> = $${7 \\over 2}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Minimum distance \n<br><br>D = $$\\sqrt {{{49} \\over 4} - {{49} \\over 4} + 16} $$\n<br><br>= $${{\\sqrt {15} } \\over 2}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "H1NHGrFD4UI9gG55",
@@ -2162,7 +2162,7 @@
     "difficulty": "medium",
     "solution": "$$\\mathop {\\lim }\\limits_{x \\to 0} \\left[ {1 + {{f\\left( x \\right)} \\over {{x^2}}}} \\right] = 3 \\Rightarrow \\mathop {Lim}\\limits_{x \\to 0} {{f\\left( x \\right)} \\over {{x^2}}} = 2$$\n<br><br>So, $$f(x)$$ contains terms in $$x{}^2,{x^3}$$ and $${x^4}$$\n<br><br>Let $$f\\left( x \\right) = {a_1}{x^2} + {a_2}{x^3} + {a_3}{x^4}$$\n<br><br>Since $$\\mathop {\\lim }\\limits_{x \\to 0} {{f\\left( x \\right)} \\over {{x^2}}} = 2 \\Rightarrow {a_1} = 2$$\n<br><br>Hence, $$f\\left( x \\right) = 2{x^2} + {a_2}{x^3} + {a_3}{x^4}$$\n<br><br>$$f'\\left( x \\right) = 4x + 3{a_2}{x^2} + 4{a_3}{x^3}$$\n<br><br>As given: $$f'\\left( 1 \\right) = 0$$ and $$f'\\left( 2 \\right) = 0$$\n<br><br>Hence, $$4 + 3{a_2} + 4{a_3} = 0\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( 1 \\right)$$\n<br><br>and $$8 + 12{a_2} + 32{a_3} = 0\\,\\,\\,\\,\\,...\\left( 1 \\right)$$\n<br><br>By $$4x\\left( {eq1} \\right) - eq\\left( 2 \\right),$$ we get\n<br><br>$$16 + 12{a_2} + 16{a_3} - \\left( {8 + 12{a_2} + 32{a_3}} \\right) = 0$$\n<br><br>$$ \\Rightarrow 8 - 16{a_3} = 0 \\Rightarrow {a_3} = 1/2$$\n<br><br>and by eqn. $$\\left( 1 \\right),4 + 3{a_2} + 4/2 = 0 \\Rightarrow {a_2} =  - 2$$\n<br><br>$$ \\Rightarrow f\\left( x \\right) = 2{x^2} - 2{x^3} + {1 \\over 2}{x^4}$$\n<br><br>$$f\\left( 2 \\right) = 2 \\times 4 - 2 \\times 8 + {1 \\over 2} \\times 16 = 0$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "uhpBt8tZl7jVNmvk",
@@ -2184,7 +2184,7 @@
     "difficulty": "medium",
     "solution": "Let $$f\\left( x \\right) = \\alpha \\log \\left| x \\right| + \\beta {x^2} + x$$\n<br><br>Differentiating both sides, \n<br><br>$$f'\\left( x \\right) = {\\alpha  \\over x} + 2\\beta x + 1$$\n<br><br>Since $$x=-1$$ and $$x=2$$ are extreme points therefore \n<br><br>$$f'\\left( x \\right) = 0$$ at these points. \n<br><br>Put $$x =  - 1$$ and $$x = 2$$ in $$f'\\left( x \\right),$$\n<br><br>we get $$ - \\alpha  - 2\\beta  + 1 = 0$$\n<br><br>$$ \\Rightarrow \\alpha  + 2\\beta  = 1\\,\\,...\\left( i \\right)$$\n<br><br>$${\\alpha  \\over 2} + 4\\beta  + 1 = 0$$\n<br><br>$$ \\Rightarrow \\alpha  + 8\\beta  =  - 2\\,\\,...\\left( {ii} \\right)$$\n<br><br>On solving $$(i)$$ and $$(ii)$$, we get \n<br><br>$$6\\beta  =  - 3 \\Rightarrow \\beta  =  - {1 \\over 2}$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\alpha  = 2$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "CItJCN6Q16IxgNHP",
@@ -2207,7 +2207,7 @@
     "solution": "<p>Let $$a$$ rectangular sheet with sides $$15 a$$ and $$8 a$$ and four squares of side length $$b$$ removing from each corners of the rectangular sheet</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzsla1g8/d7a6f93b-ca89-4bed-a7d5-883478e87205/5953d580-598a-11ef-ae60-e37c91c83a38/file-jaoe38c1lzsla1g9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzsla1g8/d7a6f93b-ca89-4bed-a7d5-883478e87205/5953d580-598a-11ef-ae60-e37c91c83a38/file-jaoe38c1lzsla1g9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 1 Offline Mathematics - Application of Derivatives Question 81 English Explanation 1\"></p>\n<p>Given, the perimeter of rectangular sheet is constant.</p>\n<p>$$\\therefore 15 a+8 a=$$ Constant</p>\n<p>$$\\Rightarrow a$$ is constant</p>\n<p>Let $$V$$ be the volume of open rectangular box</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzslb7gd/7b673654-46e9-49bb-a7b7-c3d848bbf90d/79c642d0-598a-11ef-b1bc-517cafecc6a0/file-jaoe38c1lzslb7ge.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzslb7gd/7b673654-46e9-49bb-a7b7-c3d848bbf90d/79c642d0-598a-11ef-b1bc-517cafecc6a0/file-jaoe38c1lzslb7ge.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 1 Offline Mathematics - Application of Derivatives Question 81 English Explanation 2\"></p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow \\quad \\mathrm{V}=(15 a-2 b) b(8 a-2 b) \\\\\n&amp; \\Rightarrow \\quad \\mathrm{V}=4 b^3-46 a b^2+120 a^2 b \\\\\n&amp; \\Rightarrow \\quad \\frac{d \\mathrm{~V}}{d b}=12 b^2-92 a b+120 a^2=0 \\\\\n&amp; \\Rightarrow \\quad \\frac{d \\mathrm{~V}}{d b}=4(3 b-5 a)(b-6 a)=0 \\\\\n&amp; \\Rightarrow \\quad b=\\frac{5 a}{3}, 6 a \\\\\n\\end{aligned}$$</p>\n<p>Now $$\\frac{d^2 v}{d b^2}=24 b-92 a&lt;0$$ at $$b=\\frac{5 a}{3}$$</p>\n<p>So, $$b=\\frac{5 a}{3}$$ is the point of local maxima</p>\n<p>Given, the area of removed squares is 100</p>\n<p>$$\\begin{aligned}\n&amp; \\therefore &amp; 4 b^2 &amp; =100 \\\\\n&amp; \\Rightarrow &amp; b^2 &amp; =25 \\\\\n&amp; \\Rightarrow &amp; \\left(\\frac{5 a}{3}\\right)^2 &amp; =25 \\\\\n&amp; \\Rightarrow &amp; a &amp; =3\n\\end{aligned}$$</p>\n<p>Hence, the side length of the given rectangular sheet are $$15 a=45$$ and $$8 a=24$$.</p>\n<p>Hints:</p>\n<p>$$\\Rightarrow$$ If $$x=x_0$$ is the point of local maxima of a function $$y=f(x)$$, then $$f^{\\prime}\\left(x_0\\right)=0$$ and $$f^{\\prime \\prime}\\left(x_0\\right)&lt;0$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "NrhrnboO4Vpt3b2x",
@@ -2230,7 +2230,7 @@
     "solution": "<p>Given, $$f(0)=f(1)=0$$</p>\n<p>$$\\begin{aligned}\n&amp; \\text { And } f^{\\prime \\prime}(x)-2 f^{\\prime}(x)+f(x) \\geq e^x, x \\in[0,1] \\\\\n&amp; \\Rightarrow e^{-x} f^{\\prime \\prime}(x)-e^{-x} f^{\\prime}(x)-e^{-x} f^{\\prime}(x)+e^{-x} f(x) \\geq 1 \\\\\n&amp; \\Rightarrow\\left(e^{-x} f^{\\prime}(x)\\right)^{\\prime}-\\left(e^{-x} f^{\\prime}(x)\\right)-\\left(e^{-x} f(x)\\right)^{\\prime} \\geq 1 \\\\\n&amp; \\Rightarrow\\left(e^{-x} f^{\\prime}(x)-e^{-x} f(x)\\right)^{\\prime} \\geq 1 \\\\\n&amp; \\Rightarrow\\left(e^{-x} f(x)\\right)^{\\prime \\prime} \\geq 1\n\\end{aligned}$$</p>\n<p>Let $$g(x)=e^{-x} f(x)$$</p>\n<p>Now, $$g(0)=e^{-0} f(0)=0$$ and $$g(1)=e^{-1} f(1)=0$$</p>\n<p>Here, $$g^{\\prime \\prime}(x)=\\left(e^{-x} f(x)\\right)^{\\prime \\prime} \\geq 1&gt;0$$</p>\n<p>$$\\therefore$$ Concavity of $$g(x)$$ is up and $$g(0)=g(1)=0$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzs13b3p/117ad3c9-6583-422f-9593-f7ddbcef32e0/67895250-593b-11ef-8ba0-f97c84f62bab/file-jaoe38c1lzs13b3q.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzs13b3p/117ad3c9-6583-422f-9593-f7ddbcef32e0/67895250-593b-11ef-8ba0-f97c84f62bab/file-jaoe38c1lzs13b3q.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 2 Offline Mathematics - Application of Derivatives Question 32 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow g(x)=e^{-x} f(x)&lt;0 \\forall x \\in(0,1) \\\\\n&amp; \\Rightarrow f(x)&lt;0\n\\end{aligned}$$</p>\n<p>Hints:</p>\n<p>(i) $$f^{\\prime \\prime}(x)&gt;0$$ implies the concavity of $$f(x)$$ is upward and $$f^{\\prime \\prime}(x)&lt;0$$ implies the concavity of $$f(x)$$ is downward.</p>\n<p>(ii) $$f^{\\prime \\prime}(x)&gt;0 \\quad \\forall x \\in(a, b)$$ and $$f(a)=f(b)=0$$ implies that the concavity of the function is upward and $$f(x)$$ lies below the $x$-axis in the interval $$x \\in(a, b)$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "MCQM"
   },
   {
     "id": "mRl2tac9qTH4ivSY",
@@ -2253,7 +2253,7 @@
     "solution": "<p>Given, $$e^{-x} f(x)$$ has point of minima at $$x=\\frac{1}{4}$$ in the interval $$x \\in[0,1]$$</p>\n<p>Also given $$f(0)=f(1)=0$$</p>\n<p>$$\\begin{aligned}\n&amp; \\text { And } f^{\\prime \\prime}(x)-2 f^{\\prime}(x)+f(x) \\geq e^x, x \\in[0,1] \\\\\n&amp; \\Rightarrow e^{-x} f^{\\prime \\prime}(x)-e^{-x} f^{\\prime}(x)-e^{-x} f^{\\prime}(x)+e^{-x} f(x) \\geq 1 \\\\\n&amp; \\Rightarrow\\left(e^{-x} f^{\\prime}(x)\\right)^{\\prime}-\\left(e^{-x} f(x)\\right)^{\\prime} \\geq 1 \\\\\n&amp; \\Rightarrow\\left(e^{-x} f^{\\prime}(x)-e^{-x} f(x)\\right)^{\\prime} \\geq 1 \\\\\n&amp; \\Rightarrow\\left(e^{-x} f(x)\\right)^{\\prime \\prime} \\geq 1&gt;0\n\\end{aligned}$$</p>\n<p>Hence, the concavity of $$e^{-x} f(x)$$ is upward and given $$x=\\frac{1}{4}$$ is the point of local minima of $$e^{-x} f(x)$$ in $$x \\in[0,1]$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzs1fs7d/9709b92b-b2f4-4788-a0f0-7fc5e551bb84/c274f790-593c-11ef-8ba0-f97c84f62bab/file-jaoe38c1lzs1fs7e.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzs1fs7d/9709b92b-b2f4-4788-a0f0-7fc5e551bb84/c274f790-593c-11ef-8ba0-f97c84f62bab/file-jaoe38c1lzs1fs7e.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 2 Offline Mathematics - Application of Derivatives Question 31 English Explanation\"></p>\n<p>$$\\therefore e^{-x} f(x)$$ is decreasing in $$x \\in\\left(0, \\frac{1}{4}\\right)$$ and increasing in $$x \\in\\left(\\frac{1}{4}, 1\\right)$$</p>\n<p>$$\\Rightarrow\\left(e^{-x} f(x)\\right)^{\\prime}&lt;0$$ in $$x \\in\\left(0, \\frac{1}{4}\\right)$$ and $$\\left(e^{-x} f(x)\\right)^{\\prime}&gt;0$$ in $$x \\in\\left(\\frac{1}{4}, 1\\right)$$</p>\n<p>$$\\Rightarrow e^{-x} f^{\\prime}(x)-e^{-x} f(x)&lt;0$$ in $$x \\in$$</p>\n<p>$$\\therefore e^{-x} f(x)$$ is decreasing in $$x \\in\\left(0, \\frac{1}{4}\\right)$$ and increasing in $$x \\in\\left(\\frac{1}{4}, 1\\right)$$</p>\n<p>$$\\Rightarrow\\left(e^{-x} f(x)\\right)^{\\prime}&lt;0, x \\in\\left(0, \\frac{1}{4}\\right)$$ and</p>\n<p>$$\\left(e^{-x} f(x)\\right)^{\\prime}&gt;0, x \\in\\left(\\frac{1}{4}, 1\\right)$$</p>\n<p>$$\\Rightarrow e^{-x} f^{\\prime}(x)-e^{-x} f(x)&lt;0, x \\in\\left(0, \\frac{1}{4}\\right)$$ and</p>\n<p>$$e^{-x} f^{\\prime}(x)-e^{-x} f(x)&gt;0, \\quad x \\in\\left(\\frac{1}{4}, 1\\right)$$</p>\n<p>$$\\Rightarrow f^{\\prime}(x) &lt; f(x), x \\in\\left(0, \\frac{1}{4}\\right)$$ and</p>\n<p>$$f^{\\prime}(x) &gt; f(x), x \\in\\left(\\frac{1}{4}, 1\\right)$$</p>\n<p>Hints :</p>\n<p>$$\\Rightarrow e^{-x} f(x)$$ is minimum at $$x=\\frac{1}{4}$$ in $$x \\in\\left[0, \\frac{1}{4}\\right]$$ implies $$e^{-x} f(x)$$ is decreasing in $$x \\in\\left[0, \\frac{1}{4}\\right]$$ and $$e^{-x} f(x)$$ is increasing in $$x \\in\\left(\\frac{1}{4}, 1\\right)$$.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l1mbu5h0",
@@ -2276,7 +2276,7 @@
     "solution": "<p>Here, $$f(x) = 2\\left| x \\right| + \\left| {x + 2} \\right| - \\left| {\\left| {x + 2} \\right| - 2\\left| x \\right|} \\right|$$</p>\n<p>$$ = \\left\\{ {\\matrix{\n   { - 2x - (x + 2) + (x - 2),} &amp; {when\\,x \\le  - 2}  \\cr \n   { - 2x + x + 2 + 3x + 2,} &amp; {when\\, - 2 &lt; x \\le  - {2 \\over 3}}  \\cr \n   { - 4x,} &amp; {when\\, - {2 \\over 3} &lt; x \\le 0}  \\cr \n   {4x,} &amp; {when\\,0 &lt; x \\le 2}  \\cr \n   {2x + 4,} &amp; {when\\,x &gt; 2}  \\cr \n\n } } \\right.$$</p>\n<p>$$ = \\left\\{ {\\matrix{\n   { - 2x - 4,} &amp; {x \\le  - 2}  \\cr \n   {2x + 4,} &amp; { - 2 &lt; x \\le  - 2/3}  \\cr \n   { - 4x,} &amp; { - {2 \\over 3} &lt; x \\le 0}  \\cr \n   {4x,} &amp; {0 &lt; x \\le 2}  \\cr \n   {2x + 4,} &amp; {x &gt; 2}  \\cr \n\n } } \\right.$$</p>\n<p>Graph for y = f(x) is shown as</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l1qh3v5x/b0a0b2f3-d625-4e18-96b7-68e2e58e7f85/1ceb1b50-b741-11ec-9e03-1dc4faa0ba90/file-1l1qh3v5y.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l1qh3v5x/b0a0b2f3-d625-4e18-96b7-68e2e58e7f85/1ceb1b50-b741-11ec-9e03-1dc4faa0ba90/file-1l1qh3v5y.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2013 Paper 2 Offline Mathematics - Application of Derivatives Question 14 English Explanation\"></p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "AzrptV50Kkk0Hsrk",
@@ -2312,7 +2312,7 @@
     "solution": "<p>$$\\begin{aligned}\n&amp; \\text { Given, } f(x)=|x|+\\left|x^2-1\\right| \\\\\n&amp; \\Rightarrow f(x)=|x|+|x-1||x+1|\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzuzk7sx/d74989da-680c-4e3f-8466-b60f6e087926/c56edf10-5adb-11ef-ab92-f1f0f215dea0/file-jaoe38c1lzuzk7sy.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzuzk7sx/d74989da-680c-4e3f-8466-b60f6e087926/c56edf10-5adb-11ef-ab92-f1f0f215dea0/file-jaoe38c1lzuzk7sy.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2012 Paper 1 Offline Mathematics - Application of Derivatives Question 27 English Explanation\"></p>\n<p>$$\\begin{aligned}\nf(x) &amp; =x^2+x-1, x \\geq 1 \\\\\n&amp; =1-x^2+x, 0 \\leq x &lt; 1 \\\\\n&amp; =1-x^2-x,-1 &lt; x &lt; 0 \\\\\n&amp; =x^2-x-1, x \\leq-1 \\\\\nf^{\\prime}(x) &amp; =2 x+1 \\quad(+v e) \\\\\n&amp; =1-2 x \\quad x &gt; \\frac{1}{2}(+v e) \\\\\n&amp; =-2 x-1 \\quad x &gt; -\\frac{1}{2}(-v e) ; x &lt; \\frac{-1}{2}(+v e) \\\\\n&amp; =2 x-1 \\quad(-v e)\n\\end{aligned}$$</p>\n<p>From the figure, total number of points at which $$f$$ attains either a local maximum or a local minimum is 5.</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "6b7NalFdDIS8hJEB",
@@ -2335,7 +2335,7 @@
     "solution": "<p>For statement $$P$$</p>\n<p>$$\\begin{aligned}\n&amp; f(x)+2 x=2\\left(1+x^2\\right) \\\\\n\\Rightarrow &amp; (1-x)^2 \\sin ^2 x+x^2+2 x=2+2 x^2 \\\\\n\\Rightarrow &amp; (1-x)^2 \\sin ^2 x=x^2-2 x+1+1 \\\\\n\\Rightarrow &amp; (1-x)^2 \\sin ^2 x=(1-x)^2+1 \\\\\n\\Rightarrow &amp; -(1-x)^2\\left(1-\\sin ^2 x\\right)=1 \\\\\n\\Rightarrow &amp; -\\cos ^2 x=\\frac{1}{(1-x)^2}&gt;0 \\\\\n\\Rightarrow &amp; \\cos ^2 x&lt;0\n\\end{aligned}$$</p>\n<p>Here, no value of $$x$$ that satisfy the above equation.</p>\n<p>$$\\therefore$$ Statement P is false</p>\n<p>For Statement Q</p>\n<p>$$\\begin{aligned}\n&amp; 2 f(x)+1=2 x(1+x) \\\\\n\\Rightarrow \\quad &amp; 2(1-x)^2 \\sin ^2 x+2 x^2+1=2 x+2 x^2 \\\\\n\\Rightarrow \\quad &amp; 2(x-1)^2 \\sin ^2 x=2 x-1 \\\\\n\\Rightarrow \\quad &amp; \\sin ^2 x=\\frac{2 x-1}{2(x-1)^2} \\\\\n\\Rightarrow \\quad &amp; \\sin ^2 x=\\frac{1}{x-1}+\\frac{1}{2(x-1)^2} \\quad \\text{... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { Let } B(x) &amp; =\\frac{1}{x-1}+\\frac{1}{2(x-1)^2} \\\\\n\\Rightarrow \\quad B^{\\prime}(x) &amp; =\\frac{-1}{(x-1)^2}-\\frac{1}{(x-1)^3}=\\frac{-x}{(x-1)^3} \\text { and } \\\\\nB^{\\prime \\prime}(x) &amp; =\\frac{2 x+1}{(x-1)^4}\n\\end{aligned}$$</p>\n<p>Hence, $$\\mathrm{B}(x)$$ is increasing function on $$x \\in(0,1)$$ and decreasing on $$x \\in(-\\infty, 0) \\cup(1, \\infty), \\mathrm{B}^{\\prime \\prime}(x)=0$$ at $$x=-\\frac{1}{2}$$ and $$\\mathrm{B}^{\\prime \\prime}(x) \\geq 0$$ for $$x \\in \\mathrm{R}-\\left\\{\\frac{-1}{2}, 1\\right\\} \\text {. }$$</p>\n<p>Draw the graph of the $$y=\\sin ^2 x$$ and $$y=\\frac{1}{x+1}+\\frac{1}{2(x-1)^2}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzvj0tos/4f005bfe-8cf3-4546-8b45-9c6f4a25d7f8/e0c73ae0-5b27-11ef-94ec-5d5e80be8bef/file-jaoe38c1lzvj0tqm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzvj0tos/4f005bfe-8cf3-4546-8b45-9c6f4a25d7f8/e0c73ae0-5b27-11ef-94ec-5d5e80be8bef/file-jaoe38c1lzvj0tqm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2012 Paper 2 Offline Mathematics - Application of Derivatives Question 34 English Explanation\"></p>\n<p>The graph of $$y=\\sin ^2 x$$ and $$y=\\frac{1}{x+1}+\\frac{1}{2(x-1)^2}$$ intersect at some $$x$$.</p>\n<p>Hence, statement $$Q$$ is true.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ONozbc970aybf5BT",
@@ -2358,7 +2358,7 @@
     "solution": "<p>$$\\begin{aligned}\n&amp; \\text { Given, } f(x)=\\int_0^x e^{t^2}(t-2)(t-3) d t, x \\in(0, \\infty) \\\\\n&amp; \\Rightarrow \\quad f^{\\prime}(x)=e^{x^2}(x-2)(x-3)\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzvjzngl/55f64bdb-546f-4996-b2b4-98d4ad257ed0/a93f8b50-5b2b-11ef-946b-7ff9f6873b9c/file-jaoe38c1lzvjzngm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzvjzngl/55f64bdb-546f-4996-b2b4-98d4ad257ed0/a93f8b50-5b2b-11ef-946b-7ff9f6873b9c/file-jaoe38c1lzvjzngm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2012 Paper 2 Offline Mathematics - Application of Derivatives Question 82 English Explanation\"></p>\n<p>Here, $$f^{\\prime}(x)$$ changes its sign $$+v e$$ to $$-v e$$ about $$x=2$$ and $$f^{\\prime}(x)$$ changes its sign $$-v \\mathrm{e}$$ to $$+v \\mathrm{e}$$ about $$x=3$$</p>\n<p>Hence, $$x=2$$ is the point of local maxima and $$x=3$$ is the point of local minima</p>\n<p>$$\\because f^{\\prime}(x)&lt;0$$ for $$x \\in(2,3)$$</p>\n<p>$$\\therefore f(x)$$ is decreasing on $$x \\in(2,3)$$</p>\n<p>$$\\because \\quad f^{\\prime}(x)$$ is continuous and differentiable for all $$x(0, \\infty)$$ and $$f^{\\prime}(2)=f^{\\prime}(3)=0$$</p>\n<p>$$\\therefore$$ According to Rolle's theorem, $$f^{\\prime \\prime}(c)=0$$ must have at least one root $$\\in(2,3)$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "iXvsDjZDvJ3Y3hNO",
@@ -2380,7 +2380,7 @@
     "difficulty": "medium",
     "solution": "Given, $$f\\left( x \\right) = \\ln \\left| x \\right| + b{x^2} + ax$$\n<br><br>$$\\therefore$$ $$f'\\left( x \\right) = {1 \\over x} + 2bx + a$$\n<br><br>At $$x=-1,$$  $$f'\\left( x \\right) =  - 1 - 2b + a = 0$$\n<br><br>$$ \\Rightarrow a - 2b = 1\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( i \\right)$$\n<br><br>At $$x=2,$$ $$\\,\\,f'\\left( x \\right) = {1 \\over 2} + 4b + a = 0$$\n<br><br>$$ \\Rightarrow a + 4b =  - {1 \\over 2}\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( {ii} \\right)$$\n<br><br>On solving $$(i)$$ and $$(ii)$$ we get $$a = {1 \\over 2},b =  - {1 \\over 4}$$\n<br><br>Thus, $$f'\\left( x \\right) = {1 \\over x} - {x \\over 2} + {1 \\over 2} = {{2 - {x^2} + x} \\over {2x}}$$\n<br><br>$$ = {{ - {x^2} + x + 2} \\over {2x}} = {{ - \\left( {{x^2} - x - 2} \\right)} \\over {2x}} = {{ - \\left( {x + 1} \\right)\\left( {x - 2} \\right)} \\over {2x}}$$ \n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/ayHUJZspX3w66bt80/DK3gf9rTu0G140miSo2t1wI64SYD8/p4zIQg9KN2LoBD83bCRyAw/image.png\" loading=\"lazy\" alt=\"AIEEE 2012 Mathematics - Application of Derivatives Question 204 English Explanation\">\n<br><br>So maximum at $$x=-1,2$$\n<br><br>Hence both the statements are true and statement $$2$$ is a correct explanation for $$1.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wyiDjCvI5NPRr2DZ",
@@ -2402,7 +2402,7 @@
     "difficulty": "medium",
     "solution": "Equation of a line passing through $$\\left( {{x_1},{y_1}} \\right)$$ having \n<br><br>slope $$m$$ is given by $$y - {y_1} = m\\left( {x - {x_1}} \\right)$$\n<br><br>Since the line $$PQ$$ is passing through $$(1,2)$$ therefore its\n<br><br>equation is \n<br><br>$$\\left( {y - 2} \\right) = m\\left( {x - 1} \\right)$$\n<br><br>where $$m$$ is the slope of the line $$PQ$$. \n<br><br>Now, point $$P\\left( {x,0} \\right)$$ will also satisfy the equation of  $$PQ$$ \n<br><br>$$\\therefore$$ $$y - 2 = m\\left( {x - 1} \\right)$$\n<br><br>$$ \\Rightarrow 0 - 2 = m\\left( {x - 1} \\right)$$\n<br><br>$$ \\Rightarrow  - 2 = m\\left( {x - 1} \\right)$$ \n<br><br>$$ \\Rightarrow x - 1 = {{ - 2} \\over m}$$\n<br><br>$$ \\Rightarrow x = {{ - 2} \\over m} + 1$$\n<br><br>Also, $$OP = \\sqrt {\\left( {x - 0} \\right){}^2 + {{\\left( {0 - 0} \\right)}^2}}  = x = {{ - 2} \\over m} + 1$$\n<br><br>Similarly, point $$Q\\left( {0,y} \\right)$$ will satisfy equation of $$PQ$$ \n<br><br>$$\\therefore$$ $$y - 2 = m\\left( {x - 1} \\right)$$\n<br><br>$$ \\Rightarrow y - 2 = m\\left( { - 1} \\right) \\Rightarrow y = 2 - m$$b \n<br><br>and $$OQ = y = 2 - m$$\n<br><br>Area of $$\\Delta POQ = {1 \\over 2}\\left( {OP} \\right)\\left( {OQ} \\right) = {1 \\over 2}\\left( {1 - {2 \\over m}} \\right)\\left( {2 - m} \\right)$$\n<br><br>( As Area of $$\\Delta  = {1 \\over 2} \\times $$ base $$\\,\\, \\times \\,\\,$$ height )\n<br><br>$$ = {1 \\over 2}\\left[ {2 - m - {4 \\over m} + 2} \\right] = {1 \\over 2}\\left[ {4 - \\left( {m + {4 \\over m}} \\right)} \\right]$$\n<br><br>$$ = 2 - {m \\over 2} - {2 \\over m}$$ \n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/EfrXAd1MDbLRT9be2/x6NbN8Ft6XYlDH0hb83DtHcHjEBaH/Zsrxs3tjjSP5mLdbIuhHgC/image.png\" loading=\"lazy\" alt=\"AIEEE 2012 Mathematics - Application of Derivatives Question 203 English Explanation\">\n<br><br>Let Area $$ = f\\left( m \\right) = 2 - {m \\over 2} - {2 \\over m}$$\n<br><br>Now, $$f'\\left( m \\right) = {{ - 1} \\over 2} + {2 \\over {{m^2}}}$$\n<br><br>Put $$f'\\left( m \\right) = 0$$\n<br><br>$$ \\Rightarrow {m^2} = 4 \\Rightarrow m =  \\pm 2$$\n<br><br>Now, $$f''\\left( m \\right) = {{ - 4} \\over {{m^3}}}$$\n<br><br>$${\\left. {f''\\left( m \\right)} \\right|_{m = 2}} =  - {1 \\over 2} &lt; 0$$\n<br><br>$${\\left. {f''\\left( m \\right)} \\right|_{m =  - 2}} = {1 \\over 2} &gt; 0$$ \n<br><br>Area will be least at  $$m=-2$$\n<br><br>Hence, slope of $$PQ$$ is $$-2.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Lcf95duImInmLqTv",
@@ -2424,7 +2424,7 @@
     "difficulty": "medium",
     "solution": "$$f'\\left( x \\right) = \\sqrt x \\sin x$$\n<br><br>At local maxima or minima, $$f'\\left( x \\right) = 0$$\n<br><br>$$ \\Rightarrow x = 0$$ or $$sin$$ $$x=0$$\n<br><br>$$ \\Rightarrow x = 2\\pi ,\\,\\,\\pi  \\in \\left( {0,{{5\\pi } \\over 2}} \\right)$$ \n<br><br>$$f''\\left( x \\right) = \\sqrt x \\cos \\,x + {1 \\over {2\\sqrt x }}\\sin \\,x$$\n<br><br>$$ = {1 \\over {2\\sqrt x }}\\left( {2x\\,\\cos \\,x + \\sin \\,x} \\right)$$ \n<br><br>At $$x = \\pi ,$$  $$f''\\left( x \\right) &lt; 0$$\n<br><br>Hence, local maxima at $$x = \\pi $$\n<br><br>At $$x = 2\\pi ,\\,\\,\\,f''\\left( x \\right) &gt; 0$$\n<br><br>Hence local minima at $$x = 2\\pi $$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "20SUnhwmW0otvw8z",
@@ -2446,7 +2446,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {k - 2x,\\,\\,\\,\\,if\\,\\,\\,\\,x \\le  - 1}  \\cr \n   {2x + 3,\\,\\,\\,\\,if\\,\\,\\,\\,x &gt;  - 1}  \\cr \n\n } } \\right.$$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/FaWgbomdnKzCuEqWq/XHH7f0JwiPMYdDOOxweMQKJZtV38k/ToIpmRm1GJQmvBLy5N25z6/image.png\" loading=\"lazy\" alt=\"AIEEE 2010 Mathematics - Application of Derivatives Question 209 English Explanation\">\n<br><br>This is true where $$k=-1$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "WAccCVwQ4VUOLsfn",
@@ -2468,7 +2468,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = {1 \\over {{e^x} + 2{e^{ - x}}}} = {{{e^x}} \\over {{e^{2x}} + 2}}$$ \n<br><br>$$f'\\left( x \\right) = {{\\left( {{e^{2x}} + 2} \\right)e{}^x - 2{e^{2x}}.{e^x}} \\over {{{\\left( {{e^{2x}} + 2} \\right)}^2}}}$$\n<br><br>$$f'\\left( x \\right) = 0 \\Rightarrow {e^{2x}} + 2 = 2{e^{2x}}$$\n<br><br>$${e^{2x}} = 2 \\Rightarrow {e^x} = \\sqrt 2 $$\n<br><br>maximum $$f\\left( x \\right) = {{\\sqrt 2 } \\over 4} = {1 \\over {2\\sqrt 2 }}$$\n<br><br>$$0 &lt; f\\left( x \\right) \\le {1 \\over {2\\sqrt 2 }}\\,\\,\\forall x \\in R$$\n<br><br>Since $$0 &lt; {1 \\over 3} &lt; {1 \\over {2\\sqrt 2 }} \\Rightarrow $$ for some $$c \\in R$$\n<br><br>$$f\\left( c \\right) = {1 \\over 3}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "AZourzF511oK5JrI",
@@ -2526,7 +2526,7 @@
     "difficulty": "medium",
     "solution": "We have $$P\\left( x \\right) = {x^4} + a{x^3} + b{x^2} + cx + d$$\n<br><br>$$ \\Rightarrow P'\\left( x \\right) = 4\\,{x^3} + 3a{x^2} + 2bx + c$$\n<br><br>But $$P'\\left( 0 \\right) = 0 \\Rightarrow c = 0$$\n<br><br>$$\\therefore$$ $$P\\left( x \\right) = {x^4} + a{x^3} + b{x^2} + d$$\n<br><br>As given that $$P\\left( { - 1} \\right) &lt; P\\left( a \\right)$$\n<br><br>$$ \\Rightarrow 1 - a + b + d\\,\\, &lt; \\,\\,1 + a + b + d \\Rightarrow a &gt; 0$$\n<br><br>Now $$P'\\left( x \\right) = 4{x^3} + 3a{x^2} + 2bx = x\\left( {4{x^2} + 3ax + 2b} \\right)$$\n<br><br>As $$P'\\left( x \\right) = 0,$$ there is only one solution $$x = 0,$$\n<br><br>therefore $$4{x^2} + 3ax + 2b = 0$$  should not have any real roots i.e. $$D &lt; 0$$\n<br><br>$$ \\Rightarrow 9{a^2} - 32b &lt; 0$$ \n<br><br>$$ \\Rightarrow b &gt; {{9{a^2}} \\over {32}} &gt; 0$$\n<br><br>Hence $$a,b &gt; 0 \\Rightarrow P'\\left( x \\right) = 4{x^3} + 3a{x^2} + 2bx &gt; 0$$\n<br><br>$$\\forall x &gt; 0$$\n<br><br>$$\\therefore$$ $$P(x)$$ is an increasing function on $$\\left( {0,1} \\right)$$\n<br><br>$$\\therefore$$ $$P\\left( 0 \\right) &lt; P\\left( a \\right)$$\n<br><br>Similarly we can prove $$P\\left( x \\right)$$ is decreasing on $$\\left( { - 1,0} \\right)$$\n<br><br>$$\\therefore$$ $$P\\left( { - 1} \\right) &gt; P\\left( 0 \\right)$$\n<br><br>So we can conclude that\n<br><br>Max $$P\\left( x \\right) = P\\left( 1 \\right)$$ and Min $$P\\left( x \\right) = P\\left( 0 \\right)$$ \n<br><br>$$ \\Rightarrow P\\left( { - 1} \\right)$$ is not minimum but $$P\\left( 1 \\right)$$ is the maximum of $$P.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfw8n3oe",
@@ -2549,7 +2549,7 @@
     "solution": "<p>Given that, $$f(x) = \\left\\{ {\\matrix{\n   {{{(2 + x)}^3},} & { - 3 < x \\le  - 1}  \\cr \n   {{x^{2/3}},} & { - 1 < x < 2}  \\cr \n\n } } \\right.$$</p>\n<p>$$f'(x) = \\left\\{ {\\matrix{\n   {3{{(2 + x)}^2},} & { - 3 < x <  - 1}  \\cr \n   {{2 \\over 3}{x^{{{ - 1} \\over 3}}},} & { - 1 < x < 2}  \\cr \n\n } } \\right.$$</p>\n<p>Clearly, $$f'(x)$$ changes signs from positive to negative as x passes through x $$=-1$$</p>\n<p>$$f'(x) < 0$$ for all $$x\\in(-3,-1)$$</p>\n<p>Also, $$f'(x)>0$$ for all $$x\\in$$</p>\n<p>$$f'(x) < 0$$ for all $$x\\in(-1,0)$$</p>\n<p>But $$f'(0)$$ does not exist</p>\n<p>So, $$f(x)$$ attains a local minimum at x = 0</p>\n<p>Hence, the total number of local maxima and local minima is 2.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "U4dcftyIinHNo7sg",
@@ -2571,7 +2571,7 @@
     "difficulty": "medium",
     "solution": "Let $$y = {x^3} - px + q$$\n<br><br>$$ \\Rightarrow {{dy} \\over {dx}} = 3{x^2} - p$$\n<br><br>For $${{dy} \\over {dx}} = 0 \\Rightarrow 3{x^2} - p = 0$$\n<br><br>$$ \\Rightarrow x =  \\pm \\sqrt {{p \\over 3}} $$\n<br><br>$${{{d^2}y} \\over {d{x^2}}} = 6x$$\n<br><br>$${\\left. {{{{d^2}y} \\over {d{x^2}}}} \\right|_{x = \\sqrt {{p \\over 3}} }} =  + ve\\,\\,\\,\\,$$ and \n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $${\\left. {\\,\\,\\,{{{d^2}y} \\over {d{x^2}}}} \\right|_{x =  - \\sqrt {{p \\over 3}} }} =  - ve$$\n<br><br>$$\\therefore$$ $$y$$ has ninima at $$x = \\sqrt {{p \\over 3}} $$ \n<br><br>and maxima at $$x =  - \\sqrt {{p \\over 3}} $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "SOofWOrrmqiZbPr1",
@@ -2593,7 +2593,7 @@
     "difficulty": "easy",
     "solution": "Given that $${p^2} + {q^2} = 1$$ \n<br><br>$$\\therefore$$ $$p = \\cos \\theta $$ and $$q = \\sin \\theta $$\n<br><br>Then $$p+q$$ $$ = \\cos \\theta  + \\sin \\theta $$\n<br><br>We know that\n<br><br>$$ - \\sqrt {{a^2} + {b^2}}  \\le a\\cos \\theta  + b\\sin \\theta  \\le \\sqrt {{a^2} + {b^2}} $$\n<br><br>$$\\therefore$$ $$ - \\sqrt 2  \\le \\cos \\theta  + \\sin \\theta  \\le \\sqrt 2 $$\n<br><br>Hence max. value of $$p + q$$ is $$\\sqrt 2 $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mguoq660",
@@ -2616,7 +2616,7 @@
     "solution": "<p>Since, $f(x)$ has local maxima at $x=-1$</p>\n<p>and $f^{\\prime}(x)$ has local maxima at $x=0$</p>\n<p>and we know if $f(x)$ has local maxima then $f^{\\prime \\prime}(x)&lt;0$</p>\n<p>also $f^{\\prime}(x)$ has local maxima then $f^{\\prime \\prime}(x)=0$</p>\n<p>So, Let us assume $f^{\\prime \\prime}(x)=\\lambda x$</p>\n<p>$$ \\begin{array}{r} (\\because \\lambda x=0 \\text { at } x=0 \\text { and } \\\\ \\lambda x&lt;0 \\text { at } x=-1) \\end{array} $$</p>\n<p>$$ \\begin{aligned} &amp; \\Rightarrow \\quad f^{\\prime}(x)=\\lambda \\frac{x^2}{2}+c \\\\ &amp; \\text { As } \\quad f^{\\prime}(-1)=0 \\\\ &amp; \\Rightarrow \\quad \\frac{\\lambda}{2}=-c \\Rightarrow \\quad \\lambda=-2 c \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(i)\\end{aligned} $$</p>\n<p>Again integrating $f^{\\prime}(x)$, we have</p>\n<p>$$ f(x)=\\frac{\\lambda x^3}{6}+c x+d $$</p>\n<p>Since $\\quad f(2)=18$ and $f(1)=-1$</p>\n<p>$$ \\lambda\\left(\\frac{8}{6}\\right)+2 c+d=18 \\text { and } \\frac{\\lambda}{6}+c+d=-1 $$</p>\n<p>Use $\\quad \\lambda=-2 c$ in above equations.</p>\n<p>$$ \\Rightarrow-2 c \\times \\frac{4}{3}+2 c+d=18 \\text { and } \\frac{-2 c}{6}+c+d=-1 $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgujwcnx/aec25e43-8bd7-4d8d-98c1-2eeb2326a561/3245dcd0-ab2e-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgujwcny.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgujwcnx/aec25e43-8bd7-4d8d-98c1-2eeb2326a561/3245dcd0-ab2e-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgujwcny.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Application of Derivatives Question 4 English Explanation\"></p>\n<p>$$ \\begin{aligned} &amp;\\begin{aligned} \\Rightarrow &amp; -2 c+3 d=54 \\text { and } 4 c+6 d=-6 \\text { or } \\\\ &amp; 2 c+3 d=-3 \\end{aligned}\\\\ &amp;\\text { Adding above equation. }\\\\ &amp;\\begin{aligned} 6 d &amp; =51 \\Rightarrow d=\\frac{17}{2} \\\\ \\text { and } c &amp; =\\frac{54-3 d}{-2}=\\frac{-57}{4} \\\\ \\lambda &amp; =-2 c \\\\ &amp; =\\frac{57}{2} \\\\ \\therefore \\quad f(x) &amp; =\\frac{57}{2} \\times \\frac{x^3}{6}-\\frac{57}{4} x+\\frac{17}{2} \\\\ f(x) &amp; =\\frac{1}{4}\\left(19 x^3-57 x+34\\right) \\\\ f^{\\prime}(x) &amp; =\\frac{1}{4}\\left(57 x^2-57\\right) \\end{aligned} \\end{aligned} $$</p>\n<p>for $\\max$ or $\\min \\frac{57 x^2-57}{4}=0$</p>\n<p>$$ x^2-1=0 \\quad \\Rightarrow \\quad x= \\pm 1 $$</p>\n<p>$\\therefore \\quad$ Critical points are $x=-1$ and $x=1$</p>\n<p>Now, $f^{\\prime \\prime}(x)=\\frac{114 x}{4}$</p>\n<p>$f^{\\prime \\prime}(-1)&lt;0 \\Rightarrow$ At $x=-1 f(x)$ is maximum</p>\n<p>$f^{\\prime \\prime}(1)&gt;0 \\Rightarrow$ At $x=1 \\quad f(x)$ is minimum</p>\n<p>And $f(x)$ is increasing for $x&gt;1$</p>\n<p>Therefore $f(x)$ is increasing for $x \\in[1,2 \\sqrt{5}]$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mguoq69j",
@@ -2639,7 +2639,7 @@
     "solution": "<p>$$ \\begin{aligned} g(x) &amp; =\\int_0^x f(t) d t \\quad x \\in[1,3] \\\\ \\therefore &amp; g^{\\prime}(x)=f(x)=\\left\\{\\begin{array}{cc} e^x &amp; 0 \\leq x \\leq 1 \\\\ 2-e^{x-1} &amp; 1 &lt; x \\leq 2 \\\\ x-e &amp; 2 &lt; x \\leq 3 \\end{array}\\right. \\end{aligned} $$</p>\n<p>$$ \\begin{aligned} &amp;\\text { Now, calculating critical points }\\\\ &amp;\\begin{aligned} g^{\\prime}(x) &amp; =0 \\\\ \\text { i.e, } \\quad e^x &amp; =0,2-e^{x-1}=0, \\text { and } x-e=0 \\end{aligned} \\end{aligned} $$</p>\n<p>$$ \\Rightarrow \\quad x=-\\infty, 2=e^{x-1} \\text { and } x=e $$</p>\n<p>$$ \\begin{aligned} \\ln 2 &amp; =(x-1) \\ln e \\\\ x-1 &amp; =\\ln 2 \\\\ x &amp; =1+\\ln 2 \\end{aligned} $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mguk6zz8/a6aeabd0-3449-4133-aba4-5f63b1e470d9/5a5fb640-ab2f-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mguk6zza.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mguk6zz8/a6aeabd0-3449-4133-aba4-5f63b1e470d9/5a5fb640-ab2f-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mguk6zza.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Application of Derivatives Question 3 English Explanation\">Therefore, critical points</p>\n<p>$$ \\begin{aligned} x &amp; =1+\\ln 2 \\text { and } x=e \\\\ g^{\\prime \\prime}(1+\\ln 2) &amp; =-e^{\\ln 2}&lt;0 \\\\ \\Rightarrow \\quad g(x) \\text { is maximum at } x &amp; =1+\\ln 2 \\\\ g^{\\prime \\prime}(e) &amp; =1&gt;0 \\\\ \\Rightarrow \\quad g(x) \\text { is minimum at } x &amp; =e \\end{aligned} $$</p>\n<p>Since, from graph $f(x)$ is discontinuous at $x=1$</p>\n<p>Then we get local max at $x=1$ and</p>\n<p>Local minima at $x=2$.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mguoq660",
@@ -2662,7 +2662,7 @@
     "solution": "<p>Since, $f(x)$ has local maxima at $x=-1$</p>\n<p>and $f^{\\prime}(x)$ has local maxima at $x=0$</p>\n<p>and we know if $f(x)$ has local maxima then $f^{\\prime \\prime}(x)&lt;0$</p>\n<p>also $f^{\\prime}(x)$ has local maxima then $f^{\\prime \\prime}(x)=0$</p>\n<p>So, Let us assume $f^{\\prime \\prime}(x)=\\lambda x$</p>\n<p>$$ \\begin{array}{r} (\\because \\lambda x=0 \\text { at } x=0 \\text { and } \\\\ \\lambda x&lt;0 \\text { at } x=-1) \\end{array} $$</p>\n<p>$$ \\begin{aligned} &amp; \\Rightarrow \\quad f^{\\prime}(x)=\\lambda \\frac{x^2}{2}+c \\\\ &amp; \\text { As } \\quad f^{\\prime}(-1)=0 \\\\ &amp; \\Rightarrow \\quad \\frac{\\lambda}{2}=-c \\Rightarrow \\quad \\lambda=-2 c \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(i)\\end{aligned} $$</p>\n<p>Again integrating $f^{\\prime}(x)$, we have</p>\n<p>$$ f(x)=\\frac{\\lambda x^3}{6}+c x+d $$</p>\n<p>Since $\\quad f(2)=18$ and $f(1)=-1$</p>\n<p>$$ \\lambda\\left(\\frac{8}{6}\\right)+2 c+d=18 \\text { and } \\frac{\\lambda}{6}+c+d=-1 $$</p>\n<p>Use $\\quad \\lambda=-2 c$ in above equations.</p>\n<p>$$ \\Rightarrow-2 c \\times \\frac{4}{3}+2 c+d=18 \\text { and } \\frac{-2 c}{6}+c+d=-1 $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgujwcnx/aec25e43-8bd7-4d8d-98c1-2eeb2326a561/3245dcd0-ab2e-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgujwcny.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgujwcnx/aec25e43-8bd7-4d8d-98c1-2eeb2326a561/3245dcd0-ab2e-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgujwcny.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Application of Derivatives Question 4 English Explanation\"></p>\n<p>$$ \\begin{aligned} &amp;\\begin{aligned} \\Rightarrow &amp; -2 c+3 d=54 \\text { and } 4 c+6 d=-6 \\text { or } \\\\ &amp; 2 c+3 d=-3 \\end{aligned}\\\\ &amp;\\text { Adding above equation. }\\\\ &amp;\\begin{aligned} 6 d &amp; =51 \\Rightarrow d=\\frac{17}{2} \\\\ \\text { and } c &amp; =\\frac{54-3 d}{-2}=\\frac{-57}{4} \\\\ \\lambda &amp; =-2 c \\\\ &amp; =\\frac{57}{2} \\\\ \\therefore \\quad f(x) &amp; =\\frac{57}{2} \\times \\frac{x^3}{6}-\\frac{57}{4} x+\\frac{17}{2} \\\\ f(x) &amp; =\\frac{1}{4}\\left(19 x^3-57 x+34\\right) \\\\ f^{\\prime}(x) &amp; =\\frac{1}{4}\\left(57 x^2-57\\right) \\end{aligned} \\end{aligned} $$</p>\n<p>for $\\max$ or $\\min \\frac{57 x^2-57}{4}=0$</p>\n<p>$$ x^2-1=0 \\quad \\Rightarrow \\quad x= \\pm 1 $$</p>\n<p>$\\therefore \\quad$ Critical points are $x=-1$ and $x=1$</p>\n<p>Now, $f^{\\prime \\prime}(x)=\\frac{114 x}{4}$</p>\n<p>$f^{\\prime \\prime}(-1)&lt;0 \\Rightarrow$ At $x=-1 f(x)$ is maximum</p>\n<p>$f^{\\prime \\prime}(1)&gt;0 \\Rightarrow$ At $x=1 \\quad f(x)$ is minimum</p>\n<p>And $f(x)$ is increasing for $x&gt;1$</p>\n<p>Therefore $f(x)$ is increasing for $x \\in[1,2 \\sqrt{5}]$</p>",
     "section": "Sec 4",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mguoq69j",
@@ -2685,7 +2685,7 @@
     "solution": "<p>$$ \\begin{aligned} g(x) &amp; =\\int_0^x f(t) d t \\quad x \\in[1,3] \\\\ \\therefore &amp; g^{\\prime}(x)=f(x)=\\left\\{\\begin{array}{cc} e^x &amp; 0 \\leq x \\leq 1 \\\\ 2-e^{x-1} &amp; 1 &lt; x \\leq 2 \\\\ x-e &amp; 2 &lt; x \\leq 3 \\end{array}\\right. \\end{aligned} $$</p>\n<p>$$ \\begin{aligned} &amp;\\text { Now, calculating critical points }\\\\ &amp;\\begin{aligned} g^{\\prime}(x) &amp; =0 \\\\ \\text { i.e, } \\quad e^x &amp; =0,2-e^{x-1}=0, \\text { and } x-e=0 \\end{aligned} \\end{aligned} $$</p>\n<p>$$ \\Rightarrow \\quad x=-\\infty, 2=e^{x-1} \\text { and } x=e $$</p>\n<p>$$ \\begin{aligned} \\ln 2 &amp; =(x-1) \\ln e \\\\ x-1 &amp; =\\ln 2 \\\\ x &amp; =1+\\ln 2 \\end{aligned} $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mguk6zz8/a6aeabd0-3449-4133-aba4-5f63b1e470d9/5a5fb640-ab2f-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mguk6zza.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mguk6zz8/a6aeabd0-3449-4133-aba4-5f63b1e470d9/5a5fb640-ab2f-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mguk6zza.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Application of Derivatives Question 3 English Explanation\">Therefore, critical points</p>\n<p>$$ \\begin{aligned} x &amp; =1+\\ln 2 \\text { and } x=e \\\\ g^{\\prime \\prime}(1+\\ln 2) &amp; =-e^{\\ln 2}&lt;0 \\\\ \\Rightarrow \\quad g(x) \\text { is maximum at } x &amp; =1+\\ln 2 \\\\ g^{\\prime \\prime}(e) &amp; =1&gt;0 \\\\ \\Rightarrow \\quad g(x) \\text { is minimum at } x &amp; =e \\end{aligned} $$</p>\n<p>Since, from graph $f(x)$ is discontinuous at $x=1$</p>\n<p>Then we get local max at $x=1$ and</p>\n<p>Local minima at $x=2$.</p>",
     "section": "Sec 4",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mguoq70a",
@@ -2703,7 +2703,7 @@
     "solution": "<p>$$ \\begin{aligned} &amp; \\quad g(x)=\\left(f^{\\prime}(x)\\right)^2+f^{\\prime \\prime}(x) f(x) \\\\ &amp; \\Rightarrow \\quad \\frac{d}{d x}\\left[f^{\\prime}(x) \\cdot f(x)\\right]=\\left[f^{\\prime}(x)\\right]^2+f^{\\prime \\prime}(x) f(x) \\\\ &amp; \\Rightarrow \\quad g(x)=\\frac{d}{d x}\\left[f^{\\prime}(x) \\cdot f(x)\\right] \\\\ &amp; \\text { Let, } \\quad h(x)=f^{\\prime}(x) f(x) \\end{aligned} $$</p>\n<p>Now, estimate graph of $f(x)$</p>\n<p>From given data.</p>\n<p>$$ \\begin{aligned} &amp; f(a)=0 \\\\ &amp; f(b)=2 \\\\ &amp; f(c)=-1 \\\\ &amp; f(d)=2 \\\\ &amp; f(e)=0 \\end{aligned} $$</p>\n<p></p><p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgum70w6/1980f1ec-ff66-42b6-97ff-beea8140c609/2d56ce60-ab37-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgum70w7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgum70w6/1980f1ec-ff66-42b6-97ff-beea8140c609/2d56ce60-ab37-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgum70w7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Application of Derivatives Question 2 English Explanation 1\">Also  a &lt; b &lt; c &lt; d &lt; e </p>\n<p>$\\Rightarrow f(x)$ has minimum four zeros (as the graph intersecting $x$-axis 4 times) \n\n<br><br>There must be there critical points \n\n<br><br>Where $f^{\\prime}(x)=0$ (from graph) \n\n<br><br>Therefore, $h(x)$ must have 7 minimum solutions.</p>\n<p>Now, $g(x)=h^{\\prime}(x)$ must have 6 minimum zeroes.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgum724a/61344a8a-fcc2-4329-b832-37abe79b3fc6/2e491da0-ab37-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgum724b.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgum724a/61344a8a-fcc2-4329-b832-37abe79b3fc6/2e491da0-ab37-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgum724b.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Application of Derivatives Question 2 English Explanation 2\"></p>",
     "section": "Sec 4",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1lgcjr6do",
@@ -2721,7 +2721,7 @@
     "solution": "<p>$$\\begin{aligned}\n&amp; g(x)=\\left(f^{\\prime}(x)\\right)^{2}+f^{\\prime \\prime}(x) f(x) \\\\\n&amp; \\Rightarrow \\frac{d}{d x}\\left[f^{\\prime}(x) \\cdot f(x)\\right]=\\left[f^{\\prime}(x)\\right]^{2}+f^{\\prime \\prime}(x) f(x) \\\\\n&amp; \\Rightarrow \\quad g(x)=\\frac{d}{d x}\\left[f^{\\prime}(x) \\cdot f(x)\\right] \\\\\n&amp; \\text { Let, } \\quad h(x)=f^{\\prime}(x) f(x) \\\\\n&amp; \\text { Now, estimate graph of } f(x) \\\\\n&amp; \\text { From given data. } \\\\\n&amp; f(a)=0 \\\\\n&amp; f(b)=2 \\\\\n&amp; f(c)=-1 \\\\\n&amp; f(d)=2 \\\\\n&amp; f(e)=0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgw2njwv/90075744-9a6f-4407-89b8-e99bc5b7d43a/53b19900-ac04-11f0-8a1c-9d7c30004676/file-jaoe38c1mgw2njww.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgw2njwv/90075744-9a6f-4407-89b8-e99bc5b7d43a/53b19900-ac04-11f0-8a1c-9d7c30004676/file-jaoe38c1mgw2njww.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Application of Derivatives Question 10 English Explanation 1\"></p>\n<p>Also $$a &lt; b &lt; c &lt; d &lt; e$$</p>\n<p>$$\\Rightarrow f(x)$$ has minimum four zeros (as the graph intersecting $$x$$-axis 4 times)</p>\n<p>There must be there critical points</p>\n<p>Where $$f'(x)=0$$ (from graph)</p>\n<p>Therefore, $$h(x)$$ must have 7 minimum solutions.</p>\n<p>Now, $$g(x)=h'(x)$$ must have 6 minimum zeroes.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgw2o9vf/5e4445b8-3551-4ab6-a04a-d3cffb0e536d/67bf1cb0-ac04-11f0-8a1c-9d7c30004676/file-jaoe38c1mgw2o9vg.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgw2o9vf/5e4445b8-3551-4ab6-a04a-d3cffb0e536d/67bf1cb0-ac04-11f0-8a1c-9d7c30004676/file-jaoe38c1mgw2o9vg.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Application of Derivatives Question 10 English Explanation 2\"></p>",
     "section": "Sec 4",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "AEdU5WTln3rLzwom",
@@ -2743,7 +2743,7 @@
     "difficulty": "easy",
     "solution": "Area $$ = {1 \\over 2}{x^2}\\,\\sin \\,\\theta $$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/AkGzSBMXPDNzRngUd/MjjVwUThrBkHyN21zppolrNNDnitr/Gal4s2TEIPG1quQEFXunyN/image.png\" loading=\"lazy\" alt=\"AIEEE 2006 Mathematics - Application of Derivatives Question 217 English Explanation\">\n<br><br>Maximum value of $$\\sin \\theta $$ is $$1$$ at $$\\theta  = {\\pi  \\over 2}$$\n<br><br>$${A_{\\max }} = {1 \\over 2}{x^2}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "BPl54gj84e83x2jD",
@@ -2765,7 +2765,7 @@
     "difficulty": "easy",
     "solution": "$$f\\left( x \\right) = {x \\over 2} + {2 \\over x} \\Rightarrow f'\\left( x \\right) = {1 \\over 2} - {2 \\over {{x^2}}} = 0$$ \n<br><br>$$ \\Rightarrow {x^2} = 4$$ or $$x=2,-2;$$ $$\\,\\,\\,\\,\\,f''\\left( x \\right) = {4 \\over {{x^3}}}$$\n<br><br>$$f''{\\left. {\\left( x \\right)} \\right]_{x = 2}} =  + ve \\Rightarrow f\\left( x \\right)$$ \n<br><br>has local min at $$x=2.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "AEdU5WTln3rLzwom",
@@ -2787,7 +2787,7 @@
     "difficulty": "easy",
     "solution": "Area $$ = {1 \\over 2}{x^2}\\,\\sin \\,\\theta $$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/AkGzSBMXPDNzRngUd/MjjVwUThrBkHyN21zppolrNNDnitr/Gal4s2TEIPG1quQEFXunyN/image.png\" loading=\"lazy\" alt=\"AIEEE 2006 Mathematics - Application of Derivatives Question 217 English Explanation\">\n<br><br>Maximum value of $$\\sin \\theta $$ is $$1$$ at $$\\theta  = {\\pi  \\over 2}$$\n<br><br>$${A_{\\max }} = {1 \\over 2}{x^2}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "BPl54gj84e83x2jD",
@@ -2809,7 +2809,7 @@
     "difficulty": "easy",
     "solution": "$$f\\left( x \\right) = {x \\over 2} + {2 \\over x} \\Rightarrow f'\\left( x \\right) = {1 \\over 2} - {2 \\over {{x^2}}} = 0$$ \n<br><br>$$ \\Rightarrow {x^2} = 4$$ or $$x=2,-2;$$ $$\\,\\,\\,\\,\\,f''\\left( x \\right) = {4 \\over {{x^3}}}$$\n<br><br>$$f''{\\left. {\\left( x \\right)} \\right]_{x = 2}} =  + ve \\Rightarrow f\\left( x \\right)$$ \n<br><br>has local min at $$x=2.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgfaw6wq",
@@ -2832,7 +2832,7 @@
     "solution": "<p>Let the polynomial be $$p(x) = a{x^3} + b{x^2} + cx + d$$.</p>\n<p>We know $$p(-1) = 10$$. So, $$-a + b - c + d = 10$$.</p>\n<p>We also know $$p(1) = -6$$. So, $$a + b + c + d = -6$$.</p>\n<p>It is given that $$p(x)$$ has a maximum at $$x = -1$$. For a maximum or minimum, the first derivative is zero: $$p'(-1) = 0$$.</p>\n<p>First, find the derivative: $$p'(x) = 3a{x^2} + 2bx + c$$.</p>\n<p>Plug in $$x = -1$$ in the derivative: $$3a(-1)^2 + 2b(-1) + c = 0$$, which means $$3a - 2b + c = 0$$.</p>\n<p>It is given that $$p'(x)$$ has a minimum at $$x = 1$$. For a minimum or maximum of the derivative, the second derivative is zero: $$p''(1) = 0$$.</p>\n<p>Find the second derivative: $$p''(x) = 6a x + 2b$$.</p>\n<p>Plug in $$x = 1$$: $$6a(1) + 2b = 0$$, which gives $$6a + 2b = 0$$.</p>\n<p>Now, we have four equations:<br>\n\n1) $$-a + b - c + d = 10$$ <br>\n\n2) $$a + b + c + d = -6$$<br>\n\n3) $$3a - 2b + c = 0$$<br>\n\n4) $$6a + 2b = 0$$\n\n</p>\n<p>Solving these equations, we find: <br>\n\n$$a = 1$$, $$b = -3$$, $$c = -9$$, $$d = 5$$\n\n</p>\n<p>So the polynomial is $$p(x) = x^3 - 3x^2 - 9x + 5$$.</p>\n<p>Find where $$p'(x) = 0$$ (for local maximum and minimum points). <br>\n\n$$p'(x) = 3x^2 - 6x - 9$$</p>\n<p>Set this equal to zero: $$3x^2 - 6x - 9 = 0$$</p>\n<p>Divide both sides by 3: $$x^2 - 2x - 3 = 0$$</p>\n<p>Factorize: $$(x + 1)(x - 3) = 0$$</p>\n<p>So $$x = -1$$ and $$x = 3$$.</p>\n<p>At $$x = -1$$, we have a maximum and at $$x = 3$$, we have a minimum.</p>\n<p>Calculate the points: <br>\n\nAt $$x = -1$$, $$p(-1) = 10$$, so the point is $$(-1, 10)$$.<br>\n\nAt $$x = 3$$, $$p(3) = (3)^3 - 3(3)^2 - 9 \\times 3 + 5 = 27 - 27 - 27 + 5 = -22$$, so the point is $$(3, -22)$$.\n\n</p>\n<p>The distance between these two points is: <br>\n\n$$\\sqrt{(3 - (-1))^2 + ((-22) - 10)^2}$$</p>\n<p>$$= \\sqrt{(4)^2 + (-32)^2}$$</p>\n<p>$$= \\sqrt{16 + 1024} = \\sqrt{1040} = 4\\sqrt{65}$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgfaw6wq",
@@ -2855,7 +2855,7 @@
     "solution": "<p>Let the polynomial be $$p(x) = a{x^3} + b{x^2} + cx + d$$.</p>\n<p>We know $$p(-1) = 10$$. So, $$-a + b - c + d = 10$$.</p>\n<p>We also know $$p(1) = -6$$. So, $$a + b + c + d = -6$$.</p>\n<p>It is given that $$p(x)$$ has a maximum at $$x = -1$$. For a maximum or minimum, the first derivative is zero: $$p'(-1) = 0$$.</p>\n<p>First, find the derivative: $$p'(x) = 3a{x^2} + 2bx + c$$.</p>\n<p>Plug in $$x = -1$$ in the derivative: $$3a(-1)^2 + 2b(-1) + c = 0$$, which means $$3a - 2b + c = 0$$.</p>\n<p>It is given that $$p'(x)$$ has a minimum at $$x = 1$$. For a minimum or maximum of the derivative, the second derivative is zero: $$p''(1) = 0$$.</p>\n<p>Find the second derivative: $$p''(x) = 6a x + 2b$$.</p>\n<p>Plug in $$x = 1$$: $$6a(1) + 2b = 0$$, which gives $$6a + 2b = 0$$.</p>\n<p>Now, we have four equations:<br>\n\n1) $$-a + b - c + d = 10$$ <br>\n\n2) $$a + b + c + d = -6$$<br>\n\n3) $$3a - 2b + c = 0$$<br>\n\n4) $$6a + 2b = 0$$\n\n</p>\n<p>Solving these equations, we find: <br>\n\n$$a = 1$$, $$b = -3$$, $$c = -9$$, $$d = 5$$\n\n</p>\n<p>So the polynomial is $$p(x) = x^3 - 3x^2 - 9x + 5$$.</p>\n<p>Find where $$p'(x) = 0$$ (for local maximum and minimum points). <br>\n\n$$p'(x) = 3x^2 - 6x - 9$$</p>\n<p>Set this equal to zero: $$3x^2 - 6x - 9 = 0$$</p>\n<p>Divide both sides by 3: $$x^2 - 2x - 3 = 0$$</p>\n<p>Factorize: $$(x + 1)(x - 3) = 0$$</p>\n<p>So $$x = -1$$ and $$x = 3$$.</p>\n<p>At $$x = -1$$, we have a maximum and at $$x = 3$$, we have a minimum.</p>\n<p>Calculate the points: <br>\n\nAt $$x = -1$$, $$p(-1) = 10$$, so the point is $$(-1, 10)$$.<br>\n\nAt $$x = 3$$, $$p(3) = (3)^3 - 3(3)^2 - 9 \\times 3 + 5 = 27 - 27 - 27 + 5 = -22$$, so the point is $$(3, -22)$$.\n\n</p>\n<p>The distance between these two points is: <br>\n\n$$\\sqrt{(3 - (-1))^2 + ((-22) - 10)^2}$$</p>\n<p>$$= \\sqrt{(4)^2 + (-32)^2}$$</p>\n<p>$$= \\sqrt{16 + 1024} = \\sqrt{1040} = 4\\sqrt{65}$$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "2tGr74lgODUL42wb",
@@ -2877,7 +2877,7 @@
     "difficulty": "medium",
     "solution": "Area of rectangle $$ABCD$$ $$ = 2a\\,\\cos \\,\\theta $$\n<br><br>$$\\left( {2b\\,\\sin \\,\\theta } \\right) = 2ab\\,\\sin \\,2\\theta $$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/PGCW3lDwFCxsPE6Hp/P3sclLK43NAq1COgOK9IRuSE8HwoY/VyIzdO9hLWTrsFUOLTPk7l/image.png\" loading=\"lazy\" alt=\"AIEEE 2005 Mathematics - Application of Derivatives Question 222 English Explanation\">\n<br><br>$$ \\Rightarrow $$ Area of greatest rectangle is equal to  $$2ab$$\n<br><br>When $$\\sin \\,2\\theta  = 1.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mM353u3qL1EToDRE",
@@ -2899,7 +2899,7 @@
     "difficulty": "easy",
     "solution": "$$f(x) = y = x + {1 \\over x}$$ or $${{dy} \\over {dx}} = 1 - {1 \\over {{x^2}}}$$\n<br><br>For max. or min, $$1 - {1 \\over {{x^2}}} = 0 \\Rightarrow x =  \\pm 1$$\n<br><br>$${{{d^2}y} \\over {d{x^2}}} = {2 \\over {{x^3}}} $$\n<br/><br/>$$ {\\left( {{{{d^2}y} \\over {d{x^2}}}} \\right)_{x = 1}} = 2$$  ($$+ve$$) \n<br><br>$$\\therefore$$ f(x) will be minima at $$x=1$$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "xIrzYEUCC29YS3QC",
@@ -2921,7 +2921,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = 2{x^3} - 9a{x^2} + 12{a^2}x + 1$$\n<br><br>$$f'\\left( x \\right) = 6{x^2} - 18ax + 12{a^2};$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,f''\\left( x \\right) = 12x - 18a$$\n<br><br>For max. or min.\n<br><br>$$6{x^2} - 18ax + 12{a^2} = 0$$\n<br><br>$$ \\Rightarrow {x^2} - 3ax + 2{a^2} = 0$$\n<br><br>$$ \\Rightarrow x = a$$ or $$x=2a.$$ \n<br><br>At $$x=a$$\n<br><br>$$f''(a) = 12a - 18a = -6a &lt; 0$$\n<br><br>At $$x=a$$ maximum As f''($$a$$) &lt; 0.\n<br><br>At $$x=2a$$\n<br><br>$$f''(a) = 24a - 18a = 6a &gt; 0$$\n<br><br>At $$x=2a$$ minimum As f''(2$$a$$) &gt; 0.\n<br><br>$$\\therefore$$ $$p=a$$ and $$q=2a$$ \n<br><br>As per question $${p^2} = q$$\n<br><br>$$\\therefore$$ $${a^2} = 2a $$\n<br><br>$$ \\Rightarrow $$ $$a(a - 2) = 0$$\n<br><br>$$ \\therefore $$ $$a$$ = 0, 2\n<br><br>but $$a &gt; 0,$$ therefore, $$a=2.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mM353u3qL1EToDRE",
@@ -2943,7 +2943,7 @@
     "difficulty": "easy",
     "solution": "$$f(x) = y = x + {1 \\over x}$$ or $${{dy} \\over {dx}} = 1 - {1 \\over {{x^2}}}$$\n<br><br>For max. or min, $$1 - {1 \\over {{x^2}}} = 0 \\Rightarrow x =  \\pm 1$$\n<br><br>$${{{d^2}y} \\over {d{x^2}}} = {2 \\over {{x^3}}} $$\n<br/><br/>$$ {\\left( {{{{d^2}y} \\over {d{x^2}}}} \\right)_{x = 1}} = 2$$  ($$+ve$$) \n<br><br>$$\\therefore$$ f(x) will be minima at $$x=1$$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "xIrzYEUCC29YS3QC",
@@ -2965,7 +2965,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = 2{x^3} - 9a{x^2} + 12{a^2}x + 1$$\n<br><br>$$f'\\left( x \\right) = 6{x^2} - 18ax + 12{a^2};$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,f''\\left( x \\right) = 12x - 18a$$\n<br><br>For max. or min.\n<br><br>$$6{x^2} - 18ax + 12{a^2} = 0$$\n<br><br>$$ \\Rightarrow {x^2} - 3ax + 2{a^2} = 0$$\n<br><br>$$ \\Rightarrow x = a$$ or $$x=2a.$$ \n<br><br>At $$x=a$$\n<br><br>$$f''(a) = 12a - 18a = -6a &lt; 0$$\n<br><br>At $$x=a$$ maximum As f''($$a$$) &lt; 0.\n<br><br>At $$x=2a$$\n<br><br>$$f''(a) = 24a - 18a = 6a &gt; 0$$\n<br><br>At $$x=2a$$ minimum As f''(2$$a$$) &gt; 0.\n<br><br>$$\\therefore$$ $$p=a$$ and $$q=2a$$ \n<br><br>As per question $${p^2} = q$$\n<br><br>$$\\therefore$$ $${a^2} = 2a $$\n<br><br>$$ \\Rightarrow $$ $$a(a - 2) = 0$$\n<br><br>$$ \\therefore $$ $$a$$ = 0, 2\n<br><br>but $$a &gt; 0,$$ therefore, $$a=2.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "i0c95WVQI0WQ06dx",
@@ -2987,6 +2987,6 @@
     "difficulty": "easy",
     "solution": "Distance of origin from $$\\left( {x,y} \\right) = \\sqrt {{x^2} + {y^2}} $$\n<br><br>$$ = \\sqrt {{a^2} + {b^2} - 2ab\\cos \\left( {t - {{at} \\over b}} \\right)} ;$$\n<br><br>$$ \\le \\sqrt {{a^2} + {b^2} + 2ab} $$  $$\\left[ {{{\\left\\{ {\\cos \\left( {t - {{at} \\over b}} \\right)} \\right\\}}_{\\min }} =  - 1} \\right]$$\n<br><br>$$=a+b$$\n<br><br>$$\\therefore$$ Maximum distance from origin $$=a+b$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

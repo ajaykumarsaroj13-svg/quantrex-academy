@@ -65,7 +65,7 @@
     "difficulty": "medium",
     "solution": "<p>Let initial pressure of $A$ be $P_0 = 1$ bar in a $1\\ \\text{L}$ closed vessel at constant $T$.</p>\n<p>For the reaction:</p>\n<p>$$A(g) \\rightarrow B(g) + C(g)$$</p>\n<p>Suppose $x$ bar (in pressure-equivalent terms) of $A$ decomposes.</p>\n<p>Then after time $t$:</p>\n<ul>\n<li><p>Pressure of $A$ left $= (1-x)$ bar  </p></li>\n<li><p>Pressure of $B$ formed $= x$ bar  </p></li>\n<li><p>Pressure of $C$ formed $= x$ bar  </p></li>\n</ul>\n<p>So total pressure:</p>\n<p>$$P_\\text{total} = (1-x) + x + x = 1 + x$$</p>\n<p>Given after $100$ min, $P_\\text{total} = 1.5$ bar:</p>\n<p>$$1+x = 1.5 \\Rightarrow x = 0.5$$</p>\n<p>So partial pressure of $A$ after $100$ min:</p>\n<p>$$P_A = 1 - x = 1 - 0.5 = 0.5\\ \\text{bar}$$</p>\n<p>For a first order reaction:</p>\n<p>$$k = \\frac{2.303}{t}\\log\\left(\\frac{[A]_0}{[A]_t}\\right)$$</p>\n<p>Here, pressure is proportional to concentration, so:</p>\n<p>$$k = \\frac{2.303}{100}\\log\\left(\\frac{1}{0.5}\\right)$$</p>\n<p>$$= \\frac{2.303}{100}\\log 2$$</p>\n<p>Given $\\log 2 = 0.3$:</p>\n<p>$$k = \\frac{2.303}{100}\\times 0.3 = 6.9\\times 10^{-3}\\ \\text{min}^{-1}$$</p>\n<p><strong>Correct option: B) $6.9 \\times 10^{-3}\\ \\text{min}^{-1}$</strong></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml8t8ohz",
@@ -104,7 +104,7 @@
     "difficulty": "easy",
     "solution": "<p>For a first order reaction, the integrated rate law is</p>\n<p>$$ t=\\frac{2.303}{k}\\log\\left(\\frac{[A]_0}{[A]_t}\\right) $$</p>\n<h3>1) Time to reach $\\left(\\frac{1}{8}\\right)^{\\text{th}}$ of initial concentration</h3>\n<p>Here, $[A]_t=\\frac{[A]_0}{8}$</p>\n<p>$$ t_{1/8}=\\frac{2.303}{k}\\log\\left(\\frac{[A]_0}{[A]_0/8}\\right) =\\frac{2.303}{k}\\log(8) $$</p>\n<p>Now, $\\log(8)=\\log(2^3)=3\\log 2=3\\times 0.3=0.9$</p>\n<p>So,</p>\n<p>$$ t_{1/8}=\\frac{2.303}{k}\\times 0.9 $$</p>\n<h3>2) Time to reach $\\left(\\frac{1}{10}\\right)^{\\text{th}}$ of initial concentration</h3>\n<p>Here, $[A]_t=\\frac{[A]_0}{10}$</p>\n<p>$$ t_{1/10}=\\frac{2.303}{k}\\log\\left(\\frac{[A]_0}{[A]_0/10}\\right) =\\frac{2.303}{k}\\log(10) $$</p>\n<p>And $\\log(10)=1$, so</p>\n<p>$$ t_{1/10}=\\frac{2.303}{k}\\times 1 $$</p>\n<h3>3) Required ratio</h3>\n<p>$$ \\frac{t_{1/8}}{t_{1/10}}=\\frac{\\frac{2.303}{k}\\times 0.9}{\\frac{2.303}{k}\\times 1}=0.9 $$</p>\n<p>So,</p>\n<p>$$ \\frac{t_{1/8}}{t_{1/10}}\\times 10=0.9\\times 10=9 $$</p>\n<p><strong>Correct option: B (9)</strong></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnrtgnnc",
@@ -143,7 +143,7 @@
     "difficulty": "easy",
     "solution": "<p>For a <strong>zero order reaction</strong>:</p>\n<p>The integrated rate law is</p>\n<p>$$ [A]_t = [A]_0 - kt $$</p>\n<p>For <strong>100% completion</strong>, $[A]_t = 0$.</p>\n<p>So,</p>\n<p>$$ 0 = [A]_0 - kt_{100\\%} $$</p>\n<p>$$ t_{100\\%} = \\frac{[A]_0}{k} $$</p>\n<p>For <strong>half-life</strong>, $[A]_t = \\frac{[A]_0}{2}$.</p>\n<p>So,</p>\n<p>$$ \\frac{[A]_0}{2} = [A]_0 - kt_{1/2} $$</p>\n<p>$$ kt_{1/2} = \\frac{[A]_0}{2} $$</p>\n<p>$$ t_{1/2} = \\frac{[A]_0}{2k} $$</p>\n<p>Hence,</p>\n<p>$$ t_{100\\%} = \\frac{[A]_0}{k} = 2\\left(\\frac{[A]_0}{2k}\\right) = 2t_{1/2} $$</p>\n<p>So for <strong>zero order</strong>,</p>\n<p>$$ t_{100\\%} = 2t_{1/2} $$</p>\n\n<p>For a <strong>first order reaction</strong>:</p>\n<p>The integrated rate law is</p>\n<p>$$ [A]_t = [A]_0 e^{-kt} $$</p>\n<p>For <strong>100% completion</strong>, we need $[A]_t = 0$.</p>\n<p>That means</p>\n<p>$$ 0 = [A]_0 e^{-kt} $$</p>\n<p>But $e^{-kt}$ can never become exactly zero for any finite value of $t$.</p>\n<p>So, the reaction takes <strong>infinite time</strong> for complete consumption.</p>\n<p>Thus,</p>\n<p>$$ t_{100\\%} = \\infty $$</p>\n<p>Also, for first order reaction,</p>\n<p>$$ t_{1/2} = \\frac{0.693}{k} $$</p>\n<p>Hence $t_{100\\%}$ is not a finite multiple of $t_{1/2}$, rather it is effectively represented as infinite.</p>\n<p>So the correct relation is:</p>\n<ul>\n<li><p><strong>Zero order:</strong> $t_{100\\%} = 2t_{1/2}$</p></li>\n<li><p><strong>First order:</strong> $t_{100\\%} = (t_{1/2})^{\\infty}$ in the given options, meaning complete reaction requires infinite time.</p></li>\n</ul>\n<p>Therefore, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option B}} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhwk7",
@@ -165,7 +165,7 @@
     "difficulty": "medium",
     "solution": "<p>(A) The order of the reactions cannot be the same because curve (1) is a straight line, but curves (2) and (3) decrease exponentially with time.</p>\n<p>A straight-line decrease of reactant concentration with time is the characteristic of a <b>zero order</b> reaction. Exponentially decaying curves are usually seen in <b>first order</b> (and sometimes other) reactions.</p>\n<p>Rate expression for $n=0$:</p>\n<p>$$ \\begin{aligned} & K t=\\left[A_0\\right]-[A]=\\left[R_0\\right]-[R] \\\\ & {[R]=\\left[R_0\\right]-k t \\quad(\\because y=c+m x)} \\\\ & \\text { slope }(m)=-k \\end{aligned} $$</p>\n<p>So, graph (1) matches the straight-line form $[R]=[R_0]-kt$, hence reaction (1) is zero order.</p>\n<p>(B) Now assume that reactions (2) and (3) are first order reactions (their curves look exponential).</p>\n<p>$$ \\begin{aligned} {[R] } & =\\left[R_0\\right] e^{-k t} \\\\ \\text { At } t & =\\text { constant } \\\\ {\\left[R_3\\right] } & <\\left[R_2\\right] \\end{aligned} $$</p>\n<p>At the same time $t$, curve (3) shows a smaller concentration than curve (2), i.e. $[R_3] < [R_2]$. This means reaction (3) is consuming reactant faster, so it has a larger rate constant.</p>\n<p>And since Rate of reaction:</p>\n<p>$$ \\begin{gathered} R=K[A] \\text { or } K[R] \\\\ K \\propto \\frac{1}{[R]} \\end{gathered} $$</p>\n<p>Hence, $K_3>K_2$.</p>\n<p>(c) SI unit for rate constant $(k)=m o l^{1-n} L^{n-1} s^{-1}$. For 1st reaction order $(n)=0$.</p>\n<p>Then si unit $=\\mathrm{mol}^{1-0} \\mathrm{~L}^{0-1} \\mathrm{~s}^{-1}$</p>\n<p>$$ =m ol\\,\\,\\,\\, L^{-1} s^{-1} . $$</p>\n<p>(D) Thermal decomposition of HI on Gold is an example of zero-order reaction because its rate expression is written as:</p>\n<p>$$ R=K[H I]^0 $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhyqt",
@@ -204,7 +204,7 @@
     "difficulty": "easy",
     "solution": "<p>For a first order reaction</p>\n<p>$$ \\mathrm{R} \\rightarrow \\mathrm{P} $$</p>\n<p>the integrated rate law is</p>\n<p>$$ [R]_t = [R]_0 e^{-k_1 t} $$</p>\n<p>where:</p>\n<ul>\n<li><p>$[R]_0$ = initial concentration of reactant</p></li>\n<li><p>$[R]_t$ = concentration after time $t$</p></li>\n</ul>\n<p>Now, the fraction of molecules left undecomposed after time $t$ is</p>\n<p>$$ \\frac{[R]_t}{[R]_0} = e^{-k_1 t} $$</p>\n<p>So, the fraction of molecules decomposed is</p>\n<p>$$ 1 - \\frac{[R]_t}{[R]_0} = 1 - e^{-k_1 t} $$</p>\n<p>Hence, the correct answer is</p>\n<p>$$ \\boxed{1 - e^{-k_1 t}} $$</p>\n<p>So, Option D is correct.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhx80",
@@ -226,7 +226,7 @@
     "difficulty": "easy",
     "solution": "<img alt=\"JEE Main 2026 (Online) 5th April Morning Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 4 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1moacxru5/d71e0787-5a47-4ac4-9214-1a79af538a78/07f10dd0-3e75-11f1-88c1-011010b34405/file-6y3zli1moacxru6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1moacxru5/d71e0787-5a47-4ac4-9214-1a79af538a78/07f10dd0-3e75-11f1-88c1-011010b34405/file-6y3zli1moacxru6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\">\n<p>So, total pressure at time $t$ is</p>\n<p>$$ p_t = (p_i - x) + x + x = p_i + x $$</p>\n<p>Hence,</p>\n<p>$$ x = p_t - p_i $$</p>\n<p>Now pressure of $\\mathrm{A}$ at time $t$ is</p>\n<p>$$ p_A = p_i - x $$</p>\n<p>Substituting $x = p_t - p_i$:</p>\n<p>$$ p_A = p_i - (p_t - p_i) = 2p_i - p_t $$</p>\n<p>For a first-order reaction,</p>\n<p>$$ k = \\frac{1}{t} \\ln \\frac{[\\mathrm{A}]_0}{[\\mathrm{A}]_t} $$</p>\n<p>Since pressure is proportional to concentration for gases,</p>\n<p>$$ k = \\frac{1}{t} \\ln \\frac{p_i}{2p_i - p_t} $$</p>\n<p>Therefore, the correct expression is</p>\n<p>$$ \\boxed{k = \\frac{1}{t} \\ln \\frac{p_i}{2p_i - p_t}} $$</p>\n<p>So, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option A}} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhqla",
@@ -282,7 +282,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n&amp;\\text { For zero order reaction : } \\mathrm{A} \\rightarrow \\mathrm{P}\\\\\n&amp;\\begin{aligned}\n&amp; \\text { Rate }=\\mathrm{k} \\\\\n&amp; {[\\mathrm{~A}]_{\\mathrm{t}}=\\mathrm{a}_0-\\mathrm{kt}}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7fx6g1m/c1992469-c97e-4d3b-9534-7549c97be94f/6d80d1a0-f0f4-11ef-b2b3-ebf21cc94d34/file-jaoe38c1m7fx6g1n.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7fx6g1m/c1992469-c97e-4d3b-9534-7549c97be94f/6d80d1a0-f0f4-11ef-b2b3-ebf21cc94d34/file-jaoe38c1m7fx6g1n.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 23rd January Evening Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 45 English Explanation\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6srmy5i",
@@ -338,7 +338,7 @@
     "difficulty": "easy",
     "solution": "<p>Half life ( $\\mathrm{t}_{1 / 2}$ ) of a first order reaction does not depend on initial concentration of the reactant $\\left[\\mathrm{R}_0\\right]$. Therefore Statement I is true. Rate constant (k) of a first order reaction is given by</p>\n<p>$$ \\begin{aligned} &amp; \\mathrm{k}=\\frac{2.303}{\\mathrm{t}} \\log \\frac{\\left[\\mathrm{R}_0\\right]}{[\\mathrm{R}]} \\\\ &amp; \\log \\frac{[\\mathrm{R}]}{\\left[\\mathrm{R}_0\\right]}=-\\left(\\frac{\\mathrm{k}}{2.303}\\right) \\mathrm{t} \\end{aligned} $$</p>\n<p>Plot of $\\log \\frac{[R]}{\\left[R_0\\right]}$ versus time is linear having</p>\n<p>$$ \\text { slope }=-\\frac{\\mathrm{k}}{2.303} $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mbwo2qnw/a9495053-53a3-4e0e-be43-8bea23e38c48/04dcdbc0-495b-11f0-ad70-3b6e0444345d/file-jaoe38c1mbwo2qnx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mbwo2qnw/a9495053-53a3-4e0e-be43-8bea23e38c48/04dcdbc0-495b-11f0-ad70-3b6e0444345d/file-jaoe38c1mbwo2qnx.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 24th January Evening Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 42 English Explanation\"></p>\n<p>$\\therefore$ Statement II is false.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qleliz",
@@ -360,7 +360,7 @@
     "difficulty": "medium",
     "solution": "<p>Original concentration, $$a = 16$$ mg/mL</p>\n<p>Concentration at time</p>\n<p>t = 12 months, $$a - x = 4$$ mg/mL</p>\n<p>For first order kinetics, the equation for late constant</p>\n<p>$$k = {{2.303} \\over t}\\log {a \\over {a - x}}$$</p>\n<p>a $\\to$ Initial concentration</p>\n<p>$a-x\\to$ Concentration at time, t</p>\n<p>$$ = {{2.303} \\over {12\\,months}}\\log {{16\\,mg/mL} \\over {4\\,mg/mL}}$$</p>\n<p>$$ = {{2.303} \\over {12}}\\log 4$$</p>\n<p>$$ = 0.1155\\,month{s^{ - 1}}$$</p>\n<p>Drug is ineffective after 50% decomposition. So, the expiry time is after 50% decomposition. The time at which 50% decomposition occurs in a reaction is known as half life $$({t_{1/2}})$$. So, $${t_{1/2}}$$ is the expiry time of the drug.</p>\n<p>$${t_{1/2}}$$ formula is</p>\n<p>$${t_{1/2}} = {{0.693} \\over k}$$</p>\n<p>Substitute k = 0.1155 months$^{-1}$,</p>\n<p>$${t_{1/2}} = {{0.613} \\over {0.1155}}$$ months$^{-1}$</p>\n<p>= 6 months</p>\n<p>Expiry time can also be calculate as,</p>\n<p>$$t = {{2.303} \\over k}\\log {a \\over {a - x}}$$</p>\n<p>Initial is taken as 100%</p>\n<p>The percent at expiry time is 50%</p>\n<p>$$ = {{2.303} \\over {0.1155\\,month{s^ - }}} \\times \\log {{100\\% } \\over {50\\% }}$$</p>\n<p>$$ = {{2.303} \\over {0.1155}} \\times \\log {{100} \\over {50}}$$</p>\n<p>$$ = {{2.303} \\over {0.1155}} \\times 0.301$$</p>\n<p>$$ = 6.002$$</p>\n<p>= 6 months</p>\n<p>Correct answer is option (3) 6</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dunoo5",
@@ -399,7 +399,7 @@
     "difficulty": "medium",
     "solution": "<p>The initial conditions are:</p>\n\n<p><p>$[A]_0 = 8[B]_0$</p></p>\n<p><p>Half-life of A, $\\left[\\text{t}_{1/2}\\right]_{A} = 10 \\text{ min}$</p></p>\n<p><p>Half-life of B, $\\left[\\text{t}_{1/2}\\right]_{B} = 40 \\text{ min}$</p></p>\n\n<p>Both reactants follow first-order kinetics, and we want to find the time, $t$, when $[A]_t = [B]_t$.</p>\n<h3>Step-by-step Derivation:</h3>\n\n<p><p><strong>Write the First-order Rate Equation:</strong></p>\n<p>For first-order reactions, the concentration $[X]_t$ at time $t$ is given by:</p>\n<p>$    [X]_t = [X]_0 e^{-k_X t}    $</p>\n<p>where $k_X$ is the rate constant for substance $X$.</p></p>\n<p><p><strong>Express Half-life through Rate Constant:</strong></p>\n<p>For first-order reactions, the rate constant $k$ is related to the half-life $\\text{t}_{1/2}$ by:</p>\n<p>$    k = \\frac{\\ln 2}{\\text{t}_{1/2}}    $</p>\n<p>Substituting the known half-lives:</p></p>\n\n\n<p><p>$k_A = \\frac{\\ln 2}{10}$</p></p>\n<p><p>$k_B = \\frac{\\ln 2}{40}$</p></p>\n\n\n<p><p><strong>Set Up the Equality from the Condition $[A]_t = [B]_t$:</strong></p>\n<p>$    [A]_0 e^{-k_A t} = [B]_0 e^{-k_B t}    $</p>\n<p>By inserting the initial condition $[A]_0 = 8[B]_0$, it becomes:</p>\n<p>$    8[B]_0 e^{-k_A t} = [B]_0 e^{-k_B t}    $</p></p>\n<p><p><strong>Simplify and Solve for $t$:</strong></p>\n<p>Divide both sides by $[B]_0$:</p>\n<p>$    8 e^{-k_A t} = e^{-k_B t}    $</p>\n<p>Taking the natural logarithm of both sides:</p>\n<p>$    \\ln 8 = -k_A t + k_B t    $</p>\n<p>Replace $k_A$ and $k_B$ with their expressions:</p>\n<p>$    \\ln 8 = \\left(\\frac{\\ln 2}{10} - \\frac{\\ln 2}{40}\\right) t    $</p></p>\n<p><p><strong>Simplify Further:</strong></p>\n<p>$    \\ln 8 = \\ln 2 \\left(\\frac{1}{10} - \\frac{1}{40}\\right) t    $</p>\n<p>Simplify $\\left(\\frac{1}{10} - \\frac{1}{40}\\right)$ to get:</p>\n<p>$    \\frac{1}{10} - \\frac{1}{40} = \\frac{4 - 1}{40} = \\frac{3}{40}    $</p>\n<p>So,</p>\n<p>$    \\ln 8 = \\ln 2 \\times \\frac{3}{40} \\times t    $</p></p>\n<p><p><strong>Final Expression for $t$:</strong></p>\n<p>$    t = \\frac{\\ln 8}{\\ln 2 \\times \\frac{3}{40}}    $</p>\n<p>Calculate the value of $t$ using $\\ln 8 = 3 \\ln 2$:</p>\n<p>$    t = \\frac{3 \\ln 2}{\\ln 2 \\times \\frac{3}{40}} = \\frac{40}{1} = 40 \\text{ min}    $</p></p>\n\n<p>Therefore, after 40 minutes, the concentration of both reactants A and B will be the same.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnuuib",
@@ -421,7 +421,7 @@
     "difficulty": "easy",
     "solution": "<p>For zero order reaction</p>\n<p>$$\\begin{aligned}\n& \\text { Half life }=\\frac{\\mathrm{A}_{\\mathrm{o}}}{2 \\mathrm{k}} \\\\\n& 60 \\min =\\frac{2}{2 \\mathrm{k}} \\\\\n& \\mathrm{k}=\\frac{1}{60} \\mathrm{M} / \\min\n\\end{aligned}$$</p>\n<p>Now</p>\n<p>$$\\begin{aligned}\n& A_t=A_o-k t \\\\\n& t=\\frac{A_o-A_t}{k} \\\\\n&=\\frac{0.5-0.25}{1 / 60} \\\\\n& 0.25 \\times 60 \\\\\n& t=15 \\mathrm{~min}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fb76db",
@@ -443,7 +443,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9jlbajw/0078d5a7-95c4-4b2b-8316-c90c538fad6d/981ca6c0-1a91-11f0-99a3-8966777a8fdf/file-jaoe38c1m9jlbajx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9jlbajw/0078d5a7-95c4-4b2b-8316-c90c538fad6d/981ca6c0-1a91-11f0-99a3-8966777a8fdf/file-jaoe38c1m9jlbajx.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 7th April Evening Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 34 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\mathrm{P}_{\\mathrm{t}}=\\mathrm{P}^{\\mathrm{o}}+\\mathrm{x} \\Rightarrow \\mathrm{x}=\\mathrm{P}_{\\mathrm{t}}-\\mathrm{P}^{\\mathrm{o}}=\\mathrm{P}_{\\mathrm{t}}-\\frac{\\mathrm{P}_{\\infty}}{2} \\\\\n&amp; \\mathrm{P}_{\\infty}=2 \\mathrm{P}^{\\mathrm{o}} \\Rightarrow \\mathrm{P}^{\\mathrm{o}}=\\frac{\\mathrm{P}_{\\infty}}{2} \\\\\n&amp; \\mathrm{k}=\\frac{1}{\\mathrm{t}} \\ln \\frac{\\mathrm{P}^{\\mathrm{o}}}{\\mathrm{P}^o-\\mathrm{x}} \\\\\n&amp; \\mathrm{k}=\\frac{1}{\\mathrm{t}} \\ln \\frac{\\mathrm{P}_{\\infty}}{2\\left(\\mathrm{P}_{\\infty}-\\mathrm{P}_{\\mathrm{t}}\\right)}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j9d7",
@@ -465,7 +465,7 @@
     "difficulty": "medium",
     "solution": "<p>*Before applying medicine</p>\n<p>$\\frac{\\mathrm{dA}}{\\mathrm{dt}}=\\mathrm{K}[\\mathrm{A}]$ (First order growth) (Rate law)</p>\n<p>$$\\frac{\\mathrm{A}}{\\mathrm{~A}_0}=\\frac{\\mathrm{N}}{\\mathrm{~N}_0}=\\mathrm{e}^{\\mathrm{Kt}}$$</p>\n<p>*After applying medicine</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9p397z6/3ecc6b6a-ed8d-4b3b-8f8e-416cff534386/ae136820-1d97-11f0-862a-09b5d9ec6f0c/file-jaoe38c1m9p397z7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9p397z6/3ecc6b6a-ed8d-4b3b-8f8e-416cff534386/ae136820-1d97-11f0-862a-09b5d9ec6f0c/file-jaoe38c1m9p397z7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 7th April Morning Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 36 English Explanation\"></p>\n<p>$\\mathrm{y=K_x{ }^2}$ Parabola</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5jaks",
@@ -487,7 +487,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9p1e1or/f82dc3bb-7f57-4347-95b2-5fb9016a974f/62013db0-1d90-11f0-8528-f36c523d5a7b/file-jaoe38c1m9p1e1os.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9p1e1or/f82dc3bb-7f57-4347-95b2-5fb9016a974f/62013db0-1d90-11f0-8528-f36c523d5a7b/file-jaoe38c1m9p1e1os.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 7th April Morning Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 35 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp;\\begin{aligned}\n&amp; \\mathrm{P}_{\\infty}=3 \\mathrm{P}_0=240 \\\\\n&amp; \\quad \\mathrm{P}_0=80 \\mathrm{~mm} \\text { of } \\mathrm{Hg} \\\\\n&amp; \\mathrm{Kt}=\\ln \\left(\\frac{\\mathrm{P}_{\\infty}-\\mathrm{P}_0}{\\mathrm{P}_{\\infty}-\\mathrm{Pt}}\\right) \\\\\n&amp; \\mathrm{K} \\times 10=\\ln \\left(\\frac{240-80}{240-160}\\right) \\\\\n&amp; \\mathrm{K}=\\frac{\\ln 2}{10}=0.0693 \\mathrm{~min}^{-1}\n\\end{aligned}\\\\\n&amp;\\text { Option (3) is incorrect }\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dowuct",
@@ -509,7 +509,7 @@
     "difficulty": "medium",
     "solution": "<p>For a first-order reaction, the integrated rate law is given by:</p>\n<p>$$\\ln \\frac{[A]}{[A]_0} = -kt$$</p>\n<p>where:</p>\n\n<p><p>$$[A]_0$$ is the initial concentration,</p></p>\n<p><p>$$[A]$$ is the concentration at time $$t$$,</p></p>\n<p><p>$$k$$ is the rate constant.</p></p>\n\n<p>Let's find the times $$t_1$$ and $$t_2$$ corresponding to when the concentration becomes $$\\frac{1}{4}[A]_0$$ and $$\\frac{1}{8}[A]_0$$ respectively.</p>\n\n<p>For concentration $$\\frac{1}{4}[A]_0$$:</p>\n\n\n<p><p>Substitute into the integrated rate law:</p>\n<p>$$\\ln\\left(\\frac{1}{4}\\right) = -kt_1$$</p></p>\n<p><p>Recognizing that $$\\ln\\left(\\frac{1}{4}\\right) = -\\ln 4$$, we have:</p>\n<p>$$-\\ln 4 = -kt_1 \\quad \\Longrightarrow \\quad t_1 = \\frac{\\ln 4}{k}$$</p></p>\n\n\n<p>For concentration $$\\frac{1}{8}[A]_0$$:</p>\n\n\n<p><p>Substitute into the integrated rate law:</p>\n<p>$$\\ln\\left(\\frac{1}{8}\\right) = -kt_2$$</p></p>\n<p><p>Recognizing that $$\\ln\\left(\\frac{1}{8}\\right) = -\\ln 8$$, we have:</p>\n<p>$$-\\ln 8 = -kt_2 \\quad \\Longrightarrow \\quad t_2 = \\frac{\\ln 8}{k}$$</p></p>\n\n<p>Now, to find the ratio $$\\frac{t_1}{t_2}$$:</p>\n<p>$$ \\frac{t_1}{t_2} = \\frac{\\frac{\\ln 4}{k}}{\\frac{\\ln 8}{k}} = \\frac{\\ln 4}{\\ln 8} $$</p>\n<p>We can simplify further by expressing the logarithms in terms of $$\\ln 2$$:</p>\n\n<p><p>$$\\ln 4 = \\ln (2^2) = 2\\ln 2$$</p></p>\n<p><p>$$\\ln 8 = \\ln (2^3) = 3\\ln 2$$</p></p>\n\n<p>Thus,</p>\n<p>$$ \\frac{t_1}{t_2} = \\frac{2\\ln 2}{3\\ln 2} = \\frac{2}{3} $$</p>\n<p>So, the ratio $$\\frac{t_1}{t_2}$$ is $$\\frac{2}{3}$$.</p>\n<p>This corresponds to Option D.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lsapa057",
@@ -599,7 +599,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{array}{llll}\n\\mathrm{A} \\rightarrow & \\mathrm{B} & + & \\mathrm{C} \\\\\n\\mathrm{P}_{\\mathrm{i}} & 0 & & 0 \\\\\n\\mathrm{P}_{\\mathrm{i}}-\\mathrm{x} & \\mathrm{x} & & \\mathrm{x}\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\mathrm{P_t=P_i+x} \\\\\n& \\mathrm{P_i-x=P_i-P_t+P_i} \\\\\n& \\mathrm{=2 P_i-P_t} \\\\\n& \\mathrm{K=\\frac{2.303}{t} \\log \\frac{P_i}{2 P_i-P_t}}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv2es2g1",
@@ -876,7 +876,7 @@
     "difficulty": "medium",
     "solution": "Step with highest activation energy is RDS, so step II is RDS<br><br>\nNo. of activated complex $=3$<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lmjv8hbn/6d0e0cb7-c184-429d-9efa-8da538f85f81/6b7dd030-535f-11ee-a6c7-77f5d3c4aba9/file-6y3zli1lmjv8hbo.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lmjv8hbn/6d0e0cb7-c184-429d-9efa-8da538f85f81/6b7dd030-535f-11ee-a6c7-77f5d3c4aba9/file-6y3zli1lmjv8hbo.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 6th April Evening Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 74 English Explanation\"><br>\n$\\mathrm{P}$ and $\\mathrm{Q}$ are intermediates<br><br>\n$($ Number of intermediates $=2$ )",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5bd3dqg",
@@ -898,7 +898,7 @@
     "difficulty": "easy",
     "solution": "$$\\mathrm{A} \\rightarrow$$ Products<br/><br/>\nFor a first order reaction,<br/><br/>\n$$\n\\mathrm{t}_{1 / 2}=\\frac{\\ln 2}{\\mathrm{k}}=\\frac{0.693}{\\mathrm{k}}\n$$<br/><br/>\nTime for $$90 \\%$$ conversion,<br/><br/>\n$$t_{90 \\%}=\\frac{1}{k} \\ln \\frac{100}{10}=\\frac{\\ln 10}{k}=\\frac{2.303}{k}$$<br/><br/>\n$$t_{90\\%}=\\frac{2.303}{0.693} t_{1 / 2}=3.32 t_{1 / 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6i4mchh",
@@ -920,7 +920,7 @@
     "difficulty": "medium",
     "solution": "Since, half-life is independent of the initial concentration of $$A B_{2}$$. Hence, the reaction is \"First Order\".\n<br/><br/>\n$$k=\\frac{2.303 \\log 2}{t_{1 / 2}}$$\n<br/><br/>\n$$\\frac{2.303 \\log 2}{t_{1 / 2}}=\\frac{2.303}{t} \\log \\frac{100}{(100-80)}$$\n<br/><br/>\n$$\\frac{2.303 \\times 0.3}{200}=\\frac{2.303}{t} \\log 5$$\n<br/><br/>\n$$t=467 \\mathrm{~s}$$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6gsm8wx",
@@ -1197,7 +1197,7 @@
     "difficulty": "medium",
     "solution": "For Zero order reactions<br><br>rate = K [Reactant]<sup>0</sup><br><br>$$\\Rightarrow$$ r = k<br><br><img src=\"https://imagex.cdn.examgoal.net/1krwh2gym/c27f2c1b-ed12-4ee7-b1fe-dc783fcb3724/803ec7e0-f493-11eb-9dc6-a7061d629865/file-1krwh2gyn.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th July Morning Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 131 English Explanation 1\"><br>t<sub>1/2</sub> = $${{{{[A]}_0}} \\over {2K}}$$ for Zero order<br><br><img src=\"https://imagex.cdn.examgoal.net/1krwh3dxr/9ff6254b-726b-4d32-b996-80be64c54c6f/99b7edf0-f493-11eb-9dc6-a7061d629865/file-1krwh3dxs.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th July Morning Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 131 English Explanation 2\"><br>For First order reaction $$\\to$$<br><br>r = K [Concentration]<br><br><img src=\"https://imagex.cdn.examgoal.net/1krwh475b/a1c29a3e-27a5-44d7-a453-0d1030b8c505/b0484bf0-f493-11eb-9dc6-a7061d629865/file-1krwh475c.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th July Morning Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 131 English Explanation 3\"><br>Reactant concentration after time t $$\\to$$<br><br>C<sub>t</sub> = C<sub>0</sub> e<sup>-kt</sup><br><br><img src=\"https://imagex.cdn.examgoal.net/1krwh4ux3/f4b50c17-b653-402a-aec3-4b3bb0df4641/c2a53970-f493-11eb-9dc6-a7061d629865/file-1krwh4ux4.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th July Morning Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 131 English Explanation 4\">",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ks1k9mag",
@@ -1271,7 +1271,7 @@
     "solution": "$${(C{H_3})_3}C - Br + NaOH\\mathrel{\\mathop{\\kern0pt\\longrightarrow}\n\\limits_{(First\\,order\\,reaction)}^{{S_{{N^1}}}}} {(C{H_3})_3}C - OH + NaBr$$<br><br>This is first order reaction and for first order reaction $${t_{1/2}} = {{0.693} \\over k}$$<br><br>So, half-life is independent of initial concentration.<br><br>Therefore, the plot (a) correct.<br><br>For first order reaction, <br><br>$$(r) = k[{(C{H_3})_3}C - Br]$$ ; <br><br>$$\\ln \\left( {{{{P_0}} \\over P}} \\right) = k\\,t$$<br><br>or $$\\ln \\left( {{P \\over {{P_0}}}} \\right) =  - k\\,t$$<br><br>Hence, plot (b) and (d) are incorrect. For first order reaction,<br><br>Q = [P<sub>0</sub>](1 $$-$$ e<sup>kt</sup>)<br><br>Or $${{[Q]} \\over {[{P_0}]}} = (1 - {e^{kt}})$$<br><br>Hence, plot (c) is incorrect.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "6t6QNoFnJSEbjAZcG3jgy2xukf25i9vq",
@@ -1293,7 +1293,7 @@
     "difficulty": "easy",
     "solution": "Zero order reaction has complex mechanism.\n<br>Zero order reaction is a multistep reaction.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "aV4tfk8ZVnss57JCmIjgy2xukf9ksjxc",
@@ -1350,7 +1350,7 @@
     "difficulty": "medium",
     "solution": "For zero order reaction,\n<br><br>t<sub>1/2</sub> = $${{{a_0}} \\over {2k}}$$\n<br><br>$$ \\Rightarrow $$ k = $${{{a_0}} \\over {2{t_{1/2}}}}$$ = $${{0.2} \\over {2 \\times 6}}$$ = 1.67 $$ \\times $$ 10<sup>-2</sup> mol L<sup>–1</sup>h<sup>–1</sup>\n<br><br>For zero order reaction,\n<br><br>A<sub>0</sub> - A<sub>t</sub> = kt\n<br><br>$$ \\Rightarrow $$ 0.5 - 0.2 = 1.67 $$ \\times $$ 10<sup>-2</sup> t\n<br><br>$$ \\Rightarrow $$ t = $${{0.3} \\over {1.67 \\times {{10}^{ - 2}}}}$$ = 18 h",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "q1CV8nEPaS9ridZCobb3R",
@@ -1372,7 +1372,7 @@
     "difficulty": "medium",
     "solution": "According to unit of rate constant it is a zero order\nreaction, then half life of zero order reaction.\n<br><br>t<sub>1/2</sub> = $${{{a_0}} \\over {2k}} = {5 \\over {2 \\times 0.05}}$$ = 50 years",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "zU2AiVMxnmOkmvtID63AW",
@@ -1394,7 +1394,7 @@
     "difficulty": "easy",
     "solution": "For 1<sup>st</sup> order reaction, we know\n<br><br>$$\\ln {{{R_0}} \\over {{R_T}}} = kt$$\n<br><br>$$ \\Rightarrow $$ $$\\ln {R_0}$$ - $$\\ln {R_t}$$ = kt\n<br><br>$$ \\Rightarrow $$ $$\\ln {R_t}$$ = - kt + $$\\ln {R_0}$$\n<br><br>So,  $$\\ln {R_t}$$ vs t is a straight line with negative slope.\n<br><br>$$ \\therefore $$ First graph represent 1<sup>st</sup> order reaction.\n<br><br>For Zeroorder reaction, we know\n<br><br>R<sub>0</sub> - R<sub>t</sub> = kt\n<br><br>$$ \\therefore $$  R<sub>t</sub> = - kt + R<sub>0</sub>\n<br><br>So,  $${R_t}$$ vs t is a straight line with negative slope.\n<br><br>$$ \\therefore $$ Second graph represent zero order reaction.\n\n\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "7OpTbKBGqLbK2uJM",
@@ -1417,7 +1417,7 @@
     "solution": "Total pressure of gaseous mixture at beginning $(T=0)=\\mathrm{P}_0$<br><br>\nTotal pressure of gaseous mixture after time $t$ $(\\mathrm{T}=t)=\\mathrm{P}_t$<br><br>\nInitial concentration of $A=[A]_0$<br><br>\nTemperature of the reaction mixture (T) $=300 \\mathrm{~K}$<br><br>\nFor the first order reaction,<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lhvgh4zx/2efa9c0a-1f2b-4d30-b2dd-78f80b8cdeb5/0636b3d0-f6c2-11ed-81ac-b54226f5f213/file-1lhvgh4zy.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lhvgh4zx/2efa9c0a-1f2b-4d30-b2dd-78f80b8cdeb5/0636b3d0-f6c2-11ed-81ac-b54226f5f213/file-1lhvgh4zy.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2018 Paper 2 Offline Chemistry - Chemical Kinetics and Nuclear Chemistry Question 30 English Explanation 1\"><br>\nTotal pressure after time $(\\mathrm{T}=t)=\\mathrm{P}_0-\\mathrm{P}+2 \\mathrm{P} +\\mathrm{P}$<br><br>\n$$\n\\begin{aligned}\n\\mathrm{P}_t=\\mathrm{P}_0+2 \\mathrm{P} \\\\\\\\\n\\mathrm{P} =\\frac{\\mathrm{P}_t-\\mathrm{P}_0}{2}\n\\end{aligned}\n$$<br><br>\nAccording to integrated rate law for the first order reaction:<br><br>\n$$\n\\begin{aligned}\n&amp;t =\\frac{2.303}{k} \\log \\frac{\\mathrm{P}_0}{\\mathrm{P}_t} ~~~~...(i)\\\\\\\\\n&amp;t =\\frac{2.303}{k} \\log \\frac{\\mathrm{P}_0}{\\mathrm{P}_0-\\mathrm{P}} \\\\\\\\\n&amp;t =\\frac{2.303}{k} \\log \\frac{\\mathrm{P}_0}{\\mathrm{P}_0-\\frac{\\left(\\mathrm{P}_t-\\mathrm{P}_0\\right)}{2}} \\\\\\\\\n&amp;t =\\frac{2.303}{k} \\log \\frac{2 \\mathrm{P}_0}{2 \\mathrm{P}_0-\\mathrm{P}_t+\\mathrm{P}_0} \\\\\\\\\n&amp;t =\\frac{2.303}{k} \\log \\frac{2 \\mathrm{P}_0}{3 \\mathrm{P}_0-\\mathrm{P}_t} \\\\\\\\\n&amp;t =\\frac{1}{k} \\ln \\frac{2 \\mathrm{P}_0}{3 \\mathrm{P}_0-\\mathrm{P}_t} \\\\\\\\\n&amp;\\ln \\left(3 \\mathrm{P}_0-\\mathrm{P}_t\\right) =\\ln \\left(2 \\mathrm{P}_0-\\mathrm{P}_t\\right)-k t ~~~~...(ii)\n\\end{aligned}\n$$<br><br>\nComparing equation (ii) with equation of straight option line<br><br>\n$$\n\\begin{aligned}\n&amp; \\ln \\left(3 \\mathrm{P}_0-\\mathrm{P}_t\\right)  =\\ln 2 \\mathrm{P}_0-k t \\\\\\\\\n&amp;y  =c+m x\n\\end{aligned}\n$$<br><br>\nPlot of $\\ln \\left(3 \\mathrm{P}_0-\\mathrm{P}_t\\right)$ verses time $(t)$ is represented as:<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lhvgs0vd/461ad0b8-fdda-4ffd-9839-efd75875cc8a/34ed3590-f6c3-11ed-81ac-b54226f5f213/file-1lhvgs0ve.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lhvgs0vd/461ad0b8-fdda-4ffd-9839-efd75875cc8a/34ed3590-f6c3-11ed-81ac-b54226f5f213/file-1lhvgs0ve.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2018 Paper 2 Offline Chemistry - Chemical Kinetics and Nuclear Chemistry Question 30 English Explanation 2\"><br>\nOption (A) is correct.<br><br>\n(ii) For the first order reaction,<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lhvgukf8/a591c374-9956-4f8a-85e4-e95f1df8b6d3/7ba5ea40-f6c3-11ed-81ac-b54226f5f213/file-1lhvgukf9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lhvgukf8/a591c374-9956-4f8a-85e4-e95f1df8b6d3/7ba5ea40-f6c3-11ed-81ac-b54226f5f213/file-1lhvgukf9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2018 Paper 2 Offline Chemistry - Chemical Kinetics and Nuclear Chemistry Question 30 English Explanation 3\"><br>\n$$\n\\mathrm{P}_t=\\frac{\\mathrm{P}_0}{3}+\\frac{4 \\mathrm{P}_0}{3}+\\frac{2 \\mathrm{P}_0}{3}=\\frac{7 \\mathrm{P}_0}{3}\n$$<br><br>\nSubstituting the value of $P_t$ in $e q$ (i)<br><br>\n$$\n\\begin{aligned}\nt_{1 / 3} &amp; =\\frac{2.303}{k} \\log \\frac{\\mathrm{P}_0}{\\frac{7 \\mathrm{P}_0}{3}} \\\\\\\\\nt_{1 / 3} &amp; =\\frac{2.303}{k} \\log \\frac{3}{7}\n\\end{aligned}\n$$<br><br>\n$\\mathrm{P}_{t_3}$ is independent of concentration of (A).<br><br>\nOption (B) is not correct.<br><br>\n(iii) At any time $t$, rate constant $(k)$ is independent of concentration of [A].<br><br>\nFor example:<br><br>\nAt $t_{y_3}$ :<br><br>\n$$\nk=\\frac{2.303}{t_{1 / 3}} \\times \\log \\frac{3}{7}\n$$<br><br>\nHence, Option (D) is correct.<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lhvgxofx/f35314dc-fac9-475a-b046-ea3453d912b8/d22e2ad0-f6c3-11ed-81ac-b54226f5f213/file-1lhvgxofy.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lhvgxofx/f35314dc-fac9-475a-b046-ea3453d912b8/d22e2ad0-f6c3-11ed-81ac-b54226f5f213/file-1lhvgxofy.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2018 Paper 2 Offline Chemistry - Chemical Kinetics and Nuclear Chemistry Question 30 English Explanation 4\">",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "YlCdJY31C8nFgTVGaXo1t",
@@ -1439,7 +1439,7 @@
     "difficulty": "easy",
     "solution": "For first order reaction, \n<br><br>The half life, t<sub>$${1 \\over 2}$$</sub> = $${{0.693} \\over k}$$\n<br><br>Here given t<sub>$${1 \\over 2}$$</sub> = 10 days\n<br><br>$$\\therefore\\,\\,\\,$$ k = $${{0.693} \\over {10}}$$ = 0.0693 days<sup>$$-$$1</sup>\n<br><br>Now, the time required for $${1 \\over 4}$$th conversion of A is , \n<br><br>t = $${{2.303} \\over k}$$ log<sub>10</sub> $$\\left( {{a \\over {a - x}}} \\right)$$\n<br><br>= $${{2.303} \\over {0.0693}}$$ log $$\\left( {{1 \\over {1 - {1 \\over 4}}}} \\right)$$\n<br><br>= $${{2.303} \\over {0.0693}}$$ log $$\\left( {{4 \\over 3}} \\right)$$\n<br><br>= 4.1 days.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "VI1ZCGKHXMmHURKiRYM1q",
@@ -1461,7 +1461,7 @@
     "difficulty": "medium",
     "solution": "<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-4kyz\"></th>\n    <th class=\"tg-4kyz\">N<sub>2</sub>O<sub>5</sub></th>\n    <th class=\"tg-4kyz\">$$\\rightleftharpoons$$</th>\n    <th class=\"tg-4kyz\">2NO<sub>2</sub></th>\n    <th class=\"tg-bzci\">+ $${1 \\over 2}$$O<sub>2</sub></th>\n  </tr>\n  <tr>\n    <td class=\"tg-4kyz\">At  t = 0 </td>\n    <td class=\"tg-4kyz\">50</td>\n    <td class=\"tg-4kyz\"></td>\n    <td class=\"tg-4kyz\">0</td>\n    <td class=\"tg-bzci\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-4kyz\">At t = 50 min</td>\n    <td class=\"tg-4kyz\">50 $$-$$ P<sub>1</sub></td>\n    <td class=\"tg-4kyz\"></td>\n    <td class=\"tg-4kyz\">2P<sub>1</sub></td>\n    <td class=\"tg-bzci\">$${{{P_1}} \\over 2}$$</td>\n  </tr>\n</tbody></table>\n<br><br>Total pressure after 50 min, \n<br><br>= 50 $$-$$ P<sub>1</sub> + 2P<sub>1</sub> + $${{{P_1}} \\over 2}$$ = 87.5\n<br><br>$$\\therefore\\,\\,\\,$$ 50 + $${{3{P_1}} \\over 2}$$ = 87.5\n<br><br>$$ \\Rightarrow $$ $$\\,\\,\\,$$ P<sub>1</sub> = 25 \n<br><br>So, 50 min is the Half $$-$$ life period of the reaction. \n<br><br>Then 100 min is two half life \n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;border:none;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}\n.tg .tg-bzci{font-size:20px;text-align:center;vertical-align:top}\n.tg .tg-4kyz{font-size:20px;text-align:center}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-4kyz\"></th>\n    <th class=\"tg-4kyz\">N<sub>2</sub>O<sub>5</sub></th>\n    <th class=\"tg-4kyz\">$$\\rightleftharpoons$$ </th>\n    <th class=\"tg-4kyz\">2NO<sub>2</sub></th>\n    <th class=\"tg-bzci\">+ $${1 \\over 2}$$O<sub>2</sub></th>\n  </tr>\n  <tr>\n    <td class=\"tg-4kyz\">At  t = 100 min</td>\n    <td class=\"tg-4kyz\">50 $$-$$ P<sub>2</sub></td>\n    <td class=\"tg-4kyz\"></td>\n    <td class=\"tg-4kyz\">2P<sub>2</sub></td>\n    <td class=\"tg-bzci\">$${{{P_2}} \\over 2}$$</td>\n  </tr>\n</tbody></table>\n<br><br>$$\\therefore\\,\\,\\,$$ 50 $$-$$ P<sub>2</sub> = $${{25} \\over 2}$$\n<br><br>P<sub>2</sub> = 37.5\n<br><br>$$\\therefore\\,\\,\\,$$ Total pressure at t = 100 min\n<br><br>= 50 $$-$$ P<sub>2</sub> + 2P<sub>2</sub> + $${{{P_2}} \\over 2}$$\n<br><br>= 50 + $${3 \\over 2}$$ $$ \\times $$ 37.5\n<br><br>= 106.25 mm of Hg",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "t0FqjpWS7TTNgAE8QXJGS",
@@ -1483,7 +1483,7 @@
     "difficulty": "medium",
     "solution": "Assume initial concentration of the reactant = 1 M\n<br><br>After 100 second, concentration becomes of the reactant \n<br><br>=  1 $$ \\times $$ $${{50} \\over {100}}$$ = 0.5 M\n<br><br>After 200 second, concentration of the reactant becomes \n<br><br>= 1 $$ \\times $$ $${{25} \\over {100}}$$ = 0.25 M.\n<br><br>So,  in first 100 second reactant concentration becomes half of initial and in the second 100 second concentration becomes 0.5 M to 0.25 M,  which is also half of 0.5 M.\n<br><br>So, after each 100 second period, concentration of reactant becomes half of initial concentration. \n<br><br>So, 100 second is the half life period and it is independent of concentration of reactant. This is characteristic of first order reaction. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IyrK6QjVck6E2yrI",
@@ -1505,7 +1505,7 @@
     "difficulty": "medium",
     "solution": "$${H_2}{O_2}\\left( {aq} \\right) \\to {H_2}O\\left( {aq} \\right) + {1 \\over 2}{O_2}\\left( g \\right)$$ \n<br><br>For a first order reaction\n<br><br>$$k = {{2.303} \\over t}\\log {a \\over {\\left( {a - x} \\right)}}$$\n<br><br>Given $$a = 0.5,\\left( {a - x} \\right) = 0.125,\\,t = 50\\,\\,$$ min\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,k = {{2.303} \\over {50}}\\log {{0.5} \\over {0.125}}$$\n<br><br>$$ = 2.78 \\times {10^{ - 2}}\\,{\\min ^{ - 1}}$$\n<br><br>$$r = k\\left[ {{H_2}{O_2}} \\right] = 2.78 \\times {10^{ - 2}} \\times 0.05$$ \n<br><br>$$ = 1.386 \\times {10^{ - 3}}\\,\\,mol\\,{\\min ^{ - 1}}$$\n<br><br>Now\n<br><br>$$ - {{d\\left[ {{H_2}{O_2}} \\right]} \\over {dt}} = {{d\\left[ {{H_2}O} \\right]} \\over {dt}} = {{2d\\left[ {{O_2}} \\right]} \\over {dt}}$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,{{2d\\left[ {{O_2}} \\right]} \\over {dt}} - {{d\\left[ {{H_2}{O_2}} \\right]} \\over {dt}}$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,$$ $${{d\\left[ {{O_2}} \\right]} \\over {dt}} = {1 \\over 2} \\times {{d\\left[ {{H_2}{O_2}} \\right]} \\over {dt}}$$ \n<br><br>$$ = {{1.386 \\times {{10}^{ - 3}}} \\over 2} = 6.93 \\times {10^{ - 4}}\\,mol\\,{\\min ^{ - 1}}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tGD5YikwpgBoGz2p",
@@ -1527,7 +1527,7 @@
     "difficulty": "easy",
     "solution": "Reactions of higher order $$\\left( { &gt; 3} \\right)$$ are very rate due to very less chances of many molecules to undergo effective collisions. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "vAoWvn23K4twgEbW",
@@ -1567,7 +1567,7 @@
     "difficulty": "easy",
     "solution": "For a first order reaction\n<br><br>$$k = {{2.0303} \\over t}\\,\\log \\,{a \\over {a - x}}$$\n<br><br>$$ = {{2.303} \\over {40}}\\log {{0.1} \\over {0.025}}$$\n<br><br>$$ = {{2.303} \\over {40}}\\log 4$$\n<br><br>$$ = {{2.303 \\times 0.6020} \\over {40}}$$\n<br><br>$$ = 3.47 \\times {10^{ - 2}}$$\n<br><br>$$R = K{\\left( A \\right)^1} = 3.47 \\times {10^{ - 2}} \\times 0.01$$\n<br><br>$$ = 3.47 \\times {10^{ - 4}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mQtKgnd5d0bYdKra",
@@ -1612,7 +1612,7 @@
     "difficulty": "easy",
     "solution": "For the reaction\n<br><br>$$A\\,\\, \\to \\,\\,$$ Product ; given $${t_{1/2}} = 1\\,\\,$$ hour\n<br><br>for a zero order reaction \n<br><br>$${t_{completion}}\\,\\, = {{\\left[ {{A_0}} \\right]} \\over k} = {{initial\\,\\,conc.} \\over {rate\\,\\,cons\\tan t}}$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,{t_{1/2}} = {{\\left[ {{A_0}} \\right]} \\over {2K}}$$\n<br><br>or $$\\,\\,\\,\\,\\,k = {{\\left[ {{A_0}} \\right]} \\over {2{t_{1/2}}}} = {2 \\over {2 \\times 1}} = 1\\,\\,mol\\,li{t^{ - 1}}\\,h{r^{ - 1}}$$\n<br><br>Further for a zero order reaction \n<br><br>$$k = {{dx} \\over {dt}} = {{change\\,\\,\\,in\\,\\,\\,concentration} \\over {time}}$$\n<br><br>$$I = {{0.50 - 0.25} \\over {time}}\\,\\,\\,$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,$$ time $$ = 0.25\\,\\,hr.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "COrQxrpmaLWvDtVr",
@@ -1634,7 +1634,7 @@
     "difficulty": "medium",
     "solution": "For first order reaction\n<br><br>$$k = {{2.303} \\over t}\\log {{100} \\over {100 - 99}}$$\n<br><br>$${{0.693} \\over {6.93}} = {{2.303} \\over t}\\log {{100} \\over 1}$$\n<br><br>$${{0.693} \\over {6.93}} = {{2.303 \\times 2} \\over t}$$\n<br><br>$$ \\Rightarrow t = 46.06\\min $$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfv0azen",
@@ -1657,7 +1657,7 @@
     "solution": "<p>Rate constant for first order kinetics:</p>\n<p>$${k_1} = {{0.693} \\over {{t_{1/2}}}} = {{0.693} \\over {40\\,{s^{ - 1}}}}$$ ..... (i)</p>\n<p>Rate constant for zero order kinetics:</p>\n<p>$${k_0} = {{{A_0}} \\over {2{t_{1/2}}}} = {{1.386} \\over {2 \\times 20}}$$ mol dm$$^{-3}$$ s$$^{-1}$$ ..... (ii)</p>\n<p>Divide (i) by (ii)</p>\n<p>$${{{k_1}} \\over {{k_0}}} = {{0.693} \\over {40}} \\times {{40} \\over {1.386}} = {{0.693} \\over {1.386}}$$ mol$$^{-1}$$ dm$$^{-3}$$ = 0.5 mol$$^{-1}$$ dm$$^{3}$$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IHfYxx3h2h00in84",
@@ -1679,7 +1679,7 @@
     "difficulty": "medium",
     "solution": "$$\\left( i \\right)\\,\\,\\,\\,\\,\\,\\,\\,\\,NO\\left( g \\right) + B{r_2}\\left( g \\right)\\,\\,\\,\\rightleftharpoons\\,NOB{r_2}\\left( g \\right)$$ \n<br><br>$$\\left( {ii} \\right)\\,\\,\\,\\,\\,\\,\\,\\,\\,NOB{r_2}\\left( g \\right) + NO\\left( g \\right)\\,\\buildrel \\, \\over\n \\longrightarrow 2NOBr\\left( g \\right)$$ \n<br><br>Rate law equation $$ = k\\left[ {NOB{r_2}} \\right]\\left[ {NO} \\right]$$ \n<br><br>But $$NOB{r_2}$$ is intermediate and \n<br><br>must not appear in the rate law equation\n<br><br>from $$1$$st step $${K_C} = {{\\left[ {NOB{r_2}} \\right]} \\over {\\left[ {NO} \\right]\\left[ {B{r_2}} \\right]}}$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,\\left[ {NOB{r_2}} \\right] = {K_C}\\left[ {NO} \\right]\\left[ {B{r_2}} \\right]$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,$$ Rate law equation $$ = k.{K_C}{\\left[ {NO} \\right]^2}\\left[ {B{r_2}} \\right]$$\n<br><br>hence order of reaction is $$2$$ w.r.t. $$NO.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgek7cwm",
@@ -1719,7 +1719,7 @@
     "difficulty": "easy",
     "solution": "The molecularity of reaction is the number of reactant molecules taking part in a single step of the reaction. \n<br><br><b>NOTE :</b> The reaction involving two different reactant can never be unimolecular. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "y3iZdaYIT0PcqWtg",
@@ -1741,7 +1741,7 @@
     "difficulty": "easy",
     "solution": "$${t_{1/4}} = {{2.303} \\over K}\\log {1 \\over {3/4}}$$\n<br><br>$$ = {{2.303} \\over K}\\log {4 \\over 3}$$\n<br><br>$$ = {{2.303} \\over K}\\left( {\\log \\,4 - \\log 3} \\right)$$\n<br><br>$$ = {{2.303} \\over K}\\left( {2{{\\log }^2} - \\log 3} \\right)$$\n<br><br>$$ = {{2.303} \\over K}\\left( {2 \\times 0.301 - 0.4771} \\right)$$\n<br><br>$$ = {{0.29} \\over K}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "HL9Tlarq21Om9HRm",
@@ -1763,7 +1763,7 @@
     "difficulty": "easy",
     "solution": "As the concentration of reactant decreases from $$0.8$$ to $$0.4$$ in $$15$$ minutes hence the $${t_{1/2}}$$ is $$15$$ minutes. To fall the concentration from $$0.1$$ to $$0.025$$ we need two half lives i.e., $$30$$ minutes. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "3zlLJSuwq89PodyV",
@@ -1785,7 +1785,7 @@
     "difficulty": "easy",
     "solution": "$$r = k\\left[ {{O_2}} \\right]{\\left[ {NO} \\right]^2}.$$  \n<br><br>When the volume is reduced to $$1/2,$$ the conc. will double\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,$$ New rate $$ = k\\left[ {2{O_2}} \\right]{\\left[ {2NO} \\right]^2} = 8k\\left[ {{O^2}} \\right]{\\left[ {NO} \\right]^2}$$\n<br><br>The new rate increases to eight times of its initial. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0pAS0aK9pMdrCa6s",
@@ -1807,7 +1807,7 @@
     "difficulty": "easy",
     "solution": "$${t_{1/2}} = 5\\,\\,$$ years, $$T=15$$ years hence -\n<br><br>total number of half life periods $$ = {{15} \\over 3} = 3.$$ \n<br><br>$$\\therefore$$  Amount left $$ = {{64} \\over {{{\\left( 2 \\right)}^3}}} = 8g$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "eHXEeCKSb75YwkZC",
@@ -1829,7 +1829,7 @@
     "difficulty": "easy",
     "solution": "For a zero order reaction.\n<br><br>rate $$ = k{\\left[ A \\right]^ \\circ }\\,\\,\\,$$ i.e. rate $$=k$$ \n<br><br>hence unit of $$k = M.{\\sec ^{ - 1}}$$\n<br><br>For a first order reaction. \n<br><br>rate $$ = k\\left[ A \\right]$$\n<br><br>$$k=M.$$ $${\\sec ^{ - 1}}/M = {\\sec ^{ - 1}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "xnvgmpRJqqNhBIOS",
@@ -1851,6 +1851,6 @@
     "difficulty": "easy",
     "solution": "$$Rt = \\log {C_o} - {{\\mathop{\\rm logC}\\nolimits} _t}$$ \n<br><br>It is clear from the equation that if we plot a graph between $$\\log \\,{C_t}$$ and time, a straight line with a slope equal to $$ - {k \\over {2.303}}$$ and intercept equal to $$\\log \\,\\left[ {{A_o}} \\right]$$ will be obtained. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

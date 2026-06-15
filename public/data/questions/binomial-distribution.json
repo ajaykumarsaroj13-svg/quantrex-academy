@@ -19,7 +19,7 @@
     "difficulty": "easy",
     "solution": "<p>total number of defective bulbs $n(D)=10$</p>\n<p>total number of non defective bulbs $n(\\bar{D})=90$</p>\n<p>total bulbs $=n(D)+n(\\bar{D})=100$</p>\n<p>probability of picking a defective bulbs: $p=\\frac{10}{100}=\\frac{1}{10}$</p>\n<p>probability of picking a non-defective bulbs $q=\\frac{90}{100}=\\frac{9}{10}$</p>\n<p>number of trials $n=8$ bulbs are selected</p>\n<p>let $X$ be the event of getting atleast 7 defective bulbs</p>\n<p>$$ \\begin{aligned} & P(X)=P(X=7)+P(X=8) \\\\ & ={ }^8 C_7 p^7 \\cdot q^1+{ }^8 C_8 p^8 q^0 \\\\ & =8 \\cdot\\left(\\frac{1}{10}\\right)^7 \\cdot \\frac{9}{10}+1 \\cdot\\left(\\frac{1}{10}\\right)^8 \\end{aligned} $$</p>\n<p>$P(X)=\\left(\\frac{1}{10}\\right)^8[72+1]=\\frac{73}{10^8}$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhquf",
@@ -75,7 +75,7 @@
     "difficulty": "medium",
     "solution": "Given that,\n<br/><br/>$\\mathrm{P}($ odd number seven times $)=\\mathrm{P}($ Odd number nine times)\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow{ }^n \\mathrm{C}_7\\left(\\frac{1}{2}\\right)^7\\left(\\frac{1}{2}\\right)^{n-7}={ }^n \\mathrm{C}_9\\left(\\frac{1}{2}\\right)^9\\left(\\frac{1}{2}\\right)^{n-9} \\\\\\\\\n& \\Rightarrow{ }^n \\mathrm{C}_7={ }^n \\mathrm{C}_9 \\\\\\\\\n& \\Rightarrow n=7+9=16\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Hence, } \\mathrm{P}(\\text { Even number twice })=\\frac{k}{2^{15}} \\\\\\\\\n& \\Rightarrow{ }^{16} \\mathrm{C}_2\\left(\\frac{1}{2}\\right)^2\\left(\\frac{1}{2}\\right)^{16-2}=\\frac{k}{2^{15}} \\\\\\\\\n& \\Rightarrow \\frac{16 \\times 15}{2} \\times \\frac{1}{2^{16}}=\\frac{k}{2^{15}} \\Rightarrow k=60\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgoxr14i",
@@ -97,7 +97,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& n p-n p q=1 \\\\\\\\\n\\Rightarrow & n p(1-q)=1 \\\\\\\\\n\\Rightarrow & n p^2=1\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& 2 P(X=2)=3 P(X=1) \\\\\\\\\n& 2 \\cdot{ }^n C_2 p^2 q{ }^{n-2}=3 \\cdot{ }^n C_1 p \\cdot q^{n-1} \\\\\\\\\n\\Rightarrow & 2 \\cdot \\frac{n \\cdot(n-1)}{2} \\cdot p=3 \\cdot n \\cdot q \\\\\\\\\n\\Rightarrow & (n-1) p=3(1-p) \\\\\\\\\n\\Rightarrow & \\left(\\frac{1}{p^2}-1\\right) p=3(1-p) \\\\\\\\\n\\Rightarrow & \\frac{(1-p)(1+p)}{p}=3(1-p) \\\\\\\\\n\\Rightarrow & 1+p=3 p \\\\\\\\\n\\Rightarrow & p=\\frac{1}{2} \\\\\\\\\n\\therefore & n=4\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\nn^2 P(x>1) & =n^2(1-P(x=1)-P(x=0)) \\\\\\\\\n& =16\\left(1-{ }^4 C_1 \\cdot\\left(\\frac{1}{2}\\right)^4-\\left(\\frac{1}{2}\\right)^4\\right)=11\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldomop5k",
@@ -119,7 +119,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& \\text { Given } \\\\\\\\\n& \\mathrm{np}+\\mathrm{npq}=5 \\\\\\\\\n& \\Rightarrow \\mathrm{np}(1+\\mathrm{q})=5 ........(i) \\\\\\\\\n& \\text { and (np) (npq) }=6 \\\\\\\\\n& \\Rightarrow \\mathrm{n}^2 \\mathrm{p}^2 \\mathrm{q}=6 ........(ii) \\\\\\\\\n& (\\mathrm{i})^2 \\div(\\mathrm{ii}) \\\\\\\\\n& \\frac{(1+q)^2}{9}=\\frac{25}{6} \\\\\\\\\n& \\Rightarrow 6 \\mathrm{q}^2-13 \\mathrm{q}+6=0 \\\\\\\\\n& \\Rightarrow \\mathrm{q}=\\frac{2}{3}, \\frac{3}{2} \\text { (rejected) } \\\\\\\\\n& \\mathrm{p}=1-\\frac{2}{3}=\\frac{1}{3} \\\\\\\\\n& \\frac{n}{3}\\left(1+\\frac{2}{3}\\right)=5 \\\\\\\\\n& \\Rightarrow \\mathrm{n}=9 \\\\\\\\\n& 6(\\mathrm{n}+\\mathrm{p}-\\mathrm{q})=52\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh203h68",
@@ -141,7 +141,7 @@
     "difficulty": "medium",
     "solution": "Given, a pair of dice is thrown once, then number of outcomes $=6 \\times 6=36$\n<br/><br/>A total of 5 are $\\{(1,4),(2,3),(4,1),(3,2)\\}$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore p  =p(\\text { success })=\\frac{4}{36}=\\frac{1}{9} \\\\\\\\\n& q  =1-\\frac{1}{9}=\\frac{8}{9}\n\\end{aligned}\n$$\n<br/><br/>Let $X$ represent the number of success\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore P(\\text { at least } 4 \\text { success }) \\\\\\\\\n&=P(X=4)+P(X=5) \\\\\\\\\n&={ }^5 C_4 p^4 q+{ }^5 C_5 p^5 q^{5-5} \\\\\\\\\n&=5\\left(\\frac{1}{9}\\right)^4\\left(\\frac{8}{9}\\right)+\\left(\\frac{1}{9}\\right)^5 \\\\\\\\\n&=\\frac{40+1}{\\left(3^2\\right)^5}=\\frac{41}{310} \\\\\\\\\n&=\\frac{41 \\times 3}{3^{11}}=\\frac{123}{3^{11}} \\\\\\\\\n& \\therefore k=123\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5bb8fiy",
@@ -180,7 +180,7 @@
     "difficulty": "medium",
     "solution": "$3 P(X=0)=P(X=1)$\n<br/><br/>\n$$\n\\begin{aligned}\n&3 \\cdot{ }^{n} C_{0} P^{0}(1-P)^{n}={ }^{n} C_{1} P^{1}(1-P)^{n-1} \\\\\\\\\n&\\frac{3}{n}=\\frac{P}{1-P} \\Rightarrow \\frac{1}{11}=\\frac{P}{1-P} \\\\\\\\\n&\\Rightarrow 1-P=11 P \\\\\\\\\n&\\Rightarrow P=\\frac{1}{12}\n\\end{aligned}\n$$\n<br/><br/>\n$$\n\\frac{P(X=15)}{P(X=18)}-\\frac{P(X=16)}{P(X=17)}\n$$\n<br/><br/>\n$$\n\\begin{aligned}\n&\\Rightarrow \\frac{{ }^{33} C_{15} P^{15}(1-P)^{18}}{{ }^{33} C_{18} P^{18}(1-P)^{15}}-\\frac{{ }^{33} C_{16} P^{16}(1-P)^{17}}{{ }^{33} C_{17} P^{17}(1-P)^{16}} \\\\\\\\\n&\\Rightarrow\\left(\\frac{1-P}{P}\\right)^{3}-\\left(\\frac{1-P}{P}\\right) \\\\\\\\\n&\\Rightarrow \\quad 11^{3}-11=1320\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6dwkw92",
@@ -202,7 +202,7 @@
     "difficulty": "medium",
     "solution": " If $n$ is number of trails, $p$ is probability of success and $q$ is probability of unsuccess then,\n<br/><br/>\n$$\n\\begin{aligned}\n& \\text { Mean }=n p \\text { and variance }=n p q \\text {. } \\\\\\\\\n& \\text { Here }\\\\\\\\\n&  n p+n p q=24 \\quad \\dots(i)\\\\\\\\\n& n p . n p q=128 \\quad \\dots(ii)\\\\\\\\\n&\\text { and } q=1-p \\quad \\dots(iii)\n\\end{aligned}\n$$\n<br/><br/>\nfrom eq. (i), (ii) and (iii) : $p=q=\\frac{1}{2}$ and $n=32$.\n<br/><br/>\n$\\therefore$ Required probability $=p(X=1)+p(X=2)$\n<br/><br/>\n$$\n\\begin{aligned}\n& ={ }^{32} C_{1} \\cdot\\left(\\frac{1}{2}\\right)^{32}+{ }^{32} C_{2} \\cdot\\left(\\frac{1}{2}\\right)^{32} \\\\\\\\\n& =\\left(32+\\frac{32 \\times 31}{2}\\right) \\cdot \\frac{1}{2^{32}} \\\\\\\\\n& =\\frac{33}{2^{28}}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6hz9u96",
@@ -224,7 +224,7 @@
     "difficulty": "medium",
     "solution": "<p>Mean $$ = 4 = \\mu  = np$$</p>\n<p>Variance $$ = {\\sigma ^2} = np(1 - P) = {4 \\over 3}$$</p>\n<p>$$4(1 - P) = {4 \\over 3}$$</p>\n<p>$$P = {2 \\over 3}$$</p>\n<p>$$n \\times {2 \\over 3} = 4$$</p>\n<p>$$n = 6$$</p>\n<p>$$P(X = k) = {}^n{C_k}\\,{P^k}{(1 - P)^{n - k}}$$</p>\n<p>$$P(X \\le 2) = P(X = 0) + P(X = 1) + P(X = 2)$$</p>\n<p>$$ = {}^6{C_0}{P^0}{(1 - P)^6} + {}^6{C_1}{P^1}{(1 - P)^5} + {}^6{C_2}{P^2}{(1 - P)^4}$$</p>\n<p>$$ = {}^6{C_0}{\\left( {{1 \\over 3}} \\right)^6} + {}^6{C_1}\\left( {{2 \\over 3}} \\right){\\left( {{1 \\over 3}} \\right)^5} + {}^6{C_2}{\\left( {{2 \\over 3}} \\right)^2}{\\left( {{1 \\over 3}} \\right)^4}$$</p>\n<p>$$ = {\\left( {{1 \\over 3}} \\right)^6}[1 + 12 + 60] = {{73} \\over {{3^6}}}$$</p>\n<p>$$54P\\,(X \\le 2) = {{73} \\over {{3^6}}} \\times 54 = {{146} \\over {27}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6gisnao",
@@ -246,7 +246,7 @@
     "difficulty": "medium",
     "solution": "<p>Given, mean $$ = np = \\alpha $$.</p>\n<p>and variance $$ = npq = {\\alpha  \\over 3}$$</p>\n<p>$$ \\Rightarrow q = {1 \\over 3}$$ and $$p = {2 \\over 3}$$</p>\n<p>$$P(X = 1) = n.{p^1}.{q^{n - 1}} = {4 \\over {243}}$$</p>\n<p>$$ \\Rightarrow n.{2 \\over 3}.{\\left( {{1 \\over 3}} \\right)^{n - 1}} = {4 \\over {243}}$$</p>\n<p>$$ \\Rightarrow n = 6$$</p>\n<p>$$P(X = 4\\,\\mathrm{or}\\,5) = {}^6{C_4}\\,.\\,{\\left( {{2 \\over 3}} \\right)^4}\\,.\\,{\\left( {{1 \\over 3}} \\right)^2} + {}^6{C_5}\\,.\\,{\\left( {{2 \\over 5}} \\right)^5}\\,.\\,{1 \\over 3}$$</p>\n<p>$$ = {{16} \\over {27}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l58a4o04",
@@ -268,7 +268,7 @@
     "difficulty": "medium",
     "solution": "<p>Coin is tossed 5 times, so n = 5</p>\n<p>Let, p = probability of getting heads</p>\n<p>q = probability of getting tails.</p>\n<p>$$\\therefore$$ p + q = 1 ...... (1)</p>\n<p>$$\\therefore$$ Probability of getting 4 heads</p>\n<p>= <sup>5</sup>C<sub>4</sub> . p<sup>4</sup> . q</p>\n<p>And probability of getting 5 heads</p>\n<p>= <sup>5</sup>C<sub>5</sub> . p<sup>5</sup></p>\n<p>Given, <sup>5</sup>C<sub>4</sub> . p<sup>4</sup> . q = <sup>5</sup>C<sub>5</sub> . p<sup>5</sup></p>\n<p>$$\\Rightarrow$$ 5q = p ....... (2)</p>\n<p>From equation (1) and (2), we get,</p>\n<p>5q + q = 1</p>\n<p>$$\\Rightarrow$$ 6q = 1</p>\n<p>$$\\Rightarrow$$ q = $${1 \\over 6}$$</p>\n<p>$$\\therefore$$ p = 1 $$-$$ $${1 \\over 6}$$ = $${5 \\over 6}$$</p>\n<p>Now, probability of getting atmost two heads</p>\n<p>= p (x = 0) + p (x = 1) + p (x = 2)</p>\n<p>p (x = 0) = Getting zero head in 5 trials</p>\n<p>= <sup>5</sup>C<sub>0</sub> . p<sup>0</sup> . q<sup>5</sup></p>\n<p>p (x = 1) = Getting one head in 5 trials</p>\n<p>= <sup>5</sup>C<sub>1</sub> . p<sup>1</sup> . q<sup>4</sup></p>\n<p>p (x = 2) = Getting two heads in 5 trials</p>\n<p>= <sup>5</sup>C<sub>2</sub> . p<sup>2</sup> . q<sup>3</sup></p>\n<p>= <sup>5</sup>C<sub>0</sub> . q<sup>5</sup> + <sup>5</sup>C<sub>1</sub> . pq<sup>4</sup> + <sup>5</sup>C<sub>2</sub> . p<sup>2</sup>q<sup>3</sup></p>\n<p>$$ = {\\left( {{1 \\over 6}} \\right)^5} + 5\\,.\\,{5 \\over 6}\\,.\\,{\\left( {{1 \\over 6}} \\right)^4} + 10\\,.\\,{\\left( {{5 \\over 6}} \\right)^2}\\,.\\,{\\left( {{1 \\over 6}} \\right)^3}$$</p>\n<p>$$ = {{1 + 25 + 250} \\over {{6^5}}} = {{276} \\over {{6^5}}}$$ = $${{46} \\over {{6^4}}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6kkqt6p",
@@ -290,7 +290,7 @@
     "difficulty": "medium",
     "solution": "<p>Mean $$ = np = 16$$</p>\n<p>Variance $$ = npq = 8$$</p>\n<p>$$ \\Rightarrow q = p = {1 \\over 2}$$ and $$n = 32$$</p>\n<p>$$P(x > n - 3) = p(x = n - 2) + p(x = n - 1) + p(x = n)$$</p>\n<p>$$ = \\left( {{}^{32}{C_2} + {}^{32}{C_1} + {}^{32}{C_0}} \\right)\\,.\\,{1 \\over {{2^n}}}$$</p>\n<p>$$ = {{529} \\over {{2^n}}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l57op7rj",
@@ -312,7 +312,7 @@
     "difficulty": "medium",
     "solution": "<p>Given P(X = 3) = 5P(X = 4) and n = 7</p>\n<p>$$ \\Rightarrow {}^7{C_3}{p^3}{q^4} = 5\\,.\\, \\Rightarrow {}^7{C_4}{p^4}{q^3}$$</p>\n<p>$$ \\Rightarrow q = 5p$$ and also $$p + q = 1$$</p>\n<p>$$ \\Rightarrow p = {1 \\over 6}$$ and $$q = {5 \\over 6}$$</p>\n<p>Mean $$ = {7 \\over 6}$$ and variance $$ = {{35} \\over {36}}$$</p>\n<p>Mean + Variance $$ = {7 \\over 6} + {{35} \\over {36}} = {{77} \\over {36}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6rffxn0",
@@ -351,7 +351,7 @@
     "difficulty": "easy",
     "solution": "<p>Given,</p>\n<p>$$n = 5$$</p>\n<p>and $$P(X = 0) = P(X = 1)$$</p>\n<p>We know, $$p(x = r) = {}^n{C_r}\\,.\\,{p^r}\\,.\\,{q^{n - r}}$$</p>\n<p>where $$p + q = 1$$</p>\n<p>$$\\therefore$$ $$P(X = 0) = P(X = 1)$$</p>\n<p>$$ \\Rightarrow {}^5{C_0}\\,.\\,{p^0}\\,.\\,{q^5} = {}^5{C_1}\\,.\\,{p^1}\\,.\\,{q^4}$$</p>\n<p>$$ \\Rightarrow 1\\,.\\,1\\,.\\,{(1 - p)^5} = 5\\,.\\,p\\,.\\,{(1 - p)^4}$$</p>\n<p>$$ \\Rightarrow 1 - p = 5p$$</p>\n<p>$$ \\Rightarrow 6p = 1$$</p>\n<p>$$ \\Rightarrow p = {1 \\over 6}$$</p>\n<p>$$\\therefore$$ $$q = 1 - p = 1 - {1 \\over 6} = {5 \\over 6}$$</p>\n<p>Now, $${{P(X = 2)} \\over {P(X = 3)}} = {{{}^5{C_2}\\,.\\,{p^2}\\,.\\,{q^3}} \\over {{}^5{C_3}\\,.\\,{p^3}\\,.\\,{q^2}}}$$</p>\n<p>$$ = {{10\\,.\\,q} \\over {10\\,.\\,p}}$$</p>\n<p>$$ = {5 \\over 6} \\times {6 \\over 1}$$</p>\n<p>$$ = 5$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "uamm4PJDXxn7SEVBRT1kmm2wyow",
@@ -373,7 +373,7 @@
     "difficulty": "medium",
     "solution": "$${}^5{C_1}{p^1}{q^4}$$ = 0.4096 ..... (1)<br><br>$${}^5{C_2}{p^2}{q^3}$$ = 0.2048 ..... (2)<br><br>$${{(1)} \\over {(2)}} \\Rightarrow {q \\over {2p}} = 2 \\Rightarrow q = 4p$$<br><br>$$p + q = 1 \\Rightarrow P = {1 \\over 5},q = {4 \\over 5}$$<br><br>P (exactly 3) = $${}^5{C_3}{(p)^3}{(q)^2} = {}^5{C_3}{\\left( {{1 \\over 5}} \\right)^3}{\\left( {{4 \\over 5}} \\right)^2}$$<br><br>$$ = 10 \\times {1 \\over {125}} \\times {{16} \\over {25}} = {{32} \\over {625}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wcKeZHloIi9ghYWsTA1klrhaah4",
@@ -395,7 +395,7 @@
     "difficulty": "medium",
     "solution": "P(odd no. twice) = P(even no. thrice)<br><br>$$ \\Rightarrow {}^n{C_2}{\\left( {{1 \\over 2}} \\right)^n} = {}^n{C_3}{\\left( {{1 \\over 2}} \\right)^n} \\Rightarrow n = 5$$<br><br>Success is getting an odd number then P(odd successes) = P(1) + P(3) + P(5)<br><br>$$ = {}^5{C_1}{\\left( {{1 \\over 2}} \\right)^5} + {}^5{C_3}{\\left( {{1 \\over 2}} \\right)^5} + {}^5{C_5}{\\left( {{1 \\over 2}} \\right)^5}$$<br><br>$$ = {{16} \\over {{2^5}}} = {1 \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jvIiWm7JdY4spvuhU21klugrqgz",
@@ -417,7 +417,7 @@
     "difficulty": "medium",
     "solution": "Let the coin be tossed n-times<br><br>$$P(H) = P(T) = {1 \\over 2}$$<br><br>P(7 heads) = $${}^n{C_7}{\\left( {{1 \\over 2}} \\right)^{n - 7}}{\\left( {{1 \\over 2}} \\right)^7} = {{{}^n{C_7}} \\over {{2^n}}}$$<br><br>P(9 heads) = $${}^n{C_9}{\\left( {{1 \\over 2}} \\right)^{n - 9}}{\\left( {{1 \\over 2}} \\right)^9} = {{{}^n{C_9}} \\over {{2^n}}}$$<br><br>P(7 heads) = P(9 heads)<br><br>$${}^n{C_7} = {}^n{C_9} \\Rightarrow n = 16$$<br><br>P(2 heads) = $${}^{16}{C_2}{\\left( {{1 \\over 2}} \\right)^{14}}{\\left( {{1 \\over 2}} \\right)^2} = {{15 \\times 8} \\over {{2^{16}}}}$$<br><br>P(2 heads) $$ = {{15} \\over {{2^{13}}}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktfz7m08",
@@ -439,7 +439,7 @@
     "difficulty": "easy",
     "solution": "<p>Let x be the number of heads obtained by A, and y be the number of heads obtained by B.</p>\n<p>Note that x and y are binomial variable with parameters n = 3 and p = $${1 \\over 2}$$</p>\n<p>$$\\therefore$$ Probability that both A and B obtained the same number of heads is</p>\n<p>$$ = P(x = 0)\\,.\\,P(y = 0) + P(x = 1)\\,.\\,P(y = 1) + P(x = 2)\\,.\\,P(y = 2) + P(x = 3)\\,.\\,P(y = 3)$$</p>\n<p>$$ = {\\left[ {{3_{{C_0}}}{{\\left( {{1 \\over 2}} \\right)}^3}} \\right]^2} + {\\left[ {{3_{{C_1}}}{{\\left( {{1 \\over 2}} \\right)}^3}} \\right]^2} + {\\left[ {{3_{{C_2}}}{{\\left( {{1 \\over 2}} \\right)}^3}} \\right]^2} + {\\left[ {{3_{{C_3}}}{{\\left( {{1 \\over 2}} \\right)}^3}} \\right]^2}$$</p>\n<p>$$ = {\\left( {{1 \\over 2}} \\right)^6}\\left[ {1 + 9 + 9 + 1} \\right]$$</p>\n<p>$$ = {{20} \\over {64}}$$</p>\n<p>$$ = {5 \\over {16}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krxij6cm",
@@ -461,7 +461,7 @@
     "difficulty": "medium",
     "solution": "$$P(E) &lt; {1 \\over 2}$$<br><br>$$ \\Rightarrow \\sum\\limits_{r = n}^8 {{}^8{C_r}} {\\left( {{1 \\over 2}} \\right)^{8 - r}}{\\left( {{1 \\over 2}} \\right)^r} &lt; {1 \\over 2}$$<br><br>$$ \\Rightarrow \\sum\\limits_{r = n}^8 {{}^8{C_r}} {\\left( {{1 \\over 2}} \\right)^8} &lt; {1 \\over 2}$$<br><br>$$ \\Rightarrow {}^8{C_n} + {}^8{C_{n + 1}} + .... + {}^8{C_8} &lt; 128$$<br><br>$$ \\Rightarrow 256 - \\left( {{}^8{C_0} + {}^8{C_1} + ... + {}^8{C_{n - 1}}} \\right) &lt; 128$$<br><br>$$ \\Rightarrow {}^8{C_0} + {}^8{C_1} + .... + {}^8{C_{n - 1}} &gt; 128$$<br><br>$$ \\Rightarrow n - 1 \\ge 4$$<br><br>$$ \\Rightarrow n \\ge 5$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kudysvoz",
@@ -502,7 +502,7 @@
     "solution": "It is given that $$\\alpha $$ is the number of heads that appear when C<sub>1</sub> is tossed twice, the probability distribution of random variable $$\\alpha $$ is<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks7kst1n/22c2d495-8f8e-4403-9267-13da64064b70/b7260db0-faae-11eb-8c22-2f14dd80798f/file-1ks7kst1o-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks7kst1n/22c2d495-8f8e-4403-9267-13da64064b70/b7260db0-faae-11eb-8c22-2f14dd80798f/file-1ks7kst1o-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks7kst1n/22c2d495-8f8e-4403-9267-13da64064b70/b7260db0-faae-11eb-8c22-2f14dd80798f/file-1ks7kst1o-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks7kst1n/22c2d495-8f8e-4403-9267-13da64064b70/b7260db0-faae-11eb-8c22-2f14dd80798f/file-1ks7kst1o-860w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ks7kst1n/22c2d495-8f8e-4403-9267-13da64064b70/b7260db0-faae-11eb-8c22-2f14dd80798f/file-1ks7kst1o.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Advanced 2020 Paper 1 Offline Mathematics - Probability Question 31 English Explanation 1\"></picture> <br><br>Similarly, it is given that $$\\beta $$ is the number of heads that appear when C<sub>2</sub> is tossed twice, so probability distribution of random variable $$\\beta $$ is<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks7ku0rs/17b631d0-ec1e-4c33-9e76-d75579802e47/d8ed3590-faae-11eb-8c22-2f14dd80798f/file-1ks7ku0rt-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks7ku0rs/17b631d0-ec1e-4c33-9e76-d75579802e47/d8ed3590-faae-11eb-8c22-2f14dd80798f/file-1ks7ku0rt-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks7ku0rs/17b631d0-ec1e-4c33-9e76-d75579802e47/d8ed3590-faae-11eb-8c22-2f14dd80798f/file-1ks7ku0rt-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks7ku0rs/17b631d0-ec1e-4c33-9e76-d75579802e47/d8ed3590-faae-11eb-8c22-2f14dd80798f/file-1ks7ku0rt-860w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ks7ku0rs/17b631d0-ec1e-4c33-9e76-d75579802e47/d8ed3590-faae-11eb-8c22-2f14dd80798f/file-1ks7ku0rt.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Advanced 2020 Paper 1 Offline Mathematics - Probability Question 31 English Explanation 2\"></picture> <br><br>Now, as the roots of quadratic polynomial x<sup>2</sup> $$-$$ $$\\alpha $$x + $$\\beta $$ are real and equal, so D = $$\\alpha $$<sup>2</sup> $$-$$ 4$$\\beta $$ = 0 and it is possible if ($$\\alpha $$, $$\\beta $$) = (0, 0) or (2, 1)<br><br>$$ \\therefore $$ Required probability<br><br>= $${\\left( {{1 \\over 3}} \\right)^2}{\\left( {{2 \\over 3}} \\right)^2} + {\\left( {{2 \\over 3}} \\right)^2}\\left( {{4 \\over 9}} \\right)$$<br><br>= $${{4 \\over {81}}}$$ + $${{16 \\over {81}}}$$ = $${{20 \\over {81}}}$$",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "L6VXpYoN5l2w2QYZkF1kk3nxo8m",
@@ -559,7 +559,7 @@
     "difficulty": "medium",
     "solution": "Probablity of at most two machines will be out of service = $${\\left( {{3 \\over 4}} \\right)^3}k$$\n<br><br>$$ \\Rightarrow $$ <sup>5</sup>C<sub>0</sub>$${\\left( {{3 \\over 4}} \\right)^5}$$ + <sup>5</sup>C<sub>1</sub>$$\\left( {{1 \\over 4}} \\right){\\left( {{3 \\over 4}} \\right)^5}$$ + <sup>5</sup>C<sub>2</sub>$${\\left( {{1 \\over 4}} \\right)^2}{\\left( {{3 \\over 4}} \\right)^5}$$ = $${\\left( {{3 \\over 4}} \\right)^3}k$$\n<br><br>$$ \\Rightarrow $$ $${{17} \\over 8}{\\left( {{3 \\over 4}} \\right)^3}$$ = $${\\left( {{3 \\over 4}} \\right)^3}k$$\n<br><br>$$ \\Rightarrow $$ k = $${{17} \\over 8}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "PQxlp1mj9JtBpAOqST5uh",
@@ -581,7 +581,7 @@
     "difficulty": "easy",
     "solution": "$$1 - {}^n{C_0}{\\left( {{1 \\over 3}} \\right)^0}{\\left( {{2 \\over 3}} \\right)^n} &gt; {5 \\over 6}$$\n<br><br>$${1 \\over 6} &gt; {\\left( {{2 \\over 3}} \\right)^n}\\,\\, \\Rightarrow \\,\\,0.1666 &gt; {\\left( {{2 \\over 3}} \\right)^n}$$\n<br><br>$${n_{\\min }} = 5$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "8LM5BOab51jC57AsuYgDh",
@@ -603,7 +603,7 @@
     "difficulty": "easy",
     "solution": "p (probability of getting white ball) = $${{30} \\over {40}}$$\n<br><br>q = $${1 \\over 4}$$ and n = 16\n<br><br>mean = np = 16.$${3 \\over 4}$$ = 12\n<br><br>and standard diviation\n<br><br>= $$\\sqrt {npq} $$ = $$\\sqrt {16.{3 \\over 4}.{1 \\over 4}}  = \\sqrt 3 $$<br><br>\n$$ \\because $$ $$mean \\over standard\\,deviation$$ = $$12\\over{\\sqrt3}$$ = $$4{\\sqrt3}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "dNyf7SQZWaNvnOFNKi3rsa0w2w9jxb0q6m7",
@@ -625,7 +625,7 @@
     "difficulty": "medium",
     "solution": "There are 50 questions in an exam.<br><br>\nSo Probability of each question to be correct is p = $${4 \\over 5}$$<br><br>\nand also probability of each question to be incorrect is q = $${1 \\over 5}$$<br><br>\nLet Y is the number of correct question in 50 questions, hence required probability is <br><br>\n$${\\left( {{4 \\over 5}} \\right)^{50}} + {}^{50}{C_1}\\left( {{1 \\over 5}} \\right){\\left( {{4 \\over 5}} \\right)^{49}}$$<br><br>\n= $${\\left( {{4 \\over 5}} \\right)^{49}} + \\left( {{4 \\over 5} + 10} \\right)\\left( {{4 \\over 5}} \\right)$$<br><br>\n= $${{54} \\over 5}{\\left( {{4 \\over 5}} \\right)^{49}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "y42Fg1dEZL6zPE14iO3rsa0w2w9jx66ep25",
@@ -647,7 +647,7 @@
     "difficulty": "medium",
     "solution": "Let number of trials be n and probability of success = p, probability of failure = q<br><br>\nGiven np = 8, npq = 4<br><br>\n$$ \\Rightarrow $$ q = $${1 \\over 2}$$, p = $${1 \\over 2}$$, n = 16 (as p + q = 1)<br><br>\np$$\\left( {x \\le 2} \\right)$$ = $${{{}^{16}{C_0} + {}^{16}{C_1} + {}^{16}{C_2}} \\over {{2^{16}}}} = {{1 + 16 + 120} \\over {{2^{16}}}} = {{137} \\over {{2^{16}}}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "sLnGz2MXngSYJtUcmwWgT",
@@ -669,7 +669,7 @@
     "difficulty": "easy",
     "solution": "P (X = 1) means out of two drawn cards one card is ace. \n<br><br>and P(X = 2) means both the drawn cards are ace.\n<br><br>$$ \\therefore $$&nbsp;&nbsp;P(X = 1) = first card is ace or 2nd card is ace.\n<br><br>= A _ $$+$$ _ A\n<br><br>= $${4 \\over {52}} \\times {{48} \\over {52}} + {{48} \\over {52}} \\times {4 \\over {52}}$$\n<br><br>= $$2 \\times {4 \\over {52}} \\times {{48} \\over {52}}$$\n<br><br>P(X = 2) = First and second both cards arc ace.\n<br><br>= A   A\n<br><br>= $${4 \\over {52}} \\times {4 \\over {52}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;P(X = 1) + P(X = 2)\n<br><br>= $$2 \\times {4 \\over {52}} \\times {{48} \\over {52}} + {4 \\over {52}} \\times {4 \\over {52}}$$\n<br><br>= $${{25} \\over {169}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "TNLBuSQYBYqruPcC",
@@ -691,7 +691,7 @@
     "difficulty": "easy",
     "solution": "We can apply binomial probability distribution\n<br><br>n = 10\n<br><br>p = Probability of drawing a green ball = $${{15} \\over {25}}$$ = $${3 \\over 5}$$\n<br><br>Also q = 1 - $${3 \\over 5}$$ = $${2 \\over 5}$$\n<br><br>Variance = npq\n<br><br>= $$10 \\times {3 \\over 5} \\times {2 \\over 5}$$ = $${{12} \\over 5}$$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "fPr4yNo79AsCQj24OgUaE",
@@ -713,7 +713,7 @@
     "difficulty": "easy",
     "solution": "Probability of fail, P(F) = p\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Probability of success, P(S) = 2p\n<br><br>We know, \n<br><br>p + 2Pp = 1\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;p = $${1 \\over 3}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Now, probability of at least 5 success in 6 trials,\n<br><br>P(x $$ \\ge $$ 5)\n<br><br>= P(x = 5) + P (x = 6)\n<br><br>= <sup>6</sup>C<sub>5</sub> $${\\left( {{2 \\over 3}} \\right)^5}{\\left( {{1 \\over 3}} \\right)^1}{ + ^6}{C_6}{\\left( {{2 \\over 3}} \\right)^6}{\\left( {{1 \\over 3}} \\right)^o}$$\n<br><br>= $${\\left( {{2 \\over 3}} \\right)^5}\\left( {{6 \\over 3} + {2 \\over 3}} \\right)$$\n<br><br>= $${{256} \\over {729}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "c4O5zBdos6LlUTh8",
@@ -775,7 +775,7 @@
     "difficulty": "medium",
     "solution": "Here is 5 trials.\n<br>So according to Bernoulli trial n = 5\n<br><br>P( at least one failure) = 1 - P( no failure)\n<br><br>According to question,\n<br>1 - P( no failure) $$ \\ge {{31} \\over {32}}$$\n<br><br>$$ \\Rightarrow $$ 1 - P( x = 5 ) $$ \\ge {{31} \\over {32}}$$\n<br><br>[<b>Note:</b> no failure = all success]\n<br><br>$$ \\Rightarrow $$ 1 - $${}^5{C_5}\\,{p^5}$$ $$ \\ge {{31} \\over {32}}$$\n <br><br>$$ \\Rightarrow $$ 1 - $${p^5}$$ $$ \\ge {{31} \\over {32}}$$\n<br><br>$$ \\Rightarrow $$ $${p^5}$$ $$ \\le $$ $${1 \\over {32}}$$\n<br><br>$$ \\Rightarrow $$ $$p$$ $$ \\le $$ $${1 \\over {2}}$$\n<br><br>$$\\therefore$$ $$p$$ $$ \\in $$ $$\\left[ {0,{1 \\over 2}} \\right]$$\n<br><br><b>Note:</b> $$p$$ can not be less than 0 as probability is always $$\\ge$$ 0 and $$\\le$$ 1.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "uWKlDoLk0I45E7uG",
@@ -797,7 +797,7 @@
     "difficulty": "medium",
     "solution": "Given that, no of trials = n\n<br>Probability of success (p) = $${{1 \\over 4}}$$\n<br>$$\\therefore$$ Probability of no success = 1 - $${{1 \\over 4}}$$ = $${{3 \\over 4}}$$\n<br><br>As we know, probability of at least one success = 1 - probability of no success\n<br><br>$$\\therefore$$ According to the question,\n<br><br>1 - (Probability of no success in n trials) $$\\ge$$ $${9 \\over {10}}$$\n<br><br>$$ \\Rightarrow $$ 1 - P(x = 0) $$\\ge$$ $${9 \\over {10}}$$\n<br><br>$$ \\Rightarrow $$ 1 - $${}^n{C_0}$$$${\\left( {{1 \\over 4}} \\right)^0}$$$${\\left( {{3 \\over 4}} \\right)^n}$$ $$\\ge$$ $${9 \\over {10}}$$\n<br><br>$$ \\Rightarrow $$ 1 - $${\\left( {{3 \\over 4}} \\right)^n}$$ $$\\ge$$ $${9 \\over {10}}$$\n<br><br>$$ \\Rightarrow $$ $${\\left( {{3 \\over 4}} \\right)^n}$$ $$\\le$$ $${1 \\over {10}}$$\n<br><br>$$ \\Rightarrow $$ $${\\left( {{4 \\over 3}} \\right)^n}$$ $$\\ge$$ $$10$$\n<br><br>[Taking log on both sides]\n<br><br>$$ \\Rightarrow $$ $$n\\left( {\\log _{10}^4 - \\log _{10}^3} \\right)$$ $$\\ge$$ $${\\log _{10}^{10}}$$\n<br><br>$$ \\Rightarrow $$ $$n\\left( {\\log _{10}^4 - \\log _{10}^3} \\right)$$ $$\\ge$$ $$1$$\n<br><br>$$ \\Rightarrow $$ $$n$$ $$\\ge$$ $${1 \\over {\\left( {\\log _{10}^4 - \\log _{10}^3} \\right)}}$$\n<br><br>$$\\therefore$$ Option (D) is correct.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "R9zlWlJjkftCAb8Q",
@@ -819,7 +819,7 @@
     "difficulty": "medium",
     "solution": "<p>Probability of getting score 9 in a single throw</p>\n<p>$$ = {4 \\over {36}} = {1 \\over 9}.$$</p>\n<p>Probability of getting score 9 exactly twice</p>\n<p>$$ = {}^3{C_2} \\times {\\left( {{1 \\over 9}} \\right)^2} \\times {8 \\over 9} = {8 \\over {243}}.$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "WwUXVwpKwqJWZr3N",
@@ -841,7 +841,7 @@
     "difficulty": "easy",
     "solution": "<p>Given that mean = 4 = np = 4 and variance = 2</p>\n<p>npq = 2 $$\\Rightarrow$$ 4q = 2</p>\n<p>$$ \\Rightarrow q = {1 \\over 2}$$</p>\n<p>$$\\therefore$$ $$p = 1 - q = 1 - {1 \\over 2} = {1 \\over 2}$$</p>\n<p>Also, n = 8</p>\n<p>Probability of 2 successes $$ = P(X = 2) = {}^8{C_2}{p^2}{q^6}$$</p>\n<p>$$ = {{8!} \\over {2! \\times 6!}} \\times {\\left( {{1 \\over 2}} \\right)^2} \\times {\\left( {{1 \\over 2}} \\right)^6} = 28 \\times {1 \\over {{2^8}}}$$</p>\n<p>$$ = {{28} \\over {256}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "KSCoYtIeFC6mdWAN",
@@ -863,7 +863,7 @@
     "difficulty": "easy",
     "solution": "Mean = $$np$$ = 4\n<br>Variance = $$npq$$ = 2\n<br><br>$$ \\Rightarrow 4 \\times q$$ = 2\n<br>$$ \\Rightarrow$$ $$q$$ = $${1 \\over 2}$$\n<br>p = 1 - q = 1 - $${1 \\over 2}$$ = $${1 \\over 2}$$\n<br>n = 8\n<br><br>Now P(X = 1) = $${}^8{C_1}{\\left( {{1 \\over 2}} \\right)^1}{\\left( {{1 \\over 2}} \\right)^{8 - 1}}$$\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= $$8 \\times {1 \\over {{2^8}}}$$\n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= $${1 \\over {32}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "byM0olMAPi99wdnA",
@@ -885,6 +885,6 @@
     "difficulty": "easy",
     "solution": "Total no of trials = 5\n<br>$$\\therefore$$ n = 5\n<br>Odd no possibe are = {1, 3, 5} =3\n<br>Sample space = {1, 2, 3, 4, 5, 6} = 6\n<br><br>Probablity of getting odd number = $${3 \\over 6}$$ = $${1 \\over 2}$$\n<br>$$\\therefore$$ p = $${1 \\over 2}$$\n<br><br>Formula for variance = npq\n<br>where q = 1 - p = 1 - $${1 \\over 2}$$ = $${1 \\over 2}$$\n<br>$$\\therefore$$ Variance = $$5 \\times {1 \\over 2} \\times {1 \\over 2}$$ = $${5 \\over 4}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

@@ -14,7 +14,7 @@
     "difficulty": "medium",
     "solution": "<p>Given the displacement of the particle $$x^2 = 1 + t^2$$, we want to find the acceleration, which is the second derivative of displacement with respect to time, $$a = \\frac{d^2x}{dt^2}$$, and we are given that the acceleration at any time $$t$$ is $$x^{-n}$$, for us to find the value of $$n$$.</p>\n\n<p>First, let's find the first derivative of displacement with respect to time, which gives us the velocity. Differentiating $$x^2 = 1 + t^2$$ with respect to t, we get:</p>\n\n<p>$$2x\\frac{dx}{dt} = 2t$$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$\\frac{dx}{dt} = \\frac{t}{x}$$</p>\n\n<p>Now, let's differentiate this velocity to find the acceleration:</p>\n\n<p>$$a = \\frac{d^2x}{dt^2} = \\frac{d}{dt}\\left(\\frac{t}{x}\\right)$$</p>\n\n<p>To differentiate $$\\frac{t}{x}$$ with respect to $$t$$, we'll use the quotient rule:</p>\n\n<p>$$\\frac{d}{dt}\\left(\\frac{t}{x}\\right) = \\frac{x\\cdot 1 - t\\cdot \\frac{dx}{dt}}{x^2}$$</p>\n\n<p>Substitute $$\\frac{dx}{dt} = \\frac{t}{x}$$ into the equation:</p>\n\n<p>$$a = \\frac{x(1) - t(\\frac{t}{x})}{x^2} = \\frac{x - \\frac{t^2}{x}}{x^2} = \\frac{x^2 - t^2}{x^3}$$</p>\n\n<p>Recalling that the displacement equation given was $$x^2 = 1 + t^2$$, substitute this into our expression for acceleration:</p>\n\n<p>$$a = \\frac{1 + t^2 - t^2}{x^3} = \\frac{1}{x^3}$$</p>\n\n<p>Thus, the acceleration of the particle at any time $$t$$ is $$x^{-3}$$, which means our value for $$n$$ is $$3$$.</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1ldsqh453",
@@ -31,7 +31,7 @@
     "difficulty": "easy",
     "solution": "The speed of ball just before collision with ground is<br/><br/> $u=\\sqrt{2 \\times g H}=\\sqrt{2 \\times 10 \\times 9.8}=\\underset{\\text { (Downwards) }}{14 \\mathrm{~m} / \\mathrm{sec}}$\n<br/><br/>\nThe speed of ball just after collision is\n<br/><br/>\n$v=\\sqrt{2 g h}=\\sqrt{2 \\times 10 \\times 5}=\\underset{\\text { (Upwards) }}{10 \\mathrm{~m} / \\mathrm{sec}}$\n<br/><br/>\nSo, $\\vec{a}=\\frac{\\Delta \\vec{v}}{\\Delta t}$\n<br/><br/>\n$=\\frac{10+14}{0.2}=120 \\mathrm{~m} / \\mathrm{s}^{2}$",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1lgyqeux5",
@@ -53,7 +53,7 @@
     "difficulty": "easy",
     "solution": "Area under velocity time graph gives displacement of body in given time.\n<br/><br/>\nArea under acceleration time graph gives change in velocity in the given time.<br/><br/>\nSo Statement I false but Statement II True",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kte7cggd",
@@ -92,6 +92,6 @@
     "difficulty": "easy",
     "solution": "$$\\overrightarrow r  = \\left( {15{t^2}} \\right)\\widehat i + \\left( {4 - 20{t^2}} \\right)\\widehat j$$<br><br>\n$$\\overrightarrow v  = {{d\\overrightarrow r } \\over {dt}} = \\left( {30t} \\right)\\widehat i - \\left( {40t} \\right)\\widehat j$$<br><br>\n$$\\overrightarrow a  = {{d\\overrightarrow v } \\over {dt}} = \\left( {30} \\right)\\widehat i - \\left( {40} \\right)\\widehat j$$<br><br>\n$$\\left| {\\overrightarrow a } \\right| = 50$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

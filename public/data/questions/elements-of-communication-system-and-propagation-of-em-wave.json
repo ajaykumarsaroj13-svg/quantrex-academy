@@ -19,7 +19,7 @@
     "difficulty": "easy",
     "solution": "In satellite communication, the uplink frequency band refers to the range of frequencies used to transmit signals from the Earth to the satellite. The specific frequency bands used for uplink communication can vary depending on the type of satellite and the service it provides. However, one of the most common frequency bands used for satellite uplinks in geostationary satellite communication is the C-band.\n<br/><br/>\n$$5.925-6.425 \\mathrm{~GHz}$$, is the typical frequency range used for uplink communication in the C-band.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lguy5qu6",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p>To determine the minimum height of the receiving antenna required to receive the signal in line of sight at a distance of 4 km from the transmitting antenna, we need to consider the curvature of the Earth. Let&#39;s denote the height of the receiving antenna as $$h$$ and the distance between the antennas as $$d = 4 \\mathrm{~km}$$.</p>\n<p>We can use the Pythagorean theorem to relate the Earth&#39;s radius $$R$$, the height of the receiving antenna $$h$$, and the distance between the antennas $$d$$:</p>\n<p>$$(R + h)^2 = R^2 + d^2$$</p>\n<p>Now, we can plug in the given values for $$R$$ and $$d$$:</p>\n<p>$$(6400 + h)^2 = 6400^2 + 4^2$$</p>\n<p>Expanding the equation and subtracting $$6400^2$$ from both sides gives:</p>\n<p>$$2 \\times 6400 \\times h + h^2 = 16$$</p>\n<p>Since $$h$$ is much smaller than the Earth&#39;s radius, we can ignore the $$h^2$$ term:</p>\n<p>$$2 \\times 6400 \\times h \\approx 16$$</p>\n<p>Now, we can solve for $$h$$:</p>\n<p>$$h \\approx \\frac{16}{2 \\times 6400} = \\frac{1}{800} \\mathrm{~km}$$</p>\n<p>Converting to meters and multiplying by $$10^2$$ to match the desired format:</p>\n<p>$$x = h \\times 10^3 \\times 10^2 = \\frac{1}{800} \\times 10^5 = 125$$</p>\n<p>So, the value of $$x$$ is 125</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgoztiqi",
@@ -63,7 +63,7 @@
     "difficulty": "easy",
     "solution": "The minimum length of an antenna to efficiently radiate an electromagnetic wave is one quarter of the wavelength of the signal, which is commonly known as a quarter-wave antenna. \n<br/><br/>\nThis is because when the length of the antenna is equal to a quarter of the wavelength of the signal, the voltage and current at the feed point of the antenna are in phase, resulting in efficient radiation of the signal. An antenna that is shorter than a quarter wavelength will not efficiently couple with the signal, while an antenna that is longer than a quarter wavelength may have complex radiation patterns.\n<br/><br/>\nTherefore, the minimum length of an antenna to efficiently radiate an electromagnetic wave is $$\\frac{\\lambda}{4}$$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgq18bgf",
@@ -85,7 +85,7 @@
     "difficulty": "easy",
     "solution": "Let's match the layers of the atmosphere (List - I) with their approximate heights over the Earth's surface (List - II):\n<br/><br/>\n(A) $$\\mathrm{F_1}$$ - Layer: This layer is part of the ionosphere, which is located within the thermosphere. The $$\\mathrm{F_1}$$ layer is at an approximate height of 170 - 190 km. So, A matches with II.\n<br/><br/>\n(B) $$\\mathrm{D}$$ - Layer: This layer is also part of the ionosphere and is the lowest layer of the ionosphere. The $$\\mathrm{D}$$ layer is at an approximate height of 65 - 75 km. So, B matches with IV.\n<br/><br/>\n(C) Troposphere: This is the lowest layer of the Earth's atmosphere, where weather occurs, and it extends up to approximately 10 km over the Earth's surface. So, C matches with I.\n<br/><br/>\n(D) $$\\mathrm{E}$$ - Layer: This layer is another part of the ionosphere, which is above the $$\\mathrm{D}$$ layer and below the $$\\mathrm{F_1}$$ layer. The $$\\mathrm{E}$$ layer is at an approximate height of 100 km. So, D matches with III.\n<br/><br/>\nThus, the correct matching is:\n<br/><br/>\nA - II, B - IV, C - I, D - III",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lgny32wf",
@@ -107,7 +107,7 @@
     "difficulty": "easy",
     "solution": "\n$$\nd_{\\max} = \\sqrt{2Rh_t} + \\sqrt{2Rh_r}\n$$\n<br/><br/>\nwhere $d_{\\max}$ is the maximum distance between the antennas, $R$ is the radius of the earth, $h_t$ is the height of the transmitting antenna above the earth's surface, and $h_r$ is the height of the receiving antenna above the earth's surface.\n<br/><br/>\nSubstituting the given values, we get:\n<br/><br/>\n$$\nd_{\\max} = \\sqrt{2\\times 6400\\,\\mathrm{km}\\times 180\\,\\mathrm{m}} + \\sqrt{2\\times 6400\\,\\mathrm{km}\\times 245\\,\\mathrm{m}} = 104\\,\\mathrm{km}\n$$\n<br/><br/>\nTherefore, the maximum distance between the transmitting and receiving antennas for line of sight communication is $\\boxed{104\\,\\mathrm{km}}$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldofb88n",
@@ -129,7 +129,7 @@
     "difficulty": "easy",
     "solution": "FM broadcast range is 88MHz to 108MHz.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldwqw52m",
@@ -151,7 +151,7 @@
     "difficulty": "easy",
     "solution": "AM Broadast $\\rightarrow 540-1600 \\mathrm{KHz}$<br/><br/>\nFM Broadcast $\\rightarrow 88-108 \\mathrm{MHz}$<br/><br/>\nTelevision $\\rightarrow 54-890 \\mathrm{MHz}$<br/><br/>\nSalellite communication $\\rightarrow 3.7-4.2 \\mathrm{GHz}$<br/><br/>\n$\\therefore$ A-II, B-I, C-IV, D-III",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldtxrfri",
@@ -173,7 +173,7 @@
     "difficulty": "easy",
     "solution": "$\\rightarrow 10 \\mathrm{~km}$ over Earth's surface - Troposphere\n<br/><br/>\n$\\rightarrow 100 \\mathrm{~km}$ over Earth's surface - E-part of stratosphere\n<br/><br/>\n$\\rightarrow 300 \\mathrm{~km}$ over Earth's surface $-\\mathrm{F}_{2}$-part of thermosphere\n<br/><br/>\n$\\rightarrow$ 65-75 km over Earth's surface - D-part of stratosphere",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldspsli2",
@@ -195,7 +195,7 @@
     "difficulty": "easy",
     "solution": "Maximum line of sight distance between two antennas, $\\mathrm{d}_{\\mathrm{M}}=\\sqrt{2 \\mathrm{Rh}_{\\mathrm{T}}}+\\sqrt{2 \\mathrm{R} \\cdot \\mathrm{h}_{\\mathrm{R}}}$\n<br/><br/>\n$\\mathrm{d}_{\\mathrm{M}}=2 \\times \\sqrt{2 \\times 6.4 \\times 10^{6} \\times 80}=64 \\mathrm{~km}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh24v2j5",
@@ -217,7 +217,7 @@
     "difficulty": "medium",
     "solution": "<p>The range of transmission (R) of a TV tower (or any radio tower) depends on the height of the tower (h). This relationship is given by the formula:</p>\n<p>$$\nR = \\sqrt{2hR_E}\n$$</p>\n<p>where $R_E$ is the radius of the Earth. This formula comes from the geometry of the situation, considering the curvature of the Earth.</p>\n<p>Now, if the height of the tower is increased, this will increase the range of transmission. Specifically, because the height appears under the square root in the formula, the range of transmission is proportional to the square root of the height. So, if the height is multiplied by some factor, the range will be multiplied by the square root of that factor.</p>\n<p>In this case, the height of the tower is increased by 21%, which means the new height is $h_2 = 1.21h_1$. If we substitute this into the formula for the range, we get:</p>\n<p>$$\nR_2 = \\sqrt{2h_2R_E} = \\sqrt{2(1.21h_1)R_E} = \\sqrt{1.21} \\sqrt{2h_1R_E} = 1.1R_1\n$$</p>\n<p>This shows that the new range is 1.1 times the original range, or in other words, the range has increased by 10%.</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgyqlpcj",
@@ -239,7 +239,7 @@
     "difficulty": "easy",
     "solution": "The power radiated by a linear antenna is typically determined by its physical length relative to the wavelength of the signal it is transmitting or receiving. The power radiated from a linear antenna of length 'l' is proportional to the square of the ratio of its length to the wavelength, represented as $(\\frac{l}{\\lambda})^{2}$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh023yn3",
@@ -261,7 +261,7 @@
     "difficulty": "easy",
     "solution": "<p>The range (or distance to the horizon) for line-of-sight communication is given by the formula:</p>\n<p>$d = \\sqrt{2hR}$,</p>\n<p>where:</p>\n<ul>\n<li>$d$ is the range,</li>\n<li>$h$ is the height of the antenna, and</li>\n<li>$R$ is the radius of the Earth.</li>\n</ul>\n<p>Given that $h = 98 \\, \\text{m} = 98 \\times 10^{-3} \\, \\text{km}$ and $R = 6400 \\, \\text{km}$, we can substitute these values into the formula to find $d$:</p>\n<p>$d = \\sqrt{2 \\times 98 \\times 10^{-3} \\times 6400} \\approx 35.42 \\, \\text{km}$.</p>\n<p>The surface area $A$ covered by the transmitting antenna is approximately a circle with radius equal to the range $d$. The area of a circle is given by the formula $A = \\pi r^2$, where $r$ is the radius. Therefore, we can substitute $d$ into this formula to find $A$:</p>\n<p>$A = \\pi d^2 = \\pi (35.42)^2 \\approx 3940 \\, \\text{km}^{2}$.</p>\n<p>Therefore, the surface area covered by the transmitting antenna is approximately $3940 \\, \\text{km}^{2}$.</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5bcdl1x",
@@ -317,7 +317,7 @@
     "difficulty": "easy",
     "solution": "<p>Optical fibres supports frequency of electromagnetic waves in the range 10<sup>14</sup> Hz to 10<sup>15</sup> Hz.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6jiocdy",
@@ -339,7 +339,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\therefore$$ $${r_m} = \\sqrt {2Rh} $$</p>\n<p>$$ \\Rightarrow {{{r_1}} \\over {{r_2}}} = \\sqrt {{{{h_1}} \\over {{h_2}}}} $$</p>\n<p>$$ \\Rightarrow {1 \\over 3} = \\sqrt {{{100} \\over {{h_2}}}} $$</p>\n<p>$$ \\Rightarrow {h_2} = 900$$ m</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l56vkbk3",
@@ -361,7 +361,7 @@
     "difficulty": "medium",
     "solution": "<p>For longer wavelength, size of antenna would increase. Also, mixing of signals needs to be avoided.</p>\n<p>Also, we can use modulation to send low frequency signal by superimposing them with high frequency signals.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l57qw3sm",
@@ -400,7 +400,7 @@
     "difficulty": "easy",
     "solution": "<p>Television signal $$\\Rightarrow$$ 6 MHz</p>\n<p>Radio signal $$\\Rightarrow$$ 2 MHz</p>\n<p>High Quality music $$\\Rightarrow$$ 20 kHz</p>\n<p>Human speech $$\\Rightarrow$$ 3 kHz</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l54v2pq2",
@@ -422,7 +422,7 @@
     "difficulty": "easy",
     "solution": "<p>Range $$R = \\sqrt {2h{\\mathop{\\rm Re}\\nolimits} } $$</p>\n<p>Let the height be h' to double the range so</p>\n<p>$$2R = \\sqrt {2h'{\\mathop{\\rm Re}\\nolimits} } $$</p>\n<p>On solving h' = 4h</p>\n<p>h' = 500 m</p>\n<p>So $$\\Delta$$h = 375 m</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "cbu15v1cs1dnU7avgZ1kmior527",
@@ -444,7 +444,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kqs6wk5k/57691fad-4f99-43ac-8c83-656772511bac/6696df90-de6c-11eb-8d10-0b7ad6e446c3/file-1kqs6wk5l.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 16th March Evening Shift Physics - Communication Systems Question 65 English Explanation\"><br><br>Let minimum height of receiving antenna = h<sub>2</sub><br><br>$$ \\therefore $$ $$d = \\sqrt {2R{h_1}}  + \\sqrt {2R{h_2}} $$<br><br>$$ = 2\\sqrt {2Rh} $$ [given : $${h_1} = {h_2} = h$$]<br><br>$$ \\Rightarrow h = {{{d^2}} \\over {8R}}$$<br><br>$$ = {{45 \\times 45} \\over {8 \\times 6400}}$$ Km<br><br>$$ = 0.03955$$ Km<br><br>$$ = 39.55$$ m",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "UvVPwu9BXBwe5poWCQ1kmhnbkz9",
@@ -466,7 +466,7 @@
     "difficulty": "easy",
     "solution": "Given that, height of peak of antenna : H = 25 m.<br><br>As, we know that<br><br>$$\\lambda$$ = 4H<br><br>$$ \\therefore $$ $$\\lambda$$ = 4 $$\\times$$ 25<br><br>$$ \\Rightarrow $$ $$\\lambda$$ = 100 m",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "rKD00vaanRTia79fZr1kmj3wxf0",
@@ -522,7 +522,7 @@
     "difficulty": "easy",
     "solution": "<b>Troposphere :</b>\n<br>The troposphere starts at the Earth's surface and extends 8 to 14.5 kilometers high\n(6 to 9 miles).\n<br><br><b>Stratosphere :</b>\n<br>The stratosphere starts just above the troposphere and extends to 50 kilometers (31 miles)\nhigh.\n<br><br><b>Mesosphere :</b>\n<br>The mesosphere starts just above the stratosphere and extends to 85 kilometers (53 miles)\nhigh.\n<br><br><b>Thermosphere :</b>\n<br>The Thermosphere starts just above the mesosphere and extends to 600 kilometers (372 miles)\nhigh.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krsvs6g7",
@@ -544,7 +544,7 @@
     "difficulty": "easy",
     "solution": "$$d = \\sqrt {2{R_e}h} $$<br><br>Area covered = $$\\pi$$d<sup>2</sup><br><br>$$h = {{{d^2}} \\over {2{R_e}}}$$ = 1731 m<br><br>Population covered = 2000 $$\\times$$ $$\\pi$$(d<sup>2</sup>)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "9kZKKAhwaqrr7MEKRL1klrp0euf",
@@ -583,7 +583,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ktjedsoy/1c934805-267b-48e9-b94c-20cb78e5f5fc/3e22af10-14fb-11ec-87b0-2f866bb7de71/file-1ktjedsoz.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Evening Shift Physics - Communication Systems Question 53 English Explanation\"> <br><br>$${d_t} = \\sqrt {2R{h_1}}  + \\sqrt {2R{h_2}} $$<br><br>$$ = \\sqrt {2R} \\left( {\\sqrt {{h_1}}  + \\sqrt {{h_2}} } \\right)$$<br><br>$$ = {(2 \\times 6400 \\times {10^3})^{1/2}}(\\sqrt {50}  + \\sqrt {80} )$$<br><br>$$ = 3578(7.07 + 8.94)$$<br><br>$$ = 57.28$$ km",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktfluwou",
@@ -605,7 +605,7 @@
     "difficulty": "easy",
     "solution": "h : height of antenna<br><br>$$\\lambda$$ : wavelength of signal<br><br>h &lt; $$\\lambda$$<br><br>$$\\lambda$$ &gt; h<br><br>$$\\lambda$$ &gt; 400 m",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kte7oij3",
@@ -661,7 +661,7 @@
     "difficulty": "easy",
     "solution": "Optical Fibre Communication – Infrared Light<br><br/>\nRadar – Radio Waves<br><br/>\nSonar – Ultrasound<br><br/>\nMobile Phones – Microwaves",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "xWfKfyF8DZZhtEBdzWB9U",
@@ -683,7 +683,7 @@
     "difficulty": "easy",
     "solution": "Maximum distance upto which signal can be broadcasted is \n<br><br>d<sub>max</sub> = $$\\sqrt {2R{h_T}}  + \\sqrt {2R{h_R}} $$\n<br><br>where h<sub>T</sub> and h<sub>R</sub> are heights of transmitter tower and height of reserver respectively. Putting all values -\n<br><br>d<sub>max</sub> = $$\\sqrt {2 \\times 6.4 \\times 106} \\left[ {\\sqrt {104}  + \\sqrt {40} } \\right]$$\n<br><br>on solving, d<sub>max</sub> = 65 km",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "dLxH6Mvqz41KHVUUnF6VE",
@@ -705,7 +705,7 @@
     "difficulty": "easy",
     "solution": "<p>Range of TV transmitting tower $$d = \\sqrt {2hR} $$ where, h is the height of the transmission tower. When range is doubled,</p>\n<p>$$\\therefore$$ $$2d = 2\\sqrt {2hR}  = \\sqrt {2(4h)R} $$</p>\n<p>So, height must be multiplied with 4.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "AbyExxF0GdOnsWyadlFpp",
@@ -727,7 +727,7 @@
     "difficulty": "easy",
     "solution": "Range = $$\\sqrt {2R{h_T}}  + \\sqrt {2R{h_R}} $$<br><br>\n$$50 \\times {10^3} = \\sqrt {2 \\times 6400 \\times {{10}^3} \\times {h_T}}  + \\sqrt {2 \\times 6400 \\times {{10}^3} \\times 70} $$<br><br>\nBy solving h<sub>T</sub> = 32 m.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "o9kDJjw1iiuS0Lc5957MG",
@@ -749,7 +749,7 @@
     "difficulty": "easy",
     "solution": "Wavelength of carrier waves in modern optical\nfiber communication is most widely used near\nabout 1500 nm.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "5xydr3OdDN6Ihpn7iIZCR",
@@ -771,7 +771,7 @@
     "difficulty": "easy",
     "solution": "The physical size of antenna of receiver and transmitter both are inversely proportional\nto carrier frequency. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "XY5oHkFzD8cJbjpgdNRy3",
@@ -793,7 +793,7 @@
     "difficulty": "medium",
     "solution": "Given, \n<br><br>$$\\lambda $$  =  800 nm\n<br><br>$$ \\therefore $$&nbsp;&nbsp;f = $${{3 \\times {{10}^8}} \\over {800 \\times {{10}^{ - 9}}}}$$\n<br><br>= 3.75 $$ \\times $$ 10<sup>14</sup>  Hz\n<br><br>Available  frequency for signal bandwith \n<br><br>= 1% of F\n<br><br>= 3.75 $$ \\times $$ 10<sup>14</sup> $$ \\times $$ $${1 \\over {100}}$$\n<br><br>= 3.75 $$ \\times $$ 10<sup>12</sup> Hz\n<br><br>One TV signal needs = 6 MHz band width\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Total number of channel possible\n<br><br>=  $${{3.75 \\times {{10}^{12}}} \\over {6 \\times {{10}^6}}}$$\n<br><br>= 6.25 $$ \\times $$ 10<sup>5</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lbc1eczRhGSFNJG8",
@@ -815,7 +815,7 @@
     "difficulty": "easy",
     "solution": "<p>The carrier frequency is 10 GHz, and only 10% of it is utilized for transmission. Therefore, the bandwidth used for transmission is:</p>\n<p>$ \\text{Bandwidth} = 10\\% \\times 10 \\text{ GHz} = 0.1 \\times 10 \\text{ GHz} = 1 \\text{ GHz}$</p>\n<p>We should convert this to kHz because the channel bandwidth is given in kHz:</p>\n<p>$1 \\text{ GHz} = 1,000,000 \\text{ kHz}$</p>\n<p>Now, if each telephonic channel requires a bandwidth of 5 kHz, the number of channels that can be transmitted simultaneously is:</p>\n<p>$\\text{Number of channels} = \\frac{\\text{Total bandwidth}}{\\text{Bandwidth per channel}}$</p>\n<p>$\\text{Number of channels} = \\frac{1,000,000 \\text{ kHz}}{5 \\text{ kHz}}$</p>\n<p>$\\text{Number of channels} = 200,000$</p>\n<p>So, 200,000 telephonic channels can be transmitted simultaneously.</p>\n<p>Among the given options, the correct answer is Option C: $2 \\times 10^5$.</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "UhPPnhFnvgkUJB08YfxUy",
@@ -837,7 +837,7 @@
     "difficulty": "hard",
     "solution": "<p>We know that for a linear antenna of length l, (i) it's length of antenna is comparable to the wavelength of the signal and (ii) the power radiated is proportional to 1/$$\\lambda$$<sup>2</sup>. That is, the power radiated for the antenna increases with decreasing $$\\lambda$$ thereby increasing the frequency.</p>\n<p>Power of the antenna $$P = \\mu {\\left( {{1 \\over l}} \\right)^2}$$</p>\n<p>Here, $$\\mu$$ = K; hence, the correct option  is (D).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "YJfS2N6BUi79xvE7",
@@ -859,7 +859,7 @@
     "difficulty": "medium",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/wrU5yUJqS3gez0BlN/aHFx4ahF1Do6fWqpE0thQYGsOIbvD/0k8erizuhl4Qt407B39VgF/image.png\" loading=\"lazy\" alt=\"AIEEE 2012 Physics - Communication Systems Question 99 English Explanation\">\n<br><br>Let $$d$$ is the maximum distance, upto it the objects \n<br><br>From $$\\Delta AOC$$\n<br><br>$$O{C^2} = A{C^2} + A{O^2}$$\n<br><br>$${\\left( {h + R} \\right)^2} = {d^2} + {R^2}$$\n<br><br>$$ \\Rightarrow {d^2} = {\\left( {h + R} \\right)^2} - {R^2}$$\n<br><br>$$d = \\sqrt {{{\\left( {h + R} \\right)}^2} - {R^2}} $$\n<br><br>$$d = \\sqrt {{h^2} + 2hR} $$\n<br><br>$$d = \\sqrt {{{500}^2} + 2 \\times 6.4 \\times {{10}^6}}  = 80km$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wSTcKrPWSaJwXk7o",
@@ -903,6 +903,6 @@
     "difficulty": "easy",
     "solution": "Optical fibres form a dielectric wave guide and are free from electromagnetic interference or radio frequency interference.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

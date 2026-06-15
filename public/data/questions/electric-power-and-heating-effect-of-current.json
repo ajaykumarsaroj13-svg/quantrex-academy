@@ -19,7 +19,7 @@
     "difficulty": "easy",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 21st January Evening Shift Physics - Current Electricity Question 26 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mm4gv15a/ce2eb6df-5595-43ff-9583-5300566f0030/3d915ae0-139f-11f1-aacc-3b5c559fc870/file-6y3zli1mm4gv15b.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mm4gv15a/ce2eb6df-5595-43ff-9583-5300566f0030/3d915ae0-139f-11f1-aacc-3b5c559fc870/file-6y3zli1mm4gv15b.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The total resistance of the circuit is $(R+r)$.</p>\n<p>Using Ohm's Law, the current I flowing through the circuit is:</p>\n<p>$$ I=\\frac{E}{R+r} $$</p>\n<p>The power consumption P in the external resistor R is given by the formula:</p>\n<p>$$ \\mathrm{P}=\\mathrm{I}^2 \\mathrm{R} $$</p>\n<p>Substituting the expression for I:</p>\n<p>$$ P=\\left(\\frac{E}{R+r}\\right)^2 R=\\frac{E^2 R}{(R+r)^2} $$</p>\n<p>To find the value of R for which P is maximum, we differentiate P with respect to R and set the derivative to zero ( $\\frac{\\mathrm{dP}}{\\mathrm{dR}}=0$ ).</p>\n<p>$$ \\frac{d P}{d R}=E^2\\left[\\frac{(R+r)^2 1-R \\cdot 2(R+r)}{(R+r)^4}\\right]=0 $$</p>\n<p>$$\\Rightarrow $$ $(R+r)^2-2 R(R+r)=0$</p>\n<p>$$\\Rightarrow $$ $(R+r)-2 R=0$</p>\n<p>$$\\Rightarrow $$ $r-R=0$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{R}=\\mathrm{r} $$</p>\n<p>Therefore, the power consumption in the external load R is at its maximum when the external resistance is equal to the internal resistance of the battery, $\\mathrm{r}=\\mathrm{R}$. </p>\n<p>Hence, the correct option is (D).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml8t8lir",
@@ -41,7 +41,7 @@
     "difficulty": "easy",
     "solution": "<p>The resistance of the transmission line, $\\mathrm{R}=2 \\Omega$</p>\n<p>The power delivered (Output Power), $\\mathrm{P}_{\\text {out }}=1 \\mathrm{~kW}=1000 \\mathrm{~W}$</p>\n<p>The given power is delivered at voltage, $\\mathrm{V}=250 \\mathrm{~V}$</p>\n<p>The power delivered to the load is the product of the voltage across the load and the current flowing through it.</p>\n<p>$$ \\mathrm{P}_{\\mathrm{out}}=\\mathrm{V} \\cdot \\mathrm{I} \\Rightarrow \\mathrm{I}=\\frac{\\mathrm{P}_{\\mathrm{out}}}{\\mathrm{~V}} $$</p>\n<p>$$ \\Rightarrow I=\\frac{1000}{250} A=4 A $$</p>\n<p>So, a current of 4 A flows through the transmission line.</p>\n<p>As the current flows through the transmission wires, some electrical energy is lost as heat due to the line's resistance. This power loss ( $\\mathrm{P}_{\\text {loss }}$ ) is calculated using Joule's heating formula :</p>\n<p>$$ \\mathrm{P}_{\\text {loss }}=\\mathrm{I}^2 \\cdot \\mathrm{R} $$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{P}_{\\mathrm{loss}}=(4)^2 \\times 2 \\mathrm{~W}=32 \\mathrm{~W} $$</p>\n<p>The total power supplied at the source (Input Power, $\\mathrm{P}_{\\mathrm{in}}$ ) must equal the power successfully delivered to the load plus the power lost in the transmission line.</p>\n<p>$$ \\mathrm{P}_{\\mathrm{in}}=\\mathrm{P}_{\\mathrm{out}}+\\mathrm{P}_{\\text {loss }} $$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{P}_{\\mathrm{in}}=1000+32$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{P}_{\\mathrm{in}}=1032 \\mathrm{~W} $$</p>\n<p>The efficiency $(\\eta)$ of the transmission line is the ratio of the useful power delivered to the total power supplied, expressed as a percentage :</p>\n<p>$$ \\eta=\\left(\\frac{P_{\\text {out }}}{P_{\\text {in }}}\\right) \\times 100 \\% $$</p>\n<p>$$\\Rightarrow $$ $$ \\eta=\\left(\\frac{1000}{1032}\\right) \\times 100 \\% \\approx 96.9 \\% $$</p>\n<p>Therefore, the percentage efficiency of the transmission line is $96.9 \\%$. Hence, the correct option is (A).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhxou",
@@ -97,7 +97,7 @@
     "difficulty": "easy",
     "solution": "<p><p>The motor operates at 100 V and draws 1 A, so the total electrical power input is:</p>\n<p>$$P_{\\text{in}} = IV = 100 \\, \\text{V} \\times 1 \\, \\text{A} = 100 \\, \\text{W}.$$</p></p>\n<p><p>With an efficiency of 91.6%, only 91.6% of the input power is used for the motor's work, while the rest is lost as heat. The output power is:</p>\n<p>$$P_{\\text{out}} = 0.916 \\times 100 \\, \\text{W} = 91.6 \\, \\text{W}.$$</p></p>\n<p><p>The power lost is:</p>\n<p>$$P_{\\text{loss}} = P_{\\text{in}} - P_{\\text{out}} = 100 \\, \\text{W} - 91.6 \\, \\text{W} = 8.4 \\, \\text{W}.$$</p></p>\n<p><p>Since $1 \\, \\text{W} = 1 \\, \\text{J/s}$ and $1 \\, \\text{cal} \\approx 4.2 \\, \\text{J}$, we convert the lost power into calories per second:</p>\n<p>$$P_{\\text{loss}} (\\text{in cal/s}) = \\frac{8.4 \\, \\text{J/s}}{4.2 \\, \\text{J/cal}} = 2 \\, \\text{cal/s}.$$</p></p>\n\n<p>Thus, the correct answer is:</p>\n<p>Option B: 2</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsg5t1zl",
@@ -119,7 +119,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\frac{\\mathrm{v}^2}{\\mathrm{R}}=\\mathrm{W} \\qquad \\text{.... (i)}\\\\\n& \\frac{\\mathrm{v}^2}{\\frac{1}{2}\\left(\\frac{\\mathrm{R}}{2}\\right)}=\\mathrm{W}^{\\prime} \\quad \\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>From (i) & (ii), we get</p>\n<p>$$W^{\\prime}=4 W$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsgx2n14",
@@ -141,7 +141,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{R}_{\\mathrm{T}-27}=60 \\Omega, R_T=\\frac{220}{2.75}=80 \\Omega \\\\\n& \\mathrm{R}=\\mathrm{R}_0(1+\\alpha \\Delta \\mathrm{T}) \\\\\n& 80=60\\left[1+2 \\times 10^{-4}(\\mathrm{~T}-27)\\right] \\\\\n& \\mathrm{T} \\approx 1694^{\\circ} \\mathrm{C}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd5tt5u",
@@ -163,7 +163,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{P}=\\mathrm{i}^2 \\mathrm{R} \\\\\n& \\mathrm{P}_{\\text {int }}=\\mathrm{I}_{\\text {int }}^2 \\mathrm{R} \\\\\n& \\mathrm{P}_{\\text {final }}=\\left(0.8 \\mathrm{I}_{\\text {int }}\\right)^2 \\mathrm{R}\n\\end{aligned}$$</p>\n<p>% change in power $$=$$</p>\n<p>$$\\frac{P_{\\text {final }}-P_{\\text {int }}}{P_{\\text {int }}} \\times 100=(0.64-1) \\times 100=-36 \\%$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd8fgeo",
@@ -202,7 +202,7 @@
     "difficulty": "easy",
     "solution": "<p>To find the power dissipation of the bulb when it's connected to a $$100 \\mathrm{V}$$ supply instead of its rated $$200 \\mathrm{V}$$ supply, we can use the relation between power (P), voltage (V), and resistance (R), which is given by $$P = \\frac{V^2}{R}$$. The resistance of the bulb can be considered constant in this case, allowing us to calculate the change in power dissipation due to the change in voltage.</p>\n\n<p>First, let's find the resistance of the bulb based on its rated conditions:</p>\n\n<p>$$P = \\frac{V^2}{R} \\Rightarrow R = \\frac{V^2}{P}$$</p>\n\n<p>Substituting the rated values, we get:</p>\n\n<p>$$R = \\frac{(200)^2}{50} = \\frac{40000}{50} = 800 \\, \\Omega$$</p>\n\n<p>Now, using this resistance, we can find the power dissipation when the bulb is connected to a $$100 \\mathrm{V}$$ supply:</p>\n\n<p>$$P = \\frac{V^2}{R} = \\frac{(100)^2}{800} = \\frac{10000}{800} = 12.5 \\, W$$</p>\n\n<p>This means the power dissipation of the bulb when connected to a $$100 \\mathrm{V}$$ supply is $$12.5 \\, W$$.</p>\n\n<p>Therefore, the correct answer is Option C: 12.5 W.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv9s2sy8",
@@ -224,7 +224,7 @@
     "difficulty": "easy",
     "solution": "<p>To determine the ratio of heat dissipated per second through resistances $ 5 \\Omega $ and $ 10 \\Omega $ in the given parallel circuit, let's break it down step by step.</p>\n\n<p><b>Understanding the Problem</b></p>\n\n<p>When resistors are connected in parallel:</p>\n\n<ol>\n\n<li>The voltage across each resistor is the same.</li><br>\n\n<li>The power dissipated in each resistor can be found using the formula:</li>\n\n</ol>\n\n<p>$ P = \\frac{V^2}{R} $</p>\n\n<p><b>Applying the Power Formula in Parallel Resistors</b></p>\n\n<p>Given:</p>\n\n<ul>\n\n<li>$ R_1 = 5 \\Omega $</li><br>\n\n<li>$ R_2 = 10 \\Omega $</li>\n\n</ul>\n\n<p>Let $ V $ be the voltage across the resistors.</p>\n\n<p><b>Power Dissipated in Each Resistor</b></p>\n\n<p>For the $ 5 \\Omega $ resistor:</p>\n\n<p>$ P_{5} = \\frac{V^2}{5} $</p>\n\n<p>For the $ 10 \\Omega $ resistor:</p>\n\n<p>$ P_{10} = \\frac{V^2}{10} $</p>\n\n<p><b>Finding the Ratio of Powers</b></p>\n\n<p>Now, let's find the ratio of the power dissipated through the $ 5 \\Omega $ resistor to the power dissipated through the $ 10 \\Omega $ resistor:</p>\n\n<p>$ \\frac{P_{5}}{P_{10}} = \\frac{\\frac{V^2}{5}}{\\frac{V^2}{10}} = \\frac{10}{5} = 2 $</p>\n\n<p>So, the ratio of power dissipated through the $ 5 \\Omega $ resistor to the $ 10 \\Omega $ resistor is $ 2:1 $.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lvb295ad",
@@ -246,7 +246,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& P=v \\times i \\Rightarrow i=\\frac{110}{220}=\\frac{1}{2} \\mathrm{~A} \\\\\n& i=n e \\Rightarrow n=\\frac{1}{2 \\times 1.6 \\times 10^{-19}}=31.25 \\times 10^{17}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv3ve9dw",
@@ -268,7 +268,7 @@
     "difficulty": "medium",
     "solution": "<p>When an electric kettle is used to heat water, the time taken to boil the water depends on the power of the heating element. The power supplied to the heating element is inversely proportional to the heating time. If we want to reduce the boiling time, the power needs to be increased. The power of the heating element is given by:</p>\n\n<p>$$P = \\frac{V^2}{R}$$</p>\n\n<p>where $$P$$ is the power, $$V$$ is the voltage, and $$R$$ is the resistance of the heating element. The resistance $$R$$ of the heating element is proportional to its length $$L$$ while the material and cross-sectional area remain constant.</p>\n\n<p>So, we can write:</p>\n\n<p>$$R \\propto L$$</p>\n\n<p>To achieve boiling in 15 minutes instead of 20 minutes, the power needs to increase, which implies the resistance must decrease. Let the initial length of the heating element be $$L_0$$, and let the new length needed be $$L$$. The time taken to heat is inversely proportional to the power:</p>\n\n<p>$$\\frac{T_1}{T_2} = \\frac{P_2}{P_1}$$</p>\n\n<p>Given that:</p>\n\n<p>$$T_1 = 20 \\text{ minutes}$$</p>\n\n<p>$$T_2 = 15 \\text{ minutes}$$</p>\n\n<p>We need to find the ratio:</p>\n\n<p>$$\\frac{20}{15} = \\frac{P_2}{P_1}$$</p>\n\n<p>Simplifying:</p>\n\n<p>$$\\frac{4}{3} = \\frac{P_2}{P_1}$$</p>\n\n<p>The power is inversely proportional to the resistance:</p>\n\n<p>$$\\frac{P_2}{P_1} = \\frac{R_1}{R_2}$$</p>\n\n<p>Thus:</p>\n\n<p>$$\\frac{4}{3} = \\frac{R_1}{R_2}$$</p>\n\n<p>Since resistance is proportional to length:</p>\n\n<p>$$\\frac{R_1}{R_2} = \\frac{L_1}{L_2}$$</p>\n\n<p>Hence:</p>\n\n<p>$$\\frac{4}{3} = \\frac{L_1}{L_2}$$</p>\n\n<p>Simplifying, we find:</p>\n\n<p>$$L_2 = \\frac{3}{4} L_1$$</p>\n\n<p>This means the length of the heating element should be decreased to $$\\frac{3}{4}$$ of its initial length.</p>\n\n<p>Thus, the correct option is:</p>\n\n<p><b>Option C:</b> decreased, $$\\frac{3}{4}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv3vegqg",
@@ -307,7 +307,7 @@
     "difficulty": "easy",
     "solution": "Let's consider the power $$P$$ dissipated by a single heater filament with resistance $$R$$ when connected to a voltage $$V$$.\n<br/><br/>\nThe power dissipated by the heater filament is given by:\n<br/><br/>\n$$P = \\frac{V^2}{R}$$\n<br/><br/>\nWhen the two identical heater filaments are connected in parallel, the equivalent resistance $$R_P$$ is given by:\n<br/><br/>\n$$\\frac{1}{R_P} = \\frac{1}{R} + \\frac{1}{R} = \\frac{2}{R} \\Rightarrow R_P = \\frac{R}{2}$$\n<br/><br/>\nThe total power dissipated $$P_P$$ by the two filaments connected in parallel is:\n<br/><br/>\n$$P_P = \\frac{V^2}{R_P} = \\frac{V^2}{\\frac{R}{2}} = 2V^2 \\cdot \\frac{1}{R} = 2P$$\n<br/><br/>\nWhen the two identical heater filaments are connected in series, the equivalent resistance $$R_S$$ is given by:\n<br/><br/>\n$$R_S = R + R = 2R$$\n<br/><br/>\nThe total power dissipated $$P_S$$ by the two filaments connected in series is:\n<br/><br/>\n$$P_S = \\frac{V^2}{R_S} = \\frac{V^2}{2R} = \\frac{1}{2}V^2 \\cdot \\frac{1}{R} = \\frac{1}{2}P$$\n<br/><br/>\nNow, let's find the ratio of the heat produced in the same time for parallel to series connection:\n<br/><br/>\n$$\\frac{P_P}{P_S} = \\frac{2P}{\\frac{1}{2}P} = \\frac{2P \\times 2}{P} = \\frac{4P}{P} = 4 : 1$$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgrjqg3o",
@@ -385,7 +385,7 @@
     "difficulty": "easy",
     "solution": "For parallel connection, potential difference is same $(v)$\n<br/><br/>\n$$\n\\begin{aligned}\n& P_{1}=\\left(\\frac{v^{2}}{R_{1}}\\right) \\\\\\\\\n& P_{2}=\\left(\\frac{v^{2}}{R_{2}}\\right) \\\\\\\\\n& \\frac{P_{1}}{P_{2}}=\\frac{H_{1}}{H_{2}}=\\left(\\frac{R_{2}}{R_{1}}\\right)=\\frac{3 R}{R}=(3: 1)\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ldo6lxz4",
@@ -407,7 +407,7 @@
     "difficulty": "easy",
     "solution": "$H \\propto i^{2}$ for $t=$ constant\n\n<br/><br/>$$ \\Rightarrow $$ $$\n\\frac{H}{H^{\\prime}}=\\left(\\frac{4}{16}\\right)^{2}\n$$\n\n<br/><br/>$$ \\Rightarrow $$ $H^{\\prime}=16 H$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5alepo2",
@@ -446,7 +446,7 @@
     "difficulty": "easy",
     "solution": "<p>Statement I : $${R_{1\\,part}} = {{80} \\over 4} = 20\\,\\Omega $$</p>\n<p>$$ \\Rightarrow {R_{eff}} = {{20} \\over 4} = 5\\,\\Omega $$</p>\n<p>Statement II : Ratio $$ = {{{{{{(\\Delta V)}^2}} \\over {3R}}} \\over {{{{{(\\Delta V)}^2}} \\over {2R}}}}$$</p>\n<p>$$ = {2 \\over 3}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6ntyjpv",
@@ -485,7 +485,7 @@
     "difficulty": "easy",
     "solution": "<p>R<sub>10</sub> = 2 = R<sub>0</sub>(1 + $$\\alpha$$ $$\\times$$ 10)</p>\n<p>R<sub>30</sub> = 3 = R<sub>0</sub>(1 + $$\\alpha$$ $$\\times$$ 30)</p>\n<p>On solving</p>\n<p>$$\\alpha$$ = 0.033/$$^\\circ$$C",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "l7g9z2xy",
@@ -508,7 +508,7 @@
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1ldmiy252/a1afa73f-a0b0-4a47-9228-bc6c281cc379/c3a8ef60-a2a7-11ed-8141-cd0564adb86b/file-1ldmiy253.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1ldmiy252/a1afa73f-a0b0-4a47-9228-bc6c281cc379/c3a8ef60-a2a7-11ed-8141-cd0564adb86b/file-1ldmiy253.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2022 Paper 2 Online Physics - Current Electricity Question 10 English Explanation 1\">\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1ldmiynq2/a2dd0ac5-ded7-41e7-ae15-c5eb1daf2ec0/d4551fa0-a2a7-11ed-b6c5-0717e5734829/file-1ldmiynq3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1ldmiynq2/a2dd0ac5-ded7-41e7-ae15-c5eb1daf2ec0/d4551fa0-a2a7-11ed-b6c5-0717e5734829/file-1ldmiynq3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2022 Paper 2 Online Physics - Current Electricity Question 10 English Explanation 2\">\n<br><br><b>Case 1 :</b> When $\\mathrm{S}_1$ and $\\mathrm{S}_2$ are open\n<br><br>$ \\left(R_{e q}\\right)_1=1+\\frac{5 \\times \\frac{1}{2}}{5+\\frac{1}{2}}=1+\\frac{5}{11}=\\frac{16}{11} $\n<br><br>$ P_1=\\frac{V^2}{(R_{e q})_1}=\\frac{(6)^2}{16} \\times 11=\\frac{36 \\times 11}{16}=24.75 \\mathrm{~W} $\n<br><br>$\n \\left(R_{e q}\\right)_2=\\frac{6}{11} \\Omega $\n<br><br>$\n P_2=\\frac{V^2}{(R_{e q})_2}=\\frac{(6)^2}{6} \\times 11=\\frac{36 \\times 11}{6}=66 \\mathrm{~W} $\n<br><br>$\n P_2&gt;P_1\n$\n<br><br>Option (A) is correct.\n<br><br><b>Case 2 :</b> If I = $2 \\mathrm{~A}$ source is used in both circuits, then\n<br><br>$\n\n P_1=i^2\\left(R_{e q}\\right)_1=(2)^2 \\times \\frac{16}{11}=\\frac{64}{11}=5.818 \\mathrm{~W} $\n<br><br>$\n P_2=i^2\\left(R_{e q}\\right)_2=(2)^2 \\times \\frac{6}{11}=\\frac{24}{11}=2.1818 \\mathrm{~W} $\n<br><br>$\n P_1&gt;P_2\n$\n<br><br>Option (B) is correct.\n<br><br><b>Case 3 :</b> For $Q_1$\n<br><br>$$\n\\begin{aligned}\n&amp; R_{e q}=\\frac{5}{11} \\Omega \\\\\\\\\n&amp; Q_1=\\frac{V^2}{R_{e q}}=\\frac{(6)^2}{\\frac{5}{11}}=\\frac{36 \\times 11}{5}=79.2 \\mathrm{~W} \\\\\\\\\n&amp; P_1=24.75 \\mathrm{~W} \\\\\\\\\n&amp; Q_1&gt;P_1\n\\end{aligned}\n$$\n<br><br>Option (C) is correct.\n<br><br><b>Case 4 :</b> For option (D)\n<br><br>$$\n\\begin{aligned}\n&amp; Q_1=i^2 R_{e q}=(2)^2 \\times \\frac{5}{11}=\\frac{20}{11}=1.81 \\mathrm{~W} \\\\\\\\\n&amp; Q_2=i^2 R_{e q}=(2)^2 \\times \\frac{1}{2}=\\frac{4}{2}=2 \\mathrm{~W} \\\\\\\\\n&amp; Q_2&gt;Q_1\n\\end{aligned}\n$$\n<br><br>Option (D) is incorrect.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "oDf2IL8d2d7FVXnwsv1kmipckqw",
@@ -530,7 +530,7 @@
     "difficulty": "easy",
     "solution": "$${H_1} = i_1^2R\\Delta t$$<br><br>$${H_2} = i_2^2R\\Delta t$$<br><br>$$ \\Rightarrow {{{H_1}} \\over {{H_2}}} = {{i_1^2} \\over {i_2^2}}$$<br><br>$$ \\Rightarrow {{500} \\over {{H_2}}} = {\\left( {{1 \\over 2}} \\right)^2}$$<br><br>$$ \\Rightarrow {H_2} = 2000J$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Oiu2ZRbw46fGrw79NP1kmiprbx8",
@@ -569,7 +569,7 @@
     "difficulty": "medium",
     "solution": "\nGiven, the length of the water pipe, L = 1 m<br/><br/>The cross-sectional area of the water pipe, A = 1 cm<sup>2</sup> = 10<sup>$$-$$4</sup> m<sup>2</sup><br/><br/>The temperature of the ice = $$-$$ 10$$^\\circ$$C<br/><br/>Current passing in the conductor, I = 0.5 A<br/><br/>Resistance of the conductor, R = 4 k$$\\Omega$$<br/><br/>The latent heat of fusion for ice, L<sub>f</sub> = 3.33 $$\\times$$ 10<sup>5</sup> J/kg<br/><br/>The density of the ice, d = 1000 kg/m<sup>3</sup><br/><br/>The specific heat of the ice, c<sub>p, ice</sub>  = 2 $$\\times$$ 10<sup>3</sup> J/kg<br/><br/>Heat required to melt the ice at 10$$^\\circ$$C to 0$$^\\circ$$C<br/><br/>Q = mc<sub>p</sub>$$\\Delta$$T + mL<sub>f</sub> $$\\Rightarrow$$ Q = dVc<sub>p</sub>$$\\Delta$$T + dVL<sub>f</sub><br/><br/>= 1000 $$\\times$$ 10<sup>$$-$$4</sup> $$\\times$$ 2 $$\\times$$ 10<sup>3</sup> $$\\times$$ (10) + 1000 $$\\times$$ 10<sup>$$-$$4</sup> $$\\times$$ 3.33 $$\\times$$ 10<sup>5</sup> ($$\\because$$ V = A $$\\times$$ L)<br/><br/>= 35300 J<br/><br/>According to the Joule's law of heating,<br/><br/>H = I<sup>2</sup>Rt<br/><br/>$$\\Rightarrow$$ 35300 = (0.5)<sup>2</sup>(4000) (t)<br/><br/>$$ \\Rightarrow $$ t = 35.3 s<br/><br/>Thus, the minimum time required to melt the ice is 35.3 s.\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktmw4fvn",
@@ -625,7 +625,7 @@
     "difficulty": "easy",
     "solution": "500 watt at 100 v<br><br> <img src=\"https://imagex.cdn.examgoal.net/1ktjehsxr/7b787e82-addc-4e78-8cf6-7baf0dbe583b/ad8fc4f0-14fb-11ec-87b0-2f866bb7de71/file-1ktjehsxs.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Evening Shift Physics - Current Electricity Question 207 English Explanation\"> <br><br>P = Vi<br><br>500 = Vi<br><br>i = 5 Amp<br><br>V = i $$\\times$$ R<br><br>R = 20",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktacctwh",
@@ -647,7 +647,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ktcduewo/60d21394-0496-49b3-9c73-543b325320c1/a6914780-111f-11ec-9890-e1f55a1f69a0/file-1ktcduewp.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Morning Shift Physics - Current Electricity Question 209 English Explanation 1\"><br><img src=\"https://imagex.cdn.examgoal.net/1ktcec2v8/ef3cc437-00b3-481e-b3dd-9969213e4068/91d4d440-1121-11ec-9890-e1f55a1f69a0/file-1ktcec2v9.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Morning Shift Physics - Current Electricity Question 209 English Explanation 2\"><br>$${1 \\over {{R_{eq}}}} = {1 \\over 4} + {1 \\over 8} + {1 \\over {12}} + {1 \\over 6} = {{6 + 3 + 2 + 4} \\over {24}} = {{15} \\over {24}}$$<br><br>$${R_{eq}} = {{24} \\over {15}} = 1.6 \\Rightarrow {R_T} = 1.6 + 0.6 = 2.2\\,\\Omega $$<br><br>$$P = {{{V^2}} \\over {{R_T}}} = {{{{(2.2)}^2}} \\over {2.2}} = 2.2W$$<br><br>Option (c)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ks19va2d",
@@ -669,7 +669,7 @@
     "difficulty": "easy",
     "solution": "16 = R<sub>0</sub> [1 + $$\\alpha$$ (15 $$-$$ T<sub>0</sub>)]<br><br>20 = R<sub>0</sub> [1 + $$\\alpha$$ (100 $$-$$ T<sub>0</sub>)]<br><br>Assuming T<sub>0</sub> = 0$$^\\circ$$C, as a general convention.<br><br>$$\\Rightarrow$$ $${{16} \\over {20}} = {{1 + \\alpha  \\times 15} \\over {1 + \\alpha  \\times 100}}$$<br><br>$$\\Rightarrow$$ $$\\alpha$$ = 0.003$$^\\circ$$C<sup>$$-$$1</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktjr8nv5",
@@ -708,7 +708,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kir17fb7/fc0f09ba-101a-402c-bc45-a899fa5de20f/9a4b0040-3f67-11eb-9d37-c12600f3cc12/file-1kir17fb8-326w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 3rd September Morning Slot Physics - Current Electricity Question 253 English Explanation\">\n<br><br>Internal resitance of battery\n<br><br>$$\\int {dr}  = \\int\\limits_a^b {{{\\rho dr} \\over {2\\pi rl}}} $$\n<br><br>$$ \\Rightarrow $$ r = $${{\\rho  \\over {2\\pi l}}\\ln {b \\over a}}$$\n<br><br>Power in external resistance P<sub>R</sub> = $${\\left( {{ \\in  \\over {r + R}}} \\right)^2}R$$\n<br><br>Maximum Power in external resistance is generated when it is equal to internal resistance of battery. So P<sub>R</sub> is maximum when r = R.\n<br><br>$$ \\therefore $$ R = $${{\\rho  \\over {2\\pi l}}\\ln {b \\over a}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "MHbXmErNaaT1l5yvVHjgy2xukeu2jla2",
@@ -730,7 +730,7 @@
     "difficulty": "easy",
     "solution": "P<sub>R</sub> = 0.5 W\n<br><br>$$ \\Rightarrow $$ i<sup>2</sup>R = 0.5 W\n<br><br>iR = 2.5\n<br><br>$$ \\Rightarrow $$ i = 0.2 A &amp; R = 12.5 $$\\Omega $$\n<br><br>Also, V = E – ir\n<br><br>$$ \\Rightarrow $$ 2.5 = 3 – (0.2)r\n<br><br>$$ \\Rightarrow $$ r = 2.5 $$\\Omega $$\n<br><br>Power dissipated in internal resistance\n<br><br>= i<sup>2</sup>r = (0.2)<sup>2</sup>(2.5) = 0.1 W",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Iq5eDmMxk6JKGrBLncjgy2xukfdqit5p",
@@ -752,7 +752,7 @@
     "difficulty": "easy",
     "solution": "We know, $$\\eta  = {{{P_{out}}} \\over {\\left( {{P_{out}} + {P_{loss}}} \\right)}} \\times 100$$\n<br><br>Given, P= $$vi = {10^3}$$<br><br>$$ \\therefore $$ $$i = {{1000} \\over {220}}$$ = $${{50} \\over {11}}$$ A\n<br><br>Power $$loss = {i^2}R = {\\left( {{{50} \\over {11}}} \\right)^2} \\times 2$$<br><br>$$ \\therefore $$ efficiency $$ = {{1000} \\over {1000 + {i^2}R}} \\times 100 = 96\\% $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "40hnYKxW0rROM846gS7k9k2k5f7hmp6",
@@ -774,7 +774,7 @@
     "difficulty": "easy",
     "solution": "Total power is <br><br>= (15 × 45) + (15 × 100) + (15 × 10) + (2 × 1000)\n<br><br>= 4325 W\n<br><br>$$ \\therefore $$ Current = $${{4325} \\over {220}}$$ = 19.66 A $$ \\simeq $$ 20 A",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "YtHzseqCepostZcVqd6l3",
@@ -796,7 +796,7 @@
     "difficulty": "easy",
     "solution": "P = I<sup>2</sup>R\n<br><br>4.4 = 4 $$ \\times $$ 10<sup>$$-$$6</sup> R\n<br><br>R = 1.1 $$ \\times $$ 10<sup>6</sup> $$\\Omega $$\n<br><br>P' = $${{{{11}^2}} \\over R}$$ = $${{{{11}^2}} \\over {1.1}}$$ $$ \\times $$ 10<sup>$$-$$6</sup> = 11 $$ \\times $$ 10<sup>$$-$$5</sup> W",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "QGvTEfImdjpnMoMOsUGMj",
@@ -818,7 +818,7 @@
     "difficulty": "easy",
     "solution": "P = i<sup>2</sup>R.\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;for i<sub>max</sub>, R must be minimum\n<br><br>from color coding R = 50 $$ \\times $$ 10<sup>2</sup>$$\\Omega $$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;i<sub>max</sub> = 20mA",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "4jjWHrnKr4IKDRK4E0lUh",
@@ -840,7 +840,7 @@
     "difficulty": "easy",
     "solution": "In series condition, equivalent resistance is 2R \n<br><br>thus power consumed is 60W = $${{{\\varepsilon ^2}} \\over {2R}}$$\n<br><br>In parallel condition, equivalent resistance is R/2 thus new power is \n<br><br>P' = $${{{\\varepsilon ^2}} \\over {\\left( {R/2} \\right)}}$$\n<br><br>or&nbsp;&nbsp;&nbsp;P' = 4P = 240W",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "fP2uVywjs5a44fwh6Z3rsa0w2w9jx3lqscb",
@@ -862,7 +862,7 @@
     "difficulty": "easy",
     "solution": "R<sub>eq</sub> = 2R + R + 4R + R = 8R<br><br>\n$$P = {{{v^2}} \\over {{R_{eq}}}} \\Rightarrow {{16 \\times 16} \\over {8R}} = 4\\,watt$$<br><br>\n$${{16 \\times 16} \\over {4 \\times 8}} = R \\Rightarrow R = 8\\Omega $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "TDAQw6Br20fMX5WWviih2",
@@ -884,7 +884,7 @@
     "difficulty": "easy",
     "solution": "$${R_1} = {{{{220}^2}} \\over {25}}$$\n<br><br>$${R_2} = {{{{220}^2}} \\over {100}}$$\n<br><br>$$L = {{220} \\over {{R_1} + {R_2}}}$$\n<br><br>$${P_1} = {i^2}\\,{R_1}$$\n<br><br>$${P_2} = {i^2}\\,\\,({R_2}\\, = \\,4W)$$\n<br><br>$$ = {{{{220}^2}} \\over {\\left( {{{{{220}^2}} \\over {25}} + {{{{220}^2}} \\over {100}}} \\right)}} \\times {{{{220}^2}} \\over {25}}$$\n<br><br>$$ = {{400} \\over {25}} = 16W$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "JlybRSy5VmrfmBLdret67",
@@ -906,7 +906,7 @@
     "difficulty": "easy",
     "solution": "Current i = $${E \\over {r + R}}$$<br><br>\nPower generated in R<br><br>\nP = i<sup>2</sup>R<br><br>\n$$P = {{{E^2}R} \\over {{{\\left( {r + R} \\right)}^2}}}$$<br><br>\nFor maximum power $${{dP} \\over {dR}} = 0$$<br><br>\n$${E^2}\\left[ {{{{{\\left( {r + R} \\right)}^2} \\times 1 - R \\times 2(r + R)} \\over {{{\\left( {r + R} \\right)}^4}}}} \\right] = 0$$<br><br>\n$$ \\Rightarrow $$ r = R or R = r",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0FnGOyrhSQdUbYWKbkYry",
@@ -928,7 +928,7 @@
     "difficulty": "easy",
     "solution": "<p>Since rate of heat $$ = {{{V^2}} \\over R} \\Rightarrow $$ rate of heat $$ \\propto {1 \\over R}$$, where $$R = {{\\rho L} \\over A} = {{\\rho L} \\over {\\pi {r^2}}}$$; here r is radius of wire and L is length of wire. Therefore,</p>\n<p>$$R \\propto {L \\over {{r^2}}}$$.</p>\n<p>Thus, rate of heat $$ \\propto {{{r^2}} \\over L}$$.</p>\n<p>When length in halved and radius is doubled then, rate of heat $$ \\propto {{{{(2r)}^2}} \\over {L/2}} = {{8{r^2}} \\over L}$$</p>\n<p>Therefore, rate of heat developed in wire will be increased 8 times.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "HjtiIsdBTEsslnqP90qZF",
@@ -950,7 +950,7 @@
     "difficulty": "easy",
     "solution": "When temperature increased by 500<sup>o</sup>C then, nrw registance \n<br><br>R<sub>t</sub> = $${{220} \\over 2}$$ = 110 $$\\Omega $$\n<br><br>We know,  \n<br><br>R<sub>t</sub> = R<sub>0</sub> (1 + $$ \\propto $$ $$\\Delta $$ t)\n<br><br>$$ \\Rightarrow $$ 110 = 100 (1 + $$ \\propto $$ $$ \\times $$ 500)\n<br><br>$$ \\Rightarrow $$ $$ \\propto $$ = $${{10} \\over {100 \\times 500}} = 2 \\times {10^{ - 4}}$$ <sup>o</sup>C<sup>$$-$$1</sup> ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "kJUx3gjZbgYtasmb6h0bs",
@@ -972,7 +972,7 @@
     "difficulty": "medium",
     "solution": "<p>We have the following cases :</p>\n<p>$$\\bullet$$ For configuration (I) : Considering as Wheatstone's bridge, we get the equivalent resistance as $${({R_I})_{eq}} = 1\\,\\Omega $$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l36s8aw4/04a3edaf-f0fa-4a16-b0d0-4e8cd9ff2fb4/5e7e8e40-d405-11ec-b808-5752a3163b13/file-1l36s8aw5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l36s8aw4/04a3edaf-f0fa-4a16-b0d0-4e8cd9ff2fb4/5e7e8e40-d405-11ec-b808-5752a3163b13/file-1l36s8aw5.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2017 (Online) 9th April Morning Slot Physics - Current Electricity Question 315 English Explanation 1\"></p>\n<p>$$\\bullet$$ For configuration (II) : The given configuration is further reduced as follows:</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l36s96og/c87da17a-dbe0-4b24-99c8-dd8966edcb73/770cb810-d405-11ec-b808-5752a3163b13/file-1l36s96oh.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l36s96og/c87da17a-dbe0-4b24-99c8-dd8966edcb73/770cb810-d405-11ec-b808-5752a3163b13/file-1l36s96oh.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2017 (Online) 9th April Morning Slot Physics - Current Electricity Question 315 English Explanation 2\"></p>\n<p>That is, $${({R_{II}})_{eq}} = {1 \\over 2}\\,\\Omega $$.</p>\n<p>$$\\bullet$$ For configuration (III) : Similarly, we get $${({R_{III}})_{eq}} = 2\\,\\Omega $$.</p>\n<p>The power is given by</p>\n<p>$$P = {{{V^2}} \\over R}$$</p>\n<p>Since V is the same for all three configurations, we have the power as a quantity indirectly proportional to the resistance :</p>\n<p>$$P \\propto {1 \\over R}$$</p>\n<p>From the above three case, we have $${({R_I})_{eq}} = 1\\,\\Omega ;\\,{({R_{II}})_{eq}} = {1 \\over 2}\\,\\Omega ;\\,{({R_{III}})_{eq}} = 2\\,\\Omega $$, which implies that</p>\n<p>$${R_{II}} &gt; {R_I} &gt; {R_{III}}$$</p>\n<p>Therefore, $${P_2} &gt; {P_2} &gt; {P_3}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "p08V17yfRMlcysRp8J1klf1fw76",
@@ -995,7 +995,7 @@
     "solution": "<p>Because of non-uniform evaporation at different section, area of cross-section would be different at different sections.</p>\n<p>Region of highest evaporation rate would have rapidly reduced area and would become break up cross-section.</p>\n<p>Resistance of the wire as whole increases with time. Overall resistance increases hence power decreases.</p>\n<p>($$p = {{{V^2}} \\over R}$$ or $$p \\propto {1 \\over R}$$ as V is constant).</p>\n<p>At break up junction temperature would be highest, thus light of highest band frequency would be emitted at those cross-section.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "bSrBLnM5jeXcZRl0QFD5X",
@@ -1017,7 +1017,7 @@
     "difficulty": "medium",
     "solution": "Given, \n<br><br>R = R<sub>6</sub> [1 + $$\\alpha $$ (T $$-$$ t<sub>0</sub>)]\n<br><br>120 = 100 [1 + $$\\alpha $$ (500 $$-$$ 300)]\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;200 $$\\alpha $$ = $${1 \\over 5}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$\\alpha $$ = 10<sup>$$-$$3</sup> &nbsp;&nbsp;<sup>o</sup>C<sup>$$-$$1</sup>\n<br><br>Temperature of the toaster raised from  300 K to 500 K in 30 s.\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Increment in the temperature in time t, \n<br><br>$$\\Delta $$T = $${{500 - 300} \\over {30}}t$$\n<br><br>= $${{200} \\over 3}t$$\n<br><br>= $${{20} \\over 3}t$$\n<br><br>Total work done in raising the temperature  \n<br><br>= $$\\int\\limits_0^t {{{{V^2}} \\over {R\\left( t \\right)}}\\,dt} $$\n<br><br>= $$\\int\\limits_0^t {{{{V^2}} \\over {{R_0}\\left( {1 + \\alpha \\Delta t} \\right)}}} \\,dt$$\n<br><br>= $$\\int\\limits_0^{30} {{{{{\\left( {200} \\right)}^2}} \\over {100\\left( {1 + {{10}^{ - 3}} \\times {{20} \\over 3}t} \\right)}}} \\,dt$$\n<br><br>= $${{40000} \\over {100}}\\int\\limits_0^{30} {{{dt} \\over {\\left( {1 + {t \\over {150}}} \\right)}}} $$\n<br><br>$$400 \\times 150\\left[ {\\ln \\left( {1 + {t \\over {150}}} \\right)} \\right]_0^{30}$$\n<br><br>$$ = 60000\\left[ {\\ln \\left( {1 + {{30} \\over {150}}} \\right) - \\ln 1} \\right]$$\n<br><br>$$ = 60000\\ln \\left( {{6 \\over 5}} \\right)\\,J$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "R4yweZrL7e7p0D9Y16OZk",
@@ -1039,7 +1039,7 @@
     "difficulty": "medium",
     "solution": "Here equivalent resistance \n<br><br>R<sub>eq</sub> = R + $${{r \\times R} \\over {r + R}}$$\n<br><br>=&nbsp;&nbsp;R + $${{f{R^2}} \\over {fR + R}}$$\n<br><br>=&nbsp;&nbsp; R + $${{fR} \\over {f + 1}}$$\n<br><br>=&nbsp;&nbsp; $${{\\left( {2f + 1} \\right)R} \\over {\\left( {f + 1} \\right)}}$$\n<br><br>Circuit current, \n<br><br>$${\\rm I}$$ = $${V \\over {{{\\mathop{\\rm R}\\nolimits} _{eq}}}}$$\n<br><br>= &nbsp;&nbsp;$${{V\\left( {f + 1} \\right)} \\over {{\\mathop{\\rm R}\\nolimits} \\left( {2f + 1} \\right)}}$$\n<br><br>Current in the resistance r, \n<br><br>I = $${{\\rm I} \\over {f + 1}}$$ = $${V \\over {R\\left( {2f + 1} \\right)}}$$\n<br><br>Heat generated in r, \n<br><br>H = $${\\rm I}_2^2\\,r$$\n<br><br>=&nbsp;&nbsp;$${{{V^2}f} \\over {R{{\\left( {2f + 1} \\right)}^2}}}$$\n<br><br>For maximum H, \n<br><br>$${{dH} \\over {df}}$$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${{{V^2}} \\over R}\\left[ {{1 \\over {{{\\left( {2f + 1} \\right)}^2}}} - {{4f} \\over {{{\\left( {2f + 1} \\right)}^3}}}} \\right]$$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;2f + 1 = 4f\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;2f = 1\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;f = $${1 \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "LklwnUiSpSO9Zkmh",
@@ -1061,7 +1061,7 @@
     "difficulty": "easy",
     "solution": "Total power consumed by electrical appliances in the building, $${P_{total}} = 2500W$$\n<br><br>Watt $$=$$ Volt $$ \\times $$ ampere\n<br><br>$$ \\Rightarrow 2500 = V \\times {\\rm I}$$\n<br><br>$$ \\Rightarrow 2500 = 220$$ $${\\rm I}$$\n<br><br>$$ \\Rightarrow I = {{2500} \\over {220}} = 11.36 \\approx 12A$$\n<br><br>(Minimum capacity of main fuse)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l1nxuzpw",
@@ -1084,7 +1084,7 @@
     "solution": "<p>P = Vi</p>\n<p>$$\\therefore$$ $$i = {P \\over V} = {{600 \\times {{10}^3}} \\over {4000}} = 150$$ A</p>\n<p>Total resistance of cables,</p>\n<p>R = 0.4 $$\\times$$ 20 = 8$$\\Omega$$</p>\n<p>$$\\therefore$$ Power loss in cables = i<sup>2</sup>R</p>\n<p>= (150)<sup>2</sup> (8)</p>\n<p>= 180000 W = 180 kW</p>\n<p>This loss is 30% of 600 kW.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Zz73Qo0XAcyd5G1N",
@@ -1106,7 +1106,7 @@
     "difficulty": "medium",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/O5zR4337zfTSNyDRm/hWmAcYLkn35cX3r5lK4TjhXK06PmG/x0LvodpPTlpqZnvNwCCuq4/image.svg\" loading=\"lazy\" alt=\"JEE Main 2013 (Offline) Physics - Current Electricity Question 342 English Explanation\">\n<br><br>Power of bulb $$=60W$$ $$\\left( {given} \\right)$$\n<br><br>Resistance of bulb $$ = {{120 \\times 120} \\over {60}} = 240\\Omega $$ \n<br><br>$$\\left[ {\\,\\,} \\right.$$ $$\\left. {\\,P = {{{V^2}} \\over R}\\,} \\right]$$\n<br><br>Power of heater $$=240W$$ (given)\n<br><br>Resistance of heater $$ = {{120 \\times 120} \\over {240}} = 60\\Omega $$\n<br><br>Voltage across bulb before heater is switched  on, \n<br><br>$${V_1} = {{240} \\over {246}} \\times 120 = 117.73\\,\\,$$ volt\n<br><br>Voltage across bulb after heater is switched on,\n<br><br>$${V_2} = {{48} \\over {54}} \\times 120 = 106.66$$ volt\n<br><br>Hence decrease in voltage\n<br><br>$${V_1} - {V_2} = 117.073 - 106.66 = 10.04$$ Volt (approximately)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Q1GSThHcgtCd6Pu7",
@@ -1128,7 +1128,7 @@
     "difficulty": "medium",
     "solution": "The current upto which bulb of marked $$25W$$-$$220V,$$ will \n<br><br>not fuse $${I_1} = {{{W_1}} \\over {{V_1}}} = {{25} \\over {220}}Amp$$\n<br><br>Similarly, $${I_2} = {{{W_2}} \\over {{V_2}}} = {{100} \\over {220}}\\,Amp$$\n<br><br>The current flowing through the circuit\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/V9QIUmohYHBXTlUl5/f8mxRp2jX0WzAnk0PybL6xM0kBUZX/aSP2euKBoceZJXT5aRdmUA/image.svg\" loading=\"lazy\" alt=\"AIEEE 2012 Physics - Current Electricity Question 343 English Explanation\">\n<br><br>$$I = {{440} \\over {{{\\mathop{\\rm R}\\nolimits} _{eff}}}},\\,\\,{{\\mathop{\\rm R}\\nolimits} _{eff}} = {R_1} + {R_2}$$\n<br><br>$${R_1} = {{V_1^2} \\over {{P_1}}} = {{{{\\left( {220} \\right)}^2}} \\over {25}};\\,\\,\\,$$\n<br><br>$${R_2} = {{V_2^2} \\over P} = {{{{\\left( {220} \\right)}^2}} \\over {100}}$$\n<br><br>$$I = {{440} \\over {{{{{\\left( {220} \\right)}^2}} \\over {25}} + {{{{\\left( {220} \\right)}^2}} \\over {100}}}}$$\n<br><br>$$ = {{440} \\over {{{\\left( {220} \\right)}^2}\\left[ {{1 \\over {25}} + {1 \\over {100}}} \\right]}}$$\n<br><br>$$I = {{40} \\over {220}}\\,\\,Amp$$\n<br><br>as $${I_1}\\left( { = {{25} \\over {220}}A} \\right) &lt; I\\left( { = {{40} \\over {220}}A} \\right) &lt; {I_2}\\left( { = {{100} \\over {200}}A} \\right)$$\n<br><br>Thus the bulb marked $$25W$$-$$220$$ will fuse.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l31cifq7",
@@ -1151,7 +1151,7 @@
     "solution": "<p>The power of the bulb is</p>\n<p>$$P = {{{V^2}} \\over R}$$</p>\n<p>Therefore,</p>\n<p>$$100 = {{{V^2}} \\over {{R_{100}}}} \\Rightarrow {1 \\over {{R_{100}}}} = {{100} \\over {{V^2}}}$$</p>\n<p>where R<sub>100</sub> is the resistance (at any temperature) corresponds to 100 W. Similarly,</p>\n<p>$$60 = {{{V^2}} \\over {{R_{60}}}} \\Rightarrow {1 \\over {{R_{60}}}} = {{60} \\over {{V^2}}}$$ and $$40 = {{{V^2}} \\over {{R_{40}}}} \\Rightarrow {1 \\over {{R_{40}}}} = {{40} \\over {{V^2}}}$$</p>\n<p>From these equations, we get</p>\n<p>$${P_{100}} > {P_{60}} > {P_{40}} \\Rightarrow {1 \\over {{R_{100}}}} > {1 \\over {{R_{60}}}} > {1 \\over {{R_{40}}}}$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l31gj59r",
@@ -1169,7 +1169,7 @@
     "solution": "<p>In series : When the batteries are connected in series, we have</p>\n<p>$${J_1} = {\\left( {{{2E} \\over {R + 2}}} \\right)^2}R$$</p>\n<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l31u6l57/8c558999-e772-46eb-b977-f0c45261a734/15cebcc0-d14d-11ec-a5f4-6d60b89817cd/file-1l31u6l58.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l31u6l57/8c558999-e772-46eb-b977-f0c45261a734/15cebcc0-d14d-11ec-a5f4-6d60b89817cd/file-1l31u6l58.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2010 Paper 1 Offline Physics - Current Electricity Question 17 English Explanation 1\"></p>\n<p>In parallel : When the batteries are connected in parallel, we have</p>\n<p>$${J_2} = {\\left( {{E \\over {R + (1/2)}}} \\right)^2}R$$</p>\n<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l31u7dqv/fa22bff2-fbe7-4711-bc35-677d8e7aced3/2be6b670-d14d-11ec-a5f4-6d60b89817cd/file-1l31u7dqw.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l31u7dqv/fa22bff2-fbe7-4711-bc35-677d8e7aced3/2be6b670-d14d-11ec-a5f4-6d60b89817cd/file-1l31u7dqw.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2010 Paper 1 Offline Physics - Current Electricity Question 17 English Explanation 2\"></p>\n<p>It is given that,</p>\n<p>$${{{J_1}} \\over {{J_2}}} = 2.25$$</p>\n<p>$$ \\Rightarrow {4 \\over {{{(R + 2)}^2}}} \\times {{{{(2R + 1)}^2}} \\over 4} = 2.25 \\Rightarrow {{2R + 1} \\over {R + 2}} = 1.5$$</p>\n<p>$$ \\Rightarrow 2R + 1 = 1.5R + 3 \\Rightarrow 0.5R = 2$$</p>\n<p>Therefore, $$R = 4\\Omega $$.</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "d64YIQxOUC6xmXcw",
@@ -1191,7 +1191,7 @@
     "difficulty": "medium",
     "solution": "$${R_1} = {R_0}\\left[ {1 + {\\alpha _1}\\Delta t} \\right];$$\n<br><br>$${R_2} = {R_0}\\left[ {1 + {\\alpha _2}\\Delta t} \\right]$$\n<br><br>$$R = {R_1} + {R_2}$$\n<br><br>$$ = {R_0}\\left[ {2 + \\left( {{\\alpha _1} + {\\alpha _2}} \\right)\\Delta t} \\right]$$\n<br><br>$$ = 2{R_0}\\left[ {1 + \\left( {{{{\\alpha _1} + {\\alpha _2}} \\over 2}} \\right)\\Delta t} \\right]$$\n<br><br>$${\\alpha _{eq}} = {{{\\alpha _1} + {\\alpha _2}} \\over 2}$$\n<br><br>In Parallel, $${1 \\over R} = {1 \\over {{R_1}}} + {1 \\over {{R_2}}}$$\n<br><br>$$ = {1 \\over {{R_0}\\left[ {1 + {\\alpha _1}\\Delta t} \\right]}} + {1 \\over {{R_0}\\left[ {1 + {\\alpha _2}\\Delta t} \\right]}}$$\n<br><br>$$ \\Rightarrow {1 \\over {{{{R_0}} \\over 2}\\left( {1 + {\\alpha _{eq}}\\Delta t} \\right)}} = {1 \\over {{R_0}\\left( {1 + {\\alpha _1}\\Delta t} \\right)}} + {1 \\over {{R_0}\\left( {1 + {\\alpha _2}\\Delta t} \\right)}}$$\n<br><br>$$2\\left( {1 - {a_{eq}}\\Delta t} \\right) = \\left( {1 - {\\alpha _1}\\Delta t} \\right)\\left( {1 - {\\alpha _2}\\Delta t} \\right)$$\n<br><br>$$\\therefore$$ $${\\alpha _{eq}} = {{{\\alpha _1} + {\\alpha _2}} \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfmfkt21",
@@ -1214,7 +1214,7 @@
     "solution": "<p>The current in the net circuit is</p>\n<p>$$I = {V \\over {{R_{effective}}}}$$</p>\n<p>$$ = {V \\over {{R_1} + [({R_2}{R_L})/({R_1} + {R_L})]}}$$</p>\n<p>$$ = {{24} \\over {2 \\times {{10}^{ - 3}} + [(6 \\times 1.5 \\times {{10}^{ - 6}})/(7.5 \\times {{10}^{ - 3}})]}} = 7.5$$ mA</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lfrlr44o/2d585c49-d833-4714-80a0-fb5a521d80b6/17ecc280-cd0b-11ed-8124-cf50c8498624/file-1lfrlr44p.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lfrlr44o/2d585c49-d833-4714-80a0-fb5a521d80b6/17ecc280-cd0b-11ed-8124-cf50c8498624/file-1lfrlr44p.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2009 Paper 1 Offline Physics - Current Electricity Question 9 English Explanation\"></p>\n<p>The potential across $$R_L$$ is</p>\n<p>$${V_L} = I \\times {{{R_2}{R_L}} \\over {{R_2} + {R_L}}}$$</p>\n<p>$$ = 7.5 \\times {10^{ - 3}} \\times 1.2 \\times {10^3} = 9$$ V</p>\n<p>Therefore,</p>\n<p>$$I = {9 \\over {{R_L}}} = 6$$ mA</p>\n<p>The ratio of power dissipated in $$R_1$$ and $$R_2$$ is</p>\n<p>$${{I{R_1}} \\over {(I - i){R_2}}} = {{{{(7.5 \\times {{10}^{ - 3}})}^2} \\times 2 \\times {{10}^3}} \\over {{{(1.5 \\times {{10}^{ - 3}})}^2}6 \\times {{10}^3}}} = 0.75$$ J</p>\n<p>The power dissipated in $$R_L$$ is</p>\n<p>$${{V_L^2} \\over {{R_L}}} = {{{9^2}} \\over {1.5 \\times {{10}^3}}} = 54$$ mJ</p>\n<p>If $$R_1$$ and $$R_2$$ are interchanged, then</p>\n<p>$$I' = {V \\over {{R_{effective}}}}$$</p>\n<p>$$ = {V \\over {{R_2} + [({R_1}{R_L})/({R_L} + {R_1})]}}$$</p>\n<p>$$ = {{24} \\over {6 \\times {{10}^{ - 3}} + [(2 \\times 1.5 \\times {{10}^{ - 6}})/3.5 \\times {{10}^{ - 3}}]}} = 3.5$$ mA</p>\n<p>Hence, the voltage drop across the load is</p>\n<p>$$V{'_L} = I \\times {{{R_1}{R_L}} \\over {{R_1} + {R_L}}} = 1$$ V</p>\n<p>Therefore, $$i' = 2$$ mA. The magnitude of the power dissipated is the ratio between $${i^2}$$ and $${(i')^2}$$:</p>\n<p>$${{{P_1}} \\over {{P_2}}} = {{{i^2}} \\over {{{(i')}^2}}} = {{{6^2}} \\over {{2^2}}} = 9$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfumqosu",
@@ -1237,7 +1237,7 @@
     "solution": "<p>We know that $$P = {{{V^2}} \\over R}$$</p>\n<p>If potential is constant we have</p>\n<p>$$P \\propto {1 \\over R}$$</p>\n<p><b>Case I</b></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgkixrs6/820fa9e1-7cea-47ff-a6cc-a9a466f68e6c/d07f1860-dcf2-11ed-8877-b7080ed8ce1c/file-1lgkixrs7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgkixrs6/820fa9e1-7cea-47ff-a6cc-a9a466f68e6c/d07f1860-dcf2-11ed-8877-b7080ed8ce1c/file-1lgkixrs7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 1 Offline Physics - Current Electricity Question 8 English Explanation 1\"></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgkiybe1/936d1fb1-a7f6-4c1b-8e1a-6798279a5dcb/dfa48190-dcf2-11ed-8877-b7080ed8ce1c/file-1lgkiybe2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgkiybe1/936d1fb1-a7f6-4c1b-8e1a-6798279a5dcb/dfa48190-dcf2-11ed-8877-b7080ed8ce1c/file-1lgkiybe2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 1 Offline Physics - Current Electricity Question 8 English Explanation 2\"></p>\n<p>Hence, this is a clear case of wheat stone bridge R$$_1$$ = 1 $$\\Omega$$</p>\n<p><b>Case II</b></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgkj3cmq/c8b67254-17ec-4a24-bfd6-acd64000ff60/6ba5b920-dcf3-11ed-8877-b7080ed8ce1c/file-1lgkj3cmr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgkj3cmq/c8b67254-17ec-4a24-bfd6-acd64000ff60/6ba5b920-dcf3-11ed-8877-b7080ed8ce1c/file-1lgkj3cmr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 1 Offline Physics - Current Electricity Question 8 English Explanation 3\"></p>\n<p>Equivalent resistance (R$$_2$$)</p>\n<p>$$\\therefore$$ $${1 \\over {{R_2}}} = {1 \\over 2} + {1 \\over 1} + {1 \\over 2} = {{1 + 2 + 1} \\over 2} = {4 \\over 2} = 2\\,\\Omega $$</p>\n<p>Hence, $${R_2} = {1 \\over 2} = 0.5\\,\\Omega $$</p>\n<p>It is clear that the equivalent resistance (R$$_2$$) will be less than 1 $$\\Omega$$.</p>\n<p><b>Case III</b></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgkj3txg/6ee946b8-3cb9-4d09-b02d-54f1677255c6/79027040-dcf3-11ed-8877-b7080ed8ce1c/file-1lgkj3txh.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgkj3txg/6ee946b8-3cb9-4d09-b02d-54f1677255c6/79027040-dcf3-11ed-8877-b7080ed8ce1c/file-1lgkj3txh.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 1 Offline Physics - Current Electricity Question 8 English Explanation 4\"></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgkj4le4/55a4e0c4-a57d-4b2b-a968-3882198871fa/8e3958c0-dcf3-11ed-8877-b7080ed8ce1c/file-1lgkj4le5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgkj4le4/55a4e0c4-a57d-4b2b-a968-3882198871fa/8e3958c0-dcf3-11ed-8877-b7080ed8ce1c/file-1lgkj4le5.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 1 Offline Physics - Current Electricity Question 8 English Explanation 5\"></p>\n<p>Hence, R$$_3$$ = 2 $$\\Omega$$</p>\n<p>Since, R$$_2$$ &lt; R$$_1$$ &lt; R$$_2$$</p>\n<p>$$\\therefore$$ P$$_2$$ &gt; P$$_1$$ &gt; P$$_3$$ ($$ \\because $$ $$P \\propto {1 \\over R}$$)</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "VBqTK6O2O9Uz2MNA",
@@ -1259,7 +1259,7 @@
     "difficulty": "easy",
     "solution": "<b>KEY CONCEPT :</b> We know that\n<br><br>$${R_t} = R{}_0\\left( {1 + \\alpha t} \\right),$$\n<br><br>where $${R_t}$$ is the resistance of the wire at $${t^ \\circ }C,$$\n<br><br>$${R_0}$$ is the resistance of the wire at $${0^ \\circ }C$$\n<br><br>and $$\\alpha $$ is the temperature coefficient of resistance\n<br><br>$$ \\Rightarrow {R_{50}} = {R_0}\\left( {1 + 50\\alpha } \\right)\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( i \\right)$$\n<br><br>$${R_{100}} = {R_0}\\left( {1 + 100\\alpha } \\right)\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( {ii} \\right)$$\n<br><br>From $$\\left( i \\right),\\,{R_{50}} - {R_0} = 50\\alpha {R_0}\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( {iii} \\right)$$\n<br><br>From $$\\left( {ii} \\right),{R_{100}} - {R_0} = 100\\alpha {R_0}\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( {iv} \\right)$$\n<br><br>Dividing $$(iii)$$ by $$(iv),$$ we get \n<br><br>$${{{R_{50}} - {R_0}} \\over {{R_{100}} - R{}_0}} = {1 \\over 2}$$\n<br><br>Here, $${{R_{50}}}$$ $$ = 5\\Omega $$ and $${{R_{100}} = 6\\Omega }$$\n<br><br>$$\\therefore$$ $${{5 - {R_0}} \\over {6 - {R_0}}} = {1 \\over 2}$$\n<br><br>or, $$6 - {R_0} = 10 - 2{R_0}$$ \n<br><br>or, $${R_0} = 4\\Omega .$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "LeIK1aAr1ED4jkSx",
@@ -1281,7 +1281,7 @@
     "difficulty": "easy",
     "solution": "The resistance of the bulb is $$R = {{{V^2}} \\over P} = {{{{\\left( {220} \\right)}^2}} \\over {100}}$$\n<br><br>The power consumed when operated at $$110$$ $$V$$ is \n<br><br>$$P = {{{{\\left( {110} \\right)}^2}} \\over {{{\\left( {220} \\right)}^2}/100}} = {{100} \\over 4} = 25\\,W$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "eDjbNrFk51ERIpfm",
@@ -1303,7 +1303,7 @@
     "difficulty": "easy",
     "solution": "$$R{}_1 = {R_0}\\left[ {1 + \\alpha  \\times 100} \\right] = 100\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( 1 \\right)$$\n<br><br>$${R_2} = {R_0}\\left[ {1 + \\alpha  \\times T} \\right] = 200\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( 2 \\right)$$\n<br><br>On dividing we get\n<br><br>$${{200} \\over {100}} = {{1 + \\alpha T} \\over {1 + 100\\alpha }}$$\n<br><br>$$ \\Rightarrow 2 = {{1 + 0.005T} \\over {1 + 100 \\times 0.005}}$$\n<br><br>$$ \\Rightarrow T = {400^ \\circ }C$$\n<br><br><b>NOTE :</b> We may use this expression as an approximation because the difference in the answers is appreciable. For accurate results one should use $$R = {R_0}{e^{\\alpha \\Delta T}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ZiHpAhp6kbYElwTC",
@@ -1325,7 +1325,7 @@
     "difficulty": "easy",
     "solution": "$$P = Vi = {{{V_2}} \\over R}$$\n<br><br>$${R_{hot}} = {{{V^2}} \\over P} = {{200 \\times 200} \\over {100}} = 400\\Omega $$\n<br><br>$${R_{cold}} = {{400} \\over {10}} = 40\\Omega $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tS1RMmmalhvW3BQI",
@@ -1347,7 +1347,7 @@
     "difficulty": "easy",
     "solution": "$$H = {{{V^2}t} \\over R}$$\n<br><br>Resistance of half the coil $$ = {R \\over 2}$$\n<br><br>$$\\therefore$$ As $$R$$ reduces to half, $$'H'$$ will be doubled.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "n45THVOLm0IPeJTq",
@@ -1369,7 +1369,7 @@
     "difficulty": "easy",
     "solution": "The mass liberated $$m,$$ electrochemical equivalent of a metal $$Z,$$ are related as $$m = Zit$$\n<br><br>$$ \\Rightarrow m = 3.3 \\times {10^{ - 7}} \\times 3 \\times 2$$\n<br><br>$$ = 19.8 \\times {10^{ - 7}}\\,kg$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "plnK8UfkILcELtWx",
@@ -1391,7 +1391,7 @@
     "difficulty": "medium",
     "solution": "Neutral temperature is the temperature of a hot junction at which $$E$$ is maximum.\n<br><br>$$ \\Rightarrow {{dE} \\over {d\\theta }} = 0$$ \n<br><br>or $$a + 2b\\theta  = 0 \\Rightarrow \\theta  = {{ - a} \\over {2b}} =  - 350$$\n<br><br>Neutral temperature can never be negative hence no $$\\theta $$ is possible.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Cy7fSXIy2UPkikqw",
@@ -1413,7 +1413,7 @@
     "difficulty": "easy",
     "solution": "We know that $$R = {{V_{rated}^2} \\over {{P_{rated}}}} = {{{{\\left( {220} \\right)}^2}} \\over {1000}}$$\n<br><br>When this bulb is connected to $$110$$ volt mains supply we get\n<br><br>$$P = {{{V^2}} \\over R} = {{{{\\left( {110} \\right)}^2} \\times 1000} \\over {{{\\left( {220} \\right)}^2}}} = {{1000} \\over 4} = 250W$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "5M7EROC16wZRTCRZ",
@@ -1435,7 +1435,7 @@
     "difficulty": "easy",
     "solution": "<b>Case 1 :</b> $${P_1} = {{{V^2}} \\over R}$$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/uKKPmrvAB9zP9OIov/3XAQYM47v2Cp3Do2vEQkn7cwJerbt/pLK0N1xvtov0dMu8TqRAOZ/image.svg\" loading=\"lazy\" alt=\"AIEEE 2002 Physics - Current Electricity Question 377 English Explanation 1\"> \n<br><br><b>Case 2 :</b> The wire is cut into two equal pieces. Therefore the resistance of the individual wire is $${R \\over 2}.$$ These are connected in parallel\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/Su5iQgFpRruKB9bSm/2PNpI3661XhvAaNHQ2H61TmWEK7xM/vgMSh5TViNN6U85fqIRfiB/image.svg\" loading=\"lazy\" alt=\"AIEEE 2002 Physics - Current Electricity Question 377 English Explanation 2\">\n<br><br>$$\\therefore$$ $${{\\mathop{\\rm R}\\nolimits} _{eq}} = {{R/2} \\over 2} = {R \\over 4}$$\n<br><br>$$\\therefore$$ $${P_2} = {{{V^2}} \\over {R/4}} = 4\\left( {{{{V^2}} \\over R}} \\right) = 4{P_1}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Ae3bAf5clPJFkbtA",
@@ -1457,7 +1457,7 @@
     "difficulty": "easy",
     "solution": "The equivalent resistance is $${{\\mathop{\\rm R}\\nolimits} _{eq}} = {{2 \\times R} \\over {2 + R}}$$\n<br><br>$$\\therefore$$ Powder dissipation $$P = {{{V^2}} \\over {{{\\mathop{\\rm R}\\nolimits} _{eq}}}}$$\n<br><br>$$\\therefore$$  $$150 = {{15 \\times 15} \\over {{R_{eq}}}}$$ \n<br><br>$$\\therefore$$ $${{\\mathop{\\rm R}\\nolimits} _{eq}} = {{15} \\over {10}} = {3 \\over 2}$$\n<br><br>$$ \\Rightarrow {{2R} \\over {2 + R}} = {3 \\over 2}$$\n<br><br>$$ \\Rightarrow 4R = 6 + 3R$$\n<br><br>$$ \\Rightarrow R = 6\\Omega $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "B6JootYK7CfkeBOL",
@@ -1479,6 +1479,6 @@
     "difficulty": "easy",
     "solution": "$${\\theta _n} = {{{\\theta _i} + {\\theta _c}} \\over 2}.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} & \\text { (3) } \\Rightarrow f(x)=0 \\Rightarrow[x]=3 \\text { or }[x]=-2 \\\\ & \\Rightarrow x \\in[3,4) \\cup[-2,-1) \\Rightarrow f(x)=0 \\text { has infinite solutions } \\\\ & f(x)=[x]^2-[x+3]-3 \\\\ & =\\left[x^2\\right]-[x]-6=([x]-3)([x]+2) \\end{aligned} $$</p>\n<p>$$ \\begin{aligned} & (2) \\Rightarrow \\int_0^2 f(x) d x=\\int_0^2\\left([x]^2-[x]-6\\right) d x \\\\ & \\int_0^2 f(x) d x=\\int_0^2\\left([x]^2-[x]-6\\right) d x=\\int_0^2\\left([x]^2-[x]\\right) d x-12=-12 \\\\ & (4) \\Rightarrow f(x)<0 \\Rightarrow([x]-3)([x]+2)<0 \\Rightarrow-2<[x]<3 \\Rightarrow-1 \\leq[x]<3 \\\\ & (1) \\Rightarrow f(x)>0 \\Rightarrow[x]<-2 \\text { or }[x]>3 \\Rightarrow x<-2 \\text { or } x \\geq 4 \\Rightarrow x \\in(-x,-2) 0[4, \\infty] \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml7upoy9",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p>Statement I: $f(x)=\\frac{x}{1+|x|}$ is one-one</p>\n<p>To check if a function is one-one (injective), we can check its monotonicity (whether it's always increasing or always decreasing).</p>\n<ol>\n\n<li><p>For $x \\geq 0: f(x)=\\frac{x}{1+x}$. The derivative is $f^{\\prime}(x)=\\frac{1}{(1+x)^2}$, which is always positive.</p></li>\n\n<li><p>For $x<0$ : $f(x)=\\frac{x}{1-x}$. The derivative is $f^{\\prime}(x)=\\frac{1}{(1-x)^2}$, which is also always positive.</p></li>\n\n</ol>\n<p>Since the derivative is positive for all $x$ in the domain, the function is strictly increasing. A strictly monotonic function is always one-one.</p>\n<p>Statement I is True.</p>\n<p>Statement II: $f(x)=\\frac{x^2+4 x-30}{x^2-8 x+18}$ is many-one</p>\n<p>Discriminant of Denominator: For $x^2-8 x+18, D=(-8)^2-4(1)(18)=64- 72=-8$. Since $D<0$, the denominator is always positive and the function is continuous for all $x \\in \\mathbb{R}$.</p>\n<p>Behavior at Infinity: As $x \\rightarrow \\infty$ and $x \\rightarrow-\\infty$, the value of $f(x)$ approaches 1 (the ratio of the leading coefficients).</p>\n<p>Turning Points: Since the function starts near $y=1$ at $-\\infty$, moves through various values, and returns toward $y=1$ at $+\\infty$, it must have at least one local maximum or minimum. This means a horizontal line will intersect the graph at more than one point.</p>\n<p>Also, let</p>\n<p>$$ y=\\frac{x^2+4 x-30}{x^2-8 x+18} $$</p>\n<p>Cross multiply:</p>\n<p>$$ y\\left(x^2-8 x+18\\right)=x^2+4 x-30 $$</p>\n<p>Rearrange:</p>\n<p>$$ (y-1) x^2+(-8 y-4) x+(18 y+30)=0 $$</p>\n<p>This is a quadratic in $x$.</p>\n<p>For many values of $y$, this quadratic has two distinct real solutions. Function is MANY-ONE</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhyrp",
@@ -102,7 +102,7 @@
     "difficulty": "medium",
     "solution": "<p>To determine the nature of the given function, let us carefully analyze it for both the one-one (injective) and onto (surjective) properties. The function is given by:</p>\n<p>$$f(x)=\\frac{2 x^2-3 x+2}{3 x^2+x+3}$$</p>\n<p>where the domain is the set of real numbers $\\mathbf{R}$ and the codomain is also $\\mathbf{R}$.</p>\n<p><strong>Checking if the function is one-one</strong></p>\n<p>A function $f: \\mathbf{R} \\rightarrow \\mathbf{R}$ is said to be one-one if every element in the domain has a distinct image in the codomain. That is, if $f(x_1) = f(x_2)$, then we must have $x_1 = x_2$.</p>\n<p>Let us check if we can find two different real values of $x$ that give the same value for $f(x)$. Let us set $f(x) = 1$ and solve for $x$:</p>\n<p>$$\\frac{2 x^2-3 x+2}{3 x^2+x+3} = 1$$</p>\n<p>Cross-multiplying, we obtain:</p>\n<p>$$2 x^2-3 x+2 = 3 x^2+x+3$$</p>\n<p>Bringing all terms to one side, we get:</p>\n<p>$$x^2 + 4x + 1 = 0$$</p>\n<p>Using the quadratic formula to find the roots:</p>\n<p>$$x = \\frac{-4 \\pm \\sqrt{16 - 4(1)(1)}}{2} = \\frac{-4 \\pm \\sqrt{12}}{2} = -2 \\pm \\sqrt{3}$$</p>\n<p>Since we found two distinct real values, $x_1 = -2 + \\sqrt{3}$ and $x_2 = -2 - \\sqrt{3}$, such that $f(x_1) = f(x_2) = 1$, the function is not one-one.</p>\n<p><strong>Checking if the function is onto</strong></p>\n<p>A function is onto if its range is equal to its codomain. Here, the codomain is $\\mathbf{R}$. To find the range, let us set $f(x) = y$:</p>\n<p>$$y = \\frac{2 x^2-3 x+2}{3 x^2+x+3}$$</p>\n<p>Cross-multiplying gives us:</p>\n<p>$$y(3x^2 + x + 3) = 2x^2 - 3x + 2$$</p>\n<p>$$3yx^2 + yx + 3y = 2x^2 - 3x + 2$$</p>\n<p>Grouping the terms by the powers of $x$, we form a quadratic equation in $x$:</p>\n<p>$$(3y - 2)x^2 + (y + 3)x + (3y - 2) = 0$$</p>\n<p>Since $x$ is a real number, the discriminant ($D$) of this quadratic equation must be greater than or equal to zero ($D \\geq 0$).</p>\n<p>$$D = (y + 3)^2 - 4(3y - 2)(3y - 2) \\geq 0$$</p>\n<p>$$(y + 3)^2 - 4(3y - 2)^2 \\geq 0$$</p>\n<p>This is in the form of $a^2 - b^2 \\geq 0$, which can be factored as $(a-b)(a+b) \\geq 0$. Here, $a = y+3$ and $b = 2(3y-2) = 6y-4$:</p>\n<p>$$[(y + 3) - (6y - 4)][(y + 3) + (6y - 4)] \\geq 0$$</p>\n<p>$$(-5y + 7)(7y - 1) \\geq 0$$</p>\n<p>To solve this inequality, we can multiply by $-1$ (which reverses the inequality sign):</p>\n<p>$$(5y - 7)(7y - 1) \\leq 0$$</p>\n<p>The critical points are $y = \\frac{1}{7}$ and $y = \\frac{7}{5}$. Based on the inequality, $y$ must lie between these two values:</p>\n<p>$$\\frac{1}{7} \\leq y \\leq \\frac{7}{5}$$</p>\n<p>This means the range of the function is the closed interval $\\left[ \\frac{1}{7}, \\frac{7}{5} \\right]$. </p>\n<p>Because the range is a small subset of the real numbers and not equal to the entire codomain $\\mathbf{R}$, the function is not onto.</p>\n<p><strong>Conclusion:</strong></p>\n<p>Since $f(x)$ is neither one-one nor onto, the correct statement is given by Option D.</p>\n<p>Option D</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6rp6fwl",
@@ -124,7 +124,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\textbf{Step 1: Total Functions with } 1 \\in f(A) $$</p>\n<p>Any function $ f: A \\to B $ where $ A = \\{1, 2, 3, 4\\} $ and $ B = \\{1, 4, 9, 16\\} $ is defined by choosing one of the four elements of $ B $ for each element of $ A $. Thus, the total number of functions is</p>\n<p>$$ 4^4 = 256. $$</p>\n<p>To count those functions where $ 1 $ appears at least once in the set $ f(A) $, we can use the complementary counting method: subtract the functions that never use $ 1 $. If $ 1 $ is excluded, each element of $ A $ has only 3 choices (namely, $ \\{4, 9, 16\\} $), so the number of such functions is</p>\n<p>$$ 3^4 = 81. $$</p>\n<p>Thus, the number of functions such that $ 1 \\in f(A) $ is</p>\n<p>$$ 256 - 81 = 175. $$</p>\n<p>$$ \\textbf{Step 2: Counting Many-One Functions} $$</p>\n<p>In this context, \"many-one functions\" are understood to be non-injective functions. Since an injective (one-to-one) function from $ A $ to $ B $ must be a permutation (because both sets have 4 elements), the number of one-to-one functions is</p>\n<p>$$ 4! = 24. $$</p>\n<p>It is important to note that every injective function $ f: A \\to B $ has $ f(A) = B $ (a full permutation) which automatically means $ 1 \\in f(A) $.</p>\n<p>Thus, the number of many-one (non-injective) functions $ f: A \\to B $ with $ 1 \\in f(A) $ is found by subtracting the one-to-one functions from the total functions that include $ 1 $:</p>\n<p>$$ 175 - 24 = 151. $$</p>\n<p>$$ \\boxed{151} $$</p>\n<p>This detailed explanation shows that the number of many-one functions $ f: A \\rightarrow B $ such that $ 1 \\in f(A) $ is indeed $ 151 $.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6v43dd6",
@@ -146,7 +146,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(x)=\\frac{2^{2 \\mathrm{x}}-1}{2^{2 \\mathrm{x}}+1} \\\\\n& =1-\\frac{2}{2^{2 \\mathrm{x}}+1} \\\\\n& \\mathrm{f}^{\\prime}(\\mathrm{x})=\\frac{2}{\\left(2^{2 \\mathrm{x}}+1\\right)^2} \\cdot 2 \\cdot 2^{2 \\mathrm{x}} \\cdot \\ln 2 \\text { i.e always }+\\mathrm{ve}\n\\end{aligned}$$</p>\n<p>so $f(x)$ is $\\uparrow$ function</p>\n<p>$$\\begin{aligned}\n& \\therefore \\mathrm{f}(-\\infty)=-1 \\\\\n& \\mathrm{f}(\\infty)=1 \\\\\n& \\therefore \\mathrm{f}(\\mathrm{x}) \\in(-1,1) \\neq \\text { co-domain }\n\\end{aligned}$$</p>\n<p>so function is one-one but not onto</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lsbl9xjw",
@@ -168,7 +168,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{f}: \\mathrm{N}-\\{1\\} \\rightarrow \\mathrm{N} \\\\\n& \\mathrm{f}(\\mathrm{n})=\\text { The highest prime factor of } \\mathrm{n} . \\\\\n& \\mathrm{f}(2)=2 \\\\\n& \\mathrm{f}(4)=2 \\\\\n& \\Rightarrow \\text { many one } \\\\\n& 4 \\text { is not image of any element } \\\\\n& \\Rightarrow \\text { into }\n\\end{aligned}$$</p>\n<p>Hence many one and into</p>\n<p>Neither one-one nor onto.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsgcodrp",
@@ -185,7 +185,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f: A \\rightarrow P(A) \\\\\n& a \\in f(a)\n\\end{aligned}$$</p>\n<p>That means '$$a$$' will connect with subset which contain element '$$a$$'.</p>\n<p>Total options for 1 will be $$2^6$$. (Because $$2^6$$ subsets contains 1)</p>\n<p>Similarly, for every other element</p>\n<p>Hence, total is $$2^6 \\times 2^6 \\times 2^6 \\times 2^6 \\times 2^6 \\times 2^6 \\times 2^6=2^{42}$$</p>\n<p>Ans. $$2+42=44$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "lv7v4o17",
@@ -207,7 +207,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(1)+f(3)=14$$</p>\n<p>Case I</p>\n<p>$$\\begin{aligned}\n& f(1)=2, f(3)=12 \\\\\n& f(1)=12, f(3)=2\n\\end{aligned}$$</p>\n<p>Total one-one function</p>\n<p>$$\\begin{aligned}\n& =2 \\times 5 \\times 4 \\times 3 \\\\\n& =120\n\\end{aligned}$$</p>\n<p>Case II</p>\n<p>$$\\begin{aligned}\n& f(1)=4, f(3)=10 \\\\\n& f(1)=10, f(3)=4\n\\end{aligned}$$</p>\n<p>Total one-one function</p>\n<p>$$\\begin{aligned}\n& =2 \\times 5 \\times 4 \\times 3 \\\\\n& =120 \\\\\n& \\text { Total cases }=120+120=240\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lvc57nwe",
@@ -229,7 +229,7 @@
     "difficulty": "medium",
     "solution": "<p>The function $ f(x)=\\frac{x^2+2x-15}{x^2-4x+9}, x \\in \\mathbb{R} $ can be simplified to $ f(x)=\\frac{(x-3)(x+5)}{x^2-4x+9} $.</p>\n\n<p>For $ x=3 $ and $ x=-5 $, $ f(x) $ equals 0. Therefore, $ f(x) $ is not one-one as it yields the same output for different input values.</p>\n\n<p>The range of $ f(x) $ is $ [-2, 1.6] $, indicating that $ f(x) $ does not cover all possible real values. Consequently, $ f(x) $ is not onto.</p>\n\n<p>Thus, the function is neither one-one nor onto.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luxwdqq9",
@@ -269,7 +269,7 @@
     "solution": "$$\nS=(0,1) \\cup(1,2) \\cup(3,4) \\text { and } T=\\{0,1,2,3\\} \\text {. }\n$$\n\n<br/><br/>Let domain and co-domain of a function $y=f(x)$ are $S$ and $T$ respectively.\n<br/><br/>(A) There are infinitely many elements in domain and four elements in co-domain.\n<br/><br/>$\\Rightarrow$ There are infinitely many functions from $S$ to $T$.\n<br/><br/>$\\Rightarrow$ Option $(A)$ is correct\n<br/><br/>(B) If number of elements in domain is greater than number of elements in co-domain, then number of strictly increasing function is zero.\n<br/><br/>$\\Rightarrow$ Option (B) is incorrect\n<br/><br/>(C) Maximum number of continuous functions = $4 \\times 4 \\times 4=64$\n<br/><br/>(Every subset $(0,1),(1,2),(3,4)$ has four choices)\n<br/><br/>$\\because 64 < 120 \\Rightarrow$ option (C) is correct.\n<br/><br/>(D) For every point at which $f(x)$ is continuous, $f(x)=0$\n<br/><br/>$\\Rightarrow$ Every continuous function from $S$ to $T$ is differentiable.\n<br/><br/>Option (D) is correct.",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgsw4p1x",
@@ -308,7 +308,7 @@
     "difficulty": "medium",
     "solution": "$\\because f:\\{1,2,3,4\\} \\rightarrow\\{a \\in \\mathbb{Z}:|9| \\leq 8\\}$\n<br/><br/>\nand $f(n)+\\frac{1}{n} f(n+1)=1$\n<br/><br/>\n$\\Rightarrow n f(n)+f(n+1)=n \\quad \\ldots$ (i)\n<br/><br/>\n$\\therefore f(1)+f(2)=1 \\Rightarrow f(2)=1-f(1)$\n<br/><br/>\nBut $f(1) \\in[-8,8]$\n<br/><br/>\nHence, $f(2) \\in[-8,8] \\Rightarrow f(1) \\in[-7,8] \\quad\\ldots(\\mathrm{A})$\n<br/><br/>\nand $2 f(2)+f(3)=2 \\Rightarrow f(3)=2 f(1)$\n<br/><br/>\n$\\therefore 2 f(1) \\in[-8,8] \\Rightarrow f(1) \\in[-4,4] \\quad\\ldots(\\mathrm{B})$\n<br/><br/>\nand $3 f(3)+f(4)=3 \\Rightarrow f(4)=3-6 f(1)$\n<br/><br/>\n$\\therefore f(1) \\in\\left[-\\frac{5}{6}, \\frac{11}{6}\\right]\\quad...(C)$\n<br/><br/>\nFrom (A), (B) and (C) : $f(1)=0$ or 1\n<br/><br/>\n$\\therefore$ Only two functions are possible.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldsvim1d",
@@ -403,7 +403,7 @@
     "difficulty": "hard",
     "solution": "<p>As function is one-one and onto, out of 50 elements of domain set 17 elements are following restriction $$f(3) > f(9) > f(15)\\,.......\\, > f(99)$$</p>\n<p>So number of ways $$ = {}^{50}{C_{17}}\\,.\\,1\\,.\\,33!$$</p>\n<p>$$ = {}^{50}{P_{33}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6dusstk",
@@ -425,7 +425,7 @@
     "difficulty": "medium",
     "solution": "<p>Given, $$f(1) + f(2) = f(3)$$</p>\n<p>It means $$f(1),f(2)$$ and $$f(3)$$ are dependent on each other. But there is no condition on $$f(4)$$, so $$f(4)$$ can be $$f(4) = 1,2,3,4,5,6$$.</p>\n<p>For $$f(1),f(2)$$ and we have to find how many functions possible which will satisfy the condition $$f(1) + f(2) = f(3)$$</p>\n<p>Case 1 :</p>\n<p>When $$f(3) = 2$$ then possible values of $$f(1)$$ and $$f(2)$$ which satisfy $$f(1) + f(2) = f(3)$$ is $$f(1) = 1$$ and $$f(2) = 1$$.</p>\n<p>And $$f(4)$$ can be = 1, 2, 3, 4, 5, 6</p>\n<p>$$\\therefore$$ Total possible functions $$=1\\times6=6$$</p>\n<p>Case 2 :</p>\n<p>When $$f(3) = 3$$ then possible values</p>\n<p>(1) $$f(1) = 1$$ and $$f(2) = 2$$</p>\n<p>(2) $$f(1) = 2$$ and $$f(2) = 1$$</p>\n<p>And $$f(4)$$ can be = 1, 2, 3, 4, 5, 6.</p>\n<p>$$\\therefore$$ Total functions $$ = 2 \\times 6 = 12$$</p>\n<p>Case 3 :</p>\n<p>When $$f(3) = 4$$ then</p>\n<p>(1) $$f(1) = 1$$ and $$f(2) = 3$$</p>\n<p>(2) $$f(1) = 2$$ and $$f(2) = 2$$</p>\n<p>(3) $$f(1) = 3$$ and $$f(2) = 1$$</p>\n<p>And $$f(4)$$ can be = 1, 2, 3, 4, 5, 6</p>\n<p>$$\\therefore$$ Total functions $$ = 3 \\times 6 = 18$$</p>\n<p>Case 4 :</p>\n<p>When $$f(3) = 5$$ then</p>\n<p>(1) $$f(1) = 1$$ and $$f(4) = 4$$</p>\n<p>(2) $$f(1) = 2$$ and $$f(4) = 3$$</p>\n<p>(3) $$f(1) = 3$$ and $$f(4) = 2$$</p>\n<p>(4) $$f(1) = 4$$ and $$f(4) = 1$$</p>\n<p>And $$f(4)$$ can be  = 1, 2, 3, 4, 5 and 6</p>\n<p>$$\\therefore$$ Total functions $$ = 4 \\times 6 = 24$$</p>\n<p>Case 5 :</p>\n<p>When $$f(3) = 6$$ then</p>\n<p>(1) $$f(1) = 1$$ and $$f(2) = 5$$</p>\n<p>(2) $$f(1) = 2$$ and $$f(2) = 4$$</p>\n<p>(3) $$f(1) = 3$$ and $$f(2) = 3$$</p>\n<p>(4) $$f(1) = 4$$ and $$f(2) = 2$$</p>\n<p>(5) $$f(1) = 5$$ and $$f(2) = 1$$</p>\n<p>And $$f(4)$$ can be = 1, 2, 3, 4, 5 and 6</p>\n<p>$$\\therefore$$ Total possible functions $$ = 5 \\times 6 = 30$$</p>\n<p>$$\\therefore$$ Total functions from those 5 cases we get</p>\n<p>$$ = 6 + 12 + 18 + 24 + 30$$</p>\n<p>$$ = 90$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6klddyv",
@@ -481,7 +481,7 @@
     "difficulty": "medium",
     "solution": "<p>When n = 1, 5, 9, 13 then $${{n + 1} \\over 2}$$ will give all odd numbers.</p>\n<p>When n = 3, 7, 11, 15 .....</p>\n<p>n $$-$$ 1 will be even but not divisible by 4</p>\n<p>When n = 2, 4, 6, 8 .....</p>\n<p>Then 2n will give all multiples of 4</p>\n<p>So range will be N.</p>\n<p>And no two values of n give same y, so function is one-one and onto.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kruaeehj",
@@ -498,7 +498,7 @@
     "difficulty": "medium",
     "solution": "f(1) + f(2) = 3 $$-$$ f(3)<br><br>$$\\Rightarrow$$ f(1) + f(2) = 3 + f(3) = 3<br><br>The only possibility is : 0 + 1 + 2 = 3<br><br>$$\\Rightarrow$$ Elements 1, 2, 3 in the domain can be mapped with 0, 1, 2 only.<br><br>So number of bijective functions.<br><br>$$\\left| \\!{\\underline {\\,\n  3 \\,}} \\right. $$ $$\\times$$ $$\\left| \\!{\\underline {\\,\n  5 \\,}} \\right. $$ = 720",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "G6M026PNBglYe91OIP1klt7gk5q",
@@ -520,7 +520,7 @@
     "difficulty": "medium",
     "solution": "Number of elements in A = 3<br><br>Number of elements in B = 5<br><br>Number of elements in A $$\\times$$ B = 15<br><br><img src=\"https://imagex.cdn.examgoal.net/1kr002q13/6ac8f5dd-779d-48d0-b474-0d133af0fbd9/f7461570-e2b7-11eb-bdd2-7fe09049309d/file-1kr002q14.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Evening Shift Mathematics - Functions Question 121 English Explanation 1\"><br><br>Number of one-one function<br><br>x = 5 $$\\times$$ 4 $$\\times$$ 3<br><br>x = 60<br><br><img src=\"https://imagex.cdn.examgoal.net/1kr003ghu/61a54cb8-5862-4c40-a4d2-e1a4d7f876f4/0bb78b10-e2b8-11eb-9d24-7bc7e73961bf/file-1kr003ghv.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Evening Shift Mathematics - Functions Question 121 English Explanation 2\"><br><br>Number of one-one function<br><br>y = 15 $$\\times$$ 14 $$\\times$$ 13<br><br>y = 15 $$\\times$$ 4 $$\\times$$ $${{14} \\over 4}$$ $$\\times$$ 13<br><br>y = 60 $$\\times$$ $${7 \\over 2}$$ $$\\times$$ 13<br><br>2y = (13)(7x)<br><br>2y = 91x",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tXk6WTp3s2gOZF5efd1kls4q62e",
@@ -542,7 +542,7 @@
     "difficulty": "medium",
     "solution": "$$f(n + 1) = f(n) + 1$$<br><br>$$f(2) = 2f(1)$$<br><br>$$f(3) = 3f(1)$$<br><br>$$f(4) = 4f(1)$$<br><br>.....<br><br>$$f(n) = nf(1)$$<br><br>$$f(x)$$ is one-one",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krvzt6at",
@@ -564,7 +564,7 @@
     "difficulty": "medium",
     "solution": "g : N $$\\to$$ N <br><br>g(3n + 1) = 3n + 2,<br><br>g(3n + 2) = 3n + 3,<br><br>g(3n + 3) = 3n + 1<br><br>$$g(x) = \\left[ {\\matrix{\n   {x + 1} &amp; {x = 3k + 1}  \\cr \n   {x + 1} &amp; {x = 3k + 2}  \\cr \n   {x - 2} &amp; {x = 3k + 3}  \\cr \n\n } } \\right.$$<br><br>$$g\\left( {g(x)} \\right) = \\left[ {\\matrix{\n   {x + 2} &amp; {x = 3k + 1}  \\cr \n   {x - 1} &amp; {x = 3k + 2}  \\cr \n   {x - 1} &amp; {x = 3k + 3}  \\cr \n\n } } \\right.$$<br><br>$$g\\left( {g\\left( {g\\left( x \\right)} \\right)} \\right) = \\left[ {\\matrix{\n   x &amp; {x = 3k + 1}  \\cr \n   x &amp; {x = 3k + 2}  \\cr \n   x &amp; {x = 3k + 3}  \\cr \n\n } } \\right.$$<br><br>If f : N $$\\to$$ N, if is a one-one function such that f(g(x)) = f(x) $$\\Rightarrow$$ g(x) = x, which is not the case<br><br>If f : N $$\\to$$ N f is an onto function<br><br>such that f(g(x)) = f(x),<br><br>one possibility is <br><br>$$f(x) = \\left[ {\\matrix{\n   x &amp; {x = 3n + 1}  \\cr \n   x &amp; {x = 3n + 2}  \\cr \n   x &amp; {x = 3n + 3}  \\cr \n\n } } \\right.$$ n$$\\in$$N<sub>0</sub><br><br>Here f(x) is onto, also f(g(x)) = f(x) $$\\forall$$ x$$\\in$$N",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ogppq1ohbkBSL5dMSx1kluwzw9x",
@@ -586,7 +586,7 @@
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1km3rz8wu/b3862445-fbfd-46c4-9089-0fedfe9d6f88/5b4ad8d0-81ce-11eb-9586-9d1634079c98/file-1km3rz8wv-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1km3rz8wu/b3862445-fbfd-46c4-9089-0fedfe9d6f88/5b4ad8d0-81ce-11eb-9586-9d1634079c98/file-1km3rz8wv-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1km3rz8wu/b3862445-fbfd-46c4-9089-0fedfe9d6f88/5b4ad8d0-81ce-11eb-9586-9d1634079c98/file-1km3rz8wv-680w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th February Evening Shift Mathematics - Functions Question 120 English Explanation 1\"></picture> <br><br>f(1) = 2<br><br>f(2) = 2<br><br>f(3) = 4<br><br>f(4) = 4<br><br>f(5) = 6<br><br>f(6) = 6<br><br>f(7) = 8<br><br>f(8) = 8<br><br>f(9) = 10<br><br>f(10) = 10<br><br>$$ \\therefore $$ f(1) = f(2) = 2<br><br>f(3) = f(4) = 4<br><br>f(5) = f(6) = 6<br><br>f(7) = f(8) = 8<br><br>f(9) = f(10) = 10<br><br>Given, g(f(x)) = f(x)<br><br>when x = 1, g(f(1)) = f(1) $$ \\Rightarrow $$ g(2) = 2<br><br>when, x = 2, g(f(2)) = f(2) $$ \\Rightarrow $$ g(2) = 2<br><br>$$ \\therefore $$ x = 1, 2, g(2) = 2<br><br>Similarly, at x = 3, 4, g(4) = 4<br><br>at x = 5, 6, g(6) = 6<br><br>at x = 7, 8, g(8) = 8<br><br>at x = 9, 10, g(10) = 10<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1km3s0nj2/aa3ce4ee-c6bd-4c88-b025-f1e88351df17/8264c3e0-81ce-11eb-9586-9d1634079c98/file-1km3s0nj3-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1km3s0nj2/aa3ce4ee-c6bd-4c88-b025-f1e88351df17/8264c3e0-81ce-11eb-9586-9d1634079c98/file-1km3s0nj3-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1km3s0nj2/aa3ce4ee-c6bd-4c88-b025-f1e88351df17/8264c3e0-81ce-11eb-9586-9d1634079c98/file-1km3s0nj3-680w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th February Evening Shift Mathematics - Functions Question 120 English Explanation 2\"></picture> <br><br>Here, you can see for even terms mapping is fixed. But far odd terms 1, 3, 5, 7, 9 we can map to any one of the 10 elements.<br><br>$$ \\therefore $$ For 1, number of functions = 10<br><br>For 3, number of functions = 10<br><br>$$\\eqalign{\n  &amp; .  \\cr \n  &amp; .  \\cr \n  &amp; .  \\cr \n  \n  &amp;  \\cr} $$<br>for 9, number of functions = 10<br><br>$$ \\therefore $$ Total number of functions = 10 $$\\times$$ 10 $$\\times$$ 10 $$\\times$$ 10 $$\\times$$ 10 = 10<sup>5</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IC1bsRjfGDnA9PO79p1kjzl6k58",
@@ -609,7 +609,7 @@
     "solution": "The given function f : R $$ \\to $$ R is<br><br>$$f(x) = |x|(x - \\sin x)$$ .....(i)<br><br>$$ \\because $$ The function 'f' is a odd and continuous function and as $$\\mathop {\\lim }\\limits_{x \\to \\infty } f(x) = \\infty $$ and $$\\mathop {\\lim }\\limits_{x \\to \\infty } f(x) =  - \\infty $$, so range is R, therefore, 'f' is a onto function.<br><br>$$ \\because $$ $$f(x) = \\left[ \\matrix{\n  x(x - \\sin x),\\,x \\ge \\,0 \\hfill \\cr \n   - x(x - \\sin x),\\,x\\, &lt; \\,0 \\hfill \\cr}  \\right.$$<br><br>$$ \\therefore $$ $$f'(x) = \\left[ \\matrix{\n  2x - \\sin x - x\\cos x,\\,x &gt; \\,0 \\hfill \\cr \n   - 2x + \\sin x + x\\cos x,\\,x\\, &lt; \\,0 \\hfill \\cr}  \\right.$$<br><br>$$\\left[ \\matrix{\n  (x - \\sin x) + x(1 - \\cos x),\\,x &gt; \\,0 \\hfill \\cr \n  ( - x + \\sin x) - x(1 - \\cos x),\\,x\\, &lt; \\,0 \\hfill \\cr}  \\right.$$<br><br>$$ \\because $$ for x &gt; 0, x $$-$$ sin x &gt; 0 and x(1 $$-$$ cos x) &gt; 0<br><br>$$ \\therefore $$ $$f'(x) &gt; 0\\forall x \\in (0,\\infty )$$<br><br>$$ \\Rightarrow $$ f is strictly increasing function. $$\\forall x \\in (0,\\infty )$$.<br><br>Similarly, for x &lt; 0, $$-$$x + sin x &gt; 0 and ($$-$$ x) (1 $$-$$ cos x) &gt; 0, therefore, $$f'(x) &gt; 0\\forall x \\in ( - \\infty ,0)$$<br><br>$$ \\Rightarrow $$ f is strictly increasing function, $$\\forall x \\in $$(0, $$\\infty $$)<br><br>Therefore 'f' is a strictly increasing function for x$$ \\in $$R and it implies that f is one-one function.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "uCRfvNgdGc6yDuxSnqjgy2xukfqfns2t",
@@ -648,7 +648,7 @@
     "difficulty": "medium",
     "solution": "Given that $f(k)$ is a multiple of 3 whenever $k$ is a multiple of 4, we need to consider how to map elements from the domain {1, 2, 3, ..., 20} to the codomain {1, 2, 3, ..., 20} following this rule.\n\n<br/><br/>1. We first consider the subset of the domain that consists of multiples of 4: {4, 8, 12, 16, 20}. There are 5 elements in this subset.\n\n<br/><br/>2. We then consider the subset of the codomain that consists of multiples of 3: {3, 6, 9, 12, 15, 18}. There are 6 elements in this subset.\n\n<br/><br/>3. According to the given condition, each of the 5 multiples of 4 must be mapped to a multiple of 3. This can be done in ${ }^6C_5 \\cdot 5! = 6!$ ways, considering that there are 6 options for each of the 5 multiples of 4 (each choice constitutes a combination), and we then consider the permutations of these 5 choices.\n\n<br/><br/>4. The remaining 15 elements in the domain (20 original elements minus the 5 multiples of 4) can be mapped onto the remaining 15 elements in the codomain (20 original elements minus the 6 multiples of 3, plus one multiple of 3 that has been assigned to a multiple of 4). This can be done in $15!$ ways.\n\n<br/><br/>So, combining these two cases, the total number of onto functions $f$ is $6! \\times 15!$, which corresponds to option C.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "pBqVHNcxP55bNHm9oo93G",
@@ -670,7 +670,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = \\left| {1 - {1 \\over x}} \\right| = {{\\left| {x - 1} \\right|} \\over x} = \\left\\{ {\\matrix{\n   {{{1 - x} \\over x}} &amp; {0 &lt; x \\le 1}  \\cr \n   {{{x - 1} \\over x}} &amp; {x \\ge 1}  \\cr \n\n } } \\right.$$\n<br><br><img src=\"https://imagex.cdn.examgoal.net/kjF2yS4h7fHdXQeXU/EppaImhGgkvKhT9ejkbkqtAcnrkMc/93t4OUmEGS8vWXXj1fqOL9/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 11th January Evening Slot Mathematics - Functions Question 143 English Explanation\">\n<br>$$ \\Rightarrow $$&#160;&#160;f(x) is not injective\n<br><br>but range of function is $$\\left[ {0,\\infty } \\right)$$\n<br><br><b>Remarks :</b>&#160;&#160;If co-domain is $$\\left[ {0,\\infty } \\right)$$, then f(x) will be surjective.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "dfuBeaBmWfo5qPrwGI18hoxe66ijvwpyj7h",
@@ -692,7 +692,7 @@
     "difficulty": "medium",
     "solution": "Let ƒ(x) = $${{{x^2}} \\over {1 - {x^2}}}$$ = y\n<br><br>$$ \\Rightarrow $$ $$y\\left( {1 - {x^2}} \\right) = {x^2}$$\n<br><br>$$ \\Rightarrow $$ $${x^2} = {y \\over {1 + y}}$$\n<br><br>As $${x^2}$$ is always $$ \\ge $$ 0.\n<br><br>$$ \\therefore $$ $${y \\over {1 + y}}$$ $$ \\ge $$ 0\n<br><br> y $$ \\in $$ $$\\left( { - \\infty , - 1} \\right) \\cup \\left[ {0,\\left. \\infty  \\right)} \\right.$$\n<br><br>For surjective function co-domain = Range\n<br><br>$$ \\therefore $$ A is R – [–1, 0).",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "i3Uk81JW5dW81psdZCrdJ",
@@ -714,7 +714,7 @@
     "difficulty": "medium",
     "solution": "f(x) = $${{2x} \\over {x - 1}}$$\n<br><br>f(x) = 2 + $${2 \\over {x - 1}}$$\n<br><br>f'(x) = $$-$$ $${2 \\over {{{\\left( {x - 1} \\right)}^2}}}$$ &lt; 0 $$\\forall $$ x $$ \\in $$ R\n<br><br>Hence f(x) is strictly decreasing \n<br><br>So, f(x) is one-one\n<br><br><b>Range : </b> Let y = $${{2x} \\over {x - 1}}$$\n<br><br>xy $$-$$ y = 2x\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;x(y $$-$$ 2) = y\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;x = $${y \\over {y - 2}}$$\n<br><br>given that x $$ \\in $$ R  : x is not a +ve integer\n<br><br>$$ \\therefore $$&nbsp;&nbsp;$${y \\over {y - 2}} \\ne $$ N&nbsp;&nbsp;&nbsp;&nbsp;(N $$ \\to $$&nbsp;Natural number)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;y $$ \\ne $$ Ny $$-$$ 2N\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;y $$ \\ne $$ $${{2N} \\over {N - 1}}$$\n<br><br>So range $$ \\notin $$ R (in to function)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "90QKnZliBYLyGIutLf1kjvgs7ne",
@@ -754,7 +754,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = {x \\over {1 + {x^2}}}$$\n<br><br>$$ \\therefore $$ $$f\\left( {{1 \\over x}} \\right) = {{{1 \\over x}} \\over {1 + {1 \\over {{x^2}}}}} = {x \\over {1 + {x^2}}} = f\\left( x \\right)$$\n<br><br>$$ \\therefore $$ f(x) is many-one function.\n<br><br>Now let y = f(x) = $${x \\over {1 + {x^2}}}$$\n<br><br>$$ \\Rightarrow $$ y + x<sup>2</sup>y = x\n<br><br>$$ \\Rightarrow $$ yx  - x + y = 0\n<br><br>As x $$ \\in $$ R\n<br><br>$$ \\therefore $$ (-1)<sup>2</sup> - 4(y)(y) $$ \\ge $$ 0\n<br><br>$$ \\Rightarrow $$ 1 - 4y<sup>2</sup> $$ \\ge $$ 0\n<br><br>$$ \\Rightarrow $$ y $$ \\in $$ $$\\left[ { - {1 \\over 2},{1 \\over 2}} \\right]$$\n<br><br>$$ \\therefore $$ Range = Codomain = $$\\left[ { - {1 \\over 2},{1 \\over 2}} \\right]$$\n<br><br>So, f(x) is surjective.\n<br><br>$$ \\therefore $$ f(x) is surjective but not injective\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "igQxD7UV54aBTe7EncVNQ",
@@ -776,7 +776,7 @@
     "difficulty": "medium",
     "solution": "f(1) = 1 - 5$$\\left[ {{1 \\over 5}} \\right]$$ = 1\n<br><br>f(6) = 6 - 5$$\\left[ {{6 \\over 5}} \\right]$$ = 1\n<br><br>So, this function is many to one.\n<br><br>f(10) = 10 - 5$$\\left[ {{10 \\over 5}} \\right]$$ = 0 which is not present in the set of natural numbers.\n<br><br>So this function is neither one-one nor onto.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l24tfla1",
@@ -799,7 +799,7 @@
     "solution": "<p>The function $$f:[0,3] \\to [1,29]$$, defined by $$f(x) = 2x^3 - 15x^2 + 36x + 1$$, is :</p>\n\n<p>First, calculate the derivative of $ f $ :</p>\n\n<p>$$ f'(x) = 6x^2 - 30x + 36 $$</p>\n\n<p>Which simplifies to :</p>\n\n<p>$$ f'(x) = 6(x^2 - 5x + 6) = 6(x - 2)(x - 3) $$</p>\n\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l2535w41/492b10fc-52e6-4c46-a0b7-09c3d3957add/57337d00-bf4a-11ec-8a13-c364d46c85d0/file-1l2535w42.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l2535w41/492b10fc-52e6-4c46-a0b7-09c3d3957add/57337d00-bf4a-11ec-8a13-c364d46c85d0/file-1l2535w42.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh\" alt=\"IIT-JEE 2012 Paper 1 Offline Mathematics - Functions Question 16 English Explanation\"></p>\n\n<p>For the given domain $[0, 3]$, the function $ f(x) $ is both increasing and decreasing. Therefore, $ f(x) $ is many-to-one.</p>\n\n<p>Setting $ f'(x) = 0 $ gives the critical points :</p>\n\n<p>$$ x = 2, 3 $$</p>\n\n<p>We now evaluate the function at these points within the domain to determine the range :</p>\n\n<p>$$ f(0) = 1 $$</p>\n\n<p>$$ f(2) = 29 $$</p>\n\n<p>$$ f(3) = 28 $$</p>\n\n<p>Thus, the range of $ f $ is $[1, 29]$, indicating that the function is onto.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m4z5n6me",
@@ -822,7 +822,7 @@
     "solution": "<p>$$ \\begin{aligned} & f(x)=e^{x^2}+e^{-x^2} \\\\\\\\ & \\begin{aligned} f^{\\prime}(x) & =e^{x^2} \\frac{d}{d x}\\left(x^2\\right)+e^{-x^2} \\frac{d}{d x}\\left(-x^2\\right) \\\\\\\\ & =e^{x^2}(2 x)+e^{-x^2}(-2 x) \\\\\\\\ & =2 x\\left(e^{x^2}-e^{-x^2}\\right) \\geq 0 \\forall x \\in[0,1] \\\\\\\\ g(x) & =x e^{x^2}+e^{-x^2} \\\\\\\\ h(x) & =x^2 e^{x^2}+e^{-x^2} \\end{aligned} \\end{aligned} $$</p>\n<p>Clearly for $0 \\leq x \\leq 1 \\quad f(x) \\geq g(x) \\geq h(x)$</p>\n<p>$\\because f(1)=g(1)=h(1)=e+\\frac{1}{e}$ and $f(1)$ is greatest</p>\n<p>$$ \\because a=b=c=e+\\frac{1}{e} $$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m4z5n6me",
@@ -845,7 +845,7 @@
     "solution": "<p>$$ \\begin{aligned} & f(x)=e^{x^2}+e^{-x^2} \\\\\\\\ & \\begin{aligned} f^{\\prime}(x) & =e^{x^2} \\frac{d}{d x}\\left(x^2\\right)+e^{-x^2} \\frac{d}{d x}\\left(-x^2\\right) \\\\\\\\ & =e^{x^2}(2 x)+e^{-x^2}(-2 x) \\\\\\\\ & =2 x\\left(e^{x^2}-e^{-x^2}\\right) \\geq 0 \\forall x \\in[0,1] \\\\\\\\ g(x) & =x e^{x^2}+e^{-x^2} \\\\\\\\ h(x) & =x^2 e^{x^2}+e^{-x^2} \\end{aligned} \\end{aligned} $$</p>\n<p>Clearly for $0 \\leq x \\leq 1 \\quad f(x) \\geq g(x) \\geq h(x)$</p>\n<p>$\\because f(1)=g(1)=h(1)=e+\\frac{1}{e}$ and $f(1)$ is greatest</p>\n<p>$$ \\because a=b=c=e+\\frac{1}{e} $$</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "05UkZz7qtdk8rb7T",
@@ -868,7 +868,7 @@
     "solution": "<p>To solve this problem, we need to determine the total number of <strong>unordered pairs</strong> of <strong>disjoint subsets</strong> of the set $ S = \\{1, 2, 3, 4\\} $.</p>\n<h3><strong>Understanding the Problem:</strong></h3>\n\n<p><p><strong>Disjoint Subsets:</strong> Two subsets $ A $ and $ B $ are disjoint if they have no elements in common, i.e., $ A \\cap B = \\emptyset $.</p></p>\n<p><p><strong>Unordered Pairs:</strong> Pairs where $ \\{A, B\\} $ is considered the same as $ \\{B, A\\} $.</p></p>\n\n<h3><strong>Approach:</strong></h3>\n\n<p><strong>Counting Ordered Pairs of Disjoint Subsets:</strong></p>\n\n\n<p><p>For each element in $ S $, it can be in:</p>\n\n<p><p>Subset $ A $ only,</p></p>\n<p><p>Subset $ B $ only,</p></p>\n<p><p>Neither $ A $ nor $ B $.</p></p></p>\n<p><p><strong>Note:</strong> An element cannot be in both $ A $ and $ B $ because $ A $ and $ B $ are disjoint.</p></p>\n<p><p>Therefore, each element has <strong>3 choices</strong>.</p></p>\n<p><p>Total number of <strong>ordered pairs</strong> $ (A, B) $ is $ 3^4 = 81 $.</p></p>\n\n\n<p><strong>Identifying Ordered Pairs where $ A = B $:</strong></p>\n\n\n<p><p>Since $ A $ and $ B $ are disjoint and $ A = B $, the only possibility is when both are the <strong>empty set</strong>.</p></p>\n<p><p>So, there's <strong>1 ordered pair</strong> where $ A = B = \\emptyset $.</p></p>\n\n\n<p><strong>Calculating Unordered Pairs:</strong></p>\n\n\n<p><p><strong>Ordered Pairs with $ A \\ne B $:</strong> $ 81 - 1 = 80 $.</p></p>\n<p><p><strong>Unordered Pairs from Ordered Pairs with $ A \\ne B $:</strong> Each unordered pair corresponds to <strong>2 ordered pairs</strong> (since $ (A, B) $ and $ (B, A) $ are different but represent the same unordered pair).</p></p>\n<p><p>Number of unordered pairs from $ A \\ne B $ is $ \\frac{80}{2} = 40 $.</p></p>\n<p><p><strong>Include the pair where $ A = B = \\emptyset $:</strong> Add $ 1 $.</p></p>\n<p><p><strong>Total Unordered Pairs:</strong> $ 40 + 1 = 41 $.</p></p>\n\n<h3><strong>Conclusion:</strong></h3>\n\n<p>The total number of unordered pairs of disjoint subsets of $ S $ is <strong>41</strong>.</p>\n\n<hr />\n<p><strong>Answer:</strong> Option D</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "MCQM"
   },
   {
     "id": "PjsG1USbhMNW1Hsh",
@@ -890,7 +890,7 @@
     "difficulty": "easy",
     "solution": "Given that $$f\\left( x \\right) = {x^3} + 5x + 1$$\n<br><br>$$\\therefore$$  $$\\,\\,\\,\\,\\,$$ $$f'\\left( x \\right) = 3{x^2} + 5 &gt; 0,\\,\\,\\,\\forall x \\in R$$\n<br><br>$$ \\Rightarrow f\\left( x \\right)\\,\\,$$ is strictly increasing on $$R$$\n<br><br>$$ \\Rightarrow f\\left( x \\right)$$ is one one \n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,\\,\\,$$ Being a polynomial $$f(x)$$ is cont. and inc.\n<br><br>on $$R$$ with $$\\mathop {\\lim }\\limits_{x \\to \\infty } \\,f\\left( x \\right) =  - \\infty $$\n<br><br>and $$\\mathop {\\lim }\\limits_{x \\to \\infty } \\,f\\left( x \\right) = \\infty $$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,\\,\\,$$ Range of  $$f = \\left( { - \\infty ,\\infty } \\right) = R$$\n<br><br>Hence $$f$$ is onto also, So, $$f$$ is one and onto $$R.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tP4DY9Co6Tlcreny",
@@ -912,7 +912,7 @@
     "difficulty": "medium",
     "solution": "Given that $$f\\left( x \\right) = {\\left( {x + 1} \\right)^2} - 1,\\,x \\ge  - 1$$\n<br><br>Clearly $${D_f} = \\left[ { -1 ,\\infty } \\right)$$ but co-domain is not given\n<br><br>$$\\therefore$$ $$f(x)$$ need not be necessarily onto.\n<br><br>But if $$f(x)$$ is onto then as $$f\\left( x \\right)$$ is one one also, \n<br><br>$$(x+1)$$ being something $$+ve,$$ $${f^{ - 1}}\\left( x \\right)$$ will exist where\n<br><br>$${\\left( {x + 1} \\right)^2} - 1 = y$$\n<br><br>$$ \\Rightarrow x + 1 = \\sqrt {y + 1} $$ \n<br><br>$$\\,\\,\\,\\,\\,$$ $$\\left( { + ve} \\right.$$ square root as $$x + 1 \\ge 0$$$$\\left. {} \\right)$$\n<br><br>$$ \\Rightarrow x =  - 1 + \\sqrt {y + 1} $$ \n<br><br>$$ \\Rightarrow {f^{ - 1}}\\left( x \\right) = \\sqrt {x + 1}  - 1$$\n<br><br>Then $$\\,\\,\\,\\,\\,\\,\\,\\,$$ $$f\\left( x \\right) = {f^{ - 1}}\\left( x \\right)$$\n<br><br>$$ \\Rightarrow {\\left( {x + 1} \\right)^2} - 1 = \\sqrt {x + 1}  - 1$$\n<br><br>$$ \\Rightarrow {\\left( {x + 1} \\right)^2} = \\sqrt {x + 1} $$\n<br><br>$$ \\Rightarrow {\\left( {x + 1} \\right)^4} = \\left( {x + 1} \\right)$$\n<br><br>$$ \\Rightarrow \\left( {x + 1} \\right)\\left[ {{{\\left( {x + 1} \\right)}^3} - 1} \\right] = 0$$\n<br><br>$$ \\Rightarrow x =  - 1,0$$\n<br><br>$$\\therefore$$ The statement -$$1$$ is correct but statement- $$2$$ is false.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Jh1LdFJkemGj6fH0",
@@ -934,7 +934,7 @@
     "difficulty": "easy",
     "solution": "Clearly $$f$$ is one one and onto, so invertible\n<br><br>Also $$f\\left( x \\right) = 4x + 3 = y \\Rightarrow x = {{y - 3} \\over 4}$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,g\\left( y \\right) = {{y - 3} \\over 4}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "TmvD2W4ixwMufq70",
@@ -956,7 +956,7 @@
     "difficulty": "medium",
     "solution": "Given $$\\,\\,f\\left( x \\right) = {\\tan ^{ - 1}}\\left( {{{2x} \\over {1 - {x^2}}}} \\right) = 2{\\tan ^{ - 1}}x$$\n<br><br>for $$x \\in \\left( { - 1,1} \\right)$$\n<br><br>If$$\\,\\,x \\in \\left( { - 1,1} \\right) \\Rightarrow {\\tan ^{ - 1}}x \\in \\left( {{{ - \\pi } \\over 4},{\\pi  \\over 4}} \\right)$$ \n<br><br>$$ \\Rightarrow 2{\\tan ^{ - 1}}x \\in \\left( {{{ - \\pi } \\over 2},{\\pi  \\over 2}} \\right)$$\n<br><br>Clearly, range of $$f\\left( x \\right) = \\left( { - {\\pi  \\over 2},{\\pi  \\over 2}} \\right)$$\n<br><br>For $$f$$ to be onto, co-domain $$=$$ range\n<br><br>$$\\therefore$$ Co-domain of function $$ = B = \\left( { - {\\pi  \\over 2},{\\pi  \\over 2}} \\right).$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "yihWYw1MdWfWneMT",
@@ -978,7 +978,7 @@
     "difficulty": "easy",
     "solution": "$$f\\left( x \\right)$$ is onto \n<br><br>$$\\therefore$$ $$S=$$ range of $$f(x)$$\n<br><br>Now $$f\\left( x \\right) = \\sin \\,x - \\sqrt 3 \\,\\cos \\,x + 1$$\n<br><br>$$ = 2\\sin \\left( {x - {\\pi  \\over 3}} \\right) + 1$$\n<br><br>As $$1 -  \\le \\sin \\left( {x - {\\pi  \\over 3}} \\right) \\le 1$$\n<br><br>$$ - 1 \\le 2\\sin \\left( {x - {\\pi  \\over 3}} \\right) + 1 \\le 3$$\n<br><br>$$\\therefore$$ $$f\\left( x \\right) \\in \\left[ { - 1,3} \\right] = S$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "TXeVoSP3SOStAzKB",
@@ -1000,6 +1000,6 @@
     "difficulty": "medium",
     "solution": "We have $$f:N \\to I$$\n<br><br>If $$x$$ and $$y$$ are two even natural numbers, \n<br><br>then  $$f\\left( x \\right) = f\\left( y \\right) \\Rightarrow {{ - x} \\over 2} = {{ - y} \\over 2} \\Rightarrow x = y$$\n<br><br>Again if $$x$$ and $$y$$ are two odd natural numbers then \n<br><br>$$f\\left( x \\right) = f\\left( y \\right) \\Rightarrow {{x - 1} \\over 2} = {{y - 1} \\over 2} \\Rightarrow x = y$$\n<br><br>$$\\therefore$$ $$f$$ is onto. \n<br><br>Also each negative integer is an image of even natural number and each positive integer is an image of odd natural number. \n<br><br>$$\\therefore$$ $$f$$ is onto. \n<br><br>Hence $$f$$ is one one and onto both.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

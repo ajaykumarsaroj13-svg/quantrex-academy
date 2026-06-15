@@ -15,7 +15,7 @@
     "solution": "<p>The quantity $\\sqrt{\\frac{\\mu_0}{\\epsilon_0}}$ is known as the characteristic impedance of free space ($Z_0$).</p>\n<p>Using the relationship between the speed of light $c$, permeability $\\mu_0$, and permittivity $\\epsilon_0$:</p>\n<p>$$c = \\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}} \\rightarrow \\mu_0\\,\\epsilon_0 = \\frac{1}{c^2} \\rightarrow \\mu_0 = \\frac{1}{c^2\\,\\epsilon_0}$$</p>\n<p>Substituting this for $\\mu_0$ into $\\sqrt{\\frac{\\mu_0}{\\epsilon_0}}$</p>\n<p>$$\\sqrt{\\frac{\\mu_0}{\\epsilon_0}} = \\sqrt{\\frac{1}{c^2\\,\\epsilon_0\\epsilon_0}} = \\sqrt{\\frac{1}{c^2\\,\\epsilon_0^2}} = \\frac{1}{c\\,\\epsilon_0}$$</p>\n<p>The dimensional formula of permittivity $\\epsilon_0$ can be determined using Coulomb's Law.</p>\n<p>The electrostatic force $F$ between two point charges $q_1$ and $q_2$ separated by a distance $r$ is:</p>\n<p>$$F = \\frac{1}{4\\pi\\epsilon_0}\\frac{q_1\\,q_2}{r^2} \\rightarrow \\epsilon_0 = \\frac{1}{4\\pi F}\\frac{q_1\\,q_2}{r^2}$$</p>\n<p>Electric charge $q$ is defined as current $(I)$ multiplied by time $(T)$, so its dimensional formula is $[A\\ T]$.</p>\n<p>Force has dimensions of mass times acceleration, $[M\\ L\\ T^{-2}]$.</p>\n<p>Distance $r$ has the dimension of length $[L]$.</p>\n<p>Substituting these definitions gives the dimensional formula for $\\epsilon_0$:</p>\n<p>$$[\\epsilon_0] = \\frac{[A\\ T][A\\ T]}{[M\\ L\\ T^{-2}][L^2]} = \\frac{[A^2\\ T^2]}{[M\\ L^3\\ T^{-2}]} = [M^{-1}\\ L^{-3}\\ T^4\\ A^2]$$</p>\n<p>The speed of light $c$ is a velocity, which has the dimensional formula $[L\\ T^{-1}]$.</p>\n<p>Now, substituting the dimensions of $c$ and $\\epsilon_0$ into our expression $Z_0 = \\frac{1}{c\\epsilon_0}$:</p>\n<p>$$Z_0 = \\left[\\sqrt{\\frac{\\mu_0}{\\epsilon_0}}\\right] = \\frac{1}{[L\\ T^{-1}][M^{-1}\\ L^{-3}\\ T^4\\ A^2]} = \\frac{1}{[M^{-1}\\ L^{-2}\\ T^3\\ A^2]} = [M^1\\ L^2\\ T^{-3}\\ A^{-2}]$$</p>\n<p>Let the unit of the quantity in the standard SI system be $U_1$ and its numerical magnitude be $N_1$.</p>\n<p>Let its unit in the new system be $U_2$ and its numerical magnitude be $N_2$.</p>\n<p>Since the physical value remains identical regardless of the unit system chosen:</p>\n<p>$$N_1\\,U_1 = N_2\\,U_2 \\Rightarrow N_2 = N_1\\left(\\frac{U_1}{U_2}\\right)$$</p>\n<p>Using dimensional formula $[M^1\\ L^2\\ T^{-3}\\ A^{-2}]$, we can express the ratio of the units as:</p>\n<p>$$N_2 = N_1\\left[\\frac{M_1}{M_2}\\right]^1\\left[\\frac{L_1}{L_2}\\right]^2\\left[\\frac{T_1}{T_2}\\right]^{-3}\\left[\\frac{A_1}{A_2}\\right]^{-2}$$</p>\n\n<p>Where $M_1, L_1, T_1, A_1$ represent the base units in the standard SI system $(1\t{ kg}, 1\t{ m}, 1\t{ s}, 1\t{ A})$. And $M_2, L_2, T_2, A_2$ represent the base units in the new system $(5\t{ kg}, 5\t{ m}, 5\t{ s}, 5\t{ A})$.</p>\n<p>The magnitude in the new system that corresponds to exactly one SI unit of the quantity.</p>\n<p>$$N_1 = 1$$</p>\n<p>Substituting the standard SI values and the given new system values into the conversion equation:</p>\n<p>$$N_2 = 1 \\times \\left[\\frac{1\\text{ kg}}{5\\text{kg}}\\right]^1 \\left[\\frac{1\\text{ m}}{5\\text{ m}}\\right]^2 \\left[\\frac{1\\text{ s}}{5\\text{ s}}\\right]^{-3} \\left[\\frac{1\\text{ A}}{5\\text{ A}}\\right]^{-2}$$</p>\n<p>$$N_2 = \\left(\\frac{1}{5}\\right)^1 \\times \\left(\\frac{1}{5}\\right)^2 \\times \\left(\\frac{1}{5}\\right)^{-3} \\times \\left(\\frac{1}{5}\\right)^{-2}$$</p>\n<p>$$N_2 = \\left(\\frac{1}{5}\\right)^{1+2-3-2}$$</p>\n<p>$$N_2 = \\left(\\frac{1}{5}\\right)^{-2}$$</p>\n<p>$$N_2 = (5)^2 = 25$$</p>\n<p>Therefore, the correct answer is 25.</p>",
     "section": "Sec 4",
     "instruction": "<ul><li>This section contains <b>TWO (02)</b> question stems.</li><li>There are <b>TWO (02)</b> questions corresponding to each question stem.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +2 If ONLY the correct numerical value is entered at the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "ml7ybsr8",
@@ -37,7 +37,7 @@
     "difficulty": "easy",
     "solution": "<p>From Newton's law of viscosity, the force is $\\mathrm{F}=\\eta \\mathrm{A}\\left(\\frac{\\Delta \\mathrm{v}}{\\Delta \\mathrm{x}}\\right)$, where A is area and $\\frac{\\Delta \\mathrm{v}}{\\Delta \\mathrm{x}}$ is the velocity gradient.</p>\n<p>$$ \\eta=\\frac{\\mathrm{F}}{\\mathrm{~A} \\cdot\\left(\\frac{\\Delta \\mathrm{v}}{\\Delta \\mathrm{x}}\\right)} $$</p>\n<p>$$\\Rightarrow $$ $$ [\\eta]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{\\left[\\mathrm{L}^2\\right] \\cdot\\left(\\frac{\\left[\\mathrm{LT}^{-1}\\right]}{[\\mathrm{L}]}\\right)}=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{\\left[\\mathrm{L}^2\\right] \\cdot\\left[\\mathrm{T}^{-1}\\right]}=\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-1}\\right] $$</p>\n<p>$$ \\mathrm{A} \\rightarrow \\mathrm{IV} $$</p>\n<p>Surface tension is defined as the force acting per unit length.</p>\n<p>$$ \\mathrm{T}=\\frac{\\text { Force }}{\\text { Length }} $$</p>\n<p>$$ [\\mathrm{T}]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{[\\mathrm{L}]}=\\left[\\mathrm{ML}^0 \\mathrm{~T}^{-2}\\right] $$</p>\n<p>B $$\\to $$ III</p>\n<p>Pressure is defined as force acting per unit area.</p>\n<p>$$ \\mathrm{P}=\\frac{\\text { Force }}{\\text { Area }} $$</p>\n<p>$$ [\\mathrm{P}]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{\\left[\\mathrm{L}^2\\right]}=\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-2}\\right] $$</p>\n<p>$$ C \\rightarrow I $$</p>\n<p>Surface energy $\\left(\\mathrm{U}_{\\mathrm{s}}\\right)$ is defined as the work done by surface tension in changing the surface area</p>\n<p>$$ \\mathrm{U}_{\\mathrm{s}}=\\mathrm{T} \\cdot(\\Delta \\mathrm{~A}) $$</p>\n<p>$$\\Rightarrow $$ $\\left[\\mathrm{U}_{\\mathrm{S}}\\right]=[$ Surface Tension $] \\cdot[$ Area $]$</p>\n<p>$$\\Rightarrow $$ $$ \\left[\\mathrm{U}_{\\mathrm{S}}\\right]=\\left[\\mathrm{ML}^0 \\mathrm{~T}^{-2}\\right] \\cdot\\left[\\left[\\mathrm{M}^0 \\mathrm{~L}^2 \\mathrm{~T}^0\\right]\\right]=\\left[\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]\\right] $$</p>\n<p>$$ \\mathrm{D} \\rightarrow \\mathrm{II} $$</p>\n<p>$$ \\begin{aligned} &\\begin{array}{|l|l|} \\hline \\text { List - I } & \\text { List - II } \\\\ \\hline \\text { A. Coefficient of viscosity } & \\text { IV. }\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-1}\\right] \\\\ \\hline \\text { B. Surface tension } & \\text { III. }\\left[\\mathrm{ML}^0 \\mathrm{~T}^{-2}\\right] \\\\ \\hline \\text { C. Pressure } & \\text { I. }\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-2}\\right] \\\\ \\hline \\text { D. Surface energy } & \\text { II. }\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right] \\\\ \\hline \\end{array}\\\\ &\\text { Hence, the correct option is (B). } \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnrqi2lu",
@@ -59,7 +59,7 @@
     "difficulty": "medium",
     "solution": "<p>To find the dimensions of the universal gravitational constant G in terms of Planck's constant h , length L , mass M , and time T , we must first determine the base dimensions of both G and h in the standard MLT system.</p>\n<p>According to Newton's law of universal gravitation, the force F between two masses $\\mathrm{m}_1$ and $\\mathrm{m}_2$ separated by a distance $r$ is given by:</p>\n<p>$$ \\mathrm{F}=\\frac{\\mathrm{Gm}_1 \\mathrm{~m}_2}{\\mathrm{r}^2} $$</p>\n<p>$$ \\Rightarrow \\mathrm{G}=\\frac{\\mathrm{Fr}^2}{\\mathrm{~m}_1 \\mathrm{~m}_2} $$</p>\n<p>Substituting the dimensions $\\left[M L T^{-2}\\right]$ for force, $[L]$ for distance $(r)$, and mass( $m$ ) as $[M]$ :</p>\n<p>$$ [\\mathrm{G}]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]\\left[\\mathrm{L}^2\\right]}{[\\mathrm{M}][\\mathrm{M}]}=\\left[\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right] $$</p>\n<p>Planck's constant relates the energy $E$ of a photon to its frequency $v$ via the equation:</p>\n<p>$$ \\mathrm{E}=\\mathrm{h} \\nu $$</p>\n<p>Since frequency $v$ has dimensions of inverse time [ $\\mathrm{T}^{-1}$ ], and energy E (work done) has dimensions $\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$, we have:</p>\n<p>$$ [\\mathrm{h}]=\\frac{[\\mathrm{E}]}{[\\mathrm{v}]}=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{T}^{-1}\\right]}=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right] $$</p>\n<p>Let assume the relationship is of the form $\\mathrm{G}=\\mathrm{h}^{\\mathrm{a}} \\mathrm{L}^{\\mathrm{b}} \\mathrm{M}^{\\mathrm{c}} \\mathrm{T}^{\\mathrm{d}}$. Comparing the dimensions:</p>\n<p>$$ \\left[\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right]^{\\mathrm{a}}[\\mathrm{~L}]^{\\mathrm{b}}[\\mathrm{M}]^{\\mathrm{c}}[\\mathrm{~T}]^{\\mathrm{d}} $$</p>\n<p>$$ \\left[\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right]=\\left[\\mathrm{M}^{\\mathrm{a}+\\mathrm{c}} \\mathrm{~L}^{2 \\mathrm{a}+\\mathrm{b}} \\mathrm{~T}^{-\\mathrm{a}+\\mathrm{d}}\\right] $$</p>\n<p>By equating the exponents of $\\mathrm{M}, \\mathrm{L}$, and T from both sides, we get a system of equations:</p>\n<p>For $\\mathrm{M}: \\mathrm{a}+\\mathrm{c}=-1 \\ldots$ (i)</p>\n<p>For $\\mathrm{L}: 2 \\mathrm{a}+\\mathrm{b}=3 \\ldots$ (ii)</p>\n<p>For $\\mathrm{T}:-\\mathrm{a}+\\mathrm{d}=-2 \\ldots$ (iii)</p>\n<p>Looking at the provided options, we see that h is with a power of $1, \\mathrm{a}=1$</p>\n<p>Let's $\\mathrm{a}=1$ :</p>\n<p>From eq (i): $1+\\mathrm{c}=-1 \\Rightarrow \\mathrm{c}=-2$</p>\n<p>From eq (ii): $2(1)+b=3 \\Rightarrow b=1$</p>\n<p>From eq (iii): $-1+\\mathrm{d}=-2 \\Rightarrow \\mathrm{~d}=-1$</p>\n<p>Substituting these values, we get $G \\propto h^1 L^1 M^{-2} T^{-1}$. This corresponds to the dimensional formula $\\left[\\mathrm{hT}^{-1} \\mathrm{LM}^{-2}\\right]$. </p>\n<p>Hence, the correct option is (B).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnrjpxca",
@@ -81,7 +81,7 @@
     "difficulty": "easy",
     "solution": "<p>The expression given is $\\frac{1}{2}\\varepsilon_0 E^2$, which represents the energy density ($U_d$) of an electric field in a vacuum.</p>\n<p>Energy density is defined as the energy stored per unit volume.</p>\n<p>$$U_d = \\frac{\\text{Energy }(U)}{\\text{Volume }(V)}$$</p>\n<p>Energy is equivalent to work done, which is Force $\\times$ Displacement.</p>\n<p>The dimensions of force is $[F] = [ma] = [M\\ L\\ T^{-2}]$</p>\n<p>So, the dimensions of energy is $[U] = [M\\ L\\ T^{-2}] \\times [L] = [M\\ L^2 T^{-2}]$</p>\n<p>The dimensions of volume is $[V] = [L] \\times [L] \\times [L] = [L^3]$</p>\n<p>Since energy density is $\\frac{U}{V}$, its dimensions are:</p>\n<p>$$[U_d] = \\frac{[M\\ L^2 T^{-2}]}{[L^3]} = [M\\ L^{-1} T^{-2}]$$</p>\n<p>The dimensional formula of energy density due to electric field is is $M^a L^b T^c$.</p>\n<p>By comparing this with derived dimensional formula $[M^1 L^{-1} T^{-2}]$, we get:</p>\n<p>$$a = 1,\\ b = -1,\\ c = -2$$</p>\n<p>So, the value of $2a - b + c = 2(1) - (-1) + (-2) = 2 + 1 - 2 = 1$</p>\n<p>Therefore, the value of $2a - b + c$ is 1. Thus, the correct options is (B).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhuku",
@@ -103,7 +103,7 @@
     "difficulty": "easy",
     "solution": "<p>For the dimensions of Planck's Constant (h)</p>\n<p>According to the photon energy equation $\\mathrm{E}=\\mathrm{h} \\nu$, where E is energy and $\\nu$ is frequency.</p>\n<p>Planck's constant is given by $\\mathrm{h}=\\frac{\\mathrm{E}}{\\mathrm{v}}$</p>\n<p>The dimensions of energy (E) are $[\\mathrm{E}]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$.</p>\n<p>The dimensions of frequency ( $v$ ) are $[v]=\\left[\\mathrm{T}^{-1}\\right]$.</p>\n<p>Therefore, dimensions of h :</p>\n<p>$$ [\\mathrm{h}]=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{T}^{-1}\\right]}=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right] $$</p>\n<p>Thus, A → III</p>\n<p>For the dimensions of stopping potential ( $\\mathrm{V}_0$ )</p>\n<p>Stopping potential is defined as the potential difference required to stop the fastest moving electrons. The work done by the potential is equal to the kinetic energy, $\\mathrm{W}=\\mathrm{qV}_0$, where q is charge.</p>\n<p>So, stopping potential is $\\mathrm{V}_0=\\frac{\\mathrm{w}}{\\mathrm{q}}$.</p>\n<p>The dimensions of work ( W ) are $[\\mathrm{W}]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$.</p>\n<p>The dimensions of charge ( $\\mathrm{q}=\\mathrm{I} \\times \\mathrm{t}$ ) are $[\\mathrm{q}]=[\\mathrm{AT}]$.</p>\n<p>Therefore, dimensions of stopping potential is:</p>\n<p>$$ \\left[\\mathrm{V}_0\\right]=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{[\\mathrm{AT}]}=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-3} \\mathrm{~A}^{-1}\\right] $$</p>\n<p>Thus, $\\mathrm{B} \\rightarrow$ IV.</p>\n<p>For the dimensions of work function ( $\\phi$ )</p>\n<p>The work function is the minimum energy required to eject an electron from a metal surface. Since it is a form of energy, its dimensions are the same as energy (E).</p>\n<p>So, the dimensions of work function is $[\\phi]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$</p>\n<p>Thus, $\\mathrm{C} \\rightarrow \\mathrm{I}$.</p>\n<p>For the dimensions of threshold frequency ( $v_0$ )</p>\n<p>Threshold frequency is the minimum frequency of incident radiation required for photoelectric emission.</p>\n<p>Frequency is defined as the reciprocal of the time period $\\left(v=\\frac{1}{\\mathrm{~T}}\\right)$.</p>\n<p>So, the dimensions of threshold frequency is $\\left[v_0\\right]=\\left[\\mathrm{T}^{-1}\\right]$</p>\n<p>Thus, $\\mathrm{C} \\rightarrow$ II.</p>\n<p>Therefore, the correct match is A - III, B - IV, C - I, D - II. </p>\n<p>Hence, the correct option is (A).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhuh4",
@@ -125,7 +125,7 @@
     "difficulty": "medium",
     "solution": "<p>The speed of light (c) is $\\frac{\\text { distance }}{\\text { time }}$.</p>\n<p>So, the dimensions of speed of light is $[\\mathrm{c}]=\\left[\\mathrm{L} \\mathrm{T}^{-1}\\right]$</p>\n<p>From $\\mathrm{E}=\\mathrm{h} \\nu$, where E is energy $\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$ and $\\nu$ is frequency $\\left[\\mathrm{T}^{-1}\\right]$.</p>\n<p>So, the dimensions of Planck's constant is,</p>\n<p>$$ [\\mathrm{h}]=\\frac{[\\mathrm{E}]}{[v]}=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{T}^{-1}\\right]}=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right] $$</p>\n<p>From Newton's law of gravitation, $\\mathrm{F}=\\frac{\\mathrm{Gm}_1 \\mathrm{~m}_2}{\\mathrm{r}^2}$, where F is gravitational force $[\\mathrm{F}]=\\left[\\mathrm{MLT}^{-2}\\right], \\mathrm{G}$ is the universal gravitational constant, m is the mass $[\\mathrm{m}]=\\left[\\mathrm{M}^1 \\mathrm{~L}^0 \\mathrm{~T}^0\\right]$ and r is the distance $[\\mathrm{r}]=\\left[\\mathrm{M}^0 \\mathrm{LT}^0\\right]$</p>\n<p>So, the dimensions of G is,</p>\n<p>$$ [\\mathrm{G}]=\\frac{[\\mathrm{F}]\\left[\\mathrm{r}^2\\right]}{\\left[\\mathrm{m}^2\\right]}=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]\\left[\\mathrm{L}^2\\right]}{\\left[\\mathrm{M}^2\\right]}=\\left[\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right] $$</p>\n<p>Let a physical quantity Q be proportional to $\\mathrm{h}^{\\mathrm{x}} \\mathrm{G}^{\\mathrm{y}} \\mathrm{c}^{\\mathrm{z}}$. Using principle of dimensional homogeneity</p>\n<p>$$ [\\mathrm{Q}]=[\\mathrm{h}]^{\\mathrm{x}}[\\mathrm{G}]^{\\mathrm{y}}[\\mathrm{c}]^{\\mathrm{z}} $$</p>\n<p>$$\\Rightarrow $$ $[Q]=\\left[M L^2 T^{-1}\\right]^x\\left[M^{-1} L^3 T^{-2}\\right]^y\\left[L T^{-1}\\right]^z$</p>\n<p>$$\\Rightarrow $$ $$ [Q]=M^{x-y} L^{2 x+3 y+z} T^{-x-2 y-z} $$</p>\n<p>For Kilogram (mass), dimensions are $\\left[\\mathrm{M}^1 \\mathrm{~L}^0 \\mathrm{~T}^0\\right]$.</p>\n<p>On comparing the powers of dimensions,</p>\n<p>$$ x-y=1 \\Rightarrow x=1+y \\ldots \\text { (i) } $$</p>\n<p>$$ 2 x+3 y+z=0 \\ldots (ii)$$</p>\n<p>$$ -x-2 y-z=0 \\Rightarrow z=-x-2 y $$....(iii)</p>\n<p>Substituting z into equation (i):</p>\n<p>$$ 2 x+3 y+(-x-2 y)=0 \\Rightarrow x+y=0 \\Rightarrow x=-y $$</p>\n<p>From equation (i),</p>\n<p>$$ -y=1+y \\Rightarrow 2 y=-1 \\Rightarrow y=-1 / 2 $$</p>\n<p>Then $\\mathrm{x}=1 / 2$.</p>\n<p>And $z=-\\left(\\frac{1}{2}\\right)-2\\left(-\\frac{1}{2}\\right)=-\\frac{1}{2}+1=\\frac{1}{2}$</p>\n<p>$$ \\text { kilogram }=h^{1 / 2} G^{-1 / 2} c^{1 / 2}=\\sqrt{\\frac{h c}{G}} $$</p>\n<p>So, $\\mathrm{M} \\propto \\sqrt{\\frac{\\mathrm{hc}}{\\mathrm{G}}} \\Rightarrow(\\mathrm{C}) \\rightarrow(\\mathrm{I})$</p>\n<p>For meter (length), the dimensions are $\\left[\\mathrm{M}^0 \\mathrm{~L}^1 \\mathrm{~T}^0\\right]=\\left[\\mathrm{M}^{\\mathrm{x}-\\mathrm{y}} \\mathrm{L}^{2 \\mathrm{x}+3 \\mathrm{y}+\\mathrm{z}} \\mathrm{T}^{-\\mathrm{x}-2 \\mathrm{y}-\\mathrm{z}}\\right]$</p>\n<p>On comparing the powers of dimensions,</p>\n<p>$$ x-y=0 \\Rightarrow x=y $$....(i)</p>\n<p>$$ 2 x+3 y+z=1 \\ldots $$(ii)</p>\n<p>$$ -x-2 y-z=0 \\Rightarrow z=-x-2 y $$.....(iii)</p>\n<p>Substituting z into equation (ii):</p>\n<p>$$ 2 x+3 y-x-2 y=1 \\Rightarrow x+y=1 $$</p>\n<p>Since $\\mathrm{x}=\\mathrm{y}$, then $2 \\mathrm{x}=1 \\Rightarrow \\mathrm{x}=\\frac{1}{2}, \\mathrm{y}=\\frac{1}{2}$.</p>\n<p>Then $\\mathrm{z}=-\\frac{1}{2}-2\\left(\\frac{1}{2}\\right)=-\\frac{3}{2}$</p>\n<p>Thus, Meter (L) $=[\\mathrm{h}]^{1 / 2}[\\mathrm{G}]^{1 / 2}[\\mathrm{c}]^{-3 / 2}$</p>\n<p>So, $\\mathrm{L} \\propto \\sqrt{\\frac{\\mathrm{Gh}}{\\mathrm{c}^3}} \\Rightarrow(\\mathrm{~A}) \\rightarrow(\\mathrm{IV})$</p>\n<p>For Second (time), the dimensions are $\\left[\\mathrm{M}^0 \\mathrm{~L}^0 \\mathrm{~T}^1\\right]$.</p>\n<p>On comparing the powers of dimensions,</p>\n<p>$$ x-y=0 \\Rightarrow x=y $$ ....(i)</p>\n<p>$$ \\begin{gathered} 2 \\mathrm{x}+3 \\mathrm{y}+\\mathrm{z}=0 \\Rightarrow 2 \\mathrm{x}+3 \\mathrm{x}+\\mathrm{z}=0 \\Rightarrow \\mathrm{z}=-5 \\mathrm{x} \\ldots (ii)\\\\ -\\mathrm{x}-2 \\mathrm{y}-\\mathrm{z}=1 \\Rightarrow-\\mathrm{x}-2 \\mathrm{x}-\\mathrm{z}=1 \\Rightarrow-3 \\mathrm{x}-\\mathrm{z}=1......(iii) \\end{gathered} $$</p>\n<p>Substituting z :</p>\n<p>$$ -3 x-(-5 x)=1 \\Rightarrow 2 x=1 \\Rightarrow x=\\frac{1}{2}, y=\\frac{1}{2} $$</p>\n<p>Then $\\mathrm{z}=-5\\left(\\frac{1}{2}\\right)=-\\frac{5}{2}$.</p>\n<p>Thus, Second $(S)=[h]^{1 / 2}[G]^{1 / 2}[c]^{-5 / 2}$</p>\n<p>So, $\\mathrm{S} \\propto \\sqrt{\\frac{\\mathrm{Gh}}{\\mathrm{c}^5}} \\Rightarrow(\\mathrm{~B}) \\rightarrow(\\mathrm{II})$</p>\n<p>Let a physical quantity $\\theta$ represent the Kelvin be proportional to $\\mathrm{h}^{\\mathrm{x}} \\mathrm{G}^{\\mathrm{y}} \\mathrm{c}^{\\mathrm{z}} \\mathrm{K}^{\\mathrm{w}}$. Using principle of dimensional homogeneity</p>\n<p>$$ [\\theta]=[\\mathrm{h}]^{\\mathrm{x}}[\\mathrm{G}]^{\\mathrm{y}}[\\mathrm{c}]^{\\mathrm{z}}[\\mathrm{~K}]^{\\mathrm{w}} $$</p>\n<p>$$\\Rightarrow $$ $[\\theta]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right]^{\\mathrm{x}}\\left[\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right]^{\\mathrm{y}}\\left[\\mathrm{LT}^{-1}\\right]^{\\mathrm{z}}[\\mathrm{K}]^{\\mathrm{w}}$</p>\n<p>$$\\Rightarrow $$ $$ [\\theta]=M^{x-y} L^{2 x+3 y+z} T^{-x-2 y-z} K^w $$</p>\n<p>The dimensions of temperature is $[\\theta]=\\left[\\mathrm{M}^0 \\mathrm{~L}^0 \\mathrm{~T}^0 \\mathrm{~K}^1\\right]=\\left[\\mathrm{M}^{\\mathrm{x}-\\mathrm{y}} \\mathrm{L}^{2 \\mathrm{x}+3 \\mathrm{y}+\\mathrm{z}} \\mathrm{T}^{-\\mathrm{x}-2 \\mathrm{y}-\\mathrm{z}} \\mathrm{K}^{\\mathrm{w}}\\right]$ On comparing the powers,</p>\n<p>$$ x-y=0 \\Rightarrow x=y \\ldots(i) $$</p>\n<p>$$ 2 x+3 y+z=0 \\Rightarrow 2 x+3 x+z=0 \\Rightarrow z=-5 x \\ldots (ii)$$</p>\n<p>$-x-2 y-z=0 \\ldots$ (iii)</p>\n<p>$$ \\mathrm{w}=1 \\ldots \\text { (iv) } $$</p>\n<p>On simplifying $\\sqrt{\\frac{\\mathrm{K}^2 \\mathrm{~L}^2 \\mathrm{c}^3}{\\mathrm{Gh}}}=\\sqrt{\\frac{\\mathrm{K}^2 \\mathrm{~L}^2\\left[\\mathrm{LT}^{-1}\\right]^2}{\\left(\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right)\\left[\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right]\\right]}}=\\sqrt{\\mathrm{K}^2}=\\mathrm{K}$ which is kelvin. Thus, Kelvin $(\\mathrm{K})=\\sqrt{\\frac{\\mathrm{K}^2 \\mathrm{~L}^2 \\mathrm{c}^3}{\\mathrm{Gh}}} \\Rightarrow(\\mathrm{D}) \\rightarrow(\\mathrm{III})$</p>\n<p>A - IV, B - II, C - I, D - III</p>\n<p>Therefore, the correct option is (B).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhvx8",
@@ -147,7 +147,7 @@
     "difficulty": "medium",
     "solution": "<p>Electric power $(\\mathrm{P})$ is defined as work done per unit time. In a resistor of resistance R if the current is I , then electric power is given as,</p>\n<p>$$ \\mathrm{P}=\\mathrm{I}^2 \\mathrm{R} $$</p>\n<p>For the dimensions of force (F) $=$ Mass × Acceleration $=\\left[\\mathrm{MLT}^{-2}\\right]$</p>\n<p>For the dimensions of work $(\\mathrm{W})=$ Force × Distance $=\\left[\\mathrm{MLT}^{-2}\\right] \\times[\\mathrm{L}]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$</p>\n<p>Hence, the dimensions of power are,</p>\n<p>$$ [\\mathrm{P}]=\\left[\\frac{\\mathrm{W}}{\\mathrm{~T}}\\right]=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{[\\mathrm{T}]}=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-3}\\right] $$</p>\n<p>From the electric power formula,</p>\n<p>$$ \\mathrm{R}=\\frac{\\mathrm{P}}{\\mathrm{I}^2} $$</p>\n<p>$$\\Rightarrow $$ $$ [\\mathrm{R}]=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-3}\\right]}{\\left[\\mathrm{A}^2\\right]}=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-3} \\mathrm{~A}^{-2}\\right] $$</p>\n<p>The energy (E) stored in a capacitor is E $=\\frac{1}{2} C V^2$.</p>\n<p>Electric Potential (V) is defined as work per unit charge, $\\mathrm{V}=\\frac{\\mathrm{W}}{\\mathrm{Q}}$,</p>\n<p>The dimensions of charge ( Q ) is $[\\mathrm{Q}]=[\\mathrm{AT}]$.</p>\n<p>So, the dimensions of potential is, $[\\mathrm{V}]=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{[\\mathrm{AT}]}=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-3} \\mathrm{~A}^{-1}\\right]$</p>\n<p>Using the definition of capacitance $\\mathrm{C}=\\frac{\\mathrm{Q}}{\\mathrm{V}}$, the dimensions of capacitance is;</p>\n<p>$$ [C]=\\frac{[A T]}{\\left[{M L^2}^{-3} A^{-1}\\right]}=\\left[M^{-1} L^{-2} T^4 A^2\\right] $$</p>\n<p>The energy (E) stored in an inductor is E $=\\frac{1}{2} \\mathrm{LI}^2$.</p>\n<p>The dimensions of energy are $\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$.</p>\n<p>So, the dimensions of inductance are,</p>\n<p>$$ \\mathrm{L}=\\frac{2 \\mathrm{E}}{\\mathrm{I}^2} $$</p>\n<p>$$\\Rightarrow $$ $$ [\\mathrm{L}]=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{\\mathrm{A}^2}=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2} \\mathrm{~A}^{-2}\\right] $$</p>\n<p>Hence, the dimensions of inductance, capacitance, and resistance are, \n\n<br/><br/>$[\\mathrm{R}]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-3} \\mathrm{~A}^{-2}\\right],[\\mathrm{C}]= \\left[\\mathrm{M}^{-1} \\mathrm{~L}^{-2} \\mathrm{~T}^4 \\mathrm{~A}^2\\right],[\\mathrm{L}]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2} \\mathrm{~A}^{-2}\\right]$</p>\n<p>Let the dimensional formula [ $\\mathrm{ML}^2 \\mathrm{~T}^{-4} \\mathrm{~A}^{-2}$ ] corresponds to $\\mathrm{R}^{\\mathrm{x}} \\mathrm{L}^y \\mathrm{C}^z$</p>\n<p>Substituting these into the equation :</p>\n<p>$\\left[M^1 L^2 T^{-4} A^{-2}\\right]=\\left[M L^2 T^{-3} A^{-2}\\right]^x\\left[M L^2 T^{-2} A^{-2}\\right]^y\\left[M^{-1} L^{-2} T^4 A^2\\right]^z$</p>\n<p>$$ \\left[M^1 L^2 T^{-4} A^{-2}\\right]=\\left[M^{x+y-z} L^{2 x+2 y-2 z} T^{-3 x-2 y+4 z} A^{-2 x-2 y+2 z}\\right] $$</p>\n<p>Comparing the exponents for each fundamental unit:</p>\n<p>For mass, $\\mathrm{M}: \\mathrm{x}+\\mathrm{y}-\\mathrm{z}=1 \\ldots$ (i)</p>\n<p>For length, $\\mathrm{L}: 2 \\mathrm{x}+2 \\mathrm{y}-2 \\mathrm{z}=2 \\Rightarrow \\mathrm{x}+\\mathrm{y}-\\mathrm{z}=1 \\ldots$ (ii)</p>\n<p>For time, $\\mathrm{T}:-3 \\mathrm{x}-2 \\mathrm{y}+4 \\mathrm{z}=-4 \\ldots$ (iii)</p>\n<p>For current, $\\mathrm{A}:-2 \\mathrm{x}-2 \\mathrm{y}+2 \\mathrm{z}=-2 \\ldots$ (iv)</p>\n<p>From (i): $\\mathrm{x}+\\mathrm{y}=1+\\mathrm{z}$</p>\n<p>Substituting this into (ii) :</p>\n<p>$$ -3 x-2 y+4 z=-4 $$</p>\n<p>$-x-2(x+y)+4 z=-4$</p>\n<p>$$ \\begin{array}{r} -x-2(1+z)+4 z=-4 \\\\ -x-2-2 z+4 z=-4 \\\\ -x+2 z=-2 \\Rightarrow x=2 z+2 \\ldots (v) \\end{array} $$</p>\n<p>From given options the possible exponents of resistance (R) are 1 (a and b), $-\\frac{1}{2}$ (c) or -1 (d).</p>\n<p>If $\\mathrm{x}=1, \\mathrm{z}=\\frac{(\\mathrm{x}-2)}{2}=\\frac{(1-2)}{2}=-\\frac{1}{2}$; then $\\mathrm{x}+\\mathrm{y}=1+\\mathrm{z} \\Rightarrow 1+\\mathrm{y}=1-\\frac{1}{2} \\Rightarrow \\mathrm{y}=-\\frac{1}{2}$</p>\n<p>Then the expression will be $\\mathrm{R}^{\\mathrm{x}} \\mathrm{L}^{\\mathrm{y}} \\mathrm{C}^{\\mathrm{z}}=\\mathrm{R}^1 \\mathrm{~L}^{-1 / 2} \\mathrm{C}^{-1 / 2}=\\frac{\\mathrm{R}}{\\sqrt{\\mathrm{LC}}} \\rightarrow$ (a)</p>\n<p>If $\\mathrm{x}=-\\frac{1}{2}, \\mathrm{z}=\\frac{(\\mathrm{x}-2)}{2}=\\frac{\\left(-\\frac{1}{2}-2\\right)}{2}=-\\frac{5}{4}$; then $\\mathrm{x}+\\mathrm{y}=1+\\mathrm{z} \\Rightarrow-\\frac{1}{2}+\\mathrm{y}=1-\\frac{5}{2} \\Rightarrow \\mathrm{y}=-1$</p>\n<p>Then the expression will be $\\mathrm{R}^{\\mathrm{x}} \\mathrm{L}^{\\mathrm{y}} \\mathrm{C}^{\\mathrm{z}}=\\mathrm{R}^{-1 / 2} \\mathrm{~L}^{-1} \\mathrm{C}^{-5 / 4}$ (doesn't match option (c))</p>\n<p>If $x=-1, z=\\frac{(x-2)}{2}=\\frac{(-1-2)}{2}=-\\frac{3}{2}$; then $x+y=1+z \\Rightarrow-1+y=1-\\frac{3}{2} \\Rightarrow y=\\frac{1}{2}$</p>\n<p>Then the expression will be $\\mathrm{R}^{\\mathrm{x}} \\mathrm{L}^{\\mathrm{y}} \\mathrm{C}^{\\mathrm{z}}=\\mathrm{R}^{-1} \\mathrm{~L}^{1 / 2} \\mathrm{C}^{1 / 2}=\\frac{\\sqrt{\\mathrm{LC}}}{\\mathrm{R}}$ (doesn't match option (d)) </p>\n<p>Therefore, the dimensional formula [ $\\mathrm{M}^1 \\mathrm{~L}^2 \\mathrm{~T}^{-4} \\mathrm{~A}^{-2}$ ] corresponds to $\\frac{\\mathrm{R}}{\\sqrt{\\mathrm{LC}}}$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnsik85s",
@@ -169,7 +169,7 @@
     "difficulty": "easy",
     "solution": "<p>For the dimensional equation of Boltzmann Constant $\\left(k_B\\right)$</p>\n<p>The average kinetic energy (E) of a gas molecule is related to temperature (T) by the equation :</p>\n<p>$$ \\mathrm{E}=\\frac{3}{2} \\mathrm{k}_{\\mathrm{B}} \\mathrm{~T} $$</p>\n<p>To find the dimensions of $\\mathrm{k}_{\\mathrm{B}}$ :</p>\n<p>$$ \\left[\\mathrm{k}_{\\mathrm{B}}\\right]=[\\mathrm{E}][\\mathrm{T}] $$</p>\n<p>Using the formula Work $=$ Force × Distance, dimensions of energy is $[\\mathrm{E}]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$</p>\n<p>The dimensions of temperature is $[\\mathrm{T}]=[\\mathrm{K}]$</p>\n<p>So,</p>\n<p>$$ \\left[\\mathrm{k}_{\\mathrm{B}}\\right]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right][\\mathrm{K}]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2} \\mathrm{~K}^{-1}\\right] $$</p>\n<p>Thus, (A) Boltzmann constant → (III) [ $\\mathrm{ML}^2 \\mathrm{~T}^{-2} \\mathrm{~K}^{-1}$ ]</p>\n<p>For the dimensions of Stefan's Constant ( $\\sigma$ )</p>\n<p>According to Stefan-Boltzmann law, the energy radiated per unit area per unit time $(\\mathrm{P})$ is:</p>\n<p>$$ \\mathrm{P}=\\sigma \\mathrm{T}^4 $$</p>\n<p>Where $\\mathrm{P}=\\frac{\\text { Energy }}{\\text { Area× Time }}$</p>\n<p>Dimensions of</p>\n<p>$$ [\\mathrm{P}]=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{L}^2\\right][\\mathrm{T}]}=\\left[\\mathrm{MT}^{-3}\\right] $$</p>\n<p>Dimensions of $\\mathrm{T}^4$ is $\\left[\\mathrm{K}^4\\right]$</p>\n<p>So, the dimensions of Stefan's constant is</p>\n<p>$$ [\\sigma]=\\frac{[\\mathrm{P}]}{\\left[\\mathrm{T}^4\\right]}=\\frac{\\left[\\mathrm{MT}^{-3}\\right]}{\\left[\\mathrm{K}^4\\right]}=\\left[\\mathrm{MT}^{-3} \\mathrm{~K}^{-4}\\right]=\\left[\\mathrm{ML}^0 \\mathrm{~T}^{-3} \\mathrm{~K}^{-4}\\right] $$</p>\n<p>Thus, (B) Stefan's constant → (IV)[ $\\mathrm{ML}^0 \\mathrm{~T}^{-3} \\mathrm{~K}^{-4}$ ]</p>\n<p>For the dimensions of Planck's Constant (h):</p>\n<p>The energy (E) of a photon is given by $E=h \\nu$, where $\\nu$ is frequency (Time ${ }^{-1}$ ).</p>\n<p>So, the dimension of Planck's constant is</p>\n<p>$[\\mathrm{h}]=\\frac{[\\mathrm{E}]}{[v]}=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{T}^{-1}\\right]}$</p>\n<p>$$\\Rightarrow $$ $$ [\\mathrm{h}]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right] $$</p>\n<p>Thus, (C) Planck's constant → (II)[ $\\mathrm{ML}^2 \\mathrm{~T}^{-1}$ ]</p>\n<p>For the dimensions of Gravitational Constant (G):</p>\n<p>From Newton's law of gravitation $F=\\frac{G m_1 m_2}{r^2} \\Rightarrow G=\\frac{F r^2}{m_1 m_2}$</p>\n<p>The dimensions of Force is $[\\mathrm{F}]=\\left[\\mathrm{MLT}^{-2}\\right]$</p>\n<p>The dimensions of Distance squared is $\\left[\\mathrm{r}^2\\right]=\\left[\\mathrm{L}^2\\right]$</p>\n<p>The dimensions of mass squared is $\\left[\\mathrm{m}_1 \\mathrm{~m}_2\\right]=\\left[\\mathrm{M}^2\\right]$</p>\n<p>So, the dimensions of Gravitational constant is</p>\n<p>$$ [\\mathrm{G}]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]\\left[\\mathrm{L}^2\\right]}{\\left[\\mathrm{M}^2\\right]}=\\left[\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right] $$</p>\n<p>Thus (D) Gravitational constant $\\rightarrow$ (I) $\\left[\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right]$</p>\n<p>$$ \\mathrm{A} \\rightarrow \\mathrm{III}, \\mathrm{~B} \\rightarrow \\mathrm{IV}, \\mathrm{C} \\rightarrow \\mathrm{II}, \\mathrm{D} \\rightarrow \\mathrm{I} $$</p>\n<p>Therefore, the correct option is (C).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhpjw",
@@ -191,7 +191,7 @@
     "difficulty": "easy",
     "solution": "<p>According to the principle of homogeneity, dimensions of each term on both sides of a equation must be the same. Also, only physical quantities of the same dimensions can be added or subtracted.</p>\n<p>The potential energy of the particle is given as $V=\\frac{A \\sqrt{x}}{x+B}$, where $A$ and $B$ are constant.</p>\n<p>In the denominator of the expression $\\mathrm{x}+\\mathrm{B}$, the constant B is added to distance x . Therefore, the dimensions of $B$ must be the same as the dimensions of $x$.</p>\n<p>$$ [\\mathrm{B}]=[\\mathrm{x}]=\\left[\\mathrm{L}^1\\right] $$</p>\n<p>The potential energy $V$ has the same dimensions as work or energy.</p>\n<p>$$ [\\mathrm{V}]=[\\mathrm{F} \\times \\mathrm{x}]=\\left[\\mathrm{M}^1 \\mathrm{~L}^1 \\mathrm{~T}^{-2} \\times \\mathrm{L}^1\\right]=\\left[\\mathrm{M}^1 \\mathrm{~L}^2 \\mathrm{~T}^{-2}\\right] $$</p>\n<p>On rearranging the formula of potential energy for A :</p>\n<p>$$ A=\\frac{V(x+B)}{\\sqrt{x}} $$</p>\n<p>Substituting the dimensions:</p>\n<p>$$ [\\mathrm{A}]=\\frac{\\left[\\mathrm{M}^1 \\mathrm{~L}^2 \\mathrm{~T}^{-2}\\right]\\left[\\mathrm{L}^1\\right]}{\\left[\\mathrm{L}^{1 / 2}\\right]} $$</p>\n<p>$$\\Rightarrow $$ $[\\mathrm{A}]=\\frac{\\left[\\mathrm{M}^1 \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{L}^{1 / 2}\\right]}$</p>\n<p>$$\\Rightarrow $$$$ [\\mathrm{A}]=\\left[\\mathrm{M}^1 \\mathrm{~L}^{3-\\frac{1}{2}} \\mathrm{~T}^{-2}\\right]=\\left[\\mathrm{M}^1 \\mathrm{~L}^{5 / 2} \\mathrm{~T}^{-2}\\right] $$</p>\n<p>To find the dimensions of the product AB :</p>\n<p>$$ [\\mathrm{AB}]=[\\mathrm{A}] \\times[\\mathrm{B}] $$</p>\n<p>$$\\Rightarrow $$ $[\\mathrm{AB}]=\\left[\\mathrm{M}^1 \\mathrm{~L}^{5 / 2} \\mathrm{~T}^{-2}\\right] \\times\\left[\\mathrm{L}^1\\right]$</p>\n<p>$$\\Rightarrow $$ $[\\mathrm{AB}]=\\left[\\mathrm{M}^1 \\mathrm{~L}^{5 / 2+1} \\mathrm{~T}^{-2}\\right]$</p>\n<p>$$\\Rightarrow $$ $$ [\\mathrm{AB}]=\\left[\\mathrm{M}^1 \\mathrm{~L}^{7 / 2} \\mathrm{~T}^{-2}\\right] $$</p>\n<p>Therefore, the dimensions of $A B$ is $\\left[M^1 L^{7 / 2} T^{-2}\\right]$. </p>\n<p>Thus, the correct option is (D).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnsik6aj",
@@ -213,7 +213,7 @@
     "difficulty": "medium",
     "solution": "<p>To find the values of the exponents $p, q, r$, and $s$, we will use dimensional analysis. Both sides of the equation must have the same fundamental dimensions.</p>\n<p>The dimension of distance $(\\mathrm{x})$ is the dimension of length</p>\n<p>$$ [\\mathrm{x}]=\\mathrm{L} $$</p>\n<p>The dimension is time $[\\mathrm{t}]=\\mathrm{T}$</p>\n<p>The dimension of electric field ( E ) can be derived from the formula for force on a charge, $\\mathrm{F}=\\mathrm{qE}$. Therefore, $\\mathrm{E}=\\mathrm{F} / \\mathrm{q}$.</p>\n<p>The dimensions of force is $[\\mathrm{F}]=\\left[\\mathrm{MLT}^{-2}\\right]$</p>\n<p>Charge $(\\mathrm{q})=$ Current $\\times$ Time</p>\n<p>So, the dimensions of charge is, $[\\mathrm{q}]=[\\mathrm{AT}]$</p>\n<p>So, the dimensions of electric field is, $[\\mathrm{E}]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{[\\mathrm{AT}]}=\\left[\\mathrm{MLT}^{-3} \\mathrm{~A}^{-1}\\right]$</p>\n<p>Using relationship between electric field (E) and and magnetic field (H) in electromagnetic waves. In a vacuum, the ratio of the magnitudes of the electric field to the magnetic field (B) is the speed of light (c),</p>\n<p>$$ \\mathrm{E} / \\mathrm{B}=\\mathrm{c} $$</p>\n<p>Using the formula of magnetic force on a current-carrying conductor:</p>\n<p>$$ \\mathrm{F}=\\mathrm{BIL} $$</p>\n<p>Where, $\\mathrm{F}=$ force $\\mathrm{B}=$ magnetic field (flux density), $\\mathrm{I}=$ current and $\\mathrm{L}=$ length</p>\n<p>$$ \\mathrm{B}=\\frac{\\mathrm{F}}{\\mathrm{IL}} $$</p>\n<p>Substituting the dimensions,</p>\n<p>$$ [\\mathrm{B}]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{[\\mathrm{LA}]} $$</p>\n<p>$$\\Rightarrow $$ $$ [\\mathrm{B}]=\\left[\\mathrm{M} \\mathrm{~T}^{-2} \\mathrm{I}^{-1}\\right] $$</p>\n<p>The relation between B and H is $\\mathrm{B}=\\mu \\mathrm{H} \\Rightarrow \\frac{\\mathrm{B}}{\\mu}=\\mathrm{H}$. Where $\\mu=$ permeability.</p>\n<p>Using the formula of magnetic field, $B=\\frac{\\mu i}{2 \\pi r} \\Rightarrow\\left[\\frac{B}{\\mu}\\right]=\\left[\\frac{i}{r}\\right]$, here $r$ is distance from straight conductor carrying current i.</p>\n<p>$$ \\left[\\frac{\\mathrm{B}}{\\mu}\\right]=[\\mathrm{H}]=\\frac{[\\mathrm{A}]}{[\\mathrm{L}]}=\\left[\\mathrm{L}^{-1} \\mathrm{~A}\\right] $$</p>\n<p>Putting the dimensions of electric field and speed of light, the dimensions of magnetic field is,</p>\n<p>$$ [\\mathrm{H}]=\\frac{\\left[\\mathrm{MLT}^{-3} \\mathrm{~A}^{-1}\\right]}{\\left[\\mathrm{LT}^{-1}\\right]}=\\left[\\mathrm{MT}^{-2} \\mathrm{~A}^{-1}\\right] $$</p>\n<p>We can derive the dimensions of permittivity ( $\\epsilon$ ) from Coulomb's Law, $\\mathrm{F}=\\frac{1}{4 \\pi \\epsilon} \\frac{\\mathrm{q}_1 \\mathrm{q}_2}{\\mathrm{r}^2}$.</p>\n<p>$[\\epsilon]=\\left[\\frac{q^2}{\\mathrm{Fr}^2}\\right]$</p>\n<p>$$ [\\epsilon]=\\frac{[\\mathrm{AT}]^2}{\\left[\\mathrm{MLT}^{-2}\\right]\\left[\\mathrm{L}^2\\right]}=\\left[\\mathrm{M}^{-1} \\mathrm{~L}^{-3} \\mathrm{~T}^4 \\mathrm{~A}^2\\right] $$</p>\n<p>Substituting the dimensions into the given equation,</p>\n<p>$$ [\\mathrm{H}]=\\frac{[\\mathrm{x}]^{\\mathrm{p}}[\\epsilon]^{\\mathrm{q}}[\\mathrm{E}]^{\\mathrm{r}}}{[\\mathrm{t}]^{\\mathrm{s}}} $$</p>\n<p>$$\\Rightarrow $$ $\\left[L^{-1} A\\right]=\\frac{[L]^p\\left[M^{-1} L^{-3} T^4 A^2\\right]^q\\left[M L T^{-3} A^{-1}\\right]^r}{[T]^s}$</p>\n<p>$$ \\left[L^{-1} A\\right]=\\left[M^{-q+r} L^{p-3 q+r} T^{4 q-3 r-s} A^{2 q-r}\\right] $$</p>\n<p>On comparing the powers of $\\mathrm{M}, \\mathrm{L}, \\mathrm{T}$, and A on both sides,</p>\n<p>For $\\mathrm{M},-\\mathrm{q}+\\mathrm{r}=0 \\ldots$ (i)</p>\n<p>For $\\mathrm{A}, 2 \\mathrm{q}-\\mathrm{r}=1$. Since $\\mathrm{r}=\\mathrm{q}$, then $2 \\mathrm{q}-\\mathrm{q}=1$, so $\\mathrm{q}=1$ and $\\mathrm{r}=1$.</p>\n<p>For $\\mathrm{L}, \\mathrm{p}-3 \\mathrm{q}+\\mathrm{r}=-1 \\ldots$ (ii).</p>\n<p>$$ \\begin{gathered} p-3(1)+1=-1 \\\\ p-2=-1 \\Rightarrow p=1 \\end{gathered} $$</p>\n<p>For T, $4 q-3 r-s=0 \\ldots$ (iii)</p>\n<p>$$ \\begin{gathered} 4(1)-3(1)-s=0 \\\\ 1-s=0 \\Rightarrow s=1 \\end{gathered} $$</p>\n<p>Therefore, the values are $\\mathrm{p}=1, \\mathrm{q}=1, \\mathrm{r}=1, \\mathrm{~s}=1$. </p>\n<p>Hence, the correct option is (A).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml89h579",
@@ -235,7 +235,7 @@
     "difficulty": "easy",
     "solution": "<p>In the term $(h+B t), B t$ is added to $h$, where $h$ is the height or length which has the dimension: $[h]=[L]$.</p>\n<p>Therefore, using principle of homogeneity the product Bt must also have the dimension of length: $[\\mathrm{L}]$.</p>\n<p>Given that t is time whose dimension is $[\\mathrm{T}]$ :</p>\n<p>$$ [\\mathrm{B}][\\mathrm{t}]=[\\mathrm{L}] $$</p>\n<p>$$\\Rightarrow $$ $[\\mathrm{B}][\\mathrm{T}]=[\\mathrm{L}]$</p>\n<p>$$\\Rightarrow $$ $$ [\\mathrm{B}]=\\frac{[\\mathrm{L}]}{[\\mathrm{T}]}=\\left[\\mathrm{LT}^{-1}\\right] $$</p>\n<p>Therefore, the dimensions of B is $\\left[\\mathrm{M}^0 \\mathrm{LT}^{-1}\\right]$.</p>\n<p>In the term $\\left(\\mathrm{P}+\\frac{\\mathrm{A}}{\\mathrm{Bt}^2}\\right), \\frac{\\mathrm{A}}{\\mathrm{Bt}^2}$ is added to P (Pressure).</p>\n<p>The dimension of pressure is $\\mathrm{P}=\\frac{\\text { Force }}{\\text { Area }}$ :</p>\n<p>$$ [\\mathrm{P}]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{\\left[\\mathrm{L}^2\\right]}=\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-2}\\right] $$</p>\n<p>According to the principle of homogeneity, the dimension of $\\frac{\\mathrm{A}}{\\mathrm{Bt}^2}$ must equal the dimension of P :</p>\n<p>$$ \\left[\\frac{\\mathrm{A}}{\\mathrm{Bt}^2}\\right]=\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-2}\\right] $$</p>\n<p>$$\\Rightarrow $$$\\frac{[\\mathrm{A}]}{\\left[\\mathrm{LT}^{-1}\\right]\\left[\\mathrm{T}^2\\right]}=\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-2}\\right]$</p>\n<p>$$\\Rightarrow $$ $[\\mathrm{A}]=\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-2}\\right] \\times[\\mathrm{LT}]$</p>\n<p>$$\\Rightarrow $$ $[\\mathrm{A}]=[\\mathrm{M}]\\left[\\mathrm{L}^{-1+1}\\right]\\left[\\mathrm{T}^{-2+1}\\right]$</p>\n<p>$$\\Rightarrow $$ $$ [\\mathrm{A}]=\\left[\\mathrm{ML}^0 \\mathrm{~T}^{-1}\\right] $$</p>\n<p>Therefore, dimensions of A is $\\left[\\mathrm{ML}^0 \\mathrm{~T}^{-1}\\right]$ and the dimensions of B is $\\left[\\mathrm{M}^0 \\mathrm{LT}^{-1}\\right]$. Hence, the correct option is (D).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qvbw44",
@@ -257,7 +257,7 @@
     "difficulty": "easy",
     "solution": "<p>To determine the dimensions of $\\left(\\frac{B}{\\mu_0}\\right)$, we start with the formula for the magnetic field $B$ inside a solenoid:</p>\n<p>$ B = \\mu_0 n I $</p>\n<p>where $n = \\frac{N}{L}$ is the number of turns per unit length, $I$ is the current, and $\\mu_0$ is the permeability of free space.</p>\n<p>Rearranging the formula gives:</p>\n<p>$ \\frac{B}{\\mu_0} = nI = \\frac{N}{L}I $</p>\n<p>From the above, the dimensions of $\\left(\\frac{B}{\\mu_0}\\right)$ are:</p>\n<p>$ \\left[\\frac{B}{\\mu_0}\\right] = \\left[L^{-1} A\\right] $</p>\n<p>Thus, the dimensional formula of $\\left(\\frac{B}{\\mu_0}\\right)$ corresponds to $L^{-1} \\text{A}$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6t9xuk2",
@@ -279,7 +279,7 @@
     "difficulty": "easy",
     "solution": "<p>The correct matching is:</p>\n\n<p><p>(A) Permeability of free space has dimensions  </p>\n<p>$$[MLT^{-2}A^{-2}]$$  </p>\n<p>which corresponds to entry <strong>(III)</strong>.</p></p>\n<p><p>(B) Magnetic field has dimensions  </p>\n<p>$$[MT^{-2}A^{-1}]$$  </p>\n<p>which corresponds to entry <strong>(II)</strong>.</p></p>\n<p><p>(C) Magnetic moment in SI units is expressed in Ampere-square meters, i.e.,  </p>\n<p>$$[L^2A]$$  </p>\n<p>which corresponds to entry <strong>(IV)</strong>.</p></p>\n<p><p>(D) Torsional constant (torque per unit angular displacement) has dimensions  </p>\n<p>$$[ML^2T^{-2}]$$  </p>\n<p>which corresponds to entry <strong>(I)</strong>.</p></p>\n\n<p>Thus, the correct answer is:</p>\n<p><strong>Option A: (A)-(III), (B)-(II), (C)-(IV), (D)-(I)</strong></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6rkcgpf",
@@ -301,7 +301,7 @@
     "difficulty": "easy",
     "solution": "<p>Matching the quantities from List - I with their correct dimensions from List - II is crucial to understanding their physical significance. Here is the correct matching:</p>\n\n<p><p><strong>(A) Angular Impulse:</strong> The dimensions of angular impulse are equivalent to those of angular momentum, represented as $$M L^2 T^{-1}$$. Hence, (A) corresponds to (III).</p></p>\n<p><p><strong>(B) Latent Heat:</strong> Latent heat has dimensions of energy per unit mass, which simplifies to $$M^0 L^2 T^{-2}$$. Hence, (B) corresponds to (I).</p></p>\n<p><p><strong>(C) Electrical resistivity:</strong> Electrical resistivity has the dimensions of resistance multiplied by length, which can be represented as $$M L^3 T^{-3} A^{-2}$$. Hence, (C) corresponds to (IV).</p></p>\n<p><p><strong>(D) Electromotive force:</strong> Electromotive force (emf) is similar to electric potential difference and has dimensions $$M L^2 T^{-3} A^{-1}$$. Hence, (D) corresponds to (II).</p></p>\n\n<p>Therefore, the correct answer is <strong>Option C</strong>:</p>\n\n<p><p>(A)-(III)</p></p>\n<p><p>(B)-(I)</p></p>\n<p><p>(C)-(IV)</p></p>\n<p><p>(D)-(II)</p></p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qj4w10",
@@ -323,7 +323,7 @@
     "difficulty": "easy",
     "solution": "<p>We know, Young's modulus, $$E = {\\sigma  \\over \\varepsilon }$$</p>\n<p>$$ \\Rightarrow E = {{{F \\over A}} \\over {{{\\Delta L} \\over L}}} = {F \\over A}\\left( {{L \\over {\\Delta L}}} \\right)$$</p>\n<p>$$ \\Rightarrow [E] = {{[F]} \\over {[A]}} = {{\\left[ {{M^1}{L^1}{T^{ - 2}}} \\right]} \\over {\\left[ {{L^2}} \\right]}}$$</p>\n<p>(A) $$ \\Rightarrow [E] = [{M^1}{L^{ - 1}}{T^{ - 2}}]$$</p>\n<p>(B) we know, Torque = $r\\times F$</p>\n<p>$$[\\tau ] = [r][F]$$</p>\n<p>$$ = [L][{M^1}{L^1}{T^{ - 2}}]$$</p>\n<p>$$[\\tau ] = [{M^1}{L^2}{T^{ - 2}}]$$</p>\n<p>(C) We know, $$F = \\mu A{u \\over y}$$</p>\n<p>where, F = force, $\\mu$ = coefficient of viscosity</p>\n<p>A = area $\\frac{u}{y}$ = rate of shear deformation</p>\n<p>$$ \\Rightarrow \\mu  = {{Fy} \\over {Au}}$$</p>\n<p>$$ \\Rightarrow [\\mu ] = {{[{M^1}{L^1}{T^{ - 2}}][L]} \\over {[{L^2}][L{T^{ - 1}}]}}$$</p>\n<p>$$ \\Rightarrow [\\mu ] = [{M^1}{L^{ - 1}}{T^{ - 1}}]$$</p>\n<p>(D) We know, $$F = {{G{m_1}{m_2}} \\over {{r^2}}}$$ (Newton's law of gravitation)</p>\n<p>$$ \\Rightarrow G = {{F{r^2}} \\over {{m_1}{m_2}}}$$<$$ \\Rightarrow G = {{F{r^2}} \\over {{m_1}{m_2}}}$$</p>\n<p>$$ \\Rightarrow [G] = {{[{M^1}{L^1}{T^{ - 2}}][{L^2}]} \\over {[{M^2}]}}$$</p>\n<p>$$ \\Rightarrow [G] = [{M^{ - 1}}{L^3}{T^{ - 2}}]$$</p>\n<p>Hence, option D is correct.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qixo6f",
@@ -345,7 +345,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& {[\\tau]=[\\mathrm{E}]} \\\\\n& {[\\sigma] \\neq[\\mathrm{I}]} \\\\\n& {[\\mathrm{L}]=[\\mathrm{h}]} \\\\\n& {[\\mathrm{P}]=[\\mathrm{Y}]}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qixod4",
@@ -367,7 +367,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& {\\left[\\mathrm{LT}^{-1}\\right]=[\\mathrm{A}]\\left[\\mathrm{T}^2\\right]=\\frac{[\\mathrm{B}][\\mathrm{T}]}{[\\mathrm{C}]+[\\mathrm{T}]}} \\\\\n& {[\\mathrm{C}]=[\\mathrm{T}]} \\\\\n& {[\\mathrm{A}]=\\left[\\mathrm{LT}^{-3}\\right]} \\\\\n& {[\\mathrm{B}]=\\left[\\mathrm{LT}^{-1}\\right]} \\\\\n& {[\\mathrm{ABC}]=\\left[\\mathrm{L}^2 \\mathrm{~T}^{-3}\\right]}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j2n6",
@@ -389,7 +389,7 @@
     "difficulty": "easy",
     "solution": "<p>The expression $\\frac{1}{\\mu_0 \\epsilon_0}$ is related to the speed of light $ c $, given by the equation:</p>\n<p>$ c = \\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}} $</p>\n<p>Therefore, we have:</p>\n<p>$ \\frac{1}{\\mu_0 \\epsilon_0} = c^2 $</p>\n<p>The speed of light $ c $ has the dimensions of $\\text{L T}^{-1}$, where $\\text{L}$ is the dimension of length and $\\text{T}$ is the dimension of time. Thus, when squared, the dimensions become:</p>\n<p>$ c^2 = (\\text{L T}^{-1})^2 = \\text{L}^2 \\text{T}^{-2} $</p>\n<p>Hence, the dimensions of $\\frac{1}{\\mu_0 \\epsilon_0}$ are $\\text{L}^2 \\text{T}^{-2}$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dunnn2",
@@ -411,7 +411,7 @@
     "difficulty": "easy",
     "solution": "<p>Here are the dimensional formulas:</p>\n\n<p><p>Coefficient of viscosity, μ  </p>\n<p>$$[\\mu]=\\frac{\\text{pressure}\\times\\text{time}}{}     =\\frac{[M\\,L^{-1}T^{-2}]\\,[T]}{}     =[M\\,L^{-1}T^{-1}]\\quad\\longrightarrow\\text{(IV)}$$</p></p>\n<p><p>Intensity of a wave, I  </p>\n<p>$$[I]=\\frac{\\text{power}}{\\text{area}}     =\\frac{[M\\,L^2T^{-3}]}{[L^2]}     =[M\\,L^0T^{-3}]\\quad\\longrightarrow\\text{(I)}$$</p></p>\n<p><p>Pressure gradient, dP/dx  </p>\n<p>$$\\left[\\frac{dP}{dx}\\right]    =\\frac{[M\\,L^{-1}T^{-2}]}{[L]}    =[M\\,L^{-2}T^{-2}]\\quad\\longrightarrow\\text{(II)}$$</p></p>\n<p><p>Compressibility, κ  </p>\n<p>$$[\\kappa]=\\frac1{[\\text{pressure}]}    =[M^{-1}L\\,T^2]\\quad\\longrightarrow\\text{(III)}$$</p></p>\n\n<p>Matching gives  </p>\n<p>(A)–(IV), (B)–(I), (C)–(II), (D)–(III), i.e. <strong>Option C</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnut5m",
@@ -433,7 +433,7 @@
     "difficulty": "medium",
     "solution": "<p>Electric dipole moment $(\\overrightarrow{\\mathrm{P}})=\\mathrm{q} \\times 2 \\ell$</p>\n<p>Magnetic dipole moment $(\\overrightarrow{\\mathrm{M}})=\\mathrm{IA}$</p>\n<p>$$\\left[\\frac{\\mathrm{P}}{\\mathrm{M}}\\right]=\\left[\\frac{\\mathrm{LTA}}{\\mathrm{~L}^2 \\mathrm{~A}}\\right]=\\mathrm{L}^{-1} \\mathrm{~T}=\\mathrm{M}^0 \\mathrm{~L}^{-1} \\mathrm{~T}^1 \\mathrm{~A}^0$$</p>\n<p>After compering values of $\\mathrm{P} \\& \\mathrm{Q}$ are $0,-1$</p>\n<p>Correct Answer : Option 4</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9ghxm81",
@@ -455,7 +455,7 @@
     "difficulty": "medium",
     "solution": "<p>To solve this problem, we need to find the dimensions of the electric flux and the magnetic flux, and then take their ratio.</p>\n\n<p>Determine the dimension of electric flux (Φₑ):</p>\n\n\n<p><p>Electric flux is defined as </p>\n<p>$$\\Phi_E = \\int_S \\mathbf{E} \\cdot d\\mathbf{A}.$$</p></p>\n<p><p>The electric field $\\mathbf{E}$ has dimensions:</p>\n<p>$$[E] = \\frac{\\text{Force}}{\\text{Charge}}.$$</p></p>\n<p><p>Since force has dimensions $$M L T^{-2},$$ and charge (in SI) has dimensions $$A\\,T,$$ we get:</p>\n<p>$$[E] = \\frac{M L T^{-2}}{A\\,T} = M L T^{-3} A^{-1}.$$</p></p>\n<p><p>The area element $$dA$$ has dimensions $$L^2.$$</p></p>\n<p><p>Thus, the electric flux has dimensions:</p>\n<p>$$[\\Phi_E] = [E][A] = M L T^{-3} A^{-1} \\times L^2 = M L^3 T^{-3} A^{-1}.$$</p></p>\n\n\n<p>Determine the dimension of magnetic flux (Φ_B):</p>\n\n\n<p><p>Magnetic flux is defined as </p>\n<p>$$\\Phi_B = \\int_S \\mathbf{B} \\cdot d\\mathbf{A}.$$</p></p>\n<p><p>The magnetic field $\\mathbf{B}$ has dimensions determined via the Lorentz force law (using $$F = q\\,v\\,B$$), giving:</p>\n<p>$$[B] = \\frac{F}{q\\,v} = \\frac{M L T^{-2}}{(A\\,T)(L T^{-1})} = M T^{-2} A^{-1}.$$</p></p>\n<p><p>Again, the area element has dimensions $$L^2.$$</p></p>\n<p><p>So the magnetic flux has dimensions:</p>\n<p>$$[\\Phi_B] = [B][A] = (M T^{-2} A^{-1})(L^2) = M L^2 T^{-2} A^{-1}.$$</p></p>\n\n\n<p>Find the ratio of electric flux to magnetic flux:</p>\n\n\n<p><p>Taking the ratio:</p>\n<p>$$\\frac{\\Phi_E}{\\Phi_B} = \\frac{M L^3 T^{-3} A^{-1}}{M L^2 T^{-2} A^{-1}}.$$</p></p>\n<p><p>Canceling like terms:</p>\n\n<p><p>Mass $(M)$ cancels.</p></p>\n<p><p>Current $(A^{-1})$ cancels.</p></p>\n<p><p>For length, $$L^{3-2} = L^1.$$</p></p>\n<p><p>For time, $$T^{-3 -(-2)} = T^{-1}.$$</p></p></p>\n<p><p>Therefore, the ratio has dimensions:</p>\n<p>$$L^{1}T^{-1}.$$</p></p>\n\n<p>This means in the expression</p>\n<p>$$M^P L^Q T^R A^S,$$</p>\n<p>the exponents for length and time are $$Q = 1$$ and $$R = -1.$$</p>\n<p>Looking at the options provided, this corresponds to Option D: $$(1,-1).$$</p>\n<p>Thus, the answer is Option D.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e22mjm",
@@ -477,7 +477,7 @@
     "difficulty": "easy",
     "solution": "<p>The dimension of $ \\sqrt{\\frac{\\mu_0}{\\epsilon_0}} $ can be understood as follows:</p>\n<p>Vacuum permeability ($ \\mu_0 $) and vacuum permittivity ($ \\epsilon_0 $) relate to the properties of inductance and capacitance, respectively, in a vacuum. We start by considering the formulas for inductance ($ L $) and capacitance ($ C $):</p>\n\n<p><p><strong>Inductance ($ L $)</strong> is given by:</p>\n<p>$   L = \\frac{\\mu_0 \\cdot \\text{Number of turns} \\cdot \\text{Area}}{\\text{Length}}   $</p></p>\n<p><p><strong>Capacitance ($ C $)</strong> is given by:</p>\n<p>$   C = \\frac{\\text{Area} \\cdot \\epsilon_0}{\\text{Distance}}   $</p></p>\n\n<p>From these, the ratio $\\frac{L}{C}$ can be expressed as $\\frac{\\mu_0}{\\epsilon_0}$:</p>\n<p>$ \\frac{L}{C} \\propto \\frac{\\mu_0}{\\epsilon_0} $</p>\n<p>Taking the square root of this ratio, we have:</p>\n<p>$ \\sqrt{\\frac{\\mu_0}{\\epsilon_0}} \\propto \\sqrt{\\frac{L}{C}} $</p>\n<p>This simplifies further to considering the relationship between time constant ($\\tau$) and resistance ($R$):</p>\n<p>$ \\frac{L}{C} = \\frac{\\tau R}{(\\tau / R)} = R^2 $</p>\n<p>Thus, by taking the square root:</p>\n<p>$ \\sqrt{\\frac{\\mu_0}{\\epsilon_0}} = R $</p>\n<p>In conclusion, the dimension of $ \\sqrt{\\frac{\\mu_0}{\\epsilon_0}} $ is equivalent to the dimension of resistance, $ R $.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e430x9",
@@ -499,7 +499,7 @@
     "difficulty": "easy",
     "solution": "<p><p><strong>(A) Mass density:</strong></p>\n\n<p><p>Mass density is defined as mass per unit volume.</p></p>\n<p><p>The dimension of mass is $$[M]$$.</p></p>\n<p><p>The dimension of volume is $$[L^3]$$.</p></p>\n<p><p>Therefore, the dimension of mass density is $$\\frac{[M]}{[L^3]} = [ML^{-3}T^{0}]$$.</p></p>\n<p><p>Matches with (IV).</p></p></p>\n<p><p><strong>(B) Impulse:</strong></p>\n\n<p><p>Impulse is defined as the change in momentum, or force multiplied by time.</p></p>\n<p><p>Impulse = Force x Time</p></p>\n<p><p>The dimension of force is $$[MLT^{-2}]$$.</p></p>\n<p><p>The dimension of time is $$[T]$$.</p></p>\n<p><p>Therefore, the dimension of impulse is $$[MLT^{-2}] \\cdot [T] = [MLT^{-1}]$$.</p></p>\n<p><p>Matches with (II).</p></p></p>\n<p><p><strong>(C) Power:</strong></p>\n\n<p><p>Power is defined as the rate of doing work or energy per unit time.</p></p>\n<p><p>Power = Work / Time</p></p>\n<p><p>The dimension of work (or energy) is $$[ML^2T^{-2}]$$.</p></p>\n<p><p>The dimension of time is $$[T]$$.</p></p>\n<p><p>Therefore, the dimension of power is $$\\frac{[ML^2T^{-2}]}{[T]} = [ML^2T^{-3}]$$.</p></p>\n<p><p>Matches with (I).</p></p></p>\n<p><p><strong>(D) Moment of inertia:</strong></p>\n\n<p><p>Moment of inertia is defined as $$I = mr^2$$, where m is mass and r is the distance from the axis of rotation.</p></p>\n<p><p>The dimension of mass is $$[M]$$.</p></p>\n<p><p>The dimension of distance squared is $$[L^2]$$.</p></p>\n<p><p>Therefore, the dimension of moment of inertia is $$[ML^2T^{0}]$$.</p></p>\n<p><p>Matches with (III).</p></p></p>\n\n<p>So, the correct matches are:</p>\n\n<p><p>(A) - (IV)</p></p>\n<p><p>(B) - (II)</p></p>\n<p><p>(C) - (I)</p></p>\n<p><p>(D) - (III)</p></p>\n\n<p>Therefore, the correct option is <strong>D</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "maw47t43",
@@ -545,7 +545,7 @@
     "solution": "<p>To find the values of $(\\alpha, \\beta, \\gamma, \\delta)$ for which the expression $e^\\alpha \\varepsilon_0{ }^\\beta h^\\gamma c^\\delta$ is dimensionless, we need to ensure that the product of the quantities has no overall physical dimensions. This means the dimensions of charge ($e$), permittivity ($\\varepsilon_0$), Planck's constant ($h$), and speed of light ($c$) need to cancel each other out.</p>\n\n<p>Let's look at the dimensions of each of the physical quantities:</p>\n\n<p><strong>Electronic charge ($e$):</strong> The dimension of charge in terms of fundamental dimensions is:</p>\n\n<p>$$[e] = [A \\cdot T]$$</p>\n\n<p>where $A$ is the dimension of current and $T$ is the dimension of time.</p>\n\n<p><strong>Permittivity of free space ($\\varepsilon_0$):</strong> The dimension is given by:</p>\n\n<p>$$[\\varepsilon_0] = [\\text{M}^{-1} \\text{L}^{-3} \\text{T}^4 \\text{A}^2]$$</p>\n\n<p><strong>Planck's constant ($h$):</strong> The dimension is:</p>\n\n<p>$$[h] = [\\text{M} \\text{L}^2 \\text{T}^{-1}]$$</p>\n\n<p><strong>Speed of light ($c$):</strong> The dimension is:</p>\n\n<p>$$[c] = [\\text{L} \\text{T}^{-1}]$$</p>\n\n<p>Now, we write the expression for the dimensionless quantity and set its dimensions to zero:</p>\n\n<p>$$[e^\\alpha \\varepsilon_0{ }^\\beta h^\\gamma c^\\delta] = [A^\\alpha T^\\alpha] [\\text{M}^{-\\beta} \\text{L}^{-3\\beta} \\text{T}^{4\\beta} \\text{A}^{2\\beta}] [\\text{M}^\\gamma \\text{L}^{2\\gamma} \\text{T}^{-\\gamma}] [\\text{L}^\\delta \\text{T}^{-\\delta}]$$</p>\n\n<p>Combining the dimensions, we get:</p>\n\n<p>$$[e^\\alpha \\varepsilon_0{ }^\\beta h^\\gamma c^\\delta] = [\\text{M}^{-\\beta + \\gamma} \\text{L}^{-3\\beta + 2\\gamma + \\delta} \\text{T}^{\\alpha + 4\\beta - \\gamma - \\delta} \\text{A}^{\\alpha + 2\\beta}]$$</p>\n\n<p>For the quantity to be dimensionless, the exponents of $\\text{M}$, $\\text{L}$, $\\text{T}$, and $\\text{A}$ must all be zero:</p>\n\n<ul>\n\n<li>$$-\\beta + \\gamma = 0$$</li>\n\n<li>$$-3\\beta + 2\\gamma + \\delta = 0$$</li>\n\n<li>$$\\alpha + 4\\beta - \\gamma - \\delta = 0$$</li>\n\n<li>$$\\alpha + 2\\beta = 0$$</li>\n\n</ul>\n\n<p>Solving the above set of equations, we start with the fourth equation:</p>\n\n<p>$$\\alpha + 2\\beta = 0 \\Rightarrow \\alpha = -2\\beta$$</p>\n\n<p>Substituting $\\alpha = -2\\beta$ into the third equation, we get:</p>\n\n<p>$$-2\\beta + 4\\beta - \\gamma - \\delta = 0 \\Rightarrow 2\\beta - \\gamma - \\delta = 0 \\Rightarrow \\gamma + \\delta = 2\\beta$$</p>\n\n<p>From the first equation:</p>\n\n<p>$$-\\beta + \\gamma = 0 \\Rightarrow \\gamma = \\beta$$</p>\n\n<p>Then, substituting $\\gamma = \\beta$ into $\\gamma + \\delta = 2\\beta$:</p>\n\n<p>$$\\beta + \\delta = 2\\beta \\Rightarrow \\delta = \\beta$$</p>\n\n<p>Thus, we have:</p>\n\n<p>$$\\alpha = -2\\beta$$</p>\n\n<p>$$\\gamma = \\beta$$</p>\n\n<p>$$\\delta = \\beta$$</p>\n\n<p>Let $\\beta = -n$ where $n$ is a non-zero integer. Then, we can write the values as:</p>\n\n<p>$$\\alpha = -2(-n) = 2n$$</p>\n\n<p>$$\\beta = -n$$</p>\n\n<p>$$\\gamma = -n$$</p>\n\n<p>$$\\delta = -n$$</p>\n\n<p>Hence, the tuple $(\\alpha, \\beta, \\gamma, \\delta)$ is given by:</p>\n\n<p>$$ (2n, -n, -n, -n) $$</p>\n\n<p>So, the correct option is <strong>Option A:</strong> $(2n,-n,-n,-n)$</p>",
     "section": "Sec 4",
     "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lsbknus1",
@@ -567,7 +567,7 @@
     "difficulty": "easy",
     "solution": "<p>Angular impulse is given when a torque is applied for a certain amount of time. The angular impulse changes the angular momentum of an object and has the same dimensions as angular momentum.</p>\n<p>The dimensional formula for torque $\\tau$ is the same as that for work, since torque is a kind of rotational work, which is given by force times distance (or in rotational terms, it can be considered as force times lever arm). The dimensional formula for force is $\\left[\\mathrm{M} \\mathrm{L} \\mathrm{T}^{-2}\\right]$, and when multiplied by distance $\\left[\\mathrm{L}\\right]$, we get:</p>\n<p>$\\left[\\mathrm{Torque}\\right] = \\left[\\mathrm{M} \\mathrm{L} \\mathrm{T}^{-2}\\right] \\times \\left[\\mathrm{L}\\right] = \\left[\\mathrm{M} \\mathrm{L}^2 \\mathrm{T}^{-2}\\right]$</p>\n<p>Now, angular impulse is torque times time, so we multiply the dimension of torque by time $\\left[\\mathrm{T}\\right]$:</p>\n<p>$\\left[\\mathrm{Angular\\ Impulse}\\right] = \\left[\\mathrm {M} \\mathrm{L}^2 \\mathrm{T}^{-2}\\right] \\times \\left[\\mathrm{T}\\right] = \\left[\\mathrm{M} \\mathrm{L}^2 \\mathrm{T}^{-1}\\right]$</p>\n<p>So the correct dimensional formula for angular impulse is given by Option C, which is $\\left[\\mathrm{M} \\mathrm{L}^2 \\mathrm{T}^{-1}\\right]$. </p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsc3tnnj",
@@ -589,7 +589,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& {[\\mathrm{h}]=\\mathrm{ML}^2 \\mathrm{~T}^{-1}} \\\\\n& {[\\mathrm{~L}]=\\mathrm{ML}^2 \\mathrm{~T}^{-1}} \\\\\n& {[\\mathrm{P}]=\\mathrm{MLT}^{-1}} \\\\\n& {[\\tau]=\\mathrm{ML}^2 \\mathrm{~T}^{-2}}\n\\end{aligned}$$</p>\n<p>(Here $$\\mathrm{h}$$ is Planck's constant, $$\\mathrm{L}$$ is angular momentum, $$\\mathrm{P}$$ is linear momentum and $$\\tau$$ is moment of force)</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsg6udgl",
@@ -611,7 +611,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{m}=\\mathrm{kc}^{\\mathrm{P}} \\mathrm{G}^{-1 / 2} \\mathrm{~h}^{1 / 2} \\\\\n& \\mathrm{M}^1 \\mathrm{~L}^0 \\mathrm{~T}^0=\\left[\\mathrm{LT}^{-1}\\right]^{\\mathrm{P}}\\left[\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right]^{-1 / 2}\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right]^{1 / 2}\n\\end{aligned}$$</p>\n<p>By comparing $$\\mathrm{P}=1 / 2$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsgdjves",
@@ -633,7 +633,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& F=\\eta A \\frac{d v}{d y} \\\\\n& {\\left[M L T^{-2}\\right]=\\eta\\left[L^2\\right]\\left[T^{-1}\\right]} \\\\\n& \\eta=\\left[M L^{-1} T^{-1}\\right] \\\\\n& S . T=\\frac{F}{\\ell}=\\frac{\\left[M L T^{-2}\\right]}{[L]}=\\left[M L^0 T^{-2}\\right] \\\\\n& L=m v r=\\left[M L^2 T^{-1}\\right] \\\\\n& K . E=\\frac{1}{2} I \\omega^2=\\left[M L^2 T^{-2}\\right]\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd5ibjj",
@@ -655,7 +655,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& {[\\mathrm{B}]=\\mathrm{L}^2} \\\\\n& \\mathrm{~A}=\\frac{\\mathrm{x}^2}{\\mathrm{tE}}=\\frac{\\mathrm{L}^2}{\\mathrm{TML}^2 \\mathrm{~T}^{-2}}=\\frac{1}{\\mathrm{MT}^{-1}} \\\\\n& {[\\mathrm{~A}]=\\mathrm{M}^{-1 \\mathrm{~T}}} \\\\\n& {[\\mathrm{AB}]=\\left[\\mathrm{L}^2 \\mathrm{M}^{-1} \\mathrm{~T}^1\\right]}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lse6mdlu",
@@ -677,7 +677,7 @@
     "difficulty": "easy",
     "solution": "<p>To determine the dimensions of $$\\frac{b^2}{a}$$, let's start by identifying the dimensions of each term in the equation $$F=a x^2+b t^{\\frac{1}{2}}$$, where $$F$$ represents force, $$x$$ represents distance, and $$t$$ represents time.</p>\n<p>The dimension of force ($$F$$) is given by [MLT<sup>-2</sup>], where $$M$$ is mass, $$L$$ is length, and $$T$$ is time.</p>\n<p>The term $$ax^2$$ has the same dimension as force, so:</p>\n<p>$$[a] = \\frac{[F]}{[x]^2} = \\frac{MLT^{-2}}{L^2} = M L^{-1} T^{-2}$$</p>\n<p>The term $$bt^{\\frac{1}{2}}$$ also has the same dimension as force, which gives:</p>\n<p>$$[b] = \\frac{[F]}{[t]^{\\frac{1}{2}}} = \\frac{MLT^{-2}}{T^{\\frac{1}{2}}} = M L T^{-\\frac{5}{2}}$$</p>\n<p>Now, to find $$\\frac{b^2}{a}$$, we substitute the dimensions of $$b$$ and $$a$$:</p>\n<p>$$\\left[\\frac{b^2}{a}\\right] = \\frac{\\left(M^2 L^2 T^{-5}\\right)}{\\left(M L^{-1} T^{-2}\\right)} = [M^1 L^3 T^{-3}]$$</p>\n<p>Therefore, the dimensions of $$\\frac{b^2}{a}$$ are $$\\left[\\mathrm{ML}^3 \\mathrm{~T}^{-3}\\right]$$, which corresponds to mass times length cubed per time cubed.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv2es2kt",
@@ -743,7 +743,7 @@
     "difficulty": "easy",
     "solution": "<p>To find the dimensional formula of $$a b^{-1}$$ in the equation given by $$\\left( P + \\frac{a}{V^2}\\right)(V-b) = RT$$, where $P$ is the pressure, $V$ is the volume, and $T$ is the temperature, we will first understand the dimensions of each term in the equation. The variables mentioned have their usual meanings in the context of physics and chemistry, associated with the Ideal gas laws and the Van der Waals equation.\n\n<p>The dimensional formula for pressure ($P$) is $[M^1 L^{-1} T^{-2}]$ assuming $P = \\frac{Force}{Area}$ and Force = $Mass \\times Acceleration$.</p>\n\n<p>The volume ($V$) has a dimensional formula of $[L^3]$.</p>\n\n<p>Temperature ($T$) typically does not factor into the dimensional analysis directly in this context as we are considering the units it would be measured in (e.g., Kelvin), which doesn't directly convert into mass, length, and time. However, $RT$ suggests energy, and since the gas constant $R$ has dimensions including time, we consider energy's dimensions, $[M^1 L^2 T^{-2}]$, but this will not directly affect the dimension we are solving for.</p>\n\n<p>Given these, let's analyze the term $\\frac{a}{V^2}$ to deduce $a$'s dimensions:</p>\n\n<ul>\n<li>$\\frac{a}{V^2}$ must have the same dimensions as pressure ($P$) for the equation to be dimensionally consistent, so</li>\n</ul>\n<p>$ [a] [L^{-6}] = [M^1 L^{-1} T^{-2}] $</p>\n\n<p>Thus, $a$ has the dimensional formula $[M^1 L^5 T^{-2}]$.</p>\n\n<p>The term we're interested in is $a b^{-1}$, which requires finding the dimension of $b$ as it's being subtracted from $V$, implying it shares dimensions with $V$:</p>\n\n<ul>\n<li>Hence, $b$ has the dimensional formula $[L^3]$.</li>\n</ul>\n<p>Putting it all together for $a b^{-1}$:</p>\n\n<p>$ [a b^{-1}] = [M^1 L^5 T^{-2}] [L^{-3}] = [M^1 L^2 T^{-2}] $</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option D $$[\\mathrm{ML}^2 \\mathrm{~T}^{-2}]$$.</p></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lvc57i1o",
@@ -765,7 +765,7 @@
     "difficulty": "easy",
     "solution": "<p>To determine the correct matches between List I and List II, we need to consider the dimensional formulas of the given physical quantities.</p>\n\n<ol>\n<li>Torque (τ) is defined as the product of force (F) and distance (d):</li>\n</ol>\n<p>$ \\tau = F \\cdot d $</p>\n\n<p>The dimensional formula for torque is:</p>\n\n<p>$ [\\tau] = [M^1 L^2 T^{-2}] $</p>\n\n<p>Thus, Torque corresponds to IV.</p>\n\n<ol>\n<li>Magnetic field (B) is derived from the relation involving force (F), charge (q), and velocity (V):</li>\n</ol>\n<p>$ F = qVB $</p>\n\n<p>The dimensional formula for the magnetic field is:</p>\n\n<p>$ [B] = [M^1 T^{-2} A^{-1}] $</p>\n\n<p>Thus, Magnetic field corresponds to III.</p>\n\n<ol>\n<li>Magnetic moment (M) is the product of current (I) and area (A):</li>\n</ol>\n<p>$ M = I \\cdot A $</p>\n\n<p>The dimensional formula for the magnetic moment is:</p>\n\n<p>$ [M] = [L^2 A^1] $</p>\n\n<p>Thus, Magnetic moment corresponds to II.</p>\n\n<ol>\n<li>Permeability of free space (μ₀) has the dimensional formula:</li>\n</ol>\n<p>$ [μ₀] = [M^1 L^1 T^{-2} A^{-2}] $</p>\n\n<p>Thus, Permeability of free space corresponds to I.</p>\n\n<p>Based on the above analysis, the correct matches are:</p>\n\n<ul>\n<li>A. Torque – IV</li><br>\n<li>B. Magnetic Field – III</li><br>\n<li>C. Magnetic Moment – II</li><br>\n<li>D. Permeability of free space – I</li>\n</ul>\n<p>Therefore, the correct option is Option D:</p>\n\n<p>A-IV, B-III, C-II, D-I.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv3ve84f",
@@ -787,7 +787,7 @@
     "difficulty": "easy",
     "solution": "<p>To determine the dimensions of $$\\epsilon_{\\mathrm{o}} \\mathrm{E}^2$$, we need to first understand the dimensional formulas of each component in the expression.</p>\n\n<p>1. <strong>Permittivity of free space, $$\\epsilon_{\\mathrm{o}}$$:</strong> </p>\n\n<p>The permittivity of free space has the dimensions: $$\\left[\\epsilon_{\\mathrm{o}}\\right] = [\\mathrm{M}^{-1} \\mathrm{L}^{-3} \\mathrm{T}^4 \\mathrm{A}^2]$$.</p>\n\n<p>2. <strong>Electric field, $$\\mathrm{E}$$:</strong></p>\n\n<p>The electric field $$\\mathrm{E}$$ has the dimensions: $$\\left[\\mathrm{E}\\right] = [\\mathrm{M} \\mathrm{L} \\mathrm{T}^{-3} \\mathrm{A}^{-1}]$$.</p>\n\n<p>Now, let's calculate the dimensions of $$\\epsilon_{\\mathrm{o}} \\mathrm{E}^2$$:</p>\n\n<p>$\\begin{equation}  \\left[\\epsilon_{\\mathrm{o}} \\mathrm{E}^2 \\right] = \\left[\\epsilon_{\\mathrm{o}}\\right] \\left[\\mathrm{E}\\right]^2  = \\left[\\mathrm{M}^{-1} \\mathrm{L}^{-3} \\mathrm{T}^4 \\mathrm{A}^2\\right] \\left([\\mathrm{M} \\mathrm{L} \\mathrm{T}^{-3} \\mathrm{A}^{-1}]^2\\right]  = \\left[\\mathrm{M}^{-1} \\mathrm{L}^{-3} \\mathrm{T}^4 \\mathrm{A}^2\\right] \\left([\\mathrm{M}^2 \\mathrm{L}^2 \\mathrm{T}^{-6} \\mathrm{A}^{-2}]\\right]  \\end{equation}$</p>\n\n<p>Combining the dimensions:</p>\n\n<p>$\\begin{equation}  \\left[\\epsilon_{\\mathrm{o}} \\mathrm{E}^2 \\right] = \\left[\\mathrm{M}^{-1} \\mathrm{L}^{-3} \\mathrm{T}^4 \\mathrm{A}^2\\right] \\left[\\mathrm{M}^2 \\mathrm{L}^2 \\mathrm{T}^{-6} \\mathrm{A}^{-2}\\right]  = \\left[\\mathrm{M}^{-1 + 2} \\mathrm{L}^{-3 + 2} \\mathrm{T}^{4 - 6} \\mathrm{A}^{2 - 2}\\right]  = \\left[\\mathrm{M} \\mathrm{L}^{-1} \\mathrm{T}^{-2}\\right]  \\end{equation}$</p>\n\n<p>Therefore, the dimensions of $$\\epsilon_{\\mathrm{o}} \\mathrm{E}^2$$ are $$\\left[\\mathrm{M} \\mathrm{L}^{-1} \\mathrm{~T}^{-2}\\right]$$, which corresponds to Option A.</p>\n\n<p>Hence, the correct answer is Option A: $$\\left[\\mathrm{M} \\mathrm{L}^{-1} \\mathrm{~T}^{-2}\\right]$$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luxwd2ms",
@@ -809,7 +809,7 @@
     "difficulty": "easy",
     "solution": "<p>To determine the dimensional formula for Planck's constant, we will start by analyzing the given de-Broglie wavelength equation:</p>\n\n<p>$$\\lambda = \\frac{h}{\\sqrt{2 m E}}$$</p>\n\n<p>Here, $$\\lambda$$ is the wavelength, $$h$$ is the Planck's constant, $$m$$ is the mass of the particle, and $$E$$ is the energy of the particle.</p>\n\n<p>First, let's derive the dimensional formula for each term involved:</p>\n\n<p>1. Wavelength $$\\lambda$$ has the dimensional formula of length $$[L]$$.</p>\n\n<p>2. Mass $$m$$ has the dimensional formula $$[\\text{M}]$$.</p>\n\n<p>3. Energy $$E$$ has the dimensional formula of work, which is force times distance:\n\n<p>$$[E] = [F][L] = [\\text{MLT}^{-2}][L] = [\\text{ML}^{2}\\text{T}^{-2}]$$.</p></p>\n\n<p>Now, let's rewrite the equation in terms of the dimensions:</p>\n\n<p>$$[L] = \\frac{[h]}{\\sqrt{2 [\\text{M}] [\\text{ML}^{2}\\text{T}^{-2}]}}$$</p>\n\n<p>Simplifying inside the square root:</p>\n\n<p>$$[L] = \\frac{[h]}{\\sqrt{2 [\\text{M}] [\\text{M}] [\\text{L}^{2}\\text{T}^{-2}]}}$$</p>\n\n<p>$$[L] = \\frac{[h]}{\\sqrt{2 [\\text{M}^{2}] [\\text{L}^{2}\\text{T}^{-2}]}}$$</p>\n\n<p>Since the constants like 2 do not affect the dimensional formula, we can simplify further:</p>\n\n<p>$$[L] = \\frac{[h]}{[\\text{M L T}^{-1}]}$$</p>\n\n<p>Cross multiplying to solve for the dimensional formula of $$h$$:</p>\n\n<p>$$[h] = [L] [\\text{M L T}^{-1}]$$</p>\n\n<p>$$[h] = [\\text{M L}^{2} \\text{T}^{-1}]$$</p>\n\n<p>Therefore, the dimensional formula for Planck's constant $$h$$ is:</p>\n\n<p>$$\\left[\\text{ML}^{2}\\text{T}^{-1}\\right]$$</p>\n\n<p>Hence, the correct option is:</p>\n\n<p>Option C $$\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right]$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luy9clxz",
@@ -831,7 +831,7 @@
     "difficulty": "easy",
     "solution": "<p>To derive the dimensional formula of latent heat, we need to understand what latent heat actually refers to. Latent heat is the amount of heat absorbed or released by a substance during a change in its physical state (phase) that occurs without changing its temperature.</p>\n\n<p>The formula for latent heat ($L$) is given by:</p>\n\n<p>$Q = mL$</p>\n\n<p>where:</p>\n\n<p>$Q$ = Heat absorbed or released (with the dimension of energy $[\\mathrm{ML}^2\\mathrm{T}^{-2}]$),</p>\n\n<p>$m$ = Mass of the substance ($[\\mathrm{M}]$),</p>\n\n<p>$L$ = Latent heat.</p>\n\n<p>To find the dimensions of latent heat, we rearrange the formula to solve for $L$:</p>\n\n<p>$L = \\frac{Q}{m}$</p>\n\n<p>Knowing the dimensions of $Q$ (energy, which is equivalent to work done, with dimensions $[\\mathrm{ML}^2\\mathrm{T}^{-2}]$) and $m$ (mass, with dimensions $[\\mathrm{M}]$), we can substitute these into the equation to find $L$'s dimensions:</p>\n\n<p>$L = \\frac{[\\mathrm{ML}^2\\mathrm{T}^{-2}]}{[\\mathrm{M}]}$</p>\n\n<p>This simplifies to:</p>\n\n<p>$L = [\\mathrm{L}^2\\mathrm{T}^{-2}]$</p>\n\n<p>Therefore, the dimensional formula of latent heat is:</p>\n\n<p>$L = [\\mathrm{M}^0 \\mathrm{L}^2 \\mathrm{T}^{-2}]$</p>\n\n<p>So, the correct option is:</p>\n\n<p><strong>Option C</strong> $ \\left[\\mathrm{M}^0 \\mathrm{~L}^2 \\mathrm{~T}^{-2}\\right] $</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgsx9rki",
@@ -853,7 +853,7 @@
     "difficulty": "medium",
     "solution": "<p>We know that force (F) has dimensions of $$\\mathrm{MLT}^{-2}$$, velocity (V) has dimensions of $$\\mathrm{LT}^{-1}$$, and time (T) has dimensions of $$\\mathrm{T}$$. To express density ($$\\rho$$), which has dimensions of $$\\mathrm{ML}^{-3}$$, in terms of F, V, and T, we need to find the exponents of F, V, and T.</p>\n<p>Let the dimensions of density be expressed as:</p>\n<p>$$\\mathrm{[M]}^a \\mathrm{[L]}^b \\mathrm{[T]}^c$$</p>\n<p>Substituting the dimensions of F, V, and T:</p>\n<p>$$\\mathrm{[F]}^a \\mathrm{[V]}^b \\mathrm{[T]}^c = (\\mathrm{MLT}^{-2})^a (\\mathrm{LT}^{-1})^b (\\mathrm{T})^c$$</p>\n<p>Since density has dimensions of $$\\mathrm{ML}^{-3}$$, we can set up the following equations:</p>\n<p>$$a = 1$$ (for the mass term M)<br/><br/>\n$$a + b = -3$$ (for the length term L)<br/><br/>\n$$-2a - b + c = 0$$ (for the time term T)</p>\n<p>Solving these equations, we get:</p>\n<p>$$a = 1$$<br/><br/>\n$$b = -4$$<br/><br/>\n$$c = -2$$</p>\n<p>Thus, the dimensional formula of density in terms of F, V, and T is:</p>\n<p>$$\\mathrm{FV}^{-4} \\mathrm{T}^{-2}$$</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgoyia4x",
@@ -875,7 +875,7 @@
     "difficulty": "medium",
     "solution": "Given that, $$\\left[X+\\frac{a}{Y^{2}}\\right][Y-b]=\\mathrm{R} T$$<br/><br/>$$ \\therefore $$ $X$ and $\\frac{a}{Y^2}$ have the same dimensions and $Y$ and $b$ have the same dimensions, let's analyze the dimensions of $\\frac{a}{b}$.\n<br/><br/>\nSince $X$ represents pressure, it has dimensions of $[M L^{-1} T^{-2}]$. \n<br/><br/>\nSince $X$ and $\\frac{a}{Y^2}$ have the same dimensions, we have:\n<br/><br/>\n$$\\left[\\frac{a}{Y^2}\\right] = [M L^{-1} T^{-2}]$$\n<br/><br/>\nThen, the dimensions of $a$ are:\n<br/><br/>\n$$[a] = [M L^{-1} T^{-2}] [Y^2] = [M L^5 T^{-2}]$$\n<br/><br/>\nNow, since $Y$ and $b$ have the same dimensions and $Y$ represents volume, we have:\n<br/><br/>\n$$[b] = [L^3]$$\n<br/><br/>\nNow, let's find the dimensions of the ratio $\\frac{a}{b}$:\n<br/><br/>\n$$\\frac{[a]}{[b]} = \\frac{[M L^5 T^{-2}]}{[L^3]} = [M L^2 T^{-2}]$$\n<br/><br/>\nIndeed, the dimensions of $\\frac{a}{b}$ are $[M L^2 T^{-2}]$, which corresponds to the dimensions of energy.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lgnyfjcm",
@@ -897,7 +897,7 @@
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\n& v=\\lambda^{\\mathrm{a}} \\mathrm{g}^{\\mathrm{b}} \\rho^{\\mathrm{c}} \\\\\\\\\n& \\text {using dimension formula} \\\\\\\\\n& \\Rightarrow\\left[\\mathrm{M}^0 \\mathrm{~L}^1 \\mathrm{~T}^{-1}\\right]=\\left[\\mathrm{L}^1\\right]^{\\mathrm{a}}\\left[\\mathrm{L}^1 \\mathrm{~T}^{-2}\\right]^{\\mathrm{b}}\\left[\\mathrm{M}^1 \\mathrm{~L}^{-3}\\right]^{\\mathrm{c}} \\\\\\\\\n& \\Rightarrow\\left[\\mathrm{M}^0 \\mathrm{~L}^1 \\mathrm{~T}^{-1}\\right]=\\left[\\mathrm{M}^{\\mathrm{c}} \\mathrm{L}^{\\mathrm{a}+\\mathrm{b}-\\mathrm{c}} \\mathrm{T}^{-2 \\mathrm{~b}}\\right] \\\\\\\\\n& \\therefore \\mathrm{c}=0, \\mathrm{a}+\\mathrm{b}-3 \\mathrm{c}=1,-2 \\mathrm{~b}=-1 \\Rightarrow \\mathrm{b}=\\frac{1}{2} \\\\\\\\\n& \\text { Now } \\mathrm{a}+\\mathrm{b}-3 \\mathrm{c}=1 \\\\\\\\\n& \\Rightarrow \\mathrm{a}+\\frac{1}{2}-0=1 \\\\\\\\\n& \\Rightarrow \\mathrm{a}=\\frac{1}{2} \\\\\\\\\n& \\therefore \\mathrm{a}=\\frac{1}{2}, \\mathrm{~b}=\\frac{1}{2}, \\mathrm{c}=0\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldnwsfpv",
@@ -919,7 +919,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& {[\\mathrm{M}]=[\\mathrm{G}]^{\\mathrm{x}}[\\mathrm{h}]^{\\mathrm{y}}[\\mathrm{c}]^{\\mathrm{z}}} \\\\\\\\\n& {[\\mathrm{M}]=\\left[\\mathrm{M}^{-1} \\mathrm{~L}^3 \\mathrm{~T}^{-2}\\right]^x\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right]^y\\left[\\mathrm{LT}^{-1}\\right]^z} \\\\\\\\\n& {\\left[\\mathrm{M}^1 \\mathrm{~L}^0 \\mathrm{~T}^0\\right]=\\left[\\mathrm{M}^{-x+y}\\right]\\left[\\mathrm{L}^{3 x+2 y+z}\\right]\\left[\\mathrm{T}^{-2 x-y-z}\\right]} \\\\\\\\\n& \\mathrm{y}-\\mathrm{x}=1 ......(1) \\\\\\\\\n& 3 \\mathrm{x}+2 \\mathrm{y}+\\mathrm{z}=0 .......(2) \\\\\\\\\n& -2 \\mathrm{x}- \\mathrm{y}-\\mathrm{z}=0 ........(3)\n\\end{aligned}\n$$\n<br/><br/>On solving, $\\mathrm{x}=-\\frac{1}{2}, \\mathrm{y}=\\frac{1}{2}, \\mathrm{z}=\\frac{1}{2}$\n<br/><br/>So $\\mathrm{m}=\\sqrt{\\frac{\\mathrm{hc}}{\\mathrm{G}}}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldyef9zw",
@@ -941,7 +941,7 @@
     "difficulty": "easy",
     "solution": "(A) Planck's constant<br/><br/>\n$$\n\\begin{aligned}\n& \\mathrm{h} v=\\mathrm{E} \\\\\\\\\n& \\mathrm{h}=\\frac{\\mathrm{E}}{v}=\\frac{\\mathrm{M}^1 \\mathrm{~L}^2 \\mathrm{~T}^{-2}}{\\mathrm{~T}^{-1}}=\\mathrm{M}^1 \\mathrm{~L}^2 \\mathrm{~T}^{-1} \\quad...(\\text{III})\n\\end{aligned}\n$$<br/><br/>\n(B) $\\mathrm{E}=\\mathrm{qV}$<br/><br/>\n$$\nV=\\frac{E}{q}=\\frac{M^1 L^2 T^{-2}}{A^1 T^1}=M^1 L^2 T^{-3} A^{-1} \\text { (IV) }\n$$<br/><br/>\n(C) $\\phi($ work function $)=$ energy<br/><br/>\n$$\n=\\mathrm{M}^1 \\mathrm{~L}^2 \\mathrm{~T}^{-2} \\quad....(\\text{I})\n$$<br/><br/>\n(D) Momentum (p) = F.t<br/><br/>\n$$\n\\begin{aligned}\n& =\\mathrm{M}^1 \\mathrm{~L}^1 \\mathrm{~T}^{-2} \\mathrm{~T}^1 \\\\\\\\\n& =\\mathrm{M}^1 \\mathrm{~L}^1 \\mathrm{~T}^{-1} \\quad....(\\text{II})\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldtyxe4z",
@@ -963,7 +963,7 @@
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\n& \\mathrm{Y}=\\frac{\\text { Stress }}{\\text { Strain }}=\\frac{\\mathrm{F} / \\mathrm{A}}{\\Delta \\ell / \\ell}=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{\\left[\\mathrm{L}^2\\right]}=\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-2}\\right] \\\\\\\\\n& \\mathrm{F}=6 \\pi \\eta \\mathrm{rv} \\Rightarrow \\eta=\\frac{\\mathrm{F}}{6 \\pi \\mathrm{rv}} \\\\\\\\\n& {[\\eta]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{[\\mathrm{L}]\\left[\\mathrm{LT}^{-1}\\right]}=\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-1}\\right]} \\\\\\\\\n& \\mathrm{E}=\\mathrm{h} v \\Rightarrow \\mathrm{h}=\\frac{\\mathrm{E}}{v}=\\frac{\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{T}^{-1}\\right]}=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-1}\\right]\n\\end{aligned}\n$$<br/><br/>\nWork function has same dimension as that of energy, so $[\\phi]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2}\\right]$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lds9liqj",
@@ -985,7 +985,7 @@
     "difficulty": "easy",
     "solution": "<p>Here, At is distance, so dimensions of</p>\n<p>$$[At] = [x] = [L]$$</p>\n<p>Given. The dimensions of t is $$[\\mathrm{T^{-1}]}$$</p>\n<p>${\\left[A \\times \\mathrm{T}^{-1}\\right]=[\\mathrm{L}] \\Rightarrow[A]=[\\mathrm{LT}]}$</p>\n<p>$$\\left[ {{t \\over B}} \\right] = [y] = [L]$$</p>\n<p>$\\Rightarrow \\frac{\\mathrm{T}^{-1}}{[B]}=[L] \\Rightarrow B=\\left[\\mathrm{L}^{-1} \\mathrm{~T}^{-1}\\right]$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldsp679n",
@@ -1007,7 +1007,7 @@
     "difficulty": "easy",
     "solution": "Pressure gradient $=\\frac{d p}{d x}=\\frac{\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-2}\\right]}{[\\mathrm{L}]}$\n<br/><br/>\n$$\n=\\left[\\mathrm{M}^{1} \\mathrm{~L}^{-2} \\mathrm{~T}^{-2}\\right]\n$$\n<br/><br/>\nEnergy density $=\\frac{\\text { energy }}{\\text { volume }}=\\frac{\\left[\\mathrm{ML}^{2} \\mathrm{~T}^{-2}\\right]}{\\left[\\mathrm{L}^{3}\\right]}$\n<br/><br/>\n$$\n=\\left[\\mathrm{M}^{1} \\mathrm{~L}^{-1} \\mathrm{~T}^{-2}\\right]\n$$\n<br/><br/>\nElectric field $=\\frac{\\text { Force }}{\\text { ch arge }}=\\frac{\\left[\\text { MLT }^{-2}\\right]}{[\\text { A.T }]}$\n<br/><br/>\n$=\\left[\\mathrm{M}^{1} \\mathrm{~L}^{1} \\mathrm{~T}^{-3} \\mathrm{~A}^{-1}\\right]$\n<br/><br/>\nLatent heat $=\\frac{\\text { heat }}{\\text { mass }}=\\frac{\\left[\\mathrm{ML}^{2} \\mathrm{~T}^{-2}\\right]}{[\\mathrm{M}]}$\n<br/><br/>\n$=\\left[\\mathrm{M}^{0} \\mathrm{~L}^{2} \\mathrm{~T}^{-2}\\right]$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ldo74ikz",
@@ -1029,7 +1029,7 @@
     "difficulty": "easy",
     "solution": "$\\vec{L}=\\vec{r} \\times \\vec{p} \\Rightarrow[\\mathrm{L}]=\\left[\\mathrm{M}^{0} \\mathrm{~L}^{1} \\mathrm{~T}^{0}\\right]\\left[\\mathrm{M}^{1} \\mathrm{~L}^{1} \\mathrm{~T}^{-1}\\right]$\n\n<br/><br/>$$\n=\\left[\\mathrm{M}^{1} \\mathrm{~L}^{2} \\mathrm{~T}^{-1}\\right]\n$$\n\n<br/><br/>$$\n\\begin{aligned}\n\\vec{\\tau}=\\vec{r} \\times \\vec{F} \\Rightarrow[\\tau] & =\\left[\\mathrm{L}^{1}\\right]\\left[\\mathrm{MLT}^{-2}\\right] \\\\\\\\\n& =\\left[\\mathrm{ML}^{2} \\mathrm{~T}^{-2}\\right]\n\\end{aligned}\n$$\n\n<br/><br/>Stress $\\equiv$ Pressure $=\\frac{F}{A} \\Rightarrow[$ Stress $]=\\left[\\mathrm{ML}^{-1} \\mathrm{~T}^{-2}\\right]$\n\n<br/><br/>Pressure Gradient $=\\frac{d P}{d x} \\Rightarrow[$ Pressure Gradient $]$\n\n$$\n=\\left[\\mathrm{ML}^{-2} \\mathrm{~T}^{-2}\\right]\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh00yauq",
@@ -1051,7 +1051,7 @@
     "difficulty": "easy",
     "solution": "The term $\\frac{1}{\\mu_{0} \\epsilon_{0}}$ appears in the formula for the speed of light $c$, which is:\n<br/><br/>\n$c = \\sqrt{\\frac{1}{\\mu_{0} \\epsilon_{0}}}$\n<br/><br/>\nwhere $\\mu_{0}$ is the permeability of free space and $\\epsilon_{0}$ is the permittivity of free space. \n<br/><br/>\nThe speed of light $c$ has dimensions of length over time ($\\mathrm{L} / \\mathrm{T}$). Therefore, the term $\\frac{1}{\\mu_{0} \\epsilon_{0}}$ has dimensions equal to the square of the speed of light, which is $\\mathrm{L}^{2} / \\mathrm{T}^{2}$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5bbdwo9",
@@ -1073,7 +1073,7 @@
     "difficulty": "easy",
     "solution": "<p>Velocity gradient $$ = {{dv} \\over {dx}}$$</p>\n<p>$$\\Rightarrow$$ Dimensions are $${{[L{T^{ - 1}}]} \\over {[L]}} = [{T^{ - 1}}]$$</p>\n<p>Decay constant $$\\lambda$$ has dimensions of $$[{T^{ - 1}}]$$ because of the relation $${{dN} \\over {dt}} =  - \\lambda $$ N</p>\n<p>$$\\Rightarrow$$ Velocity gradient and decay constant have same dimensions.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5c2rikj",
@@ -1095,7 +1095,7 @@
     "difficulty": "easy",
     "solution": "<p>$$[S] = {{[C]} \\over {[m] \\times [\\Delta T]}}$$</p>\n<p>and, $$[L] = {{[Q]} \\over {[m]}}$$</p>\n<p>$$\\Rightarrow$$ They have different dimensions.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6dxrj4z",
@@ -1117,7 +1117,7 @@
     "difficulty": "medium",
     "solution": "<p>$$[\\eta ] = [M{L^{ - 1}}{T^{ - 1}}]$$</p>\n<p>Now if $$[\\eta ] = {[P]^a}{[A]^b}{[T]^c}$$</p>\n<p>$$ \\Rightarrow [M{L^{ - 1}}{T^{ - 1}}] = {[M{L^1}{T^{ - 1}}]^a}{[{L^2}]^b}{[T]^c}$$</p>\n<p>$$ \\Rightarrow a = 1,\\,a + 2b =  - 1,\\, - a + c =  - 1$$</p>\n<p>$$ \\Rightarrow a = 1,\\,b =  - 1,\\,c = 0$$</p>\n<p>$$ \\Rightarrow [\\eta ] = [P]{[A]^{ - 1}}{[T]^0}$$</p>\n<p>$$ = [P{A^{ - 1}}{T^0}]$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l58h9trw",
@@ -1139,7 +1139,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\because$$ $$U = {1 \\over 2}M{i^2}$$</p>\n<p>$$ \\Rightarrow [M] = {{[U]} \\over {[{i^2}]}} = {{M{L^2}{T^{ - 2}}} \\over {{A^2}}}$$</p>\n<p>$$ = [M{L^2}{T^{ - 2}}{A^{ - 2}}]$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l58b9vrj",
@@ -1161,7 +1161,7 @@
     "difficulty": "medium",
     "solution": "Given, $P=\\frac{\\alpha}{\\beta} \\log _{e}\\left[\\frac{k t}{\\beta x}\\right]$\n\n<br/><br/>The logarithmic term is dimensionless.\n\n<br/><br/>Thus, $[k t / \\beta x]$ is also dimensionless.\n\n<br/><br/>i.e. $\\frac{[k][t]}{[\\beta][x]}=\\left[\\mathrm{M}^{0} \\mathrm{~L}^{0} \\mathrm{~T}^{0}\\right]$ .......(i)\n\n<br/><br/>We have, $E=k t$\n\n<br/><br/>Thus, Eq. (i) becomes,\n\n<br/><br/>$$\n\\begin{array}{r}\n\\frac{\\left[\\mathrm{M}^{1} \\mathrm{~L}^{2} \\mathrm{~T}^{-2}\\right]}{[\\mathrm{\\beta}]\\left[\\mathrm{L}^{1}\\right]}=\\left[\\mathrm{M}^{0} \\mathrm{~L}^{0} \\mathrm{~T}^{0}\\right] \\\\\\\\\n{[\\beta]=\\left[\\mathrm{MLT}^{-2}\\right]}\n\\end{array}\n$$\n\n<br/><br/>Since, $P$ is also a dimensionless quantity.\n\n<br/><br/>$$\n\\begin{aligned}\n&\\frac{[\\alpha]}{[\\beta]}=\\left[\\mathrm{M}^{0} \\mathrm{~L}^{0} \\mathrm{~T}^{0}\\right] \\\\\\\\\n&{[\\alpha]=[\\beta]\\left[\\mathrm{M}^{0} \\mathrm{~L}^{0} \\mathrm{~T}^{0}\\right]} \\\\\\\\\n&{[\\alpha]=\\left[\\mathrm{M}^{1} \\mathrm{~L}^{1} \\mathrm{~T}^{-2}\\right]=\\left[\\mathrm{MLT}^{-2}\\right]}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6km9t7o",
@@ -1183,7 +1183,7 @@
     "difficulty": "medium",
     "solution": "<p>$$u = {\\alpha  \\over \\beta }\\sin \\left( {{{\\alpha x} \\over {kt}}} \\right)$$</p>\n<p>$$[\\alpha] = \\left[ {{{kt} \\over x}} \\right] = {{[Energy]} \\over {[Dis\\tan ce]}}$$</p>\n<p>$$[\\beta ] = {{[\\alpha ]} \\over {[u]}}$$</p>\n<p>$$ = {{[Energy]/[Dis\\tan ce]} \\over {[Energy]/[Volume]}}$$</p>\n<p>$$ = [{L^2}]$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l56ucya7",
@@ -1205,7 +1205,7 @@
     "difficulty": "easy",
     "solution": "<p>[pascal-second] = $${{ML{T^{ - 2}}} \\over {{L^2}}} \\times T$$</p>\n<p>$$ = M{L^{ - 1}}{T^{ - 1}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6npvqpp",
@@ -1227,7 +1227,7 @@
     "difficulty": "medium",
     "solution": "Since, dimensions trigonometric function and logarithmic function are dimensionless quantities.\n<br/><br/>$$\n\\therefore[\\eta]=\\left[\\mathrm{M}^0 \\mathrm{~L}^0 \\mathrm{~T}^0\\right]\n<br/><br/>$$\n<br/><br/>Also, dimensions of temperature, $[T]=\\left[\\mathrm{M}^0 \\mathrm{~L}^0 \\mathrm{~T}{ }^0 \\mathrm{~K}\\right]$\n<br/><br/>Dimensions of Boltzmann constant, $[k]=\\left[\\mathrm{ML}^2 \\mathrm{~T}^{-2} \\mathrm{~K}^{-1}\\right]$\n<br/><br/>Dimension of $x=\\left[\\mathrm{M}^0 \\mathrm{LT}^0\\right]$\n\n<br/><br/><p>(A) $$[\\beta ] = \\left[ {{{kT} \\over x}} \\right] = \\left[ {{E \\over x}} \\right] = [ML{T^{ - 2}}] = [F]$$</p>\n<p>(B) $$[\\alpha \\beta ] = [{M^0}{L^0}{T^0}]$$</p>\n<p>$${[\\alpha ]^{ - 1}} = [\\beta ] = \\left[ {{{kT} \\over x}} \\right]$$</p>\n<p>So $${[\\alpha ]^{ - 1}}[x] = [kT] = [M{L^2}{T^{ - 2}}]$$</p>\n<p>(C) $$\\eta \\sin \\theta  = \\alpha \\beta $$</p>\n<p>So $$[\\eta \\sin \\theta ] = [\\alpha \\beta ]$$</p>\n<p>$$[\\eta ] = [{M^0}{L^0}{T^0}]$$ it is dimensionless quantity</p>\n<p>(D) $$[\\alpha ] \\ne [\\beta ]$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6m9lzq0",
@@ -1249,7 +1249,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\left[ {{{{B^2}} \\over {{\\mu _0}}}} \\right]=$$ [Energy density]</p>\n<p>$$ = {{M{L^2}{T^{ - 2}}} \\over {{L^3}}} = M{L^{ - 1}}{T^{ - 2}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6p3y0nm",
@@ -1271,7 +1271,7 @@
     "difficulty": "easy",
     "solution": "We know,\n<br/><br/>$$\n\\begin{gathered}\n{[S]=\\left[\\mathrm{MT}^{-2}\\right]} \\\\\\\\\n{[\\rho]=\\left[\\mathrm{ML}^{-3}\\right]} \\\\\\\\\n{[r]=\\left[\\mathrm{L}]\\right.}\n\\end{gathered}\n$$\n<br/><br/>$$\n\\begin{aligned}\n\\therefore \\text { Dimension of } \\mathrm{RHS} &=\\frac{\\left[\\mathrm{M}^{\\frac{1}{2}} \\mathrm{~L}^{-\\frac{3}{2}}\\right]\\left[\\mathrm{L}^{\\frac{3}{2}}\\right]}{\\left[\\mathrm{MT}^{-2}\\right]^{\\frac{3}{4}}} \\\\\\\\\n&=\\left[\\mathrm{M}^{\\left(\\frac{1}{2}-\\frac{3}{4}\\right)} \\mathrm{L}^{\\left(-\\frac{3}{2}+\\frac{3}{2}\\right)} \\mathrm{T}^{\\frac{6}{4}}\\right]=\\mathrm{M}^{-\\frac{1}{4}} \\mathrm{~L}^{0} \\mathrm{~T}^{\\frac{3}{2}}\n\\end{aligned}\n$$\n<br/><br/>dimension of L.H.S. = $[\\mathrm{T}]$\n<br/><br/>$\\therefore$ Dimension of LHS $\\neq$ Dimension of RHS.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "l7g9ihgy",
@@ -1311,7 +1311,7 @@
     "difficulty": "medium",
     "solution": "$$m \\propto {t^a}{v^b}{l^c}$$<br><br>$$m \\propto {[T]^a}{[L{T^{ - 1}}]^b}{[M{L^2}{T^{ - 1}}]^c}$$<br><br>$${M^1}{L^0}{T^0} = {M^c}{L^{b + 2c}}{T^{a - b - c}}$$<br><br>comparing powers<br><br>c = 1, b = $$-$$2, a = $$-$$1<br><br>$$m \\propto {t^{ - 1}}{v^{ - 2}}{l^1}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wkrPtWXp8dheOeww7O1klri6brz",
@@ -1333,7 +1333,7 @@
     "difficulty": "medium",
     "solution": "where, k is Boltzmann constant,<br/><br/>T is temperature and x is displacement.<br/><br/>We know that, $${{{x^2}} \\over {\\alpha kT}}$$ is a dimensionless quantity.<br/><br/>$$\\therefore$$ $$\\left[ {{{{x^2}} \\over {\\alpha kT}}} \\right] = [{M^0}{L^0}{T^0}] \\Rightarrow [\\alpha ] = {{[{x^2}]} \\over {[k][T]}}$$<br/><br/>$$ \\Rightarrow [\\alpha ] = {{[{L^2}]} \\over {[k][T]}}$$ ..... (i)<br/><br/>Since, dimensions of k are<br/><br/>$$[k] = [{M^1}{L^2}{T^{ - 2}}{K^{ - 1}}]$$ ...... (ii)<br/><br/>Dimensions of temperature are<br/><br/>$$[T] = [K]$$ ..... (iii)<br/><br/>Substituting Eqs. (ii) and (iii) in Eq. (i), we get<br/><br/>$$[\\alpha ] = {{[{L^2}]} \\over {[{M^1}{L^2}{T^{ - 2}}{K^{ - 1}}][K]}}$$<br/><br/>$$[\\alpha ] = [{M^{ - 1}}{T^2}]$$<br/><br/>According to dimensional analysis,<br/><br/>$$[W] = [\\alpha {\\beta ^2}]$$<br/><br/>$$ \\Rightarrow [{\\beta ^2}] = {{[W]} \\over {[\\alpha ]}}$$<br/><br/>$$ \\Rightarrow [{\\beta ^2}] = {{{M^1}{L^2}{T^{ - 2}}]} \\over {[{M^{ - 1}}{T^2}]}} = [{M^2}{L^2}{T^{ - 4}}]$$<br/><br/>$$ \\Rightarrow [\\beta ] = [ML{T^{ - 2}}]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "NTDwUXVnzYf9Vp17zd1klt344f5",
@@ -1355,7 +1355,7 @@
     "difficulty": "medium",
     "solution": "Given <br><br>e = electronic charge<br><br>c = speed of light in free space<br><br>h = Planck's constant\n<br><br>We know, E = $${{hc} \\over \\lambda }$$\n<br><br>and $$F = {1 \\over {4\\pi {\\varepsilon _0}}}{{{q^2}} \\over {{d^2}}}$$ $$ \\Rightarrow $$ $${{{q^2}} \\over {4\\pi {\\varepsilon _0}}} = F{d^2}$$\n<br><br>$${1 \\over {4\\pi {\\varepsilon _0}}}{{{e^2}} \\over {hc}} $$\n<br><br>= $${{F{d^2}} \\over {E\\lambda }}$$\n<br><br>= $${{Fd.d} \\over {E\\lambda }}$$<br><br>= $${d \\over \\lambda }$$<br><br>$$ = $$ dimensionless<br><br>$$ = \\left[ {{M^0}{L^0}{T^0}} \\right]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "uInD6uieRdDlLVE1Vj1klrx8pev",
@@ -1377,7 +1377,7 @@
     "difficulty": "easy",
     "solution": "Kinetic Energy,<br><br>$${1 \\over 2}m{v^2} = [M{L^2}{T^{ - 2}}]$$<br><br>Momentum,<br><br>$$mv = [ML{T^{ - 1}}]$$<br><br>Plank constant :<br><br>$$E = h\\gamma $$<br><br>$$ \\Rightarrow M{L^2}{T^{ - 2}} = h \\times {1 \\over T}$$<br><br>$$ \\Rightarrow h = [M{L^2}{T^{ - 1}}]$$<br><br>Also, $$E = qV$$<br><br>$$ \\Rightarrow V = {{[M{L^2}{T^{ - 2}}]} \\over {[C]}} = [M{L^2}{T^{ - 2}}{C^{ - 1}}]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krw9mhlm",
@@ -1399,7 +1399,7 @@
     "difficulty": "easy",
     "solution": "$$[A] = [ML{T^{ - 2}}]$$<br><br>$$[B] = [{L^{ - 1}}]$$<br><br>$$[D] = [{T^{ - 1}}]$$<br><br>$$\\left[ {{{AD} \\over B}} \\right] = {{[ML{T^{ - 2}}][{T^{ - 1}}]} \\over {[{L^{ - 1}}]}}$$<br><br>$$\\left[ {{{AD} \\over B}} \\right] = [M{L^2}{T^{ - 3}}]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktbraocr",
@@ -1421,7 +1421,7 @@
     "difficulty": "easy",
     "solution": "(a) Magnetic Induction = MT<sup>$$-$$2</sup>A<sup>$$-$$1</sup><br><br>(b) Magnetic Flux = ML<sup>2</sup>T<sup>$$-$$2</sup>A<sup>$$-$$1</sup><br><br>(c) Magnetic Permeability = MLT<sup>$$-$$2</sup>A<sup>$$-$$2</sup><br><br>(d) Magnetization = M<sup>0</sup>L<sup>$$-$$1</sup>A",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktafapj6",
@@ -1443,7 +1443,7 @@
     "difficulty": "easy",
     "solution": "E = ML<sup>2</sup>T<sup>$$-$$2</sup><br><br>L = ML<sup>2</sup>T<sup>$$-$$1</sup><br><br>m = M<br><br>G = M<sup>$$-$$1</sup>L<sup>+3</sup>T<sup>$$-$$2</sup><br><br>P = $${{E{L^2}} \\over {{M^5}{G^2}}}$$<br><br>[P] = $${{(M{L^2}{T^{ - 2}})({M^2}{L^4}{T^{ - 2}})} \\over {{M^5}({M^{ - 2}}{L^6}{T^{ - 4}})}} = {M^0}{L^0}{T^0}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "11GkXBqmyuMqTqOwvf1kluld119",
@@ -1465,7 +1465,7 @@
     "difficulty": "easy",
     "solution": "$$\\lambda  = {C \\over V} = {{Q/V} \\over V} = {Q \\over {{V^2}}}$$<br><br>$$V = {{work} \\over Q}$$<br><br>$$\\lambda  = {{{Q^3}} \\over {{{(work)}^2}}} = {{{{(It)}^3}} \\over {{{(F.s)}^2}}}$$<br><br>$$ = {{\\left[ {{I^3}{T^3}} \\right]} \\over {{{\\left[ {M{L^2}{T^{ - 2}}} \\right]}^2}}} = [{M^{ - 2}}{L^{ - 4}}{I^3}{T^7}]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Wgp580uhw4Gc7CC3Si1kltil3pw",
@@ -1487,7 +1487,7 @@
     "difficulty": "easy",
     "solution": "kT has dimension of energy<br><br>$${{\\beta {x^2}} \\over {kT}}$$ is dimensionless<br><br>$$[\\beta ][{L^2}] = [M{L^2}{T^{ - 2}}]$$<br><br>$$[\\beta ] = [M{T^{ - 2}}]$$<br><br>$${\\alpha ^2}\\beta $$ has dimensions of work<br><br>$$[{\\alpha ^2}][M{T^{ - 2}}] = [M{L^2}{T^{ - 2}}]$$<br><br>$$[\\alpha ] = [{M^0}L{T^0}]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktfmwreu",
@@ -1509,7 +1509,7 @@
     "difficulty": "easy",
     "solution": "Density = [F<sup>a</sup>L<sup>b</sup>T<sup>c</sup>]<br><br>[ML<sup>$$-$$3</sup>] = [M<sup>a</sup>L<sup>a+b</sup>T<sup>$$-$$2a</sup>L<sup>b</sup>T<sup>c</sup>]<br><br>[M<sup>1</sup>L<sup>$$-$$3</sup>] = [M<sup>a</sup>L<sup>a+b</sup>T<sup>$$-$$2a+c</sup>]<br><br>$$\\matrix{\n   {a = 1} &amp; ; &amp; {a + b =  - 3} &amp; ; &amp; { - 2a + c = 0}  \\cr \n   {} &amp; {} &amp; {1 + b =  - 3} &amp; {} &amp; {c = 2a}  \\cr \n   {} &amp; {} &amp; {b =  - 4} &amp; {} &amp; {c = 2}  \\cr \n\n } $$<br><br>So, density = [F<sup>1</sup>L<sup>$$-$$4</sup>T<sup>2</sup>]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktdyiybr",
@@ -1531,7 +1531,7 @@
     "difficulty": "easy",
     "solution": "[$$\\mu$$<sub>r</sub>] = 1 as $$\\mu$$<sub>r</sub> = $${\\mu  \\over {{\\mu _m}}}$$<br><br>[power factor (cos $$\\phi$$)] = 1<br><br>$${\\mu _0} = {{{B_0}} \\over H}$$ (unit = NA<sup>$$-$$2</sup>) : Not dimensionless<br><br>[$$\\mu$$<sub>0</sub>] = [MLT<sup>$$-$$2</sup>A<sup>$$-$$2</sup>]<br><br>quality factor $$(Q) = {{Energy\\,stored} \\over {Energy\\,dissipated\\,per\\,cycle}}$$<br><br>So Q is unitless &amp; dimensionless.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktjoqnm5",
@@ -1553,7 +1553,7 @@
     "difficulty": "medium",
     "solution": "[M] = K[F]<sup>a</sup> [T]<sup>b</sup> [V]<sup>c</sup><br><br>[M<sup>1</sup>] = [M<sup>1</sup>L<sup>1</sup>T<sup>$$-$$2</sup>]<sup>a</sup> [T<sup>1</sup>]<sup>b</sup> [L<sup>1</sup>T<sup>$$-$$1</sup>]<sup>c</sup><br><br>a = 1, b = 1, c = $$-$$1<br><br>$$\\therefore$$ [M] = [FTV<sup>$$-$$1</sup>]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kth4i2zc",
@@ -1575,7 +1575,7 @@
     "difficulty": "easy",
     "solution": "torque $$\\tau$$ $$\\to$$ ML<sup>2</sup>T<sup>$$-$$2</sup> (iii)<br><br>Impulse I $$\\Rightarrow$$ MLT<sup>$$-$$1</sup> (i)<br><br>Tension force $$\\Rightarrow$$ MLT<sup>$$-$$2</sup> (iv)<br><br>Surface tension $$\\Rightarrow$$ MT<sup>$$-$$2</sup> (ii)<br><br>Option (a)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kth50gxo",
@@ -1597,7 +1597,7 @@
     "difficulty": "easy",
     "solution": "(a) $${{\\pi p{a^4}} \\over {8\\eta L}} = {{dv} \\over {dt}}$$ = Volumetric flow rate (Poiseuille's law)<br><br>(b) $$h\\rho g = {{2s} \\over r}\\cos \\theta $$<br><br>(c) $$\\varepsilon  \\times {1 \\over {4\\pi {\\varepsilon _0}}}{a \\over {{r^2}}} \\times {1 \\over \\varepsilon } = {q \\over t} \\times {1 \\over {{r^2}}}$$<br><br>$$ = {1 \\over {{L^2}}} = I{L^{ - 2}}$$<br><br>LHS<br><br>$$T = {I \\over A} = I{L^{ - 2}}$$<br><br>(d) W = $$\\tau$$$$\\theta$$<br><br>Option (a)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kudtrkh6",
@@ -1620,7 +1620,7 @@
     "solution": "Dimension of electric field $$[E] = [M{A^{ - 1}}L{T^{ - 3}}]$$<br/><br/>Dimensions of magnetic field [B]<br/><br/>$$[B] = [M{A^{ - 1}}L{T^{ - 2}}]$$<br/><br/>Dimensions of magnetic permebility<br/><br/>$$[{\\mu _0}] = [M{A^{ - 2}}{T^{ - 2}}L]$$<br/><br/>$$[S] = {{EB} \\over {{\\mu _0}}} = {{[M{A^{ - 1}}L{T^{ - 3}}][M{A^{ - 1}}{T^{ - 2}}]} \\over {[M{A^{ - 2}}{T^{ - 2}}L]}} = [M{T^{ - 3}}]$$",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "9xXhOwt4NVwxNno5zKjgy2xukfm34ysb",
@@ -1643,7 +1643,7 @@
     "solution": "$$[x] = {x^\\alpha } \\Rightarrow {p \\over v} = time$$<br><br>$$[v] = {x^\\beta }$$<br><br>$$[a] = {x^p} \\Rightarrow {v \\over a} = time$$<br><br>$$[p] = {x^q}$$<br><br>$$[F] = {x^r}$$<br><br>$$ \\Rightarrow \\left( {{{position} \\over {speed}}} \\right) = \\left( {{{speed} \\over {acceleration}}} \\right) = \\left( {{p \\over F}} \\right)$$<br><br>$$ \\Rightarrow {{{x^\\alpha }} \\over {{x^\\beta }}} = {{{x^\\beta }} \\over {{x^\\alpha }}} = {{{x^q}} \\over {{x^r}}}$$<br><br>$$ \\Rightarrow {x^{\\alpha  - \\beta }} = {x^{\\beta  - p}} = {x^{q - r}}$$<br><br>$$ \\therefore $$ $$\\alpha  - \\beta  = \\beta  - p = q - r$$<br><br>$$\\alpha  + p = 2\\beta $$<br><br>$$q + p = \\beta  + r$$<br><br>$$p + q - r = \\beta $$",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "nS9LaEzHUKxeuFS3z1jgy2xukexsdb2t",
@@ -1665,7 +1665,7 @@
     "difficulty": "easy",
     "solution": "Let\n\n[E] =\nK[P]<sup>x</sup>[A]<sup>y</sup> [T]<sup>z</sup>\n<br><br> [ML<sup>2</sup>T<sup>–2</sup>] = [MLT<sup>–1</sup>]<sup>x</sup>[L<sup>2</sup>]<sup>y</sup>[T]<sup>z</sup>\n\n<br><br>  [ML<sup>2</sup>T<sup>–2</sup>] = [M<sup>x</sup>][L<sup>x+2y</sup>][T<sup>–x+z</sup>]\n <br><br>Comparing both side we get,\n<br><br> x = 1\n<br><br> x + 2y = 2 <br><br>$$ \\Rightarrow $$ 1 + 2y= 2 or y = $$\\frac{1}{2} $$\n<br><br> z – x = –2 $$ \\Rightarrow $$ z–1 = –2 or z = –1\n<br><br>$$ \\therefore $$ [E] = $$\\left[ {P{A^{{1 \\over 2}}}{T^{ - 1}}} \\right]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "n5mZ89v3oYDnfYyg0Ujgy2xukev18nyc",
@@ -1687,7 +1687,7 @@
     "difficulty": "medium",
     "solution": "Y = k [F]<sup>x</sup>\n [A]<sup>y</sup>\n [V]<sup>z</sup>\n<br><br>[M<sup>1</sup>L<sup>1</sup>T\n<sup>–2</sup>] = [MLT<sup>–2</sup>]<sup>x</sup> [L<sup>2</sup>]<sup>y</sup> [LT<sup>–1</sup>]<sup>z</sup>\n<br><br>[M<sup>1</sup>L<sup>1</sup>T\n<sup>–2</sup>] = [M]<sup>x</sup> [L]<sup>x+2y+z</sup>[T]<sup>–2x–z </sup>\n<br><br>Comparing power of M, L and T\n<br><br>x = 1 ……(1)\n<br><br>x + 2y + z = –1 ……(2)\n<br><br>–2x – z = –2 ……(3)\n<br><br>After solving\n<br><br>x = 1\n<br><br>y = –1\n<br><br>z = 0\n<br><br>$$ \\therefore $$ Y = FA<sup>–1</sup>V<sup>0</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Bhfm22BXwbX94LoLY9jgy2xukf3rah8p",
@@ -1709,7 +1709,7 @@
     "difficulty": "easy",
     "solution": "Solar constant = $${E \\over {AT}}$$\n<br><br>= $${{\\left[ {{M^1}{L^2}{T^{ - 2}}} \\right]} \\over {\\left[ {{L^2}T} \\right]}}$$\n<br><br>= [ ML<sup>0</sup>T<sup>–3</sup> ]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "7xGT51VK2ieW0N0ftKjgy2xukfamk105",
@@ -1731,7 +1731,7 @@
     "difficulty": "easy",
     "solution": "x = $$\\left( {{{IF{v^2}} \\over {W{L^4}}}} \\right)$$\n<br><br>$$ \\therefore $$ [x] = $${{\\left[ {M{L^2}} \\right]\\left[ {ML{T^{ - 2}}} \\right]{{\\left[ {L{T^{ - 1}}} \\right]}^2}} \\over {\\left[ {M{L^2}{T^{ - 2}}} \\right]{{\\left[ L \\right]}^4}}}$$\n<br><br>= [ML<sup>-1</sup>T<sup>-2</sup>]\n<br><br>= [Energy density]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tKdPgxYEygdJoj7jfFjgy2xukf6j18rx",
@@ -1753,7 +1753,7 @@
     "difficulty": "easy",
     "solution": "$$ \\therefore $$ $${{d\\theta } \\over {dt}} = kA{{dT} \\over {dx}}$$\n<br><br>$$ \\Rightarrow $$ k = $${{\\left( {{{d\\theta } \\over {dt}}} \\right)} \\over {A\\left( {{{dT} \\over {dx}}} \\right)}}$$\n<br><br>$$ \\Rightarrow $$ [k] = $${{\\left[ {M{L^2}{T^{ - 3}}} \\right]} \\over {\\left[ {{L^2}} \\right]\\left[ {K{L^{ - 1}}} \\right]}}$$\n<br><br>= [MLT<sup>–3</sup>K<sup>–1</sup>]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "GziM0gxsRQMxENruUgjgy2xukfl1yz9k",
@@ -1775,7 +1775,7 @@
     "difficulty": "medium",
     "solution": "x = $${1 \\over {\\sqrt {{\\mu _0}{\\varepsilon _0}} }}$$ = speed\n<br><br>$$ \\therefore $$ [x] = [L<sup>1</sup>T<sup>–1</sup>]\n<br><br>y = $${E \\over B}$$ = speed\n<br><br>$$ \\therefore $$ [y] = [L<sup>1</sup>T<sup>–1</sup>]\n<br><br>z = $${l \\over {CR}}$$ = $${l \\over \\tau }$$\n<br><br>$$ \\Rightarrow $$ [z] = [L<sup>1</sup>T<sup>–1</sup>]\n<br><br>So, x, y, z all have the same dimensions.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "xEjU6Vvvmxsi4oBcxp7k9k2k5farxr8",
@@ -1797,7 +1797,7 @@
     "difficulty": "easy",
     "solution": "As $${{{B^2}} \\over {2{\\mu _0}}}$$ = Energy per unit volume\n<br><br>$$ \\therefore $$ Dimension = $${{M{L^2}{T^{ - 2}}} \\over {{L^3}}}$$ = ML<sup>-1</sup>T<sup>–2</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "VvLRXRNWzR6zCBsBJt7k9k2k5gvtufp",
@@ -1819,7 +1819,7 @@
     "difficulty": "medium",
     "solution": "V<sub>0</sub> $$ \\propto $$ h<sup>P</sup>c<sup>Q</sup>G<sup>R</sup>I<sup>S</sup>\n<br><br>[V<sub>0</sub>] = [M<sup>1</sup>L<sup>2</sup>T<sup>–3</sup>A<sup>–1</sup>]\n<br><br>[c] = [L<sup>1</sup>T<sup>–1</sup>]\n<br><br>[h] = [M<sup>1</sup>L<sup>2</sup>T<sup>–1</sup>]\n<br><br>[G] = [M<sup>–1</sup>L<sup>3</sup>T<sup>–2</sup>]\n<br><br>[I] = [A]\n<br><br>$$ \\therefore $$ [M<sup>1</sup>L<sup>2</sup>T<sup>–3</sup>A<sup>–1</sup>] =  [M<sup>P–R</sup> L<sup>2P+Q+3R</sup> T<sup>–P–Q–2R</sup> A<sup>S</sup>]\n<br><br>Comparing dimension of M, L, T, A, we get\n<br><br>P – R = 1 ; 2P + Q + 3R = 2\n<br><br>– P – Q – 2R = – 3 ; S = – 1\n<br><br>$$ \\Rightarrow $$ P = 0, Q = 5, R = –1, S = –1\n<br><br>$$ \\therefore $$ V<sub>0</sub> $$ \\propto $$ h<sup>0</sup> c<sup>5</sup> G<sup>-1</sup> A<sup>-1</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "qPVBPF82REXPyKsffg7k9k2k5i6hb7m",
@@ -1841,7 +1841,7 @@
     "difficulty": "easy",
     "solution": "[h] = M<sup>1</sup>L<sup>2</sup>T<sup>–1</sup>\n<br>[C] = L<sup>1</sup>T<sup>–1</sup>\n<br>[G] = M<sup>–1</sup>L<sup>3</sup>T<sup>–2</sup>\n<br><br>[f] = $$\\sqrt {{{M{L^2}{T^{ - 1}} \\times {L^5}{T^{ - 5}}} \\over {{M^{ - 1}}{L^3}{T^{ - 2}}}}} $$ = M<sup>1</sup>L<sup>2</sup>T<sup>–2</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IkxrAnrmblHnX3kEXK3rsa0w2w9jwz162jd",
@@ -1863,7 +1863,7 @@
     "difficulty": "easy",
     "solution": "Capacitance (C) = $${{{Q^2}} \\over {2E}}$$ = $${{\\left[ {{A^2}{T^2}} \\right]} \\over {\\left[ {M{L^2}{T^{ - 2}}} \\right]}}$$ = $$\\left[ {{M^{ - 1}}{L^{ - 2}}{T^4}{A^2}} \\right]$$ X\n<br><br>Magnetic field (B) = $${F \\over {IL}}$$ = $${{\\left[ {ML{T^{ - 2}}} \\right]} \\over {\\left[ A \\right]\\left[ L \\right]}}$$ = $${\\left[ {M{T^{ - 2}}{A^{ - 1}}} \\right]}$$ = Z\n<br><br>Given,\n<br><br>X = 5YZ<sup>2</sup>\n<br><br>$$ \\therefore $$ Y = $${X \\over {5{Z^2}}}$$\n<br><br>[Y] = $${{\\left[ {{M^{ - 1}}{L^{ - 2}}{T^4}{A^2}} \\right]} \\over {{{\\left[ {M{T^{ - 2}}{A^{ - 1}}} \\right]}^2}}}$$\n<br><br>$$ \\therefore $$ [Y] =  [M<sup>–3</sup>L<sup>–2</sup>T<sup>8</sup>A<sup>4</sup>]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "At9P01Is6s69OyEoECX4d",
@@ -1885,7 +1885,7 @@
     "difficulty": "medium",
     "solution": "$$F = \\alpha \\beta {e^{\\left( {{{ - {x^2}} \\over {\\alpha KT}}} \\right)}}$$\n<br><br>$$\\left[ {{{{x^2}} \\over {\\alpha KT}}} \\right] = {M^o}{L^o}{T^o}$$\n<br><br>$${{{L^2}} \\over {\\left[ \\alpha  \\right]M{L^2}{T^{ - 2}}}}$$ $$=$$ $${M^o}{L^o}{T^o}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$\\left[ \\alpha  \\right] = {M^{ - 1}}{T^2}$$\n<br><br>$$\\left[ F \\right] = \\left[ \\alpha  \\right]\\left[ \\beta  \\right]$$\n<br><br>MLT<sup>$$-$$2</sup> = M<sup>$$-$$1</sup>T<sup>2</sup>[$$\\beta $$]\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;[$$\\beta $$] = M<sup>2</sup>LT<sup>$$-$$4</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "TSlvOuUar7yzKEyuix3rsa0w2w9jx3p37sc",
@@ -1907,7 +1907,7 @@
     "difficulty": "medium",
     "solution": "According to Coulomb's law\n<br><br>F = $${1 \\over {4\\pi { \\in _0}}}{{{q^2}} \\over {{r^2}}}$$\n<br><br>$$ \\therefore $$ $${ \\in _0} = {1 \\over {4\\pi }}{{{q^2}} \\over {F{r^2}}}$$\n<br><br>$$\\left[ {{ \\in _0}} \\right] = {{{{\\left[ {AT} \\right]}^2}} \\over {\\left[ {ML{T^{ - 2}}} \\right]\\left[ {{L^2}} \\right]}}$$ = $$\\left[ {{M^{ - 1}}{L^{ - 3}}{T^4}{A^2}} \\right]$$\n<br><br>Force between two parallel current carrying wires,\n<br><br>$${F \\over L} = {{{\\mu _0}} \\over {2\\pi }}{{{i^2}} \\over r}$$\n<br><br>$$ \\therefore $$ $${{\\mu _0}}$$ = $${{2\\pi rF} \\over {{i^2}L}}$$\n<br><br>$$\\left[ {{\\mu _0}} \\right] = {{\\left[ L \\right]\\left[ {ML{T^{ - 2}}} \\right]} \\over {\\left[ {{A^2}} \\right]\\left[ L \\right]}}$$ = $$\\left[ {ML{T^{ - 2}}{A^{ - 2}}} \\right]$$\n<br><br>From Ohm's law,\n<br><br>V = IR\n<br><br>$$ \\therefore $$ $$R = {V \\over I}$$ $$ = {U \\over {It}} \\times {1 \\over I}$$\n<br><br>[R] = $${{\\left[ U \\right]} \\over {{{\\left[ I \\right]}^2}\\left[ t \\right]}}$$ = $${{\\left[ {M{L^2}{T^{ - 2}}} \\right]} \\over {\\left[ {{A^2}} \\right]\\left[ T \\right]}}$$ = $$\\left[ {M{L^2}{T^{ - 3}}{A^{ - 2}}} \\right]$$\n<br><br>Let, R $$ \\propto $$ $${\\left[ {{ \\in _0}} \\right]^a}{\\left[ {{\\mu _0}} \\right]^b}$$\n<br><br>$$ \\Rightarrow $$ $$\\left[ {M{L^2}{T^{ - 3}}{A^{ - 2}}} \\right]$$ = \n<br><br>$$\\left[ {{M^{ - 1}}{L^{ - 3}}{T^4}{A^2}} \\right]$$<sup>$$a$$</sup> $$\\left[ {ML{T^{ - 2}}{A^{ - 2}}} \\right]$$<sup>b</sup>\n<br><br>$$ \\Rightarrow $$ $$\\left[ {M{L^2}{T^{ - 3}}{A^{ - 2}}} \\right]$$ = \n<br><br>[ M<sup>-$$a$$ + b</sup> L<sup>-3$$a$$ + b</sup> T<sup>4$$a$$ - 2b</sup> A<sup>2$$a$$ - 2b</sup> ]\n<br><br>By comparing both sides we get,\n<br><br>- $$a$$ + b = 1\n<br><br>- 3$$a$$ + b = 2\n<br><br>By solving we get,\n<br><br>$$a$$ = $$ - {1 \\over 2}$$ and b = $${1 \\over 2}$$\n<br><br>$$ \\therefore $$ R = $${\\left[ {{ \\in _0}} \\right]^{ - {1 \\over 2}}}{\\left[ {{\\mu _0}} \\right]^{{1 \\over 2}}}$$\n= $$\\sqrt {{{{\\mu _0}} \\over {{ \\in _0}}}} $$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0DIhSkOruKebYWI5WN7Ko",
@@ -1929,7 +1929,7 @@
     "difficulty": "medium",
     "solution": "We know,\n<br><br>surface tension (S) = $${F \\over L}$$ = $${{\\left[ {ML{T^{ - 2}}} \\right]} \\over {\\left[ L \\right]}}$$\n<br><br>$$ \\therefore $$ [S] = $${\\left[ {M{T^{ - 2}}} \\right]}$$\n<br><br>Moment of inertia (I) = mr<sup>2</sup>\n<br><br>$$ \\therefore $$ [I] = $${\\left[ {M{L^2}} \\right]}$$\n<br><br>Planck's constant (h) = $${E \\over f}$$ = Et\n<br><br>$$ \\therefore $$ [h] = $${\\left[ {M{L^2}{T^{ - 1}}} \\right]}$$\n<br><br>Also linear momentum (p) = mv = $${\\left[ {ML{T^{ - 1}}} \\right]}$$\n<br><br>Now we have to express p in terms of s, I and h.\n<br><br>$$ \\therefore $$ Let, [P] = [S<sup>a</sup> I<sup>b</sup> h<sup>c</sup>]\n<br><br>$$ \\Rightarrow $$ $${\\left[ {ML{T^{ - 1}}} \\right]}$$ = $${\\left[ {M{T^{ - 2}}} \\right]}$$<sup>a</sup> $${\\left[ {M{L^2}} \\right]}$$<sup>b</sup> $${\\left[ {M{L^2}{T^{ - 1}}} \\right]}$$<sup>c</sup>\n<br><br>$$ \\Rightarrow $$ $${\\left[ {ML{T^{ - 1}}} \\right]}$$ = [ M<sup>a + b + c</sup> L<sup>2b +2c</sup> T<sup>- 2a - c</sup> ]\n<br><br>By comparing the dimensions of both sides, we get\n<br><br>a + b + c = 1  .........(1)\n<br><br>2b +2c = 1  ..............(2)\n<br><br>- 2a - c = -1   ...................(3)\n<br><br>By solving those three equations we get,\n<br><br>a = $${1 \\over 2}$$\n<br><br>b = $${1 \\over 2}$$\n<br><br>c = 0\n<br><br>$$ \\therefore $$  linear momentum [p] = [S<sup>1/2</sup>I<sup>1/2</sup>h<sup>0</sup>]\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "8DDJsTM9iQCh6lkfIOp6z",
@@ -1951,7 +1951,7 @@
     "difficulty": "easy",
     "solution": "$$\\sqrt {{{{ \\in _0}} \\over {{\\mu _0}}}} $$ = $${{{ \\in _0}} \\over {\\sqrt {{\\mu _0}{ \\in _0}} }}$$ = c $$ \\times $$ $${{ \\in _0}}$$\n<br><br>$$ \\therefore $$ $$\\left[ {\\sqrt {{{{ \\in _0}} \\over {{\\mu _0}}}} } \\right]$$ = $$\\left[ {L{T^{ - 1}}} \\right] \\times \\left[ {{ \\in _0}} \\right]$$\n<br><br>We know, F = $${1 \\over {4\\pi { \\in _0}}}{{{q^2}} \\over {{r^2}}}$$\n<br><br>$$ \\therefore $$ $${ \\in _0} = {{{q^2}} \\over {4\\pi {r^2}F}}$$\n<br><br>$$ \\Rightarrow $$ $$\\left[ {{ \\in _0}} \\right] = {{{{\\left[ {AT} \\right]}^2}} \\over {\\left[ {ML{T^{ - 2}}} \\right] \\times \\left[ {{L^2}} \\right]}}$$ = $$\\left[ {{A^2}{M^{ - 1}}{L^{ - 3}}{T^4}} \\right]$$\n<br><br>$$ \\therefore $$ $$\\left[ {\\sqrt {{{{ \\in _0}} \\over {{\\mu _0}}}} } \\right]$$ = $$\\left[ {L{T^{ - 1}}} \\right]$$ $$ \\times $$ $$\\left[ {{A^2}{M^{ - 1}}{L^{ - 3}}{T^4}} \\right]$$\n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= [A<sup>2</sup>T<sup>3</sup>M<sup>–1</sup>L<sup>–2</sup>]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "f9L3qCp6iK7QkgvEWnmj6",
@@ -1973,7 +1973,7 @@
     "difficulty": "medium",
     "solution": "Let t $$ \\propto $$ G<sup>x</sup> h<sup>y</sup> c<sup>z</sup>\n<br><br>$$ \\therefore $$&nbsp;&nbsp; [t] = [G]<sup>x</sup>  [h]<sup>y</sup>  [c]<sup>z</sup>&nbsp;&nbsp;&nbsp;&nbsp;. . . . . (1)\n<br><br>We know, \n<br><br>F = $${{G{M^2}} \\over {{R^2}}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;G = $${{F{R^2}} \\over {{M^2}}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;[G] = $${{\\left[ {ML{T^{ - 2}}} \\right]\\left[ {{L^2}} \\right]} \\over {\\left[ {{M^2}} \\right]}}$$\n<br><br>[G] = $$[{M^{ - 1}}{L^3}{T^{ - 2}}]$$\n<br><br>Also,\n<br><br>E = hf\n<br><br>$$ \\therefore $$&nbsp;&nbsp;[h] = $${{[E]} \\over {[F]}}$$\n<br><br>= $${{\\left[ {M{L^2}{T^{ - 2}}} \\right]} \\over {[{T^{ - 1}}]}}$$\n<br><br>= $$\\left[ {M{L^2}{T^{ - 1}}} \\right]$$\n<br><br>[C] = $$\\left[ {{M^o}L\\,{T^{ - 1}}} \\right]$$\n<br><br>From equation (1) we get, \n<br><br>$$\\left[ {{M^o}\\,{L^o}\\,{T^1}} \\right] = {\\left[ {{M^{ - 1}}\\,{L^3}\\,{T^{ - 2}}} \\right]^x}{\\left[ {M\\,{L^2}\\,{T^{ - 1}}} \\right]^y}{\\left[ {{M^o}L{T^{ - 1}}} \\right]^z}$$\n<br><br>$$\\left[ {{M^o}\\,{L^o}\\,{T^1}} \\right] = \\left[ {{M^{ - x + y}}\\,{L^{3x + 2yz}}\\,{T^{ - 2x - y - z}}} \\right]$$\n<br><br>By comparing the power of M, L, T\n<br><br>$$-$$ x + y = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;x = y\n<br><br>3x + 2y + z = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;5x + z = 0 . . . . .                  (2)\n<br><br>$$-$$ 2x $$-$$ y $$-$$ z = 1\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$-$$ 3x $$-$$ z = 1 &nbsp;. . . . (3)\n<br><br>By solving (2) and (3), we get,\n<br><br>x = $${1 \\over 2}$$ = y  and z = $$-$$ $${5 \\over 2}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;t $$ \\propto $$ $$\\sqrt {{{Gh} \\over {{C^5}}}} $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "2lYPc9yvA2f6HHSJvpQTT",
@@ -1995,7 +1995,7 @@
     "difficulty": "medium",
     "solution": "Plank length, \n<br><br>$$\\ell $$ = k G<sup>p</sup> $$\\hbar $$<sup>q</sup> C<sup>r</sup>\n<br><br>[ M<sup>o</sup> L T<sup>o</sup>] = [ M<sup>$$-$$1</sup> L<sup>3</sup> T<sup>$$-$$2</sup> ]<sup>p</sup>  [ M L<sup>2</sup> T<sup>$$-$$1</sup>] <sup>q</sup> [ L T<sup>$$-$$1</sup>]<sup>r</sup>\n<br><br>[M<sup>o</sup> L T<sup>o</sup> ] = [M<sup>$$-$$p + q</sup> L<sup>(3p + 2q + r)</sup> T<sup>$$-$$(2p + q + r)</sup>]\n<br><br>Comparing both sides,\n<br><br>$$-$$ p + q = 0\n<br><br>3p + 2q + r = 1\n<br><br>$$-$$ (2p + q + r) = 0\n<br><br>Solving those equation we get, \n<br><br>p = $${1 \\over 2},$$ q = $${1 \\over 2},$$ $$r =  - {3 \\over 2}$$\n<br><br>$$\\therefore\\,\\,\\,$$ $$\\ell $$ = k G$${^{{1 \\over 2}}}$$ $${\\hbar ^{{1 \\over 2}}}$$ $${C^{ - {3 \\over 2}}}$$\n<br><br>= $${\\left( {{{G\\hbar } \\over {{C^3}}}} \\right)^{{1 \\over 2}}}$$\n<br><br>(assume k = 1)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "eRl9cqE9A6KmAZfB9BBZI",
@@ -2017,7 +2017,7 @@
     "difficulty": "medium",
     "solution": "Let, \n<br><br>M $$ \\propto $$ T<sup>x</sup> C<sup>y</sup> h<sup>z</sup>\n<br><br>$$\\therefore\\,\\,\\,$$ [M<sup>1</sup>L<sup>o</sup>T<sup>o</sup>] &nbsp;= &nbsp;[T<sup>1</sup>]<sup>x</sup>&nbsp; [L<sup>1</sup> T<sup>$$-$$1</sup>]<sup>y</sup> &nbsp;[M<sup>1</sup>L<sup>2</sup>T<sup>$$-$$1</sup>]<sup>z</sup>\n<br><br>[M<sup>1</sup>L<sup>o</sup> T<sup>o</sup>]&nbsp;  = &nbsp;[M<sup>z</sup> L<sup>y + 2z</sup> T<sup>x$$-$$y$$-$$z</sup>]\n<br><br>By comparing both sides we get, \n<br><br>z = 1\n<br><br>y + 2z = 0\n<br><br>x $$-$$ y $$-$$ z = 0\n<br><br>$$\\therefore\\,\\,\\,$$ y = $$-$$ 2z = $$-$$ 2\n<br><br>x = y + z = $$-$$2 + 1 = $$-$$1\n<br><br>$$\\therefore\\,\\,\\,$$ [M] = [M<sup>$$-$$1</sup> C<sup>$$-$$2</sup> h<sup>1</sup>]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "NSgxdgBF8MOq9WrO",
@@ -2040,7 +2040,7 @@
     "solution": "$$[n] = [{L^{ - 3}}];[q] = [AT]$$<br><br>$$[\\varepsilon ] = [{M^{ - 1}}{L^{ - 3}}{A^2}{T^4}]$$<br><br>$$[T] = [L]$$<br><br>$$[l] = [L]$$<br><br>$$[{k_B}] = [{M^1}{L^2}{T^{ - 2}}{K^{ - 1}}]$$<br><br>(a) RHS<br><br>$$ = \\sqrt {{{[{L^{ - 3}}{A^2}{T^2}]} \\over {[{M^{ - 1}}{L^{ - 3}}{T^4}{A^2}][{M^1}{L^2}{T^{ - 2}}{K^{ - 1}}][K]}}} $$<br><br>$$ = \\sqrt {{{[{L^{ - 3}}{A^2}{T^2}]} \\over {[{L^{ - 1}}{A^2}{T^2}]}}}  = \\sqrt {[{L^{ - 2}}]}  = [{L^{ - 1}}]$$ Wrong<br><br>(b) RHS<br><br>$$ = \\sqrt {{{[{M^{ - 1}}{L^{ - 3}}{T^4}{A^2}][{M^1}{L^2}{T^{ - 2}}{K^{ - 1}}][K]} \\over {[{L^{ - 3}}{A^2}{T^2}]}}} $$<br><br>$$ = \\sqrt {{{[{L^{ - 1}}{A^2}{T^2}]} \\over {[{L^{ - 3}}{A^2}{T^2}]}}}  = L$$ Correct<br><br>(c) RHS<br><br>$$ = \\sqrt {{{[{A^2}{T^2}]} \\over {[{M^{ - 1}}{L^{ - 3}}{T^4}{A^2}][{L^{ - 2}}][{M^1}{L^2}{T^{ - 2}}{K^{ - 1}}][K]}}} $$<br><br>$$ = \\sqrt {[{L^3}]} $$ Wrong<br><br>(d) RHS<br><br>$$ = \\sqrt {{{[{A^2}{T^2}]} \\over {[{M^{ - 1}}{L^{ - 3}}{T^4}{A^2}][{L^{ - 1}}][{M^1}{L^2}{T^{ - 2}}{K^{ - 1}}][K]}}} $$<br><br>$$ = \\sqrt {{{[{A^2}{T^2}]} \\over {[{L^{ - 2}}{T^2}{A^2}]}}}  = [L]$$ Correct",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "JKiVgY5u6sdsLyeSDGYdB",
@@ -2062,7 +2062,7 @@
     "difficulty": "medium",
     "solution": "Given, \n<br><br>AD = c ln (BD)\n<br><br>As log is dimensionless.\n<br><br>So,  [BD] = 1 &nbsp;&nbsp;$$ \\Rightarrow $$&nbsp;&nbsp;[B] = $${1 \\over {\\left[ D \\right]}}$$\n<br><br>And&nbsp;&nbsp;[AD] = [C]\n<br><br>Now checking  options one by one\n<br><br>(a)&nbsp;&nbsp;&nbsp;[B<sup>2</sup> C<sup>2</sup>] = [B<sup>2</sup>] [A<sup>2</sup> D<sup>2</sup>] = [A<sup>2</sup>] [B<sup>2</sup> D<sup>2</sup>] = [A<sup>2</sup>]\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;This is meaningful.\n<br><br>(b)&nbsp;&nbsp;&nbsp;$$\\left( {{{A - C} \\over D}} \\right)$$ is not meaningful.\n<br><br>As dimension of A $$ \\ne $$ dimension of C\n<br><br>Hence (A $$-$$ C) &nbsp;&nbsp;is not possible.\n<br><br>(c)&nbsp;&nbsp;&nbsp;$$\\left[ {{A \\over B}} \\right]$$ = [AD] = [C]\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$${{A \\over B}}$$ $$-$$ C is meaningful.\n<br><br>(d)&nbsp;&nbsp;&nbsp;$$\\left[ {{C \\over {BD}}} \\right]$$ = $${{\\left[ C \\right]} \\over {\\left[ {BD} \\right]}}$$ = $${{\\left[ C \\right]} \\over 1}$$ = [C]\n<br><br>$$\\left[ {{{A{D^2}} \\over C}} \\right]$$ = $${{\\left[ {AD} \\right]\\left[ D \\right]} \\over {\\left[ C \\right]}}$$ = $${{\\left[ C \\right]\\left[ D \\right]} \\over {\\left[ C \\right]}}$$ = [D]\n<br><br>As dimension  of C and D are not same so it is not meaning ful. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "a0Oc15SkQSAm3RCpyzXhr",
@@ -2084,7 +2084,7 @@
     "difficulty": "easy",
     "solution": "We know. resistivity ($$\\rho $$) = $${{RA} \\over L}$$\n<br><br>and conductivity = $${1 \\over \\rho }$$ = $${1 \\over {RA}}$$\n<br><br>As&nbsp;&nbsp;&nbsp;R = $${V \\over {\\rm I}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;conductivity = $${{L{\\rm I}} \\over {VA}}$$\n<br><br>Also&nbsp;&nbsp;V = $${\\omega  \\over q}$$ = $${\\omega  \\over {it}}$$ = $${{\\left[ {M{L^2}{T^{ - 2}}} \\right]} \\over {\\left[ {\\rm I} \\right]\\left[ T \\right]}}$$ = $$\\left[ {M{L^2}{T^{ - 3}}{{\\rm I}^{ - 1}}} \\right]$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Conductivity = $${{\\left[ {\\rm{L}} \\right]\\left[ {\\rm I} \\right]} \\over {\\left[ {M{L^2}{T^{ - 3}}{{\\rm{I}}^{ - 1}}} \\right]\\left[ {{L^2}} \\right]}}$$\n<br><br>=&nbsp;&nbsp;&nbsp;$$\\left[ {{M^{ - 1}}{L^{ - 3}}{T^3}{{\\rm I}^2}} \\right]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "YyZe0eX0MZyekSBs",
@@ -2107,7 +2107,7 @@
     "solution": "<p>The dimensions of Planck's constant is $$h = [{M^1}{L^3}{T^{ - 2}}]$$</p>\n<p>Speed of light is $$c = [{L^1}{T^{ - 1}}]$$</p>\n<p>Gravitational constant is $$G = [{M^{ - 1}}{L^3}{T^{ - 2}}]$$</p>\n<p>Let $$L \\propto {h^x}{c^y}{G^z}$$.</p>\n<p>$$[L] = {[{M^1}{L^2}{T^{ - 1}}]^x}{[{L^1}{T^{ - 1}}]^y}{[{M^{ - 1}}{L^3}{T^{ - 2}}]^z}$$</p>\n<p>Comparing, we get</p>\n<p>$$\\left. {\\matrix{\n   \\hfill {x - z = 0} \\cr \n   \\hfill {2x + y + 3z = 1} \\cr \n   \\hfill { - x - y - 2z = 0} \\cr \n\n } } \\right\\}$$</p>\n<p>Solving, we get</p>\n<p>$$x = z$$</p>\n<p>$$y + 5x = 1$$</p>\n<p>$$ - y - 3x = 0$$</p>\n<p>or, $$2x = 1$$</p>\n<p>$$x = {1 \\over 2} = z$$</p>\n<p>$$y =  - {3 \\over 2}$$</p>\n<p>Therefore,</p>\n<p>$$L \\propto {h^{1/2}}{C^{ - 3/2}}{G^{1/2}}$$</p>\n<p>$$L \\propto \\sqrt h $$</p>\n<p>$$L \\propto \\sqrt G $$</p>\n<p>Let $$M \\propto {h^a}{C^b}{G^c}$$</p>\n<p>$$[M] = {[{M^1}{L^2}{T^{ - 1}}]^a}{[{L^1}{T^{ - 1}}]^b}{[{M^{ - 1}}{L^3}{T^{ - 2}}]^c}$$</p>\n<p>Comparing, we get $$a - c = 1$$.</p>\n<p>$$\\left. \\matrix{\n  2a + b + 3c = 0 \\hfill \\cr \n   - a - b - 2c = 0 \\hfill \\cr}  \\right\\}a + c = 0$$</p>\n<p>Therefore,</p>\n<p>$$2a = 1$$</p>\n<p>$$a = {1 \\over 2}$$</p>\n<p>$$c =  - {1 \\over 2}$$</p>\n<p>$$b = {1 \\over 2}$$</p>\n<p>Therefore,</p>\n<p>$$M \\propto {h^{1/2}}{c^{1/2}}{G^{ - 1/2}}$$</p>\n<p>$$M \\propto \\sqrt c $$</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "whzHcybAibpIM7my",
@@ -2125,7 +2125,7 @@
     "solution": "<p>Given $$d \\propto {\\rho ^a}{S^b}{b^c}$$</p>\n<p>$${M^0}L{T^0} \\propto {(M{L^{ - 3}})^a}{(M{T^{ - 3}})^b}{({T^{ - 1}})^c}$$</p>\n<p>$${M^0}L{T^0} \\propto {M^{(a + b)}}{L^{ - 3a}}{T^{ - 3b - c}}$$</p>\n<p>Equating the coefficients, we get</p>\n<p>$$a + b = 0 - 3a = 1 - 3b - c = 0$$</p>\n<p>$$b =  - a$$ $$a =  - {1 \\over 3} - c = 3b$$</p>\n<p>$$b = {1 \\over 3}c =  - 3b \\Rightarrow c = 1$$</p>\n<p>Therefore, $$b = {1 \\over n} = {1 \\over 3} \\Rightarrow n = 3$$.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "JsYfxzWCG2nBVfIp",
@@ -2147,7 +2147,7 @@
     "difficulty": "easy",
     "solution": "From Coulomb's law we know,\n<br><br>$$F = {1 \\over {4\\pi { \\in _0}}}{{{q_1}{q_2}} \\over {{r^2}}}$$\n<br><br>$$\\therefore$$ $${ \\in _0} = {1 \\over {4\\pi }}{{{q_1}{q_2}} \\over {F{r^2}}}$$\n<br><br>Hence, $$\\left[ {{ \\in _0}} \\right] = {{\\left[ {AT} \\right]\\left[ {AT} \\right]} \\over {\\left[ {ML{T^{ - 2}}} \\right]\\left[ {{L^2}} \\right]}}$$\n<br><br>= $$\\left[ {{M^{ - 1}}{L^{ - 3}}{T^4}{A^2}} \\right]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "vKN4F98zXejlgqUZ",
@@ -2169,7 +2169,7 @@
     "difficulty": "easy",
     "solution": "We know that, <br>Lorentz force $$\\left| {\\overrightarrow F } \\right| = \\left| {q\\overrightarrow v  \\times \\overrightarrow B } \\right|$$<br><br>\n$$\\therefore [B] $$ = $${[F] \\over {[q][v]}}$$ = $${[{ML{T^{ - 2}}]} \\over {[C] \\times [L{T^{ - 1}}]}}$$ = [$$M{T^{ - 1}}{C^{ - 1}}$$]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IBkMPPxNIloJY8cD",
@@ -2191,7 +2191,7 @@
     "difficulty": "easy",
     "solution": "Moment of inertia, I = Mr<sup>2</sup><br><br>\n$$\\therefore$$ [I] = [ML<sup>2</sup>]<br><br>\nMoment of force, $$\\overrightarrow \\tau   = \\overrightarrow r  \\times \\overrightarrow F $$<br><br>\n$$\\therefore$$ $$[\\overrightarrow \\tau  ]$$ = $$[L][ML{T^{ - 2}}]$$ = $$[ML^{ 2}{T^{ - 2}}]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lvCcEFmK67vPwsNI",
@@ -2213,7 +2213,7 @@
     "difficulty": "easy",
     "solution": "From stokes law, Viscous force F = $$6\\pi \\eta rv$$ <br><br>$$ \\Rightarrow \\eta  = {F \\over {6\\pi rv}}$$<br><br>\n$$\\therefore$$ $$[\\eta] = {[{ML{T^{ - 2}}]} \\over {[L][L{T^{ - 1}}]}}$$ <br><br>$$ \\Rightarrow [\\eta]  = [M{L^{ - 1}}{T^{ - 1}}]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "02536sILFKVDSkVh",
@@ -2235,7 +2235,7 @@
     "difficulty": "easy",
     "solution": "Momentum = mv = [$${M{L}{T^{ - 1}}}$$]<br><br>\nPlanck's constant, h = $${E \\over v}$$ = $${[{M{L^2}{T^{ - 2}]}} \\over {[{T^{ - 1}}]}}$$ = $$[{M{L^2}{T^{ - 1}}}]$$\n<br><br>So Momentum and Planck's constant do not have same dimensions.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "07Fb9a0w1SWCOyMV",
@@ -2257,7 +2257,7 @@
     "difficulty": "easy",
     "solution": "The velocity of light in vacuum is <br><br>\nc = $${1 \\over {\\sqrt {{\\mu _0}{\\varepsilon _0}} }}$$; <br><br>\n$$\\therefore[{1 \\over {{\\mu _0}{\\varepsilon _0}}}]$$ = [c<sup>2</sup>] = [L<sup>2</sup>T<sup>-2</sup>]\n<br><br>$$\\therefore$$ Dimension of $${1 \\over {{\\mu _0}{\\varepsilon _0}}}$$ = [L<sup>2</sup>T<sup>-2</sup>]",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "vFMPNzyqwdwRNs7q",
@@ -2279,6 +2279,6 @@
     "difficulty": "easy",
     "solution": "<p>To determine which pairs have equivalent dimensions, we examine the respective dimensional formulas.</p>\n\n<p>For work (W) specified as $ \\overrightarrow{F} \\cdot \\overrightarrow{s} $:</p>\n\n<p>$ W = F s \\cos \\theta $</p>\n\n<p>The dimensions are:</p>\n\n<p>$ W = [MLT^{-2}][L] = [ML^2T^{-2}] $</p>\n\n<p>For torque ($\\overrightarrow{\\tau}$) given as $ \\overrightarrow{r} \\times \\overrightarrow{F} $:</p>\n\n<p>$ \\tau = rF \\sin \\theta $</p>\n\n<p>The dimensions are:</p>\n\n<p>$ \\tau = [L] [MLT^{-2}] = [ML^2T^{-2}] $</p>\n\n<p>Therefore, the dimensions of torque and work are identical.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

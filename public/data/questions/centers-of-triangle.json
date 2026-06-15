@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>Let the midpoints of the sides of triangle $ABC$ be</p>\n<p>$$ D\\left(\\frac{5}{2}, 7\\right), \\quad E\\left(\\frac{5}{2}, 3\\right), \\quad F(4, 5) $$</p>\n<p>We have to find the incentre $(h,k)$ of triangle $ABC$.</p>\n<h2>Step 1: Use the fact about the medial triangle</h2>\n<p>The triangle formed by joining the midpoints of the sides of a triangle is called the medial triangle.</p>\n<p>If the midpoints are known, then the original triangle can be reconstructed using:</p>\n<p>$$ A = E + F - D,\\quad B = F + D - E,\\quad C = D + E - F $$</p>\n<p>Now calculate each vertex.</p>\n<h3>Vertex $A$</h3>\n<p>$$ A = \\left(\\frac{5}{2}, 3\\right) + (4, 5) - \\left(\\frac{5}{2}, 7\\right) $$</p>\n<p>$$ A = (4, 1) $$</p>\n<h3>Vertex $B$</h3>\n<p>$$ B = (4, 5) + \\left(\\frac{5}{2}, 7\\right) - \\left(\\frac{5}{2}, 3\\right) $$</p>\n<p>$$ B = (4, 9) $$</p>\n<h3>Vertex $C$</h3>\n<p>$$ C = \\left(\\frac{5}{2}, 7\\right) + \\left(\\frac{5}{2}, 3\\right) - (4, 5) $$</p>\n<p>$$ C = (1, 5) $$</p>\n<p>So the triangle has vertices</p>\n<p>$$ A(4,1),\\quad B(4,9),\\quad C(1,5) $$</p>\n<h2>Step 2: Find the side lengths</h2>\n<p>Using distance formula:</p>\n<h3>Side opposite $A$, i.e. $BC$</h3>\n<p>$$ BC = \\sqrt{(4-1)^2 + (9-5)^2} = \\sqrt{3^2 + 4^2} = 5 $$</p>\n<h3>Side opposite $B$, i.e. $CA$</h3>\n<p>$$ CA = \\sqrt{(4-1)^2 + (1-5)^2} = \\sqrt{3^2 + (-4)^2} = 5 $$</p>\n<h3>Side opposite $C$, i.e. $AB$</h3>\n<p>$$ AB = \\sqrt{(4-4)^2 + (9-1)^2} = 8 $$</p>\n<p>Thus,</p>\n<p>$$ a = 5,\\quad b = 5,\\quad c = 8 $$</p>\n<h2>Step 3: Use incentre formula</h2>\n<p>The incentre of triangle with vertices $A(x_1,y_1)$, $B(x_2,y_2)$, $C(x_3,y_3)$ is</p>\n<p>$$ \\left( \\frac{ax_1 + bx_2 + cx_3}{a+b+c}, \\frac{ay_1 + by_2 + cy_3}{a+b+c} \\right) $$</p>\n<p>where</p>\n<ul>\n<li><p>$a = BC$</p></li>\n<li><p>$b = CA$</p></li>\n<li><p>$c = AB$</p></li>\n</ul>\n<p>Substitute the values:</p>\n<p>$$ h = \\frac{5\\cdot 4 + 5\\cdot 4 + 8\\cdot 1}{5+5+8} = \\frac{20+20+8}{18} = \\frac{48}{18} = \\frac{8}{3} $$</p>\n<p>$$ k = \\frac{5\\cdot 1 + 5\\cdot 9 + 8\\cdot 5}{18} = \\frac{5+45+40}{18} = \\frac{90}{18} = 5 $$</p>\n<p>So the incentre is</p>\n<p>$$ \\left(\\frac{8}{3}, 5\\right) $$</p>\n<h2>Step 4: Find $3h + k$</h2>\n<p>$$ 3h + k = 3\\cdot \\frac{8}{3} + 5 = 8 + 5 = 13 $$</p>\n<p>Therefore, the answer is</p>\n<p>$$ \\boxed{13} $$</p>\n<p>So, the correct option is <strong>Option C</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhysk",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p>Let the coordinates of vertex B be $(x_B, y_B)$. We are given that vertex A is $(1, 2)$ and the mid-point of side AB is $(5, -1)$.</p>\n<p>Using the mid-point formula, the coordinates of the mid-point are given by:</p>\n<p>$$ \\left( \\frac{x_A + x_B}{2}, \\frac{y_A + y_B}{2} \\right) = (5, -1) $$</p>\n<p>By equating the $x$ and $y$ coordinates, we get:</p>\n<p>$$ \\frac{1 + x_B}{2} = 5 \\implies 1 + x_B = 10 \\implies x_B = 9 $$</p>\n<p>$$ \\frac{2 + y_B}{2} = -1 \\implies 2 + y_B = -2 \\implies y_B = -4 $$</p>\n<p>So, the coordinates of vertex B are $(9, -4)$.</p>\n\n<p>Let the coordinates of vertex C be $(x_C, y_C)$. The centroid of a triangle with vertices $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$ is given by the formula:</p>\n<p>$$ \\left( \\frac{x_1 + x_2 + x_3}{3}, \\frac{y_1 + y_2 + y_3}{3} \\right) $$</p>\n<p>We are given the centroid of triangle ABC is $(3, 4)$. Using the coordinates of vertices A, B, and C:</p>\n<p>$$ \\frac{1 + 9 + x_C}{3} = 3 \\implies 10 + x_C = 9 \\implies x_C = -1 $$</p>\n<p>$$ \\frac{2 + (-4) + y_C}{3} = 4 \\implies -2 + y_C = 12 \\implies y_C = 14 $$</p>\n<p>So, the coordinates of vertex C are $(-1, 14)$.</p>\n\n<p>The circumcenter of a triangle is a point that is equidistant from all three of its vertices. Let the given circumcenter be marked as $O(\\alpha, \\beta)$. Therefore, we have:</p>\n<p>$$ OA = OB = OC \\implies OA^2 = OB^2 = OC^2 $$</p>\n<p>Using the distance formula, we will write the equations for the squares of the distances:</p>\n<p>$$ OA^2 = (\\alpha - 1)^2 + (\\beta - 2)^2 = \\alpha^2 + \\beta^2 - 2\\alpha - 4\\beta + 5 $$</p>\n<p>$$ OB^2 = (\\alpha - 9)^2 + (\\beta + 4)^2 = \\alpha^2 + \\beta^2 - 18\\alpha + 8\\beta + 97 $$</p>\n<p>$$ OC^2 = (\\alpha + 1)^2 + (\\beta - 14)^2 = \\alpha^2 + \\beta^2 + 2\\alpha - 28\\beta + 197 $$</p>\n<p>Now, equating $OA^2 = OB^2$:</p>\n<p>$$ \\alpha^2 + \\beta^2 - 2\\alpha - 4\\beta + 5 = \\alpha^2 + \\beta^2 - 18\\alpha + 8\\beta + 97 $$</p>\n<p>$$ 16\\alpha - 12\\beta = 92 $$</p>\n<p>Dividing the entire equation by 4 gives our first linear equation:</p>\n<p>$$ 4\\alpha - 3\\beta = 23 \\quad \\text{--- (Equation 1)} $$</p>\n<p>Next, equating $OA^2 = OC^2$:</p>\n<p>$$ \\alpha^2 + \\beta^2 - 2\\alpha - 4\\beta + 5 = \\alpha^2 + \\beta^2 + 2\\alpha - 28\\beta + 197 $$</p>\n<p>$$ -4\\alpha + 24\\beta = 192 $$</p>\n<p>Dividing this equation by -4 gives our second linear equation:</p>\n<p>$$ \\alpha - 6\\beta = -48 \\implies \\alpha = 6\\beta - 48 \\quad \\text{--- (Equation 2)} $$</p>\n\n<p>Substitute the expression for $\\alpha$ from Equation 2 into Equation 1:</p>\n<p>$$ 4(6\\beta - 48) - 3\\beta = 23 $$</p>\n<p>$$ 24\\beta - 192 - 3\\beta = 23 $$</p>\n<p>$$ 21\\beta - 192 = 23 $$</p>\n<p>$$ 21\\beta = 215 \\implies \\beta = \\frac{215}{21} $$</p>\n<p>Now, substitute the value of $\\beta$ back into Equation 2 to find $\\alpha$:</p>\n<p>$$ \\alpha = 6\\left(\\frac{215}{21}\\right) - 48 $$</p>\n<p>$$ \\alpha = \\frac{1290}{21} - \\frac{1008}{21} $$</p>\n<p>$$ \\alpha = \\frac{282}{21} $$</p>\n\n<p>The problem asks for the value of $21(\\alpha + \\beta)$. We can simply plug in our values:</p>\n<p>$$ 21(\\alpha + \\beta) = 21 \\left( \\frac{282}{21} + \\frac{215}{21} \\right) $$</p>\n<p>$$ 21(\\alpha + \\beta) = 282 + 215 = 497 $$</p>\n<p>Option C is the correct answer.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "MCQM"
   },
   {
     "id": "mnswhvw7",
@@ -85,7 +85,7 @@
     "difficulty": "medium",
     "solution": "<p>Let ' $G$ ' be the centroid of $\\Delta$ formed by $(1,3)(3,1)$ \\&amp; $(2,4)$</p>\n<p>$$ \\mathrm{G} \\cong\\left(2, \\frac{8}{3}\\right) $$</p>\n<p>Image of G w.r.t. $x+2 y-2=0$</p>\n<p>$$ \\begin{aligned} & \\frac{\\alpha-2}{1}=\\frac{\\beta-\\frac{8}{3}}{2}=-2 \\frac{\\left(2+\\frac{16}{3}-2\\right)}{1+4} \\\\ & =\\frac{-2}{5}\\left(\\frac{16}{3}\\right) \\\\ & \\Rightarrow \\alpha=\\frac{-32}{15}+2=\\frac{-2}{15}, \\beta=\\frac{-32 \\times 2}{15}+\\frac{8}{3}=\\frac{-24}{15} \\\\ & 15(\\alpha-\\beta)=-2+24=22 \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qh4sea",
@@ -107,7 +107,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7498hod/e135da5f-926f-465d-93c7-0f01193ebc32/2c2392d0-ea8a-11ef-9cb6-ef2992c74aa4/file-jaoe38c1m7498hoe.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7498hod/e135da5f-926f-465d-93c7-0f01193ebc32/2c2392d0-ea8a-11ef-9cb6-ef2992c74aa4/file-jaoe38c1m7498hoe.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 29th January Morning Shift Mathematics - Straight Lines and Pair of Straight Lines Question 31 English Explanation 1\"></p>\n<p>$$\\begin{aligned}\n\\therefore \\text { centroid of } \\triangle \\mathrm{ABC} &amp; =\\left(\\frac{9+3+5}{3}, \\frac{11+4+13}{3}\\right) \\\\\n&amp; =\\left(\\frac{17}{3}, \\frac{28}{3}\\right)\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7499bz7/6c908ef7-6dc0-4d12-9d62-c53821fb0074/438bb330-ea8a-11ef-9cb6-ef2992c74aa4/file-jaoe38c1m7499bz8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7499bz7/6c908ef7-6dc0-4d12-9d62-c53821fb0074/438bb330-ea8a-11ef-9cb6-ef2992c74aa4/file-jaoe38c1m7499bz8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 29th January Morning Shift Mathematics - Straight Lines and Pair of Straight Lines Question 31 English Explanation 2\"></p>\n<p>Let image of centroid with respect to line mirror is (h, k)</p>\n<p>$$\\begin{aligned}\n&amp;\\begin{aligned}\n&amp; \\therefore\\left(\\frac{\\mathrm{k}-\\frac{28}{3}}{\\mathrm{~h}-\\frac{17}{3}}\\right)\\left(-\\frac{1}{2}\\right)=-1 \\\\\n&amp; \\&amp; 3\\left(\\frac{\\mathrm{~h}+\\frac{17}{3}}{2}\\right)+6\\left(\\frac{\\mathrm{k}+\\frac{28}{3}}{2}\\right)=53\n\\end{aligned}\\\\\n&amp;\\text { Solving (1) \\&amp; (2) we get } \\mathrm{h}=3, \\mathrm{k}=4\\\\\n&amp;\\therefore \\mathrm{h}^2+\\mathrm{k}^2+\\mathrm{hk}=37\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9ghxlzb",
@@ -129,7 +129,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9tzunf7/ce496f08-7873-481e-a031-3c307c8c923e/48bab630-204a-11f0-be7b-f5fd66d532bf/file-jaoe38c1m9tzunf8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9tzunf7/ce496f08-7873-481e-a031-3c307c8c923e/48bab630-204a-11f0-be7b-f5fd66d532bf/file-jaoe38c1m9tzunf8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 4th April Morning Shift Mathematics - Straight Lines and Pair of Straight Lines Question 16 English Explanation 1\"></p>\n<p>A is orthocentre of above $\\Delta$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9tzvcan/524776f7-d0c8-4a43-a3e8-566bc8368339/5bf188f0-204a-11f0-be7b-f5fd66d532bf/file-jaoe38c1m9tzvcao.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9tzvcan/524776f7-d0c8-4a43-a3e8-566bc8368339/5bf188f0-204a-11f0-be7b-f5fd66d532bf/file-jaoe38c1m9tzvcao.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 4th April Morning Shift Mathematics - Straight Lines and Pair of Straight Lines Question 16 English Explanation 2\"></p>\n<p>$$\\begin{aligned}\n&amp;O \\text { is orthocentre of above } \\Delta \\text {. }\\\\\n&amp;O A=\\sqrt{5}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dwd78n",
@@ -151,7 +151,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9jgms5d/b160e3b6-30c2-4a95-a523-e69710c91635/49f5a710-1a7f-11f0-b2bf-61e6e294e88a/file-jaoe38c1m9jgms5e.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9jgms5d/b160e3b6-30c2-4a95-a523-e69710c91635/49f5a710-1a7f-11f0-b2bf-61e6e294e88a/file-jaoe38c1m9jgms5e.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 7th April Evening Shift Mathematics - Straight Lines and Pair of Straight Lines Question 20 English Explanation\"></p>\n<p>Solve line PQ &amp; QR</p>\n<p>$$\\begin{aligned}\n&amp; \\text { Point } \\mathrm{Q}\\left(\\frac{1-\\mathrm{c}}{\\mathrm{~m}-1}, \\frac{1-\\mathrm{c}}{\\mathrm{~m}-1}+1\\right) \\\\\n&amp; \\mathrm{m}_{2 \\mathrm{H}}=\\frac{\\frac{1-\\mathrm{c}}{\\mathrm{~m}-1}+2}{\\frac{1-\\mathrm{c}}{\\mathrm{~m}-1}-3}=\\frac{1-\\mathrm{c}+2 \\mathrm{~m}-2}{1-\\mathrm{c}-3 \\mathrm{~m}+3}=-\\frac{1}{4} \\quad\\text{..... (1)}\\\\\n&amp; \\because \\mathrm{~m}_{\\mathrm{PH}}=\\frac{5}{0} \\rightarrow \\infty \\\\\n&amp; \\Rightarrow \\text { Slope of line } \\mathrm{QR}(\\mathrm{~m})=0\n\\end{aligned}$$</p>\n<p>Put value of $m$ in equation (1)</p>\n<p>$$\\frac{1-c-2}{1-c+3}=-\\frac{1}{4} \\Rightarrow c=0$$</p>\n<p>so $\\mathrm{m}-\\mathrm{c}=0$ Ans.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j66t",
@@ -173,7 +173,7 @@
     "difficulty": "medium",
     "solution": "<p>Equation of line $A B$ is $3 y-x=2$</p>\n<p>And $A C$ is $x+y=2$</p>\n<p>In line $A B$,</p>\n<p>When $y=0, x=-2$</p>\n<p>$$\\therefore \\quad B(-2,0)$$</p>\n<p>In line $A C$,</p>\n<p>When $y=0, x=2$</p>\n<p>$$\\therefore \\quad C(2 x, 0)$$</p>\n<p>Equation of altitude of $B C$,</p>\n<p>$$Y=x+2$$</p>\n<p>Similarly, equation of altitude of $A B$,</p>\n<p>$$y=-3 x+6$$</p>\n<p>$\\therefore$ On solving, orthocentre $P(1,3)$</p>\n<p>$$\\therefore \\quad \\operatorname{ar}(\\triangle P B C)=6$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv5gs2w8",
@@ -212,7 +212,7 @@
     "difficulty": "medium",
     "solution": "<ol>\n<li>Solve the equations $15x - y = 82$ and $6x - 5y = -4$</li>\n</ol>\n<p>Multiply the first equation by 5 and the second by 1 and then subtract the second from the first:</p>\n<p>$75x - 5y = 410$</p>\n<p>$6x - 5y = -4$</p>\n<p>Subtracting these gives $69x = 414$ which leads to $x = 6$</p>\n<p>Substitute $x = 6$ into the first equation to get $y = 8$</p>\n<p>So, the first vertex is $(6,8)$.</p>\n<ol>\n<li>Solve the equations $15x - y = 82$ and $9x + 4y = 17$</li>\n</ol>\n<p>Multiply the first equation by 4 and the second by 1 and then add:</p>\n<p>$60x - 4y = 328$</p>\n<p>$9x + 4y = 17$</p>\n<p>Adding these gives $69x = 345$ which leads to $x = 5$</p>\n<p>Substitute $x = 5$ into the second equation to get $y = -7$</p>\n<p>So, the second vertex is $(5,-7)$.</p>\n<ol>\n<li>Solve the equations $6x - 5y = -4$ and $9x + 4y = 17$</li>\n</ol>\n<p>Multiply the first equation by 4 and the second by 5 and then add:</p>\n<p>$24x - 20y = -16$</p>\n<p>$45x + 20y = 85$</p>\n<p>Adding these gives $69x = 69$ which leads to $x = 1$</p>\n<p>Substitute $x = 1$ into the first equation to get $y = 2$</p>\n<p>So, the third vertex is $(1,2)$.</p>\n<p>So, the vertices of the triangle are $(6,8)$, $(5,-7)$, and $(1,2)$.</p>\n\n<p>Now that we have the vertices of the triangle, we can find the centroid. The centroid $(\\alpha, \\beta)$ of a triangle with vertices $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$ is given by :</p>\n<p>$$\n\\alpha=\\frac{x_1+x_2+x_3}{3}$$,\n<br/><br/>$$\n\\beta=\\frac{y_1+y_2+y_3}{3}\n$$</p>\n<p>Substituting the coordinates of the vertices into these equations, we get:</p>\n<p>$$\n\\alpha=\\frac{6+5+1}{3}=4 $$,\n<br/><br/>$$\n\\beta=\\frac{8-7+2}{3}=1\n$$</p>\n<p>Then, we find $\\alpha+2\\beta$ and $2\\alpha-\\beta$:</p>\n<p>$$\n\\alpha+2\\beta=4+2(1)=6 \\\n2\\alpha-\\beta=2(4)-1=7\n$$</p>\n<p>So, $\\alpha+2\\beta=6$ and $2\\alpha-\\beta=7$ are the roots of the quadratic equation. </p>\n<p>We can write the quadratic equation as </p>\n<p>$$x^2-(\\alpha+2\\beta+2\\alpha-\\beta)x+(\\alpha+2\\beta)(2\\alpha-\\beta)=0$$</p>\n<p>Substituting $\\alpha=4$, $\\beta=1$ gives us:</p>\n<p>$$x^2-13x+42=0$$</p>\n\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lgny7des",
@@ -234,7 +234,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgxuayzx/c68e4c1e-f2ed-4189-96d3-77fa5b78bc40/7473b5d0-e445-11ed-97cc-4f9b4bf32610/file-1lgxuayzy.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgxuayzx/c68e4c1e-f2ed-4189-96d3-77fa5b78bc40/7473b5d0-e445-11ed-97cc-4f9b4bf32610/file-1lgxuayzy.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Straight Lines and Pair of Straight Lines Question 62 English Explanation\">\n<br><br>$$\n\\begin{aligned}\n&amp; \\text { Altitude of BC: } y+7=\\frac{-5}{3}(x-3) \\\\\\\\\n&amp; 3 y+21=-5 x+15 \\\\\\\\\n&amp; 5 x+3 y+6=0 \\\\\\\\\n&amp; \\text { Altitude of AC: } y-2=\\frac{-1}{12}(x+1) \\\\\\\\\n&amp; 12 y-24=-x-1 \\\\\\\\\n&amp; x+12 y=23 \\\\\\\\\n&amp; \\alpha=\\frac{-47}{19}, \\quad \\beta=\\frac{121}{57} \\\\\\\\\n&amp; 9 \\alpha-6 \\beta+60=25\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldonjeqx",
@@ -256,7 +256,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lf41l718/e00587c4-d3cd-4c76-ac3c-9d17149d6abd/35cb41c0-c016-11ed-89c7-f9c9b186ec3c/file-1lf41l719.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lf41l718/e00587c4-d3cd-4c76-ac3c-9d17149d6abd/35cb41c0-c016-11ed-89c7-f9c9b186ec3c/file-1lf41l719.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 1st February Morning Shift Mathematics - Straight Lines and Pair of Straight Lines Question 66 English Explanation\">\n<br><br>$$\n\\mathrm{m}=-\\frac{1}{2}\n$$\n<br><br>Here $\\mathrm{m_BH} \\times \\mathrm{m_AC}=-1$\n<br><br>$$\n\\begin{array}{ll} \n&amp; \\left(\\frac{\\beta-3}{\\alpha-2}\\right)\\left(\\frac{1}{-2}\\right)=-1 \\\\\\\\\n&amp; \\beta-3=2 \\alpha-4 \\\\\\\\\n&amp; \\beta=2 \\alpha-1 \\\\\\\\\n&amp; \\mathrm{~m}_{\\mathrm{AH}} \\times \\mathrm{m}_{\\mathrm{BC}}=-1 \\\\\\\\\n\\Rightarrow  &amp; \\left(\\frac{\\beta-2}{\\alpha-1}\\right)(-2)=-1 \\\\\\\\\n\\Rightarrow  &amp; 2 \\beta-4=\\alpha-1 \\\\\\\\\n\\Rightarrow  &amp; 2(2 \\alpha-1)=\\alpha+3 \\\\\\\\\n\\Rightarrow  &amp; 3 \\alpha=5 \\\\\\\\\n&amp; \\alpha=\\frac{5}{3}, \\beta=\\frac{7}{3} \\Rightarrow \\mathrm{H}\\left(\\frac{5}{3}, \\frac{7}{3}\\right) \\\\\\\\\n&amp; \\alpha+4 \\beta=\\frac{5}{3}+\\frac{28}{3}=\\frac{33}{3}=11 \\\\\\\\\n&amp; \\beta+4 \\alpha=\\frac{7}{3}+\\frac{20}{3}=\\frac{27}{3}=9 \\\\\\\\\n&amp; \\mathrm{x}^2-20 \\mathrm{x}+99=0\n\\end{array}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldwxnvl2",
@@ -295,7 +295,7 @@
     "difficulty": "medium",
     "solution": "We have,\n<br><br>$$\n\\begin{aligned}\n&amp; 4 x+3 y=69 .......(i) \\\\\\\\\n&amp; 4 y-3 x=17 .......(ii) \\\\\\\\\n&amp; x+7 y=61 .......(iii)\n\\end{aligned}\n$$\n<br><br>On solving (i) and (iii), we get,\n<br><br>$$\n\\begin{aligned}\n&amp; x=12, \\text { and } y=7 \\\\\\\\\n&amp; \\text { So, } A \\equiv(12,7)\n\\end{aligned}\n$$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1ljg2jcjv/40b71be8-c597-4834-92a0-31af71c5e4d0/30e031b0-15e4-11ee-a5f8-af44f69476e0/file-6y3zli1ljg2jcjw.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1ljg2jcjv/40b71be8-c597-4834-92a0-31af71c5e4d0/30e031b0-15e4-11ee-a5f8-af44f69476e0/file-6y3zli1ljg2jcjw.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 8th April Morning Shift Mathematics - Straight Lines and Pair of Straight Lines Question 57 English Explanation\">\n<br>On solving (ii) and (iii), we get,\n<br><br>$$\n\\begin{aligned}\n&amp; x=5 \\text { and } y=8 \\\\\\\\\n&amp; \\text { So, B } \\equiv(5,8)\n\\end{aligned}\n$$\n<br><br>$$\n\\begin{aligned}\n&amp; \\text { Hence, circumcentre } \\equiv\\left(\\frac{12+5}{2}, \\frac{7+8}{2}\\right) \\\\\\\\\n&amp; \\equiv\\left(\\frac{17}{2}, \\frac{15}{2}\\right)\n\\end{aligned}\n$$\n<br><br>$$\n\\begin{aligned}\n&amp; \\therefore \\alpha=\\frac{17}{2}, \\beta=\\frac{15}{2} \\\\\\\\\n&amp; \\therefore(\\alpha-\\beta)^2+(\\alpha+\\beta)=\\left(\\frac{17}{2}-\\frac{15}{2}\\right)^2+\\left(\\frac{17}{2}+\\frac{15}{2}\\right) \\\\\\\\\n&amp; =(1)^2+(16)=17\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6gjlh74",
@@ -334,7 +334,7 @@
     "difficulty": "hard",
     "solution": "<p>Intersection of $$2x + y = 0$$ and $$x - y = 3\\,:\\,A(1, - 2)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7qa6xtq/139436a6-31d3-4607-a05c-66e2b0bc9d4d/5ec55de0-2def-11ed-a744-1fb8f3709cfa/file-1l7qa6xtr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7qa6xtq/139436a6-31d3-4607-a05c-66e2b0bc9d4d/5ec55de0-2def-11ed-a744-1fb8f3709cfa/file-1l7qa6xtr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 27th July Evening Shift Mathematics - Straight Lines and Pair of Straight Lines Question 71 English Explanation\"></p>\n<p>Equation of perpendicular bisector of AB is</p>\n<p>$$x - 2y =  - 4$$</p>\n<p>Equation of perpendicular bisector of AC is</p>\n<p>$$x + y = 5$$</p>\n<p>Point B is the image of A in line $$x - 2y + 4 = 0$$ which is obtained as $$B\\left( {{{ - 13} \\over 5},{{26} \\over 5}} \\right)$$</p>\n<p>Similarly vertex $$C:(7,4)$$</p>\n<p>Equation of line $$BC:x + 8y = 39$$</p>\n<p>So, $$p = 8$$</p>\n<p>$$AC = \\sqrt {{{(7 - 1)}^2} + {{(4 + 2)}^2}}  = 6\\sqrt 2 $$</p>\n<p>Area of triangle $$ABC = 32.4$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l57oeszr",
@@ -356,7 +356,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5q9xuo0/da6e885c-cdde-4480-b9d1-c22df8a701e5/f34a6800-0655-11ed-903e-c9687588b3f3/file-1l5q9xuo1.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5q9xuo0/da6e885c-cdde-4480-b9d1-c22df8a701e5/f34a6800-0655-11ed-903e-c9687588b3f3/file-1l5q9xuo1.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 27th June Morning Shift Mathematics - Straight Lines and Pair of Straight Lines Question 81 English Explanation\"></p>\n<p>$$\\left. \\matrix{\n  2x + y = 4 \\hfill \\cr \n  2x + 6y = 14 \\hfill \\cr}  \\right\\}y = 2,\\,x = 3$$</p>\n<p>B(1, 2)</p>\n<p>Let C(k, 4 $$-$$ 2k)</p>\n<p>Now $$A{B^2} = A{C^2}$$</p>\n<p>$${5^2} + {( - 1)^2} = {(6 - k)^2} + {( - 3 + 2k)^2}$$</p>\n<p>$$ \\Rightarrow 5{k^2} - 24k + 19 = 0$$</p>\n<p>$$(5k - 19)(k - 1) = 0 \\Rightarrow k = {{19} \\over 5}$$</p>\n<p>$$C\\left( {{{19} \\over 5}, - {{18} \\over 5}} \\right)$$</p>\n<p>Centroid ($$\\alpha$$, $$\\beta$$)</p>\n<p>$$\\alpha  = {{6 + 1 + {{19} \\over 5}} \\over 3} = {{18} \\over 5}$$</p>\n<p>$$\\beta  = {{1 + 2 - {{18} \\over 5}} \\over 3} =  - {1 \\over 5}$$</p>\n<p>Now $$15(\\alpha  + \\beta )$$</p>\n<p>$$15\\left( {{{17} \\over 5}} \\right) = 51$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6relrm0",
@@ -378,7 +378,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7xrag3x/1171f510-f750-4a4d-8bf7-c934d96c9030/b8102bd0-320b-11ed-b25b-a342e8d3e498/file-1l7xrag3y.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7xrag3x/1171f510-f750-4a4d-8bf7-c934d96c9030/b8102bd0-320b-11ed-b25b-a342e8d3e498/file-1l7xrag3y.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th July Evening Shift Mathematics - Straight Lines and Pair of Straight Lines Question 68 English Explanation\">\n<br><br>Circumcentre of $\\triangle A B C$\n\n<br><br>$$\n\\begin{aligned}\n&amp;=\\left(\\frac{\\alpha+\\frac{\\alpha}{4}}{2}, \\frac{6-2}{2}\\right) \\\\\\\\\n&amp;=\\left(\\frac{5 \\alpha}{8}, 2\\right) \\\\\\\\\n&amp;=\\left(5, \\frac{\\alpha}{4}\\right) \\\\\\\\\n&amp;\\Rightarrow \\alpha=8\n\\end{aligned}\n$$\n\n<br><br>$\\operatorname{area}(\\triangle A B C)=\\frac{1}{2} \\cdot \\frac{3 \\alpha}{4} \\times 8=24$ sq. units\n\n<br><br>$$\n\\begin{aligned}\n\\text { Perimeter } &amp;=8+\\frac{3 \\alpha}{4}+\\sqrt{8^{2}+\\left(\\frac{3 \\alpha}{4}\\right)^{2}} \\\\\\\\\n&amp;=8+6+10=24\n\\end{aligned}\n$$\n\n<br><br>Circumradius $=\\frac{10}{2}=5$\n\n<br><br> inradius $(r)=\\frac{\\Delta}{s}=\\frac{24}{12}=2$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6p2cpyz",
@@ -400,7 +400,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7ssjo3c/b55f47a7-9a89-4d60-875b-d115e046f61f/b6651380-2f50-11ed-85dd-19dc023e9ad1/file-1l7ssjo3d.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7ssjo3c/b55f47a7-9a89-4d60-875b-d115e046f61f/b6651380-2f50-11ed-85dd-19dc023e9ad1/file-1l7ssjo3d.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th July Morning Shift Mathematics - Straight Lines and Pair of Straight Lines Question 70 English Explanation\"></p>\n<p>Let D be mid-point of AC, then</p>\n<p>$${{b + 3} \\over 2} = 1 \\Rightarrow b =  - 1$$</p>\n<p>Let E be mid-point of BC,</p>\n<p>$${{5 - b} \\over {b - a}}\\,.\\,{{{{(3 + b)} \\over 2}} \\over {{{a + b} \\over 2} - 1}} =  - 1$$</p>\n<p>On putting $$b =  - 1$$, we get $$a = 5$$ or $$-3$$</p>\n<p>But $$a = 5$$ is rejected as $$ab &gt; 0$$</p>\n<p>$$A( - 3,3),\\,B( - 1,5),\\,C( - 3, - 1),\\,P(1,1)$$</p>\n<p>Line $$BC \\Rightarrow y = 3x + 8$$</p>\n<p>Line $$AP \\Rightarrow y = {{3 - x} \\over 2}$$</p>\n<p>Point of intersection $$\\left( {{{ - 13} \\over 7},{{17} \\over 7}} \\right)$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l54bfz5l",
@@ -422,7 +422,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5gmnar6/e2444175-9dd2-4655-a827-d624ec162bae/ce00a120-0107-11ed-a5c5-a7461ac77783/file-1l5gmnar7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5gmnar6/e2444175-9dd2-4655-a827-d624ec162bae/ce00a120-0107-11ed-a5c5-a7461ac77783/file-1l5gmnar7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th June Evening Shift Mathematics - Straight Lines and Pair of Straight Lines Question 84 English Explanation\"></p>\n<p>For point A,</p>\n<p>2x $$-$$ y $$-$$ 1 = 0 ...... (1)</p>\n<p>x $$-$$ 2y + 1 = 0 ...... (2)</p>\n<p>Solving (1) and (2), we get</p>\n<p>x = 1, y = 1.</p>\n<p>$$\\therefore$$ Point A = (1, 1)</p>\n<p>Altitude from B to line AC is perpendicular to line AC.</p>\n<p>$$\\therefore$$ Equator of altitude BH is</p>\n<p>2x + y + $$\\lambda$$ = 0 ...... (3)</p>\n<p>It passes through point $$H\\left( {{7 \\over 3},{7 \\over 3}} \\right)$$ so it satisfy the equation (3).</p>\n<p>$${{14} \\over 3} + {7 \\over 3} + \\lambda  = 0$$</p>\n<p>$$\\Rightarrow$$ $$\\alpha$$ = $$-$$7</p>\n<p>$$\\therefore$$ Altitude BH = 2x + y $$-$$ 7 = 0 ...... (4)</p>\n<p>Solving equation (1) and (4), we get</p>\n<p>x = 2, y = 3.</p>\n<p>$$\\therefore$$ Point B = (2, 3)</p>\n<p>Altitude from C to line AB is perpendicular to line AB.</p>\n<p>$$\\therefore$$ Equation of altitude CH is</p>\n<p>x + 2y + $$\\lambda$$ = 0 ...... (5)</p>\n<p>It passes through point $$H\\left( {{7 \\over 3},{7 \\over 3}} \\right)$$ so it satisfy equation (5).</p>\n<p>$${7 \\over 3} + {{14} \\over 3} + \\lambda  = 0$$</p>\n<p>$$\\Rightarrow$$ $$\\lambda$$ = $$-$$7</p>\n<p>$$\\therefore$$ Altitude CH = x + 2y $$-$$ 7 = 0 ...... (6)</p>\n<p>Solving equation (2) and (6), we get</p>\n<p>x = 3, y = 2</p>\n<p>$$\\therefore$$ Point C = (3, 2)</p>\n<p>Centroid G (x, y) of triangle A (1, 1), B (2, 3) and C (3, 2) is</p>\n<p>$$x = {{1 + 2 + 3} \\over 3} = 2$$, $$y = {{1 + 2 + 3} \\over 3} = 2$$</p>\n<p>Now, distance of point G (2, 2) from center O (0, 0) is</p>\n<p>$$OG = \\sqrt {{2^2} + {2^2}}  = 2\\sqrt 2 $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0EJF9pQuqeuwViMpNb1kmknr7sp",
@@ -461,7 +461,7 @@
     "difficulty": "medium",
     "solution": "Mid point of $$PQ \\equiv \\left( {{{ - 2 + 4} \\over 2},{{4 - 2} \\over 2}} \\right) \\equiv (1,1)$$<br><br>Slope of $$PQ = {{4 + 2} \\over { - 2 - 4}} =  - 1$$<br><br>Slope of perpendicular bisector of PQ = 1<br><br>Equation of perpendicular bisector of PQ <br><br>$$y - 1 = 1(x - 1)$$<br><br>$$ \\Rightarrow y = x$$<br><br>Solving with perpendicular bisector of PR,\n<br><br>2x $$-$$ y + 2 = 0<br><br>Circumcentre is ($$-$$2, $$-$$2)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Qjcr2pxjkzDbBSuAFH1kmm3hfre",
@@ -483,7 +483,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kmtgn31b/d3b020d7-9bbf-4ae5-899a-5a121284cf05/65825200-8fee-11eb-8dc2-2d770738b30d/file-1kmtgn31c.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 18th March Evening Shift Mathematics - Straight Lines and Pair of Straight Lines Question 96 English Explanation\">\n<br><br>$$r = \\left| {{{0 + 0 - 3} \\over {\\sqrt 2 }}} \\right| = {3 \\over {\\sqrt 2 }}$$<br><br>$$\\sin 30^\\circ  = {r \\over R} = {1 \\over 2}$$<br><br>R = 2r<br><br>So, $$r + R = 3r = 3 \\times \\left( {{3 \\over {\\sqrt 2 }}} \\right) = {9 \\over {\\sqrt 2 }}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krrwe4qx",
@@ -522,7 +522,7 @@
     "difficulty": "easy",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk3tml7a/9e64f969-9450-4dde-a5f6-f26ddde611e2/5ec4b760-5a3c-11eb-a672-75c5359c71c1/file-1kk3tml7b-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk3tml7a/9e64f969-9450-4dde-a5f6-f26ddde611e2/5ec4b760-5a3c-11eb-a672-75c5359c71c1/file-1kk3tml7b-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kk3tml7a/9e64f969-9450-4dde-a5f6-f26ddde611e2/5ec4b760-5a3c-11eb-a672-75c5359c71c1/file-1kk3tml7b-680w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 3rd September Evening Slot Mathematics - Straight Lines and Pair of Straight Lines Question 112 English Explanation\"></picture>\n<br><br>equation of CD\n<br> <br>y + 5 = -1 (x - 5)\n<br><br>$$ \\Rightarrow $$ x + y = 0 .....(1)\n<br><br> equation of AE\n\n<br><br>y - 7 = 2 (x + 1)\n<br><br>$$ \\Rightarrow $$ 2x - y = -9 ......(2)\n<br><br> from (1) &amp; (2)\n<br><br> x = -3, y = 3\n<br><br> Othocentre = (-3, 3)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "8T16OEh0f3XuKhA4lw7k9k2k5e4orbt",
@@ -561,7 +561,7 @@
     "difficulty": "medium",
     "solution": "Centroid C $$\\left( {{{3 + 1 + 2} \\over 3},{{ - 1 + 3 + 4} \\over 3}} \\right)$$ = (2, 2)\n<br><br>Point of intersection of lines x + 3y – 1 = 0 <br><br>and 3x – y + 1 = 0 is P $$\\left( { - {1 \\over 5},{2 \\over 5}} \\right)$$\n<br><br>So, equation of line CP is 8x – 11y + 6 = 0\n<br><br>Point (–9, –6) satisfy this equation.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "TWc5X8nsXEQEf4RxhueyF",
@@ -583,7 +583,7 @@
     "difficulty": "medium",
     "solution": "m<sub>BD</sub> $$ \\times $$ m<sub>AD</sub> = $$-$$ 1\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$\\left( {{{3 - 2} \\over {4 - 0}}} \\right) \\times \\left( {{{b - 0} \\over {a - 0}}} \\right) =  - 1$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;b + 4a = 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . . (i)\n<br><br><img src=\"https://imagex.cdn.examgoal.net/S6lDKtxa64Gt2mZZJ/5DMR6vjy5pik9tFGX0gg8wcCocNJN/LxnWNOaS6RLBIGRRZW0zTF/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Evening Slot Mathematics - Straight Lines and Pair of Straight Lines Question 130 English Explanation\">\n<br>m<sub>AB</sub> $$ \\times $$ m<sub>CF</sub> = $$-$$ 1\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$$\\left( {{{\\left( {b - 2} \\right)} \\over {a - 0}}} \\right) \\times \\left( {{3 \\over 4}} \\right) =  - 1$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;3b $$-$$ 6 = $$-$$ 4a  \n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;4a + 3b = 6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . . .(ii)\n<br><br>From (i) and (ii)\n<br><br>a = $${{ - 3} \\over 4}$$,  b = 3\n<br><br>$$ \\therefore $$&nbsp;&nbsp;II<sup>nd</sup> quadrant.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jzTjddlv24Pe3XwUGoOyx",
@@ -605,7 +605,7 @@
     "difficulty": "medium",
     "solution": "Let the centroid of $$\\Delta $$PQR is (h, k) &amp; P is ($$\\alpha $$, $$\\beta $$),  then\n<br><br>$${{\\alpha  + 1 + 3} \\over 3} = h\\,$$&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;$${{\\beta  + 4 - 2} \\over 3} = k$$\n<br><br>$$\\alpha  = \\left( {3h - 4} \\right)$$&nbsp;&nbsp;&nbsp;$$\\beta  = \\left( {3k - 4} \\right)$$\n<br><br>Point P($$\\alpha $$, $$\\beta $$) lies on the line 2x $$-$$ 3y + 4 = 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;2(3h $$-$$ 4) $$-$$ 3 (3k $$-$$ 2) + 4 = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;locus  is 6x $$-$$ 9y + 2 = 0",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tkJLUql0mThR9SD5j5Xie",
@@ -627,7 +627,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/caZLQtnF2VKqfgFP9/F2ue0uu9QrNiencyRODKimzvvaivy/AhuKkfDf1cc61rhCBUsEqD/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Morning Slot Mathematics - Straight Lines and Pair of Straight Lines Question 132 English Explanation\">\n<br><br>$$\\left| {{{3r + 4r - 24} \\over 5}} \\right| = r$$\n<br><br>$$7r - 24 =  \\pm 5r$$\n<br><br>$$2r = 24$$&nbsp;&nbsp;or&nbsp;&nbsp;$$12r + 24$$\n<br><br>$$r = 14,\\,\\,\\,r = 2$$\n<br><br> then incentre is $$(2,2)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "oKvo7JHtrCRqrm0obaHah",
@@ -649,7 +649,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/T5P1cFWt49pYA7ix4/yaasVlgLSOG2mln53avREmbdKCISy/J9QDuRWEAWir8mssuhXgoJ/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th January Evening Slot Mathematics - Straight Lines and Pair of Straight Lines Question 135 English Explanation\">\n<br><br>4x + 5y $$-$$ 20 = 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(1)\n<br><br>3x $$-$$ 2y + 6 = 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . . (2)\n<br><br>orthocentre is (1, 1)\n<br><br>line perpendicular to 4x + 5y $$-$$ 20 = 0 \n<br><br>and passes through (1, 1) is \n<br><br>(y $$-$$ 1) = $${5 \\over 4}$$(x $$-$$ 1)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;5x $$-$$ 4y = 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(3)\n<br><br>and line $$ \\bot $$ to 3x $$-$$ 2y + 6 = 0 \n<br><br>and passes through (1, 1)\n<br><br>y $$-$$ 1 = $$-$$ $${2 \\over 3}$$ (x $$-$$ 1)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;2x + 3y = 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(4)\n<br><br>Solving (1) and (4) we get C$$\\left( {{{35} \\over 2}, - 10} \\right)$$\n<br><br>Solving (2) and (3) we get A $$\\left( { - 13,{{ - 33} \\over 2}} \\right)$$\n<br><br>Side BC is y + 10 = $${{{{ - 33} \\over 2} + 10} \\over { - 13 - {{35} \\over 2}}}\\left( {x - {{35} \\over 2}} \\right)$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;y + 10 = $${{13} \\over {61}}\\left( {x - {{35} \\over 2}} \\right)$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;26x $$-$$ 122y $$-$$ 1675 = 0",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "JQXASfRf5qjuZV5Y",
@@ -671,7 +671,7 @@
     "difficulty": "medium",
     "solution": "Given, vertices of triangle are (k, – 3k), (5, k) and (–k, 2).\n<br><br>$${1 \\over 2}\\left| {\\matrix{\n   k &amp; { - 3k} &amp; 1  \\cr \n   5 &amp; k &amp; 1  \\cr \n   { - k} &amp; 2 &amp; 1  \\cr \n\n } } \\right| =  \\pm 28$$\n<br><br>$$ \\Rightarrow $$ k(k - 2) + 3k(5 + k) + 1(10 + k<sup>2</sup>) = $$ \\pm $$ 56\n<br><br>$$ \\Rightarrow $$ 5k<sup>2</sup> + 13k + 10 = $$ \\pm $$ 56\n<br><br>$$ \\Rightarrow $$ 5k<sup>2</sup> + 13k - 66 = 0\n<br><br>$$ \\Rightarrow $$ k = $${{ - 13 \\pm \\sqrt { - 1151} } \\over {10}}$$\n<br><br>So no real solution exist.\n<br><br>or 5k<sup>2</sup> + 13k - 46 = 0\n<br><br>$$ \\therefore $$ k = $${{ - 23} \\over 5}$$ or k = 2\n<br><br>since k is an integer $$ \\therefore $$ k = 2\n<br><br>Thus, the coordinate of vertices of triangle are\n<br><br>A(2, -6), B(5, 2) and C(-2, 2).\n<br><br><img src=\"https://imagex.cdn.examgoal.net/7kejek2x1aa5j/66709fd9-8dc3-42c3-96d5-b2201b35ef2c/2791df70-05f1-11ea-a7bc-b7b08ce8d541/file-7kejek2x1aa5k-324w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2017 (Offline) Mathematics - Straight Lines and Pair of Straight Lines Question 149 English Explanation\">\n<br><br>Now, equation of altitude from vertex A is\n<br><br>y - (-6) = $${{ - 1} \\over {\\left( {{{2 - 2} \\over { - 2 - 5}}} \\right)}}\\left( {x - 2} \\right)$$\n<br><br>$$ \\Rightarrow $$ x = 2 .......(1)\n<br><br>Equation of altitude from vertex B is\n<br><br>y - 2 = $${{ - 1} \\over {\\left( {{{2 + 6} \\over { - 2 - 2}}} \\right)}}\\left( {x - 5} \\right)$$\n<br><br>$$ \\Rightarrow $$ 2y - 4 = x - 5\n<br><br>$$ \\Rightarrow $$ x - 2y = 1 .......(2)\n<br><br>Point H($$\\alpha $$, $$\\beta $$) lies on both (1) and (2),\n<br><br>$$ \\therefore $$ $$\\alpha $$ = 2 .........(3)\n<br><br>$$\\alpha $$ - 2$$\\beta $$ = 1 ......(4)\n<br><br>Solving (3) and (4), we get\n<br><br>$$\\alpha $$ = 2 , $$\\beta $$ = $${1 \\over 2}$$\n<br><br>$$ \\therefore $$ Orthocentre is $$\\left( {2,{1 \\over 2}} \\right)$$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "OtQMa91jbhOp68Kd",
@@ -693,7 +693,7 @@
     "difficulty": "medium",
     "solution": "From the figure, we have \n<br><br>$$a = 2,b = 2\\sqrt 2 ,c = 2$$\n<br><br>$${x_1} = 0,\\,{x^2} = 0,\\,{x_3} = 2$$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/kroj4dyX1o7IB8ZA6/rdeGmFOyGUoDLUNePJ1XXIwLbJvhy/L6QQg1mBUAg29wz6ZJs0eH/image.png\" loading=\"lazy\" alt=\"JEE Main 2013 (Offline) Mathematics - Straight Lines and Pair of Straight Lines Question 156 English Explanation\"> \n<br><br>Now, $$x$$-co-ordinate of incenter is given as \n<br><br>$${{a{x_1} + b{x_2} + c{x_3}} \\over {a + b + c}}$$\n<br><br>$$ \\Rightarrow x$$-coordinate of incentre \n<br><br>$$ = {{2 \\times 0 + 2\\sqrt 2 .0 + 2.2} \\over {2 + 2 + 2\\sqrt 2 }}$$\n<br><br>$$=$$ $${2 \\over {2 + \\sqrt 2 }} = 2 - \\sqrt 2 $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "EeDxIgXZHpDHN2Hd",
@@ -716,7 +716,7 @@
     "solution": "<p>As S is not the centre of the circumcircle, there for PS $$\\ne$$ ST and QS $$\\ne$$ SR</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgg7hqbg/df54dc17-c1f4-447a-9ac7-78933159026f/eb668bc0-da92-11ed-b475-959e4e33238c/file-1lgg7hqbh.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgg7hqbg/df54dc17-c1f4-447a-9ac7-78933159026f/eb668bc0-da92-11ed-b475-959e4e33238c/file-1lgg7hqbh.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 1 Offline Mathematics - Straight Lines and Pair of Straight Lines Question 87 English Explanation\"></p>\n<p>Also, (PS)(ST) = (QS)(SR)</p>\n<p>[$$\\therefore$$ from the properties of two intersecting chords in a circle]</p>\n<p>$$\\Rightarrow$$ A.M $$\\ge$$ G.M</p>\n<p>We get $${{{1 \\over {PS}} + {1 \\over {ST}}} \\over 2} \\ge \\sqrt {{1 \\over {PS}} \\times {1 \\over {ST}}} $$</p>\n<p>or</p>\n<p>$${1 \\over {PS}} + {1 \\over {ST}} \\ge {2 \\over {\\sqrt {QS \\times SR} }}$$</p>\n<p>$${{QS + SR} \\over 2} \\ge \\sqrt {QS \\times SR} $$ ..... (i)</p>\n<p>$${1 \\over {\\sqrt {QS \\times SR} }} \\ge {2 \\over {QR}}$$ .... (ii)</p>\n<p>$$ \\Rightarrow {1 \\over {PS}} + {1 \\over {ST}} \\ge {4 \\over {QR}}$$ From (i) and (ii)</p>",
     "section": "Sec 4",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lg58vsqi",
@@ -739,7 +739,7 @@
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mghvnsto/2f85fe6c-45e1-4171-aa49-96b20024816a/0194bec0-a436-11f0-beb4-71bca5ea08a4/file-jaoe38c1mghvnstp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mghvnsto/2f85fe6c-45e1-4171-aa49-96b20024816a/0194bec0-a436-11f0-beb4-71bca5ea08a4/file-jaoe38c1mghvnstp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2007 Paper 2 Offline Mathematics - Straight Lines and Pair of Straight Lines Question 3 English Explanation\"></p>\n<p>$$\\because$$ ar. $$(\\triangle \\mathrm{OPR}=$$ ar. $$(\\triangle \\mathrm{PQR})=$$ ar. $$(\\triangle \\mathrm{OQR})$$</p>\n<p>R should be the centroid of $$\\triangle \\mathrm{OPQ}$$</p>\n<p>$$\n\\begin{aligned}R(x, y) &amp; =\\left(\\frac{0+3+6}{3}, \\frac{0+4+0}{3}\\right) \\\\\n&amp; =\\left(\\frac{9}{3}, \\frac{4}{3}\\right) \\\\\n&amp; =\\left(3, \\frac{4}{3}\\right)\n\\end{aligned}$$</p>",
     "section": "Sec 4",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "H01NW8Z2GN5a4Mxe",
@@ -761,6 +761,6 @@
     "difficulty": "easy",
     "solution": "Vertex of triangle is $$\\left( {1,\\,1} \\right)$$ and midpoint of sides through - \n<br><br>this vertex is $$\\left( { - 1,\\,2} \\right)$$ and  $$\\left( {3,2} \\right)$$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/7RIC5UaLbTJKP2iux/ntcqzIp40waWjXonsHPpj5qL0LWxL/8bSNSOycIPahIDx7qSaFdb/image.png\" loading=\"lazy\" alt=\"AIEEE 2005 Mathematics - Straight Lines and Pair of Straight Lines Question 169 English Explanation\">\n<br><br>$$ \\Rightarrow $$ vertex $$B$$ and $$C$$ come out to be $$\\left( { - 3,3} \\right)$$ and $$\\left( {5,3} \\right)$$\n<br><br>$$\\therefore$$ centroid is $${{1 - 3 + 5} \\over 3},{{1 + 3 + 5} \\over 3} \\Rightarrow \\left( {1,{7 \\over 3}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

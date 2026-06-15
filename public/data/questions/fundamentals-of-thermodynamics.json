@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p><b>Option (A)</b></p>\n<p>This is a <b>reversible isothermal expansion</b> of an ideal gas, so we use the NCERT formula for isothermal reversible work:</p>\n<p>$$ \\begin{aligned} & \\mathrm{W}=-\\mathrm{nRT} \\ln \\frac{\\mathrm{~V}_2}{\\mathrm{~V}_1} \\\\ & =\\frac{-2 \\times 8.314 \\times 300}{1000} \\times \\ln \\left(\\frac{20}{2}\\right) \\mathrm{kJ} \\\\ & =-11.5 \\mathrm{~kJ} \\end{aligned} $$</p>\n<p>The negative sign shows work is done <b>by the gas</b> during expansion. The <b>magnitude</b> of work is $11.5 \\ \\mathrm{kJ}$.</p>\n<p><b>Option (B)</b></p>\n<p>This is an <b>irreversible isothermal expansion</b> against a constant external pressure, so work is calculated by:</p>\n<p>$$ \\begin{aligned} & \\mathrm{W}=-\\mathrm{P}_{\\text {ext }}\\left[\\mathrm{V}_2-\\mathrm{V}_1\\right] \\\\ & =-3[3-1] \\\\ & =-6 \\mathrm{~kJ} \\end{aligned} $$</p>\n<p>The negative sign again means work is done <b>by the gas</b>. The <b>magnitude</b> of work is $6 \\ \\mathrm{kJ}$.</p>\n<p><b>Option (C)</b></p>\n<p>For an ideal gas, internal energy depends only on temperature. For any process (including adiabatic), we use:</p>\n<p>$$ \\begin{aligned} & \\Delta \\mathrm{U}=\\mathrm{nC}_{\\mathrm{v}} \\Delta \\mathrm{~T} \\\\ & =1 \\times \\frac{3}{2} \\times \\frac{8.314 \\times 320}{1000} 100 \\mathrm{~kJ} \\\\ & =3.99 \\end{aligned} $$</p>\n<p>So the change in internal energy comes out to approximately $3.99 \\ \\mathrm{kJ}$ (about $4 \\ \\mathrm{kJ}$).</p>\n<p><b>Option (D)</b></p>\n<p>For an ideal gas, enthalpy also depends only on temperature. At constant pressure, we use:</p>\n<p>$$ \\begin{aligned} \\Delta \\mathrm{H} & =\\mathrm{nC}_{\\mathrm{p}} \\Delta \\mathrm{~T} \\\\ & =1 \\times \\frac{5}{2} \\times \\frac{8.314 \\times 337}{1000} \\mathrm{~kJ} \\\\ & =7 \\mathrm{~kJ} \\end{aligned} $$</p>\n<p>So, $\\Delta H = 7 \\ \\mathrm{kJ}$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhyeo",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p><strong>1. Helium (g):</strong></p>\n<p>Helium is a monoatomic gas. In the gaseous state, monoatomic molecules only possess 3 translational degrees of freedom. </p>\n<p>According to the principle of equipartition of energy, the molar heat capacity at constant volume ($C_V$) is given by:</p>\n<p>$$C_V = \\frac{3}{2}R$$</p>\n<p>For a gas, the molar heat capacity at constant pressure ($C_P$) is higher than $C_V$ by the gas constant $R$:</p>\n<p>$$C_P = C_V + R = \\frac{3}{2}R + R = \\frac{5}{2}R = 2.5 R$$</p>\n<p><strong>2. Copper (s):</strong></p>\n<p>Copper is a solid metal composed of single atoms in a crystal lattice. In solids, atoms do not translate or rotate, but they vibrate about their mean positions. They have 3 vibrational degrees of freedom in three dimensions.</p>\n<p>According to the Dulong-Petit law for solid elements, each vibrational degree of freedom contributes $R$ to the molar heat capacity (since vibration involves both kinetic and potential energy). </p>\n<p>Therefore, the molar heat capacity for monoatomic solids is approximately:</p>\n<p>$$C_m \\approx 3 R$$</p>\n<p><strong>3. Bromine (l):</strong></p>\n<p>Bromine exists as a diatomic molecule ($Br_2$) in the liquid state. The molar heat capacity here will be significantly higher for a few fundamental reasons:</p>\n<p>Firstly, because it is diatomic, a single mole of $Br_2$ contains 2 moles of atoms. By simple extension of solid-state vibration, this alone would contribute roughly $2 \\times 3R = 6R$. </p>\n<p>Secondly, in the liquid state, molecules have translational, rotational, and vibrational degrees of freedom, and the intermolecular forces are continuously broken and formed, which allows the liquid to absorb a large amount of thermal energy. Hence, the molar heat capacity of $Br_2(l)$ is considerably higher than $3R$.</p>\n<p><strong>Comparing the Values:</strong></p>\n<ul>\n<li><p>Helium (g): $2.5 R$</p></li>\n<li><p>Copper (s): $\\approx 3 R$</p></li>\n<li><p>Bromine (l): $> 6 R$</p></li>\n</ul>\n<p>When we arrange them in decreasing order of their molar heat capacities, we get:</p>\n<p>$$Bromine(l) > Copper(s) > Helium(g)$$</p>\n<p>Therefore, the correct option is <strong>Option B</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j4pc",
@@ -63,7 +63,7 @@
     "difficulty": "hard",
     "solution": "<p>$$\\begin{aligned}\n&amp;\\text { For isothermal process }\\\\\n&amp;\\begin{aligned}\n&amp; \\left|\\mathrm{W}_{\\text {reversible }}\\right|_{\\text {expansion }}=\\left|\\mathrm{W}_{\\text {reversible }}\\right|_{\\text {compression }} \\\\\n&amp; =-\\mathrm{nRT} \\ln \\frac{\\mathrm{~V}_{\\mathrm{f}}}{\\mathrm{~V}_{\\mathrm{i}}} \\\\\n&amp; \\left|\\mathrm{~W}_{\\text {irreversible }}\\right|_{\\text {expansion }}&lt;\\left|\\mathrm{W}_{\\text {irreversible }}\\right|_{\\text {compression }} \\\\\n&amp; \\mathrm{d}&gt;\\mathrm{c}=\\mathrm{a}&gt;\\mathrm{b} \\\\\n&amp; \\left|\\mathrm{~W}_{\\text {irreversible }}\\right|_{\\text {expansion }}=-\\mathrm{P}_{\\text {ext }}\\left(\\mathrm{V}_{\\mathrm{f}}-\\mathrm{V}_{\\mathrm{i}}\\right)\n\\end{aligned}\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1maf6psnb/094ce35e-dd8c-48a7-81bb-10d47215ee62/97432c80-2bf1-11f0-a3da-bb2e3871eb5a/file-jaoe38c1maf6psnc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1maf6psnb/094ce35e-dd8c-48a7-81bb-10d47215ee62/97432c80-2bf1-11f0-a3da-bb2e3871eb5a/file-jaoe38c1maf6psnc.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 2nd April Evening Shift Chemistry - Thermodynamics Question 34 English Explanation 1\"></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1maf6qb91/6394d54c-99be-4208-bba7-9a0b8893f001/a5a1ea50-2bf1-11f0-a3da-bb2e3871eb5a/file-jaoe38c1maf6qb92.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1maf6qb91/6394d54c-99be-4208-bba7-9a0b8893f001/a5a1ea50-2bf1-11f0-a3da-bb2e3871eb5a/file-jaoe38c1maf6qb92.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 2nd April Evening Shift Chemistry - Thermodynamics Question 34 English Explanation 2\"></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1maf6qqtz/f3633351-11c8-44c0-975d-4c900af2eeb5/b1ab4670-2bf1-11f0-a3da-bb2e3871eb5a/file-jaoe38c1maf6qqu0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1maf6qqtz/f3633351-11c8-44c0-975d-4c900af2eeb5/b1ab4670-2bf1-11f0-a3da-bb2e3871eb5a/file-jaoe38c1maf6qqu0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 2nd April Evening Shift Chemistry - Thermodynamics Question 34 English Explanation 3\"></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1maf6r6ss/a74870be-8a71-4eb9-8a31-f54f1ff0d844/be00edd0-2bf1-11f0-a3da-bb2e3871eb5a/file-jaoe38c1maf6r6st.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1maf6r6ss/a74870be-8a71-4eb9-8a31-f54f1ff0d844/be00edd0-2bf1-11f0-a3da-bb2e3871eb5a/file-jaoe38c1maf6r6st.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 2nd April Evening Shift Chemistry - Thermodynamics Question 34 English Explanation 4\"></p>\n<p>Graphical representation</p>\n<p>We can compare work by area of PV graph.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9gxgeuk",
@@ -85,7 +85,7 @@
     "difficulty": "medium",
     "solution": "<p>The correct choice is Option C: Both Statement I and Statement II are true.</p>\n<p>Explanation:</p>\n\n<p>Statement I is true because  </p>\n\n\n<p><p>During the ice–water phase change at 0 °C, any heat added goes into the latent heat of fusion.  </p></p>\n<p><p>The temperature remains fixed at 0 °C until all the ice has melted.</p></p>\n\n\n<p>Statement II is also true because  </p>\n\n\n<p><p>The heat absorbed at the melting point is used to overcome (break) the hydrogen‐bonding forces between water molecules in ice—in other words, it increases the system’s potential energy.  </p></p>\n<p><p>Since no heat goes into raising the kinetic energy of the molecules, the temperature (which measures average kinetic energy) does not increase during melting.</p></p>\n\n<p>Mathematically, for a mass m of ice, the heat needed is  </p>\n<p>$$ Q = m\\,L_f $$  </p>\n<p>where $L_f$ is the latent heat of fusion of ice. This heat does not change the temperature but is entirely consumed in changing the phase (i.e., increasing potential energy).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv7v3ocj",
@@ -141,7 +141,7 @@
     "difficulty": "easy",
     "solution": "When methane undergoes combustion in systems A (adiabatic system) and B (diathermic container), the outcomes are as follows:\n<br/><br/>\n<b>System A (adiabatic system):</b> In an adiabatic system, no heat exchange occurs between the system and its surroundings. As methane undergoes combustion, which is an exothermic process, the heat generated by the reaction is retained within the system, causing the temperature to rise. Therefore, for System A, the temperature rises.\n<br/><br/>\n<b>System B (diathermic container): </b> In a diathermic container, heat exchange is allowed between the system and its surroundings. As methane undergoes combustion, the heat generated by the reaction is partially transferred to the surroundings. Depending on the heat capacity of the container and the extent of heat transfer, the temperature of the system may rise, remain the same, or even fall. However, in most cases, the temperature in System B would be expected to rise, but at a slower rate compared to System A.\n<br/><br/>\nBased on this information, the most appropriate option is:\n<br/><br/>\nSystem A: Temperature rises<br/><br/>\nSystem B:   Temperature remains same",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldsc8dmu",
@@ -185,7 +185,7 @@
     "difficulty": "easy",
     "solution": "(A) For a spontaneous process $$\\Delta $$G<sub>T,P</sub> < 0 <br/><br/>\n(B) $$\\Delta $$P = 0 $$ \\to $$ Isobaric process, $$\\Delta $$T = 0 $$ \\to $$ Isothermal process<br/><br/>\n(C) $$\\Delta $$H<sub>reaction</sub> = ($$\\Sigma $$ Bond energies of reactants) -\n ($$\\Sigma $$ bond energies of products) <br/><br/>\n(D) $$\\Delta $$H < 0 is for exothermic reaction \n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6ny7i46",
@@ -224,7 +224,7 @@
     "difficulty": "easy",
     "solution": "If $\\mathrm{U}+\\mathrm{Pv}$ (By definition)<br/><br/>\n$\\Delta 14=\\Delta \\mathrm{U}+\\Delta(\\mathrm{Pr})$ at constant pressure<br/><br/>\n$$\n\\Delta \\mathrm{H}=\\Delta \\mathrm{U}+\\mathrm{P} \\Delta \\mathrm{V}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5w6o92s",
@@ -241,7 +241,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n&w=-2.303 ~ n R T ~ \\log  \\frac{V_{2}}{V_{1}} \\\\\\\\\n&P_{1} V_{1}=P_{2} V_{2} \\Rightarrow \\frac{V_{2}}{V_{1}}=\\frac{P_{1}}{P_{2}}=\\frac{6}{3}=2 \\\\\\\\\n&w=-2.303 \\times 1 \\times 8.3 \\times 300 \\times \\log (2) \\\\\\\\\n&w=-1718.1 \\mathrm{~J}\n\\end{aligned}\n$$",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1ktftv51n",
@@ -304,7 +304,7 @@
     "solution": "Given, $$w =  - \\int {{p_{ext}}dV} $$<br><br>For 1 mole van der Walls' gas<br><br>$$p = \\left( {{{RT} \\over {V - b}} - {a \\over {{V^2}}}} \\right)$$<br><br>For reversible process, p<sub>ext</sub> = p<sub>gas</sub><br><br>$$w =  - \\int {\\left( {{{RT} \\over {V - b}} - {a \\over {{V^2}}}} \\right)dV} $$<br><br>But, it is not applicable for irreversible process which are carried out very fast. So, work done is calculated assuming final pressure remains constant throughout the process. Thus, statement (a), (b) and (c) correct while statement (d) is incorrect.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "dKxseaqgpKvic9iQK0jgy2xukf7tfwiq",
@@ -326,7 +326,7 @@
     "difficulty": "easy",
     "solution": "For 1 mole of ideal gas :\n <br><br>1. Both internal energy (U) and Enthalpy (H)\ndepends on temperature\n <br><br>2. Compressibility factor Z = 1\n<br><br>3. C<sub>P, m</sub> – C<sub>V, m</sub> = R\n<br><br>4. dU = C<sub>V</sub>dT for all process",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Ufp1cmP4rAycaLyo00Wmd",
@@ -348,7 +348,7 @@
     "difficulty": "medium",
     "solution": "For isothermal process of ideal gas,\n<br><br>PV = constants = K\n<br><br>$$ \\therefore $$&nbsp;&nbsp;P = $${k \\over v}$$\n<br><br>So, the graph between P and $${1 \\over v}$$ is straight line passing through the origin. So, graph (A) is correct.\n<br><br>As PV = K so the P and V curve is hyperbola. So, graph (B) is wrong.\n<br><br>In isothermal PV = constant.\n<br><br>So, graph (C) is right.\n<br><br>We know internal energy (u) = $${f \\over 2}$$ nRT. Internal energy is function of temperature (T) only. So, U does not change when volume(V) changes. So, graph (D) is wrong.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "zhdEqLEqSaZ3Mq4lqjot1",
@@ -370,7 +370,7 @@
     "difficulty": "medium",
     "solution": "C<sub>P</sub> does not changes with change in pressure.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "AIptkfEbUM5X7S2PuA8A1",
@@ -392,7 +392,7 @@
     "difficulty": "easy",
     "solution": "(A) q + w = $$\\Delta $$E, state function\n<br><br>(B) q, Path function\n<br><br>(C) w, Path function\n<br><br>(D) H – TS = G, State function",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "uynu0viAbb8fdegUtOqa8",
@@ -414,7 +414,7 @@
     "difficulty": "medium",
     "solution": "Work done in isothermal process, \n<br><br>W = $$-$$ nRT ln$${{{V_2}} \\over {{V_1}}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$$\\left| W \\right|$$ = nRT ln$${{{V_2}} \\over {{V_1}}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$\\left| W \\right|$$ = nRT (lnV<sub>2</sub> $$-$$ lnV<sub>1</sub>)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$\\left| W \\right|$$ = nRT lnV<sub>2</sub> $$-$$ nRT lnV<sub>1</sub>\n<br><br>given that $$V$$<sub>2</sub> $$=$$ $$V$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$$\\left| W \\right|$$ = nRT lnV $$-$$ nRT lnV<sub>1</sub>\n<br><br>By comparing with the straight line equation,  \n<br><br>y = mx + C\n<br><br>We get slope is <b>nRT</b> and intercept <b>$$-$$ nRT lnV<sub>1</sub></b> in $$\\left| W \\right|$$ and lnV graph. \n<br><br>As T<sub>2</sub> &gt; T<sub>1</sub>&nbsp;&nbsp;&nbsp;So, \n<br><br>Slope nRT<sub>2</sub> &gt; nRT<sub>1</sub>\n<br><br>and intercept\n<br><br>$$-$$ nRT<sub>2</sub> lnV<sub>1</sub> &lt; $$-$$ nRT<sub>1</sub> lnV<sub>1</sub>\n<br><br>So, we can say\n<br><br>(1) &nbsp;&nbsp;slope of T<sub>2</sub> line is more then T<sub>1</sub>\n<br><br>(2)&nbsp;&nbsp;intercept of T<sub>1</sub> line is less negative than T<sub>2</sub> line, and intercept of T<sub>1</sub> can't be positive, it can be 0 or less than 0 as $$-$$ nRT<sub>1</sub>lnV<sub>1</sub> always $$ \\le $$ 0",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IX2Ef6qG5ZHMCaIx",
@@ -437,7 +437,7 @@
     "solution": "<p>In the given curve AC represents isochoric process as volume at both the points is same i.e., V<sub>1</sub></p>\n<p>Similarly, AB represents isothermal process (as both the points are at T<sub>1</sub> temperature) and BC represents isobaric process as both the points are at p<sub>2</sub> pressure.</p>\n<p>Now, (i) for option (a)</p>\n<p>q<sub>AC</sub> = $$\\Delta$$U<sub>BC</sub> = nC<sub>v</sub>(T<sub>2</sub> $$-$$ T<sub>1</sub>)</p>\n<p>where, n = number of moles</p>\n<p>C<sub>v</sub> = specific heat capacity at constant volume</p>\n<p>However, W<sub>AB</sub> $$\\ne$$ p<sub>2</sub>(V<sub>2</sub> $$-$$ V<sub>1</sub>) instead</p>\n<p>$${W_{AB}} = nR{T_1}\\ln \\left( {{{{V_2}} \\over {{V_1}}}} \\right)$$</p>\n<p>So, this option is incorrect.</p>\n<p>(ii) For option (b)</p>\nq<sub>BC</sub> = $$\\Delta$$H<sub>AC</sub> = nC<sub>p</sub>(T<sub>2</sub> $$-$$ T<sub>1</sub>)</p>\n<p>where, C<sub>p</sub> = specific heat capacity at constant pressure</p>\n<p>Likewise,</p>\n<p>W<sub>BC</sub> = $$-$$p<sub>2</sub>(V<sub>1</sub> $$-$$ V<sub>2</sub>)</p>\n<p>Hence, this option is correct.</p>\n<p>(iii) For option (c)</p>\n<p>as nC<sub>p</sub>(T<sub>2</sub> $$-$$ T<sub>1</sub>) < nC<sub>v</sub>(T<sub>2</sub> $$-$$ T<sub>1</sub>)</p>\n<p>so, $$\\Delta$$H<sub>CA</sub> < $$\\Delta$$U<sub>CA</sub></p>\n<p>and q<sub>AC</sub> = $$\\Delta$$U<sub>BC</sub></p>\n<p>Hence, this option is also correct.</p>\n<p>(iv) For option (d)</p>\n<p>Although q<sub>BC</sub> = $$\\Delta$$H<sub>AC</sub></p>\n<p>but $$\\Delta$$H<sub>CA</sub> $$\\le$$ $$\\Delta$$U<sub>CA</sub></p>\n<p>Hence, this option is incorrect. </p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "geVNizGmSr5wzrQTu1BCR",
@@ -459,7 +459,7 @@
     "difficulty": "easy",
     "solution": "<p>In an isothermal expansion process, the temperature of the system remains constant throughout the process. Since, for an ideal gas, U depends only on temperature, we have $$\\Delta$$U = 0. The enthalpy change of the system in isothermal expansion is also zero as</p>\n<p>$$\\Delta$$H = $$\\Delta$$U + nR$$\\Delta$$T = 0 + 0 = 0</p>\n<p>The entropy change foe an isothermal process is given by</p>\n<p>$$\\Delta S = nR\\ln \\left( {{{{V_f}} \\over {{V_i}}}} \\right) \\ge 0$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "cZznm243ERdk6OyV",
@@ -482,7 +482,7 @@
     "solution": "<b>Option (A)</b>: Correct. For compression of gas, $V_2 &lt; V_1$, thus, from $w=-p \\Delta V$, work done on the gas will be positive. Below graph shows the pressure-volume curve for work done during reversible and irreversible compression process. Area under curve during irreversible process is greater than the area under curve during reversible process. Therefore, work done on the gas in irreversible process is greater than in reversible process, that is, $w_{\\text {irr }}&gt;w_{\\text {rev }}$.<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lhzx2edn/369fb91a-d277-4eb4-b70c-f460b3e6ed5c/0a1df8c0-f936-11ed-ad2d-b539535f47fe/file-1lhzx2edo.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lhzx2edn/369fb91a-d277-4eb4-b70c-f460b3e6ed5c/0a1df8c0-f936-11ed-ad2d-b539535f47fe/file-1lhzx2edo.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2017 Paper 1 Offline Chemistry - Thermodynamics Question 35 English Explanation 1\"><br>\n<b>Option (B)</b>: Correct. For work done in free expansion, $p_{\\text {ext }}=0$, therefore, $w=0$. For an adiabatic process, $q=0$ and for isothermal process, $\\Delta T=0$. Therefore, from first law of thermodynamics, $\\Delta U=q+w=0$.<br><br>\n<b>Option (C)</b>: Correct. Below graph represents the expansion under adiabatic (AC) and isothermal condition (AB). Therefore, $\\left|w_{\\mathrm{AB}}\\right|&gt;\\left|w_{\\mathrm{AC}}\\right|$.<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lhzx429h/f65b91bf-80cb-440f-a0e0-683288c9713f/38602a50-f936-11ed-ad2d-b539535f47fe/file-1lhzx429i.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lhzx429h/f65b91bf-80cb-440f-a0e0-683288c9713f/38602a50-f936-11ed-ad2d-b539535f47fe/file-1lhzx429i.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2017 Paper 1 Offline Chemistry - Thermodynamics Question 35 English Explanation 2\">",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l1nco06v",
@@ -505,7 +505,7 @@
     "solution": "<p>From the graph, as the term pV increases, the temperature increases; and when pV decreases the temperature decreases.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l1qnui3o/9e4cbcec-3a48-4163-b578-072185d6c3d6/7872f730-b75b-11ec-9370-27e75f4b6a7c/file-1l1qnui3p.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l1qnui3o/9e4cbcec-3a48-4163-b578-072185d6c3d6/7872f730-b75b-11ec-9370-27e75f4b6a7c/file-1l1qnui3p.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2013 Paper 2 Offline Chemistry - Thermodynamics Question 24 English Explanation\"></p>\n<p>The term PV increases K$$\\to$$L, so this involves heating and is an isobaric process.</p>\n<p>It increases from N$$\\to$$K, so this involves heating and is an isochoric process.</p>\n<p>It decreases from M$$\\to$$N, so this involves cooling and is an isobaric process.</p>\n<p>It decreases from L$$\\to$$M, so this involves cooling and is an isochoric process.</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l1ncqh51",
@@ -528,7 +528,7 @@
     "solution": "<p>From the above solution, we have</p>\n<p>From K$$\\to$$L : heating (isobaric)</p>\n<p>From L$$\\to$$M : cooling (isochoric)</p>\n<p>From M$$\\to$$N : cooling (isobaric)</p>\n<p>From N$$\\to$$K : heating (isochoric)</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfrxaqtw",
@@ -551,7 +551,7 @@
     "solution": "<p>State functions are properties of a system that depend only on the current state of the system, not on the path used to get to that state. They are intrinsic properties of the system and include properties like pressure, temperature, volume, internal energy, enthalpy, entropy, and Gibbs free energy.</p>\n\n<p><strong>Option A: Internal Energy</strong></p>\n\n<p>Internal energy, denoted as $$U$$, is a state function. It is the total energy contained within the system, including kinetic and potential energy at the molecular level. Internal energy changes in a system only depend on the initial and final states of the system, regardless of the process or path taken to achieve these states. Therefore, it fits the criteria of a state function.</p>\n\n<p><strong>Option B: Irreversible Expansion Work</strong></p>\n\n<p>Irreversible expansion work is not a state function. Work, in general, is a path function because it depends on the path taken during a process. Whether the path involves irreversible or reversible processes, work includes energy transfer that depends significantly on how that transfer is carried out. Therefore, irreversible expansion work depends on the specific details of the process and is not solely determined by the initial and final states of the system.</p>\n\n<p><strong>Option C: Reversible Expansion Work</strong></p>\n\n<p>Similarly to irreversible expansion work, reversible expansion work is also a path function and not a state function. Even though reversible processes are ideal and involve quasi-static changes that maintain the system in near equilibrium throughout, the work done (or reversible expansion work) during such processes still depends on the specific path taken. This includes how slowly the process is carried out and the intermediate steps, distinguishing it from a state function.</p>\n\n<p><strong>Option D: Molar Enthalpy</strong></p>\n\n<p>Molar enthalpy, denoted as $$H$$, is a state function. It is defined as the sum of the internal energy $$U$$ of a system plus the product of the pressure $$P$$ and volume $$V$$ of the system, multiplied by the number of moles $$n$$, expressed as:\n\n\n\n<p>$H = U + PV$</p>\n\n\n\n<p>Since $$U$$, $$P$$, and $$V$$ are all state functions, their combination into enthalpy continues to be dependent solely on the state of the system, not on the path taken to reach that state.</p></p>\n\n<p><strong>Conclusion:</strong></p>\n\n<p>Among the given options, <strong>Internal energy (Option A)</strong> and <strong>Molar enthalpy (Option D)</strong> are state functions, while both <strong>Irreversible expansion work (Option B)</strong> and <strong>Reversible expansion work (Option C)</strong> are not state functions. They are path functions.</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lg553yhj",
@@ -574,7 +574,7 @@
     "solution": "<h3>Process :</h3>\n<p>$ \\text{H}_2\\text{O}(l,\\,1\\,\\text{bar},\\,373\\,\\text{K}) \\to \\text{H}_2\\text{O}(g,\\,1\\,\\text{bar},\\,373\\,\\text{K}) $</p>\n\n<h3>Step 1. Identify what temperature and pressure mean</h3>\n<p>At <strong>373 K</strong> and <strong>1 bar</strong>, this is <strong>the normal boiling point of water</strong> (approximately, at 1 atm ≈ 1.013 bar).</p>\n<p>So, at this condition, <strong>liquid water and water vapor are in equilibrium</strong>.</p>\n\n<h3>Step 2. Thermodynamic definitions</h3>\n<p>At equilibrium between two phases at a given $T$ and $p$:</p>\n<p>$ \\Delta G = 0 $</p>\n<p>because the two phases have equal molar Gibbs energies.  </p>\n<p>So for a reversible phase change at equilibrium:</p>\n<p>$ \\boxed{\\Delta G = 0} $</p>\n\n<h3>Step 3. Entropy change</h3>\n<p>When liquid water vaporizes,</p>\n<ul>\n<li><p>Disorder increases,</p></li>\n<li><p>Number of microstates increases,</p></li>\n</ul>\n<p>so</p>\n<p>$ \\boxed{\\Delta S > 0} $</p>\n<p>(positive entropy change).</p>\n\n<h3>✅ Therefore, the correct set is:</h3>\n<p>$ \\boxed{\\Delta G = 0, \\ \\Delta S = +\\text{ve}} $</p>\n\n<p>✅ <strong>Correct option:</strong> <strong>A</strong></p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IvJk60A3K13igIgC",
@@ -596,6 +596,6 @@
     "difficulty": "easy",
     "solution": "The heat required to raise the temperature of body by $$1K$$ is called thermal capacity or heat capacity. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

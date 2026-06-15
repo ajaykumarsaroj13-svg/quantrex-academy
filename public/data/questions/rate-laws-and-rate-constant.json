@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>The given rate constant is $ k = 10^{-3} \\, \\text{M}^{-1} \\, \\text{s}^{-1} $.</p>\n<p><b>Step 1: Determining the order of reaction</b></p>\n<p>The general unit of the rate constant is $ \\text{M}^{1-n} \\, \\text{s}^{-1} $, where $ n $ is the order of reaction.  \n\nHere, the unit of $ k $ is $ \\text{M}^{-1} \\, \\text{s}^{-1} $.</p>\n<p>So, $ 1 - n = -1 \\Rightarrow n = 2 $.  \n\nHence, this is a <b>second order reaction</b>.</p>\n<p><b>Step 2: Expression for the rate</b></p>\n<p>The rate law for a second order reaction is:  \n\n$$ \\text{Rate} = k [A]^2 $$</p>\n<p><b>Step 3: Effect of changing concentration</b></p>\n<p>If the concentration of $ A $ is made 4 times, that is, $ [A]' = 4[A] $, then  \n\n$$ \\text{New rate} = k (4[A])^2 = 16k[A]^2 $$  \n\nSo, the rate increases by 16 times.  \n\nTherefore, statement (A) is correct.</p>\n<p><b>Step 4: Order of reaction</b></p>\n<p>As we found $ n = 2 $, the reaction is second order.  \n\nSo, statement (B) is correct.</p>\n<p><b>Step 5: Half-life relation</b></p>\n<p>For a second order reaction, the half-life is inversely proportional to the initial concentration:  \n\n$$ t_{1/2} = \\frac{1}{k[A]_0} $$  \n\nHence, the half-life depends on concentration.  \n\nSo, statement (C) is incorrect because it is true only for a first order reaction.</p>\n<p><b>Step 6: Example of reaction</b></p>\n<p>The decomposition of $ \\mathrm{N_2O_5} $ is a first order reaction.  \n\nThus, statement (D) is incorrect.</p>\n<p><b>Step 7: Graph type</b></p>\n<p>A straight-line graph of $ \\log \\frac{[R]_0}{[R]_t} $ versus $ t $ is valid only for first order reactions, not second order.  \n\nTherefore, statement (E) is incorrect.</p>\n<p><b>Final Answer:</b> The correct statements are (A) and (B).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qpcp06",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p>Reaction given:</p>\n<p>$$A_2+B_2 \\rightarrow 2 A B$$</p>\n<p>Mechanism:</p>\n<p>$$A_2\\mathrel{\\mathop{\\kern0pt\\rightleftharpoons}\n\\limits_{k_{-1}}^{k_1}} A+A$$ (fast)</p>\n<p>$$\\begin{aligned}\n& A+B_2 \\xrightarrow{k_2} A B+B \\text { (slow) } \\\\\n& A+B \\longrightarrow A B \\text { (fast) }\n\\end{aligned}$$</p>\n<p>The rate determining step in a mechanism is the slow step.</p>\n<p>So, late $=k_2[A]\\left[B_2\\right]$</p>\n<p>$A$ is the intermediate; to determine the concentration of $A$, the equilibrium is considered.</p>\n<p>$$A_2\\mathrel{\\mathop{\\kern0pt\\rightleftharpoons}\n\\limits_{k_{-1}}^{k_1}} A+A$$</p>\n<p>$$\\begin{aligned}\n\\frac{k_1}{k_{-1}} & =\\frac{[A][A]}{\\left[A_2\\right]} \\\\\n& =\\frac{[A]^2}{\\left[A_2\\right]}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\nS_{0,}[A]^2 & =\\frac{k_1}{k_{-1}}\\left[A_2\\right] \\\\\n{[A] } & =\\left\\{\\frac{k_1}{k_{-1}}\\left[A_2\\right]\\right\\}^{1 / 2}\n\\end{aligned}$$</p>\n<p>Substitute $[A]$ in the late,</p>\n<p>late $=k_2[A]\\left[B_2\\right]$</p>\n<p>$$\\begin{aligned}\n& =k_2\\left(\\frac{k_1}{k_{-1}}\\right)^{1 / 2}\\left[A_2\\right]^{1 / 2}\\left[B_2\\right] \\\\\n& =k_2\\left(\\frac{k_1}{k_{-1}}\\right)^{1 / 2}\\left[A_2\\right]^{1 / 2}\\left[B_2\\right]^1\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { Overall rate } & =\\frac{1}{2}+1 \\\\\n& =\\frac{3}{2} \\\\\n& =1.5\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j5lq",
@@ -80,7 +80,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\mathrm{r}_1=\\mathrm{k}[\\mathrm{~A}]^{\\mathrm{n}}[\\mathrm{~B}]^{\\mathrm{m}}$$</p>\n<p>Now $A$ is doubled \\& B is halved in concentration</p>\n<p>$$\\Rightarrow \\mathrm{r}_2=\\mathrm{k} 2^{\\mathrm{n}}[\\mathrm{~A}]^{\\mathrm{n}} \\cdot \\frac{[\\mathrm{~B}]^{\\mathrm{m}}}{2^{\\mathrm{m}}}$$</p>\n<p>Now $\\frac{r_2}{r_1}=2^{(n-m)}$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "maxg2f8b",
@@ -137,7 +137,7 @@
     "difficulty": "medium",
     "solution": "<p>To determine the concentration of $ \\mathrm{B} $ when the rate of formation of $ \\mathrm{B} $ is set to zero, let's consider the reaction sequence:</p>\n\n<p>$$ \\mathrm{A} \\xrightarrow{\\mathrm{K}_1} \\mathrm{B} \\xrightarrow{\\mathrm{K}_2} \\mathrm{C} $$</p>\n\n<p>The rate of formation of $ \\mathrm{B} $ from $ \\mathrm{A} $ is given by:</p>\n\n<p>$$ \\text{Rate of formation of } \\mathrm{B} = \\mathrm{K}_1[\\mathrm{A}] $$</p>\n\n<p>The rate of consumption of $ \\mathrm{B} $ to form $ \\mathrm{C} $ is given by:</p>\n\n<p>$$ \\text{Rate of consumption of } \\mathrm{B} = \\mathrm{K}_2[\\mathrm{B}] $$</p>\n\n<p>At steady state, where the rate of formation of $ \\mathrm{B} $ is set to zero, the rate of formation of $ \\mathrm{B} $ is equal to the rate of its consumption. Therefore, we have:</p>\n\n<p>$$ \\mathrm{K}_1[\\mathrm{A}] = \\mathrm{K}_2[\\mathrm{B}] $$</p>\n\n<p>Solving for $ [\\mathrm{B}] $, we get:</p>\n\n<p>$$ [\\mathrm{B}] = \\frac{\\mathrm{K}_1}{\\mathrm{K}_2} [\\mathrm{A}] $$</p>\n\n<p>Therefore, the correct concentration of $ \\mathrm{B} $ is:</p>\n\n<p><strong>Option D:</strong> $$ \\left(\\frac{\\mathrm{K}_1}{\\mathrm{K}_2}\\right)[\\mathrm{A}] $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldyho7ej",
@@ -193,7 +193,7 @@
     "difficulty": "easy",
     "solution": "Most of the chemical reactions have energy barrier.<br/><br/>\nA positive catalyst in a chemical reaction increases the\nrate of reaction by lowering the energy barrier. It does\nnot alter the energy of reactant as well as product.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "l7en4mqa",
@@ -216,7 +216,7 @@
     "solution": "<p>rate = $$\\frac{k[x]}{X_s+[X]}$$</p>\n<p>Case-1 : $$[X] >  > {X_s};[X] + {X_s} \\approx [X]$$</p>\n<p>rate $$ = {{k[X]} \\over {[X]}} = k$$ (Zero order w.r.t. X)</p>\n<p>I $$\\to$$ P, S</p>\n<p>Case 2 : $$[X] <  < {X_s};[X] + {X_s} \\approx {X_s}$$ </p>\n<p>$$\\therefore$$ rate $$ = {{k[X]} \\over {{X_s}}} = k'[X]$$ (1<sup>st</sup> order w.r.t. X)</p>\n<p>$$\\therefore$$ I $$\\to$$ Q, T</p>\n<p>Case-3 : $$[X] \\approx {X_s}$$</p>\n<p>rate $$ = {{k[X]} \\over {{X_s} + [X]}}$$</p>\n<p>In this case curve-R given in List-II will match.</p>\n<p>$$\\therefore$$ I $$\\to$$ P, Q, R, S, T (The graph of half-life should start from origin)</p>\n<p>(II) rate $$ = {{k[X]} \\over {{X_s} + [X]}}$$</p>\n<p>$$\\because$$ $$[X] <  < {X_s}$$</p>\n<p>$$\\therefore$$ $${X_s} + [X] \\approx {X_s}$$</p>\n<p>$$\\therefore$$ Rate $$ = {{k[X]} \\over {{X_s}}} = k'[X]$$ (1<sup>st</sup> order w.r.t. X)</p>\n<p>$$\\therefore$$ II $$\\to$$ Q, T</p>\n<p>(III) rate $$ = {{k[X]} \\over {{X_s} + [X]}}$$</p>\n<p>$$\\because$$ $$[X] >  > {X_s}$$</p>\n<p>$$\\therefore$$ $${X_s} + [X] \\approx [X]$$</p>\n<p>$$\\therefore$$ rate $$ = {{k[X]} \\over {[X]}} = k$$ (Zero order w.r.t. X)</p>\n<p>$$\\therefore$$ III $$\\to$$ P, S</p>\n<p>(IV) rate $$ = {{k{{[X]}^2}} \\over {{X_s} + [X]}}$$</p>\n<p>$$\\because$$ $$[X] >  > {X_s}$$</p>\n<p>$$\\therefore$$ $${X_s} + [X] \\approx [X]$$</p>\n<p>$$\\therefore$$ rate $$ = {{k{{[X]}^2}} \\over {[X]}} = k[X]$$ (1<sup>st</sup> order w.r.t. X)</p>\n<p>$$\\therefore$$ IV $$\\to$$ Q, T</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krz07z5u",
@@ -238,7 +238,7 @@
     "difficulty": "easy",
     "solution": "Rate = k[A]<sup>n</sup><br><br>comparing units<br><br>$${{(mol/l)} \\over {\\sec }} = k{\\left( {{{mol} \\over l}} \\right)^n}$$<br><br>$$ \\Rightarrow k = mo{l^{(l - n)}}{l^{(n - 1)}}{s^{ - 1}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kugrflhs",
@@ -306,7 +306,7 @@
     "difficulty": "medium",
     "solution": "K<sub>eq</sub> = $${{{k_f}} \\over {{k_b}}}$$ = $${{\\left[ {{N_2}} \\right]{{\\left[ {{H_2}O} \\right]}^2}} \\over {{{\\left[ {{H_2}} \\right]}^2}{{\\left[ {NO} \\right]}^2}}}$$\n\n<br><br>$${k_f}\\left[ {{H_2}} \\right]{\\left[ {NO} \\right]^2} = {k_b}{{\\left[ {{N_2}} \\right]{{\\left[ {{H_2}O} \\right]}^2}} \\over {\\left[ {{H_2}} \\right]}}$$\n<br><br>At equilibrium r<sub>f</sub> = r<sub>b</sub>\n<br><br>Given r<sub>f</sub> = $${k_f}\\left[ {{H_2}} \\right]{\\left[ {NO} \\right]^2}$$\n<br><br>$$ \\therefore $$ r<sub>b</sub> = $${k_b}{{\\left[ {{N_2}} \\right]{{\\left[ {{H_2}O} \\right]}^2}} \\over {\\left[ {{H_2}} \\right]}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ENZ6saNSAeLgZr7FDX1kjcp3fka",
@@ -346,7 +346,7 @@
     "difficulty": "medium",
     "solution": "From Arhenius equation,\n<br><br>K = Ae$$^{ - {{Ea} \\over {RT}}}$$\n<br><br>taking log both sides,\n<br><br>lnk = lnA $$-$$ $${{{Ea} \\over {RT}}}$$\n<br><br>So in lnK vs $${1 \\over T}$$ graph\n<br><br>slope  = $$-$$ $${{{Ea} \\over R}}$$\n<br><br>Rate constant at 400 K is = 10<sup>$$-$$5</sup> s<sup>$$-$$1</sup>\n<br><br>Let rate constant at 500 K is = K\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;ln(10<sup>$$-$$5</sup>) = ln A $$-$$ $${{Ea} \\over {R\\left( {400} \\right)}}$$ . . . (1)\n<br><br>ln K = ln A $$-$$ $${{Ea} \\over {R\\left( {500} \\right)}}$$ . . . .(2)\n<br><br>Subtracting (2) from (1) we get, \n<br><br>ln $${K \\over {{{10}^{ - 5}}}}$$ = $${{{Ea} \\over R}}$$ $$\\left[ {{1 \\over {400}} - {1 \\over {500}}} \\right]$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;2.303 log $${K \\over {{{10}^{ - 5}}}}$$ = 4606 $$\\left[ {{1 \\over {400}} - {1 \\over {500}}} \\right]$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;K = 10<sup>$$-$$4</sup> s<sup>$$-$$1</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Sda0nfjcRYSDjjEV8p9xO",
@@ -368,7 +368,7 @@
     "difficulty": "medium",
     "solution": "Rate law for the reaction,\n<br><br>2A + B $$ \\to $$ C\n<br><br>Rate law (R) = k[A]<sup>x</sup>[B]<sup>y</sup>\n<br><br>From experiment 1 :\n<br><br>R<sub>1</sub> = 0.045 = k[0.05]<sup>x</sup> [0.05]<sup>y</sup> ............(i)\n<br><br>From experiment 2 :\n<br><br>R<sub>2</sub> = 0.090 = k[0.1]<sup>x</sup> [0.05]<sup>y</sup>  ...............(ii)\n<br><br>From experiment 3 :\n<br><br>R<sub>3</sub> = 0.72 = k[0.2]<sup>x</sup> [0.1]<sup>y</sup>  ...................(iii)\n<br><br>Divide equation (ii) by equation (i),\n<br><br>$${{{R_2}} \\over {{R_1}}} = {{0.09} \\over {0.045}} = {{k{{\\left[ {0.1} \\right]}^x}{{\\left[ {0.05} \\right]}^y}} \\over {k{{\\left[ {0.05} \\right]}^x}{{\\left[ {0.05} \\right]}^y}}}$$\n<br><br>$$ \\Rightarrow $$ 2 = (2)<sup>x</sup>\n<br><br>$$ \\Rightarrow $$ x = 1\n<br><br>Divide equation (iii) by equation (ii),\n<br><br>$${{{R_3}} \\over {{R_2}}} = {{0.72} \\over {0.09}} = {{k{{\\left[ {0.2} \\right]}^x}{{\\left[ {0.1} \\right]}^y}} \\over {k{{\\left[ {0.1} \\right]}^x}{{\\left[ {0.05} \\right]}^y}}}$$\n<br><br>$$ \\Rightarrow $$ 8 = 2<sup>x</sup> 2<sup>y</sup>\n<br><br>$$ \\Rightarrow $$ 8 = 2<sup>1</sup> 2<sup>y</sup> [as x = 1]\n<br><br>$$ \\Rightarrow $$ 2<sup>y</sup> = 4\n<br><br>$$ \\Rightarrow $$ y = 2\n<br><br>$$ \\therefore $$ Rate law (R) = k[A]<sup>1</sup>[B]<sup>2</sup>\n\n\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "77MBz4uXb4bQpusHe22VA",
@@ -390,7 +390,7 @@
     "difficulty": "medium",
     "solution": "<p>To determine the time required to consume half of A, we must first determine the rate law for the reaction based on the provided kinetic data.</p>\n\n<p>From the data, we can write the general rate law for the reaction as:</p>\n\n<p>$$ \\text{Rate} = k [A]^m [B]^n $$</p>\n\n<p>We can now use the experimental data to find the values of the exponents $ m $ and $ n $, as well as the rate constant $ k $.</p>\n\n<p>From Experiment I and II, we can see that the initial concentration of A remains constant at 0.10 M while the concentration of B changes.</p>\n\n<p>$$ \\begin{align*} \\text{Experiment I:} \\quad \\text{Rate} = k [0.10]^m [0.20]^n &= 6.93 \\times 10^{-3} \\, \\text{mol L}^{-1} \\text{min}^{-1} \\\\ \\text{Experiment II:} \\quad \\text{Rate} = k [0.10]^m [0.25]^n &= 6.93 \\times 10^{-3} \\, \\text{mol L}^{-1} \\text{min}^{-1} \\end{align*} $$</p>\n\n<p>By comparing the rates from Experiment I and II:</p>\n\n<p>$$ \\frac{[0.10]^m [0.25]^n}{[0.10]^m [0.20]^n} = \\frac{6.93 \\times 10^{-3}}{6.93 \\times 10^{-3}} $$</p>\n\n<p>$$ \\frac{[0.25]^n}{[0.20]^n} = 1 \\implies \\left(\\frac{0.25}{0.20}\\right)^n = 1 \\implies n = 0 $$</p>\n\n<p>Thus, the reaction is zero order with respect to B.</p>\n\n<p>Next, we compare Experiment I and III to determine the order with respect to A:</p>\n\n<p>$$ \\begin{align*} \\text{Experiment I:} \\quad \\text{Rate} = k [0.10]^m [0.20]^0 &= 6.93 \\times 10^{-3} \\, \\text{mol L}^{-1} \\text{min}^{-1} \\\\ \\text{Experiment III:} \\quad \\text{Rate} = k [0.20]^m [0.30]^0 &= 1.386 \\times 10^{-2} \\, \\text{mol L}^{-1} \\text{min}^{-1} \\end{align*} $$</p>\n\n<p>$$ \\frac{k [0.20]^m}{k [0.10]^m} = \\frac{1.386 \\times 10^{-2}}{6.93 \\times 10^{-3}} $$</p>\n\n<p>$$ \\left( \\frac{0.20}{0.10} \\right)^m = 2 \\implies (2)^m = 2 \\implies m = 1 $$</p>\n\n<p>Therefore, the reaction is first-order with respect to A.</p>\n\n<p>Now, we can write the rate law as:</p>\n\n<p>$$ \\text{Rate} = k [A]^1 $$</p>\n\n<p>Let's calculate the rate constant $ k $ using data from any experiment (say Experiment I):</p>\n\n<p>$$ 6.93 \\times 10^{-3} = k \\times 0.10 $$</p>\n\n<p>$$ k = \\frac{6.93 \\times 10^{-3}}{0.10} = 6.93 \\times 10^{-2} \\, \\text{min}^{-1} $$</p>\n\n<p>To determine the half-life (time required to consume half of A) for a first-order reaction, we use the formula:</p>\n\n<p>$$ t_{1/2} = \\frac{0.693}{k} $$</p>\n\n<p>Substituting the value of $ k $:</p>\n\n<p>$$ t_{1/2} = \\frac{0.693}{6.93 \\times 10^{-2}} = 10 \\, \\text{minutes} $$</p>\n\n<p>Therefore, the time required to consume half of A is:</p>\n\n<p>Option B: 10</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "9ZokgutcPux9fYlMYPzm1",
@@ -412,7 +412,7 @@
     "difficulty": "easy",
     "solution": "Rate constant only depends on temperature only and it is independed of concentration of reactants.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ZAGoXhMCcdUYG1BZD96tY",
@@ -434,7 +434,7 @@
     "difficulty": "medium",
     "solution": "<p>We have</p>\n<p>$${O_3}(g) + C{l^ \\bullet }(g) \\to {O_2}(g) + Cl{O^ \\bullet }(g)$$ ...... (1)</p>\n<p>$$Cl{O^ \\bullet }(g) + {O^ \\bullet }(g) \\to {O_2}(g) + C{l^ \\bullet }(g)$$ ...... (2)</p>\n<p>On adding Eq. (1) and Eq. (2), we get the required equation for overall reaction</p>\n<p>$${O_3}(g) + {O^ \\bullet }(g) \\to 2{O_2}(g)$$</p>\n<p>Therefore,</p>\n<p>$${k_{overall}} = {k_1} \\times {k_2}$$</p>\n<p>$$ = 5.2 \\times {10^9} \\times 2.6 \\times {10^{10}}$$</p>\n<p>$$ = 1.4 \\times {10^{20}}$$ L mol<sup>$$-$$1</sup> s<sup>$$-$$1</sup></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "qBIDEnyvDSLvlp0S",
@@ -474,7 +474,7 @@
     "difficulty": "easy",
     "solution": "Let rate of reaction $$ = {{d\\left[ C \\right]} \\over t} = k{\\left[ A \\right]^x}{\\left[ B \\right]^y}$$\n<br><br>Now from the given data\n<br><br>$$1.2 \\times {10^{ - 3}} = k{\\left[ {0.1} \\right]^x}{\\left[ {0.1} \\right]^y}\\,\\,\\,\\,\\,...\\left( i \\right)$$\n<br><br>$$1.2 \\times {10^{ - 3}} = k{\\left[ {0.1} \\right]^x}{\\left[ {0.2} \\right]^y}\\,\\,\\,\\,\\,...\\left( {ii} \\right)$$\n<br><br>$$2.4 \\times {10^{ - 3}} = k{\\left[ {0.2} \\right]^x}{\\left[ {0.1} \\right]^y}\\,\\,\\,\\,...\\left( {iii} \\right)$$\n<br><br>Dividing equation $$(i)$$ by $$(ii)$$\n<br><br>$$ \\Rightarrow \\,\\,\\,\\,{{1.2 \\times {{10}^{ - 3}}} \\over {1.2 \\times {{10}^{ - 3}}}} = {{k{{\\left[ {0.1} \\right]}^x}{{\\left[ {0.1} \\right]}^y}} \\over {k{{\\left[ {0.1} \\right]}^x}{{\\left[ {0.2} \\right]}^y}}}$$\n<br><br>We find, $$y=0$$ \n<br><br>Now dividing equation $$(i)$$ by $$(iii)$$ \n<br><br>$$ \\Rightarrow \\,\\,\\,\\,{{1.2 \\times {{10}^{ - 3}}} \\over {2.4 \\times {{10}^{ - 3}}}} = {{k{{\\left[ {0.1} \\right]}^x}{{\\left[ {0.1} \\right]}^y}} \\over {k{{\\left[ {0.2} \\right]}^x}{{\\left[ {0.1} \\right]}^y}}}$$\n<br><br>We find, $$x=1$$ \n<br><br>Hence $${{d\\left[ C \\right]} \\over {dt}} = k{\\left[ A \\right]^1}{\\left[ B \\right]^0}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "zv76zbXIJUzZ4o8E",
@@ -496,7 +496,7 @@
     "difficulty": "medium",
     "solution": "Since the slow step is the rate  determining step hence-\n<br><br>if we consider option $$(1)$$ we find\n<br><br>Rate $$ = k\\left[ {C{l_2}} \\right]\\left[ {{H_2}S} \\right]$$\n<br><br>Now if we consider option $$(2)$$ we find \n<br><br>Rate $$ = k\\left[ {C{l_2}} \\right]\\left[ {H{S^ - }} \\right]\\,\\,\\,\\,\\,...\\left( 1 \\right)$$\n<br><br>From equation $$(i)$$\n<br><br>$$k = {{\\left[ {{H^ + }} \\right]\\left[ {H{S^ - }} \\right]} \\over {{H_2}S}}$$ $$\\,\\,\\,\\,\\,$$ or\n<br><br>$$\\left[ {H{S^ - }} \\right] = {{k\\left[ {{H_2}S} \\right]} \\over {{H^ + }}}$$\n<br><br>Substituting this value in equation $$(1)$$ we find \n<br><br>Rate $$ = k\\left[ {C{l_2}} \\right]K{{\\left[ {{H_2}S} \\right]} \\over {{H^ + }}}$$\n<br><br>$$ = k'{{\\left[ {C{l_2}} \\right]\\left[ {{H_2}S} \\right]} \\over {\\left[ {{H^ + }} \\right]}}$$\n<br><br>hence only, mechanism $$(1)$$ is consistent with the given rate equation.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "kKwqLviw41BLPotu",
@@ -518,7 +518,7 @@
     "difficulty": "easy",
     "solution": "Since the reaction is $$2$$nd order w.r.t CO. Thus, rate law is given as. \n<br><br>$$r = k{\\left[ {CO} \\right]^2}$$ \n<br><br>Let initial concentration of $$CO$$ is a i.e. $$\\left[ {CO} \\right] = a$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,{r_1} = k{\\left( a \\right)^2} = k{a^2}$$ \n<br><br>when concentration becomes doubled, i.e. $$\\left[ {CO} \\right] = 2a$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,{r_2} = k{\\left( {2a} \\right)^2} = 4k{a^2}$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,{r_2} = 4{r_1}$$ \n<br><br>So, the rate of reaction becomes $$4$$ times.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "s2ZXsTcGrJPXu1R4",
@@ -540,7 +540,7 @@
     "difficulty": "easy",
     "solution": "The velocity constant depends on temperature only. It is independent of concentration of reactants. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Ew0zFtKLlZmvWycu",
@@ -562,7 +562,7 @@
     "difficulty": "easy",
     "solution": "$$Rat{e_1} = k{\\left[ A \\right]^n}{\\left[ B \\right]^m};$$ \n<br><br>$$Rat{e_2} = k{\\left[ {2A} \\right]^n}{\\left[ {{\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle 2$}}B} \\right]^m}$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,{{Rat{e_2}} \\over {Rat{e_1}}} = {{k{{\\left[ {2A} \\right]}^n}{{\\left[ {{\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle 2$}}B} \\right]}^m}} \\over {k{{\\left[ A \\right]}^n}{{\\left[ B \\right]}^m}}}$$\n<br><br>$$ = {\\left[ 2 \\right]^n}{\\left[ {{\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle 2$}}} \\right]^m} = {2^n}{.2^{ - m}} = {2^{n - m}}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "A4qBbd9hlrVScvAw",
@@ -584,6 +584,6 @@
     "difficulty": "easy",
     "solution": "<b>NOTE :</b>  Order is the sum of the power of the concentrations terms in rate law expression. \n<br><br>Hence the order of reaction is $$=1+2=3$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

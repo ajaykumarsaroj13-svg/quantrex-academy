@@ -19,7 +19,7 @@
     "difficulty": "hard",
     "solution": "<p>$$ \\begin{aligned} g(x) & =f\\left((\\tan x-1)^2+a-1\\right) \\\\ g^{\\prime}(x) & =f^{\\prime}\\left((\\tan x-1)^2+a-1\\right) \\cdot 2(\\tan x-1) \\cdot \\sec ^2 x . \\,\\,\\,\\,\\,\\,\\,\\,...(i)\\end{aligned} $$</p>\n<p>Given $f^{\\prime \\prime}(x)>0 \\quad \\forall x \\in R$</p>\n<p>$\\therefore f^{\\prime}(x)$ is increasing function</p>\n<p>Case (i) $0<x<\\frac{\\pi}{4}$</p>\n<p>$$ \\begin{aligned} & 0 < \\tan x > 1 \\\\ & -1<\\tan x-1 < 0 \\\\ & 0 < (\\tan x-1)^2 < 1 \\\\ & a-1 < (\\tan x-1)^2+(a-1) < a \\\\ & \\therefore f^{\\prime}\\left((\\tan x-1)^2+a-1\\right)>f^{\\prime}(a-1)=0 \\end{aligned} $$</p>\n<p>From (i) $g^{\\prime}(x)=(+)(-)(+)=-v e$</p>\n<p>$g(x)$ is decreasing in $\\left(0, \\frac{\\pi}{4}\\right)$</p>\n<p>Similarly we can prove that $g(x)$ is increasing in $\\left(\\frac{\\pi}{4}, \\frac{\\pi}{2}\\right)$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml98p3cv",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p><b>Step 1: Write $f(x)$ without absolute values for different intervals</b></p>\n<p>When $x \\geq 1$, $\\ln x$ is positive and $x - 1$ is also positive. So:</p>\n<p>\n\n$$ f(x) = |\\ln x| - |x-1| = \\ln x - (x - 1) = \\ln x - x + 1 $$\n\nfor $x \\geq 1$.\n\n</p>\n<p>When $0 < x < 1$, $\\ln x$ is negative and $x - 1$ is negative. So:</p>\n<p>\n\n$$ f(x) = |\\ln x| - |x-1| = -\\ln x - (-(x - 1)) = -\\ln x + x - 1 $$\n\nfor $0 < x < 1$.\n\n</p>\n<p>So we can write:\n\n$$ f(x) =   \\begin{cases}     \\ln x - x + 1 & \\text{for } x \\geq 1 \\\\\\\\      -\\ln x + x - 1 & \\text{for } 0 < x < 1   \\end{cases} $$\n\n</p>\n<p><b>Step 2: Find the derivative $f'(x)$ in both cases</b></p>\n<p>For $x \\geq 1,$</p>\n<p>\n\n$$ f'(x) = \\frac{d}{dx} (\\ln x - x + 1) = \\frac{1}{x} - 1 $$\n\n</p>\n<p>For $0 < x < 1,$</p>\n<p>\n\n$$ f'(x) = \\frac{d}{dx} (-\\ln x + x - 1) = -\\frac{1}{x} + 1 $$\n\n</p>\n<p>So,\n\n$$ f'(x) =   \\begin{cases}     \\frac{1}{x} - 1 & \\text{for } x \\geq 1 \\\\\\\\      -\\frac{1}{x} + 1 & \\text{for } 0 < x < 1   \\end{cases} $$\n\n</p>\n<p><b>Step 3: Check differentiability at $x = 1$</b></p>\n<p>\n\nFrom the left of $x = 1$:\n\n$$ f'(1^-) = -\\frac{1}{1} + 1 = 0 $$\n\n</p>\n<p>\n\nFrom the right of $x = 1$:\n\n$$ f'(1^+) = \\frac{1}{1} - 1 = 0 $$\n\n</p>\n<p>\n\nBoth one-sided derivatives are equal. So $f(x)$ is differentiable at $x = 1$.\n\n</p>\n<p>\n\nSince the formulas for $f'(x)$ are valid everywhere for $x > 0$, $f(x)$ is differentiable for all $x > 0$.\n\n</p>\n<p><b>Step 4: Check if $f(x)$ is increasing or decreasing</b></p>\n<p>\n\nFor $x > 1$:\n\n$$ f'(x) = \\frac{1}{x} - 1 $$\n\nSince $x > 1$, $\\frac{1}{x} < 1$. So $f'(x) < 0$, which means $f(x)$ is decreasing for $x > 1$.\n\n</p>\n<p>\n\nFor $0 < x < 1$:\n\n$$ f'(x) = -\\frac{1}{x} + 1 $$\n\nHere, $\\frac{1}{x} > 1$, so $-\\frac{1}{x} + 1 < 0$, so $f'(x) < 0$. Therefore, $f(x)$ is decreasing for $0 < x < 1$ also.\n\n</p>\n<p><b>Step 5: Check the statements</b></p>\n<p>\n\n(I) $f$ is differentiable at all $x > 0$: <b>True</b>\n\n</p>\n<p>\n\n(II) $f$ is increasing in $(0, 1)$: <b>False</b>\n\n</p>\n<p>\n\n(III) $f$ is decreasing in $(1, \\infty)$: <b>True</b>\n\n</p>\n<p>\n\nSo only statements (I) and (III) are correct.\n\n</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml98p5xq",
@@ -97,7 +97,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{f}^{\\prime}(\\mathrm{x})=\\frac{2}{\\mathrm{x}-2}-2 \\mathrm{x}+\\mathrm{a} \\geq 0 \\\\\n& \\mathrm{f}^{\\prime \\prime}(\\mathrm{x})=\\frac{-2}{(\\mathrm{x}-2)^2}-2<0 \\\\\n& \\mathrm{f}^{\\prime}(\\mathrm{x}) \\downarrow \\\\\n& \\mathrm{f}^{\\prime}(3) \\geq 0 \\\\\n& 2-6+\\mathrm{a} \\geq 0 \\\\\n& \\mathrm{a} \\geq 4 \\\\\n& \\mathrm{a}_{\\min }=4 \\\\\n& \\mathrm{~g}(\\mathrm{x})=(\\mathrm{x}-1)^3(\\mathrm{x}+2-\\mathrm{a})^2 \\\\\n& \\mathrm{~g}(\\mathrm{x})=(\\mathrm{x}-1)^3(\\mathrm{x}-2)^2 \\\\\n& \\mathrm{~g}^{\\prime}(\\mathrm{x})=(\\mathrm{x}-1)^3 2(\\mathrm{x}-2)+(\\mathrm{x}-2)^2 3(\\mathrm{x}-1)^2 \\\\\n& =(\\mathrm{x}-1)^2(\\mathrm{x}-2)(2 \\mathrm{x}-2+3 \\mathrm{x}-6) \\\\\n& =(\\mathrm{x}-1)^2(\\mathrm{x}-2)(5 \\mathrm{x}-8)<0 \\\\\n& \\mathrm{x} \\in\\left(\\frac{8}{5}, 2\\right) \\\\\n& 100(\\mathrm{a}+\\mathrm{b}-\\mathrm{c})=100\\left(4+\\frac{8}{5}-2\\right)=360\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dmr7qo",
@@ -119,7 +119,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n\\mathrm{f}(\\mathrm{x}) & =\\frac{\\mathrm{x}}{3}+\\frac{3}{\\mathrm{x}}+3, \\mathrm{x} \\neq 0 \\\\\n\\mathrm{f}^{\\prime}(\\mathrm{x}) & =\\frac{1}{3}-\\frac{3}{\\mathrm{x}^2}=0 \\quad \\Rightarrow \\mathrm{x}= \\pm 3 \\\\\n\\mathrm{f}^{\\prime}(\\mathrm{x}) & =\\frac{\\mathrm{x}^2-3}{3 \\mathrm{x}^2} \\\\\n\\mathrm{f}^{\\prime}(\\mathrm{x}) & >0 \\forall(-\\infty,-3) \\cup(3, \\infty) \\rightarrow \\text { increasing } \\\\\n\\mathrm{f}^{\\prime}(\\mathrm{x}) & <0 \\forall(-3,0) \\cup(0,3) \\rightarrow \\text { decreasing } \\\\\n\\sum_{\\mathrm{i}=1}^5 \\alpha_{\\mathrm{i}}^2 & =(-3)^2+(3)^2+(-3)^2+(0)^2+(3)^2 \\\\\n& =36\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lsaps6wb",
@@ -141,7 +141,7 @@
     "difficulty": "medium",
     "solution": "$$\n5 f(x)+4 f(1 / x)=x^2-2\n$$ ........(1)\n\n<br><br>Replace $x$ by $1 / x$\n<br><br>$$\n5 f(1 / x)+4 f(x)=\\frac{1}{x^2}-2\n$$ ..........(2)\n\n<br><br>Multiply equation (1) by 5 and multiply equation (2) by 4 and then subtract equation (2) from (1)\n<br><br>$\\begin{aligned} &amp; 25 f(x)-16 f(x)=5 x^2-10-\\frac{4}{x^2}+8 \\\\\\\\ &amp; 9 f(x)=5 x^2-\\frac{4}{x^2}-2 \\\\\\\\ &amp; 9 f(x)=\\frac{5 x^4-4-2 x^2}{x^2}\\end{aligned}$\n<br><br>$\\begin{aligned} &amp; y=9 x^2 f(x) \\\\\\\\ &amp; y=5 x^4-2 x^2-4 \\\\\\\\ &amp; y^{\\prime}=20 x^3-4 x \\\\\\\\ &amp; \\text { Put } y^{\\prime}&gt;0 \\\\\\\\ &amp; 20 x^3-4 x&gt;0 \\\\\\\\ &amp; 5 x^3-x&gt;0 \\\\\\\\ &amp; x\\left(5 x^2-1\\right)&gt;0\\end{aligned}$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lt4ueirs/bdaf4cf1-dcad-4fa2-b9ed-fb23b230da96/ec3f4080-d5b1-11ee-954c-abbae7354768/file-6y3zli1lt4ueirt.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lt4ueirs/bdaf4cf1-dcad-4fa2-b9ed-fb23b230da96/ec3f4080-d5b1-11ee-954c-abbae7354768/file-6y3zli1lt4ueirt.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 1st February Morning Shift Mathematics - Application of Derivatives Question 51 English Explanation\">\n<br><br>$x \\in\\left(-\\frac{1}{\\sqrt{5}}, 0\\right) \\cup\\left(\\frac{1}{\\sqrt{5}}, \\infty\\right)$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsfkgqg0",
@@ -163,7 +163,7 @@
     "difficulty": "easy",
     "solution": "<p>$$f(x)=\\frac{x}{x^2-6 x-16}$$</p>\n<p>Now,</p>\n<p>$$\\begin{aligned}\n& \\mathrm{f}^{\\prime}(\\mathrm{x})=\\frac{-\\left(\\mathrm{x}^2+16\\right)}{\\left(\\mathrm{x}^2-6 \\mathrm{x}-16\\right)^2} \\\\\n& \\mathrm{f}^{\\prime}(\\mathrm{x})<0\n\\end{aligned}$$</p>\n<p>Thus $$f(x)$$ is decreasing in</p>\n<p>$$(-\\infty,-2) \\cup(-2,8) \\cup(8, \\infty)$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsf073t9",
@@ -185,7 +185,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{f}^{\\prime}(\\mathrm{x})=12 \\sqrt{2} \\mathrm{x}^2-3 \\sqrt{2} \\geq 0 \\text { for }\\left[\\frac{1}{2}, 1\\right] \\\\\n& \\mathrm{f}\\left(\\frac{1}{2}\\right)<0\n\\end{aligned}$$</p>\n<p>$$\\mathrm{f}(1)>0 \\Rightarrow(\\mathrm{A})$$ is correct.</p>\n<p>$$f(x)=\\sqrt{2}\\left(4 x^3-3 x\\right)-1=0$$</p>\n<p>Let $$\\cos \\alpha=\\mathrm{x}$$,</p>\n<p>$$\\cos 3 \\alpha=\\cos \\frac{\\pi}{4} \\Rightarrow \\alpha=\\frac{\\pi}{12}$$</p>\n<p>$$\\mathrm{x}=\\cos \\frac{\\pi}{12}$$</p>\n<p>(4) is correct.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd4jja0",
@@ -207,7 +207,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f: R \\rightarrow(0, \\infty) \\\\\n& \\lim _{x \\rightarrow \\infty} \\frac{f(7 x)}{f(x)}=1\n\\end{aligned}$$</p>\n<p>$$\\because \\mathrm{f}$$ is increasing</p>\n<p>$$\\begin{aligned}\n& \\therefore \\mathrm{f}(\\mathrm{x})<\\mathrm{f}(5 \\mathrm{x})<\\mathrm{f}(7 \\mathrm{x}) \\\\\n& \\because \\frac{\\mathrm{f}(\\mathrm{x})}{\\mathrm{f}(\\mathrm{x})}<\\frac{\\mathrm{f}(5 \\mathrm{x})}{\\mathrm{f}(\\mathrm{x})}<\\frac{\\mathrm{f}(7 \\mathrm{x})}{\\mathrm{f}(\\mathrm{x})} \\\\\n& 1<\\lim _{\\mathrm{x} \\rightarrow \\infty} \\frac{\\mathrm{f}(5 \\mathrm{x})}{\\mathrm{f}(\\mathrm{x})}<1 \\\\\n& \\therefore\\left[\\frac{\\mathrm{f}(5 \\mathrm{x})}{\\mathrm{f}(\\mathrm{x})}-1\\right] \\\\\n& \\Rightarrow 1-1=0\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd4mvvi",
@@ -229,7 +229,7 @@
     "difficulty": "hard",
     "solution": "<p>$$\\begin{aligned}\n&amp; f(x)=e^{x^3-3 x+1} \\\\\n&amp; f^{\\prime}(x)=e^{x^3-3 x+1} \\cdot\\left(3 x^2-3\\right) \\\\\n&amp; =e^{x^3-3 x+1} \\cdot 3(x-1)(x+1)\n\\end{aligned}$$</p>\n<p>For $$\\mathrm{f}^{\\prime}(\\mathrm{x}) \\geq 0$$</p>\n<p>$$\\therefore \\mathrm{f}(\\mathrm{x})$$ is increasing function</p>\n<p>$$\\begin{aligned}\n&amp; \\therefore \\mathrm{a}=\\mathrm{e}^{-\\infty}=0=\\mathrm{f}(-\\infty) \\\\\n&amp; \\mathrm{b}=\\mathrm{e}^{-1+3+1}=\\mathrm{e}^3=\\mathrm{f}(-1) \\\\\n&amp; \\mathrm{P}(2 \\mathrm{~b}+4, \\mathrm{a}+2) \\\\\n&amp; \\therefore \\mathrm{P}\\left(2 \\mathrm{e}^3+4,2\\right)\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsjw7x98/08591748-2ee9-41c3-9af0-f822bc19a883/916485c0-ca2c-11ee-8854-3b5a6c9e9092/file-6y3zli1lsjw7x99.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsjw7x98/08591748-2ee9-41c3-9af0-f822bc19a883/916485c0-ca2c-11ee-8854-3b5a6c9e9092/file-6y3zli1lsjw7x99.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 31st January Evening Shift Mathematics - Application of Derivatives Question 47 English Explanation\"></p>\n<p>$$\\mathrm{d}=\\frac{\\left(2 \\mathrm{e}^3+4\\right)+2 \\mathrm{e}^{-3}-4}{\\sqrt{1+\\mathrm{e}^{-6}}}=2 \\sqrt{1+\\mathrm{e}^6}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv7v3jxe",
@@ -273,7 +273,7 @@
     "difficulty": "medium",
     "solution": "<p>First note that  </p>\n<p>$$f(x)=x^x=e^{\\,x\\ln x}\\,,\\quad x>0.$$  </p>\n<p>Differentiating gives  </p>\n<p>$$f'(x)=x^x\\bigl(\\ln x+1\\bigr)\\,. $$  </p>\n<p>Since $x^x>0$, the sign of $f'(x)$ is the sign of $\\ln x+1$.  Hence  </p>\n<p>$ f'(x)>0\\quad\\Longleftrightarrow\\quad \\ln x>-1\\quad\\Longleftrightarrow\\quad x>\\frac1e. $  </p>\n<p>So $f$ is strictly increasing for all $x>1/e$.  Among the given choices that corresponds to  </p>\n<p>Option D: $\\displaystyle\\bigl[\\tfrac1e,\\infty\\bigr)$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv5gt1vv",
@@ -295,7 +295,7 @@
     "difficulty": "medium",
     "solution": "<p>Let's analyze the function $$f(x) = (\\cos x) - x + 1$$ over the interval $$[0, \\pi]$$ and the statements provided.</p>\n\n<p>First, let's consider statement (S1):</p>\n\n<p>(S1) $$f(x)=0$$ for only one value of $$x$$ in $$[0, \\pi]$$.</p>\n\n<p>To examine this statement, we need to explore the zeros of the function $$f(x)$$ within the given interval. Let's define and analyze the function:</p>\n\n<p>$$f(x) = \\cos x - x + 1$$</p>\n\n<p>We seek to determine if $$f(x) = 0$$ has only one solution in the interval $$[0, \\pi]$$. To do this, we can use the Intermediate Value Theorem and the behavior of the function's derivative. First, compute the derivative of $$f(x)$$:</p>\n\n<p>$$f'(x) = \\frac{d}{dx}(\\cos x - x + 1) = -\\sin x - 1$$</p>\n\n<p>The critical points occur when $$f'(x) = 0$$:\n\n<p>$$- \\sin x - 1 = 0 \\Rightarrow \\sin x = -1$$.</p></p>\n\n<p>The equation $$\\sin x = -1$$ does not hold for any $$x$$ in $$[0, \\pi]$$. Note that:\n\n<ul>\n\n<li>For $$x \\in [0, \\frac{\\pi}{2}]$$, $$\\sin x$$ ranges from 0 to 1.</li><br>\n\n<li>For $$x \\in [\\frac{\\pi}{2}, \\pi]$$, $$\\sin x$$ ranges from 1 to 0.</p></li>\n\n</ul>\n\n<p>Since $$f'(x)$$ is always negative (i.e., $$f'(x) < 0$$), $$f(x)$$ is a strictly decreasing function in $$[0, \\pi]$$. Moreover, we evaluate:</p>\n\n<p>$$f(0) = \\cos 0 - 0 + 1 = 1 + 1 = 2$$</p>\n\n<p>$$f(\\pi) = \\cos \\pi - \\pi + 1 = -1 - \\pi + 1 = -\\pi$$</p>\n\n<p>Given the continuous and strictly decreasing nature of $$f(x)$$ in $$[0, \\pi]$$, by the Intermediate Value Theorem, there is exactly one value of $$x$$ in the interval $$[0, \\pi]$$ where $$f(x) = 0$$, confirming (S1).</p>\n\n<p>Now, let's consider statement (S2):</p>\n\n<p>(S2) $$f(x)$$ is decreasing in $$\\left[0, \\frac{\\pi}{2}\\right]$$ and increasing in $$\\left[\\frac{\\pi}{2}, \\pi\\right]$$.</p>\n\n<p>We already analyzed that $$f'(x)$$ shows that $$f'(x) = -\\sin x - 1$$ is always less than zero in $$[0, \\pi]$$. No interval exists where the derivative is positive. This means that $$f(x)$$ is strictly decreasing throughout the entire interval of $$[0, \\pi]$$, invalidating (S2).</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><b>Option B</b>: Only (S1) is correct.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luxwdep3",
@@ -334,7 +334,7 @@
     "difficulty": "medium",
     "solution": "We have, $g(x)=f(x)+f(1-x)$ \n<br/><br/>Differentiating both side, we get \n<br/><br/>$g^{\\prime}(x)=f^{\\prime}(x)-f^{\\prime}(1-x)$ \n<br/><br/>As $f^{\\prime \\prime}(x)>0, f^{\\prime}(x)$ is an increasing function.\n<br/><br/>Also, $g(x)=f(x)+f(2 a-x)$ is always symmetric about $x=a$\n<br/><br/>So, $g(x)=f(x)+f(1-x)$ is also symmetric about $x=1 / 2$\n<br/><br/>$\\therefore g$ is decreasing in the interval $(0,1 / 2)$ and increasing in the interval $(1 / 2,1)$.\n<br/><br/>Now,\n<br/><br/>$$\n\\begin{aligned}\n& \\tan ^{-1} 2 \\alpha+\\tan ^{-1}\\left(\\frac{1}{2}\\right)+\\tan ^{-1}\\left(\\frac{\\alpha+1}{\\alpha}\\right) \\\\\\\\\n& =\\tan ^{-1} 1+\\tan ^{-1}(2)+\\tan ^{-1} 3=\\pi\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldv2lvfb",
@@ -356,7 +356,7 @@
     "difficulty": "medium",
     "solution": "$g(x)=f(-x)-f(x)$\n<br/><br/>\n$$\n\\begin{aligned}\n& =\\frac{1}{1-e^{x}}-\\frac{1}{1-e^{-x}} \\\\\\\\\n& =\\frac{1}{1-e^{x}}-\\frac{e^{x}}{e^{x}-1} \\\\\\\\\n& =\\frac{1+e^{x}}{1-e^{x}} \\\\\\\\\ng^{\\prime}(x) & =\\frac{\\left(1-e^{x}\\right) e^{x}-\\left(1+e^{x}\\right)\\left(-e^{x}\\right)}{\\left(1-e^{x}\\right)^{2}} \\\\\\\\\n& =\\frac{e^{x}-2 e^{x}+e^{x}+2 e^{x}}{\\left(1-e^{x}\\right)^{2}}>0\n\\end{aligned}\n$$<br/><br/>\n<p>So both statements are correct</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5bavxs8",
@@ -378,7 +378,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\because$$ $${f_\\lambda }(x) = 4\\lambda {x^3} - 36\\lambda {x^2} + 36\\lambda  + 48$$</p>\n<p>$$\\therefore$$ $$f{'_\\lambda }(x) = 12(\\lambda {x^2} - 6\\lambda x + 3)$$</p>\n<p>For $${f_\\lambda }(x)$$ increasing : $${(6\\lambda )^2} - 12\\lambda  \\le 0$$</p>\n<p>$$\\therefore$$ $$\\lambda  \\in \\left[ {0,\\,{1 \\over 3}} \\right]$$</p>\n<p>$$\\therefore$$ $$\\lambda^ * = {1 \\over 3}$$</p>\n<p>Now, $$f_\\lambda ^*(x) = {4 \\over 3}{x^3} - 12{x^2} + 36x + 48$$</p>\n<p>$$\\therefore$$ $$f_\\lambda ^*(1) + f_\\lambda ^*( - 1) = 73{1 \\over 2} - 1{1 \\over 2} = 72$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5c19dx8",
@@ -400,7 +400,7 @@
     "difficulty": "medium",
     "solution": "Lets draw the curve $y=f(x)=4 \\log _e(x-1)-2 x^2$ $+4 x+5, x&gt;1$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lkavtohl/5b2f07ad-6815-4447-8b5a-bda6bf0cb5b3/3c6a7290-26d6-11ee-b52b-3728f15f4ced/file-6y3zli1lkavtohm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lkavtohl/5b2f07ad-6815-4447-8b5a-bda6bf0cb5b3/3c6a7290-26d6-11ee-b52b-3728f15f4ced/file-6y3zli1lkavtohm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2022 (Online) 24th June Morning Shift Mathematics - Application of Derivatives Question 90 English Explanation\">\n<br>$$\n\\begin{aligned}\n&amp;f(x)=4 \\log _e(x-1)-2 x^2+4 x+5, x &gt; 1 \\\\\\\\\n&amp;f^{\\prime}(x)=\\frac{4}{x-1}-4(x-1) \\\\\\\\\n&amp;f^{\\prime \\prime}(x)=\\frac{-4}{(x-1)^2}-4\\\\\\\\\n&amp;\\text {For} 1 &lt; x&lt; 2 \\Rightarrow f^{\\prime}(x) &gt; 0 \\\\\\\\\n&amp;\\text {For}~ x &gt; 2 \\Rightarrow f^{\\prime}(x)&lt;0 \\text { (option } A \\text { is correct) } \\\\\\\\\n&amp;f(x)=-1 \\text { has two solution (option } B \\text { is correct) } \\\\\\\\\n&amp;f(e) &gt; 0 \\\\\\\\\n&amp;f(e+1) &lt; 0 \\\\\\\\\n&amp;f(e) \\cdot f(e+1)&lt;0(\\text { option } D \\text { is correct) } \\\\\\\\\n&amp;f^{\\prime}(e)-f^{\\prime \\prime}(2)=\\frac{4}{e-1}-4(e-1)+8 &gt; 0\n\\end{aligned}\n$$\n<br><br>(option C is incorrect)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6gjnyuy",
@@ -439,7 +439,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = 2{\\cos ^{ - 1}}x + 4{\\cot ^{ - 1}}x - 3{x^2} - 2x + 10\\,\\forall x \\in [ - 1,1]$$</p>\n<p>$$ \\Rightarrow f'(x) =  - {2 \\over {\\sqrt {1 - {x^2}} }} - {4 \\over {1 + {x^2}}} - 6x - 2 < 0\\,\\forall x \\in [ - 1,1]$$</p>\n<p>So f(x) is decreasing function and range of f(x) is [f(1), f($$-$$1)], which is [$$\\pi$$ + 5, 5$$\\pi$$ + 9]</p>\n<p>Now $$4a - b = 4(\\pi  + 5) - (5\\pi  + 9)$$</p>\n<p>$$ = 11 - \\pi $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6nm1791",
@@ -461,7 +461,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = x{e^{x(1 - x)}},\\,x \\in R$$</p>\n<p>$$f'(x) = x{e^{x(1 - x)}}\\,.\\,(1 - 2x) + {e^{x(1 - x)}}$$</p>\n<p>$$ = {e^{x(1 - x)}}[x - 2{x^2} + 1]$$</p>\n<p>$$ =  - {e^{x(1 - x)}}[2{x^2} - x - 1]$$</p>\n<p>$$ =  - {e^{x(1 - x)}}(2x + 1)(x - 1)$$</p>\n<p>$$\\therefore$$ $$f(x)$$ is increasing in $$\\left( { - {1 \\over 2},1} \\right)$$ and decreasing in $$\\left( { - \\infty ,\\, - {1 \\over 2}} \\right) \\cup \\left( {1,\\infty } \\right)$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l566qk0u",
@@ -483,7 +483,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lc8ekncq/3bb86ec8-2e21-4aa5-b7aa-771daae2cbcc/79bb29a0-8717-11ed-b3ec-0bde88094e1e/file-1lc8ekncr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lc8ekncq/3bb86ec8-2e21-4aa5-b7aa-771daae2cbcc/79bb29a0-8717-11ed-b3ec-0bde88094e1e/file-1lc8ekncr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 28th June Morning Shift Mathematics - Application of Derivatives Question 101 English Explanation\"><br>\n$f^{\\prime}(x)=7 x^{6}+15 x^{2}+3&gt;0 \\,\\,\\forall\\,\\, x \\in R$\n<br><br>\n$f(x)$ is always increasing\n<br><br>\nSo clearly it intersects\n<br><br>\nx-axis at only one point",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mQLintGwdQfFf2qnw61kmiw0lr1",
@@ -505,7 +505,7 @@
     "difficulty": "medium",
     "solution": "f(x) = 3 log<sub>e</sub> $$\\left| {{{x - 1} \\over {x + 1}}} \\right| - {2 \\over {x - 1}}$$\n<br><br>$$f'(x) = {{3(x + 1)} \\over {x - 1}} \\times {{(x + 1) - (x - 1)} \\over {{{(x + 1)}^2}}} + {2 \\over {{{(x - 1)}^2}}} &gt; 0$$<br><br>$$ = {6 \\over {{x^2} - 1}} + {2 \\over {{{(x - 1)}^2}}} &gt; 0$$<br><br>$$ = {{2(3(x - 1) + (x + 1))} \\over {{{(x - 1)}^2}(x + 1)}} = {{4(2x - 1)} \\over {{{(x - 1)}^2}(x + 1)}} &gt; 0$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1kodazk6v/d777119d-a06e-437a-ade6-7614aa443845/2e0fd070-aea4-11eb-a50b-27415d4f77e4/file-1kodazk6w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 16th March Evening Shift Mathematics - Application of Derivatives Question 121 English Explanation\"><br><br>$$ \\Rightarrow x \\in ( - \\infty , - 1) \\cup \\left[ {{1 \\over 2},\\infty ) - \\{ 1\\} } \\right.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "4M0JODSlLdB22Grotz1kmkn7lpe",
@@ -527,7 +527,7 @@
     "difficulty": "hard",
     "solution": "$$f(x) = \\left\\{ {\\matrix{\n   { - \\left( {2 - \\sin {1 \\over x}} \\right)x} &amp; , &amp; {x &lt; 0}  \\cr \n   0 &amp; , &amp; {x = 0}  \\cr \n   {\\left( {2 - \\sin {1 \\over x}} \\right)x} &amp; , &amp; {x &gt; 0}  \\cr \n\n } } \\right.$$<br><br>$$f'(x) = \\left\\{ \\matrix{\n   - x\\left( { - \\cos {1 \\over x}} \\right)\\left( { - {1 \\over {{x^2}}}} \\right) - \\left( {2 - \\sin {1 \\over x}} \\right),x &lt; 0 \\hfill \\cr \n  x\\left( { - \\cos {1 \\over x}} \\right)\\left( { - {1 \\over {{x^2}}}} \\right) + \\left( {2 - \\sin {1 \\over x}} \\right),x &gt; 0 \\hfill \\cr}  \\right.$$<br><br>= $$\\left\\{ \\matrix{\n   - {1 \\over x}\\cos {1 \\over x} + \\sin {1 \\over x} - 2,x &lt; 0 \\hfill \\cr \n  {1 \\over x}\\cos {1 \\over x} - \\sin {1 \\over x} + 2,x &gt; 0 \\hfill \\cr}  \\right.$$\n<br><br>$$ \\therefore $$ f'(x) is an oscillating function which is non-monotonic on ($$-$$$$\\infty $$, 0) and (0, $$\\infty $$).",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kto3gifb",
@@ -549,7 +549,7 @@
     "difficulty": "hard",
     "solution": "$$f(x) = {x^3} - 6{x^2} + ax + b$$<br><br>$$f(2) = 8 - 24 + 2a + b = 0$$<br><br>$$2a + b = 16$$ .... (1)<br><br>$$f(4) = 64 - 96 + 4a + b = 0$$<br><br>$$4a + b = 32$$ .... (2)<br><br>Solving (1) and (2)<br><br>a = 8, b = 0<br><br>$$f(x) = {x^3} - 6{x^2} + 8x$$<br><br>$$f'(x) = 3{x^2} - 12x + 8$$<br><br>$$f''(x) = 6x - 12$$<br><br>$$\\Rightarrow$$ f'(x) is $$ \\uparrow $$ for x &gt; 2, and f'(x) is $$ \\downarrow $$ for x &lt; 2<br><br>$$f'(2) = 12 - 24 + 8 =  - 4$$<br><br>$$f'(4) = 48 - 48 + 8 = 8$$<br><br>$$f'(x) = 3{x^2} - 12x + 8$$<br><br>vertex (2, $$-$$4)<br><br>f'(2) = $$-$$4, f'(4) = 8, f'(3) = 27 $$-$$ 36 + 8<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kwopvl27/adfb9c3f-bff0-4d72-a03f-536e9ff2142c/c29c0ef0-534c-11ec-9cbb-695a838b20fb/file-1kwopvl28.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kwopvl27/adfb9c3f-bff0-4d72-a03f-536e9ff2142c/c29c0ef0-534c-11ec-9cbb-695a838b20fb/file-1kwopvl28.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2021 (Online) 1st September Evening Shift Mathematics - Application of Derivatives Question 104 English Explanation\"><br>f'(x<sub>1</sub>) = $$-$$1, then x<sub>1</sub> = 3<br><br>f'(x<sub>2</sub>) = 0<br><br>Again<br><br>f'(x) &lt; 0 for x $$\\in$$ (2, x<sub>4</sub>)<br><br>f'(x) &gt; 0 for x $$\\in$$ (x<sub>4</sub>, 4)<br><br>x<sub>4</sub> $$\\in$$ (3, 4)<br><br>f(x) = x<sup>3</sup> $$-$$ 6x<sup>2</sup> + 8x<br><br>f(3) = 27 $$-$$ 54 + 24 = $$-$$3<br><br>f(4) = 64 $$-$$ 96 + 32 = 0<br><br>For x<sub>4</sub>(3, 4)<br><br>f(x<sub>4</sub>) &lt; $$-$$3$$\\sqrt 3 $$<br><br>and f'(x<sub>3</sub>) &gt; $$-$$4<br><br>2f'(x<sub>3</sub>) &gt; $$-$$8<br><br>So, 2f'(x<sub>3</sub>) = $$\\sqrt 3 $$ f(x<sub>4</sub>)<br><br>Correct Ans. (a).",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krtbxxgh",
@@ -571,7 +571,7 @@
     "difficulty": "medium",
     "solution": "$$f'(x)\\left\\{ {\\matrix{\n   { - 4{x^2} + 4x + 3} &amp; {x &gt; 0}  \\cr \n   {3{e^x}(1 + x)} &amp; {x \\le 0}  \\cr \n\n } } \\right.$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1krutwtxn/b16e8938-c778-41fa-a6b2-195f3cc75a8c/28cab5b0-f3ac-11eb-a605-b34dacb82f1b/file-1krutwtxo.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 22th July Evening Shift Mathematics - Application of Derivatives Question 114 English Explanation\"><br>For x &gt; 0, $$f'(x) =  - 4{x^2} + 4x + 3$$<br><br>f(x) is increasing in $$\\left( { - {1 \\over 2},{3 \\over 2}} \\right)$$<br><br>For x $$\\le$$ 0, f'(x) = 3e<sup>x</sup>(1 + x)<br><br>f'(x) &gt; 0 $$\\forall$$ x $$\\in$$($$-$$1, 0)<br><br>$$\\Rightarrow$$ f(x) is increasing in ($$-$$1, 0)<br><br>So, in complete domain, f(x) is increasing in $$\\left( { - 1,{3 \\over 2}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "blzO06JKs65FBoRsOx1klrlnsa6",
@@ -593,7 +593,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = \\left\\{ {\\matrix{\n   { - 55x,} &amp; {if\\,x &lt;  - 5}  \\cr \n   {2{x^3} - 3{x^2} - 120x,} &amp; {if\\, - 5 \\le x \\le 4}  \\cr \n   {2{x^3} - 3{x^2} - 36x - 336,} &amp; {if\\,x &gt; 4,}  \\cr \n\n } } \\right.$$\n<br><br>Now, $$f'(x) = \\left\\{ {\\matrix{\n   { - 55} &amp; ; &amp; {x &lt;  - 5}  \\cr \n   {6({x^2} - x - 20)} &amp; ; &amp; { - 5 &lt; x &lt; 4}  \\cr \n   {6({x^2} - x - 6)} &amp; ; &amp; {x &gt; 4}  \\cr \n\n } } \\right.$$<br><br>$$f'(x) = \\left\\{ {\\matrix{\n   { - 55} &amp; ; &amp; {x &lt;  - 5}  \\cr \n   {6(x - 5)(x + 4)} &amp; ; &amp; { - 5 &lt; x &lt; 4}  \\cr \n   {6(x - 3)(x + 2)} &amp; ; &amp; {x &gt; 4}  \\cr \n\n } } \\right.$$<br><br>Hence, f(x) is monotonically increasing in interval $$( - 5, - 4) \\cup (4,\\infty )$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "iyKGHbJgw1CgsdT1FY1klrf64yg",
@@ -615,7 +615,7 @@
     "difficulty": "medium",
     "solution": "Given, $$f(x) = {{4{x^3} - 3{x^2}} \\over 6} - 2\\sin x + (2x - 1)\\cos x$$<br/><br/>$$f'(x) = {{12{x^2} - 6x} \\over 6} - 2\\cos x + (2x - 1)( - \\sin x) + \\cos x(2)$$<br/><br/>$$ = (2{x^2} - x) - 2\\cos x - 2x\\sin x + \\sin x + 2\\cos x$$<br/><br/>$$ = 2{x^2} - x - 2x\\sin x + \\sin x$$<br/><br/>$$ = 2x(x - \\sin x) - 1(x - \\sin x)$$<br/><br/>$$f'(x) = (2x - 1)(x - \\sin x)$$<br/><br/>for $$x > 0,x - \\sin x > 0$$<br/><br/>$$x < 0,x - \\sin x < 0$$<br/><br/>for $$x \\in ( - \\infty ,0] \\cup \\left[ {{1 \\over 2},\\infty } \\right),f'(x) \\ge 0$$<br/><br/>for $$x \\in \\left[ {0,{1 \\over 2}} \\right],f'(x) \\le 0$$<br/><br/>Hence, f(x) increases in $$\\left[ {{1 \\over 2},\\infty } \\right)$$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krvrw9s4",
@@ -637,7 +637,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = 3{\\sin ^4}x + 10{\\sin ^3}x + 6{\\sin ^2}x - 3,x \\in \\left[ { - {\\pi  \\over 6},{\\pi  \\over 2}} \\right]$$<br><br>$$f'(x) = 12{\\sin ^3}x\\cos x + 30{\\sin ^2}x\\cos x + 12\\sin x\\cos x$$<br><br>$$ = 6\\sin x\\cos x(2{\\sin ^2}x + 5\\sin x + 2)$$<br><br>$$ = 6\\sin x\\cos x(2\\sin x + 1)(\\sin  + 2)$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1krwhhd0o/5df23d07-546e-4db6-b7cf-d12cf22423f5/1e560370-f495-11eb-91bb-55532ed5a292/file-1krwhhd0p.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th July Morning Shift Mathematics - Application of Derivatives Question 113 English Explanation\"><br>Decreasing in $$\\left( { - {\\pi  \\over 6},0} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jnHf1y8tK5XeR4tPda1kluz1e2i",
@@ -693,7 +693,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = {1 \\over x}{\\log _e}\\left( {1 + x} \\right)$$<br><br>\n$$ \\Rightarrow f'(x) = {{x{1 \\over {1 + x}} - 1{{\\log }_e}\\left( {1 + x} \\right)} \\over {{x^2}}}$$<br><br>\n$$ \\Rightarrow f'(x) = {{x - \\left( {1 + x} \\right){{\\log }_e}\\left( {1 + x} \\right)} \\over {{x^2}\\left( {1 + x} \\right)}}$$<br><br>\nLet $$g(x) = x - \\left( {1 + x} \\right){\\log _e}\\left( {1 + x} \\right)$$<br><br>\n$$ \\Rightarrow g'(x) = 1 - \\left( {1 + x} \\right){1 \\over {1 + x}} - \\left( 1 \\right) \\times {\\log _e}\\left( {1 + x} \\right)$$<br><br>\n$$ = 1 - 1 - {\\log _e}\\left( {1 + x} \\right)$$<br><br>\n$$ =  - {\\log _e}\\left( {1 + x} \\right)$$<br><br>\nFor $$x \\in \\left( { - 1,0} \\right),g'(x) &gt; 0$$<br>\n<br>and for $$x \\in \\left( {0,\\infty } \\right),g'(x) &lt; 0$$<br><br>\nAlso, $$g(0) = 0 - \\left( {1 + 0} \\right){\\log _e}\\left( {1 + 0} \\right) = 0$$<br><br>\n$$ \\therefore g'(x) &lt; 0\\,\\,\\forall\\,\\, x \\in \\left( { - 1,\\infty } \\right)$$<br><br>\n$$ \\Rightarrow f'(x) &lt; 0\\,\\,\\forall\\,\\, x \\in \\left( { - 1,\\infty } \\right)$$<br><br>\n$$ \\Rightarrow $$ f(x) is a decreasing function for all $$x \\in \\left( { - 1,\\infty } \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "5qPzYxvBb1sYWL6hEVjgy2xukf0vzp5w",
@@ -715,7 +715,7 @@
     "difficulty": "medium",
     "solution": "f(x) = (3x – 7)x<sup>2/3</sup>\n<br><br>f’(x) = $$\\left( {3x - 7} \\right){2 \\over {3{x^{1/3}}}} + {x^{{2 \\over 3}}}.3$$\n<br><br>= $${{6x - 14 - 9x} \\over {3{x^{1/3}}}}$$\n<br><br>= $${{15x - 14} \\over {3{x^{1/3}}}}$$\n<br><br>As f(x) increasing so f'(x) &gt; 0\n<br><br>$$ \\therefore $$ $${{15x - 14} \\over {3{x^{1/3}}}}$$ &gt; 0\n<img src=\"https://imagex.cdn.examgoal.net/1kj7f9iem/b6b0dfee-11b3-4e66-8707-7ded02aff17a/1e8008e0-486b-11eb-98c5-87900a88b42f/file-1kj7f9ien-425w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 3rd September Morning Slot Mathematics - Application of Derivatives Question 147 English Explanation\">\n<br>$$ \\therefore $$ x $$ \\in $$ $$\\left( { - \\infty ,0} \\right) \\cup \\left( {{{14} \\over {15}},\\infty } \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "FBiTnaSpw8Lymvky7rjgy2xukf8z47kh",
@@ -737,7 +737,7 @@
     "difficulty": "hard",
     "solution": "Given, $$f'(x) \\ge 1$$<br><br>$$ \\therefore $$ $$\\int_2^5 {f'(x)} dx\\, \\ge \\,\\int_2^5 {dx} $$<br><br>$$ \\Rightarrow f(5) - f(2) \\ge 3$$<br><br>$$ \\Rightarrow f(5) - 8 \\ge 3$$<br><br>$$ \\Rightarrow f(5) \\ge 11$$ ...(1)<br><br>Also, $$f''(x) \\ge 4$$<br><br>$$ \\therefore $$ $$\\int_2^5 {f''(x)} dx\\, \\ge \\,\\int_2^5 {4dx} $$<br><br>$$ \\Rightarrow f'(5) - f'(2) \\ge 4(3)$$<br><br>$$ \\Rightarrow f'(5) - 5 \\ge 12$$<br><br>$$ \\Rightarrow f'(5) \\ge 17$$ ...(2)<br><br>From (1) and (2),<br><br>$$f'(5) + f'(5) \\ge 11 + 17$$<br><br>$$ \\Rightarrow f'(5) + f'(5) \\ge 28$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Zpp13XvDvvswz7dWtl7k9k2k5gzwf3e",
@@ -759,7 +759,7 @@
     "difficulty": "medium",
     "solution": "We know, cos<sup>-1</sup>(-x) = $$\\pi $$ - cos<sup>-1</sup>x\n<br><br>$$ \\therefore $$ ƒ(x) = x($$\\pi $$ - cos<sup>–1</sup>(sin|x|))\n<br><br>= x($$\\pi $$ - $${\\pi  \\over 2}$$ + sin<sup>–1</sup>(sin|x|))\n<br><br>= x($$\\pi $$ - $${\\pi  \\over 2}$$ + sin<sup>–1</sup>(sin|x|))\n<br><br>= x$${\\pi  \\over 2}$$ + x|x|\n<br><br>$$ \\therefore $$ f(x) = $$\\left\\{ {\\matrix{\n   {x{\\pi  \\over 2} - {x^2},} &amp; {x &lt; 0}  \\cr \n   {x{\\pi  \\over 2} + {x^2},} &amp; {x \\ge 0}  \\cr \n\n } } \\right.$$\n<br><br>Now f'(x) = $$\\left\\{ {\\matrix{\n   {{\\pi  \\over 2} - 2x,} &amp; {x &lt; 0}  \\cr \n   {{\\pi  \\over 2} + 2x,} &amp; {x \\ge 0}  \\cr \n\n } } \\right.$$\n<br><br>and f''(x) = $$\\left\\{ {\\matrix{\n   { - 2,} &amp; {x &lt; 0}  \\cr \n   {2,} &amp; {x \\ge 0}  \\cr \n\n } } \\right.$$\n<br><br>$$ \\therefore $$ ƒ' is decreasing in $$\\left( { - {\\pi  \\over 2},0} \\right)$$ and increasing\nin $$\\left( {0,{\\pi  \\over 2}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "XB56wgM0Ps8wqSh3VSc4L",
@@ -781,7 +781,7 @@
     "difficulty": "easy",
     "solution": "$$f\\left( x \\right) = {x \\over {\\sqrt {{a^2} + {x^2}} }} - {{d - x} \\over {\\sqrt {{b^2} + {{\\left( {d - x} \\right)}^2}} }}$$\n<br><br>$$f'\\left( x \\right) = {{{a^2}} \\over {{{\\left( {{a^2} + {x^2}} \\right)}^{3/2}}}} + {{{b^2}} \\over {{{\\left( {{b^2} + {{\\left( {d - x} \\right)}^2}} \\right)}^{3/2}}}} &gt; 0\\forall x \\in R$$\n<br><br>f(x) is an increasing function. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "EJjlcBzmev4ZccS9XX3rsa0w2w9jx5ejv28",
@@ -803,7 +803,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = x\\sqrt {kx - {x^2}} $$<br><br>\n$$ \\Rightarrow $$ $$f'\\left( x \\right) = \\sqrt {kx - {x^2}}  + {{(k - 2x)x} \\over {2\\sqrt {kx - {x^2}} }}$$<br><br>\n$$ \\Rightarrow {{2\\left( {kx - {x^2}} \\right) + kx - 2{x^2}} \\over {2\\sqrt {kx - {x^2}} }} = {{3kx - 4{x^2}} \\over {2\\sqrt {kx - {x^2}} }}$$<br><br>\n$$ \\Rightarrow {{x(3k - 4x)} \\over {2\\sqrt {kx - {x^2}} }}$$<br><br>\nNow for increasing function<br><br>\nfor f'(x) $$ \\ge $$ 0, &nbsp; $$\\forall x \\in [0,3]$$<br><br>\n$$ \\Rightarrow kx - {x^2} \\ge 0,\\forall x \\in \\left[ {0,3} \\right]\\,\\,and\\,x(3k - 4x) \\ge 0,\\,\\forall x \\in \\left[ {0,3} \\right]\\,$$<br><br>\n$$ \\Rightarrow x(x - k) \\le 0,\\forall x \\in \\left[ {0,3} \\right]\\,\\,and\\,x(4x - 3k) \\le 0,\\,\\forall x \\in \\left[ {0,3} \\right]\\,$$<br><br>\nk $$ \\ge $$ 3 and k $$ \\ge $$ 4 $$ \\Rightarrow $$ k $$ \\ge $$ 4<br><br>\n$$ \\Rightarrow $$ m = 4<br><br>\nSo f(x) is maximum when k = 4 then $$3\\sqrt {4 \\times 3 - {3^2}}  = 3\\sqrt 3  = M$$<br><br>\n$$ \\therefore $$ (m, M) = (4, $$3\\sqrt 3 $$)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "G8bQuG05kI5WhxXcgg9bh",
@@ -825,7 +825,7 @@
     "difficulty": "medium",
     "solution": "f '(x) = 3x<sup>2</sup> $$-$$ 6(a $$-$$ 2)x + 3a\n<br><br>f '(x) $$ \\ge $$ 0 $$\\forall $$ x $$ \\in $$ (0, 1]\n<br><br>f '(x) $$ \\le $$ 0 $$\\forall $$ x $$ \\in $$ [1, 5)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;f '(x) = 0  at  x = 1 $$ \\Rightarrow $$&nbsp;&nbsp;a = 5\n<br><br>f(x) $$-$$ 14 = (x $$-$$ 1)<sup>2</sup> (x $$-$$ 7)\n<br><br>$${{f(x) - 14} \\over {{{\\left( {x - 1} \\right)}^2}}} = x - 7$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "kHdxiJODeiP3oavxynlS5",
@@ -847,7 +847,7 @@
     "difficulty": "medium",
     "solution": "$$\\phi $$(x) = ƒ(x) + ƒ(2 – x)\n<br><br>$$ \\Rightarrow $$ $$\\phi $$'(x) = ƒ'(x) - ƒ'(2 – x)\n<br><br>Since ƒ''(x) &gt; 0 for all x $$ \\in $$ (0, 2)\n<br><br>$$ \\Rightarrow $$ ƒ'(x) is an increasing function for all x $$ \\in $$ (0, 2).\n<br><br><b>Case 1 : When $$\\phi $$(x) is increasing function</b>\n<br><br>So $$\\phi $$'(x) &gt; 0\n<br><br>$$ \\Rightarrow $$ ƒ'(x) - ƒ'(2 – x) &gt; 0\n<br><br>$$ \\Rightarrow $$ ƒ'(x) &gt; ƒ'(2 – x)\n<br><br>$$ \\Rightarrow $$ x &gt; 2 – x\n<br><br>$$ \\Rightarrow $$ x &gt; 1\n<br><br> $$ \\therefore $$ $$\\phi $$(x) is increasing on (1, 2).\n<br><br><b>Case 2 : When $$\\phi $$(x) is decreasing function</b>\n<br><br>So $$\\phi $$'(x) &lt; 0\n<br><br>$$ \\Rightarrow $$ ƒ'(x) - ƒ'(2 – x) &lt; 0\n<br><br>$$ \\Rightarrow $$ ƒ'(x) &lt; ƒ'(2 – x)\n<br><br>$$ \\Rightarrow $$ x &lt; 2 – x\n<br><br>$$ \\Rightarrow $$ x &lt; 1\n<br><br> $$ \\therefore $$ $$\\phi $$(x) is decreasing on (0, 1).\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "YfR7gWLGX5xk61tlCN1kjtn1s8c",
@@ -865,7 +865,7 @@
     "solution": "We have,<br><br>$${y_n} = {1 \\over n}(n + 1)(n + 2)...{(n + n)^{1/n}}$$ and $$\\mathop {\\lim }\\limits_{n \\to \\infty } {y_n} = L$$<br><br>$$ \\Rightarrow L = \\mathop {\\lim }\\limits_{n \\to \\infty } {1 \\over n}{[(n + 1)(n + 2)(n + 3)...(n + n)]^{1/n}}$$<br><br>$$ \\Rightarrow L = \\mathop {\\lim }\\limits_{n \\to \\infty } {\\left[ {\\left( {1 + {1 \\over n}} \\right)\\left( {1 + {2 \\over n}} \\right)\\left( {1 + {3 \\over n}} \\right)...\\left( {1 + {n \\over n}} \\right)} \\right]^{{1 \\over n}}}$$<br><br>$$ \\Rightarrow \\log L = \\mathop {\\lim }\\limits_{n \\to \\infty } {1 \\over n}\\left[ {\\log \\left( {1 + {1 \\over n}} \\right) + \\log \\left( {1 + {2 \\over n}} \\right)...\\log \\left( {1 + {n \\over n}} \\right)} \\right]$$<br><br>$$ \\Rightarrow \\log L = \\mathop {\\lim }\\limits_{n \\to \\infty } {1 \\over n}\\sum\\limits_{r = 1}^n {\\log \\left( {1 + {r \\over n}} \\right)} $$<br><br>$$ \\Rightarrow \\log L = \\int_0^1 {_{II}^1 \\times \\mathop {\\log }\\limits_I } (1 + x)\\,dx$$<br><br>$$ \\Rightarrow \\log L = (x.\\log (1 + x)_0^1 - \\int_0^1 {\\left[ {{d \\over {dx}}(\\log (1 + x)\\int {dx} } \\right]} dx$$<br><br>[by using integration by parts]<br><br>$$ \\Rightarrow \\log L = [x\\log (1 + x)]_0^1 - \\int_0^1 {{x \\over {1 + x}}} dx$$<br><br>$$ \\Rightarrow \\log L = \\log 2 - \\int_0^1 {\\left( {{{x + 1} \\over {x + 1}} - {1 \\over {x + 1}}} \\right)} dx$$<br><br>$$ \\Rightarrow \\log L = \\log 2 - [x]_0^1 + [\\log (x + 1)]_0^1$$<br><br>$$ \\Rightarrow \\log L = \\log 2 - 1 + \\log 2 - 0$$<br><br>$$ \\Rightarrow \\log L = \\log 4 - \\log e = \\log {4 \\over e}$$<br><br>$$ \\Rightarrow L = {4 \\over e}$$<br><br>$$ \\Rightarrow [L] = \\left[ {{4 \\over e}} \\right] = 1$$",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "amJ45aLthHArK5nSB31kjy2cugg",
@@ -888,7 +888,7 @@
     "solution": "$$f'(x) &gt; 2f(x)$$<br><br>$$ \\Rightarrow {{dy} \\over y} &gt; 2dx$$<br><br>$$ \\Rightarrow \\int_1^{f(x)} {{{dy} \\over y} &gt; 2\\int_0^x {dx} } $$<br><br>$$\\ln (f(x)) &gt; 2x$$<br><br>$$ \\therefore $$ $$f(x) &gt; {e^{2x}}$$<br><br>Also, as $$f'(x) &gt; 2f(x)$$<br><br>$$ \\therefore $$ $$f'(x) &gt; 2{c^{2x}} &gt; 0$$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "QxDDYKNpsGnt8PZt0K0rq",
@@ -910,7 +910,7 @@
     "difficulty": "easy",
     "solution": "<p>The given function is</p>\n<p>$$f(x) = {x^2} - 3{x^2} + 5x + 7$$</p>\n<p>$$f'(x) = 3{x^2} - 6x + 5$$</p>\n<p>The discriminant of the above quadratic equation is</p>\n<p>$$\\Delta  = 36 - 4(3)(5) = 36 - 60 < 0$$</p>\n<p>Therefore, $$f'(x) > 0\\,\\forall x \\in {R^ + }$$</p>\n<p>Also, $$f'(x) > 0\\,\\forall x \\in {R^ - }$$</p>\n<p>Therefore, the given function f is increasing in R.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "UvEd7Vpce0aXBLQUsT1kjxtcfj6",
@@ -933,7 +933,7 @@
     "solution": "$$f(x) = x + \\ln x - x\\ln x$$<br><br>$$f(1) = 1 &gt; 0$$<br><br><br>$$f({e^2}) = {e^2} + 2 - 2{e^2} = 2 - {e^2} &lt; 0$$<br><br>$$ \\Rightarrow f(x) = 0$$ for some $$x \\in (1,\\,{e^2})$$<br><br>$$ \\therefore $$ I is correct.<br><br>$$f'(x) = 1 + {1 \\over x} - \\ln x - 1$$<br><br>$$ = {1 \\over x} - \\ln x$$<br><br>$$f'(x) &gt; 0$$ for (0, 1)<br><br>$$f'(x) &lt; 0$$ for $$(e,\\infty )$$<br><br>$$ \\therefore $$ P and Q are correct, II is correct, III is incorrect.<br><br>$$f''(x) = {{ - 1} \\over {{x^2}}} - {1 \\over x}$$<br><br>$$f''(x) &lt; 0$$ for $$(0,\\infty )$$<br><br>$$ \\therefore $$ S, is correct, R is incorrect.<br><br>IV is incorrect.<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f(x) =  - \\infty $$<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f'(x) =  - \\infty $$<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f''(x) = 0$$<br><br>$$ \\therefore $$ ii, iii, iv are correct.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ieFca9GqMaNl9TOQEy1kjxt837d",
@@ -956,7 +956,7 @@
     "solution": "$$f(x) = x + \\ln x - x\\ln x$$<br><br>$$f(1) = 1 &gt; 0$$<br><br><br>$$f({e^2}) = {e^2} + 2 - 2{e^2} = 2 - {e^2} &lt; 0$$<br><br>$$ \\Rightarrow f(x) = 0$$ for some $$x \\in (1,\\,{e^2})$$<br><br>$$ \\therefore $$ I is correct.<br><br>$$f'(x) = 1 + {1 \\over x} - \\ln x - 1$$<br><br>$$ = {1 \\over x} - \\ln x$$<br><br>$$f'(x) &gt; 0$$ for (0, 1)<br><br>$$f'(x) &lt; 0$$ for $$(e,\\infty )$$<br><br>$$ \\therefore $$ P and Q are correct, II is correct, III is incorrect.<br><br>$$f''(x) = {{ - 1} \\over {{x^2}}} - {1 \\over x}$$<br><br>$$f''(x) &lt; 0$$ for $$(0,\\infty )$$<br><br>$$ \\therefore $$ S, is correct, R is incorrect.<br><br>IV is incorrect.<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f(x) =  - \\infty $$<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f'(x) =  - \\infty $$<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f''(x) = 0$$<br><br>$$ \\therefore $$ ii, iii, iv are correct.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "zUniVfJpwI0nycjjBV1kjxt9m70",
@@ -979,7 +979,7 @@
     "solution": "$$f(x) = x + \\ln x - x\\ln x$$<br><br>$$f(1) = 1 &gt; 0$$<br><br><br>$$f({e^2}) = {e^2} + 2 - 2{e^2} = 2 - {e^2} &lt; 0$$<br><br>$$ \\Rightarrow f(x) = 0$$ for some $$x \\in (1,\\,{e^2})$$<br><br>$$ \\therefore $$ I is correct.<br><br>$$f'(x) = 1 + {1 \\over x} - \\ln x - 1$$<br><br>$$ = {1 \\over x} - \\ln x$$<br><br>$$f'(x) &gt; 0$$ for (0, 1)<br><br>$$f'(x) &lt; 0$$ for $$(e,\\infty )$$<br><br>$$ \\therefore $$ P and Q are correct, II is correct, III is incorrect.<br><br>$$f''(x) = {{ - 1} \\over {{x^2}}} - {1 \\over x}$$<br><br>$$f''(x) &lt; 0$$ for $$(0,\\infty )$$<br><br>$$ \\therefore $$ S, is correct, R is incorrect.<br><br>IV is incorrect.<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f(x) =  - \\infty $$<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f'(x) =  - \\infty $$<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f''(x) = 0$$<br><br>$$ \\therefore $$ ii, iii, iv are correct.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1hCumHByo0ZaOkXiKDLcf",
@@ -1001,7 +1001,7 @@
     "difficulty": "medium",
     "solution": "f(x) = sin<sup>4</sup>x + cos<sup>4</sup>x\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;f'(x) = 4sin<sup>3</sup>x cosx + 4cos<sup>3</sup>x ($$-$$ sinx)\n<br><br>= 4sinx cosx (sin<sup>2</sup>x $$-$$ cos<sup>2</sup>x)\n<br><br>= $$-$$ 2sin2x cos2x\n<br><br>= $$-$$ sin4x\n<br><br>As, f(x) is increasing function when f'(x) &gt; 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp; $$-$$ sin4x &gt; 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;sin4x &lt; 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$$\\pi $$ &lt; 4x &lt; 2$$\\pi $$\n<br><br>$${\\pi  \\over 4} &lt; x &lt; {\\pi  \\over 2}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;x $$ \\in $$ $$\\left( {{\\pi  \\over 4},{\\pi  \\over 2}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "l8tP7y80IGIOx65m",
@@ -1024,7 +1024,7 @@
     "solution": "<p>Given,</p>\n<p>$$\\begin{aligned}\ng(x) &amp; =\\int_1^x\\left(\\frac{2(t-1)}{t+1}-\\ln t\\right) f(t) d t \\\\\n\\text { and } f(x) &amp; =(1-x)^2 \\sin ^2 x+x^2 \\\\\n\\Rightarrow g(x) &amp; =\\int_1^x\\left(\\frac{2(t-1)}{t+1}-\\ln t\\right)\\left((1-t)^2 \\sin ^2 t+t^2\\right) d t\n\\end{aligned}$$</p>\n<p>On differentiating the above equation w.r.t. $$x$$</p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow g^{\\prime}(x)=\\left(\\frac{2(x-1)}{x+1}-\\ln x\\right)\\left((1-x)^2 \\sin ^2 x+x^2\\right) \\\\\n&amp; \\Rightarrow g^{\\prime}(x)=\\left(2-\\frac{4}{x+1}-\\ln x\\right)\\left((1-x)^2 \\sin ^2 x+x^2\\right)\n\\end{aligned}$$</p>\n<p>Here $$(1-x)^2 \\sin ^2 x+x^2&gt;0$$ for all $$x \\in \\mathrm{R}$$</p>\n<p>Now, draw the graph of $$y=2-\\frac{4}{x+1}$$ and $$y=-\\ln x$$</p>\n<p>For $$x&gt;0$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzv95tcn/cecad013-bcd2-4ed8-95c1-ee176e1dc237/503b8e70-5b01-11ef-bcf6-652f2ada9ee9/file-jaoe38c1lzv95tco.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzv95tcn/cecad013-bcd2-4ed8-95c1-ee176e1dc237/503b8e70-5b01-11ef-bcf6-652f2ada9ee9/file-jaoe38c1lzv95tco.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2012 Paper 2 Offline Mathematics - Application of Derivatives Question 33 English Explanation 1\"></p>\n<p>$$\\text { Add the graph of } y=-\\ln x \\text { and } y=2-\\frac{4}{x+1}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzv96kqq/2308acb8-f560-4fa2-a4da-e1b115bcf1f4/65641f10-5b01-11ef-a832-3919eb64d18d/file-jaoe38c1lzv96kqr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzv96kqq/2308acb8-f560-4fa2-a4da-e1b115bcf1f4/65641f10-5b01-11ef-a832-3919eb64d18d/file-jaoe38c1lzv96kqr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2012 Paper 2 Offline Mathematics - Application of Derivatives Question 33 English Explanation 2\"></p>\n<p>$$\\Rightarrow g^{\\prime}(x)&lt;0 \\text { for } x \\in(1, \\infty)$$</p>\n<p>Hence, $$g(x)$$ is decreasing function for $$x \\in(1, \\infty)$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "SnBdqN5azIzG9GaB",
@@ -1047,7 +1047,7 @@
     "solution": "<p>We have for</p>\n<p>$$f(x) = x\\cos \\left( {{1 \\over x}} \\right),x \\ge 1$$</p>\n<p>$$f'(x) = \\cos \\left( {{1 \\over x}} \\right) + {1 \\over x}\\sin \\left( {{1 \\over x}} \\right) \\to 1$$ for $$x \\to \\infty $$</p>\n<p>Also,</p>\n<p>$$f'(x) = \\left( {{1 \\over x}} \\right) + {1 \\over x}\\sin \\left( {{1 \\over x}} \\right) - {1 \\over {{x^2}}}\\sin \\left( {{1 \\over x}} \\right) - {1 \\over {{x^3}}}\\cos \\left( {{1 \\over x}} \\right)$$</p>\n<p>$$ =  - {1 \\over {{x^3}}}\\cos \\left( {{1 \\over x}} \\right) < 0$$ for $$x \\ge 1$$</p>\n<p>$$ \\Rightarrow f'(x)$$ is decreasing for $$[1,\\infty )$$</p>\n<p>$$ \\Rightarrow f'(x + 2) < f'(x)$$. Also,</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to \\infty } f(x + 2) - f(x) = \\mathop {\\lim }\\limits_{x \\to \\infty } \\left[ {(x + 2)\\cos {1 \\over {x + 2}} - x\\cos {1 \\over x}} \\right]=2$$</p>\n<p>Hence, $$f(x + 2) - f(x) > 2\\forall x \\ge 1$$.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ecU4XGHCPdnGACZd",
@@ -1069,7 +1069,7 @@
     "difficulty": "medium",
     "solution": "Let $$f\\left( x \\right) = {x^7} + 14{x^5} + 16{x^3} + 30x - 560$$\n<br><br>$$ \\Rightarrow f'\\left( x \\right) = 7{x^6} + 70{x^4} + 48{x^2} + 30 &gt; 0,\\,\\forall x \\in R$$\n<br><br>$$ \\Rightarrow f$$ is an increasing function on $$R$$\n<br><br>Also $$\\mathop {\\lim }\\limits_{x \\to \\infty } \\,\\,f\\left( x \\right) = \\infty $$ and $$\\mathop {\\lim }\\limits_{x \\to  - \\infty } \\,\\,f\\left( x \\right) =  - \\infty $$\n<br><br>$$ \\Rightarrow $$ The curve $$y = f\\left( x \\right)$$ crosses $$x$$-axis only once.\n<br><br>$$\\therefore$$ $$f\\left( x \\right) = 0$$ has exactly one real root.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaXMH0IezPGTzEA1",
@@ -1091,7 +1091,7 @@
     "difficulty": "medium",
     "solution": "Given $$f\\left( x \\right) = {\\tan ^{ - 1}}\\left( {\\sin x + \\cos x} \\right)$$\n<br><br>$$f'\\left( x \\right) = {1 \\over {1 + {{\\left( {\\sin x + \\cos x} \\right)}^2}}}.\\left( {\\cos x - \\sin x} \\right)$$\n<br><br>$$ = {{\\sqrt 2 .\\left( {{1 \\over {\\sqrt 2 }}\\cos x - {1 \\over {\\sqrt 2 }}\\sin x} \\right)} \\over {1 + {{\\left( {\\sin x + \\cos x} \\right)}^2}}}$$\n<br><br>$$ = {{\\left( {\\cos {\\pi  \\over 4}.\\cos x - \\sin {\\pi  \\over 4}.\\sin x} \\right)} \\over {1 + {{\\left( {\\sin x + \\cos x} \\right)}^2}}}$$\n<br><br>$$\\therefore$$ $$f'\\left( x \\right) = {{\\sqrt 2 \\cos \\left( {x + {\\pi  \\over 4}} \\right)} \\over {1 + {{\\left( {\\sin x + \\cos x} \\right)}^2}}}$$\n<br><br>if $$f'\\left( x \\right) &gt; O$$ then $$f\\left( x \\right)$$ is increasing function.\n<br><br>Hence $$f(x)$$ is increasing, if $$ - {\\pi  \\over 2} &lt; x + {\\pi  \\over 4} &lt; {\\pi  \\over 2}$$\n<br><br>$$ \\Rightarrow  - {{3\\pi } \\over 4} &lt; x &lt; {\\pi  \\over 4}$$\n<br><br>Hence, $$f(x)$$ is increasing when $$n \\in \\left( { - {\\pi  \\over 2},{\\pi  \\over 4}} \\right)$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ty77dtcxjHwzLQg",
@@ -1113,6 +1113,6 @@
     "difficulty": "medium",
     "solution": "Clearly function $$f\\left( x \\right) = 3{x^2} - 2x + 1$$ is increasing\n<br><br> when $$f'\\left( x \\right) = 6x - 2 \\ge 0 \\Rightarrow \\,\\,\\,\\,\\,x \\in \\left[ {1/3,\\left. \\infty  \\right)} \\right.$$\n<br><br>$$\\therefore$$ $$f(x)$$ is incorrectly matched with $$\\left( { - \\infty ,{1 \\over 3}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

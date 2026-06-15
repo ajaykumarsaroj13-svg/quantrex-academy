@@ -14,7 +14,7 @@
     "difficulty": "easy",
     "solution": "<p>To find the average velocity given the motion of a person traveling along a straight line with two different velocities, we start by calculating the average velocity ($ v_{\\text{avg}} $) using the total distance traveled divided by the total time taken.</p>\n<p>The distances and velocities are given as follows:</p>\n\n<p><p>Distance $ x $ at velocity $ v_1 = 5 \\, \\text{m/s} $</p></p>\n<p><p>Distance $ \\frac{3}{2}x $ at velocity $ v_2 $</p></p>\n\n<p>The formula for average velocity is:</p>\n<p>$ v_{\\text{avg}} = \\frac{\\text{Total Distance}}{\\text{Total Time}} $</p>\n<p>Given:</p>\n<p>$ v_{\\text{avg}} = \\frac{50}{7} \\, \\text{m/s} $</p>\n<p>The total distance traveled is:</p>\n<p>$ x + \\frac{3x}{2} = \\frac{5x}{2} $</p>\n<p>The time taken to cover each segment is given by:</p>\n\n<p><p>Time for $ x $: $ t_1 = \\frac{x}{v_1} = \\frac{x}{5} $</p></p>\n<p><p>Time for $ \\frac{3x}{2} $: $ t_2 = \\frac{\\frac{3x}{2}}{v_2} = \\frac{3x}{2v_2} $</p></p>\n\n<p>Now, using the formula for average velocity:</p>\n<p>$ \\frac{50}{7} = \\frac{\\frac{5x}{2}}{\\frac{x}{5} + \\frac{3x}{2v_2}} $</p>\n<p>Simplifying the equation:</p>\n<p>$ \\frac{50}{7} = \\frac{5/2}{\\frac{1}{5} + \\frac{3}{2v_2}} $</p>\n<p>Cross-multiplying gives:</p>\n<p>$ \\frac{1}{5} + \\frac{3}{2v_2} = \\frac{7}{20} $</p>\n<p>Solving for $ \\frac{3}{2v_2} $:</p>\n<p>$ \\frac{3}{2v_2} = \\frac{7}{20} - \\frac{1}{5} = \\frac{7-4}{20} = \\frac{3}{20} $</p>\n<p>Finally, solving for $ v_2 $:</p>\n<p>$ \\frac{3}{2v_2} = \\frac{3}{20} $</p>\n<p>$ v_2 = 10 \\, \\text{m/s} $</p>\n<p>Thus, the value of $ v_2 $ is $ 10 \\, \\text{m/s} $.</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "m9fnut6f",
@@ -58,7 +58,7 @@
     "difficulty": "easy",
     "solution": "<p>The average velocity is defined as the total displacement divided by the total time. Here, the person travels the same distance $x$ twice, once with velocity $v_1$ and once with velocity $v_2$. </p>\n<p>The time to travel distance $x$ with velocity $v_1$ is $t_1 = \\frac{x}{v_1}$, and the time to travel distance $x$ with velocity $v_2$ is $t_2 = \\frac{x}{v_2}$. <br/><br/>The total time is then<br/><br/> $t = t_1 + t_2 = \\frac{x}{v_1} + \\frac{x}{v_2}$.</p>\n<p>The total displacement is $2x$. So, the average velocity $v$ is given by</p>\n<p>$ v = \\frac{\\text{total displacement}}{\\text{total time}} = \\frac{2x}{\\frac{x}{v_1} + \\frac{x}{v_2}} = \\frac{2}{\\frac{1}{v_1} + \\frac{1}{v_2}} $</p>\n<p>Multiplying both sides by $2$, we get</p>\n<p>$ \\frac{2}{v} = \\frac{1}{v_1} + \\frac{1}{v_2} $</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lgnxvqd2",
@@ -80,7 +80,7 @@
     "difficulty": "easy",
     "solution": "The position of a particle as a function of time is given by $x=\\left(5 t^{2}-4 t+5\\right) \\mathrm{m}$. <br/><br/>To find the magnitude of the velocity of the particle at $t=2\\,\\mathrm{s}$, we first need to find the velocity of the particle as a function of time. \n<br/><br/>\nThe velocity $v$ is the time derivative of the position $x$:\n<br/><br/>\n$$\nv = \\frac{dx}{dt}\n$$\n<br/><br/>\nTaking the derivative of $x$ with respect to $t$, we get:\n<br/><br/>\n$$\nv = \\frac{dx}{dt} = 10t - 4\\,\\mathrm{m/s}\n$$\n<br/><br/>\nNow we can find the velocity of the particle at $t=2\\,\\mathrm{s}$ by plugging in $t=2$:\n<br/><br/>\n$$\nv(2\\,\\mathrm{s}) = 10(2) - 4\\,\\mathrm{m/s} = 16\\,\\mathrm{m/s}\n$$\n<br/><br/>\nTherefore, the magnitude of the velocity of the particle at $t=2\\,\\mathrm{s}$ is:\n<br/><br/>\n$$\n\\boxed{|v(2\\,\\mathrm{s})| = 16\\,\\mathrm{m/s}}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldtxhh99",
@@ -102,7 +102,7 @@
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\n& x=4 t^2 \\\\\\\\\n& v=\\frac{d x}{d t}=8 t\n\\end{aligned}\n$$<br/><br/>\nAt $\\mathrm{t}=5 ~\\mathrm{sec}$<br/><br/>\n$$\n\\mathrm{v}=8 \\times 5=40 \\mathrm{~m} / \\mathrm{s}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l55mn65s",
@@ -119,7 +119,7 @@
     "difficulty": "easy",
     "solution": "<p>$${v_{mean}} = {{3{v_1}{v_2}{v_3}} \\over {{v_1}{v_2} + {v_2}{v_3} + {v_3}{v_1}}}$$</p>\n<p>$$ = {{3 \\times 11 \\times 22 \\times 33} \\over {11 \\times 22 + 22 \\times 33 + 33 \\times 11}}$$</p>\n<p>$$ = 18$$ m/sec</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1l6p41lxu",
@@ -141,7 +141,7 @@
     "difficulty": "easy",
     "solution": "Given,\n<br/><br/>$t=\\sqrt{x}+4$, Squaring on both\n<br/><br/>$$\n\\begin{aligned}\n& x=(t-4)^2=t^2-8 t+16 \\\\\\\\\n& \\frac{d x}{d t}=2 t-8\\\\\\\\\n& \\text { at } t=4 \\\\\\\\\n& \\frac{d x}{d t}=8-8=0\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krwa2r8z",
@@ -163,7 +163,7 @@
     "difficulty": "easy",
     "solution": "$$V = \\alpha t + \\beta {t^2}$$<br><br>$${{ds} \\over {dt}} = \\alpha t + \\beta {t^2}$$<br><br>$$\\int\\limits_{{S_1}}^{{S_2}} {ds = \\int\\limits_1^2 {(\\alpha t + \\beta {t^2})dt} } $$<br><br>$${S_2} - {S_1} = \\left[ {{{\\alpha {t^2}} \\over 2} + {{\\beta {t^3}} \\over 3}} \\right]_1^2$$<br><br>As particle is not changing direction <br><br>So distance = displacement<br><br>Distance = $$\\left[ {{{\\alpha [4 - 1]} \\over 2} + {{\\beta [8 - 1]} \\over 3}} \\right]$$<br><br>$$ = {{3\\alpha } \\over 2} + {{7\\beta } \\over 3}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "dLNi3PAPf18R3gA5",
@@ -185,6 +185,6 @@
     "difficulty": "easy",
     "solution": "Given that $$x = \\alpha {t^3}\\,\\,\\,\\,$$ and $$\\,\\,\\,\\,y = \\beta {t^3}$$\n<br><br>$$\\therefore$$ $${v_x} = {{dx} \\over {dt}} = 3\\alpha {t^2}\\,\\,\\,\\,$$ \n<br><br>and$$\\,\\,\\,\\,\\,{v_y} = {{dy} \\over {dt}} = 3\\beta {t^2}$$\n<br><br>$$\\therefore$$ $$v = \\sqrt {v_x^2 + v_y^2} $$\n<br><br>$$ = \\sqrt {9{\\alpha ^2}{t^4} + 9{\\beta ^2}{t^4}} $$\n<br><br>$$ = 3{t^2}\\sqrt {{\\alpha ^2} + {\\beta ^2}} $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

@@ -105,6 +105,7 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
         if (questionTypeFilter === 'Subjective') return t === 'SUBJECTIVE';
         if (questionTypeFilter === 'Match the Following') return t === 'MATCH';
         if (questionTypeFilter === 'Comprehension') return t === 'COMPREHENSION';
+        if (questionTypeFilter === 'True or False') return t === 'TRUE_FALSE';
         return true;
       });
     }
@@ -349,6 +350,16 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
           <option value="Subjective">Subjective</option>
           <option value="Match the Following">Match the Following</option>
           <option value="Comprehension">Comprehension</option>
+          <option value="True or False">True or False</option>
+        </select>
+        <select 
+          value={yearFilter} onChange={e => setYearFilter(e.target.value)}
+          className="bg-[#1e1e24] border border-[#2d2d35] text-white px-4 py-2 rounded-lg outline-none focus:border-blue-500"
+        >
+          <option value="All">All Years</option>
+          {Array.from(new Set(allQuestions.map(q => q.year).filter(Boolean))).sort((a,b) => b-a).map(y => (
+            <option key={y} value={y}>{y}</option>
+          ))}
         </select>
       </div>
 

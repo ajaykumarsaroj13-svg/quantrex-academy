@@ -36,7 +36,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} & \\mathrm{f}(\\mathrm{x})=\\int \\frac{7 x^{10}+9 x^8}{\\left(1+x^2+2 x^9\\right)^2} d x \\\\ & =\\int \\frac{7 x^{10}+9 x^8}{x^{18}\\left(\\frac{1}{x^9}+\\frac{1}{x^7}+2\\right)^2}=\\int \\frac{\\frac{7}{x^8}+\\frac{9}{x^{10}}}{\\left(\\frac{1}{x^9}+\\frac{1}{x^7}+2\\right)^2} \\end{aligned} $$</p>\n<p>substitute $\\frac{1}{x^9}+\\frac{1}{x^7}+2=t$</p>\n<p>$$ \\begin{aligned} & \\left(\\frac{-9}{x^{10}}-\\frac{7}{x^8}\\right) d x=d t \\Rightarrow\\left(\\frac{7}{x^8}+\\frac{9}{x^{10}}\\right) d x=-d t \\\\ & f(t)=-\\int \\frac{d t}{t^2}=\\frac{1}{t}+C \\end{aligned} $$</p>\n<p>put value of t</p>\n<p>$$ \\begin{aligned} &\\begin{aligned} & f(x)=\\frac{1}{\\frac{1}{x^9}+\\frac{1}{x^7}+2}+C \\\\ & f(x)=\\frac{x^9}{2 x^9+x^2+1}+C \\end{aligned}\\\\ &\\text { It is given that } \\lim _{x \\rightarrow 0} f(x)=0\\\\ &\\begin{aligned} & \\lim _{x \\rightarrow 0} \\frac{x^9}{2 x^9+x^2+1}+C=0 \\\\ & 0+C=0 \\Rightarrow C=0 \\\\ & \\text { so } f(x)=\\frac{x^9}{2 x^9+x^2+1} \\\\ & f^{\\prime}(x)=\\frac{9 x^8\\left(2 x^9+x^2+1\\right)-x^9\\left(18 x^8+2 x\\right)}{\\left(2 x^9+x^2+1\\right)^2} \\\\ & f^{\\prime}(1)=\\frac{9(1)^8\\left(2(1)^9+(1)^2+1\\right)-(1)^9\\left(18(1)^8+2(1)\\right)}{\\left(2(1)^9+(1)^2+1\\right)^2} \\\\ & =\\frac{9 \\times 4-20}{16}=\\frac{16}{16}=1 \\end{aligned} \\end{aligned} $$</p>\n<p>It is given that $\\mathrm{A}=\\left[\\begin{array}{ccc}0 & 0 & 1 \\\\ \\frac{1}{4} & f^{\\prime}(1) & 1 \\\\ \\alpha^2 & 4 & 1\\end{array}\\right]$</p>\n<p>$$ \\begin{aligned} & \\text { substitute } f^{\\prime}(1)=1 \\Rightarrow A=\\left[\\begin{array}{ccc} 0 & 0 & 1 \\\\ \\frac{1}{4} & 1 & 1 \\\\ \\alpha^2 & 4 & 1 \\end{array}\\right] \\\\ & |A|=1\\left(4 \\times \\frac{1}{4}-\\alpha^2\\right)=1-\\alpha^2 \\end{aligned} $$</p>\n<p>It is given that $\\mathrm{B}=\\operatorname{adj}(\\operatorname{adj} \\mathrm{A}) \\&|B|=81$</p>\n<p>$|B|=|A|^{(n-1)^2}, \\mathrm{n}=3$ as A is $3 \\times 3$ matrix</p>\n<p>$$ \\begin{aligned} & |B|=|A|^{(3-1)^2}=81 \\\\ & |A|^4=81=3^4 \\\\ & |A|= \\pm 3 \\end{aligned} $$</p>\n<p>$1-\\alpha^2= \\pm 3\\left\\{|A|=1-\\alpha^2\\right\\}$</p>\n<p>$$ 1-\\alpha^2=-3 \\text { or } 1-\\alpha^2=3 $$</p>\n<p>$\\alpha^2=4$ or $\\alpha^2=-2$ not possible</p>\n<p>so value of $\\alpha^2$ is 4</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml98p5q1",
@@ -58,7 +58,7 @@
     "difficulty": "medium",
     "solution": "<p>Given two $3 \\times 3$ matrices $P=\\left[p_{i j}\\right], Q=\\left[q_{i j}\\right]$ are given</p>\n<p>$$ q_{i j}=2^{(i+j-1)} p_{i j}, \\operatorname{det}(Q)=2^{10} . $$</p>\n<p>To calculate $\\operatorname{det}(\\operatorname{adj}(\\operatorname{adj} P))$</p>\n<p>We know $\\operatorname{det}(\\operatorname{adj}(\\operatorname{adj} P))=(\\operatorname{det}(P))^{(n-1)^2}$</p>\n<p>where $n$ is order of matrix which is 3</p>\n<p>so, $\\operatorname{det}(\\operatorname{adj}(\\operatorname{adj} P))=(\\operatorname{det}(P))^4-(1)$</p>\n<p>Let P matrix</p>\n<p>$P=\\left[\\begin{array}{lll}p_{11} & p_{12} & p_{13} \\\\ p_{21} & p_{22} & p_{23} \\\\ p_{31} & p_{32} & p_{33}\\end{array}\\right]$</p>\n<p>and $Q=\\left[\\begin{array}{lll}q_{11} & q_{12} & q_{13} \\\\ q_{21} & q_{22} & q_{23} \\\\ q_{31} & q_{32} & q_{33}\\end{array}\\right]$</p>\n<p>use $q_{i j}=2^{i+j-1} p_{i j}$ to find Q matrix</p>\n<p>$$ \\text { e.g. } q_{11}=2^{1+1-1} p_{11}=2 p_{11}, q_{23}=2^{2+3-1} p_{23}=2^4 p_{23} $$</p>\n<p>$$ Q=\\left[\\begin{array}{ccc} 2 p_{11} & 2^2 p_{12} & 2^3 p_{13} \\\\ 2^2 p_{21} & 2^3 p_{22} & 2^4 p_{23} \\\\ 2^3 p_{31} & 2^4 p_{32} & 2^5 p_{33} \\end{array}\\right] $$</p>\n<p>$\\begin{aligned} & Q=\\left[\\begin{array}{ccc}2 p_{11} & 2^2 p_{12} & 2^3 p_{13} \\\\ 2^2 p_{21} & 2^3 p_{22} & 2^4 p_{23} \\\\ 2^3 p_{31} & 2^4 p_{32} & 2^5 p_{33}\\end{array}\\right] \\\\ & \\operatorname{det}(Q)=\\left|\\begin{array}{ccc}2 p_{11} & 2^2 p_{12} & 2^3 p_{13} \\\\ 2^2 p_{21} & 2^3 p_{22} & 2^4 p_{23} \\\\ 2^3 p_{31} & 2^4 p_{32} & 2^5 p_{33}\\end{array}\\right|=2^{10}\\end{aligned}$</p>\n<p>taking common 2 from $R_1, 2^2$ from $R_2 \\& 2^3$ from $R_3$</p>\n<p>$$ \\operatorname{det}(Q)=2 \\cdot 2^2 \\cdot 2^3\\left|\\begin{array}{lll} p_{11} & 2 p_{12} & 2^2 p_{13} \\\\ p_{21} & 2 p_{22} & 2^2 p_{23} \\\\ p_{31} & 2 p_{32} & 2^2 p_{33} \\end{array}\\right|=2^{10} $$</p>\n<p>taking common 2 from $C_2$ and $2^2$ from $C_3$</p>\n<p>$$ 2 \\cdot 2^2 \\cdot 2^3 \\cdot 2 \\cdot 2^2\\left|\\begin{array}{lll} p_{11} & p_{12} & p_{13} \\\\ p_{21} & p_{22} & p_{23} \\\\ p_{31} & p_{32} & p_{33} \\end{array}\\right|=2^{10} $$</p>\n<p>$\\begin{aligned} & \\Rightarrow 2^9 \\cdot \\operatorname{det}(P)=2^{10} \\\\ & \\Rightarrow \\operatorname{det}(P)=2 \\\\ & \\text { from }(1) \\operatorname{det}(\\operatorname{adj}(\\operatorname{adj} P))=(\\operatorname{det}(P))^4=2^4=16\\end{aligned}$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhtht",
@@ -80,7 +80,7 @@
     "difficulty": "medium",
     "solution": "<p>Given</p>\n<p>$$ A=\\begin{bmatrix} 1 & 1 & 2\\\\ -2 & 0 & 1\\\\ 1 & 3 & 5 \\end{bmatrix} $$</p>\n<p>We have to find the sum of all elements of</p>\n<p>$$ \\operatorname{adj}\\left(\\operatorname{adj}\\left(2(\\operatorname{adj}A)^{-1}\\right)\\right) $$</p>\n\n<p>$$ \\det A= 1\\begin{vmatrix} 0 & 1\\\\ 3 & 5 \\end{vmatrix} -1\\begin{vmatrix} -2 & 1\\\\ 1 & 5 \\end{vmatrix} +2\\begin{vmatrix} -2 & 0\\\\ 1 & 3 \\end{vmatrix} $$</p>\n<p>$$ =1(0\\cdot 5-1\\cdot 3)-1((-2)\\cdot 5-1\\cdot 1)+2((-2)\\cdot 3-0\\cdot 1) $$</p>\n<p>$$ =-3-(-11)+2(-6) $$</p>\n<p>$$ =-3+11-12=-4 $$</p>\n<p>So,</p>\n<p>$$ \\det A=-4 $$</p>\n\n\n<p>For an $n\\times n$ matrix,</p>\n<p>$$ \\det(\\operatorname{adj}A)=(\\det A)^{n-1} $$</p>\n<p>Since $A$ is $3\\times 3$,</p>\n<p>$$ \\det(\\operatorname{adj}A)=(\\det A)^2=(-4)^2=16 $$</p>\n<p>Now let</p>\n<p>$$ B=2(\\operatorname{adj}A)^{-1} $$</p>\n<p>We need $\\operatorname{adj}(\\operatorname{adj}B)$.</p>\n<p>For a $3\\times 3$ matrix, the property is:</p>\n<p>$$ \\operatorname{adj}(\\operatorname{adj}B)=(\\det B)\\,B $$</p>\n\n<p>Since</p>\n<p>$$ B=2(\\operatorname{adj}A)^{-1} $$</p>\n<p>and for a $3\\times 3$ matrix,</p>\n<p>$$ \\det(2M)=2^3\\det(M)=8\\det(M) $$</p>\n<p>therefore,</p>\n<p>$$ \\det B=8\\det\\left((\\operatorname{adj}A)^{-1}\\right) $$</p>\n<p>Also,</p>\n<p>$$ \\det\\left((\\operatorname{adj}A)^{-1}\\right)=\\frac{1}{\\det(\\operatorname{adj}A)}=\\frac{1}{16} $$</p>\n<p>Hence,</p>\n<p>$$ \\det B=8\\cdot \\frac{1}{16}=\\frac{1}{2} $$</p>\n<p>So,</p>\n<p>$$ \\operatorname{adj}(\\operatorname{adj}B)=(\\det B)B=\\frac12\\,B $$</p>\n<p>But</p>\n<p>$$ B=2(\\operatorname{adj}A)^{-1} $$</p>\n<p>Thus,</p>\n<p>$$ \\operatorname{adj}(\\operatorname{adj}B)=\\frac12 \\cdot 2(\\operatorname{adj}A)^{-1}=(\\operatorname{adj}A)^{-1} $$</p>\n<p>So the required matrix is simply</p>\n<p>$$ (\\operatorname{adj}A)^{-1} $$</p>\n\n\n<p>We know,</p>\n<p>$$ \\operatorname{adj}A=(\\det A)A^{-1} $$</p>\n<p>Hence,</p>\n<p>$$ (\\operatorname{adj}A)^{-1}=\\frac{1}{\\det A}A $$</p>\n<p>Since $\\det A=-4$,</p>\n<p>$$ (\\operatorname{adj}A)^{-1}=\\frac{1}{-4}A=-\\frac14 A $$</p>\n<p>Therefore the required matrix is</p>\n<p>$$ -\\frac14 A $$</p>\n\n\n<p>First find the sum of elements of $A$:</p>\n<p>$$ 1+1+2-2+0+1+1+3+5=12 $$</p>\n<p>Therefore sum of elements of $-\\frac14 A$ is</p>\n<p>$$ -\\frac14 \\cdot 12=-3 $$</p>\n\n<h3>Final Answer</h3>\n<p>$$ \\boxed{-3} $$</p>\n<p>So, the correct option is <strong>D</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhxut",
@@ -102,7 +102,7 @@
     "difficulty": "hard",
     "solution": "<p>Let</p>\n<p>$$ u=\\begin{bmatrix}1\\\\0\\\\1\\end{bmatrix}, \\qquad v=\\begin{bmatrix}0\\\\0\\\\1\\end{bmatrix} $$</p>\n<p>We are given</p>\n<p>$$ A^T u=\\begin{bmatrix}5\\\\2\\\\2\\end{bmatrix}, \\qquad A^T v=\\begin{bmatrix}3\\\\1\\\\1\\end{bmatrix} $$</p>\n<p>and</p>\n<p>$$ Au=\\begin{bmatrix}3\\\\4\\\\4\\end{bmatrix}, \\qquad Av=\\begin{bmatrix}1\\\\3\\\\1\\end{bmatrix} $$</p>\n<p>We have to find</p>\n<p>$$ \\det\\left(\\operatorname{adj}(A^2+A)\\right) $$</p>\n<p>given that</p>\n<p>$$ \\det(A)=1 $$</p>\n\n<h3>Step 1: Use the relation $A(u-v)$</h3>\n<p>First note that</p>\n<p>$$ u-v=\\begin{bmatrix}1\\\\0\\\\1\\end{bmatrix}-\\begin{bmatrix}0\\\\0\\\\1\\end{bmatrix} =\\begin{bmatrix}1\\\\0\\\\0\\end{bmatrix} $$</p>\n<p>So,</p>\n<p>$$ A\\begin{bmatrix}1\\\\0\\\\0\\end{bmatrix}=A(u-v)=Au-Av $$</p>\n<p>Now,</p>\n<p>$$ Au-Av= \\begin{bmatrix}3\\\\4\\\\4\\end{bmatrix}- \\begin{bmatrix}1\\\\3\\\\1\\end{bmatrix} = \\begin{bmatrix}2\\\\1\\\\3\\end{bmatrix} $$</p>\n<p>Hence the first column of $A$ is</p>\n<p>$$ A\\begin{bmatrix}1\\\\0\\\\0\\end{bmatrix} = \\begin{bmatrix}2\\\\1\\\\3\\end{bmatrix} $$</p>\n<p>Also, since</p>\n<p>$$ A\\begin{bmatrix}0\\\\0\\\\1\\end{bmatrix} = \\begin{bmatrix}1\\\\3\\\\1\\end{bmatrix} $$</p>\n<p>the third column of $A$ is</p>\n<p>$$ \\begin{bmatrix}1\\\\3\\\\1\\end{bmatrix} $$</p>\n<p>Now use</p>\n<p>$$ A\\begin{bmatrix}1\\\\0\\\\1\\end{bmatrix} = A\\begin{bmatrix}1\\\\0\\\\0\\end{bmatrix} + A\\begin{bmatrix}0\\\\0\\\\1\\end{bmatrix} $$</p>\n<p>which gives</p>\n<p>$$ \\begin{bmatrix}3\\\\4\\\\4\\end{bmatrix} = \\begin{bmatrix}2\\\\1\\\\3\\end{bmatrix} + \\begin{bmatrix}1\\\\3\\\\1\\end{bmatrix} $$</p>\n<p>This is consistent.</p>\n<p>So let</p>\n<p>$$ A= \\begin{bmatrix} 2 & a & 1\\\\ 1 & b & 3\\\\ 3 & c & 1 \\end{bmatrix} $$</p>\n<p>Now use $\\det(A)=1$.</p>\n\n<h3>Step 2: Find the second column using determinant</h3>\n<p>Compute determinant:</p>\n<p>$$ \\det(A)= \\begin{vmatrix} 2 & a & 1\\\\ 1 & b & 3\\\\ 3 & c & 1 \\end{vmatrix} $$</p>\n<p>Expanding along the first row,</p>\n<p>$$ \\det(A)=2\\begin{vmatrix}b&3\\\\ c&1\\end{vmatrix} -a\\begin{vmatrix}1&3\\\\ 3&1\\end{vmatrix} +1\\begin{vmatrix}1&b\\\\ 3&c\\end{vmatrix} $$</p>\n<p>$$ =2(b-3c)-a(1-9)+(c-3b) $$</p>\n<p>$$ =2b-6c+8a+c-3b $$</p>\n<p>$$ =8a-b-5c $$</p>\n<p>Given $\\det(A)=1$,</p>\n<p>$$ 8a-b-5c=1 $$</p>\n<p>But we still need more information. For that use the conditions involving $A^T$.</p>\n\n<h3>Step 3: Use transpose conditions</h3>\n<p>Since</p>\n<p>$$ A^T\\begin{bmatrix}0\\\\0\\\\1\\end{bmatrix} = \\begin{bmatrix}3\\\\1\\\\1\\end{bmatrix} $$</p>\n<p>this means the third column of $A^T$ is $\\begin{bmatrix}3\\\\1\\\\1\\end{bmatrix}$, so the third row of $A$ is</p>\n<p>$$ \\begin{bmatrix}3&1&1\\end{bmatrix} $$</p>\n<p>Thus,</p>\n<p>$$ c=1 $$</p>\n<p>Now $A$ becomes</p>\n<p>$$ A= \\begin{bmatrix} 2 & a & 1\\\\ 1 & b & 3\\\\ 3 & 1 & 1 \\end{bmatrix} $$</p>\n<p>Next, use</p>\n<p>$$ A^T\\begin{bmatrix}1\\\\0\\\\1\\end{bmatrix} = \\begin{bmatrix}5\\\\2\\\\2\\end{bmatrix} $$</p>\n<p>But</p>\n<p>$$ A^T\\begin{bmatrix}1\\\\0\\\\1\\end{bmatrix} = A^T\\begin{bmatrix}1\\\\0\\\\0\\end{bmatrix} + A^T\\begin{bmatrix}0\\\\0\\\\1\\end{bmatrix} $$</p>\n<p>Now $A^T\\begin{bmatrix}1\\\\0\\\\0\\end{bmatrix}$ is the first column of $A^T$, i.e. the first row of $A$, which is</p>\n<p>$$ \\begin{bmatrix}2\\\\a\\\\1\\end{bmatrix} $$</p>\n<p>And</p>\n<p>$$ A^T\\begin{bmatrix}0\\\\0\\\\1\\end{bmatrix} = \\begin{bmatrix}3\\\\1\\\\1\\end{bmatrix} $$</p>\n<p>Therefore,</p>\n<p>$$ \\begin{bmatrix}2\\\\a\\\\1\\end{bmatrix} + \\begin{bmatrix}3\\\\1\\\\1\\end{bmatrix} = \\begin{bmatrix}5\\\\2\\\\2\\end{bmatrix} $$</p>\n<p>So,</p>\n<p>$$ \\begin{bmatrix}5\\\\a+1\\\\2\\end{bmatrix} = \\begin{bmatrix}5\\\\2\\\\2\\end{bmatrix} $$</p>\n<p>Hence,</p>\n<p>$$ a=1 $$</p>\n<p>Now use $\\det(A)=1$:</p>\n<p>$$ 8a-b-5c=1 $$</p>\n<p>with $a=1,\\ c=1$,</p>\n<p>$$ 8-b-5=1 $$</p>\n<p>$$ 3-b=1 $$</p>\n<p>$$ b=2 $$</p>\n<p>Thus,</p>\n<p>$$ A= \\begin{bmatrix} 2&1&1\\\\ 1&2&3\\\\ 3&1&1 \\end{bmatrix} $$</p>\n\n<h3>Step 4: Find $A^2+A$</h3>\n<p>First compute $A^2$:</p>\n<p>$$ A^2= \\begin{bmatrix} 2&1&1\\\\ 1&2&3\\\\ 3&1&1 \\end{bmatrix} \\begin{bmatrix} 2&1&1\\\\ 1&2&3\\\\ 3&1&1 \\end{bmatrix} $$</p>\n<p>Multiplying row by column:</p>\n<p>$$ A^2= \\begin{bmatrix} 8&5&6\\\\ 13&8&10\\\\ 10&6&7 \\end{bmatrix} $$</p>\n<p>So,</p>\n<p>$$ A^2+A= \\begin{bmatrix} 8&5&6\\\\ 13&8&10\\\\ 10&6&7 \\end{bmatrix} + \\begin{bmatrix} 2&1&1\\\\ 1&2&3\\\\ 3&1&1 \\end{bmatrix} = \\begin{bmatrix} 10&6&7\\\\ 14&10&13\\\\ 13&7&8 \\end{bmatrix} $$</p>\n\n<h3>Step 5: Use determinant property</h3>\n<p>For a $3\\times 3$ matrix $M$,</p>\n<p>$$ \\det(\\operatorname{adj} M)=\\det(M)^{3-1}=\\det(M)^2 $$</p>\n<p>So we first find</p>\n<p>$$ \\det(A^2+A) $$</p>\n<p>Now,</p>\n<p>$$ A^2+A=A(A+I) $$</p>\n<p>Hence,</p>\n<p>$$ \\det(A^2+A)=\\det(A)\\det(A+I) $$</p>\n<p>Given $\\det(A)=1$, so</p>\n<p>$$ \\det(A^2+A)=\\det(A+I) $$</p>\n<p>Now</p>\n<p>$$ A+I= \\begin{bmatrix} 3&1&1\\\\ 1&3&3\\\\ 3&1&2 \\end{bmatrix} $$</p>\n<p>Its determinant is</p>\n<p>$$ \\det(A+I)= \\begin{vmatrix} 3&1&1\\\\ 1&3&3\\\\ 3&1&2 \\end{vmatrix} $$</p>\n<p>Expanding along the first row:</p>\n<p>$$ =3\\begin{vmatrix}3&3\\\\1&2\\end{vmatrix} -1\\begin{vmatrix}1&3\\\\3&2\\end{vmatrix} +1\\begin{vmatrix}1&3\\\\3&1\\end{vmatrix} $$</p>\n<p>$$ =3(6-3)-(2-9)+(1-9) $$</p>\n<p>$$ =3\\cdot 3-(-7)-8 $$</p>\n<p>$$ =9+7-8=8 $$</p>\n<p>So,</p>\n<p>$$ \\det(A^2+A)=8 $$</p>\n<p>Therefore,</p>\n<p>$$ \\det(\\operatorname{adj}(A^2+A))=\\det(A^2+A)^2=8^2=64 $$</p>\n\n<h3>Final Answer</h3>\n<p>$$ \\boxed{64} $$</p>\n<p>So, the correct option is <strong>D</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhpiw",
@@ -141,7 +141,7 @@
     "difficulty": "medium",
     "solution": "<p>$A=\\left[\\begin{array}{lll}\\alpha & 1 & 2 \\\\ 2 & 3 & 0 \\\\ 0 & 4 & 5\\end{array}\\right]$</p>\n<p>$\\Rightarrow|\\boldsymbol{A}|=15 \\boldsymbol{\\alpha}-10+16=15 \\boldsymbol{\\alpha}+6$</p>\n<p>Now adj $A=\\left[\\begin{array}{ccc}15 & 3 & -6 \\\\ -10 & 5 \\alpha & 4 \\\\ 8 & -4 \\alpha & 3 \\alpha-2\\end{array}\\right]$</p>\n<p>$\\therefore \\mathrm{B}=\\left[\\begin{array}{ccc}1 & 0 & 0 \\\\ 0 & -5 \\alpha & 0 \\\\ 0 & 4 \\alpha & -2 \\alpha\\end{array}\\right]+\\operatorname{adj}(\\mathrm{A})$</p>\n<p>$B=\\left[\\begin{array}{ccc}16 & 3 & -6 \\\\ -10 & 0 & 4 \\\\ 8 & 0 & \\alpha-2\\end{array}\\right]$</p>\n<p>$\\begin{aligned} & \\&|\\mathrm{~B}|=6(5 \\alpha+6)=66 \\text { (given in question) } \\\\ & \\Rightarrow \\alpha=1 \\\\ & \\Rightarrow|\\mathrm{~A}|=21\\end{aligned}$</p>\n<p>$\\boldsymbol{A} \\cdot \\operatorname{Adj}(\\boldsymbol{A})=|\\boldsymbol{A}| \\boldsymbol{I} \\Rightarrow|\\boldsymbol{A} \\cdot \\operatorname{Adj}(\\boldsymbol{A})|=\\| \\boldsymbol{A}|\\boldsymbol{I}|=\\left(|\\boldsymbol{A}|^3\\right)|\\boldsymbol{I}|=|\\boldsymbol{A}|^3$</p>\n<p>$$\\Rightarrow $$ $|\\boldsymbol{A}||\\operatorname{Adj}(\\boldsymbol{A})|=|\\boldsymbol{A}|^3 \\Rightarrow|\\operatorname{Adj}(\\boldsymbol{A})|=|\\boldsymbol{A}|^2=(21)^2=441$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml89h5at",
@@ -214,7 +214,7 @@
     "difficulty": "hard",
     "solution": "<p>Given</p>\n<p>$$A+I=\\begin{bmatrix}1 & a & 1\\\\ 2 & 1 & 0\\\\ a & 1 & 2\\end{bmatrix}$$</p>\n<p>So,</p>\n<p>$$A=\\begin{bmatrix}1-1 & a & 1\\\\ 2 & 1-1 & 0\\\\ a & 1 & 2-1\\end{bmatrix} =\\begin{bmatrix}0 & a & 1\\\\ 2 & 0 & 0\\\\ a & 1 & 1\\end{bmatrix}$$</p>\n<h3>1) Find $a$ using $\\det(A)=-4$</h3>\n<p>Compute $\\det(A)$ by expanding along the first row:</p>\n<p>$ \\det(A)=0\\cdot C_{11}+a\\cdot C_{12}+1\\cdot C_{13} $</p>\n<p>Now,</p>\n<p>$ C_{12}=(-1)^{1+2}\\begin{vmatrix}2&0\\\\ a&1\\end{vmatrix} =-\\,(2\\cdot 1-0\\cdot a)=-2 $</p>\n<p>$ C_{13}=(-1)^{1+3}\\begin{vmatrix}2&0\\\\ a&1\\end{vmatrix} =+\\,(2\\cdot 1-0\\cdot a)=2 $</p>\n<p>So,</p>\n<p>$ \\det(A)=a(-2)+1(2)=2-2a=2(1-a) $</p>\n<p>Given $\\det(A)=-4$:</p>\n<p>$ 2(1-a)=-4 \\implies 1-a=-2 \\implies a=3 $</p>\n<h3>2) Evaluate $\\det\\left((a+1)\\,\\operatorname{adj}((a-1)A)\\right)$</h3>\n<p>Use properties for a $3\\times 3$ matrix:</p>\n<ul>\n<li><p>$\\det(kM)=k^3\\det(M)$</p></li>\n<li><p>$\\det(\\operatorname{adj}(M))=(\\det M)^{3-1}=(\\det M)^2$</p></li>\n<li><p>$\\det((a-1)A)=(a-1)^3\\det(A)$</p></li>\n</ul>\n<p>Let $B=(a-1)A$. Then</p>\n<p>$ \\det\\left((a+1)\\operatorname{adj}(B)\\right)=(a+1)^3\\det(\\operatorname{adj}(B)) =(a+1)^3(\\det B)^2 $</p>\n<p>Now,</p>\n<p>$ \\det B=((a-1)^3)(\\det A)=(a-1)^3(-4) $</p>\n<p>So,</p>\n<p>$ \\det\\left((a+1)\\operatorname{adj}((a-1)A)\\right) =(a+1)^3\\left[(-4)(a-1)^3\\right]^2 =(a+1)^3\\cdot 16\\cdot (a-1)^6 $</p>\n<p>Put $a=3$:</p>\n<p>$ (a+1)^3=4^3=2^6,\\quad (a-1)^6=2^6,\\quad 16=2^4 $</p>\n<p>Hence,</p>\n<p>$ \\text{Determinant}=2^6\\cdot 2^4\\cdot 2^6=2^{16}=2^m3^n $</p>\n<p>So $m=16,\\; n=0 \\implies m+n=16$.</p>\n<p><strong>Answer: 16 (Option D)</strong></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnur0v",
@@ -236,7 +236,7 @@
     "difficulty": "hard",
     "solution": "<p>To find the expression $|2 \\operatorname{adj}(3 A \\operatorname{adj}(2 A))|$, we break it down as follows:</p>\n\n<p><p>Recognize that:</p>\n<p>$    |2 \\operatorname{adj}(3 A \\operatorname{adj}(2 A))| = 2^3 |3A (\\operatorname{adj}(2A))|^2    $</p></p>\n<p><p>Apply properties of determinants:</p>\n<p>$    = 2^3 (3^3)^2 |A|^2 \\left|\\operatorname{adj}(2A)\\right|^2    $</p></p>\n<p><p>Further simplify using $|\\operatorname{adj}(B)| = |B|^{n-1}$ for a $3 \\times 3$ matrix:</p>\n<p>$    = 2^3 \\cdot 3^6 \\cdot 5^2 \\cdot (|2A|^2)^2    $</p></p>\n<p><p>Simplify $|2A|$:</p>\n<p>$    = 2^3 \\cdot 3^6 \\cdot 5^2 \\cdot (2^3)^4 \\cdot |A|^4    $</p></p>\n<p><p>Continue to simplify:</p>\n<p>$    = 2^3 \\cdot 3^6 \\cdot 5^2 \\cdot (2^3)^4 \\cdot 5^4    $</p></p>\n<p><p>Expand and combine powers:</p>\n<p>$    = 2^{15} \\cdot 3^6 \\cdot 5^6    $</p></p>\n\n<p>Therefore, $\\alpha = 15$, $\\beta = 6$, and $\\gamma = 6$. So, $\\alpha + \\beta + \\gamma = 15 + 6 + 6 = 27$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j6e1",
@@ -258,7 +258,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& |\\operatorname{adj}(\\operatorname{adj}(\\operatorname{adj} A))|=81 \\\\\n& =|A|^{(n-1)^3}=(3)^4 \\Rightarrow|A|^8=3^4 \\Rightarrow|A|=3^{1 / 2} \\\\\n& |\\operatorname{adj}(\\operatorname{adj} A)|^{\\frac{(n-1)^2}{2}}=|A|^{\\left(3 n^2-5 n-4\\right)} \\\\\n& {\\left[|A|^{(n-1)^2}\\right]^{\\frac{(n-1)^2}{2}}=|A|^{3 n^2-5 n-4}} \\\\\n& |A|^{2(n-1)^2}=|A|^{3 n^2-5 n-4} \\\\\n& \\Rightarrow 2(n-1)^2=3 n^2-5 n-4 \\\\\n& \\quad n^2-n-6=0 \\\\\n& \\Rightarrow n=-2,3 \\\\\n& \\sum_{x \\leftarrow 5}\\left|A^{n^2+n}\\right|=\\left|A^2\\right|+\\left|A^{12}\\right| \\\\\n& =3+3^6=732\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dmho9j",
@@ -280,7 +280,7 @@
     "difficulty": "medium",
     "solution": "<p>$|A|=\\left|\\begin{array}{ccc}2 & 2+p & 2+p+q \\\\ 4 & 6+2 p & 8+3 p+2 q \\\\ 6 & 12+3 p & 20+6 p+3 q\\end{array}\\right|$</p>\n<p>$$\\begin{aligned}\n&\\mathrm{C}_3 \\rightarrow \\mathrm{C}_3-\\mathrm{C}_2-\\mathrm{C}_1 \\times \\frac{\\mathrm{q}}{2}\\\\\n&\\text { Then } \\mathrm{C}_3 \\rightarrow \\mathrm{C}_2-\\mathrm{C}_1 \\mathrm{X}\\left(1+\\frac{\\mathrm{p}}{2}\\right)\\\\\n&\\Rightarrow|\\mathrm{A}|=\\left|\\begin{array}{ccc}\n2 & 0 & 0 \\\\\n4 & 2 & 2+\\mathrm{p} \\\\\n6 & 6 & 8+3 \\mathrm{p}\n\\end{array}\\right|\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow|\\mathrm{A}|=2(16+6 \\mathrm{p}-12-6 \\mathrm{p})=8=2^3 \\\\\n& |\\operatorname{adj}(\\operatorname{adj}(3 \\mathrm{~A}))|=|3 \\mathrm{~A}|^{(3-1)^2}=|3 \\mathrm{~A}|^4 \\\\\n& =\\left(3^3|\\mathrm{~A}|\\right)^4=\\left(3^3 \\times 2^3\\right)^4=2^{12} \\times 3^{12} \\\\\n& \\Rightarrow \\mathrm{~m}+\\mathrm{n}=24\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd58dpi",
@@ -319,7 +319,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\operatorname{adj}(A)=\\left[\\begin{array}{ll}\n1 & -2 \\\\\n0 & 1\n\\end{array}\\right] \\\\\n& (\\operatorname{adj} A)^2=\\left[\\begin{array}{ll}\n1 & -4 \\\\\n0 & 1\n\\end{array}\\right] \\\\\n& (\\operatorname{adj} A)^3=\\left[\\begin{array}{cc}\n1 & -6 \\\\\n0 & 1\n\\end{array}\\right] \\\\\n& (\\operatorname{adj} A)^4=\\left[\\begin{array}{cc}\n1 & -8 \\\\\n0 & 1\n\\end{array}\\right] \\\\\n& (\\operatorname{adj} A)^r=\\left[\\begin{array}{cc}\n1 & (-2 r) \\\\\n0 & 1\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& B=\\sum_{r=0}^{10}(\\operatorname{adj} A)^r=\\left[\\begin{array}{ll}\n\\sum_\\limits{r=0}^{10} 1 & \\sum_\\limits{r=0}^{10}(-2 r) \\\\\n\\sum_\\limits{r=0}^{10}(0) & \\sum_\\limits{r=0}^{10}(1)\n\\end{array}\\right] \\\\\n& B=\\left[\\begin{array}{cc}\n11 & -110 \\\\\n0 & 11\n\\end{array}\\right]\n\\end{aligned}$$</p>\n<p>$$\\text { Sum of elements }=-110+11+11=-88$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv0vxbzn",
@@ -341,7 +341,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\left|\\operatorname{adj}\\left(A-2 A^T\\right) \\cdot \\operatorname{adj}\\left(2 A-A^T\\right)\\right|=2^8 \\\\\n& P=A-2 A^{\\top} \\\\\n& Q=2 A^T-A \\Rightarrow Q^T=2 A^T-A=-P \\\\\n& |\\operatorname{adj}(P) \\operatorname{adj}(Q)| \\Rightarrow|P Q|=-2^4 \\\\\n& \\Rightarrow|P|(-|P|)=-2^4 \\Rightarrow|P|=4 \\text { and }|Q|=-4 \\\\\n& \\left|A-2 A^T\\right|=4 \\\\\n& A-2 A^T=\\left[\\begin{array}{lll}\n1 & 2 & \\alpha \\\\\n1 & 0 & 1 \\\\\n0 & 1 & 2\n\\end{array}\\right]-2\\left[\\begin{array}{lll}\n1 & 1 & 0 \\\\\n2 & 0 & 1 \\\\\n\\alpha & 1 & 2\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n-1 & 0 & \\alpha \\\\\n-3 & 0 & -1 \\\\\n-2 \\alpha & -1 & -2\n\\end{array}\\right] \\\\\n& \\Rightarrow\\left|A-2 A^T\\right|=1+3 \\alpha=4 \\Rightarrow \\alpha=1 \\Rightarrow|A|=-4 \\\\\n& \\Rightarrow|A|^2=16\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv9s20az",
@@ -363,7 +363,7 @@
     "difficulty": "medium",
     "solution": "<p>$$A=\\left[\\begin{array}{ccc}\n\\beta & \\alpha & 3 \\\\\n\\alpha & \\alpha & \\beta \\\\\n-\\beta & \\alpha & 2 \\alpha\n\\end{array}\\right], B=\\left[\\begin{array}{ccc}\n3 \\alpha & -9 & 3 \\alpha \\\\\n-\\alpha & 7 & -2 \\alpha \\\\\n-2 \\alpha & 5 & -2 \\beta\n\\end{array}\\right]$$</p>\n<p>Cofactor of $$A$$-matrix is</p>\n<p>$$=\\left[\\begin{array}{ccc}\n2 \\alpha^2-\\alpha \\beta & -\\left(2 \\alpha^2+\\beta^2\\right) & \\alpha^2+\\alpha \\beta \\\\\n-\\left(2 \\alpha^2-3 \\alpha\\right) & (2 \\alpha \\beta+3 \\beta) & -(2 \\alpha \\beta) \\\\\n\\alpha \\beta-3 \\alpha & -\\left(\\beta^2-3 \\alpha\\right) & \\beta \\alpha-\\alpha^2\n\\end{array}\\right]$$</p>\n<p>which is equal to matrix $$B$$</p>\n<p>So, by comparing elements of two matrix</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\alpha \\beta-3 \\alpha=-2 \\alpha \\\\\n& \\Rightarrow \\alpha \\beta-\\alpha=0 \\\\\n& \\Rightarrow \\alpha(\\beta-1)=0 \\\\\n& \\Rightarrow \\alpha=0 \\text { or } \\beta=1[\\because \\alpha \\text { cannot be } 0] \\\\\n& \\Rightarrow \\beta=1 \\\\\n& \\text { and }-\\beta^2+3 \\alpha=5 \\\\\n& \\Rightarrow 3 \\alpha=6 \\\\\n& \\Rightarrow \\alpha=2 \\\\\n& A=\\left[\\begin{array}{ccc}\n1 & 2 & 3 \\\\\n2 & 2 & 1 \\\\\n-1 & 2 & 4\n\\end{array}\\right] \\\\\n& \\operatorname{Det}(A B)=|A||B|=|A|\\left|(\\operatorname{adj} A)^{\\top}\\right| \\\\\n& =|A| \\cdot|A|^2 \\\\\n& =|A|^3 \\\\\n& =(6-18+18)^3 \\\\\n& =6^3 \\\\\n& =216 \\\\\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lvb294f8",
@@ -385,7 +385,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& |A|=3 \\\\\n& \\left|\\operatorname{adj}\\left(-4 \\operatorname{adj}\\left(-3 \\operatorname{adj}\\left(3 \\operatorname{adj}(2 A)^{-1}\\right)\\right)\\right)\\right| \\\\\n& =\\left|-4 \\operatorname{adj}\\left(-3 \\operatorname{adj}\\left(3 \\operatorname{adj}\\left((2 A)^{-1}\\right)\\right)\\right)\\right|^2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =4^6\\left|-3 \\operatorname{adj}\\left(\\operatorname{aadj}\\left((2 A)^{-1}\\right)\\right)\\right|^4 \\\\\n& =4^6 \\cdot 3^{12}\\left|\\operatorname{aadj}\\left((2 A)^{-1}\\right)\\right|^8 \\\\\n& =4^6 \\cdot 3^{12} \\cdot 3^{24}\\left|(2 A)^{-1}\\right|^{16} \\\\\n& =4^6 \\cdot 3^{36} 2^{-48}\\left|A^{-1}\\right|^{16} \\\\\n& =\\frac{2^{-36} 3^{36}}{3^{16}}=2^{-36} 3^{20} \\\\\n& m=-36 \\\\\n& n=20 \\\\\n& m+2 n=4\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luy9cloc",
@@ -424,7 +424,7 @@
     "difficulty": "medium",
     "solution": "$$\nB=\\left[\\begin{array}{lll}\n1 & 3 & \\alpha \\\\\n1 & 2 & 3 \\\\\n\\alpha & \\alpha & 4\n\\end{array}\\right], \\alpha>2\n$$\n<br/><br/>And $\\operatorname{adj}(A)=B,|A|=2$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow|\\operatorname{adj}(A)|=|B| \\\\\\\\\n& \\Rightarrow 2^2=(8-3 \\alpha)-3(4-3 \\alpha)+\\alpha(-\\alpha) \\\\\\\\\n& \\Rightarrow \\alpha^2-6 \\alpha+8=0\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n\\Rightarrow & (\\alpha-4)(\\alpha-2)=0 \\\\\\\\\n& \\alpha=4,2 \\text { but } \\alpha>2 \\text { so } \\alpha=4\n\\end{aligned}\n$$\n<br/><br/>Now\n<br/><br/>$$\n\\begin{aligned}\n& {\\left[\\begin{array}{ccc}\\alpha & -2 \\alpha & \\alpha\\end{array}\\right] B\\left[\\begin{array}{c}\n\\alpha \\\\\n-2 \\alpha \\\\\n\\alpha\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n4-8 & 4\n\\end{array}\\right]\\left[\\begin{array}{lll}\n1 & 3 & 4 \\\\\n1 & 2 & 3 \\\\\n4 & 4 & 4\n\\end{array}\\right]\\left[\\begin{array}{c}\n4 \\\\\n-8 \\\\\n4\n\\end{array}\\right]} \\\\\\\\\n& =\\left[\\begin{array}{lll}\n12 & 12 & 8\n\\end{array}\\right]\\left[\\begin{array}{c}\n4 \\\\\n-8 \\\\\n4\n\\end{array}\\right] \\\\\\\\\n& = {48-96+32=-16}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgzxiiqh",
@@ -446,7 +446,7 @@
     "difficulty": "hard",
     "solution": "We have,\n<br/><br/>$$\n\\begin{aligned}\n& |\\mathrm{A}|=\\left|\\begin{array}{ccc}\n2 & 1 & 0 \\\\\n1 & 2 & -1 \\\\\n0 & -1 & 2\n\\end{array}\\right|=2(4-1)-1(2-0)+0 \\\\\\\\\n& =6-2=4 \\\\\\\\\n& \\text { So, }|2 \\mathrm{~A}|=2^3|\\mathrm{~A}|=8 \\times 4=32 \\\\\\\\\n& \\text { Now, }|\\operatorname{adj}(\\operatorname{adj}(\\operatorname{adj} 2 \\mathrm{~A}))|=|2 \\mathrm{~A}|^{(n-1)^3} \\\\\\\\\n& =(32)^{2^3}=32^8 \\\\\\\\\n& \\Rightarrow 16^n=(32)^8=2^8 \\times 16^8 \\\\\\\\\n& \\Rightarrow 16^n=16^{2+8} \\Rightarrow n=10\n\\end{aligned}\n$$\n<br/><br/><b>Concepts :</b>\n<br/><br/>(a) $|k \\mathrm{~A}|=k^n|\\mathrm{~A}|$\n<br/><br/>(b) $|\\operatorname{adj} \\mathrm{A}|=|\\mathrm{A}|^{n-1}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "PgZgJe7pWzpAQNhRk51kjzq7f1e",
@@ -469,7 +469,7 @@
     "solution": "It is given that matrix M be a 3 $$ \\times $$ 3 invertible matrix, such that<br><br>M<sup>$$-$$1</sup> = adj(adj M) $$ \\Rightarrow $$ M<sup>$$-$$1</sup> = |M| M<br><br>($$ \\because $$ for a matrix A of order 'n' adj(adjA) = |A|<sup>n$$-$$2</sup> A}<br><br>$$ \\Rightarrow $$ M<sup>$$-$$1</sup> M = |M|M<sup>2</sup> $$ \\Rightarrow $$ M<sup>2</sup>|M| = I .....(i)<br><br>$$ \\because $$ det(M<sup>2</sup> |M|) = det(I) = 1<br><br>$$ \\Rightarrow $$ |M|<sup>3</sup>|M|<sup>2</sup> = 1 $$ \\Rightarrow $$ |M| = 1 .....(ii)<br><br>from Eqs. (i) and (ii), we get<br><br>M<sup>2</sup> = I<br><br>As, adj M = |M|M<sup>$$-$$1</sup> = M<br><br>$$ \\Rightarrow $$ (adj M)<sup>2</sup> = M<sup>2</sup> (adj M)<sup>2</sup> = I",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "JxVCw2Pq4c3NSbUZn31kjgromw4",
@@ -514,7 +514,7 @@
     "difficulty": "easy",
     "solution": "We have, $$A = \\left[ {\\matrix{\n   2 &amp; { - 3}  \\cr \n   { - 4} &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$$ \\therefore $$ A<sup>2</sup> = A.A = $$\\left[ {\\matrix{\n   2 &amp; { - 3}  \\cr \n   { - 4} &amp; 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   2 &amp; { - 3}  \\cr \n   { - 4} &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>= $$\\left[ {\\matrix{\n   {4 + 12} &amp; { - 6 - 3}  \\cr \n   { - 8 - 4} &amp; {12 + 1}  \\cr \n\n } } \\right]$$\n<br><br>= $$\\left[ {\\matrix{\n   {16} &amp; { - 9}  \\cr \n   { - 12} &amp; {13}  \\cr \n\n } } \\right]$$\n<br><br>Now, 3A<sup>2</sup> + 12A \n<br><br>= $$3\\left[ {\\matrix{\n   {16} &amp; { - 9}  \\cr \n   { - 12} &amp; {13}  \\cr \n\n } } \\right] + 12\\left[ {\\matrix{\n   2 &amp; { - 3}  \\cr \n   { - 4} &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>= $$\\left[ {\\matrix{\n   {48} &amp; { - 27}  \\cr \n   { - 36} &amp; {39}  \\cr \n\n } } \\right] + \\left[ {\\matrix{\n   {24} &amp; { - 36}  \\cr \n   { - 48} &amp; {12}  \\cr \n\n } } \\right]$$\n<br><br>= $$\\left[ {\\matrix{\n   {72} &amp; { - 63}  \\cr \n   { - 84} &amp; {51}  \\cr \n\n } } \\right]$$\n<br><br>$$ \\therefore $$ adj(3A<sup>2</sup> + 12A) = $$\\left[ {\\matrix{\n   {51} &amp; {63}  \\cr \n   {84} &amp; {72}  \\cr \n\n } } \\right]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "8yFgTFWWqZrfjWfpecKpP",
@@ -536,7 +536,7 @@
     "difficulty": "medium",
     "solution": "We know, the formula\n<br><br>A<sup>-1</sup> = $${{adj\\left( A \\right)} \\over {\\left| A \\right|}}$$\n<br><br>$$ \\therefore $$ adj (A) = $$\\left|  \\right.$$A$$\\left| \\right.$$.A<sup>$$-$$1</sup>\n<br><br><b>So, Option (A) is true.</b>\n<br><br>We know, the formula\n<br><br>adj (adj (A)) = $${\\left| A \\right|^{n - 2}}.A$$\n<br><br>Now if we put n = 3 as given that A is a 3 $$ \\times $$ 3 matrix, we get\n<br><br>adj (adj (A)) = $${\\left| A \\right|^{3 - 2}}.A$$ = $$\\left| A \\right|.A$$\n<br><br><b>So, Option (B) is also true.</b>\n<br><br>We know, the formula\n<br><br>adj (adj (A)) = $${\\left| A \\right|^{n - 1}}{\\left( {adj\\left( A \\right)} \\right)^{ - 1}}$$\n<br><br>Now if we put n = 3 as given that A is a 3 $$ \\times $$ 3 matrix, we get\n<br><br>adj (adj (A)) = $${\\left| A \\right|^{3 - 1}}{\\left( {adj\\left( A \\right)} \\right)^{ - 1}}$$ = $${\\left| A \\right|^{2}}{\\left( {adj\\left( A \\right)} \\right)^{ - 1}}$$\n<br><br><b>So, Option (C) is also true.</b>\n<br><br>Now in this formula\n<br><br>adj (adj (A)) = $${\\left| A \\right|^{n - 1}}{\\left( {adj\\left( A \\right)} \\right)^{ - 1}}$$\n<br><br>if we put n = 2, we get\n<br><br>adj (adj (A)) = $${\\left| A \\right|^{2 - 1}}{\\left( {adj\\left( A \\right)} \\right)^{ - 1}}$$ = $${\\left| A \\right|}{\\left( {adj\\left( A \\right)} \\right)^{ - 1}}$$\n<br><br>But as A is a 3 $$ \\times $$ 3 matrix so we can not take n = 2, so we can say for a 3 $$ \\times $$ 3 matrix option (D) is not true.\n<br><br><b>So, Option (D) is false.</b>\n\n\n\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l0bxt8u3",
@@ -559,7 +559,7 @@
     "solution": "<p>$$P = \\left[ {\\matrix{\n   3 & { - 1} & { - 2}  \\cr \n   2 & 0 & \\alpha   \\cr \n   3 & { - 5} & 0  \\cr \n\n } } \\right]$$</p>\n<p>Now, $$\\left| P \\right| = 3(5\\alpha ) + 1( - 3\\alpha ) - 2( - 10)$$</p>\n<p>$$ = 12\\alpha  + 20$$ ....... (i)</p>\n<p>$$\\therefore$$ $$(P) = {\\left[ {\\matrix{\n   {5\\alpha } & {2\\alpha } & { - 10}  \\cr \n   { - 10} & 6 & {12}  \\cr \n   { - \\alpha } & { - (3\\alpha  + 4)} & 2  \\cr \n\n } } \\right]^T}$$</p>\n<p>$$ = \\left[ {\\matrix{\n   {5\\alpha } & { - 10} & { - \\alpha }  \\cr \n   {2\\alpha } & 6 & { - 3\\alpha  - 4}  \\cr \n   { - 10} & {12} & 2  \\cr \n\n } } \\right]$$ ...... (ii)</p>\n<p>As, $$PQ = kI$$</p>\n<p>$$ \\Rightarrow \\left| P \\right|\\left| Q \\right| = \\left| {kI} \\right|$$</p>\n<p>$$ \\Rightarrow \\left| P \\right|\\left| Q \\right| = {k^3}$$</p>\n<p>$$ \\Rightarrow \\left| P \\right|\\left( {{{{k^2}} \\over 2}} \\right) = {k^3}$$ [given, $$\\left| Q \\right| = {{{k^2}} \\over 2}$$]</p>\n<p>$$ \\Rightarrow \\left| P \\right| = 2k$$ ......(iii)</p>\n<p>$$\\because$$ $$PQ = ki$$</p>\n<p>$$\\therefore$$ $$Q = k{p^{ - 1}}I$$</p>\n<p>$$ = k\\,.\\,{{adj\\,P} \\over {\\left| P \\right|}} = {{k(adj\\,P)} \\over {2k}}$$ [from Eq. (iii)]</p>\n<p>$$ = {{adj\\,P} \\over 2}$$</p>\n<p>$$ = {1 \\over 2}\\left[ {\\matrix{\n   {5\\alpha } & { - 10} & { - \\alpha }  \\cr \n   {2\\alpha } & 6 & { - 3\\alpha  - 4}  \\cr \n   { - 10} & {12} & 2  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ $${q_{23}} = {{ - 3\\alpha  - 4} \\over 2}$$ [given, $${q_{23}} =  - {k \\over 8}$$]</p>\n<p>$$ \\Rightarrow  - {{(3\\alpha  + 4)} \\over 2} =  - {k \\over 8}$$</p>\n<p>$$ \\Rightarrow (3\\alpha  + 4) \\times 4 = k$$</p>\n<p>$$ \\Rightarrow 12\\alpha  + 16 = k$$ ...... (iv)</p>\n<p>From Eq. (iii), $$\\left| P \\right| = 2k$$</p>\n<p>$$ \\Rightarrow 12\\alpha  + 20 = 2k$$ [from Eq. (i)] ...... (v)</p>\n<p>On solving Eqs. (iv) and (v), we get</p>\n<p>$$\\alpha$$ = $$-$$1 and k = 4 ....... (vi)</p>\n<p>$$\\therefore$$ $$4\\alpha  - k + 8 =  - 4 - 4 + 8 = 0$$</p>\n<p>$$\\therefore$$ Option (b) is correct.</p>\n<p>Now, $$\\left| {P\\,adj(Q)} \\right| = \\left| P \\right|\\left| {adj\\,Q} \\right|$$</p>\n<p>$$ = 2k{\\left( {{{{k^2}} \\over 2}} \\right)^2} = {{{k^5}} \\over 2} = {{{2^{10}}} \\over 2} = {2^9}$$</p>\n<p>$$\\therefore$$ Option (c) is correct.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "QFyqBI1sBBGMrWsu",
@@ -581,7 +581,7 @@
     "difficulty": "medium",
     "solution": "$$A\\left( {Adj\\,\\,A} \\right) = A\\,{A^T}$$\n<br><br>$$ \\Rightarrow {A^{ - 1}}A\\left( {adj\\,\\,A} \\right) = {A^{ - 1}}A\\,{A^T}$$\n<br><br>$$Adj\\,\\,A = {A^T}$$\n<br><br>$$ \\Rightarrow \\left[ {\\matrix{\n   2 &amp; b  \\cr \n   { - 3} &amp; {5a}  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   {5a} &amp; 3  \\cr \n   { - b} &amp; 2  \\cr \n\n } } \\right]$$\n<br><br>$$ \\Rightarrow a = {2 \\over 5}\\,\\,$$ and $$\\,\\,b = 3$$\n<br><br>$$ \\Rightarrow 5a + b = 5$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l24wyv5c",
@@ -604,6 +604,6 @@
     "solution": "<p>Concept Involved If $$\\left| {{A_{n \\times n}}} \\right| = \\Delta $$, then $$\\left| {adj\\,A} \\right| = {\\Delta ^{n - 1}}$$</p>\n<p>Here, $${P_{3 \\times 3}} = \\left[ {\\matrix{\n   1 & 4 & 4  \\cr \n   2 & 1 & 7  \\cr \n   1 & 1 & 3  \\cr \n\n } } \\right]$$</p>\n<p>$$ \\Rightarrow \\left| {adj\\,P} \\right| = {\\left| P \\right|^2}$$</p>\n<p>$$\\therefore$$ $$\\left| {adj\\,P} \\right| = \\left| {\\matrix{\n   1 & 4 & 4  \\cr \n   2 & 1 & 7  \\cr \n   1 & 1 & 3  \\cr \n\n } } \\right|$$</p>\n<p>$$ = 1(3 - 7) - 4(6 - 7) + 4(2 - 1)$$</p>\n<p>$$ =  - 4 + 4 + 4 = 4$$</p>\n<p>$$ \\Rightarrow \\left| P \\right| =  \\pm \\,2$$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\ln \\left(\\lim\\limits _{x \\rightarrow 1}\\left(\\frac{f(x+2)}{f(3)}\\right)^{\\frac{18}{(x-1)^2}}\\right)\\left(1^{\\infty}\\right) $$</p>\n<p>$$In\\left( {{e^{\\mathop {\\lim }\\limits_{x \\to 1} }}{{18} \\over {{{(x - 1)}^2}}}\\left( {{{f(x + 2)} \\over {f(3)}} - 1} \\right)} \\right)$$</p>\n<p>$$In\\left( {{e^{\\mathop {\\lim }\\limits_{x \\to 1} }}{{f'(x + 2)} \\over {2(X - 1)}}} \\right)$$</p>\n<p><p></p>\n<p>$$In\\left( {{e^{\\mathop {\\lim }\\limits_{x \\to 1} }}{{f''(x + 2)} \\over 2}} \\right)$$</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 1} {{f''(3)} \\over 2} = {4 \\over 2} = 2$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "l7eibhyh",
@@ -59,7 +59,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = \\left\\{ {\\matrix{\n   {{{{{\\log }_e}(1 - x + {x^2}) + {{\\log }_e}(1 + x + {x^2})} \\over {\\sec x - \\cos x}}} & , & {x \\in \\left( {{{ - \\pi } \\over 2},{\\pi  \\over 2}} \\right) - \\{ 0\\} }  \\cr \n   k & , & {x = 0}  \\cr \n\n } } \\right.$$</p>\n<p>for continuity at $$x = 0$$</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 0} f(x) = k$$</p>\n<p>$$\\therefore$$ $$k = \\mathop {\\lim }\\limits_{x \\to 0} {{{{\\log }_e}({x^4} + {x^2} + 1)} \\over {\\sec x - \\cos x}}\\left( {{0 \\over 0}\\,\\mathrm{form}} \\right)$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to 0} {{\\cos x{{\\log }_e}({x^4} + {x^2} + 1)} \\over {{{\\sin }^2}x}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to 0} {{{{\\log }_e}({x^4} + {x^2} + 1)} \\over {{x^2}}}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to 0} {{\\ln (1 + {x^2} + {x^4})} \\over {{x^2} + {x^4}}}\\,.\\,{{{x^2} + {x^4}} \\over {{x^2}}}$$</p>\n<p>$$ = 1$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "R5XYqyMrRxDibGRVXB1kjtg9z2p",
@@ -99,7 +99,7 @@
     "difficulty": "easy",
     "solution": "$$\\mathop {\\lim }\\limits_{x \\to 0} {{\\log \\left( {3 + x} \\right) - \\log \\left( {3 - x} \\right)} \\over x} = K$$ \n<br><br>(by $$L'$$  Hospital rule)\n<br><br>$$\\mathop {\\lim }\\limits_{x \\to 0} {{{1 \\over {3 + x}} - {{ - 1} \\over {3 - x}}} \\over 1} = K$$\n<br><br>$$\\therefore$$ $${2 \\over 3} = K$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "DZUSj4MdIWEgezAl",
@@ -121,6 +121,6 @@
     "difficulty": "easy",
     "solution": "Since $$\\mathop {\\lim }\\limits_{x \\to 0} \\left[ x \\right]$$ does not exist, hence the required limit does not exist. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

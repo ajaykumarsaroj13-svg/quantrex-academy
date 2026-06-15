@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} & \\lim _{x \\rightarrow 0}\\left[1+\\frac{(a-1)}{1!} x+\\frac{(a-1)^2}{2!} x^2+\\ldots \\ldots \\ldots \\infty\\right] \\\\ & \\frac{+2\\left[1-\\frac{(b x)^2}{2!}+\\ldots \\ldots \\infty\\right]+(c-2)\\left[1-\\frac{x^1}{1!}+\\frac{x^2}{2!}-\\ldots \\ldots \\infty\\right]}{x\\left(1-\\frac{x^2}{2!}+\\ldots \\ldots \\infty\\right)-\\left(x-\\frac{x^2}{2}+\\ldots \\ldots \\ldots \\infty\\right)} \\\\ & \\Rightarrow \\lim _{x \\rightarrow 0} \\frac{(c+1)+(a-c+1) x+\\left[\\frac{(a-1)^2}{2}-b^2+\\frac{(c-2)}{2}\\right] x^2+\\ldots \\ldots \\ldots \\infty}{\\left(\\frac{x^2}{2}-\\frac{x^3}{2}+\\ldots \\ldots \\ldots \\ldots \\infty\\right)}=2 \\\\ & \\begin{array}{l} c+1=0 \\Rightarrow c=-1 \\\\ a-c+1=0 \\Rightarrow a+1+1=0 \\Rightarrow a=-2 \\\\ \\left.\\frac{(a-1)^2}{2}-b^2+\\frac{(c-2)}{2}\\right) \\\\ \\left(\\frac{1}{2}\\right) \\\\ \\Rightarrow 9-2 b^2-3=2 \\Rightarrow 2 b^2=4 \\Rightarrow b^2=2 \\\\ \\therefore a^2+b^2+c^2=4+2+1=7 \\end{array} \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6rp6juo",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} \\alpha &= \\lim_{x \\to \\infty} \\left[\\left(\\frac{e}{1-e}\\right)\\left(\\frac{1}{e}-\\frac{x}{1+x}\\right)\\right]^x. \\end{aligned} $$</p>\n<p>Begin by rewriting the expression inside the limit. Notice that</p>\n<p>$$ \\frac{x}{1+x} = 1 - \\frac{1}{1+x}, $$</p>\n<p>so</p>\n<p>$$ \\frac{1}{e} - \\frac{x}{1+x} = \\frac{1}{e} - \\left(1 - \\frac{1}{1+x}\\right) = \\frac{1}{e} - 1 + \\frac{1}{1+x}. $$</p>\n<p>Express the constant part as</p>\n<p>$$ 1 - \\frac{1}{e} = \\frac{e-1}{e}, $$</p>\n<p>to obtain</p>\n<p>$$ \\frac{1}{e} - \\frac{x}{1+x} = -\\frac{e-1}{e} + \\frac{1}{1+x}. $$</p>\n<p>Multiplying by the prefactor, we have</p>\n<p>$$ \\left(\\frac{e}{1-e}\\right)\\left(\\frac{1}{e} - \\frac{x}{1+x}\\right) = \\frac{e}{1-e}\\left[-\\frac{e-1}{e} + \\frac{1}{1+x}\\right]. $$</p>\n<p>Split the expression:</p>\n<p>$$ \\frac{e}{1-e}\\cdot\\left(-\\frac{e-1}{e}\\right) + \\frac{e}{1-e}\\cdot\\frac{1}{1+x} = -\\frac{e-1}{1-e} + \\frac{e}{(1-e)(1+x)}. $$</p>\n<p>Since</p>\n<p>$$ 1-e = -(e-1), $$</p>\n<p>it follows that</p>\n<p>$$ -\\frac{e-1}{1-e} = -\\frac{e-1}{-(e-1)} = 1. $$</p>\n<p>Hence, the expression simplifies to</p>\n<p>$$ 1 + \\frac{e}{(1-e)(1+x)}. $$</p>\n<p>Again, replacing $1-e$ by $-(e-1)$,</p>\n<p>$$ 1 + \\frac{e}{-(e-1)(1+x)} = 1 - \\frac{e}{(e-1)(1+x)}. $$</p>\n<p>Thus, the limit becomes</p>\n<p>$$ \\alpha = \\lim_{x \\to \\infty} \\left(1 - \\frac{e}{(e-1)(1+x)}\\right)^x. $$</p>\n<p>For large $x$, note that</p>\n<p>$$ 1+x \\sim x, $$</p>\n<p>so we approximate</p>\n<p>$$ \\alpha = \\lim_{x \\to \\infty} \\left(1 - \\frac{e}{(e-1)x}\\right)^x. $$</p>\n<p>Recall the limit</p>\n<p>$$ \\lim_{x \\to \\infty} \\left(1 - \\frac{a}{x}\\right)^x = e^{-a}, $$</p>\n<p>with</p>\n<p>$$ a = \\frac{e}{e-1}. $$</p>\n<p>Therefore,</p>\n<p>$$ \\alpha = e^{-\\frac{e}{e-1}}. $$</p>\n<p>Taking the natural logarithm,</p>\n<p>$$ \\ln \\alpha = -\\frac{e}{e-1}. $$</p>\n<p>Now, compute</p>\n<p>$$ \\frac{\\ln \\alpha}{1 + \\ln \\alpha} = \\frac{-\\frac{e}{e-1}}{1 - \\frac{e}{e-1}}. $$</p>\n<p>Express the denominator with a common denominator:</p>\n<p>$$ 1 - \\frac{e}{e-1} = \\frac{e-1}{e-1} - \\frac{e}{e-1} = -\\frac{1}{e-1}. $$</p>\n<p>Thus,</p>\n<p>$$ \\frac{-\\frac{e}{e-1}}{-\\frac{1}{e-1}} = \\frac{e}{1} = e. $$</p>\n<p>The final result is</p>\n<p>$$ \\frac{\\ln\\alpha}{1+\\ln\\alpha} = e. $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6t9xsqc",
@@ -63,7 +63,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\lim _{x \\rightarrow \\infty} \\frac{\\left(2-\\frac{3}{x}+\\frac{5}{x^2}\\right)\\left(1-\\frac{1}{3 x}\\right)^{x / 2}}{\\left(3+\\frac{5}{x}+\\frac{4}{x^2}\\right)\\left(1+\\frac{2}{3 x}\\right)^{x / 2}} \\\\\n& =\\lim _{x \\rightarrow \\infty} \\frac{2}{3} \\cdot \\frac{e^{\\frac{x}{2}\\left(1-\\frac{1}{3 x}-1\\right)}}{e^{\\frac{x}{2}\\left(1+\\frac{2}{3 x}-1\\right)}} \\\\\n& =\\frac{2}{3} \\cdot \\frac{e^{-\\frac{1}{6}}}{e^{1 / 3}}=\\frac{2}{3} e^{-\\frac{1}{2}}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9gxgblc",
@@ -102,7 +102,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\lim _{x \\rightarrow 0}(f(2+x))^{3 / x}=\\left(1^{\\infty} \\text { form }\\right) \\\\\n& e^{\\lim _{x \\rightarrow 0 x}^3(f(2+x)-1)}=e^{\\lim _{x \\rightarrow} 3 f^{\\prime}(2+x)} \\\\\n& =e^{3 f^{\\prime}(2)} \\\\\n& =e^{12} \\\\\n& \\Rightarrow \\alpha=12 \\\\\n& y=4 x^3-4 x^2-4(12-7) x-12 \\\\\n& y=4 x^3-4 x^2-20 x-12 \\\\\n& y=4\\left(x^3-x^2-5 x-3\\right) \\\\\n& =4(x+1)^2(x-3)\n\\end{aligned}\\\\\n&\\text { It meets the } x \\text {-axis at two points }\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd53rxf",
@@ -141,7 +141,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\lim _{x \\rightarrow 0} \\frac{e^{2|\\sin x|}-2|\\sin x|-1}{x^2} \\\\\n& \\lim _{x \\rightarrow 0} \\frac{e^{2|\\sin x|}-2|\\sin x|-1}{|\\sin x|^2} \\times \\frac{\\sin ^2 x}{x^2}\n\\end{aligned}$$</p>\n<p>Let $$|\\sin \\mathrm{x}|=\\mathrm{t}$$</p>\n<p>$$\\begin{aligned}\n& \\lim _{t \\rightarrow 0} \\frac{e^{2 t}-2 t-1}{t^2} \\times \\lim _{x \\rightarrow 0} \\frac{\\sin ^2 x}{x^2} \\\\\n& =\\lim _{t \\rightarrow 0} \\frac{2 e^{2 t}-2}{2 t} \\times 1=2 \\times 1=2\n\\end{aligned}\n$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv3vec6m",
@@ -180,7 +180,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\lim _\\limits{x \\rightarrow 0} \\frac{e-(1+2 x)^{\\frac{1}{2 x}}}{x}$$</p>\n<p>Using expansion</p>\n<p>$$\\begin{aligned}\n& =\\lim _\\limits{x \\rightarrow 0} \\frac{e-e\\left[1-\\frac{2 x}{2}+\\frac{11 \\times 4 x^2}{24}+\\ldots\\right]}{x} \\\\\n& =\\lim _\\limits{x \\rightarrow 0}\\left(e-\\frac{11 x}{6} e+\\ldots\\right)=e\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldyaxaot",
@@ -202,7 +202,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& \\lim _{t \\rightarrow 0}\\left(1^{\\operatorname{cosec}^2 t}+2^{\\operatorname{cosec}^2 t}+\\ldots \\ldots . .+n^{\\operatorname{cosec}^2 t}\\right)^{\\sin ^2 t} \\\\\\\\\n& =\\lim _{t \\rightarrow 0} n\\left(\\left(\\frac{1}{n}\\right)^{\\operatorname{cosec}^2 t}+\\left(\\frac{2}{n}\\right)^{\\operatorname{cosec}^2 t}+\\ldots \\ldots . .+1\\right)^{\\sin ^2 t} \\\\\\\\\n& =\\mathrm{n}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6hy7n8m",
@@ -224,7 +224,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\beta  = \\mathop {\\lim }\\limits_{x \\to 0} {{\\alpha x - ({e^{3x}} - 1)} \\over {\\alpha x({e^{3x}} - 1)}},\\,\\alpha  \\in R$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to 0} {{{\\alpha  \\over 3} - \\left( {{{{e^{3x}} - 1} \\over {3x}}} \\right)} \\over {\\alpha x\\left( {{{{e^{3x - 1}}} \\over {3x}}} \\right)}}$$</p>\n<p>So, $$\\alpha  = 3$$ (to make independent form)</p>\n<p>$$\\beta  = \\mathop {\\lim }\\limits_{x \\to 0} {{1 - \\left( {{{{e^{3x}} - 1} \\over {3x}}} \\right)} \\over {3x}} = {{1 - {{\\left( {3x + {{9{x^2}} \\over 2}\\, + \\,......} \\right)} \\over {3x}}} \\over {3x}}$$</p>\n<p>$$ = {{ - \\left( {{9 \\over 2}{x^2} + {{{{(3x)}^3}} \\over {31}}\\, + \\,....} \\right)} \\over {9{x^2}}} = {{ - 1} \\over 2}$$</p>\n<p>$$\\therefore$$ $$\\alpha  + \\beta  = 3 - {1 \\over 2} = {5 \\over 2}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6m6yoet",
@@ -297,7 +297,7 @@
     "difficulty": "medium",
     "solution": "It is $${1^\\infty }$$ form<br><br>$$L = {e^{\\mathop {\\lim }\\limits_{n \\to \\infty } \\left( {{{1 + {1 \\over 2} + {1 \\over 3} + ...{1 \\over n}} \\over n}} \\right)}}$$<br><br>$$S = 1 + \\left( {{1 \\over 2} + {1 \\over 3}} \\right) + \\left( {{1 \\over 4} + {1 \\over 5} + {1 \\over 6} + {1 \\over 7}} \\right) + \\left( {{1 \\over 8} + ......... + {1 \\over {15}}} \\right)$$<br><br>$$S &lt; 1 + \\left( {{1 \\over 2} + {1 \\over 2}} \\right) + \\left( {{1 \\over 4} + {1 \\over 4} + {1 \\over 4} + {1 \\over 4}} \\right).......... + \\underbrace {\\left( {{1 \\over {{2^P}}} + ............ + {1 \\over {{2^P}}}} \\right)}_{{2^P}times}$$<br><br>$$S &lt; 1 + 1 + 1 + 1 + ....... + 1$$<br><br>$$S &lt; P + 1$$<br><br>$$ \\therefore $$ $$L = {e^{\\mathop {\\lim }\\limits_{P \\to \\infty } {{(P + 1)} \\over {{2^P}}}}}$$<br><br>$$ \\Rightarrow L = {e^o} = 1$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kten7puo",
@@ -319,7 +319,7 @@
     "difficulty": "medium",
     "solution": "$$\\mathop {\\lim }\\limits_{x \\to \\beta } {{{e^{2({x^2} + bx + c)}} - 1 - 2({x^2} + bx + c)} \\over {{{(x - \\beta )}^2}}}$$<br><br>$$ = \\mathop {\\lim }\\limits_{x \\to \\beta } {{1\\left( {1 + {{2({x^2} + bx + c)} \\over {1!}} + {{{2^2}{{({x^2} + bx + c)}^2}} \\over {2!}} + ...} \\right) - 1 - 2({x^2} + bx + c)} \\over {{{(x - \\beta )}^2}}}$$<br><br>$$ = \\mathop {\\lim }\\limits_{x \\to \\beta } {{2{{({x^2} + bx + 1)}^2}} \\over {{{(x - \\beta )}^2}}}$$<br><br>$$ = \\mathop {\\lim }\\limits_{x \\to \\beta } {{2{{(x - \\alpha )}^2}{{(x - \\beta )}^2}} \\over {{{(x - \\beta )}^2}}}$$<br><br>$$ = 2{(\\beta  - \\alpha )^2} = 2({b^2} - 4c)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "CL9Pv9IzhcNbvyZCmE1kjzy3mni",
@@ -359,7 +359,7 @@
     "difficulty": "medium",
     "solution": "$$\\mathop {\\lim }\\limits_{x \\to 0} {\\left( {\\tan \\left( {{\\pi  \\over 4} + x} \\right)} \\right)^{{1 \\over x}}}$$\n<br><br>This is 1<sup>$$\\infty $$</sup> form.\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left[ {\\tan \\left( {{\\pi  \\over 4} + x} \\right) - 1} \\right] \\times {1 \\over x}}}$$\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left[ {{{1 + \\tan x} \\over {1 - \\tan x}} - 1} \\right] \\times {1 \\over x}}}$$\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left[ {{{2\\tan x} \\over {x\\left( {1 - \\tan x} \\right)}}} \\right]}}$$\n<br><br>= $${e^{2\\mathop {\\lim }\\limits_{x \\to 0} \\left[ {{{\\tan x} \\over x} \\times {1 \\over {\\left( {1 - \\tan x} \\right)}}} \\right]}}$$\n<br><br>= $${e^{2\\mathop {\\lim }\\limits_{x \\to 0} \\left[ {1 \\times {1 \\over {\\left( {1 - 0} \\right)}}} \\right]}}$$\n<br><br>= e<sup>2</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "t00z1tGGAJXa8Rxka5jgy2xukfqbtvgj",
@@ -381,7 +381,7 @@
     "difficulty": "medium",
     "solution": "$$\\mathop {\\lim }\\limits_{x \\to 0} {{x\\left( {{e^{\\left( {\\sqrt {1 + {x^2} + {x^4}}  - 1} \\right)/x}} - 1} \\right)} \\over {\\sqrt {1 + {x^2} + {x^4}}  - 1}}$$\n<br><br>= $$\\mathop {\\lim }\\limits_{x \\to 0} {{x\\left[ {{e^{{{\\left( {\\sqrt {1 + {x^2} + {x^4}}  - 1} \\right)\\left( {\\sqrt {1 + {x^2} + {x^4}}  + 1} \\right)} \\over {x\\left( {\\sqrt {1 + {x^2} + {x^4}}  + 1} \\right)}}}} - 1} \\right] \\times \\left( {\\sqrt {1 + {x^2} + {x^4}}  + 1} \\right)} \\over {\\left( {\\sqrt {1 + {x^2} + {x^4}}  - 1} \\right)\\left( {\\sqrt {1 + {x^2} + {x^4}}  + 1} \\right)}}$$\n<br><br>= $$\\mathop {\\lim }\\limits_{x \\to 0} {{x\\left[ {{e^{{{\\left( {1 + {x^2} + {x^4}} \\right) - 1} \\over {x\\left( {\\sqrt {1 + {x^2} + {x^4}}  + 1} \\right)}}}} - 1} \\right] \\times \\left( {\\sqrt {1 + {x^2} + {x^4}}  + 1} \\right)} \\over {\\left( {1 + {x^2} + {x^4} - 1} \\right)}}$$\n<br><br>= $$\\mathop {\\lim }\\limits_{x \\to 0} {{\\left[ {{e^{{{{x^2} + {x^4}} \\over {x\\left( {\\sqrt {1 + 0 + 0}  + 1} \\right)}}}} - 1} \\right] \\times \\left( {\\sqrt {1 + 0 + 0}  + 1} \\right)} \\over {x + {x^3}}}$$\n<br><br>= $$2\\mathop {\\lim }\\limits_{x \\to 0} {{\\left[ {{e^{{{{x^2} + {x^4}} \\over {2x}}}} - 1} \\right]} \\over {x + {x^3}}}$$\n<br><br>= $$2\\mathop {\\lim }\\limits_{x \\to 0} {{\\left[ {{e^{{{x + {x^3}} \\over 2}}} - 1} \\right]} \\over {{{x + {x^3}} \\over 2} \\times 2}}$$\n<br><br>= $$2 \\times {1 \\over 2} \\times 1$$\n<br><br>= 1\n<br><br><b>Note :</b> As from formula, $$\\mathop {\\lim }\\limits_{x \\to 0} {{\\left[ {{e^{{{x + {x^3}} \\over 2}}} - 1} \\right]} \\over {{{x + {x^3}} \\over 2}}}$$ = 1",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "6GVqfQiZB8zwXJZLZS7k9k2k5e4r5pg",
@@ -420,7 +420,7 @@
     "difficulty": "medium",
     "solution": "Given $$\\mathop {\\lim }\\limits_{x \\to 0} {\\left( {{{3{x^2} + 2} \\over {7{x^2} + 2}}} \\right)^{{1 \\over {{x^2}}}}}$$\n<br><br>Putting x = 0 we get 1<sup>$$\\infty $$</sup> form.\n<br><br>$$ \\therefore $$ $${e^{\\mathop {\\lim }\\limits_{x \\to 0} {1 \\over {{x^2}}}\\left[ {{{3{x^2} + 2} \\over {7{x^2} + 2}} - 1} \\right]}}$$\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} {1 \\over {{x^2}}}\\left[ {{{ - 4{x^2}} \\over {7{x^2} + 2}}} \\right]}}$$\n<br><br>= e<sup>-4/2</sup>\n<br><br>= e<sup>-2</sup> = $${1 \\over {{e^2}}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "qkqEIPW5oUqkmilbNPzuL",
@@ -442,7 +442,7 @@
     "difficulty": "medium",
     "solution": "Given, \n<br><br>$$\\mathop {\\lim }\\limits_{x \\to  \\propto } {\\left( {1 + {a \\over x} - {4 \\over {{x^2}}}} \\right)^{2x}} = {e^3}$$\n<br><br>So, &nbsp;&nbsp;$$\\mathop {\\lim }\\limits_{x \\to  \\propto } {\\left( {1 + {a \\over x} - {4 \\over {{x^2}}}} \\right)^{2x}}\\,\\left[ {{1^ \\propto }\\,\\,\\,form} \\right]$$\n<br><br>$$ = {e^{\\mathop {\\lim }\\limits_{x \\to  \\propto } \\left[ {\\left( {1 + {a \\over x} - {4 \\over {{x^2}}} - 1} \\right)2x} \\right]}}$$\n<br><br>$$ = {e^{\\mathop {\\lim }\\limits_{x \\to  \\propto } \\left( {2a - {8 \\over x}} \\right)}}$$\n<br><br>$$ = {e^{2a}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;e<sup>2a</sup> = e<sup>3</sup>\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp; 2a = 3\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;a $$=$$ $${3 \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "40599ufl0x81zwx",
@@ -478,7 +478,7 @@
     "solution": "Given, $$\\mathop {\\lim }\\limits_{x \\to 1} {\\left\\{ {{{\\sin (x - 1) + a(1 - x)} \\over {(x - 1) + \\sin (x - 1)}}} \\right\\}^{{{(1 - \\sqrt x )(1 - \\sqrt x )} \\over {1 - \\sqrt x }}}} = {1 \\over 4}$$<br/><br/>$$ \\Rightarrow \\mathop {\\lim }\\limits_{x \\to 1} {\\left\\{ {{{{{\\sin (x - 1)} \\over {(x - 1)}} - a} \\over {1 + {{\\sin (x - 1)} \\over {(x - 1)}}}}} \\right\\}^{1 + \\sqrt x }} = {1 \\over 4}$$<br/><br/>$$ \\Rightarrow {\\left( {{{1 - a} \\over 2}} \\right)^2} = {1 \\over 4}$$<br/><br/>$$ \\Rightarrow {(a - 1)^2} = 1$$<br/><br/>$$\\Rightarrow$$ a = 2 or 0<br/><br/>But for a = 2, base of above limit approaches $$-$$1/2 and exponent approaches to 2 and since base cannot be negative, hence limit does not exist.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1l2vkiakf",
@@ -501,7 +501,7 @@
     "solution": "<p>Here, $$\\mathop {\\lim }\\limits_{x \\to 0} {\\{ 1 + x\\log (1 + {b^2})\\} ^{1/x}}$$ [1<sup>$$\\infty$$</sup> from]</p>\n<p>$$ \\Rightarrow {e^{\\mathop {\\lim }\\limits_{x \\to 0} \\{ x\\log (1 + {b^2})\\} \\,.\\,{1 \\over x}}}$$</p>\n<p>$$ \\Rightarrow {e^{\\log (1 + {b^2})}} = {(1 + b)^2}$$ ..... (i)</p>\n<p>Given,</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to 0} {\\{ 1 + x\\log (1 + {b^2})\\} ^{1/x}} = 2b{\\sin ^2}\\theta $$</p>\n<p>$$ \\Rightarrow (1 + {b^2}) = 2b{\\sin ^2}\\theta $$</p>\n<p>$$\\therefore$$ $${\\sin ^2}\\theta  = {{1 + {b^2}} \\over {2{b^2}}}$$ ..... (ii)</p>\n<p>By $$AM \\ge GM$$</p>\n<p>$${{b + {1 \\over b}} \\over 2} \\ge {\\left( {b\\,.\\,{1 \\over b}} \\right)^{1/2}} \\Rightarrow {{{b^2} + 1} \\over {2b}} \\ge 1$$ ...... (iii)</p>\n<p>From Eqs. (ii) and (iii), we get $${\\sin ^2}\\theta  = 1$$</p>\n<p>$$ \\Rightarrow \\theta  =  \\pm {\\pi  \\over 2}$$ as $$\\theta  \\in ( - \\pi ,\\pi ]$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mguoq4ud",
@@ -524,7 +524,7 @@
     "solution": "<p>$$ \\begin{aligned} &amp; \\lim _{x \\rightarrow 0}\\left[(\\sin x)^{\\frac{1}{x}}+\\left(\\frac{1}{x}\\right)^{\\sin x}\\right] \\\\ = &amp; \\lim _{x \\rightarrow 0}(\\sin x)^{\\frac{1}{x}}+\\lim _{x \\rightarrow 0}\\left(\\frac{1}{x}\\right)^{\\sin x} \\end{aligned} $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mguhvroi/95617188-5fd8-46b8-8f96-ed9c43252beb/4fcdf510-ab26-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mguhvroj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mguhvroi/95617188-5fd8-46b8-8f96-ed9c43252beb/4fcdf510-ab26-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mguhvroj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Limits, Continuity and Differentiability Question 4 English Explanation\"></p>\n<p>Evaluate the given indeterminate form i.e, </p><div></div>$\\quad$ let $y=\\lim\\limits_{x \\rightarrow 0}\\left(\\frac{1}{x}\\right) \\sin x$<p></p>\n<p>Taking $\\ln$ on both sides</p>\n<p>$$ \\begin{aligned} \\ln y &amp; =\\lim _{x \\rightarrow 0} \\sin x \\log \\left(\\frac{1}{x}\\right) \\\\ &amp; =\\lim _{x \\rightarrow 0} \\sin x(-\\log x) \\\\ &amp; =\\lim _{x \\rightarrow 0}\\left(\\frac{-\\log x}{\\operatorname{cosec} x}\\right) \\end{aligned} $$</p>\n<p>Applying L-Hopital's rule.</p>\n<p>$$ \\begin{aligned} \\ln y &amp; =\\lim _{x \\rightarrow 0} \\frac{\\frac{-1}{x}}{-\\operatorname{cosec} x \\cot x} \\\\ \\Rightarrow \\quad \\ln y &amp; =\\lim _{x \\rightarrow 0} \\frac{\\sin x}{x} \\cdot \\tan x \\end{aligned} $$</p>\n<p>$$ \\begin{aligned} &amp; =1 \\times 0 &amp; \\therefore &amp; \\lim _{x \\rightarrow 0} \\frac{\\sin x}{x}=1 \\\\ &amp; =0 . &amp; &amp; \\lim _{x \\rightarrow 0} \\tan x=0 \\\\ \\Rightarrow \\quad y &amp; =e^0=1 &amp; &amp; \\end{aligned} $$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "MCKjvmuPcTeZAzZD",
@@ -546,7 +546,7 @@
     "difficulty": "easy",
     "solution": "We know that $$\\mathop {\\lim }\\limits_{x \\to \\infty } \\left( {1 + x{1 \\over x}} \\right) = e$$\n<br><br>$$\\therefore$$ $$\\mathop {\\lim }\\limits_{x \\to \\infty } {\\left( {1 + {a \\over x} + {b \\over {{x^2}}}} \\right)^{2x}} = {e^2}$$\n<br><br>$$ \\Rightarrow \\mathop {\\lim }\\limits_{x \\to \\infty } {\\left[ {\\left( {1 + {a \\over x} + {b \\over {{x^2}}}} \\right)\\left( {{1 \\over {{a \\over x} + {b \\over {{x^2}}}}}} \\right)} \\right]^{2x\\left( {{a \\over x} + {b \\over {{x^2}}}} \\right)}} = {e^2}$$\n<br><br>$$ \\Rightarrow {e^{\\mathop {\\lim }\\limits_{x \\to \\infty } 2\\left[ {a + {b \\over x}} \\right]}} = {e^2} \\Rightarrow {e^{2a}} = e{}^2 \\Rightarrow a = 1$$ \n<br><br>and $$b \\in R$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IKRUfBV0w2RAAt7D",
@@ -568,6 +568,6 @@
     "difficulty": "medium",
     "solution": "$$\\mathop {\\lim }\\limits_{x \\to \\infty } {\\left( {{{{x^2} + 5x + 3} \\over {{x^2} + x + 2}}} \\right)^x}$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{x \\to \\infty } {\\left( {1 + {{4x + 1} \\over {{x^2} + x + 2 }}} \\right)^x}$$\n<br><br>$$ = \\mathop {\\lim }\\limits_{x \\to \\infty } {\\left[ {{{\\left( {1 + {{4x + 1} \\over {{x^2} + x + 2}}} \\right)}^{{{{x^2} + x + 2} \\over {4x + 1}}}}} \\right]^{{{\\left( {4x + 1} \\right)x} \\over {{x^2} + x + 2}}}}$$\n<br><br>=$$\\mathop {\\lim }\\limits_{x \\to \\infty } {\\left[ {{{\\left( {1 + {{4x + 1} \\over {{x^2} + x + 2}}} \\right)}^{{1 \\over {{{4x + 1} \\over {{x^2} + x + 2}}}}}}} \\right]^{{{\\left( {4x + 1} \\right)x} \\over {{x^2} + x + 2}}}}$$\n<br><br>$$ = {e^{\\mathop {\\lim }\\limits_{x \\to \\infty } {{4{x^2} + x} \\over {{x^2} + x + 2}}}}$$\n<br><br>[ As $$\\mathop {\\lim }\\limits_{x \\to \\infty } {\\left( {1 + \\lambda x} \\right)^{{1 \\over x}}} = {e^\\lambda }$$ ]\n<br><br>$$ = {e^{\\mathop {\\lim }\\limits_{x \\to \\infty } {{4 + {1 \\over x}} \\over {1 + {1 \\over x} + {2 \\over {{x^2}}}}}}} = {e^4}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

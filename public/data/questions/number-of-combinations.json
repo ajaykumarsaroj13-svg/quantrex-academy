@@ -94,7 +94,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& { }^n C_{r-1}=28,{ }^n C_r=56 \\\\\n& \\frac{{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{r}-1}}{{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{r}}}=\\frac{28}{56} \\\\\n& \\frac{\\frac{n!}{(r-1)!(n-r+1)!}}{\\frac{n!}{r!(n-r)!}}=\\frac{1}{2} \\\\\n& \\frac{\\mathrm{r}}{(\\mathrm{n}-\\mathrm{r}+1)}=\\frac{1}{2} \\\\\n& 3 \\mathrm{r}=\\mathrm{n}+1\\quad\\text{..... (i)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\frac{{ }^n C_r}{{ }^n C_{r+1}}=\\frac{56}{70} \\\\\n& \\frac{(r+1)}{(n-r)}=\\frac{56}{70} \\Rightarrow 9 r=4 n-5\\quad\\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { By (i) & (ii) } \\\\\n& \\begin{array}{l}\n(r=3),(n=8) \\\\\nA(4 \\cos t, 4 \\sin t) \\quad B(2 \\sin t,-2 \\cos t) C\\left(3 r-n, r^2-n-1\\right) \\\\\nA(4 \\cos t, 4 \\sin t) \\quad B(2 \\sin t,-2 \\operatorname{cost}) C(1,0) \\\\\n(3 x-1)^2+(3 y)^2=(4 \\operatorname{cost}+2 \\sin t)^2+(4 \\sin t-\\operatorname{cost})^2 \\\\\n(3 x-1)^2+(3 y)^2=20 \\quad \\therefore \\text { option }(1)\n\\end{array}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dunp6b",
@@ -116,7 +116,7 @@
     "difficulty": "easy",
     "solution": "<p>To find the number of sequences of ten terms, each being either 0, 1, or 2, containing exactly five 1s and exactly three 2s, follow these steps:</p>\n\n<p><p><strong>Determine the Remaining Terms</strong>: Since there are 5 ones and 3 twos, you will need 2 zeros to fill the sequence (because $5 + 3 + 2 = 10$).</p></p>\n<p><p><strong>Calculate the Number of Arrangements</strong>: You have a total of 10 positions to fill with these numbers (5 ones, 3 twos, 2 zeros). The formula for calculating permutations of a multiset is:</p>\n<p>$    \\frac{10!}{5! \\times 3! \\times 2!}    $</p>\n<p>Where:</p></p>\n\n\n<p><p>$10!$ is the factorial of the total number of terms.</p></p>\n<p><p>$5!$ is the factorial for the number of 1s.</p></p>\n<p><p>$3!$ is the factorial for the number of 2s.</p></p>\n<p><p>$2!$ is the factorial for the number of 0s.</p></p>\n\n\n<p><p><strong>Result</strong>: Simplifying the calculation gives:</p>\n<p>$    \\frac{10!}{5! \\times 3! \\times 2!} = 2520    $</p></p>\n\n<p>Thus, there are 2520 possible sequences with the given conditions.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9gxgcsx",
@@ -138,7 +138,7 @@
     "difficulty": "medium",
     "solution": "<p>Total triangles</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9z7who1/ed7dc642-5f1d-4bd9-8749-2003282253ed/b02ebe10-2329-11f0-99e8-5f2c09d57200/file-jaoe38c1m9z7who2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9z7who1/ed7dc642-5f1d-4bd9-8749-2003282253ed/b02ebe10-2329-11f0-99e8-5f2c09d57200/file-jaoe38c1m9z7who2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Evening Shift Mathematics - Permutations and Combinations Question 23 English Explanation\"></p>\n<p>(2 points as $y=\\frac{x}{2}, 1$ point on $y=\\frac{x}{2}$)</p>\n<p>$+2\\left(\\right.$ points and $y=\\frac{x}{2}, 1$ point on $y=2 x$)</p>\n<p>+(1 point on $y=2 x, 1)$ point on $y=\\frac{x}{2}$ and origin)</p>\n<p>$$={ }^9 C_2,{ }^{12} C_1+{ }^9 C_1{ }^{12} C_2+{ }^9 C_1 \\cdot{ }^{12} C_1 \\cdot{ }^1 C_1$$</p>\n<p>$$=1134$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dmmc5r",
@@ -160,7 +160,7 @@
     "difficulty": "medium",
     "solution": "<p>To count the number of distinct triangles:</p>\n\n<p><p><strong>Start with all possible triples of points.</strong>  </p>\n<p>From 12 points, the number of ways to choose any 3 is  </p>\n<p>$      \\binom{12}{3}= \\frac{12\\cdot11\\cdot10}{3\\cdot2\\cdot1}=220.    $</p></p>\n<p><p><strong>Subtract the “invalid” triples that are collinear.</strong>  </p>\n<p>The only collinear sets of three points arise from the single line containing the 5 collinear points.  </p>\n<p>Number of ways to pick 3 points from those 5 is  </p>\n<p>$      \\binom{5}{3}=10.    $</p></p>\n<p><p><strong>Valid triangles = total triples − collinear triples.</strong>  </p>\n<p>$      220-10 = 210.    $</p></p>\n\n<p>Hence, the total number of triangles that can be formed is <strong>210</strong>.</p>\n<p><strong>Correct option: B</strong></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lwpvuzwj",
@@ -200,7 +200,7 @@
     "difficulty": "medium",
     "solution": "<p>To determine the number of ways in which five different employees can be seated in four indistinguishable offices, we will use the concept of partitioning of an integer.</p>\n\n<p>The problem is equivalent to partitioning the number 5 (representing the 5 different employees) into at most 4 parts (representing the 4 indistinguishable offices) where each part represents the number of employees in each office.</p>\n\n<p>The partitions of 5 into at most 4 parts are as follows :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ – One office has 5 employees, and the other three have none.</li><br>\n<li>$(4, 1, 0, 0)$ – One office has 4 employees, another one has 1, and the other two have none.</li><br>\n<li>$(3, 2, 0, 0)$ – One office has 3 employees, another one has 2, and the other two have none.</li><br>\n<li>$(3, 1, 1, 0)$ – One office has 3 employees, two have 1 each, and one has none.</li><br>\n<li>$(2, 2, 1, 0)$ – Two offices have 2 employees each, one has 1, and one has none.</li><br>\n<li>$(2, 1, 1, 1)$ – One office has 2 employees, and the other three have 1 each.</li>\n</ol>\n<p>However, since the offices are indistinguishable, we must not count partitions that differ only by the order of the parts. This means that partitions like $(5, 0, 0, 0)$, $(0, 5, 0, 0)$, $(0, 0, 5, 0)$, and $(0, 0, 0, 5)$ all represent the same scenario and thus are counted as one.</p>\n\n<p>So we end up with 6 distinct partition scenarios.</p>\n\n<p>Now, for each partition, we need to find the number of ways to assign the employees according to each partition :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ – All employees are in one office. There is 1 way to do this because the offices are indistinguishable.</li><br>\n<li>$(4, 1, 0, 0)$ - For the group with 4 employees, there are $${}^5{C_4}$$ ways to choose which 4 out of the 5 will be together. Then the remaining employee is automatically assigned to the second office. So, there are $${}^5{C_4}$$ ways for this partition.</li><br>\n<li>$(3, 2, 0, 0)$ - For the group with 3 employees, there are ${}^5{C_3}$ ways to choose them, and for the group with 2 employees, there are $${}^2{C_2}$$ ways to choose them (which is essentially 1 way since the last 2 employees are automatically grouped). But the 2 offices these groups can occupy are indistinguishable, so we do not multiply by 2. So, there are $${}^5{C_3}$$ ways for this partition.</li><br>\n<li>$(3, 1, 1, 0)$ - For the group with 3 employees, there are $${}^5{C_3}$$ ways. Then we have two indistinguishable offices, each with 1 employee. The order does not matter as offices are indistinguishable. So, there are simply $${}^5{C_3}$$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ – For the first group of 2 employees, there are $${}^5{C_2}$$ ways to choose them. For the next group of 2 employees, there are $${}^3{C_2}$$ ways from the remaining 3. Then, the last employee is alone, and since the offices are indistinguishable, there are no further combinations to consider. However, we have double-counted since the two groups of two are indistinguishable. To adjust for this, we divide by 2. This gives us $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2}$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ - For the group with 2 employees, there are ${}^5{C_2}$ ways to choose them. The other three employees are each in their own office, with no further combinations since the offices are indistinguishable, so there are ${}^5{C_2}$ ways for this partition.</li>\n</ol>\n<p>Let's compute these cases :</p>\n\n<ul>\n<li>$(5, 0, 0, 0)$ corresponds to $1$ way.</li><br>\n<li>$(4, 1, 0, 0)$ corresponds to ${}^5{C_4} = 5$ ways.</li><br>\n<li>$(3, 2, 0, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(3, 1, 1, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ corresponds to $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2} = \\frac{10 \\cdot 3}{2} = 15$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ corresponds to ${}^5{C_2} = 10$ ways.</li>\n</ul>\n<p>Adding up all the ways we get :</p>\n\n<p>$$ 1 + 5 + 10 + 10 + 15 + 10 = 51 $$</p>\n\n<p>Therefore, the number of ways five different employees can sit into four indistinguishable offices ($\\mathrm{n}$) is 51, which corresponds to Option C.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lsapvsz6",
@@ -239,7 +239,7 @@
     "difficulty": "medium",
     "solution": "<p>$$3 \\text { Shelf empty: }(8,0,0,0) \\rightarrow 1 \\text { way }$$</p>\n<p>$$\\left.2 \\text { shelf empty: } \\begin{array}{c}\n(7,1,0,0) \\\\\n(6,2,0,0) \\\\\n(5,3,0,0) \\\\\n(4,4,0,0)\n\\end{array}\\right] \\rightarrow 4 \\text { ways }$$</p>\n<p>$$\\left.1 \\text { shelf empty: } \\begin{array}{cc}\n(6,1,1,0) & (3,3,2,0) \\\\\n(4,2,1,0) & (4,2,2,0) \\\\\n(4,3,0) &\n\\end{array}\\right] \\rightarrow 5 \\text { ways }$$</p>\n<p>$$\\left.0 \\text { Shelf empty : } \\begin{array}{ll}\n(1,2,3,2) & (5,1,1,1) \\\\\n(2,2,2,2) \\\\\n(3,3,2,1,1) \\\\\n(4,2,1,1) &\n\\end{array}\\right] \\rightarrow 5 \\text { ways }$$</p>\n<p>Total $$=15$$ ways</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsg4z01p",
@@ -295,7 +295,7 @@
     "difficulty": "medium",
     "solution": "<p>Number of points on side $$A B=5$$</p>\n<p>Number of points on side $$B C=6$$</p>\n<p>Number of points on side $$A C=7$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwk6ko9r/1d69134a-fee4-473a-84cb-efe47fa9ec3c/ecc716f0-1985-11ef-a7bd-376696e028ce/file-1lwk6ko9s.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwk6ko9r/1d69134a-fee4-473a-84cb-efe47fa9ec3c/ecc716f0-1985-11ef-a7bd-376696e028ce/file-1lwk6ko9s.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 4th April Morning Shift Mathematics - Permutations and Combinations Question 54 English Explanation\"></p>\n<p>Number of ways selecting three points from side</p>\n<p>$$A B={ }^5 C_3$$</p>\n<p>Number of ways selecting three points from side</p>\n<p>$$B C={ }^6 C_3$$</p>\n<p>Number of ways selecting three points from side</p>\n<p>$$A C={ }^7 C_3$$</p>\n<p>Total number of triangle possible formed using the points $$P_1 P_2 \\ldots P_{18}$$</p>\n<p>$$\\begin{aligned}\n&amp; ={ }^{18} C_3-{ }^5 C_3-{ }^6 C_3-{ }^7 C_3 \\\\\\\\\n&amp; =816-10-20-35 \\\\\\\\\n&amp; =751\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv9s208h",
@@ -317,7 +317,7 @@
     "difficulty": "medium",
     "solution": "<p>Given set $$S=\\left\\{2^1, 2^2, \\ldots 2^9\\right\\}$$ which consist of 9 elements.</p>\n<p>Maximum number of possible partitions (in set $$A, B$$ and $$C$$)</p>\n<p>$$={ }^9 C_3 \\cdot{ }^6 C_3 \\cdot{ }^3 C_3=1680$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv7v47sx",
@@ -356,7 +356,7 @@
     "difficulty": "medium",
     "solution": "<p>Given $0 \\leq r \\leq n$. If $\\binom{n+1}{r+1} : \\binom{n}{r} : \\binom{n-1}{r-1} = 55 : 35 : 21$, then we are to determine the value of $2n + 5r$.</p>\n\n<h3>Step-by-Step Solution:</h3>\n\n<ol>\n<li>Write the given proportions involving binomial coefficients:</li>\n</ol>\n<p>$    \\frac{n+1}{r+1} \\times \\binom{n}{r} : \\binom{n}{r} : \\frac{r}{n} \\times \\binom{n}{r} = 55 : 35 : 21    $</p>\n\n<ol>\n<li>Simplify the proportions:</li>\n</ol>\n<p>$    \\frac{n+1}{r+1} = \\frac{55}{35} \\quad \\text{and} \\quad \\frac{n}{r} = \\frac{35}{21}    $</p>\n\n<ol>\n<li>From the simplified ratios, we establish the following two equations:</li>\n</ol>\n<p>$    \\frac{n+1}{r+1} = \\frac{11}{7} \\quad \\Rightarrow \\quad 7(n+1) = 11(r+1) \\quad \\Rightarrow \\quad 7n - 11r = 4 \\quad \\text{.... (1)}    $</p>\n\n<p>$    \\frac{n}{r} = \\frac{5}{3} \\quad \\Rightarrow \\quad 3n = 5r \\quad \\Rightarrow \\quad 3n - 5r = 0 \\quad \\text{.... (2)}    $</p>\n\n<ol>\n<li>Solve equations (1) and (2) simultaneously:</li>\n</ol>\n<ul>\n<li>From equation (2), solve for $n$:</li>\n</ul>\n<p>$      3n = 5r \\quad \\Rightarrow \\quad n = \\frac{5r}{3}      $</p>\n\n<ul>\n<li>Substitute $n$ into equation (1):</li>\n</ul>\n<p>$      7 \\left(\\frac{5r}{3}\\right) - 11r = 4 \\quad \\Rightarrow \\quad \\frac{35r}{3} - 11r = 4      $</p>\n\n<p>$      \\frac{35r - 33r}{3} = 4 \\quad \\Rightarrow \\quad \\frac{2r}{3} = 4 \\quad \\Rightarrow \\quad 2r = 12 \\quad \\Rightarrow \\quad r = 6      $</p>\n\n<ul>\n<li>Substituting $r$ back to find $n$:</li>\n</ul>\n<p>$      n = \\frac{5 \\times 6}{3} = 10      $</p>\n\n<ol>\n<li>Compute $2n + 5r$:</li>\n</ol>\n<p>$    2n + 5r = 2 \\times 10 + 5 \\times 6 = 20 + 30 = 50    $</p>\n\n<p>Thus, the value of $2n + 5r$ is 50.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgvpequ0",
@@ -378,7 +378,7 @@
     "difficulty": "medium",
     "solution": "Let $C_1, C_2$ and $C_3$ be the three cars in which 8 person are to be transported from city $A$ to city $B$.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lnj292pt/52c17b6b-83cf-405a-ba54-57beea816528/4aa6a710-66ba-11ee-bc75-8500166e483f/file-6y3zli1lnj292pu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lnj292pt/52c17b6b-83cf-405a-ba54-57beea816528/4aa6a710-66ba-11ee-bc75-8500166e483f/file-6y3zli1lnj292pu.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 10th April Evening Shift Mathematics - Permutations and Combinations Question 75 English Explanation\">\n<br>Let the number of persons transported in cars $C_1, C_2$ and $C_3$ are 3,3 and 2 respectively.\n<br><br>There are total $\\frac{8 !}{3 ! 3 ! 2 ! 2 !}$ group\n<br><br>$\\therefore$ They can travel $\\frac{8 !}{3 ! 3 ! 2 ! 2 !} \\times 3$ ! ways\nor\n1680 ways",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldu5w6ww",
@@ -400,7 +400,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& \\sum_{\\mathrm{k}=0}^6{ }^{51-\\mathrm{k}} \\mathrm{C}_3 \\\\\\\\\n& ={ }^{51} \\mathrm{C}_3+{ }^{50} \\mathrm{C}_3+{ }^{49} \\mathrm{C}_3+\\ldots+{ }^{45} \\mathrm{C}_3 \\\\\\\\\n& ={ }^{45} \\mathrm{C}_3+{ }^{46} \\mathrm{C}_3+\\ldots \\ldots+{ }^{51} \\mathrm{C}_3 \\\\\\\\\n& ={ }^{45} \\mathrm{C}_4+{ }^{45} \\mathrm{C}_3+{ }^{46} \\mathrm{C}_3+\\ldots . .+{ }^{51} \\mathrm{C}_3-{ }^{45} \\mathrm{C}_4 \\\\\\\\\n& \\left({ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{r}}+{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{r}-1}={ }^{\\mathrm{n}+1} \\mathrm{C}_{\\mathrm{r}}\\right) \\\\\\\\\n& ={ }^{52} \\mathrm{C}_4-{ }^{45} \\mathrm{C}_4\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldv2uyem",
@@ -456,7 +456,7 @@
     "difficulty": "medium",
     "solution": "<p>First, let's determine the number of elements in the Cartesian product $$A \\times B$$. If set $$A$$ has 5 elements and set $$B$$ has 2 elements, then the number of elements in $$A \\times B$$ is:</p>\n\n<p>\n\n<p>$$|A \\times B| = |A| \\times |B| = 5 \\times 2 = 10$$</p>\n\n</p>\n\n<p>We need to find the number of subsets of $$A \\times B$$ with at least 3 elements and at most 6 elements. The total number of elements in $$A \\times B$$ is 10, so we must consider the subsets containing 3, 4, 5, and 6 elements.</p>\n\n<p>The number of ways to choose $$r$$ elements from a set of 10 elements is given by the binomial coefficient:</p>\n\n<p>\n\n<p>$$\\binom{10}{r} = \\frac{10!}{r!(10-r)!}$$</p>\n\n</p>\n\n<p>We will find the sum of the binomial coefficients for $$r = 3, 4, 5, 6$$:</p>\n\n<p>First, $$\\binom{10}{3}$$:</p>\n\n<p>\n\n<p>$$\\binom{10}{3} = \\frac{10!}{3!7!} = \\frac{10 \\times 9 \\times 8}{3 \\times 2 \\times 1} = 120$$</p>\n\n</p>\n\n<p>Next, $$\\binom{10}{4}$$:</p>\n\n<p>\n\n<p>$$\\binom{10}{4} = \\frac{10!}{4!6!} = \\frac{10 \\times 9 \\times 8 \\times 7}{4 \\times 3 \\times 2 \\times 1} = 210$$</p>\n\n</p>\n\n<p>Next, $$\\binom{10}{5}$$:</p>\n\n<p>\n\n<p>$$\\binom{10}{5} = \\frac{10!}{5!5!} = \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6}{5 \\times 4 \\times 3 \\times 2 \\times 1} = 252$$</p>\n\n</p>\n\n<p>Next, $$\\binom{10}{6}$$:</p>\n\n<p>\n\n<p>$$\\binom{10}{6} = \\frac{10!}{6!4!} = \\frac{10 \\times 9 \\times 8 \\times 7}{4 \\times 3 \\times 2 \\times 1} = 210$$</p>\n\n</p>\n\n<p>Finally, we sum these values:</p>\n\n<p>\n\n<p>$$\\binom{10}{3} + \\binom{10}{4} + \\binom{10}{5} + \\binom{10}{6} = 120 + 210 + 252 + 210 = 792$$</p>\n\n</p>\n\n<p>Therefore, the number of subsets of $$A \\times B$$ each having at least 3 and at most 6 elements is:</p>\n\n<p>Option D - 792</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6nox8pu",
@@ -512,7 +512,7 @@
     "difficulty": "easy",
     "solution": "Total matches between boys of both team = $${}^7{C_1} \\times {}^4{C_1} = 28$$<br><br>Total matches between girls of both team = $${}^n{C_1}\\,{}^6{C_1} = 6n$$<br><br>Now, 28 + 6n = 52<br><br>$$ \\Rightarrow $$ n = 4",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krzq59sa",
@@ -534,7 +534,7 @@
     "difficulty": "easy",
     "solution": "$${}^n{P_r} = {}^n{P_{r + 1}} \\Rightarrow {{n!} \\over {(n - r)!}} = {{n!} \\over {(n - r - 1)!}}$$<br><br>$$ \\Rightarrow (n - r) = 1$$ .....(1)<br><br>$${}^n{C_r} = {}^n{C_{r - 1}}$$<br><br>$$ \\Rightarrow {{n!} \\over {r!(n - r)!}} = {{n!} \\over {(r - 1)!(n - r + 1)!}}$$<br><br>$$ \\Rightarrow {1 \\over {r(n - r)!}} = {1 \\over {(n - r + 1)(n - r)!}}$$<br><br>$$ \\Rightarrow n - r + 1 = r$$<br><br>$$ \\Rightarrow n + 1 = 2r$$ ..... (2)<br><br>From (1) and (2), $$  2r - 1 - r = 1 \\Rightarrow r = 2$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kufeolbl",
@@ -557,7 +557,7 @@
     "solution": "n<sub>1</sub> = number of elements in S<sub>1</sub> = 10 $$\\times$$ 10 $$\\times$$ 10 = 1000<br/><br/>n<sub>2</sub> = number of elements in S<sub>2</sub> = 8 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1<br/><br/>= 8 + $${{8 \\times 9} \\over 2} = 44$$ ($$\\because$$ 1 $$\\le$$ i < j + 2 $$\\le$$ 10 $$\\Rightarrow$$ j $$\\le$$ 8 and i $$\\ge$$ 1<br/><br/>$$\\therefore$$ (i = 1, j = 1, 2, 3, .... 8), (i = 2, j = 1, 2, 3, ..... 8), (i = 3, j = 2, 3, 4, .... 8) and so on)<br/><br/>n<sub>3</sub> = number of elements in S<sub>3</sub> = $${}^{10}{C_4}$$<br/><br/>(selecting 4 numbers and arranging in increasing order)<br/><br/>$$ = {{10 \\times 9 \\times 8 \\times 7} \\over {24}} = 210$$<br/><br/>n<sub>4</sub> = number of elements in S<sub>4</sub> = $${}^{10}{C_4}$$ = 10 $$\\times$$ 9 $$\\times$$ 8 $$\\times$$ 7<br/><br/>$$ \\Rightarrow {{{n_4}} \\over {12}} = 420$$",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "SLjj7ptO9uQcIkLlhTjgy2xukfakunkv",
@@ -596,7 +596,7 @@
     "difficulty": "medium",
     "solution": "6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3). <sup>36</sup>C<sub>r + 1</sub>\n<br><br>$$ \\Rightarrow $$ 6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3).$${{36} \\over {r + 1}}$$<sup>35</sup>C<sub>r</sub>\n<br><br>$$ \\Rightarrow $$ k<sup>2</sup> - 3 = $${{r + 1} \\over 6}$$\n<br><br>Possible values of r for integral values of k, are\n<br><br>r = 5, 35\n<br><br>number of ordered pairs are 4\n<br><br>(5, 2), (5, –2), (35, 3), (35, 3)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Df2NYHYq0uAHcIQV3H7k9k2k5gjegt5",
@@ -618,7 +618,7 @@
     "difficulty": "medium",
     "solution": "(\n<sup>19</sup>C<sub>p</sub>)<sub>max</sub> =\n<sup>19</sup>C<sub>9</sub> or\n<sup>19</sup>C<sub>10</sub> = a\n<br><br>(\n<sup>20</sup>C<sub>p</sub>)<sub>max</sub> =\n<sup>20</sup>C<sub>10</sub> = b\n<br><br>(\n<sup>21</sup>C<sub>r</sub>)<sub>max</sub> =\n<sup>21</sup>C<sub>10</sub> or\n<sup>21</sup>C<sub>11</sub> = c\n<br><br>1 = $${a \\over {^{19}{C_{10}}}} = {b \\over {^{20}{C_{10}}}} = {c \\over {^{21}{C_{10}}}}$$\n<br><br>$$ \\Rightarrow $$ $${a \\over {11}} = {b \\over {22}} = {c \\over {42}}$$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "TgQzv9xzFjU3klQ0D27k9k2k5h0eczd",
@@ -675,7 +675,7 @@
     "difficulty": "medium",
     "solution": "$$\\sum\\limits_{r = 0}^{25} {^{50}} {C_r}.{}^{50 - r}{C_{25 - r}}$$\n<br><br>$$ = \\sum\\limits_{r = 0}^{25} {{{50!} \\over {r!\\left( {50 - r} \\right)!}}}  \\times {{\\left( {50 - r} \\right)!} \\over {\\left( {25} \\right)!\\left( {25 - r} \\right)!}}$$\n<br><br>$$ = \\sum\\limits_{r = 0}^{25} {{{50!} \\over {25!25!}} \\times {{25!} \\over {\\left( {25 - r} \\right)!\\left( {r!} \\right)}}} $$\n<br><br>$$ = {}^{50}{C_{25}}\\sum\\limits_{r = 0}^{25} {^{25}} {C_r} = \\left( {{2^{25}}} \\right){}^{50}{C_{25}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;$$K = {2^{25}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IiAhsoFZAqNRGsldWG3rsa0w2w9jx5e78h8",
@@ -697,7 +697,7 @@
     "difficulty": "medium",
     "solution": "<sup>21</sup>C<sub>0</sub> + <sup>21</sup>C<sub>1</sub> + <sup>21</sup>C<sub>2</sub> + ....... + <sup>21</sup>C<sub>10</sub> = $${{{2^{21}}} \\over 2} = {2^{20}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wyrLSbxVQxkAIJHo7FrTT",
@@ -719,7 +719,7 @@
     "difficulty": "medium",
     "solution": "Let m-men, 2-women\n<br><br><sup>m</sup>C<sub>2</sub> $$ \\times $$ 2 = <sup>m</sup><sup></sup>C<sub>1</sub> <sup>2</sup>C<sub>1</sub> . 2 + 84\n<br><br>m<sup>2</sup> $$-$$ 5m $$-$$ 84 = 0 $$ \\Rightarrow $$ (m $$-$$ 12) (m + 7) = 0\n<br><br>m = 12",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "d9rYjwxlxiAXsKNTjN8AV",
@@ -741,7 +741,7 @@
     "difficulty": "medium",
     "solution": "Number of ways = <sup>10</sup>C<sub>3</sub> = 120",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "7zVsYg2f6ffJG7Qa4j1kjvlt2ff",
@@ -764,7 +764,7 @@
     "solution": "Given 6 boys M<sub>1</sub>, M<sub>2</sub>, M<sub>3</sub>, M<sub>4</sub>, M<sub>5</sub>, M<sub>6</sub> and 5 girls G<sub>1</sub>, G<sub>2</sub>, G<sub>3</sub>, G<sub>4</sub>, G<sub>5</sub><br><br>(i) $$\\alpha $$<sub>1</sub> $$ \\to $$ Total number of ways of selecting 3 boys and 2 girls from 6 boys and 5 girls.<br><br>i.e., $${}^6{C_3} \\times {}^5{C_2} = 20 \\times 10 = 200$$<br><br>$$ \\therefore $$ $$\\alpha $$<sub>1</sub> = 200<br><br>(ii) $$\\alpha $$<sub>2</sub> $$ \\to $$ Total number of ways selecting at least 2 member and having equal number of boys and girls i.e., $${}^6{C_1}{}^5{C_1} + {}^6{C_2}{}^5{C_2} + {}^6{C_3}{}^5{C_3} + {}^6{C_4}{}^5{C_4} + {}^6{C_5}{}^5{C_5}$$<br><br>= 30 + 150 + 200 + 75 + 6 = 461<br><br>$$\\alpha $$<sub>2</sub> = 461<br><br>(iii) $$\\alpha $$<sub>3</sub> $$ \\to $$ Total number of ways of selecting 5 members in which at least 2 of them girls<br><br>i.e., $${}^5{C_2}{}^6{C_3} + {}^5{C_3}{}^6{C_2} + {}^5{C_4}{}^6{C_1} + {}^5{C_5}{}^6{C_0}$$<br><br>$$ = 200 + 150 + 30 + 1 = 381$$<br><br>$$\\alpha $$<sub>3</sub> = 381<br><br>(iv) $$\\alpha $$<sub>4</sub> $$ \\to $$ Total number of ways of selecting 4 members in which at least two girls such that M<sub>1</sub> and G<sub>1</sub> are not included together.<br><br>G<sub>1</sub> is included $$ \\to $$<br><br>$${}^4{C_1}.{}^5{C_2} + {}^4{C_2}.{}^5{C_1} + {}^4{C_3}$$<br><br> 40 + 30 + 4 = 74<br><br>M<sub>1</sub> is included $$ \\to $$<br><br>$${}^4{C_2}.{}^5{C_1} + {}^4{C_3}$$ = 30 + 4 = 34<br><br>G<sub>1</sub> and M<sub>1</sub> both are not included<br><br>$${}^4{C_4} + {}^4{C_3}.{}^5{C_1} + {}^4{C_2}.{}^5{C_2}$$ = 1 + 20 + 60 = 81<br><br>$$ \\therefore $$ Total number = 74 + 34 + 81 = 189<br><br>$$\\alpha $$<sub>4</sub> = 189<br><br>Now, P $$ \\to $$ 4 ; Q $$ \\to $$ 6 ; R $$ \\to $$ 5 ; S $$ \\to $$ 2<br><br>Hence, option (C) is correct.",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "hPoq3OSkej5kavXb",
@@ -786,7 +786,7 @@
     "difficulty": "medium",
     "solution": "<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-0lax\"></th>\n    <th class=\"tg-s6z2\" colspan=\"2\"><span style=\"font-weight:bold\">X(7 Friends)</span></th>\n    <th class=\"tg-s6z2\" colspan=\"2\"><span style=\"font-weight:bold\">Y(7 Friends)</span></th>\n  </tr>\n  <tr>\n    <td class=\"tg-0lax\"></td>\n    <td class=\"tg-s6z2\">4 Ladies</td>\n    <td class=\"tg-s6z2\">3 Men</td>\n    <td class=\"tg-s6z2\">3 Ladies</td>\n    <td class=\"tg-baqh\">4 Men</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0lax\"><span style=\"font-weight:bold\">Case 1</span></td>\n    <td class=\"tg-s6z2\">3</td>\n    <td class=\"tg-s6z2\">0</td>\n    <td class=\"tg-s6z2\">0</td>\n    <td class=\"tg-baqh\">3</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0lax\"><span style=\"font-weight:bold\">Case 2</span></td>\n    <td class=\"tg-s6z2\">0</td>\n    <td class=\"tg-s6z2\">3</td>\n    <td class=\"tg-s6z2\">3</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0lax\"><span style=\"font-weight:bold\">Case 3</span></td>\n    <td class=\"tg-s6z2\">2</td>\n    <td class=\"tg-s6z2\">1</td>\n    <td class=\"tg-s6z2\">1</td>\n    <td class=\"tg-baqh\">2</td>\n  </tr>\n  <tr>\n    <td class=\"tg-0lax\"><span style=\"font-weight:bold\">Case 4</span></td>\n    <td class=\"tg-s6z2\">1</td>\n    <td class=\"tg-s6z2\">2</td>\n    <td class=\"tg-s6z2\">2</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n</tbody></table>\n<br><br>In Case 1, Case 2, Case 3 and Case 4, total 6 friends are present and 3 from X and 3 from Y and among those 6 friend 3 are ladies and 3 are men in every case.\n<br><br>$$\\therefore$$ No of ways 6 friends can be invited =\n<br><br>$$({}^4{C_3} \\times {}^3{C_0} \\times {}^3{C_0} \\times {}^4{C_3})$$ + $$({}^4{C_0} \\times {}^3{C_3} \\times {}^3{C_3} \\times {}^4{C_0})$$ + $$\\left( {{}^4{C_2} \\times {}^3{C_1} \\times {}^3{C_1} \\times {}^4{C_2}} \\right)$$ + $$\\left( {{}^4{C_1} \\times {}^3{C_2} \\times {}^3{C_2} \\times {}^4{C_1}} \\right)$$\n<br><br>= 16 + 1 + 324 + 144 = 485",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IYJ08gkoyHdlZ5bWWXi8X",
@@ -808,7 +808,7 @@
     "difficulty": "medium",
     "solution": "$${{{}^{n + 2}{C_6}} \\over {{}^{n - 2}{P_2}}} = 11$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${{\\left( {n + 2} \\right)!} \\over {6!\\,\\left( {n - 4} \\right)!}} = 11\\,.\\,{{\\left( {n - 2} \\right)!} \\over {\\left( {n - 4} \\right)!}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;(n + 2)!&nbsp;&nbsp;=&nbsp;&nbsp;11.6! (n $$-$$ 2)!\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;(n + 2) (n + 1) n (n $$-$$ 1) &nbsp;&nbsp;=&nbsp;&nbsp; 11.6!\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;(n + 2) (n + 1) n (n $$-$$ 1) = 11 . 6 . 5 . 4 . 3 . 2 . 1\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;(n + 2) (n + 1) n (n $$-$$ 1) &nbsp;&nbsp;=&nbsp;&nbsp;11 . 10 . 9 . 8\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;n = 9\n<br><br>This value of n satisfy the equation, \n<br><br>n<sup>2</sup> + 3n $$-$$ 108 = 0",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "JQOZHrRPZakaNrrEKuSe1",
@@ -830,7 +830,7 @@
     "difficulty": "medium",
     "solution": "We know,\n<br><br>$${{{}^n{C_r}} \\over {{}^n{C_{r - 1}}}} = {{n - r + 1} \\over r}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp; $${{^{15}{C_r}} \\over {{}^{15}{C_{r - 1}}}} = {{15 - r + 1} \\over r} = {{16 - r} \\over r}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;&nbsp; $$\\sum\\limits_{r = 1}^{15} {{r^2}} \\left( {{{{}^{15}{C_r}} \\over {^{15}{C_{r - 1}}}}} \\right)$$\n<br><br>$$=$$ $$\\sum\\limits_{r = 1}^{15} {{r^2}} \\left( {{{16 - r} \\over r}} \\right)$$\n<br><br>$$ = \\sum\\limits_{r = 1}^{15} {\\left( {16r - {r^2}} \\right)} $$\n<br><br>$$ = 16\\sum\\limits_{r = 1}^{15} {r - \\sum\\limits_{r = 1}^{15} {{r^2}} } $$\n<br><br>$$ = 16 \\times {{15 \\times 16} \\over 2} - {{15 \\times 16 \\times 31} \\over 6}$$\n<br><br>$$=$$ &nbsp;120 $$ \\times $$ 16 $$-$$ 40 $$ \\times $$ 31\n<br><br>$$=$$  680",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "s6S6fYF1LczOJNfG",
@@ -888,7 +888,7 @@
     "difficulty": "easy",
     "solution": "A $$ \\times $$ B will have 2 $$ \\times $$ 4 = 8 elements.\n<br><br>The number of subsets having atleast 3 elements\n<br><br>= <sup>8</sup>C<sub>3</sub> + <sup>8</sup>C<sub>4</sub> + <sup>8</sup>C<sub>5</sub> + <sup>8</sup>C<sub>6</sub> + <sup>8</sup>C<sub>7</sub> + <sup>8</sup>C<sub>8</sub> \n<br><br>= 2<sup>8</sup> – (<sup>8</sup>C<sub>0</sub> + <sup>8</sup>C<sub>1</sub> + <sup>8</sup>C<sub>2</sub>) = 256 – 1 – 8 – 28 = 219 ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "foj68NgT56Ij10bv",
@@ -910,7 +910,7 @@
     "difficulty": "easy",
     "solution": "Number of possible triangle using n vertices = <sup>n</sup>C<sub>3</sub>\n<br><br>$$ \\therefore $$ T<sub>n</sub> = <sup>n</sup>C<sub>3</sub>\n<br><br>then T<sub>n + 1</sub> = <sup>n + 1</sup>C<sub>3</sub>\n<br><br>Given, $${T_{n + 1}} - {T_n}$$ = 10\n<br><br>$$ \\Rightarrow $$ <sup>n + 1</sup>C<sub>3</sub> - <sup>n</sup>C<sub>3</sub> = 10\n<br><br>$$ \\Rightarrow $$ $${{\\left( {n + 1} \\right)n\\left( {n - 1} \\right)} \\over 6} - {{n\\left( {n - 1} \\right)\\left( {n - 2} \\right)} \\over 6}$$ = 10\n<br><br>$$ \\Rightarrow $$ 3n(n - 1) = 60\n<br><br>$$ \\Rightarrow $$ n(n - 1) = 20\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> - n - 20 = 0\n<br><br>$$ \\Rightarrow $$ (n - 5)(n + 4) = 0\n<br><br>$$ \\therefore $$ n = 5",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "FrmiixXJ0JcQkToz",
@@ -932,7 +932,7 @@
     "difficulty": "medium",
     "solution": "<p>For alike n objects, number of ways we can select zero or more objects  = n + 1 and number of ways we can select at least one object = n</p>\n<p>Given 10 identical white balls, 9 identical green balls and 7 identical black balls.</p>\n<p>To find number of ways for selecting atleast one ball.</p>\n<p>Number of ways to choose zero or more white balls = (10 + 1) [since, all white balls are mutually identical]</p>\n<p>Number of ways to choose zero or more green balls = (9 + 1) [since, all green balls are mutually identical]</p>\n<p>Number of ways to choose zero or more black balls = (7 + 1) [since, all black balls are mutually identical]</p>\n<p>Hence, number of ways to choose zero or more balls of any colour = (10 + 1) (9 + 1) (7 + 1)</p>\n<p>Also, number of ways to choose a total of zero balls = 1</p>\n<p>Hence, the number, if ways to choose at least one ball (irrespective of any colour) = (10 + 1) (9 + 1) (7 + 1) $$-$$ 1 = 879</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "hZ0WqGlvxb9cOBdE",
@@ -954,7 +954,7 @@
     "difficulty": "medium",
     "solution": "<p>We need 3 points to create a triangle. With 10 points number of triangle possible $${}^{10}{C_3}$$</p>\n<p>Here 6 points are on the same line so we can't make any triangle with those 6 points.</p>\n<p> So subtract $${}^{6}{C_3}$$.</p>\n<p>$$\\therefore$$ $$N = {}^{10}{C_3} - {}^6{C_3}$$</p>\n<p>$$ = {{10\\,.\\,9\\,.\\,8} \\over {1\\,.\\,2\\,.\\,3}} - {{6\\,.\\,5\\,.\\,4} \\over {1\\,.\\,2\\,.\\,3}}$$</p>\n<p>$$ = 120 - 20$$</p>\n<p>$$ = 100$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lWJFreINJxGWYGy2",
@@ -998,7 +998,7 @@
     "difficulty": "easy",
     "solution": "<p>Thus number of ways $$ = ({}^3{C_2}) \\times ({}^9{C_2}) = 3 \\times {{9 \\times 8} \\over 2} = 108$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "i8CdIhXNdutjJXjY",
@@ -1021,7 +1021,7 @@
     "solution": "<p>The two possible cases are as follows:</p>\n<p>Case 1 : There are five 1's; one 2; one 3. Therefore, the number of numbers is 7!/5! = 42.</p>\n<p>Case 2 : There are four 1's; three 2's. Therefore, the number of numbers is 7!/4! 3! = 35. Hence, the total number of numbers is 42 + 35 = 77</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "pW3FNSb5ohyzwnDR",
@@ -1043,7 +1043,7 @@
     "difficulty": "medium",
     "solution": "<b>Note :</b> n items can be distribute among p persons are $${}^{n + p - 1}{C_{p - 1}}$$ ways.\n<br><br>Here n = 6 ice-cream\n<br><br>p = 5 types of ice-cream\n<br><br>Each ice-cream belongs to one of the 5 ice-cream type. So chosen 6 ice-crean can be divide into 5 types of ice-cream.\n<br><br>$$ \\therefore $$ The number of different ways the child can buy the six ice-cream is = $${}^{6 + 5 - 1}{C_{5 - 1}}$$ = $${}^{10}{C_4}$$\n<br><br>$$ \\therefore $$ <b>Statement - 1 is false.</b>\n<br><br>Number of different ways of arranging 6 A and 4 B's in a row\n<br><br>= $${{10!} \\over {6!4!}} = {}^{10}{C_4}$$\n<br><br>$$ \\therefore $$ <b>Statement - 2 is true.</b>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wZ6fkRvOqG6GRUaw",
@@ -1065,7 +1065,7 @@
     "difficulty": "medium",
     "solution": "<p>The total number of ways is</p>\n<p>$${}^{12}{C_4} \\times {}^{12 - 4}{C_4} \\times {}^{12 - 4 - 4}{C_4} = {}^{12}{C_4} \\times {}^8{C_4} \\times {}^4{C_4} = {{12!} \\over {{{(4!)}^3}}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "WAd9iWoQGJdqmxc0",
@@ -1087,7 +1087,7 @@
     "difficulty": "easy",
     "solution": "A voter can give vote to either 1 candidate or 2 candidates or 3 candidates or 4 candidates.\n<br><br>Case 1 : When he give vote to only 1 candidate then no ways = $${}^{10}{C_1}$$\n<br><br>Case 2 : When he give vote to 2 candidates then no ways = $${}^{10}{C_2}$$\n<br><br>Case 3 : When he give vote to 3 candidates then no ways = $${}^{10}{C_3}$$\n<br><br>Case 4 : When he give vote to 4 candidates then no ways = $${}^{10}{C_4}$$\n<br>So, total no of ways he can give votes \n<br>= $${}^{10}{C_1} + {}^{10}{C_2} + {}^{10}{C_3} + {}^{10}{C_4}$$\n<br>= 385\n<br><br><b>Note :</b> Here we use addition rule as he can vote any one of those four rules. Whenever there is \"or\" choices, we use addition rule.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "cxhMyG1Oo7EJnOxq",
@@ -1109,7 +1109,7 @@
     "difficulty": "easy",
     "solution": "To distribute n objects among p people where everyone should get atleast one object, then number of ways to distribute those n objects\n<br><br>= $${}^{n - 1}{C_{p - 1}}$$\n<br><br>For this question, n = 8 and p = 3\n<br><br>$$ \\therefore $$ Number of ways = $${}^{8 - 1}{C_{3 - 1}}$$ = $${}^7{C_2}$$ = 21",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "txW7MxHrrC595ct0",
@@ -1131,6 +1131,6 @@
     "difficulty": "medium",
     "solution": "Arrange it this way,\n<br><br>$$^n{C_{r + 1}} + 2.{}^n{C_r} + {}^n{C_{r - 1}}$$\n<br><br>$$ = {}^n{C_{r + 1}} + {}^n{C_r} + {}^n{C_r} + {}^n{C_{r - 1}}$$\n<br><br>$$\\left[ \\, \\right.$$ Now use the rule, \n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$$\\left. {{}^n{C_r} + {}^n{C_{r - 1}} = {}^{n + 1}{C_r}} \\right]$$\n<br><br>$$ = {}^{n + 1}{C_{r + 1}} + {}^{n + 1}Cr$$\n<br><br>$$ = {}^{n + 2}{C_{r + 1}}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

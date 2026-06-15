@@ -19,7 +19,7 @@
     "difficulty": "easy",
     "solution": "<p>$$ \\begin{aligned} & f(x+y)=f(x) \\cdot f(y) \\Rightarrow f(x)=a^x \\\\ & \\left(\\because f(1)=7 \\Rightarrow a^1=7\\right) \\end{aligned} $$</p>\n<p>So $f(x)=7^x$</p>\n<p>Now</p>\n<p>$$ g(x+y)=g(x y)(\\text { put } y=1) \\Rightarrow g(x+1)=g(x) $$</p>\n<p>So $g(1)=g(2)=g(3)=\\ldots \\ldots \\ldots=g(n)=1$</p>\n<p>$$ \\begin{aligned} & \\text { Given } \\sum_{x=1}^n \\frac{f(x)}{g(x)}=19607 \\\\ & \\sum_{x=1}^n \\frac{7^x}{1}=19607 \\Rightarrow 7\\left(\\frac{7^n-1}{7-1}\\right)=19607 \\\\ & 7^n-1=\\frac{6}{7} \\times 19607 \\\\ & 7^n=16807 \\Rightarrow n=5 \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml98p3u9",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p>Given $m=\\sum_{i=1}^9(i)^2=1^2+2^2+\\cdots 9$</p>\n<p>We know, $1^2+2^2+3^2+\\cdots n^2=\\frac{n(n+1)(2 n+1)}{6}$</p>\n<p>so, $m=\\frac{9 \\times 10 \\times 19}{6}=3 \\times 5 \\times 19=285$</p>\n<p>Given equation</p>\n<p>$$ 3 f(x)+2 f\\left(\\frac{m}{19 x}\\right)=5 x, x \\neq 0 $$</p>\n<p>put $\\mathrm{m}=285,3 f(x)+2 f\\left(\\frac{285}{19 x}\\right)=5 x$</p>\n<p>$$ 3 f(x)+2 f\\left(\\frac{15}{x}\\right)=5 x-(1) $$</p>\n<p>put $x=\\frac{15}{x}$</p>\n<p>$$ \\begin{aligned} & 3 f\\left(\\frac{15}{x}\\right)+2 f\\left(\\frac{15}{15 / x}\\right)=5 \\times \\frac{15}{x} \\\\ & 3 f\\left(\\frac{15}{x}\\right)+2 f(x)=\\frac{75}{x}-(2) \\end{aligned} $$</p>\n<p>from (1) $f\\left(\\frac{15}{x}\\right)=\\frac{5 x-3 f(x)}{2}$ substitute in equation (2)</p>\n<p>$$ \\begin{aligned} & 3\\left[\\frac{5 x-3 f(x)}{2}\\right]+2 f(x)=\\frac{75}{x} \\\\ & 15 x-9 f(x)+4 f(x)=\\frac{150}{x} \\\\ & 5 f(x)=15 x-\\frac{150}{x} \\\\ & f(x)=3 x-\\frac{30}{x} \\end{aligned} $$</p>\n<p>to find $f(5)-f(2)$</p>\n<p>$$ \\begin{aligned} & f(5)-f(2)=\\left(3(5)-\\frac{30}{5}\\right)-\\left(3 \\times 2-\\frac{30}{2}\\right) \\\\ & =(15-6)-(6-15) \\end{aligned} $$</p>\n<p>= $9-(-9)=18$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhxbi",
@@ -63,7 +63,7 @@
     "difficulty": "medium",
     "solution": "<p>Given</p>\n<p>$$ f(x+y)=f(x)+2y^2+y+\\alpha xy \\quad \\text{for all } x,y\\in \\mathbb{R} $$</p>\n<p>with</p>\n<p>$$ f(0)=-1,\\qquad f(1)=2. $$</p>\n<p>We have to find</p>\n<p>$$ \\sum_{n=1}^5 (\\alpha+f(n)). $$</p>\n<h2>Step 1: Use the given relation to find $\\alpha$</h2>\n<p>Put $x=0$ in</p>\n<p>$$ f(x+y)=f(x)+2y^2+y+\\alpha xy. $$</p>\n<p>Then</p>\n<p>$$ f(y)=f(0)+2y^2+y+\\alpha\\cdot 0\\cdot y $$</p>\n<p>so</p>\n<p>$$ f(y)=-1+2y^2+y. $$</p>\n<p>Thus, for every real $y$,</p>\n<p>$$ f(y)=2y^2+y-1. $$</p>\n<p>Now use $f(1)=2$:</p>\n<p>$$ f(1)=2(1)^2+1-1=2. $$</p>\n<p>This is already satisfied, so now we must use the original equation to determine $\\alpha$.</p>\n<p>Substitute</p>\n<p>$$ f(x+y)=2(x+y)^2+(x+y)-1 $$</p>\n<p>and</p>\n<p>$$ f(x)=2x^2+x-1 $$</p>\n<p>into the given equation:</p>\n<p>$$ 2(x+y)^2+(x+y)-1 = 2x^2+x-1+2y^2+y+\\alpha xy. $$</p>\n<p>Expand the left side:</p>\n<p>$$ 2x^2+4xy+2y^2+x+y-1. $$</p>\n<p>Right side is:</p>\n<p>$$ 2x^2+x-1+2y^2+y+\\alpha xy. $$</p>\n<p>Comparing both sides,</p>\n<p>$$ 4xy=\\alpha xy. $$</p>\n<p>Hence,</p>\n<p>$$ \\alpha=4. $$</p>\n<h2>Step 2: Find $f(n)$ for $n=1$ to $5$</h2>\n<p>Since</p>\n<p>$$ f(n)=2n^2+n-1, $$</p>\n<p>we get:</p>\n<p>$$ f(1)=2(1)^2+1-1=2 $$</p>\n<p>$$ f(2)=2(2)^2+2-1=8+2-1=9 $$</p>\n<p>$$ f(3)=2(3)^2+3-1=18+3-1=20 $$</p>\n<p>$$ f(4)=2(4)^2+4-1=32+4-1=35 $$</p>\n<p>$$ f(5)=2(5)^2+5-1=50+5-1=54 $$</p>\n<h2>Step 3: Compute the required sum</h2>\n<p>We need</p>\n<p>$$ \\sum_{n=1}^5 (\\alpha+f(n)). $$</p>\n<p>Since $\\alpha=4$,</p>\n<p>$$ \\alpha+f(1)=4+2=6 $$</p>\n<p>$$ \\alpha+f(2)=4+9=13 $$</p>\n<p>$$ \\alpha+f(3)=4+20=24 $$</p>\n<p>$$ \\alpha+f(4)=4+35=39 $$</p>\n<p>$$ \\alpha+f(5)=4+54=58 $$</p>\n<p>Therefore,</p>\n<p>$$ 6+13+24+39+58=140. $$</p>\n<p>So the required value is</p>\n<p>$$ \\boxed{140}. $$</p>\n<p>Hence, the correct option is <strong>B</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnsik68s",
@@ -120,7 +120,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(x)=\\frac{2^x}{2^x+\\sqrt{2}} \\\\\n& f(x)+f(1-x)=\\frac{2^x}{2^x+\\sqrt{2}}+\\frac{2^{1-x}}{2^{1-x}+\\sqrt{2}} \\\\\n& =\\frac{2^x}{2^x+\\sqrt{2}}+\\frac{2}{2+\\sqrt{2} 2^x}=\\frac{2^x+\\sqrt{2}}{2^x+\\sqrt{2}}=1\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{r}\n\\text { Now, } \\sum_{\\mathrm{k}=1}^{81} \\mathrm{f}\\left(\\frac{\\mathrm{k}}{82}\\right)=\\mathrm{f}\\left(\\frac{1}{82}\\right)+\\mathrm{f}\\left(\\frac{2}{82}\\right)+\\ldots \\ldots+\\mathrm{f}\\left(\\frac{81}{82}\\right) \\\\\n=\\mathrm{f}\\left(\\frac{1}{82}\\right)+\\mathrm{f}\\left(\\frac{2}{82}\\right)+\\ldots \\ldots .+\\mathrm{f}\\left(1-\\frac{2}{82}\\right)+\\mathrm{f}\\left(1-\\frac{1}{82}\\right) \\\\\n=\\left[\\mathrm{f}\\left(\\frac{1}{82}\\right)+\\mathrm{f}\\left(1-\\frac{1}{82}\\right)\\right]+\\left[\\mathrm{f}\\left(\\frac{2}{82}\\right)+\\mathrm{f}\\left(1-\\frac{2}{82}\\right)\\right]+\\ldots . .40 \\text { cases }+\\mathrm{f}\\left(\\frac{41}{82}\\right)\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& =(1+1+\\ldots 40 \\text { times })+\\frac{2^{1 / 2}}{2^{1 / 2}+2^{1 / 2}} \\\\\n& 40+\\frac{1}{2}=\\frac{81}{2}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6w9ob7s",
@@ -142,7 +142,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(x)=(3 a+2) x^2+\\left(\\frac{a+2}{a-1}\\right) x+b \\\\\n& f\\left(x+\\frac{1}{2}\\right)=f(x)+f(y)+1-\\frac{2}{7} x y\\quad\\text{.... (1)}\n\\end{aligned}$$</p>\n<p>In (1) Put $x=y=0 \\Rightarrow f(0)=2 f(0)+1 \\Rightarrow f(0)=-1$</p>\n<p>So, $\\mathrm{f}(0)=0+0+\\mathrm{b}=-1 \\Rightarrow \\mathrm{~b}=-1$</p>\n<p>$$\\begin{aligned}\n& \\text { In (1) Put } y=-x \\Rightarrow f(0)=f(x)+f(-x)+1+\\frac{2}{7} x^2 \\\\\n& -1=2(3 a+2) x^2+2 b+1+\\frac{2}{7} x^2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& -1=\\left(2(3 a+2)+\\frac{2}{7}\\right) x^2+1-2 \\\\\n& \\Rightarrow 6 a+4+\\frac{2}{7}=0 \\\\\n& a=-\\frac{5}{7}\n\\end{aligned}$$</p>\n<p>So $\\mathrm{f}(\\mathrm{x})=-\\frac{1}{7} \\mathrm{x}^2-\\frac{3}{4} \\mathrm{x}-1$</p>\n<p>$$\\Rightarrow|\\mathrm{f}(\\mathrm{x})|=\\frac{1}{28}\\left|4 \\mathrm{x}^2+21 \\mathrm{x}+28\\right|$$</p>\n<p>Now, $28 \\sum_{i=1}^5|f(i)|=28(|f(1)|+|f(2)|+\\ldots+|f(5)|)$</p>\n<p>$28 \\cdot \\frac{1}{28} \\cdot 675=675$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9gxgbnp",
@@ -164,7 +164,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(x)+3 f\\left(\\frac{24}{x}\\right)=4 x, x \\neq 0 \\quad \\ldots(1)\\\\\n& \\text { replace } x \\text { by } \\frac{24}{x} \\\\\n& f\\left(\\frac{24}{x}\\right)+3 f\\left(\\frac{24}{24}\\right)=4\\left(\\frac{24}{x}\\right)=\\frac{96}{x} \\quad \\ldots(2) \\\\\n& 3 \\times(2)-(1) \\\\\n& \\Rightarrow 8 f(x)=\\frac{96.3}{x}-4 x \\Rightarrow f(x)=\\frac{36}{x}-\\frac{x}{2} \\\\\n& f(3)+f(8)=\\left(12-\\frac{3}{2}\\right)+\\left(\\frac{36}{8}-4\\right)\n\\end{aligned}$$</p>\n<p>$=8+\\frac{36}{8}-\\frac{12}{8}=11$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lwpv6l5u",
@@ -216,7 +216,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(m+n)=f(m)+f(n) \\\\\n& f(x)=k x \\\\\n& \\because f(1)=1 \\\\\n& \\Rightarrow k=1 \\\\\n& \\Rightarrow f(x)=x\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\sum_{k=1}^{2022} f(\\lambda+k)=\\sum_{k=1}^{2022}(\\lambda+k)=\\underbrace{\\lambda+\\lambda+\\ldots+\\lambda}_{2022}+(1+2+\\ldots+2022) \\\\\n& =2022 \\lambda+\\frac{2022 \\times 2023}{2} \\leq(2022)^2 \\\\\n& \\Rightarrow \\lambda \\leq \\frac{2021}{2} \\\\\n& \\text { largest } \\lambda=1010\n\\end{aligned}$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "liintl29",
@@ -261,7 +261,7 @@
     "difficulty": "medium",
     "solution": "Given that $f(x)=\\frac{\\left(\\tan 1^{\\circ}\\right) x+\\log _e(123)}{x \\log _e(1234)-\\left(\\tan 1^{\\circ}\\right)}$\n<br/><br/>Let us consider a similar function of $(x)$, \n<br/><br/>$\\therefore f(x)=\\frac{A x+B}{C x-A}$\n<br/><br/>$\\text { Now, } $\n<br/><br/>$$\n\\begin{aligned}\n&f(f(x)) =\\frac{A\\left(\\frac{A x+B}{C x-A}\\right)+B}{C\\left(\\frac{A x+B}{C x-A}\\right)-A} \\\\\\\\\n& =\\frac{A^2 x+A B+B C x-A B}{A C x+B C-A C x+A^2} \\\\\\\\\n& =\\frac{x\\left(A^2+B C\\right)}{\\left(B C+A^2\\right)}=x\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore \\quad f(f(x))=x \\\\\\\\\n& \\text { Similarly, } f\\left(f\\left(\\frac{4}{x}\\right)\\right)=\\frac{4}{x} \\\\\\\\\n& \\text { Apply, AM } \\geq \\text { GM } \\\\\\\\\n& \\left(x+\\frac{4}{x}\\right) \\geq 2 \\sqrt{x \\cdot \\frac{4}{x}}=4(x>0) \\\\\\\\\n& \\Rightarrow f(f(x))+f\\left(f\\left(\\frac{4}{x}\\right)\\right) \\geq 4\n\\end{aligned}\n$$\n<br/><br/>Hence, the least value is 4 .",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldo6xo14",
@@ -283,7 +283,7 @@
     "difficulty": "medium",
     "solution": "$\\begin{aligned} & \\mathrm{f}(\\mathrm{x})+\\mathrm{f}\\left(\\frac{1}{1-\\mathrm{x}}\\right)=1+\\mathrm{x} \\\\\\\\ & \\mathrm{x}=2 \\Rightarrow \\mathrm{f}(2)+\\mathrm{f}(-1)=3 ........(1) \\\\\\\\ & \\mathrm{x}=-1 \\Rightarrow \\mathrm{f}(-1)+\\mathrm{f}\\left(\\frac{1}{2}\\right)=0 .........(2) \\\\\\\\ & \\mathrm{x}=\\frac{1}{2} \\Rightarrow \\mathrm{f}\\left(\\frac{1}{2}\\right)+\\mathrm{f}(2)=\\frac{3}{2} ........(3) \\\\\\\\ & (1)+(3)-(2) \\Rightarrow 2 \\mathrm{f}(2)=\\frac{9}{2} \\\\\\\\ & \\therefore \\mathrm{f}(2)=\\frac{9}{4}\\end{aligned}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldon97rl",
@@ -305,7 +305,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = \\left| {\\matrix{\n   {1 + {{\\sin }^2}x} & {{{\\cos }^2}x} & {\\sin 2x}  \\cr \n   {{{\\sin }^2}x} & {1 + {{\\cos }^2}x} & {\\sin 2x}  \\cr \n   {{{\\sin }^2}x} & {{{\\cos }^2}x} & {1 + \\sin 2x}  \\cr \n\n } } \\right|$$\n<br/><br/>$C_{1} \\rightarrow C_{1}+C_{2}+C_{3}$\n\n<br/><br/>$$\n\\begin{aligned}\n& = (2+\\sin 2 x)\\left|\\begin{array}{ccc}1 & \\cos ^{2} x & \\sin 2 x \\\\1 & 1+\\cos ^{2} x & \\sin 2 x \\\\1 & \\cos ^{2} x & 1+\\sin 2 x\\end{array}\\right| \\\\\\\\\n& R_{2} \\rightarrow R_{2} \\rightarrow R_{1} ; R_{3} \\rightarrow R_{3} \\rightarrow R_{1} \\\\\\\\\n& = (2+\\sin 2 x)\\left|\\begin{array}{ccc}1 & \\cos ^{2} x & \\sin 2 x \\\\0 & 1 & 0 \\\\0 & 0 & 1\\end{array}\\right| \\\\\\\\\n& f(x)=2+\\sin 2 x ; x \\in\\left[\\frac{\\pi}{6}, \\frac{\\pi}{3}\\right] \\\\\\\\\n& f(x)_{\\max }=2+1=3 \\text { for } x=\\frac{\\pi}{4} \\\\\\\\\n& f(x)_{\\min }=2+\\frac{\\sqrt{3}}{2} \\text { for } x=\\frac{\\pi}{6}, \\frac{\\pi}{3} \\\\\\\\\n& \\beta^{2}-2 \\sqrt{\\alpha}=4+\\frac{3}{4}+2 \\sqrt{3}-2 \\sqrt{3} \\\\\\\\\n& =\\frac{19}{4}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldwvz91z",
@@ -327,7 +327,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& \\mathrm{f}(\\mathrm{x}+\\mathrm{y})=\\mathrm{f}(\\mathrm{x}) \\cdot \\mathrm{f}(\\mathrm{y}) \\forall \\mathrm{x}, \\mathrm{y} \\in \\mathrm{N}, \\mathrm{f}(1)=3 \\\\\\\\\n& \\mathrm{f}(2)=\\mathrm{f}^2(1)=3^2 \\\\\\\\\n& \\mathrm{f}(3)=\\mathrm{f}(1) \\mathrm{f}(2)=3^3 \\\\\\\\\n& \\mathrm{f}(4)=3^4 \\\\\\\\\n& \\mathrm{f}(\\mathrm{k})=3^{\\mathrm{k}} \\\\\\\\\n& \\sum_{\\mathrm{k}=1}^{\\mathrm{n}} \\mathrm{f}(\\mathrm{k})=3279 \\\\\\\\\n& \\mathrm{f}(1)+\\mathrm{f}(2)+\\mathrm{f}(3)+\\ldots \\ldots \\ldots+\\mathrm{f}(\\mathrm{k})=3279 \\\\\\\\\n& 3+3^2+3^3+\\ldots \\ldots \\ldots 3^{\\mathrm{k}}=3279 \\\\\\\\\n& \\frac{3\\left(3^{\\mathrm{k}}-1\\right)}{3-1}=3279 \\\\\\\\\n& \\frac{3^{\\mathrm{k}}-1}{2}=1093 \\\\\\\\\n& 3^{\\mathrm{k}}-1=2186 \\\\\\\\\n& 3^{\\mathrm{k}}=2187 \\\\\\\\\n& \\text{So, } \\mathrm{k}=7\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldwwwfha",
@@ -349,7 +349,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& f(x)=\\frac{4^x}{4^x+2} \\\\\\\\\n& f(x)+f(1-x)=\\frac{4^x}{4^x+2}+\\frac{4^{1-x}}{4^{1-x}+2} \\\\\\\\\n& =\\frac{4^x}{4^x+2}+\\frac{4}{4+2\\left(4^x\\right)} \\\\\\\\\n& =\\frac{4^x}{4^{\\mathrm{x}}+2}+\\frac{2}{2+4^{\\mathrm{x}}} \\\\\\\\\n& =1 \\\\\\\\\n& \\Rightarrow \\mathrm{f}(\\mathrm{x})+\\mathrm{f}(1-\\mathrm{x})=1 \\\\\\\\\n& \\text { Now } \\mathrm{f}\\left(\\frac{1}{2023}\\right)+\\mathrm{f}\\left(\\frac{2}{2023}\\right)+\\mathrm{f}\\left(\\frac{3}{2023}\\right)+\\ldots \\ldots .+ \\\\\\\\\n& \\ldots \\ldots \\ldots . .+\\mathrm{f}\\left(1-\\frac{3}{2023}\\right)+\\mathrm{f}\\left(1-\\frac{2}{2023}\\right)+\\mathrm{f}\\left(1-\\frac{1}{2023}\\right)\n\\end{aligned}\n$$<br/><br/>\nNow sum of terms equidistant from beginning and end is 1<br/><br/>\n$$\n\\begin{aligned}\n& \\text { Sum }=1+1+1+\\ldots \\ldots \\ldots+1 \\text { (1011 times }) \\\\\\\\\n& =1011\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldu5gt5g",
@@ -371,7 +371,7 @@
     "difficulty": "medium",
     "solution": "We know that $\\sin x-\\cos x \\in[-\\sqrt{2}, \\sqrt{2}]$\n<br/><br/>\n$$\n\\begin{aligned}\n& \\log _{\\sqrt{M}}(\\sqrt{2}(\\sin x-\\cos ) +M-2) \\\\\\\\\n&\\quad\\quad\\in {\\left[\\log _{\\sqrt{M}}(M-4), \\log _{\\sqrt{M}} M\\right] }\n\\end{aligned}\n$$\n<br/><br/>\n$\\Rightarrow \\log _{\\sqrt{M}}(M-4)=0 \\Rightarrow M=5$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldu5xulj",
@@ -393,7 +393,7 @@
     "difficulty": "medium",
     "solution": "$f(x)=2 x^{n}+\\lambda, \\lambda \\in \\mathbb{R}, n \\in \\mathbb{N}$\n<br/><br/>\n$f(4)=2 \\cdot 4^{n}+\\lambda=133, f(5)=2 \\cdot 5^{n}+\\lambda=255$\n<br/><br/>\n$f(5)-f(4)=2 \\cdot\\left(5^{n} \\cdot 4^{n}\\right)=122 \\Rightarrow n=3$\n<br/><br/>\n$\\Rightarrow f(3)-f(2)=2 \\cdot\\left(3^{n} \\cdot 2^{n}\\right)=2 \\cdot\\left(3^{3}-2^{3}\\right)=2 \\times 19$\n<br/><br/>\nRequired sum $=1+2+19+38=60$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldsf1d3h",
@@ -415,7 +415,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(1) + 2f(2) + 3f(3)\\, + \\,...\\, + \\,nf(n) = n(n + 1) + (n)$$ ..... (i)</p>\n<p>$$n \\to n + 1$$</p>\n<p>$$f(1) + 2f(2)\\, + \\,...\\, + \\,(n + 1)f(n + 1) = (n + 1)(n + 2)f(n + 1)$$ ...... (ii)</p>\n<p>(i) and (ii) gives</p>\n<p>$$3f(3) - 2f(2) = 0$$</p>\n<p>$$4f(4) - 3f(3) = 0$$</p>\n<p>$$ \\vdots $$</p>\n<p>$$(n + 1)f(n + 1) - nf(n) = 0$$</p>\n<p>$$ \\Rightarrow f(n + 1) = {{2f(2)} \\over {n + 1}}$$</p>\n<p>$$f(n) = {1 \\over {2n}}$$</p>\n<p>$${1 \\over {f(2022)}} + {1 \\over {f(2028)}} = 8100$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldswo1xf",
@@ -471,7 +471,7 @@
     "difficulty": "medium",
     "solution": "$\\mathrm{f}(\\mathrm{x})=\\left|\\mathrm{x}^{2}-\\mathrm{x}+1\\right|+\\left[\\mathrm{x}^{2}-\\mathrm{x}+1\\right] ; \\mathrm{x} \\in[-1,2]$\n\n<br/><br/>Let $g(x)=x^{2}-x+1$\n\n<br/><br/>$$\n=\\left(x-\\frac{1}{2}\\right)^{2}+\\frac{3}{4}\n$$\n\n\n\n<br/><br/>$$\n\\because\\left|\\mathrm{x}^{2}-\\mathrm{x}+1\\right| \\text { and }\\left[\\mathrm{x}^{2}-\\mathrm{x}+1\\right]\n$$\n\n<br/><br/>Both have minimum value at $\\mathrm{x}=1 / 2$\n\n<br/><br/>$\\Rightarrow$ Minimum $\\mathrm{f}(\\mathrm{x})=\\frac{3}{4}+0$\n\n<br/><br/>$=\\frac{3}{4}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5ahps1l",
@@ -493,7 +493,7 @@
     "difficulty": "medium",
     "solution": "<p>Given,</p>\n<p>$$f(x + y) = 2f(x)f(y)$$</p>\n<p>and $$f(1) = 2$$</p>\n<p>For x = 1 and y = 1,</p>\n<p>$$f(1 + 1) = 2f(1)f(1)$$</p>\n<p>$$ \\Rightarrow f(2) = 2{\\left( {f(1)} \\right)^2} = 2{(2)^2} = {2^3}$$</p>\n<p>For x = 1, y = 2,</p>\n<p>$$f(1 + 2) = 2f(1)y(2)$$</p>\n<p>$$ \\Rightarrow f(3) = 2\\,.\\,2\\,.\\,{2^3} = {2^5}$$</p>\n<p>For x = 1, y = 3,</p>\n<p>$$f(1 + 3) = 2f(1)f(3)$$</p>\n<p>$$ \\Rightarrow f(4) = 2\\,.\\,2\\,.\\,{2^5} = {2^7}$$</p>\n<p>For x = 1, y = 4,</p>\n<p>$$f(1 + 4) = 2f(1)f(4)$$</p>\n<p>$$ \\Rightarrow f(5) = 2\\,.\\,2\\,.\\,{2^7} = {2^9}$$ ..... (1)</p>\n<p>Also given</p>\n<p>$$\\sum\\limits_{k = 1}^{10} {f(\\alpha  + k) = {{512} \\over 3}({2^{20}} - 1)} $$</p>\n<p>$$ \\Rightarrow f(\\alpha  + 1) + f(\\alpha  + 2) + f(\\alpha  + 3)\\, + \\,\\,...\\,\\, + \\,\\,f(\\alpha  + 10) = {{512} \\over 3}({2^{20}} - 1)$$</p>\n<p>$$ \\Rightarrow f(\\alpha  + 1) + f(\\alpha  + 2) + f(\\alpha  + 3)\\, + \\,\\,....\\,\\, + f(\\alpha  + 10) = {{{2^9}\\left( {{{({2^2})}^{10}} - 1} \\right)} \\over {{2^2} - 1}}$$</p>\n<p>This represent a G.P with first term = 2<sup>9</sup> and common ratio = 2<sup>2</sup></p>\n<p>$$\\therefore$$ First term $$ = f(\\alpha  + 1) = {2^9}$$ ..... (2)</p>\n<p>From equation (1), $$f(5) = {2^9}$$</p>\n<p>$$\\therefore$$ From (1) and (2), we get</p>\n<p>$$f(\\alpha  + 1) = {2^9} = f(5)$$</p>\n<p>$$ \\Rightarrow f(\\alpha  + 1) = f(5)$$</p>\n<p>$$ \\Rightarrow f(\\alpha  + 1) = f(4 + 1)$$</p>\n<p>Comparing both sides we get,</p>\n<p>$$\\alpha  = 4$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6jeicx4",
@@ -510,7 +510,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\because$$ $$\\left| {f(n)} \\right| \\le 800$$</p>\n<p>$$ \\Rightarrow  - 800 \\le 2{n^2} - n - 1 \\le 800$$</p>\n<p>$$ \\Rightarrow 2{n^2} - n - 801 \\le 0$$</p>\n<p>$$\\therefore$$ $$n \\in \\left[ {{{ - \\sqrt {6409}  + 1} \\over 4},{{\\sqrt {6409}  + 1} \\over 4}} \\right]$$ and $$n \\in z$$</p>\n<p>$$\\therefore$$ $$n =  - 19, - 18, - 17,\\,..........,\\,19,20.$$</p>\n<p>$$\\therefore$$ $$\\sum {\\left( {2{x^2} - x - 1} \\right) = 2\\sum {{x^2} - \\sum {x - \\sum 1 } } } $$.</p>\n<p>$$ = 2\\,.\\,2\\,.\\,\\left( {{1^2} + {2^2}\\, + \\,...\\, + \\,{{19}^2}} \\right) + 2\\,.\\,{20^2} - 20 - 40$$</p>\n<p>$$ = 10620$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1l57ovytd",
@@ -549,7 +549,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(1) = a + b + c = 3$$ ..... (i)</p>\n<p>$$f(3) = 9a + 3b + c = 4$$ .... (ii)</p>\n<p>$$f(0) + f(1) + f( - 2) + f(3) = 14$$</p>\n<p>OR $$c + 3 + (4a - 2b + c) + 4 = 14$$</p>\n<p>OR $$4a - 2b + 2c = 7$$ ..... (iii)</p>\n<p>From (i) and (ii) $$8a + 2b = 1$$ ..... (iv)</p>\n<p>From (iii) $$ - (2) \\times $$ (i)</p>\n<p>$$ \\Rightarrow 2a - 4b = 1$$ ..... (v)</p>\n<p>From (iv) and (v) $$a = {1 \\over 6},\\,b = {{ - 1} \\over 6}$$ and $$c = 3$$</p>\n<p>$$f( - 2) = 4a - 2b + c$$</p>\n<p>$$ = {4 \\over 6} + {2 \\over 6} + 3 = 4$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6m6qe90",
@@ -600,7 +600,7 @@
     "difficulty": "medium",
     "solution": "Given, p(x) = f(x<sup>3</sup>) + xg(x<sup>3</sup>)<br><br>We know, x<sup>2</sup> + x + 1 = (x $$-$$ $$\\omega$$) (x $$-$$ $$\\omega$$<sup>2</sup>)<br><br>Given, p(x) is divisible by x<sup>2</sup> + x + 1. So, roots of p(x) is $$\\omega$$ and $$\\omega$$<sup>2</sup>.<br><br>As root satisfy the equation,<br><br>So, put x = $$\\omega$$<br><br>p($$\\omega$$) = f($$\\omega$$<sup>3</sup>) + $$\\omega$$g($$\\omega$$<sup>3</sup>) = 0<br><br>= f(1) + $$\\omega$$g(1) = 0 [$$\\omega$$<sup>3</sup> = 1]<br><br>= f(1) + $$\\left( { - {1 \\over 2} + {{i\\sqrt 3 } \\over 2}} \\right)$$ g(1) = 0<br><br>$$ \\Rightarrow $$ f(1) $$-$$ $${{g(1)} \\over 2} + i\\left( {{{\\sqrt 3 g(1)} \\over 2}} \\right)$$ = 0 + i0<br><br>Comparing both sides, we get<br><br>f(1) $$-$$ $${{g(1)} \\over 2}$$ = 0<br><br>and $${{{\\sqrt 3 } \\over 2}g(1) = 0}$$ $$ \\Rightarrow $$ g(1) = 0<br><br>So, f(1) = 0<br><br>Now, p(1) = f(1) + 1 . g(1) = 0 + 0 = 0",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "k8qq4kBTBPpAjRvtRg1klrmmoe0",
@@ -639,7 +639,7 @@
     "difficulty": "medium",
     "solution": "$$f(x) = {{{5^x}} \\over {{5^x} + 5}}$$ ..... (i)<br><br>$$f(2 - x) = {{{5^{2 - x}}} \\over {{5^{2 - x}} + 5}}$$<br><br>$$f(2 - x) = {5 \\over {{5^x} + 5}}$$ .... (ii)<br><br>Adding equation (i) and (ii) <br><br>$$f(x) + f(2 - x) = 1$$<br><br>$$f\\left( {{1 \\over {20}}} \\right) + f\\left( {{{39} \\over {20}}} \\right) = 1$$<br><br>$$f\\left( {{2 \\over {20}}} \\right) + f\\left( {{{38} \\over {20}}} \\right) = 1$$<br><br>$$\\eqalign{\n  &amp; :  \\cr \n  &amp; : \\cr} $$<br><br>$$f\\left( {{{19} \\over {20}}} \\right) + f\\left( {{{21} \\over {20}}} \\right) = 1$$<br><br>and $$f\\left( {{{20} \\over {20}}} \\right) = f(1) = {1 \\over 2}$$<br><br>$$ \\therefore $$ Sum = $$19 + {1 \\over 2} = {{39} \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krxhvhxq",
@@ -661,7 +661,7 @@
     "difficulty": "medium",
     "solution": "f(x) = cos$$\\lambda$$x<br><br>$$\\because$$ $$f\\left( {{1 \\over 2}} \\right)$$ = $$-$$1<br><br>So, $$-$$1 = cos$${\\lambda  \\over 2}$$<br><br>$$\\Rightarrow$$ $$\\lambda$$ = 2$$\\pi$$<br><br>Thus f(x) = cos2$$\\pi$$x<br><br>Now k is natural number<br><br>Thus f(k) = 1<br><br>$$\\sum\\limits_{k = 1}^{20} {{1 \\over {\\sin k\\sin (k + 1)}} = {1 \\over {\\sin 1}}\\sum\\limits_{k = 1}^{20} {\\left[ {{{\\sin \\left( {(k + 1) - k} \\right)} \\over {\\sin k.\\sin (k + 1)}}} \\right]} } $$<br><br>$$ = {1 \\over {\\sin 1}}\\sum\\limits_{k = 1}^{20} {(\\cot k - \\cot (k + 1)} $$)<br><br>$$ = {{\\cot 1 - \\cot 21} \\over {\\sin 1}} = \\cos e{c^2}1\\cos ec(21).\\sin 20$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ks0d47kv",
@@ -700,7 +700,7 @@
     "difficulty": "medium",
     "solution": "f(m + n) = f(m) + f(n)<br><br>Put m  = 1, n = 1<br><br>f(2) = 2f(1)<br><br>Put m = 2, n = 1<br><br>f(3) = f(2) + f(1) = 3f(1)<br><br>Put m = 3, n = 3<br><br>f(6) = 2f(3) $$\\Rightarrow$$ f(3) = 9<br><br>$$\\Rightarrow$$ f(1) = 3, f(2) = 6<br><br>f(2) . f(3) = 6 $$\\times$$ 9 = 54",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "y60yF50ujcqbj141JW1kjzxlzyc",
@@ -736,7 +736,7 @@
     "solution": "The given function f : [0, 1] $$ \\to $$ R be define by<br><br>$$f(x) = {{{4^x}} \\over {{4^x} + 2}}$$<br><br>$$ \\because $$ $$f(1 - x) = {{{4^{1 - x}}} \\over {{4^{1 - x}} + 2}} = {2 \\over {2 + {4^x}}}$$<br><br>$$ \\therefore $$ $$f(x) + f(1 - x) = {{{4^x}} \\over {{4^x} + 2}} + {2 \\over {2 + {4^x}}}$$<br><br>$$ = {{{4^x} + 2} \\over {{4^x} + 2}}$$<br><br>So, f(x) + f(1 $$-$$ x) = 1 .....(i)<br><br>$$ \\therefore $$ $$f\\left( {{1 \\over {40}}} \\right) + f\\left( {{2 \\over {40}}} \\right) + f\\left( {{3 \\over {40}}} \\right) + ... + f\\left( {{{39} \\over {40}}} \\right) - f\\left( {{1 \\over 2}} \\right)$$<br><br>$$ = \\left[ {f\\left( {{1 \\over {40}}} \\right) + f\\left( {{{39} \\over {40}}} \\right)} \\right] + \\left[ {f\\left( {{2 \\over {40}}} \\right) + f\\left( {{{38} \\over {40}}} \\right)} \\right] + ... + \\left[ {f\\left( {{{18} \\over {40}}} \\right) + f\\left( {{{22} \\over {40}}} \\right)} \\right] + \\left[ {f\\left( {{{19} \\over {40}}} \\right) + f\\left( {{{21} \\over {40}}} \\right)} \\right] + \\left[ {f\\left( {{{20} \\over {40}}} \\right) - f\\left( {{1 \\over 2}} \\right)} \\right]$$<br><br>$$ = \\{ 1 + 1 + ... + 1 + 1\\}  + f\\left( {{1 \\over 2}} \\right) - f\\left( {{1 \\over 2}} \\right)$$\n<br><br> $$ = \\{ 1 + 1 + ... + 1 + 1\\}$$(19 times)\n{from Eq. (i)}<br><br>= 19.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "ePlbTymyzJ7Eee4VUz1kk40ff1i",
@@ -754,7 +754,7 @@
     "solution": "The given function f : R $$ \\to $$ R be defined by<br><br>$$f(\\theta ) = {(\\sin \\theta  + \\cos \\theta )^2} + {(\\sin \\theta  - \\cos \\theta )^4}$$<br><br>$$ = 1 + \\sin 2\\theta  + {(1 - \\sin 2\\theta )^2}$$<br><br>$$ = 1 + \\sin 2\\theta  + 1 + {\\sin ^2}2\\theta  - 2\\sin 2\\theta $$<br><br>$$ = {\\sin ^2}2\\theta  - \\sin 2\\theta  + 2$$<br><br>$$ = {\\left( {\\sin 2\\theta  - {1 \\over 2}} \\right)^2} + {7 \\over 4}$$<br><br>The local minimum of function 'f' occurs when<br><br>$$\\sin 2\\theta  = {1 \\over 2}$$<br><br>$$ \\Rightarrow 2\\theta  = {\\pi  \\over 6},\\,{{5\\pi } \\over 6},\\,{{13\\pi } \\over 6},\\,...$$<br><br>$$ \\Rightarrow \\theta  = {\\pi  \\over {12}},\\,{{5\\pi } \\over {12}},\\,{{13\\pi } \\over {12}},\\,...$$<br><br>but $$\\theta  \\in \\{ {\\lambda _1}\\pi ,\\,{\\lambda _2}\\pi ,\\,...,\\,{\\lambda _r}\\pi \\} $$,<br><br>where $$0 &lt; {\\lambda _1} &lt; .... &lt; {\\lambda _r} &lt; 1$$.<br><br>$$ \\therefore $$ $$\\theta  = {\\pi  \\over {12}},\\,{{5\\pi } \\over {12}}$$<br><br>So, $${\\lambda _1} + ... + {\\lambda _r} = {1 \\over {12}} + {5 \\over {12}} = 0.50$$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "oOLSAdvLWP0U3MIENGjgy2xukez67a9z",
@@ -776,7 +776,7 @@
     "difficulty": "medium",
     "solution": "Given f(1) = 2 ; \n<br><br>f(x + y) = f(x) + f(y)\n\n\n<br><br>When x = y = 1 $$ \\Rightarrow $$\nf(2) = 2 + 2 = 4\n\n<br><br>When x = 2, y = 1 $$ \\Rightarrow $$ f(3) = 4 + 2 = 6\n<br><br> g(n) = $$\\sum\\limits_{k = 1}^{\\left( {n - 1} \\right)} {f\\left( k \\right)} $$\n<br><br>= f(1) + f(2) +.........+ f(n - 1)\n<br><br>= 2 + 4 + 6 + ......+ 2(n - 1)\n<br><br>= 2 $$ \\times $$ $$\\frac{\\left( n-1\\right)  \\left( n\\right)  }{2} $$\n<br><br>= n<sup>2</sup> - n\n<br><br> Given g(n) = 20\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup>– n = 20\n\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> – n – 20 = 0\n\n<br><br>$$ \\Rightarrow $$ n = 5",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "xRBLs2qkeW9u7OBLNTjgy2xukg4n20of",
@@ -815,7 +815,7 @@
     "difficulty": "medium",
     "solution": "f(x + y) = f(x)f(y)\n<br><br>$$\\sum\\limits_{x = 1}^\\infty  {f\\left( x \\right)}  = 2$$\n<br><br>$$ \\Rightarrow $$ f(1) + f(2) + f(3) + ........$$\\infty $$ = 2 ....(1)\n<br><br>On f(x + y) = f(x) f(y)\n<br>* Put x = 1, y = 1\n<br>f(2) = (f(1))<sup>2</sup>\n<br>* Put x = 2, y = 1\n<br>f(3) = f(2). f(1) = f((1))<sup>3</sup>\n<br>* Put x = 2, y = 2\n<br>f(4) = f((2))<sup>2</sup> = f((1))<sup>4</sup>\n<br><br>Now put these values in equation (1)\n<br><br> f(1) + f((1))<sup>2</sup> + f((1))<sup>3</sup> + ....... = 2\n<br><br>$$ \\Rightarrow $$ $${{f\\left( 1 \\right)} \\over {1 - f\\left( 1 \\right)}}$$ = 2\n<br><br>$$ \\Rightarrow $$ f(1) = $${2 \\over 3}$$\n<br><br>Now f(2) = $${\\left( {{2 \\over 3}} \\right)^2}$$\n<br><br>and f(4) = $${\\left( {{2 \\over 3}} \\right)^4}$$\n<br><br>$$ \\therefore $$ $${{f\\left( 4 \\right)} \\over {f\\left( 2 \\right)}}$$\n<br><br>= $${{{{\\left( {{2 \\over 3}} \\right)}^4}} \\over {{{\\left( {{2 \\over 3}} \\right)}^2}}}$$ = $${4 \\over 9}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "kmmWFv4B3ZGx0zoZFq7k9k2k5khqkpe",
@@ -837,7 +837,7 @@
     "difficulty": "medium",
     "solution": "R<sub>1</sub> $$ \\to $$ R<sub>1</sub> + R<sub>3</sub> – 2R<sub>2</sub>\n<br><br>f(x) = $$\\left| {\\matrix{\n   {a + c - 2b} &amp; 0 &amp; 0  \\cr \n   {x + b} &amp; {x + 3} &amp; {x + 2}  \\cr \n   {x + c} &amp; {x + 4} &amp; {x + 3}  \\cr \n\n } } \\right|$$\n<br><br>= (a + c – 2b) ((x + 3)<sup>2</sup> – (x + 2)(x + 4))\n<br><br>= x<sup>2</sup> + 6x + 9 – x<sup>2</sup> – 6x – 8 = 1\n<br><br>$$ \\therefore $$ f(x) = 1\n<br><br>$$ \\Rightarrow $$  f(50) = 1",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "yAWIEwUDWnjs2sVq2ejMn",
@@ -859,7 +859,7 @@
     "difficulty": "medium",
     "solution": "f<sub>4</sub>(x) $$-$$ f<sub>6</sub>(x)\n<br><br>=  $${1 \\over 4}$$ (sin<sup>4</sup> x + cos<sup>4</sup> x) $$-$$ $${1 \\over 6}$$ (sin<sup>6</sup> x + cos<sup>6</sup> x)\n<br><br>= $${1 \\over 4}$$ (1$$-$$ $${1 \\over 2}$$ sin<sup>2</sup> 2x) $$-$$ $${1 \\over 6}$$  (1 $$-$$ $${3 \\over 4}$$ sin<sup>2</sup> 2x) = $${1 \\over 12}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "7T8qHanHgmWJe870g3Bhs",
@@ -881,7 +881,7 @@
     "difficulty": "easy",
     "solution": "Given, $$f(x) = {\\log _e}\\left( {{{1 - x} \\over {1 + x}}} \\right)$$\n<br><br>$$f\\left( {{{2x} \\over {1 + {x^2}}}} \\right)$$ = $$\\ln \\left( {{{1 - {{2x} \\over {1 + {x^2}}}} \\over {1 + {{2x} \\over {1 + {x^2}}}}}} \\right)$$\n<br><br>= $$\\ln \\left( {{{{x^2} - 2x + 1} \\over {{x^2} + 2x + 1}}} \\right)$$\n<br><br>= $$\\ln {\\left( {{{1 - x} \\over {1 + x}}} \\right)^2}$$\n<br><br>= $$2\\ln \\left( {{{1 - x} \\over {1 + x}}} \\right)$$\n<br><br>= 2f(x)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "vZDInSndsBCwo3mCTX18hoxe66ijvwp4erx",
@@ -903,7 +903,7 @@
     "difficulty": "medium",
     "solution": "Given ƒ(1) = 2\n<br><br> and ƒ(x + y) = ƒ(x)ƒ(y)\n<br><br>When x = 1 and y = 1 then,\n<br><br>ƒ(1 + 1) = ƒ(1)ƒ(1)\n<br><br>$$ \\Rightarrow $$ f(2) = (f(1))<sup>2</sup> = 2<sup>2</sup>\n<br><br>Also when x = 2 and y = 1 then,\n<br><br>ƒ(2 + 1) = ƒ(2)ƒ(1)\n<br><br>$$ \\Rightarrow $$ f(3) = 2<sup>3</sup>\n<br><br>$$ \\therefore $$ Similarly f(4) = 2<sup>4</sup>\n<br>.\n<br>.\n<br>.\n<br>.\n<br><br>f(x) = 2<sup>x</sup>\n<br><br>$$ \\therefore $$ f(a + k) = 2<sup>a + k</sup>\n<br><br>Now given,\n<br><br>$$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$\n<br><br>$$ \\Rightarrow $$ $$\\sum\\limits_{k = 1}^{10} {{2^{a + k}}} $$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^{a + 1}} + {2^{a + 2}} + .... + {2^{a + 10}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a}\\left[ {2 + {2^2} + .... + {2^{10}}} \\right]$$ =  $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} \\times {{2\\left( {{2^{10}} + 1} \\right)} \\over {2 - 1}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} = 8$$\n<br><br>$$ \\Rightarrow $$ $$a$$ = 3",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "2v2CovVtbLHzzXns",
@@ -925,7 +925,7 @@
     "difficulty": "medium",
     "solution": "f(x) = ax<sup>2</sup> + bx + c\n<br><br>f(1) = a + b + c = 3 $$ \\Rightarrow $$ f (1) = 3\n<br><br>Now f(x + y) = f(x) + f(y) + xy ...(1)\n<br><br>Put x = y = 1 in eqn (1)\n<br><br>f(2) = f(1) + f(1) + 1\n<br><br>= 2f(1) + 1\n<br><br>$$ \\Rightarrow $$ f(2) = 7\n<br><br>Similarly f(3) = 12\n<br><br>f(4) = 18\n<br><br>$$\\sum\\limits_{n = 1}^{10} {f(n)} $$ = 3 + 7 + 12 + 18 + 25 + 33 + 42 + 52 + 63 + 75 = 330",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "l87cb3gu",
@@ -947,7 +947,7 @@
     "difficulty": "medium",
     "solution": "We have, $f(x)+2 f\\left(\\frac{1}{x}\\right)=3 x, \\quad x \\neq 0$\n&nbsp;&nbsp;$\\ldots$ (i)<br/><br/>\nOn replacing $x$ by $\\frac{1}{x}$ in the above equation, we get<br/><br/>\n$$\n\\begin{aligned}\n& f\\left(\\frac{1}{x}\\right)+2 f(x) =\\frac{3}{x} \\\\\\\\\n\\Rightarrow & \\,\\, 2 f(x)+f\\left(\\frac{1}{x}\\right) =\\frac{3}{x} \\,\\,\\,\\,\\,...(ii)\n\\end{aligned}\n$$<br/><br/>\nOn multiplying Eq. (ii) by 2, we get<br/><br/>\n$$\n4 f(x)+2 f\\left(\\frac{1}{x}\\right)=\\frac{6}{x}\\quad...(iii)\n$$<br/><br/>\nand subtracting Eq. (i) from Eq. (iii), we get<br/><br/>\n$$[4 f(x)+2 f\\left(\\frac{1}{x}\\right)] - [f(x)+2 f\\left(\\frac{1}{x}\\right)]=\\frac{6}{x} - 3x$$<br/><br/>\n$\\Rightarrow {3 f(x)=\\frac{6}{x}-3 x}$<br/><br/>\n$\\Rightarrow f(x)=\\frac{2}{x}-x$<br/><br/>\nNow, consider $\\quad f(x)=f(-x)$<br/><br/>\n$$\n\\begin{aligned}\n&\\Rightarrow \\frac{2}{x}-x =-\\frac{2}{x}+x \\\\\\\\\n&\\Rightarrow \\frac{4}{x} =2 x \\\\\\\\\n&\\Rightarrow 2 x^2 =4 \\\\\\\\\n&\\Rightarrow x^2 =2 \\\\\\\\\n&\\Rightarrow x =\\pm \\sqrt{2}\n\\end{aligned}\n$$<br/><br/>\nHence, $S$ contains exactly two elements.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ky89dah6",
@@ -993,7 +993,7 @@
     "solution": "<p>$$f(\\cos 4\\theta ) = {2 \\over {2 - {{\\sec }^2}\\theta }}$$</p>\n<p>Let $$\\cos 4\\theta  = t$$</p>\n<p>$$ \\Rightarrow 2{\\cos ^2}2\\theta  - 1 = t \\Rightarrow {\\cos ^2}2\\theta  = {2 \\over 3}$$</p>\n<p>For $$t = {1 \\over 3}$$ we have $${\\cos ^2}2\\theta  = {2 \\over 3}$$</p>\n<p>$$\\cos 2\\theta  = \\sqrt {{2 \\over 3}} $$ or $$\\cos 2\\theta  =  - \\sqrt {{2 \\over 3}} $$</p>\n<p>$$f(\\cos 4\\theta ) = {2 \\over {2 - {1 \\over {{{\\cos }^2}\\theta }}}} = {{2{{\\cos }^2}\\theta } \\over {2{{\\cos }^2}\\theta  - 1}} = {{1 + \\cos 2\\theta } \\over {\\cos 2\\theta }} = 1 + {1 \\over {\\cos 2\\theta }}$$</p>\n<p>Hence, $$f\\left( {{1 \\over 3}} \\right) = 1 + \\sqrt {{3 \\over 2}} $$ or $$1 - \\sqrt {{3 \\over 2}} $$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgcbvqju",
@@ -1016,7 +1016,7 @@
     "solution": "<p>If $$f''(x)=-f(x)$$</p>\n<p>$$\nf'(x)=g(x)$$</p>\n<p>$$\nf''(x) f'(x)=-f(x) \\cdot g(x)$$</p>\n<p>$$\nf''(x) f'(x)+f(x) \\cdot g(x)=0$$</p>\n<p>$$f''(x) f'(x)+f(x) \\cdot f'(x)=0 \\quad \\because f'(x)=g(x)$$</p>\n<p>$$\\frac{d}{d x}\\left[\\left(f^{\\prime}(x)\\right)^{2}+(f(x))^{2}\\right]=c$$</p>\n<p>$$\\Rightarrow \\quad\\left[f^{\\prime}(x)\\right]^{2}+[f(x)]^{2}=c$$</p>\n<p>$$\\Rightarrow \\quad[f(x)]^{2}+[g(x)]^{2}=$$ Constant</p>\n<p>$$\\Rightarrow \\quad f(x)=$$ Constant</p>\n<p>$$\\because \\quad f(5)=5$$</p>\n<p>Therefore $$ f(10)=5$$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0SD6FFBfLQleiCCW",
@@ -1038,7 +1038,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( {2a - x} \\right) = f\\left( {a - \\left( {x - a} \\right)} \\right)$$\n<br><br>$$ = f\\left( a \\right)f\\left( {x - a} \\right) - f\\left( 0 \\right)f\\left( x \\right)$$\n<br><br>$$ = f\\left( a \\right)f\\left( {x - a} \\right) - f\\left( x \\right)$$\n<br><br>$$ =  - f\\left( x \\right)$$\n<br><br>$$\\left[ {} \\right.$$ as $$x = 0,y = 0,f\\left( 0 \\right) = {f^2}\\left( 0 \\right) - {f^2}\\left( a \\right)$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\, \\Rightarrow {f^2}\\left( a \\right) = 0 \\Rightarrow f\\left( a \\right) = \\left. 0 \\right]$$\n<br><br>$$ \\Rightarrow f\\left( {2a - x} \\right) =  - f\\left( x \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "8TmUW15AHe2hgz5a",
@@ -1060,6 +1060,6 @@
     "difficulty": "easy",
     "solution": "$$f\\left( {x + y} \\right) = f\\left( x \\right) + f\\left( y \\right).$$\n<br><br>Function should be $$f(x)=mx$$ \n<br><br>$$f\\left( 1 \\right) = 7;$$ \n<br><br>$$\\therefore$$  $$m=7,$$ $$f\\left( x \\right) = 7x$$\n<br><br>$$\\sum\\limits_{r = 1}^n {f\\left( r \\right)}  = 7\\sum\\limits_1^n {r = {{7n\\left( {n + 1} \\right)} \\over 2}} $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

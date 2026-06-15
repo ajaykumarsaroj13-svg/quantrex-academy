@@ -37,7 +37,7 @@
     "difficulty": "medium",
     "solution": "<p>For a single circular turn of radius $r$ carrying current $I$, the magnetic moment is :</p>\n<p>$$ \\mathrm{m}=\\mathrm{I} \\cdot \\mathrm{~A}=\\mathrm{I}\\left(\\pi \\mathrm{r}^2\\right) $$</p>\n<p>In a flat coil where the turns are wound from $\\mathrm{r}_1$ to $\\mathrm{r}_2$, the number of turns per unit radial length is $\\mathrm{n}=\\frac{\\mathrm{N}}{\\mathrm{r}_2-\\mathrm{r}_1}$. The total magnetic moment ( M ) is the integral of the moments of all infinitesimal turns of thickness dr :</p>\n<p>$$ M=\\int\\limits_{r_1}^{r_2}\\left(I \\pi r^2\\right) \\cdot n d r $$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{M}=\\mathrm{I} \\pi \\mathrm{n} \\int\\limits_{\\mathrm{r}_1}^{\\mathrm{r}_2} \\mathrm{r}^2 \\mathrm{dr}=\\mathrm{I} \\pi\\left(\\frac{\\mathrm{N}}{\\mathrm{r}_2-\\mathrm{r}_1}\\right)\\left[\\frac{\\mathrm{r}^3}{3}\\right]_{\\mathrm{r}_1}^{\\mathrm{r}_2}$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{M}=\\frac{\\mathrm{NI} \\pi}{3\\left(\\mathrm{r}_2-\\mathrm{r}_1\\right)}\\left(\\mathrm{r}_2^3-\\mathrm{r}_1^3\\right) $$</p>\n<p>Using the algebraic identity $r_2^3-r_1^3=\\left(r_2-r_1\\right)\\left(r_2^2+r_1^2+r_1 r_2\\right)$ :</p>\n<p>$$ \\mathrm{M}=\\frac{\\mathrm{NI} \\pi}{3}\\left(\\mathrm{r}_1^2+\\mathrm{r}_2^2+\\mathrm{r}_1 \\mathrm{r}_2\\right) $$</p>\n<p>Substituting the values, where number of turns is $\\mathrm{N}=200$, the current is $\\mathrm{I}=20 \\mathrm{~mA}=20 \\times 10^{-3} \\mathrm{~A}$, the inner radius of coil is $\\mathrm{r}_1=3 \\mathrm{~cm}=0.03 \\mathrm{~m}$ and the outer radius is $\\mathrm{r}_2=6 \\mathrm{~cm}=0.06 \\mathrm{~m}$</p>\n<p>$$ \\mathrm{M}=\\frac{200 \\times 20 \\times 10^{-3} \\times 3.14}{3}\\left(0.03^2+0.06^2+0.03 \\times 0.06\\right) $$</p>\n<p>$$\\Rightarrow $$ $M=\\frac{4 \\times 3.14}{3}(0.0009+0.0036+0.0018)$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{M}=\\frac{12.56}{3}(0.0063)=12.56 \\times 0.0021$</p>\n<p>$$\\Rightarrow $$ $$ M=0.026376 \\approx 2.64 \\times 10^{-2} A . m^2=\\alpha \\times 10^{-2} A . m^2 \\Rightarrow \\alpha=2.64 $$</p>\n<p>Therefore, the value of $\\alpha$ is 2.64 . </p>\n<p>Thus, the correct option is (B).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mawo9k4x",
@@ -128,7 +128,7 @@
     "difficulty": "easy",
     "solution": "$\\because \\theta=\\left(\\frac{N B A}{K}\\right) I$\n<br/><br/>\n$$\n\\begin{aligned}\nA & =\\frac{\\theta K}{N B I} \\\\\\\\\n& =\\frac{0.05 \\times 4 \\times 10^{-5}}{(200) \\times(0.01) \\times\\left(10 \\times 10^{-3}\\right)} \\\\\\\\\n& =1 \\mathrm{~cm}^{2}\n\\end{aligned}\n$$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldr26gfm",
@@ -150,7 +150,7 @@
     "difficulty": "easy",
     "solution": "<p>$$M_A=M_B$$</p>\n<p>$${I_A}{N_A}\\left( {\\pi r_A^2} \\right) = {I_B}{N_B}\\left( {\\pi r_B^2} \\right)$$</p>\n<p>$${I_A}{N_A} = 4{I_B}{N_B}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldpkb8vo",
@@ -172,7 +172,7 @@
     "difficulty": "medium",
     "solution": "Magnetic field in the Solenoid,\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{B}=\\mu_0 \\mu_r \\mathrm{nI} \\\\\\\\\n& \\text { Magnetic flux, } \\phi=\\mathrm{N}(\\mathrm{BA}) \\\\\\\\\n& \\phi=N\\left(\\mu_0 \\mu_r n I A\\right) \\\\\\\\\n& \\Rightarrow 4 \\pi \\times 10^{-6}=400\\left(4 \\pi \\times 10^{-7} \\mu_r \\times \\frac{400}{0.4} \\times 0.4 \\times 2 \\times 10^{-4}\\right) \\\\\\\\\n& \\Rightarrow \\frac{1}{40}=\\mu_r \\times 8 \\times 10^{-2} \\\\\\\\\n& \\Rightarrow \\mu_r=\\frac{100}{320}=\\frac{5}{16}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6i1glss",
@@ -194,7 +194,7 @@
     "difficulty": "easy",
     "solution": "<p>$${\\mu _1} = \\pi r_1^2 \\times {I_1}$$</p>\n<p>$${\\mu _2} = \\pi r_2^2 \\times {I_2}$$</p>\n<p>$$\\therefore$$ $${\\mu _{net}} = ({\\mu _2} - {\\mu _1})\\left( { - \\widehat k} \\right)$$</p>\n<p>$$ = \\pi \\left( {r_2^2 - r_1^2} \\right)I\\left( { - \\widehat k} \\right)$$</p>\n<p>$$ = 3.142 \\times \\left( {{{0.5}^2} - {{0.3}^2}} \\right) \\times 7\\left( { - \\widehat k} \\right)$$</p>\n<p>$$ =  - {7 \\over 2}\\widehat k$$ Am<sup>2</sup></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6p6c1fz",
@@ -284,7 +284,7 @@
     "difficulty": "medium",
     "solution": "For ABCD\n<br><br>$${\\overrightarrow M _1}$$ = abI$$\\widehat k$$\n<br><br>For DEFA\n<br><br>$${\\overrightarrow M _2}$$ = abI$$\\widehat j$$\n<br><br>$$\\overrightarrow M  = {\\overrightarrow M _1} + {\\overrightarrow M _2}$$\n<br><br>= $$abI\\left( {\\widehat k + \\widehat j} \\right)$$\n<br><br>= $$abI\\sqrt 2 \\left( {{{\\widehat k} \\over {\\sqrt 2 }} + {{\\widehat j} \\over {\\sqrt 2 }}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "FIA4lmu30DoiGg7s2bjgy2xukfahce4k",
@@ -306,7 +306,7 @@
     "difficulty": "medium",
     "solution": "By energy conservation <br><br>U<sub>i</sub> + K<sub>i</sub> = U<sub>f</sub> + K<sub>f</sub><br><br>$$ \\Rightarrow $$ $$ - MB\\,\\cos 90^\\circ  + 0 =  - MB\\,\\cos 30^\\circ  + {1 \\over 2}I{\\omega ^2}$$<br><br>$$ \\Rightarrow $$ $$MB{{\\sqrt 3 } \\over 2}$$ $$ = {1 \\over 2}I{\\omega ^2}$$<br><br>$$ \\Rightarrow $$ $$\\omega  =$$$$\\sqrt {{{MB\\sqrt 3 } \\over I}}   $$\n<br><br>= $$\\sqrt {{{20 \\times 4 \\times \\sqrt 3 } \\over {0.8}}} $$ = $$10\\sqrt {\\sqrt 3 }  = 10{\\left( 3 \\right)^{1/4}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "NHTCnOkEnWQEmeBkFljgy2xukfl3q9zw",
@@ -328,7 +328,7 @@
     "difficulty": "medium",
     "solution": "Given, V = 10<sup>–3</sup> m<sup>3</sup>\n = Al\n<br><br>I = 0.5A\n<br><br>$$\\mu $$<sub>r</sub> = 1000\n<br><br>n = 10 turns/cm = $${{10} \\over {{{10}^{ - 2}}}}$$ turn/m = 1000 turn/m\n<br><br>Magnetic moment, M = NIA($$\\mu $$<sub>r</sub> - 1)\n<br><br>= (nl)IA($$\\mu $$<sub>r</sub> - 1)\n<br><br>= nI(Al)($$\\mu $$<sub>r</sub> - 1)\n<br><br>= 1000 × 0.5 × 10<sup>–3</sup> (1000 – 1)\n<br><br>= 0.5 × (999) = 499.5\n<br><br>$$ \\simeq $$ 500 = 5 $$ \\times $$ 10<sup>2</sup> Am<sup>2</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "7ex2GeeMpa163y6Q0Cjgy2xukg09scko",
@@ -350,7 +350,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/jgy2xukgm7h2se/2e17516b-bb7c-4465-a8e0-07db58eb6695/c37b07e0-1527-11eb-8293-3b6cc591631c/file-jgy2xukgm7h2sf-392w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 6th September Evening Slot Physics - Magnetic Effect of Current Question 154 English Explanation\">\n<br>Magnetic dipole moment\n<br><br>M = iA\n<br><br>$$ \\Rightarrow $$ M = $$\\left( {{q \\over T}} \\right) \\times \\pi {R^2}$$\n<br><br>= $${{{q\\pi {R^2}} \\over {\\left( {{{2\\pi r} \\over v}} \\right)}}}$$ = $${{qvR} \\over 2}$$\n<br><br>$$ \\Rightarrow $$ M = $${{qv} \\over 2} \\times {{vm} \\over {qB}}$$\n<br><br>As you can see from the figure, direction of magnetic moment(M) is opposite to magnetic field.\n<br><br>$$ \\therefore $$ $$\\overrightarrow M  =  - {{m{v^2}} \\over {2B}}\\widehat B$$\n<br><br>= $$ - {{m{v^2}} \\over {2B}}\\left( {{{\\overrightarrow B } \\over B}} \\right)$$\n<br><br>= $$ - {{m{v^2}} \\over {2{B^2}}}\\overrightarrow B $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "R1fpR3Et0NXNzqMI3k3rsa0w2w9jwziets2",
@@ -372,7 +372,7 @@
     "difficulty": "medium",
     "solution": "Let the given square loop has side $a$, then its magnetic dipole moment will be\n<br><br>$$\nm=I a^2\n$$\n<br><br>When square is converted into a circular loop of radius $r$,\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lj670g6j/203e8b10-11ee-48e9-971d-90abd28ae946/da751bb0-1075-11ee-a86a-a55b30b450d2/file-6y3zli1lj670g6k.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lj670g6j/203e8b10-11ee-48e9-971d-90abd28ae946/da751bb0-1075-11ee-a86a-a55b30b450d2/file-6y3zli1lj670g6k.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2019 (Online) 10th April Evening Slot Physics - Magnetic Effect of Current Question 178 English Explanation\">\n<br>Then, wire length will be same in both area,\n<br><br>$$\n\\Rightarrow 4 a=2 \\pi r \\Rightarrow r=\\frac{4 a}{2 \\pi}=\\frac{2 a}{\\pi}\n$$\n<br><br>Hence, area of circular loop formed is, $A^{\\prime}=\\pi r^2$\n<br><br>$$\n=\\pi\\left(\\frac{2 a}{\\pi}\\right)^2=\\frac{4 a^2}{\\pi}\n$$\n<br><br>Magnitude of magnetic dipole moment of circular loop will be\n<br><br>$$\nm^{\\prime}=I A^{\\prime}=I \\frac{4 a^2}{\\pi}\n$$\n<br><br>Ratio of magnetic dipole moments of both shapes is,\n<br><br>$$\n\\begin{aligned}\n \\frac{m^{\\prime}}{m}=\\frac{I \\cdot \\frac{4 a^2}{\\pi}}{I a^2}=\\frac{4}{\\pi} \\\\\\\\\n\\Rightarrow m^{\\prime}  =\\frac{4 m}{\\pi}(\\mathrm{A}-\\mathrm{m})\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "zctkNho8M3hSAoizBFZkd",
@@ -394,7 +394,7 @@
     "difficulty": "medium",
     "solution": "T = $$2\\pi \\sqrt {{1 \\over {\\mu B}}} $$\n<br><br>T<sub>h</sub> = $$2\\pi \\sqrt {{{m{R^2}} \\over {\\left( {2\\mu } \\right)B}}} $$\n<br><br>T<sub>C</sub> = $$2\\pi \\sqrt {{{1/2m{R^2}} \\over {\\mu B}}} $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "DWnCemVRIjYUnDTsgPP9j",
@@ -416,7 +416,7 @@
     "difficulty": "medium",
     "solution": "$$ \\because $$ &nbsp;&nbsp;M = NIA\n<br><br>dq = $$\\lambda $$dx&nbsp;&nbsp;&amp;&nbsp;&nbsp; A = $$\\pi $$x<sup>2</sup>\n<br><br>$$\\int {dm}  = \\int {\\left( x \\right){{{\\rho _0}x} \\over \\ell }} \\,dx.\\pi {x^2}$$\n<br><br>M = $${{n{\\rho _0}\\pi } \\over \\ell }.\\int\\limits_0^\\ell  {{x^3}.dx}  = {{n{\\rho _0}\\pi } \\over \\ell }.\\left[ {{{{L^4}} \\over 4}} \\right]$$\n<br><br>M = $${{n{\\rho _0}\\pi {\\ell ^3}} \\over 4}$$  or  $${\\pi  \\over 4}n\\rho {\\ell ^3}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "PizvXf9IurDfSmeCbKck5",
@@ -438,7 +438,7 @@
     "difficulty": "easy",
     "solution": "<p>According to the question, the situation can be drawn as</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l331e86r/c052133d-ed72-466e-96c1-d00bafb15083/12d32430-d1f6-11ec-b83f-ebfea682138a/file-1l331e86s.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l331e86r/c052133d-ed72-466e-96c1-d00bafb15083/12d32430-d1f6-11ec-b83f-ebfea682138a/file-1l331e86s.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2019 (Online) 8th April Morning Slot Physics - Magnetic Effect of Current Question 186 English Explanation\"></p>\n<p>Let the current I is flowing in anti-clockwise direction, then the magnetic moment of the coil is</p>\n<p>m = NIA</p>\n<p>where, N = number of turns in coil</p>\n<p>and A = area of each coil = $$\\pi$$r<sup>2</sup>.</p>\n<p>Its direction is perpendicular to the area of coil and is along Y-axis.</p>\n<p>Then, torque on the current coil is</p>\n<p>$$\\tau  = m \\times B = mB\\sin 90^\\circ  = NIAB$$</p>\n<p>$$ = NI\\pi {r^2}B(N - m)$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "oJqaOE9TjfnZrMmEPPXr2",
@@ -460,7 +460,7 @@
     "difficulty": "easy",
     "solution": "Magnetic moment, \n<br><br>$$\\mu $$ = I A\n<br><br>= $${q \\over T}\\left( {\\pi {r^2}} \\right)$$\n<br><br>= $${q \\over {2\\pi /\\omega }}\\left( {\\pi {r^2}} \\right)$$\n<br><br>= $${{qw} \\over {2\\pi }}$$ $$\\left( {\\pi {r^2}} \\right)$$\n<br><br>= $${1 \\over 2}$$ q$$\\omega $$r<sup>2</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "EyqEBAMhZ9COVcq4",
@@ -482,7 +482,7 @@
     "difficulty": "medium",
     "solution": "For stable equilibrium $$\\mathop M\\limits^ \\to  ||\\mathop B\\limits^ \\to  $$\n<br><br>For unstable equilibrium $$\\mathop M\\limits^ \\to  ||\\left( { - \\mathop B\\limits^ \\to  } \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l1ny9ctb",
@@ -505,7 +505,7 @@
     "solution": "<p>Let the point charge Q is moving in a circle of constant radius R in anticlockwise direction as shown in the figure.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l1qhsuc3/9bc4b3b9-19e2-46a3-b114-c31a0a6a2c48/d381be30-b743-11ec-885a-17f955768420/file-1l1qhsuc4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l1qhsuc3/9bc4b3b9-19e2-46a3-b114-c31a0a6a2c48/d381be30-b743-11ec-885a-17f955768420/file-1l1qhsuc4.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2013 Paper 2 Offline Physics - Magnetism Question 29 English Explanation\"></p>\n<p>The magnetic flux through the circular loop at time t is given by $$\\phi  = B(\\overrightarrow t )\\,.\\,(\\pi {R^2}\\widehat z)\\, = \\pi B(t){R^2}$$. Faraday's law gives the induced emf e as</p>\n<p>$$e =  - {{d\\phi } \\over {dt}} =  - \\pi {R^2}{{dB(t)} \\over {dt}} =  - \\pi {R^2}B$$ ..... (1)</p>\n<p>Lenz's law gives the direction of induced current and hence electric field $$(\\overrightarrow E )$$ as clockwise. The induced emf is related to $$\\overrightarrow E $$ by</p>\n<p>$$e = \\oint {\\overrightarrow E .\\,d\\overrightarrow l  =  - E(2\\pi R)} $$ ..... (2)</p>\n<p>Eliminate e from equations (1) and (2) to get E = BR/2.</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l1nyiuvs",
@@ -528,7 +528,7 @@
     "solution": "<p>$${M \\over L} = {Q \\over {2m}}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l1qhps3o/16ab49a6-84ec-4449-9f57-77bf98c855d8/7e5a9440-b743-11ec-885a-17f955768420/file-1l1qhps3p.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l1qhps3o/16ab49a6-84ec-4449-9f57-77bf98c855d8/7e5a9440-b743-11ec-885a-17f955768420/file-1l1qhps3p.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2013 Paper 2 Offline Physics - Magnetism Question 30 English Explanation\"></p>\n<p>$$\\therefore$$ $$M = \\left( {{Q \\over {2m}}} \\right)L$$</p>\n<p>$$ \\Rightarrow M \\propto L$$, where $$\\gamma  = {Q \\over {2m}}$$</p>\n<p>$$\\left( {{Q \\over {2m}}} \\right)(I\\omega )$$</p>\n<p>$$ = \\left( {{Q \\over {2m}}} \\right)(m{R^2}\\omega ) = {{Q\\omega {R^2}} \\over 2}$$</p>\n<p>Induced electric field is opposite. Therefore,</p>\n<p>$$\\omega ' = \\omega  - \\alpha t$$</p>\n<p>$$\\alpha  = {\\tau  \\over I} = {{(QE)R} \\over {m{R^2}}} = {{(Q)\\left( {{{BR} \\over 2}} \\right)R} \\over {m{R^2}}} = {{QB} \\over {2m}}$$</p>\n<p>$$\\therefore$$ $$\\omega ' = \\omega  - {{QB} \\over {2m}}.1 = \\omega  - {{QB} \\over {2m}}$$</p>\n<p>$${M_f} = {{Q\\omega '{R^2}} \\over 2} = Q\\left( {\\omega  - {{QB} \\over {2m}}} \\right){{{R^2}} \\over 2}$$</p>\n<p>$$\\therefore$$ $$\\Delta M = {M_f} - {M_i} =  - {{{Q^2}B{R^2}} \\over {4m}}$$</p>\n<p>$$M =  - \\gamma {{QB{R^2}} \\over 2}$$ (as $$\\gamma  = {Q \\over {2m}}$$)</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l22sh5vs",
@@ -551,7 +551,7 @@
     "solution": "<p>Area of the loop</p>\n<p>$$A = \\left[ {{a^2} + 4 \\times {{\\pi {{\\left( {{a \\over 2}} \\right)}^2}} \\over 2}} \\right]\\widehat k = \\left[ {{a^2} + {{\\pi {a^2}} \\over 2}} \\right]\\widehat k$$</p>\n<p>Therefore, the magnetic moment of the current loop is</p>\n<p>$$M = I \\times A = I\\left[ {{a^2} + {{\\pi {a^2}} \\over 2}} \\right]\\widehat k = \\left[ {1 + {\\pi  \\over 2}} \\right]I{a^2}\\widehat k$$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mguone81",
@@ -574,6 +574,6 @@
     "solution": "<p>(A) Any static charge produces electric field $\\forall$ invariant with time. Uniformly charged dielectric does the same.</p>\n<p>(B) Rotating charged behaves like a current. hence, magnetic field is produced around the ring and also if there is current in rotating ring, ring has magnetic moment.</p>\n<p>(C) Since, net charge is zero there will be no time independent electric field. The current produces magnetic field and magnetic moment.</p>\n<p>(D) A changing magnetic field will be produced. This will create a induced electric field.</p>\n<p>Also a changing magnetic moment will be produced.</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

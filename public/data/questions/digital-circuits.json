@@ -19,7 +19,7 @@
     "difficulty": "easy",
     "solution": "<p>The given logic gate is,</p>\n<p><img alt=\"JEE Main 2026 (Online) 22nd January Evening Shift Physics - Semiconductor Question 16 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlxig2y6/8e9f0f5e-e991-409b-9b5d-63579da6f278/f38910e0-0fcb-11f1-a394-37c86c2244c4/file-6y3zli1mlxig2y7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlxig2y6/8e9f0f5e-e991-409b-9b5d-63579da6f278/f38910e0-0fcb-11f1-a394-37c86c2244c4/file-6y3zli1mlxig2y7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Gate 1 is an AND gate for the inputs A and $\\mathrm{B}, \\Rightarrow \\mathrm{Y}_1=\\mathrm{A} \\cdot \\mathrm{B}$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:400px;\">\n\n  <tbody><tr>\n\n    <th colspan=\"2\">Input</th>\n\n    <th>Output</th>\n\n  </tr>\n\n  <tr>\n\n    <th>A</th>\n\n    <th>B</th>\n\n    <th>Y<sub>1</sub> = A · B</th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>Gate 2 is an OR gate for the inputs C and $\\mathrm{D}, \\Rightarrow \\mathrm{Y}_2=\\mathrm{C}+\\mathrm{D}$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:400px;\">\n\n  <tbody><tr>\n\n    <th colspan=\"2\">Input</th>\n\n    <th>Output</th>\n\n  </tr>\n\n  <tr>\n\n    <th>C</th>\n\n    <th>D</th>\n\n    <th>Y<sub>2</sub> = C + D</th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>Gate 3 is a NOT gate for which the input is $Y_1$ (the output of gate 1), $Y_3=\\overline{Y_1}$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:350px;\">\n\n  <tbody><tr>\n\n    <th>Input</th>\n\n    <th>Output</th>\n\n  </tr>\n\n  <tr>\n\n    <th>Y<sub>1</sub></th>\n\n    <th>Y<sub>3</sub> = <span style=\"text-decoration:overline;\">Y<sub>1</sub></span></th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n</tbody></table>\n<p>Gate 4 is an AND gate for inputs $Y_2$ and $Y_3, Y_4=Y_3 \\cdot Y_2$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:400px;\">\n\n  <tbody><tr>\n\n    <th colspan=\"2\">Input</th>\n\n    <th>Output</th>\n\n  </tr>\n\n  <tr>\n\n    <th>Y<sub>2</sub></th>\n\n    <th>Y<sub>3</sub></th>\n\n    <th>Y<sub>4</sub> = Y<sub>2</sub> + Y<sub>3</sub></th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n</tbody></table>\n<p>Gate 5 is a NOT gate which inverts the output of Gate 4 to give the final output, $Y=\\overline{\\mathrm{Y}_4}$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:350px;\">\n\n  <tbody><tr>\n\n    <th>Input</th>\n\n    <th>Output</th>\n\n  </tr>\n\n  <tr>\n\n    <th>Y<sub>4</sub></th>\n\n    <th>Y = <span style=\"text-decoration:overline;\">Y<sub>4</sub></span></th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>So, the final truth table is,</p>\n<table border=\"1\" cellpadding=\"10\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:450px;\">\n\n  <tbody><tr>\n\n    <th>A</th>\n\n    <th>B</th>\n\n    <th>C</th>\n\n    <th>D</th>\n\n    <th>Output Y</th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>Hence, the correct option is (A).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml89h7ud",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 22nd January Morning Shift Physics - Semiconductor Question 17 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mm2crsxj/94428fcb-20aa-40f3-a9fb-9cdae2608e10/adfa9470-1275-11f1-93d5-25d452404dca/file-6y3zli1mm2crsxk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mm2crsxj/94428fcb-20aa-40f3-a9fb-9cdae2608e10/adfa9470-1275-11f1-93d5-25d452404dca/file-6y3zli1mm2crsxk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Gate 1 is a NOR gate with both inputs tied together to A. A NOR gate with shorted inputs acts as a NOT gate.</p>\n<p>$$ Y_1=\\overline{A+A}=\\bar{A} $$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:600px;\">\n\n  <tbody><tr>\n\n    <th colspan=\"2\" style=\"text-align:left;\">Inputs</th>\n\n    <th>\n\n      Output, Y<sub>1</sub> = \n\n      <span style=\"text-decoration:overline;\">A+ A</span>  \n\n      = <span style=\"text-decoration:overline;\">A</span>\n\n    </th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>Gate 2 is also a NOR gate with both inputs tied to B , which acts as a NOT gate.</p>\n<p>$$ Y_2=\\overline{B+B}=\\bar{B} $$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:600px;\">\n\n  <tbody><tr>\n\n    <th colspan=\"2\" style=\"text-align:left;\">Inputs</th>\n\n    <th>\n\n      Output, Y<sub>2</sub> = \n\n      <span style=\"text-decoration:overline;\">B+ B</span>  \n\n      = <span style=\"text-decoration:overline;\">B</span>\n\n    </th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>Gate 3 is a NAND gate receiving inputs $Y_1$ and $Y_2$.</p>\n<p>$$ Y_3=\\overline{Y_1 \\cdot Y_2} $$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:900px;\">\n\n  <tbody><tr>\n\n    <th>A</th>\n\n    <th>B</th>\n\n    <th>Y<sub>1</sub> = <span style=\"text-decoration:overline;\">A</span></th>\n\n    <th>Y<sub>2</sub> = <span style=\"text-decoration:overline;\">B</span></th>\n\n    <th>Y<sub>1</sub> · Y<sub>2</sub></th>\n\n    <th>\n\n      $Y_3=\\overline{Y_1 \\cdot Y_2}$\n\n      \n\n    </th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n</tbody></table>\n<p>Gate 4 is a NOR gate receiving inputs C and D .</p>\n<p>$$ Y_4=\\overline{C+D} $$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:800px;\">\n\n  <tbody><tr>\n\n    <th>C</th>\n\n    <th>D</th>\n\n    <th>C + D</th>\n\n    <th>\n\n      Y<sub>4</sub> =\n\n      <span style=\"text-decoration:overline;\">\n\n        C + D\n\n      </span>\n\n    </th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>For the LED to emit light, it must be forward-biased. The anode is connected to output of gate 1 and gate 2, i.e., $Y_3$. The cathode is connected to the output of gate 4 , i.e., $Y_4$.</p>\n<p>To achieve forward bias in a digital logic circuit, the anode must be at a HIGH voltage (1) and the cathode must be at a LOW voltage (0). Therefore, the required conditions are:</p>\n<p>$$ Y_3=1 * Y_4=0 $$</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family:'Times New Roman', serif; text-align:center; width:1000px;\">\n\n  <tbody><tr>\n\n    <th>Options</th>\n\n    <th>A</th>\n\n    <th>B</th>\n\n    <th>Y<sub>3</sub> (Anode)</th>\n\n    <th>C</th>\n\n    <th>D</th>\n\n    <th>Y<sub>4</sub> (Cathode)</th>\n\n    <th>ONN/OFF</th>\n\n  </tr>\n\n  <tr>\n\n    <td>(1)</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>OFF</td>\n\n  </tr>\n\n  <tr>\n\n    <td>(2)</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>OFF</td>\n\n  </tr>\n\n  <tr>\n\n    <td>(3)</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>OFF</td>\n\n  </tr>\n\n  <tr>\n\n    <td>(4)</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>ONN</td>\n\n  </tr>\n\n</tbody></table>\n<p>In case of 1101 , the anode is HIGH and the cathode is LOW. The LED is forward-biased and ON. </p>\n<p>Therefore, the correct option is (D).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml8t8pqr",
@@ -63,7 +63,7 @@
     "difficulty": "easy",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 23rd January Evening Shift Physics - Semiconductor Question 14 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlahapen/97194d51-8487-4060-ae17-c8519be044f3/6df67af0-0321-11f1-ae98-255c285222ce/file-6y3zli1mlahapeo.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlahapen/97194d51-8487-4060-ae17-c8519be044f3/6df67af0-0321-11f1-ae98-255c285222ce/file-6y3zli1mlahapeo.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The gate I is OR Gate. It receives inputs n and m . Its output is $\\mathrm{Y}_1=\\mathrm{n}+\\mathrm{m}$.</p>\n<p>Gate II is NAND Gate. It receives two inputs, the original input n and the output of the OR gate $\\left(\\mathrm{Y}_1\\right)$. Its output z is the result of an AND operation followed by a NOT operation, $\\mathrm{z}=\\overline{\\mathrm{n} \\cdot(\\mathrm{n}+\\mathrm{m})}$.</p>\n<p>Using Boolean algebra laws :</p>\n<p>$$ \\mathrm{z}=\\overline{\\mathrm{n} \\cdot(\\mathrm{n}+\\mathrm{m})} $$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{z}=\\overline{(\\mathrm{n} \\cdot \\mathrm{n})+(\\mathrm{n} \\cdot \\mathrm{~m})} $$</p>\n<p>Since $\\mathrm{n} \\cdot \\mathrm{n}=\\mathrm{n}$, the expression simplifies to $\\mathrm{z}=\\overline{\\mathrm{n}+(\\mathrm{n} \\cdot \\mathrm{m})}=\\overline{\\mathrm{n}}$</p>\n<p>Truth table,</p>\n<table border=\"1\" cellpadding=\"8\" cellspacing=\"0\" style=\"border-collapse:collapse; font-family: 'Times New Roman', serif; text-align:center;\">\n\n  <tbody><tr>\n\n    <th>n</th>\n\n    <th>m</th>\n\n    <th>Y<sub>1</sub> = n + m</th>\n\n    <th colspan=\"2\">NAND Input</th>\n\n    <th>z = <span style=\"text-decoration:overline;\">n · Y<sub>1</sub></span></th>\n\n  </tr>\n\n  <tr>\n\n    <th></th>\n\n    <th></th>\n\n    <th></th>\n\n    <th>n</th>\n\n    <th>Y<sub>1</sub></th>\n\n    <th></th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n</tbody></table>\n<p>The output z is purely the inverse of input n . When $\\mathrm{n}=0, \\mathrm{z}=1$. When $\\mathrm{n}=1, \\mathrm{z}=0$.</p>\n<p>$$ \\begin{array}{c|c|c} n &amp; m &amp; z \\\\ \\hline 0 &amp; 0 &amp; 1 \\\\ 0 &amp; 1 &amp; 1 \\\\ 1 &amp; 1 &amp; 0 \\\\ 1 &amp; 0 &amp; 0 \\end{array} $$</p>\n<p>Therefore, the correct option is (A).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml98p5k3",
@@ -85,7 +85,7 @@
     "difficulty": "easy",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 24th January Evening Shift Physics - Semiconductor Question 12 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mljaj3e2/f7490ec6-f9df-4a8e-a035-5813e5753f20/052dc4a0-07fa-11f1-a513-671ec3d625a9/file-6y3zli1mljaj3e3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mljaj3e2/f7490ec6-f9df-4a8e-a035-5813e5753f20/052dc4a0-07fa-11f1-a513-671ec3d625a9/file-6y3zli1mljaj3e3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Logic gate 1 is an AND gate with both inputs shorted together to $A$. So, the output $\\left(Y_1\\right)$ is just $A$.</p>\n<p>$$ \\begin{array}{|c|c|c|} \\hline A &amp; B &amp; Y_1 \\\\ \\hline 0 &amp; 0 &amp; 0 \\\\ \\hline 0 &amp; 1 &amp; 0 \\\\ \\hline 1 &amp; 0 &amp; 1 \\\\ \\hline 1 &amp; 1 &amp; 1 \\\\ \\hline \\end{array} $$</p>\n<p>Logic Gate 2 is an NAND gate with inputs A and B and its output is $\\mathrm{Y}_2$.</p>\n<p>$$ \\begin{array}{|c|c|c|c|} \\hline A &amp; B &amp; A \\cdot B &amp; Y_2=\\overline{A \\cdot B} \\\\ \\hline 0 &amp; 0 &amp; 0 &amp; 1 \\\\ \\hline 0 &amp; 1 &amp; 0 &amp; 1 \\\\ \\hline 1 &amp; 0 &amp; 0 &amp; 1 \\\\ \\hline 1 &amp; 1 &amp; 1 &amp; 0 \\\\ \\hline \\end{array} $$</p>\n<p>Logic gate 3 is an AND gate with both inputs shorted to the output of the logic gate 2. So, the output ( $Y_3$ ) is just the output of logic gate 2.</p>\n<p>$$ \\begin{array}{|c|c|c|c|c|} \\hline A &amp; B &amp; A \\cdot B &amp; Y_2=\\overline{A \\cdot B} &amp; Y_3 \\\\ \\hline 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\\\ \\hline 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1 \\\\ \\hline 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\\\ \\hline 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\\\ \\hline \\end{array} $$</p>\n<p>Logic gate 4 is an AND gate that takes the output from the outputs $(\\mathrm{Y})$ of logic gate 1 and the logic gate 3.</p>\n<p>$$ \\begin{array}{|c|c|c|c|c|} \\hline A &amp; B &amp; Y_1 &amp; Y_3 &amp; Y=Y_1 \\cdot Y_3 \\\\ \\hline 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\\\ \\hline 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\\\ \\hline 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\\\ \\hline 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\\\ \\hline \\end{array} $$</p>\n<p>Therefore, the truth table of the given logic gate is,</p>\n<p>$$ \\begin{aligned} &amp;\\begin{array}{|c|c|c|} \\hline A &amp; B &amp; Y \\\\ \\hline 0 &amp; 0 &amp; 0 \\\\ \\hline 0 &amp; 1 &amp; 0 \\\\ \\hline 1 &amp; 0 &amp; 1 \\\\ \\hline 1 &amp; 1 &amp; 0 \\\\ \\hline \\end{array}\\\\ &amp;\\text { Hence, the correct option is (A) } \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml7y32bp",
@@ -107,7 +107,7 @@
     "difficulty": "easy",
     "solution": "<p>For the input voltages at A and B we assume a positive logic system where 0 V represents logic 0 (LOW) and 5 V represents logic 1 (HIGH).</p>\n<p>The supply voltage $\\mathrm{V}_{\\mathrm{dc}}=5 \\mathrm{~V}$ connected through a resistor R to the output C .</p>\n<p>Diodes $\\mathrm{D}_1$ and $\\mathrm{D}_2$ are connected with their n -sides (cathodes) toward the inputs A and B . They act as switches.</p>\n<p>$$ \\mathrm{A}=0 \\mathrm{~V}, \\mathrm{~B}=0 \\mathrm{~V} \\text { (Both LOW) } $$</p>\n<p>Both diodes are forward-biased because the p -side (connected to $\\mathrm{V}_{\\mathrm{dc}}$ ) is at a higher potential than the n -side (connected to 0 V ). Current flows through the diodes to the ground. This pulls the potential at C down to approximately 0 V , i.e., output $\\mathrm{C}=0$ (LOW).</p>\n<p>$$ \\begin{array}{|l|l|l|} \\hline \\text { A } & \\text { B } & \\text { C } \\\\ \\hline 0 & 0 & 0 \\\\ \\hline \\end{array} $$</p>\n<p>$\\mathrm{A}=0 \\mathrm{~V}, \\mathrm{~B}=5 \\mathrm{~V}$ (One LOW, One HIGH)</p>\n<p>Diode $\\mathrm{D}_1$ is forward-biased and conducts current to the 0 V input. This shorts point C to ground through the conducting diode. Diode $\\mathrm{D}_2$ is reverse-biased and does not conduct. Because $\\mathrm{D}_1$ is conducting, point C remains at approximately 0 V , i.e., output $\\mathrm{C}=0$ (LOW).</p>\n<p>$$ \\begin{array}{|l|l|l|} \\hline \\text { A } & \\text { B } & \\text { C } \\\\ \\hline 0 & 1 & 0 \\\\ \\hline \\end{array} $$</p>\n<p>$$ \\mathrm{A}=5 \\mathrm{~V}, \\mathrm{~B}=0 \\mathrm{~V} \\text { (One HIGH, One LOW) } $$</p>\n<p>Diode $\\mathrm{D}_2$ is forward-biased and conducts current to the 0 V input at B . This pulls point C down to ground level, i.e., output $\\mathrm{C}=0$ (LOW).</p>\n<p>$$ \\begin{array}{|l|l|l|} \\hline \\text { A } & \\text { B } & \\text { C } \\\\ \\hline 1 & 0 & 0 \\\\ \\hline \\end{array} $$</p>\n<p>$$ \\mathrm{A}=5 \\mathrm{~V}, \\mathrm{~B}=5 \\mathrm{~V} \\text { (Both HIGH) } $$</p>\n<p>Both n -sides and p -sides of the diodes are at 5 V (or the n -side is higher than the p -side). The diodes do not conduct, i.e., they are OFF. Since no current flows through the resistor R, there is no voltage drop across it. Therefore, point C stays at the supply voltage of 5 V , i.e., output $\\mathrm{C}=1(\\mathrm{HIGH})$.</p>\n<p>$$ \\begin{array}{|l|l|l|} \\hline \\text { A } & \\text { B } & \\text { C } \\\\ \\hline 1 & 1 & 1 \\\\ \\hline \\end{array} $$</p>\n<p>The resulting truth table for the given circuit is,</p>\n<p>$$ \\begin{array}{|l|l|l|} \\hline A & B & C \\\\ \\hline 0 & 0 & 0 \\\\ \\hline 0 & 1 & 0 \\\\ \\hline 1 & 0 & 0 \\\\ \\hline 1 & 1 & 1 \\\\ \\hline \\end{array} $$</p>\n<p>Hence, the logic gate is an AND Gate, where the output is HIGH only when all inputs are HIGH. </p>\n<p><b>Hence, the correct option is (A).</b></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnrqpck1",
@@ -129,7 +129,7 @@
     "difficulty": "medium",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 2nd April Evening Shift Physics - Semiconductor Question 10 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mol3zhxb/3b234faa-3977-445e-ae1c-28f4687b75f7/a4e260f0-445e-11f1-8597-8b52232dc129/file-6y3zli1mol3zhxc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mol3zhxb/3b234faa-3977-445e-ae1c-28f4687b75f7/a4e260f0-445e-11f1-8597-8b52232dc129/file-6y3zli1mol3zhxc.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>All four gates in the circuit are NAND gates.</p>\n<p>For the output $\\mathrm{Z}_1$ and $\\mathrm{Z}_2$ :</p>\n<p>The inputs to these NAND gates are shorted together. When both inputs of a NAND gate are the same, it acts as a NOT gate.</p>\n<p>$$ \\mathrm{Z}_1=\\overline{\\mathrm{X} \\cdot \\mathrm{X}}=\\overline{\\mathrm{X}} $$</p>\n<p></p><table>\n\n  <tbody><tr>\n\n    <th>X</th>\n\n    <th>X</th>\n\n    <th>X · X</th>\n\n    <th>Z<sub>1</sub> = <span style=\"text-decoration: overline;\">X · X</span></th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n</tbody></table><p></p>\n<p>$\\mathrm{Z}_2=\\overline{\\mathrm{Y} \\cdot \\mathrm{Y}}=\\overline{\\mathrm{Y}}$</p>\n<table>\n\n  <tbody><tr>\n\n    <th>Y</th>\n\n    <th>Y</th>\n\n    <th>Y · Y</th>\n\n    <th>Z<sub>2</sub> = <span style=\"text-decoration: overline;\">Y · Y</span></th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n</tbody></table>\n<p>For the output $\\mathrm{Z}_3$ :</p>\n<p>This NAND gate takes the outputs $\\mathrm{Z}_1$ and $\\mathrm{Z}_2$ as its inputs.</p>\n<p>$$ \\mathrm{Z}_3=\\overline{\\mathrm{Z}_1 \\cdot \\mathrm{Z}_2}=\\overline{\\overline{\\mathrm{X}} \\cdot \\overline{\\mathrm{Y}}} $$</p>\n<table>\n\n  <tbody><tr>\n\n    <th>Z<sub>1</sub></th>\n\n    <th>Z<sub>2</sub></th>\n\n    <th>Z<sub>1</sub> · Z<sub>2</sub></th>\n\n    <th>Z<sub>3</sub> = <span style=\"text-decoration: overline;\">Z<sub>1</sub> · Z<sub>2</sub></span></th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>Using De Morgan's Theorem $\\overline{\\mathrm{A} \\cdot \\mathrm{B}}=\\overline{\\mathrm{A}}+\\overline{\\mathrm{B}}$ :</p>\n<p>$$ \\mathrm{Z}_3=\\overline{\\overline{\\mathrm{X}}}+\\overline{\\overline{\\mathrm{Y}}}=\\mathrm{X}+\\mathrm{Y} $$</p>\n<p>So, the gate 3 behaves as an OR gate.</p>\n<p>For the final output $\\mathrm{Z}_4$ :</p>\n<p>The final gate is again a NAND gate with shorted inputs, acting as another NOT gate. It inverts the output $\\mathrm{Z}_3$</p>\n<table>\n\n  <tbody><tr>\n\n    <th>Z<sub>3</sub></th>\n\n    <th>Z<sub>3</sub></th>\n\n    <th>Z<sub>3</sub> · Z<sub>3</sub></th>\n\n    <th>Z<sub>4</sub> = <span style=\"text-decoration: overline;\">Z<sub>3</sub> · Z<sub>3</sub></span></th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n</tbody></table>\n<p>So, output $=\\overline{\\mathrm{Z}_3}=\\overline{\\mathrm{X}+\\mathrm{Y}}$</p>\n<p>The final expression $\\overline{X+Y}$ corresponds to the truth table of a NOR gate.</p>\n<table>\n\n  <tbody><tr>\n\n    <th>X</th>\n\n    <th>Y</th>\n\n    <th>Z<sub>4</sub> (Output)</th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n</tbody></table>\n<p>Therefore, the given circuit works as a NOR gate. </p>\n<p>Hence, the correct option is (D).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhy69",
@@ -151,7 +151,7 @@
     "difficulty": "easy",
     "solution": "<p>Gate 1 is a NOT gate connected to input A . It flips the bits of input A .</p>\n<p>$$ \\begin{array}{|l|l|l|} \\hline \\text { Bit } & \\text { Input A } & \\text { Output of Gate 1 (NOT) } \\\\ \\hline 1^{\\text {st }} & 1 & 0 \\\\ \\hline 2^{\\text {nd }} & 1 & 0 \\\\ \\hline 3^{\\text {rd }} & 0 & 1 \\\\ \\hline 4^{\\text {th }} & 1 & 0 \\\\ \\hline \\end{array} $$</p>\n<p>So, the output of NOT gate is 0010 .</p>\n<p>An AND gate performs a bitwise logical multiplication. The output Y is 1 only if both corresponding input bits are 1 ; otherwise, the output is 0 .</p>\n<p>The inputs to the final NAND gate are the output of the NOT gate ( 0010 ) and the input $\\mathrm{B}=1010$. The Boolean expression for the NAND gate is $Y=\\overline{(N O T A) \\cdot B}$.</p>\n<table>\n\n  <tr>\n\n    <th>NOT A</th>\n\n    <th>B</th>\n\n    <th>AND operation</th>\n\n    <th>NAND operation (Y)</th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n</table>\n<p>Combining the bits from the NAND operation, we get $\\mathrm{Y}=1101$. </p>\n<p>Hence, the correct option is (A).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhx59",
@@ -173,7 +173,7 @@
     "difficulty": "easy",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 5th April Morning Shift Physics - Semiconductor Question 4 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mobtacfv/10730ec8-cb81-4312-b472-a371d16e3155/c04864b0-3f41-11f1-945b-a7f83dc9b71d/file-6y3zli1mobtacfw.webp?format=webp\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mobtacfv/10730ec8-cb81-4312-b472-a371d16e3155/c04864b0-3f41-11f1-945b-a7f83dc9b71d/file-6y3zli1mobtacfw.webp\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$Y_1$ is the output of an OR gate whose inputs are $A$ and $B$,</p>\n<p>$$ Y_1=A+B $$</p>\n<p>$Y_2$ is an AND gate taking $Y_1$ and $C$ as input</p>\n<p>$$ Y_2=(A+B) \\cdot C $$</p>\n<p>$Y_3$ is an AND gate taking $Y_2$ and $A$ as input,</p>\n<p>$$ \\begin{gathered} Y_3=[(A+B) \\cdot C] \\cdot A \\\\ Y_3=A \\cdot(A+B) \\cdot C=A \\cdot C \\end{gathered} $$</p>\n<p>So, the truth table is,</p>\n<table>\n\n  <tbody><tr>\n\n    <th>A</th>\n\n    <th>B</th>\n\n    <th>C</th>\n\n    <th>Y<sub>1</sub> = A + B</th>\n\n    <th>Y<sub>2</sub> = (A + B) · C</th>\n\n    <th>Y<sub>3</sub> = A · C</th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>LED1 glows when $Y_1=1$ and LED2 glows when $Y_3=1$</p>\n<p>So for both the LEDs to glow we need $Y_1=1$ and $Y_3=1$</p>\n<p>From the table, this happens when:</p>\n<p>Since $\\mathrm{Y}_3=\\mathrm{A} \\cdot \\mathrm{C}$, so $\\mathrm{A}=1, \\mathrm{C}=1$</p>\n<p>And $\\mathrm{Y}_1$ will automatically be 1 because $\\mathrm{A}=1$</p>\n<p>Hence, the possible combinations are ( $A=1, B=0, C=1$ ) and ( $A=1, B=1, C=1$ ). </p>\n<p>Thus, the correct option is (C).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnsik8kf",
@@ -195,7 +195,7 @@
     "difficulty": "easy",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 6th April Evening Shift Physics - Semiconductor Question 8 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mo4fa6et/2e05c888-f196-4aed-96df-2b1c13b0cadb/7f457250-3b31-11f1-8c42-c7a7a182458c/file-6y3zli1mo4fa6eu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mo4fa6et/2e05c888-f196-4aed-96df-2b1c13b0cadb/7f457250-3b31-11f1-8c42-c7a7a182458c/file-6y3zli1mo4fa6eu.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$Y_1$ is the output of NOT Gate which takes input $A . Y_1=\\bar{A}$</p>\n<p>$$ \\begin{array}{|l|l|} \\hline \\text { Input }(\\mathrm{A}) &amp; \\text { Output }\\left(\\mathrm{Y}_1=\\overline{\\mathrm{A}}\\right) \\\\ \\hline 1 &amp; 0 \\\\ \\hline 0 &amp; 1 \\\\ \\hline \\end{array} $$</p>\n<p>$Y_2$ is the output of OR Gate which takes inputs $Y_1$ and $B . Y_2=Y_1+B=\\bar{A}+B$</p>\n<table>\n\n  <tbody><tr>\n\n    <th>A</th>\n\n    <th>Y<sub>1</sub> = <span style=\"text-decoration: overline;\">A</span></th>\n\n    <th>B</th>\n\n    <th>Output (Y<sub>2</sub> = <span style=\"text-decoration: overline;\">A</span> + B)</th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>$Y_3$ is the output of AND Gate which takes inputs $Y_1$ and $B \\cdot Y_3=Y_1 \\cdot B=\\bar{A} \\cdot B$</p>\n<table>\n\n  <tbody><tr>\n\n    <th>A</th>\n\n    <th>Y<sub>1</sub> = <span style=\"text-decoration: overline;\">A</span></th>\n\n    <th>B</th>\n\n    <th>Output (Y<sub>3</sub> = <span style=\"text-decoration: overline;\">A</span> · B)</th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n</tbody></table>\n<p>$Y$ is the output of NOR Gate which takes inputs $Y_2$ and $Y_3 . Y=\\overline{Y_2+Y_3}$</p>\n<table>\n\n  <tbody><tr>\n\n    <th>A</th>\n\n    <th>B</th>\n\n    <th>Y<sub>2</sub> = <span style=\"text-decoration: overline;\">A</span> + B</th>\n\n    <th>Y<sub>3</sub> = <span style=\"text-decoration: overline;\">A</span> · B</th>\n\n    <th>Y = <span style=\"text-decoration: overline;\">Y<sub>2</sub> + Y<sub>3</sub></span></th>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td><span style=\"text-decoration: overline;\">1 + 0</span> = <span style=\"text-decoration: overline;\">1</span> = 0</td>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td><span style=\"text-decoration: overline;\">1 + 1</span> = <span style=\"text-decoration: overline;\">1</span> = 0</td>\n\n  </tr>\n\n</tbody></table>\n<p>For both input sets ( $A=1, B=1$ ) and ( $A=0, B=1$ ), the output $Y$ is 0 . \n<br><br>Thus, the correct option is ( $C$ ).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnsik6rv",
@@ -217,7 +217,7 @@
     "difficulty": "medium",
     "solution": "<p>The inputs are,</p>\n<p>Interval I: From $\\mathrm{t}=0$ to $\\mathrm{t}=1$, Input $\\mathrm{A}=0$, Input $\\mathrm{B}=1$.</p>\n<p>Interval II: From $\\mathrm{t}=1$ to $\\mathrm{t}=2$, Input $\\mathrm{A}=1$, Input $\\mathrm{B}=1$.</p>\n<p>Interval III: From $\\mathrm{t}=2$ to $\\mathrm{t}=3$, Input $\\mathrm{A}=1$, Input $\\mathrm{B}=0$.</p>\n<table>\n\n  <tbody><tr>\n\n    <th>Interval</th>\n\n    <th>Input A</th>\n\n    <th>Input B</th>\n\n  </tr>\n\n  <tr>\n\n    <td>I</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>II</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>III</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n  </tr>\n\n</tbody></table>\n<p><img alt=\"JEE Main 2026 (Online) 8th April Evening Shift Physics - Semiconductor Question 9 English Explanation 1\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mo2zlvm6/905510fb-399a-48b0-9c6d-60c6dc76bc2e/69ecdfd0-3a67-11f1-a0ae-9da33830bb19/file-6y3zli1mo2zlvm7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mo2zlvm6/905510fb-399a-48b0-9c6d-60c6dc76bc2e/69ecdfd0-3a67-11f1-a0ae-9da33830bb19/file-6y3zli1mo2zlvm7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>For the output $Y_1$ the inputs are $A$ and $B$ directly. The corresponding logic gate is AND gate.</p>\n<p>$$ \\mathrm{Y}_1=\\mathrm{A} \\cdot \\mathrm{~B} $$</p>\n<p>$$ \\begin{array}{|l|l|l|l|} \\hline \\text { Interval } &amp; \\text { Input A } &amp; \\text { Input B } &amp; \\text { Output } \\mathrm{Y}_1 \\\\ \\hline \\text { I } &amp; 0 &amp; 1 &amp; 0 \\cdot 1=0 \\\\ \\hline \\text { II } &amp; 1 &amp; 1 &amp; 1 \\cdot 1=1 \\\\ \\hline \\text { III } &amp; 1 &amp; 0 &amp; 1 \\cdot 0=0 \\\\ \\hline \\end{array} $$</p>\n<p>For the output $\\mathrm{Y}_2$ the input B is directly but input A passes through a NOT gate .</p>\n<p>$$ Y_2=\\bar{A} \\cdot B $$</p>\n<p>$$ \\begin{array}{|l|l|l|l|l|} \\hline \\text { Interval } &amp; \\text { Input A } &amp; &amp; \\bar{A} &amp; \\text { Input B } \\\\ \\hline \\text { I } &amp; 0 &amp; 1 &amp; 1 &amp; \\text { Output } \\mathrm{Y}_2 \\\\ \\hline \\text { II } &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\cdot 1=0 \\\\ \\hline \\text { III } &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\cdot 0=0 \\\\ \\hline \\end{array} $$</p>\n<p>For the final output Y the inputs are $\\mathrm{Y}_1$ and $\\mathrm{Y}_2$. The corresponding gate is OR gate.</p>\n<p>$$ Y=Y_1+Y_2 $$</p>\n<table>\n\n  <tbody><tr>\n\n    <th>Interval</th>\n\n    <th>Input A</th>\n\n    <th>Input B</th>\n\n    <th>Y<sub>1</sub></th>\n\n    <th>Y<sub>2</sub></th>\n\n    <th>Y = Y<sub>1</sub> + Y<sub>2</sub></th>\n\n  </tr>\n\n  <tr>\n\n    <td>I</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1</td>\n\n    <td>0 + 1 = 1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>II</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>1 + 0 = 1</td>\n\n  </tr>\n\n  <tr>\n\n    <td>III</td>\n\n    <td>1</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0</td>\n\n    <td>0 + 0 = 0</td>\n\n  </tr>\n\n</tbody></table>\n<p><img alt=\"JEE Main 2026 (Online) 8th April Evening Shift Physics - Semiconductor Question 9 English Explanation 2\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mnsixtv8/2fb4e841-16ab-46ef-90e9-9bc0ec238698/64986340-34a6-11f1-8461-75c223c4ecce/file-6y3zli1mnsixtv9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mnsixtv8/2fb4e841-16ab-46ef-90e9-9bc0ec238698/64986340-34a6-11f1-8461-75c223c4ecce/file-6y3zli1mnsixtv9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Based on the logic analysis of the timing intervals, the correct output graph is represented in option (B).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml89h5ob",
@@ -239,7 +239,7 @@
     "difficulty": "easy",
     "solution": "<p>The circuit is composed entirely of NOR gates. A NOR gate with its inputs tied together (or receiving the same signal) acts as a NOT gate.</p>\n<p>If input is $A$, the output is $\\overline{A+A}=\\bar{A}$</p>\n<p>$$ \\begin{array}{|l|l|l|l|} \\hline \\text { Input 1 } &amp; \\text { Input 2 } &amp; \\text { OR Output } &amp; \\text { NOR Output } \\\\ \\hline 1 &amp; 1 &amp; 1 &amp; 0 \\\\ \\hline 0 &amp; 0 &amp; 0 &amp; 1 \\\\ \\hline \\end{array} $$</p>\n<p><img alt=\"JEE Main 2026 (Online) 21st January Morning Shift Physics - Semiconductor Question 18 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mm4l5mcq/3de7509a-79d5-4250-8b31-51f94865dddd/088ebca0-13b0-11f1-865a-8bf6aebc55a0/file-6y3zli1mm4l5mcr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mm4l5mcq/3de7509a-79d5-4250-8b31-51f94865dddd/088ebca0-13b0-11f1-865a-8bf6aebc55a0/file-6y3zli1mm4l5mcr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$$ \\begin{array}{|l|l|l|l|l|l|} \\hline \\mathrm{A} &amp; \\mathrm{~B} &amp; \\mathrm{Y}_1=\\overline{\\mathrm{A}} &amp; \\mathrm{Y}_2=\\overline{\\mathrm{B}} &amp; \\mathrm{Y}_3=\\overline{\\mathrm{Y}_1+\\mathrm{Y}_2} &amp; \\mathrm{Y}_4=\\overline{\\mathrm{Y}_3} \\\\ \\hline 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\\\ \\hline 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\\\ \\hline 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\\\ \\hline 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 \\\\ \\hline \\end{array} $$</p>\n<p>The final expression $\\mathrm{Y}=\\overline{\\mathrm{A} \\cdot \\mathrm{B}}$ is the characteristic equation for a NAND gate.</p>\n<p>Therefore, the circuit functions as a NAND gate. </p>\n<p>Hence, the correct option is (D).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6rp6kwv",
@@ -261,7 +261,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7g08r41/f5a371bd-2106-4eb9-a74e-4f9bbe7875d1/690eb400-f100-11ef-afc4-279cdb88492c/file-jaoe38c1m7g08r42.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7g08r41/f5a371bd-2106-4eb9-a74e-4f9bbe7875d1/690eb400-f100-11ef-afc4-279cdb88492c/file-jaoe38c1m7g08r42.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 22nd January Evening Shift Physics - Semiconductor Question 36 English Explanation\"></p>\n<p>For NOR gate : $\\overline{\\mathrm{A}} \\overline{\\mathrm{B}}=\\overrightarrow{\\mathrm{A}}+\\mathrm{B}$</p>\n<p>$\\therefore$ Truth table $$ \\begin{array}{ccc} \\mathrm{A} &amp; \\mathrm{~B} &amp; \\mathrm{Y} \\\\ 0 &amp; 0 &amp; 1 \\\\ 0 &amp; 1 &amp; 1 \\\\ 1 &amp; 0 &amp; 0 \\\\ 1 &amp; 1 &amp; 1 \\end{array}$$</p>\n<p>$\\therefore$ Bonus</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6v43dhp",
@@ -283,7 +283,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m79aghg8/40ee9279-7beb-4a5e-a184-5802644eff19/ded04d80-ed4e-11ef-b738-0f60b25bf061/file-jaoe38c1m79aghg9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m79aghg8/40ee9279-7beb-4a5e-a184-5802644eff19/ded04d80-ed4e-11ef-b738-0f60b25bf061/file-jaoe38c1m79aghg9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 24th January Evening Shift Physics - Semiconductor Question 32 English Explanation\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6w9ofuk",
@@ -305,7 +305,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7ijuw98/4ff43eaa-bb21-45da-b247-6ae6acc09b54/af95f0c0-f266-11ef-a32d-fb024e0b0102/file-jaoe38c1m7ijuw99.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7ijuw98/4ff43eaa-bb21-45da-b247-6ae6acc09b54/af95f0c0-f266-11ef-a32d-fb024e0b0102/file-jaoe38c1m7ijuw99.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 28th January Morning Shift Physics - Semiconductor Question 31 English Explanation 1\"></p>\n<p>$$Y = \\overline {A.B + A.\\overline B }  = \\overline {A(B + \\overline B )}  = \\overline {AI} $$</p>\n<p>$$ \\Rightarrow Y = \\overline A $$</p>\n<p>1. <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7ijxb5t/b0e776a0-096e-418b-b8a4-217730eb87d7/f2b7c310-f266-11ef-a32d-fb024e0b0102/file-jaoe38c1m7ijxb5u.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7ijxb5t/b0e776a0-096e-418b-b8a4-217730eb87d7/f2b7c310-f266-11ef-a32d-fb024e0b0102/file-jaoe38c1m7ijxb5u.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 28th January Morning Shift Physics - Semiconductor Question 31 English Explanation 2\"></p>\n<p>(As $$A\\,.\\,A = A$$</p>\n<p>Hence, option 1 is correct.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qjarzp",
@@ -349,7 +349,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m73ffuz5/d335b84c-6caf-427d-8076-9ee7148e8df3/a733b010-ea15-11ef-8e2b-a35da2b57ee8/file-jaoe38c1m73ffuz6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m73ffuz5/d335b84c-6caf-427d-8076-9ee7148e8df3/a733b010-ea15-11ef-8e2b-a35da2b57ee8/file-jaoe38c1m73ffuz6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 29th January Morning Shift Physics - Semiconductor Question 39 English Explanation\"></p>\n<p>$$\\Rightarrow \\text { OR Gate }$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j2yz",
@@ -371,7 +371,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mafc5a33/abffa186-85ec-493b-865a-1940eb753914/d383edf0-2c06-11f0-bf88-ff84dceebac9/file-jaoe38c1mafc5a34.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mafc5a33/abffa186-85ec-493b-865a-1940eb753914/d383edf0-2c06-11f0-bf88-ff84dceebac9/file-jaoe38c1mafc5a34.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 2nd April Evening Shift Physics - Semiconductor Question 28 English Explanation\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9gxgeq7",
@@ -393,7 +393,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9z500n8/9c5704a2-835c-4403-9a32-9ab5299a9280/56e1e040-231e-11f0-bcb1-dbfef96cfccf/file-jaoe38c1m9z500n9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9z500n8/9c5704a2-835c-4403-9a32-9ab5299a9280/56e1e040-231e-11f0-bcb1-dbfef96cfccf/file-jaoe38c1m9z500n9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Evening Shift Physics - Semiconductor Question 22 English Explanation\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnurn9",
@@ -415,7 +415,7 @@
     "difficulty": "easy",
     "solution": "<p>Only option (B) matches with the truth table.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9ghxmry",
@@ -437,7 +437,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9uvp62z/e5c6ed4c-68d2-4ecc-a8f6-70b95eb75116/d46c0db0-20c6-11f0-8e41-d1a13c0c5e77/file-jaoe38c1m9uvp630.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9uvp62z/e5c6ed4c-68d2-4ecc-a8f6-70b95eb75116/d46c0db0-20c6-11f0-8e41-d1a13c0c5e77/file-jaoe38c1m9uvp630.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 4th April Morning Shift Physics - Semiconductor Question 23 English Explanation\"></p>\n<p>$\\because \\overline{\\mathrm{A}} \\cdot \\overline{\\mathrm{C}}+\\overline{\\mathrm{A}+\\mathrm{C}} \\equiv$ NOR gate</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e83fb9",
@@ -459,7 +459,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9ksqa5v/5ffb9f16-3b00-462f-b307-5ad8eba9370d/61806430-1b3b-11f0-8234-eff1154e7d32/file-jaoe38c1m9ksqa5w.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9ksqa5v/5ffb9f16-3b00-462f-b307-5ad8eba9370d/61806430-1b3b-11f0-8234-eff1154e7d32/file-jaoe38c1m9ksqa5w.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 7th April Evening Shift Physics - Semiconductor Question 26 English Explanation 1\"></p>\n<p>$$\\begin{aligned}\n&amp; \\mathrm{Y}_1=\\mathrm{A} \\cdot \\mathrm{~B}, \\mathrm{Y}_2=\\overline{\\mathrm{A}}+\\mathrm{B} \\\\\n&amp; \\mathrm{Y}=\\overline{\\mathrm{Y}_1 \\cdot \\mathrm{Y}_2}=\\overline{\\mathrm{Y}}_1+\\overline{\\mathrm{Y}}_2 \\\\\n&amp; \\mathrm{Y}=\\overline{\\mathrm{A} \\cdot \\mathrm{~B}}+\\overline{\\overline{\\mathrm{A}}+\\mathrm{B}} \\\\\n&amp; \\mathrm{Y}=\\overline{\\mathrm{A}}+\\overline{\\mathrm{B}}+\\mathrm{A} \\cdot \\overline{\\mathrm{~B}}\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9ksrjik/4cbd4442-4950-4686-9d2e-a2a9fdb4612b/84890cc0-1b3b-11f0-8234-eff1154e7d32/file-jaoe38c1m9ksrjil.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9ksrjik/4cbd4442-4950-4686-9d2e-a2a9fdb4612b/84890cc0-1b3b-11f0-8234-eff1154e7d32/file-jaoe38c1m9ksrjil.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 7th April Evening Shift Physics - Semiconductor Question 26 English Explanation 2\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lscpnh06",
@@ -481,7 +481,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lt1ijy0x/7346896e-e887-474e-b075-7409e93b447f/3b93f710-d3dd-11ee-b732-196aad4e0551/file-1lt1ijy0y.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lt1ijy0x/7346896e-e887-474e-b075-7409e93b447f/3b93f710-d3dd-11ee-b732-196aad4e0551/file-1lt1ijy0y.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 27th January Evening Shift Physics - Semiconductor Question 58 English Explanation\"></p>\n<p>$$\\mathrm{Y}=\\mathrm{A} \\cdot \\overline{\\mathrm{B}}+\\overline{\\mathrm{A}} \\cdot \\mathrm{B}$$</p>\n<p>This is XOR GATE</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsflnps5",
@@ -503,7 +503,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsr7szfm/c0218e5b-64d4-45dd-a40b-226646ed04a3/5c088420-ce33-11ee-9412-cd4f9c6f2c40/file-6y3zli1lsr7szfn.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsr7szfm/c0218e5b-64d4-45dd-a40b-226646ed04a3/5c088420-ce33-11ee-9412-cd4f9c6f2c40/file-6y3zli1lsr7szfn.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 29th January Evening Shift Physics - Semiconductor Question 54 English Explanation\"></p>\n<p>$$\\begin{aligned}\n\\mathrm{Y} &amp; =\\mathrm{A} \\cdot \\mathrm{B}+\\overline{\\mathrm{A}} \\cdot \\mathrm{B} \\\\\n&amp; =(\\mathrm{A}+\\overline{\\mathrm{A}}) \\cdot \\mathrm{B} \\\\\n\\mathrm{Y} &amp; =1 \\cdot \\mathrm{B} \\\\\n\\mathrm{Y} &amp; =\\mathrm{B}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd84k4m",
@@ -525,7 +525,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsiikatj/7edefe17-bd48-4436-99e7-e57520d14984/611f6d70-c96a-11ee-b416-eff853096672/file-6y3zli1lsiikatk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsiikatj/7edefe17-bd48-4436-99e7-e57520d14984/611f6d70-c96a-11ee-b416-eff853096672/file-6y3zli1lsiikatk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 31st January Evening Shift Physics - Semiconductor Question 57 English Explanation\"></p>\n<p>$$\\begin{aligned}\n\\text { If } \\mathrm{A} &amp; =0 ; \\overline{\\mathrm{A}}=1 \\\\\n\\mathrm{~A} &amp; =1 ; \\overline{\\mathrm{A}}=0 \\\\\n\\mathrm{~B} &amp; =0 ; \\overline{\\mathrm{B}}=1 \\\\\n\\mathrm{~B} &amp; =1 ; \\overline{\\mathrm{B}}=0 \\\\\n\\mathrm{Y} &amp; =\\overline{(\\mathrm{A}+\\overline{\\mathrm{B}})+(\\overline{\\mathrm{A}}+\\mathrm{B})}=\\overline{(1+1)}=0\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lse6okbg",
@@ -547,7 +547,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\mathrm{Y}=\\overline{\\overline{\\mathrm{A}} \\cdot \\overline{\\mathrm{B}}}=\\overline{\\overline{\\mathrm{A}}}+\\overline{\\overline{\\mathrm{B}}}=\\mathrm{A}+\\mathrm{B}$$</p>\n<p>(De-Morgan's law)</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv2es3sr",
@@ -569,7 +569,7 @@
     "difficulty": "easy",
     "solution": "<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 245px\">\n<colgroup>\n<col style=\"width: 80px\">\n<col style=\"width: 81px\">\n<col style=\"width: 84px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">$$A$$</th>\n    <th class=\"tg-baqh\">$$B$$</th>\n    <th class=\"tg-baqh\">$$y$$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n</tbody>\n</table></p>\n<p>So, $$Y=A+B$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv9s2sx3",
@@ -591,7 +591,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\nY & =(A+B)+(B \\cdot 1) \\\\\n& =A+B+B \\\\\n& =A+B\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv7v4r9k",
@@ -613,7 +613,7 @@
     "difficulty": "easy",
     "solution": "<p>For bulb to glow, there should be low-high combination across the bulb.</p>\n<p>If $$A=1, B=0, C=0$$ & $$D=0$$\n<p>$$\\overline{\\overline{1}+1}=0 \\quad \\& \\quad \\overline{0}=1$$</p>\n<p>So, bulb will glow.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lvc58elr",
@@ -635,7 +635,7 @@
     "difficulty": "easy",
     "solution": "NOT, OR and AND gate.</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 195px\">\n<colgroup>\n<col style=\"width: 63px\">\n<col style=\"width: 67px\">\n<col style=\"width: 65px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">$$A$$</th>\n    <th class=\"tg-baqh\">$$B$$</th>\n    <th class=\"tg-baqh\">$$Y$$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n</tbody>\n</table></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv5gt52j",
@@ -657,7 +657,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lw904k8n/f6f067f0-c7b4-4a19-860e-0604f9e4607e/16ccbf80-1360-11ef-a2b1-a5535752b4da/file-1lw904k8o.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lw904k8n/f6f067f0-c7b4-4a19-860e-0604f9e4607e/16ccbf80-1360-11ef-a2b1-a5535752b4da/file-1lw904k8o.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 8th April Morning Shift Physics - Semiconductor Question 44 English Explanation\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luxwervs",
@@ -679,7 +679,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& Y=\\overline{A B+\\overline{A B}} \\\\\n& \\text { for } A=0, B=1, Y=1 \\\\\n& \\text { for } A=1, B=0, Y=1\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgsww5ny",
@@ -701,7 +701,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lib76axm/10785b44-0f53-4b38-a504-1712bd7ec2f8/3120e8d0-ff6a-11ed-be52-3d539499df54/file-1lib76axq.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lib76axm/10785b44-0f53-4b38-a504-1712bd7ec2f8/3120e8d0-ff6a-11ed-be52-3d539499df54/file-1lib76axq.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 11th April Evening Shift Physics - Semiconductor Question 70 English Explanation\">\n<br><br>$$\n\\begin{aligned}\nZ  =\\overline{(A+B) \\cdot(A \\cdot B)} \\\\\\\\\nY  =\\bar{Z}=(A+B) \\cdot(A \\cdot B) \\\\\\\\\n\\end{aligned}\n$$\n<br>$$\nY=A \\cdot(A B)+B \\cdot(A B)\n$$\n<br><br>$$\n\\begin{aligned}\n&amp; =A B+A B \\\\\\\\\n&amp; =(A B)\n\\end{aligned}\n$$\n<br><br>$\\therefore$ It is an AND gate.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lguxr5uu",
@@ -723,7 +723,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1libatw7l/19597932-40fb-4f1c-b21e-d35139a53d2e/7c8f7c10-ff78-11ed-84fc-bb23324267e4/file-1libatw7m.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1libatw7l/19597932-40fb-4f1c-b21e-d35139a53d2e/7c8f7c10-ff78-11ed-84fc-bb23324267e4/file-1libatw7m.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Main 2023 (Online) 11th April Morning Shift Physics - Semiconductor Question 69 English Explanation\">\n<br><br>$$\nY=\\overline{\\bar{a}+\\overline{\\mathrm{b}}}=a \\cdot b\n$$\n<br><br>The truth table for the given circuit will be\n<br><br>$$\n\\begin{array}{|c|c|c|}\n\\hline \\mathrm{a} &amp; \\mathrm{b} &amp; \\text { output } \\\\\n\\hline 0 &amp; 0 &amp; 0 \\\\\n\\hline 0 &amp; 1 &amp; 0 \\\\\n\\hline 1 &amp; 0 &amp; 0 \\\\\n\\hline 1 &amp; 1 &amp; 1 \\\\\n\\hline\n\\end{array}\n$$\n<br><br>Hence it will be equivalent to <b>AND</b> gate.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgp08a20",
@@ -745,7 +745,7 @@
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\n&\\text {Truth table for NAND gate is }\\\\\\\\\n&\\begin{array}{|c|c|c|}\n\\hline \\mathrm{A} & \\mathrm{B} & \\mathrm{Y}=\\overline{\\mathrm{A} \\cdot \\mathrm{B}} \\\\\n\\hline 0 & 0 & 1 \\\\\n\\hline 0 & 1 & 1 \\\\\n\\hline 1 & 0 & 1 \\\\\n\\hline 1 & 1 & 0 \\\\\n\\hline\n\\end{array}\n\\end{aligned}\n$$<br/><br/>\nOn the basis of given input $\\mathrm{A}$ and $\\mathrm{B}$ the truth table is<br/><br/>\n<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-c3ow\">$\\mathrm{A}$</th>\n    <th class=\"tg-c3ow\">$\\mathrm{B}$</th>\n    <th class=\"tg-c3ow\">$\\mathrm{Y}$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n</tbody>\n</table>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgq2qd19",
@@ -767,7 +767,7 @@
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\n& Y=\\left(A^{\\prime} \\cdot B\\right)^{\\prime} \\\\\\\\\n& =A+B^{\\prime} \\\\\\\\\n& \\Rightarrow \\text { Option } D .\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldwqiexi",
@@ -789,7 +789,7 @@
     "difficulty": "easy",
     "solution": "<p>The truth table for the circuit will be given as below</p>\n\n<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-c3ow\">$A$</th>\n    <th class=\"tg-c3ow\">$B$</th>\n    <th class=\"tg-c3ow\">$Y$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">0</td>\n  </tr>\n</tbody>\n</table>\n<br/>\n<p>The above truth table is of NAND Gate.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldsb32ad",
@@ -811,7 +811,7 @@
     "difficulty": "easy",
     "solution": "<p>As per the circuit,</p>\n<p>$$X=A'B+AB'$$</p>\n<p>If : $$A=0,B=0\\Rightarrow X=0$$</p>\n<p>$$A=0,B=1\\Rightarrow X=1$$</p>\n<p>$$A=1,B=0\\Rightarrow X=1$$</p>\n<p>$$A=1,B=1\\Rightarrow X=0$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ldqvucvk",
@@ -833,7 +833,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1leoho6h8/1416d239-a3d2-499b-888d-937d610b06d1/9077a9b0-b788-11ed-8877-d5d81ac5ff88/file-1leoho6h9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1leoho6h8/1416d239-a3d2-499b-888d-937d610b06d1/9077a9b0-b788-11ed-8877-d5d81ac5ff88/file-1leoho6h9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 30th January Evening Shift Physics - Semiconductor Question 83 English Explanation 1\"></p>\n<p>$$Y = \\overline {\\left( {\\overline A  + AB} \\right)\\left( {\\overline B  + AB} \\right)}  = \\left( {A + B} \\right)\\left( {\\overline A  + \\overline B } \\right)$$</p>\n<p>$$ = A\\overline B  + B\\overline A $$ (XOR gate)</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1leohpbid/70b5b780-efda-4356-9e66-fbb2911ba1cf/b029fb50-b788-11ed-8877-d5d81ac5ff88/file-1leohpbie.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1leohpbid/70b5b780-efda-4356-9e66-fbb2911ba1cf/b029fb50-b788-11ed-8877-d5d81ac5ff88/file-1leohpbie.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 30th January Evening Shift Physics - Semiconductor Question 83 English Explanation 2\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldr11kuv",
@@ -855,7 +855,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lepy7kib/6ed1c30f-3da9-4671-bb77-352009e3a787/06653e30-b856-11ed-8195-4f3c56fa1eb5/file-1lepy7kic.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lepy7kib/6ed1c30f-3da9-4671-bb77-352009e3a787/06653e30-b856-11ed-8195-4f3c56fa1eb5/file-1lepy7kic.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 30th January Morning Shift Physics - Semiconductor Question 82 English Explanation 1\"></p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lepy8va8/621048dd-681d-444c-98c7-f4fc7c83b7c6/2a885770-b856-11ed-8195-4f3c56fa1eb5/file-1lepy8vaf.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lepy8va8/621048dd-681d-444c-98c7-f4fc7c83b7c6/2a885770-b856-11ed-8195-4f3c56fa1eb5/file-1lepy8vaf.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 30th January Morning Shift Physics - Semiconductor Question 82 English Explanation 2\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh249ef1",
@@ -877,7 +877,7 @@
     "difficulty": "easy",
     "solution": "If we consider the given logic circuit, then we get the following output.\n<br/><br/>$$\n\\begin{array}{lll}\n\\hline A & B & Y \\\\\n\\hline 0 & 0 & 1 \\\\\n\\hline 1 & 0 & 0 \\\\\n\\hline 0 & 1 & 0 \\\\\n\\hline 1 & 1 & 0 \\\\\n\\hline\n\\end{array}\n$$\n<br/><br/>Output $Y$ shows the output of NOR Gate.\n<br/><br/>Hence, option (a) correct.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh029g6s",
@@ -899,7 +899,7 @@
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\n&amp;\\text {For the given circuit the truth table would be : }\\\\\\\\\n&amp;\\begin{array}{|c|c|c|}\n\\hline \\mathbf{A} &amp; \\mathbf{B} &amp; \\mathbf{Y} \\\\\n\\hline 0 &amp; 0 &amp; 0 \\\\\n\\hline 0 &amp; 1 &amp; 1 \\\\\n\\hline 1 &amp; 0 &amp; 1 \\\\\n\\hline 1 &amp; 1 &amp; 1 \\\\\n\\hline\n\\end{array}\n\\end{aligned}\n$$<br><br>\nThe truth table shows that the output graph is given by :<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lh1hjmig/451e17cd-daeb-49b4-b07f-b516ac101cc0/b1022380-e646-11ed-9b1f-cf98cc51cb3d/file-1lh1hjmih.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lh1hjmig/451e17cd-daeb-49b4-b07f-b516ac101cc0/b1022380-e646-11ed-9b1f-cf98cc51cb3d/file-1lh1hjmih.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 8th April Morning Shift Physics - Semiconductor Question 65 English Explanation\">\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6dznm9w",
@@ -921,7 +921,7 @@
     "difficulty": "easy",
     "solution": "<p>Given circuit is equivalent to an AND gate.</p>\n<p>$$\\therefore$$ $$\\matrix{\n   A & B & Y  \\cr \n   0 & 0 & 0  \\cr \n   0 & 1 & 0  \\cr \n   1 & 0 & 0  \\cr \n   1 & 1 & 1  \\cr \n\n } $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l59pirvv",
@@ -943,7 +943,7 @@
     "difficulty": "easy",
     "solution": "<p>According to the circuit,</p>\n<p>Y = (A' + B')'</p>\n<p>$$\\Rightarrow$$ Y = AB</p>\n<p>$$\\Rightarrow$$ AND gate</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6jimiv8",
@@ -965,7 +965,7 @@
     "difficulty": "easy",
     "solution": "<p>From waveforms, it is an AND gate.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l57qilra",
@@ -987,7 +987,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5jqcj4s/21e025d7-970c-472a-943a-79a41d2cbfac/a109e1c0-02bc-11ed-95db-c3fa9a0f41ba/file-1l5jqcj4t.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5jqcj4s/21e025d7-970c-472a-943a-79a41d2cbfac/a109e1c0-02bc-11ed-95db-c3fa9a0f41ba/file-1l5jqcj4t.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 27th June Morning Shift Physics - Semiconductor Question 108 English Explanation\"></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l569ogjn",
@@ -1009,7 +1009,7 @@
     "difficulty": "easy",
     "solution": "<p>The shown circuit is a combination of AND gate and a NOT gate</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5i3o9p3/41734356-4825-47d0-b4a0-8b127ef85841/2cd6e270-01d7-11ed-bfa5-ebad4ae46597/file-1l5i3o9p4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5i3o9p3/41734356-4825-47d0-b4a0-8b127ef85841/2cd6e270-01d7-11ed-bfa5-ebad4ae46597/file-1l5i3o9p4.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 28th June Morning Shift Physics - Semiconductor Question 111 English Explanation\"></p>\n<p>$$\\Rightarrow$$ $$Y = \\overline {AB} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "4VFas0wAjDFpbGMt8l1kmiolrnz",
@@ -1031,7 +1031,7 @@
     "difficulty": "easy",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kqpx1jcn/8647ebaa-2d7f-4f15-971d-fcad62b27baf/446c4d60-dd2c-11eb-bda9-7338f45ef0d9/file-1kqpx1jco-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kqpx1jcn/8647ebaa-2d7f-4f15-971d-fcad62b27baf/446c4d60-dd2c-11eb-bda9-7338f45ef0d9/file-1kqpx1jco-500w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/1kqpx1jcn/8647ebaa-2d7f-4f15-971d-fcad62b27baf/446c4d60-dd2c-11eb-bda9-7338f45ef0d9/file-1kqpx1jco.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 16th March Evening Shift Physics - Semiconductor Question 145 English Explanation\"></picture>\n<br>Output of first NAND gate with input A\n<br><br>$$\\eqalign{\n  &amp;  = \\overline {A.A}   \\cr \n  &amp;  = \\overline A  + \\overline A   \\cr \n  &amp;  = \\overline A  \\cr} $$\n<br><br>Similarly, Output of first NAND gate with input B\n<br><br>$$ = \\overline B $$\n<br><br> $$\\eqalign{\n  &amp; {Y_1} = \\overline {\\overline A .\\overline B }   \\cr \n  &amp;  = \\overline {\\overline A }  + \\overline {\\overline B }   \\cr \n  &amp;  = A + B \\cr} $$\n<br><br>$$\\eqalign{\n  &amp; Y = \\overline {\\left( {A + B} \\right).\\left( {A + B} \\right)}   \\cr \n  &amp;  = \\overline {\\left( {A + B} \\right)}  + \\overline {\\left( {A + B} \\right)}   \\cr \n  &amp;  = \\overline {\\left( {A + B} \\right)}  \\cr} $$\n<br><br>So, given logic gates circuit is a NOR gate.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "WsyiIxHJ6HQTKgu5mZ1kmhpjxkt",
@@ -1070,7 +1070,7 @@
     "difficulty": "easy",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kpoku7wy/0ecef6a1-fb7a-44ee-a7b3-5ac62cb6c2f6/8b591e30-c8a3-11eb-9f04-35c9b3f3a871/file-1kpoku7wz-320w.png\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kpoku7wy/0ecef6a1-fb7a-44ee-a7b3-5ac62cb6c2f6/8b591e30-c8a3-11eb-9f04-35c9b3f3a871/file-1kpoku7wz-500w.png\"><img src=\"https://imagex.cdn.examgoal.net/1kpoku7wy/0ecef6a1-fb7a-44ee-a7b3-5ac62cb6c2f6/8b591e30-c8a3-11eb-9f04-35c9b3f3a871/file-1kpoku7wz.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 17th March Evening Shift Physics - Semiconductor Question 143 English Explanation\"></picture><br>$$y = \\left( {\\overline {A.B} } \\right)\\,.\\,\\left( {A + B} \\right)$$<br><br>$$ = \\left( {\\overline A  + \\overline B } \\right)\\,.\\,\\left( {A + B} \\right)$$<br><br>$$ = \\overline A \\,A + \\overline A \\,B + A\\,\\overline B  + \\overline B \\,B$$<br><br>$$ = 0 + \\overline A \\,B + A\\,\\overline B  + 0$$<br><br>$$y = \\overline A \\,B + A\\,\\overline B $$<br><br>which is XOR gate",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "POLbelq3lA3PN4CQZN1kmj3sbm7",
@@ -1092,7 +1092,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ko7gowv0/d79782f2-5221-4d6e-b1a4-fd68079081af/c8d3c9c0-ab6d-11eb-b998-914ca047e327/file-1ko7gowv1.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 17th March Morning Shift Physics - Semiconductor Question 144 English Explanation\">",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "zP7POlFsOibeboAfCp1klrner7a",
@@ -1114,7 +1114,7 @@
     "difficulty": "easy",
     "solution": "The logic circuit is given as\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kxkjue3l/becc7ff2-e872-4c9f-ac41-c397d50ff5a2/3f6dbe00-64ce-11ec-abfa-758f9b3dbab0/file-1kxkjue3m.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kxkjue3l/becc7ff2-e872-4c9f-ac41-c397d50ff5a2/3f6dbe00-64ce-11ec-abfa-758f9b3dbab0/file-1kxkjue3m.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2021 (Online) 24th February Evening Shift Physics - Semiconductor Question 157 English Explanation 1\">\n<br>By using De-morgan’s theorem,\n<br><br>$$C = \\overline {A + \\overline B }  = \\overline A .\\overline{\\overline B}  = \\overline A .B$$\n<br><br>This relation can be shown by the circuit drawn below\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kxkjyvkn/d6c92868-3246-4a2d-8c26-cb61b4209643/bc29f670-64ce-11ec-abfa-758f9b3dbab0/file-1kxkjyvko.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kxkjyvkn/d6c92868-3246-4a2d-8c26-cb61b4209643/bc29f670-64ce-11ec-abfa-758f9b3dbab0/file-1kxkjyvko.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2021 (Online) 24th February Evening Shift Physics - Semiconductor Question 157 English Explanation 2\">",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "cZ51oHe87ENJh1Mxef1klt398uy",
@@ -1136,7 +1136,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kqymyuev/5e72b8bc-fd11-4fa2-9ac1-636324e507ab/ec182870-e1f7-11eb-ba03-c9e7f252a872/file-1kqymyuew.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Evening Shift Physics - Semiconductor Question 152 English Explanation\">\n<br>If A = B = 0, then output y = 1<br><br>If A = B = 1, then output y = 1",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krue19mo",
@@ -1158,7 +1158,7 @@
     "difficulty": "easy",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1krw9xyze/d7221403-ed6e-4236-91de-8e2299758607/a3377ba0-f477-11eb-b37c-fd45669cd0a9/file-1krw9xyzf-320w.png\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1krw9xyze/d7221403-ed6e-4236-91de-8e2299758607/a3377ba0-f477-11eb-b37c-fd45669cd0a9/file-1krw9xyzf-500w.png\"><img src=\"https://imagex.cdn.examgoal.net/1krw9xyze/d7221403-ed6e-4236-91de-8e2299758607/a3377ba0-f477-11eb-b37c-fd45669cd0a9/file-1krw9xyzf.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th July Morning Shift Physics - Semiconductor Question 134 English Explanation\"></picture>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktbr632g",
@@ -1180,7 +1180,7 @@
     "difficulty": "easy",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktjejl87/7baaa537-3d2f-4e39-9f86-6eb336be76e7/df396470-14fb-11ec-87b0-2f866bb7de71/file-1ktjejl88-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktjejl87/7baaa537-3d2f-4e39-9f86-6eb336be76e7/df396470-14fb-11ec-87b0-2f866bb7de71/file-1ktjejl88-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktjejl87/7baaa537-3d2f-4e39-9f86-6eb336be76e7/df396470-14fb-11ec-87b0-2f866bb7de71/file-1ktjejl88-680w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ktjejl87/7baaa537-3d2f-4e39-9f86-6eb336be76e7/df396470-14fb-11ec-87b0-2f866bb7de71/file-1ktjejl88.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Evening Shift Physics - Semiconductor Question 128 English Explanation\"></picture> <br><br>$$y = \\overline {(\\overline {A + \\overline {A + B} } ) + (\\overline {B + \\overline {A + B} } )} $$<br><br>$$y = (A + \\overline {A + B} ).(B + \\overline {A + B} )$$<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">A</th>\n    <th class=\"tg-baqh\">B</th>\n    <th class=\"tg-baqh\">y</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n</tbody>\n</table>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktabxh9e",
@@ -1202,7 +1202,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ktcexma8/54763c66-e500-4c9c-9eb1-e9402958adb4/e8d28100-1123-11ec-9890-e1f55a1f69a0/file-1ktcexma9.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Morning Shift Physics - Semiconductor Question 129 English Explanation\">",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0IQPUcEHHtrDPMRxkn1klukbyq6",
@@ -1224,7 +1224,7 @@
     "difficulty": "easy",
     "solution": "Y = $$\\overline {\\overline A  + B} $$ = $$A.\\overline B $$\n<br><br>A = 0 $$ \\Rightarrow $$ Y = 0 for B = 0 or B = 1\n<br><br>A = 1 $$ \\Rightarrow $$ Y = 0 for B = 1\n<br><br>A = 1 $$ \\Rightarrow $$ Y = 1 for B = 0\n<br><br>Hence output is 1 only when input A = 1 and B = 0.\n<br><br>$$ \\therefore $$ A is the correct output.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ks18aw42",
@@ -1246,7 +1246,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ks44jl0f/f20ba9b6-0f03-4d35-b26b-d58e25eff848/caa54af0-f8c8-11eb-8274-7f1d731e697f/file-1ks44jl0g.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Evening Shift Physics - Semiconductor Question 131 English Explanation 1\"><br>Y = A . B + $$\\overline B $$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ks44gufg/9c22bc16-49b2-4323-85ec-f837df283b74/7e7e34c0-f8c8-11eb-a1d4-495922108aa7/file-1ks44gufh.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Evening Shift Physics - Semiconductor Question 131 English Explanation 2\">",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktjo1m3f",
@@ -1268,7 +1268,7 @@
     "difficulty": "medium",
     "solution": "V<sub>A</sub> = 5V $$\\Rightarrow$$ A = 1<br><br>V<sub>A</sub> = 0V $$\\Rightarrow$$ A = 0<br><br>V<sub>B</sub> = 5V $$\\Rightarrow$$ B = 1<br><br>V<sub>B</sub> = 0V $$\\Rightarrow$$ B = 0<br><br>If A = B = 0, there is no potential anywhere here V<sub>0</sub> = 0<br><br>If A = 1, B = 0, Diode D<sub>1</sub> is forward biased, here V<sub>0</sub> = 5V<br><br>If A = 0, B = 1, Diode D<sub>2</sub> is forward biased hence V<sub>0</sub> = 5V<br><br>If A = 1, B = 1, Both diodes are forward biased hence V<sub>0</sub> = 5V<br><br>Truth table for I<sup>st</sup><img src=\"https://imagex.cdn.examgoal.net/1kujx16fg/2d2822ad-9632-49bd-b14c-0d778db964e0/640f69b0-2910-11ec-8ce1-838231141173/file-1kujx16fh.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 31st August Evening Shift Physics - Semiconductor Question 120 English Explanation\"><br><br>$$\\therefore$$ Given circuit is OR gate<br><br>For II<sup>nd</sup> circuit<br><br>V<sub>B</sub> = 5V, A = 1<br><br>V<sub>B</sub> = 0V, A = 0<br><br>When A = 0, E - B junction is unbiased there is no current through it <br><br>$$\\therefore$$ V<sub>0</sub> = 1<br><br>When A = 1, E-B junction is forward biased<br><br>V<sub>0</sub> = 0<br><br>$$\\therefore$$ Hence this circuit is NOT gate",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kth0v03a",
@@ -1290,7 +1290,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ku8ej4x5/f7d73dd2-25c3-4cfc-b8f1-b636870c9fe5/6adcd990-22bb-11ec-92a0-35c33c2a328d/file-1ku8ej4x6.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 31st August Morning Shift Physics - Semiconductor Question 122 English Explanation\"><br>$$Y = \\overline {(A\\,.\\,B)\\,.\\,(A + B)} $$<br><br>$${\\left. Y \\right)_{(0,0)}} = 1$$<br><br>$${\\left. Y \\right)_{(0,1)}} = 1$$<br><br>$${\\left. Y \\right)_{(1,0)}} = 1$$<br><br>$${\\left. Y \\right)_{(1,1)}} = 0$$<br><br>Option (c) is correct.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "MYfBE4uQklII9RvoaWjgy2xukexy21vc",
@@ -1312,7 +1312,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ki8zr08s/0d2df324-e458-4e97-b82e-f52779a06228/cce39ad0-357b-11eb-ac50-f785aa756d21/file-1ki8zr08t-320w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 2nd September Evening Slot Physics - Semiconductor Question 168 English Explanation 1\">\n<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ki8zrpjx/ffbe0b73-7d2a-4f0b-8f07-0a137448aeda/e0707cd0-357b-11eb-ac50-f785aa756d21/file-1ki8zrpjy-320w.png\"><img src=\"https://imagex.cdn.examgoal.net/1ki8zrpjx/ffbe0b73-7d2a-4f0b-8f07-0a137448aeda/e0707cd0-357b-11eb-ac50-f785aa756d21/file-1ki8zrpjy-500w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 2nd September Evening Slot Physics - Semiconductor Question 168 English Explanation 2\"></picture>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "HydtyOe5zKb5oswrCajgy2xukfaw9mzj",
@@ -1334,7 +1334,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kjprdroc/375113aa-e388-420f-aee5-8d8809bec83c/9e2309c0-5280-11eb-8377-4f42138ea396/file-1kjprdrod-320w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 4th September Evening Slot Physics - Semiconductor Question 164 English Explanation\">\n<br><br>Z = $$\\overline {\\overline A  + \\overline B  + \\overline C } $$ = $$\\overline {\\overline A } .\\overline {\\overline B } .\\overline {\\overline C } $$ = A.B.C = AND Gate",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "DIwzad3ISgAYvp6BsTjgy2xukfron4jb",
@@ -1356,7 +1356,7 @@
     "difficulty": "easy",
     "solution": "y = $$\\overline {\\overline A .\\overline B } $$ = $$\\overline{\\overline A} $$ + $$\\overline{\\overline B} $$ = A + B\n<img src=\"https://imagex.cdn.examgoal.net/jgy2xukgsvt1td/d850b02c-ff0a-4aa9-97a3-00ef37bd380e/9f6f4e10-18d3-11eb-8293-3b6cc591631c/file-jgy2xukgsvt1te-320w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 6th September Morning Slot Physics - Semiconductor Question 161 English Explanation\">",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "SDFeQFotdL9ltMwaP57k9k2k5dmuavz",
@@ -1378,7 +1378,7 @@
     "difficulty": "medium",
     "solution": "NOT gate is reversible gate because the input\nsignal can be recovered. Here It will behave as a NOT gate. Hence gives reversible operation.\n<img src=\"https://imagex.cdn.examgoal.net/7kd4dk6ho1umu/49d6c8fa-78ef-402d-aba0-3ccc3b88b762/82342f60-4cae-11ea-b62d-51ccc5d4afb6/file-7kd4dk6ho1umv-322w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 7th January Morning Slot Physics - Semiconductor Question 177 English Explanation\">\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "YUA7ZKVooE2ORZaY9A7k9k2k5hhynu8",
@@ -1400,7 +1400,7 @@
     "difficulty": "easy",
     "solution": "Y = $$\\overline {\\overline {AB} .A} $$\n<br><br>= $$\\overline {\\overline {AB} }  + \\overline A $$\n<br><br>= 0 + 0\n<br><br>= 0\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "pSpTTgOzXaeUC4pKFN7k9k2k5gxvtn5",
@@ -1422,7 +1422,7 @@
     "difficulty": "easy",
     "solution": "Truth table for the given circuit\n<br><img src=\"https://imagex.cdn.examgoal.net/7kd4dk6pfisov/3d96d1dd-b6aa-4936-a9b1-2116b9f5ebd9/6c7da4f0-50f3-11ea-b62d-51ccc5d4afb6/file-7kd4dk6pfisow-160w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 8th January Morning Slot Physics - Semiconductor Question 175 English Explanation\">\n<br>It is truth table of $$\\overline {A + B} $$\n<br><br>$$\\overline {A + B} $$ = $$\\overline A .\\overline B $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "3JJSmIMeakj9PeaAVogH8",
@@ -1444,7 +1444,7 @@
     "difficulty": "easy",
     "solution": "P = $$\\overline x  + $$ y\n<br><br>Q = $$\\overline {\\overline y .x} $$ = y + $$\\overline x $$\n<br><br>Output, R = $$\\overline {P + Q} $$\n<br><br>To make R = 1\n<br><br>$$\\overline {P + Q} $$ should be = 1\n<br><br>$$ \\therefore $$ P + Q must be 0\n<br><br>$$ \\therefore $$ ($$\\overline x  + $$ y) + (y + $$\\overline x $$) = 0\n<br><br>Now by checking each option you can see\n<br><br>When y = 0 and x = 1 then\n<br><br>$$\\overline x  + $$ y = 0\n<br><br>$$ \\therefore $$ ($$\\overline x  + $$ y) + (y + $$\\overline x $$) = 0",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "UZZtaqeuKdtgdId8TX3rsa0w2w9jx3n579d",
@@ -1466,7 +1466,7 @@
     "difficulty": "easy",
     "solution": "C = A + B<br>\nand y = $$\\overline {A.C} $$<br><br>\n<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-nrix{text-align:center;vertical-align:middle}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-wa1i\">A</th>\n    <th class=\"tg-wa1i\">B</th>\n    <th class=\"tg-wa1i\">C=(A+B)</th>\n    <th class=\"tg-amwm\">A.C.</th>\n    <th class=\"tg-amwm\">y=$$\\overline {A.C} $$</th>\n  </tr>\n  <tr>\n    <td class=\"tg-nrix\">0</td>\n    <td class=\"tg-nrix\">0</td>\n    <td class=\"tg-nrix\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-nrix\">0</td>\n    <td class=\"tg-nrix\">1</td>\n    <td class=\"tg-nrix\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-nrix\">1</td>\n    <td class=\"tg-nrix\">0</td>\n    <td class=\"tg-nrix\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-nrix\">1</td>\n    <td class=\"tg-nrix\">1</td>\n    <td class=\"tg-nrix\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n</tbody></table>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "K4ghSQUMkqxYrQQIz7Xso",
@@ -1488,7 +1488,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/0bjEOCpRWAyGBIkbZ/8bLnM4aYtqzOmGCuqAM2l28n7cHwD/ZPGIUTuEtiowOE5hFb24DA/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th January Morning Slot Physics - Semiconductor Question 188 English Explanation\">\n<br>Y $$ = \\overline {\\left( {\\overline A  + \\overline B } \\right)\\overline A } $$\n<br><br>$$ = \\overline {\\overline A  + \\overline A B} $$\n<br><br>$$ = A\\left( {\\overline {\\overline A B} } \\right)$$\n<br><br>$$ = A\\left( {A + \\overline B } \\right)$$\n<br><br>$$ = A + A\\overline B  = A\\overline B $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "kIaHPpe7UD2cHGNnkgfiE",
@@ -1510,7 +1510,7 @@
     "difficulty": "easy",
     "solution": "Truth table can be formed as\n<br><br>\n<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;width:100%}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-nrix{text-align:center;vertical-align:middle}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-nrix\">A</th>\n    <th class=\"tg-nrix\">B</th>\n    <th class=\"tg-baqh\">Equivalent</th>\n  </tr>\n  <tr>\n    <td class=\"tg-nrix\">0</td>\n    <td class=\"tg-nrix\">0</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-nrix\">0</td>\n    <td class=\"tg-nrix\">1</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-nrix\">1</td>\n    <td class=\"tg-nrix\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n</tbody></table><br>\nHence the equivalent is “OR” gate",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "OKGdJNi6Em5CbiD4m31DZ",
@@ -1532,7 +1532,7 @@
     "difficulty": "easy",
     "solution": "<p>The given circuit is</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l32mwyfb/8963c097-4517-4b46-9c68-a1e8fcfdb141/72b87c80-d1bd-11ec-9218-efb2cf12c71b/file-1l32mwyfc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l32mwyfb/8963c097-4517-4b46-9c68-a1e8fcfdb141/72b87c80-d1bd-11ec-9218-efb2cf12c71b/file-1l32mwyfc.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2018 (Online) 15th April Evening Slot Physics - Semiconductor Question 205 English Explanation\"></p>\n<p>Therefore, truth table for given circuit is</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n</p><table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">x</th>\n    <th class=\"tg-baqh\">y</th>\n    <th class=\"tg-baqh\">$$\\overline x $$</th>\n    <th class=\"tg-baqh\">$$x\\,.\\,y$$</th>\n    <th class=\"tg-baqh\">$$\\overline x \\,.\\,y$$</th>\n    <th class=\"tg-baqh\">$$(x\\,.\\,y)(\\overline x y)$$</th>\n    <th class=\"tg-baqh\">$$z = \\overline {(x\\,.\\,y)\\,.\\,(\\overline x y)} $$</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">1</td>\n  </tr>\n</tbody>\n</table><p></p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n</style>\n</p><table class=\"tg\" style=\"undefined;table-layout: fixed; width: 235px\">\n<colgroup>\n<col style=\"width: 71px\">\n<col style=\"width: 83px\">\n<col style=\"width: 81px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-c3ow\">x</th>\n    <th class=\"tg-c3ow\">y</th>\n    <th class=\"tg-c3ow\">z</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">0</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">1</td>\n    <td class=\"tg-c3ow\">1</td>\n  </tr>\n</tbody>\n</table><p></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "3rQQapj3cNoMwpAl",
@@ -1554,7 +1554,7 @@
     "difficulty": "easy",
     "solution": "In case of an $$'OR'$$  gate the input is zero when all inputs are zero. If any one input is $$'1',$$ then the output is $$'1'.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "AJSr9S74HLsT7oOmcjsCb",
@@ -1576,7 +1576,7 @@
     "difficulty": "easy",
     "solution": "Here,\n<br><br>Y = c . (a + b)\n<br><br>Now&nbsp;&nbsp;Y = 1 &nbsp;&nbsp;when,\n<br><br>c = 1  and  (a = 1,  b = 0  or  a = 0,  b = 1  or  a = 1,  b = 1)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "U683HfsRt4UJObxWdwxO0",
@@ -1598,7 +1598,7 @@
     "difficulty": "easy",
     "solution": "Here &nbsp;&nbsp;Y = 1 &nbsp;&nbsp;when, \n<br><br>(1)&nbsp;&nbsp;&nbsp;A = 0&nbsp;&nbsp;and&nbsp;&nbsp; B = 1&nbsp;&nbsp; $$\\left( {\\overline A B} \\right)$$\n<br><br>(2)&nbsp;&nbsp;&nbsp;A = 1&nbsp;&nbsp;and&nbsp;&nbsp;B = 0 &nbsp;&nbsp;$$\\left( {A\\,\\overline B } \\right)$$\n<br><br>(3)&nbsp;&nbsp;&nbsp;A = 1&nbsp;&nbsp;and&nbsp;&nbsp;B = 1&nbsp;&nbsp;$$\\left( {A\\,B} \\right)$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Y = $${\\overline A }$$ B + A $${\\overline B }$$ + AB\n<br><br>= $${\\overline A }$$ B + A ($${\\overline B }$$ + B)\n<br><br>= $${\\overline A }$$ B + A &nbsp;&nbsp;&nbsp;[as&nbsp;&nbsp;$${\\overline B }$$ + B = 1]\n<br><br>= (A + $${\\overline A }$$) (A + B)\n<br><br>= A + B\n<br><br>So, this represented OR gate.\n<br><br><b><u>Note :</u></b>\n<br><br>X + $${\\overline X }$$ Y  =  (X + $${\\overline X }$$)  (X + Y)\n<br><br>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "vUCzm5XSldohMn9P",
@@ -1620,7 +1620,7 @@
     "difficulty": "medium",
     "solution": "Given : Resistance $$R=100$$ kilo $$ohm=100$$ $$ \\times {10^3}\\Omega $$\n<br><br>$$\\therefore$$ Capacitance $$C=250$$ picofarad $$ = 250 \\times {10^{ - 12}}F$$\n<br><br>$$\\tau  = RC = 100 \\times {10^3} \\times 250 \\times {10^{ - 12}}\\,\\sec $$\n<br><br>$$ = 2.5 \\times {10^7} \\times {10^{ - 12}}\\sec $$\n<br><br>$$ = 2.5 \\times {10^{ - 5}}\\sec $$\n<br><br>The higher frequency which can be detected with tolerable distortion is \n<br><br>$$f = {1 \\over {2\\pi {m_a}RC}}$$\n<br><br>$$ = {1 \\over {2\\pi  \\times 0.6 \\times 2.5 \\times {{10}^{ - 5}}}}Hz$$\n<br><br>$$ = {{100 \\times {{10}^4}} \\over {2.5 \\times 1.2\\pi }}Hz$$\n<br><br>$$ = 10.61KHz$$\n<br><br>This condition is obtained by applying the condition that rate of decay of capacitor voltage must be equal or less than the rate of decay modulated signal voltage for proper detection of modulated signal.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Gdfcv4oy4wu7tb79",
@@ -1642,7 +1642,7 @@
     "difficulty": "medium",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/fbBOaw5Wvj7trGV1u/puRcWzHDB3XQuV496uEqeL9a9eYmU/kkiZRP3V11t3TCz4lxc9tj/image.png\" loading=\"lazy\" alt=\"AIEEE 2012 Physics - Semiconductor Question 213 English Explanation\">\n<br><br>By expanding this Boolean expression\n<br><br>$$Y = A.\\overline B  + B.\\overline A $$\n<br><br>Thus the truth table for this expression should be $$(1).$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "skiXcQVLCCxbWjaN",
@@ -1664,7 +1664,7 @@
     "difficulty": "easy",
     "solution": "The final boolean expression is, \n<br><br>$$X = \\overline {\\left( {\\overline A .\\overline B } \\right)}  = \\overline {\\overline A }  + \\overline {\\overline B }  = A + B \\Rightarrow \\,\\,OR\\,gate$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "GwA90mN08pR6FIV4",
@@ -1686,7 +1686,7 @@
     "difficulty": "medium",
     "solution": "Here $$y = \\overline {\\left( {\\overline A  + \\overline B } \\right)}  = \\overline {\\overline A } .\\overline {\\overline B }  = A.B.$$ \n<br><br>Thus it is an $$AND$$ gate for which truth table is \n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}\n.tg .tg-pjk9{font-size:22px;text-align:left}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-pjk9\">A</th>\n    <th class=\"tg-pjk9\">B</th>\n    <th class=\"tg-pjk9\">Y</th>\n  </tr>\n  <tr>\n    <td class=\"tg-pjk9\">0</td>\n    <td class=\"tg-pjk9\">0</td>\n    <td class=\"tg-pjk9\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-pjk9\">0</td>\n    <td class=\"tg-pjk9\">1</td>\n    <td class=\"tg-pjk9\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-pjk9\">1</td>\n    <td class=\"tg-pjk9\">0</td>\n    <td class=\"tg-pjk9\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-pjk9\">1</td>\n    <td class=\"tg-pjk9\">1</td>\n    <td class=\"tg-pjk9\">1</td>\n  </tr>\n</tbody></table> ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "dyQX5AgaDwerQRJ4",
@@ -1708,6 +1708,6 @@
     "difficulty": "easy",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/cbFj7x8DsrI8mFrxV/3TxmW5e5LS7ccXqXFO0HdhkqkyqqK/EAUSMtjm65VAHb0Nw53GYe/image.png\" loading=\"lazy\" alt=\"AIEEE 2008 Physics - Semiconductor Question 217 English Explanation\"> \n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}\n.tg .tg-2fkd{font-size:26px;text-align:left}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-2fkd\">A</th>\n    <th class=\"tg-2fkd\">B</th>\n    <th class=\"tg-2fkd\">C</th>\n  </tr>\n  <tr>\n    <td class=\"tg-2fkd\">1</td>\n    <td class=\"tg-2fkd\">1</td>\n    <td class=\"tg-2fkd\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-2fkd\">1</td>\n    <td class=\"tg-2fkd\">0</td>\n    <td class=\"tg-2fkd\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-2fkd\">0</td>\n    <td class=\"tg-2fkd\">1</td>\n    <td class=\"tg-2fkd\">1</td>\n  </tr>\n  <tr>\n    <td class=\"tg-2fkd\">0</td>\n    <td class=\"tg-2fkd\">0</td>\n    <td class=\"tg-2fkd\">0</td>\n  </tr>\n</tbody></table>\n<br><br>The truth table for the above logic gate is :\n<br><br>This truth table follows the boolean algebra $$C=A+B$$ \n<br><br>which is for $$OR$$ gate ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

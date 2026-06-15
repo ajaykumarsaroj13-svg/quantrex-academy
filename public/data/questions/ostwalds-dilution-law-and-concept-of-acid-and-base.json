@@ -31,7 +31,7 @@
     "difficulty": "easy",
     "solution": "<p>Given $pK_a = 4$, so</p>\n<p>$$K_a = 10^{-pK_a} = 10^{-4}$$</p>\n<p>For a weak acid solution of concentration $C = 10\\,\\text{mM} = 0.01\\,\\text{M}$:</p>\n<p>Let the dissociation be $x$:</p>\n<p>$$\\mathrm{HA} \\rightleftharpoons \\mathrm{H}^+ + \\mathrm{A}^-$$</p>\n<p>At equilibrium:</p>\n<ul>\n<li><p>$[\\mathrm{H}^+] = x$</p></li>\n<li><p>$[\\mathrm{A}^-] = x$</p></li>\n<li><p>$[\\mathrm{HA}] = C - x \\approx C$ (given $x$ is negligible compared to $C$)</p></li>\n</ul>\n<p>So,</p>\n<p>$$K_a = \\frac{[\\mathrm{H}^+][\\mathrm{A}^-]}{[\\mathrm{HA}]} \\approx \\frac{x^2}{C}$$</p>\n<p>Therefore,</p>\n<p>$$x = \\sqrt{K_a C} = \\sqrt{(10^{-4})(10^{-2})} = \\sqrt{10^{-6}} = 10^{-3}$$</p>\n<p>So,</p>\n<p>$$[\\mathrm{H}^+] = 10^{-3}\\,\\text{M} \\Rightarrow pH = -\\log(10^{-3}) = 3$$</p>\n<p><strong>Nearest integer = $\\boxed{3}$</strong></p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "mnrrplya",
@@ -53,7 +53,7 @@
     "difficulty": "medium",
     "solution": "<p>Given:</p>\n<ul>\n<li><p>First ionization constant:  </p>\n<p>$$K_{a1} = 8.1 \\times 10^{-8}$$</p></li>\n<li><p>Second ionization constant:  </p>\n<p>$$K_{a2} = 1.0 \\times 10^{-13}$$</p></li>\n<li><p>$0.1$ mol of $H_2A$ is dissolved in $1\\ \\text{L}$ of $0.1\\ \\text{M HCl}$</p></li>\n</ul>\n<p>So, in the final solution:</p>\n<ul>\n<li><p>Initial concentration of $H_2A = 0.1\\ \\text{M}$</p></li>\n<li><p>Since HCl is a strong acid,  </p>\n<p>$$[H^+] = 0.1\\ \\text{M}$$</p></li>\n</ul>\n<p>We have to find $[HA^-]$.</p>\n<p>For the first dissociation of dibasic acid:</p>\n<p>$$H_2A \\rightleftharpoons H^+ + HA^-$$</p>\n<p>Using the expression of first ionization constant,</p>\n<p>$$K_{a1} = \\frac{[H^+][HA^-]}{[H_2A]}$$</p>\n<p>Substitute the known values:</p>\n<p>$$8.1 \\times 10^{-8} = \\frac{(0.1)[HA^-]}{0.1}$$</p>\n<p>Since $\\dfrac{0.1}{0.1} = 1$, we get:</p>\n<p>$$[HA^-] = 8.1 \\times 10^{-8}\\ \\text{M}$$</p>\n<p>Now, because $K_{a2}$ is extremely small, further dissociation of $HA^-$ is negligible in presence of strong acid.</p>\n<p>Hence, the concentration of $HA^-$ in the resultant solution is</p>\n<p>$$\\boxed{8.1 \\times 10^{-8}\\ \\text{M}}$$</p>\n<p>So, the correct option is:</p>\n<p>$$\\boxed{\\text{Option C}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnsik8v0",
@@ -75,7 +75,7 @@
     "difficulty": "medium",
     "solution": "<p>Let the weak electrolyte $ A_xB_y $ dissociate in water as follows:</p>\n<p>$ A_xB_y \\rightleftharpoons xA^{y+} + yB^{x-} $</p>\n<p>Let the initial concentration of $ A_xB_y $ be $ c $, and let the degree of dissociation be $ \\alpha $.</p>\n\n<p>At equilibrium,</p>\n<ul>\n<li><p>Concentration of undissociated $ A_xB_y = c(1 - \\alpha) $</p></li>\n<li><p>Concentration of $ A^{y+} = cx\\alpha $</p></li>\n<li><p>Concentration of $ B^{x-} = cy\\alpha $</p></li>\n</ul>\n\n<p>$ K = \\frac{[A^{y+}]^x [B^{x-}]^y}{[A_xB_y]} $</p>\n<p>Substituting equilibrium concentrations:</p>\n<p>$ K = \\frac{(cx\\alpha)^x (cy\\alpha)^y}{c(1 - \\alpha)} $</p>\n<p>Simplify:</p>\n<p>$ K = c^{x+y-1} x^x y^y \\frac{\\alpha^{x+y}}{1 - \\alpha} $</p>\n\n<p>Since the solution is <em>concentrated</em>, $ \\alpha $ is small, but generally in such problems the expression is kept exact. However, for simplification, at high concentration the term $ (1 - \\alpha) \\approx 1 $ is often used if it is a <em>weak electrolyte</em>.</p>\n<p>So approximately:</p>\n<p>$ K \\approx c^{x+y-1} x^x y^y \\alpha^{x+y} $</p>\n\n<p>$ \\alpha^{x+y} = \\frac{K}{c^{x+y-1} x^x y^y} $</p>\n<p>$ \\alpha = \\left( \\frac{K}{c^{x+y-1} x^x y^y} \\right)^{\\frac{1}{x+y}} $</p>\n\n<p>This matches <strong>Option B</strong>:</p>\n<p>$ \\boxed{\\alpha = \\left( \\frac{K}{c^{x+y-1} x^x y^y} \\right)^{\\frac{1}{x+y}}} $</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6srmyhz",
@@ -114,7 +114,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{HA} \\rightleftharpoons \\mathrm{H}^{\\oplus}+\\mathrm{A}^{\\Theta} \\\\\n& \\mathrm{t}=0 \\quad \\mathrm{a} \\\\\n& \\mathrm{t}=\\mathrm{t} \\quad \\mathrm{a}(1-\\mathrm{x}) \\quad \\mathrm{ax} \\quad \\mathrm{ax} \\\\\n& \\mathrm{~K}_{\\mathrm{a}}=(\\mathrm{ax}) \\frac{(\\mathrm{x})}{1-\\mathrm{x}} ;\\left[\\mathrm{H}^{+}\\right]=\\mathrm{ax} \\\\\n& -\\log \\left(\\mathrm{K}_{\\mathrm{a}}\\right)=-\\log (\\mathrm{ax})-\\log \\left(\\frac{\\mathrm{x}}{1-\\mathrm{x}}\\right) \\\\\n& \\mathrm{pKa}=\\mathrm{pH}-\\log \\left(\\frac{\\mathrm{x}}{1-\\mathrm{x}}\\right) \\\\\n& \\mathrm{pH}-\\mathrm{pKa}=\\log \\left(\\frac{\\mathrm{x}}{1-\\mathrm{x}}\\right)\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9gxgcdx",
@@ -136,7 +136,7 @@
     "difficulty": "medium",
     "solution": "<p>For HCl:</p>\n<p>$ \\text{Moles of HCl} = \\text{Moles of NaOH used} $</p>\n<p>$ M \\times 40 = 0.1 \\times 2 $</p>\n<p>$ M = 0.005 $</p>\n<p>For $\\mathrm{CH}_3 \\mathrm{COOH}$:</p>\n<p>$ \\text{Moles of } \\mathrm{CH}_3 \\mathrm{COOH} = \\text{Moles of NaOH used} $</p>\n<p>$ M \\times 40 = 0.1 \\times 3 $</p>\n<p>$ M = 0.0075 $</p>\n<p>Since HCl is a strong acid, it is neutralized first.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnuv67",
@@ -153,7 +153,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\lambda_{\\mathrm{m}}^{\\circ} \\text { of } \\mathrm{NH}_4 \\mathrm{Cl}=185 \\\\\n& \\left(\\lambda_{\\mathrm{m}}^{\\circ}\\right)_{\\mathrm{NH}_4^{+}}+\\left(\\lambda_{\\mathrm{m}}^{\\circ}\\right)_{\\mathrm{Cl}^{-}}=185 \\\\\n& \\left(\\lambda_{\\mathrm{m}}^{\\circ}\\right)_{\\mathrm{NH}_4^{+}}=185-70=115 \\mathrm{Scm}^2 \\mathrm{~mol}^{-1} \\\\\n& \\left(\\lambda_{\\mathrm{m}}^{\\circ}\\right)_{\\mathrm{NH}_4 \\mathrm{OH}}=\\left(\\lambda_{\\mathrm{m}}^{\\circ}\\right)_{\\mathrm{NH}_4^{+}}+\\left(\\lambda_{\\mathrm{m}}^{\\circ}\\right)_{\\mathrm{OH}^{-}} \\\\\n& =115+170 \\\\\n& \\left(\\lambda_{\\mathrm{m}}^{\\circ}\\right)_{\\mathrm{NH}_4 \\mathrm{OH}}=285 \\mathrm{Scm}^2 \\mathrm{~mol}^{-1}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\text { degree of dissociation } & =\\frac{\\left(\\lambda_{\\mathrm{m}}\\right)_{\\mathrm{NH}_4 \\mathrm{OH}}}{\\left(\\lambda_{\\mathrm{m}}^{\\circ}\\right)_{\\mathrm{NH}_4 \\mathrm{OH}}} \\\\\n& =\\frac{85.5}{285} \\\\\n& =0.3 \\\\\n& =3 \\times 10^{-1}\n\\end{aligned}$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "lvc583g2",
@@ -170,7 +170,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{Ka}=\\frac{\\mathrm{C} \\alpha^2}{1-\\alpha} \\\\\n& 1.2 \\times 10^{-5}=(0.03)\\left(\\alpha^2\\right) \\\\\n& \\alpha=0.02 \\\\\n& \\pi=\\mathrm{iCRT} \\\\\n&=(1.02)(0.03)(0.083)(300) \\\\\n&=0.76194 \\\\\n&=76.194 \\times 10^{-2} \\mathrm{bar} \\\\\n& \\text { Nearest integer }=76\n\\end{aligned}$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1l6f6gtvc",
@@ -192,7 +192,7 @@
     "difficulty": "medium",
     "solution": "$$\\mathrm{H}_{2} \\mathrm{C}_{2} \\mathrm{O}_{4} \\rightleftharpoons 2 \\mathrm{H}^{+}+\\mathrm{C}_{2} \\mathrm{O}_{4}^{2-} \\quad \\mathrm{K}_{\\mathrm{a}_{3}}$$\n<br/><br/>\n$$\\mathrm{H}_{2} \\mathrm{C}_{2} \\mathrm{O}_{4} \\rightleftharpoons \\mathrm{H}^{+}+\\mathrm{HC}_{2} \\mathrm{O}_{4}^{-} \\quad \\mathrm{K}_{\\mathrm{a}_{1}}$$\n<br/><br/>\n$$\\mathrm{HC}_{2} \\mathrm{O}_{4}^{-} \\rightleftharpoons \\mathrm{H}^{+}+\\mathrm{C}_{2} \\mathrm{O}_{4}^{2-} \\quad \\mathrm{K}_{\\mathrm{a}_{2}}$$\n<br/><br/>\n$$\\mathrm{K}_{\\mathrm{a}_{3}}=\\frac{\\left[\\mathrm{H}^{+}\\right]^{2}\\left[\\mathrm{C}_{2} \\mathrm{O}_{4}^{2-}\\right]}{\\left[\\mathrm{H}_{2} \\mathrm{C}_{2} \\mathrm{O}_{4}\\right]}$$\n<br/><br/>\n$$\\mathrm{K}_{\\mathrm{a}_{1}}=\\frac{\\left[\\mathrm{H}^{+}\\right]\\left[\\mathrm{HC}_{2} \\mathrm{O}_{4}^{-}\\right]}{\\left[\\mathrm{H}_{2} \\mathrm{C}_{2} \\mathrm{O}_{4}\\right]}, \\mathrm{K}_{\\mathrm{a}_{2}}=\\frac{\\left[\\mathrm{H}^{+}\\right]\\left[\\mathrm{C}_{2} \\mathrm{O}_{4}^{-}\\right]}{\\left[\\mathrm{HC}_{2} \\mathrm{O}_{4}^{-}\\right]}$$\n<br/><br/>\n$$\\mathrm{K}_{\\mathrm{a}_{3}}=\\mathrm{K}_{\\mathrm{a}_{1}} \\times \\mathrm{K}_{\\mathrm{a}_{2}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l59quy18",
@@ -214,7 +214,7 @@
     "difficulty": "medium",
     "solution": "The amphoteric nature of water is explained by\nusing Bronsted-Lowry acid base concept<br/><br/>\n$$\\underset{\\text { (acid) }}{\\mathrm{H}_{2} \\mathrm{O}}+\\mathrm{NH}_{3} \\rightleftharpoons \\mathrm{OH}^{-}+\\mathrm{NH}_{4}^{+}$$<br/><br/>\n$$\\underset{\\text { (base) }}{\\mathrm{H}_{2} \\mathrm{O}}+\\mathrm{H}_{2} \\mathrm{~S} \\rightleftharpoons \\mathrm{H}_{3} \\mathrm{O}^{+}+\\mathrm{HS}^{-}$$<br/><br/>\nHence, A is false but R is true",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6jnzwgr",
@@ -253,7 +253,7 @@
     "difficulty": "easy",
     "solution": "$2 \\mathrm{KMnO}_4+16 \\mathrm{HCl} \\rightarrow 2 \\mathrm{MnCl}_2+2 \\mathrm{KCl}+8 \\mathrm{H}_2 \\mathrm{O}+\\mathrm{Cl}_2$<br/><br/>$\\mathrm{HCl}$ is not used in the process of titration because it reacts with the $\\left(\\mathrm{KMnO}_{4}\\right)$ that is used in the process and gets oxidized.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "xTuVm5bTakukx8E7331kmj7glkn",
@@ -275,7 +275,7 @@
     "difficulty": "medium",
     "solution": "NF<sub>3</sub> has no vacant orbital neither in nitrogen nor in fluorine so it cannot\naccept the electron &amp; hence cannot acts as lewis acid and but for PCl<sub>5</sub> P has\nno L.P &amp; hence it cannot acts as base but ClF3 (3 B.P + 2 L.P) &amp; SF<sub>4</sub> (4 B.P +\n1 L.P)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "AujBC42nW8tnVlF4WP3rsa0w2w9jx80i0yx",
@@ -297,7 +297,7 @@
     "difficulty": "medium",
     "solution": "0.1 M Formic acid(HCOOH) (A),\n<br>0.1 M Acetic acid(CH<sub>3</sub>COOH) (B),\n<br>0.1 M Benzoic acid(C<sub>6</sub>H<sub>5</sub>COOH) (C)\n<br><br>Conductivity (K) depends on no of ions present in unit volume of solution. When no of ions increases conductivity also increases.\n<br>Also no of ions depends on degree of dissociation($$\\alpha $$).\n<br>We know, $$\\alpha $$ = $$\\sqrt {{{{K_a}} \\over C}} $$\n<br><br>For all solutions C = 0.1 M\n<br>So, $$\\alpha $$ depends on only K<sub>$$a$$</sub> here.\n<br>K<sub>$$a$$</sub> of HCOOH = 10<sup>-4</sup>\n<br>K<sub>$$a$$</sub> of CH<sub>3</sub>COOH = 1.8 $$ \\times $$ 10<sup>-5</sup>\n<br>and K<sub>$$a$$</sub> of C<sub>6</sub>H<sub>5</sub>COOH = 6 $$ \\times $$ 10<sup>-5</sup>\n<br><br>$$ \\therefore $$ $$\\alpha $$(HCOOH) &gt; $$\\alpha $$(C<sub>6</sub>H<sub>5</sub>COOH) &gt; $$\\alpha $$(CH<sub>3</sub>COOH)\n<br><br>Therefore conductivity order = A &gt; C &gt; B",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "vEHsVLPLszmhK22W",
@@ -341,7 +341,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/HWSBCUIi7D06Wqc3H/fpNwpYrJSCGQWNa4DTh8BotY1d7GI/5py9JgXIpIPYRFcDvpps2u/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Online) 15th April Morning Slot Chemistry - Ionic Equilibrium Question 114 English Explanation\">\n<br><br>As B can accept electron pair, so it is Lewis Acid.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ZR0ak8HUPibGhHHC",
@@ -364,7 +364,7 @@
     "solution": "<p>Energy evolved on neutralization of HCl and NaOH is</p>\n<p>0.1 $$\\times$$ 57 = 5.7 kJ = 5700 J</p>\n<p>Energy utilized to rise the temperature of the solution is</p>\n<p>ms . $$\\Delta$$T = 200 $$\\times$$ 1 $$\\times$$ 4.2 $$\\times$$ 5.7 = 4788 J</p>\n<p>Energy used to increase temperature of calorimeter is</p>\n<p>= 5700 $$-$$ 4788 = 912 J</p>\n<p>ms . $$\\Delta$$T = 912</p>\n<p>m $$\\times$$ s $$\\times$$ 5.7 = 912 $$\\rightarrow$$ ms = 160 J$$^\\circ$$C<sup>$$-$$1</sup> [Calorimeter constant]</p>\n<p>Energy evolved by neutralization of CH<sub>3</sub>COOH and NaOH is</p>\n<p>= 200 $$\\times$$ 4.2 $$\\times$$ 5.6 + 160 $$\\times$$ 5.6 = 5600 J</p>\n<p>So, the energy used in dissociation of 0.1 mol CH<sub>3</sub>COOH is</p>\n<p>= 5700 $$-$$ 5600 = 100 J</p>\n<p>Thus, enthalpy of dissociation is 1 kJ mol<sup>$$-$$1</sup>.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "z7BesB8cmdX7Ypdt",
@@ -387,7 +387,7 @@
     "solution": "<p>Let's break down this problem step-by-step:</p>\n\n<p><strong>Understanding the Reaction:</strong></p>\n\n<p>The hydrolysis of methyl acetate (MeCOOCH<sub>3</sub>) is catalyzed by both strong acids (like HX) and weak acids (like HA). The reaction proceeds as follows:</p>\n\n<p>$$ MeCOOCH_3 + H_2O \\xrightarrow[or \\, HA]{H^+ \\, or \\, HX} MeCOOH + CH_3OH $$</p>\n\n<p><strong>Rate of Reaction and Acid Strength:</strong></p>\n\n<p>The rate of acid-catalyzed hydrolysis depends on the concentration of H<sup>+</sup> ions.  </p>\n\n<ul>\n<li>  <strong>Strong acids</strong> ionize completely. So, a 1M solution of HX provides 1M H<sup>+</sup> ions.</li><br>\n<li>  <strong>Weak acids</strong> ionize partially. So, a 1M solution of HA will provide significantly less than 1M H<sup>+</sup> ions.</li>\n</ul>\n<p><strong>Information from the Problem:</strong></p>\n\n<p>We are told that the initial rate of hydrolysis with HA is 1/100<sup>th</sup> of that with HX. Since the rate is directly proportional to [H<sup>+</sup>], this means the [H<sup>+</sup>] from HA is 1/100<sup>th</sup> of that from HX.</p>\n\n<p><strong>Calculating K<sub>a</sub>:</strong></p>\n\n<ol>\n<li> <strong>[H<sup>+</sup>] from HX:</strong>  Since HX is a strong acid and fully ionizes, [H<sup>+</sup>] = 1M.</li><br>\n<li> <strong>[H<sup>+</sup>] from HA:</strong> This is 1/100<sup>th</sup> the [H<sup>+</sup>] from HX, so [H<sup>+</sup>] = (1/100) \\* 1M = 10<sup>-2</sup> M.</li><br>\n<li> <strong>Setting up the K<sub>a</sub> expression:</strong></li>\n</ol>\n<p>$$ K_a = \\frac{[H^+][A^-]}{[HA]} $$</p>\n\n<p>Since the initial concentration of HA is 1M and it ionizes to a small extent, we can approximate:</p>\n\n<ul>\n<li>  [HA] ≈ 1 M</li><br>\n<li>  [H<sup>+</sup>] = [A<sup>-</sup>] = 10<sup>-2</sup> M</li>\n</ul>\n<ol>\n<li> <strong>Calculating K<sub>a</sub>:</strong></li>\n</ol>\n<p>$$ K_a = \\frac{(10^{-2})(10^{-2})}{1} = 1 \\times 10^{-4} $$</p>\n\n<p><strong>Answer:</strong></p>\n\n<p>Therefore, the K<sub>a</sub> of the weak acid HA is <strong>1 × 10<sup>-4</sup> (Option A).</strong></p>\n\n<p></p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0uLOaBC4G2UrdrHb",
@@ -409,7 +409,7 @@
     "difficulty": "easy",
     "solution": "<p>To determine in which reactions $ H_2PO_4^- $ acts as an acid, we need to understand the Bronsted-Lowry concept of acids and bases. According to this concept, an acid is a substance that donates a proton (H⁺) to another substance, while a base is a substance that accepts a proton.</p>\n<p>Let&#39;s analyze each reaction :</p>\n<ol>\n<li><p>1. $ H_3PO_4 + H_2O \\to H_3O^+ + H_2PO_4^- $</p>\n<ul>\n<br/><li>In this reaction, $ H_3PO_4 $ is donating a proton to $ H_2O $, forming $ H_3O^+ $ and $ H_2PO_4^- $.</li>\n<br/><li>$ H_2PO_4^- $ is the product of this reaction and is not acting as an acid here.</li>\n</ul>\n</li>\n<br/><li><p>2. $ H_2PO_4^- + H_2O \\to HPO_4^{2−} + H_3O^+ $</p>\n<ul>\n<br/><li>In this reaction, $ H_2PO_4^- $ donates a proton to $ H_2O $, resulting in $ HPO_4^{2−} $ and $ H_3O^+ $.</li>\n<li><br/>$ H_2PO_4^- $ is acting as an acid in this reaction.</li>\n</ul>\n</li>\n<li><br/><p>3. $ H_2PO_4^- + OH^- \\to H_3PO_4 + O^{2-} $</p>\n<ul>\n<li><br/>This reaction is not correctly balanced and does not follow standard chemical reaction rules. The product $ O^{2-} $ is highly unlikely in aqueous solutions due to its reactivity. </li>\n<li><br/>A more correct reaction would be $ H_2PO_4^- + OH^- \\to HPO_4^{2−} + H_2O $. In this corrected reaction, $ H_2PO_4^- $ is donating a proton to $ OH^- $, which makes it an acid.</li>\n</ul>\n</li>\n</ol>\n<p>Given the information, the correct option is :</p>\n<p>Option A : (ii) only</p>\n<p>This is because in reaction (ii), $ H_2PO_4^- $ is clearly acting as an acid by donating a proton to water. In reaction (i), $ H_2PO_4^- $ is not acting as an acid but rather is formed as a product. Reaction (iii) as written is chemically incorrect, but even in a corrected form, it would show $ H_2PO_4^- $ acting as an acid.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "JC7Yq9RbskMJSRmo",
@@ -431,7 +431,7 @@
     "difficulty": "medium",
     "solution": "The correct order of acidic strength of the given species in\n<br><br>$$\\mathop {HS{O_3}F}\\limits_{\\left( {iv} \\right)}  &gt; \\mathop {{H_3}{O^ + }}\\limits_{\\left( {ii} \\right)}  &gt; \\mathop {HS{O_4}^ - }\\limits_{\\left( {iii} \\right)}  &gt; \\mathop {HC{O_3}^ - }\\limits_{\\left( i \\right)} $$\n<br><br>or$$\\,\\,\\,\\left( i \\right) &lt; \\left( {iii} \\right) &lt; \\left( {ii} \\right) &lt; \\left( {iv} \\right)$$ \n<br><br>It corresponds to choice $$(c)$$ which is correct answer. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "QKKG3pWkKH2YvftO",
@@ -453,7 +453,7 @@
     "difficulty": "easy",
     "solution": "$${H_2}A\\,\\rightleftharpoons\\,{H^ + }\\,\\, + \\,\\,H{A^ - }$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,{K_1} = 1.0 \\times {10^{ - 5}} = {{\\left[ {{H^ + }} \\right]\\left[ {H{A^ - }} \\right]} \\over {\\left[ {{H_2}A} \\right]}}$$ (Given)\n<br><br>$$H{A^ - } \\to {H^ + } + {A^ - }$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,{K_2} = 5.0 \\times {10^{ - 10}}$$\n<br><br>$$ = {{\\left[ {{H^ + }} \\right]\\left[ {{A^{ -  - }}} \\right]} \\over {\\left[ {H{A^ - }} \\right]}}$$ (Given)\n<br><br>$$K = {{{{\\left[ {{H^ + }} \\right]}^2}\\left[ {{A^{2 - }}} \\right]} \\over {\\left[ {{H_2}A} \\right]}}$$\n<br><br>$$ = {K_1} \\times {K_2}$$\n<br><br>$$ = \\left( {1.0 \\times {{10}^{ - 5}}} \\right) \\times \\left( {5 \\times {{10}^{ - 10}}} \\right)$$\n<br><br>$$ = 5 \\times {10^{ - 15}}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "vckZKHCipEfA0nTp",
@@ -475,7 +475,7 @@
     "difficulty": "easy",
     "solution": "Conjugate acid-base pair differ by only one proton.\n<br><br>$$O{H^ - } \\to {H^ + } + {O^2}^ - \\,\\,$$ Conjugate base of $$O{H^ - }$$ is $${O^{2 - }}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "BjNHwlQ1smZPuAsw",
@@ -497,7 +497,7 @@
     "difficulty": "easy",
     "solution": "<b>NOTE :</b> Conjugate acid-base differ by $${H^ + }$$\n<br><br>$$\\mathop {{H_2}PO_4^ - }\\limits_{Acid} \\mathop  \\to \\limits^{ - H} \\,\\mathop {\\,HPO{{_4^ - }^ - }}\\limits_{conjugate\\,\\,base} $$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "5VhUNGZC3Ih0M1jv",
@@ -519,6 +519,6 @@
     "difficulty": "easy",
     "solution": "$${\\left( {HS{O_4}} \\right)^ - }\\,\\,\\,$$ can accept and donate a proton\n<br><br>$${\\left( {HS{O_4}} \\right)^ - } + {H^ + } \\to {H_2}S{O_4}\\,\\,\\,$$ (acting as base)\n<br><br>$${\\left( {HS{O_4}} \\right)^ - } - {H^ + } \\to {H_2}S{O_4}^{2 - }.\\,\\,\\,$$ (acting as acid)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

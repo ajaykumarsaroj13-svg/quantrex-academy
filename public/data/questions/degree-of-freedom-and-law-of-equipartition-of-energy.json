@@ -41,7 +41,7 @@
     "difficulty": "easy",
     "solution": "<p>The internal energy $(U)$ of $n$ moles of an ideal gas at temperature $T$ is given by $U=n C_v T$, where $C_v$ is the molar specific heat at constant volume.</p>\n<p>For the mixture, total initial internal energy $\\mathrm{U}_{\\text {initial }}=\\mathrm{U}_1+\\mathrm{U}_2$</p>\n<p>Total final internal energy $\\mathrm{U}_{\\text {final }}=\\left(\\mathrm{n}_1+\\mathrm{n}_2\\right) \\mathrm{C}_{\\mathrm{v}, \\text { mix }} \\mathrm{T}_{\\text {mix }}$</p>\n<p>Since both gases are monoatomic, their molar specific heats are the same,</p>\n<p>$$ C_{v 1}=C_{v 2}=C_{v, \\operatorname{mix}}=\\frac{3}{2} R $$</p>\n<p>Therefore, using conservation of energy (total initial internal energy is equal to final internal energy).</p>\n<p>$$ \\mathrm{n}_1 \\mathrm{C}_{\\mathrm{v}} \\mathrm{~T}_1+\\mathrm{n}_2 \\mathrm{C}_{\\mathrm{v}} \\mathrm{~T}_2=\\left(\\mathrm{n}_1+\\mathrm{n}_2\\right) \\mathrm{C}_{\\mathrm{v}} \\mathrm{~T}_{\\operatorname{mix}} $$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{T}_{\\mathrm{mix}}=\\frac{\\mathrm{n}_1 \\mathrm{~T}_1+\\mathrm{n}_2 \\mathrm{~T}_2}{\\left(\\mathrm{n}_1+\\mathrm{n}_2\\right)} $$</p>\n<p>Moles of first gas is $\\mathrm{n}_1=2$</p>\n<p>Temperature of first gas is $\\mathrm{T}_1=\\mathrm{T}$</p>\n<p>Moles of second gas $\\mathrm{n}_2=6$</p>\n<p>Temperature of second gas $\\mathrm{T}_2=2 \\mathrm{~T}$</p>\n<p>On substituting the values into expression for the temperature of mixture,</p>\n<p>$$ \\mathrm{T}_{\\mathrm{mix}}=\\frac{(2 \\times \\mathrm{T})+(6 \\times 2 \\mathrm{~T})}{2+6} $$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{T}_{\\operatorname{mix}}=\\frac{2 \\mathrm{~T}+12 \\mathrm{~T}}{8}$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{T}_{\\mathrm{mix}}=\\frac{14 \\mathrm{~T}}{8}$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{T}_{\\mathrm{mix}}=\\frac{7}{4} \\mathrm{~T} $$</p>\n<p>Therefore, the correct option is (D).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6rp6a6h",
@@ -63,7 +63,7 @@
     "difficulty": "medium",
     "solution": "<p>Let's analyze the problem step by step:</p>\n\n<p>For a rigid diatomic molecule (without vibrational modes):</p>\n\n\n<p><p>Degrees of freedom: </p>\n\n<p><p>Translation: 3</p></p>\n<p><p>Rotation: 2  </p></p>\n<p><p>Total: 5</p></p></p>\n<p><p>The molar specific heat at constant volume is given by:</p>\n<p>$$C_v = \\frac{5}{2}R$$</p></p>\n\n<p><p>At constant pressure, it is:</p>\n<p>$$C_p = C_v + R = \\frac{5}{2}R + R = \\frac{7}{2}R$$</p></p>\n\n<p><p>Therefore, the ratio is:</p>\n<p>$$\\gamma_1 = \\frac{C_p}{C_v} = \\frac{\\frac{7}{2}R}{\\frac{5}{2}R} = \\frac{7}{5} \\approx 1.4$$</p></p>\n\n\n<p>For the diatomic molecule that also has vibrational modes (assuming the vibrational mode is fully excited):</p>\n\n\n<p><p>Additional vibrational mode contributions:</p>\n\n<p>Each vibrational mode contributes 2 degrees of freedom (one kinetic and one potential).</p></p>\n<p><p>Therefore, the degrees of freedom become:</p>\n<p>$$3\\ (\\text{translation}) + 2\\ (\\text{rotation}) + 2\\ (\\text{vibration}) = 7$$</p></p>\n\n<p><p>The molar specific heat at constant volume now is:</p>\n<p>$$C_v = \\frac{7}{2}R$$</p></p>\n\n<p><p>And at constant pressure:</p>\n<p>$$C_p = C_v + R = \\frac{7}{2}R + R = \\frac{9}{2}R$$</p></p>\n\n<p><p>Thus, the ratio is:</p>\n<p>$$\\gamma_2 = \\frac{C_p}{C_v} = \\frac{\\frac{9}{2}R}{\\frac{7}{2}R} = \\frac{9}{7} \\approx 1.2857$$</p></p>\n\n\n<p>Comparison:</p>\n\n\n<p><p>For the rigid molecule, $$\\gamma_1 \\approx 1.4$$.</p></p>\n<p><p>For the molecule with vibrational modes, $$\\gamma_2 \\approx 1.2857$$.</p></p>\n<p><p>Clearly, $$\\gamma_2 < \\gamma_1$$.</p></p>\n\n<p>Therefore, the correct option is:</p>\n<p>Option A: $$\\gamma_2 < \\gamma_1$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j3yu",
@@ -119,7 +119,7 @@
     "difficulty": "easy",
     "solution": "<p>The explanation uses the equation for the heat capacity ratio, $ \\gamma = 1 + \\frac{2}{\\text{f}} $, where $ \\text{f} $ is the degrees of freedom of the gas. Here's how it applies to different types of gases:</p>\n\n<p><strong>Triatomic Rigid Gas</strong>:  </p>\n\n\n<p><p>Degrees of freedom ($ \\text{f} $) = 6</p></p>\n<p><p>$ \\gamma = 1 + \\frac{2}{6} = \\frac{4}{3} $</p></p>\n\n\n<p><strong>Diatomic Non-Rigid Gas</strong>:  </p>\n\n\n<p><p>Degrees of freedom ($ \\text{f} $) = 7</p></p>\n<p><p>$ \\gamma = 1 + \\frac{2}{7} = \\frac{9}{7} $</p></p>\n\n\n<p><strong>Diatomic Rigid Gas</strong>:  </p>\n\n\n<p><p>Degrees of freedom ($ \\text{f} $) = 5</p></p>\n<p><p>$ \\gamma = 1 + \\frac{2}{5} = \\frac{7}{5} $</p></p>\n\n\n<p><strong>Monoatomic Gas</strong>:  </p>\n\n\n<p><p>Degrees of freedom ($ \\text{f} $) = 3</p></p>\n<p><p>$ \\gamma = 1 + \\frac{2}{3} = \\frac{5}{3} $</p></p>\n\n<p>Therefore, when matching List I with List II, the correct pairing is:</p>\n\n<p><p><strong>A</strong> (Triatomic rigid gas) - <strong>III</strong> $(\\frac{4}{3})$</p></p>\n<p><p><strong>B</strong> (Diatomic non-rigid gas) - <strong>IV</strong> $(\\frac{9}{7})$</p></p>\n<p><p><strong>C</strong> (Monoatomic gas) - <strong>I</strong> $(\\frac{5}{3})$</p></p>\n<p><p><strong>D</strong> (Diatomic rigid gas) - <strong>II</strong> $(\\frac{7}{5})$</p></p>\n\n<p>Thus, the correct answer from the options given is:</p>\n\n<p><strong>A-III, B-IV, C-I, D-II</strong></p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lsbkmth3",
@@ -141,7 +141,7 @@
     "difficulty": "easy",
     "solution": "<p>To calculate the molar specific heat at constant volume of a gas mixture, we can use a weighted average based on the molar specific heats of the individual gases and their respective amounts (moles).</p>\n\n<p>Let's call $C_{V,m}$ the molar specific heat at constant volume of the mixture, $n_1$ the number of moles of the monoatomic gas, $n_2$ the number of moles of the diatomic gas, $C_{V,m1}$ the molar specific heat at constant volume of the monoatomic gas, and $C_{V,m2}$ the molar specific heat at constant volume of the diatomic gas.</p>\n\n<p>For a monoatomic ideal gas, the molar specific heat at constant volume is:</p>\n\n<p>$$ C_{V,m1} = \\frac{3}{2}R $$</p>\n\n<p>For a diatomic ideal gas, if we assume the gas is rigid and does not exhibit vibrational modes, the molar specific heat at constant volume is:</p>\n\n<p>$$ C_{V,m2} = \\frac{5}{2}R $$</p>\n\n<p>The weighted average of the molar specific heat for the mixture is:</p>\n\n<p>$$ C_{V,m} = \\frac{(n_1 \\cdot C_{V,m1} + n_2 \\cdot C_{V,m2})}{n_1 + n_2} $$</p>\n\n<p>Putting the values into the equation, we get:</p>\n\n<p>$$ C_{V,m} = \\frac{(2 \\cdot \\frac{3}{2}R + 6 \\cdot \\frac{5}{2}R)}{2 + 6} $$</p>\n\n<p>$$ C_{V,m} = \\frac{(3R + 15R)}{8} $$</p>\n\n<p>$$ C_{V,m} = \\frac{18R}{8} $$</p>\n\n<p>$$ C_{V,m} = \\frac{9}{4}R $$</p>\n\n<p>Therefore, the molar specific heat of the mixture at constant volume is $\\frac{9}{4}R$. The correct answer is:</p>\n\n<p>Option D</p>\n\n<p>$$ \\frac{9}{4}R $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsc3ypyg",
@@ -163,7 +163,7 @@
     "difficulty": "medium",
     "solution": "<p>To find the temperature at which the average kinetic energy of a monatomic molecule is $$0.414 \\, \\text{eV}$$, we use the equation for the average kinetic energy of a molecule in terms of temperature:</p>\n<blockquote>\n<p>$$K_{\\text{avg}} = \\frac{3}{2} k_B T$$</p>\n</blockquote>\n<p>Where:</p>\n<ul>\n<li>$$K_{\\text{avg}}$$ is the average kinetic energy</li>\n<li>$$k_B$$ is the Boltzmann constant, given as $$1.38 \\times 10^{-23} \\, \\text{J/K}$$</li>\n<li>$$T$$ is the temperature in Kelvin</li>\n</ul>\n<p>First, we need to convert the average kinetic energy from eV to Joules since the Boltzmann constant is in Joules. The conversion factor is $$1 \\, \\text{eV} = 1.6 \\times 10^{-19} \\, \\text{J}$$, so:</p>\n<blockquote>\n<p>$$K_{\\text{avg}} = 0.414 \\, \\text{eV} = 0.414 \\times 1.6 \\times 10^{-19} \\, \\text{J}$$</p>\n</blockquote>\n<p>Substituting $$K_{\\text{avg}}$$ and $$k_B$$ into the equation:</p>\n<blockquote>\n<p>$$\\frac{3}{2} k_B T = 0.414 \\times 1.6 \\times 10^{-19} \\, \\text{J}$$</p>\n</blockquote>\n<p>Solving for $$T$$:</p>\n<blockquote>\n<p>$$T = \\frac{0.414 \\times 1.6 \\times 10^{-19} \\, \\text{J}}{\\frac{3}{2} \\times 1.38 \\times 10^{-23} \\, \\text{J/K}}$$</p>\n</blockquote>\n<p>After performing the calculations:</p>\n<blockquote>\n<p>$$T \\approx 3200 \\, \\text{K}$$</p>\n</blockquote>\n<p>Therefore, the temperature at which the average kinetic energy of a monatomic molecule is $$0.414 \\, \\text{eV}$$ is approximately 3200 K.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsflyhcu",
@@ -185,7 +185,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\mathrm{f}_{\\mathrm{eq}}=\\frac{\\mathrm{n}_1 \\mathrm{f}_1+\\mathrm{n}_2 \\mathrm{f}_2}{\\mathrm{n}_1+\\mathrm{n}_2}$$</p>\n<p>For diatomic gas $$\\mathrm{f}_{\\mathrm{eq}}=5$$</p>\n<p>$$\\begin{aligned}\n& 5=\\frac{(\\mathrm{N})(6)+(2)(3)}{\\mathrm{N}+2} \\\\\n& 5 \\mathrm{~N}+10=6 \\mathrm{~N}+6 \\\\\n& \\mathrm{~N}=4\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsg6302e",
@@ -207,7 +207,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{array}{ll}\n\\mathrm{f}_1=3, & \\mathrm{f}_2=5 \\\\\n\\mathrm{n}_1=3, & \\mathrm{n}_2=2\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\mathrm{f}_{\\text {mixture }}=\\frac{\\mathrm{n}_1 \\mathrm{f}_1+\\mathrm{n}_2 \\mathrm{f}_2}{\\mathrm{n}_1+\\mathrm{n}_2}=\\frac{9+10}{\\mathrm{f}}=\\frac{19}{5} \\\\\n& \\gamma_{\\text {mixture }}=1+\\frac{2 \\times 5}{19}=\\frac{29}{19}=1.52\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd66tqi",
@@ -229,7 +229,7 @@
     "difficulty": "medium",
     "solution": "<p>To determine the total internal energy of the gas mixture, we adhere to the equipartition theorem, which dictates that each degree of freedom contributes $$\\frac{1}{2} RT$$ to the internal energy per mole, where $R$ is the gas constant and $T$ is the temperature.</p>\n<p>An argon atom, being a noble gas, is monoatomic, with 3 translational degrees of freedom. Since we neglect all vibrational modes, and monoatomic gases have no rotational or vibrational degrees of freedom that contribute to energy at our specified temperature, each mole of argon has $$3 \\times \\frac{1}{2} RT = \\frac{3}{2} RT$$ of energy.</p>\n<p>Oxygen, on the other hand, is a diatomic molecule. This implies that under normal conditions, it has 3 translational and 2 rotational degrees of freedom. So, each mole of oxygen has $$5 \\times \\frac{1}{2} RT = \\frac{5}{2} RT$$ of energy as we are neglecting vibrational modes which typically become relevant only at higher temperatures.</p>\n<p>Hence, the total internal energy ($U$) of the gas mixture is:</p>\n<p>$$\nU = (\\text{Energy per mole of Ar} \\times \\text{Number of moles of Ar}) + (\\text{Energy per mole of O}_{2} \\times \\text{Number of moles of O}_{2})\n$$</p>\n<p>$$\nU = \\left(\\frac{3}{2} RT \\times 8\\right) + \\left(\\frac{5}{2} RT \\times 6\\right)\n$$</p>\n<p>$$\nU = \\left(12 RT + 15 RT\\right) \n$$</p>\n<p>$$\nU = 27 RT\n$$</p>\n<p>Thus, the total internal energy of the system is $27 RT$. </p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv2erjlj",
@@ -251,7 +251,7 @@
     "difficulty": "easy",
     "solution": "<p>For non-linear polyatomic molecules, both \ntranslational and rotational degree of freedom have \nsame value and is equal to 3.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lvb295f4",
@@ -273,7 +273,7 @@
     "difficulty": "medium",
     "solution": "<p>The energy of a diatomic molecule depends on the degrees of freedom it has. For a non-rigid diatomic molecule, there are more degrees of freedom compared to a rigid diatomic molecule. Specifically, a non-rigid diatomic molecule has translational, rotational, and vibrational degrees of freedom. The translational and rotational degrees of freedom are the same for both rigid and non-rigid diatomic molecules, which include:</p>\n\n<ul>\n\n<li>3 translational degrees of freedom,</li>\n\n<li>2 rotational degrees of freedom (since linear molecules do not have the third rotational freedom because it requires rotating around the bond axis, which doesn't change the energy for linear molecules).</li>\n\n</ul>\n\n<p>Additionally, non-rigid diatomic molecules have vibrational degrees of freedom. For a simple diatomic molecule, there is 1 vibrational degree of freedom (since vibration along the bond axis is possible). However, considering the energy distribution across these vibrations requires accounting for both the potential and kinetic energy associated with vibrations, effectively doubling the vibrational degrees of freedom for energy calculations to 2 (one for kinetic and one for potential energy).</p>\n\n<p>Thus, the total degrees of freedom for a non-rigid diatomic molecule are:</p>\n\n<ul>\n\n<li>3 (translational) + 2 (rotational) + 2 (vibrational) = 7 degrees of freedom.</li>\n\n</ul>\n\n<p>The formula for the average energy of a molecule in terms of degrees of freedom at temperature T is given by:</p>\n\n<p>$ E = \\frac{f}{2}k_\\mathrm{B}T $</p>\n\n<p>where $f$ is the total number of degrees of freedom, $k_\\mathrm{B}$ is the Boltzmann constant, and $T$ is the temperature.</p>\n\n<p>Plugging in the values for a non-rigid diatomic molecule:</p>\n\n<p>$ E = \\frac{7}{2}k_\\mathrm{B}T $</p>\n\n<p>Therefore, the total energy for 10 such molecules would be:</p>\n\n<p>$ 10 \\times \\frac{7}{2}k_\\mathrm{B}T = 35k_\\mathrm{B}T $</p>\n\n<p>So, the correct answer is:</p>\n\n<p>Option D: 35 $k_\\mathrm{B}T$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv5gs2yl",
@@ -295,7 +295,7 @@
     "difficulty": "easy",
     "solution": "<p>To find the ratio of specific heats at constant volume ($C_V$) of the gases, we need to understand the degrees of freedom each type of gas molecule has, as this determines their specific heat capacity at constant volume. Degrees of freedom refer to the number of independent ways in which a molecule can store energy.</p>\n\n<p>A monoatomic gas molecule has 3 translational degrees of freedom. This is because it can move in three dimensions: x, y, and z. A diatomic gas, if we assume it to be rigid for this context, has 5 degrees of freedom: 3 translational like the monoatomic gas and 2 rotational since it can rotate around two axes perpendicular to the bond axis connecting the two atoms. Vibrational modes are not considered at room temperature for a rigid diatomic gas, as these require higher energy to become accessible.</p>\n\n<p>The specific heat capacity at constant volume for a monoatomic gas is given by:</p>\n\n<p>$$C_{V, mono} = \\frac{3}{2} R$$</p>\n\n<p>And for a diatomic gas, it's:</p>\n\n<p>$$C_{V, diatomic} = \\frac{5}{2} R$$</p>\n\n<p>Where $R$ is the ideal gas constant.</p>\n\n<p>To find the ratio of their specific heats at constant volume, we divide the specific heat of the monoatomic gas by that of the diatomic gas:</p>\n\n<p>$$\\frac{C_{V, mono}}{C_{V, diatomic}} = \\frac{\\frac{3}{2} R}{\\frac{5}{2} R} = \\frac{3}{2} \\times \\frac{2}{5} = \\frac{3}{5}$$</p>\n\n<p>Thus, the correct ratio of the specific heats at constant volume of the monoatomic to diatomic (rigid) gases is given by Option B: $\\frac{3}{5}$. </p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgyfa78e",
@@ -317,7 +317,7 @@
     "difficulty": "easy",
     "solution": "<p>Monoatomic gases possess only translational degrees of freedom. So, option (I) matches with (A).</p>\n<p>Polyatomic gases have translational and rotational degrees of freedom. So, option (II) matches with (D).</p>\n<p>Rigid diatomic gases have translational, rotational and vibrational degrees of freedom. So, option (III) matches with (B).</p>\n<p>Non-rigid diatomic gases possess translational, rotational and vibrational degrees of freedom. So, option (IV) matches with (C).</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lguxo6ar",
@@ -339,7 +339,7 @@
     "difficulty": "easy",
     "solution": "<p>The root mean square speed ($$v_{rms}$$) of a gas is given by the formula:</p>\n<p>$$v_{rms} = \\sqrt{\\frac{3kT}{m}}$$</p>\n<p>where $$k$$ is the Boltzmann constant, $$T$$ is the temperature, and $$m$$ is the molar mass of the gas molecules.</p>\n<p>The vessels contain neon (monoatomic), chlorine (diatomic), and uranium hexafluoride (polyatomic) gases. Their molar masses are:</p>\n<ol>\n<li>Neon: $$20.18\\,\\text{g/mol}$$ (monoatomic)</li>\n<li>Chlorine: $$2 \\times 35.45 = 70.90\\,\\text{g/mol}$$ (diatomic)</li>\n<li>Uranium hexafluoride: $$238.03 + 6 \\times 18.998 = 352.03\\,\\text{g/mol}$$ (polyatomic)</li>\n</ol>\n<p>Since the temperature and the Boltzmann constant are the same for all gases, the root mean square speed is inversely proportional to the square root of the molar mass:</p>\n<p>$$v_{rms} \\propto \\frac{1}{\\sqrt{m}}$$</p>\n<p>The lighter the gas, the higher its root mean square speed. Comparing the molar masses of the gases, we find that neon is the lightest, followed by chlorine, and uranium hexafluoride is the heaviest. Therefore, the root mean square speeds will be:</p>\n<p>$$v{rms}(\\text{mono}) &gt; v{rms}(\\text{dia}) &gt; v_{rms}(\\text{poly})$$</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgp07l1w",
@@ -361,7 +361,7 @@
     "difficulty": "easy",
     "solution": "The mean free path (λ) of molecules in a gas is given by the formula:\n<br/><br/>\n$$\\lambda = \\frac{kT}{\\sqrt{2}\\pi d^2 P}$$\n<br/><br/>\nwhere k is the Boltzmann constant, T is the temperature in Kelvin, d is the diameter of the gas molecules, and P is the pressure.\n<br/><br/>\nAt STP (standard temperature and pressure), the temperature is $$273\\mathrm{~K}$$ and the pressure is $$1\\mathrm{~atm}$$. We are given that the mean free path at STP is $$1500d$$. Let's denote the mean free path at $$373\\mathrm{~K}$$ as λ':\n<br/><br/>\n$$\\lambda' = \\frac{k(373\\mathrm{~K})}{\\sqrt{2}\\pi d^2 (1\\mathrm{~atm})}$$\n<br/><br/>\nTo find the ratio of the mean free path at $$373\\mathrm{~K}$$ to that at STP, we can divide λ' by λ:\n<br/><br/>\n$$\\frac{\\lambda'}{\\lambda} = \\frac{\\frac{k(373\\mathrm{~K})}{\\sqrt{2}\\pi d^2 (1\\mathrm{~atm})}}{\\frac{k(273\\mathrm{~K})}{\\sqrt{2}\\pi d^2 (1\\mathrm{~atm})}}$$\n<br/><br/>\nThe Boltzmann constant, pressure, and molecular diameter cancel out:\n<br/><br/>\n$$\\frac{\\lambda'}{\\lambda} = \\frac{373\\mathrm{~K}}{273\\mathrm{~K}}$$\n<br/><br/>\nNow, we can solve for λ':\n<br/><br/>\n$$\\lambda' = \\lambda \\cdot \\frac{373\\mathrm{~K}}{273\\mathrm{~K}}$$\n<br/><br/>\nSubstituting the given value of λ as $$1500d$$:\n<br/><br/>\n$$\\lambda' = 1500d \\cdot \\frac{373\\mathrm{~K}}{273\\mathrm{~K}}$$\n<br/><br/>\n$$\\lambda' \\approx 2049d$$\n<br/><br/>\nThus, the mean free path of the molecules at $$373\\mathrm{~K}$$ while maintaining the standard pressure is approximately $$2049d$$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgq223aw",
@@ -383,7 +383,7 @@
     "difficulty": "medium",
     "solution": "<p>The relationship between the root-mean-square (rms) speed ($$v_{rms}$$) and the average speed ($$v_{avg}$$) of molecules in a gas can be found using the Maxwell-Boltzmann distribution. The rms speed and average speed are related as follows:</p>\n\n$$v_{rms} = \\sqrt{\\frac{3RT}{M}}$$\n\n$$v_{avg} = \\sqrt{\\frac{8RT}{\\pi M}}$$\n\n<p>Where:</p>\n<ul>\n    <li>$$R$$ is the ideal gas constant</li>\n    <li>$$T$$ is the temperature in Kelvin</li>\n    <li>$$M$$ is the molar mass of the gas</li>\n    <li>$$\\pi$$ is the mathematical constant pi</li>\n</ul>\n\n<p>In this problem, the rms speed of the oxygen molecule is given by:</p>\n\n$$v_{rms} = \\left(1+\\frac{5}{x}\\right)^{\\frac{1}{2}} v_{avg}$$\n\n<p>Now, let's divide the expression for $$v_{rms}$$ by the expression for $$v_{avg}$$:</p>\n\n$$\\frac{v_{rms}}{v_{avg}} = \\frac{\\sqrt{\\frac{3RT}{M}}}{\\sqrt{\\frac{8RT}{\\pi M}}} = \\left(1+\\frac{5}{x}\\right)^{\\frac{1}{2}}$$\n\n<p>By simplifying the expression, we get:</p>\n\n$$\\frac{v_{rms}}{v_{avg}} = \\frac{\\sqrt{3}}{\\sqrt{\\frac{8}{\\pi}}} = \\left(1+\\frac{5}{x}\\right)^{\\frac{1}{2}}$$\n\n<p>Square both sides of the equation:</p>\n\n$$\\frac{3}{\\frac{8}{\\pi}} = 1 + \\frac{5}{x}$$\n\n<p>Now we will substitute the provided value of $$\\pi = \\frac{22}{7}$$:</p>\n\n$$\\frac{3}{\\frac{8}{\\frac{22}{7}}} = 1 + \\frac{5}{x}$$\n\n<p>By simplifying the expression, we get:</p>\n\n$$\\frac{3 \\cdot \\frac{22}{7}}{8} = 1 + \\frac{5}{x}$$\n\n<p>Now let's solve for $$x$$:</p>\n\n$$\\frac{66}{56} - 1 = \\frac{5}{x}$$\n\n$$\\frac{10}{56} = \\frac{5}{x}$$\n\n<p>Multiplying both sides by $$x$$:</p>\n\n$$\\frac{10}{56}x = 5$$\n\n<p>Finally, solving for $$x$$:</p>\n\n$$x = \\frac{5 \\cdot 56}{10} = 28$$\n\n<p>So, the value of $$x$$ is $$\\boxed{28}$$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldwr2dow",
@@ -405,7 +405,7 @@
     "difficulty": "easy",
     "solution": "For monoatomic gas $\\gamma_1=\\frac{5}{3}$<br/><br/>\nFor diatomic gas at low temperatures<br/><br/>\n$$\n\\begin{aligned}\n& \\gamma_2=\\frac{7}{5} \\\\\\\\\n& \\therefore \\frac{\\gamma_1}{\\gamma_2}=\\frac{\\frac{5}{3}}{\\frac{7}{5}}=\\frac{25}{21}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldtz1qik",
@@ -427,7 +427,7 @@
     "difficulty": "easy",
     "solution": "Diatomic gas molecules have three translational degree of freedom, two rotational degree of freedom \\& it is given that it has one vibrational mode so there are two additional degree of freedom corresponding to one vibrational mode, so total degree of freedom $=7$<br/><br/>\n$$\n\\mathrm{C}_{\\mathrm{v}}=\\frac{\\mathrm{fR}}{2}=\\frac{7 \\mathrm{R}}{2}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ldo65oa8",
@@ -449,7 +449,7 @@
     "difficulty": "medium",
     "solution": "$\\Delta Q=n C_{P} \\Delta T= $ \n<br/><br/>$$n\\left( {{f \\over 2} + 1} \\right)R\\Delta T$$\n<br/><br/>= $$n\\left( {{5 \\over 2} + 1} \\right)R\\Delta T$$\n<br/><br/>= $$n\\left( {{7 \\over 2}} \\right)R\\Delta T$$\n<br/><br/>Given, $\\Delta Q$ = 735\n<br/><br/>$$ \\Rightarrow $$ $$n\\left( {{7 \\over 2}} \\right)R\\Delta T$$ = 735\n<br/><br/>$$ \\Rightarrow $$ $$nR\\Delta T = 735 \\times {2 \\over 7}$$\n\n<br/><br/>Also, $$\\Delta $$U = $${f \\over 2}nR\\Delta T$$\n<br/><br/>= $${5 \\over 2}nR\\Delta T$$\n<br/><br/>= $${5 \\over 2} \\times 735 \\times {2 \\over 7}$$\n<br/><br/>= 525 J",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "liip89tq",
@@ -472,7 +472,7 @@
     "solution": "\n\n<b>1. Formula for Sound Velocity:</b>\n <br/><br/>  - The velocity of sound, denoted as $$ v $$, is determined by the equation $$ v = \\sqrt{\\frac{\\gamma R T}{M}} $$, where:\n  <br/><br/>   - $$ \\gamma $$ is a factor given by $$ \\gamma = 1 + \\frac{2}{n} $$.\n   <br/><br/>  - $$ R $$ is the gas constant.\n    <br/><br/> - $$ T $$ is the temperature.\n    <br/><br/> - $$ M $$ is the molar mass of the gas.\n\n<br/><br/><b>2. Relation of $$ \\gamma $$ with $$ n $$:</b>\n   <br/><br/>- The value of $$ \\gamma $$ is inversely related to $$ n $$. This means as $$ n $$ increases, $$ \\gamma $$ decreases.\n\n<br/><br/><b>3. Internal Energy Relation:</b>\n<br/><br/>   - The internal energy, denoted as $$ U $$, for a mole of gas is given by $$ U = \\frac{n R T}{2} $$.\n\n<br/><br/><b>4. Effect of Increasing $$ n $$ on Sound Velocity and Internal Energy:</b>\n<br/><br/> When the value of $$ n $$ increases:\n<br/><br/>     - The factor $$ \\gamma $$ decreases, according to its formula.\n<br/><br/>     - As a result, the velocity of sound $$ v $$ also decreases, as it is dependent on $$ \\sqrt{\\gamma} $$.\n<br/><br/>     - Conversely, the internal energy $$ U_n $$ increases with the increase in $$ n $$, as evident from the internal energy formula.\n\n<p>Therefore, in summary, a higher value of $$ n $$ leads to a lower velocity of sound and higher internal energy in the context of these formulas.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l59m787e",
@@ -494,7 +494,7 @@
     "difficulty": "easy",
     "solution": "<p>$${{{C_P}} \\over {{C_V}}} = \\gamma $$</p>\n<p>$${C_V} = \\left( {{f \\over 2}} \\right)R$$ and $${C_P} - {C_V} = R$$</p>\n<p>$$ \\Rightarrow {{{C_P}} \\over C} = {{1 + f/2} \\over {f/2}} = 1 + {2 \\over f}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6i1565s",
@@ -516,7 +516,7 @@
     "difficulty": "easy",
     "solution": "<p>$${C_V} = {{nR} \\over 2}$$</p>\n<p>And $${C_P} = {{nR} \\over 2} + R$$</p>\n<p>$$ \\Rightarrow {{{C_V}} \\over {{C_P}}} = {{{{nR} \\over 2}} \\over {{{nR} \\over 2} + R}} = {n \\over {n + 2}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6kn0ylm",
@@ -560,7 +560,7 @@
     "difficulty": "easy",
     "solution": "<p>According to kinetic theory of gases,</p>\n<p>A. The motion of the gas molecules freezes at 0 K.</p>\n<p>B. The mean free path decreases on increasing the number density of the molecules as $$\\mu  = {1 \\over {\\sqrt 2 \\pi n{d^2}}} \\Rightarrow \\mu  \\propto {1 \\over n}$$.</p>\n<p>C. The mean free path increases on increasing the volume. Now if temperature is increased by keeping the pressure constant the volume should increase that is mean free path increases.</p>\n<p>D. K.E.<sub>avg</sub> per molecule per degree of freedom is $${1 \\over 2}{k_B}T$$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l56ad3pb",
@@ -616,7 +616,7 @@
     "difficulty": "medium",
     "solution": "For polyatomic gas molecule has 3 rotational degrees of freedom,\n3 translational degrees of freedom, and 2 vibrational modes.\n<br/><br/>So, number of vibrational degrees of freedom = 2 $$ \\times $$ 2 = 4\n<br/><br/>Degree of freedom of polyatomic gas<br><br>f = T + R + V<br><br>f = 3 + 3 + 4 = 10<br><br>$$\\beta  = 1 + {2 \\over f} = 1 + {2 \\over 10}$$<br><br>$$\\beta  = {{12} \\over 10} = 1.2$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "LMJLGCnPVhCdO9GPCd1kmj17vjo",
@@ -638,7 +638,7 @@
     "difficulty": "medium",
     "solution": "f = 3T + 3R + 24V<br><br>= 30<br><br>$$\\gamma$$ = 1 + $${2 \\over f}$$<br><br>$$\\gamma$$ = 1 + $${2 \\over 30}$$<br><br>= 1.066<br><br>Nearest Ans. = 1.03",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ZPVUTefqFsJbdP5DMp1kmj1c1mr",
@@ -660,7 +660,7 @@
     "difficulty": "medium",
     "solution": "Initial internal energy = Final internal energy<br><br>$${{{F_1}} \\over 2}{n_1}R{T_1} + {{{F_2}} \\over 2}{n_2}R{T_2} = {{{F_1}} \\over 2}{n_1}RT + {{{F_2}} \\over 2}{n_2}RT$$<br><br>$$ \\Rightarrow $$ $$T = {{{F_1}{n_1}{T_1} + {F_2}{n_2}{T_2}} \\over {{F_1}{n_1} + {F_2}{n_2}}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lRjiLALRPpRZfjdt4T1kmlhq3uw",
@@ -682,7 +682,7 @@
     "difficulty": "easy",
     "solution": "Energy associated with each digress of freedom is $${1 \\over 2}{k_B}T$$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktms90wo",
@@ -721,7 +721,7 @@
     "difficulty": "easy",
     "solution": "$$\\gamma  = 1 + {2 \\over f}$$<br><br>$$ \\Rightarrow $$ $$f = {2 \\over {\\gamma  - 1}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krsvkz8e",
@@ -743,7 +743,7 @@
     "difficulty": "easy",
     "solution": "<p>For a monoatomic ideal gas, the average kinetic energy per molecule is determined by the equipartition theorem. This theorem states that the energy is equally distributed among all the available degrees of freedom.</p>\n<p>A monoatomic gas has three translational degrees of freedom, corresponding to motion in the x, y, and z directions. Each degree of freedom contributes an average energy of $\\frac{1}{2} k_BT$, where $k_B$ is the Boltzmann constant and $T$ is the absolute temperature.</p>\n<p>So for a monoatomic gas with three translational degrees of freedom, the average energy per molecule is: $$\\frac{3}{2} k_BT.$$</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "PesjmeqFYD1rQtwYSH1klt2kqz5",
@@ -765,7 +765,7 @@
     "difficulty": "medium",
     "solution": "The translational kinetic energy &amp; rotational kinetic energy both obey Maxwell's distribution independent of each other.<br><br>T.K.E. of diatomic molecules = $${3 \\over 2}kT$$<br><br>R.K.E. of diatomic molecules = $${2 \\over 2}kT$$<br><br>So statement I is true but statement II is false.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "pOdOf6VyXLRgLinVL31klryaxou",
@@ -787,7 +787,7 @@
     "difficulty": "easy",
     "solution": "$$dV = n{5 \\over 2}R\\Delta T$$<br><br>$$dQ = n{7 \\over 2}R\\Delta T$$<br><br>$$dW = dQ - dV$$<br><br>$$ = n{2 \\over 2}R\\Delta T$$<br><br>$$ \\therefore $$ $$dV:dQ:dW$$<br><br>$$ = n{5 \\over 2}R\\Delta T:n{7 \\over 2}R\\Delta T:n{2 \\over 2}R\\Delta T$$<br><br>$$ = 5:7:2$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "807Tx8PLagOu2pPq951kluljren",
@@ -809,7 +809,7 @@
     "difficulty": "medium",
     "solution": "U = 3PV + 4<br><br>$$ \\Rightarrow $$ $${{nf} \\over 2}$$RT = 3PV + 4<br><br>$$ \\Rightarrow $$ $${{f} \\over 2}$$PV = 3PV + 4<br><br>$$ \\Rightarrow $$ f = 6 + $${8 \\over {PV}}$$<br><br>Since degree of freedom is more than 6 therefore gas is polyatomic.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kudx7twu",
@@ -832,7 +832,7 @@
     "solution": "$$\\gamma  = {3 \\over 2}$$<br/><br/>$${T_0}{V_0}^{{3 \\over 2} - 1} = {T_R} \\times {\\left( {{{{V_0}} \\over 2}} \\right)^{{3 \\over 2} - 1}}$$<br/><br/>$${{{T_R}} \\over {{T_0}}} = \\sqrt 2 $$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kudu8kn8",
@@ -908,7 +908,7 @@
     "difficulty": "easy",
     "solution": "U $$ = {{{f_1}} \\over 2}{n_1}RT + {{{f_2}} \\over 2}{n_2}RT$$\n<br><br>$$ = {5 \\over 2}\\left( {3RT} \\right) + {3 \\over 2} \\times 5RT$$\n<br><br>$$ \\therefore $$ U $$ = 15RT$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "JPEYJc3DN0sgCEnH4djgy2xukev3hx9u",
@@ -947,7 +947,7 @@
     "difficulty": "medium",
     "solution": "$$160 = n{C_p}50$$ ....(i)<br><br>$$240 = n{C_v}100$$ ....(ii)<br><br>Dividing (i) by (ii), we get<br><br>$${{160} \\over {240}} = {{{C_p}} \\over {{C_v}}} \\times {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $${{{C_p}} \\over {{C_v}}}$$ = $$ {4 \\over 3}$$\n<br><br>We know,\n<br><br>$$ \\gamma  = {{{C_p}} \\over {{C_v}}} = 1 + {2 \\over f} = {4 \\over 3}$$<br><br>$$ \\Rightarrow f = 6$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "YB1fHHIUFrxgNzeheIjgy2xukf24rxlm",
@@ -969,7 +969,7 @@
     "difficulty": "medium",
     "solution": "Degree of freedom (f) = 3 + 3 = 6 and n = 1\n<br><br>U = $${f \\over 2}nRT$$\n<br><br>= $${6 \\over 2} \\times 1 \\times RT$$\n<br><br>= 3RT",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "O373M1zCC6g9sU4ulkjgy2xuketz37vd",
@@ -991,7 +991,7 @@
     "difficulty": "easy",
     "solution": "$$\\gamma  = {C_p}/{C_v}$$<br><br>$${\\gamma _A} = 1 + {2 \\over 3} = 5/3$$<br><br>$${\\gamma _B} = 1 + {2 \\over 5} = 7/5$$<br><br>$${\\gamma _C} = 1 + {2 \\over 7} = 9/7$$<br><br>$${\\gamma _D} = 1 + {2 \\over 6} = 4/3$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jafpTQWd84pVQfYxiyjgy2xukfrp43ac",
@@ -1013,7 +1013,7 @@
     "difficulty": "easy",
     "solution": "Total degree of freedom (f) = 3 + 2 = 5\n<br><br>U = $${{nfRT} \\over 2}$$ = $${{5RT} \\over 2}$$\n<br><br>$$\\gamma $$ = $${{{C_p}} \\over {{C_v}}}$$ = $$1 + {2 \\over f}$$ = $$1 + {2 \\over 5}$$ = $${7 \\over 5}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "qDAq65pyHyvDYKnkvR7k9k2k5i891ed",
@@ -1035,7 +1035,7 @@
     "difficulty": "medium",
     "solution": "Degree of freedom of a diatomic molecule if\nvibration is absent = 5\n<br><br>Degree of freedom of a diatomic molecule if\nvibration is present = 7\n<br><br>$$ \\therefore $$ $$C_V^A$$ = $${5 \\over 2}R$$\n<br><br>and $$C_V^B$$ = $${7 \\over 2}R$$\n<br><br>$$ \\therefore $$ $${{C_V^A} \\over {C_V^B}} = {5 \\over 7}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0Hs2slbFMnthp8c8bAjFf",
@@ -1057,7 +1057,7 @@
     "difficulty": "easy",
     "solution": "U $$ = {{{f_1}} \\over 2}{n_1}RT + {{{f_2}} \\over 2}{n_2}RT$$\n<br><br>$$ = {5 \\over 2}\\left( {3RT} \\right) + {3 \\over 2} \\times 5RT$$\n<br><br>U $$ = 15RT$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "OPkaZS430TtlRW6nulQ2f",
@@ -1079,7 +1079,7 @@
     "difficulty": "easy",
     "solution": "Energy = $${1 \\over 2}$$ nRT = $${f \\over 2}$$PV\n<br><br>= $${f \\over 2}$$ (3 $$ \\times $$ 10<sup>6</sup>) (2)\n<br><br>= f $$ \\times $$ 3 $$ \\times $$ 10<sup>6</sup>\n<br><br>Considering gas is monoatomic i.e. f = 3\n<br><br>E. = 9 $$ \\times $$ 10<sup>6</sup> J",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "9QIfFyuj1Z8TR45aMEH0d",
@@ -1101,7 +1101,7 @@
     "difficulty": "medium",
     "solution": "For A:<br>\n$${{{C_p}} \\over {{C_v}}} = \\gamma  = 1 + {2 \\over f} = {{29} \\over {22}}$$<br>\nIt gives f = 6.3 $$ \\approx $$ 6 (3 translational, 2 rotational and 1 vibrational)<br><br>\nFor B:<br>\n$${{{C_p}} \\over {{C_v}}} = \\gamma  = 1 + {2 \\over f} = {{30} \\over {21}}$$<br>\n$$ \\therefore $$ f = 4.67 $$ \\approx $$ 5  (3 translational, 2 rotational, no vibrational)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "9nf3gTTSQl39QuM4a0yuj",
@@ -1123,7 +1123,7 @@
     "difficulty": "medium",
     "solution": "<p>An HCl molecule, being diatomic, has:</p>\n<ul>\n<li>3 translational degrees of freedom</li>\n<li>2 rotational degrees of freedom</li>\n<li>2 vibrational degrees of freedom</li>\n</ul>\n<p>The total number of degrees of freedom is $3 + 2 + 2 = 7$.</p>\n<p>According to the equipartition theorem, each degree of freedom contributes $\\frac{1}{2} k_B T$ to the total energy. So the total energy is given by:\n$\\frac{7}{2} k_B T$</p>\n<p>The translational kinetic energy is related to the root-mean-square (rms) speed $\\overline{v}$ by:\n$\\frac{1}{2} m \\overline{v}^2 = \\frac{7}{2} k_B T$</p>\n<p>Rearranging to solve for the temperature, we find:\n$T = \\frac{m \\overline{v}^2}{7k_B}$</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "PGKTmHvWIYIXR6qqsZIsg",
@@ -1145,7 +1145,7 @@
     "difficulty": "medium",
     "solution": "$${{{C_p}} \\over {{C_v}}} = {{{f_{mix}} + 2} \\over {{f_{mix}}}} = {3 \\over 2}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ f<sub>mix</sub> = 4\n<br><br>As, f<sub>mix</sub> = $${{{n_1}{f_1} + {n_2}{f_2}} \\over {{n_1} + {n_2}}}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 4 = $${{2 \\times 3 + n \\times 5} \\over {2 + n}}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ n = 2 moles.\n\n\n\n\n\n\n\n\n\n\n\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "FDAMkN5fSAaDcX32dcjFi",
@@ -1167,7 +1167,7 @@
     "difficulty": "easy",
     "solution": "For ideal gas molecule with 5 degree of freedom, \n<br><br>C<sub>v</sub> = $${5 \\over 2}$$ R and  C<sub>p</sub> = $${7 \\over 2}$$ R\n<br><br>$$\\therefore\\,\\,\\,$$ $${{{C_p}} \\over {{C_v}}}$$ = $${{{7 \\over 2}R} \\over {{5 \\over 2}R}}$$ = $${7 \\over 5}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "5o3HkcV1kyHmB6Ji",
@@ -1190,7 +1190,7 @@
     "solution": "<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0kjstz1/65741ca1-d9cf-421d-98cb-32dada648df8/ba35a6d0-a032-11ec-9819-f5ef8e3b6498/file-1l0kjstz2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0kjstz1/65741ca1-d9cf-421d-98cb-32dada648df8/ba35a6d0-a032-11ec-9819-f5ef8e3b6498/file-1l0kjstz2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2017 Paper 1 Offline Physics - Heat and Thermodynamics Question 61 English Explanation\"></p>\n<p>$$\\because$$ dW = PdV</p>\n<p>and there is no change in volume in isochoric process.</p>\n<p>$$\\therefore$$ dW = 0</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "YmZAm7igoXcSkQFa",
@@ -1231,7 +1231,7 @@
     "solution": "<p>The internal energy of one mole of an ideal gas at temperature T is given by $$U = {f \\over 2}RT$$, where f is the degrees of freedom of the gas molecule. The degress of freedom of the gas molecule. The degrees of freedom for hydrogen (diatomic) and helium (monatomic) gases are f<sub>H<sub>2</sub></sub> = 5 and f<sub>He</sub> = 3, respectively. Thus, $${U_{{H_2}}} = {5 \\over 2}RT$$ and $${U_{He}} = {3 \\over 2}RT$$. The total internal energy of the gas mixture is</p>\n<p>$${U_{total}} = {U_{{H_2}}} + {U_{He}} = {5 \\over 2}RT + {3 \\over 2}RT = 4RT$$.</p>\n<p>The mixture contains two moles of the gases. The internal energy per mole of the mixture is $${U_{mix}} = {U_{total}}/2 = 2RT$$.</p>\n<p>The specific heat at constant volume is given by $${C_v} = dU/dT$$. Thus, the specific heats at constant volume for helium and the mixture are</p>\n<p>$${C_{v,He}} = d{U_{He}}/dT = {3 \\over 2}R$$, and</p>\n<p>$${C_{v,mix}} = d{U_{mix}}/dT = 2R$$</p>\n<p>The specific heats at constant pressure, $${C_p} = {C_v} + R$$, for these gases are</p>\n<p>$${C_{p,He}} = {C_{v,He}} + R = {5 \\over 2}R$$, and</p>\n<p>$${C_{p,mix}} = {C_{v,mix}} + R = 3R$$.</p>\n<p>The ratio of specific heats, $$\\gamma  = {C_p}/{C_v}$$, are $${\\gamma _{He}} = 5/3$$ and $${\\gamma _{mix}} = 3/2$$. The speed of sound, in a gas of molecular mass M, is given by $${v_s} = \\sqrt {\\gamma RT/M} $$. The molecular mass of the gas mixture is</p>\n<p>$${M_{mix}} = {{{n_{{H_2}}}{M_{{H_2}}} + {n_{He}}{M_{He}}} \\over {{n_{{H_2}}} + {n_{He}}}}$$</p>\n<p>$$ = {{(1)(2) + (1)(4)} \\over {1 + 1}} = 3$$ g/mol,</p>\n<p>where n<sub>H<sub>2</sub></sub> = 1 and n<sub>He</sub> = 1 are the number of moles of hydrogen and helium in the gas mixture. The ratio of the speeds of sound in the gas mixture and helium is</p>\n<p>$${{{v_{s,mix}}} \\over {{v_{s,He}}}} = {{\\sqrt {{\\gamma _{mix}}RT/{M_{mix}}} } \\over {\\sqrt {{\\gamma _{He}}RT/{M_{He}}} }} = \\sqrt {{{{\\gamma _{mix}}} \\over {{\\gamma _{He}}}}{{{M_{He}}} \\over {{M_{mix}}}}} $$</p>\n<p>$$ = \\sqrt {{{(3/2)(4)} \\over {(5/3)(3)}}}  = \\sqrt {{6 \\over 5}} $$</p>\n<p>The rms speed of the atoms/molecules is given by $${v_{rms}} = \\sqrt {3RT/M} $$. The ratio of the rms speed of helium atoms to that of hydrogen molecules is</p>\n<p>$${{{v_{rms,He}}} \\over {{v_{rms,{H_2}}}}} = {{\\sqrt {3RT/{M_{He}}} } \\over {\\sqrt {3RT/{M_{{H_2}}}} }} = \\sqrt {{{{M_{{H_2}}}} \\over {{M_{He}}}}}  = \\sqrt {{2 \\over 4}}  = \\sqrt {{1 \\over 2}} $$.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Tzpk8lbOHfHs2Qln",
@@ -1254,7 +1254,7 @@
     "solution": "<p>The root mean square (rms) speed of a gas is given by the formula :</p>\n\n<p>$$v_{rms} = \\sqrt{\\frac{3kT}{m}}$$</p>\n\n<p>where :</p>\n\n<ul>\n\n<li>$$k$$ is the Boltzmann constant</li>\n\n<li>$$T$$ is the temperature in Kelvin</li>\n\n<li>$$m$$ is the mass of one molecule of the gas</li>\n\n</ul>\n\n<p>Given that the atomic mass of helium is 4 amu and that of argon is 40 amu, we can find the rms speed ratio by comparing the rms speeds of helium and argon, as temperature $$T$$ and Boltzmann constant $$k$$ are the same for both gases :</p>\n\n<p>$$\\frac{v_{rms} \\left( \\text{helium} \\right)}{v_{rms} \\left( \\text{argon} \\right)} = \\sqrt{\\frac{m_{\\text{argon}}}{m_{\\text{helium}}}}$$</p>\n\n<p>Substituting the masses :</p>\n\n<p>$$m_{\\text{helium}} = 4 \\text{ amu}$$</p>\n\n<p>$$m_{\\text{argon}} = 40 \\text{ amu}$$</p>\n\n<p>we get :</p>\n\n<p>$$\\frac{v_{rms} \\left( \\text{helium} \\right)}{v_{rms} \\left( \\text{argon} \\right)} = \\sqrt{\\frac{40}{4}} = \\sqrt{10} \\approx 3.16$$</p>\n\n<p>Thus, the ratio of the rms speeds of helium to argon is approximately 3.16.</p>\n\n<p>The correct answer is :</p>\n\n<p>Option D : 3.16</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "cvb8OhdJxDNYfqIV",
@@ -1276,7 +1276,7 @@
     "difficulty": "medium",
     "solution": "Number of moles of first gas $$ = {{{n_1}} \\over {{N_A}}}$$\n<br>Number of moles of second gas $$ = {{{n_2}} \\over {{N_A}}}$$\n<br>Number of moles of third gas $$ = {{{n_3}} \\over {{N_A}}}$$\n<br>If there is no loss of energy then\n<br>$${P_1}{V_1} + {P_2}{V_2} + {P_3}{V_3} = PV$$\n<br>$${{{n_1}} \\over {{N_A}}}R{T_1} + {{{n_2}} \\over {{N_A}}}R{T_2} + {{{n_3}} \\over {{N_A}}}R{T_3}$$\n<br>$$ = {{{n_1} + {n_2} + {n_3}} \\over {{N_A}}}R{T_{mix}}$$\n<br>$$ \\Rightarrow {T_{mix}} = {{{n_1}{T_1} + {n_2}{T_2} + {n_3}{T_3}} \\over {{n_1} + {n_2} + {n_3}}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfmgvp4b",
@@ -1299,7 +1299,7 @@
     "solution": "<p>We know that $${C_P} - {C_V} = R$$ is same for all gases. For a diatomic gas, we have</p>\n<p>$${C_V} = {{5R} \\over 2}$$</p>\n<p>Therefore, $${C_P} = {C_V} + R = {{7R} \\over 2}$$</p>\n<p>For a monoatomic gas, we have</p>\n<p>$${C_V} = {{3R} \\over 2}$$</p>\n<p>$${C_P} = {{5R} \\over 2}$$</p>\n<p>Therefore,</p>\n<p>$${C_P} + {C_V} = 6R$$ (diatomic)</p>\n<p>$${C_P} + {C_V} = 4R$$ (monoatomic)</p>\n<p>$${{{C_P}} \\over {{C_V}}} = {7 \\over 5} = 1.4$$ (diatomic)</p>\n<p>$${{{C_P}} \\over {{C_V}}} = {5 \\over 3} = 1.67$$ (monoatomic)</p>\n<p>$${C_P}\\,.\\,{C_V} = {{35{R^2}} \\over 4}$$ (diatomic)</p>\n<p>$${C_P}\\,.\\,{C_V} = {{15{R^2}} \\over 4}$$ (monoatomic)</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "itoaTCzLm3bOEG1V",
@@ -1321,6 +1321,6 @@
     "difficulty": "easy",
     "solution": "$$Volume\\,\\, = \\,\\,{{mass} \\over {density}} = {1 \\over 4}{m^3}$$\n<br>$$K.E = {5 \\over 2}PV$$\n<br>$$ = {5 \\over 2} \\times 8 \\times {10^4} \\times {1 \\over 4}$$\n<br>$$ = 5 \\times {10^4}J$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

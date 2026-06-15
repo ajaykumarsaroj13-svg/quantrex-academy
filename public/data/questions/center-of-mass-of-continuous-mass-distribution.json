@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>Let's solve this step by step.</p>\n\n<p><p>The original disc has a radius of 20 cm and is uniformly dense. Its mass (or weight) is proportional to its area:</p>\n<p>$$M = \\pi \\times 20^2 = 400\\pi.$$</p></p>\n<p><p>A hole of radius 5 cm is cut out. Similarly, its mass (if it were a complete disc) would be:</p>\n<p>$$m = \\pi \\times 5^2 = 25\\pi.$$</p></p>\n<p><p>Since the hole cuts through the disc, we treat it as having a negative mass. The center of the original disc is at the origin (0,0), and we need to locate the center of the hole.</p></p>\n<p><p>The problem states that the edge of the hole touches the edge of the disc. This means that the distance between the centre of the hole and the centre of the large disc is:</p>\n<p>$$20 \\text{ cm (disc radius)} - 5 \\text{ cm (hole radius)} = 15 \\text{ cm}.$$</p>\n<p>For convenience, we can assume that the hole is positioned along the positive x-axis. Thus, the centre of the hole is at:</p>\n<p>$$\\vec{r}_\\text{hole} = (15, 0).$$</p></p>\n<p><p>Now, the centre of mass (COM) of the remaining shape (the disc with the hole) can be calculated using the idea of superposition:</p>\n<p>$$\\vec{R}_{\\text{cm}} = \\frac{M \\cdot \\vec{r}_\\text{disc} - m \\cdot \\vec{r}_\\text{hole}}{M - m}.$$</p>\n<p>Here, $\\vec{r}_\\text{disc} = (0,0)$ (since the large disc is centered at the origin).</p></p>\n<p><p>Plug in the values:</p>\n<p>$$\\vec{R}_{\\text{cm}} = \\frac{400\\pi \\cdot (0,0) - 25\\pi \\cdot (15,0)}{400\\pi - 25\\pi}     = \\frac{-(25\\pi)(15,0)}{375\\pi}    = \\frac{-375\\pi \\cdot (1,0)}{375\\pi}    = (-1,0).$$</p></p>\n<p><p>This tells us that the centre of mass of the remaining piece is 1 cm from the origin, along the negative x-axis.</p></p>\n\n<p>Thus, the distance of the centre of mass from the origin is:</p>\n<p>$$\\boxed{1.0\\text{ cm}}.$$</p>\n<p>So, the correct answer is Option D.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6w9ofsj",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7hmd1v0/7e80d86c-2a19-4056-9562-57aba5587662/b216bec0-f1e3-11ef-aab0-892656acd133/file-jaoe38c1m7hmd1v1.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7hmd1v0/7e80d86c-2a19-4056-9562-57aba5587662/b216bec0-f1e3-11ef-aab0-892656acd133/file-jaoe38c1m7hmd1v1.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 28th January Morning Shift Physics - Center of Mass and Collision Question 11 English Explanation\"></p>\n<p>$$\\sigma  = {{{\\sigma _0}x} \\over {ab}}$$</p>\n<p>Let's consider a strip of infinitesimal width dx at x distance away from O.</p>\n<p>As $\\sigma$ depends only on x i.e. it's constant for a specific value of x so centre of mass of the strip will be $$\\left( {x,{b \\over 2}} \\right)$$.</p>\n<p>Now, we know,</p>\n<p>$$COM = \\left( {{{\\int {xdm} } \\over {\\int {dm} }},{{\\int {ydm} } \\over {\\int {dm} }}} \\right)$$</p>\n<p>$$ = \\left( {{{\\int {x\\sigma dA} } \\over {\\int {\\sigma dA} }},{{\\int {{b \\over 2}\\sigma dA} } \\over {\\int {\\sigma dA} }}} \\right)$$</p>\n<p>$$ = \\left( {{{\\int {xbdx{{{\\sigma _0}x} \\over {ab}}} } \\over {\\int {{{{\\sigma _0}x} \\over {ab}}bdx} }},{{{b \\over 2}\\int {\\sigma dA} } \\over {\\int {\\sigma dA} }}} \\right)$$</p>\n<p>For whole plate, x varies from o to a.</p>\n<p>So, $$ = \\overleftarrow C OM = \\left( {{{{{{\\sigma _0}} \\over a}\\int_0^a {{x^2}dx} } \\over {{{{\\sigma _0}} \\over a}\\int_0^a {xdx} }},{b \\over 2}} \\right)$$</p>\n<p>$$ = \\left( {{{{1 \\over 3}\\left[ {{x^3}} \\right]_0^a} \\over {{1 \\over 2}\\left[ {{x^2}} \\right]_0^a}},{b \\over 2}} \\right)$$</p>\n<p>$$ = \\left( {{2 \\over 3}{{{a^3}} \\over {{a^2}}},{b \\over 2}} \\right)$$</p>\n<p>$$ \\Rightarrow COM = \\left( {{2 \\over 3}a,{b \\over 2}} \\right)$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j7si",
@@ -63,7 +63,7 @@
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9l61tfd/b1d6aef7-cb4b-422e-b181-c12006142166/78f64290-1b6f-11f0-bbff-0f04539847fe/file-jaoe38c1m9l61tfe.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9l61tfd/b1d6aef7-cb4b-422e-b181-c12006142166/78f64290-1b6f-11f0-bbff-0f04539847fe/file-jaoe38c1m9l61tfe.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 7th April Morning Shift Physics - Center of Mass and Collision Question 10 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\mathrm{x}_{\\mathrm{com}}=\\frac{2 \\mathrm{~m}(10)+3 \\mathrm{~m}(0)}{5 \\mathrm{~m}}=4 \\mathrm{~cm} \\\\\n&amp; \\mathrm{y}_{\\mathrm{com}}=\\frac{2 \\mathrm{~m}(0)+3 \\mathrm{~m}(15)}{5 \\mathrm{~m}}=9 \\mathrm{~cm} \\\\\n&amp; \\overrightarrow{\\mathrm{r}}_{\\mathrm{com}}=4 \\hat{\\mathrm{i}}+9 \\hat{\\mathrm{j}}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv5gt54p",
@@ -80,7 +80,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{array}{ll}\nx_{\\mathrm{cm}}=1.5 & \\\\\nM_{+}=6 \\sigma & y_{+}=1 \\\\\nM_{-}=-\\sigma & y_{-}=1.5\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& y_{\\mathrm{cm}}=\\frac{6 \\sigma \\times 1+(-\\sigma) \\times 1.5}{6 \\sigma-\\sigma} \\\\\n& =\\frac{6-1.5}{5}=\\frac{4.5}{5}=0.9 \\\\\n& \\frac{x}{y}=\\frac{1.5}{0.9}=\\frac{15}{9}\n\\end{aligned}$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1l6ntkra9",
@@ -97,7 +97,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\rho  = {\\rho _0}\\left( {1 - {{{x^2}} \\over {{L^2}}}} \\right)$$ kg/m</p>\n<p>$${x_{cm}} = {{A\\int\\limits_0^L {{\\rho _0}\\left( {1 - {{{x^2}} \\over {{L^2}}}} \\right)x\\,dx} } \\over {A\\int\\limits_0^L {{\\rho _0}\\left( {1 - {{{x^2}} \\over {{L^2}}}} \\right)\\,dx} }}$$</p>\n<p>$${x_{cm}} = {{{{{L^2}} \\over 2} - {{{L^2}} \\over 4}} \\over {L - {L \\over 3}}} = {{{{{L^2}} \\over 4}} \\over {{{2L} \\over 3}}} = {{3L} \\over 8}$$</p>\n<p>$$ \\Rightarrow \\alpha  = 8$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "NEz5V3xfQIgv74eD421kmkc1n3y",
@@ -170,7 +170,7 @@
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kd4dk6pa6nbe/53393a91-f678-456f-83dc-ba0308629697/8cfbdea0-50de-11ea-b62d-51ccc5d4afb6/file-7kd4dk6pa6nbf-252w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 8th January Morning Slot Physics - Center of Mass and Collision Question 90 English Explanation\">\n<br><br>m<sub>1</sub> = $$\\sigma $$A<sub>1</sub> = $$\\sigma $$$$ \\times $$(1$$ \\times $$2) = 2$$\\sigma $$\n<br><br>m<sub>2</sub> = $$\\sigma $$A<sub>2</sub> = $$\\sigma $$$$ \\times $$(2$$ \\times $$1) = 2$$\\sigma $$\n<br><br>$$ \\therefore $$ x<sub>cm</sub> = $${{{m_1}{x_1} + {m_2}{x_2}} \\over {{m_1} + {m_2}}}$$ \n<br><br>= $${{2\\sigma  \\times 0.5 + 2\\sigma  \\times 1} \\over {2\\sigma  + 2\\sigma }}$$ = 0.75\n<br><br>and y<sub>cm</sub> = $${{{m_1}{y_1} + {m_2}{y_2}} \\over {{m_1} + {m_2}}}$$\n<br><br>= $${{2\\sigma  \\times 1 + 2\\sigma  \\times 2.5} \\over {2\\sigma  + 2\\sigma }}$$ = 1.75",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "u9CwJJkzFTx8gwZ5IU7k9k2k5kv9tjp",
@@ -192,7 +192,7 @@
     "difficulty": "medium",
     "solution": "$$\\rho $$ = a + b$${\\left( {{x \\over L}} \\right)^2}$$\n<br><br>dm = $$\\rho $$dx = $$\\left( {a + b{{{x^2}} \\over {{L^2}}}} \\right)dx$$\n<br><br>M = $$\\int {dm} $$ = $$\\int\\limits_0^L {\\left( {a + b{{{x^2}} \\over {{L^2}}}} \\right)dx} $$\n<br><br>X<sub>com</sub> = $${{\\int {xdm} } \\over {\\int {dm} }}$$\n<br><br>= $${{\\int\\limits_0^L {\\left( {a + b{{{x^2}} \\over {{L^2}}}} \\right)xdx} } \\over {\\int\\limits_0^L {\\left( {a + b{{{x^2}} \\over {{L^2}}}} \\right)dx} }}$$\n<br><br>= $${{{{a{L^2}} \\over 2} + {b \\over {{L^2}}}.{{{L^4}} \\over 4}} \\over {aL + {b \\over {{L^2}}}.{{{L^3}} \\over 3}}}$$\n<br><br>= $${{\\left( {{{4a + 2a} \\over 8}} \\right)L} \\over {\\left( {{{3a + b} \\over 3}} \\right)}}$$\n<br><br>= $${3 \\over 4}\\left( {{{2a + b} \\over {3a + b}}} \\right)L$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "13Mw2X2WaU5MnrKO4acsn",
@@ -214,7 +214,7 @@
     "difficulty": "medium",
     "solution": "X- coordinate of CM of remaining sheet<br>\n$${X_{cm}} = {{MX - mx} \\over {M - m}}$$<br><br>\n= $${{\\left( {4m} \\right) \\times \\left( {{a \\over 2}} \\right) - M\\left( {{{3a} \\over 4}} \\right)} \\over {4m - m}} = {{5a} \\over {12}}$$<br><br>\nSimilarly y<sub>cm</sub> = $${{5b} \\over {12}}$$<br><br>\n$$ \\therefore $$ $$CM\\left( {{{5a} \\over {12}},{{5b} \\over {12}}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "omQyOEUcRZBHaz0FivKQg",
@@ -236,7 +236,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l82x6o37/eda26380-1a00-4434-87cf-4900d2f5fc69/b1034c30-34e2-11ed-b84c-a3c7c2456516/file-1l82x6o38.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l82x6o37/eda26380-1a00-4434-87cf-4900d2f5fc69/b1034c30-34e2-11ed-b84c-a3c7c2456516/file-1l82x6o38.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2016 (Online) 10th April Morning Slot Physics - Center of Mass and Collision Question 111 English Explanation\"><br>Here &nbsp;&nbsp;AB = x\n<br><br>and&nbsp;&nbsp;  BC = y\n<br><br>and &nbsp;&nbsp;$$\\lambda $$ = linear mass density.\n<br><br>As centre of mass is below point A, so horizontal distance  of the centre of mass from B is = xcos60<sup>o</sup> = $${x \\over 2}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;X<sub>CM</sub> = $${x \\over 2}$$ = $${{{m_1}{x_1} + {m_2}{x_2}} \\over {{m_1} + {m_2}}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${x \\over 2}$$ = $${{\\left( {\\lambda x} \\right)\\left( {{x \\over 2}} \\right)\\cos {{60}^o} + \\left( {\\lambda y} \\right)\\left( {{y \\over 2}} \\right)} \\over {\\lambda \\left( {x + y} \\right)}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${x \\over 2}$$ = $${{{{{x^2}} \\over 4} + {{{y^2}} \\over 2}} \\over {x + y}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;x<sup>2</sup> + xy = $${{{x^2}} \\over 2} + {y^2}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;x<sup>2</sup> + 2xy $$-$$ 2y<sup>2</sup> = 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;x = $${{ - 2y \\pm \\sqrt {{{\\left( {2y} \\right)}^2} - 4.1\\left( { - 2{y^2}} \\right)} } \\over {2.1}}$$\n<br><br>=&nbsp;&nbsp;&nbsp; $${{ - 2y \\pm \\sqrt {12{y^2}} } \\over 2}$$\n<br><br>=&nbsp;&nbsp;&nbsp;$$-$$ y $$ \\pm $$ $$\\sqrt 3 $$y\n<br><br>$${x \\over y} \\ne  - \\sqrt 3  - 1$$&nbsp;&nbsp;as&nbsp;&nbsp;$${x \\over y}$$ = positive.\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$${x \\over y}$$ = $$\\sqrt 3  - 1$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${y \\over x}$$ = $${1 \\over {\\sqrt 3  - 1}} \\times {{\\sqrt 3  + 1} \\over {\\sqrt 3  + 1}}$$\n<br><br>=&nbsp;&nbsp;&nbsp;$${{\\sqrt 3  + 1} \\over 2}$$\n<br><br>=&nbsp;&nbsp;&nbsp;$${{2.732} \\over 2}$$\n<br><br>=&nbsp;&nbsp;&nbsp;1.366&nbsp;$$ \\simeq $$&nbsp;1.37",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "xgq9perk5vcVZ7Xu",
@@ -258,7 +258,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l91ofg7j/6a0d62ec-2d96-49cf-9855-a36685260c79/e1c685f0-47ff-11ed-8757-0f869593f41f/file-1l91ofg7k.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l91ofg7j/6a0d62ec-2d96-49cf-9855-a36685260c79/e1c685f0-47ff-11ed-8757-0f869593f41f/file-1l91ofg7k.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2015 (Offline) Physics - Center of Mass and Collision Question 122 English Explanation\"><br>\nLet the density of solid cone $$\\rho $$.\n<br><br>$$dm = \\rho \\pi {r^2}dy$$\n<br><br>$${y_{cm}} = {{\\int {ydm} } \\over {\\int {dm} }}$$\n<br><br>$$ = {{\\int\\limits_0^h {\\pi {r^2}} dy\\rho  \\times y} \\over {{1 \\over 3}\\pi {R^2}h\\rho }}$$\n<br><br>$$ = {{3h} \\over 4}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfmd47zo",
@@ -281,7 +281,7 @@
     "solution": "<p>The coordinates of centre of mass is defined as</p>\n<p>$${R_{CM}} = {{\\sum\\nolimits_i {{m_i}{r_i}} } \\over {\\sum\\nolimits_i {{m_i}} }}$$</p>\n<p>Thus,</p>\n<p>$${Y_{CM}} = {{(6m \\times 0) + (m \\times a) + (m \\times a) + (m \\times 0) + (m \\times  - a)} \\over {6m + m + m + m + m}} = {a \\over {10}}$$</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Psq3eNeeleoaRu4P",
@@ -303,7 +303,7 @@
     "difficulty": "medium",
     "solution": "<p>Given The linear mass density $$\\lambda  = k{\\left( {{x \\over L}} \\right)^n}$$</p>\n\n<br><br>$${x_{CM}} = {{\\int\\limits_0^L {x{\\mkern 1mu} dm} } \\over {\\int\\limits_0^L {dm} }}$$\n<br><br>$$ = {{\\int\\limits_0^L {x\\left( {\\lambda {\\mkern 1mu} dx} \\right)} } \\over {\\int\\limits_0^L {\\lambda {\\mkern 1mu} dx} }}$$\n<br><br>$$ = {{\\int\\limits_0^L {k{{\\left( {{x \\over L}} \\right)}^n}} .xdx} \\over {\\int\\limits_0^L {k{{\\left( {{x \\over L}} \\right)}^n}{\\mkern 1mu} dx} }}$$ \n<br><br>= $${{k\\left[ {{{{x^{n + 2}}} \\over {\\left( {n + 2} \\right){L^n}}}} \\right]_0^L} \\over {\\left[ {{{k{\\mkern 1mu} {x^{n + 1}}} \\over {\\left( {n + 1} \\right){L^n}}}} \\right]_0^L}}$$\n<br><br>$$ = {{L\\left( {n + 1} \\right)} \\over {n + 2}}$$ <p></p> \n<br><br>For $$n=0,$$ $${x_{CM}} = {L \\over 2};n = 1,$$\n<br><br>$${x_{CM}} = {{2L} \\over 3};n = 2,\\,{x_{CM}} = {{3L} \\over 4};\\,...$$\n<br><br>From here you can see only option (A) can be the right answer.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "DTbqjQLkohJDnpSy",
@@ -325,7 +325,7 @@
     "difficulty": "easy",
     "solution": "The center of mass does not shift as no external force is applied horizontally. So the center of mass of the system continues its original path. It is only  the internal forces which comes into play while breaking. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "HTjKEbH5uWpwYOVP",
@@ -347,6 +347,6 @@
     "difficulty": "medium",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/QfWVHVIJRoKlCJXbX/EMCj9vhIhZlb4DCOlEgs9iTUsIJVd/CWRnPXK3ofrOTkpa5s8vB5/image.svg\" loading=\"lazy\" alt=\"AIEEE 2005 Physics - Center of Mass and Collision Question 119 English Explanation\"> \n<br>This is a case of translation motion without rotation, the force $$\\overrightarrow F $$  has to be applied at center of mass.\n<br><br>i.e. the point $$'P'$$ has to be at the centre of mass\n<br><br>$$y = {{{m_1}{y_1} + {m_2}{y_2}} \\over {{m_1} + {m_2}}}$$\n<br><br>$$ = {{m \\times 2\\ell  + 2m \\times \\ell } \\over {3m}}$$\n<br><br>$$ = {{4\\ell } \\over 3}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

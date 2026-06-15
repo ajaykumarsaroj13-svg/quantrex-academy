@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>A meter bridge operates on the principle of a Wheatstone bridge.</p>\n<p>Let the total length of the wire be $\\mathrm{L}=100 \\mathrm{~cm}$.</p>\n<p>If the null point is found at a distance l from the left end, the length of the right segment is $(100-\\mathrm{l})$.</p>\n<p>The balancing condition is given by:</p>\n<p>$$ \\frac{\\mathrm{R}_{\\text {left gap }}}{\\mathrm{R}_{\\text {right gap }}}=\\frac{\\mathrm{l}}{100-\\mathrm{l}} $$</p>\n<p>The resistance in left gap is $R_{\\text {left gap }}=R_1$ and the resistance in the right gap is $R_{\\text {right gap }}=R_2$</p>\n<p>Case 1</p>\n<p>We are given that initially; the bridge is balanced at a distance of $\\mathrm{l}_1=40 \\mathrm{~cm}$ from point P .</p>\n<p>The remaining length is $100-40=60 \\mathrm{~cm}$.</p>\n<p>Applying the balancing condition :</p>\n<p>$$ \\frac{\\mathrm{R}_1}{\\mathrm{R}_2}=\\frac{40}{60} $$</p>\n<p>$$\\Rightarrow $$ $\\frac{\\mathrm{R}_1}{\\mathrm{R}_2}=\\frac{2}{3}$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{R}_1=\\frac{2}{3} \\mathrm{R}_2 \\ldots (i)$$</p>\n<p>Case 2</p>\n<p>When a $16 \\Omega$ resistance is connected in parallel to $R_2$.</p>\n<p>So, the new resistance in the right gap be $\\mathrm{R}_2^{\\prime}$ :</p>\n<p>$$ \\frac{1}{\\mathrm{R}_2^{\\prime}}=\\frac{1}{\\mathrm{R}_2}+\\frac{1}{16} \\Rightarrow \\mathrm{R}_2^{\\prime}=\\frac{16 \\mathrm{R}_2}{16+\\mathrm{R}_2} $$</p>\n<p>With this new resistance, the null point shifts to $\\mathrm{l}_2=50 \\mathrm{~cm}$ from point P .</p>\n<p>The remaining length is now $100-50=50 \\mathrm{~cm}$.</p>\n<p>Applying the balancing condition again,</p>\n<p>$$ \\frac{\\mathrm{R}_1}{\\mathrm{R}_2^{\\prime}}=\\frac{50}{50}=1 $$</p>\n<p>$$ \\mathrm{R}_1=\\mathrm{R}_2^{\\prime} \\ldots (ii)$$</p>\n<p>Substituting the expression for $\\mathrm{R}_2^{\\prime}$ into equation (ii):</p>\n<p>$$ R_1=\\frac{16 R_2}{R_2+16} \\ldots \\text { (iii) } $$</p>\n<p>Now, substituting the expression for $R_1$ from equation into equation (iii) :</p>\n<p>$$ \\frac{2}{3} R_2=\\frac{16 R_2}{R_2+16} $$</p>\n<p>$$\\Rightarrow $$ $\\frac{1}{3}=\\frac{8}{R_2+16} \\Rightarrow R_2+16=24$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{R}_2=8 \\Omega $$</p>\n<p>And, $\\mathrm{R}_1=\\frac{2}{3} \\times 8 \\Omega=\\frac{16}{3} \\Omega$</p>\n<p>Therefore, the values are $\\mathrm{R}_2=8 \\Omega$ and $\\mathrm{R}_1=\\frac{16}{3} \\Omega$. </p>\n<p>Hence, the correct option is (A).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml98p4w4",
@@ -36,7 +36,7 @@
     "difficulty": "medium",
     "solution": "<p>A meter bridge works on the principle of a balanced Wheatstone bridge. The ratio of the resistances in the gaps is equal to the ratio of the lengths of the wire segments.</p>\n<p><b>Case 1 :</b></p>\n<p><img alt=\"JEE Main 2026 (Online) 24th January Evening Shift Physics - Current Electricity Question 11 English Explanation 1\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mljgdxth/a68a0041-ab29-4e48-9257-74c06346378a/ec9a9a50-0810-11f1-838d-857e7b97e68d/file-6y3zli1mljgdxti.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mljgdxth/a68a0041-ab29-4e48-9257-74c06346378a/ec9a9a50-0810-11f1-838d-857e7b97e68d/file-6y3zli1mljgdxti.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Null point from left is l cm . So, the remaining length from right (100 - l) cm</p>\n<p>At balanced condition</p>\n<p>$$ \\frac{2}{3}=\\frac{l}{100-l} \\Rightarrow 2(100-l)=3l $$</p>\n<p>$\\Rightarrow 200-2l=3l$</p>\n<p>$\\Rightarrow 5 \\mathrm{l}=200 \\Rightarrow \\mathrm{l}=40 \\mathrm{~cm}$</p>\n<p><b>Case 2 :</b></p>\n<p>When an unknown resistance x is connected in parallel with the $3 \\Omega$ resistor in the right gap. This changes the equivalent resistance of the right gap.</p>\n<p><img alt=\"JEE Main 2026 (Online) 24th January Evening Shift Physics - Current Electricity Question 11 English Explanation 2\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mljgkzr8/667a8524-2aa6-4541-9a55-aba8371dfa18/b0c3bc40-0811-11f1-838d-857e7b97e68d/file-6y3zli1mljgkzr9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mljgkzr8/667a8524-2aa6-4541-9a55-aba8371dfa18/b0c3bc40-0811-11f1-838d-857e7b97e68d/file-6y3zli1mljgkzr9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>New right gap resistance $S^{\\prime}=\\frac{3 x}{3+x}$</p>\n<p>New null point $\\mathrm{l}^{\\prime}=\\mathrm{l}+10=40+10=50 \\mathrm{~cm}$</p>\n<p>So, the remaining length from right $=100-50=50 \\mathrm{~cm}$</p>\n<p>At balanced condition for the second case:</p>\n<p>$$ \\frac{\\mathrm{R}}{\\mathrm{~S}^{\\prime}}=\\frac{\\mathrm{l}^{\\prime}}{100-\\mathrm{l}^{\\prime}} $$</p>\n<p>$$\\Rightarrow $$ $\\frac{2}{\\left(\\frac{3 x}{3+x}\\right)}=\\frac{50}{50} \\Rightarrow \\frac{6+2 x}{3 x}=1$</p>\n<p>$$ \\Rightarrow 3 x=6+2 x \\Rightarrow x=6 \\Omega $$</p>\n<p>The value of unknown resistance x is $6 \\Omega$. \n<br><br>Hence, the correct answer is 6.</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "ml98p4u2",
@@ -58,7 +58,7 @@
     "difficulty": "medium",
     "solution": "<p>A meter bridge works on the principle of a Wheatstone bridge. When the bridge is balanced (null point), no current flows through the galvanometer.</p>\n<p><img alt=\"JEE Main 2026 (Online) 24th January Morning Shift Physics - Current Electricity Question 12 English Explanation 1\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlna86qv/a6a4ca9d-e664-4312-9f68-c214ebfda101/f877ac60-0a2b-11f1-a1cc-0fd23aea82a4/file-6y3zli1mlna86qw.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlna86qv/a6a4ca9d-e664-4312-9f68-c214ebfda101/f877ac60-0a2b-11f1-a1cc-0fd23aea82a4/file-6y3zli1mlna86qw.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The relationship between the resistors in the gaps ( $R_1, R_2$ ) and the balancing lengths ( $1,100-1$ ) is:</p>\n<p>$$ \\frac{\\mathrm{R}_1}{\\mathrm{R}_2}=\\frac{\\mathrm{l}}{100-\\mathrm{l}} $$</p>\n<p>Here, $\\mathrm{R}_1=2 \\Omega, \\mathrm{R}_2=3 \\Omega$</p>\n<p>Length of the wire from the left end $(\\mathrm{X})$ to the null point is $\\mathrm{l}_1$ then remaining length of the wire (assuming standard 100 cm wire) is $\\left(100-l_1\\right)$.</p>\n<p>$$ \\frac{2}{3}=\\frac{\\mathrm{l}_1}{100-\\mathrm{l}_1} $$</p>\n<p>$$\\Rightarrow $$ $2\\left(100-l_1\\right)=3 l_1$</p>\n<p>$$\\Rightarrow $$ $200-2 \\mathrm{l}_1=3 \\mathrm{l}_1$</p>\n<p>$$\\Rightarrow $$ $$ 200=5 l_1 \\Rightarrow l_1=40 \\mathrm{~cm} $$</p>\n<p>So, the initial null point is at 40 cm from X.</p>\n<p>When an unknown resistor X is connected in parallel with the $3 \\Omega$ resistor in the right gap.</p>\n<p><img alt=\"JEE Main 2026 (Online) 24th January Morning Shift Physics - Current Electricity Question 12 English Explanation 2\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlnacpoq/2b421b90-e9c9-40b1-9e31-8f86705e3aa3/7655f6a0-0a2c-11f1-a1cc-0fd23aea82a4/file-6y3zli1mlnacpor.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlnacpoq/2b421b90-e9c9-40b1-9e31-8f86705e3aa3/7655f6a0-0a2c-11f1-a1cc-0fd23aea82a4/file-6y3zli1mlnacpor.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The new right gap resistance is $\\mathrm{R}_2^{\\prime}$.</p>\n<p>For two resistors in parallel, the equivalent resistance is:</p>\n<p>$$ \\mathrm{R}_2^{\\prime}=\\frac{3 \\times \\mathrm{X}}{3+\\mathrm{X}} $$</p>\n<p>The null point shifts by 22.5 cm towards Y (the right end).</p>\n<p>$$ \\mathrm{l}_2=\\mathrm{l}_1+22.5 \\mathrm{~cm} $$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{l}_2=40+22.5=62.5 \\mathrm{~cm} $$</p>\n<p>Using balanced condition,</p>\n<p>$$ \\frac{\\mathrm{R}_1}{\\mathrm{R}_2^{\\prime}}=\\frac{\\mathrm{l}_2}{100-\\mathrm{l}_2} $$</p>\n<p>$$\\Rightarrow $$ $\\frac{2}{\\mathrm{R}_2^{\\prime}}=\\frac{62.5}{100-62.5}$</p>\n<p>$$\\Rightarrow $$ $\\frac{2}{\\mathrm{R}_2^{\\prime}}=\\frac{62.5}{37.5}=\\frac{5}{3}$</p>\n<p>$$ \\mathrm{R}_2^{\\prime}=\\frac{6}{5}=1.2 \\Omega $$</p>\n<p>We know that $R_2^{\\prime}$ is the parallel combination of $3 \\Omega$ and $X$.</p>\n<p>$$ 1.2=\\frac{3 X}{3+X} \\Rightarrow 1.2(3+X)=3 X $$</p>\n<p>$\\Rightarrow 3.6+1.2 \\mathrm{X}=3 \\mathrm{X}$</p>\n<p> $\\Rightarrow 3.6=3 X-1.2 X$</p>\n<p>$\\Rightarrow 3.6=1.8 \\mathrm{X}$</p>\n<p>$$ \\Rightarrow \\mathrm{X}=2 \\Omega $$</p>\n<p>Therefore, the value of X is $2 \\Omega$. Hence, the correct option is (D).</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lsamtosf",
@@ -80,7 +80,7 @@
     "difficulty": "medium",
     "solution": "<p>To solve this problem, let&#39;s first understand that a meter bridge setup is based on the principle of a Wheatstone bridge, in which two unknown resistances are in such a configuration that if the bridge is balanced, the ratio of the resistances on one side is equal to the ratio of resistances on the other side. In a balanced condition, no current flows through the galvanometer that is connected diagonally across the bridge.</p>\n<p>We can express the condition of the balance as follows:</p>\n<p>$$\n\\frac{R_1}{R_2} = \\frac{L_1}{L_2}\n$$</p>\n<p>where $R_1$ is the known resistance $2 Ω$, $R_2$ is the unknown resistance, $L_1$ is the balance length $40 cm$ and $L_2$ is the length of the remaining wire on the meter bridge (100 cm - 40 cm = 60 cm).</p>\n<p>Let&#39;s calculate the initial unknown resistance ($R_2$) using the balance condition:</p>\n<p>$$\n\\frac{2}{R_2} = \\frac{40}{60} $$ \n<br/><br/>$$\\Rightarrow R_2 = \\frac{2 \\times 60}{40} = 3 \\Omega\n$$</p>\n<p>Now, when the unknown resistance $R_2$ is shunted with a 2 Ω resistor, the new combined resistance ($R&#39;_2$) can be calculated using the parallel resistance formula:</p>\n<p>$$\n\\frac{1}{R&#39;_2} = \\frac{1}{R_2} + \\frac{1}{2} $$\n<br/><br/>$$ \\Rightarrow \\frac{1}{R&#39;_2} = \\frac{1}{3} + \\frac{1}{2} = \\frac{2 + 3}{6} = \\frac{5}{6}\n$$</p>\n<p>Therefore, the new combined resistance ($R&#39;_2$) is:</p>\n<p>$$\nR&#39;_2 = \\frac{6}{5} \\Omega\n$$</p>\n<p>If $L&#39;_1$ is the new balance length and $L&#39;_2$ is the remaining length, we now have:</p>\n<p>$$\n\\frac{2}{\\frac{6}{5}} = \\frac{L&#39;_1}{100 - L&#39;_1} $$\n<br/><br/>$$ \\Rightarrow \\frac{L&#39;_1}{100 - L&#39;_1} = \\frac{5}{3}\n$$</p>\n<p>Now, solve for (L&#39;_1):</p>\n<p>$$\n3L&#39;_1 = 5(100 - L&#39;_1) $$\n<br/><br/>$$ \\Rightarrow 3L&#39;_1 = 500 - 5L&#39;_1 $$\n<br/><br/>$$ \\Rightarrow 8L&#39;_1 = 500 $$\n<br/><br/>$$ \\Rightarrow L&#39;_1 = 62.5 \\mathrm{~cm}\n$$</p>\n<p>The balance length has changed from 40 cm to 62.5 cm, so the change by $L&#39;_1 - L_1$ is:</p>\n<p>$$\n62.5 - 40 = 22.5 \\mathrm{~cm}\n$$</p>\n<p>Therefore, the balance length changes by 22.5 cm, which corresponds to Option B.</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd7iy3r",
@@ -102,7 +102,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsiiqszq/b75469fd-7157-4fe4-9ed7-2c53636080e8/1603de60-c96b-11ee-b416-eff853096672/file-6y3zli1lsiiqszr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsiiqszq/b75469fd-7157-4fe4-9ed7-2c53636080e8/1603de60-c96b-11ee-b416-eff853096672/file-6y3zli1lsiiqszr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 31st January Evening Shift Physics - Current Electricity Question 85 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\frac{25}{\\mathrm{r} \\ell_1}=\\frac{\\mathrm{X}}{\\mathrm{r} \\ell_2} \\quad \\text{.... (i)}\\\\\n&amp; \\frac{25}{2 \\mathrm{r} \\ell_1^{\\prime}}=\\frac{\\mathrm{X}}{2 \\mathrm{r} \\ell^{\\prime}{ }_2} \\quad \\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>From (i) and (ii)</p>\n<p>$$\\ell_2^{\\prime}=\\ell_2=40 \\mathrm{~cm}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldsbznzk",
@@ -136,7 +136,7 @@
     "difficulty": "medium",
     "solution": "$\\frac{1}{100-1}=\\frac{2}{3}$\n<br/><br/>\n$\\Rightarrow I=40 \\mathrm{~cm}$\n<br/><br/>\nas $3 \\Omega$ is shunted the balance point will shift towards $3 \\Omega$. So, new length $l^{\\prime}=22.5+I=62.5$\n<br/><br/>\nSo, $\\frac{62.5}{37.5}=\\frac{2}{3 x}(3+x)$\n<br/><br/>\n$\\Rightarrow x=2 \\Omega$",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1l6go717a",
@@ -170,7 +170,7 @@
     "difficulty": "medium",
     "solution": "<p>Even if the radius of wire is doubled, the balancing point would not change as $${x \\over {l - x}} = {{{R_1}} \\over {{R_2}}}$$, which is not including a term of area.</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1l6jistwh",
@@ -222,7 +222,7 @@
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l05sedni/7ee7a8c3-dde5-41f0-b9cd-ced17d6f6901/98b1f4d0-9814-11ec-ab6b-d59ad54e4f8c/file-1l05sednj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l05sedni/7ee7a8c3-dde5-41f0-b9cd-ced17d6f6901/98b1f4d0-9814-11ec-ab6b-d59ad54e4f8c/file-1l05sednj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2021 Paper 2 Online Physics - Current Electricity Question 25 English Explanation\"> <br>Resistance of potential wire, R<sub>0</sub> = 50$$\\Omega$$<br><br>Resistance of 100 m wire = 50$$\\Omega$$<br><br>So, resistance of 72 cm wire $$ = {{50} \\over {100}} \\times 72 = 36\\Omega $$<br><br>Current, $$I = {{{\\varepsilon  \\over 2}} \\over {14\\Omega  + 25\\Omega }} = {{{\\varepsilon  \\over 2}} \\over {{r_1} + 36\\Omega }}$$<br><br>$$ \\Rightarrow {r_1} = 39 - 36 = 3\\Omega $$",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "p4HS9GP5fPQR3tZrH77k9k2k5lduar7",
@@ -261,7 +261,7 @@
     "difficulty": "medium",
     "solution": "$$as\\,x = {{R\\left( {100 - l} \\right)} \\over l}$$<br><br>\n$$for\\,(A)\\,\\,\\,\\,x = {{1000 \\times \\left( {100 - 60} \\right)} \\over {40}} \\approx 667$$<br><br>\n$$for\\,(B)\\,\\,\\,\\,\\,x = {{100 \\times \\left( {100 - 13} \\right)} \\over {13}} \\approx 669$$<br><br>\n$$for\\,(C)\\,\\,\\,\\,\\,x = {{10 \\times \\left( {100 - 1.5} \\right)} \\over {98.5}} \\approx 667$$<br><br>\n$$for\\,(D)\\,\\,\\,\\,\\,x = {{1 \\times \\left( {100 - 1} \\right)} \\over 1} \\approx 667$$<br><br>\nSo reading in serial no. (4) is completely different hence correct answer (A).",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ZnjBgSYUjkQIMaaI9RdpC",
@@ -283,7 +283,7 @@
     "difficulty": "medium",
     "solution": "$${{{R_1}} \\over {{R_2}}} = {2 \\over 3}\\,\\,$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(i)\n<br><br>$${{{R_1} + 10} \\over {{R_2}}} = 1 \\Rightarrow {R_1} + 10 = {R_2}$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(ii)\n<br><br>$${{2{R_2}} \\over 3} + 10 = {R_2}$$\n<br><br>$$10 = {{{R_2}} \\over 3} \\Rightarrow {R_2} = 30\\Omega $$\n<br><br>&amp;  $${R_1} = 20\\Omega $$\n<br><br>$${{{{30 \\times R} \\over {30 + R}}} \\over {30}} = {2 \\over 3}$$\n<br><br>$$R = 60\\,\\Omega $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "nIT3xB7IJNluJWldJ3MuW",
@@ -305,7 +305,7 @@
     "difficulty": "medium",
     "solution": "Potential gradient with R<sub>h</sub> = 2$$\\Omega $$\n<br><br>is $$\\left( {{6 \\over {2 + 4}}} \\right) \\times {4 \\over L} = {{dV} \\over {dL}};$$ &nbsp;&nbsp;L $$=$$ 100 cm\n<br><br>Let null point be at $$\\ell $$ cm\n<br><br>thus $$\\varepsilon $$<sub>1</sub> $$=$$ 0.5V $$=$$ $$\\left( {{6 \\over {2 + 4}}} \\right) \\times {4 \\over L} \\times \\ell $$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(1)\n<br><br>Now with R<sub>h</sub> $$=$$ 6$$\\Omega $$ new potential gradient is \n<br><br>$$\\left( {{6 \\over {4 + 6}}} \\right) \\times {4 \\over L}$$  and at null point\n<br><br>$$\\left( {{6 \\over {4 + 6}}} \\right)\\left( {{4 \\over L}} \\right) \\times \\ell  = {\\varepsilon _2}$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(2)\n<br><br>dividing equation (1) by (2) we get \n<br><br>$${{0.5} \\over {{\\varepsilon _2}}} = {{10} \\over 6}$$  thus  $${\\varepsilon _2} = 0.3$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "FhLUL01eNWQmvPMyN9GKz",
@@ -327,7 +327,7 @@
     "difficulty": "medium",
     "solution": "For the given wire : \n<br><br>dR = C $${{d\\ell } \\over {\\sqrt \\ell  }}$$, \n<br><br>where C = constant.\n<br><br>Let resistance of part \n<br><br>AP is R<sub>1</sub> and PB is R<sub>2</sub>\n<br><br>$$ \\therefore $$&nbsp;&nbsp;$${{R'} \\over {R'}} = {{{R_1}} \\over {{R_2}}}$$ &nbsp;&nbsp;or &nbsp;&nbsp; R<sub>1</sub> = R<sub>2</sub>  &nbsp;&nbsp;&nbsp;&nbsp; \n<br><br>By balanced WSB concept.\n<br><br>Now&nbsp;&nbsp;  $$\\int {dR = c\\int {{{d\\ell } \\over {\\sqrt \\ell  }}} } $$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;R<sub>1</sub> = C$$\\int\\limits_0^\\ell  {{\\ell ^{ - 1/2}}d\\ell } $$ = C.2.$${\\sqrt \\ell  }$$\n<br><br>R<sub>2</sub> = C$$\\int\\limits_\\ell ^1 {{\\ell ^{ - 1/2}}d\\ell } $$ = C.(2 $$-$$ 2$${\\sqrt \\ell  }$$)\n<br><br>Putting R<sub>1</sub> = R<sub>2</sub>\n<br><br>C2$${\\sqrt \\ell  }$$ = C(2 $$-$$ 2$${\\sqrt \\ell  }$$)\n<br><br>$$ \\therefore $$&nbsp;&nbsp;2$${\\sqrt \\ell  }$$ = 1\n<br><br>$${\\sqrt \\ell  }$$ = $${1 \\over 2}$$\n<br><br>i.e. $$\\ell $$ = $${1 \\over 4}$$ m &nbsp;&nbsp;&nbsp;&nbsp;$$ \\Rightarrow $$&nbsp;&nbsp;0.25 m",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "hcIg5KV9z1Xl432I",
@@ -349,7 +349,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/Z8kO4x1q8HeIABHlA/MScYOwJ5bDfilDiflBxDFiHA2rNBA/bJfWIVRUpki6NjingDKBbC/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Offline) Physics - Current Electricity Question 330 English Explanation 1\">\n<br><br>$${X \\over l}$$ = $${{1000 - X} \\over {100 - l}}$$ . . . . . (1)\n<br><br>When X and Y are interchanged. \n<br><br><img src=\"https://imagex.cdn.examgoal.net/5F2OxMTNUd7wjjBCi/epjt30xiPAyMMVovVaA2XNFChi90x/QmC1QITZMvCW71neFs0usM/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Offline) Physics - Current Electricity Question 330 English Explanation 2\">\n<br><br>$${{1000 - X} \\over {l - 10}}$$ = $${X \\over {100 - l + 10}}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ $${{1000 - X} \\over {l - 10}}$$ = $${X \\over {110 - l}}$$ . . . . . (2)\n<br><br>From (1)  and  (2)  we  get,\n<br><br>$${l \\over {100 - l}}$$ = $${{110 - l} \\over {l - 10}}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ $$l$$<sup>2</sup> $$-$$ 10 = 11000 $$-$$ 100$$l$$ $$-$$ 110$$l$$ + $$l$$<sup>2</sup>\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 200$$l$$ = 11000\n<br><br>$$l$$ = 55 cm\n<br><br>Putting this value of $$l$$, in equation (1)\n<br><br>$${X \\over {55}}$$ = $${{1000 - X} \\over {100 - 55}}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 45X = 55000 $$-$$ 55X\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 100X = 55000\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ X = 550 $$\\Omega $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "HiJMNj6bl4iWDWflvvkqq",
@@ -371,7 +371,7 @@
     "difficulty": "easy",
     "solution": "For balanced meter bridge, \n<br><br>$${X \\over {39.5}}$$ = $${Y \\over {\\left( {100 - 39.5} \\right)}}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,\\,$$  X = $${{12.5 \\times 39.5} \\over {60.5}}$$ \n<br><br>= 8.16 $$\\Omega $$\n<br><br>Now, when we interchange X and Y then\n<br><br>$${Y \\over {{l_2}}} = {X \\over {100 - {l_2}}}$$\n<br><br>$$ \\Rightarrow $$ $${{12.5} \\over {{l_2}}} = {{8.16} \\over {100 - {l_2}}}$$\n<br><br>$$ \\Rightarrow $$20.66 $${{l_2}}$$ = 1250\n<br><br>$$ \\Rightarrow $$ $${{l_2}}$$ = 60.5 $$\\Omega $$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "W2uKMuQzeFdnSIwQs5NGI",
@@ -393,7 +393,7 @@
     "difficulty": "medium",
     "solution": "<p>Initially, the resistance P = 4 $$\\Omega$$ and the neutral point N is at 60 cm from A. Therefore,</p>\n<p>$${4 \\over {60}} = {Q \\over {40}} \\Rightarrow Q = {{160} \\over {60}} = \\left( {{8 \\over 3}} \\right)\\Omega $$</p>\n<p>When an unknown resistance R is connected in series to P and the new position of the neutral point is at 80 cm from A, we have</p>\n<p>$${{4 + R} \\over {80}} = {Q \\over {20}}$$</p>\n<p>$$ \\Rightarrow {{4 + R} \\over {80}} = {8 \\over {60}} \\Rightarrow 4 + R = {{64} \\over 6}$$</p>\n<p>$$ \\Rightarrow R = {{64} \\over 6} - 4 = {{64 - 24} \\over 6} = {{40} \\over 6}$$</p>\n<p>$$ \\Rightarrow R = \\left( {{{20} \\over 3}} \\right)\\Omega $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l17i7evx",
@@ -416,7 +416,7 @@
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l17mh9o2/669e3824-ca93-40fb-93af-363beef5bd89/3af28a10-ace3-11ec-b822-a5164f73cdb9/file-1l17mh9o3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l17mh9o2/669e3824-ca93-40fb-93af-363beef5bd89/3af28a10-ace3-11ec-b822-a5164f73cdb9/file-1l17mh9o3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2014 Paper 2 Offline Physics - Current Electricity Question 22 English Explanation\"></p>\n<p>when a metre bridge is balanced, then</p>\n<p>$${{{R_1}} \\over x} = {{{R_2}} \\over {(100 - x)}}$$ ..... (i)</p>\n<p>From figure,</p>\n<p>R<sub>1</sub> = R, R<sub>2</sub> = 90 $$\\Omega$$, x = 40 cm</p>\n<p>Then, $${R \\over {40}} = {{90} \\over {(100 - 40)}} = {{90} \\over {60}}$$</p>\n<p>$$\\Rightarrow$$ R = 60 $$\\Omega$$</p>\n<p>Now, for $$\\Delta$$R taking natural log on both sides of eqn. (i),</p>\n<p>$$\\ln {R_1} = \\ln {R_2} + \\ln x - \\ln (100 - x)$$</p>\n<p>or, $$\\ln R = \\ln x - \\ln (100 - x) + \\ln (90)$$</p>\n<p>On differentiating,</p>\n<p>$${{\\Delta R} \\over R} = {{\\Delta x} \\over x} - {{\\Delta (100 - x)} \\over {(100 - x)}}$$</p>\n<p>$$ \\Rightarrow {{\\Delta R} \\over R} = {{\\Delta x} \\over x} + {{\\Delta x} \\over {(100 - x)}}$$</p>\n<p>$$ \\Rightarrow \\Delta R = \\left( {{{0.1} \\over {40}} + {{0.1} \\over {60}}} \\right) \\times 60 = {{0.5} \\over {120}} \\times 60 = 0.25\\Omega $$</p>\n<p>$$\\therefore$$ Required value of R = (60 $$\\pm$$ 0.25) $$\\Omega$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l2km8okm",
@@ -439,7 +439,7 @@
     "solution": "<p>Corrected length L<sub>1</sub> (AJ) = 52 + 1 = 53 cm</p>\n<p>Corrected length L<sub>2</sub> (BJ) = (100 $$-$$ 52) + 2 = 50 cm</p>\n<p>For a balanced Wheatstone bridge,</p>\n<p>$${X \\over {10}} = {{{L_1}} \\over {{L_2}}} = {{53} \\over {50}}$$</p>\n<p>$$\\Rightarrow$$ X = 10.6 $$\\Omega$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfuqcf1v",
@@ -462,7 +462,7 @@
     "solution": "<p>When the temperature of a metal increases, its resistance will increase.</p>\n<p>Therefore statement-2 is correct.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgkud1qx/84a999b0-8f1f-4552-b2cb-1c3c72090d54/7dc09090-dd1f-11ed-a69d-59b96e0d72fa/file-1lgkud1qy.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgkud1qx/84a999b0-8f1f-4552-b2cb-1c3c72090d54/7dc09090-dd1f-11ed-a69d-59b96e0d72fa/file-1lgkud1qy.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 1 Offline Physics - Current Electricity Question 7 English Explanation\"></p>\n<p>For meter bridge, when null point N is obtained, we get</p>\n<p>$${X \\over l} = {R \\over {100 - l}}$$</p>\n<p>When the unknown resistance is put inside an enclosure, maintained at a high temperature, then X increases. To maintain the ratio of null point, $$l$$ should also increase. But if we want to keep the null point at the initial position (i.e., if we want to change the value of $$l$$) to maintain the ratio, R should be increased.</p>\n<p>Therefore, statement - 1 is false.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lg0ygz8c",
@@ -485,7 +485,7 @@
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mggbzqh8/37820fd0-1a04-4f58-a7b2-9baef301e49c/4e3f10c0-a35c-11f0-b814-0f72f73fa4cf/file-jaoe38c1mggbzqh9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mggbzqh8/37820fd0-1a04-4f58-a7b2-9baef301e49c/4e3f10c0-a35c-11f0-b814-0f72f73fa4cf/file-jaoe38c1mggbzqh9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2007 Paper 1 Offline Physics - Current Electricity Question 6 English Explanation 1\"></p>\n<p>Given, that x is greater than 2 $$\\Omega$$, when the bridge is balanced then,</p>\n<p>$$\\frac{R}{l}=\\frac{x}{100-l}$$ ..... (i)</p>\n<p>(from metre bridge balanced bridge formula)</p>\n<p>$$\\Rightarrow 100R-Rl=lx$$</p>\n<p>$$\\Rightarrow 200-2l=lx~~(\\because R=2\\Omega)$$</p>\n<p>$$l=\\frac{200}{x+2}$$ ..... (ii)</p>\n<p>Where, $$l$$ = length of segment of wire from one end where null point is obtained.</p>\n<p>Now, these resistances are interchanged, the Jockey shifts 20 cm. So,</p>\n<p>$$\\frac{x}{l+20}=\\frac{2}{80-l}$$ ...... (iii)</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mggc0jkc/f299aa44-5ea2-434e-b706-9bd2f4056ab0/64b704c0-a35c-11f0-b814-0f72f73fa4cf/file-jaoe38c1mggc0jkd.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mggc0jkc/f299aa44-5ea2-434e-b706-9bd2f4056ab0/64b704c0-a35c-11f0-b814-0f72f73fa4cf/file-jaoe38c1mggc0jkd.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2007 Paper 1 Offline Physics - Current Electricity Question 6 English Explanation 2\"></p>\n<p>From equation (iii) we have,</p>\n<p>$$80x=l(x+2)+40$$</p>\n<p>$$\\Rightarrow 80x=\\left(\\frac{200}{x+2}\\right)(x+2)+40$$</p>\n<p>$$\\Rightarrow x=\\frac{240}{80}=3\\Omega$$</p>\n<p>$$\\therefore x=3\\Omega$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgdxmfeb",
@@ -508,7 +508,7 @@
     "solution": "<p>At null points, the Wheatstone bridge will be \nbalanced.</p>\n<p>Therefore,</p>\n<p>$$\\frac{\\mathrm{X}}{r_{1}}=\\frac{\\mathrm{R}}{r_{2}} \\text { (or) } \\mathrm{X}=\\mathrm{R} \\frac{r_{1}}{r_{2}}$$</p>\n<p>Where $$\\mathrm{R}$$ is a constant and $$r_{1}$$ and $$r_{2}$$ are variable. The maximum fraction error is</p>\n<p>$${{\\Delta x} \\over x} = {{\\Delta {r_1}} \\over {{r_1}}} + {{\\Delta {r_2}} \\over {{r_2}}}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mh7es8od/7987c905-1b4c-4f51-9f01-d52398e5eeef/62c0a9d0-b240-11f0-b513-6785eb3a49c0/file-jaoe38c1mh7es8oe.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mh7es8od/7987c905-1b4c-4f51-9f01-d52398e5eeef/62c0a9d0-b240-11f0-b513-6785eb3a49c0/file-jaoe38c1mh7es8oe.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2005 Mains Physics - Current Electricity Question 5 English Explanation\"></p>\n<p>$$\\begin{array}{rr} &amp; \\mathrm{R}=\\mathrm{R}_{1}, \\mathrm{R}=\\mathrm{R}_{2}, \\mathrm{R}=\\mathrm{R}_{3} \\\\ \\text { Here, } &amp; \\Delta r_{1}=\\Delta r_{2}=y \\text { (say), }\\end{array}$$</p>\n<p>$$y$$ can be considered as least count of the scale,</p>\n<p>Then, $$ \\frac{\\Delta x}{x}=y\\left[\\frac{r_{2}+r_{1}}{r_{1} r_{2}}\\right]$$</p>\n<p>For $$\\frac{\\Delta x}{x}$$ to be minimum, $$r_{1} \\times r_{2}$$ should be maximum [Since $$r_{1}+r_{2}=\\mathrm{c}$$ (constant $$)$$ ]</p>\n<p>Let,</p>\n<p>$$\\begin{aligned}\n\\mathrm{E} &amp; =r_{1} \\times r_{2}=r_{1} \\times\\left(c-r_{1}\\right) \\\\\n&amp; =r_{1} c-r_{1}^{2} \\\\\n\\therefore \\frac{d \\mathrm{E}}{d r_{1}} &amp; =c-2 r_{1}=0 \\text { or } \\frac{c}{2}=r_{1}\\end{aligned}$$</p>\n<p>(or) $$r_{2}=c / 2 \\text { (or) } r_{1}=r_{2}$$</p>\n",
     "section": "Sec 1",
     "instruction": "",
-    "type": "NUMERICAL"
+    "type": "SCQ"
   },
   {
     "id": "1lgdxmfeb",
@@ -531,7 +531,7 @@
     "solution": "<p>At null points, the Wheatstone bridge will be \nbalanced.</p>\n<p>Therefore,</p>\n<p>$$\\frac{\\mathrm{X}}{r_{1}}=\\frac{\\mathrm{R}}{r_{2}} \\text { (or) } \\mathrm{X}=\\mathrm{R} \\frac{r_{1}}{r_{2}}$$</p>\n<p>Where $$\\mathrm{R}$$ is a constant and $$r_{1}$$ and $$r_{2}$$ are variable. The maximum fraction error is</p>\n<p>$${{\\Delta x} \\over x} = {{\\Delta {r_1}} \\over {{r_1}}} + {{\\Delta {r_2}} \\over {{r_2}}}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mh7es8od/7987c905-1b4c-4f51-9f01-d52398e5eeef/62c0a9d0-b240-11f0-b513-6785eb3a49c0/file-jaoe38c1mh7es8oe.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mh7es8od/7987c905-1b4c-4f51-9f01-d52398e5eeef/62c0a9d0-b240-11f0-b513-6785eb3a49c0/file-jaoe38c1mh7es8oe.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2005 Mains Physics - Current Electricity Question 5 English Explanation\"></p>\n<p>$$\\begin{array}{rr} &amp; \\mathrm{R}=\\mathrm{R}_{1}, \\mathrm{R}=\\mathrm{R}_{2}, \\mathrm{R}=\\mathrm{R}_{3} \\\\ \\text { Here, } &amp; \\Delta r_{1}=\\Delta r_{2}=y \\text { (say), }\\end{array}$$</p>\n<p>$$y$$ can be considered as least count of the scale,</p>\n<p>Then, $$ \\frac{\\Delta x}{x}=y\\left[\\frac{r_{2}+r_{1}}{r_{1} r_{2}}\\right]$$</p>\n<p>For $$\\frac{\\Delta x}{x}$$ to be minimum, $$r_{1} \\times r_{2}$$ should be maximum [Since $$r_{1}+r_{2}=\\mathrm{c}$$ (constant $$)$$ ]</p>\n<p>Let,</p>\n<p>$$\\begin{aligned}\n\\mathrm{E} &amp; =r_{1} \\times r_{2}=r_{1} \\times\\left(c-r_{1}\\right) \\\\\n&amp; =r_{1} c-r_{1}^{2} \\\\\n\\therefore \\frac{d \\mathrm{E}}{d r_{1}} &amp; =c-2 r_{1}=0 \\text { or } \\frac{c}{2}=r_{1}\\end{aligned}$$</p>\n<p>(or) $$r_{2}=c / 2 \\text { (or) } r_{1}=r_{2}$$</p>\n",
     "section": "Sec 2",
     "instruction": "",
-    "type": "NUMERICAL"
+    "type": "SCQ"
   },
   {
     "id": "EMCCdeYAXjPF8mlv",
@@ -553,6 +553,6 @@
     "difficulty": "easy",
     "solution": "In the first case $${X \\over Y} = {{20} \\over {80}} = {1 \\over 4}$$\n<br><br>In the second case $${{4X} \\over Y} = {\\ell  \\over {100 - \\ell }} \\Rightarrow \\ell  = 50$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

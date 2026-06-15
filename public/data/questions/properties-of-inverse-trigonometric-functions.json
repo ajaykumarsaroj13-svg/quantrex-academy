@@ -36,7 +36,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} &\\tan ^{-1} 4 x+\\tan ^{-1} 6 x=\\frac{\\pi}{6}\\\\ &\\begin{aligned} & \\tan ^{-1}\\left(\\frac{10 x}{1-24 x^2}\\right)=\\frac{\\pi}{6} \\\\ & 24 x^2+10 \\sqrt{3} x-1=0 \\\\ & x=\\frac{-5 \\sqrt{3} \\pm 3 \\sqrt{14}}{24} \\end{aligned} \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml7und2a",
@@ -58,7 +58,7 @@
     "difficulty": "medium",
     "solution": "<p>Simplify the individual components</p>\n<p>Let $\\alpha=\\sin ^{-1}\\left(\\frac{2}{\\sqrt{13}}\\right)$ and $\\beta=\\cos ^{-1}\\left(\\frac{3}{\\sqrt{10}}\\right)$.</p>\n<ul>\n\n<li>For $\\alpha$ : Since $\\sin \\alpha=\\frac{2}{\\sqrt{13}}$, using Pythagoras' theorem (base $=\\sqrt{(\\sqrt{13})^2-2^2}=3$ ), we get:</li>\n\n</ul>\n<p>$$ \\tan \\alpha=\\frac{2}{3} $$</p>\n<ul>\n\n<li>For $\\beta$ : Since $\\cos \\beta=\\frac{3}{\\sqrt{10}}$, using Pythagoras' theorem (perpendicular $= \\sqrt{(\\sqrt{10})^2-3^2}=1$ ), we get:</li>\n\n</ul>\n<p>$$ \\tan \\beta=\\frac{1}{3} $$</p>\n<p>Rewrite the expression</p>\n<p>The expression becomes: $\\tan (2 \\alpha-2 \\beta)=\\tan [2(\\alpha-\\beta)]$.</p>\n<p>First, find $\\tan (\\alpha-\\beta)$ using the formula $\\tan (A-B)=\\frac{\\tan A-\\tan B}{1+\\tan A \\tan B}$</p>\n<p>$$ \\tan (\\alpha-\\beta)=\\frac{\\frac{2}{3}-\\frac{1}{3}}{1+\\left(\\frac{2}{3} \\cdot \\frac{1}{3}\\right)}=\\frac{\\frac{1}{3}}{1+\\frac{2}{9}}=\\frac{\\frac{1}{3}}{\\frac{11}{9}}=\\frac{1}{3} \\cdot \\frac{9}{11}=\\frac{3}{11} $$</p>\n<ol start=\"3\">\n<li>Calculate the final value</li>\n</ol>\n<p>Now, use the double angle formula $\\tan (2 \\theta)=\\frac{2 \\tan \\theta}{1-\\tan ^2 \\theta}$, where $\\theta=(\\alpha-\\beta)$ :</p>\n<p>$$ \\begin{gathered} \\tan [2(\\alpha-\\beta)]=\\frac{2\\left(\\frac{3}{11}\\right)}{1-\\left(\\frac{3}{11}\\right)^2} \\\\ \\tan [2(\\alpha-\\beta)]=\\frac{\\frac{6}{11}}{1-\\frac{9}{121}}=\\frac{\\frac{6}{11}}{\\frac{112}{121}} \\\\ \\tan [2(\\alpha-\\beta)]=\\frac{6}{11} \\cdot \\frac{121}{112}=\\frac{6 \\cdot 11}{112}=\\frac{66}{112}=\\frac{33}{56} \\end{gathered} $$</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml81k4mw",
@@ -97,7 +97,7 @@
     "difficulty": "easy",
     "solution": "<p>Let us solve</p>\n<p>$$ \\sin\\left(\\tan^{-1}(x\\sqrt{2})\\right)=\\cot\\left(\\sin^{-1}\\sqrt{1-x^2}\\right), \\qquad x\\in(0,1) $$</p>\n<p>step by step.</p>\n<h2>Step 1: Simplify the left-hand side</h2>\n<p>Let</p>\n<p>$$ \\theta=\\tan^{-1}(x\\sqrt{2}) $$</p>\n<p>Then</p>\n<p>$$ \\tan\\theta=x\\sqrt{2} $$</p>\n<p>We know that if $\\tan\\theta=\\dfrac{\\text{opposite}}{\\text{adjacent}}$, then we can take</p>\n<ul>\n<li><p>opposite $=x\\sqrt{2}$</p></li>\n<li><p>adjacent $=1$</p></li>\n</ul>\n<p>So hypotenuse is</p>\n<p>$$ \\sqrt{1+(x\\sqrt{2})^2}=\\sqrt{1+2x^2} $$</p>\n<p>Hence,</p>\n<p>$$ \\sin\\theta=\\frac{x\\sqrt{2}}{\\sqrt{1+2x^2}} $$</p>\n<p>Therefore,</p>\n<p>$$ \\sin\\left(\\tan^{-1}(x\\sqrt{2})\\right)=\\frac{x\\sqrt{2}}{\\sqrt{1+2x^2}} $$</p>\n\n<h2>Step 2: Simplify the right-hand side</h2>\n<p>Let</p>\n<p>$$ \\phi=\\sin^{-1}\\sqrt{1-x^2} $$</p>\n<p>Then</p>\n<p>$$ \\sin\\phi=\\sqrt{1-x^2} $$</p>\n<p>Since $x\\in(0,1)$, we have $\\sqrt{1-x^2}\\in(0,1)$, so $\\phi$ is acute.</p>\n<p>Now,</p>\n<p>$$ \\cos\\phi=\\sqrt{1-\\sin^2\\phi} = \\sqrt{1-(1-x^2)} = \\sqrt{x^2} = x $$</p>\n<p>because $x>0$.</p>\n<p>Therefore,</p>\n<p>$$ \\cot\\phi=\\frac{\\cos\\phi}{\\sin\\phi} =\\frac{x}{\\sqrt{1-x^2}} $$</p>\n<p>So,</p>\n<p>$$ \\cot\\left(\\sin^{-1}\\sqrt{1-x^2}\\right)=\\frac{x}{\\sqrt{1-x^2}} $$</p>\n\n<h2>Step 3: Equate both sides</h2>\n<p>Now the given equation becomes</p>\n<p>$$ \\frac{x\\sqrt{2}}{\\sqrt{1+2x^2}}=\\frac{x}{\\sqrt{1-x^2}} $$</p>\n<p>Since $x\\in(0,1)$, we have $x\\neq 0$, so divide both sides by $x$:</p>\n<p>$$ \\frac{\\sqrt{2}}{\\sqrt{1+2x^2}}=\\frac{1}{\\sqrt{1-x^2}} $$</p>\n\n<h2>Step 4: Cross multiply</h2>\n<p>$$ \\sqrt{2}\\,\\sqrt{1-x^2}=\\sqrt{1+2x^2} $$</p>\n<p>Now square both sides:</p>\n<p>$$ 2(1-x^2)=1+2x^2 $$</p>\n<p>$$ 2-2x^2=1+2x^2 $$</p>\n<p>$$ 1=4x^2 $$</p>\n<p>$$ x^2=\\frac{1}{4} $$</p>\n<p>Since $x\\in(0,1)$,</p>\n<p>$$ x=\\frac{1}{2} $$</p>\n<h2>Final Answer</h2>\n<p>$$ \\boxed{\\frac{1}{2}} $$</p>\n<p>So, the correct option is <strong>Option A</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhtlt",
@@ -119,7 +119,7 @@
     "difficulty": "medium",
     "solution": "<p>Let  </p>\n<p>$$ A=\\tan^{-1}(1-\\alpha), \\qquad B=\\tan^{-1}(1-\\beta) $$</p>\n<p>and it is given that</p>\n<p>$$ A+B=\\frac{\\pi}{4}. $$</p>\n<p>Also,</p>\n<p>$$ 0<\\alpha<1,\\qquad \\beta=\\frac{1}{3\\alpha}. $$</p>\n<p>We have to find $6(\\alpha+\\beta)$.</p>\n\n<p>Using the tangent addition formula,</p>\n<p>$$ \\tan(A+B)=\\frac{\\tan A+\\tan B}{1-\\tan A \\tan B}. $$</p>\n<p>Since</p>\n<p>$$ A+B=\\frac{\\pi}{4}, $$</p>\n<p>we get</p>\n<p>$$ \\tan(A+B)=1. $$</p>\n<p>Now,</p>\n<p>$$ \\tan A=1-\\alpha,\\qquad \\tan B=1-\\beta. $$</p>\n<p>So,</p>\n<p>$$ \\frac{(1-\\alpha)+(1-\\beta)}{1-(1-\\alpha)(1-\\beta)}=1. $$</p>\n<p>Simplifying the numerator:</p>\n<p>$$ (1-\\alpha)+(1-\\beta)=2-\\alpha-\\beta. $$</p>\n<p>Now simplify the denominator:</p>\n<p>$$ 1-(1-\\alpha)(1-\\beta) =1-(1-\\alpha-\\beta+\\alpha\\beta) =\\alpha+\\beta-\\alpha\\beta. $$</p>\n<p>Hence,</p>\n<p>$$ \\frac{2-\\alpha-\\beta}{\\alpha+\\beta-\\alpha\\beta}=1. $$</p>\n<p>Therefore,</p>\n<p>$$ 2-\\alpha-\\beta=\\alpha+\\beta-\\alpha\\beta. $$</p>\n<p>So,</p>\n<p>$$ 2=2\\alpha+2\\beta-\\alpha\\beta. $$</p>\n<p>Now use</p>\n<p>$$ \\beta=\\frac{1}{3\\alpha}. $$</p>\n<p>Substituting:</p>\n<p>$$ 2=2\\alpha+\\frac{2}{3\\alpha}-\\alpha\\cdot \\frac{1}{3\\alpha}. $$</p>\n<p>Since</p>\n<p>$$ \\alpha\\cdot \\frac{1}{3\\alpha}=\\frac{1}{3}, $$</p>\n<p>we get</p>\n<p>$$ 2=2\\alpha+\\frac{2}{3\\alpha}-\\frac{1}{3}. $$</p>\n<p>Add $\\frac{1}{3}$ to both sides:</p>\n<p>$$ \\frac{7}{3}=2\\alpha+\\frac{2}{3\\alpha}. $$</p>\n<p>Multiply by $3\\alpha$:</p>\n<p>$$ 7\\alpha=6\\alpha^2+2. $$</p>\n<p>So,</p>\n<p>$$ 6\\alpha^2-7\\alpha+2=0. $$</p>\n<p>Factorising:</p>\n<p>$$ (3\\alpha-2)(2\\alpha-1)=0. $$</p>\n<p>Thus,</p>\n<p>$$ \\alpha=\\frac{2}{3}\\quad \\text{or}\\quad \\alpha=\\frac{1}{2}. $$</p>\n<p>Now find $\\beta=\\frac{1}{3\\alpha}$.</p>\n<h3>Case 1:</h3>\n<p>If</p>\n<p>$$ \\alpha=\\frac{2}{3}, $$</p>\n<p>then</p>\n<p>$$ \\beta=\\frac{1}{2}. $$</p>\n<p>So,</p>\n<p>$$ \\alpha+\\beta=\\frac{2}{3}+\\frac{1}{2}=\\frac{7}{6}. $$</p>\n<p>Hence,</p>\n<p>$$ 6(\\alpha+\\beta)=7. $$</p>\n<h3>Case 2:</h3>\n<p>If</p>\n<p>$$ \\alpha=\\frac{1}{2}, $$</p>\n<p>then</p>\n<p>$$ \\beta=\\frac{2}{3}. $$</p>\n<p>Again,</p>\n<p>$$ \\alpha+\\beta=\\frac{1}{2}+\\frac{2}{3}=\\frac{7}{6}. $$</p>\n<p>Hence,</p>\n<p>$$ 6(\\alpha+\\beta)=7. $$</p>\n<p>Therefore, the required value is</p>\n<p>$$ \\boxed{7} $$</p>\n<p>So, the correct option is <strong>Option B</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6srmy7r",
@@ -141,7 +141,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\frac{\\pi}{2} \\leq x \\leq \\frac{3 \\pi}{4} \\\\\n& \\cos ^{-1}\\left(\\frac{12}{13} \\cos x+\\frac{5}{12} \\sin x\\right) \\\\\n& \\cos ^{-1}(\\cos x \\cos \\alpha+\\sin x \\sin \\alpha) \\\\\n& \\cos ^{-1}(\\cos (x-\\alpha)) \\\\\n& \\Rightarrow x-\\alpha \\text { because } x-\\alpha \\in\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right) \\\\\n& \\Rightarrow x-\\tan ^{-1} \\frac{5}{12}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6v43aqx",
@@ -163,7 +163,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\Rightarrow \\cot ^{-1}\\left(\\frac{\\alpha \\beta+1}{\\alpha-\\beta}\\right)+\\cot ^{-1}\\left(\\frac{\\beta \\gamma+1}{\\beta-\\gamma}\\right)+\\cot ^{-1}\\left(\\frac{\\alpha \\gamma+1}{\\gamma-\\alpha}\\right) \\\\\n& \\Rightarrow \\tan ^{-1}\\left(\\frac{\\alpha-\\beta}{1+\\alpha \\beta}\\right)+\\tan ^{-1}\\left(\\frac{\\beta-\\gamma}{1+\\beta \\gamma}\\right)+\\pi+\\tan ^{-1}\\left(\\frac{\\gamma-\\alpha}{1+\\gamma \\alpha}\\right) \\\\\n& \\Rightarrow\\left(\\tan ^{-1} \\alpha-\\tan ^{-1} \\beta\\right)+\\left(\\tan ^{-1} \\beta-\\tan ^{-1} \\gamma\\right)+\\left(\\pi+\\tan ^{-1} \\gamma-\\tan ^{-1} \\alpha\\right) \\\\\n& \\Rightarrow \\pi\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6ulvpsm",
@@ -180,7 +180,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\operatorname{If}\\left(\\tan \\left(\\tan ^{-1}(\\alpha)\\right)+1\\left(\\cot \\left(\\cot ^{-1} \\beta\\right)\\right)^2=36\\right. \\\\\n& \\alpha^2+\\beta^2=34 \\\\\n& \\alpha \\beta=15 \\\\\n& \\alpha=3, \\beta=5 \\\\\n& \\therefore \\alpha^2+\\beta=9+5=14\n\\end{aligned}$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "m6w9nztv",
@@ -202,7 +202,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\cos \\left(\\sin ^{-1} \\frac{3}{5}+\\sin ^{-1} \\frac{5}{13}+\\sin ^{-1} \\frac{33}{65}\\right) \\\\\n& \\cos \\left(\\tan ^{-1} \\frac{3}{4}+\\tan ^{-1} \\frac{5}{12}+\\tan ^{-1} \\frac{33}{56}\\right) \\\\\n& \\cos \\left(\\tan ^{-1}\\left(\\frac{\\frac{3}{4}+\\frac{5}{12}}{1+\\frac{3}{4} \\cdot \\frac{5}{12}}\\right)+\\tan ^{-1} \\frac{33}{56}\\right) \\\\\n& \\cos \\left(\\tan ^{-1} \\frac{56}{33}+\\cot ^{-1} \\frac{56}{33}\\right) \\\\\n& \\cos \\left(\\frac{\\pi}{2}\\right)=0\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qignra",
@@ -219,7 +219,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\cos ^{-1} x=\\pi+\\sin ^{-1} x+\\sin ^{-1}(2 x+1) \\\\\n& 2 \\cos ^{-1} x-\\sin ^{-1}(2 x+1)=\\frac{3 \\pi}{2} \\\\\n& 2 \\alpha-\\beta=\\frac{3 \\pi}{2} \\text { where } \\cos ^{-1} x=\\alpha, \\sin ^{-1}(2 x+1)=\\beta \\\\\n& 2 \\alpha=\\frac{3 \\pi}{2}+\\beta \\\\\n& \\cos 2 \\alpha=\\sin \\beta \\\\\n& \\begin{array}{l}\n2 \\cos ^2 \\alpha-1=\\sin \\beta \\\\\n2 x^2-1=2 x+1 \\\\\nx^2-x-1=0 \\\\\n\\Rightarrow x=\\frac{1-\\sqrt{5}}{2},\\left\\{x=\\frac{1+\\sqrt{5}}{2} \\text { rejected }\\right\\} \\\\\n\\therefore 4 x^2-4 x=4 \\\\\n(2 x-1)^2=5\n\\end{array}\n\\end{aligned}$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "m9e5j24w",
@@ -236,7 +236,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& y=\\cos \\left(\\frac{\\pi}{3}+\\cos ^{-1} \\frac{x}{2}\\right) \\\\\n& =\\cos \\left(\\frac{\\pi}{3}\\right) \\cos \\left(\\cos ^{-1}\\left(\\frac{x}{2}\\right)\\right)-\\sin \\left(\\frac{\\pi}{3 .}\\right) \\sin \\left(\\cos ^{-1}\\left(\\frac{x}{2}\\right)\\right) \\\\\n& =\\frac{1}{2} \\cdot \\frac{x}{2}-\\frac{\\sqrt{3}}{2} \\cdot \\sqrt{1-\\frac{x^2}{4}} \\\\\n& \\Rightarrow 4 y=x-\\sqrt{3} \\sqrt{4-x^2} \\\\\n& \\Rightarrow(4 y-x)^2=3\\left(4-x^2\\right) \\\\\n& \\Rightarrow 16 y^2+x^2-8 x y=12-3 x^2 \\\\\n& x^2+4 y^2-2 x y=3 \\\\\n& (x-y)^2+3 y^2=3\n\\end{aligned}$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "m9dm792b",
@@ -258,7 +258,7 @@
     "difficulty": "hard",
     "solution": "<p>$\\cot ^{-1}\\left(\\frac{|\\sec 2|-1}{\\tan 2}\\right)-\\cot ^{-1}\\left(\\frac{\\left|\\sec \\frac{1}{2}\\right|+1}{\\tan \\frac{1}{2}}\\right)$</p>\n<p>$$\\begin{aligned}\n& =\\cot ^{-1}\\left(\\frac{-1-\\cos 2}{\\sin 2}\\right)-\\cot ^{-1}\\left(\\frac{1+\\cos \\frac{1}{2}}{\\sin \\frac{1}{2}}\\right) \\\\\n& =\\pi-\\cot ^{-1}(\\cot 1)-\\cot ^{-1}\\left(\\cot \\frac{1}{4}\\right) \\\\\n& =\\pi-1-\\frac{1}{4}=\\pi-\\frac{5}{4}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsfkxule",
@@ -280,7 +280,7 @@
     "difficulty": "medium",
     "solution": "<p>Assume $$\\sin ^{-1} x=\\theta$$</p>\n<p>$$\\begin{aligned}\n& \\cos (2 \\theta)=\\frac{1}{9} \\\\\n& \\sin \\theta= \\pm \\frac{2}{3}\n\\end{aligned}$$</p>\n<p>as $$\\mathrm{m}$$ and $$\\mathrm{n}$$ are co-prime natural numbers,</p>\n<p>$$\\mathrm{x}=\\frac{2}{3}$$</p>\n<p>i.e. $$m=2, n=3$$</p>\n<p>So, the quadratic equation becomes $$2 x^2-3 x+1=0$$ whose roots are $$\\alpha=1, \\beta=\\frac{1}{2}$$</p>\n<p>$$\\left(1, \\frac{1}{2}\\right)$$ lies on $$5 x+8 y=9$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lse4tf9q",
@@ -302,7 +302,7 @@
     "difficulty": "medium",
     "solution": "<p>Let $$\\sin ^{-1} \\alpha=A, \\sin ^{-1} \\beta=B, \\sin ^{-1} \\gamma=C$$</p>\n<p>$$\\begin{aligned}\n& \\mathrm{A}+\\mathrm{B}+\\mathrm{C}=\\pi \\\\\n& (\\alpha+\\beta)^2-\\gamma^2=3 \\alpha \\beta \\\\\n& \\alpha^2+\\beta^2-\\gamma^2=\\alpha \\beta \\\\\n& \\frac{\\alpha^2+\\beta^2-\\gamma^2}{2 \\alpha \\beta}=\\frac{1}{2} \\\\\n& \\Rightarrow \\cos \\mathrm{C}=\\frac{1}{2} \\\\\n& \\sin \\mathrm{C}=\\gamma \\\\\n& \\cos \\mathrm{C}=\\sqrt{1-\\gamma^2}=\\frac{1}{2} \\\\\n& \\gamma=\\frac{\\sqrt{3}}{2}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lvc57nxl",
@@ -319,7 +319,7 @@
     "difficulty": "medium",
     "solution": "<p>For $ n \\in \\mathbb{N} $, if $ \\cot^{-1} 3 + \\cot^{-1} 4 + \\cot^{-1} 5 + \\cot^{-1} n = \\frac{\\pi}{4} $, then $ n $ is equal to <strong></strong><strong></strong>.</p>\n\n<p>Given the equation:</p>\n\n<p>$ \\cot^{-1} 3 + \\cot^{-1} 4 + \\cot^{-1} 5 + \\cot^{-1}(n) = \\frac{\\pi}{4} $</p>\n\n<p>we can use the identity for the sum of inverse cotangents. Starting with the first two terms:</p>\n\n<p>$ \\cot^{-1} 3 + \\cot^{-1} 4 = \\cot^{-1}\\left(\\frac{3 \\times 4 - 1}{3 + 4}\\right) = \\cot^{-1}\\left(\\frac{11}{7}\\right) $</p>\n\n<p>Now, adding the third term:</p>\n\n<p>$ \\cot^{-1}\\left(\\frac{11}{7}\\right) + \\cot^{-1}(5) $</p>\n\n<p>we apply the identity again:</p>\n\n<p>$ \\cot^{-1}\\left(\\frac{11}{7}\\right) + \\cot^{-1}\\left(\\frac{n \\times 5 - 1}{5 + n}\\right) = \\frac{\\pi}{4} $</p>\n\n<p>Rewriting this to isolate the sum of the terms, we proceed as follows:</p>\n\n<p>$ \\cot^{-1}\\left( \\frac{\\left(\\frac{11}{7} \\times \\frac{5n-1}{5+n} - 1\\right)}{\\left(\\frac{11}{7} + \\frac{5n-1}{5+n} \\right)} \\right) = \\frac{\\pi}{4} $</p>\n\n<p>This simplifies to:</p>\n\n<p>$ \\frac{11}{7} \\left(\\frac{5n-1}{5+n}\\right) - 1 = \\frac{11}{7} + \\frac{5n-1}{5+n} $</p>\n\n<p>Solving the equation:</p>\n\n<p>$ \\frac{55n - 11}{5 + n} - 1 = \\frac{11}{7} + \\frac{5n - 1}{5 + n} $</p>\n\n<p>Further simplification yields:</p>\n\n<p>$ 55n - 11 - 35 - 7n = 55 + 11n + 35n - 7 $</p>\n\n<p>Bringing the terms together, we get:</p>\n\n<p>$ 48n - 46 = 48 $</p>\n\n<p>Therefore:</p>\n\n<p>$ 2n = 94 $</p>\n\n<p>So finally:</p>\n\n<p>$ n = 47 $</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "liio1fc3",
@@ -337,7 +337,7 @@
     "solution": "$\\sqrt{1+\\cos 2 x}=\\sqrt{2} \\tan ^{-1}(\\tan x)$\n<br><br>$\\begin{aligned} &amp; \\Rightarrow \\sqrt{2 \\cos ^2 x}=\\sqrt{2} \\tan ^{-1} \\tan x \\\\\\\\ &amp; \\Rightarrow \\sqrt{2}|\\cos x|=\\sqrt{2} \\tan ^{-1} \\tan x \\\\\\\\ &amp; \\Rightarrow |\\cos x|=\\tan ^{-1} \\tan x\\end{aligned}$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1ls7zio9s/9a0db0a9-5a88-413b-a59b-06bc109ef74c/0ff28600-c3a0-11ee-b20f-23a91f58f239/file-6y3zli1ls7zio9t.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1ls7zio9s/9a0db0a9-5a88-413b-a59b-06bc109ef74c/0ff28600-c3a0-11ee-b20f-23a91f58f239/file-6y3zli1ls7zio9t.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2023 Paper 1 Online Mathematics - Inverse Trigonometric Functions Question 4 English Explanation\">\n<br><br>Number of solution $=3$.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1lgoy4b0g",
@@ -371,7 +371,7 @@
     "difficulty": "medium",
     "solution": "Given equation is\n<br/><br/>$$\n\\sin^{-1}\\left(\\frac{x+1}{\\sqrt{x^{2}+2 x+2}}\\right)-\\sin^{-1}\\left(\\frac{x}{\\sqrt{x^{2}+1}}\\right)=\\frac{\\pi}{4}.\n$$\n\n<br/><br/>Let's denote:\n\n<br/><br/>$$A = \\sin^{-1}\\left(\\frac{x+1}{\\sqrt{x^{2}+2 x+2}}\\right),$$\n<br/><br/>$$B = \\sin^{-1}\\left(\\frac{x}{\\sqrt{x^{2}+1}}\\right).$$\n\n<br/><br/>So, we have the equation $A - B = \\frac{\\pi}{4}$. \n\n<br/><br/>We can also write this as $A = B + \\frac{\\pi}{4}$.\n\n<br/><br/>This gives us \n\n<br/><br/>$$\\sin(A) = \\sin\\left(B + \\frac{\\pi}{4}\\right).$$\n\n<br/><br/>We can use the identity $\\sin(a + b) = \\sin a \\cos b + \\cos a \\sin b$ and rewrite this equation as:\n\n<br/><br/>$$\\frac{x+1}{\\sqrt{(x+1)^2+1}} = \\frac{x}{\\sqrt{x^2+1}} \\cos\\left(\\frac{\\pi}{4}\\right) + \\sqrt{1-\\left(\\frac{x}{\\sqrt{x^2+1}}\\right)^2} \\sin\\left(\\frac{\\pi}{4}\\right).$$\n\n<br/><br/>After simplifying, we get:\n\n<br/><br/>$$\\frac{x+1}{\\sqrt{x^2 + 2x + 2}} = \\frac{1}{\\sqrt{2}}\\left(\\frac{x}{\\sqrt{x^2 + 1}} + \\sqrt{1 - \\frac{x^2}{x^2 + 1}}\\right).$$\n\n<br/><br/>Let's square both sides to remove the square roots:\n\n<br/><br/>On the left side, squaring gives:\n\n<br/><br/>$$\\left(\\frac{x+1}{\\sqrt{x^2 + 2x + 2}}\\right)^2 = \\frac{(x+1)^2}{x^2 + 2x + 2}.$$\n\n<br/><br/>On the right side, squaring gives:\n\n<br/><br/>$$\\left(\\frac{1}{\\sqrt{2}}\\left(\\frac{x}{\\sqrt{x^2 + 1}} + \\sqrt{1 - \\frac{x^2}{x^2 + 1}}\\right)\\right)^2 = \\frac{1}{2}\\left(\\frac{x^2}{x^2+1} + 2\\frac{x}{\\sqrt{x^2+1}}\\sqrt{1-\\frac{x^2}{x^2+1}} + 1 - \\frac{x^2}{x^2+1}\\right).$$\n<br/><br/>$$ \\therefore $$ $$\\frac{(x+1)^2}{x^2 + 2x + 2}$$ = $$\\frac{1}{2}\\left(\\frac{x^2}{x^2+1} + 2\\frac{x}{\\sqrt{x^2+1}}\\sqrt{1-\\frac{x^2}{x^2+1}} + 1 - \\frac{x^2}{x^2+1}\\right)$$\n<br/><br/>$$ \\Rightarrow $$ $$\\frac{(x+1)^2}{x^2 + 2x + 2}$$ = $${1 \\over 2}\\left( {2 \\times {x \\over {\\sqrt {{x^2} + 1} }}\\sqrt {{{{x^2} + 1 - {x^2}} \\over {{x^2} + 1}}}  + 1} \\right)$$\n<br/><br/>$$ \\Rightarrow $$ $$\\frac{(x+1)^2}{x^2 + 2x + 2}$$ = $${1 \\over 2}\\left( {2 \\times {x \\over {\\sqrt {{x^2} + 1} }}{1 \\over {\\sqrt {{x^2} + 1} }} + 1} \\right)$$\n<br/><br/>$$ \\Rightarrow $$ $$\\frac{(x+1)^2}{x^2 + 2x + 2}$$ = $${1 \\over 2}\\left( {2 \\times {x \\over {{x^2} + 1}} + 1} \\right)$$\n<br/><br/>$$ \\Rightarrow $$ $$\\frac{(x+1)^2}{x^2 + 2x + 2}$$ = $${1 \\over 2}\\left( {{{2x + {x^2} + 1} \\over {{x^2} + 1}}} \\right)$$\n<br/><br/>$$ \\Rightarrow $$ $$\\frac{(x+1)^2}{x^2 + 2x + 2}$$ = $${1 \\over 2}\\left( {{{{{\\left( {x + 1} \\right)}^2}} \\over {{x^2} + 1}}} \\right)$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow \\frac{x+1}{\\sqrt{x^2+2x+2}}=\\frac{x+1}{\\sqrt{2} \\sqrt{x^2+1}} \\\\\\\\\n& \\Rightarrow x=-1 \\text { OR } \\sqrt{x^2+2x+2}=\\sqrt{2} \\cdot \\sqrt{x^2+1} \\\\\\\\\n& \\Rightarrow x=0, x=2 \\text { (Rejected) } \\\\\\\\\n& S=\\{0,-1\\}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\sum_{x \\in R}\\left(\\sin \\left(\\left(x^2+x+5\\right) \\frac{\\pi}{2}\\right)-\\cos \\left(\\left(x^2+x+5\\right) \\pi\\right)\\right) \\\\\\\\\n& =\\left[\\sin \\left(\\frac{5 \\pi}{2}\\right)-\\cos (5 \\pi)\\right]+\\left[\\sin \\left(\\frac{5 \\pi}{2}\\right)-\\cos (5 \\pi)\\right] \\\\\\\\\n& = (1 -(-1)) + (1 -(-1))\\\\\\\\\n& = 2 + 2 \\\\\\\\\n& = 4\n\\end{aligned}\n$$",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1ldo6tynu",
@@ -393,7 +393,7 @@
     "difficulty": "medium",
     "solution": "$$ {\\,2{{\\tan }^{ - 1}}\\left( {{{1 - x} \\over {1 + x}}} \\right) = {{\\cos }^{ - 1}}\\left( {{{1 - {x^2}} \\over {1 + {x^2}}}} \\right)}$$\n<br/><br/>$\\begin{aligned} & \\text { Put } x=\\tan \\theta \\quad \\theta \\in\\left(0, \\frac{\\pi}{4}\\right) \\\\\\\\ & 2 \\tan ^{-1}\\left(\\frac{1-\\tan \\theta}{1+\\tan \\theta}\\right)=\\cos ^{-1}\\left(\\frac{1-\\tan ^2 \\theta}{1+\\tan ^2 \\theta}\\right) \\\\\\\\ & 2 \\tan ^{-1}\\left[\\tan \\left(\\frac{\\pi}{4}-\\theta\\right)\\right]=\\cos ^{-1}[\\cos (2 \\theta)] \\\\\\\\ & \\Rightarrow 2\\left(\\frac{\\pi}{4}-\\theta\\right)=2 \\theta \\Rightarrow \\theta=\\frac{\\pi}{8} \\\\\\\\ & \\Rightarrow x=\\tan \\frac{\\pi}{8}=\\sqrt{2}-1 \\simeq 0.414\\end{aligned}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldom652p",
@@ -415,7 +415,7 @@
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& \\cos ^{-1}(2 \\mathrm{x})=\\pi+2 \\cos ^{-1} \\sqrt{1-\\mathrm{x}^2} \\\\\\\\\n& \\text { Since } \\cos ^{-1}(2 \\mathrm{x}) \\in[0, \\pi] \\\\\\\\\n& \\text { R.H.S. } \\geq \\pi \\\\\\\\\n& \\pi+2 \\cos ^{-1} \\sqrt{1-\\mathrm{x}^2}=\\pi \\\\\\\\\n& \\Rightarrow \\cos ^{-1} \\sqrt{1-\\mathrm{x}^2}=0 \\\\\\\\\n& \\Rightarrow \\sqrt{1-\\mathrm{x}^2}=1 \\\\\\\\\n& \\Rightarrow \\mathrm{x}=0 \\\\\\\\\n& \\text { but at } \\mathrm{x}=0 \\\\\\\\\n& \\cos ^{-1}(2 \\mathrm{x})=\\cos ^{-1}(0)=\\frac{\\pi}{2}\n\\end{aligned}\n$$\n<br/><br/>$$ \\therefore $$ No solution possible for given equation.\n<br/><br/>$$\n\\mathrm{x} \\in \\phi\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldv37zch",
@@ -454,7 +454,7 @@
     "difficulty": "medium",
     "solution": "$a_{1}=1, a_{2}, a_{3}, a_{4}, \\ldots .$. be consecutive natural numbers.\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore \\quad a_2=2, a_3=3, \\ldots ., a_{2021}=2021, a_{2022}=2022 \\\\\\\\\n& \\tan ^{-1}\\left[\\frac{1}{1+a_1 a_2}\\right]=\\tan ^{-1}\\left[\\frac{1}{1+1 \\cdot 2}\\right]=\\tan ^{-1}(1)-\\tan ^{-1}\\left(\\frac{1}{2}\\right) \\\\\\\\\n& \\tan ^{-1}\\left[\\frac{1}{1+a_2 a_3}\\right]=\\tan ^{-1}\\left[\\frac{1}{1+2 \\cdot 3}\\right]=\\tan ^{-1}\\left(\\frac{1}{2}\\right)-\\tan ^{-1}\\left(\\frac{1}{3}\\right)\n\\end{aligned}\n$$\n<br/><br/>.\n<br/>.\n<br/>.\n<br/>.\n<br/><br/>$$\n\\begin{aligned}\n\\tan ^{-1}\\left[\\frac{1}{1+a_{2021} a_{2022}}\\right] & =\\tan ^{-1}\\left[\\frac{1}{1+2021 \\cdot 2022}\\right] \\\\\\\\\n& =\\tan ^{-1}\\left(\\frac{1}{2021}\\right)-\\tan ^{-1}\\left(\\frac{1}{2022}\\right)\n\\end{aligned}\n$$\n<br/><br/>$$ \\therefore $$ $\\tan ^{-1}\\left(\\frac{1}{1+a_{1} a_{2}}\\right)+\\tan ^{-1}\\left(\\frac{1}{1+a_{2} a_{3}}\\right)+\\ldots . .+\\tan ^{-1}\\left(\\frac{1}{1+a_{2021} a_{2022}}\\right)$\n<br/><br/>$$\n=\\tan ^{-1}(1)-\\tan ^{-1}\\left(\\frac{1}{2022}\\right)=\\frac{\\pi}{4}-\\cot ^{-1}(2022)\n$$\n<br/><br/>$$\n=\\frac{\\pi}{4}-\\left(\\frac{\\pi}{2}-\\tan ^{-1}(2022)\\right)=\\tan ^{-1}(2022)-\\frac{\\pi}{4}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ldo7xp9f",
@@ -476,7 +476,7 @@
     "difficulty": "hard",
     "solution": "$\\sin ^{-1} \\sin \\theta-\\left(\\frac{\\pi}{2}-\\sin ^{-1} \\sin \\theta\\right)>0$\n\n<br/><br/>$\\Rightarrow \\sin ^{-1} \\sin \\theta>\\frac{\\pi}{4}$\n\n<br/><br/>$\\Rightarrow \\sin \\theta>\\frac{1}{\\sqrt{2}}$\n\n<br/><br/>So, $\\theta \\in\\left(\\frac{\\pi}{4}, \\frac{3 \\pi}{4}\\right)$\n\n<br/><br/>$\\theta \\in\\left(\\frac{\\pi}{4}, \\frac{3 \\pi}{4}\\right)=(\\mathrm{a}, \\mathrm{b})$\n\n<br/><br/>$b-a=\\frac{\\pi}{2}=\\alpha-\\beta$\n\n<br/><br/>$\\Rightarrow \\beta=\\alpha-\\frac{\\pi}{2}$\n\n<br/><br/>$\\Rightarrow \\alpha x^{2}+\\beta \\mathrm{x}+\\sin ^{-1}\\left[(\\mathrm{x}-3)^{2}+1\\right]+\\cos ^{-1}\\left[(\\mathrm{x}-3)^{2}+1\\right]=0$\n\n<br/><br/>$x=3,9 \\alpha+3 \\beta+\\frac{\\pi}{2}+0=0$ \n\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow 9 \\alpha+3\\left(\\alpha-\\frac{\\pi}{2}\\right)+\\frac{\\pi}{2}=0 \\\\\\\\\n& \\Rightarrow 12 \\alpha-\\pi=0 \\\\\\\\\n& \\alpha=\\frac{\\pi}{12}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldprk1i1",
@@ -498,7 +498,7 @@
     "difficulty": "medium",
     "solution": "$\\sin ^{-1}\\left(\\frac{\\alpha}{17}\\right)=-\\cos ^{4}\\left(\\frac{4}{5}\\right)+\\tan ^{-1}\\left(\\frac{77}{36}\\right)$\n\n<br/><br/>Let $\\cos ^{-1}\\left(\\frac{4}{5}\\right)=p$ and $\\tan ^{-1}\\left(\\frac{77}{36}\\right)=q$\n\n<br/><br/>$\\Rightarrow \\sin \\left(\\sin ^{-1} \\frac{\\alpha}{17}\\right)=\\sin (q-p)$\n\n<br/><br/>$=\\sin q \\cdot \\cos p-\\cos q \\cdot \\sin p$\n\n<br/><br/>$\\Rightarrow \\frac{\\alpha}{17}=\\frac{77}{85} \\cdot \\frac{4}{5}-\\frac{36}{85} \\cdot \\frac{3}{5}$\n\n<br/><br/>$\\Rightarrow \\alpha=\\frac{200}{25}=8$\n\n<br/><br/>$\\sin ^{-1} \\sin 8+\\cos ^{-1} \\cos 8$\n\n<br/><br/>$= -8+3 \\pi+8-2 \\pi$\n\n<br/><br/>$=\\pi$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "liinxbid",
@@ -521,7 +521,7 @@
     "solution": "<b>Concept :</b> \n<br/><br/>$$\n\\cot ^{-1} x=\\left\\{\\begin{aligned}\n\\pi+\\tan ^{-1} \\frac{1}{x}; & x<0 \\\\\n\\tan ^{-1} \\frac{1}{x} & ; x>0\n\\end{aligned}\\right.\n$$\n<br/><br/><b>Solution :</b> Given, $0 < |y| < 3$\n<br/><br/>$$ \\Rightarrow $$ $$\ny \\in(-3,3)-\n$$ {0}\n<br/><br/>$$9 - {y^2}$$ is always positive when $$\ny \\in(-3,3)-\n$$ {0}\n<br/><br/>And $6y$ is positive when $$\ny \\in(0,3)\n$$\n<br/><br/>And $6y$ is negative when $$\ny \\in(-3,0)\n$$\n<br/><br/>$$ \\therefore $$ In overall, $$\n\\frac{6 y}{9-y^2} > 0\n$$ when $$\ny \\in(0,3)\n$$\n<br/><br/>And $$\n\\frac{6 y}{9-y^2} < 0\n$$ when $$\ny \\in(-3,0)\n$$\n<br/><br/><b>Case - 1 :</b>\n<br/><br/>When $-3 < y < 0$\n<br/><br/>$$\n\\begin{aligned}\n& \\tan ^{-1}\\left(\\frac{6 y}{9-y^2}\\right)+\\pi+\\tan ^{-1}\\left(\\frac{6 y}{9-y^2}\\right)=\\frac{2 \\pi}{3} \\\\\\\\\n& \\Rightarrow 2 \\tan ^{-1}\\left(\\frac{6 y}{9-y^2}\\right)=\\frac{-\\pi}{3} \\\\\\\\\n& \\Rightarrow \\frac{6 y}{9-y^2}=\\frac{-1}{\\sqrt{3}} \\\\\\\\\n& \\Rightarrow y^2-6 \\sqrt{3} y-9=0 \\\\\\\\\n& \\Rightarrow y^2-6 \\sqrt{3} y-9=0\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow y=\\frac{6 \\sqrt{3} \\pm \\sqrt{108+36}}{2}=\\frac{6 \\sqrt{3} \\pm 12}{2}=3 \\sqrt{3} \\pm 6 \\\\\\\\\n& \\text { as } y \\in(-3.0) \\therefore y=3 \\sqrt{3}-6\n\\end{aligned}\n$$\n<br/><br/><b>Case-2 :</b> When $0 < y < 3$\n<br/><br/>$$\n\\begin{aligned}\n& \\tan ^{-1}\\left(\\frac{6 y}{9-y^2}\\right)+\\tan ^{-1}\\left(\\frac{6 y}{9-y^2}\\right)=\\frac{2 \\pi}{3} \\\\\\\\\n& \\Rightarrow 2 \\tan ^{-1}\\left(\\frac{6 y}{9-y^2}\\right)=\\frac{2 \\pi}{3} \\\\\\\\\n& \\Rightarrow \\frac{6 y}{9-y^2}=\\sqrt{3}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow 6 y=9 \\sqrt{3}-\\sqrt{3} y^2 \\\\\\\\\n& \\Rightarrow \\sqrt{3} y^2+6 y-9 \\sqrt{3}=0 \\\\\\\\\n& \\Rightarrow \\sqrt{3} y^2+9 y-3 y-9 \\sqrt{3}=0 \\\\\\\\\n& \\Rightarrow \\sqrt{3} y(y+3 \\sqrt{3})-3(y+3 \\sqrt{3})=0 \\\\\\\\\n& \\Rightarrow(y+3 \\sqrt{3})-(\\sqrt{3} y-3)=0\n\\end{aligned}\n$$\n<br/><br/>$$\ny \\neq-3 \\sqrt{3} \\quad \\therefore y=\\sqrt{3} \\text { as } y \\in(0,3)\n$$\n<br/><br/>$$\n\\therefore \\text { Sum of solutions }=\\sqrt{3}+(3 \\sqrt{3}-6)=4 \\sqrt{3}-6\n$$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5b7rjam",
@@ -543,7 +543,7 @@
     "difficulty": "medium",
     "solution": "The star \"*\" in this context represents a binary operation, similar to addition (+), subtraction (-), multiplication (×), and division (÷). It is a custom operation defined by the problem statement, and the specific rules of the operation are provided in the problem. \n<br/><br/>\nIn this case, the operation \"*\" is defined by the equation $x * y = x^2 + y^3$, which means if you have two numbers $x$ and $y$, then the result of applying the \"*\" operation to them is $x^2 + y^3$. \n<br/><br/>\nThe problem also specifies an additional rule for this operation: $(x * 1) * 1 = x * (1 * 1)$, which needs to be taken into account when solving the problem. This is a type of \"associativity\" condition.\n<p>Given,</p>\n<p>$$x\\, * \\,y = {x^2} + {y^3}$$</p>\n<p>$$\\therefore$$ $$x\\, * \\,1 = {x^2} + {1^3} = {x^2} + 1$$</p>\n<p>Now, $$(x\\, * \\,1)\\, * \\,1 = ({x^2} + 1)\\, * \\,1$$</p>\n<p>$$ \\Rightarrow (x\\, * \\,1)\\, * \\,1 = {({x^2} + 1)^2} + {1^3}$$</p>\n<p>$$ \\Rightarrow (x\\, * \\,1)\\, * \\,1 = {x^4} + 1 + 2{x^2} + 1$$</p>\n<p>Also, $$x\\, * \\,(1\\, * \\,1)$$</p>\n<p>$$ = x\\, * \\,({1^2} + {1^3})$$</p>\n<p>$$ = x\\, * \\,2$$</p>\n<p>$$ = {x^2} + {2^3}$$</p>\n<p>$$ = {x^2} + 8$$</p>\n<p>Given that,</p>\n<p>$$(x\\, * \\,1)\\, * \\,1 = x\\, * \\,(1\\, * \\,1)$$</p>\n<p>$$\\therefore$$ $${x^4} + 1 + 2{x^2} + 1 = {x^2} + 8$$</p>\n<p>$$ \\Rightarrow {x^4} + {x^2} - 6 = 0$$</p>\n<p>$$ \\Rightarrow {x^4} + 3{x^2} - 2{x^2} - 6 = 0$$</p>\n<p>$$ \\Rightarrow {x^2}({x^2} + 3) - 2({x^3} + 3) = 0$$</p>\n<p>$$ \\Rightarrow ({x^2} + 3)({x^2} - 2) = 0$$</p>\n<p>$$ \\Rightarrow {x^2} = 2,\\, - 3$$</p>\n<p>[$${x^2} = -3$$ not possible as square of anything should be always positive]\n<p>$$\\therefore$$ $${x^2} = 2$$</p>\n<p>$$\\therefore$$ Now,</p>\n<p>$$2{\\sin ^{ - 1}}\\left( {{{{x^4} + {x^2} - 2} \\over {{x^4} + {x^2} + 2}}} \\right)$$</p>\n<p>$$ = 2{\\sin ^{ - 1}}\\left( {{{{2^2} + 2 - 2} \\over {{2^2} + 2 + 2}}} \\right)$$</p>\n<p>$$ = 2{\\sin ^{ - 1}}\\left( {{4 \\over 8}} \\right)$$</p>\n<p>$$ = 2{\\sin ^{ - 1}}\\left( {{1 \\over 2}} \\right)$$</p>\n<p>$$ = 2 \\times {\\pi  \\over 6}$$</p>\n<p>$$ = {\\pi  \\over 3}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5c13084",
@@ -565,7 +565,7 @@
     "difficulty": "medium",
     "solution": "<p>$${({\\tan ^{ - 1}}x)^3} + {({\\cot ^{ - 1}}x)^3} = k{\\pi ^3}$$</p>\n<p>Let $$f(t) = {t^3} + {\\left( {{\\pi  \\over 2} - t} \\right)^3}$$</p>\n<p>Where $$t = {\\tan ^{ - 1}}x$$ ; $$x \\in \\left( { - {\\pi  \\over 2},{\\pi  \\over 2}} \\right)$$</p>\n<p>$$ = {t^3} + {\\left( {{\\pi  \\over 2}} \\right)^3} - {{3{\\pi ^2}t} \\over 4} + {{3\\pi } \\over 2}{t^2} - {t^3}$$</p>\n<p>$$f(t) = {{3\\pi } \\over 2}{t^2} - {{3{\\pi ^2}} \\over 4}\\,.\\,t + {{{\\pi ^3}} \\over 8}$$</p>\n<p>This is a quadratic equation of t.</p>\n<p>Here, coefficient of t<sup>2</sup> term is $${{3\\pi } \\over 2}$$ which is &gt; 0.</p>\n<p>$$\\therefore$$ It is a upward parabola.</p>\n<p>Now, $$f'(t) = 3\\pi t - {{3{\\pi ^2}} \\over 4}$$</p>\n<p>$$f''(t) = 3\\pi  &gt; 0$$</p>\n<p>$$\\therefore$$ $$3\\pi t - {{3{\\pi ^2}} \\over 4} = 0$$</p>\n<p>$$ \\Rightarrow t = {\\pi  \\over 4}$$ (minima)</p>\n<p>$$\\therefore$$ vertex of graph at $${\\pi  \\over 4}$$</p>\n<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5d349j2/93a986e3-81fb-491a-9045-ba91b8ee8ccd/15480400-ff15-11ec-8a3d-a39bde0e21e9/file-1l5d349j5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5d349j2/93a986e3-81fb-491a-9045-ba91b8ee8ccd/15480400-ff15-11ec-8a3d-a39bde0e21e9/file-1l5d349j5.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 24th June Morning Shift Mathematics - Inverse Trigonometric Functions Question 53 English Explanation\"> </p>\n<p>$$\\therefore$$ Minimum value at $${\\pi  \\over 4}$$ and maximum value at $$-$$$${\\pi  \\over 2}$$.</p>\n<p>$$\\therefore$$ $$f\\left( {{\\pi  \\over 4}} \\right) = {{{\\pi ^3}} \\over {64}} + {\\left( {{\\pi  \\over 2} - {\\pi  \\over 4}} \\right)^3} = {{{\\pi ^3}} \\over {32}}$$</p>\n<p>$$f\\left( { - {\\pi  \\over 2}} \\right) =  - {{{\\pi ^3}} \\over 8} + {\\pi ^3}$$</p>\n<p>$$ = {{7{\\pi ^3}} \\over 8}$$</p>\n<p>$$\\therefore$$ $$k{\\pi ^3} \\in \\left[ {{{{\\pi ^3}} \\over {32}},\\,{{7{\\pi ^3}} \\over 8}} \\right)$$</p>\n<p>$$ \\Rightarrow k \\in \\left[ {{1 \\over {32}},\\,{7 \\over 8}} \\right)$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6f3v5u9",
@@ -604,7 +604,7 @@
     "difficulty": "easy",
     "solution": "<p>$${\\tan ^{ - 1}}\\left( {{{\\cos \\left( {{{15\\pi } \\over 4}} \\right) - 1} \\over {\\sin {\\pi  \\over 4}}}} \\right)$$</p>\n<p>$$ = {\\tan ^{ - 1}}\\left( {{{{1 \\over {\\sqrt 2 }} - 1} \\over {{1 \\over {\\sqrt 2 }}}}} \\right)$$</p>\n<p>$$ = {\\tan ^{ - 1}}(1 - \\sqrt 2 ) =  - {\\tan ^{ - 1}}(\\sqrt 2  - 1)$$</p>\n<p>$$ =  - {\\pi  \\over 8}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6hz53dp",
@@ -626,7 +626,7 @@
     "difficulty": "medium",
     "solution": "<p>Let $${{{{\\sin }^{ - 1}}x} \\over \\alpha } = {{{{\\cos }^{ - 1}}x} \\over \\beta } = k \\Rightarrow {\\sin ^{ - 1}}x + {\\cos ^{ - 1}}x = k(\\alpha  + \\beta )$$</p>\n<p>$$ \\Rightarrow \\alpha  + \\beta  = {\\pi  \\over {2k}}$$</p>\n<p>Now, $${{2\\pi \\,\\alpha } \\over {\\alpha  + \\beta }} = {{2\\pi \\,\\alpha } \\over {{\\pi  \\over {2k}}}} = 4k\\alpha  = 4{\\sin ^{ - 1}}x$$</p>\n<p>Here $$\\sin \\left( {{{2\\pi \\,\\alpha } \\over {\\alpha  + \\beta }}} \\right) = \\sin (4{\\sin ^{ - 1}}x)$$</p>\n<p>Let $${\\sin ^{ - 1}}x = \\theta $$</p>\n<p>$$\\because$$ $$x \\in \\left( {0,{1 \\over {\\sqrt 2 }}} \\right) \\Rightarrow \\theta  \\in \\left( {0,{\\pi  \\over 4}} \\right)$$</p>\n<p>$$ \\Rightarrow x = \\sin \\theta $$</p>\n<p>$$ \\Rightarrow \\cos \\theta  = \\sqrt {1 - {x^2}} $$</p>\n<p>$$ \\Rightarrow \\sin 2\\theta  = 2x\\,.\\,\\sqrt {1 - {x^2}} $$</p>\n<p>$$ \\Rightarrow \\cos 2\\theta  = \\sqrt {1 - 4{x^2}(1 - {x^2})}  = \\sqrt {{{(2{x^2} - 1)}^2}}  = 1 - 2{x^2}$$</p>\n<p>$$\\because$$ $$\\left( {\\cos 2\\theta  > 0\\,\\mathrm{as}\\,2\\theta  \\in \\left( {0,{\\pi  \\over 2}} \\right)} \\right)$$</p>\n<p>$$ \\Rightarrow \\sin 4\\theta  = 2\\,.\\,2x\\sqrt {1 - {x^2}} (1 - 2{x^2})$$</p>\n<p>$$ = 4x\\sqrt {1 - {x^2}} (1 - 2{x^2})$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6gj38zp",
@@ -648,7 +648,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\tan \\left( {2{{\\tan }^{ - 1}}{1 \\over 5} + {{\\sec }^{ - 1}}{{\\sqrt 5 } \\over 2} + 2{{\\tan }^{ - 1}}{1 \\over 8}} \\right)$$</p>\n<p>$$ = \\tan \\left( {2{{\\tan }^{ - 1}}\\left( {{{{1 \\over 5} + {1 \\over 8}} \\over {1 - {1 \\over 5}\\,.\\,{1 \\over 8}}}} \\right) + {{\\sec }^{ - 1}}{{\\sqrt 5 } \\over 2}} \\right)$$</p>\n<p>$$ = \\tan \\left[ {2{{\\tan }^{ - 1}}{1 \\over 3} + {{\\tan }^{ - 1}}{1 \\over 2}} \\right]$$</p>\n<p>$$ = \\tan \\left[ {{{\\tan }^{ - 1}}{{{2 \\over 3}} \\over {1 - {1 \\over 9}}} + {{\\tan }^{ - 1}}{1 \\over 2}} \\right]$$</p>\n<p>$$ = \\tan \\left[ {{{\\tan }^{ - 1}}{3 \\over 4} + {{\\tan }^{ - 1}}{1 \\over 2}} \\right]$$</p>\n<p>$$ = \\tan \\left[ {{{\\tan }^{ - 1}}{{{3 \\over 4} + {1 \\over 2}} \\over {1 - {3 \\over 8}}}} \\right] = \\tan \\left[ {{{\\tan }^{ - 1}}{{{5 \\over 4}} \\over {{5 \\over 8}}}} \\right]$$</p>\n<p>$$ = \\tan [{\\tan ^{ - 1}}2] = 2$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l56rlph0",
@@ -670,7 +670,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\cot \\left( {\\sum\\limits_{n = 1}^{50} {{{\\tan }^{ - 1}}\\left( {{1 \\over {1 + n + {n^2}}}} \\right)} } \\right)$$</p>\n<p>$$ = \\cot \\left( {\\sum\\limits_{n = 1}^{50} {{{\\tan }^{ - 1}}\\left( {{{(n + 1) - n} \\over {1 + (n + 1)n}}} \\right)} } \\right)$$</p>\n<p>$$ = \\cot \\left( {\\sum\\limits_{n = 1}^{50} {({{\\tan }^{ - 1}}(n + 1) - {{\\tan }^{ - 1}}n} } \\right)$$</p>\n<p>$$ = \\cot ({\\tan ^{ - 1}}51 - {\\tan ^{ - 1}}1)$$</p>\n<p>$$ = \\cot \\left( {{{\\tan }^{ - 1}}\\left( {{{51 - 1} \\over {1 + 51}}} \\right)} \\right)$$</p>\n<p>$$ = \\cot \\left( {{{\\cot }^{ - 1}}\\left( {{{52} \\over {50}}} \\right)} \\right)$$</p>\n<p>$$ = {{26} \\over {25}}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6nm2vtd",
@@ -692,7 +692,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = {\\tan ^{ - 1}}(\\sin x - \\cos x),\\,\\,\\,\\,\\,[0,\\pi ]$$</p>\n<p>Let $$g(x) = \\sin x - \\cos x$$</p>\n<p>$$ = \\sqrt 2 \\sin \\left( {x - {\\pi  \\over 4}} \\right)$$ and $$x - {\\pi  \\over 4} \\in \\left[ {{{ - \\pi } \\over 4},\\,{{3\\pi } \\over 4}} \\right]$$</p>\n<p>$$\\therefore$$ $$g(x) \\in \\left[ { - 1,\\,\\sqrt 2 } \\right]$$</p>\n<p>and $${\\tan ^{ - 1}}x$$ is an increasing function</p>\n<p>$$\\therefore$$ $$f(x) \\in \\left[ {{{\\tan }^{ - 1}}( - 1),\\,{{\\tan }^{ - 1}}\\sqrt 2 } \\right]$$</p>\n<p>$$ \\in \\left[ { - {\\pi  \\over 4},\\,{{\\tan }^{ - 1}}\\sqrt 2 } \\right]$$</p>\n<p>$$\\therefore$$ Sum of $${f_{\\max }}$$ and $${f_{\\min }} = {\\tan ^{ - 1}}\\sqrt 2  - {\\pi  \\over 4}$$</p>\n<p>$$ = {\\cos ^{ - 1}}\\left( {{1 \\over {\\sqrt 3 }}} \\right) - {\\pi  \\over 4}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5464te0",
@@ -731,7 +731,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = {\\sin ^{ - 1}}(2x) + \\sin 2x + {\\cos ^{ - 1}}(2x) + \\cos 2x$$</p>\n<p>$$ = {\\sin ^{ - 1}}(2x) + {\\cos ^{ - 1}}(2x) + \\sin 2x + \\cos 2x$$</p>\n<p>$$ = {\\pi  \\over 2} + \\sqrt 2 \\left( {{1 \\over {\\sqrt 2 }}\\sin 2x + {1 \\over {\\sqrt 2 }}\\cos 2x} \\right)$$</p>\n<p>$$ = {\\pi  \\over 2} + \\sqrt 2 \\left( {\\cos {\\pi  \\over 4}\\sin 2x + \\sin {\\pi  \\over 4}\\cos 2x} \\right)$$</p>\n<p>$$ = {\\pi  \\over 2} + \\sqrt 2 \\,.\\,\\sin \\left( {2x + {\\pi  \\over 4}} \\right)$$</p>\n<p>f(x) is maximum when $$\\sin \\left( {2x + {\\pi  \\over 4}} \\right)$$ is maximum means $$x = {\\pi  \\over 8}$$ or $$\\sin \\left( {2 \\times {\\pi  \\over 8} + {\\pi  \\over 4}} \\right) = \\sin {\\pi  \\over 2} = 1$$</p>\n<p>$$\\therefore$$ $${\\left[ {f(x)} \\right]_{\\max }} = {\\pi  \\over 2} + \\sqrt 2 \\,.\\,1 = {\\pi  \\over 2} + \\sqrt 2  = M$$</p>\n<p>f(x) is minimum when $$\\sin \\left( {2x + {\\pi  \\over 4}} \\right)$$ is minimum means $$x = 0$$ or $$\\sin \\left( {2 \\times 0 + {\\pi  \\over 4}} \\right) = {1 \\over {\\sqrt 2 }}$$</p>\n<p>$$\\therefore$$ $${\\left[ {f(x)} \\right]_{\\min }} = {\\pi  \\over 2} + \\sqrt 2 \\,.\\,{1 \\over {\\sqrt 2 }} = {\\pi  \\over 2} + 1 = m$$</p>\n<p>$$\\therefore$$ $$m + M = {\\pi  \\over 2} + \\sqrt 2  + {\\pi  \\over 2} + 1 = \\pi  + \\sqrt 2  + 1$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1nIy9Pldg3q5vC5Kur1kmjakoz4",
@@ -753,7 +753,7 @@
     "difficulty": "medium",
     "solution": "tan<sup>$$-$$1</sup>(x + 1) + cot<sup>$$-$$1</sup>$$\\left( {{1 \\over {x - 1}}} \\right)$$ = tan<sup>$$-$$1</sup>$$\\left( {{8 \\over {31}}} \\right)$$\n<br><br>$$ \\Rightarrow $$ tan<sup>$$-$$1</sup>(x + 1) + tan<sup>$$-$$1</sup>(x - 1) = tan<sup>$$-$$1</sup>$$\\left( {{8 \\over {31}}} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${\\tan ^{ - 1}}\\left( {{{\\left( {x + 1} \\right) + \\left( {x - 1} \\right)} \\over {1 - \\left( {x + 1} \\right)\\left( {x - 1} \\right)}}} \\right)$$ = tan<sup>$$-$$1</sup>$$\\left( {{8 \\over {31}}} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${{(1 + x) + (x - 1)} \\over {1 - (1 + x)(x - 1)}} = {8 \\over {31}}$$<br><br>$$ \\Rightarrow {{2x} \\over {2 - {x^2}}} = {8 \\over {31}}$$<br><br>$$ \\Rightarrow 4{x^2} + 31x - 8 = 0$$<br><br>$$ \\Rightarrow x =  - 8,{1 \\over 4}$$<br><br>but at $$x = {1 \\over 4}$$<br><br>$$LHS &gt; {\\pi  \\over 2}$$ and $$RHS &lt; {\\pi  \\over 2}$$<br><br>So, only solution is x = $$-$$ 8 = $$-$$$${{{32} \\over 4}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krrolzup",
@@ -775,7 +775,7 @@
     "difficulty": "medium",
     "solution": "$$2{\\tan ^{ - 1}}\\left( {{3 \\over 5}} \\right) = {\\tan ^{ - 1}}\\left( {{{6/5} \\over {1 - {9 \\over {{2^5}}}}}} \\right) = {\\tan ^{ - 1}}\\left( {{{{6 \\over 5}} \\over {{{16} \\over {25}}}}} \\right) = {\\tan ^{ - 1}}{{15} \\over 8}$$<br><br>$$\\therefore$$ $$2{\\tan ^{ - 1}}\\left( {{3 \\over 5}} \\right) + {\\sin ^{ - 1}}\\left( {{5 \\over {13}}} \\right) = {\\tan ^{ - 1}}\\left( {{{15} \\over 8}} \\right) + {\\tan ^{ - 1}}\\left( {{5 \\over {12}}} \\right)$$<br><br>$$ = {\\tan ^{ - 1}}\\left( {{{{{15} \\over 8} + {5 \\over {12}}} \\over {1 - {{15} \\over 8},{5 \\over {12}}}}} \\right)$$<br><br>$$ = {\\tan ^{ - 1}}\\left( {{{180 + 40} \\over {21}}} \\right) = {\\tan ^{ - 1}}\\left( {{{220} \\over {21}}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "KKoj2g0io0AWLE2BYi1klrm0vh5",
@@ -797,7 +797,7 @@
     "difficulty": "medium",
     "solution": "$$\\tan \\left( {{1 \\over 4}{{\\sin }^{ - 1}}{{\\sqrt {63} } \\over 8}} \\right)$$<br><br>$${\\sin ^{ - 1}}\\left( {{{\\sqrt {63} } \\over 8}} \\right) = \\theta $$ $$\\sin \\theta  = {{\\sqrt {63} } \\over 8}$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1km0firy5/888cd1da-8d40-4761-bad3-64d74bbfdfbe/49be9ad0-7ff7-11eb-adeb-e52fb42eec70/file-1km0firy6-300w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 24th February Evening Shift Mathematics - Inverse Trigonometric Functions Question 77 English Explanation\"><br><br>$$\\cos \\theta  = {1 \\over 8}$$<br><br>$$2{\\cos ^2}{\\theta  \\over 2} - 1 = {1 \\over 8}$$<br><br>$${\\cos ^2}{\\theta  \\over 2} = {9 \\over {16}}$$<br><br>$$\\cos {\\theta  \\over 2} = {3 \\over 4}$$<br><br>$${{1 - {{\\tan }^2}{\\theta  \\over 4}} \\over {1 + {{\\tan }^2}{\\theta  \\over 4}}} = {3 \\over 4}$$<br><br>$$\\tan {\\theta  \\over 4} = {1 \\over {\\sqrt 7 }}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "cBLZQ3EuvzBZDVfyOI1klt7uc51",
@@ -819,7 +819,7 @@
     "difficulty": "medium",
     "solution": "$$\\cos ec\\left( {2{{\\cot }^{ - 1}}(5) + {{\\cos }^{ - 1}}\\left( {{4 \\over 5}} \\right)} \\right)$$<br><br>$$\\cos ec\\left( {2{{\\tan }^{ - 1}}\\left( {{1 \\over 5}} \\right) + {{\\cos }^{ - 1}}\\left( {{4 \\over 5}} \\right)} \\right)$$<br><br>$$ = \\cos ec\\left( {{{\\tan }^{ - 1}}\\left( {{{2\\left( {{1 \\over 5}} \\right)} \\over {1 - {{\\left( {{1 \\over 5}} \\right)}^2}}}} \\right) + {{\\cos }^{ - 1}}\\left( {{4 \\over 5}} \\right)} \\right)$$<br><br>$$ = \\cos ec\\left( {{{\\tan }^{ - 1}}\\left( {{5 \\over {12}}} \\right) + {{\\cos }^{ - 1}}\\left( {{4 \\over 5}} \\right)} \\right)$$<br><br>Let $${\\tan ^{ - 1}}(5/12) = \\theta  \\Rightarrow \\sin \\theta  = {5 \\over {13}},\\cos \\theta  = {{12} \\over {13}}$$<br><br>and $${\\cos ^{ - 1}}\\left( {{4 \\over 5}} \\right) = \\phi  \\Rightarrow \\cos \\phi  = {4 \\over 5}$$ and $$\\sin \\phi  = {3 \\over 5}$$<br><br>$$ = \\cos ec(\\theta  + \\phi )$$<br><br>$$ = {1 \\over {\\sin \\theta \\cos \\phi  + \\cos \\theta \\sin \\phi }}$$<br><br>$$ = {1 \\over {{5 \\over {13}}.{4 \\over 5} + {{12} \\over {13}}.{3 \\over 5}}} = {{65} \\over {56}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mbltkG0zPddqjhSIul1kluw1xwf",
@@ -841,7 +841,7 @@
     "difficulty": "medium",
     "solution": "tan<sup>$$-$$1</sup>a + tan<sup>$$-$$1</sup>b = $${\\pi  \\over 4}$$ 0 &lt; a, b &lt; 1<br><br>$$ \\Rightarrow {{a + b} \\over {1 - ab}} = 1$$<br><br>a + b = 1 $$-$$ ab<br><br>(a + 1)(b + 1) = 2<br><br>Now $$\\left[ {a - {{{a^2}} \\over 2} + {{{a^3}} \\over 3} + ....} \\right] + \\left[ {b - {{{b^2}} \\over 2} + {{{b^3}} \\over 3} + ....} \\right]$$<br><br>$$ = {\\log _e}(1 + a) + {\\log _e}(1 + b)$$<br><br>($$ \\because $$ expansion of log<sub>e</sub>(1 + x))<br><br>$$ = {\\log _e}[(1 + a)(1 + b)]$$<br><br>$$ = {\\log _e}2$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "pVJ6lPiMpUPawu7uY81klugzvt7",
@@ -863,7 +863,7 @@
     "difficulty": "medium",
     "solution": "$${{{{\\sin }^{ - 1}}x} \\over a} = {{{{\\cos }^{ - 1}}x} \\over b} = {{{{\\tan }^{ - 1}}y} \\over c}$$<br><br>$${{{{\\sin }^{ - 1}}x} \\over a} = {{{{\\cos }^{ - 1}}x} \\over b} = {{{{\\sin }^{ - 1}}x + {{\\cos }^{ - 1}}x} \\over {a + b}} = {\\pi  \\over {2(a + b)}}$$<br><br>Now, $${{{{\\tan }^{ - 1}}y} \\over c} = {\\pi  \\over {2(a + b)}}$$<br><br>$$2{\\tan ^{ - 1}}y = {{\\pi c} \\over {a + b}}$$<br><br>$$ \\Rightarrow \\cos \\left( {{{\\pi c} \\over {a + b}}} \\right) = \\cos (2{\\tan ^{ - 1}}y) = {{1 - {y^2}} \\over {1 + {y^2}}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktfwajo8",
@@ -885,7 +885,7 @@
     "difficulty": "medium",
     "solution": "Let g(x) = sin x + cos x = $$\\sqrt 2 $$ sin$$\\left( {x + {\\pi  \\over 4}} \\right)$$<br><br>g(x)$$\\in$$ $$\\left[ {1,\\sqrt 2 } \\right]$$ for x$$\\in$$ [0, $$\\pi$$/2]<br><br>f(x) = tan<sup>$$-$$1</sup> (sin x + cos x) $$\\in$$ $$\\left[ {{\\pi  \\over 4},{{\\tan }^{ - 1}}\\sqrt 2 } \\right]$$<br><br>tan$$({\\tan ^{ - 1}}\\sqrt 2  - {\\pi  \\over 4}) = {{\\sqrt 2  - 1} \\over {1 + \\sqrt 2 }} \\times {{\\sqrt 2  - 1} \\over {\\sqrt 2  - 1}} = 3 - 2\\sqrt 2 $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktei3u10",
@@ -907,7 +907,7 @@
     "difficulty": "medium",
     "solution": "Given $$a = {({\\sin ^{ - 1}}x)^2} - {({\\cos ^{ - 1}}x)^2}$$<br><br>$$ = ({\\sin ^{ - 1}}x + {\\cos ^{ - 1}}x)({\\sin ^{ - 1}}x - {\\cos ^{ - 1}}x)$$<br><br>$$ = {\\pi  \\over 2}\\left( {{\\pi  \\over 2} - 2{{\\cos }^{ - 1}}x} \\right)$$<br><br>$$ \\Rightarrow 2{\\cos ^{ - 1}}x = {\\pi  \\over 2} - {{2a} \\over \\pi }$$<br><br>$$ \\Rightarrow {\\cos ^{ - 1}}(2{x^2} - 1) = {\\pi  \\over 2} - {{2a} \\over \\pi }$$<br><br>$$ \\Rightarrow 2{x^2} - 1 = \\cos \\left( {{\\pi  \\over 2} - {{2a} \\over \\pi }} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "UKJTY6DgHPShPaIPIOjgy2xukf0y124i",
@@ -929,7 +929,7 @@
     "difficulty": "medium",
     "solution": "$$2\\pi  - \\left( {{{\\sin }^{ - 1}}{4 \\over 5} + {{\\sin }^{ - 1}}{5 \\over {13}} + {{\\sin }^{ - 1}}{{16} \\over {65}}} \\right)$$<br><br>$$ = 2\\pi  - \\left( {{{\\tan }^{ - 1}}{4 \\over 3} + {{\\tan }^{ - 1}}{5 \\over {12}} + {{\\tan }^{ - 1}}{{16} \\over {63}}} \\right)$$<br><br>$$ = 2\\pi  - \\left\\{ {{{\\tan }^{ - 1}}\\left( {{{{4 \\over 3} + {5 \\over {12}}} \\over {1 - {4 \\over 3}.{5 \\over {12}}}}} \\right) + {{\\tan }^{ - 1}}{{16} \\over {63}}} \\right\\}$$<br><br>$$ = 2\\pi  - \\left( {{{\\tan }^{ - 1}}{{63} \\over {16}} + {{\\tan }^{ - 1}}{{16} \\over {63}}} \\right)$$<br><br>= $$2\\pi  - \\left( {{{\\tan }^{ - 1}}{{63} \\over {16}} + {{\\cot }^{ - 1}}{{63} \\over {16}}} \\right)$$<br><br>$$ = 2\\pi  - {\\pi  \\over 2}$$<br><br>$$ = {{3\\pi } \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "XPZSMXZi1ZlGHmdnVX3rsa0w2w9jx2gxojq",
@@ -951,7 +951,7 @@
     "difficulty": "medium",
     "solution": "$${\\cos ^{ - 1}}x - {\\cos ^{ - 1}}{y \\over 2} = \\alpha $$<br><br>\n$$ \\Rightarrow \\cos \\left( {{{\\cos }^{ - 1}}x - {{\\cos }^{ - 1}}\\left( {{y \\over 2}} \\right)} \\right) = \\cos \\alpha $$<br><br>\n$$ \\Rightarrow x{y \\over 2} + \\sqrt {1 - {x^2}} \\sqrt {1 - {{{y^2}} \\over 4}}  = \\cos \\alpha $$<br><br>\n$$\\left( {\\cos \\alpha  - {{xy} \\over 2}} \\right) = \\sqrt {1 - {x^2}} \\sqrt {1 - {{{y^2}} \\over 4}} $$<br><br>\nsquaring both sides<br><br>\n$${x^2} + {{{y^2}} \\over 4} - xy\\cos \\alpha  = 1 - {\\cos ^2}\\alpha  = {\\sin ^2}\\alpha $$<br><br>\n$$ \\therefore $$ 4x<sup>2</sup>\n– 4xy cos $$\\alpha $$ + y<sup>2</sup> = 4 $${\\sin ^2}\\alpha $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "0fOD1sLduw0qCWTfaKgYw",
@@ -973,7 +973,7 @@
     "difficulty": "medium",
     "solution": "cot<sup>$$-$$1</sup> x &gt; 5, &nbsp;&nbsp;&nbsp;cot<sup>$$-$$1</sup> x &lt; 2\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;x &lt; cot5, &nbsp;&nbsp;x &gt; cot2",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "8ggGtIclV7LzC4NVgY3rsa0w2w9jx6ge0vw",
@@ -995,7 +995,7 @@
     "difficulty": "medium",
     "solution": "$${\\sin ^{ - 1}}{{12} \\over {13}} - {\\sin ^{ - 1}}{3 \\over 5} = {\\sin ^{ - 1}}\\left( {{{12} \\over {13}}.{4 \\over 5}.{3 \\over 5}.{5 \\over {13}}} \\right)$$<br><br>\n$$ \\Rightarrow {\\sin ^{ - 1}}{{33} \\over {65}} = {\\pi  \\over 2} - {\\cos ^{ - 1}}{{33} \\over {65}}$$<br><br>\n$$ \\Rightarrow {\\pi  \\over 2} - {\\sin ^{ - 1}}{{56} \\over {65}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "LzROsT3Flxd6M6C9U01L3",
@@ -1017,7 +1017,7 @@
     "difficulty": "easy",
     "solution": "Here $$\\cos \\alpha  = {3 \\over 5}$$\n<br><br>$$ \\therefore $$ $$\\tan \\alpha  = {4 \\over 3}$$\n<br><br>and $$\\tan \\beta  = {1 \\over 3}$$\n<br><br>We know,\n<br><br>$$\\tan \\left( {\\alpha  - \\beta } \\right) = {{\\tan \\alpha  - \\tan \\beta } \\over {1 + \\tan \\alpha .\\tan \\beta }}$$\n<br><br>= $${{{4 \\over 3} - {1 \\over 3}} \\over {1 + {4 \\over 3}.{1 \\over 3}}}$$ = $${9 \\over {13}}$$\n<br><br>$$ \\therefore $$ $$\\left( {\\alpha  - \\beta } \\right)$$ = $${\\tan ^{ - 1}}\\left( {{9 \\over {13}}} \\right)$$ = $${\\sin ^{ - 1}}\\left( {{9 \\over {5\\sqrt {10} }}} \\right)$$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "6LQjR16XBRAFABZMYrmun",
@@ -1039,7 +1039,7 @@
     "difficulty": "medium",
     "solution": "x = sin<sup>$$-$$1</sup> sin 10 = 3$$\\pi $$ $$-$$ 10\n<br><br>y = cos<sup>$$-$$1</sup>cos 10 = 4$$\\pi $$ $$-$$ 10\n<br><br>y $$-$$ x = (4$$\\pi $$ $$-$$ 10) $$-$$ (3$$\\pi $$ $$-$$ 10) = $$\\pi $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "zmr9GaOF2EgS90jIGdF4s",
@@ -1061,7 +1061,7 @@
     "difficulty": "medium",
     "solution": "Given, \n<br><br>$${\\cos ^{ - 1}}\\left( {{2 \\over {3x}}} \\right) + {\\cos ^{ - 1}}\\left( {{3 \\over {4x}}} \\right) = {\\pi  \\over 2}$$\n<br><br>$$ \\Rightarrow {\\cos ^{ - 1}}\\left( {{2 \\over {3x}}} \\right) = {\\pi  \\over 2} - {\\cos ^{ - 1}}\\left( {{3 \\over {4x}}} \\right)$$\n<br><br>$$ \\Rightarrow \\cos \\left( {{{\\cos }^{ - 1}}\\left( {{2 \\over {3x}}} \\right)} \\right) = \\cos \\left[ {{\\pi  \\over 2} - {{\\cos }^{ - 1}}\\left( {{3 \\over {4x}}} \\right)} \\right]$$\n<br><br>$$ \\Rightarrow {2 \\over {3x}} = \\sin \\left\\{ {{{\\cos }^{ - 1}}\\left( {{3 \\over {4x}}} \\right)} \\right\\}$$\n<br><br>$$ \\Rightarrow {2 \\over {3x}} = \\sin \\left\\{ {{{\\sin }^{ - 1}}{{\\sqrt {16{x^2} - 9} } \\over {4x}}} \\right\\}$$\n<br><br>$$ \\Rightarrow {2 \\over {3x}} = {{16{x^2} - 9} \\over {4x}}$$\n<br><br>$$ \\Rightarrow 64 = 9\\left( {16{x^2} - 9} \\right)$$\n<br><br>$$ \\Rightarrow 16{x^2} - 9 = {{64} \\over 9}$$\n<br><br>$$ \\Rightarrow 16{x^2} = {{64} \\over 9} + 9$$\n<br><br>$$ \\Rightarrow 16{x^2} =  - {{145} \\over 9}$$\n<br><br>$$ \\Rightarrow x =  \\pm {{\\sqrt {145} } \\over {4 \\times 3}}$$\n<br><br>$$ \\Rightarrow x =  \\pm {{\\sqrt {145} } \\over {12}}$$\n<br><br>as given that $$x &gt; {3 \\over 4}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;x $$ \\ne $$ $$ - {{\\sqrt {145} } \\over {12}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;x $$ = {{\\sqrt {145} } \\over {12}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mDu3WJ27iqKwVPVjd41kjv2yfj8",
@@ -1084,7 +1084,7 @@
     "solution": "We have,<br><br>$${f_n}(x) = \\sum\\limits_{j = 1}^n {{{\\tan }^{ - 1}}} \\left( {{1 \\over {1 + (x + j)(x + j - 1)}}} \\right)$$<br><br>$$ \\Rightarrow {f_n}(x) = \\sum\\limits_{j = 1}^n {{{\\tan }^{ - 1}}} \\left( {{{(x + j) - (x + j - 1)} \\over {1 + (x + j)(x + j - 1)}}} \\right)$$<br><br>$$ \\Rightarrow {f_n}(x) = \\sum\\limits_{j = 1}^n {[{{\\tan }^{ - 1}}} (x + j) - {\\tan ^{ - 1}}(x + j - 1)]$$<br><br>for all $$x \\in (0,\\infty )$$<br><br>$$ \\Rightarrow {f_n}(x) = ({\\tan ^{ - 1}}(x + 1) - {\\tan ^{ - 1}}x) + (ta{n^{ - 1}}(x + 2) - {\\tan ^{ - 1}}(x + 1)) + ({\\tan ^{ - 1}}(x + 3) - {\\tan ^{ - 1}}(x + 2)) + ... + ({\\tan ^{ - 1}}(x + n) - {\\tan ^{ - 1}}(x + n - 1))$$<br><br>$$ \\Rightarrow {f_n}(x) = {\\tan ^{ - 1}}(x + n) - {\\tan ^{ - 1}}x$$<br><br>This statement is false as $$x \\ne 0$$. i.e., $$x \\in (0,\\infty )$$<br><br>(b) This statement is also false as 0$$ \\notin $$(0, $$\\infty $$)<br><br>(c) $${f_n}(x) = {\\tan ^{ - 1}}(x + n) - {\\tan ^{ - 1}}x$$<br><br>$$\\mathop {\\lim }\\limits_{x \\to \\infty } \\tan ({f_n}(x)) = \\mathop {\\lim }\\limits_{x \\to \\infty } \\tan ({\\tan ^{ - 1}}(x + n) - {\\tan ^{ - 1}}x)$$<br><br>$$ \\Rightarrow \\mathop {\\lim }\\limits_{x \\to \\infty } \\tan ({f_n}(x)) = \\mathop {\\lim }\\limits_{x \\to \\infty } \\tan \\left( {{{\\tan }^{ - 1}}{n \\over {1 + nx + {x^2}}}} \\right) = \\mathop {\\lim }\\limits_{x \\to \\infty } {n \\over {1 + nx + {x^2}}} = 0$$<br><br>$$ \\therefore $$ (c) statement is false.<br><br>(d) $$\\mathop {\\lim }\\limits_{x \\to \\infty } {\\sec ^2}({f_n}(x)) = \\mathop {\\lim }\\limits_{x \\to \\infty } (1 + {\\tan ^2}{f_n}(x)) = 1 + \\mathop {\\lim }\\limits_{x \\to \\infty } {\\tan ^2}({f_n}(x)) = 1 + 0 = 1$$<br><br>$$ \\therefore $$ (d) statement is true.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wFBhtX1szbvhwRLii253K",
@@ -1106,7 +1106,7 @@
     "difficulty": "medium",
     "solution": "Given,\n<br><br>tan<sup>-1</sup> $$\\left[ {{{\\sqrt {1 + {x^2}}  + \\sqrt {1 - {x^2}} } \\over {\\sqrt {1 + {x^2}}  - \\sqrt {1 - {x^2}} }}} \\right]$$\n<br><br>Let &nbsp;&nbsp;&nbsp;x<sup>2</sup> = cos $$\\theta $$\n<br><br>= tan<sup>-1</sup> $$\\left[ {{{\\sqrt {1 + \\cos \\theta }  + \\sqrt {1 - \\cos \\theta } } \\over {\\sqrt {1 + \\cos \\theta }  - \\sqrt {1 - \\cos \\theta } }}} \\right]$$\n<br><br>= tan<sup>-1</sup> $$\\left[ {{{\\sqrt {2{{\\cos }^2}{\\theta  \\over 2}}  + \\sqrt {2{{\\sin }^2}{\\theta  \\over 2}} } \\over {\\sqrt {2{{\\cos }^2}{\\theta  \\over 2}}  - \\sqrt {2{{\\sin }^2}{\\theta  \\over 2}} }}} \\right]$$\n<br><br>= tan<sup>-1</sup> $$\\left[ {{{\\sqrt 2 \\cos {\\theta  \\over 2} + \\sqrt 2 \\sin {\\theta  \\over 2}} \\over {\\sqrt 2 \\cos {\\theta  \\over 2} - \\sqrt 2 \\sin {\\theta  \\over 2}}}} \\right]$$\n<br><br>= tan<sup>-1</sup> $$\\left[ {{{\\cos {\\theta  \\over 2} + \\sin {\\theta  \\over 2}} \\over {\\cos {\\theta  \\over 2} - \\sin {\\theta  \\over 2}}}} \\right]$$\n<br><br>= tan<sup>-1</sup> $$\\left[ {{{1 + \\tan {\\theta  \\over 2}} \\over {1 - \\tan {\\theta  \\over 2}}}} \\right]$$\n<br><br>= tan<sup>-1</sup> $$\\left[ {{{\\tan {\\pi  \\over 4} + \\tan {\\theta  \\over 2}} \\over {1 - \\tan {\\pi  \\over 4} + \\tan {\\theta  \\over 2}}}} \\right]$$\n<br><br>= tan<sup>-1</sup> $$\\left( {\\tan \\left( {{\\pi  \\over 4} + {\\theta  \\over 2}} \\right)} \\right)$$\n<br><br>= $${\\pi  \\over 4} + {\\theta  \\over 2}$$\n<br><br>= $${\\pi  \\over 4} + {1  \\over 2}$$ cos<sup>-1</sup> x<sup>2</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1AVHKdvqPiPIR7eBWvXeh",
@@ -1128,7 +1128,7 @@
     "difficulty": "medium",
     "solution": "<p>Let, $${\\cot ^{ - 1}}(1 + x) = \\alpha $$</p>\n<p>$$ \\Rightarrow 1 + x = \\cot \\alpha $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l3b0v2ql/1fa8d111-320f-4de3-8dab-6d23cbe7b0e2/436fe4d0-d65a-11ec-9a06-bd4ec5b93eb4/file-1l3b0v2qm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l3b0v2ql/1fa8d111-320f-4de3-8dab-6d23cbe7b0e2/436fe4d0-d65a-11ec-9a06-bd4ec5b93eb4/file-1l3b0v2qm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2017 (Online) 9th April Morning Slot Mathematics - Inverse Trigonometric Functions Question 89 English Explanation 1\"></p>\n<p>Now, let $${\\tan ^{ - 1}}(x) = \\beta $$</p>\n<p>$$ \\Rightarrow x = \\tan \\beta $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l3b0vpg8/606245c5-bf1b-4633-a0a9-2c4dec6f8121/54fb5180-d65a-11ec-9a06-bd4ec5b93eb4/file-1l3b0vpg9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l3b0vpg8/606245c5-bf1b-4633-a0a9-2c4dec6f8121/54fb5180-d65a-11ec-9a06-bd4ec5b93eb4/file-1l3b0vpg9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2017 (Online) 9th April Morning Slot Mathematics - Inverse Trigonometric Functions Question 89 English Explanation 2\"></p>\n<p>Given, $$\\sin ({\\cot ^{ - 1}}(x)) = \\cos ({\\tan ^{ - 1}}(x))$$</p>\n<p>$$ \\Rightarrow \\sin \\alpha  = \\cos \\beta $$</p>\n<p>From $$\\Delta$$ABC, $$\\sin \\alpha  = {1 \\over {\\sqrt {1 + {x^2} + 2x + 1} }}$$</p>\n<p>$$ = {1 \\over {\\sqrt {{x^2} + 2x + 2} }}$$</p>\n<p>From $$\\Delta$$MNO, $$\\cos \\beta  = {1 \\over {\\sqrt {{x^2} + 1} }}$$</p>\n<p>$$\\therefore$$ $${1 \\over {\\sqrt {{x^2} + 2x + 2} }} = {1 \\over {\\sqrt {{x^2} + 1} }}$$</p>\n<p>$$ \\Rightarrow {x^2} + 2x + 2 = {x^2} + 1$$</p>\n<p>$$ \\Rightarrow 2x + 2 = 1$$</p>\n<p>$$ \\Rightarrow 2x =  - 1$$</p>\n<p>$$ \\Rightarrow x = -{1 \\over 2}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tb7Srq7xtkaCBPWe",
@@ -1150,7 +1150,7 @@
     "difficulty": "medium",
     "solution": "Given, \n<br><br>$${\\tan ^{ - 1}}y = {\\tan ^{ - 1}}x + {\\tan ^{ - 1}}\\left( {{{2x} \\over {1 - {x^2}}}} \\right)$$ \n<br><br>$$ \\Rightarrow {\\tan ^{ - 1}}y = {\\tan ^{ - 1}}\\left( {{{x + {{2x} \\over {1 - {x^2}}}} \\over {1 - x\\left( {{{2x} \\over {1 - {x^2}}}} \\right)}}} \\right)$$ \n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = {\\tan ^{ - 1}}\\left( {{{x - {x^3} + 2x} \\over {1 - {x^2} - 2{x^2}}}} \\right)$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,$$ $${\\tan ^{ - 1}}y = {\\tan ^{ - 1}}\\left( {{{3x - {x^2}} \\over {1 - 3{x^2}}}} \\right)$$ \n<br><br>$$ \\Rightarrow y = {{3x - {x^3}} \\over {1 - 3{x^2}}}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "P0OMugSNCZp7MmiK",
@@ -1173,7 +1173,7 @@
     "solution": "<p>$$\\begin{aligned}\n&amp; \\text { (P) Given } y(x)=\\cos \\left(3 \\cos ^{-1} x\\right), x \\in[-1,1] \\\\\n&amp; \\Rightarrow \\quad y(x)=4 \\cos ^3\\left(\\cos ^{-1} x\\right)-3 \\cos \\left(\\cos ^{-1} x\\right) \\\\\n&amp; \\Rightarrow \\quad y(x)=4 x^3-3 x \\quad \\text{... (i)}\\\\\n&amp; \\Rightarrow \\quad \\frac{d y(x)}{d x}=12 x^2-3 \\quad \\text{... (ii)}\\\\\n&amp; \\Rightarrow \\quad \\frac{d^2 y(x)}{d x^2}=24 x \\quad \\text{... (iii)}\\\\\n\\end{aligned}$$</p>\n<p>From equation (i), (ii) and (iii)</p>\n<p>$$\\begin{aligned}\n\\Rightarrow &amp; \\frac{1}{y(x)}\\left[\\left(x^2-1\\right) \\frac{d^2 y(x)}{d x^2}+x \\frac{d y(x)}{d x}\\right] \\\\\n&amp; =\\frac{1}{4 x^3-3 x}\\left[\\left(x^2-1\\right) \\cdot 24 x+x \\cdot\\left(12 x^2-3\\right)\\right] \\\\\n&amp; =\\frac{1}{4 x^3-3 x}\\left[24 x^3-24 x+12 x^3-3 x\\right] \\\\\n&amp; =\\frac{1}{4 x^3-3 x}\\left[36 x^3-27 x\\right]\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; =\\frac{9\\left(4 x^3-3 x\\right)}{4 x^3-3 x} \\\\\n&amp; =9\n\\end{aligned}$$</p>\n<p>Hence P match with 4</p>\n<p>(Q) Given $$\\mathrm{A}_1, \\mathrm{~A}_2, \\mathrm{~A}_3, \\ldots . \\mathrm{A}_n(n&gt;2)$$ be the vertices of a regular polygon of $$n$$ sides with centre at origin and $$\\vec{a}_k$$ be the position vector of the point $$A_k$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzqp0qbz/b72833ef-01a0-4967-9d8b-f182b6d6ff03/69ac86e0-587f-11ef-b0b2-83775b007c6f/file-jaoe38c1lzqp0qc0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzqp0qbz/b72833ef-01a0-4967-9d8b-f182b6d6ff03/69ac86e0-587f-11ef-b0b2-83775b007c6f/file-jaoe38c1lzqp0qc0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2014 Paper 2 Offline Mathematics - Inverse Trigonometric Functions Question 13 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\text { Here, } \\begin{aligned}\n&amp;\\left|\\vec{a}_1\\right|=\\left|\\vec{a}_2\\right|=\\left|\\vec{a}_3\\right|=\\ldots=\\left|\\vec{a}_k\\right| \\\\\n&amp;=\\left|\\vec{a}_{k+1}\\right|=\\cdots=\\left|\\vec{a}_n\\right|=\\lambda \\text { (let) } \\\\\n&amp; \\text { And } \\angle \\mathrm{A}_1 \\mathrm{OA}_2=\\angle \\mathrm{A}_2 \\mathrm{OA}_3=\\cdots=\\angle \\mathrm{A}_k \\mathrm{OA}_{k+1} \\\\\n&amp;=\\cdots=\\angle \\mathrm{A}_n \\mathrm{OA}_1=\\frac{2 \\pi}{n} \\\\\n&amp; \\Rightarrow \\vec{a}_k \\times \\vec{a}_{k+1}=\\lambda \\cdot \\lambda \\cdot \\sin \\frac{2 \\pi}{n} \\cdot \\hat{p} \\text { and } \\\\\n&amp; \\vec{a}_k \\cdot \\vec{a}_{k+1}=\\lambda \\cdot \\lambda \\cdot \\cos \\frac{2 \\pi}{n}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>Apply $$\\left|\\sum_\\limits{k=1}^{n-1} \\vec{a}_k \\times \\vec{a}_{k+1}\\right|=\\left|\\sum_\\limits{k=1}^{n-1} \\vec{a}_k \\cdot \\vec{a}_{k+1}\\right|$$</p>\n<p>$$\\begin{aligned}\n&amp; \\left|\\sum_{k=1}^{n-1} \\lambda^2 \\sin \\frac{2 \\pi}{n} \\hat{p}\\right|=\\left|\\sum_{k=1}^{n-1} \\lambda^2 \\cos \\frac{2 \\pi}{n}\\right| \\\\\n&amp; \\Rightarrow(n-1) \\lambda^2\\left|\\sin \\frac{2 \\pi}{n}\\right|=(n-1) \\lambda^2\\left|\\cos \\frac{2 \\pi}{n}\\right| \\\\\n&amp; \\Rightarrow\\left|\\tan \\frac{2 \\pi}{n}\\right|=1 \\\\\n&amp; \\Rightarrow n_{\\text {min }}=8 \\\\\n\\end{aligned}$$</p>\n<p>Hence $$Q$$ match with 3 .</p>\n<p>(R) We know the equation of normal of ellipse $$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$$ at $$\\left(x_1, y_1\\right)$$ is $$\\frac{a^2 x}{x_1}-\\frac{b^2 y}{y_1}=a^2-b^2$$.</p>\n<p>$$\\therefore$$ Equation of Normal of ellipse $$\\frac{x^2}{6}+\\frac{y^2}{3}=1$$ at $$p(h, 1)$$ is $$\\frac{6 x}{h}-\\frac{3 y}{1}=1$$</p>\n<p>Given, the normal at $$p(h, 1)$$ is perpendicular to the line $$x+y=3$$</p>\n<p>$$\\Rightarrow \\quad \\frac{{\\frac{6}{h}}}{3} \\times(-1)=-1$$</p>\n<p>$$\\Rightarrow \\quad \\frac{2}{h}=1$$</p>\n<p>$$\\Rightarrow \\quad h=2$$</p>\n<p>Hence, R match with 2.</p>\n<p>$$\\begin{aligned}\n&amp; \\text { (S) } \\tan ^{-1}\\left(\\frac{1}{2 x+1}\\right)+\\tan ^{-1}\\left(\\frac{1}{4 x+1}\\right)=\\tan ^{-1} \\frac{2}{x^2} \\\\\n&amp; \\Rightarrow \\quad \\tan ^{-1}\\left(\\frac{\\frac{1}{2 x+1}+\\frac{1}{4 x+1}}{1-\\frac{1}{2 x+1} \\times \\frac{1}{4 x+1}}\\right)=\\tan ^{-1}\\left(\\frac{2}{x^2}\\right) \\\\\n&amp; \\Rightarrow \\quad \\tan ^{-1}\\left(\\frac{6 x+2}{8 x^2+6 x+1-1}\\right)=\\tan ^{-1}\\left(\\frac{2}{x^2}\\right) \\\\\n&amp; \\Rightarrow \\quad \\tan ^{-1}\\left(\\frac{3 x+1}{4 x^2+3 x}\\right)=\\tan ^{-1}\\left(\\frac{2}{x^2}\\right)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow &amp; 3 x^3+x^2 &amp; =8 x^2+6 x \\\\\n&amp; \\Rightarrow &amp; x\\left[3 x^2-7 x-6\\right] &amp; =0 \\\\\n&amp; \\Rightarrow &amp; x\\left[3 x^2-9 x+2 x-6\\right] &amp; =0 \\\\\n&amp; \\Rightarrow &amp; x(3 x+2)(x-3) &amp; =0 \\\\\n&amp; \\Rightarrow &amp; x &amp; =0, \\frac{-2}{3}, 3\n\\end{aligned}$$</p>\n<p>So, $$x=3$$ is the only positive solution of given equation.</p>\n<p>Hence, S match with 1.</p>\n<p>Hint:</p>\n<p>(i) Recall $$\\cos \\left(\\cos ^{-1} x\\right)=x \\forall x \\in[-1,1]$$ and $$\\cos 3 \\theta=4 \\cos ^3 \\theta-3 \\cos \\theta$$</p>\n<p>(ii) If angle between $$\\vec{a}$$ and $$\\vec{b}$$ is $$\\theta$$, then $$\\vec{a} \\cdot \\vec{b}=|\\vec{a}||\\vec{b}| \\cos \\theta$$ and $$\\vec{a} \\times \\vec{b}=|\\vec{a}||\\vec{b}| \\sin \\theta \\hat{n}$$</p>\n<p>(iii) The equation of normal of ellipse $$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$$ at $$\\left(x_1, y_1\\right)$$ is $$\\frac{a^2 x}{x_1}-\\frac{b^2 y}{y_1}=a^2-b^2$$.</p>\n<p>(iv) Recall $$\\tan ^{-1} \\mathrm{~A}+\\tan ^{-1} \\mathrm{~B}=\\tan ^{-1}\\left(\\frac{\\mathrm{A}+\\mathrm{B}}{1-\\mathrm{AB}}\\right)$$ only when A.B &lt; 1</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "tBYda5IhmewIXAkx",
@@ -1196,7 +1196,7 @@
     "solution": "<p>For P</p>\n<p>$$\\text { Let } t=\\sqrt{\\frac{1}{y^2}\\left(\\frac{\\cos \\left(\\tan ^{-1} y\\right)+y \\cdot \\sin \\left(\\tan ^{-1} y\\right)}{\\cot \\left(\\sin ^{-1} y\\right)+\\tan \\left(\\sin ^{-1} y\\right)}\\right)^2+y^4}$$</p>\n<p>We know that</p>\n<p>$$\\begin{gathered}\n\\tan ^{-1} y=\\cos ^{-1}\\left(\\frac{1}{\\sqrt{1+y^2}}\\right)=\\sin ^{-1}\\left(\\frac{y}{\\sqrt{1+y^2}}\\right) \\\\\n\\text { and } \\sin ^{-1} y=\\cot ^{-1}\\left(\\frac{\\sqrt{1-y^2}}{y}\\right)=\\tan ^{-1}\\left(\\frac{y}{\\sqrt{1-y^2}}\\right)\n\\end{gathered}$$</p>\n<p>$$\\therefore \\quad t = \\sqrt {{1 \\over {{y^2}}}{{\\left[ {{{\\cos \\left( {{{\\cos }^{ - 1}}{1 \\over {\\sqrt {1 + {y^2}} }}} \\right) + y\\,.\\,\\sin \\left( {{{\\sin }^{ - 1}}{y \\over {\\sqrt {1 + {y^2}} }}} \\right)} \\over {\\cot \\left( {{{\\cot }^{ - 1}}{{\\sqrt {1 - {y^2}} } \\over y}} \\right) + \\tan \\left( {{{\\tan }^{ - 1}}{y \\over {\\sqrt {1 - {y^2}} }}} \\right)}}} \\right]}^2} + {y^4}} $$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow t=\\sqrt{\\frac{1}{y^2} \\times\\left[\\frac{\\frac{1}{\\sqrt{1+y^2}}+\\frac{y^2}{\\sqrt{1+y^2}}}{\\frac{\\sqrt{1-y^2}}{y}+\\frac{y}{\\sqrt{1-y^2}}}\\right]^2+y^4} \\\\\n& \\Rightarrow t=\\sqrt{\\frac{1}{y^2} \\times\\left[\\frac{\\sqrt{1+y^2}}{\\frac{1-y^2+y^2}{y \\sqrt{1-y^2}}}\\right]^2+y^4} \\\\\n& \\Rightarrow t=\\sqrt{\\frac{1}{y^2} \\times y^2\\left(1+y^2\\right)\\left(1-y^2\\right)+y^4} \\\\\n& \\Rightarrow t=\\sqrt{\\left(1-y^4\\right)+y^4}=1 \\\\\n\\end{aligned}$$</p>\n<p>Hence, P match with 4.</p>\n<p>For Q.</p>\n<p>Given $$\\cos x+\\cos y+\\cos z=0$$</p>\n<p>$$\\Rightarrow \\cos x+\\cos y=-\\cos z$$</p>\n<p>On squaring both side</p>\n<p>$$\\Rightarrow \\cos ^2 x+\\cos ^2 y+2 \\cos x \\cdot \\cos y=\\cos ^2 z\\quad \\text{... (i)}$$</p>\n<p>Also given $$\\sin x+\\sin y+\\sin z=0$$</p>\n<p>$$\\Rightarrow \\sin x+\\sin y=-\\sin z$$</p>\n<p>On squaring both side</p>\n<p>$$\\Rightarrow \\sin ^2 x+\\sin ^2 y+2 \\sin x \\cdot \\sin y=\\sin ^2 z \\quad \\text{... (ii)}$$</p>\n<p>Add equation (i) and (ii)</p>\n<p>$$\\begin{gathered}\n\\Rightarrow\\left(\\cos ^2 x+\\sin ^2 x\\right)+\\left(\\cos ^2 y+\\sin ^2 y\\right) \\\\\n+2[\\cos x \\cdot \\cos y+\\sin x \\cdot \\sin y] \\\\\n=\\cos ^2 z+\\sin ^2 z\n\\end{gathered}$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & 1+1+2 \\cos (x-y)=1 \\\\\n\\Rightarrow & \\cos (x-y)=\\frac{-1}{2} \\\\\n\\Rightarrow & 2 \\cos ^2\\left(\\frac{x-y}{2}\\right)-1=\\frac{-1}{2}\n\\end{array}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & \\cos ^2\\left(\\frac{x-y}{2}\\right)=\\frac{1}{4} \\\\\n\\Rightarrow & \\cos \\left(\\frac{x-y}{2}\\right)= \\pm \\frac{1}{2}\n\\end{array}$$</p>\n<p>Hence, Q match with 3.</p>\n<p>For R</p>\n<p>Given,</p>\n<p>$$\\begin{aligned}\n& \\cos \\left(\\frac{\\pi}{4}-x\\right) \\cos 2 x+\\sin x \\cdot \\sin 2 x \\cdot \\sec x \\\\\n& =\\cos x \\cdot \\sin 2 x \\cdot \\sec x+\\cos \\left(\\frac{\\pi}{4}+x\\right) \\cos 2 x\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & {\\left[\\cos \\left(\\frac{\\pi}{4}-x\\right)-\\cos \\left(\\frac{\\pi}{4}+x\\right)\\right] } \\\\\n& \\cos 2 x+(\\sin x-\\cos x) \\sin 2 x \\cdot \\sec x=0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & 2 \\cdot \\sin \\frac{\\pi}{4} \\cdot \\sin x \\cdot \\cos 2 x+(\\sin x-\\cos x) \\\\\n& \\frac{2 \\sin x \\cdot \\cos x}{\\cos x}=0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad \\sqrt{2} \\cos 2 x=2(\\cos x-\\sin x) \\\\\n& \\Rightarrow \\quad\\left(\\cos ^2 x-\\sin ^2 x\\right)=\\sqrt{2} (\\cos x-\\sin x) \\\\\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{rlrl}\n\\Rightarrow & \\cos x+\\sin x =\\sqrt{2} \\\\\n\\Rightarrow & (\\cos x+\\sin x)^2 =(\\sqrt{2})^2 \\\\\n\\Rightarrow & \\cos ^2 x+\\sin ^2 x+2 \\sin x \\cdot \\cos x =2 \\\\\n\\Rightarrow & 1+\\sin 2 x =2 \\\\\n\\Rightarrow & \\sin 2 x =1 \\\\\n\\Rightarrow &  2 x =\\frac{\\pi}{2} \\\\\n\\Rightarrow &  x =\\frac{\\pi}{4} \\\\\n\\Rightarrow &  \\sec x =\\sec \\frac{\\pi}{4}=\\sqrt{2}\n\\end{array}$$</p>\n<p>Hence, R match with 2</p>\n<p>For S</p>\n<p>Given,</p>\n<p>$$\\begin{aligned}\n\\cot \\left(\\sin ^{-1} \\sqrt{1-x^2}\\right) & =\\sin \\left(\\tan ^{-1}(x \\sqrt{6})\\right), x \\neq 0 \\\\\n\\Rightarrow \\cot \\left(\\cot ^{-1} \\frac{x}{\\sqrt{1-x^2}}\\right) & =\\sin \\left(\\sin ^{-1} \\frac{x \\sqrt{6}}{\\sqrt{1+6 x^2}}\\right) \\\\\n\\Rightarrow \\quad \\frac{x}{\\sqrt{1-x^2}} & =\\frac{x \\sqrt{6}}{\\sqrt{1+6 x^2}}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{array}{rlrl}\n\\Rightarrow & \\frac{1}{\\sqrt{1-x^2}} & =\\frac{\\sqrt{6}}{\\sqrt{1+6 x^2}} \\\\\n\\Rightarrow & \\text { on squaring both sides } \\\\\n\\Rightarrow & \\frac{1}{1-x^2} =\\frac{6}{1+6 x^2} \\\\\n\\Rightarrow & 1+6 x^2=6-6 x^2 \\\\\n\\Rightarrow & x^2 =\\frac{5}{12} \\\\\n\\Rightarrow & x= \\pm \\sqrt{\\frac{5}{12}}= \\pm \\frac{1}{2} \\sqrt{\\frac{5}{3}}\n\\end{array}$$</p>\n<p>Hence, S match with 1.</p>\n<p>Hints :</p>\n<p>(i) Recall the method of conversion of one inverse trigonometric function into other inverse trigonometric function as</p>\n<p>$$\\sin ^{-1} x=\\cos ^{-1} \\sqrt{1-x^2}=\\tan ^{-1} \\frac{x}{\\sqrt{1-x^2}}$$</p>\n<p>(ii) Recall $$\\cos \\left(\\cos ^{-1} x\\right)=x, \\sin \\left(\\sin ^{-1} x\\right)=x\\tan \\left(\\tan ^{-1} x\\right)=x \\text { etc }$$</p>\n<p>(iii) Recall the following trigonometric identities</p>\n<p>(A) $$\\sin ^2 x+\\cos ^2 x=1$$</p>\n<p>(B) $$\\sin 2 x=2 \\sin x \\cdot \\cos x$$</p>\n<p>(C) $$\\cos 2 x=\\cos ^2 x-\\sin ^2 x=2 \\cos ^2 x-1= 1-2 \\sin ^2 x$$</p>\n<p>(D) $$\\cos (A-B)-\\cos (A+B)=2 \\sin A \\cdot \\sin B$$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "uhYKiIhxgTCzlkLr",
@@ -1218,7 +1218,7 @@
     "difficulty": "easy",
     "solution": "Given that, $$x,y,z\\,\\,$$ are in $$AP$$\n<br><br>So, $$\\,\\,\\,$$ $$2y = x + y$$\n<br><br>Also given that,\n<br><br> $${\\tan ^{ - 1}}x,{\\tan ^{ - 1}}y\\,\\,$$ and $$\\,\\,\\,{\\tan ^{ - 1}}z\\,\\,$$ are in $$AP$$ \n<br><br>So, $$2{\\tan ^{ - 1}}y = {\\tan ^{ - 1}}x + {\\tan ^{ - 1}}z$$ \n<br><br>$$ \\Rightarrow {\\tan ^{ - 1}}\\left( {{{2y} \\over {1 - {y^2}}}} \\right) = {\\tan ^{ - 1}}\\left( {{{x + 7} \\over {1 - xz}}} \\right)$$\n<br><br>$$ \\Rightarrow {{2y} \\over {1 - {y^2}}} = {{x + z} \\over {1 - xz}}$$\n<br><br>$$ \\Rightarrow {{x + z} \\over {1 - {y^2}}} = {{x + z} \\over {1 - xz}}$$ \n<br><br>[ as $$\\,\\,\\,\\,$$ $$2y = x + z$$] \n<br><br>$$ \\Rightarrow 1 - {y^2} = 1 - xz$$ \n<br><br>$$ \\Rightarrow $$ $${y^2} = xz$$ \n<br><br>As we get $${y^2} = xz,$$ so, $$x,y,z$$ are in $$GP.$$ \n<br><br>According to the question $$x,y,z$$  are $$AP.$$ \n<br><br>$$x,y,z$$  both can be $$AP$$ as well as $$GP$$ \n<br><br>when $$x=y=z.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "c9eZxenho2Gq1F7v",
@@ -1241,7 +1241,7 @@
     "solution": "<p>Given that,</p>\n<p>$$0 < x < 1$$,</p>\n<p>$$\\sqrt {1 + {x^2}} {[{\\{ x\\cos ({\\cot ^{ - 1}}x) + \\sin ({\\cot ^{ - 1}}x)\\} ^2} - 1]^{{1 \\over 2}}}$$</p>\n<p>Find : value of this expression</p>\n<p>Here, $$0 < x < 1$$,</p>\n<p>$${\\cot ^{ - 1}}x = {\\sin ^{ - 1}}\\left( {{1 \\over {\\sqrt {1 + {x^2}} }}} \\right) = {\\cos ^{ - 1}}\\left( {{x \\over {\\sqrt {1 + {x^2}} }}} \\right)$$</p>\n<p>Now, $$\\sqrt {1 + {x^2}} {[{\\{ x\\cos ({\\cot ^{ - 1}}x) + \\sin ({\\cot ^{ - 1}}x)\\} ^2} - 1]^{{1 \\over 2}}}$$</p>\n<p>$$\\sqrt {1 + {x^2}} {\\left[ {{{\\left\\{ {x\\cos \\left( {{{\\cos }^{ - 1}}\\left( {{x \\over {1 + {x^2}}}} \\right)} \\right) + \\sin \\left( {{{\\sin }^{ - 1}}{1 \\over {\\sqrt {1 + {x^2}} }}} \\right)} \\right\\}}^2}} \\right]^{{1 \\over 2}}}$$</p>\n<p>$$ = \\sqrt {1 + {x^2}} {\\left[ {{{\\left\\{ {x\\,.\\,{x \\over {\\sqrt {1 + {x^2}} }} + {1 \\over {\\sqrt {1 + {x^2}} }}} \\right\\}}^2} - 1} \\right]^{{1 \\over 2}}}$$</p>\n<p>$$ = \\sqrt {1 + {x^2}} {\\left[ {{{\\left\\{ {{{{x^2} + 1} \\over {\\sqrt {1 + {x^2}} }}} \\right\\}}^2} - 1} \\right]^{{1 \\over 2}}}$$</p>\n<p>$$ = \\sqrt {1 + {x^2}} {[{x^2} + 1 - 1]^{{1 \\over 2}}}$$</p>\n<p>$$ = x\\sqrt {1 + {x^2}} $$</p>\n<p>which is the value of the expression.</p>",
     "section": "Sec 4",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IgvCQgf8GDVXARHa",
@@ -1263,7 +1263,7 @@
     "difficulty": "easy",
     "solution": "Given, \n<br><br>$$Cot\\left( {so{{\\sec }^{ - 1}}{5 \\over 3} + {{\\tan }^{ - 1}}{2 \\over 3}} \\right)$$ \n<br><br>$$ = \\cot \\left( {{{\\tan }^{ - 1}}{3 \\over 4} + {{\\tan }^{ - 1}}{2 \\over 3}} \\right)$$ \n<br><br>$$ = cot\\left( {{{\\tan }^{ - 1}}{{{3 \\over 4} + {2 \\over 3}} \\over {1 - {3 \\over 4} - {2 \\over 3}}}} \\right)$$\n<br><br>$$ = \\cot \\left( {{{\\tan }^{ - 1}}\\left( {{{17} \\over 6}} \\right)} \\right)$$ \n<br><br>$$ = \\cot \\left( {{{\\cot }^{ - 1}}{6 \\over {17}}} \\right)$$ \n<br><br>$$ = {6 \\over {17}}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lg5d9soz",
@@ -1286,7 +1286,7 @@
     "solution": "<p>(A) If $$a=1$$ and $$b=0$$ then</p>\n<p>$$\\begin{aligned}\n& \\sin ^{-1} x+\\cos ^{-1} y+\\frac{\\pi}{2}=\\frac{\\pi}{2} \\\\\n& \\sin ^{-1} x=-\\cos ^{-1} y \\\\\n& \\sin ^{-1} x=-\\sin ^{-1} \\sqrt{1-y^{2}} \\\\\n&-x=\\sqrt{1-y^{2}} \\\\\n& x^{2}+y^{2}=1 \\\\\n& \\text { (A) } \\rightarrow(p)\n\\end{aligned}$$</p>\n<p>(B) If $$a=1$$ and $$b=1$$ then</p>\n<p>$$\\begin{aligned}\n& \\sin ^{-1} x+\\cos ^{-1} y+\\cos ^{-1} x y=\\frac{\\pi}{2} \\\\\n& \\cos ^{-1} x-\\cos ^{-1} y=\\cos ^{-1} x y \\\\\n& x y+\\sqrt{1-y^{2}} \\sqrt{1-x^{2}}=x y \\\\\n& =\\left(x^{2}-1\\right)\\left(y^{2}-1\\right)=0 \\\\\n& (\\mathrm{~B}) \\rightarrow(q)\n\\end{aligned}$$</p>\n<p>(C) If $$a=1$$ and $$b=2$$ then</p>\n<p>$$\\begin{aligned}\n& \\sin ^{-1} x+\\cos ^{-1} y+\\cos ^{-1}(2 x y) \\\\\n& =-\\cos ^{-1} x-\\cos ^{-1} y=\\cos ^{-1}(2 x y) \\\\\n& \\quad x y+\\sqrt{1-x^{2}} \\sqrt{1-y^{2}}=2 x y\n\\end{aligned}$$</p>\n<p>$$\\begin{gathered}\n\\sqrt{1-x^{2}} \\sqrt{1-y^{2}}=x y \\\\\n1-x^{2}-y^{2}+x^{2} y^{2}=x^{2} y^{2} \\\\\nx^{2}+y^{2}=1 \\\\\n(\\mathrm{C}) \\rightarrow(p)\n\\end{gathered}$$</p>\n<p>(D) If $$a=2$$ and $$b=2$$, we get</p>\n<p>$$\\begin{gathered}\n\\sin ^{-1} 2 x+\\cos ^{-1}(2 x y)+\\cos ^{-1} y=\\frac{\\pi}{2} \\\\\n\\cos ^{-1}(2 x)-\\cos ^{-1} y=\\cos ^{-1}(2 x y) \\\\\n2 x y+\\sqrt{4 x^{2}-1} \\sqrt{1-y^{2}}=2 x y \\\\\n\\left(4 x^{2}-1\\right)\\left(y^{2}-1\\right)=0 \\\\\n\\text { (D) } \\rightarrow(\\mathrm{s})\n\\end{gathered}$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1TDQHlhEobjkoJLP",
@@ -1308,7 +1308,7 @@
     "difficulty": "easy",
     "solution": "Given sin<sup>-1</sup>$$\\left( {{x \\over 5}} \\right)$$ + cosec<sup>-1</sup>$$\\left( {{5 \\over 4}} \\right)$$ = $${\\pi  \\over 2}$$\n<br><br>$$ \\Rightarrow $$ sin<sup>-1</sup>$$\\left( {{x \\over 5}} \\right)$$ + sin<sup>-1</sup>$$\\left( {{4 \\over 5}} \\right)$$ = $${\\pi  \\over 2}$$\n<br><br>$$ \\Rightarrow $$ sin<sup>-1</sup>$$\\left( {{x \\over 5}} \\right)$$ = $${\\pi  \\over 2}$$ - sin<sup>-1</sup>$$\\left( {{4 \\over 5}} \\right)$$\n<br><br>$$ \\Rightarrow $$ sin<sup>-1</sup>$$\\left( {{x \\over 5}} \\right)$$ = cos<sup>-1</sup>$$\\left( {{4 \\over 5}} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${x \\over 5}$$ = sin(cos<sup>-1</sup>$$ {{4 \\over 5}}$$)\n<br><br>$$ \\Rightarrow $$ $${x \\over 5}$$ = sin(sin<sup>-1</sup>$$ {{3 \\over 5}}$$)\n<br><br>$$ \\Rightarrow $$ $${x \\over 5}$$ = $${3 \\over 5}$$\n<br><br>$$ \\Rightarrow $$ x = 3",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "VgRPBRM1vhbktxrx",
@@ -1330,7 +1330,7 @@
     "difficulty": "medium",
     "solution": "As we know, \n<br><br>$${\\cos ^{ - 1}}A - {\\cos ^{ - 1}}B$$ \n<br><br>$$ = {\\cos ^{ - 1}}\\left( {AB + \\sqrt {1 - {A^2}} .\\sqrt {1 - {B^2}} } \\right)$$\n<br><br>Given, $${\\cos ^{ - 1}}x - {\\cos ^{ - 1}}{y \\over 2} = \\alpha $$ \n<br><br>$$ \\Rightarrow {\\cos ^{ - 1}}\\left( {x.{y \\over 2} + \\sqrt {1 - {x^2}} .\\sqrt {1 - {{{y^2}} \\over 4}} } \\right) = \\alpha $$ \n<br><br>$$ \\Rightarrow {{xy} \\over 2} + \\sqrt {1 - {x^2}} \\sqrt {1 - {{y{}^2} \\over 4}}  = \\cos \\,x$$\n<br><br>$$ \\Rightarrow {\\left( {\\cos x - {{xy} \\over 2}} \\right)^2} = \\left( {1 - {x^2}} \\right)\\left( {1 - {{{y^2}} \\over 4}} \\right)$$\n<br><br>$$ \\Rightarrow {\\cos ^2} + {{{x^2}{y^2}} \\over 4} - 2.\\cos x.{{xy} \\over 2}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = 1 - {x^2} - {{{y^2}} \\over 4} + {{{x^2}{y^2}} \\over 4}$$ \n<br><br>$$ \\Rightarrow {x^2} + {{{y^2}} \\over 4} - xy\\,\\cos x = 1 - {\\cos ^2}x$$ \n<br><br>$$ \\Rightarrow {x^2} + {{{y^2}} \\over 4} - xy\\cos x = {\\sin ^2}x$$ \n<br><br>$$ \\Rightarrow 4{x^2} + y{}^2 - 4xy\\cos x = 4{\\sin ^2}x$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "KkxLSqZpDRwCLbbj",
@@ -1352,6 +1352,6 @@
     "difficulty": "medium",
     "solution": "Given that, \n<br><br>$${\\cot ^{ - 1}}\\left( {\\sqrt {\\cos x} } \\right) - {\\tan ^{ - 1}}\\left( \\sqrt{\\cos x} \\right) = x\\,\\,\\,\\,...\\left( 1 \\right)$$ \n<br><br>We know, \n<br><br>$${\\cot ^{ - 1}}x + {\\tan ^{ - 1}}x = {\\pi  \\over 2}$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,$$ $${\\cot ^{ - 1}}\\left( {\\sqrt {\\cos x} } \\right) + {\\tan ^{ - 1}}\\left( {\\sqrt {\\cos x} } \\right) = {\\pi  \\over 2}\\,\\,\\,...\\left( 2 \\right)$$ \n<br><br>Adding $$(1)$$ and $$(2),$$ we get, \n<br><br>$$2{\\cot ^{ - 1}}\\left( {\\sqrt {\\cos x} } \\right) = x + {\\pi  \\over 2}$$ \n<br><br>$$ \\Rightarrow \\,\\,{\\cot ^{ - 1}}\\left( {\\sqrt {\\cos x} } \\right) = {x \\over 2} + {\\pi  \\over 4}$$ \n<br><br>$$ \\Rightarrow \\,\\,\\sqrt {\\cos x}  = \\cot \\left( {{x \\over 2} + {\\pi  \\over 4}} \\right)$$ \n<br><br>$$ \\Rightarrow \\,\\,\\sqrt {\\cos x}  = {{\\cot {x \\over 2} - 1} \\over {1 + \\cot {x \\over 2}}}$$\n<br><br>$$ \\Rightarrow \\,\\,\\sqrt {\\cos x}  = {{\\cos {x \\over 2} - \\sin {x \\over 2}} \\over {\\cos {x \\over 2} + \\sin {x \\over 2}}}$$\n<br><br>Squaring both sides we get, \n<br><br>$$ \\Rightarrow \\,\\,\\cos x = {{1 - 2\\sin {x \\over 2}\\cos {x \\over 2}} \\over {1 + 2\\sin {x \\over 2}\\cos {x \\over 2}}}$$ \n<br><br>$$ \\Rightarrow \\,\\,\\cos x = {{1 - \\sin x} \\over {1 + \\sin x}}$$\n<br><br>$$ \\Rightarrow \\,\\,{{1 - {{\\tan }^2}{x \\over 2}} \\over {1 + {{\\tan }^2}{x \\over 2}}} = {{1 - \\sin x} \\over {1 + \\sin x}}$$\n<br><br>Applying compounds and dividendo  rule, \n<br><br>$$ \\Rightarrow \\,\\,{{2\\sin x} \\over 2} = {{2{{\\tan }^2}{x \\over 2}} \\over 2}$$ \n<br><br>$$ \\Rightarrow \\,\\,\\sin x = {\\tan ^2}{x \\over 2}$$\n<br/><br/><b>Other Method :</b>\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Since, } \\cot ^{-1}(\\sqrt{\\cos \\alpha})-\\tan ^{-1}(\\sqrt{\\cos \\alpha})=x \\\\\\\\\n& \\Rightarrow  \\tan ^{-1}\\left(\\frac{1}{\\sqrt{\\cos \\alpha}}\\right)-\\tan ^{-1}(\\sqrt{\\cos \\alpha})=x \\\\\\\\\n& \\Rightarrow  \\tan ^{-1}\\left(\\frac{\\frac{1}{\\sqrt{\\cos \\alpha}}-\\sqrt{\\cos \\alpha}}{1+\\frac{1}{\\sqrt{\\cos \\alpha}} \\cdot \\sqrt{\\cos \\alpha}}\\right)=x \\\\\\\\\n& \\Rightarrow  \\frac{1-\\cos \\alpha}{2 \\sqrt{\\cos \\alpha}}=\\tan x \\\\\\\\\n& \\Rightarrow  \\cot x=\\frac{2 \\sqrt{\\cos \\alpha}}{1-\\cos \\alpha} \\\\\\\\\n& \\because  \\operatorname{cosec} x=\\sqrt{1+\\cot { }^2 x} \\\\\\\\\n& \\therefore  \\operatorname{cosec} x=\\frac{1+\\cos \\alpha}{1-\\cos \\alpha} \\\\\\\\\n& \\Rightarrow \\sin x=\\frac{1-\\cos \\alpha}{1+\\cos \\alpha}=\\tan ^2 \\frac{\\alpha}{2}\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

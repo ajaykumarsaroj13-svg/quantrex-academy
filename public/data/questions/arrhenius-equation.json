@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>Arrhenius equation (NCERT) is  </p>\n<p>$$k=Ae^{-E_a/RT}$$  </p>\n<p>and in base-10 logarithm form,  </p>\n<p>$$\\log k=\\log A-\\frac{E_a}{2.303\\,R}\\left(\\frac{1}{T}\\right)$$</p>\n<p>Now check each statement:</p>\n<p><strong>A.</strong> $e^{-E_a/RT}$ corresponds to fraction of molecules having kinetic energy <strong>less than</strong> $E_a$.  </p>\n<p>Incorrect. This factor represents the fraction of molecules having energy <strong>equal to or greater than</strong> $E_a$ (able to cross the energy barrier).</p>\n<p><strong>B.</strong> At a given temperature, lower the $E_a$, faster is the reaction.  </p>\n<p>Correct. From $k=Ae^{-E_a/RT}$, smaller $E_a \\Rightarrow$ larger $e^{-E_a/RT} \\Rightarrow$ larger $k$.</p>\n<p><strong>C.</strong> Increase in temperature by about $10^\\circ\\text{C}$ doubles the rate of reaction.  </p>\n<p>Correct as a common empirical rule mentioned in NCERT: for many reactions, rate approximately doubles for a $10^\\circ\\text{C}$ rise.</p>\n<p><strong>D.</strong> Plot of $\\log k$ vs $\\frac{1}{T}$ gives a straight line with slope $=-\\frac{E_a}{R}$.  </p>\n<p>Incorrect. For $\\log$ (base 10), slope is  </p>\n<p>$$-\\frac{E_a}{2.303\\,R}$$  </p>\n<p>The slope $-\\frac{E_a}{R}$ is for plotting $\\ln k$ vs $\\frac{1}{T}$.</p>\n<p>So, correct statements are <strong>B and C only</strong>.</p>\n<p><strong>Correct option: Option C</strong>.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml8t8mhq",
@@ -92,7 +92,7 @@
     "difficulty": "medium",
     "solution": "<p>Arrhenius equation (NCERT):</p>\n<p>$$k = A\\,e^{-\\frac{E_a}{RT}}$$</p>\n<p>Given: catalyst lowers activation energy by $10\\,\\text{kJ mol}^{-1} = 10000\\,\\text{J mol}^{-1}$ and frequency factor $A$ is same.</p>\n<p>So,</p>\n<p>$ \\frac{k_{\\text{cat}}}{k_{\\text{uncat}}} = \\frac{A e^{-\\frac{E_{a,\\text{cat}}}{RT}}}{A e^{-\\frac{E_{a,\\text{uncat}}}{RT}}} = e^{\\frac{E_{a,\\text{uncat}}-E_{a,\\text{cat}}}{RT}} = e^{\\frac{10000}{RT}} $</p>\n<p>At $27^\\circ\\text{C}$, $T = 300\\,\\text{K}$ and $R=8.314\\,\\text{J mol}^{-1}\\text{K}^{-1}$:</p>\n<p>$$\\frac{10000}{RT}=\\frac{10000}{8.314\\times 300}\\approx 4.009$$</p>\n<p>So,</p>\n<p>$$\\log_{10}\\left(\\frac{k_{\\text{cat}}}{k_{\\text{uncat}}}\\right) = \\log_{10}\\left(e^{4.009}\\right) = \\frac{4.009}{2.303} \\approx 1.741$$</p>\n<p><strong>Correct option: A (1.741)</strong></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml81vdcp",
@@ -182,7 +182,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} & \\text { S-I : } \\ln \\left(\\frac{\\mathrm{K}_2}{\\mathrm{~K}_1}\\right)=\\frac{12.6 \\times 10^3}{\\left(\\frac{8.314}{4.2}\\right)}\\left[\\frac{10}{298 \\times 308}\\right] \\\\ & \\Rightarrow \\ln \\left(\\frac{\\mathrm{K}_2}{\\mathrm{~K}_1}\\right)=0.693 \\\\ & \\Rightarrow \\frac{\\mathrm{~K}_2}{\\mathrm{~K}_1}=2 \\\\ & \\text { S-II : For 1st Order } \\\\ & \\mathbf{t}_{1 / 2}=\\frac{\\ln 2}{\\mathrm{~K}} ; \\mathrm{t}_{1 / 2} \\propto[\\mathrm{~A}]^0=\\text { constant. } \\end{aligned} $$</p>\n<p>Statement-I is true but statement-II is false.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml89h6cv",
@@ -238,7 +238,7 @@
     "difficulty": "easy",
     "solution": "<p><p><strong>$E_1$</strong> represents the activation energy for the backward reaction.</p></p>\n<p><p><strong>$E_1 + E_2$</strong> is the activation energy for the forward reaction.</p></p>\n<p><p>The product has more energy than the reactant, indicating that the product is less stable compared to the reactant. </p></p>\n\n<p>This information is crucial in determining the relative stability of reactants and products and the required energy for the reactions to proceed in either direction.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qvb0y6",
@@ -294,7 +294,7 @@
     "difficulty": "medium",
     "solution": "<p>Let’s examine each statement in the light of  </p>\n<p>$$k = A\\,e^{-\\frac{E_a}{RT}}\\,. $$</p>\n\n<p><p>A. “Arrhenius holds true only for an elementary homogeneous reaction.”  </p>\n<p>• False – it’s an empirical law and is routinely used (and found valid) for complex, composite or even heterogeneous processes.</p></p>\n<p><p>B. “The unit of $A$ is the same as that of $k$.”  </p>\n<p>• True – since $e^{-E_a/RT}$ is dimensionless, $A$ must carry whatever units $k$ has.</p></p>\n<p><p>C. “At a given temperature, a low activation energy means a fast reaction.”  </p>\n<p>• True – smaller $E_a$ makes $\\exp(-E_a/RT)$ larger, hence a larger $k$.</p></p>\n<p><p>D. “$A$ and $E_a$ as used in Arrhenius depend on temperature.”  </p>\n<p>• False – in the simple Arrhenius model both are treated as constants (over modest $T$-ranges).</p></p>\n<p><p>E. “When $E_a \\gg RT$, $A$ and $E_a$ become interdependent.”  </p>\n<p>• False – although in some data sets you observe a correlation (compensation effect), the basic Arrhenius form still treats them as independent parameters.</p></p>\n\n<p>Therefore the only correct statements are B and C.  </p>\n<p>Answer: B and C only.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnutyc",
@@ -316,7 +316,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{K}=\\mathrm{A} \\mathrm{e}^{-\\mathrm{EaRT}} \\\\\n& \\operatorname{logk}=\\log \\mathrm{A}-\\frac{\\mathrm{Ea}}{2.303 \\mathrm{RT}}\n\\end{aligned}$$</p>\n<p>For graph between logk with $\\frac{1}{\\mathrm{~T}}$</p>\n<p>$$\\mid \\text { Slope of curve } \\left\\lvert\\,=\\frac{\\mathrm{Ea}}{2.303 \\mathrm{R}}\\right.$$</p>\n<p>From given graph</p>\n<p>Magnitude of slope $\\Rightarrow(2)>(1)>(3)$</p>\n<p>Hence $\\mathrm{Ea}_2>\\mathrm{Ea}_1>\\mathrm{Ea}_3$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9ghxn3o",
@@ -338,7 +338,7 @@
     "difficulty": "medium",
     "solution": "<p>$\\mathrm{A}_2+\\mathrm{B}_2 \\rightleftharpoons 2 \\mathrm{AB}$</p>\n<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\mathrm{E}_{\\mathrm{f}}=180 \\mathrm{~kJ} \\mathrm{~mol}^{-1} \\\\\n& \\mathrm{E}_{\\mathrm{b}}=200 \\mathrm{~kJ} \\mathrm{~mol}^{-1} \\\\\n& \\Delta \\mathrm{H}=\\mathrm{E}_{\\mathrm{f}}-\\mathrm{E}_{\\mathrm{b}}=-20 \\mathrm{~kJ} \\mathrm{~mol}^{-1}\n\\end{aligned}\\\\\n&\\text { In presence of catalyst : }\\\\\n&\\begin{aligned}\n& \\mathrm{E}_{\\mathrm{f}}=180-100=80 \\mathrm{~kJ} \\mathrm{~mol}^{-1} \\\\\n& \\mathrm{E}_{\\mathrm{b}}=200-100=100 \\mathrm{~kJ} \\mathrm{~mol}^{-1}\n\\end{aligned}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsfk61gm",
@@ -683,7 +683,7 @@
     "difficulty": "medium",
     "solution": "According to Arrhenius equation\n<br><br>$$K = A{e^{ - {{{E_a}} \\over {RT}}}}$$\n<br><br>The graph will varies as\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kwj5wez0/dcb59aaf-53dc-418c-af13-f1a02937ec16/b7e2c7d0-503e-11ec-87d6-07ff3bfe6155/file-1kwj5wez1.jpeg?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kwj5wez0/dcb59aaf-53dc-418c-af13-f1a02937ec16/b7e2c7d0-503e-11ec-87d6-07ff3bfe6155/file-1kwj5wez1.jpeg\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2021 (Online) 1st September Evening Shift Chemistry - Chemical Kinetics and Nuclear Chemistry Question 121 English Explanation\">",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "FihxpHl17L5XyJRPhj1kltchaxj",
@@ -824,7 +824,7 @@
     "difficulty": "medium",
     "solution": "K = A$${e^{ - {{{E_a}} \\over {RT}}}}$$\n<br><br>lnK = lnA $${ - {{{E_a}} \\over {RT}}}$$\n<br><br>$$ \\Rightarrow $$ lnK = lnA $${ - {{{E_a}{{10}^3}} \\over {{{10}^3}RT}}}$$\n<br><br>$$ \\therefore $$ Slope = $${ - {{{E_a}} \\over {{{10}^3}R}}}$$ = $$ - {{10} \\over 5}$$\n<br><br>$$ \\Rightarrow $$ $${{{{E_a}} \\over R}}$$ = 2000 J/mol\n<br><br>$$ \\Rightarrow $$ E<sub>a</sub> = 2R KJ/mol\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lX2NTCfJLnRUqPdoJijgy2xukfjbf57i",
@@ -846,7 +846,7 @@
     "difficulty": "medium",
     "solution": "A<sub>t</sub> = A<sub>0</sub>.e<sup>-k<sub>1</sub>t</sup>\n<br><br>B<sub>t</sub> = B<sub>0</sub>.e<sup>-k<sub>2</sub>t</sup>\n<br><br>k<sub>1</sub> = $${{\\ln 2} \\over {300}}$$\n<br><br>k<sub>2</sub> = $${{\\ln 2} \\over {180}}$$\n<br><br>Given, A<sub>0</sub> = B<sub>0</sub>\n<br><br>and A<sub>t</sub>\n and B<sub>t</sub>\n are related as [A] = 4[B]\n<br><br>$$ \\therefore $$ A<sub>0</sub>.e<sup>-k<sub>1</sub>t</sup> = 4B<sub>0</sub>.e<sup>-k<sub>2</sub>t</sup>\n<br><br>$$ \\Rightarrow $$ $${e^{\\left( {{{\\ln 2} \\over {180}} - {{\\ln 2} \\over {300}}} \\right)t}}$$ = 4\n<br><br>$$ \\Rightarrow $$ $${\\left( {{{\\ln 2} \\over {180}} - {{\\ln 2} \\over {300}}} \\right)t}$$ = ln 4 = 2ln 2\n<br><br>$$ \\Rightarrow $$ $${\\left( {{1 \\over {180}} - {{\\mathop{\\rm l}\\nolimits}  \\over {300}}} \\right)t}$$ = 2\n<br><br>$$ \\Rightarrow $$ t = $${{2 \\times 180 \\times 300} \\over {120}}$$ = 900 sec",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "WwY6fIA8HXnjgAQAtgjgy2xukg4o13gz",
@@ -885,7 +885,7 @@
     "difficulty": "easy",
     "solution": "We know\n<br><br>$$k = A{e^{ - {{{E_a}} \\over {RT}}}}$$\n<br><br>$$ \\Rightarrow $$ $${\\log _e}k = {\\log _e}A - {{{E_a}} \\over {2.303RT}}$$\n<br><br>According to Arhenius equation plot of $${\\log _e}k$$ versus $${1 \\over T}$$ is linear.\n<br><br>Slope = $$ - {{{E_a}} \\over {2.303R}}$$\n<br><br>From plot we conclude :\n<br><br>Slope : c $$&gt;$$ a $$&gt;$$ d $$&gt;$$ b\n<br><br>So correct order of activation energies\n<br><br>E<sub>c</sub> $$&gt;$$ E<sub>a</sub> $$&gt;$$ E<sub>d</sub> $$&gt;$$ E<sub>b</sub>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "yVktXwXyziBaymmJTG7k9k2k5h5sfuo",
@@ -907,7 +907,7 @@
     "difficulty": "medium",
     "solution": "The rate constant of a reaction without catalyst is\n<br><br>$$k = A{e^{ - {{{E_a}} \\over {RT}}}}$$\n<br><br>The rate constant in presence of catalyst is\ngiven by\n<br><br>$$k' = A{e^{ - {{E{'_a}} \\over {RT}}}}$$\n<br><br>$$ \\therefore $$ $${{k'} \\over k} = {e^{ - {{\\left( {E{'_a} - {E_a}} \\right)} \\over {RT}}}}$$\n<br><br>$$ \\Rightarrow $$ 10<sup>6</sup> = $${e^{ - {{\\left( {E{'_a} - {E_a}} \\right)} \\over {RT}}}}$$\n<br><br>$$ \\Rightarrow $$ ln 10<sup>6</sup> = $${ - {{\\left( {E{'_a} - {E_a}} \\right)} \\over {RT}}}$$\n<br><br>$$ \\Rightarrow $$ $${E{'_a} - {E_a}}$$ = -RTln 10<sup>6</sup>\n<br><br>$$ \\Rightarrow $$ $${E{'_a} - {E_a}}$$ = -6RT$$ \\times $$2.303",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "eIOYvmNDljtJn4Xrf17k9k2k5llve3e",
@@ -946,7 +946,7 @@
     "difficulty": "medium",
     "solution": "K<sub>1</sub> = A$${e^{ - {{{E_a}} \\over {R \\times 700}}}}$$\n<br><br>K<sub>2</sub> = A$${e^{ - {{\\left( {{E_a} - 30} \\right)} \\over {R \\times 500}}}}$$\n<br><br>$$ \\because $$Rate is same\n<br><br>$$ \\therefore $$ Rate constant will also be same\n<br><br>K<sub>1</sub> = K<sub>2</sub>\n<br><br>A$${e^{ - {{{E_a}} \\over {R \\times 700}}}}$$ = A$${e^{ - {{\\left( {{E_a} - 30} \\right)} \\over {R \\times 500}}}}$$\n<br><br>$$ \\Rightarrow $$ $${{{\\left( {{E_a} - 30} \\right)} \\over {R \\times 500}}}$$ = $${{{{E_a}} \\over {R \\times 700}}}$$\n<br><br>$$ \\Rightarrow $$ 5E<sub>a</sub> = 7E<sub>a</sub> – 210\n<br><br>$$ \\Rightarrow $$ 210 = 2E<sub>a</sub>\n<br><br>$$ \\Rightarrow $$ E<sub>a</sub> = 105 kJ/mole\n<br><br>$$ \\therefore $$ Activation energy in the presence of\ncatalyst = 105 – 30 = 75 kJ/mol",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IVPcWimfkzGXc9GmeQ3rsa0w2w9jx0vyjfc",
@@ -968,7 +968,7 @@
     "difficulty": "medium",
     "solution": "From Arrhenius equation, we get\n<br><br>$$\\log {{{K_2}} \\over {{K_1}}} = {{{E_a}} \\over {2.303R}}\\left( {{1 \\over {{T_1}}} - {1 \\over {{T_2}}}} \\right)$$\n<br><br>$$ \\Rightarrow $$ $$\\log {1 \\over {2.5 \\times {{10}^{ - 4}}}} = {{{E_a}} \\over {2.303 \\times 8.314}}\\left( {{1 \\over {600}} - {1 \\over {800}}} \\right)$$\n<br><br>$$ \\Rightarrow $$ 3.6 = $${{{E_a}} \\over {2.303 \\times 8.314}} \\times {{200} \\over {600 \\times 800}}$$\n<br><br>$$ \\Rightarrow $$ E<sub>$$a$$</sub> = 166 kJ/mol",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "BuRyLYEbdumiFeMieMLSG",
@@ -1012,7 +1012,7 @@
     "difficulty": "easy",
     "solution": "According to Arrhenius equation,\n<br>k = A$${e^{ - {{{E_a}} \\over {RT}}}}$$\n<br><br>or ln k = ln A - $${{{{E_a}} \\over {RT}}}$$\n<br><br>Comparing the above equation\nwith straight line equation,\n<br><br>y = mx + c,\n<br><br>we get, slope or gradient (m) = –E<sub>a</sub>\n<br>and Intercept (c) = ln A\n<br><br>Also given that slope or gradient (m) = -y\n<br><br>$$ \\therefore $$ -y = –E<sub>a</sub>\n<br><br>$$ \\Rightarrow $$ E<sub>a</sub> = y\n<br><br>So the activation energy of the reactant, E<sub>a</sub> = y unit",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "BX0f3gu7YGoPxKiu1m8Kn",
@@ -1034,7 +1034,7 @@
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/jf76htyjzrg2h60/5346a66f-d6de-44fe-9ff8-f54e941dc3b9/9d6b0e80-c779-11e9-8a74-7f4f47aa0c85/file-jf76htyjzrg2h61-320w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/jf76htyjzrg2h60/5346a66f-d6de-44fe-9ff8-f54e941dc3b9/9d6b0e80-c779-11e9-8a74-7f4f47aa0c85/file-jf76htyjzrg2h61-500w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Chemistry - Chemical Kinetics and Nuclear Chemistry Question 166 English Explanation\"></picture>\n<br><br>$$ \\therefore $$ E<sub>$$a$$</sub> = (A + B) $$ \\to $$ C = 15\n<br><br>E<sub>$$a$$</sub> = (A + B) $$ \\to $$ D = 10\n<br><br>So, Activation enthalpy to form C is 5 kJ mol<sup>-1</sup> more than\nthat to form D.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "chMqC9P4k4o0ytMI",
@@ -1075,7 +1075,7 @@
     "solution": "<p>Arrhenius equation is</p>\n<p>$$k = A{e^{ - {E_a}/RT}}$$</p>\n<p>where, A = Frequency factor</p>\n<p>Taking into account orientation factor,</p>\n<p>$$k = P{Z_{AB}}{e^{ - {E_a}/RT}}$$</p>\n<p>where, P = steric factor, Z<sub>AB</sub> = collision frequency</p>\n<p>The value of steric factor lies between 0 and 1 predicted by Arrhenius equation. Thus, the experimentally determined value of frequency factor is higher than that predicted by Arrhenius equation.</p>\n<p>The activation energy of the reaction does not depend upon the value of the steric factor.</p>\n<p>If P is very small, then catalyst is required to carry out the reaction at measurable rate.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "dwGTF5etVJOvFtl9",
@@ -1097,7 +1097,7 @@
     "difficulty": "easy",
     "solution": "We know, from arrhenius equation,\n<br><br>k = A.$${e^{{{ - {E_a}} \\over {RT}}}}$$\n<br><br>$$ \\therefore $$ k<sub>1</sub> = A.$${e^{{{ - {E_{{a_1}}}} \\over {RT}}}}$$ ......(1)\n<br><br>k<sub>2</sub> = A.$${e^{{{ - {E_{{a_2}}}} \\over {RT}}}}$$ ......(2)\n<br><br>On dividing equation (2) by (1), we get\n<br><br>$${{{k_2}} \\over {{k_1}}} = {e^{{{\\left( {{E_{{a_1}}} - {E_{{a_2}}}} \\right)} \\over {RT}}}}$$\n<br><br>$$ \\Rightarrow $$ $$\\ln \\left( {{{{k_2}} \\over {{k_1}}}} \\right) = {{\\left( {{E_{{a_1}}} - {E_{{a_2}}}} \\right)} \\over {RT}}$$ = $${{10,000} \\over {8.314 \\times 300}}$$ = 4",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "GXzTlAJFalSuW7k6TcPVS",
@@ -1119,7 +1119,7 @@
     "difficulty": "medium",
     "solution": "For reaction A, T<sub>1</sub> = 300 K, T<sub>2</sub> = 310 K, k<sub>2</sub> = 2 k<sub>1</sub>\n<br><br>$$\\log {{{k_2}} \\over {{k_1}}} = {{{E_{{a_1}}}} \\over {2.303R}}\\left[ {{1 \\over {{T_1}}} - {1 \\over {{T_2}}}} \\right]$$\n<br><br>$$ \\therefore $$ $$\\log {{2{k_1}} \\over {{k_1}}} = \\log 2 = {{{E_{{a_1}}}} \\over {2.303R}}\\left[ {{1 \\over {300}} - {1 \\over {310}}} \\right]$$ ...(1)\n<br><br>For reaction B, T<sub>1</sub> = 300 K, T<sub>2</sub> = ?, k<sub>2</sub> = 2k<sub>1</sub>, E<sub>a<sub>2</sub></sub> = 2E<sub>a<sub>1</sub></sub>\n<br><br>$$\\log {{2{k_1}} \\over {{k_1}}} = \\log 2 = {{2{E_{{a_1}}}} \\over {2.303R}}\\left[ {{1 \\over {300}} - {1 \\over {{T_2}}}} \\right]$$\n<br><br>From eq. (i) and (ii), we get\n<br><br>$${{2{E_{{a_1}}}} \\over {2.303R}}\\left[ {{1 \\over {300}} - {1 \\over {{T_2}}}} \\right] = {{{E_{{a_1}}}} \\over {2.303R}}\\left[ {{1 \\over {300}} - {1 \\over {310}}} \\right]$$\n<br><br>$$ \\Rightarrow $$ $$2\\left[ {{1 \\over {300}} - {1 \\over {{T_2}}}} \\right] = \\left[ {{1 \\over {300}} - {1 \\over {310}}} \\right]$$\n<br><br>$$ \\Rightarrow $$ T<sub>2</sub> = $${{{300 \\times 310} \\over {610}}}$$ $$ \\times $$ 2 = 304.92 K\n<br><br>$$ \\therefore $$ Increased temperature = (304.92 – 300) = 4.92 K",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "OU0GIizMN5uNzlPOBbG31",
@@ -1141,7 +1141,7 @@
     "difficulty": "medium",
     "solution": "<p>According to Arrhenius equation,</p>\n<p>$$\\log {{{k_2}} \\over {{k_1}}} = {{{E_a}} \\over {2.303R}}\\left( {{{{T_2} - {T_1}} \\over {{T_1}{T_2}}}} \\right)$$</p>\n<p>Substituting the given values in the equation, we get</p>\n<p>$$\\log 4 = {{{E_a}} \\over {2.303 \\times 8.314\\,J\\,{K^{ - 1}}mo{l^{ - 1}}}}\\left( {{{310 - 300} \\over {300 \\times 310}}} \\right)$$</p>\n<p>$${E_a} = {{0.602 \\times 2.303 \\times 8.314 \\times 300 \\times 310} \\over {10}}$$</p>\n<p>= 107197.12 J/mol<sup>$$-$$1</sup> or 107.2 kJ/mol<sup>$$-$$1</sup></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "wCkCseZ8XCWWPSdg",
@@ -1164,7 +1164,7 @@
     "solution": "The Arrhenius equation is a mathematical model of the temperature dependence of reaction rates. It is expressed as follows:\n\n<br><br>$$\nk=\\mathrm{Ae}^{-\\mathrm{E}_a / \\mathrm{RT}}\n$$\n\n<br><br>where :\n<br><br>- k is the rate constant\n<br><br>- A is the pre-exponential factor (also known as the frequency factor)\n<br><br>- E<sub>a</sub> is the activation energy\n<br><br>- R is the universal gas constant\n<br><br>- T is the temperature (in Kelvin)\n<br><br>- e is Euler's number, a mathematical constant approximately equal to 2.71828\n\n<br><br>The options provided correlate to the Arrhenius equation as follows:\n\n<br><br>Option A : Incorrect. A high activation energy usually implies a slower reaction, not a fast one. The activation energy is the energy barrier that needs to be overcome for a reaction to occur. The higher the activation energy, the fewer the number of molecules that have enough energy to surpass this barrier and react, resulting in a slower reaction rate.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1li7eo95u/8e1ef974-f342-4a45-89a8-56066f4c5be1/61a11420-fd54-11ed-9057-a7f9a0e389da/file-1li7eo95v.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1li7eo95u/8e1ef974-f342-4a45-89a8-56066f4c5be1/61a11420-fd54-11ed-9057-a7f9a0e389da/file-1li7eo95v.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 1 Offline Chemistry - Chemical Kinetics and Nuclear Chemistry Question 49 English Explanation 1\">\n\n<br>Option B : Correct. Temperature $\\mathrm{T}_2$ is greater than $\\mathrm{T}_1$; hence, the fraction of molecules (shaded in green) having energy greater than activation energy increases with increase in temperature result, rate of reaction increases.\n<br><br>Higher temperature, more number of collisions (between extents) having energy greater than activation energy happen increases speed of reaction.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1li7f4hyi/83c9d7e4-5343-49c2-8f7e-a19d9176fd14/255ed4a0-fd56-11ed-9057-a7f9a0e389da/file-1li7f4hyj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1li7f4hyi/83c9d7e4-5343-49c2-8f7e-a19d9176fd14/255ed4a0-fd56-11ed-9057-a7f9a0e389da/file-1li7f4hyj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 1 Offline Chemistry - Chemical Kinetics and Nuclear Chemistry Question 49 English Explanation 2\">\n\n<br><br>Option C : Correct. A reaction at higher activation energy makes the reaction rate slow. An increase in temperature causes reactant molecules to cross the high energy barrier; i.e., $E_a$ and form activated complex.\n\n<br><br>Option D : Correct. The pre-exponential factor (A) takes into account the probability of proper orientation of reactant molecules to form the product and the frequency at which reactant molecules collide to form the product.\n<br><br>$$\n\\mathrm{A}=\\mathrm{Z}_{\\mathrm{AB}} \\times \\mathrm{P}\n$$\n<br><br>$Z_{A B}$ : Collision frequency or frequency with which A collides with B.\n<br><br>P : Probability of reactant molecules oriented in right orientation with respect to each other to form the product.\n<br><br>Option (D), where pre-exponential factor affects the rate reaction irrespective of the energy they possess.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "hfgD93hASiXKWbBb",
@@ -1186,7 +1186,7 @@
     "difficulty": "medium",
     "solution": "Activation energy can be calculated from the equation \n<br><br>$${{\\log \\,{k_2}} \\over {\\log \\,{k_1}}} = {{{E_a}} \\over {2.303R}}\\left( {{1 \\over {{T_1}}} - {1 \\over {{T_2}}}} \\right)$$ \n<br><br>given $${{{k_2}} \\over {{k_1}}} = 2\\,\\,{T_2} = 310\\,K\\,\\,{T_1} = 300\\,K$$\n<br><br>$$ = \\log 2 = {{ - {E_a}} \\over {2.303 \\times 8.314}}\\left( {{1 \\over {310}} - {1 \\over {300}}} \\right)$$\n<br><br>$${E_a} = 53598.6J/mol$$\n<br><br>$$ = 53.6kJ/mol.$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lewqbat2",
@@ -1209,7 +1209,7 @@
     "solution": "<p>According to the Arrhenius equation</p>\n<p>$$k = A{e^{ - {E_a}/RT}}$$</p>\n<p>where, k = rate constant, E<sub>a</sub> = activation energy and\nT = temperature</p>\n<p>From the expression, we have that as temperature increases, the rate constant ($$k$$) increases exponentially.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lfrwjlwc",
@@ -1232,7 +1232,7 @@
     "solution": "<p>Given that $$\\log k = 6 - {{2000} \\over T}$$</p>\n<p>According to Arrhenius equation</p>\n<p>$$k = A{e^{ - {E_a}/RT}}$$</p>\n<p>$$\\log K = \\log A - {E \\over {2.303RT}}$$</p>\n<p>Comparing with the given equation and solving, we get</p>\n<p>$$A = 1.0 \\times {10^6}\\,{s^{ - 1}}$$</p>\n<p>$${E_a} = 38.3$$ kJ/mol</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "HCILgcwKXnYVtRGp",
@@ -1254,7 +1254,7 @@
     "difficulty": "easy",
     "solution": "$$\\Delta {H_R} = {E_f} - {E_b} = 180 - 200 =  - 20kJ/mol$$ \n<br><br>The nearest correct answer given in choices may be obtained by neglecting sign. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "bFM8KL83corCGEsg",
@@ -1276,7 +1276,7 @@
     "difficulty": "easy",
     "solution": "In Arrhenius equation $$K = A\\,{e^{ - E/RT}},\\,\\,E$$ is the energy of activation, which is required by the colliding molecules to react resulting in the formation of products. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "kJAXWKzFjLzd8NnZ",
@@ -1298,7 +1298,7 @@
     "difficulty": "medium",
     "solution": "The graph show that reaction is  exothermic. \n<br><br>$$\\log \\,k = {{ - \\Delta H} \\over {RT}} + 1$$ \n<br><br>For exothermic reaction $$\\Delta H &lt; 0$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,log\\,\\,k\\,\\,Vs{1 \\over T}\\,\\,$$ would be negative straight line with positive slope. ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "VcCAgyN3fplIli6M",
@@ -1320,6 +1320,6 @@
     "difficulty": "easy",
     "solution": "<p>The Arrhenius equation reads  </p>\n<p>$$k = A\\,e^{-\\tfrac{E_a}{RT}}$$  </p>\n<p>Let’s check each term:</p>\n\n<p><p>A is the pre-exponential (or frequency) factor, not an adsorption factor.  </p></p>\n<p><p>$E_a$ is indeed the activation energy.  </p></p>\n<p><p>R is the universal gas constant ($\\approx8.314$\\,J·mol⁻¹·K⁻¹), not Rydberg’s constant.  </p></p>\n<p><p>k is the rate constant, not the equilibrium constant.  </p></p>\n\n<p>Hence, the correct statement is:  </p>\n<p><strong>Option B: $E_a$ is energy of activation.</strong></p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

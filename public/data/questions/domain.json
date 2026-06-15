@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} & \\text { let } x^2-10 x+85=\\lambda \\\\ & \\therefore \\text { Domain for first term } \\lambda>0 \\ldots \\ldots \\ldots \\ldots .(1) \\\\ & \\& 7-\\log _2 \\lambda > 0 \\Rightarrow \\lambda < 2^7 \\ldots \\ldots \\ldots .(2) \\\\ & \\& \\log _5\\left(7-\\log _2 \\lambda\\right) > 0 \\Rightarrow \\lambda < 2^6 \\ldots \\ldots . .(3) \\\\ & \\therefore \\text { from }(1),(2) \\&(3) \\\\ & 0 < \\lambda < 2^6 \\\\ & 0 < x^2-10 x+85 < 64 \\Rightarrow x \\in(3,7) \\ldots \\ldots . .(A) \\\\ & \\& \\text { domain for second term }-1 \\leq \\frac{3 x-7}{x-17} \\leq 1 \\Rightarrow x \\in[-5,6] \\ldots \\ldots \\ldots . . \\end{aligned} $$</p>\n<p>From (A) \\&amp; (B), domain of function will be ( 3,6 ]</p>\n<p>$$ \\Rightarrow \\alpha=3, \\beta=6 \\Rightarrow \\alpha+\\beta=9 $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml89h6lh",
@@ -41,7 +41,7 @@
     "difficulty": "hard",
     "solution": "<p>$$ \\begin{aligned} & f(x)=\\sin ^{-1}\\left[\\frac{5-x}{3+2 x}\\right]+\\frac{1}{\\log _e(10-x)} \\\\ & -1 \\leq \\frac{5-x}{3+2 x} \\leq 1 \\\\ & \\frac{2-3 x}{3+2 x} \\leq 0 \\\\ & (3 x-2)(2 x+3) \\geq 0 \\\\ & (3 x-2)(2 x+3) \\geq 0 x \\in\\left(-\\infty,-\\frac{3}{2}\\right] \\cup\\left[\\frac{2}{3}, \\infty\\right) \\\\ & \\frac{8+x}{3+2 x} \\geq 0 \\\\ & x \\in(-\\infty,-8] \\cup\\left[\\frac{-3}{2}, \\infty\\right) \\\\ & x \\in(-\\infty,-8] \\cup\\left[\\frac{2}{3}, 10\\right)-\\{9\\}=6(\\alpha+\\beta+\\gamma+\\delta)=70 \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnrji7er",
@@ -80,7 +80,7 @@
     "difficulty": "medium",
     "solution": "<p>For the function  </p>\n<p>$$ f(x)=\\cos^{-1}\\left(\\frac{4x+2[x]}{3}\\right), $$</p>\n<p>the expression inside $\\cos^{-1}$ must lie between $-1$ and $1$.</p>\n<p>So, for domain:</p>\n<p>$$ -1 \\le \\frac{4x+2[x]}{3} \\le 1 $$</p>\n<p>Multiplying by $3$:</p>\n<p>$$ -3 \\le 4x+2[x] \\le 3 $$</p>\n<p>Now let</p>\n<p>$$ [x]=n $$</p>\n<p>where $n$ is an integer and</p>\n<p>$$ n \\le x < n+1. $$</p>\n<p>Then the inequality becomes</p>\n<p>$$ -3 \\le 4x+2n \\le 3. $$</p>\n<p>Subtracting $2n$:</p>\n<p>$$ -3-2n \\le 4x \\le 3-2n $$</p>\n<p>Dividing by $4$:</p>\n<p>$$ \\frac{-3-2n}{4} \\le x \\le \\frac{3-2n}{4} $$</p>\n<p>But also,</p>\n<p>$$ n \\le x < n+1. $$</p>\n<p>So we find possible integer values of $n$ for which these intervals overlap.</p>\n<h3>Case 1: $n=-1$</h3>\n<p>Then</p>\n<p>$$ [x]=-1,\\quad -1 \\le x < 0 $$</p>\n<p>and</p>\n<p>$$ \\frac{-3-2(-1)}{4} \\le x \\le \\frac{3-2(-1)}{4} $$</p>\n<p>$$ \\frac{-1}{4} \\le x \\le \\frac{5}{4} $$</p>\n<p>Intersection with $[-1,0)$ gives</p>\n<p>$$ -\\frac14 \\le x < 0. $$</p>\n<h3>Case 2: $n=0$</h3>\n<p>Then</p>\n<p>$$ 0 \\le x < 1 $$</p>\n<p>and</p>\n<p>$$ \\frac{-3}{4} \\le x \\le \\frac{3}{4} $$</p>\n<p>Intersection gives</p>\n<p>$$ 0 \\le x \\le \\frac34. $$</p>\n<h3>Case 3: $n=-2$</h3>\n<p>Then</p>\n<p>$$ -2 \\le x < -1 $$</p>\n<p>and</p>\n<p>$$ \\frac{-3-2(-2)}{4} \\le x \\le \\frac{3-2(-2)}{4} $$</p>\n<p>$$ \\frac14 \\le x \\le \\frac74 $$</p>\n<p>No intersection.</p>\n<h3>Case 4: $n=1$</h3>\n<p>Then</p>\n<p>$$ 1 \\le x < 2 $$</p>\n<p>and</p>\n<p>$$ \\frac{-5}{4} \\le x \\le \\frac14 $$</p>\n<p>No intersection.</p>\n<p>So the domain is</p>\n<p>$$ \\left[-\\frac14,0\\right)\\cup\\left[0,\\frac34\\right] = \\left[-\\frac14,\\frac34\\right]. $$</p>\n<p>Thus,</p>\n<p>$$ \\alpha=-\\frac14,\\quad \\beta=\\frac34. $$</p>\n<p>Therefore,</p>\n<p>$$ \\alpha+\\beta=\\frac12 $$</p>\n<p>and</p>\n<p>$$ 12(\\alpha+\\beta)=12\\cdot \\frac12=6. $$</p>\n<p>Hence the correct answer is  </p>\n<p>$$ \\boxed{6} $$</p>\n<p>So, <strong>Option A</strong> is correct.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhq5g",
@@ -102,7 +102,7 @@
     "difficulty": "medium",
     "solution": "<p>For the function</p>\n<p>$$ f(x)=\\sin^{-1}\\left(\\frac{x+[x]}{3}\\right), $$</p>\n<p>the expression inside $\\sin^{-1}$ must lie between $-1$ and $1$.</p>\n<p>So, we need</p>\n<p>$$ -1 \\le \\frac{x+[x]}{3} \\le 1 $$</p>\n<p>Multiplying throughout by $3$,</p>\n<p>$$ -3 \\le x+[x] \\le 3 $$</p>\n<p>Now let</p>\n<p>$$ [x]=n $$</p>\n<p>Then by definition of greatest integer function,</p>\n<p>$$ n \\le x < n+1 $$</p>\n<p>and so</p>\n<p>$$ x+[x]=x+n $$</p>\n<p>Hence the condition becomes</p>\n<p>$$ -3 \\le x+n \\le 3 $$</p>\n<p>But since $x \\in [n,n+1)$, let us check possible integer values of $n$.</p>\n\n<h3>Case 1: $n=-2$</h3>\n<p>Then</p>\n<p>$$ x \\in [-2,-1) $$</p>\n<p>and</p>\n<p>$$ x+[x]=x-2 $$</p>\n<p>Since $x \\in [-2,-1)$,</p>\n<p>$$ x-2 \\in [-4,-3) $$</p>\n<p>This does not satisfy $-3 \\le x+[x]$ except at $x=-1$, but $-1 \\notin [-2,-1)$.</p>\n<p>So no value from this interval is allowed.</p>\n\n<h3>Case 2: $n=-1$</h3>\n<p>Then</p>\n<p>$$ x \\in [-1,0) $$</p>\n<p>and</p>\n<p>$$ x+[x]=x-1 $$</p>\n<p>So</p>\n<p>$$ x-1 \\in [-2,-1) $$</p>\n<p>This lies completely within $[-3,3]$.</p>\n<p>Hence all $x \\in [-1,0)$ are allowed.</p>\n\n<h3>Case 3: $n=0$</h3>\n<p>Then</p>\n<p>$$ x \\in [0,1) $$</p>\n<p>and</p>\n<p>$$ x+[x]=x $$</p>\n<p>So</p>\n<p>$$ x \\in [0,1) $$</p>\n<p>This also lies within $[-3,3]$.</p>\n<p>Hence all $x \\in [0,1)$ are allowed.</p>\n\n<h3>Case 4: $n=1$</h3>\n<p>Then</p>\n<p>$$ x \\in [1,2) $$</p>\n<p>and</p>\n<p>$$ x+[x]=x+1 $$</p>\n<p>So</p>\n<p>$$ x+1 \\in [2,3) $$</p>\n<p>This lies within $[-3,3]$.</p>\n<p>Hence all $x \\in [1,2)$ are allowed.</p>\n\n<h3>Case 5: $n=2$</h3>\n<p>Then</p>\n<p>$$ x \\in [2,3) $$</p>\n<p>and</p>\n<p>$$ x+[x]=x+2 $$</p>\n<p>So</p>\n<p>$$ x+2 \\in [4,5) $$</p>\n<p>This exceeds $3$, so no value is allowed.</p>\n\n<p>Now let us also check the boundary points:</p>\n<ul>\n<li><p>At $x=-\\dfrac{3}{2}$, actually $[x]=-2$, so this does not help.</p></li>\n<li><p>Better to solve more carefully near the ends.</p></li>\n</ul>\n<p>We want the full set of $x$ satisfying</p>\n<p>$$ -3 \\le x+[x] \\le 3 $$</p>\n<p>Let $x \\in [n,n+1)$, so $[x]=n$.</p>\n<p>Then</p>\n<p>$$ -3 \\le x+n \\le 3 $$</p>\n<p>which gives</p>\n<p>$$ -3-n \\le x \\le 3-n $$</p>\n<p>Together with $n \\le x < n+1$, we need intersection of</p>\n<p>$$ [n,n+1) \\cap [-3-n,\\,3-n]. $$</p>\n<p>Now check relevant integers:</p>\n<h3>For $n=-2$</h3>\n<p>$$ x \\in [-2,-1) \\cap [-1,5] = \\{-1\\} $$</p>\n<p>but $-1$ is not included in $[-2,-1)$, so no solution.</p>\n<h3>For $n=-1$</h3>\n<p>$$ x \\in [-1,0) \\cap [-2,4] = [-1,0) $$</p>\n<h3>For $n=0$</h3>\n<p>$$ x \\in [0,1) \\cap [-3,3] = [0,1) $$</p>\n<h3>For $n=1$</h3>\n<p>$$ x \\in [1,2) \\cap [-4,2] = [1,2) $$</p>\n<h3>For $n=2$</h3>\n<p>$$ x \\in [2,3) \\cap [-5,1] = \\varnothing $$</p>\n<p>Thus domain is</p>\n<p>$$ [-1,0)\\cup [0,1)\\cup [1,2)=[-1,2) $$</p>\n<p>So,</p>\n<p>$$ \\alpha=-1,\\qquad \\beta=2 $$</p>\n<p>Therefore,</p>\n<p>$$ \\alpha^2+\\beta^2=(-1)^2+2^2=1+4=5 $$</p>\n<p>Hence the correct answer is</p>\n<p>$$ \\boxed{5} $$</p>\n<p>So, <strong>Option B</strong> is correct.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qhb2ff",
@@ -124,7 +124,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; f_1(x)=\\log _5\\left(18 x-x^2-77\\right) \\\\\n&amp; \\therefore 18 x-x^2-77&gt;0 \\\\\n&amp; \\quad x^2-18 x+77&lt;0 \\\\\n&amp; \\quad x \\in(7,11) \\alpha=7, \\beta=11 \\\\\n&amp; f_2(x)=\\log _{(x-1)}\\left(\\frac{2 x^2+3 x-2}{x^2-3 x-4}\\right) \\\\\n&amp; \\therefore \\quad x-1&gt;0, x-1 \\neq 1, \\frac{2 x^2+3 x-2}{x^2-3 x-4}&gt;0 \\\\\n&amp; \\quad x&gt;1, x \\neq 2, \\frac{(2 x-1)(x+2)}{(x-4)(x+1)}&gt;0 \\\\\n&amp; \\quad x&gt;1, x \\neq 2,\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m70k64ep/410bf002-1381-4dd8-9a7f-7ba053814aa1/cc17ed00-e881-11ef-9ef3-219db9e82920/file-jaoe38c1m70k64eq.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m70k64ep/410bf002-1381-4dd8-9a7f-7ba053814aa1/cc17ed00-e881-11ef-9ef3-219db9e82920/file-jaoe38c1m70k64eq.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 29th January Evening Shift Mathematics - Functions Question 33 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\therefore \\quad x \\in(4, \\infty) \\\\\n&amp; \\therefore \\gamma=4 \\\\\n&amp; \\therefore \\alpha^2+\\beta^2+\\gamma^2=49+121+16 \\\\\n&amp; =186\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j1ha",
@@ -146,7 +146,7 @@
     "difficulty": "medium",
     "solution": "<p>$$x+|x|= \\begin{cases}2 x, & x \\geq 0 \\\\ 0, & x<0\\end{cases}$$</p>\n<p>$\\Rightarrow \\frac{1}{\\sqrt{x+|x|}}$, domain is $x>0$, as $2 x \\neq 0$</p>\n<p>Similarly,</p>\n<p>$$\\begin{aligned}\n&\\frac{1}{\\sqrt{3 x+10-x^2}} \\text { is defined when } 3 x+10-x^2>0\\\\\n&\\begin{aligned}\n\\Rightarrow & x^2-3 x-10<0 \\\\\n& (x-5)(x+2)<0 \\\\\n\\Rightarrow & x \\in(-2,5) \\\\\n\\Rightarrow & \\text { Domain will be }(0, \\infty) \\cap(-2,5)=(0,5) \\\\\n\\Rightarrow & (1+a)^2+b^2=1+25=26\n\\end{aligned}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9gxgcq5",
@@ -168,7 +168,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; 1-\\log _4\\left(x^2-9 x+18\\right)&gt;0 \\\\\n&amp; \\log _4\\left(x^2-9 x+18\\right)&lt;1 \\\\\n&amp; x^2-9 x+18&lt;4 \\\\\n&amp; x^2-9 x+14&lt;0 \\\\\n&amp; x \\in(2,7) \\\\\n&amp; x^2-9 x+18&gt;0 \\\\\n&amp; x \\in(-\\infty, 3) \\cup(6, \\infty)\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9z86fxm/15bd262e-33e2-4e2e-9ebe-ec599dc4489a/c4ef48a0-232a-11f0-99e8-5f2c09d57200/file-jaoe38c1m9z86fxn.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9z86fxm/15bd262e-33e2-4e2e-9ebe-ec599dc4489a/c4ef48a0-232a-11f0-99e8-5f2c09d57200/file-jaoe38c1m9z86fxn.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Evening Shift Mathematics - Functions Question 18 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; x \\in(2,3) \\cup(6,7) \\\\\n&amp; \\alpha+\\beta+\\gamma+\\delta=18\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnuqfr",
@@ -190,7 +190,7 @@
     "difficulty": "medium",
     "solution": "<p>$\\frac{2 x-3}{4 x+5}&gt;0$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mal0i8hz/3ac1afe8-abf6-41e2-b7db-2851053ab864/0227c970-2f26-11f0-b439-af8bbc2a7b79/file-jaoe38c1mal0i8i0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mal0i8hz/3ac1afe8-abf6-41e2-b7db-2851053ab864/0227c970-2f26-11f0-b439-af8bbc2a7b79/file-jaoe38c1mal0i8i0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Morning Shift Mathematics - Functions Question 22 English Explanation\"></p>\n<p>$\\begin{aligned} &amp; \\therefore \\quad x \\in\\left(-\\infty,-\\frac{5}{4}\\right) \\cup\\left(\\frac{3}{2}, \\infty\\right) ........(i) \\\\ &amp; -1 \\leq \\frac{3 x+4}{2-x} \\leq 1 \\\\ &amp; \\frac{3 x+4}{2-x} \\leq 1 \\\\ &amp; \\Rightarrow \\quad \\frac{3 x+4}{2-x}-1 \\leq 0\\end{aligned}$</p>\n<p>$\\begin{aligned} &amp; \\Rightarrow \\quad \\frac{3 x+4-2+x}{x-2} \\geq 0 \\\\ &amp; \\Rightarrow \\quad \\frac{4 x+2}{x-2} \\geq 0 \\\\ &amp; \\Rightarrow \\quad x \\in\\left(-\\infty,-\\frac{1}{2}\\right] \\cup(2, \\infty)........(ii)\\end{aligned}$</p>\n<p>$$ \\begin{aligned} &amp; \\frac{3 x+4}{2-x} \\geq-1 \\\\ \\Rightarrow &amp; \\frac{3 x+4}{2-x}+1 \\geq 0 \\\\ \\Rightarrow &amp; \\frac{3 x+4+2-x}{2-x} \\geq 0 \\\\ \\Rightarrow &amp; \\frac{2 x+6}{x-2} \\leq 0 \\\\ \\therefore &amp; x \\in[-3,2)........(iii) \\end{aligned} $$</p>\n<p>Taking intersection of (i), (ii) and (iii)</p>\n<p>$$ \\begin{aligned} &amp; x \\in\\left[-3,-\\frac{5}{4}\\right) \\\\ &amp; \\alpha=-3, \\beta=-\\frac{5}{4} \\\\ &amp; \\alpha^2+4 \\beta=4 \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnuscl",
@@ -212,7 +212,7 @@
     "difficulty": "medium",
     "solution": "<p>$f(x)=\\log _4\\left(\\log _3\\left(\\log _7\\left(8-\\log _2\\left(x^2+4 x+5\\right)\\right)\\right)\\right.$</p>\n<p>$$\\begin{aligned}\n&amp; \\log _3\\left(\\log _1\\left(8-\\log _2\\left(x^2+4 x+5\\right)\\right)\\right)&gt;0 \\\\\n&amp; \\log _7\\left(8-\\log _2\\left(x^2+4 x+5\\right)\\right)&gt;1 \\\\\n&amp; 8-\\log _2\\left(x^2+4 x+5\\right)&gt;7 \\\\\n&amp; -\\log _2\\left(x^2+4 x+5\\right)&gt;-1 \\\\\n&amp; \\log _2\\left(x^2+4 x+5\\right)&lt;1 \\\\\n&amp; x^2+4 x+5&lt;2 \\\\\n&amp; x^2+4 x+3&lt;0 \\\\\n&amp; \\Rightarrow(x+3)(x+1)&lt;0 \\quad \\ldots(1) \\\\\n&amp; \\log _7\\left(8-\\log _2\\left(x^2+4 x+5\\right)\\right)&gt;0 \\\\\n&amp; 8-\\log _2\\left(x^2+4 x+5\\right)&gt;1 \\\\\n&amp; \\log _2\\left(x^2+4 x+5\\right)&lt;9 \\\\\n&amp; x^2+4 x+5&lt;2^9 \\\\\n&amp; x^2+4 x+5&lt;512 \\\\\n&amp; \\Rightarrow x^2+4 x-507&lt;0 \\\\\n&amp; \\Rightarrow x=-4 \\pm \\sqrt{16+2028}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; x=\\frac{-4 \\pm \\sqrt{2044}}{2} \\quad\\text{..... (2)}\\\\\n&amp; \\Rightarrow\\left(x-\\left(\\frac{-4+\\sqrt{2044}}{2}\\right)\\right)\\left(x-\\left(\\frac{-4-\\sqrt{2044}}{2}\\right)\\right)&lt;0 \\\\\n&amp; x^2+4 x+5&gt;0 \\\\\n&amp; D&gt;0 \\\\\n&amp; x \\in R \\\\\n&amp; \\text { Also, } 8-\\log _2\\left(x^2+4 x+5\\right)&gt;0 \\\\\n&amp; \\log _2\\left(x^2+4 x+5\\right)&lt;8 \\\\\n&amp; x^2+4 x+5&lt;256 \\\\\n&amp; \\Rightarrow x^2+4 x-251&lt;0 \\\\\n&amp; \\Rightarrow x=-4 \\pm \\sqrt{16+1004} \\\\\n&amp; \\Rightarrow x=\\frac{-4 \\pm \\sqrt{1020}}{2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\Rightarrow\\left(x-\\left(\\frac{-4+\\sqrt{1020}}{2}\\right)\\right)\\left(x-\\left(\\frac{-4-\\sqrt{1020}}{2}\\right)\\right)&lt;0\\\\\n&amp;\\therefore \\text { Intersection of (1), (2) and (3) }\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9ru2ml3/68caf361-57a0-47fe-8fb3-a58e292befc5/1e7bb580-1f1a-11f0-9588-0d31893f02ea/file-jaoe38c1m9ru2ml4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9ru2ml3/68caf361-57a0-47fe-8fb3-a58e292befc5/1e7bb580-1f1a-11f0-9588-0d31893f02ea/file-jaoe38c1m9ru2ml4.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 4th April Evening Shift Mathematics - Functions Question 21 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\therefore x \\in(-3,-1) \\\\\n&amp; -1 \\leq \\frac{7 x+10}{x-2} \\leq 1 \\\\\n&amp; \\Rightarrow x \\in[-2,-1] \\\\\n&amp; \\therefore \\alpha^2+\\beta^2+\\gamma^2+\\delta^2=(-3)^2+(-1)^2+(-2)^{-2}+(-1)^2 \\\\\n&amp; =9+1+4+1 \\\\\n&amp; =15\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dmz9ah",
@@ -229,7 +229,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; f(x)=\\cos ^{-1}\\left(\\frac{4 x+5}{3 x-7}\\right) \\\\\n&amp; \\Rightarrow-1 \\leq\\left(\\frac{4 x+5}{3 x-7}\\right) \\leq 1 \\\\\n&amp; \\left(\\frac{4 x+5}{3 x-7}\\right) \\geq-1 \\\\\n&amp; \\frac{4 x+5+3 x-7}{3 x-7} \\geq 0 \\\\\n&amp; \\Rightarrow \\frac{7 x-2}{3 x-7} \\geq 0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9h0zwz3/b4b71195-d051-450c-95fd-4a437897d995/93d743f0-1928-11f0-aa66-05ee025e30bb/file-jaoe38c1m9h0zwz4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9h0zwz3/b4b71195-d051-450c-95fd-4a437897d995/93d743f0-1928-11f0-aa66-05ee025e30bb/file-jaoe38c1m9h0zwz4.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 8th April Evening Shift Mathematics - Functions Question 25 English Explanation 1\"></p>\n<p>$$\\begin{aligned}\n&amp; x \\in\\left(-\\infty, \\frac{2}{7}\\right] \\cup\\left(\\frac{7}{3}, \\infty\\right) \\\\\n&amp; \\&amp; \\frac{4 x+5}{3 x-7} \\leq 1 \\Rightarrow \\frac{x+12}{3 x-7} \\leq 0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9h10zei/7fa06ba8-5ec6-4331-8223-962b65ed1efd/b18699a0-1928-11f0-aa66-05ee025e30bb/file-jaoe38c1m9h10zej.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9h10zei/7fa06ba8-5ec6-4331-8223-962b65ed1efd/b18699a0-1928-11f0-aa66-05ee025e30bb/file-jaoe38c1m9h10zej.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 8th April Evening Shift Mathematics - Functions Question 25 English Explanation 2\"></p>\n<p>$\\therefore$ Domain of $\\mathrm{f}(\\mathrm{x})$ is</p>\n<p>$$\\left[-12, \\frac{2}{7}\\right] \\alpha=-12, \\beta=\\frac{2}{7}$$</p>\n<p>$$g(x)=\\log _2\\left(2-6 \\log _{27}(2 x+5)\\right)$$</p>\n<p>Domain</p>\n<p>$$2-6 \\log _{27}(2 x+5)&gt;0$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow &amp; 6 \\log _{27}(2 \\mathrm{x}+5)&lt;2 \\\\\n\\Rightarrow &amp; \\log _{27}(2 \\mathrm{x}+5)&lt;\\frac{1}{3} \\\\\n\\Rightarrow &amp; 2 \\mathrm{x}+5&lt;3 \\\\\n\\Rightarrow &amp; \\mathrm{x}&lt;-1\n\\end{array}$$</p>\n<p>$\\&amp; 2 x+5&gt;0 \\Rightarrow x&gt;-\\frac{5}{2}$</p>\n<p>Domain is $\\mathrm{x} \\in\\left(-\\frac{5}{2},-1\\right)$</p>\n<p>$$\\begin{aligned}\n&amp;\\gamma=-\\frac{5}{2}, \\delta=-1\\\\\n&amp;\\begin{aligned}\n&amp; |7(\\alpha+\\beta)+4(\\gamma+\\delta)|=\\left\\lvert\\, 7\\left(\\left.-12+\\frac{2}{7}+4\\left(-\\frac{5}{2}-1\\right) \\right\\rvert\\,\\right.\\right. \\\\\n&amp; |-82-14|=96\n\\end{aligned}\n\\end{aligned}$$</p>",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "lsam05oo",
@@ -251,7 +251,7 @@
     "difficulty": "medium",
     "solution": "<p>To find the domain of the function \n$$f(x) = \\frac{\\sqrt{x^2-25}}{(4-x^2)}+\\log_{10}(x^2+2x-15),$$ \nwe need to consider the domain conditions for both the square root function and the logarithmic function.</p>\n<p>The square root function $\\sqrt{x^2-25}$ requires that the argument of the square root be non-negative, so\n$$x^2 - 25 \\geq 0.$$\nThis inequality is satisfied when\n$$x \\leq -5 \\quad \\text{or} \\quad x \\geq 5.$$</p>\n<p>The denominator of the rational part of $f(x)$, $(4-x^2)$, cannot be zero, otherwise, the function will become undefined due to division by zero. Thus, we must have\n$$4 - x^2 \\neq 0.$$\nThis inequality is violated when\n$$x = \\pm2.$$</p>\n<p>Combining these conditions gives us the domain for the rational part of the function:\n$$x \\in (-\\infty, -5] \\cup (5, \\infty) \\quad \\text{and} \\quad x \\neq 2,-2.$$</p>\n<p>Moving on to the logarithmic function, $\\log_{10}(x^2+2x-15)$, the argument must be positive:\n$$x^2 + 2x - 15 &gt; 0.$$\nThis is a quadratic inequality, which we can factor to find the solution:\n$$(x+5)(x-3) &gt; 0.$$\nFrom this, we see that the inequality is satisfied for\n$$x &lt; -5 \\quad \\text{or} \\quad x &gt; 3.$$</p>\n<p>The overall domain of $f(x)$ is the intersection of the domains for each piece. Taking the intersection of the two sets gives us:\n$$x \\in (-\\infty, -5) \\cup (5, \\infty),$$</p>\n<p>Since the question states that the domain is of the form $(-\\infty, \\alpha) \\cup [\\beta, \\infty)$, we can infer that\n$$\\alpha = -5 \\quad \\text{and} \\quad \\beta = 5.$$</p>\n<p>We calculate $\\alpha^2 + \\beta^3$ as follows:\n$$\\alpha^2 + \\beta^3 = (-5)^2 + 5^3 = 25 + 125 = 150.$$</p>\n<p>So the correct answer, representing the sum of $\\alpha^2$ and $\\beta^3$, is:\nOption D $150$.</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsg4mhuk",
@@ -273,7 +273,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp; \\frac{2 x+3}{4 x^2+x-3}&gt;0 \\text { and }-1 \\leq \\frac{2 x-1}{x+2} \\leq 1 \\\\\n&amp; \\frac{2 x+3}{(4 x-3)(x+1)}&gt;0 \\quad \\frac{3 x+1}{x+2} \\geq 0 \\&amp; \\frac{x-3}{x+2} \\leq 0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsoxumdb/8342ad24-c8e3-4299-8fcb-c60fcb809b21/dcf834f0-ccf2-11ee-a330-494dca5e9a63/file-6y3zli1lsoxumdc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsoxumdb/8342ad24-c8e3-4299-8fcb-c60fcb809b21/dcf834f0-ccf2-11ee-a330-494dca5e9a63/file-6y3zli1lsoxumdc.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 30th January Evening Shift Mathematics - Functions Question 49 English Explanation\"></p>\n<p>$$(-\\infty,-2) \\cup\\left[\\frac{-1}{3}, \\infty\\right)$$ ..... (1)</p>\n<p>$$(-2,3]$$ ..... (2)</p>\n<p>$$\\left[\\frac{-1}{3}, 3\\right]$$ ..... (3) $$\\quad (1) \\cap(2) \\cap(3)$$</p>\n<p>$$\\begin{aligned}\n&amp; \\left(\\frac{3}{4}, 3\\right] \\\\\n&amp; \\alpha=\\frac{3}{4} \\beta=3 \\\\\n&amp; 5 \\beta-4 \\alpha=15-3=12\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lsgb11sw",
@@ -295,7 +295,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& -1 \\leq\\left|\\frac{2-|x|}{4}\\right| \\leq 1 \\\\\n& \\Rightarrow\\left|\\frac{2-|x|}{4}\\right| \\leq 1 \\\\\n& -4 \\leq 2-|x| \\leq 4 \\\\\n& -6 \\leq-|x| \\leq 2 \\\\\n& -2 \\leq|x| \\leq 6 \\\\\n& |x| \\leq 6\n\\end{aligned}$$</p>\n<p>$$\\Rightarrow x \\in[-6,6]$$ .... (1)</p>\n<p>Now, $$3-x\\ne 1$$</p>\n<p>And $$x\\ne2$$ .... (2)</p>\n<p>and $$3-x>0$$</p>\n<p>$$x<3$$ .... (3)</p>\n<p>$$\\begin{aligned}\n& \\text { From (1), (2) and (3) } \\\\\n& \\Rightarrow x \\in[-6,3)-\\{2\\} \\\\\n& \\alpha=6 \\\\\n& \\beta=3 \\\\\n& \\gamma=2 \\\\\n& \\alpha+\\beta+\\gamma=11\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luy6z50x",
@@ -317,7 +317,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\n\\begin{array}{ll}\nf(x)=\\sin ^{-1}\\left(\\frac{x-1}{2 x+3}\\right) &amp; \\\\\n-1 \\leq \\frac{x-1}{2 x+3} \\leq 1 &amp; \\frac{x-1}{2 x+3}+1 \\geq 0 \\\\\n\\frac{x-1}{2 x+3}-1 \\leq 0 &amp; \\frac{x-1+2 x+3}{2 x+3} \\geq 0 \\\\\n\\frac{x-1-2 x-3}{2 x+3} \\leq 0 &amp; \\frac{3 x+2}{2 x+3} \\geq 0\n\\end{array}\n$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lw3c14xb/42504263-4110-4311-9e4d-11eb95a83473/f131dbf0-1041-11ef-9f6c-75804a813f04/file-jaoe38c1lw3c14xc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lw3c14xb/42504263-4110-4311-9e4d-11eb95a83473/f131dbf0-1041-11ef-9f6c-75804a813f04/file-jaoe38c1lw3c14xc.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 9th April Morning Shift Mathematics - Functions Question 44 English Explanation 1\"></p>\n<p>$$\\begin{aligned}\n&amp; \\frac{-x-4}{2 x+3} \\leq 0 \\\\\n&amp; \\frac{x+4}{2 x+3} \\geq 0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lw3c32ar/ca8579c0-7ba5-4526-8059-fbf044a6256c/26c8bb30-1042-11ef-9f6c-75804a813f04/file-jaoe38c1lw3c32as.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lw3c32ar/ca8579c0-7ba5-4526-8059-fbf044a6256c/26c8bb30-1042-11ef-9f6c-75804a813f04/file-jaoe38c1lw3c32as.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 9th April Morning Shift Mathematics - Functions Question 44 English Explanation 2\"></p>\n<p>$$\\begin{aligned}\n&amp; x \\in(-\\infty,-4] \\cup\\left[\\frac{-2}{3}, \\infty\\right) \\\\\n&amp; \\text { Domain : } R-\\left(-4, \\frac{-2}{3}\\right) \\\\\n&amp; \\alpha=-4 \\\\\n&amp; \\beta=\\frac{-2}{3} \\\\\n&amp; 12 \\times \\alpha \\beta=12 \\times 4 \\times \\frac{2}{3}=32\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgsw05gr",
@@ -339,7 +339,7 @@
     "difficulty": "medium",
     "solution": "$$\nf(x)=\\frac{1}{\\sqrt{[x]^2-3[x]-10}}\n$$\n<br/><br/>For Domain $[x]^2-3[x]-10>0$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow ([x]-5)([x]+2)>0 \\\\\\\\\n& \\Rightarrow [x] \\in(-\\infty,-2) \\cup(5, \\infty) \\\\\\\\\n& \\therefore  x \\in(-\\infty,-2) \\cup[6, \\infty)\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgrgf67d",
@@ -361,7 +361,7 @@
     "difficulty": "hard",
     "solution": "<p>First, the function $f(x) = \\sin^{-1}(\\log_{3x}(\\frac{6 + 2 \\log_3{x}}{-5x}))$ has several restrictions :</p>\n<ol>\n<li><p>Since the arcsine function $\\sin^{-1}(x)$ is only defined for $-1\\leq x\\leq 1$, this means that $\\log_{3x}(\\frac{6 + 2 \\log _3 x}{-5 x})$ must be between -1 and 1.</p>\n</li>\n<li><p>For the logarithm to be defined, $3x &gt; 0 \\Rightarrow x &gt; 0$ .......(1)<br/><br/> because the base of a logarithm must be greater than 0 and not equal to 1. Also, $x \\neq \\frac{1}{3}$ .......(2)<br/><br/> as the base cannot be 1.</p>\n</li>\n<li><p>Moreover, the inner function of the logarithm $\\frac{6 + 2 \\log_3{x}}{-5x}$ must be greater than 0. <br/><br/>$$ \\Rightarrow $$ $6+2 \\log _3 x<0 \\quad(\\because x>0)$\n<br/><br/>$$\n\\begin{aligned}\n\\Rightarrow & \\log _3 x<-3 \\\\\\\\\n\\Rightarrow & x<3^{-3} \\\\\\\\\n\\Rightarrow & x<\\frac{1}{27} .........(3)\n\\end{aligned}\n$$\n<br/><br/>$$\n\\Rightarrow \\text { From (1), (2), (3), } 0 < x < \\frac{1}{27}\n$$</p>\n</li>\n</ol>\n<p>The next step is to solve the inequality for $-1 \\leq \\log_{3x}(\\frac{6+2 \\log _3 x}{-5 x}) \\leq 1$. To do this, we make the observation that for the logarithmic part to be within $[-1,1]$, it must be true that $3x \\leq \\frac{6+2 \\log_3 x}{-5x} \\leq \\frac{1}{3x}$.</p>\n<p>Solving the inequality $15x^2 + 6 + 2 \\log_3 x \\geq 0$, we find that $x \\in(0, \\frac{1}{27})$ ........(4)</p>\n<p>Likewise, solving the inequality $6+2 \\log_3 x + \\frac{5}{3} \\geq 0$, we find that $x \\geq 3^{-\\frac{23}{6}}$ ........(5)</p>\n<p>Combining Equations (3), (4), and (5), the intersection of all these intervals is $x \\in[3^{-\\frac{23}{6}}, \\frac{1}{27})$.</p>\n<p>Now, consider the function $g(x) = x - [x]$, where $[x]$ is the greatest integer function. For this function, the range is the fractional part of $x$. In this case, the range $(\\alpha, \\beta)$ is given by the minimum and maximum possible values of $x$ in its domain. Hence, $\\alpha = 3^{-\\frac{23}{6}}$ and $\\beta = \\frac{1}{27}$.</p>\n<p>Finally, substitute these values into the equation $\\alpha^{2}+\\frac{5}{\\beta}$:</p>\n<p>$\\alpha^{2}+\\frac{5}{\\beta} = (3^{-\\frac{23}{6}})^2 + \\frac{5}{\\frac{1}{27}} = 3^{-\\frac{23}{3}} + 135$ = 135.0002198.</p>\n<p>Since $3^{-\\frac{23}{3}}$ = 0.0002198 is an extremely small number, it&#39;s approximately 0. So, $\\alpha^{2}+\\frac{5}{\\beta} \\approx 135$.</p>\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldsvexaq",
@@ -383,7 +383,7 @@
     "difficulty": "medium",
     "solution": "$x-2>0 \\Rightarrow x>2$\n<br/><br/>\n$\\mathrm{x}+1>0 \\Rightarrow \\mathrm{x}>-1$\n<br/><br/>\n$x+1 \\neq 1 \\Rightarrow x \\neq 0$ and $x>0$\n<br/><br/>\nDenominator\n<br/><br/>\n$\\mathrm{x}^{2}-2 \\mathrm{x}-3 \\neq 0$\n<br/><br/>\n$(x-3)(x+1) \\neq 0$\n<br/><br/>\n$\\mathrm{x} \\neq-1,3$\n<br/><br/>\nSo Ans $(2, \\infty)-\\{3\\}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgyq24t0",
@@ -422,7 +422,7 @@
     "difficulty": "medium",
     "solution": "Domain of $$\\cos e{c^{ - 1}}x$$ :<br><br>$$x \\in ( - \\infty , - 1] \\cup [1,\\infty )$$<br><br>and, $$x - [x] &gt; 0$$<br><br>$$ \\Rightarrow \\{ x\\}  &gt; 0$$<br><br>$$ \\Rightarrow x \\ne I$$<br><br>$$ \\therefore $$ Required domain = $$( - \\infty , - 1] \\cup [1,\\infty ) - I$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krpv18s8",
@@ -466,7 +466,7 @@
     "difficulty": "easy",
     "solution": "Given $$f(x) = {1 \\over {4 - {x^2}}} + {\\log _{10}}({x^3} - x)$$\n<br><br>Let f<sub>1</sub>(x) = $${1 \\over {4 - {x^2}}}$$ and f<sub>2</sub>(x) = $${\\log _{10}}({x^3} - x)$$\n<br><br>Here in f<sub>1</sub>(x) denominator $$ \\ne $$ 0\n<br><br>4 - x<sup>2</sup> $$ \\ne $$ 0\n<br><br>$$ \\Rightarrow $$ x $$ \\ne $$ $$ \\pm $$ 2 ...........(1)\n<br><br>and x<sup>3</sup> - x &gt; 0\n<br><br>$$ \\Rightarrow $$ x(x<sup>2</sup> - 1) &gt; 0\n<br><br>$$ \\Rightarrow $$ x(x + 1)(x - 1) &gt; 0\n<br><br><picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek201jhsg/94d4265b-795f-4c86-a44f-f6491a75f85f/4a520d00-f3cc-11e9-a7bc-b7b08ce8d541/file-7kejek201jhsh-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/7kejek201jhsg/94d4265b-795f-4c86-a44f-f6491a75f85f/4a520d00-f3cc-11e9-a7bc-b7b08ce8d541/file-7kejek201jhsh-500w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7kejek201jhsg/94d4265b-795f-4c86-a44f-f6491a75f85f/4a520d00-f3cc-11e9-a7bc-b7b08ce8d541/file-7kejek201jhsh-680w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Functions Question 138 English Explanation\"></picture>\n<br><br>x $$ \\in $$ (-1, 0) $$ \\cup $$ (1, $$\\infty $$) ........(2)\n<br><br>Hence domain is intersection of (1) and (2)\n<br><br>x $$ \\in $$ (-1, 0) $$ \\cup $$ (1, 2) $$ \\cup $$ (2, $$\\infty $$)",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "IuZ2hfWBOzl3se7H",
@@ -488,7 +488,7 @@
     "difficulty": "easy",
     "solution": "$$f\\left( x \\right) = {1 \\over {\\sqrt {\\left| x \\right| - x} }},\\,\\,$$ define if $$\\,\\,\\,\\left| x \\right| - x &gt; 0$$\n<br><br>$$ \\Rightarrow \\left| x \\right| &gt; x,\\,\\,\\, \\Rightarrow x &lt; 0$$\n<br><br>Hence domain of $$f\\left( x \\right)$$ is $$\\left( { - \\infty ,0} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l2vph03s",
@@ -511,7 +511,7 @@
     "solution": "<p>(A) $$z = {{2i(x + iy)} \\over {1 - {{(x + iy)}^2}}} = {{2i(x + iy)} \\over {1 - ({x^2} - {y^2} + 2ixy)}}$$</p>\n<p>Using $$1 - {x^2} = {y^2}$$, we get</p>\n<p>$$Z = {{2ix - 2y} \\over {2{y^2} - 2ixy}} =  - {1 \\over y}$$</p>\n<p>Since $$ - 1 \\le y \\le 1 \\Rightarrow  - {1 \\over y} \\le  - 1$$ or $$ - {1 \\over y} \\ge 1$$.</p>\n<p>(B) For domain :</p>\n<p>$$ - 1 \\le {{8({3^{x - 2}})} \\over {1 - {3^{2(x - 1)}}}} \\le 1 \\Rightarrow  - 1 \\le {{{3^x} - {3^{x - 2}}} \\over {1 - {3^{2x - 2}}}} \\le 1$$</p>\n<p>Case 1 : $${{{3^x} - {3^{x - 2}}} \\over {1 - {3^{2x - 2}}}} - 1 \\le 0$$.</p>\n<p>$$ \\Rightarrow {{({3^x} - 1)({3^{x - 2}} - 1)} \\over {({3^{2x - 2}} - 1)}} \\ge 0$$</p>\n<p>$$ \\Rightarrow x \\in ( - \\infty ,0] \\cup (1,\\infty )$$<p>\n<p>Case 2 : $${{{3^x} - {3^{x - 2}}} \\over {1 - {3^{2x}} - 2}} + 1 \\ge 0$$</p>\n<p>$$ \\Rightarrow {{({x^{x - 2}} - 1)({3^x} + 1)} \\over {({3^x}\\,.\\,{3^{x - 2}} - 1)}} \\ge 0$$</p>\n<p>$$ \\Rightarrow x \\in ( - \\infty ,1) \\cup [2,\\infty )$$</p>\n<p>So, $$x \\in ( - \\infty ,0] \\cup [2,\\infty )$$.\n<p>(C) R<sub>1</sub> $$\\to$$ R<sub>1</sub> + R<sub>3</sub> :</p>\n<p>$$f(\\theta ) = \\left| {\\matrix{\n   0 & 0 & 2  \\cr \n   { - \\tan \\theta } & 1 & {\\tan \\theta }  \\cr \n   { - 1} & { - \\tan \\theta } & 1  \\cr \n\n } } \\right| = 2({\\tan ^2}\\theta  + 1) = 2{\\sec ^2}\\theta $$</p>\n<p>(D) $$f'(x) = {3 \\over 2}{(x)^{1/2}}(3x - 10) + {(x)^{3/2}} \\times 3 = {{15} \\over 2}{(x)^{1/2}}(x - 2)$$</p>\n<p>Increasing, when $$x \\ge 2$$.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "d90DFXOHvtSgLUje",
@@ -533,7 +533,7 @@
     "difficulty": "medium",
     "solution": "$$f\\left( x \\right) = {4^{ - {x^2}}} + {\\cos ^{ - 1}}\\left( {{x \\over 2} - 1} \\right) + \\log \\left( {\\cos \\,x} \\right)$$\n<br><br>$$f\\left( x \\right)$$ is defined if $$ - 1 \\le \\left( {{x \\over 2} - 1} \\right) \\le 1$$ and $$\\cos \\,x &gt; 0$$\n<br><br>or $$\\,\\,\\,\\,0 \\le {x \\over 2} \\le 2\\,\\,$$ and $$\\,\\, - {\\pi  \\over 2} &lt; x &lt; {\\pi  \\over 2}$$\n<br><br>or $$\\,\\,\\,$$ $$0 \\le x \\le 4$$ $$\\,\\,$$ and $$\\,\\, - {\\pi  \\over 2} &lt; x &lt; {\\pi  \\over 2}$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,x\\, \\in \\left[ {0,{\\pi  \\over 2}} \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "htONhxhNRHk21CjA",
@@ -555,7 +555,7 @@
     "difficulty": "easy",
     "solution": "$$f\\left( x \\right) = {{{{\\sin }^{ - 1}}\\left( {x - 3} \\right)} \\over {\\sqrt {9 - {x^2}} }}$$ is defined\n<br><br>if $$(i)$$ $$\\,\\,\\, - 1 \\le x - 3 \\le 1 \\Rightarrow 2 \\le x \\le 4$$\n<br><br>and $$(ii)$$ $$9 - {x^2} &gt; 0 \\Rightarrow  - 3 &lt; x &lt; 3$$\n<br><br>Taking common solution of $$\\left( i \\right)$$ and $$\\left( {ii} \\right),$$\n<br><br>we get $$2 \\le x &lt; 3$$\n<br><br>$$\\therefore$$ Domain $$ = \\left[ {2,\\left. 3 \\right)} \\right.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jKHkNWI2VphTKzW4",
@@ -577,7 +577,7 @@
     "difficulty": "easy",
     "solution": "$$f\\left( x \\right) = {3 \\over {4 - {x^2}}} + {\\log _{10}}\\left( {{x^3} - x} \\right)$$ \n<br><br>$$4 - {x^2} \\ne 0;\\,\\,\\,{x^3} - x &gt; 0;$$\n<br><br>$$x \\ne  \\pm \\sqrt 4 $$ and $$ - 1 &lt; x &lt; 0$$\n<br><br>or $$\\,\\,\\,1 &lt; x &lt; \\infty $$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/560wctTK9mXdOqgCg/jSWBVmaarnrZvUWoRbvIPv12TxTXk/1TxpzLAMqK8aOsHjCdpjZV/image.png\" loading=\"lazy\" alt=\"AIEEE 2003 Mathematics - Functions Question 169 English Explanation\">\n<br><br>$$\\therefore$$ $$D = \\left( { - 1,0} \\right) \\cup \\left( {1,\\infty } \\right) - \\left\\{ {\\sqrt 4 } \\right\\}$$\n<br><br>$$D = \\left( { - 1,0} \\right) \\cup \\left( {1,2} \\right) \\cup \\left( {2,\\infty } \\right).$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "xkNnw5MPjtXPCYQ0",
@@ -599,6 +599,6 @@
     "difficulty": "easy",
     "solution": "$$f\\left( x \\right) = {\\sin ^{ - 1}}\\left( {{{\\log }_3}\\left( {{x \\over 3}} \\right)} \\right)$$ exists\n<br><br>if $$\\,\\,\\,\\, - 1 \\le {\\log _3}\\left( {{x \\over 3}} \\right) \\le 1$$\n<br><br>$$ \\Leftrightarrow {3^{ - 1}} \\le {x \\over 3} \\le {3^1}$$\n<br><br>$$ \\Leftrightarrow 1 \\le x \\le 9$$\n<br><br>or $$\\,\\,\\,\\,x \\in \\left[ {1,9} \\right]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

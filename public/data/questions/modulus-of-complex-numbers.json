@@ -36,7 +36,7 @@
     "difficulty": "medium",
     "solution": "<p>Solve the quadratic equation first:</p>\n<p>$$ z^2+4z+16=0 $$</p>\n<p>Using the quadratic formula,</p>\n<p>$$ z=\\frac{-4\\pm\\sqrt{16-64}}{2} =\\frac{-4\\pm\\sqrt{-48}}{2} =\\frac{-4\\pm 4\\sqrt{3}i}{2} =-2\\pm 2\\sqrt{3}i $$</p>\n<p>So the set is</p>\n<p>$$ S=\\{-2+2\\sqrt{3}i,\\,-2-2\\sqrt{3}i\\} $$</p>\n<p>Now we need to find</p>\n<p>$$ \\sum_{z\\in S}|z+\\sqrt{3}i|^2 $$</p>\n<p>That is,</p>\n<p>$$ |-2+2\\sqrt{3}i+\\sqrt{3}i|^2 + |-2-2\\sqrt{3}i+\\sqrt{3}i|^2 $$</p>\n<p>Simplify each term:</p>\n<ol>\n<li>For $z=-2+2\\sqrt{3}i$,</li>\n</ol>\n<p>$$ z+\\sqrt{3}i=-2+3\\sqrt{3}i $$</p>\n<p>Hence,</p>\n<p>$$ |-2+3\\sqrt{3}i|^2=(-2)^2+(3\\sqrt{3})^2=4+27=31 $$</p>\n<ol start=\"2\">\n<li>For $z=-2-2\\sqrt{3}i$,</li>\n</ol>\n<p>$$ z+\\sqrt{3}i=-2-\\sqrt{3}i $$</p>\n<p>Hence,</p>\n<p>$$ |-2-\\sqrt{3}i|^2=(-2)^2+(-\\sqrt{3})^2=4+3=7 $$</p>\n<p>Therefore,</p>\n<p>$$ \\sum_{z\\in S}|z+\\sqrt{3}i|^2=31+7=38 $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{38} $$</p>\n<p>Option D</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lsam3k7w",
@@ -58,7 +58,7 @@
     "difficulty": "medium",
     "solution": "<p>To find the minimum value of $\\left|z+\\frac{1}{2}(3+4i)\\right|$, where $z$ is a complex number with $|z| \\leqslant 1$, we can think of this geometrically as the distance from any point inside or on the boundary of the unit circle in the complex plane to the fixed point $\\frac{1}{2}(3+4i)$.</p>\n\n<p>To make this more clear, first write the expression as follows:\n$$\\left|z+\\frac{1}{2}(3+4i)\\right| = \\left|z+\\frac{3}{2}+\\frac{4}{2}i\\right| = \\left|z+1.5+2i\\right|$$</p>\n\n<p>This means we are looking for the distance between any point on the complex plane represented by $z$ (where $z$ has a magnitude of up to 1) and the point $1.5+2i$.</p>\n\n<p>The triangle inequality gives us the following relationship for any two complex numbers $z_1$ and $z_2$:\n$$\\left|z_1 + z_2\\right| \\geqslant \\left| \\left|z_1\\right| - \\left|z_2\\right| \\right|$$</p>\n\n<p>Applying this to our specific case ($z_1 = z$ and $z_2 = -1.5 - 2i$):\n$$\\left|z + 1.5 + 2i\\right| \\geqslant \\left| \\left|z\\right| - \\left|-1.5 - 2i\\right| \\right|$$</p>\n\n<p>Since $z$ is within the unit circle, $|z| \\leqslant 1$ and $|-1.5 - 2i| = \\sqrt{1.5^2 + 2^2} = \\sqrt{2.25 + 4} = \\sqrt{6.25} = 2.5$.</p>\n\n<p>So now we have:\n$$\\left|z + 1.5 + 2i\\right| \\geqslant \\left| 1 - 2.5 \\right|$$</p>\n\n<p>Which simplifies to:\n$$\\left|z + 1.5 + 2i\\right| \\geqslant 1.5$$</p>\n\n<p>Therefore, the minimum value of $\\left|z+\\frac{1}{2}(3+4i)\\right|$ given that $|z| \\leqslant 1$ is $\\frac{3}{2}$.</p>\n\n<p>So the correct answer is:</p>\n\n<p>Option C: $\\frac{3}{2}$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv7v3k13",
@@ -80,7 +80,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\frac{a}{|y-z|}=\\frac{b}{|z-x|}=\\frac{c}{|x-y|}=\\lambda \\\\\n& \\Rightarrow a^2=\\lambda^2|(y-z)|^2 \\\\\n& b^2=\\lambda^2|(z-x)|^2 \\\\\n& c^2=\\lambda^2|(x-y)|^2 \\\\\n& \\frac{a^2(\\overline{y-z})}{(y-z)(y-z)}=\\frac{a^2(\\bar{y}-\\bar{z})}{|y-z|^2}=\\frac{a^2(\\bar{y}-\\bar{z})}{\\frac{a^2}{\\lambda^2}}=\\lambda^2(\\bar{y}-\\bar{z}) \\\\\n& \\Rightarrow \\sum\\left(\\frac{a^2}{y-z}\\right)=\\lambda^2(\\bar{y}-\\bar{z}+\\bar{z}-\\bar{x}+\\bar{x}-\\bar{y})=0 \\neq 1 \\\\\n\\end{aligned}$$</p>\n<p>Statement I</p>\n<p>$$\\begin{aligned}\n& \\left(\\left|z_1\\right|+\\left|z_2\\right|\\right)\\left|\\frac{z_1}{\\left|z_1\\right|}+\\frac{z_2}{\\left|z_2\\right|}\\right| \\leq 2\\left(\\left|z_1\\right|+\\left|z_2\\right|\\right) \\\\\n& \\Rightarrow \\quad z_1=\\left|z_1\\right| e^{i \\theta_1} \\\\\n& \\quad z_2=\\left|z_2\\right| e^{i \\theta_2} \\\\\n& \\Rightarrow \\frac{z_1}{\\left|z_1\\right|}=e^{i \\theta_1} \\\\\n& \\Rightarrow \\frac{z_2}{\\left|z_2\\right|}=e^{i \\theta_2} \\\\\n& \\Rightarrow\\left|e^{i \\theta_1}+e^{i \\theta_2}\\right| \\\\\n& \\quad=\\left|\\sqrt{2+2 \\cos \\left(\\theta_1-\\theta_2\\right)}\\right| \\\\\n& \\quad=\\left|2 \\cos \\left(\\frac{\\theta_1-\\theta_2}{2}\\right)\\right| \\leq 2\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lvb2948r",
@@ -102,7 +102,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\left|\\frac{z_1-2 z_2}{\\frac{1}{2}-z_1 \\bar{z}_2}\\right|=2 \\\\\n& \\left|z_1-2 z_2\\right|=\\left|1-2 z_1 \\bar{z}_2\\right| \\\\\n& \\Rightarrow\\left(z_1-2 z_2\\right)\\left(\\bar{z}_1-2 \\bar{z}_2\\right)=\\left(1-2 z_1 \\bar{z}_2\\right)\\left(1-2 \\bar{z}_1 z_2\\right) \\\\\n& \\Rightarrow\\left|z_1\\right|^2+4\\left|z_2\\right|^2-2 \\bar{z}_1 z_2-2 \\bar{z}_2 z_1 \\\\\n& \\quad=1+4\\left|z_1\\right|^2\\left|z_2\\right|^2-2 z_1 \\bar{z}_2-2 \\bar{z}_1 z_2 \\\\\n& \\Rightarrow\\left|z_1\\right|^2+4\\left|z_2\\right|^2-4\\left|z_1\\right|^2\\left|z_2\\right|^2-1=0 \\\\\n& \\Rightarrow\\left(\\left|z_1\\right|^2-1\\right)\\left(1-4\\left|z_2\\right|^2\\right)=0 \\\\\n& \\Rightarrow\\left|z_1\\right|=1 \\text { and }\\left|z_2\\right|=\\frac{1}{2}\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luy9clkm",
@@ -164,7 +164,7 @@
     "difficulty": "medium",
     "solution": " $\\left|\\frac{z-2 i}{z+i}\\right|=2$\n<br/><br/>\n$\\Rightarrow (z-2 i)(\\bar{z}+2 i)=4(z+i)(\\bar{z}-i)$\n<br/><br/>\n$\\Rightarrow z \\bar{z}+2 i z-2 i \\bar{z}+4=4(z \\bar{z}-z i+\\overline{z i}+1)$\n<br/><br/>\n$\\Rightarrow 3 z \\bar{z}-6 i z+6 i \\bar{z}=0$\n<br/><br/>\n$\\Rightarrow z \\bar{z}-2 i z+2 i \\bar{z}=0$\n<br/><br/>\n$\\therefore$ Centre $(-2 i)$ or $(0,-2)$\n<br/><br/><b>Other Method :</b>\n<br/><br/>$\\left|\\frac{z-2 i}{z+i}\\right|=2, z \\neq-i$\n<br/><br/>Put $z=x+i y$\n<br/><br/>$$\n\\begin{aligned}\n& \\left|\\frac{x+i y-2 i}{x+i y+i}\\right|=2 \\\\\\\\\n& \\Rightarrow \\left|\\frac{x+i(y-2)}{x+i(y+1)}\\right|^2=4 \\\\\\\\\n& \\Rightarrow x^2+(y-2)^2=4\\left[x^2+(y+1)^2\\right] \\\\\\\\\n& \\Rightarrow x^2+y^2+4-4 y=4\\left[x^2+y^2+1+2 y\\right]\n\\end{aligned}\n$$\n<br/><br/>$\\Rightarrow$ $x^2+y^2+4 y=0$ \n<br/><br/>or $x^2+(y+2)^2=2^2$\n<br/><br/>$$ \\therefore $$ Centre is $(0,-2)$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgzzx8yo",
@@ -186,7 +186,7 @@
     "difficulty": "medium",
     "solution": "Given : $|z+2|=z+4(1+i)$\n<br/><br/>Also, $z=\\alpha+i \\beta$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore|z+2|=|\\alpha+i \\beta+2|=(\\alpha+i \\beta)+4+4 i \\\\\\\\\n& \\Rightarrow|(\\alpha+2)+i \\beta|=(\\alpha+4)+i(\\beta+4) \\\\\\\\\n& \\Rightarrow \\sqrt{(\\alpha+2)^2+\\beta^2}=(\\alpha+4)+i(\\beta+4) \\\\\\\\\n& \\Rightarrow \\beta+4=0 \\Rightarrow \\beta=-4\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Now, }(\\alpha+2)^2+\\beta^2=(\\alpha+4)^2 \\\\\\\\\n& \\Rightarrow \\alpha^2+4+4 \\alpha+\\beta^2=\\alpha^2+16+8 \\alpha \\\\\\\\\n& \\Rightarrow 4+4 \\alpha+16=16+8 \\alpha \\\\\\\\\n& \\Rightarrow 4 \\alpha=4 \\Rightarrow \\alpha=1 \\\\\\\\\n& \\text { So, } \\alpha+\\beta=-3 \\text { and } \\alpha \\beta=-4 \\\\\\\\\n& \\therefore \\text { Required equation is } \\\\\\\\\n& x^2-(-3-4) x+(-3)(-4)=0 \\\\\\\\\n& \\Rightarrow x^2+7 x+12=0\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5bay6xr",
@@ -225,7 +225,7 @@
     "difficulty": "medium",
     "solution": "<p>Let, $$z = x + iy$$</p>\n<p>Given, $$1 \\le \\left| {z - (1 + i)} \\right| \\le 2$$</p>\n<p>$$ \\Rightarrow 1 \\le \\left| {x + iy - 1 - i} \\right| \\le 2$$</p>\n<p>$$ \\Rightarrow 1 \\le \\left| {(x - 1) + i(y - 1)} \\right| \\le 2$$</p>\n<p>$$ \\Rightarrow 1 \\le \\sqrt {{{(x - 1)}^2} + {{(y - 1)}^2}}  \\le 2$$</p>\n<p>It represent two concentric circle both have center at (1, 1) and radius 1 and 2.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5sd6b1c/1293a42c-142d-44c5-b0b7-b47b530256fa/2b18ad10-077c-11ed-94f6-83604aa63acb/file-1l5sd6b1d.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5sd6b1c/1293a42c-142d-44c5-b0b7-b47b530256fa/2b18ad10-077c-11ed-94f6-83604aa63acb/file-1l5sd6b1d.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 24th June Morning Shift Mathematics - Complex Numbers Question 100 English Explanation 1\"></p>\n<p>Also given,</p>\n<p>$$\\left| {z - (1 - i)} \\right| = 1$$</p>\n<p>$$ \\Rightarrow \\left| {x + iy - 1 + i} \\right| = 1$$</p>\n<p>$$ \\Rightarrow \\left| {(x - 1) + i(y + 1)} \\right| = 1$$</p>\n<p>$$ \\Rightarrow \\sqrt {{{(x - 1)}^2} + {{(y + 1)}^2}}  = 1$$</p>\n<p>This represent a circle with center at (1, $$-$$1) and radius = 1.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5scxr6i/1a1381e8-31b3-4230-9271-a7ce070fdff2/3d4976f0-077b-11ed-94f6-83604aa63acb/file-1l5scxr6n.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5scxr6i/1a1381e8-31b3-4230-9271-a7ce070fdff2/3d4976f0-077b-11ed-94f6-83604aa63acb/file-1l5scxr6n.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 24th June Morning Shift Mathematics - Complex Numbers Question 100 English Explanation 2\"></p>\n<p>In the common region infinite values of B possible.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6f0l8mz",
@@ -247,7 +247,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7bug80c/85c5d49d-7e9c-43b0-b928-429394532f1d/d5c2fcc0-25fe-11ed-b97b-f3de74335fe6/file-1l7bug80d.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7bug80c/85c5d49d-7e9c-43b0-b928-429394532f1d/d5c2fcc0-25fe-11ed-b97b-f3de74335fe6/file-1l7bug80d.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 25th July Evening Shift Mathematics - Complex Numbers Question 97 English Explanation\"></p>\n<p>It is sum of distance of z from $$\\left( {3\\sqrt 2 ,0} \\right)$$ and $$\\left( {0,p\\sqrt 2 } \\right)$$</p>\n<p>For minimising, z should lie on AB and $$AB = 5\\sqrt 2 $$</p>\n<p>$${(AB)^2} = 18 + 2{p^2}$$</p>\n<p>$$p = \\, \\pm \\,4$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6duxx3p",
@@ -269,7 +269,7 @@
     "difficulty": "hard",
     "solution": "$S_{n}=\\left\\{z \\in C:|z-3+2 i|=\\frac{n}{4}\\right\\}$ represents a circle with centre $C_{1}(3,-2)$ and radius $r_{1}=\\frac{n}{4}$\n<br/><br/>\nSimilarly $T_{n}$ represents circle with centre $C_{2}(2,-3)$ and radius $r_{2}=\\frac{1}{n}$\n<br/><br/>\n$\\text { As } S_{n} \\cap T_{n}=\\phi$<br/><br/>\n$$\n\\begin{array}{llr}\nC_{1} C_{2}>r_{1}+r_{2}& \\text { OR } & C_{1} C_{2}<\\left|r_{1}-r_{2}\\right| \\\\\\\\\n\\sqrt{2}>\\frac{n}{4}+\\frac{1}{n} & \\text { OR } & \\sqrt{2}<\\left|\\frac{n}{4}-\\frac{1}{n}\\right| \\\\\\\\\n n=1,2,3,4&& n \\text { may take infinite values }\n\\end{array}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6hxiqss",
@@ -291,7 +291,7 @@
     "difficulty": "medium",
     "solution": "<p>$$|z - i| = |z + 5i|$$</p>\n<p>So, $$\\mathrm{z}$$ lies on $${ \\bot ^r}$$ bisector of $$(0,1)$$ and $$(0, - 5)$$</p>\n<p>i.e., line $$y =  - 2$$</p>\n<p>as $$|z| = 2$$</p>\n<p>$$ \\Rightarrow z =  - 2i$$</p>\n<p>$$x = 0$$ and $$y =  - 2$$</p>\n<p>so, $$x + 2y + 4 = 0$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6jb3png",
@@ -313,7 +313,7 @@
     "difficulty": "medium",
     "solution": "<p>Let $$z = x + iy$$</p>\n<p>$$v = {x^2} + {y^2} + {(x - 3)^2} + {y^2} + {x^2} + {(y - 6)^2}$$</p>\n<p>$$ = (3{x^2} - 6x + 9) + (3{y^2} - 12y + 36)$$</p>\n<p>$$ = 3({x^2} + {y^2} - 2x - 4y + 15)$$</p>\n<p>$$ = 3[{(x - 1)^2} + {(y - 2)^2} + 10]$$</p>\n<p>$${v_{\\min }}$$ at $$z = 1 + 2i = {z_0}$$ and $${v_0} = 30$$</p>\n<p>so $$|2{(1 + 2i)^2} - {(1 - 2i)^3} + 3{|^2} + 900$$</p>\n<p>$$ = |2( - 3 + 4i) - (1 - 8{i^3} - 6i(1 - 2i) + 3{|^2} + 900$$</p>\n<p>$$ = | - 6 + 8i - (1 + 8i - 6i - 12) + 3{|^2} + 900$$</p>\n<p>$$ = |8 + 6i{|^2} + 900$$</p>\n<p>$$ = 1000$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6m60fcu",
@@ -335,7 +335,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\because$$ $${\\left| {{Z_2} + |{Z_2} - 1|} \\right|^2} = {\\left| {{Z_2} - |{Z_2} + 1|} \\right|^2}$$</p>\n<p>$$ \\Rightarrow \\left( {{Z_2} + |{Z_2} - 1|} \\right)\\left( {{{\\overline Z }_2} + |{Z_2} - 1|} \\right) = \\left( {{Z_2} - |{Z_2} + 1|} \\right)\\left( {{{\\overline Z }_2} - |{Z_2} + 1|} \\right)$$</p>\n<p>$$ \\Rightarrow {Z_2}\\left( {|{Z_2} - 1| + |{Z_2} + 1|} \\right) + {\\overline Z _2}\\left( {|{Z_2} - 1| + |{Z_2} + 1|} \\right) = |{Z_2} + 1{|^2} - |{Z_2} - 1{|^2}$$</p>\n<p>$$ \\Rightarrow \\left( {{Z_2} + {{\\overline Z }_2}} \\right)\\left( {|{Z_2} + 1| + |{Z_2} - 1|} \\right) = 2\\left( {{Z_2} + {{\\overline Z }_2}} \\right)$$</p>\n<p>$$\\Rightarrow$$ Either $${Z_2} + {\\overline Z _2} = 0$$ or $$|{Z_2} + 1| + |{Z_2} - 1| = 2$$</p>\n<p>So, Z<sub>2</sub> lies on imaginary axis or on real axis within $$[ - 1,1]$$</p>\n<p>Also $$|{Z_1} - 3| = {1 \\over 2} \\Rightarrow {Z_1}$$ lies on the circle having center 3 and radius $${1 \\over 2}$$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7rb1odr/f03d7ef3-d4f9-4323-b266-e49dead29829/7e3573f0-2e7f-11ed-8702-156c00ced081/file-1l7rb1ods.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7rb1odr/f03d7ef3-d4f9-4323-b266-e49dead29829/7e3573f0-2e7f-11ed-8702-156c00ced081/file-1l7rb1ods.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 28th July Morning Shift Mathematics - Complex Numbers Question 90 English Explanation\"></p>\n<p>Clearly $$|{Z_1} - {Z_2}{|_{\\min }} = {3 \\over 2}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l6rdnyvc",
@@ -357,7 +357,7 @@
     "difficulty": "medium",
     "solution": "<p>We know,</p>\n<p>$$\\left| {|{z_1}| - |{z_2}|} \\right| \\le \\left| {{z_1} + {z_2}} \\right| \\le |{z_1}| + |{z_2}|$$</p>\n<p>$$\\therefore$$ $$\\left| {|z| - {1 \\over {|z|}}} \\right| \\le \\left| {z - {1 \\over z}} \\right|$$</p>\n<p>$$ \\Rightarrow \\left| {|z| - {1 \\over {|z|}}} \\right| \\le 2$$ [Given $$\\left| {z - {1 \\over z}} \\right| = 2$$]</p>\n<p>$$ \\Rightarrow \\left| {{{|z{|^2} - 1} \\over {|z|}}} \\right| \\le 2$$</p>\n<p>$$ \\Rightarrow  - 2 \\le {{|z{|^2} - 1} \\over {|z|}} \\le 2$$</p>\n<p>$$\\therefore$$ $${{|z{|^2} - 1} \\over {|z|}} \\le 2$$</p>\n<p>$$ \\Rightarrow |z{|^2} - 1 \\le 2|z|$$</p>\n<p>$$ \\Rightarrow |z{|^2} - 2|z| - 1 \\le 0$$</p>\n<p>$$ \\Rightarrow |z{|^2} - 2|z| + 1 - 2 \\le 0$$</p>\n<p>$$ \\Rightarrow {(|z| - 1)^2} - 2 \\le 0$$</p>\n<p>$$ \\Rightarrow  - \\sqrt 2  \\le |z| - 1 \\le \\sqrt 2 $$</p>\n<p>$$ \\Rightarrow 1 - \\sqrt 2  \\le |z| \\le 1 + \\sqrt 2 $$ ..... (1)</p>\n<p>or</p>\n<p>$$ - 2 \\le {{|z{|^2} - 1} \\over {|z|}}$$</p>\n<p>$$ \\Rightarrow |z{|^2} - 1 \\le  - 2|z|$$</p>\n<p>$$ \\Rightarrow |z{|^2} + 2|z| - 1 \\le 0$$</p>\n<p>$$ \\Rightarrow |z{|^2} + 2|z| + 1 - 2 \\le 0$$</p>\n<p>$$ \\Rightarrow {(|z| + 1)^2} - 2 \\le 0$$</p>\n<p>$$ \\Rightarrow  - \\sqrt 2  \\le |z| + 1 \\le  + \\,\\sqrt 2 $$</p>\n<p>$$ \\Rightarrow  - \\sqrt 2  - 1 \\le |z| \\le \\sqrt 2  - 1$$ ...... (2)</p>\n<p>From (1) and (2) we get,</p>\n<p>Maximum value of $$|z| = \\sqrt 2  + 1$$ and minimum value of $$|z| =  - \\sqrt 2  - 1$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ye1emd881Y8Z3i9nuW1kmiwzsy1",
@@ -379,7 +379,7 @@
     "difficulty": "medium",
     "solution": "Let | z | = t, t $$ \\ge $$ 0<br><br>$${e^{{{(t + 3)(t - 1)} \\over {t + 1}}{{\\log }_e}2}} \\ge {\\log _{\\sqrt 2 }}16 = 8$$ ($$ \\because $$ t + 1 &gt; 0)<br><br>$${2^{{{(t + 3)(t - 1)} \\over {t + 1}}}} \\ge {2^3}$$<br><br>$${{(t + 3)(t - 1)} \\over {t + 1}} \\ge 3$$<br><br>$${t^2} + 2t - 3 \\ge 3t + 3$$<br><br>$${t^2} - t - 6 \\ge 0$$<br><br>$$t \\in ( - \\infty , - 2) \\cup [3,\\infty )$$ But t $$ \\ge $$ 0<br><br>$$ \\therefore $$ $$t \\in [3,\\infty )$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "K1j14MVoLV2InNAjlE1kmhwyz0n",
@@ -401,7 +401,7 @@
     "difficulty": "medium",
     "solution": "$${{|z| + 11} \\over {{{(|z| - 1)}^2}}} \\ge {1 \\over 2}$$<br><br>$$2|z| + 22 \\ge {(|z| - 1)^2}$$<br><br>$$2|z| + 22 \\ge \\,|z{|^2} - 2|z| + 1$$<br><br>$$|z{|^2} - 4|z| - 21 \\le 0$$<br><br>$$(|z| - 7)(|z| + 3) \\le 0$$<br><br>$$ \\Rightarrow \\,|z| \\le 7$$<br><br>$$ \\therefore $$ $$|z{|_{\\max }} = 7$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktoaywlm",
@@ -435,7 +435,7 @@
     "difficulty": "medium",
     "solution": "$$x + iy + \\alpha \\sqrt {{{(x - 1)}^2} + {y^2}}  + 2i = 0$$<br><br>$$ \\therefore $$ y + 2 = 0 and $$x + \\alpha \\sqrt {{{(x - 1)}^2} + {y^2}}  = 0$$<br><br>y = $$-$$2 &amp; $${x^2} = {\\alpha ^2}({x^2} - 2x + 1 + 4)$$<br><br>$${\\alpha ^2} = {{{x^2}} \\over {{x^2} - 2x + 5}} \\Rightarrow {x^2}({\\alpha ^2} - 1) - 2x{\\alpha ^2} + 5{\\alpha ^2} = 0$$<br><br>$$x \\in R \\Rightarrow D \\ge 0$$<br><br>$$4{\\alpha ^4} - 4({\\alpha ^2} - 1)5{\\alpha ^2} \\ge 0$$<br><br>$${\\alpha ^2}[4{\\alpha ^2} - 2{\\alpha ^2} + 20] \\ge 0$$<br><br>$${\\alpha ^2}[ - 16{\\alpha ^2} + 20] \\ge 0$$<br><br>$${\\alpha ^2}\\left[ {{\\alpha ^2} - {5 \\over 4}} \\right] \\le 0$$<br><br>$$0 \\le {\\alpha ^2} \\le {5 \\over 4}$$<br><br>$$ \\therefore $$ $${\\alpha ^2} \\in \\left[ {0,{5 \\over 4}} \\right]$$<br><br>$$ \\therefore $$ $$\\alpha  \\in \\left[ { - {{\\sqrt 5 } \\over 2},{{\\sqrt 5 } \\over 2}} \\right]$$<br><br>then $$4[{(q)^2} + {(p)^2}] = 4\\left[ {{5 \\over 4} + {5 \\over 4}} \\right] = 10$$",
     "section": "B",
-    "type": "MCQ"
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1ktk9aapu",
@@ -457,7 +457,7 @@
     "difficulty": "medium",
     "solution": "$${{z - i} \\over {z - 1}}$$ is purely imaginary number<br><br>Let $$z = x + iy$$<br><br>$$\\therefore$$ $${{x + i(y - 1)} \\over {(x - 1) + i(y)}} \\times {{(x - 1) - iy} \\over {(x - 1) - iy}}$$<br><br>$$ \\Rightarrow {{x(x - 1) + y(y - 1) + i( - y - x + 1)} \\over {{{(x - 1)}^2} + {y^2}}}$$ is purely imaginary number<br><br>$$ \\Rightarrow x(x - 1) + y(y - 1) = 0$$<br><br>$$ \\Rightarrow {\\left( {x - {1 \\over 2}} \\right)^2} + {\\left( {y - {1 \\over 2}} \\right)^2} = {1 \\over 2}$$<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kuwuhq4z/ce3361aa-9b09-4ded-96c8-6643b80e497b/a5496e30-302c-11ec-baa7-bff91910cdbf/file-1kuwuhq50-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kuwuhq4z/ce3361aa-9b09-4ded-96c8-6643b80e497b/a5496e30-302c-11ec-baa7-bff91910cdbf/file-1kuwuhq50-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1kuwuhq4z/ce3361aa-9b09-4ded-96c8-6643b80e497b/a5496e30-302c-11ec-baa7-bff91910cdbf/file-1kuwuhq50-680w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kuwuhq4z/ce3361aa-9b09-4ded-96c8-6643b80e497b/a5496e30-302c-11ec-baa7-bff91910cdbf/file-1kuwuhq50.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 31st August Evening Shift Mathematics - Complex Numbers Question 113 English Explanation\"></picture> <br><br>$$\\therefore$$ $${\\left| {z - (3 + 3i)} \\right|_{\\min }} = \\left| {PC} \\right| - {1 \\over {\\sqrt 2 }}$$<br><br>$$ = {5 \\over {\\sqrt 2 }} - {1 \\over {\\sqrt 2 }} = 2\\sqrt 2 $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "9QulPscHMunCHr8mNL1kjzriuxq",
@@ -480,7 +480,7 @@
     "solution": "It is given that the complex number satisfying<br><br>$$|{z^2} + z + 1| = 1 \\Rightarrow \\left| {{{\\left( {z + {1 \\over 2}} \\right)}^2} + {3 \\over 4}} \\right| = 1$$<br><br>$$ \\because $$ $$|{z_1} - {z_2}|\\, \\ge \\,||{z_1}| - |{z_2}||$$<br><br>$$ \\therefore $$ $$\\left| {{{\\left( {z + {1 \\over 2}} \\right)}^2} - \\left( { - {3 \\over 4}} \\right)} \\right|\\, \\ge \\,\\left| {{{\\left| {z + {1 \\over 2}} \\right|}^2} - \\left| { - {3 \\over 4}} \\right|} \\right|$$<br><br>$$ \\Rightarrow \\left| {{{\\left| {z + {1 \\over 2}} \\right|}^2} - {3 \\over 4}} \\right|\\, \\le \\,1$$<br><br>$$ \\Rightarrow  - 1 \\le \\,{\\left| {z + {1 \\over 2}} \\right|^2} - {3 \\over 4}\\, \\le \\,1$$<br><br>$$ \\Rightarrow  - {1 \\over 4}\\, \\le \\,{\\left| {z + {1 \\over 2}} \\right|^2}\\, \\le \\,{7 \\over 4}$$ <br><br>$$ \\Rightarrow 0 \\le \\,{\\left| {z + {1 \\over 2}} \\right|^2}\\, \\le \\,{7 \\over 4}$$ {$$ \\because $$ |z| $$ \\ge $$ 0}<br><br>$$ \\Rightarrow 0 \\le \\,{\\left| {z + {1 \\over 2}} \\right|^2}\\, \\le \\,{{\\sqrt 7 } \\over 2}$$ ....(i)<br><br>$$ \\because $$ $$ \\Rightarrow \\,\\left| {z + {1 \\over 2}} \\right|\\, \\le \\,{{\\sqrt 7 } \\over 2}$$<br><br>$$ \\because $$ $$|{z_1} + {z_2}|\\, \\ge \\,||{z_1}| - |{z_2}||$$<br><br>$$ \\therefore $$ $$\\left| {z + {1 \\over 2}} \\right|\\, \\ge \\,\\left| {|z| - {1 \\over 2}} \\right|$$<br><br>$$ \\Rightarrow \\left| {|z| - {1 \\over 2}} \\right|\\, \\le \\,\\left| {z + {1 \\over 2}} \\right| \\le \\,{{\\sqrt 7 } \\over 2}$$<br><br>$$ \\Rightarrow  - {{\\sqrt 7 } \\over 2}\\, \\le \\,|z| - {1 \\over 2} \\le {{\\sqrt 7 } \\over 2}$$<br><br>$$ \\Rightarrow {{1 - \\sqrt 7 } \\over 2} \\le \\,|z|\\, \\le {{\\sqrt 7  + 1} \\over 2}$$<br><br>$$ \\Rightarrow |z|\\, \\le \\,{{1 + \\sqrt 7 } \\over 2}$$, $$ \\therefore $$ |z| $$ \\le $$ 2<br><br>$$ \\because $$ $$\\left| {{{\\left( {z + {1 \\over 2}} \\right)}^2} + {3 \\over 4}} \\right|\\, \\le \\,\\left| {{{\\left| {z + {1 \\over 2}} \\right|}^2} + {3 \\over 4}} \\right|$$<br><br>$$ \\Rightarrow 1 \\le \\left| {{{\\left| {z + {1 \\over 2}} \\right|}^2} + {3 \\over 4}} \\right| \\Rightarrow {\\left| {z + {1 \\over 2}} \\right|^2} + {3 \\over 4} \\ge 1$$<br><br>$$ \\Rightarrow {\\left| {z + {1 \\over 2}} \\right|^2} \\ge {1 \\over 4} \\Rightarrow \\left| {z + {1 \\over 2}} \\right|\\, \\ge {1 \\over 2}$$ ....(ii)<br><br>from Eqs. (i) and (ii), we get<br><br>$${1 \\over 2} \\le \\left| {z + {1 \\over 2}} \\right|\\, \\le {{\\sqrt 7 } \\over 2}$$",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "PKiqt4SZENptZ5ymtO1kk3njish",
@@ -520,7 +520,7 @@
     "difficulty": "medium",
     "solution": "Let z = x + iy\n<br><br>given that |Re(z)| + |Im(z)| = 4\n<br><br>$$ \\therefore $$ |x| + |y| = 4\n<img src=\"https://imagex.cdn.examgoal.net/7kd4dk5yg72yx/ce21ea1d-f0db-4a22-8b26-ee65230c31fa/e6510b90-421c-11ea-b62d-51ccc5d4afb6/file-7kd4dk5yg72yy-334w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 9th January Evening Slot Mathematics - Complex Numbers Question 152 English Explanation\">\n<br>Maximum value of |z| = 4\n<br><br>Minimum value of |z| = perpendicular distance of line AB from (0, 0) = $$2\\sqrt 2 $$\n<br><br>$$ \\therefore $$ |z| $$ \\in $$ $$\\left[ {2\\sqrt 2 ,4} \\right]$$\n<br><br>$$ \\therefore $$ |z| cannot be $$\\sqrt {7} $$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "5XxcQkY9Tu2ZkHWYwQ7k9k2k5ip2n7v",
@@ -542,7 +542,7 @@
     "difficulty": "medium",
     "solution": "Given $$\\left| {{{z - i} \\over {z + 2i}}} \\right| = 1$$\n<br><br>|z – i| = |z + 2i|\n<br><br>(let z = x + iy)\n<br><br>$$ \\Rightarrow $$  x<sup>2</sup>\n + (y – 1)<sup>2</sup>\n = x<sup>2</sup>\n + (y + 2)<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ y = $$ - {1 \\over 2}$$\n<br><br>Also given |z| = $${5 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ x<sup>2</sup>\n + y<sup>2</sup> = $${{25} \\over 4}$$\n<br><br>$$ \\Rightarrow $$ x<sup>2</sup> = 6\n<br><br>$$ \\therefore $$ z = $$ \\pm \\sqrt 6 $$ - $$ - {1 \\over 2}i$$\n<br><br>|z + 3i| = $$\\sqrt {6 + {{25} \\over 4}} $$ = $${7 \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "l79mOqWrm4oKN8xh1VHfS",
@@ -564,7 +564,7 @@
     "difficulty": "medium",
     "solution": "Given, $$3\\left| {{z_1}} \\right| = 4\\left| {{z_2}} \\right|$$\n<br><br>$$ \\Rightarrow $$ $${{\\left| {{z_1}} \\right|} \\over {\\left| {{z_2}} \\right|}} = {4 \\over 3}$$\n<br><br>$$ \\Rightarrow $$ $${{\\left| {3{z_1}} \\right|} \\over {\\left| {2{z_2}} \\right|}} = {4 \\over 3} \\times {3 \\over 2} = 2$$\n<br><br>As we know, for any compled number\n<br><br>$${{3{z_1}} \\over {2{z_2}}} = {{\\left| {3{z_1}} \\right|} \\over {\\left| {2{z_2}} \\right|}}$$(cos$$\\theta $$ + i sin$$\\theta $$)\n<br><br>= 2(cos$$\\theta $$ + i sin$$\\theta $$)\n<br><br>$$ \\therefore $$ $${{2{z_2}} \\over {3{z_1}}}$$ = $${1 \\over {2\\left( {\\cos \\theta  + i\\sin \\theta } \\right)}}$$\n<br><br>= $${1 \\over {2\\left( {\\cos \\theta  + i\\sin \\theta } \\right)}} \\times {{\\left( {\\cos \\theta  - i\\sin \\theta } \\right)} \\over {\\left( {\\cos \\theta  - i\\sin \\theta } \\right)}}$$\n<br><br>= $${\\left( {{1 \\over 2}\\cos \\theta  - {i \\over 2}\\sin \\theta } \\right)}$$\n<br>Now, given\n<br><br>$$z = {{3{z_1}} \\over {2{z_2}}} + {{2{z_2}} \\over {3{z_1}}}$$\n<br><br>= 2(cos$$\\theta $$ + i sin$$\\theta $$) + $${\\left( {{1 \\over 2}\\cos \\theta  - {i \\over 2}\\sin \\theta } \\right)}$$\n<br><br>= $${{5 \\over 2}\\cos \\theta  + {3 \\over 2}i\\sin \\theta }$$\n<br><br>So, |z| = $$\\sqrt {{{25} \\over 4}{{\\cos }^2}\\theta  + {9 \\over 4}{{\\sin }^2}\\theta } $$\n<br><br>= $${1 \\over 2}\\sqrt {9 + 16{{\\cos }^2}\\theta } $$\n<br><br>z is neither purely real nor purely imaginary and |z| depends on $$\\theta $$.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ogP6rmBUumLbGPZQG5z8i",
@@ -586,7 +586,7 @@
     "difficulty": "medium",
     "solution": "$$\\left| z \\right| + z = 3 + i$$\n<br><br>$$z = 3 - \\left| z \\right| + i$$\n<br><br>Let&nbsp;&nbsp;$$3 - \\left| z \\right| = a \\Rightarrow \\left| z \\right| = \\left( {3 - a} \\right)$$\n<br><br>$$ \\Rightarrow z = a + i \\Rightarrow \\left| z \\right| = \\sqrt {{a^2} + 1} $$\n<br><br>$$ \\Rightarrow 9 + {a^2} - 6a = {a^2} + 1 \\Rightarrow a = {8 \\over 6} = {4 \\over 3}$$\n<br><br>$$ \\Rightarrow \\left| z \\right| = 3 - {4 \\over 3} = {5 \\over 3}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "LrLuK5pVFXqE5Ymzxn9Vn",
@@ -608,7 +608,7 @@
     "difficulty": "medium",
     "solution": "$$\\left| {{z_1}} \\right| = 9,\\,\\,\\left| {{z_2} - \\left( {3 + 4i} \\right)} \\right| = 4$$\n<br><br>$${C_1},(0,0)$$ radius r<sub>1</sub> = 9\n<br><br>C<sub>2</sub> (3, 4), radius r<sub>2</sub> = 4\n<br><br>C<sub>1</sub>C<sub>2</sub> = $$\\left| {{r_1} - {r_2}} \\right| = 5$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Circle touches internally\n<br><br>$$ \\therefore $$&nbsp;&nbsp;$${\\left| {{z_1} - {z_2}} \\right|_{\\min }} = 0$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "kVD6ruGEq9JlGdhtNQrqq",
@@ -630,7 +630,7 @@
     "difficulty": "medium",
     "solution": "$$\\left| {z - \\left( {3 - 2i} \\right)} \\right| \\le 4$$ represents a circle whose center is (3, $$-$$2) and radius = 4.\n<br><br>$$\\left| z \\right|$$ = $$\\left| z -0\\right|$$&nbsp;&nbsp;represents the distance of point 'z' from origin (0, 0)\n<br><br><img src=\"https://imagex.cdn.examgoal.net/sl5FFYE5XEYhu4m5c/v1hhP6Hz9K4CesARkFWYvke4m5JbC/WTfrWOinsOw7RrGCazmUhS/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Online) 15th April Evening Slot Mathematics - Complex Numbers Question 178 English Explanation\">\n<br><br>Suppose RS is the normal of the circle passing through origin 'O' and G is its center (3, $$-$$2).\n<br><br>Here, OR is the least distance \n<br><br>and OS is in the greatest distance\n<br><br>OR = RG $$-$$ OG and OS = OG + GS . . . . .(1)\n<br><br>As, RG = GS = 4\n<br><br>OG = $$\\sqrt {{3^2} + \\left( { - 2{)^2}} \\right)} $$ = $$\\sqrt {9 + 4} $$ = $$\\sqrt {13} $$\n<br><br>From (1), OR = 4 $$-$$ $$\\sqrt {13} $$ and OS = 4 + $$\\sqrt {13} $$\n<br><br>So, required difference = $$\\left( {4 + \\sqrt {13} } \\right)$$ $$-$$ $$\\left( {4 - \\sqrt {13} } \\right)$$\n<br><br>= $$\\sqrt {13}  + \\sqrt {13} $$ = $$2\\sqrt {13} $$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "iSzQWpXnIqltJoVX",
@@ -652,7 +652,7 @@
     "difficulty": "medium",
     "solution": "$$\\left| {{{{z_1} - 2{z_2}} \\over {2 - {z_1}{{\\overline z }_2}}}} \\right| = 1 \\Rightarrow {\\left| {{z_1} - 2{z_2}} \\right|^2} = {\\left| {2 - {z_1}{{\\overline z }_2}} \\right|^2}$$\n<br><br>$$ \\Rightarrow \\left( {{z_1} - 2{z_2}} \\right)\\left( {\\overline {{z_1} - 2{z_2}} } \\right)$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$ = \\left( {2 - {z_1}{{\\overline z }_2}} \\right)\\left( {\\overline {2 - {z_1}{{\\overline z }_2}} } \\right)$$\n<br><br>$$ \\Rightarrow \\left( {{z_1} - 2{z_1}} \\right)\\left( {{{\\overline z }_1} - 2{{\\overline z }_2}} \\right)$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$ = \\left( {2 - {z_1}\\overline {{z_2}} } \\right)\\left( {2 - {{\\overline z }_1}{z_2}} \\right)$$\n<br><br>$$ \\Rightarrow \\left( {{z_1}{{\\overline z }_1}} \\right) - 2{z_1}{\\overline z _2} - 2{\\overline z _1}{z_2} + 4{z_2}{\\overline z _2}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$ = 4 - 2{\\overline z _1}{z_2} - 2{z_1}{\\overline z _2} + {z_1}{\\overline z _1}{z_2}{\\overline z _2}$$\n<br><br>$$ \\Rightarrow {\\left| {{z_1}} \\right|^2} + 4{\\left| {{z_2}} \\right|^2}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$ = 4 + {\\left| {{z_1}} \\right|^2}{\\left| {{z_2}} \\right|^2}$$\n<br><br>$$ \\Rightarrow {\\left| {{z_1}} \\right|^2} + 4{\\left| {{z_2}} \\right|^2} - 4 - {\\left| {{z_1}} \\right|^2}{\\left| {{z_2}} \\right|^2} = 0$$\n<br><br>$$\\left( {{{\\left| {{z_1}} \\right|}^2} - 4} \\right)\\left( {1 - {{\\left| {{z_2}} \\right|}^2}} \\right) = 0$$\n<br><br>As $$\\,\\,\\,\\left| {{z_2}} \\right| \\ne 1\\,\\,\\,$$ $$\\therefore$$ $$\\,\\,\\,{\\left| {{z_1}} \\right|^2} = 4 \\Rightarrow \\left| {{z_1}} \\right| = 2$$\n<br><br>$$ \\Rightarrow \\,$$ Point $$\\,{z_1}\\,$$ lies on circle of radius $$2.$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "4bdMzc13up82nWp5",
@@ -674,7 +674,7 @@
     "difficulty": "medium",
     "solution": "We know minimum value of \n<br><br>$$\\,\\,\\,\\left| {{Z_1} + {Z_2}} \\right|\\,\\,\\,$$ is $$\\,\\,\\,\\left| {\\left| {{Z_1}} \\right| - \\left| {{Z_2}} \\right|} \\right|$$ \n<br><br>Thus minimum value of \n<br><br>$$\\,\\,\\,\\left| {Z + {1 \\over 2}} \\right|\\,\\,\\,$$ is $$\\,\\,\\,\\left| {\\left| Z \\right| - {1 \\over 2}} \\right|$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, \\le \\left| {Z + {1 \\over 2}} \\right| \\le \\left| Z \\right| + {1 \\over 2}$$\n<br><br>Since, $$\\,\\,\\,\\left| Z \\right| \\ge 2$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,2 - {1 \\over 2} &lt; \\left| {Z + {1 \\over 2}} \\right| &lt; 2 + {1 \\over 2}$$ \n<br><br>$$ \\Rightarrow {3 \\over 2} &lt; \\left| {Z + {1 \\over 2}} \\right| &lt; {5 \\over 2}$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "bpCMTeIB2inxf1Mo",
@@ -697,7 +697,7 @@
     "solution": "<p>We know $$|1-3 i-z|=|z-(1-3 i)|$$ implies distance of $$z$$ from $$(1,-3)$$.</p>\n<p>Let $$P=(1,-3)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzs0fzrn/348891b6-7dff-432c-ae34-c3e3436c05e3/df2b9230-5938-11ef-8ba0-f97c84f62bab/file-jaoe38c1lzs0fzro.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzs0fzrn/348891b6-7dff-432c-ae34-c3e3436c05e3/df2b9230-5938-11ef-8ba0-f97c84f62bab/file-jaoe38c1lzs0fzro.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 2 Offline Mathematics - Complex Numbers Question 31 English Explanation\"></p>\n<p>$$\\min _{z \\in \\mathrm{S}}|1-3 i-z|=\\mathrm{PN}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow \\min _{z \\in S}|1-3 i-z|=\\frac{|\\sqrt{3} \\cdot 1-3|}{\\sqrt{(\\sqrt{3})^2+1^2}} \\\\\n&amp; \\Rightarrow \\min _{z \\in S}|1-3 i-z|=\\frac{3-\\sqrt{3}}{2}\n\\end{aligned}$$</p>\n<p>Hints:</p>\n<p>(i) $$\\left|z_1-z_2\\right|$$ implies distance between $$z_1$$ and $$z_2$$</p>\n<p>(ii) The minimum distance of a point $$\\left(x_1, y_1\\right)$$ from the line $$a x+b y+c=0$$ is $$\\frac{\\left|a x_1+b y_1+c\\right|}{\\sqrt{a^2+b^2}}$$.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "SSzxjMQ7p4EG1AY7",
@@ -737,7 +737,7 @@
     "difficulty": "medium",
     "solution": "Let $$z=x+iy$$ \n<br><br>$$\\left| {z - 1} \\right| = \\left| {z + 1} \\right|{\\left( {x - 1} \\right)^2} + {y^2}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = {\\left( {x + 1} \\right)^2} + {y^2}$$\n<br><br>$$ \\Rightarrow {\\mathop{\\rm Re}\\nolimits} \\,z = 0\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, \\Rightarrow x = 0$$\n<br><br>$$\\left| {z - 1} \\right| = \\left| {z - i} \\right|{\\left( {x - 1} \\right)^2} + {y^2}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = {x^2} + {\\left( {y - 1} \\right)^2}$$\n<br><br>$$ \\Rightarrow x = y$$\n<br><br>$$\\left| {z + 1} \\right| = \\left| {z - i} \\right|{\\left( {x + 1} \\right)^2} + {y^2}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = {x^2} + {\\left( {y - 1} \\right)^2}$$\n<br><br>Only $$(0,0)$$ will satisfy all conditions. \n<br><br>$$ \\Rightarrow $$ Number of complex number $$z=1$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgcbcby7",
@@ -760,7 +760,7 @@
     "solution": "<p>$$w=\\alpha+i \\beta$$</p>\n<p>since, $$\\left(\\frac{w-\\bar{w} z}{1-z}\\right)$$ is purely real</p>\n<p>then, $$\\quad \\frac{w-\\bar{w} z}{1-z}=\\frac{\\overline{w-\\bar{w} z}}{\\overline{1-z}}=\\frac{\\bar{w}-w \\bar{z}}{1-\\bar{z}}$$</p>\n<p>$$\\Rightarrow(w-\\bar{w} z)(1-\\bar{z})=(\\bar{w}-w \\bar{z})(1-z)$$</p>\n<p>$$\\Rightarrow(w-\\bar{w} z)-w \\bar{z}+\\bar{w}|z|^{2}$$</p>\n<p>$$=\\bar{w}-w \\bar{z}-\\bar{w} z+w|z|^{2}$$</p>\n<p>$$\\Rightarrow \\quad w+\\bar{w}|z|^{2}=\\bar{w}+w|z|^{2}$$</p>\n<p>$$\\Rightarrow \\quad|z|^{2}(w-\\bar{w})=w-\\bar{w}$$</p>\n<p>$$\\Rightarrow \\quad|z|^{2}=\\frac{w-\\bar{w}}{w-\\bar{w}}$$</p>\n<p>$$\\Rightarrow \\quad|z|^{2}=1$$</p>\n<p>Since, $$\\quad w-\\bar{w}=\\alpha+i \\beta-\\alpha+i \\beta$$</p>\n<p>$$=2 i \\beta$$ and $$\\beta \\neq 1$$</p>\n<p>$$\\therefore \\quad|z|=1$$ but $$|z| \\neq 1$$</p>\n<p>Shortcut Method:</p>\n<p>Since $$z=\\bar{z}$$ then</p>\n<p>$$\\begin{aligned}\nx+i y & =x-i y \\\\\n\\Rightarrow \\quad x+i y-x+i y & =0 \\\\\n\\Rightarrow \\quad 2 i y & =0 \\\\\n\\Rightarrow \\text { Imaginary part } & =0\n\\end{aligned}$$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "de5FYCyGl5T5tbGQ",
@@ -782,7 +782,7 @@
     "difficulty": "medium",
     "solution": "Given $$\\,\\omega  = {z \\over {z - {1 \\over 3}i}}\\,$$ and $$\\left| \\omega  \\right| = 1$$\n<br><br>$$\\therefore$$ $${{\\left| z \\right|} \\over {\\left| {z - {1 \\over {\\sqrt 3 }}i} \\right|}} = \\left| \\omega  \\right|$$\n<br><br>$$ \\Rightarrow $$ $${{\\left| z \\right|} \\over {\\left| {z - {1 \\over {\\sqrt 3 }}i} \\right|}} = 1$$\n<br><br>$$ \\Rightarrow $$ $$\\left| z \\right| = \\left| {z - {1 \\over {\\sqrt 3 }}i} \\right|$$ ..........equation (1)\n<br><br>$$\\left| z \\right|$$ represent distance of $$z$$ from point (0, 0) and\n<br><br>$$\\left| {z - {1 \\over {\\sqrt 3 }}i} \\right|$$ represent distance of $$z$$ from point $$\\left( {0,{1 \\over {\\sqrt 3 }}} \\right)$$.\n<br><br>According to the equation (1) the distance of $$z$$ from point (0, 0) and $$\\left( {0,{1 \\over {\\sqrt 3 }}} \\right)$$ is equal. Only if z is on a straight line then it will be equal distance from the both the points.\n<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/9U9Fh0URP4SDcvKcK/MWBLvve80xYO19IP7fKY2TcwiUxoW/A4s0qXhuHL5WzzyZNFbBPy/image.svg\" loading=\"lazy\" alt=\"AIEEE 2005 Mathematics - Complex Numbers Question 195 English Explanation\">",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "UC6Gh9o9Zew8zAns",
@@ -804,6 +804,6 @@
     "difficulty": "medium",
     "solution": "Given $$\\,\\left| {{z^2} - 1} \\right| = {\\left| z \\right|^2} + 1$$,\n<br><br>By squaring both sides we get,\n<br><br>$${\\left| {{z^2} - 1} \\right|^2}$$ = $${\\left( {{{\\left| z \\right|}^2} + 1} \\right)^2}$$\n<br><br>$$ \\Rightarrow $$ $$\\left( {{z^2} - 1} \\right)$$$$\\overline {\\left( {{z^2} - 1} \\right)} $$ = $${\\left( {{{\\left| z \\right|}^2} + 1} \\right)^2}$$   [ as $${{{\\left| z \\right|}^2}}$$ = $$z\\overline z $$ ]\n<br><br>$$ \\Rightarrow $$ $$\\left( {{z^2} - 1} \\right)$$$$\\left( {{{\\left( {\\overline z } \\right)}^2} - 1} \\right)$$ = $${\\left( {{{\\left| z \\right|}^2} + 1} \\right)^2}$$\n<br><br>$$ \\Rightarrow $$ $${\\left( {z\\overline z } \\right)^2}$$ $$-$$ $${{z^2}}$$ $$-$$$${{{\\left( {\\overline z } \\right)}^2}}$$ $$+$$ 1 = $${\\left| z \\right|^4}$$ $$+$$ 2$${{{\\left| z \\right|}^2}}$$ $$+$$ 1\n<br><br>$$ \\Rightarrow $$ $${\\left| z \\right|^4}$$ $$-$$ $${{z^2}}$$ $$-$$$${{{\\left( {\\overline z } \\right)}^2}}$$ $$+$$ 1 = $${\\left| z \\right|^4}$$ $$+$$ 2$${{{\\left| z \\right|}^2}}$$ $$+$$ 1\n<br><br>$$ \\Rightarrow $$ $${{z^2}}$$ $$+$$$${{{\\left( {\\overline z } \\right)}^2}}$$ $$+$$ 2$${z\\overline z }$$ = 0\n<br><br>$$ \\Rightarrow $$ $${\\left( {z + \\overline z } \\right)^2}$$ = 0\n<br><br>$$ \\Rightarrow $$ $${z + \\overline z }$$ = 0\n<br><br>$$ \\Rightarrow $$ $$z$$ = $$-$$ $${\\overline z }$$\n<br><br>If $$z$$ = x + iy\n<br><br>then $${\\overline z }$$ = x - iy\n<br><br>$$\\therefore$$ x + iy = - (x - iy)\n<br><br>$$ \\Rightarrow $$ x + iy = - x + iy\n<br><br>$$ \\Rightarrow $$ x = 0\n<br><br>$$\\therefore$$ z is purely imaginary.\n<br><br>So, it is lie on the imaginary axis.",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

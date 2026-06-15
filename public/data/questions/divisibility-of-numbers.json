@@ -87,7 +87,7 @@
     "difficulty": "medium",
     "solution": "y + z = 5 ....... (1)<br><br>$${1 \\over y} + {1 \\over z} = {5 \\over 6}$$<br><br>$$ \\Rightarrow {{y + z} \\over {yz}} = {5 \\over 6}$$<br><br>$$ \\Rightarrow {5 \\over {yz}} = {5 \\over 6}$$<br><br>$$ \\Rightarrow $$ yz = 6<br><br>Also, (y $$-$$ z)<sup>2</sup> = (y + z)<sup>2</sup> $$-$$ 4yz<br><br>$$ \\Rightarrow $$ (y $$-$$ z)<sup>2</sup> = (y + z)<sup>2</sup> $$-$$ 4yz<br><br>$$ \\Rightarrow $$ (y $$-$$ z)<sup>2</sup> = 25 $$-$$ 4(6) = 1<br><br>$$ \\Rightarrow $$ y $$-$$ z = 1 ..... (2)<br><br>from (1) and (2), y = 3 and z = 2<br><br>for calculating odd divisor of p = 2<sup>x</sup> . 3<sup>y</sup> . 5<sup>z</sup><br><br>x must be zero<br><br>P = 2<sup>0</sup> . 3<sup>3</sup> . 5<sup>2</sup> <br><br>$$ \\Rightarrow $$ Total possible cases = (3<sup>0</sup>5<sup>0</sup> + 3<sup>1</sup>5<sup>0</sup> + 3<sup>2</sup>5<sup>0</sup> + 3<sup>3</sup>5<sup>0</sup> + .... + 3<sup>3</sup>5<sup>2</sup>)<br><br>$$ \\therefore $$ Total odd divisors must be (3 + 1) ( 2 + 1) = 12",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krygm1ew",
@@ -144,7 +144,7 @@
     "difficulty": "medium",
     "solution": "Here number should be divisible by 3, that means sum of numbers should be divisible by 3.\n<br><br>Possible 4 digits among 0, 1, 2, 3, 4 which are divisible by 3 are \n<br><br>(1)$$\\,\\,\\,\\,$$ (0, 2, 3, 4) Sum of digits = 0 + 2 + 3 +4 = 9 (divisible by 3)\n<br><br>(2) $$\\,\\,\\,\\,$$ (0, 1, 2, 3) Sum of digits = 0 + 1 + 2 + 3 = 6 (divisible by 3)\n<br><br><b><u>Case 1</u> :</b> \n<br><br>When 4 digits are (0, 2, 3, 4) then\n<br><br><img src=\"https://imagex.cdn.examgoal.net/3R4b82BWeqZkJMFfg/OxOYkm43wKbY12PT0KKtsriR1dki0/JRv8CIoiECylgeiXoiRy0b/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Online) 16th April Morning Slot Mathematics - Permutations and Combinations Question 194 English Explanation 1\"><br><br>$$\\therefore\\,\\,\\,\\,$$ Total possible numbers = $$^3{C_1}$$ $$ \\times $$ $$^3{C_1}$$ $$ \\times $$ $$^2{C_1}$$ $$ \\times $$ $$^1{C_1}$$ \n<br><br>= &nbsp;&nbsp; 3 $$ \\times $$ 3 $$ \\times $$ 2 $$ \\times $$ 1 = 18\n<br><br><b><u>Case 2</u> :</b>\n<br><br>When 4 digits are (0, 1, 2, 3) then, \n<br><br><img src=\"https://imagex.cdn.examgoal.net/JThhDwMLrnjaA0Bt2/Z6vxrizSej8NlbxwlIQl8omkfW1yn/4Mc5o3STh0mDlZa1JRqA19/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Online) 16th April Morning Slot Mathematics - Permutations and Combinations Question 194 English Explanation 2\">\n<br><br>$$\\therefore\\,\\,\\,\\,$$ Total possible number in this case = $$^2{C_1}$$ $$ \\times $$ $$^3{C_1}$$ $$ \\times $$ $$^2{C_1}$$ $$ \\times $$ $$^1{C_1}$$\n<br><br>= &nbsp;&nbsp; 2 $$ \\times $$ 3 $$ \\times $$ 2 $$ \\times $$ 1 = 12\n<br><br>$$\\therefore\\,\\,\\,\\,$$ Total possible numbers will be = 18 + 12 = 30 ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "38m7NMVKw7MZYgve",
@@ -166,6 +166,6 @@
     "difficulty": "easy",
     "solution": "According to this question, any number between 1 to 100 should be divisible by 2 or 5 but not by 2$$ \\times $$5 = 10.\n<br><br>Possible numbers between 1 to 100 divisible by 2 are 2, 4, 6, .... , 100\n<br><br>This is an A.P where first term = 2, last term = 100 and total terms = 50.\n<br><br>$$ \\therefore $$ Sum of the numbers divisible by 2\n<br><br> = $${{50} \\over 2}\\left[ {2 + 100} \\right]$$\n<br><br>= 25$$ \\times $$102\n<br><br>= 2550\n<br><br>Possible numbers between 1 to 100 divisible by 5 are 5, 10, 15, .... , 100\n<br><br>$$ \\therefore $$ Sum of the numbers divisible by 5\n<br><br> = $${{20} \\over 2}\\left[ {5 + 100} \\right]$$\n<br><br>= 10$$ \\times $$105\n<br><br>= 1050\n<br><br> And possible numbers between 1 to 100 divisible by 10 are 10, 20, 30, .... , 100\n<br><br>$$ \\therefore $$ Sum of the numbers divisible by 10\n<br><br> = $${{10} \\over 2}\\left[ {10 + 100} \\right]$$\n<br><br>= 5$$ \\times $$110\n<br><br>= 550\n<br><br>$$ \\therefore $$ Required sum = 2550 + 1050 - 550 = 3050",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

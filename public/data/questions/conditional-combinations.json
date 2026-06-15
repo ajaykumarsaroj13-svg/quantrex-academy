@@ -37,7 +37,7 @@
     "difficulty": "easy",
     "solution": "<p>To distribute 16 oranges to 4 children such that each child gets atleast one orange. \n<br/><br/>First distribute one orange to each child so that each child get atleast one. \n<br/><br/>Now, distribute remaining ( $\\mathrm{n}=12$ ) oranges to ( $\\mathrm{r}=4$ ) children using beggar's method $={ }^{n+r-1} C_{r-1}$</p>\n<p>$$ \\begin{aligned} & ={ }^{12+4-1} C_{4-1}={ }^{15} C_3 \\\\\\\\ & =\\frac{15 \\times 14 \\times 13}{3 \\times 2 \\times 1}=5 \\times 7 \\times 13=455 \\end{aligned} $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml8t8p8c",
@@ -76,7 +76,7 @@
     "difficulty": "medium",
     "solution": "<p>We need to count the number of ordered triples $(a,b,c)$ of non-negative integers satisfying</p>\n<p>$$ a+b+2c=22 $$</p>\n<p>Since $a,b,c \\ge 0$, let us fix $c$ first.</p>\n<p>For a fixed value of $c$, the equation becomes</p>\n<p>$$ a+b=22-2c $$</p>\n<p>Now, the number of non-negative integer solutions of</p>\n<p>$$ a+b=n $$</p>\n<p>is</p>\n<p>$$ n+1 $$</p>\n<p>So, for fixed $c$, number of solutions is</p>\n<p>$$ (22-2c)+1=23-2c $$</p>\n<p>Now find all possible values of $c$.</p>\n<p>Since $2c \\le 22$,</p>\n<p>$$ c=0,1,2,\\dots,11 $$</p>\n<p>Hence total number of solutions is</p>\n<p>$$ \\sum_{c=0}^{11} (23-2c) $$</p>\n<p>This is an arithmetic series:</p>\n<ul>\n<li><p>first term $=23$</p></li>\n<li><p>last term $=23-2(11)=1$</p></li>\n<li><p>number of terms $=12$</p></li>\n</ul>\n<p>So,</p>\n<p>$$ n(A)=\\frac{12}{2}(23+1) $$</p>\n<p>$$ n(A)=6 \\cdot 24=144 $$</p>\n<p>Therefore,</p>\n<p>$$ n(A)=144 $$</p>\n<p>So the correct option is:</p>\n<p>$$ \\boxed{144} $$</p>\n<p>Hence, $\\boxed{\\text{Option C}}$.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "MCQM"
   },
   {
     "id": "mnswhr28",
@@ -98,7 +98,7 @@
     "difficulty": "medium",
     "solution": "<p>Let us first understand the problem carefully. We are given a box containing:</p>\n<p>Total number of blue balls = $5$</p>\n<p>Total number of yellow balls = $6$</p>\n<p>Total number of red balls = $4$</p>\n<p>We need to draw a total of $8$ balls such that there are at least two balls of each colour. Let the number of blue, yellow, and red balls drawn be denoted by $b$, $y$, and $r$ respectively. </p>\n<p>According to the question, we have the following equation:</p>\n<p>$$b + y + r = 8$$</p>\n<p>Since we need at least $2$ balls of each colour, we must satisfy the conditions:</p>\n<p>$$b \\ge 2, y \\ge 2, \\text{ and } r \\ge 2$$</p>\n<p>Since $2+2+2 = 6$, we only need to decide how to distribute the remaining $2$ balls among the three colours. Let us list all the possible combinations for $(b, y, r)$:</p>\n<p><strong>Case 1:</strong> $4$ blue, $2$ yellow, $2$ red ($b=4, y=2, r=2$)</p>\n<p><strong>Case 2:</strong> $2$ blue, $4$ yellow, $2$ red ($b=2, y=4, r=2$)</p>\n<p><strong>Case 3:</strong> $2$ blue, $2$ yellow, $4$ red ($b=2, y=2, r=4$)</p>\n<p><strong>Case 4:</strong> $3$ blue, $3$ yellow, $2$ red ($b=3, y=3, r=2$)</p>\n<p><strong>Case 5:</strong> $3$ blue, $2$ yellow, $3$ red ($b=3, y=2, r=3$)</p>\n<p><strong>Case 6:</strong> $2$ blue, $3$ yellow, $3$ red ($b=2, y=3, r=3$)</p>\n<p>Now, we will find the number of ways for each case using the combinations formula $^nC_r = \\frac{n!}{r!(n-r)!}$.</p>\n<p><strong>1. Number of ways for Case 1:</strong></p>\n<p>$$^5C_4 \\times ^6C_2 \\times ^4C_2 = 5 \\times 15 \\times 6 = 450$$</p>\n<p><strong>2. Number of ways for Case 2:</strong></p>\n<p>$$^5C_2 \\times ^6C_4 \\times ^4C_2 = 10 \\times 15 \\times 6 = 900$$</p>\n<p><strong>3. Number of ways for Case 3:</strong></p>\n<p>$$^5C_2 \\times ^6C_2 \\times ^4C_4 = 10 \\times 15 \\times 1 = 150$$</p>\n<p><strong>4. Number of ways for Case 4:</strong></p>\n<p>$$^5C_3 \\times ^6C_3 \\times ^4C_2 = 10 \\times 20 \\times 6 = 1200$$</p>\n<p><strong>5. Number of ways for Case 5:</strong></p>\n<p>$$^5C_3 \\times ^6C_2 \\times ^4C_3 = 10 \\times 15 \\times 4 = 600$$</p>\n<p><strong>6. Number of ways for Case 6:</strong></p>\n<p>$$^5C_2 \\times ^6C_3 \\times ^4C_3 = 10 \\times 20 \\times 4 = 800$$</p>\n<p>To find the total number of ways to draw the $8$ balls satisfying the given conditions, we simply add the number of ways from all the above cases:</p>\n<p>$$\\text{Total ways} = 450 + 900 + 150 + 1200 + 600 + 800$$</p>\n<p>$$\\text{Total ways} = 4100$$</p>\n<p>Therefore, the total number of ways of drawing $8$ balls containing at least two balls of each colour is $4100$.</p>\n<p>Option A is the correct answer.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswhwf6",
@@ -137,7 +137,7 @@
     "difficulty": "medium",
     "solution": "<p>First, decide which $4$ out of the $9$ persons will get down together. The remaining $5$ persons are then fixed automatically.</p>\n<p>Number of ways to form the two groups of sizes $4$ and $5$ is $$\\frac{9!}{4!5!}=126$$</p>\n<p>Now, the lift does not stop at the $1^{\\text{st}}$ and $2^{\\text{nd}}$ floors. So people can get down only on floors $3$ to $10$, i.e., $8$ possible floors.</p>\n<p>Choose any $2$ different floors out of these $8$ floors for the two groups to exit: $${ }^8 \\mathrm{C}_2=28$$</p>\n<p>After choosing the two floors, we must decide which floor is for the group of $4$ and which floor is for the group of $5$. This can be done in $2$ ways.</p>\n<p>So, total number of ways is $$126 \\times 28 \\times 2=7056$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnswht26",
@@ -159,7 +159,7 @@
     "difficulty": "easy",
     "solution": "<p>From the word <strong>INCONSEQUENTIAL</strong>, let us first identify the vowels and consonants available.</p>\n<p>The letters are:</p>\n<p>$$ I, N, C, O, N, S, E, Q, U, E, N, T, I, A, L $$</p>\n<p>We have to form $4$-letter words containing:</p>\n<ul>\n<li><p>exactly $2$ vowels</p></li>\n<li><p>exactly $2$ consonants</p></li>\n<li><p>no letter repeated</p></li>\n</ul>\n<p>Since letters of the word may repeat in the original word, we count only <strong>distinct available letters</strong> for selection.</p>\n<h3>Step 1: Distinct vowels</h3>\n<p>The vowels present are:</p>\n<p>$$ A, E, I, O, U $$</p>\n<p>So, number of distinct vowels $= 5$.</p>\n<h3>Step 2: Distinct consonants</h3>\n<p>The consonants present are:</p>\n<p>$$ N, C, S, Q, T, L $$</p>\n<p>So, number of distinct consonants $= 6$.</p>\n<h3>Step 3: Choose 2 vowels and 2 consonants</h3>\n<p>Number of ways to choose $2$ vowels from $5$:</p>\n<p>$$ {}^5C_2 = 10 $$</p>\n<p>Number of ways to choose $2$ consonants from $6$:</p>\n<p>$$ {}^6C_2 = 15 $$</p>\n<p>So, total selections of letters:</p>\n<p>$$ {}^5C_2 \\times {}^6C_2 = 10 \\times 15 = 150 $$</p>\n<h3>Step 4: Arrange the 4 chosen letters</h3>\n<p>All 4 letters are distinct, so number of arrangements:</p>\n<p>$$ 4! = 24 $$</p>\n<p>Hence, total number of such 4-letter words is:</p>\n<p>$$ 150 \\times 24 = 3600 $$</p>\n<p>Therefore, the correct answer is:</p>\n<p>$$ \\boxed{3600} $$</p>\n<p>So, <strong>Option D</strong> is correct.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "mnsik5t2",
@@ -181,7 +181,7 @@
     "difficulty": "easy",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 8th April Evening Shift Mathematics - Permutations and Combinations Question 7 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mox7d0js/d1bd891e-1719-4300-b280-96c5287812a7/3ff86880-4b05-11f1-8ae6-6d0dc390027c/file-6y3zli1mox7d0jt.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mox7d0js/d1bd891e-1719-4300-b280-96c5287812a7/3ff86880-4b05-11f1-8ae6-6d0dc390027c/file-6y3zli1mox7d0jt.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Number of ways ( $\\boldsymbol{n}$ ) $=\\left({ }^4 C_2\\right) \\cdot\\left({ }^3 C_1\\right) \\cdot(2) \\cdot(1)=36$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml89h676",
@@ -203,7 +203,7 @@
     "difficulty": "medium",
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 21st January Morning Shift Mathematics - Permutations and Combinations Question 18 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mm0qlshu/36e4d64b-dcdb-42a0-9b4d-87deb2960d57/354be620-1192-11f1-991d-6b24cf51586e/file-jaoe38c1mm0qlshv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mm0qlshu/36e4d64b-dcdb-42a0-9b4d-87deb2960d57/354be620-1192-11f1-991d-6b24cf51586e/file-jaoe38c1mm0qlshv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Case (i) If $f(1)=2$ then ${ }^7 C_5$ functions</p>\n<p>Case (ii) $f(1)=3$ then ${ }^6 C_5$</p>\n<p>Case (iii) $f(1)=4$ then ${ }^5 C_5$</p>\n<p>$$ \\Rightarrow 21+6+1=28 $$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ml89h68i",
@@ -242,7 +242,7 @@
     "difficulty": "medium",
     "solution": "<p>First, note that we are choosing <strong>5 distinct letters</strong> (in strictly increasing alphabetical order) such that the <strong>middle (third) letter is ‘M’</strong>. Symbolically, if we denote the chosen letters as:</p>\n<p>$ L_1 < L_2 < L_3 < L_4 < L_5, $</p>\n<p>we want $L_3 = \\text{M}$. The English alphabet has 26 letters, and M is the $13^\\text{th}$.</p>\n<hr />\n<h3>Step 1: Letters before M</h3>\n\n<p><p>The letters before M are $\\{A, B, C, \\ldots, L\\}$.  </p></p>\n<p><p>There are <strong>12</strong> letters here ($A$ through $L$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 12 letters to occupy $L_1$ and $L_2$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 12 is ${ }^{12} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 2: Letters after M</h3>\n\n<p><p>The letters after M are $\\{N, O, P, \\ldots, Z\\}$.  </p></p>\n<p><p>There are <strong>13</strong> letters here ($N$ through $Z$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 13 letters to occupy $L_4$ and $L_5$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 13 is ${ }^{13} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 3: Multiply the choices</h3>\n<p>Since these choices are independent (picking the two letters before M and two letters after M), the total number of ways is:</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\;\\times\\;{ }^{13} \\mathrm{C}_2 $</p>\n<p>Calculate each combination:</p>\n<p>$ { }^{12} \\mathrm{C}_2 = \\frac{12 \\times 11}{2} = 66,  \\quad { }^{13} \\mathrm{C}_2 = \\frac{13 \\times 12}{2} = 78. $</p>\n<p>So,</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\times { }^{13} \\mathrm{C}_2 = 66 \\times 78 = 5148. $</p>\n<hr />\n<h2><strong>Answer: 5148</strong> (Option B)</h2>",
     "section": "A",
-    "type": "MCQ"
+    "type": "MCQM"
   },
   {
     "id": "m6v42xah",
@@ -264,7 +264,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7c21asa/a3efa841-34d8-481b-a497-aa3076bf21fd/497163a0-eed4-11ef-81d9-610d814056f7/file-jaoe38c1m7c21asb.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7c21asa/a3efa841-34d8-481b-a497-aa3076bf21fd/497163a0-eed4-11ef-81d9-610d814056f7/file-jaoe38c1m7c21asb.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 24th January Evening Shift Mathematics - Permutations and Combinations Question 33 English Explanation\"></p>\n<p>$$\\begin{array}{ll}\n\\text { C-I } &amp; (3 \\mathrm{G} \\&amp; 2 \\mathrm{~B}) \\&amp;(1 \\mathrm{G} \\&amp; 2 \\mathrm{~B}) \\\\\n\\text { C-II } &amp; (2 \\mathrm{G} \\&amp; 3 \\mathrm{~B}) \\&amp;(2 \\mathrm{G} \\&amp; 1 \\mathrm{~B}) \\\\\n\\text { C-III } &amp; (1 \\mathrm{G} \\&amp; 4 \\mathrm{~B}) \\&amp;(3 \\mathrm{G} \\&amp; 0 \\mathrm{~B})\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\text { Total }=\\text { C-I }+ \\text { C-II }+ \\text { C-III } \\\\\n&amp; ={ }^7 \\mathrm{C}_2 \\cdot{ }^3 \\mathrm{C}_3 \\cdot{ }^6 \\mathrm{C}_2 \\cdot{ }^5 \\mathrm{C}_1+{ }^7 \\mathrm{C}_3 \\cdot{ }^3 \\mathrm{C}_2 \\cdot{ }^6 \\mathrm{C}_1{ }^5 \\mathrm{C}_2+{ }^7 \\mathrm{C}_4 \\cdot{ }^3 \\mathrm{C}_1 \\cdot{ }^6 \\mathrm{C}_0 \\cdot{ }^5 \\mathrm{C}_3 \\\\\n&amp; =8925\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6qgods0",
@@ -286,7 +286,7 @@
     "difficulty": "medium",
     "solution": "<p>(i) number of numbers created using</p>\n<p>$$1111133=\\frac{7!}{5!2!} \\Rightarrow 21$$</p>\n<p>(ii) number of numbers created using</p>\n<p>$$1111223=\\frac{7!}{4!2!} \\Rightarrow 105$$</p>\n<p>(iii) number of numbers created using</p>\n<p>$$\\begin{aligned}\n& 1112222=\\frac{7!}{4!3!} \\Rightarrow 35 \\\\\n& \\text { Total }=161\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j5wn",
@@ -308,7 +308,7 @@
     "difficulty": "easy",
     "solution": "<p>1 Captain, 1 vice-captain are already present</p>\n<p>$\\Rightarrow$ We need to select 8 players such that atleast 3 batsman and bowler must be there</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}\n.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 506px\"><colgroup>\n<col style=\"width: 165px\">\n<col style=\"width: 129px\">\n<col style=\"width: 212px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-7btt\">Batsman</th>\n    <th class=\"tg-7btt\">Bowler</th>\n    <th class=\"tg-7btt\">Number of ways</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-c3ow\">3</td>\n    <td class=\"tg-c3ow\">5</td>\n    <td class=\"tg-c3ow\">${ }^6 C_3 \\cdot{ }^5 C_5=20$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">4</td>\n    <td class=\"tg-c3ow\">4</td>\n    <td class=\"tg-c3ow\">${ }^6 C_4 \\cdot{ }^5 C_4=75$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-c3ow\">5</td>\n    <td class=\"tg-c3ow\">3</td>\n    <td class=\"tg-c3ow\">${ }^6 C_5 \\cdot{ }^5 C_3=60$</td>\n  </tr>\n</tbody>\n</table></p>\n<p>Total = 155 ways</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lwoi5yal",
@@ -348,7 +348,7 @@
     "difficulty": "medium",
     "solution": "<p>To solve this problem, we can use a classic combinatorics method known as \"stars and bars\" (or \"balls and bins\"), which is a way to solve problems involving distributing identical items into distinct groups with certain restrictions.</p>\n\n<p>First, since each child must get at least 2 apples, let's give 2 apples to each child right away. That accounts for 6 apples (2 apples for each of the 3 children). Now, we have 21 - 6 = 15 apples left to distribute freely among the three children.</p>\n\n<p>The \"stars and bars\" technique involves representing the apples as stars (*) and the divisions between children as bars (|). For example, if we had 5 apples to distribute among three children, one possible distribution could be represented as **|*|**. This means the first child gets 2 apples, the second child gets 1 apple, and the third child gets 2 apples.</p>\n\n<p>In our case, we need to distribute 15 apples (stars) among the three children with 2 bars to create the partitions. We arrange 15 stars and 2 bars in a row, where the arrangement of stars and bars corresponds to a distribution of the apples.</p>\n\n<p>The total number of objects we're arranging is 15 apples + 2 bars = 17 objects. We need to choose 2 positions out of these 17 to place the bars. The remaining positions will be occupied by the stars (apples).</p>\n\n<p>The number of ways to choose 2 positions out of 17 for the bars is given by the binomial coefficient:</p>\n\n$$\n\\text{Number of ways} = \\binom{17}{2} = \\frac{17!}{2!(17-2)!} = \\frac{17 \\times 16}{2 \\times 1} = 136\n$$\n\n<p>Thus, there are 136 ways to distribute the 21 identical apples among three children such that each child gets at least 2 apples. The correct answer is Option B: 136.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv3ve4dd",
@@ -370,7 +370,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& 2 M \\\\\n& 2 A \\\\\n& 2 T \\\\\n& H, E, I, C, S\n\\end{aligned}$$</p>\n<p>Case-I</p>\n<p>2 Alike 2 Alike 1 Diff</p>\n<p>$${ }^3 C_2 \\times{ }^6 C_1=18$$</p>\n<p>Case-II</p>\n<p>2 Alike + 3 Diff</p>\n<p>$${ }^3 C_1 \\times{ }^7 C_3=105$$</p>\n<p>Case-III</p>\n<p>All different</p>\n<p>$${ }^8 C_5=56$$</p>\n<p>Total ways $$=179$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "luxweoza",
@@ -409,7 +409,7 @@
     "difficulty": "medium",
     "solution": "We have, $x+y+z=15$\n<br/><br/>$$\n\\begin{aligned}\n\\text { Total number of solution } & ={ }^{15+3-1} C_{3-1} \\\\\\\\\n& ={ }^{17} C_2=\\frac{17 \\times 16}{1 \\times 2}=136\n\\end{aligned}\n$$\n<br/><br/>Now, we need to exclude the solutions where two of $(x, y, z)$ are the same.\n\n<br/><br/>1) For the case $x = y \\neq z$ :\n<br/><br/>$ 2x + z = 15 $\n<br/><br/>The solutions are :\n<br/><br/>$ x = 0, z = 15 $\n<br/><br/>$ x = 1, z = 13 $\n<br/><br/>$ x = 2, z = 11 $\n<br/><br/>$ x = 3, z = 9 $\n<br/><br/>$ x = 4, z = 7 $\n<br/><br/>$ x = 5, z = 5 $ (Not valid as all are the same)\n<br/><br/>$ x = 6, z = 3 $\n<br/><br/>$ x = 7, z = 1 $\n<br/><br/>Out of these, 7 are valid.\n\n<br/><br/>Similarly, for the cases $y = z \\neq x$ and $z = x \\neq y$, there will be 7 valid solutions for each, so a total of $ 7 \\times 3 = 21 $ solutions where two of the variables are equal.\n\n<br/><br/>Thus, the number of triplets where all are distinct is :\n<br/><br/>$ 136 - 21 = 115 $\n<br/><br/>There is one solution in which $\\mathrm{x}=\\mathrm{y}=\\mathrm{z}$\n<br/><br/>Required answer $=136-21-1=114$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lgq0urew",
@@ -465,7 +465,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1le5h0vkb/6ab5456d-64a1-4237-89f3-e400627057ab/241652a0-ad13-11ed-8a8c-4d67f5492755/file-1le5h0vkc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1le5h0vkb/6ab5456d-64a1-4237-89f3-e400627057ab/241652a0-ad13-11ed-8a8c-4d67f5492755/file-1le5h0vkc.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 24th January Evening Shift Mathematics - Permutations and Combinations Question 88 English Explanation\"></p>\n<p>$\\because$ In every row and every column there would be exactly one 1 and four zeroes.\n<br><br>\nNumber of matrices $={ }^{5} C_{1} \\cdot{ }^{4} C_{1} \\cdot{ }^{3} C_{1} \\cdot{ }^{2} C_{1} \\cdot{ }^{1} C_{1}=$ 120</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldyc2w6e",
@@ -538,7 +538,7 @@
     "difficulty": "easy",
     "solution": "<p>Number divisible by 3 = 300</p>\n<p>Number divisible by 4 = 225</p>\n<p>Number divisible by 12 = 75</p>\n<p>Number divisible by 48 = 18</p>\n<p>Total required number = 300 + 225$$-$$ 75 $$-$$ 18 = 432</p>\n<p>$$\\therefore$$ Option (1) is correct.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ldqvb3cg",
@@ -560,7 +560,7 @@
     "difficulty": "medium",
     "solution": "<p>$$a+b=23\\lambda+2$$</p>\n<p>$$\\lambda=0,1,2,$$ ...., but $$\\lambda$$ cannot be even as $$a+b$$ is odd</p>\n<p>$$\\lambda=1$$ $$(a, b)\\to12$$ pairs</p>\n<p>$$\\lambda=3$$ $$(a,b)\\to35$$ pairs</p>\n<p>$$\\lambda=5$$ $$(a,b)\\to42$$ pairs</p>\n<p>$$\\lambda=7$$ $$(a,b)\\to19$$ pairs</p>\n<p>$$\\lambda=9$$ $$(a,b)\\to0$$ pairs</p>\n<p>$$ \\vdots $$</p>\n<p>Total $$=12+35+42+19=108$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "MCQM"
   },
   {
     "id": "1lh245n1s",
@@ -684,7 +684,7 @@
     "difficulty": "medium",
     "solution": "<p>By multinomial theorem, no. of ways to distribute 30 identical candies among four children C<sub>1</sub>, C<sub>2</sub> and C<sub>3</sub>, C<sub>4</sub></p>\n<p>= Coefficient of x<sup>30</sup> in (x<sup>4</sup> + x<sup>5</sup> + .... + x<sup>7</sup>) (x<sup>2</sup> + x<sup>3</sup> + .... + x<sup>6</sup>) (1 + x + x<sup>2</sup> ....)<sup>2</sup></p>\n<p>= Coefficient of x<sup>24</sup> in $${{(1 - {x^4})} \\over {1 - x}}{{(1 - {x^5})} \\over {1 - x}}{{{{(1 - {x^{31}})}^2}} \\over {{{(1 - x)}^2}}}$$</p>\n<p>= Coefficient of x<sup>24</sup> in $$(1 - {x^4} - {x^5} + {x^9}){(1 - x)^{ - 4}}$$</p>\n<p>$$ = {}^{27}{C_{24}} - {}^{23}{C_{20}} - {}^{22}{C_{19}} + {}^{18}{C_{15}} = 430$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "l7gb0s6q",
@@ -707,7 +707,7 @@
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lf7f1wc5/b74dc1cb-8196-490e-a64f-6d45978148f9/36e9e250-c1f1-11ed-bda4-d9fc3ff06de6/file-1lf7f1wc6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lf7f1wc5/b74dc1cb-8196-490e-a64f-6d45978148f9/36e9e250-c1f1-11ed-bda4-d9fc3ff06de6/file-1lf7f1wc6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2022 Paper 2 Online Mathematics - Permutations and Combinations Question 9 English Explanation\">\n<br><b>Case 1 :</b>\n<br><br>Among four bags from one bag 4 balls are taken. Number of ways of chosing one bag from 4 bags = $${}^4{C_1}$$\n<br><br>From this bag number of ways of taking 4 balls are\n<br><br>(a) 3 Red and 1 Blue balls, which can be chosen in $${}^3{C_3} \\times {}^2{C_1}$$ ways.\n<br><br>(b) 2 Red and 2 Blue balls, which can be chosen in $${}^3{C_2} \\times {}^2{C_2}$$ ways.\n<br><br>$$ \\therefore $$ Total number of ways of choosing this 4 balls from this bag =  $${}^4{C_1}$$$$\\left( {{}^3{C_3} \\times {}^2{C_1} + {}^3{C_2} \\times {}^2{C_2}} \\right)$$\n<br><br>Now, two balls are taken from remaining three bags.\n<br><br>From each bag two balls can be taken in $${{}^3{C_1} \\times {}^2{C_1}}$$ ways.\n<br><br>So, for three bags two balls can be taken in $${\\left( {{}^3{C_1} \\times {}^2{C_1}} \\right)^3}$$ ways.\n<br><br>$$ \\therefore $$ Total number of ways of chosing 10 balls from these four bags\n<br><br>= $${}^4{C_1}$$$$\\left( {{}^3{C_3} \\times {}^2{C_1} + {}^3{C_2} \\times {}^2{C_2}} \\right)$$ $$ \\times $$ $${\\left( {{}^3{C_1} \\times {}^2{C_1}} \\right)^3}$$\n<br><br><b>Case 2 :</b>\n<br><br>Among four bags from two bags 3 balls are taken. Number of ways of chosing two bags from 4 bags = $${}^4{C_2}$$\n<br><br>From each bag, number of ways of taking 3 balls are\n<br><br>(a) 2 Red and 1 Blue balls, which can be chosen in $${}^3{C_2} \\times {}^2{C_1}$$ ways.\n<br><br>(b) 1 Red and 2 Blue balls, which can be chosen in $${}^3{C_1} \\times {}^2{C_2}$$ ways.\n<br><br>So, for two bags three balls can be taken in $${\\left( {{}^3{C_2} \\times {}^2{C_1} + {}^3{C_1} \\times {}^2{C_2}} \\right)^2}$$ ways.\n<br><br>$$ \\therefore $$ Total number of ways of choosing this 3 balls from this two bags =  $${}^4{C_2}$$$${\\left( {{}^3{C_2} \\times {}^2{C_1} + {}^3{C_1} \\times {}^2{C_2}} \\right)^2}$$\n<br><br>Now, two balls are taken from remaining two bags.\n<br><br>From each bag two balls can be taken in $${{}^3{C_1} \\times {}^2{C_1}}$$ ways.\n<br><br>So, for two bags two balls can be taken in $${\\left( {{}^3{C_1} \\times {}^2{C_1}} \\right)^2}$$ ways.\n<br><br>$$ \\therefore $$ Total number of ways of chosing 10 balls from these four bags\n<br><br>= $${}^4{C_2}$$$${\\left( {{}^3{C_2} \\times {}^2{C_1} + {}^3{C_1} \\times {}^2{C_2}} \\right)^2}$$ $$ \\times $$ $${\\left( {{}^3{C_1} \\times {}^2{C_1}} \\right)^2}$$\n<br><br>From Case 1 and Case 2, total number of ways of chosing 10 balls from these 4 boxes so that from each box at least one red ball and one blue ball are chosen\n<br><br>= $${}^4{C_1}$$$$\\left( {{}^3{C_3} \\times {}^2{C_1} + {}^3{C_2} \\times {}^2{C_2}} \\right)$$ $$ \\times $$ $${\\left( {{}^3{C_1} \\times {}^2{C_1}} \\right)^3}$$\n<br><br>+ $${}^4{C_2}$$$${\\left( {{}^3{C_2} \\times {}^2{C_1} + {}^3{C_1} \\times {}^2{C_2}} \\right)^2}$$ $$ \\times $$ $${\\left( {{}^3{C_1} \\times {}^2{C_1}} \\right)^2}$$\n<br><br>$$\n\\begin{aligned}\n&amp; =4(5)(6)^3+6(3 \\times 2+3)^2(6)^2 \\\\\\\\\n&amp; =4320+17496 \\\\\\\\\n&amp; =21816\n\\end{aligned}\n$$",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krq1dvgf",
@@ -763,7 +763,7 @@
     "difficulty": "medium",
     "solution": "Given,<br/><br/>Number of Indians = 6<br/><br/>Number of foreigners = 8<br/><br/>Committee of at least 2 Indians and double number of foreigners is to be formed. Hence, the required cases are<br/><br/>(2I, 4F) + (3I, 6F) + (4I, 8F)<br/><br/>= $${}^6{C_2} \\times {}^8{C_4} + {}^6{C_3} \\times {}^8{C_6} + {}^6{C_4} \\times {}^8{C_8}$$<br/><br/>= (15 $$\\times$$ 70) + (20 $$\\times$$ 28) + (15 $$\\times$$ 1)<br/><br/>= 1050 + 560 + 15 = 1625",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "OtCzg7Sq3gsThouMtK1kls4fv1n",
@@ -785,7 +785,7 @@
     "difficulty": "medium",
     "solution": "$$x.y.z = 24$$<br><br>$$x.y.z = {2^3}.\\,{3^1}$$<br><br>Three 2 has to be distributed among x, y and z<br><br>Each may receive none, one or two<br><br>$$\\therefore$$ Number of ways = $${}^{3 + 3 - 1}{C_{3 - 1}}$$ = $$^5{C_2}$$ ways<br><br>Similarly one 3 has to be distributed among x, y and z<br><br>$$ \\therefore $$ Number of ways = $${}^{1 + 3 - 1}{C_{3 - 1}}$$ = $$^3{C_2}$$ ways<br><br>Total ways = $$^5{C_2}\\,.{\\,^3}{C_2}$$ = 30",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krw30swu",
@@ -824,7 +824,7 @@
     "difficulty": "medium",
     "solution": "(I) First possibility is 1, 1, 1, 1, 1, 2, 3<br><br>required number = $${{7!} \\over {5!}}$$ = 7 $$\\times$$ 6 = 42<br><br>(II) Second possibility is 1, 1, 1, 1, 2, 2, 2<br><br>required number = $${{7!} \\over {4!3!}} = {{7 \\times 6 \\times 5} \\over 6} = 35$$<br><br>Total = 42 + 35 = 77",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktgp4gdp",
@@ -899,7 +899,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/jgy2xukh0h5w3g/83226be6-e0cb-4bc2-a557-a07f6be12bf6/a0cb0fc0-1d00-11eb-8293-3b6cc591631c/file-jgy2xukh0h5w3h-300w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 5th September Evening Slot Mathematics - Permutations and Combinations Question 160 English Explanation\">\n<br><br>$$ \\therefore $$ Total number of selection of 5 questions\n<br><br>= $$\\left( {{}^5{C_1}.{}^5{C_2}.{}^5{C_2}} \\right)$$$$ \\times $$3 + $$\\left( {{}^5{C_1}.{}^5{C_1}.{}^5{C_3}} \\right)$$ $$ \\times $$ 3\n<br><br>= 5 $$ \\times $$10$$ \\times $$10$$ \\times $$3 + 5$$ \\times $$5$$ \\times $$10$$ \\times $$3\n<br><br>= 2250",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "dGIKlgBoeVJkXafbxljgy2xukfjjsiul",
@@ -938,7 +938,7 @@
     "difficulty": "medium",
     "solution": "Given that 5 Boy, n girls.<br><br>\n(1B, 2G) + (2B, 1G)<br><br>\n$${}^5{C_1}.{}^n{C_2} + {}^5{C_2}.{}^n{C_1} = 1750$$<br><br>\n$$ \\Rightarrow 5.{{n\\left( {n - 1} \\right)} \\over 2} + 10.n = 1750$$<br><br>\n$$ \\Rightarrow {{n\\left( {n - 1} \\right)} \\over 2} + 2n = 350$$<br><br>\n$$ \\Rightarrow {n^2} - n + 4n = 700$$<br><br>\n$$ \\Rightarrow {n^2} + 3n - 700 = 0$$<br><br>\n$$ \\Rightarrow (n + 28)(n - 25) = 0$$<br><br>\n$$ \\Rightarrow  n = 25, -28$$\n",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "ynFU9TI4bBJDhzTbt7TZv",
@@ -960,7 +960,7 @@
     "difficulty": "easy",
     "solution": "At least 6 males means in the committee there can be 6 males or 7 males or 8 males.\n<br><br>$$ \\therefore $$ m = $${}^8{C_6} \\times {}^5{C_5} + {}^8{C_7} \\times {}^5{C_4} + {}^8{C_8} \\times {}^5{C_3}$$ = 78\n<br><br>At least 3 females means in the committee there can be 3 females or 4 females or 5 females.\n<br><br>$$ \\therefore $$ n = $${}^5{C_3} \\times {}^8{C_8} + {}^5{C_4} \\times {}^8{C_7} + {}^5{C_5} \\times {}^8{C_6}$$ = 78\n<br><br>So, m = n = 78",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "CcpStCuUJqkQIn23GBxDt",
@@ -982,7 +982,7 @@
     "difficulty": "medium",
     "solution": "From 5 girls 2 girls can be selected \n<br><br>= <sup>5</sup>C<sub>2</sub> ways\n<br><br>From 7 boys 3 boys can be selected \n<br><br>= <sup>7</sup>C<sub>3</sub> way\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Total number of ways we can select 2 girls and 3 boys \n<br><br>= <sup>5</sup>C<sub>2</sub> $$ \\times $$ <sup>7</sup>C<sub>3</sub> ways \n<br><br>When two boys A and B are chosen in a team then one more boy will be chosen from remaining 5 boys.\n<br><br>So, no of ways 3 boys can be chosen when A and B should must be chosen = <sup>5</sup>C<sub>1</sub> ways\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Total number of ways a team of 2 girl and 3 boys can be made where boy A and B must be in the team = <sup>5</sup><sup></sup>C<sub>1</sub> $$ \\times $$ <sup>5</sup>C<sub>2</sub> ways\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Required number of ways \n<br>= Total number of ways $$-$$ when A and B are always included. \n<br><br>= <sup>5</sup>C<sub>2</sub>  $$ \\times $$ <sup>7</sup>C<sub>3</sub> $$-$$ <sup>5</sup>C<sub>1</sub> $$ \\times $$ <sup>5</sup>C<sub>2</sub>\n<br><br>= 300",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "68eL7mevJEJepJxp",
@@ -1005,7 +1005,7 @@
     "solution": "We have 6 girls and 4 boys in the club and we have to select team of 4 members in which one is captain and at most one boy.<br/><br/>\n$\\therefore$ We can have one boy and three girls in team or all four girls.\nSo, selection of 1 boy from 4 boys $={ }^4 C_1$ ways<br/><br/>\nSelection of 3 girls from 6 girls $={ }^6 \\mathrm{C}_3$ ways<br/><br/>\nSelection of 4 girls from 6 girls $={ }^6 \\mathrm{C}_4$ ways<br/><br/>\n$\\therefore$ Total number of ways selecting the team\n$$\n=\\left({ }^4 \\mathrm{C}_1 \\cdot{ }^6 \\mathrm{C}_3+{ }^6 \\mathrm{C}_4\\right) \\times 4\n$$<br/><br/>\n(since, among any of the selection we have 4 choice to select captain)<br/><br/>\n$$\n\\begin{aligned}\n\\therefore \\text { Total number of ways } & =(4 \\times 20+15) \\times 4 \\\\\\\\\n& =380\n\\end{aligned}\n$$",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Ya9LDYYS0XiNoh28",
@@ -1027,6 +1027,6 @@
     "difficulty": "easy",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/W9jMneou2LA59KD7s/qkg7AQFXs0qUBfDIyMHU6G6ZkO4Mu/kY8VNthUmgzORwBx2yMlW3/image.png\" loading=\"lazy\" alt=\"AIEEE 2003 Mathematics - Permutations and Combinations Question 216 English Explanation\">\n<br><br><b>Case 1 :</b>\n<br><br>No of ways student can answer 10 questions = $${}^5{C_4} \\times {}^8{C_6}$$ = 140\n<br><br><b>Case 2 :</b>\n<br><br>No of ways student can answer 10 questions = $${}^5{C_5} \\times {}^8{C_5}$$ = 56\n<br><br>$$\\therefore$$ Total ways = 140 + 56 = 196",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]

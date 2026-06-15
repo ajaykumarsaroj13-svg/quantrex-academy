@@ -59,7 +59,7 @@
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} & \\mathrm{A}=\\left[\\begin{array}{ll} 1 & 2 \\\\ 1 & \\alpha \\end{array}\\right] \\\\ & \\mathrm{A}^2-4 \\mathrm{~A}+\\mathrm{I}=0 \\end{aligned} $$</p>\n<p>trace of matrix</p>\n<p>$$ \\begin{aligned} & \\alpha+1=4 \\\\ & \\alpha=3 \\\\ & \\mathrm{~B}=\\left[\\begin{array}{ll} 3 & 3 \\\\ \\beta & 2 \\end{array}\\right] \\\\ & \\mathrm{B}^2-5 \\mathrm{~B}-6 \\mathrm{I}=0 \\end{aligned} $$</p>\n<p>$\\begin{aligned} & \\operatorname{det} .(B)=6-3 \\beta=-6 \\\\ & 3 \\beta=12 \\\\ & \\beta=4 \\\\ & B-A=\\left[\\begin{array}{cc}2 & 1 \\\\ 3 & -1\\end{array}\\right] ; B+A=\\left[\\begin{array}{ll}4 & 5 \\\\ 5 & 5\\end{array}\\right] \\\\ & (B-A)(B+A)=\\left[\\begin{array}{cc}13 & 15 \\\\ 7 & 10\\end{array}\\right] \\\\ & \\operatorname{adj}(A)=\\left[\\begin{array}{cc}3 & -2 \\\\ -1 & 1\\end{array}\\right], \\operatorname{adjB}=\\left[\\begin{array}{cc}2 & -3 \\\\ -4 & 3\\end{array}\\right] \\\\ & \\operatorname{adj}(A+B)=\\left[\\begin{array}{cc}5 & -5 \\\\ -5 & 4\\end{array}\\right]\\end{aligned}$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m6t9xsr8",
@@ -81,7 +81,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\text { Let } A=\\left[\\begin{array}{lll}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23} \\\\\na_{31} & a_{32} & a_{33}\n\\end{array}\\right] \\\\\n& A\\left[\\begin{array}{l}\n0 \\\\\n1 \\\\\n0\n\\end{array}\\right]=\\left[\\begin{array}{l}\n0 \\\\\n0 \\\\\n1\n\\end{array}\\right] \\Rightarrow\\left[\\begin{array}{l}\na_{12} \\\\\na_{22} \\\\\na_{32}\n\\end{array}\\right]=\\left[\\begin{array}{l}\n0 \\\\\n1 \\\\\n0\n\\end{array}\\right] \\Rightarrow \\begin{array}{l}\na_{22}=0 ; a_{12}=0 \\\\\na_{32}=1\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\nA\\left[\\begin{array}{l}\n4 \\\\\n1 \\\\\n3\n\\end{array}\\right]=\\left[\\begin{array}{l}\n0 \\\\\n1 \\\\\n0\n\\end{array}\\right] \\Rightarrow \\begin{array}{l}\n4 a_{11}+a_{12}+3 a_{13}=0 \\\\\n4 a_{21}+a_{22}+3 a_{23}=1 \\Rightarrow 4 a_{21}+3 a_{23}=1 \\\\\n4 a_{31}+a_{32}+3 a_{33}=0\n\\end{array} \\\\\nA\\left[\\begin{array}{l}\n2 \\\\\n1 \\\\\n2\n\\end{array}\\right]=\\left[\\begin{array}{l}\n1 \\\\\n0 \\\\\n0\n\\end{array}\\right] \\Rightarrow \\begin{array}{l}\n2 a_{11}+a_{12}+2 a_{13}=1 \\\\\n2 a_{21}+a_{22}+2 a_{23}=0 \\Rightarrow a_{21}+a_{23}=0 \\\\\n2 a_{31}+a_{32}+2 a_{33}=0\n\\end{array} \\\\\n-4 a_{23}+3 a_{23}=1 \\Rightarrow a_{23}=-1\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j148",
@@ -103,7 +103,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& A^2(A-2 I)-4(A-I)=0 \\\\\n& A^3-2 A^2-4 A+4 I=0\n\\end{aligned}$$</p>\n<p>Multiply by $A$</p>\n<p>$$\\begin{aligned}\n& A^4=2 A^3+4 A^2-4 A \\\\\n& A^4=2\\left(2 A^2+4 A-4 I\\right)+4 A^2-4 A \\\\\n& A^4=8 A^2+4 A-8 I\n\\end{aligned}$$</p>\n<p>Multiply again by $A$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow A^5=8 A^3+4 A^2-8 A \\\\\n& \\Rightarrow A^5=8\\left(2 A^2+4 A-4 I\\right)+4 A^2-8 A \\\\\n& \\Rightarrow A^5=20 A^2+24 A-32 I\n\\end{aligned}$$</p>\n<p>Comparing with $A^5=\\alpha A^2+\\beta A+\\gamma I$</p>\n<p>$$\\begin{aligned}\n& \\alpha=20, \\beta=24, \\gamma=-32 \\\\\n& \\therefore \\alpha+\\beta+\\gamma=20+24-32 \\\\\n& =44-32 \\\\\n& =12\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9dunndi",
@@ -125,7 +125,7 @@
     "difficulty": "medium",
     "solution": "<p>Let $|A|=0 \\Rightarrow \\alpha \\beta-(-6)=0 \\Rightarrow \\alpha \\beta=-6$ and $\\alpha+\\beta=1 \\Rightarrow \\alpha \\beta$ are roots of the equation</p>\n<p>$$\\begin{aligned}\n& x^2-x-6=0 \\Rightarrow x=3,-2 . \\text { Since } \\alpha>0 \\\\\n& \\Rightarrow \\quad \\alpha=3, \\beta=-2 \\\\\n& \\Rightarrow \\quad A=\\left[\\begin{array}{ll}\n3 & -1 \\\\\n6 & -2\n\\end{array}\\right] \\Rightarrow I+A=\\left[\\begin{array}{ll}\n4 & -1 \\\\\n6 & -1\n\\end{array}\\right] \\\\\n& (I+A)^2=\\left[\\begin{array}{ll}\n10 & -3 \\\\\n18 & -5\n\\end{array}\\right] \\Rightarrow(I+A)^4=\\left[\\begin{array}{ll}\n46 & -15 \\\\\n90 & -29\n\\end{array}\\right] \\\\\n& \\Rightarrow \\quad(I+A)^8=\\left[\\begin{array}{cc}\n766 & -255 \\\\\n1530 & -509\n\\end{array}\\right]\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9fnusgt",
@@ -147,7 +147,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& A=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n1 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{array}\\right] \\\\\n& A^2=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n1 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{array}\\right]\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n1 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{array}\\right]=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n1 & 1 & 0 \\\\\n1 & 0 & 1\n\\end{array}\\right] \\\\\n& A^3=A+A^2-I \\\\\n& A^3=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n2 & 0 & 1 \\\\\n1 & 1 & 0\n\\end{array}\\right] \\\\\n& A^4=A^2+A^2-I=2 A^2-I \\\\\n& A^4=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n2 & 1 & 0 \\\\\n2 & 0 & 1\n\\end{array}\\right] \\text { and } A^5=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n3 & 0 & 1 \\\\\n2 & 1 & 0\n\\end{array}\\right] \\\\\n& A^{50}=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n25 & 1 & 0 \\\\\n25 & 0 & 1\n\\end{array}\\right]\n\\end{aligned}\\\\\n&\\text { Sum of elements }=53\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "m9e5j7aw",
@@ -186,7 +186,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n\\left|\\mathrm{P}^{-1} \\mathrm{AP}-2 \\mathrm{I}\\right| & =\\left|\\mathrm{P}^{-1} \\mathrm{AP}-2 \\mathrm{P}^{-1} \\mathrm{P}\\right| \\\\\n& =\\left|\\mathrm{P}^{-1}(\\mathrm{~A}-2 \\mathrm{I}) \\mathrm{P}\\right| \\\\\n& =\\left|\\mathrm{P}^{-1}\\right||\\mathrm{A}-2 \\mathrm{I}||\\mathrm{P}| \\\\\n& =|\\mathrm{A}-2 \\mathrm{I}| \\\\\n& =\\left|\\begin{array}{ccc}\n0 & 1 & 2 \\\\\n6 & 0 & 11 \\\\\n3 & 3 & 0\n\\end{array}\\right|=69\n\\end{aligned}$$</p>\n<p>So, Prime factor of 69 is 3 & 23</p>\n<p>So, sum = 26</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "lv5grw76",
@@ -208,7 +208,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& |A-\\lambda I|=0 \\\\\n& \\left|\\begin{array}{ccc}\n2-\\lambda & a & 0 \\\\\n1 & 3-\\lambda & 1 \\\\\n0 & 5 & b-\\lambda\n\\end{array}\\right|=0 \\\\\n& (2-\\lambda)[(3-\\lambda)(b-\\lambda)-5]-a[b-\\lambda-0]+0=0 \\\\\n& (2-\\lambda)\\left[3 b-3 \\lambda-b \\lambda+\\lambda^2-5\\right]-a b+a \\lambda=0 \\\\\n& \\lambda^3-(b+5) \\lambda^2+(1-a+5 b) \\lambda+(10-6 b+a b)=0 \\\\\n& A^3-(b+5) A^2+(1-a+5 b) A+(10-6 b+a b) I=0 \\\\\n& \\Rightarrow \\mathrm{b}+5=4,1-a+5 b=1,10-6 b+a b=21 \\\\\n& \\Rightarrow a=-5, b=-1 \\\\\n& \\Rightarrow 2 a+3 b=-13\n\\end{aligned}$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lguwckg8",
@@ -247,7 +247,7 @@
     "difficulty": "medium",
     "solution": "Given : $A^{2}+B=A^{2} B\\quad...(i)$\n<br/><br/>\n$\\Rightarrow A^{2}+B-I=A^{2} B-I$\n<br/><br/>\n$\\Rightarrow A^{2} B-A^{2}-B+I=I$\n<br/><br/>\n$\\Rightarrow A^{2}(B-I)-I(B-I)=I$\n<br/><br/>\n$\\Rightarrow\\left(A^{2}-I\\right)(B-I)=I$\n<br/><br/>\n$\\therefore A^{2}-I$ is the inverse matrix of $B-I$ and vice versa.\n<br/><br/>\nSo, $(B-I)\\left(A^{2}-I\\right)=I$\n<br/><br/>\n$\\Rightarrow B A^{2}-B-A^{2}+I=I$\n<br/><br/>\n$\\therefore A^{2}+B=B A^{2} \\quad...(ii)$\n<br/><br/>\nSo, by (i) and (ii)\n<br/><br/>\n$A^{2} B=B A^{2}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ldsuoc5l",
@@ -269,7 +269,7 @@
     "difficulty": "medium",
     "solution": "$\\mathrm{A}^{2}=3 \\mathrm{~A}+\\alpha \\mathrm{I}$\n<br/><br/>\n$A^{3}=3 A^{2}+\\alpha A$\n<br/><br/>\n$\\mathrm{A}^{3}=3(3 \\mathrm{~A}+\\alpha \\mathrm{I})+\\alpha \\mathrm{A}$\n<br/><br/>\n$\\mathrm{A}^{3}=9 \\mathrm{~A}+\\alpha \\mathrm{A}+3 \\alpha \\mathrm{I}$\n<br/><br/>\n$\\mathrm{A}^{4}=(9+\\alpha) \\mathrm{A}^{2}+3 \\alpha \\mathrm{A}$\n<br/><br/>\n$=(9+\\alpha)(3 \\mathrm{~A}+\\alpha \\mathrm{I})+3 \\alpha \\mathrm{A}$\n<br/><br/>\n$=\\mathrm{A}(27+6 \\alpha)+\\alpha(9+\\alpha)$\n<br/><br/>\n$\\Rightarrow 27+6 \\alpha=21 \\Rightarrow \\alpha=-1$\n<br/><br/>\n$\\Rightarrow \\beta=\\alpha(9+\\alpha)=-8$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh2xzk3z",
@@ -291,7 +291,7 @@
     "difficulty": "medium",
     "solution": "We have, $P^2=I-P$\n<br/><br/>$$\n\\begin{aligned}\n\\Rightarrow P^4 & =(I-P)^2=I+P^2-2 P \\\\\\\\\n& =2 I-3 P \\text { [Using Eq. (i)] }\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n\\Rightarrow P^8 & =(2 I-3 P)^2 \\\\\\\\\n& =4 I+9 P^2-12 P \\\\\\\\\n& =13 I-21 P \\text { [Using Eq. (i)] }\n\\end{aligned}\n$$\n<br/><br/>and\n<br/><br/>$$\n\\begin{aligned}\nP^6 & =(I-P)(2 I-3 P) \\\\\\\\\n& =2 I-3 P-2 P+3 P^2 \\\\\\\\\n& =5 I-8 P \\text { [Using Eq. (i)] }\n\\end{aligned}\n$$\n<br/><br/>$\\begin{aligned} & \\text { Now, } P^8+P^6=18 I-29 P \\\\\\\\ & \\text { and } P^8-P^6=8 I-13 P \\\\\\\\ & \\therefore \\alpha=8, \\beta=6, \\gamma=18, \\delta=8 \\\\\\\\ & \\therefore \\alpha+\\beta+\\gamma-\\delta=8+6+18-8=24\\end{aligned}$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1lh21bstu",
@@ -313,7 +313,7 @@
     "difficulty": "medium",
     "solution": "Given, $A^2=I$\n<br/><br/>and $b=|A|$\n<br/><br/>Let\n$$\nA=\\left[\\begin{array}{ll}\na_1 & b_1 \\\\\na_2 & b_2\n\\end{array}\\right]\n$$\n<br/><br/>$$\n\\begin{aligned}\n\\therefore \\quad A^2 & =\\left[\\begin{array}{ll}\na_1 & b_1 \\\\\na_2 & b_2\n\\end{array}\\right]\\left[\\begin{array}{ll}\na_1 & b_1 \\\\\na_2 & b_2\n\\end{array}\\right] \\\\\\\\\n& =\\left[\\begin{array}{cc}\na_1^2+b_1 a_2 & a_1 b_1+b_1 b_2 \\\\\na_1 a_2+a_2 b_2 & b_1 a_2+b_2^2\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right] \\left(\\because A^2=I\\right)\n\\end{aligned}\n$$\n<br/><br/>By equality of matrices, we get\n<br/><br/>$$\n\\begin{aligned}\n& a_1 a_2+a_2 b_2=0 \\text { and } a_1 b_1+b_1 b_2=0 \\\\\\\\\n&\\Rightarrow  a_2\\left(a_1+b_2\\right)=0 \\text { and } b_1\\left(a_1+b_2\\right)=0 \\\\\\\\\n&\\Rightarrow  a_1+b_2=0 \\text { (since, } b_1, a_2 \\neq 0 \\text { ) }\\\\\\\\\n&\\Rightarrow  \\text { Sum of diagonal elements }=0 \\\\\\\\\n&\\Rightarrow a=0\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Now, } A^2=I \\\\\\\\\n& \\Rightarrow \\left|A^2\\right|=1 \\\\\\\\\n& \\Rightarrow |A|^2=1 ~~~~~~~\\left(\\because\\left|A^n\\right|=|A|^n\\right)\\\\\\\\\n& \\Rightarrow  b^2=1 ~~~~~~~~~~~(\\because|A|=b)\\\\\\\\\n& \\therefore 3 a^2+4 b^2=3(0)+4(1)=4\n\\end{aligned}\n$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l5bb0wm7",
@@ -386,7 +386,7 @@
     "difficulty": "medium",
     "solution": "<p>Given matrix $$A = \\left[ {\\matrix{\n   { - 1} & 2  \\cr \n   1 & { - 1}  \\cr \n\n } } \\right]$$</p>\n<p>For option A :</p>\n<p>$${R_1} \\to {R_1} + {R_2}$$</p>\n<p>$$A = \\left[ {\\matrix{\n   0 & 1  \\cr \n   1 & { - 1}  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ Option A can be obtained.</p>\n<p>For option B :</p>\n<p>$${R_1} \\leftrightarrow {R_2}$$</p>\n<p>$$A = \\left[ {\\matrix{\n   1 & { - 1}  \\cr \n   { - 1} & 2  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ Option B can be obtained.</p>\n<p>Option C :</p>\n<p>Not possible by a single elementary row operation.</p>\n<p>Option D :</p>\n<p>$${R_2} \\to {R_2} + 2{R_1}$$</p>\n<p>$$A = \\left[ {\\matrix{\n   { - 1} & 2  \\cr \n   { - 1} & 3  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ Option D can be obtained.</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l54uepk6",
@@ -425,7 +425,7 @@
     "difficulty": "medium",
     "solution": "<p>Given, $${a_{ij}} = {2^{j - i}}$$</p>\n<p>Now, $$A = \\left[ {\\matrix{\n   {{2^0}} & {{2^1}} & {{2^2}}  \\cr \n   {{2^{ - 1}}} & {{2^0}} & {{2^1}}  \\cr \n   {{2^{ - 2}}} & {{2^{ - 1}}} & {{2^0}}  \\cr \n\n } } \\right]$$</p>\n<p>$$ = \\left[ {\\matrix{\n   1 & 2 & 4  \\cr \n   {{1 \\over 2}} & 1 & 2  \\cr \n   {{1 \\over 4}} & {{1 \\over 2}} & 1  \\cr \n\n } } \\right]$$</p>\n<p>$${A^2} = \\left[ {\\matrix{\n   1 & 2 & 4  \\cr \n   {{1 \\over 2}} & 1 & 2  \\cr \n   {{1 \\over 4}} & {{1 \\over 2}} & 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 & 2 & 4  \\cr \n   {{1 \\over 2}} & 1 & 2  \\cr \n   {{1 \\over 4}} & {{1 \\over 2}} & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$ = \\left[ {\\matrix{\n   {1 + 1 + 1} & {2 + 2 + 2} & {4 + 4 + 4}  \\cr \n   {{1 \\over 2} + {1 \\over 2} + {1 \\over 2}} & {1 + 1 + 1} & {2 + 2 + 2}  \\cr \n   {{1 \\over 4} + {1 \\over 4} + {1 \\over 4}} & {{1 \\over 2} + {1 \\over 2} + {1 \\over 2}} & {1 + 1 + 1}  \\cr \n\n } } \\right]$$</p>\n<p>$$ = \\left[ {\\matrix{\n   3 & 6 & {12}  \\cr \n   {{3 \\over 2}} & 3 & 6  \\cr \n   {{3 \\over 4}} & {{3 \\over 2}} & 3  \\cr \n\n } } \\right]$$</p>\n<p>$$ = 3\\left[ {\\matrix{\n   1 & 2 & 4  \\cr \n   {{1 \\over 2}} & 1 & 2  \\cr \n   {{1 \\over 4}} & {{1 \\over 2}} & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$ = 3A$$</p>\n<p>Similarly, $${A^3} = {3^2}A$$</p>\n<p>$${A^4} = {3^3}A$$</p>\n<p>$$\\therefore$$ $${A^2} + {A^3} + \\,\\,......\\,\\, + \\,\\,{A^{10}}$$</p>\n<p>$$ = 3A + {3^2}A + {3^3}A + \\,\\,......\\,\\, + \\,\\,{3^9}A$$</p>\n<p>$$ = A(3 + {3^2} + {3^3} + \\,\\,......\\,\\, + \\,\\,{3^9})$$</p>\n<p>$$ = A\\left( {{{3({3^9} - 1)} \\over {3 - 1}}} \\right) = {{3({3^9} - 1)} \\over 2}A$$ = $$\\left( {{{{3^{10}} - 3} \\over 2}} \\right)A$$</p>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "VQhiXPYmhIls9RqlD81kmizzhfm",
@@ -481,7 +481,7 @@
     "difficulty": "medium",
     "solution": "$$A = \\left[ {\\matrix{\n   {{a_{11}}} &amp; {{a_{12}}} &amp; {{a_{13}}}  \\cr \n   {{a_{21}}} &amp; {{a_{22}}} &amp; {{a_{23}}}  \\cr \n   {{a_{31}}} &amp; {{a_{32}}} &amp; {{a_{33}}}  \\cr \n\n } } \\right]$$<br><br>Let $$x = \\left[ {\\matrix{\n   1  \\cr \n   1  \\cr \n   1  \\cr \n\n } } \\right]$$<br><br>$$AX = \\left[ {\\matrix{\n   {{a_{11}} + {a_{12}} + {a_{13}}}  \\cr \n   {{a_{21}} + {a_{22}} + {a_{23}}}  \\cr \n   {{a_{31}} + {a_{32}} + {a_{33}}}  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1  \\cr \n   1  \\cr \n   1  \\cr \n\n } } \\right]$$<br><br>$$\\Rightarrow$$ AX = X<br><br>Replace X by AX<br><br>A<sup>2</sup>X = AX = X<br><br>Replace X by AX<br><br>A<sup>3</sup>X = AX = X<br><br>Let $${A^3} = \\left[ {\\matrix{\n   {{x_1}} &amp; {{x_2}} &amp; {{x_3}}  \\cr \n   {{y_1}} &amp; {{y_2}} &amp; {{y_3}}  \\cr \n   {{z_1}} &amp; {{z_2}} &amp; {{z_3}}  \\cr \n\n } } \\right]$$<br><br>$${A^3}\\left[ {\\matrix{\n   1  \\cr \n   1  \\cr \n   1  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   {{x_1}} &amp; {{x_2}} &amp; {{x_3}}  \\cr \n   {{y_1}} &amp; {{y_2}} &amp; {{y_3}}  \\cr \n   {{z_1}} &amp; {{z_2}} &amp; {{z_3}}  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1  \\cr \n   1  \\cr \n   1  \\cr \n\n } } \\right]$$<br><br>Sum of all the element = 3",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krzn7q3c",
@@ -503,7 +503,7 @@
     "difficulty": "easy",
     "solution": "$$P = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   {{1 \\over 2}} &amp; 1  \\cr \n\n } } \\right]$$<br><br>$${P^2} = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   {{1 \\over 2}} &amp; 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   {{1 \\over 2}} &amp; 1  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   1 &amp; 1  \\cr \n\n } } \\right]$$<br><br>$${P^3} = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   1 &amp; 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   {{1 \\over 2}} &amp; 1  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   {{3 \\over 2}} &amp; 1  \\cr \n\n } } \\right]$$<br><br>$${P^4} = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   1 &amp; 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   1 &amp; 1  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   2 &amp; 1  \\cr \n\n } } \\right]$$<br><br>$$ \\vdots $$<br><br>$$\\therefore$$ $${P^{50}} = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   {25} &amp; 1  \\cr \n\n } } \\right]$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ktbfkr1u",
@@ -525,7 +525,7 @@
     "difficulty": "medium",
     "solution": "$$A{A^T} = \\left( {\\matrix{\n   {{1 \\over {\\sqrt 5 }}} &amp; {{2 \\over {\\sqrt 5 }}}  \\cr \n   {{{ - 2} \\over {\\sqrt 5 }}} &amp; {{1 \\over {\\sqrt 5 }}}  \\cr \n\n } } \\right)\\left( {\\matrix{\n   {{1 \\over {\\sqrt 5 }}} &amp; {{{ - 2} \\over {\\sqrt 5 }}}  \\cr \n   {{2 \\over {\\sqrt 5 }}} &amp; {{1 \\over {\\sqrt 5 }}}  \\cr \n\n } } \\right)$$<br><br>$$A{A^T} = \\left( {\\matrix{\n   1 &amp; 0  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right) = I$$<br><br>$${Q^2} = {A^T}BA\\,{A^T}BA = {A^T}BIBA$$<br><br>$$ \\Rightarrow {Q^2} = {A^T}{B^2}A$$<br><br>$${Q^3} = {A^T}{B^2}A{A^T}BA \\Rightarrow {Q^3} = {A^T}{B^3}A$$<br><br>Similarly : $${Q^{2021}} = {A^T}{B^{2021}}A$$<br><br>Now, $${B^2} = \\left( {\\matrix{\n   1 &amp; 0  \\cr \n   i &amp; 1  \\cr \n\n } } \\right)\\left( {\\matrix{\n   1 &amp; 0  \\cr \n   i &amp; 1  \\cr \n\n } } \\right) = \\left( {\\matrix{\n   1 &amp; 0  \\cr \n   {2i} &amp; 1  \\cr \n\n } } \\right)$$<br><br>$${B^3} = \\left( {\\matrix{\n   1 &amp; 0  \\cr \n   {2i} &amp; 1  \\cr \n\n } } \\right)\\left( {\\matrix{\n   1 &amp; 0  \\cr \n   i &amp; 1  \\cr \n\n } } \\right) \\Rightarrow {B^3} = \\left( {\\matrix{\n   1 &amp; 0  \\cr \n   {3i} &amp; 1  \\cr \n\n } } \\right)$$<br><br>Similarly $${B^{2021}} = \\left( {\\matrix{\n   1 &amp; 0  \\cr \n   {2021i} &amp; 1  \\cr \n\n } } \\right)$$<br><br>$$\\therefore$$ $$A{Q^{2021}} = {A^T} = A{A^T}{B^{2021}}\\,A{A^T} = I{B^{2021}}I$$<br><br>$$ \\Rightarrow A{Q^{2021}}\\,{A^T} = {B^{2021}} = \\left( {\\matrix{\n   1 &amp; 0  \\cr \n   {2021i} &amp; 1  \\cr \n\n } } \\right)$$<br><br>$$\\therefore$$ $${(A{Q^{2021}}\\,{A^T})^{ - 1}} = {\\left( {\\matrix{\n   1 &amp; 0  \\cr \n   {2021i} &amp; 1  \\cr \n\n } } \\right)^{ - 1}} = \\left( {\\matrix{\n   1 &amp; 0  \\cr \n   { - 2021i} &amp; 1  \\cr \n\n } } \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1kteid0ux",
@@ -547,7 +547,7 @@
     "difficulty": "medium",
     "solution": "Given matrix $$A = \\left[ {\\matrix{\n   0 &amp; 2  \\cr \n   k &amp; { - 1}  \\cr \n\n } } \\right]$$<br><br>$${A^4} + 3IA = 2I$$<br><br>$$ \\Rightarrow {A^4} = 2I - 3A$$<br><br>Also characteristic equation of A is $$|A - \\lambda I|\\, = 0$$<br><br>$$ \\Rightarrow \\left| {\\matrix{\n   {0 - \\lambda } &amp; 2  \\cr \n   k &amp; { - 1 - \\lambda }  \\cr \n\n } } \\right| = 0$$<br><br>$$ \\Rightarrow \\lambda  + {\\lambda ^2} - 2k = 0$$<br><br>$$ \\Rightarrow A + {A^2} = 2K.I$$<br><br>$$ \\Rightarrow {A^2} = 2KI - A$$<br><br>$$ \\Rightarrow {A^4} = 4{K^2}I + {A^2} - 4AK$$<br><br>Put $${A^2} = 2KI - A$$<br><br>and $${A^4} = 2I - 3A$$<br><br>$$2I - 3A = 4{K^2}I + 2KI - A - 4AK$$<br><br>$$ \\Rightarrow I(2 - 2K - 4{K^2}) = A(2 - 4K)$$<br><br>$$ \\Rightarrow  - 2I(2{K^2} + K - 1) = 2A(1 - 2K)$$<br><br>$$ \\Rightarrow  - 2I(2K - 1)(K + 1) = 2A(1 - 2K)$$<br><br>$$ \\Rightarrow (2K - 1)(2A) - 2I(2K - 1)(K + 1) = 0$$<br><br>$$ \\Rightarrow (2K - 1)[2A - 2I(K + 1)] = 0$$<br><br>$$ \\Rightarrow K = {1 \\over 2}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1krygt7fm",
@@ -626,7 +626,7 @@
     "difficulty": "medium",
     "solution": "x<sup>2</sup> + x + 1 = 0\n<br><br>$$ \\Rightarrow $$ x = $${{ - 1 + i\\sqrt 3 } \\over 2}$$ = $$\\omega $$ or $${{ - 1 - i\\sqrt 3 } \\over 2}$$ = $${\\omega ^2}$$\n<br><br>Let $$\\alpha $$ = $$\\omega $$\n<br><br>$$ \\therefore $$ A = $${1 \\over {\\sqrt 3 }}\\left[ {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; \\omega  &amp; {{\\omega ^2}}  \\cr \n   1 &amp; {{\\omega ^2}} &amp; {{\\omega ^4}}  \\cr \n\n } } \\right]$$\n<br><br>A<sup>2</sup> = $${1 \\over 3}\\left[ {\\matrix{\n   3 &amp; 0 &amp; 0  \\cr \n   0 &amp; 0 &amp; 3  \\cr \n   0 &amp; 3 &amp; 0  \\cr \n\n } } \\right]$$ = $$\\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n   0 &amp; 1 &amp; 0  \\cr \n\n } } \\right]$$\n<br><br>Now A<sup>4</sup> = $$\\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   0 &amp; 1 &amp; 0  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n\n } } \\right]$$ = I\n<br><br>$$ \\therefore $$ A<sup>31</sup> = A<sup>28</sup>A<sup>3</sup> = A<sup>3</sup>",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "WRLXvWOxnX5Sxd5nGV7k9k2k5hjw6xo",
@@ -648,7 +648,7 @@
     "difficulty": "medium",
     "solution": "According to Cayley Hamilton equation\n<br>|A – $$\\lambda $$I| = 0\n<br><br>$$ \\Rightarrow $$ $$\\left| {\\matrix{\n   {2 - \\lambda } &amp; 2  \\cr \n   9 &amp; {4 - \\lambda }  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ (2 – $$\\lambda $$)(4 – $$\\lambda $$) – 18 = 0\n<br><br>$$ \\Rightarrow $$ 8 – 2$$\\lambda $$ – 4$$\\lambda $$ + $$\\lambda $$<sup>2</sup>\n – 18 = 0\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$<sup>2</sup>\n – 6$$\\lambda $$ – 10 = 0\n<br><br>$$ \\therefore $$ A<sup>2</sup>\n – 6A– 10 = 0\n<br><br>$$ \\Rightarrow $$ A<sup>–1</sup>(A<sup>2</sup>) – 6A<sup>–1</sup>A – 10A<sup>–1</sup> = 0\n<br><br>$$ \\Rightarrow $$ A – 6I – 10A<sup>–1</sup> = 0\n<br><br>$$ \\Rightarrow $$ 10A<sup>–1</sup> = A – 6I",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "jve1Vauf0brUSCTCgE1kjnyo3ko",
@@ -693,7 +693,7 @@
     "difficulty": "medium",
     "solution": "$$P = \\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   3 &amp; 1 &amp; 0  \\cr \n   9 &amp; 3 &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$${P^2} = \\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   {3 + 3} &amp; 1 &amp; 0  \\cr \n   {9 + 9 + 9} &amp; {3 + 3} &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$${P^3} = \\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   {3 + 3 + 3} &amp; 1 &amp; 0  \\cr \n   {6.9} &amp; {3 + 3 + 3} &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$${P^n} = \\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   {3n} &amp; 1 &amp; 0  \\cr \n   {{{n\\left( {n + 1} \\right)} \\over 2}{3^2}} &amp; {3n} &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$${P^5} = \\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   {5.3} &amp; 1 &amp; 0  \\cr \n   {15.9} &amp; {5.3} &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$$Q = {P^5} + {{\\rm I}_3}$$\n<br><br>$$Q = \\left[ {\\matrix{\n   2 &amp; 0 &amp; 0  \\cr \n   {15} &amp; 2 &amp; 0  \\cr \n   {135} &amp; {15} &amp; 2  \\cr \n\n } } \\right]$$\n<br><br>$${{{q_{21}} + {q_{31}}} \\over {{q_{32}}}} = {{15 + 135} \\over {15}} = 10$$\n<br><br>Aliter\n<br><br>$$P = \\left( {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   0 &amp; 1 &amp; 0  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n\n } } \\right) + \\left( {\\matrix{\n   0 &amp; 0 &amp; 0  \\cr \n   3 &amp; 0 &amp; 0  \\cr \n   9 &amp; 3 &amp; 0  \\cr \n\n } } \\right)$$\n<br><br>$$P = {\\rm I} + X$$\n<br><br>$$X = \\left( {\\matrix{\n   0 &amp; 0 &amp; 0  \\cr \n   3 &amp; 0 &amp; 0  \\cr \n   9 &amp; 3 &amp; 0  \\cr \n\n } } \\right)$$\n<br><br>$${X^2} = \\left( {\\matrix{\n   0 &amp; 0 &amp; 0  \\cr \n   0 &amp; 0 &amp; 0  \\cr \n   9 &amp; 0 &amp; 0  \\cr \n\n } } \\right)$$\n<br><br>$${{X_3} = 0}$$\n<br>$${{P^5} = {\\rm I} + 5X + 10{X^2}}$$\n<br>$${Q = {P^5} + {\\rm I} = 2{\\rm I} + 5X + 10{X^2}}$$\n<br><br>$$Q = \\left( {\\matrix{\n   2 &amp; 0 &amp; 0  \\cr \n   0 &amp; 2 &amp; 0  \\cr \n   0 &amp; 0 &amp; 2  \\cr \n\n } } \\right) + \\left( {\\matrix{\n   0 &amp; 0 &amp; 0  \\cr \n   {15} &amp; 0 &amp; 0  \\cr \n   {15} &amp; {15} &amp; 0  \\cr \n\n } } \\right) + \\left( {\\matrix{\n   0 &amp; 0 &amp; 0  \\cr \n   0 &amp; 0 &amp; 0  \\cr \n   {90} &amp; 0 &amp; 0  \\cr \n\n } } \\right)$$\n<br><br>$$ \\Rightarrow \\,\\,Q = \\left( {\\matrix{\n   2 &amp; 0 &amp; 0  \\cr \n   {15} &amp; 2 &amp; 0  \\cr \n   {135} &amp; {15} &amp; 2  \\cr \n\n } } \\right)$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "Twer9dbwsJBwRwagoq2cN",
@@ -715,7 +715,7 @@
     "difficulty": "easy",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0qbzhhv/274ad913-d4cf-4b9f-8da0-43596a6aa9bc/14754a30-daa9-11e9-acf6-6d09a288f7f2/file-7km5fk0qbzhhw-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0qbzhhv/274ad913-d4cf-4b9f-8da0-43596a6aa9bc/14754a30-daa9-11e9-acf6-6d09a288f7f2/file-7km5fk0qbzhhw-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0qbzhhv/274ad913-d4cf-4b9f-8da0-43596a6aa9bc/14754a30-daa9-11e9-acf6-6d09a288f7f2/file-7km5fk0qbzhhw-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0qbzhhv/274ad913-d4cf-4b9f-8da0-43596a6aa9bc/14754a30-daa9-11e9-acf6-6d09a288f7f2/file-7km5fk0qbzhhw-860w.jpg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0qbzhhv/274ad913-d4cf-4b9f-8da0-43596a6aa9bc/14754a30-daa9-11e9-acf6-6d09a288f7f2/file-7km5fk0qbzhhw-1040w.jpg\"><source media=\"(max-width: 1220px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0qbzhhv/274ad913-d4cf-4b9f-8da0-43596a6aa9bc/14754a30-daa9-11e9-acf6-6d09a288f7f2/file-7km5fk0qbzhhw-1220w.jpg\"><source media=\"(max-width: 1400px)\" srcset=\"https://imagex.cdn.examgoal.net/7km5fk0qbzhhv/274ad913-d4cf-4b9f-8da0-43596a6aa9bc/14754a30-daa9-11e9-acf6-6d09a288f7f2/file-7km5fk0qbzhhw-1400w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/7km5fk0qbzhhv/274ad913-d4cf-4b9f-8da0-43596a6aa9bc/14754a30-daa9-11e9-acf6-6d09a288f7f2/file-7km5fk0qbzhhw-1580w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Morning Slot Mathematics - Matrices and Determinants Question 306 English Explanation\"></picture>\n<br><br>From here sin 32$$\\alpha $$ = 1 and cos 32$$\\alpha $$ = 0\n<br><br>$$ \\therefore $$ 32$$\\alpha $$ = 2n$$\\pi $$ + $${\\pi  \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = $${\\pi  \\over {64}} + {{n\\pi } \\over {16}}$$\n<br><br>Putting n = 0, $$\\alpha $$ = $${\\pi  \\over {64}}$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1l0bygy5c",
@@ -756,7 +756,7 @@
     "solution": "<p>Here, $$P = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   4 & 1 & 0  \\cr \n   {16} & 4 & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ $${P^2} = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   4 & 1 & 0  \\cr \n   {16} & 4 & 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   4 & 1 & 0  \\cr \n   {16} & 4 & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$ = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   {4 + 4} & 1 & 0  \\cr \n   {16 + 32} & {4 + 4} & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$ = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   {4 \\times 2} & 1 & 0  \\cr \n   {16(1 + 2)} & {4 \\times 2} & 1  \\cr \n\n } } \\right]$$ ...... (i)</p>\n<p>and $${P^3} = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   {4 \\times 2} & 1 & 0  \\cr \n   {16(1 + 2)} & {4 \\times 2} & 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   4 & 1 & 0  \\cr \n   {16} & 4 & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$ = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   {4 \\times 3} & 1 & 0  \\cr \n   {16(1 + 2 + 3)} & {4 \\times 3} & 1  \\cr \n\n } } \\right]$$ ..... (ii)</p>\n<p>From symmetry,</p>\n<p>$${P^{50}} = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   {4 \\times 50} & 1 & 0  \\cr \n   {16(1 + 2 + 3 + .... + 50)} & {4 \\times 50} & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$\\because$$ $${P^{50}} - Q = I$$ [given]</p>\n<p>$$\\therefore$$ $$\\left[ {\\matrix{\n   {1 - {q_{11}}} & { - {q_{12}}} & { - {q_{13}}}  \\cr \n   {200 - {q_{21}}} & {1 - {q_{22}}} & { - {q_{23}}}  \\cr \n   {16 \\times {{50} \\over 2}(51) - {q_{31}}} & {200 - {q_{32}}} & {1 - {q_{33}}}  \\cr \n\n } } \\right]$$</p>\n<p>$$ = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 1 & 0  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$ \\Rightarrow 200 - {q_{21}} = 0$$, $${{16 \\times 50 \\times 51} \\over 2} - {q_{31}} = 0$$, $$200 - {q_{32}} = 0$$</p>\n<p>$$\\therefore$$ $${q_{21}} = 200$$, $${q_{32}} = 200$$, $${q_{31}} = 20400$$</p>\n<p>Thus, $${{{q_{31}} + {q_{32}}} \\over {{q_{21}}}} = {{20400 + 200} \\over {200}}$$</p>\n<p>$$ = {{20600} \\over {200}} = 103$$</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "1ciXKjNjBu8EWyS3",
@@ -778,7 +778,7 @@
     "difficulty": "easy",
     "solution": "$${A^2} - {B^2} = \\left( {A - B} \\right)\\left( {A + B} \\right)$$ \n<br><br>$${A^2} - {B^2} = {A^2} + AB - BA - {B^2}$$ \n<br><br>$$ \\Rightarrow AB = BA$$ ",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   },
   {
     "id": "PhR7ljF2bx2QxzpZ",
@@ -800,6 +800,6 @@
     "difficulty": "medium",
     "solution": "$$A = \\left[ {\\matrix{\n   1 &amp; 2  \\cr \n   3 &amp; 4  \\cr \n\n } } \\right]\\,\\,\\,\\,B = \\left[ {\\matrix{\n   a &amp; 0  \\cr \n   0 &amp; b  \\cr \n\n } } \\right]$$\n<br><br>$$AB = \\left[ {\\matrix{\n   a &amp; {2b}  \\cr \n   {3a} &amp; {4b}  \\cr \n\n } } \\right]$$\n<br><br>$$BA = \\left[ {\\matrix{\n   a &amp; 0  \\cr \n   0 &amp; b  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 &amp; 2  \\cr \n   3 &amp; 4  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   a &amp; {2a}  \\cr \n   {3b} &amp; {4b}  \\cr \n\n } } \\right]$$\n<br><br>Hence, $$AB=BA$$ only when $$a=b$$ \n<br><br>$$\\therefore$$ There can be infinitely many $$B's$$ \n<br><br>for which $$AB=BA$$",
     "section": "A",
-    "type": "MCQ"
+    "type": "SCQ"
   }
 ]
