@@ -94,7 +94,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -102,8 +102,8 @@
     "difficulty": "hard",
     "solution": "<p>Let us consider the matrices given:</p>\n\n<p><p>$ I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} $</p></p>\n<p><p>$ P = \\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix} $</p></p>\n<p><p>$ Q = \\begin{pmatrix} x & y \\\\ z & 4 \\end{pmatrix} $</p></p>\n<p><p>$ R = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} $</p></p>\n\n<p>where $ x, y, z, a, b, c, d $ are non-zero real numbers. We aim to verify properties of matrix $ Q $ given the relation $ Q R = R P $.</p>\n<h3>Steps and Calculations</h3>\n\n<p><p><strong>Matrix Equation Analysis:</strong></p>\n<p>Given $ Q R = R P $, we equate both sides:</p>\n<p>$    \\begin{pmatrix} a x + c y & b x + d y \\\\ a z + 4c & b z + 4d \\end{pmatrix} = \\begin{pmatrix} 2a & 3b \\\\ 2c & 3d \\end{pmatrix}    $</p>\n<p>From the matrix equality, we derive the following key equations:</p></p>\n\n\n<p><p>$ a x + c y = 2a $</p></p>\n<p><p>$ b x + d y = 3b $</p></p>\n<p><p>$ a z + 4c = 2c $</p></p>\n<p><p>$ b z + 4d = 3d $</p></p>\n\n\n<p><p><strong>Determinant Condition:</strong></p>\n<p>Comparing the equations:</p></p>\n\n\n<p><p>Set $ a z = -2c $ and $ b z = -d $, resulting in $ \\frac{a}{b} = \\frac{2c}{d} $.</p></p>\n<p><p>The requirement $ |R| \\neq 0 $ implies $ |P| = |Q| $. So, equating determinants gives us:</p>\n<p>$      |P| = |Q| \\Rightarrow 6 = 4x - yz \\quad \\text{(Equation 1)}      $</p></p>\n\n\n<p><p><strong>Condition for Non-Trivial Solutions:</strong></p>\n<p>From:</p></p>\n\n\n<p><p>$ a(x - z) + c y = 0 $ </p></p>\n<p><p>$ a z + 2c = 0 $</p>\n<p>implies a non-trivial solution matrix must have:</p>\n<p>$    \\left|\\begin{array}{cc} x-2 & y \\\\ z & 2 \\end{array}\\right| = 0 \\Rightarrow 2x - yz = 4 \\quad \\text{(Equation 2)}    $</p></p>\n\n\n<p><p><strong>Solve for $ x $, $ yz $:</strong></p>\n<p>Solving Equations 1 and 2:</p></p>\n\n\n<p><p>$ 4x - yz = 6 $ </p></p>\n<p><p>$ 2x - yz = 4 $</p>\n<p>Subtract the second from the first:</p>\n<p>$    (4x - yz) - (2x - yz) = 6 - 4 \\Rightarrow 2x = 2 \\Rightarrow x = 1    $</p>\n<p>Plugging $ x = 1 $ back, we find:</p>\n<p>$    4(1) - yz = 6 \\Rightarrow 4 - yz = 6 \\Rightarrow yz = -2    $</p></p>\n\n\n<p><strong>Verify Determinants:</strong></p>\n\n\n<p><p><strong>For $ Q - 2I $:</strong></p>\n<p>$      |Q - 2I| = \\left|\\begin{array}{cc} x-2 & y \\\\ z & 2 \\end{array}\\right| = 2x - yz = 0      $</p></p>\n<p><p><strong>For $ Q - 6I $:</strong></p>\n<p>$      |Q - 6I| = \\left|\\begin{array}{cc} x-6 & y \\\\ z & -2 \\end{array}\\right| = -2x + 12 - yz = 12      $</p></p>\n<p><p><strong>For $ Q - 3I $:</strong></p>\n<p>$      |Q - 3I| = \\left|\\begin{array}{cc} x-3 & y \\\\ z & 1 \\end{array}\\right| = x - 3 - yz = 0      $</p>\n<p>Therefore, using the derived values, the statements for the determinants align correctly. The findings are:</p></p>\n\n<p><p>$ |Q - 2I| = 0 $</p></p>\n<p><p>$ |Q - 6I| = 12 $</p></p>\n<p><p>$ yz = -2 $</p></p>\n\n<p>These calculations validate the conditions for matrix $ Q $ concerning the predefined matrix properties.</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "lv0vxdmu",
@@ -868,7 +868,7 @@
   {
     "id": "RZJCYBV6H95GfEUmuY7k9k2k5fm0w1j",
     "questionNumber": 63,
-    "questionText": "Let A = [a<sub>ij</sub>] and B = [b<sub>ij</sub>] be two 3 × 3 real matrices such that b<sub>ij</sub> = (3)<sup>(i+j-2)</sup>a<sub>ji</sub>, where i, j = 1, 2, 3.\nIf the determinant of B is 81, then the determinant of A is:\n",
+    "questionText": "Let A = [a<sub>ij</sub>] and B = [b<sub>ij</sub>] be two 3 \u00d7 3 real matrices such that b<sub>ij</sub> = (3)<sup>(i+j-2)</sup>a<sub>ji</sub>, where i, j = 1, 2, 3.\nIf the determinant of B is 81, then the determinant of A is:\n",
     "options": [
       "3",
       "$${1 \\over 3}$$",
@@ -912,7 +912,7 @@
   {
     "id": "9cnuwNKo0TcaRlwfihNII",
     "questionNumber": 80,
-    "questionText": "Let A and B be two invertible matrices of order 3 $$ \\times $$ 3. If det(ABA<sup>T</sup>) = 8 and det(AB<sup>–1</sup>) = 8, \n<br>then det (BA<sup>–1</sup> B<sup>T</sup>) is equal to :\n",
+    "questionText": "Let A and B be two invertible matrices of order 3 $$ \\times $$ 3. If det(ABA<sup>T</sup>) = 8 and det(AB<sup>\u20131</sup>) = 8, \n<br>then det (BA<sup>\u20131</sup> B<sup>T</sup>) is equal to :\n",
     "options": [
       "$${1 \\over 4}$$",
       "16",
@@ -961,7 +961,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -970,7 +970,7 @@
     "solution": "Given MN = NM. Therefore, a<sup>2</sup> $$-$$ b<sup>2</sup> = (a + b) (a $$-$$ b) of algebra of numbers is applicable.<br/><br/>Now, M<sup>2</sup> = N<sup>4</sup> $$\\Rightarrow$$ M<sup>2</sup> $$-$$ N<sup>4</sup> = 0 (Null matrix)<br/><br/>$$\\Rightarrow$$ (M + N<sup>2</sup>) (M $$-$$ N<sup>2</sup>) = 0<br/><br/>Since M $$\\ne$$ N<sup>2</sup> (given), the possibilities are<br/><br/>(M + N<sup>2</sup>) = 0 and M $$-$$ N<sup>2</sup> $$\\ne$$ 0 (1)<br/><br/>or (M + N<sup>2</sup>) $$\\ne$$ 0 and M + N<sup>2</sup> $$\\ne$$ 0 (2)<br/><br/>Now, we know if A and B are non-null square matrix nd AB = 0, then A and B both are singular, that is, | A | = 0 and | B | = 0 and AB = 0.<br/><br/>Note : For example, let A be non-singular. Therefore, B = In(2) = A<sup>$$-$$1</sup> AB = 0 (since AB = 0 is assumed).<br/><br/>Hence, B is singular, which is a contradiction and A has to be singular. Similarly, B also has to be singular.<br/><br/>Therefore, from Eqs. (1) and (2), we conclude the only possibility is | M + N<sup>2</sup> | = 0.<br/><br/>Now checking options :<br/><br/>(A) | M<sup>2</sup> + MN<sup>2</sup> | = | M || M + N<sup>2</sup> | = 0<br/><br/>Hence, option (A) is correct.<br/><br/>(B) (M<sup>2</sup> + MN<sup>2</sup>) U = 0<br/><br/>Since, M<sup>2</sup> + MN<sup>2</sup> is singular. Therefore, U has infinitely many possible values (non-trivial solutions). Hence, option (B) is true.<br/><br/>(C) False since | M<sup>2</sup> + MN<sup>2</sup> | = 0.<br/><br/>(D) Since | M<sup>2</sup> + MN<sup>2</sup> | = 0, U is not a necessarily a zero matrix.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "tQwnUOEU3VBd7zli",
@@ -1128,7 +1128,7 @@
     "solution": "<p>We have an odd prime $p$.  Consider the set</p>\n<p>$ T_p \\;=\\;  \\Bigl\\{ A \\;=\\;\\begin{pmatrix} a & b \\\\[6pt] c & a \\end{pmatrix} \\;:\\; a,b,c \\in \\{0,1,2,\\dots,p-1\\} \\Bigr\\}. $</p>\n<p>We want to count the number of such matrices $A$ that satisfy:</p>\n\n<p><p>$\\text{trace}(A) \\not\\equiv 0 \\pmod{p}$.  </p>\n<p>Since $\\text{trace}(A) = a + a = 2a$, this means</p>\n<p>$    2a \\;\\not\\equiv\\; 0 \\pmod{p}.    $</p>\n<p>Because $p$ is an odd prime, $2$ is invertible $\\bmod\\,p$.  </p>\n<p>Hence $2a \\equiv 0 \\pmod{p}$ if and only if $a \\equiv 0 \\pmod{p}$.  </p>\n<p>Thus the condition </p>\n<p>$\\text{trace}(A) \\not\\equiv 0 \\pmod{p}$</p>\n<p>is equivalent to </p>\n<p>$    a \\;\\neq\\; 0 \\pmod{p}.    $</p>\n<p>In other words, $a$ must be a nonzero element modulo $p$; so</p>\n<p>$a\\in\\{1,2,\\dots,p-1\\}.$</p></p>\n<p><p>$\\det(A) \\equiv 0 \\pmod{p}$.  </p>\n<p>For the matrix </p>\n<p>$\\begin{pmatrix} a & b \\\\ c & a \\end{pmatrix},$ we have</p>\n<p>$    \\det(A) \\;=\\; a^2 - bc.    $</p>\n<p>The condition $\\det(A)\\equiv 0\\pmod{p}$ means</p>\n<p>$    a^2 \\;-\\; bc     \\;\\equiv\\; 0     \\pmod{p}    \\quad\\Longleftrightarrow\\quad    bc     \\;\\equiv\\; a^2     \\pmod{p}.    $</p></p>\n\n<p>Putting these two pieces together:</p>\n\n<p><p>$a$ is nonzero ($a \\in \\{1,\\dots,p-1\\}$).</p></p>\n<p><p>$bc \\equiv a^2 \\pmod{p}.$</p></p>\n\n<hr />\n<h2>Counting the solutions</h2>\n<p>We must count the number of triples $(a,b,c)$ with $a\\neq 0$ and $bc \\equiv a^2$.</p>\n\n<p><p><strong>Range for $a$</strong>  </p>\n<p>Since $a\\in \\{1,2,\\dots,p-1\\}$, there are $p-1$ possible values of $a$.</p></p>\n<p><p><strong>Condition $bc \\equiv a^2$ for given $a$</strong>  </p>\n<p>Since $a \\neq 0$, $a^2$ is also nonzero $\\bmod\\,p$.  </p></p>\n\n\n<p><p>If $b = 0$, then $bc \\equiv 0$, which would only be equal to $a^2$ if $a^2 \\equiv 0$.  But $a^2\\neq 0$ since $a\\neq 0$.  So $b=0$ gives no solutions.</p></p>\n<p><p>Similarly, if $c=0$, then $bc=0$, which again cannot equal the nonzero $a^2$.  So $c=0$ gives no solutions either.</p></p>\n<p><p>Therefore $b$ and $c$ must both be nonzero modulo $p$.  </p>\n<p>Once $b$ is chosen to be any nonzero element in $\\{1,\\dots,p-1\\}$, there is a unique $c \\equiv a^2 \\,b^{-1} \\pmod{p}$.  Hence:</p></p>\n<p><p>For each nonzero $b$ (that is, $b\\in\\{1,\\dots,p-1\\}$), there is exactly <strong>one</strong> $c\\in\\{1,\\dots,p-1\\}$ satisfying $bc \\equiv a^2$.</p></p>\n<p><p>Consequently, for each fixed nonzero $a$, the number of $(b,c)$-pairs is $p-1$.</p></p>\n\n\n<p><strong>Putting it all together</strong>  </p>\n\n\n<p><p>We have $p-1$ choices for $a\\neq 0$.</p></p>\n<p><p>For each such $a$, there are $p-1$ pairs $(b,c)$ satisfying $bc\\equiv a^2$.</p></p>\n<p><p>Therefore, in total, the number of matrices is</p>\n<p>$      (p-1)\\,\\times\\,(p-1)      \\;=\\;      (p-1)^2.      $</p></p>\n\n<p>Hence the correct answer matches option <strong>C</strong>, which is</p>\n<p>$ \\boxed{(p-1)^2.} $</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "m4z7bczk",
@@ -1174,7 +1174,7 @@
     "solution": "<p>We have an odd prime $p$.  Consider the set</p>\n<p>$ T_p \\;=\\;  \\Bigl\\{ A \\;=\\;\\begin{pmatrix} a & b \\\\[6pt] c & a \\end{pmatrix} \\;:\\; a,b,c \\in \\{0,1,2,\\dots,p-1\\} \\Bigr\\}. $</p>\n<p>We want to count the number of such matrices $A$ that satisfy:</p>\n\n<p><p>$\\text{trace}(A) \\not\\equiv 0 \\pmod{p}$.  </p>\n<p>Since $\\text{trace}(A) = a + a = 2a$, this means</p>\n<p>$    2a \\;\\not\\equiv\\; 0 \\pmod{p}.    $</p>\n<p>Because $p$ is an odd prime, $2$ is invertible $\\bmod\\,p$.  </p>\n<p>Hence $2a \\equiv 0 \\pmod{p}$ if and only if $a \\equiv 0 \\pmod{p}$.  </p>\n<p>Thus the condition </p>\n<p>$\\text{trace}(A) \\not\\equiv 0 \\pmod{p}$</p>\n<p>is equivalent to </p>\n<p>$    a \\;\\neq\\; 0 \\pmod{p}.    $</p>\n<p>In other words, $a$ must be a nonzero element modulo $p$; so</p>\n<p>$a\\in\\{1,2,\\dots,p-1\\}.$</p></p>\n<p><p>$\\det(A) \\equiv 0 \\pmod{p}$.  </p>\n<p>For the matrix </p>\n<p>$\\begin{pmatrix} a & b \\\\ c & a \\end{pmatrix},$ we have</p>\n<p>$    \\det(A) \\;=\\; a^2 - bc.    $</p>\n<p>The condition $\\det(A)\\equiv 0\\pmod{p}$ means</p>\n<p>$    a^2 \\;-\\; bc     \\;\\equiv\\; 0     \\pmod{p}    \\quad\\Longleftrightarrow\\quad    bc     \\;\\equiv\\; a^2     \\pmod{p}.    $</p></p>\n\n<p>Putting these two pieces together:</p>\n\n<p><p>$a$ is nonzero ($a \\in \\{1,\\dots,p-1\\}$).</p></p>\n<p><p>$bc \\equiv a^2 \\pmod{p}.$</p></p>\n\n<hr />\n<h2>Counting the solutions</h2>\n<p>We must count the number of triples $(a,b,c)$ with $a\\neq 0$ and $bc \\equiv a^2$.</p>\n\n<p><p><strong>Range for $a$</strong>  </p>\n<p>Since $a\\in \\{1,2,\\dots,p-1\\}$, there are $p-1$ possible values of $a$.</p></p>\n<p><p><strong>Condition $bc \\equiv a^2$ for given $a$</strong>  </p>\n<p>Since $a \\neq 0$, $a^2$ is also nonzero $\\bmod\\,p$.  </p></p>\n\n\n<p><p>If $b = 0$, then $bc \\equiv 0$, which would only be equal to $a^2$ if $a^2 \\equiv 0$.  But $a^2\\neq 0$ since $a\\neq 0$.  So $b=0$ gives no solutions.</p></p>\n<p><p>Similarly, if $c=0$, then $bc=0$, which again cannot equal the nonzero $a^2$.  So $c=0$ gives no solutions either.</p></p>\n<p><p>Therefore $b$ and $c$ must both be nonzero modulo $p$.  </p>\n<p>Once $b$ is chosen to be any nonzero element in $\\{1,\\dots,p-1\\}$, there is a unique $c \\equiv a^2 \\,b^{-1} \\pmod{p}$.  Hence:</p></p>\n<p><p>For each nonzero $b$ (that is, $b\\in\\{1,\\dots,p-1\\}$), there is exactly <strong>one</strong> $c\\in\\{1,\\dots,p-1\\}$ satisfying $bc \\equiv a^2$.</p></p>\n<p><p>Consequently, for each fixed nonzero $a$, the number of $(b,c)$-pairs is $p-1$.</p></p>\n\n\n<p><strong>Putting it all together</strong>  </p>\n\n\n<p><p>We have $p-1$ choices for $a\\neq 0$.</p></p>\n<p><p>For each such $a$, there are $p-1$ pairs $(b,c)$ satisfying $bc\\equiv a^2$.</p></p>\n<p><p>Therefore, in total, the number of matrices is</p>\n<p>$      (p-1)\\,\\times\\,(p-1)      \\;=\\;      (p-1)^2.      $</p></p>\n\n<p>Hence the correct answer matches option <strong>C</strong>, which is</p>\n<p>$ \\boxed{(p-1)^2.} $</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "8TSmM1Tn5g2DomPz",
@@ -1188,7 +1188,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -1196,7 +1196,7 @@
     "difficulty": "medium",
     "solution": "We know that $$\\left| {adj\\left( {adj\\,\\,A} \\right)} \\right| = {\\left| {Adj\\,\\,A} \\right|^{2 - 1}}$$b \n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, = {\\left| A \\right|^{2 - 1}} = \\left| A \\right|$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,\\,$$ Both the statements are true and statement $$-2$$  is a correct explanation for statement - $$1.$$ ",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "XrzcXWoZKBi1HBgV",

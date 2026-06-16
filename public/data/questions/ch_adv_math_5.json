@@ -110,7 +110,7 @@
     "title": "JEE Main 2026 (Online) 4th April Evening Shift",
     "year": "2026",
     "difficulty": "Easy",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>In the expansion of $\\left(9 x-\\frac{1}{3 \\sqrt{x}}\\right)^{18}, x>0$, if the term independent of $x$ is (221)k, then k is equal to:</p>",
     "options": [
       "<p>84</p>",
@@ -123,7 +123,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "general-term",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "mnswhu7x",
@@ -132,7 +132,7 @@
     "title": "JEE Main 2026 (Online) 4th April Morning Shift",
     "year": "2026",
     "difficulty": "Hard",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Let the smallest value of $k \\in \\mathbb{N}$, for which the coefficient of $x^3$ in $(1+x)^3+(1+x)^4+(1+x)^5+\\ldots+(1+x)^{99}+(1+k x)^{100}, x \\neq 0$, is $\\left(43 n+\\frac{101}{4}\\right)\\left({ }^{100} \\mathrm{C}_3\\right)$ for some $n \\in \\mathrm{~N}$, be $p$. Then the value of $p+n$ is :</p>",
     "options": [
       "<p>10</p>",
@@ -145,7 +145,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "mnrpp20m",
@@ -163,7 +163,7 @@
       "<p>34</p>"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>Given</p>\n<p>$$ {^{30}C_{30-r}} + 3{^{30}C_{31-r}} + 3{^{30}C_{32-r}} + {^{30}C_{33-r}} = {^mC_r} $$</p>\n<p>for $3 \\le r \\le 30$.</p>\n<p>We have to find $m$.</p>\n\n<p>First, use the symmetry property of combinations:</p>\n<p>$$ {^nC_k} = {^nC_{n-k}} $$</p>\n<p>So,</p>\n<p>$$ {^{30}C_{30-r}} = {^{30}C_r} $$</p>\n<p>$$ {^{30}C_{31-r}} = {^{30}C_{r-1}} $$</p>\n<p>because</p>\n<p>$$ 30-(31-r)=r-1 $$</p>\n<p>Similarly,</p>\n<p>$$ {^{30}C_{32-r}} = {^{30}C_{r-2}} $$</p>\n<p>and</p>\n<p>$$ {^{30}C_{33-r}} = {^{30}C_{r-3}} $$</p>\n<p>Therefore the left-hand side becomes</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} $$</p>\n\n<p>Now notice the coefficients:</p>\n<p>$$ 1,\\ 3,\\ 3,\\ 1 $$</p>\n<p>These are the binomial coefficients in the expansion of</p>\n<p>$$ (1+x)^3 $$</p>\n<p>Also, by Vandermonde’s identity,</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} = {^{33}C_r} $$</p>\n<p>Let us see this through binomial expansion:</p>\n<p>Coefficient of $x^r$ in $(1+x)^{33}$ is</p>\n<p>$$ {^{33}C_r} $$</p>\n<p>But</p>\n<p>$$ (1+x)^{33} = (1+x)^{30}(1+x)^3 $$</p>\n<p>and</p>\n<p>$$ (1+x)^3 = 1 + 3x + 3x^2 + x^3 $$</p>\n<p>So coefficient of $x^r$ in $(1+x)^{30}(1+3x+3x^2+x^3)$ is</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} $$</p>\n<p>Hence,</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} = {^{33}C_r} $$</p>\n<p>Comparing with</p>\n<p>$$ {^mC_r} $$</p>\n<p>we get</p>\n<p>$$ m = 33 $$</p>\n\n<p>The correct answer is:</p>\n<p>$$ \\boxed{33} $$</p>\n<p>So, Option C.</p>",
+    "solution": "<p>Given</p>\n<p>$$ {^{30}C_{30-r}} + 3{^{30}C_{31-r}} + 3{^{30}C_{32-r}} + {^{30}C_{33-r}} = {^mC_r} $$</p>\n<p>for $3 \\le r \\le 30$.</p>\n<p>We have to find $m$.</p>\n\n<p>First, use the symmetry property of combinations:</p>\n<p>$$ {^nC_k} = {^nC_{n-k}} $$</p>\n<p>So,</p>\n<p>$$ {^{30}C_{30-r}} = {^{30}C_r} $$</p>\n<p>$$ {^{30}C_{31-r}} = {^{30}C_{r-1}} $$</p>\n<p>because</p>\n<p>$$ 30-(31-r)=r-1 $$</p>\n<p>Similarly,</p>\n<p>$$ {^{30}C_{32-r}} = {^{30}C_{r-2}} $$</p>\n<p>and</p>\n<p>$$ {^{30}C_{33-r}} = {^{30}C_{r-3}} $$</p>\n<p>Therefore the left-hand side becomes</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} $$</p>\n\n<p>Now notice the coefficients:</p>\n<p>$$ 1,\\ 3,\\ 3,\\ 1 $$</p>\n<p>These are the binomial coefficients in the expansion of</p>\n<p>$$ (1+x)^3 $$</p>\n<p>Also, by Vandermonde\u2019s identity,</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} = {^{33}C_r} $$</p>\n<p>Let us see this through binomial expansion:</p>\n<p>Coefficient of $x^r$ in $(1+x)^{33}$ is</p>\n<p>$$ {^{33}C_r} $$</p>\n<p>But</p>\n<p>$$ (1+x)^{33} = (1+x)^{30}(1+x)^3 $$</p>\n<p>and</p>\n<p>$$ (1+x)^3 = 1 + 3x + 3x^2 + x^3 $$</p>\n<p>So coefficient of $x^r$ in $(1+x)^{30}(1+3x+3x^2+x^3)$ is</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} $$</p>\n<p>Hence,</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} = {^{33}C_r} $$</p>\n<p>Comparing with</p>\n<p>$$ {^mC_r} $$</p>\n<p>we get</p>\n<p>$$ m = 33 $$</p>\n\n<p>The correct answer is:</p>\n<p>$$ \\boxed{33} $$</p>\n<p>So, Option C.</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
@@ -865,7 +865,7 @@
       "2035"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p>$\\begin{aligned} & (1+x)^{11}={ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x^2+\\cdots+{ }^{11} C_{11} x^{11} \\\\ & \\int_0^1(1+x)^{11} d x=\\int_0^1\\left({ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x{ }^2+\\cdots+{ }^{11} C_{11} x{ }^{11}\\right) d x \\\\ & \\left.\\left.\\frac{(1-x)^{12}}{12}\\right]_0^1={ }^{11} C_{0 x}+\\frac{{ }^{11} C_1 x^2}{2}+\\frac{{ }^{11} C_2 x}{3}+\\cdots+\\frac{{ }^{11} C_{11} x^{12}}{12}\\right]_0^1\\end{aligned}$</p>\n<p>$$\\frac{2^{12}-1}{12}=C_0+\\frac{C_1}{2}+\\frac{C_2}{3}+\\cdots+\\frac{C_{11}}{12} \\cdots$$ ........(1)</p>\n<p>Now,</p>\n<p>$$ \\begin{aligned} & \\int_{-1}^0(1+x)^{11} d x=\\int_{-1}^0\\left({ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x^2+\\cdots+{ }^{11} C_{11} x^{11}\\right) d x \\\\ & \\left.\\left.\\frac{(1+x)^{12}}{12}\\right]_{-1}^0={ }^{11} C_0 x+\\frac{{ }^{11} C_1 x^2}{2}+\\frac{{ }^{11} C_2 x^3}{3}+\\cdots+\\frac{{ }^{11} C_{11} x^{12}}{12}\\right]_{-1}^0 \\end{aligned} $$</p>\n<p>$$\\frac{1}{12}=C_0-\\frac{C_1}{2}+\\frac{C_2}{3} \\cdots$$ …….(2)</p>\n<p>$\\begin{aligned} & \\text { (1) }-(2) \\\\\\\\ & =\\frac{2^{12}-2}{12}=2\\left[\\frac{C_1}{2}+\\frac{C_3}{4}+\\cdots\\right] \\\\\\\\ & \\Rightarrow \\sum_{r=0}^5 \\frac{C_{2 r+1}}{2 r+2}=\\frac{2^{11}-1}{12}=\\frac{2047}{12}=\\frac{m}{n} \\\\\\\\ & =2047-12=2035\\end{aligned}$</p>",
+    "solution": "<p>$\\begin{aligned} & (1+x)^{11}={ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x^2+\\cdots+{ }^{11} C_{11} x^{11} \\\\ & \\int_0^1(1+x)^{11} d x=\\int_0^1\\left({ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x{ }^2+\\cdots+{ }^{11} C_{11} x{ }^{11}\\right) d x \\\\ & \\left.\\left.\\frac{(1-x)^{12}}{12}\\right]_0^1={ }^{11} C_{0 x}+\\frac{{ }^{11} C_1 x^2}{2}+\\frac{{ }^{11} C_2 x}{3}+\\cdots+\\frac{{ }^{11} C_{11} x^{12}}{12}\\right]_0^1\\end{aligned}$</p>\n<p>$$\\frac{2^{12}-1}{12}=C_0+\\frac{C_1}{2}+\\frac{C_2}{3}+\\cdots+\\frac{C_{11}}{12} \\cdots$$ ........(1)</p>\n<p>Now,</p>\n<p>$$ \\begin{aligned} & \\int_{-1}^0(1+x)^{11} d x=\\int_{-1}^0\\left({ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x^2+\\cdots+{ }^{11} C_{11} x^{11}\\right) d x \\\\ & \\left.\\left.\\frac{(1+x)^{12}}{12}\\right]_{-1}^0={ }^{11} C_0 x+\\frac{{ }^{11} C_1 x^2}{2}+\\frac{{ }^{11} C_2 x^3}{3}+\\cdots+\\frac{{ }^{11} C_{11} x^{12}}{12}\\right]_{-1}^0 \\end{aligned} $$</p>\n<p>$$\\frac{1}{12}=C_0-\\frac{C_1}{2}+\\frac{C_2}{3} \\cdots$$ \u2026\u2026.(2)</p>\n<p>$\\begin{aligned} & \\text { (1) }-(2) \\\\\\\\ & =\\frac{2^{12}-2}{12}=2\\left[\\frac{C_1}{2}+\\frac{C_3}{4}+\\cdots\\right] \\\\\\\\ & \\Rightarrow \\sum_{r=0}^5 \\frac{C_{2 r+1}}{2 r+2}=\\frac{2^{11}-1}{12}=\\frac{2047}{12}=\\frac{m}{n} \\\\\\\\ & =2047-12=2035\\end{aligned}$</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
@@ -1546,7 +1546,7 @@
       "2736"
     ],
     "correctOptionIndex": 0,
-    "solution": "We have, binomial coefficient, $(2+x)^9$\n<br/><br/>$$\nT_{r+1}={ }^n C_r 2^{n-r} \\times x^r\n$$\n<br/><br/>Coefficient of $x\\left(T_1\\right)={ }^9 C_1 \\times 2^8$\n<br/><br/>Coefficient of $x^2\\left(T_2\\right)={ }^9 C_2 \\times 2^7$\n<br/><br/>Coefficient of $x^3\\left(T_3\\right)={ }^9 C_3 \\times 2^6$\n<br/>              .                    .\n<br/>              .                    .\n<br/>              .                    .\n<br/><br/>Coefficient of $x^7\\left(T_7\\right)={ }^9 C_7 \\times 2^2$\n<br/><br/>$$\n\\text { Mean }=\\frac{{ }^9 C_1 \\times 2^8+{ }^9 C_2 \\times 2^7+{ }^9 C_3 \\times 2^6+\\ldots+{ }^9 C_7 \\times 2^2}{7}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& { }^9 C_0 \\times 2^9+{ }^9 C_1 \\times 2^8+{ }^9 C_2 \\times 2^7+{ }^9 C_3 \\times 2^6+\\ldots .+{ }^9 C_7 \\times 2^2 \\\\\n& =\\frac{+{ }^9 C_8 \\times 2^1+{ }^9 C_9 \\times 2^0-{ }^9 C_0 \\times 2^9-{ }^9 C_8 \\times 2^1-{ }^9 C_9 \\times 2^0}{7} \n\\end{aligned}\n$$\n<br/><br/>$$\n=\\frac{(1+2)^9-2^9-18-1}{7}=\\frac{19152}{7}=2736\n$$",
+    "solution": "We have, binomial coefficient, $(2+x)^9$\n<br/><br/>$$\nT_{r+1}={ }^n C_r 2^{n-r} \\times x^r\n$$\n<br/><br/>Coefficient of $x\\left(T_1\\right)={ }^9 C_1 \\times 2^8$\n<br/><br/>Coefficient of $x^2\\left(T_2\\right)={ }^9 C_2 \\times 2^7$\n<br/><br/>Coefficient of $x^3\\left(T_3\\right)={ }^9 C_3 \\times 2^6$\n<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\n<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\n<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\n<br/><br/>Coefficient of $x^7\\left(T_7\\right)={ }^9 C_7 \\times 2^2$\n<br/><br/>$$\n\\text { Mean }=\\frac{{ }^9 C_1 \\times 2^8+{ }^9 C_2 \\times 2^7+{ }^9 C_3 \\times 2^6+\\ldots+{ }^9 C_7 \\times 2^2}{7}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& { }^9 C_0 \\times 2^9+{ }^9 C_1 \\times 2^8+{ }^9 C_2 \\times 2^7+{ }^9 C_3 \\times 2^6+\\ldots .+{ }^9 C_7 \\times 2^2 \\\\\n& =\\frac{+{ }^9 C_8 \\times 2^1+{ }^9 C_9 \\times 2^0-{ }^9 C_0 \\times 2^9-{ }^9 C_8 \\times 2^1-{ }^9 C_9 \\times 2^0}{7} \n\\end{aligned}\n$$\n<br/><br/>$$\n=\\frac{(1+2)^9-2^9-18-1}{7}=\\frac{19152}{7}=2736\n$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "general-term",
@@ -3661,7 +3661,7 @@
     "year": "2021",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "The value of\n<br>-<sup>15</sup>C<sub>1</sub> + 2.<sup>15</sup>C<sub>2</sub> – 3.<sup>15</sup>C<sub>3</sub> + ... - 15.<sup>15</sup>C<sub>15</sub> + <sup>14</sup>C<sub>1</sub> + <sup>14</sup>C<sub>3</sub> + <sup>14</sup>C<sub>5</sub> + ...+ <sup>14</sup>C<sub>11</sub> is :",
+    "question": "The value of\n<br>-<sup>15</sup>C<sub>1</sub> + 2.<sup>15</sup>C<sub>2</sub> \u2013 3.<sup>15</sup>C<sub>3</sub> + ... - 15.<sup>15</sup>C<sub>15</sub> + <sup>14</sup>C<sub>1</sub> + <sup>14</sup>C<sub>3</sub> + <sup>14</sup>C<sub>5</sub> + ...+ <sup>14</sup>C<sub>11</sub> is :",
     "options": [
       "2<sup>13</sup> - 13",
       "2<sup>16</sup> - 1",
@@ -3921,7 +3921,7 @@
       "1 : 16"
     ],
     "correctOptionIndex": 1,
-    "solution": "T<sub>r + 1</sub> = <sup>16</sup>C<sub>r</sub>$${\\left( {{x \\over {\\cos \\theta }}} \\right)^{16 - r}}{\\left( {{1 \\over {x\\sin \\theta }}} \\right)^r}$$\n<br><br>= <sup>16</sup>C<sub>r</sub>$${\\left( x \\right)^{16 - 2r}} \\times {1 \\over {{{\\left( {\\cos \\theta } \\right)}^{16 - r}}{{\\left( {\\sin \\theta } \\right)}^r}}}$$\n<br><br>term is independent of x when\n<br><br>$$ \\therefore $$ 16 – 2r = 0\n<br><br>$$ \\Rightarrow $$ r = 8\n<br><br>T<sub>9</sub> = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${1 \\over {{{\\cos }^8}\\theta {{\\sin }^8}\\theta }}$$\n<br><br>= <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{{2^8}} \\over {{{\\left( {\\sin 2\\theta } \\right)}^8}}}$$\n<br><br>If $$\\theta  \\in \\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$ then $$2\\theta  \\in \\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$\n<br><br>In the range $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$, sin 2$$\\theta $$ is increasing. \n<br><br>And value of T<sub>9</sub> is least when sin 2$$\\theta $$ is maximum.\n<br><br>And sin 2$$\\theta $$ is maximum in the range $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$ <br>when 2$$\\theta $$ = $${{\\pi  \\over 2}}$$\n<br><br>$$ \\therefore $$ $${l_1}$$ = <sup>16</sup>C<sub>8</sub> $$ \\times $$ 2<sup>8</sup>\n\n<br><br>AgainIf $$\\theta  \\in \\left[ {{\\pi  \\over {16}},{\\pi  \\over 8}} \\right]$$ then $$2\\theta  \\in \\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$\n<br><br>In the range $$\\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$, sin 2$$\\theta $$ is increasing. \n<br><br>And value of T<sub>9</sub> is least when sin 2$$\\theta $$ is maximum.\n<br><br>And sin 2$$\\theta $$ is maximum in the range $$\\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$ <br>when 2$$\\theta $$ = $${{\\pi  \\over 4}}$$\n<br><br>$$ \\therefore $$ $${l_2}$$ = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{{2^8}} \\over {{{\\left( {{1 \\over {\\sqrt 2 }}} \\right)}^8}}}$$\n<br><br> = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{2^8}{2^4}}$$\n<br><br>$$ \\therefore $$ $${{{l_2}} \\over {{l_1}}}$$ = $${{{2^4}} \\over 1}$$ = $${{16} \\over 1}$$",
+    "solution": "T<sub>r + 1</sub> = <sup>16</sup>C<sub>r</sub>$${\\left( {{x \\over {\\cos \\theta }}} \\right)^{16 - r}}{\\left( {{1 \\over {x\\sin \\theta }}} \\right)^r}$$\n<br><br>= <sup>16</sup>C<sub>r</sub>$${\\left( x \\right)^{16 - 2r}} \\times {1 \\over {{{\\left( {\\cos \\theta } \\right)}^{16 - r}}{{\\left( {\\sin \\theta } \\right)}^r}}}$$\n<br><br>term is independent of x when\n<br><br>$$ \\therefore $$ 16 \u2013 2r = 0\n<br><br>$$ \\Rightarrow $$ r = 8\n<br><br>T<sub>9</sub> = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${1 \\over {{{\\cos }^8}\\theta {{\\sin }^8}\\theta }}$$\n<br><br>= <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{{2^8}} \\over {{{\\left( {\\sin 2\\theta } \\right)}^8}}}$$\n<br><br>If $$\\theta  \\in \\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$ then $$2\\theta  \\in \\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$\n<br><br>In the range $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$, sin 2$$\\theta $$ is increasing. \n<br><br>And value of T<sub>9</sub> is least when sin 2$$\\theta $$ is maximum.\n<br><br>And sin 2$$\\theta $$ is maximum in the range $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$ <br>when 2$$\\theta $$ = $${{\\pi  \\over 2}}$$\n<br><br>$$ \\therefore $$ $${l_1}$$ = <sup>16</sup>C<sub>8</sub> $$ \\times $$ 2<sup>8</sup>\n\n<br><br>AgainIf $$\\theta  \\in \\left[ {{\\pi  \\over {16}},{\\pi  \\over 8}} \\right]$$ then $$2\\theta  \\in \\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$\n<br><br>In the range $$\\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$, sin 2$$\\theta $$ is increasing. \n<br><br>And value of T<sub>9</sub> is least when sin 2$$\\theta $$ is maximum.\n<br><br>And sin 2$$\\theta $$ is maximum in the range $$\\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$ <br>when 2$$\\theta $$ = $${{\\pi  \\over 4}}$$\n<br><br>$$ \\therefore $$ $${l_2}$$ = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{{2^8}} \\over {{{\\left( {{1 \\over {\\sqrt 2 }}} \\right)}^8}}}$$\n<br><br> = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{2^8}{2^4}}$$\n<br><br>$$ \\therefore $$ $${{{l_2}} \\over {{l_1}}}$$ = $${{{2^4}} \\over 1}$$ = $${{16} \\over 1}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "general-term",
@@ -3981,7 +3981,7 @@
       "$$\\alpha  - \\beta  = -132$$"
     ],
     "correctOptionIndex": 3,
-    "solution": "(x+a)<sup>n </sup>+ (x – a)<sup>n</sup>\n = 2(T<sub>1</sub>\n + T<sub>3</sub>\n + T<sub>5</sub>\n +.....)\n<br><br>$${\\left( {x + \\sqrt {{x^2} - 1} } \\right)^6} + {\\left( {x - \\sqrt {{x^2} - 1} } \\right)^6}$$\n<br><br>= 2[T<sub>1</sub>\n + T<sub>3</sub>\n + T<sub>5</sub>\n + T<sub>7</sub>\n]\n<br><br>= 2[<sup>6</sup>C<sub>0</sub>\n x<sup>6</sup>\n + <sup>6</sup>C<sub>2\n</sub>\nx<sup>4</sup>(x<sup>2</sup>\n – 1) + <sup>6</sup>C<sub>4</sub>\nx<sup>2</sup>(x<sup>2</sup>\n –1)<sup>2</sup>\n + <sup>6</sup>C<sub>6</sub>\nx<sup>0</sup>(x<sup>2</sup>–1)<sup>3</sup>]\n<br><br>= 2[x<sup>6</sup>+ 15(x<sup>6</sup>\n – x<sup>4</sup>) + 15x<sup>2</sup>\n (x<sup>4</sup>\n + 1 –2x<sup>2</sup>) + (x<sup>6</sup>\n – 3x<sup>4</sup>\n +3x<sup>2</sup>\n –1)]\n<br><br>= 2[x<sup>6</sup>(2 + 15 + 15 + 1) + x<sup>4</sup>(–15 – 30 –3) + x<sup>2</sup>(15 + 3)]\n<br><br>Coefficient of x<sup>4</sup> = $$\\alpha $$ = -96\n<br><br>And coefficient of x<sup>2</sup> = $$\\beta $$ = 36\n<br><br>$$ \\therefore $$ $$\\alpha  - \\beta  =  - 96 - 36 =  -132$$",
+    "solution": "(x+a)<sup>n </sup>+ (x \u2013 a)<sup>n</sup>\n = 2(T<sub>1</sub>\n + T<sub>3</sub>\n + T<sub>5</sub>\n +.....)\n<br><br>$${\\left( {x + \\sqrt {{x^2} - 1} } \\right)^6} + {\\left( {x - \\sqrt {{x^2} - 1} } \\right)^6}$$\n<br><br>= 2[T<sub>1</sub>\n + T<sub>3</sub>\n + T<sub>5</sub>\n + T<sub>7</sub>\n]\n<br><br>= 2[<sup>6</sup>C<sub>0</sub>\n x<sup>6</sup>\n + <sup>6</sup>C<sub>2\n</sub>\nx<sup>4</sup>(x<sup>2</sup>\n \u2013 1) + <sup>6</sup>C<sub>4</sub>\nx<sup>2</sup>(x<sup>2</sup>\n \u20131)<sup>2</sup>\n + <sup>6</sup>C<sub>6</sub>\nx<sup>0</sup>(x<sup>2</sup>\u20131)<sup>3</sup>]\n<br><br>= 2[x<sup>6</sup>+ 15(x<sup>6</sup>\n \u2013 x<sup>4</sup>) + 15x<sup>2</sup>\n (x<sup>4</sup>\n + 1 \u20132x<sup>2</sup>) + (x<sup>6</sup>\n \u2013 3x<sup>4</sup>\n +3x<sup>2</sup>\n \u20131)]\n<br><br>= 2[x<sup>6</sup>(2 + 15 + 15 + 1) + x<sup>4</sup>(\u201315 \u2013 30 \u20133) + x<sup>2</sup>(15 + 3)]\n<br><br>Coefficient of x<sup>4</sup> = $$\\alpha $$ = -96\n<br><br>And coefficient of x<sup>2</sup> = $$\\beta $$ = 36\n<br><br>$$ \\therefore $$ $$\\alpha  - \\beta  =  - 96 - 36 =  -132$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "general-term",
@@ -4003,7 +4003,7 @@
       "210"
     ],
     "correctOptionIndex": 1,
-    "solution": "(1 + x)<sup>10</sup> + x(1 + x)<sup>9</sup>\n + x<sup>2</sup>(1 + x)<sup>8</sup>\n + ......+ x<sup>10</sup>\n<br><br>This is a G.P where\n<br><br>First term, a = (1 + x)<sup>10</sup>\n<br><br>common ratio, r = $${x \\over {1 + x}}$$\n<br><br>Number of terms = 11\n<br><br>Sum of G.P\n<br><br>= $${{{{\\left( {1 + x} \\right)}^{10}}\\left( {1 - {{\\left( {{x \\over {1 + x}}} \\right)}^{11}}} \\right)} \\over {1 - {x \\over {1 + x}}}}$$\n<br><br>=  (1 + x)<sup>11</sup>\n – x<sup>11</sup>\n<br><br>So Coefficient of x<sup>7</sup>\n is <sup>11</sup>C<sub>7</sub> = 330",
+    "solution": "(1 + x)<sup>10</sup> + x(1 + x)<sup>9</sup>\n + x<sup>2</sup>(1 + x)<sup>8</sup>\n + ......+ x<sup>10</sup>\n<br><br>This is a G.P where\n<br><br>First term, a = (1 + x)<sup>10</sup>\n<br><br>common ratio, r = $${x \\over {1 + x}}$$\n<br><br>Number of terms = 11\n<br><br>Sum of G.P\n<br><br>= $${{{{\\left( {1 + x} \\right)}^{10}}\\left( {1 - {{\\left( {{x \\over {1 + x}}} \\right)}^{11}}} \\right)} \\over {1 - {x \\over {1 + x}}}}$$\n<br><br>=  (1 + x)<sup>11</sup>\n \u2013 x<sup>11</sup>\n<br><br>So Coefficient of x<sup>7</sup>\n is <sup>11</sup>C<sub>7</sub> = 330",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "general-term",
@@ -4044,7 +4044,7 @@
       "30"
     ],
     "correctOptionIndex": 0,
-    "solution": "(1 + x + x<sup>2</sup>\n + ....+ x<sup>2n</sup>)(1 - x + x<sup>2</sup> - x<sup>3</sup> + ...... + x<sup>2n</sup>) \n<br><br>= a<sub>0</sub> + a<sub>1</sub>x + a<sub>2</sub>x<sup>2</sup>\n + …..\n<br><br>put x = 1\n<br><br> (2n + 1)$$ \\times $$1 = a<sub>0</sub> + a<sub>1</sub> + a<sub>2</sub> + …… (1)\n<br><br>put x = –1\n<br><br> 1$$ \\times $$(2n + 1) = a<sub>0</sub> – a<sub>1</sub> + a<sub>2</sub>+  …….. (2)\n<br><br>Adding (1) and (2)\n<br><br>4n + 2 = 2(a<sub>0</sub> + a<sub>2</sub> + ….. ) \n<br><br>$$ \\Rightarrow $$ 4n + 2 = 2 $$ \\times $$ 61\n<br><br>$$ \\Rightarrow $$ n = 30",
+    "solution": "(1 + x + x<sup>2</sup>\n + ....+ x<sup>2n</sup>)(1 - x + x<sup>2</sup> - x<sup>3</sup> + ...... + x<sup>2n</sup>) \n<br><br>= a<sub>0</sub> + a<sub>1</sub>x + a<sub>2</sub>x<sup>2</sup>\n + \u2026..\n<br><br>put x = 1\n<br><br> (2n + 1)$$ \\times $$1 = a<sub>0</sub> + a<sub>1</sub> + a<sub>2</sub> + \u2026\u2026 (1)\n<br><br>put x = \u20131\n<br><br> 1$$ \\times $$(2n + 1) = a<sub>0</sub> \u2013 a<sub>1</sub> + a<sub>2</sub>+  \u2026\u2026.. (2)\n<br><br>Adding (1) and (2)\n<br><br>4n + 2 = 2(a<sub>0</sub> + a<sub>2</sub> + \u2026.. ) \n<br><br>$$ \\Rightarrow $$ 4n + 2 = 2 $$ \\times $$ 61\n<br><br>$$ \\Rightarrow $$ n = 30",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
@@ -4102,7 +4102,7 @@
     "year": "2019",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "The coefficient of x<sup>18</sup> in the product\n<br>(1 + x) (1 – x)<sup>10</sup> (1 + x + x<sup>2</sup>)<sup>9</sup>\n is :",
+    "question": "The coefficient of x<sup>18</sup> in the product\n<br>(1 + x) (1 \u2013 x)<sup>10</sup> (1 + x + x<sup>2</sup>)<sup>9</sup>\n is :",
     "options": [
       "126",
       "- 84",
@@ -4145,16 +4145,16 @@
     "title": "JEE Main 2019 (Online) 10th April Morning Slot",
     "year": "2019",
     "difficulty": "Medium",
-    "type": "MCQM",
-    "question": "If the coefficients of x<sup>2</sup>\n and x<sup>3</sup>\n are both zero, in the expansion of the expression (1 + ax + bx<sup>2</sup>\n) (1 – 3x)<sup>15</sup> in\npowers of x, then the ordered pair (a,b) is equal to :",
+    "type": "SCQ",
+    "question": "If the coefficients of x<sup>2</sup>\n and x<sup>3</sup>\n are both zero, in the expansion of the expression (1 + ax + bx<sup>2</sup>\n) (1 \u2013 3x)<sup>15</sup> in\npowers of x, then the ordered pair (a,b) is equal to :",
     "options": [
       "(28, 861)",
       "(28, 315)",
-      "(–21, 714)",
-      "(–54, 315)"
+      "(\u201321, 714)",
+      "(\u201354, 315)"
     ],
     "correctOptionIndex": 1,
-    "solution": "(1 + ax + bx<sup>2</sup>)(1 – 3x)<sup>15</sup><br><br>\nCo-eff. of x<sup>2</sup> = 1.<sup>15</sup>C<sub>2</sub>(–3)<sup>2</sup> + a.<sup>15</sup>C<sub>1</sub>(–3) + b.<sup>15</sup>C<sub>0</sub><br><br>\n$$ = {{15 \\times 14} \\over 2} \\times 9 - 15 \\times 3a + b = 0$$ (given)<br><br>\n$$ \\Rightarrow $$ 945 – 45a + b = 0 ...(i)<br><br>\nNow co-eff. of x<sup>3</sup> = 0<br><br>\n$$ \\Rightarrow $$ <sup>15</sup>C<sub>3</sub>(–3)<sup>3</sup> + a.<sup>15</sup>C<sub>2</sub>(–3)<sup>2</sup> + b.<sup>15</sup>C<sub>1</sub>(–3) = 0<br><br>\n$$ \\Rightarrow {{15 \\times 14 \\times 13} \\over {3 \\times 2}} \\times ( - 3 \\times 3 \\times 3) + a \\times {{15 \\times 14 \\times 9} \\over 2 } – b × 3 × 15 = 0$$<br><br>\n$$ \\Rightarrow $$ 15 × 3[–3 × 7 × 13 + a × 7 × 3 – b] = 0<br><br>\n$$ \\Rightarrow $$ 21a – b = 273 ...(ii)<br><br>\nFrom (i) and (ii)<br><br>\na = +28, b = 315 $$ \\equiv $$ (a, b) $$ \\equiv $$ (28, 315)",
+    "solution": "(1 + ax + bx<sup>2</sup>)(1 \u2013 3x)<sup>15</sup><br><br>\nCo-eff. of x<sup>2</sup> = 1.<sup>15</sup>C<sub>2</sub>(\u20133)<sup>2</sup> + a.<sup>15</sup>C<sub>1</sub>(\u20133) + b.<sup>15</sup>C<sub>0</sub><br><br>\n$$ = {{15 \\times 14} \\over 2} \\times 9 - 15 \\times 3a + b = 0$$ (given)<br><br>\n$$ \\Rightarrow $$ 945 \u2013 45a + b = 0 ...(i)<br><br>\nNow co-eff. of x<sup>3</sup> = 0<br><br>\n$$ \\Rightarrow $$ <sup>15</sup>C<sub>3</sub>(\u20133)<sup>3</sup> + a.<sup>15</sup>C<sub>2</sub>(\u20133)<sup>2</sup> + b.<sup>15</sup>C<sub>1</sub>(\u20133) = 0<br><br>\n$$ \\Rightarrow {{15 \\times 14 \\times 13} \\over {3 \\times 2}} \\times ( - 3 \\times 3 \\times 3) + a \\times {{15 \\times 14 \\times 9} \\over 2 } \u2013 b \u00d7 3 \u00d7 15 = 0$$<br><br>\n$$ \\Rightarrow $$ 15 \u00d7 3[\u20133 \u00d7 7 \u00d7 13 + a \u00d7 7 \u00d7 3 \u2013 b] = 0<br><br>\n$$ \\Rightarrow $$ 21a \u2013 b = 273 ...(ii)<br><br>\nFrom (i) and (ii)<br><br>\na = +28, b = 315 $$ \\equiv $$ (a, b) $$ \\equiv $$ (28, 315)",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
@@ -4176,7 +4176,7 @@
       "232"
     ],
     "correctOptionIndex": 3,
-    "solution": "Given $${}^n{C_{r - 1}}:{}^n{C_r}:{}^n{C_{r + 1}} = 2:15:70$$<br><br>\n$${{{}^n{C_{r - 1}}} \\over {{}^n{C_r}}} = {2 \\over {15}}$$<br><br>\n$$ \\Rightarrow {r \\over {n - r + 1}} = {2 \\over {15}}$$<br><br>\n$$ \\Rightarrow 15r = 2n - 2r + 2$$<br><br>\n$$ \\Rightarrow 17r = 2n + 2$$  .... (i)<br><br>\nNow $${{{}^n{C_r}} \\over {{}^n{C_{r + 1}}}} = {{15} \\over {70}}$$<br><br>\n$$ \\Rightarrow {{r + 1} \\over {n - r}} = {3 \\over {14}}$$<br><br>\n$$ \\Rightarrow $$ 14r + 14 = 3n – 3r<br><br>\n$$ \\Rightarrow $$ 17r = 3n – 14 ... (ii)<br><br>\nNow From (i) and (ii) equation<br><br>\n2n + 2 = 3n - 14 $$ \\Rightarrow $$ n = 16<br><br>\nBy putting n = 16 in equation (i)<br><br>\n$$ \\Rightarrow $$ r = 2<br><br>\n$$ \\therefore $$ Average of coefficient = $${{{}^{16}{C_1} + {}^{16}{C_2} + {}^{16}{C_3}} \\over 3} $$\n<br><br>= $${{16 + 120 + 560} \\over 3}$$<br><br>\n= $${{696} \\over 3} = 232$$",
+    "solution": "Given $${}^n{C_{r - 1}}:{}^n{C_r}:{}^n{C_{r + 1}} = 2:15:70$$<br><br>\n$${{{}^n{C_{r - 1}}} \\over {{}^n{C_r}}} = {2 \\over {15}}$$<br><br>\n$$ \\Rightarrow {r \\over {n - r + 1}} = {2 \\over {15}}$$<br><br>\n$$ \\Rightarrow 15r = 2n - 2r + 2$$<br><br>\n$$ \\Rightarrow 17r = 2n + 2$$  .... (i)<br><br>\nNow $${{{}^n{C_r}} \\over {{}^n{C_{r + 1}}}} = {{15} \\over {70}}$$<br><br>\n$$ \\Rightarrow {{r + 1} \\over {n - r}} = {3 \\over {14}}$$<br><br>\n$$ \\Rightarrow $$ 14r + 14 = 3n \u2013 3r<br><br>\n$$ \\Rightarrow $$ 17r = 3n \u2013 14 ... (ii)<br><br>\nNow From (i) and (ii) equation<br><br>\n2n + 2 = 3n - 14 $$ \\Rightarrow $$ n = 16<br><br>\nBy putting n = 16 in equation (i)<br><br>\n$$ \\Rightarrow $$ r = 2<br><br>\n$$ \\therefore $$ Average of coefficient = $${{{}^{16}{C_1} + {}^{16}{C_2} + {}^{16}{C_3}} \\over 3} $$\n<br><br>= $${{16 + 120 + 560} \\over 3}$$<br><br>\n= $${{696} \\over 3} = 232$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
@@ -4190,15 +4190,15 @@
     "year": "2019",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "If the fourth term in the binomial expansion of $${\\left( {{2 \\over x} + {x^{{{\\log }_8}x}}} \\right)^6}$$\n (x &gt; 0) is 20 × 8<sup>7</sup>, then a value of\nx is :",
+    "question": "If the fourth term in the binomial expansion of $${\\left( {{2 \\over x} + {x^{{{\\log }_8}x}}} \\right)^6}$$\n (x &gt; 0) is 20 \u00d7 8<sup>7</sup>, then a value of\nx is :",
     "options": [
-      "8<sup>–2</sup>",
+      "8<sup>\u20132</sup>",
       "8<sup>2</sup>",
       "8<sup>3</sup>",
       "8"
     ],
     "correctOptionIndex": 1,
-    "solution": "$${\\left( {{2 \\over x} + {x^{{{\\log }_8}x}}} \\right)^6}$$\n<br><br>Given T<sub>4</sub> = 20 × 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ $${}^6{C_3}{\\left( {{2 \\over x}} \\right)^3}{\\left( {{x^{{{\\log }_8}x}}} \\right)^3}$$ = 20 × 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ 20$$ \\times $$$${8 \\over {{x^3}}} \\times {x^{3{{\\log }_8}x}}$$ = 20 × 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ $${x^{3{{\\log }_8}x - 3}}$$ = 8<sup>6</sup>\n<br><br>Taking $${{{\\log }_8}}$$ both side\n<br><br>$$ \\Rightarrow $$ ($${3{{\\log }_8}x - 3}$$) $$ \\times $$ $${{{\\log }_8}x}$$ = 6\n<br><br>$$ \\Rightarrow $$ $$3{\\left( {{{\\log }_8}x} \\right)^2}$$ - 3$${{{\\log }_8}x}$$ = 6\n<br><br>$$ \\Rightarrow $$ $${\\left( {{{\\log }_8}x} \\right)^2}$$ - $${{{\\log }_8}x}$$ = 2\n<br><br>$$ \\Rightarrow $$ ($${{{\\log }_8}x}$$ - 2)($${{{\\log }_8}x}$$ + 1) = 0\n<br><br>$$ \\Rightarrow $$ $${{{\\log }_8}x}$$ = 2 or $${{{\\log }_8}x}$$ = -1\n<br><br>$$ \\Rightarrow $$ x = 8<sup>2</sup> or x = $${1 \\over 8}$$",
+    "solution": "$${\\left( {{2 \\over x} + {x^{{{\\log }_8}x}}} \\right)^6}$$\n<br><br>Given T<sub>4</sub> = 20 \u00d7 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ $${}^6{C_3}{\\left( {{2 \\over x}} \\right)^3}{\\left( {{x^{{{\\log }_8}x}}} \\right)^3}$$ = 20 \u00d7 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ 20$$ \\times $$$${8 \\over {{x^3}}} \\times {x^{3{{\\log }_8}x}}$$ = 20 \u00d7 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ $${x^{3{{\\log }_8}x - 3}}$$ = 8<sup>6</sup>\n<br><br>Taking $${{{\\log }_8}}$$ both side\n<br><br>$$ \\Rightarrow $$ ($${3{{\\log }_8}x - 3}$$) $$ \\times $$ $${{{\\log }_8}x}$$ = 6\n<br><br>$$ \\Rightarrow $$ $$3{\\left( {{{\\log }_8}x} \\right)^2}$$ - 3$${{{\\log }_8}x}$$ = 6\n<br><br>$$ \\Rightarrow $$ $${\\left( {{{\\log }_8}x} \\right)^2}$$ - $${{{\\log }_8}x}$$ = 2\n<br><br>$$ \\Rightarrow $$ ($${{{\\log }_8}x}$$ - 2)($${{{\\log }_8}x}$$ + 1) = 0\n<br><br>$$ \\Rightarrow $$ $${{{\\log }_8}x}$$ = 2 or $${{{\\log }_8}x}$$ = -1\n<br><br>$$ \\Rightarrow $$ x = 8<sup>2</sup> or x = $${1 \\over 8}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "general-term",
@@ -4278,7 +4278,7 @@
     "year": "2019",
     "difficulty": "Easy",
     "type": "SCQ",
-    "question": "The total number of irrational terms in the binomial expansion of (7<sup>1/5</sup> – 3<sup>1/10</sup>)<sup>60</sup> is :",
+    "question": "The total number of irrational terms in the binomial expansion of (7<sup>1/5</sup> \u2013 3<sup>1/10</sup>)<sup>60</sup> is :",
     "options": [
       "54",
       "55",
@@ -4608,7 +4608,7 @@
     "year": "2017",
     "difficulty": "Hard",
     "type": "SCQ",
-    "question": "The coefficient of x<sup>−5</sup> in the binomial expansion of \n<br><br>$${\\left( {{{x + 1} \\over {{x^{{2 \\over 3}}} - {x^{{1 \\over 3}}} + 1}} - {{x - 1} \\over {x - {x^{{1 \\over 2}}}}}} \\right)^{10}},$$  where x $$ \\ne $$ 0, 1, is :",
+    "question": "The coefficient of x<sup>\u22125</sup> in the binomial expansion of \n<br><br>$${\\left( {{{x + 1} \\over {{x^{{2 \\over 3}}} - {x^{{1 \\over 3}}} + 1}} - {{x - 1} \\over {x - {x^{{1 \\over 2}}}}}} \\right)^{10}},$$  where x $$ \\ne $$ 0, 1, is :",
     "options": [
       "1",
       "4",
@@ -4674,7 +4674,7 @@
     "year": "2016",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "If the coefficients of x<sup>−2</sup> and x<sup>−4</sup> in the expansion of $${\\left( {{x^{{1 \\over 3}}} + {1 \\over {2{x^{{1 \\over 3}}}}}} \\right)^{18}},\\left( {x &gt; 0} \\right),$$ are m and n respectively, then $${m \\over n}$$ is equal to :",
+    "question": "If the coefficients of x<sup>\u22122</sup> and x<sup>\u22124</sup> in the expansion of $${\\left( {{x^{{1 \\over 3}}} + {1 \\over {2{x^{{1 \\over 3}}}}}} \\right)^{18}},\\left( {x &gt; 0} \\right),$$ are m and n respectively, then $${m \\over n}$$ is equal to :",
     "options": [
       "182",
       "$${4 \\over 5}$$",
@@ -6744,7 +6744,7 @@
         "explanation": "It is given that the coefficient of $x^2$ in $(1+x)^2+(1+x)^3+$ $\\cdots+(1+x)^{49}+(1+m x)^{50}$ is $(3 n+1){ }^{51} C_3$.<br/><br/>\nNow,<br/><br/>\n$$\n\\begin{aligned}\n& { }^2 C_2+{ }^3 C_2+{ }^4 C_2+\\cdots+{ }^{49} C_2+m^2{ }^{50} C_2=(3 n+1){ }^{51} C_3 \\\\\\\\\n& \\Rightarrow{ }^3 C_3+{ }^3 C_2+{ }^4 C_2+\\cdots+{ }^{49} C_2+m^2{ }^{50} C_2=(3 n+1){ }^{51} C_3 \\\\\\\\\n& \\quad \\quad\\left(\\text { as } n C r+n C r-1=n^{+1} C r\\right) \\\\\\\\\n& \\Rightarrow{ }^4 C_3+{ }^4 C_2+\\cdots+{ }^{49} C_2+m^{250} C_2=(3 n+1){ }^{51} C_3 \\\\\\\\\n& \\Rightarrow{ }^{49} C_3+{ }^{49} C_2+m{ }^{250} C_2=(3 n+1){ }^{51} C_3 \\\\\\\\\n& \\Rightarrow{ }^{50} C_3+m^2{ }^{50} C_2=(3 n+1){ }^{51} C_3 \\\\\\\\\n& \\Rightarrow{ }^{50} C_3+{ }^{50} C_2+m^2{ }^{50} C_2=(3 n+1){ }^{51} C_3+{ }^{50} C_2 \\\\\\\\\n& \\Rightarrow{ }^{51} C_3+m^2{ }^{50} C_2=3 n{ }^{51} C_3+{ }^{51} C_3+{ }^{50} C_2 \\\\\\\\\n& \\Rightarrow{ }^{-50} C_2+m^{250} C_2=3 n{ }^{51} C_3 \\\\\\\\\n& \\Rightarrow{ }^{50} C_2\\left(m^2-1\\right)=3 n \\cdot \\frac{51}{3}{ }^{50} C_2\\left({ }^n C_r=\\frac{n}{r} \\quad{ }^{n-1} C_{r-1}\\right) \\\\\\\\\n& \\Rightarrow 2\\left(m^2-1\\right)=51\n\\end{aligned}\n$$<br/><br/>\nTherefore, $m^2=51 n+1$.<br/><br/>\n$$\n\\begin{gathered}\n\\Rightarrow n=\\frac{m^2-1}{51} \\\\\\\\\n\\Rightarrow m=16 \\Rightarrow n=5\\left(m, n \\in \\mathrm{I}^{+}\\right)\n\\end{gathered}\n$$"
       },
       "hi": {
-        "content": "मान लीजिए $$m$$ सबसे छोटा धनात्मक पूर्णांक है जिससे $${x^2}$$ का गुणांक $${\\left( {1 + x} \\right)^2} + {\\left( {1 + x} \\right)^3} + ........ + {\\left( {1 + x} \\right)^{49}} + {\\left( {1 + mx} \\right)^{50}}\\,\\,$$ के विस्तार में $$\\left( {3n + 1} \\right)\\,{}^{51}{C_3}$$ किसी धनात्मक पूर्णांक $$n$$ के लिए है। तब $$n$$ का मान कितना है?",
+        "content": "\u092e\u093e\u0928 \u0932\u0940\u091c\u093f\u090f $$m$$ \u0938\u092c\u0938\u0947 \u091b\u094b\u091f\u093e \u0927\u0928\u093e\u0924\u094d\u092e\u0915 \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915 \u0939\u0948 \u091c\u093f\u0938\u0938\u0947 $${x^2}$$ \u0915\u093e \u0917\u0941\u0923\u093e\u0902\u0915 $${\\left( {1 + x} \\right)^2} + {\\left( {1 + x} \\right)^3} + ........ + {\\left( {1 + x} \\right)^{49}} + {\\left( {1 + mx} \\right)^{50}}\\,\\,$$ \u0915\u0947 \u0935\u093f\u0938\u094d\u0924\u093e\u0930 \u092e\u0947\u0902 $$\\left( {3n + 1} \\right)\\,{}^{51}{C_3}$$ \u0915\u093f\u0938\u0940 \u0927\u0928\u093e\u0924\u094d\u092e\u0915 \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915 $$n$$ \u0915\u0947 \u0932\u093f\u090f \u0939\u0948\u0964 \u0924\u092c $$n$$ \u0915\u093e \u092e\u093e\u0928 \u0915\u093f\u0924\u0928\u093e \u0939\u0948?",
         "options": [],
         "correct_options": [],
         "answer": "5",
@@ -6780,11 +6780,11 @@
       },
       "hi": {
         "direction": null,
-        "content": "मान लीजिए $$X = {({}^{10}{C_1})^2} + 2{({}^{10}{C_2})^2} + 3{({}^{10}{C_3})^2} + ... + 10{({}^{10}{C_{10}})^2}$$,<br/><br/> जहाँ $${}^{10}{C_r}$$, r $$ \\in $${1, 2, ..., 10} द्विपद गुणांक को निरुपित करते हैं। फिर, $${1 \\over {1430}}X$$ का मान ..........है।",
+        "content": "\u092e\u093e\u0928 \u0932\u0940\u091c\u093f\u090f $$X = {({}^{10}{C_1})^2} + 2{({}^{10}{C_2})^2} + 3{({}^{10}{C_3})^2} + ... + 10{({}^{10}{C_{10}})^2}$$,<br/><br/> \u091c\u0939\u093e\u0901 $${}^{10}{C_r}$$, r $$ \\in $${1, 2, ..., 10} \u0926\u094d\u0935\u093f\u092a\u0926 \u0917\u0941\u0923\u093e\u0902\u0915 \u0915\u094b \u0928\u093f\u0930\u0941\u092a\u093f\u0924 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964 \u092b\u093f\u0930, $${1 \\over {1430}}X$$ \u0915\u093e \u092e\u093e\u0928 ..........\u0939\u0948\u0964",
         "options": [],
         "correct_options": [],
         "answer": "646",
-        "explanation": "हमारे पास है,<br><br>$$X = {({}^{10}{C_1})^2} + 2{({}^{10}{C_2})^2} + 3{({}^{10}{C_3})^2} + ... + 10{({}^{10}{C_{10}})^2}$$<br><br>$$ \\Rightarrow X = \\sum\\limits_{r = 1}^{10} r {({}^{10}{C_r})^2}$$<br><br>$$ \\Rightarrow X = \\sum\\limits_{r = 1}^{10} r\\times {}^{10}{C_r}\\times{}^{10}{C_r}$$<br><br>$$ \\Rightarrow X = \\sum\\limits_{r = 1}^{10} r \\times {}^{10}{C_r}\\times {{10} \\over r}\\times{}^9{C_{r - 1}}$$ &nbsp;&nbsp; $$\\left[  \\,\\because{{}^{n}{C_r} = {n \\over r}{}^{n - 1}{C_{r - 1}}} \\right]$$<br><br>$$ \\Rightarrow X = 10\\sum\\limits_{r = 1}^{10} {{}^9{C_{r - 1}}} {}^{10}{C_r}$$<br><br>$$ \\Rightarrow X = 10\\sum\\limits_{r = 1}^{10} {{}^9{C_{r - 1}}} {}^{10}{C_{10 - r}}$$ [&nbsp;$$ \\because $$ $${}^n{C_r} = {}^n{C_{n - r}}$$]<br><br>$$ \\Rightarrow X = 10 \\times {}^{19}{C_9}$$<br><br>[&nbsp;$$ \\because $$ $${}^{n - 1}{C_{r - 1}}{}^n{C_{n - r}} = {}^{2n - 1}{C_{n - 1}}$$]<br><br>अब, $${1 \\over {1430}}X = {{10 \\times {}^{19}{C_9}} \\over {1430}} = {{{}^{19}{C_9}} \\over {143}} = {{{}^{19}{C_9}} \\over {11 \\times 13}}$$<br><br>$$ = {{19 \\times 17 \\times 16} \\over 8} = 19 \\times 34 = 646$$",
+        "explanation": "\u0939\u092e\u093e\u0930\u0947 \u092a\u093e\u0938 \u0939\u0948,<br><br>$$X = {({}^{10}{C_1})^2} + 2{({}^{10}{C_2})^2} + 3{({}^{10}{C_3})^2} + ... + 10{({}^{10}{C_{10}})^2}$$<br><br>$$ \\Rightarrow X = \\sum\\limits_{r = 1}^{10} r {({}^{10}{C_r})^2}$$<br><br>$$ \\Rightarrow X = \\sum\\limits_{r = 1}^{10} r\\times {}^{10}{C_r}\\times{}^{10}{C_r}$$<br><br>$$ \\Rightarrow X = \\sum\\limits_{r = 1}^{10} r \\times {}^{10}{C_r}\\times {{10} \\over r}\\times{}^9{C_{r - 1}}$$ &nbsp;&nbsp; $$\\left[  \\,\\because{{}^{n}{C_r} = {n \\over r}{}^{n - 1}{C_{r - 1}}} \\right]$$<br><br>$$ \\Rightarrow X = 10\\sum\\limits_{r = 1}^{10} {{}^9{C_{r - 1}}} {}^{10}{C_r}$$<br><br>$$ \\Rightarrow X = 10\\sum\\limits_{r = 1}^{10} {{}^9{C_{r - 1}}} {}^{10}{C_{10 - r}}$$ [&nbsp;$$ \\because $$ $${}^n{C_r} = {}^n{C_{n - r}}$$]<br><br>$$ \\Rightarrow X = 10 \\times {}^{19}{C_9}$$<br><br>[&nbsp;$$ \\because $$ $${}^{n - 1}{C_{r - 1}}{}^n{C_{n - r}} = {}^{2n - 1}{C_{n - 1}}$$]<br><br>\u0905\u092c, $${1 \\over {1430}}X = {{10 \\times {}^{19}{C_9}} \\over {1430}} = {{{}^{19}{C_9}} \\over {143}} = {{{}^{19}{C_9}} \\over {11 \\times 13}}$$<br><br>$$ = {{19 \\times 17 \\times 16} \\over 8} = 19 \\times 34 = 646$$",
         "comprehension": null
       }
     },
@@ -6837,23 +6837,23 @@
       "hi": {
         "direction": null,
         "comprehension": null,
-        "content": "<p>माना कि ऋणेतर पूर्णांकों (nonnegative integers) $$s$$ एवं $$r$$ के लिये</p>\n<p>$$\\left(\\begin{array}{l}s \\\\r\\end{array}\\right)= \\begin{cases}\\frac{s !}{r !(s-r) !} & \\text { if } r \\leq s, \\\\0 & \\text { if } r>s\\end{cases}$$</p>\n<p>है | माना कि धनात्मक पूर्णांकों (positive integers) $$m$$ एवं $$n$$ के लिये</p>\n<p>$$g(m, n)=\\sum_\\limits{p=0}^{m+n} \\frac{f(m, n, p)}{\\left(\\begin{array}{c}n+p \\\\p\\end{array}\\right)}$$</p>\n<p>है, जहाँ किसी ऋणेतर पूर्णांक $$p$$ के लिये</p>\n<p>$$f(m, n, p)=\\sum_\\limits{i=0}^{p}\\left(\\begin{array}{c}m \\\\i\\end{array}\\right)\\left(\\begin{array}{c}n+i \\\\p\\end{array}\\right)\\left(\\begin{array}{c}p+n \\\\p-i\\end{array}\\right)$$</p>\n<p>है। तब निम्न में से कौन सा (से) कथन सही है (हैं)?</p>",
+        "content": "<p>\u092e\u093e\u0928\u093e \u0915\u093f \u090b\u0923\u0947\u0924\u0930 \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915\u094b\u0902 (nonnegative integers) $$s$$ \u090f\u0935\u0902 $$r$$ \u0915\u0947 \u0932\u093f\u092f\u0947</p>\n<p>$$\\left(\\begin{array}{l}s \\\\r\\end{array}\\right)= \\begin{cases}\\frac{s !}{r !(s-r) !} & \\text { if } r \\leq s, \\\\0 & \\text { if } r>s\\end{cases}$$</p>\n<p>\u0939\u0948 | \u092e\u093e\u0928\u093e \u0915\u093f \u0927\u0928\u093e\u0924\u094d\u092e\u0915 \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915\u094b\u0902 (positive integers) $$m$$ \u090f\u0935\u0902 $$n$$ \u0915\u0947 \u0932\u093f\u092f\u0947</p>\n<p>$$g(m, n)=\\sum_\\limits{p=0}^{m+n} \\frac{f(m, n, p)}{\\left(\\begin{array}{c}n+p \\\\p\\end{array}\\right)}$$</p>\n<p>\u0939\u0948, \u091c\u0939\u093e\u0901 \u0915\u093f\u0938\u0940 \u090b\u0923\u0947\u0924\u0930 \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915 $$p$$ \u0915\u0947 \u0932\u093f\u092f\u0947</p>\n<p>$$f(m, n, p)=\\sum_\\limits{i=0}^{p}\\left(\\begin{array}{c}m \\\\i\\end{array}\\right)\\left(\\begin{array}{c}n+i \\\\p\\end{array}\\right)\\left(\\begin{array}{c}p+n \\\\p-i\\end{array}\\right)$$</p>\n<p>\u0939\u0948\u0964 \u0924\u092c \u0928\u093f\u092e\u094d\u0928 \u092e\u0947\u0902 \u0938\u0947 \u0915\u094c\u0928 \u0938\u093e (\u0938\u0947) \u0915\u0925\u0928 \u0938\u0939\u0940 \u0939\u0948 (\u0939\u0948\u0902)?</p>",
         "options": [
           {
             "identifier": "A",
-            "content": "सभी धनात्मक पूर्णांकों $$m, n$$ के लिये $$g(m, n)=g(n, m)$$ है"
+            "content": "\u0938\u092d\u0940 \u0927\u0928\u093e\u0924\u094d\u092e\u0915 \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915\u094b\u0902 $$m, n$$ \u0915\u0947 \u0932\u093f\u092f\u0947 $$g(m, n)=g(n, m)$$ \u0939\u0948"
           },
           {
             "identifier": "B",
-            "content": "सभी धनात्मक पूर्णांकों $$m, n$$ के लिये $$g(m, n+1)=g(m+1, n)$$ है"
+            "content": "\u0938\u092d\u0940 \u0927\u0928\u093e\u0924\u094d\u092e\u0915 \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915\u094b\u0902 $$m, n$$ \u0915\u0947 \u0932\u093f\u092f\u0947 $$g(m, n+1)=g(m+1, n)$$ \u0939\u0948"
           },
           {
             "identifier": "C",
-            "content": "सभी धनात्मक पूर्णांकों $$m, n$$ के लिये $$g(2 m, 2 n)=2 g(m, n)$$ है"
+            "content": "\u0938\u092d\u0940 \u0927\u0928\u093e\u0924\u094d\u092e\u0915 \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915\u094b\u0902 $$m, n$$ \u0915\u0947 \u0932\u093f\u092f\u0947 $$g(2 m, 2 n)=2 g(m, n)$$ \u0939\u0948"
           },
           {
             "identifier": "D",
-            "content": "सभी धनात्मक पूर्णांकों $$m, n$$ के लिये $$g(2 m, 2 n)=(g(m, n))^{2}$$ है "
+            "content": "\u0938\u092d\u0940 \u0927\u0928\u093e\u0924\u094d\u092e\u0915 \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915\u094b\u0902 $$m, n$$ \u0915\u0947 \u0932\u093f\u092f\u0947 $$g(2 m, 2 n)=(g(m, n))^{2}$$ \u0939\u0948 "
           }
         ],
         "correct_options": [
@@ -6862,7 +6862,7 @@
           "D"
         ],
         "answer": null,
-        "explanation": "चूँकि,<br><br>$$f(m,n,p) = \\sum\\limits_{i = 0}^p {\\left( {\\matrix{\n   m  \\cr \n   i  \\cr \n\n } } \\right)\\left( {\\matrix{\n   {n + i}  \\cr \n   p  \\cr \n\n } } \\right)\\left( {\\matrix{\n   {p + n}  \\cr \n   {p - i}  \\cr \n\n } } \\right)} $$<br><br>$$ = \\sum\\limits_{i = 0}^p {{{m!} \\over {i!(m - i)!}} \\times {{(n + i)!} \\over {p!(n + i - p)!}} \\times {{(p + n)!} \\over {(p - i)!(n + i)!}}} $$<br><br>$$ = {{(n + p)!} \\over {p!}}\\sum\\limits_{i = 0}^p {{}^m{C_i} \\times {}^n{C_{p - i}}} $$<br><br>$$ = {}^{n + p}{C_p}{}^{m + n}{C_p}$$<br><br>चूँकि, $$g(m,\\,n) = \\sum\\limits_{p = 0}^{m + n} {{{f(m,n,p)} \\over {\\left( {\\matrix{\n   {n + p}  \\cr \n   p  \\cr \n\n } } \\right)}}} $$<br><br>$$ = \\sum\\limits_{p = 0}^{m + n} {{{{}^{n + p}{C_p} \\times {}^{m + n}{C_p}} \\over {{}^{n + p}{C_p}}}} $$<br><br>$$ = \\sum\\limits_{p = 0}^{m + n} {{}^{m + n}{C_p}}  = {2^{m + n}}$$<br><br>$$ \\therefore $$ $$g(m,n) = g(n,m) = {2^{m + n}}$$, <br><br>और $$g(m,n + 1) = {2^{m + n + 1}} = g(m + 1,n)$$ और <br><br>$$g(2m,2n) = {2^{2(m + n)}} = {({2^{(m + n)}})^2} = {(g(m,n))^2}$$."
+        "explanation": "\u091a\u0942\u0901\u0915\u093f,<br><br>$$f(m,n,p) = \\sum\\limits_{i = 0}^p {\\left( {\\matrix{\n   m  \\cr \n   i  \\cr \n\n } } \\right)\\left( {\\matrix{\n   {n + i}  \\cr \n   p  \\cr \n\n } } \\right)\\left( {\\matrix{\n   {p + n}  \\cr \n   {p - i}  \\cr \n\n } } \\right)} $$<br><br>$$ = \\sum\\limits_{i = 0}^p {{{m!} \\over {i!(m - i)!}} \\times {{(n + i)!} \\over {p!(n + i - p)!}} \\times {{(p + n)!} \\over {(p - i)!(n + i)!}}} $$<br><br>$$ = {{(n + p)!} \\over {p!}}\\sum\\limits_{i = 0}^p {{}^m{C_i} \\times {}^n{C_{p - i}}} $$<br><br>$$ = {}^{n + p}{C_p}{}^{m + n}{C_p}$$<br><br>\u091a\u0942\u0901\u0915\u093f, $$g(m,\\,n) = \\sum\\limits_{p = 0}^{m + n} {{{f(m,n,p)} \\over {\\left( {\\matrix{\n   {n + p}  \\cr \n   p  \\cr \n\n } } \\right)}}} $$<br><br>$$ = \\sum\\limits_{p = 0}^{m + n} {{{{}^{n + p}{C_p} \\times {}^{m + n}{C_p}} \\over {{}^{n + p}{C_p}}}} $$<br><br>$$ = \\sum\\limits_{p = 0}^{m + n} {{}^{m + n}{C_p}}  = {2^{m + n}}$$<br><br>$$ \\therefore $$ $$g(m,n) = g(n,m) = {2^{m + n}}$$, <br><br>\u0914\u0930 $$g(m,n + 1) = {2^{m + n + 1}} = g(m + 1,n)$$ \u0914\u0930 <br><br>$$g(2m,2n) = {2^{2(m + n)}} = {({2^{(m + n)}})^2} = {(g(m,n))^2}$$."
       }
     },
     "options": [],
@@ -6894,11 +6894,11 @@
       "hi": {
         "comprehension": null,
         "direction": null,
-        "content": "माना कि $a$ एवं $b$ दो शून्येतर (nonzero) वास्तविक संख्याएं (real numbers) हैं। यदि $\\left(a x^2+\\frac{70}{27 b x}\\right)^4$ के प्रसार (expansion) में $x^5$ का गुणांक (coefficient), $\\left(a x-\\frac{1}{b x^2}\\right)^7$ के प्रसार में $x^{-5}$ के गुणांक के बराबर है, तब $2 b$ का मान है",
+        "content": "\u092e\u093e\u0928\u093e \u0915\u093f $a$ \u090f\u0935\u0902 $b$ \u0926\u094b \u0936\u0942\u0928\u094d\u092f\u0947\u0924\u0930 (nonzero) \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0938\u0902\u0916\u094d\u092f\u093e\u090f\u0902 (real numbers) \u0939\u0948\u0902\u0964 \u092f\u0926\u093f $\\left(a x^2+\\frac{70}{27 b x}\\right)^4$ \u0915\u0947 \u092a\u094d\u0930\u0938\u093e\u0930 (expansion) \u092e\u0947\u0902 $x^5$ \u0915\u093e \u0917\u0941\u0923\u093e\u0902\u0915 (coefficient), $\\left(a x-\\frac{1}{b x^2}\\right)^7$ \u0915\u0947 \u092a\u094d\u0930\u0938\u093e\u0930 \u092e\u0947\u0902 $x^{-5}$ \u0915\u0947 \u0917\u0941\u0923\u093e\u0902\u0915 \u0915\u0947 \u092c\u0930\u093e\u092c\u0930 \u0939\u0948, \u0924\u092c $2 b$ \u0915\u093e \u092e\u093e\u0928 \u0939\u0948",
         "options": [],
         "correct_options": [],
         "answer": "3",
-        "explanation": "$$\n\\begin{aligned}\n& \\mathrm{T}_{\\mathrm{r}+1}={ }^4 \\mathrm{C}_{\\mathrm{r}}\\left(\\mathrm{a} \\cdot \\mathrm{x}^2\\right)^{4-\\mathrm{r}} \\cdot\\left(\\frac{70}{27 \\mathrm{bx}}\\right)^{\\mathrm{r}} \\\\\\\\\n& ={ }^4 \\mathrm{C}_{\\mathrm{r}} \\cdot \\mathrm{a}^{4-\\mathrm{r}} \\cdot \\frac{70^{\\mathrm{r}}}{(27 b)^{\\mathrm{r}}} \\cdot x^{8-3 \\mathrm{r}}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { यहाँ } 8-3 r=5 \\\\\\\\\n& 8-5=3 r \\Rightarrow r=1 \\\\\\\\\n& \\therefore \\text { गुणांक }=4 \\cdot a^3 \\cdot \\frac{70}{27 b}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{T}_{\\mathrm{r}+1}={ }^7 \\mathrm{C}_{\\mathrm{r}}(\\mathrm{ax})^{7-\\mathrm{r}}\\left(\\frac{-1}{\\mathrm{bx}^2}\\right)^{\\mathrm{r}} \\\\\\\\\n& ={ }^7 \\mathrm{C}_{\\mathrm{r}} \\cdot a^{7-\\mathrm{r}}\\left(\\frac{-1}{\\mathrm{~b}}\\right)^{\\mathrm{r}} \\cdot \\mathrm{x}^{7-3 \\mathrm{r}} \\\\\\\\\n& 7-3 \\mathrm{r}=-5 \\Rightarrow 12=3 \\mathrm{r} \\Rightarrow \\mathrm{r}=4\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { अब } \\frac{35 \\mathrm{a}^3}{\\mathrm{~b}^4}=\\frac{280 \\mathrm{a}^3}{27 \\mathrm{~b}} \\\\\\\\\n& \\mathrm{~b}^3=\\frac{35 \\times 27}{280}=\\mathrm{b}=\\frac{3}{2} \\Rightarrow 2 \\mathrm{~b}=3\n\\end{aligned}\n$$"
+        "explanation": "$$\n\\begin{aligned}\n& \\mathrm{T}_{\\mathrm{r}+1}={ }^4 \\mathrm{C}_{\\mathrm{r}}\\left(\\mathrm{a} \\cdot \\mathrm{x}^2\\right)^{4-\\mathrm{r}} \\cdot\\left(\\frac{70}{27 \\mathrm{bx}}\\right)^{\\mathrm{r}} \\\\\\\\\n& ={ }^4 \\mathrm{C}_{\\mathrm{r}} \\cdot \\mathrm{a}^{4-\\mathrm{r}} \\cdot \\frac{70^{\\mathrm{r}}}{(27 b)^{\\mathrm{r}}} \\cdot x^{8-3 \\mathrm{r}}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { \u092f\u0939\u093e\u0901 } 8-3 r=5 \\\\\\\\\n& 8-5=3 r \\Rightarrow r=1 \\\\\\\\\n& \\therefore \\text { \u0917\u0941\u0923\u093e\u0902\u0915 }=4 \\cdot a^3 \\cdot \\frac{70}{27 b}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{T}_{\\mathrm{r}+1}={ }^7 \\mathrm{C}_{\\mathrm{r}}(\\mathrm{ax})^{7-\\mathrm{r}}\\left(\\frac{-1}{\\mathrm{bx}^2}\\right)^{\\mathrm{r}} \\\\\\\\\n& ={ }^7 \\mathrm{C}_{\\mathrm{r}} \\cdot a^{7-\\mathrm{r}}\\left(\\frac{-1}{\\mathrm{~b}}\\right)^{\\mathrm{r}} \\cdot \\mathrm{x}^{7-3 \\mathrm{r}} \\\\\\\\\n& 7-3 \\mathrm{r}=-5 \\Rightarrow 12=3 \\mathrm{r} \\Rightarrow \\mathrm{r}=4\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { \u0905\u092c } \\frac{35 \\mathrm{a}^3}{\\mathrm{~b}^4}=\\frac{280 \\mathrm{a}^3}{27 \\mathrm{~b}} \\\\\\\\\n& \\mathrm{~b}^3=\\frac{35 \\times 27}{280}=\\mathrm{b}=\\frac{3}{2} \\Rightarrow 2 \\mathrm{~b}=3\n\\end{aligned}\n$$"
       }
     },
     "options": [],
@@ -6930,11 +6930,11 @@
       "hi": {
         "direction": null,
         "comprehension": null,
-        "content": "<p>मान लीजिए कि $a_0, a_1, \\ldots, a_{23}$ इस प्रकार की वास्तविक संख्याएँ (real numbers) हैं कि सभी वास्तविक संख्याओं $x$ के लिए ,</p>\n<p>$$\\left(1+\\frac{2}{5} x\\right)^{23}=\\sum_\\limits{i=0}^{23} a_i x^i$$</p>\n<p>है। मान लीजिए कि संख्याओं $a_j, 0 \\leq j \\leq 23$, में सबसे बड़ी संख्या $a_r$ है। तब $r$ का मान __________ है।</p>",
+        "content": "<p>\u092e\u093e\u0928 \u0932\u0940\u091c\u093f\u090f \u0915\u093f $a_0, a_1, \\ldots, a_{23}$ \u0907\u0938 \u092a\u094d\u0930\u0915\u093e\u0930 \u0915\u0940 \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0938\u0902\u0916\u094d\u092f\u093e\u090f\u0901 (real numbers) \u0939\u0948\u0902 \u0915\u093f \u0938\u092d\u0940 \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0938\u0902\u0916\u094d\u092f\u093e\u0913\u0902 $x$ \u0915\u0947 \u0932\u093f\u090f ,</p>\n<p>$$\\left(1+\\frac{2}{5} x\\right)^{23}=\\sum_\\limits{i=0}^{23} a_i x^i$$</p>\n<p>\u0939\u0948\u0964 \u092e\u093e\u0928 \u0932\u0940\u091c\u093f\u090f \u0915\u093f \u0938\u0902\u0916\u094d\u092f\u093e\u0913\u0902 $a_j, 0 \\leq j \\leq 23$, \u092e\u0947\u0902 \u0938\u092c\u0938\u0947 \u092c\u0921\u093c\u0940 \u0938\u0902\u0916\u094d\u092f\u093e $a_r$ \u0939\u0948\u0964 \u0924\u092c $r$ \u0915\u093e \u092e\u093e\u0928 __________ \u0939\u0948\u0964</p>",
         "options": [],
         "correct_options": [],
         "answer": "6",
-        "explanation": "<p>$\\mathrm{x}=1$ के लिए</p>\n<p>$$ \\left(1+\\frac{2}{5}\\right)^{23}=a_0+a_1+a_2+\\ldots+a_{23} $$</p>\n<p>संख्यात्मक रूप से महत्तम पद के लिए</p>\n<p>$$ \\begin{aligned} & \\frac{\\mathrm{n}+1}{1+\\left|\\frac{\\mathrm{a}}{\\mathrm{~b}}\\right|}=\\frac{23+1}{1+\\frac{5}{2}}=\\frac{48}{7} \\\\ & \\Rightarrow\\left[\\frac{48}{7}\\right]=6=\\mathrm{m} \\quad \\text { (जहाँ [.] महत्तम पूर्णांक फलन है) } \\end{aligned} $$</p>\n<p>अतः, $\\mathrm{T}_7$ संख्यात्मक रूप से महत्तम पद है</p>\n<p>इसलिए $\\mathrm{r}=6$</p>"
+        "explanation": "<p>$\\mathrm{x}=1$ \u0915\u0947 \u0932\u093f\u090f</p>\n<p>$$ \\left(1+\\frac{2}{5}\\right)^{23}=a_0+a_1+a_2+\\ldots+a_{23} $$</p>\n<p>\u0938\u0902\u0916\u094d\u092f\u093e\u0924\u094d\u092e\u0915 \u0930\u0942\u092a \u0938\u0947 \u092e\u0939\u0924\u094d\u0924\u092e \u092a\u0926 \u0915\u0947 \u0932\u093f\u090f</p>\n<p>$$ \\begin{aligned} & \\frac{\\mathrm{n}+1}{1+\\left|\\frac{\\mathrm{a}}{\\mathrm{~b}}\\right|}=\\frac{23+1}{1+\\frac{5}{2}}=\\frac{48}{7} \\\\ & \\Rightarrow\\left[\\frac{48}{7}\\right]=6=\\mathrm{m} \\quad \\text { (\u091c\u0939\u093e\u0901 [.] \u092e\u0939\u0924\u094d\u0924\u092e \u092a\u0942\u0930\u094d\u0923\u093e\u0902\u0915 \u092b\u0932\u0928 \u0939\u0948) } \\end{aligned} $$</p>\n<p>\u0905\u0924\u0903, $\\mathrm{T}_7$ \u0938\u0902\u0916\u094d\u092f\u093e\u0924\u094d\u092e\u0915 \u0930\u0942\u092a \u0938\u0947 \u092e\u0939\u0924\u094d\u0924\u092e \u092a\u0926 \u0939\u0948</p>\n<p>\u0907\u0938\u0932\u093f\u090f $\\mathrm{r}=6$</p>"
       }
     },
     "options": [],

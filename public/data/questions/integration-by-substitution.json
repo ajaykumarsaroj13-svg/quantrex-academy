@@ -211,7 +211,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -219,7 +219,7 @@
     "difficulty": "medium",
     "solution": "<p>$$I=\\int \\frac{x^8-x^2}{\\left(x^{12}+3 x^6+1\\right) \\tan ^{-1}\\left(x^3+\\frac{1}{x^3}\\right)} d x$$</p>\n<p>$$\\begin{aligned}\n& \\text { Let } \\tan ^{-1}\\left(x^3+\\frac{1}{x^3}\\right)=t \\\\\n& \\Rightarrow \\frac{1}{1+\\left(x^3+\\frac{1}{x^3}\\right)^2} \\cdot\\left(3 x^2-\\frac{3}{x^4}\\right) d x=d t \\\\\n& \\Rightarrow \\frac{x^6}{x^{12}+3 x^6+1} \\cdot \\frac{3 x^6-3}{x^4} d x=d t \\\\\n& I=\\frac{1}{3} \\int \\frac{d t}{t}=\\frac{1}{3} \\ln |t|+C \\\\\n& I=\\frac{1}{3} \\ln \\left|\\tan ^{-1}\\left(x^3+\\frac{1}{x^3}\\right)\\right|+C \\\\\n& I=\\ln \\left|\\tan ^{-1}\\left(x^3+\\frac{1}{x^3}\\right)\\right|^{1 / 3}+C\n\\end{aligned}$$</p>\n<p>Hence option (1) is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsfkcmax",
@@ -517,7 +517,7 @@
     "subject": "Mathematics",
     "topic": "integration-by-substitution",
     "difficulty": "medium",
-    "solution": "Given $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {8 - \\sin 2x} }}} dx$$\n<br><br>Write sin2x = 1 + sin2x - 1\n<br><br>= $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {8 - \\left[ {1 + \\sin 2x - 1} \\right]} }}} dx$$\n<br><br>= $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {8 - \\left[ {{{\\sin }^2}x + {{\\cos }^2}x + 2\\sin x\\cos x - 1} \\right]} }}} dx$$\n<br><br>= $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {8 - \\left[ {{{\\left( {\\sin x + \\cos x} \\right)}^2} - 1} \\right]} }}} dx$$\n<br><br>= $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {9 - {{\\left( {\\sin x + \\cos x} \\right)}^2}} }}} dx$$\n<br><br>put sin x + cos x = t\n<br>$$ \\Rightarrow $$ (cos x – sin x) dx = dt\n<br><br>= $$\\int {{{dt} \\over {\\sqrt {9 - {{\\left( t \\right)}^2}} }}} $$\n<br><br>= $${\\sin ^{ - 1}}\\left( {{t \\over 3}} \\right)$$ + C\n<br><br>= $${\\sin ^{ - 1}}\\left( {{{\\sin x + \\cos x} \\over 3}} \\right) + C$$\n<br><br>$$ \\therefore $$ a = 1 and b = 3",
+    "solution": "Given $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {8 - \\sin 2x} }}} dx$$\n<br><br>Write sin2x = 1 + sin2x - 1\n<br><br>= $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {8 - \\left[ {1 + \\sin 2x - 1} \\right]} }}} dx$$\n<br><br>= $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {8 - \\left[ {{{\\sin }^2}x + {{\\cos }^2}x + 2\\sin x\\cos x - 1} \\right]} }}} dx$$\n<br><br>= $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {8 - \\left[ {{{\\left( {\\sin x + \\cos x} \\right)}^2} - 1} \\right]} }}} dx$$\n<br><br>= $$\\int {{{\\cos x - \\sin x} \\over {\\sqrt {9 - {{\\left( {\\sin x + \\cos x} \\right)}^2}} }}} dx$$\n<br><br>put sin x + cos x = t\n<br>$$ \\Rightarrow $$ (cos x \u2013 sin x) dx = dt\n<br><br>= $$\\int {{{dt} \\over {\\sqrt {9 - {{\\left( t \\right)}^2}} }}} $$\n<br><br>= $${\\sin ^{ - 1}}\\left( {{t \\over 3}} \\right)$$ + C\n<br><br>= $${\\sin ^{ - 1}}\\left( {{{\\sin x + \\cos x} \\over 3}} \\right) + C$$\n<br><br>$$ \\therefore $$ a = 1 and b = 3",
     "section": "A",
     "type": "SCQ"
   },
@@ -622,14 +622,14 @@
     "subject": "Mathematics",
     "topic": "integration-by-substitution",
     "difficulty": "medium",
-    "solution": "Given, I = $$\\int {{{\\sin }^{ - 1}}\\left( {\\sqrt {{x \\over {1 + x}}} } \\right)} dx$$\n<br><br>Let $${\\sin ^{ - 1}}\\left( {{{\\sqrt x } \\over {\\sqrt {1 + x} }}} \\right)$$ = $$\\theta $$\n<br><br>$$ \\Rightarrow $$ $${{{\\sqrt x } \\over {\\sqrt {1 + x} }} = \\sin \\theta }$$\n<br><br>$$ \\Rightarrow $$ tan $$\\theta $$ = $${{{\\sqrt x } \\over 1}}$$\n<br><br>$$ \\Rightarrow $$ $$\\theta $$ = $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right)$$\n<br><br>$$ \\therefore $$ I = $$\\int {{{\\tan }^{ - 1}}\\left( {\\sqrt x } \\right)dx} $$\n<br><br>= $$\\int {{{\\tan }^{ - 1}}\\left( {\\sqrt x } \\right).1dx} $$\n<br><br>Applying integration by parts,\n <br><br>I = $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - \\int {{1 \\over {1 + x}}{1 \\over {2\\sqrt x }}xdx} $$\n<br><br>Let $${\\sqrt x }$$ = t\n<br><br>$$ \\Rightarrow $$ x = t<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ dx = 2tdt\n<br><br>$$ \\therefore $$ I = $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - \\int {{{{t^2}} \\over {\\left( {1 + {t^2}} \\right)\\left( {2t} \\right)}}2tdt} $$\n<br><br>= $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - \\int {{{\\left( {{t^2} + 1} \\right) - 1} \\over {\\left( {1 + {t^2}} \\right)}}dt} $$\n<br><br>= $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - t + {\\tan ^{-1}}t + c$$\n<br><br>= $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - \\sqrt x  + {\\tan ^{ - 1}}\\sqrt x  + c$$\n<br><br>$$ \\therefore $$ A(x) = x + 1, B(x) = –$${\\sqrt x }$$",
+    "solution": "Given, I = $$\\int {{{\\sin }^{ - 1}}\\left( {\\sqrt {{x \\over {1 + x}}} } \\right)} dx$$\n<br><br>Let $${\\sin ^{ - 1}}\\left( {{{\\sqrt x } \\over {\\sqrt {1 + x} }}} \\right)$$ = $$\\theta $$\n<br><br>$$ \\Rightarrow $$ $${{{\\sqrt x } \\over {\\sqrt {1 + x} }} = \\sin \\theta }$$\n<br><br>$$ \\Rightarrow $$ tan $$\\theta $$ = $${{{\\sqrt x } \\over 1}}$$\n<br><br>$$ \\Rightarrow $$ $$\\theta $$ = $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right)$$\n<br><br>$$ \\therefore $$ I = $$\\int {{{\\tan }^{ - 1}}\\left( {\\sqrt x } \\right)dx} $$\n<br><br>= $$\\int {{{\\tan }^{ - 1}}\\left( {\\sqrt x } \\right).1dx} $$\n<br><br>Applying integration by parts,\n <br><br>I = $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - \\int {{1 \\over {1 + x}}{1 \\over {2\\sqrt x }}xdx} $$\n<br><br>Let $${\\sqrt x }$$ = t\n<br><br>$$ \\Rightarrow $$ x = t<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ dx = 2tdt\n<br><br>$$ \\therefore $$ I = $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - \\int {{{{t^2}} \\over {\\left( {1 + {t^2}} \\right)\\left( {2t} \\right)}}2tdt} $$\n<br><br>= $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - \\int {{{\\left( {{t^2} + 1} \\right) - 1} \\over {\\left( {1 + {t^2}} \\right)}}dt} $$\n<br><br>= $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - t + {\\tan ^{-1}}t + c$$\n<br><br>= $${\\tan ^{ - 1}}\\left( {\\sqrt x } \\right).x - \\sqrt x  + {\\tan ^{ - 1}}\\sqrt x  + c$$\n<br><br>$$ \\therefore $$ A(x) = x + 1, B(x) = \u2013$${\\sqrt x }$$",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "E6ZDVN1s3vLFiRj1o5jgy2xukf7g2hr5",
     "questionNumber": 59,
-    "questionText": "Let $$f\\left( x \\right) = \\int {{{\\sqrt x } \\over {{{\\left( {1 + x} \\right)}^2}}}dx\\left( {x \\ge 0} \\right)} $$.  Then f(3) – f(1) is eqaul to :",
+    "questionText": "Let $$f\\left( x \\right) = \\int {{{\\sqrt x } \\over {{{\\left( {1 + x} \\right)}^2}}}dx\\left( {x \\ge 0} \\right)} $$.  Then f(3) \u2013 f(1) is eqaul to :",
     "options": [
       "$$ - {\\pi  \\over {12}} + {1 \\over 2} + {{\\sqrt 3 } \\over 4}$$",
       "$$ {\\pi  \\over {12}} + {1 \\over 2} - {{\\sqrt 3 } \\over 4}$$",
@@ -717,12 +717,12 @@
   {
     "id": "7CoM1UAK7oFjOeAfUm7k9k2k5khl5cw",
     "questionNumber": 60,
-    "questionText": "If $$\\int {{{d\\theta } \\over {{{\\cos }^2}\\theta \\left( {\\tan 2\\theta  + \\sec 2\\theta } \\right)}}}  = \\lambda \\tan \\theta  + 2{\\log _e}\\left| {f\\left( \\theta  \\right)} \\right| + C$$<br><br>\nwhere C is a constant of integration, then the\nordered pair ($$\\lambda $$, ƒ($$\\theta $$)) is equal to :",
+    "questionText": "If $$\\int {{{d\\theta } \\over {{{\\cos }^2}\\theta \\left( {\\tan 2\\theta  + \\sec 2\\theta } \\right)}}}  = \\lambda \\tan \\theta  + 2{\\log _e}\\left| {f\\left( \\theta  \\right)} \\right| + C$$<br><br>\nwhere C is a constant of integration, then the\nordered pair ($$\\lambda $$, \u0192($$\\theta $$)) is equal to :",
     "options": [
-      "(–1, 1 – tan$$\\theta $$)",
+      "(\u20131, 1 \u2013 tan$$\\theta $$)",
       "(1, 1 + tan$$\\theta $$)",
-      "(–1, 1 + tan$$\\theta $$)",
-      "(1, 1 – tan$$\\theta $$)"
+      "(\u20131, 1 + tan$$\\theta $$)",
+      "(1, 1 \u2013 tan$$\\theta $$)"
     ],
     "correctOption": 2,
     "correctAnswer": null,
@@ -732,7 +732,7 @@
     "subject": "Mathematics",
     "topic": "integration-by-substitution",
     "difficulty": "medium",
-    "solution": "I = $$\\int {{{d\\theta } \\over {{{\\cos }^2}\\theta \\left( {\\tan 2\\theta  + \\sec 2\\theta } \\right)}}}$$\n<br><br>= $$\\int {{{{{\\sec }^2}\\theta d\\theta } \\over {{{2\\tan \\theta } \\over {1 - {{\\tan }^2}\\theta }} + {{1 + {{\\tan }^2}\\theta } \\over {1 - {{\\tan }^2}\\theta }}}}} $$\n<br><br>= $$\\int {{{\\left( {1 - {{\\tan }^2}\\theta } \\right){{\\sec }^2}\\theta d\\theta } \\over {{{\\left( {1 + {{\\tan }}\\theta } \\right)}^2}}}} $$\n<br><br>tan$$\\theta $$ = t $$ \\Rightarrow $$ sec<sup>2</sup> $$\\theta $$ d$$\\theta $$ = dt\n<br><br>= $$\\int {{{\\left( {1 - {t^2}} \\right)dt} \\over {{{\\left( {1 + {t}} \\right)}^2}}}} $$\n<br><br>= $$\\int {{{\\left( {1 - t} \\right)\\left( {1 + t} \\right)dt} \\over {{{\\left( {1 + {t}} \\right)}^2}}}} $$\n<br><br>= $$\\int {{{\\left( {1 - t} \\right)} \\over {\\left( {1 + t} \\right)}}} dt$$\n<br><br>= $$\\int {\\left( {{1 \\over {\\left( {1 + t} \\right)}} - {t \\over {\\left( {1 + t} \\right)}}} \\right)} dt$$\n<br><br>= $${\\log _e}\\left| {1 + t} \\right|$$ - $$\\int {\\left( {{{1 + t} \\over {\\left( {1 + t} \\right)}} - {1 \\over {\\left( {1 + t} \\right)}}} \\right)} dt$$\n<br><br>= $${\\log _e}\\left| {1 + t} \\right|$$ - t + $${\\log _e}\\left| {1 + t} \\right|$$ + C\n<br><br>= 2$${\\log _e}\\left| {1 + t} \\right|$$ - t + C\n<br><br>= 2$${\\log _e}\\left| {1 + \\tan \\theta } \\right|$$ - tan $$\\theta $$ + C\n<br><br>$$ \\therefore $$ $$\\lambda $$ = -1 and ƒ($$\\theta $$) = 1 + tan$$\\theta $$",
+    "solution": "I = $$\\int {{{d\\theta } \\over {{{\\cos }^2}\\theta \\left( {\\tan 2\\theta  + \\sec 2\\theta } \\right)}}}$$\n<br><br>= $$\\int {{{{{\\sec }^2}\\theta d\\theta } \\over {{{2\\tan \\theta } \\over {1 - {{\\tan }^2}\\theta }} + {{1 + {{\\tan }^2}\\theta } \\over {1 - {{\\tan }^2}\\theta }}}}} $$\n<br><br>= $$\\int {{{\\left( {1 - {{\\tan }^2}\\theta } \\right){{\\sec }^2}\\theta d\\theta } \\over {{{\\left( {1 + {{\\tan }}\\theta } \\right)}^2}}}} $$\n<br><br>tan$$\\theta $$ = t $$ \\Rightarrow $$ sec<sup>2</sup> $$\\theta $$ d$$\\theta $$ = dt\n<br><br>= $$\\int {{{\\left( {1 - {t^2}} \\right)dt} \\over {{{\\left( {1 + {t}} \\right)}^2}}}} $$\n<br><br>= $$\\int {{{\\left( {1 - t} \\right)\\left( {1 + t} \\right)dt} \\over {{{\\left( {1 + {t}} \\right)}^2}}}} $$\n<br><br>= $$\\int {{{\\left( {1 - t} \\right)} \\over {\\left( {1 + t} \\right)}}} dt$$\n<br><br>= $$\\int {\\left( {{1 \\over {\\left( {1 + t} \\right)}} - {t \\over {\\left( {1 + t} \\right)}}} \\right)} dt$$\n<br><br>= $${\\log _e}\\left| {1 + t} \\right|$$ - $$\\int {\\left( {{{1 + t} \\over {\\left( {1 + t} \\right)}} - {1 \\over {\\left( {1 + t} \\right)}}} \\right)} dt$$\n<br><br>= $${\\log _e}\\left| {1 + t} \\right|$$ - t + $${\\log _e}\\left| {1 + t} \\right|$$ + C\n<br><br>= 2$${\\log _e}\\left| {1 + t} \\right|$$ - t + C\n<br><br>= 2$${\\log _e}\\left| {1 + \\tan \\theta } \\right|$$ - tan $$\\theta $$ + C\n<br><br>$$ \\therefore $$ $$\\lambda $$ = -1 and \u0192($$\\theta $$) = 1 + tan$$\\theta $$",
     "section": "A",
     "type": "SCQ"
   },
@@ -761,7 +761,7 @@
   {
     "id": "2TA2SAVPabICEfCIXG3rsa0w2w9jx2b6x3x",
     "questionNumber": 74,
-    "questionText": "If $$\\int {{x^5}} {e^{ - {x^2}}}dx = g\\left( x \\right){e^{ - {x^2}}} + c$$,  where c is a constant of integration, then $$g$$(–1) is equal to :",
+    "questionText": "If $$\\int {{x^5}} {e^{ - {x^2}}}dx = g\\left( x \\right){e^{ - {x^2}}} + c$$,  where c is a constant of integration, then $$g$$(\u20131) is equal to :",
     "options": [
       "1",
       "- 1",
@@ -785,10 +785,10 @@
     "questionNumber": 75,
     "questionText": "If $$\\int {{{dx} \\over {{{\\left( {{x^2} - 2x + 10} \\right)}^2}}}}  = A\\left( {{{\\tan }^{ - 1}}\\left( {{{x - 1} \\over 3}} \\right) + {{f\\left( x \\right)} \\over {{x^2} - 2x + 10}}} \\right) + C$$\n<br><br> where C is a constant of integration then :",
     "options": [
-      "A =$${1 \\over {54}}$$ and f(x) = 9(x–1)<sup>2</sup>",
-      "A =$${1 \\over {54}}$$ and f(x) = 3(x–1)",
-      "A =$${1 \\over {81}}$$ and f(x) = 3(x–1)",
-      "A =$${1 \\over {27}}$$ and f(x) = 9(x–1)<sup>2</sup>"
+      "A =$${1 \\over {54}}$$ and f(x) = 9(x\u20131)<sup>2</sup>",
+      "A =$${1 \\over {54}}$$ and f(x) = 3(x\u20131)",
+      "A =$${1 \\over {81}}$$ and f(x) = 3(x\u20131)",
+      "A =$${1 \\over {27}}$$ and f(x) = 9(x\u20131)<sup>2</sup>"
     ],
     "correctOption": 1,
     "correctAnswer": null,
@@ -798,7 +798,7 @@
     "subject": "Mathematics",
     "topic": "integration-by-substitution",
     "difficulty": "medium",
-    "solution": "$$\\int {{{dx} \\over {{{({x^2} - 2x + 10)}^2}}} = \\int {{{dx} \\over {{{({{(x - 1)}^2} + 9)}^2}}}} } $$<br><br>\n$$Let{\\rm{ }}{\\left( {x{\\rm{ }}-{\\rm{ }}1} \\right)^2}{\\rm{ }} = {\\rm{ }}9ta{n^2}\\theta \\,\\,\\,\\,...\\left( i \\right)$$<br><br>\n$$ \\Rightarrow \\tan \\theta  = {{x - 1} \\over 3}$$<br><br>\nOn Differentiating ...(i)<br><br>\n2(x – 1)dx = 18tan$$\\theta $$ sec<sup>2</sup>$$\\theta $$ d$$\\theta $$<br><br>\n$$ \\therefore I = \\int {{{18\\tan \\theta {{\\sec }^2}\\theta d\\theta } \\over {2 \\times 3\\tan \\theta  \\times 81{{\\sec }^4}\\theta }}} $$<br><br>\n$$I = {1 \\over {27}}\\int {{{\\cos }^2}\\theta \\,d\\theta }  = {1 \\over {27}} \\times {1 \\over 2}\\int {\\left( {1 + \\cos 2\\theta } \\right)} d\\theta $$<br><br>\n$$I = {1 \\over {54}}\\left\\{ {\\theta  + {{\\sin 2\\theta } \\over 2}} \\right\\} + c$$<br><br>\n$$I = {1 \\over {54}}\\left\\{ {{{\\tan }^{ - 1}}\\left( {{{x - 1} \\over 3}} \\right) + {1 \\over 2} \\times {{2\\left( {{{x - 1} \\over 3}} \\right)} \\over {1 + {{\\left( {{{x - 1} \\over 3}} \\right)}^2}}}} \\right\\} + c$$<br><br>\n$$I = {1 \\over {54}}\\left[ {{{\\tan }^{ - 1}}\\left( {{{x - 1} \\over 3}} \\right) + {{3(x - 1)} \\over {{x^2} - 2x + 10}}} \\right] + c$$<br><br>\nthen $$A = {1 \\over {54}}$$<br><br>\nf(x) = 3(x – 1)",
+    "solution": "$$\\int {{{dx} \\over {{{({x^2} - 2x + 10)}^2}}} = \\int {{{dx} \\over {{{({{(x - 1)}^2} + 9)}^2}}}} } $$<br><br>\n$$Let{\\rm{ }}{\\left( {x{\\rm{ }}-{\\rm{ }}1} \\right)^2}{\\rm{ }} = {\\rm{ }}9ta{n^2}\\theta \\,\\,\\,\\,...\\left( i \\right)$$<br><br>\n$$ \\Rightarrow \\tan \\theta  = {{x - 1} \\over 3}$$<br><br>\nOn Differentiating ...(i)<br><br>\n2(x \u2013 1)dx = 18tan$$\\theta $$ sec<sup>2</sup>$$\\theta $$ d$$\\theta $$<br><br>\n$$ \\therefore I = \\int {{{18\\tan \\theta {{\\sec }^2}\\theta d\\theta } \\over {2 \\times 3\\tan \\theta  \\times 81{{\\sec }^4}\\theta }}} $$<br><br>\n$$I = {1 \\over {27}}\\int {{{\\cos }^2}\\theta \\,d\\theta }  = {1 \\over {27}} \\times {1 \\over 2}\\int {\\left( {1 + \\cos 2\\theta } \\right)} d\\theta $$<br><br>\n$$I = {1 \\over {54}}\\left\\{ {\\theta  + {{\\sin 2\\theta } \\over 2}} \\right\\} + c$$<br><br>\n$$I = {1 \\over {54}}\\left\\{ {{{\\tan }^{ - 1}}\\left( {{{x - 1} \\over 3}} \\right) + {1 \\over 2} \\times {{2\\left( {{{x - 1} \\over 3}} \\right)} \\over {1 + {{\\left( {{{x - 1} \\over 3}} \\right)}^2}}}} \\right\\} + c$$<br><br>\n$$I = {1 \\over {54}}\\left[ {{{\\tan }^{ - 1}}\\left( {{{x - 1} \\over 3}} \\right) + {{3(x - 1)} \\over {{x^2} - 2x + 10}}} \\right] + c$$<br><br>\nthen $$A = {1 \\over {54}}$$<br><br>\nf(x) = 3(x \u2013 1)",
     "section": "A",
     "type": "SCQ"
   },
@@ -908,7 +908,7 @@
     "subject": "Mathematics",
     "topic": "integration-by-substitution",
     "difficulty": "medium",
-    "solution": "<p>To solve the given integral, first we simplify the expression in the integral as follows :</p>\n<p>$$\\int {{{\\tan x + \\tan \\alpha } \\over {\\tan x - \\tan \\alpha }}} dx = \\int {{{\\sin x \\over \\cos x} + {\\sin \\alpha \\over \\cos \\alpha }} \\over {{\\sin x \\over \\cos x} - {\\sin \\alpha \\over \\cos \\alpha }}} dx$$ </p>\n<p>Simplifying further, this becomes :</p>\n<p>$$\\int {{{\\sin x\\cos \\alpha + \\sin \\alpha \\cos x} \\over {\\sin x\\cos \\alpha - \\sin \\alpha \\cos x}}} dx$$ </p>\n<p>By using the formula for sin(a + b) = sin a cos b + cos a sin b and sin(a - b) = sin a cos b - cos a sin b, we get :</p>\n<p>$$\\int {{{\\sin(x + \\alpha)}} \\over {\\sin(x - \\alpha)}} dx$$ </p>\n<p>Now, let&#39;s use the substitution method. Let t = x - α, therefore x = y + α and dx = dt. Substituting these values into the integral, we get :</p>\n<p>= $$\\int {{{\\sin(t + 2\\alpha)}} \\over {\\sin y}} dy$$ </p>\n$$\n\\begin{aligned}\n& =\\int \\frac{\\sin t \\cos 2 \\alpha+\\sin 2 \\alpha \\cos t}{\\sin t} d t \\\\\\\\\n& =\\int\\left(\\cos 2 \\alpha+\\sin 2 \\alpha \\frac{\\cos t}{\\sin t}\\right) d t\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& =t(\\cos 2 \\alpha)+(\\sin 2 \\alpha) \\log _e|\\sin t|+C \\\\\\\\\n& =(x-\\alpha) \\cos 2 \\alpha+(\\sin 2 \\alpha) \\log _e|\\sin (x-\\alpha)|+C \\\\\\\\\n& =A(x) \\cos 2 \\alpha+B(x) \\sin 2 \\alpha+C \\text { (given) }\n\\end{aligned}\n$$\n<br/><br/>Now on comparing, we get\n<br/><br/>$$\nA(x)=x-\\alpha \\text { and } B(x)=\\log _e|\\sin (x-\\alpha)|\n$$",
+    "solution": "<p>To solve the given integral, first we simplify the expression in the integral as follows :</p>\n<p>$$\\int {{{\\tan x + \\tan \\alpha } \\over {\\tan x - \\tan \\alpha }}} dx = \\int {{{\\sin x \\over \\cos x} + {\\sin \\alpha \\over \\cos \\alpha }} \\over {{\\sin x \\over \\cos x} - {\\sin \\alpha \\over \\cos \\alpha }}} dx$$ </p>\n<p>Simplifying further, this becomes :</p>\n<p>$$\\int {{{\\sin x\\cos \\alpha + \\sin \\alpha \\cos x} \\over {\\sin x\\cos \\alpha - \\sin \\alpha \\cos x}}} dx$$ </p>\n<p>By using the formula for sin(a + b) = sin a cos b + cos a sin b and sin(a - b) = sin a cos b - cos a sin b, we get :</p>\n<p>$$\\int {{{\\sin(x + \\alpha)}} \\over {\\sin(x - \\alpha)}} dx$$ </p>\n<p>Now, let&#39;s use the substitution method. Let t = x - \u03b1, therefore x = y + \u03b1 and dx = dt. Substituting these values into the integral, we get :</p>\n<p>= $$\\int {{{\\sin(t + 2\\alpha)}} \\over {\\sin y}} dy$$ </p>\n$$\n\\begin{aligned}\n& =\\int \\frac{\\sin t \\cos 2 \\alpha+\\sin 2 \\alpha \\cos t}{\\sin t} d t \\\\\\\\\n& =\\int\\left(\\cos 2 \\alpha+\\sin 2 \\alpha \\frac{\\cos t}{\\sin t}\\right) d t\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& =t(\\cos 2 \\alpha)+(\\sin 2 \\alpha) \\log _e|\\sin t|+C \\\\\\\\\n& =(x-\\alpha) \\cos 2 \\alpha+(\\sin 2 \\alpha) \\log _e|\\sin (x-\\alpha)|+C \\\\\\\\\n& =A(x) \\cos 2 \\alpha+B(x) \\sin 2 \\alpha+C \\text { (given) }\n\\end{aligned}\n$$\n<br/><br/>Now on comparing, we get\n<br/><br/>$$\nA(x)=x-\\alpha \\text { and } B(x)=\\log _e|\\sin (x-\\alpha)|\n$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -937,7 +937,7 @@
   {
     "id": "AQn2qq06q2fjAXy7QknRR",
     "questionNumber": 75,
-    "questionText": "If $$\\int {{{dx} \\over {{x^3}{{(1 + {x^6})}^{2/3}}}} = xf(x){{(1 + {x^6})}^{{1 \\over 3}}} + C} $$ <br>\nwhere C is a constant of integration, then the\nfunction ƒ(x) is equal to",
+    "questionText": "If $$\\int {{{dx} \\over {{x^3}{{(1 + {x^6})}^{2/3}}}} = xf(x){{(1 + {x^6})}^{{1 \\over 3}}} + C} $$ <br>\nwhere C is a constant of integration, then the\nfunction \u0192(x) is equal to",
     "options": [
       "$${3 \\over {{x^2}}}$$",
       "$$ - {1 \\over {6{x^3}}}$$",
@@ -962,9 +962,9 @@
     "questionText": "The integral $$\\int {{\\rm{se}}{{\\rm{c}}^{{\\rm{2/ 3}}}}\\,{\\rm{x }}\\,{\\rm{cose}}{{\\rm{c}}^{{\\rm{4 / 3}}}}{\\rm{x \\,dx}}} $$ is equal to\n(Hence C is a constant of integration)",
     "options": [
       "-3/4 tan <sup>- 4 / 3</sup> x + C",
-      "3tan<sup>–1/3</sup>x + C",
-      "–3cot<sup>–1/3</sup>x+ C",
-      "- 3tan<sup>–1/3</sup>x + C"
+      "3tan<sup>\u20131/3</sup>x + C",
+      "\u20133cot<sup>\u20131/3</sup>x+ C",
+      "- 3tan<sup>\u20131/3</sup>x + C"
     ],
     "correctOption": 3,
     "correctAnswer": null,

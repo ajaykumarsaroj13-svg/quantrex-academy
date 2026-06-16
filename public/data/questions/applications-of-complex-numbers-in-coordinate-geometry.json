@@ -19,7 +19,7 @@
     "difficulty": "hard",
     "solution": "<p>First, multiply matrices $S$ and $T$:</p>\n<p>$$ S T = \\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \\end{bmatrix} \\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 0 & -1 \\\\ 1 & 1 \\end{bmatrix} = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} $$</p>\n<p>So, $a = 0$, $b = -1$, $c = 1$, and $d = 1$.</p>\n<p><b>(A)</b></p>\n<p>We calculate:</p>\n<p>$$ \\frac{b + ia}{d + ic} = \\frac{-1}{1 + i} \\times \\frac{1 - i}{1 - i} = \\frac{-1 + i}{2} $$</p>\n<p>The result is a complex number, but this does not satisfy the given condition, so this statement is <b>incorrect</b>.</p>\n<p><b>(B)</b></p>\n<p>Now check the transformation using $\\omega$:</p>\n<p>$$ \\frac{a\\omega + b}{c\\omega + d} = \\frac{-1}{\\omega + 1} = \\frac{-1}{-\\omega^2} = \\omega $$</p>\n<p>This equality holds true, so this statement is <b>correct</b>.</p>\n<p><b>(C)</b></p>\n<p>Compute higher powers of $ST$:</p>\n<p>$$ (ST)^2 = \\begin{bmatrix} 0 & -1 \\\\ 1 & 1 \\end{bmatrix} \\begin{bmatrix} 0 & -1 \\\\ 1 & 1 \\end{bmatrix} = \\begin{bmatrix} -1 & -1 \\\\ 1 & 0 \\end{bmatrix} $$</p>\n<p>$$ (ST)^3 = \\begin{bmatrix} -1 & -1 \\\\ 1 & 0 \\end{bmatrix} \\begin{bmatrix} 0 & -1 \\\\ 1 & 1 \\end{bmatrix} = \\begin{bmatrix} -1 & 0 \\\\ 0 & -1 \\end{bmatrix} = -I $$</p>\n<p>Thus, $(ST)^6 = I$. Therefore, if $(ST)^2 = (ST)^M$, then $M = 6\\lambda + 2$, where $\\lambda$ is an integer. Since the statement does not correctly represent this, it is <b>incorrect</b>.</p>\n<p><b>(D)</b></p>\n<p>For $z = x + iy$, we have:</p>\n<p>$$ \\frac{az + b}{cz + d} = \\frac{-1}{z + 1} $$</p>\n<p>Substitute $z = x + iy$:</p>\n<p>$$ \\frac{-1}{x + iy + 1} = \\frac{-1}{(x + 1) + iy} \\times \\frac{(x + 1) - iy}{(x + 1) - iy} = \\frac{-(x + 1) + iy}{(x + 1)^2 + y^2} $$</p>\n<p>The imaginary part is $\\frac{y}{(x + 1)^2 + y^2}$, which is positive since $y > 0$. This means the image of every $z \\in H$ stays in $H$. Hence, this statement is <b>correct</b>.</p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -172,7 +172,7 @@
     "subject": "Mathematics",
     "topic": "applications-of-complex-numbers-in-coordinate-geometry",
     "difficulty": "hard",
-    "solution": "<p>$$ |z-(3+5 i)|+|z-(5+11 i)|=4 \\sqrt{5} $$</p>\n<p>So, $\\mathrm{S}_1(3,5) \\&amp; \\mathrm{~S}_2(5,11)$ are two foci of ellipse, where $2 \\mathrm{ae}=\\mathrm{S}_1 \\mathrm{~S}_2=2 \\sqrt{10} \\&amp; 2 \\mathrm{a}=4 \\sqrt{5}$</p>\n<p>$$ \\Rightarrow \\mathrm{a}=2 \\sqrt{5}, \\mathrm{e}=\\frac{1}{\\sqrt{2}} \\&amp; \\mathrm{~b}^2=\\mathrm{a}^2\\left(1-\\mathrm{e}^2\\right) \\text { gives } \\mathrm{b}^2=10 $$</p>\n<p>$\\&amp;$ center of an ellipse is mid point of both focus</p>\n<p>∴ center $(4,8)$</p>\n<p>Equation of circle is $|\\mathrm{Z}-(4+8 \\mathrm{i})|=\\sqrt{10}$</p>\n<p>⇒ Ellipse $\\&amp;$ given circle are concentric \\&amp; radius of given circle is equal to length of minor axis of given ellipse</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mox9zzml/0a709d1f-1ff9-4c93-810b-d6c07a5c42a5/91206cd0-4b0f-11f1-8353-79c9d062302a/file-6y3zli1mox9zzmm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mox9zzml/0a709d1f-1ff9-4c93-810b-d6c07a5c42a5/91206cd0-4b0f-11f1-8353-79c9d062302a/file-6y3zli1mox9zzmm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2026 (Online) 8th April Evening Shift Mathematics - Complex Numbers Question 7 English Explanation\"></p>\n<p>⇒ Two points which are common to both.</p>",
+    "solution": "<p>$$ |z-(3+5 i)|+|z-(5+11 i)|=4 \\sqrt{5} $$</p>\n<p>So, $\\mathrm{S}_1(3,5) \\&amp; \\mathrm{~S}_2(5,11)$ are two foci of ellipse, where $2 \\mathrm{ae}=\\mathrm{S}_1 \\mathrm{~S}_2=2 \\sqrt{10} \\&amp; 2 \\mathrm{a}=4 \\sqrt{5}$</p>\n<p>$$ \\Rightarrow \\mathrm{a}=2 \\sqrt{5}, \\mathrm{e}=\\frac{1}{\\sqrt{2}} \\&amp; \\mathrm{~b}^2=\\mathrm{a}^2\\left(1-\\mathrm{e}^2\\right) \\text { gives } \\mathrm{b}^2=10 $$</p>\n<p>$\\&amp;$ center of an ellipse is mid point of both focus</p>\n<p>\u2234 center $(4,8)$</p>\n<p>Equation of circle is $|\\mathrm{Z}-(4+8 \\mathrm{i})|=\\sqrt{10}$</p>\n<p>\u21d2 Ellipse $\\&amp;$ given circle are concentric \\&amp; radius of given circle is equal to length of minor axis of given ellipse</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mox9zzml/0a709d1f-1ff9-4c93-810b-d6c07a5c42a5/91206cd0-4b0f-11f1-8353-79c9d062302a/file-6y3zli1mox9zzmm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mox9zzml/0a709d1f-1ff9-4c93-810b-d6c07a5c42a5/91206cd0-4b0f-11f1-8353-79c9d062302a/file-6y3zli1mox9zzmm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2026 (Online) 8th April Evening Shift Mathematics - Complex Numbers Question 7 English Explanation\"></p>\n<p>\u21d2 Two points which are common to both.</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -196,7 +196,7 @@
     "difficulty": "medium",
     "solution": "",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -268,7 +268,7 @@
   {
     "id": "m6qhjxh1",
     "questionNumber": 55,
-    "questionText": "<p>Let $ |z_1 − 8−2i| \\leq 1 $ and $ |z_2−2+6i| \\leq 2 $, $ z_1, z_2 \\in \\mathbb{C} $. Then the minimum value of $ |z_1 − z_2| $ is :</p>",
+    "questionText": "<p>Let $ |z_1 \u2212 8\u22122i| \\leq 1 $ and $ |z_2\u22122+6i| \\leq 2 $, $ z_1, z_2 \\in \\mathbb{C} $. Then the minimum value of $ |z_1 \u2212 z_2| $ is :</p>",
     "options": [
       "<p>3</p>",
       "<p>10</p>",
@@ -351,7 +351,7 @@
   {
     "id": "m9doq2md",
     "questionNumber": 55,
-    "questionText": "<p>If the locus of z ∈ ℂ, such that Re$ \\left( \\frac{z - 1}{2z + i} \\right) + \\text{Re} \\left( \\frac{\\overline{z} - 1}{2\\overline{z} - i} \\right) = 2 $, is a circle of radius r and center $(a, b)$, then $ \\frac{15ab}{r^2} $ is equal to :</p>",
+    "questionText": "<p>If the locus of z \u2208 \u2102, such that Re$ \\left( \\frac{z - 1}{2z + i} \\right) + \\text{Re} \\left( \\frac{\\overline{z} - 1}{2\\overline{z} - i} \\right) = 2 $, is a circle of radius r and center $(a, b)$, then $ \\frac{15ab}{r^2} $ is equal to :</p>",
     "options": [
       "<p>16</p>",
       "<p>24</p>",
@@ -446,7 +446,7 @@
     "difficulty": "medium",
     "solution": "<p>$$|z-i|=|z+i|=|z-1|$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lt1dbkuq/8fa39b20-7b31-407e-a4e3-48710c870daf/c548b320-d3c8-11ee-a50b-bb659a2e1d74/file-1lt1dbkur.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lt1dbkuq/8fa39b20-7b31-407e-a4e3-48710c870daf/c548b320-d3c8-11ee-a50b-bb659a2e1d74/file-1lt1dbkur.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 27th January Morning Shift Mathematics - Complex Numbers Question 59 English Explanation\"></p>\n<p>$$\\mathrm{ABC}$$ is a triangle. Hence its circum-centre will be the only point whose distance from A, B, C will be same.</p>\n<p>So $$n(S)=1$$</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "lv2er3qp",
@@ -1076,10 +1076,10 @@
   {
     "id": "tVlWLwS9cygf8yUxA83rsa0w2w9jx5d7bm9",
     "questionNumber": 67,
-    "questionText": "The equation |z – i| = |z – 1|, i = $$\\sqrt { - 1} $$, represents :",
+    "questionText": "The equation |z \u2013 i| = |z \u2013 1|, i = $$\\sqrt { - 1} $$, represents :",
     "options": [
       "a circle of radius 1",
-      "the line through the origin with slope – 1",
+      "the line through the origin with slope \u2013 1",
       "a circle of radius $${1 \\over 2}$$",
       "the line through the origin with slope 1\n"
     ],
@@ -1100,7 +1100,7 @@
     "questionNumber": 69,
     "questionText": "All the points in the set<br>\n$$S = \\left\\{ {{{\\alpha  + i} \\over {\\alpha  - i}}:\\alpha  \\in R} \\right\\}(i = \\sqrt { - 1} )$$ lie on a :",
     "options": [
-      "straight line whose slope is –1",
+      "straight line whose slope is \u20131",
       "straight line whose slope is 1.",
       "circle whose radius is 1.",
       "circle whose radius is $$\\sqrt 2$$ ."
@@ -1561,7 +1561,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -1569,7 +1569,7 @@
     "difficulty": "medium",
     "solution": "Given quadratic equation,\n<br>$${Z^2} + aZ + b = 0$$\n<br>and two roots are $${Z_1}$$ and $${Z_2}$$.\n<br><br>$$\\therefore$$ $${Z_1}$$ + $${Z_2}$$ = $$-a$$ and $${Z_1}$$$${Z_2}$$ = $$b$$\n<br><br>Question says,\n<br>There are three complex numbers:\n<br>1. Origin (0)\n<br>2. $${Z_1}$$\n<br>3. $${Z_2}$$\n<br>and they form an equilateral triangle. So They are the vertices of the triangle.\n<br><br>[ <b>Important Point :</b> If $${Z_1}$$, $${Z_2}$$ and $${Z_3}$$ are the vertices of an equilateral triangle then -\n<br>$$Z_1^2$$ + $$Z_2^2$$ + $$Z_3^2$$ = $${Z_1}{Z_2}$$ + $${Z_2}{Z_3}$$ + $${Z_3}{Z_1}$$ ]\n<br><br>In this question,\n<br>$${Z_1}$$ = 0, $${Z_2}$$ = $${Z_1}$$ and $${Z_3}$$ = $${Z_2}$$\n<br><br>By putting those values in the equation we get,\n<br><br>$${0^2}$$ + $$Z_1^2$$ + $$Z_2^2$$ = $$0$$ + $${Z_1}{Z_2}$$ + 0\n<br><br>$$ \\Rightarrow $$ $$Z_1^2$$ + $$Z_2^2$$ = $${Z_1}{Z_2}$$\n<br><br>$$ \\Rightarrow $$ $$Z_1^2$$ + $$Z_2^2$$ = $$b$$  [ as $${Z_1}$$$${Z_2}$$ = $$b$$ ]\n<br><br>$$ \\Rightarrow $$ $${\\left( {{Z_1} + {Z_2}} \\right)^2}$$ - $$2{Z_1}{Z_2}$$ = $$b$$\n<br><br>$$ \\Rightarrow $$ $${\\left( {{Z_1} + {Z_2}} \\right)^2}$$ - $$2b$$ = $$b$$\n<br><br>$$ \\Rightarrow $$ $${\\left( {{Z_1} + {Z_2}} \\right)^2}$$ = $$3b$$\n<br><br>$$ \\Rightarrow $$ $${\\left( { - a} \\right)^2}$$ = $$3b$$\n<br><br>$$ \\Rightarrow $$ $${a^2}$$ = $$3b$$\n<br><br>So Option (D) is correct.\n<br><br>[ <b>Note :</b> This question is asked to check if you know the following formula -\n<br><br>\"If $${Z_1}$$, $${Z_2}$$ and $${Z_3}$$ are the vertices of an equilateral triangle then -\n<br>$$Z_1^2$$ + $$Z_2^2$$ + $$Z_3^2$$ = $${Z_1}{Z_2}$$ + $${Z_2}{Z_3}$$ + $${Z_3}{Z_1}$$\" ]",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "zfiW9PrjVIHHJFRs",

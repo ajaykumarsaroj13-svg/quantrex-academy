@@ -205,7 +205,7 @@
     "subject": "Physics",
     "topic": "biot-savarts-law-and-magnetic-field-due-to-current-carrying-wire",
     "difficulty": "medium",
-    "solution": "<p>$$ B = \\frac{2 \\sqrt{2}\\,\\mu_0 I}{\\pi L} $$</p>\n<p>For a square loop of side length </p>\n<p>$$ L = \\frac{1}{\\sqrt{2}} \\text{ m}, $$ </p>\n<p>the perpendicular distance from the center to any side is </p>\n<p>$$ d = \\frac{L}{2} = \\frac{1}{2\\sqrt{2}} \\text{ m}. $$</p>\n<p>For a finite straight wire, the magnetic field at a point at distance $ d $ from the wire is given by the Biot–Savart expression</p>\n<p>$$ B_{\\text{side}} = \\frac{\\mu_0 I}{4\\pi d} \\left(\\sin\\theta_1 + \\sin\\theta_2\\right) $$</p>\n<p>where $ \\theta_1 $ and $ \\theta_2 $ are the angles between the extended wire and the line joining the ends of the wire with the observation point. For one side of the square, by symmetry, the midpoint of the side and the center of the square give</p>\n<p>$$ \\tan\\theta = \\frac{L/2}{L/2} = 1 \\quad\\Rightarrow\\quad \\theta = 45^\\circ. $$</p>\n<p>Thus,</p>\n<p>$$ \\sin\\theta_1 = \\sin\\theta_2 = \\sin 45^\\circ = \\frac{1}{\\sqrt{2}}. $$</p>\n<p>Then the field due to one side is</p>\n<p>$$ B_{\\text{side}} = \\frac{\\mu_0 I}{4\\pi \\left(\\frac{L}{2}\\right)} \\left(\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}}\\right) = \\frac{\\mu_0 I}{4\\pi \\left(\\frac{L}{2}\\right)} \\left(\\frac{2}{\\sqrt{2}}\\right) = \\frac{\\mu_0 I \\sqrt{2}}{2\\pi L}. $$</p>\n<p>Since there are 4 sides with contributions that add vectorially in the same direction at the center, the total magnetic field is</p>\n<p>$$ B = 4 \\cdot B_{\\text{side}} = \\frac{4 \\mu_0 I \\sqrt{2}}{2\\pi L} = \\frac{2 \\sqrt{2}\\,\\mu_0 I}{\\pi L}. $$</p>\n<p>Substitute </p>\n<p>$$ L = \\frac{1}{\\sqrt{2}}, $$</p>\n<p>to obtain</p>\n<p>$$ B = \\frac{2 \\sqrt{2}\\,\\mu_0 I}{\\pi \\left(\\frac{1}{\\sqrt{2}}\\right)} = \\frac{2 \\sqrt{2}\\,\\mu_0 I \\sqrt{2}}{\\pi} = \\frac{4\\,\\mu_0 I}{\\pi}. $$</p>\n<p>Using the provided values </p>\n<p>$$ I = 5 \\text{ A} \\quad \\text{and} \\quad \\mu_0 = 4\\pi \\times 10^{-7} \\text{ T\\,m/A}, $$</p>\n<p>the magnetic field becomes</p>\n<p>$$ B = \\frac{4 \\times \\left(4\\pi \\times 10^{-7}\\right) \\times 5}{\\pi} = \\frac{80\\pi \\times 10^{-7}}{\\pi} = 80 \\times 10^{-7} \\text{ T} = 8 \\times 10^{-6} \\text{ T}. $$</p>\n<p>Thus, the value of $ p $ is</p>\n<p>$$ p = 8. $$</p>",
+    "solution": "<p>$$ B = \\frac{2 \\sqrt{2}\\,\\mu_0 I}{\\pi L} $$</p>\n<p>For a square loop of side length </p>\n<p>$$ L = \\frac{1}{\\sqrt{2}} \\text{ m}, $$ </p>\n<p>the perpendicular distance from the center to any side is </p>\n<p>$$ d = \\frac{L}{2} = \\frac{1}{2\\sqrt{2}} \\text{ m}. $$</p>\n<p>For a finite straight wire, the magnetic field at a point at distance $ d $ from the wire is given by the Biot\u2013Savart expression</p>\n<p>$$ B_{\\text{side}} = \\frac{\\mu_0 I}{4\\pi d} \\left(\\sin\\theta_1 + \\sin\\theta_2\\right) $$</p>\n<p>where $ \\theta_1 $ and $ \\theta_2 $ are the angles between the extended wire and the line joining the ends of the wire with the observation point. For one side of the square, by symmetry, the midpoint of the side and the center of the square give</p>\n<p>$$ \\tan\\theta = \\frac{L/2}{L/2} = 1 \\quad\\Rightarrow\\quad \\theta = 45^\\circ. $$</p>\n<p>Thus,</p>\n<p>$$ \\sin\\theta_1 = \\sin\\theta_2 = \\sin 45^\\circ = \\frac{1}{\\sqrt{2}}. $$</p>\n<p>Then the field due to one side is</p>\n<p>$$ B_{\\text{side}} = \\frac{\\mu_0 I}{4\\pi \\left(\\frac{L}{2}\\right)} \\left(\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}}\\right) = \\frac{\\mu_0 I}{4\\pi \\left(\\frac{L}{2}\\right)} \\left(\\frac{2}{\\sqrt{2}}\\right) = \\frac{\\mu_0 I \\sqrt{2}}{2\\pi L}. $$</p>\n<p>Since there are 4 sides with contributions that add vectorially in the same direction at the center, the total magnetic field is</p>\n<p>$$ B = 4 \\cdot B_{\\text{side}} = \\frac{4 \\mu_0 I \\sqrt{2}}{2\\pi L} = \\frac{2 \\sqrt{2}\\,\\mu_0 I}{\\pi L}. $$</p>\n<p>Substitute </p>\n<p>$$ L = \\frac{1}{\\sqrt{2}}, $$</p>\n<p>to obtain</p>\n<p>$$ B = \\frac{2 \\sqrt{2}\\,\\mu_0 I}{\\pi \\left(\\frac{1}{\\sqrt{2}}\\right)} = \\frac{2 \\sqrt{2}\\,\\mu_0 I \\sqrt{2}}{\\pi} = \\frac{4\\,\\mu_0 I}{\\pi}. $$</p>\n<p>Using the provided values </p>\n<p>$$ I = 5 \\text{ A} \\quad \\text{and} \\quad \\mu_0 = 4\\pi \\times 10^{-7} \\text{ T\\,m/A}, $$</p>\n<p>the magnetic field becomes</p>\n<p>$$ B = \\frac{4 \\times \\left(4\\pi \\times 10^{-7}\\right) \\times 5}{\\pi} = \\frac{80\\pi \\times 10^{-7}}{\\pi} = 80 \\times 10^{-7} \\text{ T} = 8 \\times 10^{-6} \\text{ T}. $$</p>\n<p>Thus, the value of $ p $ is</p>\n<p>$$ p = 8. $$</p>",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -234,7 +234,7 @@
   {
     "id": "m6qkgtjp",
     "questionNumber": 14,
-    "questionText": "<p>Consider a long straight wire of a circular cross-section (radius <i>a</i>) carrying a steady current <i>I</i>. The current is uniformly distributed across this cross-section. The distances from the centre of the wire’s cross-section at which the magnetic field [inside the wire, outside the wire] is half of the maximum possible magnetic field, any where due to the wire, will be :</p>",
+    "questionText": "<p>Consider a long straight wire of a circular cross-section (radius <i>a</i>) carrying a steady current <i>I</i>. The current is uniformly distributed across this cross-section. The distances from the centre of the wire\u2019s cross-section at which the magnetic field [inside the wire, outside the wire] is half of the maximum possible magnetic field, any where due to the wire, will be :</p>",
     "options": [
       "<p>[<i>a</i>/2, 3<i>a</i>]</p>",
       "<p>[<i>a</i>/4, 3<i>a</i>/2]</p>",
@@ -295,7 +295,7 @@
   {
     "id": "m9dnfepu",
     "questionNumber": 12,
-    "questionText": "<p>Figure shows a current carrying square loop ABCD of edge length is ‘a’ lying in a plane. If the resistance of the ABC part is r and that of ADC part is 2r, then the magnitude of the resultant magnetic field at centre of the square loop is</p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9dn8ann/2931e805-4897-4246-b7d2-5b008908bef4/63207430-174c-11f0-b3ee-394826e52c33/file-jaoe38c1m9dn8ano.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9dn8ann/2931e805-4897-4246-b7d2-5b008908bef4/63207430-174c-11f0-b3ee-394826e52c33/file-jaoe38c1m9dn8ano.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 8th April Evening Shift Physics - Magnetic Effect of Current Question 29 English\">",
+    "questionText": "<p>Figure shows a current carrying square loop ABCD of edge length is \u2018a\u2019 lying in a plane. If the resistance of the ABC part is r and that of ADC part is 2r, then the magnitude of the resultant magnetic field at centre of the square loop is</p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9dn8ann/2931e805-4897-4246-b7d2-5b008908bef4/63207430-174c-11f0-b3ee-394826e52c33/file-jaoe38c1m9dn8ano.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9dn8ann/2931e805-4897-4246-b7d2-5b008908bef4/63207430-174c-11f0-b3ee-394826e52c33/file-jaoe38c1m9dn8ano.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 8th April Evening Shift Physics - Magnetic Effect of Current Question 29 English\">",
     "options": [
       "<p>$\\frac{2\\mu_0 I}{3\\pi a}$</p>",
       "<p>$\\frac{\\sqrt{2}\\mu_0 I}{3\\pi a}$</p>",
@@ -668,7 +668,7 @@
     "difficulty": "hard",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lei2jbse/0b155214-c8a1-4778-a4ba-55cd9822edc8/acb0a1d0-b400-11ed-bf7e-c52177c53cde/file-1lei2jbsf.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lei2jbse/0b155214-c8a1-4778-a4ba-55cd9822edc8/acb0a1d0-b400-11ed-bf7e-c52177c53cde/file-1lei2jbsf.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 29th January Morning Shift Physics - Magnetic Effect of Current Question 92 English Explanation\"></p>\n$\\because B y$ at $P_{1}=0$ [option A and C are incorrect]\n<br><br>\n$B y$ has the opposite direction for the +ve and $-ve ~z$ axis",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "ldqvqyva",
@@ -1295,7 +1295,7 @@
   {
     "id": "TJteEvhVtRYzb5bZbW3rsa0w2w9jwzjyd8u",
     "questionNumber": 17,
-    "questionText": "The magnitude of the magnetic field at the centre of an equilateral triangular loop of side 1 m which is\ncarrying a current of 10 A is : <br>[Take $$\\mu $$<sub>0</sub> = 4$$\\pi $$ × 10<sup>–7</sup>\n NA<sup>–2</sup>] ",
+    "questionText": "The magnitude of the magnetic field at the centre of an equilateral triangular loop of side 1 m which is\ncarrying a current of 10 A is : <br>[Take $$\\mu $$<sub>0</sub> = 4$$\\pi $$ \u00d7 10<sup>\u20137</sup>\n NA<sup>\u20132</sup>] ",
     "options": [
       "3 $$\\mu $$T",
       "18 $$\\mu $$T",
@@ -1317,12 +1317,12 @@
   {
     "id": "xYDEspQh1XCXovpIlS3rsa0w2w9jx7ipya8",
     "questionNumber": 21,
-    "questionText": "Find the magnetic field at point P due to a straight line segment AB of length 6 cm carrying a current of 5A.\n(See figure) ($$\\mu $$<sub>0</sub> = 4$$\\pi $$ × 10<sup>–7</sup> N-A<sup>–2</sup>)\n<img src=\"https://imagex.cdn.examgoal.net/jf762wkjxtr8qzh/bb1ea901-970b-4b9f-bcc8-971e842c7ebc/72d1c4d0-a126-11e9-902e-23ffedc9804e/file-jf762wkjxtr8qzi.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th April Evening Slot Physics - Magnetic Effect of Current Question 174 English\">",
+    "questionText": "Find the magnetic field at point P due to a straight line segment AB of length 6 cm carrying a current of 5A.\n(See figure) ($$\\mu $$<sub>0</sub> = 4$$\\pi $$ \u00d7 10<sup>\u20137</sup> N-A<sup>\u20132</sup>)\n<img src=\"https://imagex.cdn.examgoal.net/jf762wkjxtr8qzh/bb1ea901-970b-4b9f-bcc8-971e842c7ebc/72d1c4d0-a126-11e9-902e-23ffedc9804e/file-jf762wkjxtr8qzi.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th April Evening Slot Physics - Magnetic Effect of Current Question 174 English\">",
     "options": [
-      "1.5 × 10<sup>–5</sup>\n T",
-      "3.0 × 10<sup>–5</sup>\n T",
-      "2.0 × 10<sup>–5</sup>\n T",
-      "2.5 × 10<sup>–5</sup>\n T"
+      "1.5 \u00d7 10<sup>\u20135</sup>\n T",
+      "3.0 \u00d7 10<sup>\u20135</sup>\n T",
+      "2.0 \u00d7 10<sup>\u20135</sup>\n T",
+      "2.5 \u00d7 10<sup>\u20135</sup>\n T"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -1339,12 +1339,12 @@
   {
     "id": "i7RjAPQQbWR7YrMMlf3rsa0w2w9jx3dntoy",
     "questionNumber": 20,
-    "questionText": "A thin ring of 10 cm radius carries a uniformly distributed charge. The ring rotates at a constant angular\nspeed of 40 $$\\pi $$ rad s<sup>–1</sup>\n about its axis, perpendicular to its plane. If the magnetic field at its centre is 3.8 × 10<sup>–9</sup>\nT, then the charge carried by the ring is close to ($$\\mu $$<sub>0</sub> = 4$$\\pi $$ × 10<sup>–7</sup>\n N/A<sup>2</sup>\n).",
+    "questionText": "A thin ring of 10 cm radius carries a uniformly distributed charge. The ring rotates at a constant angular\nspeed of 40 $$\\pi $$ rad s<sup>\u20131</sup>\n about its axis, perpendicular to its plane. If the magnetic field at its centre is 3.8 \u00d7 10<sup>\u20139</sup>\nT, then the charge carried by the ring is close to ($$\\mu $$<sub>0</sub> = 4$$\\pi $$ \u00d7 10<sup>\u20137</sup>\n N/A<sup>2</sup>\n).",
     "options": [
-      "7 × 10<sup>–6</sup> C",
-      "4 × 10<sup>–5</sup> C",
-      "2 × 10<sup>–6</sup> C",
-      "3 × 10<sup>–5</sup> C"
+      "7 \u00d7 10<sup>\u20136</sup> C",
+      "4 \u00d7 10<sup>\u20135</sup> C",
+      "2 \u00d7 10<sup>\u20136</sup> C",
+      "3 \u00d7 10<sup>\u20135</sup> C"
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -1361,7 +1361,7 @@
   {
     "id": "0GXgqSiobvpcWL9JF4Px4",
     "questionNumber": 23,
-    "questionText": "As shown in the figure, two infinitely long, identical wires are bent by 90<sup>o</sup> and placed in such a way that the segments LP and QM are along the x-axis, while segments PS and QN are parallel to the y-axis. If OP = OQ = 4cm, and the magnitude of the magnetic field at O is 10<sup>–4</sup> T, and the two wires carry equal\ncurrents (see figure), the magnitude of the current in each wire and the direction of the magnetic field at O will be ($$\\mu $$<sub>0</sub> = 4$$\\pi $$ $$ \\times $$ 10<sup>–7</sup>  NA<sup>–2</sup>) :\n<br><br><img src=\"https://imagex.cdn.examgoal.net/Hnj9foF24K4nr1CTW/9YBrNfedKO6DcNq2RzLF3MrRjgd8y/3SadEg8fTxgdRf1cJpLjyh/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th January Morning Slot Physics - Magnetic Effect of Current Question 188 English\">",
+    "questionText": "As shown in the figure, two infinitely long, identical wires are bent by 90<sup>o</sup> and placed in such a way that the segments LP and QM are along the x-axis, while segments PS and QN are parallel to the y-axis. If OP = OQ = 4cm, and the magnitude of the magnetic field at O is 10<sup>\u20134</sup> T, and the two wires carry equal\ncurrents (see figure), the magnitude of the current in each wire and the direction of the magnetic field at O will be ($$\\mu $$<sub>0</sub> = 4$$\\pi $$ $$ \\times $$ 10<sup>\u20137</sup>  NA<sup>\u20132</sup>) :\n<br><br><img src=\"https://imagex.cdn.examgoal.net/Hnj9foF24K4nr1CTW/9YBrNfedKO6DcNq2RzLF3MrRjgd8y/3SadEg8fTxgdRf1cJpLjyh/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th January Morning Slot Physics - Magnetic Effect of Current Question 188 English\">",
     "options": [
       "40 A, perpendicular into the page ",
       "40 A, perpendicular out of the page",
@@ -1383,7 +1383,7 @@
   {
     "id": "mM0giEihQWvSvTKLwfV4X",
     "questionNumber": 20,
-    "questionText": "Two very long, straight, and insulated wires are\nkept at 90° angle from each other in xy-plane\nas shown in the figure. These wires carry\ncurrents of equal magnitude I, whose directions\nare shown in the figure. The net magnetic field\nat point P will be :\n<img src=\"https://imagex.cdn.examgoal.net/18hoxe66ijw964bcq/fe4f81c4-935f-410b-9a19-9b98305f2c10/f36d9da0-8207-11e9-8081-1d558b7f1d26/file-18hoxe66ijw964bcr.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Evening Slot Physics - Magnetic Effect of Current Question 184 English\">",
+    "questionText": "Two very long, straight, and insulated wires are\nkept at 90\u00b0 angle from each other in xy-plane\nas shown in the figure. These wires carry\ncurrents of equal magnitude I, whose directions\nare shown in the figure. The net magnetic field\nat point P will be :\n<img src=\"https://imagex.cdn.examgoal.net/18hoxe66ijw964bcq/fe4f81c4-935f-410b-9a19-9b98305f2c10/f36d9da0-8207-11e9-8081-1d558b7f1d26/file-18hoxe66ijw964bcr.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Evening Slot Physics - Magnetic Effect of Current Question 184 English\">",
     "options": [
       "$${{ + {\\mu _0}I} \\over {\\pi d}}\\left( {\\mathop z\\limits^ \\wedge  } \\right)$$",
       "$$ - {{{\\mu _0}I} \\over {2\\pi d}}\\left( {\\mathop x\\limits^ \\wedge   + \\mathop y\\limits^ \\wedge  } \\right)$$",

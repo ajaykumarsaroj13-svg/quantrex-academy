@@ -80,7 +80,7 @@
     "difficulty": "hard",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mafcurcw/4dbe4cec-ca4f-4032-8eae-cf659f997b4d/98162000-2c09-11f0-bf88-ff84dceebac9/file-jaoe38c1mafcurcx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mafcurcw/4dbe4cec-ca4f-4032-8eae-cf659f997b4d/98162000-2c09-11f0-bf88-ff84dceebac9/file-jaoe38c1mafcurcx.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 2nd April Evening Shift Mathematics - Permutations and Combinations Question 28 English Explanation\"></p>\n<p>Let $x, y, z$ be the number of box which are filled</p>\n<p>$\\Rightarrow 1 \\leq x \\leq 3,1 \\leq y \\leq 3,1 \\leq z \\leq 2$</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n</style>\n</p><table class=\"tg\" style=\"undefined;table-layout: fixed; width: 480px\"><colgroup>\n<col style=\"width: 80px\">\n<col style=\"width: 79px\">\n<col style=\"width: 77px\">\n<col style=\"width: 244px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">$x$</th>\n    <th class=\"tg-baqh\">$y$</th>\n    <th class=\"tg-baqh\">$z$</th>\n    <th class=\"tg-baqh\">Number of ways</th>\n  </tr></thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">3</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-0lax\">${ }^3 \\mathrm{C}_3 \\cdot{ }^3 \\mathrm{C}_1 \\cdot{ }^2 \\mathrm{C}_1=6$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-0lax\">${ }^3 \\mathrm{C}_2 \\cdot{ }^3 \\mathrm{C}_2 \\cdot{ }^2 \\mathrm{C}_1=18$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">3</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-0lax\">${ }^3 \\mathrm{C}_1 \\cdot{ }^3 \\mathrm{C}_3 \\cdot{ }^2 \\mathrm{C}_1=6$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-0lax\">${ }^3 C_2 \\cdot{ }^3 C_1 \\cdot{ }^2 C_2=9$</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">1</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-baqh\">2</td>\n    <td class=\"tg-0lax\">${ }^3 \\mathrm{C}_1 \\cdot{ }^3 \\mathrm{C}_2 \\cdot{ }^2 \\mathrm{C}_2=9$</td>\n  </tr>\n</tbody></table><p></p>\n<p>Total ways $=(48)$ to fill boxes</p>\n<p>Now to arrange $a, b, c, d$ and $e$</p>\n<p>Number of ways will be 48.5! = 5760</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "m9fnur1d",
@@ -95,7 +95,7 @@
     "subject": "Mathematics",
     "topic": "number-of-permutations",
     "difficulty": "medium",
-    "solution": "<p>Firstly, by this rule, we note:</p>\n\n<p><p>$ P(W_1) = p $</p></p>\n<p><p>$ P(W_2) = 2p $</p></p>\n<p><p>$ P(W_3) = 4p $</p></p>\n<p><p>…</p></p>\n<p><p>$ P(W_n) = 2^{n-1}p $</p></p>\n\n<p>To find the initial probability $ p $, consider the total probability must sum to 1 across all 120 possible words (since $ 5! = 120 $):</p>\n<p>$ \\sum_{n=1}^{120} P(W_n) = 1 $</p>\n<p>This is a geometric series sum where:</p>\n<p>$ p(1 + 2 + 2^2 + \\ldots + 2^{119}) = 1 $</p>\n<p>Since the series sum $ 1 + 2 + 2^2 + \\ldots + 2^{119} $ is equal to $ 2^{120} - 1 $, we have:</p>\n<p>$ p(2^{120} - 1) = 1 \\Rightarrow p = \\frac{1}{2^{120} - 1} $</p>\n<p>Thus, the probability for the $ n $-th word is:</p>\n<p>$ P(W_n) = \\frac{2^{n-1}}{2^{120} - 1} \\quad \\text{(i)} $</p>\n<p>Next, determine the position of \"CDBEA\". Starting from the first letter:</p>\n\n<p><p><strong>Words beginning with 'A':</strong> $ 4! = 24 $</p></p>\n<p><p><strong>Words beginning with 'B':</strong> $ 4! = 24 $</p></p>\n<p><p><strong>Words beginning with 'C':</strong></p></p>\n\n\n<p><p><strong>CA</strong>*: $ 3! = 6 $</p></p>\n<p><p><strong>CB</strong>*: $ 3! = 6 $</p></p>\n<p><p><strong>CDA</strong>$ **: 2! = 2 $</p></p>\n<p><p><strong>CDBA</strong>*: $ 1! = 1 $</p></p>\n\n<p>Summing these, the position of \"CDBEA\" is the 64th word.</p>\n<p>Substitute into equation (i):</p>\n<p>$ P(\\text{CDBEA}) = P(W_{64}) = \\frac{2^{63}}{2^{120} - 1} $</p>\n<p>Given $ P(\\text{CDBEA}) = \\frac{2^\\alpha}{2^\\beta - 1} $, we find:</p>\n\n<p><p>$ \\alpha = 63 $</p></p>\n<p><p>$ \\beta = 120 $</p></p>\n\n<p>Thus, the sum $ \\alpha + \\beta = 63 + 120 = 183 $.</p>",
+    "solution": "<p>Firstly, by this rule, we note:</p>\n\n<p><p>$ P(W_1) = p $</p></p>\n<p><p>$ P(W_2) = 2p $</p></p>\n<p><p>$ P(W_3) = 4p $</p></p>\n<p><p>\u2026</p></p>\n<p><p>$ P(W_n) = 2^{n-1}p $</p></p>\n\n<p>To find the initial probability $ p $, consider the total probability must sum to 1 across all 120 possible words (since $ 5! = 120 $):</p>\n<p>$ \\sum_{n=1}^{120} P(W_n) = 1 $</p>\n<p>This is a geometric series sum where:</p>\n<p>$ p(1 + 2 + 2^2 + \\ldots + 2^{119}) = 1 $</p>\n<p>Since the series sum $ 1 + 2 + 2^2 + \\ldots + 2^{119} $ is equal to $ 2^{120} - 1 $, we have:</p>\n<p>$ p(2^{120} - 1) = 1 \\Rightarrow p = \\frac{1}{2^{120} - 1} $</p>\n<p>Thus, the probability for the $ n $-th word is:</p>\n<p>$ P(W_n) = \\frac{2^{n-1}}{2^{120} - 1} \\quad \\text{(i)} $</p>\n<p>Next, determine the position of \"CDBEA\". Starting from the first letter:</p>\n\n<p><p><strong>Words beginning with 'A':</strong> $ 4! = 24 $</p></p>\n<p><p><strong>Words beginning with 'B':</strong> $ 4! = 24 $</p></p>\n<p><p><strong>Words beginning with 'C':</strong></p></p>\n\n\n<p><p><strong>CA</strong>*: $ 3! = 6 $</p></p>\n<p><p><strong>CB</strong>*: $ 3! = 6 $</p></p>\n<p><p><strong>CDA</strong>$ **: 2! = 2 $</p></p>\n<p><p><strong>CDBA</strong>*: $ 1! = 1 $</p></p>\n\n<p>Summing these, the position of \"CDBEA\" is the 64th word.</p>\n<p>Substitute into equation (i):</p>\n<p>$ P(\\text{CDBEA}) = P(W_{64}) = \\frac{2^{63}}{2^{120} - 1} $</p>\n<p>Given $ P(\\text{CDBEA}) = \\frac{2^\\alpha}{2^\\beta - 1} $, we find:</p>\n\n<p><p>$ \\alpha = 63 $</p></p>\n<p><p>$ \\beta = 120 $</p></p>\n\n<p>Thus, the sum $ \\alpha + \\beta = 63 + 120 = 183 $.</p>",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -555,11 +555,11 @@
   {
     "id": "KcZ71werwgGvco0DDojgy2xukf0wa8ut",
     "questionNumber": 64,
-    "questionText": "The value of (2.<sup>1</sup>P<sub>0</sub>\n – 3.<sup>2</sup>P<sub>1</sub> + 4.<sup>3</sup>P<sub>2</sub> .... up to\n51<sup>th</sup> term)<br> + (1! – 2! + 3! – ..... up to 51<sup>th</sup> term)\nis equal to :",
+    "questionText": "The value of (2.<sup>1</sup>P<sub>0</sub>\n \u2013 3.<sup>2</sup>P<sub>1</sub> + 4.<sup>3</sup>P<sub>2</sub> .... up to\n51<sup>th</sup> term)<br> + (1! \u2013 2! + 3! \u2013 ..... up to 51<sup>th</sup> term)\nis equal to :",
     "options": [
       "1",
       "1 + (51)!",
-      "1 – 51(51)!",
+      "1 \u2013 51(51)!",
       "1 + (52)!"
     ],
     "correctOption": 3,
@@ -570,7 +570,7 @@
     "subject": "Mathematics",
     "topic": "number-of-permutations",
     "difficulty": "medium",
-    "solution": "(2.<sup>1</sup>P<sub>0</sub>\n – 3.<sup>2</sup>P<sub>1</sub> + 4.<sup>3</sup>P<sub>2</sub> .... up to\n51<sup>th</sup> term)<br> + (1! – 2! + 3! – ..... up to 51<sup>th</sup> term)\n<br><br>= ( 2.1! - 3.2! + 4.3! - ....+ 52.51!)\n<br>+ ( 1! – 2! + 3! – ..... + (51)! )\n<br><br>= (2! - 3! + 4! .....+ 52! )\n<br>+ ( 1! - 2! + 3! - 4! + .....+ 51! )\n<br><br>= 1 + (52)!",
+    "solution": "(2.<sup>1</sup>P<sub>0</sub>\n \u2013 3.<sup>2</sup>P<sub>1</sub> + 4.<sup>3</sup>P<sub>2</sub> .... up to\n51<sup>th</sup> term)<br> + (1! \u2013 2! + 3! \u2013 ..... up to 51<sup>th</sup> term)\n<br><br>= ( 2.1! - 3.2! + 4.3! - ....+ 52.51!)\n<br>+ ( 1! \u2013 2! + 3! \u2013 ..... + (51)! )\n<br><br>= (2! - 3! + 4! .....+ 52! )\n<br>+ ( 1! - 2! + 3! - 4! + .....+ 51! )\n<br><br>= 1 + (52)!",
     "section": "A",
     "type": "SCQ"
   },
@@ -655,7 +655,7 @@
     "difficulty": "medium",
     "solution": "<b>Case 1 :</b>\n<br><br>When all the four letters different then no of words\n<br>= <sup>5</sup>C<sub>4</sub> $$ \\times $$4!\n<br><br><b>Case 2 :</b>\n<br><br>When out of four letters two letters are R and other two different letters are chosen from B, A, C, K then the no of words <br>= <sup>4</sup>C<sub>2</sub> $$ \\times $$ $${{4!} \\over {2!}}$$ = 72\n<br><br><b>Case 3 :</b>\n<br><br>When out of four letters two letters are A and other two different letters are chosen from B, R, C, K then the no of words <br>= <sup>4</sup>C<sub>2</sub> $$ \\times $$ $${{4!} \\over {2!}}$$ = 72\n<br><br><b>Case 4 :</b>\n<br><br>When word is formed using two R and two A then number of words<br> = $${{4!} \\over {2!2!}}$$ = 6\n<br><br>So, total number of 4 letters words possible = 120 + 72 + 72 + 6 = 270",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "XLd4i0VsYtBkRaHaQmAcd",

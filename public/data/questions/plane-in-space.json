@@ -17,9 +17,9 @@
     "subject": "Mathematics",
     "topic": "plane-in-space",
     "difficulty": "hard",
-    "solution": "<p>The plane <b>P</b> contains the line</p>\n<p>$$\\mathrm{L}: \\frac{\\mathrm{x}-1}{2}=\\frac{\\mathrm{y}-3}{3}=\\frac{\\mathrm{z}+2}{1}$$</p>\n<p>and is also perpendicular to the plane $x + 2y + 3z = 4.$</p>\n\n<p>The direction ratios of line $L$ are $2, 3, 1.$<br> The normal vector of the given plane $x + 2y + 3z = 4$ is $1, 2, 3.$</p>\n<p>Since plane $P$ is perpendicular to this plane, its normal vector $\\vec{n}$ must be perpendicular to $(1, 2, 3)$ and also perpendicular to the line’s direction $(2, 3, 1).$</p>\n<p>Thus, $\\vec{n}$ is given by the cross product:</p>\n<p>$$\\vec{n}=\\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 3 & 1 \\\\ 1 & 2 & 3 \\end{vmatrix}$$</p>\n<p>On simplifying,</p>\n<p>$$\\vec{n}=7\\hat{i}-5\\hat{j}+\\hat{k}$$</p>\n\n<p>The line passes through the point $(1, 3, -2)$, and since this point lies on the plane $P$, we use the point-normal form:</p>\n<p>$$7(x-1) - 5(y-3) + (z+2) = 0$$</p>\n<p>On simplifying,</p>\n<p>$$7x - 5y + z + (-7 + 15 + 2) = 0 \\Rightarrow 7x - 5y + z = -10$$</p>\n<p>Hence, equation of plane $P$ is:</p>\n<p>$$7x - 5y + z = -10$$</p>\n<p><b>Option A is correct.</b></p>\n\n<p>Plane $P_1$ is parallel to $P$. Hence it will have the same normal vector, so the general equation is:</p>\n<p>$$7x - 5y + z = d$$</p>\n<p>Since $P_1$ passes through the point $(4, 2, 2)$, substitute these coordinates:</p>\n<p>$$7(4) - 5(2) + 2 = d$$</p>\n<p>$$28 - 10 + 2 = d \\Rightarrow d = 20$$</p>\n<p>Therefore, equation of $P_1$ is</p>\n<p>$$7x - 5y + z = 20$$</p>\n\n<p>The distance between two parallel planes $A x + B y + C z + D_1 = 0$ and $A x + B y + C z + D_2 = 0$ is:</p>\n<p>$$\\frac{|D_1 - D_2|}{\\sqrt{A^2 + B^2 + C^2}}$$</p>\n<p>Here, $D_1 = -10$, $D_2 = -20$ (taking standard form). So,</p>\n<p>$$\\text{Distance} = \\frac{|-10 - 20|}{\\sqrt{7^2 + (-5)^2 + 1^2}} = \\frac{30}{\\sqrt{75}}$$</p>\n<p><b>Option B is incorrect.</b></p>\n\n<p>The formula for the perpendicular distance from point $(x_1, y_1, z_1)$ to plane $A x + B y + C z + D = 0$ is:</p>\n<p>$$\\frac{|A x_1 + B y_1 + C z_1 + D|}{\\sqrt{A^2 + B^2 + C^2}}$$</p>\n<p>For origin $(0, 0, 0)$:</p>\n<p>$$\\text{Distance} = \\frac{|0 + 0 + 0 - 10|}{\\sqrt{75}} = \\frac{10}{\\sqrt{75}} = \\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}$$</p>\n<p><b>Option C is incorrect.</b></p>\n<p><b>Acute angle between planes P and $2x + 2y + z = 3$</b></p>\n<p>Let the normal vectors be:</p>\n<p>$\\vec{n}_1 = (7, -5, 1)$ and $\\vec{n}_2 = (2, 2, 1)$.</p>\n<p>The cosine of the angle between two planes is given by:</p>\n<p>$$\\cos\\theta = \\frac{|\\vec{n}_1 \\cdot \\vec{n}_2|}{|\\vec{n}_1| |\\vec{n}_2|}$$</p>\n<p>Substitute the values:</p>\n<p>$$\\cos\\theta = \\frac{|7(2) + (-5)(2) + 1(1)|}{\\sqrt{75} \\times 3} = \\frac{1}{3\\sqrt{3}}$$</p>\n<p>Hence,</p>\n<p>$$\\theta = \\cos^{-1}\\left(\\frac{1}{3\\sqrt{3}}\\right)$$</p>\n<p><b>Option D is correct.</b></p>",
+    "solution": "<p>The plane <b>P</b> contains the line</p>\n<p>$$\\mathrm{L}: \\frac{\\mathrm{x}-1}{2}=\\frac{\\mathrm{y}-3}{3}=\\frac{\\mathrm{z}+2}{1}$$</p>\n<p>and is also perpendicular to the plane $x + 2y + 3z = 4.$</p>\n\n<p>The direction ratios of line $L$ are $2, 3, 1.$<br> The normal vector of the given plane $x + 2y + 3z = 4$ is $1, 2, 3.$</p>\n<p>Since plane $P$ is perpendicular to this plane, its normal vector $\\vec{n}$ must be perpendicular to $(1, 2, 3)$ and also perpendicular to the line\u2019s direction $(2, 3, 1).$</p>\n<p>Thus, $\\vec{n}$ is given by the cross product:</p>\n<p>$$\\vec{n}=\\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 3 & 1 \\\\ 1 & 2 & 3 \\end{vmatrix}$$</p>\n<p>On simplifying,</p>\n<p>$$\\vec{n}=7\\hat{i}-5\\hat{j}+\\hat{k}$$</p>\n\n<p>The line passes through the point $(1, 3, -2)$, and since this point lies on the plane $P$, we use the point-normal form:</p>\n<p>$$7(x-1) - 5(y-3) + (z+2) = 0$$</p>\n<p>On simplifying,</p>\n<p>$$7x - 5y + z + (-7 + 15 + 2) = 0 \\Rightarrow 7x - 5y + z = -10$$</p>\n<p>Hence, equation of plane $P$ is:</p>\n<p>$$7x - 5y + z = -10$$</p>\n<p><b>Option A is correct.</b></p>\n\n<p>Plane $P_1$ is parallel to $P$. Hence it will have the same normal vector, so the general equation is:</p>\n<p>$$7x - 5y + z = d$$</p>\n<p>Since $P_1$ passes through the point $(4, 2, 2)$, substitute these coordinates:</p>\n<p>$$7(4) - 5(2) + 2 = d$$</p>\n<p>$$28 - 10 + 2 = d \\Rightarrow d = 20$$</p>\n<p>Therefore, equation of $P_1$ is</p>\n<p>$$7x - 5y + z = 20$$</p>\n\n<p>The distance between two parallel planes $A x + B y + C z + D_1 = 0$ and $A x + B y + C z + D_2 = 0$ is:</p>\n<p>$$\\frac{|D_1 - D_2|}{\\sqrt{A^2 + B^2 + C^2}}$$</p>\n<p>Here, $D_1 = -10$, $D_2 = -20$ (taking standard form). So,</p>\n<p>$$\\text{Distance} = \\frac{|-10 - 20|}{\\sqrt{7^2 + (-5)^2 + 1^2}} = \\frac{30}{\\sqrt{75}}$$</p>\n<p><b>Option B is incorrect.</b></p>\n\n<p>The formula for the perpendicular distance from point $(x_1, y_1, z_1)$ to plane $A x + B y + C z + D = 0$ is:</p>\n<p>$$\\frac{|A x_1 + B y_1 + C z_1 + D|}{\\sqrt{A^2 + B^2 + C^2}}$$</p>\n<p>For origin $(0, 0, 0)$:</p>\n<p>$$\\text{Distance} = \\frac{|0 + 0 + 0 - 10|}{\\sqrt{75}} = \\frac{10}{\\sqrt{75}} = \\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}$$</p>\n<p><b>Option C is incorrect.</b></p>\n<p><b>Acute angle between planes P and $2x + 2y + z = 3$</b></p>\n<p>Let the normal vectors be:</p>\n<p>$\\vec{n}_1 = (7, -5, 1)$ and $\\vec{n}_2 = (2, 2, 1)$.</p>\n<p>The cosine of the angle between two planes is given by:</p>\n<p>$$\\cos\\theta = \\frac{|\\vec{n}_1 \\cdot \\vec{n}_2|}{|\\vec{n}_1| |\\vec{n}_2|}$$</p>\n<p>Substitute the values:</p>\n<p>$$\\cos\\theta = \\frac{|7(2) + (-5)(2) + 1(1)|}{\\sqrt{75} \\times 3} = \\frac{1}{3\\sqrt{3}}$$</p>\n<p>Hence,</p>\n<p>$$\\theta = \\cos^{-1}\\left(\\frac{1}{3\\sqrt{3}}\\right)$$</p>\n<p><b>Option D is correct.</b></p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -42,8 +42,8 @@
     "difficulty": "hard",
     "solution": "<p>$$\\begin{aligned}\n&amp; \\mathrm{S}=\\left\\{\\mathrm{X}:(\\mathrm{XP})^2-(\\mathrm{XQ})^2=50\\right\\} \\\\\n&amp; \\mathrm{T}=\\left\\{\\mathrm{Y}:(\\mathrm{YQ})^2-(\\mathrm{YP})^2=50\\right\\}\n\\end{aligned}$$</p>\n<p>for finding $$S \\equiv X(x, y, z)$$ and for $$T \\equiv Y(x, y, z)$$</p>\n<p>$$\\begin{aligned}\n&amp; \\left((x-1)^2+(y-1)^2+(z-1)^2\\right)-\\left((x-4)^2+(y-2)^2+(z-7)^2\\right)=50 \\\\\n&amp; \\Rightarrow \\quad S=\\{(x, y, z): 6 x+8 z=105\\} \\\\\n&amp; \\quad \\quad T=\\{(x, y, z): 6 x+8 z=5\\}\n\\end{aligned}$$</p>\n<p>Since S and T both are plane;</p>\n<p>(A) There exist a triangle in plane S whose area $$=1$$ (always)</p>\n<p>(B) L &amp; M lies on plane T, hence line segment joining L &amp; M will lie on plane T.</p>\n<p>(C) Distance between $$\\mathrm{S}$$ &amp; $$\\mathrm{T}$$</p>\n<p>$$\\mathrm{d}=\\left|\\frac{105-5}{10}\\right|=10$$</p>\n<p>Hence for rectangle of perimeter 48 can exist.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzdit9v6/b4b98460-9da5-433f-aa70-de604b6142db/f312b120-5140-11ef-a18d-b11057c77886/file-jaoe38c1lzdit9v7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzdit9v6/b4b98460-9da5-433f-aa70-de604b6142db/f312b120-5140-11ef-a18d-b11057c77886/file-jaoe38c1lzdit9v7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2024 Paper 1 Online Mathematics - 3D Geometry Question 7 English Explanation 1\"></p>\n<p>There will be infinite such rectangle possible.</p>\n<p>(D) For square</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzdit9v6/b4b98460-9da5-433f-aa70-de604b6142db/f312b120-5140-11ef-a18d-b11057c77886/file-jaoe38c1lzdit9v7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzdit9v6/b4b98460-9da5-433f-aa70-de604b6142db/f312b120-5140-11ef-a18d-b11057c77886/file-jaoe38c1lzdit9v7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2024 Paper 1 Online Mathematics - 3D Geometry Question 7 English Explanation 2\"></p>\n<p>Hence Answers A, B, C, D are correct.</p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "1lgvpmh4j",
@@ -1001,7 +1001,7 @@
     "difficulty": "medium",
     "solution": "A(1, 2, 3), B(2, 3, 1), C(2, 4, 2), O(0, 0, 0)<br><br>Equation of plane passing through A, B, C will be<br><br>$$\\left| {\\matrix{\n   {x - 1} &amp; {y - 2} &amp; {z - 3}  \\cr \n   {2 - 1} &amp; {3 - 2} &amp; {1 - 3}  \\cr \n   {2 - 1} &amp; {4 - 2} &amp; {2 - 3}  \\cr \n\n } } \\right| = 0$$<br><br>$$ \\Rightarrow \\left| {\\matrix{\n   {x - 1} &amp; {y - 2} &amp; {z - 3}  \\cr \n   1 &amp; 1 &amp; { - 2}  \\cr \n   1 &amp; 2 &amp; { - 1}  \\cr \n\n } } \\right| = 0$$<br><br>$$ \\Rightarrow (x - 1)( - 1 + 4) - (y - 2)( - 1 + 2) + (z - 3)(2 - 1) = 0$$<br><br><br>$$ \\Rightarrow (x - 1)(3) - (y - 2)(1) + (z - 3)(1) = 0$$<br><br>$$ \\Rightarrow 3x - 3 - y + 2 + z - 3 = 0$$<br><br>$$ \\Rightarrow 3x - y + z - 4 = 0$$, is the required plane.<br><br>Now, O(0, 0, 0) &amp; P(2, $$-$$1, 1)<br><br><picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kr00pfkb/cb1ee15c-86c0-4982-9e1b-f07d84176055/6ecc9db0-e2ba-11eb-bdd2-7fe09049309d/file-1kr00pfkc-320w.png\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kr00pfkb/cb1ee15c-86c0-4982-9e1b-f07d84176055/6ecc9db0-e2ba-11eb-bdd2-7fe09049309d/file-1kr00pfkc-500w.png\"><img src=\"https://imagex.cdn.examgoal.net/1kr00pfkb/cb1ee15c-86c0-4982-9e1b-f07d84176055/6ecc9db0-e2ba-11eb-bdd2-7fe09049309d/file-1kr00pfkc.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Evening Shift Mathematics - 3D Geometry Question 275 English Explanation\"></picture><br><br>Plane is $$3x - y + z - 4 = 0$$<br><br>O' &amp; P' are foot of perpendiculars.<br><br>For O'<br><br>$${{x - 0} \\over 3} = {{y - 0} \\over { - 1}} = {{z - 0} \\over 1} = {{ - (0 - 0 + 0 - 4)} \\over {9 + 1 + 1}}$$<br><br>$${x \\over 3} = {y \\over { - 1}} = {z \\over 1} = {4 \\over {11}}$$<br><br>$$ \\Rightarrow O'\\left( {{{12} \\over {11}},{{ - 4} \\over {11}},{4 \\over {11}}} \\right)$$<br><br>for P'<br><br>$${{x - 2} \\over 3} = {{y + 1} \\over { - 1}} = {{z - 1} \\over 1} = {{ - (3(2) - ( - 1) + 1 - 4)} \\over {9 + 1 + 1}}$$<br><br>$${{x - 2} \\over 3} = {{y + 1} \\over { - 1}} = {{z - 1} \\over 1} = \\left( {{{ - 4} \\over {11}}} \\right)$$<br><br>$$P'\\left( {{{ - 12} \\over {11}} + 2,{4 \\over {11}} - 1,{{ - 4} \\over {11}} + 1} \\right)$$<br><br>$$ \\Rightarrow P'\\left( {{{10} \\over {11}},{{ - 7} \\over {11}},{7 \\over {11}}} \\right)$$<br><br>$$O'P' = \\sqrt {{{\\left( {{{10} \\over {11}} - {{12} \\over {11}}} \\right)}^2} + {{\\left( {{{ - 7} \\over {11}} + {4 \\over {11}}} \\right)}^2} + {{\\left( {{7 \\over {11}} - {4 \\over {11}}} \\right)}^2}} $$<br><br>$$ \\Rightarrow O'P' = {1 \\over {11}}\\sqrt {4 + 9 + 9} $$<br><br>$$ \\Rightarrow O'P' = {{\\sqrt {22} } \\over {11}}$$<br><br>$$ \\Rightarrow O'P' = {{\\sqrt 2  \\times \\sqrt {11} } \\over {11}}$$<br><br>$$ \\Rightarrow O'P' = \\sqrt {{2 \\over {11}}} $$",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1ktd1xchr",
@@ -1139,12 +1139,12 @@
   {
     "id": "iWc51afvvP3KvJRMFwjgy2xukf467nsf",
     "questionNumber": 51,
-    "questionText": "The plane which bisects the line joining, the\npoints (4, –2, 3) and (2, 4, –1) at right angles\nalso passes through the point :",
+    "questionText": "The plane which bisects the line joining, the\npoints (4, \u20132, 3) and (2, 4, \u20131) at right angles\nalso passes through the point :",
     "options": [
       "(4, 0, 1)",
-      "(0, –1, 1)",
-      "(0, 1, –1)",
-      "(4, 0, –1)"
+      "(0, \u20131, 1)",
+      "(0, 1, \u20131)",
+      "(4, 0, \u20131)"
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -1154,7 +1154,7 @@
     "subject": "Mathematics",
     "topic": "plane-in-space",
     "difficulty": "medium",
-    "solution": "Direction ratios of normal to plane are &lt; 2, –6, 4 &gt;\n<br><br> Also plane passes through (3, 1, 1)\n<br><br>$$ \\therefore $$ Equation of plane \n<br><br/>2(x–3)–6(y–1)+4(z–1) = 0\n<br><br>$$ \\Rightarrow $$ x – 3y + 2z = 2\n<br><br>By checking all options we can see this equation passes through (4, 0, –1)",
+    "solution": "Direction ratios of normal to plane are &lt; 2, \u20136, 4 &gt;\n<br><br> Also plane passes through (3, 1, 1)\n<br><br>$$ \\therefore $$ Equation of plane \n<br><br/>2(x\u20133)\u20136(y\u20131)+4(z\u20131) = 0\n<br><br>$$ \\Rightarrow $$ x \u2013 3y + 2z = 2\n<br><br>By checking all options we can see this equation passes through (4, 0, \u20131)",
     "section": "A",
     "type": "SCQ"
   },
@@ -1193,7 +1193,7 @@
     "subject": "Mathematics",
     "topic": "plane-in-space",
     "difficulty": "medium",
-    "solution": "Plane passing through  (2, 1, 0), (4, 1, 1) and\n(5, 0, 1) is\n<br><br>$$\\left| {\\matrix{\n   {x - 2} &amp; {y - 1} &amp; {z - 0}  \\cr \n   {4 - 2} &amp; {1 - 1} &amp; {1 - 0}  \\cr \n   {5 - 2} &amp; {0 - 1} &amp; {1 - 0}  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$  x + y – 2z = 3\n<br><br>$$ \\therefore $$  Image of R(2, 1, 6) in this plane is\n<br><br>$${{x - 2} \\over 1} = {{y - 1} \\over 1} = {{z - 6} \\over { - 2}} =  - 2{{\\left( {2 + 1 - 12 - 3} \\right)} \\over {1 + 1 + 4}}$$\n<br><br>$$ \\therefore $$ (x, y, z) = (6, 5, –2)",
+    "solution": "Plane passing through  (2, 1, 0), (4, 1, 1) and\n(5, 0, 1) is\n<br><br>$$\\left| {\\matrix{\n   {x - 2} &amp; {y - 1} &amp; {z - 0}  \\cr \n   {4 - 2} &amp; {1 - 1} &amp; {1 - 0}  \\cr \n   {5 - 2} &amp; {0 - 1} &amp; {1 - 0}  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$  x + y \u2013 2z = 3\n<br><br>$$ \\therefore $$  Image of R(2, 1, 6) in this plane is\n<br><br>$${{x - 2} \\over 1} = {{y - 1} \\over 1} = {{z - 6} \\over { - 2}} =  - 2{{\\left( {2 + 1 - 12 - 3} \\right)} \\over {1 + 1 + 4}}$$\n<br><br>$$ \\therefore $$ (x, y, z) = (6, 5, \u20132)",
     "section": "A",
     "type": "SCQ"
   },
@@ -1202,9 +1202,9 @@
     "questionNumber": 51,
     "questionText": "The mirror image of the point (1, 2, 3) in a plane\nis<br><br/> $$\\left( { - {7 \\over 3}, - {4 \\over 3}, - {1 \\over 3}} \\right)$$. Which of the following\npoints lies on this plane ?",
     "options": [
-      "(1, –1, 1)",
-      "(–1, –1, –1)",
-      "(–1, –1, 1)",
+      "(1, \u20131, 1)",
+      "(\u20131, \u20131, \u20131)",
+      "(\u20131, \u20131, 1)",
       "(1, 1, 1)"
     ],
     "correctOption": 0,
@@ -1215,14 +1215,14 @@
     "subject": "Mathematics",
     "topic": "plane-in-space",
     "difficulty": "medium",
-    "solution": "Let A(1, 2, 3), B$$\\left( { - {7 \\over 3}, - {4 \\over 3}, - {1 \\over 3}} \\right)$$\n<br><br>$$ \\therefore $$ Midpoint of AB = M =  $$\\left( {{{{{ - 7} \\over 3} + 1} \\over 2},{{{{ - 4} \\over 3} + 2} \\over 2},{{{{ - 1} \\over 3} + 3} \\over 2}} \\right)$$\n<br><br>= $$\\left( {{{ - 2} \\over 3},{1 \\over 3},{4 \\over 3}} \\right)$$\n<br><br>DR of AM = $$\\left( {1 + {2 \\over 3},2 - {1 \\over 3},3 - {4 \\over 3}} \\right)$$\n<br><br>= $$\\left( {{5 \\over 3},{5 \\over 3},{5 \\over 3}} \\right)$$\n<br><br>= (1, 1, 1)\n<br><br>Equation of plane \n<br><br>$$a\\left( {x + {2 \\over 3}} \\right) + b\\left( {y - {1 \\over 3}} \\right) + c\\left( {z - {4 \\over 3}} \\right)$$ = 0\n<br><br>$$ \\Rightarrow $$ $$1\\left( {x + {2 \\over 3}} \\right) + 1\\left( {y - {1 \\over 3}} \\right) + 1\\left( {z - {4 \\over 3}} \\right)$$ = 0\n<br><br>$$ \\Rightarrow $$ x + y + z = 1\n<br><br>$$ \\therefore $$ (1, –1, 1) lies on the plane.",
+    "solution": "Let A(1, 2, 3), B$$\\left( { - {7 \\over 3}, - {4 \\over 3}, - {1 \\over 3}} \\right)$$\n<br><br>$$ \\therefore $$ Midpoint of AB = M =  $$\\left( {{{{{ - 7} \\over 3} + 1} \\over 2},{{{{ - 4} \\over 3} + 2} \\over 2},{{{{ - 1} \\over 3} + 3} \\over 2}} \\right)$$\n<br><br>= $$\\left( {{{ - 2} \\over 3},{1 \\over 3},{4 \\over 3}} \\right)$$\n<br><br>DR of AM = $$\\left( {1 + {2 \\over 3},2 - {1 \\over 3},3 - {4 \\over 3}} \\right)$$\n<br><br>= $$\\left( {{5 \\over 3},{5 \\over 3},{5 \\over 3}} \\right)$$\n<br><br>= (1, 1, 1)\n<br><br>Equation of plane \n<br><br>$$a\\left( {x + {2 \\over 3}} \\right) + b\\left( {y - {1 \\over 3}} \\right) + c\\left( {z - {4 \\over 3}} \\right)$$ = 0\n<br><br>$$ \\Rightarrow $$ $$1\\left( {x + {2 \\over 3}} \\right) + 1\\left( {y - {1 \\over 3}} \\right) + 1\\left( {z - {4 \\over 3}} \\right)$$ = 0\n<br><br>$$ \\Rightarrow $$ x + y + z = 1\n<br><br>$$ \\therefore $$ (1, \u20131, 1) lies on the plane.",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "pOnUJRdMYw4ui1JSKs3rsa0w2w9jx1zs3oi",
     "questionNumber": 62,
-    "questionText": "If the plane 2x – y + 2z + 3 = 0 has the distances\n$${1 \\over 3}$$\n and\n$${2 \\over 3}$$\n units from the planes 4x – 2y + 4z + $$\\lambda $$ = 0 and\n2x – y + 2z + $$\\mu $$ = 0, respectively, then the maximum value of $$\\lambda $$ + $$\\mu $$ is equal to :",
+    "questionText": "If the plane 2x \u2013 y + 2z + 3 = 0 has the distances\n$${1 \\over 3}$$\n and\n$${2 \\over 3}$$\n units from the planes 4x \u2013 2y + 4z + $$\\lambda $$ = 0 and\n2x \u2013 y + 2z + $$\\mu $$ = 0, respectively, then the maximum value of $$\\lambda $$ + $$\\mu $$ is equal to :",
     "options": [
       "13",
       "9",
@@ -1244,7 +1244,7 @@
   {
     "id": "ACCrs5Q2N2AyKcnuNg3rsa0w2w9jwxv0uci",
     "questionNumber": 62,
-    "questionText": "If Q(0, –1, –3) is the image of the point P in the plane 3x – y + 4z = 2 and R is the point (3, –1, –2), then the\narea (in sq. units) of $$\\Delta $$PQR is :",
+    "questionText": "If Q(0, \u20131, \u20133) is the image of the point P in the plane 3x \u2013 y + 4z = 2 and R is the point (3, \u20131, \u20132), then the\narea (in sq. units) of $$\\Delta $$PQR is :",
     "options": [
       "$${{\\sqrt {65} } \\over 2}$$",
       "$$2\\sqrt {13} $$",
@@ -1259,14 +1259,14 @@
     "subject": "Mathematics",
     "topic": "plane-in-space",
     "difficulty": "medium",
-    "solution": "Image of Q in plane<br><br>\n$${{\\left( {x - 0} \\right)} \\over 3} = {{\\left( {y + 1} \\right)} \\over { - 1}} = {{z + 3} \\over { + 4}} = {{ - 2(1 - 12 - 2)} \\over {9 + 1 + 16}} = 1$$<br><br>\nx = 3, y = –2, z = 1<br><br>\nP(3, –2, 1), Q(0, –1, –3), R(3, –1, –2)<br><br>\nNow area of $$\\Delta $$PQR is<br><br>\n$${1 \\over 2}\\left| {\\overline {PQ}  \\times \\overline {QR} } \\right| = {1 \\over 2}\\left| {\\left| {\\matrix{\n   {\\widehat i} &amp; {\\widehat j} &amp; {\\widehat k}  \\cr \n   3 &amp; { - 1} &amp; 4  \\cr \n   3 &amp; 0 &amp; 1  \\cr \n\n } } \\right|} \\right|$$<br><br>\n$$ \\Rightarrow {1 \\over 2}\\left| {\\left\\{ {\\widehat i( - 1) - \\widehat j(3 - 12) + \\widehat k(3)} \\right\\}} \\right|$$<br><br>\n$$ \\Rightarrow {1 \\over 2}\\sqrt {(1 + 81 + 9)} $$<br><br>\n$$ \\Rightarrow {{\\sqrt {91} } \\over 2}$$",
+    "solution": "Image of Q in plane<br><br>\n$${{\\left( {x - 0} \\right)} \\over 3} = {{\\left( {y + 1} \\right)} \\over { - 1}} = {{z + 3} \\over { + 4}} = {{ - 2(1 - 12 - 2)} \\over {9 + 1 + 16}} = 1$$<br><br>\nx = 3, y = \u20132, z = 1<br><br>\nP(3, \u20132, 1), Q(0, \u20131, \u20133), R(3, \u20131, \u20132)<br><br>\nNow area of $$\\Delta $$PQR is<br><br>\n$${1 \\over 2}\\left| {\\overline {PQ}  \\times \\overline {QR} } \\right| = {1 \\over 2}\\left| {\\left| {\\matrix{\n   {\\widehat i} &amp; {\\widehat j} &amp; {\\widehat k}  \\cr \n   3 &amp; { - 1} &amp; 4  \\cr \n   3 &amp; 0 &amp; 1  \\cr \n\n } } \\right|} \\right|$$<br><br>\n$$ \\Rightarrow {1 \\over 2}\\left| {\\left\\{ {\\widehat i( - 1) - \\widehat j(3 - 12) + \\widehat k(3)} \\right\\}} \\right|$$<br><br>\n$$ \\Rightarrow {1 \\over 2}\\sqrt {(1 + 81 + 9)} $$<br><br>\n$$ \\Rightarrow {{\\sqrt {91} } \\over 2}$$",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "FZp6IAeQMHnGO3LU7gCrN",
     "questionNumber": 61,
-    "questionText": "The plane which bisects the line segment joining the points (–3, –3, 4) and (3, 7, 6) at right angles, passes through which one of the following points ?",
+    "questionText": "The plane which bisects the line segment joining the points (\u20133, \u20133, 4) and (3, 7, 6) at right angles, passes through which one of the following points ?",
     "options": [
       "(2, 1, 3)",
       "(4, $$-$$ 1, 2)",
@@ -1281,7 +1281,7 @@
     "subject": "Mathematics",
     "topic": "plane-in-space",
     "difficulty": "medium",
-    "solution": "<img src=\"https://imagex.cdn.examgoal.net/FZuyuubr0SlUq1N6X/XphWIcnMcX8WefhcOew5TiM1O0s9f/TmCU4iKopyNbmovZX9AFN9/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Evening Slot Mathematics - 3D Geometry Question 324 English Explanation\">\n<br>p : 3(x $$-$$ 0) + 5(y $$-$$ 2) + 1 (z $$-$$ 5) = 0\n<br><br>3x + 5y + z = 15\n<br><br>On checking all the options, the option (4, 1, − 2)\nsatisfy the equation of plane.",
+    "solution": "<img src=\"https://imagex.cdn.examgoal.net/FZuyuubr0SlUq1N6X/XphWIcnMcX8WefhcOew5TiM1O0s9f/TmCU4iKopyNbmovZX9AFN9/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Evening Slot Mathematics - 3D Geometry Question 324 English Explanation\">\n<br>p : 3(x $$-$$ 0) + 5(y $$-$$ 2) + 1 (z $$-$$ 5) = 0\n<br><br>3x + 5y + z = 15\n<br><br>On checking all the options, the option (4, 1, \u2212 2)\nsatisfy the equation of plane.",
     "section": "A",
     "type": "SCQ"
   },
@@ -1310,7 +1310,7 @@
   {
     "id": "xUxj1ys4ZXlUo5ebGRM5g",
     "questionNumber": 62,
-    "questionText": "The plane passing through the point (4, –1, 2) and parallel to the lines&nbsp;&nbsp;$${{x + 2} \\over 3} = {{y - 2} \\over { - 1}} = {{z + 1} \\over 2}$$&nbsp;&nbsp;and&nbsp;&nbsp;$${{x - 2} \\over 1} = {{y - 3} \\over 2} = {{z - 4} \\over 3}$$ also passes through the point -",
+    "questionText": "The plane passing through the point (4, \u20131, 2) and parallel to the lines&nbsp;&nbsp;$${{x + 2} \\over 3} = {{y - 2} \\over { - 1}} = {{z + 1} \\over 2}$$&nbsp;&nbsp;and&nbsp;&nbsp;$${{x - 2} \\over 1} = {{y - 3} \\over 2} = {{z - 4} \\over 3}$$ also passes through the point -",
     "options": [
       "(1, 1, $$-$$ 1)",
       "(1, 1, 1)",
@@ -1332,7 +1332,7 @@
   {
     "id": "vCpFMyMOEky4bJBVl2v9s",
     "questionNumber": 62,
-    "questionText": "If the point (2, $$\\alpha $$, $$\\beta $$) lies on the plane which passes through the points (3, 4, 2) and (7, 0, 6) and is perpendicular to the plane 2x – 5y = 15, then 2$$\\alpha $$ – 3$$\\beta $$ is equal to ",
+    "questionText": "If the point (2, $$\\alpha $$, $$\\beta $$) lies on the plane which passes through the points (3, 4, 2) and (7, 0, 6) and is perpendicular to the plane 2x \u2013 5y = 15, then 2$$\\alpha $$ \u2013 3$$\\beta $$ is equal to ",
     "options": [
       "12",
       "7",
@@ -1354,7 +1354,7 @@
   {
     "id": "y1O9ASDQ4I3iqhyAwRaOV",
     "questionNumber": 62,
-    "questionText": "The direction ratios of normal to the plane through the points (0, –1, 0) and (0, 0, 1) and making an angle $${\\pi  \\over 4}$$ with the plane y $$-$$ z + 5 = 0 are : ",
+    "questionText": "The direction ratios of normal to the plane through the points (0, \u20131, 0) and (0, 0, 1) and making an angle $${\\pi  \\over 4}$$ with the plane y $$-$$ z + 5 = 0 are : ",
     "options": [
       "2, $$-$$1, 1",
       "$$2\\sqrt 3 ,1, - 1$$",
@@ -1371,17 +1371,17 @@
     "difficulty": "medium",
     "solution": "Let the equation of plane be \n<br><br>a(x $$-$$ 0) + b(y + 1) + c(z $$-$$ 0) = 0\n<br><br>It passes through (0, 0, 1) then\n<br><br>b + c = 0 &nbsp;&nbsp;&nbsp;&nbsp;. . . . (1)\n<br><br>Now cos $${\\pi  \\over 4}$$ = $${{a\\left( 0 \\right) + b\\left( 1 \\right) + c\\left( { - 1} \\right)} \\over {\\sqrt 2 \\sqrt {{a^2} + {b^2} + {c^2}} }}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;a<sup>2</sup> $$=$$ $$-$$ 2bc  and  b $$=$$ $$-$$ c\n<br><br>we get a<sup>2</sup> $$=$$ 2c<sup>2</sup>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;a $$=$$ $$ \\pm $$ $$\\sqrt 2 $$ c\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;direction ratio (a, b, c) = ($$\\sqrt 2 $$, $$-$$1, 1)  or  ($$\\sqrt 2 $$, 1, $$-$$ 1)",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "ZNjWs09KjUBWLXz3C53rsa0w2w9jxadan6d",
     "questionNumber": 61,
-    "questionText": "A plane which bisects the angle between the two given planes 2x – y + 2z – 4 = 0 and x + 2y + 2z – 2 = 0,\npasses through the point :",
+    "questionText": "A plane which bisects the angle between the two given planes 2x \u2013 y + 2z \u2013 4 = 0 and x + 2y + 2z \u2013 2 = 0,\npasses through the point :",
     "options": [
-      "(1, –4, 1)",
-      "(1, 4, –1)",
+      "(1, \u20134, 1)",
+      "(1, 4, \u20131)",
       "(2, 4, 1)",
-      "(2, –4, 1)"
+      "(2, \u20134, 1)"
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -1398,7 +1398,7 @@
   {
     "id": "A3dJQnt8WpOkVMARcRG7E",
     "questionNumber": 61,
-    "questionText": "Let S be the set of all real values of $$\\lambda $$ such that a plane passing through the points (–$$\\lambda $$<sup>2</sup>, 1, 1), (1, –$$\\lambda $$<sup>2</sup>, 1) and (1, 1, – $$\\lambda $$<sup>2</sup>) also passes through the point (–1,   –1, 1). Then S is equal to :",
+    "questionText": "Let S be the set of all real values of $$\\lambda $$ such that a plane passing through the points (\u2013$$\\lambda $$<sup>2</sup>, 1, 1), (1, \u2013$$\\lambda $$<sup>2</sup>, 1) and (1, 1, \u2013 $$\\lambda $$<sup>2</sup>) also passes through the point (\u20131,   \u20131, 1). Then S is equal to :",
     "options": [
       "{1, $$-$$1}",
       "{3, $$-$$ 3}",
@@ -1420,7 +1420,7 @@
   {
     "id": "OOzulklPdGI4Zf272LTtO",
     "questionNumber": 61,
-    "questionText": "A tetrahedron has vertices P(1, 2, 1), Q(2, 1, 3), R(–1, 1, 2) and O(0, 0, 0). The angle between the faces OPQ and PQR is :",
+    "questionText": "A tetrahedron has vertices P(1, 2, 1), Q(2, 1, 3), R(\u20131, 1, 2) and O(0, 0, 0). The angle between the faces OPQ and PQR is :",
     "options": [
       "cos<sup>$$-$$1</sup>$$\\left( {{{17} \\over {31}}} \\right)$$",
       "cos<sup>$$-$$1</sup>$$\\left( {{{9} \\over {35}}} \\right)$$",
@@ -1486,7 +1486,7 @@
   {
     "id": "yodXktCxgD0IJ4xePL18hoxe66ijvwvwdsy",
     "questionNumber": 62,
-    "questionText": "Let P be the plane, which contains the line of\nintersection of the planes, x + y + z – 6 = 0 and\n2x + 3y + z + 5 = 0 and it is perpendicular to the\nxy-plane. Then the distance of the point (0, 0, 256)\nfrom P is equal to :",
+    "questionText": "Let P be the plane, which contains the line of\nintersection of the planes, x + y + z \u2013 6 = 0 and\n2x + 3y + z + 5 = 0 and it is perpendicular to the\nxy-plane. Then the distance of the point (0, 0, 256)\nfrom P is equal to :",
     "options": [
       "205$$\\sqrt5$$",
       "63$$\\sqrt5$$",
@@ -1501,14 +1501,14 @@
     "subject": "Mathematics",
     "topic": "plane-in-space",
     "difficulty": "medium",
-    "solution": "P<sub>1</sub> : x + y + z – 6 = 0\n<br><br>P<sub>2</sub> : 2x + 3y + z + 5 = 0\n<br><br>Equation of plane which passes through the line of intersection of P<sub>1</sub> and P<sub>2</sub> is\n<br><br>P<sub>1</sub> + $$\\lambda $$P<sub>2</sub> = 0\n<br><br>$$ \\Rightarrow $$ (x + y + z – 6) + $$\\lambda $$(2x + 3y + z + 5) = 0\n<br><br>$$ \\Rightarrow $$ (1 + 2$$\\lambda $$)x + (1 + 3$$\\lambda $$)y + (1 + $$\\lambda $$) + (5$$\\lambda $$ - 6) = 0\n<br><br>As the above plane is perpendicular to xy plane\n<br><br>$$ \\therefore $$ $$\\overrightarrow n .\\widehat k = 0$$\n<br><br>$$ \\Rightarrow $$ $$\\left[ {\\left( {2 + \\lambda } \\right)\\widehat i + \\left( {3 + \\lambda } \\right)\\widehat j + \\left( {1 + \\lambda } \\right)\\widehat k} \\right].\\widehat k$$ = 0\n<br><br>$$ \\Rightarrow $$ 1 + $$\\lambda $$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = -1\n<br><br>So, equation of plane\n<br><br>- x - 2y - 11 = 0\n<br><br>$$ \\Rightarrow $$ x + 2y + 11 = 0\n<br><br>Distance of the point (0, 0, 256) from this plane\n<br><br>= $$\\left| {{{0 + 0 + 11} \\over {\\sqrt 5 }}} \\right|$$ = $${{11} \\over {\\sqrt 5 }}$$",
+    "solution": "P<sub>1</sub> : x + y + z \u2013 6 = 0\n<br><br>P<sub>2</sub> : 2x + 3y + z + 5 = 0\n<br><br>Equation of plane which passes through the line of intersection of P<sub>1</sub> and P<sub>2</sub> is\n<br><br>P<sub>1</sub> + $$\\lambda $$P<sub>2</sub> = 0\n<br><br>$$ \\Rightarrow $$ (x + y + z \u2013 6) + $$\\lambda $$(2x + 3y + z + 5) = 0\n<br><br>$$ \\Rightarrow $$ (1 + 2$$\\lambda $$)x + (1 + 3$$\\lambda $$)y + (1 + $$\\lambda $$) + (5$$\\lambda $$ - 6) = 0\n<br><br>As the above plane is perpendicular to xy plane\n<br><br>$$ \\therefore $$ $$\\overrightarrow n .\\widehat k = 0$$\n<br><br>$$ \\Rightarrow $$ $$\\left[ {\\left( {2 + \\lambda } \\right)\\widehat i + \\left( {3 + \\lambda } \\right)\\widehat j + \\left( {1 + \\lambda } \\right)\\widehat k} \\right].\\widehat k$$ = 0\n<br><br>$$ \\Rightarrow $$ 1 + $$\\lambda $$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = -1\n<br><br>So, equation of plane\n<br><br>- x - 2y - 11 = 0\n<br><br>$$ \\Rightarrow $$ x + 2y + 11 = 0\n<br><br>Distance of the point (0, 0, 256) from this plane\n<br><br>= $$\\left| {{{0 + 0 + 11} \\over {\\sqrt 5 }}} \\right|$$ = $${{11} \\over {\\sqrt 5 }}$$",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "oW3MTlGq7uoYSy1HduycQ",
     "questionNumber": 62,
-    "questionText": "A plane passing through the points (0, –1, 0)\nand (0, 0, 1) and making an angle $${\\pi  \\over 4}$$ with the\nplane y – z + 5 = 0, also passes through the\npoint",
+    "questionText": "A plane passing through the points (0, \u20131, 0)\nand (0, 0, 1) and making an angle $${\\pi  \\over 4}$$ with the\nplane y \u2013 z + 5 = 0, also passes through the\npoint",
     "options": [
       "$$\\left( {\\sqrt 2 ,1,4} \\right)$$",
       "$$\\left(- {\\sqrt 2 ,1,4} \\right)$$",
@@ -1523,7 +1523,7 @@
     "subject": "Mathematics",
     "topic": "plane-in-space",
     "difficulty": "medium",
-    "solution": "Let ax + by + cz = 1 be the equation of the plane\n<br><br>it passed through point (0, –1, 0).\n<br><br>$$ \\therefore $$ -b = 1\n<br><br>$$ \\Rightarrow $$ b = -1\n<br><br>Also it passes through point (0, 0, 1)\n<br><br>$$ \\therefore $$ c = 1\n<br><br>So the plane is ax - y + z = 1.\n<br><br>This plane an angle $${\\pi  \\over 4}$$ with the\nplane y – z + 5 = 0.\n<br><br>Normal to the plane ax - y + z = 1 is\n<br><br>$${\\overrightarrow a }$$ = $$a\\widehat i - \\widehat j + \\widehat k$$\n<br><br>Normal to the plane y – z + 5 = 0 is\n<br><br>$${\\overrightarrow b }$$ = $$\\widehat j - \\widehat k$$\n<br><br>cos $$\\theta $$ = $$\\left| {{{\\overrightarrow a .\\overrightarrow b } \\over {\\left| {\\overrightarrow a } \\right|\\left| {\\overrightarrow b } \\right|}}} \\right|$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over {\\sqrt 2 }}$$ = $$\\left| {{{\\overrightarrow a .\\overrightarrow b } \\over {\\left| {\\overrightarrow a } \\right|\\left| {\\overrightarrow b } \\right|}}} \\right|$$\n<br><br>$$ \\Rightarrow $$ $${{\\left| {0 - 1 - 1} \\right|} \\over {\\sqrt {{a^2} + 1 + 1} \\sqrt {{1^2} + {1^2}} }}$$ = $${1 \\over {\\sqrt 2 }}$$\n<br><br>$$ \\Rightarrow $$ $${a^2} + 2 = 4$$\n<br><br>$$ \\Rightarrow $$ a = $$ \\pm $$ $$\\sqrt 2 $$\n<br><br>$$ \\therefore $$ Equation of plane\n<br><br>$$ \\pm $$ $$\\sqrt 2 $$x - y + z = 1\n<br><br>Now by checking each options you can see\n<br><br>equation - $$\\sqrt 2 $$x - y + z = 1  satisfy by the point $$\\left( {\\sqrt 2 ,1,4} \\right)$$.",
+    "solution": "Let ax + by + cz = 1 be the equation of the plane\n<br><br>it passed through point (0, \u20131, 0).\n<br><br>$$ \\therefore $$ -b = 1\n<br><br>$$ \\Rightarrow $$ b = -1\n<br><br>Also it passes through point (0, 0, 1)\n<br><br>$$ \\therefore $$ c = 1\n<br><br>So the plane is ax - y + z = 1.\n<br><br>This plane an angle $${\\pi  \\over 4}$$ with the\nplane y \u2013 z + 5 = 0.\n<br><br>Normal to the plane ax - y + z = 1 is\n<br><br>$${\\overrightarrow a }$$ = $$a\\widehat i - \\widehat j + \\widehat k$$\n<br><br>Normal to the plane y \u2013 z + 5 = 0 is\n<br><br>$${\\overrightarrow b }$$ = $$\\widehat j - \\widehat k$$\n<br><br>cos $$\\theta $$ = $$\\left| {{{\\overrightarrow a .\\overrightarrow b } \\over {\\left| {\\overrightarrow a } \\right|\\left| {\\overrightarrow b } \\right|}}} \\right|$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over {\\sqrt 2 }}$$ = $$\\left| {{{\\overrightarrow a .\\overrightarrow b } \\over {\\left| {\\overrightarrow a } \\right|\\left| {\\overrightarrow b } \\right|}}} \\right|$$\n<br><br>$$ \\Rightarrow $$ $${{\\left| {0 - 1 - 1} \\right|} \\over {\\sqrt {{a^2} + 1 + 1} \\sqrt {{1^2} + {1^2}} }}$$ = $${1 \\over {\\sqrt 2 }}$$\n<br><br>$$ \\Rightarrow $$ $${a^2} + 2 = 4$$\n<br><br>$$ \\Rightarrow $$ a = $$ \\pm $$ $$\\sqrt 2 $$\n<br><br>$$ \\therefore $$ Equation of plane\n<br><br>$$ \\pm $$ $$\\sqrt 2 $$x - y + z = 1\n<br><br>Now by checking each options you can see\n<br><br>equation - $$\\sqrt 2 $$x - y + z = 1  satisfy by the point $$\\left( {\\sqrt 2 ,1,4} \\right)$$.",
     "section": "A",
     "type": "SCQ"
   },
@@ -1654,7 +1654,7 @@
     "difficulty": "medium",
     "solution": "If a, b, c are the intercepts of the variable plane on the x,y,z axes respectively, then the equation of the plane is <br/><br/>$${x \\over a} + {y \\over b} + {z \\over c} = 1$$\n<br><br>And  the point of intersection of the planes parallel to  the xy, yz and zx planes is $$\\left( {a,b,c} \\right)$$.\n<br><br>As the point (3, 2, 1) lies on the variables plane, \n<br><br>so  $${3 \\over a} + {2 \\over b} + {1 \\over c} = 1$$ \n<br><br>Therefore, the  required locus is \n<br><br>$${3 \\over x} + {2 \\over y} + {1 \\over z} = 1$$",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "By2W9q22rMEe3evacfhKc",
@@ -1748,7 +1748,7 @@
   {
     "id": "Mb2JUKkOpNuTwuvd2BgWO",
     "questionNumber": 61,
-    "questionText": "The distance of the point (1, − 2, 4) from the plane passing through the point\n(1, 2, 2) and perpendicular to the planes x − y + 2z = 3 and 2x − 2y + z + 12 = 0, is :",
+    "questionText": "The distance of the point (1, \u2212 2, 4) from the plane passing through the point\n(1, 2, 2) and perpendicular to the planes x \u2212 y + 2z = 3 and 2x \u2212 2y + z + 12 = 0, is :",
     "options": [
       "$$2\\sqrt 2 $$ ",
       "2",
@@ -1765,7 +1765,7 @@
     "difficulty": "medium",
     "solution": "Equation of plane passing through point (1, 2, 2) is,\n<br><br>a(x $$-$$ 1) + b(y $$-$$ 2) + c(z $$-$$ 2) = 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(1)\n<br><br>This plane is perpendicular to the plane \n<br><br>x $$-$$ y + 2z = 3 &nbsp;&nbsp;and&nbsp;&nbsp;2x $$-$$ 2y + z + 12 = 0\n<br><br>When two planes,\n<br><br>a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z + d<sub>1</sub> = 0\n<br><br>and a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z + d<sub>2</sub> = 0\n<br><br>are perpendicular to each other then\n<br><br>a<sub>1</sub>a<sub>2</sub> + b<sub>1</sub>b<sub>2</sub> + c<sub>1</sub>c<sub>2</sub> = 0\n<br><br>So, we can say,\n<br><br>a $$ \\times $$ 1 + b $$ \\times $$ ($$-$$ 1) + c $$ \\times $$ 2 = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;a $$-$$ b + 2c = 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . (2)\n<br><br>and, a $$ \\times $$ 2 + b($$-$$2) + c(1) = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;2a $$-$$ 2b + c = 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(3)\n<br><br>Solving (2) and (3)\n<br><br>$${a \\over { - 1 + 4}}$$ = $${b \\over {4 - 1}}$$ = $${c \\over { - 2 + 2}}$$ = $$\\lambda $$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp; a = 3$$\\lambda $$, b = 3$$\\lambda $$, c = 0\n<br><br>Putting the values of a, b, c in equation (1) we get, \n<br><br>3$$\\lambda $$ (x $$-$$ 1) + 3$$\\lambda $$ (y $$-$$ 2) = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;3(x $$-$$ 1) + 3(y $$-$$ 2) = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;3x + 3y $$-$$ 9 = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;x + y $$-$$ 3 = 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Distance of point (1, $$-$$2,  4) from plane x + y $$-$$ 3 = 0 is,\n<br><br>= $$\\left| {{{1 - 2 - 3} \\over {\\sqrt {1 + 1} }}} \\right|$$ = $${4 \\over {\\sqrt 2 }}$$ = 2$$\\sqrt 2 $$",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "O5LQAah1HJQl0wZ8",

@@ -483,7 +483,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -492,7 +492,7 @@
     "solution": "Given square matrix<br><br>$$M = \\left[ {\\matrix{\n   0 &amp; 1 &amp; a  \\cr \n   1 &amp; 2 &amp; 3  \\cr \n   3 &amp; b &amp; 1  \\cr \n\n } } \\right]$$<br><br>and adj $$(M) = \\left[ {\\matrix{\n   { - 1} &amp; 1 &amp; { - 1}  \\cr \n   8 &amp; { - 6} &amp; 2  \\cr \n   { - 5} &amp; 3 &amp; { - 1}  \\cr \n\n } } \\right]$$<br><br>$$ \\because $$ |adj (M)| = |M|<sup>2</sup> = $$\\left[ {\\matrix{\n   { - 1} &amp; 1 &amp; { - 1}  \\cr \n   8 &amp; { - 6} &amp; 2  \\cr \n   { - 5} &amp; 3 &amp; { - 1}  \\cr \n\n } } \\right]$$<br><br>$$ \\Rightarrow $$ $$|M{|^2} =  - 1(6 - 6) - 1( - 8 + 10) - 1(24 - 30) =  - 2 + 6 = 4$$<br><br>$$ \\Rightarrow $$ $$|M| =  \\pm 2$$<br><br>$$ \\therefore $$ det (adj M<sup>2</sup>) = $$|{M^2}{|^2} = |M{|^4} = 16$$<br><br>As we know A(adj A) = |A| I<br><br>$$ \\Rightarrow $$ M = |M| (adj M)<sup>-1</sup> ....(i)<br><br>$$ \\because $$ (adj M)<sup>-1</sup> = $${1 \\over {|adj\\,M|}}{\\left[ {\\matrix{\n   0 &amp; { - 2} &amp; { - 6}  \\cr \n   { - 2} &amp; { - 4} &amp; { - 2}  \\cr \n   { - 4} &amp; { - 6} &amp; { - 2}  \\cr \n\n } } \\right]^T}$$<br><br>= $${1 \\over 4}\\left[ {\\matrix{\n   0 &amp; { - 2} &amp; { - 4}  \\cr \n   { - 2} &amp; { - 4} &amp; { - 6}  \\cr \n   { - 6} &amp; { - 2} &amp; { - 2}  \\cr \n\n } } \\right]$$<br><br>So$$\\left[ {\\matrix{\n   0 &amp; 1 &amp; a  \\cr \n   1 &amp; 2 &amp; 3  \\cr \n   3 &amp; b &amp; 1  \\cr \n\n } } \\right] = {{|M|} \\over 4}\\left[ {\\matrix{\n   0 &amp; { - 2} &amp; { - 4}  \\cr \n   { - 2} &amp; { - 4} &amp; { - 6}  \\cr \n   { - 6} &amp; { - 2} &amp; { - 2}  \\cr \n\n } } \\right]$$<br><br>$$ \\Rightarrow $$ M = $$\\left[ {\\matrix{\n   0 &amp; 1 &amp; 2  \\cr \n   1 &amp; 2 &amp; 3  \\cr \n   3 &amp; 1 &amp; 1  \\cr \n\n } } \\right]$$<br><br>Now, If M$$\\left[ {\\matrix{\n   \\alpha   \\cr \n   \\beta   \\cr \n   \\gamma   \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1  \\cr \n   2  \\cr \n   3  \\cr \n\n } } \\right]$$<br><br>$$ \\Rightarrow $$ $$\\left[ {\\matrix{\n   0 &amp; 1 &amp; 2  \\cr \n   1 &amp; 2 &amp; 3  \\cr \n   3 &amp; 1 &amp; 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   \\alpha   \\cr \n   \\beta   \\cr \n   \\gamma   \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1  \\cr \n   2  \\cr \n   3  \\cr \n\n } } \\right]$$<br><br>$$ \\Rightarrow $$ $$\\beta $$ + 2$$\\gamma $$ = 1, $$\\alpha $$ + 2$$\\beta $$ + 3$$\\gamma $$ = 2 and 3$$\\alpha $$ + $$\\beta $$ + $$\\gamma $$ = 3<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = 1, $$\\beta $$ = -1 and $$\\gamma $$ = 1<br><br>$$ \\therefore $$ $$\\alpha $$ - $$\\beta $$ + $$\\gamma $$ = 3<br><br>And $${(adj\\,M)^{ - 1}} + adj\\,({M^{ - 1}}) = 2{(adj\\,M)^{ - 1}}$$<br><br>[$$ \\because $$ adj (M<sup>-1</sup>) = (adj M)<sup>-1</sup>]<br><br>= $$2\\left( { - {M \\over 2}} \\right) =  - M$$<br><br>[$$ \\because $$ (adj M)-<sup>1</sup> = $${M \\over {|M|}}$$ from Eq. (i) ]<br><br>and $$ \\because $$ a = 2 and b = 1, so a + b = 3<br><br>Hence, options (b), (c) and (d) are correct.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "2bwNHWvvDdm8rsiP",

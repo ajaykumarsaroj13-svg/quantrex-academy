@@ -2,7 +2,7 @@
   {
     "id": "mp9xv14o",
     "questionNumber": 25,
-    "questionText": "<p>At 300 K , the molar conductivities of the aqueous solutions of three salts at two different concentrations are given below :</p>\n<table>\n  <tr>\n    <th>Salt</th>\n    <th>Concentration (M)</th>\n    <th>Molar conductivity (S cm<sup>2</sup> mol<sup>−1</sup>)</th>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">NaNO<sub>3</sub></td>\n    <td>0.01</td>\n    <td>111</td>\n  </tr>\n  <tr>\n    <td>0.04</td>\n    <td>101</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">NaCl</td>\n    <td>0.01</td>\n    <td>117</td>\n  </tr>\n  <tr>\n    <td>0.04</td>\n    <td>107</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">AgNO<sub>3</sub></td>\n    <td>0.01</td>\n    <td>125</td>\n  </tr>\n  <tr>\n    <td>0.04</td>\n    <td>116</td>\n  </tr>\n</table>\n<p>The conductivity of a saturated aqueous solution of AgCl is $1.40 \\times 10^{-6} \\mathrm{~S} \\mathrm{~cm}^{-1}$ at 300 K . If the solubility of AgCl in water at 300 K is $\\boldsymbol{X} \\mathrm{mol} \\mathrm{L}^{-1}$, then $\\log _{10}\\left(\\boldsymbol{X}^{-1}\\right)$ is</p>\n<p>(Assume that AgCl dissolved in water ionizes completely and that the molar conductivity of saturated AgCl solution is equal to its limiting molar conductivity.)</p>",
+    "questionText": "<p>At 300 K , the molar conductivities of the aqueous solutions of three salts at two different concentrations are given below :</p>\n<table>\n  <tr>\n    <th>Salt</th>\n    <th>Concentration (M)</th>\n    <th>Molar conductivity (S cm<sup>2</sup> mol<sup>\u22121</sup>)</th>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">NaNO<sub>3</sub></td>\n    <td>0.01</td>\n    <td>111</td>\n  </tr>\n  <tr>\n    <td>0.04</td>\n    <td>101</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">NaCl</td>\n    <td>0.01</td>\n    <td>117</td>\n  </tr>\n  <tr>\n    <td>0.04</td>\n    <td>107</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">AgNO<sub>3</sub></td>\n    <td>0.01</td>\n    <td>125</td>\n  </tr>\n  <tr>\n    <td>0.04</td>\n    <td>116</td>\n  </tr>\n</table>\n<p>The conductivity of a saturated aqueous solution of AgCl is $1.40 \\times 10^{-6} \\mathrm{~S} \\mathrm{~cm}^{-1}$ at 300 K . If the solubility of AgCl in water at 300 K is $\\boldsymbol{X} \\mathrm{mol} \\mathrm{L}^{-1}$, then $\\log _{10}\\left(\\boldsymbol{X}^{-1}\\right)$ is</p>\n<p>(Assume that AgCl dissolved in water ionizes completely and that the molar conductivity of saturated AgCl solution is equal to its limiting molar conductivity.)</p>",
     "options": [
       "<p>3</p>",
       "<p>4</p>",
@@ -11,16 +11,16 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Chemistry",
     "topic": "conductance-and-electrolysis",
     "difficulty": "hard",
-    "solution": "<p>The relation between molar conductivity and concentration for strong electrolytes is given by</p>\n<p>$$\\Lambda_M = \\Lambda_M^0 - b\\sqrt{c}$$</p>\n<p>For two concentrations $ c_1 $ and $ c_2 $, the equation becomes:</p>\n<p>$$\\Lambda_{M,1} - \\Lambda_{M,2} = b(\\sqrt{c_2} - \\sqrt{c_1})$$</p>\n<p>Therefore,</p>\n<p>$$b = \\frac{\\Lambda_{M,1} - \\Lambda_{M,2}}{\\sqrt{c_2} - \\sqrt{c_1}} = \\frac{\\Lambda_{M,1} - \\Lambda_{M,2}}{0.1}$$</p>\n<p><b>For NaNO<sub>3</sub>:</b></p>\n<p>$$b = \\frac{111 - 101}{0.1} = 100$$</p>\n<p>So the limiting molar conductivity is:</p>\n<p>$$[\\Lambda_M^0]_{\\mathrm{NaNO_3}} = \\Lambda_M + b\\sqrt{c} = 111 + 100(0.1) = 121\\, \\mathrm{S\\,cm^2/mol}$$</p>\n<p><b>For NaCl:</b></p>\n<p>$$b = \\frac{117 - 107}{0.1} = 100$$</p>\n<p>$$[\\Lambda_M^0]_{\\mathrm{NaCl}} = 117 + 100(0.1) = 127\\, \\mathrm{S\\,cm^2/mol}$$</p>\n<p><b>For AgNO<sub>3</sub>:</b></p>\n<p>$$b = \\frac{125 - 116}{0.1} = 90$$</p>\n<p>$$[\\Lambda_M^0]_{\\mathrm{AgNO_3}} = 125 + 90(0.1) = 134\\, \\mathrm{S\\,cm^2/mol}$$</p>\n<p><b>Finding limiting molar conductivity of AgCl:</b></p>\n<p>Using Kohlrausch’s law of independent migration of ions:</p>\n<p>$$[\\Lambda_M^0]_{\\mathrm{AgCl}} = [\\Lambda_M^0]_{\\mathrm{AgNO_3}} + [\\Lambda_M^0]_{\\mathrm{NaCl}} - [\\Lambda_M^0]_{\\mathrm{NaNO_3}}$$</p>\n<p>$$= 134 + 127 - 121 = 140\\, \\mathrm{S\\,cm^2/mol}$$</p>\n<p><b>Now, to find solubility (X):</b></p>\n<p>The conductivity of the saturated solution is $ k = 1.40 \\times 10^{-6}\\, \\mathrm{S\\,cm^{-1}} $.</p>\n<p>Since the electrolytic solution is very dilute,</p>\n<p>$$\\Lambda_M = \\Lambda_M^0 = \\frac{k \\times 1000}{c}$$</p>\n<p>So,</p>\n<p>$$c = \\frac{k \\times 1000}{\\Lambda_M^0} = \\frac{1.4\\times10^{-6}\\times10^3}{140} = 10^{-5}\\, \\mathrm{M}$$</p>\n<p>Thus, solubility $ X = 10^{-5} \\, \\mathrm{mol\\,L^{-1}} $.</p>\n<p><b>Finally,</b></p>\n<p>$$\\log(X^{-1}) = \\log(10^{-5})^{-1} = 5$$</p>",
+    "solution": "<p>The relation between molar conductivity and concentration for strong electrolytes is given by</p>\n<p>$$\\Lambda_M = \\Lambda_M^0 - b\\sqrt{c}$$</p>\n<p>For two concentrations $ c_1 $ and $ c_2 $, the equation becomes:</p>\n<p>$$\\Lambda_{M,1} - \\Lambda_{M,2} = b(\\sqrt{c_2} - \\sqrt{c_1})$$</p>\n<p>Therefore,</p>\n<p>$$b = \\frac{\\Lambda_{M,1} - \\Lambda_{M,2}}{\\sqrt{c_2} - \\sqrt{c_1}} = \\frac{\\Lambda_{M,1} - \\Lambda_{M,2}}{0.1}$$</p>\n<p><b>For NaNO<sub>3</sub>:</b></p>\n<p>$$b = \\frac{111 - 101}{0.1} = 100$$</p>\n<p>So the limiting molar conductivity is:</p>\n<p>$$[\\Lambda_M^0]_{\\mathrm{NaNO_3}} = \\Lambda_M + b\\sqrt{c} = 111 + 100(0.1) = 121\\, \\mathrm{S\\,cm^2/mol}$$</p>\n<p><b>For NaCl:</b></p>\n<p>$$b = \\frac{117 - 107}{0.1} = 100$$</p>\n<p>$$[\\Lambda_M^0]_{\\mathrm{NaCl}} = 117 + 100(0.1) = 127\\, \\mathrm{S\\,cm^2/mol}$$</p>\n<p><b>For AgNO<sub>3</sub>:</b></p>\n<p>$$b = \\frac{125 - 116}{0.1} = 90$$</p>\n<p>$$[\\Lambda_M^0]_{\\mathrm{AgNO_3}} = 125 + 90(0.1) = 134\\, \\mathrm{S\\,cm^2/mol}$$</p>\n<p><b>Finding limiting molar conductivity of AgCl:</b></p>\n<p>Using Kohlrausch\u2019s law of independent migration of ions:</p>\n<p>$$[\\Lambda_M^0]_{\\mathrm{AgCl}} = [\\Lambda_M^0]_{\\mathrm{AgNO_3}} + [\\Lambda_M^0]_{\\mathrm{NaCl}} - [\\Lambda_M^0]_{\\mathrm{NaNO_3}}$$</p>\n<p>$$= 134 + 127 - 121 = 140\\, \\mathrm{S\\,cm^2/mol}$$</p>\n<p><b>Now, to find solubility (X):</b></p>\n<p>The conductivity of the saturated solution is $ k = 1.40 \\times 10^{-6}\\, \\mathrm{S\\,cm^{-1}} $.</p>\n<p>Since the electrolytic solution is very dilute,</p>\n<p>$$\\Lambda_M = \\Lambda_M^0 = \\frac{k \\times 1000}{c}$$</p>\n<p>So,</p>\n<p>$$c = \\frac{k \\times 1000}{\\Lambda_M^0} = \\frac{1.4\\times10^{-6}\\times10^3}{140} = 10^{-5}\\, \\mathrm{M}$$</p>\n<p>Thus, solubility $ X = 10^{-5} \\, \\mathrm{mol\\,L^{-1}} $.</p>\n<p><b>Finally,</b></p>\n<p>$$\\log(X^{-1}) = \\log(10^{-5})^{-1} = 5$$</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "ml98p3f4",
@@ -59,7 +59,7 @@
   {
     "id": "ml81pq8d",
     "questionNumber": 49,
-    "questionText": "<p>For strong electrolyte $\\Lambda_m$ increases slowly with dilution and can be represented by the equation</p><p>$$\\Lambda_m = \\Lambda_m^\\circ - A c^{1/2}$$</p><p>Molar conductivity values of the solutions of strong electrolyte AB at 18°C are given below :</p><style>table {width: 100%;border-collapse: collapse;margin: 20px 0;} th {background-color: blue;color: white;border: 1px solid lightgrey;padding: 10px;} td {border: 1px solid lightgrey;padding: 10px;text-align: left;} </style><table><tr><th>c [mol L<sup>-1</sup>]</th><td>0.04</td><td>0.09</td><td>0.16</td><td>0.25</td></tr><tr><th>$\\Lambda_m$ [S cm<sup>2</sup> mol<sup>-1</sup>]</th><td>96.1</td><td>95.7</td><td>95.3</td><td>94.9</td></tr></table><p>The value of constant A based on the above data [in S cm<sup>2</sup> mol<sup>-1</sup>/(mol/L)<sup>1/2</sup>] unit is ________.</p>",
+    "questionText": "<p>For strong electrolyte $\\Lambda_m$ increases slowly with dilution and can be represented by the equation</p><p>$$\\Lambda_m = \\Lambda_m^\\circ - A c^{1/2}$$</p><p>Molar conductivity values of the solutions of strong electrolyte AB at 18\u00b0C are given below :</p><style>table {width: 100%;border-collapse: collapse;margin: 20px 0;} th {background-color: blue;color: white;border: 1px solid lightgrey;padding: 10px;} td {border: 1px solid lightgrey;padding: 10px;text-align: left;} </style><table><tr><th>c [mol L<sup>-1</sup>]</th><td>0.04</td><td>0.09</td><td>0.16</td><td>0.25</td></tr><tr><th>$\\Lambda_m$ [S cm<sup>2</sup> mol<sup>-1</sup>]</th><td>96.1</td><td>95.7</td><td>95.3</td><td>94.9</td></tr></table><p>The value of constant A based on the above data [in S cm<sup>2</sup> mol<sup>-1</sup>/(mol/L)<sup>1/2</sup>] unit is ________.</p>",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -102,15 +102,15 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Chemistry",
     "topic": "conductance-and-electrolysis",
     "difficulty": "medium",
-    "solution": "<p>$ \\mathrm{BaSO_4 (s)} \\rightleftharpoons \\mathrm{Ba^{2+} (aq)} + \\mathrm{SO_4^{2-} (aq)} $</p>\n<p>If the solubility of $\\mathrm{BaSO_4}$ is $s \\, \\text{mol L}^{-1}$, then in solution:</p>\n<p>$ [\\mathrm{Ba^{2+}}] = s, \\quad [\\mathrm{SO_4^{2-}}] = s $</p>\n<p>Thus, the solubility product is</p>\n<p>$ K_{\\text{sp}} = [\\mathrm{Ba^{2+}}][\\mathrm{SO_4^{2-}}] = s^2 $</p>\n\n<h3>Relation between molar conductivity and observed conductivity</h3>\n<p>By definition,</p>\n<p>$ \\kappa = \\frac{\\Lambda_m \\, c}{1000} $</p>\n<p>where  </p>\n<ul>\n<li><p>$\\kappa$ = conductivity in $\\text{S cm}^{-1}$,  </p></li>\n<li><p>$\\Lambda_m$ = molar conductivity in $\\text{S cm}^2 \\text{mol}^{-1}$,  </p></li>\n<li><p>$c$ = molar concentration in $\\text{mol L}^{-1}$.</p></li>\n</ul>\n<p>For the saturated solution of $\\mathrm{BaSO_4}$,</p>\n<p>$ \\kappa = x $</p>\n<p>and</p>\n<p>$ c = s $</p>\n<p>Therefore,</p>\n<p>$ \\Lambda_m^{\\text{(BaSO}_4)} = \\frac{1000x}{s} $</p>\n\n<h3>Determining $\\Lambda_m^{\\circ}$ for $\\mathrm{BaSO_4}$</h3>\n<p>We can find $\\Lambda_m^{\\circ}$ for $\\mathrm{BaSO_4}$ using <strong>Kohlrausch’s law of independent migration of ions</strong>.</p>\n<p>According to the law,</p>\n<p>$ \\Lambda_m^{\\circ}(\\text{Electrolyte}) = \\text{sum of molar ionic conductivities of its ions}. $</p>\n<p>Now, from the data:</p>\n<p>$ \\begin{aligned} \\Lambda_m^{\\circ}(\\mathrm{BaCl_2}) &= \\lambda^{\\circ}_{\\mathrm{Ba^{2+}}} + 2\\lambda^{\\circ}_{\\mathrm{Cl^-}} = x_1 \\\\ \\Lambda_m^{\\circ}(\\mathrm{H_2SO_4}) &= 2\\lambda^{\\circ}_{\\mathrm{H^+}} + \\lambda^{\\circ}_{\\mathrm{SO_4^{2-}}} = x_2 \\\\ \\Lambda_m^{\\circ}(\\mathrm{HCl}) &= \\lambda^{\\circ}_{\\mathrm{H^+}} + \\lambda^{\\circ}_{\\mathrm{Cl^-}} = x_3 \\end{aligned} $</p>\n<p>To get $\\Lambda_m^{\\circ}(\\mathrm{BaSO_4}) = \\lambda^{\\circ}_{\\mathrm{Ba^{2+}}} + \\lambda^{\\circ}_{\\mathrm{SO_4^{2-}}}$,  </p>\n<p>we combine the above equations:</p>\n<p>$ (x_1 + x_2 - 2x_3) = (\\lambda^{\\circ}_{\\mathrm{Ba^{2+}}} + 2\\lambda^{\\circ}_{\\mathrm{Cl^-}}) + (2\\lambda^{\\circ}_{\\mathrm{H^+}} + \\lambda^{\\circ}_{\\mathrm{SO_4^{2-}}}) - 2(\\lambda^{\\circ}_{\\mathrm{H^+}} + \\lambda^{\\circ}_{\\mathrm{Cl^-}}) $</p>\n<p>Simplifying,</p>\n<p>$ x_1 + x_2 - 2x_3 = \\lambda^{\\circ}_{\\mathrm{Ba^{2+}}} + \\lambda^{\\circ}_{\\mathrm{SO_4^{2-}}} = \\Lambda_m^{\\circ}(\\mathrm{BaSO_4}) $</p>\n<p>Thus,</p>\n<p>$ \\Lambda_m^{\\circ}(\\mathrm{BaSO_4}) = x_1 + x_2 - 2x_3 $</p>\n\n<h3>Equating conductivities</h3>\n<p>Since it is given that $(\\Lambda_m = \\Lambda_m^{\\circ})$ for the saturated solution:</p>\n<p>$ \\Lambda_m^{\\circ} = \\frac{1000x}{s} $</p>\n<p>$ s = \\frac{1000x}{\\Lambda_m^{\\circ}} = \\frac{1000x}{x_1 + x_2 - 2x_3} $</p>\n\n<h3>Expression for solubility product</h3>\n<p>$ K_{\\text{sp}} = s^2 = \\left(\\frac{1000x}{x_1 + x_2 - 2x_3}\\right)^2 = \\frac{10^6 x^2}{(x_1 + x_2 - 2x_3)^2} $</p>\n\n<h3><strong>Final Answer</strong></h3>\n<p>$ \\boxed{K_{\\text{sp}} = \\dfrac{10^6 x^2}{(x_1 + x_2 - 2x_3)^2}} $</p>\n<p>Hence, <strong>Option A</strong> is correct.</p>",
+    "solution": "<p>$ \\mathrm{BaSO_4 (s)} \\rightleftharpoons \\mathrm{Ba^{2+} (aq)} + \\mathrm{SO_4^{2-} (aq)} $</p>\n<p>If the solubility of $\\mathrm{BaSO_4}$ is $s \\, \\text{mol L}^{-1}$, then in solution:</p>\n<p>$ [\\mathrm{Ba^{2+}}] = s, \\quad [\\mathrm{SO_4^{2-}}] = s $</p>\n<p>Thus, the solubility product is</p>\n<p>$ K_{\\text{sp}} = [\\mathrm{Ba^{2+}}][\\mathrm{SO_4^{2-}}] = s^2 $</p>\n\n<h3>Relation between molar conductivity and observed conductivity</h3>\n<p>By definition,</p>\n<p>$ \\kappa = \\frac{\\Lambda_m \\, c}{1000} $</p>\n<p>where  </p>\n<ul>\n<li><p>$\\kappa$ = conductivity in $\\text{S cm}^{-1}$,  </p></li>\n<li><p>$\\Lambda_m$ = molar conductivity in $\\text{S cm}^2 \\text{mol}^{-1}$,  </p></li>\n<li><p>$c$ = molar concentration in $\\text{mol L}^{-1}$.</p></li>\n</ul>\n<p>For the saturated solution of $\\mathrm{BaSO_4}$,</p>\n<p>$ \\kappa = x $</p>\n<p>and</p>\n<p>$ c = s $</p>\n<p>Therefore,</p>\n<p>$ \\Lambda_m^{\\text{(BaSO}_4)} = \\frac{1000x}{s} $</p>\n\n<h3>Determining $\\Lambda_m^{\\circ}$ for $\\mathrm{BaSO_4}$</h3>\n<p>We can find $\\Lambda_m^{\\circ}$ for $\\mathrm{BaSO_4}$ using <strong>Kohlrausch\u2019s law of independent migration of ions</strong>.</p>\n<p>According to the law,</p>\n<p>$ \\Lambda_m^{\\circ}(\\text{Electrolyte}) = \\text{sum of molar ionic conductivities of its ions}. $</p>\n<p>Now, from the data:</p>\n<p>$ \\begin{aligned} \\Lambda_m^{\\circ}(\\mathrm{BaCl_2}) &= \\lambda^{\\circ}_{\\mathrm{Ba^{2+}}} + 2\\lambda^{\\circ}_{\\mathrm{Cl^-}} = x_1 \\\\ \\Lambda_m^{\\circ}(\\mathrm{H_2SO_4}) &= 2\\lambda^{\\circ}_{\\mathrm{H^+}} + \\lambda^{\\circ}_{\\mathrm{SO_4^{2-}}} = x_2 \\\\ \\Lambda_m^{\\circ}(\\mathrm{HCl}) &= \\lambda^{\\circ}_{\\mathrm{H^+}} + \\lambda^{\\circ}_{\\mathrm{Cl^-}} = x_3 \\end{aligned} $</p>\n<p>To get $\\Lambda_m^{\\circ}(\\mathrm{BaSO_4}) = \\lambda^{\\circ}_{\\mathrm{Ba^{2+}}} + \\lambda^{\\circ}_{\\mathrm{SO_4^{2-}}}$,  </p>\n<p>we combine the above equations:</p>\n<p>$ (x_1 + x_2 - 2x_3) = (\\lambda^{\\circ}_{\\mathrm{Ba^{2+}}} + 2\\lambda^{\\circ}_{\\mathrm{Cl^-}}) + (2\\lambda^{\\circ}_{\\mathrm{H^+}} + \\lambda^{\\circ}_{\\mathrm{SO_4^{2-}}}) - 2(\\lambda^{\\circ}_{\\mathrm{H^+}} + \\lambda^{\\circ}_{\\mathrm{Cl^-}}) $</p>\n<p>Simplifying,</p>\n<p>$ x_1 + x_2 - 2x_3 = \\lambda^{\\circ}_{\\mathrm{Ba^{2+}}} + \\lambda^{\\circ}_{\\mathrm{SO_4^{2-}}} = \\Lambda_m^{\\circ}(\\mathrm{BaSO_4}) $</p>\n<p>Thus,</p>\n<p>$ \\Lambda_m^{\\circ}(\\mathrm{BaSO_4}) = x_1 + x_2 - 2x_3 $</p>\n\n<h3>Equating conductivities</h3>\n<p>Since it is given that $(\\Lambda_m = \\Lambda_m^{\\circ})$ for the saturated solution:</p>\n<p>$ \\Lambda_m^{\\circ} = \\frac{1000x}{s} $</p>\n<p>$ s = \\frac{1000x}{\\Lambda_m^{\\circ}} = \\frac{1000x}{x_1 + x_2 - 2x_3} $</p>\n\n<h3>Expression for solubility product</h3>\n<p>$ K_{\\text{sp}} = s^2 = \\left(\\frac{1000x}{x_1 + x_2 - 2x_3}\\right)^2 = \\frac{10^6 x^2}{(x_1 + x_2 - 2x_3)^2} $</p>\n\n<h3><strong>Final Answer</strong></h3>\n<p>$ \\boxed{K_{\\text{sp}} = \\dfrac{10^6 x^2}{(x_1 + x_2 - 2x_3)^2}} $</p>\n<p>Hence, <strong>Option A</strong> is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "ml89h6iw",
@@ -132,7 +132,7 @@
   {
     "id": "mb1ns3qn",
     "questionNumber": 26,
-    "questionText": "<p>In an electrochemical cell, dichromate ions in aqueous acidic medium are reduced to Cr<sup>3+</sup>. The current (in amperes) that flows through the cell for 48.25 minutes to produce 1 mole of Cr<sup>3+</sup> is ______.</p><p><b>Use:</b> 1 Faraday = 96500 C mol<sup>−1</sup></p>",
+    "questionText": "<p>In an electrochemical cell, dichromate ions in aqueous acidic medium are reduced to Cr<sup>3+</sup>. The current (in amperes) that flows through the cell for 48.25 minutes to produce 1 mole of Cr<sup>3+</sup> is ______.</p><p><b>Use:</b> 1 Faraday = 96500 C mol<sup>\u22121</sup></p>",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -187,7 +187,7 @@
     "subject": "Chemistry",
     "topic": "conductance-and-electrolysis",
     "difficulty": "easy",
-    "solution": "<p>$$ \\text{Al}^{3+} + 3e^- \\rightarrow \\text{Al} $$</p>\n<p>The mass of aluminium deposited can be calculated using Faraday’s laws of electrolysis. The steps are as follows:</p>\n\n<p><p>Compute the total charge passed:</p>\n<p>$$ Q = I \\cdot t = 2\\,\\text{A} \\cdot (30 \\times 60\\,\\text{s}) = 3600\\,\\text{C} $$</p></p>\n<p><p>Determine the moles of aluminium deposited. Since three electrons are required to deposit one mole of aluminium, the number of moles is given by:</p>\n<p>$$ n(\\text{Al}) = \\frac{Q}{3F} = \\frac{3600}{3 \\times 96500} \\approx 0.01242\\,\\text{mol} $$</p></p>\n<p><p>Finally, calculate the mass of aluminium using its molar mass ($M = 27\\,\\text{g/mol}$):</p>\n<p>$$ m(\\text{Al}) = n(\\text{Al}) \\times M = 0.01242 \\times 27 \\approx 0.335\\,\\text{g} $$</p></p>\n\n<p>Thus, the amount of aluminium deposited at the cathode is approximately</p>\n<p>$$ 0.336\\, \\text{g} $$</p>",
+    "solution": "<p>$$ \\text{Al}^{3+} + 3e^- \\rightarrow \\text{Al} $$</p>\n<p>The mass of aluminium deposited can be calculated using Faraday\u2019s laws of electrolysis. The steps are as follows:</p>\n\n<p><p>Compute the total charge passed:</p>\n<p>$$ Q = I \\cdot t = 2\\,\\text{A} \\cdot (30 \\times 60\\,\\text{s}) = 3600\\,\\text{C} $$</p></p>\n<p><p>Determine the moles of aluminium deposited. Since three electrons are required to deposit one mole of aluminium, the number of moles is given by:</p>\n<p>$$ n(\\text{Al}) = \\frac{Q}{3F} = \\frac{3600}{3 \\times 96500} \\approx 0.01242\\,\\text{mol} $$</p></p>\n<p><p>Finally, calculate the mass of aluminium using its molar mass ($M = 27\\,\\text{g/mol}$):</p>\n<p>$$ m(\\text{Al}) = n(\\text{Al}) \\times M = 0.01242 \\times 27 \\approx 0.335\\,\\text{g} $$</p></p>\n\n<p>Thus, the amount of aluminium deposited at the cathode is approximately</p>\n<p>$$ 0.336\\, \\text{g} $$</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -254,7 +254,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Chemistry",
@@ -262,7 +262,7 @@
     "difficulty": "medium",
     "solution": "<p>(A) An aqueous solution of AgNO$_3$ using silver electrodes.</p>\n<p>Cathode - Reduction - $$Ag_{(aq)}^ +  + {e^ - } \\to Ag(s)$$</p>\n<p>Anode - Oxidation - $$Ag(s) \\to Ag_{(aq)}^ +  + {e^ - }$$</p>\n<p>Solid silver will be deposited at the cathode. Solid anode (silver) will dissolve, releasing silver ions into the solution.</p>\n<p>So, there is no formation of O$_2$ gas in this electrolysis.</p>\n<p>(B) An aqueous solution of AgNO$_3$ using platinum electrodes.</p>\n<p>Cathode - Reduction - $$Ag_{(aq)}^ +  + {e^ - } \\to Ag(s)$$</p>\n<p>Anode - Oxidation - $$2{H_2}O \\to 4{H^ + } + {O_2} + 4{e^ - }$$</p>\n<p>When platinum electrodes are used, Ag$^+$ from solution is reduced and deposited at cathode whereas O$_2$ is produced at the anode.</p>\n<p>(C) A dilute soution of H$_2$SO$_4$ using platinum electrodes.</p>\n<p>Cathode - Reduction - $$2{H^ + } + 2{e^ - } \\to {H_2}$$</p>\n<p>Anode - Oxidation - $$2{H_2}O \\to {O_2} + 4{H^ + } + 4{e^ - }$$</p>\n<p>H$_2$ gas is produded at the cathode and O$_2$ gas is produced at the anode.</p>\n<p>(D) a high concentration solution of H$_2$SO$_4$ using platinum electrodes.</p>\n<p>O$_2$ gas is not formed in this case.</p>\n<p>Cathode - Reduction - The substance formed is H$_2$ gas.</p>\n<p>Anode - Oxidation - The substance formed is not O$_2$ gas.</p>\n<p>So, statements (B) and (C) are correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "m6qp5l8v",
@@ -299,7 +299,7 @@
     "subject": "Chemistry",
     "topic": "conductance-and-electrolysis",
     "difficulty": "medium",
-    "solution": "<p>Determine the conductivity from the resistivity.  </p>\n\n\n<p><p>The resistivity is given as  </p>\n<p>$$\\rho = 870.0\\; \\text{m}\\Omega\\cdot\\text{m}.$$  </p></p>\n<p><p>Convert this into ohm·meters:  </p>\n<p>$$870.0\\; \\text{m}\\Omega\\cdot\\text{m} = 870.0 \\times 10^{-3}\\; \\Omega\\cdot\\text{m} = 0.87\\; \\Omega\\cdot\\text{m}.$$</p></p>\n<p><p>Conductivity is the reciprocal of resistivity:  </p>\n<p>$$\\kappa = \\frac{1}{\\rho} = \\frac{1}{0.87} \\approx 1.15\\; \\text{S/m}.$$</p></p>\n\n\n<p>Find the concentration of NaOH in mol/m³.  </p>\n\n\n<p><p>A $0.2\\%\\;(\\mathrm{w}/\\mathrm{v})$ solution means there are 0.2 grams of NaOH per 100 mL of solution.  </p></p>\n<p><p>In 1 liter (1000 mL) there are:  </p>\n<p>$$\\frac{0.2\\; \\text{g}}{100\\; \\text{mL}} \\times 1000\\; \\text{mL} = 2\\; \\text{g/L}.$$</p></p>\n<p><p>The molar mass of NaOH is approximately $40\\; \\text{g/mol}$. Thus, the molarity is:  </p>\n<p>$$\\text{Molarity} = \\frac{2\\; \\text{g/L}}{40\\; \\text{g/mol}} = 0.05\\; \\text{mol/L}.$$</p></p>\n<p><p>Since $1\\; \\text{L} = 0.001\\; \\text{m}^3$, converting to SI units (mol/m³):  </p>\n<p>$$c = 0.05\\; \\text{mol/L} \\times \\frac{1}{0.001\\; \\text{m}^3/\\text{L}} = 50\\; \\text{mol/m}^3.$$</p></p>\n\n\n<p>Calculate the molar conductivity in SI units.  </p>\n\n\n<p><p>Molar conductivity $\\Lambda_m$ is given by:  </p>\n<p>$$\\Lambda_m = \\frac{\\kappa}{c}.$$</p></p>\n<p><p>Substituting the values:  </p>\n<p>$$\\Lambda_m = \\frac{1.15\\; \\text{S/m}}{50\\; \\text{mol/m}^3} = 0.023\\; \\text{S}\\cdot \\text{m}^2/\\text{mol}.$$</p></p>\n\n\n<p>Convert the molar conductivity to the desired units (mS dm² mol⁻¹).  </p>\n\n\n<p><p>First, convert the conductivity:  </p>\n<p>$$0.023\\; \\text{S}\\cdot \\text{m}^2/\\text{mol} \\times 1000\\; \\frac{\\text{mS}}{\\text{S}} = 23\\; \\text{mS}\\cdot \\text{m}^2/\\text{mol}.$$</p></p>\n<p><p>Now, convert the area units. Recall that:  </p>\n<p>$$1\\; \\text{m}^2 = 100\\; \\text{dm}^2.$$  </p>\n<p>So,  </p>\n<p>$$23\\; \\text{mS}\\cdot \\text{m}^2/\\text{mol} = 23 \\times 100\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol} = 2300\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol}.$$</p></p>\n<p><p>The problem asks for the answer in the form  </p>\n<p>$$\\text{[blank]} \\times 10^2\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol}.$$  </p>\n<p>Expressing 2300 mS dm²/mol in this form:  </p>\n<p>$$2300\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol} = 23 \\times 10^2\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol}.$$</p></p>\n\n<p>Thus, the molar conductivity is  </p>\n<p>$$\\boxed{23 \\times 10^2\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol}}.$$</p>",
+    "solution": "<p>Determine the conductivity from the resistivity.  </p>\n\n\n<p><p>The resistivity is given as  </p>\n<p>$$\\rho = 870.0\\; \\text{m}\\Omega\\cdot\\text{m}.$$  </p></p>\n<p><p>Convert this into ohm\u00b7meters:  </p>\n<p>$$870.0\\; \\text{m}\\Omega\\cdot\\text{m} = 870.0 \\times 10^{-3}\\; \\Omega\\cdot\\text{m} = 0.87\\; \\Omega\\cdot\\text{m}.$$</p></p>\n<p><p>Conductivity is the reciprocal of resistivity:  </p>\n<p>$$\\kappa = \\frac{1}{\\rho} = \\frac{1}{0.87} \\approx 1.15\\; \\text{S/m}.$$</p></p>\n\n\n<p>Find the concentration of NaOH in mol/m\u00b3.  </p>\n\n\n<p><p>A $0.2\\%\\;(\\mathrm{w}/\\mathrm{v})$ solution means there are 0.2 grams of NaOH per 100 mL of solution.  </p></p>\n<p><p>In 1 liter (1000 mL) there are:  </p>\n<p>$$\\frac{0.2\\; \\text{g}}{100\\; \\text{mL}} \\times 1000\\; \\text{mL} = 2\\; \\text{g/L}.$$</p></p>\n<p><p>The molar mass of NaOH is approximately $40\\; \\text{g/mol}$. Thus, the molarity is:  </p>\n<p>$$\\text{Molarity} = \\frac{2\\; \\text{g/L}}{40\\; \\text{g/mol}} = 0.05\\; \\text{mol/L}.$$</p></p>\n<p><p>Since $1\\; \\text{L} = 0.001\\; \\text{m}^3$, converting to SI units (mol/m\u00b3):  </p>\n<p>$$c = 0.05\\; \\text{mol/L} \\times \\frac{1}{0.001\\; \\text{m}^3/\\text{L}} = 50\\; \\text{mol/m}^3.$$</p></p>\n\n\n<p>Calculate the molar conductivity in SI units.  </p>\n\n\n<p><p>Molar conductivity $\\Lambda_m$ is given by:  </p>\n<p>$$\\Lambda_m = \\frac{\\kappa}{c}.$$</p></p>\n<p><p>Substituting the values:  </p>\n<p>$$\\Lambda_m = \\frac{1.15\\; \\text{S/m}}{50\\; \\text{mol/m}^3} = 0.023\\; \\text{S}\\cdot \\text{m}^2/\\text{mol}.$$</p></p>\n\n\n<p>Convert the molar conductivity to the desired units (mS dm\u00b2 mol\u207b\u00b9).  </p>\n\n\n<p><p>First, convert the conductivity:  </p>\n<p>$$0.023\\; \\text{S}\\cdot \\text{m}^2/\\text{mol} \\times 1000\\; \\frac{\\text{mS}}{\\text{S}} = 23\\; \\text{mS}\\cdot \\text{m}^2/\\text{mol}.$$</p></p>\n<p><p>Now, convert the area units. Recall that:  </p>\n<p>$$1\\; \\text{m}^2 = 100\\; \\text{dm}^2.$$  </p>\n<p>So,  </p>\n<p>$$23\\; \\text{mS}\\cdot \\text{m}^2/\\text{mol} = 23 \\times 100\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol} = 2300\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol}.$$</p></p>\n<p><p>The problem asks for the answer in the form  </p>\n<p>$$\\text{[blank]} \\times 10^2\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol}.$$  </p>\n<p>Expressing 2300 mS dm\u00b2/mol in this form:  </p>\n<p>$$2300\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol} = 23 \\times 10^2\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol}.$$</p></p>\n\n<p>Thus, the molar conductivity is  </p>\n<p>$$\\boxed{23 \\times 10^2\\; \\text{mS}\\cdot \\text{dm}^2/\\text{mol}}.$$</p>",
     "section": "B",
     "type": "SUBJECTIVE"
   },
@@ -321,7 +321,7 @@
     "subject": "Chemistry",
     "topic": "conductance-and-electrolysis",
     "difficulty": "medium",
-    "solution": "<p>The limiting molar conductivities of ions are important in determining how well they conduct electricity in solution. Here are the values for some common cations at 298 K:</p>\n\n<p><p><strong>H⁺:</strong> 349.8 S cm² mol⁻¹</p></p>\n<p><p><strong>Na⁺:</strong> 50.11 S cm² mol⁻¹</p></p>\n<p><p><strong>K⁺:</strong> 73.52 S cm² mol⁻¹</p></p>\n<p><p><strong>Ca²⁺:</strong> 119 S cm² mol⁻¹</p></p>\n<p><p><strong>Mg²⁺:</strong> 106.12 S cm² mol⁻¹</p></p>\n\n<p>Based on these values, the correct order of limiting molar conductivity for these cations is:</p>\n<p>$ \\stackrel{\\oplus}{\\text{H}}^+ > \\text{Ca}^{2+} > \\text{Mg}^{2+} > \\text{K}^+ > \\text{Na}^+ $</p>\n<p>This order reflects the decreasing ability of each ion to conduct electricity in water under the given conditions.</p>",
+    "solution": "<p>The limiting molar conductivities of ions are important in determining how well they conduct electricity in solution. Here are the values for some common cations at 298 K:</p>\n\n<p><p><strong>H\u207a:</strong> 349.8 S cm\u00b2 mol\u207b\u00b9</p></p>\n<p><p><strong>Na\u207a:</strong> 50.11 S cm\u00b2 mol\u207b\u00b9</p></p>\n<p><p><strong>K\u207a:</strong> 73.52 S cm\u00b2 mol\u207b\u00b9</p></p>\n<p><p><strong>Ca\u00b2\u207a:</strong> 119 S cm\u00b2 mol\u207b\u00b9</p></p>\n<p><p><strong>Mg\u00b2\u207a:</strong> 106.12 S cm\u00b2 mol\u207b\u00b9</p></p>\n\n<p>Based on these values, the correct order of limiting molar conductivity for these cations is:</p>\n<p>$ \\stackrel{\\oplus}{\\text{H}}^+ > \\text{Ca}^{2+} > \\text{Mg}^{2+} > \\text{K}^+ > \\text{Na}^+ $</p>\n<p>This order reflects the decreasing ability of each ion to conduct electricity in water under the given conditions.</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -337,7 +337,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Chemistry",
@@ -345,8 +345,8 @@
     "difficulty": "hard",
     "solution": "<p><code><b>Option (P) :</b></code></p>\n\n<p>On adding $\\mathrm{AgNO}_3$ solution to $\\mathrm{KCl}$ solution precipitation of $\\mathrm{AgCl}$ will occur due to which $\\mathrm{Cl}^{-}$already present will be replaced by $\\mathrm{NO}_3^{-}$ions. So conductance of solution will decrease till equivalence point. After complete precipitation of $\\mathrm{AgCl}$, further added $\\mathrm{AgNO}_3$ will increase the number of ions in resulting solution so conductance will increase.</p>\n\n<p><code><b>Option (Q) :</b></code></p>\n\n<p>On adding $\\mathrm{KCl}$ solution to $\\mathrm{AgNO}_3$ solution precipitation of $\\mathrm{AgCl}$ will occur due to which already present $\\mathrm{Ag}^{+}$ions will be replaced by $\\mathrm{K}^{+}$ions in solution. So conductance of solution will increase. After complete precipitation of $\\mathrm{AgCl}$ further added $\\mathrm{KCl}$ will increase the number of ions in resulting solution so conductance will increase further.</p>\n\n<p><code><b>Option (R) :</b></code></p>\n\n<p>On adding $\\mathrm{HCl}$ solution to $\\mathrm{NaOH}$ solution, $\\mathrm{OH}^{-}$will be replaced by $\\mathrm{Cl}^{-}$ions so conductance of solution decreases. After complete neutralisation further added $\\mathrm{HCl}$ will increase number of ions in the solution. So conductance will increase futher.</p>\n\n<p><code><b>Option (S) :</b></code></p>\n\n<p>On adding $\\mathrm{CH}_3 \\mathrm{COOH}$ solution to $\\mathrm{NaOH}$ solution $\\mathrm{OH}^{-}$will be replaced by $\\mathrm{CH}_3 \\mathrm{COO}^{-}$ions, so conductance of solution decreases. After complete neutralisation further added $\\mathrm{CH}_3 \\mathrm{COOH}$ will remain undissociated because it is a weak acid and there is also common ion effect on acetate ions. So number of ions in solution will remain almost constant therefore conductance of solution will remain constant.</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "lsapbkde",
@@ -1234,7 +1234,7 @@
   {
     "id": "hIR41OiYs9VhZomPogjgy2xukf3nkns0",
     "questionNumber": 47,
-    "questionText": "An acidic solution of dichromate is electrolyzed\nfor 8 minutes using 2A current. As per the\nfollowing equation\n<br>Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>\n + 14H<sup>+</sup> + 6e<sup>–</sup> $$ \\to $$ 2Cr<sup>3+</sup> + 7H<sub>2</sub>O\n<br>The amount of Cr<sup>3+</sup> obtained was 0.104 g. The\nefficiency of the process(in%) is\n(Take : F = 96000 C, At. mass of chromium = 52)\n______.\n",
+    "questionText": "An acidic solution of dichromate is electrolyzed\nfor 8 minutes using 2A current. As per the\nfollowing equation\n<br>Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>\n + 14H<sup>+</sup> + 6e<sup>\u2013</sup> $$ \\to $$ 2Cr<sup>3+</sup> + 7H<sub>2</sub>O\n<br>The amount of Cr<sup>3+</sup> obtained was 0.104 g. The\nefficiency of the process(in%) is\n(Take : F = 96000 C, At. mass of chromium = 52)\n______.\n",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -1244,7 +1244,7 @@
     "subject": "Chemistry",
     "topic": "conductance-and-electrolysis",
     "difficulty": "medium",
-    "solution": "Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>\n + 14H<sup>+</sup> + 6e<sup>–</sup> $$ \\to $$ 2Cr<sup>3+</sup> + 7H<sub>2</sub>O\n<br><br>I = 2 A, t = 8 min\n<br><br>From 1<sup>st</sup> law of faraday,\n<br><br>w<sub>Cr<sup>+3</sup></sub> = z $$ \\times $$ i $$ \\times $$ t\n<br><br>$$ \\Rightarrow $$ w<sub>Cr<sup>+3</sup></sub> = $${{52} \\over {96000 \\times 3}} \\times 2 \\times 8 \\times 60$$\n<br><br>= $${{52} \\over {300}}$$\n<br><br>Mass of Cr<sup>3+</sup> ions actually obtained = 0.104 gm\n<br><br>% efficiency = <span style=\"display: inline-block;vertical-align: middle;\">\n     <div style=\"text-align: center;border-bottom: 1px solid black;\">Actual obtained Amt</div>\n     <div style=\"text-align: center;\">Theo. obtained Amt</div>\n</span> $$ \\times $$ 100\n<br><br>= $${{0.104} \\over {{{52} \\over {300}}}}$$ $$ \\times $$ 100\n<br><br>= 60 %",
+    "solution": "Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>\n + 14H<sup>+</sup> + 6e<sup>\u2013</sup> $$ \\to $$ 2Cr<sup>3+</sup> + 7H<sub>2</sub>O\n<br><br>I = 2 A, t = 8 min\n<br><br>From 1<sup>st</sup> law of faraday,\n<br><br>w<sub>Cr<sup>+3</sup></sub> = z $$ \\times $$ i $$ \\times $$ t\n<br><br>$$ \\Rightarrow $$ w<sub>Cr<sup>+3</sup></sub> = $${{52} \\over {96000 \\times 3}} \\times 2 \\times 8 \\times 60$$\n<br><br>= $${{52} \\over {300}}$$\n<br><br>Mass of Cr<sup>3+</sup> ions actually obtained = 0.104 gm\n<br><br>% efficiency = <span style=\"display: inline-block;vertical-align: middle;\">\n     <div style=\"text-align: center;border-bottom: 1px solid black;\">Actual obtained Amt</div>\n     <div style=\"text-align: center;\">Theo. obtained Amt</div>\n</span> $$ \\times $$ 100\n<br><br>= $${{0.104} \\over {{{52} \\over {300}}}}$$ $$ \\times $$ 100\n<br><br>= 60 %",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -1288,7 +1288,7 @@
     "subject": "Chemistry",
     "topic": "conductance-and-electrolysis",
     "difficulty": "medium",
-    "solution": "Millimoles of Au<sup>+</sup> = 0.1 × 250 = 25\n<br><br>Mole of Au<sup>+</sup> = $${{25} \\over {1000}}$$ = $${1 \\over {40}}$$\n<br><br>Charge passed = I × t = 1 × 15 × 60 = 900 C\n<br><br>moles of e<sup>–</sup> passed = $${{900} \\over {96500}}$$ = $${9 \\over {965}}$$\n<br><br>Only gold will be deposited as quantity of\ncharge passed is less than the amount of Au<sup>+</sup>\npresent.",
+    "solution": "Millimoles of Au<sup>+</sup> = 0.1 \u00d7 250 = 25\n<br><br>Mole of Au<sup>+</sup> = $${{25} \\over {1000}}$$ = $${1 \\over {40}}$$\n<br><br>Charge passed = I \u00d7 t = 1 \u00d7 15 \u00d7 60 = 900 C\n<br><br>moles of e<sup>\u2013</sup> passed = $${{900} \\over {96500}}$$ = $${9 \\over {965}}$$\n<br><br>Only gold will be deposited as quantity of\ncharge passed is less than the amount of Au<sup>+</sup>\npresent.",
     "section": "A",
     "type": "SCQ"
   },
@@ -1317,7 +1317,7 @@
   {
     "id": "1Me5RhDnbbjMhiM2gVjgy2xukfuqlla6",
     "questionNumber": 47,
-    "questionText": "Potassium chlorate is prepared by the\nelectrolysis of KCl in basic solution\n<br><br>6OH<sup>-</sup> + Cl<sup>-</sup> $$ \\to $$ ClO<sub>3</sub><sup>-</sup> + 3H<sub>2</sub>O + 6e<sup>-</sup>\n<br><br>If only 60% of the current is utilized in the\nreaction, the time (rounded to the nearest hour)\nrequired to produce 10 g of KClO<sub>3</sub> using a\ncurrent of 2 A is_________.\n<br><br>(Given : F = 96,500 C mol<sup>–1</sup>; molar mass of\nKCIO<sub>3</sub> = 122 g mol<sup>–1</sup>)",
+    "questionText": "Potassium chlorate is prepared by the\nelectrolysis of KCl in basic solution\n<br><br>6OH<sup>-</sup> + Cl<sup>-</sup> $$ \\to $$ ClO<sub>3</sub><sup>-</sup> + 3H<sub>2</sub>O + 6e<sup>-</sup>\n<br><br>If only 60% of the current is utilized in the\nreaction, the time (rounded to the nearest hour)\nrequired to produce 10 g of KClO<sub>3</sub> using a\ncurrent of 2 A is_________.\n<br><br>(Given : F = 96,500 C mol<sup>\u20131</sup>; molar mass of\nKCIO<sub>3</sub> = 122 g mol<sup>\u20131</sup>)",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -1356,7 +1356,7 @@
   {
     "id": "M1cCgSXdzD4c3SuurH7k9k2k5idsa5s",
     "questionNumber": 47,
-    "questionText": "108 g of silver (molar mass 108 g mol<sup>–1</sup>) is\ndeposited at cathode from AgNO<sub>3</sub>(aq) solution\nby a certain quantity of electricity. The\nvolume (in L) of oxygen gas produced at\n273 K and 1 bar pressure from water by the\nsame quantity of electricity is _______.",
+    "questionText": "108 g of silver (molar mass 108 g mol<sup>\u20131</sup>) is\ndeposited at cathode from AgNO<sub>3</sub>(aq) solution\nby a certain quantity of electricity. The\nvolume (in L) of oxygen gas produced at\n273 K and 1 bar pressure from water by the\nsame quantity of electricity is _______.",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -1382,7 +1382,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Chemistry",
@@ -1391,7 +1391,7 @@
     "solution": "At normal or low concentration, sodium stearate (CH<sub>3</sub>(CH<sub>2</sub>)<sub>16</sub>COO<sup>-</sup>Na<sup>+</sup>] behaves as strong electrolyte and for strong electrolyte, molar conductance ($$\\Lambda $$<sub>m</sub>) decreases with increase in concentration. Above particular concentration, sodium stearate forms aggregates known as micelles. The concentration is called as CMC. Since, number of ions decreases and hence $$\\Lambda $$<sub>m</sub> also decreases.<br><br>Hence, option (c) is correct.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "wrFltoovRg58a2S6yc3rsa0w2w9jx0znlcf",
@@ -1427,7 +1427,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Chemistry",
@@ -1435,12 +1435,12 @@
     "difficulty": "easy",
     "solution": "We know conductivity (k) = $${G \\over V}$$\n<br><br>V = volume\n<br><br>When concentration decreases volume increases and when volume increases then conductivity (k) decreases.\n<br><br>So, we can say S1 is incorrect.\n<br><br>We know that,\n<br><br>$${\\lambda _m} = {k \\over c}$$\n<br><br>where\n<br><br>$$\\lambda $$<sub>m</sub> = molar conductivity\n<br>k = conductivity\n<br>c = concentration\n<br><br>So, when concentration decreases molar conductivity increases.\n<br><br>So, we can say S2 is correct.",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "95BpaQdmmggnxsGyQHSyQ",
     "questionNumber": 40,
-    "questionText": "$$ \\wedge _m^ \\circ $$ for NaCl, HCl and NaA are 126.4, 425.9 and 100.5 S cm<sup>2</sup>  mol<sup>–1</sup>, respectively. If the conductivity of 0.001 M HA is- \n<br><br>5 $$ \\times $$ 10<sup>–5</sup> S cm<sup>–1</sup>, degree of dissociation of HA is - ",
+    "questionText": "$$ \\wedge _m^ \\circ $$ for NaCl, HCl and NaA are 126.4, 425.9 and 100.5 S cm<sup>2</sup>  mol<sup>\u20131</sup>, respectively. If the conductivity of 0.001 M HA is- \n<br><br>5 $$ \\times $$ 10<sup>\u20135</sup> S cm<sup>\u20131</sup>, degree of dissociation of HA is - ",
     "options": [
       "0.50",
       "0.125",
@@ -1654,10 +1654,10 @@
     "questionNumber": 45,
     "questionText": "Resistance of 0.2 M solution of an electrolyte is 50 $$\\Omega$$. The specific conductance of the solution is 1.4 S m<sup>-1</sup>. The resistance of 0.5 M solution of the same electrolyte is 280 $$\\Omega$$. The molar conductivity of 0.5 M solution of the electrolyte in S m<sup>2</sup> mol<sup>-1</sup> is :",
     "options": [
-      "5 × 10<sup>3</sup>",
-      "5 × 10<sup>2</sup>",
-      "5 × 10<sup>-4</sup>",
-      "5 × 10<sup>-3</sup>"
+      "5 \u00d7 10<sup>3</sup>",
+      "5 \u00d7 10<sup>2</sup>",
+      "5 \u00d7 10<sup>-4</sup>",
+      "5 \u00d7 10<sup>-3</sup>"
     ],
     "correctOption": 2,
     "correctAnswer": null,
@@ -1674,7 +1674,7 @@
   {
     "id": "5IurpkPrJaHpM1Wi",
     "questionNumber": 27,
-    "questionText": "An aqueous solution of X is added slowly to an aqueous solution of Y as shown in List – I. The variation in\nconductivity of these reactions in List – II. Match List – I with List – II and select the correct answer using\nthe code given below the lists:<br><br>\n<b>List - I</b><br>\nP. $$\\mathop {(C{}_2{H_5}){}_3N}\\limits_X $$ + $$\\mathop {C{H_3}COOH}\\limits_Y $$<br>\nQ. $$\\mathop {KI(0.1M)}\\limits_X $$ + $$\\mathop {AgN{O_3}(0.01M)}\\limits_Y $$<br>\nR. $$\\mathop {C{H_3}COOH}\\limits_X $$ + $$\\mathop {KOH}\\limits_Y $$<br>\nS. $$\\mathop {NaOH}\\limits_X $$ + $$\\mathop {HI}\\limits_Y $$<br><br>\n<b>List - II</b><br>\n1. Conductivity decreases then increases<br>\n2. Conductivity decreases then does not change much<br>\n3. Conductivity increases then does not change much<br>\n4. Conductivity does not change much then increases",
+    "questionText": "An aqueous solution of X is added slowly to an aqueous solution of Y as shown in List \u2013 I. The variation in\nconductivity of these reactions in List \u2013 II. Match List \u2013 I with List \u2013 II and select the correct answer using\nthe code given below the lists:<br><br>\n<b>List - I</b><br>\nP. $$\\mathop {(C{}_2{H_5}){}_3N}\\limits_X $$ + $$\\mathop {C{H_3}COOH}\\limits_Y $$<br>\nQ. $$\\mathop {KI(0.1M)}\\limits_X $$ + $$\\mathop {AgN{O_3}(0.01M)}\\limits_Y $$<br>\nR. $$\\mathop {C{H_3}COOH}\\limits_X $$ + $$\\mathop {KOH}\\limits_Y $$<br>\nS. $$\\mathop {NaOH}\\limits_X $$ + $$\\mathop {HI}\\limits_Y $$<br><br>\n<b>List - II</b><br>\n1. Conductivity decreases then increases<br>\n2. Conductivity decreases then does not change much<br>\n3. Conductivity increases then does not change much<br>\n4. Conductivity does not change much then increases",
     "options": [
       "P - 3; Q - 4; R - 2; S - 1",
       "P - 4; Q - 3; R - 2; S - 1",
@@ -1856,12 +1856,12 @@
   {
     "id": "OLMbCGTlkXvrtGM3",
     "questionNumber": 86,
-    "questionText": "Resistance of a conductivity cell filled with a solution of an electrolyte of concentration 0.1 M is 100$$\\Omega $$.\nThe conductivity of this solution is 1.29 S m<sup>–1</sup>. Resistance of the same cell when filled with 0.2 M of\nthe same solution is 520 $$\\Omega $$, The molar conductivity of 0.02 M solution of the electrolyte will be ",
+    "questionText": "Resistance of a conductivity cell filled with a solution of an electrolyte of concentration 0.1 M is 100$$\\Omega $$.\nThe conductivity of this solution is 1.29 S m<sup>\u20131</sup>. Resistance of the same cell when filled with 0.2 M of\nthe same solution is 520 $$\\Omega $$, The molar conductivity of 0.02 M solution of the electrolyte will be ",
     "options": [
-      "124 $$\\times$$ 10<sup>–4 </sup> S m<sup>2 </sup> mol<sup>–1</sup>",
-      "1240 $$\\times$$ 10<sup>–4 </sup> S m<sup>2 </sup> mol<sup>–1</sup>",
-      "1.24 $$\\times$$ 10<sup>–4 </sup> S m<sup>2 </sup> mol<sup>–1</sup>",
-      "12.4 $$\\times$$ 10<sup>–4 </sup> S m<sup>2 </sup> mol<sup>–1</sup>"
+      "124 $$\\times$$ 10<sup>\u20134 </sup> S m<sup>2 </sup> mol<sup>\u20131</sup>",
+      "1240 $$\\times$$ 10<sup>\u20134 </sup> S m<sup>2 </sup> mol<sup>\u20131</sup>",
+      "1.24 $$\\times$$ 10<sup>\u20134 </sup> S m<sup>2 </sup> mol<sup>\u20131</sup>",
+      "12.4 $$\\times$$ 10<sup>\u20134 </sup> S m<sup>2 </sup> mol<sup>\u20131</sup>"
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -1944,7 +1944,7 @@
   {
     "id": "SzA3psjoCBYySpI0",
     "questionNumber": 117,
-    "questionText": "The limiting molar conductivities Λ° for NaCl, KBr and KCl are 126, 152 and 150 S cm<sup>2</sup> mol<sup>-1</sup> respectively. The Λ° for NaBr is ",
+    "questionText": "The limiting molar conductivities \u039b\u00b0 for NaCl, KBr and KCl are 126, 152 and 150 S cm<sup>2</sup> mol<sup>-1</sup> respectively. The \u039b\u00b0 for NaBr is ",
     "options": [
       "128 S cm<sup>2</sup> mol<sup>-1</sup>",
       "278 S cm<sup>2</sup> mol<sup>-1</sup>",
@@ -1988,7 +1988,7 @@
   {
     "id": "CiFEmbp3pMNxIYZE",
     "questionNumber": 110,
-    "questionText": "Conductivity (Seimen’s S) is directly proportional to area of the vessel and the concentration\nof the solution in it and is inversely proportional to the length of the vessel then, then constant of proportionality is expressed in :",
+    "questionText": "Conductivity (Seimen\u2019s S) is directly proportional to area of the vessel and the concentration\nof the solution in it and is inversely proportional to the length of the vessel then, then constant of proportionality is expressed in :",
     "options": [
       "Sm mol<sup>-1</sup>",
       "Sm<sup>2 </sup> mol<sup>-1</sup>",

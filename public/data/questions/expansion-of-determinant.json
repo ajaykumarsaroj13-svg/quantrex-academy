@@ -139,7 +139,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -147,7 +147,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\left|\\begin{array}{ccc}\n1 & \\frac{3}{2} & \\alpha+\\frac{3}{2} \\\\\n1 & \\frac{1}{3} & \\alpha+\\frac{1}{3} \\\\\n2 \\alpha+3 & 3 \\alpha+1 & 0\n\\end{array}\\right|=0$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow(2 \\alpha+3)\\left\\{\\frac{7 \\alpha}{6}\\right\\}-(3 \\alpha+1)\\left\\{\\frac{-7}{6}\\right\\}=0 \\\\\n& \\Rightarrow(2 \\alpha+3) \\cdot \\frac{7 \\alpha}{6}+(3 \\alpha+1) \\cdot \\frac{7}{6}=0 \\\\\n& \\Rightarrow 2 \\alpha^2+3 \\alpha+3 \\alpha+1=0 \\\\\n& \\Rightarrow 2 \\alpha^2+6 \\alpha+1=0 \\\\\n& \\Rightarrow \\alpha=\\frac{-3+\\sqrt{7}}{2}, \\frac{-3-\\sqrt{7}}{2}\n\\end{aligned}$$</p>\n<p>Hence option (C) is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lseyky4c",
@@ -528,7 +528,7 @@
     "subject": "Mathematics",
     "topic": "expansion-of-determinant",
     "difficulty": "medium",
-    "solution": "$$\\Delta $$ = $$\\left| {\\matrix{\n   {x - 2} &amp; {2x - 3} &amp; {3x - 4}  \\cr \n   {2x - 3} &amp; {3x - 4} &amp; {4x - 5}  \\cr \n   {3x - 5} &amp; {5x - 8} &amp; {10x - 17}  \\cr \n\n } } \\right|$$\n<br><br>R<sub>2</sub> $$ \\to $$ R<sub>2</sub> – R<sub>1</sub> \n<br>R<sub>3</sub> $$ \\to $$ R<sub>3</sub> – R<sub>2</sub>\n<br><br>= $$\\left| {\\matrix{\n   {x - 2} &amp; {2x - 3} &amp; {3x - 4}  \\cr \n   {x - 1} &amp; {x - 1} &amp; {x - 1}  \\cr \n   {x - 2} &amp; {2\\left( {x - 2} \\right)} &amp; {6\\left( {x - 2} \\right)}  \\cr \n\n } } \\right|$$\n<br><br>= $$\\left( {x - 1} \\right)\\left( {x - 2} \\right)\\left| {\\matrix{\n   {x - 2} &amp; {2x - 3} &amp; {3x - 4}  \\cr \n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; 2 &amp; 6  \\cr \n\n } } \\right|$$\n<br><br>C<sub>1</sub> $$ \\to $$ C<sub>1</sub> - C<sub>2</sub>\n<br>C<sub>2</sub> $$ \\to $$ C<sub>2</sub> - C<sub>3</sub>\n<br><br>= $$\\left( {x - 1} \\right)\\left( {x - 2} \\right)\\left| {\\matrix{\n   { - x + 1} &amp; { - x + 1} &amp; {3x - 4}  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n   { - 1} &amp; { - 4} &amp; 6  \\cr \n\n } } \\right|$$\n<br><br>= -(x - 1)(x - 2)[-4(1 - x) + 1(1 - x)]\n<br><br>= -(x<sup>2</sup> - 3x + 2)[3x - 3]\n<br><br>= -3x<sup>3</sup> + 9x<sup>2</sup> - 6x + 3x<sup>2</sup> - 9x + 6\n<br><br>= -3x<sup>3</sup> + 12x<sup>2</sup> - 15x + 6 = Ax<sup>3</sup> + Bx<sup>2</sup> + Cx + D\n<br><br>$$ \\therefore $$ A = -3, B = 12, C = -15\n<br><br>$$ \\therefore $$ B + C = 12 – 15 = – 3 ",
+    "solution": "$$\\Delta $$ = $$\\left| {\\matrix{\n   {x - 2} &amp; {2x - 3} &amp; {3x - 4}  \\cr \n   {2x - 3} &amp; {3x - 4} &amp; {4x - 5}  \\cr \n   {3x - 5} &amp; {5x - 8} &amp; {10x - 17}  \\cr \n\n } } \\right|$$\n<br><br>R<sub>2</sub> $$ \\to $$ R<sub>2</sub> \u2013 R<sub>1</sub> \n<br>R<sub>3</sub> $$ \\to $$ R<sub>3</sub> \u2013 R<sub>2</sub>\n<br><br>= $$\\left| {\\matrix{\n   {x - 2} &amp; {2x - 3} &amp; {3x - 4}  \\cr \n   {x - 1} &amp; {x - 1} &amp; {x - 1}  \\cr \n   {x - 2} &amp; {2\\left( {x - 2} \\right)} &amp; {6\\left( {x - 2} \\right)}  \\cr \n\n } } \\right|$$\n<br><br>= $$\\left( {x - 1} \\right)\\left( {x - 2} \\right)\\left| {\\matrix{\n   {x - 2} &amp; {2x - 3} &amp; {3x - 4}  \\cr \n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; 2 &amp; 6  \\cr \n\n } } \\right|$$\n<br><br>C<sub>1</sub> $$ \\to $$ C<sub>1</sub> - C<sub>2</sub>\n<br>C<sub>2</sub> $$ \\to $$ C<sub>2</sub> - C<sub>3</sub>\n<br><br>= $$\\left( {x - 1} \\right)\\left( {x - 2} \\right)\\left| {\\matrix{\n   { - x + 1} &amp; { - x + 1} &amp; {3x - 4}  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n   { - 1} &amp; { - 4} &amp; 6  \\cr \n\n } } \\right|$$\n<br><br>= -(x - 1)(x - 2)[-4(1 - x) + 1(1 - x)]\n<br><br>= -(x<sup>2</sup> - 3x + 2)[3x - 3]\n<br><br>= -3x<sup>3</sup> + 9x<sup>2</sup> - 6x + 3x<sup>2</sup> - 9x + 6\n<br><br>= -3x<sup>3</sup> + 12x<sup>2</sup> - 15x + 6 = Ax<sup>3</sup> + Bx<sup>2</sup> + Cx + D\n<br><br>$$ \\therefore $$ A = -3, B = 12, C = -15\n<br><br>$$ \\therefore $$ B + C = 12 \u2013 15 = \u2013 3 ",
     "section": "A",
     "type": "SCQ"
   },
@@ -537,9 +537,9 @@
     "questionNumber": 64,
     "questionText": "If a + x = b + y = c + z + 1, where a, b, c, x, y, z<br>\nare non-zero distinct real numbers, then\n<br>$$\\left| {\\matrix{\n   x &amp; {a + y} &amp; {x + a}  \\cr \n   y &amp; {b + y} &amp; {y + b}  \\cr \n   z &amp; {c + y} &amp; {z + c}  \\cr \n\n } } \\right|$$ is equal to :",
     "options": [
-      "y(b – a)",
-      "y(a – b)",
-      "y(a – c)",
+      "y(b \u2013 a)",
+      "y(a \u2013 b)",
+      "y(a \u2013 c)",
       "0"
     ],
     "correctOption": 1,
@@ -550,7 +550,7 @@
     "subject": "Mathematics",
     "topic": "expansion-of-determinant",
     "difficulty": "medium",
-    "solution": "$$\\left| {\\matrix{\n   x &amp; {a + y} &amp; {x + a}  \\cr \n   y &amp; {b + y} &amp; {y + b}  \\cr \n   z &amp; {c + y} &amp; {z + c}  \\cr \n\n } } \\right|$$\n<br><br>C<sub>3</sub> $$ \\to $$ C<sub>3</sub> – C<sub>1</sub>\n<br><br>= $$\\left| {\\matrix{\n   x &amp; {a + y} &amp; a  \\cr \n   y &amp; {b + y} &amp; b  \\cr \n   z &amp; {c + y} &amp; c  \\cr \n\n } } \\right|$$\n<br><br>C<sub>2</sub> $$ \\to $$ C<sub>2</sub> – C<sub>3</sub>\n<br><br>= $$\\left| {\\matrix{\n   x &amp; y &amp; a  \\cr \n   y &amp; y &amp; b  \\cr \n   z &amp; y &amp; c  \\cr \n\n } } \\right|$$\n<br><br>R<sub>3</sub> $$ \\to $$ R<sub>3</sub> – R<sub>1</sub>, R<sub>2</sub> $$ \\to $$ R<sub>2</sub> – R<sub>1</sub>\n<br><br>= $$\\left| {\\matrix{\n   x &amp; y &amp; a  \\cr \n   {y - x} &amp; 0 &amp; {b - a}  \\cr \n   {z - x} &amp; 0 &amp; {c - a}  \\cr \n\n } } \\right|$$\n<br><br>= (–y)[(y – x) (c – a) – (b – a) (z – x)]\n<br><br>Given, a + x = b + y = c + z + 1\n<br><br>=  (–y)[(a – b) (c – a) + (a – b) (a – c – 1)]\n<br><br>= (–y)[(a – b) (c – a) + (a – b) (a – c) + b – a)\n<br><br>= –y(b – a) = y(a – b)",
+    "solution": "$$\\left| {\\matrix{\n   x &amp; {a + y} &amp; {x + a}  \\cr \n   y &amp; {b + y} &amp; {y + b}  \\cr \n   z &amp; {c + y} &amp; {z + c}  \\cr \n\n } } \\right|$$\n<br><br>C<sub>3</sub> $$ \\to $$ C<sub>3</sub> \u2013 C<sub>1</sub>\n<br><br>= $$\\left| {\\matrix{\n   x &amp; {a + y} &amp; a  \\cr \n   y &amp; {b + y} &amp; b  \\cr \n   z &amp; {c + y} &amp; c  \\cr \n\n } } \\right|$$\n<br><br>C<sub>2</sub> $$ \\to $$ C<sub>2</sub> \u2013 C<sub>3</sub>\n<br><br>= $$\\left| {\\matrix{\n   x &amp; y &amp; a  \\cr \n   y &amp; y &amp; b  \\cr \n   z &amp; y &amp; c  \\cr \n\n } } \\right|$$\n<br><br>R<sub>3</sub> $$ \\to $$ R<sub>3</sub> \u2013 R<sub>1</sub>, R<sub>2</sub> $$ \\to $$ R<sub>2</sub> \u2013 R<sub>1</sub>\n<br><br>= $$\\left| {\\matrix{\n   x &amp; y &amp; a  \\cr \n   {y - x} &amp; 0 &amp; {b - a}  \\cr \n   {z - x} &amp; 0 &amp; {c - a}  \\cr \n\n } } \\right|$$\n<br><br>= (\u2013y)[(y \u2013 x) (c \u2013 a) \u2013 (b \u2013 a) (z \u2013 x)]\n<br><br>Given, a + x = b + y = c + z + 1\n<br><br>=  (\u2013y)[(a \u2013 b) (c \u2013 a) + (a \u2013 b) (a \u2013 c \u2013 1)]\n<br><br>= (\u2013y)[(a \u2013 b) (c \u2013 a) + (a \u2013 b) (a \u2013 c) + b \u2013 a)\n<br><br>= \u2013y(b \u2013 a) = y(a \u2013 b)",
     "section": "A",
     "type": "SCQ"
   },
@@ -572,7 +572,7 @@
     "subject": "Mathematics",
     "topic": "expansion-of-determinant",
     "difficulty": "medium",
-    "solution": "Given <br>$$f\\left( \\theta  \\right) = \\left| {\\matrix{\n   { - {{\\sin }^2}\\theta } &amp; { - 1 - {{\\sin }^2}\\theta } &amp; 1  \\cr \n   { - {{\\cos }^2}\\theta } &amp; { - 1 - {{\\cos }^2}\\theta } &amp; 1  \\cr \n   {12} &amp; {10} &amp; { - 2}  \\cr \n\n } } \\right|$$\n<br><br>C<sub>1</sub> $$ \\to $$ C<sub>1</sub>\n – C<sub>2</sub>\n, C<sub>3</sub> $$ \\to $$ C<sub>3</sub>\n + C<sub>2</sub>\n<br><br>= $$\\left| {\\matrix{\n   1 &amp; { - 1 - {{\\sin }^2}\\theta } &amp; { - {{\\sin }^2}\\theta }  \\cr \n   1 &amp; { - 1 - {{\\cos }^2}\\theta } &amp; { - {{\\cos }^2}\\theta }  \\cr \n   2 &amp; {10} &amp; 8  \\cr \n\n } } \\right|$$\n<br><br>C<sub>2</sub> $$ \\to $$ C<sub>2</sub>\n – C<sub>3</sub>\n<br><br>= $$\\left| {\\matrix{\n   1 &amp; { - 1} &amp; { - {{\\sin }^2}\\theta }  \\cr \n   1 &amp; { - 1} &amp; { - {{\\cos }^2}\\theta }  \\cr \n   2 &amp; 2 &amp; 8  \\cr \n\n } } \\right|$$\n<br><br>= 1(2cos<sup>2</sup>$$\\theta $$ – 8) + (8 + 2cos<sup>2</sup>$$\\theta $$) – 4sin<sup>2</sup>$$\\theta $$\n<br><br>= 4cos<sup>2</sup>$$\\theta $$ - 4cos<sup>2</sup>$$\\theta $$\n<br><br>= 4 cos 2$$\\theta $$\n<br><br>$$\\theta $$ $$ \\in $$ $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$\n<br><br>$$ \\Rightarrow $$ 2$$\\theta $$ $$ \\in $$ $$\\left[ {{\\pi  \\over 2},{\\pi  }} \\right]$$\n<br><br>$$ \\Rightarrow $$ cos 2$$\\theta $$ $$ \\in $$ [-1, 0]\n<br><br>$$ \\Rightarrow $$ 4cos 2$$\\theta $$ $$ \\in $$ [-4, 0]\n<br><br>$$ \\Rightarrow $$ $$f\\left( \\theta  \\right)$$ $$ \\in $$ [-4, 0]\n<br><br>$$ \\therefore $$ (m, M) = (–4, 0)",
+    "solution": "Given <br>$$f\\left( \\theta  \\right) = \\left| {\\matrix{\n   { - {{\\sin }^2}\\theta } &amp; { - 1 - {{\\sin }^2}\\theta } &amp; 1  \\cr \n   { - {{\\cos }^2}\\theta } &amp; { - 1 - {{\\cos }^2}\\theta } &amp; 1  \\cr \n   {12} &amp; {10} &amp; { - 2}  \\cr \n\n } } \\right|$$\n<br><br>C<sub>1</sub> $$ \\to $$ C<sub>1</sub>\n \u2013 C<sub>2</sub>\n, C<sub>3</sub> $$ \\to $$ C<sub>3</sub>\n + C<sub>2</sub>\n<br><br>= $$\\left| {\\matrix{\n   1 &amp; { - 1 - {{\\sin }^2}\\theta } &amp; { - {{\\sin }^2}\\theta }  \\cr \n   1 &amp; { - 1 - {{\\cos }^2}\\theta } &amp; { - {{\\cos }^2}\\theta }  \\cr \n   2 &amp; {10} &amp; 8  \\cr \n\n } } \\right|$$\n<br><br>C<sub>2</sub> $$ \\to $$ C<sub>2</sub>\n \u2013 C<sub>3</sub>\n<br><br>= $$\\left| {\\matrix{\n   1 &amp; { - 1} &amp; { - {{\\sin }^2}\\theta }  \\cr \n   1 &amp; { - 1} &amp; { - {{\\cos }^2}\\theta }  \\cr \n   2 &amp; 2 &amp; 8  \\cr \n\n } } \\right|$$\n<br><br>= 1(2cos<sup>2</sup>$$\\theta $$ \u2013 8) + (8 + 2cos<sup>2</sup>$$\\theta $$) \u2013 4sin<sup>2</sup>$$\\theta $$\n<br><br>= 4cos<sup>2</sup>$$\\theta $$ - 4cos<sup>2</sup>$$\\theta $$\n<br><br>= 4 cos 2$$\\theta $$\n<br><br>$$\\theta $$ $$ \\in $$ $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$\n<br><br>$$ \\Rightarrow $$ 2$$\\theta $$ $$ \\in $$ $$\\left[ {{\\pi  \\over 2},{\\pi  }} \\right]$$\n<br><br>$$ \\Rightarrow $$ cos 2$$\\theta $$ $$ \\in $$ [-1, 0]\n<br><br>$$ \\Rightarrow $$ 4cos 2$$\\theta $$ $$ \\in $$ [-4, 0]\n<br><br>$$ \\Rightarrow $$ $$f\\left( \\theta  \\right)$$ $$ \\in $$ [-4, 0]\n<br><br>$$ \\therefore $$ (m, M) = (\u20134, 0)",
     "section": "A",
     "type": "SCQ"
   },
@@ -594,7 +594,7 @@
     "subject": "Mathematics",
     "topic": "expansion-of-determinant",
     "difficulty": "medium",
-    "solution": "$$A = \\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>A<sup>2</sup> = $$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$$$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>$$ \\Rightarrow $$ A<sup>2</sup> = $$\\left[ {\\matrix{\n   {\\cos 2\\theta } &amp; {\\sin 2\\theta }  \\cr \n   { - \\sin 2\\theta } &amp; {\\cos 2\\theta }  \\cr \n\n } } \\right]$$\n<br><br>Similarly, A<sup>n</sup> = $$\\left[ {\\matrix{\n   {\\cos n\\theta } &amp; {\\sin n\\theta }  \\cr \n   { - \\sin n\\theta } &amp; {\\cos n\\theta }  \\cr \n\n } } \\right]$$\n<br><br>$$ \\therefore $$ B = A + A<sup>4</sup>\n<br><br>= $$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$ + $$\\left[ {\\matrix{\n   {\\cos 4\\theta } &amp; {\\sin 4\\theta }  \\cr \n   { - \\sin 4\\theta } &amp; {\\cos 4\\theta }  \\cr \n\n } } \\right]$$\n<br><br>= $$\\left[ {\\matrix{\n   {\\cos 4\\theta  + \\cos \\theta } &amp; {\\sin 4\\theta  + \\sin \\theta }  \\cr \n   { - \\sin 4\\theta  - \\sin \\theta } &amp; {\\cos 4\\theta  + \\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>detB = (cos4$$\\theta $$ + cos$$\\theta $$)<sup>2</sup>\n + (sin4$$\\theta $$ + sin$$\\theta $$)<sup>2</sup>\n<br><br>= cos<sup>2</sup>4$$\\theta $$ + cos<sup>2</sup>$$\\theta $$ + 2cos4$$\\theta $$ cos$$\\theta $$\n<br>+ sin<sup>2</sup>4$$\\theta $$ + sin2$$\\theta $$ + 2sin4$$\\theta $$ –sin$$\\theta $$\n<br><br>= 2 + 2 ( cos4$$\\theta $$ cos$$\\theta $$ + sin4$$\\theta $$ sin$$\\theta $$)\n<br><br>$$ \\Rightarrow $$ detB = 2 + 2 cos3$$\\theta $$\n<br><br>at $$\\theta $$ = $${\\pi  \\over 5}$$\n<br><br>detB = 2 + 2cos $${{3\\pi } \\over 5}$$\n<br><br> = 2(1 - sin18)\n<br><br>= 2(1 - $${{\\sqrt 5  - 1} \\over 4}$$)\n<br><br>= 2$$\\left( {{{5 - \\sqrt 5 } \\over 4}} \\right)$$\n<br><br>= $${{{5 - \\sqrt 5 } \\over 2}}$$ $$ \\simeq $$ 1.385\n<br><br>$$ \\therefore $$ detB $$ \\in $$ (1, 2)\n",
+    "solution": "$$A = \\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>A<sup>2</sup> = $$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$$$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>$$ \\Rightarrow $$ A<sup>2</sup> = $$\\left[ {\\matrix{\n   {\\cos 2\\theta } &amp; {\\sin 2\\theta }  \\cr \n   { - \\sin 2\\theta } &amp; {\\cos 2\\theta }  \\cr \n\n } } \\right]$$\n<br><br>Similarly, A<sup>n</sup> = $$\\left[ {\\matrix{\n   {\\cos n\\theta } &amp; {\\sin n\\theta }  \\cr \n   { - \\sin n\\theta } &amp; {\\cos n\\theta }  \\cr \n\n } } \\right]$$\n<br><br>$$ \\therefore $$ B = A + A<sup>4</sup>\n<br><br>= $$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$ + $$\\left[ {\\matrix{\n   {\\cos 4\\theta } &amp; {\\sin 4\\theta }  \\cr \n   { - \\sin 4\\theta } &amp; {\\cos 4\\theta }  \\cr \n\n } } \\right]$$\n<br><br>= $$\\left[ {\\matrix{\n   {\\cos 4\\theta  + \\cos \\theta } &amp; {\\sin 4\\theta  + \\sin \\theta }  \\cr \n   { - \\sin 4\\theta  - \\sin \\theta } &amp; {\\cos 4\\theta  + \\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>detB = (cos4$$\\theta $$ + cos$$\\theta $$)<sup>2</sup>\n + (sin4$$\\theta $$ + sin$$\\theta $$)<sup>2</sup>\n<br><br>= cos<sup>2</sup>4$$\\theta $$ + cos<sup>2</sup>$$\\theta $$ + 2cos4$$\\theta $$ cos$$\\theta $$\n<br>+ sin<sup>2</sup>4$$\\theta $$ + sin2$$\\theta $$ + 2sin4$$\\theta $$ \u2013sin$$\\theta $$\n<br><br>= 2 + 2 ( cos4$$\\theta $$ cos$$\\theta $$ + sin4$$\\theta $$ sin$$\\theta $$)\n<br><br>$$ \\Rightarrow $$ detB = 2 + 2 cos3$$\\theta $$\n<br><br>at $$\\theta $$ = $${\\pi  \\over 5}$$\n<br><br>detB = 2 + 2cos $${{3\\pi } \\over 5}$$\n<br><br> = 2(1 - sin18)\n<br><br>= 2(1 - $${{\\sqrt 5  - 1} \\over 4}$$)\n<br><br>= 2$$\\left( {{{5 - \\sqrt 5 } \\over 4}} \\right)$$\n<br><br>= $${{{5 - \\sqrt 5 } \\over 2}}$$ $$ \\simeq $$ 1.385\n<br><br>$$ \\therefore $$ detB $$ \\in $$ (1, 2)\n",
     "section": "A",
     "type": "SCQ"
   },
@@ -603,10 +603,10 @@
     "questionNumber": 62,
     "questionText": "Let m and M be respectively the minimum and maximum values of\n<br><br>$$\\left| {\\matrix{\n   {{{\\cos }^2}x} &amp; {1 + {{\\sin }^2}x} &amp; {\\sin 2x}  \\cr \n   {1 + {{\\cos }^2}x} &amp; {{{\\sin }^2}x} &amp; {\\sin 2x}  \\cr \n   {{{\\cos }^2}x} &amp; {{{\\sin }^2}x} &amp; {1 + \\sin 2x}  \\cr \n\n } } \\right|$$\n<br><br>Then the ordered pair (m, M) is equal to :",
     "options": [
-      "(–3, –1)",
-      "(–4, –1)",
+      "(\u20133, \u20131)",
+      "(\u20134, \u20131)",
       "(1, 3)",
-      "(–3, 3)"
+      "(\u20133, 3)"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -616,7 +616,7 @@
     "subject": "Mathematics",
     "topic": "expansion-of-determinant",
     "difficulty": "medium",
-    "solution": "$$\\left| {\\matrix{\n   {{{\\cos }^2}x} &amp; {1 + {{\\sin }^2}x} &amp; {\\sin 2x}  \\cr \n   {1 + {{\\cos }^2}x} &amp; {{{\\sin }^2}x} &amp; {\\sin 2x}  \\cr \n   {{{\\cos }^2}x} &amp; {{{\\sin }^2}x} &amp; {1 + \\sin 2x}  \\cr \n\n } } \\right|$$\n<br><br>R<sub>1</sub> $$ \\to $$ R<sub>1</sub> – R<sub>2</sub>, R<sub>2</sub> $$ \\to $$ R<sub>2</sub> – R<sub>3</sub>\n<br><br>$$\\left| {\\matrix{\n   { - 1} &amp; 1 &amp; 0  \\cr \n   1 &amp; 0 &amp; { - 1}  \\cr \n   {{{\\cos }^2}x} &amp; {{{\\sin }^2}x} &amp; {1 + \\sin 2x}  \\cr \n\n } } \\right|$$\n<br><br>= –1(sin<sup>2</sup>\nx) – 1(1 + sin2x + cos<sup>2</sup>\nx)\n<br><br>= - sin2x - 2\n<br><br>$$ \\therefore $$ minimum value when sin2x = 1\n<br><br>m = - 2 - 1 = -3\n<br><br>$$ \\therefore $$ Maximum value when sin2x = –1\n<br><br> M = -2 + 1 = -1\n<br><br>$$ \\therefore $$ (m, M) = (–3, –1)",
+    "solution": "$$\\left| {\\matrix{\n   {{{\\cos }^2}x} &amp; {1 + {{\\sin }^2}x} &amp; {\\sin 2x}  \\cr \n   {1 + {{\\cos }^2}x} &amp; {{{\\sin }^2}x} &amp; {\\sin 2x}  \\cr \n   {{{\\cos }^2}x} &amp; {{{\\sin }^2}x} &amp; {1 + \\sin 2x}  \\cr \n\n } } \\right|$$\n<br><br>R<sub>1</sub> $$ \\to $$ R<sub>1</sub> \u2013 R<sub>2</sub>, R<sub>2</sub> $$ \\to $$ R<sub>2</sub> \u2013 R<sub>3</sub>\n<br><br>$$\\left| {\\matrix{\n   { - 1} &amp; 1 &amp; 0  \\cr \n   1 &amp; 0 &amp; { - 1}  \\cr \n   {{{\\cos }^2}x} &amp; {{{\\sin }^2}x} &amp; {1 + \\sin 2x}  \\cr \n\n } } \\right|$$\n<br><br>= \u20131(sin<sup>2</sup>\nx) \u2013 1(1 + sin2x + cos<sup>2</sup>\nx)\n<br><br>= - sin2x - 2\n<br><br>$$ \\therefore $$ minimum value when sin2x = 1\n<br><br>m = - 2 - 1 = -3\n<br><br>$$ \\therefore $$ Maximum value when sin2x = \u20131\n<br><br> M = -2 + 1 = -1\n<br><br>$$ \\therefore $$ (m, M) = (\u20133, \u20131)",
     "section": "A",
     "type": "SCQ"
   },
@@ -656,7 +656,7 @@
     "subject": "Mathematics",
     "topic": "expansion-of-determinant",
     "difficulty": "medium",
-    "solution": "x(-3x $$ \\times $$ (x + 2) - 2x(x - 3)) + (– 6) (2(x + 2) + 3 (x – 3)) + (–1) (4x + 3 (–3x))<br><br>\n$$ \\Rightarrow $$ – 5x<sup>3</sup> + 30x –30 + 5x = 0<br><br>\n$$ \\Rightarrow $$ x<sup>3</sup> – 7x + 6 = 0<br><br>\n$$ \\therefore $$ sum of roots = 0",
+    "solution": "x(-3x $$ \\times $$ (x + 2) - 2x(x - 3)) + (\u2013 6) (2(x + 2) + 3 (x \u2013 3)) + (\u20131) (4x + 3 (\u20133x))<br><br>\n$$ \\Rightarrow $$ \u2013 5x<sup>3</sup> + 30x \u201330 + 5x = 0<br><br>\n$$ \\Rightarrow $$ x<sup>3</sup> \u2013 7x + 6 = 0<br><br>\n$$ \\therefore $$ sum of roots = 0",
     "section": "A",
     "type": "SCQ"
   },
@@ -665,9 +665,9 @@
     "questionNumber": 80,
     "questionText": "If $${\\Delta _1} = \\left| {\\matrix{\n   x &amp; {\\sin \\theta } &amp; {\\cos \\theta }  \\cr \n   { - \\sin \\theta } &amp; { - x} &amp; 1  \\cr \n   {\\cos \\theta } &amp; 1 &amp; x  \\cr \n\n } } \\right|$$ and \n<br>$${\\Delta _2} = \\left| {\\matrix{\n   x &amp; {\\sin 2\\theta } &amp; {\\cos 2\\theta }  \\cr \n   { - \\sin 2\\theta } &amp; { - x} &amp; 1  \\cr \n   {\\cos 2\\theta } &amp; 1 &amp; x  \\cr \n\n } } \\right|$$, $$x \\ne 0$$ ;\n<br><br> then for all $$\\theta  \\in \\left( {0,{\\pi  \\over 2}} \\right)$$ :",
     "options": [
-      "$${\\Delta _1} - {\\Delta _2}$$ =  x (cos 2$$\\theta $$ – cos 4$$\\theta $$)",
+      "$${\\Delta _1} - {\\Delta _2}$$ =  x (cos 2$$\\theta $$ \u2013 cos 4$$\\theta $$)",
       "$${\\Delta _1} + {\\Delta _2}$$ = - 2x<sup>3</sup>",
-      "$${\\Delta _1} + {\\Delta _2}$$ =  – 2(x<sup>3</sup> + x –1)",
+      "$${\\Delta _1} + {\\Delta _2}$$ =  \u2013 2(x<sup>3</sup> + x \u20131)",
       "$${\\Delta _1} - {\\Delta _2}$$ = - 2x<sup>3</sup>"
     ],
     "correctOption": 1,
@@ -678,7 +678,7 @@
     "subject": "Mathematics",
     "topic": "expansion-of-determinant",
     "difficulty": "medium",
-    "solution": "$${\\Delta _1} = \\left| {\\matrix{\n   x &amp; {\\sin \\theta } &amp; {\\cos \\theta }  \\cr \n   { - \\sin \\theta } &amp; { - x} &amp; 1  \\cr \n   {\\cos \\theta } &amp; 1 &amp; x  \\cr \n\n } } \\right|$$<br><br>\n= x(–x<sup>2</sup> –1) – sin$$\\theta $$(–xsin$$\\theta $$ – cos$$\\theta $$) + cos$$\\theta $$(–sin$$\\theta $$+ xcos$$\\theta $$)<br><br>\n= –x<sup>3</sup> – x + xsin<sup>2</sup>$$\\theta $$ + sin$$\\theta $$cos$$\\theta $$ – cos$$\\theta $$sin$$\\theta $$\n+ xcos<sup>2</sup>$$\\theta $$<br><br>\n= –x<sup>3</sup> – x + x = –x<sup>3</sup><br><br>\nSimilarly $${\\Delta _2} =  - {x^3}$$<br><br>\n$${\\Delta _1} + {\\Delta _2} =  - 2{x^3}$$",
+    "solution": "$${\\Delta _1} = \\left| {\\matrix{\n   x &amp; {\\sin \\theta } &amp; {\\cos \\theta }  \\cr \n   { - \\sin \\theta } &amp; { - x} &amp; 1  \\cr \n   {\\cos \\theta } &amp; 1 &amp; x  \\cr \n\n } } \\right|$$<br><br>\n= x(\u2013x<sup>2</sup> \u20131) \u2013 sin$$\\theta $$(\u2013xsin$$\\theta $$ \u2013 cos$$\\theta $$) + cos$$\\theta $$(\u2013sin$$\\theta $$+ xcos$$\\theta $$)<br><br>\n= \u2013x<sup>3</sup> \u2013 x + xsin<sup>2</sup>$$\\theta $$ + sin$$\\theta $$cos$$\\theta $$ \u2013 cos$$\\theta $$sin$$\\theta $$\n+ xcos<sup>2</sup>$$\\theta $$<br><br>\n= \u2013x<sup>3</sup> \u2013 x + x = \u2013x<sup>3</sup><br><br>\nSimilarly $${\\Delta _2} =  - {x^3}$$<br><br>\n$${\\Delta _1} + {\\Delta _2} =  - 2{x^3}$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -731,10 +731,10 @@
     "questionNumber": 81,
     "questionText": "If&nbsp;&nbsp;$$\\left| {\\matrix{\n   {a - b - c} &amp; {2a} &amp; {2a}  \\cr \n   {2b} &amp; {b - c - a} &amp; {2b}  \\cr \n   {2c} &amp; {2c} &amp; {c - a - b}  \\cr \n\n } } \\right|$$ \n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (a + b + c) (x + a + b + c)<sup>2</sup>, x $$ \\ne $$ 0,\n<br><br>then x is equal to : ",
     "options": [
-      "–2(a + b + c)",
+      "\u20132(a + b + c)",
       "2(a + b + c)",
       "abc",
-      "–(a + b + c)"
+      "\u2013(a + b + c)"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -773,7 +773,7 @@
   {
     "id": "NvW5EmQOQ4vTpvOt9L3rsa0w2w9jx65olji",
     "questionNumber": 78,
-    "questionText": "If $$B = \\left[ {\\matrix{\n   5 &amp; {2\\alpha } &amp; 1  \\cr \n   0 &amp; 2 &amp; 1  \\cr \n   \\alpha  &amp; 3 &amp; { - 1}  \\cr \n\n } } \\right]$$ is the inverse of a 3 × 3 matrix A, then the sum of all values of $$\\alpha $$ for which\ndet(A) + 1 = 0, is :\n",
+    "questionText": "If $$B = \\left[ {\\matrix{\n   5 &amp; {2\\alpha } &amp; 1  \\cr \n   0 &amp; 2 &amp; 1  \\cr \n   \\alpha  &amp; 3 &amp; { - 1}  \\cr \n\n } } \\right]$$ is the inverse of a 3 \u00d7 3 matrix A, then the sum of all values of $$\\alpha $$ for which\ndet(A) + 1 = 0, is :\n",
     "options": [
       "2",
       "- 1",
@@ -841,10 +841,10 @@
     "questionNumber": 80,
     "questionText": "Let $$\\alpha $$ and $$\\beta $$ be the roots of the equation\nx<sup>2</sup> + x + 1 = 0. Then for y $$ \\ne $$ 0 in R,<br>\n$$$\\left| {\\matrix{\n   {y + 1} &amp; \\alpha  &amp; \\beta   \\cr \n   \\alpha  &amp; {y + \\beta } &amp; 1  \\cr \n   \\beta  &amp; 1 &amp; {y + \\alpha }  \\cr \n\n } } \\right|$$$\nis equal to",
     "options": [
-      "y(y<sup>2</sup> – 1)",
-      "y(y<sup>2</sup> – 3)",
+      "y(y<sup>2</sup> \u2013 1)",
+      "y(y<sup>2</sup> \u2013 3)",
       "y<sup>3</sup>",
-      "y<sup>3</sup> – 1"
+      "y<sup>3</sup> \u2013 1"
     ],
     "correctOption": 2,
     "correctAnswer": null,
@@ -967,7 +967,7 @@
   {
     "id": "3HijCKA6R6fQjXo8tvuQN",
     "questionNumber": 76,
-    "questionText": "If &nbsp;&nbsp; A = $$\\left[ {\\matrix{\n   { - 4} &amp; { - 1}  \\cr \n   3 &amp; 1  \\cr \n\n } } \\right]$$, \n<br><br>then the determinant of the matrix (A<sup>2016</sup> − 2A<sup>2015</sup> − A<sup>2014</sup>) is :\n",
+    "questionText": "If &nbsp;&nbsp; A = $$\\left[ {\\matrix{\n   { - 4} &amp; { - 1}  \\cr \n   3 &amp; 1  \\cr \n\n } } \\right]$$, \n<br><br>then the determinant of the matrix (A<sup>2016</sup> \u2212 2A<sup>2015</sup> \u2212 A<sup>2014</sup>) is :\n",
     "options": [
       "2014",
       "$$-$$ 175",

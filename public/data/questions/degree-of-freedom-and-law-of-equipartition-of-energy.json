@@ -11,7 +11,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>Internal energy ( $U$ ) of an ideal gas depends only on temperature. The change in internal energy for any process is given by:</p>\n<p>$$ \\Delta \\mathrm{U}=\\mathrm{nC}_{\\mathrm{v}} \\Delta \\mathrm{~T}=\\mathrm{nC}_{\\mathrm{v}}\\left(\\mathrm{~T}_{\\mathrm{f}}-\\mathrm{T}_{\\mathrm{i}}\\right) $$</p>\n<p>According to Mayer's relation, $\\mathrm{C}_{\\mathrm{p}}-\\mathrm{C}_{\\mathrm{v}}=\\mathrm{R}$.</p>\n<p>$$ \\frac{C_p}{C_v}-1=\\frac{R}{C_v} $$</p>\n<p>Since $\\gamma=\\frac{\\mathrm{C}_{\\mathrm{p}}}{\\mathrm{C}_{\\mathrm{v}}}$, then $\\gamma-1=\\frac{\\mathrm{R}}{\\mathrm{C}_{\\mathrm{v}}} \\Rightarrow \\mathrm{C}_{\\mathrm{v}}=\\frac{\\mathrm{R}}{\\gamma-1}$.</p>\n<p>Substituting $\\mathrm{C}_{\\mathrm{v}}$ back into the $\\Delta \\mathrm{U}$ equation:</p>\n<p>$$ \\Delta \\mathrm{U}=\\frac{\\mathrm{nR}}{\\gamma-1}\\left(\\mathrm{~T}_{\\mathrm{f}}-\\mathrm{T}_{\\mathrm{i}}\\right) $$</p>\n<p>Thus, Statement I is true.</p>\n<p>From the law of equipartition of energy, the molar specific heat at constant volume is $C_v=\\frac{f}{2} R$, where $f$ is the degree of freedom.</p>\n<p>Using $C_p=C_v+R=\\frac{f}{2} R+R=R\\left(1+\\frac{f}{2}\\right)$.</p>\n<p>The ratio $\\gamma=\\frac{\\mathrm{C}_{\\mathrm{p}}}{\\mathrm{C}_{\\mathrm{v}}}=\\frac{\\mathrm{R}\\left(1+\\frac{\\mathrm{f}}{2}\\right)}{(\\mathrm{f} / 2) \\mathrm{R}}=\\frac{1+\\mathrm{f} / 2}{\\mathrm{f} / 2}=\\frac{2}{\\mathrm{f}}+1$.</p>\n<p>So, $\\gamma=1+2$ f.</p>\n<p>Thus, Statement II is true.</p>\n<p>Statement II is the definition of $\\gamma$ in terms of degrees of freedom, but Statement I is based on Mayer's relation which is the definition of $\\mathrm{C}_{\\mathrm{v}}$, i.e., not directly from the degrees of freedom.</p>\n<p>Therefore, both A and R are true but R is the correct explanation of A . </p>\n<p>Thus, the correct option is (B).</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnsik8d8",
@@ -48,7 +48,7 @@
     "questionNumber": 10,
     "questionText": "<p>For a diatomic gas, if $\\gamma_1=\\left(\\frac{C p}{C v}\\right)$ for rigid molecules and $\\gamma_2=\\left(\\frac{C p}{C v}\\right)$ for another diatomic molecules, but also having vibrational modes. Then, which one of the following options is correct? (Cp and Cv are specific heats of the gas at constant pressure and volume)</p>",
     "options": [
-      " $\\gamma_2<\\gamma_1$\n",
+      "\u00a0$\\gamma_2<\\gamma_1$\n",
       "$\\gamma_2>\\gamma_1$\n",
       "$\\gamma_2=\\gamma_1$\n",
       "$2 \\gamma_2=\\gamma_1$"
@@ -359,7 +359,7 @@
     "subject": "Physics",
     "topic": "degree-of-freedom-and-law-of-equipartition-of-energy",
     "difficulty": "easy",
-    "solution": "The mean free path (λ) of molecules in a gas is given by the formula:\n<br/><br/>\n$$\\lambda = \\frac{kT}{\\sqrt{2}\\pi d^2 P}$$\n<br/><br/>\nwhere k is the Boltzmann constant, T is the temperature in Kelvin, d is the diameter of the gas molecules, and P is the pressure.\n<br/><br/>\nAt STP (standard temperature and pressure), the temperature is $$273\\mathrm{~K}$$ and the pressure is $$1\\mathrm{~atm}$$. We are given that the mean free path at STP is $$1500d$$. Let's denote the mean free path at $$373\\mathrm{~K}$$ as λ':\n<br/><br/>\n$$\\lambda' = \\frac{k(373\\mathrm{~K})}{\\sqrt{2}\\pi d^2 (1\\mathrm{~atm})}$$\n<br/><br/>\nTo find the ratio of the mean free path at $$373\\mathrm{~K}$$ to that at STP, we can divide λ' by λ:\n<br/><br/>\n$$\\frac{\\lambda'}{\\lambda} = \\frac{\\frac{k(373\\mathrm{~K})}{\\sqrt{2}\\pi d^2 (1\\mathrm{~atm})}}{\\frac{k(273\\mathrm{~K})}{\\sqrt{2}\\pi d^2 (1\\mathrm{~atm})}}$$\n<br/><br/>\nThe Boltzmann constant, pressure, and molecular diameter cancel out:\n<br/><br/>\n$$\\frac{\\lambda'}{\\lambda} = \\frac{373\\mathrm{~K}}{273\\mathrm{~K}}$$\n<br/><br/>\nNow, we can solve for λ':\n<br/><br/>\n$$\\lambda' = \\lambda \\cdot \\frac{373\\mathrm{~K}}{273\\mathrm{~K}}$$\n<br/><br/>\nSubstituting the given value of λ as $$1500d$$:\n<br/><br/>\n$$\\lambda' = 1500d \\cdot \\frac{373\\mathrm{~K}}{273\\mathrm{~K}}$$\n<br/><br/>\n$$\\lambda' \\approx 2049d$$\n<br/><br/>\nThus, the mean free path of the molecules at $$373\\mathrm{~K}$$ while maintaining the standard pressure is approximately $$2049d$$.",
+    "solution": "The mean free path (\u03bb) of molecules in a gas is given by the formula:\n<br/><br/>\n$$\\lambda = \\frac{kT}{\\sqrt{2}\\pi d^2 P}$$\n<br/><br/>\nwhere k is the Boltzmann constant, T is the temperature in Kelvin, d is the diameter of the gas molecules, and P is the pressure.\n<br/><br/>\nAt STP (standard temperature and pressure), the temperature is $$273\\mathrm{~K}$$ and the pressure is $$1\\mathrm{~atm}$$. We are given that the mean free path at STP is $$1500d$$. Let's denote the mean free path at $$373\\mathrm{~K}$$ as \u03bb':\n<br/><br/>\n$$\\lambda' = \\frac{k(373\\mathrm{~K})}{\\sqrt{2}\\pi d^2 (1\\mathrm{~atm})}$$\n<br/><br/>\nTo find the ratio of the mean free path at $$373\\mathrm{~K}$$ to that at STP, we can divide \u03bb' by \u03bb:\n<br/><br/>\n$$\\frac{\\lambda'}{\\lambda} = \\frac{\\frac{k(373\\mathrm{~K})}{\\sqrt{2}\\pi d^2 (1\\mathrm{~atm})}}{\\frac{k(273\\mathrm{~K})}{\\sqrt{2}\\pi d^2 (1\\mathrm{~atm})}}$$\n<br/><br/>\nThe Boltzmann constant, pressure, and molecular diameter cancel out:\n<br/><br/>\n$$\\frac{\\lambda'}{\\lambda} = \\frac{373\\mathrm{~K}}{273\\mathrm{~K}}$$\n<br/><br/>\nNow, we can solve for \u03bb':\n<br/><br/>\n$$\\lambda' = \\lambda \\cdot \\frac{373\\mathrm{~K}}{273\\mathrm{~K}}$$\n<br/><br/>\nSubstituting the given value of \u03bb as $$1500d$$:\n<br/><br/>\n$$\\lambda' = 1500d \\cdot \\frac{373\\mathrm{~K}}{273\\mathrm{~K}}$$\n<br/><br/>\n$$\\lambda' \\approx 2049d$$\n<br/><br/>\nThus, the mean free path of the molecules at $$373\\mathrm{~K}$$ while maintaining the standard pressure is approximately $$2049d$$.",
     "section": "A",
     "type": "SCQ"
   },
@@ -530,7 +530,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -538,7 +538,7 @@
     "difficulty": "medium",
     "solution": "<p>Statement A is incorrect, statement B is correct by equipartition of energy. Statement C is incorrect as monoatomic does not have any rotational degree of freedom and CH<sub>4</sub> is a polyatomic gas so it has 6 degree of freedom. So only B and D are correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1l56ur4mp",
@@ -1084,7 +1084,7 @@
   {
     "id": "9QIfFyuj1Z8TR45aMEH0d",
     "questionNumber": 19,
-    "questionText": "The specific heats, C<sub>P</sub> and C<sub>V </sub> of a gas of\ndiatomic molecules, A, are given (in units of\nJ mol<sup>–1</sup> K<sup>–1</sup>) by 29 and 22, respectively.\nAnother gas of diatomic molecules, B, has the\ncorresponding values 30 and 21. If they are\ntreated as ideal gases, then :-",
+    "questionText": "The specific heats, C<sub>P</sub> and C<sub>V </sub> of a gas of\ndiatomic molecules, A, are given (in units of\nJ mol<sup>\u20131</sup> K<sup>\u20131</sup>) by 29 and 22, respectively.\nAnother gas of diatomic molecules, B, has the\ncorresponding values 30 and 21. If they are\ntreated as ideal gases, then :-",
     "options": [
       "A is rigid but B has a vibrational mode",
       "A has a vibrational mode but B has none",

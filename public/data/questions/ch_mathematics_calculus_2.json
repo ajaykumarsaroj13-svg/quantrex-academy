@@ -6,7 +6,7 @@
     "title": "BITSAT 2020",
     "year": "2020",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Let f(x) be a polynomial function of second degree. If f(1) = f($$-$$1) and a, b, c are in AP, then f'(a), f'(b) and f'(c) are in.</p>",
     "options": [
       "AP",
@@ -118,7 +118,7 @@
       "$$-\\left(\\frac{d^{2} y}{d x^{2}}\\right)\\left(\\frac{d y}{d x}\\right)^{-3}$$"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>Let’s start by finding the relationship between derivatives.</p>\n<p>We know that $\\frac{dy}{dx} = \\left( \\frac{dx}{dy} \\right)^{-1}$. This just means that the derivative going from $y$ to $x$ is the reciprocal of going from $x$ to $y$.</p>\n<p>To find the second derivative, we get the derivative of the first derivative. So, $\\frac{d}{dx}\\left( \\frac{dy}{dx} \\right) = \\frac{d}{dx}\\left( \\frac{dx}{dy} \\right)^{-1}$.</p>\n<p>Instead of $x$, let’s write the second derivative in terms of $y$. We use the chain rule for derivatives: $\\frac{d}{dx} = \\frac{d}{dy} \\cdot \\frac{dy}{dx}$.</p>\n<p>So, $\\frac{d^2y}{dx^2} = \\frac{d}{dy}\\left( \\frac{dx}{dy} \\right)^{-1} \\cdot \\frac{dy}{dx}$.</p>\n<p>Taking the derivative of $\\left( \\frac{dx}{dy} \\right)^{-1}$ with respect to $y$ gives us $-\\left( \\frac{dx}{dy} \\right)^{-2} \\cdot \\frac{d^2x}{dy^2}$.</p>\n<p>Including the extra $\\frac{dy}{dx}$ from the chain rule, we get: $\\frac{d^2y}{dx^2} = -\\left( \\frac{dx}{dy} \\right)^{-2} \\frac{d^2x}{dy^2} \\cdot \\frac{dy}{dx}$.</p>\n<p>Now, solve this for $\\frac{d^2x}{dy^2}$:</p>\n<p>$\\frac{d^2x}{dy^2} = \\frac{ - d^2y }{ dx^2 } \\left( \\frac{dy}{dx} \\right)^{-3}$.</p>",
+    "solution": "<p>Let\u2019s start by finding the relationship between derivatives.</p>\n<p>We know that $\\frac{dy}{dx} = \\left( \\frac{dx}{dy} \\right)^{-1}$. This just means that the derivative going from $y$ to $x$ is the reciprocal of going from $x$ to $y$.</p>\n<p>To find the second derivative, we get the derivative of the first derivative. So, $\\frac{d}{dx}\\left( \\frac{dy}{dx} \\right) = \\frac{d}{dx}\\left( \\frac{dx}{dy} \\right)^{-1}$.</p>\n<p>Instead of $x$, let\u2019s write the second derivative in terms of $y$. We use the chain rule for derivatives: $\\frac{d}{dx} = \\frac{d}{dy} \\cdot \\frac{dy}{dx}$.</p>\n<p>So, $\\frac{d^2y}{dx^2} = \\frac{d}{dy}\\left( \\frac{dx}{dy} \\right)^{-1} \\cdot \\frac{dy}{dx}$.</p>\n<p>Taking the derivative of $\\left( \\frac{dx}{dy} \\right)^{-1}$ with respect to $y$ gives us $-\\left( \\frac{dx}{dy} \\right)^{-2} \\cdot \\frac{d^2x}{dy^2}$.</p>\n<p>Including the extra $\\frac{dy}{dx}$ from the chain rule, we get: $\\frac{d^2y}{dx^2} = -\\left( \\frac{dx}{dy} \\right)^{-2} \\frac{d^2x}{dy^2} \\cdot \\frac{dy}{dx}$.</p>\n<p>Now, solve this for $\\frac{d^2x}{dy^2}$:</p>\n<p>$\\frac{d^2x}{dy^2} = \\frac{ - d^2y }{ dx^2 } \\left( \\frac{dy}{dx} \\right)^{-3}$.</p>",
     "marks": 3,
     "negativeMarks": -1,
     "topic": "successive-differentiation",
@@ -368,7 +368,7 @@
     "title": "AIEEE 2003",
     "year": "2003",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "Let  $$f\\left( x \\right)$$ be a polynomial function of second degree. If $$f\\left( 1 \\right) = f\\left( { - 1} \\right)$$ and $$a,b,c$$ are in $$A.P, $$ then $$f'\\left( a \\right),f'\\left( b \\right),f'\\left( c \\right)$$  are in ",
     "options": [
       "Arithmetic -Geometric Progression ",
@@ -721,7 +721,7 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let f(x) = log<sub>e</sub>(sin x), (0 &lt; x &lt; $$\\pi $$) and g(x) = sin<sup>–1</sup>\n(e<sup>–x</sup>\n), (x $$ \\ge $$ 0). If $$\\alpha $$ is a positive real number such that\na = (fog)'($$\\alpha $$) and b = (fog)($$\\alpha $$), then :",
+    "question": "Let f(x) = log<sub>e</sub>(sin x), (0 &lt; x &lt; $$\\pi $$) and g(x) = sin<sup>\u20131</sup>\n(e<sup>\u2013x</sup>\n), (x $$ \\ge $$ 0). If $$\\alpha $$ is a positive real number such that\na = (fog)'($$\\alpha $$) and b = (fog)($$\\alpha $$), then :",
     "options": [
       "a$$\\alpha $$<sup>2</sup> + b$$\\alpha $$ - a = -2$$\\alpha $$<sup>2</sup>",
       "a$$\\alpha $$<sup>2</sup> + b$$\\alpha $$ + a = 0",
@@ -729,7 +729,7 @@
       "a$$\\alpha $$<sup>2</sup> - b$$\\alpha $$ - a = 1"
     ],
     "correctOptionIndex": 3,
-    "solution": "f(x) = ln(sin x), g(x) = sin<sup>–1</sup> (e<sup>–x</sup>)<br><br>\nf(g(x)) = ln(sin(sin<sup>–1</sup> e<sup>–x</sup>)) = -x<br><br>\nf(g($$\\alpha $$)) = – $$\\alpha $$ = b<br><br>\nAs f(g(x)) = – x <br><br>\n$$ \\therefore $$ (f(g(x)))' = – 1<br><br>\n $$ \\Rightarrow $$ (f(g($$\\alpha $$)))' = – 1 = a<br><br>\n$$ \\therefore $$ b = – $$\\alpha $$,\na = – 1<br><br>\n$$ \\therefore $$ a$$\\alpha $$<sup>2</sup> - b$$\\alpha $$ - a = - $$\\alpha $$<sup>2</sup> + $$\\alpha $$<sup>2</sup> + 1 = 1",
+    "solution": "f(x) = ln(sin x), g(x) = sin<sup>\u20131</sup> (e<sup>\u2013x</sup>)<br><br>\nf(g(x)) = ln(sin(sin<sup>\u20131</sup> e<sup>\u2013x</sup>)) = -x<br><br>\nf(g($$\\alpha $$)) = \u2013 $$\\alpha $$ = b<br><br>\nAs f(g(x)) = \u2013 x <br><br>\n$$ \\therefore $$ (f(g(x)))' = \u2013 1<br><br>\n $$ \\Rightarrow $$ (f(g($$\\alpha $$)))' = \u2013 1 = a<br><br>\n$$ \\therefore $$ b = \u2013 $$\\alpha $$,\na = \u2013 1<br><br>\n$$ \\therefore $$ a$$\\alpha $$<sup>2</sup> - b$$\\alpha $$ - a = - $$\\alpha $$<sup>2</sup> + $$\\alpha $$<sup>2</sup> + 1 = 1",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "differentiation-of-composite-function",
@@ -853,7 +853,7 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "If ƒ(1) = 1, ƒ'(1) = 3, then the derivative of\nƒ(ƒ(ƒ(x))) + (ƒ(x))<sup>2\n</sup> at x = 1 is :",
+    "question": "If \u0192(1) = 1, \u0192'(1) = 3, then the derivative of\n\u0192(\u0192(\u0192(x))) + (\u0192(x))<sup>2\n</sup> at x = 1 is :",
     "options": [
       "33",
       "12",
@@ -861,7 +861,7 @@
       "15"
     ],
     "correctOptionIndex": 0,
-    "solution": "Given ƒ(1) = 1, ƒ'(1) = 3\n<br><br>Let y = ƒ(ƒ(ƒ(x))) + (ƒ(x))<sup>2\n</sup>\n<br><br>On differentiating both sides with respect to x we get,\n<br><br>$${{dy} \\over {dx}}$$ = ƒ'(ƒ(ƒ(x))).ƒ'(ƒ(x)).ƒ'(x) + 2ƒ(x).ƒ'(x)\n<br><br>Now at x = 1,\n<br><br>$${{dy} \\over {dx}}$$ = ƒ'(ƒ(ƒ(1))).ƒ'(ƒ(1)).ƒ'(1) + 2ƒ(1).ƒ'(1)\n<br><br>= ƒ'(ƒ(1)).ƒ'(1).ƒ'(1) + 2.1.ƒ'(1)\n<br><br>= ƒ'(1).ƒ'(1).ƒ'(1) + 2.1.ƒ'(1)\n<br><br>= 3$$ \\times $$3$$ \\times $$3 + 2$$ \\times $$3\n<br><br>= 33",
+    "solution": "Given \u0192(1) = 1, \u0192'(1) = 3\n<br><br>Let y = \u0192(\u0192(\u0192(x))) + (\u0192(x))<sup>2\n</sup>\n<br><br>On differentiating both sides with respect to x we get,\n<br><br>$${{dy} \\over {dx}}$$ = \u0192'(\u0192(\u0192(x))).\u0192'(\u0192(x)).\u0192'(x) + 2\u0192(x).\u0192'(x)\n<br><br>Now at x = 1,\n<br><br>$${{dy} \\over {dx}}$$ = \u0192'(\u0192(\u0192(1))).\u0192'(\u0192(1)).\u0192'(1) + 2\u0192(1).\u0192'(1)\n<br><br>= \u0192'(\u0192(1)).\u0192'(1).\u0192'(1) + 2.1.\u0192'(1)\n<br><br>= \u0192'(1).\u0192'(1).\u0192'(1) + 2.1.\u0192'(1)\n<br><br>= 3$$ \\times $$3$$ \\times $$3 + 2$$ \\times $$3\n<br><br>= 33",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "differentiation-of-composite-function",
@@ -944,7 +944,7 @@
       "|y'(0)| + |y\"(0)| = 1"
     ],
     "correctOptionIndex": 0,
-    "solution": "Given y<sup>2</sup> + log<sub>e</sub> (cos<sup>2</sup>x) = y .....(1)\n<br><br>Put x  = 0, we get\n<br><br>y<sup>2</sup> + log<sub>e</sub> (1) = y\n<br><br>$$ \\Rightarrow $$ y<sup>2</sup> = y\n<br><br>$$ \\Rightarrow $$ y = 0, 1\n<br><br>Differentiating (1) we get\n<br><br>2yy' + $${1 \\over {\\cos x}}\\left( { - \\sin x} \\right)$$ = y'\n<br><br>$$ \\Rightarrow $$ 2yy' - 2tanx = y'  ....(2)\n<br><br>From (2) when x = 0, y = 0 then y'(0) = 0\n<br><br>From (2) when x = 0, y = 1 then \n<br><br>2y' = y'\n<br><br>$$ \\Rightarrow $$ y'(0) = 0\n<br><br>Again differentiating (2) we get\n<br><br>2(y')<sup>2</sup>\n + 2yy'' – 2sec<sup>2</sup>x = y''\n<br><br>from (2) when x = 0, y = 0, y’(0) = 0 then\n<br><br>y”(0) = -2\n<br><br>Also from (2) when x = 0, y = 1, y’(0) = 0 then\n<br><br>y”(0) = 2\n<br><br>$$ \\therefore $$ |y''(0)| = 2",
+    "solution": "Given y<sup>2</sup> + log<sub>e</sub> (cos<sup>2</sup>x) = y .....(1)\n<br><br>Put x  = 0, we get\n<br><br>y<sup>2</sup> + log<sub>e</sub> (1) = y\n<br><br>$$ \\Rightarrow $$ y<sup>2</sup> = y\n<br><br>$$ \\Rightarrow $$ y = 0, 1\n<br><br>Differentiating (1) we get\n<br><br>2yy' + $${1 \\over {\\cos x}}\\left( { - \\sin x} \\right)$$ = y'\n<br><br>$$ \\Rightarrow $$ 2yy' - 2tanx = y'  ....(2)\n<br><br>From (2) when x = 0, y = 0 then y'(0) = 0\n<br><br>From (2) when x = 0, y = 1 then \n<br><br>2y' = y'\n<br><br>$$ \\Rightarrow $$ y'(0) = 0\n<br><br>Again differentiating (2) we get\n<br><br>2(y')<sup>2</sup>\n + 2yy'' \u2013 2sec<sup>2</sup>x = y''\n<br><br>from (2) when x = 0, y = 0, y\u2019(0) = 0 then\n<br><br>y\u201d(0) = -2\n<br><br>Also from (2) when x = 0, y = 1, y\u2019(0) = 0 then\n<br><br>y\u201d(0) = 2\n<br><br>$$ \\therefore $$ |y''(0)| = 2",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "successive-differentiation",
@@ -988,7 +988,7 @@
       "$${{\\sqrt 3 } \\over {12}}$$"
     ],
     "correctOptionIndex": 2,
-    "solution": "Let f = $${\\tan ^{ - 1}}\\left( {{{\\sqrt {1 + {x^2}}  - 1} \\over x}} \\right)$$\n<br><br>Put x = tan $$\\theta $$ $$ \\Rightarrow $$ $$\\theta $$ = tan<sup>–1</sup> x\n<br><br>f = $${\\tan ^{ - 1}}\\left( {{{\\sec \\theta  - 1} \\over {\\tan \\theta }}} \\right)$$\n<br><br>$$ \\Rightarrow $$ f = $${\\tan ^{ - 1}}\\left( {{{1 - \\cos \\theta } \\over {\\sin \\theta }}} \\right)$$ = $${\\theta  \\over 2}$$\n<br><br>$$ \\Rightarrow $$ f = $${{{{\\tan }^{ - 1}}x} \\over 2}$$\n<br><br>$$ \\therefore $$ $${{df} \\over {dx}}$$ = $${1 \\over {2\\left( {1 + {x^2}} \\right)}}$$ ....(1)\n<br><br>Let g = $${\\tan ^{ - 1}}\\left( {{{2x\\sqrt {1 - {x^2}} } \\over {1 - 2{x^2}}}} \\right)$$\n<br><br>Put x = sin $$\\theta $$ $$ \\Rightarrow $$ $$\\theta $$ = sin<sup>–1</sup>\n x\n<br><br>$$ \\Rightarrow $$ g = $${\\tan ^{ - 1}}\\left( {{{2\\sin \\theta \\cos \\theta } \\over {1 - 2{{\\sin }^2}\\theta }}} \\right)$$\n<br><br>$$ \\Rightarrow $$ g = tan<sup>–1</sup>\n (tan 2$$\\theta $$) = 2$$\\theta $$\n<br><br>$$ \\Rightarrow $$ g = 2sin<sup>-1</sup> x\n<br><br>$$ \\Rightarrow $$ $${{dg} \\over {dx}}$$ = $${2 \\over {\\sqrt {1 - {x^2}} }}$$ ...(2)\n<br><br>Using (i) and (ii),\n<br><br>$$ \\therefore $$ $${{df} \\over {dg}}$$ = $${1 \\over {2\\left( {1 + {x^2}} \\right)}}{{\\sqrt {1 - {x^2}} } \\over 2}$$\n<br><br>At x = $${1 \\over 2}$$, $${\\left( {{{df} \\over {dg}}} \\right)_{x = {1 \\over 2}}}$$ = $${{\\sqrt 3 } \\over {10}}$$",
+    "solution": "Let f = $${\\tan ^{ - 1}}\\left( {{{\\sqrt {1 + {x^2}}  - 1} \\over x}} \\right)$$\n<br><br>Put x = tan $$\\theta $$ $$ \\Rightarrow $$ $$\\theta $$ = tan<sup>\u20131</sup> x\n<br><br>f = $${\\tan ^{ - 1}}\\left( {{{\\sec \\theta  - 1} \\over {\\tan \\theta }}} \\right)$$\n<br><br>$$ \\Rightarrow $$ f = $${\\tan ^{ - 1}}\\left( {{{1 - \\cos \\theta } \\over {\\sin \\theta }}} \\right)$$ = $${\\theta  \\over 2}$$\n<br><br>$$ \\Rightarrow $$ f = $${{{{\\tan }^{ - 1}}x} \\over 2}$$\n<br><br>$$ \\therefore $$ $${{df} \\over {dx}}$$ = $${1 \\over {2\\left( {1 + {x^2}} \\right)}}$$ ....(1)\n<br><br>Let g = $${\\tan ^{ - 1}}\\left( {{{2x\\sqrt {1 - {x^2}} } \\over {1 - 2{x^2}}}} \\right)$$\n<br><br>Put x = sin $$\\theta $$ $$ \\Rightarrow $$ $$\\theta $$ = sin<sup>\u20131</sup>\n x\n<br><br>$$ \\Rightarrow $$ g = $${\\tan ^{ - 1}}\\left( {{{2\\sin \\theta \\cos \\theta } \\over {1 - 2{{\\sin }^2}\\theta }}} \\right)$$\n<br><br>$$ \\Rightarrow $$ g = tan<sup>\u20131</sup>\n (tan 2$$\\theta $$) = 2$$\\theta $$\n<br><br>$$ \\Rightarrow $$ g = 2sin<sup>-1</sup> x\n<br><br>$$ \\Rightarrow $$ $${{dg} \\over {dx}}$$ = $${2 \\over {\\sqrt {1 - {x^2}} }}$$ ...(2)\n<br><br>Using (i) and (ii),\n<br><br>$$ \\therefore $$ $${{df} \\over {dg}}$$ = $${1 \\over {2\\left( {1 + {x^2}} \\right)}}{{\\sqrt {1 - {x^2}} } \\over 2}$$\n<br><br>At x = $${1 \\over 2}$$, $${\\left( {{{df} \\over {dg}}} \\right)_{x = {1 \\over 2}}}$$ = $${{\\sqrt 3 } \\over {10}}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "differentiation-of-a-function-with-respect-to-another-function",
@@ -1068,7 +1068,7 @@
     "year": "2020",
     "difficulty": "hard",
     "type": "SCQ",
-    "question": "Let ƒ(x) = (sin(tan<sup>–1</sup>x) + sin(cot<sup>–1</sup>x))<sup>2</sup> – 1, |x| &gt; 1.\n<br>If $${{dy} \\over {dx}} = {1 \\over 2}{d \\over {dx}}\\left( {{{\\sin }^{ - 1}}\\left( {f\\left( x \\right)} \\right)} \\right)$$ and $$y\\left( {\\sqrt 3 } \\right) = {\\pi  \\over 6}$$, \nthen y($${ - \\sqrt 3 }$$) is equal to :",
+    "question": "Let \u0192(x) = (sin(tan<sup>\u20131</sup>x) + sin(cot<sup>\u20131</sup>x))<sup>2</sup> \u2013 1, |x| &gt; 1.\n<br>If $${{dy} \\over {dx}} = {1 \\over 2}{d \\over {dx}}\\left( {{{\\sin }^{ - 1}}\\left( {f\\left( x \\right)} \\right)} \\right)$$ and $$y\\left( {\\sqrt 3 } \\right) = {\\pi  \\over 6}$$, \nthen y($${ - \\sqrt 3 }$$) is equal to :",
     "options": [
       "$${{5\\pi } \\over 6}$$",
       "$$ - {\\pi  \\over 6}$$",
@@ -1076,7 +1076,7 @@
       "$${{2\\pi } \\over 3}$$"
     ],
     "correctOptionIndex": 1,
-    "solution": "Given ƒ(x) = (sin(tan<sup>–1</sup>x) + sin(cot<sup>–1</sup>x))<sup>2</sup> – 1\n<br><br> = (sin(tan<sup>–1</sup>x) + sin($${\\pi  \\over 2}$$ - tan<sup>–1</sup>x))<sup>2</sup> – 1\n<br><br> = (sin(tan<sup>–1</sup>x) + cos(tan<sup>–1</sup>x))<sup>2</sup> – 1\n<br><br>= sin<sup>2</sup>(tan<sup>–1</sup>x) + cos<sup>2</sup>(tan<sup>–1</sup>x) + 2sin(tan<sup>–1</sup>x)cos(tan<sup>–1</sup>x) + 1\n<br><br>= 1 + sin(2tan<sup>–1</sup>x) - 1\n<br><br>= sin(2tan<sup>–1</sup>x)\n\n<br><br>Also given $${{dy} \\over {dx}} = {1 \\over 2}{d \\over {dx}}\\left( {{{\\sin }^{ - 1}}\\left( {f\\left( x \\right)} \\right)} \\right)$$\n<br><br> Integrating both sides we get\n<br><br>y = $${1 \\over 2}$$ sin<sup>-1</sup> (f(x)) + C\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2tan<sup>–1</sup>x)) + C\n<br><br>Given $$y\\left( {\\sqrt 3 } \\right) = {\\pi  \\over 6}$$ mean x = $$\\sqrt 3 $$ and y = $${\\pi  \\over 6}$$\n<br><br>$$ \\therefore $$ $${\\pi  \\over 6}$$ = $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2tan<sup>–1</sup>$$\\sqrt 3 $$)) + C\n<br><br>$$ \\Rightarrow $$ $${\\pi  \\over 6}$$ = $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2$$ \\times $$$${\\pi  \\over 3}$$)) + C\n<br><br>$$ \\Rightarrow $$ $${\\pi  \\over 6}$$ = $${1 \\over 2}$$ sin<sup>-1</sup> ($${{\\sqrt 3 } \\over 2}$$) + C\n<br><br>$$ \\Rightarrow $$ $${\\pi  \\over 6}$$ = $${1 \\over 2}$$ $$ \\times $$ $${\\pi  \\over 3}$$ + C\n<br><br>$$ \\Rightarrow $$ C = 0\n<br><br>Now y($${ - \\sqrt 3 }$$) means when x = $${ - \\sqrt 3 }$$ then find y.\n<br><br>y = $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2tan<sup>–1</sup>x))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2tan<sup>–1</sup>($${ - \\sqrt 3 }$$)))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (sin(-2tan<sup>–1</sup>($${  \\sqrt 3 }$$)))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (sin(-2$$ \\times $$$${\\pi  \\over 3}$$))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (-sin(2$$ \\times $$$${\\pi  \\over 3}$$))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (-$${{\\sqrt 3 } \\over 2}$$)\n<br><br>= $${1 \\over 2}$$ $$ \\times $$ -sin<sup>-1</sup> ($${{\\sqrt 3 } \\over 2}$$)\n<br><br>= $${1 \\over 2}$$ $$ \\times $$ -$${\\pi  \\over 3}$$\n<br><br>= -$${\\pi  \\over 6}$$",
+    "solution": "Given \u0192(x) = (sin(tan<sup>\u20131</sup>x) + sin(cot<sup>\u20131</sup>x))<sup>2</sup> \u2013 1\n<br><br> = (sin(tan<sup>\u20131</sup>x) + sin($${\\pi  \\over 2}$$ - tan<sup>\u20131</sup>x))<sup>2</sup> \u2013 1\n<br><br> = (sin(tan<sup>\u20131</sup>x) + cos(tan<sup>\u20131</sup>x))<sup>2</sup> \u2013 1\n<br><br>= sin<sup>2</sup>(tan<sup>\u20131</sup>x) + cos<sup>2</sup>(tan<sup>\u20131</sup>x) + 2sin(tan<sup>\u20131</sup>x)cos(tan<sup>\u20131</sup>x) + 1\n<br><br>= 1 + sin(2tan<sup>\u20131</sup>x) - 1\n<br><br>= sin(2tan<sup>\u20131</sup>x)\n\n<br><br>Also given $${{dy} \\over {dx}} = {1 \\over 2}{d \\over {dx}}\\left( {{{\\sin }^{ - 1}}\\left( {f\\left( x \\right)} \\right)} \\right)$$\n<br><br> Integrating both sides we get\n<br><br>y = $${1 \\over 2}$$ sin<sup>-1</sup> (f(x)) + C\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2tan<sup>\u20131</sup>x)) + C\n<br><br>Given $$y\\left( {\\sqrt 3 } \\right) = {\\pi  \\over 6}$$ mean x = $$\\sqrt 3 $$ and y = $${\\pi  \\over 6}$$\n<br><br>$$ \\therefore $$ $${\\pi  \\over 6}$$ = $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2tan<sup>\u20131</sup>$$\\sqrt 3 $$)) + C\n<br><br>$$ \\Rightarrow $$ $${\\pi  \\over 6}$$ = $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2$$ \\times $$$${\\pi  \\over 3}$$)) + C\n<br><br>$$ \\Rightarrow $$ $${\\pi  \\over 6}$$ = $${1 \\over 2}$$ sin<sup>-1</sup> ($${{\\sqrt 3 } \\over 2}$$) + C\n<br><br>$$ \\Rightarrow $$ $${\\pi  \\over 6}$$ = $${1 \\over 2}$$ $$ \\times $$ $${\\pi  \\over 3}$$ + C\n<br><br>$$ \\Rightarrow $$ C = 0\n<br><br>Now y($${ - \\sqrt 3 }$$) means when x = $${ - \\sqrt 3 }$$ then find y.\n<br><br>y = $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2tan<sup>\u20131</sup>x))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (sin(2tan<sup>\u20131</sup>($${ - \\sqrt 3 }$$)))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (sin(-2tan<sup>\u20131</sup>($${  \\sqrt 3 }$$)))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (sin(-2$$ \\times $$$${\\pi  \\over 3}$$))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (-sin(2$$ \\times $$$${\\pi  \\over 3}$$))\n<br><br>= $${1 \\over 2}$$ sin<sup>-1</sup> (-$${{\\sqrt 3 } \\over 2}$$)\n<br><br>= $${1 \\over 2}$$ $$ \\times $$ -sin<sup>-1</sup> ($${{\\sqrt 3 } \\over 2}$$)\n<br><br>= $${1 \\over 2}$$ $$ \\times $$ -$${\\pi  \\over 3}$$\n<br><br>= -$${\\pi  \\over 6}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "differentiation-of-inverse-trigonometric-function",
@@ -1090,7 +1090,7 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let ƒ and g be differentiable functions on R\nsuch that fog is the identity function. If for some\na, b $$ \\in $$ R, g'(a) = 5 and g(a) = b, then ƒ'(b) is\nequal to :",
+    "question": "Let \u0192 and g be differentiable functions on R\nsuch that fog is the identity function. If for some\na, b $$ \\in $$ R, g'(a) = 5 and g(a) = b, then \u0192'(b) is\nequal to :",
     "options": [
       "1",
       "5",
@@ -1098,7 +1098,7 @@
       "$${1 \\over 5}$$"
     ],
     "correctOptionIndex": 3,
-    "solution": "Given the function composition f(g(x)) is the identity function, it means f(g(x)) = x for all x.\n\n<br><br>$$ \\Rightarrow $$ ƒ'(g(x)) g'(x) = 1\n<br><br>put x = a\n<br><br>$$ \\Rightarrow $$ ƒ'(b) g'(a) = 1\n<br><br>$$ \\Rightarrow $$ ƒ'(b) = $${1 \\over 5}$$",
+    "solution": "Given the function composition f(g(x)) is the identity function, it means f(g(x)) = x for all x.\n\n<br><br>$$ \\Rightarrow $$ \u0192'(g(x)) g'(x) = 1\n<br><br>put x = a\n<br><br>$$ \\Rightarrow $$ \u0192'(b) g'(a) = 1\n<br><br>$$ \\Rightarrow $$ \u0192'(b) = $${1 \\over 5}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "methods-of-differentiation",
@@ -1120,7 +1120,7 @@
       "-$${3 \\over 4}$$"
     ],
     "correctOptionIndex": 0,
-    "solution": "$$x = 2\\sin \\theta  - \\sin 2\\theta $$\n<br><br>$$ \\Rightarrow $$ $${{dx} \\over {d\\theta }}$$ = $$2\\cos \\theta  - 2\\cos 2\\theta $$\n<br><br>$$y = 2\\cos \\theta  - \\cos 2\\theta $$\n<br><br>$$ \\Rightarrow $$ $${{dy} \\over {d\\theta }}$$ = –2sin$$\\theta $$ + 2sin2$$\\theta $$\n<br><br>$${{dy} \\over {dx}} = {{{{dy} \\over {d\\theta }}} \\over {{{dx} \\over {d\\theta }}}}$$ = $${{\\sin 2\\theta  - \\sin \\theta } \\over {\\cos \\theta  - \\cos 2\\theta }}$$\n<br/><br/>This expression is simplified by recognizing that $\\sin 2 \\theta = 2\\sin \\theta \\cos \\theta$ and $\\cos 2 \\theta = 2\\cos^2 \\theta -1$, leading to the expression:\n\n<br/><br/>$$ \\frac{dy}{dx} = \\frac{2 \\sin \\frac{\\theta}{2} \\cdot \\cos \\frac{3 \\theta}{2}}{2 \\sin \\frac{\\theta}{2} \\cdot \\sin \\frac{3 \\theta}{2}}=\\cot \\frac{3 \\theta}{2}$$\n\n<br/><br/>This is the rate of change of y with respect to x, as a function of θ.\n\n<br/><br/>Next, we differentiate this function with respect to θ to find $\\frac{d^2 y}{dx^2}$, yielding :\n\n<br/><br/>$$ \\frac{d^2 y}{dx^2}=\\frac{d}{d \\theta}\\left(\\frac{d y}{d x}\\right) \\frac{d \\theta}{d x}=-\\frac{3}{2} \\operatorname{cosec}^2 \\frac{3 \\theta}{2} \\cdot \\frac{d \\theta}{d x}$$\n\n<br/><br/>Here, $\\frac{d \\theta}{d x}$ is the reciprocal of $\\frac{dx}{d\\theta}$, so the equation becomes :\n\n<br/><br/>$$ \\frac{d^2 y}{dx^2}=\\frac{-\\frac{3}{2} \\operatorname{cosec}^2 \\frac{3 \\theta}{2}}{2\\left(\\cos \\theta-\\cos2 \\theta\\right)}$$\n\n<br/><br/>Finally, we evaluate this expression at $\\theta = \\pi$, yielding :\n\n<br/><br/>$$ \\frac{d^2 y}{dx^2}(\\pi)=\\frac{-3}{4(-1-1)}=\\frac{3}{8}$$\n\n<br/><br/>Therefore, the correct answer is (A) $\\frac{3}{8}$.\n<br/><br/><b>Alternate Method :</b>\n<br/><br/>First, let's find the derivatives of x and y with respect to θ :\n\n<br/><br/>1) $$ \\frac{dx}{d\\theta} = 2\\cos \\theta - 2\\cos 2\\theta $$\n<br/><br/>2) $$ \\frac{dy}{d\\theta} = -2\\sin \\theta + 2\\sin 2\\theta $$\n\n<br/><br/>We know that $$ \\frac{dy}{dx} = \\frac{\\frac{dy}{d\\theta}}{\\frac{dx}{d\\theta}} $$\n\n<br/><br/>So, we substitute 1) and 2) into this equation :\n\n<br/><br/>We have \n\n<br/><br/>$$\\frac{dy}{dx} = \\frac{-2\\sin \\theta + 2\\sin 2\\theta}{2\\cos \\theta - 2\\cos 2\\theta} = \\frac{\\sin 2\\theta - \\sin \\theta}{\\cos \\theta - \\cos 2\\theta}$$\n\n<br/><br/>For simplification, let's denote the numerator as $$N = \\sin 2\\theta - \\sin \\theta$$ and the denominator as $$D = \\cos \\theta - \\cos 2\\theta$$.\n\n<br/><br/>We have to compute $$\\frac{d}{d\\theta}(\\frac{dy}{dx})$$ which is $$\\frac{d}{d\\theta}(\\frac{N}{D})$$.\n\n<br/><br/>We can use the quotient rule for differentiation, which states that if we have a function of the form $$\\frac{u}{v}$$, then its derivative is given by $$\\frac{vu' - uv'}{v^2}$$. \n\n<br/><br/>So here, $$N' = 2\\cos 2\\theta - \\cos \\theta$$ and $$D' = -\\sin \\theta + 2\\sin 2\\theta$$.\n\n<br/><br/>Applying the quotient rule :\n\n<br/><br/>$$\\frac{d}{d\\theta}(\\frac{dy}{dx}) = \\frac{D N' - N D'}{D^2}$$ \n\n<br/><br/>Substituting the expressions for $$N'$$, $$D'$$, $$N$$, and $$D$$ we get :\n\n<br/><br/>$$\\frac{d}{d\\theta}(\\frac{dy}{dx}) = \\frac{(\\cos \\theta - \\cos 2\\theta)(2\\cos 2\\theta - \\cos \\theta) - (\\sin 2\\theta - \\sin \\theta)(-\\sin \\theta + 2\\sin 2\\theta)}{(\\cos \\theta - \\cos 2\\theta)^2}$$\n<br/><br/>Now $$\n\\frac{d^2 y}{d x^2}=\\frac{d}{d x}\\left(\\frac{d y}{d x}\\right)=\\frac{d}{d \\theta}\\left(\\frac{d y}{d x}\\right) \\times \\frac{d \\theta}{d x}\n$$\n<br/><br/>=  $$\\frac{(\\cos \\theta - \\cos 2\\theta)(2\\cos 2\\theta - \\cos \\theta) - (\\sin 2\\theta - \\sin \\theta)(-\\sin \\theta + 2\\sin 2\\theta)}{(\\cos \\theta - \\cos 2\\theta)^2}$$$$\n\\times \\frac{1}{(2 \\cos \\theta-2 \\cos 2 \\theta)}\n$$\n<br/><br/>$$\n\\begin{aligned}\n\\left.\\therefore \\frac{d^2 y}{d x^2}\\right|_{\\theta=\\pi} & =\\frac{(-1-1)(2+1)-(0-0)(-0+0)}{2(-1-1)^3} \\\\\\\\\n& =\\frac{-2 \\times 3}{-2 \\times 8}=\\frac{3}{8}\n\\end{aligned}\n$$",
+    "solution": "$$x = 2\\sin \\theta  - \\sin 2\\theta $$\n<br><br>$$ \\Rightarrow $$ $${{dx} \\over {d\\theta }}$$ = $$2\\cos \\theta  - 2\\cos 2\\theta $$\n<br><br>$$y = 2\\cos \\theta  - \\cos 2\\theta $$\n<br><br>$$ \\Rightarrow $$ $${{dy} \\over {d\\theta }}$$ = \u20132sin$$\\theta $$ + 2sin2$$\\theta $$\n<br><br>$${{dy} \\over {dx}} = {{{{dy} \\over {d\\theta }}} \\over {{{dx} \\over {d\\theta }}}}$$ = $${{\\sin 2\\theta  - \\sin \\theta } \\over {\\cos \\theta  - \\cos 2\\theta }}$$\n<br/><br/>This expression is simplified by recognizing that $\\sin 2 \\theta = 2\\sin \\theta \\cos \\theta$ and $\\cos 2 \\theta = 2\\cos^2 \\theta -1$, leading to the expression:\n\n<br/><br/>$$ \\frac{dy}{dx} = \\frac{2 \\sin \\frac{\\theta}{2} \\cdot \\cos \\frac{3 \\theta}{2}}{2 \\sin \\frac{\\theta}{2} \\cdot \\sin \\frac{3 \\theta}{2}}=\\cot \\frac{3 \\theta}{2}$$\n\n<br/><br/>This is the rate of change of y with respect to x, as a function of \u03b8.\n\n<br/><br/>Next, we differentiate this function with respect to \u03b8 to find $\\frac{d^2 y}{dx^2}$, yielding :\n\n<br/><br/>$$ \\frac{d^2 y}{dx^2}=\\frac{d}{d \\theta}\\left(\\frac{d y}{d x}\\right) \\frac{d \\theta}{d x}=-\\frac{3}{2} \\operatorname{cosec}^2 \\frac{3 \\theta}{2} \\cdot \\frac{d \\theta}{d x}$$\n\n<br/><br/>Here, $\\frac{d \\theta}{d x}$ is the reciprocal of $\\frac{dx}{d\\theta}$, so the equation becomes :\n\n<br/><br/>$$ \\frac{d^2 y}{dx^2}=\\frac{-\\frac{3}{2} \\operatorname{cosec}^2 \\frac{3 \\theta}{2}}{2\\left(\\cos \\theta-\\cos2 \\theta\\right)}$$\n\n<br/><br/>Finally, we evaluate this expression at $\\theta = \\pi$, yielding :\n\n<br/><br/>$$ \\frac{d^2 y}{dx^2}(\\pi)=\\frac{-3}{4(-1-1)}=\\frac{3}{8}$$\n\n<br/><br/>Therefore, the correct answer is (A) $\\frac{3}{8}$.\n<br/><br/><b>Alternate Method :</b>\n<br/><br/>First, let's find the derivatives of x and y with respect to \u03b8 :\n\n<br/><br/>1) $$ \\frac{dx}{d\\theta} = 2\\cos \\theta - 2\\cos 2\\theta $$\n<br/><br/>2) $$ \\frac{dy}{d\\theta} = -2\\sin \\theta + 2\\sin 2\\theta $$\n\n<br/><br/>We know that $$ \\frac{dy}{dx} = \\frac{\\frac{dy}{d\\theta}}{\\frac{dx}{d\\theta}} $$\n\n<br/><br/>So, we substitute 1) and 2) into this equation :\n\n<br/><br/>We have \n\n<br/><br/>$$\\frac{dy}{dx} = \\frac{-2\\sin \\theta + 2\\sin 2\\theta}{2\\cos \\theta - 2\\cos 2\\theta} = \\frac{\\sin 2\\theta - \\sin \\theta}{\\cos \\theta - \\cos 2\\theta}$$\n\n<br/><br/>For simplification, let's denote the numerator as $$N = \\sin 2\\theta - \\sin \\theta$$ and the denominator as $$D = \\cos \\theta - \\cos 2\\theta$$.\n\n<br/><br/>We have to compute $$\\frac{d}{d\\theta}(\\frac{dy}{dx})$$ which is $$\\frac{d}{d\\theta}(\\frac{N}{D})$$.\n\n<br/><br/>We can use the quotient rule for differentiation, which states that if we have a function of the form $$\\frac{u}{v}$$, then its derivative is given by $$\\frac{vu' - uv'}{v^2}$$. \n\n<br/><br/>So here, $$N' = 2\\cos 2\\theta - \\cos \\theta$$ and $$D' = -\\sin \\theta + 2\\sin 2\\theta$$.\n\n<br/><br/>Applying the quotient rule :\n\n<br/><br/>$$\\frac{d}{d\\theta}(\\frac{dy}{dx}) = \\frac{D N' - N D'}{D^2}$$ \n\n<br/><br/>Substituting the expressions for $$N'$$, $$D'$$, $$N$$, and $$D$$ we get :\n\n<br/><br/>$$\\frac{d}{d\\theta}(\\frac{dy}{dx}) = \\frac{(\\cos \\theta - \\cos 2\\theta)(2\\cos 2\\theta - \\cos \\theta) - (\\sin 2\\theta - \\sin \\theta)(-\\sin \\theta + 2\\sin 2\\theta)}{(\\cos \\theta - \\cos 2\\theta)^2}$$\n<br/><br/>Now $$\n\\frac{d^2 y}{d x^2}=\\frac{d}{d x}\\left(\\frac{d y}{d x}\\right)=\\frac{d}{d \\theta}\\left(\\frac{d y}{d x}\\right) \\times \\frac{d \\theta}{d x}\n$$\n<br/><br/>=  $$\\frac{(\\cos \\theta - \\cos 2\\theta)(2\\cos 2\\theta - \\cos \\theta) - (\\sin 2\\theta - \\sin \\theta)(-\\sin \\theta + 2\\sin 2\\theta)}{(\\cos \\theta - \\cos 2\\theta)^2}$$$$\n\\times \\frac{1}{(2 \\cos \\theta-2 \\cos 2 \\theta)}\n$$\n<br/><br/>$$\n\\begin{aligned}\n\\left.\\therefore \\frac{d^2 y}{d x^2}\\right|_{\\theta=\\pi} & =\\frac{(-1-1)(2+1)-(0-0)(-0+0)}{2(-1-1)^3} \\\\\\\\\n& =\\frac{-2 \\times 3}{-2 \\times 8}=\\frac{3}{8}\n\\end{aligned}\n$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "differentiation-of-parametric-function",
@@ -1891,7 +1891,7 @@
       "$$f^{\\prime \\prime}\\left(\\frac{2}{\\pi}\\right)=\\frac{12-\\pi^2}{2 \\pi}$$"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>Given the function:</p>\n\n<p>$ f(x)=\\left\\{\\begin{array}{ll} x^3 \\sin \\left(\\frac{1}{x}\\right), & x \\neq 0 \\\\ 0, & x=0 \\end{array}\\right. $</p>\n\n<p>we need to find its second derivative at specific points.</p>\n\n<p>First, let’s compute the first derivative $ f^{\\prime}(x) $:</p>\n\n<p>$ f^{\\prime}(x) = 3x^2 \\sin \\left( \\frac{1}{x} \\right) - x \\cos \\left( \\frac{1}{x} \\right) $</p>\n\n<p>Next, the second derivative $ f^{\\prime \\prime}(x) $ is:</p>\n\n<p>$ f^{\\prime \\prime}(x) = 6x \\sin \\left(\\frac{1}{x}\\right) - 3x \\cos \\left(\\frac{1}{x}\\right) - \\cos \\left(\\frac{1}{x}\\right) - \\frac{1}{x} \\sin \\left(\\frac{1}{x}\\right) $</p>\n\n<p>Therefore, evaluating the second derivative at $ x = \\frac{2}{\\pi} $:</p>\n\n<p>$ f^{\\prime \\prime} \\left(\\frac{2}{\\pi}\\right) = 6 \\left( \\frac{2}{\\pi} \\right) \\sin \\left(\\frac{\\pi}{2}\\right) - 3 \\left( \\frac{2}{\\pi} \\right) \\cos \\left(\\frac{\\pi}{2}\\right) - \\cos \\left( \\frac{\\pi}{2} \\right) - \\frac{\\pi}{2} \\sin \\left( \\frac{\\pi}{2} \\right) $</p>\n\n<p>Since $\\sin(\\frac{\\pi}{2}) = 1$ and $\\cos(\\frac{\\pi}{2}) = 0$, this simplifies to:</p>\n\n<p>$  f^{\\prime \\prime} \\left( \\frac{2}{\\pi} \\right) = \\frac{12}{\\pi} - \\frac{\\pi}{2} = \\frac{24 - \\pi^2}{2\\pi} $</p>\n\n<p>Finally, note that $ f^{\\prime}(0) $ is not defined, as it involves terms like $\\frac{1}{x}$ when $ x = 0 $.</p>",
+    "solution": "<p>Given the function:</p>\n\n<p>$ f(x)=\\left\\{\\begin{array}{ll} x^3 \\sin \\left(\\frac{1}{x}\\right), & x \\neq 0 \\\\ 0, & x=0 \\end{array}\\right. $</p>\n\n<p>we need to find its second derivative at specific points.</p>\n\n<p>First, let\u2019s compute the first derivative $ f^{\\prime}(x) $:</p>\n\n<p>$ f^{\\prime}(x) = 3x^2 \\sin \\left( \\frac{1}{x} \\right) - x \\cos \\left( \\frac{1}{x} \\right) $</p>\n\n<p>Next, the second derivative $ f^{\\prime \\prime}(x) $ is:</p>\n\n<p>$ f^{\\prime \\prime}(x) = 6x \\sin \\left(\\frac{1}{x}\\right) - 3x \\cos \\left(\\frac{1}{x}\\right) - \\cos \\left(\\frac{1}{x}\\right) - \\frac{1}{x} \\sin \\left(\\frac{1}{x}\\right) $</p>\n\n<p>Therefore, evaluating the second derivative at $ x = \\frac{2}{\\pi} $:</p>\n\n<p>$ f^{\\prime \\prime} \\left(\\frac{2}{\\pi}\\right) = 6 \\left( \\frac{2}{\\pi} \\right) \\sin \\left(\\frac{\\pi}{2}\\right) - 3 \\left( \\frac{2}{\\pi} \\right) \\cos \\left(\\frac{\\pi}{2}\\right) - \\cos \\left( \\frac{\\pi}{2} \\right) - \\frac{\\pi}{2} \\sin \\left( \\frac{\\pi}{2} \\right) $</p>\n\n<p>Since $\\sin(\\frac{\\pi}{2}) = 1$ and $\\cos(\\frac{\\pi}{2}) = 0$, this simplifies to:</p>\n\n<p>$  f^{\\prime \\prime} \\left( \\frac{2}{\\pi} \\right) = \\frac{12}{\\pi} - \\frac{\\pi}{2} = \\frac{24 - \\pi^2}{2\\pi} $</p>\n\n<p>Finally, note that $ f^{\\prime}(0) $ is not defined, as it involves terms like $\\frac{1}{x}$ when $ x = 0 $.</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "successive-differentiation",
@@ -2191,7 +2191,7 @@
       "<span style=\"\">is independent of both&nbsp;</span><span class=\"katex\" style=\"\">p</span><span style=\"\">&nbsp;and&nbsp;</span><span class=\"katex\" style=\"\"><span class=\"mord mathnormal\" style=\"margin-right: 0.0359em;\">q</span></span>"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>Differentiate by taking logarithms of both sides:  </p>\n<p>$ (p+q)\\ln(x+y)=p\\ln x+q\\ln y. $  </p>\n<p>Differentiating w.r.t. $x$ (and writing $y’=\\tfrac{dy}{dx}$) gives  </p>\n<p>$ (p+q)\\frac{1+y'}{x+y} =\\frac{p}{x}+\\frac{q\\,y'}{y}. $  </p>\n<p>Bring the $y'$-terms to one side:  </p>\n<p>$ (p+q)\\frac{y'}{x+y}-\\frac{q\\,y'}{y} =\\frac{p}{x}-\\frac{p+q}{x+y}. $  </p>\n<p>Factor out $y'$:  </p>\n<p>$ y'\\Bigl(\\,(p+q)\\frac{1}{x+y}-q\\frac{1}{y}\\Bigr) =\\;p\\frac{1}{x}-(p+q)\\frac{1}{x+y}. $  </p>\n<p>Hence  </p>\n<p>$ y' =\\frac{\\displaystyle p\\frac1x-(p+q)\\frac1{x+y}} {\\displaystyle (p+q)\\frac1{x+y}-q\\frac1y}\\,, $  </p>\n<p>which manifestly involves both $p$ and $q$.  </p>\n<p>Answer: Option C.</p>",
+    "solution": "<p>Differentiate by taking logarithms of both sides:  </p>\n<p>$ (p+q)\\ln(x+y)=p\\ln x+q\\ln y. $  </p>\n<p>Differentiating w.r.t. $x$ (and writing $y\u2019=\\tfrac{dy}{dx}$) gives  </p>\n<p>$ (p+q)\\frac{1+y'}{x+y} =\\frac{p}{x}+\\frac{q\\,y'}{y}. $  </p>\n<p>Bring the $y'$-terms to one side:  </p>\n<p>$ (p+q)\\frac{y'}{x+y}-\\frac{q\\,y'}{y} =\\frac{p}{x}-\\frac{p+q}{x+y}. $  </p>\n<p>Factor out $y'$:  </p>\n<p>$ y'\\Bigl(\\,(p+q)\\frac{1}{x+y}-q\\frac{1}{y}\\Bigr) =\\;p\\frac{1}{x}-(p+q)\\frac{1}{x+y}. $  </p>\n<p>Hence  </p>\n<p>$ y' =\\frac{\\displaystyle p\\frac1x-(p+q)\\frac1{x+y}} {\\displaystyle (p+q)\\frac1{x+y}-q\\frac1y}\\,, $  </p>\n<p>which manifestly involves both $p$ and $q$.  </p>\n<p>Answer: Option C.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General",
@@ -2213,7 +2213,7 @@
       "<span class=\"math-tex\">$(\\frac{y}{x})^{10}$</span>"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p>Differentiate both sides of $(x+y)^{10}=x^p\\,y^q$ (with $p+q=10$) implicitly with respect to $x$.</p>\n<ol>\n<li>Left‐hand side:</li>\n</ol>\n<p>$ \\frac{d}{dx}\\bigl((x+y)^{10}\\bigr) =10\\,(x+y)^9\\,(1+y'). $</p>\n<ol start=\"2\">\n<li>Right‐hand side:</li>\n</ol>\n<p>$ \\frac{d}{dx}\\bigl(x^p\\,y^q\\bigr) =p\\,x^{p-1}\\,y^q+q\\,x^p\\,y^{q-1}\\,y'. $</p>\n<p>So</p>\n<p>$ 10(x+y)^9\\,(1+y') =p\\,x^{p-1}y^q+q\\,x^p y^{q-1}y'. $</p>\n<p>Collect the $y'$–terms on one side:</p>\n<p>$ 10(x+y)^9 +10(x+y)^9\\,y' = p\\,x^{p-1}y^q +q\\,x^p y^{q-1}y', $</p>\n<p>$ 10(x+y)^9\\,y' -q\\,x^p y^{q-1}y' = p\\,x^{p-1}y^q -10(x+y)^9, $</p>\n<p>$ y'\\Bigl(10(x+y)^9 -q\\,x^p y^{q-1}\\Bigr) = p\\,x^{p-1}y^q -10(x+y)^9. $</p>\n<p>Using $(x+y)^{10}=x^p y^q$, one simplifies to</p>\n<p>$ y'=\\frac{y}{x}. $</p>\n<p>Answer: Option A.</p>",
+    "solution": "<p>Differentiate both sides of $(x+y)^{10}=x^p\\,y^q$ (with $p+q=10$) implicitly with respect to $x$.</p>\n<ol>\n<li>Left\u2010hand side:</li>\n</ol>\n<p>$ \\frac{d}{dx}\\bigl((x+y)^{10}\\bigr) =10\\,(x+y)^9\\,(1+y'). $</p>\n<ol start=\"2\">\n<li>Right\u2010hand side:</li>\n</ol>\n<p>$ \\frac{d}{dx}\\bigl(x^p\\,y^q\\bigr) =p\\,x^{p-1}\\,y^q+q\\,x^p\\,y^{q-1}\\,y'. $</p>\n<p>So</p>\n<p>$ 10(x+y)^9\\,(1+y') =p\\,x^{p-1}y^q+q\\,x^p y^{q-1}y'. $</p>\n<p>Collect the $y'$\u2013terms on one side:</p>\n<p>$ 10(x+y)^9 +10(x+y)^9\\,y' = p\\,x^{p-1}y^q +q\\,x^p y^{q-1}y', $</p>\n<p>$ 10(x+y)^9\\,y' -q\\,x^p y^{q-1}y' = p\\,x^{p-1}y^q -10(x+y)^9, $</p>\n<p>$ y'\\Bigl(10(x+y)^9 -q\\,x^p y^{q-1}\\Bigr) = p\\,x^{p-1}y^q -10(x+y)^9. $</p>\n<p>Using $(x+y)^{10}=x^p y^q$, one simplifies to</p>\n<p>$ y'=\\frac{y}{x}. $</p>\n<p>Answer: Option A.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -2247,7 +2247,7 @@
     "year": "2021",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "If y = cos x&nbsp;⋅ cos 4x&nbsp;⋅ cos 8x, then what is&nbsp;<span class=\"math-tex\">$\\rm \\frac{1}{y}\\frac{dy}{dx}$</span>&nbsp;at&nbsp;<span class=\"math-tex\">$\\rm x = \\frac{\\pi}{4}$</span>&nbsp;equal to?",
+    "question": "If y = cos x&nbsp;\u22c5 cos 4x&nbsp;\u22c5 cos 8x, then what is&nbsp;<span class=\"math-tex\">$\\rm \\frac{1}{y}\\frac{dy}{dx}$</span>&nbsp;at&nbsp;<span class=\"math-tex\">$\\rm x = \\frac{\\pi}{4}$</span>&nbsp;equal to?",
     "options": [
       "-1",
       "0",
@@ -2269,7 +2269,7 @@
     "year": "2021",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "Let f(x) be a polynomial function such that f ∘ f(x) = x<sup>4</sup>. What is f'(1) equal to ?",
+    "question": "Let f(x) be a polynomial function such that f \u2218 f(x) = x<sup>4</sup>. What is f'(1) equal to ?",
     "options": [
       "0",
       "1",
@@ -2484,15 +2484,15 @@
     "year": "2023",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "What is the derivative of cosec(x°) ?&nbsp;&nbsp;",
+    "question": "What is the derivative of cosec(x\u00b0) ?&nbsp;&nbsp;",
     "options": [
-      "-cosec(x°) cot(x<span style=\"\">°</span>)&nbsp;&nbsp;",
+      "-cosec(x\u00b0) cot(x<span style=\"\">\u00b0</span>)&nbsp;&nbsp;",
       "<span class=\"math-tex\">$ -\\frac{\\pi}{180} \\operatorname{cosec}\\left(x^{\\circ}\\right) \\cot \\left(x^{\\circ}\\right) $</span>",
       "<span class=\"math-tex\">$\\frac{\\pi}{180} \\operatorname{cosec}\\left(x^{\\circ}\\right) \\cot \\left(x^{\\circ}\\right) $</span>",
       "<span class=\"math-tex\">$-\\frac{\\pi}{180} \\operatorname{cosec}(x) \\cot (x)$</span>"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>To find the derivative of $$\\operatorname{cosec}(x°)$$, we need to take into account that the function's argument is in degrees and not in radians. First, let's recall that in calculus, we usually work with radians. If we have an angle in degrees, we need to convert it to radians before differentiating.</p>\n\n<p>The conversion factor from degrees to radians is $$\\frac{\\pi}{180}$$. Therefore, we denote the function as:</p>\n\n<p>$$\\operatorname{cosec}(x°) = \\operatorname{cosec}\\left(\\frac{\\pi}{180} x\\right)$$</p>\n\n<p>Now, let's find the derivative using the chain rule. The derivative of $$\\operatorname{cosec}(u)$$ with respect to $$u$$ is:</p>\n\n<p>$$\\frac{d}{du} \\operatorname{cosec}(u) = -\\operatorname{cosec}(u) \\cot(u)$$</p>\n\n<p>Here, $$u = \\frac{\\pi}{180} x$$. According to the chain rule, we have :</p>\n\n<p>$$\\frac{d}{dx} \\operatorname{cosec}\\left(\\frac{\\pi}{180} x\\right) = -\\operatorname{cosec}\\left(\\frac{\\pi}{180} x \\right) \\cot \\left(\\frac{\\pi}{180} x \\right) \\cdot \\frac{d}{dx} \\left( \\frac{\\pi}{180} x \\right)$$</p>\n\n<p>The derivative of $$\\frac{\\pi}{180} x$$ with respect to $$x$$ is $$\\frac{\\pi}{180}$$. Therefore:</p>\n\n<p>$$\\frac{d}{dx} \\operatorname{cosec}\\left(x°\\right) = -\\operatorname{cosec}\\left(\\frac{\\pi}{180} x\\right) \\cot \\left(\\frac{\\pi}{180} x\\right) \\cdot \\frac{\\pi}{180}$$</p>\n\n<p>Recognizing that $$x$$ is in degrees, we rewrite the expression in terms of $$x°$$:</p>\n\n<p>$$\\frac{\\pi}{180} \\operatorname{cosec}\\left(x°\\right) \\cot \\left(x°\\right)$$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option B:</strong> $$-\\frac{\\pi}{180} \\operatorname{cosec}(x^{\\circ}) \\cot (x^{\\circ})$$</p>",
+    "solution": "<p>To find the derivative of $$\\operatorname{cosec}(x\u00b0)$$, we need to take into account that the function's argument is in degrees and not in radians. First, let's recall that in calculus, we usually work with radians. If we have an angle in degrees, we need to convert it to radians before differentiating.</p>\n\n<p>The conversion factor from degrees to radians is $$\\frac{\\pi}{180}$$. Therefore, we denote the function as:</p>\n\n<p>$$\\operatorname{cosec}(x\u00b0) = \\operatorname{cosec}\\left(\\frac{\\pi}{180} x\\right)$$</p>\n\n<p>Now, let's find the derivative using the chain rule. The derivative of $$\\operatorname{cosec}(u)$$ with respect to $$u$$ is:</p>\n\n<p>$$\\frac{d}{du} \\operatorname{cosec}(u) = -\\operatorname{cosec}(u) \\cot(u)$$</p>\n\n<p>Here, $$u = \\frac{\\pi}{180} x$$. According to the chain rule, we have :</p>\n\n<p>$$\\frac{d}{dx} \\operatorname{cosec}\\left(\\frac{\\pi}{180} x\\right) = -\\operatorname{cosec}\\left(\\frac{\\pi}{180} x \\right) \\cot \\left(\\frac{\\pi}{180} x \\right) \\cdot \\frac{d}{dx} \\left( \\frac{\\pi}{180} x \\right)$$</p>\n\n<p>The derivative of $$\\frac{\\pi}{180} x$$ with respect to $$x$$ is $$\\frac{\\pi}{180}$$. Therefore:</p>\n\n<p>$$\\frac{d}{dx} \\operatorname{cosec}\\left(x\u00b0\\right) = -\\operatorname{cosec}\\left(\\frac{\\pi}{180} x\\right) \\cot \\left(\\frac{\\pi}{180} x\\right) \\cdot \\frac{\\pi}{180}$$</p>\n\n<p>Recognizing that $$x$$ is in degrees, we rewrite the expression in terms of $$x\u00b0$$:</p>\n\n<p>$$\\frac{\\pi}{180} \\operatorname{cosec}\\left(x\u00b0\\right) \\cot \\left(x\u00b0\\right)$$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option B:</strong> $$-\\frac{\\pi}{180} \\operatorname{cosec}(x^{\\circ}) \\cot (x^{\\circ})$$</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General",
@@ -2571,7 +2571,7 @@
     "year": "2024",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "What is h’(0) equal to?&nbsp;",
+    "question": "What is h\u2019(0) equal to?&nbsp;",
     "options": [
       "-2",
       "-1",
@@ -2579,7 +2579,7 @@
       "2"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>We use the chain‐rule twice. Set  </p>\n<p>$$u(x)=2f(x)+2,\\quad h(x)=f\\bigl(u(x)\\bigr).$$  </p>\n<p>Then  </p>\n\n<p><p>$u'(x)=2\\,f'(x)$,  </p></p>\n<p><p>$h'(x)=f'\\bigl(u(x)\\bigr)\\,u'(x)=f'\\bigl(2f(x)+2\\bigr)\\;\\cdot\\;2f'(x).$  </p></p>\n\n<p>At $x=0$:  </p>\n\n<p><p>$f(0)=-1$ so $2f(0)+2=0$,  </p></p>\n<p><p>$f'(0)=1$.  </p></p>\n\n<p>Hence  </p>\n<p>$$h'(0)=f'(0)\\,\\cdot2\\,f'(0)=1\\cdot2\\cdot1=2.$$  </p>\n<p>Answer: 2.</p>",
+    "solution": "<p>We use the chain\u2010rule twice. Set  </p>\n<p>$$u(x)=2f(x)+2,\\quad h(x)=f\\bigl(u(x)\\bigr).$$  </p>\n<p>Then  </p>\n\n<p><p>$u'(x)=2\\,f'(x)$,  </p></p>\n<p><p>$h'(x)=f'\\bigl(u(x)\\bigr)\\,u'(x)=f'\\bigl(2f(x)+2\\bigr)\\;\\cdot\\;2f'(x).$  </p></p>\n\n<p>At $x=0$:  </p>\n\n<p><p>$f(0)=-1$ so $2f(0)+2=0$,  </p></p>\n<p><p>$f'(0)=1$.  </p></p>\n\n<p>Hence  </p>\n<p>$$h'(0)=f'(0)\\,\\cdot2\\,f'(0)=1\\cdot2\\cdot1=2.$$  </p>\n<p>Answer: 2.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General",
@@ -2593,7 +2593,7 @@
     "year": "2024",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "What is g’(0) equal to?&nbsp;",
+    "question": "What is g\u2019(0) equal to?&nbsp;",
     "options": [
       "-4",
       "-2",
@@ -2722,12 +2722,12 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "If y =&nbsp;<span class=\"math-tex\">$\\frac{x \\sqrt{x^2−16}}{2} − 8 \\ln\\left|x + \\sqrt{x^2−16}\\right|$</span>, then what is&nbsp;<span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span>&nbsp;equal to ?",
+    "question": "If y =&nbsp;<span class=\"math-tex\">$\\frac{x \\sqrt{x^2\u221216}}{2} \u2212 8 \\ln\\left|x + \\sqrt{x^2\u221216}\\right|$</span>, then what is&nbsp;<span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span>&nbsp;equal to ?",
     "options": [
-      "<span class=\"math-tex\">$\\text{x}\\sqrt{\\text{x}^2−16}$</span>",
-      "<span class=\"math-tex\">$\\text{x}−\\sqrt{\\text{x}^2−16}$</span>",
-      "<span class=\"math-tex\">$\\sqrt{\\text{x}^2−16}$</span>",
-      "<span class=\"math-tex\">$4\\sqrt{\\text{x}^2−16}$</span>"
+      "<span class=\"math-tex\">$\\text{x}\\sqrt{\\text{x}^2\u221216}$</span>",
+      "<span class=\"math-tex\">$\\text{x}\u2212\\sqrt{\\text{x}^2\u221216}$</span>",
+      "<span class=\"math-tex\">$\\sqrt{\\text{x}^2\u221216}$</span>",
+      "<span class=\"math-tex\">$4\\sqrt{\\text{x}^2\u221216}$</span>"
     ],
     "correctOptionIndex": 2,
     "solution": "<p>Given the function:</p>\n\n<p>$$y = \\frac{x \\sqrt{x^2-16}}{2} - 8 \\ln\\left|x + \\sqrt{x^2-16}\\right|$$</p>\n\n<p>We need to determine the derivative $$\\frac{dy}{dx}$$.</p>\n\n<p>First, let's denote $$u = x + \\sqrt{x^2-16}$$ for simplicity.</p>\n\n<p>Now, let's differentiate each term individually:</p>\n\n<p>1. For the term $$\\frac{x \\sqrt{x^2-16}}{2}$$:</p>\n\n<p>Let $$v = x \\sqrt{x^2-16}$$. Using the product rule:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx}[x \\sqrt{x^2-16}] = x \\frac{d}{dx}[\\sqrt{x^2-16}] + \\sqrt{x^2-16} \\frac{d}{dx}[x]$$</p>\n\n</p>\n\n<p>First, find $$\\frac{d}{dx}[\\sqrt{x^2-16}]$$:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx}[\\sqrt{x^2-16}] = \\frac{1}{2\\sqrt{x^2-16}} \\cdot 2x = \\frac{x}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Now, substitute back into the product rule:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx}[x \\sqrt{x^2-16}] = x \\cdot \\frac{x}{\\sqrt{x^2-16}} + \\sqrt{x^2-16} = \\frac{x^2}{\\sqrt{x^2-16}} + \\sqrt{x^2-16}$$</p>\n\n</p>\n\n<p>Thus:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx} \\left[\\frac{x \\sqrt{x^2-16}}{2}\\right] = \\frac{1}{2} \\left(\\frac{x^2}{\\sqrt{x^2-16}} + \\sqrt{x^2-16}\\right)$$</p>\n\n</p>\n\n<p>2. For the term $$-8 \\ln\\left| u \\right|$$ where $$u = x + \\sqrt{x^2-16}$$:</p>\n\n<p>Using the chain rule:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx} [-8 \\ln |u|] = -8 \\cdot \\frac{1}{u} \\cdot \\frac{d}{dx}[u] = -8 \\cdot \\frac{1}{x + \\sqrt{x^2-16}} \\cdot (1 + \\frac{x}{\\sqrt{x^2-16}})$$</p>\n\n</p>\n\n<p>Simplify the expression inside the logarithm derivative:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx}[u] = 1 + \\frac{x}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Therefore:</p>\n\n<p>\n\n<p>$$-8 \\cdot \\frac{1}{x + \\sqrt{x^2-16}} \\cdot  \\left(1 + \\frac{x}{\\sqrt{x^2-16}}\\right) = -\\frac{8(1 + x/\\sqrt{x^2-16})}{x + \\sqrt{x^2-16}} = -\\frac{8(\\sqrt{x^2-16} + x)}{(x+\\sqrt{x^2-16})\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Since:</p>\n\n<p>\n\n<p>$$1 + \\frac{x}{\\sqrt{x^2-16}} = \\frac{\\sqrt{x^2-16} + x}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>This simplifies to:</p>\n\n<p>\n\n<p>$$- \\frac{8}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Combining both derivatives, we have:</p>\n\n<p>\n\n<p>$$\\frac{dy}{dx} = \\frac{1}{2} \\left(\\frac{x^2}{\\sqrt{x^2-16}} + \\sqrt{x^2-16}\\right) - \\frac{8}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Simplifying further:</p>\n\n<p>\n\n<p>$$\\frac{dy}{dx} = \\frac{x^2 + x^2 - 16}{2 \\sqrt{x^2-16}} = \\sqrt{x^2-16}$$</p>\n\n</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>\n\n<strong>Option C: $$\\sqrt{x^2-16}$$</strong>\n\n</p>",
@@ -2746,9 +2746,9 @@
     "question": "<span style=\"\">If y = (x</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">x</span><span style=\"\">)</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">x</span><span style=\"\">, then which one of the following is correct ?</span>",
     "options": [
       "<span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span>&nbsp;+ xy(1 + 2 ln x) = 0",
-      "<span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span> − xy(1 + 2 ln x) = 0",
-      "<span class=\"math-tex\">$​\\frac{\\text{dy}}{\\text{dx}}$</span>&nbsp;− 2xy(1 + ln x) = 0",
-      "<span class=\"math-tex\">$​\\frac{\\text{dy}}{\\text{dx}}$</span>&nbsp;+ 2xy(1 + ln x) = 0"
+      "<span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span> \u2212 xy(1 + 2 ln x) = 0",
+      "<span class=\"math-tex\">$\u200b\\frac{\\text{dy}}{\\text{dx}}$</span>&nbsp;\u2212 2xy(1 + ln x) = 0",
+      "<span class=\"math-tex\">$\u200b\\frac{\\text{dy}}{\\text{dx}}$</span>&nbsp;+ 2xy(1 + ln x) = 0"
     ],
     "correctOptionIndex": 1,
     "solution": "<strong>Concept:</strong>\n\n<ol>\n<li>The derivative of the product of functions $ p(x) $ and $ q(x) $ is given by $\\frac{d}{dx} [p(x) q(x)] = p'(x) q(x) + p(x) q'(x)$.</li><br>\n<li>The derivative of a composite function $ f(g(x)) $ is given by $\\frac{d}{dx} [f(g(x))] = f'(g(x)) g'(x)$.</li>\n</ol>\n<strong>Calculation:</strong>\n\n<p>Given $ y = (x^x)^x $,</p>\n\n<p>Taking the natural logarithm on both sides:</p>\n\n<p>$ \\ln y = \\ln (x^x)^x, $</p>\n\n<p>$ \\ln y = x \\ln (x^x), $</p>\n\n<p>$ \\ln y = x \\cdot x \\ln x, $</p>\n\n<p>$ \\ln y = x^2 \\ln x. $</p>\n\n<p>Now, differentiating both sides with respect to $ x $:</p>\n\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = 2x \\ln x + x^2 \\cdot \\frac{1}{x}, $</p>\n\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = 2x \\ln x + x, $</p>\n\n<p>which simplifies to:</p>\n\n<p>$ \\frac{dy}{dx} = 2xy \\ln x + xy. $</p>\n\n<p>Rearranging the terms, we get:</p>\n\n<p>$ \\frac{dy}{dx} - xy (1 + 2 \\ln x) = 0. $</p>\n\n<p>Hence, the correct answer is Option B.</p>",
@@ -2763,8 +2763,8 @@
     "title": "NDA Mathematics 4 September 2022",
     "year": "2022",
     "difficulty": "Medium",
-    "type": "MCQM",
-    "question": "<p>Let f(x) be a function such that f'(x) = g(x) and f''(x) = −f(x). Let h(x) = {f(x)}<sup>2</sup> + {g(x)}<sup>2</sup>. Then consider the following statements :</p>\n\n<p>1. h'(3) = 0</p>\n\n<p>2. h(1) = h(2)</p>\n\n<p>Which of the statements given above is/are correct ?</p>\n",
+    "type": "SCQ",
+    "question": "<p>Let f(x) be a function such that f'(x) = g(x) and f''(x) = \u2212f(x). Let h(x) = {f(x)}<sup>2</sup> + {g(x)}<sup>2</sup>. Then consider the following statements :</p>\n\n<p>1. h'(3) = 0</p>\n\n<p>2. h(1) = h(2)</p>\n\n<p>Which of the statements given above is/are correct ?</p>\n",
     "options": [
       "1 only",
       "2 only",
@@ -2776,7 +2776,7 @@
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "tllz3linue",
@@ -2786,9 +2786,9 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<span style=\"\">If y = ln</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span class=\"math-tex\">$\\left(\\frac{x^2−x+1}{x^2+x+1}\\right)$</span><span style=\"\">, then what is&nbsp;</span><span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span><span style=\"\">&nbsp;at x = 0 equal to ?</span>",
+    "question": "<span style=\"\">If y = ln</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span class=\"math-tex\">$\\left(\\frac{x^2\u2212x+1}{x^2+x+1}\\right)$</span><span style=\"\">, then what is&nbsp;</span><span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span><span style=\"\">&nbsp;at x = 0 equal to ?</span>",
     "options": [
-      "−2",
+      "\u22122",
       "0",
       "1",
       "2"
@@ -2808,7 +2808,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<span style=\"\">If&nbsp;</span><span class=\"math-tex\">$\\frac{d}{d x}\\left(\\frac{1+x^4+x^8}{1−x^2+x^4}\\right)$</span><span style=\"\">&nbsp;= ax + bx</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">3</span><span style=\"\">, then which one of the following is correct?</span>",
+    "question": "<span style=\"\">If&nbsp;</span><span class=\"math-tex\">$\\frac{d}{d x}\\left(\\frac{1+x^4+x^8}{1\u2212x^2+x^4}\\right)$</span><span style=\"\">&nbsp;= ax + bx</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">3</span><span style=\"\">, then which one of the following is correct?</span>",
     "options": [
       "a = b",
       "a = 2b",
@@ -2816,7 +2816,7 @@
       "2a = b"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p><strong>Concept:</strong></p>\n\n<ul>\n<li><strong>Chain rule:</strong>  $\\frac{{d}}{{dx}} (f(g(x)) = f'(g(x)) g'(x)$</li><br>\n<li>$\\frac{{d}}{{dx}} \\left(\\frac{{p(x)}}{{q(x)}}\\right) = \\frac{{p'(x)q(x) - p(x) q'(x)}}{{(q(x))^2}}$</li>\n</ul>\n<p><strong>Calculation:</strong></p>\n\n<p>Given, $\\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = ax + bx^3$.</p>\n\n<p>Solving the left-hand side (LHS):</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(\\frac{(1 - x^2 + x^4) + x^2 + x^8}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + \\frac{x^2 + x^8}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + \\frac{x^2((1 - x^2 + x^4) + x^2 - x^4 + x^6)}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + x^2 + \\frac{x^4 - x^6 + x^8}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + x^2 + x^4\\right) $</p>\n\n<p>(or it can be solved by performing long division)</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = 0 + 2x + 4x^3 $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = 2x + 4x^3 = ax + bx^3 $</p>\n\n<p>Hence, $a = 2$ and $b = 4$.</p>\n\n<p>Thus, $2a = b$.</p>\n\n<p>∴ The correct option is (D).</p>",
+    "solution": "<p><strong>Concept:</strong></p>\n\n<ul>\n<li><strong>Chain rule:</strong>  $\\frac{{d}}{{dx}} (f(g(x)) = f'(g(x)) g'(x)$</li><br>\n<li>$\\frac{{d}}{{dx}} \\left(\\frac{{p(x)}}{{q(x)}}\\right) = \\frac{{p'(x)q(x) - p(x) q'(x)}}{{(q(x))^2}}$</li>\n</ul>\n<p><strong>Calculation:</strong></p>\n\n<p>Given, $\\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = ax + bx^3$.</p>\n\n<p>Solving the left-hand side (LHS):</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(\\frac{(1 - x^2 + x^4) + x^2 + x^8}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + \\frac{x^2 + x^8}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + \\frac{x^2((1 - x^2 + x^4) + x^2 - x^4 + x^6)}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + x^2 + \\frac{x^4 - x^6 + x^8}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + x^2 + x^4\\right) $</p>\n\n<p>(or it can be solved by performing long division)</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = 0 + 2x + 4x^3 $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = 2x + 4x^3 = ax + bx^3 $</p>\n\n<p>Hence, $a = 2$ and $b = 4$.</p>\n\n<p>Thus, $2a = b$.</p>\n\n<p>\u2234 The correct option is (D).</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"

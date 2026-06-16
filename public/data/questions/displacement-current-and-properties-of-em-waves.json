@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>The standard for a plane electromagnetic wave traveling in a general direction is</p>\n<p>$$\\vec{E} = \\vec{E}_0 \\sin(\\vec{k} \\cdot \\vec{r} + \\omega t + \\phi)$$</p>\n<p>Here, $\\vec{k} = k_x \\hat{i} + k_y \\hat{j} + k_z \\hat{k}$ is the wave vector, and $\\vec{r} = x\\hat{i} + y\\hat{j} + z\\hat{k}$ is the position vector.</p>\n<p>$$\\vec{k} \\cdot \\vec{r} = k_x x + k_y y + k_z z$$</p>\n<p>The electric field phase is given as $(3y + 4z + \\omega t)$.</p>\n<p>On comparing with $(\\vec{k} \\cdot \\vec{r} + \\omega t)$, $k_x = 0$, $k_y = 3$, $k_z = 4$</p>\n<p>Therefore, the wave vector is:</p>\n<p>$$\\vec{k} = 3\\hat{j} + 4\\hat{k}$$</p>\n<p>The unit vector $\\hat{n}$ in the direction of wave propagation:</p>\n<p>$$\\hat{n} = -\\frac{\\vec{k}}{|\\vec{k}|} = \\frac{-3\\hat{j} + 4\\hat{k}}{\\sqrt{3^2 + 4^2}} = \\frac{-3\\hat{j} + 4\\hat{k}}{\\sqrt{9 + 16}} = \\frac{-3\\hat{j} + 4\\hat{k}}{5} = -\\frac{1}{5}(3\\hat{j} + 4\\hat{k})$$</p>\n<p>Thus, option (A) is correct.</p>\n<p>The magnitude of the wave vector $|\\vec{k}|$ is,</p>\n\n<p>$${k} = |\\vec{\\text{k}}| = \\sqrt{k_x^2 + k_y^2 + k_z^2} = \\sqrt{0^2 + 3^2 + 4^2} = \\sqrt{25} = 5\\ \\text{m}^{-1}$$</p>\n<p>So, the magnitude of the wave vector is $5\\ \\text{m}^{-1}$. Thus, option (B) is incorrect.</p>\n<p>In a vacuum, the angular frequency $\\omega$, the magnitude of the wave vector $\\text{k}$, and the speed of light $c$ are related by the wave speed equation:</p>\n<p>$$c = \\frac{\\omega}{\\text{k}} \\rightarrow \\omega = c \\cdot \\text{k}$$</p>\n<p>Given the speed of light $c = 3 \\times 10^8\\ \\text{ms}^{-1}$, and our calculated wave vector magnitude $\\text{k} = 5\\ \\text{m}^{-1}$:</p>\n<p>$$\\omega = (3 \\times 10^8) \\times (5) = 15 \\times 10^8\\ \\text{rad}\\ \\text{s}^{-1} = 1.5 \\times 10^9\\ \\text{rad}\\ \\text{s}^{-1}$$</p>\n<p>Thus, option (C) is correct.</p>\n<p>For a transverse electromagnetic wave, the electric field vector $\\vec{\\text{E}}$, the magnetic field vector $\\vec{\\text{B}}$, and the propagation unit vector $\\hat{\\text{n}}$ are mutually orthogonal and follow a definitive right-hand rule cross product vector relation:</p>\n<p>$$\\vec{\\text{B}} = \\frac{1}{c}\\,(\\hat{\\text{n}} \\times \\vec{\\text{E}})$$</p>\n<p>$$\\vec{\\text{B}} = \\frac{1}{\\omega}\\,(\\vec{\\text{k}} \\times \\vec{\\text{E}})$$</p>\n<p>Here, $\\vec{\\text{k}} = 3\\hat{\\text{j}} + 4\\hat{\\text{k}}$ and $\\vec{\\text{E}} = E_0 \\sin(3y + 4z + \\omega\\ t)\\,\\hat{\\text{i}}$</p>\n<p>$$\\vec{\\text{k}} \\times \\vec{\\text{E}} = (3\\hat{\\text{j}} + 4\\hat{\\text{k}}) \\times [E_0 \\sin(3y + 4z + \\omega\\ t)\\,\\hat{\\text{i}}]$$</p>\n<p>$$\\vec{\\text{k}} \\times \\vec{\\text{E}} = E_0 \\sin(3y + 4z + \\omega\\ t)\\,[3(\\hat{\\text{j}} \\times \\hat{\\text{i}}) + 4(\\hat{\\text{k}} \\times \\hat{\\text{i}})]$$</p>\n<p>$$\\vec{\\text{k}} \\times \\vec{\\text{E}} = E_0 \\sin(3y + 4z + \\omega\\ t)\\,[3(-\\hat{\\text{k}}) + 4(\\hat{\\text{j}})] = E_0 \\sin(3y + 4z + \\omega\\ t)\\,(4\\hat{\\text{j}} - 3\\hat{\\text{k}})$$</p>\n<p>Putting in magnetic field expression,</p>\n<p>$$\\vec{\\text{B}} = \\frac{1}{\\omega}\\left[E_0 \\sin(3y + 4z + \\omega\\ t)\\,(4\\hat{\\text{j}} - 3\\hat{\\text{k}})\\right]$$</p>\n<p>Since $\\omega = c \\cdot \\text{k}$ and $\\text{k} = 5$:</p>\n<p>$$\\vec{\\text{B}} = \\frac{E_0}{5c}\\sin(3y + 4z + \\omega\\ t)\\,(4\\hat{\\text{j}} - 3\\hat{\\text{k}})$$</p>\n<p>Thus, option (D) is incorrect.</p>\n<p>Therefore, the correct options are (A) and (C).</p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -451,7 +451,7 @@
     "subject": "Physics",
     "topic": "displacement-current-and-properties-of-em-waves",
     "difficulty": "medium",
-    "solution": "<p>We start with the given electric field:</p>\n<p>$$ \\vec{E} = 57 \\cos\\Bigl[7.5\\times10^6\\, t - 5\\times10^{-3}(3x+4y)\\Bigr](4\\,\\hat{i} - 3\\,\\hat{j}) \\quad \\text{(N/C)} $$</p>\n<p>Since we are dealing with an electromagnetic wave in free space, the electric field, magnetic field, and the propagation direction are all mutually perpendicular. In free space the magnetic field is related to the electric field by:</p>\n<p>$$ \\vec{B} = \\frac{1}{c}\\,\\hat{n} \\times \\vec{E}, $$</p>\n<p>where:</p>\n<p>• $$c = 3\\times10^8 \\, \\text{m/s}$$ is the speed of light, and  </p>\n<p>• $$\\hat{n}$$ is the unit vector in the direction of wave propagation.</p>\n<p>Step 1. Identify the propagation direction:</p>\n<p>The phase of the wave is written as</p>\n<p>$$ 7.5\\times10^6\\,t - 5\\times10^{-3}(3x+4y). $$</p>\n<p>This tells us that the wave vector, up to a multiplicative constant, is</p>\n<p>$$ \\vec{k} = 5\\times10^{-3}(3\\,\\hat{i} + 4\\,\\hat{j}). $$</p>\n<p>The unit vector in the direction of propagation is then</p>\n<p>$$ \\hat{n} = \\frac{3\\hat{i}+4\\hat{j}}{\\sqrt{3^2+4^2}} = \\frac{3\\hat{i}+4\\hat{j}}{5}. $$</p>\n<p>Step 2. Compute the cross product:</p>\n<p>We have</p>\n<p>$$ \\vec{E} \\propto (4\\,\\hat{i}-3\\,\\hat{j}), $$</p>\n<p>so we need to calculate</p>\n<p>$$ \\hat{n} \\times \\vec{E} = \\frac{1}{5}(3\\hat{i}+4\\hat{j}) \\times \\Bigl[57 \\cos(\\ldots)(4\\hat{i}-3\\hat{j})\\Bigr]. $$</p>\n<p>Taking the constant factors out of the cross product gives</p>\n<p>$$ \\hat{n} \\times \\vec{E} = \\frac{57 \\cos(\\ldots)}{5}\\,\\Bigl[(3\\hat{i}+4\\hat{j}) \\times (4\\hat{i}-3\\hat{j})\\Bigr]. $$</p>\n<p>Recall that the cross product in the plane (where both vectors have zero $$\\hat{k}$$ components) will point in the $$\\hat{k}$$ (or $$-\\hat{k}$$) direction. To compute the cross product of vectors in the $$xy$$-plane, we use the formula</p>\n<p>$$ \\vec{a} \\times \\vec{b} = (a_xb_y - a_yb_x)\\,\\hat{k}. $$</p>\n<p>Let</p>\n<p>• $$\\vec{a} = 3\\hat{i}+4\\hat{j},$$  </p>\n<p>• $$\\vec{b} = 4\\hat{i}-3\\hat{j}.$$</p>\n<p>Then</p>\n<p>$$ \\vec{a} \\times \\vec{b} = \\Bigl(3\\cdot (-3) - 4\\cdot 4\\Bigr)\\,\\hat{k} = (-9 - 16)\\,\\hat{k} = -25\\,\\hat{k}. $$</p>\n<p>Thus,</p>\n<p>$$ \\hat{n} \\times \\vec{E} = \\frac{57 \\cos(\\ldots)}{5}\\,(-25\\,\\hat{k}) = -\\frac{57 \\times 25}{5}\\, \\cos(\\ldots) \\,\\hat{k}. $$</p>\n<p>Simplify the constant:</p>\n<p>$$ \\frac{25}{5} = 5, $$</p>\n<p>so we get</p>\n<p>$$ \\hat{n} \\times \\vec{E} = -\\frac{57 \\times 5}{1} \\cos(\\ldots)\\,\\hat{k} = -285 \\cos(\\ldots) \\,\\hat{k}. $$</p>\n<p>Step 3. Apply the relation for the magnetic field:</p>\n<p>Now, substituting back into the formula for $$\\vec{B}$$,</p>\n<p>$$ \\vec{B} = \\frac{1}{c}\\,\\hat{n} \\times \\vec{E} = -\\frac{285}{3\\times10^8} \\cos(\\ldots)\\,\\hat{k}. $$</p>\n<p>Notice that</p>\n<p>$$ \\frac{285}{3\\times10^8} = \\frac{57 \\times 5}{3\\times10^8}, $$</p>\n<p>so we have</p>\n<p>$$ \\vec{B} = -\\frac{57}{3\\times10^8} \\cos\\Bigl[7.5\\times10^6\\,t - 5\\times10^{-3}(3x+4y)\\Bigr](5\\,\\hat{k})\\quad \\text{(T)}. $$</p>\n<p>This expression exactly matches Option D.</p>\n<p>Final Answer: Option D</p>",
+    "solution": "<p>We start with the given electric field:</p>\n<p>$$ \\vec{E} = 57 \\cos\\Bigl[7.5\\times10^6\\, t - 5\\times10^{-3}(3x+4y)\\Bigr](4\\,\\hat{i} - 3\\,\\hat{j}) \\quad \\text{(N/C)} $$</p>\n<p>Since we are dealing with an electromagnetic wave in free space, the electric field, magnetic field, and the propagation direction are all mutually perpendicular. In free space the magnetic field is related to the electric field by:</p>\n<p>$$ \\vec{B} = \\frac{1}{c}\\,\\hat{n} \\times \\vec{E}, $$</p>\n<p>where:</p>\n<p>\u2022\u2003$$c = 3\\times10^8 \\, \\text{m/s}$$ is the speed of light, and  </p>\n<p>\u2022\u2003$$\\hat{n}$$ is the unit vector in the direction of wave propagation.</p>\n<p>Step 1. Identify the propagation direction:</p>\n<p>The phase of the wave is written as</p>\n<p>$$ 7.5\\times10^6\\,t - 5\\times10^{-3}(3x+4y). $$</p>\n<p>This tells us that the wave vector, up to a multiplicative constant, is</p>\n<p>$$ \\vec{k} = 5\\times10^{-3}(3\\,\\hat{i} + 4\\,\\hat{j}). $$</p>\n<p>The unit vector in the direction of propagation is then</p>\n<p>$$ \\hat{n} = \\frac{3\\hat{i}+4\\hat{j}}{\\sqrt{3^2+4^2}} = \\frac{3\\hat{i}+4\\hat{j}}{5}. $$</p>\n<p>Step 2. Compute the cross product:</p>\n<p>We have</p>\n<p>$$ \\vec{E} \\propto (4\\,\\hat{i}-3\\,\\hat{j}), $$</p>\n<p>so we need to calculate</p>\n<p>$$ \\hat{n} \\times \\vec{E} = \\frac{1}{5}(3\\hat{i}+4\\hat{j}) \\times \\Bigl[57 \\cos(\\ldots)(4\\hat{i}-3\\hat{j})\\Bigr]. $$</p>\n<p>Taking the constant factors out of the cross product gives</p>\n<p>$$ \\hat{n} \\times \\vec{E} = \\frac{57 \\cos(\\ldots)}{5}\\,\\Bigl[(3\\hat{i}+4\\hat{j}) \\times (4\\hat{i}-3\\hat{j})\\Bigr]. $$</p>\n<p>Recall that the cross product in the plane (where both vectors have zero $$\\hat{k}$$ components) will point in the $$\\hat{k}$$ (or $$-\\hat{k}$$) direction. To compute the cross product of vectors in the $$xy$$-plane, we use the formula</p>\n<p>$$ \\vec{a} \\times \\vec{b} = (a_xb_y - a_yb_x)\\,\\hat{k}. $$</p>\n<p>Let</p>\n<p>\u2022\u2003$$\\vec{a} = 3\\hat{i}+4\\hat{j},$$  </p>\n<p>\u2022\u2003$$\\vec{b} = 4\\hat{i}-3\\hat{j}.$$</p>\n<p>Then</p>\n<p>$$ \\vec{a} \\times \\vec{b} = \\Bigl(3\\cdot (-3) - 4\\cdot 4\\Bigr)\\,\\hat{k} = (-9 - 16)\\,\\hat{k} = -25\\,\\hat{k}. $$</p>\n<p>Thus,</p>\n<p>$$ \\hat{n} \\times \\vec{E} = \\frac{57 \\cos(\\ldots)}{5}\\,(-25\\,\\hat{k}) = -\\frac{57 \\times 25}{5}\\, \\cos(\\ldots) \\,\\hat{k}. $$</p>\n<p>Simplify the constant:</p>\n<p>$$ \\frac{25}{5} = 5, $$</p>\n<p>so we get</p>\n<p>$$ \\hat{n} \\times \\vec{E} = -\\frac{57 \\times 5}{1} \\cos(\\ldots)\\,\\hat{k} = -285 \\cos(\\ldots) \\,\\hat{k}. $$</p>\n<p>Step 3. Apply the relation for the magnetic field:</p>\n<p>Now, substituting back into the formula for $$\\vec{B}$$,</p>\n<p>$$ \\vec{B} = \\frac{1}{c}\\,\\hat{n} \\times \\vec{E} = -\\frac{285}{3\\times10^8} \\cos(\\ldots)\\,\\hat{k}. $$</p>\n<p>Notice that</p>\n<p>$$ \\frac{285}{3\\times10^8} = \\frac{57 \\times 5}{3\\times10^8}, $$</p>\n<p>so we have</p>\n<p>$$ \\vec{B} = -\\frac{57}{3\\times10^8} \\cos\\Bigl[7.5\\times10^6\\,t - 5\\times10^{-3}(3x+4y)\\Bigr](5\\,\\hat{k})\\quad \\text{(T)}. $$</p>\n<p>This expression exactly matches Option D.</p>\n<p>Final Answer: Option D</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -869,7 +869,7 @@
     "subject": "Physics",
     "topic": "displacement-current-and-properties-of-em-waves",
     "difficulty": "easy",
-    "solution": "In an electromagnetic wave, the maximum value of the electric field E is related to the maximum value of the magnetic field B by the equation\n<br/><br/>\n$E = cB$\n<br/><br/>\nwhere c is the speed of light in a vacuum, which is approximately $3 × 10^8 m/s$.\n<br/><br/>\nGiven that the amplitude of the magnetic field B is $6.0 × 10^{-7} T$, we can substitute these values into the equation to find the maximum value of the electric field:\n<br/><br/>\n$E = (3 × 10^8 m/s) \\times (6.0 × 10^{-7} T) = 180 V/m$\n<br/><br/>\nTherefore, 180 V/m is the correct answer.",
+    "solution": "In an electromagnetic wave, the maximum value of the electric field E is related to the maximum value of the magnetic field B by the equation\n<br/><br/>\n$E = cB$\n<br/><br/>\nwhere c is the speed of light in a vacuum, which is approximately $3 \u00d7 10^8 m/s$.\n<br/><br/>\nGiven that the amplitude of the magnetic field B is $6.0 \u00d7 10^{-7} T$, we can substitute these values into the equation to find the maximum value of the electric field:\n<br/><br/>\n$E = (3 \u00d7 10^8 m/s) \\times (6.0 \u00d7 10^{-7} T) = 180 V/m$\n<br/><br/>\nTherefore, 180 V/m is the correct answer.",
     "section": "A",
     "type": "SCQ"
   },
@@ -2166,7 +2166,7 @@
   {
     "id": "eOSqxQ3fk1N3k8MNARjgy2xukeuuwq8h",
     "questionNumber": 6,
-    "questionText": "A plane electromagnetic wave, has <br>frequency\nof 2.0 $$ \\times $$ 10<sup>10</sup> Hz and its energy density is\n1.02 $$ \\times $$ 10<sup>–8</sup> J/m<sup>3</sup> in vacuum. The amplitude of\nthe magnetic field of the wave is close\nto\n<br>( $${1 \\over {4\\pi {\\varepsilon _0}}} = 9 \\times {10^9}{{N{m^2}} \\over {{C^2}}}$$ and speed of light<br> =\n3 $$ \\times $$ 10<sup>8</sup> ms<sup>–1</sup>)",
+    "questionText": "A plane electromagnetic wave, has <br>frequency\nof 2.0 $$ \\times $$ 10<sup>10</sup> Hz and its energy density is\n1.02 $$ \\times $$ 10<sup>\u20138</sup> J/m<sup>3</sup> in vacuum. The amplitude of\nthe magnetic field of the wave is close\nto\n<br>( $${1 \\over {4\\pi {\\varepsilon _0}}} = 9 \\times {10^9}{{N{m^2}} \\over {{C^2}}}$$ and speed of light<br> =\n3 $$ \\times $$ 10<sup>8</sup> ms<sup>\u20131</sup>)",
     "options": [
       "190 nT",
       "150 nT",
@@ -2181,7 +2181,7 @@
     "subject": "Physics",
     "topic": "displacement-current-and-properties-of-em-waves",
     "difficulty": "medium",
-    "solution": "Energy density, $${{dU} \\over {dV}} = {{B_0^2} \\over {2{\\mu _0}}}$$\n<br><br>$$ \\Rightarrow $$ 1.02 $$ \\times $$ 10<sup>–8</sup> = $${{B_0^2} \\over {2{\\mu _0}}}$$\n<br><br>Also, c = $${1 \\over {\\sqrt {{\\mu _0}{\\varepsilon _0}} }}$$\n<br><br>$$ \\Rightarrow $$ $${\\mu _0} = {1 \\over {{c^2}{\\varepsilon _0}}}$$\n<br><br>$$ \\therefore $$ $${B_0^2}$$ = 1.02 $$ \\times $$ 10<sup>–8</sup> $$ \\times $$ 2 $$ \\times $$ $${1 \\over {{c^2}{\\varepsilon _0}}}$$\n<br><br>= 1.02 $$ \\times $$ 10<sup>–8</sup> $$ \\times $$ 2 $$ \\times $$ $${{4\\pi  \\times 9 \\times {{10}^9}} \\over {9 \\times {{10}^{16}}}}$$\n<br><br>$$ \\Rightarrow $$ B<sub>0</sub> = 16 $$ \\times $$ 10<sup>-8</sup> T = 160 nT",
+    "solution": "Energy density, $${{dU} \\over {dV}} = {{B_0^2} \\over {2{\\mu _0}}}$$\n<br><br>$$ \\Rightarrow $$ 1.02 $$ \\times $$ 10<sup>\u20138</sup> = $${{B_0^2} \\over {2{\\mu _0}}}$$\n<br><br>Also, c = $${1 \\over {\\sqrt {{\\mu _0}{\\varepsilon _0}} }}$$\n<br><br>$$ \\Rightarrow $$ $${\\mu _0} = {1 \\over {{c^2}{\\varepsilon _0}}}$$\n<br><br>$$ \\therefore $$ $${B_0^2}$$ = 1.02 $$ \\times $$ 10<sup>\u20138</sup> $$ \\times $$ 2 $$ \\times $$ $${1 \\over {{c^2}{\\varepsilon _0}}}$$\n<br><br>= 1.02 $$ \\times $$ 10<sup>\u20138</sup> $$ \\times $$ 2 $$ \\times $$ $${{4\\pi  \\times 9 \\times {{10}^9}} \\over {9 \\times {{10}^{16}}}}$$\n<br><br>$$ \\Rightarrow $$ B<sub>0</sub> = 16 $$ \\times $$ 10<sup>-8</sup> T = 160 nT",
     "section": "A",
     "type": "SCQ"
   },
@@ -2210,7 +2210,7 @@
   {
     "id": "khhPnOKuzztVxQ3cpjjgy2xukf14w4zh",
     "questionNumber": 8,
-    "questionText": "The magnetic field of a plane electromagnetic wave is\n<br>$$\\overrightarrow B  = 3 \\times {10^{ - 8}}\\sin \\left[ {200\\pi \\left( {y + ct} \\right)} \\right]\\widehat i$$ T\n<br>where c = 3 $$ \\times $$ 10<sup>8</sup>\n ms<sup>–1</sup> is the speed of light.\nThe corresponding electric field is :\n",
+    "questionText": "The magnetic field of a plane electromagnetic wave is\n<br>$$\\overrightarrow B  = 3 \\times {10^{ - 8}}\\sin \\left[ {200\\pi \\left( {y + ct} \\right)} \\right]\\widehat i$$ T\n<br>where c = 3 $$ \\times $$ 10<sup>8</sup>\n ms<sup>\u20131</sup> is the speed of light.\nThe corresponding electric field is :\n",
     "options": [
       "$$\\overrightarrow E  =  - {10^{ - 6}}\\sin \\left[ {200\\pi \\left( {y + ct} \\right)} \\right]\\widehat k$$ V/m",
       "$$\\overrightarrow E  =  - 9\\sin \\left[ {200\\pi \\left( {y + ct} \\right)} \\right]\\widehat k$$ V/m",
@@ -2225,7 +2225,7 @@
     "subject": "Physics",
     "topic": "displacement-current-and-properties-of-em-waves",
     "difficulty": "easy",
-    "solution": "Given, $$\\overrightarrow B  = 3 \\times {10^{ - 8}}\\sin \\left[ {200\\pi \\left( {y + ct} \\right)} \\right]\\widehat i$$ T\n<br><br>$$ \\therefore $$ E<sub>0</sub> = CB<sub>0</sub>\n<br><br>= 3 × 10<sup>8</sup>\n × 3 × 10<sup>–8</sup> = 9 V/m\n<br><br>We know, $$\\left( {\\overrightarrow E  \\times \\overrightarrow B } \\right)||\\overrightarrow C $$\n<br><br>And here $$\\widehat B = \\widehat i\\&amp; \\widehat C =  - \\widehat j$$\n<br><br>$$ \\therefore $$ $$\\widehat E =  - \\widehat k$$\n<br><br>So, $$\\overrightarrow E  =  - 9\\sin \\left[ {200\\pi \\left( {y + ct} \\right)} \\right]\\widehat k$$ V/m",
+    "solution": "Given, $$\\overrightarrow B  = 3 \\times {10^{ - 8}}\\sin \\left[ {200\\pi \\left( {y + ct} \\right)} \\right]\\widehat i$$ T\n<br><br>$$ \\therefore $$ E<sub>0</sub> = CB<sub>0</sub>\n<br><br>= 3 \u00d7 10<sup>8</sup>\n \u00d7 3 \u00d7 10<sup>\u20138</sup> = 9 V/m\n<br><br>We know, $$\\left( {\\overrightarrow E  \\times \\overrightarrow B } \\right)||\\overrightarrow C $$\n<br><br>And here $$\\widehat B = \\widehat i\\&amp; \\widehat C =  - \\widehat j$$\n<br><br>$$ \\therefore $$ $$\\widehat E =  - \\widehat k$$\n<br><br>So, $$\\overrightarrow E  =  - 9\\sin \\left[ {200\\pi \\left( {y + ct} \\right)} \\right]\\widehat k$$ V/m",
     "section": "A",
     "type": "SCQ"
   },
@@ -2254,12 +2254,12 @@
   {
     "id": "KZFlhDyck55AuP9tKijgy2xukfewe6if",
     "questionNumber": 5,
-    "questionText": "An electron is constrained to move along\nthe y-axis with a speed of 0.1 c (c is the\nspeed of light) in the presence of\nelectromagnetic wave, whose electric\nfield is\n<br>$$\\overrightarrow E  = 30\\widehat j\\sin \\left( {1.5 \\times {{10}^7}t - 5 \\times {{10}^{ - 2}}x} \\right)$$ V/m.\n<br>The maximum magnetic force experienced by\nthe electron will be :\n<br>(given c = 3 $$ \\times $$ 10<sup>8</sup> ms<sup>–1</sup> and electron charge =\n1.6 $$ \\times $$ 10<sup>–19</sup> C)",
+    "questionText": "An electron is constrained to move along\nthe y-axis with a speed of 0.1 c (c is the\nspeed of light) in the presence of\nelectromagnetic wave, whose electric\nfield is\n<br>$$\\overrightarrow E  = 30\\widehat j\\sin \\left( {1.5 \\times {{10}^7}t - 5 \\times {{10}^{ - 2}}x} \\right)$$ V/m.\n<br>The maximum magnetic force experienced by\nthe electron will be :\n<br>(given c = 3 $$ \\times $$ 10<sup>8</sup> ms<sup>\u20131</sup> and electron charge =\n1.6 $$ \\times $$ 10<sup>\u201319</sup> C)",
     "options": [
-      "4.8 $$ \\times $$ 10<sup>–19</sup> N",
-      "2.4 $$ \\times $$ 10<sup>–18</sup> N",
-      "3.2 $$ \\times $$ 10<sup>–18</sup> N",
-      "1.6 $$ \\times $$ 10<sup>–18</sup> N"
+      "4.8 $$ \\times $$ 10<sup>\u201319</sup> N",
+      "2.4 $$ \\times $$ 10<sup>\u201318</sup> N",
+      "3.2 $$ \\times $$ 10<sup>\u201318</sup> N",
+      "1.6 $$ \\times $$ 10<sup>\u201318</sup> N"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -2276,7 +2276,7 @@
   {
     "id": "KtdVH1xq0D0pZMPsVKjgy2xukfxnxzld",
     "questionNumber": 6,
-    "questionText": "For a plane electromagnetic wave, the magnetic field at a point x and time t is\n<br><br>$$\\overrightarrow B \\left( {x,t} \\right)$$ = $$\\left[ {1.2 \\times {{10}^{ - 7}}\\sin \\left( {0.5 \\times {{10}^3}x + 1.5 \\times {{10}^{11}}t} \\right)\\widehat k} \\right]$$ T\n<br><br>The instantaneous electric field $$\\overrightarrow E $$\n corresponding to $$\\overrightarrow B $$\n is :\n<br>(speed of light c = 3 × 10<sup>8</sup>\n ms<sup>–1</sup>)",
+    "questionText": "For a plane electromagnetic wave, the magnetic field at a point x and time t is\n<br><br>$$\\overrightarrow B \\left( {x,t} \\right)$$ = $$\\left[ {1.2 \\times {{10}^{ - 7}}\\sin \\left( {0.5 \\times {{10}^3}x + 1.5 \\times {{10}^{11}}t} \\right)\\widehat k} \\right]$$ T\n<br><br>The instantaneous electric field $$\\overrightarrow E $$\n corresponding to $$\\overrightarrow B $$\n is :\n<br>(speed of light c = 3 \u00d7 10<sup>8</sup>\n ms<sup>\u20131</sup>)",
     "options": [
       "$$\\overrightarrow E \\left( {x,t} \\right) = \\left[ {36\\sin \\left( {1 \\times {{10}^3}x + 1.5 \\times {{10}^{11}}t} \\right)\\widehat i} \\right]$$ $${V \\over m}$$",
       "$$\\overrightarrow E \\left( {x,t} \\right) = \\left[ {36\\sin \\left( {0.5 \\times {{10}^3}x + 1.5 \\times {{10}^{11}}t} \\right)\\widehat k} \\right]{V \\over m}$$",
@@ -2291,14 +2291,14 @@
     "subject": "Physics",
     "topic": "displacement-current-and-properties-of-em-waves",
     "difficulty": "medium",
-    "solution": "Given,\n<br>$$\\overrightarrow B \\left( {x,t} \\right)$$ = $$\\left[ {1.2 \\times {{10}^{ - 7}}\\sin \\left( {0.5 \\times {{10}^3}x + 1.5 \\times {{10}^{11}}t} \\right)\\widehat k} \\right]$$ T\n<br><br>Wave is travelling along (–x) axis and $$\\overrightarrow B $$ is along\n+z axis.\n<br><br>We know, Magnitude of electric field\n<br><br>E = BC\n<br><br>= 1.2 $$ \\times $$ 10<sup>-7</sup> sin ( 0.5 10 + 1.5$$ \\times $$10<sup>11</sup>t ) $$ \\times $$ 3 $$ \\times $$ 10<sup>8</sup>\n<br><br>= 36 sin (0.5$$ \\times $$10<sup>3</sup>x+1.5$$ \\times $$10<sup>11</sup>t) V/m\n<br><br>Also, $$\\overrightarrow s  = {{\\overrightarrow E  \\times \\overrightarrow B } \\over {{\\mu _0}}}$$\n<br><br>$$ \\Rightarrow $$ $$ - \\widehat i = {{\\overrightarrow E  \\times \\widehat k} \\over {{\\mu _0}}}$$\n<br><br>$$ \\therefore $$ Direction of $${\\overrightarrow E  =  - \\widehat j}$$\n<br><br>$$ \\therefore $$ Instantaneous electric field,\n<br><br> $$\\overrightarrow E \\left( {x,t} \\right) = \\left[ { - 36\\sin \\left( {0.5 \\times {{10}^3}x + 1.5 \\times {{10}^{11}}t} \\right)\\widehat j} \\right]{V \\over m}$$",
+    "solution": "Given,\n<br>$$\\overrightarrow B \\left( {x,t} \\right)$$ = $$\\left[ {1.2 \\times {{10}^{ - 7}}\\sin \\left( {0.5 \\times {{10}^3}x + 1.5 \\times {{10}^{11}}t} \\right)\\widehat k} \\right]$$ T\n<br><br>Wave is travelling along (\u2013x) axis and $$\\overrightarrow B $$ is along\n+z axis.\n<br><br>We know, Magnitude of electric field\n<br><br>E = BC\n<br><br>= 1.2 $$ \\times $$ 10<sup>-7</sup> sin ( 0.5 10 + 1.5$$ \\times $$10<sup>11</sup>t ) $$ \\times $$ 3 $$ \\times $$ 10<sup>8</sup>\n<br><br>= 36 sin (0.5$$ \\times $$10<sup>3</sup>x+1.5$$ \\times $$10<sup>11</sup>t) V/m\n<br><br>Also, $$\\overrightarrow s  = {{\\overrightarrow E  \\times \\overrightarrow B } \\over {{\\mu _0}}}$$\n<br><br>$$ \\Rightarrow $$ $$ - \\widehat i = {{\\overrightarrow E  \\times \\widehat k} \\over {{\\mu _0}}}$$\n<br><br>$$ \\therefore $$ Direction of $${\\overrightarrow E  =  - \\widehat j}$$\n<br><br>$$ \\therefore $$ Instantaneous electric field,\n<br><br> $$\\overrightarrow E \\left( {x,t} \\right) = \\left[ { - 36\\sin \\left( {0.5 \\times {{10}^3}x + 1.5 \\times {{10}^{11}}t} \\right)\\widehat j} \\right]{V \\over m}$$",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "UOvglC2aM95pkP0b7Qjgy2xukfrunzzc",
     "questionNumber": 23,
-    "questionText": "Suppose that intensity of a laser is $${{315} \\over \\pi }$$ W/m<sup>2</sup>.<br> The rms electric field, in units of V/m associated\nwith this source is close to the nearest integer is __________.\n<br><br>$$ \\in $$<sub>0</sub> = 8.86 × 10<sup>–12</sup> C<sup>2</sup> Nm<sup>–2</sup>; c = 3 × 10<sup>8</sup> ms<sup>–1</sup>)",
+    "questionText": "Suppose that intensity of a laser is $${{315} \\over \\pi }$$ W/m<sup>2</sup>.<br> The rms electric field, in units of V/m associated\nwith this source is close to the nearest integer is __________.\n<br><br>$$ \\in $$<sub>0</sub> = 8.86 \u00d7 10<sup>\u201312</sup> C<sup>2</sup> Nm<sup>\u20132</sup>; c = 3 \u00d7 10<sup>8</sup> ms<sup>\u20131</sup>)",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -2359,12 +2359,12 @@
   {
     "id": "lK7D0NhsPKaMPgSnrh7k9k2k5hgokbk",
     "questionNumber": 7,
-    "questionText": "A plane electromagnetic wave of frequency\n25 GHz is propagating in vacuum along the\nz-direction. At a particular point in space and\ntime, the magnetic field is given by $$\\overrightarrow B  = 5 \\times {10^{ - 8}}\\widehat jT$$. The corresponding electric field $$\\overrightarrow E $$ is (speed of light c = 3 × 10<sup>8</sup> ms<sup>–1</sup>)",
+    "questionText": "A plane electromagnetic wave of frequency\n25 GHz is propagating in vacuum along the\nz-direction. At a particular point in space and\ntime, the magnetic field is given by $$\\overrightarrow B  = 5 \\times {10^{ - 8}}\\widehat jT$$. The corresponding electric field $$\\overrightarrow E $$ is (speed of light c = 3 \u00d7 10<sup>8</sup> ms<sup>\u20131</sup>)",
     "options": [
       "15 $$\\widehat i$$V / m",
       "-15 $$\\widehat i$$V / m",
-      "1.66 × 10<sup>–16</sup> $$\\widehat i$$V / m",
-      "-1.66 × 10<sup>–16</sup> $$\\widehat i$$V / m"
+      "1.66 \u00d7 10<sup>\u201316</sup> $$\\widehat i$$V / m",
+      "-1.66 \u00d7 10<sup>\u201316</sup> $$\\widehat i$$V / m"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -2425,12 +2425,12 @@
   {
     "id": "V3bZ7JTDqq0H2lEDHj3rsa0w2w9jwzjtoa5",
     "questionNumber": 7,
-    "questionText": "Light is incident normally on a completely absorbing surface with an energy flux of 25 W cm<sup>–2</sup>. If the surface\nhas an area of 25 cm<sup>2</sup>, the momentum transferred to the surface in 40 min time duration will be : ",
+    "questionText": "Light is incident normally on a completely absorbing surface with an energy flux of 25 W cm<sup>\u20132</sup>. If the surface\nhas an area of 25 cm<sup>2</sup>, the momentum transferred to the surface in 40 min time duration will be : ",
     "options": [
-      "6.3 × 10<sup>–4</sup> Ns",
-      "5.0 × 10<sup>–3</sup> Ns",
-      "1.4 × 10<sup>–6</sup> Ns",
-      "3.5 × 10<sup>–6</sup> Ns"
+      "6.3 \u00d7 10<sup>\u20134</sup> Ns",
+      "5.0 \u00d7 10<sup>\u20133</sup> Ns",
+      "1.4 \u00d7 10<sup>\u20136</sup> Ns",
+      "3.5 \u00d7 10<sup>\u20136</sup> Ns"
     ],
     "correctOption": 1,
     "correctAnswer": null,
@@ -2491,7 +2491,7 @@
   {
     "id": "1LlGm8iaXGIVASHSRiyob",
     "questionNumber": 11,
-    "questionText": "If the magnetic field of a plane electromagnetic wave is given by (the speed of light = 3 × 10<sup>8</sup> B = 100 × 10<sup>–6</sup>\n sin $$\\left[ {2\\pi  \\times 2 \\times {{10}^{15}}\\left( {t - {x \\over c}} \\right)} \\right]$$ then the maximum electric field associated with it is -\n ",
+    "questionText": "If the magnetic field of a plane electromagnetic wave is given by (the speed of light = 3 \u00d7 10<sup>8</sup> B = 100 \u00d7 10<sup>\u20136</sup>\n sin $$\\left[ {2\\pi  \\times 2 \\times {{10}^{15}}\\left( {t - {x \\over c}} \\right)} \\right]$$ then the maximum electric field associated with it is -\n ",
     "options": [
       "4.5 $$ \\times $$ 10<sup>4</sup> N/C",
       "4 $$ \\times $$ 10<sup>4</sup> N/C",
@@ -2513,7 +2513,7 @@
   {
     "id": "TjqrGqGQBr1N4wheYCOUn",
     "questionNumber": 10,
-    "questionText": "A 27 mW laser beam has a cross-sectional area of 10 mm<sup>2</sup>. The magnitude of the maximum electric field in this electromagnetic wave is given by :\n<br>[Given permittivity of space $$ \\in $$<sub>0</sub> = 9 $$ \\times $$ 10<sup>–12</sup> SI units, Speed of light c = 3 $$ \\times $$ 10<sup>8</sup>  m/s]",
+    "questionText": "A 27 mW laser beam has a cross-sectional area of 10 mm<sup>2</sup>. The magnitude of the maximum electric field in this electromagnetic wave is given by :\n<br>[Given permittivity of space $$ \\in $$<sub>0</sub> = 9 $$ \\times $$ 10<sup>\u201312</sup> SI units, Speed of light c = 3 $$ \\times $$ 10<sup>8</sup>  m/s]",
     "options": [
       "2 kV/m",
       "1 kV/m",
@@ -2535,7 +2535,7 @@
   {
     "id": "P0WbmgrjOu7wPyt29yZyJ",
     "questionNumber": 13,
-    "questionText": "An electromagnetic wave of intensity 50 Wm<sup>–2</sup> enters in a medium of refractive index 'n' without any loss. The ratio of the magnitudes of electric, and the ratio of the magnitudes of magnetic fields of the wave before and after entering into the medium are respectively, given by: ",
+    "questionText": "An electromagnetic wave of intensity 50 Wm<sup>\u20132</sup> enters in a medium of refractive index 'n' without any loss. The ratio of the magnitudes of electric, and the ratio of the magnitudes of magnetic fields of the wave before and after entering into the medium are respectively, given by: ",
     "options": [
       "$$\\left( {{1 \\over {\\sqrt n }},{1 \\over {\\sqrt n }}} \\right)$$",
       "$$\\left( {\\sqrt n ,\\sqrt n } \\right)$$",
@@ -2559,10 +2559,10 @@
     "questionNumber": 10,
     "questionText": "A plane electromagnetic wave having a frequency v = 23.9 GHz propagates along the positive z-direction in\nfree space. The peak value of the Electric Field is 60 V/m. Which among the following is the acceptable\nmagnetic field component in the electromagnetic wave ?",
     "options": [
-      "$$\\overrightarrow B $$ = 2 × 10<sup>–7</sup>\n sin(1.5 × 10<sup>2</sup>\nx + 0.5 × 10<sup>11</sup>t) $$\\widehat j$$",
-      "$$\\overrightarrow B $$ = 60\n sin(0.5 × 10<sup>3</sup>x + 0.5 × 10<sup>11</sup>t) $$\\widehat k$$\n",
-      "$$\\overrightarrow B $$ = 2 × 10<sup>–7</sup>\n sin(0.5 × 10<sup>3</sup>\nz + 1.5 × 10<sup>11</sup>t) $$\\widehat i$$",
-      "$$\\overrightarrow B $$ = 2 × 10<sup>–7</sup>\n sin(0.5 × 10<sup>3</sup>\nz - 1.5 × 10<sup>11</sup>t) $$\\widehat i$$"
+      "$$\\overrightarrow B $$ = 2 \u00d7 10<sup>\u20137</sup>\n sin(1.5 \u00d7 10<sup>2</sup>\nx + 0.5 \u00d7 10<sup>11</sup>t) $$\\widehat j$$",
+      "$$\\overrightarrow B $$ = 60\n sin(0.5 \u00d7 10<sup>3</sup>x + 0.5 \u00d7 10<sup>11</sup>t) $$\\widehat k$$\n",
+      "$$\\overrightarrow B $$ = 2 \u00d7 10<sup>\u20137</sup>\n sin(0.5 \u00d7 10<sup>3</sup>\nz + 1.5 \u00d7 10<sup>11</sup>t) $$\\widehat i$$",
+      "$$\\overrightarrow B $$ = 2 \u00d7 10<sup>\u20137</sup>\n sin(0.5 \u00d7 10<sup>3</sup>\nz - 1.5 \u00d7 10<sup>11</sup>t) $$\\widehat i$$"
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -2572,7 +2572,7 @@
     "subject": "Physics",
     "topic": "displacement-current-and-properties-of-em-waves",
     "difficulty": "medium",
-    "solution": "Since the wave is propagating in positive z-direction\n<br><br/>So acceptable magnetic field component will be\n<br><br/>$$\\overrightarrow B  = {B_0}\\sin \\left( {kz - \\omega t} \\right)$$$$\\widehat i$$\n<br><br/>$$ \\because $$ C = $${{{E_o}} \\over {{B_o}}}$$\n<br><br/>$$ \\Rightarrow $$ $${B_o} = {{{E_o}} \\over C}$$ = $${{60} \\over {3 \\times {{10}^8}}}$$ = 2 $$ \\times $$ 10<sup>-7</sup>\n<br><br/>and $$\\omega  = 2\\pi f$$ = 2$$\\pi $$$$ \\times $$23.9$$ \\times $$10<sup>9</sup> = 1.5 × 10<sup>11</sup> Hz\n<br><br/>and k = $${\\omega  \\over c}$$ = $${{1.5 \\times {{10}^{11}}} \\over {3 \\times {{10}^8}}}$$ = 0.5 × 10<sup>3</sup>\n<br><br><b>Note :</b> When wave is propagating in positive z-direction then sign of kz and $${\\omega t}$$ should be opposite.\n<br>From option you can see only option D can be correct.",
+    "solution": "Since the wave is propagating in positive z-direction\n<br><br/>So acceptable magnetic field component will be\n<br><br/>$$\\overrightarrow B  = {B_0}\\sin \\left( {kz - \\omega t} \\right)$$$$\\widehat i$$\n<br><br/>$$ \\because $$ C = $${{{E_o}} \\over {{B_o}}}$$\n<br><br/>$$ \\Rightarrow $$ $${B_o} = {{{E_o}} \\over C}$$ = $${{60} \\over {3 \\times {{10}^8}}}$$ = 2 $$ \\times $$ 10<sup>-7</sup>\n<br><br/>and $$\\omega  = 2\\pi f$$ = 2$$\\pi $$$$ \\times $$23.9$$ \\times $$10<sup>9</sup> = 1.5 \u00d7 10<sup>11</sup> Hz\n<br><br/>and k = $${\\omega  \\over c}$$ = $${{1.5 \\times {{10}^{11}}} \\over {3 \\times {{10}^8}}}$$ = 0.5 \u00d7 10<sup>3</sup>\n<br><br><b>Note :</b> When wave is propagating in positive z-direction then sign of kz and $${\\omega t}$$ should be opposite.\n<br>From option you can see only option D can be correct.",
     "section": "A",
     "type": "SCQ"
   },
@@ -2654,25 +2654,25 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "displacement-current-and-properties-of-em-waves",
     "difficulty": "medium",
-    "solution": "If we use that direction of light propagation will be along $$\\overrightarrow E  \\times \\overrightarrow B $$. Then (A) option is\ncorrect.<br>\nMagnitude of E = CB<br><br>\nE = 3 × 10<sup>8</sup> × 1.6 × 10<sup>–6</sup> × $$\\sqrt 5 $$<br><br>\nE = 4.8 × $${10^{2\\sqrt 5 }}$$<br><br>\n$$\\overrightarrow E $$ and  $$\\overrightarrow B $$ are perpendicular to each other<br><br>\n$$ \\Rightarrow \\overrightarrow E .\\overrightarrow B  = 0$$<br><br>\n$$ \\Rightarrow $$ Either direction of $$\\overrightarrow E $$ $$\\widehat i - 2\\widehat j$$ or $$-\n \\widehat i + 2\\widehat j$$ from given option <br><br/>Also wave propagation direction is parallel to $$\\overrightarrow E  \\times \\overrightarrow B $$ which is $$- \\widehat k$$<br><br>\n$$ \\Rightarrow $$ $$\\overrightarrow E $$ is along ($$-\n \\widehat i + 2\\widehat j$$)",
+    "solution": "If we use that direction of light propagation will be along $$\\overrightarrow E  \\times \\overrightarrow B $$. Then (A) option is\ncorrect.<br>\nMagnitude of E = CB<br><br>\nE = 3 \u00d7 10<sup>8</sup> \u00d7 1.6 \u00d7 10<sup>\u20136</sup> \u00d7 $$\\sqrt 5 $$<br><br>\nE = 4.8 \u00d7 $${10^{2\\sqrt 5 }}$$<br><br>\n$$\\overrightarrow E $$ and  $$\\overrightarrow B $$ are perpendicular to each other<br><br>\n$$ \\Rightarrow \\overrightarrow E .\\overrightarrow B  = 0$$<br><br>\n$$ \\Rightarrow $$ Either direction of $$\\overrightarrow E $$ $$\\widehat i - 2\\widehat j$$ or $$-\n \\widehat i + 2\\widehat j$$ from given option <br><br/>Also wave propagation direction is parallel to $$\\overrightarrow E  \\times \\overrightarrow B $$ which is $$- \\widehat k$$<br><br>\n$$ \\Rightarrow $$ $$\\overrightarrow E $$ is along ($$-\n \\widehat i + 2\\widehat j$$)",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "PsPvuNusKi6XOgeKA4XQ2",
     "questionNumber": 11,
-    "questionText": "A plane electromagnetic wave travels in free\nspace along the x-direction. The electric field\ncomponent of the wave at a particular point of\nspace and time is E = 6 V m<sup>–1</sup> along y-direction.\nIts corresponding magnetic field component,\nB would be :",
+    "questionText": "A plane electromagnetic wave travels in free\nspace along the x-direction. The electric field\ncomponent of the wave at a particular point of\nspace and time is E = 6 V m<sup>\u20131</sup> along y-direction.\nIts corresponding magnetic field component,\nB would be :",
     "options": [
-      "2 × 10<sup>–8</sup> T along y-direction",
-      "6 × 10<sup>–8</sup> T along z-direction",
-      "2 × 10<sup>–8</sup> T along z-direction",
-      "6 × 10<sup>–8</sup> T along x-direction"
+      "2 \u00d7 10<sup>\u20138</sup> T along y-direction",
+      "6 \u00d7 10<sup>\u20138</sup> T along z-direction",
+      "2 \u00d7 10<sup>\u20138</sup> T along z-direction",
+      "6 \u00d7 10<sup>\u20138</sup> T along x-direction"
     ],
     "correctOption": 2,
     "correctAnswer": null,
@@ -2682,19 +2682,19 @@
     "subject": "Physics",
     "topic": "displacement-current-and-properties-of-em-waves",
     "difficulty": "easy",
-    "solution": "The direction of propagation of an EM wave is direction of $$\\overrightarrow E  \\times \\overrightarrow B $$<br><br>\n$$\\widehat i = \\widehat j \\times \\widehat B$$<br><br>\n$$ \\Rightarrow \\widehat B = \\widehat k$$<br><br>\n$$C = {E \\over B} \\Rightarrow B = {E \\over C} = {6 \\over {3 \\times {{10}^8}}}$$<br><br>\nB = 2 × 10<sup>–8</sup> T along z direction.",
+    "solution": "The direction of propagation of an EM wave is direction of $$\\overrightarrow E  \\times \\overrightarrow B $$<br><br>\n$$\\widehat i = \\widehat j \\times \\widehat B$$<br><br>\n$$ \\Rightarrow \\widehat B = \\widehat k$$<br><br>\n$$C = {E \\over B} \\Rightarrow B = {E \\over C} = {6 \\over {3 \\times {{10}^8}}}$$<br><br>\nB = 2 \u00d7 10<sup>\u20138</sup> T along z direction.",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "H7wcIWefcCVwIWMeIqsoL",
     "questionNumber": 12,
-    "questionText": "50 W/m<sup>2</sup> energy density of sunlight is normally\nincident on the surface of a solar panel. Some\npart of incident energy (25%) is reflected from\nthe surface and the rest is absorbed. The force\nexerted on 1m<sup>2</sup> surface area will be close to\n(c = 3 × 108 m/s) :-",
+    "questionText": "50 W/m<sup>2</sup> energy density of sunlight is normally\nincident on the surface of a solar panel. Some\npart of incident energy (25%) is reflected from\nthe surface and the rest is absorbed. The force\nexerted on 1m<sup>2</sup> surface area will be close to\n(c = 3 \u00d7 108 m/s) :-",
     "options": [
-      "20 × 10<sup>–8</sup> N",
-      "35 × 10<sup>–8</sup> N",
-      "10 × 10–8 N",
-      "15 × 10<sup>–8</sup> N"
+      "20 \u00d7 10<sup>\u20138</sup> N",
+      "35 \u00d7 10<sup>\u20138</sup> N",
+      "10 \u00d7 10\u20138 N",
+      "15 \u00d7 10<sup>\u20138</sup> N"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -2704,18 +2704,18 @@
     "subject": "Physics",
     "topic": "displacement-current-and-properties-of-em-waves",
     "difficulty": "medium",
-    "solution": "Radiation pressure for 100% reflection = $${{2I} \\over C}$$<br><br>\nRadiation pressure for 0% reflection = $${I \\over C}$$<br><br>\nHence, in given case, radiation pressure <br><br/>\n = $$\\left( {0.25} \\right)\\left( {{{2I} \\over C}} \\right) + \\left( {0.75} \\right)\\left( {{I \\over C}} \\right)$$<br><br/>\n$$\\left( {1.25} \\right)\\left( {{I \\over C}} \\right)$$<br><br>\n$$ \\therefore $$ Force = P × (Area) = 20.83 × 10<sup>–8</sup> N",
+    "solution": "Radiation pressure for 100% reflection = $${{2I} \\over C}$$<br><br>\nRadiation pressure for 0% reflection = $${I \\over C}$$<br><br>\nHence, in given case, radiation pressure <br><br/>\n = $$\\left( {0.25} \\right)\\left( {{{2I} \\over C}} \\right) + \\left( {0.75} \\right)\\left( {{I \\over C}} \\right)$$<br><br/>\n$$\\left( {1.25} \\right)\\left( {{I \\over C}} \\right)$$<br><br>\n$$ \\therefore $$ Force = P \u00d7 (Area) = 20.83 \u00d7 10<sup>\u20138</sup> N",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "OGDauNWQqHAueUxnYl6MR",
     "questionNumber": 11,
-    "questionText": "The magnetic field of a plane electromagnetic\nwave is given by :<br>\n$$$\\overline B  = {B_0}\\widehat i\\left[ {\\cos (kz - \\omega t)} \\right] + {B_i}\\widehat j\\cos (kz + \\omega t)$$$\nB<sub>0</sub> = 3 × 10<sup>–5</sup> T and B1 = 2 × 10<sup>–6</sup> T.\n<br>The rms\nvalue of the force experienced by a stationary\ncharge Q = 10<sup>–4</sup> C at z = 0 is closest to :",
+    "questionText": "The magnetic field of a plane electromagnetic\nwave is given by :<br>\n$$$\\overline B  = {B_0}\\widehat i\\left[ {\\cos (kz - \\omega t)} \\right] + {B_i}\\widehat j\\cos (kz + \\omega t)$$$\nB<sub>0</sub> = 3 \u00d7 10<sup>\u20135</sup> T and B1 = 2 \u00d7 10<sup>\u20136</sup> T.\n<br>The rms\nvalue of the force experienced by a stationary\ncharge Q = 10<sup>\u20134</sup> C at z = 0 is closest to :",
     "options": [
       "0.6 N",
       "0.9 N",
-      "3 × 10<sup>–2</sup> N",
+      "3 \u00d7 10<sup>\u20132</sup> N",
       "0.1 N"
     ],
     "correctOption": 0,

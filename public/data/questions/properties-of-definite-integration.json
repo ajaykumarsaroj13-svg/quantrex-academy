@@ -19,7 +19,7 @@
     "difficulty": "easy",
     "solution": "<p>Let</p>\n<p>$$ I=\\int_{0}^{2}\\frac{1}{3^x+3}\\,dx $$</p>\n<p>We will simplify the integrand first.</p>\n<p>Since</p>\n<p>$$ 3^x+3=3(3^{x-1}+1), $$</p>\n<p>this form is not immediately very helpful. So let us use the substitution</p>\n<p>$$ 3^x=t $$</p>\n<p>Then,</p>\n<p>$$ t=3^x \\quad \\Rightarrow \\quad \\frac{dt}{dx}=3^x\\ln 3=t\\ln 3 $$</p>\n<p>So,</p>\n<p>$$ dx=\\frac{dt}{t\\ln 3} $$</p>\n<p>Now change the limits:</p>\n<ul>\n<li><p>When $x=0$, $t=3^0=1$</p></li>\n<li><p>When $x=2$, $t=3^2=9$</p></li>\n</ul>\n<p>Thus,</p>\n<p>$$ I=\\int_{1}^{9}\\frac{1}{t+3}\\cdot \\frac{1}{t\\ln 3}\\,dt $$</p>\n<p>$$ I=\\frac{1}{\\ln 3}\\int_{1}^{9}\\frac{1}{t(t+3)}\\,dt $$</p>\n<p>Now use partial fractions:</p>\n<p>$$ \\frac{1}{t(t+3)}=\\frac{A}{t}+\\frac{B}{t+3} $$</p>\n<p>So,</p>\n<p>$$ 1=A(t+3)+Bt $$</p>\n<p>$$ 1=(A+B)t+3A $$</p>\n<p>Comparing coefficients:</p>\n<p>$$ A+B=0,\\qquad 3A=1 $$</p>\n<p>Hence,</p>\n<p>$$ A=\\frac{1}{3},\\qquad B=-\\frac{1}{3} $$</p>\n<p>Therefore,</p>\n<p>$$ \\frac{1}{t(t+3)}=\\frac{1}{3}\\left(\\frac{1}{t}-\\frac{1}{t+3}\\right) $$</p>\n<p>So,</p>\n<p>$$ I=\\frac{1}{3\\ln 3}\\int_{1}^{9}\\left(\\frac{1}{t}-\\frac{1}{t+3}\\right)\\,dt $$</p>\n<p>Now integrate:</p>\n<p>$$ I=\\frac{1}{3\\ln 3}\\left[\\ln t-\\ln(t+3)\\right]_{1}^{9} $$</p>\n<p>$$ I=\\frac{1}{3\\ln 3}\\left[\\ln\\frac{t}{t+3}\\right]_{1}^{9} $$</p>\n<p>Substitute the limits:</p>\n<p>$$ I=\\frac{1}{3\\ln 3}\\left(\\ln\\frac{9}{12}-\\ln\\frac{1}{4}\\right) $$</p>\n<p>$$ I=\\frac{1}{3\\ln 3}\\left(\\ln\\frac{3}{4}-\\ln\\frac{1}{4}\\right) $$</p>\n<p>$$ I=\\frac{1}{3\\ln 3}\\ln 3 $$</p>\n<p>$$ I=\\frac{1}{3} $$</p>\n<p>So, the value of the definite integral is</p>\n<p>$$ \\boxed{\\frac{1}{3}} $$</p>\n<p>Hence, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option B}} $$</p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -290,7 +290,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -298,12 +298,12 @@
     "difficulty": "medium",
     "solution": "<p>Since the coefficients $a,b,c$ are real, complex roots occur in conjugate pairs.</p>\n<p>Given two roots are:</p>\n<p>$$ \\alpha=1,\\qquad \\beta=1+i\\sqrt{2} $$</p>\n<p>So the third root must be:</p>\n<p>$$ 1-i\\sqrt{2} $$</p>\n<p>Hence the cubic polynomial is:</p>\n<p>$$ x^3+ax^2+bx+c=(x-1)\\bigl(x-(1+i\\sqrt{2})\\bigr)\\bigl(x-(1-i\\sqrt{2})\\bigr) $$</p>\n<p>Now first multiply the conjugate factors:</p>\n<p>$$ \\bigl(x-(1+i\\sqrt{2})\\bigr)\\bigl(x-(1-i\\sqrt{2})\\bigr) $$</p>\n<p>This is of the form:</p>\n<p>$$ (A-iB)(A+iB)=A^2+B^2 $$</p>\n<p>with</p>\n<p>$$ A=x-1,\\qquad B=\\sqrt{2} $$</p>\n<p>So,</p>\n<p>$$ \\bigl(x-(1+i\\sqrt{2})\\bigr)\\bigl(x-(1-i\\sqrt{2})\\bigr) =(x-1)^2+2 $$</p>\n<p>Therefore,</p>\n<p>$$ x^3+ax^2+bx+c=(x-1)\\bigl((x-1)^2+2\\bigr) $$</p>\n<p>Let $y=x-1$. Then:</p>\n<p>$$ (x-1)\\bigl((x-1)^2+2\\bigr)=(x-1)^3+2(x-1) $$</p>\n<p>Now expand:</p>\n<p>$$ (x-1)^3=x^3-3x^2+3x-1 $$</p>\n<p>So,</p>\n<p>$$ x^3+ax^2+bx+c=x^3-3x^2+3x-1+2x-2 $$</p>\n<p>$$ =x^3-3x^2+5x-3 $$</p>\n<p>Now evaluate:</p>\n<p>$$ \\int_{-1}^{1}(x^3+ax^2+bx+c)\\,dx = \\int_{-1}^{1}(x^3-3x^2+5x-3)\\,dx $$</p>\n<p>Using symmetry:</p>\n<ul>\n<li>$x^3$ is an odd function, so</li>\n</ul>\n<p>$$ \\int_{-1}^{1}x^3\\,dx=0 $$</p>\n<ul>\n<li>$5x$ is also odd, so</li>\n</ul>\n<p>$$ \\int_{-1}^{1}5x\\,dx=0 $$</p>\n<p>Thus,</p>\n<p>$$ \\int_{-1}^{1}(x^3-3x^2+5x-3)\\,dx = \\int_{-1}^{1}(-3x^2-3)\\,dx $$</p>\n<p>Now,</p>\n<p>$$ \\int_{-1}^{1}x^2\\,dx=\\left[\\frac{x^3}{3}\\right]_{-1}^{1}=\\frac13-\\left(-\\frac13\\right)=\\frac23 $$</p>\n<p>Therefore,</p>\n<p>$$ \\int_{-1}^{1}(-3x^2)\\,dx=-3\\cdot \\frac23=-2 $$</p>\n<p>Also,</p>\n<p>$$ \\int_{-1}^{1}(-3)\\,dx=-3(2)=-6 $$</p>\n<p>So total value:</p>\n<p>$$ -2-6=-8 $$</p>\n<p>Hence,</p>\n<p>$$ \\int_{-1}^{1}\\left(x^3+ax^2+bx+c\\right)\\,dx=-8 $$</p>\n<p>The correct option is:</p>\n<p>$$ \\boxed{-8} $$</p>\n<p>So, Option C is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnswhurx",
     "questionNumber": 58,
-    "questionText": "<p>Let $\\int\\limits_{-2}^2(|\\sin x|+[x \\sin x]) d x=2(3-\\cos 2)+\\beta$, where [ ⋅ ] is the greatest integer function. Then $\\beta \\sin \\left(\\frac{\\beta}{2}\\right)$ equals:</p>\n",
+    "questionText": "<p>Let $\\int\\limits_{-2}^2(|\\sin x|+[x \\sin x]) d x=2(3-\\cos 2)+\\beta$, where [ \u22c5 ] is the greatest integer function. Then $\\beta \\sin \\left(\\frac{\\beta}{2}\\right)$ equals:</p>\n",
     "options": [
       "<p>1</p>\n",
       "<p>2</p>\n",
@@ -378,7 +378,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -386,7 +386,7 @@
     "difficulty": "medium",
     "solution": "<p>Let</p>\n<p>$$ I=\\int_{-\\frac{\\pi}{4}}^{\\frac{\\pi}{4}} \\frac{32\\cos^4 x}{1+e^{\\sin x}}\\,dx $$</p>\n<p>We will use the standard property:</p>\n<p>If</p>\n<p>$$ I=\\int_{-a}^{a} f(x)\\,dx, $$</p>\n<p>then</p>\n<p>$$ I=\\int_{-a}^{a} f(-x)\\,dx $$</p>\n<p>and hence</p>\n<p>$$ 2I=\\int_{-a}^{a} \\bigl(f(x)+f(-x)\\bigr)\\,dx $$</p>\n<p>Now here,</p>\n<p>$$ f(x)=\\frac{32\\cos^4 x}{1+e^{\\sin x}} $$</p>\n<p>So,</p>\n<p>$$ f(-x)=\\frac{32\\cos^4(-x)}{1+e^{\\sin(-x)}} $$</p>\n<p>Using $\\cos(-x)=\\cos x$ and $\\sin(-x)=-\\sin x$,</p>\n<p>$$ f(-x)=\\frac{32\\cos^4 x}{1+e^{-\\sin x}} $$</p>\n<p>Therefore,</p>\n<p>$$ f(x)+f(-x) = 32\\cos^4 x\\left(\\frac{1}{1+e^{\\sin x}}+\\frac{1}{1+e^{-\\sin x}}\\right) $$</p>\n<p>Now simplify the bracket:</p>\n<p>$$ \\frac{1}{1+e^{\\sin x}}+\\frac{1}{1+e^{-\\sin x}} $$</p>\n<p>Let $t=e^{\\sin x}$. Then $e^{-\\sin x}=\\frac{1}{t}$. So,</p>\n<p>$$ \\frac{1}{1+t}+\\frac{1}{1+\\frac{1}{t}} = \\frac{1}{1+t}+\\frac{t}{1+t} = 1 $$</p>\n<p>Hence,</p>\n<p>$$ f(x)+f(-x)=32\\cos^4 x $$</p>\n<p>So,</p>\n<p>$$ 2I=\\int_{-\\frac{\\pi}{4}}^{\\frac{\\pi}{4}} 32\\cos^4 x\\,dx $$</p>\n<p>Thus,</p>\n<p>$$ I=16\\int_{-\\frac{\\pi}{4}}^{\\frac{\\pi}{4}} \\cos^4 x\\,dx $$</p>\n<p>Since $\\cos^4 x$ is an even function,</p>\n<p>$$ I=32\\int_{0}^{\\frac{\\pi}{4}} \\cos^4 x\\,dx $$</p>\n<p>Now use the identity</p>\n<p>$$ \\cos^4 x=\\left(\\cos^2 x\\right)^2 =\\left(\\frac{1+\\cos 2x}{2}\\right)^2 $$</p>\n<p>which gives</p>\n<p>$$ \\cos^4 x=\\frac{3+4\\cos 2x+\\cos 4x}{8} $$</p>\n<p>Therefore,</p>\n<p>$$ I=32\\int_0^{\\frac{\\pi}{4}} \\frac{3+4\\cos 2x+\\cos 4x}{8}\\,dx $$</p>\n<p>$$ I=4\\int_0^{\\frac{\\pi}{4}} (3+4\\cos 2x+\\cos 4x)\\,dx $$</p>\n<p>Now integrate termwise:</p>\n<p>$$ \\int 3\\,dx=3x,\\qquad \\int 4\\cos 2x\\,dx=2\\sin 2x,\\qquad \\int \\cos 4x\\,dx=\\frac{\\sin 4x}{4} $$</p>\n<p>So,</p>\n<p>$$ I=4\\left[3x+2\\sin 2x+\\frac{\\sin 4x}{4}\\right]_0^{\\frac{\\pi}{4}} $$</p>\n<p>At $x=\\frac{\\pi}{4}$,</p>\n<p>$$ 3x=\\frac{3\\pi}{4},\\qquad \\sin 2x=\\sin \\frac{\\pi}{2}=1,\\qquad \\sin 4x=\\sin \\pi=0 $$</p>\n<p>At $x=0$,</p>\n<p>$$ 3x=0,\\qquad \\sin 0=0 $$</p>\n<p>Hence,</p>\n<p>$$ I=4\\left(\\frac{3\\pi}{4}+2\\right) $$</p>\n<p>$$ I=3\\pi+8 $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{3\\pi+8} $$</p>\n<p>Hence, Option B is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnsik61b",
@@ -428,7 +428,7 @@
     "subject": "Mathematics",
     "topic": "properties-of-definite-integration",
     "difficulty": "medium",
-    "solution": "<p>The function $\\boldsymbol{f}(\\boldsymbol{x})$ is continuous at $\\boldsymbol{x}=\\frac{\\boldsymbol{\\pi}}{2}$ where </p>\n<p>$\\boldsymbol{f}(\\boldsymbol{x})=\\left\\{\\begin{array}{ll}\\frac{1}{3} & ; x \\leqslant \\frac{\\pi}{2} \\\\ \\frac{b(1-\\sin x)}{(\\boldsymbol{\\pi}-2 x)^2} & ; x>\\frac{\\pi}{2}\\end{array} \\cdots(i)\\right.$.</p>\n<p>We observe the LHL from equation $(i)$ :</p>\n<p>$$ \\lim\\limits_{x \\rightarrow\\left(\\frac{\\pi}{2}\\right)^{-}} f(x)=f\\left(\\frac{\\pi}{2}\\right)=\\frac{1}{3} \\ldots \\ldots(i i) $$</p>\n<p>We must have the RHL from equation (i) to be $\\frac{1}{3}$ for the function $\\boldsymbol{f}(\\boldsymbol{x})$ to be continuous at $\\boldsymbol{x}=\\frac{\\boldsymbol{\\pi}}{2}$ :</p>\n<p>$$ \\lim\\limits_{\\boldsymbol{x} \\rightarrow\\left(\\frac{\\boldsymbol{\\pi}}{2}\\right)^{+}} \\boldsymbol{f ( x )}=\\frac{1}{3} \\Rightarrow \\lim\\limits _{\\boldsymbol{x} \\rightarrow\\left(\\frac{\\boldsymbol{\\pi}}{2}\\right)^{+}} \\frac{\\boldsymbol{b}(1-\\sin \\boldsymbol{x})}{(\\boldsymbol{\\pi}-2 x)^2}=\\frac{1}{3} \\ldots \\ldots(\\boldsymbol{i i i}) $$</p>\n<p>$$\\Rightarrow $$ $\\lim\\limits_{x \\rightarrow\\left(\\frac{\\boldsymbol{\\pi}}{2}\\right)^{+}} \\frac{\\boldsymbol{b}(1-\\sin \\boldsymbol{x})}{(\\boldsymbol{\\pi}-2 \\boldsymbol{x})^2}=\\frac{0}{0}$ format $\\leftarrow$ Apply L'hôpital's rule</p>\n<p>$$\\Rightarrow $$ $\\lim\\limits_{x \\rightarrow\\left(\\frac{\\boldsymbol{\\pi}}{2}\\right)^{+}} \\frac{b \\cos \\boldsymbol{x}}{4(\\boldsymbol{\\pi}-2 \\boldsymbol{x})}=\\frac{0}{0}$ format ค Apply L'hôpital's rule once more</p>\n<p>$$\\Rightarrow $$ $\\lim\\limits_{x \\rightarrow\\left(\\frac{\\pi}{2}\\right)^{+}} \\frac{b \\sin x}{8}=\\frac{b}{8} \\ldots \\ldots(i v)$</p>\n<p>We can mathematically demonstrate conditional continuity of $f(x)$ at $x=\\frac{\\pi}{2}$ from equation (iii) and (iv) :</p>\n<p>$$ \\frac{b}{8}=\\frac{1}{3} \\Rightarrow b=\\frac{8}{3} \\ldots \\ldots(v) $$</p>\n<p>Now, I = $\\int\\limits_0^{3 \\mathrm{~b}-6}\\left|x^2+2 x-3\\right| \\mathrm{d} x$</p>\n<p>$=\\int\\limits_0^{(3)\\left(\\frac{8}{3}\\right)-6}\\left|\\boldsymbol{x}^2+2 \\boldsymbol{x}-3\\right| \\boldsymbol{d} \\boldsymbol{x}$</p>\n<p>$=\\int\\limits_0^2\\left|x^2+2 x-3\\right| d x$</p>\n<p>$=\\int\\limits_0^2|(x+3)(x-1)| d x$</p>\n<p>$\\left\\{\\begin{array}{l}(x+3)(x-1) \\geqslant 0 ; x \\in(-\\infty,-3] \\\\ (x+3)(x-1) \\leqslant 0 ; x \\in[-3,1] \\\\ (x+3)(x-1) \\geqslant 0 ; x \\in[1, \\infty)\\end{array}\\right.$</p>\n<p>$=\\int\\limits_0^1(x+3)(1-x) d x$ $+\\int\\limits_1^2(x+3)(x-1) d x$</p>\n<p>$=\\int\\limits_0^1\\left(3-2 x-x^2\\right) d x$ $+\\int\\limits_1^2\\left(x^2+2 x-3\\right) d x$</p>\n<p>$\\begin{aligned} & =\\left[3 x-x^2-\\frac{x^3}{3}\\right]_0^1 +\\left[\\frac{x^3}{3}+x^2-3 x\\right]_1^2\\end{aligned}$</p>\n<p>$\\begin{aligned} & =\\left(3-1-\\frac{1}{3}\\right)  +\\left(\\frac{8}{3}+4-6\\right)-\\left(\\frac{1}{3}+1-3\\right)\\end{aligned}$</p>\n<p>= 4</p>",
+    "solution": "<p>The function $\\boldsymbol{f}(\\boldsymbol{x})$ is continuous at $\\boldsymbol{x}=\\frac{\\boldsymbol{\\pi}}{2}$ where </p>\n<p>$\\boldsymbol{f}(\\boldsymbol{x})=\\left\\{\\begin{array}{ll}\\frac{1}{3} & ; x \\leqslant \\frac{\\pi}{2} \\\\ \\frac{b(1-\\sin x)}{(\\boldsymbol{\\pi}-2 x)^2} & ; x>\\frac{\\pi}{2}\\end{array} \\cdots(i)\\right.$.</p>\n<p>We observe the LHL from equation $(i)$ :</p>\n<p>$$ \\lim\\limits_{x \\rightarrow\\left(\\frac{\\pi}{2}\\right)^{-}} f(x)=f\\left(\\frac{\\pi}{2}\\right)=\\frac{1}{3} \\ldots \\ldots(i i) $$</p>\n<p>We must have the RHL from equation (i) to be $\\frac{1}{3}$ for the function $\\boldsymbol{f}(\\boldsymbol{x})$ to be continuous at $\\boldsymbol{x}=\\frac{\\boldsymbol{\\pi}}{2}$ :</p>\n<p>$$ \\lim\\limits_{\\boldsymbol{x} \\rightarrow\\left(\\frac{\\boldsymbol{\\pi}}{2}\\right)^{+}} \\boldsymbol{f ( x )}=\\frac{1}{3} \\Rightarrow \\lim\\limits _{\\boldsymbol{x} \\rightarrow\\left(\\frac{\\boldsymbol{\\pi}}{2}\\right)^{+}} \\frac{\\boldsymbol{b}(1-\\sin \\boldsymbol{x})}{(\\boldsymbol{\\pi}-2 x)^2}=\\frac{1}{3} \\ldots \\ldots(\\boldsymbol{i i i}) $$</p>\n<p>$$\\Rightarrow $$ $\\lim\\limits_{x \\rightarrow\\left(\\frac{\\boldsymbol{\\pi}}{2}\\right)^{+}} \\frac{\\boldsymbol{b}(1-\\sin \\boldsymbol{x})}{(\\boldsymbol{\\pi}-2 \\boldsymbol{x})^2}=\\frac{0}{0}$ format $\\leftarrow$ Apply L'h\u00f4pital's rule</p>\n<p>$$\\Rightarrow $$ $\\lim\\limits_{x \\rightarrow\\left(\\frac{\\boldsymbol{\\pi}}{2}\\right)^{+}} \\frac{b \\cos \\boldsymbol{x}}{4(\\boldsymbol{\\pi}-2 \\boldsymbol{x})}=\\frac{0}{0}$ format \u0e04 Apply L'h\u00f4pital's rule once more</p>\n<p>$$\\Rightarrow $$ $\\lim\\limits_{x \\rightarrow\\left(\\frac{\\pi}{2}\\right)^{+}} \\frac{b \\sin x}{8}=\\frac{b}{8} \\ldots \\ldots(i v)$</p>\n<p>We can mathematically demonstrate conditional continuity of $f(x)$ at $x=\\frac{\\pi}{2}$ from equation (iii) and (iv) :</p>\n<p>$$ \\frac{b}{8}=\\frac{1}{3} \\Rightarrow b=\\frac{8}{3} \\ldots \\ldots(v) $$</p>\n<p>Now, I = $\\int\\limits_0^{3 \\mathrm{~b}-6}\\left|x^2+2 x-3\\right| \\mathrm{d} x$</p>\n<p>$=\\int\\limits_0^{(3)\\left(\\frac{8}{3}\\right)-6}\\left|\\boldsymbol{x}^2+2 \\boldsymbol{x}-3\\right| \\boldsymbol{d} \\boldsymbol{x}$</p>\n<p>$=\\int\\limits_0^2\\left|x^2+2 x-3\\right| d x$</p>\n<p>$=\\int\\limits_0^2|(x+3)(x-1)| d x$</p>\n<p>$\\left\\{\\begin{array}{l}(x+3)(x-1) \\geqslant 0 ; x \\in(-\\infty,-3] \\\\ (x+3)(x-1) \\leqslant 0 ; x \\in[-3,1] \\\\ (x+3)(x-1) \\geqslant 0 ; x \\in[1, \\infty)\\end{array}\\right.$</p>\n<p>$=\\int\\limits_0^1(x+3)(1-x) d x$ $+\\int\\limits_1^2(x+3)(x-1) d x$</p>\n<p>$=\\int\\limits_0^1\\left(3-2 x-x^2\\right) d x$ $+\\int\\limits_1^2\\left(x^2+2 x-3\\right) d x$</p>\n<p>$\\begin{aligned} & =\\left[3 x-x^2-\\frac{x^3}{3}\\right]_0^1 +\\left[\\frac{x^3}{3}+x^2-3 x\\right]_1^2\\end{aligned}$</p>\n<p>$\\begin{aligned} & =\\left(3-1-\\frac{1}{3}\\right)  +\\left(\\frac{8}{3}+4-6\\right)-\\left(\\frac{1}{3}+1-3\\right)\\end{aligned}$</p>\n<p>= 4</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -801,7 +801,7 @@
     "difficulty": "hard",
     "solution": "<p><strong>Step 1</strong>: Ensure the innermost function is greater than zero:  </p>\n<p>$    \\log_6(3 + 4x - x^2) > 1    $</p></p>\n<p><p><strong>Step 2</strong>: Simplify the inequality from Step 1:</p>\n<p>$    3 + 4x - x^2 > 6 \\implies x^2 - 4x + 3 < 0    $</p></p>\n<p><p><strong>Step 3</strong>: Solve the quadratic inequality:</p>\n<p>$    (x - 1)(x - 3) < 0    $</p>\n<p>This inequality indicates that $ x $ must lie between the roots, giving the interval $ x \\in (1, 3) $.</p></p>\n\n<p>With the domain of $ f(x) $ identified as $ (a, b) = (1, 3) $, we calculate the definite integral over $[0, b-a]$:</p>\n<h3>Calculate the Integral:</h3>\n<p>Given:</p>\n<p>$ \\int_0^{b-a} [x^2] \\, dx $</p>\n<p>For $ b - a = 2 $, we compute:</p>\n<p>$ \\int_1^2 [x^2] \\, dx = \\int_1^{\\sqrt{2}} 1 \\, dx + \\int_{\\sqrt{2}}^{\\sqrt{3}} 2 \\, dx + \\int_{\\sqrt{3}}^2 3 \\, dx  $</p>\n<h3>Computation of Each Integral Segment:</h3>\n\n<p><p>$\\int_1^{\\sqrt{2}} 1 \\, dx = \\sqrt{2} - 1$</p></p>\n<p><p>$\\int_{\\sqrt{2}}^{\\sqrt{3}} 2 \\, dx = 2(\\sqrt{3} - \\sqrt{2})$</p></p>\n<p><p>$\\int_{\\sqrt{3}}^2 3 \\, dx = 3(2 - \\sqrt{3})$</p></p>\n\n<p>Summing these, we have:</p>\n<p>$ 5 - \\sqrt{2} - \\sqrt{3} $</p>\n<h3>Conclusion:</h3>\n<p>The values for $ p, q, $ and $ r $ are $ p = 5 $, $ q = 2 $, and $ r = 3 $, with the greatest common divisor of these numbers being 1. Therefore, adding them together gives:</p>\n<p>$  p + q + r = 5 + 2 + 3 = 10 $</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "m9fnusw6",
@@ -964,7 +964,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\mathrm{I}=2 \\int_\\limits0^{\\frac{\\pi}{2}} \\underbrace{\\sin ^2 \\mathrm{x} \\cdot \\sqrt{\\frac{\\pi x}{2}-\\mathrm{x}^2}}_{\\mathrm{i}_1}-\\int_\\limits0^{\\frac{\\pi}{2}} \\mathrm{~g}(\\mathrm{x}) \\mathrm{dx}$$</p>\n<p>$$\\text { Let } I_1=\\int_\\limits0^{\\frac{\\pi}{2}} \\sin ^2 x \\sqrt{\\left(\\frac{\\pi}{4}\\right)^2-\\left(x-\\frac{\\pi}{4}\\right)^2} \\quad \\text { (making perfect square) }$$</p>\n<p>apply kings</p>\n<p>$$I_1=\\int_\\limits0^{\\frac{\\pi}{2}} \\cos ^2 x \\sqrt{\\left(\\frac{\\pi}{4}\\right)^2-\\left(\\frac{\\pi}{2}-x\\right)^2}$$</p>\n<p>add both</p>\n<p>$$2 I_1=\\int_\\limits0^{\\frac{\\pi}{2}} \\sqrt{\\left(\\frac{\\pi}{4}\\right)^2-\\left(x-\\frac{\\pi}{4}\\right)^2}$$</p>\n<p>i.e. $$2 I_1=\\int_\\limits0^{\\frac{\\pi}{2}} g(x)$$</p>\n<p>Now $$I=2 I_1-\\int_\\limits0^{\\frac{\\pi}{2}} g(x)=0$$</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "NUMERICAL"
   },
   {
@@ -982,7 +982,7 @@
     "difficulty": "hard",
     "solution": "<p>Now $$I_1=\\int_\\limits0^{\\frac{\\pi}{2}} f(x) \\cdot g(x) d x=\\frac{1}{2} \\int_\\limits0^{\\frac{\\pi}{2}} g(x) d x$$</p>\n<p>i.e. $$\\frac{1}{2} \\int_0^{\\frac{\\pi}{2}} \\sqrt{\\left(\\frac{\\pi}{4}\\right)^2-\\left(x-\\frac{\\pi}{4}\\right)^2} d x$$</p>\n<p>Using $$\\int \\sqrt{a^2-x^2}=\\frac{1}{2}\\left(x \\sqrt{a^2-x^2}+a^2 \\sin ^{-1}\\left(\\frac{x}{a}\\right)\\right)+C$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\frac{1}{2}\\left[\\frac{\\left(x-\\frac{\\pi}{4}\\right)}{2} \\sqrt{\\frac{\\pi x}{2}-x^2}+\\frac{\\frac{\\pi^2}{16}}{2} \\sin ^{-1}\\left(\\frac{x-\\frac{\\pi}{4}}{\\frac{\\pi}{4}}\\right)\\right]_0^{\\pi / 2} \\\\\n& \\Rightarrow \\frac{1}{2}\\left[\\left(0+\\frac{\\pi^3}{64}\\right)-\\left(0+\\left(\\frac{-\\pi^3}{64}\\right)\\right)\\right] \\\\\n& \\Rightarrow \\frac{1}{2} \\times \\frac{\\pi^3}{32}\n\\end{aligned}$$</p>\n<p>Now $$\\frac{16}{\\pi^3} \\times \\frac{\\pi^3}{64}=\\frac{1}{4}=0.25$$</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "NUMERICAL"
   },
   {
@@ -1502,7 +1502,7 @@
     "difficulty": "medium",
     "solution": "<p>First, let's rewrite the given integral using the given form of the Beta function. The given integral is:</p>\n\n<p>\n\n<p>$$\\int_\\limits0^1\\left(1-x^{10}\\right)^{20} \\mathrm{~d} x$$</p>\n\n</p>\n\n<p>To use the Beta function, let us make a substitution. Let $ x^{10} = t $. Then, $ dx = \\frac{1}{10}t^{-\\frac{9}{10}} dt $ or $ dx = \\frac{1}{10} t^{-\\frac{9}{10}} dt $. The limits of integration change as follows: when $ x = 0 $, $ t = 0 $, and when $ x = 1 $, $ t = 1 $.</p>\n\n<p>Substituting these into the integral, we have:</p>\n\n<p>\n\n<p>$$\\int_\\limits0^1 (1 - t)^{20} \\cdot \\frac{1}{10} t^{-\\frac{9}{10}} dt$$</p>\n\n</p>\n\n<p>which simplifies to:</p>\n\n<p>\n\n<p>$$\\frac{1}{10} \\int_\\limits0^1 (1 - t)^{20} t^{-\\frac{9}{10}} dt$$</p>\n\n</p>\n\n<p>We recognize this integral as a Beta function $ \\beta(m, n) $ where $ m = 1 - \\frac{9}{10} = \\frac{1}{10} $ and $ n = 20 + 1 = 21 $.</p>\n\n<p>Therefore, we can write this as:</p>\n\n<p>\n\n<p>$$\\frac{1}{10} \\beta \\left( \\frac{1}{10}, 21 \\right)$$</p>\n\n</p>\n\n<p>Comparing this to $ a \\times \\beta(b, c) $, we have $ a = \\frac{1}{10} $, $ b = \\frac{1}{10} $, and $ c = 21 $.</p>\n\n<p>Now we calculate $ 100(a + b + c) $:</p>\n\n<p>\n\n<p>$$100 \\left( \\frac{1}{10} + \\frac{1}{10} + 21 \\right) = 100 \\left( \\frac{1}{10} + \\frac{1}{10} + 21 \\right) = 100 \\left( \\frac{1}{5} + 21 \\right) = 100 \\left( \\frac{1}{5} + \\frac{105}{5} \\right) = 100 \\left( \\frac{106}{5} \\right) = 100 \\times 21.2 = 2120$$</p>\n\n</p>\n\n<p>So, the answer is Option D, 2120.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "lv9s20mx",
@@ -3038,7 +3038,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -3046,7 +3046,7 @@
     "difficulty": "hard",
     "solution": "<p>Given,</p>\n<p>$$\\int_0^2 {\\left( {\\sqrt {2x}  - \\sqrt {2x - {x^2}} } \\right)dx = \\int_0^1 {\\left( {1 - \\sqrt {1 - {y^2}}  - {{{y^2}} \\over 2}} \\right)dy + \\int_1^2 {\\left( {2 - {{{y^2}} \\over 2}} \\right)dy + I} } } $$</p>\n<p>Now,</p>\n<p>$$L.H.S. = \\int_0^2 {\\left( {\\sqrt {2x}  - \\sqrt {2x - {x^2}} } \\right)dx} $$</p>\n<p>$$ = \\sqrt 2 \\int_0^2 {{x^{1/2}}dx - \\int_0^2 {\\sqrt { - ({x^2} - 2x)} dx} } $$</p>\n<p>$$ = \\sqrt 2 \\left[ {{{{x^{3/2}}} \\over {{3 \\over 2}}}} \\right]_0^2 - \\int_0^2 {\\sqrt { - \\left[ {{{(x - 1)}^2} - 1} \\right]} dx} $$</p>\n<p>$$ = \\sqrt 2  \\times {2 \\over 3}\\left[ {{2^{{3 \\over 2}}}} \\right] - \\int_0^2 {\\sqrt {1 - {{(x - 1)}^2}} dx} $$</p>\n<p>[We know,</p>\n<p>$$\\sqrt {{a^2} - {x^2}}  = {x \\over 2}\\sqrt {{a^2} - {x^2}}  + {{{a^2}} \\over 2}{\\sin ^{ - 1}}\\left( {{x \\over a}} \\right) + C$$]</p>\n<p>$$ = {{2\\sqrt 2  \\times 2\\sqrt 2 } \\over 3} - \\left[ {{{x - 1} \\over 2}\\sqrt {1 - {{(x - 1)}^2}}  + {1 \\over 2}{{\\sin }^{ - 1}}\\left( {{{x - 1} \\over 1}} \\right)} \\right]_0^2$$</p>\n<p>$$ = {8 \\over 3} - \\left[ {{1 \\over 2}\\sqrt {1 - 1}  + {1 \\over 2}{{\\sin }^{ - 1}}(1) - \\left( {\\left( {{1 \\over 2}} \\right)\\sqrt {1 - 1}  + {1 \\over 2}{{\\sin }^{ - 1}}( - 1)} \\right)} \\right]$$</p>\n<p>$$ = {8 \\over 3} - {1 \\over 2}{\\sin ^{ - 1}}\\left( {\\sin {\\pi  \\over 2}} \\right) + {1 \\over 2}{\\sin ^{ - 1}}\\left( {\\sin {{3\\pi } \\over 2}} \\right)$$</p>\n<p>$$ = {8 \\over 3} - {1 \\over 2}\\,.\\,{\\pi  \\over 2} + {1 \\over 2}\\,.\\,{{3\\pi } \\over 2}$$</p>\n<p>$$ = {8 \\over 3} - {\\pi  \\over 4} + {{3\\pi } \\over 4}$$</p>\n<p>$$ = {8 \\over 3} - {{2\\pi } \\over 4}$$</p>\n<p>$$ = {8 \\over 3} - {\\pi  \\over 2}$$</p>\n<p>Now in R.H.S.,</p>\n<p>$$\\int_0^1 {\\left( {1 - \\sqrt {1 - {y^2}}  - {{{y^2}} \\over 2}} \\right)dy} $$</p>\n<p>$$ = \\int_0^1 {dy - \\int_0^1 {\\sqrt {1 - {y^2}}  - \\int_0^1 {{{{y^2}} \\over 2}dy} } } $$</p>\n<p>$$ = \\left[ y \\right]_0^1 - \\left[ {{y \\over 2}\\sqrt {1 - {y^2}}  + {1 \\over 2}{{\\sin }^{ - 1}}\\left( {{y \\over 1}} \\right)} \\right]_0^1 - \\left[ {{{{y^3}} \\over 6}} \\right]_0^1$$</p>\n<p>$$ = 1 - \\left[ {\\left( {{1 \\over 2}\\sqrt {1 - 0}  + {1 \\over 2}{{\\sin }^{ - 1}}(1)} \\right) - \\left( {0 + {{\\sin }^{ - 1}}(0)} \\right)} \\right] - {1 \\over 6}$$</p>\n<p>$$ = 1 - {1 \\over 2}{\\sin ^{ - 1}}\\left( {\\sin {\\pi  \\over 2}} \\right) - {1 \\over 6}$$</p>\n<p>$$ = 1 - {1 \\over 2} \\times {\\pi  \\over 2} - {1 \\over 6}$$</p>\n<p>$$ = {5 \\over 6} - {\\pi  \\over 4}$$</p>\n<p>Now,</p>\n<p>$$\\int_1^2 {\\left( {2 - {{{y^2}} \\over 2}} \\right)dy} $$</p>\n<p>$$ = \\left[ {2y - {{{y^3}} \\over 6}} \\right]_1^2$$</p>\n<p>$$ = \\left[ {\\left( {4 - {8 \\over 6}} \\right) - \\left( {2 - {1 \\over 6}} \\right)} \\right]$$</p>\n<p>$$ = 4 - {8 \\over 6} - 2 + {1 \\over 6}$$</p>\n<p>$$ = 2 - {7 \\over 6}$$</p>\n<p>$$ = {5 \\over 6}$$</p>\n<p>$$\\therefore$$ $$R.H.S. = {5 \\over 6} - {\\pi  \\over 4} + {5 \\over 6} + I$$</p>\n<p>As $$L.H.S. = R.H.S.$$</p>\n<p>$$ \\Rightarrow {8 \\over 3} - {\\pi  \\over 2} = {{10} \\over 6} - {\\pi  \\over 4} + I$$</p>\n<p>$$ \\Rightarrow {{10} \\over 6} - {8 \\over 3} + I =  - {\\pi  \\over 2} + {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow {{ - 6} \\over 6} + I =  - {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow I = 1 - {\\pi  \\over 4}$$</p>\n<p>From option (c)</p>\n<p>$$\\int_0^1 {(1 - \\sqrt {1 - {y^2}} )dy} $$</p>\n<p>$$ = \\left[ y \\right]_0^1 - \\int_0^1 {(\\sqrt {1 - {y^2}} )dy} $$</p>\n<p>$$ = 1 - \\left[ {{y \\over 2}\\sqrt {1 - {y^2}}  + {1 \\over 2}{{\\sin }^{ - 1}}\\left( {{y \\over 1}} \\right)} \\right]_0^1$$</p>\n<p>$$ = 1 - \\left[ {{1 \\over 2}\\sqrt {1 - 1}  + {1 \\over 2}{{\\sin }^{ - 1}}(1) - \\left( {0 + {1 \\over 2}{{\\sin }^{ - 1}}(0)} \\right)} \\right]$$</p>\n<p>$$ = 1 - \\left[ {{1 \\over 2} \\times {\\pi  \\over 2} - 0} \\right]$$</p>\n<p>$$ = 1 - {\\pi  \\over 4} = I$$</p>\n<p>$$\\therefore$$ Option (c) is the right answer.</p>\n<p>Note :</p>\n<p>There is no way to guess which option is correct. You have to check all the options to see which give value equal to I.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1l544p8qe",
@@ -3616,7 +3616,7 @@
     "subject": "Mathematics",
     "topic": "properties-of-definite-integration",
     "difficulty": "medium",
-    "solution": "x<sup>2</sup> – x – 2 = (x - 2)(x + 1)\n<br><br><img src=\"https://imagex.cdn.examgoal.net/1klzflzz5/cdbd0f34-52d3-4861-9cbf-6043d4f10082/dab97420-7f6a-11eb-8801-6b33ce71ae31/file-1klzflzz6-324w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Evening Shift Mathematics - Definite Integration Question 233 English Explanation\">\n<br><br>$$\\int\\limits_{ - 2}^2 {3|{x^2} - x - 2|dx} $$<br><br>$$ = 3\\int\\limits_{ - 2}^2 {|{x^2} - x - 2|dx} $$<br><br>$$ = 3\\left[ {\\int\\limits_{ - 2}^{ - 1} {\\left( {{x^2} - x - 2} \\right)dx}  + \\int\\limits_{ - 1}^2 { - \\left( {{x^2} - x - 2} \\right)dx} } \\right]$$<br><br>$$ = 3\\left[ {\\left. {\\left( {{{{x^3}} \\over 3} - {{{x^2}} \\over 2} - 2x} \\right)} \\right|_{ - 2}^{ - 1} - \\left( {{{{x^3}} \\over 3} - {{{x^2}} \\over 2} - 2x} \\right)_{ - 1}^2} \\right]$$<br><br>$$ = 3\\left[ {7 - {2 \\over 3}} \\right]$$<br><br>= 19",
+    "solution": "x<sup>2</sup> \u2013 x \u2013 2 = (x - 2)(x + 1)\n<br><br><img src=\"https://imagex.cdn.examgoal.net/1klzflzz5/cdbd0f34-52d3-4861-9cbf-6043d4f10082/dab97420-7f6a-11eb-8801-6b33ce71ae31/file-1klzflzz6-324w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Evening Shift Mathematics - Definite Integration Question 233 English Explanation\">\n<br><br>$$\\int\\limits_{ - 2}^2 {3|{x^2} - x - 2|dx} $$<br><br>$$ = 3\\int\\limits_{ - 2}^2 {|{x^2} - x - 2|dx} $$<br><br>$$ = 3\\left[ {\\int\\limits_{ - 2}^{ - 1} {\\left( {{x^2} - x - 2} \\right)dx}  + \\int\\limits_{ - 1}^2 { - \\left( {{x^2} - x - 2} \\right)dx} } \\right]$$<br><br>$$ = 3\\left[ {\\left. {\\left( {{{{x^3}} \\over 3} - {{{x^2}} \\over 2} - 2x} \\right)} \\right|_{ - 2}^{ - 1} - \\left( {{{{x^3}} \\over 3} - {{{x^2}} \\over 2} - 2x} \\right)_{ - 1}^2} \\right]$$<br><br>$$ = 3\\left[ {7 - {2 \\over 3}} \\right]$$<br><br>= 19",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -4064,7 +4064,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -4073,7 +4073,7 @@
     "solution": "$${\\psi _1}(x) = {e^{ - x}} + x,x \\ge 0$$<br/><br/>$${\\psi _2}(x) = {x^2} - 2x - 2{e^{ - x}} + 2,x \\ge 0$$<br/><br/>$$f(x) = \\int_{ - x}^x {(\\left| t \\right| - {t^2}){e^{ - {t^2}}}dt,\\,x > 0} $$<br/><br/>$$ = 2\\int_0^x {(t - {t^2}){e^{ - {t^2}}}dt} $$ .... (i)<br/><br/>$$g(x) = \\int_0^{{x^2}} {\\sqrt t \\,.\\,{e^{ - t}}dt,x > 0} $$<br/><br/>Put $$t = {z^2} \\Rightarrow dt = 2zdz$$<br/><br/>$$\\therefore$$ $$g(x) = \\int_0^x {z.{e^{ - {z^2}}}.\\,2zdz} $$<br/><br/>$$ = 2\\int_0^x {{z^2}.{e^{ - {z^2}}}dz = 2\\int_0^x {{t^2}.{e^{ - {t^2}}}dt} } $$<br/><br/>$$f'(x) = 2(x - {x^2}){e^{ - {x^2}}} = 2x(1 - x){e^{ - {x^2}}}$$<br/><br/>$$\\therefore$$ f is increasing for x$$\\in$$(0, 1) and f is decreasing for x$$\\in$$(1, $$\\infty$$). Hence, option (d) is incorrect.<br/><br/>Now, $$f(x) + g(x) = 2\\int_0^x {t.{e^{ - {t^2}}}dt} $$<br/><br/>$$ = [ - {e^{ - {t^2}}}]_0^x = ( - {e^{ - {x^2}}}) - ( - 1) = 1 - {e^{ - {x^2}}}$$<br/><br/>$$ \\Rightarrow f(x) + g(x) = 1 - {e^{ - {x^2}}}$$<br/><br/>$$\\therefore$$ $$f(\\sqrt {\\ln 3} ) + g(\\sqrt {\\ln 3} ) = 1 - {e^{ - {{(\\sqrt {\\ln 3} )}^2}}} = 1 - {e^{ - \\ln 3}} = 1 - {1 \\over 3} = {2 \\over 3}$$<br/><br/>Hence, option (a) is incorrect.<br/><br/>$$\\because$$ $${\\psi _1}(x) = {e^{ - x}} + x$$ .... (iii)<br/><br/>$$\\because$$ $$ \\Rightarrow \\psi {'_1}(x) = 1 - {e^{ - x}} < 1$$<br/><br/>Then, for $$\\alpha  \\in (1,x),{\\psi _1}(x) = 1 + \\alpha x$$ does not true for $$\\alpha$$ > 1. So, option (b) is incorrect.<br/><br/>Now, $${\\psi _2}(x) = {x^2} - 2x - 2{e^{ - x}} + 2$$<br/><br/>$$ \\Rightarrow \\psi {'_2}(x) = 2x - 2 + 2{e^{ - x}} = 2(x + {e^{ - x}}) - 2$$<br/><br/>$$ = \\psi {'_2}(x) = 2{\\psi _1}(x) - 2$$ [from Eq. (iii)]<br/><br/>By LMVT,<br/><br/>$$\\psi {'_2}(\\beta ) = {{{\\psi _2}(x) - {\\psi _2}(0)} \\over {x - 0}}$$, for $$\\beta  \\in (0,x)$$<br/><br/>$$ \\Rightarrow {{{\\psi _2}(x) - 0} \\over {x - 0}} = \\psi {'_2}(\\beta ) \\Rightarrow {\\psi _2}(x) = x\\,.\\,\\psi {'_2}(\\beta ) = 2x({\\psi _1}(\\beta ) - 1)$$<br/><br/>Hence, option (c) is correct.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1kufglvzf",
@@ -4087,7 +4087,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -4096,7 +4096,7 @@
     "solution": "For option (a)<br/><br/>$${\\psi _1}(x) = {e^{ - x}} + x$$<br/><br/>$$\\therefore$$ $$\\psi {'_1}(x) = 1 - {e^{ - x}} \\Rightarrow \\psi {'_1}(x) = 0$$<br/><br/>Here, $${\\psi _1}(x)$$ is always increasing.<br/><br/>Now, $${\\psi _1}(x) > 1$$<br/><br/>($$\\because$$ $${\\psi _1}(0) = 1$$)<br/><br/>Thus, option (a) is incorrect.<br/><br/>For option (b)<br/><br/>$${\\psi _2}(x) = {x^2} - 2x - 2{e^{ - x}} + 2$$<br/><br/>$$ \\Rightarrow \\psi {'_2}(x) = 2x - 2 + 2{e^{ - x}}$$<br/><br/>$$ \\Rightarrow \\psi '{'_2}(x) = 2 - 2{e^{ - x}} \\ge 0,\\forall x > 0$$<br/><br/>$$ \\Rightarrow \\psi {'_2}(x)$$ is increasing $$ \\Rightarrow \\psi {'_2}(x) > \\psi {'_2}(0)$$<br/><br/>$$ \\Rightarrow \\psi {'_2}(x) > 0,\\forall x > 0$$<br/><br/>Thus, option (b) is incorrect.<br/><br/>For option (c)<br/><br/>$$f(x) = 2\\int_0^x {(t - {t^2}){e^{ - {t^2}}}dt = ( - {e^{ - {t^2}}})_0^x - 2\\int_0^x {{t^2}.{e^{ - {t^2}}}} dt} $$<br/><br/>$$ = 1 - {e^{ - {x^2}}} - 2\\int_0^x {{t^2}\\left( {1 - {t^2} + {{{t^4}} \\over {2!}} + ...} \\right)dt} $$<br/><br/>$$ = 1 - {e^{ - {x^2}}} - {{2{x^3}} \\over 3} + {{2{x^5}} \\over 5} - {{2{x^7}} \\over {2.7}} + {{2{x^9}} \\over {6.9}}...$$<br/><br/>$$ \\Rightarrow f(x) - 1 + {e^{ - {x^2}}} + {{2{x^3}} \\over 3} - {{2{x^5}} \\over 5} < 0$$ in $$\\left( {0,{1 \\over 2}} \\right)$$<br/><br/>Hence, option (c) is also incorrect.<br/><br/>For option (d)<br/><br/>$$g(x) = \\int_0^{{x^2}} {\\sqrt t .{e^{ - t}}dt} $$<br/><br/>Put $$t = {u^2} \\Rightarrow dt = 2u\\,du$$<br/><br/>$$\\therefore$$ $$g(x) = \\int_x^x {2.{u^2}{e^{ - {u^2}}}du = \\int_0^x {2{u^2}\\left( {1 - {u^2} + {{{u^4}} \\over {2!}}....} \\right)du} } $$<br/><br/>$$g(x) = {{2{x^3}} \\over 3} - {{2{x^5}} \\over 5} + {{2{x^7}} \\over {2.7}} - {{2{x^9}} \\over {9.6}}...$$<br/><br/>$$ \\Rightarrow g(x) - {{2{x^3}} \\over 3} + {{2{x^5}} \\over 5} - {{2{x^7}} \\over {2.7}} \\le 0,\\forall x \\in \\left( {0,{1 \\over 2}} \\right)$$<br/><br/>$$ \\Rightarrow g(x) \\le {{2{x^3}} \\over 3} - {{2{x^5}} \\over 5} + {1 \\over 7}{x^7},\\forall x \\in \\left( {0,{1 \\over 2}} \\right)$$<br/><br/>Hence, option (d) is correct.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1kuffry9g",
@@ -4234,7 +4234,7 @@
   {
     "id": "U4z6G7UL3Nk0YHsoqLjgy2xukf40epci",
     "questionNumber": 56,
-    "questionText": "Suppose f(x) is a polynomial of degree four,\nhaving critical points at –1, 0, 1. If \n<br>T = {x $$ \\in $$ R |\nf(x) = f(0)}, then the sum of squares of all the\nelements of T is :",
+    "questionText": "Suppose f(x) is a polynomial of degree four,\nhaving critical points at \u20131, 0, 1. If \n<br>T = {x $$ \\in $$ R |\nf(x) = f(0)}, then the sum of squares of all the\nelements of T is :",
     "options": [
       "6",
       "2",
@@ -4300,7 +4300,7 @@
   {
     "id": "P3rIEyoJ27C0Cw6PThjgy2xukfaktyu2",
     "questionNumber": 72,
-    "questionText": "Let {x} and [x] denote the fractional part of x and <br>the greatest integer $$ \\le $$ x respectively of a real<br> number x. If $$\\int_0^n {\\left\\{ x \\right\\}dx} ,\\int_0^n {\\left[ x \\right]dx} $$ and 10(n<sup>2</sup> – n), <br>$$\\left( {n \\in N,n &gt; 1} \\right)$$  are three consecutive terms of a G.P., then n is equal to_____.",
+    "questionText": "Let {x} and [x] denote the fractional part of x and <br>the greatest integer $$ \\le $$ x respectively of a real<br> number x. If $$\\int_0^n {\\left\\{ x \\right\\}dx} ,\\int_0^n {\\left[ x \\right]dx} $$ and 10(n<sup>2</sup> \u2013 n), <br>$$\\left( {n \\in N,n &gt; 1} \\right)$$  are three consecutive terms of a G.P., then n is equal to_____.",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -4310,7 +4310,7 @@
     "subject": "Mathematics",
     "topic": "properties-of-definite-integration",
     "difficulty": "medium",
-    "solution": "$$\\int\\limits_0^n {\\left\\{ x \\right\\}} dx = n\\int\\limits_0^1 x dx = n\\left( {{{{x^2}} \\over 2}} \\right)_0^1 = {n \\over 2}$$\n<br><br>[As period of {x} = 1]\n<br><br>$$\\int\\limits_0^n {\\left[ x \\right]} dx = \\int\\limits_0^1 0 dx + \\int\\limits_1^2 1 dx + ... + \\int\\limits_{n - 1}^n {\\left( {n - 1} \\right)} dx$$\n<br><br>= 1 + 2 + 3 + ....+ (n - 1)\n<br><br>= $${{n\\left( {n - 1} \\right)} \\over 2}$$\n<br><br>As $${n \\over 2}$$, $${{n\\left( {n - 1} \\right)} \\over 2}$$, 10(n<sup>2</sup> – n) are in GP.\n<br><br>$$ \\therefore $$ $${\\left[ {{{n\\left( {n - 1} \\right)} \\over 2}} \\right]^2} = {n \\over 2} \\times 10\\left( {{n^2} - n} \\right)$$\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup>\n = 21n\n<br><br>$$ \\Rightarrow $$ n = 21",
+    "solution": "$$\\int\\limits_0^n {\\left\\{ x \\right\\}} dx = n\\int\\limits_0^1 x dx = n\\left( {{{{x^2}} \\over 2}} \\right)_0^1 = {n \\over 2}$$\n<br><br>[As period of {x} = 1]\n<br><br>$$\\int\\limits_0^n {\\left[ x \\right]} dx = \\int\\limits_0^1 0 dx + \\int\\limits_1^2 1 dx + ... + \\int\\limits_{n - 1}^n {\\left( {n - 1} \\right)} dx$$\n<br><br>= 1 + 2 + 3 + ....+ (n - 1)\n<br><br>= $${{n\\left( {n - 1} \\right)} \\over 2}$$\n<br><br>As $${n \\over 2}$$, $${{n\\left( {n - 1} \\right)} \\over 2}$$, 10(n<sup>2</sup> \u2013 n) are in GP.\n<br><br>$$ \\therefore $$ $${\\left[ {{{n\\left( {n - 1} \\right)} \\over 2}} \\right]^2} = {n \\over 2} \\times 10\\left( {{n^2} - n} \\right)$$\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup>\n = 21n\n<br><br>$$ \\Rightarrow $$ n = 21",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -4364,9 +4364,9 @@
     "questionText": "The integral $$\\int\\limits_1^2 {{e^x}.{x^x}\\left( {2 + {{\\log }_e}x} \\right)} dx$$ equals : ",
     "options": [
       "e(4e + 1)\n",
-      "e(2e – 1)",
-      "e(4e – 1)",
-      "4e<sup>2</sup> – 1"
+      "e(2e \u2013 1)",
+      "e(4e \u2013 1)",
+      "4e<sup>2</sup> \u2013 1"
     ],
     "correctOption": 2,
     "correctAnswer": null,
@@ -4398,7 +4398,7 @@
     "subject": "Mathematics",
     "topic": "properties-of-definite-integration",
     "difficulty": "medium",
-    "solution": "I<sub>2</sub> = $$\\int\\limits_0^1 {{{\\left( {1 - {x^{50}}} \\right)}^{101}}} dx$$\n<br><br>I<sub>2</sub> = $$\\int\\limits_0^1 {\\left( {1 - {x^{50}}} \\right){{\\left( {1 - {x^{50}}} \\right)}^{100}}dx} $$\n<br><br>I<sub>2</sub> = $$\\int\\limits_0^1 {{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx}  - \\int\\limits_0^1 {{x^{50}}{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx} $$\n<br><br>I<sub>2</sub> = I<sub>1</sub> - $$\\int\\limits_0^1 {x.{x^{49}}{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx} $$\n<br><br>Now apply IBP\n<br><br>I<sub>2</sub> = I<sub>1</sub> - <br>$$\\left[ {x\\int\\limits_0^1 {{x^{49}}{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx}  - \\int {{{d\\left( x \\right)} \\over {dx}}.\\int {{{d\\left( x \\right)} \\over {dx}}\\int\\limits_0^1 {{x^{49}}{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx} } } } \\right]$$\n<br><br>Let (1 – x<sup>50</sup>) = t\n<br><br>$$ \\Rightarrow $$ -50x<sup>49</sup>dx = dt\n<br><br>I<sub>2</sub> = I<sub>1</sub> - <br>$$\\left[ {x.\\left( { - {1 \\over {50}}} \\right){{{{\\left( {1 - {x^{50}}} \\right)}^{101}}} \\over {101}}} \\right]_0^1$$ - $$ - \\int\\limits_0^1 {\\left( { - {1 \\over {50}}} \\right){{{{\\left( {1 - {x^{50}}} \\right)}^{101}}} \\over {101}}dx} $$\n<br><br>= I<sub>1</sub> - 0 - $${ - {1 \\over {50}}.{1 \\over {101}}{I_2}}$$\n<br><br>I<sub>2</sub> = I<sub>1</sub> - $${1 \\over {5050}}{I_2}$$\n<br><br>$$ \\Rightarrow $$ I<sub>2</sub> + $${1 \\over {5050}}{I_2}$$ = I<sub>1</sub>\n<br><br>$$ \\Rightarrow $$ $${{5051} \\over {5050}}{I_2}$$ = I<sub>1</sub>\n<br><br>$$ \\Rightarrow $$ I<sub>2</sub> = $${{5050} \\over {5051}}$$I<sub>1</sub>\n<br><br>Given I<sub>2</sub>\n = $$\\alpha $$I<sub>1</sub>\n<br><br>$$ \\therefore $$ $$\\alpha $$ = $${{5050} \\over {5051}}$$",
+    "solution": "I<sub>2</sub> = $$\\int\\limits_0^1 {{{\\left( {1 - {x^{50}}} \\right)}^{101}}} dx$$\n<br><br>I<sub>2</sub> = $$\\int\\limits_0^1 {\\left( {1 - {x^{50}}} \\right){{\\left( {1 - {x^{50}}} \\right)}^{100}}dx} $$\n<br><br>I<sub>2</sub> = $$\\int\\limits_0^1 {{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx}  - \\int\\limits_0^1 {{x^{50}}{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx} $$\n<br><br>I<sub>2</sub> = I<sub>1</sub> - $$\\int\\limits_0^1 {x.{x^{49}}{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx} $$\n<br><br>Now apply IBP\n<br><br>I<sub>2</sub> = I<sub>1</sub> - <br>$$\\left[ {x\\int\\limits_0^1 {{x^{49}}{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx}  - \\int {{{d\\left( x \\right)} \\over {dx}}.\\int {{{d\\left( x \\right)} \\over {dx}}\\int\\limits_0^1 {{x^{49}}{{\\left( {1 - {x^{50}}} \\right)}^{100}}dx} } } } \\right]$$\n<br><br>Let (1 \u2013 x<sup>50</sup>) = t\n<br><br>$$ \\Rightarrow $$ -50x<sup>49</sup>dx = dt\n<br><br>I<sub>2</sub> = I<sub>1</sub> - <br>$$\\left[ {x.\\left( { - {1 \\over {50}}} \\right){{{{\\left( {1 - {x^{50}}} \\right)}^{101}}} \\over {101}}} \\right]_0^1$$ - $$ - \\int\\limits_0^1 {\\left( { - {1 \\over {50}}} \\right){{{{\\left( {1 - {x^{50}}} \\right)}^{101}}} \\over {101}}dx} $$\n<br><br>= I<sub>1</sub> - 0 - $${ - {1 \\over {50}}.{1 \\over {101}}{I_2}}$$\n<br><br>I<sub>2</sub> = I<sub>1</sub> - $${1 \\over {5050}}{I_2}$$\n<br><br>$$ \\Rightarrow $$ I<sub>2</sub> + $${1 \\over {5050}}{I_2}$$ = I<sub>1</sub>\n<br><br>$$ \\Rightarrow $$ $${{5051} \\over {5050}}{I_2}$$ = I<sub>1</sub>\n<br><br>$$ \\Rightarrow $$ I<sub>2</sub> = $${{5050} \\over {5051}}$$I<sub>1</sub>\n<br><br>Given I<sub>2</sub>\n = $$\\alpha $$I<sub>1</sub>\n<br><br>$$ \\therefore $$ $$\\alpha $$ = $${{5050} \\over {5051}}$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -4442,14 +4442,14 @@
     "subject": "Mathematics",
     "topic": "properties-of-definite-integration",
     "difficulty": "medium",
-    "solution": "2cot<sup>2</sup>$$\\theta $$ - $${5 \\over {\\sin \\theta }}$$ + 4 = 0\n<br><br>$$ \\Rightarrow $$ $$2{{{{\\cos }^2}\\theta } \\over {{{\\sin }^2}\\theta }} - {5 \\over {\\sin \\theta }} + 4$$ = 0\n<br><br>$$ \\Rightarrow $$ 2sin<sup>2</sup>\n$$\\theta $$ – 5sin$$\\theta $$ + 2 = 0\n <br><br>$$ \\Rightarrow $$ (2sin$$\\theta $$ – 1)(sin$$\\theta $$ – 2) = 0\n<br><br>$$ \\therefore $$ sin$$\\theta $$ = $${1 \\over 2}$$ [ sin$$\\theta $$ = 2 not possible]\n<br><br>$$ \\therefore $$ $$\\theta $$<sub>1</sub> = $${\\pi  \\over 6}$$ and $$\\theta $$<sub>2</sub> = $${{5\\pi } \\over 6}$$ as $$\\theta $$<sub>1</sub> $$&lt;$$ $$\\theta $$<sub>2</sub>\n<br><br>$$ \\therefore $$ I = $$\\int\\limits_{{\\pi  \\over 6}}^{{{5\\pi } \\over 6}} {{{\\cos }^2}3\\theta d\\theta } $$\n<br><br>= $$\\int\\limits_{{\\pi  \\over 6}}^{{{5\\pi } \\over 6}} {{{1 + \\cos 6\\theta } \\over 2}d\\theta } $$\n<br><br>= $${1 \\over 2}\\left[ {\\theta  + {{\\sin 6\\theta } \\over 2}} \\right]_{{\\pi  \\over 6}}^{{{5\\pi } \\over 6}}$$\n<br><br>= $${{\\pi  \\over 3}}$$",
+    "solution": "2cot<sup>2</sup>$$\\theta $$ - $${5 \\over {\\sin \\theta }}$$ + 4 = 0\n<br><br>$$ \\Rightarrow $$ $$2{{{{\\cos }^2}\\theta } \\over {{{\\sin }^2}\\theta }} - {5 \\over {\\sin \\theta }} + 4$$ = 0\n<br><br>$$ \\Rightarrow $$ 2sin<sup>2</sup>\n$$\\theta $$ \u2013 5sin$$\\theta $$ + 2 = 0\n <br><br>$$ \\Rightarrow $$ (2sin$$\\theta $$ \u2013 1)(sin$$\\theta $$ \u2013 2) = 0\n<br><br>$$ \\therefore $$ sin$$\\theta $$ = $${1 \\over 2}$$ [ sin$$\\theta $$ = 2 not possible]\n<br><br>$$ \\therefore $$ $$\\theta $$<sub>1</sub> = $${\\pi  \\over 6}$$ and $$\\theta $$<sub>2</sub> = $${{5\\pi } \\over 6}$$ as $$\\theta $$<sub>1</sub> $$&lt;$$ $$\\theta $$<sub>2</sub>\n<br><br>$$ \\therefore $$ I = $$\\int\\limits_{{\\pi  \\over 6}}^{{{5\\pi } \\over 6}} {{{\\cos }^2}3\\theta d\\theta } $$\n<br><br>= $$\\int\\limits_{{\\pi  \\over 6}}^{{{5\\pi } \\over 6}} {{{1 + \\cos 6\\theta } \\over 2}d\\theta } $$\n<br><br>= $${1 \\over 2}\\left[ {\\theta  + {{\\sin 6\\theta } \\over 2}} \\right]_{{\\pi  \\over 6}}^{{{5\\pi } \\over 6}}$$\n<br><br>= $${{\\pi  \\over 3}}$$",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "MKf59Sb8H9TokJ3iYJ7k9k2k5e3b18i",
     "questionNumber": 56,
-    "questionText": "If ƒ(a + b + 1 - x) = ƒ(x), for all x, where a and b are fixed positive real numbers, then<br><br>\n$${1 \\over {a + b}}\\int_a^b {x\\left( {f(x) + f(x + 1)} \\right)} dx$$ is equal to:\n",
+    "questionText": "If \u0192(a + b + 1 - x) = \u0192(x), for all x, where a and b are fixed positive real numbers, then<br><br>\n$${1 \\over {a + b}}\\int_a^b {x\\left( {f(x) + f(x + 1)} \\right)} dx$$ is equal to:\n",
     "options": [
       "$$\\int_{a - 1}^{b - 1} {f(x+1)dx} $$",
       "$$\\int_{a + 1}^{b + 1} {f(x + 1)dx} $$",
@@ -4464,7 +4464,7 @@
     "subject": "Mathematics",
     "topic": "properties-of-definite-integration",
     "difficulty": "medium",
-    "solution": "I = $${1 \\over {a + b}}\\int_a^b {x\\left( {f(x) + f(x + 1)} \\right)} dx$$ ...(1)\n<br><br>x $$ \\to $$ a + b - x\n<br><br>I = $${1 \\over {a + b}}\\int\\limits_a^b {\\left( {a + b - x} \\right)\\left( {f\\left( {a + b - x} \\right) + f\\left( {a + b - x + 1} \\right)} \\right)dx} $$\n<br><br>I = $${1 \\over {a + b}}\\int\\limits_a^b {\\left( {a + b - x} \\right)\\left( {f\\left( {x + 1} \\right) + f\\left( x \\right)} \\right)dx} $$ .....(2)\n<br><br>[As ƒ(x) = ƒ(a + b + 1 - x)\n<br><br>$$ \\Rightarrow $$ ƒ(x + 1) = ƒ(a + b - x)]\n<br><br>Adding (1) and (2) we get\n<br><br>2I = $${{a + b} \\over {a + b}}\\int\\limits_a^b {\\left( {f\\left( {x + 1} \\right) + f\\left( x \\right)} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ I = $${1 \\over 2}\\int\\limits_a^b {f\\left( x \\right)dx}  + {1 \\over 2}\\int\\limits_a^b {f\\left( {x + 1} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ I = $${1 \\over 2}\\int\\limits_a^b {f\\left( x \\right)dx}  + {1 \\over 2}\\int\\limits_a^b {f\\left( {a + b - x + 1} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ I = $${1 \\over 2}\\int\\limits_a^b {f\\left( x \\right)dx}  + {1 \\over 2}\\int\\limits_a^b {f\\left( x \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ I = $$\\int\\limits_a^b {f\\left( x \\right)dx} $$\n<br><br>Let x = t + 1\n<br><br>$$ \\therefore $$ I = $$\\int\\limits_{a - 1}^{b - 1} {f\\left( {t + 1} \\right)dt} $$\n<br><br>= $$\\int\\limits_{a - 1}^{b - 1} {f\\left( {x + 1} \\right)dx} $$",
+    "solution": "I = $${1 \\over {a + b}}\\int_a^b {x\\left( {f(x) + f(x + 1)} \\right)} dx$$ ...(1)\n<br><br>x $$ \\to $$ a + b - x\n<br><br>I = $${1 \\over {a + b}}\\int\\limits_a^b {\\left( {a + b - x} \\right)\\left( {f\\left( {a + b - x} \\right) + f\\left( {a + b - x + 1} \\right)} \\right)dx} $$\n<br><br>I = $${1 \\over {a + b}}\\int\\limits_a^b {\\left( {a + b - x} \\right)\\left( {f\\left( {x + 1} \\right) + f\\left( x \\right)} \\right)dx} $$ .....(2)\n<br><br>[As \u0192(x) = \u0192(a + b + 1 - x)\n<br><br>$$ \\Rightarrow $$ \u0192(x + 1) = \u0192(a + b - x)]\n<br><br>Adding (1) and (2) we get\n<br><br>2I = $${{a + b} \\over {a + b}}\\int\\limits_a^b {\\left( {f\\left( {x + 1} \\right) + f\\left( x \\right)} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ I = $${1 \\over 2}\\int\\limits_a^b {f\\left( x \\right)dx}  + {1 \\over 2}\\int\\limits_a^b {f\\left( {x + 1} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ I = $${1 \\over 2}\\int\\limits_a^b {f\\left( x \\right)dx}  + {1 \\over 2}\\int\\limits_a^b {f\\left( {a + b - x + 1} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ I = $${1 \\over 2}\\int\\limits_a^b {f\\left( x \\right)dx}  + {1 \\over 2}\\int\\limits_a^b {f\\left( x \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ I = $$\\int\\limits_a^b {f\\left( x \\right)dx} $$\n<br><br>Let x = t + 1\n<br><br>$$ \\therefore $$ I = $$\\int\\limits_{a - 1}^{b - 1} {f\\left( {t + 1} \\right)dt} $$\n<br><br>= $$\\int\\limits_{a - 1}^{b - 1} {f\\left( {x + 1} \\right)dx} $$",
     "section": "A",
     "type": "SCQ"
   },
@@ -4493,7 +4493,7 @@
   {
     "id": "AHLBLmZMvlqRanb5By7k9k2k5itvbgi",
     "questionNumber": 54,
-    "questionText": "If for all real triplets (a, b, c), ƒ(x) = a + bx + cx<sup>2</sup>;\nthen $$\\int\\limits_0^1 {f(x)dx} $$ is equal to :",
+    "questionText": "If for all real triplets (a, b, c), \u0192(x) = a + bx + cx<sup>2</sup>;\nthen $$\\int\\limits_0^1 {f(x)dx} $$ is equal to :",
     "options": [
       "$${1 \\over 6}\\left\\{ {f(0) + f(1) + 4f\\left( {{1 \\over 2}} \\right)} \\right\\}$$",
       "$$2\\left\\{ 3{f(1) + 2f\\left( {{1 \\over 2}} \\right)} \\right\\}$$",
@@ -4508,7 +4508,7 @@
     "subject": "Mathematics",
     "topic": "properties-of-definite-integration",
     "difficulty": "medium",
-    "solution": "ƒ(x) = a + bx + cx<sup>2</sup>\n<br><br>$$\\int\\limits_0^1 {f\\left( x \\right)dx} $$ = $$\\left[ {ax + {{b{x^2}} \\over 2} + {{c{x^3}} \\over 3}} \\right]_0^1$$\n<br><br>= $${a + {b \\over 2} + {c \\over 3}}$$\n<br><br>= $${1 \\over 6}\\left[ {6a + 3b + c} \\right]$$\n<br><br>f(1) = a + b + c\n<br><br>f(0) = a\n<br><br>$$f\\left( {{1 \\over 2}} \\right) = a + {b \\over 2} + {c \\over 4}$$\n<br><br>By checking each option you have to find the solution.\n<br><br>$${1 \\over 6}\\left\\{ {f(0) + f(1) + 4f\\left( {{1 \\over 2}} \\right)} \\right\\}$$\n<br><br>= $${1 \\over 6}\\left[ {a + a + b + c + 4\\left( {a + {b \\over 2} + {c \\over 4}} \\right)} \\right]$$\n<br><br>= $${1 \\over 6}\\left[ {6a + 3b + c} \\right]$$\n<br><br>$$ \\therefore $$ Option (A) is correct option.",
+    "solution": "\u0192(x) = a + bx + cx<sup>2</sup>\n<br><br>$$\\int\\limits_0^1 {f\\left( x \\right)dx} $$ = $$\\left[ {ax + {{b{x^2}} \\over 2} + {{c{x^3}} \\over 3}} \\right]_0^1$$\n<br><br>= $${a + {b \\over 2} + {c \\over 3}}$$\n<br><br>= $${1 \\over 6}\\left[ {6a + 3b + c} \\right]$$\n<br><br>f(1) = a + b + c\n<br><br>f(0) = a\n<br><br>$$f\\left( {{1 \\over 2}} \\right) = a + {b \\over 2} + {c \\over 4}$$\n<br><br>By checking each option you have to find the solution.\n<br><br>$${1 \\over 6}\\left\\{ {f(0) + f(1) + 4f\\left( {{1 \\over 2}} \\right)} \\right\\}$$\n<br><br>= $${1 \\over 6}\\left[ {a + a + b + c + 4\\left( {a + {b \\over 2} + {c \\over 4}} \\right)} \\right]$$\n<br><br>= $${1 \\over 6}\\left[ {6a + 3b + c} \\right]$$\n<br><br>$$ \\therefore $$ Option (A) is correct option.",
     "section": "A",
     "type": "SCQ"
   },
@@ -4610,7 +4610,7 @@
     "subject": "Mathematics",
     "topic": "properties-of-definite-integration",
     "difficulty": "medium",
-    "solution": "$$I = \\int\\limits_0^{2\\pi } {\\left[ {\\sin 2x(1 + \\cos 3x)} \\right]} dx$$ .... (i)<br><br>\n$$ \\therefore\\int\\limits_0^a {f(x)}  = \\int\\limits_0^a {f(a - x)} dx$$<br><br>\n$$ \\because I = \\int\\limits_0^{2\\pi } {\\left[ { - \\sin 2x(1 + \\cos 3x)} \\right]} dx$$<br><br>\nBy (i) + (ii)<br><br>\n$$ \\Rightarrow 2I = \\int\\limits_0^{2\\pi } {( - 1)dx} $$<br><br>\n$$ \\Rightarrow 2I =  - (x)_0^{2\\pi }$$<br><br>\n$$ \\Rightarrow $$ I = –$$\\pi $$",
+    "solution": "$$I = \\int\\limits_0^{2\\pi } {\\left[ {\\sin 2x(1 + \\cos 3x)} \\right]} dx$$ .... (i)<br><br>\n$$ \\therefore\\int\\limits_0^a {f(x)}  = \\int\\limits_0^a {f(a - x)} dx$$<br><br>\n$$ \\because I = \\int\\limits_0^{2\\pi } {\\left[ { - \\sin 2x(1 + \\cos 3x)} \\right]} dx$$<br><br>\nBy (i) + (ii)<br><br>\n$$ \\Rightarrow 2I = \\int\\limits_0^{2\\pi } {( - 1)dx} $$<br><br>\n$$ \\Rightarrow 2I =  - (x)_0^{2\\pi }$$<br><br>\n$$ \\Rightarrow $$ I = \u2013$$\\pi $$",
     "section": "A",
     "type": "SCQ"
   },
@@ -4656,7 +4656,7 @@
     "difficulty": "medium",
     "solution": "Let f(x) = x<sup>2</sup><sup></sup>(x<sup>2</sup><sup></sup> $$-$$ 2)\n<br><br><img src=\"https://imagex.cdn.examgoal.net/6326f7CfCYNQ8AJ6w/7kpxXfTX4mcsPiJ2NbdV6nGG3P9Zb/QHPEXFZOIsdKT4ZvbYHIP7/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Morning Slot Mathematics - Definite Integration Question 280 English Explanation\">\n<br>As long as f(x) lie below the x-axis, define integral will remain negative,\n<br>so correct value of (a, b) is ($$-$$ $$\\sqrt 2 $$, $$\\sqrt 2 $$) for minimum of I",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "vnub8GmPI1I4MyT3bDdFj",
@@ -4771,7 +4771,7 @@
   {
     "id": "WJSwZSmnDltFY0gKeEQW0",
     "questionNumber": 68,
-    "questionText": "Let f and g be continuous functions on [0, a] such that f(x) = f(a – x) and g(x) + g(a – x) = 4, then $$\\int\\limits_0^a \\, $$f(x) g(x) dx is equal to : ",
+    "questionText": "Let f and g be continuous functions on [0, a] such that f(x) = f(a \u2013 x) and g(x) + g(a \u2013 x) = 4, then $$\\int\\limits_0^a \\, $$f(x) g(x) dx is equal to : ",
     "options": [
       "4$$\\int\\limits_0^a \\, $$f(x)dx",
       "$$-$$ 3$$\\int\\limits_0^a \\, $$f(x)dx",
@@ -4793,7 +4793,7 @@
   {
     "id": "7dfDkLzie5qJotpAyJPsR",
     "questionNumber": 69,
-    "questionText": "Let $$f(x) = \\int\\limits_0^x {g(t)dt} $$  where g is a non-zero even\nfunction. If ƒ(x + 5) = g(x), then $$ \\int\\limits_0^x {f(t)dt} $$ equals-",
+    "questionText": "Let $$f(x) = \\int\\limits_0^x {g(t)dt} $$  where g is a non-zero even\nfunction. If \u0192(x + 5) = g(x), then $$ \\int\\limits_0^x {f(t)dt} $$ equals-",
     "options": [
       "5$$\\int\\limits_{x + 5}^5 {g(t)dt} $$",
       "$$\\int\\limits_{x + 5}^5 {g(t)dt} $$",
@@ -4808,7 +4808,7 @@
     "subject": "Mathematics",
     "topic": "properties-of-definite-integration",
     "difficulty": "medium",
-    "solution": "$$f(x) = \\int\\limits_0^x {g(t)dt} $$\n<br><br>$$f\\left( { - x} \\right) = \\int\\limits_0^{ - x} {g\\left( t \\right)} dt$$\n<br><br>Put t = -v\n<br><br>= $$ - \\int\\limits_0^x {g\\left( { - v} \\right)} dv$$ \n<br><br>= $$ - \\int\\limits_0^x {g\\left( v \\right)} d(v)$$ [ as g(v) is an even function.]\n<br><br>= - f(x)\n<br><br>$$ \\Rightarrow $$ f(-x) = -f(x)\n<br><br>$$ \\therefore $$  f(x) is an odd function.\n<br><br>Given ƒ(x + 5) = g(x)\n<br><br>$$ \\therefore $$ g(- x) = ƒ(- x + 5) \n<br><br>$$ \\Rightarrow $$ g(x) = - f(x - 5) [as g(x) is even and f(x) is an odd function]\n<br><br>Replacing x by x + 5, we get\n<br><br>f(x) = - g(x + 5) ......(1)\n<br><br>Now\n<br><br>$$ \\int\\limits_0^x {f(t)dt} $$\n<br><br>= $$ - \\int\\limits_0^x {g\\left( {t + 5} \\right)} dt$$\n<br><br>= $$ - \\int\\limits_5^{x + 5} {g\\left( t \\right)} dt$$\n<br><br>= $$\\int\\limits_{x + 5}^5 {g(t)dt} $$",
+    "solution": "$$f(x) = \\int\\limits_0^x {g(t)dt} $$\n<br><br>$$f\\left( { - x} \\right) = \\int\\limits_0^{ - x} {g\\left( t \\right)} dt$$\n<br><br>Put t = -v\n<br><br>= $$ - \\int\\limits_0^x {g\\left( { - v} \\right)} dv$$ \n<br><br>= $$ - \\int\\limits_0^x {g\\left( v \\right)} d(v)$$ [ as g(v) is an even function.]\n<br><br>= - f(x)\n<br><br>$$ \\Rightarrow $$ f(-x) = -f(x)\n<br><br>$$ \\therefore $$  f(x) is an odd function.\n<br><br>Given \u0192(x + 5) = g(x)\n<br><br>$$ \\therefore $$ g(- x) = \u0192(- x + 5) \n<br><br>$$ \\Rightarrow $$ g(x) = - f(x - 5) [as g(x) is even and f(x) is an odd function]\n<br><br>Replacing x by x + 5, we get\n<br><br>f(x) = - g(x + 5) ......(1)\n<br><br>Now\n<br><br>$$ \\int\\limits_0^x {f(t)dt} $$\n<br><br>= $$ - \\int\\limits_0^x {g\\left( {t + 5} \\right)} dt$$\n<br><br>= $$ - \\int\\limits_5^{x + 5} {g\\left( t \\right)} dt$$\n<br><br>= $$\\int\\limits_{x + 5}^5 {g(t)dt} $$",
     "section": "A",
     "type": "SCQ"
   },
@@ -5322,7 +5322,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -5331,7 +5331,7 @@
     "solution": "In the equation $$f(x) = {x^5} - 5x + a$$, there are different polynomials depending on the parameter a. Now, for the roots of each of these, in general, f(x) = 0.<br/><br/>That is, $$a = 5x - {x^5} = x(5 - {x^5})$$<br/><br/>Hence, the parameter a is a function of x. That is,<br/><br/>$$a(x) = x(5 - {x^5})$$<br/><br/>Now, $$a'(x) = 5 - 5{x^4}$$<br/><br/>Therefore, extrema occurs at a'(x) = 0<br/><br/>That is, when x<sup>4</sup> = 1 or x = 1 and x  = $$-$$1 (only real roots considered)<br/><br/>Here, $$a''(x) =  - 20{x^3}$$<br/><br/>$$a''(1) < 0$$ (maximum)<br/><br/>$$a''( - 1) > 0$$ (minimum)<br/><br/>Hence, the maximum value is<br/><br/>a(1) = 4<br/><br/>The minimum value is<br/><br/>a($$-$$1) = $$-$$4<br/><br/>Hence, when $$-$$4 < a < 4, there are three points that is, x values where f(x) = 0, that is, three roots of f(x) for any value of a lying in ($$-$$4, 4)}. .... (1)<br/><br/>When | a | > 4, there is only one x for which f(x) = 0 ...... (2)<br/><br/>Hence, from statements (1) and (2), we can conclude that options (B) and (D) are correct.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "p96KPRIux4tC0H5k",
@@ -5345,7 +5345,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -5354,7 +5354,7 @@
     "solution": "Given, $$f\\left( x \\right) $$= $$\\int\\limits_{{1 \\over x}}^x {{{{e^{ - \\left( {t + {1 \\over t}} \\right)}}} \\over t}} dt$$\n<br/><br/>Therefore, $\\frac{d}{d x} f(x)=\\frac{e^{-\\left(x+\\frac{1}{x}\\right)}}{x} \\frac{d}{d x} (x)-\\frac{e^{-\\left(\\frac{1}{x}+x\\right)}}{1 / x} \\times \\frac{d}{d x}\\left(\\frac{1}{x}\\right)$\n<br/><br/>$$\n\\begin{aligned}\n& =\\frac{e^{-\\left(x+\\frac{1}{x}\\right)}}{x}+x e^{-\\left(x+\\frac{1}{x}\\right)} \\times\\left(-\\frac{1}{x^2}\\right) \\\\\\\\\n& =\\frac{e^{-\\left(x+\\frac{1}{x}\\right)}}{x}+\\frac{1}{x} e^{-\\left(x+\\frac{1}{x}\\right)} \\\\\\\\\n& =\\frac{2 e^{-\\left(x+\\frac{1}{x}\\right)}}{x}>0\n\\end{aligned}\n$$\n<br/><br/>As, $ f^{\\prime}(x)>0, \\forall x \\in(0, \\infty)$\n<br/><br/>$\\therefore f(x)$ is monotonically increasing on $(0, \\infty)$.\n<br/><br/>$\\Rightarrow$ options (a) is correct and (b) is wrong.\n<br/><br/>Now, <br/><br/>$\\begin{aligned} f(x)+f\\left(\\frac{1}{x}\\right) & =\\int\\limits_{1 / x}^x \\frac{e^{-\\left(t+\\frac{1}{t}\\right)}}{t} d t+\\int\\limits_x^{\\frac{1}{x}} \\frac{e^{-\\left(t+\\frac{1}{t}\\right)}}{t} d t \\\\\\\\ & =\\int\\limits_{1 / x}^{1 / x} \\frac{e^{-\\left(t+\\frac{1}{t}\\right)}}{t} d t=0\\end{aligned}$\n<br/><br/>Now, let\n<br/><br/>$$\n\\begin{aligned}\ng(x) & =f\\left(2^x\\right)=\\int\\limits_{2^{-x}}^{2^x} \\frac{e^{-\\left(t+\\frac{1}{t}\\right)}}{t} d t \\\\\\\\\ng(-x) & =f\\left(2^{-x}\\right) \\\\\\\\\n& =\\int\\limits_{2^x}^{2^{-x}} \\frac{e^{-\\left(t+\\frac{1}{t}\\right)}}{t} d t \\\\\\\\\n& =-g(x)\n\\end{aligned}\n$$\n<br/><br/>$\\therefore f\\left(2^x\\right)$ is an odd function.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "4BKFMfmAUvUVke3R",
@@ -5399,7 +5399,7 @@
     "solution": "<p>(P) Let $$p(x)=a x^2+b x+c$$</p>\n<p>Given, $$p(0)=0$$</p>\n<p>$$\\Rightarrow \\quad c=0$$</p>\n<p>Also given $$\\int_0^1 f(x) d x=1$$</p>\n<p>$$\\begin{array}{lr}\n\\Rightarrow & \\int_0^1\\left(a x^2+b x\\right) d x=1 \\\\\n\\Rightarrow & {\\left[\\frac{a x^3}{3}+\\frac{b x^2}{2}\\right]_0^1=1} \\\\\n\\Rightarrow & \\frac{a}{3}+\\frac{b}{2}=1 \\\\\n\\Rightarrow & 2 a+3 b=6\n\\end{array}$$</p>\n<p>Here, $$a$$ and $$b$$ are non negative integer</p>\n<p>$$\\therefore(a, b)=(3,0),(0,2)$$</p>\n<p>Hence, possible equation of $$p(x)$$ are $$3 x^2$$ and $$2 x$$.</p>\n<p>So, P Match with 2.</p>\n<p>(Q) Given $$f(x)=\\sin x^2+\\cos x^2$$</p>\n<p>Differentiate $$f(x)$$ w.r.t. $$x$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow f^{\\prime}(x)=2 x \\cdot \\cos x^2-2 x \\cdot \\sin x^2 \\\\\n& \\Rightarrow f^{\\prime}(x)=2 x\\left(\\cos x^2-\\sin x^2\\right)\n\\end{aligned}$$</p>\n<p>Apply $$f^{\\prime}(x)=0$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow x=0, \\tan x^2=1 \\\\\n& \\Rightarrow x=0, \\pm \\sqrt{\\frac{\\pi}{4}}, \\pm \\sqrt{\\frac{5 \\pi}{4}}, \\pm \\sqrt{\\frac{9 \\pi}{4}}, \\pm \\sqrt{\\frac{13 \\pi}{4}}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { Differentiate } f^{\\prime}(x) \\text { w.r.t. } x \\\\\n& \\Rightarrow f^{\\prime \\prime}(x)=2\\left(\\cos x^2-\\sin x^2\\right) \\\\\n& +2 x\\left(-2 x \\sin x^2-2 x \\cos x^2\\right) \\\\\n& \\Rightarrow f^{\\prime \\prime}(x)=2\\left(\\cos x^2-\\sin x^2\\right) \\\\\n& -4 x^2\\left(\\sin x^2+\\cos x^2\\right) \\\\\n& \\Rightarrow f^{\\prime \\prime}(x)<0 \\text { at } x= \\pm \\sqrt{\\frac{\\pi}{4}}, \\pm \\sqrt{\\frac{9 \\pi}{4}} \\\\\n\\end{aligned}$$</p>\n<p>So, $f(x)$ is maximum at four points.\nHence, Q match with 3.\n(R) Let $$\\mathrm{I}=\\int_{-2}^2 \\frac{3 x^2}{1+e^x} d x\\quad \\text{... (i)}$$</p>\n<p>Apply the property $$\\int_a^b f(x) d x=\\int_a^b f(a+b-x) d x$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad \\mathrm{I}=\\int_{-2}^2 \\frac{3(-x)^2}{1+e^{-x}} d x \\\\\n& \\Rightarrow \\quad \\mathrm{I}=\\int_{-2}^2 \\frac{3 x^2 e^x}{e^x+1} d x \\quad \\text{.... (ii)}\n\\end{aligned}$$</p>\n<p>Add equation (i) and (ii)</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad 2 \\mathrm{I}=\\int_{-2}^2 \\frac{3 x^2}{e^x+1}\\left[1+e^x\\right] d x \\\\\n& \\Rightarrow \\quad \\mathrm{I}=\\frac{3}{2} \\int_{-2}^2 x^2 \\cdot d x \\\\\n& \\Rightarrow \\quad \\mathrm{I}=\\frac{3}{2}\\left[\\frac{x^3}{3}\\right]_{-2}^2 \\\\\n& \\Rightarrow \\quad \\mathrm{I}=16\n\\end{aligned}$$</p>\n<p>(S) We know the property</p>\n<p>$$\\int_{-a}^a f(x) d x=\\left\\{\\begin{array}{l}\n2 \\int_0^a f(x) d x, \\text { when } f(x) \\text { is } \\\\\n\\text { an even function } \\\\\n0, \\text { when } f(x) \\text { is an odd function }\n\\end{array}\\right.$$</p>\n<p>$$\\begin{aligned}\n& \\text { Let } g(x)=\\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right) \\\\\n& \\Rightarrow g(-x)=\\cos (-x) \\log \\left(\\frac{1-x}{1+x}\\right) \\\\\n& \\Rightarrow g(-x)=\\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right)^{-1} \\\\\n& \\Rightarrow g(-x)=-\\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right)\n\\end{aligned}$$</p>\n<p>$$\\Rightarrow g(-x)=-g(x)$$</p>\n<p>Hence, $$g(x)$$ is an odd function</p>\n<p>So, $$\\int_{\\frac{-1}{2}}^{\\frac{1}{2}} \\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right) d x=0$$</p>\n<p>$$\\Rightarrow \\frac{\\frac{\\int_{-1}^2}{\\frac{1}{2}} \\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right) d x}{\\int_0^{\\frac{1}{2}} \\cos x \\cdot \\log \\left(\\frac{1+x}{1-x}\\right) d x}=0$$</p>\n<p>Hence, $$S$$ match with 4.</p>\n<p>Hint:</p>\n<p>(i) Recall the property</p>\n<p>$$\\int_a^b f(x) d x=\\int_a^b f(a+b-x) d x$$</p>\n<p>(ii) Recall the property</p>\n<p>$$\n\\int_{-a}^a f(x) d x=\\left\\{\\begin{array}{l}\n2 \\int_0^a f(x) d x, \\text { when } f(x) \\text { is an even function}\\\\\n0, \\text { when } f(x) \\text { is an oden function }\n\\end{array}\\right.$$</p>\n<p>(iii) At the point of local maxima, first derivative of the function is zero and second derivative of the function is negative.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "vn8m5IpCBU1sZNvy",

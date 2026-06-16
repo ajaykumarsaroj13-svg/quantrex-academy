@@ -129,7 +129,7 @@
     "difficulty": "medium",
     "solution": "<p>The given system of equations is:</p>\n<p>$$x + 5y + 6z = 4$$</p>\n<p>$$2x + 3y + 4z = 7$$</p>\n<p>$$x + 6y + az = b$$</p>\n<p><strong>Find the determinant of the coefficient matrix ($\\Delta$)</strong></p>\n<p>The coefficient matrix is formed by the coefficients of $x$, $y$, and $z$.</p>\n<p>$$ \\Delta = \\begin{vmatrix} 1 & 5 & 6 \\\\ 2 & 3 & 4 \\\\ 1 & 6 & a \\end{vmatrix} $$</p>\n<p>Let us expand this determinant along the first row:</p>\n<p>$$ \\Delta = 1(3 \\cdot a - 6 \\cdot 4) - 5(2 \\cdot a - 1 \\cdot 4) + 6(2 \\cdot 6 - 1 \\cdot 3) $$</p>\n<p>$$ \\Delta = 1(3a - 24) - 5(2a - 4) + 6(12 - 3) $$</p>\n<p>$$ \\Delta = 3a - 24 - 10a + 20 + 6(9) $$</p>\n<p>$$ \\Delta = -7a - 4 + 54 $$</p>\n<p>$$ \\Delta = -7a + 50 $$</p>\n<p>For the system to have infinitely many solutions, we equate $\\Delta$ to $0$:</p>\n<p>$$ -7a + 50 = 0 \\implies 7a = 50 \\implies a = \\frac{50}{7} $$</p>\n<p><strong>Find the determinant $\\Delta_z$</strong></p>\n<p>To find $\\Delta_z$, we replace the $z$-column (third column) with the constant terms from the right-hand side of the equations. </p>\n<p>$$ \\Delta_z = \\begin{vmatrix} 1 & 5 & 4 \\\\ 2 & 3 & 7 \\\\ 1 & 6 & b \\end{vmatrix} $$</p>\n<p>We again expand along the first row:</p>\n<p>$$ \\Delta_z = 1(3 \\cdot b - 6 \\cdot 7) - 5(2 \\cdot b - 1 \\cdot 7) + 4(2 \\cdot 6 - 1 \\cdot 3) $$</p>\n<p>$$ \\Delta_z = 1(3b - 42) - 5(2b - 7) + 4(12 - 3) $$</p>\n<p>$$ \\Delta_z = 3b - 42 - 10b + 35 + 4(9) $$</p>\n<p>$$ \\Delta_z = -7b - 7 + 36 $$</p>\n<p>$$ \\Delta_z = -7b + 29 $$</p>\n<p>Equating $\\Delta_z$ to zero for infinitely many solutions, we get:</p>\n<p>$$ -7b + 29 = 0 \\implies 7b = 29 \\implies b = \\frac{29}{7} $$</p>\n<p><strong>Check the options for the point $(a, b)$</strong></p>\n<p>We have obtained the point coordinates as $(a, b) = \\left( \\frac{50}{7}, \\frac{29}{7} \\right)$.</p>\n<p>Let us evaluate the difference $a - b$ to find out which linear profile equation matches our outcome:</p>\n<p>$$ a - b = \\frac{50}{7} - \\frac{29}{7} $$</p>\n<p>$$ a - b = \\frac{50 - 29}{7} $$</p>\n<p>$$ a - b = \\frac{21}{7} = 3 $$</p>\n<p>Writing this relation in terms of $x$ and $y$ (where $x = a$ and $y = b$), it perfectly satisfies the line equation:</p>\n<p>$$ x - y = 3 $$</p>\n<p>Thus, the point $(a, b)$ lies on the line given in Option B.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnrigmow",
@@ -281,7 +281,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "<p>We begin with the system:</p>\n<p>$$ \\begin{aligned} x+y+2z &= 6, \\\\ 2x+3y+az &= a+1, \\\\ -x-3y+bz &= 2b. \\end{aligned} $$</p>\n<p><strong>Step 1.</strong> Solve the first equation for $$x$$:</p>\n<p>$$ x = 6 - y - 2z. $$</p>\n<p><strong>Step 2.</strong> Substitute $$x = 6-y-2z$$ into the second equation:</p>\n<p>$$ 2(6-y-2z) + 3y + az = a+1. $$</p>\n<p>Expanding and simplifying:</p>\n<p>$$ 12 - 2y - 4z + 3y + az = a+1 \\quad \\Longrightarrow \\quad y + (a-4)z = a - 11. $$</p>\n<p>Call this <strong>Equation (I)</strong>.</p>\n<p><strong>Step 3.</strong> Substitute $$x = 6-y-2z$$ into the third equation:</p>\n<p>$$ -(6-y-2z) - 3y + bz = 2b. $$</p>\n<p>Expanding and simplifying:</p>\n<p>$$ -6 + y + 2z - 3y + bz = 2b \\quad \\Longrightarrow \\quad -2y + (b+2)z = 2b + 6. $$</p>\n<p>Call this <strong>Equation (II)</strong>.</p>\n<p><strong>Step 4.</strong> For the system to have infinitely many solutions, the two equations in $$y$$ and $$z$$ must be dependent—that is, one must be a constant multiple of the other. Assume there exists a constant $$k$$ such that</p>\n<p>$$ -2 = k \\cdot 1 \\quad \\Longrightarrow \\quad k = -2. $$</p>\n<p>Apply this to the coefficient of $$z$$ and the constant term.</p>\n<p>For the $$z$$-coefficient in Equations (I) and (II):</p>\n<p>$$ b+2 = k(a-4) = -2(a-4) = -2a+8. $$</p>\n<p>Thus,</p>\n<p>$$ b = -2a+6. $$</p>\n<p>For the constant term:</p>\n<p>$$ 2b+6 = k(a-11) = -2(a-11) = -2a + 22. $$</p>\n<p>Substitute $$b = -2a+6$$ into this equation:</p>\n<p>$$ 2(-2a+6) + 6 = -2a + 22 \\quad \\Longrightarrow \\quad -4a + 12 + 6 = -2a + 22. $$</p>\n<p>Simplify:</p>\n<p>$$ -4a + 18 = -2a + 22. $$</p>\n<p>Solve for $$a$$:</p>\n<p>$$ -4a + 18 + 4a = -2a + 22 + 4a \\quad \\Longrightarrow \\quad 18 = 2a + 22, $$</p>\n<p>$$ 2a = 18 - 22 = -4 \\quad \\Longrightarrow \\quad a = -2. $$</p>\n<p>Substitute $$a = -2$$ into $$b = -2a+6$$:</p>\n<p>$$ b = -2(-2) + 6 = 4 + 6 = 10. $$</p>\n<p><strong>Step 5.</strong> We now compute</p>\n<p>$$ 7a + 3b = 7(-2) + 3(10) = -14 + 30 = 16. $$</p>\n<p>Thus, the value of $$7a+3b$$ is</p>\n<p>$$ \\boxed{16}. $$</p>",
+    "solution": "<p>We begin with the system:</p>\n<p>$$ \\begin{aligned} x+y+2z &= 6, \\\\ 2x+3y+az &= a+1, \\\\ -x-3y+bz &= 2b. \\end{aligned} $$</p>\n<p><strong>Step 1.</strong> Solve the first equation for $$x$$:</p>\n<p>$$ x = 6 - y - 2z. $$</p>\n<p><strong>Step 2.</strong> Substitute $$x = 6-y-2z$$ into the second equation:</p>\n<p>$$ 2(6-y-2z) + 3y + az = a+1. $$</p>\n<p>Expanding and simplifying:</p>\n<p>$$ 12 - 2y - 4z + 3y + az = a+1 \\quad \\Longrightarrow \\quad y + (a-4)z = a - 11. $$</p>\n<p>Call this <strong>Equation (I)</strong>.</p>\n<p><strong>Step 3.</strong> Substitute $$x = 6-y-2z$$ into the third equation:</p>\n<p>$$ -(6-y-2z) - 3y + bz = 2b. $$</p>\n<p>Expanding and simplifying:</p>\n<p>$$ -6 + y + 2z - 3y + bz = 2b \\quad \\Longrightarrow \\quad -2y + (b+2)z = 2b + 6. $$</p>\n<p>Call this <strong>Equation (II)</strong>.</p>\n<p><strong>Step 4.</strong> For the system to have infinitely many solutions, the two equations in $$y$$ and $$z$$ must be dependent\u2014that is, one must be a constant multiple of the other. Assume there exists a constant $$k$$ such that</p>\n<p>$$ -2 = k \\cdot 1 \\quad \\Longrightarrow \\quad k = -2. $$</p>\n<p>Apply this to the coefficient of $$z$$ and the constant term.</p>\n<p>For the $$z$$-coefficient in Equations (I) and (II):</p>\n<p>$$ b+2 = k(a-4) = -2(a-4) = -2a+8. $$</p>\n<p>Thus,</p>\n<p>$$ b = -2a+6. $$</p>\n<p>For the constant term:</p>\n<p>$$ 2b+6 = k(a-11) = -2(a-11) = -2a + 22. $$</p>\n<p>Substitute $$b = -2a+6$$ into this equation:</p>\n<p>$$ 2(-2a+6) + 6 = -2a + 22 \\quad \\Longrightarrow \\quad -4a + 12 + 6 = -2a + 22. $$</p>\n<p>Simplify:</p>\n<p>$$ -4a + 18 = -2a + 22. $$</p>\n<p>Solve for $$a$$:</p>\n<p>$$ -4a + 18 + 4a = -2a + 22 + 4a \\quad \\Longrightarrow \\quad 18 = 2a + 22, $$</p>\n<p>$$ 2a = 18 - 22 = -4 \\quad \\Longrightarrow \\quad a = -2. $$</p>\n<p>Substitute $$a = -2$$ into $$b = -2a+6$$:</p>\n<p>$$ b = -2(-2) + 6 = 4 + 6 = 10. $$</p>\n<p><strong>Step 5.</strong> We now compute</p>\n<p>$$ 7a + 3b = 7(-2) + 3(10) = -14 + 30 = 16. $$</p>\n<p>Thus, the value of $$7a+3b$$ is</p>\n<p>$$ \\boxed{16}. $$</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -310,7 +310,7 @@
   {
     "id": "m6srmtin",
     "questionNumber": 59,
-    "questionText": " <p>If the system of equations\n\n<br/><br/>$$\n\\begin{aligned}\n& (\\lambda-1) x+(\\lambda-4) y+\\lambda z=5 \\\\\n& \\lambda x+(\\lambda-1) y+(\\lambda-4) z=7 \\\\\n& (\\lambda+1) x+(\\lambda+2) y-(\\lambda+2) z=9\n\\end{aligned}$$</p>\n<p>has infinitely many solutions, then $\\lambda^2+\\lambda$ is equal to</p>",
+    "questionText": "\u00a0<p>If the system of equations\n\n<br/><br/>$$\n\\begin{aligned}\n& (\\lambda-1) x+(\\lambda-4) y+\\lambda z=5 \\\\\n& \\lambda x+(\\lambda-1) y+(\\lambda-4) z=7 \\\\\n& (\\lambda+1) x+(\\lambda+2) y-(\\lambda+2) z=9\n\\end{aligned}$$</p>\n<p>has infinitely many solutions, then $\\lambda^2+\\lambda$ is equal to</p>",
     "options": [
       "20",
       "10",
@@ -442,7 +442,7 @@
   {
     "id": "m9dw9f23",
     "questionNumber": 61,
-    "questionText": "<p>Let the system of equations</p>\n<p>x + 5y - z = 1</p>\n<p>4x + 3y - 3z = 7</p>\n<p>24x + y + λz = μ</p>\n<p>λ, μ ∈ ℝ, have infinitely many solutions. Then the number of the solutions of this system, <br/><br/>if x, y, z are integers and satisfy 7 ≤ x + y + z ≤ 77, is :</p>",
+    "questionText": "<p>Let the system of equations</p>\n<p>x + 5y - z = 1</p>\n<p>4x + 3y - 3z = 7</p>\n<p>24x + y + \u03bbz = \u03bc</p>\n<p>\u03bb, \u03bc \u2208 \u211d, have infinitely many solutions. Then the number of the solutions of this system, <br/><br/>if x, y, z are integers and satisfy 7 \u2264 x + y + z \u2264 77, is :</p>",
     "options": [
       "<p>4</p>",
       "<p>5</p>",
@@ -486,7 +486,7 @@
   {
     "id": "m9dm2wvr",
     "questionNumber": 61,
-    "questionText": "<p>Let <em>α</em> be a solution of $x^2 + x + 1 = 0$, and for some <em>a</em> and <em>b</em> in</p> <p>$R, \\begin{bmatrix} 4 & a & b \\end{bmatrix} \\begin{bmatrix} 1 & 16 & 13 \\\\ -1 & -1 & 2 \\\\ -2 & -14 & -8 \\end{bmatrix} = \\begin{bmatrix} 0 & 0 & 0 \\end{bmatrix}$. If $\\frac{4}{\\alpha^4} + \\frac{m}{\\alpha^a} + \\frac{n}{\\alpha^b} = 3$, then <em>m</em> + <em>n</em> is equal to _______</p>",
+    "questionText": "<p>Let <em>\u03b1</em> be a solution of $x^2 + x + 1 = 0$, and for some <em>a</em> and <em>b</em> in</p> <p>$R, \\begin{bmatrix} 4 & a & b \\end{bmatrix} \\begin{bmatrix} 1 & 16 & 13 \\\\ -1 & -1 & 2 \\\\ -2 & -14 & -8 \\end{bmatrix} = \\begin{bmatrix} 0 & 0 & 0 \\end{bmatrix}$. If $\\frac{4}{\\alpha^4} + \\frac{m}{\\alpha^a} + \\frac{n}{\\alpha^b} = 3$, then <em>m</em> + <em>n</em> is equal to _______</p>",
     "options": [
       "<p>11</p>",
       "<p>3</p>",
@@ -525,7 +525,7 @@
     "difficulty": "hard",
     "solution": "<p>$$\\begin{aligned}\n\\text{(A)}\\quad & \\mathrm{ax}^2+2 \\mathrm{bxy}+\\mathrm{cy}^2>0 \\forall(\\mathrm{x}, \\mathrm{y}) \\in \\mathbb{R}^2-\\{(0,0)\\} \\\\\n& \\Rightarrow \\mathrm{ax}+2 \\mathrm{bxy}+\\mathrm{cy}^2 \\text { must represent pair of imaginary lines and } \\mathrm{a}, \\mathrm{c}>0 . \\\\\n& \\Rightarrow \\mathrm{b}^2<\\mathrm{ac}\n\\end{aligned}$$</p>\n<p>$$\\mathrm{(B)}\\quad\\mathrm{b}^2<3 \\times \\frac{1}{12} \\Rightarrow|2 \\mathrm{~b}|<1$$</p>\n<p>$$\\mathrm{(C)}\\quad$$ since $$\\mathrm{b}^2 \\neq \\mathrm{ac}$$</p>\n<p>$$\\Rightarrow \\mathrm{ax}+\\mathrm{by}=1 \\text { and } \\mathrm{bx}+\\mathrm{cy}=-1$$</p>\n<p>are not parallel lines.</p>\n<p>$$\\mathrm{(D)}\\quad\\mathrm{ac}+\\mathrm{a}+\\mathrm{c}>\\mathrm{b}^2 \\Rightarrow$$ lines are not parallel.</p>\n<p>$$\\Rightarrow$$ Options (B), (C), (D) are Correct.</p>",
     "section": "Sec 4",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -867,7 +867,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -875,7 +875,7 @@
     "difficulty": "medium",
     "solution": "Given system of linear equation is\n<br/><br/>$$\n\\begin{gathered}\n2 x-y+3 z=5 \\\\\\\\\n3 x+2 y-z=7 \\\\\\\\\n4 x+5 y+\\alpha z=\\beta \\\\\\\\\n\\text { Now, } \\Delta=\\left|\\begin{array}{ccc}\n2 & -1 & 3 \\\\\n3 & 2 & -1 \\\\\n4 & 5 & \\alpha\n\\end{array}\\right|=7(\\alpha+5)\n\\end{gathered}\n$$\n<br/><br/>So, this system of equation has unique solution, if $\\alpha \\neq-5$\n<br/><br/>and $\\Delta_1=\\left|\\begin{array}{ccc}5 & -1 & 3 \\\\ 7 & 2 & -1 \\\\ \\beta & 5 & \\alpha\\end{array}\\right|=17 \\alpha-5 \\beta+30$\n<br/><br/>and $\\Delta_2=\\left|\\begin{array}{ccc}2 & 5 & 3 \\\\ 3 & 7 & -1 \\\\ 4 & \\beta & \\alpha\\end{array}\\right|=-11 \\beta+\\alpha+104$\n<br/><br/>and $\\Delta_3=\\left|\\begin{array}{ccc}2 & -1 & 5 \\\\ 3 & 2 & 7 \\\\ 4 & 5 & \\beta\\end{array}\\right|=7(\\beta-9)$\n<br/><br/>For infinitely many solutions,\n<br/><br/>$$\n\\Delta=\\Delta_1=\\Delta_2=\\Delta_3=0\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { So, }  \\Delta=0 \\\\\\\\\n& \\Rightarrow 7(\\alpha+5)=0 \\\\\\\\\n& \\Rightarrow \\alpha=-5\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Delta_3 =0 \\\\\\\\\n& \\Rightarrow 7(\\beta-9) =0 \\\\\\\\\n& \\Rightarrow  \\beta  =9\n\\end{aligned}\n$$\n<br/><br/>If $\\alpha=-5$ and $\\beta=8$, then $\\Delta$ equals zero but $\\Delta_3$ does not, which would imply the system is inconsistent for $\\alpha=-5$ and $\\beta=8$.\n\n<br/><br/>Therefore, the option \"The system is inconsistent for $\\alpha=-5$ and $\\beta=8$ \" is correct.",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1lgsuczop",
@@ -939,7 +939,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "The given system of equations is :\n\n<br/><br/>1. $$2x + 4y + 2az = b$$\n<br/><br/>2. $$x + 2y + 3z = 4$$\n<br/><br/>3. $$2x - 5y + 2z = 8$$\n\n<br/><br/>We can write this in matrix form :\n\n<br/><br/>$$\n\\begin{bmatrix}\n2 & 4 & 2a \\\\\n1 & 2 & 3 \\\\\n2 & -5 & 2\n\\end{bmatrix}\n\\begin{bmatrix}\nx \\\\\ny \\\\\nz\n\\end{bmatrix}\n=\n\\begin{bmatrix}\nb \\\\\n4 \\\\\n8\n\\end{bmatrix}\n$$\n\n<br/><br/>First, we need to find the determinant of the coefficient matrix, which we'll call Δ. The coefficient matrix is :\n\n<br/><br/>$$\n\\begin{bmatrix}\n2 & 4 & 2a \\\\\n1 & 2 & 3 \\\\\n2 & -5 & 2\n\\end{bmatrix}\n$$\n\n<br/><br/>We find its determinant for 3 $$ \\times $$ 3 matrices :\n\n<br/><br/>$$\n\\Delta = 2(2)(2) + 4(3)(2) + 2a(1)(-5) - 2a(2)(2) - 4(1)(2) - 2(3)(-5)\n$$\n<br/><br/>$$\n\\Delta = 8 + 24 - 10a - 8a - 8 + 30\n$$\n<br/><br/>$$\n\\Delta = -18a + 54\n$$\n<br/><br/>$$\n\\Delta = -18(a - 3)\n$$\n\n<br/><br/>Next, we substitute the third column of our matrix with the column of constants (b, 4, 8) and calculate the determinant Δ₃ :\n\n<br/><br/>$$\n\\begin{bmatrix}\n2 & 4 & b \\\\\n1 & 2 & 4 \\\\\n2 & -5 & 8\n\\end{bmatrix}\n$$\n\n<br/><br/>We find its determinant :\n\n<br/><br/>$$\n\\Delta_3 = 2(2)(8) + 4(4)(2) + b(1)(-5) - b(2)(2) - 4(1)(8) - 2(4)(-5)\n$$\n<br/><br/>$$\n\\Delta_3 = 32 + 32 - 5b - 4b - 32 + 40\n$$\n<br/><br/>$$\n\\Delta_3 = -9b + 72\n$$\n<br/><br/>$$\n\\Delta_3 = 9(8 - b)\n$$\n\n<br/><br/>Now, let's analyze the options :\n\n<br/><br/>1. For a=3 and b=8, we have Δ = 0 and Δ₃ = 0, which indicates an infinite number of solutions.\n\n<br/><br/>2. For a=3 and b=6, we have Δ = 0 and Δ₃ ≠ 0, which indicates no solution.\n\n<br/><br/>3. For a=8 and b=8, we have Δ ≠ 0, which indicates a unique solution.\n\n<br/><br/>4. For a=6 and b=6, we have Δ ≠ 0, which indicates a unique solution.\n\n<br/><br/>Therefore, the statement that is NOT correct is Option B: \"It has infinitely many solutions if a=3, b=6\", because in this case the system actually has no solution.",
+    "solution": "The given system of equations is :\n\n<br/><br/>1. $$2x + 4y + 2az = b$$\n<br/><br/>2. $$x + 2y + 3z = 4$$\n<br/><br/>3. $$2x - 5y + 2z = 8$$\n\n<br/><br/>We can write this in matrix form :\n\n<br/><br/>$$\n\\begin{bmatrix}\n2 & 4 & 2a \\\\\n1 & 2 & 3 \\\\\n2 & -5 & 2\n\\end{bmatrix}\n\\begin{bmatrix}\nx \\\\\ny \\\\\nz\n\\end{bmatrix}\n=\n\\begin{bmatrix}\nb \\\\\n4 \\\\\n8\n\\end{bmatrix}\n$$\n\n<br/><br/>First, we need to find the determinant of the coefficient matrix, which we'll call \u0394. The coefficient matrix is :\n\n<br/><br/>$$\n\\begin{bmatrix}\n2 & 4 & 2a \\\\\n1 & 2 & 3 \\\\\n2 & -5 & 2\n\\end{bmatrix}\n$$\n\n<br/><br/>We find its determinant for 3 $$ \\times $$ 3 matrices :\n\n<br/><br/>$$\n\\Delta = 2(2)(2) + 4(3)(2) + 2a(1)(-5) - 2a(2)(2) - 4(1)(2) - 2(3)(-5)\n$$\n<br/><br/>$$\n\\Delta = 8 + 24 - 10a - 8a - 8 + 30\n$$\n<br/><br/>$$\n\\Delta = -18a + 54\n$$\n<br/><br/>$$\n\\Delta = -18(a - 3)\n$$\n\n<br/><br/>Next, we substitute the third column of our matrix with the column of constants (b, 4, 8) and calculate the determinant \u0394\u2083 :\n\n<br/><br/>$$\n\\begin{bmatrix}\n2 & 4 & b \\\\\n1 & 2 & 4 \\\\\n2 & -5 & 8\n\\end{bmatrix}\n$$\n\n<br/><br/>We find its determinant :\n\n<br/><br/>$$\n\\Delta_3 = 2(2)(8) + 4(4)(2) + b(1)(-5) - b(2)(2) - 4(1)(8) - 2(4)(-5)\n$$\n<br/><br/>$$\n\\Delta_3 = 32 + 32 - 5b - 4b - 32 + 40\n$$\n<br/><br/>$$\n\\Delta_3 = -9b + 72\n$$\n<br/><br/>$$\n\\Delta_3 = 9(8 - b)\n$$\n\n<br/><br/>Now, let's analyze the options :\n\n<br/><br/>1. For a=3 and b=8, we have \u0394 = 0 and \u0394\u2083 = 0, which indicates an infinite number of solutions.\n\n<br/><br/>2. For a=3 and b=6, we have \u0394 = 0 and \u0394\u2083 \u2260 0, which indicates no solution.\n\n<br/><br/>3. For a=8 and b=8, we have \u0394 \u2260 0, which indicates a unique solution.\n\n<br/><br/>4. For a=6 and b=6, we have \u0394 \u2260 0, which indicates a unique solution.\n\n<br/><br/>Therefore, the statement that is NOT correct is Option B: \"It has infinitely many solutions if a=3, b=6\", because in this case the system actually has no solution.",
     "section": "A",
     "type": "SCQ"
   },
@@ -955,7 +955,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -963,7 +963,7 @@
     "difficulty": "medium",
     "solution": "For infinite solution $\\Delta=\\Delta_x=\\Delta_y=\\Delta_z=0$\n<br/><br/>$$\n\\Delta=\\left|\\begin{array}{lll}\n\\alpha & 1 & 1 \\\\\n1 & \\alpha & 1 \\\\\n1 & 1 & \\alpha\n\\end{array}\\right|=0 \\Rightarrow\\left(\\alpha^3-3 \\alpha+2\\right)=0 \\Rightarrow \\alpha=1,-2\n$$\n<br/><br/>If $\\beta=1$, then all planes are overlapping\n<br/><br/>$\\therefore$ Option (A) is correct.\n\n<br/><br/><b>Option (B) :</b>\n<br/><br/>If $\\alpha=2 \\Rightarrow \\Delta \\neq 0$\n<br/><br/>$\\therefore $ Unique solution exist\n<br/><br/>$\\therefore$ Option (B) is incorrect.\n\n\n\n<br/><br/><b>Option (C) :</b>\n<br/><br/>$$\n\\begin{aligned}\n& \\alpha=2, \\beta=1 \\\\\\\\\n& 2 x+y+z=1 \\\\\\\\\n& x+2 y+z=1 \\\\\\\\\n& x+y+2 z=1\n\\end{aligned}\n$$\n<br/><br/>Adding all three equations,\n<br/><br/>$$\nx+y+z=\\frac{3}{4}\n$$\n<br/><br/>$\\therefore$ option (C) is correct.\n\n<br/><br/><b>Option (D) :</b>\n<br/><br/>If $\\alpha=-2$ and $\\beta=1$, then $\\Delta=0, \\Delta_x \\neq 0$\n<br/><br/>$\\therefore$ No solution.\n<br/><br/>$\\therefore$ Option (D) is correct.\n",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1ldomfjmn",
@@ -2013,14 +2013,14 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "Let $$X = \\left[ {\\matrix{\n   x  \\cr \n   y  \\cr \n   z  \\cr \n\n } } \\right]$$<br><br>\nPX = O<br><br>\n$$\\left[ {\\matrix{\n   1 &amp; 2 &amp; 1  \\cr \n   { - 2} &amp; 3 &amp; { - 4}  \\cr \n   1 &amp; 9 &amp; { - 1}  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   x  \\cr \n   y  \\cr \n   z  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   0  \\cr \n   0  \\cr \n   0  \\cr \n\n } } \\right]$$<br><br>\nx + 2y + z = 0........(1)<br><br>\n-2x + 3y – 4z = 0....(2)<br><br>\nx + 9y - z = 0..........(3)<br><br>\nfrom (1) &amp; (3)<br>\n$$ \\Rightarrow $$ 2x+11y =0<br><br>\nfrom (1) &amp; (2)<br>\n$$ \\Rightarrow $$ 2x + 11y = 0<br><br>\nfrom (2) &amp; (3)<br>\n–6x –33y = 0<br>\n$$ \\Rightarrow $$ 2x +11y = 0<br><br>\nputting value of x in (1), we get<br>\n–7y + 2z = 0<br><br>\nNow $${\\left( {{{11y} \\over 2}} \\right)^2} + {y^2} + {\\left( {{{7y} \\over 2}} \\right)^2} = 1$$<br><br>\ny<sup>2</sup>(121 + 1 + 49) = 4<br><br>\ny<sup>2</sup>(171) = 4<br><br>\n$$y =  \\pm {2 \\over {\\sqrt {171} }}$$<br><br>\n$$ \\Rightarrow x =  \\pm {7 \\over {\\sqrt {171} }}$$<br><br>\n$$ \\Rightarrow z =  \\pm {{11} \\over {\\sqrt {171} }}$$<br><br>\n$$ \\therefore $$ So, there are 2 solution set of (x, y, z)\n\n\n",
+    "solution": "Let $$X = \\left[ {\\matrix{\n   x  \\cr \n   y  \\cr \n   z  \\cr \n\n } } \\right]$$<br><br>\nPX = O<br><br>\n$$\\left[ {\\matrix{\n   1 &amp; 2 &amp; 1  \\cr \n   { - 2} &amp; 3 &amp; { - 4}  \\cr \n   1 &amp; 9 &amp; { - 1}  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   x  \\cr \n   y  \\cr \n   z  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   0  \\cr \n   0  \\cr \n   0  \\cr \n\n } } \\right]$$<br><br>\nx + 2y + z = 0........(1)<br><br>\n-2x + 3y \u2013 4z = 0....(2)<br><br>\nx + 9y - z = 0..........(3)<br><br>\nfrom (1) &amp; (3)<br>\n$$ \\Rightarrow $$ 2x+11y =0<br><br>\nfrom (1) &amp; (2)<br>\n$$ \\Rightarrow $$ 2x + 11y = 0<br><br>\nfrom (2) &amp; (3)<br>\n\u20136x \u201333y = 0<br>\n$$ \\Rightarrow $$ 2x +11y = 0<br><br>\nputting value of x in (1), we get<br>\n\u20137y + 2z = 0<br><br>\nNow $${\\left( {{{11y} \\over 2}} \\right)^2} + {y^2} + {\\left( {{{7y} \\over 2}} \\right)^2} = 1$$<br><br>\ny<sup>2</sup>(121 + 1 + 49) = 4<br><br>\ny<sup>2</sup>(171) = 4<br><br>\n$$y =  \\pm {2 \\over {\\sqrt {171} }}$$<br><br>\n$$ \\Rightarrow x =  \\pm {7 \\over {\\sqrt {171} }}$$<br><br>\n$$ \\Rightarrow z =  \\pm {{11} \\over {\\sqrt {171} }}$$<br><br>\n$$ \\therefore $$ So, there are 2 solution set of (x, y, z)\n\n\n",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "xYS1FKI11Dse7mNmPOjgy2xukewnbkm1",
     "questionNumber": 64,
-    "questionText": "Let S be the set of all $$\\lambda $$ $$ \\in $$ R for which the system\nof linear equations\n<br><br>2x – y + 2z = 2\n<br>x – 2y +\n$$\\lambda $$z = –4\n<br>x +\n$$\\lambda $$y + z = 4\n<br><br>has no solution. Then the set S :",
+    "questionText": "Let S be the set of all $$\\lambda $$ $$ \\in $$ R for which the system\nof linear equations\n<br><br>2x \u2013 y + 2z = 2\n<br>x \u2013 2y +\n$$\\lambda $$z = \u20134\n<br>x +\n$$\\lambda $$y + z = 4\n<br><br>has no solution. Then the set S :",
     "options": [
       "contains more than two elements.",
       "contains exactly two elements.",
@@ -2035,14 +2035,14 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "For no solution :\n<br><br>$$\\Delta $$ = 0 and $$\\Delta $$<sub>1</sub>/$$\\Delta $$<sub>2</sub>/$$\\Delta $$<sub>3</sub> $$ \\ne $$ 0\n<br><br>$$\\Delta $$ = $$\\left| {\\matrix{\n   2 &amp; { - 1} &amp; 2  \\cr \n   1 &amp; { - 2} &amp; \\lambda   \\cr \n   1 &amp; \\lambda  &amp; 1  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 2(–2 – $$\\lambda $$<sup>2</sup>) + 1 (1 – $$\\lambda $$) + 2($$\\lambda $$ + 2) = 0\n<br><br>$$ \\Rightarrow $$ –2$$\\lambda $$<sup>2</sup>\n+ $$\\lambda $$ + 1 = 0\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = 1, $$ - {1 \\over 2}$$\n<br><br>When <b>$$\\lambda $$ = 1</b>\n<br><br>2x – y + 2z = 2 ...(1)\n<br><br>x – 2y + z = –4 ...(2)\n<br><br>x + y + z = 4 ...(3)\n<br><br>Adding (2) and (3), we get\n<br><br>2x – y + 2z = 0 (contradiction) hence no solution.\n<br><br>$$ \\therefore $$ $$\\lambda $$ = 1 belongs to set S.\n<br><br>When $$\\lambda $$ = $$ - {1 \\over 2}$$\n<br><br>2x – y + 2z = 2 ...(1)\n<br><br>x – 2y $$ - {1 \\over 2}$$z\n = –4 ...(2)\n<br><br>x $$ - {1 \\over 2}$$y\n + z = 4 ...(3)\n<br><br>(1) and (3) contradict each other, hence no\nsolution.\n<br><br>$$ \\therefore $$ $$\\lambda $$ = $$ - {1 \\over 2}$$ belongs to set S.",
+    "solution": "For no solution :\n<br><br>$$\\Delta $$ = 0 and $$\\Delta $$<sub>1</sub>/$$\\Delta $$<sub>2</sub>/$$\\Delta $$<sub>3</sub> $$ \\ne $$ 0\n<br><br>$$\\Delta $$ = $$\\left| {\\matrix{\n   2 &amp; { - 1} &amp; 2  \\cr \n   1 &amp; { - 2} &amp; \\lambda   \\cr \n   1 &amp; \\lambda  &amp; 1  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 2(\u20132 \u2013 $$\\lambda $$<sup>2</sup>) + 1 (1 \u2013 $$\\lambda $$) + 2($$\\lambda $$ + 2) = 0\n<br><br>$$ \\Rightarrow $$ \u20132$$\\lambda $$<sup>2</sup>\n+ $$\\lambda $$ + 1 = 0\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = 1, $$ - {1 \\over 2}$$\n<br><br>When <b>$$\\lambda $$ = 1</b>\n<br><br>2x \u2013 y + 2z = 2 ...(1)\n<br><br>x \u2013 2y + z = \u20134 ...(2)\n<br><br>x + y + z = 4 ...(3)\n<br><br>Adding (2) and (3), we get\n<br><br>2x \u2013 y + 2z = 0 (contradiction) hence no solution.\n<br><br>$$ \\therefore $$ $$\\lambda $$ = 1 belongs to set S.\n<br><br>When $$\\lambda $$ = $$ - {1 \\over 2}$$\n<br><br>2x \u2013 y + 2z = 2 ...(1)\n<br><br>x \u2013 2y $$ - {1 \\over 2}$$z\n = \u20134 ...(2)\n<br><br>x $$ - {1 \\over 2}$$y\n + z = 4 ...(3)\n<br><br>(1) and (3) contradict each other, hence no\nsolution.\n<br><br>$$ \\therefore $$ $$\\lambda $$ = $$ - {1 \\over 2}$$ belongs to set S.",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "lKP9oeIa262XxKtivNjgy2xukf49oomt",
     "questionNumber": 72,
-    "questionText": "Let S be the set of all integer solutions, (x, y, z),\nof the system of equations\n<br>x – 2y + 5z = 0\n<br>–2x + 4y + z = 0\n<br>–7x + 14y + 9z = 0\n<br>such that 15 $$ \\le $$ x<sup>2</sup>\n + y<sup>2</sup>\n + z<sup>2</sup> $$ \\le $$ 150. Then, the\nnumber of elements in the set S is equal to\n______ .\n",
+    "questionText": "Let S be the set of all integer solutions, (x, y, z),\nof the system of equations\n<br>x \u2013 2y + 5z = 0\n<br>\u20132x + 4y + z = 0\n<br>\u20137x + 14y + 9z = 0\n<br>such that 15 $$ \\le $$ x<sup>2</sup>\n + y<sup>2</sup>\n + z<sup>2</sup> $$ \\le $$ 150. Then, the\nnumber of elements in the set S is equal to\n______ .\n",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -2059,7 +2059,7 @@
   {
     "id": "9Mw6Lbj0gcskJSXlCAjgy2xukfaju0ka",
     "questionNumber": 63,
-    "questionText": "If the system of equations<br>\nx+y+z=2<br>\n2x+4y–z=6<br>\n3x+2y+$$\\lambda $$z=$$\\mu $$<br>\nhas infinitely many solutions, then",
+    "questionText": "If the system of equations<br>\nx+y+z=2<br>\n2x+4y\u2013z=6<br>\n3x+2y+$$\\lambda $$z=$$\\mu $$<br>\nhas infinitely many solutions, then",
     "options": [
       "2$$\\lambda $$ - $$\\mu $$ = 5",
       "$$\\lambda $$ - 2$$\\mu $$ = -5",
@@ -2068,7 +2068,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -2076,7 +2076,7 @@
     "difficulty": "medium",
     "solution": "$$D = 0\\,\\left| {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   2 &amp; 4 &amp; { - 1}  \\cr \n   3 &amp; 2 &amp; \\lambda   \\cr \n\n } } \\right| = 0$$<br><br>$$ \\Rightarrow $$ $$(4\\lambda  + 2) - 1(2\\lambda  + 3) + 1(4 - 12) = 0$$<br><br>$$ \\Rightarrow $$ $$4\\lambda  + 2$$ $$ - 2\\lambda  - 3$$$$ - $$8$$ = 0$$<br><br>$$ \\Rightarrow $$ $$2\\lambda  = 9 \\Rightarrow \\lambda  = {9 \\over 2}$$<br><br>$${D_x} = \\left| {\\matrix{\n   2 &amp; 1 &amp; 1  \\cr \n   6 &amp; 4 &amp; { - 1}  \\cr \n   \\mu  &amp; 2 &amp; { - 9/2}  \\cr \n\n } } \\right| = 0$$<br><br>$$ \\Rightarrow \\mu  = 5$$<br><br>By checking all the options we find (C) is correct <br><br>$$2\\lambda  + \\mu  = 14$$",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "r4m8c8M3NQOXkfjMEDjgy2xukfagtbir",
@@ -2135,7 +2135,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "x + y + 3z = 0 .....(i)\n<br>x + 3y + k<sup>2</sup>z = 0  .........(ii)\n<br>3x + y + 3z = 0 ......(iii)\n<br><br>$$\\left| {\\matrix{\n   1 &amp; 1 &amp; 3  \\cr \n   1 &amp; 3 &amp; {{k^2}}  \\cr \n   3 &amp; 1 &amp; 3  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 9 + 3 + 3k<sup>2</sup>\n– 27 – k<sup>2</sup>\n– 3 = 0\n<br><br>$$ \\Rightarrow $$ k<sup>2</sup> = 9\n<br><br>Perform (i) – (iii),\n<br><br>–2x = 0 $$ \\Rightarrow $$ x = 0\n<br><br>Now from (i),  y + 3z = 0\n<br><br>$$ \\Rightarrow $$ $${y \\over z} =  - 3$$\n<br><br>$$ \\therefore $$ x + $$\\left( {{y \\over z}} \\right)$$ = -3",
+    "solution": "x + y + 3z = 0 .....(i)\n<br>x + 3y + k<sup>2</sup>z = 0  .........(ii)\n<br>3x + y + 3z = 0 ......(iii)\n<br><br>$$\\left| {\\matrix{\n   1 &amp; 1 &amp; 3  \\cr \n   1 &amp; 3 &amp; {{k^2}}  \\cr \n   3 &amp; 1 &amp; 3  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 9 + 3 + 3k<sup>2</sup>\n\u2013 27 \u2013 k<sup>2</sup>\n\u2013 3 = 0\n<br><br>$$ \\Rightarrow $$ k<sup>2</sup> = 9\n<br><br>Perform (i) \u2013 (iii),\n<br><br>\u20132x = 0 $$ \\Rightarrow $$ x = 0\n<br><br>Now from (i),  y + 3z = 0\n<br><br>$$ \\Rightarrow $$ $${y \\over z} =  - 3$$\n<br><br>$$ \\therefore $$ x + $$\\left( {{y \\over z}} \\right)$$ = -3",
     "section": "A",
     "type": "SCQ"
   },
@@ -2157,7 +2157,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "D = $$\\left| {\\matrix{\n   2 &amp; { - 4} &amp; \\lambda   \\cr \n   1 &amp; { - 6} &amp; 1  \\cr \n   \\lambda  &amp; { - 10} &amp; 4  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = 3, $$ - {2 \\over 3}$$\n<br><br>D<sub>1</sub> = $$\\left| {\\matrix{\n   1 &amp; { - 4} &amp; \\lambda   \\cr \n   2 &amp; { - 6} &amp; 1  \\cr \n   3 &amp; { - 10} &amp; 4  \\cr \n\n } } \\right|$$\n<br><br>= 14 + 4(5) + $$\\lambda $$(–2)\n<br><br>= –2$$\\lambda $$ + 6\n<br><br>D<sub>2</sub> = $$\\left| {\\matrix{\n   2 &amp; 1 &amp; \\lambda   \\cr \n   1 &amp; 2 &amp; 1  \\cr \n   \\lambda  &amp; 3 &amp; 4  \\cr \n\n } } \\right|$$\n<br><br>= –2($$\\lambda $$ – 3)($$\\lambda $$ + 1)\n<br><br>D<sub>3</sub> = $$\\left| {\\matrix{\n   2 &amp; { - 4} &amp; 1  \\cr \n   1 &amp; { - 6} &amp; 2  \\cr \n   \\lambda  &amp; { - 10} &amp; 3  \\cr \n\n } } \\right|$$\n<br><br>= – 2$$\\lambda $$ + 6\n<br><br>When , $$\\lambda $$ = 3 then\n<br><br>D = D<sub>1</sub> = D<sub>2</sub> = D<sub>3</sub> = 0\n<br><br>$$ \\Rightarrow $$ Infinite many solution\n<br><br>When $$\\lambda $$ = $$ - {2 \\over 3}$$ then D<sub>1</sub>, D<sub>2</sub>, D<sub>3</sub> none of them is zero so equations are inconsistant.\n<br><br>$$ \\therefore $$ $$\\lambda $$ = $$ - {2 \\over 3}$$",
+    "solution": "D = $$\\left| {\\matrix{\n   2 &amp; { - 4} &amp; \\lambda   \\cr \n   1 &amp; { - 6} &amp; 1  \\cr \n   \\lambda  &amp; { - 10} &amp; 4  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = 3, $$ - {2 \\over 3}$$\n<br><br>D<sub>1</sub> = $$\\left| {\\matrix{\n   1 &amp; { - 4} &amp; \\lambda   \\cr \n   2 &amp; { - 6} &amp; 1  \\cr \n   3 &amp; { - 10} &amp; 4  \\cr \n\n } } \\right|$$\n<br><br>= 14 + 4(5) + $$\\lambda $$(\u20132)\n<br><br>= \u20132$$\\lambda $$ + 6\n<br><br>D<sub>2</sub> = $$\\left| {\\matrix{\n   2 &amp; 1 &amp; \\lambda   \\cr \n   1 &amp; 2 &amp; 1  \\cr \n   \\lambda  &amp; 3 &amp; 4  \\cr \n\n } } \\right|$$\n<br><br>= \u20132($$\\lambda $$ \u2013 3)($$\\lambda $$ + 1)\n<br><br>D<sub>3</sub> = $$\\left| {\\matrix{\n   2 &amp; { - 4} &amp; 1  \\cr \n   1 &amp; { - 6} &amp; 2  \\cr \n   \\lambda  &amp; { - 10} &amp; 3  \\cr \n\n } } \\right|$$\n<br><br>= \u2013 2$$\\lambda $$ + 6\n<br><br>When , $$\\lambda $$ = 3 then\n<br><br>D = D<sub>1</sub> = D<sub>2</sub> = D<sub>3</sub> = 0\n<br><br>$$ \\Rightarrow $$ Infinite many solution\n<br><br>When $$\\lambda $$ = $$ - {2 \\over 3}$$ then D<sub>1</sub>, D<sub>2</sub>, D<sub>3</sub> none of them is zero so equations are inconsistant.\n<br><br>$$ \\therefore $$ $$\\lambda $$ = $$ - {2 \\over 3}$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -2174,7 +2174,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "$$\\left| {\\matrix{\n   {\\lambda  - 1} &amp; {3\\lambda  + 1} &amp; {2\\lambda }  \\cr \n   {\\lambda  - 1} &amp; {4\\lambda  - 2} &amp; {\\lambda  + 3}  \\cr \n   2 &amp; {3\\lambda  + 1} &amp; {3\\left( {\\lambda  - 1} \\right)}  \\cr \n\n } } \\right|$$ = 0\n<br><br>R<sub>2</sub> $$ \\to $$ R<sub>2</sub>\n – R<sub>1</sub>\n<br>R<sub>3</sub> $$ \\to $$ R<sub>3</sub>\n – R<sub>1</sub>\n<br><br>$$\\left| {\\matrix{\n   {\\lambda  - 1} &amp; {3\\lambda  + 1} &amp; {2\\lambda }  \\cr \n   0 &amp; {\\lambda  - 3} &amp; { - \\lambda  + 3}  \\cr \n   {3 - \\lambda } &amp; 0 &amp; {\\lambda  - 3}  \\cr \n\n } } \\right| = 0$$\n<br><br>C<sub>1</sub> $$ \\to $$ C<sub>1</sub>\n + C<sub>3</sub>\n<br><br>$$\\left| {\\matrix{\n   {3\\lambda  - 1} &amp; {3\\lambda  + 1} &amp; {2\\lambda }  \\cr \n   { - \\lambda  + 3} &amp; {\\lambda  - 3} &amp; { - \\lambda  + 3}  \\cr \n   0 &amp; 0 &amp; {\\lambda  - 3}  \\cr \n\n } } \\right| = 0$$\n<br>$$ \\Rightarrow $$ ($$\\lambda $$ - 3) [(3$$\\lambda $$ - 1) ($$\\lambda $$ - 3) – (3 – $$\\lambda $$) (3$$\\lambda $$ + 1)] = 0\n<br>$$ \\Rightarrow $$ ($$\\lambda $$ – 3) [3$$\\lambda $$<sup>2</sup>\n – 10$$\\lambda $$ + 3 –(8$$\\lambda $$ –3$$\\lambda $$<sup>2</sup>\n + 3)] = 0\n<br>$$ \\Rightarrow $$ ($$\\lambda $$ – 3) (6$$\\lambda $$<sup>2</sup>\n – 18$$\\lambda $$) = 0\n<br>$$ \\Rightarrow $$ (6$$\\lambda $$) ($$\\lambda $$ – 3)<sup>2</sup> = 0\n<br>$$ \\Rightarrow $$ $$\\lambda $$ = 0, 3\n<br>$$ \\therefore $$ sum of values of $$\\lambda $$ = 0 + 3 = 3",
+    "solution": "$$\\left| {\\matrix{\n   {\\lambda  - 1} &amp; {3\\lambda  + 1} &amp; {2\\lambda }  \\cr \n   {\\lambda  - 1} &amp; {4\\lambda  - 2} &amp; {\\lambda  + 3}  \\cr \n   2 &amp; {3\\lambda  + 1} &amp; {3\\left( {\\lambda  - 1} \\right)}  \\cr \n\n } } \\right|$$ = 0\n<br><br>R<sub>2</sub> $$ \\to $$ R<sub>2</sub>\n \u2013 R<sub>1</sub>\n<br>R<sub>3</sub> $$ \\to $$ R<sub>3</sub>\n \u2013 R<sub>1</sub>\n<br><br>$$\\left| {\\matrix{\n   {\\lambda  - 1} &amp; {3\\lambda  + 1} &amp; {2\\lambda }  \\cr \n   0 &amp; {\\lambda  - 3} &amp; { - \\lambda  + 3}  \\cr \n   {3 - \\lambda } &amp; 0 &amp; {\\lambda  - 3}  \\cr \n\n } } \\right| = 0$$\n<br><br>C<sub>1</sub> $$ \\to $$ C<sub>1</sub>\n + C<sub>3</sub>\n<br><br>$$\\left| {\\matrix{\n   {3\\lambda  - 1} &amp; {3\\lambda  + 1} &amp; {2\\lambda }  \\cr \n   { - \\lambda  + 3} &amp; {\\lambda  - 3} &amp; { - \\lambda  + 3}  \\cr \n   0 &amp; 0 &amp; {\\lambda  - 3}  \\cr \n\n } } \\right| = 0$$\n<br>$$ \\Rightarrow $$ ($$\\lambda $$ - 3) [(3$$\\lambda $$ - 1) ($$\\lambda $$ - 3) \u2013 (3 \u2013 $$\\lambda $$) (3$$\\lambda $$ + 1)] = 0\n<br>$$ \\Rightarrow $$ ($$\\lambda $$ \u2013 3) [3$$\\lambda $$<sup>2</sup>\n \u2013 10$$\\lambda $$ + 3 \u2013(8$$\\lambda $$ \u20133$$\\lambda $$<sup>2</sup>\n + 3)] = 0\n<br>$$ \\Rightarrow $$ ($$\\lambda $$ \u2013 3) (6$$\\lambda $$<sup>2</sup>\n \u2013 18$$\\lambda $$) = 0\n<br>$$ \\Rightarrow $$ (6$$\\lambda $$) ($$\\lambda $$ \u2013 3)<sup>2</sup> = 0\n<br>$$ \\Rightarrow $$ $$\\lambda $$ = 0, 3\n<br>$$ \\therefore $$ sum of values of $$\\lambda $$ = 0 + 3 = 3",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -2196,7 +2196,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "For infinite many solutions\n<br><br>D = D<sub>1</sub> = D<sub>2</sub> = D<sub>3</sub> = 0\n<br><br>Now D = $$\\left| {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; 2 &amp; 3  \\cr \n   1 &amp; 3 &amp; \\lambda   \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 1. (2$$\\lambda $$ – 9) –1.($$\\lambda $$ – 3) + 1.(3 – 2) = 0\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = 5\n<br><br>Now D<sub>1</sub> = $$\\left| {\\matrix{\n   2 &amp; 1 &amp; 1  \\cr \n   5 &amp; 2 &amp; 3  \\cr \n   \\mu  &amp; 3 &amp; 5  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 2(10 – 9) –1(25 – 3$$\\mu $$) + 1(15 – 2$$\\mu $$) = 0\n<br><br>$$ \\Rightarrow $$ $$\\mu $$ = 8",
+    "solution": "For infinite many solutions\n<br><br>D = D<sub>1</sub> = D<sub>2</sub> = D<sub>3</sub> = 0\n<br><br>Now D = $$\\left| {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; 2 &amp; 3  \\cr \n   1 &amp; 3 &amp; \\lambda   \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 1. (2$$\\lambda $$ \u2013 9) \u20131.($$\\lambda $$ \u2013 3) + 1.(3 \u2013 2) = 0\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = 5\n<br><br>Now D<sub>1</sub> = $$\\left| {\\matrix{\n   2 &amp; 1 &amp; 1  \\cr \n   5 &amp; 2 &amp; 3  \\cr \n   \\mu  &amp; 3 &amp; 5  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 2(10 \u2013 9) \u20131(25 \u2013 3$$\\mu $$) + 1(15 \u2013 2$$\\mu $$) = 0\n<br><br>$$ \\Rightarrow $$ $$\\mu $$ = 8",
     "section": "A",
     "type": "SCQ"
   },
@@ -2213,7 +2213,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "Given system of equation more than\n2 solutions.\nHence system of equation has infinite many\nsolution.\n<br><br>$$ \\therefore $$ $$\\Delta $$ = $$\\Delta $$<sub>1</sub> = $$\\Delta $$<sub>2</sub> = $$\\Delta $$<sub>3</sub> = 0\n<br><br>$$\\Delta $$ = $$\\left| {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; 2 &amp; 3  \\cr \n   3 &amp; 2 &amp; \\lambda   \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 1(2λ – 6) – 1(λ – 9) + 1(– 4) = 0\n<br><br>$$ \\Rightarrow $$ 2λ – 6 – λ + 9 – 4 = 0\n<br><br>$$ \\Rightarrow $$ λ = 1\n<br><br>$$\\Delta $$<sub>1</sub> = $$\\left| {\\matrix{\n   6 &amp; 1 &amp; 1  \\cr \n   {10} &amp; 2 &amp; 3  \\cr \n   \\mu  &amp; 2 &amp; \\lambda   \\cr \n\n } } \\right|$$ = 0\n<br> 6(2λ – 6) – 1(10λ – 3μ) + 1(20 – 2μ) = 0\n<br><br>$$ \\Rightarrow $$ 12λ – 36 – 10λ + 3μ + 20 – 2μ = 0\n<br><br>$$ \\Rightarrow $$ 2λ + μ = 16\n<br><br>$$ \\Rightarrow $$ 2 + μ = 16\n<br><br>$$ \\Rightarrow $$ $$\\mu $$ = 14\n<br><br> $$ \\therefore $$ $$\\mu $$ - $$\\lambda $$<sup>2</sup> = 14 - 1 = 13",
+    "solution": "Given system of equation more than\n2 solutions.\nHence system of equation has infinite many\nsolution.\n<br><br>$$ \\therefore $$ $$\\Delta $$ = $$\\Delta $$<sub>1</sub> = $$\\Delta $$<sub>2</sub> = $$\\Delta $$<sub>3</sub> = 0\n<br><br>$$\\Delta $$ = $$\\left| {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; 2 &amp; 3  \\cr \n   3 &amp; 2 &amp; \\lambda   \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 1(2\u03bb \u2013 6) \u2013 1(\u03bb \u2013 9) + 1(\u2013 4) = 0\n<br><br>$$ \\Rightarrow $$ 2\u03bb \u2013 6 \u2013 \u03bb + 9 \u2013 4 = 0\n<br><br>$$ \\Rightarrow $$ \u03bb = 1\n<br><br>$$\\Delta $$<sub>1</sub> = $$\\left| {\\matrix{\n   6 &amp; 1 &amp; 1  \\cr \n   {10} &amp; 2 &amp; 3  \\cr \n   \\mu  &amp; 2 &amp; \\lambda   \\cr \n\n } } \\right|$$ = 0\n<br> 6(2\u03bb \u2013 6) \u2013 1(10\u03bb \u2013 3\u03bc) + 1(20 \u2013 2\u03bc) = 0\n<br><br>$$ \\Rightarrow $$ 12\u03bb \u2013 36 \u2013 10\u03bb + 3\u03bc + 20 \u2013 2\u03bc = 0\n<br><br>$$ \\Rightarrow $$ 2\u03bb + \u03bc = 16\n<br><br>$$ \\Rightarrow $$ 2 + \u03bc = 16\n<br><br>$$ \\Rightarrow $$ $$\\mu $$ = 14\n<br><br> $$ \\therefore $$ $$\\mu $$ - $$\\lambda $$<sup>2</sup> = 14 - 1 = 13",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -2235,7 +2235,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "For non-zero solution\n<br><br>$$\\left| {\\matrix{\n   2 &amp; {2a} &amp; a  \\cr \n   2 &amp; {3b} &amp; b  \\cr \n   2 &amp; {4c} &amp; c  \\cr \n\n } } \\right| = 0$$\n<br><br>$$ \\Rightarrow $$ $$\\left| {\\matrix{\n   1 &amp; {2a} &amp; a  \\cr \n   0 &amp; {3b - 2a} &amp; {b - a}  \\cr \n   0 &amp; {4c - 2a} &amp; {c - a}  \\cr \n\n } } \\right| = 0$$\n<br><br>$$ \\Rightarrow $$  (3b – 2a) (c –a) – (b – a) (4c – 2a) = 0\n<br><br>$$ \\Rightarrow $$ 2ac = bc + ab\n<br><br>$$ \\Rightarrow $$ $${2 \\over b} = {1 \\over a} + {1 \\over c}$$\n<br><br>$$ \\therefore $$ $${1 \\over a},{1 \\over b},{1 \\over c}$$ are in A.P. ",
+    "solution": "For non-zero solution\n<br><br>$$\\left| {\\matrix{\n   2 &amp; {2a} &amp; a  \\cr \n   2 &amp; {3b} &amp; b  \\cr \n   2 &amp; {4c} &amp; c  \\cr \n\n } } \\right| = 0$$\n<br><br>$$ \\Rightarrow $$ $$\\left| {\\matrix{\n   1 &amp; {2a} &amp; a  \\cr \n   0 &amp; {3b - 2a} &amp; {b - a}  \\cr \n   0 &amp; {4c - 2a} &amp; {c - a}  \\cr \n\n } } \\right| = 0$$\n<br><br>$$ \\Rightarrow $$  (3b \u2013 2a) (c \u2013a) \u2013 (b \u2013 a) (4c \u2013 2a) = 0\n<br><br>$$ \\Rightarrow $$ 2ac = bc + ab\n<br><br>$$ \\Rightarrow $$ $${2 \\over b} = {1 \\over a} + {1 \\over c}$$\n<br><br>$$ \\therefore $$ $${1 \\over a},{1 \\over b},{1 \\over c}$$ are in A.P. ",
     "section": "A",
     "type": "SCQ"
   },
@@ -2244,7 +2244,7 @@
     "questionNumber": 63,
     "questionText": "The system of linear equations<br>\n$$\\lambda $$x + 2y + 2z = 5<br>\n2$$\\lambda $$x + 3y + 5z = 8<br>\n4x + $$\\lambda $$y + 6z = 10 has",
     "options": [
-      "a unique solution when $$\\lambda $$ = –8",
+      "a unique solution when $$\\lambda $$ = \u20138",
       "no solution when $$\\lambda $$ = 2",
       "infinitely many solutions when $$\\lambda $$ = 2",
       "no solution when $$\\lambda $$ = 8"
@@ -2257,7 +2257,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "$$\\Delta $$ = $$\\left| {\\matrix{\n   \\lambda  &amp; 2 &amp; 2  \\cr \n   {2\\lambda } &amp; 3 &amp; 5  \\cr \n   4 &amp; \\lambda  &amp; 6  \\cr \n\n } } \\right|$$\n<br><br>=  $$\\lambda $$ ( 18 – 5$$\\lambda $$) – 2(12$$\\lambda $$ – 20) + 2(2$$\\lambda $$<sup>2</sup>\n – 12)\n<br><br>= 18$$\\lambda $$ – 5$$\\lambda $$<sup>2</sup>\n – 24$$\\lambda $$ + 40 + 4$$\\lambda $$<sup>2</sup>\n – 24\n<br><br>= – $$\\lambda $$<sup>2</sup>\n – 6$$\\lambda $$ + 16\n<br><br>= – ($$\\lambda $$ + 8)($$\\lambda $$ – 2)\n<br><br>For no solutions $$\\lambda $$ = 0 $$ \\Rightarrow $$ $$\\lambda $$ = – 8, $$\\lambda $$ = 2\n<br><br>when $$\\lambda $$ = 2\n<br><br>$$\\Delta $$<sub>x</sub> = $$\\left| {\\matrix{\n   5 &amp; 2 &amp; 2  \\cr \n   8 &amp; 3 &amp; 5  \\cr \n   {10} &amp; 2 &amp; 6  \\cr \n\n } } \\right|$$\n<br><br>= 5 (18 – 10) – 2 (48 – 50) + 2 (16 – 30) \n<br><br>= 40 + 4 – 28 $$ \\ne $$ 0\n<br><br>So no solution for $$\\lambda $$ = 2",
+    "solution": "$$\\Delta $$ = $$\\left| {\\matrix{\n   \\lambda  &amp; 2 &amp; 2  \\cr \n   {2\\lambda } &amp; 3 &amp; 5  \\cr \n   4 &amp; \\lambda  &amp; 6  \\cr \n\n } } \\right|$$\n<br><br>=  $$\\lambda $$ ( 18 \u2013 5$$\\lambda $$) \u2013 2(12$$\\lambda $$ \u2013 20) + 2(2$$\\lambda $$<sup>2</sup>\n \u2013 12)\n<br><br>= 18$$\\lambda $$ \u2013 5$$\\lambda $$<sup>2</sup>\n \u2013 24$$\\lambda $$ + 40 + 4$$\\lambda $$<sup>2</sup>\n \u2013 24\n<br><br>= \u2013 $$\\lambda $$<sup>2</sup>\n \u2013 6$$\\lambda $$ + 16\n<br><br>= \u2013 ($$\\lambda $$ + 8)($$\\lambda $$ \u2013 2)\n<br><br>For no solutions $$\\lambda $$ = 0 $$ \\Rightarrow $$ $$\\lambda $$ = \u2013 8, $$\\lambda $$ = 2\n<br><br>when $$\\lambda $$ = 2\n<br><br>$$\\Delta $$<sub>x</sub> = $$\\left| {\\matrix{\n   5 &amp; 2 &amp; 2  \\cr \n   8 &amp; 3 &amp; 5  \\cr \n   {10} &amp; 2 &amp; 6  \\cr \n\n } } \\right|$$\n<br><br>= 5 (18 \u2013 10) \u2013 2 (48 \u2013 50) + 2 (16 \u2013 30) \n<br><br>= 40 + 4 \u2013 28 $$ \\ne $$ 0\n<br><br>So no solution for $$\\lambda $$ = 2",
     "section": "A",
     "type": "SCQ"
   },
@@ -2286,7 +2286,7 @@
   {
     "id": "smoZSqPnEuRLubvtFV7k9k2k5k6n942",
     "questionNumber": 63,
-    "questionText": "The following system of linear equations<br>\n7x + 6y – 2z = 0<br>\n3x + 4y + 2z = 0<br>\nx – 2y – 6z = 0, has",
+    "questionText": "The following system of linear equations<br>\n7x + 6y \u2013 2z = 0<br>\n3x + 4y + 2z = 0<br>\nx \u2013 2y \u2013 6z = 0, has",
     "options": [
       "no solution",
       "infinitely many solutions, (x, y, z) satisfying\ny = 2z",
@@ -2301,14 +2301,14 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "Given\n<br>7x + 6y – 2z = 0 .......(1)<br>\n3x + 4y + 2z = 0 ......(2)<br>\nx – 2y – 6z = 0 .......(3)\n<br><br>$$\\Delta $$ = $$\\left| {\\matrix{\n   7 &amp; 6 &amp; { - 2}  \\cr \n   3 &amp; 4 &amp; 2  \\cr \n   1 &amp; { - 2} &amp; { - 6}  \\cr \n\n } } \\right|$$\n<br><br>=  7(–24 + 4) – 6(–18 – 2) – 2(–6 – 4) = 0\n<br><br>$$ \\therefore $$ $$\\Delta $$ = 0\n<br><br>The system of equation has infinite non-trival solution.\n<br><br>Also adding equation (1) and 3$$ \\times $$(3), we get\n<br><br>10x = 20z\n<br><br>$$ \\Rightarrow $$ x = 2z",
+    "solution": "Given\n<br>7x + 6y \u2013 2z = 0 .......(1)<br>\n3x + 4y + 2z = 0 ......(2)<br>\nx \u2013 2y \u2013 6z = 0 .......(3)\n<br><br>$$\\Delta $$ = $$\\left| {\\matrix{\n   7 &amp; 6 &amp; { - 2}  \\cr \n   3 &amp; 4 &amp; 2  \\cr \n   1 &amp; { - 2} &amp; { - 6}  \\cr \n\n } } \\right|$$\n<br><br>=  7(\u201324 + 4) \u2013 6(\u201318 \u2013 2) \u2013 2(\u20136 \u2013 4) = 0\n<br><br>$$ \\therefore $$ $$\\Delta $$ = 0\n<br><br>The system of equation has infinite non-trival solution.\n<br><br>Also adding equation (1) and 3$$ \\times $$(3), we get\n<br><br>10x = 20z\n<br><br>$$ \\Rightarrow $$ x = 2z",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "NGdiQX4MhPGe9ikRQC7k9k2k5itcig0",
     "questionNumber": 62,
-    "questionText": "If for some $$\\alpha $$ and $$\\beta $$ in R, the intersection of the\nfollowing three places<br>\nx + 4y – 2z = 1<br>\nx + 7y – 5z = b<br>\nx + 5y + $$\\alpha $$z = 5<br>\nis a line in R<sup>3</sup>, then $$\\alpha $$ + $$\\beta $$ is equal to :",
+    "questionText": "If for some $$\\alpha $$ and $$\\beta $$ in R, the intersection of the\nfollowing three places<br>\nx + 4y \u2013 2z = 1<br>\nx + 7y \u2013 5z = b<br>\nx + 5y + $$\\alpha $$z = 5<br>\nis a line in R<sup>3</sup>, then $$\\alpha $$ + $$\\beta $$ is equal to :",
     "options": [
       "-10",
       "0",
@@ -2323,14 +2323,14 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "For planes to intersect on a line there should be infinite solution of the\ngiven system of equations.\n<br><br>For infinite solutions\n<br><br>$$\\Delta $$ = $$\\left| {\\matrix{\n   1 &amp; 4 &amp; { - 2}  \\cr \n   1 &amp; 7 &amp; { - 5}  \\cr \n   1 &amp; 5 &amp; \\alpha   \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 1(7$$\\alpha $$ + 25) – 4($$\\alpha $$ + 5) – 2(5 – 7) = 0\n<br><br>$$ \\Rightarrow $$ 7$$\\alpha $$ + 25 – 4$$\\alpha $$ – 20 + 4 = 0\n<br><br>$$ \\Rightarrow $$ 3$$\\alpha $$ + 9 = 0\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = -3\n<br><br>Also $$\\Delta $$<sub>z</sub> = 0\n<br><br>$$ \\Rightarrow $$ $$\\left| {\\matrix{\n   1 &amp; 4 &amp; 1  \\cr \n   1 &amp; 7 &amp; \\beta   \\cr \n   1 &amp; 5 &amp; 5  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 1(35 – 5$$\\beta $$) – 4(5 – $$\\beta $$) + 1(5 – 7) = 0\n<br><br>$$ \\Rightarrow $$ 35 - 5$$\\beta $$ - 20 + 4$$\\beta $$ - 2 = 0\n<br><br>$$ \\Rightarrow $$ $$\\beta $$ = 13\n<br><br>$$ \\therefore $$ $$\\alpha $$ + $$\\beta $$ = -3 + 13 = 10",
+    "solution": "For planes to intersect on a line there should be infinite solution of the\ngiven system of equations.\n<br><br>For infinite solutions\n<br><br>$$\\Delta $$ = $$\\left| {\\matrix{\n   1 &amp; 4 &amp; { - 2}  \\cr \n   1 &amp; 7 &amp; { - 5}  \\cr \n   1 &amp; 5 &amp; \\alpha   \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 1(7$$\\alpha $$ + 25) \u2013 4($$\\alpha $$ + 5) \u2013 2(5 \u2013 7) = 0\n<br><br>$$ \\Rightarrow $$ 7$$\\alpha $$ + 25 \u2013 4$$\\alpha $$ \u2013 20 + 4 = 0\n<br><br>$$ \\Rightarrow $$ 3$$\\alpha $$ + 9 = 0\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = -3\n<br><br>Also $$\\Delta $$<sub>z</sub> = 0\n<br><br>$$ \\Rightarrow $$ $$\\left| {\\matrix{\n   1 &amp; 4 &amp; 1  \\cr \n   1 &amp; 7 &amp; \\beta   \\cr \n   1 &amp; 5 &amp; 5  \\cr \n\n } } \\right|$$ = 0\n<br><br>$$ \\Rightarrow $$ 1(35 \u2013 5$$\\beta $$) \u2013 4(5 \u2013 $$\\beta $$) + 1(5 \u2013 7) = 0\n<br><br>$$ \\Rightarrow $$ 35 - 5$$\\beta $$ - 20 + 4$$\\beta $$ - 2 = 0\n<br><br>$$ \\Rightarrow $$ $$\\beta $$ = 13\n<br><br>$$ \\therefore $$ $$\\alpha $$ + $$\\beta $$ = -3 + 13 = 10",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "JZwkUYQ4zq6QEqebXY3rsa0w2w9jx236oa3",
     "questionNumber": 79,
-    "questionText": "Let $$\\lambda $$ be a real number for which the system of linear equations x + y + z = 6, 4x + $$\\lambda $$y – $$\\lambda $$z = $$\\lambda $$ – 2,\n3x + 2y – 4z = – 5 has infinitely many solutions. Then $$\\lambda $$ is a root of the quadratic equation:",
+    "questionText": "Let $$\\lambda $$ be a real number for which the system of linear equations x + y + z = 6, 4x + $$\\lambda $$y \u2013 $$\\lambda $$z = $$\\lambda $$ \u2013 2,\n3x + 2y \u2013 4z = \u2013 5 has infinitely many solutions. Then $$\\lambda $$ is a root of the quadratic equation:",
     "options": [
       "$$\\lambda $$<sup>2</sup> + $$\\lambda $$ - 6 = 0",
       "$$\\lambda $$<sup>2</sup> - $$\\lambda $$ - 6 = 0",
@@ -2418,12 +2418,12 @@
   {
     "id": "SQdlZGDAX2v9SsT2dj0Rf",
     "questionNumber": 82,
-    "questionText": "If the system of linear equations\n<br>2x + 2y + 3z = a\n<br>3x – y + 5z = b\n<br>x – 3y + 2z = c\n<br>where a, b, c are non zero real numbers, has more one solution, then : ",
+    "questionText": "If the system of linear equations\n<br>2x + 2y + 3z = a\n<br>3x \u2013 y + 5z = b\n<br>x \u2013 3y + 2z = c\n<br>where a, b, c are non zero real numbers, has more one solution, then : ",
     "options": [
-      "b – c – a = 0",
+      "b \u2013 c \u2013 a = 0",
       "a + b + c = 0",
-      "b – c + a = 0",
-      "b + c – a = 0"
+      "b \u2013 c + a = 0",
+      "b + c \u2013 a = 0"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -2440,7 +2440,7 @@
   {
     "id": "z0Ep8YB1pu7YM0a4MG1hU",
     "questionNumber": 78,
-    "questionText": "The set of all values of $$\\lambda $$ for which the system of linear equations\n<br>x – 2y – 2z = $$\\lambda $$x\n<br>x + 2y + z = $$\\lambda $$y\n<br>– x – y = $$\\lambda $$z\n<br>has a non-trivial solutions :",
+    "questionText": "The set of all values of $$\\lambda $$ for which the system of linear equations\n<br>x \u2013 2y \u2013 2z = $$\\lambda $$x\n<br>x + 2y + z = $$\\lambda $$y\n<br>\u2013 x \u2013 y = $$\\lambda $$z\n<br>has a non-trivial solutions :",
     "options": [
       "is an empty set",
       "contains more than two elements",
@@ -2464,9 +2464,9 @@
     "questionNumber": 77,
     "questionText": "An ordered pair ($$\\alpha $$, $$\\beta $$) for which the system of linear equations \n<br>(1 + $$\\alpha $$) x + $$\\beta $$y + z = 2 \n<br>$$\\alpha $$x + (1 + $$\\beta $$)y + z = 3 \n<br>$$\\alpha $$x + $$\\beta $$y + 2z = 2 \n<br>has a unique solution, is : ",
     "options": [
-      "(–3, 1) ",
-      "(1, –3) ",
-      "(–4, 2) ",
+      "(\u20133, 1) ",
+      "(1, \u20133) ",
+      "(\u20134, 2) ",
       "(2, 4) "
     ],
     "correctOption": 3,
@@ -2484,7 +2484,7 @@
   {
     "id": "V1GwSMBgU8TtzC3pJZMkz",
     "questionNumber": 81,
-    "questionText": "The greatest value of c $$ \\in $$ R for which the system\nof linear equations<br>\nx – cy – cz = 0<br>\ncx – y + cz = 0<br>\ncx + cy – z = 0<br>\nhas a non-trivial solution, is :",
+    "questionText": "The greatest value of c $$ \\in $$ R for which the system\nof linear equations<br>\nx \u2013 cy \u2013 cz = 0<br>\ncx \u2013 y + cz = 0<br>\ncx + cy \u2013 z = 0<br>\nhas a non-trivial solution, is :",
     "options": [
       "-1",
       "0",
@@ -2506,7 +2506,7 @@
   {
     "id": "HMsP8Zu83OwHy7SXri18hoxe66ijvwu7iyt",
     "questionNumber": 79,
-    "questionText": "If the system of equations 2x + 3y – z = 0, x + ky\n– 2z = 0 and 2x – y + z = 0 has a non-trival solution\n(x, y, z), then $${x \\over y} + {y \\over z} + {z \\over x} + k$$\nis equal to :-",
+    "questionText": "If the system of equations 2x + 3y \u2013 z = 0, x + ky\n\u2013 2z = 0 and 2x \u2013 y + z = 0 has a non-trival solution\n(x, y, z), then $${x \\over y} + {y \\over z} + {z \\over x} + k$$\nis equal to :-",
     "options": [
       "-4",
       "$${3 \\over 4}$$",
@@ -2521,7 +2521,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "Given 2x + 3y – z = 0, \n<br><br>x + ky – 2z = 0\n<br><br>2x – y + z = 0\n<br><br>For non trivial solution\n<br><br>$$\\Delta  = 0 \\Rightarrow \\left| {\\matrix{\n   2 &amp; 3 &amp; { - 1}  \\cr \n   1 &amp; k &amp; { - 2}  \\cr \n   2 &amp; { - 1} &amp; 1  \\cr \n\n } } \\right| = 0$$<br><br>\n$$ \\Rightarrow k = {9 \\over 2}$$<br><br>\n$$ \\therefore $$ Equations are 2x + 3y – z = 0 ...(i)\n<br><br>\n2x – y + z = 0 ...(ii)<br><br>\n2x + 9y – 4z = 0 ...(iii)<br><br>\nBy (i) – (ii) we get,\n<br><br>4y - 2z = 0\n<br><br>$$ \\Rightarrow $$ 2y = z .......(iv)\n<br><br>$$ \\Rightarrow $$ $${y \\over z} = {1 \\over 2}$$\n<br><br>From equation (i) and (iv)\n<br><br>2x + 3y - 2y = 0\n<br><br>$$ \\Rightarrow $$ 2x + y = 0\n<br><br>$$ \\Rightarrow $$ $${x \\over y} =  - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $${x \\over y} \\times {y \\over z} =  - {1 \\over 2} \\times {1 \\over 2} =  - {1 \\over 4}$$\n<br><br>$$ \\Rightarrow $$ $${z \\over x} =  - 4$$\n\n<br><br>$$ \\therefore $$ $${x \\over y} + {y \\over z} + {z \\over x} + k = {{ - 1} \\over 2} + {1 \\over 2} - 4 + {9 \\over 2}$$ = $${1 \\over 2}$$<br><br>\n",
+    "solution": "Given 2x + 3y \u2013 z = 0, \n<br><br>x + ky \u2013 2z = 0\n<br><br>2x \u2013 y + z = 0\n<br><br>For non trivial solution\n<br><br>$$\\Delta  = 0 \\Rightarrow \\left| {\\matrix{\n   2 &amp; 3 &amp; { - 1}  \\cr \n   1 &amp; k &amp; { - 2}  \\cr \n   2 &amp; { - 1} &amp; 1  \\cr \n\n } } \\right| = 0$$<br><br>\n$$ \\Rightarrow k = {9 \\over 2}$$<br><br>\n$$ \\therefore $$ Equations are 2x + 3y \u2013 z = 0 ...(i)\n<br><br>\n2x \u2013 y + z = 0 ...(ii)<br><br>\n2x + 9y \u2013 4z = 0 ...(iii)<br><br>\nBy (i) \u2013 (ii) we get,\n<br><br>4y - 2z = 0\n<br><br>$$ \\Rightarrow $$ 2y = z .......(iv)\n<br><br>$$ \\Rightarrow $$ $${y \\over z} = {1 \\over 2}$$\n<br><br>From equation (i) and (iv)\n<br><br>2x + 3y - 2y = 0\n<br><br>$$ \\Rightarrow $$ 2x + y = 0\n<br><br>$$ \\Rightarrow $$ $${x \\over y} =  - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $${x \\over y} \\times {y \\over z} =  - {1 \\over 2} \\times {1 \\over 2} =  - {1 \\over 4}$$\n<br><br>$$ \\Rightarrow $$ $${z \\over x} =  - 4$$\n\n<br><br>$$ \\therefore $$ $${x \\over y} + {y \\over z} + {z \\over x} + k = {{ - 1} \\over 2} + {1 \\over 2} - 4 + {9 \\over 2}$$ = $${1 \\over 2}$$<br><br>\n",
     "section": "A",
     "type": "SCQ"
   },
@@ -2550,7 +2550,7 @@
   {
     "id": "MpyEVVbwxRUBTKEHiR8Ao",
     "questionNumber": 79,
-    "questionText": "The system of linear equations\n<br> x + y + z = 2\n<br>2x + 3y + 2z = 5 \n<br>2x + 3y + (a<sup>2</sup> – 1) z = a + 1 then\n",
+    "questionText": "The system of linear equations\n<br> x + y + z = 2\n<br>2x + 3y + 2z = 5 \n<br>2x + 3y + (a<sup>2</sup> \u2013 1) z = a + 1 then\n",
     "options": [
       "has infinitely many solutions for a = 4 ",
       "has a unique solution for |a| = $$\\sqrt3$$",
@@ -2698,7 +2698,7 @@
     "subject": "Mathematics",
     "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
     "difficulty": "medium",
-    "solution": "$$\\left| {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; a &amp; 1  \\cr \n   a &amp; b &amp; 1  \\cr \n\n } } \\right| = 0$$\n<br><br>$$ \\Rightarrow $$ 1 [a – b] – 1 [1 – a] + 1 [b – a<sup>2</sup>] = 0\n<br><br>$$ \\Rightarrow $$ (a - 1)<sup>2</sup> = 0\n<br><br>$$ \\Rightarrow $$ a = 1\n<br><br>For a = 1, the equations become\n<br><br>x + y + z = 1\n<br><br>x + y + z = 1\n<br><br>x + by + z = 0\n<br><br>These equations give no solution for b = 1\n<br><br>$$ \\Rightarrow $$ S is singleton set.",
+    "solution": "$$\\left| {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; a &amp; 1  \\cr \n   a &amp; b &amp; 1  \\cr \n\n } } \\right| = 0$$\n<br><br>$$ \\Rightarrow $$ 1 [a \u2013 b] \u2013 1 [1 \u2013 a] + 1 [b \u2013 a<sup>2</sup>] = 0\n<br><br>$$ \\Rightarrow $$ (a - 1)<sup>2</sup> = 0\n<br><br>$$ \\Rightarrow $$ a = 1\n<br><br>For a = 1, the equations become\n<br><br>x + y + z = 1\n<br><br>x + y + z = 1\n<br><br>x + by + z = 0\n<br><br>These equations give no solution for b = 1\n<br><br>$$ \\Rightarrow $$ S is singleton set.",
     "section": "A",
     "type": "SCQ"
   },
@@ -2754,7 +2754,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -2763,7 +2763,7 @@
     "solution": "<p>The given system of linear equation is</p>\n<p>ax + 2y = $$\\lambda$$</p>\n<p>3x $$-$$ 2y = $$\\mu$$</p>\n<p>By Cramer's rule, we have</p>\n<p>$$\\Delta  = \\left| {\\matrix{\n   a & 2  \\cr \n   3 & { - 2}  \\cr \n\n } } \\right| =  - 2a - 6 =  - 2(a + 3)$$</p>\n<p>$${\\Delta _1} = \\left| {\\matrix{\n   \\lambda  & 2  \\cr \n   \\mu  & { - 2}  \\cr \n\n } } \\right| =  - 2\\lambda  - 2\\mu  =  - 2(\\lambda  + \\mu )$$</p>\n<p>$${\\Delta _2} = \\left| {\\matrix{\n   a & \\lambda   \\cr \n   3 & \\mu   \\cr \n\n } } \\right| = (a\\mu  - 3\\lambda )$$</p>\n<p>For unique solution: $$\\Delta$$ $$\\ne$$ 0 $$\\Rightarrow$$ a + 3 $$\\ne$$ 0 $$\\Rightarrow$$ a $$\\ne$$ $$-$$3, where $$\\lambda$$ and $$\\mu$$ can take any values.</p>\n<p>Hence, option (B) is correct.</p>\n<p>For infinite solution: $$\\Delta$$ = 0, $$\\Delta$$<sub>1</sub> and $$\\Delta$$<sub>2</sub> are zero.</p>\n<p>That is, a = $$-$$3 and $$\\lambda$$ + $$\\mu$$ = 0 or a$$\\mu$$ $$-$$ 3$$\\lambda$$ = 0.</p>\n<p>Hence, options (C) are correct.</p>\n<p>For no solution: $$\\Delta$$ = 0 and either $$\\Delta$$<sub>1</sub> or $$\\Delta$$<sub>2</sub> is non-zero.</p>\n<p>That is, a = $$-$$3 and $$\\lambda$$ + $$\\mu$$ $$\\ne$$ 0.</p>\n<p>Hence, option (D) is correct.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "cZjTe4dWg3qrDPLQ",
@@ -2874,7 +2874,7 @@
     "solution": "<p>Given, $${[\\matrix{\n   a & b & c  \\cr \n\n } ]_{1 \\times 3}}{\\left[ {\\matrix{\n   1 & 9 & 7  \\cr \n   8 & 2 & 7  \\cr \n   7 & 3 & 7  \\cr \n\n } } \\right]_{3 \\times 3}} = [\\matrix{\n   0 & 0 & 0  \\cr \n\n } ]$$</p>\n<p>$$ \\Rightarrow \\left[ {\\matrix{\n   {a + 8b + 7c}  \\cr \n   {9a + 2b + 3c}  \\cr \n   {7a + 7b + 7c}  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   0  \\cr \n   0  \\cr \n   0  \\cr \n\n } } \\right]$$</p>\n<p>$$ \\Rightarrow a + 8b + 7c = 0$$ ..... (i)</p>\n<p>$$ \\Rightarrow 9a + 2b + 3c = 0$$ .... (ii)</p>\n<p>$$ \\Rightarrow a + b + c = 0$$ ....... (iii)</p>\n<p>On multiplying Eq. (iii) by 2, then subtract from Eq. (ii), we get</p>\n<p>$$7a + c = 0$$ ..... (iv)</p>\n<p>Again multiplying Eq. (iii) by 3, then subtract from Eq. (ii), we get</p>\n<p>$$6a - b = 0$$ ..... (v)</p>\n<p>$$\\therefore$$ $$b = 6a$$ and $$c =  - 7a$$</p>\n<p>As (a, b, c) lies on $$2x + y + z = 1$$</p>\n<p>$$ \\Rightarrow 2a + b + c = 1$$</p>\n<p>$$ \\Rightarrow 2a + 6a - 7a = 1$$</p>\n<p>$$\\Rightarrow$$ a = 1, b = 6 and c = $$-$$7</p>\n<p>$$\\therefore$$ $$7a + b + c = 7 + 6 - 7 = 6$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1l2slh23n",
@@ -3146,6 +3146,6 @@
     "difficulty": "medium",
     "solution": "For homogeneous system of equations to have non zero solution, $$\\Delta  = 0$$\n<br><br>$$\\left| {\\matrix{\n   1 &amp; {2a} &amp; a  \\cr \n   1 &amp; {3b} &amp; b  \\cr \n   1 &amp; {4c} &amp; c  \\cr \n\n } } \\right| = 0\\,{C_2} \\to {C_2} - 2{C_3}$$\n<br><br>$$\\left| {\\matrix{\n   1 &amp; 0 &amp; a  \\cr \n   1 &amp; b &amp; b  \\cr \n   1 &amp; {2c} &amp; c  \\cr \n\n } } \\right| = 0\\,\\,{R_3} \\to {R_3} - {R_2},{R_2} \\to {R_2} - {R_1}$$\n<br><br>$$\\left| {\\matrix{\n   1 &amp; 0 &amp; a  \\cr \n   0 &amp; b &amp; {b - a}  \\cr \n   0 &amp; {2c - b} &amp; {c - b}  \\cr \n\n } } \\right| = 0$$ \n<br><br>$$b\\left( {c - b} \\right) - \\left( {b - a} \\right)\\left( {2c - b} \\right) = 0$$\n<br><br>On simplification, $${2 \\over b} = {1 \\over a} + {1 \\over c}$$\n<br><br>$$\\therefore$$ $$a,b,c$$ are in Harmonic Progression.",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   }
 ]

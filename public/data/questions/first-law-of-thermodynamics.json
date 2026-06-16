@@ -2,7 +2,7 @@
   {
     "id": "mp9xkixp",
     "questionNumber": 15,
-    "questionText": "<p>An ideal gas (0.5 mol), initially at 2 bar pressure, is compressed at a constant temperature of 600 K in two steps: first, against a constant external pressure of <i>P</i> bar (<i>2 &lt; P &lt; 8</i>), and then against constant external pressure of 8 bar. At each step, the compression is stopped only when the pressure of the gas becomes equal to the external pressure. The total work done on the gas in these steps is <i>W</i>. Considering all possible values of <i>P</i> (<i>2 &lt; P &lt; 8</i>) and taking the gas constant as <i>R</i> (in J K<sup>−1</sup> mol<sup>−1</sup>), the minimum value of |<i>W</i>| (in J) is</p>",
+    "questionText": "<p>An ideal gas (0.5 mol), initially at 2 bar pressure, is compressed at a constant temperature of 600 K in two steps: first, against a constant external pressure of <i>P</i> bar (<i>2 &lt; P &lt; 8</i>), and then against constant external pressure of 8 bar. At each step, the compression is stopped only when the pressure of the gas becomes equal to the external pressure. The total work done on the gas in these steps is <i>W</i>. Considering all possible values of <i>P</i> (<i>2 &lt; P &lt; 8</i>) and taking the gas constant as <i>R</i> (in J K<sup>\u22121</sup> mol<sup>\u22121</sup>), the minimum value of |<i>W</i>| (in J) is</p>",
     "options": [
       "<p>207R</p>",
       "<p>600R</p>",
@@ -17,9 +17,9 @@
     "subject": "Physics",
     "topic": "first-law-of-thermodynamics",
     "difficulty": "medium",
-    "solution": "<p>Given data:</p>\n<p>$n = 0.5\\ \\text{mol},\\ P_0 = 2\\ \\text{bar},\\ T = 600\\ \\text{K}$</p>\n<p>The gas is compressed in two steps: first against constant pressure $P_1$ and then against constant pressure of 8 bar. Here $P_1$ can take any value between 2 and 8 bar.</p>\n<p>We can find the volumes at each stage using the ideal gas equation $PV = nRT$ :</p>\n<p>$$V_0 = \\frac{nRT}{2}, \\quad V_1 = \\frac{nRT}{P_1}, \\quad V_2 = \\frac{nRT}{8}$$</p>\n<p><b>Step 1:</b> Work done on the gas during compression against external pressure $P_1$ is given by:</p>\n<p>$$W_1 = P_1(V_0 - V_1)$$</p>\n<p>Substituting the values of $V_0$ and $V_1$:</p>\n<p>$$W_1 = P_1\\left(\\frac{nRT}{2} - \\frac{nRT}{P_1}\\right) = nRT\\left(\\frac{P_1}{2} - 1\\right) \\qquad \\ldots(1)$$</p>\n<p><b>Step 2:</b> Work done on the gas when compressed against 8 bar pressure:</p>\n<p>$$W_2 = P_2(V_1 - V_2) = 8\\left(\\frac{nRT}{P_1} - \\frac{nRT}{8}\\right) = nRT\\left(\\frac{8}{P_1} - 1\\right) \\qquad \\ldots(2)$$</p>\n<p><b>Total work done on the gas:</b></p>\n<p>$$|W| = W_1 + W_2 = nRT\\left(\\frac{P_1}{2} - 1\\right) + nRT\\left(\\frac{8}{P_1} - 1\\right)$$</p>\n<p>$$|W| = nRT\\left(\\frac{P_1}{2} + \\frac{8}{P_1} - 2\\right)$$</p>\n<p><b>Finding the condition for minimum work:</b></p>\n<p>We need to minimize $\\left(\\frac{P_1}{2} + \\frac{8}{P_1}\\right)$. Using the inequality AM ≥ GM :</p>\n<p>$$\\frac{\\left(\\frac{P_1}{2} + \\frac{8}{P_1}\\right)}{2} \\ge \\sqrt{\\frac{P_1}{2} \\times \\frac{8}{P_1}}$$</p>\n<p>Simplifying,</p>\n<p>$$\\frac{P_1^2 + 16}{4P_1} \\ge 2$$</p>\n<p>$$P_1^2 - 8P_1 + 16 \\ge 0$$</p>\n<p>$$ (P_1 - 4)^2 \\ge 0 $$</p>\n<p>This means the minimum value of $|W|$ occurs when $P_1 = 4$ bar.</p>\n<p>Substitute $P_1 = 4$:</p>\n<p>$$|W|_{\\min} = nRT\\left(\\frac{4}{2} + \\frac{8}{4} - 2\\right)$$</p>\n<p>$$|W|_{\\min} = 0.5 \\times R \\times 600 \\times (2 + 2 - 2)$$</p>\n<p>$$|W|_{\\min} = 600R$$</p>",
+    "solution": "<p>Given data:</p>\n<p>$n = 0.5\\ \\text{mol},\\ P_0 = 2\\ \\text{bar},\\ T = 600\\ \\text{K}$</p>\n<p>The gas is compressed in two steps: first against constant pressure $P_1$ and then against constant pressure of 8 bar. Here $P_1$ can take any value between 2 and 8 bar.</p>\n<p>We can find the volumes at each stage using the ideal gas equation $PV = nRT$ :</p>\n<p>$$V_0 = \\frac{nRT}{2}, \\quad V_1 = \\frac{nRT}{P_1}, \\quad V_2 = \\frac{nRT}{8}$$</p>\n<p><b>Step 1:</b> Work done on the gas during compression against external pressure $P_1$ is given by:</p>\n<p>$$W_1 = P_1(V_0 - V_1)$$</p>\n<p>Substituting the values of $V_0$ and $V_1$:</p>\n<p>$$W_1 = P_1\\left(\\frac{nRT}{2} - \\frac{nRT}{P_1}\\right) = nRT\\left(\\frac{P_1}{2} - 1\\right) \\qquad \\ldots(1)$$</p>\n<p><b>Step 2:</b> Work done on the gas when compressed against 8 bar pressure:</p>\n<p>$$W_2 = P_2(V_1 - V_2) = 8\\left(\\frac{nRT}{P_1} - \\frac{nRT}{8}\\right) = nRT\\left(\\frac{8}{P_1} - 1\\right) \\qquad \\ldots(2)$$</p>\n<p><b>Total work done on the gas:</b></p>\n<p>$$|W| = W_1 + W_2 = nRT\\left(\\frac{P_1}{2} - 1\\right) + nRT\\left(\\frac{8}{P_1} - 1\\right)$$</p>\n<p>$$|W| = nRT\\left(\\frac{P_1}{2} + \\frac{8}{P_1} - 2\\right)$$</p>\n<p><b>Finding the condition for minimum work:</b></p>\n<p>We need to minimize $\\left(\\frac{P_1}{2} + \\frac{8}{P_1}\\right)$. Using the inequality AM \u2265 GM :</p>\n<p>$$\\frac{\\left(\\frac{P_1}{2} + \\frac{8}{P_1}\\right)}{2} \\ge \\sqrt{\\frac{P_1}{2} \\times \\frac{8}{P_1}}$$</p>\n<p>Simplifying,</p>\n<p>$$\\frac{P_1^2 + 16}{4P_1} \\ge 2$$</p>\n<p>$$P_1^2 - 8P_1 + 16 \\ge 0$$</p>\n<p>$$ (P_1 - 4)^2 \\ge 0 $$</p>\n<p>This means the minimum value of $|W|$ occurs when $P_1 = 4$ bar.</p>\n<p>Substitute $P_1 = 4$:</p>\n<p>$$|W|_{\\min} = nRT\\left(\\frac{4}{2} + \\frac{8}{4} - 2\\right)$$</p>\n<p>$$|W|_{\\min} = 0.5 \\times R \\times 600 \\times (2 + 2 - 2)$$</p>\n<p>$$|W|_{\\min} = 600R$$</p>",
     "section": "Sec 4",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -128,7 +128,7 @@
     "subject": "Physics",
     "topic": "first-law-of-thermodynamics",
     "difficulty": "easy",
-    "solution": "<p><strong>(A) Reversible isothermal expansion</strong></p>\n<p>For an ideal gas in a <em>reversible</em> and <em>isothermal</em> expansion:</p>\n<p>$ w = -nRT \\ln\\frac{V_2}{V_1} $</p>\n<p>Since the process is isothermal,  </p>\n<p>$ \\Delta U = 0 \\implies q = -w $</p>\n<p>Hence,</p>\n<p>$ q = nRT \\ln\\frac{V_2}{V_1} $</p>\n<p><strong>Therefore,</strong> A corresponds to <strong>II.</strong></p>\n\n<p><strong>(B) Free expansion</strong></p>\n<p>In <em>free expansion</em>, gas expands against zero external pressure:</p>\n<p>$ p_{\\text{ext}} = 0 $</p>\n<p>Thus,</p>\n<p>$ w = 0 \\text{ and } q = 0 $</p>\n<p>(Also, for an ideal gas, } ΔU = 0.)</p>\n<p><strong>Therefore,</strong> B corresponds to <strong>I.</strong></p>\n\n<p><strong>(C) Irreversible isothermal compression</strong></p>\n<p>For <em>irreversible compression</em> (against constant external pressure):</p>\n<p>$ w = -p_{\\text{ext}}(V_1 - V_2) $</p>\n<p><strong>Therefore,</strong> C corresponds to <strong>III.</strong></p>\n\n<p><strong>(D) Cyclic reversible process</strong></p>\n<p>For a <em>cyclic reversible</em> process:</p>\n<p>$ \\oint \\frac{q_{\\text{rev}}}{T} = 0 $</p>\n<p><strong>Therefore,</strong> D corresponds to <strong>IV.</strong></p>\n\n\n<p><strong>Correct Option: (C)</strong>  </p>\n<p>$ \\boxed{A - II,\\; B - I,\\; C - III,\\; D - IV} $</p>",
+    "solution": "<p><strong>(A) Reversible isothermal expansion</strong></p>\n<p>For an ideal gas in a <em>reversible</em> and <em>isothermal</em> expansion:</p>\n<p>$ w = -nRT \\ln\\frac{V_2}{V_1} $</p>\n<p>Since the process is isothermal,  </p>\n<p>$ \\Delta U = 0 \\implies q = -w $</p>\n<p>Hence,</p>\n<p>$ q = nRT \\ln\\frac{V_2}{V_1} $</p>\n<p><strong>Therefore,</strong> A corresponds to <strong>II.</strong></p>\n\n<p><strong>(B) Free expansion</strong></p>\n<p>In <em>free expansion</em>, gas expands against zero external pressure:</p>\n<p>$ p_{\\text{ext}} = 0 $</p>\n<p>Thus,</p>\n<p>$ w = 0 \\text{ and } q = 0 $</p>\n<p>(Also, for an ideal gas, } \u0394U = 0.)</p>\n<p><strong>Therefore,</strong> B corresponds to <strong>I.</strong></p>\n\n<p><strong>(C) Irreversible isothermal compression</strong></p>\n<p>For <em>irreversible compression</em> (against constant external pressure):</p>\n<p>$ w = -p_{\\text{ext}}(V_1 - V_2) $</p>\n<p><strong>Therefore,</strong> C corresponds to <strong>III.</strong></p>\n\n<p><strong>(D) Cyclic reversible process</strong></p>\n<p>For a <em>cyclic reversible</em> process:</p>\n<p>$ \\oint \\frac{q_{\\text{rev}}}{T} = 0 $</p>\n<p><strong>Therefore,</strong> D corresponds to <strong>IV.</strong></p>\n\n\n<p><strong>Correct Option: (C)</strong>  </p>\n<p>$ \\boxed{A - II,\\; B - I,\\; C - III,\\; D - IV} $</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -194,7 +194,7 @@
     "subject": "Physics",
     "topic": "first-law-of-thermodynamics",
     "difficulty": "easy",
-    "solution": "<p>Let’s analyze the situation step by step:</p>\n\n<p><p><strong>System</strong>: The liquid inside a <strong>thermally insulated</strong> (adiabatic) and <strong>closed</strong> vessel.  </p></p>\n<p><p><strong>Process</strong>: The liquid is <strong>mechanically stirred</strong> from outside.</p></p>\n\n<hr />\n<h3>Heat Exchange ($q$)</h3>\n\n<p><p>Because the vessel is <strong>thermally insulated</strong>, there is <strong>no heat exchange</strong> between the system and surroundings. Hence,  </p>\n<p>$     q = 0.   $</p></p>\n\n<h3>Work ($w$)</h3>\n\n<p><p>The external mechanical stirring does <strong>work on the system</strong> by agitating the liquid. Work done <strong>on</strong> the system is conventionally taken as <strong>positive</strong>:  </p>\n<p>$     w > 0.   $</p></p>\n\n<h3>Change in Internal Energy ($\\Delta U$)</h3>\n\n<p><p>From the First Law of Thermodynamics,  </p>\n<p>$     \\Delta U \\;=\\; q \\;+\\; w.   $</p></p>\n<p><p>Since $q = 0$ and $w > 0$, we get  </p>\n<p>$     \\Delta U = w > 0.   $</p></p>\n\n<p>Hence:</p>\n<p>$ \\boxed{ \\Delta U > 0,\\quad q = 0,\\quad w > 0. } $</p>\n<hr />\n<p><strong>Answer: Option B</strong> is correct.</p>",
+    "solution": "<p>Let\u2019s analyze the situation step by step:</p>\n\n<p><p><strong>System</strong>: The liquid inside a <strong>thermally insulated</strong> (adiabatic) and <strong>closed</strong> vessel.  </p></p>\n<p><p><strong>Process</strong>: The liquid is <strong>mechanically stirred</strong> from outside.</p></p>\n\n<hr />\n<h3>Heat Exchange ($q$)</h3>\n\n<p><p>Because the vessel is <strong>thermally insulated</strong>, there is <strong>no heat exchange</strong> between the system and surroundings. Hence,  </p>\n<p>$     q = 0.   $</p></p>\n\n<h3>Work ($w$)</h3>\n\n<p><p>The external mechanical stirring does <strong>work on the system</strong> by agitating the liquid. Work done <strong>on</strong> the system is conventionally taken as <strong>positive</strong>:  </p>\n<p>$     w > 0.   $</p></p>\n\n<h3>Change in Internal Energy ($\\Delta U$)</h3>\n\n<p><p>From the First Law of Thermodynamics,  </p>\n<p>$     \\Delta U \\;=\\; q \\;+\\; w.   $</p></p>\n<p><p>Since $q = 0$ and $w > 0$, we get  </p>\n<p>$     \\Delta U = w > 0.   $</p></p>\n\n<p>Hence:</p>\n<p>$ \\boxed{ \\Delta U > 0,\\quad q = 0,\\quad w > 0. } $</p>\n<hr />\n<p><strong>Answer: Option B</strong> is correct.</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -223,7 +223,7 @@
   {
     "id": "m6rlr6r0",
     "questionNumber": 19,
-    "questionText": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6rlogg7/b509b6a5-bbbb-4075-8046-e56700b936e8/a53eb570-e394-11ef-bd37-5bfdd6d633f7/file-jaoe38c1m6rlogg8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6rlogg7/b509b6a5-bbbb-4075-8046-e56700b936e8/a53eb570-e394-11ef-bd37-5bfdd6d633f7/file-jaoe38c1m6rlogg8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 28th January Evening Shift Chemistry - Thermodynamics Question 50 English\"><p>An ideal gas undergoes a cyclic transformation starting from the point A and coming back to the same point by tracing the path A→B→C→D→A as shown in the three cases above.</p><p>Choose the <b>correct </b>option regarding ΔU :</p>",
+    "questionText": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6rlogg7/b509b6a5-bbbb-4075-8046-e56700b936e8/a53eb570-e394-11ef-bd37-5bfdd6d633f7/file-jaoe38c1m6rlogg8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6rlogg7/b509b6a5-bbbb-4075-8046-e56700b936e8/a53eb570-e394-11ef-bd37-5bfdd6d633f7/file-jaoe38c1m6rlogg8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 28th January Evening Shift Chemistry - Thermodynamics Question 50 English\"><p>An ideal gas undergoes a cyclic transformation starting from the point A and coming back to the same point by tracing the path A\u2192B\u2192C\u2192D\u2192A as shown in the three cases above.</p><p>Choose the <b>correct </b>option regarding \u0394U :</p>",
     "options": [
       "$\\Delta \\mathrm{U}(\\text { Case-III })>\\Delta \\mathrm{U}(\\text { Case-II })>\\Delta \\mathrm{U}(\\text { Case-I })$",
       "$\\Delta \\mathrm{U}($ Case-I $)>\\Delta \\mathrm{U}($ Case-II $)>\\Delta \\mathrm{U}($ Case-III $)$",
@@ -496,7 +496,7 @@
     "subject": "Physics",
     "topic": "first-law-of-thermodynamics",
     "difficulty": "easy",
-    "solution": "<p>The heat provided by the heater is given by the equation:</p>\n<p>$Q = \\text{Power} \\times \\text{Time}$</p>\n<p>Substituting the given values:</p>\n<p>$Q = 60 \\, \\text{W} \\times 100 \\, \\text{s} = 6000 \\, \\text{J}$</p>\n<p>The heat capacity (C) is defined as the amount of heat required to raise the temperature of a substance by one degree. It is given by the equation:</p>\n<p>$C = Q/\\Delta T$</p>\n<p>Substituting the given values:</p>\n<p>$C = 6000 \\, \\text{J} / 5 \\, \\text{°C} = 1200 \\, \\text{J/K}$</p>\n<p>So, the heat capacity of the given gas is approximately 1200 J/K.</p>\n",
+    "solution": "<p>The heat provided by the heater is given by the equation:</p>\n<p>$Q = \\text{Power} \\times \\text{Time}$</p>\n<p>Substituting the given values:</p>\n<p>$Q = 60 \\, \\text{W} \\times 100 \\, \\text{s} = 6000 \\, \\text{J}$</p>\n<p>The heat capacity (C) is defined as the amount of heat required to raise the temperature of a substance by one degree. It is given by the equation:</p>\n<p>$C = Q/\\Delta T$</p>\n<p>Substituting the given values:</p>\n<p>$C = 6000 \\, \\text{J} / 5 \\, \\text{\u00b0C} = 1200 \\, \\text{J/K}$</p>\n<p>So, the heat capacity of the given gas is approximately 1200 J/K.</p>\n",
     "section": "B",
     "type": "SUBJECTIVE"
   },
@@ -643,8 +643,8 @@
     "options": [
       "Zero",
       "-RT $$\\ln {{{V_2}} \\over {{V_1}}}$$",
-      "C<sub>V</sub> (T<sub>2</sub> – T<sub>1</sub>)",
-      "– RT (V<sub>2</sub> – V<sub>1</sub>)"
+      "C<sub>V</sub> (T<sub>2</sub> \u2013 T<sub>1</sub>)",
+      "\u2013 RT (V<sub>2</sub> \u2013 V<sub>1</sub>)"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -671,14 +671,14 @@
     "subject": "Physics",
     "topic": "first-law-of-thermodynamics",
     "difficulty": "easy",
-    "solution": "Work done = Area covered by the diagram\n<br/><br/>= $$1\\over2$$ × (sum of parallel sides) × height\n<br/><br/>= $$1\\over2$$ × (10+6) × 6<br/><br/>\n= $$1\\over2$$ × 16 × 6\n<br/><br/> = 48 Joule\n<br><br><b>Note :</b> Here pressure difference = 8 - 2 = 6 Pa and volume difference = 12 - 2 = 10",
+    "solution": "Work done = Area covered by the diagram\n<br/><br/>= $$1\\over2$$ \u00d7 (sum of parallel sides) \u00d7 height\n<br/><br/>= $$1\\over2$$ \u00d7 (10+6) \u00d7 6<br/><br/>\n= $$1\\over2$$ \u00d7 16 \u00d7 6\n<br/><br/> = 48 Joule\n<br><br><b>Note :</b> Here pressure difference = 8 - 2 = 6 Pa and volume difference = 12 - 2 = 10",
     "section": "B",
     "type": "NUMERICAL"
   },
   {
     "id": "uZvgJnxKsRyuimysh3fCg",
     "questionNumber": 28,
-    "questionText": "An ideal gas undergoes isothermal compression from 5m<sup>3</sup> to 1 m<sup>3</sup>  against a constant external pressure of 4 Nm<sup>–2</sup>. Heat released in this process is used to increase the temperature of 1 mole of Al. If molar heat capacity of Al is 24 J mol<sup>–1</sup> K<sup>–1</sup>, the temperature of Al increases by :",
+    "questionText": "An ideal gas undergoes isothermal compression from 5m<sup>3</sup> to 1 m<sup>3</sup>  against a constant external pressure of 4 Nm<sup>\u20132</sup>. Heat released in this process is used to increase the temperature of 1 mole of Al. If molar heat capacity of Al is 24 J mol<sup>\u20131</sup> K<sup>\u20131</sup>, the temperature of Al increases by :",
     "options": [
       "$${2 \\over 3}K$$",
       "$${3 \\over 2}K$$",
@@ -703,9 +703,9 @@
     "questionText": "An ideal gas is allowed to expand form 1 L to 10 L against a constant external pressure of I bar. The work\ndone in kJ is :",
     "options": [
       "+10.0",
-      "–0.9",
-      "– 2.0",
-      "– 9.0"
+      "\u20130.9",
+      "\u2013 2.0",
+      "\u2013 9.0"
     ],
     "correctOption": 1,
     "correctAnswer": null,
@@ -722,7 +722,7 @@
   {
     "id": "u2tCpn0kWEsKdZBzxVhRC",
     "questionNumber": 27,
-    "questionText": "5 moles of an ideal gas at 100 K are allowed\nto undergo reversible compression till its\ntemperature becomes 200 K.\nIf C<sub>V</sub> = 28 JK<sup>–1</sup>mol<sup>–1</sup>, calculate $$\\Delta $$U and $$\\Delta $$pV for\nthis process. (R = 8.0 JK<sup>–1</sup> mol<sup>–1</sup>]",
+    "questionText": "5 moles of an ideal gas at 100 K are allowed\nto undergo reversible compression till its\ntemperature becomes 200 K.\nIf C<sub>V</sub> = 28 JK<sup>\u20131</sup>mol<sup>\u20131</sup>, calculate $$\\Delta $$U and $$\\Delta $$pV for\nthis process. (R = 8.0 JK<sup>\u20131</sup> mol<sup>\u20131</sup>]",
     "options": [
       "$$\\Delta $$U = 14 kJ; $$\\Delta $$(pV) = 4 kJ",
       "$$\\Delta $$U = 2.8 kJ; $$\\Delta $$(pV) = 0.8 kJ",
@@ -746,14 +746,14 @@
     "questionNumber": 27,
     "questionText": "Which one of the following equations does not correctly represent the first law of thermodynamics\nfor the given processes involving an ideal gas? (Assume non-expansion work is zero)",
     "options": [
-      "Adiabatic process : $$\\Delta $$U= – w",
-      "Cyclic process : q = –w",
+      "Adiabatic process : $$\\Delta $$U= \u2013 w",
+      "Cyclic process : q = \u2013w",
       "Isochoric process : $$\\Delta $$U= q",
-      "Isothermal process : q = – w"
+      "Isothermal process : q = \u2013 w"
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -761,7 +761,7 @@
     "difficulty": "easy",
     "solution": "From 1<sup>st</sup> law of thermodynamics we know,\n<br><br>$$\\Delta $$U = q + W\n<br><br><b>Option A :</b>\n<br><br>In adiabatic process exchage of heat = 0\n<br><br>$$ \\therefore $$ q = 0\n<br><br>$$ \\therefore $$ From 1st law of thermodynaics, $$\\Delta $$U = W\n<br><br>So option A is wrong.\n<br><br><b>Option B :</b>\n<br><br>U is a state function. In cyclic process, initial state and final state both are same. So change in all the state function in cyclic process will be zero.\n<br><br>$$ \\therefore $$ $$\\Delta $$U  = 0\n<br><br>$$ \\therefore $$ From 1st law of thermodynaics, \n<br><br>q + W = 0 $$ \\Rightarrow $$ q = -W\n<br><br>So option B is correct..\n<br><br><b>Option C :</b>\n<br><br>In isochoric process volume (V) is constant. So dV = 0.\n<br><br>We know, W = $$ - \\int {{P_{ex}}} dV$$\n<br><br>$$ \\therefore $$ W = 0\n<br><br>$$ \\therefore $$ From 1st law of thermodynaics, \n<br><br>$$\\Delta $$U = q\n<br><br>So option C is correct.\n<br><br><b>Option D :</b>\n<br><br>In isothermal process temerature (T) is constant. So dT = 0.\n<br><br>We know, $$\\Delta $$U = nC<sub>v</sub>dT\n<br><br>$$ \\therefore $$ $$\\Delta $$U = 0\n<br><br>$$ \\therefore $$ From 1st law of thermodynaics, \n<br><br>q + W = 0 $$ \\Rightarrow $$ q = -W\n<br><br>So option D is correct.\n",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "T4IWm6qbVm6MnVRfq3V1L",
@@ -825,7 +825,7 @@
     "subject": "Physics",
     "topic": "first-law-of-thermodynamics",
     "difficulty": "easy",
-    "solution": "From 1st law of thermodynamics\n<br><br>ΔU = q + w\n<br><br>For adiabatic process :\n<br><br>q = 0\n<br><br>$$ \\therefore $$ ΔU = w\n<br><br>So change in internal energy (ΔU) is equal to adiabatic work.",
+    "solution": "From 1st law of thermodynamics\n<br><br>\u0394U = q + w\n<br><br>For adiabatic process :\n<br><br>q = 0\n<br><br>$$ \\therefore $$ \u0394U = w\n<br><br>So change in internal energy (\u0394U) is equal to adiabatic work.",
     "section": "A",
     "type": "SCQ"
   },
@@ -878,10 +878,10 @@
     "questionNumber": 27,
     "questionText": "A piston filled with 0.04 mol of an ideal gas expands reversibly from 50.0 mL to 375 mL at a constant\ntemperature of 37.0<sup>o</sup>C. As it does so, it absorbs 208J of heat. The values of q and w for the process will be :<br>\n(R = 8.314 J/mol K) ( l n 7.5 = 2.01)",
     "options": [
-      "q = – 208 J, w = – 208 J ",
-      "q = – 208 J, w = + 208 J",
+      "q = \u2013 208 J, w = \u2013 208 J ",
+      "q = \u2013 208 J, w = + 208 J",
       "q = + 208 J, w = + 208 J",
-      "q = + 208 J, w = – 208 J "
+      "q = + 208 J, w = \u2013 208 J "
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -891,7 +891,7 @@
     "subject": "Physics",
     "topic": "first-law-of-thermodynamics",
     "difficulty": "easy",
-    "solution": "By I<sup>st</sup>\n law of thermodynamics, q = $$\\Delta $$E – W\n<br><br>At const T, ∆E = 0\n<br><br> q = – W\n<br><br> Heat absorbed = 208 J\n<br><br>$$ \\therefore $$ q = +208 J\n<br><br> W = – 208 J ",
+    "solution": "By I<sup>st</sup>\n law of thermodynamics, q = $$\\Delta $$E \u2013 W\n<br><br>At const T, \u2206E = 0\n<br><br> q = \u2013 W\n<br><br> Heat absorbed = 208 J\n<br><br>$$ \\therefore $$ q = +208 J\n<br><br> W = \u2013 208 J ",
     "section": "A",
     "type": "SCQ"
   },

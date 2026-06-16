@@ -11,7 +11,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -19,8 +19,8 @@
     "difficulty": "hard",
     "solution": "<p>Let the roots of the quadratic equation be $ \\alpha $ and $ \\beta $.</p>\n<p>From the relation between coefficients and roots, we know that:</p>\n<p>$$ \\alpha + \\beta = \\frac{-b}{a} = k_1 \\quad \\Rightarrow \\quad b = -a k_1 \\, \\text{where} \\, k_1 \\in \\mathbb{Z} $$</p>\n<p>Also,</p>\n<p>$$ \\alpha \\beta = \\frac{c}{a} = k_2 \\quad \\Rightarrow \\quad c = a k_2 \\, \\text{where} \\, k_2 \\in \\mathbb{Z} $$</p>\n<p>Since $ a, b, c $ are in arithmetic progression, we have:</p>\n<p>$$ c - b = b - a $$</p>\n<p>Substituting the values of $ b $ and $ c $ from above:</p>\n<p>$$ a k_2 + a k_1 = 2a k_1 + a \\Rightarrow k_2 = -2k_1 - 1 $$</p>\n<p>Now, the quadratic equation becomes:</p>\n<p>$$ x^2 - k_1 x + k_2 = 0 $$</p>\n<p>Substituting the value of $ k_2 $:</p>\n<p>$$ x^2 - k_1 x - 2k_1 - 1 = 0 $$</p>\n<p>Since $ \\alpha \\beta = k_2 $ is odd, both roots $ \\alpha $ and $ \\beta $ must be odd integers.</p>\n<p>Let us test some possible integer values. For example, if $ c = 15 $, the pairs of integer roots could be $ (-1, -15) $ or $ (-3, -5) $.</p>\n<p>If the roots are $ -1 $ and $ -15 $, then:\n\n<br>Sum of roots $ = -16 \\Rightarrow b = 16, \\; a = 17 $\n\n<br>The quadratic becomes $ 17x^2 + 16x + 15 = 0 $.</p>\n<p>This does not satisfy the condition because its roots are not the expected $ -1 $ and $ -15 $.</p>\n<p>Now, if the roots are $ -3 $ and $ -5 $, then:\n\n<br>Sum of roots $ = -8, \\; \\text{Product} = 15 $\n\n<br>Hence, the quadratic is $ x^2 + 8x + 15 = 0 $.</p>\n<p>This equation fits our condition with integer roots.</p>\n<p>For the equation $ x^2 - k_1 x - 2k_1 - 1 = 0 $, substitute $ x = 3 $:</p>\n<p>$$ 9 - 3k_1 - 2k_1 - 1 = 0 \\Rightarrow 8 - 5k_1 = 0 \\Rightarrow k_1 = \\frac{5}{8} $$</p>\n<p>Since $ k_1 $ must be an integer, this is not possible. Hence, 3 cannot be a root of the quadratic equation.</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "ml81k4x8",
@@ -62,7 +62,7 @@
     "subject": "Mathematics",
     "topic": "relation-between-roots-and-coefficients",
     "difficulty": "medium",
-    "solution": "<p>For the equation $x^2 - 3x + r = 0$ with roots $\\alpha, \\beta$, by using the standard results:</p>\n<p>$$ \\begin{aligned} & \\alpha+\\beta=3 \\\\ & \\frac{\\alpha}{2}+2 \\beta=-3 \\end{aligned} $$</p>\n<p>The first line comes from “sum of roots” $= -\\dfrac{\\text{coefficient of }x}{\\text{coefficient of }x^2} = -\\dfrac{-3}{1}=3$.</p>\n<p>The second line comes from the equation $x^2 + 3x + r = 0$, whose roots are $\\dfrac{\\alpha}{2}$ and $2\\beta$. So, their sum is:</p>\n<p>$$\\frac{\\alpha}{2} + 2\\beta = -\\frac{3}{1} = -3$$</p>\n<p>Now solve the two equations:</p>\n<p>$$\\alpha+\\beta=3 \\Rightarrow \\alpha=3-\\beta$$</p>\n<p>Substitute into $\\dfrac{\\alpha}{2}+2\\beta=-3$:</p>\n<p>$$\\frac{3-\\beta}{2}+2\\beta=-3$$</p>\n<p>Multiply by $2$:</p>\n<p>$$3-\\beta+4\\beta=-6 \\Rightarrow 3+3\\beta=-6 \\Rightarrow 3\\beta=-9 \\Rightarrow \\beta=-3$$</p>\n<p>Then $\\alpha=3-(-3)=6$.</p>\n<p>Now use “product of roots” for $x^2 - 3x + r = 0$:</p>\n<p>$$\\alpha\\beta=r \\Rightarrow r=6\\times(-3)=-18$$</p>\n<p>Now consider the equation $x^2 + 6x = m$. Rewrite it in standard form:</p>\n<p>$$x^2 + 6x - m = 0$$</p>\n<p>So, product of its roots $= \\dfrac{-m}{1}=-m$.</p>\n<p>The roots are given as $2\\alpha + \\beta + 2r$ and $\\alpha - 2\\beta - \\dfrac{r}{2}$. Substitute $\\alpha=6$, $\\beta=-3$, $r=-18$:</p>\n<p>First root:</p>\n<p>$$2\\alpha + \\beta + 2r = 2(6)+(-3)+2(-18)=12-3-36=-27$$</p>\n<p>Second root:</p>\n<p>$$\\alpha - 2\\beta - \\frac{r}{2} = 6-2(-3)-\\frac{-18}{2}=6+6+9=21$$</p>\n<p>Now product of roots:</p>\n<p>$$ \\begin{aligned} & =(2 \\alpha+\\beta+2 \\mathrm{r})\\left(\\alpha-2 \\beta-\\frac{\\mathrm{r}}{2}\\right) \\\\ & \\Rightarrow-\\mathrm{m}=(-27)(21) \\\\ & \\Rightarrow \\mathrm{m}=567 \\end{aligned} $$</p>",
+    "solution": "<p>For the equation $x^2 - 3x + r = 0$ with roots $\\alpha, \\beta$, by using the standard results:</p>\n<p>$$ \\begin{aligned} & \\alpha+\\beta=3 \\\\ & \\frac{\\alpha}{2}+2 \\beta=-3 \\end{aligned} $$</p>\n<p>The first line comes from \u201csum of roots\u201d $= -\\dfrac{\\text{coefficient of }x}{\\text{coefficient of }x^2} = -\\dfrac{-3}{1}=3$.</p>\n<p>The second line comes from the equation $x^2 + 3x + r = 0$, whose roots are $\\dfrac{\\alpha}{2}$ and $2\\beta$. So, their sum is:</p>\n<p>$$\\frac{\\alpha}{2} + 2\\beta = -\\frac{3}{1} = -3$$</p>\n<p>Now solve the two equations:</p>\n<p>$$\\alpha+\\beta=3 \\Rightarrow \\alpha=3-\\beta$$</p>\n<p>Substitute into $\\dfrac{\\alpha}{2}+2\\beta=-3$:</p>\n<p>$$\\frac{3-\\beta}{2}+2\\beta=-3$$</p>\n<p>Multiply by $2$:</p>\n<p>$$3-\\beta+4\\beta=-6 \\Rightarrow 3+3\\beta=-6 \\Rightarrow 3\\beta=-9 \\Rightarrow \\beta=-3$$</p>\n<p>Then $\\alpha=3-(-3)=6$.</p>\n<p>Now use \u201cproduct of roots\u201d for $x^2 - 3x + r = 0$:</p>\n<p>$$\\alpha\\beta=r \\Rightarrow r=6\\times(-3)=-18$$</p>\n<p>Now consider the equation $x^2 + 6x = m$. Rewrite it in standard form:</p>\n<p>$$x^2 + 6x - m = 0$$</p>\n<p>So, product of its roots $= \\dfrac{-m}{1}=-m$.</p>\n<p>The roots are given as $2\\alpha + \\beta + 2r$ and $\\alpha - 2\\beta - \\dfrac{r}{2}$. Substitute $\\alpha=6$, $\\beta=-3$, $r=-18$:</p>\n<p>First root:</p>\n<p>$$2\\alpha + \\beta + 2r = 2(6)+(-3)+2(-18)=12-3-36=-27$$</p>\n<p>Second root:</p>\n<p>$$\\alpha - 2\\beta - \\frac{r}{2} = 6-2(-3)-\\frac{-18}{2}=6+6+9=21$$</p>\n<p>Now product of roots:</p>\n<p>$$ \\begin{aligned} & =(2 \\alpha+\\beta+2 \\mathrm{r})\\left(\\alpha-2 \\beta-\\frac{\\mathrm{r}}{2}\\right) \\\\ & \\Rightarrow-\\mathrm{m}=(-27)(21) \\\\ & \\Rightarrow \\mathrm{m}=567 \\end{aligned} $$</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -909,7 +909,7 @@
     "subject": "Mathematics",
     "topic": "relation-between-roots-and-coefficients",
     "difficulty": "medium",
-    "solution": "$$\\alpha  = \\mathop {\\max }\\limits_{x \\in R} \\{ {8^{2\\sin 3x}}{.4^{4\\cos 3x}}\\} $$<br><br>$$ = \\max \\{ {2^{6\\sin 3x}}{.2^{8\\cos 3x}}\\} $$<br><br>$$ = max\\{ {2^{6\\sin 3x + 8\\cos 3x}}\\} $$<br><br>and $$\\beta  = \\min \\{ {8^{2\\sin 3x}}{.4^{4\\cos 3x}}\\}  = \\min \\{ {2^{6\\sin 3x + 8\\cos 3x}}\\} $$<br><br>Now range of $$6sin3x + 8cos3x$$<br><br>$$ = \\left[ { - \\sqrt {{6^2} + {8^2}} , + \\sqrt {{6^2} + {8^2}} } \\right] = [ - 10,10]$$<br><br>$$\\alpha$$ = 2<sup>10</sup> &amp; $$\\beta$$ = 2<sup>$$-$$10</sup><br><br>So, $$\\alpha$$<sup>1/5</sup> = 2<sup>2</sup> = 4<br><br>$$\\Rightarrow$$ $$\\beta$$<sup>1/5</sup> = 2<sup>$$-$$2</sup> = 1/4<br><br>quadratic 8x<sup>2</sup> + bx + c = 0\n<br><br>$$ - {b \\over 8} = {{17} \\over 4}$$ $$ \\Rightarrow $$ b = -34\n<br><br>$${c \\over 8} = 1$$ $$ \\Rightarrow $$ c = 8\n<br><br>$$ \\therefore $$ c – b = 8 + 34 = 42",
+    "solution": "$$\\alpha  = \\mathop {\\max }\\limits_{x \\in R} \\{ {8^{2\\sin 3x}}{.4^{4\\cos 3x}}\\} $$<br><br>$$ = \\max \\{ {2^{6\\sin 3x}}{.2^{8\\cos 3x}}\\} $$<br><br>$$ = max\\{ {2^{6\\sin 3x + 8\\cos 3x}}\\} $$<br><br>and $$\\beta  = \\min \\{ {8^{2\\sin 3x}}{.4^{4\\cos 3x}}\\}  = \\min \\{ {2^{6\\sin 3x + 8\\cos 3x}}\\} $$<br><br>Now range of $$6sin3x + 8cos3x$$<br><br>$$ = \\left[ { - \\sqrt {{6^2} + {8^2}} , + \\sqrt {{6^2} + {8^2}} } \\right] = [ - 10,10]$$<br><br>$$\\alpha$$ = 2<sup>10</sup> &amp; $$\\beta$$ = 2<sup>$$-$$10</sup><br><br>So, $$\\alpha$$<sup>1/5</sup> = 2<sup>2</sup> = 4<br><br>$$\\Rightarrow$$ $$\\beta$$<sup>1/5</sup> = 2<sup>$$-$$2</sup> = 1/4<br><br>quadratic 8x<sup>2</sup> + bx + c = 0\n<br><br>$$ - {b \\over 8} = {{17} \\over 4}$$ $$ \\Rightarrow $$ b = -34\n<br><br>$${c \\over 8} = 1$$ $$ \\Rightarrow $$ c = 8\n<br><br>$$ \\therefore $$ c \u2013 b = 8 + 34 = 42",
     "section": "A",
     "type": "SCQ"
   },
@@ -961,7 +961,7 @@
   {
     "id": "vQfn0SPLSnaGH8uZOkjgy2xukewro3a6",
     "questionNumber": 66,
-    "questionText": "Let\n$$\\alpha $$ and\n$$\\beta $$ be the roots of the equation\n<br>5x<sup>2</sup> + 6x – 2 = 0. If S<sub>n</sub>\n =\n$$\\alpha $$<sup>n</sup> +\n$$\\beta $$<sup>n</sup>, n = 1, 2, 3....,\nthen :",
+    "questionText": "Let\n$$\\alpha $$ and\n$$\\beta $$ be the roots of the equation\n<br>5x<sup>2</sup> + 6x \u2013 2 = 0. If S<sub>n</sub>\n =\n$$\\alpha $$<sup>n</sup> +\n$$\\beta $$<sup>n</sup>, n = 1, 2, 3....,\nthen :",
     "options": [
       "5S<sub>6</sub>\n + 6S<sub>5</sub>\n = 2S<sub>4</sub>",
       "5S<sub>6</sub>\n + 6S<sub>5</sub>\n + 2S<sub>4</sub> = 0",
@@ -976,7 +976,7 @@
     "subject": "Mathematics",
     "topic": "relation-between-roots-and-coefficients",
     "difficulty": "medium",
-    "solution": "$$\\alpha $$ and\n$$\\beta $$ be the roots of the equation\n<br>5x<sup>2</sup> + 6x – 2 = 0.\n<br><br>$$ \\Rightarrow $$ 5$$\\alpha $$<sup>2</sup> + 6$$\\alpha $$ - 2 = 0\n<br><br>$$ \\Rightarrow $$ 5$$\\alpha $$<sup>n + 2</sup> + 6$$\\alpha $$<sup>n + 2</sup> - 2$$\\alpha $$<sup>n</sup> = 0  ......(1)\n<br><br>(By multiplying $$\\alpha $$<sup>n</sup>)\n<br><br>Similarly 5$$\\beta $$<sup>n + 2</sup> + 6$$\\beta $$<sup>n + 2</sup> - 2$$\\beta $$<sup>n</sup> = 0  ......(2)\n<br><br>By adding (1) &amp; (2)\n<br><br>5S<sub>n+2</sub> + 6S<sub>n+1</sub> – 2S<sub>n</sub> = 0\n<br><br>For n = 4\n<br><br>5S<sub>6</sub>\n + 6S<sub>5</sub>\n = 2S<sub>4</sub>",
+    "solution": "$$\\alpha $$ and\n$$\\beta $$ be the roots of the equation\n<br>5x<sup>2</sup> + 6x \u2013 2 = 0.\n<br><br>$$ \\Rightarrow $$ 5$$\\alpha $$<sup>2</sup> + 6$$\\alpha $$ - 2 = 0\n<br><br>$$ \\Rightarrow $$ 5$$\\alpha $$<sup>n + 2</sup> + 6$$\\alpha $$<sup>n + 2</sup> - 2$$\\alpha $$<sup>n</sup> = 0  ......(1)\n<br><br>(By multiplying $$\\alpha $$<sup>n</sup>)\n<br><br>Similarly 5$$\\beta $$<sup>n + 2</sup> + 6$$\\beta $$<sup>n + 2</sup> - 2$$\\beta $$<sup>n</sup> = 0  ......(2)\n<br><br>By adding (1) &amp; (2)\n<br><br>5S<sub>n+2</sub> + 6S<sub>n+1</sub> \u2013 2S<sub>n</sub> = 0\n<br><br>For n = 4\n<br><br>5S<sub>6</sub>\n + 6S<sub>5</sub>\n = 2S<sub>4</sub>",
     "section": "A",
     "type": "SCQ"
   },
@@ -1049,7 +1049,7 @@
   {
     "id": "ADtDSoqLJjuj5nPt5Zjgy2xukfqcls6x",
     "questionNumber": 66,
-    "questionText": "If $$\\alpha $$ and $$\\beta $$ are the roots of the equation,\n<br>7x<sup>2</sup> – 3x – 2 = 0, then the value of\n<br>$${\\alpha  \\over {1 - {\\alpha ^2}}} + {\\beta  \\over {1 - {\\beta ^2}}}$$ is equal to :",
+    "questionText": "If $$\\alpha $$ and $$\\beta $$ are the roots of the equation,\n<br>7x<sup>2</sup> \u2013 3x \u2013 2 = 0, then the value of\n<br>$${\\alpha  \\over {1 - {\\alpha ^2}}} + {\\beta  \\over {1 - {\\beta ^2}}}$$ is equal to :",
     "options": [
       "$${1 \\over {24}}$$",
       "$${{27} \\over {32}}$$",
@@ -1064,7 +1064,7 @@
     "subject": "Mathematics",
     "topic": "relation-between-roots-and-coefficients",
     "difficulty": "medium",
-    "solution": "Given, 7x<sup>2</sup> – 3x – 2 = 0\n<br><br>$$ \\therefore $$ $$\\alpha $$ + $$\\beta $$ = $${3 \\over 7}$$\n<br><br>$$\\alpha $$$$\\beta $$ = - $${2 \\over 7}$$\n<br><br>$${\\alpha  \\over {1 - {\\alpha ^2}}} + {\\beta  \\over {1 - {\\beta ^2}}}$$\n<br><br>= $${{\\alpha  + \\beta  - \\alpha \\beta \\left( {\\alpha  + \\beta } \\right)} \\over {1 - {\\alpha ^2} - {\\beta ^2} + {\\alpha ^2}{\\beta ^2}}}$$\n<br><br>= $${{{3 \\over 7} + {2 \\over 7}\\left( {{3 \\over 7}} \\right)} \\over {1 - {{\\left( {\\alpha  + \\beta } \\right)}^2} + 2\\alpha \\beta  + {{\\left( { - {2 \\over 7}} \\right)}^2}}}$$\n<br><br>= $${{{3 \\over 7} + {2 \\over 7}\\left( {{3 \\over 7}} \\right)} \\over {1 - {{\\left( {{3 \\over 7}} \\right)}^2} + 2\\left( { - {2 \\over 7}} \\right) + {{\\left( { - {2 \\over 7}} \\right)}^2}}}$$\n<br><br>= $${{27} \\over {16}}$$",
+    "solution": "Given, 7x<sup>2</sup> \u2013 3x \u2013 2 = 0\n<br><br>$$ \\therefore $$ $$\\alpha $$ + $$\\beta $$ = $${3 \\over 7}$$\n<br><br>$$\\alpha $$$$\\beta $$ = - $${2 \\over 7}$$\n<br><br>$${\\alpha  \\over {1 - {\\alpha ^2}}} + {\\beta  \\over {1 - {\\beta ^2}}}$$\n<br><br>= $${{\\alpha  + \\beta  - \\alpha \\beta \\left( {\\alpha  + \\beta } \\right)} \\over {1 - {\\alpha ^2} - {\\beta ^2} + {\\alpha ^2}{\\beta ^2}}}$$\n<br><br>= $${{{3 \\over 7} + {2 \\over 7}\\left( {{3 \\over 7}} \\right)} \\over {1 - {{\\left( {\\alpha  + \\beta } \\right)}^2} + 2\\alpha \\beta  + {{\\left( { - {2 \\over 7}} \\right)}^2}}}$$\n<br><br>= $${{{3 \\over 7} + {2 \\over 7}\\left( {{3 \\over 7}} \\right)} \\over {1 - {{\\left( {{3 \\over 7}} \\right)}^2} + 2\\left( { - {2 \\over 7}} \\right) + {{\\left( { - {2 \\over 7}} \\right)}^2}}}$$\n<br><br>= $${{27} \\over {16}}$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -1086,14 +1086,14 @@
     "subject": "Mathematics",
     "topic": "relation-between-roots-and-coefficients",
     "difficulty": "easy",
-    "solution": "$$\\alpha $$ and\n$$\\beta $$ are the roots of the equation\n<br>4x<sup>2</sup> + 2x – 1 = 0.\n<br><br>$$ \\therefore $$ $$\\alpha $$ + $$\\beta $$ = $$ - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ -1 = 2$$\\alpha $$ + 2$$\\beta $$\n<br><br>and 4$$\\alpha $$<sup>2</sup> + 2$$\\alpha $$ - 1 = 0\n<br><br>$$ \\Rightarrow $$ 4$$\\alpha $$<sup>2</sup> + 2$$\\alpha $$ + 2$$\\alpha $$ + 2$$\\beta $$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\beta $$ = $$ - 2\\alpha \\left( {\\alpha  + 1} \\right)$$",
+    "solution": "$$\\alpha $$ and\n$$\\beta $$ are the roots of the equation\n<br>4x<sup>2</sup> + 2x \u2013 1 = 0.\n<br><br>$$ \\therefore $$ $$\\alpha $$ + $$\\beta $$ = $$ - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ -1 = 2$$\\alpha $$ + 2$$\\beta $$\n<br><br>and 4$$\\alpha $$<sup>2</sup> + 2$$\\alpha $$ - 1 = 0\n<br><br>$$ \\Rightarrow $$ 4$$\\alpha $$<sup>2</sup> + 2$$\\alpha $$ + 2$$\\alpha $$ + 2$$\\beta $$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\beta $$ = $$ - 2\\alpha \\left( {\\alpha  + 1} \\right)$$",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "fpfAhxHaFIjNWVXwdijgy2xukfw0t2zw",
     "questionNumber": 67,
-    "questionText": "If $$\\alpha $$ and $$\\beta $$ be two roots of the equation<br> x<sup>2</sup> – 64x + 256 = 0. Then the value of\n<br>$${\\left( {{{{\\alpha ^3}} \\over {{\\beta ^5}}}} \\right)^{1/8}} + {\\left( {{{{\\beta ^3}} \\over {{\\alpha ^5}}}} \\right)^{1/8}}$$ is :",
+    "questionText": "If $$\\alpha $$ and $$\\beta $$ be two roots of the equation<br> x<sup>2</sup> \u2013 64x + 256 = 0. Then the value of\n<br>$${\\left( {{{{\\alpha ^3}} \\over {{\\beta ^5}}}} \\right)^{1/8}} + {\\left( {{{{\\beta ^3}} \\over {{\\alpha ^5}}}} \\right)^{1/8}}$$ is :",
     "options": [
       "1",
       "3",
@@ -1108,7 +1108,7 @@
     "subject": "Mathematics",
     "topic": "relation-between-roots-and-coefficients",
     "difficulty": "medium",
-    "solution": "x<sup>2</sup> – 64x + 256 = 0\n<br><br>$$\\alpha $$ + $$\\beta $$ = 64, $$\\alpha $$$$\\beta $$ = 256\n<br><br>$${\\left( {{{{\\alpha ^3}} \\over {{\\beta ^5}}}} \\right)^{1/8}} + {\\left( {{{{\\beta ^3}} \\over {{\\alpha ^5}}}} \\right)^{1/8}}$$\n<br><br>= $${{{\\alpha ^{{3 \\over 8}}}} \\over {{\\beta ^{{5 \\over 8}}}}} + {{{\\beta ^{{3 \\over 8}}}} \\over {{\\alpha ^{{5 \\over 8}}}}}$$\n<br><br>= $${{\\alpha  + \\beta } \\over {{{\\left( {\\alpha \\beta } \\right)}^{{5 \\over 8}}}}}$$\n<br><br>= $${{64} \\over {{{\\left( {256} \\right)}^{{5 \\over 8}}}}}$$\n<br><br>= 2",
+    "solution": "x<sup>2</sup> \u2013 64x + 256 = 0\n<br><br>$$\\alpha $$ + $$\\beta $$ = 64, $$\\alpha $$$$\\beta $$ = 256\n<br><br>$${\\left( {{{{\\alpha ^3}} \\over {{\\beta ^5}}}} \\right)^{1/8}} + {\\left( {{{{\\beta ^3}} \\over {{\\alpha ^5}}}} \\right)^{1/8}}$$\n<br><br>= $${{{\\alpha ^{{3 \\over 8}}}} \\over {{\\beta ^{{5 \\over 8}}}}} + {{{\\beta ^{{3 \\over 8}}}} \\over {{\\alpha ^{{5 \\over 8}}}}}$$\n<br><br>= $${{\\alpha  + \\beta } \\over {{{\\left( {\\alpha \\beta } \\right)}^{{5 \\over 8}}}}}$$\n<br><br>= $${{64} \\over {{{\\left( {256} \\right)}^{{5 \\over 8}}}}}$$\n<br><br>= 2",
     "section": "A",
     "type": "SCQ"
   },
@@ -1119,8 +1119,8 @@
     "options": [
       "(p<sub>1</sub> + p<sub>2</sub> + p<sub>3</sub> + p<sub>4</sub> + p<sub>5</sub>) = 26",
       "p<sub>5</sub> = 11",
-      "p<sub>3</sub> = p<sub>5</sub> – p<sub>4</sub>",
-      "p<sub>5</sub> = p<sub>2</sub> · p<sub>3</sub>"
+      "p<sub>3</sub> = p<sub>5</sub> \u2013 p<sub>4</sub>",
+      "p<sub>5</sub> = p<sub>2</sub> \u00b7 p<sub>3</sub>"
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -1130,7 +1130,7 @@
     "subject": "Mathematics",
     "topic": "relation-between-roots-and-coefficients",
     "difficulty": "medium",
-    "solution": "x<sup>2</sup>\n - x - 1 = 0\n<br><br>$$ \\therefore $$ $$\\alpha $$<sup>2</sup>\n - $$\\alpha $$ - 1 = 0\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$<sup>2</sup> = $$\\alpha $$ + 1\n<br><br>$$ \\therefore $$ $$\\alpha $$<sup>3</sup> = $$\\alpha $$<sup>2</sup> + $$\\alpha $$\n<br><br>= $$\\alpha $$ + 1 + $$\\alpha $$\n<br><br>= 2$$\\alpha $$ + 1\n<br><br>Now $$\\alpha $$<sup>4</sup> = 2$$\\alpha $$<sup>2</sup> + $$\\alpha $$\n<br><br>= 2($$\\alpha $$ + 1) + $$\\alpha $$\n<br><br>= 3$$\\alpha $$ + 2\n<br><br>Now $$\\alpha $$<sup>5</sup> = 3$$\\alpha $$<sup>2</sup> + 2$$\\alpha $$\n<br><br>= 3($$\\alpha $$ + 1) + 2$$\\alpha $$\n<br><br>= 5$$\\alpha $$ + 3\n<br><br>Given p<sub>k</sub>\n = $${\\left( \\alpha  \\right)^k} + {\\left( \\beta  \\right)^k}$$\n<br><br>$$ \\therefore $$ p<sub>5</sub> = $${\\left( \\alpha  \\right)^5} + {\\left( \\beta  \\right)^5}$$\n<br><br>= 5$$\\alpha $$ + 3 + 5$$\\beta $$ + 3\n<br><br>= 5($$\\alpha $$ + $$\\beta $$) + 6\n<br><br>= 5(1) + 6 [As $$\\alpha $$ + $$\\beta $$ = 1]\n<br><br>= 11\n<br><br>Now p<sub>2</sub> · p<sub>3</sub>\n<br><br>= ($$\\alpha $$<sup>2</sup> + $$\\beta $$<sup>2</sup>).($$\\alpha $$<sup>3</sup> + $$\\beta $$<sup>3</sup>)\n<br><br>= ( $$\\alpha $$ + 1 + $$\\beta $$ + 1)(2$$\\alpha $$ + 1 + 2$$\\beta $$ + 1)\n<br><br>= ( $$\\alpha $$ + $$\\beta $$ + 2)(2($$\\alpha $$ + $$\\beta $$) + 2)\n<br><br>= (1 + 2)(2 + 2) = 12\n<br><br>$$ \\therefore $$ p<sub>5</sub> $$ \\ne $$ p<sub>2</sub> ·p<sub>3</sub>\n<br><br>So option (D) is wrong.",
+    "solution": "x<sup>2</sup>\n - x - 1 = 0\n<br><br>$$ \\therefore $$ $$\\alpha $$<sup>2</sup>\n - $$\\alpha $$ - 1 = 0\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$<sup>2</sup> = $$\\alpha $$ + 1\n<br><br>$$ \\therefore $$ $$\\alpha $$<sup>3</sup> = $$\\alpha $$<sup>2</sup> + $$\\alpha $$\n<br><br>= $$\\alpha $$ + 1 + $$\\alpha $$\n<br><br>= 2$$\\alpha $$ + 1\n<br><br>Now $$\\alpha $$<sup>4</sup> = 2$$\\alpha $$<sup>2</sup> + $$\\alpha $$\n<br><br>= 2($$\\alpha $$ + 1) + $$\\alpha $$\n<br><br>= 3$$\\alpha $$ + 2\n<br><br>Now $$\\alpha $$<sup>5</sup> = 3$$\\alpha $$<sup>2</sup> + 2$$\\alpha $$\n<br><br>= 3($$\\alpha $$ + 1) + 2$$\\alpha $$\n<br><br>= 5$$\\alpha $$ + 3\n<br><br>Given p<sub>k</sub>\n = $${\\left( \\alpha  \\right)^k} + {\\left( \\beta  \\right)^k}$$\n<br><br>$$ \\therefore $$ p<sub>5</sub> = $${\\left( \\alpha  \\right)^5} + {\\left( \\beta  \\right)^5}$$\n<br><br>= 5$$\\alpha $$ + 3 + 5$$\\beta $$ + 3\n<br><br>= 5($$\\alpha $$ + $$\\beta $$) + 6\n<br><br>= 5(1) + 6 [As $$\\alpha $$ + $$\\beta $$ = 1]\n<br><br>= 11\n<br><br>Now p<sub>2</sub> \u00b7 p<sub>3</sub>\n<br><br>= ($$\\alpha $$<sup>2</sup> + $$\\beta $$<sup>2</sup>).($$\\alpha $$<sup>3</sup> + $$\\beta $$<sup>3</sup>)\n<br><br>= ( $$\\alpha $$ + 1 + $$\\beta $$ + 1)(2$$\\alpha $$ + 1 + 2$$\\beta $$ + 1)\n<br><br>= ( $$\\alpha $$ + $$\\beta $$ + 2)(2($$\\alpha $$ + $$\\beta $$) + 2)\n<br><br>= (1 + 2)(2 + 2) = 12\n<br><br>$$ \\therefore $$ p<sub>5</sub> $$ \\ne $$ p<sub>2</sub> \u00b7p<sub>3</sub>\n<br><br>So option (D) is wrong.",
     "section": "A",
     "type": "SCQ"
   },
@@ -1163,8 +1163,8 @@
     "options": [
       "x<sup>2</sup> + 101x + 100 = 0",
       "x<sup>2</sup> + 102x + 101 = 0",
-      "x<sup>2</sup> – 102x + 101 = 0",
-      "x<sup>2</sup> – 101x + 100 = 0"
+      "x<sup>2</sup> \u2013 102x + 101 = 0",
+      "x<sup>2</sup> \u2013 101x + 100 = 0"
     ],
     "correctOption": 2,
     "correctAnswer": null,
@@ -1174,7 +1174,7 @@
     "subject": "Mathematics",
     "topic": "relation-between-roots-and-coefficients",
     "difficulty": "medium",
-    "solution": "$$\\alpha  = {{ - 1 + i\\sqrt 3 } \\over 2}$$ = $$\\omega $$\n<br><br>$$a = \\left( {1 + \\alpha } \\right)\\sum\\limits_{k = 0}^{100} {{\\alpha ^{2k}}} $$\n<br><br>= $$\\left( {1 + \\omega } \\right)\\sum\\limits_{k = 0}^{100} {{\\omega ^{2k}}} $$\n<br><br>= $$\\left( {1 + \\omega } \\right){{1\\left( {1 - {{\\left( {{\\omega ^2}} \\right)}^{101}}} \\right)} \\over {1 - {\\omega ^2}}}$$\n<br><br>= $${{1 - {\\omega ^{202}}} \\over {1 - \\omega }}$$\n<br><br>= $${{1 - \\omega } \\over {1 - \\omega }}$$ = 1\n<br><br>$$b = \\sum\\limits_{k = 0}^{100} {{\\alpha ^{3k}}} $$\n<br><br>= $$\\sum\\limits_{k = 0}^{100} {{\\omega ^{3k}}} $$\n<br><br>= 101 [as $${\\omega ^3}$$ = 1]\n<br><br>$$ \\therefore $$ roots are 101 and 1\n<br><br>Then  equation is = x<sup>2</sup>\n – 102x + 101 = 0",
+    "solution": "$$\\alpha  = {{ - 1 + i\\sqrt 3 } \\over 2}$$ = $$\\omega $$\n<br><br>$$a = \\left( {1 + \\alpha } \\right)\\sum\\limits_{k = 0}^{100} {{\\alpha ^{2k}}} $$\n<br><br>= $$\\left( {1 + \\omega } \\right)\\sum\\limits_{k = 0}^{100} {{\\omega ^{2k}}} $$\n<br><br>= $$\\left( {1 + \\omega } \\right){{1\\left( {1 - {{\\left( {{\\omega ^2}} \\right)}^{101}}} \\right)} \\over {1 - {\\omega ^2}}}$$\n<br><br>= $${{1 - {\\omega ^{202}}} \\over {1 - \\omega }}$$\n<br><br>= $${{1 - \\omega } \\over {1 - \\omega }}$$ = 1\n<br><br>$$b = \\sum\\limits_{k = 0}^{100} {{\\alpha ^{3k}}} $$\n<br><br>= $$\\sum\\limits_{k = 0}^{100} {{\\omega ^{3k}}} $$\n<br><br>= 101 [as $${\\omega ^3}$$ = 1]\n<br><br>$$ \\therefore $$ roots are 101 and 1\n<br><br>Then  equation is = x<sup>2</sup>\n \u2013 102x + 101 = 0",
     "section": "A",
     "type": "SCQ"
   },
@@ -1190,7 +1190,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -1199,7 +1199,7 @@
     "solution": "Given quadratic equation<br><br>$${x^2} - x - 1 = 0$$ having roots $$\\alpha $$ and $$\\beta $$, ($$\\alpha $$ &gt; $$\\beta $$)<br><br>So, $$\\alpha  = {{1 + \\sqrt 5 } \\over 2}$$ and $$\\beta  = {{1 - \\sqrt 5 } \\over 2}$$<br><br>and $$\\alpha  + \\beta  = 1$$, $$\\alpha $$$$\\beta $$ = $$ - 1$$<br><br>$$ \\because $$ $${a_n} = {{{\\alpha ^n} - {\\beta ^n}} \\over {\\alpha  - \\beta }},\\,n \\ge 1$$<br><br>So, $${a_{n + 1}} = {{{\\alpha ^{n + 1}} - {\\beta ^{n + 1}}} \\over {\\alpha  - \\beta }}$$<br><br>$${\\alpha ^n} + {\\alpha ^{n - 1}}\\beta  + {\\alpha ^{n - 2}}{\\beta ^2} + ... + \\alpha {\\beta ^{n - 1}} + {\\beta ^n}$$<br><br>$${\\alpha ^n} - {\\alpha ^{n - 2}} - {\\alpha ^{n - 3}}\\beta  - ... - {\\beta ^{n - 2}} + {\\beta ^n}$$<br><br>[as $$\\alpha $$$$\\beta $$ = $$ - $$1]<br><br>= $${\\alpha ^n} + {\\beta ^n} - ({\\alpha ^{n - 2}} + {\\alpha ^{n - 3}}\\beta  + ... + {\\beta ^{n - 2}})$$<br><br>= $${\\alpha ^n} + {\\beta ^n} - {a_{n - 1}}$$<br><br>$$\\left[ {as\\,{a_{n - 1}} = {{{\\alpha ^{n - 1}} - {\\beta ^{n - 1}}} \\over {\\alpha  - \\beta }} = {\\alpha ^{n - 2}} + {\\alpha ^{n - 3}}\\beta  + ... + {\\beta ^{n - 2}}} \\right]$$<br><br>$$ \\Rightarrow $$ $${a_{n + 1}} + {a_{n - 1}} = {\\alpha ^n} + {\\beta ^n} = {b_n},\\,\\forall n \\ge 1$$<br><br>So, option (b) is correct.<br><br>Now, $$\\sum\\limits_{n = 1}^\\infty  {{{{b_n}} \\over {{{10}^n}}}}  = \\sum\\limits_{n = 1}^\\infty  {{{{\\alpha ^n} + {\\beta ^n}} \\over {{{10}^n}}}} $$<br><br>[as, b<sub>n</sub> = $$\\alpha $$<sup>n</sup> + $$\\beta $$<sup>n</sup>]<br><br>= $$\\sum\\limits_{n = 1}^\\infty  {{{\\left( {{\\alpha  \\over {10}}} \\right)}^n}}  + \\sum\\limits_{n = 1}^\\infty  {{{\\left( {{\\beta  \\over {10}}} \\right)}^n}} $$<br><br>$$ \\because $$ $$\\left[ {\\left| {{\\alpha  \\over {10}}} \\right| &lt; 1\\,and\\,\\left| {{\\beta  \\over {10}}} \\right| &lt; 1} \\right]$$<br><br>$$ = {{{\\alpha  \\over {10}}} \\over {1 - {\\alpha  \\over {10}}}} + {{{\\beta  \\over {10}}} \\over {1 - {\\beta  \\over {10}}}} = {\\alpha  \\over {10 - \\alpha }} + {\\beta  \\over {10 - \\beta }}$$<br><br>$$ = {{10\\alpha  - \\alpha \\beta  + 10\\beta  - \\alpha \\beta } \\over {(10 - \\alpha )(10 - \\beta )}}$$<br><br>$$ = {{10(\\alpha  + \\beta ) - 2\\alpha \\beta } \\over {100 - 10(\\alpha  + \\beta ) + \\alpha \\beta }}$$<br><br>$$ = {{10(1) - 2( - 1)} \\over {100 - 10(1) - 1}}$$<br><br>[as $$\\alpha $$ + $$\\beta $$ = 1 and $$\\alpha $$$$\\beta $$ = $$ - $$1]<br><br>$$ = {{12} \\over {89}}$$<br><br>So, option (a) is not correct.<br><br>$$ \\because $$ $${\\alpha ^2} = \\alpha  + 1$$ and $${\\beta ^2} = \\beta  + 1$$<br><br>$$ \\Rightarrow $$$${\\alpha ^{n + 2}} = {\\alpha ^{n + 1}} + {\\alpha ^n}$$ and $${\\beta ^{n + 2}} = {\\beta ^{n + 1}} + {\\beta ^n}$$<br><br>$$ \\Rightarrow $$ $$({\\alpha ^{n + 2}} + {\\beta ^{n + 2}}) = ({\\alpha ^{n + 1}} + {\\beta ^{n + 1}}) + ({\\alpha ^n} + {\\beta ^n})$$<br><br>$$ \\Rightarrow {a_{n + 2}} = {a_{n + 1}} + {a_n}$$<br><br>Similarly, $${a_{n + 1}} = {a_n} + {a_{n - 1}}$$<br><br>$${a_n} = {a_{n - 1}} + {a_{n - 2}}$$<br><br>..............<br><br>............<br><br>$${a_3} = {a_2} + {a_1}$$<br><br>On adding, we get<br><br>$${a_{n + 2}} = ({a_n} + {a_{n - 1}} + {a_{n - 2}} + ... + {a_2} + {a_1}) + {a_2}$$<br><br>$$ \\because $$ $$\\left[ {{a_2} = {{{\\alpha ^2} - {\\beta ^2}} \\over {\\alpha  - \\beta }} = \\alpha  + \\beta  = 1} \\right]$$<br><br>So, $${a_{n + 2}} - 1 = {a_1} + {a_2} + {a_3} + ...... + {a_n}$$<br><br>So, option (c) is also correct.<br><br>And, now $$\\sum\\limits_{n = 1}^\\infty  {{{{a_n}} \\over {{{10}^n}}}}  = \\sum\\limits_{n = 1}^\\infty  {{{{\\alpha ^n} - {\\beta ^n}} \\over {(\\alpha  - \\beta ){{10}^n}}}} $$<br><br>$$ = {1 \\over {\\alpha  - \\beta }}\\left[ {\\sum\\limits_{n = 1}^\\infty  {{{\\left( {{a \\over {10}}} \\right)}^n}}  - \\sum\\limits_{n = 1}^\\infty  {{{\\left( {{\\beta  \\over {10}}} \\right)}^n}} } \\right]$$<br><br>$$ = {1 \\over {\\alpha  - \\beta }}\\left[ {{{{\\alpha  \\over {10}}} \\over {1 - {\\alpha  \\over {10}}}} - {{{\\beta  \\over {10}}} \\over {1 - {\\beta  \\over {10}}}}} \\right]$$,<br><br>$$\\left[ {as\\left| {{\\alpha  \\over {10}}} \\right| &lt; 1\\,and\\,\\left| {{\\beta  \\over {10}}} \\right| &lt; 1} \\right]$$<br><br>$$ = {{10(\\alpha  - \\beta )} \\over {(\\alpha  - \\beta )[100 - 10(\\alpha  + \\beta ) + \\alpha \\beta ]}}$$<br><br>$$ = {{10} \\over {100 - 10 - 1}} = {{10} \\over {89}}$$<br><br>Hence, options (b), (c) and (d) are correct.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "W9EBjBBLvv4KN4kY2B3rsa0w2w9jwxdqfnm",
@@ -1226,7 +1226,7 @@
   {
     "id": "Z0kE4u5jpksipfnZxwdCg",
     "questionNumber": 84,
-    "questionText": "The value of $$\\lambda $$ such that sum of the squares of the roots of the quadratic equation, x<sup>2</sup> + (3 – $$\\lambda $$)x + 2 = $$\\lambda $$ has the least value is -",
+    "questionText": "The value of $$\\lambda $$ such that sum of the squares of the roots of the quadratic equation, x<sup>2</sup> + (3 \u2013 $$\\lambda $$)x + 2 = $$\\lambda $$ has the least value is -",
     "options": [
       "1",
       "2",
@@ -1248,7 +1248,7 @@
   {
     "id": "UrxNTlitqqL3D9jwUZty7",
     "questionNumber": 86,
-    "questionText": "Let $$\\alpha $$ and $$\\beta $$ be the roots of the quadratic equation x<sup>2</sup>\n sin $$\\theta $$ – x(sin $$\\theta $$ cos $$\\theta $$ + 1) + cos $$\\theta $$ = 0 (0 &lt; $$\\theta $$ &lt; 45<sup>o</sup>), and $$\\alpha $$ &lt; $$\\beta $$. Then $$\\sum\\limits_{n = 0}^\\infty  {\\left( {{\\alpha ^n} + {{{{\\left( { - 1} \\right)}^n}} \\over {{\\beta ^n}}}} \\right)} $$ is equal to : \n",
+    "questionText": "Let $$\\alpha $$ and $$\\beta $$ be the roots of the quadratic equation x<sup>2</sup>\n sin $$\\theta $$ \u2013 x(sin $$\\theta $$ cos $$\\theta $$ + 1) + cos $$\\theta $$ = 0 (0 &lt; $$\\theta $$ &lt; 45<sup>o</sup>), and $$\\alpha $$ &lt; $$\\beta $$. Then $$\\sum\\limits_{n = 0}^\\infty  {\\left( {{\\alpha ^n} + {{{{\\left( { - 1} \\right)}^n}} \\over {{\\beta ^n}}}} \\right)} $$ is equal to : \n",
     "options": [
       "$${1 \\over {1 + \\cos \\theta }} + {1 \\over {1 - \\sin \\theta }}$$",
       "$${1 \\over {1 - \\cos \\theta }} + {1 \\over {1 + \\sin \\theta }}$$",
@@ -1292,7 +1292,7 @@
   {
     "id": "YIRrhh126EC0R8efYDcTv",
     "questionNumber": 83,
-    "questionText": "If $$\\lambda $$ be the ratio of the roots of the quadratic equation in x, 3m<sup>2</sup>x<sup>2</sup> + m(m – 4)x + 2 = 0, then the least value of m for which $$\\lambda  + {1 \\over \\lambda } = 1,$$ is ",
+    "questionText": "If $$\\lambda $$ be the ratio of the roots of the quadratic equation in x, 3m<sup>2</sup>x<sup>2</sup> + m(m \u2013 4)x + 2 = 0, then the least value of m for which $$\\lambda  + {1 \\over \\lambda } = 1,$$ is ",
     "options": [
       "$$ - 2 + \\sqrt 2 $$",
       "4$$-$$3$$\\sqrt 2 $$",
@@ -1316,10 +1316,10 @@
     "questionNumber": 84,
     "questionText": "Let p, q $$ \\in $$ R. If 2 - $$\\sqrt 3$$ is a root of the quadratic\nequation, x<sup>2</sup> + px + q = 0, then :",
     "options": [
-      "p<sup>2</sup> – 4q – 12 = 0",
-      "q<sup>2</sup> – 4p – 16 = 0",
+      "p<sup>2</sup> \u2013 4q \u2013 12 = 0",
+      "q<sup>2</sup> \u2013 4p \u2013 16 = 0",
       "q<sup>2</sup> + 4p + 14 = 0",
-      "p<sup>2</sup> – 4q + 12 = 0"
+      "p<sup>2</sup> \u2013 4q + 12 = 0"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -1329,7 +1329,7 @@
     "subject": "Mathematics",
     "topic": "relation-between-roots-and-coefficients",
     "difficulty": "easy",
-    "solution": "If a quadratic equation with rational coefficient has one irrational root then other root will be the conjugate of the irrational root.\n<br><br>Here x<sup>2</sup> + px + q = 0 has one root 2 - $$\\sqrt 3$$.\n<br><br>$$ \\therefore $$ Other root will be 2 + $$\\sqrt 3$$.\n<br><br>Sum of the roots = -p = 4\n<br><br>and product of the roots = q = 1\n<br><br>You can see p<sup>2</sup> – 4q – 12 = 0 satisfy value of p = -4 and q = 1.",
+    "solution": "If a quadratic equation with rational coefficient has one irrational root then other root will be the conjugate of the irrational root.\n<br><br>Here x<sup>2</sup> + px + q = 0 has one root 2 - $$\\sqrt 3$$.\n<br><br>$$ \\therefore $$ Other root will be 2 + $$\\sqrt 3$$.\n<br><br>Sum of the roots = -p = 4\n<br><br>and product of the roots = q = 1\n<br><br>You can see p<sup>2</sup> \u2013 4q \u2013 12 = 0 satisfy value of p = -4 and q = 1.",
     "section": "A",
     "type": "SCQ"
   },
@@ -1711,7 +1711,7 @@
     "solution": "<p>As a, b, c, p, q $$\\in$$ R and the two given equations have exactly one common root.</p>\n<p>$$\\Rightarrow$$ Either both equations have real roots.</p>\n<p>Or both equations have imaginary roots.</p>\n<p>$$\\Rightarrow$$ Either $$\\Delta_1\\ge0$$ and $$\\Delta_2 > 0$$ or</p>\n<p>$$\\Delta_1 < 0$$ and $$\\Delta_2 < 0$$</p>\n<p>$$\\Rightarrow~p^2-q\\ge0$$ and $$b^2-ac\\ge0$$</p>\n<p>or $$p^2-q\\le0$$ and $$b^2-ac\\le0$$</p>\n<p>$$\\Rightarrow~(p^2-q)(b^2-ac)\\ge0$$</p>\n<p>$$\\therefore$$ Statement 1 is true.</p>\n<p>Also, we have $$\\alpha\\beta=q$$ and $${\\alpha  \\over \\beta } = {c \\over a}$$</p>\n<p>$$\\therefore$$ $${{\\alpha \\beta } \\over {{\\alpha  \\over \\beta }}} = {q \\over c} \\times a \\Rightarrow {\\beta ^2} = {{qa} \\over c}$$</p>\n<p>As $$\\beta  \\ne 1$$ or $$-1$$</p>\n<p>$$ \\Rightarrow {\\beta ^2} \\ne 1$$</p>\n<p>$$ \\Rightarrow {{qa} \\over c} \\ne 1$$ or $$c \\ne qa$$</p>\n<p>Again as exactly one root $$\\alpha$$ is common and $$\\beta\\ne1$$</p>\n<p>$$\\therefore$$ $$\\alpha  + \\beta  \\ne \\alpha  + {1 \\over \\beta } \\Rightarrow {{ - 2b} \\over a} \\ne  - 2P$$</p>\n<p>$$ \\Rightarrow b \\ne ap$$</p>\n<p>$$\\therefore$$ Statement 2 is correct.</p>\n<p>But Statement 2 is not correct explanation of Statement 1.</p>",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "TpLwVDBYA4fxcyBw",

@@ -297,8 +297,8 @@
     "questionNumber": 58,
     "questionText": "The differential equation of the family of\ncurves, x<sup>2</sup> = 4b(y + b), b $$ \\in $$ R, is :",
     "options": [
-      "x(y')<sup>2</sup> = x – 2yy'",
-      "x(y')<sup>2</sup> = 2yy' – x",
+      "x(y')<sup>2</sup> = x \u2013 2yy'",
+      "x(y')<sup>2</sup> = 2yy' \u2013 x",
       "xy\" = y'",
       "x(y')<sup>2</sup> = x + 2yy'"
     ],
@@ -326,7 +326,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -335,7 +335,7 @@
     "solution": "Let a point P(h, k) on the curve y = y(x), so equation of tangent to the curve at point P is<br><br>$$y - k = {\\left( {{{dy} \\over {dx}}} \\right)_{h,k}}(x - h)$$ ....(i)<br><br>Now, the tangent (i) intersect the Y-axis at Y<sub>p</sub>, so coordinates Y<sub>p</sub> is $$\\left( {0,k - h{{dy} \\over {dx}}} \\right)$$,<br><br>where $${{{dy} \\over {dx}}}$$ = $${\\left( {{{dy} \\over {dx}}} \\right)}$$<sub>(h,k)</sub><br><br>So, PY<sub>p</sub> = 1 (given)<br><br>$$ \\Rightarrow \\sqrt {{h^2} + {h^2}{{\\left( {{{dy} \\over {dx}}} \\right)}^2}}  = 1$$<br><br>$$ \\Rightarrow {{dy} \\over {dx}} =  \\pm {{\\sqrt {1 - {x^2}} } \\over x}$$<br><br>[on replacing h by x]<br><br>$$ \\Rightarrow dy =  \\pm {{\\sqrt {1 - {x^2}} } \\over x}dx$$<br><br>On puting x = sin$$\\theta $$, dx = cos$$\\theta $$d$$\\theta $$, we get<br><br>$$dy =  \\pm {{\\sqrt {1 - {{\\sin }^2}\\theta } } \\over {\\sin \\theta }}\\cos \\theta d\\theta $$<br><br>$$ =  \\pm {{{{\\cos }^2}\\theta } \\over {\\sin \\theta }}d\\theta $$<br><br>$$ =  \\pm (\\cos ec\\theta  - \\sin \\theta )d\\theta $$<br><br>$$ \\Rightarrow y =  \\pm [1n(\\cos ec\\theta  - \\cot \\theta ) + \\cos \\theta ] + C$$<br><br>$$ \\Rightarrow y =  \\pm \\left[ {1n\\left( {{{1 - \\cos \\theta } \\over {\\sin \\theta }}} \\right) + \\cos \\theta } \\right] + C$$<br><br>$$ \\Rightarrow y =  \\pm \\left[ {1n\\left( {{{1 - \\sqrt {1 - {{\\sin }^2}\\theta } } \\over {\\sin \\theta }}} \\right) + \\sqrt {1 - {{\\sin }^2}\\theta } } \\right] + C$$<br><br>$$ \\Rightarrow y =  \\pm \\left[ {1n\\left( {{{1 - \\sqrt {1 - {x^2}} } \\over x}} \\right) + \\sqrt {1 - {x^2}} } \\right] + C$$<br><br>[$$ \\because $$ x = sin$$\\theta $$]<br><br>$$ =  \\pm \\left[ { - 1n{{1 + \\sqrt {1 - {x^2}} } \\over x} + \\sqrt {1 - {x^2}} } \\right] + C$$<br><br>[on rationalization]<br><br>$$ \\because $$ The curve is in the first quadrant so y must be positive, so<br><br>$$y = 1n\\left( {{{1 + \\sqrt {1 - {x^2}} } \\over x}} \\right) - \\sqrt {1 - {x^2}}  + C$$<br><br>As curve passes through (1, 0), so<br><br>$$0 = 0 - 0 + c \\Rightarrow c = 0$$, so required curve is<br><br>$$y = 1n\\left( {{{1 + \\sqrt {1 - {x^2}} } \\over x}} \\right) - \\sqrt {1 - {x^2}} $$<br><br>and required differential eaquation is<br><br>$${{dy} \\over {dx}} =  - {{\\sqrt {1 - {x^2}} } \\over x}$$<br><br>$$ \\Rightarrow xy' + \\sqrt {1 - {x^2}}  = 0$$<br><br>Hence, options (a) and (c) are correct.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "9MRXujl4STa4xPl5c4rEH",

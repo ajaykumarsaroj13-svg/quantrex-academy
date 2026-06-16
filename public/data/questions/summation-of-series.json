@@ -78,7 +78,7 @@
     "subject": "Mathematics",
     "topic": "summation-of-series",
     "difficulty": "medium",
-    "solution": "<p>Given</p>\n<p>$$ \\sum\\limits_{r=1}^{25}\\left(\\frac{r}{r^4+r^2+1}\\right)=\\frac{p}{q} $$</p>\n<p>The expression $r^4+r^2+1$ can be factored using a completion of squares technique:</p>\n<p>$$ r^4+r^2+1=\\left(r^4+2 r^2+1\\right)-r^2=\\left(r^2+1\\right)^2-r^2 $$</p>\n<p>Using the difference of squares formula, $a^2-b^2=(a-b)(a+b)$ :</p>\n<p>$$ r^4+r^2+1=\\left(r^2-r+1\\right)\\left(r^2+r+1\\right) $$</p>\n<p>Split into Partial Fractions</p>\n<p>Now, let's rewrite the general term $T_r$ :</p>\n<p>$$ T_r=\\frac{r}{\\left(r^2-r+1\\right)\\left(r^2+r+1\\right)} $$</p>\n<p>We can express the numerator $r$ in terms of the factors in the denominator:</p>\n<p>$$ \\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)=2 r $$</p>\n<p>So, $r=\\frac{1}{2}\\left[\\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)\\right]$. Substituting this back:</p>\n<p>$$ T_r=\\frac{1}{2}\\left[\\frac{\\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)}{\\left(r^2-r+1\\right)\\left(r^2+r+1\\right)}\\right] $$</p>\n<p>$$ T_r=\\frac{1}{2}\\left[\\frac{1}{r^2-r+1}-\\frac{1}{r^2+r+1}\\right] $$</p>\n<p>Evaluate the Telescoping Sum</p>\n<p>Let $f(r)=\\frac{1}{r^2-r+1}$. \n\n<br/><br/>Note that $f(r+1)=\\frac{1}{(r+1)^2-(r+1)+1}=\\frac{1}{r^2+2 r+1-r-1+1}=\\frac{1}{r^2+r+1}$. </p>\n<p>Our sum becomes : $$ S=\\frac{1}{2} \\sum\\limits_{r=1}^{25}[f(r)-f(r+1)] $$</p>\n<p>Expanding this:</p>\n<ul>\n\n<li><p>For $r=1$ : $f(1)-f(2)$</p></li>\n\n<li><p>For $r=2: f(2)-f(3)$</p></li>\n\n<li><p>For $r=3: f(3)-f(4)$</p></li>\n\n<li><p>…</p></li>\n\n<li><p>For $r=24: f(24)-f(25)$</p></li>\n\n<li><p>For $r=25: f(25)-f(26)$</p></li>\n\n</ul>\n<p>Result of summation: $\\sum\\limits_{r=1}^{25}[f(r)-f(r+1)]=f(1)-f(26)$</p>\n<p>So,</p>\n<p>$$ S=\\frac{1}{2}[f(1)-f(26)] $$</p>\n<p>Calculate the Final Value</p>\n<p><ul></p>\n<p><li><p>$f(1)=\\frac{1}{1^2-1+1}=1$</p></li></p>\n<p>$\\begin{aligned} & f(26)=\\frac{1}{25^2+25+1}=\\frac{1}{625+25+1}=\\frac{1}{651} \\\\ & S=\\frac{1}{2}\\left[1-\\frac{1}{651}\\right]=\\frac{1}{2}\\left(\\frac{651-1}{651}\\right)=\\frac{650}{2 \\times 651} \\\\ & S=\\frac{325}{651}\\end{aligned}$</p>\n<p>$325=(5)^2 \\times 13$ and $651=3 \\times 7 \\times 31$ they share no common factor $\\operatorname{gcd}(325,651)=1$ </p>\n<p>So $p=325$ and $q=651  \n<br/><br/>$$\\therefore $$ p+q=325+651=976$</p>",
+    "solution": "<p>Given</p>\n<p>$$ \\sum\\limits_{r=1}^{25}\\left(\\frac{r}{r^4+r^2+1}\\right)=\\frac{p}{q} $$</p>\n<p>The expression $r^4+r^2+1$ can be factored using a completion of squares technique:</p>\n<p>$$ r^4+r^2+1=\\left(r^4+2 r^2+1\\right)-r^2=\\left(r^2+1\\right)^2-r^2 $$</p>\n<p>Using the difference of squares formula, $a^2-b^2=(a-b)(a+b)$ :</p>\n<p>$$ r^4+r^2+1=\\left(r^2-r+1\\right)\\left(r^2+r+1\\right) $$</p>\n<p>Split into Partial Fractions</p>\n<p>Now, let's rewrite the general term $T_r$ :</p>\n<p>$$ T_r=\\frac{r}{\\left(r^2-r+1\\right)\\left(r^2+r+1\\right)} $$</p>\n<p>We can express the numerator $r$ in terms of the factors in the denominator:</p>\n<p>$$ \\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)=2 r $$</p>\n<p>So, $r=\\frac{1}{2}\\left[\\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)\\right]$. Substituting this back:</p>\n<p>$$ T_r=\\frac{1}{2}\\left[\\frac{\\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)}{\\left(r^2-r+1\\right)\\left(r^2+r+1\\right)}\\right] $$</p>\n<p>$$ T_r=\\frac{1}{2}\\left[\\frac{1}{r^2-r+1}-\\frac{1}{r^2+r+1}\\right] $$</p>\n<p>Evaluate the Telescoping Sum</p>\n<p>Let $f(r)=\\frac{1}{r^2-r+1}$. \n\n<br/><br/>Note that $f(r+1)=\\frac{1}{(r+1)^2-(r+1)+1}=\\frac{1}{r^2+2 r+1-r-1+1}=\\frac{1}{r^2+r+1}$. </p>\n<p>Our sum becomes : $$ S=\\frac{1}{2} \\sum\\limits_{r=1}^{25}[f(r)-f(r+1)] $$</p>\n<p>Expanding this:</p>\n<ul>\n\n<li><p>For $r=1$ : $f(1)-f(2)$</p></li>\n\n<li><p>For $r=2: f(2)-f(3)$</p></li>\n\n<li><p>For $r=3: f(3)-f(4)$</p></li>\n\n<li><p>\u2026</p></li>\n\n<li><p>For $r=24: f(24)-f(25)$</p></li>\n\n<li><p>For $r=25: f(25)-f(26)$</p></li>\n\n</ul>\n<p>Result of summation: $\\sum\\limits_{r=1}^{25}[f(r)-f(r+1)]=f(1)-f(26)$</p>\n<p>So,</p>\n<p>$$ S=\\frac{1}{2}[f(1)-f(26)] $$</p>\n<p>Calculate the Final Value</p>\n<p><ul></p>\n<p><li><p>$f(1)=\\frac{1}{1^2-1+1}=1$</p></li></p>\n<p>$\\begin{aligned} & f(26)=\\frac{1}{25^2+25+1}=\\frac{1}{625+25+1}=\\frac{1}{651} \\\\ & S=\\frac{1}{2}\\left[1-\\frac{1}{651}\\right]=\\frac{1}{2}\\left(\\frac{651-1}{651}\\right)=\\frac{650}{2 \\times 651} \\\\ & S=\\frac{325}{651}\\end{aligned}$</p>\n<p>$325=(5)^2 \\times 13$ and $651=3 \\times 7 \\times 31$ they share no common factor $\\operatorname{gcd}(325,651)=1$ </p>\n<p>So $p=325$ and $q=651  \n<br/><br/>$$\\therefore $$ p+q=325+651=976$</p>",
     "section": "B",
     "type": "SUBJECTIVE"
   },
@@ -544,7 +544,7 @@
     "subject": "Mathematics",
     "topic": "summation-of-series",
     "difficulty": "medium",
-    "solution": "<p>To solve this problem, we need to determine in which row the number $5310$ appears when positive integers are arranged in rows such that the $k^\\text{th}$ row contains exactly $k$ numbers.</p>\n<h3><strong>Understanding the Pattern</strong></h3>\n\n<p><p><strong>First row ($k = 1$)</strong>: Contains 1 number.</p></p>\n<p><p><strong>Second row ($k = 2$)</strong>: Contains 2 numbers.</p></p>\n<p><p><strong>Third row ($k = 3$)</strong>: Contains 3 numbers.</p></p>\n<p><p><strong>…</strong></p></p>\n<p><p><strong>$k^\\text{th}$ row</strong>: Contains $k$ numbers.</p></p>\n\n<h3><strong>Total Numbers Up to the $k^\\text{th}$ Row</strong></h3>\n<p>The total number of integers up to the $k^\\text{th}$ row is given by the sum of the first $k$ natural numbers:</p>\n<p>$ S(k) = 1 + 2 + 3 + \\dots + k = \\frac{k(k+1)}{2} $</p>\n<h3><strong>Finding the Row Containing 5310</strong></h3>\n<p>We need to find the smallest integer $k$ such that $S(k-1) < 5310 \\leq S(k)$. This means:</p>\n<p>$ \\frac{(k-1)k}{2} < 5310 \\leq \\frac{k(k+1)}{2} $</p>\n<h4><strong>Step 1: Estimate $k$</strong></h4>\n<p>Let's approximate $k$ by solving the inequality:</p>\n<p>$ \\frac{k(k+1)}{2} \\geq 5310 $</p>\n<p>Multiply both sides by 2:</p>\n<p>$ k(k+1) \\geq 10620 $</p>\n<p>This is a quadratic inequality. We can approximate $k$ by taking the square root:</p>\n<p>$ k \\approx \\sqrt{10620} \\approx 103 $</p>\n<h4><strong>Step 2: Calculate $S(k)$ for $k = 102$ and $k = 103$</strong></h4>\n\n<p>For $k = 102$:</p>\n\n<p>$ S(102) = \\frac{102 \\times 103}{2} = \\frac{10506}{2} = 5253 $</p>\n\n<p>For $k = 103$:</p>\n\n<p>$ S(103) = \\frac{103 \\times 104}{2} = \\frac{10712}{2} = 5356 $</p>\n<h4><strong>Step 3: Determine the Correct Row</strong></h4>\n<p>Since $S(102) = 5253 < 5310 \\leq 5356 = S(103)$, the number $5310$ lies between $5254$ and $5356$, inclusive. Therefore, it is in the $103^\\text{rd}$ row.</p>\n<h3><strong>Conclusion</strong></h3>\n<p>The number $5310$ will be in the <strong>$103^\\text{rd}$ row</strong>.</p>",
+    "solution": "<p>To solve this problem, we need to determine in which row the number $5310$ appears when positive integers are arranged in rows such that the $k^\\text{th}$ row contains exactly $k$ numbers.</p>\n<h3><strong>Understanding the Pattern</strong></h3>\n\n<p><p><strong>First row ($k = 1$)</strong>: Contains 1 number.</p></p>\n<p><p><strong>Second row ($k = 2$)</strong>: Contains 2 numbers.</p></p>\n<p><p><strong>Third row ($k = 3$)</strong>: Contains 3 numbers.</p></p>\n<p><p><strong>\u2026</strong></p></p>\n<p><p><strong>$k^\\text{th}$ row</strong>: Contains $k$ numbers.</p></p>\n\n<h3><strong>Total Numbers Up to the $k^\\text{th}$ Row</strong></h3>\n<p>The total number of integers up to the $k^\\text{th}$ row is given by the sum of the first $k$ natural numbers:</p>\n<p>$ S(k) = 1 + 2 + 3 + \\dots + k = \\frac{k(k+1)}{2} $</p>\n<h3><strong>Finding the Row Containing 5310</strong></h3>\n<p>We need to find the smallest integer $k$ such that $S(k-1) < 5310 \\leq S(k)$. This means:</p>\n<p>$ \\frac{(k-1)k}{2} < 5310 \\leq \\frac{k(k+1)}{2} $</p>\n<h4><strong>Step 1: Estimate $k$</strong></h4>\n<p>Let's approximate $k$ by solving the inequality:</p>\n<p>$ \\frac{k(k+1)}{2} \\geq 5310 $</p>\n<p>Multiply both sides by 2:</p>\n<p>$ k(k+1) \\geq 10620 $</p>\n<p>This is a quadratic inequality. We can approximate $k$ by taking the square root:</p>\n<p>$ k \\approx \\sqrt{10620} \\approx 103 $</p>\n<h4><strong>Step 2: Calculate $S(k)$ for $k = 102$ and $k = 103$</strong></h4>\n\n<p>For $k = 102$:</p>\n\n<p>$ S(102) = \\frac{102 \\times 103}{2} = \\frac{10506}{2} = 5253 $</p>\n\n<p>For $k = 103$:</p>\n\n<p>$ S(103) = \\frac{103 \\times 104}{2} = \\frac{10712}{2} = 5356 $</p>\n<h4><strong>Step 3: Determine the Correct Row</strong></h4>\n<p>Since $S(102) = 5253 < 5310 \\leq 5356 = S(103)$, the number $5310$ lies between $5254$ and $5356$, inclusive. Therefore, it is in the $103^\\text{rd}$ row.</p>\n<h3><strong>Conclusion</strong></h3>\n<p>The number $5310$ will be in the <strong>$103^\\text{rd}$ row</strong>.</p>",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -1691,7 +1691,7 @@
     "subject": "Mathematics",
     "topic": "summation-of-series",
     "difficulty": "medium",
-    "solution": "(x + y) + (x<sup>2</sup>+xy+y<sup>2</sup>) + (x<sup>3</sup>+x<sup>2</sup>y + xy<sup>2</sup>+y<sup>3</sup>) + ....\n<br><br>By multiplying and dividing x – y :\n<br><br>$${{\\left( {{x^2} - {y^2}} \\right) + \\left( {{x^3} - {y^3}} \\right) + \\left( {{x^4} - {y^4}} \\right) + ...} \\over {x - y}}$$\n<br><br>= $${{\\left( {{x^2} + {x^3} + {x^4} + ....} \\right) - \\left( {{y^2} + {y^3} + {y^4} + ...} \\right)} \\over {x - y}}$$\n<br><br>= $${{{{{x^2}} \\over {1 - x}} - {{{y^2}} \\over {1 - y}}} \\over {x - y}}$$\n<br><br>= $${{\\left( {{x^2} - {y^2}} \\right) - xy\\left( {x - y} \\right)} \\over {\\left( {1 - x} \\right)\\left( {1 - y} \\right)\\left( {x - y} \\right)}}$$\n<br><br>= $${{x + y - xy} \\over {\\left( {1 - x} \\right)\\left( {1 - y} \\right)}}$$",
+    "solution": "(x + y) + (x<sup>2</sup>+xy+y<sup>2</sup>) + (x<sup>3</sup>+x<sup>2</sup>y + xy<sup>2</sup>+y<sup>3</sup>) + ....\n<br><br>By multiplying and dividing x \u2013 y :\n<br><br>$${{\\left( {{x^2} - {y^2}} \\right) + \\left( {{x^3} - {y^3}} \\right) + \\left( {{x^4} - {y^4}} \\right) + ...} \\over {x - y}}$$\n<br><br>= $${{\\left( {{x^2} + {x^3} + {x^4} + ....} \\right) - \\left( {{y^2} + {y^3} + {y^4} + ...} \\right)} \\over {x - y}}$$\n<br><br>= $${{{{{x^2}} \\over {1 - x}} - {{{y^2}} \\over {1 - y}}} \\over {x - y}}$$\n<br><br>= $${{\\left( {{x^2} - {y^2}} \\right) - xy\\left( {x - y} \\right)} \\over {\\left( {1 - x} \\right)\\left( {1 - y} \\right)\\left( {x - y} \\right)}}$$\n<br><br>= $${{x + y - xy} \\over {\\left( {1 - x} \\right)\\left( {1 - y} \\right)}}$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -1702,7 +1702,7 @@
     "options": [
       "n = 41",
       "n = 60",
-      "n<sup>th</sup> term is –4",
+      "n<sup>th</sup> term is \u20134",
       "n<sup>th</sup> term is -4$${2 \\over 5}$$"
     ],
     "correctOption": 2,
@@ -1720,7 +1720,7 @@
   {
     "id": "6CDZ22WJaLTtjOakazjgy2xukf7gbwk0",
     "questionNumber": 66,
-    "questionText": "If 1+(1–2<sup>2</sup>.1)+(1–4<sup>2</sup>.3)+(1-6<sup>2</sup>.5)+......+(1-20<sup>2</sup>.19)=  $$\\alpha $$ - 220$$\\beta $$, <br>then an ordered pair $$\\left( {\\alpha ,\\beta } \\right)$$ is equal to:",
+    "questionText": "If 1+(1\u20132<sup>2</sup>.1)+(1\u20134<sup>2</sup>.3)+(1-6<sup>2</sup>.5)+......+(1-20<sup>2</sup>.19)=  $$\\alpha $$ - 220$$\\beta $$, <br>then an ordered pair $$\\left( {\\alpha ,\\beta } \\right)$$ is equal to:",
     "options": [
       "(11, 103)",
       "(10, 103)",
@@ -1757,7 +1757,7 @@
     "subject": "Mathematics",
     "topic": "summation-of-series",
     "difficulty": "medium",
-    "solution": "460 = log<sub>7</sub> <sup>x</sup>·(2 + 3 + 4 + ..... + 20 + 21)\n<br><br>$$ \\Rightarrow $$ 460 = log<sub>7</sub> <sup>x</sup>. $$\\left( {{{21 \\times 22} \\over 2} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ 460 = 230. log<sub>7</sub> <sup>x</sup>\n<br><br>$$ \\Rightarrow $$ log<sub>7</sub> <sup>x</sup> = 2\n<br><br>$$ \\Rightarrow $$ x = 49",
+    "solution": "460 = log<sub>7</sub> <sup>x</sup>\u00b7(2 + 3 + 4 + ..... + 20 + 21)\n<br><br>$$ \\Rightarrow $$ 460 = log<sub>7</sub> <sup>x</sup>. $$\\left( {{{21 \\times 22} \\over 2} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ 460 = 230. log<sub>7</sub> <sup>x</sup>\n<br><br>$$ \\Rightarrow $$ log<sub>7</sub> <sup>x</sup> = 2\n<br><br>$$ \\Rightarrow $$ x = 49",
     "section": "A",
     "type": "SCQ"
   },
@@ -1767,7 +1767,7 @@
     "questionText": "If 2<sup>10</sup> + 2<sup>9</sup>.3<sup>1</sup> + 2<sup>8</sup>\n.3<sup>2</sup> +.....+ 2.3<sup>9</sup> + 3<sup>10</sup> = S - 2<sup>11</sup>, then S is equal to :",
     "options": [
       "$${{{3^{11}}} \\over 2} + {2^{10}}$$",
-      "3<sup>11</sup> — 2<sup>12</sup>",
+      "3<sup>11</sup> \u2014 2<sup>12</sup>",
       "2.3<sup>11</sup>",
       "3<sup>11</sup>"
     ],
@@ -1801,7 +1801,7 @@
     "subject": "Mathematics",
     "topic": "summation-of-series",
     "difficulty": "medium",
-    "solution": "3 + 4 + 8 + 9 + 13 + 14 +…….upto 40 terms\n<br><br>$$ \\Rightarrow $$ 7 + 17 + 27 +…….20 terms\n <br><br>S = $${{20} \\over 2}$$ [2 × 7 + 19 × 10]\n<br><br> = 102 × 20 = 102 m\n<br><br>$$ \\therefore $$ m = 20",
+    "solution": "3 + 4 + 8 + 9 + 13 + 14 +\u2026\u2026.upto 40 terms\n<br><br>$$ \\Rightarrow $$ 7 + 17 + 27 +\u2026\u2026.20 terms\n <br><br>S = $${{20} \\over 2}$$ [2 \u00d7 7 + 19 \u00d7 10]\n<br><br> = 102 \u00d7 20 = 102 m\n<br><br>$$ \\therefore $$ m = 20",
     "section": "A",
     "type": "SCQ"
   },
@@ -1996,7 +1996,7 @@
   {
     "id": "7PpCk7Hi0qXclaNmDM18hoxe66ijvww22ey",
     "questionNumber": 83,
-    "questionText": "The sum of the series 1 + 2 × 3 + 3 × 5 + 4 × 7 +....\nupto 11th term is :-",
+    "questionText": "The sum of the series 1 + 2 \u00d7 3 + 3 \u00d7 5 + 4 \u00d7 7 +....\nupto 11th term is :-",
     "options": [
       "945",
       "916",
@@ -2011,7 +2011,7 @@
     "subject": "Mathematics",
     "topic": "summation-of-series",
     "difficulty": "easy",
-    "solution": "S = 1 + 2 × 3 + 3 × 5 + 4 × 7 +....\nupto 11th term\n<br><br>General term T<sub>n</sub> = n (2n - 1)\n<br><br>$$ \\therefore $$ S<sub>n</sub> = $$\\sum {{T_n}} $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$\\sum {\\left( {2{n^2} - n} \\right)} $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$2\\sum {{n^2} - \\sum r } $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$2\\left( {{{n\\left( {n + 1} \\right)\\left( {2n + 1} \\right)} \\over 6}} \\right) - {{n\\left( {n + 1} \\right)} \\over 2}$$\n<br><br>$$ \\therefore $$ S<sub>11</sub> = $$2\\left( {{{11\\left( {12} \\right)\\left( {23} \\right)} \\over 6}} \\right) - {{11\\left( {12} \\right)} \\over 2}$$\n<br><br>$$ \\Rightarrow $$ S<sub>11</sub> = 946",
+    "solution": "S = 1 + 2 \u00d7 3 + 3 \u00d7 5 + 4 \u00d7 7 +....\nupto 11th term\n<br><br>General term T<sub>n</sub> = n (2n - 1)\n<br><br>$$ \\therefore $$ S<sub>n</sub> = $$\\sum {{T_n}} $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$\\sum {\\left( {2{n^2} - n} \\right)} $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$2\\sum {{n^2} - \\sum r } $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$2\\left( {{{n\\left( {n + 1} \\right)\\left( {2n + 1} \\right)} \\over 6}} \\right) - {{n\\left( {n + 1} \\right)} \\over 2}$$\n<br><br>$$ \\therefore $$ S<sub>11</sub> = $$2\\left( {{{11\\left( {12} \\right)\\left( {23} \\right)} \\over 6}} \\right) - {{11\\left( {12} \\right)} \\over 2}$$\n<br><br>$$ \\Rightarrow $$ S<sub>11</sub> = 946",
     "section": "A",
     "type": "SCQ"
   },
@@ -2033,7 +2033,7 @@
     "subject": "Mathematics",
     "topic": "summation-of-series",
     "difficulty": "medium",
-    "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kejek207vm7v/da15f164-88ca-42a6-9f77-5b5446f6a5bd/1239d0b0-f3e5-11e9-a7bc-b7b08ce8d541/file-7kejek207vm7w-320w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Sequences and Series Question 245 English Explanation 1\">\n<br><br>As triangle is equilateral so each side of triangle has n-balls.\n<br><br>At the top of the triangle there is 1 ball then next line has 2 balls. Similarly last line has n balls.\n<br><br>$$ \\therefore $$ Total no of balls used to create this triangle\n<br><br>= 1 + 2 + 3 + ..............+ n\n<br><br>= $${{n\\left( {n + 1} \\right)} \\over 2}$$\n<img src=\"https://imagex.cdn.examgoal.net/7kejek208wsuv/3a61ab51-2bbd-453b-b7ed-6990ff7b0baa/1c4ae270-f3e9-11e9-a7bc-b7b08ce8d541/file-7kejek208wsuw-320w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Sequences and Series Question 245 English Explanation 2\">\n<br>Here Number of balls in each side of square is = (n – 2)\n<br><br>$$ \\therefore $$ Total no of balls used to create this square\n<br><br>= (n – 2)<sup>2</sup>\n<br><br>According to the question,\n<br><br>$${{n\\left( {n + 1} \\right)} \\over 2}$$ + 99 = (n – 2)<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> - 9n - 190 = 0\n<br><br>$$ \\Rightarrow $$ (n - 19) (n + 10) = 0\n<br><br>$$ \\therefore $$ n = 19\n<br><br>So total balls used to form triangle\n<br><br>= $${{n\\left( {n + 1} \\right)} \\over 2}$$ = $${{19\\left( {20} \\right)} \\over 2}$$ = 190",
+    "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kejek207vm7v/da15f164-88ca-42a6-9f77-5b5446f6a5bd/1239d0b0-f3e5-11e9-a7bc-b7b08ce8d541/file-7kejek207vm7w-320w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Sequences and Series Question 245 English Explanation 1\">\n<br><br>As triangle is equilateral so each side of triangle has n-balls.\n<br><br>At the top of the triangle there is 1 ball then next line has 2 balls. Similarly last line has n balls.\n<br><br>$$ \\therefore $$ Total no of balls used to create this triangle\n<br><br>= 1 + 2 + 3 + ..............+ n\n<br><br>= $${{n\\left( {n + 1} \\right)} \\over 2}$$\n<img src=\"https://imagex.cdn.examgoal.net/7kejek208wsuv/3a61ab51-2bbd-453b-b7ed-6990ff7b0baa/1c4ae270-f3e9-11e9-a7bc-b7b08ce8d541/file-7kejek208wsuw-320w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Sequences and Series Question 245 English Explanation 2\">\n<br>Here Number of balls in each side of square is = (n \u2013 2)\n<br><br>$$ \\therefore $$ Total no of balls used to create this square\n<br><br>= (n \u2013 2)<sup>2</sup>\n<br><br>According to the question,\n<br><br>$${{n\\left( {n + 1} \\right)} \\over 2}$$ + 99 = (n \u2013 2)<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> - 9n - 190 = 0\n<br><br>$$ \\Rightarrow $$ (n - 19) (n + 10) = 0\n<br><br>$$ \\therefore $$ n = 19\n<br><br>So total balls used to form triangle\n<br><br>= $${{n\\left( {n + 1} \\right)} \\over 2}$$ = $${{19\\left( {20} \\right)} \\over 2}$$ = 190",
     "section": "A",
     "type": "SCQ"
   },
@@ -2143,9 +2143,9 @@
     "subject": "Mathematics",
     "topic": "summation-of-series",
     "difficulty": "medium",
-    "solution": "9(25$${a^2}$$ + b<sup>2</sup>) + 25(c<sup>2</sup> - 3$$a$$c) = 15b(3$$a$$ + c)\n<br><br> $$ \\Rightarrow 225{a^2} + 9{b^2} + 25{c^2} - 75ac = 45ab + 15bc$$\n<br><br>$$ \\Rightarrow {\\left( {15a} \\right)^2} + {\\left( {3b} \\right)^2} + {\\left( {5c} \\right)^2} - 75ac = 45ab + 15bc$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over 2}\\left[ {{{\\left( {15a - 3b} \\right)}^2} + {{\\left( {3b - 5c} \\right)}^2} + {{\\left( {5c - 15a} \\right)}^2}} \\right] = 0$$\n<br><br>it is possible when 15a – 3b = 0, 3b – 5 c = 0 and\n5c – 15a = 0\n<br><br>$$ \\Rightarrow $$ 15a = 3b = 5c\n<br><br>$$ \\Rightarrow $$ b = $${{5c} \\over 3}$$, a = $${c \\over 3}$$\n<br><br>$$ \\Rightarrow $$ a + b = $${c \\over 3} + {{5c} \\over 3}$$ = $${{6c} \\over 3}$$ = 2c\n<br><br>$$ \\therefore $$ b, c, a are in A.P.",
+    "solution": "9(25$${a^2}$$ + b<sup>2</sup>) + 25(c<sup>2</sup> - 3$$a$$c) = 15b(3$$a$$ + c)\n<br><br> $$ \\Rightarrow 225{a^2} + 9{b^2} + 25{c^2} - 75ac = 45ab + 15bc$$\n<br><br>$$ \\Rightarrow {\\left( {15a} \\right)^2} + {\\left( {3b} \\right)^2} + {\\left( {5c} \\right)^2} - 75ac = 45ab + 15bc$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over 2}\\left[ {{{\\left( {15a - 3b} \\right)}^2} + {{\\left( {3b - 5c} \\right)}^2} + {{\\left( {5c - 15a} \\right)}^2}} \\right] = 0$$\n<br><br>it is possible when 15a \u2013 3b = 0, 3b \u2013 5 c = 0 and\n5c \u2013 15a = 0\n<br><br>$$ \\Rightarrow $$ 15a = 3b = 5c\n<br><br>$$ \\Rightarrow $$ b = $${{5c} \\over 3}$$, a = $${c \\over 3}$$\n<br><br>$$ \\Rightarrow $$ a + b = $${c \\over 3} + {{5c} \\over 3}$$ = $${{6c} \\over 3}$$ = 2c\n<br><br>$$ \\therefore $$ b, c, a are in A.P.",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "OME7QaClOHVLgwxtyldwp",
@@ -2354,7 +2354,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -2362,7 +2362,7 @@
     "difficulty": "medium",
     "solution": "$$n$$<sup>th </sup> term of the given series\n<br><br>$$ = {T_n} = {\\left( {n - 1} \\right)^2} + \\left( {n - 1} \\right)n + {n^2}$$\n<br><br>$$ = {{\\left( {{{\\left( {n - 1} \\right)}^3} - {n^3}} \\right)} \\over {\\left( {n - 1} \\right) - n}}$$\n<br><br>$$ = {n^3} - {\\left( {n - 1} \\right)^3}$$\n<br><br>$$ \\Rightarrow {S_n} = \\sum\\limits_{k = 1}^n {\\left[ {{k^3} - {{\\left( {k - 1} \\right)}^3}} \\right]} $$\n<br><br>$$ \\Rightarrow 8000 = {n^3}$$\n<br><br>$$ \\Rightarrow n = 20\\,\\,$$  which is a natural number. \n<br><br>Now, put $$n = 1,2,3,.....20$$\n<br><br>$${T_1} = {1^3} - {0^3}$$\n<br><br>$${T_2} = {2^3} - {1^3}$$\n<br><br>.\n<br><br>.\n<br><br>.\n<br><br>$${T_{20}} = {20^3} - {19^3}$$\n<br><br>Now, $${T_1} + {T_2} + ..... + {T_{20}} = {S_{20}}$$\n<br><br>$$ \\Rightarrow {S_{20}} = {20^3} - {0^3} = 8000$$\n<br><br>Hence, both the given statements are true and statement $$2$$ supports statement $$1.$$ ",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mYLdOMfdynCytqEr",

@@ -11,7 +11,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -19,7 +19,7 @@
     "difficulty": "easy",
     "solution": "<p>For the expansion of</p>\n<p>$$ \\left(9x-\\frac{1}{3\\sqrt{x}}\\right)^{18}, $$</p>\n<p>we use the general term in the binomial expansion:</p>\n<p>$$ T_{r+1}=\\binom{18}{r}(9x)^{18-r}\\left(-\\frac{1}{3\\sqrt{x}}\\right)^r $$</p>\n<p>Now simplify the power of $x$ in this term.</p>\n<p>Since</p>\n<p>$$ (9x)^{18-r}=9^{18-r}x^{18-r} $$</p>\n<p>and</p>\n<p>$$ \\left(\\frac{1}{3\\sqrt{x}}\\right)^r=\\frac{1}{3^r x^{r/2}}, $$</p>\n<p>so the power of $x$ in the general term is</p>\n<p>$$ x^{18-r-\\frac r2}=x^{18-\\frac{3r}{2}}. $$</p>\n<p>For the term independent of $x$, the power of $x$ must be zero:</p>\n<p>$$ 18-\\frac{3r}{2}=0 $$</p>\n<p>$$ \\frac{3r}{2}=18 $$</p>\n<p>$$ r=12 $$</p>\n<p>So the required term is the $(12+1)$th term, i.e. $T_{13}$.</p>\n<p>Now compute it:</p>\n<p>$$ T_{13}=\\binom{18}{12}(9x)^6\\left(-\\frac{1}{3\\sqrt{x}}\\right)^{12} $$</p>\n<p>Since the power of $x$ becomes zero, only the numerical coefficient remains:</p>\n<p>$$ T_{13}=\\binom{18}{12}\\cdot 9^6 \\cdot \\frac{1}{3^{12}} $$</p>\n<p>Also,</p>\n<p>$$ 9^6=(3^2)^6=3^{12} $$</p>\n<p>So,</p>\n<p>$$ T_{13}=\\binom{18}{12} $$</p>\n<p>and</p>\n<p>$$ \\binom{18}{12}=\\binom{18}{6}=\\frac{18!}{6!\\,12!}=18564 $$</p>\n<p>Given that the term independent of $x$ is $(221)k$, we have</p>\n<p>$$ 221k=18564 $$</p>\n<p>Thus,</p>\n<p>$$ k=\\frac{18564}{221}=84 $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{84} $$</p>\n<p>Hence, <strong>Option A</strong> is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnswhtow",
@@ -339,7 +339,7 @@
     "subject": "Mathematics",
     "topic": "general-term",
     "difficulty": "medium",
-    "solution": "We have, binomial coefficient, $(2+x)^9$\n<br/><br/>$$\nT_{r+1}={ }^n C_r 2^{n-r} \\times x^r\n$$\n<br/><br/>Coefficient of $x\\left(T_1\\right)={ }^9 C_1 \\times 2^8$\n<br/><br/>Coefficient of $x^2\\left(T_2\\right)={ }^9 C_2 \\times 2^7$\n<br/><br/>Coefficient of $x^3\\left(T_3\\right)={ }^9 C_3 \\times 2^6$\n<br/>              .                    .\n<br/>              .                    .\n<br/>              .                    .\n<br/><br/>Coefficient of $x^7\\left(T_7\\right)={ }^9 C_7 \\times 2^2$\n<br/><br/>$$\n\\text { Mean }=\\frac{{ }^9 C_1 \\times 2^8+{ }^9 C_2 \\times 2^7+{ }^9 C_3 \\times 2^6+\\ldots+{ }^9 C_7 \\times 2^2}{7}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& { }^9 C_0 \\times 2^9+{ }^9 C_1 \\times 2^8+{ }^9 C_2 \\times 2^7+{ }^9 C_3 \\times 2^6+\\ldots .+{ }^9 C_7 \\times 2^2 \\\\\n& =\\frac{+{ }^9 C_8 \\times 2^1+{ }^9 C_9 \\times 2^0-{ }^9 C_0 \\times 2^9-{ }^9 C_8 \\times 2^1-{ }^9 C_9 \\times 2^0}{7} \n\\end{aligned}\n$$\n<br/><br/>$$\n=\\frac{(1+2)^9-2^9-18-1}{7}=\\frac{19152}{7}=2736\n$$",
+    "solution": "We have, binomial coefficient, $(2+x)^9$\n<br/><br/>$$\nT_{r+1}={ }^n C_r 2^{n-r} \\times x^r\n$$\n<br/><br/>Coefficient of $x\\left(T_1\\right)={ }^9 C_1 \\times 2^8$\n<br/><br/>Coefficient of $x^2\\left(T_2\\right)={ }^9 C_2 \\times 2^7$\n<br/><br/>Coefficient of $x^3\\left(T_3\\right)={ }^9 C_3 \\times 2^6$\n<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\n<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\n<br/>\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0.\n<br/><br/>Coefficient of $x^7\\left(T_7\\right)={ }^9 C_7 \\times 2^2$\n<br/><br/>$$\n\\text { Mean }=\\frac{{ }^9 C_1 \\times 2^8+{ }^9 C_2 \\times 2^7+{ }^9 C_3 \\times 2^6+\\ldots+{ }^9 C_7 \\times 2^2}{7}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& { }^9 C_0 \\times 2^9+{ }^9 C_1 \\times 2^8+{ }^9 C_2 \\times 2^7+{ }^9 C_3 \\times 2^6+\\ldots .+{ }^9 C_7 \\times 2^2 \\\\\n& =\\frac{+{ }^9 C_8 \\times 2^1+{ }^9 C_9 \\times 2^0-{ }^9 C_0 \\times 2^9-{ }^9 C_8 \\times 2^1-{ }^9 C_9 \\times 2^0}{7} \n\\end{aligned}\n$$\n<br/><br/>$$\n=\\frac{(1+2)^9-2^9-18-1}{7}=\\frac{19152}{7}=2736\n$$",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -1238,7 +1238,7 @@
     "subject": "Mathematics",
     "topic": "general-term",
     "difficulty": "medium",
-    "solution": "(1 + x)<sup>10</sup> + x(1 + x)<sup>9</sup>\n + x<sup>2</sup>(1 + x)<sup>8</sup>\n + ......+ x<sup>10</sup>\n<br><br>This is a G.P where\n<br><br>First term, a = (1 + x)<sup>10</sup>\n<br><br>common ratio, r = $${x \\over {1 + x}}$$\n<br><br>Number of terms = 11\n<br><br>Sum of G.P\n<br><br>= $${{{{\\left( {1 + x} \\right)}^{10}}\\left( {1 - {{\\left( {{x \\over {1 + x}}} \\right)}^{11}}} \\right)} \\over {1 - {x \\over {1 + x}}}}$$\n<br><br>=  (1 + x)<sup>11</sup>\n – x<sup>11</sup>\n<br><br>So Coefficient of x<sup>7</sup>\n is <sup>11</sup>C<sub>7</sub> = 330 ",
+    "solution": "(1 + x)<sup>10</sup> + x(1 + x)<sup>9</sup>\n + x<sup>2</sup>(1 + x)<sup>8</sup>\n + ......+ x<sup>10</sup>\n<br><br>This is a G.P where\n<br><br>First term, a = (1 + x)<sup>10</sup>\n<br><br>common ratio, r = $${x \\over {1 + x}}$$\n<br><br>Number of terms = 11\n<br><br>Sum of G.P\n<br><br>= $${{{{\\left( {1 + x} \\right)}^{10}}\\left( {1 - {{\\left( {{x \\over {1 + x}}} \\right)}^{11}}} \\right)} \\over {1 - {x \\over {1 + x}}}}$$\n<br><br>=  (1 + x)<sup>11</sup>\n \u2013 x<sup>11</sup>\n<br><br>So Coefficient of x<sup>7</sup>\n is <sup>11</sup>C<sub>7</sub> = 330 ",
     "section": "A",
     "type": "SCQ"
   },
@@ -1260,7 +1260,7 @@
     "subject": "Mathematics",
     "topic": "general-term",
     "difficulty": "medium",
-    "solution": "(x+a)<sup>n </sup>+ (x – a)<sup>n</sup>\n = 2(T<sub>1</sub>\n + T<sub>3</sub>\n + T<sub>5</sub>\n +.....)\n<br><br>$${\\left( {x + \\sqrt {{x^2} - 1} } \\right)^6} + {\\left( {x - \\sqrt {{x^2} - 1} } \\right)^6}$$\n<br><br>= 2[T<sub>1</sub>\n + T<sub>3</sub>\n + T<sub>5</sub>\n + T<sub>7</sub>\n]\n<br><br>= 2[<sup>6</sup>C<sub>0</sub>\n x<sup>6</sup>\n + <sup>6</sup>C<sub>2\n</sub>\nx<sup>4</sup>(x<sup>2</sup>\n – 1) + <sup>6</sup>C<sub>4</sub>\nx<sup>2</sup>(x<sup>2</sup>\n –1)<sup>2</sup>\n + <sup>6</sup>C<sub>6</sub>\nx<sup>0</sup>(x<sup>2</sup>–1)<sup>3</sup>]\n<br><br>= 2[x<sup>6</sup>+ 15(x<sup>6</sup>\n – x<sup>4</sup>) + 15x<sup>2</sup>\n (x<sup>4</sup>\n + 1 –2x<sup>2</sup>) + (x<sup>6</sup>\n – 3x<sup>4</sup>\n +3x<sup>2</sup>\n –1)]\n<br><br>= 2[x<sup>6</sup>(2 + 15 + 15 + 1) + x<sup>4</sup>(–15 – 30 –3) + x<sup>2</sup>(15 + 3)]\n<br><br>Coefficient of x<sup>4</sup> = $$\\alpha $$ = -96\n<br><br>And coefficient of x<sup>2</sup> = $$\\beta $$ = 36\n<br><br>$$ \\therefore $$ $$\\alpha  - \\beta  =  - 96 - 36 =  -132$$",
+    "solution": "(x+a)<sup>n </sup>+ (x \u2013 a)<sup>n</sup>\n = 2(T<sub>1</sub>\n + T<sub>3</sub>\n + T<sub>5</sub>\n +.....)\n<br><br>$${\\left( {x + \\sqrt {{x^2} - 1} } \\right)^6} + {\\left( {x - \\sqrt {{x^2} - 1} } \\right)^6}$$\n<br><br>= 2[T<sub>1</sub>\n + T<sub>3</sub>\n + T<sub>5</sub>\n + T<sub>7</sub>\n]\n<br><br>= 2[<sup>6</sup>C<sub>0</sub>\n x<sup>6</sup>\n + <sup>6</sup>C<sub>2\n</sub>\nx<sup>4</sup>(x<sup>2</sup>\n \u2013 1) + <sup>6</sup>C<sub>4</sub>\nx<sup>2</sup>(x<sup>2</sup>\n \u20131)<sup>2</sup>\n + <sup>6</sup>C<sub>6</sub>\nx<sup>0</sup>(x<sup>2</sup>\u20131)<sup>3</sup>]\n<br><br>= 2[x<sup>6</sup>+ 15(x<sup>6</sup>\n \u2013 x<sup>4</sup>) + 15x<sup>2</sup>\n (x<sup>4</sup>\n + 1 \u20132x<sup>2</sup>) + (x<sup>6</sup>\n \u2013 3x<sup>4</sup>\n +3x<sup>2</sup>\n \u20131)]\n<br><br>= 2[x<sup>6</sup>(2 + 15 + 15 + 1) + x<sup>4</sup>(\u201315 \u2013 30 \u20133) + x<sup>2</sup>(15 + 3)]\n<br><br>Coefficient of x<sup>4</sup> = $$\\alpha $$ = -96\n<br><br>And coefficient of x<sup>2</sup> = $$\\beta $$ = 36\n<br><br>$$ \\therefore $$ $$\\alpha  - \\beta  =  - 96 - 36 =  -132$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -1282,7 +1282,7 @@
     "subject": "Mathematics",
     "topic": "general-term",
     "difficulty": "hard",
-    "solution": "T<sub>r + 1</sub> = <sup>16</sup>C<sub>r</sub>$${\\left( {{x \\over {\\cos \\theta }}} \\right)^{16 - r}}{\\left( {{1 \\over {x\\sin \\theta }}} \\right)^r}$$\n<br><br>= <sup>16</sup>C<sub>r</sub>$${\\left( x \\right)^{16 - 2r}} \\times {1 \\over {{{\\left( {\\cos \\theta } \\right)}^{16 - r}}{{\\left( {\\sin \\theta } \\right)}^r}}}$$\n<br><br>term is independent of x when\n<br><br>$$ \\therefore $$ 16 – 2r = 0\n<br><br>$$ \\Rightarrow $$ r = 8\n<br><br>T<sub>9</sub> = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${1 \\over {{{\\cos }^8}\\theta {{\\sin }^8}\\theta }}$$\n<br><br>= <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{{2^8}} \\over {{{\\left( {\\sin 2\\theta } \\right)}^8}}}$$\n<br><br>If $$\\theta  \\in \\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$ then $$2\\theta  \\in \\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$\n<br><br>In the range $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$, sin 2$$\\theta $$ is increasing. \n<br><br>And value of T<sub>9</sub> is least when sin 2$$\\theta $$ is maximum.\n<br><br>And sin 2$$\\theta $$ is maximum in the range $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$ <br>when 2$$\\theta $$ = $${{\\pi  \\over 2}}$$\n<br><br>$$ \\therefore $$ $${l_1}$$ = <sup>16</sup>C<sub>8</sub> $$ \\times $$ 2<sup>8</sup>\n\n<br><br>AgainIf $$\\theta  \\in \\left[ {{\\pi  \\over {16}},{\\pi  \\over 8}} \\right]$$ then $$2\\theta  \\in \\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$\n<br><br>In the range $$\\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$, sin 2$$\\theta $$ is increasing. \n<br><br>And value of T<sub>9</sub> is least when sin 2$$\\theta $$ is maximum.\n<br><br>And sin 2$$\\theta $$ is maximum in the range $$\\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$ <br>when 2$$\\theta $$ = $${{\\pi  \\over 4}}$$\n<br><br>$$ \\therefore $$ $${l_2}$$ = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{{2^8}} \\over {{{\\left( {{1 \\over {\\sqrt 2 }}} \\right)}^8}}}$$\n<br><br> = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{2^8}{2^4}}$$\n<br><br>$$ \\therefore $$ $${{{l_2}} \\over {{l_1}}}$$ = $${{{2^4}} \\over 1}$$ = $${{16} \\over 1}$$",
+    "solution": "T<sub>r + 1</sub> = <sup>16</sup>C<sub>r</sub>$${\\left( {{x \\over {\\cos \\theta }}} \\right)^{16 - r}}{\\left( {{1 \\over {x\\sin \\theta }}} \\right)^r}$$\n<br><br>= <sup>16</sup>C<sub>r</sub>$${\\left( x \\right)^{16 - 2r}} \\times {1 \\over {{{\\left( {\\cos \\theta } \\right)}^{16 - r}}{{\\left( {\\sin \\theta } \\right)}^r}}}$$\n<br><br>term is independent of x when\n<br><br>$$ \\therefore $$ 16 \u2013 2r = 0\n<br><br>$$ \\Rightarrow $$ r = 8\n<br><br>T<sub>9</sub> = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${1 \\over {{{\\cos }^8}\\theta {{\\sin }^8}\\theta }}$$\n<br><br>= <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{{2^8}} \\over {{{\\left( {\\sin 2\\theta } \\right)}^8}}}$$\n<br><br>If $$\\theta  \\in \\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$ then $$2\\theta  \\in \\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$\n<br><br>In the range $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$, sin 2$$\\theta $$ is increasing. \n<br><br>And value of T<sub>9</sub> is least when sin 2$$\\theta $$ is maximum.\n<br><br>And sin 2$$\\theta $$ is maximum in the range $$\\left[ {{\\pi  \\over 4},{\\pi  \\over 2}} \\right]$$ <br>when 2$$\\theta $$ = $${{\\pi  \\over 2}}$$\n<br><br>$$ \\therefore $$ $${l_1}$$ = <sup>16</sup>C<sub>8</sub> $$ \\times $$ 2<sup>8</sup>\n\n<br><br>AgainIf $$\\theta  \\in \\left[ {{\\pi  \\over {16}},{\\pi  \\over 8}} \\right]$$ then $$2\\theta  \\in \\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$\n<br><br>In the range $$\\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$, sin 2$$\\theta $$ is increasing. \n<br><br>And value of T<sub>9</sub> is least when sin 2$$\\theta $$ is maximum.\n<br><br>And sin 2$$\\theta $$ is maximum in the range $$\\left[ {{\\pi  \\over 8},{\\pi  \\over 4}} \\right]$$ <br>when 2$$\\theta $$ = $${{\\pi  \\over 4}}$$\n<br><br>$$ \\therefore $$ $${l_2}$$ = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{{2^8}} \\over {{{\\left( {{1 \\over {\\sqrt 2 }}} \\right)}^8}}}$$\n<br><br> = <sup>16</sup>C<sub>8</sub> $$ \\times $$ $${{2^8}{2^4}}$$\n<br><br>$$ \\therefore $$ $${{{l_2}} \\over {{l_1}}}$$ = $${{{2^4}} \\over 1}$$ = $${{16} \\over 1}$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -1394,7 +1394,7 @@
   {
     "id": "PTfHNLUxmzZnbpCIRr3rsa0w2w9jx5ztehd",
     "questionNumber": 65,
-    "questionText": "The coefficient of x<sup>18</sup> in the product\n<br>(1 + x) (1 – x)<sup>10</sup> (1 + x + x<sup>2</sup>)<sup>9</sup>\n is :",
+    "questionText": "The coefficient of x<sup>18</sup> in the product\n<br>(1 + x) (1 \u2013 x)<sup>10</sup> (1 + x + x<sup>2</sup>)<sup>9</sup>\n is :",
     "options": [
       "126",
       "- 84",
@@ -1416,7 +1416,7 @@
   {
     "id": "SVFbx781jSVe3AbPjftul",
     "questionNumber": 65,
-    "questionText": "The total number of irrational terms in the binomial expansion of (7<sup>1/5</sup> – 3<sup>1/10</sup>)<sup>60</sup> is :",
+    "questionText": "The total number of irrational terms in the binomial expansion of (7<sup>1/5</sup> \u2013 3<sup>1/10</sup>)<sup>60</sup> is :",
     "options": [
       "54 ",
       "55",
@@ -1482,9 +1482,9 @@
   {
     "id": "3TQ0nlDrlHmOpomuWHpzD",
     "questionNumber": 67,
-    "questionText": "If the fourth term in the binomial expansion of $${\\left( {{2 \\over x} + {x^{{{\\log }_8}x}}} \\right)^6}$$\n (x &gt; 0) is 20 × 8<sup>7</sup>, then a value of\nx is :",
+    "questionText": "If the fourth term in the binomial expansion of $${\\left( {{2 \\over x} + {x^{{{\\log }_8}x}}} \\right)^6}$$\n (x &gt; 0) is 20 \u00d7 8<sup>7</sup>, then a value of\nx is :",
     "options": [
-      "8<sup>–2</sup>",
+      "8<sup>\u20132</sup>",
       "8<sup>2</sup>",
       "8<sup>3</sup>",
       "8"
@@ -1497,14 +1497,14 @@
     "subject": "Mathematics",
     "topic": "general-term",
     "difficulty": "medium",
-    "solution": "$${\\left( {{2 \\over x} + {x^{{{\\log }_8}x}}} \\right)^6}$$\n<br><br>Given T<sub>4</sub> = 20 × 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ $${}^6{C_3}{\\left( {{2 \\over x}} \\right)^3}{\\left( {{x^{{{\\log }_8}x}}} \\right)^3}$$ = 20 × 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ 20$$ \\times $$$${8 \\over {{x^3}}} \\times {x^{3{{\\log }_8}x}}$$ = 20 × 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ $${x^{3{{\\log }_8}x - 3}}$$ = 8<sup>6</sup>\n<br><br>Taking $${{{\\log }_8}}$$ both side\n<br><br>$$ \\Rightarrow $$ ($${3{{\\log }_8}x - 3}$$) $$ \\times $$ $${{{\\log }_8}x}$$ = 6\n<br><br>$$ \\Rightarrow $$ $$3{\\left( {{{\\log }_8}x} \\right)^2}$$ - 3$${{{\\log }_8}x}$$ = 6\n<br><br>$$ \\Rightarrow $$ $${\\left( {{{\\log }_8}x} \\right)^2}$$ - $${{{\\log }_8}x}$$ = 2\n<br><br>$$ \\Rightarrow $$ ($${{{\\log }_8}x}$$ - 2)($${{{\\log }_8}x}$$ + 1) = 0\n<br><br>$$ \\Rightarrow $$ $${{{\\log }_8}x}$$ = 2 or $${{{\\log }_8}x}$$ = -1\n<br><br>$$ \\Rightarrow $$ x = 8<sup>2</sup> or x = $${1 \\over 8}$$",
+    "solution": "$${\\left( {{2 \\over x} + {x^{{{\\log }_8}x}}} \\right)^6}$$\n<br><br>Given T<sub>4</sub> = 20 \u00d7 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ $${}^6{C_3}{\\left( {{2 \\over x}} \\right)^3}{\\left( {{x^{{{\\log }_8}x}}} \\right)^3}$$ = 20 \u00d7 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ 20$$ \\times $$$${8 \\over {{x^3}}} \\times {x^{3{{\\log }_8}x}}$$ = 20 \u00d7 8<sup>7</sup>\n<br><br>$$ \\Rightarrow $$ $${x^{3{{\\log }_8}x - 3}}$$ = 8<sup>6</sup>\n<br><br>Taking $${{{\\log }_8}}$$ both side\n<br><br>$$ \\Rightarrow $$ ($${3{{\\log }_8}x - 3}$$) $$ \\times $$ $${{{\\log }_8}x}$$ = 6\n<br><br>$$ \\Rightarrow $$ $$3{\\left( {{{\\log }_8}x} \\right)^2}$$ - 3$${{{\\log }_8}x}$$ = 6\n<br><br>$$ \\Rightarrow $$ $${\\left( {{{\\log }_8}x} \\right)^2}$$ - $${{{\\log }_8}x}$$ = 2\n<br><br>$$ \\Rightarrow $$ ($${{{\\log }_8}x}$$ - 2)($${{{\\log }_8}x}$$ + 1) = 0\n<br><br>$$ \\Rightarrow $$ $${{{\\log }_8}x}$$ = 2 or $${{{\\log }_8}x}$$ = -1\n<br><br>$$ \\Rightarrow $$ x = 8<sup>2</sup> or x = $${1 \\over 8}$$",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "MegnCy5y6WH4JxsjLHqWr",
     "questionNumber": 66,
-    "questionText": "The coefficient of x<sup>−5</sup> in the binomial expansion of \n<br><br>$${\\left( {{{x + 1} \\over {{x^{{2 \\over 3}}} - {x^{{1 \\over 3}}} + 1}} - {{x - 1} \\over {x - {x^{{1 \\over 2}}}}}} \\right)^{10}},$$  where x $$ \\ne $$ 0, 1, is : ",
+    "questionText": "The coefficient of x<sup>\u22125</sup> in the binomial expansion of \n<br><br>$${\\left( {{{x + 1} \\over {{x^{{2 \\over 3}}} - {x^{{1 \\over 3}}} + 1}} - {{x - 1} \\over {x - {x^{{1 \\over 2}}}}}} \\right)^{10}},$$  where x $$ \\ne $$ 0, 1, is : ",
     "options": [
       "1",
       "4",
@@ -1526,7 +1526,7 @@
   {
     "id": "XA8U3jV98E5XEVrRGyjEj",
     "questionNumber": 65,
-    "questionText": "If the coefficients of x<sup>−2</sup> and x<sup>−4</sup> in the expansion of $${\\left( {{x^{{1 \\over 3}}} + {1 \\over {2{x^{{1 \\over 3}}}}}} \\right)^{18}},\\left( {x &gt; 0} \\right),$$ are m and n respectively, then $${m \\over n}$$ is equal to :",
+    "questionText": "If the coefficients of x<sup>\u22122</sup> and x<sup>\u22124</sup> in the expansion of $${\\left( {{x^{{1 \\over 3}}} + {1 \\over {2{x^{{1 \\over 3}}}}}} \\right)^{18}},\\left( {x &gt; 0} \\right),$$ are m and n respectively, then $${m \\over n}$$ is equal to :",
     "options": [
       "182",
       "$${4 \\over 5}$$",

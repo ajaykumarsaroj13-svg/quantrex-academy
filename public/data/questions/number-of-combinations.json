@@ -29,7 +29,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -37,7 +37,7 @@
     "difficulty": "medium",
     "solution": "<p>We need to find the number of ordered pairs $(r,k)$ satisfying</p>\n<p>$$ {}^{36}C_{r+1}=\\frac{6\\left({}^{35}C_r\\right)}{k^2-3}, $$</p>\n<p>where $k \\in \\mathbb{Z}$.</p>\n<p>Let us simplify the relation using the standard NCERT combination formula.</p>\n<p>We know that</p>\n<p>$$ {}^{n}C_{r+1}=\\frac{n!}{(r+1)!(n-r-1)!} $$</p>\n<p>and</p>\n<p>$$ {}^{n-1}C_r=\\frac{(n-1)!}{r!(n-r-1)!}. $$</p>\n<p>So,</p>\n<p>$$ \\frac{{}^{36}C_{r+1}}{{}^{35}C_r} = \\frac{\\dfrac{36!}{(r+1)!(35-r)!}}{\\dfrac{35!}{r!(35-r)!}} = \\frac{36!}{35!}\\cdot \\frac{r!}{(r+1)!} = 36\\cdot \\frac{1}{r+1} = \\frac{36}{r+1}. $$</p>\n<p>Hence,</p>\n<p>$$ {}^{36}C_{r+1} = {}^{35}C_r \\cdot \\frac{36}{r+1}. $$</p>\n<p>Given,</p>\n<p>$$ {}^{36}C_{r+1}=\\frac{6\\left({}^{35}C_r\\right)}{k^2-3}. $$</p>\n<p>Comparing both expressions,</p>\n<p>$$ {}^{35}C_r \\cdot \\frac{36}{r+1}=\\frac{6\\left({}^{35}C_r\\right)}{k^2-3}. $$</p>\n<p>Since ${}^{35}C_r \\neq 0$, cancel it:</p>\n<p>$$ \\frac{36}{r+1}=\\frac{6}{k^2-3}. $$</p>\n<p>Cross-multiplying,</p>\n<p>$$ 36(k^2-3)=6(r+1). $$</p>\n<p>Divide by $6$:</p>\n<p>$$ 6(k^2-3)=r+1. $$</p>\n<p>So,</p>\n<p>$$ r = 6k^2-19. $$</p>\n<p>Now $r$ must be valid for the combinations ${}^{35}C_r$ and ${}^{36}C_{r+1}$.</p>\n<p>Thus,</p>\n<p>$$ 0 \\le r \\le 35. $$</p>\n<p>Substitute $r=6k^2-19$:</p>\n<p>$$ 0 \\le 6k^2-19 \\le 35. $$</p>\n<p>Add $19$ throughout:</p>\n<p>$$ 19 \\le 6k^2 \\le 54. $$</p>\n<p>Divide by $6$:</p>\n<p>$$ \\frac{19}{6} \\le k^2 \\le 9. $$</p>\n<p>Now possible integer square values are</p>\n<p>$$ k^2=4 \\quad \\text{or} \\quad k^2=9. $$</p>\n<p>So the integer values of $k$ are:</p>\n<ul>\n<li><p>If $k^2=4$, then $k=\\pm 2$</p></li>\n<li><p>If $k^2=9$, then $k=\\pm 3$</p></li>\n</ul>\n<p>Now find corresponding $r$:</p>\n<p>For $k^2=4$,</p>\n<p>$$ r=6(4)-19=24-19=5. $$</p>\n<p>So pairs are</p>\n<p>$$ (5,2),\\ (5,-2). $$</p>\n<p>For $k^2=9$,</p>\n<p>$$ r=6(9)-19=54-19=35. $$</p>\n<p>So pairs are</p>\n<p>$$ (35,3),\\ (35,-3). $$</p>\n<p>Hence total number of elements in the set $S$ is</p>\n<p>$$ 4. $$</p>\n<p>Therefore, the correct answer is:</p>\n<p>$$ \\boxed{4} $$</p>\n<p>So, Option B is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mauveku0",
@@ -158,7 +158,7 @@
     "subject": "Mathematics",
     "topic": "number-of-combinations",
     "difficulty": "medium",
-    "solution": "<p>To count the number of distinct triangles:</p>\n\n<p><p><strong>Start with all possible triples of points.</strong>  </p>\n<p>From 12 points, the number of ways to choose any 3 is  </p>\n<p>$      \\binom{12}{3}= \\frac{12\\cdot11\\cdot10}{3\\cdot2\\cdot1}=220.    $</p></p>\n<p><p><strong>Subtract the “invalid” triples that are collinear.</strong>  </p>\n<p>The only collinear sets of three points arise from the single line containing the 5 collinear points.  </p>\n<p>Number of ways to pick 3 points from those 5 is  </p>\n<p>$      \\binom{5}{3}=10.    $</p></p>\n<p><p><strong>Valid triangles = total triples − collinear triples.</strong>  </p>\n<p>$      220-10 = 210.    $</p></p>\n\n<p>Hence, the total number of triangles that can be formed is <strong>210</strong>.</p>\n<p><strong>Correct option: B</strong></p>",
+    "solution": "<p>To count the number of distinct triangles:</p>\n\n<p><p><strong>Start with all possible triples of points.</strong>  </p>\n<p>From 12 points, the number of ways to choose any 3 is  </p>\n<p>$      \\binom{12}{3}= \\frac{12\\cdot11\\cdot10}{3\\cdot2\\cdot1}=220.    $</p></p>\n<p><p><strong>Subtract the \u201cinvalid\u201d triples that are collinear.</strong>  </p>\n<p>The only collinear sets of three points arise from the single line containing the 5 collinear points.  </p>\n<p>Number of ways to pick 3 points from those 5 is  </p>\n<p>$      \\binom{5}{3}=10.    $</p></p>\n<p><p><strong>Valid triangles = total triples \u2212 collinear triples.</strong>  </p>\n<p>$      220-10 = 210.    $</p></p>\n\n<p>Hence, the total number of triangles that can be formed is <strong>210</strong>.</p>\n<p><strong>Correct option: B</strong></p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -198,7 +198,7 @@
     "subject": "Mathematics",
     "topic": "number-of-combinations",
     "difficulty": "medium",
-    "solution": "<p>To determine the number of ways in which five different employees can be seated in four indistinguishable offices, we will use the concept of partitioning of an integer.</p>\n\n<p>The problem is equivalent to partitioning the number 5 (representing the 5 different employees) into at most 4 parts (representing the 4 indistinguishable offices) where each part represents the number of employees in each office.</p>\n\n<p>The partitions of 5 into at most 4 parts are as follows :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ – One office has 5 employees, and the other three have none.</li><br>\n<li>$(4, 1, 0, 0)$ – One office has 4 employees, another one has 1, and the other two have none.</li><br>\n<li>$(3, 2, 0, 0)$ – One office has 3 employees, another one has 2, and the other two have none.</li><br>\n<li>$(3, 1, 1, 0)$ – One office has 3 employees, two have 1 each, and one has none.</li><br>\n<li>$(2, 2, 1, 0)$ – Two offices have 2 employees each, one has 1, and one has none.</li><br>\n<li>$(2, 1, 1, 1)$ – One office has 2 employees, and the other three have 1 each.</li>\n</ol>\n<p>However, since the offices are indistinguishable, we must not count partitions that differ only by the order of the parts. This means that partitions like $(5, 0, 0, 0)$, $(0, 5, 0, 0)$, $(0, 0, 5, 0)$, and $(0, 0, 0, 5)$ all represent the same scenario and thus are counted as one.</p>\n\n<p>So we end up with 6 distinct partition scenarios.</p>\n\n<p>Now, for each partition, we need to find the number of ways to assign the employees according to each partition :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ – All employees are in one office. There is 1 way to do this because the offices are indistinguishable.</li><br>\n<li>$(4, 1, 0, 0)$ - For the group with 4 employees, there are $${}^5{C_4}$$ ways to choose which 4 out of the 5 will be together. Then the remaining employee is automatically assigned to the second office. So, there are $${}^5{C_4}$$ ways for this partition.</li><br>\n<li>$(3, 2, 0, 0)$ - For the group with 3 employees, there are ${}^5{C_3}$ ways to choose them, and for the group with 2 employees, there are $${}^2{C_2}$$ ways to choose them (which is essentially 1 way since the last 2 employees are automatically grouped). But the 2 offices these groups can occupy are indistinguishable, so we do not multiply by 2. So, there are $${}^5{C_3}$$ ways for this partition.</li><br>\n<li>$(3, 1, 1, 0)$ - For the group with 3 employees, there are $${}^5{C_3}$$ ways. Then we have two indistinguishable offices, each with 1 employee. The order does not matter as offices are indistinguishable. So, there are simply $${}^5{C_3}$$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ – For the first group of 2 employees, there are $${}^5{C_2}$$ ways to choose them. For the next group of 2 employees, there are $${}^3{C_2}$$ ways from the remaining 3. Then, the last employee is alone, and since the offices are indistinguishable, there are no further combinations to consider. However, we have double-counted since the two groups of two are indistinguishable. To adjust for this, we divide by 2. This gives us $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2}$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ - For the group with 2 employees, there are ${}^5{C_2}$ ways to choose them. The other three employees are each in their own office, with no further combinations since the offices are indistinguishable, so there are ${}^5{C_2}$ ways for this partition.</li>\n</ol>\n<p>Let's compute these cases :</p>\n\n<ul>\n<li>$(5, 0, 0, 0)$ corresponds to $1$ way.</li><br>\n<li>$(4, 1, 0, 0)$ corresponds to ${}^5{C_4} = 5$ ways.</li><br>\n<li>$(3, 2, 0, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(3, 1, 1, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ corresponds to $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2} = \\frac{10 \\cdot 3}{2} = 15$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ corresponds to ${}^5{C_2} = 10$ ways.</li>\n</ul>\n<p>Adding up all the ways we get :</p>\n\n<p>$$ 1 + 5 + 10 + 10 + 15 + 10 = 51 $$</p>\n\n<p>Therefore, the number of ways five different employees can sit into four indistinguishable offices ($\\mathrm{n}$) is 51, which corresponds to Option C.</p>",
+    "solution": "<p>To determine the number of ways in which five different employees can be seated in four indistinguishable offices, we will use the concept of partitioning of an integer.</p>\n\n<p>The problem is equivalent to partitioning the number 5 (representing the 5 different employees) into at most 4 parts (representing the 4 indistinguishable offices) where each part represents the number of employees in each office.</p>\n\n<p>The partitions of 5 into at most 4 parts are as follows :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ \u2013 One office has 5 employees, and the other three have none.</li><br>\n<li>$(4, 1, 0, 0)$ \u2013 One office has 4 employees, another one has 1, and the other two have none.</li><br>\n<li>$(3, 2, 0, 0)$ \u2013 One office has 3 employees, another one has 2, and the other two have none.</li><br>\n<li>$(3, 1, 1, 0)$ \u2013 One office has 3 employees, two have 1 each, and one has none.</li><br>\n<li>$(2, 2, 1, 0)$ \u2013 Two offices have 2 employees each, one has 1, and one has none.</li><br>\n<li>$(2, 1, 1, 1)$ \u2013 One office has 2 employees, and the other three have 1 each.</li>\n</ol>\n<p>However, since the offices are indistinguishable, we must not count partitions that differ only by the order of the parts. This means that partitions like $(5, 0, 0, 0)$, $(0, 5, 0, 0)$, $(0, 0, 5, 0)$, and $(0, 0, 0, 5)$ all represent the same scenario and thus are counted as one.</p>\n\n<p>So we end up with 6 distinct partition scenarios.</p>\n\n<p>Now, for each partition, we need to find the number of ways to assign the employees according to each partition :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ \u2013 All employees are in one office. There is 1 way to do this because the offices are indistinguishable.</li><br>\n<li>$(4, 1, 0, 0)$ - For the group with 4 employees, there are $${}^5{C_4}$$ ways to choose which 4 out of the 5 will be together. Then the remaining employee is automatically assigned to the second office. So, there are $${}^5{C_4}$$ ways for this partition.</li><br>\n<li>$(3, 2, 0, 0)$ - For the group with 3 employees, there are ${}^5{C_3}$ ways to choose them, and for the group with 2 employees, there are $${}^2{C_2}$$ ways to choose them (which is essentially 1 way since the last 2 employees are automatically grouped). But the 2 offices these groups can occupy are indistinguishable, so we do not multiply by 2. So, there are $${}^5{C_3}$$ ways for this partition.</li><br>\n<li>$(3, 1, 1, 0)$ - For the group with 3 employees, there are $${}^5{C_3}$$ ways. Then we have two indistinguishable offices, each with 1 employee. The order does not matter as offices are indistinguishable. So, there are simply $${}^5{C_3}$$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ \u2013 For the first group of 2 employees, there are $${}^5{C_2}$$ ways to choose them. For the next group of 2 employees, there are $${}^3{C_2}$$ ways from the remaining 3. Then, the last employee is alone, and since the offices are indistinguishable, there are no further combinations to consider. However, we have double-counted since the two groups of two are indistinguishable. To adjust for this, we divide by 2. This gives us $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2}$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ - For the group with 2 employees, there are ${}^5{C_2}$ ways to choose them. The other three employees are each in their own office, with no further combinations since the offices are indistinguishable, so there are ${}^5{C_2}$ ways for this partition.</li>\n</ol>\n<p>Let's compute these cases :</p>\n\n<ul>\n<li>$(5, 0, 0, 0)$ corresponds to $1$ way.</li><br>\n<li>$(4, 1, 0, 0)$ corresponds to ${}^5{C_4} = 5$ ways.</li><br>\n<li>$(3, 2, 0, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(3, 1, 1, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ corresponds to $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2} = \\frac{10 \\cdot 3}{2} = 15$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ corresponds to ${}^5{C_2} = 10$ ways.</li>\n</ul>\n<p>Adding up all the ways we get :</p>\n\n<p>$$ 1 + 5 + 10 + 10 + 15 + 10 = 51 $$</p>\n\n<p>Therefore, the number of ways five different employees can sit into four indistinguishable offices ($\\mathrm{n}$) is 51, which corresponds to Option C.</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -594,7 +594,7 @@
     "subject": "Mathematics",
     "topic": "number-of-combinations",
     "difficulty": "medium",
-    "solution": "6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3). <sup>36</sup>C<sub>r + 1</sub>\n<br><br>$$ \\Rightarrow $$ 6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3).$${{36} \\over {r + 1}}$$<sup>35</sup>C<sub>r</sub>\n<br><br>$$ \\Rightarrow $$ k<sup>2</sup> - 3 = $${{r + 1} \\over 6}$$\n<br><br>Possible values of r for integral values of k, are\n<br><br>r = 5, 35\n<br><br>number of ordered pairs are 4\n<br><br>(5, 2), (5, –2), (35, 3), (35, 3)",
+    "solution": "6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3). <sup>36</sup>C<sub>r + 1</sub>\n<br><br>$$ \\Rightarrow $$ 6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3).$${{36} \\over {r + 1}}$$<sup>35</sup>C<sub>r</sub>\n<br><br>$$ \\Rightarrow $$ k<sup>2</sup> - 3 = $${{r + 1} \\over 6}$$\n<br><br>Possible values of r for integral values of k, are\n<br><br>r = 5, 35\n<br><br>number of ordered pairs are 4\n<br><br>(5, 2), (5, \u20132), (35, 3), (35, 3)",
     "section": "A",
     "type": "SCQ"
   },
@@ -724,7 +724,7 @@
   {
     "id": "d9rYjwxlxiAXsKNTjN8AV",
     "questionNumber": 81,
-    "questionText": "Consider three boxes, each containing, 10 balls labelled 1, 2, … , 10. Suppose one ball is randomly drawn from each of the boxes. Denote by n<sub>i</sub>, the label of the ball drawn from the i<sup>th</sup> box, (i = 1, 2, 3). Then, the number of ways in which the balls can be chosen such that n<sub>1</sub> &lt; n<sub>2</sub> &lt; n<sub>3</sub> is : ",
+    "questionText": "Consider three boxes, each containing, 10 balls labelled 1, 2, \u2026 , 10. Suppose one ball is randomly drawn from each of the boxes. Denote by n<sub>i</sub>, the label of the ball drawn from the i<sup>th</sup> box, (i = 1, 2, 3). Then, the number of ways in which the balls can be chosen such that n<sub>1</sub> &lt; n<sub>2</sub> &lt; n<sub>3</sub> is : ",
     "options": [
       "164",
       "240",
@@ -793,10 +793,10 @@
     "questionNumber": 79,
     "questionText": "If &nbsp;&nbsp; $${{{}^{n + 2}C{}_6} \\over {{}^{n - 2}{P_2}}}$$ = 11, then n satisfies the\nequation :",
     "options": [
-      "n<sup>2</sup> + 3n − 108 = 0",
-      "n<sup>2</sup> + 5n − 84 = 0\n",
-      "n<sup>2</sup> + 2n − 80 = 0",
-      "n<sup>2</sup> + n − 110 = 0"
+      "n<sup>2</sup> + 3n \u2212 108 = 0",
+      "n<sup>2</sup> + 5n \u2212 84 = 0\n",
+      "n<sup>2</sup> + 2n \u2212 80 = 0",
+      "n<sup>2</sup> + n \u2212 110 = 0"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -886,7 +886,7 @@
     "subject": "Mathematics",
     "topic": "number-of-combinations",
     "difficulty": "easy",
-    "solution": "A $$ \\times $$ B will have 2 $$ \\times $$ 4 = 8 elements.\n<br><br>The number of subsets having atleast 3 elements\n<br><br>= <sup>8</sup>C<sub>3</sub> + <sup>8</sup>C<sub>4</sub> + <sup>8</sup>C<sub>5</sub> + <sup>8</sup>C<sub>6</sub> + <sup>8</sup>C<sub>7</sub> + <sup>8</sup>C<sub>8</sub> \n<br><br>= 2<sup>8</sup> – (<sup>8</sup>C<sub>0</sub> + <sup>8</sup>C<sub>1</sub> + <sup>8</sup>C<sub>2</sub>) = 256 – 1 – 8 – 28 = 219 ",
+    "solution": "A $$ \\times $$ B will have 2 $$ \\times $$ 4 = 8 elements.\n<br><br>The number of subsets having atleast 3 elements\n<br><br>= <sup>8</sup>C<sub>3</sub> + <sup>8</sup>C<sub>4</sub> + <sup>8</sup>C<sub>5</sub> + <sup>8</sup>C<sub>6</sub> + <sup>8</sup>C<sub>7</sub> + <sup>8</sup>C<sub>8</sub> \n<br><br>= 2<sup>8</sup> \u2013 (<sup>8</sup>C<sub>0</sub> + <sup>8</sup>C<sub>1</sub> + <sup>8</sup>C<sub>2</sub>) = 256 \u2013 1 \u2013 8 \u2013 28 = 219 ",
     "section": "A",
     "type": "SCQ"
   },
@@ -968,7 +968,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -976,7 +976,7 @@
     "difficulty": "medium",
     "solution": "<p>Let XA<sub></sub>, X<sub>B</sub>, X<sub>C</sub> and X<sub>D</sub> represent number of balls present in box A, B, C and D respectively.</p>\n<p>As no box can be empty so,</p>\n<p>X<sub>A</sub> $$\\ge$$ 1, X<sub>B</sub> $$\\ge$$ 1, X<sub>C</sub> $$\\ge$$ 1 and X<sub>D</sub> $$\\ge$$ 1</p>\n<p>$$\\Rightarrow$$ X<sub>A</sub> $$-$$ 1 $$\\ge$$ 0, $$\\Rightarrow$$ X<sub>B</sub> $$-$$ 1 $$\\ge$$ 0, $$\\Rightarrow$$ X<sub>C</sub> $$-$$ 1 $$\\ge$$ 0 and $$\\Rightarrow$$ X<sub>D</sub> $$-$$ 1 $$\\ge$$ 0</p>\n<p>t<sub>A</sub> $$\\ge$$ 0, t<sub>B</sub> $$\\ge$$ 0, t<sub>C</sub> $$\\ge$$ 0 and t<sub>D</sub> $$\\ge$$ 0</p>\n<p>According to the question,</p>\n<p>X<sub>A</sub> + X<sub>B</sub> + X<sub>C</sub> + X<sub>D</sub> = 10</p>\n<p>$$\\Rightarrow$$ (X<sub>A</sub> $$-$$ 1) + (X<sub>B</sub> $$-$$ 1) + (X<sub>C</sub> $$-$$ 1) + (X<sub>D</sub> $$-$$ 1) = 6</p>\n<p>$$\\Rightarrow$$ t<sub>A</sub> + t<sub>B</sub> + t<sub>C</sub> + t<sub>D</sub> = 6</p>\n<p>Now question becomes, box A, B, C, and D can have none or one or more balls and total balls are 6</p>\n<p>From formula we know, n things can be distributed among r people in $${}^{n + r - 1}{C_{r - 1}}$$ ways where each people can have either 0 or more things.</p>\n<p>$$\\therefore$$ 6 balls can be distributed among 4 boxes in $${}^{6 + 4 - 1}{C_{4 - 1}} = {}^9{C_3}$$ ways where each box can have either 0 or more balls.</p>\n<p>Therefore, Statement 1 is correct. The number of ways of choosing any 3 places from 9 different places is $${}^9{C_3}$$ ways. But Statement - 2 is not the correct explanation of Statement - 1.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "gu4xEM8HE3wz9OiX",

@@ -33,7 +33,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p>Given:</p>\n<ul>\n<li><p>$\\alpha,\\beta$ are roots of $x^2+ax+b=0$</p></li>\n<li><p>$\\beta-\\alpha=\\sqrt{11}$</p></li>\n<li><p>$\\beta^2-\\alpha^2=3i\\sqrt{11}$</p></li>\n</ul>\n<p>We have to find $\\left(\\beta^3-\\alpha^3\\right)^2$.</p>\n<p>Now,</p>\n<p>$$ \\beta^2-\\alpha^2=(\\beta-\\alpha)(\\beta+\\alpha) $$</p>\n<p>Substituting the given values,</p>\n<p>$$ 3i\\sqrt{11}=\\sqrt{11}(\\beta+\\alpha) $$</p>\n<p>Since $\\sqrt{11}\\neq 0$, we get</p>\n<p>$$ \\beta+\\alpha=3i $$</p>\n<p>Now use the identity</p>\n<p>$$ \\beta^3-\\alpha^3=(\\beta-\\alpha)(\\beta^2+\\alpha\\beta+\\alpha^2) $$</p>\n<p>So first let us find $\\beta^2+\\alpha\\beta+\\alpha^2$.</p>\n<p>We know</p>\n<p>$$ (\\beta+\\alpha)^2=\\beta^2+\\alpha^2+2\\alpha\\beta $$</p>\n<p>Also,</p>\n<p>$$ \\alpha\\beta=\\frac{(\\alpha+\\beta)^2-(\\beta-\\alpha)^2}{4} $$</p>\n<p>Substitute the values:</p>\n<p>$$ \\alpha+\\beta=3i,\\qquad \\beta-\\alpha=\\sqrt{11} $$</p>\n<p>Thus,</p>\n<p>$$ \\alpha\\beta=\\frac{(3i)^2-(\\sqrt{11})^2}{4} =\\frac{-9-11}{4} =\\frac{-20}{4} =-5 $$</p>\n<p>Now,</p>\n<p>$$ \\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta $$</p>\n<p>So,</p>\n<p>$$ \\alpha^2+\\beta^2=(3i)^2-2(-5)=-9+10=1 $$</p>\n<p>Hence,</p>\n<p>$$ \\beta^2+\\alpha\\beta+\\alpha^2=1+(-5)=-4 $$</p>\n<p>Therefore,</p>\n<p>$$ \\beta^3-\\alpha^3=(\\beta-\\alpha)(\\beta^2+\\alpha\\beta+\\alpha^2) =\\sqrt{11}\\cdot(-4) =-4\\sqrt{11} $$</p>\n<p>Now square it:</p>\n<p>$$ \\left(\\beta^3-\\alpha^3\\right)^2=\\left(-4\\sqrt{11}\\right)^2=16\\cdot 11=176 $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{176} $$</p>\n<p>Hence, Option B is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnsik7k3",
@@ -550,7 +550,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -558,7 +558,7 @@
     "difficulty": "medium",
     "solution": "<p>Let, $${z_1} = {x_1} + i{y_1}$$</p>\n<p>and $${z_2} = {x_2} + i{y_2}$$</p>\n<p>$$\\therefore$$ $${z_1}{z_2} = {x_1}{x_2} - {y_1}{y_2} + i({x_1}{y_2} + {x_2}{y_1})$$</p>\n<p>Given, $${\\mathop{\\rm Re}\\nolimits} ({z_1} + {z_2}) = 0$$</p>\n<p>$$ \\Rightarrow {x_1} + {x_2} = 0$$ ...... (1)</p>\n<p>also given, $${\\mathop{\\rm Re}\\nolimits} ({z_1}{z_2}) = 0$$</p>\n<p>$$ \\Rightarrow {x_1}{x_2} - {y_1}{y_2} = 0$$</p>\n<p>$$ \\Rightarrow {x_1}{x_2} = {y_1}{y_2}$$</p>\n<p>$$ \\Rightarrow {y_1}{y_2} =  - x_1^2$$ [$$\\because$$ $${x_2} =  - {x_1}$$]</p>\n<p>So, multiplication of imaginary part's of z<sub>1</sub> and z<sub>2</sub> is negative. It means sign of y<sub>1</sub> and y<sub>2</sub> are opposite of each other.</p>\n<p>$$ \\therefore $$ B and C are correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1lh2xxw75",
@@ -760,7 +760,7 @@
     "questionNumber": 56,
     "questionText": "Let z = x + iy be a non-zero complex number\nsuch that $${z^2} = i{\\left| z \\right|^2}$$, where i = $$\\sqrt { - 1} $$ , then z lies\non the :",
     "options": [
-      "line, y = –x",
+      "line, y = \u2013x",
       "real axis",
       "line, y = x",
       "imaginary axis"
@@ -780,7 +780,7 @@
   {
     "id": "3NBa8Gu3laVRzWIBoOjgy2xukfurbxh6",
     "questionNumber": 55,
-    "questionText": "The region represented by<br> {z = x + iy $$ \\in $$ C : |z| – Re(z) $$ \\le $$ 1} is also given by the<br> inequality :\n{z = x + iy $$ \\in $$ C : |z| – Re(z) $$ \\le $$ 1}",
+    "questionText": "The region represented by<br> {z = x + iy $$ \\in $$ C : |z| \u2013 Re(z) $$ \\le $$ 1} is also given by the<br> inequality :\n{z = x + iy $$ \\in $$ C : |z| \u2013 Re(z) $$ \\le $$ 1}",
     "options": [
       "y<sup>2</sup> $$ \\le $$ $$2\\left( {x + {1 \\over 2}} \\right)$$",
       "y<sup>2</sup> $$ \\le $$ $${x + {1 \\over 2}}$$",
@@ -795,7 +795,7 @@
     "subject": "Mathematics",
     "topic": "algebra-of-complex-numbers",
     "difficulty": "medium",
-    "solution": "Given z = x + iy \n<br><br> |z| – Re(z) $$ \\le $$ 1\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {{x^2} + {y^2}} $$ - x $$ \\le $$ 1\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {{x^2} + {y^2}} $$ $$ \\le $$ 1 + x\n<br><br>$$ \\Rightarrow $$ x<sup>2</sup> + y<sup>2</sup> $$ \\le $$ 1 + 2x + x<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ y<sup>2</sup> $$ \\le $$ 2x + 1\n<br><br>$$ \\Rightarrow $$ y<sup>2</sup> $$ \\le $$ 2$$\\left( {x + {1 \\over 2}} \\right)$$",
+    "solution": "Given z = x + iy \n<br><br> |z| \u2013 Re(z) $$ \\le $$ 1\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {{x^2} + {y^2}} $$ - x $$ \\le $$ 1\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {{x^2} + {y^2}} $$ $$ \\le $$ 1 + x\n<br><br>$$ \\Rightarrow $$ x<sup>2</sup> + y<sup>2</sup> $$ \\le $$ 1 + 2x + x<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ y<sup>2</sup> $$ \\le $$ 2x + 1\n<br><br>$$ \\Rightarrow $$ y<sup>2</sup> $$ \\le $$ 2$$\\left( {x + {1 \\over 2}} \\right)$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -804,9 +804,9 @@
     "questionNumber": 67,
     "questionText": "Let z $$ \\in $$ C with Im(z) = 10 and it satisfies $${{2z - n} \\over {2z + n}}$$ = 2i - 1 for some natural number n. Then :",
     "options": [
-      "n = 20 and Re(z) = –10",
+      "n = 20 and Re(z) = \u201310",
       "n = 40 and Re(z) = 10",
-      "n = 40 and Re(z) = –10",
+      "n = 40 and Re(z) = \u201310",
       "n = 20 and Re(z) = 10"
     ],
     "correctOption": 2,

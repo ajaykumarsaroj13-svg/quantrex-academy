@@ -15,7 +15,7 @@
       "8"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>The power set, denoted as B, of any set A, is the set of all possible subsets of A. The number of elements in the power set B is given by 2<sup>n</sup>, where n is the number of elements in the set A.</p>\n\n<p><u><strong>Calculation:</strong></u></p>\n\n<p>Given:</p>\n\n<p>A = {{1, 2, 3}}</p>\n\n<p>The power set B includes all subsets of A. Here, the subsets of A = {(1, 2, 3)}</p>\n\n<p>The number of elements in A (n) is 1, thus 2<sup>1</sup> = 2.</p>\n\n<p>Therefore, B = {{1, 2, 3}}, and the number of elements is 1.</p>\n\n<p><strong>∴ The number of elements in the power set of A = 2</strong></p>",
+    "solution": "<p>The power set, denoted as B, of any set A, is the set of all possible subsets of A. The number of elements in the power set B is given by 2<sup>n</sup>, where n is the number of elements in the set A.</p>\n\n<p><u><strong>Calculation:</strong></u></p>\n\n<p>Given:</p>\n\n<p>A = {{1, 2, 3}}</p>\n\n<p>The power set B includes all subsets of A. Here, the subsets of A = {(1, 2, 3)}</p>\n\n<p>The number of elements in A (n) is 1, thus 2<sup>1</sup> = 2.</p>\n\n<p>Therefore, B = {{1, 2, 3}}, and the number of elements is 1.</p>\n\n<p><strong>\u2234 The number of elements in the power set of A = 2</strong></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -49,7 +49,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Consider the following statements in respect of two non-empty sets A and B :</p>\n\n<p>1. x&nbsp;∉ (A ∪ B)&nbsp;⇒ x&nbsp;∉ A or x&nbsp;∉ B</p>\n\n<p><span style=\"\">2. x&nbsp;∉ (A ∩&nbsp;B)&nbsp;⇒ x&nbsp;∉ A and x&nbsp;∉ B</span></p>\n\n<p><span style=\"\">Which of the above statements is/are correct?</span></p>\n",
+    "question": "<p>Consider the following statements in respect of two non-empty sets A and B :</p>\n\n<p>1. x&nbsp;\u2209 (A \u222a B)&nbsp;\u21d2 x&nbsp;\u2209 A or x&nbsp;\u2209 B</p>\n\n<p><span style=\"\">2. x&nbsp;\u2209 (A \u2229&nbsp;B)&nbsp;\u21d2 x&nbsp;\u2209 A and x&nbsp;\u2209 B</span></p>\n\n<p><span style=\"\">Which of the above statements is/are correct?</span></p>\n",
     "options": [
       "1 only",
       "<span style=\"\">2 only</span>",
@@ -57,7 +57,7 @@
       "Neither 1 nor 2"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>To analyze the given statements, let's look at each one carefully and determine their correctness using set theory principles.</p>\n\n<p><b>Statement 1: $ x \\notin (A \\cup B) \\Rightarrow x \\notin A $ or $ x \\notin B $</b></p>\n\n<p>In set theory, the union $ A \\cup B $ represents the set of all elements that are in either $ A $, or $ B $, or both. For $ x \\notin (A \\cup B) $, it means that $ x $ is not in set $ A $ and $ x $ is not in set $ B $. Therefore, since $ x \\notin (A \\cup B) $, $ x \\notin A $ and $ x \\notin B $. By De Morgan's laws, this means:</p>\n\n<p>$$ x \\notin (A \\cup B) \\Leftrightarrow x \\notin A \\text{ and } x \\notin B $$</p>\n\n<p>The reverse implication $ x \\notin A \\text{ or } x \\notin B \\Rightarrow x \\notin (A \\cup B) $ is not necessarily true. Thus, statement 1 is incorrect.</p>\n\n<p><b>Statement 2: $ x \\notin (A \\cap B) \\Rightarrow x \\notin A \\text{ and } x \\notin B $</b></p>\n\n<p>In set theory, the intersection $ A \\cap B $ represents the set of all elements that are in both $ A $ and $ B $. For $ x \\notin (A \\cap B) $, it means that $ x $ is not in the set of elements that are common to both $ A $ and $ B $. However, this does not directly imply that $ x $ is not in $ A $ nor $ x $ is not in $ B $. Hence, statement 2 is also incorrect.</p>\n\n<p>To summarize:</p>\n\n<p>Option A: 1 only – Incorrect</p>\n\n<p>Option B: 2 only – Incorrect</p>\n\n<p>Option C: Both 1 and 2 – Incorrect</p>\n\n<p>Option D: Neither 1 nor 2 – Correct</p>\n\n<p>The correct answer is:</p>\n\n<p><b>Option D</b></p>",
+    "solution": "<p>To analyze the given statements, let's look at each one carefully and determine their correctness using set theory principles.</p>\n\n<p><b>Statement 1: $ x \\notin (A \\cup B) \\Rightarrow x \\notin A $ or $ x \\notin B $</b></p>\n\n<p>In set theory, the union $ A \\cup B $ represents the set of all elements that are in either $ A $, or $ B $, or both. For $ x \\notin (A \\cup B) $, it means that $ x $ is not in set $ A $ and $ x $ is not in set $ B $. Therefore, since $ x \\notin (A \\cup B) $, $ x \\notin A $ and $ x \\notin B $. By De Morgan's laws, this means:</p>\n\n<p>$$ x \\notin (A \\cup B) \\Leftrightarrow x \\notin A \\text{ and } x \\notin B $$</p>\n\n<p>The reverse implication $ x \\notin A \\text{ or } x \\notin B \\Rightarrow x \\notin (A \\cup B) $ is not necessarily true. Thus, statement 1 is incorrect.</p>\n\n<p><b>Statement 2: $ x \\notin (A \\cap B) \\Rightarrow x \\notin A \\text{ and } x \\notin B $</b></p>\n\n<p>In set theory, the intersection $ A \\cap B $ represents the set of all elements that are in both $ A $ and $ B $. For $ x \\notin (A \\cap B) $, it means that $ x $ is not in the set of elements that are common to both $ A $ and $ B $. However, this does not directly imply that $ x $ is not in $ A $ nor $ x $ is not in $ B $. Hence, statement 2 is also incorrect.</p>\n\n<p>To summarize:</p>\n\n<p>Option A: 1 only \u2013 Incorrect</p>\n\n<p>Option B: 2 only \u2013 Incorrect</p>\n\n<p>Option C: Both 1 and 2 \u2013 Incorrect</p>\n\n<p>Option D: Neither 1 nor 2 \u2013 Correct</p>\n\n<p>The correct answer is:</p>\n\n<p><b>Option D</b></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -70,7 +70,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Consider the following statements in respect of two non-empty sets A and B :</p>\n\n<p>1. A&nbsp;∪ B = A&nbsp;∩ B if&nbsp;A = B</p>\n\n<p>2. A&nbsp;Δ B =&nbsp;ϕ&nbsp; if&nbsp;A = B</p>\n\n<p>Which of the above statements is/are correct ?</p>\n",
+    "question": "<p>Consider the following statements in respect of two non-empty sets A and B :</p>\n\n<p>1. A&nbsp;\u222a B = A&nbsp;\u2229 B if&nbsp;A = B</p>\n\n<p>2. A&nbsp;\u0394 B =&nbsp;\u03d5&nbsp; if&nbsp;A = B</p>\n\n<p>Which of the above statements is/are correct ?</p>\n",
     "options": [
       "1 only",
       "<span style=\"\">2 only</span>",
@@ -111,7 +111,7 @@
     "title": "NDA Mathematics 10 April 2022",
     "year": "2022",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Consider the following statements in respect of any relation R on a set A :</p>\n\n<p>1. If R is reflexive, then R<sup>-1</sup>&nbsp;is also reflexive</p>\n\n<p>2. If R is symmetric, then R<sup>-1</sup>&nbsp;is also symmetric</p>\n\n<p>3. If R is transitive, then R<sup>-1</sup> is also transitive</p>\n\n<p>Which of the above statements are correct?</p>\n",
     "options": [
       "1 and 2 only",
@@ -153,7 +153,7 @@
     "title": "NDA Mathematics 14 November 2021",
     "year": "2021",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Consider the following statements in respect of sets:</p>\n\n<p>1. The union over the intersection of sets is distributive.</p>\n\n<p>2. The complement of the union of two sets is equal to the intersection of their complements.</p>\n\n<p>3. If the difference between the two sets is equal to the empty set, then the two sets must be equal.</p>\n\n<p>Which of the above statements are correct?</p>\n",
     "options": [
       "1 and 2 only",
@@ -166,7 +166,7 @@
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "tlm69msw1p",
@@ -176,7 +176,7 @@
     "year": "2021",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "Consider three sets X, Y and Z having 6, 5 and 4 elements respectively. All these 15 elements are distinct. Let S = (X - Y)&nbsp;∪ Z. How many proper subsets does S have?",
+    "question": "Consider three sets X, Y and Z having 6, 5 and 4 elements respectively. All these 15 elements are distinct. Let S = (X - Y)&nbsp;\u222a Z. How many proper subsets does S have?",
     "options": [
       "255",
       "256",
@@ -197,7 +197,7 @@
     "year": "2021",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Consider the following statements in respect of relations and functions:</p>\n\n<p>1. All relations are functions but all functions are not relations.</p>\n\n<p>2. A relation from A to B is a subset of Cartesian product A&nbsp;× B.</p>\n\n<p>3. A relation in A is a subset of Cartesian product A&nbsp;× A.</p>\n\n<p>Which of the above statements are correct?</p>\n",
+    "question": "<p>Consider the following statements in respect of relations and functions:</p>\n\n<p>1. All relations are functions but all functions are not relations.</p>\n\n<p>2. A relation from A to B is a subset of Cartesian product A&nbsp;\u00d7 B.</p>\n\n<p>3. A relation in A is a subset of Cartesian product A&nbsp;\u00d7 A.</p>\n\n<p>Which of the above statements are correct?</p>\n",
     "options": [
       "1 and 2 only",
       "2 and 3 only",
@@ -218,7 +218,7 @@
     "year": "2021",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "Suppose set A consists of first 250 natural numbers that are multiple of 3 and set B consists of first 200 even natural numbers. How many elements does A&nbsp;∪ B have?",
+    "question": "Suppose set A consists of first 250 natural numbers that are multiple of 3 and set B consists of first 200 even natural numbers. How many elements does A&nbsp;\u222a B have?",
     "options": [
       "342",
       "364",
@@ -281,7 +281,7 @@
     "year": "2025",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "Set X contains 3n elements and set Y contains 2n elements, and they have n elements in common. How many elements does (X - Y) × (Y-X) have?",
+    "question": "Set X contains 3n elements and set Y contains 2n elements, and they have n elements in common. How many elements does (X - Y) \u00d7 (Y-X) have?",
     "options": [
       "<span class=\"math-tex\">$5n ^ 2$</span>",
       "<span class=\"math-tex\">$ 4n ^ 2$</span>",
@@ -331,7 +331,7 @@
       "1111110011"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>To convert the decimal number 1011 to its binary equivalent, we can use the method of dividing the number by 2 and recording the remainders. This process will help us determine the binary digits from the least significant bit (rightmost) to the most significant bit (leftmost).</p>\n\n<p>Here’s a step-by-step breakdown of the conversion:</p>\n\n<p>1. Divide 1011 by 2. The quotient is 505 and the remainder is 1.</p>\n<p>2. Divide 505 by 2. The quotient is 252 and the remainder is 1.</p>\n<p>3. Divide 252 by 2. The quotient is 126 and the remainder is 0.</p>\n<p>4. Divide 126 by 2. The quotient is 63 and the remainder is 0.</p>\n<p>5. Divide 63 by 2. The quotient is 31 and the remainder is 1.</p>\n<p>6. Divide 31 by 2. The quotient is 15 and the remainder is 1.</p>\n<p>7. Divide 15 by 2. The quotient is 7 and the remainder is 1.</p>\n<p>8. Divide 7 by 2. The quotient is 3 and the remainder is 1.</p>\n<p>9. Divide 3 by 2. The quotient is 1 and the remainder is 1.</p>\n<p>10. Divide 1 by 2. The quotient is 0 and the remainder is 1.</p>\n\n<p>Now, we collect the remainders from bottom to top to form the binary number:</p>\n\n<p>So, the binary equivalent of the decimal number 1011 is: $$1111110011$$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p>Option D: 1111110011</p>",
+    "solution": "<p>To convert the decimal number 1011 to its binary equivalent, we can use the method of dividing the number by 2 and recording the remainders. This process will help us determine the binary digits from the least significant bit (rightmost) to the most significant bit (leftmost).</p>\n\n<p>Here\u2019s a step-by-step breakdown of the conversion:</p>\n\n<p>1. Divide 1011 by 2. The quotient is 505 and the remainder is 1.</p>\n<p>2. Divide 505 by 2. The quotient is 252 and the remainder is 1.</p>\n<p>3. Divide 252 by 2. The quotient is 126 and the remainder is 0.</p>\n<p>4. Divide 126 by 2. The quotient is 63 and the remainder is 0.</p>\n<p>5. Divide 63 by 2. The quotient is 31 and the remainder is 1.</p>\n<p>6. Divide 31 by 2. The quotient is 15 and the remainder is 1.</p>\n<p>7. Divide 15 by 2. The quotient is 7 and the remainder is 1.</p>\n<p>8. Divide 7 by 2. The quotient is 3 and the remainder is 1.</p>\n<p>9. Divide 3 by 2. The quotient is 1 and the remainder is 1.</p>\n<p>10. Divide 1 by 2. The quotient is 0 and the remainder is 1.</p>\n\n<p>Now, we collect the remainders from bottom to top to form the binary number:</p>\n\n<p>So, the binary equivalent of the decimal number 1011 is: $$1111110011$$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p>Option D: 1111110011</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -344,7 +344,7 @@
     "year": "2023",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "A mapping f : A&nbsp;→ B defined as&nbsp;<span class=\"math-tex\">$f(x)=\\frac{2 x+3}{3 x+5}, x \\in A$</span>&nbsp;If f is to be onto, then what are A and B equal to ?",
+    "question": "A mapping f : A&nbsp;\u2192 B defined as&nbsp;<span class=\"math-tex\">$f(x)=\\frac{2 x+3}{3 x+5}, x \\in A$</span>&nbsp;If f is to be onto, then what are A and B equal to ?",
     "options": [
       "<span class=\"math-tex\">$A=R \\backslash\\left\\{-\\frac{5}{3}\\right\\} \\text { and } B=R \\backslash\\left\\{-\\frac{2}{3}\\right\\}$</span>",
       "<span class=\"math-tex\">$A=R \\text { and } B=R \\backslash\\left\\{-\\frac{5}{3}\\right\\}$</span>",
@@ -352,7 +352,7 @@
       "<span class=\"math-tex\">$A=R \\backslash\\left\\{-\\frac{5}{3}\\right\\} \\text { and } B=R \\backslash\\left\\{\\frac{2}{3}\\right\\}$</span>"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>To determine the sets $ A $ and $ B $ that make the function $ f: A \\rightarrow B $ defined as $ f(x) = \\frac{2x + 3}{3x + 5} $ onto, we need to ensure that every element in $ B $ has a preimage in $ A $.</p>\n\n<p>First, let’s identify the values of $ x $ that cause issues in this function. The function $ f(x) $ is a rational function, and it is undefined where the denominator equals zero. So we need to find where the denominator $ 3x + 5 = 0 $.</p>\n\n<p>Solving for $ x $:</p>\n\n<p>\n\n<p>$$ 3x + 5 = 0 $$</p>\n\n<p>$$ x = -\\frac{5}{3} $$</p>\n\n</p>\n\n<p>Thus, $ f(x) $ is undefined at $ x = -\\frac{5}{3} $. Therefore, $ A $ cannot include $ -\\frac{5}{3} $, so a possible candidate is $ A = \\mathbb{R} \\setminus \\left\\{ -\\frac{5}{3} \\right\\} $.</p>\n\n<p>Next, we find the range of the function by solving the equation $ y = \\frac{2x + 3}{3x + 5} $ for $ x $. Rearrange the equation to isolate $ x $:</p>\n\n<p>\n\n<p>$$ y = \\frac{2x + 3}{3x + 5} $$</p>\n\n<p>$$ y(3x + 5) = 2x + 3 $$</p>\n\n<p>$$ 3xy + 5y = 2x + 3 $$</p>\n\n<p>$$ 3xy - 2x = 3 - 5y $$</p>\n\n<p>$$ x(3y - 2) = 3 - 5y $$</p>\n\n<p>$$ x = \\frac{3 - 5y}{3y - 2} $$</p>\n\n</p>\n\n<p>This solution is valid as long as the denominator $ 3y - 2 \\neq 0 $. So $ y \\neq \\frac{2}{3} $. Hence, $ B $ must exclude $ \\frac{2}{3} $.</p>\n\n<p>Thus, the sets $ A $ and $ B $ are:</p>\n\n<p>\n\n<p>$$ A = \\mathbb{R} \\setminus \\left\\{ -\\frac{5}{3} \\right\\} $$</p>\n\n<p>$$ B = \\mathbb{R} \\setminus \\left\\{ \\frac{2}{3} \\right\\} $$</p>\n\n</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option D</strong></p>",
+    "solution": "<p>To determine the sets $ A $ and $ B $ that make the function $ f: A \\rightarrow B $ defined as $ f(x) = \\frac{2x + 3}{3x + 5} $ onto, we need to ensure that every element in $ B $ has a preimage in $ A $.</p>\n\n<p>First, let\u2019s identify the values of $ x $ that cause issues in this function. The function $ f(x) $ is a rational function, and it is undefined where the denominator equals zero. So we need to find where the denominator $ 3x + 5 = 0 $.</p>\n\n<p>Solving for $ x $:</p>\n\n<p>\n\n<p>$$ 3x + 5 = 0 $$</p>\n\n<p>$$ x = -\\frac{5}{3} $$</p>\n\n</p>\n\n<p>Thus, $ f(x) $ is undefined at $ x = -\\frac{5}{3} $. Therefore, $ A $ cannot include $ -\\frac{5}{3} $, so a possible candidate is $ A = \\mathbb{R} \\setminus \\left\\{ -\\frac{5}{3} \\right\\} $.</p>\n\n<p>Next, we find the range of the function by solving the equation $ y = \\frac{2x + 3}{3x + 5} $ for $ x $. Rearrange the equation to isolate $ x $:</p>\n\n<p>\n\n<p>$$ y = \\frac{2x + 3}{3x + 5} $$</p>\n\n<p>$$ y(3x + 5) = 2x + 3 $$</p>\n\n<p>$$ 3xy + 5y = 2x + 3 $$</p>\n\n<p>$$ 3xy - 2x = 3 - 5y $$</p>\n\n<p>$$ x(3y - 2) = 3 - 5y $$</p>\n\n<p>$$ x = \\frac{3 - 5y}{3y - 2} $$</p>\n\n</p>\n\n<p>This solution is valid as long as the denominator $ 3y - 2 \\neq 0 $. So $ y \\neq \\frac{2}{3} $. Hence, $ B $ must exclude $ \\frac{2}{3} $.</p>\n\n<p>Thus, the sets $ A $ and $ B $ are:</p>\n\n<p>\n\n<p>$$ A = \\mathbb{R} \\setminus \\left\\{ -\\frac{5}{3} \\right\\} $$</p>\n\n<p>$$ B = \\mathbb{R} \\setminus \\left\\{ \\frac{2}{3} \\right\\} $$</p>\n\n</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option D</strong></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -368,9 +368,9 @@
     "question": "If f(x + 1) = x<sup>2</sup> - 3x + 2, then what is f(x) equal to?",
     "options": [
       "x<sup>2</sup>&nbsp;- 5x + 4",
-      "​x<sup>2</sup>&nbsp;- 5x + 6",
-      "​x<sup>2</sup>&nbsp;+ 3x + 3",
-      "​x<sup>2</sup>&nbsp;- 3x + 1"
+      "\u200bx<sup>2</sup>&nbsp;- 5x + 6",
+      "\u200bx<sup>2</sup>&nbsp;+ 3x + 3",
+      "\u200bx<sup>2</sup>&nbsp;- 3x + 1"
     ],
     "correctOptionIndex": 1,
     "solution": "<p>To find $ f(x) $ given that $ f(x + 1) = x^2 - 3x + 2 $, we need to express $ f(x) $ by substituting $ x $ with $ x-1 $. Thus, we replace $ x $ with $ x-1 $.</p>\n<p>Starting with the equation for $ f(x + 1) $:</p>\n<p>$ f(x + 1) = (x)^2 - 3(x) + 2 $</p>\n<p>Substitute $ x = y + 1 $ to find $ f(y) $, and then replace $ y $ again with $ x $:</p>\n<p>$ f(y + 1) = y^2 - 3y + 2 $</p>\n<p>Substituting $ y = x - 1 $:</p>\n<p>$ f(x) = (x - 1)^2 - 3(x - 1) + 2 $</p>\n<p>Simplify the expression:</p>\n<p>$ f(x) = (x^2 - 2x + 1) - 3(x - 1) + 2 $</p>\n<p>$ f(x) = x^2 - 2x + 1 - 3x + 3 + 2 $</p>\n<p>Combine like terms:</p>\n<p>$ f(x) = x^2 - 5x + 6 $</p>\n<p>Therefore, the correct option is <strong>Option B</strong>:</p>\n<p><strong>Option B</strong>: $ x^2 - 5x + 6 $</p>",
@@ -385,7 +385,7 @@
     "title": "NDA Mathematics 18 April 2021",
     "year": "2021",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Consider the following statements:</p>\n\n<p>1. A = {1, 3, 5} and B = {2, 4, 7} are equivalent sets.</p>\n\n<p>2. A = {1, 5, 9} and B = {1, 5, 5, 9, 9} are equal sets.</p>\n\n<p>Which of the above statements is/are correct?</p>\n",
     "options": [
       "1 only",
@@ -398,7 +398,7 @@
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "tlm69mp3vp",
@@ -429,7 +429,7 @@
     "year": "2021",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "Let R be a relation defined as xRy if and only if 2x + 3y = 20, where x, y&nbsp;∈ N. How many elements of the form (x, y) are there in R?",
+    "question": "Let R be a relation defined as xRy if and only if 2x + 3y = 20, where x, y&nbsp;\u2208 N. How many elements of the form (x, y) are there in R?",
     "options": [
       "2",
       "3",
@@ -458,7 +458,7 @@
       "Neither I nor II"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p>Let’s examine each statement:</p>\n\n<p>“The set of all irrational numbers between $\\sqrt{12}$ and $\\sqrt{15}$ is infinite.”  </p>\n\n\n<p><p>Any non‐degenerate interval of real numbers contains infinitely (in fact uncountably) many irrationals.  </p></p>\n<p><p>⇒ Statement I is true.</p></p>\n\n\n<p>“The set of all odd integers less than 1000 is a finite set.”  </p>\n\n\n<p><p>The phrase “odd integers less than 1000” means all integers $n$ with $n<1000$ and $n$ odd.  </p></p>\n<p><p>Since there is no lower bound, you get $\\dots,-5,-3,-1,1,3,\\dots,999$, which is infinite.  </p></p>\n<p><p>⇒ Statement II is false.</p></p>\n\n<p>Therefore only I is correct.  </p>\n<p>Answer: Option 1.</p>",
+    "solution": "<p>Let\u2019s examine each statement:</p>\n\n<p>\u201cThe set of all irrational numbers between $\\sqrt{12}$ and $\\sqrt{15}$ is infinite.\u201d  </p>\n\n\n<p><p>Any non\u2010degenerate interval of real numbers contains infinitely (in fact uncountably) many irrationals.  </p></p>\n<p><p>\u21d2 Statement I is true.</p></p>\n\n\n<p>\u201cThe set of all odd integers less than 1000 is a finite set.\u201d  </p>\n\n\n<p><p>The phrase \u201codd integers less than 1000\u201d means all integers $n$ with $n<1000$ and $n$ odd.  </p></p>\n<p><p>Since there is no lower bound, you get $\\dots,-5,-3,-1,1,3,\\dots,999$, which is infinite.  </p></p>\n<p><p>\u21d2 Statement II is false.</p></p>\n\n<p>Therefore only I is correct.  </p>\n<p>Answer: Option 1.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -470,8 +470,8 @@
     "title": "NDA Mathematics 1st September 2024",
     "year": "2024",
     "difficulty": "Medium",
-    "type": "MCQM",
-    "question": "<p><!-- x-tinymce/html -->Let P and Q be two non-void relations on a set A. Which of the following statements are correct?</p>\n\n<p>I. P and Q are reflexive ⇒&nbsp;P ∩ Q is reflexive.</p>\n\n<p>II. P and Q are symmetric ⇒&nbsp;P ∪&nbsp;Q is symmetric.</p>\n\n<p>III. P and Q are transitive ⇒&nbsp;P ∩ Q is transitive.</p>\n\n<p>Select the answer using the code given below.</p>\n",
+    "type": "SCQ",
+    "question": "<p><!-- x-tinymce/html -->Let P and Q be two non-void relations on a set A. Which of the following statements are correct?</p>\n\n<p>I. P and Q are reflexive \u21d2&nbsp;P \u2229 Q is reflexive.</p>\n\n<p>II. P and Q are symmetric \u21d2&nbsp;P \u222a&nbsp;Q is symmetric.</p>\n\n<p>III. P and Q are transitive \u21d2&nbsp;P \u2229 Q is transitive.</p>\n\n<p>Select the answer using the code given below.</p>\n",
     "options": [
       "I and II only",
       "II and III only",
@@ -500,7 +500,7 @@
       "100"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>Let’s find $|(A\\times B)\\,\\cap\\,(B\\times A)|$:</p>\n\n<p><p>An ordered pair $(x,y)$ lies in $A\\times B$ if  </p>\n<p>$      x\\in A,\\quad y\\in B.    $</p></p>\n<p><p>The same $(x,y)$ lies in $B\\times A$ if  </p>\n<p>$      x\\in B,\\quad y\\in A.    $</p></p>\n<p><p>Therefore $(x,y)$ is in the intersection precisely when  </p>\n<p>$      x\\in A\\cap B      \\quad\\text{and}\\quad      y\\in A\\cap B.    $</p></p>\n<p><p>Since $|A\\cap B|=10$, the common pairs form  </p>\n<p>$      (A\\cap B)\\times (A\\cap B),    $</p>\n<p>which has size  </p>\n<p>$      10\\times 10 = 100.    $</p></p>\n\n<p>Answer: 100. (Option 4)</p>",
+    "solution": "<p>Let\u2019s find $|(A\\times B)\\,\\cap\\,(B\\times A)|$:</p>\n\n<p><p>An ordered pair $(x,y)$ lies in $A\\times B$ if  </p>\n<p>$      x\\in A,\\quad y\\in B.    $</p></p>\n<p><p>The same $(x,y)$ lies in $B\\times A$ if  </p>\n<p>$      x\\in B,\\quad y\\in A.    $</p></p>\n<p><p>Therefore $(x,y)$ is in the intersection precisely when  </p>\n<p>$      x\\in A\\cap B      \\quad\\text{and}\\quad      y\\in A\\cap B.    $</p></p>\n<p><p>Since $|A\\cap B|=10$, the common pairs form  </p>\n<p>$      (A\\cap B)\\times (A\\cap B),    $</p>\n<p>which has size  </p>\n<p>$      10\\times 10 = 100.    $</p></p>\n\n<p>Answer: 100. (Option 4)</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -512,7 +512,7 @@
     "title": "NDA Mathematics 1st September 2024",
     "year": "2024",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "In a class of 240 students, 180 passed in English, 130 passed in Hindi and 150 passed in Sanskrit. Further, 60 passed in only one subject, 110 passed in only two subjects and 10 passed in none of the subjects. How many passed in all three subjects?",
     "options": [
       "60",
@@ -542,7 +542,7 @@
       "<p>Neither 1 nor 2</p>"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p>To determine whether each function is bijective from the set $ A = \\{x \\in \\mathbb{R} : -1 < x < 1\\} $ to itself, we need to evaluate if the functions are both injective (one-to-one) and surjective (onto).</p>\n\n<p>Let's examine each function separately:</p>\n\n<p><strong>1. $ f(x) = x|x| $</strong></p>\n\n<p><em>Injectivity:</em> For $ f $ to be injective, if $ f(a) = f(b) $ then it must be true that $ a = b $.</p>\n\n<p>If $ f(a) = f(b) $, this implies $ a|a| = b|b| $. Let’s consider different scenarios based on the sign of $ a $ and $ b $.</p>\n\n<p>If $ a \\geq 0 $ and $ b \\geq 0 $:</p>\n\n<p>This simplifies to $ a^2 = b^2 $. Given that $ a $ and $ b $ are both non-negative, it follows that $ a = b $.</p>\n\n<p>If $ a \\leq 0 $ and $ b \\leq 0 $:</p>\n\n<p>This also simplifies to $ a^2 = b^2 $. Given that $ a $ and $ b $ are both non-positive, it follows that $ a = b $.</p>\n\n<p>If $ a \\geq 0 $ and $ b \\leq 0 $ or vice versa, $ a|a| $ will be non-negative and $ b|b| $ will be non-positive, thus $ f(a) \\neq f(b) $. Therefore, $ f $ is injective.</p>\n\n<p><em>Surjectivity:</em> We need to show that for every $ y \\in A $, there exists an $ x \\in A $ such that $ f(x) = y $.</p>\n\n<p>Given $ y \\in (-1, 1) $, we need $ x $ such that $ x|x| = y $.</p>\n\n<p>If $ y \\geq 0 $, we can choose $ x = \\sqrt{y} $, and if $ y \\leq 0 $, we can choose $ x = -\\sqrt{-y} $. Thus, for every $ y $ in $ A $, there exists a corresponding $ x $ in $ A $. Therefore, $ f $ is surjective.</p>\n\n<p>Since $ f $ is both injective and surjective, $ f $ is bijective.</p>\n\n<p><strong>2. $ g(x) = \\cos(\\pi x) $</strong></p>\n\n<p><em>Injectivity:</em> For $ g $ to be injective, if $ g(a) = g(b) $, then $ a = b $.</p>\n\n<p>We know that the cosine function is not one-to-one in general, and specifically $ \\cos(\\pi a) = \\cos(\\pi b) $ could be true for $ a \\neq b $ due to the periodic nature of the cosine function.</p>\n\n<p>Since we find multiple values of $ x $ in $ A $ that produce the same $ g(x) $, $ g $ is not injective.</p>\n\n<p><em>Surjectivity:</em> To be surjective, for every $ y \\in (-1, 1) $, there must be an $ x \\in (-1, 1) $ such that $ g(x) = y $.</p>\n\n<p>The cosine function ranges over $[-1, 1]$, but since $\\pi x$ spans in intervals of $(-1, 1)$ rather than covering the complete period of $ \\cos $, $ g $ is not guaranteed to cover all $ y \\in (-1,1) $ either. Thus, $ g $ is not surjective.</p>\n\n<p>Since $ g $ is neither injective nor surjective, $ g $ is not bijective.</p>\n\n<p>Based on this analysis, the correct answer is:</p>\n\n<strong>Option A</strong>\n\n<p>1 only</p>",
+    "solution": "<p>To determine whether each function is bijective from the set $ A = \\{x \\in \\mathbb{R} : -1 < x < 1\\} $ to itself, we need to evaluate if the functions are both injective (one-to-one) and surjective (onto).</p>\n\n<p>Let's examine each function separately:</p>\n\n<p><strong>1. $ f(x) = x|x| $</strong></p>\n\n<p><em>Injectivity:</em> For $ f $ to be injective, if $ f(a) = f(b) $ then it must be true that $ a = b $.</p>\n\n<p>If $ f(a) = f(b) $, this implies $ a|a| = b|b| $. Let\u2019s consider different scenarios based on the sign of $ a $ and $ b $.</p>\n\n<p>If $ a \\geq 0 $ and $ b \\geq 0 $:</p>\n\n<p>This simplifies to $ a^2 = b^2 $. Given that $ a $ and $ b $ are both non-negative, it follows that $ a = b $.</p>\n\n<p>If $ a \\leq 0 $ and $ b \\leq 0 $:</p>\n\n<p>This also simplifies to $ a^2 = b^2 $. Given that $ a $ and $ b $ are both non-positive, it follows that $ a = b $.</p>\n\n<p>If $ a \\geq 0 $ and $ b \\leq 0 $ or vice versa, $ a|a| $ will be non-negative and $ b|b| $ will be non-positive, thus $ f(a) \\neq f(b) $. Therefore, $ f $ is injective.</p>\n\n<p><em>Surjectivity:</em> We need to show that for every $ y \\in A $, there exists an $ x \\in A $ such that $ f(x) = y $.</p>\n\n<p>Given $ y \\in (-1, 1) $, we need $ x $ such that $ x|x| = y $.</p>\n\n<p>If $ y \\geq 0 $, we can choose $ x = \\sqrt{y} $, and if $ y \\leq 0 $, we can choose $ x = -\\sqrt{-y} $. Thus, for every $ y $ in $ A $, there exists a corresponding $ x $ in $ A $. Therefore, $ f $ is surjective.</p>\n\n<p>Since $ f $ is both injective and surjective, $ f $ is bijective.</p>\n\n<p><strong>2. $ g(x) = \\cos(\\pi x) $</strong></p>\n\n<p><em>Injectivity:</em> For $ g $ to be injective, if $ g(a) = g(b) $, then $ a = b $.</p>\n\n<p>We know that the cosine function is not one-to-one in general, and specifically $ \\cos(\\pi a) = \\cos(\\pi b) $ could be true for $ a \\neq b $ due to the periodic nature of the cosine function.</p>\n\n<p>Since we find multiple values of $ x $ in $ A $ that produce the same $ g(x) $, $ g $ is not injective.</p>\n\n<p><em>Surjectivity:</em> To be surjective, for every $ y \\in (-1, 1) $, there must be an $ x \\in (-1, 1) $ such that $ g(x) = y $.</p>\n\n<p>The cosine function ranges over $[-1, 1]$, but since $\\pi x$ spans in intervals of $(-1, 1)$ rather than covering the complete period of $ \\cos $, $ g $ is not guaranteed to cover all $ y \\in (-1,1) $ either. Thus, $ g $ is not surjective.</p>\n\n<p>Since $ g $ is neither injective nor surjective, $ g $ is not bijective.</p>\n\n<p>Based on this analysis, the correct answer is:</p>\n\n<strong>Option A</strong>\n\n<p>1 only</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -639,7 +639,7 @@
     "year": "2023",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>The Cartesian product A&nbsp;×&nbsp;A has 16 elements among which are (0, 2) and (1, 3). Which of the&nbsp;following statements is/are correct?</p>\n\n<p>1.&nbsp;It is possible to determine set A.</p>\n\n<p>2. A&nbsp;×&nbsp;A contains the element (3, 2).</p>\n\n<p>Select the correct answer using the code given&nbsp;below:</p>\n",
+    "question": "<p>The Cartesian product A&nbsp;\u00d7&nbsp;A has 16 elements among which are (0, 2) and (1, 3). Which of the&nbsp;following statements is/are correct?</p>\n\n<p>1.&nbsp;It is possible to determine set A.</p>\n\n<p>2. A&nbsp;\u00d7&nbsp;A contains the element (3, 2).</p>\n\n<p>Select the correct answer using the code given&nbsp;below:</p>\n",
     "options": [
       "1 only",
       "2 only",
@@ -660,7 +660,7 @@
     "year": "2023",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Let A = {1, 2, 3, ..., 20}. Define a relation R from A to A by R = {(x, y) : 4x - 3y = 1}, where&nbsp;x, y ∈&nbsp;A. Which of the following statements is/are correct?</p>\n\n<p>1. The domain of R is {1, 4, 7, 10, 13, 16).</p>\n\n<p>2.&nbsp;The range of R is {1, 5, 9, 13, 17).</p>\n\n<p>3. The range of R is equal to codomain of R.</p>\n\n<p>Select the correct answer using the code given&nbsp;below:</p>\n",
+    "question": "<p>Let A = {1, 2, 3, ..., 20}. Define a relation R from A to A by R = {(x, y) : 4x - 3y = 1}, where&nbsp;x, y \u2208&nbsp;A. Which of the following statements is/are correct?</p>\n\n<p>1. The domain of R is {1, 4, 7, 10, 13, 16).</p>\n\n<p>2.&nbsp;The range of R is {1, 5, 9, 13, 17).</p>\n\n<p>3. The range of R is equal to codomain of R.</p>\n\n<p>Select the correct answer using the code given&nbsp;below:</p>\n",
     "options": [
       "1 only",
       "2 only",
@@ -668,7 +668,7 @@
       "2 and 3"
     ],
     "correctOptionIndex": 1,
-    "solution": "<ol>\n<li><p>Relation condition:  </p>\n<p>$$4x - 3y = 1 \\;\\Longrightarrow\\; y = \\frac{4x - 1}{3}.$$  </p></li>\n<li><p>For $y\\in A=\\{1,2,\\dots,20\\}$, $\\tfrac{4x-1}{3}$ must be an integer in $[1,20]$.  </p></li>\n<li><p>Divisibility by 3:  </p>\n<p>$$4x - 1 \\equiv x - 1 \\pmod{3}\\;\\Longrightarrow\\;x\\equiv1\\pmod{3}.$$  </p>\n<p>So possible $x\\in A$ are $1,4,7,10,13,16,19$.  </p></li>\n<li><p>Compute $y$ for each:  </p>\n<p>• $x=1\\;\\Rightarrow\\;y=(4-1)/3=1$  </p>\n<p>• $x=4\\;\\Rightarrow\\;y=(16-1)/3=5$  </p>\n<p>• $x=7\\;\\Rightarrow\\;y=(28-1)/3=9$  </p>\n<p>• $x=10\\;\\Rightarrow\\;y=(40-1)/3=13$  </p>\n<p>• $x=13\\;\\Rightarrow\\;y=(52-1)/3=17$  </p>\n<p>• $x=16\\;\\Rightarrow\\;y=21\\notin A$  </p>\n<p>• $x=19\\;\\Rightarrow\\;y=25\\notin A$  </p></li>\n<li><p>Domain of $R$ is $\\{1,4,7,10,13\\}$ (so statement 1 is false).  </p></li>\n<li><p>Range of $R$ is $\\{1,5,9,13,17\\}$ (so statement 2 is true).  </p></li>\n<li><p>Codomain of $R$ is $A=\\{1,\\dots,20\\}\\neq\\{1,5,9,13,17\\}$ (so statement 3 is false).  </p></li>\n</ol>\n<p>Answer: Option B.</p>",
+    "solution": "<ol>\n<li><p>Relation condition:  </p>\n<p>$$4x - 3y = 1 \\;\\Longrightarrow\\; y = \\frac{4x - 1}{3}.$$  </p></li>\n<li><p>For $y\\in A=\\{1,2,\\dots,20\\}$, $\\tfrac{4x-1}{3}$ must be an integer in $[1,20]$.  </p></li>\n<li><p>Divisibility by 3:  </p>\n<p>$$4x - 1 \\equiv x - 1 \\pmod{3}\\;\\Longrightarrow\\;x\\equiv1\\pmod{3}.$$  </p>\n<p>So possible $x\\in A$ are $1,4,7,10,13,16,19$.  </p></li>\n<li><p>Compute $y$ for each:  </p>\n<p>\u2022 $x=1\\;\\Rightarrow\\;y=(4-1)/3=1$  </p>\n<p>\u2022 $x=4\\;\\Rightarrow\\;y=(16-1)/3=5$  </p>\n<p>\u2022 $x=7\\;\\Rightarrow\\;y=(28-1)/3=9$  </p>\n<p>\u2022 $x=10\\;\\Rightarrow\\;y=(40-1)/3=13$  </p>\n<p>\u2022 $x=13\\;\\Rightarrow\\;y=(52-1)/3=17$  </p>\n<p>\u2022 $x=16\\;\\Rightarrow\\;y=21\\notin A$  </p>\n<p>\u2022 $x=19\\;\\Rightarrow\\;y=25\\notin A$  </p></li>\n<li><p>Domain of $R$ is $\\{1,4,7,10,13\\}$ (so statement 1 is false).  </p></li>\n<li><p>Range of $R$ is $\\{1,5,9,13,17\\}$ (so statement 2 is true).  </p></li>\n<li><p>Codomain of $R$ is $A=\\{1,\\dots,20\\}\\neq\\{1,5,9,13,17\\}$ (so statement 3 is false).  </p></li>\n</ol>\n<p>Answer: Option B.</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -689,7 +689,7 @@
       "Neither 1 nor 2"
     ],
     "correctOptionIndex": 0,
-    "solution": "<ol>\n<li><p>Definition of a function  </p>\n<p>A relation $h$ is a function if every $x$ in its domain has exactly one corresponding $h(x)$.</p></li>\n<li><p>Check $f(x)$  </p>\n<p>$$    f(x)=    \\begin{cases}      x^3, & 0\\le x\\le2,\\\\      4x,   & 2\\le x\\le8.    \\end{cases}    $$</p>\n<p>– Both pieces cover $x=2$.  </p>\n<p>– At $x=2$:</p>\n<p>$$    x^3=2^3=8,\\quad 4x=4\\cdot2=8.    $$</p>\n<p>Both give the same value, so each $x$ in $[0,8]$ has a unique $f(x)$.  </p>\n<p>⇒ $f$ is a function.</p></li>\n<li><p>Check $g(x)$  </p>\n<p>$$    g(x)=    \\begin{cases}      x^2, & 0\\le x\\le4,\\\\      3x,   & 4\\le x\\le8.    \\end{cases}    $$</p>\n<p>– Both pieces cover $x=4$.  </p>\n<p>– At $x=4$:</p>\n<p>$$    x^2=4^2=16,\\quad 3x=3\\cdot4=12.    $$</p>\n<p>They give different values, so $x=4$ has two images.  </p>\n<p>⇒ $g$ is not a function.</p></li>\n</ol>\n<p>Answer: Only statement 1 is correct.  </p>\n<p>Option A.</p>",
+    "solution": "<ol>\n<li><p>Definition of a function  </p>\n<p>A relation $h$ is a function if every $x$ in its domain has exactly one corresponding $h(x)$.</p></li>\n<li><p>Check $f(x)$  </p>\n<p>$$    f(x)=    \\begin{cases}      x^3, & 0\\le x\\le2,\\\\      4x,   & 2\\le x\\le8.    \\end{cases}    $$</p>\n<p>\u2013 Both pieces cover $x=2$.  </p>\n<p>\u2013 At $x=2$:</p>\n<p>$$    x^3=2^3=8,\\quad 4x=4\\cdot2=8.    $$</p>\n<p>Both give the same value, so each $x$ in $[0,8]$ has a unique $f(x)$.  </p>\n<p>\u21d2 $f$ is a function.</p></li>\n<li><p>Check $g(x)$  </p>\n<p>$$    g(x)=    \\begin{cases}      x^2, & 0\\le x\\le4,\\\\      3x,   & 4\\le x\\le8.    \\end{cases}    $$</p>\n<p>\u2013 Both pieces cover $x=4$.  </p>\n<p>\u2013 At $x=4$:</p>\n<p>$$    x^2=4^2=16,\\quad 3x=3\\cdot4=12.    $$</p>\n<p>They give different values, so $x=4$ has two images.  </p>\n<p>\u21d2 $g$ is not a function.</p></li>\n</ol>\n<p>Answer: Only statement 1 is correct.  </p>\n<p>Option A.</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -702,7 +702,7 @@
     "year": "2023",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Consider the following statements&nbsp;</p>\n\n<p>1.&nbsp;A = (A&nbsp;∪&nbsp;B)&nbsp;∪&nbsp;(A - B),</p>\n\n<p>2.&nbsp;A&nbsp;∪&nbsp;(B - A) = (A&nbsp;∪&nbsp;B)</p>\n\n<p>3.&nbsp;B = (A&nbsp;∪&nbsp;B) - (A - B)</p>\n\n<p>Which of the statements given above are&nbsp;correct?</p>\n",
+    "question": "<p>Consider the following statements&nbsp;</p>\n\n<p>1.&nbsp;A = (A&nbsp;\u222a&nbsp;B)&nbsp;\u222a&nbsp;(A - B),</p>\n\n<p>2.&nbsp;A&nbsp;\u222a&nbsp;(B - A) = (A&nbsp;\u222a&nbsp;B)</p>\n\n<p>3.&nbsp;B = (A&nbsp;\u222a&nbsp;B) - (A - B)</p>\n\n<p>Which of the statements given above are&nbsp;correct?</p>\n",
     "options": [
       "1 and 2 only",
       "2 and 3 only",
@@ -710,7 +710,7 @@
       "1, 2 and 3"
     ],
     "correctOptionIndex": 1,
-    "solution": "<ol>\n<li><p>Statement 1:  </p>\n<p>RHS = $(A\\cup B)\\cup (A-B)$.  </p>\n<p>Since $A-B\\subseteq A\\subseteq A\\cup B$,  </p>\n<p>$      (A\\cup B)\\cup (A-B)      = A\\cup B.    $  </p>\n<p>In general $A\\cup B\\neq A$.  </p>\n<p>⇒ Statement 1 is false.</p></li>\n<li><p>Statement 2:  </p>\n<p>$      A\\cup (B-A)      = A\\cup\\bigl(B\\cap A^c\\bigr)      = (A\\cup B)\\cap\\bigl(A\\cup A^c\\bigr)      = (A\\cup B)\\cap U      = A\\cup B.    $  </p>\n<p>⇒ Statement 2 is true.</p></li>\n<li><p>Statement 3:  </p>\n<p>$      (A\\cup B)-(A-B)      = (A\\cup B)\\cap(A-B)^c      = (A\\cup B)\\cap(A^c\\cup B)      = B.    $  </p>\n<p>⇒ Statement 3 is true.</p></li>\n</ol>\n<p>Correct statements are 2 and 3 only.  </p>\n<p>Answer: Option B.</p>",
+    "solution": "<ol>\n<li><p>Statement 1:  </p>\n<p>RHS = $(A\\cup B)\\cup (A-B)$.  </p>\n<p>Since $A-B\\subseteq A\\subseteq A\\cup B$,  </p>\n<p>$      (A\\cup B)\\cup (A-B)      = A\\cup B.    $  </p>\n<p>In general $A\\cup B\\neq A$.  </p>\n<p>\u21d2 Statement 1 is false.</p></li>\n<li><p>Statement 2:  </p>\n<p>$      A\\cup (B-A)      = A\\cup\\bigl(B\\cap A^c\\bigr)      = (A\\cup B)\\cap\\bigl(A\\cup A^c\\bigr)      = (A\\cup B)\\cap U      = A\\cup B.    $  </p>\n<p>\u21d2 Statement 2 is true.</p></li>\n<li><p>Statement 3:  </p>\n<p>$      (A\\cup B)-(A-B)      = (A\\cup B)\\cap(A-B)^c      = (A\\cup B)\\cap(A^c\\cup B)      = B.    $  </p>\n<p>\u21d2 Statement 3 is true.</p></li>\n</ol>\n<p>Correct statements are 2 and 3 only.  </p>\n<p>Answer: Option B.</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -722,8 +722,8 @@
     "title": "NDA Mathematics 4 September 2022",
     "year": "2022",
     "difficulty": "Medium",
-    "type": "MCQM",
-    "question": "<p>Consider the following statements :</p>\n\n<p>1. If f is the subset of Z × Z defined by f = {(xy, x − y); x, y ∈ Z}, then f is a function from Z to Z.</p>\n\n<p>2. If f is the subset of N × N defined by f = {(xy, x + y); x, y ∈ N}, then f is a function from N to N.</p>\n\n<p>Which of the statements given above is/are correct?</p>\n",
+    "type": "SCQ",
+    "question": "<p>Consider the following statements :</p>\n\n<p>1. If f is the subset of Z \u00d7 Z defined by f = {(xy, x \u2212 y); x, y \u2208 Z}, then f is a function from Z to Z.</p>\n\n<p>2. If f is the subset of N \u00d7 N defined by f = {(xy, x + y); x, y \u2208 N}, then f is a function from N to N.</p>\n\n<p>Which of the statements given above is/are correct?</p>\n",
     "options": [
       "1 only",
       "<span style=\"\">2 only</span>",
@@ -731,7 +731,7 @@
       "Neither 1 nor 2"
     ],
     "correctOptionIndex": 3,
-    "solution": "<ol>\n<li><p>Definition: A subset $f\\subseteq A\\times B$ is a function $f\\!:A\\to B$ if and only if  </p>\n<p>a. For every $a\\in A$ there exists at least one $b\\in B$ with $(a,b)\\in f$.  </p>\n<p>b. For every $a\\in A$ there is at most one such $b$.  </p></li>\n<li><p>Statement 1:  </p>\n<p>$f=\\{(xy,\\;x-y)\\mid x,y\\in\\mathbb{Z}\\}\\subseteq\\mathbb{Z}\\times\\mathbb{Z}$.  </p>\n<p>– Take input $6\\in\\mathbb{Z}$.  </p>\n<p>• $(x,y)=(2,3)\\implies(6,2-3)=(6,-1)\\in f$.  </p>\n<p>• $(x,y)=(3,2)\\implies(6,3-2)=(6,1)\\in f$.  </p>\n<p>– Two different outputs $-1$ and $1$ for the same input $6$.  </p>\n<p>⇒ Violates uniqueness ⇒ Not a function.  </p></li>\n<li><p>Statement 2:  </p>\n<p>$f=\\{(xy,\\;x+y)\\mid x,y\\in\\mathbb{N}\\}\\subseteq\\mathbb{N}\\times\\mathbb{N}$.  </p>\n<p>– Take input $6\\in\\mathbb{N}$.  </p>\n<p>• $(x,y)=(2,3)\\implies(6,5)\\in f$.  </p>\n<p>• $(x,y)=(1,6)\\implies(6,7)\\in f$.  </p>\n<p>– Two different outputs $5$ and $7$ for the same input $6$.  </p>\n<p>⇒ Violates uniqueness ⇒ Not a function.  </p></li>\n</ol>\n<p>Answer: Neither 1 nor 2 is correct. (Option D)</p>",
+    "solution": "<ol>\n<li><p>Definition: A subset $f\\subseteq A\\times B$ is a function $f\\!:A\\to B$ if and only if  </p>\n<p>a. For every $a\\in A$ there exists at least one $b\\in B$ with $(a,b)\\in f$.  </p>\n<p>b. For every $a\\in A$ there is at most one such $b$.  </p></li>\n<li><p>Statement 1:  </p>\n<p>$f=\\{(xy,\\;x-y)\\mid x,y\\in\\mathbb{Z}\\}\\subseteq\\mathbb{Z}\\times\\mathbb{Z}$.  </p>\n<p>\u2013 Take input $6\\in\\mathbb{Z}$.  </p>\n<p>\u2022 $(x,y)=(2,3)\\implies(6,2-3)=(6,-1)\\in f$.  </p>\n<p>\u2022 $(x,y)=(3,2)\\implies(6,3-2)=(6,1)\\in f$.  </p>\n<p>\u2013 Two different outputs $-1$ and $1$ for the same input $6$.  </p>\n<p>\u21d2 Violates uniqueness \u21d2 Not a function.  </p></li>\n<li><p>Statement 2:  </p>\n<p>$f=\\{(xy,\\;x+y)\\mid x,y\\in\\mathbb{N}\\}\\subseteq\\mathbb{N}\\times\\mathbb{N}$.  </p>\n<p>\u2013 Take input $6\\in\\mathbb{N}$.  </p>\n<p>\u2022 $(x,y)=(2,3)\\implies(6,5)\\in f$.  </p>\n<p>\u2022 $(x,y)=(1,6)\\implies(6,7)\\in f$.  </p>\n<p>\u2013 Two different outputs $5$ and $7$ for the same input $6$.  </p>\n<p>\u21d2 Violates uniqueness \u21d2 Not a function.  </p></li>\n</ol>\n<p>Answer: Neither 1 nor 2 is correct. (Option D)</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -752,7 +752,7 @@
       "Neither 1 nor 2"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p><strong>Statement 1: The set of all irrational numbers between $\\sqrt{2}$ and $\\sqrt{5}$ is an infinite set.</strong></p>\n<ol>\n<li><p><strong>Understanding Irrational Numbers:</strong> Irrational numbers are real numbers that cannot be expressed as a simple fraction $\\frac{p}{q}$, where $p$ and $q$ are integers and $q \\neq 0$. Examples include $\\sqrt{2}$, $\\sqrt{5}$, $\\pi$, etc.</p></li>\n<li><p><strong>Property of Real Numbers:</strong> A fundamental property of real numbers is that between any two distinct real numbers, there exist infinitely many irrational numbers (and also infinitely many rational numbers). This is often referred to as the density property of irrational and rational numbers.</p></li>\n<li><p><strong>Applying the Property:</strong> Here, $\\sqrt{2}$ and $\\sqrt{5}$ are distinct real numbers. We know that $\\sqrt{2} \\approx 1.414$ and $\\sqrt{5} \\approx 2.236$. Since they are distinct real numbers, there must be an infinite number of irrational numbers between them.</p></li>\n<li><p><strong>Conclusion:</strong> Therefore, the set of all irrational numbers between $\\sqrt{2}$ and $\\sqrt{5}$ is an infinite set. This statement is <strong>correct</strong>.</p></li>\n</ol>\n<p><strong>Statement 2: The set of all odd integers less than 100 is a finite set.</strong></p>\n<ol>\n<li><p><strong>Understanding Integers:</strong> Integers are whole numbers, including positive numbers, negative numbers, and zero. Examples: …, $-3, -2, -1, 0, 1, 2, 3, ...$</p></li>\n<li><p><strong>Understanding Odd Integers:</strong> Odd integers are integers that are not divisible by 2. Examples: …, $-5, -3, -1, 1, 3, 5, ...$</p></li>\n<li><p><strong>Identifying the Set:</strong> We need to consider all odd integers that are less than 100.</p>\n<ul>\n<li><p>The positive odd integers less than 100 are $1, 3, 5, ..., 99$. This part of the set has a clear upper limit.</p></li>\n<li><p>The negative odd integers less than 100 are $-1, -3, -5, -7, ...$ This sequence continues indefinitely in the negative direction (e.g., $-101$, $-103$, $-2001$, etc., are all odd integers less than 100).</p></li></ul></li>\n<li><p><strong>Finite vs. Infinite Set:</strong> A finite set is a set that has a countable number of elements. An infinite set has an unlimited number of elements. Since the set of odd integers less than 100 includes all negative odd integers, which go on forever, it has an unlimited number of elements.</p></li>\n<li><p><strong>Conclusion:</strong> Therefore, the set of all odd integers less than 100 is an infinite set. This statement says it is a finite set, so this statement is <strong>incorrect</strong>.</p></li>\n</ol>\n<p>Based on our analysis:</p>\n<p>Statement 1 is correct.</p>\n<p>Statement 2 is incorrect.</p>\n<p>Thus, only statement 1 is correct.</p>\n<p>The final answer is $\\boxed{A}$</p>",
+    "solution": "<p><strong>Statement 1: The set of all irrational numbers between $\\sqrt{2}$ and $\\sqrt{5}$ is an infinite set.</strong></p>\n<ol>\n<li><p><strong>Understanding Irrational Numbers:</strong> Irrational numbers are real numbers that cannot be expressed as a simple fraction $\\frac{p}{q}$, where $p$ and $q$ are integers and $q \\neq 0$. Examples include $\\sqrt{2}$, $\\sqrt{5}$, $\\pi$, etc.</p></li>\n<li><p><strong>Property of Real Numbers:</strong> A fundamental property of real numbers is that between any two distinct real numbers, there exist infinitely many irrational numbers (and also infinitely many rational numbers). This is often referred to as the density property of irrational and rational numbers.</p></li>\n<li><p><strong>Applying the Property:</strong> Here, $\\sqrt{2}$ and $\\sqrt{5}$ are distinct real numbers. We know that $\\sqrt{2} \\approx 1.414$ and $\\sqrt{5} \\approx 2.236$. Since they are distinct real numbers, there must be an infinite number of irrational numbers between them.</p></li>\n<li><p><strong>Conclusion:</strong> Therefore, the set of all irrational numbers between $\\sqrt{2}$ and $\\sqrt{5}$ is an infinite set. This statement is <strong>correct</strong>.</p></li>\n</ol>\n<p><strong>Statement 2: The set of all odd integers less than 100 is a finite set.</strong></p>\n<ol>\n<li><p><strong>Understanding Integers:</strong> Integers are whole numbers, including positive numbers, negative numbers, and zero. Examples: \u2026, $-3, -2, -1, 0, 1, 2, 3, ...$</p></li>\n<li><p><strong>Understanding Odd Integers:</strong> Odd integers are integers that are not divisible by 2. Examples: \u2026, $-5, -3, -1, 1, 3, 5, ...$</p></li>\n<li><p><strong>Identifying the Set:</strong> We need to consider all odd integers that are less than 100.</p>\n<ul>\n<li><p>The positive odd integers less than 100 are $1, 3, 5, ..., 99$. This part of the set has a clear upper limit.</p></li>\n<li><p>The negative odd integers less than 100 are $-1, -3, -5, -7, ...$ This sequence continues indefinitely in the negative direction (e.g., $-101$, $-103$, $-2001$, etc., are all odd integers less than 100).</p></li></ul></li>\n<li><p><strong>Finite vs. Infinite Set:</strong> A finite set is a set that has a countable number of elements. An infinite set has an unlimited number of elements. Since the set of odd integers less than 100 includes all negative odd integers, which go on forever, it has an unlimited number of elements.</p></li>\n<li><p><strong>Conclusion:</strong> Therefore, the set of all odd integers less than 100 is an infinite set. This statement says it is a finite set, so this statement is <strong>incorrect</strong>.</p></li>\n</ol>\n<p>Based on our analysis:</p>\n<p>Statement 1 is correct.</p>\n<p>Statement 2 is incorrect.</p>\n<p>Thus, only statement 1 is correct.</p>\n<p>The final answer is $\\boxed{A}$</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -765,7 +765,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Let A = {7, 8, 9, 10, 11, 12, 13; 14, 15, 16} and let f ∶ A → N be defined by f(x) = the highest prime factor of x.</p>\n\n<p>How many elements are there in the range of f?</p>\n",
+    "question": "<p>Let A = {7, 8, 9, 10, 11, 12, 13; 14, 15, 16} and let f \u2236 A \u2192 N be defined by f(x) = the highest prime factor of x.</p>\n\n<p>How many elements are there in the range of f?</p>\n",
     "options": [
       "4",
       "5",
@@ -773,7 +773,7 @@
       "7"
     ],
     "correctOptionIndex": 2,
-    "solution": "<ol>\n<li><p>A = {7, 8, 9, 10, 11, 12, 13, 14, 15, 16}.  </p></li>\n<li><p>For each x ∈ A, find its prime factorisation and pick the highest prime factor:  </p></li>\n</ol>\n<ul>\n<li><p>7 = 7 ⇒ f(7) = 7  </p></li>\n<li><p>8 = 2³ ⇒ f(8) = 2  </p></li>\n<li><p>9 = 3² ⇒ f(9) = 3  </p></li>\n<li><p>10 = 2·5 ⇒ f(10) = 5  </p></li>\n<li><p>11 = 11 ⇒ f(11) = 11  </p></li>\n<li><p>12 = 2²·3 ⇒ f(12) = 3  </p></li>\n<li><p>13 = 13 ⇒ f(13) = 13  </p></li>\n<li><p>14 = 2·7 ⇒ f(14) = 7  </p></li>\n<li><p>15 = 3·5 ⇒ f(15) = 5  </p></li>\n<li><p>16 = 2⁴ ⇒ f(16) = 2  </p></li>\n</ul>\n<ol>\n<li><p>Range of f = {2, 3, 5, 7, 11, 13}.  </p></li>\n<li><p>Number of elements in range = 6.  </p></li>\n</ol>\n<p>Answer: Option C (6).</p>",
+    "solution": "<ol>\n<li><p>A = {7, 8, 9, 10, 11, 12, 13, 14, 15, 16}.  </p></li>\n<li><p>For each x \u2208 A, find its prime factorisation and pick the highest prime factor:  </p></li>\n</ol>\n<ul>\n<li><p>7 = 7 \u21d2 f(7) = 7  </p></li>\n<li><p>8 = 2\u00b3 \u21d2 f(8) = 2  </p></li>\n<li><p>9 = 3\u00b2 \u21d2 f(9) = 3  </p></li>\n<li><p>10 = 2\u00b75 \u21d2 f(10) = 5  </p></li>\n<li><p>11 = 11 \u21d2 f(11) = 11  </p></li>\n<li><p>12 = 2\u00b2\u00b73 \u21d2 f(12) = 3  </p></li>\n<li><p>13 = 13 \u21d2 f(13) = 13  </p></li>\n<li><p>14 = 2\u00b77 \u21d2 f(14) = 7  </p></li>\n<li><p>15 = 3\u00b75 \u21d2 f(15) = 5  </p></li>\n<li><p>16 = 2\u2074 \u21d2 f(16) = 2  </p></li>\n</ul>\n<ol>\n<li><p>Range of f = {2, 3, 5, 7, 11, 13}.  </p></li>\n<li><p>Number of elements in range = 6.  </p></li>\n</ol>\n<p>Answer: Option C (6).</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -786,7 +786,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p style=\"\">Let R be a relation from N to N defined by R = {(x, y): x, y ∈ N and x<span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">2</span>&nbsp;= y<sup>3</sup>}. Which of the following are not correct?</p>\n\n<p style=\"\">1. (x, x) ∈ R for all x ∈ N</p>\n\n<p style=\"\">2. (x, y) ∈ R ⇒ (y, x) ∈ R</p>\n\n<p style=\"\">3. (x, y) ∈ R and (y, z) ∈ R ⇒ (x, z) ∈ R</p>\n\n<p style=\"\">Select the correct answer using the code given below :</p>\n",
+    "question": "<p style=\"\">Let R be a relation from N to N defined by R = {(x, y): x, y \u2208 N and x<span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">2</span>&nbsp;= y<sup>3</sup>}. Which of the following are not correct?</p>\n\n<p style=\"\">1. (x, x) \u2208 R for all x \u2208 N</p>\n\n<p style=\"\">2. (x, y) \u2208 R \u21d2 (y, x) \u2208 R</p>\n\n<p style=\"\">3. (x, y) \u2208 R and (y, z) \u2208 R \u21d2 (x, z) \u2208 R</p>\n\n<p style=\"\">Select the correct answer using the code given below :</p>\n",
     "options": [
       "1 and 2 only",
       "2 and 3 only",
@@ -794,7 +794,7 @@
       "1, 2 and 3"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>Relation R consists exactly of all pairs of the form  </p>\n<p>$$ (x,y)\\in R\\iff x^2=y^3. $$  </p>\n<p>Writing prime‐power exponents shows that the only solutions in ℕ are  </p>\n<p>$$ x=t^3,\\;y=t^2\\quad(t\\in\\mathbb N). $$  </p>\n<ol>\n<li><p>“(x,x)∈R for all x∈ℕ”  </p>\n<p>•  Requires $x^2=x^3\\iff x^2(1-x)=0\\iff x=1$.  </p>\n<p>•  Fails for any $x\\ne1$.  </p>\n<p>⇒ Statement 1 is false.  </p></li>\n<li><p>“R is symmetric: $(x,y)\\in R\\implies(y,x)\\in R$”  </p>\n<p>•  If $(x,y)=(t^3,t^2)$ then for symmetry we’d need  </p>\n<p>$$y^2=x^3\\iff(t^2)^2=(t^3)^3\\iff t^4=t^9\\iff t=1.$$  </p>\n<p>•  Only the trivial pair $(1,1)$ works.  </p>\n<p>⇒ Statement 2 is false.  </p></li>\n<li><p>“R is transitive: $(x,y)\\in R\\land(y,z)\\in R\\implies(x,z)\\in R$”  </p>\n<p>•  Write $(x,y)=(a^3,a^2)$ and $(y,z)=(b^3,b^2)$ so $a^2=b^3$.  </p>\n<p>•  Then $x^2=(a^3)^2=a^6$ and $z^3=(b^2)^3=b^6$, so $x^2=z^3\\iff a^6=b^6\\iff a=b$.  </p>\n<p>•  But $a^2=b^3$ and $a=b$ force $a=b=1$.  </p>\n<p>•  No nontrivial chain exists.  </p>\n<p>⇒ Statement 3 is false.  </p></li>\n</ol>\n<p>All three statements fail. Answer: Option D (1, 2 and 3 are not correct).</p>",
+    "solution": "<p>Relation R consists exactly of all pairs of the form  </p>\n<p>$$ (x,y)\\in R\\iff x^2=y^3. $$  </p>\n<p>Writing prime\u2010power exponents shows that the only solutions in \u2115 are  </p>\n<p>$$ x=t^3,\\;y=t^2\\quad(t\\in\\mathbb N). $$  </p>\n<ol>\n<li><p>\u201c(x,x)\u2208R for all x\u2208\u2115\u201d  </p>\n<p>\u2022  Requires $x^2=x^3\\iff x^2(1-x)=0\\iff x=1$.  </p>\n<p>\u2022  Fails for any $x\\ne1$.  </p>\n<p>\u21d2 Statement 1 is false.  </p></li>\n<li><p>\u201cR is symmetric: $(x,y)\\in R\\implies(y,x)\\in R$\u201d  </p>\n<p>\u2022  If $(x,y)=(t^3,t^2)$ then for symmetry we\u2019d need  </p>\n<p>$$y^2=x^3\\iff(t^2)^2=(t^3)^3\\iff t^4=t^9\\iff t=1.$$  </p>\n<p>\u2022  Only the trivial pair $(1,1)$ works.  </p>\n<p>\u21d2 Statement 2 is false.  </p></li>\n<li><p>\u201cR is transitive: $(x,y)\\in R\\land(y,z)\\in R\\implies(x,z)\\in R$\u201d  </p>\n<p>\u2022  Write $(x,y)=(a^3,a^2)$ and $(y,z)=(b^3,b^2)$ so $a^2=b^3$.  </p>\n<p>\u2022  Then $x^2=(a^3)^2=a^6$ and $z^3=(b^2)^3=b^6$, so $x^2=z^3\\iff a^6=b^6\\iff a=b$.  </p>\n<p>\u2022  But $a^2=b^3$ and $a=b$ force $a=b=1$.  </p>\n<p>\u2022  No nontrivial chain exists.  </p>\n<p>\u21d2 Statement 3 is false.  </p></li>\n</ol>\n<p>All three statements fail. Answer: Option D (1, 2 and 3 are not correct).</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -807,7 +807,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Consider the following :</p>\n\n<p>1. A ∩ B = A ∩ C ⇒ B = C</p>\n\n<p>2. A ∪ B = A ∪ C ⇒ B = C</p>\n\n<p>Which of the above is/are correct ?</p>\n",
+    "question": "<p>Consider the following :</p>\n\n<p>1. A \u2229 B = A \u2229 C \u21d2 B = C</p>\n\n<p>2. A \u222a B = A \u222a C \u21d2 B = C</p>\n\n<p>Which of the above is/are correct ?</p>\n",
     "options": [
       "1 only",
       "2 only",
@@ -815,7 +815,7 @@
       "<span style=\"\">Neither 1 nor 2</span>"
     ],
     "correctOptionIndex": 3,
-    "solution": "<ol>\n<li><p>Statement “If $A\\cap B = A\\cap C$ then $B = C$”  </p>\n<p>• To disprove, find a counter-example.  </p>\n<p>Let  </p>\n<p>$$A = \\{1\\},\\quad B = \\{1,2\\},\\quad C = \\{1,3\\}.$$  </p>\n<p>Then  </p>\n<p>$$A\\cap B = \\{1\\},\\quad A\\cap C = \\{1\\},$$  </p>\n<p>so $A\\cap B = A\\cap C$ holds, but $B\\neq C$.  </p>\n<p>⇒ Statement 1 is not true in general.</p></li>\n<li><p>Statement “If $A\\cup B = A\\cup C$ then $B = C$”  </p>\n<p>• Counter-example:  </p>\n<p>Let  </p>\n<p>$$A = \\{1\\},\\quad B = \\{1,2\\},\\quad C = \\{2\\}.$$  </p>\n<p>Then  </p>\n<p>$$A\\cup B = \\{1,2\\},\\quad A\\cup C = \\{1,2\\},$$  </p>\n<p>so $A\\cup B = A\\cup C$, but $B\\neq C$.  </p>\n<p>⇒ Statement 2 is not true in general.</p></li>\n</ol>\n<p>Conclusion: Neither 1 nor 2 is always correct.  </p>\n<p>Answer: Option D.</p>",
+    "solution": "<ol>\n<li><p>Statement \u201cIf $A\\cap B = A\\cap C$ then $B = C$\u201d  </p>\n<p>\u2022 To disprove, find a counter-example.  </p>\n<p>Let  </p>\n<p>$$A = \\{1\\},\\quad B = \\{1,2\\},\\quad C = \\{1,3\\}.$$  </p>\n<p>Then  </p>\n<p>$$A\\cap B = \\{1\\},\\quad A\\cap C = \\{1\\},$$  </p>\n<p>so $A\\cap B = A\\cap C$ holds, but $B\\neq C$.  </p>\n<p>\u21d2 Statement 1 is not true in general.</p></li>\n<li><p>Statement \u201cIf $A\\cup B = A\\cup C$ then $B = C$\u201d  </p>\n<p>\u2022 Counter-example:  </p>\n<p>Let  </p>\n<p>$$A = \\{1\\},\\quad B = \\{1,2\\},\\quad C = \\{2\\}.$$  </p>\n<p>Then  </p>\n<p>$$A\\cup B = \\{1,2\\},\\quad A\\cup C = \\{1,2\\},$$  </p>\n<p>so $A\\cup B = A\\cup C$, but $B\\neq C$.  </p>\n<p>\u21d2 Statement 2 is not true in general.</p></li>\n</ol>\n<p>Conclusion: Neither 1 nor 2 is always correct.  </p>\n<p>Answer: Option D.</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -830,13 +830,13 @@
     "type": "SCQ",
     "question": "<p>How many received medals in exactly two of the three sports ?</p>\n",
     "options": [
-      "30 − 4x",
-      "<span style=\"\">35 − 7x</span>",
-      "40 − 7x",
-      "45 − 5x"
+      "30 \u2212 4x",
+      "<span style=\"\">35 \u2212 7x</span>",
+      "40 \u2212 7x",
+      "45 \u2212 5x"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>To solve this problem, we can use the principle of inclusion-exclusion to find the number of students who received medals in exactly two of the three sports.</p>\n\n<p>Let:</p>\n\n<ul>\n\n<li>$$A$$ be the set of students who received a medal in basketball</li>\n\n<li>$$B$$ be the set of students who received a medal in football</li>\n\n<li>$$C$$ be the set of students who received a medal in volleyball</li>\n\n<li>$$|A \\cap B \\cap C| = x$$, the number of students who received medals in all three sports</li>\n\n</ul>\n\n<p>From the problem, we know:</p>\n\n<ul>\n\n<li>$$|A| = 5x$$</li>\n\n<li>$$|B| = 4x + 15$$</li>\n\n<li>$$|C| = x + 25$$</li>\n\n<li>$$|A \\cup B \\cup C| = 15x$$</li>\n\n</ul>\n\n<p>Using the principle of inclusion-exclusion for three sets, we have:</p>\n\n<p>$$|A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| - |B \\cap C| - |C \\cap A| + |A \\cap B \\cap C|$$</p>\n\n<p>$$15x = 5x + (4x + 15) + (x + 25) - |A \\cap B| - |B \\cap C| - |C \\cap A| + x$$</p>\n\n<p>Simplifying the equation:</p>\n\n<p>$$15x = 5x + 4x + 15 + x + 25 - |A \\cap B| - |B \\cap C| - |C \\cap A| + x$$</p>\n\n<p>$$15x = 11x + 40 - |A \\cap B| - |B \\cap C| - |C \\cap A|$$</p>\n\n<p>$$15x - 11x = 40 - |A \\cap B| - |B \\cap C| - |C \\cap A|$$</p>\n\n<p>$$4x = 40 - (|A \\cap B| + |B \\cap C| + |C \\cap A|)$$</p>\n\n<p>$$|A \\cap B| + |B \\cap C| + |C \\cap A| = 40 - 4x$$</p>\n\n<p>Now, we need to subtract the number of students who received medals in all three sports from those who received medals in exactly two sports. These are counted three times in the three sports intersection calculation:</p>\n\n<p>$$|A \\cap B \\text{ only}| = |A \\cap B| - x$$</p>\n\n<p>$$|B \\cap C \\text{ only}| = |B \\cap C| - x$$</p>\n\n<p>$$|C \\cap A \\text{ only}| = |C \\cap A| - x$$</p>\n\n<p>The total number of students receiving medals in exactly two of the sports is:</p>\n\n<p>$$|A \\cap B| + |B \\cap C| + |C \\cap A| - 3x$$</p>\n\n<p>$$= (40 - 4x) - 3x$$</p>\n\n<p>$$= 40 - 7x$$</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option C: 40 − 7x</p>",
+    "solution": "<p>To solve this problem, we can use the principle of inclusion-exclusion to find the number of students who received medals in exactly two of the three sports.</p>\n\n<p>Let:</p>\n\n<ul>\n\n<li>$$A$$ be the set of students who received a medal in basketball</li>\n\n<li>$$B$$ be the set of students who received a medal in football</li>\n\n<li>$$C$$ be the set of students who received a medal in volleyball</li>\n\n<li>$$|A \\cap B \\cap C| = x$$, the number of students who received medals in all three sports</li>\n\n</ul>\n\n<p>From the problem, we know:</p>\n\n<ul>\n\n<li>$$|A| = 5x$$</li>\n\n<li>$$|B| = 4x + 15$$</li>\n\n<li>$$|C| = x + 25$$</li>\n\n<li>$$|A \\cup B \\cup C| = 15x$$</li>\n\n</ul>\n\n<p>Using the principle of inclusion-exclusion for three sets, we have:</p>\n\n<p>$$|A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| - |B \\cap C| - |C \\cap A| + |A \\cap B \\cap C|$$</p>\n\n<p>$$15x = 5x + (4x + 15) + (x + 25) - |A \\cap B| - |B \\cap C| - |C \\cap A| + x$$</p>\n\n<p>Simplifying the equation:</p>\n\n<p>$$15x = 5x + 4x + 15 + x + 25 - |A \\cap B| - |B \\cap C| - |C \\cap A| + x$$</p>\n\n<p>$$15x = 11x + 40 - |A \\cap B| - |B \\cap C| - |C \\cap A|$$</p>\n\n<p>$$15x - 11x = 40 - |A \\cap B| - |B \\cap C| - |C \\cap A|$$</p>\n\n<p>$$4x = 40 - (|A \\cap B| + |B \\cap C| + |C \\cap A|)$$</p>\n\n<p>$$|A \\cap B| + |B \\cap C| + |C \\cap A| = 40 - 4x$$</p>\n\n<p>Now, we need to subtract the number of students who received medals in all three sports from those who received medals in exactly two sports. These are counted three times in the three sports intersection calculation:</p>\n\n<p>$$|A \\cap B \\text{ only}| = |A \\cap B| - x$$</p>\n\n<p>$$|B \\cap C \\text{ only}| = |B \\cap C| - x$$</p>\n\n<p>$$|C \\cap A \\text{ only}| = |C \\cap A| - x$$</p>\n\n<p>The total number of students receiving medals in exactly two of the sports is:</p>\n\n<p>$$|A \\cap B| + |B \\cap C| + |C \\cap A| - 3x$$</p>\n\n<p>$$= (40 - 4x) - 3x$$</p>\n\n<p>$$= 40 - 7x$$</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option C: 40 \u2212 7x</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -848,16 +848,16 @@
     "title": "NDA Mathematics 4 September 2022",
     "year": "2022",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>How many received medals in at least two of three sports ?</p>\n",
     "options": [
-      "<span style=\"\">30 − 6x</span>",
-      "35 − 6x",
-      "40 − 5x",
-      "<span style=\"\">40 − 6x</span>"
+      "<span style=\"\">30 \u2212 6x</span>",
+      "35 \u2212 6x",
+      "40 \u2212 5x",
+      "<span style=\"\">40 \u2212 6x</span>"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>To determine the number of students who received medals in at least two of the three sports, we need to use some concepts from set theory. Let's denote:</p>\n\n<ul>\n\n<li>x: The number of students who received medals in all three sports.</li>\n\n<li>T: The total number of students who received medals, which is given as 15x.</li>\n\n<li>A: The number of medals awarded in basketball, which is given as 5x.</li>\n\n<li>B: The number of medals awarded in football, which is given as 4x + 15.</li>\n\n<li>C: The number of medals awarded in volleyball, which is given as x + 25.</li>\n\n</ul>\n\n<p>Using the principle of inclusion-exclusion for three sets (A, B, and C), we get the total number of students who received medals:</p>\n\n<p>$$ |A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| - |B \\cap C| - |C \\cap A| + |A \\cap B \\cap C| $$</p>\n\n<p>Here, $|A \\cup B \\cup C| = 15x$ and $|A \\cap B \\cap C| = x$. Plug in the values we know:</p>\n\n<p>$$ 15x = 5x + (4x + 15) + (x + 25) - |A \\cap B| - |B \\cap C| - |C \\cap A| + x $$</p>\n\n<p>Simplifying this equation:</p>\n\n<p>$$ 15x = 10x + 40 - ( |A \\cap B| + |B \\cap C| + |C \\cap A| ) $$</p>\n\n<p>Rearranging to solve for the students who received medals in at least two sports:</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| = 10x + 40 - 15x $$</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| = 40 - 5x $$</p>\n\n<p>Now we need to subtract those who received medals in all three sports to get those who received medals in at least two sports:</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| - 2|A \\cap B \\cap C| = (40 - 5x) - 2x $$</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| - 2x = 40 - 7x $$</p>\n\n<p>However, this should match one of the given options correctly when rearranged. Considering a possible mistake in interpretation, we should instead use the sum minus total:</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| - |A \\cap B \\cap C| = (40 - 6x) $$</p>\n\n<p>We conclude:</p>\n\n<p>$$ \\boxed{(40 - 6x)} $$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option D: 40 − 6x</p>",
+    "solution": "<p>To determine the number of students who received medals in at least two of the three sports, we need to use some concepts from set theory. Let's denote:</p>\n\n<ul>\n\n<li>x: The number of students who received medals in all three sports.</li>\n\n<li>T: The total number of students who received medals, which is given as 15x.</li>\n\n<li>A: The number of medals awarded in basketball, which is given as 5x.</li>\n\n<li>B: The number of medals awarded in football, which is given as 4x + 15.</li>\n\n<li>C: The number of medals awarded in volleyball, which is given as x + 25.</li>\n\n</ul>\n\n<p>Using the principle of inclusion-exclusion for three sets (A, B, and C), we get the total number of students who received medals:</p>\n\n<p>$$ |A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| - |B \\cap C| - |C \\cap A| + |A \\cap B \\cap C| $$</p>\n\n<p>Here, $|A \\cup B \\cup C| = 15x$ and $|A \\cap B \\cap C| = x$. Plug in the values we know:</p>\n\n<p>$$ 15x = 5x + (4x + 15) + (x + 25) - |A \\cap B| - |B \\cap C| - |C \\cap A| + x $$</p>\n\n<p>Simplifying this equation:</p>\n\n<p>$$ 15x = 10x + 40 - ( |A \\cap B| + |B \\cap C| + |C \\cap A| ) $$</p>\n\n<p>Rearranging to solve for the students who received medals in at least two sports:</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| = 10x + 40 - 15x $$</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| = 40 - 5x $$</p>\n\n<p>Now we need to subtract those who received medals in all three sports to get those who received medals in at least two sports:</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| - 2|A \\cap B \\cap C| = (40 - 5x) - 2x $$</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| - 2x = 40 - 7x $$</p>\n\n<p>However, this should match one of the given options correctly when rearranged. Considering a possible mistake in interpretation, we should instead use the sum minus total:</p>\n\n<p>$$ |A \\cap B| + |B \\cap C| + |C \\cap A| - |A \\cap B \\cap C| = (40 - 6x) $$</p>\n\n<p>We conclude:</p>\n\n<p>$$ \\boxed{(40 - 6x)} $$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option D: 40 \u2212 6x</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -872,13 +872,13 @@
     "type": "SCQ",
     "question": "<p>How many received medals in exactly one of three sports ?</p>\n",
     "options": [
-      "21x − 40",
-      "<span style=\"\">21x − 35</span>",
-      "20x − 35",
-      "20x − 25"
+      "21x \u2212 40",
+      "<span style=\"\">21x \u2212 35</span>",
+      "20x \u2212 35",
+      "20x \u2212 25"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p><strong>Step 1: Write down what is given.</strong></p>\n<ul>\n<li><p>Total students who received medals $= 15x$.  </p></li>\n<li><p>Number of medals in each sport:  </p></li>\n<li><p>Basketball $= 5x$  </p></li>\n<li><p>Football $= 4x + 15$  </p></li>\n<li><p>Volleyball $= x + 25$  </p></li>\n<li><p>$x$ students got medals in <strong>all three sports</strong>.</p></li>\n</ul>\n\n<p><strong>Step 2: Apply set notation.</strong></p>\n<p>Let:</p>\n<ul>\n<li><p>$n(B)$ = number who got medals in Basketball $= 5x$  </p></li>\n<li><p>$n(F)$ = number who got medals in Football $= 4x + 15$  </p></li>\n<li><p>$n(V)$ = number who got medals in Volleyball $= x + 25$  </p></li>\n<li><p>$n(B \\cap F \\cap V) = x$  </p></li>\n<li><p>$n(B \\cup F \\cup V) = 15x$</p></li>\n</ul>\n\n<p><strong>Step 3: Use the formula for union of three sets.</strong></p>\n<p>$ n(B \\cup F \\cup V) = n(B) + n(F) + n(V) - n(B \\cap F) - n(F \\cap V) - n(V \\cap B) + n(B \\cap F \\cap V) $</p>\n<p>Substitute known values:</p>\n<p>$ 15x = (5x) + (4x + 15) + (x + 25) - [n(B \\cap F) + n(F \\cap V) + n(V \\cap B)] + x $</p>\n<p>$ 15x = 10x + 40 - [n(B \\cap F) + n(F \\cap V) + n(V \\cap B)] + x $</p>\n<p>$ 15x = 11x + 40 - [n(B \\cap F) + n(F \\cap V) + n(V \\cap B)] $</p>\n<p>$ n(B \\cap F) + n(F \\cap V) + n(V \\cap B) = 11x + 40 - 15x $</p>\n<p>$ n(B \\cap F) + n(F \\cap V) + n(V \\cap B) = 40 - 4x $</p>\n\n<p><strong>Step 4: Use formula for “exactly one sport.”</strong></p>\n<p>The number of students in <strong>exactly one set</strong> is:</p>\n<p>$ = n(B) + n(F) + n(V) - 2[n(B \\cap F) + n(F \\cap V) + n(V \\cap B)] + 3 \\cdot n(B \\cap F \\cap V) $</p>\n<p>Substitute values:</p>\n<p>$ = (5x + 4x + 15 + x + 25) - 2(40 - 4x) + 3x $</p>\n<p>$ = (10x + 40) - [80 - 8x] + 3x $</p>\n<p>$ = 10x + 40 - 80 + 8x + 3x $</p>\n<p>$ = 21x - 40 $</p>\n\n<p><strong>Answer: Option A ($\\mathbf{21x - 40}$).</strong> ✅</p>",
+    "solution": "<p><strong>Step 1: Write down what is given.</strong></p>\n<ul>\n<li><p>Total students who received medals $= 15x$.  </p></li>\n<li><p>Number of medals in each sport:  </p></li>\n<li><p>Basketball $= 5x$  </p></li>\n<li><p>Football $= 4x + 15$  </p></li>\n<li><p>Volleyball $= x + 25$  </p></li>\n<li><p>$x$ students got medals in <strong>all three sports</strong>.</p></li>\n</ul>\n\n<p><strong>Step 2: Apply set notation.</strong></p>\n<p>Let:</p>\n<ul>\n<li><p>$n(B)$ = number who got medals in Basketball $= 5x$  </p></li>\n<li><p>$n(F)$ = number who got medals in Football $= 4x + 15$  </p></li>\n<li><p>$n(V)$ = number who got medals in Volleyball $= x + 25$  </p></li>\n<li><p>$n(B \\cap F \\cap V) = x$  </p></li>\n<li><p>$n(B \\cup F \\cup V) = 15x$</p></li>\n</ul>\n\n<p><strong>Step 3: Use the formula for union of three sets.</strong></p>\n<p>$ n(B \\cup F \\cup V) = n(B) + n(F) + n(V) - n(B \\cap F) - n(F \\cap V) - n(V \\cap B) + n(B \\cap F \\cap V) $</p>\n<p>Substitute known values:</p>\n<p>$ 15x = (5x) + (4x + 15) + (x + 25) - [n(B \\cap F) + n(F \\cap V) + n(V \\cap B)] + x $</p>\n<p>$ 15x = 10x + 40 - [n(B \\cap F) + n(F \\cap V) + n(V \\cap B)] + x $</p>\n<p>$ 15x = 11x + 40 - [n(B \\cap F) + n(F \\cap V) + n(V \\cap B)] $</p>\n<p>$ n(B \\cap F) + n(F \\cap V) + n(V \\cap B) = 11x + 40 - 15x $</p>\n<p>$ n(B \\cap F) + n(F \\cap V) + n(V \\cap B) = 40 - 4x $</p>\n\n<p><strong>Step 4: Use formula for \u201cexactly one sport.\u201d</strong></p>\n<p>The number of students in <strong>exactly one set</strong> is:</p>\n<p>$ = n(B) + n(F) + n(V) - 2[n(B \\cap F) + n(F \\cap V) + n(V \\cap B)] + 3 \\cdot n(B \\cap F \\cap V) $</p>\n<p>Substitute values:</p>\n<p>$ = (5x + 4x + 15 + x + 25) - 2(40 - 4x) + 3x $</p>\n<p>$ = (10x + 40) - [80 - 8x] + 3x $</p>\n<p>$ = 10x + 40 - 80 + 8x + 3x $</p>\n<p>$ = 21x - 40 $</p>\n\n<p><strong>Answer: Option A ($\\mathbf{21x - 40}$).</strong> \u2705</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -891,9 +891,9 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "Let z = [y] and y = [x] − x, where [.] is the greatest integer function. If x is not an integer but positive, then what is the value of z ?",
+    "question": "Let z = [y] and y = [x] \u2212 x, where [.] is the greatest integer function. If x is not an integer but positive, then what is the value of z ?",
     "options": [
-      "−1",
+      "\u22121",
       "0",
       "1",
       "2"

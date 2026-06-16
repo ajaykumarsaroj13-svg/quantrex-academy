@@ -85,7 +85,7 @@
   {
     "id": "mauvk0sj",
     "questionNumber": 42,
-    "questionText": "<p>Let <b>ℝ</b> denote the set of all real numbers. Let <b>f: ℝ → ℝ</b> be a function such that <b>f(x) &gt; 0</b> for all <b>x ∈ ℝ</b>, and <b>f(x+y) = f(x)f(y)</b> for all <b>x, y ∈ ℝ</b>.</p>\n<p>Let the real numbers <b>a₁, a₂, ..., a₅₀</b> be in an arithmetic progression. If <b>f(a₃₁) = 64f(a₂₅)</b>, and</p>\n<p>$ \\sum\\limits_{i=1}^{50} f(a_i) = 3(2^{25}+1), $</p>\n<p>then the value of</p>\n<p>$ \\sum\\limits_{i=6}^{30} f(a_i) $</p>\n<p>is ________________.</p>",
+    "questionText": "<p>Let <b>\u211d</b> denote the set of all real numbers. Let <b>f: \u211d \u2192 \u211d</b> be a function such that <b>f(x) &gt; 0</b> for all <b>x \u2208 \u211d</b>, and <b>f(x+y) = f(x)f(y)</b> for all <b>x, y \u2208 \u211d</b>.</p>\n<p>Let the real numbers <b>a\u2081, a\u2082, ..., a\u2085\u2080</b> be in an arithmetic progression. If <b>f(a\u2083\u2081) = 64f(a\u2082\u2085)</b>, and</p>\n<p>$ \\sum\\limits_{i=1}^{50} f(a_i) = 3(2^{25}+1), $</p>\n<p>then the value of</p>\n<p>$ \\sum\\limits_{i=6}^{30} f(a_i) $</p>\n<p>is ________________.</p>",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -230,7 +230,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -239,7 +239,7 @@
     "solution": "$\\begin{aligned} \\text { Given } f:[0,1] &amp; \\rightarrow[0,1] \\\\\\\\ f(x) &amp; =\\frac{x^3}{3}-x^2+\\frac{5}{9} x+\\frac{17}{36} \\\\\\\\ f^{\\prime}(x) &amp; =\\frac{3 x^2}{3}-2 x+\\frac{5}{9}\\end{aligned}$\n<br><br>$\\begin{aligned} &amp; \\quad f^{\\prime}(x)=0 \\\\\\\\ &amp; 9 x^2-18 x+5=0 \\\\\\\\ &amp; \\Rightarrow 9 x^2-15 x-3 x+5=0 \\\\\\\\ &amp; \\Rightarrow 3 x(3 x-5)-1(3 x-5)=0 \\\\\\\\ &amp; \\Rightarrow(3 x-5)(3 x-1)=0 \\\\\\\\ &amp; \\Rightarrow x=\\frac{1}{3} \\text { or } \\frac{5}{3} \\\\\\\\ &amp; f^{\\prime \\prime}(x)=2 x-2 \\\\\\\\ &amp; f^{\\prime \\prime}\\left(\\frac{1}{3}\\right)=\\frac{2}{3}-2&lt;0 \\text { point of maxima }\\end{aligned}$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lrv25ety/8e2587a7-f07c-48d9-a4d6-0a07f84e84e8/2a14b850-bc84-11ee-ade3-e55b42dd57e0/file-6y3zli1lrv25etz.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lrv25ety/8e2587a7-f07c-48d9-a4d6-0a07f84e84e8/2a14b850-bc84-11ee-ade3-e55b42dd57e0/file-6y3zli1lrv25etz.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2023 Paper 1 Online Mathematics - Functions Question 8 English Explanation\">\n<br>$\\begin{aligned} \\text { Area }_{\\text {red }} &amp; =\\int_0^1 f(x) d x \\\\\\\\ &amp; =\\left[\\frac{x^4}{12}-\\frac{x^3}{3}+\\frac{5 x^2}{18}+\\frac{17 x}{36}\\right]_0^1 \\\\\\\\ &amp; =\\frac{1}{12}-\\frac{1}{3}+\\frac{5}{18}+\\frac{17}{36} \\\\\\\\ &amp; =\\frac{3-12+10+17}{36} \\\\\\\\ &amp; =\\frac{18}{36}=\\frac{1}{2}=0.5 \\\\\\\\ \\therefore (\\text { Area })_{\\text {green }} &amp; =1-\\frac{1}{2}=0.5\\end{aligned}$\n<br><br>(A) $1-h=h-\\frac{1}{2} \\Rightarrow h=\\frac{3}{4}, \\frac{3}{4}&gt;\\frac{2}{3}$ option (A) is incorrect\n<br><br>(B) $h=\\frac{1}{2}-h \\Rightarrow h=\\frac{1}{4} \\Rightarrow$ option (B) is correct.\n<br><br>(C) $\\int\\limits_0^1 f(x) d x=\\frac{1}{2}, \\int\\limits_0^1 \\frac{1}{2} d x=\\frac{1}{2} \\Rightarrow \\int\\limits_0^1\\left(f(x)-\\frac{1}{2}\\right) d x=0$\n<br><br>$\\Rightarrow h=\\frac{1}{2} \\Rightarrow$ option (C) is correct.\n<br><br>(D) $\\because$ Option (C) is correct $\\Rightarrow$ option (D) is also correct.",
     "section": "Sec 3",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1lgxszp3h",
@@ -774,7 +774,7 @@
     "subject": "Mathematics",
     "topic": "functional-equations",
     "difficulty": "medium",
-    "solution": "Given f(1) = 2 ; \n<br><br>f(x + y) = f(x) + f(y)\n\n\n<br><br>When x = y = 1 $$ \\Rightarrow $$\nf(2) = 2 + 2 = 4\n\n<br><br>When x = 2, y = 1 $$ \\Rightarrow $$ f(3) = 4 + 2 = 6\n<br><br> g(n) = $$\\sum\\limits_{k = 1}^{\\left( {n - 1} \\right)} {f\\left( k \\right)} $$\n<br><br>= f(1) + f(2) +.........+ f(n - 1)\n<br><br>= 2 + 4 + 6 + ......+ 2(n - 1)\n<br><br>= 2 $$ \\times $$ $$\\frac{\\left( n-1\\right)  \\left( n\\right)  }{2} $$\n<br><br>= n<sup>2</sup> - n\n<br><br> Given g(n) = 20\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup>– n = 20\n\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> – n – 20 = 0\n\n<br><br>$$ \\Rightarrow $$ n = 5",
+    "solution": "Given f(1) = 2 ; \n<br><br>f(x + y) = f(x) + f(y)\n\n\n<br><br>When x = y = 1 $$ \\Rightarrow $$\nf(2) = 2 + 2 = 4\n\n<br><br>When x = 2, y = 1 $$ \\Rightarrow $$ f(3) = 4 + 2 = 6\n<br><br> g(n) = $$\\sum\\limits_{k = 1}^{\\left( {n - 1} \\right)} {f\\left( k \\right)} $$\n<br><br>= f(1) + f(2) +.........+ f(n - 1)\n<br><br>= 2 + 4 + 6 + ......+ 2(n - 1)\n<br><br>= 2 $$ \\times $$ $$\\frac{\\left( n-1\\right)  \\left( n\\right)  }{2} $$\n<br><br>= n<sup>2</sup> - n\n<br><br> Given g(n) = 20\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup>\u2013 n = 20\n\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> \u2013 n \u2013 20 = 0\n\n<br><br>$$ \\Rightarrow $$ n = 5",
     "section": "A",
     "type": "SCQ"
   },
@@ -791,7 +791,7 @@
     "subject": "Mathematics",
     "topic": "functional-equations",
     "difficulty": "medium",
-    "solution": "f(x + y) = f(x) f(y)\n<br><br>put x = y = 1 \n<br>$$ \\therefore $$ f(2) = (ƒ(1))<sup>2</sup>\n = 3<sup>2</sup>\n<br><br>put x = 2, y = 1 \n<br>$$ \\therefore $$ f(3) = (ƒ(1))<sup>3</sup>\n = 3<sup>3</sup>\n<br><br>Similarly f(x) = 3<sup>x</sup>\n<br>$$ \\Rightarrow $$ f(i) = 3<sup>i</sup>\n<br><br>Given, $$\\sum\\limits_{i = 1}^n {f(i)}  = 363$$\n<br><br>$$ \\Rightarrow $$ 3 + 3<sup>2</sup>\n + 3<sup>3</sup> +.... + 3<sup>n</sup>\n = 363\n<br><br>$$ \\Rightarrow $$ $${{3\\left( {{3^n} - 1} \\right)} \\over {3 - 1}}$$ = 363\n<br><br>$$ \\Rightarrow $$ 3<sup>n</sup> - 1 = $${{363 \\times 2} \\over 3}$$ = 242\n<br><br>$$ \\Rightarrow $$ 3<sup>n</sup> = 243 = 3<sup>5</sup>\n<br><br>$$ \\Rightarrow $$ n = 5",
+    "solution": "f(x + y) = f(x) f(y)\n<br><br>put x = y = 1 \n<br>$$ \\therefore $$ f(2) = (\u0192(1))<sup>2</sup>\n = 3<sup>2</sup>\n<br><br>put x = 2, y = 1 \n<br>$$ \\therefore $$ f(3) = (\u0192(1))<sup>3</sup>\n = 3<sup>3</sup>\n<br><br>Similarly f(x) = 3<sup>x</sup>\n<br>$$ \\Rightarrow $$ f(i) = 3<sup>i</sup>\n<br><br>Given, $$\\sum\\limits_{i = 1}^n {f(i)}  = 363$$\n<br><br>$$ \\Rightarrow $$ 3 + 3<sup>2</sup>\n + 3<sup>3</sup> +.... + 3<sup>n</sup>\n = 363\n<br><br>$$ \\Rightarrow $$ $${{3\\left( {{3^n} - 1} \\right)} \\over {3 - 1}}$$ = 363\n<br><br>$$ \\Rightarrow $$ 3<sup>n</sup> - 1 = $${{363 \\times 2} \\over 3}$$ = 242\n<br><br>$$ \\Rightarrow $$ 3<sup>n</sup> = 243 = 3<sup>5</sup>\n<br><br>$$ \\Rightarrow $$ n = 5",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -820,12 +820,12 @@
   {
     "id": "kmmWFv4B3ZGx0zoZFq7k9k2k5khqkpe",
     "questionNumber": 59,
-    "questionText": "Let a – 2b + c = 1.<br><br>\nIf $$f(x)=\\left| {\\matrix{\n   {x + a} &amp; {x + 2} &amp; {x + 1}  \\cr \n   {x + b} &amp; {x + 3} &amp; {x + 2}  \\cr \n   {x + c} &amp; {x + 4} &amp; {x + 3}  \\cr \n\n } } \\right|$$, then:",
+    "questionText": "Let a \u2013 2b + c = 1.<br><br>\nIf $$f(x)=\\left| {\\matrix{\n   {x + a} &amp; {x + 2} &amp; {x + 1}  \\cr \n   {x + b} &amp; {x + 3} &amp; {x + 2}  \\cr \n   {x + c} &amp; {x + 4} &amp; {x + 3}  \\cr \n\n } } \\right|$$, then:",
     "options": [
-      "ƒ(50) = 1",
-      "ƒ(–50) = –1",
-      "ƒ(50) = –501",
-      "ƒ(–50) = 501"
+      "\u0192(50) = 1",
+      "\u0192(\u201350) = \u20131",
+      "\u0192(50) = \u2013501",
+      "\u0192(\u201350) = 501"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -835,7 +835,7 @@
     "subject": "Mathematics",
     "topic": "functional-equations",
     "difficulty": "medium",
-    "solution": "R<sub>1</sub> $$ \\to $$ R<sub>1</sub> + R<sub>3</sub> – 2R<sub>2</sub>\n<br><br>f(x) = $$\\left| {\\matrix{\n   {a + c - 2b} &amp; 0 &amp; 0  \\cr \n   {x + b} &amp; {x + 3} &amp; {x + 2}  \\cr \n   {x + c} &amp; {x + 4} &amp; {x + 3}  \\cr \n\n } } \\right|$$\n<br><br>= (a + c – 2b) ((x + 3)<sup>2</sup> – (x + 2)(x + 4))\n<br><br>= x<sup>2</sup> + 6x + 9 – x<sup>2</sup> – 6x – 8 = 1\n<br><br>$$ \\therefore $$ f(x) = 1\n<br><br>$$ \\Rightarrow $$  f(50) = 1",
+    "solution": "R<sub>1</sub> $$ \\to $$ R<sub>1</sub> + R<sub>3</sub> \u2013 2R<sub>2</sub>\n<br><br>f(x) = $$\\left| {\\matrix{\n   {a + c - 2b} &amp; 0 &amp; 0  \\cr \n   {x + b} &amp; {x + 3} &amp; {x + 2}  \\cr \n   {x + c} &amp; {x + 4} &amp; {x + 3}  \\cr \n\n } } \\right|$$\n<br><br>= (a + c \u2013 2b) ((x + 3)<sup>2</sup> \u2013 (x + 2)(x + 4))\n<br><br>= x<sup>2</sup> + 6x + 9 \u2013 x<sup>2</sup> \u2013 6x \u2013 8 = 1\n<br><br>$$ \\therefore $$ f(x) = 1\n<br><br>$$ \\Rightarrow $$  f(50) = 1",
     "section": "A",
     "type": "SCQ"
   },
@@ -886,7 +886,7 @@
   {
     "id": "vZDInSndsBCwo3mCTX18hoxe66ijvwp4erx",
     "questionNumber": 73,
-    "questionText": "Let $$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$ where the function\nƒ satisfies \n<br>ƒ(x + y) = ƒ(x)ƒ(y) for all natural\nnumbers x, y and ƒ(1) = 2. then the natural\nnumber 'a' is",
+    "questionText": "Let $$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$ where the function\n\u0192 satisfies \n<br>\u0192(x + y) = \u0192(x)\u0192(y) for all natural\nnumbers x, y and \u0192(1) = 2. then the natural\nnumber 'a' is",
     "options": [
       "2",
       "16",
@@ -901,7 +901,7 @@
     "subject": "Mathematics",
     "topic": "functional-equations",
     "difficulty": "medium",
-    "solution": "Given ƒ(1) = 2\n<br><br> and ƒ(x + y) = ƒ(x)ƒ(y)\n<br><br>When x = 1 and y = 1 then,\n<br><br>ƒ(1 + 1) = ƒ(1)ƒ(1)\n<br><br>$$ \\Rightarrow $$ f(2) = (f(1))<sup>2</sup> = 2<sup>2</sup>\n<br><br>Also when x = 2 and y = 1 then,\n<br><br>ƒ(2 + 1) = ƒ(2)ƒ(1)\n<br><br>$$ \\Rightarrow $$ f(3) = 2<sup>3</sup>\n<br><br>$$ \\therefore $$ Similarly f(4) = 2<sup>4</sup>\n<br>.\n<br>.\n<br>.\n<br>.\n<br><br>f(x) = 2<sup>x</sup>\n<br><br>$$ \\therefore $$ f(a + k) = 2<sup>a + k</sup>\n<br><br>Now given,\n<br><br>$$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$\n<br><br>$$ \\Rightarrow $$ $$\\sum\\limits_{k = 1}^{10} {{2^{a + k}}} $$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^{a + 1}} + {2^{a + 2}} + .... + {2^{a + 10}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a}\\left[ {2 + {2^2} + .... + {2^{10}}} \\right]$$ =  $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} \\times {{2\\left( {{2^{10}} + 1} \\right)} \\over {2 - 1}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} = 8$$\n<br><br>$$ \\Rightarrow $$ $$a$$ = 3",
+    "solution": "Given \u0192(1) = 2\n<br><br> and \u0192(x + y) = \u0192(x)\u0192(y)\n<br><br>When x = 1 and y = 1 then,\n<br><br>\u0192(1 + 1) = \u0192(1)\u0192(1)\n<br><br>$$ \\Rightarrow $$ f(2) = (f(1))<sup>2</sup> = 2<sup>2</sup>\n<br><br>Also when x = 2 and y = 1 then,\n<br><br>\u0192(2 + 1) = \u0192(2)\u0192(1)\n<br><br>$$ \\Rightarrow $$ f(3) = 2<sup>3</sup>\n<br><br>$$ \\therefore $$ Similarly f(4) = 2<sup>4</sup>\n<br>.\n<br>.\n<br>.\n<br>.\n<br><br>f(x) = 2<sup>x</sup>\n<br><br>$$ \\therefore $$ f(a + k) = 2<sup>a + k</sup>\n<br><br>Now given,\n<br><br>$$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$\n<br><br>$$ \\Rightarrow $$ $$\\sum\\limits_{k = 1}^{10} {{2^{a + k}}} $$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^{a + 1}} + {2^{a + 2}} + .... + {2^{a + 10}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a}\\left[ {2 + {2^2} + .... + {2^{10}}} \\right]$$ =  $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} \\times {{2\\left( {{2^{10}} + 1} \\right)} \\over {2 - 1}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} = 8$$\n<br><br>$$ \\Rightarrow $$ $$a$$ = 3",
     "section": "A",
     "type": "SCQ"
   },
@@ -961,7 +961,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -970,7 +970,7 @@
     "solution": "Suppose f(x) is maximum at c<sub>1</sub> and g(x) is maximum at c<sub>2</sub>. When f(x) is maximum g(x) may or may not be maximum.<br><br> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kyamujkg/e90a5b07-0eb6-4233-9ca0-480b4cdee1d4/5fecd1f0-7326-11ec-8f4d-d3aaef3fbc03/file-1kyamujkh.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kyamujkg/e90a5b07-0eb6-4233-9ca0-480b4cdee1d4/5fecd1f0-7326-11ec-8f4d-d3aaef3fbc03/file-1kyamujkh.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2014 Paper 1 Offline Mathematics - Functions Question 21 English Explanation 1\"> <br>Therefore, in the function h(x) = f(x) $$-$$ g(x), we get<br><br>$$h({c_1}) = f({c_1}) - g({c_1}) \\ge 0$$ and $$h({c_2}) = f({c_2}) - g({c_2}) \\ge 0$$.<br><br>Therefore, h(x) = 0 for some c $$\\in$$ [0, 1].<br><br> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kyamwdpa/0bf8a3b9-cc66-4ef8-a384-e2a1b52ca29c/930347e0-7326-11ec-8f4d-d3aaef3fbc03/file-1kyamwdpb.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kyamwdpa/0bf8a3b9-cc66-4ef8-a384-e2a1b52ca29c/930347e0-7326-11ec-8f4d-d3aaef3fbc03/file-1kyamwdpb.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2014 Paper 1 Offline Mathematics - Functions Question 21 English Explanation 2\"> <br>Therefore, $$h(c) = 0 \\Rightarrow f(c) - g(c) = 0$$.<br><br>Therefore, $$f(c) = g(c)$$.<br><br>Option (a) $$ \\Rightarrow {f^2}(c) - {g^2}(c) + 3[f(c) - g(c)] = 0$$ which is true from Eq. (i).<br><br>Option (d) $$ \\Rightarrow {f^2}(c) - {g^2}(c) = 0$$ which is true from Eq. (i)<br><br>Now, if we take <br><br>f(x) = 1 and g(x) = 1, $$\\forall$$x $$\\in$$[0, 1]<br><br>Option (b) and (c) does not hold. Hence, option (a) and (d) are correct.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1l24x6hjc",

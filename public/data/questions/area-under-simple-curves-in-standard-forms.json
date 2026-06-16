@@ -118,7 +118,7 @@
     "subject": "Mathematics",
     "topic": "area-under-simple-curves-in-standard-forms",
     "difficulty": "medium",
-    "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kx8fo5zl/67cde486-7f94-4db0-8620-e1b02adce76d/85ffa500-5e24-11ec-a7aa-0b74b5443f09/file-1kx8fo5zm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kx8fo5zl/67cde486-7f94-4db0-8620-e1b02adce76d/85ffa500-5e24-11ec-a7aa-0b74b5443f09/file-1kx8fo5zm.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2021 Paper 1 Online Mathematics - Application of Integration Question 18 English Explanation\"><br><br>Required area = Shaded region<br><br>On solving x + y = 2 and x = 3y, we get<br><br>$$A \\equiv \\left( {{3 \\over 2},{1 \\over 2}} \\right)$$\n<br><br><p>On solving y = 0 and x + y = 2, we get</p>\n<p>B ≡ (2, 0)</p>\n<p>On solving x = $${9 \\over 4}$$ and x = 3y, we get</p>\n<p>D ≡ $$\\left( {{9 \\over 4},{3 \\over 4}} \\right)$$</p>\n<p>and C ≡ $$\\left( {{9 \\over 4},0} \\right)$$</p>\n<p>Required area = Area of ∆OCD −  Area of ∆OBA</p>\n<p>= $${1 \\over 2} \\times \\left( {{9 \\over 4} - 0} \\right) \\times {3 \\over 4} - {1 \\over 2} \\times \\left( {2 - 0} \\right) \\times {1 \\over 2}$$</p>\n<p>= $${{27} \\over {32}} - {1 \\over 2}$$</p>\n<p>= $${{11} \\over {32}}$$</p>",
+    "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kx8fo5zl/67cde486-7f94-4db0-8620-e1b02adce76d/85ffa500-5e24-11ec-a7aa-0b74b5443f09/file-1kx8fo5zm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kx8fo5zl/67cde486-7f94-4db0-8620-e1b02adce76d/85ffa500-5e24-11ec-a7aa-0b74b5443f09/file-1kx8fo5zm.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Advanced 2021 Paper 1 Online Mathematics - Application of Integration Question 18 English Explanation\"><br><br>Required area = Shaded region<br><br>On solving x + y = 2 and x = 3y, we get<br><br>$$A \\equiv \\left( {{3 \\over 2},{1 \\over 2}} \\right)$$\n<br><br><p>On solving y = 0 and x + y = 2, we get</p>\n<p>B \u2261 (2, 0)</p>\n<p>On solving x = $${9 \\over 4}$$ and x = 3y, we get</p>\n<p>D \u2261 $$\\left( {{9 \\over 4},{3 \\over 4}} \\right)$$</p>\n<p>and C \u2261 $$\\left( {{9 \\over 4},0} \\right)$$</p>\n<p>Required area = Area of \u2206OCD \u2212  Area of \u2206OBA</p>\n<p>= $${1 \\over 2} \\times \\left( {{9 \\over 4} - 0} \\right) \\times {3 \\over 4} - {1 \\over 2} \\times \\left( {2 - 0} \\right) \\times {1 \\over 2}$$</p>\n<p>= $${{27} \\over {32}} - {1 \\over 2}$$</p>\n<p>= $${{11} \\over {32}}$$</p>",
     "section": "Sec 1",
     "instruction": "",
     "type": "SCQ"
@@ -135,7 +135,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -144,7 +144,7 @@
     "solution": "Given, $${{dy} \\over {dx}} + \\alpha y = x\\,.\\,{e^{\\beta x}}$$ which is a linear differential equation.<br/><br/>Integrating factor $$(IF) = {e^{\\int {\\alpha dx} }} = {e^{\\alpha x}}$$<br/><br/>So, the solution is $$y \\times {e^{\\alpha x}} = \\int {x{e^{\\beta x}}\\,.\\,{e^{\\alpha x}}dx} $$<br/><br/>$$ \\Rightarrow y \\times {e^{\\alpha x}} = \\int {x{e^{(\\alpha  + \\beta )x}}dx} $$ .... (i)<br/><br/>Case (I) If $$\\alpha$$ + $$\\beta$$ = 0<br/><br/>From Eq. (i), we get<br/><br/>$$ \\Rightarrow y{e^{\\alpha x}} = \\int {x{e^{0.x}}dx = \\int {xdx = {{{x^2}} \\over 2} + C} } $$ .... (ii)<br/><br/>Given, y(1) = 1 i.e. when x = 1, then y = 1<br/><br/>From Eq. (ii), we get<br/><br/>$$1.{e^\\alpha } = {1 \\over 2} + C \\Rightarrow C = {e^\\alpha } - {1 \\over 2}$$<br/><br/>From Eq. (ii), we get<br/><br/>$$y{e^{\\alpha x}} = {{{x^2} - 1} \\over 2} + {e^\\alpha }$$<br/><br/>For $$\\alpha$$ = 1<br/><br/>$$y{e^x} = {{{x^2} - 1} \\over 2} + e \\Rightarrow y = {{{x^2}} \\over 2}{e^{ - x}} + \\left( {e - {1 \\over 2}} \\right){e^{ - x}}$$<br/><br/>Option (a) is correct.<br/><br/>Case (II) If $$\\alpha$$ + $$\\beta$$ $$\\ne$$ 0<br/><br/>$$ \\Rightarrow y{e^{\\alpha x}} = x.{{{e^{(\\alpha  + \\beta )x}}} \\over {(\\alpha  + \\beta )}} - \\int {1 \\times {{{e^{(\\alpha  + \\beta )x}}} \\over {(\\alpha  + \\beta )}}dx} $$<br/><br/>$$ \\Rightarrow y{e^{\\alpha x}} = x.{{{e^{(\\alpha  + \\beta )x}}} \\over {(\\alpha  + \\beta )}} - {{{e^{(\\alpha  + \\beta )x}}} \\over {{{(\\alpha  + \\beta )}^2}}} + {c_1}$$<br/><br/>$$ \\Rightarrow y = {{x\\,.\\,{e^{\\beta x}}} \\over {(\\alpha  + \\beta )}} - {{{e^{\\beta x}}} \\over {{{(\\alpha  + \\beta )}^2}}} + {c_1}{e^{ - \\alpha x}}$$ (Cancelling e<sup>$$\\alpha$$x</sup> from both sides)<br/><br/>$$ \\Rightarrow y = {{{e^{\\beta x}}} \\over {\\alpha  + \\beta }}\\left( {x - {1 \\over {\\alpha  + \\beta }}} \\right) + {c_1}{e^{ - \\alpha x}}$$ .... (iii)<br/><br/>Putting $$\\alpha$$ = $$\\beta$$ = 1 in Eq. (iii), we get<br/><br/>$$y = {{{e^x}} \\over 2}\\left( {x - {1 \\over 2}} \\right) + {c_1}{e^{ - x}}$$<br/><br/>Given, y(1) = 1<br/><br/>$$\\therefore$$ $$1 = {e \\over 2} \\times {1 \\over 2} + {{{c_1}} \\over e} \\Rightarrow {c_1} = e - {{{e^2}} \\over 4}$$<br/><br/>So, $$y = {{{e^x}} \\over 2}\\left( {x - {1 \\over 2}} \\right) + \\left( {e - {{{e^2}} \\over 4}} \\right){e^{ - x}}$$ $$\\to$$ option (c) is correct.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "bauLwyzOpatnYqvKltGUV",
@@ -171,7 +171,7 @@
   {
     "id": "6Oe5Nkd1BXdoY6FgrjK1p",
     "questionNumber": 66,
-    "questionText": "The area (in sq. units) of the region<br>\nA = { (x, y) $$ \\in $$ R × R|&nbsp;&nbsp;0 $$ \\le $$ x $$ \\le $$ 3, 0 $$ \\le $$ y $$ \\le $$ 4,\n y $$ \\le $$  x<sup>2</sup> + 3x} is :",
+    "questionText": "The area (in sq. units) of the region<br>\nA = { (x, y) $$ \\in $$ R \u00d7 R|&nbsp;&nbsp;0 $$ \\le $$ x $$ \\le $$ 3, 0 $$ \\le $$ y $$ \\le $$ 4,\n y $$ \\le $$  x<sup>2</sup> + 3x} is :",
     "options": [
       "$${{59} \\over 6}$$",
       "$${{26} \\over 3}$$",
@@ -339,7 +339,7 @@
     "subject": "Mathematics",
     "topic": "area-under-simple-curves-in-standard-forms",
     "difficulty": "Medium",
-    "solution": "<p>$$\\lim_\\limits{t \\rightarrow a} \\frac{\\int_\\limits{a}^{t} f(x) d x-\\left(\\frac{t-a}{2}\\right)\\{f(t)+f(a)\\}}{(t-a)^{3}}=0$$</p>\n<p>Let us assume $$t=a+h$$</p>\n<p>Using L'Hospital's rule</p>\n<p>$$\\lim_\\limits{h \\rightarrow 0} \\frac{\\int_\\limits{a}^{a+h} f(x) d x-\\frac{h}{2}\\{f(a+h)+f(a)\\}}{h^{3}}=0$$</p>\n<p>$$\\lim_\\limits{h \\rightarrow 0} \\frac{f(a+h)-\\frac{1}{2}\\{f(a+h)+f(a)\\}-\\frac{h}{2}\\left\\{f^{\\prime}(A+h)\\right\\}}{3 h^{3}}=0$$</p>\n<p>Again using L’Hospital’s rule</p>\n<p>$$\\lim_\\limits{h \\rightarrow 0} \\frac{f^{\\prime}(a+h)-\\frac{1}{2} f^{\\prime}(a+h)-\\frac{1}{2} f^{\\prime}(a+h)-\\frac{h}{2} f^{\\prime \\prime}(a+h)}{6 h}=0$$</p>\n<p>$$\\Rightarrow \\lim_\\limits{h \\rightarrow 0} \\frac{-\\frac{h}{2} f^{\\prime \\prime}(a+h)}{6 h}=0$$</p>\n<p>$$\\Rightarrow f^{\\prime \\prime}(a)=0 \\quad \\forall a \\in R$$</p>\n<p>$$\\Rightarrow f(x)$$ must have degree 1</p>",
+    "solution": "<p>$$\\lim_\\limits{t \\rightarrow a} \\frac{\\int_\\limits{a}^{t} f(x) d x-\\left(\\frac{t-a}{2}\\right)\\{f(t)+f(a)\\}}{(t-a)^{3}}=0$$</p>\n<p>Let us assume $$t=a+h$$</p>\n<p>Using L'Hospital's rule</p>\n<p>$$\\lim_\\limits{h \\rightarrow 0} \\frac{\\int_\\limits{a}^{a+h} f(x) d x-\\frac{h}{2}\\{f(a+h)+f(a)\\}}{h^{3}}=0$$</p>\n<p>$$\\lim_\\limits{h \\rightarrow 0} \\frac{f(a+h)-\\frac{1}{2}\\{f(a+h)+f(a)\\}-\\frac{h}{2}\\left\\{f^{\\prime}(A+h)\\right\\}}{3 h^{3}}=0$$</p>\n<p>Again using L\u2019Hospital\u2019s rule</p>\n<p>$$\\lim_\\limits{h \\rightarrow 0} \\frac{f^{\\prime}(a+h)-\\frac{1}{2} f^{\\prime}(a+h)-\\frac{1}{2} f^{\\prime}(a+h)-\\frac{h}{2} f^{\\prime \\prime}(a+h)}{6 h}=0$$</p>\n<p>$$\\Rightarrow \\lim_\\limits{h \\rightarrow 0} \\frac{-\\frac{h}{2} f^{\\prime \\prime}(a+h)}{6 h}=0$$</p>\n<p>$$\\Rightarrow f^{\\prime \\prime}(a)=0 \\quad \\forall a \\in R$$</p>\n<p>$$\\Rightarrow f(x)$$ must have degree 1</p>",
     "section": "Sec 1",
     "instruction": "",
     "type": "SCQ"
@@ -365,7 +365,7 @@
     "solution": "<p>$$\\begin{aligned}\n& f(c)=\\frac{c-a}{2}(f(a)+f(c))+\\left(\\frac{b-c}{2}\\right)(f(b)+f(c)) \\\\\n& f^{\\prime}(c)=\\left(\\frac{f(a)+f(c)}{2}\\right)+\\left(\\frac{c-a}{2}\\right) \\\\\n& f^{\\prime}(c)-\\left(\\frac{f(b)+f(c)}{2}\\right)+\\frac{(b-c)}{2} f^{\\prime}(c) \\\\\n& =\\frac{f(a)-f(b)}{2}+f^{\\prime}(c)\\left(\\frac{b-a}{2}\\right) \\\\\n& \\Rightarrow f^{\\prime}(c)=0 \\\\\n& \\Rightarrow \\frac{f(a)-f(b)}{2}+f^{\\prime}(c)\\left(\\frac{b-a}{2}\\right)=0 \\\\\n& \\Rightarrow f^{\\prime}(c)=\\frac{f(b)-f(a)}{(b-a)}\n\\end{aligned}$$</p>\n<p>$$ \\Rightarrow f''(c) = f''(c)\\left( {{{b - a} \\over 2}} \\right) < 0$$</p>\n<p>$$\\because$$ $$f''(x) < 0$$</p>\n<p>$$\\forall x \\in (a,b)$$</p>\n<p>$$\\Rightarrow$$ c is point of maximum.</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1lgf9ojhb",

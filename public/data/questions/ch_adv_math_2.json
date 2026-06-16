@@ -113,7 +113,7 @@
     "title": "BITSAT 2021",
     "year": "2021",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>If a + 2b + 3c = 12, (a, b, c $$\\in$$R<sup>+</sup>), then the maximum value of ab<sup>2</sup>c<sup>3</sup> is</p>",
     "options": [
       "2<sup>3</sup>",
@@ -229,7 +229,7 @@
       "18"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>To solve the problem, let’s analyze it step by step.</p>\n\n<p>Firstly, since $$\\frac{1}{16}, a,$$ and $$b$$ are in geometric progression (GP), the common ratio can be denoted as $$r$$. For GP, the relation between terms is given by:</p>\n\n<p>If $$\\frac{1}{16}$$ is the first term and $$a$$ is the second term, then:</p>\n\n<p>$$ a = \\frac{1}{16} \\cdot r $$</p>\n\n<p>If $$a$$ is the second term and $$b$$ is the third term, then:</p>\n\n<p>$$ b = a \\cdot r $$</p>\n\n<p>Substituting the expression for $$a$$ in the second equation:</p>\n\n<p>$$ b = \\left( \\frac{1}{16} \\cdot r \\right) \\cdot r = \\frac{1}{16} \\cdot r^2 $$</p>\n\n<p>We are also given that $$\\frac{1}{a}, \\frac{1}{b},$$ and $$6$$ are in arithmetic progression (AP). For AP, the middle term is the average of the two surrounding terms:</p>\n\n<p>Since $$\\frac{1}{a}, \\frac{1}{b}, 6$$ are in AP:</p>\n\n<p>$$ 2 \\cdot \\frac{1}{b} = \\frac{1}{a} + 6 $$</p>\n\n<p>Now, substituting the values of $$\\frac{1}{a}$$ and $$\\frac{1}{b}$$ from the GP relations:</p>\n\n<p>Since $$ a = \\frac{1}{16} \\cdot r $$:</p>\n\n<p>$$ \\frac{1}{a} = \\frac{1}{ \\left( \\frac{1}{16} \\cdot r \\right) } = 16 \\cdot \\frac{1}{r} = \\frac{16}{r} $$</p>\n\n<p>Also, since $$ b = \\frac{1}{16} \\cdot r^2 $$:</p>\n\n<p>$$ \\frac{1}{b} = \\frac{1}{ \\left( \\frac{1}{16} \\cdot r^2 \\right) } = 16 \\cdot \\frac{1}{r^2} = \\frac{16}{r^2} $$</p>\n\n<p>Substitute these values into the AP equation:</p>\n\n<p>$$ 2 \\cdot \\frac{16}{r^2} = \\frac{16}{r} + 6 $$</p>\n\n<p>Expanding and simplifying, we get:</p>\n\n<p>$$ \\frac{32}{r^2} = \\frac{16}{r} + 6 $$</p>\n\n<p>To clear the fractions, multiply all terms by $$r^2$$:</p>\n\n<p>$$ 32 = 16r + 6r^2 $$</p>\n\n<p>Rearranging into standard quadratic form:</p>\n\n<p>$$ 6r^2 + 16r - 32 = 0 $$</p>\n\n<p>Divide throughout by 2 for simplicity:</p>\n\n<p>$$ 3r^2 + 8r - 16 = 0 $$</p>\n\n<p>Solving the quadratic equation using the quadratic formula:</p>\n\n<p>$$ r = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} $$</p>\n\n<p>where $$a = 3$$, $$b = 8$$, and $$c = -16$$:</p>\n\n<p>$$ r = \\frac{-8 \\pm \\sqrt{8^2 - 4 \\cdot 3 \\cdot (-16)}}{2 \\cdot 3} = \\frac{-8 \\pm \\sqrt{64 + 192}}{6} = \\frac{-8 \\pm \\sqrt{256}}{6} = \\frac{-8 \\pm 16}{6} $$</p>\n\n<p>This gives us two possible values for $$r$$:</p>\n\n<p>$$ r = \\frac{8}{6} = \\frac{4}{3} $$</p>\n\n<p>$$ r = \\frac{-24}{6} = -4 $$</p>\n\n<p>Since $$a$$ and $$b$$ are positive, $$r = \\frac{4}{3}$$ is the suitable solution.</p>\n\n<p>Now calculate values for $$a$$ and $$b$$:</p>\n\n<p>$$ a = \\frac{1}{16} \\cdot \\frac{4}{3} = \\frac{1}{12} $$</p>\n\n<p>$$ b = \\left( \\frac{1}{12} \\right) \\cdot \\frac{4}{3} = \\frac{1}{9} $$</p>\n\n<p>Finally,$$ 72(a + b) $$ =:</p>\n\n<p>$$ 72 \\left( \\frac{1}{12} + \\frac{1}{9} \\right) = 72 \\left( \\frac{3 + 4}{36} \\right) = 72 \\left( \\frac{7}{36} \\right) = 14 $$</p>\n\n<p>Therefore, the answer is Option B: 14.</p>",
+    "solution": "<p>To solve the problem, let\u2019s analyze it step by step.</p>\n\n<p>Firstly, since $$\\frac{1}{16}, a,$$ and $$b$$ are in geometric progression (GP), the common ratio can be denoted as $$r$$. For GP, the relation between terms is given by:</p>\n\n<p>If $$\\frac{1}{16}$$ is the first term and $$a$$ is the second term, then:</p>\n\n<p>$$ a = \\frac{1}{16} \\cdot r $$</p>\n\n<p>If $$a$$ is the second term and $$b$$ is the third term, then:</p>\n\n<p>$$ b = a \\cdot r $$</p>\n\n<p>Substituting the expression for $$a$$ in the second equation:</p>\n\n<p>$$ b = \\left( \\frac{1}{16} \\cdot r \\right) \\cdot r = \\frac{1}{16} \\cdot r^2 $$</p>\n\n<p>We are also given that $$\\frac{1}{a}, \\frac{1}{b},$$ and $$6$$ are in arithmetic progression (AP). For AP, the middle term is the average of the two surrounding terms:</p>\n\n<p>Since $$\\frac{1}{a}, \\frac{1}{b}, 6$$ are in AP:</p>\n\n<p>$$ 2 \\cdot \\frac{1}{b} = \\frac{1}{a} + 6 $$</p>\n\n<p>Now, substituting the values of $$\\frac{1}{a}$$ and $$\\frac{1}{b}$$ from the GP relations:</p>\n\n<p>Since $$ a = \\frac{1}{16} \\cdot r $$:</p>\n\n<p>$$ \\frac{1}{a} = \\frac{1}{ \\left( \\frac{1}{16} \\cdot r \\right) } = 16 \\cdot \\frac{1}{r} = \\frac{16}{r} $$</p>\n\n<p>Also, since $$ b = \\frac{1}{16} \\cdot r^2 $$:</p>\n\n<p>$$ \\frac{1}{b} = \\frac{1}{ \\left( \\frac{1}{16} \\cdot r^2 \\right) } = 16 \\cdot \\frac{1}{r^2} = \\frac{16}{r^2} $$</p>\n\n<p>Substitute these values into the AP equation:</p>\n\n<p>$$ 2 \\cdot \\frac{16}{r^2} = \\frac{16}{r} + 6 $$</p>\n\n<p>Expanding and simplifying, we get:</p>\n\n<p>$$ \\frac{32}{r^2} = \\frac{16}{r} + 6 $$</p>\n\n<p>To clear the fractions, multiply all terms by $$r^2$$:</p>\n\n<p>$$ 32 = 16r + 6r^2 $$</p>\n\n<p>Rearranging into standard quadratic form:</p>\n\n<p>$$ 6r^2 + 16r - 32 = 0 $$</p>\n\n<p>Divide throughout by 2 for simplicity:</p>\n\n<p>$$ 3r^2 + 8r - 16 = 0 $$</p>\n\n<p>Solving the quadratic equation using the quadratic formula:</p>\n\n<p>$$ r = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} $$</p>\n\n<p>where $$a = 3$$, $$b = 8$$, and $$c = -16$$:</p>\n\n<p>$$ r = \\frac{-8 \\pm \\sqrt{8^2 - 4 \\cdot 3 \\cdot (-16)}}{2 \\cdot 3} = \\frac{-8 \\pm \\sqrt{64 + 192}}{6} = \\frac{-8 \\pm \\sqrt{256}}{6} = \\frac{-8 \\pm 16}{6} $$</p>\n\n<p>This gives us two possible values for $$r$$:</p>\n\n<p>$$ r = \\frac{8}{6} = \\frac{4}{3} $$</p>\n\n<p>$$ r = \\frac{-24}{6} = -4 $$</p>\n\n<p>Since $$a$$ and $$b$$ are positive, $$r = \\frac{4}{3}$$ is the suitable solution.</p>\n\n<p>Now calculate values for $$a$$ and $$b$$:</p>\n\n<p>$$ a = \\frac{1}{16} \\cdot \\frac{4}{3} = \\frac{1}{12} $$</p>\n\n<p>$$ b = \\left( \\frac{1}{12} \\right) \\cdot \\frac{4}{3} = \\frac{1}{9} $$</p>\n\n<p>Finally,$$ 72(a + b) $$ =:</p>\n\n<p>$$ 72 \\left( \\frac{1}{12} + \\frac{1}{9} \\right) = 72 \\left( \\frac{3 + 4}{36} \\right) = 72 \\left( \\frac{7}{36} \\right) = 14 $$</p>\n\n<p>Therefore, the answer is Option B: 14.</p>",
     "marks": 3,
     "negativeMarks": -1,
     "topic": "General"
@@ -263,7 +263,7 @@
     "title": "BITSAT 2023",
     "year": "2023",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Given, a sequence of 4 numbers, first three of which are in GP and the last three are in AP with common difference 6. If first and last term of this sequence are equal, then the last term is</p>",
     "options": [
       "4",
@@ -391,7 +391,7 @@
     "title": "BITSAT 2025",
     "year": "2025",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>For three numbers $a, b, c$ between 2 and 18 such that their sum is 25 , the numbers $2, a, b$ are in AP and the numbers $b, c, 18$ are in GP Then, the value of $a+b+c$ is</p>\n",
     "options": [
       "<p>12</p>\n",
@@ -1240,7 +1240,7 @@
     "title": "AIEEE 2005",
     "year": "2005",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "If $$x = \\sum\\limits_{n = 0}^\\infty  {{a^n},\\,\\,y = \\sum\\limits_{n = 0}^\\infty  {{b^n},\\,\\,z = \\sum\\limits_{n = 0}^\\infty  {{c^n},} } } \\,\\,$$ where a, b, c are in A.P and $$\\,\\left| a \\right| &lt; 1,\\,\\left| b \\right| &lt; 1,\\,\\left| c \\right| &lt; 1$$ then x, y, z are in ",
     "options": [
       "G.P.",
@@ -1417,7 +1417,7 @@
     "year": "2011",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "A man saves ₹ 200 in each of the first three months of his service. In each of the subsequent months his saving increases by  ₹ 40 more than the saving of immediately previous month. His total saving from the start of service will be  ₹ 11040 after",
+    "question": "A man saves \u20b9 200 in each of the first three months of his service. In each of the subsequent months his saving increases by  \u20b9 40 more than the saving of immediately previous month. His total saving from the start of service will be  \u20b9 11040 after",
     "options": [
       "19 months",
       "20 months",
@@ -1438,7 +1438,7 @@
     "title": "AIEEE 2012",
     "year": "2012",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p> <b> Statement-1: </b> The sum of the series 1 + (1 + 2 + 4) + (4 + 6 + 9) + (9 + 12 + 16) +.....+ (361 + 380 + 400) is 8000. \n</p><p> <b> Statement-2: </b> $$\\sum\\limits_{k = 1}^n {\\left( {{k^3} - {{(k - 1)}^3}} \\right)}  = {n^3}$$, for any natural number n.</p>\n",
     "options": [
       "Statement-1 is false, Statement-2 is true.",
@@ -1451,7 +1451,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "summation-of-series",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "lh5wc3i1Vj06rYEy",
@@ -1702,7 +1702,7 @@
     "title": "JEE Main 2017 (Offline)",
     "year": "2017",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "For any three positive real numbers a, b and c,\n<br><br>9(25$${a^2}$$ + b<sup>2</sup>) + 25(c<sup>2</sup> - 3$$a$$c) = 15b(3$$a$$ + c).\n<br>Then",
     "options": [
       "b, c and $$a$$ are in G.P.",
@@ -1711,7 +1711,7 @@
       "$$a$$, b and c are in G.P."
     ],
     "correctOptionIndex": 1,
-    "solution": "9(25$${a^2}$$ + b<sup>2</sup>) + 25(c<sup>2</sup> - 3$$a$$c) = 15b(3$$a$$ + c)\n<br><br> $$ \\Rightarrow 225{a^2} + 9{b^2} + 25{c^2} - 75ac = 45ab + 15bc$$\n<br><br>$$ \\Rightarrow {\\left( {15a} \\right)^2} + {\\left( {3b} \\right)^2} + {\\left( {5c} \\right)^2} - 75ac = 45ab + 15bc$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over 2}\\left[ {{{\\left( {15a - 3b} \\right)}^2} + {{\\left( {3b - 5c} \\right)}^2} + {{\\left( {5c - 15a} \\right)}^2}} \\right] = 0$$\n<br><br>it is possible when 15a – 3b = 0, 3b – 5 c = 0 and\n5c – 15a = 0\n<br><br>$$ \\Rightarrow $$ 15a = 3b = 5c\n<br><br>$$ \\Rightarrow $$ b = $${{5c} \\over 3}$$, a = $${c \\over 3}$$\n<br><br>$$ \\Rightarrow $$ a + b = $${c \\over 3} + {{5c} \\over 3}$$ = $${{6c} \\over 3}$$ = 2c\n<br><br>$$ \\therefore $$ b, c, a are in A.P.",
+    "solution": "9(25$${a^2}$$ + b<sup>2</sup>) + 25(c<sup>2</sup> - 3$$a$$c) = 15b(3$$a$$ + c)\n<br><br> $$ \\Rightarrow 225{a^2} + 9{b^2} + 25{c^2} - 75ac = 45ab + 15bc$$\n<br><br>$$ \\Rightarrow {\\left( {15a} \\right)^2} + {\\left( {3b} \\right)^2} + {\\left( {5c} \\right)^2} - 75ac = 45ab + 15bc$$\n<br><br>$$ \\Rightarrow $$ $${1 \\over 2}\\left[ {{{\\left( {15a - 3b} \\right)}^2} + {{\\left( {3b - 5c} \\right)}^2} + {{\\left( {5c - 15a} \\right)}^2}} \\right] = 0$$\n<br><br>it is possible when 15a \u2013 3b = 0, 3b \u2013 5 c = 0 and\n5c \u2013 15a = 0\n<br><br>$$ \\Rightarrow $$ 15a = 3b = 5c\n<br><br>$$ \\Rightarrow $$ b = $${{5c} \\over 3}$$, a = $${c \\over 3}$$\n<br><br>$$ \\Rightarrow $$ a + b = $${c \\over 3} + {{5c} \\over 3}$$ = $${{6c} \\over 3}$$ = 2c\n<br><br>$$ \\therefore $$ b, c, a are in A.P.",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "summation-of-series",
@@ -1856,7 +1856,7 @@
     "title": "JEE Main 2018 (Online) 15th April Evening Slot",
     "year": "2018",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "If &nbsp;a, &nbsp; b, &nbsp; c&nbsp; are in A.P. and&nbsp; a<sup>2</sup>, &nbsp;b<sup>2</sup>, &nbsp;c<sup>2</sup> are in G.P. such that \n<br>a&nbsp;&lt;&nbsp;b&nbsp;&lt;&nbsp;c&nbsp;and &nbsp; a + b + c = $${3 \\over 4},$$ then the value of a is :",
     "options": [
       "$${1 \\over 4} - {1 \\over {4\\sqrt 2 }}$$",
@@ -2019,7 +2019,7 @@
       "$${2 \\over 3}a$$"
     ],
     "correctOptionIndex": 0,
-    "solution": "a = a, b = ar and c = ar<sup>2</sup><br><br>\n3a, 7b, 15c $$ \\to $$ A.P.<br><br>\n14b = 3a + 15c<br><br>\n14(ar) = 3a + 15(ar<sup>2</sup>)<br><br>\n15r<sup>2</sup> – 14r + 3 = 0<br><br>\n$$ \\Rightarrow r = {1 \\over 3},{3 \\over 5}(rejected)$$<br><br>\nCommon difference = 7b – 3a<br><br>\n= 7ar – 3a<br><br>\n$$ \\Rightarrow $$ $${{7a} \\over 3} - 3a =  - {2 \\over 3}a$$<br><br>\n4<sup>th</sup> term is $$ \\Rightarrow $$ $$15c - {2 \\over 3}a = {{15} \\over 9}a - {2 \\over 3}a = a$$",
+    "solution": "a = a, b = ar and c = ar<sup>2</sup><br><br>\n3a, 7b, 15c $$ \\to $$ A.P.<br><br>\n14b = 3a + 15c<br><br>\n14(ar) = 3a + 15(ar<sup>2</sup>)<br><br>\n15r<sup>2</sup> \u2013 14r + 3 = 0<br><br>\n$$ \\Rightarrow r = {1 \\over 3},{3 \\over 5}(rejected)$$<br><br>\nCommon difference = 7b \u2013 3a<br><br>\n= 7ar \u2013 3a<br><br>\n$$ \\Rightarrow $$ $${{7a} \\over 3} - 3a =  - {2 \\over 3}a$$<br><br>\n4<sup>th</sup> term is $$ \\Rightarrow $$ $$15c - {2 \\over 3}a = {{15} \\over 9}a - {2 \\over 3}a = a$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "geometric-progression",
@@ -2041,7 +2041,7 @@
       "$${2 \\over 3}$$"
     ],
     "correctOptionIndex": 2,
-    "solution": "first term = a, Common difference = d \n<br><br>\n$$ \\therefore $$  a + 5d = 2<br><br>\na<sub>1</sub>. a<sub>4</sub>. a<sub>5</sub> = a(a + 3d) (a + 4d)<br><br>\nf(d) = (2 – 5d) (2 – 2d) (2 – d)<br><br>\n$$ \\Rightarrow $$ $$f'(d) = 0 \\Rightarrow d = {2 \\over 3},{8 \\over 5}$$<br><br>\n$$ \\Rightarrow $$ $$f''(d) &lt; 0\\,at\\,d = {8 \\over 5}$$<br><br>\n$$\\, \\Rightarrow d = {8 \\over 5}$$",
+    "solution": "first term = a, Common difference = d \n<br><br>\n$$ \\therefore $$  a + 5d = 2<br><br>\na<sub>1</sub>. a<sub>4</sub>. a<sub>5</sub> = a(a + 3d) (a + 4d)<br><br>\nf(d) = (2 \u2013 5d) (2 \u2013 2d) (2 \u2013 d)<br><br>\n$$ \\Rightarrow $$ $$f'(d) = 0 \\Rightarrow d = {2 \\over 3},{8 \\over 5}$$<br><br>\n$$ \\Rightarrow $$ $$f''(d) &lt; 0\\,at\\,d = {8 \\over 5}$$<br><br>\n$$\\, \\Rightarrow d = {8 \\over 5}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "arithmetic-progression",
@@ -2085,7 +2085,7 @@
       "64"
     ],
     "correctOptionIndex": 2,
-    "solution": "3(a<sub>1</sub> + a<sub>16</sub>) = 114<br><br>\n$${a_1} + {a_{16}} = 38$$<br><br>\nNow a<sub>1</sub> + a<sub>6</sub> + a<sub>11</sub> + a<sub>16</sub> = 2(a<sub>1</sub> + a<sub>16</sub>)<br><br>\n= 2 × 38 = 76",
+    "solution": "3(a<sub>1</sub> + a<sub>16</sub>) = 114<br><br>\n$${a_1} + {a_{16}} = 38$$<br><br>\nNow a<sub>1</sub> + a<sub>6</sub> + a<sub>11</sub> + a<sub>16</sub> = 2(a<sub>1</sub> + a<sub>16</sub>)<br><br>\n= 2 \u00d7 38 = 76",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "arithmetic-progression",
@@ -2099,7 +2099,7 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ..... a<sub>10</sub> be in G.P. with a<sub>i</sub> &gt; 0 for i = 1, 2, ….., 10 and S be the set of pairs (r, k), r, k $$ \\in $$ N (the set of natural numbers) for which\n<br><br>$$\\left| {\\matrix{\n   {{{\\log }_e}\\,{a_1}^r{a_2}^k} &amp; {{{\\log }_e}\\,{a_2}^r{a_3}^k} &amp; {{{\\log }_e}\\,{a_3}^r{a_4}^k}  \\cr \n   {{{\\log }_e}\\,{a_4}^r{a_5}^k} &amp; {{{\\log }_e}\\,{a_5}^r{a_6}^k} &amp; {{{\\log }_e}\\,{a_6}^r{a_7}^k}  \\cr \n   {{{\\log }_e}\\,{a_7}^r{a_8}^k} &amp; {{{\\log }_e}\\,{a_8}^r{a_9}^k} &amp; {{{\\log }_e}\\,{a_9}^r{a_{10}}^k}  \\cr \n\n } } \\right|$$ $$=$$ 0.\n<br><br>Then the number of elements in S, is -",
+    "question": "Let a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ..... a<sub>10</sub> be in G.P. with a<sub>i</sub> &gt; 0 for i = 1, 2, \u2026.., 10 and S be the set of pairs (r, k), r, k $$ \\in $$ N (the set of natural numbers) for which\n<br><br>$$\\left| {\\matrix{\n   {{{\\log }_e}\\,{a_1}^r{a_2}^k} &amp; {{{\\log }_e}\\,{a_2}^r{a_3}^k} &amp; {{{\\log }_e}\\,{a_3}^r{a_4}^k}  \\cr \n   {{{\\log }_e}\\,{a_4}^r{a_5}^k} &amp; {{{\\log }_e}\\,{a_5}^r{a_6}^k} &amp; {{{\\log }_e}\\,{a_6}^r{a_7}^k}  \\cr \n   {{{\\log }_e}\\,{a_7}^r{a_8}^k} &amp; {{{\\log }_e}\\,{a_8}^r{a_9}^k} &amp; {{{\\log }_e}\\,{a_9}^r{a_{10}}^k}  \\cr \n\n } } \\right|$$ $$=$$ 0.\n<br><br>Then the number of elements in S, is -",
     "options": [
       "10",
       "4",
@@ -2253,7 +2253,7 @@
     "year": "2019",
     "difficulty": "easy",
     "type": "SCQ",
-    "question": "Let S<sub>n</sub> denote the sum of the first n terms of an A.P. If S<sub>4</sub> = 16 and S<sub>6</sub>= – 48, then S<sub>10</sub> is equal to :",
+    "question": "Let S<sub>n</sub> denote the sum of the first n terms of an A.P. If S<sub>4</sub> = 16 and S<sub>6</sub>= \u2013 48, then S<sub>10</sub> is equal to :",
     "options": [
       "- 320",
       "- 380",
@@ -2428,16 +2428,16 @@
     "title": "JEE Main 2019 (Online) 8th April Evening Slot",
     "year": "2019",
     "difficulty": "medium",
-    "type": "MCQM",
-    "question": "If three distinct numbers a, b, c are in G.P. and the\nequations ax<sup>2</sup>\n + 2bx + c = 0 and\ndx<sup>2</sup>\n + 2ex + ƒ = 0 have a common root, then\nwhich one of the following statements is\ncorrect?",
+    "type": "SCQ",
+    "question": "If three distinct numbers a, b, c are in G.P. and the\nequations ax<sup>2</sup>\n + 2bx + c = 0 and\ndx<sup>2</sup>\n + 2ex + \u0192 = 0 have a common root, then\nwhich one of the following statements is\ncorrect?",
     "options": [
       "$$d \\over a$$, $$e \\over b$$, $$f \\over c$$ are in G.P.",
-      "d, e, ƒ are in A.P",
-      "d, e, ƒ are in G.P",
+      "d, e, \u0192 are in A.P",
+      "d, e, \u0192 are in G.P",
       "$$d \\over a$$, $$e \\over b$$, $$f \\over c$$ are in A.P."
     ],
     "correctOptionIndex": 3,
-    "solution": "Given, a, b, c are in G.P.\n<br><br>$$ \\therefore $$ b<sup>2</sup> = ac\n<br><br>In this equation ax<sup>2</sup>\n + 2bx + c = 0,\n<br><br>Discrimant, D = 4b<sup>2</sup> - 4ac\n<br><br>= 4ac - 4ac\n<br><br>= 0\n<br><br>Discrimant = 0 meand roots of the equation are equal.\n<br><br>Let both the roots of the equation = $$\\alpha $$\n<br><br>$$ \\therefore $$ 2$$\\alpha $$ = $$ - {{2b} \\over a}$$\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = $$ - {b \\over a}$$\n<br><br>As both the\nequations ax<sup>2</sup>\n + 2bx + c = 0 and\ndx<sup>2</sup>\n + 2ex + ƒ = 0 have a common root,\n<br><br>so $$ - {b \\over a}$$ is also root of the equation dx<sup>2</sup>\n + 2ex + ƒ = 0.\n<br><br>$$ \\therefore $$ $$ - {b \\over a}$$ satisfy the equation dx<sup>2</sup>\n + 2ex + ƒ = 0.\n<br><br>$$ \\therefore $$ $$d{\\left( { - {b \\over a}} \\right)^2} + 2e\\left( { - {b \\over a}} \\right) + f = 0$$\n<br><br>$$ \\Rightarrow $$ $$d{b^2} - 2aeb + f{a^2} = 0$$\n<br><br>$$ \\Rightarrow $$ $$dac - 2aeb + f{a^2} = 0$$\n<br><br>$$ \\Rightarrow $$ $$dc - 2eb + fa = 0$$\n<br><br>$$ \\Rightarrow $$ $${{dc} \\over {ac}} - {{2eb} \\over {ac}} + {{fa} \\over {ac}} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{dc} \\over {ac}} - {{2eb} \\over {{b^2}}} + {{fa} \\over {ac}} = 0$$\n<br><br>$$ \\Rightarrow $$ $${d \\over a} - {{2e} \\over b} + {f \\over c} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{2e} \\over b} = {d \\over a} + {f \\over c}$$\n<br><br>$$ \\therefore $$ \n$$d \\over a$$, $$e \\over b$$, $$f \\over c$$ are in A.P.",
+    "solution": "Given, a, b, c are in G.P.\n<br><br>$$ \\therefore $$ b<sup>2</sup> = ac\n<br><br>In this equation ax<sup>2</sup>\n + 2bx + c = 0,\n<br><br>Discrimant, D = 4b<sup>2</sup> - 4ac\n<br><br>= 4ac - 4ac\n<br><br>= 0\n<br><br>Discrimant = 0 meand roots of the equation are equal.\n<br><br>Let both the roots of the equation = $$\\alpha $$\n<br><br>$$ \\therefore $$ 2$$\\alpha $$ = $$ - {{2b} \\over a}$$\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = $$ - {b \\over a}$$\n<br><br>As both the\nequations ax<sup>2</sup>\n + 2bx + c = 0 and\ndx<sup>2</sup>\n + 2ex + \u0192 = 0 have a common root,\n<br><br>so $$ - {b \\over a}$$ is also root of the equation dx<sup>2</sup>\n + 2ex + \u0192 = 0.\n<br><br>$$ \\therefore $$ $$ - {b \\over a}$$ satisfy the equation dx<sup>2</sup>\n + 2ex + \u0192 = 0.\n<br><br>$$ \\therefore $$ $$d{\\left( { - {b \\over a}} \\right)^2} + 2e\\left( { - {b \\over a}} \\right) + f = 0$$\n<br><br>$$ \\Rightarrow $$ $$d{b^2} - 2aeb + f{a^2} = 0$$\n<br><br>$$ \\Rightarrow $$ $$dac - 2aeb + f{a^2} = 0$$\n<br><br>$$ \\Rightarrow $$ $$dc - 2eb + fa = 0$$\n<br><br>$$ \\Rightarrow $$ $${{dc} \\over {ac}} - {{2eb} \\over {ac}} + {{fa} \\over {ac}} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{dc} \\over {ac}} - {{2eb} \\over {{b^2}}} + {{fa} \\over {ac}} = 0$$\n<br><br>$$ \\Rightarrow $$ $${d \\over a} - {{2e} \\over b} + {f \\over c} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{2e} \\over b} = {d \\over a} + {f \\over c}$$\n<br><br>$$ \\therefore $$ \n$$d \\over a$$, $$e \\over b$$, $$f \\over c$$ are in A.P.",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "geometric-progression",
@@ -2459,7 +2459,7 @@
       "3303"
     ],
     "correctOptionIndex": 1,
-    "solution": "$$ \\because $$ 91 = 13 $$ \\times $$ 7\n<br><br>So the required numbers are either divisible by\n7 or 13.\n<br><br>S<sub>A</sub>\n= sum of numbers between 100 and 200 which are divisible by 7.\n<br><br>$$ \\Rightarrow $$ S<sub>A</sub> = 105 + 112 + ..... + 196\n<br><br>S<sub>A</sub> = $${{14} \\over 2}\\left[ {105 + 196} \\right]$$ = 2107\n<br><br>S<sub>B</sub>\n= Sum of numbers between 100 and 200 which are divisible by 13.\n<br><br>S<sub>B</sub> = 104 + 117 + ....... + 195\n<br><br>S<sub>B</sub> = $${8 \\over 2}\\left[ {104 + 195} \\right]$$ = 1196\n<br><br>S<sub>C</sub> = Sum of numbers between 100 and 200 which are divisible by 7 and 13.\n<br><br>S<sub>C</sub> = 182\n<br><br>Sum of numbers divisible by\n7 or 13 = Sum of no. divisible by\n7 + sum of the no. divisible by 13 – Sum of the\nnumbers divisible by 7 and 13\n<br><br> = 2107 + 1196 - 182\n<br><br>= 3121",
+    "solution": "$$ \\because $$ 91 = 13 $$ \\times $$ 7\n<br><br>So the required numbers are either divisible by\n7 or 13.\n<br><br>S<sub>A</sub>\n= sum of numbers between 100 and 200 which are divisible by 7.\n<br><br>$$ \\Rightarrow $$ S<sub>A</sub> = 105 + 112 + ..... + 196\n<br><br>S<sub>A</sub> = $${{14} \\over 2}\\left[ {105 + 196} \\right]$$ = 2107\n<br><br>S<sub>B</sub>\n= Sum of numbers between 100 and 200 which are divisible by 13.\n<br><br>S<sub>B</sub> = 104 + 117 + ....... + 195\n<br><br>S<sub>B</sub> = $${8 \\over 2}\\left[ {104 + 195} \\right]$$ = 1196\n<br><br>S<sub>C</sub> = Sum of numbers between 100 and 200 which are divisible by 7 and 13.\n<br><br>S<sub>C</sub> = 182\n<br><br>Sum of numbers divisible by\n7 or 13 = Sum of no. divisible by\n7 + sum of the no. divisible by 13 \u2013 Sum of the\nnumbers divisible by 7 and 13\n<br><br> = 2107 + 1196 - 182\n<br><br>= 3121",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "arithmetic-progression",
@@ -2473,7 +2473,7 @@
     "year": "2019",
     "difficulty": "easy",
     "type": "SCQ",
-    "question": "The sum of the series 1 + 2 × 3 + 3 × 5 + 4 × 7 +....\nupto 11th term is :-",
+    "question": "The sum of the series 1 + 2 \u00d7 3 + 3 \u00d7 5 + 4 \u00d7 7 +....\nupto 11th term is :-",
     "options": [
       "945",
       "916",
@@ -2481,7 +2481,7 @@
       "946"
     ],
     "correctOptionIndex": 3,
-    "solution": "S = 1 + 2 × 3 + 3 × 5 + 4 × 7 +....\nupto 11th term\n<br><br>General term T<sub>n</sub> = n (2n - 1)\n<br><br>$$ \\therefore $$ S<sub>n</sub> = $$\\sum {{T_n}} $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$\\sum {\\left( {2{n^2} - n} \\right)} $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$2\\sum {{n^2} - \\sum r } $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$2\\left( {{{n\\left( {n + 1} \\right)\\left( {2n + 1} \\right)} \\over 6}} \\right) - {{n\\left( {n + 1} \\right)} \\over 2}$$\n<br><br>$$ \\therefore $$ S<sub>11</sub> = $$2\\left( {{{11\\left( {12} \\right)\\left( {23} \\right)} \\over 6}} \\right) - {{11\\left( {12} \\right)} \\over 2}$$\n<br><br>$$ \\Rightarrow $$ S<sub>11</sub> = 946",
+    "solution": "S = 1 + 2 \u00d7 3 + 3 \u00d7 5 + 4 \u00d7 7 +....\nupto 11th term\n<br><br>General term T<sub>n</sub> = n (2n - 1)\n<br><br>$$ \\therefore $$ S<sub>n</sub> = $$\\sum {{T_n}} $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$\\sum {\\left( {2{n^2} - n} \\right)} $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$2\\sum {{n^2} - \\sum r } $$\n<br><br>$$ \\Rightarrow $$ S<sub>n</sub> = $$2\\left( {{{n\\left( {n + 1} \\right)\\left( {2n + 1} \\right)} \\over 6}} \\right) - {{n\\left( {n + 1} \\right)} \\over 2}$$\n<br><br>$$ \\therefore $$ S<sub>11</sub> = $$2\\left( {{{11\\left( {12} \\right)\\left( {23} \\right)} \\over 6}} \\right) - {{11\\left( {12} \\right)} \\over 2}$$\n<br><br>$$ \\Rightarrow $$ S<sub>11</sub> = 946",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "summation-of-series",
@@ -2503,7 +2503,7 @@
       "225"
     ],
     "correctOptionIndex": 1,
-    "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kejek207vm7v/da15f164-88ca-42a6-9f77-5b5446f6a5bd/1239d0b0-f3e5-11e9-a7bc-b7b08ce8d541/file-7kejek207vm7w-320w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Sequences and Series Question 245 English Explanation 1\">\n<br><br>As triangle is equilateral so each side of triangle has n-balls.\n<br><br>At the top of the triangle there is 1 ball then next line has 2 balls. Similarly last line has n balls.\n<br><br>$$ \\therefore $$ Total no of balls used to create this triangle\n<br><br>= 1 + 2 + 3 + ..............+ n\n<br><br>= $${{n\\left( {n + 1} \\right)} \\over 2}$$\n<img src=\"https://imagex.cdn.examgoal.net/7kejek208wsuv/3a61ab51-2bbd-453b-b7ed-6990ff7b0baa/1c4ae270-f3e9-11e9-a7bc-b7b08ce8d541/file-7kejek208wsuw-320w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Sequences and Series Question 245 English Explanation 2\">\n<br>Here Number of balls in each side of square is = (n – 2)\n<br><br>$$ \\therefore $$ Total no of balls used to create this square\n<br><br>= (n – 2)<sup>2</sup>\n<br><br>According to the question,\n<br><br>$${{n\\left( {n + 1} \\right)} \\over 2}$$ + 99 = (n – 2)<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> - 9n - 190 = 0\n<br><br>$$ \\Rightarrow $$ (n - 19) (n + 10) = 0\n<br><br>$$ \\therefore $$ n = 19\n<br><br>So total balls used to form triangle\n<br><br>= $${{n\\left( {n + 1} \\right)} \\over 2}$$ = $${{19\\left( {20} \\right)} \\over 2}$$ = 190",
+    "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kejek207vm7v/da15f164-88ca-42a6-9f77-5b5446f6a5bd/1239d0b0-f3e5-11e9-a7bc-b7b08ce8d541/file-7kejek207vm7w-320w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Sequences and Series Question 245 English Explanation 1\">\n<br><br>As triangle is equilateral so each side of triangle has n-balls.\n<br><br>At the top of the triangle there is 1 ball then next line has 2 balls. Similarly last line has n balls.\n<br><br>$$ \\therefore $$ Total no of balls used to create this triangle\n<br><br>= 1 + 2 + 3 + ..............+ n\n<br><br>= $${{n\\left( {n + 1} \\right)} \\over 2}$$\n<img src=\"https://imagex.cdn.examgoal.net/7kejek208wsuv/3a61ab51-2bbd-453b-b7ed-6990ff7b0baa/1c4ae270-f3e9-11e9-a7bc-b7b08ce8d541/file-7kejek208wsuw-320w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Sequences and Series Question 245 English Explanation 2\">\n<br>Here Number of balls in each side of square is = (n \u2013 2)\n<br><br>$$ \\therefore $$ Total no of balls used to create this square\n<br><br>= (n \u2013 2)<sup>2</sup>\n<br><br>According to the question,\n<br><br>$${{n\\left( {n + 1} \\right)} \\over 2}$$ + 99 = (n \u2013 2)<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> - 9n - 190 = 0\n<br><br>$$ \\Rightarrow $$ (n - 19) (n + 10) = 0\n<br><br>$$ \\therefore $$ n = 19\n<br><br>So total balls used to form triangle\n<br><br>= $${{n\\left( {n + 1} \\right)} \\over 2}$$ = $${{19\\left( {20} \\right)} \\over 2}$$ = 190",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "summation-of-series",
@@ -2516,13 +2516,13 @@
     "title": "JEE Main 2019 (Online) 9th April Evening Slot",
     "year": "2019",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "If the sum and product of the first three term in\nan A.P. are 33 and 1155, respectively, then a value\nof its 11<sup>th</sup> term is :-",
     "options": [
-      "–25",
-      "–36",
+      "\u201325",
+      "\u201336",
       "25",
-      "–35"
+      "\u201335"
     ],
     "correctOptionIndex": 0,
     "solution": "Let the three terms are a - d, a, a + d\n<br><br>Given a - d + a + a + d = 33\n<br><br>$$ \\Rightarrow $$ 3a = 33\n<br><br>$$ \\Rightarrow $$ a = 11\n<br><br>Also given,\n<br><br>(a - d)a(a + d) = 1155\n<br><br>$$ \\Rightarrow $$ (a<sup>2</sup> - d<sup>2</sup>)a = 1155\n<br><br>$$ \\Rightarrow $$ (11<sup>2</sup> - d<sup>2</sup>)11 = 1155\n<br><br>$$ \\Rightarrow $$ (11<sup>2</sup> - d<sup>2</sup>) = 105\n<br><br>$$ \\Rightarrow $$ d = $$ \\pm $$ 4\n<br><br>When d = 4 and a = 11 then series is\n<br><br>7, 11, 15, ....\n<br><br>$$ \\therefore $$ T<sub>11</sub> = a + 10d = 7 + 10$$ \\times $$ 4 = 47\n<br><br>When d = -4 and a = 11 then series is\n<br><br>15, 11, 7, ....\n<br><br>$$ \\therefore $$ T<sub>11</sub> = a + 10d = 15 + 10$$ \\times $$ -4 = -25",
@@ -2560,7 +2560,7 @@
     "title": "JEE Main 2019 (Online) 9th January Evening Slot",
     "year": "2019",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "Let a, b and c be the 7<sup>th</sup>, 11<sup>th</sup> and 13<sup>th</sup> terms respectively of a non-constant A.P.  If these are also three consecutive terms of a G.P., then $${a \\over c}$$ equal to : ",
     "options": [
       "2",
@@ -2626,7 +2626,7 @@
     "title": "JEE Main 2019 (Online) 9th January Morning Slot",
     "year": "2019",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "If a, b, c be three distinct real numbers in G.P. and a + b + c = xb , then x <b>cannot</b> be",
     "options": [
       "2",
@@ -2657,7 +2657,7 @@
       "-$${{72} \\over 5}$$"
     ],
     "correctOptionIndex": 3,
-    "solution": "Let common difference be d.\n<br><br>$$ \\because $$ a<sub>1</sub>\n + a<sub>2</sub>\n + a<sub>3</sub>\n + ... + a<sub>11</sub> = 0\n<br><br>$$ \\therefore $$ $${{11} \\over 2}\\left[ {2{a_1} + 10d} \\right]$$ = 0\n<br><br>$$ \\Rightarrow $$ a<sub>1</sub>\n + 5d = 0\n<br><br>$$ \\Rightarrow $$ d = $${ - {{{a_1}} \\over 5}}$$   .....(1)\n<br><br>Now a<sub>1</sub>\n + a<sub>3</sub>\n + a<sub>5</sub>\n + ... + a<sub>23</sub>\n<br><br>= (a<sub>1</sub> + a<sub>23</sub>) $$ \\times $$ $${{12} \\over 2}$$\n<br><br>= (a<sub>1</sub> + a<sub>1</sub> + 22d) × 6\n<br><br>= $$\\left[ {2{a_1} + 22\\left( { - {{{a_1}} \\over 5}} \\right)} \\right]$$ $$ \\times $$ 6\n<br><br>= $$ - {{72} \\over 2}{a_1}$$\n<br><br>$$ \\therefore $$ k = $$ - {{72} \\over 2}$$",
+    "solution": "Let common difference be d.\n<br><br>$$ \\because $$ a<sub>1</sub>\n + a<sub>2</sub>\n + a<sub>3</sub>\n + ... + a<sub>11</sub> = 0\n<br><br>$$ \\therefore $$ $${{11} \\over 2}\\left[ {2{a_1} + 10d} \\right]$$ = 0\n<br><br>$$ \\Rightarrow $$ a<sub>1</sub>\n + 5d = 0\n<br><br>$$ \\Rightarrow $$ d = $${ - {{{a_1}} \\over 5}}$$   .....(1)\n<br><br>Now a<sub>1</sub>\n + a<sub>3</sub>\n + a<sub>5</sub>\n + ... + a<sub>23</sub>\n<br><br>= (a<sub>1</sub> + a<sub>23</sub>) $$ \\times $$ $${{12} \\over 2}$$\n<br><br>= (a<sub>1</sub> + a<sub>1</sub> + 22d) \u00d7 6\n<br><br>= $$\\left[ {2{a_1} + 22\\left( { - {{{a_1}} \\over 5}} \\right)} \\right]$$ $$ \\times $$ 6\n<br><br>= $$ - {{72} \\over 2}{a_1}$$\n<br><br>$$ \\therefore $$ k = $$ - {{72} \\over 2}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "arithmetic-progression",
@@ -2723,7 +2723,7 @@
       "$${{x + y + xy} \\over {\\left( {1 - x} \\right)\\left( {1 - y} \\right)}}$$"
     ],
     "correctOptionIndex": 1,
-    "solution": "(x + y) + (x<sup>2</sup>+xy+y<sup>2</sup>) + (x<sup>3</sup>+x<sup>2</sup>y + xy<sup>2</sup>+y<sup>3</sup>) + ....\n<br><br>By multiplying and dividing x – y :\n<br><br>$${{\\left( {{x^2} - {y^2}} \\right) + \\left( {{x^3} - {y^3}} \\right) + \\left( {{x^4} - {y^4}} \\right) + ...} \\over {x - y}}$$\n<br><br>= $${{\\left( {{x^2} + {x^3} + {x^4} + ....} \\right) - \\left( {{y^2} + {y^3} + {y^4} + ...} \\right)} \\over {x - y}}$$\n<br><br>= $${{{{{x^2}} \\over {1 - x}} - {{{y^2}} \\over {1 - y}}} \\over {x - y}}$$\n<br><br>= $${{\\left( {{x^2} - {y^2}} \\right) - xy\\left( {x - y} \\right)} \\over {\\left( {1 - x} \\right)\\left( {1 - y} \\right)\\left( {x - y} \\right)}}$$\n<br><br>= $${{x + y - xy} \\over {\\left( {1 - x} \\right)\\left( {1 - y} \\right)}}$$",
+    "solution": "(x + y) + (x<sup>2</sup>+xy+y<sup>2</sup>) + (x<sup>3</sup>+x<sup>2</sup>y + xy<sup>2</sup>+y<sup>3</sup>) + ....\n<br><br>By multiplying and dividing x \u2013 y :\n<br><br>$${{\\left( {{x^2} - {y^2}} \\right) + \\left( {{x^3} - {y^3}} \\right) + \\left( {{x^4} - {y^4}} \\right) + ...} \\over {x - y}}$$\n<br><br>= $${{\\left( {{x^2} + {x^3} + {x^4} + ....} \\right) - \\left( {{y^2} + {y^3} + {y^4} + ...} \\right)} \\over {x - y}}$$\n<br><br>= $${{{{{x^2}} \\over {1 - x}} - {{{y^2}} \\over {1 - y}}} \\over {x - y}}$$\n<br><br>= $${{\\left( {{x^2} - {y^2}} \\right) - xy\\left( {x - y} \\right)} \\over {\\left( {1 - x} \\right)\\left( {1 - y} \\right)\\left( {x - y} \\right)}}$$\n<br><br>= $${{x + y - xy} \\over {\\left( {1 - x} \\right)\\left( {1 - y} \\right)}}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "summation-of-series",
@@ -2741,7 +2741,7 @@
     "options": [
       "n = 41",
       "n = 60",
-      "n<sup>th</sup> term is –4",
+      "n<sup>th</sup> term is \u20134",
       "n<sup>th</sup> term is -4$${2 \\over 5}$$"
     ],
     "correctOptionIndex": 2,
@@ -2815,7 +2815,7 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let a<sub>1</sub>, a<sub>2</sub>, ..., an be a given A.P. whose<br> common difference is an integer and <br>S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + .... + a<sub>n</sub>. If a<sub>1</sub> = 1, a<sub>n</sub> = 300 and 15 $$ \\le $$ n $$ \\le $$ 50, then <br>the ordered pair (S<sub>n-4</sub>, a<sub>n–4</sub>) is equal to:\n",
+    "question": "Let a<sub>1</sub>, a<sub>2</sub>, ..., an be a given A.P. whose<br> common difference is an integer and <br>S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + .... + a<sub>n</sub>. If a<sub>1</sub> = 1, a<sub>n</sub> = 300 and 15 $$ \\le $$ n $$ \\le $$ 50, then <br>the ordered pair (S<sub>n-4</sub>, a<sub>n\u20134</sub>) is equal to:\n",
     "options": [
       "(2480, 249) ",
       "(2480, 248)",
@@ -2859,7 +2859,7 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "If 1+(1–2<sup>2</sup>.1)+(1–4<sup>2</sup>.3)+(1-6<sup>2</sup>.5)+......+(1-20<sup>2</sup>.19)=  $$\\alpha $$ - 220$$\\beta $$, <br>then an ordered pair $$\\left( {\\alpha ,\\beta } \\right)$$ is equal to:",
+    "question": "If 1+(1\u20132<sup>2</sup>.1)+(1\u20134<sup>2</sup>.3)+(1-6<sup>2</sup>.5)+......+(1-20<sup>2</sup>.19)=  $$\\alpha $$ - 220$$\\beta $$, <br>then an ordered pair $$\\left( {\\alpha ,\\beta } \\right)$$ is equal to:",
     "options": [
       "(11, 103)",
       "(10, 103)",
@@ -2889,7 +2889,7 @@
       "7<sup>46/21</sup>"
     ],
     "correctOptionIndex": 2,
-    "solution": "460 = log<sub>7</sub> <sup>x</sup>·(2 + 3 + 4 + ..... + 20 + 21)\n<br><br>$$ \\Rightarrow $$ 460 = log<sub>7</sub> <sup>x</sup>. $$\\left( {{{21 \\times 22} \\over 2} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ 460 = 230. log<sub>7</sub> <sup>x</sup>\n<br><br>$$ \\Rightarrow $$ log<sub>7</sub> <sup>x</sup> = 2\n<br><br>$$ \\Rightarrow $$ x = 49",
+    "solution": "460 = log<sub>7</sub> <sup>x</sup>\u00b7(2 + 3 + 4 + ..... + 20 + 21)\n<br><br>$$ \\Rightarrow $$ 460 = log<sub>7</sub> <sup>x</sup>. $$\\left( {{{21 \\times 22} \\over 2} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ 460 = 230. log<sub>7</sub> <sup>x</sup>\n<br><br>$$ \\Rightarrow $$ log<sub>7</sub> <sup>x</sup> = 2\n<br><br>$$ \\Rightarrow $$ x = 49",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "summation-of-series",
@@ -2928,7 +2928,7 @@
     "question": "If 2<sup>10</sup> + 2<sup>9</sup>.3<sup>1</sup> + 2<sup>8</sup>\n.3<sup>2</sup> +.....+ 2.3<sup>9</sup> + 3<sup>10</sup> = S - 2<sup>11</sup>, then S is equal to :",
     "options": [
       "$${{{3^{11}}} \\over 2} + {2^{10}}$$",
-      "3<sup>11</sup> — 2<sup>12</sup>",
+      "3<sup>11</sup> \u2014 2<sup>12</sup>",
       "2.3<sup>11</sup>",
       "3<sup>11</sup>"
     ],
@@ -2969,15 +2969,15 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "The common difference of the A.P. <br>b<sub>1</sub>, b<sub>2</sub>, … , b<sub>m</sub>\n is 2 more than the common<br> difference of A.P. a<sub>1</sub>, a<sub>2</sub>, …, a<sub>n</sub>. If<br> a<sub>40 </sub> = –159, a<sub>100</sub> = –399 and\nb<sub>100</sub> = a<sub>70</sub>, then b<sub>1</sub>\n is equal to :",
+    "question": "The common difference of the A.P. <br>b<sub>1</sub>, b<sub>2</sub>, \u2026 , b<sub>m</sub>\n is 2 more than the common<br> difference of A.P. a<sub>1</sub>, a<sub>2</sub>, \u2026, a<sub>n</sub>. If<br> a<sub>40 </sub> = \u2013159, a<sub>100</sub> = \u2013399 and\nb<sub>100</sub> = a<sub>70</sub>, then b<sub>1</sub>\n is equal to :",
     "options": [
       "127",
       "81",
-      "–127",
+      "\u2013127",
       "-81"
     ],
     "correctOptionIndex": 3,
-    "solution": "Let common difference of series\n<br>a<sub>1</sub>\n, a<sub>2</sub>\n, a<sub>3</sub>\n,..., a<sub>n</sub>\n be d.\n<br><br>$$ \\because $$ a<sub>40</sub> = a<sub>1</sub> + 39d == –159 ...(i)\n<br><br>and a<sub>100</sub> = a<sub>1</sub> + 99d = –399 ...(ii)\n<br><br>From eqn. (ii) and (i)\n<br>d = –4 and a<sub>1</sub>\n = –3.\n<br><br>The common difference of the A.P. <br>b<sub>1</sub>, b<sub>2</sub>, … , b<sub>m</sub>\n is 2 more than the common<br> difference of A.P. a<sub>1</sub>, a<sub>2</sub>, …, a<sub>n</sub>.\n<br><br>$$ \\therefore $$ Common difference of b<sub>1</sub>\n, b<sub>2</sub>\n, b<sub>3</sub>\n, ..., be (–2).\n<br><br>$$ \\because $$ b<sub>100</sub> = a<sub>70</sub>\n<br><br>$$ \\therefore $$ b<sub>1</sub>\n + 99(–2) = (–3) + 69(–4)\n<br><br>$$ \\therefore $$ b<sub>1</sub>\n = 198 – 279\n<br><br>$$ \\therefore $$ b<sub>1</sub>\n = – 81\n",
+    "solution": "Let common difference of series\n<br>a<sub>1</sub>\n, a<sub>2</sub>\n, a<sub>3</sub>\n,..., a<sub>n</sub>\n be d.\n<br><br>$$ \\because $$ a<sub>40</sub> = a<sub>1</sub> + 39d == \u2013159 ...(i)\n<br><br>and a<sub>100</sub> = a<sub>1</sub> + 99d = \u2013399 ...(ii)\n<br><br>From eqn. (ii) and (i)\n<br>d = \u20134 and a<sub>1</sub>\n = \u20133.\n<br><br>The common difference of the A.P. <br>b<sub>1</sub>, b<sub>2</sub>, \u2026 , b<sub>m</sub>\n is 2 more than the common<br> difference of A.P. a<sub>1</sub>, a<sub>2</sub>, \u2026, a<sub>n</sub>.\n<br><br>$$ \\therefore $$ Common difference of b<sub>1</sub>\n, b<sub>2</sub>\n, b<sub>3</sub>\n, ..., be (\u20132).\n<br><br>$$ \\because $$ b<sub>100</sub> = a<sub>70</sub>\n<br><br>$$ \\therefore $$ b<sub>1</sub>\n + 99(\u20132) = (\u20133) + 69(\u20134)\n<br><br>$$ \\therefore $$ b<sub>1</sub>\n = 198 \u2013 279\n<br><br>$$ \\therefore $$ b<sub>1</sub>\n = \u2013 81\n",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "arithmetic-progression",
@@ -2990,8 +2990,8 @@
     "title": "JEE Main 2020 (Online) 6th September Morning Slot",
     "year": "2020",
     "difficulty": "medium",
-    "type": "MCQM",
-    "question": "Let a , b, c , d and p be any non zero distinct real numbers such that\n<br>(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>)p<sup>2</sup> – 2(ab + bc + cd)p + (b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup>) = 0. Then :",
+    "type": "SCQ",
+    "question": "Let a , b, c , d and p be any non zero distinct real numbers such that\n<br>(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>)p<sup>2</sup> \u2013 2(ab + bc + cd)p + (b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup>) = 0. Then :",
     "options": [
       "a, c, p are in G.P.",
       "a, b, c, d are in G.P.",
@@ -2999,7 +2999,7 @@
       "a, c, p are in A.P."
     ],
     "correctOptionIndex": 1,
-    "solution": "(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>)p<sup>2</sup> – 2(ab + bc + cd)p + (b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup>) = 0\n<br><br>$$ \\Rightarrow $$ (a<sup>2</sup>p<sup>2</sup>\n+ 2abp + b<sup>2</sup>\n) + (b<sup>2</sup>p<sup>2</sup>\n + 2bcp + c<sup>2</sup>\n) + (c<sup>2</sup>\np<sup>2</sup>\n+ 2cdp + d<sup>2</sup>) = 0\n<br><br>$$ \\Rightarrow $$ (ab + b)<sup>2</sup>\n + (bp + c)<sup>2</sup>\n + (cp + d)<sup>2</sup>\n = 0\n<br><br><b>Note :</b> If sum of two or more positive quantity is zero then they are all zero.\n<br><br>$$ \\therefore $$ ap + b = 0 and bp + c = 0 and cp + d = 0\n <br><br>p = $$ - {b \\over a}$$ = $$ - {c \\over b}$$ = $$ - {d \\over c}$$\n<br><br>or $${b \\over a}$$ = $${c \\over b}$$ = $${d \\over c}$$\n<br><br>$$ \\therefore $$ a, b, c, d are in G.P.\n",
+    "solution": "(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>)p<sup>2</sup> \u2013 2(ab + bc + cd)p + (b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup>) = 0\n<br><br>$$ \\Rightarrow $$ (a<sup>2</sup>p<sup>2</sup>\n+ 2abp + b<sup>2</sup>\n) + (b<sup>2</sup>p<sup>2</sup>\n + 2bcp + c<sup>2</sup>\n) + (c<sup>2</sup>\np<sup>2</sup>\n+ 2cdp + d<sup>2</sup>) = 0\n<br><br>$$ \\Rightarrow $$ (ab + b)<sup>2</sup>\n + (bp + c)<sup>2</sup>\n + (cp + d)<sup>2</sup>\n = 0\n<br><br><b>Note :</b> If sum of two or more positive quantity is zero then they are all zero.\n<br><br>$$ \\therefore $$ ap + b = 0 and bp + c = 0 and cp + d = 0\n <br><br>p = $$ - {b \\over a}$$ = $$ - {c \\over b}$$ = $$ - {d \\over c}$$\n<br><br>or $${b \\over a}$$ = $${c \\over b}$$ = $${d \\over c}$$\n<br><br>$$ \\therefore $$ a, b, c, d are in G.P.\n",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "geometric-progression",
@@ -3043,7 +3043,7 @@
       "25"
     ],
     "correctOptionIndex": 0,
-    "solution": "3 + 4 + 8 + 9 + 13 + 14 +…….upto 40 terms\n<br><br>$$ \\Rightarrow $$ 7 + 17 + 27 +…….20 terms\n <br><br>S = $${{20} \\over 2}$$ [2 × 7 + 19 × 10]\n<br><br> = 102 × 20 = 102 m\n<br><br>$$ \\therefore $$ m = 20",
+    "solution": "3 + 4 + 8 + 9 + 13 + 14 +\u2026\u2026.upto 40 terms\n<br><br>$$ \\Rightarrow $$ 7 + 17 + 27 +\u2026\u2026.20 terms\n <br><br>S = $${{20} \\over 2}$$ [2 \u00d7 7 + 19 \u00d7 10]\n<br><br> = 102 \u00d7 20 = 102 m\n<br><br>$$ \\therefore $$ m = 20",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "summation-of-series",
@@ -3056,7 +3056,7 @@
     "title": "JEE Main 2020 (Online) 7th January Morning Slot",
     "year": "2020",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "Five numbers are in A.P. whose sum is 25 and product is 2520. If one of these five numbers is -$${1 \\over 2}$$ , then the greatest number amongst them is:\n",
     "options": [
       "$${{21} \\over 2}$$",
@@ -3065,7 +3065,7 @@
       "16"
     ],
     "correctOptionIndex": 3,
-    "solution": "Let the A.P is\n<br>a - 2d, a - d, a, a + d, a + 2d\n<br>$$ \\because $$ sum = 25 <br>$$ \\Rightarrow $$  5a = 25 $$ \\Rightarrow $$ a = 5\n<br><br>Also given,\n<br><br> product (a<sup>2</sup> – 4d<sup>2</sup>) (a<sup>2</sup> – d<sup>2</sup>).a = 2520\n<br><br>$$ \\Rightarrow $$ (25 – 4d<sup>2</sup>) (25 –d<sup>2</sup>)5 = 2520\n<br><br>$$ \\Rightarrow $$ 4d<sup>4</sup>\n – 121d<sup>2</sup>\n – 4d<sup>2</sup>\n + 121 = 0\n<br><br>$$ \\Rightarrow $$ (d<sup>2</sup>\n – 1) (4d<sup>2</sup> – 121) = 0\n<br><br>$$ \\Rightarrow $$ d = $$ \\pm $$1, d = $$ \\pm {{11} \\over 2}$$\n<br><br>When d = $$ \\pm $$1 we can't get any fraction term like -$${1 \\over 2}$$.\n<br><br>$$ \\therefore $$ d = $$ \\pm {{11} \\over 2}$$\n<br><br>And when d = $${{11} \\over 2}$$\n<br><br>we get largest term = 5 + 2d = 5 + 11 = 16",
+    "solution": "Let the A.P is\n<br>a - 2d, a - d, a, a + d, a + 2d\n<br>$$ \\because $$ sum = 25 <br>$$ \\Rightarrow $$  5a = 25 $$ \\Rightarrow $$ a = 5\n<br><br>Also given,\n<br><br> product (a<sup>2</sup> \u2013 4d<sup>2</sup>) (a<sup>2</sup> \u2013 d<sup>2</sup>).a = 2520\n<br><br>$$ \\Rightarrow $$ (25 \u2013 4d<sup>2</sup>) (25 \u2013d<sup>2</sup>)5 = 2520\n<br><br>$$ \\Rightarrow $$ 4d<sup>4</sup>\n \u2013 121d<sup>2</sup>\n \u2013 4d<sup>2</sup>\n + 121 = 0\n<br><br>$$ \\Rightarrow $$ (d<sup>2</sup>\n \u2013 1) (4d<sup>2</sup> \u2013 121) = 0\n<br><br>$$ \\Rightarrow $$ d = $$ \\pm $$1, d = $$ \\pm {{11} \\over 2}$$\n<br><br>When d = $$ \\pm $$1 we can't get any fraction term like -$${1 \\over 2}$$.\n<br><br>$$ \\therefore $$ d = $$ \\pm {{11} \\over 2}$$\n<br><br>And when d = $${{11} \\over 2}$$\n<br><br>we get largest term = 5 + 2d = 5 + 11 = 16",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "arithmetic-progression",
@@ -3087,7 +3087,7 @@
       "50"
     ],
     "correctOptionIndex": 1,
-    "solution": "T<sub>10</sub> = a + 9d = $${1 \\over {20}}$$ ....(1)\n<br><br>T<sub>20</sub> = a + 19d = $${1 \\over {10}}$$ .....(2)\n<br><br>Equation (2) – (1)\n<br><br>10d = $${1 \\over {10}}$$ - $${1 \\over {20}}$$\n<br><br>$$ \\Rightarrow $$ d = $${1 \\over {200}}$$\n<br><br>a + $${9 \\over {200}}$$ = $${1 \\over {20}}$$\n<br><br>$$ \\Rightarrow $$ a = $${1 \\over {200}}$$\n<br><br>S<sub>200</sub> = $${{200} \\over 2}\\left[ {{2 \\over {200}} + \\left( {200 - 1} \\right) \\times {1 \\over {200}}} \\right]$$\n<br><br>= $$100\\left[ {{2 \\over {200}} + {{199} \\over {200}}} \\right]$$\n<br><br>= $${{201} \\over 2}$$ = $$100{1 \\over 2}$$",
+    "solution": "T<sub>10</sub> = a + 9d = $${1 \\over {20}}$$ ....(1)\n<br><br>T<sub>20</sub> = a + 19d = $${1 \\over {10}}$$ .....(2)\n<br><br>Equation (2) \u2013 (1)\n<br><br>10d = $${1 \\over {10}}$$ - $${1 \\over {20}}$$\n<br><br>$$ \\Rightarrow $$ d = $${1 \\over {200}}$$\n<br><br>a + $${9 \\over {200}}$$ = $${1 \\over {20}}$$\n<br><br>$$ \\Rightarrow $$ a = $${1 \\over {200}}$$\n<br><br>S<sub>200</sub> = $${{200} \\over 2}\\left[ {{2 \\over {200}} + \\left( {200 - 1} \\right) \\times {1 \\over {200}}} \\right]$$\n<br><br>= $$100\\left[ {{2 \\over {200}} + {{199} \\over {200}}} \\right]$$\n<br><br>= $${{201} \\over 2}$$ = $$100{1 \\over 2}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "arithmetic-progression",
@@ -3118,7 +3118,7 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let ƒ : <b>R</b> $$ \\to $$ <b>R</b> be such that for all \nx $$ \\in $$ R <br>(2<sup>1+x</sup> + 2<sup>1–x</sup>), ƒ(x) and (3<sup>x</sup> + 3<sup>–x</sup>) are in\nA.P., <br>then the minimum value of ƒ(x) is",
+    "question": "Let \u0192 : <b>R</b> $$ \\to $$ <b>R</b> be such that for all \nx $$ \\in $$ R <br>(2<sup>1+x</sup> + 2<sup>1\u2013x</sup>), \u0192(x) and (3<sup>x</sup> + 3<sup>\u2013x</sup>) are in\nA.P., <br>then the minimum value of \u0192(x) is",
     "options": [
       "2",
       "0",
@@ -3182,7 +3182,7 @@
     "question": "The number of terms common to the two A.P.'s\n3, 7, 11, ....., 407 and 2, 9, 16, ....., 709 is ______.",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "First A.P. is 3, 7, 11, 15, 19, 23, ..... 407\n<br><br>d<sub>1</sub> = 4\n<br><br>Second A.P. is 2, 9, 16, 23, ..... 709\n<br><br>d<sub>2</sub> = 7\n<br><br>First common term = 23\n<br><br>Common difference of new A.P using the common terms of the two given A.P's is d = L.C.M. (4, 7) = 28\n<br><br>Last term $$ \\le $$ 407\n<br><br>$$ \\Rightarrow $$  23 + (n – 1) (28) $$ \\le $$ 407\n<br><br>$$ \\Rightarrow $$ n $$ \\le $$ 14.7\n<br><br>$$ \\therefore $$ n = 14",
+    "solution": "First A.P. is 3, 7, 11, 15, 19, 23, ..... 407\n<br><br>d<sub>1</sub> = 4\n<br><br>Second A.P. is 2, 9, 16, 23, ..... 709\n<br><br>d<sub>2</sub> = 7\n<br><br>First common term = 23\n<br><br>Common difference of new A.P using the common terms of the two given A.P's is d = L.C.M. (4, 7) = 28\n<br><br>Last term $$ \\le $$ 407\n<br><br>$$ \\Rightarrow $$  23 + (n \u2013 1) (28) $$ \\le $$ 407\n<br><br>$$ \\Rightarrow $$ n $$ \\le $$ 14.7\n<br><br>$$ \\therefore $$ n = 14",
     "marks": 4,
     "negativeMarks": 0,
     "topic": "arithmetic-progression",
@@ -4324,7 +4324,7 @@
     "title": "JEE Main 2022 (Online) 27th June Morning Shift",
     "year": "2022",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>$$x = \\sum\\limits_{n = 0}^\\infty  {{a^n},y = \\sum\\limits_{n = 0}^\\infty  {{b^n},z = \\sum\\limits_{n = 0}^\\infty  {{c^n}} } } $$, where a, b, c are in A.P. and |a| < 1, |b| < 1, |c| < 1, abc $$\\ne$$ 0, then :</p>",
     "options": [
       "x, y, z are in A.P.",
@@ -5420,7 +5420,7 @@
     "question": "If three successive terms of a G.P. with common ratio $\\mathrm{r}(\\mathrm{r}>1)$ are the lengths of the sides of a triangle and $[r]$ denotes the greatest integer less than or equal to $r$, then $3[r]+[-r]$ is equal to _____________.",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "<p>To solve this problem, let&#39;s first denote the three successive terms of a geometric progression (G.P.) with common ratio $r$ as $a$, $ar$, and $ar^2$, where $a$ is the first term and $r &gt; 1$. These three terms represent the lengths of the sides of a triangle.</p>\n<p>According to the triangle inequality theorem, the sum of the lengths of any two sides of a triangle must be greater than the length of the third side. Therefore, for the three terms to form a triangle, the following inequalities must hold:</p>\n<p>$$\n1) \\ a + ar &gt; ar^2 \\\\\\\\\n$$\n<br/><br/>$$2) \\ a + ar^2 &gt; ar $$\n<br/><br/>$$\n3) \\ ar + ar^2 &gt; a\n$$</p>\n<p>Given that $r &gt; 1$, inequalities 2 and 3 will always hold because:</p>\n<p>$$\nar &lt; ar^2 \\ \\text{and} \\ a &lt; ar,\n$$</p>\n<p>indicating that both $a + ar^2$ and $ar + ar^2$ will be greater than $ar$ and $a$ respectively. Therefore, we only need to check the first inequality to ensure that the three terms can form a triangle:</p>\n<p>$$\na + ar &gt; ar^2\n$$</p>\n<p>Simplifying this, we get:</p>\n<p>$$\na(1 + r) &gt; a r^2\n$$</p>\n<p>Since $a$ is positive (as it represents the length of a side of a triangle), we can divide both sides of the inequality by $a$ without changing the direction of the inequality:</p>\n<p>$$\n1 + r &gt; r^2\n$$</p>\n<p>We can then subtract $r$ from both sides:</p>\n<p>$$\n1 &gt; r^2 - r\n$$</p>\n<p>Simplifying the right side by factoring $r$:</p>\n<p>$$\n1 &gt; r(r - 1)\n$$</p>\n<p>Given that $r &gt; 1$, the quantity $(r - 1)$ is positive; hence, $r(r - 1)$ is also positive. This means the actual value for $r$ to satisfy the inequality is within the interval $(1, \\sqrt{2})$ because $r(r - 1)$ increases with increasing $r$, and it would be 1 when $r = \\sqrt{2}$. It should be greater than 1, and less than $\\sqrt{2}$ such that $r^2 - r$ stays below 1.</p>\n<p>Now let’s consider the expressions $[r]$ and $[-r]$. The symbol $[x]$ denotes the greatest integer less than or equal to $x$ (also known as the floor function).</p>\n<p>Since $1 &lt; r &lt; \\sqrt{2}$, $[r] = 1$, because 1 is the greatest integer less than $r$ within that interval.</p>\n<p>For $[-r]$, we need the greatest integer less than or equal to $-r$. Since $-r$ is negative and less than $-1$ (because $r &gt; 1$), $[-r] = -2$, as this is the greatest integer that does not exceed the negative value of $r$ (which lies between $-\\sqrt{2}$ and $-1$).</p>\n<p>Now we can substitute these values into the expression:</p>\n<p>$$\n3[r] + [-r] = 3 \\cdot 1 + (-2) = 3 - 2 = 1\n$$</p>\n<p>Therefore $3[r] + [-r]$ is equal to 1.</p>\n",
+    "solution": "<p>To solve this problem, let&#39;s first denote the three successive terms of a geometric progression (G.P.) with common ratio $r$ as $a$, $ar$, and $ar^2$, where $a$ is the first term and $r &gt; 1$. These three terms represent the lengths of the sides of a triangle.</p>\n<p>According to the triangle inequality theorem, the sum of the lengths of any two sides of a triangle must be greater than the length of the third side. Therefore, for the three terms to form a triangle, the following inequalities must hold:</p>\n<p>$$\n1) \\ a + ar &gt; ar^2 \\\\\\\\\n$$\n<br/><br/>$$2) \\ a + ar^2 &gt; ar $$\n<br/><br/>$$\n3) \\ ar + ar^2 &gt; a\n$$</p>\n<p>Given that $r &gt; 1$, inequalities 2 and 3 will always hold because:</p>\n<p>$$\nar &lt; ar^2 \\ \\text{and} \\ a &lt; ar,\n$$</p>\n<p>indicating that both $a + ar^2$ and $ar + ar^2$ will be greater than $ar$ and $a$ respectively. Therefore, we only need to check the first inequality to ensure that the three terms can form a triangle:</p>\n<p>$$\na + ar &gt; ar^2\n$$</p>\n<p>Simplifying this, we get:</p>\n<p>$$\na(1 + r) &gt; a r^2\n$$</p>\n<p>Since $a$ is positive (as it represents the length of a side of a triangle), we can divide both sides of the inequality by $a$ without changing the direction of the inequality:</p>\n<p>$$\n1 + r &gt; r^2\n$$</p>\n<p>We can then subtract $r$ from both sides:</p>\n<p>$$\n1 &gt; r^2 - r\n$$</p>\n<p>Simplifying the right side by factoring $r$:</p>\n<p>$$\n1 &gt; r(r - 1)\n$$</p>\n<p>Given that $r &gt; 1$, the quantity $(r - 1)$ is positive; hence, $r(r - 1)$ is also positive. This means the actual value for $r$ to satisfy the inequality is within the interval $(1, \\sqrt{2})$ because $r(r - 1)$ increases with increasing $r$, and it would be 1 when $r = \\sqrt{2}$. It should be greater than 1, and less than $\\sqrt{2}$ such that $r^2 - r$ stays below 1.</p>\n<p>Now let\u2019s consider the expressions $[r]$ and $[-r]$. The symbol $[x]$ denotes the greatest integer less than or equal to $x$ (also known as the floor function).</p>\n<p>Since $1 &lt; r &lt; \\sqrt{2}$, $[r] = 1$, because 1 is the greatest integer less than $r$ within that interval.</p>\n<p>For $[-r]$, we need the greatest integer less than or equal to $-r$. Since $-r$ is negative and less than $-1$ (because $r &gt; 1$), $[-r] = -2$, as this is the greatest integer that does not exceed the negative value of $r$ (which lies between $-\\sqrt{2}$ and $-1$).</p>\n<p>Now we can substitute these values into the expression:</p>\n<p>$$\n3[r] + [-r] = 3 \\cdot 1 + (-2) = 3 - 2 = 1\n$$</p>\n<p>Therefore $3[r] + [-r]$ is equal to 1.</p>\n",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "geometric-progression",
@@ -5433,7 +5433,7 @@
     "title": "JEE Main 2024 (Online) 1st February Morning Shift",
     "year": "2024",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "Let $3, a, b, c$ be in A.P. and $3, a-1, b+1, c+9$ be in G.P. Then, the arithmetic mean of $a, b$ and $c$ is :",
     "options": [
       "-4",
@@ -6047,7 +6047,7 @@
     "question": "<p>Let the positive integers be written in the form :</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lv4szvut/a1967ea2-4e21-4aa7-bad6-25314480f38f/dad88350-fd44-11ee-8075-a71888d2298c/file-1lv4szvuu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lv4szvut/a1967ea2-4e21-4aa7-bad6-25314480f38f/dad88350-fd44-11ee-8075-a71888d2298c/file-1lv4szvuu.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 8th April Morning Shift Mathematics - Sequences and Series Question 69 English\"></p>\n<p>If the $$k^{\\text {th }}$$ row contains exactly $$k$$ numbers for every natural number $$k$$, then the row in which the number 5310 will be, is __________.</p>",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "<p>To solve this problem, we need to determine in which row the number $5310$ appears when positive integers are arranged in rows such that the $k^\\text{th}$ row contains exactly $k$ numbers.</p>\n<h3><strong>Understanding the Pattern</strong></h3>\n\n<p><p><strong>First row ($k = 1$)</strong>: Contains 1 number.</p></p>\n<p><p><strong>Second row ($k = 2$)</strong>: Contains 2 numbers.</p></p>\n<p><p><strong>Third row ($k = 3$)</strong>: Contains 3 numbers.</p></p>\n<p><p><strong>…</strong></p></p>\n<p><p><strong>$k^\\text{th}$ row</strong>: Contains $k$ numbers.</p></p>\n\n<h3><strong>Total Numbers Up to the $k^\\text{th}$ Row</strong></h3>\n<p>The total number of integers up to the $k^\\text{th}$ row is given by the sum of the first $k$ natural numbers:</p>\n<p>$ S(k) = 1 + 2 + 3 + \\dots + k = \\frac{k(k+1)}{2} $</p>\n<h3><strong>Finding the Row Containing 5310</strong></h3>\n<p>We need to find the smallest integer $k$ such that $S(k-1) < 5310 \\leq S(k)$. This means:</p>\n<p>$ \\frac{(k-1)k}{2} < 5310 \\leq \\frac{k(k+1)}{2} $</p>\n<h4><strong>Step 1: Estimate $k$</strong></h4>\n<p>Let's approximate $k$ by solving the inequality:</p>\n<p>$ \\frac{k(k+1)}{2} \\geq 5310 $</p>\n<p>Multiply both sides by 2:</p>\n<p>$ k(k+1) \\geq 10620 $</p>\n<p>This is a quadratic inequality. We can approximate $k$ by taking the square root:</p>\n<p>$ k \\approx \\sqrt{10620} \\approx 103 $</p>\n<h4><strong>Step 2: Calculate $S(k)$ for $k = 102$ and $k = 103$</strong></h4>\n\n<p>For $k = 102$:</p>\n\n<p>$ S(102) = \\frac{102 \\times 103}{2} = \\frac{10506}{2} = 5253 $</p>\n\n<p>For $k = 103$:</p>\n\n<p>$ S(103) = \\frac{103 \\times 104}{2} = \\frac{10712}{2} = 5356 $</p>\n<h4><strong>Step 3: Determine the Correct Row</strong></h4>\n<p>Since $S(102) = 5253 < 5310 \\leq 5356 = S(103)$, the number $5310$ lies between $5254$ and $5356$, inclusive. Therefore, it is in the $103^\\text{rd}$ row.</p>\n<h3><strong>Conclusion</strong></h3>\n<p>The number $5310$ will be in the <strong>$103^\\text{rd}$ row</strong>.</p>",
+    "solution": "<p>To solve this problem, we need to determine in which row the number $5310$ appears when positive integers are arranged in rows such that the $k^\\text{th}$ row contains exactly $k$ numbers.</p>\n<h3><strong>Understanding the Pattern</strong></h3>\n\n<p><p><strong>First row ($k = 1$)</strong>: Contains 1 number.</p></p>\n<p><p><strong>Second row ($k = 2$)</strong>: Contains 2 numbers.</p></p>\n<p><p><strong>Third row ($k = 3$)</strong>: Contains 3 numbers.</p></p>\n<p><p><strong>\u2026</strong></p></p>\n<p><p><strong>$k^\\text{th}$ row</strong>: Contains $k$ numbers.</p></p>\n\n<h3><strong>Total Numbers Up to the $k^\\text{th}$ Row</strong></h3>\n<p>The total number of integers up to the $k^\\text{th}$ row is given by the sum of the first $k$ natural numbers:</p>\n<p>$ S(k) = 1 + 2 + 3 + \\dots + k = \\frac{k(k+1)}{2} $</p>\n<h3><strong>Finding the Row Containing 5310</strong></h3>\n<p>We need to find the smallest integer $k$ such that $S(k-1) < 5310 \\leq S(k)$. This means:</p>\n<p>$ \\frac{(k-1)k}{2} < 5310 \\leq \\frac{k(k+1)}{2} $</p>\n<h4><strong>Step 1: Estimate $k$</strong></h4>\n<p>Let's approximate $k$ by solving the inequality:</p>\n<p>$ \\frac{k(k+1)}{2} \\geq 5310 $</p>\n<p>Multiply both sides by 2:</p>\n<p>$ k(k+1) \\geq 10620 $</p>\n<p>This is a quadratic inequality. We can approximate $k$ by taking the square root:</p>\n<p>$ k \\approx \\sqrt{10620} \\approx 103 $</p>\n<h4><strong>Step 2: Calculate $S(k)$ for $k = 102$ and $k = 103$</strong></h4>\n\n<p>For $k = 102$:</p>\n\n<p>$ S(102) = \\frac{102 \\times 103}{2} = \\frac{10506}{2} = 5253 $</p>\n\n<p>For $k = 103$:</p>\n\n<p>$ S(103) = \\frac{103 \\times 104}{2} = \\frac{10712}{2} = 5356 $</p>\n<h4><strong>Step 3: Determine the Correct Row</strong></h4>\n<p>Since $S(102) = 5253 < 5310 \\leq 5356 = S(103)$, the number $5310$ lies between $5254$ and $5356$, inclusive. Therefore, it is in the $103^\\text{rd}$ row.</p>\n<h3><strong>Conclusion</strong></h3>\n<p>The number $5310$ will be in the <strong>$103^\\text{rd}$ row</strong>.</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "summation-of-series",
@@ -6293,7 +6293,7 @@
     "year": "2025",
     "difficulty": "medium",
     "type": "FIB",
-    "question": "<p>The interior angles of a polygon with <i>n</i> sides, are in an A.P. with common difference 6°. If the largest interior angle of the polygon is 219°, then <i>n</i> is equal to _______.</p>",
+    "question": "<p>The interior angles of a polygon with <i>n</i> sides, are in an A.P. with common difference 6\u00b0. If the largest interior angle of the polygon is 219\u00b0, then <i>n</i> is equal to _______.</p>",
     "options": [],
     "correctOptionIndex": 0,
     "solution": "<p>$$\\begin{aligned}\n& \\frac{\\mathrm{n}}{2}(2 \\mathrm{a}+(\\mathrm{n}-1) 6)=(\\mathrm{n}-2) \\cdot 180^{\\circ} \\\\\n& \\mathrm{an}+3 \\mathrm{n}^2-3 \\mathrm{n}=(\\mathrm{n}-2) \\cdot 180^{\\circ}\\quad\\text{.... (1)}\n\\end{aligned}$$</p>\n<p>Now according to question</p>\n<p>$$\\begin{aligned}\n& a+(n-1) 6^{\\circ}=219^{\\circ} \\\\\n& \\Rightarrow a=225^{\\circ}-6 n^{\\circ}\\quad\\text{.... (2)}\n\\end{aligned}$$</p>\n<p>Putting value of a from equation (2) in (1)</p>\n<p>We get</p>\n<p>$$\\begin{aligned}\n& \\left(225 \\mathrm{n}-6 \\mathrm{n}^2\\right)+3 \\mathrm{n}^2-3 \\mathrm{n}=180 \\mathrm{n}-360 \\\\\n& \\Rightarrow 2 \\mathrm{n}^2-42 \\mathrm{n}-360=0 \\\\\n& \\Rightarrow \\mathrm{n} 2-14 \\mathrm{n}-120=0 \\\\\n& \\mathrm{n}=20,-6 \\text { (rejected) }\n\\end{aligned}$$</p>",
@@ -6936,7 +6936,7 @@
       "<p>complex roots of magnitude less than $2$</p>"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p>The arithmetic mean of $\\frac{1}{a}$ and $\\frac{1}{b}$ is $\\frac{5}{16}$.</p>\n<p>$$\\frac{\\frac{1}{a}+\\frac{1}{b}}{2}=\\frac{5}{16} $$\n<br/><br/>$$\\Rightarrow \\frac{1}{a}+\\frac{1}{b}=\\frac{5}{8} $$\n<br/><br/>$$\\Rightarrow $$ $$ \\frac{a+b}{a b}=\\frac{5}{8} $$\n<br/><br/>$$\\Rightarrow 8(a+b)=5 a b \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(i)$$</p>\n<p>$a, 4, \\alpha, b$ are in A.P. Let the common difference be $d$.</p>\n<ul>\n\n<li><p>(A). $4=a+d \\Longrightarrow d=4-a$</p></li>\n\n<li><p>(B). $\\alpha=a+2 d=a+2(4-a)=8-a$</p></li>\n\n<li><p>(C). $b=a+3 d=a+3(4-a)=12-2 a$</p></li>\n\n</ul>\n<p>Solve for $a, b$, and $\\alpha$</p>\n<p>Substitute $b=12-2 a$ into equation (1) :</p>\n<p>$$ \\begin{gathered} 8(a+12-2 a)=5 a(12-2 a) \\\\ 8(12-a)=60 a-10 a^2 \\\\ 96-8 a=60 a-10 a^2 \\\\ 10 a^2-68 a+96=0 \\\\ 5 a^2-34 a+48=0 \\end{gathered} $$</p>\n<p>Using the quadratic formula: $a=\\frac{34 \\pm \\sqrt{34^2-4(5)(48)}}{2(5)}=\\frac{34 \\pm \\sqrt{1156-960}}{10}=\\frac{34 \\pm 14}{10}$</p>\n<p>$$ a=\\frac{48}{10}=4.8, \\quad a=\\frac{20}{10}=2 \\text { (Discarded because the problem states } a>2 \\text { ) } $$</p>\n<p>With $a=4.8: \\quad \\alpha=8-4.8=\\mathbf{3 . 2}, \\quad b=12-2(4.8)=12-9.6=\\mathbf{2 . 4}$</p>\n<p>Analyze the Quadratic Equation</p>\n<p>The given equation is $\\alpha x^2-a x+2(\\alpha-2 b)=0$. Substitute the values:</p>\n<p>$$ \\begin{gathered} 3.2 x^2-4.8 x+2(3.2-2(2.4))=0 \\\\ 3.2 x^2-4.8 x+2(3.2-4.8)=0 \\\\ 3.2 x^2-4.8 x-3.2=0 \\\\ 2 x^2-3 x-2=0 \\end{gathered} $$</p>\n<p></p>\n<p>Factorise $$ (2 x+1)(x-2)=0 $$</p>\n<p>The roots are $x=2$ and $x=-0.5$.</p>\n<p>Looking at the options: Root $x=2$ lies in the interval $(1,4)$. Root $x=-0.5$ lies in the interval $(-2,0)$.</p>",
+    "solution": "<p>The arithmetic mean of $\\frac{1}{a}$ and $\\frac{1}{b}$ is $\\frac{5}{16}$.</p>\n<p>$$\\frac{\\frac{1}{a}+\\frac{1}{b}}{2}=\\frac{5}{16} $$\n<br/><br/>$$\\Rightarrow \\frac{1}{a}+\\frac{1}{b}=\\frac{5}{8} $$\n<br/><br/>$$\\Rightarrow $$ $$ \\frac{a+b}{a b}=\\frac{5}{8} $$\n<br/><br/>$$\\Rightarrow 8(a+b)=5 a b \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(i)$$</p>\n<p>$a, 4, \\alpha, b$ are in A.P. Let the common difference be $d$.</p>\n<ul>\n\n<li><p>(A). $4=a+d \\Longrightarrow d=4-a$</p></li>\n\n<li><p>(B). $\\alpha=a+2 d=a+2(4-a)=8-a$</p></li>\n\n<li><p>(C). $b=a+3 d=a+3(4-a)=12-2 a$</p></li>\n\n</ul>\n<p>Solve for $a, b$, and $\\alpha$</p>\n<p>Substitute $b=12-2 a$ into equation (1) :</p>\n<p>$$ \\begin{gathered} 8(a+12-2 a)=5 a(12-2 a) \\\\ 8(12-a)=60 a-10 a^2 \\\\ 96-8 a=60 a-10 a^2 \\\\ 10 a^2-68 a+96=0 \\\\ 5 a^2-34 a+48=0 \\end{gathered} $$</p>\n<p>Using the quadratic formula: $a=\\frac{34 \\pm \\sqrt{34^2-4(5)(48)}}{2(5)}=\\frac{34 \\pm \\sqrt{1156-960}}{10}=\\frac{34 \\pm 14}{10}$</p>\n<p>$$ a=\\frac{48}{10}=4.8, \\quad a=\\frac{20}{10}=2 \\text { (Discarded because the problem states } a>2 \\text { ) } $$</p>\n<p>With $a=4.8: \\quad \\alpha=8-4.8=\\mathbf{3 . 2}, \\quad b=12-2(4.8)=12-9.6=\\mathbf{2 . 4}$</p>\n<p>Analyze the Quadratic Equation</p>\n<p>The given equation is $\\alpha x^2-a x+2(\\alpha-2 b)=0$. Substitute the values:</p>\n<p>$$ \\begin{gathered} 3.2 x^2-4.8 x+2(3.2-2(2.4))=0 \\\\ 3.2 x^2-4.8 x+2(3.2-4.8)=0 \\\\ 3.2 x^2-4.8 x-3.2=0 \\\\ 2 x^2-3 x-2=0 \\end{gathered} $$</p>\n<p></p>\n<p>Factorise\u00a0$$ (2 x+1)(x-2)=0 $$</p>\n<p>The roots are $x=2$ and $x=-0.5$.</p>\n<p>Looking at the options: Root $x=2$ lies in the interval $(1,4)$. Root $x=-0.5$ lies in the interval $(-2,0)$.</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "am-gm-and-hm",
@@ -6975,7 +6975,7 @@
     "question": "<p>If $\\sum\\limits_{r=1}^{25} \\left( \\frac{r}{r^4 + r^2 + 1} \\right) = \\frac{p}{q}$, where p and q are positive integers such that $\\gcd(p, q) = 1$, then p + q is equal to ________.</p>",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "<p>Given</p>\n<p>$$ \\sum\\limits_{r=1}^{25}\\left(\\frac{r}{r^4+r^2+1}\\right)=\\frac{p}{q} $$</p>\n<p>The expression $r^4+r^2+1$ can be factored using a completion of squares technique:</p>\n<p>$$ r^4+r^2+1=\\left(r^4+2 r^2+1\\right)-r^2=\\left(r^2+1\\right)^2-r^2 $$</p>\n<p>Using the difference of squares formula, $a^2-b^2=(a-b)(a+b)$ :</p>\n<p>$$ r^4+r^2+1=\\left(r^2-r+1\\right)\\left(r^2+r+1\\right) $$</p>\n<p>Split into Partial Fractions</p>\n<p>Now, let's rewrite the general term $T_r$ :</p>\n<p>$$ T_r=\\frac{r}{\\left(r^2-r+1\\right)\\left(r^2+r+1\\right)} $$</p>\n<p>We can express the numerator $r$ in terms of the factors in the denominator:</p>\n<p>$$ \\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)=2 r $$</p>\n<p>So, $r=\\frac{1}{2}\\left[\\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)\\right]$. Substituting this back:</p>\n<p>$$ T_r=\\frac{1}{2}\\left[\\frac{\\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)}{\\left(r^2-r+1\\right)\\left(r^2+r+1\\right)}\\right] $$</p>\n<p>$$ T_r=\\frac{1}{2}\\left[\\frac{1}{r^2-r+1}-\\frac{1}{r^2+r+1}\\right] $$</p>\n<p>Evaluate the Telescoping Sum</p>\n<p>Let $f(r)=\\frac{1}{r^2-r+1}$. \n\n<br/><br/>Note that $f(r+1)=\\frac{1}{(r+1)^2-(r+1)+1}=\\frac{1}{r^2+2 r+1-r-1+1}=\\frac{1}{r^2+r+1}$. </p>\n<p>Our sum becomes : $$ S=\\frac{1}{2} \\sum\\limits_{r=1}^{25}[f(r)-f(r+1)] $$</p>\n<p>Expanding this:</p>\n<ul>\n\n<li><p>For $r=1$ : $f(1)-f(2)$</p></li>\n\n<li><p>For $r=2: f(2)-f(3)$</p></li>\n\n<li><p>For $r=3: f(3)-f(4)$</p></li>\n\n<li><p>…</p></li>\n\n<li><p>For $r=24: f(24)-f(25)$</p></li>\n\n<li><p>For $r=25: f(25)-f(26)$</p></li>\n\n</ul>\n<p>Result of summation: $\\sum\\limits_{r=1}^{25}[f(r)-f(r+1)]=f(1)-f(26)$</p>\n<p>So,</p>\n<p>$$ S=\\frac{1}{2}[f(1)-f(26)] $$</p>\n<p>Calculate the Final Value</p>\n<p><ul></p>\n<p><li><p>$f(1)=\\frac{1}{1^2-1+1}=1$</p></li></p>\n<p>$\\begin{aligned} & f(26)=\\frac{1}{25^2+25+1}=\\frac{1}{625+25+1}=\\frac{1}{651} \\\\ & S=\\frac{1}{2}\\left[1-\\frac{1}{651}\\right]=\\frac{1}{2}\\left(\\frac{651-1}{651}\\right)=\\frac{650}{2 \\times 651} \\\\ & S=\\frac{325}{651}\\end{aligned}$</p>\n<p>$325=(5)^2 \\times 13$ and $651=3 \\times 7 \\times 31$ they share no common factor $\\operatorname{gcd}(325,651)=1$ </p>\n<p>So $p=325$ and $q=651  \n<br/><br/>$$\\therefore $$ p+q=325+651=976$</p>",
+    "solution": "<p>Given</p>\n<p>$$ \\sum\\limits_{r=1}^{25}\\left(\\frac{r}{r^4+r^2+1}\\right)=\\frac{p}{q} $$</p>\n<p>The expression $r^4+r^2+1$ can be factored using a completion of squares technique:</p>\n<p>$$ r^4+r^2+1=\\left(r^4+2 r^2+1\\right)-r^2=\\left(r^2+1\\right)^2-r^2 $$</p>\n<p>Using the difference of squares formula, $a^2-b^2=(a-b)(a+b)$ :</p>\n<p>$$ r^4+r^2+1=\\left(r^2-r+1\\right)\\left(r^2+r+1\\right) $$</p>\n<p>Split into Partial Fractions</p>\n<p>Now, let's rewrite the general term $T_r$ :</p>\n<p>$$ T_r=\\frac{r}{\\left(r^2-r+1\\right)\\left(r^2+r+1\\right)} $$</p>\n<p>We can express the numerator $r$ in terms of the factors in the denominator:</p>\n<p>$$ \\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)=2 r $$</p>\n<p>So, $r=\\frac{1}{2}\\left[\\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)\\right]$. Substituting this back:</p>\n<p>$$ T_r=\\frac{1}{2}\\left[\\frac{\\left(r^2+r+1\\right)-\\left(r^2-r+1\\right)}{\\left(r^2-r+1\\right)\\left(r^2+r+1\\right)}\\right] $$</p>\n<p>$$ T_r=\\frac{1}{2}\\left[\\frac{1}{r^2-r+1}-\\frac{1}{r^2+r+1}\\right] $$</p>\n<p>Evaluate the Telescoping Sum</p>\n<p>Let $f(r)=\\frac{1}{r^2-r+1}$. \n\n<br/><br/>Note that $f(r+1)=\\frac{1}{(r+1)^2-(r+1)+1}=\\frac{1}{r^2+2 r+1-r-1+1}=\\frac{1}{r^2+r+1}$. </p>\n<p>Our sum becomes : $$ S=\\frac{1}{2} \\sum\\limits_{r=1}^{25}[f(r)-f(r+1)] $$</p>\n<p>Expanding this:</p>\n<ul>\n\n<li><p>For $r=1$ : $f(1)-f(2)$</p></li>\n\n<li><p>For $r=2: f(2)-f(3)$</p></li>\n\n<li><p>For $r=3: f(3)-f(4)$</p></li>\n\n<li><p>\u2026</p></li>\n\n<li><p>For $r=24: f(24)-f(25)$</p></li>\n\n<li><p>For $r=25: f(25)-f(26)$</p></li>\n\n</ul>\n<p>Result of summation: $\\sum\\limits_{r=1}^{25}[f(r)-f(r+1)]=f(1)-f(26)$</p>\n<p>So,</p>\n<p>$$ S=\\frac{1}{2}[f(1)-f(26)] $$</p>\n<p>Calculate the Final Value</p>\n<p><ul></p>\n<p><li><p>$f(1)=\\frac{1}{1^2-1+1}=1$</p></li></p>\n<p>$\\begin{aligned} & f(26)=\\frac{1}{25^2+25+1}=\\frac{1}{625+25+1}=\\frac{1}{651} \\\\ & S=\\frac{1}{2}\\left[1-\\frac{1}{651}\\right]=\\frac{1}{2}\\left(\\frac{651-1}{651}\\right)=\\frac{650}{2 \\times 651} \\\\ & S=\\frac{325}{651}\\end{aligned}$</p>\n<p>$325=(5)^2 \\times 13$ and $651=3 \\times 7 \\times 31$ they share no common factor $\\operatorname{gcd}(325,651)=1$ </p>\n<p>So $p=325$ and $q=651  \n<br/><br/>$$\\therefore $$ p+q=325+651=976$</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "summation-of-series",
@@ -7154,7 +7154,7 @@
     "title": "JEE Main 2026 (Online) 5th April Evening Shift",
     "year": "2026",
     "difficulty": "easy",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Let $\\mathrm{A}_1, \\mathrm{~A}_2, \\mathrm{~A}_3, \\ldots \\ldots . ., \\mathrm{A}_{39}$ be 39 arithmetic means between the numbers 59 and 159. Then the mean of $\\mathrm{A}_{25}, \\mathrm{~A}_{28}, \\mathrm{~A}_{31}$ and $\\mathrm{A}_{36}$ is equal to :</p>\n",
     "options": [
       "<p>129</p>\n",
@@ -7167,7 +7167,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "arithmetic-progression",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "mnswhshn",
@@ -7273,7 +7273,7 @@
       "<p>$\\frac{1093}{729}$</p>"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>For the quadratic equation</p>\n<p>$$ \\left(n^2-2n+2\\right)x^2-3x+\\left(n^2-2n+2\\right)^2=0, $$</p>\n<p>let us first compare it with the standard quadratic form</p>\n<p>$$ ax^2+bx+c=0. $$</p>\n<p>So,</p>\n<p>$$ a=n^2-2n+2,\\qquad b=-3,\\qquad c=\\left(n^2-2n+2\\right)^2. $$</p>\n<p>Now rewrite $a$ in a simpler form:</p>\n<p>$$ n^2-2n+2=(n-1)^2+1. $$</p>\n<p>Hence,</p>\n<p>$$ a=(n-1)^2+1. $$</p>\n<p>Since $(n-1)^2 \\ge 0$, we get</p>\n<p>$$ a \\ge 1. $$</p>\n<p>Now, for a quadratic equation, by Vieta’s formulas:</p>\n<ul>\n<li><p>Sum of roots $= -\\dfrac{b}{a}$</p></li>\n<li><p>Product of roots $= \\dfrac{c}{a}$</p></li>\n</ul>\n<p>So here,</p>\n<p>$$ \\text{Sum of roots}=\\frac{3}{a} $$</p>\n<p>and</p>\n<p>$$ \\text{Product of roots}=\\frac{a^2}{a}=a. $$</p>\n<p>Therefore,</p>\n<p>$$ \\text{Product of roots}=(n-1)^2+1. $$</p>\n<p>So the minimum value of the product is clearly</p>\n<p>$$ \\alpha=1, $$</p>\n<p>attained when $n=1$.</p>\n<p>Now the sum of roots is</p>\n<p>$$ \\frac{3}{(n-1)^2+1}. $$</p>\n<p>Since the denominator is minimum when $(n-1)^2=0$, the maximum value of the sum is</p>\n<p>$$ \\beta=\\frac{3}{1}=3. $$</p>\n<p>So we have</p>\n<p>$$ \\alpha=1,\\qquad \\beta=3. $$</p>\n<p>Now the G.P. has</p>\n<ul>\n<li><p>first term $a=\\alpha=1$</p></li>\n<li><p>common ratio $r=\\dfrac{\\alpha}{\\beta}=\\dfrac{1}{3}$</p></li>\n</ul>\n<p>We need the sum of first six terms:</p>\n<p>$$ S_6=a\\cdot \\frac{1-r^6}{1-r}. $$</p>\n<p>Substitute the values:</p>\n<p>$$ S_6=1\\cdot \\frac{1-\\left(\\frac13\\right)^6}{1-\\frac13}. $$</p>\n<p>Now,</p>\n<p>$$ \\left(\\frac13\\right)^6=\\frac{1}{729} $$</p>\n<p>and</p>\n<p>$$ 1-\\frac13=\\frac23. $$</p>\n<p>Hence,</p>\n<p>$$ S_6=\\frac{1-\\frac{1}{729}}{\\frac23} =\\frac{\\frac{728}{729}}{\\frac23} =\\frac{728}{729}\\cdot \\frac32. $$</p>\n<p>So,</p>\n<p>$$ S_6=\\frac{1092}{729} =\\frac{364}{243}. $$</p>\n<p>Therefore, the required sum is</p>\n<p>$$ \\boxed{\\frac{364}{243}}. $$</p>\n<p>So the correct option is</p>\n<p>$$ \\boxed{\\text{Option C}}. $$</p>",
+    "solution": "<p>For the quadratic equation</p>\n<p>$$ \\left(n^2-2n+2\\right)x^2-3x+\\left(n^2-2n+2\\right)^2=0, $$</p>\n<p>let us first compare it with the standard quadratic form</p>\n<p>$$ ax^2+bx+c=0. $$</p>\n<p>So,</p>\n<p>$$ a=n^2-2n+2,\\qquad b=-3,\\qquad c=\\left(n^2-2n+2\\right)^2. $$</p>\n<p>Now rewrite $a$ in a simpler form:</p>\n<p>$$ n^2-2n+2=(n-1)^2+1. $$</p>\n<p>Hence,</p>\n<p>$$ a=(n-1)^2+1. $$</p>\n<p>Since $(n-1)^2 \\ge 0$, we get</p>\n<p>$$ a \\ge 1. $$</p>\n<p>Now, for a quadratic equation, by Vieta\u2019s formulas:</p>\n<ul>\n<li><p>Sum of roots $= -\\dfrac{b}{a}$</p></li>\n<li><p>Product of roots $= \\dfrac{c}{a}$</p></li>\n</ul>\n<p>So here,</p>\n<p>$$ \\text{Sum of roots}=\\frac{3}{a} $$</p>\n<p>and</p>\n<p>$$ \\text{Product of roots}=\\frac{a^2}{a}=a. $$</p>\n<p>Therefore,</p>\n<p>$$ \\text{Product of roots}=(n-1)^2+1. $$</p>\n<p>So the minimum value of the product is clearly</p>\n<p>$$ \\alpha=1, $$</p>\n<p>attained when $n=1$.</p>\n<p>Now the sum of roots is</p>\n<p>$$ \\frac{3}{(n-1)^2+1}. $$</p>\n<p>Since the denominator is minimum when $(n-1)^2=0$, the maximum value of the sum is</p>\n<p>$$ \\beta=\\frac{3}{1}=3. $$</p>\n<p>So we have</p>\n<p>$$ \\alpha=1,\\qquad \\beta=3. $$</p>\n<p>Now the G.P. has</p>\n<ul>\n<li><p>first term $a=\\alpha=1$</p></li>\n<li><p>common ratio $r=\\dfrac{\\alpha}{\\beta}=\\dfrac{1}{3}$</p></li>\n</ul>\n<p>We need the sum of first six terms:</p>\n<p>$$ S_6=a\\cdot \\frac{1-r^6}{1-r}. $$</p>\n<p>Substitute the values:</p>\n<p>$$ S_6=1\\cdot \\frac{1-\\left(\\frac13\\right)^6}{1-\\frac13}. $$</p>\n<p>Now,</p>\n<p>$$ \\left(\\frac13\\right)^6=\\frac{1}{729} $$</p>\n<p>and</p>\n<p>$$ 1-\\frac13=\\frac23. $$</p>\n<p>Hence,</p>\n<p>$$ S_6=\\frac{1-\\frac{1}{729}}{\\frac23} =\\frac{\\frac{728}{729}}{\\frac23} =\\frac{728}{729}\\cdot \\frac32. $$</p>\n<p>So,</p>\n<p>$$ S_6=\\frac{1092}{729} =\\frac{364}{243}. $$</p>\n<p>Therefore, the required sum is</p>\n<p>$$ \\boxed{\\frac{364}{243}}. $$</p>\n<p>So the correct option is</p>\n<p>$$ \\boxed{\\text{Option C}}. $$</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "geometric-progression",

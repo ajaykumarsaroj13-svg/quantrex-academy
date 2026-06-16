@@ -903,7 +903,7 @@
     "year": "2025",
     "difficulty": "medium",
     "type": "FIB",
-    "question": "<p>Let <b>ℝ</b> denote the set of all real numbers. Let <b>f: ℝ → ℝ</b> be a function such that <b>f(x) &gt; 0</b> for all <b>x ∈ ℝ</b>, and <b>f(x+y) = f(x)f(y)</b> for all <b>x, y ∈ ℝ</b>.</p>\n<p>Let the real numbers <b>a₁, a₂, ..., a₅₀</b> be in an arithmetic progression. If <b>f(a₃₁) = 64f(a₂₅)</b>, and</p>\n<p>$ \\sum\\limits_{i=1}^{50} f(a_i) = 3(2^{25}+1), $</p>\n<p>then the value of</p>\n<p>$ \\sum\\limits_{i=6}^{30} f(a_i) $</p>\n<p>is ________________.</p>",
+    "question": "<p>Let <b>\u211d</b> denote the set of all real numbers. Let <b>f: \u211d \u2192 \u211d</b> be a function such that <b>f(x) &gt; 0</b> for all <b>x \u2208 \u211d</b>, and <b>f(x+y) = f(x)f(y)</b> for all <b>x, y \u2208 \u211d</b>.</p>\n<p>Let the real numbers <b>a\u2081, a\u2082, ..., a\u2085\u2080</b> be in an arithmetic progression. If <b>f(a\u2083\u2081) = 64f(a\u2082\u2085)</b>, and</p>\n<p>$ \\sum\\limits_{i=1}^{50} f(a_i) = 3(2^{25}+1), $</p>\n<p>then the value of</p>\n<p>$ \\sum\\limits_{i=6}^{30} f(a_i) $</p>\n<p>is ________________.</p>",
     "options": [],
     "correctOptionIndex": 0,
     "solution": null,
@@ -1512,7 +1512,7 @@
       "g(f(S)) = g(S)"
     ],
     "correctOptionIndex": 3,
-    "solution": "f(x) = x<sup>2</sup>&nbsp;&nbsp;&nbsp; x $$ \\in $$  R<br><br>\ng(A) = {x $$ \\in $$ R : f(x) $$ \\in $$ A} S $$ \\equiv $$ [0, 4]<br><br>\ng(S) = {x  $$ \\in $$ R : f(x)  $$ \\in $$ S}<br><br>\n= {x $$ \\in $$ R : 0 $$ \\le $$ x<sup>2</sup> $$ \\le $$ 4}<br><br>\n= {x $$ \\in $$ R : –2 $$ \\le $$ x $$ \\le $$ 2}<br><br>\n$$ \\therefore $$ g(S) $$ \\ne $$ S<br><br>\n$$ \\therefore $$ f(g(S)) $$ \\ne $$ f(S)<br><br>\ng(f(S)) = {x $$ \\in $$ R : f(x) $$ \\in $$ f(S)}<br><br>\n= {x $$ \\in $$ R : x<sup>2</sup> $$ \\in $$ S<sup>2</sup>}<br><br>\n= {x $$ \\in $$ R : 0 $$ \\le $$ x<sup>2</sup> $$ \\le $$ 16}<br><br>\n= {x $$ \\in $$ R : –4  $$ \\le $$ x  $$ \\le $$ 4}<br><br>\n$$ \\therefore $$ g(f(S)) $$ \\ne $$ g(S)<br><br>\n$$ \\therefore $$ g(f(S)) = g(S) is incorrect",
+    "solution": "f(x) = x<sup>2</sup>&nbsp;&nbsp;&nbsp; x $$ \\in $$  R<br><br>\ng(A) = {x $$ \\in $$ R : f(x) $$ \\in $$ A} S $$ \\equiv $$ [0, 4]<br><br>\ng(S) = {x  $$ \\in $$ R : f(x)  $$ \\in $$ S}<br><br>\n= {x $$ \\in $$ R : 0 $$ \\le $$ x<sup>2</sup> $$ \\le $$ 4}<br><br>\n= {x $$ \\in $$ R : \u20132 $$ \\le $$ x $$ \\le $$ 2}<br><br>\n$$ \\therefore $$ g(S) $$ \\ne $$ S<br><br>\n$$ \\therefore $$ f(g(S)) $$ \\ne $$ f(S)<br><br>\ng(f(S)) = {x $$ \\in $$ R : f(x) $$ \\in $$ f(S)}<br><br>\n= {x $$ \\in $$ R : x<sup>2</sup> $$ \\in $$ S<sup>2</sup>}<br><br>\n= {x $$ \\in $$ R : 0 $$ \\le $$ x<sup>2</sup> $$ \\le $$ 16}<br><br>\n= {x $$ \\in $$ R : \u20134  $$ \\le $$ x  $$ \\le $$ 4}<br><br>\n$$ \\therefore $$ g(f(S)) $$ \\ne $$ g(S)<br><br>\n$$ \\therefore $$ g(f(S)) = g(S) is incorrect",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "composite-functions",
@@ -1526,7 +1526,7 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let f(x) = e<sup>x</sup> – x and g(x) = x<sup>2</sup> – x, $$\\forall $$ x $$ \\in $$ R. Then the set of all x $$ \\in $$ R, where the function h(x) = (fog) (x) is increasing, is :",
+    "question": "Let f(x) = e<sup>x</sup> \u2013 x and g(x) = x<sup>2</sup> \u2013 x, $$\\forall $$ x $$ \\in $$ R. Then the set of all x $$ \\in $$ R, where the function h(x) = (fog) (x) is increasing, is :",
     "options": [
       "[0, $$\\infty $$)",
       "$$\\left[ { - 1, - {1 \\over 2}} \\right] \\cup \\left[ {{1 \\over 2},\\infty } \\right)$$",
@@ -1534,7 +1534,7 @@
       "$$\\left[ {0,{1 \\over 2}} \\right] \\cup \\left[ {1,\\infty } \\right)$$"
     ],
     "correctOptionIndex": 3,
-    "solution": "f(x) = ex – x, g(x) = x<sup>2</sup> – x<br><br>\nf(g(x)) = e<sup>(x<sup>2</sup> - x)</sup> - (x<sup>2</sup> - x)<br><br>\nIf f(g(x)) is increasing function<br><br>\n(f (g(x)))<sup>x</sup> = $${e^{\\left( {{x^2} - x} \\right)}} \\times (2x - 1) - 2x + 1$$<br><br>\n$$ \\Rightarrow \\mathop {(2x - 1)}\\limits_A \\mathop {[{e^{\\left( {{x^2} - x} \\right)}} - 1]}\\limits_B $$<br><br>\nA &amp; B are either both positive or negative<br><br>\n<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/jf76dm0jz4xg23t/3be6206e-ee6e-45af-b1bb-fe28a62e1692/8b5ef990-bb17-11e9-98a9-d9fba6ebbc7e/file-jf76dm0jz4xg23u-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/jf76dm0jz4xg23t/3be6206e-ee6e-45af-b1bb-fe28a62e1692/8b5ef990-bb17-11e9-98a9-d9fba6ebbc7e/file-jf76dm0jz4xg23u-500w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/jf76dm0jz4xg23t/3be6206e-ee6e-45af-b1bb-fe28a62e1692/8b5ef990-bb17-11e9-98a9-d9fba6ebbc7e/file-jf76dm0jz4xg23u-680w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th April Morning Slot Mathematics - Functions Question 136 English Explanation\"></picture>\nfor (f (g(x)))<sup>'</sup> $$ \\ge $$ 0,<br><br>\n$$x \\in \\left[ {0,{1 \\over 2}} \\right] \\cup \\left[ {1,\\infty } \\right)$$",
+    "solution": "f(x) = ex \u2013 x, g(x) = x<sup>2</sup> \u2013 x<br><br>\nf(g(x)) = e<sup>(x<sup>2</sup> - x)</sup> - (x<sup>2</sup> - x)<br><br>\nIf f(g(x)) is increasing function<br><br>\n(f (g(x)))<sup>x</sup> = $${e^{\\left( {{x^2} - x} \\right)}} \\times (2x - 1) - 2x + 1$$<br><br>\n$$ \\Rightarrow \\mathop {(2x - 1)}\\limits_A \\mathop {[{e^{\\left( {{x^2} - x} \\right)}} - 1]}\\limits_B $$<br><br>\nA &amp; B are either both positive or negative<br><br>\n<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/jf76dm0jz4xg23t/3be6206e-ee6e-45af-b1bb-fe28a62e1692/8b5ef990-bb17-11e9-98a9-d9fba6ebbc7e/file-jf76dm0jz4xg23u-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/jf76dm0jz4xg23t/3be6206e-ee6e-45af-b1bb-fe28a62e1692/8b5ef990-bb17-11e9-98a9-d9fba6ebbc7e/file-jf76dm0jz4xg23u-500w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/jf76dm0jz4xg23t/3be6206e-ee6e-45af-b1bb-fe28a62e1692/8b5ef990-bb17-11e9-98a9-d9fba6ebbc7e/file-jf76dm0jz4xg23u-680w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th April Morning Slot Mathematics - Functions Question 136 English Explanation\"></picture>\nfor (f (g(x)))<sup>'</sup> $$ \\ge $$ 0,<br><br>\n$$x \\in \\left[ {0,{1 \\over 2}} \\right] \\cup \\left[ {1,\\infty } \\right)$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "composite-functions",
@@ -1680,15 +1680,15 @@
     "year": "2019",
     "difficulty": "easy",
     "type": "SCQ",
-    "question": "Let ƒ(x) = a<sup>x</sup>\n (a &gt; 0) be written as\n<br>ƒ(x) = ƒ<sub>1</sub>\n(x) + ƒ<sub>2</sub>\n(x), where ƒ<sub>1</sub>\n(x) is an even\nfunction of ƒ<sub>2</sub>\n(x) is an odd function. <br>Then\nƒ<sub>1</sub>\n(x + y) + ƒ<sub>1</sub>\n(x – y) equals",
+    "question": "Let \u0192(x) = a<sup>x</sup>\n (a &gt; 0) be written as\n<br>\u0192(x) = \u0192<sub>1</sub>\n(x) + \u0192<sub>2</sub>\n(x), where \u0192<sub>1</sub>\n(x) is an even\nfunction of \u0192<sub>2</sub>\n(x) is an odd function. <br>Then\n\u0192<sub>1</sub>\n(x + y) + \u0192<sub>1</sub>\n(x \u2013 y) equals",
     "options": [
-      "2ƒ<sub>1</sub>\n(x)ƒ<sub>1</sub>\n(y)\n",
-      "2ƒ<sub>1</sub>\n(x + y)ƒ<sub>1</sub>\n(x – y)",
-      "2ƒ<sub>1</sub>\n(x)ƒ<sub>2</sub>\n(y)",
-      "2ƒ<sub>1</sub>\n(x + y)ƒ<sub>2</sub>\n(x – y)"
+      "2\u0192<sub>1</sub>\n(x)\u0192<sub>1</sub>\n(y)\n",
+      "2\u0192<sub>1</sub>\n(x + y)\u0192<sub>1</sub>\n(x \u2013 y)",
+      "2\u0192<sub>1</sub>\n(x)\u0192<sub>2</sub>\n(y)",
+      "2\u0192<sub>1</sub>\n(x + y)\u0192<sub>2</sub>\n(x \u2013 y)"
     ],
     "correctOptionIndex": 0,
-    "solution": "f(x) = a<sup>x</sup>\n<br><br>As f<sub>1</sub>(x) is even function then\n<br><br>f<sub>1</sub>(x) = $${{{f\\left( x \\right) + f\\left( { - x} \\right)} \\over 2}}$$\n<br><br>= $${{{a^x} + {a^{ - x}}} \\over 2}$$\n<br><br>As f<sub>2</sub>(x) is odd function then\n<br><br>f<sub>2</sub>(x) = $${{{f\\left( x \\right) - f\\left( { - x} \\right)} \\over 2}}$$\n<br><br>= $${{{a^x} - {a^{ - x}}} \\over 2}$$\n<br><br>Now,\n<br><br>ƒ<sub>1</sub>\n(x + y) + ƒ<sub>1</sub>\n(x – y)\n<br><br>= $${{{a^{x + y}} + {a^{ - \\left( {x + y} \\right)}} + {a^{x + y}} - {a^{ - \\left( {x - y} \\right)}}} \\over 2}$$\n<br><br>Also ƒ<sub>1</sub>\n(x)ƒ<sub>1</sub>\n(y) = $$\\left( {{{{a^x} + {a^{ - x}}} \\over 2}} \\right)\\left( {{{{a^y} + {a^{ - y}}} \\over 2}} \\right)$$\n<br><br>= $${{{a^{x + y}} + {a^{x - y}} + {a^{ - x + y}} + {a^{ - x - y}}} \\over 4}$$\n<br><br>= $${{{{f_1}\\left( {x + y} \\right) + {f_2}\\left( {x - y} \\right)} \\over 2}}$$\n<br><br>$$ \\therefore $$  ƒ<sub>1</sub>\n(x + y) + ƒ<sub>1</sub>\n(x – y) = 2ƒ<sub>1</sub>\n(x)ƒ<sub>1</sub>\n(y)\n\n",
+    "solution": "f(x) = a<sup>x</sup>\n<br><br>As f<sub>1</sub>(x) is even function then\n<br><br>f<sub>1</sub>(x) = $${{{f\\left( x \\right) + f\\left( { - x} \\right)} \\over 2}}$$\n<br><br>= $${{{a^x} + {a^{ - x}}} \\over 2}$$\n<br><br>As f<sub>2</sub>(x) is odd function then\n<br><br>f<sub>2</sub>(x) = $${{{f\\left( x \\right) - f\\left( { - x} \\right)} \\over 2}}$$\n<br><br>= $${{{a^x} - {a^{ - x}}} \\over 2}$$\n<br><br>Now,\n<br><br>\u0192<sub>1</sub>\n(x + y) + \u0192<sub>1</sub>\n(x \u2013 y)\n<br><br>= $${{{a^{x + y}} + {a^{ - \\left( {x + y} \\right)}} + {a^{x + y}} - {a^{ - \\left( {x - y} \\right)}}} \\over 2}$$\n<br><br>Also \u0192<sub>1</sub>\n(x)\u0192<sub>1</sub>\n(y) = $$\\left( {{{{a^x} + {a^{ - x}}} \\over 2}} \\right)\\left( {{{{a^y} + {a^{ - y}}} \\over 2}} \\right)$$\n<br><br>= $${{{a^{x + y}} + {a^{x - y}} + {a^{ - x + y}} + {a^{ - x - y}}} \\over 4}$$\n<br><br>= $${{{{f_1}\\left( {x + y} \\right) + {f_2}\\left( {x - y} \\right)} \\over 2}}$$\n<br><br>$$ \\therefore $$  \u0192<sub>1</sub>\n(x + y) + \u0192<sub>1</sub>\n(x \u2013 y) = 2\u0192<sub>1</sub>\n(x)\u0192<sub>1</sub>\n(y)\n\n",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "even-and-odd-functions",
@@ -1746,15 +1746,15 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "If the function ƒ : R – {1, –1} $$ \\to $$ A defined by <br>\nƒ(x) = $${{{x^2}} \\over {1 - {x^2}}}$$ , is surjective, then A is equal to",
+    "question": "If the function \u0192 : R \u2013 {1, \u20131} $$ \\to $$ A defined by <br>\n\u0192(x) = $${{{x^2}} \\over {1 - {x^2}}}$$ , is surjective, then A is equal to",
     "options": [
-      "R – (–1, 0)",
-      "R – {–1}",
-      "R – [–1, 0)",
+      "R \u2013 (\u20131, 0)",
+      "R \u2013 {\u20131}",
+      "R \u2013 [\u20131, 0)",
       "[0, $$\\infty $$)"
     ],
     "correctOptionIndex": 2,
-    "solution": "Let ƒ(x) = $${{{x^2}} \\over {1 - {x^2}}}$$ = y\n<br><br>$$ \\Rightarrow $$ $$y\\left( {1 - {x^2}} \\right) = {x^2}$$\n<br><br>$$ \\Rightarrow $$ $${x^2} = {y \\over {1 + y}}$$\n<br><br>As $${x^2}$$ is always $$ \\ge $$ 0.\n<br><br>$$ \\therefore $$ $${y \\over {1 + y}}$$ $$ \\ge $$ 0\n<br><br> y $$ \\in $$ $$\\left( { - \\infty , - 1} \\right) \\cup \\left[ {0,\\left. \\infty  \\right)} \\right.$$\n<br><br>For surjective function co-domain = Range\n<br><br>$$ \\therefore $$ A is R – [–1, 0).",
+    "solution": "Let \u0192(x) = $${{{x^2}} \\over {1 - {x^2}}}$$ = y\n<br><br>$$ \\Rightarrow $$ $$y\\left( {1 - {x^2}} \\right) = {x^2}$$\n<br><br>$$ \\Rightarrow $$ $${x^2} = {y \\over {1 + y}}$$\n<br><br>As $${x^2}$$ is always $$ \\ge $$ 0.\n<br><br>$$ \\therefore $$ $${y \\over {1 + y}}$$ $$ \\ge $$ 0\n<br><br> y $$ \\in $$ $$\\left( { - \\infty , - 1} \\right) \\cup \\left[ {0,\\left. \\infty  \\right)} \\right.$$\n<br><br>For surjective function co-domain = Range\n<br><br>$$ \\therefore $$ A is R \u2013 [\u20131, 0).",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "classification-of-functions",
@@ -1768,7 +1768,7 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let $$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$ where the function\nƒ satisfies \n<br>ƒ(x + y) = ƒ(x)ƒ(y) for all natural\nnumbers x, y and ƒ(1) = 2. then the natural\nnumber 'a' is",
+    "question": "Let $$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$ where the function\n\u0192 satisfies \n<br>\u0192(x + y) = \u0192(x)\u0192(y) for all natural\nnumbers x, y and \u0192(1) = 2. then the natural\nnumber 'a' is",
     "options": [
       "2",
       "16",
@@ -1776,7 +1776,7 @@
       "3"
     ],
     "correctOptionIndex": 3,
-    "solution": "Given ƒ(1) = 2\n<br><br> and ƒ(x + y) = ƒ(x)ƒ(y)\n<br><br>When x = 1 and y = 1 then,\n<br><br>ƒ(1 + 1) = ƒ(1)ƒ(1)\n<br><br>$$ \\Rightarrow $$ f(2) = (f(1))<sup>2</sup> = 2<sup>2</sup>\n<br><br>Also when x = 2 and y = 1 then,\n<br><br>ƒ(2 + 1) = ƒ(2)ƒ(1)\n<br><br>$$ \\Rightarrow $$ f(3) = 2<sup>3</sup>\n<br><br>$$ \\therefore $$ Similarly f(4) = 2<sup>4</sup>\n<br>.\n<br>.\n<br>.\n<br>.\n<br><br>f(x) = 2<sup>x</sup>\n<br><br>$$ \\therefore $$ f(a + k) = 2<sup>a + k</sup>\n<br><br>Now given,\n<br><br>$$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$\n<br><br>$$ \\Rightarrow $$ $$\\sum\\limits_{k = 1}^{10} {{2^{a + k}}} $$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^{a + 1}} + {2^{a + 2}} + .... + {2^{a + 10}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a}\\left[ {2 + {2^2} + .... + {2^{10}}} \\right]$$ =  $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} \\times {{2\\left( {{2^{10}} + 1} \\right)} \\over {2 - 1}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} = 8$$\n<br><br>$$ \\Rightarrow $$ $$a$$ = 3",
+    "solution": "Given \u0192(1) = 2\n<br><br> and \u0192(x + y) = \u0192(x)\u0192(y)\n<br><br>When x = 1 and y = 1 then,\n<br><br>\u0192(1 + 1) = \u0192(1)\u0192(1)\n<br><br>$$ \\Rightarrow $$ f(2) = (f(1))<sup>2</sup> = 2<sup>2</sup>\n<br><br>Also when x = 2 and y = 1 then,\n<br><br>\u0192(2 + 1) = \u0192(2)\u0192(1)\n<br><br>$$ \\Rightarrow $$ f(3) = 2<sup>3</sup>\n<br><br>$$ \\therefore $$ Similarly f(4) = 2<sup>4</sup>\n<br>.\n<br>.\n<br>.\n<br>.\n<br><br>f(x) = 2<sup>x</sup>\n<br><br>$$ \\therefore $$ f(a + k) = 2<sup>a + k</sup>\n<br><br>Now given,\n<br><br>$$\\sum\\limits_{k = 1}^{10} {f(a + k) = 16\\left( {{2^{10}} - 1} \\right)} $$\n<br><br>$$ \\Rightarrow $$ $$\\sum\\limits_{k = 1}^{10} {{2^{a + k}}} $$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^{a + 1}} + {2^{a + 2}} + .... + {2^{a + 10}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a}\\left[ {2 + {2^2} + .... + {2^{10}}} \\right]$$ =  $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} \\times {{2\\left( {{2^{10}} + 1} \\right)} \\over {2 - 1}}$$ = $$16\\left( {{2^{10}} - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $${2^a} = 8$$\n<br><br>$$ \\Rightarrow $$ $$a$$ = 3",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "functional-equations",
@@ -1812,7 +1812,7 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "For $$x \\in R - \\left\\{ {0,1} \\right\\}$$, Let  f<sub>1</sub>(x) = $$1\\over x$$, f<sub>2</sub> (x) = 1 – x <br><br>and f<sub>3</sub> (x) = $$1 \\over {1 - x}$$\n be three given\n<br><br> functions. If a function, J(x) satisfies \n<br><br>(f<sub>2</sub> o J o f<sub>1</sub>) (x) = f<sub>3</sub> (x)  then J(x) is equal to :",
+    "question": "For $$x \\in R - \\left\\{ {0,1} \\right\\}$$, Let  f<sub>1</sub>(x) = $$1\\over x$$, f<sub>2</sub> (x) = 1 \u2013 x <br><br>and f<sub>3</sub> (x) = $$1 \\over {1 - x}$$\n be three given\n<br><br> functions. If a function, J(x) satisfies \n<br><br>(f<sub>2</sub> o J o f<sub>1</sub>) (x) = f<sub>3</sub> (x)  then J(x) is equal to :",
     "options": [
       "f<sub>1</sub> (x)",
       "$$1 \\over x$$ f<sub>3</sub> (x)",
@@ -1842,7 +1842,7 @@
       "4"
     ],
     "correctOptionIndex": 2,
-    "solution": "Given f(1) = 2 ; \n<br><br>f(x + y) = f(x) + f(y)\n\n\n<br><br>When x = y = 1 $$ \\Rightarrow $$\nf(2) = 2 + 2 = 4\n\n<br><br>When x = 2, y = 1 $$ \\Rightarrow $$ f(3) = 4 + 2 = 6\n<br><br> g(n) = $$\\sum\\limits_{k = 1}^{\\left( {n - 1} \\right)} {f\\left( k \\right)} $$\n<br><br>= f(1) + f(2) +.........+ f(n - 1)\n<br><br>= 2 + 4 + 6 + ......+ 2(n - 1)\n<br><br>= 2 $$ \\times $$ $$\\frac{\\left( n-1\\right)  \\left( n\\right)  }{2} $$\n<br><br>= n<sup>2</sup> - n\n<br><br> Given g(n) = 20\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup>– n = 20\n\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> – n – 20 = 0\n\n<br><br>$$ \\Rightarrow $$ n = 5",
+    "solution": "Given f(1) = 2 ; \n<br><br>f(x + y) = f(x) + f(y)\n\n\n<br><br>When x = y = 1 $$ \\Rightarrow $$\nf(2) = 2 + 2 = 4\n\n<br><br>When x = 2, y = 1 $$ \\Rightarrow $$ f(3) = 4 + 2 = 6\n<br><br> g(n) = $$\\sum\\limits_{k = 1}^{\\left( {n - 1} \\right)} {f\\left( k \\right)} $$\n<br><br>= f(1) + f(2) +.........+ f(n - 1)\n<br><br>= 2 + 4 + 6 + ......+ 2(n - 1)\n<br><br>= 2 $$ \\times $$ $$\\frac{\\left( n-1\\right)  \\left( n\\right)  }{2} $$\n<br><br>= n<sup>2</sup> - n\n<br><br> Given g(n) = 20\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup>\u2013 n = 20\n\n<br><br>$$ \\Rightarrow $$ n<sup>2</sup> \u2013 n \u2013 20 = 0\n\n<br><br>$$ \\Rightarrow $$ n = 5",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "functional-equations",
@@ -1876,12 +1876,12 @@
     "question": "For a suitably chosen real constant a, let a<br><br>\nfunction, $$f:R - \\left\\{ { - a} \\right\\} \\to R$$  be defined by<br><br>\n$$f(x) = {{a - x} \\over {a + x}}$$. Further suppose that for any real\nnumber $$x \\ne  - a$$ and $$f(x) \\ne  - a$$,<br><br>\n (fof)(x) = x. Then $$f\\left( { - {1 \\over 2}} \\right)$$ is equal to :\n\n",
     "options": [
       "$$ {1 \\over 3}$$",
-      "–3",
+      "\u20133",
       "$$ - {1 \\over 3}$$",
       "3"
     ],
     "correctOptionIndex": 3,
-    "solution": "Given, $$f(x) = {{a - x} \\over {a + x}}$$\n<br><br>and (fof)(x) = x\n<br><br>$$ \\Rightarrow $$ f(f(x)) = $${{a - f\\left( x \\right)} \\over {a + f\\left( x \\right)}}$$ = x<br><br>$$ \\Rightarrow $$ $${{a - \\left( {{{a - x} \\over {a + x}}} \\right)} \\over {a + \\left( {{{a - x} \\over {a + x}}} \\right)}}$$ = x\n<br><br>$$ \\Rightarrow $$ $${{{a^2} + ax - a + x} \\over {{a^2} + ax + a + x}}$$ = x\n<br><br>$$ \\Rightarrow $$ (a<sup>2</sup>\n – a) + x(a + 1) = (a<sup>2</sup>\n + a)x + x<sup>2</sup>(a – 1)\n<br><br>$$ \\Rightarrow $$ a(a – 1) + x(1 – a<sup>2</sup>) – x<sup>2</sup>(a – 1) = 0\n<br><br>$$ \\Rightarrow $$ a = 1\n<br><br>$$ \\therefore $$ f(x) = $${{1 - x} \\over {1 + x}}$$\n<br><br>So, $$f\\left( { - {1 \\over 2}} \\right)$$ = $${{1 + {1 \\over 2}} \\over {1 - {1 \\over 2}}}$$ = 3",
+    "solution": "Given, $$f(x) = {{a - x} \\over {a + x}}$$\n<br><br>and (fof)(x) = x\n<br><br>$$ \\Rightarrow $$ f(f(x)) = $${{a - f\\left( x \\right)} \\over {a + f\\left( x \\right)}}$$ = x<br><br>$$ \\Rightarrow $$ $${{a - \\left( {{{a - x} \\over {a + x}}} \\right)} \\over {a + \\left( {{{a - x} \\over {a + x}}} \\right)}}$$ = x\n<br><br>$$ \\Rightarrow $$ $${{{a^2} + ax - a + x} \\over {{a^2} + ax + a + x}}$$ = x\n<br><br>$$ \\Rightarrow $$ (a<sup>2</sup>\n \u2013 a) + x(a + 1) = (a<sup>2</sup>\n + a)x + x<sup>2</sup>(a \u2013 1)\n<br><br>$$ \\Rightarrow $$ a(a \u2013 1) + x(1 \u2013 a<sup>2</sup>) \u2013 x<sup>2</sup>(a \u2013 1) = 0\n<br><br>$$ \\Rightarrow $$ a = 1\n<br><br>$$ \\therefore $$ f(x) = $${{1 - x} \\over {1 + x}}$$\n<br><br>So, $$f\\left( { - {1 \\over 2}} \\right)$$ = $${{1 + {1 \\over 2}} \\over {1 - {1 \\over 2}}}$$ = 3",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "composite-functions",
@@ -1898,7 +1898,7 @@
     "question": "Suppose that a function f : R $$ \\to $$ R satisfies<br>\nf(x + y) = f(x)f(y) for all x, y $$ \\in $$ R and f(1) = 3.<br> If $$\\sum\\limits_{i = 1}^n {f(i)}  = 363$$  then n is equal to ________ .",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "f(x + y) = f(x) f(y)\n<br><br>put x = y = 1 \n<br>$$ \\therefore $$ f(2) = (ƒ(1))<sup>2</sup>\n = 3<sup>2</sup>\n<br><br>put x = 2, y = 1 \n<br>$$ \\therefore $$ f(3) = (ƒ(1))<sup>3</sup>\n = 3<sup>3</sup>\n<br><br>Similarly f(x) = 3<sup>x</sup>\n<br>$$ \\Rightarrow $$ f(i) = 3<sup>i</sup>\n<br><br>Given, $$\\sum\\limits_{i = 1}^n {f(i)}  = 363$$\n<br><br>$$ \\Rightarrow $$ 3 + 3<sup>2</sup>\n + 3<sup>3</sup> +.... + 3<sup>n</sup>\n = 363\n<br><br>$$ \\Rightarrow $$ $${{3\\left( {{3^n} - 1} \\right)} \\over {3 - 1}}$$ = 363\n<br><br>$$ \\Rightarrow $$ 3<sup>n</sup> - 1 = $${{363 \\times 2} \\over 3}$$ = 242\n<br><br>$$ \\Rightarrow $$ 3<sup>n</sup> = 243 = 3<sup>5</sup>\n<br><br>$$ \\Rightarrow $$ n = 5",
+    "solution": "f(x + y) = f(x) f(y)\n<br><br>put x = y = 1 \n<br>$$ \\therefore $$ f(2) = (\u0192(1))<sup>2</sup>\n = 3<sup>2</sup>\n<br><br>put x = 2, y = 1 \n<br>$$ \\therefore $$ f(3) = (\u0192(1))<sup>3</sup>\n = 3<sup>3</sup>\n<br><br>Similarly f(x) = 3<sup>x</sup>\n<br>$$ \\Rightarrow $$ f(i) = 3<sup>i</sup>\n<br><br>Given, $$\\sum\\limits_{i = 1}^n {f(i)}  = 363$$\n<br><br>$$ \\Rightarrow $$ 3 + 3<sup>2</sup>\n + 3<sup>3</sup> +.... + 3<sup>n</sup>\n = 363\n<br><br>$$ \\Rightarrow $$ $${{3\\left( {{3^n} - 1} \\right)} \\over {3 - 1}}$$ = 363\n<br><br>$$ \\Rightarrow $$ 3<sup>n</sup> - 1 = $${{363 \\times 2} \\over 3}$$ = 242\n<br><br>$$ \\Rightarrow $$ 3<sup>n</sup> = 243 = 3<sup>5</sup>\n<br><br>$$ \\Rightarrow $$ n = 5",
     "marks": 4,
     "negativeMarks": 0,
     "topic": "functional-equations",
@@ -1934,7 +1934,7 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "If g(x) = x<sup>2</sup> + x - 1 and<br> (goƒ) (x) = 4x<sup>2</sup> - 10x + 5, then ƒ$$\\left( {{5 \\over 4}} \\right)$$  is equal to:",
+    "question": "If g(x) = x<sup>2</sup> + x - 1 and<br> (go\u0192) (x) = 4x<sup>2</sup> - 10x + 5, then \u0192$$\\left( {{5 \\over 4}} \\right)$$  is equal to:",
     "options": [
       "$${1 \\over 2}$$",
       "$${3 \\over 2}$$",
@@ -1942,7 +1942,7 @@
       "-$${3 \\over 2}$$"
     ],
     "correctOptionIndex": 2,
-    "solution": "Given, (goƒ) (x) = 4x<sup>2</sup> - 10x + 5\n<br><br>$$ \\Rightarrow $$ g(f(x)) = 4x<sup>2</sup> - 10x + 5\n<br><br>$$ \\therefore $$ g(f($${5 \\over 4}$$)) = $$4 \\times {{25} \\over {16}} - {{50} \\over 4} + 5$$ = $$ - {5 \\over 4}$$ ...(1)\n<br><br>Also given, g(x) = x<sup>2</sup> + x - 1\n<br><br>$$ \\therefore $$ g(f(x)) =  f<sup>2</sup>(x) + f(x) –1\n<br><br>$$ \\Rightarrow $$ g(f($${5 \\over 4}$$)) = f<sup>2</sup>($${5 \\over 4}$$) + f($${5 \\over 4}$$) –1 ....(2)\n<br><br>from (1) &amp; (2) \n<br><br>f<sup>2</sup>($${5 \\over 4}$$) + f($${5 \\over 4}$$) –1 = $$ - {5 \\over 4}$$\n<br><br>$$ \\Rightarrow $$ f<sup>2</sup>($${5 \\over 4}$$) + f($${5 \\over 4}$$) + $${1 \\over 4}$$ = 0\n<br><br>$$ \\Rightarrow $$ (f($${5 \\over 4}$$) + $${1 \\over 2}$$)<sup>2</sup> = 0\n<br><br>$$ \\Rightarrow $$ f($${5 \\over 4}$$) = -$${1 \\over 2}$$",
+    "solution": "Given, (go\u0192) (x) = 4x<sup>2</sup> - 10x + 5\n<br><br>$$ \\Rightarrow $$ g(f(x)) = 4x<sup>2</sup> - 10x + 5\n<br><br>$$ \\therefore $$ g(f($${5 \\over 4}$$)) = $$4 \\times {{25} \\over {16}} - {{50} \\over 4} + 5$$ = $$ - {5 \\over 4}$$ ...(1)\n<br><br>Also given, g(x) = x<sup>2</sup> + x - 1\n<br><br>$$ \\therefore $$ g(f(x)) =  f<sup>2</sup>(x) + f(x) \u20131\n<br><br>$$ \\Rightarrow $$ g(f($${5 \\over 4}$$)) = f<sup>2</sup>($${5 \\over 4}$$) + f($${5 \\over 4}$$) \u20131 ....(2)\n<br><br>from (1) &amp; (2) \n<br><br>f<sup>2</sup>($${5 \\over 4}$$) + f($${5 \\over 4}$$) \u20131 = $$ - {5 \\over 4}$$\n<br><br>$$ \\Rightarrow $$ f<sup>2</sup>($${5 \\over 4}$$) + f($${5 \\over 4}$$) + $${1 \\over 4}$$ = 0\n<br><br>$$ \\Rightarrow $$ (f($${5 \\over 4}$$) + $${1 \\over 2}$$)<sup>2</sup> = 0\n<br><br>$$ \\Rightarrow $$ f($${5 \\over 4}$$) = -$${1 \\over 2}$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "composite-functions",
@@ -1956,7 +1956,7 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let ƒ : (1, 3) $$ \\to $$ R be a function defined by<br>\n$$f(x) = {{x\\left[ x \\right]} \\over {1 + {x^2}}}$$ , where [x] denotes the greatest\ninteger $$ \\le $$ x. Then the range of ƒ is",
+    "question": "Let \u0192 : (1, 3) $$ \\to $$ R be a function defined by<br>\n$$f(x) = {{x\\left[ x \\right]} \\over {1 + {x^2}}}$$ , where [x] denotes the greatest\ninteger $$ \\le $$ x. Then the range of \u0192 is",
     "options": [
       "$$\\left( {{2 \\over 5},{1 \\over 2}} \\right) \\cup \\left( {{3 \\over 4},{4 \\over 5}} \\right]$$",
       "$$\\left( {{3 \\over 5},{4 \\over 5}} \\right)$$",
@@ -2000,15 +2000,15 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let a – 2b + c = 1.<br><br>\nIf $$f(x)=\\left| {\\matrix{\n   {x + a} &amp; {x + 2} &amp; {x + 1}  \\cr \n   {x + b} &amp; {x + 3} &amp; {x + 2}  \\cr \n   {x + c} &amp; {x + 4} &amp; {x + 3}  \\cr \n\n } } \\right|$$, then:",
+    "question": "Let a \u2013 2b + c = 1.<br><br>\nIf $$f(x)=\\left| {\\matrix{\n   {x + a} &amp; {x + 2} &amp; {x + 1}  \\cr \n   {x + b} &amp; {x + 3} &amp; {x + 2}  \\cr \n   {x + c} &amp; {x + 4} &amp; {x + 3}  \\cr \n\n } } \\right|$$, then:",
     "options": [
-      "ƒ(50) = 1",
-      "ƒ(–50) = –1",
-      "ƒ(50) = –501",
-      "ƒ(–50) = 501"
+      "\u0192(50) = 1",
+      "\u0192(\u201350) = \u20131",
+      "\u0192(50) = \u2013501",
+      "\u0192(\u201350) = 501"
     ],
     "correctOptionIndex": 0,
-    "solution": "R<sub>1</sub> $$ \\to $$ R<sub>1</sub> + R<sub>3</sub> – 2R<sub>2</sub>\n<br><br>f(x) = $$\\left| {\\matrix{\n   {a + c - 2b} &amp; 0 &amp; 0  \\cr \n   {x + b} &amp; {x + 3} &amp; {x + 2}  \\cr \n   {x + c} &amp; {x + 4} &amp; {x + 3}  \\cr \n\n } } \\right|$$\n<br><br>= (a + c – 2b) ((x + 3)<sup>2</sup> – (x + 2)(x + 4))\n<br><br>= x<sup>2</sup> + 6x + 9 – x<sup>2</sup> – 6x – 8 = 1\n<br><br>$$ \\therefore $$ f(x) = 1\n<br><br>$$ \\Rightarrow $$  f(50) = 1",
+    "solution": "R<sub>1</sub> $$ \\to $$ R<sub>1</sub> + R<sub>3</sub> \u2013 2R<sub>2</sub>\n<br><br>f(x) = $$\\left| {\\matrix{\n   {a + c - 2b} &amp; 0 &amp; 0  \\cr \n   {x + b} &amp; {x + 3} &amp; {x + 2}  \\cr \n   {x + c} &amp; {x + 4} &amp; {x + 3}  \\cr \n\n } } \\right|$$\n<br><br>= (a + c \u2013 2b) ((x + 3)<sup>2</sup> \u2013 (x + 2)(x + 4))\n<br><br>= x<sup>2</sup> + 6x + 9 \u2013 x<sup>2</sup> \u2013 6x \u2013 8 = 1\n<br><br>$$ \\therefore $$ f(x) = 1\n<br><br>$$ \\Rightarrow $$  f(50) = 1",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "functional-equations",
@@ -2192,7 +2192,7 @@
     "title": "JEE Main 2021 (Online) 20th July Morning Shift",
     "year": "2021",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "Let [ x ] denote the greatest integer $$\\le$$ x, where x $$\\in$$ R. If the domain of the real valued function $$f(x) = \\sqrt {{{\\left| {[x]} \\right| - 2} \\over {\\left| {[x]} \\right| - 3}}} $$ is ($$-$$ $$\\infty$$, a) $$]\\cup$$ [b, c) $$\\cup$$ [4, $$\\infty$$), a &lt; b &lt; c, then the value of a + b + c is :",
     "options": [
       "8",
@@ -2205,7 +2205,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "domain",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "1kruaeehj",
@@ -2249,7 +2249,7 @@
     "year": "2021",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Let f : R → R be defined as f (x) = 2x – 1 and g : R - {1} → R be defined as g(x) =\n$${{x - {1 \\over 2}} \\over {x - 1}}$$.\nThen the composition function f(g(x)) is :",
+    "question": "Let f : R \u2192 R be defined as f (x) = 2x \u2013 1 and g : R - {1} \u2192 R be defined as g(x) =\n$${{x - {1 \\over 2}} \\over {x - 1}}$$.\nThen the composition function f(g(x)) is :",
     "options": [
       "one-one but not onto",
       "onto but not one-one",
@@ -3212,7 +3212,7 @@
     "title": "JEE Main 2023 (Online) 29th January Morning Shift",
     "year": "2023",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Let $$f:R \\to R$$ be a function such that $$f(x) = {{{x^2} + 2x + 1} \\over {{x^2} + 1}}$$. Then</p>",
     "options": [
       "$$f(x)$$ is many-one in $$( - \\infty , - 1)$$",
@@ -3225,7 +3225,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "classification-of-functions",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "1ldswo1xf",
@@ -4468,7 +4468,7 @@
     "year": "2026",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "<p>Let [•] denote the greatest integer function. If the domain of the function \n<br/><br/>$f(x)=\\cos ^{-1}\\left(\\frac{4 x+2[x]}{3}\\right)$ is $[\\alpha, \\beta]$, then $12(\\alpha+\\beta)$ is equal to :</p>\n",
+    "question": "<p>Let [\u2022] denote the greatest integer function. If the domain of the function \n<br/><br/>$f(x)=\\cos ^{-1}\\left(\\frac{4 x+2[x]}{3}\\right)$ is $[\\alpha, \\beta]$, then $12(\\alpha+\\beta)$ is equal to :</p>\n",
     "options": [
       "<p>6</p>\n",
       "<p>8</p>\n",
@@ -4489,7 +4489,7 @@
     "title": "JEE Main 2026 (Online) 4th April Morning Shift",
     "year": "2026",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>The number of functions $f:\\{1,2,3,4\\} \\rightarrow\\{a, b, c\\}$, which are not onto, is :</p>\n",
     "options": [
       "<p>48</p>\n",
@@ -4502,7 +4502,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "classification-of-functions",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "mnswhtw7",
@@ -4551,7 +4551,7 @@
     "year": "2026",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "<p>Let [ • ] denote the greatest integer function. If the domain of the function $f(x)=\\sin ^{-1}\\left(\\frac{x+[x]}{3}\\right)$ is $[\\alpha, \\beta)$, then $\\alpha^2+\\beta^2$ is equal to:</p>\n",
+    "question": "<p>Let [ \u2022 ] denote the greatest integer function. If the domain of the function $f(x)=\\sin ^{-1}\\left(\\frac{x+[x]}{3}\\right)$ is $[\\alpha, \\beta)$, then $\\alpha^2+\\beta^2$ is equal to:</p>\n",
     "options": [
       "<p>2</p>\n",
       "<p>5</p>\n",
@@ -4590,7 +4590,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Consider the following statements in respect of the function y = [x], x&nbsp;∈ (-1, 1) where [.] is the greatest integer function:</p>\n\n<p>1. Its derivative is 0 at x = 0.5</p>\n\n<p><span style=\"\">2. It is continuous at x = 0</span></p>\n\n<p><span style=\"\">Which of the above statements is/are correct?</span></p>\n",
+    "question": "<p>Consider the following statements in respect of the function y = [x], x&nbsp;\u2208 (-1, 1) where [.] is the greatest integer function:</p>\n\n<p>1. Its derivative is 0 at x = 0.5</p>\n\n<p><span style=\"\">2. It is continuous at x = 0</span></p>\n\n<p><span style=\"\">Which of the above statements is/are correct?</span></p>\n",
     "options": [
       "1 only",
       "<span style=\"\">2 only</span>",
@@ -4598,7 +4598,7 @@
       "Neither 1 nor 2"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p><strong>Greatest Integer Function:</strong> (Floor function)</p>\n\n<p>The function f(x) = [x] is known as the greatest integer function, which gives the greatest integer less than or equal to x, i.e., [x] ≤ x.</p>\n\n<p>The domain of [x] is the set of all real numbers (R), and the range is the set of all integers (I).</p>\n\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzv8sweh/82692f4e-d2c5-443c-8d09-5863814beece/e9120f90-5aff-11ef-abfe-73d7bebbd1d5/file-jaoe38c1lzv8swei.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzv8sweh/82692f4e-d2c5-443c-8d09-5863814beece/e9120f90-5aff-11ef-abfe-73d7bebbd1d5/file-jaoe38c1lzv8swei.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 10 April 2022 Mathematics - Functions Question 32 English Explanation\">\n\n<p><strong>Note:</strong></p>\n\n<p>A function is differentiable only if it is continuous.</p>\n\n<p>The floor function, f(x) = ⌊x⌋, is differentiable in every open interval between integers, (n, n + 1), where n is any integer.</p>\n\n<p><strong>Calculation:</strong></p>\n\n<p>Given, y = [x]</p>\n\n<p><strong>Statement 1:</strong> Its derivative is 0 at x = 0.5</p>\n\n<p>We know that the floor function is differentiable at all points except integer points.</p>\n\n<p>Hence, y = [x] is differentiable at x = 0.5</p>\n\n<p>⇒ y = [0.5] = 0</p>\n\n<p>⇒ dy/dx = 0</p>\n\n<p><strong>Statement 2:</strong> It is continuous at x = 0</p>\n\n<p>We know that y = [x] is continuous only in the open intervals between integers and discontinuous at all integer values.</p>\n\n<p><strong>Therefore, only statement 1 is correct.</strong></p>",
+    "solution": "<p><strong>Greatest Integer Function:</strong> (Floor function)</p>\n\n<p>The function f(x) = [x] is known as the greatest integer function, which gives the greatest integer less than or equal to x, i.e., [x] \u2264 x.</p>\n\n<p>The domain of [x] is the set of all real numbers (R), and the range is the set of all integers (I).</p>\n\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzv8sweh/82692f4e-d2c5-443c-8d09-5863814beece/e9120f90-5aff-11ef-abfe-73d7bebbd1d5/file-jaoe38c1lzv8swei.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzv8sweh/82692f4e-d2c5-443c-8d09-5863814beece/e9120f90-5aff-11ef-abfe-73d7bebbd1d5/file-jaoe38c1lzv8swei.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 10 April 2022 Mathematics - Functions Question 32 English Explanation\">\n\n<p><strong>Note:</strong></p>\n\n<p>A function is differentiable only if it is continuous.</p>\n\n<p>The floor function, f(x) = \u230ax\u230b, is differentiable in every open interval between integers, (n, n + 1), where n is any integer.</p>\n\n<p><strong>Calculation:</strong></p>\n\n<p>Given, y = [x]</p>\n\n<p><strong>Statement 1:</strong> Its derivative is 0 at x = 0.5</p>\n\n<p>We know that the floor function is differentiable at all points except integer points.</p>\n\n<p>Hence, y = [x] is differentiable at x = 0.5</p>\n\n<p>\u21d2 y = [0.5] = 0</p>\n\n<p>\u21d2 dy/dx = 0</p>\n\n<p><strong>Statement 2:</strong> It is continuous at x = 0</p>\n\n<p>We know that y = [x] is continuous only in the open intervals between integers and discontinuous at all integer values.</p>\n\n<p><strong>Therefore, only statement 1 is correct.</strong></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -4675,7 +4675,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Consider the following in respect of the function f(x) = 10<sup>x</sup> :</p>\n\n<p>1. Its domain is (-∞, ∞)</p>\n\n<p>2. It is a continuous function</p>\n\n<p>3. It is differentiable at x = 0</p>\n\n<p>Which of the above statements are correct?</p>\n",
+    "question": "<p>Consider the following in respect of the function f(x) = 10<sup>x</sup> :</p>\n\n<p>1. Its domain is (-\u221e, \u221e)</p>\n\n<p>2. It is a continuous function</p>\n\n<p>3. It is differentiable at x = 0</p>\n\n<p>Which of the above statements are correct?</p>\n",
     "options": [
       "1 and 2 only",
       "<span style=\"\">2 and 3 only</span>",
@@ -4698,10 +4698,10 @@
     "type": "SCQ",
     "question": "In which one of the following intervals is the function&nbsp;<span class=\"math-tex\">$f(x) = \\frac{x^3}{3}-\\frac{7x^2}{2} + 6x + 5$</span>&nbsp;decreasing?",
     "options": [
-      "(-∞, 1) only",
+      "(-\u221e, 1) only",
       "(1, 6)",
-      "(6, ∞) only",
-      "(-∞, 1)&nbsp;∪ (6, ∞)"
+      "(6, \u221e) only",
+      "(-\u221e, 1)&nbsp;\u222a (6, \u221e)"
     ],
     "correctOptionIndex": 1,
     "solution": "<p>To determine where the function $ f(x) = \\frac{x^3}{3} - \\frac{7x^2}{2} + 6x + 5 $ is decreasing, we need to analyze its derivative. A function is decreasing where its derivative is negative.</p>\n\n<p>First, let's find the derivative of $ f(x) $:</p>\n\n<p>$$ f'(x) = \\frac{d}{dx} \\left( \\frac{x^3}{3} - \\frac{7x^2}{2} + 6x + 5 \\right) $$</p>\n\n<p>Calculating the derivative term by term:</p>\n\n<p>$$ f'(x) = x^2 - 7x + 6 $$</p>\n\n<p>Next, we find the critical points by setting the derivative equal to zero and solving for $ x $:</p>\n\n<p>$$ x^2 - 7x + 6 = 0 $$</p>\n\n<p>We can factor this quadratic equation:</p>\n\n<p>$$ (x - 1)(x - 6) = 0 $$</p>\n\n<p>So, the critical points are:</p>\n\n<p>$$ x = 1 \\quad \\text{and} \\quad x = 6 $$</p>\n\n<p>To determine where $ f'(x) $ is negative, we analyze the sign of $ f'(x) $ around the critical points. We consider the intervals $ (-\\infty, 1) $, $ (1, 6) $, and $ (6, \\infty) $ and test points from each interval.</p>\n\n<p>1. For $ x \\in (-\\infty, 1) $, choose $ x = 0 $:\n\n<p>$$ f'(0) = (0)^2 - 7(0) + 6 = 6 \\quad (\\text{Positive}) $$</p>\n\n</p>\n\n<p>2. For $ x \\in (1, 6) $, choose $ x = 2 $:\n\n<p>$$ f'(2) = (2)^2 - 7(2) + 6 = 4 - 14 + 6 = -4 \\quad (\\text{Negative}) $$</p>\n\n</p>\n\n<p>3. For $ x \\in (6, \\infty) $, choose $ x = 7 $:\n\n<p>$$ f'(7) = (7)^2 - 7(7) + 6 = 49 - 49 + 6 = 6 \\quad (\\text{Positive}) $$</p>\n\n</p>\n\n<p>The function $ f(x) $ is decreasing where the derivative is negative, which is in the interval $ (1, 6) $.</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p><strong>Option B (1, 6)</strong></p>",
@@ -4719,13 +4719,13 @@
     "type": "SCQ",
     "question": "What is the range of the function?",
     "options": [
-      "<span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mord\">∞</span><span class=\"mclose\">)</span>",
-      "<span class=\"mopen\">[</span><span class=\"mord\">0.5</span><span class=\"mpunct\">,</span><span class=\"mord\">∞</span><span class=\"mclose\">)</span>",
-      "<span class=\"mopen\">[</span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mord\">∞</span><span class=\"mclose\">)</span>",
-      "<span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mord\">0.5</span><span class=\"mclose\">]</span>"
+      "<span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mord\">\u221e</span><span class=\"mclose\">)</span>",
+      "<span class=\"mopen\">[</span><span class=\"mord\">0.5</span><span class=\"mpunct\">,</span><span class=\"mord\">\u221e</span><span class=\"mclose\">)</span>",
+      "<span class=\"mopen\">[</span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mord\">\u221e</span><span class=\"mclose\">)</span>",
+      "<span class=\"mopen\">(</span><span class=\"mord\">\u2212</span><span class=\"mord\">\u221e</span><span class=\"mpunct\">,</span><span class=\"mord\">0.5</span><span class=\"mclose\">]</span>"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>cos x varies between –1 and 1, so  </p>\n<p>$$1 - \\cos x\\in[\\,0,2\\,].$$  </p>\n<p>But since $x\\ne2n\\pi$, $\\cos x\\ne1$, hence  </p>\n<p>$$1 - \\cos x\\in(0,2].$$  </p></p>\n<p><p>Therefore  </p>\n<p>$$y=\\frac1{1-\\cos x}\\in\\Bigl[\\frac1{2},\\infty\\Bigr).$$  </p>\n<p> • Minimum occurs when $\\cos x=-1$ (i.e.\\ $x=(2n+1)\\pi$), giving $y=\\tfrac12$.  </p>\n<p> • As $\\cos x\\to1$, $1-\\cos x\\to0^+$ so $y\\to+\\infty$.  </p>\n<p>Answer: Option B $[0.5,\\infty)$.</p>",
+    "solution": "<p>cos x varies between \u20131 and 1, so  </p>\n<p>$$1 - \\cos x\\in[\\,0,2\\,].$$  </p>\n<p>But since $x\\ne2n\\pi$, $\\cos x\\ne1$, hence  </p>\n<p>$$1 - \\cos x\\in(0,2].$$  </p></p>\n<p><p>Therefore  </p>\n<p>$$y=\\frac1{1-\\cos x}\\in\\Bigl[\\frac1{2},\\infty\\Bigr).$$  </p>\n<p>\u2003\u2022 Minimum occurs when $\\cos x=-1$ (i.e.\\ $x=(2n+1)\\pi$), giving $y=\\tfrac12$.  </p>\n<p>\u2003\u2022 As $\\cos x\\to1$, $1-\\cos x\\to0^+$ so $y\\to+\\infty$.  </p>\n<p>Answer: Option B $[0.5,\\infty)$.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General",
@@ -4741,13 +4741,13 @@
     "type": "SCQ",
     "question": "What is the domain of the function (f(x))?",
     "options": [
-      "(0, ∞)",
-      "(3,<span style=\"\">∞)</span>",
-      "(-<span style=\"\">∞,&nbsp;∞)</span>",
-      "(-<span style=\"\">∞.∞)\\3</span>"
+      "(0, \u221e)",
+      "(3,<span style=\"\">\u221e)</span>",
+      "(-<span style=\"\">\u221e,&nbsp;\u221e)</span>",
+      "(-<span style=\"\">\u221e.\u221e)\\3</span>"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>Domain of a function is the set of all real $x$ for which the formula makes sense. Here,  </p>\n<p>$$f(x)=|x-3|$$  </p>\n<p>involves the expression $(x-3)$, which is a polynomial and is defined for every real number. Therefore:</p>\n\n<p><p>Inside the absolute value we have $x-3$, and there is no division by zero or square root of a negative—no restriction.  </p></p>\n<p><p>Hence $x$ can be any real number.</p></p>\n\n<p>So the domain is  </p>\n<p>$$(-\\infty,\\;\\infty)$$  </p>\n<p>which corresponds to Option C.</p>",
+    "solution": "<p>Domain of a function is the set of all real $x$ for which the formula makes sense. Here,  </p>\n<p>$$f(x)=|x-3|$$  </p>\n<p>involves the expression $(x-3)$, which is a polynomial and is defined for every real number. Therefore:</p>\n\n<p><p>Inside the absolute value we have $x-3$, and there is no division by zero or square root of a negative\u2014no restriction.  </p></p>\n<p><p>Hence $x$ can be any real number.</p></p>\n\n<p>So the domain is  </p>\n<p>$$(-\\infty,\\;\\infty)$$  </p>\n<p>which corresponds to Option C.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -4855,7 +4855,7 @@
       "40"
     ],
     "correctOptionIndex": 2,
-    "solution": "\n<p><p>We want to find f(20).  By the given property, if we can find real x,y such that  </p>\n<p>• xy = 5  </p>\n<p>• x+y = 20  </p>\n<p>then  </p>\n<p>$$f(20)=f(x+y)=f(xy)=f(5)=10\\,. $$  </p>\n<p>Solve for x (or y):  </p>\n<p>$$x+\\frac{5}{x}=20\\quad\\Longrightarrow\\quad x^2-20x+5=0\\,. $$  </p>\n<p>Discriminant  </p>\n<p>$$\\Delta=20^2-4\\cdot1\\cdot5=400-20=380>0$$  </p>\n<p>so there are real solutions. Hence such real x,y exist and  </p>\n<p>$$f(20)=10\\,. $$</p></p>\n<p><p>Similarly for f(−20), find real x,y with  </p>\n<p>• xy = 5  </p>\n<p>• x+y = −20  </p>\n<p>$$x+\\frac{5}{x}=-20\\quad\\Longrightarrow\\quad x^2+20x+5=0\\,, $$  </p>\n<p>$$\\Delta=20^2-4\\cdot1\\cdot5=400-20=380>0\\,. $$  </p>\n<p>So real solutions exist, giving  </p>\n<p>$$f(-20)=f(x+y)=f(xy)=f(5)=10\\,. $$</p></p>\n\n<p>Therefore  </p>\n<p>$$f(20)+f(-20)=10+10=20\\,. $$</p>\n<p>Answer: Option C (20).</p>",
+    "solution": "\n<p><p>We want to find f(20).  By the given property, if we can find real x,y such that  </p>\n<p>\u2022 xy = 5  </p>\n<p>\u2022 x+y = 20  </p>\n<p>then  </p>\n<p>$$f(20)=f(x+y)=f(xy)=f(5)=10\\,. $$  </p>\n<p>Solve for x (or y):  </p>\n<p>$$x+\\frac{5}{x}=20\\quad\\Longrightarrow\\quad x^2-20x+5=0\\,. $$  </p>\n<p>Discriminant  </p>\n<p>$$\\Delta=20^2-4\\cdot1\\cdot5=400-20=380>0$$  </p>\n<p>so there are real solutions. Hence such real x,y exist and  </p>\n<p>$$f(20)=10\\,. $$</p></p>\n<p><p>Similarly for f(\u221220), find real x,y with  </p>\n<p>\u2022 xy = 5  </p>\n<p>\u2022 x+y = \u221220  </p>\n<p>$$x+\\frac{5}{x}=-20\\quad\\Longrightarrow\\quad x^2+20x+5=0\\,, $$  </p>\n<p>$$\\Delta=20^2-4\\cdot1\\cdot5=400-20=380>0\\,. $$  </p>\n<p>So real solutions exist, giving  </p>\n<p>$$f(-20)=f(x+y)=f(xy)=f(5)=10\\,. $$</p></p>\n\n<p>Therefore  </p>\n<p>$$f(20)+f(-20)=10+10=20\\,. $$</p>\n<p>Answer: Option C (20).</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -4871,9 +4871,9 @@
     "question": "What is the period of the function f(x) = ln(2 + sin<sup>2</sup>x)?",
     "options": [
       "<span class=\"math-tex\">$\\rm \\frac{\\pi}{2}$</span>",
-      "π",
-      "2π",
-      "3π"
+      "\u03c0",
+      "2\u03c0",
+      "3\u03c0"
     ],
     "correctOptionIndex": 1,
     "solution": "<p>To determine the period of the function $$f(x) = \\ln(2 + \\sin^2 x),$$ follow these steps:</p>\n\n<p><p>$$\\sin^2 x$$ is the key part affecting the periodicity. Although $$\\sin x$$ has a period of $$2\\pi$$, its square, $$\\sin^2 x$$, actually has a period of $$\\pi$$ because:</p>\n<p>$$\\sin^2(x + \\pi) = \\sin^2 x.$$</p></p>\n<p><p>Since the logarithm function, $$\\ln(\\cdot)$$, is simply a transformation, the overall period of $$f(x)$$ is determined by the period of $$\\sin^2 x$$.</p></p>\n<p><p>After verifying that there is no smaller period that satisfies the function's repetition, we conclude that:</p>\n<p>$$f(x + \\pi) = \\ln(2 + \\sin^2(x + \\pi)) = \\ln(2 + \\sin^2 x) = f(x).$$</p></p>\n\n<p>Thus, the period of $$f(x)$$ is $$\\pi$$, which corresponds to Option B.</p>",
@@ -4956,10 +4956,10 @@
     "type": "SCQ",
     "question": "What is the domain of the function?",
     "options": [
-      "<span style=\"\">&nbsp;(1, ∞)</span>",
-      "<span style=\"\">(- ∞, ∞)</span>",
-      "<span style=\"\">&nbsp;(0, ∞)</span>",
-      "<span style=\"\">(- ∞, ∞)</span>"
+      "<span style=\"\">&nbsp;(1, \u221e)</span>",
+      "<span style=\"\">(- \u221e, \u221e)</span>",
+      "<span style=\"\">&nbsp;(0, \u221e)</span>",
+      "<span style=\"\">(- \u221e, \u221e)</span>"
     ],
     "correctOptionIndex": 1,
     "solution": "<p>We need the domain of</p>\n<p>$$ f(x)=1-\\sqrt[3]{(x-1)^2}. $$</p>\n<p>To find the domain, we check for any restriction on $x$.</p>\n<p>Here,</p>\n<p>$$ (x-1)^2 $$</p>\n<p>is defined for every real number $x$.</p>\n<p>Also, the cube root</p>\n<p>$$ \\sqrt[3]{\\,\\cdot\\,} $$</p>\n<p>is defined for all real numbers, unlike a square root which needs a non-negative number.</p>\n<p>Since $(x-1)^2 \\ge 0$ for every real $x$, its cube root is certainly defined for every real $x$.</p>\n<p>So there is no restriction on $x$.</p>\n<p>Therefore, the domain is</p>\n<p>$$ (-\\infty,\\infty). $$</p>\n<p>So the correct option is:</p>\n<p>Option 2: $(-\\infty,\\infty)$</p>",
@@ -5149,13 +5149,13 @@
     "type": "SCQ",
     "question": "What is the range of the function f(x) = x + |x| if the domain is the set of real numbers ?&nbsp;&nbsp;",
     "options": [
-      "(0,&nbsp;∞)",
-      "<span style=\"\">[0,&nbsp;∞)</span>",
-      "<span style=\"\">(-∞,&nbsp;∞)</span>",
-      "<span style=\"\">[1,&nbsp;∞)</span>"
+      "(0,&nbsp;\u221e)",
+      "<span style=\"\">[0,&nbsp;\u221e)</span>",
+      "<span style=\"\">(-\u221e,&nbsp;\u221e)</span>",
+      "<span style=\"\">[1,&nbsp;\u221e)</span>"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>To determine the range of the function $ f(x) = x + |x| $ where the domain is the set of real numbers, we first need to understand how the function behaves for different values of $ x $.</p>\n\n<p>Recall that the absolute value function $ |x| $ is defined as follows:</p>\n\n<p>\n\n<p>$$ |x| = \\begin{cases} -x & \\text{if } x < 0 \\\\ x & \\text{if } x \\geq 0 \\end{cases} $$</p>\n\n</p>\n\n<p>Now, let’s consider the two cases for $ x $:</p>\n\n<p><strong>Case 1:</strong> $ x \\geq 0 $</p>\n\n<p>If $ x \\geq 0 $, then $ |x| = x $. So the function $ f(x) $ becomes:</p>\n\n<p>\n\n<p>$$ f(x) = x + |x| = x + x = 2x $$</p>\n\n</p>\n\n<p>Since $ x \\geq 0 $, the expression $ 2x \\geq 0 $. Therefore, for $ x \\geq 0 $, the function $ f(x) $ can take on any value from 0 to $ \\infty $.</p>\n\n<p><strong>Case 2:</strong> $ x < 0 $</p>\n\n<p>If $ x < 0 $, then $ |x| = -x $. So the function $ f(x) $ becomes:</p>\n\n<p>\n\n<p>$$ f(x) = x + |x| = x - x = 0 $$</p>\n\n</p>\n\n<p>Hence, for $ x < 0 $, the function $ f(x) $ always equals 0.</p>\n\n<p>Combining these two cases, we see that the function $ f(x) = x + |x| $ can take on any value in the interval $[0, \\infty)$. The value 0 is achieved when $ x \\leq 0 $, and any positive value is achieved for some $ x \\geq 0 $.</p>\n\n<p>Therefore, the range of the function $ f(x) = x + |x| $ is $[0, \\infty)$.</p>\n\n<p>The correct option is:</p>\n\n<p><strong>Option B</strong>: <span style=\"\">[0,&nbsp;∞)</span></p>",
+    "solution": "<p>To determine the range of the function $ f(x) = x + |x| $ where the domain is the set of real numbers, we first need to understand how the function behaves for different values of $ x $.</p>\n\n<p>Recall that the absolute value function $ |x| $ is defined as follows:</p>\n\n<p>\n\n<p>$$ |x| = \\begin{cases} -x & \\text{if } x < 0 \\\\ x & \\text{if } x \\geq 0 \\end{cases} $$</p>\n\n</p>\n\n<p>Now, let\u2019s consider the two cases for $ x $:</p>\n\n<p><strong>Case 1:</strong> $ x \\geq 0 $</p>\n\n<p>If $ x \\geq 0 $, then $ |x| = x $. So the function $ f(x) $ becomes:</p>\n\n<p>\n\n<p>$$ f(x) = x + |x| = x + x = 2x $$</p>\n\n</p>\n\n<p>Since $ x \\geq 0 $, the expression $ 2x \\geq 0 $. Therefore, for $ x \\geq 0 $, the function $ f(x) $ can take on any value from 0 to $ \\infty $.</p>\n\n<p><strong>Case 2:</strong> $ x < 0 $</p>\n\n<p>If $ x < 0 $, then $ |x| = -x $. So the function $ f(x) $ becomes:</p>\n\n<p>\n\n<p>$$ f(x) = x + |x| = x - x = 0 $$</p>\n\n</p>\n\n<p>Hence, for $ x < 0 $, the function $ f(x) $ always equals 0.</p>\n\n<p>Combining these two cases, we see that the function $ f(x) = x + |x| $ can take on any value in the interval $[0, \\infty)$. The value 0 is achieved when $ x \\leq 0 $, and any positive value is achieved for some $ x \\geq 0 $.</p>\n\n<p>Therefore, the range of the function $ f(x) = x + |x| $ is $[0, \\infty)$.</p>\n\n<p>The correct option is:</p>\n\n<p><strong>Option B</strong>: <span style=\"\">[0,&nbsp;\u221e)</span></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -5168,7 +5168,7 @@
     "year": "2021",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p>Consider the following statements:</p>\n\n<p>1. A function f : Z&nbsp;→ Z, defined by f(x) = x + 1, is one-one as well as onto.</p>\n\n<p>2. A function f : N&nbsp;→ N, defined by f(x) = x + 1, is one-one but not onto.</p>\n\n<p>Which of the above statements is/are correct?</p>\n",
+    "question": "<p>Consider the following statements:</p>\n\n<p>1. A function f : Z&nbsp;\u2192 Z, defined by f(x) = x + 1, is one-one as well as onto.</p>\n\n<p>2. A function f : N&nbsp;\u2192 N, defined by f(x) = x + 1, is one-one but not onto.</p>\n\n<p>Which of the above statements is/are correct?</p>\n",
     "options": [
       "1 only",
       "2 only",
@@ -5213,10 +5213,10 @@
     "type": "SCQ",
     "question": "What is the domain of the function f(x) = 3<sup>x</sup>?",
     "options": [
-      "(-∞,&nbsp;∞)",
-      "(0,&nbsp;∞)",
-      "[0,&nbsp;∞",
-      "(-∞,&nbsp;∞) - {0}"
+      "(-\u221e,&nbsp;\u221e)",
+      "(0,&nbsp;\u221e)",
+      "[0,&nbsp;\u221e",
+      "(-\u221e,&nbsp;\u221e) - {0}"
     ],
     "correctOptionIndex": 0,
     "solution": "<p>The function $ f(x) = 3^x $ is an exponential function. </p>\n<p>The domain of an exponential function, such as $ 3^x $, is the set of all real numbers since there are no restrictions on the values that $ x $ can take for the function to be defined. In other words, you can input any real number into the function, and it will produce a valid output.</p>\n<p>Therefore, the domain of $ f(x) = 3^x $ is:</p>\n<p>Option A: $ (-\\infty, \\infty) $</p>",
@@ -5283,7 +5283,7 @@
       "10"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>To find the minimum of  </p>\n<p>$$f(x)=\\log_{10}\\bigl(x^2+2x+11\\bigr),$$  </p>\n<p>we can follow these steps:</p>\n\n<p><p>Rewrite the quadratic inside the log:  </p>\n<p>$$x^2 + 2x + 11 = (x+1)^2 + 10.$$  </p></p>\n<p><p>The term $(x+1)^2$ is always ≥ 0, so the smallest value of $(x+1)^2 + 10$ is 10, attained at $x=-1$.  </p></p>\n<p><p>Since $\\log_{10}$ is an increasing function, the minimum of $f(x)$ is  </p>\n<p>$$f_{\\min} = \\log_{10}(10) = 1.$$</p></p>\n\n<p>Answer: Option 2 (1).</p>",
+    "solution": "<p>To find the minimum of  </p>\n<p>$$f(x)=\\log_{10}\\bigl(x^2+2x+11\\bigr),$$  </p>\n<p>we can follow these steps:</p>\n\n<p><p>Rewrite the quadratic inside the log:  </p>\n<p>$$x^2 + 2x + 11 = (x+1)^2 + 10.$$  </p></p>\n<p><p>The term $(x+1)^2$ is always \u2265 0, so the smallest value of $(x+1)^2 + 10$ is 10, attained at $x=-1$.  </p></p>\n<p><p>Since $\\log_{10}$ is an increasing function, the minimum of $f(x)$ is  </p>\n<p>$$f_{\\min} = \\log_{10}(10) = 1.$$</p></p>\n\n<p>Answer: Option 2 (1).</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -5347,7 +5347,7 @@
       "cos |x|"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>Let’s find $f$ and $g$ so that  </p>\n\n<p><p>$f\\bigl(g(x)\\bigr)=\\cos^2\\!\\bigl(\\sqrt{x}\\bigr)$,  </p></p>\n<p><p>$g\\bigl(f(x)\\bigr)=\\lvert\\cos x\\rvert$.  </p></p>\n\n<p>A natural choice is  </p>\n\n<p><p>$g(x)=\\sqrt{x}$,  </p></p>\n<p><p>$f(x)=\\cos^2x$.  </p></p>\n\n<p>Check:  </p>\n\n<p><p>$f\\bigl(g(x)\\bigr)=f(\\sqrt{x})=\\cos^2(\\sqrt{x})$.  </p></p>\n<p><p>$g\\bigl(f(x)\\bigr)=\\sqrt{\\cos^2x}=\\lvert\\cos x\\rvert$.  </p></p>\n\n<p>Hence  </p>\n<p>$ \\boxed{f(x)=\\cos^2x} $</p>\n<p>(which is Option 3).</p>",
+    "solution": "<p>Let\u2019s find $f$ and $g$ so that  </p>\n\n<p><p>$f\\bigl(g(x)\\bigr)=\\cos^2\\!\\bigl(\\sqrt{x}\\bigr)$,  </p></p>\n<p><p>$g\\bigl(f(x)\\bigr)=\\lvert\\cos x\\rvert$.  </p></p>\n\n<p>A natural choice is  </p>\n\n<p><p>$g(x)=\\sqrt{x}$,  </p></p>\n<p><p>$f(x)=\\cos^2x$.  </p></p>\n\n<p>Check:  </p>\n\n<p><p>$f\\bigl(g(x)\\bigr)=f(\\sqrt{x})=\\cos^2(\\sqrt{x})$.  </p></p>\n<p><p>$g\\bigl(f(x)\\bigr)=\\sqrt{\\cos^2x}=\\lvert\\cos x\\rvert$.  </p></p>\n\n<p>Hence  </p>\n<p>$ \\boxed{f(x)=\\cos^2x} $</p>\n<p>(which is Option 3).</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General",
@@ -5363,13 +5363,13 @@
     "type": "SCQ",
     "question": "Which one of the following is g(x)?&nbsp;",
     "options": [
-      "√x",
+      "\u221ax",
       "|x|",
       "x<sup>2</sup>",
       "x|x|"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p>Let’s set things up step by step:</p>\n\n<p><p>Suppose g(x)=√x.  </p></p>\n<p><p>Define f(u)=cos²u.  </p></p>\n\n<p>Then  </p>\n\n<p><p>f∘g(x)=f(√x)=cos²(√x),  </p></p>\n<p><p>g∘f(x)=g(cos²x)=√(cos²x)=|cos x|.  </p></p>\n\n<p>Both match the given compositions.  </p>\n<p>Therefore,  </p>\n<p>$$\\boxed{g(x)=\\sqrt{x}}$$  </p>\n<p>(Option 1)</p>",
+    "solution": "<p>Let\u2019s set things up step by step:</p>\n\n<p><p>Suppose g(x)=\u221ax.  </p></p>\n<p><p>Define f(u)=cos\u00b2u.  </p></p>\n\n<p>Then  </p>\n\n<p><p>f\u2218g(x)=f(\u221ax)=cos\u00b2(\u221ax),  </p></p>\n<p><p>g\u2218f(x)=g(cos\u00b2x)=\u221a(cos\u00b2x)=|cos x|.  </p></p>\n\n<p>Both match the given compositions.  </p>\n<p>Therefore,  </p>\n<p>$$\\boxed{g(x)=\\sqrt{x}}$$  </p>\n<p>(Option 1)</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -5402,7 +5402,7 @@
     "title": "NDA Mathematics 1st September 2024",
     "year": "2024",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Consider the following statements :</p>\n\n<p>I. f(t) is an odd function.</p>\n\n<p>Il. g(t) is an odd function.</p>\n\n<p>Which of the statements given above is/are correct?&nbsp;&nbsp;</p>\n",
     "options": [
       "I&nbsp;only&nbsp;",
@@ -5411,11 +5411,11 @@
       "Neither I nor II"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>Let’s check each function for oddness, i.e. whether $h(-t)=-h(t)$.</p>\n\n<p><p>f(t)=$\\ln\\bigl(t+\\sqrt{1+t^2}\\bigr)$</p>\n<p>• Compute f(–t):  </p>\n<p>$         f(-t)         = \\ln\\bigl(-t+\\sqrt{1+(-t)^2}\\bigr)         = \\ln\\bigl(-t+\\sqrt{1+t^2}\\bigr).       $</p>\n<p>• Now</p>\n<p>$         f(t)+f(-t)         = \\ln\\bigl(t+\\sqrt{1+t^2}\\bigr)           +\\ln\\bigl(-t+\\sqrt{1+t^2}\\bigr)         = \\ln\\Bigl[(t+\\sqrt{1+t^2})(-t+\\sqrt{1+t^2})\\Bigr]         = \\ln(1)         = 0.       $</p>\n<p>Hence $f(-t)=-f(t)$ and $f$ is odd.</p></p>\n<p><p>g(t)=$\\tan\\bigl(f(t)\\bigr)$</p>\n<p>Since we just showed $f$ is odd,  </p>\n<p>$       g(-t)=\\tan\\bigl(f(-t)\\bigr)             =\\tan\\bigl(-f(t)\\bigr)             =-\\tan\\bigl(f(t)\\bigr)             =-g(t).     $</p>\n<p>So $g$ is also odd.</p></p>\n\n<p>Answer: Both I and II are correct. (Option 3)</p>",
+    "solution": "<p>Let\u2019s check each function for oddness, i.e. whether $h(-t)=-h(t)$.</p>\n\n<p><p>f(t)=$\\ln\\bigl(t+\\sqrt{1+t^2}\\bigr)$</p>\n<p>\u2022 Compute f(\u2013t):  </p>\n<p>$         f(-t)         = \\ln\\bigl(-t+\\sqrt{1+(-t)^2}\\bigr)         = \\ln\\bigl(-t+\\sqrt{1+t^2}\\bigr).       $</p>\n<p>\u2022 Now</p>\n<p>$         f(t)+f(-t)         = \\ln\\bigl(t+\\sqrt{1+t^2}\\bigr)           +\\ln\\bigl(-t+\\sqrt{1+t^2}\\bigr)         = \\ln\\Bigl[(t+\\sqrt{1+t^2})(-t+\\sqrt{1+t^2})\\Bigr]         = \\ln(1)         = 0.       $</p>\n<p>Hence $f(-t)=-f(t)$ and $f$ is odd.</p></p>\n<p><p>g(t)=$\\tan\\bigl(f(t)\\bigr)$</p>\n<p>Since we just showed $f$ is odd,  </p>\n<p>$       g(-t)=\\tan\\bigl(f(-t)\\bigr)             =\\tan\\bigl(-f(t)\\bigr)             =-\\tan\\bigl(f(t)\\bigr)             =-g(t).     $</p>\n<p>So $g$ is also odd.</p></p>\n\n<p>Answer: Both I and II are correct. (Option 3)</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "lwv8hgkz",
@@ -5532,7 +5532,7 @@
     "year": "2023",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "A function satisfies&nbsp;<span class=\"math-tex\">$f(x-y)=\\frac{f(x)}{f(y)}$</span>, where f(y) ≠ 0. If f(1) = 0.5, then what is&nbsp;f(2) + f(3) + f(4) + f(5) + f(6) equal to ?",
+    "question": "A function satisfies&nbsp;<span class=\"math-tex\">$f(x-y)=\\frac{f(x)}{f(y)}$</span>, where f(y) \u2260 0. If f(1) = 0.5, then what is&nbsp;f(2) + f(3) + f(4) + f(5) + f(6) equal to ?",
     "options": [
       "<span class=\"math-tex\">$\\frac{15}{32}$</span>",
       "<span class=\"math-tex\">$\\frac{17}{32}$</span>",
@@ -5600,9 +5600,9 @@
     "question": "What is the range of the function?",
     "options": [
       "[0, 1]",
-      "[π, π + 1]",
-      "[π - 1, π + 1]",
-      "[π - 1,&nbsp;π&nbsp;- 1]"
+      "[\u03c0, \u03c0 + 1]",
+      "[\u03c0 - 1, \u03c0 + 1]",
+      "[\u03c0 - 1,&nbsp;\u03c0&nbsp;- 1]"
     ],
     "correctOptionIndex": 1,
     "solution": "<p>The function is defined by:</p>\n<p>$$ f(x) = \\pi + \\sin^2(x) $$</p>\n<p>Given that $ \\sin^2(x) $ represents the square of the sine function, the values of $ \\sin^2(x) $ lie between 0 and 1, inclusive, because squaring the sine function (which oscillates between -1 and 1) yields values from 0 to 1. Therefore, the minimum value of $ \\sin^2(x) $ is 0 and the maximum value is 1.</p>\n<p>Adding $ \\pi $ to $ \\sin^2(x) $:</p>\n\n<p>When $ \\sin^2(x) = 0 $:</p>\n\n<p>$$ f(x) = \\pi + 0 = \\pi $$</p>\n\n<p>When $ \\sin^2(x) = 1 $:</p>\n\n<p>$$ f(x) = \\pi + 1 $$</p>\n<p>Thus, the range of the function $ f(x) $ is from $ \\pi $ to $ \\pi + 1 $, inclusive.</p>\n<p><strong>The correct option is:</strong></p>\n<p>$ [\\pi, \\pi + 1] $</p>\n<p><strong>Option B</strong></p>",
@@ -5641,9 +5641,9 @@
     "type": "SCQ",
     "question": "What is the greatest value of the function?",
     "options": [
-      "√3",
-      "√6",
-      "√8",
+      "\u221a3",
+      "\u221a6",
+      "\u221a8",
       "4"
     ],
     "correctOptionIndex": 2,
@@ -5661,7 +5661,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "<p style=\"\">What is&nbsp;<span class=\"math-tex\">$\\displaystyle\\sum_{x=1}^5$</span>f(2x − 1) equal to ?</p>\n",
+    "question": "<p style=\"\">What is&nbsp;<span class=\"math-tex\">$\\displaystyle\\sum_{x=1}^5$</span>f(2x \u2212 1) equal to ?</p>\n",
     "options": [
       "341",
       "682",
@@ -5704,7 +5704,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "​If f(x) = 4x + 1 and g(x) = kx + 2 such that fog(x) = gof(x), then what is the value of k ?",
+    "question": "\u200bIf f(x) = 4x + 1 and g(x) = kx + 2 such that fog(x) = gof(x), then what is the value of k ?",
     "options": [
       "7",
       "5",
@@ -5733,7 +5733,7 @@
       "Neither 1 nor 2"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>Let's analyze the function f(x) graphically:</p>\n\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lz51geh8/9ba86106-d596-4ee4-aca6-991c0aee3143/ccb9f8c0-4c96-11ef-a87d-bd480f93d5dd/file-jaoe38c1lz51geh9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lz51geh8/9ba86106-d596-4ee4-aca6-991c0aee3143/ccb9f8c0-4c96-11ef-a87d-bd480f93d5dd/file-jaoe38c1lz51geh9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 4 September 2022 Mathematics - Functions Question 33 English Explanation\"></p>\n\n<p>For 0 &lt; |x| ≤ 3, we get:</p>\n\n<p>x ∈ [-3, 0) ∪ (0, 3]</p>\n\n<p>From the graph, we observe that the maximum value occurs at both x = 3 and x = -3, not exclusively at x = 3.</p>\n\n<p>Therefore, statement 1 is incorrect.</p>\n\n<p>By examining the graph further, it is evident that the minimum value is at x = 0.</p>\n\n<p>Specifically, when x = 0, f(x) = 1, which indicates that x = 0 is where the minimum value of the function occurs.</p>",
+    "solution": "<p>Let's analyze the function f(x) graphically:</p>\n\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lz51geh8/9ba86106-d596-4ee4-aca6-991c0aee3143/ccb9f8c0-4c96-11ef-a87d-bd480f93d5dd/file-jaoe38c1lz51geh9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lz51geh8/9ba86106-d596-4ee4-aca6-991c0aee3143/ccb9f8c0-4c96-11ef-a87d-bd480f93d5dd/file-jaoe38c1lz51geh9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 4 September 2022 Mathematics - Functions Question 33 English Explanation\"></p>\n\n<p>For 0 &lt; |x| \u2264 3, we get:</p>\n\n<p>x \u2208 [-3, 0) \u222a (0, 3]</p>\n\n<p>From the graph, we observe that the maximum value occurs at both x = 3 and x = -3, not exclusively at x = 3.</p>\n\n<p>Therefore, statement 1 is incorrect.</p>\n\n<p>By examining the graph further, it is evident that the minimum value is at x = 0.</p>\n\n<p>Specifically, when x = 0, f(x) = 1, which indicates that x = 0 is where the minimum value of the function occurs.</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General",

@@ -33,7 +33,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -41,7 +41,7 @@
     "difficulty": "hard",
     "solution": "<p>Let</p>\n<p>$$ z = x+iy \\qquad \\text{where } x,y \\in \\mathbb{R}. $$</p>\n<p>Then</p>\n<p>$$ \\bar z = x-iy. $$</p>\n<p>The given equation is</p>\n<p>$$ z(\\bar z+2+i)+k(2+3i)=0. $$</p>\n<p>We have to find all real values of $k$ for which this equation has at least one complex solution $z$.</p>\n\n<p>First, simplify $z(\\bar z+2+i)$:</p>\n<p>$$ z(\\bar z+2+i)=z\\bar z+z(2+i). $$</p>\n<p>Now,</p>\n<p>$$ z\\bar z = |z|^2 = x^2+y^2 $$</p>\n<p>and</p>\n<p>$$ z(2+i)=(x+iy)(2+i). $$</p>\n<p>Let us multiply:</p>\n<p>$$ (x+iy)(2+i)=2x+ix+2iy+i^2y $$</p>\n<p>Since $i^2=-1$,</p>\n<p>$$ (x+iy)(2+i)=(2x-y)+i(x+2y). $$</p>\n<p>So,</p>\n<p>$$ z(\\bar z+2+i)=x^2+y^2+(2x-y)+i(x+2y). $$</p>\n<p>Hence the given equation becomes</p>\n<p>$$ \\left(x^2+y^2+2x-y\\right)+i(x+2y)+k(2+3i)=0. $$</p>\n<p>Now separate real and imaginary parts:</p>\n<p>$$ \\left(x^2+y^2+2x-y+2k\\right)+i\\left(x+2y+3k\\right)=0. $$</p>\n<p>Therefore,</p>\n<p>$$ x^2+y^2+2x-y+2k=0 \\qquad \\text{and} \\qquad x+2y+3k=0. $$</p>\n\n<p>From the second equation,</p>\n<p>$$ 3k=-(x+2y) $$</p>\n<p>so</p>\n<p>$$ k=-\\frac{x+2y}{3}. $$</p>\n<p>Substitute this into the first equation:</p>\n<p>$$ x^2+y^2+2x-y+2\\left(-\\frac{x+2y}{3}\\right)=0. $$</p>\n<p>Multiply by $3$:</p>\n<p>$$ 3x^2+3y^2+6x-3y-2x-4y=0 $$</p>\n<p>$$ 3x^2+3y^2+4x-7y=0. $$</p>\n<p>Now complete squares:</p>\n<p>$$ 3\\left(x^2+\\frac{4}{3}x\\right)+3\\left(y^2-\\frac{7}{3}y\\right)=0. $$</p>\n<p>$$ 3\\left[\\left(x+\\frac{2}{3}\\right)^2-\\frac{4}{9}\\right] +3\\left[\\left(y-\\frac{7}{6}\\right)^2-\\frac{49}{36}\\right]=0. $$</p>\n<p>$$ 3\\left(x+\\frac{2}{3}\\right)^2-\\frac{4}{3} +3\\left(y-\\frac{7}{6}\\right)^2-\\frac{49}{12}=0. $$</p>\n<p>$$ 3\\left(x+\\frac{2}{3}\\right)^2+3\\left(y-\\frac{7}{6}\\right)^2 =\\frac{4}{3}+\\frac{49}{12}. $$</p>\n<p>$$ 3\\left(x+\\frac{2}{3}\\right)^2+3\\left(y-\\frac{7}{6}\\right)^2 =\\frac{16+49}{12}=\\frac{65}{12}. $$</p>\n<p>So,</p>\n<p>$$ \\left(x+\\frac{2}{3}\\right)^2+\\left(y-\\frac{7}{6}\\right)^2=\\frac{65}{36}. $$</p>\n<p>This is a circle with centre</p>\n<p>$$ \\left(-\\frac{2}{3},\\frac{7}{6}\\right) $$</p>\n<p>and radius</p>\n<p>$$ \\frac{\\sqrt{65}}{6}. $$</p>\n\n<p>Now,</p>\n<p>$$ k=-\\frac{x+2y}{3}. $$</p>\n<p>So we need the range of the linear expression $x+2y$ on this circle.</p>\n<p>Let</p>\n<p>$$ S=x+2y. $$</p>\n<p>For a circle, maximum and minimum of a linear expression occur at the extreme points in the direction of its normal vector.</p>\n<p>At the centre,</p>\n<p>$$ S_c=-\\frac{2}{3}+2\\cdot\\frac{7}{6} =-\\frac{2}{3}+\\frac{7}{3} =\\frac{5}{3}. $$</p>\n<p>The vector corresponding to $x+2y$ is $(1,2)$, whose magnitude is</p>\n<p>$$ \\sqrt{1^2+2^2}=\\sqrt{5}. $$</p>\n<p>Hence the maximum variation from the centre is</p>\n<p>$$ \\text{radius} \\times \\sqrt{5} =\\frac{\\sqrt{65}}{6}\\cdot\\sqrt{5} =\\frac{\\sqrt{325}}{6} =\\frac{5\\sqrt{13}}{6}. $$</p>\n<p>Therefore,</p>\n<p>$$ S_{\\min}=\\frac{5}{3}-\\frac{5\\sqrt{13}}{6}, \\qquad S_{\\max}=\\frac{5}{3}+\\frac{5\\sqrt{13}}{6}. $$</p>\n<p>Since</p>\n<p>$$ k=-\\frac{S}{3}, $$</p>\n<p>the interval for $k$ is</p>\n<p>$$ \\left[-\\frac{S_{\\max}}{3},-\\frac{S_{\\min}}{3}\\right]. $$</p>\n<p>So if this interval is $[\\alpha,\\beta]$, then</p>\n<p>$$ \\alpha+\\beta = -\\frac{S_{\\max}+S_{\\min}}{3} = -\\frac{2\\cdot \\frac{5}{3}}{3} = -\\frac{10}{9}. $$</p>\n<p>Hence,</p>\n<p>$$ 9(\\alpha+\\beta)=9\\left(-\\frac{10}{9}\\right)=-10. $$</p>\n<p>Therefore, the correct answer is</p>\n<p>$$ \\boxed{-10}. $$</p>\n<p>So, Option A is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1lgsugbnn",
@@ -334,10 +334,10 @@
     "questionNumber": 55,
     "questionText": "If the equation, x<sup>2</sup> + bx + 45 = 0 (b $$ \\in $$ R) has\nconjugate complex roots and they satisfy\n|z +1| = 2$$\\sqrt {10} $$ , then :",
     "options": [
-      "b<sup>2</sup> – b = 42",
+      "b<sup>2</sup> \u2013 b = 42",
       "b<sup>2</sup> + b = 12",
       "b<sup>2</sup> + b = 72",
-      "b<sup>2</sup> – b = 30"
+      "b<sup>2</sup> \u2013 b = 30"
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -347,7 +347,7 @@
     "subject": "Mathematics",
     "topic": "conjugate-of-complex-numbers",
     "difficulty": "medium",
-    "solution": "x<sup>2</sup>\n + bx = 45 = 0 (b $$ \\in $$ R)\n<br>has roots $$\\alpha $$ + i$$\\beta $$, $$\\alpha $$ – i$$\\beta $$\n<br>sum of roots = – b = 2$$\\alpha $$\n<br>product of roots = 45 = \n$$\\alpha $$<sup>2</sup>\n + $$\\beta $$<sup>2</sup>\n<br><br>Let z = x + iy\n<br><br>$$ \\therefore $$ |x + iy +1| = 2$$\\sqrt {10} $$\n<br><br>$${\\left| {x + iy + 1} \\right|^2} = {\\left( {2\\sqrt {10} } \\right)^2}$$\n<br><br>$$ \\Rightarrow $$ (x + 1)<sup>2</sup> + y<sup>2</sup> = 40\n<br><br>$$ \\Rightarrow $$ ($$\\alpha $$ + 1)<sup>2</sup> + $$\\beta $$<sup>2</sup> = 40\n<br><br> [putting real part $$\\alpha $$ in place of x and imaginary part $$\\beta $$ in place of y]\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$<sup>2</sup> + 2$$\\alpha $$ + 1 + $$\\beta $$<sup>2</sup> = 40\n<br><br>$$ \\Rightarrow $$ 45 + 2$$\\alpha $$ + 1 = 40\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = -3\n<br><br>$$ \\therefore $$ -b = 2$$\\alpha $$ = 2$$ \\times $$(-3) = -6\n<br><br>$$ \\Rightarrow $$ b = 6\n<br><br>By checking options we found b<sup>2</sup> – b = 30.",
+    "solution": "x<sup>2</sup>\n + bx = 45 = 0 (b $$ \\in $$ R)\n<br>has roots $$\\alpha $$ + i$$\\beta $$, $$\\alpha $$ \u2013 i$$\\beta $$\n<br>sum of roots = \u2013 b = 2$$\\alpha $$\n<br>product of roots = 45 = \n$$\\alpha $$<sup>2</sup>\n + $$\\beta $$<sup>2</sup>\n<br><br>Let z = x + iy\n<br><br>$$ \\therefore $$ |x + iy +1| = 2$$\\sqrt {10} $$\n<br><br>$${\\left| {x + iy + 1} \\right|^2} = {\\left( {2\\sqrt {10} } \\right)^2}$$\n<br><br>$$ \\Rightarrow $$ (x + 1)<sup>2</sup> + y<sup>2</sup> = 40\n<br><br>$$ \\Rightarrow $$ ($$\\alpha $$ + 1)<sup>2</sup> + $$\\beta $$<sup>2</sup> = 40\n<br><br> [putting real part $$\\alpha $$ in place of x and imaginary part $$\\beta $$ in place of y]\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$<sup>2</sup> + 2$$\\alpha $$ + 1 + $$\\beta $$<sup>2</sup> = 40\n<br><br>$$ \\Rightarrow $$ 45 + 2$$\\alpha $$ + 1 = 40\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = -3\n<br><br>$$ \\therefore $$ -b = 2$$\\alpha $$ = 2$$ \\times $$(-3) = -6\n<br><br>$$ \\Rightarrow $$ b = 6\n<br><br>By checking options we found b<sup>2</sup> \u2013 b = 30.",
     "section": "A",
     "type": "SCQ"
   },

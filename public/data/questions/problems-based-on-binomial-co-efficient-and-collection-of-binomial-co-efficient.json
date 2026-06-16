@@ -166,7 +166,7 @@
     "subject": "Mathematics",
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
     "difficulty": "medium",
-    "solution": "<p>Given</p>\n<p>$$ {^{30}C_{30-r}} + 3{^{30}C_{31-r}} + 3{^{30}C_{32-r}} + {^{30}C_{33-r}} = {^mC_r} $$</p>\n<p>for $3 \\le r \\le 30$.</p>\n<p>We have to find $m$.</p>\n\n<p>First, use the symmetry property of combinations:</p>\n<p>$$ {^nC_k} = {^nC_{n-k}} $$</p>\n<p>So,</p>\n<p>$$ {^{30}C_{30-r}} = {^{30}C_r} $$</p>\n<p>$$ {^{30}C_{31-r}} = {^{30}C_{r-1}} $$</p>\n<p>because</p>\n<p>$$ 30-(31-r)=r-1 $$</p>\n<p>Similarly,</p>\n<p>$$ {^{30}C_{32-r}} = {^{30}C_{r-2}} $$</p>\n<p>and</p>\n<p>$$ {^{30}C_{33-r}} = {^{30}C_{r-3}} $$</p>\n<p>Therefore the left-hand side becomes</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} $$</p>\n\n<p>Now notice the coefficients:</p>\n<p>$$ 1,\\ 3,\\ 3,\\ 1 $$</p>\n<p>These are the binomial coefficients in the expansion of</p>\n<p>$$ (1+x)^3 $$</p>\n<p>Also, by Vandermonde’s identity,</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} = {^{33}C_r} $$</p>\n<p>Let us see this through binomial expansion:</p>\n<p>Coefficient of $x^r$ in $(1+x)^{33}$ is</p>\n<p>$$ {^{33}C_r} $$</p>\n<p>But</p>\n<p>$$ (1+x)^{33} = (1+x)^{30}(1+x)^3 $$</p>\n<p>and</p>\n<p>$$ (1+x)^3 = 1 + 3x + 3x^2 + x^3 $$</p>\n<p>So coefficient of $x^r$ in $(1+x)^{30}(1+3x+3x^2+x^3)$ is</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} $$</p>\n<p>Hence,</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} = {^{33}C_r} $$</p>\n<p>Comparing with</p>\n<p>$$ {^mC_r} $$</p>\n<p>we get</p>\n<p>$$ m = 33 $$</p>\n\n<p>The correct answer is:</p>\n<p>$$ \\boxed{33} $$</p>\n<p>So, Option C.</p>",
+    "solution": "<p>Given</p>\n<p>$$ {^{30}C_{30-r}} + 3{^{30}C_{31-r}} + 3{^{30}C_{32-r}} + {^{30}C_{33-r}} = {^mC_r} $$</p>\n<p>for $3 \\le r \\le 30$.</p>\n<p>We have to find $m$.</p>\n\n<p>First, use the symmetry property of combinations:</p>\n<p>$$ {^nC_k} = {^nC_{n-k}} $$</p>\n<p>So,</p>\n<p>$$ {^{30}C_{30-r}} = {^{30}C_r} $$</p>\n<p>$$ {^{30}C_{31-r}} = {^{30}C_{r-1}} $$</p>\n<p>because</p>\n<p>$$ 30-(31-r)=r-1 $$</p>\n<p>Similarly,</p>\n<p>$$ {^{30}C_{32-r}} = {^{30}C_{r-2}} $$</p>\n<p>and</p>\n<p>$$ {^{30}C_{33-r}} = {^{30}C_{r-3}} $$</p>\n<p>Therefore the left-hand side becomes</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} $$</p>\n\n<p>Now notice the coefficients:</p>\n<p>$$ 1,\\ 3,\\ 3,\\ 1 $$</p>\n<p>These are the binomial coefficients in the expansion of</p>\n<p>$$ (1+x)^3 $$</p>\n<p>Also, by Vandermonde\u2019s identity,</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} = {^{33}C_r} $$</p>\n<p>Let us see this through binomial expansion:</p>\n<p>Coefficient of $x^r$ in $(1+x)^{33}$ is</p>\n<p>$$ {^{33}C_r} $$</p>\n<p>But</p>\n<p>$$ (1+x)^{33} = (1+x)^{30}(1+x)^3 $$</p>\n<p>and</p>\n<p>$$ (1+x)^3 = 1 + 3x + 3x^2 + x^3 $$</p>\n<p>So coefficient of $x^r$ in $(1+x)^{30}(1+3x+3x^2+x^3)$ is</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} $$</p>\n<p>Hence,</p>\n<p>$$ {^{30}C_r} + 3{^{30}C_{r-1}} + 3{^{30}C_{r-2}} + {^{30}C_{r-3}} = {^{33}C_r} $$</p>\n<p>Comparing with</p>\n<p>$$ {^mC_r} $$</p>\n<p>we get</p>\n<p>$$ m = 33 $$</p>\n\n<p>The correct answer is:</p>\n<p>$$ \\boxed{33} $$</p>\n<p>So, Option C.</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -182,7 +182,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -190,7 +190,7 @@
     "difficulty": "hard",
     "solution": "<p>Coefficient of $x^3$ in the given expression</p>\n<p>$$ (1+x)^3+(1+x)^4+\\cdots +(1+x)^{99}+(1+kx)^{100} $$</p>\n<p>is obtained by adding the coefficients of $x^3$ from each term.</p>\n<p>For $(1+x)^r$, coefficient of $x^3$ is</p>\n<p>$$ {}^rC_3 $$</p>\n<p>So, from</p>\n<p>$$ (1+x)^3+(1+x)^4+\\cdots +(1+x)^{99} $$</p>\n<p>the total coefficient of $x^3$ is</p>\n<p>$$ \\sum_{r=3}^{99} {}^rC_3 $$</p>\n<p>Also, in $(1+kx)^{100}$, coefficient of $x^3$ is</p>\n<p>$$ {}^{100}C_3\\,k^3 $$</p>\n<p>Hence total coefficient of $x^3$ is</p>\n<p>$$ \\sum_{r=3}^{99} {}^rC_3 + {}^{100}C_3 k^3 $$</p>\n<p>Now use the standard NCERT identity:</p>\n<p>$$ \\sum_{r=3}^{99} {}^rC_3 = {}^{100}C_4 $$</p>\n<p>So coefficient becomes</p>\n<p>$$ {}^{100}C_4 + {}^{100}C_3 k^3 $$</p>\n<p>Given that this equals</p>\n<p>$$ \\left(43n+\\frac{101}{4}\\right){}^{100}C_3 $$</p>\n<p>Therefore,</p>\n<p>$$ {}^{100}C_4 + {}^{100}C_3 k^3 = \\left(43n+\\frac{101}{4}\\right){}^{100}C_3 $$</p>\n<p>Divide by ${}^{100}C_3$:</p>\n<p>$$ \\frac{{}^{100}C_4}{{}^{100}C_3}+k^3 = 43n+\\frac{101}{4} $$</p>\n<p>Now,</p>\n<p>$$ \\frac{{}^{100}C_4}{{}^{100}C_3} = \\frac{100-3}{4} = \\frac{97}{4} $$</p>\n<p>So,</p>\n<p>$$ k^3+\\frac{97}{4}=43n+\\frac{101}{4} $$</p>\n<p>Thus,</p>\n<p>$$ k^3=43n+1 $$</p>\n<p>We need the smallest $k\\in\\mathbb N$ such that</p>\n<p>$$ k^3-1 $$</p>\n<p>is divisible by $43$.</p>\n<p>That is,</p>\n<p>$$ k^3\\equiv 1 \\pmod{43} $$</p>\n<p>Now check smallest natural numbers:</p>\n<p>$$ 1^3=1 \\equiv 1 \\pmod{43} $$</p>\n<p>So the smallest value is</p>\n<p>$$ k=1 $$</p>\n<p>Hence,</p>\n<p>$$ 1=43n+1 $$</p>\n<p>which gives</p>\n<p>$$ n=0 $$</p>\n<p>But in the question, $n\\in \\mathbb N$. In school-level convention, if $\\mathbb N=\\{0,1,2,\\dots\\}$, then this is allowed.</p>\n<p>Thus,</p>\n<p>$$ p=1,\\quad n=0 $$</p>\n<p>and</p>\n<p>$$ p+n=1 $$</p>\n<p>But this is not among the options, so clearly the intended convention is $n\\ge 1$.</p>\n<p>Now take the smallest $n\\in\\mathbb N$ with $n\\ge 1$ such that</p>\n<p>$$ k^3=43n+1 $$</p>\n<p>Try $n=1$:</p>\n<p>$$ k^3=44 \\quad \\text{not a cube} $$</p>\n<p>$n=2$:</p>\n<p>$$ k^3=87 \\quad \\text{not a cube} $$</p>\n<p>$n=3$:</p>\n<p>$$ k^3=130 \\quad \\text{not a cube} $$</p>\n<p>$n=4$:</p>\n<p>$$ k^3=173 $$</p>\n<p>$n=5$:</p>\n<p>$$ k^3=216=6^3 $$</p>\n<p>So smallest such $k$ is</p>\n<p>$$ p=6,\\quad n=5 $$</p>\n<p>Therefore,</p>\n<p>$$ p+n=6+5=11 $$</p>\n<p>Hence the correct answer is:</p>\n<p>$$ \\boxed{11} $$</p>\n<p>So, Option B is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnsik5rv",
@@ -266,7 +266,7 @@
     "subject": "Mathematics",
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
     "difficulty": "hard",
-    "solution": "<p>$\\begin{aligned} & (1+x)^{11}={ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x^2+\\cdots+{ }^{11} C_{11} x^{11} \\\\ & \\int_0^1(1+x)^{11} d x=\\int_0^1\\left({ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x{ }^2+\\cdots+{ }^{11} C_{11} x{ }^{11}\\right) d x \\\\ & \\left.\\left.\\frac{(1-x)^{12}}{12}\\right]_0^1={ }^{11} C_{0 x}+\\frac{{ }^{11} C_1 x^2}{2}+\\frac{{ }^{11} C_2 x}{3}+\\cdots+\\frac{{ }^{11} C_{11} x^{12}}{12}\\right]_0^1\\end{aligned}$</p>\n<p>$$\\frac{2^{12}-1}{12}=C_0+\\frac{C_1}{2}+\\frac{C_2}{3}+\\cdots+\\frac{C_{11}}{12} \\cdots$$ ........(1)</p>\n<p>Now,</p>\n<p>$$ \\begin{aligned} & \\int_{-1}^0(1+x)^{11} d x=\\int_{-1}^0\\left({ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x^2+\\cdots+{ }^{11} C_{11} x^{11}\\right) d x \\\\ & \\left.\\left.\\frac{(1+x)^{12}}{12}\\right]_{-1}^0={ }^{11} C_0 x+\\frac{{ }^{11} C_1 x^2}{2}+\\frac{{ }^{11} C_2 x^3}{3}+\\cdots+\\frac{{ }^{11} C_{11} x^{12}}{12}\\right]_{-1}^0 \\end{aligned} $$</p>\n<p>$$\\frac{1}{12}=C_0-\\frac{C_1}{2}+\\frac{C_2}{3} \\cdots$$ …….(2)</p>\n<p>$\\begin{aligned} & \\text { (1) }-(2) \\\\\\\\ & =\\frac{2^{12}-2}{12}=2\\left[\\frac{C_1}{2}+\\frac{C_3}{4}+\\cdots\\right] \\\\\\\\ & \\Rightarrow \\sum_{r=0}^5 \\frac{C_{2 r+1}}{2 r+2}=\\frac{2^{11}-1}{12}=\\frac{2047}{12}=\\frac{m}{n} \\\\\\\\ & =2047-12=2035\\end{aligned}$</p>",
+    "solution": "<p>$\\begin{aligned} & (1+x)^{11}={ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x^2+\\cdots+{ }^{11} C_{11} x^{11} \\\\ & \\int_0^1(1+x)^{11} d x=\\int_0^1\\left({ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x{ }^2+\\cdots+{ }^{11} C_{11} x{ }^{11}\\right) d x \\\\ & \\left.\\left.\\frac{(1-x)^{12}}{12}\\right]_0^1={ }^{11} C_{0 x}+\\frac{{ }^{11} C_1 x^2}{2}+\\frac{{ }^{11} C_2 x}{3}+\\cdots+\\frac{{ }^{11} C_{11} x^{12}}{12}\\right]_0^1\\end{aligned}$</p>\n<p>$$\\frac{2^{12}-1}{12}=C_0+\\frac{C_1}{2}+\\frac{C_2}{3}+\\cdots+\\frac{C_{11}}{12} \\cdots$$ ........(1)</p>\n<p>Now,</p>\n<p>$$ \\begin{aligned} & \\int_{-1}^0(1+x)^{11} d x=\\int_{-1}^0\\left({ }^{11} C_0+{ }^{11} C_1 x+{ }^{11} C_2 x^2+\\cdots+{ }^{11} C_{11} x^{11}\\right) d x \\\\ & \\left.\\left.\\frac{(1+x)^{12}}{12}\\right]_{-1}^0={ }^{11} C_0 x+\\frac{{ }^{11} C_1 x^2}{2}+\\frac{{ }^{11} C_2 x^3}{3}+\\cdots+\\frac{{ }^{11} C_{11} x^{12}}{12}\\right]_{-1}^0 \\end{aligned} $$</p>\n<p>$$\\frac{1}{12}=C_0-\\frac{C_1}{2}+\\frac{C_2}{3} \\cdots$$ \u2026\u2026.(2)</p>\n<p>$\\begin{aligned} & \\text { (1) }-(2) \\\\\\\\ & =\\frac{2^{12}-2}{12}=2\\left[\\frac{C_1}{2}+\\frac{C_3}{4}+\\cdots\\right] \\\\\\\\ & \\Rightarrow \\sum_{r=0}^5 \\frac{C_{2 r+1}}{2 r+2}=\\frac{2^{11}-1}{12}=\\frac{2047}{12}=\\frac{m}{n} \\\\\\\\ & =2047-12=2035\\end{aligned}$</p>",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -1370,7 +1370,7 @@
   {
     "id": "9WFnigdEpxBY7O7zuf1klrfi0p3",
     "questionNumber": 66,
-    "questionText": "The value of\n<br>-<sup>15</sup>C<sub>1</sub> + 2.<sup>15</sup>C<sub>2</sub> – 3.<sup>15</sup>C<sub>3</sub> + ... - 15.<sup>15</sup>C<sub>15</sub> + <sup>14</sup>C<sub>1</sub> + <sup>14</sup>C<sub>3</sub> + <sup>14</sup>C<sub>5</sub> + ...+ <sup>14</sup>C<sub>11</sub> is :",
+    "questionText": "The value of\n<br>-<sup>15</sup>C<sub>1</sub> + 2.<sup>15</sup>C<sub>2</sub> \u2013 3.<sup>15</sup>C<sub>3</sub> + ... - 15.<sup>15</sup>C<sub>15</sub> + <sup>14</sup>C<sub>1</sub> + <sup>14</sup>C<sub>3</sub> + <sup>14</sup>C<sub>5</sub> + ...+ <sup>14</sup>C<sub>11</sub> is :",
     "options": [
       "2<sup>13</sup> - 13 ",
       "2<sup>16</sup> - 1",
@@ -1598,7 +1598,7 @@
     "subject": "Mathematics",
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
     "difficulty": "medium",
-    "solution": "(1 + x + x<sup>2</sup>\n + ....+ x<sup>2n</sup>)(1 - x + x<sup>2</sup> - x<sup>3</sup> + ...... + x<sup>2n</sup>) \n<br><br>= a<sub>0</sub> + a<sub>1</sub>x + a<sub>2</sub>x<sup>2</sup>\n + …..\n<br><br>put x = 1\n<br><br> (2n + 1)$$ \\times $$1 = a<sub>0</sub> + a<sub>1</sub> + a<sub>2</sub> + …… (1)\n<br><br>put x = –1\n<br><br> 1$$ \\times $$(2n + 1) = a<sub>0</sub> – a<sub>1</sub> + a<sub>2</sub>+  …….. (2)\n<br><br>Adding (1) and (2)\n<br><br>4n + 2 = 2(a<sub>0</sub> + a<sub>2</sub> + ….. ) \n<br><br>$$ \\Rightarrow $$ 4n + 2 = 2 $$ \\times $$ 61\n<br><br>$$ \\Rightarrow $$ n = 30",
+    "solution": "(1 + x + x<sup>2</sup>\n + ....+ x<sup>2n</sup>)(1 - x + x<sup>2</sup> - x<sup>3</sup> + ...... + x<sup>2n</sup>) \n<br><br>= a<sub>0</sub> + a<sub>1</sub>x + a<sub>2</sub>x<sup>2</sup>\n + \u2026..\n<br><br>put x = 1\n<br><br> (2n + 1)$$ \\times $$1 = a<sub>0</sub> + a<sub>1</sub> + a<sub>2</sub> + \u2026\u2026 (1)\n<br><br>put x = \u20131\n<br><br> 1$$ \\times $$(2n + 1) = a<sub>0</sub> \u2013 a<sub>1</sub> + a<sub>2</sub>+  \u2026\u2026.. (2)\n<br><br>Adding (1) and (2)\n<br><br>4n + 2 = 2(a<sub>0</sub> + a<sub>2</sub> + \u2026.. ) \n<br><br>$$ \\Rightarrow $$ 4n + 2 = 2 $$ \\times $$ 61\n<br><br>$$ \\Rightarrow $$ n = 30",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -1622,12 +1622,12 @@
   {
     "id": "2O8ZKwAonWPua4lhpj3rsa0w2w9jwxtytkr",
     "questionNumber": 63,
-    "questionText": "If the coefficients of x<sup>2</sup>\n and x<sup>3</sup>\n are both zero, in the expansion of the expression (1 + ax + bx<sup>2</sup>\n) (1 – 3x)<sup>15</sup> in\npowers of x, then the ordered pair (a,b) is equal to : ",
+    "questionText": "If the coefficients of x<sup>2</sup>\n and x<sup>3</sup>\n are both zero, in the expansion of the expression (1 + ax + bx<sup>2</sup>\n) (1 \u2013 3x)<sup>15</sup> in\npowers of x, then the ordered pair (a,b) is equal to : ",
     "options": [
       "(28, 861)",
       "(28, 315)",
-      "(–21, 714)",
-      "(–54, 315)"
+      "(\u201321, 714)",
+      "(\u201354, 315)"
     ],
     "correctOption": 1,
     "correctAnswer": null,
@@ -1637,9 +1637,9 @@
     "subject": "Mathematics",
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
     "difficulty": "medium",
-    "solution": "(1 + ax + bx<sup>2</sup>)(1 – 3x)<sup>15</sup><br><br>\nCo-eff. of x<sup>2</sup> = 1.<sup>15</sup>C<sub>2</sub>(–3)<sup>2</sup> + a.<sup>15</sup>C<sub>1</sub>(–3) + b.<sup>15</sup>C<sub>0</sub><br><br>\n$$ = {{15 \\times 14} \\over 2} \\times 9 - 15 \\times 3a + b = 0$$ (given)<br><br>\n$$ \\Rightarrow $$ 945 – 45a + b = 0 ...(i)<br><br>\nNow co-eff. of x<sup>3</sup> = 0<br><br>\n$$ \\Rightarrow $$ <sup>15</sup>C<sub>3</sub>(–3)<sup>3</sup> + a.<sup>15</sup>C<sub>2</sub>(–3)<sup>2</sup> + b.<sup>15</sup>C<sub>1</sub>(–3) = 0<br><br>\n$$ \\Rightarrow {{15 \\times 14 \\times 13} \\over {3 \\times 2}} \\times ( - 3 \\times 3 \\times 3) + a \\times {{15 \\times 14 \\times 9} \\over 2 } – b × 3 × 15 = 0$$<br><br>\n$$ \\Rightarrow $$ 15 × 3[–3 × 7 × 13 + a × 7 × 3 – b] = 0<br><br>\n$$ \\Rightarrow $$ 21a – b = 273 ...(ii)<br><br>\nFrom (i) and (ii)<br><br>\na = +28, b = 315 $$ \\equiv $$ (a, b) $$ \\equiv $$ (28, 315)",
+    "solution": "(1 + ax + bx<sup>2</sup>)(1 \u2013 3x)<sup>15</sup><br><br>\nCo-eff. of x<sup>2</sup> = 1.<sup>15</sup>C<sub>2</sub>(\u20133)<sup>2</sup> + a.<sup>15</sup>C<sub>1</sub>(\u20133) + b.<sup>15</sup>C<sub>0</sub><br><br>\n$$ = {{15 \\times 14} \\over 2} \\times 9 - 15 \\times 3a + b = 0$$ (given)<br><br>\n$$ \\Rightarrow $$ 945 \u2013 45a + b = 0 ...(i)<br><br>\nNow co-eff. of x<sup>3</sup> = 0<br><br>\n$$ \\Rightarrow $$ <sup>15</sup>C<sub>3</sub>(\u20133)<sup>3</sup> + a.<sup>15</sup>C<sub>2</sub>(\u20133)<sup>2</sup> + b.<sup>15</sup>C<sub>1</sub>(\u20133) = 0<br><br>\n$$ \\Rightarrow {{15 \\times 14 \\times 13} \\over {3 \\times 2}} \\times ( - 3 \\times 3 \\times 3) + a \\times {{15 \\times 14 \\times 9} \\over 2 } \u2013 b \u00d7 3 \u00d7 15 = 0$$<br><br>\n$$ \\Rightarrow $$ 15 \u00d7 3[\u20133 \u00d7 7 \u00d7 13 + a \u00d7 7 \u00d7 3 \u2013 b] = 0<br><br>\n$$ \\Rightarrow $$ 21a \u2013 b = 273 ...(ii)<br><br>\nFrom (i) and (ii)<br><br>\na = +28, b = 315 $$ \\equiv $$ (a, b) $$ \\equiv $$ (28, 315)",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "y3wzzzbvff6SL6QK9F80V",
@@ -1813,7 +1813,7 @@
     "subject": "Mathematics",
     "topic": "problems-based-on-binomial-co-efficient-and-collection-of-binomial-co-efficient",
     "difficulty": "medium",
-    "solution": "Given $${}^n{C_{r - 1}}:{}^n{C_r}:{}^n{C_{r + 1}} = 2:15:70$$<br><br>\n$${{{}^n{C_{r - 1}}} \\over {{}^n{C_r}}} = {2 \\over {15}}$$<br><br>\n$$ \\Rightarrow {r \\over {n - r + 1}} = {2 \\over {15}}$$<br><br>\n$$ \\Rightarrow 15r = 2n - 2r + 2$$<br><br>\n$$ \\Rightarrow 17r = 2n + 2$$  .... (i)<br><br>\nNow $${{{}^n{C_r}} \\over {{}^n{C_{r + 1}}}} = {{15} \\over {70}}$$<br><br>\n$$ \\Rightarrow {{r + 1} \\over {n - r}} = {3 \\over {14}}$$<br><br>\n$$ \\Rightarrow $$ 14r + 14 = 3n – 3r<br><br>\n$$ \\Rightarrow $$ 17r = 3n – 14 ... (ii)<br><br>\nNow From (i) and (ii) equation<br><br>\n2n + 2 = 3n - 14 $$ \\Rightarrow $$ n = 16<br><br>\nBy putting n = 16 in equation (i)<br><br>\n$$ \\Rightarrow $$ r = 2<br><br>\n$$ \\therefore $$ Average of coefficient = $${{{}^{16}{C_1} + {}^{16}{C_2} + {}^{16}{C_3}} \\over 3} $$\n<br><br>= $${{16 + 120 + 560} \\over 3}$$<br><br>\n= $${{696} \\over 3} = 232$$\n",
+    "solution": "Given $${}^n{C_{r - 1}}:{}^n{C_r}:{}^n{C_{r + 1}} = 2:15:70$$<br><br>\n$${{{}^n{C_{r - 1}}} \\over {{}^n{C_r}}} = {2 \\over {15}}$$<br><br>\n$$ \\Rightarrow {r \\over {n - r + 1}} = {2 \\over {15}}$$<br><br>\n$$ \\Rightarrow 15r = 2n - 2r + 2$$<br><br>\n$$ \\Rightarrow 17r = 2n + 2$$  .... (i)<br><br>\nNow $${{{}^n{C_r}} \\over {{}^n{C_{r + 1}}}} = {{15} \\over {70}}$$<br><br>\n$$ \\Rightarrow {{r + 1} \\over {n - r}} = {3 \\over {14}}$$<br><br>\n$$ \\Rightarrow $$ 14r + 14 = 3n \u2013 3r<br><br>\n$$ \\Rightarrow $$ 17r = 3n \u2013 14 ... (ii)<br><br>\nNow From (i) and (ii) equation<br><br>\n2n + 2 = 3n - 14 $$ \\Rightarrow $$ n = 16<br><br>\nBy putting n = 16 in equation (i)<br><br>\n$$ \\Rightarrow $$ r = 2<br><br>\n$$ \\therefore $$ Average of coefficient = $${{{}^{16}{C_1} + {}^{16}{C_2} + {}^{16}{C_3}} \\over 3} $$\n<br><br>= $${{16 + 120 + 560} \\over 3}$$<br><br>\n= $${{696} \\over 3} = 232$$\n",
     "section": "A",
     "type": "SCQ"
   },

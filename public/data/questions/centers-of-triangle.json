@@ -41,7 +41,7 @@
     "difficulty": "medium",
     "solution": "<p>Let the coordinates of vertex B be $(x_B, y_B)$. We are given that vertex A is $(1, 2)$ and the mid-point of side AB is $(5, -1)$.</p>\n<p>Using the mid-point formula, the coordinates of the mid-point are given by:</p>\n<p>$$ \\left( \\frac{x_A + x_B}{2}, \\frac{y_A + y_B}{2} \\right) = (5, -1) $$</p>\n<p>By equating the $x$ and $y$ coordinates, we get:</p>\n<p>$$ \\frac{1 + x_B}{2} = 5 \\implies 1 + x_B = 10 \\implies x_B = 9 $$</p>\n<p>$$ \\frac{2 + y_B}{2} = -1 \\implies 2 + y_B = -2 \\implies y_B = -4 $$</p>\n<p>So, the coordinates of vertex B are $(9, -4)$.</p>\n\n<p>Let the coordinates of vertex C be $(x_C, y_C)$. The centroid of a triangle with vertices $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$ is given by the formula:</p>\n<p>$$ \\left( \\frac{x_1 + x_2 + x_3}{3}, \\frac{y_1 + y_2 + y_3}{3} \\right) $$</p>\n<p>We are given the centroid of triangle ABC is $(3, 4)$. Using the coordinates of vertices A, B, and C:</p>\n<p>$$ \\frac{1 + 9 + x_C}{3} = 3 \\implies 10 + x_C = 9 \\implies x_C = -1 $$</p>\n<p>$$ \\frac{2 + (-4) + y_C}{3} = 4 \\implies -2 + y_C = 12 \\implies y_C = 14 $$</p>\n<p>So, the coordinates of vertex C are $(-1, 14)$.</p>\n\n<p>The circumcenter of a triangle is a point that is equidistant from all three of its vertices. Let the given circumcenter be marked as $O(\\alpha, \\beta)$. Therefore, we have:</p>\n<p>$$ OA = OB = OC \\implies OA^2 = OB^2 = OC^2 $$</p>\n<p>Using the distance formula, we will write the equations for the squares of the distances:</p>\n<p>$$ OA^2 = (\\alpha - 1)^2 + (\\beta - 2)^2 = \\alpha^2 + \\beta^2 - 2\\alpha - 4\\beta + 5 $$</p>\n<p>$$ OB^2 = (\\alpha - 9)^2 + (\\beta + 4)^2 = \\alpha^2 + \\beta^2 - 18\\alpha + 8\\beta + 97 $$</p>\n<p>$$ OC^2 = (\\alpha + 1)^2 + (\\beta - 14)^2 = \\alpha^2 + \\beta^2 + 2\\alpha - 28\\beta + 197 $$</p>\n<p>Now, equating $OA^2 = OB^2$:</p>\n<p>$$ \\alpha^2 + \\beta^2 - 2\\alpha - 4\\beta + 5 = \\alpha^2 + \\beta^2 - 18\\alpha + 8\\beta + 97 $$</p>\n<p>$$ 16\\alpha - 12\\beta = 92 $$</p>\n<p>Dividing the entire equation by 4 gives our first linear equation:</p>\n<p>$$ 4\\alpha - 3\\beta = 23 \\quad \\text{--- (Equation 1)} $$</p>\n<p>Next, equating $OA^2 = OC^2$:</p>\n<p>$$ \\alpha^2 + \\beta^2 - 2\\alpha - 4\\beta + 5 = \\alpha^2 + \\beta^2 + 2\\alpha - 28\\beta + 197 $$</p>\n<p>$$ -4\\alpha + 24\\beta = 192 $$</p>\n<p>Dividing this equation by -4 gives our second linear equation:</p>\n<p>$$ \\alpha - 6\\beta = -48 \\implies \\alpha = 6\\beta - 48 \\quad \\text{--- (Equation 2)} $$</p>\n\n<p>Substitute the expression for $\\alpha$ from Equation 2 into Equation 1:</p>\n<p>$$ 4(6\\beta - 48) - 3\\beta = 23 $$</p>\n<p>$$ 24\\beta - 192 - 3\\beta = 23 $$</p>\n<p>$$ 21\\beta - 192 = 23 $$</p>\n<p>$$ 21\\beta = 215 \\implies \\beta = \\frac{215}{21} $$</p>\n<p>Now, substitute the value of $\\beta$ back into Equation 2 to find $\\alpha$:</p>\n<p>$$ \\alpha = 6\\left(\\frac{215}{21}\\right) - 48 $$</p>\n<p>$$ \\alpha = \\frac{1290}{21} - \\frac{1008}{21} $$</p>\n<p>$$ \\alpha = \\frac{282}{21} $$</p>\n\n<p>The problem asks for the value of $21(\\alpha + \\beta)$. We can simply plug in our values:</p>\n<p>$$ 21(\\alpha + \\beta) = 21 \\left( \\frac{282}{21} + \\frac{215}{21} \\right) $$</p>\n<p>$$ 21(\\alpha + \\beta) = 282 + 215 = 497 $$</p>\n<p>Option C is the correct answer.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnswhvw7",
@@ -55,7 +55,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -63,7 +63,7 @@
     "difficulty": "medium",
     "solution": "<p>Since $QR$ lies on the line</p>\n<p>$$ x+y=4, $$</p>\n<p>and $P=(3,5)$, first find the altitude from $P$ to the side $QR$.</p>\n<p>In an equilateral triangle, all altitudes, medians and angle bisectors coincide. Also, the orthocentre lies on the altitude from each vertex and divides the altitude in the ratio $2:1$ from the vertex.</p>\n<p>So let us proceed step by step.</p>\n<p>The line $QR$ has equation</p>\n<p>$$ x+y-4=0. $$</p>\n<p>Distance of point $P(3,5)$ from this line is</p>\n<p>$$ d=\\frac{|3+5-4|}{\\sqrt{1^2+1^2}} =\\frac{4}{\\sqrt{2}} =2\\sqrt{2}. $$</p>\n<p>This is the altitude of the equilateral triangle from vertex $P$.</p>\n<p>Now, the foot of the perpendicular from $P$ to the line $x+y=4$ lies on the altitude. Since in an equilateral triangle the orthocentre lies at $\\frac{2}{3}$ of the altitude from the vertex, we can find it along the perpendicular direction.</p>\n<p>The slope of $x+y=4$ is $-1$, so the perpendicular slope is $1$.</p>\n<p>Hence the altitude through $P(3,5)$ is</p>\n<p>$$ y-5=1(x-3) $$</p>\n<p>or</p>\n<p>$$ y=x+2. $$</p>\n<p>The orthocentre lies on this line.</p>\n<p>Now find the foot of perpendicular from $P$ to $x+y=4$ by solving</p>\n<p>$$ y=x+2 $$</p>\n<p>and</p>\n<p>$$ x+y=4. $$</p>\n<p>Substitute $y=x+2$ into $x+y=4$:</p>\n<p>$$ x+(x+2)=4 $$</p>\n<p>$$ 2x=2 $$</p>\n<p>$$ x=1,\\quad y=3. $$</p>\n<p>So the foot is $(1,3)$.</p>\n<p>Thus the altitude segment is from $P(3,5)$ to $(1,3)$.</p>\n<p>The orthocentre divides this altitude in the ratio $2:1$ from vertex $P$. Therefore,</p>\n<p>$$ H=\\left(\\frac{2\\cdot 1+1\\cdot 3}{3},\\frac{2\\cdot 3+1\\cdot 5}{3}\\right) $$</p>\n<p>This is incorrect ratio placement, so let us use the correct section carefully:</p>\n<p>If $H$ divides the segment from $P$ to foot $D$ in the ratio $2:1$, then</p>\n<p>$$ H=P+\\frac{2}{3}(D-P). $$</p>\n<p>Here,</p>\n<p>$$ D-P=(1-3,\\,3-5)=(-2,-2). $$</p>\n<p>So</p>\n<p>$$ H=(3,5)+\\frac{2}{3}(-2,-2) =\\left(3-\\frac{4}{3},\\,5-\\frac{4}{3}\\right) =\\left(\\frac{5}{3},\\,\\frac{11}{3}\\right). $$</p>\n<p>Thus,</p>\n<p>$$ \\alpha=\\frac{5}{3},\\qquad \\beta=\\frac{11}{3}. $$</p>\n<p>So,</p>\n<p>$$ \\alpha+\\beta=\\frac{5}{3}+\\frac{11}{3}=\\frac{16}{3}. $$</p>\n<p>Therefore,</p>\n<p>$$ 9(\\alpha+\\beta)=9\\cdot \\frac{16}{3}=48. $$</p>\n<p>Hence the correct answer is</p>\n<p>$$ \\boxed{48} $$</p>\n<p>So, Option D is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "m6qvbw6v",
@@ -90,7 +90,7 @@
   {
     "id": "m6qh4sea",
     "questionNumber": 68,
-    "questionText": "<p>Let ΔABC be a triangle formed by the lines 7x – 6y + 3 = 0, x + 2y – 31 = 0 and 9x – 2y – 19 = 0. Let the point (h, k) be the image of the centroid of ΔABC in the line 3x + 6y – 53 = 0. Then h<sup>2</sup> + k<sup>2</sup> + hk is equal to :</p>",
+    "questionText": "<p>Let \u0394ABC be a triangle formed by the lines 7x \u2013 6y + 3 = 0, x + 2y \u2013 31 = 0 and 9x \u2013 2y \u2013 19 = 0. Let the point (h, k) be the image of the centroid of \u0394ABC in the line 3x + 6y \u2013 53 = 0. Then h<sup>2</sup> + k<sup>2</sup> + hk is equal to :</p>",
     "options": [
       "<p>47</p>",
       "<p>37</p>",
@@ -505,10 +505,10 @@
   {
     "id": "9r0ym1rWgH3JCykDoIjgy2xukf4662pc",
     "questionNumber": 69,
-    "questionText": "If a $$\\Delta $$ABC has vertices A(–1, 7), B(–7, 1) and\nC(5, –5), then its orthocentre has coordinates :",
+    "questionText": "If a $$\\Delta $$ABC has vertices A(\u20131, 7), B(\u20137, 1) and\nC(5, \u20135), then its orthocentre has coordinates :",
     "options": [
-      "(–3, 3)",
-      "(3, –3)",
+      "(\u20133, 3)",
+      "(3, \u20133)",
       "$$\\left( {{3 \\over 5}, - {3 \\over 5}} \\right)$$",
       "$$\\left( { - {3 \\over 5},{3 \\over 5}} \\right)$$"
     ],
@@ -544,12 +544,12 @@
   {
     "id": "kAbgo0MsBNIlywerYv7k9k2k5itigqx",
     "questionNumber": 69,
-    "questionText": "Let C be the centroid of the triangle with\nvertices (3, –1), (1, 3) and (2, 4). Let P be the\npoint of intersection of the lines x + 3y – 1 = 0\nand 3x – y + 1 = 0. Then the line passing through\nthe points C and P also passes through the\npoint :",
+    "questionText": "Let C be the centroid of the triangle with\nvertices (3, \u20131), (1, 3) and (2, 4). Let P be the\npoint of intersection of the lines x + 3y \u2013 1 = 0\nand 3x \u2013 y + 1 = 0. Then the line passing through\nthe points C and P also passes through the\npoint :",
     "options": [
-      "(–9, –7)",
+      "(\u20139, \u20137)",
       "(9, 7)",
       "(7, 6)",
-      "(–9, –6)"
+      "(\u20139, \u20136)"
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -559,7 +559,7 @@
     "subject": "Mathematics",
     "topic": "centers-of-triangle",
     "difficulty": "medium",
-    "solution": "Centroid C $$\\left( {{{3 + 1 + 2} \\over 3},{{ - 1 + 3 + 4} \\over 3}} \\right)$$ = (2, 2)\n<br><br>Point of intersection of lines x + 3y – 1 = 0 <br><br>and 3x – y + 1 = 0 is P $$\\left( { - {1 \\over 5},{2 \\over 5}} \\right)$$\n<br><br>So, equation of line CP is 8x – 11y + 6 = 0\n<br><br>Point (–9, –6) satisfy this equation.",
+    "solution": "Centroid C $$\\left( {{{3 + 1 + 2} \\over 3},{{ - 1 + 3 + 4} \\over 3}} \\right)$$ = (2, 2)\n<br><br>Point of intersection of lines x + 3y \u2013 1 = 0 <br><br>and 3x \u2013 y + 1 = 0 is P $$\\left( { - {1 \\over 5},{2 \\over 5}} \\right)$$\n<br><br>So, equation of line CP is 8x \u2013 11y + 6 = 0\n<br><br>Point (\u20139, \u20136) satisfy this equation.",
     "section": "A",
     "type": "SCQ"
   },
@@ -588,7 +588,7 @@
   {
     "id": "jzTjddlv24Pe3XwUGoOyx",
     "questionNumber": 87,
-    "questionText": "A point P moves on the line 2x – 3y + 4 = 0. If Q(1, 4) and R (3, – 2) are fixed points, then the locus of the centroid of $$\\Delta $$PQR is a line :",
+    "questionText": "A point P moves on the line 2x \u2013 3y + 4 = 0. If Q(1, 4) and R (3, \u2013 2) are fixed points, then the locus of the centroid of $$\\Delta $$PQR is a line :",
     "options": [
       "parallel to y-axis",
       "with slope $${2 \\over 3}$$",
@@ -610,7 +610,7 @@
   {
     "id": "tkJLUql0mThR9SD5j5Xie",
     "questionNumber": 88,
-    "questionText": "If the line 3x + 4y – 24 = 0 intersects the x-axis at the point A and the y-axis at the point B, then the incentre of the triangle OAB, where O is the origin, is :",
+    "questionText": "If the line 3x + 4y \u2013 24 = 0 intersects the x-axis at the point A and the y-axis at the point B, then the incentre of the triangle OAB, where O is the origin, is :",
     "options": [
       "(3, 4)",
       "(2, 2)",
@@ -654,7 +654,7 @@
   {
     "id": "JQXASfRf5qjuZV5Y",
     "questionNumber": 88,
-    "questionText": "Let k be an integer such that the triangle with vertices (k, – 3k), (5, k) and (–k, 2) has area 28 sq. units. Then the orthocentre of this triangle is at the point :",
+    "questionText": "Let k be an integer such that the triangle with vertices (k, \u2013 3k), (5, k) and (\u2013k, 2) has area 28 sq. units. Then the orthocentre of this triangle is at the point :",
     "options": [
       "$$\\left( {1,{3 \\over 4}} \\right)$$",
       "$$\\left( {1, - {3 \\over 4}} \\right)$$",
@@ -669,7 +669,7 @@
     "subject": "Mathematics",
     "topic": "centers-of-triangle",
     "difficulty": "medium",
-    "solution": "Given, vertices of triangle are (k, – 3k), (5, k) and (–k, 2).\n<br><br>$${1 \\over 2}\\left| {\\matrix{\n   k &amp; { - 3k} &amp; 1  \\cr \n   5 &amp; k &amp; 1  \\cr \n   { - k} &amp; 2 &amp; 1  \\cr \n\n } } \\right| =  \\pm 28$$\n<br><br>$$ \\Rightarrow $$ k(k - 2) + 3k(5 + k) + 1(10 + k<sup>2</sup>) = $$ \\pm $$ 56\n<br><br>$$ \\Rightarrow $$ 5k<sup>2</sup> + 13k + 10 = $$ \\pm $$ 56\n<br><br>$$ \\Rightarrow $$ 5k<sup>2</sup> + 13k - 66 = 0\n<br><br>$$ \\Rightarrow $$ k = $${{ - 13 \\pm \\sqrt { - 1151} } \\over {10}}$$\n<br><br>So no real solution exist.\n<br><br>or 5k<sup>2</sup> + 13k - 46 = 0\n<br><br>$$ \\therefore $$ k = $${{ - 23} \\over 5}$$ or k = 2\n<br><br>since k is an integer $$ \\therefore $$ k = 2\n<br><br>Thus, the coordinate of vertices of triangle are\n<br><br>A(2, -6), B(5, 2) and C(-2, 2).\n<br><br><img src=\"https://imagex.cdn.examgoal.net/7kejek2x1aa5j/66709fd9-8dc3-42c3-96d5-b2201b35ef2c/2791df70-05f1-11ea-a7bc-b7b08ce8d541/file-7kejek2x1aa5k-324w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2017 (Offline) Mathematics - Straight Lines and Pair of Straight Lines Question 149 English Explanation\">\n<br><br>Now, equation of altitude from vertex A is\n<br><br>y - (-6) = $${{ - 1} \\over {\\left( {{{2 - 2} \\over { - 2 - 5}}} \\right)}}\\left( {x - 2} \\right)$$\n<br><br>$$ \\Rightarrow $$ x = 2 .......(1)\n<br><br>Equation of altitude from vertex B is\n<br><br>y - 2 = $${{ - 1} \\over {\\left( {{{2 + 6} \\over { - 2 - 2}}} \\right)}}\\left( {x - 5} \\right)$$\n<br><br>$$ \\Rightarrow $$ 2y - 4 = x - 5\n<br><br>$$ \\Rightarrow $$ x - 2y = 1 .......(2)\n<br><br>Point H($$\\alpha $$, $$\\beta $$) lies on both (1) and (2),\n<br><br>$$ \\therefore $$ $$\\alpha $$ = 2 .........(3)\n<br><br>$$\\alpha $$ - 2$$\\beta $$ = 1 ......(4)\n<br><br>Solving (3) and (4), we get\n<br><br>$$\\alpha $$ = 2 , $$\\beta $$ = $${1 \\over 2}$$\n<br><br>$$ \\therefore $$ Orthocentre is $$\\left( {2,{1 \\over 2}} \\right)$$.",
+    "solution": "Given, vertices of triangle are (k, \u2013 3k), (5, k) and (\u2013k, 2).\n<br><br>$${1 \\over 2}\\left| {\\matrix{\n   k &amp; { - 3k} &amp; 1  \\cr \n   5 &amp; k &amp; 1  \\cr \n   { - k} &amp; 2 &amp; 1  \\cr \n\n } } \\right| =  \\pm 28$$\n<br><br>$$ \\Rightarrow $$ k(k - 2) + 3k(5 + k) + 1(10 + k<sup>2</sup>) = $$ \\pm $$ 56\n<br><br>$$ \\Rightarrow $$ 5k<sup>2</sup> + 13k + 10 = $$ \\pm $$ 56\n<br><br>$$ \\Rightarrow $$ 5k<sup>2</sup> + 13k - 66 = 0\n<br><br>$$ \\Rightarrow $$ k = $${{ - 13 \\pm \\sqrt { - 1151} } \\over {10}}$$\n<br><br>So no real solution exist.\n<br><br>or 5k<sup>2</sup> + 13k - 46 = 0\n<br><br>$$ \\therefore $$ k = $${{ - 23} \\over 5}$$ or k = 2\n<br><br>since k is an integer $$ \\therefore $$ k = 2\n<br><br>Thus, the coordinate of vertices of triangle are\n<br><br>A(2, -6), B(5, 2) and C(-2, 2).\n<br><br><img src=\"https://imagex.cdn.examgoal.net/7kejek2x1aa5j/66709fd9-8dc3-42c3-96d5-b2201b35ef2c/2791df70-05f1-11ea-a7bc-b7b08ce8d541/file-7kejek2x1aa5k-324w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2017 (Offline) Mathematics - Straight Lines and Pair of Straight Lines Question 149 English Explanation\">\n<br><br>Now, equation of altitude from vertex A is\n<br><br>y - (-6) = $${{ - 1} \\over {\\left( {{{2 - 2} \\over { - 2 - 5}}} \\right)}}\\left( {x - 2} \\right)$$\n<br><br>$$ \\Rightarrow $$ x = 2 .......(1)\n<br><br>Equation of altitude from vertex B is\n<br><br>y - 2 = $${{ - 1} \\over {\\left( {{{2 + 6} \\over { - 2 - 2}}} \\right)}}\\left( {x - 5} \\right)$$\n<br><br>$$ \\Rightarrow $$ 2y - 4 = x - 5\n<br><br>$$ \\Rightarrow $$ x - 2y = 1 .......(2)\n<br><br>Point H($$\\alpha $$, $$\\beta $$) lies on both (1) and (2),\n<br><br>$$ \\therefore $$ $$\\alpha $$ = 2 .........(3)\n<br><br>$$\\alpha $$ - 2$$\\beta $$ = 1 ......(4)\n<br><br>Solving (3) and (4), we get\n<br><br>$$\\alpha $$ = 2 , $$\\beta $$ = $${1 \\over 2}$$\n<br><br>$$ \\therefore $$ Orthocentre is $$\\left( {2,{1 \\over 2}} \\right)$$.",
     "section": "A",
     "type": "SCQ"
   },

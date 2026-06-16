@@ -55,7 +55,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -63,7 +63,7 @@
     "difficulty": "medium",
     "solution": "<p>Total number of functions from $\\{1,2,3,4\\}$ to $\\{a,b,c\\}$ is</p>\n<p>$$ 3^4=81 $$</p>\n<p>Now we find the number of onto functions.</p>\n<p>For a function to be onto, all the three elements $a,b,c$ must appear as images of elements of $\\{1,2,3,4\\}$.</p>\n<p>Using inclusion-exclusion principle:</p>\n<ul>\n<li>Total functions: $3^4=81$</li>\n</ul>\n<p>Let</p>\n<ul>\n<li><p>$A$ = functions missing $a$</p></li>\n<li><p>$B$ = functions missing $b$</p></li>\n<li><p>$C$ = functions missing $c$</p></li>\n</ul>\n<p>If one element is missing, then the function goes into only $2$ elements.</p>\n<p>So,</p>\n<p>$$ |A|=|B|=|C|=2^4=16 $$</p>\n<p>Hence,</p>\n<p>$$ |A|+|B|+|C|=3\\times 16=48 $$</p>\n<p>If two elements are missing, then all $4$ elements of domain must go to only one element of codomain.</p>\n<p>So,</p>\n<p>$$ |A\\cap B|=|B\\cap C|=|C\\cap A|=1^4=1 $$</p>\n<p>Thus,</p>\n<p>$$ |A\\cap B|+|B\\cap C|+|C\\cap A|=3 $$</p>\n<p>If all three are missing, that is impossible, so</p>\n<p>$$ |A\\cap B\\cap C|=0 $$</p>\n<p>Therefore, number of functions which are not onto is</p>\n<p>$$ |A\\cup B\\cup C|=48-3=45 $$</p>\n<p>So the correct answer is</p>\n<p>$$ \\boxed{45} $$</p>\n<p>Hence, <strong>Option B</strong> is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnswhtw7",
@@ -322,7 +322,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -330,7 +330,7 @@
     "difficulty": "medium",
     "solution": "<p>$$f(x) = {{{x^2} + 2x + 1} \\over {({x^2} + 1)}}$$</p>\n<p>$$ \\Rightarrow f'(x) = {{({x^2} + 1)(2x + 2) - ({x^2} + 2x + 1)(2x)} \\over {{{({x^2} + 1)}^2}}}$$</p>\n<p>$$ \\Rightarrow f'(x) = {{2 - 2{x^2}} \\over {{{({x^2} + 1)}^2}}}$$</p>\n<p>$$ = {{2\\left( {1 + x} \\right)\\left( {1 - x} \\right)} \\over {{{\\left( {{x^2} + 1} \\right)}^2}}}$$</p>\n<p>$$ \\therefore $$ $$f'(x) = 0$$ at x = 1 and x = -1. So, x = 1 and x = -1 are point of maxima/minima.</p>\n<p><b>Option A :</b> $$f(x)$$ is many-one in $$( - \\infty , - 1)$$.\n<br/><br/>As x = -1 is a point of maxima/minima. So it is a boundary point in the range $$( - \\infty , - 1)$$. So, $$f(x)$$ is one-one in $$( - \\infty , - 1)$$.\n<br/><br/>$$ \\therefore $$ Option A is incorrect.</p>\n<p><b>Option B :</b> $$f(x)$$ is one-one in $$( - \\infty ,\\infty )$$.\n<br/><br/>As, x = 1 and x = -1 are point of maxima/minima which is present inside the range $$( - \\infty ,\\infty )$$. So, $$f(x)$$ is many-one function in $$( - \\infty ,\\infty )$$.\n<br/><br/>$$ \\therefore $$ Option B is incorrect.</p>\n<p><b>Option C :</b> $$f(x)$$ is one-one in $$[1,\\infty )$$ but not in $$( - \\infty ,\\infty )$$.\n<br/><br/>As x = 1 is a point of maxima/minima. So it is a boundary point in the range $$[1,\\infty )$$. So, $$f(x)$$ is one-one in $$[1,\\infty )$$.\n<br/><br/>As, x = 1 and x = -1 are point of maxima/minima which is present inside the range $$( - \\infty ,\\infty )$$. So, $$f(x)$$ is many-one function in $$( - \\infty ,\\infty )$$ .\n<br/><br/>$$ \\therefore $$ Option C is correct.</p>\n<p><b>Option D :</b> $$f(x)$$ is many-one in $$(1,\\infty )$$.\n<br/><br/>As x = 1 is a point of maxima/minima. So it is a boundary point in the range $$[1,\\infty )$$. So, $$f(x)$$ is one-one in $$[1,\\infty )$$.\n<br/><br/>$$ \\therefore $$ Option D is incorrect.</p>\n<p><b>Note :</b></p>\n<p><b>Methods to Check One-One Function :</b>\n\n<br/><br/>(i) If a function is one-one, any line parallel to $x$-axis cuts the graph of the function maximum at one point.\n<br/><br/>(ii) Any continuous function which is entirely increasing or decreasing (no maxima/minima is present) in whole domain will always be one-one function.\n</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1ldr7zkxa",
@@ -675,11 +675,11 @@
   {
     "id": "dfuBeaBmWfo5qPrwGI18hoxe66ijvwpyj7h",
     "questionNumber": 72,
-    "questionText": "If the function ƒ : R – {1, –1} $$ \\to $$ A defined by <br>\nƒ(x) = $${{{x^2}} \\over {1 - {x^2}}}$$ , is surjective, then A is equal to",
+    "questionText": "If the function \u0192 : R \u2013 {1, \u20131} $$ \\to $$ A defined by <br>\n\u0192(x) = $${{{x^2}} \\over {1 - {x^2}}}$$ , is surjective, then A is equal to",
     "options": [
-      "R – (–1, 0)",
-      "R – {–1}",
-      "R – [–1, 0)",
+      "R \u2013 (\u20131, 0)",
+      "R \u2013 {\u20131}",
+      "R \u2013 [\u20131, 0)",
       "[0, $$\\infty $$)"
     ],
     "correctOption": 2,
@@ -690,7 +690,7 @@
     "subject": "Mathematics",
     "topic": "classification-of-functions",
     "difficulty": "medium",
-    "solution": "Let ƒ(x) = $${{{x^2}} \\over {1 - {x^2}}}$$ = y\n<br><br>$$ \\Rightarrow $$ $$y\\left( {1 - {x^2}} \\right) = {x^2}$$\n<br><br>$$ \\Rightarrow $$ $${x^2} = {y \\over {1 + y}}$$\n<br><br>As $${x^2}$$ is always $$ \\ge $$ 0.\n<br><br>$$ \\therefore $$ $${y \\over {1 + y}}$$ $$ \\ge $$ 0\n<br><br> y $$ \\in $$ $$\\left( { - \\infty , - 1} \\right) \\cup \\left[ {0,\\left. \\infty  \\right)} \\right.$$\n<br><br>For surjective function co-domain = Range\n<br><br>$$ \\therefore $$ A is R – [–1, 0).",
+    "solution": "Let \u0192(x) = $${{{x^2}} \\over {1 - {x^2}}}$$ = y\n<br><br>$$ \\Rightarrow $$ $$y\\left( {1 - {x^2}} \\right) = {x^2}$$\n<br><br>$$ \\Rightarrow $$ $${x^2} = {y \\over {1 + y}}$$\n<br><br>As $${x^2}$$ is always $$ \\ge $$ 0.\n<br><br>$$ \\therefore $$ $${y \\over {1 + y}}$$ $$ \\ge $$ 0\n<br><br> y $$ \\in $$ $$\\left( { - \\infty , - 1} \\right) \\cup \\left[ {0,\\left. \\infty  \\right)} \\right.$$\n<br><br>For surjective function co-domain = Range\n<br><br>$$ \\therefore $$ A is R \u2013 [\u20131, 0).",
     "section": "A",
     "type": "SCQ"
   },
@@ -868,7 +868,7 @@
     "solution": "<p>To solve this problem, we need to determine the total number of <strong>unordered pairs</strong> of <strong>disjoint subsets</strong> of the set $ S = \\{1, 2, 3, 4\\} $.</p>\n<h3><strong>Understanding the Problem:</strong></h3>\n\n<p><p><strong>Disjoint Subsets:</strong> Two subsets $ A $ and $ B $ are disjoint if they have no elements in common, i.e., $ A \\cap B = \\emptyset $.</p></p>\n<p><p><strong>Unordered Pairs:</strong> Pairs where $ \\{A, B\\} $ is considered the same as $ \\{B, A\\} $.</p></p>\n\n<h3><strong>Approach:</strong></h3>\n\n<p><strong>Counting Ordered Pairs of Disjoint Subsets:</strong></p>\n\n\n<p><p>For each element in $ S $, it can be in:</p>\n\n<p><p>Subset $ A $ only,</p></p>\n<p><p>Subset $ B $ only,</p></p>\n<p><p>Neither $ A $ nor $ B $.</p></p></p>\n<p><p><strong>Note:</strong> An element cannot be in both $ A $ and $ B $ because $ A $ and $ B $ are disjoint.</p></p>\n<p><p>Therefore, each element has <strong>3 choices</strong>.</p></p>\n<p><p>Total number of <strong>ordered pairs</strong> $ (A, B) $ is $ 3^4 = 81 $.</p></p>\n\n\n<p><strong>Identifying Ordered Pairs where $ A = B $:</strong></p>\n\n\n<p><p>Since $ A $ and $ B $ are disjoint and $ A = B $, the only possibility is when both are the <strong>empty set</strong>.</p></p>\n<p><p>So, there's <strong>1 ordered pair</strong> where $ A = B = \\emptyset $.</p></p>\n\n\n<p><strong>Calculating Unordered Pairs:</strong></p>\n\n\n<p><p><strong>Ordered Pairs with $ A \\ne B $:</strong> $ 81 - 1 = 80 $.</p></p>\n<p><p><strong>Unordered Pairs from Ordered Pairs with $ A \\ne B $:</strong> Each unordered pair corresponds to <strong>2 ordered pairs</strong> (since $ (A, B) $ and $ (B, A) $ are different but represent the same unordered pair).</p></p>\n<p><p>Number of unordered pairs from $ A \\ne B $ is $ \\frac{80}{2} = 40 $.</p></p>\n<p><p><strong>Include the pair where $ A = B = \\emptyset $:</strong> Add $ 1 $.</p></p>\n<p><p><strong>Total Unordered Pairs:</strong> $ 40 + 1 = 41 $.</p></p>\n\n<h3><strong>Conclusion:</strong></h3>\n\n<p>The total number of unordered pairs of disjoint subsets of $ S $ is <strong>41</strong>.</p>\n\n<hr />\n<p><strong>Answer:</strong> Option D</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "PjsG1USbhMNW1Hsh",

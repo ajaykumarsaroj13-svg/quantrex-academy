@@ -80,7 +80,7 @@
     "difficulty": "medium",
     "solution": "<p>let $A=\\{1,2,3,4\\}$</p>\n<p>$R$ is defined on $A \\times A$ such that</p>\n<p>$$ \\begin{aligned} & R=\\{((a, b),(c, d)): 2 a+3 b=3 c+4 d\\} \\\\ & \\text { since } a, b, c, d \\in A \\end{aligned} $$</p>\n<p>$$ \\text { Let possible values of } 2 a+3 b=L 1 \\text { and possible values of } 3 c+4 d=L 2 $$</p>\n<p>$$ \\begin{array}{c|c|c|c} a & b & 2 a+3 b & 3 c+4 d \\\\ \\hline 1 & 1 & 5 & 7 \\\\ 1 & 2 & 8 & 11 \\\\ 1 & 3 & 11 & 15 \\\\ 1 & 4 & 14 & 19 \\\\ 2 & 1 & 7 & 10 \\\\ 2 & 2 & 10 & 14 \\\\ 2 & 3 & 13 & 18 \\\\ 2 & 4 & 16 & 22 \\\\ 3 & 1 & 9 & 13 \\\\ 3 & 2 & 12 & 17 \\\\ 3 & 3 & 15 & 21 \\\\ 3 & 4 & 18 & 25 \\\\ 4 & 1 & 11 & 16 \\\\ 4 & 2 & 14 & 20 \\\\ 4 & 3 & 17 & 24 \\\\ 4 & 4 & 20 & 28 \\end{array} $$</p>\n<p>$$ \\begin{aligned} &\\text { Common values of } 2 a+3 b=3 c+4 d\\\\ &7,10,11,13,14,15,16,17,18,20 \\end{aligned} $$</p>\n<p>value $7,10,13,15,16,17,18,20$</p>\n<p>occurs 1 time in L1 and 1 time in L2</p>\n<p>e.g value 7 occurs 1 time in L1 $\\&amp;$ 1 time in L2 total $=1 \\times 1=1$</p>\n<p>so, total number of these types of elements</p>\n<p>in $\\mathrm{R}=8$--- (1)</p>\n<p>value 11 and 14 occurs 2 times in L1</p>\n<p>and 1 time in L2</p>\n<p>e.g value 11 occurs 2 time in L1 $\\&amp;$ 1 time in L2 total</p>\n<p>elements in $R$ is $2 \\times 1=2$</p>\n<p>so total number these type of elements $=2+2=4$--- (2)</p>\n<p>total number of elements in R = 8+4 = 12</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnrq68oe",
@@ -156,7 +156,7 @@
     "subject": "Mathematics",
     "topic": "number-of-sets-and-relations",
     "difficulty": "medium",
-    "solution": "<p>An equivalence relation on a finite set is uniquely determined by its partition into equivalence classes. Hence, counting the number of equivalence relations on a set is equivalent to counting the number of ways to partition that set.</p>\n<hr />\n<h3>Step: Counting partitions of $\\{1,2,3\\}$</h3>\n<p>We want all possible ways to split the set $\\{1,2,3\\}$ into nonempty subsets (its “blocks”).</p>\n\n<p><p><strong>3 blocks (each element in its own block)</strong>  </p>\n<p>$    \\{\\{1\\}, \\{2\\}, \\{3\\}\\}.    $</p></p>\n<p><p><strong>2 blocks</strong>  </p></p>\n\n\n<p><p>$\\{\\{1,2\\}, \\{3\\}\\}$  </p></p>\n<p><p>$\\{\\{1,3\\}, \\{2\\}\\}$  </p></p>\n<p><p>$\\{\\{2,3\\}, \\{1\\}\\}$</p></p>\n\n\n<p><p><strong>1 block</strong> (all elements together)  </p>\n<p>$    \\{\\{1,2,3\\}\\}.    $</p></p>\n\n<p>Counting these, there are a total of <strong>5</strong> distinct partitions, and thus <strong>5</strong> equivalence relations on the set $\\{1,2,3\\}$. </p>\n<p>All equivalence relations are automatically nonempty (they include at least $(1,1), (2,2), (3,3)$ because they are reflexive), so the answer to “the number of nonempty equivalence relations” is also <strong>5</strong>.</p>\n<hr />\n<h4><strong>Answer: Option C (5)</strong></h4>",
+    "solution": "<p>An equivalence relation on a finite set is uniquely determined by its partition into equivalence classes. Hence, counting the number of equivalence relations on a set is equivalent to counting the number of ways to partition that set.</p>\n<hr />\n<h3>Step: Counting partitions of $\\{1,2,3\\}$</h3>\n<p>We want all possible ways to split the set $\\{1,2,3\\}$ into nonempty subsets (its \u201cblocks\u201d).</p>\n\n<p><p><strong>3 blocks (each element in its own block)</strong>  </p>\n<p>$    \\{\\{1\\}, \\{2\\}, \\{3\\}\\}.    $</p></p>\n<p><p><strong>2 blocks</strong>  </p></p>\n\n\n<p><p>$\\{\\{1,2\\}, \\{3\\}\\}$  </p></p>\n<p><p>$\\{\\{1,3\\}, \\{2\\}\\}$  </p></p>\n<p><p>$\\{\\{2,3\\}, \\{1\\}\\}$</p></p>\n\n\n<p><p><strong>1 block</strong> (all elements together)  </p>\n<p>$    \\{\\{1,2,3\\}\\}.    $</p></p>\n\n<p>Counting these, there are a total of <strong>5</strong> distinct partitions, and thus <strong>5</strong> equivalence relations on the set $\\{1,2,3\\}$. </p>\n<p>All equivalence relations are automatically nonempty (they include at least $(1,1), (2,2), (3,3)$ because they are reflexive), so the answer to \u201cthe number of nonempty equivalence relations\u201d is also <strong>5</strong>.</p>\n<hr />\n<h4><strong>Answer: Option C (5)</strong></h4>",
     "section": "A",
     "type": "SCQ"
   },
@@ -263,7 +263,7 @@
     "difficulty": "hard",
     "solution": "<p>The relation $ R $ is defined on the set $ A = \\{1, 2, 3, \\ldots, 100\\} $ such that $ R = \\{(a, b): a = 2b + 1\\} $. We need to find the largest integer $ k $ for which there exists a sequence of $ k $ ordered pairs from $ R $ where the second element of each pair is the first element of the next pair.</p>\n<p>The sequence in terms of $ k $ is:</p>\n<p>$ (a_1, a_2), (a_2, a_3), \\ldots, (a_k, a_{k+1}) $</p>\n<p>Here, each $ a_i $ satisfies the equation $ a_i = 2a_{i+1} + 1 $. Consequently, $ a_1 = 2a_2 + 1 $, making $ a_1 $ an odd number.</p>\n<p>Let's examine the pattern:</p>\n\n<p><p>$ a_2 = 2a_3 + 1 $, implying $ a_1 = 2(2a_3 + 1) + 1 = 4a_3 + 3 $.</p></p>\n<p><p>$ a_3 = 2a_4 + 1 $, leading to $ a_1 = 4(2a_4 + 1) + 3 = 8a_4 + 7 $.</p></p>\n\n<p>Continuing this pattern, we find:</p>\n<p>$ a_k = 2a_{k+1} + 1 \\implies a_1 = 2^k \\cdot a_{k+1} + (2^k - 1) $</p>\n<p>where $ a_{k+1} $ needs to be in set $ A $. This implies:</p>\n<p>$ a_{k+1} = \\frac{a_1 + 1 - 2^k}{2^k} $</p>\n<p>Thus, $ 2^k \\mid (a_1 + 1) $. The task is to find the highest $ k $ where $ 2^k $ divides any $ e_i $ in $ \\{2, \\ldots, 101\\} $.</p>\n<p>The largest power of 2 that divides an element within this range determines $ k $.</p>\n<p>After computation, we find that $ k $ can be a maximum of 6 because $ 2^6 = 64 $ divides $ 95 + 1 = 96 $, but $ 2^7 = 128 $ does not divide any $ e_i $ for $ e_i \\in A $. Therefore, the maximum $ k $ is 6.</p>\n<p>The sequence corresponding to this maximum $ k $ is:</p>\n\n<p>$ (95, 47), (47, 23), (23, 11), (11, 5), (5, 2) $</p>\n",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "m9ghxlif",
@@ -333,7 +333,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -341,7 +341,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& 2^{\\mathrm{m}}-2^{\\mathrm{n}}=56 \\\\\n& 2^{\\mathrm{n}}\\left(2^{\\mathrm{m}-\\mathrm{n}}-1\\right)=2^3 \\times 7 \\\\\n& 2^{\\mathrm{n}}=2^3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}-1=7 \\\\\n& \\Rightarrow \\mathrm{n}=3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}=8 \\\\\n& \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}-\\mathrm{n}=3 \\\\\n& \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}=6 \\\\\n& \\mathrm{P}(6,3) \\text { and } \\mathrm{Q}(-2,-3) \\\\\n& \\mathrm{PQ}=\\sqrt{8^2+6^2}=\\sqrt{100}=10\n\\end{aligned}$$</p>\n<p>Hence option (1) is correct</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsfkhne6",
@@ -684,7 +684,7 @@
     "difficulty": "medium",
     "solution": "<p>We have a set S = {1, 2, 3, ..., 60}, and a relation R defined on the set S. An element (a, b) belongs to the relation R if and only if b can be expressed as the product of two prime numbers p and q, where both p and q are greater than or equal to 3.</p>\n<p>In terms of number theory, prime numbers are integers greater than 1 that have no divisors other than 1 and themselves. We are interested in prime numbers that are greater than or equal to 3, because p and q must both be greater than or equal to 3.</p>\n<p>The primes greater than or equal to 3 and less than or equal to 60 are {3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59}.</p>\n<p>We need to find all possible values of b = p $$ \\times $$ q such that b belongs to the set S. We start by choosing the smallest prime number (which is 3) and keep multiplying it with all the prime numbers until the product exceeds 60 :</p>\n<ul>\n<li>1. If we start with p = 3, we can choose q to be 3, 5, 7, 11, 13, 17, or 19. This gives us 7 valid products that are less than or equal to 60.</li>\n<li>2. If we start with p = 5, we can choose q to be 5, 7, or 11. This gives us 3 valid products that are less than or equal to 60.</li>\n<li>3. If we start with p = 7, we can choose q to be 7. This gives us 1 valid product that is less than or equal to 60.</li>\n</ul>\n<p>So, we have a total of 7 + 3 + 1 = 11 possible values for b = p $$ \\times $$ q that satisfy the conditions.</p>\n<p>Since a can be any number in the set S, there are 60 possible values for a for each of the 11 values of b. Therefore, the total number of elements in the relation R is 60 $$ \\times $$ 11 = 660.</p>\n",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1l6p3rlat",
@@ -723,7 +723,7 @@
     "difficulty": "medium",
     "solution": "ad = bc<br><br>(a, b) R (4, 3) $$ \\Rightarrow $$ 3a = 4b<br><br>a = $${4 \\over 3}$$b<br><br>b must be multiple of 3<br><br>b = {3, 6, 9 ..... 30}<br><br>(a, b) = {(4, 3), (8, 16), (12, 9), (16, 12), (20, 15), (24, 18), (28, 21)}<br><br>$$ \\Rightarrow $$ 7 ordered pair",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "ElJhwaKkT1JdIO9sfl1kmhw02h6",
@@ -801,12 +801,12 @@
   {
     "id": "uh9zBvgdVXVFTfGA1mjgy2xukewrzn2p",
     "questionNumber": 69,
-    "questionText": "If R = {(x, y) : x, y\n$$ \\in $$ Z, x<sup>2</sup> + 3y<sup>2</sup>\n$$ \\le $$ 8} is a relation\non the set of integers Z, then the domain of R<sup>–1</sup> is :",
+    "questionText": "If R = {(x, y) : x, y\n$$ \\in $$ Z, x<sup>2</sup> + 3y<sup>2</sup>\n$$ \\le $$ 8} is a relation\non the set of integers Z, then the domain of R<sup>\u20131</sup> is :",
     "options": [
       "{0, 1} ",
-      "{–2, –1, 1, 2}",
-      "{–1, 0, 1}",
-      "{–2, –1, 0, 1, 2}"
+      "{\u20132, \u20131, 1, 2}",
+      "{\u20131, 0, 1}",
+      "{\u20132, \u20131, 0, 1, 2}"
     ],
     "correctOption": 2,
     "correctAnswer": null,
@@ -816,17 +816,17 @@
     "subject": "Mathematics",
     "topic": "number-of-sets-and-relations",
     "difficulty": "easy",
-    "solution": "Given R = {(x, y) : x, y\n$$ \\in $$ Z, x<sup>2</sup> + 3y<sup>2</sup>\n$$ \\le $$ 8}\n<br><br>So R =  {(0,1), (0,–1), (1,0), (–1,0), (1,1), (1,-1)\n<br>(-1,1), (-1,-1), (2,0), (-2,0), (-2,0), (2,1), (2,-1), (-2,1), (-2,-1)}\n<br><br>$$ \\Rightarrow $$ R : { -2, -1, 0, 1, 2} $$ \\to $$ {-1, 0, 1}\n<br><br>$$ \\therefore $$ R<sup>-1</sup> : {-1, 0, 1} $$ \\to $$ { -2, -1, 0, 1, 2}\n<br><br>$$ \\therefore $$ Domain of R<sup>–1</sup> = {-1, 0, 1}",
+    "solution": "Given R = {(x, y) : x, y\n$$ \\in $$ Z, x<sup>2</sup> + 3y<sup>2</sup>\n$$ \\le $$ 8}\n<br><br>So R =  {(0,1), (0,\u20131), (1,0), (\u20131,0), (1,1), (1,-1)\n<br>(-1,1), (-1,-1), (2,0), (-2,0), (-2,0), (2,1), (2,-1), (-2,1), (-2,-1)}\n<br><br>$$ \\Rightarrow $$ R : { -2, -1, 0, 1, 2} $$ \\to $$ {-1, 0, 1}\n<br><br>$$ \\therefore $$ R<sup>-1</sup> : {-1, 0, 1} $$ \\to $$ { -2, -1, 0, 1, 2}\n<br><br>$$ \\therefore $$ Domain of R<sup>\u20131</sup> = {-1, 0, 1}",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "B2HRGK7dEczQF7C94Njgy2xukf0qgrp2",
     "questionNumber": 68,
-    "questionText": "Consider the two sets :\n<br>A = {m $$ \\in $$ R : both the roots of<br> x<sup>2</sup>\n – (m + 1)x + m + 4 = 0 are real} \n<br>and B = [–3, 5).\n<br>Which of the following is not true?",
+    "questionText": "Consider the two sets :\n<br>A = {m $$ \\in $$ R : both the roots of<br> x<sup>2</sup>\n \u2013 (m + 1)x + m + 4 = 0 are real} \n<br>and B = [\u20133, 5).\n<br>Which of the following is not true?",
     "options": [
-      "A $$ \\cap $$ B = {–3}",
-      "B – A = (–3, 5)",
+      "A $$ \\cap $$ B = {\u20133}",
+      "B \u2013 A = (\u20133, 5)",
       "A $$ \\cup $$ B = R",
       "A - B = ($$ - $$$$ \\propto $$, $$ - $$3) $$ \\cup $$ (5, $$ \\propto $$)"
     ],
@@ -838,14 +838,14 @@
     "subject": "Mathematics",
     "topic": "number-of-sets-and-relations",
     "difficulty": "medium",
-    "solution": "As roots are real so, $$D \\ge 0$$<br><br>$${(m + 1)^2} - 4(m + 4) \\ge 0$$<br><br>$$ \\Rightarrow {m^2} - 2m - 15 \\ge 0$$<br><br>$$ \\Rightarrow $$ $$(m - 5)(m + 3) \\ge 0$$<br><br>$$m\\, \\in \\,$$($$ - $$$$ \\propto $$, $$ - $$3] $$ \\cup $$ [5, $$ \\propto $$)<br><br>$$A= ( - $$$$ \\propto $$, $$ - $$3] $$ \\cup $$ [5, $$ \\propto $$)<br><br>Given B = [$$ - $$3, 5)<br><p>Now, let&#39;s examine the options.</p>\n<p><b>Option A :</b> A ∩ B = {–3}\nThe intersection of sets A and B would be the set of elements common to both sets. In this case, the only common element is -3. So, option A is true.</p>\n<p><b>Option B :</b> B – A = (–3, 5)\nThe subtraction (or difference) of sets A from B is the set of elements that are in B but not in A. B is [–3, 5), and A is (-∞, -3] U [5, ∞). Subtracting A from B would leave an open interval (-3, 5), not including -3 and 5. So, option B is also true.</p>\n<p><b>Option C :</b> A ∪ B = R\nThe union of sets A and B is the set of elements that are in A, or B, or both. Here, A U B would cover all real numbers. So, option C is true.</p>\n<p><b>Option D :</b> A - B = (-∞, -3) ∪ (5, ∞)\nThe subtraction (or difference) of set B from A is the set of elements that are in A but not in B. B is [–3, 5), and A is (-∞, -3] U [5, ∞). Subtracting B from A would leave (-∞, -3) U [5, ∞), not including -3 and 5. But according to the convention for writing intervals, it should be (-∞, -3) U (5, ∞). So, option D is not true.</p>",
+    "solution": "As roots are real so, $$D \\ge 0$$<br><br>$${(m + 1)^2} - 4(m + 4) \\ge 0$$<br><br>$$ \\Rightarrow {m^2} - 2m - 15 \\ge 0$$<br><br>$$ \\Rightarrow $$ $$(m - 5)(m + 3) \\ge 0$$<br><br>$$m\\, \\in \\,$$($$ - $$$$ \\propto $$, $$ - $$3] $$ \\cup $$ [5, $$ \\propto $$)<br><br>$$A= ( - $$$$ \\propto $$, $$ - $$3] $$ \\cup $$ [5, $$ \\propto $$)<br><br>Given B = [$$ - $$3, 5)<br><p>Now, let&#39;s examine the options.</p>\n<p><b>Option A :</b> A \u2229 B = {\u20133}\nThe intersection of sets A and B would be the set of elements common to both sets. In this case, the only common element is -3. So, option A is true.</p>\n<p><b>Option B :</b> B \u2013 A = (\u20133, 5)\nThe subtraction (or difference) of sets A from B is the set of elements that are in B but not in A. B is [\u20133, 5), and A is (-\u221e, -3] U [5, \u221e). Subtracting A from B would leave an open interval (-3, 5), not including -3 and 5. So, option B is also true.</p>\n<p><b>Option C :</b> A \u222a B = R\nThe union of sets A and B is the set of elements that are in A, or B, or both. Here, A U B would cover all real numbers. So, option C is true.</p>\n<p><b>Option D :</b> A - B = (-\u221e, -3) \u222a (5, \u221e)\nThe subtraction (or difference) of set B from A is the set of elements that are in A but not in B. B is [\u20133, 5), and A is (-\u221e, -3] U [5, \u221e). Subtracting B from A would leave (-\u221e, -3) U [5, \u221e), not including -3 and 5. But according to the convention for writing intervals, it should be (-\u221e, -3) U (5, \u221e). So, option D is not true.</p>",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "1p4U7IKhG25B9jE6nSjgy2xukfakf6tf",
     "questionNumber": 69,
-    "questionText": "Let $$\\mathop  \\cup \\limits_{i = 1}^{50} {X_i} = \\mathop  \\cup \\limits_{i = 1}^n {Y_i} = T$$  where each X<sub>i</sub> contains 10 elements and each Y<sub>i</sub> contains 5 elements. If each element of the set T is an element of exactly 20 of sets X<sub>i</sub>’s and exactly 6 of sets Y<sub>i</sub>’s, then n is equal to :\n",
+    "questionText": "Let $$\\mathop  \\cup \\limits_{i = 1}^{50} {X_i} = \\mathop  \\cup \\limits_{i = 1}^n {Y_i} = T$$  where each X<sub>i</sub> contains 10 elements and each Y<sub>i</sub> contains 5 elements. If each element of the set T is an element of exactly 20 of sets X<sub>i</sub>\u2019s and exactly 6 of sets Y<sub>i</sub>\u2019s, then n is equal to :\n",
     "options": [
       "30",
       "50",
@@ -877,7 +877,7 @@
     "subject": "Mathematics",
     "topic": "number-of-sets-and-relations",
     "difficulty": "easy",
-    "solution": "Number of subsets of A = 2<sup>m</sup>\n<br><br>Number of subsets of B = 2<sup>n</sup>\n<br><br>Given = 2<sup>m</sup> – 2<sup>n</sup>\n = 112\n<br><br>$$ \\therefore $$ m = 7, n = 4 (2<sup>7</sup> – 2<sup>4</sup>\n = 112)\n<br><br>$$ \\therefore $$ m $$ \\times $$ n = 7 $$ \\times $$ 4 = 28",
+    "solution": "Number of subsets of A = 2<sup>m</sup>\n<br><br>Number of subsets of B = 2<sup>n</sup>\n<br><br>Given = 2<sup>m</sup> \u2013 2<sup>n</sup>\n = 112\n<br><br>$$ \\therefore $$ m = 7, n = 4 (2<sup>7</sup> \u2013 2<sup>4</sup>\n = 112)\n<br><br>$$ \\therefore $$ m $$ \\times $$ n = 7 $$ \\times $$ 4 = 28",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -894,7 +894,7 @@
     "subject": "Mathematics",
     "topic": "number-of-sets-and-relations",
     "difficulty": "easy",
-    "solution": "X = {1, 2, 3, 4, …, 50}\n<br><br>A = {2, 4, 6, 8, …, 50} = 25 elements\n<br><br>B = {7, 14, 21, 28, 35, 42, 49} = 7 elements\n<br><br>Here n(A$$ \\cup $$B) = n(A) + n(B) – n(A$$ \\cap $$B)\n<br><br>= 25 + 7 – 3 = 29",
+    "solution": "X = {1, 2, 3, 4, \u2026, 50}\n<br><br>A = {2, 4, 6, 8, \u2026, 50} = 25 elements\n<br><br>B = {7, 14, 21, 28, 35, 42, 49} = 7 elements\n<br><br>Here n(A$$ \\cup $$B) = n(A) + n(B) \u2013 n(A$$ \\cap $$B)\n<br><br>= 25 + 7 \u2013 3 = 29",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -923,9 +923,9 @@
   {
     "id": "WCJJppkqk0JTLAItniIrv",
     "questionNumber": 86,
-    "questionText": "Let S = {1, 2, 3, … , 100}. The number of non-empty subsets A of S such that the product of elements in A is even is : ",
+    "questionText": "Let S = {1, 2, 3, \u2026 , 100}. The number of non-empty subsets A of S such that the product of elements in A is even is : ",
     "options": [
-      "2<sup>50</sup> – 1 ",
+      "2<sup>50</sup> \u2013 1 ",
       "2<sup>50</sup> (2<sup>50</sup> $$-$$ 1)",
       "2<sup>100</sup> $$-$$ 1",
       "2<sup>50</sup> + 1"
@@ -1026,7 +1026,7 @@
     "subject": "Mathematics",
     "topic": "number-of-sets-and-relations",
     "difficulty": "medium",
-    "solution": "For any element x<sub>i</sub> present in X, 4 cases arises while making subsets Y and Z.\n<br><br><b>Case- 1 :</b> x<sub>i</sub> $$ \\in $$ Y, x<sub>i</sub> $$ \\in $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z $$ \\ne $$ $$\\phi $$\n<br><br><b>Case- 2 :</b> x<sub>i</sub> $$ \\in $$ Y, x<sub>i</sub> $$ \\notin $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z = $$\\phi $$\n<br><br><b>Case- 3 :</b> x<sub>i</sub> $$ \\notin $$ Y, x<sub>i</sub> $$ \\in $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z = $$\\phi $$\n<br><br><b>Case- 4 :</b> x<sub>i</sub> $$ \\notin $$ Y, x<sub>i</sub> $$ \\notin $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z = $$\\phi $$\n<br><br>$$ \\therefore $$ For every element, number of ways = 3 for which Y $$ \\cap $$ Z = $$\\phi $$\n<br><br>$$ \\Rightarrow $$ Total ways = 3 × 3 × 3 × 3 × 3 [$$ \\because $$ no. of elements in set X = 5]\n<br><br>= 3<sup>5</sup>",
+    "solution": "For any element x<sub>i</sub> present in X, 4 cases arises while making subsets Y and Z.\n<br><br><b>Case- 1 :</b> x<sub>i</sub> $$ \\in $$ Y, x<sub>i</sub> $$ \\in $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z $$ \\ne $$ $$\\phi $$\n<br><br><b>Case- 2 :</b> x<sub>i</sub> $$ \\in $$ Y, x<sub>i</sub> $$ \\notin $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z = $$\\phi $$\n<br><br><b>Case- 3 :</b> x<sub>i</sub> $$ \\notin $$ Y, x<sub>i</sub> $$ \\in $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z = $$\\phi $$\n<br><br><b>Case- 4 :</b> x<sub>i</sub> $$ \\notin $$ Y, x<sub>i</sub> $$ \\notin $$ Z $$ \\Rightarrow $$ Y $$ \\cap $$ Z = $$\\phi $$\n<br><br>$$ \\therefore $$ For every element, number of ways = 3 for which Y $$ \\cap $$ Z = $$\\phi $$\n<br><br>$$ \\Rightarrow $$ Total ways = 3 \u00d7 3 \u00d7 3 \u00d7 3 \u00d7 3 [$$ \\because $$ no. of elements in set X = 5]\n<br><br>= 3<sup>5</sup>",
     "section": "A",
     "type": "SCQ"
   }

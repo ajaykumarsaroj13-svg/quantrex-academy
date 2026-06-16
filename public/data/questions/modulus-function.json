@@ -77,7 +77,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -85,7 +85,7 @@
     "difficulty": "medium",
     "solution": "<p>We need to solve</p>\n<p>$$ |x^2+x-9|=|x|+|x^2-9|. $$</p>\n<p>We will do it by considering intervals where the expressions inside modulus change sign.</p>\n<p>The critical points are obtained from:</p>\n<ul>\n<li><p>$x=0$ from $|x|$</p></li>\n<li><p>$x=\\pm 3$ from $|x^2-9|$</p></li>\n<li><p>roots of $x^2+x-9=0$, but for NCERT-style interval splitting here, it is enough to use the main sign-change points $-3,0,3$ and then check sign of $x^2+x-9$ in each interval.</p></li>\n</ul>\n<p>Now solve interval-wise.</p>\n\n<h2>1. For $x\\le -3$</h2>\n<p>Here,</p>\n<ul>\n<li><p>$|x|=-x$</p></li>\n<li><p>$|x^2-9|=x^2-9$</p></li>\n<li><p>Also $x^2+x-9>0$, so $|x^2+x-9|=x^2+x-9$</p></li>\n</ul>\n<p>Thus,</p>\n<p>$$ x^2+x-9=-x+(x^2-9) $$</p>\n<p>$$ x^2+x-9=x^2-x-9 $$</p>\n<p>$$ x=-x $$</p>\n<p>$$ 2x=0 \\Rightarrow x=0 $$</p>\n<p>But $0\\not\\le -3$, so no solution here.</p>\n\n<h2>2. For $-3\\le x\\le 0$</h2>\n<p>Here,</p>\n<ul>\n<li><p>$|x|=-x$</p></li>\n<li><p>$|x^2-9|=9-x^2$</p></li>\n</ul>\n<p>Now we check $x^2+x-9$ on this interval.</p>\n<p>At $x=-3$,</p>\n<p>$$ x^2+x-9=9-3-9=-3<0 $$</p>\n<p>At $x=0$,</p>\n<p>$$ x^2+x-9=-9<0 $$</p>\n<p>So throughout this interval,</p>\n<p>$$ |x^2+x-9|=-(x^2+x-9)=-x^2-x+9. $$</p>\n<p>Hence equation becomes</p>\n<p>$$ -x^2-x+9=-x+(9-x^2). $$</p>\n<p>Simplify RHS:</p>\n<p>$$ -x^2-x+9=-x+9-x^2. $$</p>\n<p>Both sides are identical, so this is true for every $x\\in[-3,0]$.</p>\n<p>So all $x\\in[-3,0]$ are solutions.</p>\n\n<h2>3. For $0\\le x\\le 3$</h2>\n<p>Here,</p>\n<ul>\n<li><p>$|x|=x$</p></li>\n<li><p>$|x^2-9|=9-x^2$</p></li>\n</ul>\n<p>Also on this interval,</p>\n<p>$$ x^2+x-9 $$</p>\n<p>At $x=0$, it is $-9<0$, and at $x=3$, it is $9+3-9=3>0$.</p>\n<p>So the sign changes inside this interval.  </p>\n<p>Let us find the root:</p>\n<p>$$ x^2+x-9=0 $$</p>\n<p>$$ x=\\frac{-1\\pm\\sqrt{37}}{2}. $$</p>\n<p>The positive root is</p>\n<p>$$ \\frac{-1+\\sqrt{37}}{2}. $$</p>\n<p>So split further.</p>\n<h3>(i) For $0\\le x\\le \\frac{-1+\\sqrt{37}}{2}$</h3>\n<p>Here $x^2+x-9\\le 0$, so</p>\n<p>$$ |x^2+x-9|=-x^2-x+9. $$</p>\n<p>Equation:</p>\n<p>$$ -x^2-x+9=x+(9-x^2) $$</p>\n<p>$$ -x^2-x+9=-x^2+x+9 $$</p>\n<p>$$ -x=x $$</p>\n<p>$$ 2x=0 \\Rightarrow x=0. $$</p>\n<p>So only $x=0$, already included in previous interval.</p>\n<h3>(ii) For $\\frac{-1+\\sqrt{37}}{2}\\le x\\le 3$</h3>\n<p>Here $x^2+x-9\\ge 0$, so</p>\n<p>$$ |x^2+x-9|=x^2+x-9. $$</p>\n<p>Equation:</p>\n<p>$$ x^2+x-9=x+(9-x^2) $$</p>\n<p>$$ x^2-9=9-x^2 $$</p>\n<p>$$ 2x^2=18 $$</p>\n<p>$$ x^2=9 $$</p>\n<p>$$ x=\\pm 3. $$</p>\n<p>In this interval, only $x=3$ is valid.</p>\n<p>So from $[0,3]$, only $x=0,3$ are solutions.</p>\n\n<h2>4. For $x\\ge 3$</h2>\n<p>Here,</p>\n<ul>\n<li><p>$|x|=x$</p></li>\n<li><p>$|x^2-9|=x^2-9$</p></li>\n<li><p>$x^2+x-9>0$, so $|x^2+x-9|=x^2+x-9$</p></li>\n</ul>\n<p>Thus,</p>\n<p>$$ x^2+x-9=x+(x^2-9) $$</p>\n<p>$$ x^2+x-9=x^2+x-9 $$</p>\n<p>This is true for every $x\\ge 3$.</p>\n<p>So all $x\\in[3,\\infty)$ are solutions.</p>\n\n<h2>Complete solution set</h2>\n<p>Combining all intervals:</p>\n<p>$$ [-3,0]\\cup[3,\\infty). $$</p>\n<p>Thus,</p>\n<p>$$ \\alpha=-3,\\quad \\beta=0,\\quad \\gamma=3. $$</p>\n<p>Now,</p>\n<p>$$ \\alpha^2+\\beta^2+\\gamma^2=(-3)^2+0^2+3^2=9+0+9=18. $$</p>\n<p>So the correct answer is</p>\n<p>$$ \\boxed{18} $$</p>\n<p>Hence, <strong>Option B</strong> is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "ml89h73n",
@@ -452,7 +452,7 @@
   {
     "id": "tLULgaIgrnpDTGKEEF7k9k2k5hk1kck",
     "questionNumber": 67,
-    "questionText": "Let S be the set of all real roots of the equation,<br>\n3<sup>x</sup>(3<sup>x</sup> – 1) + 2 = |3<sup>x</sup> – 1| + |3<sup>x</sup> – 2|. Then S :",
+    "questionText": "Let S be the set of all real roots of the equation,<br>\n3<sup>x</sup>(3<sup>x</sup> \u2013 1) + 2 = |3<sup>x</sup> \u2013 1| + |3<sup>x</sup> \u2013 2|. Then S :",
     "options": [
       "contains exactly two elements.",
       "is an empty set.",
@@ -467,14 +467,14 @@
     "subject": "Mathematics",
     "topic": "modulus-function",
     "difficulty": "medium",
-    "solution": "Let 3<sup>x</sup> = t ; t $$&gt;$$ 0\n<br><br>t(t – 1) + 2 = |t – 1| + |t – 2|\n<br><br>t<sup>2</sup> – t + 2 = |t – 1| + |t – 2|\n<br><br><b>Case-I</b> : t $$&lt;$$ 1\n<br><br>t<sup>2</sup> – t + 2 = 1 – t + 2 – t\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> + 2 = 3 – t\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> + t – 1 = 0\n<br><br>$$ \\Rightarrow $$ t = $${{ - 1 \\pm \\sqrt 5 } \\over 2}$$\n<br><br>$$ \\Rightarrow $$ t = $${{\\sqrt 5  - 1} \\over 2}$$ [ As t $$&gt;$$ 0]\n<br><br><b>Case-II</b> : 1 $$ \\le $$ t $$&lt;$$ 2\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> – t + 2 = t – 1 + 2 – t\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> – t + 1 = 0\n<br><br>D $$&lt;$$ 0 so no real solution.\n<br><br><b>Case-III</b> : t $$ \\ge $$ 2\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> – t + 2 = t – 1 + t – 2\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> – 3t - 5 = 0 \n<br><br>$$ \\Rightarrow $$ D $$&lt;$$ 0 so no real solution.",
+    "solution": "Let 3<sup>x</sup> = t ; t $$&gt;$$ 0\n<br><br>t(t \u2013 1) + 2 = |t \u2013 1| + |t \u2013 2|\n<br><br>t<sup>2</sup> \u2013 t + 2 = |t \u2013 1| + |t \u2013 2|\n<br><br><b>Case-I</b> : t $$&lt;$$ 1\n<br><br>t<sup>2</sup> \u2013 t + 2 = 1 \u2013 t + 2 \u2013 t\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> + 2 = 3 \u2013 t\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> + t \u2013 1 = 0\n<br><br>$$ \\Rightarrow $$ t = $${{ - 1 \\pm \\sqrt 5 } \\over 2}$$\n<br><br>$$ \\Rightarrow $$ t = $${{\\sqrt 5  - 1} \\over 2}$$ [ As t $$&gt;$$ 0]\n<br><br><b>Case-II</b> : 1 $$ \\le $$ t $$&lt;$$ 2\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> \u2013 t + 2 = t \u2013 1 + 2 \u2013 t\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> \u2013 t + 1 = 0\n<br><br>D $$&lt;$$ 0 so no real solution.\n<br><br><b>Case-III</b> : t $$ \\ge $$ 2\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> \u2013 t + 2 = t \u2013 1 + t \u2013 2\n<br><br>$$ \\Rightarrow $$ t<sup>2</sup> \u2013 3t - 5 = 0 \n<br><br>$$ \\Rightarrow $$ D $$&lt;$$ 0 so no real solution.",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "ZaQAnwZJq0uaay0nM43rsa0w2w9jx1ywhvd",
     "questionNumber": 84,
-    "questionText": "The number of real roots of the equation\n<br> 5 + |2<sup>x</sup>\n– 1| = 2<sup>x</sup>\n(2<sup>x</sup>\n– 2) is",
+    "questionText": "The number of real roots of the equation\n<br> 5 + |2<sup>x</sup>\n\u2013 1| = 2<sup>x</sup>\n(2<sup>x</sup>\n\u2013 2) is",
     "options": [
       "2",
       "1",
@@ -489,7 +489,7 @@
     "subject": "Mathematics",
     "topic": "modulus-function",
     "difficulty": "medium",
-    "solution": "When 2<sup>x</sup> $$ \\ge $$ 1 <br><br>\n5 + 2<sup>x</sup> –1 = 2<sup>x</sup> (2<sup>x</sup> – 2) <br><br>\nLet 2x = t <br><br>\n$$ \\Rightarrow $$5 + t – 1 = t (t – 2) <br><br>\n$$ \\Rightarrow $$ t = 4, – 1(rejected) <br><br>\n$$ \\Rightarrow $$ 2x = 4 <br><br>\n$$ \\Rightarrow $$ x = 2 <br><br>\nNow when 2<sup>x</sup> &lt; 1 <br><br>\n5 + 1 – 2<sup>x</sup> = 2<sup>x</sup> (2<sup>x</sup> – 2)<br><br>\nLet 2<sup>x</sup> = t <br><br>\n$$ \\Rightarrow $$ 5 + 1 – t = t (t – 2) <br><br>\n$$ \\Rightarrow $$ 0 = t<sup>2</sup> – t – 6 <br><br>\n$$ \\Rightarrow $$ 0 = (t – 3) (t – 2) <br><br>\n$$ \\Rightarrow $$ t = 3, – 2 <br><br>\n2<sup>x</sup> = 3, 2<sup>x</sup> = – 2 (rejected)<br><br>\n$$ \\therefore $$ Only one real roots.\n",
+    "solution": "When 2<sup>x</sup> $$ \\ge $$ 1 <br><br>\n5 + 2<sup>x</sup> \u20131 = 2<sup>x</sup> (2<sup>x</sup> \u2013 2) <br><br>\nLet 2x = t <br><br>\n$$ \\Rightarrow $$5 + t \u2013 1 = t (t \u2013 2) <br><br>\n$$ \\Rightarrow $$ t = 4, \u2013 1(rejected) <br><br>\n$$ \\Rightarrow $$ 2x = 4 <br><br>\n$$ \\Rightarrow $$ x = 2 <br><br>\nNow when 2<sup>x</sup> &lt; 1 <br><br>\n5 + 1 \u2013 2<sup>x</sup> = 2<sup>x</sup> (2<sup>x</sup> \u2013 2)<br><br>\nLet 2<sup>x</sup> = t <br><br>\n$$ \\Rightarrow $$ 5 + 1 \u2013 t = t (t \u2013 2) <br><br>\n$$ \\Rightarrow $$ 0 = t<sup>2</sup> \u2013 t \u2013 6 <br><br>\n$$ \\Rightarrow $$ 0 = (t \u2013 3) (t \u2013 2) <br><br>\n$$ \\Rightarrow $$ t = 3, \u2013 2 <br><br>\n2<sup>x</sup> = 3, 2<sup>x</sup> = \u2013 2 (rejected)<br><br>\n$$ \\therefore $$ Only one real roots.\n",
     "section": "A",
     "type": "SCQ"
   },

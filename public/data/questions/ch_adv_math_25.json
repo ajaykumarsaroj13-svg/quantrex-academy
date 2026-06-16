@@ -738,7 +738,7 @@
     "year": "2025",
     "difficulty": "hard",
     "type": "FIB",
-    "question": "<p>For all <b>x &gt; 0</b>, let <b>y₁(x)</b>, <b>y₂(x)</b>, and <b>y₃(x)</b> be the functions satisfying</p>\n<p>$ \\frac{dy_1}{dx} - (\\sin x)^2 y_1 = 0, \\quad y_1(1) = 5, $ <br><br/>$ \\frac{dy_2}{dx} - (\\cos x)^2 y_2 = 0, \\quad y_2(1) = \\frac{1}{3}, $ <br><br/>$ \\frac{dy_3}{dx} - \\frac{(2-x^3)}{x^3} y_3 = 0, \\quad y_3(1) = \\frac{3}{5e}, $</p>\n<p>respectively. Then</p>\n<p>$ \\lim\\limits_{x \\to 0^+} \\frac{y_1(x)y_2(x)y_3(x) + 2x}{e^{3x} \\sin x} $</p>\n<p>is equal to __________________.</p>",
+    "question": "<p>For all <b>x &gt; 0</b>, let <b>y\u2081(x)</b>, <b>y\u2082(x)</b>, and <b>y\u2083(x)</b> be the functions satisfying</p>\n<p>$ \\frac{dy_1}{dx} - (\\sin x)^2 y_1 = 0, \\quad y_1(1) = 5, $ <br><br/>$ \\frac{dy_2}{dx} - (\\cos x)^2 y_2 = 0, \\quad y_2(1) = \\frac{1}{3}, $ <br><br/>$ \\frac{dy_3}{dx} - \\frac{(2-x^3)}{x^3} y_3 = 0, \\quad y_3(1) = \\frac{3}{5e}, $</p>\n<p>respectively. Then</p>\n<p>$ \\lim\\limits_{x \\to 0^+} \\frac{y_1(x)y_2(x)y_3(x) + 2x}{e^{3x} \\sin x} $</p>\n<p>is equal to __________________.</p>",
     "options": [],
     "correctOptionIndex": 0,
     "solution": null,
@@ -1462,7 +1462,7 @@
       "$$y'\\left( {{\\pi  \\over 4}} \\right) + y'\\left( { - {\\pi  \\over 4}} \\right) =  - \\sqrt 2 $$"
     ],
     "correctOptionIndex": 1,
-    "solution": "$${{dy} \\over {dx}} + y(\\tan x) = 2x + {x^2}\\tan x$$<br><br>\nI.F. = $${e^{\\int {\\tan x\\,dx} }}$$ = $${e^{\\ln \\sec x}}$$ = sec x<br><br>\ny. sec x = $$\\int {(2x + {x^2}\\tan x)\\sec \\,x\\,dx} $$<br><br>\n$$ \\Rightarrow y\\sec x = {x^2}\\sec x + \\lambda $$<br><br>\n$$ \\Rightarrow $$ y(0) = 0 + $$\\lambda $$ = 1 $$ \\Rightarrow $$ $$\\lambda $$ = 1<br><br>\n$$ \\Rightarrow $$ y = x<sup>2</sup> + cos x<br><br>\n$$ \\Rightarrow $$ y' = 2x – sinx<br><br>\n$$ \\Rightarrow y'\\left( {{\\pi  \\over 4}} \\right) = {\\pi  \\over 2} - {1 \\over {\\sqrt 2 }}$$<br><br>\n$$ \\Rightarrow y'\\left( { - {\\pi  \\over 4}} \\right) =  - {\\pi  \\over 2} + {1 \\over {\\sqrt 2 }}$$<br><br>\n$$ \\therefore $$  $$y'\\left( {{\\pi  \\over 4}} \\right) - y'\\left( { - {\\pi  \\over 4}} \\right) = \\pi  - \\sqrt 2 $$",
+    "solution": "$${{dy} \\over {dx}} + y(\\tan x) = 2x + {x^2}\\tan x$$<br><br>\nI.F. = $${e^{\\int {\\tan x\\,dx} }}$$ = $${e^{\\ln \\sec x}}$$ = sec x<br><br>\ny. sec x = $$\\int {(2x + {x^2}\\tan x)\\sec \\,x\\,dx} $$<br><br>\n$$ \\Rightarrow y\\sec x = {x^2}\\sec x + \\lambda $$<br><br>\n$$ \\Rightarrow $$ y(0) = 0 + $$\\lambda $$ = 1 $$ \\Rightarrow $$ $$\\lambda $$ = 1<br><br>\n$$ \\Rightarrow $$ y = x<sup>2</sup> + cos x<br><br>\n$$ \\Rightarrow $$ y' = 2x \u2013 sinx<br><br>\n$$ \\Rightarrow y'\\left( {{\\pi  \\over 4}} \\right) = {\\pi  \\over 2} - {1 \\over {\\sqrt 2 }}$$<br><br>\n$$ \\Rightarrow y'\\left( { - {\\pi  \\over 4}} \\right) =  - {\\pi  \\over 2} + {1 \\over {\\sqrt 2 }}$$<br><br>\n$$ \\therefore $$  $$y'\\left( {{\\pi  \\over 4}} \\right) - y'\\left( { - {\\pi  \\over 4}} \\right) = \\pi  - \\sqrt 2 $$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "linear-differential-equations",
@@ -1484,7 +1484,7 @@
       "$${1 \\over e} - 2$$"
     ],
     "correctOptionIndex": 1,
-    "solution": "$${{dy} \\over {dx}} + y{\\sec ^2}x = se{c^2}x\\,tanx$$<br> $$ \\to $$ This is linear\ndifferential equation<br><br>\n$$IF = {e^{\\int {{{\\sec }^2}xdx} }} = {e^{\\tan x}}$$<br><br>\nNow solution is<br><br>\n$$y.{e^{\\tan x}} = \\int {{e^{\\tan x}}} {\\sec ^2}x\\tan xdx$$<br><br>\n$$ \\therefore $$ Let tanx = t<br><br>\nsec<sup>2</sup>xdx = dt<br><br>\n$$y.{e^{\\tan x}} = \\int {\\mathop {{e^t}}\\limits_{||} } \\mathop t\\limits_| dt$$<br><br>\nye<sup>tanx</sup> = te<sup>t</sup> – e<sup>t</sup> + c<br><br>\nye<sup>tanx</sup> = (tanx – 1)e<sup>tanx</sup> + c<br><br>\ny = (tanx – 1) + c · e<sup>–tanx</sup><br><br>\nGiven y(0) = 0\n<br><br>\n$$ \\Rightarrow $$ 0 = –1 + c $$ \\Rightarrow $$ c = 1<br><br>\n$$y\\left( { - {\\pi  \\over 4}} \\right) =  - 1 - 1 + e =  - 2 + e$$",
+    "solution": "$${{dy} \\over {dx}} + y{\\sec ^2}x = se{c^2}x\\,tanx$$<br> $$ \\to $$ This is linear\ndifferential equation<br><br>\n$$IF = {e^{\\int {{{\\sec }^2}xdx} }} = {e^{\\tan x}}$$<br><br>\nNow solution is<br><br>\n$$y.{e^{\\tan x}} = \\int {{e^{\\tan x}}} {\\sec ^2}x\\tan xdx$$<br><br>\n$$ \\therefore $$ Let tanx = t<br><br>\nsec<sup>2</sup>xdx = dt<br><br>\n$$y.{e^{\\tan x}} = \\int {\\mathop {{e^t}}\\limits_{||} } \\mathop t\\limits_| dt$$<br><br>\nye<sup>tanx</sup> = te<sup>t</sup> \u2013 e<sup>t</sup> + c<br><br>\nye<sup>tanx</sup> = (tanx \u2013 1)e<sup>tanx</sup> + c<br><br>\ny = (tanx \u2013 1) + c \u00b7 e<sup>\u2013tanx</sup><br><br>\nGiven y(0) = 0\n<br><br>\n$$ \\Rightarrow $$ 0 = \u20131 + c $$ \\Rightarrow $$ c = 1<br><br>\n$$y\\left( { - {\\pi  \\over 4}} \\right) =  - 1 - 1 + e =  - 2 + e$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "linear-differential-equations",
@@ -1498,7 +1498,7 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "The curve amongst the family of curves represented by the differential equation, (x<sup>2</sup> – y<sup>2</sup>)dx + 2xy dy = 0 which passes through (1, 1) is :",
+    "question": "The curve amongst the family of curves represented by the differential equation, (x<sup>2</sup> \u2013 y<sup>2</sup>)dx + 2xy dy = 0 which passes through (1, 1) is :",
     "options": [
       "a circle with centre on the y-axis",
       "an ellipse with major axis along the y-axis",
@@ -1564,7 +1564,7 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "The solution of the differential equation, \n<br><br>$${{dy} \\over {dx}}$$ = (x – y)<sup>2</sup>, when y(1) = 1, is :",
+    "question": "The solution of the differential equation, \n<br><br>$${{dy} \\over {dx}}$$ = (x \u2013 y)<sup>2</sup>, when y(1) = 1, is :",
     "options": [
       "$$-$$ log<sub>e</sub> $$\\left| {{{1 + x - y} \\over {1 - x + y}}} \\right|$$ = x + y $$-$$ 2",
       "log<sub>e</sub>  $$\\left| {{{2 - x} \\over {2 - y}}} \\right|$$ = x $$-$$ y",
@@ -1608,12 +1608,12 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "The general solution of the differential equation (y<sup>2</sup>\n– x<sup>3</sup>)dx – xydy = 0 (x $$ \\ne $$ 0) is :\n(where c is a constant of integration)",
+    "question": "The general solution of the differential equation (y<sup>2</sup>\n\u2013 x<sup>3</sup>)dx \u2013 xydy = 0 (x $$ \\ne $$ 0) is :\n(where c is a constant of integration)",
     "options": [
       "y<sup>2</sup>\n + 2x<sup>3</sup>\n + cx<sup>2</sup>\n = 0",
       "y<sup>2</sup>\n + 2x<sup>2</sup>\n + cx<sup>3</sup>\n = 0",
-      "y<sup>2</sup>\n– 2x + cx<sup>3</sup>\n = 0",
-      "y<sup>2</sup>\n– 2x<sup>3</sup>\n + cx<sup>2</sup>\n = 0"
+      "y<sup>2</sup>\n\u2013 2x + cx<sup>3</sup>\n = 0",
+      "y<sup>2</sup>\n\u2013 2x<sup>3</sup>\n + cx<sup>2</sup>\n = 0"
     ],
     "correctOptionIndex": 0,
     "solution": "$$({y^2} - {x^3})dx - xydy = 0$$<br><br>\n$$ \\Rightarrow y(ydx - xdy) = {x^3}dx$$<br><br>\n$$ \\Rightarrow {y \\over x}\\left( {{{ydx - xdy} \\over {{x^2}}}} \\right) = dx$$<br><br>\n$$ \\Rightarrow  - {y \\over x}d\\left( {{y \\over x}} \\right) = dx$$<br><br>\n$$ \\Rightarrow  - {1 \\over 2}{\\left( {{y \\over x}} \\right)^2} = x + k$$<br><br>\n$$ \\Rightarrow  - {y^2} = 2{x^3} + 2{x^2}k$$<br><br>\n$$ \\Rightarrow {y^2} + 2{x^3} + c{x^2} = 0$$\n",
@@ -1652,9 +1652,9 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "If a curve passes through the point (1, –2) and has slope of the tangent at any point (x, y) on it as $${{{x^2} - 2y} \\over x}$$, then the curve also passes through the point :",
+    "question": "If a curve passes through the point (1, \u20132) and has slope of the tangent at any point (x, y) on it as $${{{x^2} - 2y} \\over x}$$, then the curve also passes through the point :",
     "options": [
-      "(–1, 2)",
+      "(\u20131, 2)",
       "$$\\left( { - \\sqrt 2 ,1} \\right)$$",
       "$$\\left( { \\sqrt 3 ,0} \\right)$$",
       "(3, 0)"
@@ -1827,7 +1827,7 @@
     "title": "JEE Main 2020 (Online) 2nd September Morning Slot",
     "year": "2020",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "Let y = y(x) be the solution of the differential\nequation,\n<br>$${{2 + \\sin x} \\over {y + 1}}.{{dy} \\over {dx}} =  - \\cos x$$, y &gt; 0,y(0) = 1.<br> If y($$\\pi $$) = a and $${{dy} \\over {dx}}$$ at x =\n$$\\pi $$ is b, then the ordered pair\n(a, b) is equal to :",
     "options": [
       "(2, 1)",
@@ -1898,8 +1898,8 @@
     "options": [
       "$$x - {1 \\over 2}{\\left( {{{\\log }_e}\\left( {y + 3x} \\right)} \\right)^2} = C$$",
       "$$y + 3x - {1 \\over 2}{\\left( {{{\\log }_e}x} \\right)^2} = C$$",
-      "x – log<sub>e</sub>(y+3x) = C",
-      "x – 2log<sub>e</sub>(y+3x) = C"
+      "x \u2013 log<sub>e</sub>(y+3x) = C",
+      "x \u2013 2log<sub>e</sub>(y+3x) = C"
     ],
     "correctOptionIndex": 0,
     "solution": "$${{dy} \\over {dx}} - {{y + 3x} \\over {\\ln (y + 3x)}} + 3 = 0$$<br><br>Let $$\\ln (y + 3x) = t$$<br><br>$${1 \\over {y + 3x}}.\\left( {{{dy} \\over {dx}} + 3} \\right) = {{dt} \\over {dx}}$$<br><br>$$ \\Rightarrow \\left( {{{dy} \\over {dx}} + 3} \\right) = {{y + 3x} \\over {\\ln (y + 3x)}}$$<br><br>$$ \\therefore $$ $$\\left( {y + 3x} \\right){{dt} \\over {dx}} = {{y + 3x} \\over t}$$<br><br>$$ \\Rightarrow tdt = dx$$<br><br>$${{{t^2}} \\over 2} = x + c$$<br><br>$${1 \\over 2}{\\left( {\\ln (y + 3x)} \\right)^2} = x + c$$",
@@ -1968,7 +1968,7 @@
       "2"
     ],
     "correctOptionIndex": 0,
-    "solution": "$${{5 + {e^x}} \\over {2 + y}}.{{dy} \\over {dx}} + {e^x} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{5 + {e^x}} \\over {2 + y}}.{{dy} \\over {dx}} = -{e^x} $$\n<br><br>Integrating both sides,\n<br><br>$$ \\Rightarrow $$ $$\\int {{{dy} \\over {2 + y}}}  = \\int {{{ - {e^x}} \\over {{e^x} + 5}}} dx$$\n<br><br>$$ \\Rightarrow $$ ln (y + 2) = – ln(e<sup>x</sup>\n + 5) + k\n<br><br>$$ \\Rightarrow $$ (y + 2) (e<sup>x</sup>\n + 5) = C\n<br><br>$$ \\because $$ y(0) = 1\n<br><br>$$ \\Rightarrow $$ C = 18\n<br><br>$$ \\therefore $$ y + 2 = $${{{18} \\over {{e^x} + 5}}}$$\n<br><br>At x = log<sub>e</sub>13\n<br><br>y + 2 = $${{{18} \\over {13 + 5}}}$$ = 1\n<br><br>$$ \\Rightarrow $$ y = -1",
+    "solution": "$${{5 + {e^x}} \\over {2 + y}}.{{dy} \\over {dx}} + {e^x} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{5 + {e^x}} \\over {2 + y}}.{{dy} \\over {dx}} = -{e^x} $$\n<br><br>Integrating both sides,\n<br><br>$$ \\Rightarrow $$ $$\\int {{{dy} \\over {2 + y}}}  = \\int {{{ - {e^x}} \\over {{e^x} + 5}}} dx$$\n<br><br>$$ \\Rightarrow $$ ln (y + 2) = \u2013 ln(e<sup>x</sup>\n + 5) + k\n<br><br>$$ \\Rightarrow $$ (y + 2) (e<sup>x</sup>\n + 5) = C\n<br><br>$$ \\because $$ y(0) = 1\n<br><br>$$ \\Rightarrow $$ C = 18\n<br><br>$$ \\therefore $$ y + 2 = $${{{18} \\over {{e^x} + 5}}}$$\n<br><br>At x = log<sub>e</sub>13\n<br><br>y + 2 = $${{{18} \\over {13 + 5}}}$$ = 1\n<br><br>$$ \\Rightarrow $$ y = -1",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
@@ -2034,7 +2034,7 @@
       "2 - e"
     ],
     "correctOptionIndex": 3,
-    "solution": "$$\\left( {{y^2} - x} \\right){{dy} \\over {dx}} = 1$$\n<br><br>$$ \\Rightarrow $$ $${{dx} \\over {dy}}$$ + x = y<sup>2</sup>\n<br><br>I.F = $${e^{\\int {dy} }}$$ = e<sup>y</sup>\n<br><br>Solution is given by\n<br><br>xe<sup>y</sup> = $${\\int {{y^2}{e^y}dy} }$$\n<br><br>$$ \\Rightarrow $$ xe<sup>y</sup> = (y<sup>2</sup> – 2y + 2)e<sup>y</sup> + C\n<br><br>y(0) = 1 means x = 0, y = 1\n<br><br>$$ \\therefore $$ C = -e\n<br><br>$$ \\therefore $$ xe<sup>y</sup> = (y<sup>2</sup> – 2y + 2)e<sup>y</sup> - e\n<br><br>put y = 0\n<br><br>$$ \\therefore $$ x = 0 – 0 + 2 – e\n<br><br>$$ \\Rightarrow $$ x = 2 - e",
+    "solution": "$$\\left( {{y^2} - x} \\right){{dy} \\over {dx}} = 1$$\n<br><br>$$ \\Rightarrow $$ $${{dx} \\over {dy}}$$ + x = y<sup>2</sup>\n<br><br>I.F = $${e^{\\int {dy} }}$$ = e<sup>y</sup>\n<br><br>Solution is given by\n<br><br>xe<sup>y</sup> = $${\\int {{y^2}{e^y}dy} }$$\n<br><br>$$ \\Rightarrow $$ xe<sup>y</sup> = (y<sup>2</sup> \u2013 2y + 2)e<sup>y</sup> + C\n<br><br>y(0) = 1 means x = 0, y = 1\n<br><br>$$ \\therefore $$ C = -e\n<br><br>$$ \\therefore $$ xe<sup>y</sup> = (y<sup>2</sup> \u2013 2y + 2)e<sup>y</sup> - e\n<br><br>put y = 0\n<br><br>$$ \\therefore $$ x = 0 \u2013 0 + 2 \u2013 e\n<br><br>$$ \\Rightarrow $$ x = 2 - e",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
@@ -2072,8 +2072,8 @@
     "type": "SCQ",
     "question": "The differential equation of the family of\ncurves, x<sup>2</sup> = 4b(y + b), b $$ \\in $$ R, is :",
     "options": [
-      "x(y')<sup>2</sup> = x – 2yy'",
-      "x(y')<sup>2</sup> = 2yy' – x",
+      "x(y')<sup>2</sup> = x \u2013 2yy'",
+      "x(y')<sup>2</sup> = 2yy' \u2013 x",
       "xy\" = y'",
       "x(y')<sup>2</sup> = x + 2yy'"
     ],
@@ -2136,10 +2136,10 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "FIB",
-    "question": "If for x $$ \\ge $$ 0, y = y(x) is the solution of the\ndifferential equation<br>\n(x + 1)dy = ((x + 1)<sup>2</sup> + y – 3)dx, y(2) = 0,\nthen y(3) is equal to _______.",
+    "question": "If for x $$ \\ge $$ 0, y = y(x) is the solution of the\ndifferential equation<br>\n(x + 1)dy = ((x + 1)<sup>2</sup> + y \u2013 3)dx, y(2) = 0,\nthen y(3) is equal to _______.",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "(x + 1)dy = ((x + 1)<sup>2</sup> + y – 3)dx\n<br><br>$$ \\Rightarrow $$ (1 + x)$${{dy} \\over {dx}}$$ - y = (1 + x)<sup>2</sup> - 3\n<br><br>$$ \\Rightarrow $$ $${{dy} \\over {dx}} - {y \\over {1 + x}} = \\left( {1 + x} \\right) - {3 \\over {1 + x}}$$\n<br><br>I.F = $${e^{ - \\int {{{dx} \\over {1 + x}}} }}$$ = $${1 \\over {1 + x}}$$\n<br><br>Solution of the differential equation,\n<br><br>$$y\\left( {{1 \\over {1 + x}}} \\right)$$ = $$\\int {\\left( {\\left( {1 + x} \\right) - {3 \\over {1 + x}}} \\right)\\left( {{1 \\over {1 + x}}} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ $${y \\over {1 + x}}$$ = $$\\int {{{{x^2} + 2x + 1 - 3} \\over {{{\\left( {x + 1} \\right)}^2}}}dx} $$\n<br><br>$$ \\Rightarrow $$ $${y \\over {1 + x}}$$ = x + $${3 \\over {1 + x}}$$ + C\n<br><br>As y(2) = 0 $$ \\Rightarrow $$ x = 2, y = 0\n<br><br>$$ \\therefore $$ 0 = 2 + $${3 \\over {1 + 2}}$$ + C\n<br><br>$$ \\Rightarrow $$ C = -3\n<br><br>So solution is $${y \\over {1 + x}}$$ = x + $${3 \\over {1 + x}}$$ - 3\n<br><br>y(3) means x = 3 and find value of y.\n<br><br>$${y \\over {1 + 3}} = 3 + {3 \\over {1 + 3}} - 3$$\n<br><br>$$ \\Rightarrow $$ y = 3\n",
+    "solution": "(x + 1)dy = ((x + 1)<sup>2</sup> + y \u2013 3)dx\n<br><br>$$ \\Rightarrow $$ (1 + x)$${{dy} \\over {dx}}$$ - y = (1 + x)<sup>2</sup> - 3\n<br><br>$$ \\Rightarrow $$ $${{dy} \\over {dx}} - {y \\over {1 + x}} = \\left( {1 + x} \\right) - {3 \\over {1 + x}}$$\n<br><br>I.F = $${e^{ - \\int {{{dx} \\over {1 + x}}} }}$$ = $${1 \\over {1 + x}}$$\n<br><br>Solution of the differential equation,\n<br><br>$$y\\left( {{1 \\over {1 + x}}} \\right)$$ = $$\\int {\\left( {\\left( {1 + x} \\right) - {3 \\over {1 + x}}} \\right)\\left( {{1 \\over {1 + x}}} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ $${y \\over {1 + x}}$$ = $$\\int {{{{x^2} + 2x + 1 - 3} \\over {{{\\left( {x + 1} \\right)}^2}}}dx} $$\n<br><br>$$ \\Rightarrow $$ $${y \\over {1 + x}}$$ = x + $${3 \\over {1 + x}}$$ + C\n<br><br>As y(2) = 0 $$ \\Rightarrow $$ x = 2, y = 0\n<br><br>$$ \\therefore $$ 0 = 2 + $${3 \\over {1 + 2}}$$ + C\n<br><br>$$ \\Rightarrow $$ C = -3\n<br><br>So solution is $${y \\over {1 + x}}$$ = x + $${3 \\over {1 + x}}$$ - 3\n<br><br>y(3) means x = 3 and find value of y.\n<br><br>$${y \\over {1 + 3}} = 3 + {3 \\over {1 + 3}} - 3$$\n<br><br>$$ \\Rightarrow $$ y = 3\n",
     "marks": 4,
     "negativeMarks": 0,
     "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
@@ -2529,7 +2529,7 @@
     "year": "2021",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "The population P = P(t) at time 't' of a certain species follows the differential equation\n<br><br/>$${{dP} \\over {dt}}$$\n= 0.5P – 450. If P(0) = 850, then the time at which population becomes zero is :",
+    "question": "The population P = P(t) at time 't' of a certain species follows the differential equation\n<br><br/>$${{dP} \\over {dt}}$$\n= 0.5P \u2013 450. If P(0) = 850, then the time at which population becomes zero is :",
     "options": [
       "$${\\log _e}18$$",
       "$${1 \\over 2}{\\log _e}18$$",
@@ -3143,7 +3143,7 @@
     "title": "JEE Main 2022 (Online) 25th June Morning Shift",
     "year": "2022",
     "difficulty": "hard",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Let $$g:(0,\\infty ) \\to R$$ be a differentiable function such that <br/><br/>$$\\int {\\left( {{{x(\\cos x - \\sin x)} \\over {{e^x} + 1}} + {{g(x)\\left( {{e^x} + 1 - x{e^x}} \\right)} \\over {{{({e^x} + 1)}^2}}}} \\right)dx = {{x\\,g(x)} \\over {{e^x} + 1}} + c} $$, for all x > 0, where c is an arbitrary constant. Then :</p>",
     "options": [
       "g is decreasing in $$\\left( {0,{\\pi  \\over 4}} \\right)$$",
@@ -3156,7 +3156,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "1l5aiqgx8",
@@ -5212,7 +5212,7 @@
       "$2\\left(\\log _e 2\\right)^2-1$"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>$$\\begin{aligned}\n\\quad y d y & =(x d y-y d x) \\sin \\left(\\frac{x}{y}\\right) \\\\\n\\frac{d y}{y} & =\\left(\\frac{x d y-y d x}{y^2}\\right) \\sin \\left(\\frac{x}{y}\\right) \\\\\n\\frac{d y}{y} & =\\sin \\left(\\frac{x}{y}\\right) d\\left(-\\frac{x}{y}\\right) \\\\\n\\Rightarrow \\quad \\ell n y & =\\cos \\frac{x}{y}+C\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& x(1)=\\frac{\\pi}{2} \\Rightarrow 0=\\cos \\frac{\\pi}{2}+C \\Rightarrow C=0 \\\\\n& \\text { थny }=\\cos \\frac{x}{y} \\\\\n& \\text { but } y=2 \\Rightarrow \\cos \\frac{x}{2}=\\ln 2 \\\\\n& \\qquad \\begin{aligned}\n\\cos x & =2 \\cos ^2 \\frac{x}{2}-1 \\\\\n& =2(\\ln 2)^2-1\n\\end{aligned}\n\\end{aligned}$$</p>",
+    "solution": "<p>$$\\begin{aligned}\n\\quad y d y & =(x d y-y d x) \\sin \\left(\\frac{x}{y}\\right) \\\\\n\\frac{d y}{y} & =\\left(\\frac{x d y-y d x}{y^2}\\right) \\sin \\left(\\frac{x}{y}\\right) \\\\\n\\frac{d y}{y} & =\\sin \\left(\\frac{x}{y}\\right) d\\left(-\\frac{x}{y}\\right) \\\\\n\\Rightarrow \\quad \\ell n y & =\\cos \\frac{x}{y}+C\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& x(1)=\\frac{\\pi}{2} \\Rightarrow 0=\\cos \\frac{\\pi}{2}+C \\Rightarrow C=0 \\\\\n& \\text { \u0925ny }=\\cos \\frac{x}{y} \\\\\n& \\text { but } y=2 \\Rightarrow \\cos \\frac{x}{2}=\\ln 2 \\\\\n& \\qquad \\begin{aligned}\n\\cos x & =2 \\cos ^2 \\frac{x}{2}-1 \\\\\n& =2(\\ln 2)^2-1\n\\end{aligned}\n\\end{aligned}$$</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
@@ -5365,12 +5365,12 @@
     "year": "2025",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "<p>Let <i>y = y(x)</i> be the solution of the differential equation :</p>\n<p>$\\cos x\\left(\\log _e(\\cos x)\\right)^2 d y+\\left(\\sin x-3 y \\sin x \\log _e(\\cos x)\\right) d x=0$, x ∈ (0, $\\frac{\\pi}{2}$ ). If $ y(\\frac{\\pi}{4}) $ = $-\\frac{1}{\\log_{e}2}$, then $ y(\\frac{\\pi}{6}) $ is equal to :</p>",
+    "question": "<p>Let <i>y = y(x)</i> be the solution of the differential equation :</p>\n<p>$\\cos x\\left(\\log _e(\\cos x)\\right)^2 d y+\\left(\\sin x-3 y \\sin x \\log _e(\\cos x)\\right) d x=0$, x \u2208 (0, $\\frac{\\pi}{2}$ ). If $ y(\\frac{\\pi}{4}) $ = $-\\frac{1}{\\log_{e}2}$, then $ y(\\frac{\\pi}{6}) $ is equal to :</p>",
     "options": [
-      "<p>$\\frac{2}{\\log_{e}(3)−\\log_{e}(4)}$</p>",
+      "<p>$\\frac{2}{\\log_{e}(3)\u2212\\log_{e}(4)}$</p>",
       "<p>$-\\frac{1}{\\log_{e}(4)}$</p>",
-      "<p>$\\frac{1}{\\log_{e}(4)−\\log_{e}(3)}$</p>",
-      "<p>$\\frac{1}{\\log_{e}(3)−\\log_{e}(4)}$</p>"
+      "<p>$\\frac{1}{\\log_{e}(4)\u2212\\log_{e}(3)}$</p>",
+      "<p>$\\frac{1}{\\log_{e}(3)\u2212\\log_{e}(4)}$</p>"
     ],
     "correctOptionIndex": 3,
     "solution": "<p>$$\\begin{aligned}\n& \\cos x(\\ln (\\cos x))^2 d y+(\\sin x-3 y(\\sin x) \\ln (\\cos x)) d x=0 \\\\\n& \\cos x(\\ln (\\cos x))^2 \\frac{d y}{d x}-3 \\sin x \\cdot \\ln (\\cos x) y=-\\sin x \\\\\n& \\frac{d y}{d x}-\\frac{3 \\tan x}{\\ln (\\cos x)} y=\\frac{-\\tan x}{(\\ln (\\cos x))^2} \\\\\n& \\frac{d y}{d x}+\\frac{3 \\tan x}{\\ln (\\sec x)} y=\\frac{-\\tan x}{(\\ln (\\sec x))^2} \\\\\n& \\text { I.F. }=e^{\\int \\frac{3 \\tan x}{\\ln (\\sec x)} d x}=(\\ln (\\sec x))^3\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& y \\times(\\ln (\\sec x))^3=-\\int \\frac{\\tan x}{(\\ln (\\sec x))^2}(\\ln (\\sec x))^3 d x \\\\\n& y \\times(\\ln (\\sec x))^3=-\\frac{1}{2}(\\ln (\\sec x))^2+C \\\\\n& \\text { Given }: x=\\frac{\\pi}{4}, y=-\\frac{1}{\\ln 2} \\\\\n& \\frac{-1}{\\ln 2} \\times(\\ln \\sqrt{2})^3=-\\frac{1}{2} \\times(\\ln \\sqrt{2})^2+C \\\\\n& \\Rightarrow \\frac{-1}{8 \\ln 2} \\times(\\ln 2)^3=\\frac{-1}{2} \\times \\frac{1}{4}(\\ln 2)^2+C \\\\\n& -\\frac{1}{8}(\\ln 2)^2=\\frac{-1}{8}(\\ln 2)^2+C \\\\\n& \\Rightarrow C=0 \\\\\n& \\therefore y(\\ln (\\sec x))^3=\\frac{-1}{2}(\\ln (\\sec x))^2+0 \\\\\n& y=\\frac{-1}{2 \\ln (\\sec x)} \\\\\n& y=\\frac{1}{2 \\ln (\\cos x)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\therefore y\\left(\\frac{\\pi}{6}\\right)=\\frac{1}{2 \\ln \\left(\\cos \\frac{\\pi}{6}\\right)} \\\\\n& =\\frac{1}{2 \\ln \\left(\\frac{\\sqrt{3}}{2}\\right)} \\\\\n& =\\frac{1}{2\\left(\\frac{1}{2} \\ln 3-\\ln 2\\right)} \\\\\n& =\\frac{1}{\\ln 3-\\ln 4}\n\\end{aligned}$$</p>",
@@ -5513,7 +5513,7 @@
     "title": "JEE Main 2025 (Online) 8th April Evening Shift",
     "year": "2025",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Let $f(x) = x - 1$ and $g(x) = e^x$ for $x \\in \\mathbb{R}$. If $\\frac{dy}{dx} = \\left( e^{-2\\sqrt{x}} g\\left(f(f(x))\\right) - \\frac{y}{\\sqrt{x}} \\right)$, $y(0) = 0$, then $y(1)$ is</p>",
     "options": [
       "<p>$\\frac{1 - e^3}{e^4}$</p>",
@@ -5526,7 +5526,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "linear-differential-equations",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "ml7rbyno",
@@ -6060,7 +6060,7 @@
       "4"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>We begin by noting that any circle that touches both the x‐axis and y‐axis in the first quadrant must have its center at (r, r) (since the distance to each axis is equal) and radius r. Therefore, the equation of such a circle is</p>\n<p>$$ (x - r)^2 + (y - r)^2 = r^2. $$</p>\n<p>Step 1. Expand the equation:</p>\n<p>• Expanding gives</p>\n<p>$$   x^2 - 2rx + r^2 + y^2 - 2ry + r^2 = r^2.   $$</p>\n<p>• Simplify by combining like terms:</p>\n<p>$$   x^2 + y^2 - 2r(x + y) + r^2 = 0. \\tag{1}   $$</p>\n<p>Step 2. Differentiate (1) with respect to x:</p>\n<p>• When differentiating, treat r as a constant (since each circle in the family has a fixed r):</p>\n<p>$$   \\frac{d}{dx}(x^2 + y^2 - 2r(x+y) + r^2) = 0.   $$</p>\n<p>• This gives</p>\n<p>$$   2x + 2yy' - 2r(1+y') = 0.   $$</p>\n<p>• Dividing by 2, we obtain</p>\n<p>$$   x + yy' = r(1+y'). \\tag{2}   $$</p>\n<p>Step 3. Eliminate the parameter r:</p>\n<p>• Solve (2) for r:</p>\n<p>$$   r = \\frac{x+yy'}{1+y'}.   $$</p>\n<p>• Substitute this expression for r into (1):</p>\n<p>$$   x^2+y^2 - 2(x+y)\\left(\\frac{x+yy'}{1+y'}\\right) + \\left(\\frac{x+yy'}{1+y'}\\right)^2 = 0.   $$</p>\n<p>• Multiply through by $(1+y')^2$ to eliminate denominators:</p>\n<p>$$   (x^2+y^2)(1+y')^2 - 2(x+y)(x+yy')(1+y') + (x+yy')^2 = 0.   $$</p>\n<p>Step 4. Identify the degree of the differential equation:</p>\n<p>• The “degree” of a differential equation is defined as the highest power (exponent) of the highest order derivative (here, $y'$) when the equation is written in a polynomial form (i.e. free of radicals and fractions in $y'$).</p>\n<p>• In our final equation, even though the differential equation is of the first order (only $y'$ appears), the derivative $y'$ appears up to the second power (in the term $(1+y')^2$ and in the expansion of $(x+yy')^2$).</p>\n<p>• Therefore, the degree of the differential equation is 2.</p>\n<p>Final Answer: Option B (2).</p>",
+    "solution": "<p>We begin by noting that any circle that touches both the x\u2010axis and y\u2010axis in the first quadrant must have its center at (r, r) (since the distance to each axis is equal) and radius r. Therefore, the equation of such a circle is</p>\n<p>$$ (x - r)^2 + (y - r)^2 = r^2. $$</p>\n<p>Step 1. Expand the equation:</p>\n<p>\u2022 Expanding gives</p>\n<p>$$   x^2 - 2rx + r^2 + y^2 - 2ry + r^2 = r^2.   $$</p>\n<p>\u2022 Simplify by combining like terms:</p>\n<p>$$   x^2 + y^2 - 2r(x + y) + r^2 = 0. \\tag{1}   $$</p>\n<p>Step 2. Differentiate (1) with respect to x:</p>\n<p>\u2022 When differentiating, treat r as a constant (since each circle in the family has a fixed r):</p>\n<p>$$   \\frac{d}{dx}(x^2 + y^2 - 2r(x+y) + r^2) = 0.   $$</p>\n<p>\u2022 This gives</p>\n<p>$$   2x + 2yy' - 2r(1+y') = 0.   $$</p>\n<p>\u2022 Dividing by 2, we obtain</p>\n<p>$$   x + yy' = r(1+y'). \\tag{2}   $$</p>\n<p>Step 3. Eliminate the parameter r:</p>\n<p>\u2022 Solve (2) for r:</p>\n<p>$$   r = \\frac{x+yy'}{1+y'}.   $$</p>\n<p>\u2022 Substitute this expression for r into (1):</p>\n<p>$$   x^2+y^2 - 2(x+y)\\left(\\frac{x+yy'}{1+y'}\\right) + \\left(\\frac{x+yy'}{1+y'}\\right)^2 = 0.   $$</p>\n<p>\u2022 Multiply through by $(1+y')^2$ to eliminate denominators:</p>\n<p>$$   (x^2+y^2)(1+y')^2 - 2(x+y)(x+yy')(1+y') + (x+yy')^2 = 0.   $$</p>\n<p>Step 4. Identify the degree of the differential equation:</p>\n<p>\u2022 The \u201cdegree\u201d of a differential equation is defined as the highest power (exponent) of the highest order derivative (here, $y'$) when the equation is written in a polynomial form (i.e. free of radicals and fractions in $y'$).</p>\n<p>\u2022 In our final equation, even though the differential equation is of the first order (only $y'$ appears), the derivative $y'$ appears up to the second power (in the term $(1+y')^2$ and in the expansion of $(x+yy')^2$).</p>\n<p>\u2022 Therefore, the degree of the differential equation is 2.</p>\n<p>Final Answer: Option B (2).</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General",
@@ -6336,7 +6336,7 @@
       "1 and 3"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p>The given equation is  </p>\n<p>$$y\\,dx + (x - y^3)\\,dy = 0$$  </p>\n<p>or equivalently  </p>\n<p>$$(x - y^3)\\,\\frac{dy}{dx} + y = 0\\,. $$  </p>\n\n<p><p>Highest derivative present: $\\dfrac{dy}{dx}$ ⇒ order = 1.  </p></p>\n<p><p>After clearing any fractions, $\\dfrac{dy}{dx}$ appears to the first power ⇒ degree = 1.  </p></p>\n\n<p>Answer: 1 and 1.</p>",
+    "solution": "<p>The given equation is  </p>\n<p>$$y\\,dx + (x - y^3)\\,dy = 0$$  </p>\n<p>or equivalently  </p>\n<p>$$(x - y^3)\\,\\frac{dy}{dx} + y = 0\\,. $$  </p>\n\n<p><p>Highest derivative present: $\\dfrac{dy}{dx}$ \u21d2 order = 1.  </p></p>\n<p><p>After clearing any fractions, $\\dfrac{dy}{dx}$ appears to the first power \u21d2 degree = 1.  </p></p>\n\n<p>Answer: 1 and 1.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -6564,12 +6564,12 @@
     "question": "What is the differential equation of the family of parabolas having a vertex at origin and axis along positive y-axis?",
     "options": [
       "<span style=\"\">x</span><span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span><span style=\"\">&nbsp;+ 2y = 0</span>",
-      "<span style=\"\">x</span><span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span><span style=\"\">&nbsp;− 2y = 0</span>",
+      "<span style=\"\">x</span><span class=\"math-tex\">$\\frac{\\text{dy}}{\\text{dx}}$</span><span style=\"\">&nbsp;\u2212 2y = 0</span>",
       "<span style=\"\">y</span><span class=\"math-tex\">$\\frac{\\text{dx}}{\\text{dy}}$</span><span style=\"\">&nbsp;+ 2x = 0</span>",
-      "<span style=\"\">y</span><span class=\"math-tex\">$\\frac{\\text{dx}}{\\text{dy}}$</span><span style=\"\">&nbsp;− 2x = 0</span>"
+      "<span style=\"\">y</span><span class=\"math-tex\">$\\frac{\\text{dx}}{\\text{dy}}$</span><span style=\"\">&nbsp;\u2212 2x = 0</span>"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>The general form of the equation of a parabola with its vertex at the origin and the axis along the positive y-axis is given by:</p>\n\n<p>$$ y = kx^2 $$</p>\n\n<p>where $ k $ is a constant. To derive the differential equation, we need to eliminate the parameter $ k $. First, differentiate both sides of the equation with respect to $ x $:</p>\n\n<p>$$ \\frac{dy}{dx} = 2kx $$</p>\n\n<p>Next, solve for $ k $ from the original equation:</p>\n\n<p>$$ k = \\frac{y}{x^2} $$</p>\n\n<p>Substitute this value of $ k $ into the differentiated equation:</p>\n\n<p>$$ \\frac{dy}{dx} = 2 \\left(\\frac{y}{x^2}\\right) x $$</p>\n\n<p>$$ \\frac{dy}{dx} = \\frac{2y}{x} $$</p>\n\n<p>Rearrange this expression to obtain a standard differential equation form:</p>\n\n<p>$$ x \\frac{dy}{dx} - 2y = 0 $$</p>\n\n<p>Therefore, the differential equation of the family of parabolas having a vertex at the origin and axis along the positive y-axis is:</p>\n\n<p>Option B</p>\n\n<p><span style=\"\">x</span><span class=\"math-tex\">$$\\frac{\\text{dy}}{\\text{dx}}$$</span><span style=\"\">&nbsp;− 2y = 0</span></p>",
+    "solution": "<p>The general form of the equation of a parabola with its vertex at the origin and the axis along the positive y-axis is given by:</p>\n\n<p>$$ y = kx^2 $$</p>\n\n<p>where $ k $ is a constant. To derive the differential equation, we need to eliminate the parameter $ k $. First, differentiate both sides of the equation with respect to $ x $:</p>\n\n<p>$$ \\frac{dy}{dx} = 2kx $$</p>\n\n<p>Next, solve for $ k $ from the original equation:</p>\n\n<p>$$ k = \\frac{y}{x^2} $$</p>\n\n<p>Substitute this value of $ k $ into the differentiated equation:</p>\n\n<p>$$ \\frac{dy}{dx} = 2 \\left(\\frac{y}{x^2}\\right) x $$</p>\n\n<p>$$ \\frac{dy}{dx} = \\frac{2y}{x} $$</p>\n\n<p>Rearrange this expression to obtain a standard differential equation form:</p>\n\n<p>$$ x \\frac{dy}{dx} - 2y = 0 $$</p>\n\n<p>Therefore, the differential equation of the family of parabolas having a vertex at the origin and axis along the positive y-axis is:</p>\n\n<p>Option B</p>\n\n<p><span style=\"\">x</span><span class=\"math-tex\">$$\\frac{\\text{dy}}{\\text{dx}}$$</span><span style=\"\">&nbsp;\u2212 2y = 0</span></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -6582,12 +6582,12 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "What is the solution of the differential equation (dy − dx) + cos x(dy + dx) = 0 ?",
+    "question": "What is the solution of the differential equation (dy \u2212 dx) + cos x(dy + dx) = 0 ?",
     "options": [
-      "<span style=\"\">y = tan</span><span class=\"math-tex\">$\\left(\\frac{x}{2}\\right)$</span><span style=\"\">&nbsp;− x + c</span>",
-      "<span style=\"\">y =&nbsp;</span><span class=\"math-tex\">$\\frac{1}{2}\\tan\\left(\\frac{x}{2}\\right)$</span><span style=\"\">&nbsp;− x + c</span>",
-      "<span style=\"\">y = 2tan</span><span class=\"math-tex\">$\\left(\\frac{x}{2}\\right)$</span><span style=\"\">&nbsp;− x + c</span>",
-      "<span style=\"\">y = tan</span><span class=\"math-tex\">$\\left(\\frac{x}{2}\\right)$</span><span style=\"\">&nbsp;− 2x + c</span>"
+      "<span style=\"\">y = tan</span><span class=\"math-tex\">$\\left(\\frac{x}{2}\\right)$</span><span style=\"\">&nbsp;\u2212 x + c</span>",
+      "<span style=\"\">y =&nbsp;</span><span class=\"math-tex\">$\\frac{1}{2}\\tan\\left(\\frac{x}{2}\\right)$</span><span style=\"\">&nbsp;\u2212 x + c</span>",
+      "<span style=\"\">y = 2tan</span><span class=\"math-tex\">$\\left(\\frac{x}{2}\\right)$</span><span style=\"\">&nbsp;\u2212 x + c</span>",
+      "<span style=\"\">y = tan</span><span class=\"math-tex\">$\\left(\\frac{x}{2}\\right)$</span><span style=\"\">&nbsp;\u2212 2x + c</span>"
     ],
     "correctOptionIndex": 2,
     "solution": "<p>Let's solve the given differential equation step by step.</p>\n\n<p>The given differential equation is:</p>\n\n<p>\n\n<p>$$ (dy - dx) + \\cos(x)(dy + dx) = 0 $$</p>\n\n</p>\n\n<p>We can rewrite it as:</p>\n\n<p>\n\n<p>$$ dy - dx + \\cos(x) \\, dy + \\cos(x) \\, dx = 0 $$</p>\n\n</p>\n\n<p>Grouping the terms involving $dy$ and $dx$ together, we get:</p>\n\n<p>\n\n<p>$$ (1 + \\cos(x)) \\, dy + (-1 + \\cos(x)) \\, dx = 0 $$</p>\n\n</p>\n\n<p>We can separate the variables $dy$ and $dx$ by dividing both sides by $(1 + \\cos(x))$. Hence, the equation becomes:</p>\n\n<p>\n\n<p>$$ dy = \\frac{1 - \\cos(x)}{1 + \\cos(x)} \\, dx $$</p>\n\n</p>\n\n<p>Now, using the trigonometric identity for the sum and difference of cosines, we know that:</p>\n\n<p>\n\n<p>$$ \\frac{1 - \\cos(x)}{1 + \\cos(x)} = \\frac{(\\sin^2(\\frac{x}{2}) / \\cos^2(\\frac{x}{2})} = \\tan^2\\left(\\frac{x}{2}\\right) $$</p>\n\n</p>\n\n<p>Therefore, our differential equation is now transformed to:</p>\n\n<p>\n\n<p>$$ dy = \\tan^2\\left(\\frac{x}{2}\\right) \\, dx $$</p>\n\n</p>\n\n<p>Integrating both sides of the equation:</p>\n\n<p>\n\n<p>$$ \\int dy = \\int \\tan^2\\left(\\frac{x}{2}\\right) \\, dx $$</p>\n\n</p>\n\n<p>Recall that:</p>\n\n<p>\n\n<p>$$ \\tan^2\\left(\\frac{x}{2}\\right) = \\sec^2\\left(\\frac{x}{2}\\right) - 1 $$</p>\n\n</p>\n\n<p>Thus our integral becomes:</p>\n\n<p>\n\n<p>$$ \\int dy = \\int \\left( \\sec^2\\left(\\frac{x}{2}\\right) - 1 \\right) dx $$</p>\n\n</p>\n\n<p>Separating the integrals, we have:</p>\n\n<p>\n\n<p>$$ y = \\int \\sec^2\\left(\\frac{x}{2}\\right) dx - \\int dx $$</p>\n\n</p>\n\n<p>Allowing for a trigonometric substitution where $u = \\frac{x}{2}$ and $dx = 2 du$ for the $\\sec^2\\left(\\frac{x}{2}\\right)$ term, we get:</p>\n\n<p>\n\n<p>$$ y = 2 \\int \\sec^2(u) \\, du - \\int dx $$</p>\n\n</p>\n\n<p>The integral of $\\sec^2(u)$ is $\\tan(u)$, so:</p>\n\n<p>\n\n<p>$$ y = 2 \\tan(u) - x + C $$</p>\n\n</p>\n\n<p>Substituting back $u = \\frac{x}{2}$:</p>\n\n<p>\n\n<p>$$ y = 2 \\tan\\left(\\frac{x}{2}\\right) - x + C $$</p>\n\n</p>\n\n<p>Therefore, the solution to the differential equation is:</p>\n\n<p>Option C: <strong>$$ y = 2 \\tan\\left(\\frac{x}{2}\\right) - x + C $$</strong></p>",

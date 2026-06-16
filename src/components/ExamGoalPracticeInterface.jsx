@@ -465,7 +465,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                 </div>
               ) : !isNumerical ? (
                 <>
-                  {isMultiCorrect && <div className="col-span-1 md:col-span-2 mb-2 text-sm font-bold text-blue-600 px-3 py-2 bg-blue-50 rounded border border-blue-200 inline-block">Multi-Correct Question (Select all that apply)</div>}
+                  {/* Multi-correct text removed as requested */}
                   {optionsToRender.map((opt, idx) => {
                     const isSelected = isMultiCorrect ? (Array.isArray(selectedOption) && selectedOption.includes(idx)) : (selectedOption === idx || selectedOption === String(idx));
                     

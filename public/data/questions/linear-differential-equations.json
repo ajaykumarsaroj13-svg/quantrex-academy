@@ -19,7 +19,7 @@
     "difficulty": "medium",
     "solution": "<p>We start with the differential equation:</p>\n<p>$$ x \\, dy - y \\, dx = -x^3 \\, dx $$</p>\n<p>Divide both sides by $ x^2 $ to simplify:</p>\n<p>$$ \\frac{x \\, dy - y \\, dx}{x^2} = -x \\, dx $$</p>\n<p>The left side can be written as the derivative of a quotient:</p>\n<p>$$ d\\left( \\frac{y}{x} \\right) = -x \\, dx $$</p>\n<p>Now, integrate both sides:</p>\n<p>$$ \\frac{y}{x} = -\\frac{x^2}{2} + c $$</p>\n<p>Multiply by $ x $ to find $ y $:</p>\n<p>$$ y = -\\frac{x^3}{2} + c x $$</p>\n<p>We are given $ y(1) = 0 $. Substitute $ x = 1 $ and $ y = 0 $:</p>\n<p>$$ 0 = -\\frac{1}{2} + c \\Rightarrow c = \\frac{1}{2} $$</p>\n<p>Hence, the function becomes:</p>\n<p>$$ y = -\\frac{x^3}{2} + \\frac{x}{2} $$</p>\n<p>Differentiate $ y $ with respect to $ x $:</p>\n<p>$$ \\frac{dy}{dx} = -\\frac{3x^2}{2} + \\frac{1}{2} $$</p>\n<p>We can factorize this as:</p>\n<p>$$ \\frac{dy}{dx} = -\\frac{3}{2}\\left( x - \\frac{1}{\\sqrt{3}} \\right)\\left( x + \\frac{1}{\\sqrt{3}} \\right) $$</p>\n<p><img alt=\"JEE Advanced 2026 Paper 2 Online Mathematics - Differential Equations Question 1 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpck3saa/97d32557-d133-4862-a6f2-326c1bd4334c/d7b97d20-5376-11f1-aed4-773fcb3828ea/file-6y3zli1mpck3sab.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpck3saa/97d32557-d133-4862-a6f2-326c1bd4334c/d7b97d20-5376-11f1-aed4-773fcb3828ea/file-6y3zli1mpck3sab.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>At $ x = \\frac{1}{\\sqrt{3}} $, the derivative changes from positive to negative, so there is a local maximum.</p>\n<p>At $ x = -\\frac{1}{\\sqrt{3}} $, the derivative changes from negative to positive, so there is a local minimum.</p>\n<p>For $ g(x) = f(x) $:</p>\n<p>$$ 4x^3 - 5x^2 + \\frac{3}{2}x = -\\frac{x^3}{2} + \\frac{x}{2} $$</p>\n<p>Multiply through to remove fractions and simplify:</p>\n<p>$$ 9x^3 - 10x^2 + 2x = 0 $$</p>\n<p>Take $ x $ common:</p>\n<p>$$ x(9x^2 - 10x + 2) = 0 $$</p>\n<p>So, $ x = 0 $ or $ 9x^2 - 10x + 2 = 0 $.</p>\n<p>Using the quadratic formula:</p>\n<p>$$ x = \\frac{5 \\pm \\sqrt{7}}{9} $$</p>\n<p>Both these solutions are positive.</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -478,7 +478,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -486,7 +486,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(x)=x-1 \\\\\n& f(f(x))=f(x)-1=x-1-1=x-2 \\\\\n& g(f(f(x)))=e^{x-2} \\\\\n& \\therefore \\frac{d y}{d x}=e^{-2 \\sqrt{x}} \\times e^{x-2}-\\frac{1}{\\sqrt{x}} y \\\\\n& \\frac{d y}{d x}+\\frac{1}{\\sqrt{x}} y=e^{x-2 \\sqrt{x}-2} \\text { which is L.D.E } \\\\\n& \\text { I.F. }=e^{\\int \\frac{d y}{\\sqrt{x}}}=e^{2 \\sqrt{x}}\n\\end{aligned}$$</p>\n<p>Its solution is</p>\n<p>$$\\begin{aligned}\n& y \\times e^{2 \\sqrt{x}}=\\int e^{2 \\sqrt{x}} \\times e^{x-2 \\sqrt{x}-2} d x+c \\\\\n& y \\times e^{2 \\sqrt{x}}=\\int e^{x-2} d x+c \\\\\n& y \\times e^{2 \\sqrt{x}}=e^{x-2}+c\n\\end{aligned}$$</p>\n<p>Given $\\mathrm{x}=0, \\mathrm{y}=0 \\Rightarrow 0=\\mathrm{e}^{-2}+\\mathrm{c} \\quad ; \\mathrm{c}=-\\mathrm{e}^{-2}$</p>\n<p>$$\\therefore \\mathrm{y} \\times \\mathrm{e}^{2 \\sqrt{x}}=\\mathrm{e}^{\\mathrm{x}-2}-\\mathrm{e}^{-2}$$</p>\n<p>when $\\mathrm{x}=1, \\mathrm{y} \\times \\mathrm{e}^2=\\mathrm{e}^{-1}-\\mathrm{e}^{-2}$</p>\n<p>$$y=\\frac{e^{-1}-e^{-2}}{e^2}=\\frac{\\frac{1}{e}-\\frac{1}{e^2}}{e^2}=\\frac{e^2-e}{e^5}=\\frac{e-1}{e^4}$$</p>\n<p>Option (1) is correct</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "lwog0llk",
@@ -500,7 +500,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -508,8 +508,8 @@
     "difficulty": "hard",
     "solution": "<p>$$ \\begin{aligned} & \\lim _{1 \\rightarrow x} \\frac{t^{10} f(x)-x^{10} f(t)}{t^9-x^9}=1 \\\\\\\\ & \\Rightarrow \\lim _{1 \\rightarrow x} \\frac{10 t^9 f(x)-x^{10} f^{\\prime}(t)}{9 t^8}=1 \\\\\\\\ & \\Rightarrow 10 x f(x)-x^2 f^{\\prime}(x)=9 \\\\\\\\ & \\Rightarrow x^2 f^{\\prime}(x)=10 x f(x)-9 \\\\\\\\ & \\Rightarrow f^{\\prime}(x)=\\frac{10 f(x)}{x}-\\frac{9}{x^2} \\\\\\\\ & \\Rightarrow \\frac{d y}{d x}-\\frac{10}{x} y=-\\frac{9}{x^2} \\\\\\\\ & \\Rightarrow y \\cdot \\frac{1}{x^{10}}=\\int-\\frac{9}{x^2} \\cdot \\frac{1}{x^{10}} d x \\\\\\\\ & \\Rightarrow \\frac{y}{x^{10}}=\\frac{9}{11 x^{11}}+c \\\\\\\\ & \\because f(1)=2 \\Rightarrow \\frac{2}{1}=\\frac{9}{11}+c \\Rightarrow c=\\frac{13}{11} \\\\\\\\ & \\therefore f(x)=\\frac{9}{11 x}+\\frac{13}{11} x^{10} \\end{aligned} $$</p>\n\n<p>$\\Rightarrow$ Option (B) is correct.</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "lsamlzre",
@@ -1540,7 +1540,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -1549,7 +1549,7 @@
     "solution": "Given, $$\n\\frac{d y}{d x}+12 y=\\cos \\left(\\frac{\\pi}{12} x\\right)\n$$\n<br/><br/>This is a linear differential equation.\n<br/><br/>Where P = 12 and Q = $\\cos \\left(\\frac{\\pi}{12} x\\right)$\n<br/><br/>$$\n\\text { I.F. }=e^{\\int P d x}=e^{\\int 12 d x}=e^{12 x}\n$$\n<br/><br/>Solution of differencial equation is\n<br/><br/>$$y \\times I.F = \\int {Q \\times \\left( {I.F} \\right)} dx$$\n<br/><br/>$$y \\times \\text { I.F. }=\\int e^{12 x} \\cdot \\cos \\left(\\frac{\\pi}{12} x\\right) d x $$\n<br/><br/>$$\n\\Rightarrow y e^{12 x}=\\frac{e^{12 x}}{12^2+\\left(\\frac{\\pi}{12}\\right)^2}\\left(12 \\cos \\frac{\\pi}{12} x+\\frac{\\pi}{12} \\sin \\frac{\\pi}{12} x\\right)+C $$\n<br/><br/>[As $$\\int {{e^{ax}}.\\cos \\left( {bx} \\right)dx}  = {{{e^{ax}}} \\over {{a^2} + {b^2}}}\\left\\{ {a\\cos \\left( {bx} \\right) + b\\sin \\left( {bx} \\right)} \\right\\} + C$$]\n<br/><br/>$$\n \\Rightarrow y=\\frac{12}{(12)^4+\\pi^2}\\left\\{(12)^2 \\cos \\left(\\frac{\\pi x}{12}\\right)+\\pi \\sin \\left(\\frac{\\pi x}{12}\\right)\\right\\}\n+\\frac{C}{e^{12 x}}\n\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Given }, y(0)=0 \\\\\\\\\n& \\Rightarrow 0=\\frac{12 \\cdot\\left(12^2\\right)}{12^4+\\pi^2}+C \\\\\\\\\n& \\Rightarrow C=\\frac{-12^3}{12^4+\\pi^2} \\\\\\\\\n& \\therefore y=\\frac{12}{12^4+\\pi^2}\\left[12^2 \\cos \\left(\\frac{\\pi x}{12}\\right)+\\pi \\sin \\left(\\frac{\\pi x}{12}\\right)-12^2 \\cdot e^{-12 x}\\right]\n\\end{aligned}\n$$\n<br/><br/>$y(x)$ is not a periodic function as $e^{-12 x}$ is a non-periodic function.\n<br/><br/>$$ \\therefore $$ Option (D) is a wrong statement.\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Now } \\frac{d y}{d x}=\\frac{12}{12^4+\\pi^2}[{-12 \\pi \\sin \\left(\\frac{\\pi x}{12}\\right)+\\frac{\\pi^2}{12} \\cos \\left(\\frac{\\pi x}{12}\\right)}+12^3 \\mathrm{e}^{-12 x}]\n\\end{aligned}\n$$\n<br/><br/>Values of ${-12 \\pi \\sin \\left(\\frac{\\pi x}{12}\\right)+\\frac{\\pi^2}{12} \\cos \\left(\\frac{\\pi x}{12}\\right)}$ varies between  $\\left(-\\sqrt{144 \\pi^2+\\frac{\\pi^4}{144}},-12 \\pi \\sqrt{1+\\frac{\\pi^2}{12^4}}\\right)$\n<br/><br/>So, $\\mathrm{f}(\\mathrm{x})$ is neither increasing nor decreasing.\n<br/><br/>$$ \\therefore $$ Option (A) and (B) are wrong statements.\n<br/><br/>For some $\\beta \\in R, y=\\beta$ intersects $y=f(x)$ at infinitely many points.\n<br/><br/>So option $\\mathrm{C}$ is correct.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "kpDSmbBYYMbv7EOUwD1kmivvbvq",
@@ -1908,7 +1908,7 @@
     "difficulty": "medium",
     "solution": "$${{2 + \\sin x} \\over {y + 1}}.{{dy} \\over {dx}} =  - \\cos x$$\n<br><br>$$ \\Rightarrow $$ $$\\int {{{dy} \\over {y + 1}}}  = \\int {{{\\left( { - \\cos x} \\right)dx} \\over {2 + \\sin x}}} $$\n<br><br>$$ \\Rightarrow $$ $$\\ln \\left| {y + 1} \\right| =  - \\ln \\left| {2 + \\sin x} \\right| + \\ln c$$\n<br><br>$$ \\Rightarrow $$ $$\\ln \\left| {\\left( {y + 1} \\right)\\left( {2 + \\sin x} \\right)} \\right| = \\ln c$$\n<br><br>As y(0) = 1\n<br><br>$$ \\therefore $$ $$\\ln \\left| {\\left( {1 + 1} \\right)\\left( {2 + 0} \\right)} \\right| = \\ln c$$\n<br><br>$$ \\Rightarrow $$ $$ \\therefore $$ c = 4\n<br><br>$$ \\therefore $$ $${\\left( {y + 1} \\right)\\left( {2 + \\sin x} \\right)}$$ = 4\n<br><br>$$ \\Rightarrow $$ y = $${{{2 - \\sin x} \\over {2 + \\sin x}}}$$\n<br><br>Given y($$\\pi $$) = a\n<br><br>$$ \\therefore $$ y($$\\pi $$) = $${{{2 - \\sin \\pi } \\over {2 + \\sin \\pi }}}$$ = 1 = a\n<br><br>$${{dy} \\over {dx}} = {{\\left( {2 + \\sin x} \\right)\\left( { - \\cos x} \\right) - \\left( {2 - \\sin x} \\right).\\left( {\\cos x} \\right)} \\over {{{\\left( {2 + \\sin x} \\right)}^2}}}$$\n<br><br>$$ \\Rightarrow $$ $${\\left. {{{dy} \\over {dx}}} \\right|_{x = \\pi }} = $$ 1 = b\n<br><br>So, (a, b) = (1, 1) ",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "lY7025GtrZtfgaBgayjgy2xukfqbmwrl",
@@ -1950,7 +1950,7 @@
     "subject": "Mathematics",
     "topic": "linear-differential-equations",
     "difficulty": "medium",
-    "solution": "$${{dy} \\over {dx}} + y(\\tan x) = 2x + {x^2}\\tan x$$<br><br>\nI.F. = $${e^{\\int {\\tan x\\,dx} }}$$ = $${e^{\\ln \\sec x}}$$ = sec x<br><br>\ny. sec x = $$\\int {(2x + {x^2}\\tan x)\\sec \\,x\\,dx} $$<br><br>\n$$ \\Rightarrow y\\sec x = {x^2}\\sec x + \\lambda $$<br><br>\n$$ \\Rightarrow $$ y(0) = 0 + $$\\lambda $$ = 1 $$ \\Rightarrow $$ $$\\lambda $$ = 1<br><br>\n$$ \\Rightarrow $$ y = x<sup>2</sup> + cos x<br><br>\n$$ \\Rightarrow $$ y' = 2x – sinx<br><br>\n$$ \\Rightarrow y'\\left( {{\\pi  \\over 4}} \\right) = {\\pi  \\over 2} - {1 \\over {\\sqrt 2 }}$$<br><br>\n$$ \\Rightarrow y'\\left( { - {\\pi  \\over 4}} \\right) =  - {\\pi  \\over 2} + {1 \\over {\\sqrt 2 }}$$<br><br>\n$$ \\therefore $$  $$y'\\left( {{\\pi  \\over 4}} \\right) - y'\\left( { - {\\pi  \\over 4}} \\right) = \\pi  - \\sqrt 2 $$",
+    "solution": "$${{dy} \\over {dx}} + y(\\tan x) = 2x + {x^2}\\tan x$$<br><br>\nI.F. = $${e^{\\int {\\tan x\\,dx} }}$$ = $${e^{\\ln \\sec x}}$$ = sec x<br><br>\ny. sec x = $$\\int {(2x + {x^2}\\tan x)\\sec \\,x\\,dx} $$<br><br>\n$$ \\Rightarrow y\\sec x = {x^2}\\sec x + \\lambda $$<br><br>\n$$ \\Rightarrow $$ y(0) = 0 + $$\\lambda $$ = 1 $$ \\Rightarrow $$ $$\\lambda $$ = 1<br><br>\n$$ \\Rightarrow $$ y = x<sup>2</sup> + cos x<br><br>\n$$ \\Rightarrow $$ y' = 2x \u2013 sinx<br><br>\n$$ \\Rightarrow y'\\left( {{\\pi  \\over 4}} \\right) = {\\pi  \\over 2} - {1 \\over {\\sqrt 2 }}$$<br><br>\n$$ \\Rightarrow y'\\left( { - {\\pi  \\over 4}} \\right) =  - {\\pi  \\over 2} + {1 \\over {\\sqrt 2 }}$$<br><br>\n$$ \\therefore $$  $$y'\\left( {{\\pi  \\over 4}} \\right) - y'\\left( { - {\\pi  \\over 4}} \\right) = \\pi  - \\sqrt 2 $$",
     "section": "A",
     "type": "SCQ"
   },
@@ -1972,7 +1972,7 @@
     "subject": "Mathematics",
     "topic": "linear-differential-equations",
     "difficulty": "medium",
-    "solution": "$${{dy} \\over {dx}} + y{\\sec ^2}x = se{c^2}x\\,tanx$$<br> $$ \\to $$ This is linear\ndifferential equation<br><br>\n$$IF = {e^{\\int {{{\\sec }^2}xdx} }} = {e^{\\tan x}}$$<br><br>\nNow solution is<br><br>\n$$y.{e^{\\tan x}} = \\int {{e^{\\tan x}}} {\\sec ^2}x\\tan xdx$$<br><br>\n$$ \\therefore $$ Let tanx = t<br><br>\nsec<sup>2</sup>xdx = dt<br><br>\n$$y.{e^{\\tan x}} = \\int {\\mathop {{e^t}}\\limits_{||} } \\mathop t\\limits_| dt$$<br><br>\nye<sup>tanx</sup> = te<sup>t</sup> – e<sup>t</sup> + c<br><br>\nye<sup>tanx</sup> = (tanx – 1)e<sup>tanx</sup> + c<br><br>\ny = (tanx – 1) + c · e<sup>–tanx</sup><br><br>\nGiven y(0) = 0\n<br><br>\n$$ \\Rightarrow $$ 0 = –1 + c $$ \\Rightarrow $$ c = 1<br><br>\n$$y\\left( { - {\\pi  \\over 4}} \\right) =  - 1 - 1 + e =  - 2 + e$$",
+    "solution": "$${{dy} \\over {dx}} + y{\\sec ^2}x = se{c^2}x\\,tanx$$<br> $$ \\to $$ This is linear\ndifferential equation<br><br>\n$$IF = {e^{\\int {{{\\sec }^2}xdx} }} = {e^{\\tan x}}$$<br><br>\nNow solution is<br><br>\n$$y.{e^{\\tan x}} = \\int {{e^{\\tan x}}} {\\sec ^2}x\\tan xdx$$<br><br>\n$$ \\therefore $$ Let tanx = t<br><br>\nsec<sup>2</sup>xdx = dt<br><br>\n$$y.{e^{\\tan x}} = \\int {\\mathop {{e^t}}\\limits_{||} } \\mathop t\\limits_| dt$$<br><br>\nye<sup>tanx</sup> = te<sup>t</sup> \u2013 e<sup>t</sup> + c<br><br>\nye<sup>tanx</sup> = (tanx \u2013 1)e<sup>tanx</sup> + c<br><br>\ny = (tanx \u2013 1) + c \u00b7 e<sup>\u2013tanx</sup><br><br>\nGiven y(0) = 0\n<br><br>\n$$ \\Rightarrow $$ 0 = \u20131 + c $$ \\Rightarrow $$ c = 1<br><br>\n$$y\\left( { - {\\pi  \\over 4}} \\right) =  - 1 - 1 + e =  - 2 + e$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -2001,7 +2001,7 @@
   {
     "id": "SLAMDiu8qktuVsRJRGr1U",
     "questionNumber": 69,
-    "questionText": "The solution of the differential equation, \n<br><br>$${{dy} \\over {dx}}$$ = (x – y)<sup>2</sup>, when y(1) = 1, is :",
+    "questionText": "The solution of the differential equation, \n<br><br>$${{dy} \\over {dx}}$$ = (x \u2013 y)<sup>2</sup>, when y(1) = 1, is :",
     "options": [
       "$$-$$ log<sub>e</sub> $$\\left| {{{1 + x - y} \\over {1 - x + y}}} \\right|$$ = x + y $$-$$ 2",
       "log<sub>e</sub>  $$\\left| {{{2 - x} \\over {2 - y}}} \\right|$$ = x $$-$$ y",
@@ -2045,9 +2045,9 @@
   {
     "id": "whv5C9v72fNRcGazLVCKP",
     "questionNumber": 70,
-    "questionText": "If a curve passes through the point (1, –2) and has slope of the tangent at any point (x, y) on it as $${{{x^2} - 2y} \\over x}$$, then the curve also passes through the point :",
+    "questionText": "If a curve passes through the point (1, \u20132) and has slope of the tangent at any point (x, y) on it as $${{{x^2} - 2y} \\over x}$$, then the curve also passes through the point :",
     "options": [
-      "(–1, 2)",
+      "(\u20131, 2)",
       "$$\\left( { - \\sqrt 2 ,1} \\right)$$",
       "$$\\left( { \\sqrt 3 ,0} \\right)$$",
       "(3, 0)"
@@ -2437,7 +2437,7 @@
     "solution": "<p>(A) We have $$f'(x) &gt; 0,\\forall x \\in (0,\\pi /2)$$. Therefore,</p>\n<p>$$f(0) &lt; 0$$ and $$f(\\pi /2) &gt; 0$$</p>\n<p>Hence, there is no one solution.</p>\n<p>(B) Let us consider that $$(a,b,c)$$ is direction ratio of the intersected line. Therefore,</p>\n<p>$$ak + 4b + c = 0$$</p>\n<p>$$4a + kb + 2c = 0$$</p>\n<p>$${a \\over {8 - k}} = {b \\over {4 - 2k}} = {c \\over {{k^2} - 16}}$$</p>\n<p>We need to have</p>\n<p>$$2(8 - k) + 2(4 - 2k) + ({k^2} - 16) = 0$$</p>\n<p>$$ \\Rightarrow k = 2,4$$.</p>\n<p>(C) Let us consider</p>\n<p>$$f(x) = |x + 2| + |x + 1| + |x - 1| + |x - 2|$$</p>\n<p>Therefore, $$k$$ can take values: 2, 3, 4, 5.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lft5kfnd/e8c40f99-4b6a-483a-9b84-ee33bf011ac9/5d644290-cde5-11ed-9ce1-7bd2ccf24231/file-1lft5kfne.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lft5kfnd/e8c40f99-4b6a-483a-9b84-ee33bf011ac9/5d644290-cde5-11ed-9ce1-7bd2ccf24231/file-1lft5kfne.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2009 Paper 2 Offline Mathematics - Differential Equations Question 17 English Explanation\"></p>\n<p>(D) $$\\int {{{dy} \\over {y + 1}} = \\int {dx} } $$</p>\n<p>$$ \\Rightarrow f(x) = 2{e^x} - 1$$</p>\n<p>$$ \\Rightarrow f(\\ln 2) = 3$$</p>",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "66nkD6pi4hLZiTbu",

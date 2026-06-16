@@ -184,9 +184,9 @@
     "subject": "Physics",
     "topic": "escape-speed-and-motion-of-satellites",
     "difficulty": "hard",
-    "solution": "<p>To find the effect of an additional central force on the time period of a particle in a circular orbit, consider the following:</p>\n\n<p><p><strong>Initial Gravitational Force ($F_1$):</strong></p>\n<p>The force due to gravity for a particle in a circular orbit of radius $r_0$ is given by:</p>\n<p>$    F_1 = \\frac{GMm}{r_0^2}    $</p>\n<p>where $ G $ is the gravitational constant, $ M $ is the mass of the central body, and $ m $ is the mass of the particle.</p></p>\n<p><p><strong>Modified Force with Additional Potential ($F_2$):</strong></p>\n<p>When an additional force derived from the potential energy $ V_{\\mathrm{c}}(r) = \\frac{m\\alpha}{r^3} $ acts on the particle, the effective central force becomes:</p>\n<p>$    F_2 = \\frac{GMm}{r_0^2} - \\frac{3m\\alpha}{r_0^4}    $</p></p>\n<p><p><strong>Relation of Angular Velocities:</strong></p>\n<p>The ratio of squares of the angular velocities ($\\omega_0$ and $\\omega_1$) before and after the additional force is:</p>\n<p>$    \\frac{\\omega_1^2}{\\omega_0^2} = \\frac{F_2}{F_1} = \\frac{\\frac{GM}{r_0^2} - \\frac{3\\alpha}{r_0^4}}{\\frac{GM}{r_0^2}}    $</p></p>\n<p><p><strong>Relating Time Periods:</strong></p>\n<p>Since the angular velocity is inversely proportional to the time period, $\\frac{\\omega_1^2}{\\omega_0^2} = \\frac{T_0^2}{T_1^2}$. Thus, we have:</p>\n<p>$    \\frac{T_0^2}{T_1^2} = 1 - \\frac{3\\alpha}{GMr_0^2}    $</p></p>\n<p><p><strong>Find the Change in Time Period:</strong></p>\n<p>The expression for the change in the square of the time periods is:</p>\n<p>$    \\frac{T_1^2 - T_0^2}{T_1^2} = \\frac{3\\alpha}{GMr_0^2}    $</p></p>\n\n<p>This shows how the additional central force, represented by the potential $ V_{\\mathrm{c}}(r) = \\frac{m\\alpha}{r^3} $, affects the particle’s orbital period when combined with the gravitational field of the mass $ M $.</p>",
+    "solution": "<p>To find the effect of an additional central force on the time period of a particle in a circular orbit, consider the following:</p>\n\n<p><p><strong>Initial Gravitational Force ($F_1$):</strong></p>\n<p>The force due to gravity for a particle in a circular orbit of radius $r_0$ is given by:</p>\n<p>$    F_1 = \\frac{GMm}{r_0^2}    $</p>\n<p>where $ G $ is the gravitational constant, $ M $ is the mass of the central body, and $ m $ is the mass of the particle.</p></p>\n<p><p><strong>Modified Force with Additional Potential ($F_2$):</strong></p>\n<p>When an additional force derived from the potential energy $ V_{\\mathrm{c}}(r) = \\frac{m\\alpha}{r^3} $ acts on the particle, the effective central force becomes:</p>\n<p>$    F_2 = \\frac{GMm}{r_0^2} - \\frac{3m\\alpha}{r_0^4}    $</p></p>\n<p><p><strong>Relation of Angular Velocities:</strong></p>\n<p>The ratio of squares of the angular velocities ($\\omega_0$ and $\\omega_1$) before and after the additional force is:</p>\n<p>$    \\frac{\\omega_1^2}{\\omega_0^2} = \\frac{F_2}{F_1} = \\frac{\\frac{GM}{r_0^2} - \\frac{3\\alpha}{r_0^4}}{\\frac{GM}{r_0^2}}    $</p></p>\n<p><p><strong>Relating Time Periods:</strong></p>\n<p>Since the angular velocity is inversely proportional to the time period, $\\frac{\\omega_1^2}{\\omega_0^2} = \\frac{T_0^2}{T_1^2}$. Thus, we have:</p>\n<p>$    \\frac{T_0^2}{T_1^2} = 1 - \\frac{3\\alpha}{GMr_0^2}    $</p></p>\n<p><p><strong>Find the Change in Time Period:</strong></p>\n<p>The expression for the change in the square of the time periods is:</p>\n<p>$    \\frac{T_1^2 - T_0^2}{T_1^2} = \\frac{3\\alpha}{GMr_0^2}    $</p></p>\n\n<p>This shows how the additional central force, represented by the potential $ V_{\\mathrm{c}}(r) = \\frac{m\\alpha}{r^3} $, affects the particle\u2019s orbital period when combined with the gravitational field of the mass $ M $.</p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -201,15 +201,15 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "escape-speed-and-motion-of-satellites",
     "difficulty": "easy",
-    "solution": "<p>The angular speed $$ \\omega $$ of an object in circular motion is given by the equation</p>\n<p>$ \\omega = \\frac{2\\pi}{T} $</p>\n<p>where $$ T $$ is the period of the motion - the time it takes to make one complete revolution.</p>\n<p>Assertion (A) states that the angular speed of the Moon in its orbit around the Earth is more than the angular speed of the Earth in its orbit around the Sun. We can compare these angular speeds by comparing their periods.</p>\n<p>The Moon takes approximately 27.3 days to orbit the Earth (this is its sidereal period, not its synodic period, which accounts for the Earth&#39;s motion around the Sun as well). The Earth takes approximately 365.25 days to orbit the Sun. Since the period of the Moon’s orbit is much less than the period of the Earth’s orbit, the angular speed of the Moon is much larger than that of the Earth. This makes Assertion (A) correct.</p>\n<p>Reason (R) states that the Moon takes less time to move around the Earth than the time taken by the Earth to move around the Sun. This is also correct, as the previously mentioned periods demonstrate: 27.3 days for the Moon to orbit Earth vs. 365.25 days for Earth to orbit the Sun.</p>\n<p>Furthermore, the reason (R) directly explains why assertion (A) is true. Since angular speed is inversely proportional to the period of orbit, the fact that the Moon takes less time to complete an orbit implies it has a higher angular speed relative to the Earth’s angular speed in its orbit around the Sun.</p>\n<p>Therefore, the correct answer is:</p>\n<p>Option C\nBoth (A) and (R) are correct and (R) is the correct explanation of (A)</p>\n",
+    "solution": "<p>The angular speed $$ \\omega $$ of an object in circular motion is given by the equation</p>\n<p>$ \\omega = \\frac{2\\pi}{T} $</p>\n<p>where $$ T $$ is the period of the motion - the time it takes to make one complete revolution.</p>\n<p>Assertion (A) states that the angular speed of the Moon in its orbit around the Earth is more than the angular speed of the Earth in its orbit around the Sun. We can compare these angular speeds by comparing their periods.</p>\n<p>The Moon takes approximately 27.3 days to orbit the Earth (this is its sidereal period, not its synodic period, which accounts for the Earth&#39;s motion around the Sun as well). The Earth takes approximately 365.25 days to orbit the Sun. Since the period of the Moon\u2019s orbit is much less than the period of the Earth\u2019s orbit, the angular speed of the Moon is much larger than that of the Earth. This makes Assertion (A) correct.</p>\n<p>Reason (R) states that the Moon takes less time to move around the Earth than the time taken by the Earth to move around the Sun. This is also correct, as the previously mentioned periods demonstrate: 27.3 days for the Moon to orbit Earth vs. 365.25 days for Earth to orbit the Sun.</p>\n<p>Furthermore, the reason (R) directly explains why assertion (A) is true. Since angular speed is inversely proportional to the period of orbit, the fact that the Moon takes less time to complete an orbit implies it has a higher angular speed relative to the Earth\u2019s angular speed in its orbit around the Sun.</p>\n<p>Therefore, the correct answer is:</p>\n<p>Option C\nBoth (A) and (R) are correct and (R) is the correct explanation of (A)</p>\n",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1lsg6odx4",
@@ -405,7 +405,7 @@
     "subject": "Physics",
     "topic": "escape-speed-and-motion-of-satellites",
     "difficulty": "medium",
-    "solution": "<p>To find the additional velocity required to overcome the gravitational pull and launch the spaceship into orbit, we first need to find the orbital velocity. The formula for orbital velocity (v) is given by:</p>\n<p>$$v = \\sqrt{\\frac{GM}{r}}$$</p>\n<p>where G is the gravitational constant, M is the mass of Earth, and r is the distance from the center of the Earth to the spaceship (which is the sum of the Earth&#39;s radius and the altitude of the spaceship&#39;s orbit).</p>\n<p>In this problem, the spaceship is orbiting close to Earth&#39;s surface, so we can approximate r as the Earth&#39;s radius. Given that g = 10 m/s² and Earth&#39;s radius R = 6400 km, we can relate the gravitational constant G and the mass of Earth M through the formula:</p>\n<p>$$g = \\frac{GM}{R^2}$$</p>\n<p>Now, we can find the orbital velocity:</p>\n<p>$$v = \\sqrt{\\frac{gR^2}{R}} = \\sqrt{gR}$$</p>\n<p>Converting the Earth&#39;s radius to meters:</p>\n<p>$$R = 6400 \\times 10^3 \\mathrm{~m}$$</p>\n<p>Plugging in the values:</p>\n<p>$$v = \\sqrt{10 \\times 6400 \\times 10^3} = 8 \\times 10^3 \\mathrm{~m/s}$$</p>\n<p>Now, we need to find the additional velocity required to overcome the gravitational pull. To do this, we can use the formula for escape velocity:</p>\n<p>$$v\\text{escape} = \\sqrt{2} \\times v\\text{orbital}$$</p>\n<p>Finding the additional velocity required:</p>\n<p>$$\\Delta v = v\\text{escape} - v\\text{orbital} = (\\sqrt{2} - 1) \\times v_\\text{orbital}$$</p>\n<p>Plugging in the values:</p>\n<p>$$\\Delta v = (\\sqrt{2} - 1) \\times 8 \\times 10^3 \\mathrm{~m/s}$$</p>\n<p>Converting the velocity to km/s:</p>\n<p>$$\\Delta v = (\\sqrt{2} - 1) \\times 8 \\mathrm{~km/s}$$</p>\n<p>Thus, the additional velocity required to overcome the gravitational pull and launch the spaceship into orbit is:</p>\n<p>$$8(\\sqrt{2}-1) \\mathrm{~km/s}$$</p>\n",
+    "solution": "<p>To find the additional velocity required to overcome the gravitational pull and launch the spaceship into orbit, we first need to find the orbital velocity. The formula for orbital velocity (v) is given by:</p>\n<p>$$v = \\sqrt{\\frac{GM}{r}}$$</p>\n<p>where G is the gravitational constant, M is the mass of Earth, and r is the distance from the center of the Earth to the spaceship (which is the sum of the Earth&#39;s radius and the altitude of the spaceship&#39;s orbit).</p>\n<p>In this problem, the spaceship is orbiting close to Earth&#39;s surface, so we can approximate r as the Earth&#39;s radius. Given that g = 10 m/s\u00b2 and Earth&#39;s radius R = 6400 km, we can relate the gravitational constant G and the mass of Earth M through the formula:</p>\n<p>$$g = \\frac{GM}{R^2}$$</p>\n<p>Now, we can find the orbital velocity:</p>\n<p>$$v = \\sqrt{\\frac{gR^2}{R}} = \\sqrt{gR}$$</p>\n<p>Converting the Earth&#39;s radius to meters:</p>\n<p>$$R = 6400 \\times 10^3 \\mathrm{~m}$$</p>\n<p>Plugging in the values:</p>\n<p>$$v = \\sqrt{10 \\times 6400 \\times 10^3} = 8 \\times 10^3 \\mathrm{~m/s}$$</p>\n<p>Now, we need to find the additional velocity required to overcome the gravitational pull. To do this, we can use the formula for escape velocity:</p>\n<p>$$v\\text{escape} = \\sqrt{2} \\times v\\text{orbital}$$</p>\n<p>Finding the additional velocity required:</p>\n<p>$$\\Delta v = v\\text{escape} - v\\text{orbital} = (\\sqrt{2} - 1) \\times v_\\text{orbital}$$</p>\n<p>Plugging in the values:</p>\n<p>$$\\Delta v = (\\sqrt{2} - 1) \\times 8 \\times 10^3 \\mathrm{~m/s}$$</p>\n<p>Converting the velocity to km/s:</p>\n<p>$$\\Delta v = (\\sqrt{2} - 1) \\times 8 \\mathrm{~km/s}$$</p>\n<p>Thus, the additional velocity required to overcome the gravitational pull and launch the spaceship into orbit is:</p>\n<p>$$8(\\sqrt{2}-1) \\mathrm{~km/s}$$</p>\n",
     "section": "A",
     "type": "SCQ"
   },
@@ -943,7 +943,7 @@
   {
     "id": "1o6C7Qu4KDyhQmZQQ6jgy2xukev1eaty",
     "questionNumber": 9,
-    "questionText": "The mass density of a spherical galaxy varies\nas\n$${K \\over r}$$ over a large distance ‘r’ from its centre.\nIn that region, a small star is in a circular orbit\nof radius R. Then the period of revolution, T\ndepends on R as :",
+    "questionText": "The mass density of a spherical galaxy varies\nas\n$${K \\over r}$$ over a large distance \u2018r\u2019 from its centre.\nIn that region, a small star is in a circular orbit\nof radius R. Then the period of revolution, T\ndepends on R as :",
     "options": [
       "T<sup>2</sup> $$ \\propto $$ R",
       "T<sup>2</sup> $$ \\propto $$ R<sup>3</sup>",
@@ -965,7 +965,7 @@
   {
     "id": "jMy0gsVS8L9Ul6e15Zjgy2xukf16efbg",
     "questionNumber": 11,
-    "questionText": "A satellite is moving in a low nearly circular orbit around the earth. Its radius is roughly equal to\nthat of the earth’s radius R<sub>e</sub>\n. By firing rockets attached to it, its speed is instantaneously increased\nin the direction of its motion so that it become $$\\sqrt {{3 \\over 2}} $$\n times larger. Due to this the farthest distance\nfrom the centre of the earth that the satellite reaches is R. Value of R is :",
+    "questionText": "A satellite is moving in a low nearly circular orbit around the earth. Its radius is roughly equal to\nthat of the earth\u2019s radius R<sub>e</sub>\n. By firing rockets attached to it, its speed is instantaneously increased\nin the direction of its motion so that it become $$\\sqrt {{3 \\over 2}} $$\n times larger. Due to this the farthest distance\nfrom the centre of the earth that the satellite reaches is R. Value of R is :",
     "options": [
       "2R<sub>e</sub>",
       "3R<sub>e</sub>",
@@ -1070,7 +1070,7 @@
   {
     "id": "JElfsLqhtqVj9cMxPNpU8",
     "questionNumber": 14,
-    "questionText": "Two stars of masses 3 $$ \\times $$ 10<sup>31</sup> kg each, and at distance 2 $$ \\times $$ 10<sup>11</sup> m rotate in a plane about their common centre of mass O. A meteorite passes through O moving perpendicular to the star’s rotation plane. In order to escape from the gravitational field of this double star, the minimum speed that meteorite should have at O is - (Take Gravitational constant; G = 6.67 $$ \\times $$ 10<sup>–11</sup> Nm<sup>2</sup> kg<sup>–2</sup>) ",
+    "questionText": "Two stars of masses 3 $$ \\times $$ 10<sup>31</sup> kg each, and at distance 2 $$ \\times $$ 10<sup>11</sup> m rotate in a plane about their common centre of mass O. A meteorite passes through O moving perpendicular to the star\u2019s rotation plane. In order to escape from the gravitational field of this double star, the minimum speed that meteorite should have at O is - (Take Gravitational constant; G = 6.67 $$ \\times $$ 10<sup>\u201311</sup> Nm<sup>2</sup> kg<sup>\u20132</sup>) ",
     "options": [
       "2.4 $$ \\times $$ 10<sup>4</sup> m/s",
       "1.4 $$ \\times $$ 10<sup>5</sup> m/s",
@@ -1092,7 +1092,7 @@
   {
     "id": "G15zlAfrVxIHPFMW1E6DQ",
     "questionNumber": 16,
-    "questionText": "A satellite is moving with a constant speed v in circular orbit around the earth. An object of mass ‘m’ is ejected from the satellite such that it just escapes from the gravitational pull of the earth. At the time of ejection, the kinetic energy of the object is -\n",
+    "questionText": "A satellite is moving with a constant speed v in circular orbit around the earth. An object of mass \u2018m\u2019 is ejected from the satellite such that it just escapes from the gravitational pull of the earth. At the time of ejection, the kinetic energy of the object is -\n",
     "options": [
       "mv<sup>2</sup>",
       "$${1 \\over 2}$$ mv<sup>2</sup>",
@@ -1195,7 +1195,7 @@
     "subject": "Physics",
     "topic": "escape-speed-and-motion-of-satellites",
     "difficulty": "medium",
-    "solution": "Minimum energy required (E) = – (Potential energy of\nobject at surface of earth)<br><br>\n$$ = \\left( { - {{GMm} \\over R}} \\right) = {{GMm} \\over R}$$<br><br>\nNow M<sub>earth</sub> = 64 M<sub>moon</sub><br><br>\n$$\\rho .{4 \\over 3}\\pi R_e^3 = 64.{4 \\over 3}\\pi R_m^3$$<br><br>\n$$ \\Rightarrow $$ R<sub>e</sub> = 4R<sub>m</sub><br><br>\nNow $${{{E_{moon}}} \\over {{E_{earth}}}} = {{{M_{moon}}} \\over {{M_{earth}}}}.{{{R_{earth}}} \\over {{R_{moon}}}} = {1 \\over {64}} \\times {4 \\over 1}$$<br><br>\n$$ \\Rightarrow {E_{moon}} = {E \\over {16}}$$",
+    "solution": "Minimum energy required (E) = \u2013 (Potential energy of\nobject at surface of earth)<br><br>\n$$ = \\left( { - {{GMm} \\over R}} \\right) = {{GMm} \\over R}$$<br><br>\nNow M<sub>earth</sub> = 64 M<sub>moon</sub><br><br>\n$$\\rho .{4 \\over 3}\\pi R_e^3 = 64.{4 \\over 3}\\pi R_m^3$$<br><br>\n$$ \\Rightarrow $$ R<sub>e</sub> = 4R<sub>m</sub><br><br>\nNow $${{{E_{moon}}} \\over {{E_{earth}}}} = {{{M_{moon}}} \\over {{M_{earth}}}}.{{{R_{earth}}} \\over {{R_{moon}}}} = {1 \\over {64}} \\times {4 \\over 1}$$<br><br>\n$$ \\Rightarrow {E_{moon}} = {E \\over {16}}$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -1291,7 +1291,7 @@
   {
     "id": "VAIjkGy6YXE8pqdW",
     "questionNumber": 5,
-    "questionText": "A bullet is fired vertically upwards with velocity v from the surface of a spherical planet. When it reaches\nits maximum height, its acceleration due to the planet’s gravity is $${\\left( {{1 \\over 4}} \\right)^{th}}$$ of its value at the surface of the\nplanet. If the escape velocity from the planet is $${v_{esc}} = v\\sqrt N $$, then the value of N is (ignore energy loss due\nto atmosphere)",
+    "questionText": "A bullet is fired vertically upwards with velocity v from the surface of a spherical planet. When it reaches\nits maximum height, its acceleration due to the planet\u2019s gravity is $${\\left( {{1 \\over 4}} \\right)^{th}}$$ of its value at the surface of the\nplanet. If the escape velocity from the planet is $${v_{esc}} = v\\sqrt N $$, then the value of N is (ignore energy loss due\nto atmosphere)",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -1318,7 +1318,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -1327,7 +1327,7 @@
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lztdmjh5/3a9b9f87-265e-426c-aa37-390385d0a9c2/3493e090-59f9-11ef-8064-0fdc89002c8d/file-jaoe38c1lztdmjh6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lztdmjh5/3a9b9f87-265e-426c-aa37-390385d0a9c2/3493e090-59f9-11ef-8064-0fdc89002c8d/file-jaoe38c1lztdmjh6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 2 Offline Physics - Gravitation Question 20 English Explanation\"></p>\n<p>Here we will use the law of conservation of energy as there are no non-conservative force involved so the total energy of mass m remains constant.</p>\n<p>For minimum initial velocity to escape the gravitational field, the velocity at infinity will be zero.</p>\n<p>And we know PE at infinity is zero.</p>\n<p>By energy conservation,</p>\n<p>$$P{E_i} + K{E_i} = P{E_f} + K{E_f}$$</p><p>\n</p><p>$$ \\Rightarrow {{ - GMm} \\over L} - {{GMm} \\over L} + {1 \\over 2}m{v^2} = 0 + {1 \\over 2}m{(0)^2}$$</p>\n<p>$$ \\Rightarrow  - {{2Gm} \\over L}M + {1 \\over 2}m{v^2} = 0$$</p>\n<p>$$ \\Rightarrow {1 \\over 2}{V^2} = {{2Gm} \\over L}$$</p>\n<p>$$ \\Rightarrow V = 2\\sqrt {{{GM} \\over L}} $$</p>\n<p>Hence, options (B) and (D) are correct.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "6Ot3CDBrI7pZoxru",
@@ -1399,7 +1399,7 @@
   {
     "id": "GVU9PUlm3KG2igl7",
     "questionNumber": 4,
-    "questionText": "A satellite is moving with a constant speed ‘V’ in a circular orbit about the earth. An object of mass ‘m’ is\nejected from the satellite such that it just escapes from the gravitational pull of the earth. At the time of its\nejection, the kinetic energy of the object is",
+    "questionText": "A satellite is moving with a constant speed \u2018V\u2019 in a circular orbit about the earth. An object of mass \u2018m\u2019 is\nejected from the satellite such that it just escapes from the gravitational pull of the earth. At the time of its\nejection, the kinetic energy of the object is",
     "options": [
       "$${1 \\over 2}m{V^2}$$",
       "$$m{V^2}$$",

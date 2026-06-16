@@ -149,7 +149,7 @@
     "subject": "Mathematics",
     "topic": "logical-connectives",
     "difficulty": "medium",
-    "solution": "<p>The given statement is:</p>\n<p>$p \\wedge (q \\wedge \\sim(p \\wedge q))$</p>\n<p>We want to find the negation of this statement. To do that, we negate the whole expression:</p>\n<p>$\\sim (p \\wedge (q \\wedge \\sim(p \\wedge q)))$</p>\n<p>Now, we will use De Morgan&#39;s laws to simplify the expression. De Morgan&#39;s laws state:</p>\n<ol>\n<li>$\\sim (A \\wedge B) \\equiv \\sim A \\vee \\sim B$</li>\n<li>$\\sim (A \\vee B) \\equiv \\sim A \\wedge \\sim B$</li>\n</ol>\n<p>Applying the first De Morgan&#39;s law to the outer conjunction of the negated expression:</p>\n<p>$\\sim p \\vee \\sim (q \\wedge \\sim (p \\wedge q))$</p>\n<p>Now we need to address the inner conjunction $(q \\wedge \\sim (p \\wedge q))$. To simplify this part of the expression, we again apply the first De Morgan's law:\n</p>\n<p>$\\sim p \\vee (\\sim q \\vee (p \\wedge q))$\n</p>\n<p>Distribute the disjunction over the inner conjunction:</p>\n<p>$$\n\\sim \\mathrm{p} \\vee((\\sim \\mathrm{q} \\vee \\mathrm{p}) \\wedge(\\sim \\mathrm{q} \\vee \\mathrm{q}))\n$$</p>\n\n<p>Apply the law of excluded middle (A ∨ ¬A = T) on the last term:</p>\n<p>$$\n\\sim \\mathrm{p} \\vee(\\sim \\mathrm{q} \\vee \\mathrm{p})\n$$</p>\n <p>Apply De Morgan's law on the inner disjunction:\n</p>\n<p>$$\n\\sim(\\mathrm{p} \\wedge \\mathrm{q}) \\vee \\mathrm{p}\n$$\n</p>\n<p>Now, comparing this with the provided options, it matches with Option B :</p>\n\n<p>$(\\sim(p \\wedge q)) \\vee p$</p>\n\n<p>So, the negation of the given statement is :</p>\n\n<p>$(\\sim(p \\wedge q)) \\vee p$</p>",
+    "solution": "<p>The given statement is:</p>\n<p>$p \\wedge (q \\wedge \\sim(p \\wedge q))$</p>\n<p>We want to find the negation of this statement. To do that, we negate the whole expression:</p>\n<p>$\\sim (p \\wedge (q \\wedge \\sim(p \\wedge q)))$</p>\n<p>Now, we will use De Morgan&#39;s laws to simplify the expression. De Morgan&#39;s laws state:</p>\n<ol>\n<li>$\\sim (A \\wedge B) \\equiv \\sim A \\vee \\sim B$</li>\n<li>$\\sim (A \\vee B) \\equiv \\sim A \\wedge \\sim B$</li>\n</ol>\n<p>Applying the first De Morgan&#39;s law to the outer conjunction of the negated expression:</p>\n<p>$\\sim p \\vee \\sim (q \\wedge \\sim (p \\wedge q))$</p>\n<p>Now we need to address the inner conjunction $(q \\wedge \\sim (p \\wedge q))$. To simplify this part of the expression, we again apply the first De Morgan's law:\n</p>\n<p>$\\sim p \\vee (\\sim q \\vee (p \\wedge q))$\n</p>\n<p>Distribute the disjunction over the inner conjunction:</p>\n<p>$$\n\\sim \\mathrm{p} \\vee((\\sim \\mathrm{q} \\vee \\mathrm{p}) \\wedge(\\sim \\mathrm{q} \\vee \\mathrm{q}))\n$$</p>\n\n<p>Apply the law of excluded middle (A \u2228 \u00acA = T) on the last term:</p>\n<p>$$\n\\sim \\mathrm{p} \\vee(\\sim \\mathrm{q} \\vee \\mathrm{p})\n$$</p>\n <p>Apply De Morgan's law on the inner disjunction:\n</p>\n<p>$$\n\\sim(\\mathrm{p} \\wedge \\mathrm{q}) \\vee \\mathrm{p}\n$$\n</p>\n<p>Now, comparing this with the provided options, it matches with Option B :</p>\n\n<p>$(\\sim(p \\wedge q)) \\vee p$</p>\n\n<p>So, the negation of the given statement is :</p>\n\n<p>$(\\sim(p \\wedge q)) \\vee p$</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -1339,12 +1339,12 @@
   {
     "id": "1ktio2w8d",
     "questionNumber": 71,
-    "questionText": "Let *, ▢ $$\\in$${$$\\wedge$$, $$\\vee$$} be such that the Boolean expression (p * $$\\sim$$ q) $$\\Rightarrow$$ (p ▢ q) is a tautology. Then :",
+    "questionText": "Let *, \u25a2 $$\\in$${$$\\wedge$$, $$\\vee$$} be such that the Boolean expression (p * $$\\sim$$ q) $$\\Rightarrow$$ (p \u25a2 q) is a tautology. Then :",
     "options": [
-      "* = $$\\vee$$, ▢ = $$\\vee$$",
-      "* = $$\\wedge$$, ▢ = $$\\wedge$$",
-      "* = $$\\wedge$$, ▢ = $$\\vee$$",
-      "* = $$\\vee$$, ▢ = $$\\wedge$$"
+      "* = $$\\vee$$, \u25a2 = $$\\vee$$",
+      "* = $$\\wedge$$, \u25a2 = $$\\wedge$$",
+      "* = $$\\wedge$$, \u25a2 = $$\\vee$$",
+      "* = $$\\vee$$, \u25a2 = $$\\wedge$$"
     ],
     "correctOption": 2,
     "correctAnswer": null,
@@ -1392,7 +1392,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -1400,7 +1400,7 @@
     "difficulty": "medium",
     "solution": "Given, (p $$ \\wedge $$ q) $$ \\to $$ ($$ \\sim $$q $$ \\vee $$ r) is false.<br><br>This statement is false when<br><br>p $$ \\wedge $$ q = T<br><br>and ($$ \\sim $$q $$ \\vee $$ r) = F<br><br>Now, p $$ \\wedge $$ q = T when<br><br>both p and q are True.<br><br>As q = T<br><br>$$ \\therefore $$ $$ \\sim $$q = F<br><br>Now, ($$ \\sim $$q $$ \\vee $$ r) = F when<br><br>r = F as $$ \\sim $$q is already false.<br><br>$$ \\therefore $$ p = T<br><br>q = T<br><br>r = F",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "FXaLJaXBdLHMOgP6Umjgy2xukf0yjac8",
@@ -1517,10 +1517,10 @@
     "questionNumber": 62,
     "questionText": "Let A, B, C and D be four non-empty sets. The contrapositive statement of \"If A $$ \\subseteq $$ B and B $$ \\subseteq $$ D,\nthen A $$ \\subseteq $$ C\" is :",
     "options": [
-      "If A ⊈ C, then A ⊈ B or B ⊈ D",
-      "If A ⊈ C, then A ⊈ B and B $$ \\subseteq $$ D",
+      "If A \u2288 C, then A \u2288 B or B \u2288 D",
+      "If A \u2288 C, then A \u2288 B and B $$ \\subseteq $$ D",
       "If A $$ \\subseteq $$ C, then B $$ \\subset $$ A or D $$ \\subset $$ B",
-      "If A ⊈ C, then A $$ \\subseteq $$ B and B $$ \\subseteq $$ D"
+      "If A \u2288 C, then A $$ \\subseteq $$ B and B $$ \\subseteq $$ D"
     ],
     "correctOption": 0,
     "correctAnswer": null,
@@ -1530,7 +1530,7 @@
     "subject": "Mathematics",
     "topic": "logical-connectives",
     "difficulty": "easy",
-    "solution": "Contrapositive of p $$ \\to $$ q is ~q $$ \\to $$ ~p\n<br><br>If A $$ \\subseteq $$ B and B $$ \\subseteq $$ D,\nthen A $$ \\subseteq $$ C means\n<br><br>(A $$ \\subseteq $$ B) $$ \\wedge $$ (B $$ \\subseteq $$ D) $$ \\to $$ (A $$ \\subseteq $$ C)\n<br><br>Contrapositive is\n<br><br>$$ \\sim $$(A $$ \\subseteq $$ C) $$ \\to $$ $$ \\sim $$(A $$ \\subseteq $$ B) $$ \\vee $$ $$ \\sim $$(B $$ \\subseteq $$ D)\n<br><br>$$ \\Rightarrow $$ A ⊈ C $$ \\to $$ (A ⊈ B) $$ \\vee $$ (B ⊈ D)",
+    "solution": "Contrapositive of p $$ \\to $$ q is ~q $$ \\to $$ ~p\n<br><br>If A $$ \\subseteq $$ B and B $$ \\subseteq $$ D,\nthen A $$ \\subseteq $$ C means\n<br><br>(A $$ \\subseteq $$ B) $$ \\wedge $$ (B $$ \\subseteq $$ D) $$ \\to $$ (A $$ \\subseteq $$ C)\n<br><br>Contrapositive is\n<br><br>$$ \\sim $$(A $$ \\subseteq $$ C) $$ \\to $$ $$ \\sim $$(A $$ \\subseteq $$ B) $$ \\vee $$ $$ \\sim $$(B $$ \\subseteq $$ D)\n<br><br>$$ \\Rightarrow $$ A \u2288 C $$ \\to $$ (A \u2288 B) $$ \\vee $$ (B \u2288 D)",
     "section": "A",
     "type": "SCQ"
   },
@@ -1596,7 +1596,7 @@
     "subject": "Mathematics",
     "topic": "logical-connectives",
     "difficulty": "easy",
-    "solution": "<b>Option A :</b>\n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-wa1i\">P</th>\n    <th class=\"tg-amwm\">Q</th>\n    <th class=\"tg-amwm\">P $$ \\vee $$ Q</th>\n    <th class=\"tg-amwm\">P $$ \\wedge $$ (P $$ \\vee $$ Q)</th>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody></table>\n<br><br><b>Option B :</b>\n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-wa1i\">P</th>\n    <th class=\"tg-amwm\">Q</th>\n    <th class=\"tg-amwm\">P $$ \\wedge $$ Q</th>\n    <th class=\"tg-amwm\">P $$ \\vee $$ (P $$ \\wedge $$ Q)</th>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody></table>\n<br><br><b>Option C :</b>\n<br><br>Q $$ \\to $$ (P $$ \\wedge $$ (P $$ \\to $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge $$ (P $$ \\to $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge $$ (~P $$ \\vee $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge $$ ~P) $$ \\vee $$ (P $$ \\wedge $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (ƒ $$ \\vee $$ (P $$ \\wedge $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge$$ Q)\n<br><br>$$ \\equiv $$ (~Q $$ \\vee $$ P) $$ \\wedge $$ (~Q $$ \\vee $$ Q)\n<br><br>$$ \\equiv $$ (~ Q $$ \\vee $$ P) $$ \\wedge $$ t\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ P\n<br><br><b>Option D :</b>\n<br><br>(P $$ \\wedge $$ (P $$ \\to $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$  (P $$ \\wedge $$ (~P $$ \\vee $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$ ((P $$ \\wedge $$ ~P) $$ \\vee $$ (P $$ \\wedge $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$ (ƒ $$ \\vee $$ (P $$ \\wedge $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$ P $$ \\wedge $$ Q $$ \\to $$ Q\n<br><br>$$ \\equiv $$ ~ (P $$ \\wedge $$ Q) $$ \\vee $$ Q\n<br><br>$$ \\equiv $$ (~ P) $$ \\vee $$ (~Q) $$ \\vee $$ Q\n<br><br>$$ \\equiv $$ (~ P) $$ \\vee $$ t\n<br><br>$$ \\equiv $$ t\n",
+    "solution": "<b>Option A :</b>\n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-wa1i\">P</th>\n    <th class=\"tg-amwm\">Q</th>\n    <th class=\"tg-amwm\">P $$ \\vee $$ Q</th>\n    <th class=\"tg-amwm\">P $$ \\wedge $$ (P $$ \\vee $$ Q)</th>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody></table>\n<br><br><b>Option B :</b>\n<br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}\n.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-wa1i\">P</th>\n    <th class=\"tg-amwm\">Q</th>\n    <th class=\"tg-amwm\">P $$ \\wedge $$ Q</th>\n    <th class=\"tg-amwm\">P $$ \\vee $$ (P $$ \\wedge $$ Q)</th>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n</tbody></table>\n<br><br><b>Option C :</b>\n<br><br>Q $$ \\to $$ (P $$ \\wedge $$ (P $$ \\to $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge $$ (P $$ \\to $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge $$ (~P $$ \\vee $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge $$ ~P) $$ \\vee $$ (P $$ \\wedge $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (\u0192 $$ \\vee $$ (P $$ \\wedge $$ Q))\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ (P $$ \\wedge$$ Q)\n<br><br>$$ \\equiv $$ (~Q $$ \\vee $$ P) $$ \\wedge $$ (~Q $$ \\vee $$ Q)\n<br><br>$$ \\equiv $$ (~ Q $$ \\vee $$ P) $$ \\wedge $$ t\n<br><br>$$ \\equiv $$ ~ Q $$ \\vee $$ P\n<br><br><b>Option D :</b>\n<br><br>(P $$ \\wedge $$ (P $$ \\to $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$  (P $$ \\wedge $$ (~P $$ \\vee $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$ ((P $$ \\wedge $$ ~P) $$ \\vee $$ (P $$ \\wedge $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$ (\u0192 $$ \\vee $$ (P $$ \\wedge $$ Q)) $$ \\to $$ Q\n<br><br>$$ \\equiv $$ P $$ \\wedge $$ Q $$ \\to $$ Q\n<br><br>$$ \\equiv $$ ~ (P $$ \\wedge $$ Q) $$ \\vee $$ Q\n<br><br>$$ \\equiv $$ (~ P) $$ \\vee $$ (~Q) $$ \\vee $$ Q\n<br><br>$$ \\equiv $$ (~ P) $$ \\vee $$ t\n<br><br>$$ \\equiv $$ t\n",
     "section": "A",
     "type": "SCQ"
   },
@@ -1942,7 +1942,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -1950,7 +1950,7 @@
     "difficulty": "easy",
     "solution": "<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-hgcj\">p</th>\n    <th class=\"tg-amwm\">q</th>\n    <th class=\"tg-amwm\">~p</th>\n    <th class=\"tg-amwm\">~q</th>\n    <th class=\"tg-amwm\">~p $$ \\vee $$ ~q</th>\n    <th class=\"tg-amwm\">p $$ \\to $$ (~p $$\\vee$$ ~q)</th>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody></table><br>\nFrom the truth table,<br><br>\np $$ \\to $$ (~p $$\\vee$$ ~q) is false only when p and q both are true.",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "IeXfuwNghZ9rPd4A",
@@ -2065,7 +2065,7 @@
   {
     "id": "w1f5gbWwTUKeqvXF",
     "questionNumber": 77,
-    "questionText": "Consider :\n<br><b>Statement − I :</b> $$\\left( {p \\wedge  \\sim q} \\right) \\wedge \\left( { \\sim p \\wedge q} \\right)$$ is a fallacy.\n<br><b>Statement − II :</b>$$\\left( {p \\to q} \\right) \\leftrightarrow \\left( { \\sim q \\to  \\sim p} \\right)$$ is a tautology.",
+    "questionText": "Consider :\n<br><b>Statement \u2212 I :</b> $$\\left( {p \\wedge  \\sim q} \\right) \\wedge \\left( { \\sim p \\wedge q} \\right)$$ is a fallacy.\n<br><b>Statement \u2212 II :</b>$$\\left( {p \\to q} \\right) \\leftrightarrow \\left( { \\sim q \\to  \\sim p} \\right)$$ is a tautology.",
     "options": [
       "Statement - I is True; Statement -II is true; Statement-II is not a correct explanation for Statement-I",
       "Statement -I is True; Statement -II is False.",

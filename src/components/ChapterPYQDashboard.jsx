@@ -257,6 +257,22 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
     </div>
   );
 
+  const availableTypes = useMemo(() => {
+    const types = new Set();
+    allQuestions.forEach(q => {
+      const t = q.type || q.questionType || 'SCQ';
+      if (t === 'SCQ' || t === 'MCQ') types.add('Single Correct');
+      if (t === 'MCQM' || t === 'MULTI_CORRECT') types.add('Multi Correct');
+      if (t === 'NUMERICAL') types.add('Numerical');
+      if (t === 'FIB') types.add('Fill in the Blanks');
+      if (t === 'SUBJECTIVE') types.add('Subjective');
+      if (t === 'MATCH') types.add('Match the Following');
+      if (t === 'COMPREHENSION') types.add('Comprehension');
+      if (t === 'TRUE_FALSE') types.add('True or False');
+    });
+    return Array.from(types);
+  }, [allQuestions]);
+
   return (
     <div className="w-full flex flex-col space-y-6 bg-[#111115] min-h-screen p-4 md:p-6 rounded-2xl text-sans">
 
@@ -343,14 +359,9 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
           className="bg-[#1e1e24] border border-[#2d2d35] text-white px-4 py-2 rounded-lg outline-none focus:border-blue-500"
         >
           <option value="All">All Types</option>
-          <option value="Single Correct">Single Correct</option>
-          <option value="Multi Correct">Multi Correct</option>
-          <option value="Numerical">Numerical</option>
-          <option value="Fill in the Blanks">Fill in the Blanks</option>
-          <option value="Subjective">Subjective</option>
-          <option value="Match the Following">Match the Following</option>
-          <option value="Comprehension">Comprehension</option>
-          <option value="True or False">True or False</option>
+          {availableTypes.map(t => (
+            <option key={t} value={t}>{t}</option>
+          ))}
         </select>
         <select 
           value={yearFilter} onChange={e => setYearFilter(e.target.value)}

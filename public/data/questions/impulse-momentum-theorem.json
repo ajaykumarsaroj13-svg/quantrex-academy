@@ -2,7 +2,7 @@
   {
     "id": "mnsik6uw",
     "questionNumber": 23,
-    "questionText": "<p>Two masses of 3.4 kg and 2.5 kg are accelerated from an initial speed of $5 \\mathrm{~m} / \\mathrm{s}$ and $12 \\mathrm{~m} / \\mathrm{s}$, respectively. The distances traversed by the masses in the $5^{\\text {th }}$ second are 104 m and 129 m , respectively. The ratio of their momenta after 10 s is $\\frac{x}{8}$. The value of $x$ is $\\_\\_\\_\\_$。</p>",
+    "questionText": "<p>Two masses of 3.4 kg and 2.5 kg are accelerated from an initial speed of $5 \\mathrm{~m} / \\mathrm{s}$ and $12 \\mathrm{~m} / \\mathrm{s}$, respectively. The distances traversed by the masses in the $5^{\\text {th }}$ second are 104 m and 129 m , respectively. The ratio of their momenta after 10 s is $\\frac{x}{8}$. The value of $x$ is $\\_\\_\\_\\_$\u3002</p>",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -28,7 +28,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -36,8 +36,8 @@
     "difficulty": "medium",
     "solution": "<p>Let's solve the problem step by step. We are given a block of mass $5 \\mathrm{~kg}$ subjected to a force $F = (-20x + 10) \\mathrm{N}$. To find the position and momentum of the block at $t = \\frac{\\pi}{4}$ seconds, we'll use the equations of motion and integrate the force to find the acceleration, velocity, and position.</p>\n\n<p>First, we start with Newton's second law:</p>\n\n<p>\n$$F = m \\cdot a$$\n</p>\n\n<p>Given:</p>\n\n<p>\n$$m = 5 \\mathrm{~kg}$$\n$$F = -20x + 10$$\n</p>\n\n<p>So, the acceleration $a$ can be expressed as:</p>\n\n<p>\n$$a = \\frac{F}{m} = \\frac{-20x + 10}{5} = -4x + 2$$\n</p>\n\n<p>Acceleration is the second derivative of position with respect to time:</p>\n\n<p>\n$$a = \\frac{d^2 x}{dt^2} = -4x + 2$$\n</p>\n\n<p>To solve this differential equation, let's solve it step by step. Assume a solution of the form $x(t) = A \\cos(\\omega t) + B \\sin(\\omega t) + C$. Consider using the method of undetermined coefficients:</p>\n\n<p>We first need to find the homogeneous solution (no forcing term):</p>\n\n<p>\n$$\\frac{d^2 x_h}{dt^2} + 4x_h = 0$$\n</p>\n\n<p>This is a second-order homogeneous differential equation with constant coefficients. Its characteristic equation is:</p>\n\n<p>\n$$r^2 + 4 = 0$$\n</p>\n\n<p>Solving for $r$:</p>\n\n<p>\n$$r = \\pm 2i$$\n</p>\n\n<p>Thus, the general solution to the homogeneous equation is:</p>\n\n<p>\n$$x_h(t) = A \\cos(2t) + B \\sin(2t)$$\n</p>\n\n<p>Next, we need a particular solution to the non-homogeneous equation:</p>\n\n<p>\n$$x_p = C$$\n</p>\n\n<p>Substituting $x_p$ into the differential equation:</p>\n\n<p>\n$$a = -4C + 2 = 0 \\implies C = \\frac{1}{2}$$\n</p>\n\n<p>Therefore, the general solution of the differential equation is:</p>\n\n<p>\n$$x(t) = A \\cos(2t) + B \\sin(2t) + \\frac{1}{2}$$\n</p>\n\n<p>Using the initial conditions to determine $A$ and $B$:</p>\n\n<p>At $t = 0$, $x(0) = 1$:</p>\n\n<p>\n$$1 = A \\cdot \\cos(0) + B \\cdot \\sin(0) + \\frac{1}{2} \\implies 1 = A + \\frac{1}{2} \\implies A = \\frac{1}{2}$$\n</p>\n\n<p>Since the block is initially at rest, $\\frac{dx}{dt}|_{t=0} = 0$:</p>\n\n<p>\n$$\\frac{dx}{dt} = -2A \\sin(2t) + 2B \\cos(2t)$$\n</p>\n\n<p>At $t = 0$:</p>\n\n<p>\n$$0 = -2A \\cdot \\sin(0) + 2B \\cdot \\cos(0) = 2B \\implies B = 0$$\n</p>\n\n<p>Therefore, the position equation simplifies to:</p>\n\n<p>\n$$x(t) = \\frac{1}{2} \\cos(2t) + \\frac{1}{2}$$\n</p>\n\n<p>Now, we find the position at $t = \\frac{\\pi}{4}$ seconds:</p>\n\n<p>\n$$x\\left(\\frac{\\pi}{4}\\right) = \\frac{1}{2} \\cos\\left(2 \\cdot \\frac{\\pi}{4}\\right) + \\frac{1}{2} = \\frac{1}{2} \\cos\\left(\\frac{\\pi}{2}\\right) + \\frac{1}{2} = \\frac{1}{2} \\cdot 0 + \\frac{1}{2} = \\frac{1}{2} \\mathrm{~m}$$\n</p>\n\n<p>To find the momentum, we first find the velocity by differentiating the position function:</p>\n\n<p>\n$$v(t) = \\frac{dx}{dt} = -\\sin(2t)$$\n</p>\n\n<p>Thus, the velocity at $t = \\frac{\\pi}{4}$ is:</p>\n\n<p>\n$$v\\left(\\frac{\\pi}{4}\\right) = -\\sin\\left(2 \\cdot \\frac{\\pi}{4}\\right) = -\\sin\\left(\\frac{\\pi}{2}\\right) = -1$$\n</p>\n\n<p>Finally, the momentum $p$ is given by:</p>\n\n<p>\n$$p = m \\cdot v = 5 \\mathrm{~kg} \\cdot -1 \\mathrm{~m/s} = -5 \\mathrm{~kg \\cdot m/s}$$\n</p>\n\n<p>Therefore, the position and momentum of the block at $t = \\frac{\\pi}{4} \\mathrm{s}$ are:</p>\n\n<p>Position: $0.5 \\mathrm{~m}$</p>\n<p>Momentum: $-5 \\mathrm{~kg \\cdot m/s}$</p>\n\n<p>The correct option is:</p>\n<p>Option C: $0.5 \\mathrm{~m}, -5 \\mathrm{~kg} \\cdot \\mathrm{m} / \\mathrm{s}$</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsc3a3qt",
@@ -145,7 +145,7 @@
     "subject": "Physics",
     "topic": "impulse-momentum-theorem",
     "difficulty": "easy",
-    "solution": "<p>To find the number of bullets fired per second, we can use the concept of momentum. When the machine gun fires bullets, it experiences a backward force due to the conservation of momentum. The force applied on the machine gun is used to balance this backward force.</p>\n<p>First, let&#39;s find the momentum of each bullet:</p>\n<p>Momentum = Mass × Velocity</p>\n<p>Bullet mass = $$10 \\mathrm{~g} = 0.01 \\mathrm{~kg}$$\nBullet velocity = $$250 \\mathrm{~m/s}$$</p>\n<p>Momentum per bullet = $$0.01 \\mathrm{~kg} \\cdot 250 \\mathrm{~m/s} = 2.5 \\mathrm{~kg \\cdot m/s}$$</p>\n<p>Now let&#39;s find the momentum per second that needs to be balanced by the applied force:</p>\n<p>Force = $$125 \\mathrm{~N}$$</p>\n<p>Momentum per second = Force × Time</p>\n<p>Since we are considering a time interval of 1 second, the momentum per second is equal to the applied force:</p>\n<p>Momentum per second = $$125 \\mathrm{~N}$$</p>\n<p>Now, let&#39;s find the number of bullets fired per second:</p>\n<p>Number of bullets = Momentum per second / Momentum per bullet</p>\n<p>Number of bullets = $$\\frac{125 \\mathrm{~N}}{2.5 \\mathrm{~kg \\cdot m/s}}$$</p>\n<p>Number of bullets = 50</p>\n<p>Therefore, the machine gun fires 50 bullets per second.</p>\n",
+    "solution": "<p>To find the number of bullets fired per second, we can use the concept of momentum. When the machine gun fires bullets, it experiences a backward force due to the conservation of momentum. The force applied on the machine gun is used to balance this backward force.</p>\n<p>First, let&#39;s find the momentum of each bullet:</p>\n<p>Momentum = Mass \u00d7 Velocity</p>\n<p>Bullet mass = $$10 \\mathrm{~g} = 0.01 \\mathrm{~kg}$$\nBullet velocity = $$250 \\mathrm{~m/s}$$</p>\n<p>Momentum per bullet = $$0.01 \\mathrm{~kg} \\cdot 250 \\mathrm{~m/s} = 2.5 \\mathrm{~kg \\cdot m/s}$$</p>\n<p>Now let&#39;s find the momentum per second that needs to be balanced by the applied force:</p>\n<p>Force = $$125 \\mathrm{~N}$$</p>\n<p>Momentum per second = Force \u00d7 Time</p>\n<p>Since we are considering a time interval of 1 second, the momentum per second is equal to the applied force:</p>\n<p>Momentum per second = $$125 \\mathrm{~N}$$</p>\n<p>Now, let&#39;s find the number of bullets fired per second:</p>\n<p>Number of bullets = Momentum per second / Momentum per bullet</p>\n<p>Number of bullets = $$\\frac{125 \\mathrm{~N}}{2.5 \\mathrm{~kg \\cdot m/s}}$$</p>\n<p>Number of bullets = 50</p>\n<p>Therefore, the machine gun fires 50 bullets per second.</p>\n",
     "section": "A",
     "type": "SCQ"
   },
@@ -687,12 +687,12 @@
   {
     "id": "kIjnqKIosJlYQlKYU63rsa0w2w9jx3pnzgb",
     "questionNumber": 3,
-    "questionText": "A man (mass = 50 kg) and his son (mass = 20 kg) are standing on a frictionless surface facing each other. The\nman pushes his son so that he starts moving at a speed of 0.70 ms<sup>–1</sup> with respect to the man. The speed of the\nman with respect to the surface is :",
+    "questionText": "A man (mass = 50 kg) and his son (mass = 20 kg) are standing on a frictionless surface facing each other. The\nman pushes his son so that he starts moving at a speed of 0.70 ms<sup>\u20131</sup> with respect to the man. The speed of the\nman with respect to the surface is :",
     "options": [
-      "0.28 ms<sup>–1</sup>",
-      "0.47 ms<sup>–1</sup>",
-      "0.20 ms<sup>–1</sup>",
-      "0.14 ms<sup>–1</sup>"
+      "0.28 ms<sup>\u20131</sup>",
+      "0.47 ms<sup>\u20131</sup>",
+      "0.20 ms<sup>\u20131</sup>",
+      "0.14 ms<sup>\u20131</sup>"
     ],
     "correctOption": 2,
     "correctAnswer": null,
@@ -746,7 +746,7 @@
     "subject": "Physics",
     "topic": "impulse-momentum-theorem",
     "difficulty": "medium",
-    "solution": "Momentum p = mv &nbsp;&nbsp;&nbsp;…(1)<br><br>\nand for motion under gravity $$h = {{{u^2} - {v^2}} \\over {2g}}$$  ...(2)<br><br>\n$$h = {{{u^2} - {p^2}/m} \\over {2g}}$$",
+    "solution": "Momentum p = mv &nbsp;&nbsp;&nbsp;\u2026(1)<br><br>\nand for motion under gravity $$h = {{{u^2} - {v^2}} \\over {2g}}$$  ...(2)<br><br>\n$$h = {{{u^2} - {p^2}/m} \\over {2g}}$$",
     "section": "A",
     "type": "SCQ"
   },

@@ -76,7 +76,7 @@
     "difficulty": "medium",
     "solution": "<p>We need to count the number of ordered triples $(a,b,c)$ of non-negative integers satisfying</p>\n<p>$$ a+b+2c=22 $$</p>\n<p>Since $a,b,c \\ge 0$, let us fix $c$ first.</p>\n<p>For a fixed value of $c$, the equation becomes</p>\n<p>$$ a+b=22-2c $$</p>\n<p>Now, the number of non-negative integer solutions of</p>\n<p>$$ a+b=n $$</p>\n<p>is</p>\n<p>$$ n+1 $$</p>\n<p>So, for fixed $c$, number of solutions is</p>\n<p>$$ (22-2c)+1=23-2c $$</p>\n<p>Now find all possible values of $c$.</p>\n<p>Since $2c \\le 22$,</p>\n<p>$$ c=0,1,2,\\dots,11 $$</p>\n<p>Hence total number of solutions is</p>\n<p>$$ \\sum_{c=0}^{11} (23-2c) $$</p>\n<p>This is an arithmetic series:</p>\n<ul>\n<li><p>first term $=23$</p></li>\n<li><p>last term $=23-2(11)=1$</p></li>\n<li><p>number of terms $=12$</p></li>\n</ul>\n<p>So,</p>\n<p>$$ n(A)=\\frac{12}{2}(23+1) $$</p>\n<p>$$ n(A)=6 \\cdot 24=144 $$</p>\n<p>Therefore,</p>\n<p>$$ n(A)=144 $$</p>\n<p>So the correct option is:</p>\n<p>$$ \\boxed{144} $$</p>\n<p>Hence, $\\boxed{\\text{Option C}}$.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnswhr28",
@@ -240,9 +240,9 @@
     "subject": "Mathematics",
     "topic": "conditional-combinations",
     "difficulty": "medium",
-    "solution": "<p>First, note that we are choosing <strong>5 distinct letters</strong> (in strictly increasing alphabetical order) such that the <strong>middle (third) letter is ‘M’</strong>. Symbolically, if we denote the chosen letters as:</p>\n<p>$ L_1 < L_2 < L_3 < L_4 < L_5, $</p>\n<p>we want $L_3 = \\text{M}$. The English alphabet has 26 letters, and M is the $13^\\text{th}$.</p>\n<hr />\n<h3>Step 1: Letters before M</h3>\n\n<p><p>The letters before M are $\\{A, B, C, \\ldots, L\\}$.  </p></p>\n<p><p>There are <strong>12</strong> letters here ($A$ through $L$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 12 letters to occupy $L_1$ and $L_2$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 12 is ${ }^{12} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 2: Letters after M</h3>\n\n<p><p>The letters after M are $\\{N, O, P, \\ldots, Z\\}$.  </p></p>\n<p><p>There are <strong>13</strong> letters here ($N$ through $Z$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 13 letters to occupy $L_4$ and $L_5$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 13 is ${ }^{13} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 3: Multiply the choices</h3>\n<p>Since these choices are independent (picking the two letters before M and two letters after M), the total number of ways is:</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\;\\times\\;{ }^{13} \\mathrm{C}_2 $</p>\n<p>Calculate each combination:</p>\n<p>$ { }^{12} \\mathrm{C}_2 = \\frac{12 \\times 11}{2} = 66,  \\quad { }^{13} \\mathrm{C}_2 = \\frac{13 \\times 12}{2} = 78. $</p>\n<p>So,</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\times { }^{13} \\mathrm{C}_2 = 66 \\times 78 = 5148. $</p>\n<hr />\n<h2><strong>Answer: 5148</strong> (Option B)</h2>",
+    "solution": "<p>First, note that we are choosing <strong>5 distinct letters</strong> (in strictly increasing alphabetical order) such that the <strong>middle (third) letter is \u2018M\u2019</strong>. Symbolically, if we denote the chosen letters as:</p>\n<p>$ L_1 < L_2 < L_3 < L_4 < L_5, $</p>\n<p>we want $L_3 = \\text{M}$. The English alphabet has 26 letters, and M is the $13^\\text{th}$.</p>\n<hr />\n<h3>Step 1: Letters before M</h3>\n\n<p><p>The letters before M are $\\{A, B, C, \\ldots, L\\}$.  </p></p>\n<p><p>There are <strong>12</strong> letters here ($A$ through $L$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 12 letters to occupy $L_1$ and $L_2$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 12 is ${ }^{12} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 2: Letters after M</h3>\n\n<p><p>The letters after M are $\\{N, O, P, \\ldots, Z\\}$.  </p></p>\n<p><p>There are <strong>13</strong> letters here ($N$ through $Z$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 13 letters to occupy $L_4$ and $L_5$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 13 is ${ }^{13} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 3: Multiply the choices</h3>\n<p>Since these choices are independent (picking the two letters before M and two letters after M), the total number of ways is:</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\;\\times\\;{ }^{13} \\mathrm{C}_2 $</p>\n<p>Calculate each combination:</p>\n<p>$ { }^{12} \\mathrm{C}_2 = \\frac{12 \\times 11}{2} = 66,  \\quad { }^{13} \\mathrm{C}_2 = \\frac{13 \\times 12}{2} = 78. $</p>\n<p>So,</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\times { }^{13} \\mathrm{C}_2 = 66 \\times 78 = 5148. $</p>\n<hr />\n<h2><strong>Answer: 5148</strong> (Option B)</h2>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "m6v42xah",
@@ -560,7 +560,7 @@
     "difficulty": "medium",
     "solution": "<p>$$a+b=23\\lambda+2$$</p>\n<p>$$\\lambda=0,1,2,$$ ...., but $$\\lambda$$ cannot be even as $$a+b$$ is odd</p>\n<p>$$\\lambda=1$$ $$(a, b)\\to12$$ pairs</p>\n<p>$$\\lambda=3$$ $$(a,b)\\to35$$ pairs</p>\n<p>$$\\lambda=5$$ $$(a,b)\\to42$$ pairs</p>\n<p>$$\\lambda=7$$ $$(a,b)\\to19$$ pairs</p>\n<p>$$\\lambda=9$$ $$(a,b)\\to0$$ pairs</p>\n<p>$$ \\vdots $$</p>\n<p>Total $$=12+35+42+19=108$$</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1lh245n1s",
@@ -739,7 +739,7 @@
     "subject": "Mathematics",
     "topic": "conditional-combinations",
     "difficulty": "medium",
-    "solution": "If group C has one student then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>1</sub>\n[2<sup>9</sup>\n – 2] = 5100\n<br><br>If group C has two students then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>2</sub>\n[2<sup>8</sup>\n – 2] = 11430\n<br><br>If group C has three students then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>3</sub>\n × [2<sup>7</sup>\n – 2] = 15120\n<br><br>So total groups = 31650",
+    "solution": "If group C has one student then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>1</sub>\n[2<sup>9</sup>\n \u2013 2] = 5100\n<br><br>If group C has two students then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>2</sub>\n[2<sup>8</sup>\n \u2013 2] = 11430\n<br><br>If group C has three students then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>3</sub>\n \u00d7 [2<sup>7</sup>\n \u2013 2] = 15120\n<br><br>So total groups = 31650",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -945,7 +945,7 @@
     "questionNumber": 82,
     "questionText": "A committee of 11 members is to be formed from\n8 males and 5 females. If m is the number of ways\nthe committee is formed with at least 6 males and\nn is the number of ways the committee is formed\nwith at least 3 females, then :",
     "options": [
-      "n = m – 8",
+      "n = m \u2013 8",
       "m = n = 78",
       "m + n = 68",
       "m = n = 68"

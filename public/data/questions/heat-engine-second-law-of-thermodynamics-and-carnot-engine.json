@@ -73,7 +73,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -81,8 +81,8 @@
     "difficulty": "medium",
     "solution": "<p><strong>Carnot Engine:</strong></p>\n\n<p><p>Hot reservoir temperature ($T_H$) = 1000 K</p></p>\n<p><p>Efficiency ($\\eta$) = 0.4</p></p>\n<p><p>Heat extracted from the hot reservoir ($Q_H$) = 150 J per cycle</p></p></p>\n<p><p><strong>Heat Pump:</strong></p>\n\n<p><p>Coefficient of Performance (COP) = 10</p></p>\n<p><p>Work input ($W_{pump}$) = Work output from the engine ($W_{engine}$)</p></p>\n<p><p>Hot reservoir temperature ($T_{H,hp}$) = 300 K</p></p></p>\n\n<p>Let's analyze each statement:</p>\n<p><strong>Statement A: Work extracted from the Carnot engine in one cycle is 60 J.</strong></p>\n<p>The efficiency of an engine is defined as the ratio of the work output to the heat input from the hot reservoir.</p>\n<p>$$ \\eta = \\frac{W_{engine}}{Q_H} $$</p>\n<p>We are given $\\eta = 0.4$ and $Q_H = 150$ J. We can find the work done by the engine:</p>\n<p>$$ W_{engine} = \\eta \\times Q_H = 0.4 \\times 150 \\text{ J} = 60 \\text{ J} $$</p>\n<p>This statement is <strong>correct</strong>.</p>\n<p><strong>Statement B: Temperature of the cold reservoir of the Carnot engine is 600 K.</strong></p>\n<p>For a Carnot engine, the efficiency can also be expressed in terms of the temperatures of the hot and cold reservoirs:</p>\n<p>$$ \\eta = 1 - \\frac{T_C}{T_H} $$</p>\n<p>where $T_C$ is the temperature of the cold reservoir and $T_H$ is the temperature of the hot reservoir (both in Kelvin).</p>\n<p>We know $\\eta = 0.4$ and $T_H = 1000$ K. We can solve for $T_C$:</p>\n<p>$$ 0.4 = 1 - \\frac{T_C}{1000} $$</p>\n<p>$$ \\frac{T_C}{1000} = 1 - 0.4 = 0.6 $$</p>\n<p>$$ T_C = 0.6 \\times 1000 \\text{ K} = 600 \\text{ K} $$</p>\n<p>This statement is also <strong>correct</strong>.</p>\n<p><strong>Statement C: Temperature of the cold reservoir of the heat pump is 270 K.</strong></p>\n<p>The coefficient of performance (COP) for a heat pump is defined as the ratio of the heat delivered to the hot reservoir ($Q_{H,hp}$) to the work input ($W_{pump}$). For an ideal (Carnot) heat pump operating between temperatures $T_{C,hp}$ and $T_{H,hp}$, the COP is also given by:</p>\n<p>$$ \\text{COP} = \\frac{T_{H,hp}}{T_{H,hp} - T_{C,hp}} $$</p>\n<p>We are given the COP of the heat pump is 10 and its hot reservoir temperature $T_{H,hp} = 300$ K. Let's assume this heat pump is operating ideally with this COP. We can find $T_{C,hp}$:</p>\n<p>$$ 10 = \\frac{300 \\text{ K}}{300 \\text{ K} - T_{C,hp}} $$</p>\n<p>Let's solve for $T_{C,hp}$:</p>\n<p>$$ 10 \\times (300 - T_{C,hp}) = 300 $$</p>\n<p>$$ 3000 - 10 T_{C,hp} = 300 $$</p>\n<p>$$ 10 T_{C,hp} = 3000 - 300 = 2700 $$</p>\n<p>$$ T_{C,hp} = \\frac{2700}{10} \\text{ K} = 270 \\text{ K} $$</p>\n<p>This statement is <strong>correct</strong>, assuming the heat pump is ideal.</p>\n<p><strong>Statement D: Heat supplied to the hot reservoir of the heat pump in one cycle is 540 J.</strong></p>\n<p>The COP of a heat pump is also defined as the ratio of the heat delivered to the hot reservoir ($Q_{H,hp}$) to the work input ($W_{pump}$).</p>\n<p>$$ \\text{COP} = \\frac{Q_{H,hp}}{W_{pump}} $$</p>\n<p>We know the COP is 10 and the work input to the heat pump is the work output from the engine, which we found to be $W_{pump} = W_{engine} = 60$ J.</p>\n<p>So, the heat supplied to the hot reservoir of the heat pump is:</p>\n<p>$$ Q_{H,hp} = \\text{COP} \\times W_{pump} = 10 \\times 60 \\text{ J} = 600 \\text{ J} $$</p>\n<p>This statement says the heat supplied is 540 J, which does not match our calculation of 600 J.</p>\n<p>This statement is <strong>incorrect</strong>.</p>\n<p>Based on our analysis, statements A, B, and C are correct.</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "1lgrhmt1a",
@@ -102,7 +102,7 @@
     "subject": "Physics",
     "topic": "heat-engine-second-law-of-thermodynamics-and-carnot-engine",
     "difficulty": "easy",
-    "solution": "<p>To answer this question, we need to find the efficiency of a Carnot engine operating between the boiling and freezing points of water. The boiling point of water is 100°C (373 K) and the freezing point is 0°C (273 K). The efficiency of a Carnot engine is given by the formula:</p>\n<p>Efficiency = $$1 - \\frac{T_{cold}}{T_{hot}}$$</p>\n<p>Plugging in the values for the boiling and freezing points of water:</p>\n<p>Efficiency = $$1 - \\frac{273}{373} = 1 - 0.732 = 0.268$$</p>\n<p>So, the efficiency of a Carnot engine operating between these temperatures is approximately 26.8%.</p>\n<p>Now, let&#39;s analyze the given options:\nA. efficiency more than 27% - This is incorrect, as the Carnot efficiency is 26.8% and no engine can be more efficient than a Carnot engine.<br/><br/>\nB. efficiency less than the efficiency of a Carnot engine operating between the same two temperatures - This is correct, as real engines are less efficient than Carnot engines operating between the same temperatures.<br/><br/>\nC. efficiency equal to $$27 \\%$$ - This is incorrect, as the Carnot efficiency is 26.8%, not 27%.<br/><br/>\nD. efficiency less than $$27 \\%$$ - This is correct, as the efficiency is less than 27% (26.8%).</p>\n<p>Thus, the correct answer is &quot;B and D only.&quot;</p>\n",
+    "solution": "<p>To answer this question, we need to find the efficiency of a Carnot engine operating between the boiling and freezing points of water. The boiling point of water is 100\u00b0C (373 K) and the freezing point is 0\u00b0C (273 K). The efficiency of a Carnot engine is given by the formula:</p>\n<p>Efficiency = $$1 - \\frac{T_{cold}}{T_{hot}}$$</p>\n<p>Plugging in the values for the boiling and freezing points of water:</p>\n<p>Efficiency = $$1 - \\frac{273}{373} = 1 - 0.732 = 0.268$$</p>\n<p>So, the efficiency of a Carnot engine operating between these temperatures is approximately 26.8%.</p>\n<p>Now, let&#39;s analyze the given options:\nA. efficiency more than 27% - This is incorrect, as the Carnot efficiency is 26.8% and no engine can be more efficient than a Carnot engine.<br/><br/>\nB. efficiency less than the efficiency of a Carnot engine operating between the same two temperatures - This is correct, as real engines are less efficient than Carnot engines operating between the same temperatures.<br/><br/>\nC. efficiency equal to $$27 \\%$$ - This is incorrect, as the Carnot efficiency is 26.8%, not 27%.<br/><br/>\nD. efficiency less than $$27 \\%$$ - This is correct, as the efficiency is less than 27% (26.8%).</p>\n<p>Thus, the correct answer is &quot;B and D only.&quot;</p>\n",
     "section": "A",
     "type": "SCQ"
   },
@@ -602,7 +602,7 @@
   {
     "id": "xd7t0aD2TJTqw95Ktvjgy2xukexs4mpk",
     "questionNumber": 12,
-    "questionText": "A heat engine is involved with exchange of heat\nof 1915 J, – 40J, + 125 J and –Q J, during one\ncycle achieving an efficiency of 50.0%. The\nvalue of Q is",
+    "questionText": "A heat engine is involved with exchange of heat\nof 1915 J, \u2013 40J, + 125 J and \u2013Q J, during one\ncycle achieving an efficiency of 50.0%. The\nvalue of Q is",
     "options": [
       "980 J",
       "40 J",
@@ -617,7 +617,7 @@
     "subject": "Physics",
     "topic": "heat-engine-second-law-of-thermodynamics-and-carnot-engine",
     "difficulty": "medium",
-    "solution": "$$\\eta $$ = <span style=\"display: inline-block;vertical-align: middle;\">\n     <div style=\"text-align: center;border-bottom: 1px solid black;\"> Work done</div>\n     <div style=\"text-align: center;\"> Heat supplied </div>\n</span>\n<br><br>$$ \\Rightarrow $$ $$\\frac{1}{2} $$ = $$\\frac{1915-40+125-Q}{1915+125} $$\n<br><br>$$ \\Rightarrow $$ $$\\frac{1}{2} $$ = $$\\frac{2000-Q}{2040} $$\n<br><br>$$ \\Rightarrow $$ 2040 = 4000 – 2Q\n\n<br><br>$$ \\Rightarrow $$ 2Q = 1960\n\n<br><br>$$ \\Rightarrow $$ Q = 980 J",
+    "solution": "$$\\eta $$ = <span style=\"display: inline-block;vertical-align: middle;\">\n     <div style=\"text-align: center;border-bottom: 1px solid black;\"> Work done</div>\n     <div style=\"text-align: center;\"> Heat supplied </div>\n</span>\n<br><br>$$ \\Rightarrow $$ $$\\frac{1}{2} $$ = $$\\frac{1915-40+125-Q}{1915+125} $$\n<br><br>$$ \\Rightarrow $$ $$\\frac{1}{2} $$ = $$\\frac{2000-Q}{2040} $$\n<br><br>$$ \\Rightarrow $$ 2040 = 4000 \u2013 2Q\n\n<br><br>$$ \\Rightarrow $$ 2Q = 1960\n\n<br><br>$$ \\Rightarrow $$ Q = 980 J",
     "section": "A",
     "type": "SCQ"
   },
@@ -673,7 +673,7 @@
     "subject": "Physics",
     "topic": "heat-engine-second-law-of-thermodynamics-and-carnot-engine",
     "difficulty": "medium",
-    "solution": "Q<sub>H</sub> : Heat input to 1<sup>st</sup> engine\n<br><br>Q<sub>L</sub>\n : Heat rejected from 1<sup>st</sup> engine\n<br><br>Q'<sub>L</sub> : Heat rejected from 2<sup>nd</sup> engine\n<br><br>T : Lower temperature of first engine\n<br><br>Work done by 1<sup>st</sup> engine = work done by 2<sup>nd</sup> engine\n<br><br>Q<sub>H</sub>\n – Q<sub>L</sub> = Q<sub>L</sub>\n – Q'<sub>L</sub>\n<br><br>$$ \\Rightarrow $$ 2Q<sub>L</sub>\n = Q<sub>H</sub>\n + Q'<sub>L</sub>\n<br><br>$$ \\Rightarrow $$ 2 = $${{{Q_H}} \\over {{Q_L}}} + {{Q{'_L}} \\over {{Q_L}}}$$\n<br><br>$$ \\Rightarrow $$ 2 = $${{{T_1}} \\over T} + {{{T_2}} \\over T}$$\n<br><br>$$ \\Rightarrow $$ $$T = {{{T_1} + {T_2}} \\over 2}$$",
+    "solution": "Q<sub>H</sub> : Heat input to 1<sup>st</sup> engine\n<br><br>Q<sub>L</sub>\n : Heat rejected from 1<sup>st</sup> engine\n<br><br>Q'<sub>L</sub> : Heat rejected from 2<sup>nd</sup> engine\n<br><br>T : Lower temperature of first engine\n<br><br>Work done by 1<sup>st</sup> engine = work done by 2<sup>nd</sup> engine\n<br><br>Q<sub>H</sub>\n \u2013 Q<sub>L</sub> = Q<sub>L</sub>\n \u2013 Q'<sub>L</sub>\n<br><br>$$ \\Rightarrow $$ 2Q<sub>L</sub>\n = Q<sub>H</sub>\n + Q'<sub>L</sub>\n<br><br>$$ \\Rightarrow $$ 2 = $${{{Q_H}} \\over {{Q_L}}} + {{Q{'_L}} \\over {{Q_L}}}$$\n<br><br>$$ \\Rightarrow $$ 2 = $${{{T_1}} \\over T} + {{{T_2}} \\over T}$$\n<br><br>$$ \\Rightarrow $$ $$T = {{{T_1} + {T_2}} \\over 2}$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -764,7 +764,7 @@
   {
     "id": "6bTdWbWPdLzOC3vtj63rsa0w2w9jx6npibb",
     "questionNumber": 15,
-    "questionText": "A Carnot engine has an efficiency of $${1 \\over 6}$$. When the temperature of the sink is reduced by 62ºC, its efficiency\nis doubled. The temperatures of the source and the sink are, respectively",
+    "questionText": "A Carnot engine has an efficiency of $${1 \\over 6}$$. When the temperature of the sink is reduced by 62\u00baC, its efficiency\nis doubled. The temperatures of the source and the sink are, respectively",
     "options": [
       "99<sup>o</sup>C, 37<sup>o</sup>C",
       "124<sup>o</sup>C, 62<sup>o</sup>C",
@@ -779,7 +779,7 @@
     "subject": "Physics",
     "topic": "heat-engine-second-law-of-thermodynamics-and-carnot-engine",
     "difficulty": "medium",
-    "solution": "$$\\eta  = 1 - {{{T_2}} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ $${1 \\over 6} = 1 - {{{T_2}} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ $${{{T_2}} \\over {{T_1}}} = {5 \\over 6}$$\n<br><br>When the temperature of the sink is reduced by 62ºC, then\n<br>$$\\eta ' = 1 - {{{T_2} - 62} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ $$2 \\times {1 \\over 6} = 1 - {{{T_2}} \\over {{T_1}}} + {{62} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ $${1 \\over 3} = {1 \\over 6} + {{62} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ T<sub>1</sub> = 372 K = 99<sup>o</sup> C\n<br><br>T<sub>2</sub> = $${5 \\over 3} \\times 372$$ = 310 K = 37<sup>o</sup> C",
+    "solution": "$$\\eta  = 1 - {{{T_2}} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ $${1 \\over 6} = 1 - {{{T_2}} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ $${{{T_2}} \\over {{T_1}}} = {5 \\over 6}$$\n<br><br>When the temperature of the sink is reduced by 62\u00baC, then\n<br>$$\\eta ' = 1 - {{{T_2} - 62} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ $$2 \\times {1 \\over 6} = 1 - {{{T_2}} \\over {{T_1}}} + {{62} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ $${1 \\over 3} = {1 \\over 6} + {{62} \\over {{T_1}}}$$\n<br>$$ \\Rightarrow $$ T<sub>1</sub> = 372 K = 99<sup>o</sup> C\n<br><br>T<sub>2</sub> = $${5 \\over 3} \\times 372$$ = 310 K = 37<sup>o</sup> C",
     "section": "A",
     "type": "SCQ"
   },
@@ -874,7 +874,7 @@
   {
     "id": "Iz17cSfHMjJJWg4l5rSta",
     "questionNumber": 18,
-    "questionText": "A Carnot freezer takes heat from water at 0<sup>o</sup>C inside it and rejects it to the room at a temperature of 27<sup>o</sup>C. The latent heat of ice is 336×10<sup>3</sup> J kg<sup>−1</sup>. If 5 kg of water at 0<sup>o</sup>C is converted into ice at 0<sup>o</sup>C by the freezer, then the energy consumed by the freezer is close to :",
+    "questionText": "A Carnot freezer takes heat from water at 0<sup>o</sup>C inside it and rejects it to the room at a temperature of 27<sup>o</sup>C. The latent heat of ice is 336\u00d710<sup>3</sup> J kg<sup>\u22121</sup>. If 5 kg of water at 0<sup>o</sup>C is converted into ice at 0<sup>o</sup>C by the freezer, then the energy consumed by the freezer is close to :",
     "options": [
       "1.67 $$ \\times $$ 10<sup>5</sup> J",
       "1.68 $$ \\times $$ 10<sup>6</sup> J",

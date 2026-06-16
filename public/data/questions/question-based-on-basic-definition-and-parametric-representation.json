@@ -388,7 +388,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -396,7 +396,7 @@
     "difficulty": "medium",
     "solution": "<p>For a hyperbola, the eccentricity $e>1$.</p>\n<p>We are given:</p>\n<p>$$ 6e^2-11e+3=0 $$</p>\n<p>Solve this quadratic:</p>\n<p>$$ 6e^2-9e-2e+3=0 $$</p>\n<p>$$ 3e(2e-3)-1(2e-3)=0 $$</p>\n<p>$$ (2e-3)(3e-1)=0 $$</p>\n<p>So,</p>\n<p>$$ e=\\frac{3}{2}\\quad \\text{or}\\quad e=\\frac{1}{3} $$</p>\n<p>Since for a hyperbola $e>1$, we take</p>\n<p>$$ e=\\frac{3}{2} $$</p>\n<p>Now the foci are $(3,5)$ and $(3,-4)$.  </p>\n<p>These lie on the vertical line $x=3$, so the transverse axis is vertical.</p>\n<p>The distance between the foci is</p>\n<p>$$ |5-(-4)|=9 $$</p>\n<p>Hence,</p>\n<p>$$ 2c=9 \\Rightarrow c=\\frac{9}{2} $$</p>\n<p>For a hyperbola,</p>\n<p>$$ e=\\frac{c}{a} $$</p>\n<p>So,</p>\n<p>$$ a=\\frac{c}{e} =\\frac{\\frac{9}{2}}{\\frac{3}{2}} =3 $$</p>\n<p>Now use the relation</p>\n<p>$$ c^2=a^2+b^2 $$</p>\n<p>Thus,</p>\n<p>$$ b^2=c^2-a^2 =\\left(\\frac{9}{2}\\right)^2-3^2 =\\frac{81}{4}-9 =\\frac{81-36}{4} =\\frac{45}{4} $$</p>\n<p>Length of latus rectum of a hyperbola is</p>\n<p>$$ \\frac{2b^2}{a} $$</p>\n<p>Therefore,</p>\n<p>$$ \\text{Length of latus rectum} =\\frac{2\\cdot \\frac{45}{4}}{3} =\\frac{45}{6} =\\frac{15}{2} $$</p>\n<p>Hence, the correct answer is</p>\n<p>$$ \\boxed{\\frac{15}{2}} $$</p>\n<p>So, Option C is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mnswhwe8",
@@ -570,7 +570,7 @@
     "subject": "Mathematics",
     "topic": "question-based-on-basic-definition-and-parametric-representation",
     "difficulty": "medium",
-    "solution": "<p>We are given an ellipse</p>\n<p>$$ \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1, \\quad a>b, $$</p>\n<p>and a hyperbola</p>\n<p>$$ \\frac{x^2}{A^2}-\\frac{y^2}{B^2}=1. $$</p>\n<p>It is stated that “the distance between the foci of $E$ and the foci of $H$ is $2\\sqrt{3}$.” A natural interpretation is that the foci of the ellipse are separated by </p>\n<p>$$ 2\\sqrt{a^2-b^2}, $$ </p>\n<p>and those of the hyperbola by </p>\n<p>$$ 2\\sqrt{A^2+B^2}, $$ </p>\n<p>and each distance is equal to $2\\sqrt{3}$. That is, we have</p>\n<p>$ 2\\sqrt{a^2-b^2}=2\\sqrt{3}\\quad \\Longrightarrow\\quad a^2-b^2=3, $</p>\n<p>and</p>\n<p>$ 2\\sqrt{A^2+B^2}=2\\sqrt{3}\\quad \\Longrightarrow\\quad A^2+B^2=3. $</p>\n<p>We are also given that</p>\n<p>$$ a-A=2, $$</p>\n<p>and that the ratio of the eccentricities is</p>\n<p>$$ \\frac{e_E}{e_H}=\\frac{1}{3}, $$</p>\n<p>where the eccentricity of the ellipse is </p>\n<p>$$ e_E=\\frac{\\sqrt{a^2-b^2}}{a}=\\frac{\\sqrt{3}}{a}, $$</p>\n<p>and the eccentricity of the hyperbola is </p>\n<p>$$ e_H=\\frac{\\sqrt{A^2+B^2}}{A}=\\frac{\\sqrt{3}}{A}. $$</p>\n<p>Thus the ratio becomes</p>\n<p>$$ \\frac{e_E}{e_H}=\\frac{\\sqrt{3}/a}{\\sqrt{3}/A}=\\frac{A}{a}=\\frac{1}{3}. $$</p>\n<p>This implies</p>\n<p>$$ a=3A. $$</p>\n<p>Now, using the condition $a-A=2$ together with $a=3A$, we get</p>\n<p>$$ 3A-A=2 \\quad\\Longrightarrow\\quad 2A=2 \\quad\\Longrightarrow\\quad A=1. $$</p>\n<p>Thus,</p>\n<p>$$ a=3. $$</p>\n<p>Next, for the ellipse we have</p>\n<p>$$ a^2-b^2=3 \\quad \\Longrightarrow\\quad 9-b^2=3 \\quad\\Longrightarrow\\quad b^2=6. $$</p>\n<p>For the hyperbola,</p>\n<p>$$ A^2+B^2=3 \\quad \\Longrightarrow\\quad 1+B^2=3 \\quad\\Longrightarrow\\quad B^2=2. $$</p>\n<p>The length of the latus rectum is given by the following formulas:</p>\n\n<p>For the ellipse:</p>\n\n<p>$$ L_E=\\frac{2b^2}{a}, $$</p>\n\n<p>For the hyperbola:</p>\n\n<p>$$ L_H=\\frac{2B^2}{A}. $$</p>\n<p>Substitute the computed values:</p>\n\n<p>For the ellipse:</p>\n\n<p>$$ L_E=\\frac{2\\times6}{3}=\\frac{12}{3}=4, $$</p>\n\n<p>For the hyperbola:</p>\n\n<p>$$ L_H=\\frac{2\\times2}{1}=4. $$</p>\n<p>The sum of the lengths of the latus rectums is then</p>\n<p>$$ L_E+L_H=4+4=8. $$</p>\n<p>Thus, the answer is</p>\n<p>$$ 8. $$</p>",
+    "solution": "<p>We are given an ellipse</p>\n<p>$$ \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1, \\quad a>b, $$</p>\n<p>and a hyperbola</p>\n<p>$$ \\frac{x^2}{A^2}-\\frac{y^2}{B^2}=1. $$</p>\n<p>It is stated that \u201cthe distance between the foci of $E$ and the foci of $H$ is $2\\sqrt{3}$.\u201d A natural interpretation is that the foci of the ellipse are separated by </p>\n<p>$$ 2\\sqrt{a^2-b^2}, $$ </p>\n<p>and those of the hyperbola by </p>\n<p>$$ 2\\sqrt{A^2+B^2}, $$ </p>\n<p>and each distance is equal to $2\\sqrt{3}$. That is, we have</p>\n<p>$ 2\\sqrt{a^2-b^2}=2\\sqrt{3}\\quad \\Longrightarrow\\quad a^2-b^2=3, $</p>\n<p>and</p>\n<p>$ 2\\sqrt{A^2+B^2}=2\\sqrt{3}\\quad \\Longrightarrow\\quad A^2+B^2=3. $</p>\n<p>We are also given that</p>\n<p>$$ a-A=2, $$</p>\n<p>and that the ratio of the eccentricities is</p>\n<p>$$ \\frac{e_E}{e_H}=\\frac{1}{3}, $$</p>\n<p>where the eccentricity of the ellipse is </p>\n<p>$$ e_E=\\frac{\\sqrt{a^2-b^2}}{a}=\\frac{\\sqrt{3}}{a}, $$</p>\n<p>and the eccentricity of the hyperbola is </p>\n<p>$$ e_H=\\frac{\\sqrt{A^2+B^2}}{A}=\\frac{\\sqrt{3}}{A}. $$</p>\n<p>Thus the ratio becomes</p>\n<p>$$ \\frac{e_E}{e_H}=\\frac{\\sqrt{3}/a}{\\sqrt{3}/A}=\\frac{A}{a}=\\frac{1}{3}. $$</p>\n<p>This implies</p>\n<p>$$ a=3A. $$</p>\n<p>Now, using the condition $a-A=2$ together with $a=3A$, we get</p>\n<p>$$ 3A-A=2 \\quad\\Longrightarrow\\quad 2A=2 \\quad\\Longrightarrow\\quad A=1. $$</p>\n<p>Thus,</p>\n<p>$$ a=3. $$</p>\n<p>Next, for the ellipse we have</p>\n<p>$$ a^2-b^2=3 \\quad \\Longrightarrow\\quad 9-b^2=3 \\quad\\Longrightarrow\\quad b^2=6. $$</p>\n<p>For the hyperbola,</p>\n<p>$$ A^2+B^2=3 \\quad \\Longrightarrow\\quad 1+B^2=3 \\quad\\Longrightarrow\\quad B^2=2. $$</p>\n<p>The length of the latus rectum is given by the following formulas:</p>\n\n<p>For the ellipse:</p>\n\n<p>$$ L_E=\\frac{2b^2}{a}, $$</p>\n\n<p>For the hyperbola:</p>\n\n<p>$$ L_H=\\frac{2B^2}{A}. $$</p>\n<p>Substitute the computed values:</p>\n\n<p>For the ellipse:</p>\n\n<p>$$ L_E=\\frac{2\\times6}{3}=\\frac{12}{3}=4, $$</p>\n\n<p>For the hyperbola:</p>\n\n<p>$$ L_H=\\frac{2\\times2}{1}=4. $$</p>\n<p>The sum of the lengths of the latus rectums is then</p>\n<p>$$ L_E+L_H=4+4=8. $$</p>\n<p>Thus, the answer is</p>\n<p>$$ 8. $$</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -1978,7 +1978,7 @@
   {
     "id": "cKUyQMOGtgxolaNvzyjgy2xukezb2lny",
     "questionNumber": 58,
-    "questionText": "For some $$\\theta  \\in \\left( {0,{\\pi  \\over 2}} \\right)$$, if the eccentricity of the\n<br>hyperbola, x<sup>2</sup>–y<sup>2</sup>sec<sup>2</sup>$$\\theta $$ = 10 is\n$$\\sqrt 5 $$ times the\n<br>eccentricity of the ellipse, x<sup>2</sup>sec<sup>2</sup>$$\\theta $$ + y<sup>2</sup> = 5, then\nthe length of the latus rectum of the ellipse, is :",
+    "questionText": "For some $$\\theta  \\in \\left( {0,{\\pi  \\over 2}} \\right)$$, if the eccentricity of the\n<br>hyperbola, x<sup>2</sup>\u2013y<sup>2</sup>sec<sup>2</sup>$$\\theta $$ = 10 is\n$$\\sqrt 5 $$ times the\n<br>eccentricity of the ellipse, x<sup>2</sup>sec<sup>2</sup>$$\\theta $$ + y<sup>2</sup> = 5, then\nthe length of the latus rectum of the ellipse, is :",
     "options": [
       "$$\\sqrt {30} $$",
       "$$2\\sqrt 6 $$",
@@ -2119,7 +2119,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -2128,12 +2128,12 @@
     "solution": "Given equation of ellipse<br><br>$${E_1}:{{{x^2}} \\over 9} + {{{y^2}} \\over 4} = 1$$ ... (i)<br><br>Now, let a vertex of rectangle of largest area with sides parallel to the axes, inscribed in E<sub>1</sub> be (3cos$$\\theta $$, 2sin$$\\theta $$).<br><br>So, area of rectangle<br><br>R<sub>1</sub> = 2(3cos$$\\theta $$) $$ \\times $$ 2(2sin$$\\theta $$) = 12sin(2$$\\theta $$)<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kswg5mrq/46bdd405-d185-44f5-afdd-da490b15bb60/2668d260-085c-11ec-b113-c51967274113/file-1kswg5mrr-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kswg5mrq/46bdd405-d185-44f5-afdd-da490b15bb60/2668d260-085c-11ec-b113-c51967274113/file-1kswg5mrr-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kswg5mrq/46bdd405-d185-44f5-afdd-da490b15bb60/2668d260-085c-11ec-b113-c51967274113/file-1kswg5mrr.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Advanced 2019 Paper 1 Offline Mathematics - Ellipse Question 11 English Explanation\"></picture> <br><br>The area of R<sub>1</sub> will be maximum, $$\\theta  = {\\pi  \\over 4}$$ and maximum area is 12 square units and length of sides of rectangle R<sub>1</sub> are $$2a\\cos \\theta  = \\sqrt 2 a = 3\\sqrt 2 $$ = length of major axis of ellipse E<sub>2</sub> and<br><br>$$2b\\sin \\theta  = \\sqrt 2 b = 2\\sqrt 2 $$ = length of minor axis of ellipse E<sub>2</sub>.<br><br>So, $${E_2}:{{{x^2}} \\over {{{\\left( {{a \\over {\\sqrt 2 }}} \\right)}^2}}} + {{{y^2}} \\over {{{\\left( {{b \\over {\\sqrt 2 }}} \\right)}^2}}} = 1$$ and <br><br>maximum area of rectangle <br><br>$${R_2}:2\\left( {{a \\over {\\sqrt 2 }}} \\right)\\left( {{b \\over {\\sqrt 2 }}} \\right)$$ and so on.<br><br>So, $${E_n} = {{{x^2}} \\over {{{\\left( {{a \\over {{{(\\sqrt 2 )}^{n - 1}}}}} \\right)}^2}}} + {{{y^2}} \\over {{{\\left( {{b \\over {{{(\\sqrt 2 )}^{n - 1}}}}} \\right)}^2}}} = 1$$,<br><br>and maximum area of rectangle<br><br>$${R_n} = 2\\left( {{a \\over {{{(\\sqrt 2 )}^{n - 1}}}}} \\right) + \\left( {{b \\over {{{(\\sqrt 2 )}^{n - 1}}}}} \\right)$$<br><br>Now option (a),<br><br>Since, eccentricity of ellipse<br><br>$${E_n} = e{'_n} = \\sqrt {1 - {{{{({b_n})}^2}} \\over {{{({a_n})}^2}}}} $$<br><br>$$ = \\sqrt {1 - {{{{\\left( {{b \\over {(\\sqrt {2{)^{n - 1}}} }}} \\right)}^2}} \\over {{{\\left( {{a \\over {(\\sqrt {2{)^{n - 1}}} }}} \\right)}^2}}}} $$<br><br>$$ = \\sqrt {1 - {{{b^2}} \\over {{a^2}}}}  = \\sqrt {1 - {4 \\over 9}}  = {{\\sqrt 5 } \\over 3}$$<br><br>is independent of 'n', so eccentricity of E<sub>18</sub> and E<sub>19</sub> are equal.<br><br>Option (b),<br><br>Distance between focus and centre of <br><br>$${E_9} = e.{a_9} = {a \\over {{{(\\sqrt 2 )}^8}}}(e)$$<br><br>$$ = {3 \\over {{2^4}}} \\times {{\\sqrt 5 } \\over 3} = {{\\sqrt 5 } \\over {16}}$$ unit<br><br>Option (c),<br><br>$$ \\because $$ $$\\sum\\limits_{n = 1}^N {(area\\,of\\,{R_n})}  &lt; (area\\,of\\,{R_1}) + (area\\,of\\,{R_2}) + .....\\infty $$<br><br>$$ &lt; 2ab + 2{{ab} \\over 2} + 2{{ab} \\over {{2^2}}} + .......$$<br><br>$$ &lt; 2ab\\left( {1 + {1 \\over 2} + {1 \\over {{2^2}}} + .....} \\right)$$<br><br>$$ &lt; 12\\left( {{1 \\over {1 - 1/2}}} \\right)$$<br><br>$$ \\Rightarrow \\sum\\limits_{n = 1}^N {(area\\,of\\,{R_n}} ) &lt; 24$$, for each positive integer N.<br><br>Option (d),<br><br>Length of latusrectum $${E_9} = {{2b_9^2} \\over {{a_9}}} = {{2{b^2}} \\over {a{{(\\sqrt 2 )}^8}}}$$<br><br>$$ = {{2 \\times 4} \\over {3 \\times 16}} = {1 \\over 6}$$ units<br><br>Hence, options (c) and (d) are correct.",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "jnsfPBe0KmkT0ZCwSQ3rsa0w2w9jx24zm31",
     "questionNumber": 73,
-    "questionText": "If 5x + 9 = 0 is the directrix of the hyperbola 16x<sup>2</sup>\n– 9y<sup>2</sup>\n = 144, then its corresponding focus is : ",
+    "questionText": "If 5x + 9 = 0 is the directrix of the hyperbola 16x<sup>2</sup>\n\u2013 9y<sup>2</sup>\n = 144, then its corresponding focus is : ",
     "options": [
       "$$\\left( {{5 \\over 3},0} \\right)$$",
       "(5, 0)",
@@ -2148,18 +2148,18 @@
     "subject": "Mathematics",
     "topic": "question-based-on-basic-definition-and-parametric-representation",
     "difficulty": "medium",
-    "solution": "$${{{x^2}} \\over 9} - {{{y^2}} \\over {16}} = 1$$<br><br>\n$$ \\therefore $$ a = 3 and b = 4<br><br>\n$${e^2} = 1 + {{{b^2}} \\over {{a^2}}}$$<br><br>\n$$ \\Rightarrow {e^2} = 1 + {{16} \\over 9}$$<br><br>\n$$ \\Rightarrow $$ e = $$5 \\over 3$$<br><br>\n$$ \\therefore $$  focus is (–ae, 0) = (–5, 0)",
+    "solution": "$${{{x^2}} \\over 9} - {{{y^2}} \\over {16}} = 1$$<br><br>\n$$ \\therefore $$ a = 3 and b = 4<br><br>\n$${e^2} = 1 + {{{b^2}} \\over {{a^2}}}$$<br><br>\n$$ \\Rightarrow {e^2} = 1 + {{16} \\over 9}$$<br><br>\n$$ \\Rightarrow $$ e = $$5 \\over 3$$<br><br>\n$$ \\therefore $$  focus is (\u2013ae, 0) = (\u20135, 0)",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "sCkkVj9Lsm6OEcTclf3rsa0w2w9jwxs6pli",
     "questionNumber": 74,
-    "questionText": "If a directrix of a hyperbola centred at the origin and passing through the point (4, –2$$\\sqrt 3 $$ ) is 5x = 4$$\\sqrt 5 $$ and\nits eccentricity is e, then :",
+    "questionText": "If a directrix of a hyperbola centred at the origin and passing through the point (4, \u20132$$\\sqrt 3 $$ ) is 5x = 4$$\\sqrt 5 $$ and\nits eccentricity is e, then :",
     "options": [
-      "4e<sup>4</sup> – 24e<sup>2</sup> + 27 = 0",
-      "4e<sup>4</sup> – 24e<sup>2</sup> + 35 = 0",
-      "4e<sup>4</sup> – 12e<sup>2</sup> - 27 = 0",
+      "4e<sup>4</sup> \u2013 24e<sup>2</sup> + 27 = 0",
+      "4e<sup>4</sup> \u2013 24e<sup>2</sup> + 35 = 0",
+      "4e<sup>4</sup> \u2013 12e<sup>2</sup> - 27 = 0",
       "4e<sup>4</sup> + 8e<sup>2</sup> - 35 = 0"
     ],
     "correctOption": 1,
@@ -2243,7 +2243,7 @@
   {
     "id": "iduWy6AjPu6GT3dkEG3rsa0w2w9jxb09lba",
     "questionNumber": 71,
-    "questionText": "An ellipse, with foci at (0, 2) and (0, –2) and minor axis of length 4, passes through which of the following points?",
+    "questionText": "An ellipse, with foci at (0, 2) and (0, \u20132) and minor axis of length 4, passes through which of the following points?",
     "options": [
       "$$\\left( {2,\\sqrt 2 } \\right)$$",
       "$$\\left( {2,2\\sqrt 2 } \\right)$$",
@@ -2287,7 +2287,7 @@
   {
     "id": "7NBZ9LCV3YKefkvN211Fe",
     "questionNumber": 71,
-    "questionText": "If the vertices of a hyperbola be at (–2, 0) and (2, 0) and one of its foci be at (–3, 0), then which one of the following points does not lie on this hyperbola?",
+    "questionText": "If the vertices of a hyperbola be at (\u20132, 0) and (2, 0) and one of its foci be at (\u20133, 0), then which one of the following points does not lie on this hyperbola?",
     "options": [
       "$$\\left( {6,5\\sqrt 2 } \\right)$$",
       "$$\\left( {2\\sqrt 6 ,5} \\right)$$",
@@ -2375,7 +2375,7 @@
   {
     "id": "F5sELRdLShJaMlbMoRhND",
     "questionNumber": 81,
-    "questionText": "If $$\\theta $$ denotes the acute angle between the curves,  y = 10 – x<sup>2</sup> and y = 2 + x<sup>2</sup> at a point of their intersection, the |tan $$\\theta $$| is equal to :",
+    "questionText": "If $$\\theta $$ denotes the acute angle between the curves,  y = 10 \u2013 x<sup>2</sup> and y = 2 + x<sup>2</sup> at a point of their intersection, the |tan $$\\theta $$| is equal to :",
     "options": [
       "$$8 \\over 15$$",
       "$$4 \\over 9$$",
@@ -2463,7 +2463,7 @@
   {
     "id": "pH7BEcGlUt4jdIi97WFap",
     "questionNumber": 74,
-    "questionText": "The eccentricity of an ellipse having centre at the origin, axes along the co-ordinate\naxes and passing through the points (4, −1) and (−2, 2) is :\n",
+    "questionText": "The eccentricity of an ellipse having centre at the origin, axes along the co-ordinate\naxes and passing through the points (4, \u22121) and (\u22122, 2) is :\n",
     "options": [
       "$${1 \\over 2}$$",
       "$${2 \\over {\\sqrt 5 }}$$ ",
@@ -2529,7 +2529,7 @@
   {
     "id": "8CXP96he2JPl6kqXEpCMi",
     "questionNumber": 73,
-    "questionText": "Let a and b respectively be the semitransverse and semi-conjugate axes of a\nhyperbola whose eccentricity satisfies the equation 9e<sup>2</sup> − 18e + 5 = 0. If S(5, 0) is a focus and 5x = 9 is the corresponding directrix of this hyperbola, then a<sup>2</sup> − b<sup>2</sup> is equal to :\n",
+    "questionText": "Let a and b respectively be the semitransverse and semi-conjugate axes of a\nhyperbola whose eccentricity satisfies the equation 9e<sup>2</sup> \u2212 18e + 5 = 0. If S(5, 0) is a focus and 5x = 9 is the corresponding directrix of this hyperbola, then a<sup>2</sup> \u2212 b<sup>2</sup> is equal to :\n",
     "options": [
       "7",
       "$$-$$ 7",
@@ -2813,7 +2813,7 @@
     "subject": "Mathematics",
     "topic": "question-based-on-basic-definition-and-parametric-representation",
     "difficulty": "Medium",
-    "solution": "<p>The equation of the ellipse is $$\\frac{x^2}{25}+\\frac{y^2}{16}=1$$. </p>\n<p>Here, the numbers 25 and 16 are the squares of the lengths of the axes. This means the semi-major axis $ a = 5 $ and the semi-minor axis $ b = 4 $.</p>\n<p><b>Step 1: Find the eccentricity of the ellipse.</b></p>\n<p>The eccentricity of an ellipse is given by the formula: $$e = \\sqrt{1 - \\frac{b^2}{a^2}}$$</p>\n<p>Let’s plug in the values:\n\n$ b^2 = 16 $, $ a^2 = 25 $</p>\n<p>So, $ e = \\sqrt{1 - \\frac{16}{25}} = \\sqrt{\\frac{9}{25}} = \\frac{3}{5} $</p>\n<p><b>Step 2: Find the focus of the ellipse.</b></p>\n<p>The foci are at $ (\\pm \\sqrt{a^2 - b^2}, 0) $.</p>\n<p>So, $ a^2 - b^2 = 25 - 16 = 9 $. Take square root: $ \\sqrt{9} = 3 $.</p>\n<p>This means the foci are at $ (\\pm 3, 0) $.</p>\n<p><b>Step 3: Eccentricity of the hyperbola.</b></p>\n<p>The problem tells us: Product of eccentricities is 1.</p>\n<p>The ellipse's eccentricity $ e_{ellipse} = \\frac{3}{5} $. Let $ e_{hyperbola} $ be the hyperbola's eccentricity.</p>\n<p>So, $ e_{hyperbola} \\times \\frac{3}{5} = 1 $. \n\n$ e_{hyperbola} = \\frac{1}{\\frac{3}{5}} = \\frac{5}{3} $</p>\n<p><b>Step 4: Hyperbola passes through the focus (3, 0).</b></p>\n<p>Since the axes of the hyperbola match the ellipse, and it passes through (3, 0), write: $$\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$$</p>\n<p>Plug in $ x = 3 $, $ y = 0 $:</p>\n<p>$$\\frac{3^2}{a^2} - 0 = 1 \\implies \\frac{9}{a^2} = 1 \\implies a^2 = 9$$</p>\n<p>So the hyperbola equation is: $$\\frac{x^2}{9} - \\frac{y^2}{b^2} = 1$$</p>\n<p><b>Step 5: Use the eccentricity formula for the hyperbola.</b></p>\n<p>For a hyperbola, eccentricity $ e_{hyperbola} = \\sqrt{1 + \\frac{b^2}{a^2}} $</p>\n<p>We know $ e_{hyperbola} = \\frac{5}{3} $, $ a^2 = 9 $. Set up the equation: </p>\n<p>$$\\sqrt{1 + \\frac{b^2}{9}} = \\frac{5}{3}$$</p>\n<p>Square both sides: $$1 + \\frac{b^2}{9} = \\frac{25}{9}$$</p>\n<p>So, $ b^2 = 16 $.</p>\n<p><b>Step 6: Final equation of the hyperbola.</b></p>\n<p>So, the hyperbola is $$\\frac{x^2}{9} - \\frac{y^2}{16} = 1$$ with $ a^2 = 9, b^2 = 16 $.</p>\n<p><b>Step 7: Find the foci of the hyperbola.</b></p>\n<p>The foci are at $ (\\pm \\sqrt{a^2 + b^2}, 0) $.</p>\n<p>Plug in $ a^2 = 9, b^2 = 16 $: $ \\sqrt{9 + 16} = \\sqrt{25} = 5 $.</p>\n<p>So, the foci are at $ (\\pm 5, 0) $.</p>",
+    "solution": "<p>The equation of the ellipse is $$\\frac{x^2}{25}+\\frac{y^2}{16}=1$$. </p>\n<p>Here, the numbers 25 and 16 are the squares of the lengths of the axes. This means the semi-major axis $ a = 5 $ and the semi-minor axis $ b = 4 $.</p>\n<p><b>Step 1: Find the eccentricity of the ellipse.</b></p>\n<p>The eccentricity of an ellipse is given by the formula: $$e = \\sqrt{1 - \\frac{b^2}{a^2}}$$</p>\n<p>Let\u2019s plug in the values:\n\n$ b^2 = 16 $, $ a^2 = 25 $</p>\n<p>So, $ e = \\sqrt{1 - \\frac{16}{25}} = \\sqrt{\\frac{9}{25}} = \\frac{3}{5} $</p>\n<p><b>Step 2: Find the focus of the ellipse.</b></p>\n<p>The foci are at $ (\\pm \\sqrt{a^2 - b^2}, 0) $.</p>\n<p>So, $ a^2 - b^2 = 25 - 16 = 9 $. Take square root: $ \\sqrt{9} = 3 $.</p>\n<p>This means the foci are at $ (\\pm 3, 0) $.</p>\n<p><b>Step 3: Eccentricity of the hyperbola.</b></p>\n<p>The problem tells us: Product of eccentricities is 1.</p>\n<p>The ellipse's eccentricity $ e_{ellipse} = \\frac{3}{5} $. Let $ e_{hyperbola} $ be the hyperbola's eccentricity.</p>\n<p>So, $ e_{hyperbola} \\times \\frac{3}{5} = 1 $. \n\n$ e_{hyperbola} = \\frac{1}{\\frac{3}{5}} = \\frac{5}{3} $</p>\n<p><b>Step 4: Hyperbola passes through the focus (3, 0).</b></p>\n<p>Since the axes of the hyperbola match the ellipse, and it passes through (3, 0), write: $$\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$$</p>\n<p>Plug in $ x = 3 $, $ y = 0 $:</p>\n<p>$$\\frac{3^2}{a^2} - 0 = 1 \\implies \\frac{9}{a^2} = 1 \\implies a^2 = 9$$</p>\n<p>So the hyperbola equation is: $$\\frac{x^2}{9} - \\frac{y^2}{b^2} = 1$$</p>\n<p><b>Step 5: Use the eccentricity formula for the hyperbola.</b></p>\n<p>For a hyperbola, eccentricity $ e_{hyperbola} = \\sqrt{1 + \\frac{b^2}{a^2}} $</p>\n<p>We know $ e_{hyperbola} = \\frac{5}{3} $, $ a^2 = 9 $. Set up the equation: </p>\n<p>$$\\sqrt{1 + \\frac{b^2}{9}} = \\frac{5}{3}$$</p>\n<p>Square both sides: $$1 + \\frac{b^2}{9} = \\frac{25}{9}$$</p>\n<p>So, $ b^2 = 16 $.</p>\n<p><b>Step 6: Final equation of the hyperbola.</b></p>\n<p>So, the hyperbola is $$\\frac{x^2}{9} - \\frac{y^2}{16} = 1$$ with $ a^2 = 9, b^2 = 16 $.</p>\n<p><b>Step 7: Find the foci of the hyperbola.</b></p>\n<p>The foci are at $ (\\pm \\sqrt{a^2 + b^2}, 0) $.</p>\n<p>Plug in $ a^2 = 9, b^2 = 16 $: $ \\sqrt{9 + 16} = \\sqrt{25} = 5 $.</p>\n<p>So, the foci are at $ (\\pm 5, 0) $.</p>",
     "section": "Sec 2",
     "instruction": "",
     "type": "SCQ"

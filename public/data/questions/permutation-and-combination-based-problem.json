@@ -56,7 +56,7 @@
     "subject": "Mathematics",
     "topic": "permutation-and-combination-based-problem",
     "difficulty": "medium",
-    "solution": "<p>We want every pair drawn to have <b>one blue</b> and <b>one green</b>. Since there are 6 blue and 6 green balls, we will draw a total of 6 pairs.</p>\n<p>For each pair to be mixed (one of each colour), we must match the 6 blue balls with the 6 green balls in pairs. The number of such “good” pairings is counted by choosing and matching one ball of one colour with one ball of the other colour.</p>\n<p>The total number of ways to split 12 balls into 6 pairs (without caring about the order of drawing inside a pair) is counted separately. The required probability is:</p>\n<p>Probability $=\\frac{\\lfloor 6 \\times\\lfloor 6}{\\left(\\frac{12}{\\left(\\lfloor 2)^6\\lfloor 6\\right.}\\right) \\times\\lfloor 6}=\\frac{16}{231}$</p>\n<p>So, the probability that each drawn pair consists of one blue and one green ball is $\\frac{16}{231}$.</p>",
+    "solution": "<p>We want every pair drawn to have <b>one blue</b> and <b>one green</b>. Since there are 6 blue and 6 green balls, we will draw a total of 6 pairs.</p>\n<p>For each pair to be mixed (one of each colour), we must match the 6 blue balls with the 6 green balls in pairs. The number of such \u201cgood\u201d pairings is counted by choosing and matching one ball of one colour with one ball of the other colour.</p>\n<p>The total number of ways to split 12 balls into 6 pairs (without caring about the order of drawing inside a pair) is counted separately. The required probability is:</p>\n<p>Probability $=\\frac{\\lfloor 6 \\times\\lfloor 6}{\\left(\\frac{12}{\\left(\\lfloor 2)^6\\lfloor 6\\right.}\\right) \\times\\lfloor 6}=\\frac{16}{231}$</p>\n<p>So, the probability that each drawn pair consists of one blue and one green ball is $\\frac{16}{231}$.</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -177,7 +177,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -185,7 +185,7 @@
     "difficulty": "medium",
     "solution": "<p>$$\\frac{{ }^6 \\mathrm{C}_4}{{ }^{15} \\mathrm{C}_4} \\times \\frac{{ }^9 \\mathrm{C}_4}{{ }^{11} \\mathrm{C}_4}=\\frac{3}{715}$$</p>\n<p>Hence option (3) is correct.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsd3atnw",
@@ -229,7 +229,7 @@
     "difficulty": "medium",
     "solution": "<p>Equation is $$a x^2+b x+c=0$$</p>\n<p>$$\\mathrm{D}>0$$ [for roots to be real & distinct]</p>\n<p>$$\\Rightarrow b^2-4 a c>0$$</p>\n<p>For $$b<2$$ no value of $$a$$ & $$c$$ are possible</p>\n<p>$$\\begin{aligned}\n& \\text { For } b=3 \\Rightarrow a c<\\frac{9}{4} \\\\\n& (a, c) \\in\\{(1,1),(1,2),(2,1)\\} \\Rightarrow 3 \\text { cases }\n\\end{aligned}$$</p>\n<p>For $$b=4 \\Rightarrow a c<4$$</p>\n<p>$$(a, c) \\in\\{(1,1),(1,2),(2,1),(3,1),(1,3)\\} \\Rightarrow 5 \\text { cases }$$</p>\n<p>For $$b=5 \\Rightarrow a c<\\frac{25}{4}$$</p>\n<p>$$\\begin{aligned}\n& (a, c) \\in\\{(1,1),(1,2),(2,1),(3,1),(1,3),(2,2), \\\\\n& (4,1),(1,4),(3,2),(2,3),(5,1),(1,5),(1,6), \\\\\n& (6,1)\\}=14 \\text { cases }\n\\end{aligned}$$</p>\n<p>For $$b=6 \\Rightarrow a c<9$$</p>\n<p>$$\\begin{aligned}\n& (a, c) \\in\\{(1,1),(1,2),(2,1),(3,1),(1,3),(2,2), \\\\\n& (4,1),(1,4),(3,2),(2,3),(5,1),(1,5),(1,6), \\\\\n& (6,1),(2,4),(4,2)\\}=16 \\text { cases }\n\\end{aligned}$$</p>\n<p>Total cases $$=3+5+14+16=38$$ cases</p>\n<p>$$\\Rightarrow$$ Probability, $$p=\\frac{38}{216}$$</p>\n<p>$$\\Rightarrow 216 p=38$$</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1ldsuemqy",
@@ -348,7 +348,7 @@
     "difficulty": "medium",
     "solution": "Number of one-one function from $\\{a, b, c, d\\}$ to set $\\{1,2,3,4,5\\}$ is ${ }^{5} P_{4}=120 n(s)$.\n<br/><br/>\nThe required possible set of value (f(a), $f(b), f(c), f(d))$ such that $f(a)+2 f(b)-f(c)=f(d)$ are $(5,3,2,1),(5,1,2,3),(4,1,3,5),(3,1,4,5)$, $(5,4,3,2)$ and $(3,4,5,2)$\n<br/><br/>\n$\\therefore n(E)=6$\n<br/><br/>\n$\\therefore $ Required probability $=\\frac{n(E)}{n(S)}=\\frac{6}{120}=\\frac{1}{20}$",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1l544hp5b",
@@ -436,7 +436,7 @@
     "difficulty": "hard",
     "solution": "$$A = \\left| {\\matrix{\n   a &amp; b  \\cr \n   c &amp; d  \\cr \n\n } } \\right|$$<br><br>| A | = ad $$-$$ bc<br><br>Total case = 6<sup>4</sup><br><br>For non-singular matrix | A | $$\\ne$$ 0 $$\\Rightarrow$$ ad $$-$$ bc $$\\ne$$ 0<br><br>$$\\Rightarrow$$ ad $$\\ne$$ bc<br><br>And a, b, c, d are all different numbers in the set {1, 2, 3, 4, 5, 6}<br><br>Now for ad = bc<br><br>(i) 6 $$\\times$$ 1 = 2 $$\\times$$ 3<br><br>$$\\Rightarrow$$ $$\\left. \\matrix{\n  a = 6,b = 2,c = 3,d = 1 \\hfill \\cr \n  or\\,a = 1,b = 2,c = 3,d = 6 \\hfill \\cr \n  : \\hfill \\cr \n  : \\hfill \\cr}  \\right\\}$$ 8 each cases<br><br>(ii) 6 $$\\times$$ 2 = 3 $$\\times$$ 4<br><br>$$\\Rightarrow$$ $$\\left. \\matrix{\n  a = 6,b = 3,c = 4,d = 2 \\hfill \\cr \n  or\\,a = 2,b = 3,c = 4,d = 6 \\hfill \\cr \n  : \\hfill \\cr \n  : \\hfill \\cr}  \\right\\}$$ 8 such cases<br><br>favourable cases<br><br>= $$^6C_4 \\times 4!  - 16$$<br><br>required probability <br><br>$$ = {{{^6C_4 \\times 4!} - 16} \\over {{6^4}}} = {{43} \\over {162}}$$",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "JvSQmAt1Odx2wCs08v1klrlyrob",

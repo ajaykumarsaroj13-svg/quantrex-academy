@@ -89,7 +89,7 @@
     ],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -97,7 +97,7 @@
     "difficulty": "easy",
     "solution": "<p><p>The assertion states that magnetic monopoles do not exist. This is consistent with current experimental findings and the standard formulation of Maxwell's equations.</p></p>\n<p><p>The reason provided is that magnetic field lines are continuous and form closed loops. This is mathematically expressed by the Maxwell equation:</p>\n<p>$$\\nabla \\cdot B = 0$$</p>\n<p>This equation tells us that there are no \"sources\" or \"sinks\" of magnetic fields (unlike electric fields, which can originate or terminate at charges). In other words, magnetic field lines neither begin nor end; they loop continuously.</p></p>\n<p><p>Since the fact that the magnetic field lines form closed loops is a direct consequence of the absence of isolated magnetic charges (monopoles), the reason correctly explains the assertion.</p></p>\n\n<p>Thus, both (A) and (R) are correct, and (R) is the correct explanation of (A).</p>\n<p>The most appropriate answer is Option A.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsf28w8s",
@@ -285,7 +285,7 @@
     "subject": "Physics",
     "topic": "bar-magnet-or-magnetic-dipole",
     "difficulty": "easy",
-    "solution": "Torque on a bar magnet :\n<br><br>$$\\tau  = MB\\,\\sin \\theta $$\n<br><br>Here, $$\\theta $$ = 30º, I = 0.018 N-m, B = 0.06 T\n<br><br>$$0.018 = M \\times 0.06 \\times 0.5$$\n\n<br><br>$$ \\Rightarrow M = 0.6\\,A{m^2}$$<br><br>$$W = {U_f} - {U_i}$$<br><br>$$ = MB(\\cos {\\theta _i} - \\cos {\\theta _f})$$<br><br>$$ = 0.6 \\times 0.06(1 - ( - 1))$$<br><br>$$ = 7.2 \\times {10^{ - 2}}\\,J$$",
+    "solution": "Torque on a bar magnet :\n<br><br>$$\\tau  = MB\\,\\sin \\theta $$\n<br><br>Here, $$\\theta $$ = 30\u00ba, I = 0.018 N-m, B = 0.06 T\n<br><br>$$0.018 = M \\times 0.06 \\times 0.5$$\n\n<br><br>$$ \\Rightarrow M = 0.6\\,A{m^2}$$<br><br>$$W = {U_f} - {U_i}$$<br><br>$$ = MB(\\cos {\\theta _i} - \\cos {\\theta _f})$$<br><br>$$ = 0.6 \\times 0.06(1 - ( - 1))$$<br><br>$$ = 7.2 \\times {10^{ - 2}}\\,J$$",
     "section": "A",
     "type": "SCQ"
   },
@@ -307,14 +307,14 @@
     "subject": "Physics",
     "topic": "bar-magnet-or-magnetic-dipole",
     "difficulty": "medium",
-    "solution": "<p>To determine the work done in reversing the direction of a magnetic moment in a time-varying magnetic field, we'll follow these steps:</p>\n<p><strong>Given:</strong></p>\n\n<p><p>Magnetic moment: $\\mathbf{m} = 10^{-2} \\hat{i}$ A·m²</p></p>\n<p><p>Magnetic field: $\\mathbf{B}(t) = B \\cos(\\omega t) \\hat{i}$, where $B = 1$ T and $\\omega = 0.125$ rad/s</p></p>\n<p><p>Time at which reversal occurs: $t = 1$ s</p></p>\n\n<p><strong>Step 1: Calculate the Magnetic Field at $t = 1$ s</strong></p>\n<p>$ B(t) = B \\cos(\\omega t) = 1 \\times \\cos(0.125 \\times 1) = \\cos(0.125 \\text{ rad}) $</p>\n<p>Compute $\\cos(0.125 \\text{ rad})$:</p>\n<p>$ \\cos(0.125 \\text{ rad}) \\approx 0.9922 $</p>\n<p>So,</p>\n<p>$ B(t) \\approx 0.9922 \\text{ T} $</p>\n<p><strong>Step 2: Calculate the Work Done</strong></p>\n<p>The potential energy $U$ of a magnetic dipole in a magnetic field is:</p>\n<p>$ U = -\\mathbf{m} \\cdot \\mathbf{B} = -mB \\cos\\theta $</p>\n<p>The work done $W$ in reversing the magnetic moment from $\\theta = 0^\\circ$ to $\\theta = 180^\\circ$ is:</p>\n<p>$ W = U_{\\text{final}} - U_{\\text{initial}} = [-mB \\cos(180^\\circ)] - [-mB \\cos(0^\\circ)] = mB (\\cos 0^\\circ - \\cos 180^\\circ) $</p>\n<p>Simplify:</p>\n<p>$ W = mB (1 - (-1)) = 2mB $</p>\n<p>Substitute the values:</p>\n<p>$ W = 2 \\times (10^{-2} \\text{ A·m}^2) \\times (0.9922 \\text{ T}) \\approx 0.01984 \\text{ J} $</p>\n<p><strong>Step 3: Approximate Using RMS Value</strong></p>\n<p>Given that the magnetic field is time-varying, we can consider the root mean square (RMS) value of $\\cos(\\omega t)$ over a complete cycle:</p>\n<p>$ \\text{RMS of } \\cos(\\omega t) = \\frac{1}{\\sqrt{2}} $</p>\n<p>Thus, the RMS value of the magnetic field is:</p>\n<p>$ B_{\\text{RMS}} = B \\times \\frac{1}{\\sqrt{2}} = 1 \\times \\frac{1}{\\sqrt{2}} \\approx 0.7071 \\text{ T} $</p>\n<p>Now, calculate the work done using $B_{\\text{RMS}}$:</p>\n<p>$ W_{\\text{RMS}} = 2mB_{\\text{RMS}} = 2 \\times (10^{-2}) \\times 0.7071 \\approx 0.01414 \\text{ J} $</p>",
+    "solution": "<p>To determine the work done in reversing the direction of a magnetic moment in a time-varying magnetic field, we'll follow these steps:</p>\n<p><strong>Given:</strong></p>\n\n<p><p>Magnetic moment: $\\mathbf{m} = 10^{-2} \\hat{i}$ A\u00b7m\u00b2</p></p>\n<p><p>Magnetic field: $\\mathbf{B}(t) = B \\cos(\\omega t) \\hat{i}$, where $B = 1$ T and $\\omega = 0.125$ rad/s</p></p>\n<p><p>Time at which reversal occurs: $t = 1$ s</p></p>\n\n<p><strong>Step 1: Calculate the Magnetic Field at $t = 1$ s</strong></p>\n<p>$ B(t) = B \\cos(\\omega t) = 1 \\times \\cos(0.125 \\times 1) = \\cos(0.125 \\text{ rad}) $</p>\n<p>Compute $\\cos(0.125 \\text{ rad})$:</p>\n<p>$ \\cos(0.125 \\text{ rad}) \\approx 0.9922 $</p>\n<p>So,</p>\n<p>$ B(t) \\approx 0.9922 \\text{ T} $</p>\n<p><strong>Step 2: Calculate the Work Done</strong></p>\n<p>The potential energy $U$ of a magnetic dipole in a magnetic field is:</p>\n<p>$ U = -\\mathbf{m} \\cdot \\mathbf{B} = -mB \\cos\\theta $</p>\n<p>The work done $W$ in reversing the magnetic moment from $\\theta = 0^\\circ$ to $\\theta = 180^\\circ$ is:</p>\n<p>$ W = U_{\\text{final}} - U_{\\text{initial}} = [-mB \\cos(180^\\circ)] - [-mB \\cos(0^\\circ)] = mB (\\cos 0^\\circ - \\cos 180^\\circ) $</p>\n<p>Simplify:</p>\n<p>$ W = mB (1 - (-1)) = 2mB $</p>\n<p>Substitute the values:</p>\n<p>$ W = 2 \\times (10^{-2} \\text{ A\u00b7m}^2) \\times (0.9922 \\text{ T}) \\approx 0.01984 \\text{ J} $</p>\n<p><strong>Step 3: Approximate Using RMS Value</strong></p>\n<p>Given that the magnetic field is time-varying, we can consider the root mean square (RMS) value of $\\cos(\\omega t)$ over a complete cycle:</p>\n<p>$ \\text{RMS of } \\cos(\\omega t) = \\frac{1}{\\sqrt{2}} $</p>\n<p>Thus, the RMS value of the magnetic field is:</p>\n<p>$ B_{\\text{RMS}} = B \\times \\frac{1}{\\sqrt{2}} = 1 \\times \\frac{1}{\\sqrt{2}} \\approx 0.7071 \\text{ T} $</p>\n<p>Now, calculate the work done using $B_{\\text{RMS}}$:</p>\n<p>$ W_{\\text{RMS}} = 2mB_{\\text{RMS}} = 2 \\times (10^{-2}) \\times 0.7071 \\approx 0.01414 \\text{ J} $</p>",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "tdGV4kawhyFZKigfSES8o",
     "questionNumber": 19,
-    "questionText": "Two magnetic dipoles X and Y are placed at\na separation d, with their axes perpendicular to\neach other. The dipole moment of Y is twice\nthat of X. A particle of charge q is passing,\nthrough their midpoint P, at angle q = 45° with\nthe horizontal line, as shown in figure. What\nwould be the magnitude of force on the particle\nat that instant ?<br> (d is much larger than the\ndimensions of the dipole)\n<img src=\"https://imagex.cdn.examgoal.net/18hoxe66ijwc2w5to/aec950c5-8298-4d01-8b39-730e6cfde0ce/af3e9bc0-83a1-11e9-8081-1d558b7f1d26/file-18hoxe66ijwc2w5tp.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Evening Slot Physics - Magnetic Properties of Matter Question 55 English\">",
+    "questionText": "Two magnetic dipoles X and Y are placed at\na separation d, with their axes perpendicular to\neach other. The dipole moment of Y is twice\nthat of X. A particle of charge q is passing,\nthrough their midpoint P, at angle q = 45\u00b0 with\nthe horizontal line, as shown in figure. What\nwould be the magnitude of force on the particle\nat that instant ?<br> (d is much larger than the\ndimensions of the dipole)\n<img src=\"https://imagex.cdn.examgoal.net/18hoxe66ijwc2w5to/aec950c5-8298-4d01-8b39-730e6cfde0ce/af3e9bc0-83a1-11e9-8081-1d558b7f1d26/file-18hoxe66ijwc2w5tp.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 8th April Evening Slot Physics - Magnetic Properties of Matter Question 55 English\">",
     "options": [
       "$$ \\left( {{{{\\mu _0}} \\over {4\\pi }}} \\right){2M \\over {{{\\left( {d/2} \\right)}^3}}} \\times qv$$",
       "$$ \\left( {{{{\\mu _0}} \\over {4\\pi }}} \\right){M \\over {{{\\left( {d/2} \\right)}^3}}} \\times qv$$",
@@ -351,7 +351,7 @@
     "subject": "Physics",
     "topic": "bar-magnet-or-magnetic-dipole",
     "difficulty": "easy",
-    "solution": "Given : Magnetic moment, M = 6.7 × 10<sup>–2</sup> Am<sup>2</sup>\n<br><br>Magnetic field, B = 0.01 T\n<br><br>Moment of inertia, I = 7.5 × 10<sup>–6</sup> Kgm<sup>2</sup>\n<br><br>Using, T = $$2\\pi \\sqrt {{I \\over {MB}}} $$\n<br><br>= $$2\\pi \\sqrt {{{7.5 \\times {{10}^{ - 6}}} \\over {6.7 \\times {{10}^{ - 2}} \\times 0.01}}} $$\n<br><br>= $${{2\\pi } \\over {10}} \\times 1.06$$ s\n<br><br>Time taken for 10 complete oscillations\n<br><br>t = 10T = 2$$\\pi $$ × 1.06\n<br><br>= 6.6568 $$ \\simeq $$ 6.65 s",
+    "solution": "Given : Magnetic moment, M = 6.7 \u00d7 10<sup>\u20132</sup> Am<sup>2</sup>\n<br><br>Magnetic field, B = 0.01 T\n<br><br>Moment of inertia, I = 7.5 \u00d7 10<sup>\u20136</sup> Kgm<sup>2</sup>\n<br><br>Using, T = $$2\\pi \\sqrt {{I \\over {MB}}} $$\n<br><br>= $$2\\pi \\sqrt {{{7.5 \\times {{10}^{ - 6}}} \\over {6.7 \\times {{10}^{ - 2}} \\times 0.01}}} $$\n<br><br>= $${{2\\pi } \\over {10}} \\times 1.06$$ s\n<br><br>Time taken for 10 complete oscillations\n<br><br>t = 10T = 2$$\\pi $$ \u00d7 1.06\n<br><br>= 6.6568 $$ \\simeq $$ 6.65 s",
     "section": "A",
     "type": "SCQ"
   },

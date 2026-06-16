@@ -286,7 +286,7 @@
     "question": "Let $$\\left( {x,\\,y,\\,z} \\right)$$ be points with integer coordinates satisfying the system of homogeneous equation: \n$$$\\matrix{\n   {3x - y - z = 0}  \\cr \n   { - 3x + z = 0}  \\cr \n   { - 3x + 2y + z = 0}  \\cr \n\n } $$$\n<p>Then the number of such points for which $$x^2 + {y^2} + {z^2} \\le 100$$ is</p>",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "<p>To solve this problem, we need to find the integer points $$\\left( {x,\\,y,\\,z} \\right)$$ that satisfy the given system of homogeneous equations:</p>\n\n<p>$$\\matrix{    {3x - y - z = 0}  \\cr     { - 3x + z = 0}  \\cr     { - 3x + 2y + z = 0}  \\cr   }$$</p>\n\n<p>Firstly, let’s solve for $$z$$ in terms of $$x$$ from the second equation:</p>\n\n<p>$$ - 3x + z = 0 \\Rightarrow z = 3x $$</p>\n\n<p>Next, substitute $$z = 3x$$ into the first equation:</p>\n\n<p>$$ 3x - y - 3x = 0 \\Rightarrow -y = 0 \\Rightarrow y = 0 $$</p>\n\n<p>With $$y = 0$$ and $$z = 3x$$, the third equation also should be satisfied. Let's substitute $$y$$ and $$z$$ back into the third equation to verify:</p>\n\n<p>$$ - 3x + 2y + z = 0 \\Rightarrow - 3x + 2(0) + 3x = 0 $$</p>\n\n<p>This equation holds true, confirming that the solutions for $$y$$ and $$z$$ remain consistent. Therefore, the points that satisfy the given system are of the form:</p>\n\n<p>$$\\left( x,\\,0,\\,3x \\right)$$</p>\n\n<p>Additionally, we need $$x^2 + y^2 + z^2 \\le 100$$. Substituting $$y = 0$$ and $$z = 3x$$, we get:</p>\n\n<p>$$ x^2 + 0^2 + (3x)^2 \\le 100 $$</p>\n\n<p>This further simplifies to:</p>\n\n<p>$$ x^2 + 9x^2 \\le 100 $$</p>\n\n<p>$$ 10x^2 \\le 100 $$</p>\n\n<p>$$ x^2 \\le 10 $$</p>\n\n<p>Hence, $$ -\\sqrt{10} \\le x \\le \\sqrt{10} $$</p>\n\n<p>Since $$x$$ must be an integer, we evaluate acceptable values for $$x$$:</p>\n\n<p>$$x \\in \\{-3,\\,-2,\\,-1,\\,0,\\,1,\\,2,\\,3\\}$$</p>\n\n<p>For each of these values, let’s determine the corresponding points $$\\left( x,\\,0,\\,3x \\right)$$:</p>\n\n<ul>\n\n<li>$$( -3,\\,0,\\,-9 )$$</li>\n\n<li>$$( -2,\\,0,\\,-6 )$$</li>\n\n<li>$$( -1,\\,0,\\,-3 )$$</li>\n\n<li>$$( 0,\\,0,\\,0 )$$</li>\n\n<li>$$( 1,\\,0,\\,3 )$$</li>\n\n<li>$$( 2,\\,0,\\,6 )$$</li>\n\n<li>$$( 3,\\,0,\\,9 )$$</li>\n\n</ul>\n\n<p>Thus, there are a total of 7 such points.</p>\n\n<p>Therefore, the number of integer-coordinate points $$\\left( x,\\,y,\\,z \\right)$$ satisfying the given system of equations and the condition $$x^2 + y^2 + z^2 \\le 100$$ is <strong>7</strong>.</p>",
+    "solution": "<p>To solve this problem, we need to find the integer points $$\\left( {x,\\,y,\\,z} \\right)$$ that satisfy the given system of homogeneous equations:</p>\n\n<p>$$\\matrix{    {3x - y - z = 0}  \\cr     { - 3x + z = 0}  \\cr     { - 3x + 2y + z = 0}  \\cr   }$$</p>\n\n<p>Firstly, let\u2019s solve for $$z$$ in terms of $$x$$ from the second equation:</p>\n\n<p>$$ - 3x + z = 0 \\Rightarrow z = 3x $$</p>\n\n<p>Next, substitute $$z = 3x$$ into the first equation:</p>\n\n<p>$$ 3x - y - 3x = 0 \\Rightarrow -y = 0 \\Rightarrow y = 0 $$</p>\n\n<p>With $$y = 0$$ and $$z = 3x$$, the third equation also should be satisfied. Let's substitute $$y$$ and $$z$$ back into the third equation to verify:</p>\n\n<p>$$ - 3x + 2y + z = 0 \\Rightarrow - 3x + 2(0) + 3x = 0 $$</p>\n\n<p>This equation holds true, confirming that the solutions for $$y$$ and $$z$$ remain consistent. Therefore, the points that satisfy the given system are of the form:</p>\n\n<p>$$\\left( x,\\,0,\\,3x \\right)$$</p>\n\n<p>Additionally, we need $$x^2 + y^2 + z^2 \\le 100$$. Substituting $$y = 0$$ and $$z = 3x$$, we get:</p>\n\n<p>$$ x^2 + 0^2 + (3x)^2 \\le 100 $$</p>\n\n<p>This further simplifies to:</p>\n\n<p>$$ x^2 + 9x^2 \\le 100 $$</p>\n\n<p>$$ 10x^2 \\le 100 $$</p>\n\n<p>$$ x^2 \\le 10 $$</p>\n\n<p>Hence, $$ -\\sqrt{10} \\le x \\le \\sqrt{10} $$</p>\n\n<p>Since $$x$$ must be an integer, we evaluate acceptable values for $$x$$:</p>\n\n<p>$$x \\in \\{-3,\\,-2,\\,-1,\\,0,\\,1,\\,2,\\,3\\}$$</p>\n\n<p>For each of these values, let\u2019s determine the corresponding points $$\\left( x,\\,0,\\,3x \\right)$$:</p>\n\n<ul>\n\n<li>$$( -3,\\,0,\\,-9 )$$</li>\n\n<li>$$( -2,\\,0,\\,-6 )$$</li>\n\n<li>$$( -1,\\,0,\\,-3 )$$</li>\n\n<li>$$( 0,\\,0,\\,0 )$$</li>\n\n<li>$$( 1,\\,0,\\,3 )$$</li>\n\n<li>$$( 2,\\,0,\\,6 )$$</li>\n\n<li>$$( 3,\\,0,\\,9 )$$</li>\n\n</ul>\n\n<p>Thus, there are a total of 7 such points.</p>\n\n<p>Therefore, the number of integer-coordinate points $$\\left( x,\\,y,\\,z \\right)$$ satisfying the given system of equations and the condition $$x^2 + y^2 + z^2 \\le 100$$ is <strong>7</strong>.</p>",
     "marks": 3,
     "negativeMarks": -1,
     "topic": "application-of-permutations-and-combination-in-geometry",
@@ -1154,7 +1154,7 @@
     "title": "AIEEE 2011",
     "year": "2011",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<br> <b> Statement - 1: </b> The number of ways of distributing 10 identical balls in 4 distinct boxes such that no box is emply is $${}^9{C_3}$$.\n<br> <b>  Statement - 2: </b> The number of ways of choosing any 3 places from 9 different places is $${}^9{C_3}$$.",
     "options": [
       "Statement - 1 is true,  Statement - 2 is true,  Statement - 2 is not a correct explanation for  Statement - 1.",
@@ -1167,7 +1167,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "number-of-combinations",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "FrmiixXJ0JcQkToz",
@@ -1207,7 +1207,7 @@
       "220"
     ],
     "correctOptionIndex": 0,
-    "solution": "A $$ \\times $$ B will have 2 $$ \\times $$ 4 = 8 elements.\n<br><br>The number of subsets having atleast 3 elements\n<br><br>= <sup>8</sup>C<sub>3</sub> + <sup>8</sup>C<sub>4</sub> + <sup>8</sup>C<sub>5</sub> + <sup>8</sup>C<sub>6</sub> + <sup>8</sup>C<sub>7</sub> + <sup>8</sup>C<sub>8</sub> \n<br><br>= 2<sup>8</sup> – (<sup>8</sup>C<sub>0</sub> + <sup>8</sup>C<sub>1</sub> + <sup>8</sup>C<sub>2</sub>) = 256 – 1 – 8 – 28 = 219 ",
+    "solution": "A $$ \\times $$ B will have 2 $$ \\times $$ 4 = 8 elements.\n<br><br>The number of subsets having atleast 3 elements\n<br><br>= <sup>8</sup>C<sub>3</sub> + <sup>8</sup>C<sub>4</sub> + <sup>8</sup>C<sub>5</sub> + <sup>8</sup>C<sub>6</sub> + <sup>8</sup>C<sub>7</sub> + <sup>8</sup>C<sub>8</sub> \n<br><br>= 2<sup>8</sup> \u2013 (<sup>8</sup>C<sub>0</sub> + <sup>8</sup>C<sub>1</sub> + <sup>8</sup>C<sub>2</sub>) = 256 \u2013 1 \u2013 8 \u2013 28 = 219 ",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "number-of-combinations",
@@ -1289,10 +1289,10 @@
     "type": "SCQ",
     "question": "If &nbsp;&nbsp; $${{{}^{n + 2}C{}_6} \\over {{}^{n - 2}{P_2}}}$$ = 11, then n satisfies the\nequation :",
     "options": [
-      "n<sup>2</sup> + 3n − 108 = 0",
-      "n<sup>2</sup> + 5n − 84 = 0\n",
-      "n<sup>2</sup> + 2n − 80 = 0",
-      "n<sup>2</sup> + n − 110 = 0"
+      "n<sup>2</sup> + 3n \u2212 108 = 0",
+      "n<sup>2</sup> + 5n \u2212 84 = 0\n",
+      "n<sup>2</sup> + 2n \u2212 80 = 0",
+      "n<sup>2</sup> + n \u2212 110 = 0"
     ],
     "correctOptionIndex": 0,
     "solution": "$${{{}^{n + 2}{C_6}} \\over {{}^{n - 2}{P_2}}} = 11$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${{\\left( {n + 2} \\right)!} \\over {6!\\,\\left( {n - 4} \\right)!}} = 11\\,.\\,{{\\left( {n - 2} \\right)!} \\over {\\left( {n - 4} \\right)!}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;(n + 2)!&nbsp;&nbsp;=&nbsp;&nbsp;11.6! (n $$-$$ 2)!\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;(n + 2) (n + 1) n (n $$-$$ 1) &nbsp;&nbsp;=&nbsp;&nbsp; 11.6!\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;(n + 2) (n + 1) n (n $$-$$ 1) = 11 . 6 . 5 . 4 . 3 . 2 . 1\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;(n + 2) (n + 1) n (n $$-$$ 1) &nbsp;&nbsp;=&nbsp;&nbsp;11 . 10 . 9 . 8\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;n = 9\n<br><br>This value of n satisfy the equation, \n<br><br>n<sup>2</sup> + 3n $$-$$ 108 = 0",
@@ -1353,7 +1353,7 @@
     "year": "2016",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "If the four letter words (need not be meaningful ) are to be formed using the\nletters from the word “MEDITERRANEAN” such that the first letter is R and the fourth letter is E, then the total number of all such words is :\n",
+    "question": "If the four letter words (need not be meaningful ) are to be formed using the\nletters from the word \u201cMEDITERRANEAN\u201d such that the first letter is R and the fourth letter is E, then the total number of all such words is :\n",
     "options": [
       "$${{11!} \\over {{{\\left( {2!} \\right)}^3}}}$$",
       "110",
@@ -1462,7 +1462,7 @@
     "title": "JEE Main 2018 (Online) 15th April Evening Slot",
     "year": "2018",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "The number of four letter words that can be formed using the letters of the word <b>BARRACK</b> is : ",
     "options": [
       "120",
@@ -1559,7 +1559,7 @@
       "48"
     ],
     "correctOptionIndex": 1,
-    "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-860w.jpg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1040w.jpg\"><source media=\"(max-width: 1220px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1220w.jpg\"><source media=\"(max-width: 1400px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1400w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1580w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th April Morning Slot Mathematics - Permutations and Combinations Question 178 English Explanation\"></picture><br>\n digit 0, 1, 2, 5, 7, 9<br><br>\n$$\\left( {{a_1} + {a_3} + {a_5}} \\right) - \\left( {{a_2} + {a_4} + {a_6}} \\right) = 11\\,K$$<br><br>\nso (1, 2, 9) (0, 5, 7)<br><br>\nNow number of ways to arranging them<br><br>\n= 3! × 3! + 3! × 2 × 2<br><br>\n= 6 × 6 + 6 × 4<br><br>\n= 6 × 10<br><br>\n= 60",
+    "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-860w.jpg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1040w.jpg\"><source media=\"(max-width: 1220px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1220w.jpg\"><source media=\"(max-width: 1400px)\" srcset=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1400w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/jf7697gjy7xui4q/831d4110-3eba-4f37-bf4a-5b85a0a71605/3fa5caa0-a8f3-11e9-a277-6507805b1ccf/file-jf7697gjy7xui4r-1580w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th April Morning Slot Mathematics - Permutations and Combinations Question 178 English Explanation\"></picture><br>\n digit 0, 1, 2, 5, 7, 9<br><br>\n$$\\left( {{a_1} + {a_3} + {a_5}} \\right) - \\left( {{a_2} + {a_4} + {a_6}} \\right) = 11\\,K$$<br><br>\nso (1, 2, 9) (0, 5, 7)<br><br>\nNow number of ways to arranging them<br><br>\n= 3! \u00d7 3! + 3! \u00d7 2 \u00d7 2<br><br>\n= 6 \u00d7 6 + 6 \u00d7 4<br><br>\n= 6 \u00d7 10<br><br>\n= 60",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "conditional-permutations",
@@ -1661,7 +1661,7 @@
     "year": "2019",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "Consider three boxes, each containing, 10 balls labelled 1, 2, … , 10. Suppose one ball is randomly drawn from each of the boxes. Denote by n<sub>i</sub>, the label of the ball drawn from the i<sup>th</sup> box, (i = 1, 2, 3). Then, the number of ways in which the balls can be chosen such that n<sub>1</sub> &lt; n<sub>2</sub> &lt; n<sub>3</sub> is : ",
+    "question": "Consider three boxes, each containing, 10 balls labelled 1, 2, \u2026 , 10. Suppose one ball is randomly drawn from each of the boxes. Denote by n<sub>i</sub>, the label of the ball drawn from the i<sup>th</sup> box, (i = 1, 2, 3). Then, the number of ways in which the balls can be chosen such that n<sub>1</sub> &lt; n<sub>2</sub> &lt; n<sub>3</sub> is : ",
     "options": [
       "164",
       "240",
@@ -1729,7 +1729,7 @@
     "type": "SCQ",
     "question": "A committee of 11 members is to be formed from\n8 males and 5 females. If m is the number of ways\nthe committee is formed with at least 6 males and\nn is the number of ways the committee is formed\nwith at least 3 females, then :",
     "options": [
-      "n = m – 8",
+      "n = m \u2013 8",
       "m = n = 78",
       "m + n = 68",
       "m = n = 68"
@@ -1823,7 +1823,7 @@
       "200"
     ],
     "correctOptionIndex": 0,
-    "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kie5ddie/d97f1ef4-fdd9-4070-a708-42e8f2d85993/b3d4db70-3851-11eb-a8a1-a9b3e27bdfe8/file-1kie5ddif-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kie5ddie/d97f1ef4-fdd9-4070-a708-42e8f2d85993/b3d4db70-3851-11eb-a8a1-a9b3e27bdfe8/file-1kie5ddif-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kie5ddie/d97f1ef4-fdd9-4070-a708-42e8f2d85993/b3d4db70-3851-11eb-a8a1-a9b3e27bdfe8/file-1kie5ddif-680w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 2nd September Evening Slot Mathematics - Permutations and Combinations Question 166 English Explanation\"></picture><br>\nNumber of blue lines = Number of sides = n<br><br>\nNumber of red lines = number of diagonals = <sup>n</sup>C<sub>2</sub> – n<br><br>\nAccording to question, <br><br>\n$${}^n{C_2} - n = 99n$$<br><br>\n$$ \\Rightarrow {{n\\left( {n - 1} \\right)} \\over 2} - n = 99n$$<br><br>\n$$ \\Rightarrow {{n - 1} \\over 2} = 99$$<br><br>\n$$ \\Rightarrow n = 201$$",
+    "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kie5ddie/d97f1ef4-fdd9-4070-a708-42e8f2d85993/b3d4db70-3851-11eb-a8a1-a9b3e27bdfe8/file-1kie5ddif-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kie5ddie/d97f1ef4-fdd9-4070-a708-42e8f2d85993/b3d4db70-3851-11eb-a8a1-a9b3e27bdfe8/file-1kie5ddif-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kie5ddie/d97f1ef4-fdd9-4070-a708-42e8f2d85993/b3d4db70-3851-11eb-a8a1-a9b3e27bdfe8/file-1kie5ddif-680w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 2nd September Evening Slot Mathematics - Permutations and Combinations Question 166 English Explanation\"></picture><br>\nNumber of blue lines = Number of sides = n<br><br>\nNumber of red lines = number of diagonals = <sup>n</sup>C<sub>2</sub> \u2013 n<br><br>\nAccording to question, <br><br>\n$${}^n{C_2} - n = 99n$$<br><br>\n$$ \\Rightarrow {{n\\left( {n - 1} \\right)} \\over 2} - n = 99n$$<br><br>\n$$ \\Rightarrow {{n - 1} \\over 2} = 99$$<br><br>\n$$ \\Rightarrow n = 201$$",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "circular-permutations",
@@ -1871,15 +1871,15 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "SCQ",
-    "question": "The value of (2.<sup>1</sup>P<sub>0</sub>\n – 3.<sup>2</sup>P<sub>1</sub> + 4.<sup>3</sup>P<sub>2</sub> .... up to\n51<sup>th</sup> term)<br> + (1! – 2! + 3! – ..... up to 51<sup>th</sup> term)\nis equal to :",
+    "question": "The value of (2.<sup>1</sup>P<sub>0</sub>\n \u2013 3.<sup>2</sup>P<sub>1</sub> + 4.<sup>3</sup>P<sub>2</sub> .... up to\n51<sup>th</sup> term)<br> + (1! \u2013 2! + 3! \u2013 ..... up to 51<sup>th</sup> term)\nis equal to :",
     "options": [
       "1",
       "1 + (51)!",
-      "1 – 51(51)!",
+      "1 \u2013 51(51)!",
       "1 + (52)!"
     ],
     "correctOptionIndex": 3,
-    "solution": "(2.<sup>1</sup>P<sub>0</sub>\n – 3.<sup>2</sup>P<sub>1</sub> + 4.<sup>3</sup>P<sub>2</sub> .... up to\n51<sup>th</sup> term)<br> + (1! – 2! + 3! – ..... up to 51<sup>th</sup> term)\n<br><br>= ( 2.1! - 3.2! + 4.3! - ....+ 52.51!)\n<br>+ ( 1! – 2! + 3! – ..... + (51)! )\n<br><br>= (2! - 3! + 4! .....+ 52! )\n<br>+ ( 1! - 2! + 3! - 4! + .....+ 51! )\n<br><br>= 1 + (52)!",
+    "solution": "(2.<sup>1</sup>P<sub>0</sub>\n \u2013 3.<sup>2</sup>P<sub>1</sub> + 4.<sup>3</sup>P<sub>2</sub> .... up to\n51<sup>th</sup> term)<br> + (1! \u2013 2! + 3! \u2013 ..... up to 51<sup>th</sup> term)\n<br><br>= ( 2.1! - 3.2! + 4.3! - ....+ 52.51!)\n<br>+ ( 1! \u2013 2! + 3! \u2013 ..... + (51)! )\n<br><br>= (2! - 3! + 4! .....+ 52! )\n<br>+ ( 1! - 2! + 3! - 4! + .....+ 51! )\n<br><br>= 1 + (52)!",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "number-of-permutations",
@@ -1932,7 +1932,7 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "NUMERICAL",
-    "question": "The number of words, with or without meaning, that can be formed by taking 4 letters at a time from the letters of the word ’SYLLABUS’ such that two letters are distinct and two letters are alike, is :\n",
+    "question": "The number of words, with or without meaning, that can be formed by taking 4 letters at a time from the letters of the word \u2019SYLLABUS\u2019 such that two letters are distinct and two letters are alike, is :\n",
     "options": [],
     "correctOptionIndex": 0,
     "solution": "In 'SYLLABUS' word\n<br><br>1. Two S letters\n<br><br>2. Two L letters\n<br><br>3. One Y letter\n<br><br>4. One A letter\n<br><br>5. One B letter\n<br><br>6. One U letter\n<br><br>Number of ways we can select two alike\nletters = <sup>2</sup>C<sub>1</sub>\n<br><br>Then number of ways we can select two distinct\nletters = <sup>5</sup>C<sub>2</sub>\n<br><br>Then total arrangement of\nselected letters = $${{4!} \\over {2!}}$$\n<br><br>So total number of words, with or without meaning, that can be formed\n<br><br>= <sup>2</sup>C<sub>1</sub> $$ \\times $$ <sup>5</sup>C<sub>2</sub> $$ \\times $$ $${{4!} \\over {2!}}$$ = 240",
@@ -1966,10 +1966,10 @@
     "year": "2020",
     "difficulty": "medium",
     "type": "FIB",
-    "question": "The number of words (with or without meaning)\nthat can be formed from all the letters of the\nword “LETTER” in which vowels never come\ntogether is ________ .",
+    "question": "The number of words (with or without meaning)\nthat can be formed from all the letters of the\nword \u201cLETTER\u201d in which vowels never come\ntogether is ________ .",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "Consonants $$ \\to $$ LTTR\n<br>Vowels $$ \\to $$ EE\n<br><br>Total No of words = $${{6!} \\over {2!2!}}$$ = 180\n<br><br>Total no of words if vowels are together\n<br>= $${{5!} \\over {2!}}$$ = 60\n<br><br>$$ \\therefore $$ Total no of words where<br> vowels never come together = 180 – 60 = 120.",
+    "solution": "Consonants $$ \\to $$ LTTR\n<br>Vowels $$ \\to $$ EE\n<br><br>Total No of words = $${{6!} \\over {2!2!}}$$ = 180\n<br><br>Total no of words if vowels are together\n<br>= $${{5!} \\over {2!}}$$ = 60\n<br><br>$$ \\therefore $$ Total no of words where<br> vowels never come together = 180 \u2013 60 = 120.",
     "marks": 4,
     "negativeMarks": 0,
     "topic": "conditional-permutations",
@@ -2013,7 +2013,7 @@
       "4"
     ],
     "correctOptionIndex": 3,
-    "solution": "6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3). <sup>36</sup>C<sub>r + 1</sub>\n<br><br>$$ \\Rightarrow $$ 6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3).$${{36} \\over {r + 1}}$$<sup>35</sup>C<sub>r</sub>\n<br><br>$$ \\Rightarrow $$ k<sup>2</sup> - 3 = $${{r + 1} \\over 6}$$\n<br><br>Possible values of r for integral values of k, are\n<br><br>r = 5, 35\n<br><br>number of ordered pairs are 4\n<br><br>(5, 2), (5, –2), (35, 3), (35, 3)",
+    "solution": "6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3). <sup>36</sup>C<sub>r + 1</sub>\n<br><br>$$ \\Rightarrow $$ 6.<sup>35</sup>C<sub>r</sub>\n = (k<sup>2</sup> - 3).$${{36} \\over {r + 1}}$$<sup>35</sup>C<sub>r</sub>\n<br><br>$$ \\Rightarrow $$ k<sup>2</sup> - 3 = $${{r + 1} \\over 6}$$\n<br><br>Possible values of r for integral values of k, are\n<br><br>r = 5, 35\n<br><br>number of ordered pairs are 4\n<br><br>(5, 2), (5, \u20132), (35, 3), (35, 3)",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "number-of-combinations",
@@ -2157,7 +2157,7 @@
       "364"
     ],
     "correctOptionIndex": 2,
-    "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kq43jyux/e77ccdc3-ca66-48e2-9b73-6e219741f000/7d74b9a0-d12c-11eb-bdce-9d5b826a16d8/file-1kq43jyuy.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 17th March Evening Shift Mathematics - Permutations and Combinations Question 149 English Explanation\">\n<br>Total number of triangles<br><br>= $${}^{14}{C_3} - {}^3{C_3} - {}^5{C_3} - {}^6{C_3}$$\n<br><br>= 364 – 31 = 333",
+    "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kq43jyux/e77ccdc3-ca66-48e2-9b73-6e219741f000/7d74b9a0-d12c-11eb-bdce-9d5b826a16d8/file-1kq43jyuy.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 17th March Evening Shift Mathematics - Permutations and Combinations Question 149 English Explanation\">\n<br>Total number of triangles<br><br>= $${}^{14}{C_3} - {}^3{C_3} - {}^5{C_3} - {}^6{C_3}$$\n<br><br>= 364 \u2013 31 = 333",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "application-of-permutations-and-combination-in-geometry",
@@ -2342,7 +2342,7 @@
     "question": "The students S<sub>1</sub>, S<sub>2</sub>, ....., S<sub>10</sub> are to be divided into 3 groups A, B and C such that each group has at least one student and the group C has at most 3 students. Then the total number of possibilities of forming such groups is ___________.",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "If group C has one student then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>1</sub>\n[2<sup>9</sup>\n – 2] = 5100\n<br><br>If group C has two students then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>2</sub>\n[2<sup>8</sup>\n – 2] = 11430\n<br><br>If group C has three students then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>3</sub>\n × [2<sup>7</sup>\n – 2] = 15120\n<br><br>So total groups = 31650",
+    "solution": "If group C has one student then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>1</sub>\n[2<sup>9</sup>\n \u2013 2] = 5100\n<br><br>If group C has two students then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>2</sub>\n[2<sup>8</sup>\n \u2013 2] = 11430\n<br><br>If group C has three students then number of\ngroups\n<br><br>= <sup>10</sup>C<sub>3</sub>\n \u00d7 [2<sup>7</sup>\n \u2013 2] = 15120\n<br><br>So total groups = 31650",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "conditional-combinations",
@@ -2403,7 +2403,7 @@
     "question": "The total number of numbers, lying between 100 and 1000 that can be formed with the digits 1, 2, 3, 4, 5, if the repetition of digits is not allowed and numbers are divisible by either 3 or 5, is _____________.",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "The numbers are lying between 100 and 1000\nthen each number is of three digits.\n<br><br>The possible combination of 3 digits numbers\nare\n<br><br>1, 2, 3; 1, 2, 4; 1, 2, 5; 1, 3, 4; 1, 3, 5; 1, 4, 5;\n2, 3, 4; 2, 3, 5; 2, 4, 5; and 3, 4, 5.\n<br><br>The possible combination of numbers which are divisible by 3 are 1, 2,\n3; 3, 4, 5; 1, 3, 5 and 2, 3, 4.\n<br>(If sum of digits of a number is divisible by 3 then the number is divisible by 3)\n<br><br>$$ \\therefore $$ Total number of numbers = 4 × 3! = 24\n<br><br>The possible combination of numbers divisible by 5 are 1, 2, 5; 2, 3, 5; 3, 4, 5; 1, 3, 5;\n1, 4, 5 and 2, 4, 5.\n<br>(If the last digit of a number is 0 or 5 then the number is divisible by 5)\n<br><br>$$ \\therefore $$ Total number of numbers = 6 × 2! = 12\n<br><br>The possible combination of number divisible by both 3 and 5 are 1, 3, 5 and 3, 4, 5.\n\n<br><br>$$ \\therefore $$ Total number of numbers = 2 $$ \\times $$ 2! = 4\n<br><br>$$ \\therefore $$ Total required number = 24 + 12 - 4 = 32",
+    "solution": "The numbers are lying between 100 and 1000\nthen each number is of three digits.\n<br><br>The possible combination of 3 digits numbers\nare\n<br><br>1, 2, 3; 1, 2, 4; 1, 2, 5; 1, 3, 4; 1, 3, 5; 1, 4, 5;\n2, 3, 4; 2, 3, 5; 2, 4, 5; and 3, 4, 5.\n<br><br>The possible combination of numbers which are divisible by 3 are 1, 2,\n3; 3, 4, 5; 1, 3, 5 and 2, 3, 4.\n<br>(If sum of digits of a number is divisible by 3 then the number is divisible by 3)\n<br><br>$$ \\therefore $$ Total number of numbers = 4 \u00d7 3! = 24\n<br><br>The possible combination of numbers divisible by 5 are 1, 2, 5; 2, 3, 5; 3, 4, 5; 1, 3, 5;\n1, 4, 5 and 2, 4, 5.\n<br>(If the last digit of a number is 0 or 5 then the number is divisible by 5)\n<br><br>$$ \\therefore $$ Total number of numbers = 6 \u00d7 2! = 12\n<br><br>The possible combination of number divisible by both 3 and 5 are 1, 3, 5 and 3, 4, 5.\n\n<br><br>$$ \\therefore $$ Total number of numbers = 2 $$ \\times $$ 2! = 4\n<br><br>$$ \\therefore $$ Total required number = 24 + 12 - 4 = 32",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "conditional-permutations",
@@ -2588,7 +2588,7 @@
     "question": "The number of six letter words (with or without meaning), formed using all the letters of the word 'VOWELS', so that all the consonants never come together, is ___________.",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "Total possible words = 6! = 720\n<br><br>When 4 consonants are together (V, W, L, S)\n<br>such cases = 3! ⋅ 4! = 144\n<br><br>All consonants should not be together<br><br>= Total $$-$$ All consonants together,<br><br>= 6! $$-$$ 3! 4! = 576",
+    "solution": "Total possible words = 6! = 720\n<br><br>When 4 consonants are together (V, W, L, S)\n<br>such cases = 3! \u22c5 4! = 144\n<br><br>All consonants should not be together<br><br>= Total $$-$$ All consonants together,<br><br>= 6! $$-$$ 3! 4! = 576",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "conditional-permutations",
@@ -2707,7 +2707,7 @@
     "question": "<p>Numbers are to be formed between 1000 and 3000 , which are divisible by 4 , using the digits $$1,2,3,4,5$$ and 6 without repetition of digits. Then the total number of  such numbers is ____________.</p>",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "Here 1<sup>st</sup> digit is 1 or 2 only<br><br>\n<b>Case-I</b><br><br>\nIf first digit is 1<br><br>\nThen last two digits can be 24, 32, 36, 52, 56, 64 <br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l97twac2/f9689a1f-abde-44d3-bf0b-1a1289bdd7bc/f788ec10-4b61-11ed-80b9-4154b7faa509/file-1l97twac3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l97twac2/f9689a1f-abde-44d3-bf0b-1a1289bdd7bc/f788ec10-4b61-11ed-80b9-4154b7faa509/file-1l97twac3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th July Evening Shift Mathematics - Permutations and Combinations Question 116 English Explanation 1\"><br>\n<b>Case – II </b><br><br>\nIf first digit is 2 then last two digit can be 16, 36,\n56, 64 <br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l97tyhd1/d57389e9-902a-407f-843c-e06ca2c6e0b2/3494f950-4b62-11ed-80b9-4154b7faa509/file-1l97tyhd2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l97tyhd1/d57389e9-902a-407f-843c-e06ca2c6e0b2/3494f950-4b62-11ed-80b9-4154b7faa509/file-1l97tyhd2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th July Evening Shift Mathematics - Permutations and Combinations Question 116 English Explanation 2\"><br>\nTotal ways = 12 + 18 = 30 ways ",
+    "solution": "Here 1<sup>st</sup> digit is 1 or 2 only<br><br>\n<b>Case-I</b><br><br>\nIf first digit is 1<br><br>\nThen last two digits can be 24, 32, 36, 52, 56, 64 <br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l97twac2/f9689a1f-abde-44d3-bf0b-1a1289bdd7bc/f788ec10-4b61-11ed-80b9-4154b7faa509/file-1l97twac3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l97twac2/f9689a1f-abde-44d3-bf0b-1a1289bdd7bc/f788ec10-4b61-11ed-80b9-4154b7faa509/file-1l97twac3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th July Evening Shift Mathematics - Permutations and Combinations Question 116 English Explanation 1\"><br>\n<b>Case \u2013 II </b><br><br>\nIf first digit is 2 then last two digit can be 16, 36,\n56, 64 <br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l97tyhd1/d57389e9-902a-407f-843c-e06ca2c6e0b2/3494f950-4b62-11ed-80b9-4154b7faa509/file-1l97tyhd2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l97tyhd1/d57389e9-902a-407f-843c-e06ca2c6e0b2/3494f950-4b62-11ed-80b9-4154b7faa509/file-1l97tyhd2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th July Evening Shift Mathematics - Permutations and Combinations Question 116 English Explanation 2\"><br>\nTotal ways = 12 + 18 = 30 ways ",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "conditional-permutations",
@@ -2870,7 +2870,7 @@
       "72"
     ],
     "correctOptionIndex": 3,
-    "solution": "To make a no. divisible by 3 we can use the digits\n1,2,5,6,7 or 1,2,3,5,7.<br/><br/>\n Using 1,2,5,6,7, number of even numbers is\n = 4 × 3 × 2 × 1 × 2 = 48<br/><br/>\n Using 1,2,3,5,7, number of even numbers is\n = 4 × 3 × 2 × 1 × 1 = 24<br/><br/>\n Required answer is 72.",
+    "solution": "To make a no. divisible by 3 we can use the digits\n1,2,5,6,7 or 1,2,3,5,7.<br/><br/>\n Using 1,2,5,6,7, number of even numbers is\n = 4 \u00d7 3 \u00d7 2 \u00d7 1 \u00d7 2 = 48<br/><br/>\n Using 1,2,3,5,7, number of even numbers is\n = 4 \u00d7 3 \u00d7 2 \u00d7 1 \u00d7 1 = 24<br/><br/>\n Required answer is 72.",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "conditional-permutations",
@@ -3413,7 +3413,7 @@
       "12"
     ],
     "correctOptionIndex": 2,
-    "solution": "Numbers between 5000 &amp; 10000<br><br>\nUsing digits 1, 3, 5, 7, 9<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lef5alut/f8dc7152-4573-493d-a2cc-0b09243a1255/1b9fc550-b265-11ed-a126-5dfa1a9d5fb8/file-1lef5aluu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lef5alut/f8dc7152-4573-493d-a2cc-0b09243a1255/1b9fc550-b265-11ed-a126-5dfa1a9d5fb8/file-1lef5aluu.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 25th January Evening Shift Mathematics - Permutations and Combinations Question 91 English Explanation\"><br>\nTotal Numbers = 3 × 4 × 3 × 2 = 72",
+    "solution": "Numbers between 5000 &amp; 10000<br><br>\nUsing digits 1, 3, 5, 7, 9<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lef5alut/f8dc7152-4573-493d-a2cc-0b09243a1255/1b9fc550-b265-11ed-a126-5dfa1a9d5fb8/file-1lef5aluu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lef5alut/f8dc7152-4573-493d-a2cc-0b09243a1255/1b9fc550-b265-11ed-a126-5dfa1a9d5fb8/file-1lef5aluu.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 25th January Evening Shift Mathematics - Permutations and Combinations Question 91 English Explanation\"><br>\nTotal Numbers = 3 \u00d7 4 \u00d7 3 \u00d7 2 = 72",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "conditional-permutations",
@@ -3594,7 +3594,7 @@
     "title": "JEE Main 2023 (Online) 30th January Evening Shift",
     "year": "2023",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "The number of ways of selecting two numbers $a$ and $b, a \\in\\{2,4,6, \\ldots ., 100\\}$ and $b \\in\\{1,3,5, \\ldots . ., 99\\}$ such that 2 is the remainder when $a+b$ is divided by 23 is :",
     "options": [
       "186",
@@ -3871,7 +3871,7 @@
       "43"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>To determine the number of ways in which five different employees can be seated in four indistinguishable offices, we will use the concept of partitioning of an integer.</p>\n\n<p>The problem is equivalent to partitioning the number 5 (representing the 5 different employees) into at most 4 parts (representing the 4 indistinguishable offices) where each part represents the number of employees in each office.</p>\n\n<p>The partitions of 5 into at most 4 parts are as follows :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ – One office has 5 employees, and the other three have none.</li><br>\n<li>$(4, 1, 0, 0)$ – One office has 4 employees, another one has 1, and the other two have none.</li><br>\n<li>$(3, 2, 0, 0)$ – One office has 3 employees, another one has 2, and the other two have none.</li><br>\n<li>$(3, 1, 1, 0)$ – One office has 3 employees, two have 1 each, and one has none.</li><br>\n<li>$(2, 2, 1, 0)$ – Two offices have 2 employees each, one has 1, and one has none.</li><br>\n<li>$(2, 1, 1, 1)$ – One office has 2 employees, and the other three have 1 each.</li>\n</ol>\n<p>However, since the offices are indistinguishable, we must not count partitions that differ only by the order of the parts. This means that partitions like $(5, 0, 0, 0)$, $(0, 5, 0, 0)$, $(0, 0, 5, 0)$, and $(0, 0, 0, 5)$ all represent the same scenario and thus are counted as one.</p>\n\n<p>So we end up with 6 distinct partition scenarios.</p>\n\n<p>Now, for each partition, we need to find the number of ways to assign the employees according to each partition :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ – All employees are in one office. There is 1 way to do this because the offices are indistinguishable.</li><br>\n<li>$(4, 1, 0, 0)$ - For the group with 4 employees, there are $${}^5{C_4}$$ ways to choose which 4 out of the 5 will be together. Then the remaining employee is automatically assigned to the second office. So, there are $${}^5{C_4}$$ ways for this partition.</li><br>\n<li>$(3, 2, 0, 0)$ - For the group with 3 employees, there are ${}^5{C_3}$ ways to choose them, and for the group with 2 employees, there are $${}^2{C_2}$$ ways to choose them (which is essentially 1 way since the last 2 employees are automatically grouped). But the 2 offices these groups can occupy are indistinguishable, so we do not multiply by 2. So, there are $${}^5{C_3}$$ ways for this partition.</li><br>\n<li>$(3, 1, 1, 0)$ - For the group with 3 employees, there are $${}^5{C_3}$$ ways. Then we have two indistinguishable offices, each with 1 employee. The order does not matter as offices are indistinguishable. So, there are simply $${}^5{C_3}$$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ – For the first group of 2 employees, there are $${}^5{C_2}$$ ways to choose them. For the next group of 2 employees, there are $${}^3{C_2}$$ ways from the remaining 3. Then, the last employee is alone, and since the offices are indistinguishable, there are no further combinations to consider. However, we have double-counted since the two groups of two are indistinguishable. To adjust for this, we divide by 2. This gives us $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2}$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ - For the group with 2 employees, there are ${}^5{C_2}$ ways to choose them. The other three employees are each in their own office, with no further combinations since the offices are indistinguishable, so there are ${}^5{C_2}$ ways for this partition.</li>\n</ol>\n<p>Let's compute these cases :</p>\n\n<ul>\n<li>$(5, 0, 0, 0)$ corresponds to $1$ way.</li><br>\n<li>$(4, 1, 0, 0)$ corresponds to ${}^5{C_4} = 5$ ways.</li><br>\n<li>$(3, 2, 0, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(3, 1, 1, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ corresponds to $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2} = \\frac{10 \\cdot 3}{2} = 15$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ corresponds to ${}^5{C_2} = 10$ ways.</li>\n</ul>\n<p>Adding up all the ways we get :</p>\n\n<p>$$ 1 + 5 + 10 + 10 + 15 + 10 = 51 $$</p>\n\n<p>Therefore, the number of ways five different employees can sit into four indistinguishable offices ($\\mathrm{n}$) is 51, which corresponds to Option C.</p>",
+    "solution": "<p>To determine the number of ways in which five different employees can be seated in four indistinguishable offices, we will use the concept of partitioning of an integer.</p>\n\n<p>The problem is equivalent to partitioning the number 5 (representing the 5 different employees) into at most 4 parts (representing the 4 indistinguishable offices) where each part represents the number of employees in each office.</p>\n\n<p>The partitions of 5 into at most 4 parts are as follows :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ \u2013 One office has 5 employees, and the other three have none.</li><br>\n<li>$(4, 1, 0, 0)$ \u2013 One office has 4 employees, another one has 1, and the other two have none.</li><br>\n<li>$(3, 2, 0, 0)$ \u2013 One office has 3 employees, another one has 2, and the other two have none.</li><br>\n<li>$(3, 1, 1, 0)$ \u2013 One office has 3 employees, two have 1 each, and one has none.</li><br>\n<li>$(2, 2, 1, 0)$ \u2013 Two offices have 2 employees each, one has 1, and one has none.</li><br>\n<li>$(2, 1, 1, 1)$ \u2013 One office has 2 employees, and the other three have 1 each.</li>\n</ol>\n<p>However, since the offices are indistinguishable, we must not count partitions that differ only by the order of the parts. This means that partitions like $(5, 0, 0, 0)$, $(0, 5, 0, 0)$, $(0, 0, 5, 0)$, and $(0, 0, 0, 5)$ all represent the same scenario and thus are counted as one.</p>\n\n<p>So we end up with 6 distinct partition scenarios.</p>\n\n<p>Now, for each partition, we need to find the number of ways to assign the employees according to each partition :</p>\n\n<ol>\n<li>$(5, 0, 0, 0)$ \u2013 All employees are in one office. There is 1 way to do this because the offices are indistinguishable.</li><br>\n<li>$(4, 1, 0, 0)$ - For the group with 4 employees, there are $${}^5{C_4}$$ ways to choose which 4 out of the 5 will be together. Then the remaining employee is automatically assigned to the second office. So, there are $${}^5{C_4}$$ ways for this partition.</li><br>\n<li>$(3, 2, 0, 0)$ - For the group with 3 employees, there are ${}^5{C_3}$ ways to choose them, and for the group with 2 employees, there are $${}^2{C_2}$$ ways to choose them (which is essentially 1 way since the last 2 employees are automatically grouped). But the 2 offices these groups can occupy are indistinguishable, so we do not multiply by 2. So, there are $${}^5{C_3}$$ ways for this partition.</li><br>\n<li>$(3, 1, 1, 0)$ - For the group with 3 employees, there are $${}^5{C_3}$$ ways. Then we have two indistinguishable offices, each with 1 employee. The order does not matter as offices are indistinguishable. So, there are simply $${}^5{C_3}$$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ \u2013 For the first group of 2 employees, there are $${}^5{C_2}$$ ways to choose them. For the next group of 2 employees, there are $${}^3{C_2}$$ ways from the remaining 3. Then, the last employee is alone, and since the offices are indistinguishable, there are no further combinations to consider. However, we have double-counted since the two groups of two are indistinguishable. To adjust for this, we divide by 2. This gives us $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2}$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ - For the group with 2 employees, there are ${}^5{C_2}$ ways to choose them. The other three employees are each in their own office, with no further combinations since the offices are indistinguishable, so there are ${}^5{C_2}$ ways for this partition.</li>\n</ol>\n<p>Let's compute these cases :</p>\n\n<ul>\n<li>$(5, 0, 0, 0)$ corresponds to $1$ way.</li><br>\n<li>$(4, 1, 0, 0)$ corresponds to ${}^5{C_4} = 5$ ways.</li><br>\n<li>$(3, 2, 0, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(3, 1, 1, 0)$ corresponds to ${}^5{C_3} = 10$ ways.</li><br>\n<li>$(2, 2, 1, 0)$ corresponds to $\\frac{{}^5{C_2} \\cdot {}^3{C_2}}{2} = \\frac{10 \\cdot 3}{2} = 15$ ways.</li><br>\n<li>$(2, 1, 1, 1)$ corresponds to ${}^5{C_2} = 10$ ways.</li>\n</ul>\n<p>Adding up all the ways we get :</p>\n\n<p>$$ 1 + 5 + 10 + 10 + 15 + 10 = 51 $$</p>\n\n<p>Therefore, the number of ways five different employees can sit into four indistinguishable offices ($\\mathrm{n}$) is 51, which corresponds to Option C.</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "number-of-combinations",
@@ -4306,7 +4306,7 @@
     "title": "JEE Main 2025 (Online) 22nd January Morning Shift",
     "year": "2025",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>From all the English alphabets, five letters are chosen and are arranged in alphabetical order. The total number of ways, in which the middle letter is ' M ', is :</p>",
     "options": [
       "6084\n",
@@ -4315,7 +4315,7 @@
       "4356"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>First, note that we are choosing <strong>5 distinct letters</strong> (in strictly increasing alphabetical order) such that the <strong>middle (third) letter is ‘M’</strong>. Symbolically, if we denote the chosen letters as:</p>\n<p>$ L_1 < L_2 < L_3 < L_4 < L_5, $</p>\n<p>we want $L_3 = \\text{M}$. The English alphabet has 26 letters, and M is the $13^\\text{th}$.</p>\n<hr />\n<h3>Step 1: Letters before M</h3>\n\n<p><p>The letters before M are $\\{A, B, C, \\ldots, L\\}$.  </p></p>\n<p><p>There are <strong>12</strong> letters here ($A$ through $L$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 12 letters to occupy $L_1$ and $L_2$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 12 is ${ }^{12} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 2: Letters after M</h3>\n\n<p><p>The letters after M are $\\{N, O, P, \\ldots, Z\\}$.  </p></p>\n<p><p>There are <strong>13</strong> letters here ($N$ through $Z$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 13 letters to occupy $L_4$ and $L_5$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 13 is ${ }^{13} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 3: Multiply the choices</h3>\n<p>Since these choices are independent (picking the two letters before M and two letters after M), the total number of ways is:</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\;\\times\\;{ }^{13} \\mathrm{C}_2 $</p>\n<p>Calculate each combination:</p>\n<p>$ { }^{12} \\mathrm{C}_2 = \\frac{12 \\times 11}{2} = 66,  \\quad { }^{13} \\mathrm{C}_2 = \\frac{13 \\times 12}{2} = 78. $</p>\n<p>So,</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\times { }^{13} \\mathrm{C}_2 = 66 \\times 78 = 5148. $</p>\n<hr />\n<h2><strong>Answer: 5148</strong> (Option B)</h2>",
+    "solution": "<p>First, note that we are choosing <strong>5 distinct letters</strong> (in strictly increasing alphabetical order) such that the <strong>middle (third) letter is \u2018M\u2019</strong>. Symbolically, if we denote the chosen letters as:</p>\n<p>$ L_1 < L_2 < L_3 < L_4 < L_5, $</p>\n<p>we want $L_3 = \\text{M}$. The English alphabet has 26 letters, and M is the $13^\\text{th}$.</p>\n<hr />\n<h3>Step 1: Letters before M</h3>\n\n<p><p>The letters before M are $\\{A, B, C, \\ldots, L\\}$.  </p></p>\n<p><p>There are <strong>12</strong> letters here ($A$ through $L$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 12 letters to occupy $L_1$ and $L_2$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 12 is ${ }^{12} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 2: Letters after M</h3>\n\n<p><p>The letters after M are $\\{N, O, P, \\ldots, Z\\}$.  </p></p>\n<p><p>There are <strong>13</strong> letters here ($N$ through $Z$).  </p></p>\n<p><p>We need to pick <strong>2</strong> of these 13 letters to occupy $L_4$ and $L_5$.  </p></p>\n<p><p>The number of ways to choose 2 letters out of 13 is ${ }^{13} \\mathrm{C}_2$.</p></p>\n\n<h3>Step 3: Multiply the choices</h3>\n<p>Since these choices are independent (picking the two letters before M and two letters after M), the total number of ways is:</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\;\\times\\;{ }^{13} \\mathrm{C}_2 $</p>\n<p>Calculate each combination:</p>\n<p>$ { }^{12} \\mathrm{C}_2 = \\frac{12 \\times 11}{2} = 66,  \\quad { }^{13} \\mathrm{C}_2 = \\frac{13 \\times 12}{2} = 78. $</p>\n<p>So,</p>\n<p>$ { }^{12} \\mathrm{C}_2 \\times { }^{13} \\mathrm{C}_2 = 66 \\times 78 = 5148. $</p>\n<hr />\n<h2><strong>Answer: 5148</strong> (Option B)</h2>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "conditional-combinations",
@@ -4545,7 +4545,7 @@
     "title": "JEE Main 2025 (Online) 2nd April Evening Shift",
     "year": "2025",
     "difficulty": "hard",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "The number of ways, in which the letters A, B, C, D, E can be placed in the 8 boxes of the figure below so that no row remains empty and at most one letter can be placed in a box, is :\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9fqcldi/0da0b840-26cf-40a4-ae72-98b877b46fcc/27544d60-1872-11f0-a7dd-51762233016a/file-jaoe38c1m9fqcldj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9fqcldi/0da0b840-26cf-40a4-ae72-98b877b46fcc/27544d60-1872-11f0-a7dd-51762233016a/file-jaoe38c1m9fqcldj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 2nd April Evening Shift Mathematics - Permutations and Combinations Question 28 English\">",
     "options": [
       "5880\n",
@@ -4615,7 +4615,7 @@
     "question": "<p>All five letter words are made using all the letters A, B, C, D, E and arranged as in an English dictionary with serial numbers. Let the word at serial number $n$ be denoted by $\\mathrm{W}_{\\mathrm{n}}$. Let the probability $\\mathrm{P}\\left(\\mathrm{W}_{\\mathrm{n}}\\right)$ of choosing the word $\\mathrm{W}_{\\mathrm{n}}$ satisfy $\\mathrm{P}\\left(\\mathrm{W}_{\\mathrm{n}}\\right)=2 \\mathrm{P}\\left(\\mathrm{W}_{\\mathrm{n}-1}\\right), \\mathrm{n}>1$.</p>\n<p>If $\\mathrm{P}(\\mathrm{CDBEA})=\\frac{2^\\alpha}{2^\\beta-1}, \\alpha, \\beta \\in \\mathbb{N}$, then $\\alpha+\\beta$ is equal to :____________",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "<p>Firstly, by this rule, we note:</p>\n\n<p><p>$ P(W_1) = p $</p></p>\n<p><p>$ P(W_2) = 2p $</p></p>\n<p><p>$ P(W_3) = 4p $</p></p>\n<p><p>…</p></p>\n<p><p>$ P(W_n) = 2^{n-1}p $</p></p>\n\n<p>To find the initial probability $ p $, consider the total probability must sum to 1 across all 120 possible words (since $ 5! = 120 $):</p>\n<p>$ \\sum_{n=1}^{120} P(W_n) = 1 $</p>\n<p>This is a geometric series sum where:</p>\n<p>$ p(1 + 2 + 2^2 + \\ldots + 2^{119}) = 1 $</p>\n<p>Since the series sum $ 1 + 2 + 2^2 + \\ldots + 2^{119} $ is equal to $ 2^{120} - 1 $, we have:</p>\n<p>$ p(2^{120} - 1) = 1 \\Rightarrow p = \\frac{1}{2^{120} - 1} $</p>\n<p>Thus, the probability for the $ n $-th word is:</p>\n<p>$ P(W_n) = \\frac{2^{n-1}}{2^{120} - 1} \\quad \\text{(i)} $</p>\n<p>Next, determine the position of \"CDBEA\". Starting from the first letter:</p>\n\n<p><p><strong>Words beginning with 'A':</strong> $ 4! = 24 $</p></p>\n<p><p><strong>Words beginning with 'B':</strong> $ 4! = 24 $</p></p>\n<p><p><strong>Words beginning with 'C':</strong></p></p>\n\n\n<p><p><strong>CA</strong>*: $ 3! = 6 $</p></p>\n<p><p><strong>CB</strong>*: $ 3! = 6 $</p></p>\n<p><p><strong>CDA</strong>$ **: 2! = 2 $</p></p>\n<p><p><strong>CDBA</strong>*: $ 1! = 1 $</p></p>\n\n<p>Summing these, the position of \"CDBEA\" is the 64th word.</p>\n<p>Substitute into equation (i):</p>\n<p>$ P(\\text{CDBEA}) = P(W_{64}) = \\frac{2^{63}}{2^{120} - 1} $</p>\n<p>Given $ P(\\text{CDBEA}) = \\frac{2^\\alpha}{2^\\beta - 1} $, we find:</p>\n\n<p><p>$ \\alpha = 63 $</p></p>\n<p><p>$ \\beta = 120 $</p></p>\n\n<p>Thus, the sum $ \\alpha + \\beta = 63 + 120 = 183 $.</p>",
+    "solution": "<p>Firstly, by this rule, we note:</p>\n\n<p><p>$ P(W_1) = p $</p></p>\n<p><p>$ P(W_2) = 2p $</p></p>\n<p><p>$ P(W_3) = 4p $</p></p>\n<p><p>\u2026</p></p>\n<p><p>$ P(W_n) = 2^{n-1}p $</p></p>\n\n<p>To find the initial probability $ p $, consider the total probability must sum to 1 across all 120 possible words (since $ 5! = 120 $):</p>\n<p>$ \\sum_{n=1}^{120} P(W_n) = 1 $</p>\n<p>This is a geometric series sum where:</p>\n<p>$ p(1 + 2 + 2^2 + \\ldots + 2^{119}) = 1 $</p>\n<p>Since the series sum $ 1 + 2 + 2^2 + \\ldots + 2^{119} $ is equal to $ 2^{120} - 1 $, we have:</p>\n<p>$ p(2^{120} - 1) = 1 \\Rightarrow p = \\frac{1}{2^{120} - 1} $</p>\n<p>Thus, the probability for the $ n $-th word is:</p>\n<p>$ P(W_n) = \\frac{2^{n-1}}{2^{120} - 1} \\quad \\text{(i)} $</p>\n<p>Next, determine the position of \"CDBEA\". Starting from the first letter:</p>\n\n<p><p><strong>Words beginning with 'A':</strong> $ 4! = 24 $</p></p>\n<p><p><strong>Words beginning with 'B':</strong> $ 4! = 24 $</p></p>\n<p><p><strong>Words beginning with 'C':</strong></p></p>\n\n\n<p><p><strong>CA</strong>*: $ 3! = 6 $</p></p>\n<p><p><strong>CB</strong>*: $ 3! = 6 $</p></p>\n<p><p><strong>CDA</strong>$ **: 2! = 2 $</p></p>\n<p><p><strong>CDBA</strong>*: $ 1! = 1 $</p></p>\n\n<p>Summing these, the position of \"CDBEA\" is the 64th word.</p>\n<p>Substitute into equation (i):</p>\n<p>$ P(\\text{CDBEA}) = P(W_{64}) = \\frac{2^{63}}{2^{120} - 1} $</p>\n<p>Given $ P(\\text{CDBEA}) = \\frac{2^\\alpha}{2^\\beta - 1} $, we find:</p>\n\n<p><p>$ \\alpha = 63 $</p></p>\n<p><p>$ \\beta = 120 $</p></p>\n\n<p>Thus, the sum $ \\alpha + \\beta = 63 + 120 = 183 $.</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "number-of-permutations",
@@ -4693,7 +4693,7 @@
       "<p>220</p>"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>To count the number of distinct triangles:</p>\n\n<p><p><strong>Start with all possible triples of points.</strong>  </p>\n<p>From 12 points, the number of ways to choose any 3 is  </p>\n<p>$      \\binom{12}{3}= \\frac{12\\cdot11\\cdot10}{3\\cdot2\\cdot1}=220.    $</p></p>\n<p><p><strong>Subtract the “invalid” triples that are collinear.</strong>  </p>\n<p>The only collinear sets of three points arise from the single line containing the 5 collinear points.  </p>\n<p>Number of ways to pick 3 points from those 5 is  </p>\n<p>$      \\binom{5}{3}=10.    $</p></p>\n<p><p><strong>Valid triangles = total triples − collinear triples.</strong>  </p>\n<p>$      220-10 = 210.    $</p></p>\n\n<p>Hence, the total number of triangles that can be formed is <strong>210</strong>.</p>\n<p><strong>Correct option: B</strong></p>",
+    "solution": "<p>To count the number of distinct triangles:</p>\n\n<p><p><strong>Start with all possible triples of points.</strong>  </p>\n<p>From 12 points, the number of ways to choose any 3 is  </p>\n<p>$      \\binom{12}{3}= \\frac{12\\cdot11\\cdot10}{3\\cdot2\\cdot1}=220.    $</p></p>\n<p><p><strong>Subtract the \u201cinvalid\u201d triples that are collinear.</strong>  </p>\n<p>The only collinear sets of three points arise from the single line containing the 5 collinear points.  </p>\n<p>Number of ways to pick 3 points from those 5 is  </p>\n<p>$      \\binom{5}{3}=10.    $</p></p>\n<p><p><strong>Valid triangles = total triples \u2212 collinear triples.</strong>  </p>\n<p>$      220-10 = 210.    $</p></p>\n\n<p>Hence, the total number of triangles that can be formed is <strong>210</strong>.</p>\n<p><strong>Correct option: B</strong></p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "number-of-combinations",
@@ -4888,7 +4888,7 @@
     "question": "The number of numbers greater than 5000 , less than 9000 and divisible by 3 , that can be formed using the digits $0,1,2,5,9$, if the repetition of the digits is allowed, is $\\_\\_\\_\\_$",
     "options": [],
     "correctOptionIndex": 0,
-    "solution": "<p>To find numbers of number greater than 5000 and less than 9000 so number will start with 5 or 9 of the form 5 abc and $a, b, c \\in\\{0,1,2,5,9\\}$ also the number is divisible by 3 .</p>\n<p>This means $5+\\mathrm{a}+\\mathrm{b}+\\mathrm{c}$ is divisible by 3</p>\n<p>so the sum $\\mathrm{a}+\\mathrm{b}+\\mathrm{c}$ is of the type $3 \\mathrm{n}+1$.</p>\n<p>unit place c determined by the sum of previous 3 places.</p>\n<p>rem(a $+b)=$ remainder of $a+b$</p>\n<table border=\"2\" cellpadding=\"10\" cellspacing=\"0\"\n\n       style=\"border-collapse:collapse; font-family:'Times New Roman', serif; width:100%;\">\n\n  <tr>\n\n    <th>rem(a+b)</th>\n\n    <th>combination (a,b)</th>\n\n    <th>value of c</th>\n\n    <th>total = combination (a, b) × c(choice)</th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>\n\n      (0, 0), (0, 9), (9, 0), (9, 9), (1, 2), (2, 1), (5, 1), (1, 5)\n\n    </td>\n\n    <td>1</td>\n\n    <td>8 × 1 = 8</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>\n\n      (0, 1), (9, 1), (1, 0), (1, 9), (2, 2), (2, 5), (5, 2), (5, 5)\n\n    </td>\n\n    <td>0, 9</td>\n\n    <td>8 × 2 = 16</td>\n\n  </tr>\n\n  <tr>\n\n    <td>2</td>\n\n    <td>\n\n      (0, 2), (0, 5), (9, 2), (9, 5), (2, 0), (2, 9), (5, 0), (5, 9), (1, 1)\n\n    </td>\n\n    <td>2, 5</td>\n\n    <td>9 × 2 = 18</td>\n\n  </tr>\n\n</table>\n<p>Total = $$8+16+18=42$$</p>",
+    "solution": "<p>To find numbers of number greater than 5000 and less than 9000 so number will start with 5 or 9 of the form 5 abc and $a, b, c \\in\\{0,1,2,5,9\\}$ also the number is divisible by 3 .</p>\n<p>This means $5+\\mathrm{a}+\\mathrm{b}+\\mathrm{c}$ is divisible by 3</p>\n<p>so the sum $\\mathrm{a}+\\mathrm{b}+\\mathrm{c}$ is of the type $3 \\mathrm{n}+1$.</p>\n<p>unit place c determined by the sum of previous 3 places.</p>\n<p>rem(a $+b)=$ remainder of $a+b$</p>\n<table border=\"2\" cellpadding=\"10\" cellspacing=\"0\"\n\n       style=\"border-collapse:collapse; font-family:'Times New Roman', serif; width:100%;\">\n\n  <tr>\n\n    <th>rem(a+b)</th>\n\n    <th>combination (a,b)</th>\n\n    <th>value of c</th>\n\n    <th>total = combination (a, b) \u00d7 c(choice)</th>\n\n  </tr>\n\n  <tr>\n\n    <td>0</td>\n\n    <td>\n\n      (0, 0), (0, 9), (9, 0), (9, 9), (1, 2), (2, 1), (5, 1), (1, 5)\n\n    </td>\n\n    <td>1</td>\n\n    <td>8 \u00d7 1 = 8</td>\n\n  </tr>\n\n  <tr>\n\n    <td>1</td>\n\n    <td>\n\n      (0, 1), (9, 1), (1, 0), (1, 9), (2, 2), (2, 5), (5, 2), (5, 5)\n\n    </td>\n\n    <td>0, 9</td>\n\n    <td>8 \u00d7 2 = 16</td>\n\n  </tr>\n\n  <tr>\n\n    <td>2</td>\n\n    <td>\n\n      (0, 2), (0, 5), (9, 2), (9, 5), (2, 0), (2, 9), (5, 0), (5, 9), (1, 1)\n\n    </td>\n\n    <td>2, 5</td>\n\n    <td>9 \u00d7 2 = 18</td>\n\n  </tr>\n\n</table>\n<p>Total = $$8+16+18=42$$</p>",
     "marks": 4,
     "negativeMarks": -1,
     "topic": "conditional-permutations",
@@ -4984,7 +4984,7 @@
     "title": "JEE Main 2026 (Online) 2nd April Morning Shift",
     "year": "2026",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>The number of elements in the set $S = \\left\\{ (r, k) : k \\in \\mathbb{Z} \\text{ and } ^{36}C_{r+1} = \\frac{6\\left(^{35}C_{r}\\right)}{(k^2-3)} \\right\\}$ is :</p>",
     "options": [
       "<p>2</p>",
@@ -4997,7 +4997,7 @@
     "marks": 4,
     "negativeMarks": -1,
     "topic": "number-of-combinations",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "mnswhteb",
@@ -5006,7 +5006,7 @@
     "title": "JEE Main 2026 (Online) 4th April Evening Shift",
     "year": "2026",
     "difficulty": "medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Let</p>\n<p>$\\mathrm{A}=\\{(a, b, c): a, b, c$ are non-negative integers and $a+b+2 c=22\\}$.</p>\n<p>Then $n(\\mathrm{~A})$ is equal to :</p>\n",
     "options": [
       "<p>121</p>\n",
@@ -5206,7 +5206,7 @@
       "12"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>To solve this problem, we need to count the number of valid permutations of the word 'TIGER' where the vowels (I and E) do not occupy the even positions. Let's break it down step-by-step.</p>\n\n<p>The word 'TIGER' consists of 5 letters, with positions as follows:</p>\n\n<p>1 (T), 2 (I), 3 (G), 4 (E), 5 (R)</p>\n\n<p>First, let's identify the even positions: positions 2 and 4. We need to ensure the vowels I and E do not occupy these positions.</p>\n\n<p>To achieve this, we must place the vowels only in the odd positions 1, 3, and 5. Here’s a detailed approach:</p>\n\n<ol>\n\n<li>Identify the number of odd positions (three: 1, 3, and 5).</li>\n\n<li>Identify the number of even positions (two: 2 and 4).</li>\n\n</ol>\n\n<p>The vowels can only go in odd positions. Let’s assign the vowels to the available odd positions:</p>\n\n<ol>\n\n<li>Number of ways to place 2 vowels (I and E) in 3 odd positions (1, 3, 5): <br>\n\n<ul>\n<li>We choose 2 out of 3 positions for the vowels: $$^3C_2 = 3$$ (ways)<br></li><br>\n<li>We arrange the 2 vowels in these 2 positions: $$2! = 2$$ (ways)</li>\n</ul>\n</li>\n\n</ol>\n\n<p>Thus, the number of ways to place the vowels: $$3 \\times 2 = 6$$</p>\n\n<p>Now, place the remaining 3 consonants (T, G, R) in the remaining 3 positions (one odd position and two even positions). The number of ways to arrange the consonants is:</p>\n\n<p>$$3! = 6$$</p>\n\n<p>Finally, multiply the two results together:</p>\n\n<p>Total valid permutations = $$6 \\times 6 = 36$$</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option B: 36</p>",
+    "solution": "<p>To solve this problem, we need to count the number of valid permutations of the word 'TIGER' where the vowels (I and E) do not occupy the even positions. Let's break it down step-by-step.</p>\n\n<p>The word 'TIGER' consists of 5 letters, with positions as follows:</p>\n\n<p>1 (T), 2 (I), 3 (G), 4 (E), 5 (R)</p>\n\n<p>First, let's identify the even positions: positions 2 and 4. We need to ensure the vowels I and E do not occupy these positions.</p>\n\n<p>To achieve this, we must place the vowels only in the odd positions 1, 3, and 5. Here\u2019s a detailed approach:</p>\n\n<ol>\n\n<li>Identify the number of odd positions (three: 1, 3, and 5).</li>\n\n<li>Identify the number of even positions (two: 2 and 4).</li>\n\n</ol>\n\n<p>The vowels can only go in odd positions. Let\u2019s assign the vowels to the available odd positions:</p>\n\n<ol>\n\n<li>Number of ways to place 2 vowels (I and E) in 3 odd positions (1, 3, 5): <br>\n\n<ul>\n<li>We choose 2 out of 3 positions for the vowels: $$^3C_2 = 3$$ (ways)<br></li><br>\n<li>We arrange the 2 vowels in these 2 positions: $$2! = 2$$ (ways)</li>\n</ul>\n</li>\n\n</ol>\n\n<p>Thus, the number of ways to place the vowels: $$3 \\times 2 = 6$$</p>\n\n<p>Now, place the remaining 3 consonants (T, G, R) in the remaining 3 positions (one odd position and two even positions). The number of ways to arrange the consonants is:</p>\n\n<p>$$3! = 6$$</p>\n\n<p>Finally, multiply the two results together:</p>\n\n<p>Total valid permutations = $$6 \\times 6 = 36$$</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option B: 36</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -5240,7 +5240,7 @@
     "year": "2022",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "What is the value of 2(2 × 1) + 3(3 <span style=\"\">×&nbsp;</span>2 <span style=\"\">× 1</span>) + 4(4 <span style=\"\">×&nbsp;</span>3 <span style=\"\">×&nbsp;</span>2 <span style=\"\">×&nbsp;</span>1) + 5(5 <span style=\"\">×&nbsp;</span>4 <span style=\"\">×&nbsp;</span>3&nbsp;<span style=\"\">×&nbsp;</span>2 <span style=\"\">×&nbsp;</span>1) + .................. + 9(9 <span style=\"\">×&nbsp;</span>8 <span style=\"\">×&nbsp;</span>7 <span style=\"\">×&nbsp;</span>6 <span style=\"\">×&nbsp;</span>5 <span style=\"\">×&nbsp;</span>4 <span style=\"\">×&nbsp;</span>3 <span style=\"\">×&nbsp;</span>2 <span style=\"\">×&nbsp;</span>1) + 2 ?",
+    "question": "What is the value of 2(2 \u00d7 1) + 3(3 <span style=\"\">\u00d7&nbsp;</span>2 <span style=\"\">\u00d7 1</span>) + 4(4 <span style=\"\">\u00d7&nbsp;</span>3 <span style=\"\">\u00d7&nbsp;</span>2 <span style=\"\">\u00d7&nbsp;</span>1) + 5(5 <span style=\"\">\u00d7&nbsp;</span>4 <span style=\"\">\u00d7&nbsp;</span>3&nbsp;<span style=\"\">\u00d7&nbsp;</span>2 <span style=\"\">\u00d7&nbsp;</span>1) + .................. + 9(9 <span style=\"\">\u00d7&nbsp;</span>8 <span style=\"\">\u00d7&nbsp;</span>7 <span style=\"\">\u00d7&nbsp;</span>6 <span style=\"\">\u00d7&nbsp;</span>5 <span style=\"\">\u00d7&nbsp;</span>4 <span style=\"\">\u00d7&nbsp;</span>3 <span style=\"\">\u00d7&nbsp;</span>2 <span style=\"\">\u00d7&nbsp;</span>1) + 2 ?",
     "options": [
       "11!",
       "10!",
@@ -5269,7 +5269,7 @@
       "Neither 1 nor 2"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p><strong>Statement I:</strong> <span class=\"math-tex\">$\\frac{n!}{3!}$</span> is divisible by 6, where $ n > 3 $</p>\n\n<p>Let $ n = 4 $</p>\n\n<p>⇒ <span class=\"math-tex\">$\\displaystyle \\frac{4!}{3!} = \\frac{4 \\times 3 \\times 2 \\times 1}{3 \\times 2 \\times 1} = 4$</span></p>\n\n<p>4 is not divisible by 6.</p>\n\n<p>Therefore, Statement I is incorrect.</p>\n\n<p><strong>Statement II:</strong> <span class=\"math-tex\">$\\frac{n!}{3!} + 3$</span> is divisible by 7, where $ n > 3 $</p>\n\n<p>Let $ n = 5 $</p>\n\n<p>⇒ <span class=\"math-tex\">$\\displaystyle \\frac{5!}{3!} + 3 = \\frac{5 \\times 4 \\times 3!}{3!} + 3 = 20 + 3 = 23$</span></p>\n\n<p>23 is not divisible by 7.</p>\n\n<p>Therefore, Statement II is incorrect.</p>\n\n<p><strong>∴ Neither Statement I nor II is correct.</strong></p>",
+    "solution": "<p><strong>Statement I:</strong> <span class=\"math-tex\">$\\frac{n!}{3!}$</span> is divisible by 6, where $ n > 3 $</p>\n\n<p>Let $ n = 4 $</p>\n\n<p>\u21d2 <span class=\"math-tex\">$\\displaystyle \\frac{4!}{3!} = \\frac{4 \\times 3 \\times 2 \\times 1}{3 \\times 2 \\times 1} = 4$</span></p>\n\n<p>4 is not divisible by 6.</p>\n\n<p>Therefore, Statement I is incorrect.</p>\n\n<p><strong>Statement II:</strong> <span class=\"math-tex\">$\\frac{n!}{3!} + 3$</span> is divisible by 7, where $ n > 3 $</p>\n\n<p>Let $ n = 5 $</p>\n\n<p>\u21d2 <span class=\"math-tex\">$\\displaystyle \\frac{5!}{3!} + 3 = \\frac{5 \\times 4 \\times 3!}{3!} + 3 = 20 + 3 = 23$</span></p>\n\n<p>23 is not divisible by 7.</p>\n\n<p>Therefore, Statement II is incorrect.</p>\n\n<p><strong>\u2234 Neither Statement I nor II is correct.</strong></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -5311,7 +5311,7 @@
       "240"
     ],
     "correctOptionIndex": 2,
-    "solution": "<h3>Step 1: Letters in the word CAPITAL</h3>\n<p>Word = C, A, P, I, T, A, L  </p>\n<ul>\n<li><p>Total letters = 7  </p></li>\n<li><p>Vowels = A, I, A (3 vowels, with <strong>A repeated twice</strong>)  </p></li>\n<li><p>Consonants = C, P, T, L (4 consonants)</p></li>\n</ul>\n\n<h3>Step 2: Condition that all consonants are together</h3>\n<p>When consonants are together, treat them as <strong>one single block</strong>.  </p>\n<ul>\n<li><p>This block = {C, P, T, L}  </p></li>\n<li><p>So now the arrangement is between: <strong>[one consonant block] + 3 vowels (A, I, A)</strong></p></li>\n</ul>\n<p>Thus, total units to arrange = 1 (block) + 3 (vowels) = 4 units.  </p>\n<p>(The vowels contain a repetition of A.)</p>\n\n<h3>Step 3: Arrangement of the 4 units</h3>\n<p>Number of ways to arrange =  </p>\n<p>$ \\frac{4!}{2!} = 12 $</p>\n<p>(Dividing by $2!$ because of the two identical A’s.)</p>\n\n<h3>Step 4: Arrangement inside the consonant block</h3>\n<p>There are 4 consonants (C, P, T, L), all different.  </p>\n<p>Ways to arrange them = $4! = 24$</p>\n\n<h3>Step 5: Total Arrangements</h3>\n<p>$ \\text{Total arrangements} = 12 \\times 24 = 288 $</p>\n\n<h3>Final Answer:</h3>\n<p><strong>Option C: 288</strong> </p>",
+    "solution": "<h3>Step 1: Letters in the word CAPITAL</h3>\n<p>Word = C, A, P, I, T, A, L  </p>\n<ul>\n<li><p>Total letters = 7  </p></li>\n<li><p>Vowels = A, I, A (3 vowels, with <strong>A repeated twice</strong>)  </p></li>\n<li><p>Consonants = C, P, T, L (4 consonants)</p></li>\n</ul>\n\n<h3>Step 2: Condition that all consonants are together</h3>\n<p>When consonants are together, treat them as <strong>one single block</strong>.  </p>\n<ul>\n<li><p>This block = {C, P, T, L}  </p></li>\n<li><p>So now the arrangement is between: <strong>[one consonant block] + 3 vowels (A, I, A)</strong></p></li>\n</ul>\n<p>Thus, total units to arrange = 1 (block) + 3 (vowels) = 4 units.  </p>\n<p>(The vowels contain a repetition of A.)</p>\n\n<h3>Step 3: Arrangement of the 4 units</h3>\n<p>Number of ways to arrange =  </p>\n<p>$ \\frac{4!}{2!} = 12 $</p>\n<p>(Dividing by $2!$ because of the two identical A\u2019s.)</p>\n\n<h3>Step 4: Arrangement inside the consonant block</h3>\n<p>There are 4 consonants (C, P, T, L), all different.  </p>\n<p>Ways to arrange them = $4! = 24$</p>\n\n<h3>Step 5: Total Arrangements</h3>\n<p>$ \\text{Total arrangements} = 12 \\times 24 = 288 $</p>\n\n<h3>Final Answer:</h3>\n<p><strong>Option C: 288</strong> </p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -5353,7 +5353,7 @@
       "14"
     ],
     "correctOptionIndex": 2,
-    "solution": "<ol>\n<li><p>Vowels in “DELHI”: E, I  </p>\n<p>Consonants in “DELHI”: D, L, H  </p></li>\n<li><p>Positions in the word DELHI:  </p>\n<p>• 1 → consonant  </p>\n<p>• 2 → vowel  </p>\n<p>• 3 → consonant  </p>\n<p>• 4 → consonant  </p>\n<p>• 5 → vowel  </p></li>\n<li><p>Number of ways to arrange the 3 consonants (D, L, H) in the 3 consonant‐positions:  </p>\n<p>$$3! \\;=\\; 6$$</p></li>\n<li><p>Number of ways to arrange the 2 vowels (E, I) in the 2 vowel‐positions:  </p>\n<p>$$2! \\;=\\; 2$$</p></li>\n<li><p>Total number of arrangements keeping vowel/consonant positions unchanged:  </p>\n<p>$$3!\\times 2! \\;=\\; 6\\times 2 \\;=\\; 12$$</p></li>\n</ol>\n<p>Answer: 12 (Option C)</p>",
+    "solution": "<ol>\n<li><p>Vowels in \u201cDELHI\u201d: E, I  </p>\n<p>Consonants in \u201cDELHI\u201d: D, L, H  </p></li>\n<li><p>Positions in the word DELHI:  </p>\n<p>\u2022 1 \u2192 consonant  </p>\n<p>\u2022 2 \u2192 vowel  </p>\n<p>\u2022 3 \u2192 consonant  </p>\n<p>\u2022 4 \u2192 consonant  </p>\n<p>\u2022 5 \u2192 vowel  </p></li>\n<li><p>Number of ways to arrange the 3 consonants (D, L, H) in the 3 consonant\u2010positions:  </p>\n<p>$$3! \\;=\\; 6$$</p></li>\n<li><p>Number of ways to arrange the 2 vowels (E, I) in the 2 vowel\u2010positions:  </p>\n<p>$$2! \\;=\\; 2$$</p></li>\n<li><p>Total number of arrangements keeping vowel/consonant positions unchanged:  </p>\n<p>$$3!\\times 2! \\;=\\; 6\\times 2 \\;=\\; 12$$</p></li>\n</ol>\n<p>Answer: 12 (Option C)</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -5365,7 +5365,7 @@
     "title": "NDA Mathematics 13 April 2025",
     "year": "2025",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "What is the number of positive integer solutions of <span class=\"katex\"><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"mord mathnormal\">x</span><span class=\"mbin\">+</span></span><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.0359em;\">y</span><span class=\"mbin\">+</span></span><span class=\"base\"><span class=\"mord mathnormal\" style=\"margin-right: 0.044em;\">z</span><span class=\"mrel\">=</span></span><span class=\"base\"><span class=\"mord\">5</span></span></span></span>?",
     "options": [
       "3",
@@ -5416,7 +5416,7 @@
       "42"
     ],
     "correctOptionIndex": 3,
-    "solution": "<ol>\n<li><p>“At most 3 things” means you can select 0, 1, 2 or 3 items.  </p></li>\n<li><p>Number of ways to choose $k$ items from 6 is given by the binomial coefficient $\\displaystyle \\binom{6}{k}$.  </p></li>\n<li><p>Total number of selections  </p>\n<p>$$\\sum_{k=0}^{3}\\binom{6}{k} = \\binom{6}{0} + \\binom{6}{1} + \\binom{6}{2} + \\binom{6}{3}$$  </p></li>\n<li><p>Compute each term:  </p>\n<p>$\\displaystyle \\binom{6}{0}=1,\\quad \\binom{6}{1}=6,\\quad \\binom{6}{2}=15,\\quad \\binom{6}{3}=20$  </p></li>\n<li><p>Sum them:  </p>\n<p>$$1 + 6 + 15 + 20 = 42$$  </p></li>\n</ol>\n<p>Answer: Option D.</p>",
+    "solution": "<ol>\n<li><p>\u201cAt most 3 things\u201d means you can select 0, 1, 2 or 3 items.  </p></li>\n<li><p>Number of ways to choose $k$ items from 6 is given by the binomial coefficient $\\displaystyle \\binom{6}{k}$.  </p></li>\n<li><p>Total number of selections  </p>\n<p>$$\\sum_{k=0}^{3}\\binom{6}{k} = \\binom{6}{0} + \\binom{6}{1} + \\binom{6}{2} + \\binom{6}{3}$$  </p></li>\n<li><p>Compute each term:  </p>\n<p>$\\displaystyle \\binom{6}{0}=1,\\quad \\binom{6}{1}=6,\\quad \\binom{6}{2}=15,\\quad \\binom{6}{3}=20$  </p></li>\n<li><p>Sum them:  </p>\n<p>$$1 + 6 + 15 + 20 = 42$$  </p></li>\n</ol>\n<p>Answer: Option D.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -5563,7 +5563,7 @@
       "48"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>To determine how many distinct matrices can be formed with all four entries taken from the set $\\{1, 2\\}$, we need to consider different matrix configurations. Let's explore these configurations:</p>\n\n<p><strong>2 × 2 Matrices:</strong></p>\n\n\n<p><p>A 2 × 2 matrix consists of 4 entries.</p></p>\n<p><p>Each entry can independently be either 1 or 2, providing 2 choices per entry.</p></p>\n<p><p>Therefore, the total number of 2 × 2 matrices is calculated by:</p>\n<p>$      2 \\times 2 \\times 2 \\times 2 = 16      $</p></p>\n\n\n<p><strong>4 × 1 Matrices:</strong></p>\n\n\n<p><p>A 4 × 1 matrix also has 4 entries.</p></p>\n<p><p>Again, each entry can be either 1 or 2.</p></p>\n<p><p>The total number of 4 × 1 matrices is:</p>\n<p>$      2 \\times 2 \\times 2 \\times 2 = 16      $</p></p>\n\n\n<p><strong>1 × 4 Matrices:</strong></p>\n\n\n<p><p>A 1 × 4 matrix contains 4 entries as well.</p></p>\n<p><p>With each entry being 1 or 2, the total number of 1 × 4 matrices is:</p>\n<p>$      2 \\times 2 \\times 2 \\times 2 = 16      $</p></p>\n\n<p>Summing up the number of matrices from all configurations, we have:</p>\n<p>$ 16 \\text{ (from 2 × 2)} + 16 \\text{ (from 4 × 1)} + 16 \\text{ (from 1 × 4)} = 48 $</p>\n<p>Therefore, a total of 48 distinct matrices can be formed.</p>",
+    "solution": "<p>To determine how many distinct matrices can be formed with all four entries taken from the set $\\{1, 2\\}$, we need to consider different matrix configurations. Let's explore these configurations:</p>\n\n<p><strong>2 \u00d7 2 Matrices:</strong></p>\n\n\n<p><p>A 2 \u00d7 2 matrix consists of 4 entries.</p></p>\n<p><p>Each entry can independently be either 1 or 2, providing 2 choices per entry.</p></p>\n<p><p>Therefore, the total number of 2 \u00d7 2 matrices is calculated by:</p>\n<p>$      2 \\times 2 \\times 2 \\times 2 = 16      $</p></p>\n\n\n<p><strong>4 \u00d7 1 Matrices:</strong></p>\n\n\n<p><p>A 4 \u00d7 1 matrix also has 4 entries.</p></p>\n<p><p>Again, each entry can be either 1 or 2.</p></p>\n<p><p>The total number of 4 \u00d7 1 matrices is:</p>\n<p>$      2 \\times 2 \\times 2 \\times 2 = 16      $</p></p>\n\n\n<p><strong>1 \u00d7 4 Matrices:</strong></p>\n\n\n<p><p>A 1 \u00d7 4 matrix contains 4 entries as well.</p></p>\n<p><p>With each entry being 1 or 2, the total number of 1 \u00d7 4 matrices is:</p>\n<p>$      2 \\times 2 \\times 2 \\times 2 = 16      $</p></p>\n\n<p>Summing up the number of matrices from all configurations, we have:</p>\n<p>$ 16 \\text{ (from 2 \u00d7 2)} + 16 \\text{ (from 4 \u00d7 1)} + 16 \\text{ (from 1 \u00d7 4)} = 48 $</p>\n<p>Therefore, a total of 48 distinct matrices can be formed.</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -5659,7 +5659,7 @@
     "title": "NDA Mathematics 14th September 2025",
     "year": "2025",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "How many quadrilaterals can be formed by joining these points?",
     "options": [
       "70",
@@ -5672,7 +5672,7 @@
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General",
-    "questionType": "MCQM"
+    "questionType": "SCQ"
   },
   {
     "id": "tllwm7djkc",
@@ -5711,7 +5711,7 @@
       "Neither 1 nor 2&nbsp;&nbsp;"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>To verify the given statements, we will use Wilson's Theorem. Wilson's Theorem states that for a prime number $ p $, the factorial of $ (p-1) $ is congruent to -1 modulo $ p $. In mathematical terms, it can be expressed as:</p>\n\n<p>\n\n<p>$$ (p-1)! \\equiv -1 \\ (\\text{mod} \\ p) $$</p>\n\n</p>\n\n<p>Now, let's analyze each statement one by one:</p>\n\n<p><strong>Statement 1: (25)! + 1 is divisible by 26</strong></p>\n\n<ol>\n\n<li>\n\n<p>Note that 26 is not a prime number, hence we cannot directly apply Wilson’s Theorem here. However, 26 can be factored into prime factors: $ 26 = 2 \\times 13 $.</p>\n\n</li>\n\n<li>\n\n<p>We need to check if $ (25)! + 1 $ is divisible by both 2 and 13.</p>\n\n</li>\n\n<li>\n\n<p>$ 25! $ is obviously divisible by 2 (since it includes all integers from 1 to 25), so $ 25! \\equiv 0 \\ (\\text{mod} \\ 2) $. Thus, $ 25! + 1 \\equiv 1 \\ (\\text{mod} \\ 2) $. This is not divisible by 2, so $ (25)! + 1 $ is <strong>not</strong> divisible by 26.</p>\n\n</li>\n\n</ol>\n\n<p><strong>Statement 2: (6)! + 1 is divisible by 7</strong></p>\n\n<ol>\n\n<li>\n\n<p>Note that 7 is a prime number, so we can apply Wilson’s Theorem here. According to Wilson's Theorem:</p>\n\n</li>\n\n<p>\n\n<p>$$ (7-1)! \\equiv -1 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n<li>\n\n<p>This means:</p>\n\n<p>\n\n<p>$$ 6! \\equiv -1 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n</li>\n\n<li>\n\n<p>By adding 1 to both sides of the congruence:</p>\n\n<p>\n\n<p>$$ 6! + 1 \\equiv -1 + 1 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n</li>\n\n<li>\n\n<p>This simplifies to:</p>\n\n<p>\n\n<p>$$ 6! + 1 \\equiv 0 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n</li>\n\n<li>\n\n<p>Thus, $ (6)! + 1 $ is divisible by 7. So Statement 2 is correct.</p>\n\n</li>\n\n</ol>\n\n<p>Therefore, the correct answer is:</p>\n\n<p><strong>Option B: 2 only</strong></p>",
+    "solution": "<p>To verify the given statements, we will use Wilson's Theorem. Wilson's Theorem states that for a prime number $ p $, the factorial of $ (p-1) $ is congruent to -1 modulo $ p $. In mathematical terms, it can be expressed as:</p>\n\n<p>\n\n<p>$$ (p-1)! \\equiv -1 \\ (\\text{mod} \\ p) $$</p>\n\n</p>\n\n<p>Now, let's analyze each statement one by one:</p>\n\n<p><strong>Statement 1: (25)! + 1 is divisible by 26</strong></p>\n\n<ol>\n\n<li>\n\n<p>Note that 26 is not a prime number, hence we cannot directly apply Wilson\u2019s Theorem here. However, 26 can be factored into prime factors: $ 26 = 2 \\times 13 $.</p>\n\n</li>\n\n<li>\n\n<p>We need to check if $ (25)! + 1 $ is divisible by both 2 and 13.</p>\n\n</li>\n\n<li>\n\n<p>$ 25! $ is obviously divisible by 2 (since it includes all integers from 1 to 25), so $ 25! \\equiv 0 \\ (\\text{mod} \\ 2) $. Thus, $ 25! + 1 \\equiv 1 \\ (\\text{mod} \\ 2) $. This is not divisible by 2, so $ (25)! + 1 $ is <strong>not</strong> divisible by 26.</p>\n\n</li>\n\n</ol>\n\n<p><strong>Statement 2: (6)! + 1 is divisible by 7</strong></p>\n\n<ol>\n\n<li>\n\n<p>Note that 7 is a prime number, so we can apply Wilson\u2019s Theorem here. According to Wilson's Theorem:</p>\n\n</li>\n\n<p>\n\n<p>$$ (7-1)! \\equiv -1 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n<li>\n\n<p>This means:</p>\n\n<p>\n\n<p>$$ 6! \\equiv -1 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n</li>\n\n<li>\n\n<p>By adding 1 to both sides of the congruence:</p>\n\n<p>\n\n<p>$$ 6! + 1 \\equiv -1 + 1 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n</li>\n\n<li>\n\n<p>This simplifies to:</p>\n\n<p>\n\n<p>$$ 6! + 1 \\equiv 0 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n</li>\n\n<li>\n\n<p>Thus, $ (6)! + 1 $ is divisible by 7. So Statement 2 is correct.</p>\n\n</li>\n\n</ol>\n\n<p>Therefore, the correct answer is:</p>\n\n<p><strong>Option B: 2 only</strong></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -5745,7 +5745,7 @@
     "year": "2023",
     "difficulty": "Medium",
     "type": "SCQ",
-    "question": "Let x be the number of permutations of the word ‘PERMUTATIONS’ and y be the number of permutations of the word ‘COMBINATIONS’. Which one of the following is correct ?&nbsp;",
+    "question": "Let x be the number of permutations of the word \u2018PERMUTATIONS\u2019 and y be the number of permutations of the word \u2018COMBINATIONS\u2019. Which one of the following is correct ?&nbsp;",
     "options": [
       "x = y&nbsp;",
       "y = 2x",
@@ -5774,7 +5774,7 @@
       "<span class=\"math-tex\">$\\frac{110}{3} \\%$</span>"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>To find the percentage of 5-digit numbers formed using the digits 0, 1, 2, 4, 5 without repetition that are greater than 50,000, we need to count the number of valid numbers that meet this criterion and compare it to the total number of possible 5-digit numbers.</p>\n\n<h3>Step 1: Total Number of 5-Digit Numbers</h3>\n\n<p>The total number of 5-digit numbers that can be formed using the digits 0, 1, 2, 4, 5 without repetition is calculated as follows:</p>\n\n<ul>\n<li>The first digit (thousands place) cannot be 0, so there are 4 choices (1, 2, 4, 5).</li><br>\n<li>The second digit can be any of the remaining 4 digits.</li><br>\n<li>The third digit can be any of the remaining 3 digits.</li><br>\n<li>The fourth digit can be any of the remaining 2 digits.</li><br>\n<li>The fifth digit can be the remaining 1 digit.</li>\n</ul>\n<p>Thus, the total number of 5-digit numbers is:</p>\n\n<p>$ 4 \\times 4! = 4 \\times 24 = 96 $</p>\n\n<h3>Step 2: Number of 5-Digit Numbers Greater than 50,000</h3>\n\n<p>To be greater than 50,000, the first digit must be either 5. Let’s count the numbers formed with each of these choices:</p>\n\n<ol>\n<li><strong>First digit is 5:</strong></li>\n</ol>\n<ul>\n<li>Remaining digits: 0, 1, 2, 4</li><br>\n<li>The number of permutations of these 4 digits:</li>\n</ul>\n<p>$ 4! = 24 $</p>\n\n<h3>Step 3: Calculate the Percentage</h3>\n\n<p>The number of numbers greater than 50,000 is 24. The total number of 5-digit numbers is 96. Therefore, the percentage of numbers that are greater than 50,000 is calculated as follows:</p>\n\n<p>$ \\text{Percentage} = \\left( \\frac{24}{96} \\right) \\times 100\\% = 25\\% $</p>\n\n<h3>Conclusion</h3>\n\n<p>The percentage of numbers that are greater than 50,000 is:</p>\n\n<p>$ \\boxed{25\\%} $</p>",
+    "solution": "<p>To find the percentage of 5-digit numbers formed using the digits 0, 1, 2, 4, 5 without repetition that are greater than 50,000, we need to count the number of valid numbers that meet this criterion and compare it to the total number of possible 5-digit numbers.</p>\n\n<h3>Step 1: Total Number of 5-Digit Numbers</h3>\n\n<p>The total number of 5-digit numbers that can be formed using the digits 0, 1, 2, 4, 5 without repetition is calculated as follows:</p>\n\n<ul>\n<li>The first digit (thousands place) cannot be 0, so there are 4 choices (1, 2, 4, 5).</li><br>\n<li>The second digit can be any of the remaining 4 digits.</li><br>\n<li>The third digit can be any of the remaining 3 digits.</li><br>\n<li>The fourth digit can be any of the remaining 2 digits.</li><br>\n<li>The fifth digit can be the remaining 1 digit.</li>\n</ul>\n<p>Thus, the total number of 5-digit numbers is:</p>\n\n<p>$ 4 \\times 4! = 4 \\times 24 = 96 $</p>\n\n<h3>Step 2: Number of 5-Digit Numbers Greater than 50,000</h3>\n\n<p>To be greater than 50,000, the first digit must be either 5. Let\u2019s count the numbers formed with each of these choices:</p>\n\n<ol>\n<li><strong>First digit is 5:</strong></li>\n</ol>\n<ul>\n<li>Remaining digits: 0, 1, 2, 4</li><br>\n<li>The number of permutations of these 4 digits:</li>\n</ul>\n<p>$ 4! = 24 $</p>\n\n<h3>Step 3: Calculate the Percentage</h3>\n\n<p>The number of numbers greater than 50,000 is 24. The total number of 5-digit numbers is 96. Therefore, the percentage of numbers that are greater than 50,000 is calculated as follows:</p>\n\n<p>$ \\text{Percentage} = \\left( \\frac{24}{96} \\right) \\times 100\\% = 25\\% $</p>\n\n<h3>Conclusion</h3>\n\n<p>The percentage of numbers that are greater than 50,000 is:</p>\n\n<p>$ \\boxed{25\\%} $</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -5816,7 +5816,7 @@
       "34"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>To determine the remainder of the sum $ S = 0! + 1! + 2! + 3! + \\ldots + 100! \\, $ when divided by 60, we need to analyze the factorials and their properties with respect to modulo 60.</p>\n\n<p>First, note that:</p>\n\n<p>60 can be factored as:\n\n<p>$$ 60 = 2^2 \\times 3 \\times 5 $$</p></p>\n\n<p>Therefore, if we find the remainders of factorials modulo 2, 3, and 5 separately, we can use the Chinese Remainder Theorem to find the overall remainder modulo 60.</p>\n\n<p>Let’s examine the factorials and their behavior under mod 60:</p>\n\n<p>For $ n \\geq 5 $, $ n! $ will always be divisible by 60 because it includes 2, 3, and 5 as factors. Thus, $ 5!, 6!, 7!, \\ldots, 100! $ are all divisible by 60 and contribute 0 to the sum modulo 60.</p>\n\n<p>Therefore, we only need to consider the sum of the factorials from 0 to 4:</p>\n\n<p>$$ S = 0! + 1! + 2! + 3! + 4! $$</p>\n\n<p>Calculating each factorial:</p>\n\n<p>$$ 0! = 1 $$</p>\n\n<p>$$ 1! = 1 $$</p>\n\n<p>$$ 2! = 2 $$</p>\n\n<p>$$ 3! = 6 $$</p>\n\n<p>$$ 4! = 24 $$</p>\n\n<p>Thus, the sum becomes:\n\n<p>$$ S = 1 + 1 + 2 + 6 + 24 = 34 $$</p></p>\n\n<p>Now, we need the remainder when 34 is divided by 60. Since 34 is less than 60, the remainder is simply 34.</p>\n\n<p>So, the remainder of $ S $ when divided by 60 is: <strong>34</strong></p>\n\n<p><strong>Answer: Option D</strong></p>",
+    "solution": "<p>To determine the remainder of the sum $ S = 0! + 1! + 2! + 3! + \\ldots + 100! \\, $ when divided by 60, we need to analyze the factorials and their properties with respect to modulo 60.</p>\n\n<p>First, note that:</p>\n\n<p>60 can be factored as:\n\n<p>$$ 60 = 2^2 \\times 3 \\times 5 $$</p></p>\n\n<p>Therefore, if we find the remainders of factorials modulo 2, 3, and 5 separately, we can use the Chinese Remainder Theorem to find the overall remainder modulo 60.</p>\n\n<p>Let\u2019s examine the factorials and their behavior under mod 60:</p>\n\n<p>For $ n \\geq 5 $, $ n! $ will always be divisible by 60 because it includes 2, 3, and 5 as factors. Thus, $ 5!, 6!, 7!, \\ldots, 100! $ are all divisible by 60 and contribute 0 to the sum modulo 60.</p>\n\n<p>Therefore, we only need to consider the sum of the factorials from 0 to 4:</p>\n\n<p>$$ S = 0! + 1! + 2! + 3! + 4! $$</p>\n\n<p>Calculating each factorial:</p>\n\n<p>$$ 0! = 1 $$</p>\n\n<p>$$ 1! = 1 $$</p>\n\n<p>$$ 2! = 2 $$</p>\n\n<p>$$ 3! = 6 $$</p>\n\n<p>$$ 4! = 24 $$</p>\n\n<p>Thus, the sum becomes:\n\n<p>$$ S = 1 + 1 + 2 + 6 + 24 = 34 $$</p></p>\n\n<p>Now, we need the remainder when 34 is divided by 60. Since 34 is less than 60, the remainder is simply 34.</p>\n\n<p>So, the remainder of $ S $ when divided by 60 is: <strong>34</strong></p>\n\n<p><strong>Answer: Option D</strong></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -5921,7 +5921,7 @@
       "12"
     ],
     "correctOptionIndex": 1,
-    "solution": "<p>First, note that “INDIA” has 5 letters with a repeated vowel: I, N, D, I, A.  </p>\n<p>We need vowels (I, I, A) in the 3 odd positions (1, 3, 5) and consonants (N, D) in the 2 even positions (2, 4).</p>\n\n<p><p>Ways to arrange the 3 vowels in positions 1, 3, 5:  </p>\n<p>$$\\frac{3!}{2!}\\;=\\;3$$  </p>\n<p>(since I repeats twice)</p></p>\n<p><p>Ways to arrange the 2 consonants in positions 2, 4:  </p>\n<p>$$2!\\;=\\;2$$</p></p>\n\n<p>Total permutations = $3\\times2=6$.</p>\n<p>Answer: 6.</p>",
+    "solution": "<p>First, note that \u201cINDIA\u201d has 5 letters with a repeated vowel: I, N, D, I, A.  </p>\n<p>We need vowels (I, I, A) in the 3 odd positions (1, 3, 5) and consonants (N, D) in the 2 even positions (2, 4).</p>\n\n<p><p>Ways to arrange the 3 vowels in positions 1, 3, 5:  </p>\n<p>$$\\frac{3!}{2!}\\;=\\;3$$  </p>\n<p>(since I repeats twice)</p></p>\n<p><p>Ways to arrange the 2 consonants in positions 2, 4:  </p>\n<p>$$2!\\;=\\;2$$</p></p>\n\n<p>Total permutations = $3\\times2=6$.</p>\n<p>Answer: 6.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -5942,7 +5942,7 @@
       "1620"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>First, identify the vowels and consonants in “EQUATION”:</p>\n\n<p><p>Vowels (5): E, U, A, I, O  </p></p>\n<p><p>Consonants (3): Q, T, N  </p></p>\n\n<p>We want all vowels together and all consonants together. Treat each group as a “block.” Then:</p>\n\n<p><p>Number of ways to arrange the two blocks (vowels‐block and consonants‐block):  </p>\n<p>$$2! = 2$$  </p></p>\n<p><p>Number of ways to permute the 5 vowels inside their block:  </p>\n<p>$$5! = 120$$  </p></p>\n<p><p>Number of ways to permute the 3 consonants inside their block:  </p>\n<p>$$3! = 6$$  </p></p>\n\n<p>Multiply them:  </p>\n<p>$$2! \\times 5! \\times 3! = 2 \\times 120 \\times 6 = 1440$$  </p>\n<p>Answer: <strong>1440</strong>.</p>",
+    "solution": "<p>First, identify the vowels and consonants in \u201cEQUATION\u201d:</p>\n\n<p><p>Vowels (5): E, U, A, I, O  </p></p>\n<p><p>Consonants (3): Q, T, N  </p></p>\n\n<p>We want all vowels together and all consonants together. Treat each group as a \u201cblock.\u201d Then:</p>\n\n<p><p>Number of ways to arrange the two blocks (vowels\u2010block and consonants\u2010block):  </p>\n<p>$$2! = 2$$  </p></p>\n<p><p>Number of ways to permute the 5 vowels inside their block:  </p>\n<p>$$5! = 120$$  </p></p>\n<p><p>Number of ways to permute the 3 consonants inside their block:  </p>\n<p>$$3! = 6$$  </p></p>\n\n<p>Multiply them:  </p>\n<p>$$2! \\times 5! \\times 3! = 2 \\times 120 \\times 6 = 1440$$  </p>\n<p>Answer: <strong>1440</strong>.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -6005,7 +6005,7 @@
       "1/35"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>First, count letters in ZOOLOGY:</p>\n\n<p><p>Vowels: O, O, O (3 identical)  </p></p>\n<p><p>Consonants: Z, L, G, Y (4 distinct)  </p></p>\n\n\n<p><p>Total distinct arrangements  </p>\n<p>$$\\frac{7!}{3!} = \\frac{5040}{6} = 840$$  </p></p>\n<p><p>Favorable arrangements (pattern C-V-C-V-C-V-C):  </p></p>\n\n\n<p><p>Consonants can occupy the 4 “C” slots in $4!$ ways.  </p></p>\n<p><p>Vowels (all O’s) fill the 3 “V” slots in exactly 1 way.  </p>\n<p>$$\\text{Favorable} = 4! = 24$$  </p></p>\n\n\n<p><p>Probability  </p>\n<p>$$\\frac{24}{840} = \\frac{1}{35}$$  </p></p>\n\n<p>Answer: 1/35.</p>",
+    "solution": "<p>First, count letters in ZOOLOGY:</p>\n\n<p><p>Vowels: O, O, O (3 identical)  </p></p>\n<p><p>Consonants: Z, L, G, Y (4 distinct)  </p></p>\n\n\n<p><p>Total distinct arrangements  </p>\n<p>$$\\frac{7!}{3!} = \\frac{5040}{6} = 840$$  </p></p>\n<p><p>Favorable arrangements (pattern C-V-C-V-C-V-C):  </p></p>\n\n\n<p><p>Consonants can occupy the 4 \u201cC\u201d slots in $4!$ ways.  </p></p>\n<p><p>Vowels (all O\u2019s) fill the 3 \u201cV\u201d slots in exactly 1 way.  </p>\n<p>$$\\text{Favorable} = 4! = 24$$  </p></p>\n\n\n<p><p>Probability  </p>\n<p>$$\\frac{24}{840} = \\frac{1}{35}$$  </p></p>\n\n<p>Answer: 1/35.</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -6026,7 +6026,7 @@
       "10"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p>Let’s count how many ordered triples $(x,y,z)$ with $1\\le x,y,z\\le6$ satisfy $x < y < z$.</p>\n\n<p><p>First pick any 3 distinct faces out of the 6.  </p>\n<p>Number of ways:  </p>\n<p>$$    \\binom{6}{3}    $$</p></p>\n<p><p>Once those 3 values are chosen, there’s exactly one way to arrange them in strictly increasing order $x < y < z$.</p></p>\n\n<p>Hence  </p>\n<p>$$ \\binom{6}{3} = \\frac{6\\cdot5\\cdot4}{3\\cdot2\\cdot1} = 20. $$</p>\n<p>Answer: Option 1 (20).</p>",
+    "solution": "<p>Let\u2019s count how many ordered triples $(x,y,z)$ with $1\\le x,y,z\\le6$ satisfy $x < y < z$.</p>\n\n<p><p>First pick any 3 distinct faces out of the 6.  </p>\n<p>Number of ways:  </p>\n<p>$$    \\binom{6}{3}    $$</p></p>\n<p><p>Once those 3 values are chosen, there\u2019s exactly one way to arrange them in strictly increasing order $x < y < z$.</p></p>\n\n<p>Hence  </p>\n<p>$$ \\binom{6}{3} = \\frac{6\\cdot5\\cdot4}{3\\cdot2\\cdot1} = 20. $$</p>\n<p>Answer: Option 1 (20).</p>",
     "marks": 2.5,
     "negativeMarks": -0.833,
     "topic": "General"
@@ -6089,7 +6089,7 @@
       "<p>220</p>"
     ],
     "correctOptionIndex": 0,
-    "solution": "<p>To count the number of triangles that can be formed using the given points on the sides of triangle $PQR$, we need to calculate the number of distinct combinations of these points taken three at a time.</p>\n\n<p>Let’s denote the number of points on sides $PQ$, $QR$, and $RP$ as follows:</p>\n\n<p>Points on $PQ$: 3</p>\n\n<p>Points on $QR$: 4</p>\n\n<p>Points on $RP$: 5</p>\n\n<p>Thus, the total number of points is $3 + 4 + 5 = 12$.</p>\n\n<p>The formula for the number of ways to choose $r$ points from $n$ points is given by the binomial coefficient:</p>\n\n<p>$$ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} $$</p>\n\n<p>In this problem, we need to choose 3 points out of 12:</p>\n\n<p>$$ \\binom{12}{3} = \\frac{12!}{3!(12-3)!} = \\frac{12!}{3!(9)!} $$</p>\n\n<p>By calculating the above expression:</p>\n\n<p>$$ \\binom{12}{3} = \\frac{12 \\times 11 \\times 10}{3 \\times 2 \\times 1} = 220 $$</p>\n\n<p>However, we need to ensure that no three points lie on the same line to form a valid triangle. The points that might lie on the same line are on the same side of the triangle ($PQ$, $QR$, or $RP$). Since no valid triangle can be formed if we choose all 3 points from any one side, we need to subtract these cases.</p>\n\n<p>For each of the sides:</p>\n\n<p>- On $PQ$ (3 points): $ \\binom{3}{3} = 1 $</p>\n\n<p>- On $QR$ (4 points): $ \\binom{4}{3} = 4 $</p>\n\n<p>- On $RP$ (5 points): $ \\binom{5}{3} = 10 $</p>\n\n<p>Thus, the total number of invalid cases: $1 + 4 + 10 = 15$.</p>\n\n<p>The total number of valid triangles is therefore:</p>\n\n<p>$$ \\binom{12}{3} - 15 = 220 - 15 = 205 $$</p>\n\n<p>Thus, the number of triangles formed is 205.</p>\n\n<p>The correct option is A: 205.</p>",
+    "solution": "<p>To count the number of triangles that can be formed using the given points on the sides of triangle $PQR$, we need to calculate the number of distinct combinations of these points taken three at a time.</p>\n\n<p>Let\u2019s denote the number of points on sides $PQ$, $QR$, and $RP$ as follows:</p>\n\n<p>Points on $PQ$: 3</p>\n\n<p>Points on $QR$: 4</p>\n\n<p>Points on $RP$: 5</p>\n\n<p>Thus, the total number of points is $3 + 4 + 5 = 12$.</p>\n\n<p>The formula for the number of ways to choose $r$ points from $n$ points is given by the binomial coefficient:</p>\n\n<p>$$ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} $$</p>\n\n<p>In this problem, we need to choose 3 points out of 12:</p>\n\n<p>$$ \\binom{12}{3} = \\frac{12!}{3!(12-3)!} = \\frac{12!}{3!(9)!} $$</p>\n\n<p>By calculating the above expression:</p>\n\n<p>$$ \\binom{12}{3} = \\frac{12 \\times 11 \\times 10}{3 \\times 2 \\times 1} = 220 $$</p>\n\n<p>However, we need to ensure that no three points lie on the same line to form a valid triangle. The points that might lie on the same line are on the same side of the triangle ($PQ$, $QR$, or $RP$). Since no valid triangle can be formed if we choose all 3 points from any one side, we need to subtract these cases.</p>\n\n<p>For each of the sides:</p>\n\n<p>- On $PQ$ (3 points): $ \\binom{3}{3} = 1 $</p>\n\n<p>- On $QR$ (4 points): $ \\binom{4}{3} = 4 $</p>\n\n<p>- On $RP$ (5 points): $ \\binom{5}{3} = 10 $</p>\n\n<p>Thus, the total number of invalid cases: $1 + 4 + 10 = 15$.</p>\n\n<p>The total number of valid triangles is therefore:</p>\n\n<p>$$ \\binom{12}{3} - 15 = 220 - 15 = 205 $$</p>\n\n<p>Thus, the number of triangles formed is 205.</p>\n\n<p>The correct option is A: 205.</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -6152,7 +6152,7 @@
       "<p>6</p>"
     ],
     "correctOptionIndex": 3,
-    "solution": "<p>To determine how many four-digit numbers formed by using the digits 1, 2, 3, and 5 without repetition are divisible by 4, we need to understand the divisibility rule for 4. A number is divisible by 4 if the last two digits of the number form a number itself divisible by 4.</p>\n\n<p>Let's examine which pairs of digits from 1, 2, 3, and 5 result in a number divisible by 4:</p>\n\n<ul>\n\n<li>12 (since 12 ÷ 4 = 3)</li>\n\n<li>32 (since 32 ÷ 4 = 8)</li>\n\n<li>52 (since 52 ÷ 4 = 13)</li>\n\n</ul>\n\n<p>So, the valid pairs for the last two digits are (1, 2), (3, 2), and (5, 2).</p>\n\n<p>We now need to form four-digit numbers where the last two digits are one of these pairs. For each pair of last two digits, we can arrange the remaining two digits (chosen from the remaining digits) in the first two positions.</p>\n\n<p>Let's calculate the possibilities:</p>\n\n<ol>\n\n<li>If the last two digits are 12:\n\n<ul>\n\n<li>The remaining two digits are 3 and 5. These can be arranged in 2! (2 factorial) ways.\n\n<p>$$2! = 2 \\times 1 = 2$$</li></p>\n\n</ul>\n\n</li>\n\n<li>If the last two digits are 32:\n\n<ul>\n\n<li>The remaining two digits are 1 and 5. These can be arranged in 2! ways.\n\n<p>$$2! = 2 \\times 1 = 2$$</li></p>\n\n</ul>\n\n</li>\n\n<li>If the last two digits are 52:\n\n<ul>\n\n<li>The remaining two digits are 1 and 3. These can be arranged in 2! ways.\n\n<p>$$2! = 2 \\times 1 = 2$$</li></p>\n\n</ul>\n\n</li>\n\n</ol>\n\n<p>Since we have three valid pairs of last two digits, and each pair offers 2 valid arrangements of the remaining digits, the total number of four-digit numbers divisible by 4 is:</p>\n\n<p>$$3 \\times 2 = 6$$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option D - 6</p>",
+    "solution": "<p>To determine how many four-digit numbers formed by using the digits 1, 2, 3, and 5 without repetition are divisible by 4, we need to understand the divisibility rule for 4. A number is divisible by 4 if the last two digits of the number form a number itself divisible by 4.</p>\n\n<p>Let's examine which pairs of digits from 1, 2, 3, and 5 result in a number divisible by 4:</p>\n\n<ul>\n\n<li>12 (since 12 \u00f7 4 = 3)</li>\n\n<li>32 (since 32 \u00f7 4 = 8)</li>\n\n<li>52 (since 52 \u00f7 4 = 13)</li>\n\n</ul>\n\n<p>So, the valid pairs for the last two digits are (1, 2), (3, 2), and (5, 2).</p>\n\n<p>We now need to form four-digit numbers where the last two digits are one of these pairs. For each pair of last two digits, we can arrange the remaining two digits (chosen from the remaining digits) in the first two positions.</p>\n\n<p>Let's calculate the possibilities:</p>\n\n<ol>\n\n<li>If the last two digits are 12:\n\n<ul>\n\n<li>The remaining two digits are 3 and 5. These can be arranged in 2! (2 factorial) ways.\n\n<p>$$2! = 2 \\times 1 = 2$$</li></p>\n\n</ul>\n\n</li>\n\n<li>If the last two digits are 32:\n\n<ul>\n\n<li>The remaining two digits are 1 and 5. These can be arranged in 2! ways.\n\n<p>$$2! = 2 \\times 1 = 2$$</li></p>\n\n</ul>\n\n</li>\n\n<li>If the last two digits are 52:\n\n<ul>\n\n<li>The remaining two digits are 1 and 3. These can be arranged in 2! ways.\n\n<p>$$2! = 2 \\times 1 = 2$$</li></p>\n\n</ul>\n\n</li>\n\n</ol>\n\n<p>Since we have three valid pairs of last two digits, and each pair offers 2 valid arrangements of the remaining digits, the total number of four-digit numbers divisible by 4 is:</p>\n\n<p>$$3 \\times 2 = 6$$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option D - 6</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -6194,7 +6194,7 @@
       "9"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>To determine the remainder when the sum of the factorials $ 1! + 3! + 5! + 7! + \\ldots + 199! $ is divided by 24, we can use some properties of factorials and modular arithmetic.</p>\n\n<p>First, recall that for any integer $ n \\geq 4 $, $ n! $ is divisible by both 4 and 6. This is because $ n! $ contains both 4 and 6 as factors (for $ n \\geq 4 $). Therefore, $ n! $ for $ n \\geq 4 $ is divisible by $ \\text{lcm}(4, 6) = 24 $.</p>\n\n<p>Thus, for $ 5! $, $ 7! $, $ 9! $, and so on up to $ 199! $, each term is divisible by 24, which means their remainders when divided by 24 are all zero.</p>\n\n<p>So, the sum of the terms starting from $ 5! $ to $ 199! $ contributes nothing to the remainder. They are all 0 modulo 24.</p>\n\n<p>Now let’s consider the remaining terms: $ 1! $ and $ 3! $.</p>\n\n<p>We calculate their factorials:</p>\n\n<ul>\n\n<li> $ 1! = 1 $ </li>\n\n<li> $ 3! = 3 \\times 2 \\times 1 = 6 $ </li>\n\n</ul>\n\n<p>Now we sum these results:</p>\n\n<p>$$ 1! + 3! = 1 + 6 = 7 $$</p>\n\n<p>The sum $ 1 + 6 = 7 $ is then divided by 24 to find the remainder:</p>\n\n<p>Clearly, 7 is less than 24, so the remainder when 7 is divided by 24 is simply 7.</p>\n\n<p>Therefore, the remainder when $ 1! + 3! + 5! + 7! + \\ldots + 199! $ is divided by 24 is:</p>\n\n<p><strong>Option C: 7</strong></p>",
+    "solution": "<p>To determine the remainder when the sum of the factorials $ 1! + 3! + 5! + 7! + \\ldots + 199! $ is divided by 24, we can use some properties of factorials and modular arithmetic.</p>\n\n<p>First, recall that for any integer $ n \\geq 4 $, $ n! $ is divisible by both 4 and 6. This is because $ n! $ contains both 4 and 6 as factors (for $ n \\geq 4 $). Therefore, $ n! $ for $ n \\geq 4 $ is divisible by $ \\text{lcm}(4, 6) = 24 $.</p>\n\n<p>Thus, for $ 5! $, $ 7! $, $ 9! $, and so on up to $ 199! $, each term is divisible by 24, which means their remainders when divided by 24 are all zero.</p>\n\n<p>So, the sum of the terms starting from $ 5! $ to $ 199! $ contributes nothing to the remainder. They are all 0 modulo 24.</p>\n\n<p>Now let\u2019s consider the remaining terms: $ 1! $ and $ 3! $.</p>\n\n<p>We calculate their factorials:</p>\n\n<ul>\n\n<li> $ 1! = 1 $ </li>\n\n<li> $ 3! = 3 \\times 2 \\times 1 = 6 $ </li>\n\n</ul>\n\n<p>Now we sum these results:</p>\n\n<p>$$ 1! + 3! = 1 + 6 = 7 $$</p>\n\n<p>The sum $ 1 + 6 = 7 $ is then divided by 24 to find the remainder:</p>\n\n<p>Clearly, 7 is less than 24, so the remainder when 7 is divided by 24 is simply 7.</p>\n\n<p>Therefore, the remainder when $ 1! + 3! + 5! + 7! + \\ldots + 199! $ is divided by 24 is:</p>\n\n<p><strong>Option C: 7</strong></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -6248,7 +6248,7 @@
     "title": "NDA Mathematics 4 September 2022",
     "year": "2022",
     "difficulty": "Medium",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "How many four-digit natural numbers are there such that all of the digits are odd ?",
     "options": [
       "625",
@@ -6299,7 +6299,7 @@
       "864"
     ],
     "correctOptionIndex": 3,
-    "solution": "<ol>\n<li><p>Vowels in “QUESTION”: U, E, I, O (4 letters)  </p>\n<p>Consonants: Q, S, T, N (4 letters)</p></li>\n<li><p>Choose 2 vowels out of 4:  </p>\n<p>$$^4C_2=\\frac{4!}{2!\\,2!}=6$$</p></li>\n<li><p>Choose 2 consonants out of 4:  </p>\n<p>$$^4C_2=6$$</p></li>\n<li><p>Total ways to select the 4 letters (2 vowels + 2 consonants):  </p>\n<p>$$6\\times6=36$$</p></li>\n<li><p>For each such selection, number of arrangements of 4 distinct letters:  </p>\n<p>$$4!=24$$</p></li>\n<li><p>Hence total number of 4-letter “words”:  </p>\n<p>$$36\\times24=864$$</p></li>\n</ol>\n<p>Answer: 864 (Option D)</p>",
+    "solution": "<ol>\n<li><p>Vowels in \u201cQUESTION\u201d: U, E, I, O (4 letters)  </p>\n<p>Consonants: Q, S, T, N (4 letters)</p></li>\n<li><p>Choose 2 vowels out of 4:  </p>\n<p>$$^4C_2=\\frac{4!}{2!\\,2!}=6$$</p></li>\n<li><p>Choose 2 consonants out of 4:  </p>\n<p>$$^4C_2=6$$</p></li>\n<li><p>Total ways to select the 4 letters (2 vowels + 2 consonants):  </p>\n<p>$$6\\times6=36$$</p></li>\n<li><p>For each such selection, number of arrangements of 4 distinct letters:  </p>\n<p>$$4!=24$$</p></li>\n<li><p>Hence total number of 4-letter \u201cwords\u201d:  </p>\n<p>$$36\\times24=864$$</p></li>\n</ol>\n<p>Answer: 864 (Option D)</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -6320,7 +6320,7 @@
       "2304"
     ],
     "correctOptionIndex": 2,
-    "solution": "<p>We are asked to form 8‑letter arrangements using all the letters of the word <strong>QUESTION</strong>, such that consonants and vowels occupy alternate positions.  </p>\n\n<p><strong>Step 1: Letters in the word \"QUESTION\"</strong></p>\n<ul>\n<li><p>Total letters = 8, all distinct.  </p></li>\n<li><p>Vowels = <strong>U, E, I, O</strong> → 4 vowels.  </p></li>\n<li><p>Consonants = <strong>Q, S, T, N</strong> → 4 consonants.  </p></li>\n</ul>\n<p>So we have <strong>4 vowels</strong> and <strong>4 consonants</strong>.</p>\n\n<p><strong>Step 2: Possible patterns for alternation</strong></p>\n<p>Since the number of vowels = number of consonants = 4 each, the arrangement can start either with a vowel or with a consonant.  </p>\n<p>So possible patterns are:  </p>\n<ol>\n<li><p>V C V C V C V C  </p></li>\n<li><p>C V C V C V C V  </p></li>\n</ol>\n\n<p><strong>Step 3: Number of arrangements for each pattern</strong></p>\n<ul>\n<li><p>Arrange vowels in the 4 vowel places: $4!$ ways.  </p></li>\n<li><p>Arrange consonants in the 4 consonant places: $4!$ ways.  </p></li>\n</ul>\n<p>So, for one pattern:</p>\n<p>$$4! \\times 4! = 24 \\times 24 = 576$$  </p>\n\n<p><strong>Step 4: For both patterns</strong></p>\n<p>Total arrangements = $576 + 576 = 1152$.</p>\n\n<p><strong>Final Answer:</strong></p>\n<p>$ \\boxed{1152} $</p>\n<p>Correct Option: <strong>C (1152)</strong></p>",
+    "solution": "<p>We are asked to form 8\u2011letter arrangements using all the letters of the word <strong>QUESTION</strong>, such that consonants and vowels occupy alternate positions.  </p>\n\n<p><strong>Step 1: Letters in the word \"QUESTION\"</strong></p>\n<ul>\n<li><p>Total letters = 8, all distinct.  </p></li>\n<li><p>Vowels = <strong>U, E, I, O</strong> \u2192 4 vowels.  </p></li>\n<li><p>Consonants = <strong>Q, S, T, N</strong> \u2192 4 consonants.  </p></li>\n</ul>\n<p>So we have <strong>4 vowels</strong> and <strong>4 consonants</strong>.</p>\n\n<p><strong>Step 2: Possible patterns for alternation</strong></p>\n<p>Since the number of vowels = number of consonants = 4 each, the arrangement can start either with a vowel or with a consonant.  </p>\n<p>So possible patterns are:  </p>\n<ol>\n<li><p>V C V C V C V C  </p></li>\n<li><p>C V C V C V C V  </p></li>\n</ol>\n\n<p><strong>Step 3: Number of arrangements for each pattern</strong></p>\n<ul>\n<li><p>Arrange vowels in the 4 vowel places: $4!$ ways.  </p></li>\n<li><p>Arrange consonants in the 4 consonant places: $4!$ ways.  </p></li>\n</ul>\n<p>So, for one pattern:</p>\n<p>$$4! \\times 4! = 24 \\times 24 = 576$$  </p>\n\n<p><strong>Step 4: For both patterns</strong></p>\n<p>Total arrangements = $576 + 576 = 1152$.</p>\n\n<p><strong>Final Answer:</strong></p>\n<p>$ \\boxed{1152} $</p>\n<p>Correct Option: <strong>C (1152)</strong></p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"
@@ -6341,7 +6341,7 @@
       "720"
     ],
     "correctOptionIndex": 1,
-    "solution": "<ol>\n<li><p>Letters in “QUESTION”: Q, U, E, S, T, I, O, N  </p>\n<p>– Vowels (4): U, E, I, O  </p>\n<p>– Consonants (4): Q, S, T, N  </p></li>\n<li><p>To keep all consonants together, treat the block (Q S T N) as one object.  </p></li>\n<li><p>Now we have 5 objects to arrange: the consonant‐block + 4 vowels.  </p>\n<p>Number of ways = $5! = 120$.  </p></li>\n<li><p>Within the consonant‐block, the 4 consonants can be arranged in $4! = 24$ ways.  </p></li>\n<li><p>Total number of “words” =  </p>\n<p>$$5! \\times 4! = 120 \\times 24 = 2880.$$  </p></li>\n</ol>\n<p>Answer: 2880 (Option B)</p>",
+    "solution": "<ol>\n<li><p>Letters in \u201cQUESTION\u201d: Q, U, E, S, T, I, O, N  </p>\n<p>\u2013 Vowels (4): U, E, I, O  </p>\n<p>\u2013 Consonants (4): Q, S, T, N  </p></li>\n<li><p>To keep all consonants together, treat the block (Q S T N) as one object.  </p></li>\n<li><p>Now we have 5 objects to arrange: the consonant\u2010block + 4 vowels.  </p>\n<p>Number of ways = $5! = 120$.  </p></li>\n<li><p>Within the consonant\u2010block, the 4 consonants can be arranged in $4! = 24$ ways.  </p></li>\n<li><p>Total number of \u201cwords\u201d =  </p>\n<p>$$5! \\times 4! = 120 \\times 24 = 2880.$$  </p></li>\n</ol>\n<p>Answer: 2880 (Option B)</p>",
     "marks": 2.5,
     "negativeMarks": -0.83,
     "topic": "General"

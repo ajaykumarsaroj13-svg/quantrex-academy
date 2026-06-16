@@ -11,7 +11,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -19,8 +19,8 @@
     "difficulty": "hard",
     "solution": "<p><b>(A)</b></p>\n<p>Let</p>\n<p>$$f(x)=\\begin{cases} \\dfrac{1}{x}\\sin\\left(\\dfrac{1}{x}\\right), & x\\neq 0\\\\\\\\ 0, & x=0 \\end{cases}$$</p>\n<p>Now,</p>\n<p>$$g(x)=x f(x)=\\begin{cases} \\sin\\left(\\dfrac{1}{x}\\right), & x\\neq 0\\\\\\\\ 0, & x=0 \\end{cases}$$</p>\n<p>When $x \\neq 0$, the function $g(x)$ is $\\sin\\left(\\dfrac{1}{x}\\right)$, which keeps oscillating between $-1$ and $1$ as $x \\to 0$. So, $\\lim\\limits_{x \\to 0} g(x)$ does not exist. Therefore, $g(x)$ is <b>not continuous</b> at $x=0$.</p>\n<p><b>(B)</b></p>\n<p>Assume that $f(x)$ is continuous at $x=0$. This means $f(0^-) = f(0^+) = f(0)$.</p>\n<p>Now consider the derivative of $g(x)$ at $x=0$:</p>\n<p>$$g'(0)=\\lim\\limits_{h\\to 0}\\dfrac{g(h)-g(0)}{h}$$</p>\n<p>Since $g(0)=0$, this becomes</p>\n<p>$$g'(0)=\\lim\\limits_{h\\to 0}\\dfrac{g(h)}{h}=\\lim\\limits_{h\\to 0}\\dfrac{h f(h)}{h}$$</p>\n<p>$$g'(0)=\\lim\\limits_{h\\to 0} f(h)=f(0)$$</p>\n<p>This limit exists and is finite because $f(x)$ is continuous at $x=0$. Hence, $g(x)$ is <b>differentiable</b> at $x=0$.</p>\n<p><b>(C)</b></p>\n<p>From the above, if $g(x)$ is differentiable at $x=0$, then</p>\n<p>$$g'(0)=\\lim\\limits_{h\\to 0} f(h)$$</p>\n<p>This shows that the limit of $f(h)$ as $h \\to 0$ exists. However, we cannot say anything about the value of $f(0)$. So, even if $g(x)$ is differentiable at $x=0$, we cannot conclude that $f(x)$ is continuous at $x=0$.</p>\n<p><b>(D)</b></p>\n<p>This statement is correct and follows from the reasoning in option (C).</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "mp9uchft",
@@ -75,7 +75,7 @@
     "subject": "Mathematics",
     "topic": "differentiability",
     "difficulty": "medium",
-    "solution": "<p><img alt=\"JEE Main 2026 (Online) 4th April Evening Shift Mathematics - Limits, Continuity and Differentiability Question 6 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mozxwiua/744d7216-1f6a-4e6f-a13e-29dcff3e4259/9d217420-4c86-11f1-8557-21d2ff4ed907/file-6y3zli1mozxwiub.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mozxwiua/744d7216-1f6a-4e6f-a13e-29dcff3e4259/9d217420-4c86-11f1-8557-21d2ff4ed907/file-6y3zli1mozxwiub.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>First look at $|f(x)|$.</p>\n<p>For $x&lt;0$, we have $f(x)=e^{x-1}$, which is always positive, so $|f(x)|=e^{x-1}$. This part is continuous and differentiable for all $x&lt;0$.</p>\n<p>For $x\\\\ge 0$, $f(x)=x^2-5x+6=(x-2)(x-3)$. This becomes $0$ at $x=2$ and $x=3$, and it changes sign between $2$ and $3$. So when we take absolute value, $|f(x)|$ gets a “sharp corner” at $x=2$ and $x=3$, hence it is not differentiable at $x=2,3$.</p>\n<p>At $x=0$, check continuity of $|f(x)|$: left value tends to $|e^{-1}|=e^{-1}$, but right value is $|f(0)|=|6|=6$. Since these are not equal, $|f(x)|$ is discontinuous at $x=0$ (and therefore also not differentiable at $x=0$).</p>\n<p>Now consider $g(x)=f(|x|)+|f(x)|$.</p>\n<p>Here $f(|x|)$ always uses the $x\\\\ge 0$ definition because $|x|\\\\ge 0$. So $f(|x|)$ is continuous for all $x$, but it is not differentiable at $x=0$ because of $|x|$.</p>\n<p>So, discontinuity in $g$ can only come from $|f(x)|$, which happens at $x=0$ only. Also, $g$ will be non-differentiable where either term is non-differentiable, i.e., at $x=0,2,3$.</p>\n<p>$\\begin{aligned} &amp; |\\mathrm{f}(\\mathrm{x})| \\text { is discontinuous at } \\mathrm{x}=0 \\\\ &amp; |\\mathrm{f}(\\mathrm{x})| \\text { is non-diff. at } \\mathrm{x}=0,2,3 \\\\ &amp; \\mathrm{~g}(\\mathrm{x})=\\mathrm{f}(|\\mathrm{x}|)+|\\mathrm{f}(\\mathrm{x})| \\\\ &amp; \\mathrm{g}(\\mathrm{x}) \\text { will be discontinuous at } \\mathrm{x}=0 \\\\ &amp; \\mathrm{~g}(\\mathrm{x}) \\text { will be non diff at } \\mathrm{x}=0,2,3 \\\\ &amp; \\alpha=1, \\beta=3 \\\\ &amp; \\alpha+\\beta=1+3=4\\end{aligned}$</p>",
+    "solution": "<p><img alt=\"JEE Main 2026 (Online) 4th April Evening Shift Mathematics - Limits, Continuity and Differentiability Question 6 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mozxwiua/744d7216-1f6a-4e6f-a13e-29dcff3e4259/9d217420-4c86-11f1-8557-21d2ff4ed907/file-6y3zli1mozxwiub.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mozxwiua/744d7216-1f6a-4e6f-a13e-29dcff3e4259/9d217420-4c86-11f1-8557-21d2ff4ed907/file-6y3zli1mozxwiub.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>First look at $|f(x)|$.</p>\n<p>For $x&lt;0$, we have $f(x)=e^{x-1}$, which is always positive, so $|f(x)|=e^{x-1}$. This part is continuous and differentiable for all $x&lt;0$.</p>\n<p>For $x\\\\ge 0$, $f(x)=x^2-5x+6=(x-2)(x-3)$. This becomes $0$ at $x=2$ and $x=3$, and it changes sign between $2$ and $3$. So when we take absolute value, $|f(x)|$ gets a \u201csharp corner\u201d at $x=2$ and $x=3$, hence it is not differentiable at $x=2,3$.</p>\n<p>At $x=0$, check continuity of $|f(x)|$: left value tends to $|e^{-1}|=e^{-1}$, but right value is $|f(0)|=|6|=6$. Since these are not equal, $|f(x)|$ is discontinuous at $x=0$ (and therefore also not differentiable at $x=0$).</p>\n<p>Now consider $g(x)=f(|x|)+|f(x)|$.</p>\n<p>Here $f(|x|)$ always uses the $x\\\\ge 0$ definition because $|x|\\\\ge 0$. So $f(|x|)$ is continuous for all $x$, but it is not differentiable at $x=0$ because of $|x|$.</p>\n<p>So, discontinuity in $g$ can only come from $|f(x)|$, which happens at $x=0$ only. Also, $g$ will be non-differentiable where either term is non-differentiable, i.e., at $x=0,2,3$.</p>\n<p>$\\begin{aligned} &amp; |\\mathrm{f}(\\mathrm{x})| \\text { is discontinuous at } \\mathrm{x}=0 \\\\ &amp; |\\mathrm{f}(\\mathrm{x})| \\text { is non-diff. at } \\mathrm{x}=0,2,3 \\\\ &amp; \\mathrm{~g}(\\mathrm{x})=\\mathrm{f}(|\\mathrm{x}|)+|\\mathrm{f}(\\mathrm{x})| \\\\ &amp; \\mathrm{g}(\\mathrm{x}) \\text { will be discontinuous at } \\mathrm{x}=0 \\\\ &amp; \\mathrm{~g}(\\mathrm{x}) \\text { will be non diff at } \\mathrm{x}=0,2,3 \\\\ &amp; \\alpha=1, \\beta=3 \\\\ &amp; \\alpha+\\beta=1+3=4\\end{aligned}$</p>",
     "section": "B",
     "type": "SUBJECTIVE"
   },
@@ -92,7 +92,7 @@
     "subject": "Mathematics",
     "topic": "differentiability",
     "difficulty": "medium",
-    "solution": "<p>For the part $\\max \\left\\{6 x, 2+3 x^2\\right\\}$, the function can change its “active” expression only at those points where the two inside expressions become equal.</p>\n<p>$2+3 x^2=6 x \\Rightarrow 3 x^2-6 x+2=0$</p>\n<p><img alt=\"JEE Main 2026 (Online) 4th April Morning Shift Mathematics - Limits, Continuity and Differentiability Question 2 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mozy12q9/a9789f93-5cff-4667-8de7-10f35ca3fd63/1bbaf810-4c87-11f1-8557-21d2ff4ed907/file-6y3zli1mozy12qa.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mozy12q9/a9789f93-5cff-4667-8de7-10f35ca3fd63/1bbaf810-4c87-11f1-8557-21d2ff4ed907/file-6y3zli1mozy12qa.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$$ \\mathrm{x}=\\frac{6 \\pm \\sqrt{12}}{6}=\\frac{3 \\pm \\sqrt{2}}{3} $$</p>\n<p>At these two values of $x$, the max function switches between $6x$ and $2+3x^2$. Also, the derivatives of the two expressions are different there (since $\\frac{d}{dx}(6x)=6$ and $\\frac{d}{dx}(2+3x^2)=6x$), so $\\max \\left\\{6 x, 2+3 x^2\\right\\}$ is not differentiable at both points.</p>\n<p>Now look at the second part $|x-1| \\cos \\left|x^2-\\frac{1}{4}\\right|$. The factor $\\cos \\left|x^2-\\frac{1}{4}\\right|$ is continuous for all $x$, and at $x=1$ it becomes $\\cos \\left|1-\\frac{1}{4}\\right|=\\cos \\left(\\frac{3}{4}\\right)\\neq 0$.</p>\n<p>Because $\\cos \\left|x^2-\\frac{1}{4}\\right|$ is nonzero at $x=1$, multiplying it by $|x-1|$ does not remove the “corner” of $|x-1|$. So $|x-1| \\cos \\left|x^2-\\frac{1}{4}\\right|$ is not differentiable at $x=1$.</p>\n<p>Total number of points where $f(x)$ is nonDifferentiable is 3</p>",
+    "solution": "<p>For the part $\\max \\left\\{6 x, 2+3 x^2\\right\\}$, the function can change its \u201cactive\u201d expression only at those points where the two inside expressions become equal.</p>\n<p>$2+3 x^2=6 x \\Rightarrow 3 x^2-6 x+2=0$</p>\n<p><img alt=\"JEE Main 2026 (Online) 4th April Morning Shift Mathematics - Limits, Continuity and Differentiability Question 2 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mozy12q9/a9789f93-5cff-4667-8de7-10f35ca3fd63/1bbaf810-4c87-11f1-8557-21d2ff4ed907/file-6y3zli1mozy12qa.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mozy12q9/a9789f93-5cff-4667-8de7-10f35ca3fd63/1bbaf810-4c87-11f1-8557-21d2ff4ed907/file-6y3zli1mozy12qa.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$$ \\mathrm{x}=\\frac{6 \\pm \\sqrt{12}}{6}=\\frac{3 \\pm \\sqrt{2}}{3} $$</p>\n<p>At these two values of $x$, the max function switches between $6x$ and $2+3x^2$. Also, the derivatives of the two expressions are different there (since $\\frac{d}{dx}(6x)=6$ and $\\frac{d}{dx}(2+3x^2)=6x$), so $\\max \\left\\{6 x, 2+3 x^2\\right\\}$ is not differentiable at both points.</p>\n<p>Now look at the second part $|x-1| \\cos \\left|x^2-\\frac{1}{4}\\right|$. The factor $\\cos \\left|x^2-\\frac{1}{4}\\right|$ is continuous for all $x$, and at $x=1$ it becomes $\\cos \\left|1-\\frac{1}{4}\\right|=\\cos \\left(\\frac{3}{4}\\right)\\neq 0$.</p>\n<p>Because $\\cos \\left|x^2-\\frac{1}{4}\\right|$ is nonzero at $x=1$, multiplying it by $|x-1|$ does not remove the \u201ccorner\u201d of $|x-1|$. So $|x-1| \\cos \\left|x^2-\\frac{1}{4}\\right|$ is not differentiable at $x=1$.</p>\n<p>Total number of points where $f(x)$ is nonDifferentiable is 3</p>",
     "section": "B",
     "type": "NUMERICAL"
   },
@@ -136,7 +136,7 @@
     "subject": "Mathematics",
     "topic": "differentiability",
     "difficulty": "medium",
-    "solution": "<p>Here $f(x)=\\mathrm{e}^{\\sin |x|}-|x|$. Since $|x|$ is not differentiable at $x=0$, and also $\\sin|x|$ has a “kink” at $x=0$, the function $f$ is not differentiable at $x=0$. So, <b>Statement I is false</b>.</p>\n<p>Now take $x \\in\\left(-\\pi,-\\frac{\\pi}{2}\\right)$. Here $x<0$, so $|x|=-x$ and hence $\\sin|x|=\\sin(-x)=-\\sin x$. Therefore, on this interval we can write $f(x)=\\mathrm{e}^{-\\sin x}+x$ and differentiate to check whether $f$ is increasing.</p>\n<p>$$ \\begin{aligned} & f(x)=e^{-\\sin x}+x \\\\\\\\ & f^{\\prime}(x)=-e^{-\\sin x} \\cos x+1 \\\\\\\\ & \\text { for } x \\in\\left(-\\pi, \\frac{-\\pi}{2}\\right) \\quad \\cos x<0 \\\\\\\\ & \\therefore f^{\\prime}(x)>0 \\\\\\\\ & \\therefore f(x) \\text { is increasing } \\end{aligned} $$</p>\n<p>Since $\\cos x<0$ on $\\left(-\\pi,-\\frac{\\pi}{2}\\right)$ and $e^{-\\sin x}>0$, we get $-e^{-\\sin x}\\cos x>0$, so $f'(x)>0$ on this interval. Hence, <b>Statement II is true</b>.</p>",
+    "solution": "<p>Here $f(x)=\\mathrm{e}^{\\sin |x|}-|x|$. Since $|x|$ is not differentiable at $x=0$, and also $\\sin|x|$ has a \u201ckink\u201d at $x=0$, the function $f$ is not differentiable at $x=0$. So, <b>Statement I is false</b>.</p>\n<p>Now take $x \\in\\left(-\\pi,-\\frac{\\pi}{2}\\right)$. Here $x<0$, so $|x|=-x$ and hence $\\sin|x|=\\sin(-x)=-\\sin x$. Therefore, on this interval we can write $f(x)=\\mathrm{e}^{-\\sin x}+x$ and differentiate to check whether $f$ is increasing.</p>\n<p>$$ \\begin{aligned} & f(x)=e^{-\\sin x}+x \\\\\\\\ & f^{\\prime}(x)=-e^{-\\sin x} \\cos x+1 \\\\\\\\ & \\text { for } x \\in\\left(-\\pi, \\frac{-\\pi}{2}\\right) \\quad \\cos x<0 \\\\\\\\ & \\therefore f^{\\prime}(x)>0 \\\\\\\\ & \\therefore f(x) \\text { is increasing } \\end{aligned} $$</p>\n<p>Since $\\cos x<0$ on $\\left(-\\pi,-\\frac{\\pi}{2}\\right)$ and $e^{-\\sin x}>0$, we get $-e^{-\\sin x}\\cos x>0$, so $f'(x)>0$ on this interval. Hence, <b>Statement II is true</b>.</p>",
     "section": "A",
     "type": "SCQ"
   },
@@ -160,13 +160,13 @@
     "difficulty": "medium",
     "solution": "<p>The function $ f : \\mathbb{R} \\to \\mathbb{R} $ is defined by:</p>\n<p>$ f(x) =  \\begin{cases}  2 - 2x^2 - x^2 \\sin \\frac{1}{x}, & \\text{if } x \\neq 0, \\\\ 2, & \\text{if } x = 0. \\end{cases} $</p>\n<p><strong>Explanation:</strong></p>\n<p>(A) To determine differentiability at $ x = 0 $, consider the right-hand derivative (RHD):</p>\n<p>$ \\lim\\limits_{h \\rightarrow 0} \\frac{(2 - 2h^2 - h^2 \\sin \\frac{1}{h}) - 2}{h} = 0 $</p>\n<p>Similarly, for the left-hand derivative (LHD) at $ x = 0 $, we also find it equals 0. Therefore, $ f $ is differentiable at $ x = 0 $.</p>\n<p>(B) For $ x \\in (0, \\delta) $, the derivative of $ f $ is:</p>\n<p>$ f^{\\prime}(x) = -\\left(4x + 2x \\sin \\frac{1}{x}\\right) + \\cos \\frac{1}{x} $</p>\n<p>Thus:</p>\n<p>$ f^{\\prime}(x) = -\\left(2x\\left(4 - \\sin \\frac{1}{x}\\right)\\right) + \\cos \\frac{1}{x} $</p>\n<p>Since $\\cos \\frac{1}{x}$ oscillates, we cannot assert that $ f(x) $ is strictly decreasing on $ (0, \\delta) $.</p>\n<p>(C) For $ x \\in (-\\delta, 0) $ and any $ \\delta > 0 $, $ f(x) $ is not increasing since $\\cos \\frac{1}{x}$ oscillates between -1 and 1.</p>\n<p>(D) Evaluating at $ x = 0 $:</p>\n<p>$ f(0) = 2 $</p>\n<p>For small $ h $:</p>\n<p>$ f(0 + h) < 2 \\quad \\text{and} \\quad f(0 - h) < 2 $</p>\n<p>Therefore, $ x = 0 $ is a local maximum, not a local minimum.</p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
     "id": "mauw4x4e",
     "questionNumber": 37,
-    "questionText": "<p>Let $\\mathbb{R}$ denote the set of all real numbers. For a real number $x$, let [ x ] denote the greatest integer less than or equal to $x$. Let $n$ denote a natural number.</p>\n<p>Match each entry in List-I to the correct entry in List-II and choose the correct option.</p>\n<table class=\"tg\"><thead>\n\n  <tr>\n\n    <th class=\"tg-fymr\">List–I</th>\n\n    <th class=\"tg-fymr\" style=\"white-space:nowrap;\">List–II</th>\n\n  </tr>\n\n</thead>\n\n<tbody>\n\n  <tr>\n\n    <td class=\"tg-0pky\">(P) The minimum value of $n$ for which the function\n\n$$\nf(x)=\\left[\\frac{10 x^3-45 x^2+60 x+35}{n}\\right]\n$$\n\nis continuous on the interval $[1,2]$, is</td>\n\n    <td class=\"tg-0pky\">(1) 8</td>\n\n  </tr>\n\n  <tr>\n\n    <td class=\"tg-0pky\">(Q) The minimum value of $n$ for which $g(x)=\\left(2 n^2-13 n-15\\right)\\left(x^3+3 x\\right)$, $x \\in \\mathbb{R}$, is an increasing function on $\\mathbb{R}$, is</td>\n\n    <td class=\"tg-0pky\">(2) 9</td>\n\n  </tr>\n\n  <tr>\n\n    <td class=\"tg-0pky\">(R) The smallest natural number $n$ which is greater than 5 , such that $x=3$ is a point of local minima of\n\n$$\nh(x)=\\left(x^2-9\\right)^n\\left(x^2+2 x+3\\right)\n$$\n is</td>\n\n    <td class=\"tg-0pky\">(3) 5</td>\n\n  </tr>\n\n  <tr>\n\n    <td class=\"tg-0pky\">(S) Number of $x_0 \\in \\mathbb{R}$ such that\n<br/><br/>\n$$\nl(x)=\\sum\\limits_{k=0}^4\\left(\\sin |x-k|+\\cos \\left|x-k+\\frac{1}{2}\\right|\\right)\n$$\n<br/><br/>\n$x \\in \\mathbb{R}$, is NOT differentiable at $x_0$, is</td>\n\n    <td class=\"tg-0pky\">(4) 6</td>\n\n  </tr>\n\n  <tr>\n\n    <td class=\"tg-0pky\"></td>\n\n    <td class=\"tg-0pky\">(5) 10</td>\n\n  </tr>\n\n</tbody></table>",
+    "questionText": "<p>Let $\\mathbb{R}$ denote the set of all real numbers. For a real number $x$, let [ x ] denote the greatest integer less than or equal to $x$. Let $n$ denote a natural number.</p>\n<p>Match each entry in List-I to the correct entry in List-II and choose the correct option.</p>\n<table class=\"tg\"><thead>\n\n  <tr>\n\n    <th class=\"tg-fymr\">List\u2013I</th>\n\n    <th class=\"tg-fymr\" style=\"white-space:nowrap;\">List\u2013II</th>\n\n  </tr>\n\n</thead>\n\n<tbody>\n\n  <tr>\n\n    <td class=\"tg-0pky\">(P) The minimum value of $n$ for which the function\n\n$$\nf(x)=\\left[\\frac{10 x^3-45 x^2+60 x+35}{n}\\right]\n$$\n\nis continuous on the interval $[1,2]$, is</td>\n\n    <td class=\"tg-0pky\">(1) 8</td>\n\n  </tr>\n\n  <tr>\n\n    <td class=\"tg-0pky\">(Q) The minimum value of $n$ for which $g(x)=\\left(2 n^2-13 n-15\\right)\\left(x^3+3 x\\right)$, $x \\in \\mathbb{R}$, is an increasing function on $\\mathbb{R}$, is</td>\n\n    <td class=\"tg-0pky\">(2) 9</td>\n\n  </tr>\n\n  <tr>\n\n    <td class=\"tg-0pky\">(R) The smallest natural number $n$ which is greater than 5 , such that $x=3$ is a point of local minima of\n\n$$\nh(x)=\\left(x^2-9\\right)^n\\left(x^2+2 x+3\\right)\n$$\n is</td>\n\n    <td class=\"tg-0pky\">(3) 5</td>\n\n  </tr>\n\n  <tr>\n\n    <td class=\"tg-0pky\">(S) Number of $x_0 \\in \\mathbb{R}$ such that\n<br/><br/>\n$$\nl(x)=\\sum\\limits_{k=0}^4\\left(\\sin |x-k|+\\cos \\left|x-k+\\frac{1}{2}\\right|\\right)\n$$\n<br/><br/>\n$x \\in \\mathbb{R}$, is NOT differentiable at $x_0$, is</td>\n\n    <td class=\"tg-0pky\">(4) 6</td>\n\n  </tr>\n\n  <tr>\n\n    <td class=\"tg-0pky\"></td>\n\n    <td class=\"tg-0pky\">(5) 10</td>\n\n  </tr>\n\n</tbody></table>",
     "options": [
       "<p>(P) &rarr; (1) &nbsp; (Q) &rarr; (3) &nbsp; (R) &rarr; (2) &nbsp; (S) &rarr; (5)</p>",
       "<p>(P) &rarr; (2) &nbsp; (Q) &rarr; (1) &nbsp; (R) &rarr; (4) &nbsp; (S) &rarr; (3)</p>",
@@ -183,7 +183,7 @@
     "difficulty": "hard",
     "solution": "<p>$\\begin{aligned} &amp; \\text { (P) Let } g(x)=10 x^3-45 x^2+60 x+35 \\\\\\\\ &amp; g^{\\prime}(x)=30\\left(x^2-3 x+2\\right)=30(x-1)(x-2)\\end{aligned}$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mbdk4k02/fe558ae5-3030-447c-aa48-1553d93d6b71/ae7ab220-3ed8-11f0-a83c-090ddc267f1c/file-jaoe38c1mbdk4k03.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mbdk4k02/fe558ae5-3030-447c-aa48-1553d93d6b71/ae7ab220-3ed8-11f0-a83c-090ddc267f1c/file-jaoe38c1mbdk4k03.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 1 Online Mathematics - Limits, Continuity and Differentiability Question 7 English Explanation 1\"></p>\n<p>$\\Rightarrow g(x)$ is decreasing in $[1,2]$</p>\n<p>Now, $f(1)=\\left[\\frac{g(1)}{n}\\right]=\\left[\\frac{60}{n}\\right], f(2)=\\left[\\frac{55}{n}\\right]$</p>\n<p>For $f(x)$ to be continuous in $[1,2]$ its integral value should remain same in whole interval for $n=9, f(1)=6, f(2)=6$</p>\n<p>$(P) \\rightarrow(2)$</p>\n<p>(Q)</p>\n<p>$$ \\begin{aligned} &amp; g^{\\prime}(x)=\\left(2 n^2-13 n-15\\right)\\left(3 x^2+3\\right) \\\\ &amp; =(2 n-15)(n+1)\\left(3 x^2+3\\right)&gt;0 \\end{aligned} $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mbdkb5if/89b8c443-302a-47e2-8f33-f5957c05badd/65f33b70-3ed9-11f0-a83c-090ddc267f1c/file-jaoe38c1mbdkb5ig.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mbdkb5if/89b8c443-302a-47e2-8f33-f5957c05badd/65f33b70-3ed9-11f0-a83c-090ddc267f1c/file-jaoe38c1mbdkb5ig.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 1 Online Mathematics - Limits, Continuity and Differentiability Question 7 English Explanation 2\"></p>\n<p>for $g(x)$ to be increasing $\\min n=8$</p>\n<p>$\\Rightarrow Q \\rightarrow 1$ matching</p>\n<p>(R) $h(x)=\\left(x^2-9\\right)^n\\left(x^2+2 x+3\\right)$</p>\n<p>$h(3)=0$ for $n&gt;5$</p>\n<p>at $n=6 \\Rightarrow n(3+\\delta)&gt;h(3)$</p>\n<p>$$ n(3-\\delta)&gt;n(3) $$</p>\n<p>$\\Rightarrow h(x)$ has local minima at $x=3$ for $n=6$</p>\n<p>$R \\rightarrow 4$ matching</p>\n<p>(S) $\\quad I(x)=\\sin |x|+\\cos \\left|x+\\frac{1}{2}\\right|+\\sin |x-1|+\\cos \\left|x-\\frac{1}{2}\\right|$ $+\\ldots \\ldots+\\sin |x-4|+\\cos \\left|x-\\frac{7}{2}\\right|$ \n\n<br><br>as $\\sin |x-a|$ is non differentiable at $x=a$ \n\n<br><br>but $\\cos |x-a|$ remains differentiable at $x=a$ \n\n<br><br>$\\Rightarrow$ given $I(x)$ is non-differentiable at</p>\n\n$\\begin{aligned} &amp; x_0=0,1,2,3,4(5 \\text { points }) \\\\\\\\ &amp; (S) \\rightarrow(3) \\text { matching } \\\\\\\\ &amp; (P) \\rightarrow(2)(Q) \\rightarrow(1)(R) \\rightarrow(4)(S) \\rightarrow(3)\\end{aligned}$",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -293,7 +293,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -301,8 +301,8 @@
     "difficulty": "hard",
     "solution": "<p>$$ \\mathrm{e}^{\\mathrm{x}_0}+\\mathrm{x}_0=0 $$</p>\n<p>$$ \\begin{aligned} & g(x)=\\frac{3 x e^x+3 x-\\alpha e^x-\\alpha x}{3\\left(e^x+1\\right)} \\\\ & g(x)=x-\\frac{\\alpha\\left(e^x+x\\right)}{3\\left(e^x+1\\right)}, g(x)+e^{x_0}=x+e^{x_0}-\\frac{\\alpha}{3}\\left(\\frac{e^x+x}{e^x+1}\\right) \\end{aligned} $$</p>\n<p>$$ g(x)+e^{x_0}=\\left(x-x_0\\right)-\\frac{\\alpha}{3}\\left(\\frac{e^x+x}{e^x+1}\\right) $$</p>\n<p>$\\Rightarrow$ As very clear $\\mathrm{g}\\left(\\mathrm{x}_0\\right)+\\mathrm{x}_0 \\Rightarrow 0$</p>\n<p>$$ \\lim \\limits_{x \\rightarrow x_0}\\left|\\frac{g(x)+e^{x_0}}{x-x_0}\\right| \\frac{0 \\uparrow}{0 \\uparrow}=\\lim \\limits_{x \\rightarrow x_0}\\left|\\frac{g^{\\prime}(x)}{1}\\right|=\\left|g^{\\prime}\\left(x_0\\right)\\right| $$</p>\n<p>$$ \\mathrm{g}^{\\prime}(\\mathrm{x})=1-\\frac{\\alpha}{3}\\left(\\frac{\\left(\\mathrm{e}^{\\mathrm{x}}+1\\right)\\left(\\mathrm{e}^{\\mathrm{x}}+1\\right)-\\left(\\mathrm{e}^{\\mathrm{x}}+\\mathrm{x}\\right) \\mathrm{e}^{\\mathrm{x}}}{\\left(\\mathrm{e}^{\\mathrm{x}}+1\\right)^2}\\right) $$</p>\n<p>$$ \\mathrm{g}^{\\prime}\\left(\\mathrm{x}_0\\right)=1-\\frac{\\alpha}{3}\\left(\\frac{\\left(\\mathrm{e}^{\\mathrm{x}_0}+1\\right)^2}{\\left(\\mathrm{e}^{\\mathrm{x}_0}+1\\right)^2}\\right)=1-\\frac{\\alpha}{3} $$</p>\n<p>$$ \\Rightarrow \\lim \\limits_{x \\rightarrow x_0}\\left|\\frac{g(x)+e^{x_0}}{x-x_0}\\right|=\\left|g^{\\prime}\\left(x_0\\right)\\right|=\\left|1-\\frac{\\alpha}{3}\\right| $$</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "lsamhqd8",
@@ -1118,10 +1118,10 @@
     "questionNumber": 61,
     "questionText": "The function <br>$$f(x) = \\left\\{ {\\matrix{\n   {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x,} &amp; {\\left| x \\right| \\le 1}  \\cr \n   {{1 \\over 2}\\left( {\\left| x \\right| - 1} \\right),} &amp; {\\left| x \\right| &gt; 1}  \\cr \n\n } } \\right.$$ is :",
     "options": [
-      "continuous on R–{–1} and differentiable on R–{–1, 1}",
-      "both continuous and differentiable on R–{1}\n",
-      "both continuous and differentiable on R–{–1}",
-      "continuous on R–{1} and differentiable on R–{–1, 1}\n"
+      "continuous on R\u2013{\u20131} and differentiable on R\u2013{\u20131, 1}",
+      "both continuous and differentiable on R\u2013{1}\n",
+      "both continuous and differentiable on R\u2013{\u20131}",
+      "continuous on R\u2013{1} and differentiable on R\u2013{\u20131, 1}\n"
     ],
     "correctOption": 3,
     "correctAnswer": null,
@@ -1131,7 +1131,7 @@
     "subject": "Mathematics",
     "topic": "differentiability",
     "difficulty": "medium",
-    "solution": "$$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x,} &amp; {x \\in \\left[ { - 1,1} \\right]}  \\cr \n   {{1 \\over 2}\\left( {x - 1} \\right),} &amp; {x &gt; 1}  \\cr \n   {{1 \\over 2}\\left( { - x - 1} \\right),} &amp; {x &lt;  - 1}  \\cr \n\n } } \\right.$$\n<br><br>At x = 1\n<br><br>L.H.L = $$\\mathop {\\lim }\\limits_{x \\to {1^ - }} \\left( {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x} \\right)$$ = $${{\\pi  \\over 4} + {\\pi  \\over 4}}$$ = $${{\\pi  \\over 2}}$$\n<br><br>f(1) = $${{\\pi  \\over 4} + {{\\tan }^{ - 1}}x}$$ = $${{\\pi  \\over 4} + {\\pi  \\over 4}}$$ = $${{\\pi  \\over 2}}$$\n<br><br>R.H.L = $$\\mathop {\\lim }\\limits_{x \\to {1^ + }} \\left( {{1 \\over 2}\\left( {x - 1} \\right)} \\right)$$ = 0\n<br><br>As L.H.L $$ \\ne $$ R.H.L so function is discontinuous $$ \\Rightarrow $$ non differentiable.\n<br><br>At x = -1\n<br><br>L.H.L = $$\\mathop {\\lim }\\limits_{x \\to  - {1^ - }} \\left( {{1 \\over 2}\\left( { - x - 1} \\right)} \\right)$$ = $${{1 \\over 2}\\left( { - \\left( { - 1} \\right) - 1} \\right)}$$ = 0\n<br><br>f(-1) = $${\\pi  \\over 4} + {\\tan ^{ - 1}}\\left( { - 1} \\right)$$ = $${\\pi  \\over 4} - {\\pi  \\over 4}$$ = 0\n<br><br>R.H.L = $$\\mathop {\\lim }\\limits_{x \\to  - {1^ + }} \\left( {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x} \\right)$$ <br><br>= $${\\pi  \\over 4} + {\\tan ^{ - 1}}\\left( { - 1} \\right)$$ = $${\\pi  \\over 4} - {\\pi  \\over 4}$$ = 0\n<br><br>As L.H.L = f(-1) = R.H.L so function is continuous.\n<br><br>$$f'\\left( x \\right) = \\left\\{ {\\matrix{\n   {{1 \\over {1 + {x^2}}},} &amp; {x \\in \\left[ { - 1,1} \\right]}  \\cr \n   {{1 \\over 2},} &amp; {x &gt; 1}  \\cr \n   { - {1 \\over 2},} &amp; {x &lt;  - 1}  \\cr \n\n } } \\right.$$\n<br><br>For differentiability at x = –1\n<br><br>L.H.D = $${ - {1 \\over 2}}$$\n<br><br>R.H.D. = $${{1 \\over 2}}$$\n<br><br>So, non differentiable at x = –1",
+    "solution": "$$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x,} &amp; {x \\in \\left[ { - 1,1} \\right]}  \\cr \n   {{1 \\over 2}\\left( {x - 1} \\right),} &amp; {x &gt; 1}  \\cr \n   {{1 \\over 2}\\left( { - x - 1} \\right),} &amp; {x &lt;  - 1}  \\cr \n\n } } \\right.$$\n<br><br>At x = 1\n<br><br>L.H.L = $$\\mathop {\\lim }\\limits_{x \\to {1^ - }} \\left( {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x} \\right)$$ = $${{\\pi  \\over 4} + {\\pi  \\over 4}}$$ = $${{\\pi  \\over 2}}$$\n<br><br>f(1) = $${{\\pi  \\over 4} + {{\\tan }^{ - 1}}x}$$ = $${{\\pi  \\over 4} + {\\pi  \\over 4}}$$ = $${{\\pi  \\over 2}}$$\n<br><br>R.H.L = $$\\mathop {\\lim }\\limits_{x \\to {1^ + }} \\left( {{1 \\over 2}\\left( {x - 1} \\right)} \\right)$$ = 0\n<br><br>As L.H.L $$ \\ne $$ R.H.L so function is discontinuous $$ \\Rightarrow $$ non differentiable.\n<br><br>At x = -1\n<br><br>L.H.L = $$\\mathop {\\lim }\\limits_{x \\to  - {1^ - }} \\left( {{1 \\over 2}\\left( { - x - 1} \\right)} \\right)$$ = $${{1 \\over 2}\\left( { - \\left( { - 1} \\right) - 1} \\right)}$$ = 0\n<br><br>f(-1) = $${\\pi  \\over 4} + {\\tan ^{ - 1}}\\left( { - 1} \\right)$$ = $${\\pi  \\over 4} - {\\pi  \\over 4}$$ = 0\n<br><br>R.H.L = $$\\mathop {\\lim }\\limits_{x \\to  - {1^ + }} \\left( {{\\pi  \\over 4} + {{\\tan }^{ - 1}}x} \\right)$$ <br><br>= $${\\pi  \\over 4} + {\\tan ^{ - 1}}\\left( { - 1} \\right)$$ = $${\\pi  \\over 4} - {\\pi  \\over 4}$$ = 0\n<br><br>As L.H.L = f(-1) = R.H.L so function is continuous.\n<br><br>$$f'\\left( x \\right) = \\left\\{ {\\matrix{\n   {{1 \\over {1 + {x^2}}},} &amp; {x \\in \\left[ { - 1,1} \\right]}  \\cr \n   {{1 \\over 2},} &amp; {x &gt; 1}  \\cr \n   { - {1 \\over 2},} &amp; {x &lt;  - 1}  \\cr \n\n } } \\right.$$\n<br><br>For differentiability at x = \u20131\n<br><br>L.H.D = $${ - {1 \\over 2}}$$\n<br><br>R.H.D. = $${{1 \\over 2}}$$\n<br><br>So, non differentiable at x = \u20131",
     "section": "A",
     "type": "SCQ"
   },
@@ -1214,7 +1214,7 @@
     "subject": "Mathematics",
     "topic": "differentiability",
     "difficulty": "medium",
-    "solution": "f : R $$ \\to $$ R, with f(0) = f(1) = 0\n<br>and f'(0) = 0\n<br>$$ \\because $$ f(x) is differentiable and continuous\n<br>and f(0) = f(1) = 0\n<br><br>Applying Rolle’s theorem in [0, 1] for function f(x)\n<br>f'(c) = 0, c $$ \\in $$ (0, 1)\n<br><br>Now again\n<br>$$ \\because $$ f'(c) = 0, f'(0) = 0\n<br>again applying Rolles theorem in [0, c] for function f'(x)\n<br>f''(c<sub>1</sub>) = 0 for some c<sub>1</sub> $$ \\in $$ (0, c) $$ \\in $$ (0, 1)\n",
+    "solution": "f : R $$ \\to $$ R, with f(0) = f(1) = 0\n<br>and f'(0) = 0\n<br>$$ \\because $$ f(x) is differentiable and continuous\n<br>and f(0) = f(1) = 0\n<br><br>Applying Rolle\u2019s theorem in [0, 1] for function f(x)\n<br>f'(c) = 0, c $$ \\in $$ (0, 1)\n<br><br>Now again\n<br>$$ \\because $$ f'(c) = 0, f'(0) = 0\n<br>again applying Rolles theorem in [0, c] for function f'(x)\n<br>f''(c<sub>1</sub>) = 0 for some c<sub>1</sub> $$ \\in $$ (0, c) $$ \\in $$ (0, 1)\n",
     "section": "A",
     "type": "SCQ"
   },
@@ -1231,14 +1231,14 @@
     "subject": "Mathematics",
     "topic": "differentiability",
     "difficulty": "hard",
-    "solution": "If g(x) = x<sup>5</sup>sin$$\\left( {{1 \\over x}} \\right)$$\n<br><br>and h(x) = x<sup>5</sup>cos$$\\left( {{1 \\over x}} \\right)$$\n<br><br>then g''(0) = 0 and h''(0) = 0\n<br><br>So, f''(0<sup>+</sup>\n) = g''(0<sup>+</sup>\n) + 10 = 10\n<br><br>and f''(0<sup>–</sup>) = h''(0<sup>–</sup>) + 2$$\\lambda $$ = f''(0<sup>+</sup>)\n<br><br>$$ \\Rightarrow $$ 2$$\\lambda $$ = 10\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = 5",
+    "solution": "If g(x) = x<sup>5</sup>sin$$\\left( {{1 \\over x}} \\right)$$\n<br><br>and h(x) = x<sup>5</sup>cos$$\\left( {{1 \\over x}} \\right)$$\n<br><br>then g''(0) = 0 and h''(0) = 0\n<br><br>So, f''(0<sup>+</sup>\n) = g''(0<sup>+</sup>\n) + 10 = 10\n<br><br>and f''(0<sup>\u2013</sup>) = h''(0<sup>\u2013</sup>) + 2$$\\lambda $$ = f''(0<sup>+</sup>)\n<br><br>$$ \\Rightarrow $$ 2$$\\lambda $$ = 10\n<br><br>$$ \\Rightarrow $$ $$\\lambda $$ = 5",
     "section": "B",
     "type": "NUMERICAL"
   },
   {
     "id": "Q0KAqKgD9KG5tr0MYv7k9k2k5e4n2c9",
     "questionNumber": 73,
-    "questionText": "Let S be the set of points where the function, ƒ(x) = |2-|x-3||, x $$ \\in $$ R is not differentiable. Then $$\\sum\\limits_{x \\in S} {f(f(x))} $$  is equal to_____.",
+    "questionText": "Let S be the set of points where the function, \u0192(x) = |2-|x-3||, x $$ \\in $$ R is not differentiable. Then $$\\sum\\limits_{x \\in S} {f(f(x))} $$  is equal to_____.",
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
@@ -1255,7 +1255,7 @@
   {
     "id": "hdTiOWFqbqx1gGwexE7k9k2k5hiwqze",
     "questionNumber": 61,
-    "questionText": "Let S be the set of all functions ƒ : [0,1] $$ \\to $$ R,\nwhich are continuous on [0,1] and differentiable\non (0,1). Then for every ƒ in S, there exists a\nc $$ \\in $$ (0,1), depending on ƒ, such that",
+    "questionText": "Let S be the set of all functions \u0192 : [0,1] $$ \\to $$ R,\nwhich are continuous on [0,1] and differentiable\non (0,1). Then for every \u0192 in S, there exists a\nc $$ \\in $$ (0,1), depending on \u0192, such that",
     "options": [
       "$$\\left| {f(c) - f(1)} \\right| &lt; \\left| {f'(c)} \\right|$$",
       "$$\\left| {f(c) + f(1)} \\right| &lt; \\left( {1 + c} \\right)\\left| {f'(c)} \\right|$$",
@@ -1264,7 +1264,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -1272,12 +1272,12 @@
     "difficulty": "easy",
     "solution": "<p>If we consider the case where f(x) is a constant function, then its derivative f&#39;(x) is equal to 0 for all x in the interval (0,1). </p>\n<p>Therefore, if we substitute this into the expressions provided in Options A, B and C, we would have :</p>\n<p>Option A : |f(c) - f(1)| &lt; |f&#39;(c)| would become |constant - constant| &lt; |0|, which is 0 &lt; 0. This is not true.</p>\n<p>Option B : |f(c) + f(1)| &lt; (1 + c)|f&#39;(c)| would become |constant + constant| &lt; (1 + c)$$ \\times $$0, which is a positive number &lt; 0. This is not true.</p>\n<p>Option C : |f(c) - f(1)| &lt; (1 - c)|f&#39;(c)| would become |constant - constant| &lt; (1 - c)$$ \\times $$0, which is 0 &lt; 0. This is not true.</p>\n<p>Hence, for the case where f(x) is a constant function, none of the options A, B and C are correct.</p>\n<p>So, the correct answer would be Option D : None.</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "QQ2Lw8UucYICcFIsyS7k9k2k5ita4xf",
     "questionNumber": 59,
-    "questionText": "Let ƒ be any function continuous on [a, b] and\ntwice differentiable on (a, b). If for all x $$ \\in $$ (a, b),\nƒ'(x) &gt; 0 and ƒ''(x) &lt; 0, then for any c $$ \\in $$ (a, b),\n$${{f(c) - f(a)} \\over {f(b) - f(c)}}$$ is greater than :",
+    "questionText": "Let \u0192 be any function continuous on [a, b] and\ntwice differentiable on (a, b). If for all x $$ \\in $$ (a, b),\n\u0192'(x) &gt; 0 and \u0192''(x) &lt; 0, then for any c $$ \\in $$ (a, b),\n$${{f(c) - f(a)} \\over {f(b) - f(c)}}$$ is greater than :",
     "options": [
       "1",
       "$${{b - c} \\over {c - a}}$$",
@@ -1308,7 +1308,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -1317,7 +1317,7 @@
     "solution": "It is given, that f : R $$ \\to $$ R and<br><br>Property 1 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(h) - f(0)} \\over {\\sqrt {|h|} }}$$ exists and finite, and<br><br><br>Property 2 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(h) - f(0)} \\over {{h^2}}}$$ exists and finite.<br><br>Option A,<br><br> P2 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{\\sin h - \\sin 0} \\over {{h^2}}} = \\mathop {\\lim }\\limits_{h \\to 0} {1 \\over h}\\left( {{{\\sin \\,h} \\over h}} \\right)$$ =  doesn't exist.<br><br>Option B,<br><br>P1 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{{h^{2/3}} - 0} \\over {\\sqrt {|h|} }} = \\mathop {\\lim }\\limits_{h \\to 0} {h^{2/3 - 1/2}} = \\mathop {\\lim }\\limits_{h \\to 0} {h^{1/6}} = 0$$ exists and finite.<br><br>Option C,<br><br>P1 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{|h| - 0} \\over {\\sqrt {|h|} }} = \\mathop {\\lim }\\limits_{h \\to 0} \\sqrt {|h|}  = 0$$, exists and finite.<br><br>Option D,<br><br>P2 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{h|h| - 0} \\over {{h^2}}} = \\mathop {\\lim }\\limits_{h \\to 0} {{|h|} \\over h} = \\left\\{ {\\matrix{\n   1 &amp; {if\\,h \\to {0^ + }}  \\cr \n   { - 1} &amp; {if\\,h \\to {0^ - }}  \\cr \n\n } } \\right.$$<br><br>So, $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(h) - f(0)} \\over {{h^2}}}$$ does not exist.<br><br>Hence, options (b) and (c) are correct.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "OjgfQrxVeltiW0ZoZE3rsa0w2w9jwxut8on",
@@ -1366,7 +1366,7 @@
   {
     "id": "txkv94d31U1ZqKVvm4wJ2",
     "questionNumber": 76,
-    "questionText": "Let&nbsp;&nbsp;$$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {\\max \\left\\{ {\\left| x \\right|,{x^2}} \\right\\}} &amp; {\\left| x \\right| \\le 2}  \\cr \n   {8 - 2\\left| x \\right|} &amp; {2 &lt; \\left| x \\right| \\le 4}  \\cr \n\n } } \\right.$$\n<br><br>Let S be the set of points in the interval (– 4, 4) at which f is not differentiable. Then S",
+    "questionText": "Let&nbsp;&nbsp;$$f\\left( x \\right) = \\left\\{ {\\matrix{\n   {\\max \\left\\{ {\\left| x \\right|,{x^2}} \\right\\}} &amp; {\\left| x \\right| \\le 2}  \\cr \n   {8 - 2\\left| x \\right|} &amp; {2 &lt; \\left| x \\right| \\le 4}  \\cr \n\n } } \\right.$$\n<br><br>Let S be the set of points in the interval (\u2013 4, 4) at which f is not differentiable. Then S",
     "options": [
       "equals $$\\left\\{ { - 2, - 1,1,2} \\right\\}$$",
       "equals $$\\left\\{ { - 2, - 1,0,1,2} \\right\\}$$",
@@ -1388,7 +1388,7 @@
   {
     "id": "ei04ZJBaNytj0HKOk0XL4",
     "questionNumber": 78,
-    "questionText": "Let K be the set of all real values of x where the function f(x) = sin |x| – |x| + 2(x – $$\\pi $$) cos |x| is not differentiable. Then the set K is equal to :",
+    "questionText": "Let K be the set of all real values of x where the function f(x) = sin |x| \u2013 |x| + 2(x \u2013 $$\\pi $$) cos |x| is not differentiable. Then the set K is equal to :",
     "options": [
       "{0, $$\\pi $$}",
       "$$\\phi $$ (an empty set)",
@@ -1410,7 +1410,7 @@
   {
     "id": "iZbnjQ958X1XbdDcn9Kdv",
     "questionNumber": 80,
-    "questionText": "Let $$f\\left( x \\right) = \\left\\{ {\\matrix{\n   { - 1} &amp; { - 2 \\le x &lt; 0}  \\cr \n   {{x^2} - 1,} &amp; {0 \\le x \\le 2}  \\cr \n\n } } \\right.$$  and \n<br><br>$$g(x) = \\left| {f\\left( x \\right)} \\right| + f\\left( {\\left| x \\right|} \\right).$$  \n<br><br>Then, in the interval (–2, 2), g is :",
+    "questionText": "Let $$f\\left( x \\right) = \\left\\{ {\\matrix{\n   { - 1} &amp; { - 2 \\le x &lt; 0}  \\cr \n   {{x^2} - 1,} &amp; {0 \\le x \\le 2}  \\cr \n\n } } \\right.$$  and \n<br><br>$$g(x) = \\left| {f\\left( x \\right)} \\right| + f\\left( {\\left| x \\right|} \\right).$$  \n<br><br>Then, in the interval (\u20132, 2), g is :",
     "options": [
       "non continuous",
       "differentiable at all points",
@@ -1454,7 +1454,7 @@
   {
     "id": "00UBMw9xgFLk3qTNH0S2d",
     "questionNumber": 74,
-    "questionText": "Let S be the set of all points in (–$$\\pi $$, $$\\pi $$) at which the function, f(x) = min{sin x, cos x} is not differentiable. Then S is a subset of which of the following ? ",
+    "questionText": "Let S be the set of all points in (\u2013$$\\pi $$, $$\\pi $$) at which the function, f(x) = min{sin x, cos x} is not differentiable. Then S is a subset of which of the following ? ",
     "options": [
       "$$\\left\\{ { - {\\pi  \\over 2}, - {\\pi  \\over 4},{\\pi  \\over 4},{\\pi  \\over 2}} \\right\\}$$",
       "$$\\left\\{ { - {{3\\pi } \\over 4}, - {\\pi  \\over 2},{\\pi  \\over 2},{{3\\pi } \\over 4}} \\right\\}$$",
@@ -1476,11 +1476,11 @@
   {
     "id": "5lu85xMvzqpVj7b8OfEQ8",
     "questionNumber": 76,
-    "questionText": "Let ƒ : R $$ \\to $$ R be a differentiable function\nsatisfying ƒ'(3) + ƒ'(2) = 0.<br>\nThen $$\\mathop {\\lim }\\limits_{x \\to 0} {\\left( {{{1 + f(3 + x) - f(3)} \\over {1 + f(2 - x) - f(2)}}} \\right)^{{1 \\over x}}}$$ is equal to",
+    "questionText": "Let \u0192 : R $$ \\to $$ R be a differentiable function\nsatisfying \u0192'(3) + \u0192'(2) = 0.<br>\nThen $$\\mathop {\\lim }\\limits_{x \\to 0} {\\left( {{{1 + f(3 + x) - f(3)} \\over {1 + f(2 - x) - f(2)}}} \\right)^{{1 \\over x}}}$$ is equal to",
     "options": [
       "e",
       "e<sup>2</sup>",
-      "e<sup>–1</sup>",
+      "e<sup>\u20131</sup>",
       "1"
     ],
     "correctOption": 3,
@@ -1491,14 +1491,14 @@
     "subject": "Mathematics",
     "topic": "differentiability",
     "difficulty": "medium",
-    "solution": "The general formula for indeterminate form 1<sup>$$\\infty $$</sup> is\n<br><br>$$\\mathop {\\lim }\\limits_{x \\to a} {\\left( {f\\left( x \\right)} \\right)^{g\\left( x \\right)}} = {e^{\\mathop {\\lim }\\limits_{x \\to a} g\\left( x \\right)\\left( {f\\left( x \\right) - 1} \\right)}}$$\n<br><br>I = $$\\mathop {\\lim }\\limits_{x \\to 0} {\\left( {{{1 + f(3 + x) - f(3)} \\over {1 + f(2 - x) - f(2)}}} \\right)^{{1 \\over x}}}$$\n<br><br>Here I is in 1<sup>$$\\infty $$</sup> form.\n<br><br>$$ \\therefore $$ I = $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{1 + f\\left( {3 + x} \\right) - f\\left( 3 \\right)} \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}} - 1} \\right){1 \\over x}}}$$\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{1 + f\\left( {3 + x} \\right) - f\\left( 3 \\right) - 1 - f\\left( {2 - x} \\right) + f\\left( 2 \\right)} \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}}} \\right){1 \\over x}}}$$\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{f\\left( {3 + x} \\right) - f\\left( 3 \\right) - f\\left( {2 - x} \\right) + f\\left( 2 \\right)} \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}}} \\right){1 \\over x}}}$$\n<br><br>Here $${{{f\\left( {3 + x} \\right) - f\\left( 3 \\right) - f\\left( {2 - x} \\right) + f\\left( 2 \\right)} \\over x}}$$ is in $${0 \\over 0}$$ form.\n<br><br>So using L'Hopital rule we get\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{f'\\left( {3 + x} \\right) + f'\\left( {2 - x} \\right)} \\over 1}} \\right).\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{1 \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}}} \\right)}}$$\n<br><br>= $${e^{\\left( {f'\\left( 3 \\right) + f'\\left( 2 \\right)} \\right).1}}$$\n<br><br>= e<sup>0</sup>  [ as given ƒ'(3) + ƒ'(2) = 0 ]\n<br><br>= 1",
+    "solution": "The general formula for indeterminate form 1<sup>$$\\infty $$</sup> is\n<br><br>$$\\mathop {\\lim }\\limits_{x \\to a} {\\left( {f\\left( x \\right)} \\right)^{g\\left( x \\right)}} = {e^{\\mathop {\\lim }\\limits_{x \\to a} g\\left( x \\right)\\left( {f\\left( x \\right) - 1} \\right)}}$$\n<br><br>I = $$\\mathop {\\lim }\\limits_{x \\to 0} {\\left( {{{1 + f(3 + x) - f(3)} \\over {1 + f(2 - x) - f(2)}}} \\right)^{{1 \\over x}}}$$\n<br><br>Here I is in 1<sup>$$\\infty $$</sup> form.\n<br><br>$$ \\therefore $$ I = $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{1 + f\\left( {3 + x} \\right) - f\\left( 3 \\right)} \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}} - 1} \\right){1 \\over x}}}$$\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{1 + f\\left( {3 + x} \\right) - f\\left( 3 \\right) - 1 - f\\left( {2 - x} \\right) + f\\left( 2 \\right)} \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}}} \\right){1 \\over x}}}$$\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{f\\left( {3 + x} \\right) - f\\left( 3 \\right) - f\\left( {2 - x} \\right) + f\\left( 2 \\right)} \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}}} \\right){1 \\over x}}}$$\n<br><br>Here $${{{f\\left( {3 + x} \\right) - f\\left( 3 \\right) - f\\left( {2 - x} \\right) + f\\left( 2 \\right)} \\over x}}$$ is in $${0 \\over 0}$$ form.\n<br><br>So using L'Hopital rule we get\n<br><br>= $${e^{\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{{f'\\left( {3 + x} \\right) + f'\\left( {2 - x} \\right)} \\over 1}} \\right).\\mathop {\\lim }\\limits_{x \\to 0} \\left( {{1 \\over {1 + f\\left( {2 - x} \\right) - f\\left( 2 \\right)}}} \\right)}}$$\n<br><br>= $${e^{\\left( {f'\\left( 3 \\right) + f'\\left( 2 \\right)} \\right).1}}$$\n<br><br>= e<sup>0</sup>  [ as given \u0192'(3) + \u0192'(2) = 0 ]\n<br><br>= 1",
     "section": "A",
     "type": "SCQ"
   },
   {
     "id": "E1UPnoGMUo46JcFfe7wpS",
     "questionNumber": 77,
-    "questionText": "Let ƒ(x) = 15 – |x – 10|; x $$ \\in $$ R. Then the set\nof all values of x, at which the function,\ng(x) = ƒ(ƒ(x)) is not differentiable, is :",
+    "questionText": "Let \u0192(x) = 15 \u2013 |x \u2013 10|; x $$ \\in $$ R. Then the set\nof all values of x, at which the function,\ng(x) = \u0192(\u0192(x)) is not differentiable, is :",
     "options": [
       "{10,15}",
       "{5,10,15,20}",
@@ -1513,7 +1513,7 @@
     "subject": "Mathematics",
     "topic": "differentiability",
     "difficulty": "medium",
-    "solution": "ƒ(x) = 15 – |x – 10|\n<br><br>g(x) = ƒ(ƒ(x)) = 15 – |ƒ(x) – 10|\n<br><br>= 15 – |15 – |x – 10| – 10|\n<br><br>= 15 – |5 – |x – 10||\n<br><br>As this is a linear expression so it is non differentiable when value inside the modulus is zero.\n<br><br>So non differentiable when\n<br><br>x – 10 = 0 $$ \\Rightarrow $$ x = 10\n<br><br>and 5 – |x – 10| = 0\n<br><br>$$ \\Rightarrow $$ |x – 10| = 5\n<br><br>$$ \\Rightarrow $$ x - 10 = $$ \\pm $$ 5\n<br><br>$$ \\Rightarrow $$ x = 5, 15\n<br><br>$$ \\therefore $$ g(x) is not differentiable at x = 5, 10, 15. ",
+    "solution": "\u0192(x) = 15 \u2013 |x \u2013 10|\n<br><br>g(x) = \u0192(\u0192(x)) = 15 \u2013 |\u0192(x) \u2013 10|\n<br><br>= 15 \u2013 |15 \u2013 |x \u2013 10| \u2013 10|\n<br><br>= 15 \u2013 |5 \u2013 |x \u2013 10||\n<br><br>As this is a linear expression so it is non differentiable when value inside the modulus is zero.\n<br><br>So non differentiable when\n<br><br>x \u2013 10 = 0 $$ \\Rightarrow $$ x = 10\n<br><br>and 5 \u2013 |x \u2013 10| = 0\n<br><br>$$ \\Rightarrow $$ |x \u2013 10| = 5\n<br><br>$$ \\Rightarrow $$ x - 10 = $$ \\pm $$ 5\n<br><br>$$ \\Rightarrow $$ x = 5, 15\n<br><br>$$ \\therefore $$ g(x) is not differentiable at x = 5, 10, 15. ",
     "section": "A",
     "type": "SCQ"
   },
@@ -1763,7 +1763,7 @@
     "solution": "Given that $$f:(a,b) \\to [1,\\infty )$$<br/><br/>and $$g(x) = \\left\\{ {\\matrix{\n   0 & , & {x < a}  \\cr \n   {\\int_a^x {f(t)dt} } & , & {a \\le x \\le b}  \\cr \n   {\\int_a^b {f(t)dt} } & , & {x > b}  \\cr \n\n } } \\right.$$<br/><br/>Now, $$g({a^ - }) = 0 = g({a^ + }) = g(a)$$<br/><br/>[as $$g({a^ + }) = \\mathop {\\lim }\\limits_{x \\to {a^ + }} \\int_a^x {f(t)dt = 0} $$ and $$g(a) = \\int_a^a {f(t)dt = 0} $$]<br/><br/>$$g({b^ - }) = g({b^ + }) = g(b) = \\int_a^b {f(t)dt} $$<br/><br/>$$\\Rightarrow$$ g is continuous, $$\\forall$$x$$\\in$$R.<br/><br/>Now, $$g'(x) = \\left\\{ {\\matrix{\n   0 & , & {x < a}  \\cr \n   {f(x)} & , & {a < x < b}  \\cr \n   0 & , & {x > b}  \\cr \n\n } } \\right.$$<br/><br/>g'(a<sup>$$-$$</sup>) = 0 but g'(a<sup>+</sup>) = f(a) $$\\ge$$ 1<br/><br/>[$$\\because$$ Range of f(x) is [1, $$\\infty$$), $$\\forall$$ x $$\\in$$[a, b]]<br/><br/>$$\\Rightarrow$$ g is non-differentiable at x = a<br/><br/>and g'(b<sup>+</sup>) = 0<br/><br/>but g'(b<sup>$$-$$</sup>) = f(b) $$\\ge$$ 1<br/><br/>$$\\Rightarrow$$ g is not differentiable at x = b.",
     "section": "Sec 1",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "1ky8brw7r",
@@ -2228,7 +2228,7 @@
     "subject": "Mathematics",
     "topic": "differentiability",
     "difficulty": "medium",
-    "solution": "<p>To find the value of $$f(x) - g(x)$$ at $$x = \\frac{3}{2}$$, we need to use the given conditions and properties of differentiable functions.</p>\n\n<p>First, we are told that:</p>\n\n<p>$$f''(x) - g''(x) = 0$$</p>\n\n<p>This implies that:</p>\n\n<p>$$f''(x) = g''(x)$$</p>\n\n<p>Since the second derivatives of both functions are equal, their difference, $$f'(x) - g'(x)$$, must be a linear function. Let’s denote it as:</p>\n\n<p>$$f'(x) - g'(x) = k$$</p>\n\n<p>We'll find the constant $$k$$ using the initial conditions of the derivatives:</p>\n\n<p>$$f'(1) = 2$$</p>\n\n<p>$$g'(1) = 4$$</p>\n\n<p>Thus,</p>\n\n<p>$$f'(1) - g'(1) = 2 - 4 = -2$$</p>\n\n<p>Therefore,</p>\n\n<p>$$f'(x) - g'(x) = -2$$</p>\n\n<p>Integrating the above result, we get:</p>\n\n<p>$$f(x) - g(x) = -2x + C$$</p>\n\n<p>To determine the constant $$C$$, we use the values of the functions at $$x = 2$$:</p>\n\n<p>$$f(2) = 3$$</p>\n\n<p>$$g(2) = 9$$</p>\n\n<p>Thus,</p>\n\n<p>$$f(2) - g(2) = 3 - 9 = -6$$</p>\n\n<p>Therefore,</p>\n\n<p>$$-2 \\cdot 2 + C = -6$$</p>\n\n<p>$$-4 + C = -6$$</p>\n\n<p>$$C = -2$$</p>\n\n<p>So the expression for $$f(x) - g(x)$$ is:</p>\n\n<p>$$f(x) - g(x) = -2x - 2$$</p>\n\n<p>We need to find $$f\\left( \\frac{3}{2} \\right) - g\\left( \\frac{3}{2} \\right)$$:</p>\n\n<p>$$f\\left( \\frac{3}{2} \\right) - g\\left( \\frac{3}{2} \\right) = -2 \\cdot \\frac{3}{2} - 2$$</p>\n\n<p>$$= -3 - 2$$</p>\n\n<p>$$= -5$$</p>\n\n<p>Thus, the value of $$f(x) - g(x)$$ at $$x = \\frac{3}{2}$$ is -5. </p>",
+    "solution": "<p>To find the value of $$f(x) - g(x)$$ at $$x = \\frac{3}{2}$$, we need to use the given conditions and properties of differentiable functions.</p>\n\n<p>First, we are told that:</p>\n\n<p>$$f''(x) - g''(x) = 0$$</p>\n\n<p>This implies that:</p>\n\n<p>$$f''(x) = g''(x)$$</p>\n\n<p>Since the second derivatives of both functions are equal, their difference, $$f'(x) - g'(x)$$, must be a linear function. Let\u2019s denote it as:</p>\n\n<p>$$f'(x) - g'(x) = k$$</p>\n\n<p>We'll find the constant $$k$$ using the initial conditions of the derivatives:</p>\n\n<p>$$f'(1) = 2$$</p>\n\n<p>$$g'(1) = 4$$</p>\n\n<p>Thus,</p>\n\n<p>$$f'(1) - g'(1) = 2 - 4 = -2$$</p>\n\n<p>Therefore,</p>\n\n<p>$$f'(x) - g'(x) = -2$$</p>\n\n<p>Integrating the above result, we get:</p>\n\n<p>$$f(x) - g(x) = -2x + C$$</p>\n\n<p>To determine the constant $$C$$, we use the values of the functions at $$x = 2$$:</p>\n\n<p>$$f(2) = 3$$</p>\n\n<p>$$g(2) = 9$$</p>\n\n<p>Thus,</p>\n\n<p>$$f(2) - g(2) = 3 - 9 = -6$$</p>\n\n<p>Therefore,</p>\n\n<p>$$-2 \\cdot 2 + C = -6$$</p>\n\n<p>$$-4 + C = -6$$</p>\n\n<p>$$C = -2$$</p>\n\n<p>So the expression for $$f(x) - g(x)$$ is:</p>\n\n<p>$$f(x) - g(x) = -2x - 2$$</p>\n\n<p>We need to find $$f\\left( \\frac{3}{2} \\right) - g\\left( \\frac{3}{2} \\right)$$:</p>\n\n<p>$$f\\left( \\frac{3}{2} \\right) - g\\left( \\frac{3}{2} \\right) = -2 \\cdot \\frac{3}{2} - 2$$</p>\n\n<p>$$= -3 - 2$$</p>\n\n<p>$$= -5$$</p>\n\n<p>Thus, the value of $$f(x) - g(x)$$ at $$x = \\frac{3}{2}$$ is -5. </p>",
     "section": "A",
     "type": "SCQ"
   }

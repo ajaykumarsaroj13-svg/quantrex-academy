@@ -19,8 +19,8 @@
     "difficulty": "hard",
     "solution": "<p>Let an arbitrary point in the XY plane be $P(x,y)$.</p>\n<p>The electrostatic potential $V$ at a distance $r$ from a point charge $Q$ is derived from the work done per unit charge bringing it from infinity to that point:</p>\n<p>$$V=\\frac{kQ}{r}$$</p>\n<p>where $k=\\frac{1}{4\\pi\\varepsilon_0}$.</p>\n<p>The distance $r_1$ from the point $P_1(a,b)$ to $P(x,y)$ is given by the distance formula:</p>\n<p>$$r_1=\\sqrt{(x-a)^2+(y-b)^2}$$</p>\n<p>The potential $V_1$ at $P(x,y)$ due to $Q_1=q$ is:</p>\n<p>$$V_1=\\frac{kq}{\\sqrt{(x-a)^2+(y-b)^2}}$$</p>\n<p>The distance $r_2$ from the point $P_2(ma,mb)$ to $P(x,y)$ is:</p>\n<p>$$r_2=\\sqrt{(x-ma)^2+(y-mb)^2}$$</p>\n<p>The potential $V_2$ at $P(x,y)$ due to $Q_2=mq$ is:</p>\n<p>$$V_2=\\frac{k(mq)}{\\sqrt{(x-ma)^2+(y-mb)^2}}$$</p>\n<p>For the locus of points satisfying the condition $|V_1|=|V_2|$:</p>\n<p>$$\\left|\\frac{kq}{\\sqrt{(x-a)^2+(y-b)^2}}\\right|=\\left|\\frac{kmq}{\\sqrt{(x-ma)^2+(y-mb)^2}}\\right|$$</p>\n\n<p>$$\\frac{1}{\\sqrt{(x-a)^2+(y-b)^2}}=\\frac{m}{\\sqrt{(x-ma)^2+(y-mb)^2}}$$</p>\n<p>Squaring both sides</p>\n<p>$$\\frac{1}{(x-a)^2+(y-b)^2}=\\frac{m^2}{(x-ma)^2+(y-mb)^2}$$</p>\n<p>$$ (x-ma)^2+(y-mb)^2=m^2\\left[(x-a)^2+(y-b)^2\\right] $$</p>\n<p>For $m=-1$</p>\n<p>$$ (x-(-1)a)^2+(y-(-1)b)^2=(-1)^2\\left[(x-a)^2+(y-b)^2\\right] $$</p>\n<p>$$ (x+a)^2+(y+b)^2=(x-a)^2+(y-b)^2 $$</p>\n<p>$$ x^2+2ax+a^2+y^2+2by+b^2=x^2-2ax+a^2+y^2-2by+b^2 $$</p>\n<p>$$ 2ax+2by=-2ax-2by $$</p>\n<p>$$ 4ax+4by=0 \\rightarrow ax+by=0 $$</p>\n<p>Thus, option (A) is correct.</p>\n<p>For $m=2$</p>\n<p>$$ (x-2a)^2+(y-2b)^2=2^2\\left[(x-a)^2+(y-b)^2\\right] $$</p>\n<p>$$ (x-2a)^2+(y-2b)^2=4\\left[(x-a)^2+(y-b)^2\\right] $$</p>\n<p>$$ (x^2-4ax+4a^2)+(y^2-4by+4b^2)=4(x^2-2ax+a^2+y^2-2by+b^2) $$</p>\n<p>$$ x^2-4ax+4a^2+y^2-4by+4b^2=4x^2-8ax+4a^2+4y^2-8by+4b^2 $$</p>\n<p>$$ (4x^2-x^2)+(-8ax+4ax)+(4a^2-4a^2)+(4y^2-y^2)+(-8by+4by)+(4b^2-4b^2)=0 $$</p>\n<p>$$ 3x^2-4ax+3y^2-4by=0 $$</p>\n<p>$$ x^2-\\frac{4}{3}ax+y^2-\\frac{4}{3}by=0 $$</p>\n<p>The standard circle form $(x^2+y^2+2gx+2fy+c=0)$:</p>\n<p>$$ \\left(x-\\frac{2}{3}a\\right)^2-\\left(\\frac{2}{3}a\\right)^2+\\left(y-\\frac{2}{3}b\\right)^2-\\left(\\frac{2}{3}b\\right)^2=0 $$</p>\n<p>$$ \\left(x-\\frac{2}{3}a\\right)^2+\\left(y-\\frac{2}{3}b\\right)^2=\\frac{4}{9}a^2+\\frac{4}{9}b^2=\\frac{4}{9}(a^2+b^2) $$</p>\n<p>This is a circle equation of the form $(x-x_c)^2+(y-y_c)^2=R^2$:</p>\n<p>Where the centre is $(x_c,y_c)=\\left(\\frac{2}{3}a,\\frac{2}{3}b\\right)$</p>\n<p>And radius is $R=\\sqrt{\\frac{4}{9}(a^2+b^2)}=\\frac{2}{3}\\sqrt{a^2+b^2}$</p>\n\n\n<p>Thus, option (B) is correct.</p>\n<p>For $m=-2$</p>\n<p>$(x-(-2) a)^2+(y-(-2) b)^2=(-2)^2\\left[(x-a)^2+(y-b)^2\\right]$</p>\n<p>$(x+2 a)^2+(y+2 b)^2=4\\left[(x-a)^2+(y-b)^2\\right]$</p>\n<p>$$x^2+4ax+4a^2+y^2+4by+4b^2=4x^2-8ax+4a^2+4y^2-8by+4b^2$$</p>\n\n<p>$$3x^2 - 12ax + 3y^2 - 12by = 0$$</p>\n<p>$$x^2 - 4ax + y^2 - 4by = 0$$</p>\n<p>$$(x - 2a)^2 - 4a^2 + (y - 2b)^2 - 4b^2 = 0$$</p>\n<p>$$(x - 2a)^2 + (y - 2b)^2 = 4a^2 + 4b^2 = 4(a^2 + b^2)$$</p>\n<p>This is also a circle with centre $(2a, 2b)$ and radius</p>\n<p>$$\\sqrt{4(a^2 + b^2)} = 2\\sqrt{a^2 + b^2}$$</p>\n<p>Thus, option (C) is correct.</p>\n<p>For $m = -3$</p>\n<p>$$(x + 3a)^2 + (y + 3b)^2 = 9[(x - a)^2 + (y - b)^2]$$</p>\n<p>$$x^2 + 6ax + 9a^2 + y^2 + 6by + 9b^2 = 9x^2 - 18ax + 9a^2 + 9y^2 - 18by + 9b^2$$</p>\n<p>$$8x^2 - 24ax + 8y^2 - 24by = 0$$</p>\n<p>$$x^2 - 3ax + y^2 - 3by = 0$$</p>\n<p>This also represents a circle, not a straight line as given by $3bx + 3ay = 0$. Thus, option (D) is incorrect.</p>\n<p>Therefore, the correct options are (A), (B) and (C).</p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
-    "type": "MCQM"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
+    "type": "SCQ"
   },
   {
     "id": "ml7ss7ck",
@@ -255,7 +255,7 @@
     "subject": "Physics",
     "topic": "electric-potential-energy-and-electric-potential",
     "difficulty": "medium",
-    "solution": "<p>The work done (W) by an external agent in moving a charge (q) in an electric field ( $\\overrightarrow{\\mathrm{E}}$ ) is given by the change in potential energy, which is the negative of the work done by the field.</p>\n<p>The electric force acting on the charge by electric field is $\\overrightarrow{\\mathrm{F}}=\\mathrm{q} \\overrightarrow{\\mathrm{E}}$</p>\n<p>So, the work done is :</p>\n<p>$$ \\mathrm{W}=\\mathrm{q} \\int \\overrightarrow{\\mathrm{E}} \\cdot \\mathrm{~d} \\overrightarrow{\\mathrm{r}} $$</p>\n<p>Where $\\mathrm{d} \\overrightarrow{\\mathrm{r}}=\\mathrm{dxî}+\\mathrm{dy} \\hat{\\mathrm{j}}+\\mathrm{dz} \\hat{\\mathrm{k}}$ is the infinitesimal displacement vector.</p>\n<p>$$ \\mathrm{W}=\\mathrm{q} \\int\\limits_{(0,-2,-5)}^{(5,1,2)}\\left(2 \\mathrm{x} \\hat{\\imath}+3 \\mathrm{y}^2 \\hat{\\jmath}+4 \\hat{\\mathrm{k}}\\right) \\cdot(\\mathrm{dx} \\hat{\\imath}+\\mathrm{dy} \\hat{\\jmath}+\\mathrm{dz} \\hat{\\mathrm{k}}) $$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{W}=\\mathrm{q}\\left[\\int_0^5 2 \\mathrm{xdx}+\\int_{-2}^1 3 \\mathrm{y}^2 \\mathrm{dy}+\\int_{-5}^2 4 \\mathrm{dz}\\right]$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{W}=\\mathrm{q}\\left[2\\left[\\frac{\\mathrm{x}^2}{2}\\right]_0^5+3\\left[\\frac{\\mathrm{y}^3}{3}\\right]_{-2}^1+4[\\mathrm{x}]_{-5}^2\\right]$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{W}=3\\left[\\left[5^2-0^2\\right]+\\left[1^3-(-2)^3\\right]+4[2-(-5)]\\right]$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{W}=3 \\times(25+9+28) $\n\n<br/><br/>$$\\Rightarrow $$ $ \\mathrm{W}=3 \\times 62=186 \\mathrm{~J}$</p>\n<p>Therefore, the work done in moving the charge is 186 J.</p>",
+    "solution": "<p>The work done (W) by an external agent in moving a charge (q) in an electric field ( $\\overrightarrow{\\mathrm{E}}$ ) is given by the change in potential energy, which is the negative of the work done by the field.</p>\n<p>The electric force acting on the charge by electric field is $\\overrightarrow{\\mathrm{F}}=\\mathrm{q} \\overrightarrow{\\mathrm{E}}$</p>\n<p>So, the work done is :</p>\n<p>$$ \\mathrm{W}=\\mathrm{q} \\int \\overrightarrow{\\mathrm{E}} \\cdot \\mathrm{~d} \\overrightarrow{\\mathrm{r}} $$</p>\n<p>Where $\\mathrm{d} \\overrightarrow{\\mathrm{r}}=\\mathrm{dx\u00ee}+\\mathrm{dy} \\hat{\\mathrm{j}}+\\mathrm{dz} \\hat{\\mathrm{k}}$ is the infinitesimal displacement vector.</p>\n<p>$$ \\mathrm{W}=\\mathrm{q} \\int\\limits_{(0,-2,-5)}^{(5,1,2)}\\left(2 \\mathrm{x} \\hat{\\imath}+3 \\mathrm{y}^2 \\hat{\\jmath}+4 \\hat{\\mathrm{k}}\\right) \\cdot(\\mathrm{dx} \\hat{\\imath}+\\mathrm{dy} \\hat{\\jmath}+\\mathrm{dz} \\hat{\\mathrm{k}}) $$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{W}=\\mathrm{q}\\left[\\int_0^5 2 \\mathrm{xdx}+\\int_{-2}^1 3 \\mathrm{y}^2 \\mathrm{dy}+\\int_{-5}^2 4 \\mathrm{dz}\\right]$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{W}=\\mathrm{q}\\left[2\\left[\\frac{\\mathrm{x}^2}{2}\\right]_0^5+3\\left[\\frac{\\mathrm{y}^3}{3}\\right]_{-2}^1+4[\\mathrm{x}]_{-5}^2\\right]$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{W}=3\\left[\\left[5^2-0^2\\right]+\\left[1^3-(-2)^3\\right]+4[2-(-5)]\\right]$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{W}=3 \\times(25+9+28) $\n\n<br/><br/>$$\\Rightarrow $$ $ \\mathrm{W}=3 \\times 62=186 \\mathrm{~J}$</p>\n<p>Therefore, the work done in moving the charge is 186 J.</p>",
     "section": "B",
     "type": "SUBJECTIVE"
   },
@@ -420,7 +420,7 @@
     "options": [
       " $6 \\mathrm{q}_2$\n",
       " $6 \\mathrm{q}_1$\n",
-      "  $8 \\mathrm{q}_1$\n",
+      "\u00a0 $8 \\mathrm{q}_1$\n",
       " $\\mathrm{8 q_2}$"
     ],
     "correctOption": 3,
@@ -469,7 +469,7 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -477,7 +477,7 @@
     "difficulty": "easy",
     "solution": "<p>$$\\textbf{Assertion A:}$$  </p>\n\n\n<p><p>For a uniformly charged spherical shell, Gauss's law tells us that the electric field inside the shell is zero.  </p></p>\n<p><p>Since the electric field $$\\vec{E}$$ is zero everywhere inside, the potential $$V$$ must be constant.  </p></p>\n<p><p>Work done in moving a charge from one point to another in an electric field is given by the difference in potential energy, which is $$q(V_B - V_A)$$.  </p></p>\n<p><p>If the potential difference $$V_B - V_A$$ is zero (because the potential is constant), then the work done is zero, regardless of the path taken.  </p></p>\n<p><p>Therefore, Assertion A is true.</p></p>\n\n\n<p>$$\\textbf{Reason R:}$$  </p>\n\n\n<p><p>It states that the electrostatic potential inside a uniformly charged spherical shell is constant and equal to that on its surface.  </p></p>\n<p><p>This is correct because the electric field inside is zero, ensuring that the potential remains uniform inside.  </p></p>\n<p><p>Thus, Reason R is also true.</p></p>\n\n\n<p>$$\\textbf{Relationship between A and R:}$$  </p>\n\n\n<p><p>The work done on a test charge moving inside the shell being zero is a direct consequence of the fact that the potential is constant inside.  </p></p>\n<p><p>Hence, Reason R correctly explains why the work done (Assertion A) is zero.</p></p>\n\n<p>Given this analysis, the correct answer is:</p>\n<p>Option B  </p>\n<p>\"Both A and R are true and R is the correct explanation of A.\"</p>",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "maw5g0ka",
@@ -499,7 +499,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1may07gee/56228fed-0c32-4a6e-8c2c-2a25d4e22ac6/06ccd660-364b-11f0-b4c7-3fd17612738b/file-jaoe38c1may07gef.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1may07gee/56228fed-0c32-4a6e-8c2c-2a25d4e22ac6/06ccd660-364b-11f0-b4c7-3fd17612738b/file-jaoe38c1may07gef.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 2 Online Physics - Electrostatics Question 6 English Explanation 1\"></p>\n<p>Before grounding</p>\n<p>$$ \\begin{aligned} &amp; \\mathrm{V}_{\\text {sphere }}=\\left(\\mathrm{V}_{\\mathrm{C}}\\right)_{\\text {net }}=\\left(\\mathrm{V}_{\\mathrm{C}}\\right)_{\\mathrm{q}}+\\left(\\mathrm{V}_{\\mathrm{C}}\\right)_{\\text {ind }} \\\\ &amp; \\mathrm{V}_{\\text {sphere }}=\\frac{\\mathrm{kq}}{\\ell}+0=\\frac{9 \\times 10^9 \\times 10^{-8}}{0.2}=\\frac{90}{0.2}=\\frac{900}{2}=450 \\text { volt } \\end{aligned} $$</p>\n<p>After grounding</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1may0b0y3/19af0044-a3bd-430a-92da-6251b2070068/6a1985b0-364b-11f0-b4c7-3fd17612738b/file-jaoe38c1may0b0y4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1may0b0y3/19af0044-a3bd-430a-92da-6251b2070068/6a1985b0-364b-11f0-b4c7-3fd17612738b/file-jaoe38c1may0b0y4.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 2 Online Physics - Electrostatics Question 6 English Explanation 2\"></p>\n<p>$$ \\begin{aligned} &amp; \\frac{\\mathrm{kQ}}{\\ell}+\\frac{\\mathrm{kq}_{\\mathrm{s}}}{\\mathrm{R}}=\\mathrm{V}_{\\text {sphere }}^{\\prime}=0 \\\\ &amp; \\mathrm{q}_{\\mathrm{s}}=-\\frac{\\mathrm{R}}{\\ell} \\mathrm{q}=-\\frac{1}{2} \\times 10^{-8}=-5 \\times 10^{-9} \\\\ &amp; \\mathrm{q}_{\\mathrm{s}}=-5 \\times 10^{-9} \\text { Coulomb } \\end{aligned} $$</p>\n<p>Charge flower from sphere to ground $=5 \\times 10^{-9}$ Coulomb</p>\n<p>After grounding is removed</p>\n<p>$$ \\begin{aligned} &amp; \\left(\\mathrm{V}_{\\text {sphere }}\\right)_{\\text {final }}=\\frac{\\mathrm{kq}}{\\ell^{\\prime}}+\\frac{\\mathrm{kq}_{\\mathrm{s}}}{\\mathrm{R}} \\\\ &amp; =\\frac{9 \\times 10^9 \\times 10^2 \\times 10^{-8}}{30}-\\frac{9 \\times 10^9 \\times 5 \\times 10^{-9} \\times 10^2}{10} \\\\ &amp; =\\frac{9 \\times 1000}{30}-450=300 \\mathrm{volt}-450 \\mathrm{volt}=-150 \\mathrm{volt} \\end{aligned} $$</p>",
     "section": "Sec 1",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "SCQ"
   },
   {
@@ -517,7 +517,7 @@
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzgj3mrw/7f9c3f6e-7b97-4e1e-a1f6-dacb509ffe8e/6d15a4c0-52e8-11ef-8b51-4b9049082fdf/file-jaoe38c1lzgj3mrx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzgj3mrw/7f9c3f6e-7b97-4e1e-a1f6-dacb509ffe8e/6d15a4c0-52e8-11ef-8b51-4b9049082fdf/file-jaoe38c1lzgj3mrx.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2024 Paper 2 Online Physics - Electrostatics Question 8 English Explanation\"></p>\n<p>due to wire</p>\n<p>$$\\begin{aligned}\n&amp; \\mathrm{dV}=-\\overrightarrow{\\mathrm{E}} \\cdot \\overrightarrow{\\mathrm{dx}} \\\\\n&amp; \\int_\\limits{\\mathrm{v}_{\\mathrm{P}}}^{\\mathrm{v}_{\\mathrm{R}}} \\mathrm{dV}=-\\int_\\limits{0.5}^2 \\frac{2 \\mathrm{k} \\lambda}{\\mathrm{x}} \\mathrm{dx} \\\\\n&amp; \\mathrm{v}_{\\mathrm{R}}-\\mathrm{v}_{\\mathrm{P}}=-2 \\mathrm{k} \\lambda \\ln \\frac{2}{0.5} \\\\\n&amp; =-2 \\times 9 \\times 10^9 \\times 3 \\times 10^{-9} \\times 2 \\times 0.7=-126 \\mathrm{~V}\n\\end{aligned}$$</p>\n<p>due to sphere</p>\n<p>$$\\begin{aligned}\n&amp; v_R-v_P= \\frac{k Q}{2}-\\frac{k Q}{1}=-\\frac{k Q}{2}=\\frac{-9 \\times 10^9 \\times 10 \\times 10^{-9}}{2} \\\\\n&amp;=-45 \\mathrm{~V} \\\\\n&amp; v_R-v_P=-126-45=-171 \\mathrm{~V} \\\\\n&amp; v_P-v_R= 171 \\mathrm{~V}\n\\end{aligned}$$</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
     "type": "NUMERICAL"
   },
   {
@@ -1034,7 +1034,7 @@
   {
     "id": "1KHLCaZUjsFMDcrPLOjgy2xukf3uxetk",
     "questionNumber": 10,
-    "questionText": "Concentric metallic hollow spheres of radii R and 4R hold charges Q<sub>1</sub>\n and Q<sub>2</sub>\n respectively. Given that\nsurface charge densities of the concentric spheres are equal, the potential difference V(R) – V(4R) is :",
+    "questionText": "Concentric metallic hollow spheres of radii R and 4R hold charges Q<sub>1</sub>\n and Q<sub>2</sub>\n respectively. Given that\nsurface charge densities of the concentric spheres are equal, the potential difference V(R) \u2013 V(4R) is :",
     "options": [
       "$${{3{Q_2}} \\over {4\\pi {\\varepsilon _0}R}}$$",
       "$${{3{Q_1}} \\over {4\\pi {\\varepsilon _0}R}}$$",
@@ -1056,10 +1056,10 @@
   {
     "id": "Lxf5pRnSBvfie61Wjbjgy2xukf24x8ce",
     "questionNumber": 10,
-    "questionText": "Two isolated conducting spheres S<sub>1</sub> and S<sub>2</sub> of\nradius $${2 \\over 3}R$$ and $${1 \\over 3}R$$ have 12 $$\\mu $$C and –3 $$\\mu $$C\ncharges, respectively, and are at a large\ndistance from each other. They are now\nconnected by a conducting wire. A long time\nafter this is done the charges on S<sub>1</sub> and S<sub>2</sub> are\nrespectively :",
+    "questionText": "Two isolated conducting spheres S<sub>1</sub> and S<sub>2</sub> of\nradius $${2 \\over 3}R$$ and $${1 \\over 3}R$$ have 12 $$\\mu $$C and \u20133 $$\\mu $$C\ncharges, respectively, and are at a large\ndistance from each other. They are now\nconnected by a conducting wire. A long time\nafter this is done the charges on S<sub>1</sub> and S<sub>2</sub> are\nrespectively :",
     "options": [
       "4.5 $$\\mu $$C on both",
-      "+4.5 $$\\mu $$C and –4.5 $$\\mu $$C",
+      "+4.5 $$\\mu $$C and \u20134.5 $$\\mu $$C",
       "6 $$\\mu $$C and 3 $$\\mu $$C",
       "3 $$\\mu $$C and 6 $$\\mu $$C"
     ],
@@ -1100,7 +1100,7 @@
   {
     "id": "KkfjLO3WF7JAsho77Djgy2xukfl25hbl",
     "questionNumber": 9,
-    "questionText": "Ten charges are placed on the circumference\nof a circle of radius R with constant angular\nseparation between successive charges.\nAlternate charges 1, 3, 5, 7, 9 have charge (+q)\neach, while 2, 4, 6, 8, 10 have charge (–q) each.\nThe potential V and the electric field E at the\ncentre of the circle are respectively.\n<br>(Take V = 0 at infinity)",
+    "questionText": "Ten charges are placed on the circumference\nof a circle of radius R with constant angular\nseparation between successive charges.\nAlternate charges 1, 3, 5, 7, 9 have charge (+q)\neach, while 2, 4, 6, 8, 10 have charge (\u2013q) each.\nThe potential V and the electric field E at the\ncentre of the circle are respectively.\n<br>(Take V = 0 at infinity)",
     "options": [
       "V = 0; E = 0",
       "$$V = {{10q} \\over {4\\pi {\\varepsilon _0}R}}$$; $$E = {{10q} \\over {4\\pi {\\varepsilon _0}{R^2}}}$$",
@@ -1181,7 +1181,7 @@
     "subject": "Physics",
     "topic": "electric-potential-energy-and-electric-potential",
     "difficulty": "medium",
-    "solution": "q<sub>A</sub> = 1 $$\\mu $$c ; q<sub>B</sub> = 1 $$\\mu $$c, m<sub>B</sub> = 4 × 10<sup>–9</sup> kg, r<sub>AB</sub> = 10<sup>–3</sup> m<br><br>\n$${1 \\over 2}{M_B}{V^2} = k{q_A}{q_B}\\left\\{ {{1 \\over {{{10}^{ - 13}}}} - {1 \\over {9 \\times {{10}^{ - 3}}}}} \\right\\}$$<br><br>\n$${1 \\over 2}4 \\times {10^{ - 9}}{V^2} = 9 \\times {10^9} \\times {10^{ - 6}} \\times {8 \\over 9} \\times {10^3}$$<br><br>\n$${V^2} = {8 \\over 2} \\times {10^9} = 4 \\times {10^9}$$<br><br>\nV =  $$\\sqrt {40}  \\times {10^4}\\,m/s$$ = 6.32 $$ \\times $$ 10<sup>4</sup> m/s",
+    "solution": "q<sub>A</sub> = 1 $$\\mu $$c ; q<sub>B</sub> = 1 $$\\mu $$c, m<sub>B</sub> = 4 \u00d7 10<sup>\u20139</sup> kg, r<sub>AB</sub> = 10<sup>\u20133</sup> m<br><br>\n$${1 \\over 2}{M_B}{V^2} = k{q_A}{q_B}\\left\\{ {{1 \\over {{{10}^{ - 13}}}} - {1 \\over {9 \\times {{10}^{ - 3}}}}} \\right\\}$$<br><br>\n$${1 \\over 2}4 \\times {10^{ - 9}}{V^2} = 9 \\times {10^9} \\times {10^{ - 6}} \\times {8 \\over 9} \\times {10^3}$$<br><br>\n$${V^2} = {8 \\over 2} \\times {10^9} = 4 \\times {10^9}$$<br><br>\nV =  $$\\sqrt {40}  \\times {10^4}\\,m/s$$ = 6.32 $$ \\times $$ 10<sup>4</sup> m/s",
     "section": "A",
     "type": "SCQ"
   },
@@ -1210,7 +1210,7 @@
   {
     "id": "0HFsqj2ahMdBtYDEggqus",
     "questionNumber": 11,
-    "questionText": "Four equal point charges Q each are placed in the xy plane at (0, 2), (4, 2), (4, –2) and (0, –2). The work required to put a fifth charge Q at the origin of the coordinate system will be -",
+    "questionText": "Four equal point charges Q each are placed in the xy plane at (0, 2), (4, 2), (4, \u20132) and (0, \u20132). The work required to put a fifth charge Q at the origin of the coordinate system will be -",
     "options": [
       "$${{{Q_2}} \\over {4\\pi {\\varepsilon _0}}}$$",
       "$${{{Q^2}} \\over {2\\sqrt 2 \\pi {\\varepsilon _0}}}$$",
@@ -1342,11 +1342,11 @@
   {
     "id": "wNKzzwUhAdNCElKmWNkcP",
     "questionNumber": 14,
-    "questionText": "The electric field in a region is given by\n$$\\mathop E\\limits^ \\to   = \\left( {Ax + B} \\right)\\mathop i\\limits^ \\wedge  $$\n, where E is in NC<sup>–1</sup> and x is in\nmetres. The values of constants are\nA = 20 SI unit and B = 10 SI unit. If the potential\nat x = 1 is V<sub>1</sub> and that at x = –5 is V<sub>2</sub>, then\nV<sub>1</sub> – V<sub>2</sub> is :-",
+    "questionText": "The electric field in a region is given by\n$$\\mathop E\\limits^ \\to   = \\left( {Ax + B} \\right)\\mathop i\\limits^ \\wedge  $$\n, where E is in NC<sup>\u20131</sup> and x is in\nmetres. The values of constants are\nA = 20 SI unit and B = 10 SI unit. If the potential\nat x = 1 is V<sub>1</sub> and that at x = \u20135 is V<sub>2</sub>, then\nV<sub>1</sub> \u2013 V<sub>2</sub> is :-",
     "options": [
-      "–520 V",
+      "\u2013520 V",
       "180 V",
-      "–48 V",
+      "\u201348 V",
       "320 V"
     ],
     "correctOption": 1,
@@ -1364,11 +1364,11 @@
   {
     "id": "uKkiguKXPfwVaPq2QqXeS",
     "questionNumber": 13,
-    "questionText": "A solid conducting sphere, having a charge Q,\nis surrounded by an uncharged conducting\nhollow spherical shell. Let the potential\ndifference between the surface of the solid\nsphere and that of the outer surface of the\nhollow shell be V. If the shell is now given a\ncharge of –4 Q, the new potential difference\nbetween the same two surfaces is :",
+    "questionText": "A solid conducting sphere, having a charge Q,\nis surrounded by an uncharged conducting\nhollow spherical shell. Let the potential\ndifference between the surface of the solid\nsphere and that of the outer surface of the\nhollow shell be V. If the shell is now given a\ncharge of \u20134 Q, the new potential difference\nbetween the same two surfaces is :",
     "options": [
       "V",
       "2V",
-      "–2V",
+      "\u20132V",
       "4V"
     ],
     "correctOption": 0,
@@ -1559,7 +1559,7 @@
     "difficulty": "medium",
     "solution": "$$(a,b)$$ We know, $${V_0} = {{Kq} \\over R} = Vsurface$$\n<br><br>Now, $${V_i} = {{Kq} \\over {2{R^3}}}\\left( {3{R^2} - {R^2}} \\right)\\,\\,\\,\\,\\,$$ [For $$r &lt; R$$]\n<br><br>At the center of sphere $$r=0.$$  Here\n<br><br>$$V = {3 \\over 2}{V_0}$$\n<br><br>Now, $${5 \\over 4}{{Kq} \\over R} = {{Kq} \\over {2{R^3}}}\\left( {3{R^2} - {r^2}} \\right)$$\n<br><br>$${R_2} = {R \\over {\\sqrt 2 }}$$ \n<br><br>$${3 \\over 4}{{Kq} \\over R} = {{Kq} \\over {{R^3}}}$$ \n<br><br>$${1 \\over 4}{{Kq} \\over R} = {{Kq} \\over {R{}_4}}$$\n<br><br>$${R_4} = 4R$$\n<br><br>Also, $${R_1} = 0$$ and $${R_2} &lt; \\left( {{R_4} - R{}_3} \\right)$$",
     "section": "A",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "mYHueforZ9AVvImQ",
@@ -1595,7 +1595,7 @@
     ],
     "correctOption": 3,
     "correctAnswer": null,
-    "questionType": "MCQM",
+    "questionType": "SCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
@@ -1604,7 +1604,7 @@
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzufdnpc/4c67effd-8eda-475d-bac0-a18bda390faa/d877dcf0-5a8c-11ef-b2ce-1d34423c56ea/file-jaoe38c1lzufdnpd.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzufdnpc/4c67effd-8eda-475d-bac0-a18bda390faa/d877dcf0-5a8c-11ef-b2ce-1d34423c56ea/file-jaoe38c1lzufdnpd.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 2 Offline Physics - Electrostatics Question 55 English Explanation\"></p>\n<p>Here we will use the concept of vectors and concept of electric field.</p>\n<p>Let's take a point P in the overlapping region.</p>\n<p>From $$\\Delta OPQ$$,</p>\n<p>By triangle law of vector addition,</p>\n<p>$$\\overrightarrow {{r_1}}  - \\overrightarrow {{r_2}}  = \\overrightarrow d \\quad \\text{... (1)}$$</p>\n<p>Net electrostatic field at point P;</p>\n<p>$${\\overrightarrow E _{net}} = {{K{q_1}} \\over {r_1^3}}\\overrightarrow {{r_1}}  = {{K{q_2}} \\over {r_2^3}}\\overrightarrow {{r_2}} $$</p>\n<p>$$ \\Rightarrow {\\overrightarrow E _{net}} = {{K\\left( {\\rho {4 \\over 3}\\pi r_1^3} \\right)\\overrightarrow {{r_1}} } \\over {r_1^3}} - {{K\\left( {\\rho {4 \\over 3}\\pi r_2^3} \\right)\\overrightarrow {{r_2}} } \\over {r_2^3}}$$</p>\n<p>$$ \\Rightarrow {\\overrightarrow E _{net}} = {4 \\over 3}\\rho \\pi  \\times {1 \\over {4\\pi {\\varepsilon _0}}}\\left( {\\overrightarrow {{r_1}}  - \\overrightarrow {{r_2}} } \\right)$$</p>\n<p>$$ \\Rightarrow {\\overrightarrow E _{net}} = {\\rho  \\over {3{\\varepsilon _0}}}\\overrightarrow d $$</p>\n<p>Hence, the electrostatic field is constant in magnitude and has same direction.</p>\n<p>Therefore, options (C) and (D) are correct.</p>",
     "section": "Sec 2",
     "instruction": "",
-    "type": "MCQM"
+    "type": "SCQ"
   },
   {
     "id": "MAgvQPZTOXeSyXPG",
