@@ -162,7 +162,7 @@
       "2",
       "1"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 1,
     "correctAnswer": "",
     "solution": "<p>The six matrices A for which $$|A| = 0$$ are as follows:</p>\n<p>$$\\left[ {\\matrix{\n   0 & 0 & 1  \\cr \n   0 & 0 & 1  \\cr \n   1 & 1 & 1  \\cr \n\n } } \\right] \\Rightarrow $$ inconsistent.</p>\n<p>$$\\left[ {\\matrix{\n   0 & 1 & 0  \\cr \n   1 & 1 & 1  \\cr \n   0 & 1 & 0  \\cr \n\n } } \\right] \\Rightarrow $$ inconsistent.</p>\n<p>$$\\left[ {\\matrix{\n   1 & 1 & 1  \\cr \n   1 & 0 & 0  \\cr \n   1 & 0 & 0  \\cr \n\n } } \\right] \\Rightarrow $$ infinite solutions.</p>\n<p>$$\\left[ {\\matrix{\n   1 & 1 & 0  \\cr \n   1 & 1 & 0  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right] \\Rightarrow $$ inconsistent.</p>\n<p>$$\\left[ {\\matrix{\n   1 & 0 & 1  \\cr \n   0 & 1 & 0  \\cr \n   1 & 0 & 1  \\cr \n\n } } \\right] \\Rightarrow $$ inconsistent.</p>\n<p>$$\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 1 & 1  \\cr \n   0 & 1 & 1  \\cr \n\n } } \\right] \\Rightarrow $$ infinite solutions.</p>",
     "marks": 3,
@@ -176,11 +176,11 @@
     "title": "IIT-JEE 2010 Paper 2 Offline",
     "year": 2010,
     "difficulty": "medium",
-    "type": "FIB",
+    "type": "NUMERICAL",
     "question": "<p>Let $k$ be a positive real number and let</p>\n<p>$$ \\begin{aligned} A & =\\left[\\begin{array}{ccc} 2 k-1 & 2 \\sqrt{k} & 2 \\sqrt{k} \\\\ 2 \\sqrt{k} & 1 & -2 k \\\\ -2 \\sqrt{k} & 2 k & -1 \\end{array}\\right] \\text { and } \\\\\\\\ \\mathbf{B} & =\\left[\\begin{array}{ccc} 0 & 2 k-1 & \\sqrt{k} \\\\ 1-2 k & 0 & 2 \\sqrt{k} \\\\ -\\sqrt{k} & -2 \\sqrt{k} & 0 \\end{array}\\right] . \\end{aligned} $$</p>\n<p>If $\\operatorname{det}(\\operatorname{adj} A)+\\operatorname{det}(\\operatorname{adj} B)=10^6$, then $[k]$ \n<br/><br/>is equal to _________. \n<br/><br/>[ <b>Note :</b> adj M denotes the adjoint of a square matrix M and $[k]$ denotes the largest integer less than or equal to $k$ ].</p>",
     "options": [],
     "correctOptionIndex": -1,
-    "correctAnswer": "",
+    "correctAnswer": "4",
     "solution": "<p>$$ |A|=(2 k+1)^3,|B|=0 $$</p>\n<p>( $\\therefore$ B is a skew - symmetric matrix of order 3 )</p>\n<p>$$ \\begin{aligned} \\text { Let }(\\operatorname{adj} \\mathrm{A}) & =|\\mathrm{A}|^{n-1} \\\\\\\\ \\left((2 k+1)^3\\right)^2 & =10^6 \\\\\\\\ (2 k+1)^6 & =10^6 \\Rightarrow 2 k+1=10 \\\\\\\\ 2 k=9 \\Rightarrow[k] & =4 \\end{aligned} $$</p>",
     "marks": 4,
     "negativeMarks": 0,
@@ -378,7 +378,7 @@
       "$${6 \\over 7}$$",
       "$$\\infty$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 1,
     "correctAnswer": "",
     "solution": "<p><p>Given, $${[\\matrix{\n   a & b & c  \\cr \n\n } ]_{1 \\times 3}}{\\left[ {\\matrix{\n   1 & 9 & 7  \\cr \n   8 & 2 & 7  \\cr \n   7 & 3 & 7  \\cr \n\n } } \\right]_{3 \\times 3}} = [\\matrix{\n   0 & 0 & 0  \\cr \n\n } ]$$</p>\n<p>$$ \\Rightarrow \\left[ {\\matrix{\n   {a + 8b + 7c}  \\cr \n   {9a + 2b + 3c}  \\cr \n   {7a + 7b + 7c}  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   0  \\cr \n   0  \\cr \n   0  \\cr \n\n } } \\right]$$</p>\n<p>$$ \\Rightarrow a + 8b + 7c = 0$$ ..... (i)</p>\n<p>$$ \\Rightarrow 9a + 2b + 3c = 0$$ .... (ii)</p>\n<p>$$ \\Rightarrow a + b + c = 0$$ .... (iii)</p>\n<p>On multiplying Eq. (iii) by 2, then subtract from Eq. (ii), we get</p>\n<p>$$7a + c = 0$$ ..... (iv)</p>\n<p>Again multiplying Eq. (iii) by 3, then subtract from Eq. (ii), we get</p>\n<p>$$6a - b = 0$$ ..... (v)</p>\n<p>$$\\therefore$$ b = 6a and c = $$-$$ 7a</p>\n<p>If b = 6, a = 1 and c = $$-$$7</p>\n<p>$$\\therefore$$ $$a{x^2} + bx + c = 0$$</p>\n<p>$$ \\Rightarrow {x^2} + 6x - 7 = 0$$</p>\n<p>$$ \\Rightarrow (x + 7)(x - 1) = 0$$</p>\n<p>$$\\therefore$$ $$x = 1,7$$</p>\n<p>$$ \\Rightarrow \\sum\\limits_{n = 0}^\\infty  {{{\\left( {{1 \\over 1} - {1 \\over 7}} \\right)}^n} \\Rightarrow \\sum\\limits_{n = 0}^\\infty  {{{\\left( {{6 \\over 7}} \\right)}^n}} } $$</p>\n<p>$$ \\Rightarrow 1 + {6 \\over 7} + {\\left( {{6 \\over 7}} \\right)^n} + ....\\infty $$</p>\n<p>$$ = {1 \\over {1 - {6 \\over 7}}} = {1 \\over {1/7}} = 7$$</p>",
     "marks": 3,
@@ -392,7 +392,7 @@
     "title": "IIT-JEE 2011 Paper 1 Offline",
     "year": 2011,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "<p>Let M and N be two 3 $$\\times$$ 3 non-singular skew symmetric matrices such that MN = NM. If P<sup>T</sup> denotes the transpose of P, then M<sup>2</sup>N<sup>2</sup>(M<sup>T</sup>N)<sup>$$-$$1</sup>(MN<sup>$$-$$1</sup>)<sup>T</sup> is equal to</p>",
     "options": [
       "M<sup>2</sup>",
@@ -400,7 +400,9 @@
       "$$-$$M<sup>2</sup>",
       "MN"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      2
+    ],
     "correctAnswer": "",
     "solution": "<p>Given, $${M^T} =  - M$$, $${N^T} =  - N$$</p>\n<p>and $$MN = NM$$ ..... (i)</p>\n<p>$$\\therefore$$ $${M^2}{N^2}{({M^T}N)^{ - 1}}{(M{N^{ - 1}})^T}$$</p>\n<p>$$ = {M^2}{N^2}{N^{ - 1}}{({M^T})^{ - 1}}{({N^{ - 1}})^T}.{M^T}$$</p>\n<p>$$ = {M^2}N(N{M^{ - 1}}){( - M)^{ - 1}}{({N^T})^{ - 1}}( - M)$$</p>\n<p>$$ = {M^2}NI( - {M^{ - 1}}){( - N)^{ - 1}}( - M)$$</p>\n<p>$$ =  - {M^2}N{M^{ - 1}}{N^{ - 1}}M$$</p>\n<p>$$ =  - M.(MN){M^{ - 1}}{N^{ - 1}}M$$</p>\n<p>$$ =  - M(NM){M^{ - 1}}{N^{ - 1}}M$$</p>\n<p>$$ =  - MN(N{M^{ - 1}}){N^{ - 1}}M$$</p>\n<p>$$ =  - M(N{N^{ - 1}})M =  - {M^2}$$</p>\n<p>Note : This question is wrong, as given. An odd order skew symmetric matrix can't be invertible. Had the matrix be of even order, it could have been correct.",
     "marks": 4,
@@ -422,7 +424,7 @@
       "PX = 2X",
       "PX = $$-$$X"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 3,
     "correctAnswer": "",
     "solution": "<p>We have $${P^T} = 2P + I$$</p>\n<p>We get $${P^T} - 2P = I$$ ..... (i)</p>\n<p>Taking transpose, we have $${({P^T} - 2P)^T} = {I^T}$$</p>\n<p>$$ \\Rightarrow P - 2{P^T} = I$$ ..... (ii)</p>\n<p>From (i) and (ii) on eliminating P<sup>T</sup> we have</p>\n<p>$$ - 4P + P = 3I \\Rightarrow P =  - I$$ $$\\therefore$$ $$P + I = 0$$</p>\n<p>Thus, $$(P + 1)X = 0 \\Rightarrow PX =  - X$$</p>",
     "marks": 3,
@@ -436,7 +438,7 @@
     "title": "IIT-JEE 2012 Paper 2 Offline",
     "year": 2012,
     "difficulty": "easy",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "<p>If the ad joint of a 3 $$\\times$$ 3 matrix P is $$\\left[ {\\matrix{\n   1 & 4 & 4  \\cr \n   2 & 1 & 7  \\cr \n   1 & 1 & 3  \\cr \n\n } } \\right]$$, then the possible value(s) of the determinant of P is(are)</p>",
     "options": [
       "$$-$$2",
@@ -444,7 +446,10 @@
       "1",
       "2"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p>Concept Involved If $$\\left| {{A_{n \\times n}}} \\right| = \\Delta $$, then $$\\left| {adj\\,A} \\right| = {\\Delta ^{n - 1}}$$</p>\n<p>Here, $${P_{3 \\times 3}} = \\left[ {\\matrix{\n   1 & 4 & 4  \\cr \n   2 & 1 & 7  \\cr \n   1 & 1 & 3  \\cr \n\n } } \\right]$$</p>\n<p>$$ \\Rightarrow \\left| {adj\\,P} \\right| = {\\left| P \\right|^2}$$</p>\n<p>$$\\therefore$$ $$\\left| {adj\\,P} \\right| = \\left| {\\matrix{\n   1 & 4 & 4  \\cr \n   2 & 1 & 7  \\cr \n   1 & 1 & 3  \\cr \n\n } } \\right|$$</p>\n<p>$$ = 1(3 - 7) - 4(6 - 7) + 4(2 - 1)$$</p>\n<p>$$ =  - 4 + 4 + 4 = 4$$</p>\n<p>$$ \\Rightarrow \\left| P \\right| =  \\pm \\,2$$</p>",
     "marks": 4,
@@ -466,7 +471,7 @@
       "2<sup>12</sup>",
       "2<sup>13</sup>"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 3,
     "correctAnswer": "",
     "solution": "<p>Here, $$P = {[{a_{ij}}]_{3 \\times 3}} = \\left[ {\\matrix{\n   {{a_{11}}} & {{a_{12}}} & {{a_{13}}}  \\cr \n   {{a_{21}}} & {{a_{22}}} & {{a_{23}}}  \\cr \n   {{a_{31}}} & {{a_{32}}} & {{a_{33}}}  \\cr \n\n } } \\right]$$</p>\n<p>$$Q = {[{b_{ij}}]_{3 \\times 3}} = \\left[ {\\matrix{\n   {{b_{11}}} & {{b_{12}}} & {{b_{13}}}  \\cr \n   {{b_{21}}} & {{b_{22}}} & {{b_{23}}}  \\cr \n   {{b_{31}}} & {{b_{32}}} & {{b_{33}}}  \\cr \n\n } } \\right]$$</p>\n<p>where, $${b_{ij}} = {2^{i + j}}{a_{ij}}$$</p>\n<p>$$\\therefore$$ $$\\left| Q \\right| = \\left| {\\matrix{\n   {4{a_{11}}} & {8{a_{12}}} & {16{a_{13}}}  \\cr \n   {8{a_{21}}} & {16{a_{22}}} & {32{a_{23}}}  \\cr \n   {16{a_{31}}} & {32{a_{32}}} & {64{a_{33}}}  \\cr \n\n } } \\right|$$</p>\n<p>$$ = 4 \\times 8 \\times 16\\left| {\\matrix{\n   {{a_{11}}} & {{a_{12}}} & {{a_{13}}}  \\cr \n   {2{a_{21}}} & {2{a_{22}}} & {2{a_{23}}}  \\cr \n   {4{a_{31}}} & {4{a_{32}}} & {4{a_{33}}}  \\cr \n\n } } \\right|$$</p>\n<p>$$ = {2^9} \\times 2 \\times 4\\left| {\\matrix{\n   {{a_{11}}} & {{a_{12}}} & {{a_{13}}}  \\cr \n   {{a_{21}}} & {{a_{22}}} & {{a_{23}}}  \\cr \n   {{a_{31}}} & {{a_{32}}} & {{a_{33}}}  \\cr \n\n } } \\right|$$</p>\n<p>$$ = {2^{12}}.\\left| P \\right| = {2^{12}}.2 = {2^{13}}$$</p>",
     "marks": 3,
@@ -577,7 +582,7 @@
     "title": "JEE Advanced 2015 Paper 1 Offline",
     "year": 2015,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "<p>Let X and Y be two arbitrary, 3 $$\\times$$ 3, non-zero, skew-symmetric matrices and Z be an arbitrary 3 $$\\times$$ 3, non-zero, symmetric matrix. Then which of the following matrices is(are) skew symmetric?</p>",
     "options": [
       "Y<sup>3</sup>Z<sup>4</sup> $$-$$ Z<sup>4</sup>Y<sup>3</sup>",
@@ -585,7 +590,10 @@
       "X<sup>4</sup>Z<sup>3</sup> $$-$$ Z<sup>3</sup>X<sup>4</sup>",
       "X<sup>23</sup> + Y<sup>23</sup>"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p>Given,</p>\n<p>$${X^T} =  - X,{Y^T} =  - Y,{Z^T} = Z$$</p>\n<p>(a) Let $$P = {Y^3}{Z^4} - {Z^4}{Y^3}$$</p>\n<p>Then, $${P^T} = {({Y^3}{Z^4})^T} - {({Z^4}{Y^3})^T}$$</p>\n<p>$$ = {({Z^T})^4}{({Y^T})^3} - {({Y^T})^3}{({Z^T})^4}$$</p>\n<p>$$ =  - {Z^4}{Y^3} + {Y^3}{Z^4} = P$$</p>\n<p>$$\\therefore$$ P is symmetric matrix.</p>\n<p>(b) Let $$P = {X^{44}} + {Y^{44}}$$</p>\n<p>Then, $${P^T} = {({X^T})^{44}} + {({Y^T})^{44}}$$</p>\n<p>$$ = {X^{44}} + {Y^{44}} = P$$</p>\n<p>$$\\therefore$$ P is symmetric matrix.</p>\n<p>(c) Let $$P = {X^4}{Z^3} - {Z^3}{X^4}$$</p>\n<p>Then, $${P^T} = {({X^4}{Z^3})^T} - {({Z^3}{X^4})^T}$$</p>\n<p>$$ = {({Z^T})^3}{({X^T})^4} - {({X^T})^4}{({Z^T})^3}$$</p>\n<p>$$ = {Z^3}{X^4} - {X^4}{Z^3}$$</p>\n<p>$$ =  - P$$</p>\n<p>$$\\therefore$$ P is skew-symmetric matrix.</p>\n<p>(d) Let $$P = {X^{23}} + {Y^{23}}$$</p>\n<p>Then, $${P^T} = {({X^T})^{23}} + {({Y^T})^{23}}$$</p>\n<p>$$ =  - {X^{23}} - {Y^{23}}$$</p>\n<p>$$ =  - P$$</p>\n<p>$$\\therefore$$ P is skew-symmetric matrix.</p>",
     "marks": 4,
@@ -599,7 +607,7 @@
     "title": "JEE Advanced 2015 Paper 1 Offline",
     "year": 2015,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "<p>Which of the following values of $$\\alpha$$ satisfy the equation</p>\n<p>$$\\left| {\\matrix{\n   {{{(1 - \\alpha )}^2}} & {{{(1 + 2\\alpha )}^2}} & {{{(1 + 3\\alpha )}^2}}  \\cr \n   {{{(2 + \\alpha )}^2}} & {{{(2 + 2\\alpha )}^2}} & {{{(2 + 3\\alpha )}^2}}  \\cr \n   {{{(3 + \\alpha )}^2}} & {{{(3 + 2\\alpha )}^2}} & {{{(3 + 3\\alpha )}^2}}  \\cr \n\n } } \\right| =  - 648\\alpha $$ ?</p>",
     "options": [
       "$$-$$4",
@@ -607,7 +615,10 @@
       "$$-$$9",
       "4"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      1,
+      2
+    ],
     "correctAnswer": "",
     "solution": "<p>$$\\left| {\\matrix{\n   {{{(1 - \\alpha )}^2}} & {{{(1 + 2\\alpha )}^2}} & {{{(1 + 3\\alpha )}^2}}  \\cr \n   {{{(2 + \\alpha )}^2}} & {{{(2 + 2\\alpha )}^2}} & {{{(2 + 3\\alpha )}^2}}  \\cr \n   {{{(3 + \\alpha )}^2}} & {{{(3 + 2\\alpha )}^2}} & {{{(3 + 3\\alpha )}^2}}  \\cr \n\n } } \\right| =  - 648\\alpha $$</p>\n<p>Applying $${R_3} \\to {R_3} - {R_2},{R_2} \\to {R_2},{R_1}$$, we get</p>\n<p>$$\\left| {\\matrix{\n   {{{(1 - \\alpha )}^2}} & {{{(1 + 2\\alpha )}^2}} & {{{(1 + 3\\alpha )}^2}}  \\cr \n   {3 + 2\\alpha } & {3 + 4\\alpha } & {3 + 6\\alpha }  \\cr \n   {5 + 2\\alpha } & {5 + 4\\alpha } & {5 + 6\\alpha }  \\cr \n\n } } \\right| =  - 648\\alpha $$</p>\n<p>Applying $${R_3} \\to {R_3} - {R_2}$$, we get</p>\n<p>$$\\left| {\\matrix{\n   {{{(1 - \\alpha )}^2}} & {{{(1 + 2\\alpha )}^2}} & {{{(1 + 3\\alpha )}^2}}  \\cr \n   {3 + 2\\alpha } & {3 + 4\\alpha } & {3 + 6\\alpha }  \\cr \n   2 & 2 & 2  \\cr \n\n } } \\right| =  - 648\\alpha $$</p>\n<p>Applying $${C_3} \\to {C_3} - {C_2},{C_2} \\to {C_2} - {C_1}$$, we get</p>\n<p>$$\\left| {\\matrix{\n   {{{(1 - \\alpha )}^2}} & {{{(1 + 2\\alpha )}^2}} & {{{(1 + 3\\alpha )}^2}}  \\cr \n   {3 + 2\\alpha } & {2\\alpha } & {2\\alpha }  \\cr \n   2 & 0 & 0  \\cr \n\n } } \\right| =  - 648\\alpha $$</p>\n<p>Expanding, $$2{\\alpha ^2}(3\\alpha  + 2) - 2{\\alpha ^2}(5\\alpha  + 2) =  - 324\\alpha $$</p>\n<p>$$ \\Rightarrow  - 4{\\alpha ^3} =  - 324\\alpha  \\Rightarrow \\alpha ({\\alpha ^2} - 81) = 0$$</p>\n<p>$$\\therefore$$ $$\\alpha  = 0, - 9,9$$</p>",
     "marks": 4,
@@ -695,11 +706,11 @@
     "title": "JEE Advanced 2016 Paper 1 Offline",
     "year": 2016,
     "difficulty": "medium",
-    "type": "FIB",
+    "type": "NUMERICAL",
     "question": "<p>The total number of distinct x $$\\in$$ R for which</p>\n<p>$$\\left| {\\matrix{\n   x & {{x^2}} & {1 + {x^3}}  \\cr \n   {2x} & {4{x^2}} & {1 + 8{x^3}}  \\cr \n   {3x} & {9{x^2}} & {1 + 27{x^3}}  \\cr \n\n } } \\right| = 10$$ is ______________.</p>",
     "options": [],
     "correctOptionIndex": -1,
-    "correctAnswer": "",
+    "correctAnswer": "2",
     "solution": "<p>Given, $$\\left| {\\matrix{\n   x & {{x^2}} & {1 + {x^3}}  \\cr \n   {2x} & {4{x^2}} & {1 + 8{x^3}}  \\cr \n   {3x} & {9{x^2}} & {1 + 27{x^3}}  \\cr \n\n } } \\right| = 10$$</p>\n<p>$$ \\Rightarrow x\\,.\\,{x^2}\\left| {\\matrix{\n   1 & 1 & {1 + {x^3}}  \\cr \n   2 & 4 & {1 + 8{x^3}}  \\cr \n   3 & 9 & {1 + 27{x^3}}  \\cr \n\n } } \\right| = 10$$</p>\n<p>Apply R<sub>2</sub> $$\\to$$ R<sub>2</sub> $$-$$ 2R<sub>1</sub> and R<sub>3</sub> $$\\to$$ R<sub>3</sub> $$-$$ 3R<sub>1</sub>, we get</p>\n<p>$${x^3}\\left| {\\matrix{\n   1 & 1 & {1 + {x^3}}  \\cr \n   0 & 2 & { - 1 + 6{x^3}}  \\cr \n   0 & 6 & { - 2 + 24{x^3}}  \\cr \n\n } } \\right| = 10$$</p>\n<p>$$ \\Rightarrow {x^3}\\,.\\,\\left| {\\matrix{\n   2 & {6{x^2} - 1}  \\cr \n   6 & {24{x^3} - 2}  \\cr \n\n } } \\right| = 10$$</p>\n<p>$$ \\Rightarrow {x^3}(48{x^3} - 4 - 36{x^3} + 6) = 10$$</p>\n<p>$$ \\Rightarrow 12{x^6} + 2{x^3} = 10$$</p>\n<p>$$ \\Rightarrow 6{x^6} + {x^3} - 5 = 0$$</p>\n<p>$$ \\Rightarrow 6{({x^3})^2} + {x^3} - 5 = 6$$</p>\n<p>$$ \\Rightarrow 6{({x^3})^2} + 6{x^3} - 5{x^3} - 5 = 0$$</p>\n<p>$$ \\Rightarrow 6{x^3}({x^3} + 1) - 5({x^3} + 1) = 0$$</p>\n<p>$$ \\Rightarrow (6{x^3} - 5)({x^2} - x + 1)(x + 1) = 0$$</p>\n<p>$$\\therefore$$ $$x = {\\left( {{5 \\over 6}} \\right)^{1/3}}, - 1$$</p>\n<p>Hence, the number of real solutions is 2.</p>",
     "marks": 3,
     "negativeMarks": 0,
@@ -795,7 +806,7 @@
     "title": "JEE Advanced 2018 Paper 2 Offline",
     "year": 2018,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let S be the set of all column matrices $$\\left[ {\\matrix{\n   {{b_1}}  \\cr \n   {{b_2}}  \\cr \n   {{b_3}}  \\cr \n\n } } \\right]$$ such that $${b_1},{b_2},{b_3} \\in R$$ and the system of equations (in real variables)<br><br>$$\\eqalign{\n  &amp;  - x + 2y + 5z = {b_1}  \\cr \n  &amp; 2x - 4y + 3z = {b_2}  \\cr \n  &amp; x - 2y + 2z = {b_3} \\cr} $$<br><br>has at least one solution. Then, which of the following system(s) (in real variables) has (have) at least one solution for each $$\\left[ {\\matrix{\n   {{b_1}}  \\cr \n   {{b_2}}  \\cr \n   {{b_3}}  \\cr \n\n } } \\right]$$$$ \\in $$S?",
     "options": [
       "$$x + 2y + 3z = {b_1}$$, $$\\,4y + 5z = {b_2}$$ and $$x + 2y + 6z = {b_3}$$",
@@ -803,7 +814,10 @@
       "$$ - x + 2y - 5z = {b_1}$$, $$\\,2x - 4y + 10z = {b_2}$$ and $$x - 2y + 5z = {b_3}$$",
       "$$x + 2y + 5z = {b_1}$$, $$2x + 3z = {b_2}$$ and $$x + 4y - 5z = {b_3}$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      3
+    ],
     "correctAnswer": "",
     "solution": "We have, <br><br>$$\\eqalign{\n  &amp;  - x + 2y + 5z = {b_1}  \\cr \n  &amp; 2x - 4y + 3z = {b_2}  \\cr \n  &amp; x - 2y + 2z = {b_3} \\cr} $$<br><br>has at least one solution.<br><br>$$ \\therefore $$ $$D = \\left| {\\matrix{\n   { - 1} &amp; 2 &amp; 5  \\cr \n   2 &amp; { - 4} &amp; 3  \\cr \n   1 &amp; { - 2} &amp; 2  \\cr \n\n } } \\right|$$<br><br>and $${D_1} = {D_2} = {D_3} = 0$$<br><br>$$ \\Rightarrow {D_1} = \\left| {\\matrix{\n   {{b_1}} &amp; 2 &amp; 5  \\cr \n   {{b_2}} &amp; { - 4} &amp; 3  \\cr \n   {{b_3}} &amp; { - 2} &amp; 2  \\cr \n\n } } \\right|$$<br><br>$$ =  - 2{b_1} - 14{b_2} + 26{b_3} = 0$$<br><br>$$ \\Rightarrow {b_1} + 7{b_2} = 13{b_3}$$ ....(i)<br><br>(a) $$ \\Rightarrow D = \\left| {\\matrix{\n   1 &amp; 2 &amp; 3  \\cr \n   0 &amp; 4 &amp; 5  \\cr \n   1 &amp; 2 &amp; 6  \\cr \n\n } } \\right| = 1(24 - 10) + 1(10 - 12)$$<br><br>$$ = 14 - 2 = 12 \\ne 0$$<br><br>Here, D $$ \\ne $$ 0 $$ \\Rightarrow $$ unique solution for any b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub>.<br><br>(b) $$D = \\left| {\\matrix{\n   1 &amp; 1 &amp; 3  \\cr \n   5 &amp; 2 &amp; 6  \\cr \n   { - 2} &amp; { - 1} &amp; { - 3}  \\cr \n\n } } \\right|$$<br><br>$$ = 1( - 6 + 6) - 1( - 15 + 12) + 3( - 5 + 4) = 0$$<br><br>For at least one solution<br><br>$${D_1} = {D_2} = {D_3} = 0$$<br><br>Now, $${D_1} = \\left| {\\matrix{\n   {{b_1}} &amp; 1 &amp; 3  \\cr \n   {{b_2}} &amp; 2 &amp; 6  \\cr \n   {{b_3}} &amp; { - 1} &amp; { - 3}  \\cr \n\n } } \\right|$$<br><br>$$ = {b_1}( - 6 + 6) - {b_2}( - 3 + 3) + {b_3}(6 - 6) = 0$$<br><br>$${D_2} = \\left| {\\matrix{\n   1 &amp; {{b_1}} &amp; 3  \\cr \n   5 &amp; {{b_2}} &amp; 6  \\cr \n   { - 2} &amp; {{b_3}} &amp; { - 3}  \\cr \n\n } } \\right|$$<br><br>$$ = {b_1}( - 15 + 12) + {b_2}( - 3 + 6) - {b_3}(6 - 15)$$<br><br>$$ = 3{b_1} + 3{b_2} + 9{b_3} = 0 \\Rightarrow {b_1} + {b_2} + 3{b_3} = 0$$<br><br>not satisfies the Eq. (i)<br><br>$$ \\therefore $$ It has no solution.<br><br>(c) $$D = \\left| {\\matrix{\n   { - 1} &amp; 2 &amp; { - 5}  \\cr \n   2 &amp; { - 4} &amp; {10}  \\cr \n   1 &amp; { - 2} &amp; 5  \\cr \n\n } } \\right|$$<br><br>= $$ - 1( - 20 + 20) - 2(10 - 10) - 5( - 4 + 4) = 0$$<br><br>Here, b<sub>2</sub> = $$-$$2b<sub>1</sub> and b<sub>3</sub> = $$-$$b<sub>1</sub> satisfies the Eq. (i)<br><br>Planes are parallel.<br><br>(d) $$D = \\left| {\\matrix{\n   1 &amp; 2 &amp; 5  \\cr \n   2 &amp; 0 &amp; 3  \\cr \n   1 &amp; 4 &amp; { - 5}  \\cr \n\n } } \\right|$$<br><br>$$ = 1(0 - 12) - 2( - 10 - 3) + 5(8 - 0) = 54$$<br><br>$$D \\ne 0$$<br><br>$$ \\therefore $$ It has unique solutino for any b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub>.",
     "marks": 4,
@@ -891,7 +905,7 @@
     "question": "Suppose \n<br/><br/>det$$\\left| {\\matrix{\n   {\\sum\\limits_{k = 0}^n k } &amp; {\\sum\\limits_{k = 0}^n {{}^n{C_k}{k^2}} }  \\cr \n   {\\sum\\limits_{k = 0}^n {{}^n{C_k}.k} } &amp; {\\sum\\limits_{k = 0}^n {{}^n{C_k}{3^k}} }  \\cr \n\n } } \\right| = 0$$\n<br/><br/> holds for some positive integer n. Then $$\\sum\\limits_{k = 0}^n {{{{}^n{C_k}} \\over {k + 1}}} $$ equals ..............",
     "options": [],
     "correctOptionIndex": -1,
-    "correctAnswer": "",
+    "correctAnswer": "6.20",
     "solution": "It is given that,<br><br>$$\\left| {\\matrix{\n   {\\sum\\limits_{k = 0}^n k } &amp; {\\sum\\limits_{k = 0}^n {{}^n{C_k}{k^2}} }  \\cr \n   {\\sum\\limits_{k = 0}^n {{}^n{C_k}.k} } &amp; {\\sum\\limits_{k = 0}^n {{}^n{C_k}{3^k}} }  \\cr \n\n } } \\right| = 0$$<br><br>$$ \\Rightarrow \\left| {\\matrix{\n   {{{n(n + 1)} \\over 2}} &amp; {n(n + 1){2^{n - 2}}}  \\cr \n   {n{{.2}^{n - 1}}} &amp; {{4^n}}  \\cr \n\n } } \\right| = 0$$<br><br>$$ \\because $$ $$\\left[ \\matrix{\n  \\sum\\limits_{k = 0}^n k  = {{n(n + 1)} \\over 2},\\,\\sum\\limits_{k = 0}^n {{}^n{C_k}k = n{{.2}^{n - 1}}}  \\hfill \\cr \n  \\sum\\limits_{k = 0}^n {} {}^n{C_k}{k^2} = n(n + 1){2^{n - 2}}\\,\\,and\\,\\,\\sum\\limits_{k = 0}^n {} {}^n{C_k}{3^k} = {4^n} \\hfill \\cr}  \\right]$$<br><br>$$ \\Rightarrow {{n(n + 1)} \\over 2}{4^n} - {n^2}(n + 1)\\,{2^{2n - 3}} = 0$$<br><br>$$ \\Rightarrow {{{4^n}} \\over 2} - n{{{4^{n - 1}}} \\over 2} = 0$$<br><br>$$ \\Rightarrow n = 4$$<br><br>$$ \\therefore $$ $$\\sum\\limits_{k = 0}^n {} {{{}^n{C_k}} \\over {k + 1}} = \\sum\\limits_{k = 0}^4 {} {{{}^4{C_k}} \\over {k + 1}}$$<br><br>= $${1 \\over 5}\\sum\\limits_{k = 0}^4 {} {}^5{C_{k + 1}} = {1 \\over 5}({2^5} - 1)$$<br><br>$$ = {1 \\over 5}(32 - 1) = {{31} \\over 5} = 6.20$$",
     "marks": 3,
     "negativeMarks": 0,
@@ -912,7 +926,7 @@
       "$$ - {{37} \\over {16}}$$",
       "$$ - {{29} \\over {16}}$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 3,
     "correctAnswer": "",
     "solution": "It is given that matrix <br><br>$$M = \\left[ {\\matrix{\n   {{{\\sin }^4}\\theta }  \\cr \n   {1 + {{\\cos }^2}\\theta }  \\cr \n\n } \\matrix{\n   { - 1 - {{\\sin }^2}\\theta }  \\cr \n   {{{\\cos }^4}\\theta }  \\cr \n\n } } \\right] = \\alpha I + \\beta {M^{ - 1}}$$, where<br><br><br>$$\\alpha $$ = $$\\alpha $$($$\\theta $$) and $$\\beta $$ = $$\\beta $$($$\\theta $$) are real numbers and I is the 2 $$ \\times $$ 2 identity matrix.<br><br>Now, <br><br>$$(M) = \\left| M \\right| = {\\sin ^4}\\theta {\\cos ^4}\\theta  + 1 + {\\sin ^2}\\theta  + {\\cos ^2}\\theta  + {\\sin ^2}\\theta {\\cos ^2}\\theta$$<br><br>= $${\\sin ^4}\\theta {\\cos ^4}\\theta  + {\\sin ^2}\\theta {\\cos ^2}\\theta  + 2$$<br><br>and$$\\left[ {\\matrix{\n   {{{\\sin }^4}\\theta }  \\cr \n   {1 + {{\\cos }^2}\\theta }  \\cr \n\n } \\matrix{\n   { - 1 - {{\\sin }^2}\\theta }  \\cr \n   {{{\\cos }^4}\\theta }  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   \\alpha   \\cr \n   0  \\cr \n\n } \\,\\matrix{\n   0  \\cr \n   \\alpha   \\cr \n\n } } \\right]$$$$ + {\\beta  \\over {\\left| M \\right|}}(adj\\,M)$$<br><br>$$ \\because $$ $$\\left[ {{M^{ - 1}} = {{adj\\,M} \\over {\\left| M \\right|}}} \\right]$$<br><br>$$ \\Rightarrow $$ $$\\left[ {\\matrix{\n   {{{\\sin }^4}\\theta }  \\cr \n   {1 + {{\\cos }^2}\\theta }  \\cr \n\n } \\matrix{\n   { - 1 - {{\\sin }^2}\\theta }  \\cr \n   {{{\\cos }^4}\\theta }  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   \\alpha   \\cr \n   0  \\cr \n\n } \\,\\matrix{\n   0  \\cr \n   \\alpha   \\cr \n\n } } \\right] + {\\beta  \\over {\\left| M \\right|}}\\left[ {\\matrix{\n   {{{\\cos }^4}\\theta }  \\cr \n   { - 1 - {{\\cos }^2}\\theta }  \\cr \n\n } \\matrix{\n   {1 + {{\\sin }^2}\\theta }  \\cr \n   {{{\\sin }^4}\\theta }  \\cr \n\n } } \\right]$$<br><br>$$ \\because $$ $$\\left\\{ {adj\\left[ {\\matrix{\n   a &amp; b  \\cr \n   c &amp; d  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   d &amp; { - b}  \\cr \n   { - c} &amp; a  \\cr \n\n } } \\right]} \\right\\}$$<br><br>$$ \\Rightarrow \\beta  =  - \\left| M \\right|$$ and $$\\alpha  = {\\sin ^4}\\theta  + {\\cos ^4}\\theta $$<br><br>$$ \\Rightarrow \\alpha  = \\alpha (\\theta ) = 1 - {1 \\over 2}{\\sin ^2}(2\\theta )$$, and $$\\beta  = \\beta (\\theta ) =  - \\left\\{ {{{\\left( {{{\\sin }^2}\\theta {{\\cos }^2}\\theta  + {1 \\over 2}} \\right)}^2} + {7 \\over 4}} \\right\\} =  - \\left\\{ {{{\\left( {{{{{\\sin }^2}(2\\theta )} \\over 4} + {1 \\over 2}} \\right)}^2} + {7 \\over 4}} \\right\\}$$<br><br>Now, $${\\alpha ^*} = {\\alpha _{\\min }} = {1 \\over 2}$$<br><br>and $${\\beta ^*} = {\\beta _{\\min }} =  - {{37} \\over {16}}$$<br><br>$$ \\because $$ $$\\alpha $$ is minimum at sin<sup>2</sup>(2$$\\theta $$) = 1 and $$\\beta $$ is minimum at sin<sup>2</sup>(2$$\\theta $$) = 1<br><br>So, $${\\alpha ^*} + {\\beta ^*} = {1 \\over 2} - {{37} \\over {16}} =  - {{29} \\over {16}}$$",
     "marks": 3,
@@ -1151,8 +1165,8 @@
       "The matrix $(M-2 I)$ is invertible, where $I$ is the $3 \\times 3$ identity matrix"
     ],
     "correctOptionIndex": [
-      2,
-      3
+      1,
+      2
     ],
     "correctAnswer": "",
     "solution": "$M=\\left[\\begin{array}{lll}a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33}\\end{array}\\right]=\\left[\\begin{array}{ccc}1 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 0 & 1 & 0\\end{array}\\right]$\n<br/><br/>$|M|=-1+1=0 \\Rightarrow M$ is singular so non-invertible $$ \\Rightarrow $$ [A] is wrong.\n<br/><br/>(B) $M\\left[\\begin{array}{l}a_1 \\\\ a_2 \\\\ a_3\\end{array}\\right]=\\left[\\begin{array}{l}-a_1 \\\\ -a_2 \\\\ -a_3\\end{array}\\right] \\Rightarrow\\left[\\begin{array}{lll}1 & 1 & 1 \\\\ 1 & 0 & 1 \\\\ 0 & 1 & 0\\end{array}\\right]\\left[\\begin{array}{l}a_1 \\\\ a_2 \\\\ a_3\\end{array}\\right]=\\left[\\begin{array}{l}-a_1 \\\\ -a_2 \\\\ -a_3\\end{array}\\right]$\n<br/><br/>$$\n\\left.\\begin{array}{l}\na_1+a_2+a_3=-a_1 \\\\\na_1+a_3=-a_2 \\\\\na_2=-a_3\n\\end{array}\\right\\} \\Rightarrow a_1=0 \\text { and } a_2+a_3=0 \\text { infinite solutions exists [B] is correct. }\n$$\n<br/><br/>Option (D) :\n<br/><br/>$$\n\\begin{aligned}\n& M-2 I=\\left[\\begin{array}{lll}\n1 & 1 & 1 \\\\\n1 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{array}\\right]-2\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{ccc}\n-1 & 1 & 1 \\\\\n1 & -2 & 1 \\\\\n0 & 1 & -2\n\\end{array}\\right] \\\\\\\\\n& |M-2 I|=0 \\Rightarrow[D] \\text { is wrong }\n\\end{aligned}\n$$\n<br/><br/>Option (C) :\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{MX}=0 \\Rightarrow\\left[\\begin{array}{lll}\n1 & 1 & 1 \\\\\n1 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{array}\\right]\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{l}\n0 \\\\\n0 \\\\\n0\n\\end{array}\\right] \\\\\\\\\n& x+y+z=0 \\\\\\\\\n& x+z=0 \\\\\\\\\n& y=0 \\\\\\\\\n& \\therefore \\text { Infinite solution }\n\\end{aligned}\n$$\n<br/><br/>$[\\mathrm{C}]$ is correct",
@@ -1298,7 +1312,7 @@
     "title": "JEE Advanced 2025 Paper 1 Online",
     "year": 2025,
     "difficulty": "hard",
-    "type": "MCQM",
+    "type": "SCQ",
     "question": "<p>Consider the matrix</p><p>$$ P = \\begin{pmatrix} 2 &amp; 0 &amp; 0 \\\\ 0 &amp; 2 &amp; 0 \\\\ 0 &amp; 0 &amp; 3 \\end{pmatrix}. $$</p><p>Let the transpose of a matrix $X$ be denoted by $X^T$. Then the number of $3 \\times 3$ invertible matrices $Q$ with integer entries, such that</p><p>$$ Q^{-1} = Q^T \\quad \\text{and} \\quad PQ = QP, $$</p><p>is</p>",
     "options": [
       "<p>32</p>",
@@ -1306,9 +1320,7 @@
       "<p>16</p>",
       "<p>24</p>"
     ],
-    "correctOptionIndex": [
-      2
-    ],
+    "correctOptionIndex": 2,
     "correctAnswer": "",
     "solution": "<p>To find the number of $3 \\times 3$ invertible matrices $Q$ with integer entries that satisfy both $Q^{-1} = Q^T$ and $PQ = QP$, consider the given matrix $P$:</p>\n<p>$ P = \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} $</p>\n<p>The condition $PQ = QP$ implies:</p>\n<p>$ \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} \\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix} = \\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix} \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} $</p>\n<p>This results in:</p>\n<p>$ \\begin{pmatrix} 2a & 2b & 2c \\\\ 2d & 2e & 2f \\\\ 3g & 3h & 3i \\end{pmatrix} = \\begin{pmatrix} 2a & 2b & 3c \\\\ 2d & 2e & 3f \\\\ 2g & 2h & 3i \\end{pmatrix} $</p>\n<p>From this, we derive that:</p>\n<p>$ c = 0, \\quad f = 0, \\quad h = 0, \\quad g = 0 $</p>\n<p>Thus, the matrix $Q$ is of the form:</p>\n<p>$ Q = \\begin{pmatrix} a & b & 0 \\\\ c & d & 0 \\\\ 0 & 0 & e \\end{pmatrix} $</p>\n<p>Next, using the condition $Q^T = Q^{-1}$, we have the equation:</p>\n<p>$ Q Q^T = I $</p>\n<p>This results in:</p>\n<p>$ \\begin{pmatrix} a & b & 0 \\\\ c & d & 0 \\\\ 0 & 0 & i \\end{pmatrix} \\begin{pmatrix} a & c & 0 \\\\ b & d & 0 \\\\ 0 & 0 & i \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} $</p>\n<p>This simplifies to:</p>\n<p>$ \\begin{pmatrix} a^2 + b^2 & ac + bd & 0 \\\\ ac + bd & c^2 + d^2 & 0 \\\\ 0 & 0 & i^2 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} $</p>\n<p>From which we conclude:</p>\n<p>$ a^2 + b^2 = 1, \\quad ac + bd = 0, \\quad c^2 + d^2 = 1, \\quad i^2 = 1 $</p>\n<p>Considering all possible integer solutions for these equations:</p>\n<p><strong>Case I:</strong> </p>\n\n<p><p>$(a, b) = (0, 1)$ or $(0, -1)$,</p></p>\n<p><p>$(c, d) = (1, 0)$ or $(-1, 0)$</p></p>\n\n<p><strong>Case II:</strong> </p>\n\n<p><p>$(a, b) = (1, 0)$ or $(-1, 0)$,</p></p>\n<p><p>$(c, d) = (0, 1)$ or $(0, -1)$</p></p>\n\n<p>For each case, $e$ can be either 1 or -1 since $i^2=1$. Therefore, $e = \\pm 1$.</p>\n<p>Combining these options, we find a total of 16 possible matrices $Q$.</p>",
     "marks": 3,
