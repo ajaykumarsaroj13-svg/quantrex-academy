@@ -9,15 +9,20 @@
         "vercel-build": "vite build",
         "preview": "vite preview",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d dist",
+        "build": "vite build"
     },
     "dependencies": {
         "@vercel/blob": "^2.4.0",
         "axios": "^1.16.1",
+        "cheerio": "^1.2.0",
+        "devalue": "^5.8.1",
         "firebase": "^12.13.0",
         "katex": "^0.17.0",
         "lucide-react": "^0.379.0",
         "pdfjs-dist": "^6.0.227",
+        "playwright": "^1.60.0",
+        "puppeteer": "^25.1.0",
         "razorpay": "^2.9.6",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
@@ -27,7 +32,6 @@
         "remark-gfm": "^4.0.1"
     },
     "devDependencies": {
-        "@swc/core-win32-x64-msvc": "^1.15.41",
         "@types/react": "^18.3.3",
         "@types/react-dom": "^18.3.0",
         "@vitejs/plugin-react": "^4.3.0",
