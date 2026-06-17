@@ -6,7 +6,7 @@
     "homepage": "https://ajaykumarsaroj13-svg.github.io/quantrex-academy/",
     "scripts": {
         "dev": "vite",
-        "vercel-build": "tar -xzf questions.tar.gz && vite build",
+        "vercel-build": "vite build",
         "preview": "vite preview",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist"
