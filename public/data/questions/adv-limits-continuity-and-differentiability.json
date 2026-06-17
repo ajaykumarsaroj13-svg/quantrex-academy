@@ -233,7 +233,7 @@
       "$$f(x)$$ is increasing on $$(-1,1)$$ but has neither a local maximum nor a local minimum at $$x=1$$",
       "$$f(x)$$ is decreasing on $$(-1,1)$$ but has neither a local maximum nor a local minimum at $$x=1$$"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": 1,
     "correctAnswer": "",
     "solution": "<p>As when $$x \\in ( - 1,1),f'(x) < 0$$</p>\n<p>So, f(x) is decreasing on ($$-1,1$$) at x = 1</p>\n<p>$$f''(1) = {{4a} \\over {{{(a + 2)}^2}}} > 0$$</p>\n<p>So, local minima at x = 1</p>",
     "marks": 3,
@@ -467,7 +467,7 @@
     "title": "JEE Advanced 2014 Paper 1 Offline",
     "year": 2014,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let $$f:(a,b) \\to [1,\\infty )$$ be a continuous function and g : R $$\\to$$ R be defined as $$g(x) = \\left\\{ {\\matrix{\n   0 & , & {x < a}  \\cr \n   {\\int_a^x {f(t)dt} } & , & {a \\le x \\le b}  \\cr \n   {\\int_a^b {f(t)dt} } & , & {x > b}  \\cr \n\n } } \\right.$$ Then,",
     "options": [
       "g(x) is continuous but not differentiable at a",
@@ -475,7 +475,9 @@
       "g(x) is continuous but not differentiable at b",
       "g(x) is continuous and differentiable at either a or b but not both"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0
+    ],
     "correctAnswer": "",
     "solution": "Given that $$f:(a,b) \\to [1,\\infty )$$<br/><br/>and $$g(x) = \\left\\{ {\\matrix{\n   0 & , & {x < a}  \\cr \n   {\\int_a^x {f(t)dt} } & , & {a \\le x \\le b}  \\cr \n   {\\int_a^b {f(t)dt} } & , & {x > b}  \\cr \n\n } } \\right.$$<br/><br/>Now, $$g({a^ - }) = 0 = g({a^ + }) = g(a)$$<br/><br/>[as $$g({a^ + }) = \\mathop {\\lim }\\limits_{x \\to {a^ + }} \\int_a^x {f(t)dt = 0} $$ and $$g(a) = \\int_a^a {f(t)dt = 0} $$]<br/><br/>$$g({b^ - }) = g({b^ + }) = g(b) = \\int_a^b {f(t)dt} $$<br/><br/>$$\\Rightarrow$$ g is continuous, $$\\forall$$x$$\\in$$R.<br/><br/>Now, $$g'(x) = \\left\\{ {\\matrix{\n   0 & , & {x < a}  \\cr \n   {f(x)} & , & {a < x < b}  \\cr \n   0 & , & {x > b}  \\cr \n\n } } \\right.$$<br/><br/>g'(a<sup>$$-$$</sup>) = 0 but g'(a<sup>+</sup>) = f(a) $$\\ge$$ 1<br/><br/>[$$\\because$$ Range of f(x) is [1, $$\\infty$$), $$\\forall$$ x $$\\in$$[a, b]]<br/><br/>$$\\Rightarrow$$ g is non-differentiable at x = a<br/><br/>and g'(b<sup>+</sup>) = 0<br/><br/>but g'(b<sup>$$-$$</sup>) = f(b) $$\\ge$$ 1<br/><br/>$$\\Rightarrow$$ g is not differentiable at x = b.",
     "marks": 3,
@@ -489,7 +491,7 @@
     "title": "JEE Advanced 2014 Paper 1 Offline",
     "year": 2014,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "NUMERICAL",
     "question": "The largest value of the non-negative integer a for which $$\\mathop {\\lim }\\limits_{x \\to 1} {\\left\\{ {{{ - ax + \\sin (x - 1) + a} \\over {x + \\sin (x - 1) - 1}}} \\right\\}^{{{1 - x} \\over {1 - \\sqrt x }}}} = {1 \\over 4}$$ is",
     "options": [],
     "correctOptionIndex": -1,
@@ -506,7 +508,7 @@
     "title": "JEE Advanced 2014 Paper 1 Offline",
     "year": 2014,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "NUMERICAL",
     "question": "Let f : R $$\\to$$ R and g : R $$\\to$$ R be respectively given by f(x) = | x | + 1 and g(x) = x<sup>2</sup> + 1. Define h : R $$\\to$$ R by $$h(x) = \\left\\{ {\\matrix{\n   {\\max \\{ f(x),g(x)\\} ,} & {if\\,x \\le 0.}  \\cr \n   {\\min \\{ f(x),g(x)\\} ,} & {if\\,x > 0.}  \\cr \n\n } } \\right.$$<br/><br/>The number of points at which h(x) is not differentiable is",
     "options": [],
     "correctOptionIndex": -1,
@@ -523,7 +525,7 @@
     "title": "JEE Advanced 2015 Paper 2 Offline",
     "year": 2015,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "FIB",
     "question": "Let m and n be two positive integers greater than 1. If\n$$$\\mathop {\\lim }\\limits_{\\alpha  \\to 0} \\left( {{{{e^{\\cos \\left( {{\\alpha ^n}} \\right)}} - e} \\over {{\\alpha ^m}}}} \\right) =  - \\left( {{e \\over 2}} \\right)$$$\nthen the value of $${m \\over n}$$ is _________.",
     "options": [],
     "correctOptionIndex": -1,
@@ -540,7 +542,7 @@
     "title": "JEE Advanced 2015 Paper 1 Offline",
     "year": 2015,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "<p>Let $$g:R \\to R$$ be a differentiable function with $$g(0) = 0$$, $$g'(0) = 0$$ and $$g'(1) \\ne 0$$. Let</p>\n<p>$$f(x) = \\left\\{ {\\matrix{\n   {{x \\over {|x|}}g(x),} & {x \\ne 0}  \\cr \n   {0,} & {x = 0}  \\cr \n\n } } \\right.$$</p>\n<p>and $$h(x) = {e^{|x|}}$$ for all $$x \\in R$$. Let $$(f\\, \\circ \\,h)(x)$$ denote $$f(h(x))$$ and $$(h\\, \\circ \\,f)(x)$$ denote $$f(f(x))$$. Then which of the following is (are) true?</p>",
     "options": [
       "f is differentiable at x = 0.",
@@ -548,7 +550,10 @@
       "$$f\\, \\circ \\,h$$ is differentiable at x = 0.",
       "$$h\\, \\circ \\,f$$ is differentiable at x = 0."
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      3
+    ],
     "correctAnswer": "",
     "solution": "<p>Rewrite f as</p>\n<p>$$f(x) = \\left\\{ {\\matrix{\n   {g(x),} & {x > 0}  \\cr \n   0 & {x = 0}  \\cr \n   { - g(x),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>We have, $$f'(x) = \\left\\{ {\\matrix{\n   {g'(x),} & {x > 0}  \\cr \n   { - g'(x),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>At x = 0</p>\n<p>$$f'(0) = \\mathop {\\lim }\\limits_{h \\to 0} {{f(0 + h) - f(0)} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{g(h) - 0} \\over h}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{g(h) - g(0)} \\over h} = g'(0)$$</p>\n<p>$$f'(x) = \\left\\{ {\\matrix{\n   {g'(x),} & {x \\ge 0}  \\cr \n   { - g'(x),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>f is differentiable at x = 0.</p>\n<p>$$\\therefore$$ Option (a) is correct.</p>\n<p>(b) $$h(x) = {e^{|x|}} = \\left\\{ {\\matrix{\n   {{e^x},} & {x \\ge 0}  \\cr \n   {{e^{ - x}},} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>$$ \\Rightarrow h'(x) = \\left\\{ {\\matrix{\n   {{e^x},} & {x \\ge 0}  \\cr \n   { - {e^{ - x}},} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>$$ \\Rightarrow h'({0^ + }) = 1$$</p>\n<p>and $$h'({0^ - }) =  - 1$$</p>\n<p>So, h(x) is not differentiable at x = 0.</p>\n<p>$$\\therefore$$ Option (b) is not correct.</p>\n<p>(c) $$(foh)(x) = f\\{ h(x)\\} $$, as $$h(x) > 0$$</p>\n<p>$$ = \\left\\{ {\\matrix{\n   {g({e^x}),} & {x \\ge 0}  \\cr \n   {g({e^{ - x}}),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>$$ \\Rightarrow (foh)'(x) = \\left\\{ {\\matrix{\n   {{e^x}g'({e^x}),} & {x \\ge 0}  \\cr \n   { - {e^x}g'({e^{ - x}}),} & {x < 0}  \\cr \n\n } } \\right.$$</p>\n<p>$$ \\Rightarrow (foh)'({0^ + }) = g'(1),(foh)'({0^ - })$$</p>\n<p>$$ =  - g'(1)$$</p>\n<p>So, $$(hof)(x)$$ is not differentiable at</p>\n<p>$$x = 0$$.</p>\n<p>$$\\therefore$$ Option (c) is not correct.</p>\n<p>(d) $$(hof)(x) = {e^{\\left| {f(x)} \\right|}} = \\left\\{ {\\matrix{\n   {{e^{\\left| {g(x)} \\right|}},} & {x \\ne 0}  \\cr \n   {{e^0} = 1,} & {x = 0}  \\cr \n\n } } \\right.$$</p>\n<p>Now, $$(hof)'(0) = \\mathop {\\lim }\\limits_{h \\to 0} {{{e^{\\left| {g(x)} \\right|}} - 1} \\over x}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{e^{\\left| {g(x)} \\right|}} - 1} \\over {|g(x)|}}\\,.\\,{{|g(x)|} \\over x}$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{h \\to 0} {{{e^{\\left| {g(x)} \\right|}} - 1} \\over {|g(x)|}}\\,.\\,\\mathop {\\lim }\\limits_{h \\to 0} {{\\left| {g(x)| - 0} \\right|} \\over {|x|}}\\,.\\mathop {\\lim }\\limits_{h \\to 0} {{|x|} \\over x}$$</p>\n<p>$$ = 1\\,.\\,g'(0)\\,.\\,\\mathop {\\lim }\\limits_{h \\to 0} {{|x|} \\over x}$$</p>\n<p>= 0, as g'(0) = 0</p>\n<p>$$\\therefore$$ Option (d) is correct.</p>",
     "marks": 4,
@@ -584,7 +589,7 @@
     "title": "JEE Advanced 2016 Paper 2 Offline",
     "year": 2016,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "<p>Let $$f:\\left[ { - {1 \\over 2},2} \\right] \\to R$$ and $$g:\\left[ { - {1 \\over 2},2} \\right] \\to R$$ be function defined by $$f(x) = [{x^2} - 3]$$ and $$g(x) = |x|f(x) + |4x - 7|f(x)$$, where [y] denotes the greatest integer less than or equal to y for $$y \\in R$$. Then</p>",
     "options": [
       "f is discontinuous exactly at three points in $$\\left[ { - {1 \\over 2},2} \\right]$$.",
@@ -592,7 +597,10 @@
       "g is NOT differentiable exactly at four points in $$\\left( { - {1 \\over 2},2} \\right)$$.",
       "g is NOT differentiable exactly at five points in $$\\left( { - {1 \\over 2},2} \\right)$$."
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      1,
+      2
+    ],
     "correctAnswer": "",
     "solution": "<p>$$f(x) = [{x^2} - 3] = [{x^2}] - 3$$</p>\n<p>$$ = \\left\\{ {\\matrix{\n   { - 3,} &amp; { - 1/2 \\le x &lt; 1}  \\cr \n   { - 2,} &amp; {1 \\le x &lt; \\sqrt 2 }  \\cr \n   { - 1,} &amp; {\\sqrt 2  \\le x &lt; \\sqrt 3 }  \\cr \n   {0,} &amp; {\\sqrt 3  \\le x &lt; 2}  \\cr \n   {1,} &amp; {x = 2}  \\cr \n\n } } \\right.$$</p>\n<p>and $$g(x) = |x|f(x) + |4x - 7|f(x)$$</p>\n<p>$$ = (|x| + |4x - 7|)f(x)$$</p>\n<p>$$ = (|x| + |4x - 7|)[{x^2} - 3]$$</p>\n<p>$$ = \\left\\{ {\\matrix{\n   {( - x - 4x - 7)( - 3),} &amp; { - 1/2 \\le x &lt; 0}  \\cr \n   {(x - 4x + 7)( - 3),} &amp; {0 \\le x &lt; 1}  \\cr \n   {(x - 4x + 7)( - 2),} &amp; {1 \\le x &lt; \\sqrt 2 }  \\cr \n   {(x - 4x + 7)( - 1),} &amp; {\\sqrt 2  \\le x &lt; \\sqrt 3 }  \\cr \n   {(x - 4x + 7)(0),} &amp; {\\sqrt 3  \\le x &lt; 7/4}  \\cr \n   {(x + 4x - 7)(0),} &amp; {7/4 \\le x &lt; 2}  \\cr \n   {(x + 4x - 7)(1),} &amp; {x = 2}  \\cr \n\n } } \\right.$$</p>\n<p>$$\\therefore$$ $$g(x) = \\left\\{ {\\matrix{\n   {15x + 21,} &amp; { - 1/2 \\le x &lt; 0}  \\cr \n   {9x - 21,} &amp; {0 \\le x &lt; 1}  \\cr \n   {6x - 14,} &amp; {1 \\le x &lt; \\sqrt 2 }  \\cr \n   {3x - 7,} &amp; {\\sqrt 2  \\le x\\sqrt 3 }  \\cr \n   {0,} &amp; {\\sqrt 3  \\le x &lt; 2}  \\cr \n   {5x - 7,} &amp; {x = 2}  \\cr \n\n } } \\right.$$</p>\n<p>Now, the graphs of f(x) and g(x) are shown below.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0rx29b5/063ea7ae-5082-4ede-b08a-609ece4acb65/13902a00-a440-11ec-a6f1-21c3c3b08b52/file-1l0rx29b6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0rx29b5/063ea7ae-5082-4ede-b08a-609ece4acb65/13902a00-a440-11ec-a6f1-21c3c3b08b52/file-1l0rx29b6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 2 Offline Mathematics - Limits, Continuity and Differentiability Question 37 English Explanation 1\"></p>\n<p>Graph for f(x)</p>\n<p>Clearly, f(x) is discontinuous at 4 points.</p>\n<p>$$\\therefore$$ Option (b) is correct.</p>\n<p>Graph for g(x)</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0rx43lr/8b2d3865-57bb-4929-9ae5-80c4863a8b07/46c65cf0-a440-11ec-a6f1-21c3c3b08b52/file-1l0rx43ls.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0rx43lr/8b2d3865-57bb-4929-9ae5-80c4863a8b07/46c65cf0-a440-11ec-a6f1-21c3c3b08b52/file-1l0rx43ls.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 2 Offline Mathematics - Limits, Continuity and Differentiability Question 37 English Explanation 2\"></p>\n<p>Clearly, g(x) is not differentiable at 4 points, when</p>\n<p>x $$\\in$$ ($$-$$1 / 2, 2).</p>\n<p>$$\\therefore$$ Option (c) is correct.</p>",
     "marks": 4,
@@ -606,7 +614,7 @@
     "title": "JEE Advanced 2016 Paper 1 Offline",
     "year": 2016,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "FIB",
     "question": "<p>Let $$\\alpha$$, $$\\beta$$ $$\\in$$ R be such that $$\\mathop {\\lim }\\limits_{x \\to 0} {{{x^2}\\sin (\\beta x)} \\over {\\alpha x - \\sin x}} = 1$$. Then 6($$\\alpha$$ + $$\\beta$$) equals _________.</p>",
     "options": [],
     "correctOptionIndex": -1,
@@ -689,7 +697,7 @@
     "title": "JEE Advanced 2017 Paper 1 Offline",
     "year": 2017,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let f : R $$ \\to $$ (0, 1) be a continuous function. Then, which of the following function(s) has (have) the value zero at some point in the interval (0, 1) ?",
     "options": [
       "$${e^x} - \\int_0^x {f(t)\\sin t\\,dt} $$",
@@ -697,7 +705,10 @@
       "$$f(x) - \\int_0^{{\\pi  \\over 2} - x} {f(t)\\cos t\\,dt} $$",
       "x<sup>9</sup> $$-$$ f(x)"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "(a) $$ \\because $$ $${e^x} \\in (1,e)$$ in (0, 1) and $$\\int_0^x {f(t)\\sin t\\,dt \\in } $$ (0, 1) in (0, 1)<br><br>$$ \\therefore $$ $${e^x} - \\int_0^x {f(t)\\sin t\\,dt} $$ cannot be zero.<br><br>So, option (a) is incorrect.<br><br>(b) $$f(x) + \\int_0^{{\\pi  \\over 2}} {f(t)\\sin t\\,dt} $$ always positive<br><br>$$ \\therefore $$ Option (b) is incorrect.<br><br>(c) Let $$h(x) = x - \\int_0^{{\\pi  \\over 2} - x} {f(t)\\cos t\\,dt} $$,<br><br>$$h(0) =  - \\int_0^{{\\pi  \\over 2}} {f(t)\\cos t\\,dt}  &lt; 0$$<br><br>$$h(1) = 1 - \\int_0^{{\\pi  \\over 2} - 1} {f(t)\\cos t\\,dt}  &gt; 0$$<br><br>$$ \\therefore $$ Option (c) is correct.<br><br>(d) Let $$g(x) = {x^9} - f(x)$$<br><br>$$g(0) =  - f(0) &lt; 0$$, $$g(1) = 1 - f(1) &gt; 0$$<br><br>$$ \\therefore $$ Option (d) is correct.",
     "marks": 4,
@@ -711,7 +722,7 @@
     "title": "JEE Advanced 2017 Paper 1 Offline",
     "year": 2017,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "NUMERICAL",
     "question": "Let f : R $$ \\to $$ R be a differentiable function such that f(0) = 0, $$f\\left( {{\\pi  \\over 2}} \\right) = 3$$ and f'(0) = 1.<br><br>If $$g(x) = \\int\\limits_x^{\\pi /2} {[f'(t)\\text{cosec}\\,t - \\cot t\\,\\text{cosec}\\,t\\,f(t)]dt} $$<br><br>for $$x \\in \\left( {0,\\,{\\pi  \\over 2}} \\right]$$, then $$\\mathop {\\lim }\\limits_{x \\to 0} g(x)$$ = ",
     "options": [],
     "correctOptionIndex": -1,
@@ -772,7 +783,7 @@
     "title": "JEE Advanced 2018 Paper 1 Offline",
     "year": 2018,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "For every twice differentiable function $$f:R \\to [ - 2,2]$$ with $${(f(0))^2} + {(f'(0))^2} = 85$$, which of the following statement(s) is(are) TRUE?",
     "options": [
       "There exist r, s $$ \\in $$ R, where r &lt; s, such that f is one-one on the open interval (r, s)",
@@ -780,7 +791,10 @@
       "$$\\mathop {\\lim }\\limits_{x \\to \\infty } f(x) = 1$$",
       "There exists $$\\alpha $$$$ \\in $$($$-$$4, 4) such that f($$\\alpha $$) + f\"($$\\alpha $$) = 0 and f'($$\\alpha $$) $$ \\ne $$ 0"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "We have,<br><br>$${(f(0))^2} + {(f'(0))^2} = 85$$<br><br>and $$f:R \\to [ - 2,2]$$<br><br>(a) Since, f is twice differentiable function, so f is continuous function.<br><br>$$ \\therefore $$ This is true for every continuous function.<br><br>Hence, we can always find x $$ \\in $$ (r, s), where f(x) is one-one.<br><br>$$ \\therefore $$ This statement is true.<br><br>(b) By L.M.V.T.<br><br>$$f'(c) = {{f(b) - f(a)} \\over {b - a}}$$<br><br>$$ \\Rightarrow |f'(c)| = \\left| {{{f(b) - f(a)} \\over {b - a}}} \\right|$$<br><br>$$ \\Rightarrow |f'({x_0})| = \\left| {{{f(0) - f( - 4)} \\over {0 + 4}}} \\right|$$<br><br>$$ = \\left| {{{f(0) - f( - 4)} \\over 4}} \\right|$$<br><br>Range of f is [$$-$$2, 2]<br><br>$$ \\therefore $$ $$ - 4 \\le f(0) - f( - 4) \\le 4$$<br><br>$$ \\Rightarrow 0 \\le \\left| {{{f(0) - f( - 4)} \\over 4}} \\right| \\le 1$$<br><br>Hence, |f'(x<sub>0</sub>)| = 1.<br><br>Hence, statement is true.<br><br>(c) As no function is given, then we assume<br><br>$$f(x) = 2\\sin \\left( {{{\\sqrt {85} x} \\over 2}} \\right)$$<br><br>$$ \\therefore $$ $$f'(x) = \\sqrt {85} \\cos \\left( {{{\\sqrt {85} x} \\over 2}} \\right)$$<br><br>Now, $${(f(0))^2} + {(f'(0))^2} = {(2\\sin 0)^2} + {(\\sqrt {85} \\cos 0)^2}$$<br><br>$${(f(0))^2} + {(f'(0))^2} = 85$$<br><br>and $$\\mathop {\\lim }\\limits_{x \\to \\infty } f(x)$$ does not exists.<br><br>Hence, statement is false.<br><br>(d) From option b, $$|f'({x_0})|\\, \\le 1$$<br><br>$${x_0} \\in ( - 4,0)$$<br><br>$$ \\therefore $$ $${(f'({x_0}))^2}\\, \\le 1$$<br><br>Hence, $$g({x_0}) = {(f({x_0}))^2} + {(f'({x_0}))^2}\\, \\le 4 + 1$$<br><br>[$$ \\because $$ f(x<sub>0</sub>) $$ \\in $$ [$$-$$2, 2]<br><br>$$ \\Rightarrow g({x_0})\\, \\le 5$$<br><br>Now, let p $$ \\in $$ ($$-$$4, 0) for which g(p) = 5<br><br>Similarly, let q be smallest positive number q $$ \\in $$ (0, 4)<br><br>such that g(q) = 5<br><br>Hence, by Rolle's theorem is (p, q)<br><br>g'(c) = 0 for $$\\alpha $$ $$ \\in $$ ($$-$$4, 4) and since g(x) is greater than 5 as we move from x = p to x = q<br><br>and f(x))<sup>2</sup> $$ \\le $$ 4<br><br>$$ \\Rightarrow $$ (f'(x))<sup>2</sup> $$ \\ge $$ 1 in (p, q)<br><br>Thus, g'(c) = 0<br><br>$$ \\Rightarrow $$ f'f + f'f\" = 0<br><br>So, f($$\\alpha $$) + f\"($$\\alpha $$) = 0 and f'($$\\alpha $$) $$ \\ne $$ 0<br><br>Hence, statement is true.",
     "marks": 4,
@@ -816,7 +830,7 @@
     "title": "JEE Advanced 2018 Paper 1 Offline",
     "year": 2018,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "NUMERICAL",
     "question": "The value of $${({({\\log _2}9)^2})^{{1 \\over {{{\\log }_2}({{\\log }_2}9)}}}} \\times {(\\sqrt 7 )^{{1 \\over {{{\\log }_4}7}}}}$$ is ....................",
     "options": [],
     "correctOptionIndex": -1,
@@ -833,7 +847,7 @@
     "title": "JEE Advanced 2019 Paper 2 Offline",
     "year": 2019,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let f : R be a function. We say that f has <br/><br/>PROPERTY 1 if $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(h) - f(0)} \\over {\\sqrt {|h|} }}$$ exists and is finite, and <br/><br/>PROPERTY 2 if $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(h) - f(0)} \\over {{h^2}}}$$ exists and is finite. Then which of the following options is/are correct?",
     "options": [
       "f(x) = sin x has PROPERTY 2",
@@ -841,13 +855,19 @@
       "f(x) = |x| has PROPERTY 1",
       "f(x) = x|x| has PROPERTY 2"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      0,
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "It is given, that f : R $$ \\to $$ R and<br><br>Property 1 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(h) - f(0)} \\over {\\sqrt {|h|} }}$$ exists and finite, and<br><br><br>Property 2 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(h) - f(0)} \\over {{h^2}}}$$ exists and finite.<br><br>Option A,<br><br> P2 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{\\sin h - \\sin 0} \\over {{h^2}}} = \\mathop {\\lim }\\limits_{h \\to 0} {1 \\over h}\\left( {{{\\sin \\,h} \\over h}} \\right)$$ =  doesn't exist.<br><br>Option B,<br><br>P1 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{{h^{2/3}} - 0} \\over {\\sqrt {|h|} }} = \\mathop {\\lim }\\limits_{h \\to 0} {h^{2/3 - 1/2}} = \\mathop {\\lim }\\limits_{h \\to 0} {h^{1/6}} = 0$$ exists and finite.<br><br>Option C,<br><br>P1 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{|h| - 0} \\over {\\sqrt {|h|} }} = \\mathop {\\lim }\\limits_{h \\to 0} \\sqrt {|h|}  = 0$$, exists and finite.<br><br>Option D,<br><br>P2 : $$\\mathop {\\lim }\\limits_{h \\to 0} {{h|h| - 0} \\over {{h^2}}} = \\mathop {\\lim }\\limits_{h \\to 0} {{|h|} \\over h} = \\left\\{ {\\matrix{\n   1 &amp; {if\\,h \\to {0^ + }}  \\cr \n   { - 1} &amp; {if\\,h \\to {0^ - }}  \\cr \n\n } } \\right.$$<br><br>So, $$\\mathop {\\lim }\\limits_{h \\to 0} {{f(h) - f(0)} \\over {{h^2}}}$$ does not exist.<br><br>Hence, options (b) and (c) are correct.",
     "marks": 4,
     "negativeMarks": 1,
     "topic": "Differentiability",
-    "exam": "jee-advanced"
+    "exam": "jee-advanced",
+    "questionType": "MCQM"
   },
   {
     "question_id": "qtXaGWG0Wgf1Gcd7X21kjnvt9eg",
@@ -855,7 +875,7 @@
     "title": "JEE Advanced 2019 Paper 2 Offline",
     "year": 2019,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "For $$a \\in R,\\,|a|\\, &gt; 1$$, let <br/><br/>$$\\mathop {\\lim }\\limits_{n \\to \\infty } \\left( {{{1 + \\root 3 \\of 2  + ...\\root 3 \\of n } \\over {{n^{7/3}}\\left( {{1 \\over {{{(an + 1)}^2}}} + {1 \\over {{{(an + 2)}^2}}} + ... + {1 \\over {{{(an + n)}^2}}}} \\right)}}} \\right) = 54$$",
     "options": [
       "$$-$$6",
@@ -863,13 +883,17 @@
       "8",
       "$$-$$9"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "$$\\mathop {\\lim }\\limits_{n \\to \\infty } \\left[ {{{1 + \\root 3 \\of 2  + \\root 3 \\of 3  + ...\\root 3 \\of n } \\over {{n^{7/3}}\\left( {{1 \\over {{{(an + 1)}^2}}} + {1 \\over {{{(an + 2)}^2}}} + ... + {1 \\over {{{(an + n)}^2}}}} \\right)}}} \\right]$$, $$a \\in R,\\,|a|\\, &gt; 1$$<br><br>$$ = \\mathop {\\lim }\\limits_{n \\to \\infty } {{\\sum\\limits_{r = 1}^n {({r^{1/3}})} } \\over {{n^{7/3}}\\sum\\limits_{r = 1}^n {{1 \\over {{{(an + r)}^2}}}} }}$$<br><br>$$ = \\mathop {\\lim }\\limits_{n \\to \\infty } {{\\sum\\limits_{r = 1}^n {{{\\left( {{r \\over n}} \\right)}^{1/3}}{1 \\over n}} } \\over {\\sum\\limits_{r = 1}^n {{1 \\over {{{(a + {r \\over n})}^2}}}{1 \\over n}} }}$$<br><br>$$ = {{\\int\\limits_0^1 {{x^{1/3}}dx} } \\over {\\int\\limits_0^1 {{{dx} \\over {{{(a + x)}^2}}}} }} = 54$$, (given)<br><br>$$ \\Rightarrow {{{3 \\over 4}[{x^{4/3}}]_0^1} \\over {\\left[ { - {1 \\over {x + a}}} \\right]_0^1}} = 54$$<br><br>$$ \\Rightarrow {{{3 \\over 4}} \\over { - {1 \\over {a + 1}} + {1 \\over a}}} = 54$$<br><br>$$ \\Rightarrow {3 \\over {4 \\times 54}} = {1 \\over {a(a + 1)}} $$\n<br/><br/>$$\\Rightarrow {a^2} + a = 72$$<br><br>$$ \\Rightarrow {a^2} + 9a - 8a - 72 = 0$$<br><br>$$ \\Rightarrow a(a + 9) - 8(a + 9) = 0$$<br><br>$$ \\Rightarrow (a - 8)(a + 9) = 0$$<br><br>$$ \\Rightarrow a = 8$$ or $$ - 9$$<br><br>Hence, options (c) and (d) are correct.",
     "marks": 4,
     "negativeMarks": 1,
     "topic": "Limits Of Algebric Function",
-    "exam": "jee-advanced"
+    "exam": "jee-advanced",
+    "questionType": "MCQM"
   },
   {
     "question_id": "eUzVhRFplAXVF4KnyR1kjguipo5",
@@ -877,7 +901,7 @@
     "title": "JEE Advanced 2019 Paper 1 Offline",
     "year": 2019,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "MCQM",
     "question": "Let f : R $$ \\to $$ R be given by<br><br>$$f(x) = \\left\\{ {\\matrix{\n   {{x^5} + 5{x^4} + 10{x^3} + 10{x^2} + 3x + 1,} &amp; {x &lt; 0;}  \\cr \n   {{x^2} - x + 1,} &amp; {0 \\le x &lt; 1;}  \\cr \n   {{2 \\over 3}{x^3} - 4{x^2} + 7x - {8 \\over 3},} &amp; {1 \\le x &lt; 3;}  \\cr \n   {(x - 2){{\\log }_e}(x - 2) - x + {{10} \\over 3},} &amp; {x \\ge 3;}  \\cr \n\n } } \\right\\}$$<br><br>Then which of the following options is/are correct?",
     "options": [
       "f is increasing on ($$ - $$$$\\infty $$, 0)",
@@ -885,13 +909,18 @@
       "f is onto",
       "f' has a local maximum at x = 1"
     ],
-    "correctOptionIndex": 0,
+    "correctOptionIndex": [
+      1,
+      2,
+      3
+    ],
     "correctAnswer": "",
     "solution": "Given function f : R $$ \\to $$ R is<br><br>$$f(x) = \\left\\{ {\\matrix{\n   {{x^5} + 5{x^4} + 10{x^3} + 10{x^2} + 3x + 1,} &amp; {x &lt; 0;}  \\cr \n   {{x^2} - x + 1,} &amp; {0 \\le x &lt; 1;}  \\cr \n   {{2 \\over 3}{x^3} - 4{x^2} + 7x - {8 \\over 3},} &amp; {1 \\le x &lt; 3;}  \\cr \n   {(x - 2){{\\log }_e}(x - 2) - x + {{10} \\over 3},} &amp; {x \\ge 3;}  \\cr \n\n } } \\right\\}$$<br><br>So, <br><br>$$f'(x) = \\left\\{ {\\matrix{\n   {{5x^4} + 20{x^3} + 30{x^2} + 20x + 3,} &amp; {x &lt; 0;}  \\cr \n   {2x - 1,} &amp; {0 \\le x &lt; 1;}  \\cr \n   {2{x^2} + 8x + 7,} &amp; {1 \\le x &lt; 3;}  \\cr \n   {{{\\log }_e}(x - 2),} &amp; {x \\ge 3;}  \\cr \n\n } } \\right\\}$$<br><br>At x = 1, f\"(1<sup>-</sup>) = 2 &gt; 0 and f\"(1<sup>+</sup>) = 4$$ - $$8 = $$ - $$4 &lt; 0<br><br>$$ \\therefore $$ f'(x) is not differentiable at x = 1 and f'(x) has a local maximum at x = 1.<br><br>For x $$ \\in $$ ($$ - $$$$\\infty $$, 0)<br><br>f'(x) = 5x<sup>4</sup> + 20x<sup>3</sup> + 30x<sup>2</sup> + 20x + 3<br><br>and since<br><br>f'($$ - $$1) = 5$$ - $$20 + 20 + 30 $$ - $$ 20 + 3 = $$ - $$2 &lt; 0<br><br>So, f(x) is not increasing on x $$ \\in $$($$ - $$$$\\infty $$, 0).<br><br>Now, as the range of function f(x) is R, so f is onto function.<br><br>Hence, options (b), (c) and (d) are correct.",
     "marks": 4,
     "negativeMarks": 1,
     "topic": "Continuity",
-    "exam": "jee-advanced"
+    "exam": "jee-advanced",
+    "questionType": "MCQM"
   },
   {
     "question_id": "GlHY4IIZvTcWb7nwUV1kk3tw92c",
@@ -921,7 +950,7 @@
     "title": "JEE Advanced 2020 Paper 2 Offline",
     "year": 2020,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "NUMERICAL",
     "question": "The value of the limit<br><br>$$\\mathop {\\lim }\\limits_{x \\to {\\pi  \\over 2}} {{4\\sqrt 2 (\\sin 3x + \\sin x)} \\over {\\left( {2\\sin 2x\\sin {{3x} \\over 2} + \\cos {{5x} \\over 2}} \\right) - \\left( {\\sqrt 2  + \\sqrt 2 \\cos 2x + \\cos {{3x} \\over 2}} \\right)}}$$<br><br>is ...........",
     "options": [],
     "correctOptionIndex": -1,
@@ -938,7 +967,7 @@
     "title": "JEE Advanced 2020 Paper 2 Offline",
     "year": 2020,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "NUMERICAL",
     "question": "Let the functions $$f:( - 1,1) \\to R$$ and $$g:( - 1,1) \\to ( - 1,1)$$ be defined by $$f(x) = |2x - 1| + |2x + 1|$$ and $$g(x) = x - [x]$$, where [x] denotes the greatest integer less than or equal to x. Let $$f\\,o\\,g:( - 1,1) \\to R$$ be the composite function defined by $$(f\\,o\\,g)(x) = f(g(x))$$. Suppose c is the number of points in the interval ($$-$$1, 1) at which $$f\\,o\\,g$$ is NOT continuous, and suppose d is the number of points in the interval ($$-$$1, 1) at which $$f\\,o\\,g$$ is NOT differentiable. Then the value of c + d is ............",
     "options": [],
     "correctOptionIndex": -1,
@@ -977,7 +1006,7 @@
     "title": "JEE Advanced 2020 Paper 1 Offline",
     "year": 2020,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "NUMERICAL",
     "question": "let e denote the base of the natural logarithm. The value of the real number a for which the right hand limit<br><br>$$\\mathop {\\lim }\\limits_{x \\to {0^ + }} {{{{(1 - x)}^{1/x}} - {e^{ - 1}}} \\over {{x^a}}}$$<br><br>is equal to a non-zero real number, is .............",
     "options": [],
     "correctOptionIndex": -1,
@@ -1038,7 +1067,7 @@
     "title": "JEE Advanced 2022 Paper 2 Online",
     "year": 2022,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "FIB",
     "question": "If\n<br/><br/>$$\n\\beta=\\lim \\limits_{x \\to 0} \\frac{e^{x^{3}}-\\left(1-x^{3}\\right)^{\\frac{1}{3}}+\\left(\\left(1-x^{2}\\right)^{\\frac{1}{2}}-1\\right) \\sin x}{x \\sin ^{2} x},\n$$\n\n<br/><br/>then the value of $6 \\beta$ is ___________.",
     "options": [],
     "correctOptionIndex": -1,
@@ -1055,7 +1084,7 @@
     "title": "JEE Advanced 2022 Paper 1 Online",
     "year": 2022,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "NUMERICAL",
     "question": "Let $$\\alpha$$ be a positive real number. Let $$f: \\mathbb{R} \\rightarrow \\mathbb{R}$$ and $$g:(\\alpha, \\infty) \\rightarrow \\mathbb{R}$$ be the functions defined by\n<br/><br/>\n$$\nf(x)=\\sin \\left(\\frac{\\pi x}{12}\\right) \\quad \\text { and } \\quad g(x)=\\frac{2 \\log _{\\mathrm{e}}(\\sqrt{x}-\\sqrt{\\alpha})}{\\log _{\\mathrm{e}}\\left(e^{\\sqrt{x}}-e^{\\sqrt{\\alpha}}\\right)} .\n$$\n<br/><br/>\nThen the value of $$\\lim \\limits_{x \\rightarrow \\alpha^{+}} f(g(x))$$ is",
     "options": [],
     "correctOptionIndex": -1,
@@ -1248,7 +1277,7 @@
     "title": "JEE Advanced 2025 Paper 1 Online",
     "year": 2025,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "FIB",
     "question": "<p>Let <b>α</b> and <b>β</b> be the real numbers such that</p>\n<p>$ \\lim\\limits_{x \\to 0} \\frac{1}{x^3} \\left( \\frac{\\alpha}{2} \\int\\limits_0^x \\frac{1}{1-t^2} \\, dt + \\beta x \\cos x \\right) = 2. $</p>\n<p>Then the value of <b>α + β</b> is ___________.</p>",
     "options": [],
     "correctOptionIndex": -1,
@@ -1265,7 +1294,7 @@
     "title": "JEE Advanced 2026 Paper 2 Online",
     "year": 2026,
     "difficulty": "hard",
-    "type": "SCQ",
+    "type": "NUMERICAL",
     "question": "<p>For a real number $\\alpha$, let $[\\alpha]$ denote the greatest integer less than or equal to $\\alpha$. For a finite set $S$, let $|S|$ denote the number of elements in the set $S$.</p>\n<p>Consider the functions $f:(-3,3) \\rightarrow(-\\infty, \\infty)$ and $g:(-3,3) \\rightarrow(-\\infty, \\infty)$ defined by</p>\n<p>$$ f(x)=\\left[x^3\\right] \\log _e\\left(1+\\sin ^2(\\pi(x-[x]))\\right) $$</p>\n<p>and</p>\n<p>$$ g(x)=x^3 \\sin ^2\\left(\\pi \\log _e(1+x-[x])\\right) . $$</p>\n<p>Let</p>\n<p>$$ A=\\{x \\in(-3,3): f \\text { is discontinuous at } x\\} $$</p>\n<p>and</p>\n<p>$$ B=\\{x \\in(-3,3): g \\text { is discontinuous at } x\\} . $$</p>\n<p>Then the value of $|A|+2|B|-|A \\cap B|$ is $\\_\\_\\_\\_$ .</p>",
     "options": [],
     "correctOptionIndex": -1,
@@ -1304,7 +1333,7 @@
     "title": "JEE Advanced 2026 Paper 1 Online",
     "year": 2026,
     "difficulty": "medium",
-    "type": "SCQ",
+    "type": "FIB",
     "question": "<p>Consider the function $f:\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right) \\to (-\\infty, \\infty)$ defined by</p><p>$$f(x) = (|x| + |x-1|) \\sin x + \\left[ x \\sin x \\right],$$</p><p>where $\\left[ x \\sin x \\right]$ is the greatest integer less than or equal to $x \\sin x$.</p><p>Let $\\alpha$ be the total number of points in the interval $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ at which $f$ is <b>NOT</b> continuous, and let $\\beta$ be the total number of points in the interval $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ at which $f$ is <b>NOT</b> differentiable.</p><p>Then the value of $\\alpha + \\beta$ is ____________.</p>",
     "options": [],
     "correctOptionIndex": -1,
