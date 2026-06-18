@@ -10421,5 +10421,1536 @@ window.DEFAULT_BLACKBOOK = [
         "chapterId": "black_book_ch4_aod"
       }
     ]
+  },
+  {
+    "id": "indefinite-and-definite-integration",
+    "title": "Indefinite and Definite Integration",
+    "questions": [
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int a^x \\left( \\ln x + \\ln a \\cdot \\ln \\left(\\frac{x}{e}\\right)^x \\right) dx = $$",
+        "options": [
+          "$$ a^x \\ln \\left(\\frac{e}{x}\\right)^{2x} + C $$",
+          "$$ a^x \\ln \\left(\\frac{x}{e}\\right)^x + C $$",
+          "$$ a^x + \\ln \\left(\\frac{x}{e}\\right)^x + C $$",
+          "None of these"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "The value of :\n$$ \\lim_{n \\to \\infty} \\left( \\frac{1}{\\sqrt{n}\\sqrt{n+1}} + \\frac{1}{\\sqrt{n}\\sqrt{n+2}} + \\frac{1}{\\sqrt{n}\\sqrt{n+3}} + \\dots + \\frac{1}{\\sqrt{n}\\sqrt{2n}} \\right) \\text{ is : } $$",
+        "options": [
+          "$$ \\sqrt{2}-1 $$",
+          "$$ 2(\\sqrt{2}-1) $$",
+          "$$ \\sqrt{2}+1 $$",
+          "$$ 2(\\sqrt{2}+1) $$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$ \\int \\frac{\\sin x}{\\sin(x-\\alpha)} dx = Ax + B \\log \\sin(x-\\alpha) + C $$, then value of $$ (A, B) $$ is :",
+        "options": [
+          "$$ (\\sin \\alpha, \\cos \\alpha) $$",
+          "$$ (\\cos \\alpha, \\sin \\alpha) $$",
+          "$$ (-\\sin \\alpha, \\cos \\alpha) $$",
+          "$$ (-\\cos \\alpha, \\sin \\alpha) $$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "The value of the integral $$ \\int_0^2 \\frac{\\log(x^2+2)}{(x+2)^2} dx $$ is :",
+        "options": [
+          "$$ \\frac{\\sqrt{2}}{3} \\tan^{-1}\\sqrt{2} + \\frac{5}{12}\\log 2 - \\frac{1}{4}\\log 3 $$",
+          "$$ \\frac{\\sqrt{2}}{3} \\tan^{-1}\\sqrt{2} - \\frac{5}{12}\\log 2 - \\frac{1}{12}\\log 3 $$",
+          "$$ \\frac{\\sqrt{2}}{3} \\tan^{-1}\\sqrt{2} + \\frac{5}{12}\\log 2 + \\frac{1}{12}\\log 3 $$",
+          "$$ \\frac{\\sqrt{2}}{3} \\tan^{-1}\\sqrt{2} - \\frac{5}{12}\\log 2 + \\frac{1}{12}\\log 3 $$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$ I_1 = \\int_0^1 \\frac{1+x^8}{1+x^4} dx $$ and $$ I_2 = \\int_0^1 \\frac{1+x^9}{1+x^3} dx $$, then :",
+        "options": [
+          "$$ I_1 > 1, I_2 < 1 $$",
+          "$$ I_1 < 1, I_2 > 1 $$",
+          "$$ 1 < I_1 < I_2 $$",
+          "$$ I_2 < I_1 < 1 $$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let $$ f:(0, 1) \\to (0, 1) $$ be a differentiable function such that $$ f'(x) \\ne 0 $$ for all $$ x \\in (0, 1) $$ and $$ f\\left(\\frac{1}{2}\\right) = \\frac{\\sqrt{3}}{2} $$. Suppose for all $$ x $$, $$ \\lim_{t \\to x} \\frac{\\int_0^t \\sqrt{1 - (f(s))^2} ds - \\int_0^x \\sqrt{1 - (f(s))^2} ds}{f(t) - f(x)} = f(x) $$. Then the value of $$ f\\left(\\frac{1}{4}\\right) $$ belongs to :",
+        "options": [
+          "$$ \\left\\{ \\frac{\\sqrt{7}}{4}, \\frac{\\sqrt{15}}{4} \\right\\} $$",
+          "$$ \\left\\{ \\frac{\\sqrt{7}}{3}, \\frac{\\sqrt{15}}{3} \\right\\} $$",
+          "$$ \\left\\{ \\frac{\\sqrt{7}}{2}, \\frac{\\sqrt{15}}{2} \\right\\} $$",
+          "$$ \\{ \\sqrt{7}, \\sqrt{15} \\} $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$ f(\\theta) = \\frac{4}{3} (1 - \\cos^6 \\theta - \\sin^6 \\theta) $$, then\n$$ \\lim_{n \\to \\infty} \\frac{1}{n} \\left[ \\sqrt{f\\left(\\frac{1}{n}\\right)} + \\sqrt{f\\left(\\frac{2}{n}\\right)} + \\sqrt{f\\left(\\frac{3}{n}\\right)} + \\dots + \\sqrt{f\\left(\\frac{n}{n}\\right)} \\right] = $$",
+        "options": [
+          "$$ \\frac{1 - \\cos 1}{2} $$",
+          "$$ 1 - \\cos 2 $$",
+          "$$ \\frac{\\sin 2}{2} $$",
+          "$$ \\frac{1 - \\cos 2}{2} $$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "The value of $$ \\int_0^1 \\frac{(x^6 - x^3)}{(2x^3 + 1)^3} dx $$ is equal to :",
+        "options": [
+          "$$ -\\frac{1}{6} $$",
+          "$$ -\\frac{1}{12} $$",
+          "$$ -\\frac{1}{18} $$",
+          "$$ -\\frac{1}{36} $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ 2 \\int_0^{\\frac{1}{\\sqrt{2}}} \\frac{\\sin^{-1} x}{x} dx - \\int_0^1 \\frac{\\tan^{-1} x}{x} dx = $$",
+        "options": [
+          "$$ \\frac{\\pi}{8} \\ln 2 $$",
+          "$$ \\frac{\\pi}{4} \\ln 2 $$",
+          "$$ \\frac{\\pi}{2\\sqrt{2}} \\ln 2 $$",
+          "$$ \\frac{\\pi}{2} \\ln 2 $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let $$ f(x) $$ be a differentiable function such that $$ f(x) = x^2 + \\int_0^x e^{-t} f(x-t) dt $$, then $$ \\int_0^1 f(x) dx = $$",
+        "options": [
+          "$$ \\frac{1}{3} $$",
+          "$$ \\frac{1}{4} $$",
+          "$$ \\frac{7}{12} $$",
+          "$$ \\frac{5}{12} $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$ f'(x) = f(x) + \\int_0^1 f(x) dx $$ and given $$ f(0) = 1 $$, then $$ \\int f(x) dx $$ is equal to :\n(where C is an arbitrary constant.)",
+        "options": [
+          "$$ \\frac{2}{3-e} e^x + \\left(\\frac{3-e}{1-e}\\right) x + C $$",
+          "$$ \\frac{2}{3-e} e^x + \\left(\\frac{1-e}{3-e}\\right) x + C $$",
+          "$$ \\frac{3}{2-e} e^x + \\left(\\frac{1+e}{3+e}\\right) x + C $$",
+          "$$ \\frac{2}{2-e} e^x + \\left(\\frac{1-e}{3+e}\\right) x + C $$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "For any $$ x \\in R $$, and $$ f $$ be a continuous function. Let $$ I_1 = \\int_{\\sin^2 x}^{1+\\cos^2 x} tf(t(2-t)) dt $$, $$ I_2 = \\int_{\\sin^2 x}^{1+\\cos^2 x} f(t(2-t)) dt $$,\nthen $$ I_1 = $$",
+        "options": [
+          "$$ I_2 $$",
+          "$$ \\frac{1}{2} I_2 $$",
+          "$$ 2 I_2 $$",
+          "$$ 3 I_2 $$"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If the integral $$ \\int \\frac{5 \\tan x}{\\tan x - 2} dx = x + a \\ln|\\sin x - 2 \\cos x| + C $$, then '$a$' is equal to :",
+        "options": [
+          "$$ 1 $$",
+          "$$ 2 $$",
+          "$$ -1 $$",
+          "$$ -2 $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\frac{(2 + \\sqrt{x}) dx}{(x + 1 + \\sqrt{x})^2} $$ is equal to :\n(where C is an arbitrary constant.)",
+        "options": [
+          "$$ \\frac{x}{x + \\sqrt{x} + 1} + C $$",
+          "$$ \\frac{2x}{x + \\sqrt{x} + 1} + C $$",
+          "$$ \\frac{-2x}{x + \\sqrt{x} + 1} + C $$",
+          "$$ \\frac{-x}{x + \\sqrt{x} + 1} + C $$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Evaluate $$ \\int \\frac{\\left( \\sqrt[3]{x + \\sqrt{2-x^2}} \\right) \\left( \\sqrt[6]{1 - x\\sqrt{2-x^2}} \\right) dx}{\\sqrt[3]{1 - x^2}} ; x \\in (0, 1) : $$",
+        "options": [
+          "$$ 2^{1/6} x + C $$",
+          "$$ 2^{1/12} x + C $$",
+          "$$ 2^{1/3} x + C $$",
+          "None of these"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\frac{dx}{\\sqrt{1 - \\tan^2 x}} = \\frac{1}{\\lambda} \\sin^{-1} (\\lambda \\sin x) + C $$, then $$ \\lambda = $$",
+        "options": [
+          "$$ \\sqrt{2} $$",
+          "$$ \\sqrt{3} $$",
+          "$$ 2 $$",
+          "$$ \\sqrt{5} $$"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\frac{dx}{x^{5/6} (x+1)^{7/6}} $$ is equal to :",
+        "options": [
+          "$$ -\\left( \\frac{x+1}{x} \\right)^{1/6} + C $$",
+          "$$ 6 \\left( \\frac{x+1}{x} \\right)^{-1/6} + C $$",
+          "$$ \\left( \\frac{x}{x+1} \\right)^{5/6} + C $$",
+          "$$ -\\left( \\frac{x}{x+1} \\right)^{5/6} + C $$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$ I_n = \\int (\\sin x)^n dx ; n \\in \\mathbb{N} $$, then $$ 5 I_4 - 6 I_6 $$ is equal to :",
+        "options": [
+          "$$ \\sin x \\cdot (\\cos x)^5 + C $$",
+          "$$ \\sin 2x \\cos 2x + C $$",
+          "$$ \\frac{\\sin 2x}{8} [1 + \\cos^2 2x - 2 \\cos 2x] + C $$",
+          "$$ \\frac{\\sin 2x}{8} [1 + \\cos^2 2x + 2 \\cos 2x] + C $$"
+        ],
+        "correctOption": 2,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\frac{x^2}{(a + bx)^2} dx $$ equals to :",
+        "options": [
+          "$$ \\frac{1}{b^3} \\left( a + bx - a \\ln|a + bx| - \\frac{a^2}{a + bx} \\right) + C $$",
+          "$$ \\frac{1}{b^3} \\left( a + bx - 2a \\ln|a + bx| - \\frac{a^2}{a + bx} \\right) + C $$",
+          "$$ \\frac{1}{b^3} \\left( a + bx + 2a \\ln|a + bx| - \\frac{a^2}{a + bx} \\right) + C $$",
+          "$$ \\frac{1}{b^3} \\left( a + bx - 2a \\ln|a + ax| - \\frac{a^2}{a + bx} \\right) + C $$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\frac{8x^{43} + 13x^{38}}{(x^{13} + x^5 + 1)^4} dx = $$",
+        "options": [
+          "$$ \\frac{x^{39}}{3(x^{13} + x^5 + 1)^3} + C $$",
+          "$$ \\frac{x^{39}}{(x^{13} + x^5 + 1)^3} + C $$",
+          "$$ \\frac{x^{39}}{5(x^{13} + x^5 + 1)^5} + C $$",
+          "None of these"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\left( \\frac{\\cos 6x + 6 \\cos 4x + 15 \\cos 2x + 10}{10 \\cos^2 x + 5 \\cos x \\cos 3x + \\cos x \\cos 5x} \\right) dx = f(x) + C $$, then $$ f(10) $$ is equal to :",
+        "options": [
+          "$$ 20 $$",
+          "$$ 10 $$",
+          "$$ 2 \\sin 10 $$",
+          "$$ 2 \\cos 10 $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int (1 + x - x^{-1}) e^{x + x^{-1}} dx = $$",
+        "options": [
+          "$$ (x + 1) e^{x + x^{-1}} + C $$",
+          "$$ (x - 1) e^{x + x^{-1}} + C $$",
+          "$$ -x e^{x + x^{-1}} + C $$",
+          "$$ x e^{x + x^{-1}} + C $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$ \\int e^x \\left( \\frac{2 \\tan x}{1 + \\tan x} + \\text{cosec}^2 \\left( x + \\frac{\\pi}{4} \\right) \\right) dx = e^x \\cdot g(x) + K $$, then $$ g\\left(\\frac{5\\pi}{4}\\right) = $$",
+        "options": [
+          "$$ 0 $$",
+          "$$ 1 $$",
+          "$$ -1 $$",
+          "$$ 2 $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int e^{x \\sin x + \\cos x} \\left( \\frac{x^4 \\cos^3 x - x \\sin x + \\cos x}{x^2 \\cos^2 x} \\right) dx = $$",
+        "options": [
+          "$$ e^{x \\sin x + \\cos x} \\left( x - \\frac{1}{\\cos x} \\right) + C $$",
+          "$$ e^{x \\sin x + \\cos x} \\left( x - \\frac{1}{x \\cos x} \\right) + C $$",
+          "$$ e^{x \\sin x + \\cos x} \\left( 1 - \\frac{1}{x \\cos x} \\right) + C $$",
+          "$$ e^{x \\sin x + \\cos x} \\left( 1 - \\frac{x}{\\cos x} \\right) + C $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "The value of the definite integral $$ \\int_0^1 \\frac{1 + x + \\sqrt{x+x^2}}{\\sqrt{x} + \\sqrt{1+x}} dx $$ is :",
+        "options": [
+          "$$ \\frac{1}{3} (2^{1/2} - 1) $$",
+          "$$ \\frac{2}{3} (2^{1/2} - 1) $$",
+          "$$ \\frac{2}{3} (2^{3/2} - 1) $$",
+          "$$ \\frac{1}{3} (2^{3/2} - 1) $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int x^{x^2 + 1} (2 \\ln x + 1) dx $$",
+        "options": [
+          "$$ x^{2x} + C $$",
+          "$$ x^2 \\ln x + C $$",
+          "$$ x^{(x^x)} + C $$",
+          "$$ (x^x)^x + C $$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$ \\int \\frac{\\text{cosec}^2 x - 2010}{\\cos^{2010} x} dx = - \\frac{f(x)}{(g(x))^{2010}} + C $$; where $$ f\\left(\\frac{\\pi}{4}\\right) = 1 $$; then the number of solutions of the equation $$ \\frac{f(x)}{g(x)} = \\{x\\} $$ in $$ [0, 2\\pi] $$ is/are : (where $$ \\{ \\cdot \\} $$ represents fractional part function)",
+        "options": [
+          "$$ 0 $$",
+          "$$ 1 $$",
+          "$$ 2 $$",
+          "$$ 3 $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int x^x \\left( (\\ln x)^2 + \\ln x + \\frac{1}{x} \\right) dx $$ is equal to :",
+        "options": [
+          "$$ x^x \\left( (\\ln x)^2 - \\frac{1}{x} \\right) + C $$",
+          "$$ x^x (\\ln x - x) + C $$",
+          "$$ x^x \\frac{(\\ln x)^2}{2} + C $$",
+          "$$ x^x \\ln x + C $$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$ I = \\int \\frac{x^2 - 1}{x^3 \\sqrt{2x^4 - 2x^2 + 1}} dx $$ is equal to :",
+        "options": [
+          "$$ \\frac{\\sqrt{2x^4 - 2x^2 + 1}}{x^2} + C $$",
+          "$$ \\frac{\\sqrt{2x^4 - 2x^2 + 1}}{x} + C $$",
+          "$$ \\frac{\\sqrt{2x^4 - 2x^2 + 1}}{x^3} + C $$",
+          "$$ \\frac{\\sqrt{2x^4 - 2x^2 + 1}}{2x^2} + C $$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ I = \\int \\left( \\frac{\\ln x - 1}{(\\ln x)^2 + 1} \\right)^2 dx $$ is equal to :",
+        "options": [
+          "$$ \\frac{x}{x^2 + 1} + C $$",
+          "$$ \\frac{\\ln x}{(\\ln x)^2 + 1} + C $$",
+          "$$ \\frac{x}{1 + (\\ln x)^2} + C $$",
+          "$$ e^x \\left( \\frac{x}{x^2 + 1} \\right) + C $$"
+        ],
+        "correctOption": 2,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ I = \\int \\frac{dx}{\\sqrt[4]{(x-1)^3 (x+2)^5}} = k \\sqrt[4]{\\frac{x-1}{x+2}} + C $$, then '$k$' is equal to :",
+        "options": [
+          "$$ \\frac{1}{3} $$",
+          "$$ \\frac{2}{3} $$",
+          "$$ \\frac{3}{4} $$",
+          "$$ \\frac{4}{3} $$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\frac{1 - x^7}{x(1 + x^7)} dx = P \\log|x| + Q \\log|x^7 + 1| + C $$, then :",
+        "options": [
+          "$$ 2P - 7Q = 0 $$",
+          "$$ 2P + 7Q = 0 $$",
+          "$$ 7P + 2Q = 0 $$",
+          "$$ 7P - 2Q = 1 $$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ I = \\int \\frac{\\sin^8 x - \\cos^8 x}{1 - 2 \\sin^2 x \\cos^2 x} dx $$ is equal to :",
+        "options": [
+          "$$ \\sin 2x + C $$",
+          "$$ \\frac{\\sin 2x}{2} + C $$",
+          "$$ \\frac{-\\sin 2x}{2} + C $$",
+          "$$ -2 \\sin 2x + C $$"
+        ],
+        "correctOption": 2,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ I = \\int \\frac{(\\sin 2x)^{1/3} d(\\tan^{1/3} x)}{\\sin^{2/3} x + \\cos^{2/3} x} = $$",
+        "options": [
+          "$$ \\frac{1}{2^{2/3}} \\ln(1 + \\tan^{1/3} x) + C $$",
+          "$$ \\ln(1 + \\tan^{2/3} x) + C $$",
+          "$$ 2^{1/3} \\ln(1 + \\tan^{2/3} x) + C $$",
+          "$$ \\frac{1}{2^{2/3}} \\ln(1 + \\tan^{2/3} x) + C $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\sqrt{\\frac{(2012)^{2x}}{1 - (2012)^{2x}}} (2012)^{\\sin^{-1}(2012)^x} dx = $$",
+        "options": [
+          "$$ (\\log_{2012} e)^2 (2012)^{\\sin^{-1}(2012)^x} + C $$",
+          "$$ (\\log_{2012} e)^2 (2012)^{x + \\sin^{-1}(2012)^x} + C $$",
+          "$$ (\\log_{2012} e)^2 (2012)^{\\sin^{-1}(2012)^x} + C $$",
+          "$$ \\frac{(2012)^{\\sin^{-1}(2012)^x}}{(\\log_{2012} e)^2} + C $$"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\frac{(x+2) dx}{(x^2 + 3x + 3)\\sqrt{x+1}} $$ is equal to :\n(where C is arbitrary constant.)",
+        "options": [
+          "$$ \\frac{2}{\\sqrt{3}} \\tan^{-1}\\left( \\frac{x}{\\sqrt{3(x+1)}} \\right) + C $$",
+          "$$ \\frac{2}{\\sqrt{3}} \\tan^{-1}\\left( \\sqrt{\\frac{x}{3(x+1)}} \\right) + C $$",
+          "$$ \\frac{1}{\\sqrt{3}} \\tan^{-1}\\left( \\frac{\\sqrt{x}}{3(x+1)} \\right) + C $$",
+          "$$ \\frac{2}{\\sqrt{3}} \\tan^{-1}\\left( \\frac{x}{\\sqrt{3}(x+1)} \\right) + C $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\left( \\frac{f(x)g'(x) - f'(x)g(x)}{f(x)g(x)} \\right) (\\log(g(x)) - \\log(f(x))) dx $$ is equal to :",
+        "options": [
+          "$$ \\log\\left( \\frac{g(x)}{f(x)} \\right) + C $$",
+          "$$ \\frac{1}{2} \\left( \\frac{g(x)}{f(x)} \\right)^2 + C $$",
+          "$$ \\frac{1}{2} \\left( \\log\\left( \\frac{g(x)}{f(x)} \\right) \\right)^2 + C $$",
+          "$$ \\log\\left( \\left( \\frac{g(x)}{f(x)} \\right)^2 \\right) + C $$"
+        ],
+        "correctOption": 2,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int \\left( \\int e^x \\left( \\ln x + \\frac{2}{x} - \\frac{1}{x^2} \\right) dx \\right) dx = $$",
+        "options": [
+          "$$ e^x \\ln x + C_1 x + C_2 $$",
+          "$$ e^x \\ln x + \\frac{1}{x} + C_1 x + C_2 $$",
+          "$$ \\frac{\\ln x}{x} + C_1 x + C_2 $$",
+          "None of these"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Maximum value of the function $$ f(x) = \\pi^2 \\int_0^1 t \\sin(x + \\pi t) dt $$ over all real number $$ x $$ :",
+        "options": [
+          "$$ \\sqrt{\\pi^2 + 1} $$",
+          "$$ \\sqrt{\\pi^2 + 2} $$",
+          "$$ \\sqrt{\\pi^2 + 3} $$",
+          "$$ \\sqrt{\\pi^2 + 4} $$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let '$f$' is a function, continuous on $$ [0, 1] $$ such that $$ f(x) \\le \\sqrt{5} \\; \\forall x \\in [0, 1] $$ and $$ f(x) \\le \\frac{2}{x} \\; \\forall x \\in \\left[ \\frac{1}{2}, 1 \\right] $$ then the smallest '$a$' for which $$ \\int_0^1 f(x) dx \\le a $$ holds for all '$f$' is :",
+        "options": [
+          "$$ \\sqrt{5} $$",
+          "$$ \\frac{\\sqrt{5}}{2} + 2 \\ln 2 $$",
+          "$$ 2 + \\ln\\left(\\frac{\\sqrt{5}}{2}\\right) $$",
+          "$$ 2 + 2 \\ln\\left(\\frac{\\sqrt{5}}{2}\\right) $$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let $$ I_n = \\int_1^e (\\ln x)^n d(x^2) $$, then the value of $$ 2 I_n + n I_{n-1} $$ equals to :",
+        "options": [
+          "$$ 0 $$",
+          "$$ 2e^2 $$",
+          "$$ e^2 $$",
+          "$$ 1 $$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let a function $$ f : R \\to R $$ be defined as $$ f(x) = x + \\sin x $$. The value of $$ \\int_0^{2\\pi} f^{-1}(x) dx $$ will be :",
+        "options": [
+          "$$ 2\\pi^2 $$",
+          "$$ 2\\pi^2 - 2 $$",
+          "$$ 2\\pi^2 + 2 $$",
+          "$$ \\pi^2 $$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "The value of the definite integral $$ \\int_{-1}^1 e^{-x^4} \\left( 2 + \\ln\\left(x + \\sqrt{x^2 + 1}\\right) + 5x^3 - 8x^4 \\right) dx $$ is equal to :",
+        "options": [
+          "$$ 4e $$",
+          "$$ \\frac{4}{e} $$",
+          "$$ 2e $$",
+          "$$ \\frac{2}{e} $$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int_{-10}^0 \\frac{2[x]}{3x - [x]} dx $$ is equal to (where [*] denotes greatest integer function.)",
+        "options": [
+          "$$ \\frac{28}{3} $$",
+          "$$ \\frac{1}{3} $$",
+          "$$ 0 $$",
+          "None of these"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$ f(x) = \\frac{x}{1 + (\\ln x)^{(\\ln x)^{\\dots \\infty}}} \\forall x \\in [1, \\infty) $$ then $$ \\int_1^{2e} f(x) dx $$ equals is :",
+        "options": [
+          "$$ \\frac{e^2 - 1}{2} $$",
+          "$$ \\frac{e^2 + 1}{2} $$",
+          "$$ \\frac{e^2 - 2e}{2} $$",
+          "None of these"
+        ],
+        "correctOption": -1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$ \\int_0^4 \\frac{(y^2 - 4y + 5) \\sin(y - 2)}{(2y^2 - 8y + 11)} dy $$ is equal to :",
+        "options": [
+          "$$ 0 $$",
+          "$$ 2 $$",
+          "$$ -2 $$",
+          "None of these"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$\\int \\frac{dx}{x^4 (1+x^3)^2} = a \\ln \\left| \\frac{1+x^3}{x^3} \\right| + \\frac{b}{x^3} + \\frac{c}{1+x^3} + d$$, then<br>(where $d$ is arbitrary constant)",
+        "options": [
+          "$a = \\frac{1}{3}, b = \\frac{1}{3}, c = \\frac{1}{3}$",
+          "$a = \\frac{2}{3}, b = -\\frac{1}{3}, c = \\frac{1}{3}$",
+          "$a = \\frac{2}{3}, b = -\\frac{1}{3}, c = -\\frac{1}{3}$",
+          "$a = \\frac{2}{3}, b = \\frac{1}{3}, c = -\\frac{1}{3}$"
+        ],
+        "correctOption": 2,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$\\lim_{n \\to \\infty} \\frac{1}{\\sqrt{n}\\sqrt{n+1}} + \\frac{1}{\\sqrt{n}\\sqrt{n+2}} + \\dots + \\frac{1}{\\sqrt{n}\\sqrt{4n}}$$ is equal to :",
+        "options": [
+          "$2$",
+          "$4$",
+          "$2(\\sqrt{2} - 1)$",
+          "$2\\sqrt{2} - 1$"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let $$f(x) = \\int_{x}^{2} \\frac{dy}{\\sqrt{1+y^3}}$$. The value of the integral $$\\int_{0}^{2} x f(x) dx$$ is equal to :",
+        "options": [
+          "$1$",
+          "$1/3$",
+          "$4/3$",
+          "$2/3$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "The value of the definite integral $$\\int_{0}^{\\pi/3} \\ln(1 + \\sqrt{3} \\tan x) dx$$ equals",
+        "options": [
+          "$\\frac{\\pi}{3} \\ln 2$",
+          "$\\frac{\\pi}{3}$",
+          "$\\frac{\\pi^2}{6} \\ln 2$",
+          "$\\frac{\\pi}{2} \\ln 2$"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$\\int_{0}^{100} f(x) dx = a$$, then $$\\sum_{r=1}^{100} \\int_{0}^{1} f(r - 1 + x) dx =$$",
+        "options": [
+          "$100a$",
+          "$a$",
+          "$0$",
+          "$10a$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "The value of $$\\int_{0}^{1} \\lim_{n \\to \\infty} \\sum_{k=0}^{n} \\frac{x^{k+2} 2^k}{k!} dx$$ is :",
+        "options": [
+          "$e^2 - 1$",
+          "$2$",
+          "$\\frac{e^2 - 1}{2}$",
+          "$\\frac{e^2 - 1}{4}$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Evaluate : $$\\int x^5 \\sqrt{1 + x^3} dx$$.",
+        "options": [
+          "$\\frac{1}{15}(1+x^3)^{5/2} - \\frac{1}{9}(1+x^3)^{3/2} + c$",
+          "$\\frac{2}{15}(1+x^3)^{5/2} - \\frac{1}{9}(1+x^3)^{3/2} + c$",
+          "$\\frac{2}{15}(1+x^3)^{5/2} - \\frac{2}{9}(1+x^3)^{3/2} + c$",
+          "$\\frac{1}{15}(1+x^3)^{5/2} - \\frac{2}{9}(1+x^3)^{3/2} + c$"
+        ],
+        "correctOption": 2,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$f(x) = \\int_{0}^{x} \\frac{\\sin t}{t} dt$$, which of the following is true ?",
+        "options": [
+          "$f(0) > f(1 \\cdot 1)$",
+          "$f(0) < f(1 \\cdot 1) > f(2 \\cdot 1)$",
+          "$f(0) < f(1 \\cdot 1) < f(2 \\cdot 1) > f(3 \\cdot 1)$",
+          "$f(0) < f(1 \\cdot 1) < f(2 \\cdot 1) < f(3 \\cdot 1) > f(4 \\cdot 1)$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Evaluate : $$\\int \\frac{x^3 + 3x^2 + x + 9}{(x^2 + 1)(x^2 + 3)} dx$$.",
+        "options": [
+          "$\\ln |x^2 + 3| + 3 \\tan^{-1} x + c$",
+          "$\\frac{1}{2} \\ln |x^2 + 3| + \\tan^{-1} x + c$",
+          "$\\frac{1}{2} \\ln |x^2 + 3| + 3 \\tan^{-1} x + c$",
+          "$\\ln |x^2 + 3| - \\tan^{-1} x + c$"
+        ],
+        "correctOption": 2,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$\\int \\frac{\\sqrt{\\sec^5 x}}{\\sqrt{\\sin^3 x}} dx$$ equals to :",
+        "options": [
+          "$(\\tan x)^{3/2} - \\sqrt{\\tan x} + C$",
+          "$2 \\left( \\frac{1}{3} (\\tan x)^{3/2} - \\frac{1}{\\sqrt{\\tan x}} \\right) + C$",
+          "$\\frac{1}{3} (\\tan x)^{3/2} - \\sqrt{\\tan x} + C$",
+          "$\\sqrt{\\sin x} + \\sqrt{\\cos x} + C$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$\\lim_{x \\to 0} \\int_{0}^{x} \\frac{e^{\\sin(tx)}}{x} dt$$ equals to :",
+        "options": [
+          "1",
+          "2",
+          "e",
+          "Does not exist"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$A = \\int_{0}^{\\pi} \\frac{\\sin x}{x^2} dx$$, then $$\\int_{0}^{\\pi/2} \\frac{\\cos 2x}{x} dx$$ is equal to :",
+        "options": [
+          "$1 - A$",
+          "$\\frac{3}{2} - A$",
+          "$A - 1$",
+          "$1 + A$"
+        ],
+        "correctOption": 2,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$\\int \\frac{dx}{(1+\\sqrt{x})^8} = -\\frac{1}{3(1+\\sqrt{x})^{k_1}} + \\frac{2}{7(1+\\sqrt{x})^{k_2}} + C$$, then :",
+        "options": [
+          "$k_1 = 5$",
+          "$k_1 = 6$",
+          "$k_2 = 7$",
+          "$k_2 = 8$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          1,
+          2
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$\\int_{-\\alpha}^{\\alpha} \\left( e^x + \\cos x \\ln(x + \\sqrt{1+x^2}) \\right) dx > \\frac{3}{2}$$, then possible value of $$\\alpha$$ can be :",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "For $$a > 0$$, if $$I = \\int \\sqrt{\\frac{x}{a^3 - x^3}} dx = A \\sin^{-1} \\left( \\frac{x^{3/2}}{B} \\right) + C$$, where $$C$$ is any arbitrary constant, then :",
+        "options": [
+          "$A = \\frac{2}{3}$",
+          "$B = a^{3/2}$",
+          "$A = \\frac{1}{3}$",
+          "$B = a^{1/2}$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let $$\\int x \\sin x \\cdot \\sec^3 x dx = \\frac{1}{2}(x \\cdot f(x) - g(x)) + k$$, then :",
+        "options": [
+          "$f(x) \\notin (-1, 1)$",
+          "$g(x) = \\sin x$ has 6 solution for $x \\in [-\\pi, 2\\pi]$",
+          "$g'(x) = f(x)$, $\\forall x \\in R$",
+          "$f(x) = g(x)$ has no solution"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$\\int (\\sin 3\\theta + \\sin \\theta) \\cos \\theta e^{\\sin \\theta} d\\theta = (A \\sin^3 \\theta + B \\cos^2 \\theta + C \\sin \\theta + D \\cos \\theta + E) e^{\\sin \\theta} + F$$, then :",
+        "options": [
+          "A = -4",
+          "B = -12",
+          "C = -20",
+          "None of these"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "For $$a > 0$$, if $$I = \\int \\sqrt{\\frac{x}{a^3 - x^3}} dx = A \\sin^{-1} \\left( \\frac{x^{3/2}}{B} \\right) + C$$, where $$C$$ is any arbitrary constant, then :",
+        "options": [
+          "$A = \\frac{2}{3}$",
+          "$B = a^{3/2}$",
+          "$A = \\frac{1}{3}$",
+          "$B = a^{1/2}$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$f(\\theta) = \\lim_{n \\to \\infty} \\sum_{r=0}^{n\\theta} \\frac{2r}{n \\sqrt{(3\\theta n - 2r)(n\\theta + 2r)}}$$ then :",
+        "options": [
+          "$f(1) = \\frac{\\pi}{6}$",
+          "$f(\\theta) = \\int_{0}^{\\theta} \\frac{dx}{\\sqrt{\\theta^2 - \\left( x - \\frac{\\theta}{2} \\right)^2}}$",
+          "$f(\\theta)$ is a constant function",
+          "$y = f(\\theta)$ is invertible"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$f(x+y) = f(x)f(y)$$ for all $$x, y$$ and $$f(0) \\neq 0$$, and $$F(x) = \\frac{f(x)}{1 + (f(x))^2}$$ then :",
+        "options": [
+          "$\\int_{-2010}^{2011} F(x) dx = \\int_{0}^{2011} F(x) dx$",
+          "$\\int_{-2010}^{2011} F(x) dx - \\int_{0}^{2010} F(x) dx = \\int_{0}^{2011} F(x) dx$",
+          "$\\int_{-2010}^{2011} F(x) dx = 0$",
+          "$\\int_{-2010}^{2010} (2F(-x) - F(x)) dx = 2 \\int_{0}^{2010} F(x) dx$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          1,
+          3
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let $$J = \\int_{-1}^{2} \\left( \\cot^{-1} \\frac{1}{x} + \\cot^{-1} x \\right) dx, K = \\int_{-2\\pi}^{7\\pi} \\frac{\\sin x}{|\\sin x|} dx$$. Then which of the following alternative(s) is/are correct ?",
+        "options": [
+          "$2J + 3K = 8\\pi$",
+          "$4J^2 + K^2 = 26\\pi^2$",
+          "$2J - K = 3\\pi$",
+          "$\\frac{J}{K} = \\frac{2}{5}$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Which of the following function(s) is/are even ?",
+        "options": [
+          "$f(x) = \\int_{0}^{x} \\ln(t + \\sqrt{1 + t^2}) dt$",
+          "$g(x) = \\int_{0}^{x} \\frac{(2^t + 1)t}{2^t - 1} dt$",
+          "$h(x) = \\int_{0}^{x} (\\sqrt{1 + t + t^2} - \\sqrt{1 - t + t^2}) dt$",
+          "$l(x) = \\int_{0}^{x} \\ln \\left( \\frac{1 - t}{1 + t} \\right) dt$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let $$l_1 = \\lim_{x \\to \\infty} \\sqrt{\\frac{x - \\cos^2 x}{x + \\sin x}}$$ and $$l_2 = \\lim_{h \\to 0^+} \\int_{-1}^{1} \\frac{h dx}{h^2 + x^2}$$. Then :",
+        "options": [
+          "Both $l_1$ and $l_2$ are less than 22/7",
+          "One of the two limits is rational and other irrational",
+          "$l_2 > l_1$",
+          "$l_2$ is greater than 3 times of $l_1$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "For $$a > 0$$, if $$I = \\int \\sqrt{\\frac{x}{a^3 - x^3}} dx = A \\sin^{-1} \\left( \\frac{x^{3/2}}{B} \\right) + C$$, where $$C$$ is any arbitrary constant, then :",
+        "options": [
+          "$A = \\frac{2}{3}$",
+          "$B = a^{3/2}$",
+          "$A = \\frac{1}{3}$",
+          "$B = a^{1/2}$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "If $$\\int \\frac{dx}{1 - \\sin^4 x} = a \\tan x + b \\tan^{-1}(c \\tan x) + D$$, then :",
+        "options": [
+          "$a = \\frac{1}{2}$",
+          "$b = \\sqrt{2}$",
+          "$c = \\sqrt{2}$",
+          "$b = \\frac{1}{2\\sqrt{2}}$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          2
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "The value of definite integral : $$\\int_{-2014}^{2014} \\frac{dx}{1 + \\sin^{2015}(x) + \\sqrt{1 + \\sin^{4030}(x)}}$$ equals :",
+        "options": [
+          "0",
+          "2014",
+          "$(2014)^2$",
+          "4028"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let $$L = \\lim_{n \\to \\infty} \\int_{a}^{\\infty} \\frac{n dx}{1 + n^2 x^2}$$ where $$a \\in R$$ then $$L$$ can be :",
+        "options": [
+          "$\\pi$",
+          "$\\frac{\\pi}{2}$",
+          "0",
+          "$\\frac{\\pi}{3}$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "Let $$I = \\int_{0}^{1} \\sqrt{\\frac{1 + \\sqrt{x}}{1 - \\sqrt{x}}} dx$$ and $$J = \\int_{0}^{1} \\sqrt{\\frac{1 - \\sqrt{x}}{1 + \\sqrt{x}}} dx$$ then correct statement(s) is/are :",
+        "options": [
+          "$I + J = 2$",
+          "$I - J = \\pi$",
+          "$I = \\frac{2 + \\pi}{2}$",
+          "$J = \\frac{4 - \\pi}{2}$"
+        ],
+        "correctOption": -1,
+        "typeLabel": "MCQ",
+        "difficulty": "medium",
+        "correctOptionsArray": [
+          1,
+          2
+        ]
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 1 to 2</strong><br>Let $$f(x) = \\int x^2 \\cos^2 x (2x + 6 \\tan x - 2x \\tan^2 x) dx$$ and $$f(x)$$ passes through the point $$(\\pi, 0)$$<br><br>If $$f : R - (2n + 1)\\frac{\\pi}{2} \\to R$$ then $$f(x)$$ be a :",
+        "options": [
+          "even function",
+          "odd function",
+          "neither even nor odd",
+          "even as well as odd both"
+        ],
+        "correctOption": 0,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 1 to 2</strong><br>Let $$f(x) = \\int x^2 \\cos^2 x (2x + 6 \\tan x - 2x \\tan^2 x) dx$$ and $$f(x)$$ passes through the point $$(\\pi, 0)$$<br><br>The number of solution(s) of the equation $$f(x) = x^3$$ in $$[0, 2\\pi]$$ be :",
+        "options": [
+          "0",
+          "3",
+          "2",
+          "None of these"
+        ],
+        "correctOption": 1,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 3 to 4</strong><br>Let $$f(x)$$ be a twice differentiable function defined on $$(-\\infty, \\infty)$$ such that $$f(x) = f(2 - x)$$ and $$f'\\left(\\frac{1}{2}\\right) = f'\\left(\\frac{1}{4}\\right) = 0$$. Then<br><br>The minimum number of values where $$f''(x)$$ vanishes on $$[0, 2]$$ is :",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctOption": 2,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 3 to 4</strong><br>Let $$f(x)$$ be a twice differentiable function defined on $$(-\\infty, \\infty)$$ such that $$f(x) = f(2 - x)$$ and $$f'\\left(\\frac{1}{2}\\right) = f'\\left(\\frac{1}{4}\\right) = 0$$. Then<br><br>$$\\int_{-1}^{1} f'(1 + x) x^2 e^{x^2} dx$$ is equal to :",
+        "options": [
+          "1",
+          "$\\pi$",
+          "2",
+          "0"
+        ],
+        "correctOption": 3,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 1",
+        "text": "$$\\int_{0}^{1} f(1-t) e^{-\\cos \\pi t} dt - \\int_{1}^{2} f(2-t) e^{\\cos \\pi t} dt$$ is equal to :",
+        "options": [
+          "$\\int_{0}^{2} f'(t) e^{\\cos \\pi t} dt$",
+          "1",
+          "2",
+          "$\\pi$"
+        ],
+        "correctOption": 0,
+        "typeLabel": "SCQ",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 6 to 8</strong><br>Consider the function $$f(x)$$ and $$g(x)$$, both defined from $$R \\to R$$<br>$$f(x) = \\frac{x^3}{2} + 1 - x \\int_{0}^{x} g(t) dt$$ and $$g(x) = x - \\int_{0}^{1} f(t) dt$$, then<br><br>Minimum value of $$f(x)$$ is :",
+        "options": [
+          "0",
+          "1",
+          "$\\frac{3}{2}$",
+          "Does not exist"
+        ],
+        "correctOption": 1,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 6 to 8</strong><br>Consider the function $$f(x)$$ and $$g(x)$$, both defined from $$R \\to R$$<br>$$f(x) = \\frac{x^3}{2} + 1 - x \\int_{0}^{x} g(t) dt$$ and $$g(x) = x - \\int_{0}^{1} f(t) dt$$, then<br><br>The number of points of intersection of $$f(x)$$ and $$g(x)$$ is/are :",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correctOption": 0,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 6 to 8</strong><br>Consider the function $$f(x)$$ and $$g(x)$$, both defined from $$R \\to R$$<br>$$f(x) = \\frac{x^3}{2} + 1 - x \\int_{0}^{x} g(t) dt$$ and $$g(x) = x - \\int_{0}^{1} f(t) dt$$, then<br><br>The area bounded by $$g(x)$$ with co-ordinate axes is (in square units) :",
+        "options": [
+          "9/4",
+          "9/2",
+          "9/8",
+          "None of these"
+        ],
+        "correctOption": 2,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 9 to 11</strong><br>Let $$f(x)$$ be function defined on $$[0, 1]$$ such that $$f(1) = 0$$ and for any $$a \\in (0, 1]$$,<br>$$\\int_{0}^{a} f(x) dx - \\int_{a}^{1} f(x) dx = 2f(a) + 3a + b$$ where $$b$$ is constant.<br><br>$$b =$$",
+        "options": [
+          "$\\frac{3}{2e} - 3$",
+          "$\\frac{3}{2e} - \\frac{3}{2}$",
+          "$\\frac{3}{2e} + 3$",
+          "$\\frac{3}{2e} + \\frac{3}{2}$"
+        ],
+        "correctOption": 0,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 9 to 11</strong><br>Let $$f(x)$$ be function defined on $$[0, 1]$$ such that $$f(1) = 0$$ and for any $$a \\in (0, 1]$$,<br>$$\\int_{0}^{a} f(x) dx - \\int_{a}^{1} f(x) dx = 2f(a) + 3a + b$$ where $$b$$ is constant.<br><br>The length of the subtangent of the curve $$y = f(x)$$ at $$x = 1/2$$ is :",
+        "options": [
+          "$\\sqrt{e} - 1$",
+          "$\\frac{\\sqrt{e} - 1}{2}$",
+          "$\\sqrt{e} + 1$",
+          "$\\frac{\\sqrt{e} + 1}{2}$"
+        ],
+        "correctOption": 0,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 9 to 11</strong><br>Let $$f(x)$$ be function defined on $$[0, 1]$$ such that $$f(1) = 0$$ and for any $$a \\in (0, 1]$$,<br>$$\\int_{0}^{a} f(x) dx - \\int_{a}^{1} f(x) dx = 2f(a) + 3a + b$$ where $$b$$ is constant.<br><br>$$\\int_{0}^{1} f(x) dx =$$",
+        "options": [
+          "1/e",
+          "1/(2e)",
+          "3/(2e)",
+          "2/e"
+        ],
+        "correctOption": 2,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 12 to 13</strong><br>Let $$f_0(x) = \\ln x$$ and for $$n \\geq 0$$ and $$x > 0$$<br>Let $$f_{n+1}(x) = \\int_{0}^{x} f_n(t) dt$$ then :<br><br>$$f_3(x)$$ equals :",
+        "options": [
+          "$\\frac{x^3}{3} \\left( \\ln x - \\frac{5}{6} \\right)$",
+          "$\\frac{x^3}{3} \\left( \\ln x - \\frac{11}{6} \\right)$",
+          "$\\frac{x^3}{3!} \\left( \\ln x - \\frac{11}{6} \\right)$",
+          "$\\frac{x^3}{3!} \\left( \\ln x - \\frac{5}{6} \\right)$"
+        ],
+        "correctOption": 2,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 12 to 13</strong><br>Let $$f_0(x) = \\ln x$$ and for $$n \\geq 0$$ and $$x > 0$$<br>Let $$f_{n+1}(x) = \\int_{0}^{x} f_n(t) dt$$ then :<br><br>Value of $$\\lim_{n \\to \\infty} \\frac{(n!) f_n(1)}{\\ln(n)} :$$",
+        "options": [
+          "0",
+          "1",
+          "-1",
+          "-e"
+        ],
+        "correctOption": 2,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 14 to 15</strong><br>Let $$f : R \\to \\left[ \\frac{3}{4}, \\infty \\right)$$ be a surjective quadratic function with line of symmetry $$2x - 1 = 0$$ and $$f(1) = 1$$<br><br>If $$g(x) = \\frac{f(x) + f(-x)}{2}$$ then $$\\int \\frac{dx}{\\sqrt{g(e^x) - 2}}$$ is equal to :",
+        "options": [
+          "$\\sec^{-1}(e^{-x}) + C$",
+          "$\\sec^{-1}(e^x) + C$",
+          "$\\sin^{-1}(e^{-x}) + C$",
+          "$\\sin^{-1}(e^x) + C$"
+        ],
+        "correctOption": 1,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 14 to 15</strong><br>Let $$f : R \\to \\left[ \\frac{3}{4}, \\infty \\right)$$ be a surjective quadratic function with line of symmetry $$2x - 1 = 0$$ and $$f(1) = 1$$<br><br>$$\\int \\frac{e^x}{f(e^x)} dx$$",
+        "options": [
+          "$\\cot^{-1}\\left(\\frac{2e^x - 1}{\\sqrt{3}}\\right) + C$",
+          "$\\frac{2}{\\sqrt{3}} \\cot^{-1}\\left(\\frac{2e^x + 1}{\\sqrt{3}}\\right) + C$",
+          "$\\tan^{-1}\\left(\\frac{2e^x + 1}{\\sqrt{3}}\\right) + C$",
+          "$\\frac{2}{\\sqrt{3}} \\tan^{-1}\\left(\\frac{2e^x - 1}{\\sqrt{3}}\\right) + C$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 16 to 17</strong><br>Let $$g(x) = x^c e^{cx}$$ and $$f(x) = \\int_{0}^{x} t e^{2t} (1 + 3t^2)^{1/2} dt$$. If $$L = \\lim_{x \\to \\infty} \\frac{f'(x)}{g'(x)}$$ is non-zero finite number then :<br><br>The value of $$C$$ is :",
+        "options": [
+          "7",
+          "3/2",
+          "2",
+          "3"
+        ],
+        "correctOption": 2,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 3",
+        "text": "<strong>Paragraph for Question Nos. 16 to 17</strong><br>Let $$g(x) = x^c e^{cx}$$ and $$f(x) = \\int_{0}^{x} t e^{2t} (1 + 3t^2)^{1/2} dt$$. If $$L = \\lim_{x \\to \\infty} \\frac{f'(x)}{g'(x)}$$ is non-zero finite number then :<br><br>The value of $$L$$ is :",
+        "options": [
+          "2/7",
+          "1/2",
+          "$\\frac{\\sqrt{3}}{4}$",
+          "$\\frac{\\sqrt{3}}{2}$"
+        ],
+        "correctOption": 3,
+        "typeLabel": "Comprehension",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 4",
+        "text": "Match the following.\n<table border=\"1\">\n<tr><th>Column-I</th><th>Column-II</th></tr>\n<tr><td>(A) $$\\lim_{n \\to \\infty} 4 \\left[ \\frac{1}{n^2} e^{1/n} + \\frac{2}{n^2} e^{2/n} + \\frac{3}{n^2} e^{3/n} + \\dots \\frac{1}{n} e \\right] =$$</td><td>(P) 0</td></tr>\n<tr><td>(B) $$\\int_{0}^{1} \\ln\\left(\\frac{1}{x} - 1\\right) dx =$$</td><td>(Q) 1</td></tr>\n<tr><td>(C) $$\\int_{0}^{10\\pi} \\left( \\lim_{x \\to y} \\left( \\frac{\\sin x - \\sin y}{x - y} \\right) \\right) dy =$$</td><td>(R) 2</td></tr>\n<tr><td>(D) $$\\int_{0}^{\\infty} \\frac{\\ln\\left(x + \\frac{1}{x}\\right)}{(1 + x^2)} dx = \\frac{\\pi}{2} \\ln a$$, then $$a =$$</td><td>(S) 4</td></tr>\n<tr><td></td><td>(T) 5</td></tr>\n</table>",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Matching",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 4",
+        "text": "Match the following $$\\int f(x) dx$$ is equal to, if\n<table border=\"1\">\n<tr><th>Column-I</th><th>Column-II</th></tr>\n<tr><td>(A) $$f(x) = \\frac{1}{(x^2 + 1)\\sqrt{x^2 + 2}}$$</td><td>(P) $$\\frac{x^5}{5(1 - x^4)^{5/2}} + C$$</td></tr>\n<tr><td>(B) $$f(x) = \\frac{1}{(x+2)\\sqrt{x^2 + 6x + 7}}$$</td><td>(Q) $$\\sin^{-1}\\left( \\frac{x+1}{(x+2)\\sqrt{2}} \\right) + C$$</td></tr>\n<tr><td>(C) $$f(x) = \\frac{x^4 + x^8}{(1 - x^4)^{7/2}}$$</td><td>(R) $$(\\sqrt{x} - 2)\\sqrt{1-x} + \\cos^{-1}\\sqrt{x} + C$$</td></tr>\n<tr><td>(D) $$f(x) = \\sqrt{\\frac{1 - \\sqrt{x}}{1 + \\sqrt{x}}}$$</td><td>(S) $$-\\tan^{-1}\\sqrt{1 + \\frac{2}{x^2}} + C$$</td></tr>\n<tr><td></td><td>(T) $$\\frac{x^6}{6(1-x^4)^{5/2}} + C$$</td></tr>\n</table>",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Matching",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 4",
+        "text": "Match the following.\n<table border=\"1\">\n<tr><th>Column-I</th><th>Column-II</th></tr>\n<tr><td>(A) $$\\int_{0}^{\\pi/2} \\frac{\\cos x}{(1 + \\sin x)(2 + \\sin x)} dx =$$</td><td>(P) $$\\pi/6$$</td></tr>\n<tr><td>(B) $$\\int_{0}^{41\\pi/4} |\\cos x| dx =$$</td><td>(Q) $$20 + \\frac{1}{\\sqrt{2}}$$</td></tr>\n<tr><td>(C) $$\\int_{-1/2}^{1/2} \\left( [x] + \\ln\\left(\\frac{1+x}{1-x}\\right) \\right) dx =$$<br>where $$[\\cdot]$$ greatest integer function</td><td>(R) $$\\ln 4 - \\ln 3$$</td></tr>\n<tr><td>(D) $$\\int_{0}^{\\pi/2} \\frac{2\\sqrt{\\cos \\theta}}{3(\\sqrt{\\sin \\theta} + \\sqrt{\\cos \\theta})} d\\theta =$$</td><td>(S) $$-1/2$$</td></tr>\n</table>",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Matching",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 4",
+        "text": "Match the following.\n<table border=\"1\">\n<tr><th>Column-I</th><th>Column-II</th></tr>\n<tr><td>(A) If quadratic equation $$3x^2 + ax + 1 = 0$$ and $$2x^2 + bx + 1 = 0$$ have a common root then value of $$5ab - 2a^2 - 3b^2 =$$</td><td>(P) 6</td></tr>\n<tr><td>(B) Number of solution of $$x^4 - 2x^2 \\sin^2 \\frac{\\pi x}{2} + 1 = 0$$ is/are</td><td>(Q) 1</td></tr>\n<tr><td>(C) Number of points of discontinuity $$y = \\frac{1}{u^2 + u - 2}$$ where $$u = \\frac{1}{x-1}$$ is/are</td><td>(R) 2</td></tr>\n<tr><td>(D) $$\\int \\frac{dx}{x^{5/2}(1+x)^{7/2}} = A \\left( \\frac{x+1}{x} \\right)^{-1/A} + C$$<br>(Where $$C$$ is integration constant), then $$A =$$</td><td>(S) 3</td></tr>\n</table>",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Matching",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 4",
+        "text": "Match the following.\n<table border=\"1\">\n<tr><th>Column-I</th><th>Column-II</th></tr>\n<tr><td>(A) $$\\int_{0}^{1.5} [x^2] dx$$</td><td>(P) $$-\\pi$$</td></tr>\n<tr><td>(B) $$\\int_{0}^{4} \\{ \\sqrt{x} \\} dx$$<br>where $$\\{\\cdot\\}$$ denotes the fractional part of $$x$$</td><td>(Q) $$4(\\sqrt{2} - 1)$$</td></tr>\n<tr><td>(C) $$\\int_{0}^{2\\pi} [\\sin x + \\cos x] dx$$</td><td>(R) $$7/3$$</td></tr>\n<tr><td>(D) $$\\int_{0}^{\\pi} ||\\sin x| - |\\cos x|| dx$$</td><td>(S) $$2 - \\sqrt{2}$$</td></tr>\n</table>",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Matching",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "$$\\int \\frac{x + (\\arccos 3x)^2}{\\sqrt{1 - 9x^2}} dx = \\frac{1}{k_1} \\left( \\sqrt{1 - 9x^2} + (\\cos^{-1} 3x)^{k_2} \\right) + C$$, then $$k_1^2 + k_2^2 =$$<br>(where $$C$$ is an arbitrary constant.)",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If $$\\int_{0}^{\\infty} \\frac{x^3}{(a^2 + x^2)^5} dx = \\frac{1}{k a^6}$$, then find the value of $$\\frac{k}{8}$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Let $$f(x) = x \\cos x$$; $$x \\in \\left[ \\frac{3\\pi}{2}, 2\\pi \\right]$$ and $$g(x)$$ be its inverse. If $$\\int_{0}^{2\\pi} g(x) dx = \\alpha \\pi^2 + \\beta \\pi + \\gamma$$, where $$\\alpha, \\beta$$ and $$\\gamma \\in R$$, then find the value of $$2(\\alpha + \\beta + \\gamma)$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If $$\\int (x^6 + x^4 + x^2) \\sqrt{2x^4 + 3x^2 + 6} dx = \\frac{(\\alpha x^6 + \\beta x^4 + \\gamma x^2)^{3/2}}{18} + C$$ where $$C$$ is constant, then find the value of $$(\\beta + \\gamma - \\alpha)$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If the value of the definite integral $$\\int_{-1}^{1} \\cot^{-1}\\left(\\frac{1}{\\sqrt{1-x^2}}\\right) \\left( \\cot^{-1} \\frac{x}{\\sqrt{1-(x^2)^{|x|}}} \\right) dx = \\frac{\\pi^2(\\sqrt{a} - \\sqrt{b})}{\\sqrt{c}}$$ where $$a, b, c \\in N$$ in their lowest from, then find the value of $$(a + b + c)$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "The value of $$\\int \\frac{\\tan x}{\\tan^2 x + \\tan x + 1} dx = x - \\frac{2}{\\sqrt{A}} \\tan^{-1}\\left( \\frac{2\\tan x + 1}{\\sqrt{A}} \\right) + C$$ Then the value of $$A$$ is :",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Let $$\\int_{0}^{1} \\frac{4x^3 (1 + (x^4)^{2010})}{(1 + x^4)^{2012}} dx = \\frac{\\lambda}{\\mu}$$ where $$\\lambda$$ and $$\\mu$$ are relatively prime positive integers. Find unit digit of $$\\mu$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Let $$\\int_{1}^{\\sqrt{3}} \\left( x^{2x^2 + 1} + \\ln(x^{2x^{2x^2+1}}) \\right) dx = N$$. Find the value of $$(N - 6)$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If $$\\int \\frac{dx}{\\cos^3 x - \\sin^3 x} = A \\tan^{-1}(f(x)) + B \\ln\\left| \\frac{\\sqrt{2} + f(x)}{\\sqrt{2} - f(x)} \\right| + C$$ where $$f(x) = \\sin x + \\cos x$$ find the value of $$(12A + 9\\sqrt{2}B) - 3$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Find the value of $$|a|$$ for which the area of triangle included between the coordinate axes and any tangent to the curve $$x^a y = \\lambda^a$$ is constant (where $$\\lambda$$ is constant.)",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Let $$I = \\int_{0}^{\\pi} x^6 (\\pi - x)^8 dx$$, then $$\\frac{\\pi^{15}}{(^{15}C_9)I} =$$",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If maximum value of $$\\int_{0}^{1} (f(x))^3 dx$$ under the condition $$-1 \\leq f(x) \\leq 1; \\int_{0}^{1} f(x) dx = 0$$ is $$\\frac{p}{q}$$ (where $$p$$ and $$q$$ are relatively prime positive integers.). Find $$p + q$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Let a differentiable function $$f(x)$$ satisfies $$f(x) \\cdot f'(-x) = f(-x) \\cdot f'(x)$$ and $$f(0) = 1$$. Find the value of $$\\int_{-2}^{2} \\frac{dx}{1 + f(x)}$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If $$\\{\\cdot\\}$$ denotes the fractional part of $$x$$, then $$I = \\int_{0}^{100} \\{\\sqrt{x}\\} dx$$, then the value of $$\\frac{9I}{155}$$ is :",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Let $$I_n = \\int_{0}^{\\pi} \\frac{\\sin\\left(n + \\frac{1}{2}\\right)x}{\\sin\\left(\\frac{x}{2}\\right)} dx$$ where $$n \\in W$$. If $$I_1^2 + I_2^2 + I_3^2 + \\dots + I_{20}^2 = m \\pi^2$$, then find the largest prime factor of $$m$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If $$M$$ be the maximum value of $$72 \\int_{0}^{y} \\sqrt{x^4 + (y - y^2)^2} dx$$ for $$y \\in [0, 1]$$, then find $$\\frac{M}{6}$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Find the number of points where $$f(\\theta) = \\int_{-1}^{1} \\frac{\\sin \\theta dx}{1 - 2x \\cos \\theta + x^2}$$ is discontinuous where $$\\theta \\in [0, 2\\pi]$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Find the value of $$\\lim_{n \\to \\infty} \\frac{1}{\\sqrt{n}} \\left( 1 + \\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{3}} + \\dots + \\frac{1}{\\sqrt{n}} \\right)$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "The maximum value of $$\\int_{-\\pi/2}^{3\\pi/2} \\sin x \\cdot f(x) dx$$, subject to the condition $$|f(x)| \\leq 5$$ is $$M$$, then $$\\frac{M}{10}$$ is equal to :",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Given a function $$g$$, continuous everywhere such that $$g(1) = 5$$ and $$\\int_{0}^{1} g(t) dt = 2$$. If $$f(x) = \\frac{1}{2} \\int_{0}^{x} (x - t)^2 g(t) dt$$, then find the value of $$f'''(1) + f''(1)$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If $$f(n) = \\frac{1}{\\pi} \\int_{0}^{\\pi/2} \\frac{\\sin^2(n\\theta) d\\theta}{\\sin^2 \\theta}$$, $$n \\in N$$, then evaluate $$\\frac{f(15) + f(3)}{f(12) - f(10)}$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Let $$f(2 - x) = f(2 + x)$$ and $$f(4 - x) = f(4 + x)$$. Function $$f(x)$$ satisfies $$\\int_{0}^{2} f(x) dx = 5$$. If $$\\int_{0}^{50} f(x) dx = I$$. Find $$[\\sqrt{I} - 3]$$. (where $$[\\cdot]$$ denotes greatest integer function.)",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Let $$I_n = \\int_{-1}^{1} |x| \\left( 1 + x + \\frac{x^2}{2} + \\frac{x^3}{3} + \\dots + \\frac{x^{2n}}{2n} \\right) dx$$. If $$\\lim_{n \\to \\infty} I_n$$ can be expressed as rational $$p/q$$ in its lowest form, then find the value of $$\\frac{pq(p + q)}{10}$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "Let $$\\lim_{n \\to \\infty} n^{-\\frac{1}{2}\\left(1+\\frac{1}{n}\\right)} \\cdot (1^1 \\cdot 2^2 \\cdot 3^3 \\dots n^n)^{\\frac{1}{n^2}} = e^{\\frac{-p}{q}}$$ where $$p$$ and $$q$$ are relative prime positive integers. Find the value of $$|p + q|$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If $$\\int_{a}^{b} |\\sin x| dx = 8$$ and $$\\int_{0}^{a+b} |\\cos x| dx = 9$$ then the value of $$\\frac{1}{\\sqrt{2}x} \\int_{a}^{b} x \\sin x dx$$ is :",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If $$f(x), g(x), h(x)$$ and $$\\phi(x)$$ are polynomial in $$x$$,<br>$$\\left( \\int_{1}^{x} f(x) h(x) dx \\right) \\left( \\int_{1}^{x} g(x) \\phi(x) dx \\right) - \\left( \\int_{1}^{x} f(x) \\phi(x) dx \\right) \\left( \\int_{1}^{x} g(x) h(x) dx \\right)$$ is divisible by $$(x - 1)^\\lambda$$. Find maximum value of $$\\lambda$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "If $$\\int_{0}^{2} (3x^2 - 3x + 1) \\cos(x^3 - 3x^2 + 4x - 2) dx = a \\sin(b)$$, where $$a$$ and $$b$$ are positive integers. Find the value of $$(a + b)$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "let $$f(x) = \\int_{0}^{x} e^{x-y} f'(y) dy - (x^2 - x + 1) e^x$$. Find the number of roots of the equation $$f(x) = 0$$.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      },
+      {
+        "exerciseName": "Exercise 5",
+        "text": "For a positive integer $$n$$, let $$I_n = \\int_{-\\pi}^{\\pi} \\left( \\frac{\\pi}{2} - |x| \\right) \\cos nx dx$$ Find the value of $$[I_1 + I_2 + I_3 + I_4]$$ where $$[\\cdot]$$ denotes greatest integer function.",
+        "options": [],
+        "correctOption": -1,
+        "typeLabel": "Subjective",
+        "difficulty": "medium"
+      }
+    ]
   }
 ];

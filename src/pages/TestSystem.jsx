@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Clock from 'lucide-react/dist/esm/icons/clock';
-import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
+import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2';
 import AlertCircle from 'lucide-react/dist/esm/icons/alert-circle';
 import FileText from 'lucide-react/dist/esm/icons/file-text';
 import ChevronLeft from 'lucide-react/dist/esm/icons/chevron-left';
@@ -192,7 +192,7 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
       <div className="min-h-screen bg-obsidian py-12 px-4 md:px-12 flex items-center justify-center">
         <div className="w-full max-w-4xl bg-cyberdark border border-white/5 p-8 rounded-2xl shadow-2xl space-y-8 glass-panel select-none">
           <div className="text-center space-y-2">
-            <CheckCircle className="h-14 w-14 text-emerald-400 mx-auto animate-bounce" />
+            <CheckCircle2 className="h-14 w-14 text-emerald-400 mx-auto animate-bounce" />
             <h2 className="text-2xl font-bold text-white uppercase tracking-wider font-display">Test Submitted Successfully</h2>
             <p className="text-xs text-gray-500 font-mono">IIT-JEE Evaluation Portal — Auto Ranking Engine</p>
           </div>

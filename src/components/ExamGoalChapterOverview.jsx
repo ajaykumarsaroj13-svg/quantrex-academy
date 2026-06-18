@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
 import Clock from 'lucide-react/dist/esm/icons/clock';
 import Target from 'lucide-react/dist/esm/icons/target';
-import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
+import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2';
 import XCircle from 'lucide-react/dist/esm/icons/x-circle';
 import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
 import Filter from 'lucide-react/dist/esm/icons/filter';
@@ -70,7 +70,7 @@ export default function ExamGoalChapterOverview({ chapter, onBack, onLaunchPract
             <div className="flex flex-wrap gap-6">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
-                  <CheckCircle className="w-4 h-4 text-green-600" />
+                  <CheckCircle2 className="w-4 h-4 text-green-600" />
                 </div>
                 <div>
                   <div className="text-xs text-gray-500 font-medium">Correct</div>

@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
 import PlayCircle from 'lucide-react/dist/esm/icons/play-circle';
 import Target from 'lucide-react/dist/esm/icons/target';
-import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
+import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2';
 import XCircle from 'lucide-react/dist/esm/icons/x-circle';
 import Clock from 'lucide-react/dist/esm/icons/clock';
 import AlertTriangle from 'lucide-react/dist/esm/icons/alert-triangle';
@@ -42,7 +42,6 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
   const [bookmarkModalOpen, setBookmarkModalOpen] = useState(false);
   const [bookmarkQuestionId, setBookmarkQuestionId] = useState(null); // topic, all, mistakes, buckets, analytics, more
   const [difficultyFilter, setDifficultyFilter] = useState('All');
-  const [questionTypeFilter, setQuestionTypeFilter] = useState('All');
   const [yearFilter, setYearFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedTopic, setExpandedTopic] = useState(null);
@@ -88,27 +87,8 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
   
   const getFilteredQuestions = (source) => {
     let list = source;
-    if (difficultyFilter !== 'All') {
-      list = list.filter(q => {
-        const diff = (q.difficulty || 'medium').toLowerCase();
-        return diff === difficultyFilter.toLowerCase();
-      });
-    }
+    if (difficultyFilter !== 'All') list = list.filter(q => q.difficulty === difficultyFilter);
     if (yearFilter !== 'All') list = list.filter(q => q.year == yearFilter);
-    if (questionTypeFilter !== 'All') {
-      list = list.filter(q => {
-        const t = q.type || q.questionType || 'SCQ';
-        if (questionTypeFilter === 'Single Correct') return t === 'SCQ' || t === 'MCQ';
-        if (questionTypeFilter === 'Multi Correct') return t === 'MCQM' || t === 'MULTI_CORRECT';
-        if (questionTypeFilter === 'Numerical') return t === 'NUMERICAL';
-        if (questionTypeFilter === 'Fill in the Blanks') return t === 'FIB';
-        if (questionTypeFilter === 'Subjective') return t === 'SUBJECTIVE';
-        if (questionTypeFilter === 'Match the Following') return t === 'MATCH';
-        if (questionTypeFilter === 'Comprehension') return t === 'COMPREHENSION';
-        if (questionTypeFilter === 'True or False') return t === 'TRUE_FALSE';
-        return true;
-      });
-    }
     if (searchQuery) list = list.filter(q => q.question.toLowerCase().includes(searchQuery.toLowerCase()));
     return list;
   };
@@ -129,8 +109,7 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
 
   // ExamGOAL Style Subtopic Card matching screenshot
   const renderTopicCard = (topic) => {
-    let qs = pyqData?.questions?.[topic.id] || [];
-    qs = getFilteredQuestions(qs);
+    const qs = pyqData?.questions?.[topic.id] || [];
     if (qs.length === 0) return null;
     
     // Real data from questions
@@ -218,29 +197,12 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
       className={`bg-[#1e1e24] border border-[#2d2d35] rounded-xl p-5 mb-4 ${groupQs ? 'cursor-pointer hover:border-blue-500/50 transition-colors' : ''}`}
     >
       <div className="flex justify-between items-start mb-4">
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex items-center gap-3">
           <span className="w-8 h-8 rounded-full bg-[#111115] border border-[#2d2d35] flex items-center justify-center text-sm font-bold text-gray-400">
             {idx + 1}
           </span>
           <span className="px-3 py-1 bg-[#2d2d35] text-gray-300 text-xs font-bold rounded">{q.shift || q.title || q.year}</span>
-          <span className="px-3 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-bold rounded capitalize">{q.difficulty || 'Medium'}</span>
-          {(() => {
-            const t = q.type || q.questionType || 'SCQ';
-            let color = 'indigo';
-            let label = 'SCQ';
-            if (t === 'NUMERICAL') { color = 'orange'; label = 'NUMERICAL'; }
-            else if (t === 'MCQM' || t === 'MULTI_CORRECT') { color = 'purple'; label = 'MCQ (Multi)'; }
-            else if (t === 'FIB') { color = 'pink'; label = 'FILL IN BLANKS'; }
-            else if (t === 'SUBJECTIVE') { color = 'teal'; label = 'SUBJECTIVE'; }
-            else if (t === 'MATCH') { color = 'cyan'; label = 'MATCH LIST'; }
-            else if (t === 'COMPREHENSION') { color = 'rose'; label = 'COMPREHENSION'; }
-            
-            return (
-              <span className={`px-3 py-1 text-xs font-bold rounded bg-${color}-500/10 text-${color}-400 border border-${color}-500/20`}>
-                {label}
-              </span>
-            );
-          })()}
+          <span className="px-3 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-bold rounded">{q.difficulty || 'Medium'}</span>
           {progress[q.id]?.status === 'correct' && <span className="text-xs text-green-400 bg-green-500/10 px-2 py-1 rounded">Correct</span>}
           {progress[q.id]?.status === 'wrong' && <span className="text-xs text-red-400 bg-red-500/10 px-2 py-1 rounded">Wrong</span>}
         </div>
@@ -256,22 +218,6 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
       )}
     </div>
   );
-
-  const availableTypes = useMemo(() => {
-    const types = new Set();
-    allQuestions.forEach(q => {
-      const t = q.type || q.questionType || 'SCQ';
-      if (t === 'SCQ' || t === 'MCQ') types.add('Single Correct');
-      if (t === 'MCQM' || t === 'MULTI_CORRECT') types.add('Multi Correct');
-      if (t === 'NUMERICAL') types.add('Numerical');
-      if (t === 'FIB') types.add('Fill in the Blanks');
-      if (t === 'SUBJECTIVE') types.add('Subjective');
-      if (t === 'MATCH') types.add('Match the Following');
-      if (t === 'COMPREHENSION') types.add('Comprehension');
-      if (t === 'TRUE_FALSE') types.add('True or False');
-    });
-    return Array.from(types);
-  }, [allQuestions]);
 
   return (
     <div className="w-full flex flex-col space-y-6 bg-[#111115] min-h-screen p-4 md:p-6 rounded-2xl text-sans">
@@ -335,45 +281,6 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
         </div>
       </div>
 
-      {/* GLOBAL FILTERS */}
-      <div className="flex flex-wrap gap-3 mb-6">
-        <div className="relative flex-1 min-w-[200px]">
-          <Search className="absolute left-3 top-2.5 w-4 h-4 text-gray-700"/>
-          <input 
-            type="text" placeholder="Search questions..."
-            value={searchQuery} onChange={e => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 bg-[#1e1e24] border border-[#2d2d35] rounded-lg text-white focus:outline-none focus:border-blue-500"
-          />
-        </div>
-        <select 
-          value={difficultyFilter} onChange={e => setDifficultyFilter(e.target.value)}
-          className="bg-[#1e1e24] border border-[#2d2d35] text-white px-4 py-2 rounded-lg outline-none focus:border-blue-500"
-        >
-          <option value="All">All Difficulties</option>
-          <option value="Easy">Easy</option>
-          <option value="Medium">Medium</option>
-          <option value="Hard">Hard</option>
-        </select>
-        <select 
-          value={questionTypeFilter} onChange={e => setQuestionTypeFilter(e.target.value)}
-          className="bg-[#1e1e24] border border-[#2d2d35] text-white px-4 py-2 rounded-lg outline-none focus:border-blue-500"
-        >
-          <option value="All">All Types</option>
-          {availableTypes.map(t => (
-            <option key={t} value={t}>{t}</option>
-          ))}
-        </select>
-        <select 
-          value={yearFilter} onChange={e => setYearFilter(e.target.value)}
-          className="bg-[#1e1e24] border border-[#2d2d35] text-white px-4 py-2 rounded-lg outline-none focus:border-blue-500"
-        >
-          <option value="All">All Years</option>
-          {Array.from(new Set(allQuestions.map(q => q.year).filter(Boolean))).sort((a,b) => b-a).map(y => (
-            <option key={y} value={y}>{y}</option>
-          ))}
-        </select>
-      </div>
-
       {/* TAB CONTENT */}
       <div className="pt-2">
         
@@ -387,6 +294,25 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
         {/* ALL QUESTIONS TAB */}
         {activeTab === 'all' && (
           <div className="space-y-4">
+            <div className="flex flex-wrap gap-3 mb-6">
+              <div className="relative flex-1 min-w-[200px]">
+                <Search className="absolute left-3 top-2.5 w-4 h-4 text-gray-700"/>
+                <input 
+                  type="text" placeholder="Search questions..."
+                  value={searchQuery} onChange={e => setSearchQuery(e.target.value)}
+                  className="w-full pl-10 pr-4 py-2 bg-[#1e1e24] border border-[#2d2d35] rounded-lg text-white focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <select 
+                value={difficultyFilter} onChange={e => setDifficultyFilter(e.target.value)}
+                className="bg-[#1e1e24] border border-[#2d2d35] text-white px-4 py-2 rounded-lg outline-none focus:border-blue-500"
+              >
+                <option value="All">All Difficulties</option>
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+              </select>
+            </div>
             {(() => {
               const filtered = getFilteredQuestions(allQuestions);
               return filtered.map((q, idx) => renderQuestionItem(q, idx, false, filtered));

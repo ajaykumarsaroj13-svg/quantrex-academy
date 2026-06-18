@@ -354,7 +354,16 @@ export default function App() {
       )}
 
         <div className="flex-grow">
-          <Suspense fallback={<div className="flex-grow flex items-center justify-center min-h-[60vh]"><div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div></div>}>
+          <Suspense fallback={
+            <div className="flex-grow flex flex-col items-center justify-center min-h-[60vh] gap-4">
+              <div className="relative w-16 h-16">
+                <div className="absolute inset-0 rounded-full border-4 border-cyberdark"></div>
+                <div className="absolute inset-0 rounded-full border-4 border-electric border-t-transparent animate-spin"></div>
+                <div className="absolute inset-0 rounded-full border-4 border-gold border-b-transparent animate-spin animation-delay-500 opacity-50"></div>
+              </div>
+              <div className="text-electric font-display tracking-widest text-xs uppercase animate-pulse">Loading Quantrex...</div>
+            </div>
+          }>
           {activePage === 'books' && (
             <BooksLibrary setActivePage={setActivePage} setReadingBook={setReadingBook} user={user} theme="dark" />
           )}
