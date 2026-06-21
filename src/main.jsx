@@ -44,7 +44,7 @@ localStorage.setItem = function(key, value) {
 // Load massive data scripts dynamically to prevent Vite from hanging during build
 Promise.all([
   loadScript('/data-script.js?v=3.0'),
-  loadScript('/blackbook-script.js?v=3.1')
+  loadScript('/blackbook-script.js?v=3.3')
 ]).then(() => {
   ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
