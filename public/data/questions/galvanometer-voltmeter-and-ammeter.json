@@ -14,8 +14,7 @@
     "difficulty": "medium",
     "solution": "<p>When the shunt key K is open, the shunt resistor $\\mathrm{R}_2$ is disconnected from the circuit, which means there is no current flows through that branch. The main resistor $R_1$ and the galvanometer of resistance $G$ are connected directly in series across the constant DC voltage source V $=10 \\mathrm{~V}$.</p>\n<p><img alt=\"JEE Advanced 2026 Paper 2 Online Physics - Current Electricity Question 1 English Explanation 1\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpp7r7d3/4297c1ef-d180-4f3b-a5cb-ee9565120e21/bcbee170-5a6c-11f1-a82b-8fccf67591bd/file-6y3zli1mpp7r7d4.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpp7r7d3/4297c1ef-d180-4f3b-a5cb-ee9565120e21/bcbee170-5a6c-11f1-a82b-8fccf67591bd/file-6y3zli1mpp7r7d4.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The total equivalent resistance $\\mathrm{R}_{\\mathrm{eq} 1}$ of this series circuit is:</p>\n<p>$$ \\mathrm{R}_{\\mathrm{eq} 1}=\\mathrm{R}_1+\\mathrm{G} $$</p>\n<p>Using Ohm's law, the initial full current $\\mathrm{I}_0$ flowing out of the battery and passing entirely through the galvanometer is:</p>\n<p>$$ I_0=\\frac{V}{R_1+G} $$</p>\n<p>The angular deflection $\\theta_0$ of a moving-coil galvanometer pointer is directly proportional to the current passing through its coil $\\mathrm{I}_0=\\mathrm{k} \\theta_0$, where k is the figure of merit of the galvanometer:</p>\n<p>$$ \\theta_0 \\propto \\mathrm{I}_0 \\Rightarrow \\theta_0 \\propto \\frac{\\mathrm{~V}}{\\mathrm{R}_1+\\mathrm{G}} $$</p>\n<p>When the key K is closed, the shunt resistor $\\mathrm{R}_2$ is connected in parallel across the galvanometer G . This parallel combination is connected in series with the main resistor $R_1$.</p>\n<p><img alt=\"JEE Advanced 2026 Paper 2 Online Physics - Current Electricity Question 1 English Explanation 2\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpp7t41d/81f17c4c-05d2-49ac-923c-e94ff2456a6b/f1cb8210-5a6c-11f1-a82b-8fccf67591bd/file-6y3zli1mpp7t41e.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpp7t41d/81f17c4c-05d2-49ac-923c-e94ff2456a6b/f1cb8210-5a6c-11f1-a82b-8fccf67591bd/file-6y3zli1mpp7t41e.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The equivalent resistance $R_p$ of the parallel section containing G and $R_2$ is:</p>\n<p>$$R_p = \\frac{GR_2}{G + R_2}$$</p>\n<p>The new total equivalent resistance $R_{eq2}$ connected across the battery is:</p>\n<p>$$R_{eq2} = R_1 + R_p = R_1 + \\frac{GR_2}{G + R_2}$$</p>\n<p>Using Ohm's law, the total current $I_1$ drawn from the battery which passes entirely through the series resistor $R_1$ is:</p>\n<p>$$I_1 = \\frac{V}{R_{eq2}} = \\frac{V}{R_1 + \\frac{GR_2}{G + R_2}}$$</p>\n<p>When this total current $I_1$ reaches the parallel junction, it splits between the galvanometer and the shunt branch.</p>\n<p>By the current divider rule, the fraction of current that passes through the galvanometer branch ($I_G$) is inversely proportional to its resistance:</p>\n<p>$$I_G = I_1 \\left(\\frac{R_2}{G + R_2}\\right)$$</p>\n<p>Adjusting $R_2$ makes the new galvanometer deflection exactly half of its original value $(\\theta = \\frac{\\theta_0}{2})$.</p>\n<p>Since current and deflection are linearly proportional, the current through the galvanometer must also be halved:</p>\n<p>$$I_G = \\frac{I_0}{2}$$</p>\n<p>Substituting expressions for $I_G$ and $I_0$ into this relationship:</p>\n<p>$$I_1 \\left(\\frac{R_2}{G + R_2}\\right) = \\frac{1}{2} \\left(\\frac{V}{R_1 + G}\\right)$$</p>\n<p>$$\\left(\\frac{V}{R_1 + \\frac{GR_2}{G + R_2}}\\right) \\left(\\frac{R_2}{G + R_2}\\right) = \\frac{V}{2(R_1 + G)}$$</p>\n<p>$$\\frac{VR_2}{R_1(G + R_2) + GR_2} = \\frac{V}{2(R_1 + G)}$$</p>\n<p>$$2\\,R_2(R_1 + G) = R_1(G + R_2) + GR_2$$</p>\n<p>$$2R_1R_2 + 2GR_2 = R_1G + R_1R_2 + GR_2$$</p>\n<p>$$2R_1R_2 - R_1R_2 + 2GR_2 - GR_2 = R_1G$$</p>\n<p>$$R_1R_2 + GR_2 = R_1G$$</p>\n<p>$$GR_2 = R_1G - R_1R_2 = R_1(G - R_2)$$</p>\n<p>$$G = \\frac{R_1R_2}{R_1 - R_2}$$</p>\n<p>The galvanometer resistance is $G = 6\\ \\Omega$</p>\n<p>The shunt resistance at half-deflection, $R_2 = 4\\ \\Omega$</p>\n<p>$$6 = \\frac{R_1\\,4}{R_1 - 4}$$</p>\n<p>$$6(R_1 - 4) = 4R_1$$</p>\n<p>$$6R_1 - 24 = 4R_1$$</p>\n<p>$$2R_1 = 24 \\rightarrow R_1 = 12\\ \\Omega$$</p>\n<p>In the half-deflection condition (with key K closed), the total current passing through resistor $R_1$ is the total circuit current $I_1$.</p>\n<p>The parallel section resistance is,</p>\n<p>$$R_p = \\frac{GR_2}{G + R_2} = \\frac{6 \\times 4}{6 + 4} = \\frac{24}{10} = 2.4\\ \\Omega$$</p>\n<p>The total circuit resistance is,</p>\n<p>$$R_{eq2} = R_1 + R_p = 12 + 2.4 = 14.4\\ \\Omega$$</p>\n<p>The current $I_1$ from the voltage supply $V = 10\\ \\text{V}$:</p>\n<p>$$I_1 = \\frac{V}{R_{eq2}} = \\frac{10}{14.4} = \\frac{25}{36}\\ \\text{A}$$</p>\n<p>$$I_1 = \\frac{25}{36} \\times 1000\\ \\text{mA} = \\frac{25000}{36}\\ \\text{mA} \\approx 694.44\\ \\text{mA}$$</p>\n<p>Therefore, the correct answer is 694.44.</p>",
     "section": "Sec 3",
-    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>",
-    "type": "NUMERICAL"
+    "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
   },
   {
     "id": "ml98p6el",
@@ -36,8 +35,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<p>To convert a galvanometer into an ammeter of a higher range, a small shunt resistance $(S)$ must be connected in parallel with the galvanometer.</p>\n<p><img alt=\"JEE Main 2026 (Online) 24th January Evening Shift Physics - Current Electricity Question 9 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mljb3l1r/d97f2994-f95a-4452-a51f-34ab94b0e67d/3f008df0-07fc-11f1-a513-671ec3d625a9/file-6y3zli1mljb3l1s.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mljb3l1r/d97f2994-f95a-4452-a51f-34ab94b0e67d/3f008df0-07fc-11f1-a513-671ec3d625a9/file-6y3zli1mljb3l1s.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Galvanometer resistance $=\\mathrm{G}=100 \\Omega$</p>\n<p>Full-scale deflection current $=\\mathrm{I}_{\\mathrm{g}}=1 \\mathrm{~mA}=1 \\times 10^{-3} \\mathrm{~A}$</p>\n<p>The required ammeter range $=\\mathrm{I}=5 \\mathrm{~mA}=5 \\times 10^{-3} \\mathrm{~A}$</p>\n<p>In a parallel circuit, the potential difference across the galvanometer is equal to the potential difference across the shunt:</p>\n<p>$$ V_g=V_s $$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{I}_{\\mathrm{g}} \\times \\mathrm{G}=\\left(\\mathrm{I}-\\mathrm{I}_{\\mathrm{g}}\\right) \\times \\mathrm{S}$</p>\n<p>$\\Rightarrow \\mathrm{S}=\\frac{\\mathrm{I}_{\\mathrm{g}} \\times \\mathrm{G}}{\\mathrm{I}-\\mathrm{I}_{\\mathrm{g}}}$</p>\n<p>$$ \\Rightarrow S=\\frac{1 \\times(100)}{5-1}=25 \\Omega $$</p>\n<p>To measure a current of 5 mA with a $100 \\Omega$ galvanometer that deflects at 1 mA , a shunt resistance of $25 \\Omega$ is required. Hence, the correct option is (A).</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "ml98p3ql",
@@ -58,8 +56,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>The initial circuit is,</p>\n<p><img alt=\"JEE Main 2026 (Online) 24th January Morning Shift Physics - Current Electricity Question 13 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlmh0ct2/92cf891a-4423-4173-ae6c-b0567d694995/b5ee5050-09b9-11f1-8f61-d5953f1d17cb/file-6y3zli1mlmh0ct3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlmh0ct2/92cf891a-4423-4173-ae6c-b0567d694995/b5ee5050-09b9-11f1-8f61-d5953f1d17cb/file-6y3zli1mlmh0ct3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>When the voltmeter is connected to measure the voltage across one resistor, it is connected in parallel with that resistor.</p>\n<p>Resistance of Voltmeter $\\mathrm{R}_{\\mathrm{V}}=400 \\Omega$</p>\n<p>The voltmeter $\\left(\\mathrm{R}_{\\mathrm{V}}\\right)$ and the resistor $\\left(\\mathrm{R}_1\\right)$ are in parallel.</p>\n<p>$$ \\frac{1}{R_{1, V}}=\\frac{1}{R_1}+\\frac{1}{R_V} $$</p>\n<p>$$\\Rightarrow $$ $\\frac{1}{R_{1, V}}=\\frac{1}{100}+\\frac{1}{400}=\\frac{5}{400}$</p>\n<p>$$ \\mathrm{R}_{1, \\mathrm{~V}}=\\frac{400}{5}=80 \\Omega $$</p>\n<p>Now, $R_2$ is in series with the equivalent resistance $\\left(R_{1, V}\\right)$. So, the total resistance of the circuit is,</p>\n<p>$$ \\mathrm{R}_{\\text {total }}=\\mathrm{R}_{1, \\mathrm{~V}}+\\mathrm{R}_2 $$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{R}_{\\text {total }}=100 \\Omega+80 \\Omega=180 \\Omega $$</p>\n<p>Using Ohm's Law ( $\\mathrm{V}=\\mathrm{I} \\cdot \\mathrm{R}$ ) for the entire circuit :</p>\n<p>$$ \\mathrm{I}=\\frac{\\mathrm{V}}{\\mathrm{R}_{\\text {total }}} $$</p>\n<p>$$\\Rightarrow $$ $$ I=\\frac{9}{180}=\\frac{1}{20}=0.05 \\mathrm{~A} $$</p>\n<p>The voltmeter measures the potential difference across the parallel section ( $\\mathrm{R}_{1, \\mathrm{~V}}$ ).</p>\n<p>Using Ohm's Law for that specific section :</p>\n<p>$$ V_{\\text {reading }}=I \\times R_{1, V} $$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{V}_{\\text {reading }}=0.05 \\mathrm{~A} \\times 80 \\Omega$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{V}_{\\text {reading }}=4 \\mathrm{~V} $$</p>\n<p>Therefore, the voltmeter reading is 4 V. Hence, the correct option is (C).</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "mnswhytt",
@@ -80,8 +77,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<p>A voltmeter is a galvanometer with a high resistance connected in series. To increase the range of an existing voltmeter, we must add more resistance in series.</p>\n<p>Let the full-scale deflection current of the voltmeter be $\\mathrm{I}_{\\mathrm{g}}$.</p>\n<p><img alt=\"JEE Main 2026 (Online) 4th April Morning Shift Physics - Current Electricity Question 1 English Explanation 1\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1moe1mwhh/ffe553fa-223a-46fd-917e-563793284a14/f7cf0250-407b-11f1-82b7-995bb104edcb/file-6y3zli1moe1mwhi.webp?format=webp\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1moe1mwhh/ffe553fa-223a-46fd-917e-563793284a14/f7cf0250-407b-11f1-82b7-995bb104edcb/file-6y3zli1moe1mwhi.webp\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Initially, the voltmeter has a resistance x and measures up to $\\mathrm{V}_1=20 \\mathrm{~V}$.</p>\n<p>According to Ohm's Law ( $\\mathrm{V}=\\mathrm{IR}$ ):</p>\n<p>$$ 20=I_g \\cdot x \\Rightarrow I_g=\\frac{20}{x} $$</p>\n<p>To measure a new maximum voltage $\\mathrm{V}_2=30 \\mathrm{~V}$, we connect an additional resistance R in series with the voltmeter.</p>\n<p><img alt=\"JEE Main 2026 (Online) 4th April Morning Shift Physics - Current Electricity Question 1 English Explanation 2\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1moe1par9/0acf350e-0b3d-4085-a23f-439dddbbf3fa/3a738e50-407c-11f1-82b7-995bb104edcb/file-6y3zli1moe1para.webp?format=webp\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1moe1par9/0acf350e-0b3d-4085-a23f-439dddbbf3fa/3a738e50-407c-11f1-82b7-995bb104edcb/file-6y3zli1moe1para.webp\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The total resistance becomes $(x+R)$. The current required for full-scale deflection remains $I_g$ :</p>\n<p>$$ V_2=I_g(x+R) $$</p>\n<p>Substituting $\\mathrm{V}_2=30$ and $\\mathrm{I}_{\\mathrm{g}}=20 \\mathrm{x}$ into the equation :</p>\n<p>$$ 30=\\left(\\frac{20}{x}\\right)(x+R) $$</p>\n<p>$$\\Rightarrow $$ $3=\\frac{2}{x}(x+R)$</p>\n<p>$$\\Rightarrow $$ $3 x=2(x+R)$</p>\n<p>$$\\Rightarrow $$ $3 x=2 x+2 R$</p>\n<p>$$\\Rightarrow $$ $$ x=2 R \\Rightarrow R=\\frac{x}{2} \\Omega $$</p>\n<p>Thus, to increase the range to 30 V , a resistor of value $\\frac{x}{2} \\Omega$ must be connected in series with the voltmeter. </p>\n<p>Hence, the correct option is (A).</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "m6t9xvps",
@@ -102,8 +98,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<p>Given:</p>\n\n<p><p>Galvanometer resistance: </p>\n<p>$$ R_g = 30 \\, \\Omega $$</p></p>\n<p><p>Full-scale deflection current: </p>\n<p>$$ I_g = 20 \\, mA = 0.02 \\, A $$</p></p>\n<p><p>Maximum current to be measured: </p>\n<p>$$ I = 3 \\, A $$</p></p>\n\n<p>When using the galvanometer to measure 3 A, the extra current passing through the shunt resistor ($R_s$) is:</p>\n<p>$$ I_s = I - I_g = 3 - 0.02 = 2.98 \\, A. $$</p>\n<p>Since the galvanometer and the shunt resistor are connected in parallel, their voltage drops must be equal. Therefore:</p>\n<p>$$ I_g R_g = I_s R_s. $$</p>\n<p>Substitute the given values:</p>\n<p>$$ 0.02 \\times 30 = 2.98 \\times R_s \\quad \\Rightarrow \\quad R_s = \\frac{0.6}{2.98} \\approx 0.2013 \\, \\Omega. $$</p>\n<p>The shunt resistance is represented as:</p>\n<p>$$ R_s = \\frac{30}{X} \\, \\Omega. $$</p>\n<p>Equate the two expressions:</p>\n<p>$$ \\frac{30}{X} = 0.2013. $$</p>\n<p>Solving for $X$:</p>\n<p>$$ X = \\frac{30}{0.2013} \\approx 149. $$</p>\n<p>Thus, the value of $X$ is approximately $$149.$$ </p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "m6srn54r",
@@ -117,15 +112,14 @@
     ],
     "correctOption": 1,
     "correctAnswer": null,
-    "questionType": "SCQ",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
-    "solution": "<p>Let's analyze each statement step by step.</p>\n\n<p>Statement A: \u201cThe torsional constant in moving coil galvanometer has dimensions $$[ML^2T^{-2}]$$.\u201d</p>\n\n\n<p><p>The torsional constant (often denoted by $$k$$) relates the restoring torque to the angular displacement via $$\\tau = k \\theta$$. Since torque has dimensions of force \u00d7 distance with dimensions $$[MLT^{-2} \\times L = ML^2T^{-2}]$$ and the angular displacement (in radians) is dimensionless, the torsional constant indeed has the dimensions $$[ML^2T^{-2}]$$. </p></p>\n<p><p>Thus, Statement A is correct.</p></p>\n\n\n<p>Statement B: \u201cIncreasing the current sensitivity may not necessarily increase the voltage sensitivity.\u201d</p>\n\n\n<p><p>The current sensitivity of a galvanometer is defined as its deflection per unit current (i.e. $$\\theta/I$$).</p></p>\n<p><p>The voltage sensitivity, on the other hand, is the deflection per unit applied voltage when the galvanometer is used as a voltmeter. This sensitivity is proportional to the current sensitivity divided by the galvanometer\u2019s internal resistance.</p></p>\n<p><p>Often, if you try to increase current sensitivity (for instance, by increasing the number of turns or enhancing the magnetic field), the internal resistance may also change (typically increase when number of turns is increased). Therefore, the improvement in current sensitivity does not automatically translate to a proportional increase in voltage sensitivity.</p></p>\n<p><p>Hence, Statement B is true.</p></p>\n\n\n<p>Statement C: \u201cIf we increase number of turns ($$N$$) to its double ($$2N$$), then the voltage sensitivity doubles.\u201d</p>\n\n\n<p><p>The deflection (current sensitivity) is proportional to $$N$$ since $$\\theta \\propto N I$$.</p></p>\n<p><p>However, when you double $$N$$, the length of the wire increases, and so does the internal resistance (approximately doubling it, assuming the wire diameter and material remain the same).</p></p>\n<p><p>Since voltage sensitivity is roughly given by $$\\frac{\\text{current sensitivity}}{\\text{internal resistance}} \\propto \\frac{N}{R_g}$$, if both $$N$$ and $$R_g$$ double, the ratio remains essentially unchanged.</p></p>\n<p><p>Therefore, doubling $$N$$ does not double the voltage sensitivity, so Statement C is incorrect.</p></p>\n\n\n<p>Statement D: \u201cMCG can be converted into an ammeter by introducing a shunt resistance of large value in parallel with galvanometer.\u201d</p>\n\n\n<p><p>To convert a galvanometer into an ammeter, a shunt resistor is used to bypass most of the current so that only a small fraction (the full\u2010scale deflection current) passes through the galvanometer.</p></p>\n<p><p>For this to work, the shunt resistance should be very low compared to the galvanometer\u2019s resistance, not of \u201clarge value.\u201d</p></p>\n<p><p>Therefore, Statement D is false.</p></p>\n\n\n<p>Statement E: \u201cCurrent sensitivity of MCG depends inversely on number of turns of coil.\u201d</p>\n\n\n<p><p>As mentioned before, the electromagnetic torque in the coil is given by $$\\tau_e \\propto N I$$, so the deflection per unit current is $$\\theta/I \\propto N$$.</p></p>\n<p><p>This shows that the current sensitivity increases with $$N$$ (i.e. it is directly proportional to $$N$$), not inversely.</p></p>\n<p><p>Hence, Statement E is false.</p></p>\n\n<p>Only Statements A and B are correct. </p>\n<p>Looking at the given options, the correct choice is:</p>\n<p>Option B: A, B Only.</p>",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "<p>Let's analyze each statement step by step.</p>\n\n<p>Statement A: “The torsional constant in moving coil galvanometer has dimensions $$[ML^2T^{-2}]$$.”</p>\n\n\n<p><p>The torsional constant (often denoted by $$k$$) relates the restoring torque to the angular displacement via $$\\tau = k \\theta$$. Since torque has dimensions of force × distance with dimensions $$[MLT^{-2} \\times L = ML^2T^{-2}]$$ and the angular displacement (in radians) is dimensionless, the torsional constant indeed has the dimensions $$[ML^2T^{-2}]$$. </p></p>\n<p><p>Thus, Statement A is correct.</p></p>\n\n\n<p>Statement B: “Increasing the current sensitivity may not necessarily increase the voltage sensitivity.”</p>\n\n\n<p><p>The current sensitivity of a galvanometer is defined as its deflection per unit current (i.e. $$\\theta/I$$).</p></p>\n<p><p>The voltage sensitivity, on the other hand, is the deflection per unit applied voltage when the galvanometer is used as a voltmeter. This sensitivity is proportional to the current sensitivity divided by the galvanometer’s internal resistance.</p></p>\n<p><p>Often, if you try to increase current sensitivity (for instance, by increasing the number of turns or enhancing the magnetic field), the internal resistance may also change (typically increase when number of turns is increased). Therefore, the improvement in current sensitivity does not automatically translate to a proportional increase in voltage sensitivity.</p></p>\n<p><p>Hence, Statement B is true.</p></p>\n\n\n<p>Statement C: “If we increase number of turns ($$N$$) to its double ($$2N$$), then the voltage sensitivity doubles.”</p>\n\n\n<p><p>The deflection (current sensitivity) is proportional to $$N$$ since $$\\theta \\propto N I$$.</p></p>\n<p><p>However, when you double $$N$$, the length of the wire increases, and so does the internal resistance (approximately doubling it, assuming the wire diameter and material remain the same).</p></p>\n<p><p>Since voltage sensitivity is roughly given by $$\\frac{\\text{current sensitivity}}{\\text{internal resistance}} \\propto \\frac{N}{R_g}$$, if both $$N$$ and $$R_g$$ double, the ratio remains essentially unchanged.</p></p>\n<p><p>Therefore, doubling $$N$$ does not double the voltage sensitivity, so Statement C is incorrect.</p></p>\n\n\n<p>Statement D: “MCG can be converted into an ammeter by introducing a shunt resistance of large value in parallel with galvanometer.”</p>\n\n\n<p><p>To convert a galvanometer into an ammeter, a shunt resistor is used to bypass most of the current so that only a small fraction (the full‐scale deflection current) passes through the galvanometer.</p></p>\n<p><p>For this to work, the shunt resistance should be very low compared to the galvanometer’s resistance, not of “large value.”</p></p>\n<p><p>Therefore, Statement D is false.</p></p>\n\n\n<p>Statement E: “Current sensitivity of MCG depends inversely on number of turns of coil.”</p>\n\n\n<p><p>As mentioned before, the electromagnetic torque in the coil is given by $$\\tau_e \\propto N I$$, so the deflection per unit current is $$\\theta/I \\propto N$$.</p></p>\n<p><p>This shows that the current sensitivity increases with $$N$$ (i.e. it is directly proportional to $$N$$), not inversely.</p></p>\n<p><p>Hence, Statement E is false.</p></p>\n\n<p>Only Statements A and B are correct. </p>\n<p>Looking at the given options, the correct choice is:</p>\n<p>Option B: A, B Only.</p>",
+    "section": "A"
   },
   {
     "id": "m9fnurno",
@@ -134,15 +128,14 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "MCQ",
+    "questionType": "NUMERICAL",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9lhd7kk/74f9b1cf-d8b1-40d0-a0de-204baea8b499/ba359540-1b9b-11f0-a971-8790f18ee97a/file-jaoe38c1m9lhd7kl.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9lhd7kk/74f9b1cf-d8b1-40d0-a0de-204baea8b499/ba359540-1b9b-11f0-a971-8790f18ee97a/file-jaoe38c1m9lhd7kl.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Morning Shift Physics - Current Electricity Question 34 English Explanation\"></p>\n<p><b>Step 1: Find the Total Resistance</b></p>\n<p>First, add up the resistor in series ($R_1 = 150.4~\\Omega$) with the combined resistance of the ammeter and its shunt ($R_2$).</p>\n<p>The ammeter ($240~\\Omega$) is in parallel with a shunt of ($10~\\Omega$). The combined resistance of resistors in parallel is found by:</p>\n<p>$$ R_2 = \\frac{240 \\times 10}{240 + 10} = \\frac{2400}{250} = 9.6~\\Omega $$</p>\n<p>The total resistance ($R_{eq}$) is:</p>\n<p>$$ R_{eq} = 150.4 + 9.6 = 160~\\Omega $$</p>\n<p><b>Step 2: Find the Current in the Circuit</b></p>\n<p>Suppose the total current in the circuit is $I$. But to find the ammeter reading, we care about the current through the ammeter coil itself.</p>\n<p>The current through the ammeter, $I_1$, is given by how the current splits between the ammeter and the shunt. The fraction going through the ammeter is:</p>\n<p>$$ I_1 = \\frac{R_2}{240} \\times I $$</p>\n<p>But $R_2 = 9.6~\\Omega$ (the parallel combination), and $240~\\Omega$ is the ammeter's resistance:</p>\n<p>$$ I_1 = \\frac{9.6}{240} \\times I $$</p>\n<p><b>Step 3: Substitute the Circuit Values</b></p>\n<p>The supply voltage is $20~V$. The total resistance is $160~\\Omega$. So the total current is:</p>\n<p>$$ I = \\frac{20}{160} = 0.125~A $$</p>\n<p>So:\n\n$$ I_1 = 0.125 \\times \\frac{9.6}{240} $$</p>\n<p>Calculate this:\n\n$$ I_1 = 0.125 \\times 0.04 = 0.005~A = 5~\\text{mA} $$</p>\n<p><b>Final Answer:</b></p>\n<p>The ammeter reads $5~\\text{mA}$.</p>",
-    "section": "B",
-    "type": "SUBJECTIVE"
+    "section": "B"
   },
   {
     "id": "lsan7lov",
@@ -163,8 +156,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>When an ammeter is designed, a shunt resistor ($R_s$) is placed in parallel with the galvanometer to ensure that only a small fraction of the total current passes through the galvanometer itself. This is done because the galvanometer is usually a sensitive instrument designed to measure small currents, and passing a large current through it could damage it.</p>\n\n<p>In this scenario, we are told that $5\\%$ of the main current passes through the galvanometer. This means that the remaining $95\\%$ of the current must pass through the shunt. Let's denote the total current as $I$, the current through the galvanometer as $I_g$, and the current through the shunt as $I_s$. Therefore, we have:</p>\n\n<p>$$ I_g = \\frac{5}{100} I $$</p>\n<p>$$ I_s = I - I_g = I - \\frac{5}{100} I = \\frac{95}{100} I $$</p>\n\n<p>Since the galvanometer and shunt are in parallel, the voltage across each must be the same:</p>\n\n<p>$$ V_g = V_s $$</p>\n\n<p>According to Ohm's law, $V = IR$, where $V$ is the voltage, $I$ is the current, and $R$ is the resistance. Hence, for the galvanometer and the shunt:</p>\n\n<p>$$ I_g G = I_s R_s $$</p>\n\n<p>By substituting $I_g$ and $I_s$ from the above proportionality, we get:</p>\n\n<p>$$ \\left(\\frac{5}{100} I\\right) G = \\left(\\frac{95}{100} I\\right) R_s $$</p>\n\n<p>Let's solve for $R_s$:</p>\n\n<p>$$ R_s = \\frac{5}{95} G $$\n</p>\n<p>Further simplifying this:</p>\n\n<p>$$ R_s = \\frac{G}{19} $$\n</p>\n<p>The total resistance of the ammeter $R_a$ can be found using the parallel resistance formula:</p>\n\n<p>$$ \\frac{1}{R_a} = \\frac{1}{G} + \\frac{1}{R_s} $$\n</p>\n<p>Substitute $R_s$ with $\\frac{G}{19}$:</p>\n\n<p>$$ \\frac{1}{R_a} = \\frac{1}{G} + \\frac{19}{G} $$</p>\n<p>$$ \\frac{1}{R_a} = \\frac{20}{G} $$</p>\n\n<p>Thus the resistance of the ammeter $R_a$ is:</p>\n\n<p>$$ R_a = \\frac{G}{20} $$</p>\n\n<p>Hence, the correct answer is Option C: $\\frac{G}{20}$.</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "lsbkwr5w",
@@ -185,8 +177,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<p>To convert a galvanometer into a voltmeter to measure higher voltages, you need to add a series resistance to it. Let's figure out the required resistance value.</p>\n\n<p>First, let's find the maximum voltage that can be directly measured by the galvanometer without any additional resistance. We know the maximum current, $I$, that the galvanometer can safely measure is $5 \\text{ mA}$, and the resistance of the galvanometer, $R_g$, is $50 \\Omega$.</p>\n\n<p>Using Ohm's law $ V = I \\times R $, the maximum voltage $V_g$ the galvanometer can measure is:</p>\n\n<p>$ V_g = I \\times R_g $</p>\n\n<p>$ V_g = 5 \\times 10^{-3} \\text{ A} \\times 50 \\Omega $</p>\n\n<p>$ V_g = 0.25 \\text{ V} $</p>\n\n<p>Next, to measure up to $100 \\text{ V}$, we need to add a series resistor $R_s$ so that the total voltage drop when the maximum current is flowing is $100 \\text{ V}$. The voltage drop across the additional resistor $R_s$ when the maximum current flows would be the total voltage minus the voltage across the galvanometer:</p>\n\n<p>$ V_s = V_{\\text{total}} - V_g $</p>\n\n<p>$ V_s = 100 \\text{ V} - 0.25 \\text{ V} $</p>\n\n<p>$ V_s = 99.75 \\text{ V} $</p>\n\n<p>Applying Ohm's law to the series resistor to find its resistance value:</p>\n\n<p>$ R_s = \\frac{V_s}{I} $</p>\n\n<p>$ R_s = \\frac{99.75 \\text{ V}}{5 \\times 10^{-3} \\text{ A}} $</p>\n\n<p>$ R_s = 19950 \\Omega $</p>\n\n<p>Therefore, the resistance of the series resistor required to convert the galvanometer into a voltmeter that can measure up to $100 \\text{ V}$ is $19950 \\Omega$.</p>\n\n<p>The correct option is D: $19950 \\Omega$.</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "jaoe38c1lscpoor2",
@@ -207,8 +198,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<p>$$\\mathrm{i} \\propto \\theta$$ (angle of deflection)</p>\n<p>$$\\begin{aligned}\n& \\therefore \\frac{\\mathrm{i}_2}{\\mathrm{i}_1}=\\frac{\\theta_2}{\\theta_1} \\Rightarrow \\frac{\\mathrm{i}_2}{200 \\mu \\mathrm{A}}=\\frac{\\pi / 10}{\\pi / 3}=\\frac{3}{10} \\\\\n& \\Rightarrow \\mathrm{i}_2=60 \\mu \\mathrm{A}\n\\end{aligned}$$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "jaoe38c1lsf144o3",
@@ -229,8 +219,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>Let x = current/division</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lt2toclz/fdc1cef0-c338-481f-b621-896a016be062/8326ae70-d495-11ee-a613-e11ae62575eb/file-1lt2tocm0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lt2toclz/fdc1cef0-c338-481f-b621-896a016be062/8326ae70-d495-11ee-a613-e11ae62575eb/file-1lt2tocm0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 29th January Morning Shift Physics - Current Electricity Question 80 English Explanation 1\"></p>\n<p>After applying shunt</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lt2tqvvt/bf1d6741-5b7b-461d-bde1-af7b8f468aec/c9a874a0-d495-11ee-a613-e11ae62575eb/file-1lt2tqvvu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lt2tqvvt/bf1d6741-5b7b-461d-bde1-af7b8f468aec/c9a874a0-d495-11ee-a613-e11ae62575eb/file-1lt2tqvvu.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 29th January Morning Shift Physics - Current Electricity Question 80 English Explanation 2\"></p>\n<p>Now $$5 \\mathrm{x} \\times \\mathrm{G}=20 \\mathrm{x} \\times 24$$</p>\n<p>$$\\begin{aligned}\n&amp; \\mathrm{G}=4 \\times 24 \\\\\n&amp; \\mathrm{G}=96 \\Omega\n\\end{aligned}$$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "jaoe38c1lsf18uwe",
@@ -251,8 +240,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lt2thne5/2f5730dc-195f-4232-8eab-2f5be126e174/c8d0f5d0-d494-11ee-a613-e11ae62575eb/file-1lt2thne6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lt2thne5/2f5730dc-195f-4232-8eab-2f5be126e174/c8d0f5d0-d494-11ee-a613-e11ae62575eb/file-1lt2thne6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 29th January Morning Shift Physics - Current Electricity Question 79 English Explanation\"></p><p>To determine the value of the shunt resistor required to convert the galvanometer into an ammeter capable of measuring a current of $$8 \\mathrm{~A}$$, we need to use the concept of shunting where the additional resistor (shunt) is placed in parallel with the galvanometer.</p>\n\n<p>The formula for calculating the value of the shunt resistor $ R_s $ is given by:</p>\n\n<p>$$ R_s = \\frac{R_g \\cdot I_g}{I - I_g} $$</p>\n\n<p>Where:</p>\n\n<p>$ R_g $ = resistance of the galvanometer = $$10 \\Omega$$<br>\n\n</p><p>$ I_g $ = full-scale deflection current of the galvanometer = $$3 \\mathrm{~mA}$$ = $$0.003 \\mathrm{~A}$$<br></p>\n\n<p>$ I $ = total current to be measured = $$8 \\mathrm{~A}$$</p><p></p>\n\n<p>Substituting these values into the formula:</p>\n\n<p>$$ R_s = \\frac{10 \\Omega \\cdot 0.003 \\mathrm{~A}}{8 \\mathrm{~A} - 0.003 \\mathrm{~A}} $$</p>\n\n<p>Perform the calculations:</p>\n\n<p>$$ R_s = \\frac{0.03 \\Omega \\cdot \\mathrm{~A}}{7.997 \\mathrm{~A}} $$</p>\n\n<p>$$ R_s \\approx 3.75 \\times 10^{-3} \\Omega $$</p>\n\n<p>Thus, the value of the shunt resistor should be:</p>\n\n<p><b>Option A</b>: $$3.75 \\times 10^{-3} \\Omega$$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1lsg7359d",
@@ -268,8 +256,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsoiwwz2/a7d1ced9-1f16-481d-ba5f-11d472167116/73d790e0-ccb8-11ee-8ef5-472d1767d2da/file-6y3zli1lsoiwwz3.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsoiwwz2/a7d1ced9-1f16-481d-ba5f-11d472167116/73d790e0-ccb8-11ee-8ef5-472d1767d2da/file-6y3zli1lsoiwwz3.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 30th January Evening Shift Physics - Current Electricity Question 75 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\frac{R_v 100}{R_v+100}=\\frac{200}{3} \\\\\n&amp; 3 R_v=2 R_v+200 \\\\\n&amp; R_v=200\n\\end{aligned}$$</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "lv9s23u4",
@@ -289,9 +276,8 @@
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
-    "solution": "<p>To convert a galvanometer into an ammeter to measure larger currents, a low resistance known as the <em>shunt resistance</em> ($$R_{\\text{sh}}$$) is connected in parallel with the galvanometer. The value of this shunt resistance can be calculated using the principles of parallel circuits and the desired maximum current the ammeter should read.</p>\n\n<p>The original configuration of the galvanometer allows it to measure up to $$10\\,\\text{V}$$, and it has a resistance of $$100\\,\\Omega$$. When connected in series with a $$400\\,\\Omega$$ resistor, the total resistance in the circuit is $$100\\,\\Omega + 400\\,\\Omega = 500\\,\\Omega$$. Given this configuration measures up to $$10\\,\\text{V}$$, we can calculate the maximum current it is designed to measure using Ohm's law:</p>\n\n<p>$I = \\frac{V}{R} = \\frac{10\\,\\text{V}}{500\\,\\Omega} = 0.02\\,\\text{A}$</p>\n\n<p>Now, to recalibrate the device to measure up to $$10\\,\\text{A}$$, we require the calculation of the shunt resistor $$R_{\\text{sh}}$$ that needs to be connected in parallel with the galvanometer. The total current $$I$$ will now be $$10\\,\\text{A}$$, and the part of this current flowing through the galvanometer ($$I_g$$) remains $$0.02\\,\\text{A}$$ (as before, to ensure we do not exceed the device's original maximum measuring capability), leaving the rest to flow through the shunt. Thus, $$I - I_g$$ flows through the shunt.</p>\n\n<p>Since the voltage drop across both the shunt and the galvanometer must be the same for parallel components, we use Ohm\u2019s Law $$V = IR$$ for both and set up an equation to calculate $$R_{\\text{sh}}$$:</p>\n\n<p>$I_g R_g = (I - I_g) R_{\\text{sh}}$</p>\n\n<p>Substituting known values ($$R_g = 100\\,\\Omega$$, $$I = 10\\,\\text{A}$$, and $$I_g = 0.02\\,\\text{A}$$):</p>\n\n<p>$0.02\\,\\text{A} \\times 100\\,\\Omega = (10\\,\\text{A} - 0.02\\,\\text{A}) R_{\\text{sh}}$</p>\n\n<p>This simplifies to:</p>\n\n<p>$2\\,\\text{V} = 9.98\\,\\text{A} \\times R_{\\text{sh}}$</p>\n\n<p>Solving for $$R_{\\text{sh}}$$ gives:</p>\n\n<p>$R_{\\text{sh}} = \\frac{2\\,\\text{V}}{9.98\\,\\text{A}} \\approx 0.2004\\,\\Omega$</p>\n\n<p>Expressing this in terms of $$\\times 10^{-2} \\Omega$$ gives $$R_{\\text{sh}} \\approx 20.04 \\times 10^{-2} \\Omega$$. Therefore, the value of $$x$$ is approximately $$20.04$$, and rounding it according to the provided options leads to the closest value:</p>\n\n<p>Option B: 20</p>",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "<p>To convert a galvanometer into an ammeter to measure larger currents, a low resistance known as the <em>shunt resistance</em> ($$R_{\\text{sh}}$$) is connected in parallel with the galvanometer. The value of this shunt resistance can be calculated using the principles of parallel circuits and the desired maximum current the ammeter should read.</p>\n\n<p>The original configuration of the galvanometer allows it to measure up to $$10\\,\\text{V}$$, and it has a resistance of $$100\\,\\Omega$$. When connected in series with a $$400\\,\\Omega$$ resistor, the total resistance in the circuit is $$100\\,\\Omega + 400\\,\\Omega = 500\\,\\Omega$$. Given this configuration measures up to $$10\\,\\text{V}$$, we can calculate the maximum current it is designed to measure using Ohm's law:</p>\n\n<p>$I = \\frac{V}{R} = \\frac{10\\,\\text{V}}{500\\,\\Omega} = 0.02\\,\\text{A}$</p>\n\n<p>Now, to recalibrate the device to measure up to $$10\\,\\text{A}$$, we require the calculation of the shunt resistor $$R_{\\text{sh}}$$ that needs to be connected in parallel with the galvanometer. The total current $$I$$ will now be $$10\\,\\text{A}$$, and the part of this current flowing through the galvanometer ($$I_g$$) remains $$0.02\\,\\text{A}$$ (as before, to ensure we do not exceed the device's original maximum measuring capability), leaving the rest to flow through the shunt. Thus, $$I - I_g$$ flows through the shunt.</p>\n\n<p>Since the voltage drop across both the shunt and the galvanometer must be the same for parallel components, we use Ohm’s Law $$V = IR$$ for both and set up an equation to calculate $$R_{\\text{sh}}$$:</p>\n\n<p>$I_g R_g = (I - I_g) R_{\\text{sh}}$</p>\n\n<p>Substituting known values ($$R_g = 100\\,\\Omega$$, $$I = 10\\,\\text{A}$$, and $$I_g = 0.02\\,\\text{A}$$):</p>\n\n<p>$0.02\\,\\text{A} \\times 100\\,\\Omega = (10\\,\\text{A} - 0.02\\,\\text{A}) R_{\\text{sh}}$</p>\n\n<p>This simplifies to:</p>\n\n<p>$2\\,\\text{V} = 9.98\\,\\text{A} \\times R_{\\text{sh}}$</p>\n\n<p>Solving for $$R_{\\text{sh}}$$ gives:</p>\n\n<p>$R_{\\text{sh}} = \\frac{2\\,\\text{V}}{9.98\\,\\text{A}} \\approx 0.2004\\,\\Omega$</p>\n\n<p>Expressing this in terms of $$\\times 10^{-2} \\Omega$$ gives $$R_{\\text{sh}} \\approx 20.04 \\times 10^{-2} \\Omega$$. Therefore, the value of $$x$$ is approximately $$20.04$$, and rounding it according to the provided options leads to the closest value:</p>\n\n<p>Option B: 20</p>",
+    "section": "A"
   },
   {
     "id": "lv7v4rep",
@@ -307,8 +293,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>$$\\frac{1}{3} \\mathrm{~A} \\longrightarrow \\frac{1}{2} \\mathrm{div}$$</p>\n<p>$$\\frac{1}{2} \\mathrm{~A} \\longrightarrow \\frac{2}{3} \\mathrm{div}$$</p>\n<p>$$\\text { Figure of merit }=\\frac{\\Delta i}{\\Delta \\theta} \\quad \\begin{aligned}\n& \\frac{\\frac{1}{2}--}{\\frac{2}{3}-\\frac{1}{2}} \\\\\n&=0.5 \\\\\n&=5 \\times 10^{-1} \\mathrm{~A} / \\mathrm{div}\n\\end{aligned}$$</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "lvb2acqd",
@@ -324,8 +309,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& i=\\frac{24}{140 \\cdot 4+r_A}=\\frac{24}{140 \\cdot 4+9 \\cdot 6}=0.16 \\mathrm{~A} \\\\\n& i=160 \\mathrm{~mA}\n\\end{aligned}$$</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "luxwer61",
@@ -341,8 +325,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& R_{\\text {net }}=\\frac{1}{\\text { Slope }}=\\frac{8}{4} \\times 10^3=2 \\times 10^3 \\\\\n& \\Rightarrow 2=\\frac{10 R}{10+R} \\\\\n& \\Rightarrow 20+2 R=10 R \\\\\n& \\Rightarrow 8 R=20 \\\\\n& \\Rightarrow R=2.5 \\mathrm{k} \\Omega \\\\\n& \\quad=2500 ~\\Omega\n\\end{aligned}$$</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "luy9clvj",
@@ -363,8 +346,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<p>To convert a galvanometer into an ammeter, we need to add a shunt resistance in parallel with the galvanometer's coil. The purpose of the shunt resistance is to bypass the majority of the current while allowing only a small fraction of it to pass through the galvanometer, thereby preventing it from being damaged by high currents.</p>\n\n<p>Given parameters:\n\n<ul>\n<li>Resistance of the galvanometer's coil, $$R_g = 200 \\Omega$$</li><br>\n<li>Full-scale deflection current of the galvanometer, $$I_g = 20 \\mu \\mathrm{A} = 20 \\times 10^{-6} \\mathrm{A}$$</li><br>\n<li>Desired ammeter range, $$I = 20 \\mathrm{mA} = 20 \\times 10^{-3} \\mathrm{A}$$</p></li>\n</ul>\n<p>The shunt resistance, $$R_s$$, can be calculated using the formula:</p>\n\n<p>\n\n<p>$$ \\frac{R_s}{R_g + R_s} = \\frac{I_g}{I} $$</p>\n\n</p>\n\n<p>Solving for $$R_s$$:</p>\n\n<p>\n\n<p>$$ R_s = R_g \\left(\\frac{I_g}{I - I_g}\\right) $$</p>\n\n</p>\n\n<p>Substituting the given values:</p>\n\n<p>\n\n<p>$$ R_s = 200 \\left(\\frac{20 \\times 10^{-6}}{20 \\times 10^{-3} - 20 \\times 10^{-6}}\\right) $$</p>\n\n</p>\n\n<p>Simplifying the expression:</p>\n\n<p>\n\n<p>$$ R_s = 200 \\left(\\frac{20 \\times 10^{-6}}{19.98 \\times 10^{-3}}\\right) $$</p>\n\n</p>\n\n<p>\n\n<p>$$ R_s \\approx 200 \\left(\\frac{20 \\times 10^{-6}}{20 \\times 10^{-3}}\\right) = 200 \\left(\\frac{1}{1000}\\right) = 0.20 \\Omega $$</p>\n\n</p>\n\n<p>Therefore, the value of the resistance to be added to use the galvanometer as an ammeter of range $$(0-20) \\mathrm{mA}$$ is $$0.20 \\Omega$$. Thus, the correct answer is:</p>\n\n<p>Option C: $$0.20 \\Omega$$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1lgsxtlu7",
@@ -380,8 +362,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "Let the internal resistance of each cell be $$r$$.\n\n<br/><br/>Since the two cells are connected in series, their internal resistances add up, and the total internal resistance of the series combination is $$2r$$. The total EMF of the series combination of cells is $$1.5\\,\\text{V} + 1.5\\,\\text{V} = 3\\,\\text{V}$$. \n\n<br/><br/>Let's use Kirchhoff's Voltage Law (KVL) for the closed loop in the circuit:\n<br/><br/>$$\\text{EMF}_{total} - I(R + 2r) = 0$$\n\n<br/><br/>We are given that the voltage across the $$10\\,\\Omega$$ resistor, as measured by the ideal voltmeter, is $$1.5\\,\\text{V}$$. According to Ohm's law, the current in the circuit can be determined as:\n<br/><br/>$$I = \\frac{V}{R} = \\frac{1.5\\,\\text{V}}{10\\,\\Omega} = 0.15\\,\\text{A}$$\n\n<br/><br/>Now, substitute the given values into the KVL equation:\n<br/><br/>$$3\\,\\text{V} - 0.15\\,\\text{A}(10\\,\\Omega + 2r) = 0$$\n\n<br/><br/>Solve for $$2r$$:\n<br/><br/>$$3\\,\\text{V} - 1.5\\,\\text{V} = 0.15\\,\\text{A} \\cdot 2r$$\n<br/><br/>$$1.5\\,\\text{V} = 0.3\\,\\text{A} \\cdot r$$\n\n<br/><br/>Now, solve for the internal resistance $$r$$:\n<br/><br/>$$r = \\frac{1.5\\,\\text{V}}{0.3\\,\\text{A}} = 5\\,\\Omega$$\n\n<br/><br/>So, the internal resistance of each cell is $$5\\,\\Omega$$.",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "1lguyc7b5",
@@ -402,8 +383,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "The current sensitivity ($I_s$) of a moving coil galvanometer is given by:\n<br/><br/>\n$$I_s = \\frac{nBA}{C}$$\n<br/><br/>\nwhere $$n$$ is the number of turns in the coil, $$B$$ is the magnetic field, $$A$$ is the area of the coil, and $$C$$ is the torsional constant of the suspension wire.\n<br/><br/>\nWe are told that the current sensitivity is increased by 25% by changing only the number of turns and the area of the cross section while keeping the resistance of the galvanometer coil constant. Let the new number of turns be $$n'$$, and the new area be $$A'$$.\n<br/><br/>\nSince the current sensitivity is increased by 25%, we have:\n<br/><br/>\n$$I_s' = 1.25I_s = \\frac{n' B A'}{C}$$\n<br/><br/>\nThe resistance ($R$) of the galvanometer coil is given by:\n<br/><br/>\n$$R = \\rho \\frac{l}{A}$$\n<br/><br/>\nwhere $$\\rho$$ is the resistivity of the wire and $$l$$ is the length of the wire. Since the resistance is kept constant, we can write:\n<br/><br/>\n$$R' = \\rho \\frac{l'}{A'} = R$$\n<br/><br/>\nNow, the voltage sensitivity ($V_s$) of the galvanometer is given by:\n<br/><br/>\n$$V_s = I_s \\times R$$\n<br/><br/>\nWe want to find the percentage change in the voltage sensitivity. Let the new voltage sensitivity be $$V_s'$$:\n<br/><br/>\n$$V_s' = I_s' \\times R'$$\n<br/><br/>\nSince $$R = R'$$, we can write:\n<br/><br/>\n$$V_s' = 1.25I_s \\times R = 1.25V_s$$\n<br/><br/>\nThe percentage change in the voltage sensitivity is:\n<br/><br/>\n$$\\frac{V_s' - V_s}{V_s} \\times 100\\% = \\frac{1.25V_s - V_s}{V_s} \\times 100\\% = 25\\%$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1lgq2vwpw",
@@ -419,8 +399,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "Given:\n<br/><br/>\n$$\\frac{250 \\ \\text{mA} \\times 5}{5 + R_G} = i$$\n<br/><br/>\n$$i = \\frac{25}{1050 + R_G}$$\n<br/><br/>\nEquating the two expressions for current, $$i$$:\n<br/><br/>\n$$\\frac{250 \\ \\text{mA} \\times 5}{5 + R_G} = \\frac{25}{1050 + R_G}$$\n<br/><br/>\nThis equation simplifies to:\n<br/><br/>\n$$100(5 + R_G) = 1050 \\times 5 + R_G \\times 5$$\n<br/><br/>\nSolving for the resistance of the galvanometer, $$R_G$$:\n<br/><br/>\n$$95 R_G = 4750$$\n<br/><br/>\n$$R_G = 50 \\ \\Omega$$\n<br/><br/>\nSo, the resistance of the galvanometer is $$50 \\ \\Omega$$.",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "lgnyj1w1",
@@ -441,8 +420,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "For voltmeter<br/><br/>\n$$\n\\begin{aligned}\n& \\mathrm{R}=\\frac{\\mathrm{V}}{\\mathrm{I}_{\\mathrm{g}}}-\\mathrm{G} \\\\\\\\\n& =\\frac{50}{10^{-3}}-54 \\approx 50 \\mathrm{k} \\Omega~(\\mathrm{A})\n\\end{aligned}\n$$<br/><br/>\nFor ammeter<br/><br/>\n$$\n\\mathrm{S}=\\frac{\\mathrm{I}_{\\mathrm{g}} \\mathrm{G}}{\\mathrm{I}-\\mathrm{I}_{\\mathrm{g}}}=\\frac{10^{-3} \\times 54}{(10-1) \\times 10^{-3}}=6 \\Omega~(\\mathrm{C})\n$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1ldnw0rsa",
@@ -463,8 +441,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<p>Assertion A is incorrect because the preferred voltmeter for measuring the potential difference across a resistance of 600 ohm is actually the voltmeter with a higher resistance, not a lower resistance. The reason for this is that when a voltmeter is connected in parallel with the resistance being measured, it will draw current away from the resistance, reducing the potential difference across it. A higher resistance voltmeter will draw less current and therefore have a smaller effect on the potential difference being measured.</p>\n\n<p>In this case, the voltmeter with resistance 4000 ohm would be preferred because it would draw less current than the voltmeter with resistance 1000 ohm, leading to a more accurate measurement of the potential difference across the resistance of 600 ohm.</p>\n\n<p>Therefore, assertion A is incorrect because it states that the voltmeter with resistance 1000 ohm is preferred, when in reality the voltmeter with resistance 4000 ohm is preferred.</p>\n\n\n<p>Reason R states that a voltmeter with higher resistance will draw smaller current than a voltmeter with lower resistance. This is correct because Ohm's law states that the current through a resistor is proportional to the voltage across it and inversely proportional to the resistance. Thus, a voltmeter with higher resistance will draw less current, making it a better choice for measuring the potential difference across another resistance.</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1ldwqp8xy",
@@ -485,8 +462,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1le4beg6w/f8e46281-d0b4-4633-967d-41b176518f4c/5e1dcf80-ac70-11ed-a551-772121b6ed7f/file-1le4beg6x.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1le4beg6w/f8e46281-d0b4-4633-967d-41b176518f4c/5e1dcf80-ac70-11ed-a551-772121b6ed7f/file-1le4beg6x.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 24th January Evening Shift Physics - Current Electricity Question 121 English Explanation\"><br><br>\n$$\n\\begin{aligned}\n&amp; \\mathrm{R}_{\\mathrm{eq}}=\\frac{400 \\times 100}{500}+100 \\\\\\\\\n&amp; =180 \\Omega \\\\\\\\\n&amp; \\mathrm{i}=\\frac{90}{180}=\\frac{1}{2} \\mathrm{~A} \\\\\\\\\n&amp; \\text { Reading }=\\frac{1}{2} \\times \\frac{400 \\times 100}{500} \\\\\\\\\n&amp; =40 \\text { volt }\n\\end{aligned}\n$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "ldo69h0d",
@@ -507,8 +483,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "Current sensitivity $=$ Voltage sensitivity $\\times R$\n\n<br/><br/>Current sensitivity is made $1.5$ times.\n\n<br/><br/>$R$ also increase $1.5$ times.\n\n<br/><br/>Hence voltage sensitivity $=\\frac{1.5 \\times \\text { current sensitivity }}{1.5 \\times R}$\n\n<br/><br/>$$\n=\\text { no change }\n$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1lh30oygz",
@@ -529,8 +504,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "For voltage measurement across $R_T$<br/><br/> Voltmeter should have very high resistance <br/><br/>$\\Rightarrow R_1$ should be in series with $G_1$ and Ammeter should be having very less resistance<br/><br/> $\\Rightarrow R_2$ should be in parallel with $G_2$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1lh31jio0",
@@ -546,8 +520,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "$$\ni_1=\\frac{2 V}{5 \\Omega}=\\frac{2}{5} \\mathrm{~A}\n$$<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lmjxha88/dbca81e0-fad9-423b-a82c-f2d110479be3/328d0170-5368-11ee-a24f-c39988942e14/file-6y3zli1lmjxha89.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lmjxha88/dbca81e0-fad9-423b-a82c-f2d110479be3/328d0170-5368-11ee-a24f-c39988942e14/file-6y3zli1lmjxha89.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 6th April Evening Shift Physics - Current Electricity Question 97 English Explanation\"><br>\n$$\ni=\\frac{1 V}{2 \\Omega}=\\frac{1}{2} A\n$$<br><br>\n$\\therefore$ Current through voltmeter $=i-i_1$<br><br>\n$$\n=\\frac{1}{2}-\\frac{2}{5}=\\frac{5-4}{10}=\\frac{1}{10} \\mathrm{~A}\n$$<br><br>\n$\\therefore$ For voltmeter<br><br>\n$$\n2=\\left(\\frac{1}{10}\\right) R \\Rightarrow R=20 \\Omega\n$$",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "1l5c2qi47",
@@ -568,8 +541,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5le9d7o/bb316064-5929-4f7d-9df2-1a7193aea921/ecc98e40-03a6-11ed-b731-675fd498ca49/file-1l5le9d7p.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5le9d7o/bb316064-5929-4f7d-9df2-1a7193aea921/ecc98e40-03a6-11ed-b731-675fd498ca49/file-1l5le9d7p.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 24th June Morning Shift Physics - Current Electricity Question 170 English Explanation\"></p>\n<p>$${{1.5 \\times 10} \\over {10 + {r \\over 2}}} = 1.2$$</p>\n<p>$$\\Rightarrow$$ r = 5 $$\\Omega$$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1l59poesd",
@@ -590,8 +562,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>According to the information, current through galvanometer = nK</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5kpt3dk/2d747c27-da40-45f5-81ac-b01f5f127587/4d249d80-0347-11ed-8429-27c3de0e24ff/file-1l5kpt3dl.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5kpt3dk/2d747c27-da40-45f5-81ac-b01f5f127587/4d249d80-0347-11ed-8429-27c3de0e24ff/file-1l5kpt3dl.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 25th June Evening Shift Physics - Current Electricity Question 176 English Explanation\"></p>\n<p>$$ \\Rightarrow {S \\over {S + G}}i = nK$$</p>\n<p>$$ \\Rightarrow i = {{nK(S + G)} \\over S}$$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1l5al5y8m",
@@ -612,8 +583,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>The circuit for the given situation is:</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5ky536y/839f6d87-1d8b-48ef-b90e-58dc536e3270/e3be5590-0367-11ed-af51-374257f3e209/file-1l5ky536z.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5ky536y/839f6d87-1d8b-48ef-b90e-58dc536e3270/e3be5590-0367-11ed-af51-374257f3e209/file-1l5ky536z.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 25th June Morning Shift Physics - Current Electricity Question 175 English Explanation\"></p>\n<p>Since G and S are in parallel,</p>\n<p>$$\\Rightarrow$$ $${i \\over 3}$$ $$\\times$$ G = $${2i \\over 3}$$ $$\\times$$ S</p>\n<p>$$\\Rightarrow$$ G = 2S</p>\n<p>$$\\Rightarrow$$ G equals twice the value of shunt resistance.</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1l57prg1l",
@@ -634,8 +604,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5jqemdq/c70f58cd-41c8-412b-8e71-6f5c0feb722d/db2a8ee0-02bc-11ed-95db-c3fa9a0f41ba/file-1l5jqemdr.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5jqemdq/c70f58cd-41c8-412b-8e71-6f5c0feb722d/db2a8ee0-02bc-11ed-95db-c3fa9a0f41ba/file-1l5jqemdr.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 27th June Morning Shift Physics - Current Electricity Question 181 English Explanation\"></p>\n<p>From the given setup</p>\n<p>$$y \\times {R_G} = (x - y)({R_S})$$</p>\n<p>$$ \\Rightarrow y \\times 72 = (x - y) \\times 8$$</p>\n<p>$$ \\Rightarrow 9y = x - y$$</p>\n<p>$$ \\Rightarrow y = {x \\over {10}}$$ or 10% of x</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1l56a5oww",
@@ -651,8 +620,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>For $${I_{10}} = 0$$</p>\n<p>$${R \\over 3} = {4 \\over 6}$$</p>\n<p>$$ \\Rightarrow R = 2\\,\\Omega $$</p>\n<p>$$ \\Rightarrow {I_A} = {{36 \\times (6 + 9)} \\over {6 \\times 9}}$$</p>\n<p>$$ = {{36 \\times 15} \\over {6 \\times 9}} = 10$$ A</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "1l54voy1n",
@@ -668,8 +636,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>New $${R_{eff}} = {{2000 \\times 500} \\over {2500}} + 600\\,\\Omega  = 1000\\,\\Omega $$</p>\n<p>$$\\Rightarrow$$ Reading of voltmeter $$ = {{400} \\over {1000}} \\times 20 = 8$$ volts</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "hCuMKiJ47eNOxB05jb1kmlwlddc",
@@ -685,8 +652,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "As galvanometer shows zero deflection so it act's as balanced wheatstone bridge.<br><br>$$ \\therefore $$ $${{12} \\over 6} = {x \\over {72 - x}}$$<br><br>$$ \\Rightarrow $$ 14 $$-$$ 2x = x<br><br>$$ \\Rightarrow $$ 3x = 144<br><br>$$ \\Rightarrow $$ x = 48 cm",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "1ktfm75yi",
@@ -707,8 +673,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "$${I_{\\max }} = {{50} \\over 2} = 25$$ mA<br><br>$$R = {V \\over I} = {{50mV} \\over {25mA}} = 2\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1kth5jj8l",
@@ -729,8 +694,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ku8evqld/88ef4107-ded3-49dc-b88d-4769003033b8/c9506d10-22bc-11ec-92a0-35c33c2a328d/file-1ku8evqle.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 31st August Morning Shift Physics - Current Electricity Question 200 English Explanation\"><br>0.02i Rg = 0.98i $$\\times$$ 5<br><br>Rg = 245 $$\\Omega$$<br><br>Option (c)",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "2iPRjBl8dAyZejKwENjgy2xukf3uaadv",
@@ -751,17 +715,16 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kjhdhx3o/75e3d653-d3ef-4b7b-ad08-adf8937d5558/0c8fb940-4de4-11eb-a99c-2769567411e4/file-1kjhdhx3p-388w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 3rd September Evening Slot Physics - Current Electricity Question 252 English Explanation\">\n<br><br><br>$$i = {6 \\over {800 + {{400 \\times 10000} \\over {400 + 10000}}}}$$<br><br>$$i = {6 \\over {800 + {{40000} \\over {104}}}}$$<br><br>$$i = {6 \\over {800 + 384.61}} = {6 \\over {1184.61}} = 0.00506$$\n<br><br>V<sub>400</sub> = i<sub>1</sub> $$ \\times $$ 400\n<br><br>= $$\\left( {{{{{10}^4}} \\over {400 + {{10}^4}}}} \\right)i \\times 400$$\n<br><br>= $$\\left( {{{{{10}^4}} \\over {400 + {{10}^4}}}} \\right)\\left( {0.00506} \\right) \\times 400$$\n<br><br>= 1.95 V",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "DAnXq686VdMsqgXco0jgy2xukfl4e626",
     "questionNumber": 4,
     "questionText": "A galvanometer is used in laboratory for\ndetecting the null point in electrical\nexperiments. If, on passing a current of 6 mA it\nproduces a deflection of 2<sup>o</sup>, its figure of merit\nis close to :",
     "options": [
-      "6 $$ \\times $$ 10<sup>\u20133</sup> A/div",
+      "6 $$ \\times $$ 10<sup>–3</sup> A/div",
       "666<sup>o</sup> A/div",
-      "3 $$ \\times $$ 10<sup>\u20133</sup> A/div",
+      "3 $$ \\times $$ 10<sup>–3</sup> A/div",
       "333<sup>o</sup> A/div"
     ],
     "correctOption": 2,
@@ -772,14 +735,13 @@
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
-    "solution": "figure of merit = $${I \\over \\theta }$$\n<br><br>= $${{6 \\times {{10}^{ - 3}}} \\over 2}$$\n<br><br>= 3 $$ \\times $$ 10<sup>\u20133</sup> A/div",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "figure of merit = $${I \\over \\theta }$$\n<br><br>= $${{6 \\times {{10}^{ - 3}}} \\over 2}$$\n<br><br>= 3 $$ \\times $$ 10<sup>–3</sup> A/div",
+    "section": "A"
   },
   {
     "id": "1yNqnTCFDtdFg02BWMjgy2xukfg9wky8",
     "questionNumber": 3,
-    "questionText": "A galvanometer of resistance G is converted\ninto a voltmeter of range 0 \u2013 1 V by connecting\na resistance R<sub>1</sub> in series with it. The additional\nresistance that should be connected in series\nwith R<sub>1</sub> to increase the range of the voltmeter\nto 0 \u2013 2 V will be :",
+    "questionText": "A galvanometer of resistance G is converted\ninto a voltmeter of range 0 – 1 V by connecting\na resistance R<sub>1</sub> in series with it. The additional\nresistance that should be connected in series\nwith R<sub>1</sub> to increase the range of the voltmeter\nto 0 – 2 V will be :",
     "options": [
       "G",
       "R<sub>1</sub>",
@@ -795,8 +757,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "1 = i<sub>g</sub>(G + R<sub>1</sub>) ....(1)\n<br><br>2 = i<sub>g</sub>(R<sub>1</sub> + R<sub>2</sub> + G)  ....(2)\n<br><br>Doing (1) $$ \\div $$ (2), we get\n<br><br>$${1 \\over 2} = {{{i_g}\\left( {G + {R_1}} \\right)} \\over {{i_g}\\left( {G + {R_1} + {R_2}} \\right)}}$$\n<br><br>$$ \\Rightarrow $$ R<sub>1</sub>\n + R<sub>2</sub>\n + G = 2R<sub>1</sub>\n + 2G\n<br><br>$$ \\Rightarrow $$ R<sub>2</sub>\n = R<sub>1</sub>\n + G",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "pc8M7D7DtnJbd4xoBbjgy2xukg0a1gfa",
@@ -817,8 +778,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "Ammeter is always connected in series and\nvoltmeter is connected in parallel.\n<img src=\"https://imagex.cdn.examgoal.net/jgy2xukgatagn4/05ca5ca7-8a2e-4013-a449-b1c21f77d94d/ac912310-0ee3-11eb-8293-3b6cc591631c/file-jgy2xukgatagn5-290w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 6th September Evening Slot Physics - Current Electricity Question 245 English Explanation\">",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "uFiuD4Rks8JQ2Ghhra7k9k2k5hgpxmr",
@@ -838,9 +798,8 @@
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
-    "solution": "i<sub>g</sub> = 1 mA , R<sub>g</sub> = 100 $$\\Omega $$\n<br><br>V = i<sub>g</sub>(R + R<sub>g</sub>)\n<br><br>$$ \\Rightarrow $$10 = 1 \u00d7 10<sup>\u20133</sup> (R + 100)\n<br><br>$$ \\Rightarrow $$R = 9.9 k$$\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "i<sub>g</sub> = 1 mA , R<sub>g</sub> = 100 $$\\Omega $$\n<br><br>V = i<sub>g</sub>(R + R<sub>g</sub>)\n<br><br>$$ \\Rightarrow $$10 = 1 × 10<sup>–3</sup> (R + 100)\n<br><br>$$ \\Rightarrow $$R = 9.9 k$$\\Omega $$",
+    "section": "A"
   },
   {
     "id": "Z2PsYRswNK26DDje0K1kjbgi7eu",
@@ -862,13 +821,12 @@
     "difficulty": "hard",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ksn6w992/caf5f3a2-8720-4465-a81a-e3db1363b239/e1ad4050-0344-11ec-aa1c-d9fff7d3eb63/file-1ksn6w993.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Advanced 2019 Paper 1 Offline Physics - Current Electricity Question 33 English Explanation 1\"> <br><br>$$V = 100 \\times {10^{ - 3}} = {10^{ - 1}}V$$<br><br>$$V = {{\\mathop{\\rm l}\\nolimits} _g}({R_g} + {R_v})$$<br><br>$${{{{10}^{ - 1}}} \\over {2 \\times {{10}^{ - 6}}}}={R_g} + {R_v}$$<br><br>$$5 \\times {10^4}\\Omega  \\approx {R_v}$$ ($$ \\because $$$${R_v} &lt; {10^5}\\Omega $$)<br><br> <img src=\"https://imagex.cdn.examgoal.net/1ksn6wqur/0c375209-7fda-4a60-b614-c5db0f15d568/ef466430-0344-11ec-aa1c-d9fff7d3eb63/file-1ksn6wqus.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Advanced 2019 Paper 1 Offline Physics - Current Electricity Question 33 English Explanation 2\"> \n<br><br>I<sub>g</sub>R<sub>g</sub> = (I - I<sub>g</sub>)S\n<br> <img src=\"https://imagex.cdn.examgoal.net/1ksn6wqur/0c375209-7fda-4a60-b614-c5db0f15d568/ef466430-0344-11ec-aa1c-d9fff7d3eb63/file-1ksn6wqus.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Advanced 2019 Paper 1 Offline Physics - Current Electricity Question 33 English Explanation 3\">\n<br><br>$$S = {{2 \\times {{10}^{ - 6}} \\times 10} \\over {{{10}^{ - 3}} - 2 \\times {{10}^{ - 6}}}}$$<br><br>$$S = 2 \\times {10^{ - 5}} \\times {10^3} = 2 \\times {10^{ - 2}} = 20m\\Omega $$<br><br>$${R_A} = {{S{R_g}} \\over {S + {R_g}}} = {{20 \\times {{10}^{ - 3}} \\times 10} \\over {10 + 20 \\times {{10}^{ - 3}}}}$$<br><br>$$ \\approx 20 \\times {10^{ - 3}}\\Omega $$<br><br>$$i = {\\varepsilon  \\over {\\left( {{{1000 \\times 50 \\times {{10}^3}} \\over {51 \\times {{10}^3}}}} \\right)}} = {{51\\varepsilon } \\over {5 \\times {{10}^4}}}$$<br><br>($$ \\because $$ R<sub>A</sub> $$ \\to $$ 0)<br><br>$$i' = i\\left( {{{{R_v}} \\over {51 \\times {{10}^3}}}} \\right) = {\\varepsilon  \\over {1000}}$$<br><br>Measured resistance,<br><br>$$ \\therefore $$ $${R_m} = {{i' \\times 1000} \\over i} = {\\varepsilon  \\over {51\\varepsilon }} \\times 5 \\times 10 = 980.4\\Omega $$<br><br>If the voltmeter shows full scale deflection then<br><br>$${\\varepsilon  \\over {980}} \\times \\left( {{{1000} \\over {51 \\times {{10}^3}}}} \\right) \\times 5 \\times {10^4} = {10^{ - 1}}$$<br><br>$$\\varepsilon  = 999.6$$ mV<br><br>Since, i<sub>A</sub> = 1 mA so maximum reading of R can be<br><br>$${{999.6\\,mV} \\over {1\\,mA}} = 999.6\\Omega $$",
     "section": "Sec 1",
-    "instruction": "",
-    "type": "SCQ"
+    "instruction": ""
   },
   {
     "id": "0RwKSwzaxYnS1NjJBT18hoxe66ijvztbapo",
     "questionNumber": 7,
-    "questionText": "A moving coil galvanometer allows a full scale\ncurrent of 10<sup>\u20134</sup> A. A series resistance of 2 M$$\\Omega $$\nis required to convert the above galvanometer\ninto a voltmeter of range 0-5 V. Therefore the\nvalue of shunt resistance required to convert the\nabove galvanometer into an ammeter of range\n0.10 mA is :",
+    "questionText": "A moving coil galvanometer allows a full scale\ncurrent of 10<sup>–4</sup> A. A series resistance of 2 M$$\\Omega $$\nis required to convert the above galvanometer\ninto a voltmeter of range 0-5 V. Therefore the\nvalue of shunt resistance required to convert the\nabove galvanometer into an ammeter of range\n0.10 mA is :",
     "options": [
       "200 $$\\Omega $$",
       "500 $$\\Omega $$",
@@ -884,8 +842,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "Given data,\n<br><br>$$\n\\begin{aligned}\nI  =10^{-4} \\mathrm{~A}, \\\\\\\\\nR_S  =2 \\mathrm{M} \\Omega=2 \\times 10^6 \\Omega, \\\\\\\\\nV_{\\max }  =5 \\mathrm{~V}\n\\end{aligned}\n$$\n<br><br>Let internal resistance of galvanometer is $R_G$.\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lj1zmexe/1c7aa9ec-09df-4229-b070-17a125b93818/d1a89810-0e25-11ee-b193-e7c493386590/file-6y3zli1lj1zmexf.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lj1zmexe/1c7aa9ec-09df-4229-b070-17a125b93818/d1a89810-0e25-11ee-b193-e7c493386590/file-6y3zli1lj1zmexf.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2019 (Online) 10th April Morning Slot Physics - Current Electricity Question 272 English Explanation\">\n<br>Then,\n<br><br>$$\n\\begin{array}{lc} \n I \\times R_S+I \\times R_G=V_{\\max } \\\\\\\\\n\\Rightarrow  2 \\times 10^6 \\times 10^{-4}+10^{-4} \\times R_G=5 \\\\\\\\\n\\Rightarrow  10^{-4} R_G=5-200=-195 \\\\\\\\\n\\text { or }  R_G=-195 \\times 10^4 \\Omega\n\\end{array}\n$$\n<br><br>Resistance cannot be negative.\n<br><br>$\\therefore$ No option is correct.",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "YT7RwK5Ja7WshBqG1L18hoxe66ijvztisa7",
@@ -905,9 +862,8 @@
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
-    "solution": "For the given circuit<br><br>\n<img src=\"https://imagex.cdn.examgoal.net/7kejek18l6id4/037216b7-8978-49cb-807c-29000f22f68c/25a4ff80-e4b3-11e9-a7bc-b7b08ce8d541/file-7kejek18l6id5-268w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th April Morning Slot Physics - Current Electricity Question 271 English Explanation\">\nGiven that V<sub>AB</sub> = 2 V<br><br>\n$$ \\therefore $$ I = $${2 \\over {15}} + {2 \\over {10}} = {1 \\over 3}A$$<br><br>\nAlso I(2r + 2) = 1.5 + 1.5 \u2013 V<sub>AB</sub><br><br>\n$$ \\Rightarrow $$ 2r + 2 = (3\u20132)3<br><br>\n$$ \\Rightarrow $$ $$r = {1 \\over 2}\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "For the given circuit<br><br>\n<img src=\"https://imagex.cdn.examgoal.net/7kejek18l6id4/037216b7-8978-49cb-807c-29000f22f68c/25a4ff80-e4b3-11e9-a7bc-b7b08ce8d541/file-7kejek18l6id5-268w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th April Morning Slot Physics - Current Electricity Question 271 English Explanation\">\nGiven that V<sub>AB</sub> = 2 V<br><br>\n$$ \\therefore $$ I = $${2 \\over {15}} + {2 \\over {10}} = {1 \\over 3}A$$<br><br>\nAlso I(2r + 2) = 1.5 + 1.5 – V<sub>AB</sub><br><br>\n$$ \\Rightarrow $$ 2r + 2 = (3–2)3<br><br>\n$$ \\Rightarrow $$ $$r = {1 \\over 2}\\Omega $$",
+    "section": "A"
   },
   {
     "id": "73cGZSdMnYzbD7YcVxFVC",
@@ -928,8 +884,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "0.95 R = $${{R{R_v}} \\over {R + {R_v}}}$$\n<br><br>0.95 $$ \\times $$ 30 = 0.05 R<sub>v</sub>\n<br><br>R<sub>v</sub> = 19 $$ \\times $$ 30 = 570 $$\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "y6ZZO93FxMi6gRCvgSFJ3",
@@ -950,8 +905,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "R<sub>g</sub> = 20$$\\Omega $$\n<br><br>N<sub>L</sub> = N<sub>R</sub> = N = 30\n<br><br>FOM = $${1 \\over \\phi }$$ = 0.005 A/Div.\n<br><br>Current sentivity = CS = $$\\left( {{1 \\over {0.005}}} \\right)$$ = $${\\phi  \\over {\\rm I}}$$\n<br><br>$${\\rm I}$$g<sub>max</sub> = 0.005 $$ \\times $$ 30\n<br><br>= 15 $$ \\times $$ 10<sup>$$-$$2</sup> = 0.15\n<br><br>15 = 0.15 [20 + R]\n<br><br>100 = 20 + R\n<br><br>R = 80 ",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "R9SAZKwXxdLWzsVBun3rsa0w2w9jx7g1ya9",
@@ -972,8 +926,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "Galvanometer is converted into ammeter of range 0 to I<sub>0</sub> :\n<img src=\"https://imagex.cdn.examgoal.net/3rsa0w4kejxsdmix6/7e3b6c09-ee00-40de-ac27-e39133d644f3/6975eaa0-a064-11e9-a4ff-cd603c22e5ad/file-3rsa0w4kejxsdmix7.png\" alt=\"JEE Main 2019 (Online) 12th April Evening Slot Physics - Current Electricity Question 266 English Explanation 1\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\">\n<br>(I<sub>o</sub> - I<sub>g</sub>)R<sub>A</sub> = I<sub>g</sub>G\n<br>$$ \\Rightarrow $$ $${R_A} = {{{I_g}G} \\over {\\left( {{I_0} - {I_g}} \\right)}}$$............(1)\n<br><br>Galvanometer is converted into voltmeter of range 0 to V :\n<img src=\"https://imagex.cdn.examgoal.net/3rsa0w4kejxsek9hu/52c13560-2b95-405c-886f-6cd6cbe5732d/13b0af20-a068-11e9-a4ff-cd603c22e5ad/file-3rsa0w4kejxsek9hv.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th April Evening Slot Physics - Current Electricity Question 266 English Explanation 2\">\n<br>V = I<sub>g</sub>(R<sub>V</sub> + G)\n<br>Also given, V = GI<sub>0</sub>\n<br>$$ \\therefore $$ GI<sub>0</sub> = I<sub>g</sub>(R<sub>V</sub> + G)\n<br>$$ \\Rightarrow $$ $${R_V} = {{G\\left( {{I_0} - {I_g}} \\right)} \\over {{I_g}}}$$ .........(2)\n<br><br>From equation (1) and (2)\n<br>$${R_A}{R_V} = {G^2}$$\n<br>$${{{R_A}} \\over {{R_V}}} = {\\left( {{{{I_g}} \\over {{I_0} - {I_g}}}} \\right)^2}$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "OZGlkEmOIAFO7PiXJx3rsa0w2w9jx3ogfe3",
@@ -993,9 +946,8 @@
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
-    "solution": "V = E \u2013 Ir<br><br>\nWhen V = V<sub>0</sub> = 0 $$ \\Rightarrow $$ 0 = E \u2013 Ir<br><br>\n$$ \\therefore $$ E = r<br><br>\nWhen I = 0, V = E = 1.5 V<br><br>\n$$ \\therefore $$ r = 1.5 $$\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "V = E – Ir<br><br>\nWhen V = V<sub>0</sub> = 0 $$ \\Rightarrow $$ 0 = E – Ir<br><br>\n$$ \\therefore $$ E = r<br><br>\nWhen I = 0, V = E = 1.5 V<br><br>\n$$ \\therefore $$ r = 1.5 $$\\Omega $$",
+    "section": "A"
   },
   {
     "id": "UcTqW9EwawMGoCyEpj3rsa0w2w9jx3mwfob",
@@ -1015,14 +967,13 @@
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
-    "solution": "20 \u00d7 50 \u00d7 10<sup>\u20136</sup> = 10<sup>\u20133</sup> Amp<br><br>\n$${V_1} = {2 \\over {{{10}^{ - 3}}}} = 100 + {R_1}$$<br><br>\n$$1900 = {R_1}$$<br><br>\n$${V_2} = {{10} \\over {{{10}^{ - 3}}}} = \\left( {2000 + {R_2}} \\right)$$<br><br>\n$${R_2} = 8000$$<br><br>\n$${V_3} = {{20} \\over {{{10}^{ - 3}}}} = 10 \\times {10^3} + {R_3} = 10 \\times {10^3}{R_3}$$",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "20 × 50 × 10<sup>–6</sup> = 10<sup>–3</sup> Amp<br><br>\n$${V_1} = {2 \\over {{{10}^{ - 3}}}} = 100 + {R_1}$$<br><br>\n$$1900 = {R_1}$$<br><br>\n$${V_2} = {{10} \\over {{{10}^{ - 3}}}} = \\left( {2000 + {R_2}} \\right)$$<br><br>\n$${R_2} = 8000$$<br><br>\n$${V_3} = {{20} \\over {{{10}^{ - 3}}}} = 10 \\times {10^3} + {R_3} = 10 \\times {10^3}{R_3}$$",
+    "section": "A"
   },
   {
     "id": "jOqz53VZQQm7z1S2BiHUc",
     "questionNumber": 8,
-    "questionText": "A galvanometer, whose resistance is 50 ohm, has 25 divisions in it. When a current of 4 $$ \\times $$ 10<sup>\u20134</sup> A passes through it, its needle ( pointer) deflects by one division. To use this galvanometer as a voltmeter of range 2.5 V, it should be connected to a resistance of : ",
+    "questionText": "A galvanometer, whose resistance is 50 ohm, has 25 divisions in it. When a current of 4 $$ \\times $$ 10<sup>–4</sup> A passes through it, its needle ( pointer) deflects by one division. To use this galvanometer as a voltmeter of range 2.5 V, it should be connected to a resistance of : ",
     "options": [
       "200 ohm",
       "250 ohm",
@@ -1038,8 +989,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "I<sub>g</sub> = 4 $$ \\times $$ 10<sup>$$-$$4</sup> $$ \\times $$ 25 = 10<sup>$$-$$2</sup> A\n<br><br><img src=\"https://imagex.cdn.examgoal.net/NO9cm4KIAMta0SDmv/gohP2pOWLs5vRl7GMVS2VgmvLzJp2/TaJDrJ9mojUY3r6fx30F13/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th January Evening Slot Physics - Current Electricity Question 287 English Explanation\">\n<br><br>2.5 = (50 + R) 10<sup>$$-$$2</sup>\n<br><br>$$ \\therefore $$&#160;&#160;&#160;R = 200 $$\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "fmuzQlhzjKN6UggNrS6xP",
@@ -1060,13 +1010,12 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<b>case I :</b>\n<br><br>i<sub>g</sub> = $${E \\over {220 + {R_g}}}$$ = C$$\\theta $$<sub>0</sub> &nbsp;&nbsp;&nbsp; . . .(i)\n<br><br><b>Case II :</b>\n<br><br>i<sub>g</sub> = $$\\left( {{E \\over {220 + {{5{R_g}} \\over {5 + {R_g}}}}}} \\right)$$ $$ \\times $$ $${5 \\over {\\left( {{R_g} + 5} \\right)}}$$ = $${{C{\\theta _0}} \\over 5}$$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(ii)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$${{5E} \\over {225{R_g} + 1100}}$$ = $${{C{\\theta _0}} \\over 5}$$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(ii)\n<br><br>$${E \\over {220 + {R_g}}} = C\\theta $$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(i)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$${{225{R_g} + 1100} \\over {1100 + 5{R_g}}} = 5$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;5500 + 25R<sub>g</sub> = 225R<sub>g</sub> + 1100\n<br><br>200R<sub>g</sub> = 4400\n<br><br>R<sub>g</sub> = 22$$\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "Zo4UwXxVxxd17xakDSp73",
     "questionNumber": 7,
-    "questionText": "The resistance of a galvanometer is 50 ohm and\nthe maximum current which can be passed\nthrough it is 0.002 A. What resistance must be\nconnected to it in order to convert it into an\nammeter of range 0 \u2013 0.5 A ?",
+    "questionText": "The resistance of a galvanometer is 50 ohm and\nthe maximum current which can be passed\nthrough it is 0.002 A. What resistance must be\nconnected to it in order to convert it into an\nammeter of range 0 – 0.5 A ?",
     "options": [
       "0.02 ohm",
       "0.2 ohm",
@@ -1081,9 +1030,8 @@
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
-    "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kejek188r06n/c64ed293-a04f-47bf-b52b-0b4abb2e691d/88ea03f0-e482-11e9-a7bc-b7b08ce8d541/file-7kejek188r06o-359w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Physics - Current Electricity Question 277 English Explanation\"><br><br>\nWe have<br>\nI<sub>g</sub> R<sub>g</sub> = (0.5 \u2013 I<sub>g</sub>) S<br><br>\n$$ \\Rightarrow $$ (0.002) (50) = (0.5 \u2013 I<sub>g</sub>) S<br><br>\n$$ \\Rightarrow S \\simeq {{0.002 \\times 50} \\over {0.5}} = 0.2\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "<img src=\"https://imagex.cdn.examgoal.net/7kejek188r06n/c64ed293-a04f-47bf-b52b-0b4abb2e691d/88ea03f0-e482-11e9-a7bc-b7b08ce8d541/file-7kejek188r06o-359w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Physics - Current Electricity Question 277 English Explanation\"><br><br>\nWe have<br>\nI<sub>g</sub> R<sub>g</sub> = (0.5 – I<sub>g</sub>) S<br><br>\n$$ \\Rightarrow $$ (0.002) (50) = (0.5 – I<sub>g</sub>) S<br><br>\n$$ \\Rightarrow S \\simeq {{0.002 \\times 50} \\over {0.5}} = 0.2\\Omega $$",
+    "section": "A"
   },
   {
     "id": "SSiE5nee84TR580txzma9",
@@ -1103,9 +1051,8 @@
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
-    "solution": "G = 50 $$\\Omega $$<br><br/>\nS = 5000 $$\\Omega $$<br><br/>\nI<sub>g</sub> = 4 \u00d7 10<sup>\u20133</sup><br><br/>\nV = i<sub>g</sub> (G + S)<br><br/>\nV = 4 \u00d7 10<sup>\u20133</sup> (50 + 5000)<br><br/>\n= 4 \u00d7 10<sup>\u20133</sup> (5050) = 20.2 volt",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "G = 50 $$\\Omega $$<br><br/>\nS = 5000 $$\\Omega $$<br><br/>\nI<sub>g</sub> = 4 × 10<sup>–3</sup><br><br/>\nV = i<sub>g</sub> (G + S)<br><br/>\nV = 4 × 10<sup>–3</sup> (50 + 5000)<br><br/>\n= 4 × 10<sup>–3</sup> (5050) = 20.2 volt",
+    "section": "A"
   },
   {
     "id": "C9NxWuKFx68qorS2nifad",
@@ -1126,8 +1073,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<p>Current required by unit deflection is 60 $$\\mu$$A.</p>\n<p>For, $$\\theta$$ = 9 current is I = 9 $$\\times$$ 60 $$\\mu$$A</p>\n<p>$$\\Rightarrow$$ I = 540 $$\\mu$$A = 540 $$\\times$$ 10<sup>$$-$$6</sup> A</p>\n<p>Let G is resistance of galvanometer. Then,</p>\n<p>$$540 \\times {10^{ - 6}} = {6 \\over {(11000 + G)}}$$</p>\n<p>[11000 + G] 90 $$\\times$$ 10<sup>$$-$$6</sup> = 1</p>\n<p>99000 + 9G = 10<sup>5</sup></p>\n<p>9G = 100000 $$-$$ 99000</p>\n<p>9G = 1000</p>\n<p>$$G = {{1000} \\over 9}\\Omega $$</p>\n<p>Also, in half deflection method,</p>\n<p>$$G = {{RS} \\over {R - S}} \\Rightarrow {{1000} \\over 9} = {{11000\\,S} \\over {11000 - S}}$$</p>\n<p>$${1 \\over 9} = {{11S} \\over {11000 - S}} \\Rightarrow 11000 - S = 99\\,S$$</p>\n<p>100 S = 11000 $$\\Rightarrow$$ S = 110 $$\\Omega$$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "vzQHFuKMH5gDmq87s6WNr",
@@ -1148,18 +1094,17 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/MWP2GShPC5j3dosNg/PXEVmhQke4YH3yx2OGqciJufTXJYc/vYgOfvaAKbJ5gGM0nfkLrv/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Online) 16th April Morning Slot Physics - Current Electricity Question 320 English Explanation\">\n<br><br>Given, \n<br><br>I<sub>g</sub> = 1 ma\n<br><br>I $$-$$ I<sub>g</sub> = 2 A\n<br><br>R<sub>g</sub> = 25 $$\\Omega $$\n<br><br>$$\\therefore\\,\\,\\,$$ I<sub>g</sub> R<sub>g</sub> = (I $$-$$ I<sub>g</sub>) S\n<br><br>$$ \\Rightarrow $$ $$\\,\\,\\,$$ S = $${{{{10}^{ - 3}} \\times 25} \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $$\\,\\,\\,$$ S =  1.25 $$ \\times $$ 10<sup>$$-$$2</sup> $$\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "5aT5yJbIhnIdc8J8",
     "questionNumber": 6,
-    "questionText": "When a current of 5 mA is passed through a galvanometer having a coil of resistance 15$$\\Omega $$, it shows full\nscale deflection. The value of the resistance to be put in series with the galvanometer to convert it into a\nvoltmeter of range 0 \u2013 10V is:",
+    "questionText": "When a current of 5 mA is passed through a galvanometer having a coil of resistance 15$$\\Omega $$, it shows full\nscale deflection. The value of the resistance to be put in series with the galvanometer to convert it into a\nvoltmeter of range 0 – 10V is:",
     "options": [
-      "4.005 \u00d7 10<sup>3</sup> $$\\Omega $$",
-      "1.985 \u00d7 10<sup>3</sup> $$\\Omega $$",
-      "2.535 \u00d7 10<sup>3</sup> $$\\Omega $$",
-      "2.045 \u00d7 10<sup>3</sup> $$\\Omega $$"
+      "4.005 × 10<sup>3</sup> $$\\Omega $$",
+      "1.985 × 10<sup>3</sup> $$\\Omega $$",
+      "2.535 × 10<sup>3</sup> $$\\Omega $$",
+      "2.045 × 10<sup>3</sup> $$\\Omega $$"
     ],
     "correctOption": 1,
     "correctAnswer": null,
@@ -1169,9 +1114,8 @@
     "subject": "Physics",
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
-    "solution": "Given : Current through the galvanometer,\n<br><br>i<sub>g</sub> = 5 \u00d7 10<sup>\u20133</sup> A\n<br><br>Galvanometer resistance, G = 15 $$\\Omega $$\n<br><br>Let resistance R to be put in series with the galvanometer to\nconvert it into a voltmeter.\n<br><br>V = i<sub>g</sub> (R + G)\n<br><br>10 = 5 \u00d7 10<sup>\u20133</sup> (R + 15)\n<br><br>$$ \\therefore $$ R = 2000 \u2013 15 = 1985\n<br><br>= 1.985 \u00d7 10<sup>3</sup> $$\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "solution": "Given : Current through the galvanometer,\n<br><br>i<sub>g</sub> = 5 × 10<sup>–3</sup> A\n<br><br>Galvanometer resistance, G = 15 $$\\Omega $$\n<br><br>Let resistance R to be put in series with the galvanometer to\nconvert it into a voltmeter.\n<br><br>V = i<sub>g</sub> (R + G)\n<br><br>10 = 5 × 10<sup>–3</sup> (R + 15)\n<br><br>$$ \\therefore $$ R = 2000 – 15 = 1985\n<br><br>= 1.985 × 10<sup>3</sup> $$\\Omega $$",
+    "section": "A"
   },
   {
     "id": "fr7gNeAPVLv92Y0nm76zQ",
@@ -1192,8 +1136,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "Assume equivalent resistance of the infinite network is x.\n<br><br>The circuit can be redrawn like this, \n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l83o3jm4/9ec9cb27-fb68-445d-b397-81001e91889e/f09db4c0-354b-11ed-8c5c-f3f0850e6b94/file-1l83o3jm5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l83o3jm4/9ec9cb27-fb68-445d-b397-81001e91889e/f09db4c0-354b-11ed-8c5c-f3f0850e6b94/file-1l83o3jm5.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2017 (Online) 8th April Morning Slot Physics - Current Electricity Question 317 English Explanation\"><br>Here 4 $$\\Omega $$ and x $$\\Omega $$ are parallel, \n<br><br>$$\\therefore\\,\\,\\,$$ $${1 \\over {{x_{eq}}}}$$ = $${1 \\over 4}$$ + $${1 \\over x}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ x<sub>eq</sub> = $${{4x} \\over {4 + x}}$$\n<br><br>$$\\therefore\\,\\,\\,$$ Equivalent resistance between point A and B is , \n<br><br>x = $${{4x} \\over {4 + x}}$$ + 2\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ x = $$ {{8 + 6x} \\over {4 + x}}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 4x + x<sup>2</sup> = 8 + 6x\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$  x<sup>2</sup> $$-$$ 2x $$-$$ 8 = 0\n<br><br>$$ \\Rightarrow $$ $$\\,\\,\\,$$ x = $${{2 \\pm \\sqrt {4 - 4\\left( 1 \\right)\\left( { - 8} \\right)} } \\over 2}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$x = $${{2 \\pm 6} \\over 2}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ =  4 $$\\Omega $$\n<br><br>(as negative value of x is not acceptable)\n<br><br>$$\\therefore\\,\\,\\,$$ Reading of Aonmeter,  A<sub>1</sub> = $${V \\over {R + r}}$$\n<br><br>A<sub>1</sub> = $${9 \\over {4\\,\\, + 0.5}}$$ = 2 A",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "HSgaFtXC9rsMREtVLf1klfevcy9",
@@ -1215,8 +1158,7 @@
     "difficulty": "medium",
     "solution": "<p>Let i<sub>g</sub> be the current that gives full deflection of the galvanometer. When all components are connected in series (see figure), effective resistance of the circuit is $${R_e} = 2R + 2{R_c}$$ and maximum current allowed in the circuit is i<sub>g</sub>.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0ram91h/6df808f6-9437-44c7-8553-bc3d34449b75/4d919750-a3e8-11ec-9889-8ff85cf85963/file-1l0ram91i.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0ram91h/6df808f6-9437-44c7-8553-bc3d34449b75/4d919750-a3e8-11ec-9889-8ff85cf85963/file-1l0ram91i.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 2 Offline Physics - Current Electricity Question 29 English Explanation 1\"></p>\n<p>Thus, the voltage between A and B is</p>\n<p>$${V_{AB}} = {i_g}{R_e} = 2{i_g}(R + {R_c})$$.</p>\n<p>Consider the case when two resistors and one galvanometer are connected in series and the second galvanometer is connected in parallel.</p>\n<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0ran77f/bfa6f6cc-5dee-47e1-ba1d-fa440054523d/67f5e0b0-a3e8-11ec-9889-8ff85cf85963/file-1l0ran77g.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0ran77f/bfa6f6cc-5dee-47e1-ba1d-fa440054523d/67f5e0b0-a3e8-11ec-9889-8ff85cf85963/file-1l0ran77g.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 2 Offline Physics - Current Electricity Question 29 English Explanation 2\"></p>\n<p>The maximum current through each galvanometer is i<sub>g</sub> and the maximum current through the resistors is 2i<sub>g</sub>. Apply Kirchhoff's law to get the voltage between A and B as</p>\n<p>$$V{'_{AB}} = 2{i_g}R + 2{i_g}R + {i_g}{R_c}$$</p>\n<p>$$ = 2{i_g}(R + {R_c}) + 2{i_g}(R - {R_c}/2)$$</p>\n<p>$$ = {V_{AB}} + 2{i_g}(R - {R_c}/2)$$</p>\n<p>$$ &gt; {V_{AB}}$$ ($$\\because$$ $${R_c} &lt; R/2$$).</p>\n<p>Consider the case when all four components are connected in parallel.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0rao0o7/633fe2e6-ef51-4bc7-9b78-b89b4bbc5964/7eb8e770-a3e8-11ec-9889-8ff85cf85963/file-1l0rao0o8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0rao0o7/633fe2e6-ef51-4bc7-9b78-b89b4bbc5964/7eb8e770-a3e8-11ec-9889-8ff85cf85963/file-1l0rao0o8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 2 Offline Physics - Current Electricity Question 29 English Explanation 3\"></p>\n<p>Let i and i<sub>g</sub> be the currents through the resistors and the galvanometers. By Kirchhoff's law, $$iR = {i_g}{R_c}$$, which gives $$i = {i_g}{R_c}/R$$. The current between A and B is</p>\n<p>$${I_{AB}} = 2i + 2{i_g} = 2{i_g}(1 + {R_c}/R)$$.</p>\n<p>Consider the case when the two galvanometers are connected in series and the combination is connected in parallel with both the resistors.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0raq2tg/577142db-0706-4d4a-9e1c-6cee3ee319a8/b7ff8840-a3e8-11ec-9889-8ff85cf85963/file-1l0raq2th.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0raq2tg/577142db-0706-4d4a-9e1c-6cee3ee319a8/b7ff8840-a3e8-11ec-9889-8ff85cf85963/file-1l0raq2th.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 2 Offline Physics - Current Electricity Question 29 English Explanation 4\"></p>\n<p>$$I{'_{AB}} = {i_g} + 2i = {i_g} + 2{i_g}(2{R_c}/R)$$</p>\n<p>$$ = 2{i_g}(1 + {R_c}/R) - (1 - 2{R_c}/R){i_g}$$</p>\n<p>$$ = {I_{AB}} - (1 - 2{R_c}/R){i_g}$$</p>\n<p>$$ &lt; {I_{AB}}$$ ($$\\because$$ $${R_c} &lt; R/2$$).</p>",
     "section": "Sec 1",
-    "instruction": "",
-    "type": "SCQ"
+    "instruction": ""
   },
   {
     "id": "OJAkST2XymZYeR9P",
@@ -1237,8 +1179,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "$${\\rm I}gG = \\left( {{\\rm I} - {\\rm I}g} \\right)s$$\n<br><br>$$\\therefore$$ $${10^{ - 3}} \\times 100 = \\left( {10 - {{10}^{ - 3}}} \\right) \\times S$$\n<br><br>$$\\therefore$$ $$S \\approx 0.01\\,\\,\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "V9o4nKvXVSLkC19r9Kkcf",
@@ -1259,8 +1200,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "Let full scale deflection of current = I\n<br><br>In case 1, when R = 2400 $$\\Omega $$ and deflection of 40 divisions present.\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$${{40} \\over {50}}{\\rm I} = {V \\over {G + R}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${4 \\over 5}{\\rm I}$$  = $${2 \\over {G + 2400}}$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(1)\n<br><br>Incase 2, when R = 4900 $$\\Omega $$ and deflection of 20 divisions present \n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$${{20} \\over {50}}{\\rm I} = {V \\over {G + R}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${2 \\over 5}{\\rm I}$$ = $${2 \\over {G + 4900}}$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(2)\n<br><br>From (1) and (2) we get, \n<br><br>$${4 \\over 2} = {{G + 4900} \\over {G + 2400}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;2G + 4800 $$=$$ G + 4900\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;G $$=$$  100 $$\\Omega $$\n<br><br>Putting value of G in equation (1), we get,\n<br><br>$${4 \\over 5}{\\rm I} = {2 \\over {100 + 2400}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${\\rm I} = 1$$ mA\n<br><br>Current sensitivity  $$=$$ $${{\\rm I} \\over {number\\,\\,of\\,\\,divisions}}$$\n<br><br>$$=$$ $${1 \\over {50}}$$\n<br><br>$$=$$ 0.02 mA / division\n<br><br>$$=$$ 20 $$\\mu $$A / division\n<br><br>Resistance required for deflection of 10 divisions\n<br><br>$${{10} \\over {50}}{\\rm I} = {V \\over {G + R}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${1 \\over 5} \\times 1 \\times {10^{ - 3}} = {2 \\over {100 + R}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;R $$=$$ 9900  $$\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "LC0K6IK81EzYqMbWH6iN1",
@@ -1281,8 +1221,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/XyI5NjBtKOpSllyTL/bIjWzHC0osPyvPXlEUjHK9i3Cwsak/aV5WWhEsonAdjUhfPxeROI/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2016 (Online) 9th April Morning Slot Physics - Current Electricity Question 313 English Explanation\">\n<br><br>Current in the circuit without ammeter \n<br><br>I $$=$$ $${5 \\over {50}} = 0.1$$ A\n<br><br>$$ \\therefore $$&#160;&#160;&#160;With ammeter current $$=$$ 0.1 $$ \\times $$ $${{99} \\over {100}}$$ = 0.099 A\n<br><br>With ammeter equivalent resistance, \n<br><br>R<sub>eq</sub> = 50 + $${{100\\,{r_s}} \\over {100 + {r_s}}}$$\n<br><br>$$ \\therefore $$&#160;&#160;&#160;0.099 = $${5 \\over {50 + {{100\\,{r_s}} \\over {100 + {r_s}}}}}$$\n<br><br>$$ \\Rightarrow $$&#160;&#160;&#160;50 + $${{100\\,{r_s}} \\over {100 + {r_s}}}$$  = $${5 \\over {0.099}}$$\n<br><br>$$ \\Rightarrow $$&#160;&#160;&#160;$${{100\\,{r_s}} \\over {100 + {r_s}}} = 0.5$$\n<br><br>$$ \\Rightarrow $$&#160;&#160;&#160;100 r<sub>s</sub> = 50 + 0.5r<sub>s</sub>\n<br><br>$$ \\Rightarrow $$&#160;&#160;&#160;99.5 r<sub>s</sub> = 50\n<br><br>$$ \\Rightarrow $$&#160;&#160;&#160;r<sub>s</sub> $$=$$ $${{50} \\over {99.5}} = 0.5\\,\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1ky3zic8b",
@@ -1299,8 +1238,7 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1ky4nh3kf/8cc68bed-7b91-4241-9606-e858040b0d9b/1f477df0-6fdc-11ec-a9fb-bdca08c4d901/file-1ky4nh3kg.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1ky4nh3kf/8cc68bed-7b91-4241-9606-e858040b0d9b/1f477df0-6fdc-11ec-a9fb-bdca08c4d901/file-1ky4nh3kg.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2014 Paper 1 Offline Physics - Current Electricity Question 23 English Explanation 1\"> <br>$${i_g}(G + 4990) = V$$<br><br>$$ \\Rightarrow {6 \\over {1000}}(G + 4990) = 30$$<br><br>$$ \\Rightarrow G + 4990 = {{30,000} \\over 6} = 5000$$<br><br>$$ \\Rightarrow G = 10\\,\\Omega $$<br><br>$${V_{ab}} = {V_{cd}}$$<br><br>$$ \\Rightarrow {i_g}G = (1.5 - {i_g})S$$<br><br> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1ky4ni1nl/059a8c00-b460-4e82-b979-cc6f7c90d91b/399c8510-6fdc-11ec-bb8f-b3be3f2269a8/file-1ky4ni1nm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1ky4ni1nl/059a8c00-b460-4e82-b979-cc6f7c90d91b/399c8510-6fdc-11ec-bb8f-b3be3f2269a8/file-1ky4ni1nm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2014 Paper 1 Offline Physics - Current Electricity Question 23 English Explanation 2\"> <br>$$ \\Rightarrow {6 \\over {1000}} \\times 10 = \\left( {1.5 - {6 \\over {1000}}} \\right)S$$<br><br>$$ \\Rightarrow S = {{60} \\over {1494}} = {{2n} \\over {249}}$$<br><br>$$ \\Rightarrow n = {{249 \\times 30} \\over {1494}} = {{2490} \\over {498}} = 5$$",
     "section": "Sec 2",
-    "instruction": "",
-    "type": "NUMERICAL"
+    "instruction": ""
   },
   {
     "id": "EMaCvdCkcJFexPVY",
@@ -1321,8 +1259,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "Statements $${\\rm I}$$ is false and Statement $${\\rm I}$$$${\\rm I}$$ is true\n<br><br>For ammeter, shunt resistance,  $$S = {{{{\\rm I}_g}G} \\over {{\\rm I} - {{\\rm I}_g}}}$$\n<br><br>Therefore for $${\\rm I}$$ to increase, $$S$$ should decrease, So additional $$S$$ can be connected across it.",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "ztgSr6Loh3Y9B6B4",
@@ -1343,8 +1280,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "According to the condition of balancing\n<br><br>$${{55} \\over {20}} = {R \\over {80}} \\Rightarrow R = 220\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "6SoJA5XIwlMKlyVQ",
@@ -1365,8 +1301,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "Mass deposited\n<br><br>$$m = Zq \\Rightarrow Z \\propto {1 \\over q} \\Rightarrow {{{Z_1}} \\over {{Z_2}}} = {{{q_2}} \\over {{q_1}}}\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( i \\right)$$\n<br><br>Also  $$q = {q_1} + {q_2}\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( {ii} \\right)$$\n<br><br>$$ \\Rightarrow {q \\over {{q_2}}} = {{{q_1}} \\over {{q_2}}} + 1\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$(\\,Dividing\\,\\,\\left( {ii} \\right)$$ by $$\\left. {{q_2}\\,} \\right)$$\n<br><br>$$ \\Rightarrow {q_2} = {q \\over {1 + {{{q_1}} \\over {{q_2}}}}}\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( {iii} \\right)$$\n<br><br>From equations $$(i)$$ and $$(iii),$$ $${q_2} = {q \\over {1 + {{{Z_2}} \\over {{z_1}}}}}$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "VHZhaZm0gNUAMLRG",
@@ -1387,8 +1322,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/XjzEMMCS6x6iv3Jcy/bI98Kq4znRaSpoCcgwoE0p8ec7JNK/IYA5tEr0vnFIRO5cBFW692/image.svg\" loading=\"lazy\" alt=\"AIEEE 2005 Physics - Current Electricity Question 359 English Explanation\"> \n<br><br>$$iR = 2 = 12 - 500i$$\n<br><br>$$\\therefore$$ $$i = {1 \\over {50}}$$\n<br><br>$$\\therefore$$ $${1 \\over {50}} \\times R = 2$$\n<br><br>$$R = 100\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "cpZym95vLWxghTMx",
@@ -1409,8 +1343,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "medium",
     "solution": "<b>KEY CONCEPT :</b> Resistance of Galvanometer,\n<br><br>$$G = {{Current\\,\\,\\,sensitivity} \\over {Voltage\\,\\,\\,sensityvity}} \\Rightarrow G = {{10} \\over 2} = 5\\Omega $$\n<br><br>Here  $${i_g} = $$ Full scale deflection current  $$ = {{150} \\over {10}} = 15\\,\\,mA$$\n<br><br>$$V=$$ voltage to be measured $$=150$$ volts\n<br><br>(such that each division reads $$1$$ volt)\n<br><br>$$ \\Rightarrow R = {{150} \\over {15 \\times {{10}^{ - 3}}}} - 5 = 9995\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "oCfPjGdX87Zk9NBi",
@@ -1431,8 +1364,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "Let $$\\theta $$ be the smallest temperature difference that can be detected by the thermocouple, then\n<br><br>$$I \\times R = \\left( {25 \\times {{10}^{ - 6}}} \\right)\\theta $$\n<br><br>where $${\\rm I}$$ is the smallest current which can be detected by the galvanometer of resistance $$R.$$\n<br><br>$$\\therefore$$ $${10^{ - 5}} \\times 40 = 25 \\times {10^{ - 6}} \\times \\theta $$\n<br><br>$$\\therefore$$ $$\\theta  = {16^ \\circ }C.$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "uq9zqy6WgFx7CtG0",
@@ -1453,8 +1385,7 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "$${i_g} \\times G = \\left( {i - {i_g}} \\right)S$$\n<br><br>$$\\therefore$$ $$S = {{{i_g} \\times G} \\over {i - {i_g}}} = {{1 \\times 0.81} \\over {10 - 1}} = 0.09\\Omega $$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "uiLFmxxbPDGgE81u",
@@ -1475,7 +1406,6 @@
     "topic": "galvanometer-voltmeter-and-ammeter",
     "difficulty": "easy",
     "solution": "<b>KEY CONCEPT :</b> To convert a galvanometer into a voltmeter we connect a high resistance in series with the galvanometer.\n<br><br>The same procedure needs to be done if ammeter is to be used as a voltmeter.",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   }
 ]
