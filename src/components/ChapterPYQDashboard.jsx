@@ -224,6 +224,12 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, i
 
         
       {/* Header with Back Button */}
+        {pyqData?.audioUrl && (
+          <div className="mb-4 bg-[#1e1e24] p-4 rounded-xl border border-[#2d2d35]">
+            <h3 className="text-sm font-bold text-white mb-2">Chapter Audio</h3>
+            <audio controls src={pyqData.audioUrl} className="w-full" />
+          </div>
+        )}
         <div className="flex items-center gap-4 mb-4">
           <button onClick={onBack} className="p-2 hover:bg-white/10 rounded-full text-white transition-all hover:scale-105 active:scale-95">
             <ArrowLeft className="w-6 h-6" />

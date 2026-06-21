@@ -1,26 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import BarChart from 'lucide-react/dist/esm/icons/bar-chart';
-import BookOpen from 'lucide-react/dist/esm/icons/book-open';
-import Clock from 'lucide-react/dist/esm/icons/clock';
-import PlayCircle from 'lucide-react/dist/esm/icons/play-circle';
-import LogOut from 'lucide-react/dist/esm/icons/log-out';
-import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
-import Lock from 'lucide-react/dist/esm/icons/lock';
-import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check';
-import Trophy from 'lucide-react/dist/esm/icons/trophy';
-import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
-import Target from 'lucide-react/dist/esm/icons/target';
-import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
-import BrainCircuit from 'lucide-react/dist/esm/icons/brain-circuit';
-import FileText from 'lucide-react/dist/esm/icons/file-text';
-import Download from 'lucide-react/dist/esm/icons/download';
-import Flame from 'lucide-react/dist/esm/icons/flame';
-import Send from 'lucide-react/dist/esm/icons/send';
-import Globe from 'lucide-react/dist/esm/icons/globe';
-import ListOrdered from 'lucide-react/dist/esm/icons/list-ordered';
-import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
-import X from 'lucide-react/dist/esm/icons/x';
-import Play from 'lucide-react/dist/esm/icons/play';
+import { BarChart, BookOpen, Clock, PlayCircle, LogOut, CheckCircle, Lock, ShieldCheck, Trophy, Sparkles, Target, ArrowRight, BrainCircuit, FileText, Download, Flame, Send, Globe, ListOrdered, RotateCcw, X, Play } from 'lucide-react';
 import { loadDbFromBlob } from '../blob';
 import VideoPlayer from '../components/VideoPlayer';
 import PdfViewer from '../components/PdfViewer';
@@ -62,7 +41,6 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
   const [examGoalOverviewConfig, setExamGoalOverviewConfig] = useState(null);
 
   const pyqSetsProgress = usePYQProgress(selectedPyqTopic?.id || 'sets_and_relations');
-  const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
 
   const hasCourseAccess = (courseKey) => {
     return true;
@@ -119,15 +97,9 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
     setPurchasedList(list);
 
     const loadTests = async () => {
-      try {
-        const examType = testCategory === 'jee-advanced' ? 'JEE Advanced' : 'JEE Main';
-        const res = await fetch(`${API_BASE}/api/test-series?exam=${examType}`);
-        const activeData = await res.json();
-        setTests(activeData);
-        localStorage.setItem('quantrex_tests', JSON.stringify(activeData));
-      } catch (err) {
-        console.error('Failed to load tests', err);
-      }
+      const activeData = testCategory === 'jee-advanced' ? advancedTestsData : testsData;
+      setTests(activeData);
+      localStorage.setItem('quantrex_tests', JSON.stringify(activeData));
     };
     loadTests();
   }, [courses, user, testCategory]);
@@ -363,8 +335,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
 
                           const slug = ch.url ? ch.url.split('/').pop() : ch.id;
                           const fetchSlug = selectedSyllabusClass === 'jee-advanced' ? 'adv-' + slug : slug;
-                          const examTypeStr = selectedSyllabusClass === 'jee-advanced' ? 'JEE%20Advanced' : 'JEE%20Main';
-                          fetch(`${API_BASE}/api/pyqs/questions?chapterId=${ch.id}&exam=${examTypeStr}`)
+                          fetch(`/data/questions/${fetchSlug}.json?_t=${Date.now()}`)
                             .then(res => res.json())
                             .then(data => {
                               if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
@@ -625,8 +596,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                         onClick={() => {
                                           setIsPyqLoading(true);
                                           setActivePyqData(null);
-                                          const examTypeStr = selectedSyllabusClass === 'jee-advanced' ? 'JEE%20Advanced' : 'JEE%20Main';
-                                          fetch(`${API_BASE}/api/pyqs/questions?chapterId=${chapter.id}&exam=${examTypeStr}`)
+                                          fetch(`/data/questions/${fetchSlug}.json?_t=${Date.now()}`)
                                             .then(res => res.json())
                                             .then(data => {
                                               if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
@@ -673,8 +643,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                             onClick={() => {
                                               setIsPyqLoading(true);
                                               setActivePyqData(null);
-                                              const examTypeStr = selectedSyllabusClass === 'jee-advanced' ? 'JEE%20Advanced' : 'JEE%20Main';
-                                              fetch(`${API_BASE}/api/pyqs/questions?chapterId=${chapter.id}&exam=${examTypeStr}`)
+                                              fetch(`/data/questions/${fetchSlug}.json?_t=${Date.now()}`)
                                                 .then(res => res.json())
                                                 .then(data => {
                                                   if (data && data.topics && data.questions && !Array.isArray(data.questions)) {

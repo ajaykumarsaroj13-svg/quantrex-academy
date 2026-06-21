@@ -72,7 +72,11 @@
       "difficulty": "hard",
       "solution": "<p>Let an arbitrary point in the XY plane be $P(x,y)$.</p>\n<p>The electrostatic potential $V$ at a distance $r$ from a point charge $Q$ is derived from the work done per unit charge bringing it from infinity to that point:</p>\n<p>$$V=\\frac{kQ}{r}$$</p>\n<p>where $k=\\frac{1}{4\\pi\\varepsilon_0}$.</p>\n<p>The distance $r_1$ from the point $P_1(a,b)$ to $P(x,y)$ is given by the distance formula:</p>\n<p>$$r_1=\\sqrt{(x-a)^2+(y-b)^2}$$</p>\n<p>The potential $V_1$ at $P(x,y)$ due to $Q_1=q$ is:</p>\n<p>$$V_1=\\frac{kq}{\\sqrt{(x-a)^2+(y-b)^2}}$$</p>\n<p>The distance $r_2$ from the point $P_2(ma,mb)$ to $P(x,y)$ is:</p>\n<p>$$r_2=\\sqrt{(x-ma)^2+(y-mb)^2}$$</p>\n<p>The potential $V_2$ at $P(x,y)$ due to $Q_2=mq$ is:</p>\n<p>$$V_2=\\frac{k(mq)}{\\sqrt{(x-ma)^2+(y-mb)^2}}$$</p>\n<p>For the locus of points satisfying the condition $|V_1|=|V_2|$:</p>\n<p>$$\\left|\\frac{kq}{\\sqrt{(x-a)^2+(y-b)^2}}\\right|=\\left|\\frac{kmq}{\\sqrt{(x-ma)^2+(y-mb)^2}}\\right|$$</p>\n\n<p>$$\\frac{1}{\\sqrt{(x-a)^2+(y-b)^2}}=\\frac{m}{\\sqrt{(x-ma)^2+(y-mb)^2}}$$</p>\n<p>Squaring both sides</p>\n<p>$$\\frac{1}{(x-a)^2+(y-b)^2}=\\frac{m^2}{(x-ma)^2+(y-mb)^2}$$</p>\n<p>$$ (x-ma)^2+(y-mb)^2=m^2\\left[(x-a)^2+(y-b)^2\\right] $$</p>\n<p>For $m=-1$</p>\n<p>$$ (x-(-1)a)^2+(y-(-1)b)^2=(-1)^2\\left[(x-a)^2+(y-b)^2\\right] $$</p>\n<p>$$ (x+a)^2+(y+b)^2=(x-a)^2+(y-b)^2 $$</p>\n<p>$$ x^2+2ax+a^2+y^2+2by+b^2=x^2-2ax+a^2+y^2-2by+b^2 $$</p>\n<p>$$ 2ax+2by=-2ax-2by $$</p>\n<p>$$ 4ax+4by=0 \\rightarrow ax+by=0 $$</p>\n<p>Thus, option (A) is correct.</p>\n<p>For $m=2$</p>\n<p>$$ (x-2a)^2+(y-2b)^2=2^2\\left[(x-a)^2+(y-b)^2\\right] $$</p>\n<p>$$ (x-2a)^2+(y-2b)^2=4\\left[(x-a)^2+(y-b)^2\\right] $$</p>\n<p>$$ (x^2-4ax+4a^2)+(y^2-4by+4b^2)=4(x^2-2ax+a^2+y^2-2by+b^2) $$</p>\n<p>$$ x^2-4ax+4a^2+y^2-4by+4b^2=4x^2-8ax+4a^2+4y^2-8by+4b^2 $$</p>\n<p>$$ (4x^2-x^2)+(-8ax+4ax)+(4a^2-4a^2)+(4y^2-y^2)+(-8by+4by)+(4b^2-4b^2)=0 $$</p>\n<p>$$ 3x^2-4ax+3y^2-4by=0 $$</p>\n<p>$$ x^2-\\frac{4}{3}ax+y^2-\\frac{4}{3}by=0 $$</p>\n<p>The standard circle form $(x^2+y^2+2gx+2fy+c=0)$:</p>\n<p>$$ \\left(x-\\frac{2}{3}a\\right)^2-\\left(\\frac{2}{3}a\\right)^2+\\left(y-\\frac{2}{3}b\\right)^2-\\left(\\frac{2}{3}b\\right)^2=0 $$</p>\n<p>$$ \\left(x-\\frac{2}{3}a\\right)^2+\\left(y-\\frac{2}{3}b\\right)^2=\\frac{4}{9}a^2+\\frac{4}{9}b^2=\\frac{4}{9}(a^2+b^2) $$</p>\n<p>This is a circle equation of the form $(x-x_c)^2+(y-y_c)^2=R^2$:</p>\n<p>Where the centre is $(x_c,y_c)=\\left(\\frac{2}{3}a,\\frac{2}{3}b\\right)$</p>\n<p>And radius is $R=\\sqrt{\\frac{4}{9}(a^2+b^2)}=\\frac{2}{3}\\sqrt{a^2+b^2}$</p>\n\n\n<p>Thus, option (B) is correct.</p>\n<p>For $m=-2$</p>\n<p>$(x-(-2) a)^2+(y-(-2) b)^2=(-2)^2\\left[(x-a)^2+(y-b)^2\\right]$</p>\n<p>$(x+2 a)^2+(y+2 b)^2=4\\left[(x-a)^2+(y-b)^2\\right]$</p>\n<p>$$x^2+4ax+4a^2+y^2+4by+4b^2=4x^2-8ax+4a^2+4y^2-8by+4b^2$$</p>\n\n<p>$$3x^2 - 12ax + 3y^2 - 12by = 0$$</p>\n<p>$$x^2 - 4ax + y^2 - 4by = 0$$</p>\n<p>$$(x - 2a)^2 - 4a^2 + (y - 2b)^2 - 4b^2 = 0$$</p>\n<p>$$(x - 2a)^2 + (y - 2b)^2 = 4a^2 + 4b^2 = 4(a^2 + b^2)$$</p>\n<p>This is also a circle with centre $(2a, 2b)$ and radius</p>\n<p>$$\\sqrt{4(a^2 + b^2)} = 2\\sqrt{a^2 + b^2}$$</p>\n<p>Thus, option (C) is correct.</p>\n<p>For $m = -3$</p>\n<p>$$(x + 3a)^2 + (y + 3b)^2 = 9[(x - a)^2 + (y - b)^2]$$</p>\n<p>$$x^2 + 6ax + 9a^2 + y^2 + 6by + 9b^2 = 9x^2 - 18ax + 9a^2 + 9y^2 - 18by + 9b^2$$</p>\n<p>$$8x^2 - 24ax + 8y^2 - 24by = 0$$</p>\n<p>$$x^2 - 3ax + y^2 - 3by = 0$$</p>\n<p>This also represents a circle, not a straight line as given by $3bx + 3ay = 0$. Thus, option (D) is incorrect.</p>\n<p>Therefore, the correct options are (A), (B) and (C).</p>",
       "section": "Sec 1",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        1
+      ]
     },
     {
       "id": "mp9wot44",
@@ -94,7 +98,12 @@
       "difficulty": "hard",
       "solution": "<p>An electric dipole consists of two equal and opposite charges separated by a distance vector $\\vec{d}$. The electric dipole moment vector $\\overrightarrow{\\mathrm{p}}$ is defined as :</p>\n<p>$$ \\overrightarrow{\\mathrm{p}}=\\mathrm{q} \\overrightarrow{\\mathrm{~d}} $$</p>\n<p><img alt=\"JEE Advanced 2026 Paper 2 Online Physics - Electrostatics Question 1 English Explanation 1\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpp6gcnd/64baa0d8-76ab-4439-9c1a-4f233cb9fa1a/a5cc7f90-5a67-11f1-a82b-8fccf67591bd/file-6y3zli1mpp6gcne.webp?format=webp\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpp6gcnd/64baa0d8-76ab-4439-9c1a-4f233cb9fa1a/a5cc7f90-5a67-11f1-a82b-8fccf67591bd/file-6y3zli1mpp6gcne.webp\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>When the dipole is placed in a uniform electric field $\\vec{E}=E \\hat{\\jmath}$. The force experienced by a point charge $Q$ in an electric field is given by $\\vec{F}=Q \\vec{E}$</p>\n<p>The force on the positive charge $+q$ is:</p>\n<p>$$ \\overrightarrow{\\mathrm{F}}_{+}=(+\\mathrm{q})(\\mathrm{E} \\hat{\\jmath})=\\mathrm{qE} \\hat{\\jmath} $$</p>\n<p>The force on the negative charge -q is:</p>\n<p>$$ \\overrightarrow{\\mathrm{F}}_{-}=(-\\mathrm{q})(\\mathrm{E} \\hat{\\jmath})=-\\mathrm{qE} \\hat{\\jmath} $$</p>\n<p><img alt=\"JEE Advanced 2026 Paper 2 Online Physics - Electrostatics Question 1 English Explanation 2\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpp6hych/eeb49b45-6955-402e-b5cb-4256631272da/d25e6910-5a67-11f1-a82b-8fccf67591bd/file-6y3zli1mpp6hyci.webp?format=webp\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpp6hych/eeb49b45-6955-402e-b5cb-4256631272da/d25e6910-5a67-11f1-a82b-8fccf67591bd/file-6y3zli1mpp6hyci.webp\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The total external force $\\overrightarrow{\\mathrm{F}}_{\\mathrm{ext}}$ acting on the dipole system is the vector sum of these individual forces:</p>\n<p>$$ \\overrightarrow{\\mathrm{F}}_{\\mathrm{ext}}=\\overrightarrow{\\mathrm{F}}_{+}+\\overrightarrow{\\mathrm{F}}_{-}=\\mathrm{qE} \\hat{\\jmath}+(-\\mathrm{qE} \\hat{\\jmath})=0 $$</p>\n<p>By Newton's second law for a system of particles, the acceleration of the center of mass $\\overrightarrow{\\mathrm{a}}_{\\mathrm{cm}}$ is related to the net external force by:</p>\n<p>$$ \\overrightarrow{\\mathrm{F}}_{\\mathrm{ext}}=\\mathrm{M}_{\\mathrm{total}} \\overrightarrow{\\mathrm{a}}_{\\mathrm{cm}} \\Rightarrow \\overrightarrow{\\mathrm{a}}_{\\mathrm{cm}}=0 $$</p>\n<p>Since the dipole is initially completely at rest, its initial center of mass velocity is zero. Because the net external acceleration remains zero at all times, the center of mass must remain stationary at its initial position. It does not deflect in any direction. Thus, option (A) is incorrect.</p>\n<p>The torque $\\vec{\\tau}$ exerted by a uniform electric field on a dipole is given by the vector cross product:</p>\n<p>$$ \\vec{\\tau}=\\overrightarrow{\\mathrm{p}} \\times \\overrightarrow{\\mathrm{E}} $$</p>\n<p>Initially, at $t=0, \\overrightarrow{\\mathrm{p}}$ points along $\\hat{1}$ and $\\overrightarrow{\\mathrm{E}}$ points along $\\hat{\\mathrm{j}}$.</p>\n<p>As the dipole rotates, let $\\theta$ be the instantaneous angle that the dipole moment vector makes with the positive x -axis (î).</p>\n<p><img alt=\"JEE Advanced 2026 Paper 2 Online Physics - Electrostatics Question 1 English Explanation 3\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpp6k8p8/ebba6433-5c35-467f-9a01-c2e50431bc60/11fc44c0-5a68-11f1-a82b-8fccf67591bd/file-6y3zli1mpp6k8p9.webp?format=webp\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpp6k8p8/ebba6433-5c35-467f-9a01-c2e50431bc60/11fc44c0-5a68-11f1-a82b-8fccf67591bd/file-6y3zli1mpp6k8p9.webp\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The magnitude of this restoring torque tending to align the dipole with the electric field along $\\hat{\\jmath}$ is:</p>\n<p>$$ \\tau=|\\overrightarrow{\\mathrm{p}}||\\overrightarrow{\\mathrm{E}}| \\sin \\left(\\frac{\\pi}{2}-\\theta\\right)=\\mathrm{pE} \\cos \\theta=\\mathrm{qdE} \\cos \\theta $$</p>\n<p>The moment of inertia I of the dipole rotating about its center of mass (the midpoint of the fixed distance d , since both charges have identical mass m ) is:</p>\n<p>$$I = m\\left(\\frac{d}{2}\\right)^2 + m\\left(\\frac{d}{2}\\right)^2 = \\frac{md^2}{4} + \\frac{md^2}{4} = \\frac{1}{2}md^2$$</p>\n<p>Using work-energy theorem for rotational systems the work done by the torque equals the change in the rotational kinetic energy of the system:</p>\n<p>$$W = \\int\\limits_{0}^{\\theta_f} \\tau \\, d\\theta = \\Delta K_{\\mathrm{rot}}$$</p>\n<p>Substituting the expression for torque:</p>\n<p>$$W = \\int\\limits_{0}^{\\theta_f} (qdE \\cos \\theta) \\, d\\theta = qdE\\,[\\sin \\theta]_{0}^{\\theta_f} = qdE \\sin \\theta_f$$</p>\n<p>Since the dipole starts from rest, its initial kinetic energy is zero ($K_i = 0$):</p>\n<p>$$\\Delta K_{\\mathrm{rot}} = K_f - 0 = \\frac{1}{2}I\\omega_f^2$$</p>\n<p>$$\\frac{1}{2}I\\omega_f^2 = qdE \\sin \\theta_f$$</p>\n<p>Substituting the expression for the moment of inertia $I = \\frac{1}{2}md^2$:</p>\n<p>$$\\frac{1}{2}\\left(\\frac{1}{2}md^2\\right)\\omega_f^2 = qdE \\sin \\theta_f$$</p>\n<p>$$\\frac{1}{4}md^2\\omega_f^2 = qdE \\sin \\theta_f \\rightarrow \\omega_f^2 = \\frac{4qE}{md}\\sin \\theta_f$$</p>\n<p>$$\\omega_f = \\sqrt{\\frac{4qE}{md}\\sin \\theta_f}$$</p>\n<p>For $\\omega_f = \\sqrt{\\frac{2qE}{md}}$</p>\n<p>$$\\sqrt{\\frac{4qE}{md}}\\sin \\theta_f = \\sqrt{\\frac{2qE}{md}}$$</p>\n<p>$$\\frac{4qE}{md}\\sin \\theta_f = \\frac{2qE}{md}$$</p>\n<p>$$4\\sin \\theta_f = 2 \\rightarrow \\sin \\theta_f = \\frac{2}{4} = \\frac{1}{2}$$</p>\n<p>$$\\theta_f = \\frac{\\pi}{6}$$</p>\n<p>Thus, option (B) is correct.</p>\n<p>When $\\theta_f = \\frac{\\pi}{3}$ using work-energy theorem,</p>\n<p>$$\\Delta K = qdE\\sin \\theta_f$$</p>\n<p>$$\\Delta K = qdE\\sin\\left(\\frac{\\pi}{3}\\right) = qdE\\left(\\frac{\\sqrt{3}}{2}\\right) = \\frac{\\sqrt{3}}{2}qEd$$</p>\n<p>Thus, Option (C) is incorrect.</p>\n<p>At $t=t_f$, the electric field is completely turned off $(\\vec{E}=0)$.</p>\n<p>When the electric field becomes zero, the electric torque acting on the dipole falls to zero</p>\n<p>$$ \\vec{\\tau}=\\vec{p} \\times 0=0 $$</p>\n<p>According to the rotational form of Newton's second law:</p>\n<p>$$ \\vec{\\tau}=\\vec{I} \\alpha \\Rightarrow \\vec{\\alpha}=0 $$</p>\n<p>Since the angular acceleration $\\vec{\\alpha}$ is zero for all times $\\mathrm{t}&gt;\\mathrm{t}_{\\mathrm{f}}$, the angular velocity must remain constant at its final value $\\omega_{\\mathrm{f}}$. Thus, Option (D) is correct.</p>\n<p>Therefore, the correct options are (B) and (D).</p>",
       "section": "Sec 1",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "id": "mp9w73j8",
@@ -108,7 +117,7 @@
       ],
       "correctOption": 1,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
@@ -130,7 +139,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
@@ -138,7 +147,11 @@
       "difficulty": "hard",
       "solution": "<p>The prism angle be A and the refractive index be n .</p>\n<p><img alt=\"JEE Advanced 2026 Paper 2 Online Physics - Geometrical Optics Question 1 English Explanation 1\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpp58cjc/99271638-6eae-4564-8795-dc8aca1b5531/de1c2f80-5a62-11f1-a82b-8fccf67591bd/file-6y3zli1mpp58cjd.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpp58cjc/99271638-6eae-4564-8795-dc8aca1b5531/de1c2f80-5a62-11f1-a82b-8fccf67591bd/file-6y3zli1mpp58cjd.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The sum of the interior refraction angles at the first and second surfaces ( $r_1$ and $r_2$ ) is equal to the prism angle</p>\n<p>$$ \\mathrm{r}_1+\\mathrm{r}_2=\\mathrm{A} $$</p>\n<p>At the condition of minimum deviation $\\left(\\delta=\\delta_{\\mathrm{m}}\\right)$, the path of the light ray through the prism becomes completely symmetric with respect to the two refracting faces. Therefore, the angle of incidence equals the angle of emergence ( $\\mathrm{i}=\\mathrm{e}$ ),</p>\n<p>So, $\\mathrm{r}_1=\\mathrm{r}_2=\\mathrm{r}$</p>\n<p>$$ \\Rightarrow r+r=A \\Rightarrow r=\\frac{A}{2} $$</p>\n<p>Applying Snell's law at the first refracting surface:</p>\n<p>$$  \\sin \\mathrm{i}=\\mathrm{n} \\sin \\mathrm{r}_1=\\mathrm{n} \\sin \\left(\\frac{\\mathrm{~A}}{2}\\right) . \\tag{i}  $$</p>\n<p>The light ray as it exits Prism 1, reflects off the horizontal mirror M , and enters Prism 2.</p>\n<p>The vertical faces $a_1 b_1$ and $a_2 b_2$ are given as parallel to each other and perpendicular to the horizontal mirror M.</p>\n<p><img alt=\"JEE Advanced 2026 Paper 2 Online Physics - Geometrical Optics Question 1 English Explanation 2\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpp5at6k/487fa3fa-6266-426b-94fe-98d1ec16a783/229617c0-5a63-11f1-a82b-8fccf67591bd/file-6y3zli1mpp5at6l.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpp5at6k/487fa3fa-6266-426b-94fe-98d1ec16a783/229617c0-5a63-11f1-a82b-8fccf67591bd/file-6y3zli1mpp5at6l.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Since the faces $a_1 b_1$ and $a_2 b_2$ are perpendicular to the mirror, any line perpendicular to these vertical faces is exactly parallel to the mirror M .</p>\n<p>Let the ray emerge from the face $a_1 b_1$ at an angle of emergence $e_1$ relative to the normal of face $a_1 b_1$. Because the face normal is horizontal (parallel to M ), the angle that the emerging ray makes with the horizontal line is exactly $\\mathrm{e}_1$.</p>\n<p>This ray travels downward and strikes the horizontal mirror M . By the law of reflection, the angle of incidence equals the angle of reflection relative to the normal of the mirror.</p>\n<p>In terms of the angle made with the horizontal mirror surface:</p>\n<p>Angle of incidence with horizontal $=\\mathrm{e}_1$</p>\n<p>Angle of reflection with horizontal $=\\mathrm{e}_1$</p>\n<p>The reflected ray travels upward toward the vertical face $a_2 b_2$ of Prism 2 .</p>\n<p>Since face $a_2 b_2$ is parallel to face $a_1 b_1$, its surface normal is also horizontal. Therefore, the ray approaching face $a_2 b_2$ makes an angle $e_1$ with the horizontal line. This means the angle of incidence $i_2$ at the face $a_2 b_2$ must be equal to $\\mathrm{e}_1$ :</p>\n<p>$$ \\mathrm{i}_2=\\mathrm{e}_1 $$</p>\n<p>If prism 1 is operating at its minimum deviation condition, then its angle of incidence ( $\\mathrm{i}_1$ ) equals its angle of emergence ( $\\mathrm{e}_1$ ).</p>\n<p>Using equation (i).</p>\n<p>$$ \\sin \\mathrm{e}_1=\\mathrm{n}_1 \\sin \\left(\\frac{\\mathrm{~A}_1}{2}\\right) $$</p>\n<p>Since $\\mathrm{i}_2=\\mathrm{e}_1$</p>\n<p>$$ \\sin \\mathrm{i}_2=\\mathrm{n}_1 \\sin \\left(\\frac{\\mathrm{~A}_1}{2}\\right) $$</p>\n<p>So, according to the geometry of the parallel faces and the mirror, making it always true. Thus, Option (D) is correct.</p>\n<p>If prism 2 is operating at its minimum deviation condition, then its angle of incidence ( $\\mathrm{i}_2$ ) equals its angle of emergence ( $\\mathrm{e}_2$ ).</p>\n<p>$$ \\sin \\mathrm{i}_2=\\mathrm{n}_2 \\sin \\left(\\frac{\\mathrm{~A}_2}{2}\\right) $$</p>\n<p>Since $\\mathrm{i}_2=\\mathrm{e}_1$,</p>\n<p>$\\sin \\mathrm{e}_1=\\mathrm{n}_2 \\sin \\left(\\frac{\\mathrm{~A}_2}{2}\\right)$.</p>\n<p>If only prism 2 is at minimum deviation, the relationship between $\\mathrm{e}_1$ and $\\mathrm{i}_1$ depends only on the specific properties of prism 1 (prism angle $A_1$ and refractive index $n_1$ ). Thus, $\\sin i_1=n_2 \\sin \\left(\\frac{A_2}{2}\\right)$ is not always true. Thus, option (B) is incorrect.</p>\n<p>If both prisms are simultaneously operating at minimum deviation, then:</p>\n<p>From prism 1: $\\sin \\mathrm{e}_1=\\mathrm{n}_1 \\sin \\left(\\frac{\\mathrm{~A}_1}{2}\\right)$</p>\n<p>From prism 2: $\\sin i_2=n_2 \\sin \\left(\\frac{A_2}{2}\\right)$</p>\n<p>Since $\\mathrm{i}_2=\\mathrm{e}_1$, their sines must be identical $\\sin \\mathrm{i}_2=\\sin \\mathrm{e}_1$ :</p>\n<p>$$ n_1 \\sin \\left(\\frac{A_1}{2}\\right)=n_2 \\sin \\left(\\frac{A_2}{2}\\right) $$</p>\n<p>$$ \\frac{\\mathrm{n}_2}{\\mathrm{n}_1}=\\frac{\\sin \\left(\\frac{\\mathrm{A}_1}{2}\\right)}{\\sin \\left(\\frac{\\mathrm{A}_2}{2}\\right)} $$</p>\n<p>Thus, option (A) is correct.</p>\n<p>For thin prisms ( $\\mathrm{A} \\ll 1$ radian) under small angles of incidence, the minimum deviation expression using the small-angle approximation $\\sin \\theta \\approx \\theta$ :</p>\n<p>$$   \\delta_{\\mathrm{m} 1}=\\left(\\mathrm{n}_1-1\\right) \\mathrm{A}_1 \\Rightarrow \\mathrm{~A}_1=\\frac{\\delta_{\\mathrm{m} 1}}{\\mathrm{n}_1-1} $$\n\n<br><br>$$  \\delta_{\\mathrm{m} 2}=\\left(\\mathrm{n}_2-1\\right) \\mathrm{A}_2 \\Rightarrow \\mathrm{~A}_2=\\frac{\\delta_{\\mathrm{m} 2}}{\\mathrm{n}_2-1}  $$</p>\n<p>The base face $a_1 b_1$ makes an angle of $\\frac{A_1}{2}$ with the face $a_1 c_1$ since the prisms are isosceles.</p>\n<p>Similarly, face $a_2 b_2$ makes an angle of $\\frac{A_2}{2}$ with face $a_2 c_2$.</p>\n<p>Because the vertical lines $a_1 b_1$ and $a_2 b_2$ are parallel, the total angle between the outer faces $a_1 c_1$ and $a_2 c_2$ when extended to meet at the top is simply the sum of their individual inclinations relative to the vertical line:</p>\n<p><img alt=\"JEE Advanced 2026 Paper 2 Online Physics - Geometrical Optics Question 1 English Explanation 3\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mpp5fes7/461263f8-1d6e-4aee-935f-5fc6bcedaeb0/a2825a70-5a63-11f1-a82b-8fccf67591bd/file-6y3zli1mpp5fes8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mpp5fes7/461263f8-1d6e-4aee-935f-5fc6bcedaeb0/a2825a70-5a63-11f1-a82b-8fccf67591bd/file-6y3zli1mpp5fes8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$$\\theta = \\frac{A_1}{2} + \\frac{A_2}{2}$$</p>\n<p>Substituting the expressions for $A_1$ and $A_2$ from the thin-prism approximation</p>\n<p>$$\\theta = \\frac{1}{2}\\left(\\frac{\\delta_{m1}}{n_1 - 1}\\right) + \\frac{1}{2}\\left(\\frac{\\delta_{m2}}{n_2 - 1}\\right)$$</p>\n<p>$$\\theta = \\frac{\\delta_{m1}}{2(n_1 - 1)} + \\frac{\\delta_{m2}}{2(n_2 - 1)}$$</p>\n<p>Thus, option (C) is correct.</p>\n<p>Therefore, the correct options are (A), (C), and (D).</p>",
       "section": "Sec 2",
-      "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FIVE (05)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        3
+      ]
     },
     {
       "id": "mp9wctz1",
@@ -152,7 +165,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
@@ -174,7 +187,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
@@ -196,7 +209,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
@@ -459,7 +472,7 @@
       ],
       "correctOption": 2,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
@@ -481,7 +494,7 @@
       ],
       "correctOption": 1,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
@@ -503,7 +516,7 @@
       ],
       "correctOption": 2,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
@@ -525,7 +538,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
@@ -547,7 +560,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
@@ -796,7 +809,11 @@
       "difficulty": "medium",
       "solution": "<p>$$I=\\int\\limits_{0}^{2} \\frac{1}{3+3^x}\\,dx \\quad \\ldots\\ (1)$$</p>\n<p>$$I=\\int\\limits_{0}^{2} \\frac{1}{3+3^{2-x}}\\,dx \\quad \\ldots\\ (2)$$</p>\n<p>Adding (1) and (2)</p>\n<p>$$2I=\\int\\limits_{0}^{2} \\left(\\frac{1}{3+3^x}+\\frac{3^x}{3(3+3^x)}\\right)dx$$</p>\n<p>$$2I=\\int\\limits_{0}^{2} \\left(\\frac{3+3^x}{3(3+3^x)}\\right)dx$$</p>\n<p>$$2I=\\int\\limits_{0}^{2} \\frac{1}{3}\\,dx$$</p>\n<p>$$2I=\\frac{1}{3}[x]_{0}^{2}$$</p>\n<p>$$2I=\\frac{2}{3}$$</p>\n<p>$$\\Rightarrow I=\\frac{1}{3}$$</p>\n<p>$$\\Rightarrow \\text{Option (B) is correct.}$$</p>",
       "section": "Sec 1",
-      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>",
+      "correctOptionsArray": [
+        0,
+        1
+      ]
     },
     {
       "id": "mp9v3kcq",
@@ -810,7 +827,7 @@
       ],
       "correctOption": 1,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -832,7 +849,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -854,7 +871,7 @@
       ],
       "correctOption": 2,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -876,7 +893,7 @@
       ],
       "correctOption": 0,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
@@ -898,7 +915,7 @@
       ],
       "correctOption": 2,
       "correctAnswer": null,
-      "questionType": "MCQ",
+      "questionType": "MCQM",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",

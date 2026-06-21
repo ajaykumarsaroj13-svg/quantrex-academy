@@ -19,9 +19,7 @@ const BookPractice = React.lazy(() => import('./pages/BookPractice'));
 
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 
-if (DEFAULT_SYLLABUS['jee-advanced'] && DEFAULT_SYLLABUS['jee-advanced'].subjects && DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics && DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics.chapters) {
-    DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics.chapters = DEFAULT_SYLLABUS['jee-advanced'].subjects.mathematics.chapters.slice(0, 4);
-}
+
 
 
 export default function App() {
@@ -70,43 +68,67 @@ export default function App() {
     if (localStorage.getItem('quantrex_syllabus_v6')) {
       localStorage.removeItem('quantrex_syllabus_v6');
     }
-    const saved = localStorage.getItem('quantrex_syllabus_v8');
+    if (localStorage.getItem('quantrex_syllabus_v8')) {
+      localStorage.removeItem('quantrex_syllabus_v8');
+    }
+    if (localStorage.getItem('quantrex_syllabus_v9')) {
+      localStorage.removeItem('quantrex_syllabus_v9');
+    }
+    const saved = localStorage.getItem('quantrex_syllabus_v10');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
-    return DEFAULT_SYLLABUS;
+    // Ensure we read the latest window object since loadScript finishes after imports
+    const activeSyllabus = window.DEFAULT_SYLLABUS && Object.keys(window.DEFAULT_SYLLABUS).length > 0 
+      ? window.DEFAULT_SYLLABUS 
+      : DEFAULT_SYLLABUS;
+    
+    return activeSyllabus;
   });
 
   const [toppers, setToppers] = useState(() => {
     // Clear old cache
-    if (localStorage.getItem('quantrex_toppers_v3')) {
-      localStorage.removeItem('quantrex_toppers_v3');
+    if (localStorage.getItem('quantrex_toppers_v7')) {
+      localStorage.removeItem('quantrex_toppers_v6');
     }
-    const saved = localStorage.getItem('quantrex_toppers_v4');
+    const saved = localStorage.getItem('quantrex_toppers_v7');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
-    return DEFAULT_TOPPERS;
+    const activeToppers = window.DEFAULT_TOPPERS && window.DEFAULT_TOPPERS.length > 0 
+      ? window.DEFAULT_TOPPERS 
+      : DEFAULT_TOPPERS;
+    return activeToppers;
   });
 
   // Keep page and states persistent across browser refresh
   useEffect(() => {
-    localStorage.setItem('quantrex_active_page', activePage);
+    try {
+      localStorage.setItem('quantrex_active_page', activePage);
+    } catch(e) {}
   }, [activePage]);
 
   // Persist syllabus when updated (e.g. from Admin Dashboard)
   useEffect(() => {
-    localStorage.setItem('quantrex_syllabus_v8', JSON.stringify(syllabus));
+    try {
+      localStorage.setItem('quantrex_syllabus_v9', JSON.stringify(syllabus));
+    } catch (e) {
+      console.warn("Could not save syllabus to localStorage:", e);
+    }
   }, [syllabus]);
 
   // Persist toppers when updated
   useEffect(() => {
-    localStorage.setItem('quantrex_toppers_v4', JSON.stringify(toppers));
+    try {
+      localStorage.setItem('quantrex_toppers_v7', JSON.stringify(toppers));
+    } catch(e) {}
   }, [toppers]);
 
   useEffect(() => {
     if (readingBook) {
-      localStorage.setItem('quantrex_reading_book', JSON.stringify(readingBook));
+      try {
+        localStorage.setItem('quantrex_reading_book', JSON.stringify(readingBook));
+      } catch(e) {}
     } else {
       localStorage.removeItem('quantrex_reading_book');
     }
@@ -114,7 +136,9 @@ export default function App() {
 
   useEffect(() => {
     if (practiceChapter) {
-      localStorage.setItem('quantrex_practice_chapter', JSON.stringify(practiceChapter));
+      try {
+        localStorage.setItem('quantrex_practice_chapter', JSON.stringify(practiceChapter));
+      } catch(e) {}
     } else {
       localStorage.removeItem('quantrex_practice_chapter');
     }
@@ -134,7 +158,9 @@ export default function App() {
 
   useEffect(() => {
     if (testResult) {
-      localStorage.setItem('quantrex_test_result', JSON.stringify(testResult));
+      try {
+        localStorage.setItem('quantrex_test_result', JSON.stringify(testResult));
+      } catch(e) {}
     } else {
       localStorage.removeItem('quantrex_test_result');
     }
@@ -142,7 +168,9 @@ export default function App() {
 
   useEffect(() => {
     if (examTest) {
-      localStorage.setItem('quantrex_exam_test', JSON.stringify(examTest));
+      try {
+        localStorage.setItem('quantrex_exam_test', JSON.stringify(examTest));
+      } catch(e) {}
     } else {
       localStorage.removeItem('quantrex_exam_test');
     }

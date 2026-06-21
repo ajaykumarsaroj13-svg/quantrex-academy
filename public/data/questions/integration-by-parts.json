@@ -18,7 +18,8 @@
     "topic": "integration-by-parts",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\because \\frac{\\mathrm{d}}{\\mathrm{dx}}\\left(\\frac{\\mathrm{x} \\sin ^{-1} \\mathrm{x}}{\\sqrt{1-\\mathrm{x}^2}}\\right)=\\frac{\\sin ^{-1} \\mathrm{x}}{\\left(1-\\mathrm{x}^2\\right)^{3 / 2}}+\\frac{\\mathrm{x}}{1-\\mathrm{x}^2} \\\\\n& \\Rightarrow \\int \\mathrm{e}^{\\mathrm{x}}\\left(\\frac{\\mathrm{x} \\sin ^{-1} \\mathrm{x}}{\\sqrt{1-\\mathrm{x}^2}}+\\frac{\\sin ^{-1} \\mathrm{x}}{\\left(1-\\mathrm{x}^2\\right)^{3 / 2}}+\\frac{\\mathrm{x}}{1-\\mathrm{x}^2}\\right) \\mathrm{dx} \\\\\n& =\\mathrm{e}^{\\mathrm{x}} \\cdot \\frac{\\mathrm{x} \\sin ^{-1} \\mathrm{x}}{\\sqrt{1-\\mathrm{x}^2}}+\\mathrm{c}=\\mathrm{g}(\\mathrm{x})+\\mathrm{C}\n\\end{aligned}\\\\\n&\\text { Note : assuming } g(x)=\\frac{\\mathrm{xe}^{\\mathrm{x}} \\sin ^{-1} x}{\\sqrt{1-\\mathrm{x}^2}}\\\\\n&g(1 / 2)=\\frac{\\mathrm{e}^{1 / 2}}{2} \\cdot \\frac{\\frac{\\pi}{6} \\times 2}{\\sqrt{3}}=\\frac{\\pi}{6} \\sqrt{\\frac{\\mathrm{e}}{3}}\n\\end{aligned}$$</p>\n<p>Comment : In this question we will not get a unique function $\\mathrm{g}(\\mathrm{x})$, but in order to match the answer we will have to assume $g(x)=\\frac{\\mathrm{xe}^{\\mathrm{x}} \\sin ^{-1} \\mathrm{x}}{\\sqrt{1-\\mathrm{x}^2}}$.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6t9xsut",
@@ -39,7 +40,8 @@
     "topic": "integration-by-parts",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\int x^3 \\sin x d x=-x^3 \\cos x+\\int 3 x^2 \\cos x d x \\\\\n& =-x^3 \\cos x+3 x^2 \\sin x-\\int 6 x \\sin x d x \\\\\n& =-x^3 \\cos x+3 x^2 \\sin x+6 x \\cos x-6 \\sin x+c\n\\end{aligned}$$</p>\n<p>So $g(x)=-x^3 \\cos x+3 x^2 \\sin x+6 x \\cos x-6 \\sin x$</p>\n<p>$$\\begin{aligned}\n& g\\left(\\frac{\\pi}{2}\\right)=\\frac{3 \\pi^2}{4}-6 \\\\\n& g^{\\prime}(x)=x^3 \\sin x \\\\\n& g^{\\prime}\\left(\\frac{\\pi}{2}\\right)=\\frac{\\pi^3}{8} \\\\\n& 8\\left(g\\left(\\frac{\\pi}{2}\\right)+g^{\\prime}\\left(\\frac{\\pi}{2}\\right)\\right)=\\pi^3+6 \\pi^2-48\n\\end{aligned}$$</p>\n<p>So $\\alpha+\\beta-\\gamma=55$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "lv2eqxr8",
@@ -55,7 +57,8 @@
     "topic": "integration-by-parts",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& I=\\int(\\operatorname{cosec} x)^5 d x=\\int(\\operatorname{cosec} x)^3(\\operatorname{cosec} x)^2 d x \\\\\n& =(\\operatorname{cosec} x)^3 \\int \\operatorname{cosec}^2 x d x- \\\\\n& \\int\\left(\\frac{d}{d x}(\\operatorname{cosec} x)^3 \\int \\operatorname{cosec}^2 x d x\\right) d x\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =-\\cot x(\\operatorname{cosec} x)^3-\\int 3 \\operatorname{cosec}^2 x \\cdot(-\\operatorname{cosec} x \\cot x)(-\\cot x) d x \\\\\n& =-\\cot x(\\operatorname{cosec} x)^3-\\int 3 \\operatorname{cosec}^3 x \\cot ^2 x d x \\\\\n& =-\\cot x(\\operatorname{cosec} x)^3-3 \\int(\\operatorname{cosec} x)^3\\left(\\operatorname{cosec}^2 x-1\\right) d x \\\\\n& I=-\\cot x(\\operatorname{cosec} x)^3-3 I+3 \\int(\\operatorname{cosec} x)^3 d x \\\\\n& 4 I=-\\cot x(\\operatorname{cosec} x)^3+3 \\int(\\operatorname{cosec} x)^3 d x \\\\\n& =-\\cot x(\\operatorname{cosec} x)^3+3 I_1 \\\\\n& I_1=\\int \\operatorname{cosec} x \\cdot \\operatorname{cosec}^2 x d x=\\operatorname{cosec} x(-\\cot x)- \\\\\n& \\qquad \\int(-\\operatorname{cosec} x \\cot x)(-\\cot x) d x\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& I_1=-\\operatorname{cosec} x \\cot x-\\int \\operatorname{cosec} x\\left(\\operatorname{cosec}^2 x-1\\right) d x \\\\\n& I_1=-\\operatorname{cosec} x \\cot x-I+\\int \\operatorname{cosec} x d x \\\\\n& 2 l_1=-\\operatorname{cosec} x \\cot x+\\ln \\left|\\tan \\frac{x}{2}\\right| \\\\\n& \\Rightarrow \\quad 4 l=-\\cot x(\\operatorname{cosec} x)^3-\\frac{3}{2} \\operatorname{cosec} x \\cot x  +\\frac{3}{2} \\ln \\left|\\tan \\frac{x}{2}\\right|+C\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& I=-\\frac{1}{4} \\operatorname{cosec} x \\cot x\\left(\\operatorname{cosec}^2 x+\\frac{3}{2}\\right)+\\frac{3}{8} \\ln \\left|\\tan \\frac{x}{2}\\right|+C \\\\\n& \\Rightarrow \\alpha=-\\frac{1}{4}, \\beta=\\frac{3}{8} \\Rightarrow 8(\\alpha+\\beta)=1\n\\end{aligned}$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lgxgz9mo",
@@ -76,7 +79,8 @@
     "topic": "integration-by-parts",
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& \\text { Given, } I(x)=\\int e^{\\sin ^2 x}(\\cos x \\sin 2 x-\\sin x) d x \\\\\\\\\n& =\\int e^{\\sin ^2 x} \\cdot \\cos x \\cdot \\sin 2 x d x-\\int \\sin x e^{\\sin ^2 x} d x \\\\\\\\\n& =\\int \\frac{\\cos x}{\\mathrm{I}} \\cdot \\frac{e^{\\sin ^2 x} \\cdot \\sin 2 x}{\\mathrm{II}} d x-\\int \\sin x \\cdot e^{\\sin ^2 x} d x \\\\\\\\\n& =\\cos x \\cdot e^{\\sin ^2 x}-\\int(-\\sin x) e^{\\sin ^2 x} d x-\\int \\sin x e^{\\sin ^2 x} d x \\\\\\\\\n& =\\cos x \\cdot e^{\\sin ^2 x}+\\int \\sin x e^{\\sin ^2 x} \\cdot d x-\\int \\sin x \\cdot e^{\\sin ^2 x} d x+C\n\\end{aligned}\n$$\n<br/><br/>$I(x)=e^{\\sin ^2 x} \\cdot \\cos x+C$\n<br/><br/>Given, $I(0)=1 \\Rightarrow C=0$\n<br/><br/>So, $ I(x)=e^{\\sin ^2 x} \\cdot \\cos x$\n<br/><br/>$$\n\\Rightarrow I(\\pi / 3)=e^{3 / 4} \\cdot \\frac{1}{2}=\\frac{e^{3 / 4}}{2}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lh21fmey",
@@ -97,7 +101,8 @@
     "topic": "integration-by-parts",
     "difficulty": "hard",
     "solution": "We have,\n<br/><br/>$$\n\\begin{aligned}\nI(x)= & \\int \\frac{x^2\\left(x \\sec ^2 x+\\tan x\\right)}{(x \\tan x+1)^2} d x \\\\\\\\\n= & x^2 \\int \\frac{x \\sec ^2 x+\\tan x}{(x \\tan x+1)^2} d x \\\\\\\\\n& \\quad-\\int\\left\\{\\frac{d}{d x}\\left(x^2\\right) \\int \\frac{x \\sec ^2 x+\\tan x}{(x \\tan x+1)^2} d x\\right\\} d x \\text { (integration by parts) }\n\\end{aligned}\n$$\n<br/><br/>$$\n=x^2\\left(\\frac{-1}{x \\tan x+1}\\right)+\\int \\frac{2 x}{x \\tan x+1} d x\n$$\n<br/><br/>Now, let \n<br/><br/>$$\n\\begin{aligned}\nI_1 & =2 \\int \\frac{x}{x \\tan x+1} d x \\\\\\\\\n& =2 \\int \\frac{x \\cos x}{x \\sin x+\\cos x} d x\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { On putting } x \\sin x+\\cos x=t \\\\\\\\\n& \\Rightarrow  (x \\cos x+\\sin x-\\sin x) d x=d t \\\\\\\\\n& \\Rightarrow  x \\cos x d x=d t\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n&\\therefore I_1 =2 \\int \\frac{d t}{t}=2 \\log t+c \\\\\\\\\n& =2 \\log (x \\sin x+\\cos x)+c\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{gathered}\n\\therefore I(x)=\\frac{-x^2}{x \\tan x+1}+2 \\log(x \\sin x+\\cos x)+c\n\\end{gathered}\n$$\n<br/><br/>When, $x=0$, then\n<br/><br/>$$\n\\begin{array}{ll} \n& I(0)=0+2 \\log (1)+c=0 \\\\\\\\\n&\\Rightarrow c=0 \\\\\\\\\n&\\therefore I(x)=\\frac{-x^2}{x \\tan x+1}+2 \\log (x \\sin x+\\cos x)\n\\end{array}\n$$\n<br/><br/>$$\n\\begin{aligned}\n&\\therefore I(x) =\\frac{-x^2}{x \\tan x+1}+2 \\log (x \\sin x+\\cos x) \\\\\\\\\n&\\Rightarrow I\\left(\\frac{\\pi}{4}\\right) =\\frac{-\\frac{\\pi^2}{16}}{\\frac{\\pi}{4}+1}+2 \\log \\left(\\frac{\\pi}{4} \\times \\frac{1}{\\sqrt{2}}+\\frac{1}{\\sqrt{2}}\\right) \\\\\\\\\n& =\\log \\left(\\frac{(\\pi+4)^2}{32}\\right)-\\frac{\\pi^2}{4(\\pi+4)}\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l6re7z1v",
@@ -118,7 +123,8 @@
     "topic": "integration-by-parts",
     "difficulty": "hard",
     "solution": "<p>Given,</p>\n<p>$$I(x) = \\int {{{{{\\sec }^2}x - 2022} \\over {{{\\sin }^{2022}}x}}dx} $$</p>\n<p>$$ = \\int {{{{{\\sec }^2}x} \\over {{{\\sin }^{2022}}x}}dx - \\int {{{2022} \\over {{{\\sin }^{2022}}x}}dx} } $$</p>\n<p>$$ = \\int {{1 \\over {{{\\sin }^{2022}}x}}\\,.\\,{{\\sec }^2}x\\,dx - \\int {{{2022} \\over {{{\\sin }^{2022}}x}}dx} } $$</p>\n<p>$$ = {1 \\over {{{\\sin }^{2022}}x}}\\,.\\,\\tan x - \\int {\\left( {{{ - 2022} \\over {{{\\sin }^{2023}}x}}\\,.\\,\\cos x\\,.\\,\\tan x} \\right)dx - \\int {{{2022} \\over {{{\\sin }^{2022}}x}}dx + C} } $$</p>\n<p>$$ = {{\\tan x} \\over {{{\\sin }^{2022}}x}} + \\int {\\left( {{{2022} \\over {{{\\sin }^{2023}}x}}\\,.\\,\\cos x\\,.\\,{{\\sin x} \\over {\\cos x}}} \\right)dx - \\int {{{2022} \\over {{{\\sin }^{2022}}x}}dx + C} } $$</p>\n<p>$$ = {{\\tan x} \\over {{{\\sin }^{2022}}x}} + \\int {{{2022} \\over {{{\\sin }^{2022}}x}}dx - \\int {{{2022} \\over {{{\\sin }^{2022}}x}}dx} } $$</p>\n<p>$$ = {{\\tan x} \\over {{{\\sin }^{2022}}x}} + C$$</p>\n<p>Given, $$I\\left( {{\\pi  \\over 4}} \\right) = {2^{1011}}$$</p>\n<p>$$\\therefore$$ $$I\\left( {{\\pi  \\over 4}} \\right) = {{\\tan \\left( {{\\pi  \\over 4}} \\right)} \\over {{{\\left( {\\sin {\\pi  \\over 4}} \\right)}^{2022}}}} + C$$</p>\n<p>$$ \\Rightarrow {2^{1011}} = {1 \\over {{{\\left( {{1 \\over {\\sqrt 2 }}} \\right)}^{2022}}}} + C$$</p>\n<p>$$ \\Rightarrow C = {2^{1011}} - {2^{1011}} = 0$$</p>\n<p>$$\\therefore$$ $$I(x) = {{\\tan x} \\over {{{\\sin }^{2022}}x}}$$</p>\n<p>$$\\therefore$$ $$I\\left( {{\\pi  \\over 3}} \\right) = {{\\tan {\\pi  \\over 3}} \\over {{{\\left( {\\sin {\\pi  \\over 3}} \\right)}^{2022}}}} = {{\\sqrt 3 } \\over {{{\\left( {{{\\sqrt 3 } \\over 2}} \\right)}^{2022}}}}$$</p>\n<p>$$I\\left( {{\\pi  \\over 6}} \\right) = {{{1 \\over {\\sqrt 3 }}} \\over {{{\\left( {{1 \\over 2}} \\right)}^{2022}}}} = {1 \\over {\\sqrt 3 }} \\times {(2)^{2022}}$$</p>\n<p>From option (A),</p>\n<p>$${3^{1010}}\\,.\\,I\\left( {{\\pi  \\over 3}} \\right) - I\\left( {{\\pi  \\over 6}} \\right)$$</p>\n<p>$$ = {3^{1010}}\\,.\\,\\sqrt 3 \\,.\\,{\\left( {{2 \\over {\\sqrt 3 }}} \\right)^{2022}} - {{{{(2)}^{2022}}} \\over {\\sqrt 3 }}$$</p>\n<p>$$ = {3^{1010}}\\,.\\,\\sqrt 3  \\times {{{2^{2022}}} \\over {{3^{1011}}}} - {{{2^{2022}}} \\over {\\sqrt 3 }}$$</p>\n<p>$$ = {{{2^{2022}}} \\over {\\sqrt 3 }} - {{{2^{2022}}} \\over {\\sqrt 3 }} = 0$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "k0vrHx9KC2v0TCKPU1nFZ",
@@ -139,7 +145,8 @@
     "topic": "integration-by-parts",
     "difficulty": "medium",
     "solution": "$${\\rm I} = \\int {\\cos \\left( {\\ell nx} \\right)} dx$$\n<br><br>$${\\rm I} = \\cos (\\ln x).x + \\int {\\sin \\left( {\\ell nx} \\right)dx} $$\n<br><br>$${\\rm I} = \\cos \\left( {\\ell nx} \\right)x + \\left[ {\\sin \\left( {\\ell nx} \\right).x - \\int {\\cos \\left( {\\ell nx} \\right)dx} } \\right]$$\n<br><br>$${\\rm I} = {x \\over 2}\\left[ {\\sin \\left( {\\ell nx} \\right) + \\cos \\left( {\\ell nx} \\right)} \\right] + C$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "Uw47dOEvkjyfJj7r",
@@ -160,6 +167,7 @@
     "topic": "integration-by-parts",
     "difficulty": "medium",
     "solution": "Let $$I = \\int {\\left( {1 + x - {1 \\over x}} \\right)} {e^{x + {\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle x$}}}}dx$$\n<br><br>$$ = \\int {{e^{x + {\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle x$}}}}} dx + \\int {\\left( {x - {1 \\over x}} \\right)} {e^{x + {\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle x$}}}}dx$$\n<br><br>$$ = x.{e^{x + {\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle x$}}}} - \\int {x\\left( {1 - {1 \\over {{x^2}}}} \\right)} {e^{x+{\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle x$}}}}dx$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, + \\int {\\left( {x - {1 \\over x}} \\right)} {e^{x + {\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle x$}}}}dx$$\n<br><br>$$ = x.{e^{x + {1 \\over x}}} - \\int {\\left( {x - {1 \\over x}} \\right)} {e^{x + {\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle x$}}}}dx$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, + \\int {\\left( {x - {1 \\over x}} \\right)} {e^{x + {\\raise0.5ex\\hbox{$\\scriptstyle 1$}\n\\kern-0.1em/\\kern-0.15em\n\\lower0.25ex\\hbox{$\\scriptstyle x$}}}}dx$$\n<br><br>$$ = x{e^{x + {1 \\over x}}} + C$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   }
 ]

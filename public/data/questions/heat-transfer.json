@@ -14,7 +14,8 @@
     "difficulty": "medium",
     "solution": "<p>The two compartments, $S_1$ and $S_2$, separated by a rigid, conducting partition $P_1$.</p>\n<p>Section $S_1$ is bounded by the outer insulated container walls and the immovable, rigid partition $P_1$.</p>\n<p>Because the boundaries cannot move, its volume remains completely constant $\\mathrm{V}=$ constant. Therefore, the gas in $\\mathrm{S}_1$ undergoes an isochoric (constant volume) process.</p>\n<p>Section $\\mathrm{S}_2$ is bounded on one side by a freely movable, frictionless, insulated piston $\\mathrm{P}_2$.</p>\n<p>Since it moves freely to balance the external atmospheric pressure, the pressure of the gas inside $S_2$ remains constant $\\mathrm{P}=$ constant $=\\mathrm{P}_{\\mathrm{atm}}$.</p>\n<p>Therefore, the gas in $\\mathrm{S}_2$ undergoes an isobaric (constant pressure) process.</p>\n<p>Both compartments contain $\\mathrm{n}_{\\mathrm{m}}=1$ mole of an ideal monoatomic gas.</p>\n<p>For a monoatomic ideal gas, the molar heat capacity at constant volume $\\left(\\mathrm{C}_{\\mathrm{v}}\\right)$ is $\\mathrm{C}_{\\mathrm{v}}=\\frac{3}{2} \\mathrm{R}$</p>\n<p>The molar heat capacity at constant pressure $(C_p)$ is given by $C_p = C_v + R$</p>\n<p>$$C_p = \\frac{3}{2}R + R = \\frac{5}{2}R$$</p>\n<p>Let $T_1$ be the instantaneous temperature of the gas in $S_1$ and $T_2$ be the instantaneous temperature of the gas in $S_2$ at any time $t$.</p>\n<p>Let us assume that $S_1$ is initially at a higher temperature than $S_2$, so $T_1 > T_2$.</p>\n<p>As time progresses, heat $dQ$ flows across the conducting partition $P_1$ from the hotter section $S_1$ to the cooler section $S_2$.</p>\n<p>For section $S_1$ the gas undergoes isochoric cooling.</p>\n<p>The heat lost by $S_1$ causes its temperature to decrease by $dT_1$:</p>\n<p>$$dQ = -n_m C_v\\, dT_1 = -(1)\\left(\\frac{3}{2}R\\right)dT_1 \\rightarrow dT_1 = -\\frac{2}{3R}dQ$$</p>\n<p>For section $S_2$ where the gas undergoes isobaric heating.</p>\n<p>The same amount of heat $dQ$ enters $S_2$, causing its temperature to increase by $dT_2$:</p>\n<p>$$dQ = n_m C_p\\, dT_2 = (1)\\left(\\frac{5}{2}R\\right)dT_2 \\rightarrow dT_2 = \\frac{2}{5R}dQ$$</p>\n<p>$$d(\\Delta T) = dT_1 - dT_2$$</p>\n<p>$$d(\\Delta T) = -\\frac{2}{3R}dQ - \\frac{2}{5R}dQ = -\\left(\\frac{2}{3R} + \\frac{2}{5R}\\right)dQ$$</p>\n<p>$$d(\\Delta T) = -\\left(\\frac{10 + 6}{15R}\\right)dQ = -\\frac{16}{15R}dQ$$</p>\n<p>According to the rate of heat flow $\\frac{dQ}{dt}$ through a conducting barrier of thermal conductivity $K$, area $A$, and thickness $x$ under a temperature difference $(T_1 - T_2)$ is given by:</p>\n<p>$$\\frac{dQ}{dt} = \\frac{KA}{x}(T_1 - T_2) = \\frac{KA}{x}\\,\\Delta T$$</p>\n<p>Therefore, the infinitesimal heat transferred in a time interval $dt$ is:</p>\n<p>$$dQ = \\frac{KA}{x}\\Delta T\\, dt$$</p>\n<p>Substituting the expression for $dQ$,</p>\n<p>$$d(\\Delta T) = -\\frac{16}{15R}\\left(\\frac{KA}{x}\\Delta T\\right)$$</p>\n<p>$$\\frac{d(\\Delta T)}{\\Delta T} = -\\frac{16KA}{15xR}dt$$</p>\n<p>At $\\mathrm{t}=0$, the initial temperature difference is $\\Delta \\mathrm{T}=\\Delta \\mathrm{T}_0$.</p>\n<p>At $\\mathrm{t}=\\tau$, the final temperature difference becomes $\\Delta \\mathrm{T}=\\frac{\\Delta \\mathrm{T}_0}{2}$.</p>\n<p>$$ \\int\\limits_{\\Delta \\mathrm{T}_0}^{\\Delta \\mathrm{T}_0 / 2} \\frac{\\mathrm{~d}(\\Delta \\mathrm{~T})}{\\Delta \\mathrm{T}}=-\\frac{16 \\mathrm{KA}}{15 \\times \\mathrm{R}} \\int\\limits_0^\\tau \\mathrm{dt} $$</p>\n<p>$$\\Rightarrow $$ $$[\tn\\left(\\Delta T\\right)]^{\\Delta T_0/2}_{\\Delta T_0} = -\\frac{16KA}{15xR}\\,\\tau$$</p>\n<p>$$\\Rightarrow $$ $$\\ln\\left(\\frac{\\Delta T_0/2}{\\Delta T_0}\\right) = -\\frac{16KA}{15xR}\\,\\tau$$</p>\n<p>$$\\Rightarrow $$ $$\\ln \\frac{1}{2} = -\\frac{16KA}{15xR}\\,\\tau$$</p>\n<p>$$\\Rightarrow $$ $$-\\ln 2 = -\\frac{16KA}{xR}\\,\\tau \\Rightarrow \\ln 2 = \\frac{16KA}{15xR}\\,\\tau$$</p>\n<p>$$\\Rightarrow $$ $$\\tau = \\frac{15}{16}\\ln(2)\\frac{xR}{KA}$$</p>\n<p>Using the given approximation $\\ln 2 \\approx 0.7$:</p>\n<p>$$\\tau = \\frac{15}{16} \\times (0.7) \\times \\frac{xR}{KA} = \\frac{10.5\\,xR}{16\\,KA} = 0.65625\\,\\frac{xR}{KA}$$</p>\n<p>$$\\Rightarrow n \\approx 0.66$$</p>\n<p>Therefore, the correct answer is 0.66.</p>",
     "section": "Sec 3",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>",
+    "type": "NUMERICAL"
   },
   {
     "id": "ml89h59p",
@@ -35,7 +36,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>Using law of heat conduction the rate of heat flow $\\left(H=\\frac{d Q}{d t}\\right)$ through a material is proportional to the crosssectional area (A) and the temperature difference ( $\\Delta \\mathrm{T}$ ), and inversely proportional to the length (L) :</p>\n<p>$$ H=\\frac{k A \\Delta T}{L} $$</p>\n<p>Where k is the thermal conductivity of the material.</p>\n<p>We can rearrange this equation to look like Ohm's Law for electricity $\\left(\\mathrm{I}=\\frac{\\Delta \\mathrm{V}}{\\mathrm{R}}\\right)$ :</p>\n<p>$$ H=\\frac{\\Delta T}{L / k A} $$</p>\n<p>Here, the term $L / k A$ acts as the thermal resistance $\\left(R_{t h}\\right)$ of the rod. Heat current $(H)$ is analogous to electrical current (I), and temperature difference ( $\\Delta \\mathrm{T}$ ) is analogous to potential difference ( $\\Delta \\mathrm{V}$ ).</p>\n<p>$$ \\mathrm{R}_{\\mathrm{th}}=\\frac{\\mathrm{L}}{\\mathrm{kA}} $$</p>\n<p>It is given that rods $x$ and $y$ have equal dimensions, meaning they have the same length $(L)$ and same crosssectional area (A).</p>\n<p>We are also given that the thermal conductivity of $\\operatorname{rod} \\mathrm{x}\\left(\\mathrm{k}_{\\mathrm{x}}\\right)$ is three times that of $\\operatorname{rod} \\mathrm{y}\\left(\\mathrm{k}_{\\mathrm{y}}\\right)$.</p>\n<p>Let $\\mathrm{k}_{\\mathrm{y}}=\\mathrm{k}$, then $\\mathrm{k}_{\\mathrm{x}}=3 \\mathrm{k}$.</p>\n<p>So, the thermal resistances of rod x and y will be,</p>\n<p>$$ \\mathrm{R}_{\\mathrm{y}}=\\frac{\\mathrm{L}}{\\mathrm{k}_{\\mathrm{y}} \\mathrm{~A}}=\\frac{\\mathrm{L}}{\\mathrm{kA}}=\\mathrm{R} $$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{R}_{\\mathrm{x}}=\\frac{\\mathrm{L}}{\\mathrm{k}_{\\mathrm{x}} \\mathrm{~A}}=\\frac{\\mathrm{L}}{3 \\mathrm{kA}}=\\frac{1}{3}\\left(\\frac{\\mathrm{~L}}{\\mathrm{kA}}\\right)=\\frac{\\mathrm{R}}{3} $$</p>\n<p>We can now treat the given structure as an electrical circuit with specific resistances.</p>\n<p><img alt=\"JEE Main 2026 (Online) 22nd January Morning Shift Physics - Heat and Thermodynamics Question 30 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlz507sd/be2e2b9a-ff87-45fe-ba89-4e150a2b51ef/f4f261d0-10b0-11f1-a0b8-658f60b9e0e3/file-6y3zli1mlz507se.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlz507sd/be2e2b9a-ff87-45fe-ba89-4e150a2b51ef/f4f261d0-10b0-11f1-a0b8-658f60b9e0e3/file-6y3zli1mlz507se.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The heat current splits into two parallel paths BC and BD at B .</p>\n<p>$$ \\mathrm{R}_{\\mathrm{BCE}}=\\mathrm{R}_{\\mathrm{BC}}+\\mathrm{R}_{\\mathrm{CE}}=\\mathrm{R}+\\mathrm{R}=2 \\mathrm{R} $$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{R}_{\\mathrm{BDE}}=\\mathrm{R}_{\\mathrm{BD}}+\\mathrm{R}_{\\mathrm{DE}}=\\frac{\\mathrm{R}}{3}+\\frac{\\mathrm{R}}{3}=\\frac{2 \\mathrm{R}}{3} $$</p>\n<p>For parallel resistors $R_1$ and $R_2$, the equivalent resistance is $\\frac{R_1 R_2}{R_1+R_2}$ :</p>\n<p>$$ \\mathrm{R}_{\\mathrm{BE}}=\\frac{(2 \\mathrm{R}) \\times\\left(\\frac{2 \\mathrm{R}}{3}\\right)}{(2 \\mathrm{R})+\\left(\\frac{2 \\mathrm{R}}{3}\\right)} $$</p>\n<p>$$\\Rightarrow $$ $$ R_{B E}=\\frac{4 R^2 / 3}{\\frac{6 R+2 R}{3}}=\\frac{4 R^2}{8 R}=\\frac{R}{2} $$</p>\n<p>From $A$ to $F$ with three equivalent resistors: $R_{A B}, R_{B E}$, and $R_{E F}$.</p>\n<p>The total equivalent resistance ( $R_{\\text {total }}$ ) is :</p>\n<p>$$ \\mathrm{R}_{\\text {total }}=\\mathrm{R}_{\\mathrm{AB}}+\\mathrm{R}_{\\mathrm{BE}}+\\mathrm{R}_{\\mathrm{EF}} $$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{R}_{\\text {total }}=\\frac{\\mathrm{R}}{3}+\\frac{\\mathrm{R}}{2}+\\mathrm{R}$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{R}_{\\text {total }}=\\frac{11 \\mathrm{R}}{6} $$</p>\n<p>We know the overall temperature difference between A and F :</p>\n<p>$$ \\Delta \\mathrm{T}_{\\text {total }}=\\mathrm{T}_{\\mathrm{A}}-\\mathrm{T}_{\\mathrm{F}}=100-40=60^{\\circ} \\mathrm{C} $$</p>\n<p>The total steady-state heat current (H) flowing through the entire system is :</p>\n<p>$$ H=\\frac{\\Delta T_{\\text {total }}}{R_{\\text {total }}}=\\frac{60}{11 R / 6}=\\frac{360}{11 R} $$</p>\n<p>Consider the segment from A to B :</p>\n<p>$$ H=\\frac{T_A-T_B}{R_{A B}} $$</p>\n<p>$\\begin{aligned} \\Rightarrow \\frac{360}{11 \\mathrm{R}} &amp; =\\frac{100-\\mathrm{T}_{\\mathrm{B}}}{\\mathrm{R} / 3} \\\\ \\Rightarrow \\frac{360}{11 \\mathrm{R}} &amp; =\\frac{3\\left(100-\\mathrm{T}_{\\mathrm{B}}\\right)}{\\mathrm{R}} \\\\ \\Rightarrow \\frac{120}{11} &amp; =100-\\mathrm{T}_{\\mathrm{B}}\\end{aligned}$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{T}_{\\mathrm{B}}=100-\\frac{120}{11}=\\frac{1100-120}{11}=\\frac{980}{11}$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{T}_{\\mathrm{B}} \\approx 89.09^{\\circ} \\mathrm{C} $$</p>\n<p>Consider the segment from E to F :</p>\n<p>$$ \\mathrm{H}=\\frac{\\mathrm{T}_{\\mathrm{E}}-\\mathrm{T}_{\\mathrm{F}}}{\\mathrm{R}_{\\mathrm{EF}}} $$</p>\n<p> $\\begin{aligned} &amp; \\Rightarrow \\frac{360}{11 R}=\\frac{T_E-40}{R} \\\\ &amp; \\Rightarrow \\frac{360}{11}=T_E-40\\end{aligned}$</p>\n<p>$$\\Rightarrow $$ $\\mathrm{T}_{\\mathrm{E}}=40+\\frac{360}{11}=\\frac{440+360}{11}=\\frac{800}{11}$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{T}_{\\mathrm{E}} \\approx 72.72^{\\circ} \\mathrm{C} $$</p>\n<p>Therefore, the temperatures at junction points B and E are close to $89^{\\circ} \\mathrm{C}$ and $73^{\\circ} \\mathrm{C}$ respectively. \n<br><br>Hence, the correct option is (C).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "mb0drf8z",
@@ -52,7 +54,8 @@
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mcxhr7hb/19fb9b7b-55ad-436d-a2da-ab1fb271b26b/4d65b2f0-5d9b-11f0-bda7-076bd952ff48/file-jaoe38c1mcxhr7hc.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mcxhr7hb/19fb9b7b-55ad-436d-a2da-ab1fb271b26b/4d65b2f0-5d9b-11f0-bda7-076bd952ff48/file-jaoe38c1mcxhr7hc.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2025 Paper 1 Online Physics - Heat and Thermodynamics Question 8 English Explanation\">\n<p>Since the plates are blackbodies, they emit radiation according to the Stefan-Boltzmann law. The power emitted per unit area by a blackbody is given by.</p>\n<p>$$ P=\\sigma T^4 . $$</p>\n<p>Where, $\\sigma=$ Stefan - Boltzmann constant</p>\n<p>$$ \\sigma=5.67 \\times 10^{-8} \\mathrm{W} / \\mathrm{m}^2 \\mathrm{k}^4 $$</p>\n<p> When two blackbodies face each other, the net power transfer per unit area from $P$ to $Q=$ power emitted by $P$ toward $Q$ - power emitted by $Q$ toward $P$</p>\n<p>So,</p>\n<p>$$ W_0=\\sigma T_p^4-\\dot{\\sigma} T_a^4=\\sigma\\left(T_p^4-T_a^4\\right)\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(i) $$</p>\n<p>After introducing two additional plates: assuming temperature $T_1$ and $T_2$ for these plates.</p>\n<p>In the steady state, the power transfer per unit area through each interface (From $P$ to plate $1,1 \\rightarrow 2,2 \\rightarrow Q$ ) must be same, because there is no accumulation of energy in the intermediate plates.</p>\n<p>So</p>\n<p>$$ \\begin{aligned} &amp; \\sigma\\left(T_p^4-T_1^4\\right)=W_S \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(ii)\\\\ &amp; \\sigma\\left(T_1^4-T_2^4\\right)=W_S \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(iii)\\end{aligned} $$</p>\n<p>and $\\sigma\\left(T_2^4-T_a^4\\right)=W_S\\,\\,\\,\\,...(iv)$</p>\n<p>by adding $e q^n$ (2), (3) and (4),</p>\n<p>$$ \\begin{aligned} &amp; \\sigma\\left(T_p^4-T _1^4+T_1^4-T_2^4+T_2^4-T_Q^4\\right)=3 W_S \\\\ \\Rightarrow &amp; \\sigma\\left(T_p^4-T_Q^4\\right)=3 W_S \\\\ \\Rightarrow &amp; W_0=3 W_S \\\\ &amp; \\Rightarrow \\frac{W_0}{W_S}=3 \\end{aligned} $$</p>",
     "section": "Sec 3",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>",
+    "type": "NUMERICAL"
   },
   {
     "id": "m6qvbwbh",
@@ -73,7 +76,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>To determine the energy radiated by two spherical bodies, both made of the same material but with different radii and temperatures, we can use the Stefan-Boltzmann law. This law states that the energy radiated by a black body per unit time is proportional to the product of the surface area $ A $ and the fourth power of its temperature $ T $.</p>\n<p>The formula for power $ P $ is given by:</p>\n<p>$ P = \\sigma e A T^4 $</p>\n<p>Where:</p>\n\n<p><p>$ \\sigma $ is the Stefan-Boltzmann constant</p></p>\n<p><p>$ e $ is the emissivity of the material</p></p>\n<p><p>$ A $ is the surface area of the sphere</p></p>\n<p><p>$ T $ is the temperature in Kelvin</p></p>\n\n<p>Expressing this relationship as a proportionality:</p>\n<p>$ P \\propto A T^4 $</p>\n<p>For a sphere, the surface area $ A $ is:</p>\n<p>$ A = 4\\pi R^2 $</p>\n<p>Hence, the power radiated is proportional to:</p>\n<p>$ P \\propto R^2 T^4 $</p>\n<p>For two bodies with radii $ R_1 $ and $ R_2 $, and temperatures $ T_1 $ and $ T_2 $, the ratio of their powers is:</p>\n<p>$ \\frac{P_1}{P_2} = \\left( \\frac{R_1}{R_2} \\right)^2 \\left( \\frac{T_1}{T_2} \\right)^4 $</p>\n<p>Given:</p>\n\n<p><p>$ R_1 = 0.2 \\, \\text{m} $, $ T_1 = 800 \\, \\text{K} $</p></p>\n<p><p>$ R_2 = 0.8 \\, \\text{m} $, $ T_2 = 400 \\, \\text{K} $</p></p>\n\n<p>Substituting into the formula:</p>\n<p>$ \\frac{E}{E'} = \\left( \\frac{0.2}{0.8} \\right)^2 \\left( \\frac{800}{400} \\right)^4 $</p>\n<p>Calculating each part:</p>\n\n<p><p>$\\left( \\frac{0.2}{0.8} \\right)^2 = \\left( \\frac{1}{4} \\right)^2 = \\frac{1}{16}$</p></p>\n<p><p>$\\left( \\frac{800}{400} \\right)^4 = 2^4 = 16$</p></p>\n\n<p>Combining these calculations:</p>\n<p>$ \\frac{E}{E'} = \\frac{1}{16} \\times 16 = 1 $</p>\n<p>This implies that the energy radiated by the bigger body $ E' $ equals the energy radiated by the smaller body $ E $. Thus, $ E' = E $.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6qvbx1c",
@@ -89,7 +93,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7szoxz5/13661cb3-5254-4021-b2d5-c98b9ba4bbcc/729eb710-f824-11ef-8fee-a3fba03bd34c/file-jaoe38c1m7szoxz6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7szoxz5/13661cb3-5254-4021-b2d5-c98b9ba4bbcc/729eb710-f824-11ef-8fee-a3fba03bd34c/file-jaoe38c1m7szoxz6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 22nd January Morning Shift Physics - Heat and Thermodynamics Question 79 English Explanation\"></p>\n<p>$${R_1} = {{2L} \\over {{K_1}A}}$$</p>\n<p>(As $${l_1} = {l_2} = {l_3} = l$$</p>\n<p>$${A_1} = {A_2} = A/2$$</p>\n<p>$${A_3} = A$$)</p>\n<p>$${R_2} = {{2L} \\over {{K_2}A}}$$</p>\n<p>$${R_3} = {L \\over {{K_3}A}}$$</p>\n<p>$${I_1} + {I_2} = {I_3}$$</p>\n<p>$$ \\Rightarrow {{100 - \\theta } \\over {{{2L} \\over {{K_1}A}}}} + {{100 - \\theta } \\over {{{2L} \\over {{K_2}A}}}} = {{\\theta  - 0} \\over {{L \\over {{K_3}A}}}}$$</p>\n<p>$$ \\Rightarrow {{100 - \\theta } \\over 2}({K_1} + {K_2}) = {K_3}\\theta $$</p>\n<p>$$ \\Rightarrow 50({K_1} + {K_2}) = \\theta \\left[ {{K_3} + {{{K_1} + {K_2}} \\over 2}} \\right]$$</p>\n<p>$$ \\Rightarrow 50(60 + 120) = \\theta \\left[ {135 + {{60 + 120} \\over 2}} \\right]$$</p>\n<p>$$ \\Rightarrow 50 \\times 80 = \\theta (135 + 90)$$</p>\n<p>$$ \\Rightarrow \\theta  = {{50 \\times 180} \\over {225}}$$</p>\n<p>$$ \\Rightarrow \\theta  = 40^\\circ C$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "m6v42bbd",
@@ -110,7 +115,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\frac{\\mathrm{T}_2-\\mathrm{T}_1}{\\mathrm{t}}=\\mathrm{K}\\left[\\mathrm{~T}_{\\text {avg }}-\\mathrm{T}_{\\mathrm{s}}\\right] \\\\\n& \\mathrm{T}_1=24^{\\circ} \\mathrm{C} ; \\mathrm{T}_2=40^{\\circ} \\mathrm{C}, \\mathrm{t}=4, \\mathrm{~T}_{\\mathrm{s}}=16^{\\circ} \\mathrm{C} \\\\\n& \\frac{40-24}{4}=\\mathrm{K}[32-16] \\\\\n& \\mathrm{K}=\\frac{4}{16}=\\frac{1}{4} \\\\\n& \\text { Now } \\frac{24-\\mathrm{T}}{4}=\\mathrm{K}\\left[\\frac{\\mathrm{~T}+24}{2}-16\\right] \\\\\n& 24-\\mathrm{T}=\\frac{\\mathrm{T}-16}{2}+16 \\\\\n& \\frac{3 \\mathrm{~T}}{2}=28 \\\\\n& \\mathrm{~T}=\\frac{56}{3} \\mathrm{C}\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6qipm83",
@@ -131,7 +137,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>Here, we will use the Newton's law of cooling.</p>\n<p>We know, $${{{T_1} - {T_2}} \\over {\\Delta t}} = k\\left( {{{{T_1} + {T_2}} \\over 2} - {T_s}} \\right)$$ .... (1)</p>\n<p>where, T$_1$ and T$_2$ are initial and final temperatures respectively.</p>\n<p>$\\mathrm{T_s}$ = surrounding temperature</p>\n<p>$\\Delta t$ = time taken</p>\n<p>$k$ = positive constant</p>\n<p>Given,</p>\n<p>Ist case :</p>\n<p>$${T_1} = 90^\\circ C$$</p>\n<p>$${T_2} = 80^\\circ C$$</p>\n<p>$$\\Delta t = t$$, $${T_s} = 20^\\circ C$$</p>\n<p>IInd case :</p>\n<p>$${T_1} = 80^\\circ C$$</p>\n<p>$${T_2} = 60^\\circ C$$</p>\n<p>$${T_s} = 20^\\circ C$$, $$\\Delta t = ?$$</p>\n<p>Now, for Ist case,</p>\n<p>$${{90 - 80} \\over t} = k\\left( {{{90 + 80} \\over 2} - 20} \\right)$$ ...... (from (1))</p>\n<p>$$ \\Rightarrow {{10} \\over t} = k\\left( {85 - 20} \\right)$$</p>\n<p>$$ \\Rightarrow {{10} \\over t} = 65k$$ .... (2)</p>\n<p>For IInd case,</p>\n<p>$${{80 - 60} \\over {\\Delta t}} = k\\left( {{{80 + 60} \\over 2} - 20} \\right)$$ .... (From (1))</p>\n<p>$$ \\Rightarrow {{20} \\over {\\Delta t}} = k\\left( {70 - 20} \\right)$$</p>\n<p>$$ \\Rightarrow {{20} \\over {\\Delta t}} = 50k$$ .... (3)</p>\n<p>Now, by (2) $\\div$ (3),</p>\n<p>$${{{{10} \\over t}} \\over {{{20} \\over {\\Delta t}}}} = {{13} \\over {10}}$$</p>\n<p>$$ \\Rightarrow {{\\Delta t} \\over t}\\left( {{1 \\over 2}} \\right) = {{13} \\over 5}$$</p>\n<p>$$ \\Rightarrow \\Delta t = {{13} \\over 5}t$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m9eixxdt",
@@ -147,7 +154,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9kt4jd1/e9a42eb1-a899-47ee-8fcb-6f12b1b7c51a/edef8350-1b3c-11f0-8234-eff1154e7d32/file-jaoe38c1m9kt4jd2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9kt4jd1/e9a42eb1-a899-47ee-8fcb-6f12b1b7c51a/edef8350-1b3c-11f0-8234-eff1154e7d32/file-jaoe38c1m9kt4jd2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 7th April Evening Shift Physics - Heat and Thermodynamics Question 48 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\mathrm{R}_1=\\frac{\\ell_1}{\\mathrm{~K}_1 \\mathrm{~A}_1}, \\mathrm{R}_2=\\frac{\\ell_2}{\\mathrm{~K}_2 \\mathrm{~A}_2} \\\\\n&amp; \\frac{\\mathrm{dQ}}{\\mathrm{dt}}=\\frac{\\Delta \\mathrm{T}}{\\mathrm{R}} \\\\\n&amp; \\left(\\frac{\\mathrm{dQ}}{\\mathrm{dt}}\\right)_1=\\left(\\frac{\\mathrm{dQ}}{\\mu}\\right)_2 \\\\\n&amp; \\frac{400-\\mathrm{T}}{\\mathrm{R}_1}=\\frac{\\mathrm{T}-200}{\\mathrm{R}_2} \\\\\n&amp; \\frac{400-\\mathrm{T}}{\\mathrm{~T}-200}=\\frac{\\mathrm{R}_1}{\\mathrm{R}_2}=\\left(\\frac{\\ell_1}{\\ell_2}\\right)\\left(\\frac{\\mathrm{r}_2}{\\mathrm{r}_1}\\right)^2 \\times \\frac{\\mathrm{K}_2}{\\mathrm{~K}_1} \\\\\n&amp; =\\frac{1}{2} \\times\\left(\\frac{1}{2}\\right)^2 \\times 2 \\\\\n&amp; =\\left(\\frac{1}{4}\\right)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\frac{400-\\mathrm{T}}{\\mathrm{~T}-200}=\\frac{1}{4} \\\\\n&amp; 1600-4 \\mathrm{~T}=\\mathrm{T}-200 \\\\\n&amp; 5 \\mathrm{~T}=1800 \\\\\n&amp; \\mathrm{~T}=360 \\mathrm{~K}\n\\end{aligned}$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "m9e5j908",
@@ -163,7 +171,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>To determine the emissivity ($\\varepsilon$) of the wire used in the bulb, we start with the given parameters and the formula for power radiated by a black body:</p>\n\n<p><p>Length of the wire ($L$): 10 cm = 0.1 m</p></p>\n<p><p>Diameter of the wire ($d$): 0.5 mm = 0.0005 m</p></p>\n<p><p>Temperature of the wire ($T$): $1727^{\\circ} \\mathrm{C} = 2000 \\mathrm{K}$</p></p>\n<p><p>Power radiated ($P$): 94.2 W</p></p>\n\n<p>The power radiated by the wire can be expressed as:</p>\n<p>$ P = \\varepsilon \\sigma A T^4 $</p>\n<p>Where:</p>\n\n<p><p>$\\sigma$ is the Stefan-Boltzmann constant ($6.0 \\times 10^{-8} \\mathrm{~W} \\mathrm{~m}^{-2} \\mathrm{~K}^{-4}$)</p></p>\n<p><p>$A$ is the surface area of the wire, calculated using the formula for the surface area of a cylinder: $A = \\pi d L$</p></p>\n\n<p>Substituting the given values into the formula:</p>\n<p>$ 94.2 = \\varepsilon \\times (6 \\times 10^{-8}) \\times (3.14 \\times 0.0005 \\times 0.1) \\times (2000)^4 $</p>\n<p>Simplifying the expression inside the parentheses:</p>\n<p>$ 94.2 = \\varepsilon \\times (6 \\times 10^{-8}) \\times 3.14 \\times 0.0005 \\times 0.1 \\times (2000)^4 $</p>\n<p>On solving for $\\varepsilon$:</p>\n<p>$ \\varepsilon = \\frac{94.2}{[(6 \\times 10^{-8}) \\times 3.14 \\times 0.0005 \\times 0.1 \\times (2000)^4]} $</p>\n<p>Given that $\\varepsilon$ is $\\frac{x}{8}$, evaluating this expression provides the value of $x = 5$. Thus, the emissivity $\\varepsilon$ is $\\frac{5}{8}$.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lsg5s187",
@@ -184,7 +193,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsoio7ig/b6b04b1f-10e9-44e5-b610-c1f1fac15efa/81b35880-ccb7-11ee-8ef5-472d1767d2da/file-6y3zli1lsoio7ih.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsoio7ig/b6b04b1f-10e9-44e5-b610-c1f1fac15efa/81b35880-ccb7-11ee-8ef5-472d1767d2da/file-6y3zli1lsoio7ih.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 30th January Evening Shift Physics - Heat and Thermodynamics Question 112 English Explanation\">",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "lv0vy00d",
@@ -205,7 +215,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "<p>To find the increase in temperature on the Fahrenheit scale, we use the relationship between the Celsius and Fahrenheit temperature scales. The formula to convert Celsius to Fahrenheit is:</p>\n\n<p>$$F = \\frac{9}{5}C + 32$$</p>\n\n<p>However, since we are interested in the <strong>increase</strong> in temperature, we can ignore the \"+ 32\" part of the formula, because this constant does not affect the change in temperature, only the absolute temperatures. Thus, to find the increase in temperature on the Fahrenheit scale, we can use:</p>\n\n<p>$$\\Delta F = \\frac{9}{5}\\Delta C$$</p>\n\n<p>Given that the increase in temperature is $$40^{\\circ}C$$, we can substitute this value into the equation:</p>\n\n<p>$$\\Delta F = \\frac{9}{5} \\times 40^{\\circ}C$$</p>\n\n<p>$$\\Delta F = 9 \\times 8$$</p>\n\n<p>$$\\Delta F = 72^{\\circ}F$$</p>\n\n<p>Therefore, the increase in temperature on the Fahrenheit scale is $$72^{\\circ}F$$. So, the correct answer is:</p>\n\n<p>Option C $$72^{\\circ} \\mathrm{F}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lgp107f6",
@@ -221,7 +232,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "Let's denote the temperature at the surface of contact as T. We can find this temperature by considering the heat transfer through each plate when the system reaches steady state. At steady state, the rate of heat transfer through both plates A and B is the same.\n<br/><br/>\nWe can use the formula for heat transfer rate through a plate:\n<br/><br/>\n$$Q = kA\\frac{T_2 - T_1}{d}$$\n<br/><br/>\nWhere Q is the heat transfer rate, k is the thermal conductivity, A is the surface area, T1 and T2 are the temperatures on either side of the plate, and d is the thickness of the plate.\n<br/><br/>\nFor plate A:\n<br/><br/>\n$$Q_A = k_A A\\frac{T_A - T}{d}$$\n<br/><br/>\nFor plate B:\n<br/><br/>\n$$Q_B = k_B A\\frac{T - T_B}{d}$$\n<br/><br/>\nSince the heat transfer rate is the same through both plates in steady state:\n<br/><br/>\n$$Q_A = Q_B$$\n<br/><br/>\nWe can now substitute the given values for thermal conductivities and temperatures:\n<br/><br/>\n$$84A\\frac{100 - T}{d} = 126A\\frac{T - 0}{d}$$\n<br/><br/>\nNotice that the surface area (A) and thickness (d) are the same for both plates, so they cancel out:\n<br/><br/>\n$$84(100 - T) = 126T$$\n<br/><br/>\nNow, we can solve for T:\n<br/><br/>\n$$8400 - 84T = 126T$$<br/><br/>\n$$210T = 8400$$<br/><br/>\n$$T = \\frac{8400}{210}$$<br/><br/>\n$$T = 40$$\n<br/><br/>\nSo, the temperature of the surface of contact in steady state is $$40{ }^{\\circ} \\mathrm{C}$$.",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lh303j46",
@@ -242,7 +254,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "<p>Newton&#39;s law of cooling states that the rate of heat loss of a body is directly proportional to the difference in the temperatures between the body and its surroundings. The average rate of cooling can be represented as:</p>\n<p>$$\\frac{T_1-T_2}{t} = K \\left(\\frac{T_1+T_2}{2} - T_s\\right)$$</p>\n<p>where:</p>\n<ul>\n<li>$T_1$ and $T_2$ are the initial and final temperatures of the body,</li>\n<li>$t$ is the time it takes for the body to cool from $T_1$ to $T_2$,</li>\n<li>$T_s$ is the temperature of the surroundings, and</li>\n<li>$K$ is a constant of proportionality.</li>\n</ul>\n<p>In the first 7 minutes, the body cools from $60^\\circ C$ to $40^\\circ C$, and the surrounding temperature is $10^\\circ C$. So, the first equation is:</p>\n<p>$$\\frac{60-40}{7} = K \\left(\\frac{60+40}{2} - 10\\right) \\tag{1}$$</p>\n<p>In the next 7 minutes, the body cools from $40^\\circ C$ to $T^\\circ C$, with the same surrounding temperature. So, the second equation is:</p>\n<p>$$\\frac{40-T}{7} = K \\left(\\frac{40+T}{2} - 10\\right) \\tag{2}$$</p>\n<p>Solving equation (1) for $K$ and substituting into equation (2) will give the temperature $T$ after the next 7 minutes:</p>\n<p>$$T = 28^\\circ C$$</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l5c4db07",
@@ -263,7 +276,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>Thermal current is same so</p>\n<p>$${{dQ} \\over {dt}} = {{\\Delta {T_1}} \\over {{{{I_1}} \\over {{K_1}A}}}} = {{\\Delta {T_2}} \\over {{{{I_2}} \\over {{K_2}A}}}}$$</p>\n<p>or $${{20} \\over {16}} \\times K' = {{80} \\over 8} \\times K$$</p>\n<p>$$ \\Rightarrow K' = 8\\,K$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l6i1373g",
@@ -284,7 +298,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>$${{\\Delta Q} \\over {\\Delta t}} = {{kA({T_1} - {T_2})} \\over l}$$</p>\n<p>$$ \\Rightarrow {{mL} \\over {\\Delta t}} = {{kA({T_1} - {T_2})} \\over l}$$</p>\n<p>$$ \\Rightarrow {m \\over {\\Delta t}} = {{kA({T_1} - {T_2})} \\over {Ll}}$$</p>\n<p>$$ \\simeq 61.1 \\times {10^{ - 5}}$$ kg/s</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l6jhb1jz",
@@ -305,7 +320,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>$$450 - T = {{dQ} \\over {dt}} \\times {{{l_1}} \\over {{K_1}{A_1}}}$$</p>\n<p>$$T - 0 = {{dQ} \\over {dt}} \\times {{{l_2}} \\over {{K_2}{A_2}}}$$</p>\n<p>So, $${{450 - T} \\over T} = {{{K_2}{A_2}{l_1}} \\over {{K_1}{A_1}{l_2}}} = 9 \\times {1 \\over 2} \\times 2 = 9$$</p>\n<p>$$450 - T = 9T$$</p>\n<p>$$ \\Rightarrow T = 45^\\circ C$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l6jhh8jx",
@@ -326,7 +342,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>From Newton's cooling law $${{dQ} \\over {dt}} =  - k(T - {T_s})$$ the statement A is correct.</p>\n<p>For B</p>\n<p>$$U = \\sigma eA{T^4}$$</p>\n<p>So, $${{{U_1}} \\over {{U_2}}} = {\\left( {{{283} \\over {293}}} \\right)^4} \\simeq {1 \\over {1.15}}$$</p>\n<p>Statement B is correct</p>\n<p>For C</p>\n<p>$$\\eta  = 1 - {{{T_1}} \\over {{T_2}}} = 1 - {{100} \\over {400}} = {3 \\over 4}$$</p>\n<p>So, efficiency is 75% C is correct</p>\n<p>For D</p>\n<p>From Newton's law of cooling $${{dQ} \\over {dt}} =  - k(T - {T_s})$$</p>\n<p>The statement is wrong.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l547v4hz",
@@ -342,7 +359,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>$$H = {{{V^2}} \\over R}\\,.\\,\\Delta t$$</p>\n<p>$$ \\Rightarrow H = {{{V^2}} \\over {{R_1}}}\\,.\\,20 = {{{V^2}} \\over {{R_2}}}\\,.\\,60$$ ..... (i)</p>\n<p>Also, $$H = {{{V^2}} \\over {\\left[ {{{{R_1}{R_2}} \\over {{R_1} + {R_2}}}} \\right]}}\\,.\\,\\Delta t$$</p>\n<p>$$ = {4 \\over 3}\\,.\\,{{{V^2}} \\over {{R_1}}}\\,.\\,\\Delta t$$ [$$\\because$$ $${R_2} = 3{R_1}$$]</p>\n<p>$$ \\Rightarrow \\Delta t = 15$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l547zpzh",
@@ -358,7 +376,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>$${{{L_1}} \\over {{K_1}{A_1}}} + {{{L_2}} \\over {{K_2}{A_2}}} = {{{L_1} + {L_2}} \\over {{K_{eff}}{A_{eff}}}}$$</p>\n<p>$$ \\Rightarrow {4 \\over K} + {{2.5} \\over {2K}} = {{6.5} \\over {{K_{eff}}}}$$</p>\n<p>$$ \\Rightarrow {{10.5} \\over {2K}} = {{6.5} \\over {{K_{eff}}}}$$</p>\n<p>$$ \\Rightarrow {K_{eff}} = {{13K} \\over {10.5}} = \\left( {1 + {5 \\over {21}}} \\right)K$$</p>\n<p>$$ \\Rightarrow \\alpha  = 21$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "E9NkG1T0M7tTbjjWl01kmj1h6nh",
@@ -379,7 +398,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ko7e25nh/ffdf7545-c722-4fce-b88c-e969800c4b87/7dc003e0-ab63-11eb-b54e-b3848983e951/file-1ko7e25ni.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 17th March Morning Shift Physics - Heat and Thermodynamics Question 292 English Explanation\">\n<br>$${R_{eq}} = {R_1} + {R_2}$$<br><br>$$ \\Rightarrow $$ $${1 \\over {{K_{eq}}}}{{2l} \\over A} = {l \\over {{K_1}A}} + {l \\over {{K_2}A}}$$<br><br>$$ \\Rightarrow $$ $${2 \\over {{K_{eq}}}} = {l \\over {{K_1}}} + {l \\over {{K_2}}}$$<br><br>$$ \\Rightarrow $$ $${2 \\over {{K_{eq}}}} = {{{K_1} + {K_2}} \\over {{K_1}{K_2}}}$$<br><br>$$ \\Rightarrow $$ $${K_{eq}} = {{2{K_1}{K_2}} \\over {{K_1} + {K_2}}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "GwI0nGXTjxK9X8rSfc1kltitszl",
@@ -400,7 +420,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "Temperature at the junction is $$\\theta$$.<br><br>so using the formula<br><br>$${{{T_2} - T} \\over {{R_1}}} = {{T - {T_1}} \\over {{R_2}}}$$<br><br>$${{{\\theta _2} - \\theta } \\over {{R_2}}} = {{\\theta  - {\\theta _1}} \\over {{R_1}}}$$$${R_1}({\\theta _2} - \\theta ) = {R_2}(\\theta  - {\\theta _1})$$<br><br>$${R_1}{\\theta _2} - {R_1}\\theta  = {R_2}\\theta  - {R_2}{\\theta _1}$$<br><br>$${R_1}\\theta  + {R_2}\\theta  = {R_1}{\\theta _2} + {R_2}{\\theta _1}$$<br><br>$$\\theta  = {{{R_1}{\\theta _2} + {R_2}{\\theta _1}} \\over {{R_1} + {R_2}}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1kte7hi1z",
@@ -416,7 +437,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<br>Rods are identical so<br><br>R<sub>AB</sub> = R<sub>CD</sub> = 10 Kw<sup>$$-$$1</sup><br><br>C is mid-point of AB, so<br><br>R<sub>AC</sub> = R<sub>CB</sub> = 5 Kw<sup>$$-$$1</sup><br><br>at point C<br><br>$${{200 - T} \\over 5} = {{T - 125} \\over {10}} + {{T - 100} \\over 5}$$<br><br>2(200 $$-$$ T) = T $$-$$ 125 + 2(T $$-$$ 100)<br><br>400 $$-$$ 2T = T $$-$$ 125 + 2T $$-$$ 200<br><br>$$T = {{725} \\over 5}$$ = 145$$^\\circ$$C<br><br>$${I_h} = {{145 - 125} \\over {10}}w = {{20} \\over {10}}w$$<br><br>I<sub>h</sub> = 2w<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kwluz5vz/2964bfa1-d361-4aee-8ad2-1de2c7a2165a/59d2b1f0-51ba-11ec-9e89-f95be170c8e5/file-1kwluz5w0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2021 (Online) 27th August Morning Shift Physics - Heat and Thermodynamics Question 257 English Explanation\">",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ktjnr4zg",
@@ -437,7 +459,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kuyfw8h9/af0663c3-bbec-4ec8-ad8b-d223fe421590/2124f9d0-310d-11ec-a2f1-fdc4f2fd14e1/file-1kuyfw8ha-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kuyfw8h9/af0663c3-bbec-4ec8-ad8b-d223fe421590/2124f9d0-310d-11ec-a2f1-fdc4f2fd14e1/file-1kuyfw8ha-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kuyfw8h9/af0663c3-bbec-4ec8-ad8b-d223fe421590/2124f9d0-310d-11ec-a2f1-fdc4f2fd14e1/file-1kuyfw8ha.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 31st August Evening Shift Physics - Heat and Thermodynamics Question 246 English Explanation\"></picture> <br><br>Thermal resistance of spherical sheet of thickness dr and radius r is <br><br>$$dR = {{dr} \\over {K(4\\pi {r^2})}}$$<br><br>$$R = \\int\\limits_{{r_1}}^{{r_2}} {{{dr} \\over {K(4\\pi {r^2})}}} $$<br><br>$$R = {1 \\over {4\\pi K}}\\left( {{1 \\over {{r_1}}} - {1 \\over {{r_2}}}} \\right) = {1 \\over {4\\pi K}}\\left( {{{{r_2} - {r_1}} \\over {{r_1}{r_2}}}} \\right)$$<br><br>Thermal current (i) $$ = {{{\\theta _2} - {\\theta _1}} \\over R}$$<br><br>$$i = {{4\\pi K{r_1}{r_2}} \\over {{r_2} - {r_1}}}({\\theta _2} - {\\theta _1})$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1kuccwfbi",
@@ -454,7 +477,8 @@
     "difficulty": "medium",
     "solution": "T<sub>s</sub> = 0 K<br/><br/>T<sub>i</sub> = 200 K, e = 1<br/><br/>$$ - Ms{{dT} \\over {dt}} = {{dQ} \\over {dt}} = \\sigma eA{T^4}$$<br/><br/>$$ - {{dT} \\over {dt}} = {{\\sigma A{T^4}} \\over {Ms}}$$<br/><br/>$${{\\sigma A} \\over {Ms}}\\int\\limits_{{t_i}}^{{t_f}} {dt =  - \\int\\limits_{{T_i}}^{{T_f}} {{{dT} \\over {{T^4}}}} } $$<br/><br/>$${{\\sigma A} \\over {Ms}}({t_f} - {t_i}) = {1 \\over 3}\\left( {{1 \\over {T_f^3}} - {1 \\over {T_i^3}}} \\right)$$<br/><br/>$${{{{\\sigma A} \\over {Ms}}({t_1} - 0) = {1 \\over 3}\\left( {{1 \\over {{{(100)}^3}}} - {1 \\over {{{(200)}^3}}}} \\right)} \\over {{{\\sigma A} \\over {Ms}}({t_2} - 0) = {1 \\over 3}\\left( {{1 \\over {{{(50)}^3}}} - {1 \\over {{{(200)}^3}}}} \\right)}}$$<br/><br/>$${{{t_1}} \\over {{t_2}}} = {{{{{{(200)}^3} - {{(100)}^3}} \\over {{{(100)}^3}{{(200)}^3}}}} \\over {{{{{(200)}^3} - {{(50)}^3}} \\over {{{(50)}^3}{{(200)}^3}}}}}$$<br/><br/>$$\\therefore$$ $${{{t_2}} \\over {{t_1}}} = {9 \\over 1}$$",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "m3AUL1LLRJzpG9bpSzjgy2xukfm2wf02",
@@ -476,7 +500,8 @@
     "difficulty": "medium",
     "solution": "Here, A = 64 mm<sup>2</sup>, T = 2500K (where, A = surface area of filament, T = temperature of filament, d is distance of bulb from observer and R<sub>e</sub> = radius of pupil of eye)<br><br>Point source, d = 100 m, R<sub>e</sub> = 3 mm<br><br>(a) P = $$\\sigma $$AeT<sup>$$-$$4</sup><br><br>= 5.67 $$ \\times $$ 10<sup>$$-$$8</sup> $$ \\times $$ 64 $$ \\times $$ 10<sup>$$-$$6</sup> $$ \\times $$ 1 $$ \\times $$ (2500)<sup>4</sup><br><br>($$ \\because $$ e = 1 for black body)<br><br>= 141.75 W<br><br>(b) Power reaching to the eye<br><br>= $${P \\over {4\\pi {d^2}}} \\times (\\pi R_e^2)$$<br><br>$$ = {{141.75} \\over {4\\pi  \\times {{(100)}^2}}} \\times \\pi  \\times {(3 \\times {10^{ - 3}})^2}$$<br><br>$$ = 3.189375 \\times {10^{ - 8}}$$ W<br><br>(c) $${\\lambda _m}T = b$$<br><br>$${\\lambda _m} \\times 2500 = 2.9 \\times {10^{ - 3}}$$<br><br>$$ \\Rightarrow {\\lambda _m} = 1.16 \\times {10^{ - 6}}$$ = 1160 nm<br><br>(d) Power received by one eye of observer = $$\\left( {{{hc} \\over \\lambda }} \\right) \\times {{\\Delta N} \\over {\\Delta t}}$$<br><br>where, $${{\\Delta N} \\over {\\Delta t}}$$ = number of photons.<br><br>entering into eye per second.<br><br>$$ = 3.189375 \\times {10^{ - 8}}$$<br><br>$$ = {{6.63 \\times {{10}^{ - 34}} \\times 3 \\times {{10}^8}} \\over {1740 \\times {{10}^{ - 9}}}} \\times {{\\Delta N} \\over {\\Delta t}}$$<br><br>$$ \\Rightarrow {{\\Delta N} \\over {\\Delta t}} = 2.79 \\times {10^{11}}$$",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "ubgPeF0lSk9YUYB5Sh1klgwagtw",
@@ -493,7 +518,8 @@
     "difficulty": "medium",
     "solution": "$${{dQ} \\over {dt}} = e\\sigma A({T^4} - T_0^4)$$<br><br>For small temperature change,<br><br>$${{dQ} \\over {dt}} = e\\sigma A{T^3}\\Delta T$$ .... (i)<br><br>$${{mCdT} \\over {dt}} = e\\sigma A{T^3}\\Delta T $$<br><br>$$\\Rightarrow {{dT} \\over {dt}} = {{e\\sigma A{T^3}} \\over {mC}}\\Delta T$$<br><br>$${{e\\sigma A{T^3}} \\over {mC}}$$ $$\\to$$ constant for Newton law of cooling<br><br>$$ \\therefore $$ $${{e\\sigma A{T^3}} \\over {mC}} = 0.001 $$\n<br><br>$$\\Rightarrow e\\sigma A{T^3} = mC \\times 0.001 = 1 \\times 4200 \\times 0.001$$<br><br>$$e\\sigma A{T^3} = 4.2$$ .... (ii)<br><br>$${{dQ} \\over {dt}} = 700 \\times 0.05 = 35$$ W ..... (iii)<br><br>Putting the value of Eqs. (ii) and (iii) in Eq. (i), we get<br><br>$$35 = 4.2\\Delta T \\Rightarrow {{35} \\over {4.2}} = \\Delta T \\Rightarrow \\Delta T = 8.33$$",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "AZjNuv18b7swWvjg2kjgy2xukg0c52vn",
@@ -514,7 +540,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "All three rods have same length($$l$$) and area of cross-section(A).\n<br><br>They are in series combination so heat current is same for all rods.\n<br><br>$$ \\therefore $$ $${\\left( {{{\\Delta Q} \\over {\\Delta t}}} \\right)_1} = {\\left( {{{\\Delta Q} \\over {\\Delta t}}} \\right)_2} = {\\left( {{{\\Delta Q} \\over {\\Delta t}}} \\right)_3}$$\n<br><br>$$ \\Rightarrow $$ $${{\\left( {100 - 70} \\right){K_1}A} \\over l} = {{\\left( {70 - 20} \\right){K_2}A} \\over l} = {{\\left( {20 - 0} \\right){K_3}A} \\over l}$$\n<br><br>$$ \\Rightarrow $$ 30K<sub>1</sub>\n = 50K<sub>2</sub>\n = 20K<sub>3</sub>\n<br><br>$$ \\therefore $$ K<sub>1</sub> : K<sub>3</sub> = 2 : 3,\n<br>K<sub>2</sub> : K<sub>3</sub> = 2 : 5",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "X7kmGjQQHpdY0IcEAluV9",
@@ -535,7 +562,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/Iv0T0UjhuSW2Z8Gez/FqS9JsCWH6pzJmFmD4igispgwGY2T/U1iT4htkXEQlJYuqlrHO76/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Morning Slot Physics - Heat and Thermodynamics Question 398 English Explanation\">\n<br><br>$$\\left( {{{dQ} \\over {dt}}} \\right) = {{kA\\Delta T} \\over \\ell }$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$${1 \\over A}\\left( {{{dQ} \\over {dt}}} \\right) = {{\\left( {0.1} \\right)\\left( {900} \\right)} \\over 1} = 90W/{m^2}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "IePFxWpif4iMvXIYdhYDr",
@@ -556,7 +584,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/3Jx23a2UWfBlB45qO/VRUMK063DhXcWgqbJ7Kt8qwpYNX9a/P5X7n65z7FouDOeUpjiyIa/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th January Morning Slot Physics - Heat and Thermodynamics Question 384 English Explanation\">\n<br>K<sub>eq</sub> = $${{{K_1}{A_1} + {K_2}{A_2}} \\over {{A_1} + {A_2}}}$$\n<br><br>= $${{{K_1}\\left( {\\pi {R^2}} \\right) + {K_2}\\left( {3\\pi {R^2}} \\right)} \\over {4\\pi {R^2}}}$$\n<br><br>= $${{{K_1} + 3{K_2}} \\over 4}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "R8QRAQ5jGlUe0bd4QxoiT",
@@ -577,7 +606,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<p>We know, m = V . $$\\rho$$</p>\n<p>where, V = volume and $$\\rho$$ = density.</p>\n<p>So, we have</p>\n<p>$${{dQ} \\over {dt}} = {h \\over {ms}}(T - {T_0}) = {{h(T - {T_0})} \\over {V\\,.\\,\\rho s}}$$</p>\n<p>Since, h, (T $$-$$ T<sub>0</sub>) and V are constant for both beaker.</p>\n<p>$$\\therefore$$ $${{dQ} \\over {dt}} \\propto {1 \\over {\\rho s}}$$</p>\n<p>We have given that $$\\rho$$<sub>A</sub> = 8 $$\\times$$ 10<sup>2</sup> kgm<sup>$$-$$3</sup>, $$\\rho$$<sub>B</sub> = 10<sup>3</sup> kgm<sup>$$-$$3</sup>, s<sub>A</sub> = 2000 J kg<sup>$$-$$1</sup> K<sup>$$-$$1</sup> and s<sub>B</sub> = 4000 J kg<sup>$$-$$1</sup> K<sup>$$-$$1</sup>, $$\\rho$$<sub>A</sub>s<sub>A</sub> = 16 $$\\times$$ 10<sup>5</sup> and $$\\rho$$<sub>B</sub>s<sub>B</sub> = 4 $$\\times$$ 10<sup>6</sup></p>\n<p>$$\\rho$$<sub>A</sub> < $$\\rho$$<sub>B</sub>, s<sub>A</sub> < s<sub>B</sub> and $$\\rho$$<sub>A</sub>s<sub>A</sub> < $$\\rho$$<sub>B</sub>s<sub>B</sub></p>\n<p>$$ \\Rightarrow {1 \\over {{\\rho _A}{s_A}}} > {1 \\over {{\\rho _B}{s_B}}} \\Rightarrow {{d{Q_A}} \\over {dt}} > {{d{Q_B}} \\over {dt}}$$</p>\n<p>So, for container B, rate of cooling is smaller than the container A. Hence, graph of B lies above the graph of A and it is not a straight line (slope of A is greater than B).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "5tgz85W1DXyZYJOMhGT85",
@@ -598,7 +628,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "Let interface temperature in steady state conduction is $\\theta$, then assuming no heat loss through sides;<br/><br/>\n$$\n\\left(\\begin{array}{l}\n\\text { Rate of heat } \\\\\n\\text { flow through } \\\\\n\\text { first slab }\n\\end{array}\\right)=\\left(\\begin{array}{l}\n\\text { Rate of heat } \\\\\n\\text { flow through } \\\\\n\\text { second slab }\n\\end{array}\\right)\n$$<br/><br/>\n$$\n\\begin{aligned}\n& \\Rightarrow \\frac{(3 K) A\\left(\\theta_2-\\theta\\right)}{d}=\\frac{K A\\left(\\theta-\\theta_1\\right)}{3 d} \\\\\\\\\n& \\Rightarrow \\quad 9\\left(\\theta_2-\\theta\\right)=\\theta-\\theta_1 \\\\\\\\\n& \\Rightarrow \\quad 9 \\theta_2+\\theta_1=10 \\theta \\\\\\\\\n& \\Rightarrow \\quad \\theta=\\frac{9}{10} \\theta_2+\\frac{1}{10} \\theta_1\n\\end{aligned}\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "RxUQv6NdG4Xy3PiQ",
@@ -615,7 +646,8 @@
     "difficulty": "easy",
     "solution": "$${\\log _2} = {{{p_1}} \\over {{p_0}}} = 1$$<br><br>Therefore, $${{{p_1}} \\over {{p_0}}} = 2$$<br><br>According to Stefan's law, p $$ \\propto $$ T<sup>2</sup><br><br>$$ \\Rightarrow {{{p_2}} \\over {{p_1}}} = {\\left( {{{{T_2}} \\over {{T_1}}}} \\right)^4} = {\\left( {{{2767 + 273} \\over {487 + 273}}} \\right)^4} = {4^4}$$<br><br>$${{{p_2}} \\over {{p_1}}} = {{{p_2}} \\over {2{p_0}}} = {4^4} \\Rightarrow {{{p_2}} \\over {{p_0}}} = 2 \\times {4^4}$$<br><br>$${\\log _2}{{{p_2}} \\over {{p_0}}} = {\\log _2}[2 \\times {4^4}]$$<br><br>$$ = {\\log _2}2 + {\\log _2}{4^4}$$<br><br>$$ = 1 + {\\log _2}{2^8} = 1 + 8 = 9$$",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "CZBbHg7fWexeDiVe",
@@ -636,7 +668,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "Rate of heat flow is given by,\n<br><br>$$Q = {{KA\\left( {{\\theta _1} - {\\theta _2}} \\right)} \\over l}$$\n<br><br>Where, $$K=$$ coefficient of thermal conductivity $$l=$$ length of rod and $$A=$$ Area of cross-section of rod\n<br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/HlGlPtIDOXeYoEZVP/OZxophBJu8QZVCHUz4csTUgz0YRoh/Xvjgjoj5kzuCzUgK7XsmPi/image.svg\" loading=\"lazy\" alt=\"JEE Main 2014 (Offline) Physics - Heat and Thermodynamics Question 449 English Explanation\"> \n<p>If the junction temperature is $$T,$$ then\n<br><br>$${Q_{Copper}}\\,\\, = \\,\\,{Q_{Brass}}\\,\\, + \\,\\,{Q_{Steel}}$$\n<br><br>$${{0.92 \\times 4\\left( {100 - T} \\right)} \\over {46}} = {{0.26 \\times 4 \\times \\left( {T - 0} \\right)} \\over {13}} + {{0.12 \\times 4 \\times \\left( {T - 0} \\right)} \\over {12}}$$ \n<br><br>$$ \\Rightarrow 200 - 2T = 2T + T$$\n<br><br>$$ \\Rightarrow T = {40^ \\circ }C$$\n<br><br>$$\\therefore$$ $${Q_{Copper}} = {{0.92 \\times 4 \\times 60} \\over {46}} = 4.8\\,cal/s$$ </p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "z8DEsRV2kkNFGkub",
@@ -658,7 +691,8 @@
     "difficulty": "medium",
     "solution": "<p>Effective area of incident light = $$\\pi$$r<sup>2</sup></p>\n<p>Total energy per second = 912 $$\\times$$ $$\\pi$$r<sup>2</sup></p>\n<p>From Stefan's law, we have</p>\n<p>E = Ae $$\\sigma$$ (T<sup>4</sup> $$-$$ T$$_0^4$$)</p>\n<p>For black body emissivity, e = 1.</p>\n<p>A = 4$$\\pi$$r<sup>2</sup></p>\n<p>912 $$\\times$$ $$\\pi$$r<sup>2</sup> = 4$$\\pi$$r<sup>2</sup> $$\\times$$ 5.7 $$\\times$$ 10<sup>$$-$$8</sup> [T<sup>4</sup> $$-$$ 300<sup>4</sup>]</p>\n<p>$$({T^4} - {300^4}) = {{912} \\over {4 \\times 5.7 \\times {{10}^{ - 8}}}} = 40 \\times {10^8}$$</p>\n<p>$${T^4} = 40 \\times {10^8} + {3^4} \\times {10^8}$$</p>\n<p>$${T^4} = (90 + 81) \\times {10^8} \\Rightarrow 121 \\times {10^8}$$</p>\n<p>$$T = {(121)^{1/4}} \\times 100 = \\sqrt {11}  \\times 100 \\Rightarrow 3.3 \\times 100$$</p>\n<p>T = 330 K</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "1l224a1yi",
@@ -680,7 +714,8 @@
     "difficulty": "medium",
     "solution": "<p>Let the steady state temperature of the middle plate to T<sub>0</sub>. In the steady state, the heat radiated per unit time by the middle plate is equal to the heat received per unit time by it. The middle plate radiates heat from both the surfaces and receives the heat radiated by the first and the third plates.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l253p44c/2920b6eb-7ea3-4606-9ef2-a023d1001f54/6dc305c0-bf4c-11ec-b997-87cc5d16a405/file-1l253p44d.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l253p44c/2920b6eb-7ea3-4606-9ef2-a023d1001f54/6dc305c0-bf4c-11ec-b997-87cc5d16a405/file-1l253p44d.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2012 Paper 1 Offline Physics - Heat and Thermodynamics Question 36 English Explanation\"></p>\n<p>Stefan-Boltzmann law gives the rate of heat loss and heat gain by the middle plate as</p>\n<p>$$d{Q_{out}}/dt = \\sigma AT_0^4 + \\sigma AT_0^4$$,</p>\n<p>$$d{Q_{in}}/dt = \\sigma A{(2T)^4} + \\sigma A{(3T)^4}$$.</p>\n<p>The steady state condition, $$d{Q_{out}}/dt = d{Q_{in}}/dt$$</p>\n<p>$$\\sigma A{(2T)^4} + \\sigma A{(3T)^4} = \\sigma 2A{({T_0})^4}$$</p>\n<p>$$16{T^4} + 81{T^4} = 2{({T_0})^4}$$</p>\n<p>$$97{T^4} = 2{({T_0})^4}$$</p>\n<p>$${({T_0})^4} = {{97} \\over 2}{T^4} = {\\left( {{{97} \\over 2}} \\right)^{1/4}}T$$</p>",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "wPPvXGRunPl0SPKz",
@@ -697,7 +732,8 @@
     "difficulty": "medium",
     "solution": "<p>According to Wien's displacement law, $$\\lambda$$<sub>m</sub>T = constant</p>\n<p>$$\\therefore$$ $${({\\lambda _m})_A}{T_A} = {({\\lambda _m})_B}{T_B}$$</p>\n<p>or, $${{{T_A}} \\over {{T_B}}} = {{{{({\\lambda _m})}_B}} \\over {{{({\\lambda _m})}_A}}} = {{1500\\,nm} \\over {500\\,nm}}$$ or $${{{T_A}} \\over {{T_B}}} = 3$$ ...... (i)</p>\n<p>According to Stefan Boltzmann law, rate of energy radiated by a black body</p>\n<p>$$E = \\sigma A{T^4} = \\sigma 4\\pi {R^2}{T^4}$$ [Here, $$A = 4\\pi {R^2}$$]</p>\n<p>$$\\therefore$$ $${{{E_A}} \\over {{E_B}}} = {\\left( {{{{R_A}} \\over {{R_B}}}} \\right)^2}{\\left( {{{{T_A}} \\over {{T_B}}}} \\right)^4} = {\\left( {{{6\\,cm} \\over {18\\,cm}}} \\right)^2}{(3)^4}$$ (Using (i))</p>\n<p>$$ = 9$$</p>",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "wPPvXGRunPl0SPKz",
@@ -714,7 +750,8 @@
     "difficulty": "medium",
     "solution": "<p>According to Wien's displacement law, $$\\lambda$$<sub>m</sub>T = constant</p>\n<p>$$\\therefore$$ $${({\\lambda _m})_A}{T_A} = {({\\lambda _m})_B}{T_B}$$</p>\n<p>or, $${{{T_A}} \\over {{T_B}}} = {{{{({\\lambda _m})}_B}} \\over {{{({\\lambda _m})}_A}}} = {{1500\\,nm} \\over {500\\,nm}}$$ or $${{{T_A}} \\over {{T_B}}} = 3$$ ...... (i)</p>\n<p>According to Stefan Boltzmann law, rate of energy radiated by a black body</p>\n<p>$$E = \\sigma A{T^4} = \\sigma 4\\pi {R^2}{T^4}$$ [Here, $$A = 4\\pi {R^2}$$]</p>\n<p>$$\\therefore$$ $${{{E_A}} \\over {{E_B}}} = {\\left( {{{{R_A}} \\over {{R_B}}}} \\right)^2}{\\left( {{{{T_A}} \\over {{T_B}}}} \\right)^4} = {\\left( {{{6\\,cm} \\over {18\\,cm}}} \\right)^2}{(3)^4}$$ (Using (i))</p>\n<p>$$ = 9$$</p>",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "UMAfd4NQAWsg4LUO",
@@ -735,7 +772,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "The heat flow rate is given by\n<br><br>$${{dQ} \\over {dt}} = {{kA\\left( {{\\theta _1} - \\theta } \\right)} \\over x}$$\n<br><br>$$ \\Rightarrow {\\theta _1} - \\theta $$\n$$ = {x \\over {kA}}{{dQ} \\over {dt}} $$\n<br><br>$$\\Rightarrow \\theta $$\n$$ = {\\theta _1} - {x \\over {kA}}{{dQ} \\over {dt}}$$\n<br><br>where $${\\theta _1}$$ is the temperature of hot end and $$\\theta $$ is temperature at a distance $$x$$ from hot end.\n<br>The above equation can be graphically represented by option $$(a).$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "qC1cqhv8VOtI3UJZ",
@@ -756,7 +794,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/XvX7bIkAwyLVBh5ng/wfroG7CIxzJcXiNzdrBXsySySq4pJ/B2T95LIqr5rzj6WCRHRbmC/image.svg\" loading=\"lazy\" alt=\"AIEEE 2007 Physics - Heat and Thermodynamics Question 438 English Explanation\"> \n<br>$${{{K_1}A\\left( {{T_1} - T} \\right)} \\over {{\\ell _1}}} = {{{K_2}A\\left( {T - {T_2}} \\right)} \\over {{\\ell _2}}}$$ \n<br>$$\\therefore$$ $$T = {{{K_1}{T_1}{\\ell _2} + {K_2}{T_2}{\\ell _1}} \\over {{K_2}{\\ell _1} + {K_1}{\\ell _2}}}$$\n<br>$$ = {{{K_1}{\\ell _2}{T_1} + {K_2}{\\ell _1}{T_2}} \\over {{K_1}{\\ell _2} + {K_2}{\\ell _1}}}$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "mguomzn1",
@@ -778,7 +817,8 @@
     "difficulty": "Medium",
     "solution": "<p>Since the radiation is continuously falling on the black body, the quantity of radiation absorbed per second will increase.</p>\n<p>The reason given in question is self explanatory. With an increase in temperature, the entire Plank's curve shifts upwards and hence radiation in any spectrum will increase. Reflected energy per unit time will be zero since black body has zero reflectivity and hence it will remain constant.</p>\n<p>The bodies which radiate energy in the form of photons can be determined using Kirchoff's</p>\n<p>law of radiation. When these photons reach another surface, they may be absorbed, reflected or transmitted. Since the radiation is continuously falling on the black body, the quantity of radiation absorbed per second will increase.</p>\n<p>Therefore, the quantity of radiation absorbed by the black body in unit time will increase, since emissivity = absorptivity, hence the quantity of radiation emitted by black body in unit time will increases, Black body radiates more energy in unit time in the visible spectrum, the reflected energy in unit time by the black body remains same.</p>\n<p>Hence, the option (A), (B), (C) and (D) are the correct answer.</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "2uSaCQcyh0jURp2q",
@@ -799,7 +839,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "Total power radiated by Sun $$ = \\sigma {T^4} \\times 4\\pi {R^2}$$\n<br><br>The intensity of power at earth's surface $$ = {{\\sigma {T^4} \\times 4\\pi {R^2}} \\over {4\\pi {r^2}}}$$\n<br><br>Total power received by Earth $$ = {{\\sigma {T^4}{R^2}} \\over {{r^2}}}\\left( {\\pi r_0^2} \\right)$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "x0xC6nCqL3gnEicW",
@@ -820,7 +861,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/5f2Sn8CWo8UlPXQYi/WFW7mXUNheB3yTKB2qIHKOt8mvXz3/FB0HCOZGadEqtdDP0dliM3/image.svg\" loading=\"lazy\" alt=\"AIEEE 2005 Physics - Heat and Thermodynamics Question 442 English Explanation\"> \n<br>Consider a shell of thickness $$(dr)$$ and of radius $$(r)$$ and the temperature of inner and outer surfaces of this shell be $$T,(T-dT)$$\n<br>$$H = {{KA\\left[ {\\left( {T - dT} \\right) - T} \\right]} \\over {dr}} = {{ - KAdT} \\over {dr}}$$\n<br>$$H =  - 4\\pi K{r^2}{{dT} \\over {dr}}$$ ( as $$A = 4\\pi {r^2}$$ )\n<br>Then, $$\\left( H \\right)\\int\\limits_{{r_1}}^{{r^2}} {{1 \\over {{r^2}}}} dr =  - 4\\pi K\\int\\limits_{{T_1}}^{{T_2}} {dT} $$\n<br>$$H\\left[ {{1 \\over {{r_1}}} - {1 \\over {{r_2}}}} \\right] =  - 4\\pi K\\left[ {{T_2} - {T_1}} \\right]$$ \n<br>or $$H = {{ - 4\\pi K{r_1}{r_2}\\left( {{T_2} - {T_1}} \\right)} \\over {\\left( {{r_2} - {r_1}} \\right)}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "E0PASQmkx7bIhneV",
@@ -841,7 +883,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "The thermal resistance\n<br/><br>$${x \\over {KA}} + {{4x} \\over {2KA}} = {{3x} \\over {KA}}$$\n<br/><br>$$\\therefore$$ $${{dQ} \\over {dt}} = {{\\Delta T} \\over {{{3x} \\over {KA}}}} = {{\\left( {{T_2} - {T_1}} \\right)KA} \\over {3x}}$$\n<br/><br>$$ = {1 \\over 3}\\left\\{ {{{A\\left( {{T_2} - {T_1}} \\right)K} \\over x}} \\right\\}$$\n<br/><br>$$\\therefore$$ $$f = {1 \\over 3}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "EZB4fpmf7oBd1OMJ",
@@ -862,7 +905,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "$$E = \\sigma A{T^4};\\,\\,A \\propto {R^2}$$ \n<br>$$\\therefore$$ $$E \\propto {R^2}{T^4}$$\n<br>$$\\therefore$$ $${{{E_2}} \\over {{E_1}}} = {{R_2^2T_2^4} \\over {R_1^2T_1^4}}$$\n<br>$$ \\Rightarrow {{{E_2}} \\over {{E_1}}}$$\n<br>$$ = {{{{\\left( {2R} \\right)}^2}{{\\left( {2T} \\right)}^4}} \\over {{R^2}{T^4}}}$$\n<br>$$ = 64$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "Ftq3pX3kDVMovler",
@@ -883,7 +927,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "Wein's law correctly explanations the spectrum",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "4nuBvzWOAdZ8p2PV",
@@ -904,7 +949,8 @@
     "topic": "heat-transfer",
     "difficulty": "medium",
     "solution": "When water is cooled to form ice, energy is released from water in the form of heat. As energy is equivalent to mass therefore when water is cooled to ice, its mass decreases. ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "9bo2cjUWf49inj2l",
@@ -925,7 +971,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "Black board paint is quite approximately equal to black bodies.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "cxAlORaaQyDPNfje",
@@ -946,7 +993,8 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "The energy radiated per second is given by $$E = e\\sigma {T^4}A$$\n<br>For same material $$e$$ is same. $$\\sigma $$ is stefan's constant\n<br>$$\\therefore$$ $${{{E_1}} \\over {{E_2}}} = {{T_1^4{A_1}} \\over {T_2^4{A_2}}} = {{T_1^44\\pi r_1^2} \\over {T_2^44\\pi r_2^2}}$$\n<br>$$ = {{{{\\left( {4000} \\right)}^4} \\times {1^2}} \\over {{{\\left( {2000} \\right)}^4} \\times {4^2}}} = {1 \\over 1}$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "lzigye0UC1JjRN6N",
@@ -967,6 +1015,7 @@
     "topic": "heat-transfer",
     "difficulty": "easy",
     "solution": "Pyrometer is used to detect infra-red radiation.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   }
 ]

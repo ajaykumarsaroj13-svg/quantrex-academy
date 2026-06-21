@@ -18,7 +18,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>In simple harmonic motion, the kinetic energy oscillates with angular frequency $2\\omega$, where $\\omega$ is the angular frequency of the oscillator.</p>\n<p>Given:</p>\n<p>$$ 2\\omega = 176 \\ \\text{rad/s} $$</p>\n<p>So,</p>\n<p>$$ \\omega = \\frac{176}{2} = 88 \\ \\text{rad/s} $$</p>\n<p>Now, frequency is related to angular frequency by:</p>\n<p>$$ \\omega = 2\\pi f $$</p>\n<p>Therefore,</p>\n<p>$$ f = \\frac{\\omega}{2\\pi} = \\frac{88}{2 \\times \\frac{22}{7}} $$</p>\n<p>$$ f = \\frac{88}{\\frac{44}{7}} = 88 \\times \\frac{7}{44} $$</p>\n<p>$$ f = 2 \\times 7 = 14 \\ \\text{Hz} $$</p>\n<p>So, the correct answer is:</p>\n<p>$$ \\boxed{14} $$</p>\n<p>Option B.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "ml81k53u",
@@ -34,7 +35,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>The potential energy $(U)$ of a particle executing simple harmonic motion $(S H M)$ is given by :</p>\n<p>$$ \\mathrm{U}=\\frac{1}{2} \\mathrm{~m} \\omega^2 \\mathrm{x}^2 $$</p>\n<p>Substituting the displacement equation $\\mathrm{x}(\\mathrm{t})=\\mathrm{A} \\sin \\omega \\mathrm{t}$ :</p>\n<p>$$ \\mathrm{U}(\\mathrm{t})=\\frac{1}{2} \\mathrm{~m} \\omega^2 \\mathrm{~A}^2 \\sin ^2 \\omega \\mathrm{t} $$</p>\n<p>The potential energy $U$ is maximum when the displacement $x$ is maximum $(x= \\pm A)$.</p>\n<p>This occurs when :</p>\n<p>$$ \\sin ^2 \\omega t=1 \\Rightarrow \\sin \\omega t= \\pm 1 $$</p>\n<p>This occurs for a particle starting from the mean position ( $t=0$ ) is at :</p>\n<p>$$ \\omega \\mathrm{t}=\\frac{\\pi}{2} $$</p>\n<p>Using the relationship between angular frequency $\\omega$ and time period (T), $\\omega=\\frac{2 \\pi}{\\mathrm{~T}}$</p>\n<p>$$ \\Rightarrow\\left(\\frac{2 \\pi}{T}\\right) t=\\frac{\\pi}{2} \\Rightarrow t=\\frac{T}{4} $$</p>\n<p>It is given that $\\mathrm{t}=\\frac{\\mathrm{T}}{2 \\beta}$,</p>\n<p>$$ \\frac{T}{4}=\\frac{T}{2 \\beta} \\Rightarrow \\beta=2 $$</p>\n<p>Therefore, the value of $\\beta$ is 2 . So, the correct answer is 2 .</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "mnrre9kr",
@@ -55,7 +57,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>The velocity $v$ is the first derivative of displacement $x$ with respect to time $t$.</p>\n<p>$ v = \\frac{dx}{dt} = \\frac{d}{dt} \\left[ a \\sin \\left( 50t + \\frac{\\pi}{3} \\right) \\right] $</p>\n<p>$ v = 50a \\cos \\left( 50t + \\frac{\\pi}{3} \\right) $</p>\n<p>The particle comes to rest when $v = 0$.</p>\n<p>$ 50a \\cos \\left( 50t_1 + \\frac{\\pi}{3} \\right) = 0 \\Rightarrow \\cos \\left( 50t_1 + \\frac{\\pi}{3} \\right) = 0 $</p>\n<p>The first positive time occurs when the phase is $\\frac{\\pi}{2}$:</p>\n<p>$ 50t_1 + \\frac{\\pi}{3} = \\frac{\\pi}{2} $</p>\n<p>$ 50t_1 = \\frac{\\pi}{2} - \\frac{\\pi}{3} = \\frac{\\pi}{6} $</p>\n<p>$ t_1 = \\frac{\\pi}{300} \\ s $</p>\n<p>The acceleration $a$ is the derivative of velocity $v$.</p>\n<p>$ a = \\frac{dv}{dt} = \\frac{d}{dt} \\left[ 50a \\cos \\left( 50t + \\frac{\\pi}{3} \\right) \\right] $</p>\n<p>$ a = -2500a \\sin \\left( 50t + \\frac{\\pi}{3} \\right) $</p>\n<p>Acceleration is zero when $\\sin \\left( 50t_2 + \\frac{\\pi}{3} \\right) = 0$.</p>\n<p>The first positive time (other than the initial state if it is zero) occurs when the phase is $\\pi$:</p>\n<p>$ 50t_2 + \\frac{\\pi}{3} = \\pi $</p>\n<p>$ 50t_2 = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3} $</p>\n<p>$ t_2 = \\frac{2\\pi}{150} = \\frac{\\pi}{75} \\ s $</p>\n<p>Therefore, the particle will come to rest time $\\frac{\\pi}{300} \\mathrm{~s}$ and it will have zero acceleration at time $\\mathrm{t}_2 \\frac{\\pi}{75} \\mathrm{~s}$. Thus, the correct option is (A).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "mnt2t77g",
@@ -64,14 +67,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>For a particle executing SHM with amplitude A and angular frequency $\\omega$, the velocity v at a displacement x from the mean position is given by relation,</p>\n<p>$$ v^2=\\omega^2\\left(A^2-x^2\\right) $$</p>\n<p>The given equation is $\\mathrm{v}^2=50-\\mathrm{x}^2$</p>\n<p>$$ v^2=1\\left(50-x^2\\right) $$</p>\n<p>By comparing the two equations,</p>\n<p>$$ \\omega^2=1 \\Rightarrow \\omega=1 \\mathrm{rad} / \\mathrm{s} $$</p>\n<p>$$\\Rightarrow $$ $$ A^2=50 \\Rightarrow A=\\sqrt{50} \\text { units } $$</p>\n<p>The time period T is related to the angular frequency $\\omega$ by the formula:</p>\n<p>$$ \\mathrm{T}=\\frac{2 \\pi}{\\omega} $$</p>\n<p>Substituting $\\omega=1$ :</p>\n<p>$$ \\mathrm{T}=2 \\pi \\text { seconds } $$</p>\n<p>$$\\Rightarrow $$ $$ T=2 \\times\\left(\\frac{22}{7}\\right)=\\frac{44}{7} \\text { seconds }=\\frac{x}{7} \\text { seconds } $$</p>\n<p>$$ \\Rightarrow x=44 $$</p>\n<p>Therefore, the correct answer is 44 .</p>",
-    "section": "B"
+    "section": "B",
+    "type": "SUBJECTIVE"
   },
   {
     "id": "mnswhxtt",
@@ -92,7 +96,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>For the displacement equation $y=\\sin ^2 \\omega t$</p>\n<p>Using the trigonometric identity $\\sin ^2 \\theta=\\frac{1-\\cos 2 \\theta}{2}$. So, $\\mathrm{y}=\\frac{1}{2}-\\frac{1}{2} \\cos (2 \\omega \\mathrm{t})$.</p>\n<p>For SHM, the acceleration must be proportional to displacement $\\left(\\frac{d^2 y}{d t^2}=-\\omega^2 y\\right)$.</p>\n<p>From the given equation, the function is shifted by $\\frac{1}{2}$ and amplitude is $\\frac{1}{2}$, so it oscillates between 0 and 1 .</p>\n<p>While the oscillatory part is harmonic, the function represents a periodic motion and simple harmonic motion</p>\n<p>The angular frequency is $2 \\omega$.</p>\n<p>$\\mathrm{T}=\\frac{2 \\pi}{2 \\omega}=\\frac{\\pi}{\\omega}$.</p>\n<p>Therefore, it is periodic with T = $\\frac{\\pi}{\\omega}$ and SHM, i.e., $\\mathrm{A} \\rightarrow \\mathrm{III}$</p>\n<p>For the displacement equation $y=\\sin ^3(2 \\omega t)$</p>\n<p>Using the identity</p>\n<p>$$ \\sin 3 \\theta=3 \\sin \\theta-4 \\sin ^3 \\theta \\Rightarrow \\sin ^3 \\theta=\\frac{3 \\sin \\theta-\\sin 3 \\theta}{4} $$</p>\n<p>Here, $\\theta=2 \\omega \\mathrm{t}$.</p>\n<p>So, $\\mathrm{y}=\\frac{3 \\sin (2 \\omega \\mathrm{t})-\\sin (6 \\omega \\mathrm{t})}{4}=\\frac{3}{4} \\sin (2 \\omega \\mathrm{t})-\\frac{1}{4} \\sin (6 \\omega \\mathrm{t})$.</p>\n<p>It is a superposition of two periodic functions $y_1=\\frac{3}{4} \\sin (2 \\omega t)$ and $y_2=-\\frac{1}{4} \\sin (6 \\omega t)$.</p>\n<p>The time period is the LCM of time periods of both the periodic functions.</p>\n<p>The period of first function is $\\mathrm{T}_1=2 \\pi / 2 \\omega=\\frac{\\pi}{\\omega}$.</p>\n<p>The period of second function is $\\mathrm{T}_2=\\frac{2 \\pi}{6 \\omega}=\\frac{\\pi}{3 \\omega}$.</p>\n<p>So, the time period of function is $T=\\frac{\\pi}{\\omega}$.</p>\n<p>As it contains multiple frequencies, so it is not SHM.</p>\n<p>Therefore, it is a periodic function with time period $\\mathrm{T}=\\frac{\\pi}{\\omega}$ but not SHM. $(\\mathrm{B} \\rightarrow \\mathrm{I})$</p>\n<p>For the displacement equation $y=\\sin (\\omega t)+\\cos (\\pi \\omega t)$</p>\n<p>It is a sum of two periodic functions $y_1=\\sin (\\omega t)$ and $y_2=\\cos (\\pi \\omega t)$</p>\n<p>It will be periodic only if the ratio of their time periods is a rational number.</p>\n<p>$$ \\omega_1=\\omega \\Rightarrow \\mathrm{T}_1=\\frac{2 \\pi}{\\omega} $$</p>\n<p>$$ \\begin{array}{ll}  & \\omega_2=\\pi \\omega \\Rightarrow \\mathrm{T}_2=\\frac{2 \\pi}{\\pi \\omega}=\\frac{2}{\\omega} \\\\ \\operatorname{Ratio} \\frac{\\mathrm{~T}_1}{\\mathrm{~T}_2}=\\frac{2 \\pi / \\omega}{2 / \\omega}=\\pi & \\end{array} $$</p>\n<p>Since $\\pi$ is an irrational number, the function is non-periodic. ( $\\mathrm{C} \\rightarrow$ IV)</p>\n<p>For the displacement equation $y=\\cos \\omega t+\\cos 2 \\omega t$</p>\n<p>It is also the sum of two periodic function $y_1=\\cos \\omega t$ and $y_2=\\cos 2 \\omega t$</p>\n<p>$$ \\omega_1=\\omega \\Rightarrow \\mathrm{T}_1=\\frac{2 \\pi}{\\omega} \\text { and } \\omega_2=2 \\omega \\Rightarrow \\mathrm{~T}_2=\\frac{2 \\pi}{2 \\omega}=\\frac{\\pi}{\\omega} . $$</p>\n<p>The ratio of time periods is, $\\frac{\\mathrm{T}_1}{\\mathrm{~T}_2}=2$</p>\n<p>The ratio is rational. The fundamental period is $\\mathrm{T}=\\frac{2 \\pi}{\\omega}$.</p>\n<p>So, it is a periodic with time period $\\mathrm{T}=\\frac{\\pi}{\\omega}(\\mathrm{D} \\rightarrow$ III $)$</p>\n<p>Therefore, the correct match is A - II, B - I, C - IV, D - III. </p>\n<p>Hence, the correct option is (D).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "mnswhubm",
@@ -113,7 +118,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>For a particle starting from the extreme position $(x=A)$ at $t=0$, the displacement $x$ at any time $t$ is given by:</p>\n<p>$$ x=A \\cos (\\omega t) $$</p>\n<p>Where $\\omega$ is the angular frequency, defined as $\\omega=\\frac{2 \\pi}{\\mathrm{~T}}$.</p>\n<p>The given time period is $\\mathrm{T}=5 \\mathrm{sec}$ :</p>\n<p>$$ \\omega=\\frac{2 \\pi}{5} \\mathrm{rad} / \\mathrm{s} $$</p>\n<p><img alt=\"JEE Main 2026 (Online) 6th April Morning Shift Physics - Simple Harmonic Motion Question 4 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mo5ndbfu/8aeeca5e-49d3-466a-8b48-8daa9abf98ef/e84408a0-3bdd-11f1-a83a-dd05f7862255/file-6y3zli1mo5ndbfv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mo5ndbfu/8aeeca5e-49d3-466a-8b48-8daa9abf98ef/e84408a0-3bdd-11f1-a83a-dd05f7862255/file-6y3zli1mo5ndbfv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The particle moves to $\\mathrm{x}=\\frac{\\mathrm{A}}{\\sqrt{2}}$. Substituting into the displacement equation:</p>\n<p>$$ \\frac{\\mathrm{A}}{\\sqrt{2}}=\\mathrm{A} \\cos \\left(\\frac{2 \\pi}{5} \\mathrm{t}\\right) $$</p>\n<p>$$\\Rightarrow $$ $$ \\frac{1}{\\sqrt{2}}=\\cos \\left(\\frac{2 \\pi}{5} t\\right) $$</p>\n<p>Since $\\cos \\left(\\frac{\\pi}{4}\\right)=\\frac{1}{\\sqrt{2}}$ :</p>\n<p>$$ \\frac{\\pi}{4}=\\frac{2 \\pi}{5} \\mathrm{t} $$</p>\n<p>$$\\Rightarrow $$ $$ \\mathrm{t}=\\frac{5}{8} \\mathrm{sec} $$</p>\n<p>Therefore, the correct option is (C).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6rp5ulc",
@@ -134,7 +140,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>Assertion (A): A simple pendulum transported to a planet where the mass and radius are 4 times and 2 times that of the Earth, respectively, has the same time period as it does on Earth.</p>\n<p>Reason (R): The mass of the pendulum remains unchanged whether on Earth or the other planet.</p>\n<p><strong>Explanation:</strong></p>\n<p>The acceleration due to gravity $ g $ on a planet is given by the formula:</p>\n<p>$ g = \\frac{G M}{R^2} $</p>\n<p>where $ G $ is the gravitational constant, $ M $ is the mass of the planet, and $ R $ is the radius of the planet.</p>\n<p>For the new planet, the gravitational acceleration $ g' $ is:</p>\n<p>$ g' = \\frac{G(4M)}{(2R)^2} = \\frac{4G M}{4R^2} = \\frac{G M}{R^2} = g $</p>\n<p>Thus, the gravitational acceleration on this new planet is the same as on Earth, $ g $.</p>\n<p>The time period $ T $ of a simple pendulum is determined by:</p>\n<p>$ T = 2\\pi \\sqrt{\\frac{\\ell}{g}} $</p>\n<p>where $ \\ell $ is the length of the pendulum, which indicates that the time period $ T $ is independent of the mass of the pendulum.</p>\n<p>Therefore, while Assertion (A) is true and Reason (R) is true, Reason (R) does not correctly explain Assertion (A) because the time period of the pendulum is also independent of the pendulum's mass, and the key factor is the unchanged gravitational acceleration.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6srn91o",
@@ -155,7 +162,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>We can determine the time period of the oscillations by considering that when the cube is depressed by a small displacement, the additional buoyant force provided by the displaced water acts as a restoring force. Here’s a step‐by‐step explanation:</p>\n\n<p>Define the given values:</p>\n\n\n<p><p>Side length of the cube, $$L = 10\\text{ cm} = 0.1\\text{ m}$$.</p></p>\n<p><p>Mass of the cube, $$m = 10\\text{ g} = 0.01\\text{ kg}$$.</p></p>\n<p><p>Density of water, $$\\rho = 10^3\\ \\text{kg/m}^3$$.</p></p>\n<p><p>Acceleration due to gravity, $$g = 10\\ \\text{m/s}^2$$.</p></p>\n<p><p>Cross-sectional area of the cube (face area), </p>\n<p>$$A = L^2 = (0.1)^2 = 0.01\\text{ m}^2.$$</p></p>\n\n\n<p><p>When the cube is depressed by a small distance $$x$$, the additional volume of water displaced is </p>\n<p>$$\\Delta V = A\\,x.$$</p>\n<p>Thus, the additional buoyant force is:</p>\n<p>$$F_b = \\rho\\,g\\,\\Delta V = \\rho\\,g\\,A\\,x.$$</p>\n<p>This force acts in the upward (restoring) direction. Notice that the force is proportional to the displacement $$x$$, which is the hallmark of simple harmonic motion (SHM).</p></p>\n<p><p>The effective spring constant, $$k$$, associated with this SHM is:</p>\n<p>$$k = \\rho\\,g\\,A.$$</p></p>\n<p><p>The period of oscillation for SHM is given by:</p>\n<p>$$T = 2\\pi \\sqrt{\\frac{m}{k}},$$</p>\n<p>which, upon substituting for $$k$$, becomes:</p>\n<p>$$T = 2\\pi \\sqrt{\\frac{m}{\\rho\\,g\\,A}}.$$</p></p>\n<p><p>Substitute the given values into the expression:</p>\n<p>$$T = 2\\pi \\sqrt{\\frac{0.01}{1000 \\times 10 \\times 0.01}}.$$</p>\n<p>Calculate the denominator:</p>\n<p>$$1000 \\times 10 \\times 0.01 = 100,$$</p>\n<p>so,</p>\n<p>$$T = 2\\pi \\sqrt{\\frac{0.01}{100}} = 2\\pi \\sqrt{0.0001}.$$</p>\n<p>Since,</p>\n<p>$$\\sqrt{0.0001} = 0.01,$$</p>\n<p>we have:</p>\n<p>$$T = 2\\pi \\times 0.01 = 0.02\\pi\\ \\text{s}.$$</p></p>\n<p><p>The problem states that the time period is given by:</p>\n<p>$$y \\pi \\times 10^{-2}\\ \\text{s}.$$</p>\n<p>Writing our result in the same form:</p>\n<p>$$0.02\\pi\\ \\text{s} = 2\\pi \\times 10^{-2}\\ \\text{s}.$$</p>\n<p>We see that $$y = 2.$$</p></p>\n\n<p>Therefore, the correct answer is:</p>\n<p>Option A: 2.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6v43dpj",
@@ -176,7 +184,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& x=x_0 \\sin ^2 \\frac{t}{2}=x_0\\left(\\frac{1-\\cos t}{2}\\right) \\\\\n& x-\\frac{x_0}{2}=\\frac{-\\cos t}{2} \\\\\n& \\text { where } x_0=1 \\\\\n& x-\\frac{1}{2}=\\frac{-\\cos t}{2}\n\\end{aligned}$$</p>\n<p>Particle is oscillating between $\\mathrm{x}=0$ to $\\mathrm{x}=1$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6ulvdmg",
@@ -197,7 +206,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>$$ x(t) = \\cos(\\pi t) $$</p>\n<p>The particle executes simple harmonic motion (SHM) with amplitude $$ A = 1 \\text{ cm} $$ and period $$ T = 2 \\text{ s} $$. In one complete cycle (2 s), the motion is as follows:</p>\n\n<p><p>It starts at $$ x = 1 \\text{ cm} $$.</p></p>\n<p><p>It moves to $$ x = -1 \\text{ cm} $$ (covering a distance of $$ 2 \\text{ cm} $$).</p></p>\n<p><p>It returns to $$ x = 1 \\text{ cm} $$ (covering another $$ 2 \\text{ cm} $$).</p></p>\n\n<p>Thus, the total distance traveled in one complete cycle is:</p>\n<p>$$ D_{\\text{cycle}} = 2 + 2 = 4 \\text{ cm}. $$</p>\n<p>In 12.5 s, the number of cycles is:</p>\n<p>$$ \\frac{12.5}{2} = 6.25 \\text{ cycles}. $$</p>\n<p>For the 6 complete cycles (12 s), the distance traveled is:</p>\n<p>$$ D_{\\text{complete}} = 6 \\times 4 = 24 \\text{ cm}. $$</p>\n<p>For the remaining 0.5 s, determine the displacement. At $$ t = 12 \\text{ s} $$, the particle is at:</p>\n<p>$$ x(12) = \\cos(12\\pi) = 1 \\text{ cm}. $$</p>\n<p>After an extra 0.5 s (i.e., at $$ t = 12.5 \\text{ s} $$), the position becomes:</p>\n<p>$$ x(12.5) = \\cos(12.5\\pi) = \\cos\\left(12\\pi + \\frac{\\pi}{2}\\right) = \\cos\\frac{\\pi}{2} = 0 \\text{ cm}. $$</p>\n<p>The distance covered in this interval is:</p>\n<p>$$ D_{\\text{extra}} = |1 - 0| = 1 \\text{ cm}. $$</p>\n<p>So, the total distance traveled is:</p>\n<p>$$ D = D_{\\text{complete}} + D_{\\text{extra}} = 24 + 1 = 25 \\text{ cm}. $$</p>\n<p>The net displacement, which is the difference between the final and initial positions, is calculated as follows:</p>\n\n<p><p>Initial position at $$ t = 0 $$:</p>\n<p>$$ x(0) = \\cos 0 = 1 \\text{ cm}, $$</p></p>\n<p><p>Final position at $$ t = 12.5 \\text{ s} $$:</p>\n<p>$$ x(12.5) = 0 \\text{ cm}. $$</p></p>\n\n<p>Thus, the displacement is:</p>\n<p>$$ d = |0 - 1| = 1 \\text{ cm}. $$</p>\n<p>The ratio of the total distance traveled to the displacement is:</p>\n<p>$$ \\frac{D}{d} = \\frac{25}{1} = 25. $$</p>\n<p>Therefore, the correct answer is $$25$$.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6rkn9b9",
@@ -218,7 +228,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{x}=\\mathrm{A} \\sin (\\omega \\mathrm{t}+\\phi) \\\\\n& \\mathrm{x}_0=\\mathrm{A} \\sin \\phi \\quad\\text{.... (1)}\\\\\n& \\mathrm{p}=\\mathrm{mA} \\omega \\cos (\\omega \\mathrm{t}+\\phi) \\\\\n& \\mathrm{p}_0=\\mathrm{mA} \\omega \\cos \\phi \\quad\\text{.... (2)}\n\\end{aligned}$$</p>\n<p>$(2) /(1) \\Rightarrow \\tan \\phi=\\left(\\frac{x_0}{p_0}\\right) m \\omega$</p>\n<p>$$\\sin \\phi=\\frac{\\mathrm{x}_0 \\mathrm{~m} \\omega}{\\sqrt{\\left(\\mathrm{~m} \\omega \\mathrm{x}_0\\right)^2+\\mathrm{p}_0^2}}$$</p>\n<p>From (1), $A=\\frac{x_0}{\\sin \\phi}=\\frac{\\sqrt{\\left(m \\omega x_0\\right)^2+p_0^2}}{m \\omega}$</p>\n<p>This means we can explain assertion with the given reason.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6qirec5",
@@ -239,7 +250,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m6xm67h7/afdfa006-38c7-4de8-82a9-c3f22c56064e/46c672b0-e6e3-11ef-b709-83958d5c342e/file-jaoe38c1m6xm67h8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m6xm67h7/afdfa006-38c7-4de8-82a9-c3f22c56064e/46c672b0-e6e3-11ef-b709-83958d5c342e/file-jaoe38c1m6xm67h8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 29th January Evening Shift Physics - Simple Harmonic Motion Question 25 English Explanation\"></p>\n<p>We know, for an oscillation,</p>\n<p>$${V_{\\max }} = wA$$ .... (1)</p>\n<p>where, A = amplitude</p>\n<p>w = frequency of oscillation</p>\n<p>and $$w = \\sqrt {{k \\over m}} $$ .... (2)</p>\n<p>from (1) and (2), $${V_{\\max }} = \\sqrt {{k \\over m}} A$$</p>\n<p>$$ \\Rightarrow {V_{\\max }} \\propto \\sqrt k $$ (As m and A are same (or constant))</p>\n<p>$$ \\Rightarrow {{{{\\left( {{V_{\\max }}} \\right)}_A}} \\over {{{\\left( {{V_{\\max }}} \\right)}_B}}} = \\sqrt {{{{k_1}} \\over {{k_2}}}} $$</p>\n<p>Hence, option 2 is correct.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m6qjr0rx",
@@ -260,7 +272,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n&\\text { As } h \\text { increases, } g \\text { decreases, } \\mathrm{T} \\text { increases }\\\\\n&\\begin{aligned}\n& \\mathrm{T}=2 \\pi \\sqrt{\\frac{\\ell}{\\mathrm{~g}}} \\\\\n& \\mathrm{~g}=\\frac{\\mathrm{g}_0 \\mathrm{R}^2}{(\\mathrm{R}+\\mathrm{h})^2}\n\\end{aligned}\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m9duno3n",
@@ -281,7 +294,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp;\\begin{aligned}\n&amp; x_1=\\sqrt{7} \\sin 5 t \\\\\n&amp; x_2=2 \\sqrt{7} \\sin \\left(5 t+\\frac{\\pi}{3}\\right)\n\\end{aligned}\\\\\n&amp;\\text { From phasor, }\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mahu827u/63ef68b5-42db-483a-9c21-e24b2a33c3eb/167d09a0-2d67-11f0-a1b5-2f2fdede538a/file-jaoe38c1mahu827v.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mahu827u/63ef68b5-42db-483a-9c21-e24b2a33c3eb/167d09a0-2d67-11f0-a1b5-2f2fdede538a/file-jaoe38c1mahu827v.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 2nd April Morning Shift Physics - Simple Harmonic Motion Question 17 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp;\\therefore \\text { Amplitude of resultant } \\mathrm{SHM}=7\\\\\n&amp;\\begin{aligned}\n&amp; \\phi=\\tan ^{-1} \\frac{2 \\sqrt{7} \\times \\sqrt{3} / 2}{\\sqrt{7}+2 \\sqrt{7} \\times \\frac{1}{2}}=\\tan ^{-1} \\frac{\\sqrt{21}}{2 \\sqrt{7}}=\\tan ^{-1} \\frac{\\sqrt{3}}{2} \\\\\n&amp; \\therefore X_R=7 \\sin (5 \\mathrm{t}+\\phi) \\\\\n&amp; \\quad a_R=-7 \\times 25 \\sin (5 \\mathrm{t}+\\phi) \\\\\n&amp; \\therefore a_{\\max }=175 \\mathrm{~cm} / \\mathrm{sec}=175 \\times 10^{-2} \\mathrm{~m} / \\mathrm{sec}\n\\end{aligned}\n\\end{aligned}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m9fnuriw",
@@ -302,7 +316,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&amp;\\text { (A) As both blocks moving together so }\\\\\n&amp;\\begin{aligned}\n&amp; \\text { Time period }=2 \\pi \\sqrt{\\frac{\\mathrm{~m}}{\\mathrm{~K}}} ; \\text { where } \\mathrm{m}=\\mathrm{M}+\\mathrm{m} \\\\\n&amp; \\qquad \\mathrm{~T}=2 \\pi \\sqrt{\\frac{\\mathrm{M}+\\mathrm{m}}{\\mathrm{~K}}}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>(B) Let block is displaced by x in $(+\\mathrm{ve})$ direction so force on block will be in(-ve) direction</p>\n<p>$$\\begin{aligned}\n&amp; F=-K x \\\\\n&amp; (M+m) a=-K x\n\\end{aligned}$$</p>\n<p>$$a=-\\frac{K x}{(M+m)}$$</p>\n<p>(C) As upper block is moving due to friction thus</p>\n<p>$$\\mathrm{f}=\\mathrm{ma}=\\frac{\\mathrm{mKx}}{(\\mathrm{M}+\\mathrm{m})}$$</p>\n<p>(D) This option is like two block problem in friction for maximum amplitude, force on block is also maximum, for which both blocks are moving together.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1ma0j43y9/e9289cbc-0739-4c0d-9771-c80852c46c6e/51216710-23e2-11f0-a048-651b25b521d4/file-jaoe38c1ma0j43ya.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1ma0j43y9/e9289cbc-0739-4c0d-9771-c80852c46c6e/51216710-23e2-11f0-a048-651b25b521d4/file-jaoe38c1ma0j43ya.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Morning Shift Physics - Simple Harmonic Motion Question 16 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; K A=(M+m) a \\\\\n&amp; a=\\frac{K A}{(M+m)} \\\\\n&amp; f=m a=\\frac{m K A}{(M+m)} \\\\\n&amp; f_{\\max }=f_L=\\mu m g \\\\\n&amp; f=\\mu m g \\\\\n&amp; \\frac{m K A}{(M+m)}=\\mu m g \\\\\n&amp; A=\\frac{\\mu(M+m) g}{K}\n\\end{aligned}$$</p>\n<p>(E) Maximum friction can be $\\mu \\mathrm{mg}$ as force is acting between blocks &amp; normal force here is mg .</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m9ghxm9b",
@@ -323,7 +338,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p<strong>Angular Frequency</strong>: The angular frequency ($\\omega$) of a simple pendulum is given by:</p>\n<p>$    \\omega = \\sqrt{\\frac{g}{\\ell}}    $</p>\n<p>where $g$ is the acceleration due to gravity and $\\ell$ is the pendulum length.</p></p>\n<p><p><strong>Angular Acceleration</strong>: The angular acceleration ($\\alpha$) can be expressed in terms of angular displacement ($\\theta$) and angular frequency:</p>\n<p>$    \\alpha = -\\omega^2 \\theta    $</p></p>\n<p><p><strong>Equating Angular Accelerations</strong>: Since the angular accelerations of the two pendulums are equal, we equate them:</p>\n<p>$    \\frac{g}{\\ell_1} \\theta_1 = \\frac{g}{\\ell_2} \\theta_2    $</p></p>\n<p><p><strong>Simplifying the Expression</strong>: By canceling out $g$ on both sides, we derive:</p>\n<p>$    \\theta_1 \\ell_2 = \\theta_2 \\ell_1    $</p></p>\n\n<p>Thus, the correct expression that relates the displacements and lengths of the pendulums is $\\theta_1 \\ell_2 = \\theta_2 \\ell_1$.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "lsana2vl",
@@ -339,7 +355,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>Let&#39;s start by considering the formula for the frequency of a mass on a spring (a simple harmonic oscillator):</p>\n<p>$$ f = \\frac{1}{2\\pi} \\sqrt{\\frac{k}{m}} $$</p>\n<p>Where:</p>\n<ul>\n<li>$$ f $$ is the frequency of oscillation</li>\n<li>$$ k $$ is the spring constant</li>\n<li>$$ m $$ is the mass suspended from the spring</li>\n</ul>\n<p>When the mass $$ m $$ is suspended, the frequency $$ f_1 $$ is:</p>\n<p>$$ f_1 = \\frac{1}{2\\pi} \\sqrt{\\frac{k}{m}} $$</p>\n<p>When the mass $$ 9m $$ is suspended, the frequency $$ f_2 $$ is:</p>\n<p>$$ f_2 = \\frac{1}{2\\pi} \\sqrt{\\frac{k}{9m}} $$</p>\n<p>We can simplify the square root by taking the 9 inside the root as $$3^2$$, which gives:</p>\n<p>$$ f_2 = \\frac{1}{2\\pi} \\sqrt{\\frac{k}{(3^2)m}} $$\n<br/><br/>$$ f_2 = \\frac{1}{2\\pi} \\frac{1}{3} \\sqrt{\\frac{k}{m}} $$</p>\n<p>The ratio of $$ \\frac{f_1}{f_2} $$ is therefore:</p>\n<p>$$ \\frac{f_1}{f_2} = \\frac{\\frac{1}{2\\pi} \\sqrt{\\frac{k}{m}}}{\\frac{1}{2\\pi} \\frac{1}{3} \\sqrt{\\frac{k}{m}}} $$\n<br/><br/>$$ \\frac{f_1}{f_2} = \\frac{1}{\\frac{1}{3}} $$\n<br/><br/>$$ \\frac{f_1}{f_2} = 3 $$</p>\n<p>So the value of $$ \\frac{f_1}{f_2} $$ is $$3$$.</p>\n",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "lsbl5lz1",
@@ -360,7 +377,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>The initial momentum of the system (bullet + bob) is the momentum of the bullet because the bob is initially at rest. The momentum of the bullet is given by its mass times its velocity :</p>\n\n<p>$$ p_{\\text{initial}} = m_{\\text{bullet}} \\times v_{\\text{bullet}} $$</p>\n\n<p>After the collision, the bullet and the bob move together with a common velocity. Let's denote this common velocity as $ v' $. The final momentum $ p_{\\text{final}} $ is the combined mass of the bullet and bob times the common velocity :</p>\n\n<p>$$ p_{\\text{final}} = (m_{\\text{bullet}} + m_{\\text{bob}}) \\times v' $$</p>\n\n<p>According to the principle of conservation of linear momentum,</p>\n\n<p>$$ p_{\\text{initial}} = p_{\\text{final}} $$</p>\n\n<p>$$ m_{\\text{bullet}} \\times v_{\\text{bullet}} = (m_{\\text{bullet}} + m_{\\text{bob}}) \\times v' $$</p>\n\n<p>Plugging in the values :</p>\n\n<p>$$ (10^{-2} \\text{ kg}) \\times (2 \\times 10^2 \\text{ m/s}) = (10^{-2} \\text{ kg} + 1 \\text{ kg}) \\times v' $$</p>\n\n<p>Solving for $ v' $ :</p>\n\n<p>$$ v' = \\frac{10^{-2} \\times 2 \\times 10^2}{10^{-2} + 1} = \\frac{2}{1.01} \\approx 1.98 \\text{ m/s} $$</p>\n\n<p>After the collision, the system has some kinetic energy which will be completely converted to potential energy at the maximum height $ h $ that the bob reaches. Using the principle of conservation of energy :</p>\n\n<p>$$ \\text{Kinetic Energy (KE)}_{\\text{initial}} = \\text{Potential Energy (PE)}_{\\text{final}} $$</p>\n\n<p>$$ \\frac{1}{2}(m_{\\text{bullet}} + m_{\\text{bob}})v'^2 = (m_{\\text{bullet}} + m_{\\text{bob}})gh $$</p>\n\n<p>Isolating $ h $, we get :</p>\n\n<p>$$ h = \\frac{\\frac{1}{2}(m_{\\text{bullet}} + m_{\\text{bob}})v'^2}{(m_{\\text{bullet}} + m_{\\text{bob}})g} = \\frac{v'^2}{2g} $$</p>\n\n<p>Substituting the values for $ v' $ and $ g $ :</p>\n\n<p>$$ h = \\frac{(1.98)^2}{2 \\times 10} = \\frac{3.9204}{20} = 0.19602 \\text{ m} $$</p>\n\n<p>Looking at the given options, the result most closely matches Option A :</p>\n\n<p>$$ \\boxed{0.20 \\text{ m}} $$</p>\n\n<p>Therefore, the height to which the bob rises before swinging back is approximately $ 0.20 \\text{ m} $.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "jaoe38c1lsc4fpbd",
@@ -369,14 +387,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\mathrm{V}_{\\text {at mean position }}=\\mathrm{A} \\omega \\Rightarrow 10=4 \\omega \\\\\n& \\quad \\omega=\\frac{5}{2} \\\\\n& \\mathrm{~V}=\\omega \\sqrt{\\mathrm{A}^2-\\mathrm{x}^2} \\\\\n& 5=\\frac{5}{2} \\sqrt{4^2-\\mathrm{x}^2} \\Rightarrow \\mathrm{x}^2=16-4 \\\\\n& \\mathrm{x}=\\sqrt{12} \\mathrm{~cm}\n\\end{aligned}$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "SUBJECTIVE"
   },
   {
     "id": "jaoe38c1lsfm9nix",
@@ -392,7 +411,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsr7fmgr/887c7701-605e-4b32-bf15-965c4595219e/e87f24b0-ce31-11ee-9412-cd4f9c6f2c40/file-6y3zli1lsr7fmgs.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsr7fmgr/887c7701-605e-4b32-bf15-965c4595219e/e87f24b0-ce31-11ee-9412-cd4f9c6f2c40/file-6y3zli1lsr7fmgs.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 29th January Evening Shift Physics - Simple Harmonic Motion Question 33 English Explanation\"></p>\n<p>From phasor diagram particle has to move from $$\\mathrm{P}$$ to $$\\mathrm{Q}$$ in a circle of radius equal to amplitude of SHM.</p>\n<p>$$\\begin{aligned}\n&amp; \\cos \\phi=\\frac{\\frac{\\sqrt{3} \\mathrm{~A}}{2}}{\\mathrm{~A}}=\\frac{\\sqrt{3}}{2} \\\\\n&amp; \\phi=\\frac{\\pi}{6}\n\\end{aligned}$$</p>\n<p>Now, $$\\frac{\\pi}{6}=\\omega \\mathrm{t}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\frac{\\pi}{6}=\\frac{2 \\pi}{T} t \\\\\n&amp; \\frac{\\pi}{6}=\\frac{2 \\pi}{6 \\pi} t\n\\end{aligned}$$</p>\n<p>$$\\mathrm{t}=\\frac{\\pi}{2}$$</p>\n<p>So, $$x=2$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "jaoe38c1lsf2apoc",
@@ -401,14 +421,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>$$\\begin{aligned}\n& \\text { Let total energy }=\\mathrm{E}=\\frac{1}{2} \\mathrm{KA}^2 \\\\\n& \\mathrm{U}=\\frac{1}{2} \\mathrm{~K}\\left(\\frac{\\mathrm{A}}{3}\\right)^2=\\frac{\\mathrm{KA}^2}{2 \\times 9}=\\frac{\\mathrm{E}}{9} \\\\\n& \\mathrm{KE}=\\mathrm{E}-\\frac{\\mathrm{E}}{9}=\\frac{8 \\mathrm{E}}{9} \\\\\n& \\text { Ratio } \\frac{\\text { Total }}{\\mathrm{KE}}=\\frac{\\mathrm{E}}{\\frac{8 \\mathrm{E}}{9}}=\\frac{9}{8} \\\\\n& \\mathrm{x}=9\n\\end{aligned}$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "SUBJECTIVE"
   },
   {
     "id": "jaoe38c1lse6u1qm",
@@ -424,7 +445,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>To find the new amplitude of the motion when the speed is increased to three times at a given displacement, we use the concepts of simple harmonic motion (SHM) and its formulas.</p><p>In SHM, the velocity $v$ of a particle at a displacement $x$ from the mean position can be given by the formula:</p><p>$$v = \\omega \\sqrt{A^2 - x^2}$$</p><p>where:</p><ul><li>$\\omega$ is the angular frequency of the motion,</li><li>$A$ is the amplitude, and</li><li>$x$ is the displacement at that instance.</li></ul><p>Given:</p><ul><li>Displacement at the instance, $x = \\frac{2A}{3}$,</li><li>Initial velocity is increased to three times at this displacement.</li></ul><p>Thus, let's find the initial velocity $v$ at $x = \\frac{2A}{3}$:</p><p>$$v = \\omega \\sqrt{A^2 - \\left(\\frac{2A}{3}\\right)^2} = \\omega \\sqrt{A^2 - \\frac{4A^2}{9}} = \\omega \\sqrt{\\frac{5A^2}{9}} = \\frac{\\sqrt{5}A\\omega}{3}$$</p><p>With the velocity increased to three times, the new velocity $v'$ becomes:</p><p>$$v' = 3v = 3 \\times \\frac{\\sqrt{5}A\\omega}{3} = \\sqrt{5}A\\omega$$</p><p>For the new amplitude $A'$, the velocity $v'$ at the same displacement $x$ is:</p><p>$$v' = \\omega \\sqrt{{A'}^2 - \\left(\\frac{2A}{3}\\right)^2}$$</p><p>Setting the expressions for $v'$ equal gives:</p><p>$$\\sqrt{5}A\\omega = \\omega \\sqrt{{A'}^2 - \\frac{4A^2}{9}}$$</p><p>$$\\sqrt{5}A = \\sqrt{{A'}^2 - \\frac{4A^2}{9}}$$</p><p>Solving for $A'$ gives:</p><p>$${A'}^2 = 5A^2 + \\frac{4A^2}{9} = \\frac{45A^2 + 4A^2}{9} = \\frac{49A^2}{9}$$</p><p>$$A' = \\sqrt{\\frac{49A^2}{9}} = \\frac{7A}{3}$$</p><p>Therefore, the new amplitude of the motion is $\\frac{7A}{3}$, which means the value of $n$ is 7.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "lv2es3xk",
@@ -445,7 +467,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>$$\\because \\quad E=\\frac{1}{2} k A^2$$</p>\n<p>Here energy depends on $$A$$ and $$k$$ and not on mass.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "lv2eqxt5",
@@ -454,14 +477,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>The displacement of a particle executing Simple Harmonic Motion (SHM) can be expressed as:</p>\n\n<p>$$x = A \\sin(\\omega t + \\phi)$$</p>\n\n<p>Where:</p>\n\n<p>$$A$$ is the amplitude of the SHM,</p>\n\n<p>$$\\omega$$ is the angular frequency,</p>\n\n<p>$$t$$ is the time,</p>\n\n<p>$$\\phi$$ is the phase constant (phase angle at $$t = 0$$).</p>\n\n<p>In the given equation, $$x = 10 \\sin(\\omega t + \\frac{\\pi}{3})$$ m, the amplitude $$A = 10$$ m and the phase constant $$\\phi = \\frac{\\pi}{3}$$. The time period $$T = 3.14$$ s is given, from which we can find the angular frequency $$\\omega$$ using the relationship:</p>\n\n<p>$$\\omega = \\frac{2\\pi}{T}$$</p>\n\n<p>Substituting the given $$T = 3.14$$ s:</p>\n\n<p>$$\\omega = \\frac{2\\pi}{3.14} \\approx 2 \\, \\text{rad/s}$$</p>\n\n<p>To find the velocity of the particle, we differentiate the displacement $$x$$ with respect to time $$t$$. The derivative of the displacement gives the velocity:</p>\n\n<p>$$v = \\frac{dx}{dt}$$</p>\n\n<p>So, for $$x = 10 \\sin(\\omega t + \\frac{\\pi}{3})$$:</p>\n\n<p>$$v = \\frac{d}{dt}[10 \\sin(\\omega t + \\frac{\\pi}{3})]$$</p>\n\n<p>Applying differentiation, we get:</p>\n\n<p>$$v = 10\\omega \\cos(\\omega t + \\frac{\\pi}{3})$$</p>\n\n<p>Plug in the value of $$\\omega = 2$$ rad/s and evaluate it at $$t = 0$$ to find the initial velocity:</p>\n\n<p>$$v = 10 \\cdot 2 \\cos(2 \\cdot 0 + \\frac{\\pi}{3})$$</p>\n\n<p>$$v = 20 \\cos(\\frac{\\pi}{3})$$</p>\n\n<p>$$\\cos(\\frac{\\pi}{3}) = \\frac{1}{2}$$, therefore:</p>\n\n<p>$$v = 20 \\cdot \\frac{1}{2} = 10 \\, \\text{m/s}$$</p>\n\n<p>Thus, the velocity of the particle at $$t = 0$$ is $$10$$ m/s.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "SUBJECTIVE"
   },
   {
     "id": "lv7v4o88",
@@ -482,7 +506,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>The time period of a simple pendulum is given by the formula:</p>\n\n<p>$$T = 2\\pi \\sqrt{\\frac{l}{g}}$$</p>\n\n<p>where $$T$$ is the time period, $$l$$ is the length of the pendulum, and $$g$$ is the acceleration due to gravity at the location of the pendulum.</p>\n\n<p>The acceleration due to gravity changes with height above the Earth's surface. The acceleration due to gravity at a height $$h$$ above the Earth's surface can be expressed as:</p>\n\n<p>$$g' = g \\left(\\frac{R}{R + h}\\right)^2$$</p>\n\n<p>where $$g$$ is the acceleration due to gravity at the surface of the Earth, $$R$$ is the radius of the Earth, and $$h$$ is the height above the Earth’s surface. Since the time period of the pendulum depends on the square root of the inverse of the acceleration due to gravity, any change in $$g$$ due to a change in height will affect the time period.</p>\n\n<p>Given that the time period of the pendulum at a height $$R$$ above Earth's surface is $$T_1$$, and we're to find the time period $$T_2$$ at a height of $$2R$$, we can use the formula for acceleration due to gravity at different heights to express the relationship between $$T_1$$ and $$T_2$$.</p>\n\n<p>For the initial case at height $$R$$:</p>\n\n<p>$$g_1 = g \\left(\\frac{R}{R + R}\\right)^2 = g \\left(\\frac{R}{2R}\\right)^2 = \\frac{g}{4}$$</p>\n\n<p>For the new case at height $$2R$$:</p>\n\n<p>$$g_2 = g \\left(\\frac{R}{R + 2R}\\right)^2 = g \\left(\\frac{R}{3R}\\right)^2 = \\frac{g}{9}$$</p>\n\n<p>The time period is proportional to the square root of the inverse of $$g$$, so:</p>\n\n<p>$$\\frac{T_1}{T_2} = \\sqrt{\\frac{g_2}{g_1}} = \\sqrt{\\frac{\\frac{g}{9}}{\\frac{g}{4}}} = \\sqrt{\\frac{4}{9}} = \\frac{2}{3}$$</p>\n\n<p>Therefore:</p>\n\n<p>$$T_1 = \\frac{2}{3}T_2$$</p>\n\n<p>Rearranging this equation:</p>\n\n<p>$$3T_1 = 2T_2$$</p>\n\n<p>This corresponds to Option A.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "lvc57pgs",
@@ -498,7 +523,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>For a particle performing simple harmonic motion (SHM), the maximum velocity $$v_{max}$$ can be calculated using the formula:\n\n<p>$v_{max} = A\\omega$</p>\n\n<p>where $A$ is the amplitude of the motion and $\\omega$ is the angular frequency. The angular frequency $\\omega$ is related to the time period $T$ by the formula:</p>\n\n<p>$\\omega = \\frac{2\\pi}{T}$</p>\n\n<p>Given:</p>\n\n<ul>\n<li>Amplitude, $A = 0.06 \\, \\mathrm{m}$</li><br>\n<li>Time period, $T = 3.14 \\, \\mathrm{s}$</li>\n</ul>\n<p>First, we find the angular frequency:</p>\n\n<p>$\\omega = \\frac{2\\pi}{T} = \\frac{2\\pi}{3.14}$</p>\n\n<p>Substituting $\\omega$ and $A$ in the formula for $v_{max}$:</p>\n\n<p>$v_{max} = A\\omega = 0.06 \\times \\frac{2\\pi}{3.14}$</p>\n\n<p>$v_{max} = 0.06 \\times \\frac{2 \\times 3.14}{3.14}$</p>\n\n<p>$v_{max} = 0.06 \\times 2$</p>\n\n<p>$v_{max} = 0.12 \\, \\mathrm{m/s}$</p>\n\n<p>To convert meters per second to centimeters per second, we use the conversion factor $1 \\, \\mathrm{m/s} = 100 \\, \\mathrm{cm/s}$. Therefore,</p>\n\n<p>$v_{max} = 0.12 \\, \\mathrm{m/s} \\times 100 \\, \\mathrm{cm/m} = 12 \\, \\mathrm{cm/s}$</p>\n\n<p>Thus, the maximum velocity of the particle is $12 \\, \\mathrm{cm/s}$.</p></p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "lv3veg1w",
@@ -514,7 +540,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>To solve for the amplitude of oscillation, we start by using the properties of simple harmonic motion (SHM). In SHM, the total energy of the system is conserved and is given by the sum of kinetic energy (KE) and potential energy (PE).</p>\n\n<p>Given:</p>\n\n<ul>\n\n<li>Mass $$m = 0.2 \\ \\mathrm{kg}$$</li>\n\n<li>Frequency $$f = \\left(\\frac{25}{\\pi}\\right) \\ \\mathrm{Hz}$$</li>\n\n<li>Position $$x = 0.04 \\ \\mathrm{m}$$</li>\n\n<li>KE at $$x = 0.04 \\ \\mathrm{m}$$ is $$0.5 \\ \\mathrm{J}$$</li>\n\n<li>PE at $$x = 0.04 \\ \\mathrm{m}$$ is $$0.4 \\ \\mathrm{J}$$</li>\n\n</ul>\n\n<p>The total mechanical energy (E) of the SHM system can be found by summing the given kinetic and potential energies:</p>\n\n<p>\n\n<p>$$ E = KE + PE = 0.5 \\ \\mathrm{J} + 0.4 \\ \\mathrm{J} = 0.9 \\ \\mathrm{J} $$</p>\n\n</p>\n\n<p>For simple harmonic motion, the total energy (E) is also related to the amplitude (A) by the following formula:</p>\n\n<p>\n\n<p>$$ E = \\frac{1}{2} k A^2 $$</p>\n\n</p>\n\n<p>where $$k$$ is the spring constant. First, we need to find the angular frequency $$\\omega$$:</p>\n\n<p>\n\n<p>$$ \\omega = 2 \\pi f = 2 \\pi \\left(\\frac{25}{\\pi}\\right) \\ \\mathrm{Hz} = 50 \\ \\mathrm{rad/s} $$</p>\n\n</p>\n\n<p>The spring constant $$k$$ can be calculated using the relationship between $$m$$, $$\\omega$$, and $$k$$:</p>\n\n<p>\n\n<p>$$ \\omega = \\sqrt{\\frac{k}{m}} \\Rightarrow k = m \\omega^2 = 0.2 \\times (50)^2 = 500 \\ \\mathrm{N/m} $$</p>\n\n</p>\n\n<p>Now, substituting $$k$$ back into the energy equation, we solve for the amplitude $$A$$:</p>\n\n<p>\n\n<p>$$ 0.9 = \\frac{1}{2} \\times 500 \\times A^2 \\Rightarrow A^2 = \\frac{0.9 \\times 2}{500} \\Rightarrow A^2 = \\frac{1.8}{500} \\Rightarrow A^2 = 0.0036 \\Rightarrow A = \\sqrt{0.0036} = 0.06 \\ \\mathrm{m} $$</p>\n\n</p>\n\n<p>Converting $$A$$ from meters to centimeters:</p>\n\n<p>\n\n<p>$$ A = 0.06 \\ \\mathrm{m} \\times 100 = 6 \\ \\mathrm{cm} $$</p>\n\n</p>\n\n<p>Thus, the amplitude of oscillation is $$6 \\ \\mathrm{cm}$$.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "luxwem36",
@@ -530,7 +557,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>To find the value of $$x$$ that represents the time period of oscillation in this simple harmonic motion (SHM) scenario, we first recall the general formula for the time period ($T$) of a mass-spring system undergoing SHM, which is given by:</p>\n\n<p>$$T = 2\\pi \\sqrt{\\frac{m}{k}}$$</p>\n\n<p>Here,</p>\n\n<p>$m$ is the mass of the particle, which is $$0.50 \\, \\mathrm{kg}$$ in this case,</p>\n\n<p>$k$ is the force constant of the spring or the spring constant, which is given as $$50 \\, \\mathrm{Nm^{-1}}$$,</p>\n\n<p>and $T$ represents the time period of oscillation.</p>\n\n<p>Given in the problem, $$T = \\frac{x}{35} \\, \\mathrm{s}$$ and we are provided with the approximation $$\\pi = \\frac{22}{7}$$.</p>\n\n<p>Substituting the given values into the formula for $$T$$:</p>\n\n<p>$$\\frac{x}{35} = 2 \\times \\frac{22}{7} \\times \\sqrt{\\frac{0.50}{50}}$$</p>\n\n<p>To simplify this, we first calculate the square root:</p>\n\n<p>$$\\sqrt{\\frac{0.50}{50}} = \\sqrt{\\frac{1}{100}} = \\frac{1}{10}$$</p>\n\n<p>Substituting back, we get:</p>\n\n<p>$$\\frac{x}{35} = 2 \\times \\frac{22}{7} \\times \\frac{1}{10}$$</p>\n\n<p>Multiplying the terms on the right side:</p>\n\n<p>$$\\frac{x}{35} = \\frac{44}{70}$$</p>\n\n<p>$$\\frac{x}{35} = \\frac{22}{35}$$</p>\n\n<p>Multiplying both sides by $$35$$ to solve for $$x$$:</p>\n\n<p>$$x = 22$$</p>\n\n<p>Therefore, the value of $$x$$ that represents the time period of oscillation is $$22$$ seconds.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "luz2u43a",
@@ -539,14 +567,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>Let's begin by understanding the equations related to simple harmonic motion (SHM). For a particle executing SHM, the position $$x$$, velocity $$v$$, and acceleration $$a$$ are given by the following equations:</p>\n\n<p>1. Position: $$x = A \\cos(\\omega t + \\phi)$$</p>\n\n<p>2. Velocity: $$v = -A \\omega \\sin(\\omega t + \\phi)$$</p>\n\n<p>3. Acceleration: $$a = -A \\omega^2 \\cos(\\omega t + \\phi)$$</p>\n\n<p>Here, $$A$$ is the amplitude of the motion, $$\\omega$$ is the angular frequency, and $$\\phi$$ is the phase constant.</p>\n\n<p>Given the magnitudes at a certain instant:</p>\n\n<p>$$x = 4 \\, \\mathrm{m}$$</p>\n\n<p>$$v = 2 \\, \\mathrm{ms}^{-1}$$</p>\n\n<p>$$a = 16 \\, \\mathrm{ms}^{-2}$$</p>\n\n<p>Using the acceleration equation:</p>\n\n<p>$$a = -A \\omega^2 \\cos(\\omega t + \\phi)$$</p>\n\n<p>Since we’re given the magnitude of the acceleration, we remove the negative sign:</p>\n\n<p>$$16 = A \\omega^2 \\cos(\\omega t + \\phi)$$</p>\n\n<p>Using the position equation:</p>\n\n<p>$$x = A \\cos(\\omega t + \\phi)$$</p>\n\n<p>We already know $$x = 4 \\, \\mathrm{m}$$, so:</p>\n\n<p>$$4 = A \\cos(\\omega t + \\phi)$$</p>\n\n<p>From these two equations, we know:</p>\n\n<p>$$A \\omega^2 \\cos(\\omega t + \\phi) = 16$$</p>\n\n<p>$$A \\cos(\\omega t + \\phi) = 4$$</p>\n\n<p>Therefore:</p>\n\n<p>$$A \\omega^2 \\cdot 4/A = 16$$</p>\n\n<p>$$4 \\omega^2 = 16$$</p>\n\n<p>$$\\omega^2 = 4$$</p>\n\n<p>$$\\omega = 2 \\, \\mathrm{rad/s}$$</p>\n\n<p>Next, using the velocity equation:</p>\n\n<p>$$v = -A \\omega \\sin(\\omega t + \\phi)$$</p>\n\n<p>Again, we consider the magnitude:</p>\n\n<p>$$2 = A \\cdot 2 \\sin(\\omega t + \\phi)$$</p>\n\n<p>$$2 = 2A \\sin(\\omega t + \\phi)$$</p>\n\n<p>$$\\sin(\\omega t + \\phi) = \\dfrac{1}{A}$$</p>\n\n<p>We know from the position equation that:</p>\n\n<p>$$\\cos(\\omega t + \\phi) = \\dfrac{4}{A}$$</p>\n\n<p>Using the identity $$\\sin^2(\\theta) + \\cos^2(\\theta) = 1$$, we get:</p>\n\n<p>$$\\left(\\dfrac{1}{A}\\right)^2 + \\left(\\dfrac{4}{A}\\right)^2 = 1$$</p>\n\n<p>$$\\dfrac{1}{A^2} + \\dfrac{16}{A^2} = 1$$</p>\n\n<p>$$\\dfrac{17}{A^2} = 1$$</p>\n\n<p>$$A^2 = 17$$</p>\n\n<p>$$A = \\sqrt{17} \\, \\mathrm{m}$$</p>\n\n<p>Therefore, the amplitude of the motion is $$\\sqrt{17} \\, \\mathrm{m}$$, meaning $$x$$ is 17.</p>",
-    "section": "B"
+    "section": "B",
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1lgxxnshu",
@@ -567,7 +596,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>The initial condition states that the particle is at position $x=\\frac{A}{2}$ at $t=0$. </p>\n<p>If we substitute these initial conditions into the equation for the displacement of the particle:</p>\n<p>$x = A \\sin(wt + \\delta)$</p>\n<p>We have:</p>\n<p>$\\frac{A}{2} = A \\sin(\\delta)$</p>\n<p>Dividing both sides by $A$ gives us:</p>\n<p>$\\frac{1}{2} = \\sin(\\delta)$</p>\n<p>The angle whose sine is $\\frac{1}{2}$ is $\\delta = \\frac{\\pi}{6}$ radians (or 30 degrees).</p>\n<p>Therefore, the correct answer is $\\delta = \\frac{\\pi}{6}$.</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lguxta4m",
@@ -588,7 +618,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "For a particle executing SHM\n<br/><br/>$$\n\\mathrm{KE}=\\frac{1}{2} \\mathrm{m} \\omega^2\\left(\\mathrm{A}^2-\\mathrm{x}^2\\right)\n$$\n<br/><br/>When $\\mathrm{x}=0, $ KE is maximum & when $\\mathrm{x}=\\mathrm{A}, $ KE is zero and KE vs x graph is parabola.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lgrgy9ww",
@@ -609,7 +640,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>Let&#39;s denote the amplitude of the simple harmonic motion as A, and the displacement of the particle from the mean position as x. The given condition is that x = A/2.</p>\n<p>For a particle in SHM, the potential energy (PE) is given by:</p>\n<p>$$PE = \\frac{1}{2} kx^2$$</p>\n<p>And the total mechanical energy (E) of the particle remains constant and is given by:</p>\n<p>$$E = \\frac{1}{2} kA^2$$</p>\n<p>Since the total mechanical energy is the sum of potential energy and kinetic energy (KE), we have:</p>\n<p>$$E = PE + KE$$</p>\n<p>Now, we need to find the ratio of potential energy to kinetic energy when x = A/2. </p>\n<p>Calculate the potential energy at x = A/2:</p>\n<p>$$PE = \\frac{1}{2} k\\left(\\frac{A}{2}\\right)^2 = \\frac{1}{8} kA^2$$</p>\n<p>Substitute the expression for total mechanical energy:</p>\n<p>$$KE = E - PE = \\frac{1}{2} kA^2 - \\frac{1}{8} kA^2 = \\frac{3}{8} kA^2$$</p>\n<p>Now, find the ratio of potential energy to kinetic energy:</p>\n<p>$$\\frac{PE}{KE} = \\frac{\\frac{1}{8} kA^2}{\\frac{3}{8} kA^2} = \\frac{1}{3}$$</p>\n<p>Therefore, the ratio of potential energy and kinetic energy of the particle when its displacement is half of its amplitude is 1 : 3.</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lgp0iu9i",
@@ -630,7 +662,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "The total energy of a particle executing simple harmonic motion (SHM) is given by:\n<br/><br/>\n$$E = \\frac{1}{2}m\\omega^2A^2$$\n<br/><br/>\nwhere $$m$$ is the mass of the particle, $$\\omega$$ is the angular frequency of the SHM, and $$A$$ is the amplitude of the motion.\n<br/><br/>\nAt any point during SHM, the kinetic energy of the particle is given by:\n<br/><br/>\n$$K = \\frac{1}{2}m\\omega^2(x^2 + A^2\\cos^2\\omega t)$$\n<br/><br/>\nwhere $$x$$ is the displacement of the particle from the mean position.\n<br/><br/>\nThe potential energy of the particle at the same point is given by:\n<br/><br/>\n$$U = \\frac{1}{2}m\\omega^2(x^2 + A^2\\sin^2\\omega t)$$\n<br/><br/>\nWhen the kinetic energy becomes equal to the potential energy, we have:\n<br/><br/>\n$$K = U$$\n<br/><br/>\n$$\\frac{1}{2}m\\omega^2(x^2 + A^2\\cos^2\\omega t) = \\frac{1}{2}m\\omega^2(x^2 + A^2\\sin^2\\omega t)$$\n<br/><br/>\nSimplifying this equation, we get:\n<br/><br/>\n$$x^2 = \\frac{1}{2}A^2$$\n<br/><br/>\n$$x = \\pm\\frac{1}{\\sqrt{2}}A$$\n<br/><br/>\nTherefore, the distance from the mean position when the kinetic energy becomes equal to the potential energy is $$\\boxed{\\frac{1}{\\sqrt{2}}A}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lgq19504",
@@ -651,7 +684,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$$\n\\begin{aligned}\n& \\text {T.E. }- \\text { P.E. }=\\text { K.E. } \\\\\\\\\n& \\text {K.E. }=\\frac{1}{2} m \\omega^2\\left(A^2-x^2\\right)\n\\end{aligned}\n$$<br/><br/>\nWhich is the equation of downward parabola.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lgq3fgwd",
@@ -667,7 +701,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "Given the general equation for displacement in a simple harmonic oscillator:\n<br/><br/>\n$$x = A \\sin(\\omega t + \\phi)$$\n<br/><br/>\nAt the given time, we have:\n<br/><br/>\n$$\\omega t + \\phi = 30^\\circ$$\n<br/><br/>\nGiven the amplitude $$A = 40 \\,\\text{cm}$$ and the displacement $$x = 40 \\times \\frac{\\sqrt{3}}{2} \\,\\text{cm} = 20\\sqrt{3} \\,\\text{cm}$$, we can write the kinetic energy, $$KE$$, as:\n<br/><br/>\n$$KE = \\frac{1}{2}k(A^2 - x^2) = 200$$\n<br/><br/>\nNow, substitute the values for $$A$$ and $$x$$:\n<br/><br/>\n$$200 = \\frac{1}{2}k\\left(\\frac{1600 - 1200}{100 \\times 100}\\right)$$\n<br/><br/>\nSimplify the equation:\n<br/><br/>\n$$400 \\times 100 \\times 100 = k \\times 400$$\n<br/><br/>\nSolve for the force constant, $$k$$:\n<br/><br/>\n$$k = 10^4 \\,\\text{Nm}^{-1}$$\n<br/><br/>\nGiven that the force constant is expressed as $$k = 1.0 \\times 10^x \\,\\text{Nm}^{-1}$$, comparing the values, we get:\n<br/><br/>\n$$1.0 \\times 10^x = 10^4$$\n<br/><br/>\nThus, the value of $$x$$ is $$4$$.",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "lgny52r8",
@@ -688,7 +723,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "The correct options are:\n<br/><br/>\n(A) Restoring force is directly proportional to the displacement. - True (this is a defining characteristic of SHM)\n<br/><br/>\n(B) The acceleration and displacement are opposite in direction. - True (the acceleration is proportional to the displacement but in the opposite direction)\n<br/><br/>\n(C) The velocity is maximum at mean position. - True (the velocity is zero at the extreme positions and reaches a maximum at the mean position)\n<br/><br/>\n(D) The acceleration is minimum at extreme points. - False (the acceleration is maximum at the extreme points and zero at the mean position)",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1ldohglfg",
@@ -704,7 +740,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$A=3 \\mathrm{~cm}$\n\n<br/><br/>$$\n\\begin{aligned}\n& K=1.25 U \\\\\\\\\n& \\Rightarrow K+\\frac{K}{1.25}=K_{\\max } \\\\\\\\\n& \\Rightarrow \\frac{9}{5} K=K_{\\max } \\\\\\\\\n& \\Rightarrow  \\frac{9}{5} \\frac{1}{2} m v^{2}=\\frac{1}{2} m v_{\\max }^{2} \\\\\\\\\n& \\Rightarrow  \\frac{9}{5}\\left[\\omega \\sqrt{A^{2}-x^{2}}\\right]^{2}=\\omega^{2} A^{2} \\\\\\\\\n& \\Rightarrow 9\\left(A^{2}-x^{2}\\right)=5 A^{2} \\\\\\\\\n& \\Rightarrow  x^{2}=\\frac{4 A^{2}}{9} \\\\\\\\\n& \\Rightarrow  x=\\frac{2 A}{3} \\\\\\\\\n& \\Rightarrow  x=2 \\mathrm{~cm}\n\\end{aligned}\n$$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldws9wn6",
@@ -720,7 +757,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$\\because 2 \\pi \\sqrt{\\frac{m}{k}}=1$\n<br/><br/>\nFinally\n<br/><br/>\n$$\n2 \\pi \\sqrt{\\frac{m+3}{k}}=1+1=2\n$$\n<br/><br/>\nEquation $\\frac{(1)}{(2)}$ gives\n<br/><br/>\n$\\sqrt{\\frac{m}{m+3}}=\\frac{1}{2}$\n<br/><br/>\n$\\therefore m=1 \\mathrm{~kg}$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldtxfpwr",
@@ -741,7 +779,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "$x=A \\sin (\\omega t)$\n<br/><br/>\n$$\n\\begin{aligned}\n& x=\\frac{A}{2}=A \\sin (\\omega t) \\\\\\\\\n& \\frac{1}{2}=\\sin (\\omega t) \\\\\\\\\n& t=\\left(\\frac{\\pi}{6 \\omega}\\right)=2 \\\\\\\\\n& \\frac{\\pi}{\\omega}=12 \\sec\n\\end{aligned}\n$$\n<br/><br/>\n$x=A=A \\sin (\\omega t)$\n<br/><br/>\n$\\omega t=\\left(\\frac{\\pi}{2}\\right)$\n<br/><br/>\n$t=\\left(\\frac{\\pi}{2 \\omega}\\right)=6$ second\n<br/><br/>\ntime $=6-2=4$ seconds",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1ldsbkkq8",
@@ -757,7 +796,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>$$F =  - 25x$$</p>\n<p>$$.250{{{d^2}x} \\over {d{t^2}}} =  - 25x$$</p>\n<p>$${{{d^2}x} \\over {d{t^2}}} =  - 100x$$</p>\n<p>$$ \\Rightarrow \\omega  = 10$$ rad/sec</p>\n<p>& $$\\omega A = {v_{\\max }}$$</p>\n<p>$$10\\,A = 4$$</p>\n<p>$$ \\Rightarrow A = 0.4$$ m</p>\n<p>$$ = 40$$ cm</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "ldqw7fqd",
@@ -773,7 +813,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>$$4{v^2} = 50 - {x^2}$$</p>\n<p>or $$v = {1 \\over 2}\\sqrt {50 - {x^2}} $$</p>\n<p>Comparing the above equation with $$v = \\omega \\sqrt {{A^2} - {x^2}} $$</p>\n<p>$$ \\Rightarrow \\omega  = {1 \\over 2}$$</p>\n<p>& $$A = \\sqrt {50} $$</p>\n<p>so $${{2\\pi } \\over T} = {1 \\over 2}$$</p>\n<p>$$ \\Rightarrow T = 4\\pi \\sec $$</p>\n<p>$$ = 4 \\times {{22} \\over 7}\\sec $$</p>\n<p>$$T = {{88} \\over 7}\\sec $$</p>\n<p>so $$x = 88$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldr2x650",
@@ -789,7 +830,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>$$U = {1 \\over 2}m{\\omega ^2}{A^2}{\\sin ^2}\\omega t$$</p>\n<p>So, $${{dU} \\over {dt}} = {{m{\\omega ^3}{A^2}} \\over 2}\\sin 2\\omega t$$</p>\n<p>This value will be maximum when $$\\sin 2\\omega t = 1$$</p>\n<p>or $$2\\omega t = {\\pi  \\over 2}$$</p>\n<p>$$2 \\times {{2\\pi } \\over T}t = {\\pi  \\over 2}$$</p>\n<p>$$ \\Rightarrow t = {T \\over 8}$$</p>\n<p>So $$\\beta  = 8$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ldpm3li8",
@@ -810,7 +852,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$\\mathrm{U}_{\\max }=\\frac{1}{2} \\mathrm{~m} \\omega^{2} \\mathrm{~A}^{2}=25 \\mathrm{~J}$\n\n<br/><br/>$\\mathrm{KE}$ at $\\frac{\\mathrm{A}}{2}=\\frac{1}{2} m v_{1}^{2}=\\frac{1}{2} m \\omega^{2}\\left(A^{2}-\\frac{A^{2}}{4}\\right)$\n\n<br/><br/>$=\\frac{1}{2} \\mathrm{~m} \\omega^{2} \\frac{3 \\mathrm{~A}^{2}}{4}=\\frac{3}{4}\\left(\\frac{1}{2} \\mathrm{~m} \\omega^{2} \\mathrm{~A}^{2}\\right)$\n\n<br/><br/>$\\mathrm{KE}=\\frac{3}{4} \\times 25=18.75 \\mathrm{~J}$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lh31mrk8",
@@ -826,7 +869,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>Given the amplitude $$A$$ and the length $$l$$ of the pendulum, we can find the maximum angular displacement $$\\theta_0$$:</p>\n<p>$$\n\\sin \\theta_0 = \\frac{A}{l} = \\frac{10}{100} = \\frac{1}{10}\n$$</p>\n<p>By conservation of energy, the following equation holds:</p>\n<p>$$\n\\frac{1}{2} m v^2 = m g l(1 - \\cos \\theta)\n$$</p>\n<p>The maximum tension occurs at the mean position (i.e., when the pendulum is vertical). At this point, we have:</p>\n<p>$$\n\\begin{aligned}\n&amp; T - mg = \\frac{m v^2}{l} \\\n&amp; \\Rightarrow T = mg + \\frac{m v^2}{l}\n\\end{aligned}\n$$</p>\n<p>Substituting the conservation of energy equation, we get:</p>\n<p>$$\n\\begin{aligned}\n&amp; T = mg + 2 m g(1 - \\cos \\theta) \\\\\\\\\n&amp; = mg\\left[1 + 2\\left(1 - \\sqrt{1 - \\sin^2 \\theta}\\right)\\right] \\\\\\\\\n&amp; = mg\\left[3 - 2 \\sqrt{1 - \\frac{1}{100}}\\right] \\\\\\\\\n&amp; = \\frac{250}{1000} \\times 10\\left[3 - 2\\left(1 - \\frac{1}{200}\\right)\\right] = \\frac{101}{40} \\\\\\\\\n&amp; \\therefore x = 101\n\\end{aligned}\n$$</p>\n<p>So, the value of $$x$$ is 101.</p>\n",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1lgyqagtl",
@@ -847,7 +891,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1ljho68xa/3cc2825c-b3c6-4fa4-9ea5-e035d4e39cf1/960bace0-16c5-11ee-84dd-7526dde12945/file-6y3zli1ljho68xb.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1ljho68xa/3cc2825c-b3c6-4fa4-9ea5-e035d4e39cf1/960bace0-16c5-11ee-84dd-7526dde12945/file-6y3zli1ljho68xb.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 8th April Evening Shift Physics - Simple Harmonic Motion Question 43 English Explanation\"><br>\nAfter time $t$, the angular displacement will be <br><br>$\\theta=\\omega t$<br><br> Total angular displacement from $x$-axis.<br><br>\n$$\n\\theta_{\\text {total }}=\\omega t+\\frac{\\pi}{6} \\quad\\quad\\left(\\because 30^{\\circ}=\\frac{\\pi}{6}\\right)\n$$<br><br>\nNow, OP has two component<br><br>\nThe horizontal component will be the projection along $x$-axis<br><br>\n$$\n=r \\cos \\left(\\theta_{\\text {Total }}\\right)=r \\cos \\left(\\omega t+\\frac{\\pi}{6}\\right)\n$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l6gmqiah",
@@ -868,7 +913,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>Let $$x = A\\sin \\omega t$$</p>\n<p>$$ \\Rightarrow v = A\\omega \\cos \\omega t$$</p>\n<p>$$ \\Rightarrow v = \\, \\pm \\,\\omega \\sqrt {{A^2} - {x^2}} $$</p>\n<p>$$ \\Rightarrow {{{v^2}} \\over {{\\omega ^2}}} + {x^2} = {A^2}$$</p>\n<p>$$\\Rightarrow$$ Ellipse</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l56uvlyh",
@@ -889,7 +935,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>$$x = \\sin \\left( {\\pi t + {\\pi  \\over 3}} \\right)m$$</p>\n<p>$$ \\Rightarrow {{dx} \\over {dt}} = \\pi \\cos \\left( {\\pi t + {\\pi  \\over 3}} \\right)$$</p>\n<p>$$ = \\pi \\cos \\left( {\\pi  + {\\pi  \\over 3}} \\right)$$ at $$t = 1\\,s$$</p>\n<p>$$ =  - {\\pi  \\over 2}$$ m/s</p>\n<p>or $$\\left| {{{dx} \\over {dt}}} \\right| = 157$$ cm/s</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l56w5v5f",
@@ -905,7 +952,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>A = 8 cm</p>\n<p>T = 6 s</p>\n<p>$$A\\cos \\left( {{{2\\pi t} \\over T}} \\right) = {A \\over 2}$$</p>\n<p>$$ \\Rightarrow {{2\\pi t} \\over T} = {\\pi  \\over 3}$$</p>\n<p>or $$t = {T \\over 6} = 1\\,s$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l568jzrd",
@@ -926,7 +974,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>$$x = 4\\sin \\left( {{\\pi  \\over 2} - \\omega t} \\right)$$</p>\n<p>$$ = 4\\cos (\\omega t)$$</p>\n<p>$$y = 4\\sin (\\omega t)$$</p>\n<p>$$ \\Rightarrow {x^2} + {y^2} = {4^2}$$</p>\n<p>$$\\Rightarrow$$ The particle is moving in a circular motion with radius of 4 m.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l56a398u",
@@ -942,7 +991,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>$${1 \\over 2}m{v^2} = mgl(1 - \\cos \\theta )$$</p>\n<p>$$ \\Rightarrow v = \\sqrt {2gl(1 - \\cos \\theta )} $$</p>\n<p>$$ = \\sqrt {2 \\times 10 \\times 2.5 \\times {1 \\over 2}} $$</p>\n<p>$$ = 5$$ m/s</p>",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1l54v46ak",
@@ -963,7 +1013,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<p>$$\\omega  = \\pi  = \\sqrt {{g \\over l}} $$</p>\n<p>So, $$l = {g \\over {{\\pi ^2}}}$$</p>\n<p>$$ \\simeq 99.4$$ cm (Nearest value)</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "l7g9f5pm",
@@ -980,7 +1031,8 @@
     "difficulty": "hard",
     "solution": "$$\nF_x=-x=m a_x\n$$\n<br/><br/>So $a_x=\\frac{d^2 x}{d t^2}=-x$\n<br/><br/>$$\n\\Rightarrow x=A_x \\sin \\left(\\omega t+\\phi_x\\right) \\quad(\\omega=1 \\mathrm{rad} / \\mathrm{s})\n$$\n<br/><br/>and $v_x=A_x \\omega \\cos \\left(\\omega t+\\phi_x\\right)$\n<br/><br/>at $t=0, x=\\frac{1}{\\sqrt{2}} \\mathrm{~m}$ and $v_x=-\\sqrt{2} \\mathrm{~m} / \\mathrm{s}$\n<br/><br/>So $\\frac{1}{\\sqrt{2}}=A_x \\sin \\phi_x$\n<br/><br/>and $-\\sqrt{2}=A_x \\cos \\phi_x$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow \\tan \\phi_x=-\\frac{1}{2} ......(1) \\\\\n& \\text { and } A_x=\\sqrt{\\frac{5}{2}} \\mathrm{~m} ......(2)\n\\end{aligned}\n$$\n<br/><br/>Similarly\n<br/><br/>$$\n\\begin{aligned}\n& F_y=-y=m a_y . \\\\\\\\\n& \\Rightarrow \\frac{d^2 y}{d t^2}=-y\n\\end{aligned}\n$$\n<br/><br/>So, $y=A_y \\sin \\left(\\omega \\mathrm{t}+\\phi_{\\mathrm{y}}\\right) \\quad(\\omega=1 \\mathrm{rad} / \\mathrm{s})$ and <br/><br/>$v_y=A_y \\omega \\cos \\left(\\omega t+\\phi_y\\right)$\n<br/><br/> at $t=0,y=\\sqrt{2} \\mathrm{~m}$ and $v_y=\\sqrt{2} \\mathrm{~m} / \\mathrm{s}$\n<br/><br/> So $\\sqrt{2}=A_y \\sin \\phi$\n<br/><br/> and $\\sqrt{2}=A_y \\cos \\phi$\n<br/><br/>$$\n\\Rightarrow \\phi=\\frac{\\pi}{4} \\text { and } A_y=2\n$$\n<br/><br/>So, \n<br/><br/>$\\left(x v_y-y v_x\\right) $\n<br/><br/>$\n =\\sqrt{\\frac{5}{2}} \\sin \\left(\\omega t+\\phi_x\\right) \\times 2 \\cos \\left(\\omega t+\\phi_y\\right)-2 \\sin \\left(\\omega t+\\phi_y\\right) \\times \\sqrt{\\frac{5}{2}} \\cos \\left(\\omega t+\\phi_x\\right) $\n<br/><br/>$ =\\sqrt{\\frac{5}{2}} \\times 2\\left(\\sin \\left(\\omega t+\\phi_x\\right) \\cos \\left(\\omega t+\\phi_y\\right)-\\sin \\left(\\omega t+\\phi_y\\right) \\times \\cos \\left(\\omega t+\\phi_x\\right)\\right. $\n<br/><br/>$ =\\sqrt{10} \\sin \\left(\\phi_x-\\phi_y\\right)$\n<br/><br/>$ =\\sqrt{10}\\left(\\sin \\phi_x \\cos \\phi_y-\\cos \\phi_x \\sin \\phi_y\\right) $\n<br/><br/>$ =\\sqrt{10}\\left(\\frac{1}{\\sqrt{5}} \\times \\frac{1}{\\sqrt{2}}-\\left(-\\frac{2}{\\sqrt{5}}\\right) \\times \\frac{1}{\\sqrt{2}}\\right) $\n<br/><br/>$=3$",
     "section": "Sec 1",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "9I5Qk79S5teMX13cDS1kmj25mzo",
@@ -1001,7 +1053,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "KE = PE<br><br>$${1 \\over 2}k({A^2} - {X^2}) = {1 \\over 2}K{X^2}$$<br><br>$$ \\Rightarrow $$ $${A^2} - {X^2} = {X^2}$$<br><br>$$ \\Rightarrow $$ $$2{X^2} = {A^2}$$<br><br>$$ \\Rightarrow $$ $${X^2} = {{{A^2}} \\over {\\sqrt 2 }}$$<br><br>$$ \\Rightarrow $$ $$X =  \\pm {A \\over {\\sqrt 2 }}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "FsHhtR64PT7qW01aGE1kmlw7pej",
@@ -1022,7 +1075,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "General equation of SHM<br><br>x = A sin($$\\omega$$'t $$\\pm$$ $$\\phi$$)<br><br>We know, $$\\omega$$ = $${{2\\pi } \\over T}$$<br><br>Given, $$T = {\\pi  \\over \\omega }$$<br><br>$$ \\therefore $$ $$\\omega$$' = $${{2\\pi } \\over {{\\pi  \\over \\omega }}}$$ = 2$$\\omega$$<br><br>$$ \\therefore $$ Equation becomes,<br><br>x = a sin(2$$\\omega$$t $$\\pm$$ $$\\phi$$)<br><br>Here coefficient of t is 2$$\\omega$$.<br><br>you can see only option (D) has coefficient 2$$\\omega$$.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "AAufQa38qwmRel8etd1kmlhlvfe",
@@ -1043,7 +1097,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "$$T = 2\\pi \\sqrt {{l \\over g}} $$<br><br>$${T^2} = 2\\pi \\left( {{l \\over g}} \\right)$$<br><br>$$g = 2\\pi {l \\over {{T^2}}}$$<br><br>$${{\\Delta g} \\over g} = {{\\Delta l} \\over l} + {{2\\Delta T} \\over T}$$<br><br>$${{\\Delta g} \\over g} = {{1 \\times {{10}^{ - 3}}} \\over {1 \\times {{10}^{ - 2}}}} + {{2 \\times 1} \\over {100}}$$<br><br>$${{\\Delta g} \\over g} = 0.02 + 0.01 = 0.03$$<br><br>$$100 \\times {{\\Delta g} \\over g} = 0.03 \\times 100 = 3\\% $$<br><br>$${{\\Delta g} \\over g} \\times 100 = 3\\% $$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "n2pzyKmh8p6bT9jrLG1kmkrnuqk",
@@ -1059,7 +1114,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "Time period (T) = 2 sec.<br><br>X = A sin ($$\\omega$$t + $$\\phi$$) ($$\\phi$$ = 0 at M.P.)<br><br>$$ \\Rightarrow $$ $${A \\over 2} = A\\sin {{2\\pi } \\over T}t$$<br><br>$$ \\Rightarrow $$  $${{2\\pi } \\over 2}t = {\\pi  \\over 6}$$<br><br>$$ \\Rightarrow $$  $$t = {1 \\over 6}$$<br><br>$$ \\therefore $$ a = 6",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1krqc9uhv",
@@ -1080,7 +1136,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "$${v^2} = {\\omega ^2}({A^2} - {x^2})$$<br><br>$${A^2} = x_1^2 + {{v_1^2} \\over {{\\omega ^2}}} = x_2^2 + {{v_2^2} \\over {{\\omega ^2}}}$$<br><br>$${\\omega ^2} = {{v_2^2 - v_1^2} \\over {x_1^2 - x_2^2}}$$<br><br>$$T = 2\\pi \\sqrt {{{x_2^2 - x_1^2} \\over {v_1^2 - v_2^2}}} $$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "b287D16YoPT48A5Ui71klrnt483",
@@ -1101,7 +1158,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "Since, the particle is executing SHM.<br/><br/>Therefore, displacement equation of wave will be<br/><br/>$$y = A\\sin \\omega t$$<br/><br/>$$ \\Rightarrow y/A = \\sin \\omega t$$<br/><br/>and wave velocity equation will be<br/><br/>$${v_y} = {{dy} \\over {dt}} = A\\omega \\cos \\omega t$$<br/><br/>$$ \\Rightarrow {v_y}/A\\omega  = \\cos \\omega t$$<br/><br/>Now, $${\\sin ^2}\\omega t + {\\cos ^2}\\omega t = 1$$<br/><br/>$$\\therefore$$ $${(y/A)^2} + {({v_y} / A\\omega )^2} = 1$$<br/><br/>This equation is similar to the equation of ellipse.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "5nvIqbcRtSrVqlqPO91klt2xeyn",
@@ -1122,7 +1180,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kqzjm035/5540e2f4-2c18-4309-bb46-cb71d939c710/9438ad20-e277-11eb-8a3b-2f3f290bdaba/file-1kqzjm036-320w.png\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kqzjm035/5540e2f4-2c18-4309-bb46-cb71d939c710/9438ad20-e277-11eb-8a3b-2f3f290bdaba/file-1kqzjm036-500w.png\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1kqzjm035/5540e2f4-2c18-4309-bb46-cb71d939c710/9438ad20-e277-11eb-8a3b-2f3f290bdaba/file-1kqzjm036-680w.png\"><img src=\"https://imagex.cdn.examgoal.net/1kqzjm035/5540e2f4-2c18-4309-bb46-cb71d939c710/9438ad20-e277-11eb-8a3b-2f3f290bdaba/file-1kqzjm036.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Evening Shift Physics - Simple Harmonic Motion Question 111 English Explanation\"></picture>\n<br>The initial phase angle $${\\phi _0} = \\pi  - {\\pi  \\over 6} = {{5\\pi } \\over 6}$$\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "Xzhqs0lNtgLt4m6Ogy1klt31oz2",
@@ -1143,7 +1202,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kqzirbmm/4b2bb45e-817e-4ac1-a5df-c76e08fe597f/3f0d92f0-e274-11eb-9782-3b8945fb98d0/file-1kqzirbmn.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th February Evening Shift Physics - Simple Harmonic Motion Question 112 English Explanation\"><br>The point a covers 30$$^\\circ$$ in 0.1 sec.<br><br>Means $${\\pi  \\over 6}\\buildrel {} \\over\n \\longrightarrow 0.1$$ sec.<br><br>$$1\\buildrel {} \\over\n \\longrightarrow {{0.1} \\over {{\\pi  \\over 6}}}$$<br><br>$$2\\pi  \\buildrel {} \\over\n \\longrightarrow {{0.1 \\times 6} \\over \\pi } \\times 2\\pi $$<br><br>$$T = 1.2$$ sec.<br><br>We know that $$\\omega  = {{2\\pi } \\over T}$$<br><br>$$\\omega  = {{2\\pi } \\over {1.2}}$$<br><br>Restoration force $$(F) = m{\\omega ^2}A$$<br><br>Then Restoration force per unit mass $$\\left( {{F \\over m}} \\right) = {\\omega ^2}A$$<br><br>$$\\left( {{F \\over m}} \\right) = {\\left( {{{2\\pi } \\over {1.2}}} \\right)^2} \\times 0.36$$<br><br>$$ \\cong 9.87$$ N",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1krw6gaab",
@@ -1164,7 +1224,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$$K = {1 \\over 2}m{\\omega ^2}({A^2} - {x^2})$$<br><br>$$ = {1 \\over 2}m{\\omega ^2}\\left( {{A^2} - {{{A^2}} \\over 4}} \\right)$$<br><br>$$ = {1 \\over 2}m{\\omega ^2}\\left( {{{3{A^2}} \\over 4}} \\right)$$<br><br>$$K = {3 \\over 4}\\left( {{1 \\over 2}m{\\omega ^2}{A^2}} \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1krunrhe8",
@@ -1180,7 +1241,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1krwgm3zg/849f5d4b-6a38-466c-a5ce-1ff37eb21212/b9464ec0-f491-11eb-9dc6-a7061d629865/file-1krwgm3zh.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th July Morning Shift Physics - Simple Harmonic Motion Question 92 English Explanation\"> <br><br>Applying work energy theorem :<br><br>w<sub>g</sub> + w<sub>T</sub> = $$\\Delta$$K<br><br>$$-$$mgl(1 $$-$$ cos60$$^\\circ$$) = $${1 \\over 2}$$mv<sup>2</sup> $$-$$ $${1 \\over 2}$$mu<sup>2</sup><br><br>v<sup>2</sup> = u<sup>2</sup> $$-$$ 2gl(1 $$-$$ cos60$$^\\circ$$)<br><br>v<sup>2</sup> = 9 $$-$$ 2 $$\\times$$ 10 $$\\times$$ 0.5$$\\left( {{1 \\over 2}} \\right)$$<br><br>v<sup>2</sup> = 4<br><br>v = 2 m/s",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ktbvioxk",
@@ -1196,7 +1258,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$${x_2} = 5\\sqrt 2 \\left( {{1 \\over {\\sqrt 2 }}\\sin 2\\pi t + {1 \\over {\\sqrt 2 }}\\cos 2\\pi t} \\right)\\sqrt 2 $$<br><br>$$ = 10\\sin \\left( {2\\pi t + {\\pi  \\over 4}} \\right)$$<br><br>$$\\therefore$$ $${{{A_2}} \\over {{A_1}}} = {{10} \\over 5} = 2$$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "z3Q9KUwuSIlVdPQJO01klune0zd",
@@ -1217,7 +1280,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "For a body performing SHM, relation between velocity and displacement<br><br>$$v = \\omega \\sqrt {{A^2} - {x^2}} $$<br><br>now, square both side<br><br>$${v^2} = {w^2}({A^2} - {x^2})$$<br><br>$$ \\Rightarrow {v^2} = {w^2}{A^2} - {\\omega ^2}{x^2}$$<br><br>$${v^2} + {\\omega ^2}{x^2} = {\\omega ^2}{A^2}$$<br><br>divide whole equation by $${{\\omega ^2}{A^2}}$$<br><br>$${{{v^2}} \\over {{\\omega ^2}{A^2}}} + {{{\\omega ^2}{x^2}} \\over {{\\omega ^2}{A^2}}} = {{{\\omega ^2}{x^2}} \\over {{\\omega ^2}{A^2}}}$$<br><br>$${{{v^2}} \\over {{{(\\omega A)}^2}}} + {{{x^2}} \\over {{{(A)}^2}}} = 1$$<br><br>above equation is similar as standard equation of ellipses, so graph between velocity and displacement will be ellipses. ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "fz2CdSfh9kQeBYn46B1klunlynu",
@@ -1233,7 +1297,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "For a particle executes S.H.M.<br><br>$$V = \\omega \\sqrt {{a^2} - {x^2}} $$<br><br>Given, $$V = {{{V_{\\max }}} \\over 2} = {{A\\omega } \\over 2}$$<br><br>$${{{A^2}{\\omega ^2}} \\over 4} = {\\omega ^2}{a^2} - {\\omega ^2}{x^2}$$<br><br>$$x = {{\\sqrt 3 } \\over 2}a$$",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1ktfnvvxh",
@@ -1242,14 +1307,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Physics",
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$${y_1} = 10\\sin \\left( {3\\pi t + {\\pi  \\over 3}} \\right)$$ $$\\Rightarrow$$ Amplitude = 10<br><br>$${y_2} = 5(\\sin 3\\pi t + \\sqrt 3 \\cos 3\\pi t)$$<br><br>$${y_2} = 10\\left( {{1 \\over 2}\\sin 3\\pi t + {{\\sqrt 3 } \\over 2}\\cos 3\\pi t} \\right)$$<br><br>$${y_2} = 10\\left( {\\cos {\\pi  \\over 3}\\sin 3\\pi t + \\sin {\\pi  \\over 3}\\cos 3\\pi t} \\right)$$<br><br>$${y_2} = 10\\left( {3\\pi t + {\\pi  \\over 3}} \\right)$$ $$\\Rightarrow$$ Amplitude = 10<br><br>So ratio of amplitudes = $${{10} \\over {10}}$$ = 1",
-    "section": "B"
+    "section": "B",
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1kte6oj87",
@@ -1270,7 +1336,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "Potential energy is maximum at maximum distance from mean.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1ks0katmf",
@@ -1291,7 +1358,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$$T = 2\\pi \\sqrt {{m \\over k}} $$<br><br>$$0.2 = 2\\pi \\sqrt {{{0.5} \\over k}} $$<br><br>k = 50$$\\pi$$<sup>2</sup><br><br>$$ \\approx $$ 500<br><br>x = A sin ($$\\omega$$t + $$\\phi$$)<br><br>= 5 cm sin $$\\left( {{{\\omega T} \\over 4} + 0} \\right)$$<br><br>= 5 cm sin $$\\left( {{\\pi  \\over 2}} \\right)$$<br><br>= 5 cm<br><br>$$PE = {1 \\over 2}k{x^2}$$<br><br>$$ = {1 \\over 2}(500){\\left( {{5 \\over {100}}} \\right)^2}$$<br><br>= 0.6255",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1ks1ajbf0",
@@ -1307,7 +1375,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "x(t) = A sin($$\\omega$$t + $$\\phi$$)<br><br>v(t) = A$$\\omega$$ cos ($$\\omega$$t + $$\\phi$$)<br><br>2 = A sin$$\\phi$$ ...... (1)<br><br>2$$\\omega$$ = A$$\\omega$$ cos$$\\phi$$ ....... (2)<br><br>From (1) and (2)<br><br>tan$$\\phi$$ = 1<br><br>$$\\phi$$ = 45$$^\\circ$$<br><br>Putting value of $$\\phi$$ in equation (1),<br><br>$$2 = A\\left\\{ {{1 \\over {\\sqrt 2 }}} \\right\\}$$<br><br>$$A = 2\\sqrt 2 $$<br><br>$$ \\therefore $$ x = 2",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "1krywgvzm",
@@ -1328,7 +1397,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$$E = {1 \\over 2}K{a^2}$$<br><br>$${{3E} \\over 4} = {1 \\over 2}K({a^2} - {y^2})$$<br><br>$$ \\Rightarrow $$ $${3 \\over 4} \\times {1 \\over 2}K{a^2} = {1 \\over 2}K({a^2} - {y^2})$$<br><br>$$ \\Rightarrow $$ $${y^2} = {a^2} - {{3{a^2}} \\over 4}$$<br><br>$$ \\Rightarrow $$ $$y = {a \\over 2}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1ktjpuusx",
@@ -1349,7 +1419,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "In S.H.M. total mechanical energy remains constant and also <k.e.> = <p.e.> = $${{1 \\over 4}}$$KA<sup>2</sup> (for 1 time period)</p.e.></k.e.>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "vtHIpHcwHiT8EDHhpTjgy2xukexsohwd",
@@ -1370,7 +1441,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "hard",
     "solution": "(A) F = ma and a = $$-\\omega^{2} x$$\n<br><br>At $$\\frac{3T}{4} $$ displacement zero (x = 0), so a = 0\n<br><br>$$ \\therefore $$ F = 0\n<br><br> (B) at t = T,\n\nParticle is at extreme. \n<br><br> displacement (x) = A $$ \\Rightarrow $$ x maximum, <br><br>So acceleration is maximum.\n<br><br>(C) V = $$\\omega \\sqrt{A^{2}-x^{2}} $$\n<br><br>at t = $$\\frac{T}{4} $$, x = 0\n<br><br>$$ \\therefore $$ V = A$$\\omega $$ = V<sub>max</sub>\n<br><br>(D) KE = PE\n<br><br>$$\\frac{1}{2} k\\left( A^{2}-x^{2}\\right)  =\\frac{1}{2} kx^{2}$$\n<br><br>$$ \\Rightarrow $$ A<sup>2</sup> – x<sup>2</sup> = x<sup>2</sup> \n\n<br><br>$$ \\Rightarrow $$ A<sup>2</sup> = 2x<sup>2</sup> \n\n<br><br>A = $$\\sqrt{2} $$x\n<br><br>$$ \\Rightarrow $$ x = $$\\frac{A}{\\sqrt{2} } $$ = A cos $$\\omega $$t\n<br><br>$$ \\Rightarrow $$ cos $$\\omega $$t = $$\\frac{1}{\\sqrt{2} } $$\n<br><br>$$ \\Rightarrow $$ $$\\omega $$t = $$\\frac{\\pi }{4} $$\n<br><br>$$ \\Rightarrow $$ $$\\frac{2\\pi }{T} \\cdot t=\\frac{\\pi }{4} $$\n<br><br>$$ \\Rightarrow $$ t = $$\\frac{T}{8} $$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "F5IDR67uID3EyumOBp7k9k2k5hgtxa6",
@@ -1391,7 +1463,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "T = $$2\\pi \\sqrt {{l \\over g}} $$\n<br><br>$$ \\Rightarrow $$ $$g = {{4{\\pi ^2}l} \\over {{T^2}}}$$\n<br><br>$$ \\Rightarrow $$ $${{\\Delta g} \\over g} = {{\\Delta l} \\over l} + 2{{\\Delta T} \\over T}$$\n<br><br>= $${{0.1} \\over {25}} + 2{1 \\over {50}}$$ = $${{11} \\over {250}}$$\n<br><br>$$ \\therefore $$  % accuracy = $${{11} \\over {250}}$$ $$ \\times $$ 100% = 4.40 %",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "cm46ByyrxvFyOpZp5rXol",
@@ -1412,7 +1485,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "$$v = \\omega \\sqrt {{A^2} - {x^2}} \\,\\,$$&nbsp;&nbsp;&nbsp;&nbsp;. . .(1)\n<br><br>$$a =  - {\\omega ^2}x$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(2)\n<br><br>$$\\left| v \\right| = \\left| a \\right|$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .(3)\n<br><br>$$\\omega \\sqrt {{A^2} - {x^2}}  = {\\omega ^2}x$$\n<br><br>$${A^2} - {x^2} = {\\omega ^2}{x^2}$$\n<br><br>$${5^2} - {4^2} = {\\omega ^2}\\left( {{4^2}} \\right)$$\n<br><br>$$ \\Rightarrow \\,\\,\\,3 = \\omega  \\times 4$$\n<br><br>$$T = 2\\pi /\\omega $$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "v2ptj6ziRkQiRpQdcytDD",
@@ -1433,7 +1507,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "K = $${1 \\over 2}$$m$${\\omega ^2}$$A<sup>2</sup>cos<sup>2</sup>$$\\omega $$t\n<br><br>U = $${1 \\over 2}m{\\omega ^2}$$ A<sup>2</sup> sin<sup>2</sup> $$\\omega $$t\n<br><br>$${k \\over U}$$ = cot<sup>2</sup> $$\\omega $$t = cot<sup>2</sup> $${\\pi  \\over {90}}$$(210) = $${1 \\over 3}$$\n<br><br>Hence ratio is 3 (most appropriate)",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "BIB7dgP8SnMAN9yyLiocZ",
@@ -1454,7 +1529,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/d8ifPjkj4o7JkbYBp/gBcPYRYYnA4aJsHUapSoKzYTiiIlE/KN9g1hpGT7pNoZZYTzXmgp/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th January Evening Slot Physics - Simple Harmonic Motion Question 126 English Explanation\">\n<br><br>y = 5[sin(3$$\\pi $$t) + $$\\sqrt 3 $$cos(3$$\\pi $$t)]\n<br><br>= 10sin $$\\left( {3\\pi t + {\\pi  \\over 3}} \\right)$$\n<br><br>Amplitude = 10 cm\n<br><br>T = $${{2\\pi } \\over w}$$ = $${{2\\pi } \\over {3\\pi }}$$ = $${2 \\over 3}$$ sec",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "h9jlYSnorP6W5PIDbR1TC",
@@ -1475,7 +1551,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "Total energy of particle = $${1 \\over 2}k{A^2}$$\n<br><br>Potential energy (v) = $${1 \\over 2}$$ kx<sup>2</sup>\n<br><br>Kinetic energy (K) = $${1 \\over 2}$$ kA<sup>2</sup> $$-$$ $${1 \\over 2}$$kx<sup>2</sup>\n<br><br>According to the question, \n<br><br>Potential energy = Kinetic energy\n<br><br>$$ \\therefore $$&nbsp;&nbsp;$${1 \\over 2}$$kx<sup>2</sup> = $${1 \\over 2}$$kA<sup>2</sup> $$-$$ $${1 \\over 2}$$ kx<sup>2</sup>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;kx<sup>2</sup> = $${1 \\over 2}$$ kA<sup>2</sup>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;x = $$ \\pm $$ $${A \\over {\\sqrt 2 }}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "SsY8ijRyGV2Y3ETBy1GQ3",
@@ -1496,7 +1573,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>The given simple harmonic motions to form Lissajous figures are $$x(t) = A\\sin (at + \\delta )$$ and $$y(t) = B\\sin (bt)$$.</p>\n<p>For parabola, conditions should be</p>\n<p>A = B or A $$\\ne$$ B, a = 2b, $$\\delta$$ = $$\\pi$$/2</p>\n<p>For line, conditions should be</p>\n<p>A = B, a = b, $$\\delta$$ = $$\\pi$$</p>\n<p>For circle, condition should be</p>\n<p>A = B, a = b; $$\\delta$$ = $$\\pi$$/2</p>\n<p>For ellipse, condition should be</p>\n<p>A $$\\ne$$ B, a = b; $$\\delta$$ = $$\\pi$$/2</p>\n<p>Therefore, we obtain an ellipse.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "CTJxDgKJxL1pyelJYoyhf",
@@ -1517,7 +1595,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "In general equation of simple harmonic motion, y = A sin $$\\omega $$t\n<br><br>$$\\therefore\\,\\,\\,$$ a = A sin $$\\omega $$t<sub>0</sub>\n<br><br>$$\\,\\,\\,\\,\\,\\,$$ b = A sin 2$$\\omega $$t<sub>0</sub>\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,$$c = A sin 3$$\\omega $$t<sub>0</sub>\n<br><br>a + c = A[sin $$\\omega $$t<sub>0</sub> + sin 3$$\\omega $$t<sub>0</sub>]\n<br><br>= 2A sin 2$$\\omega $$t<sub>0</sub>  cos$$\\omega $$t<sub>0</sub> \n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$a + c = 2 b cos$$\\omega $$t<sub>0</sub>\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ $${{a + c} \\over b}$$ = 2 cos$$\\omega $$t<sub>0</sub>\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ $$\\omega $$ = $${1 \\over {{t_0}}}$$ cos<sup>$$-$$1</sup> $$\\left( {{{a + c} \\over {2b}}} \\right)$$\n<br><br>$$\\therefore\\,\\,\\,$$ f = $${\\omega  \\over {2\\pi }}$$\n<br><br>= $${1 \\over {2\\pi {t_0}}}$$ cos<sup>$$-$$1</sup> $$\\left( {{{a + c} \\over {2b}}} \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "pzQYl7SkQ5ctjpNR",
@@ -1538,7 +1617,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "For a particle executing SHM\n<br><br>At mean position; t = 0, $$\\omega $$t = 0, y = 0, V = V<sub>max</sub> = a$$\\omega $$\n<br><br>$$ \\therefore $$ K.E = K.E<sub>max</sub> = $${1 \\over 2}m{\\omega ^2}{a^2}$$\n<br><br>At extreme position : t =\n$${T \\over 4}$$\n, $$\\omega $$t =\n$${\\pi  \\over 2}$$\n, y = A, V = V<sub>min</sub> = 0\n<br><br>$$ \\therefore $$ K.E = K.E<sub>min</sub> = 0\n<br><br>Hence graph (A) correctly represents kinetic energy - time graph.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "J0ztRZyOpDhCkCo5Py6tj",
@@ -1559,7 +1639,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<b>For 1 kg  block : </b>\n<br><br><img src=\"https://imagex.cdn.examgoal.net/ncapIUTavpokECcbU/JXk82nf4eIeHqLbiYjA3Mm2MMycXJ/tj7EVKDhqv6Di8tdl9mOmS/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2017 (Online) 8th April Morning Slot Physics - Simple Harmonic Motion Question 141 English Explanation 1\">\n<br><br>Here frequency of spring (f) = $${1 \\over {2\\pi }}\\sqrt {{k \\over m}} $$\n<br><br>Given that, F = 1 Hz\n<br><br>$$\\therefore\\,\\,\\,$$  $${1 \\over {2\\pi }}\\sqrt {{k \\over 1}} $$ = 1\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ k = 4$$\\pi $$<sup>2</sup> N m<sup>$$-$$1</sup>\n<br><br><b>For 8 kg Block : </b>\n<br><br><img src=\"https://imagex.cdn.examgoal.net/6iXuAPbvWwMxdUAos/bgkvWfP0e32yWdETrOubKzZAYR3tP/ISp4dfJtgydoGwKkrlp4eN/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2017 (Online) 8th April Morning Slot Physics - Simple Harmonic Motion Question 141 English Explanation 2\">\n<br><br>Here two identical springs are attached in parallel. So, \n<br><br>K<sub>eq</sub> = k + k = 2k\n<br><br>$$\\therefore\\,\\,\\,$$ Frequency of 8 kg block, \n<br><br>F' = $${1 \\over {2\\pi }}\\sqrt {{{{k_{eq}}} \\over {m'}}} $$\n<br><br>= $${1 \\over {2\\pi }}\\sqrt {{{2k} \\over 8}} $$\n<br><br>= $${1 \\over {2\\pi }}\\sqrt {{{2 \\times 4{\\pi ^2}} \\over 8}} $$\n<br><br>= $${1 \\over {2\\pi }} \\times \\pi $$\n<br><br>= $${1 \\over 2}$$ Hz",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "eAYBP42rGLjuQR2SS2H9g",
@@ -1580,7 +1661,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "Mximum velocity, V<sub>max</sub> = a$$\\omega $$\n<br><br>Maximum acceleration, A<sub>max</sub> = a$$\\omega $$<sup>2</sup>\n<br><br>Given that, \n<br><br>$${{a{\\omega ^2}} \\over {a\\omega }}$$ = 10\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$  $$\\omega $$ = 10 s<sup>$$-$$1</sup>\n<br><br>Displacement, x = a sin ($$\\omega $$t + $${\\pi  \\over 4}$$)\n<br><br>at t = 0,  displacement x = 5\n<br><br>$$\\therefore\\,\\,\\,$$ 5 = a sin $$\\left( {{\\pi  \\over 4}} \\right)$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 5 = a $$ \\times $$ $${1 \\over {\\sqrt 2 }}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ a = 5$${\\sqrt 2 }$$\n<br><br>$$\\therefore\\,\\,\\,$$ Maximum acceleration, \n<br><br>A<sub>max</sub> = a$$\\omega $$<sup>2</sup> = 5 $${\\sqrt 2 }$$ $$ \\times $$ (10)<sup>2</sup>\n<br><br>= 500 $${\\sqrt 2 }$$ m/s<sup>2</sup>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "zPO3bVwoKwEayQhb",
@@ -1602,7 +1684,8 @@
     "difficulty": "hard",
     "solution": "Case - I<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kle47wyv/72b871cc-e40e-45ac-b48c-090062483c2f/d9039b70-73b1-11eb-866f-cf1a7ff35e0c/file-1kle47wyw-320w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kle47wyv/72b871cc-e40e-45ac-b48c-090062483c2f/d9039b70-73b1-11eb-866f-cf1a7ff35e0c/file-1kle47wyw-500w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Advanced 2016 Paper 2 Offline Physics - Simple Harmonic Motion Question 24 English Explanation 1\"></picture> <br><br>Case - II<br><br> <picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kle48s2j/0b72ae52-3aa5-4ec6-942d-13eb1a2d4317/f10a1eb0-73b1-11eb-866f-cf1a7ff35e0c/file-1kle48s2k-320w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kle48s2j/0b72ae52-3aa5-4ec6-942d-13eb1a2d4317/f10a1eb0-73b1-11eb-866f-cf1a7ff35e0c/file-1kle48s2k-500w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Advanced 2016 Paper 2 Offline Physics - Simple Harmonic Motion Question 24 English Explanation 2\"></picture> <br><br>In case 1,<br><br>$$M{v_1} = (M + m){v_2} \\Rightarrow {v_2} = \\left( {{M \\over {M + m}}} \\right){v_1}$$<br><br>$$\\sqrt {{k \\over {M + m}}} {A_2} = \\left( {{M \\over {M + m}}} \\right)\\sqrt {{k \\over M}} {A_1}$$<br><br>$${A_2} = \\sqrt {{k \\over {M + m}}} {A_1}$$<br><br>In case - 2, $${A_2} = {A_1}$$<br><br>$$T = 2\\pi \\sqrt {{{M + m} \\over k}} $$ in both cases.<br><br>Total energy decreases in first case whereas remain same in 2nd case. Instantaneous speed at x<sub>0</sub> decreases in both cases.",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "jejAjmwC6yYZiJYj",
@@ -1623,7 +1706,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "We know that $$V = \\omega \\sqrt {{A^2} - {x^2}} $$\n<br><br>Initially $$v = \\omega \\sqrt {{A^2} - {{\\left( {{{2A} \\over 3}} \\right)}^2}} $$\n<br><br>Finally $$3v = \\omega \\sqrt {A_{new}^2 - {{\\left( {{{2A} \\over 3}} \\right)}^2}} $$\n<br><br>where $${A_{new}}$$ = final amplitude (Given at $$x = {{2A} \\over 3},$$ velocity to trebled)\n<br><br>On dividing we get $${3 \\over 1} = {{\\sqrt {A_{new}^2 - {{\\left( {{{2A} \\over 3}} \\right)}^2}} } \\over {\\sqrt {{A^2} - {{\\left( {{{2A} \\over 3}} \\right)}^2}} }}$$\n<br><br>$$9\\left[ {{A^2} - {{4{A^2}} \\over 9}} \\right] = A_{new}^2 - {{4{A^2}} \\over 9}$$\n<br><br>$$\\therefore$$ $$A_{new} = {{7A} \\over 3}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "4aY9Zg26IPzekAJj8MjXe",
@@ -1644,7 +1728,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "Here,\n<br><br>Amplitude, A = 7 cm = 0.07 m\n<br><br>When washer is no longer stays in contact with the piston, then the normal force on the washer is = 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Maximum acceleration of the washer, \n<br><br>a<sub>max</sub> = $$\\omega $$<sup>2</sup>A = g\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$\\omega $$ = $$\\sqrt {{g \\over A}} $$ = $$\\sqrt {{{10} \\over {0.07}}} $$ = $$\\sqrt {{{1000} \\over 7}} $$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Frequency of the piston, \n<br><br>f = $${\\omega  \\over {2\\pi }}$$ = $${1 \\over {2\\pi }}\\sqrt {{{1000} \\over 7}} $$ = 1.9 Hz\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "q0JavxzwOukBQqLiO4Uvl",
@@ -1665,7 +1750,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/mPjxNCKNgym5suQv5/fdfq9s5mcTQCNUM8xSgVyY6bqSjC1/mZIuzlqZQp7XeH5f3z9Ksf/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2016 (Online) 9th April Morning Slot Physics - Simple Harmonic Motion Question 138 English Explanation\">\n<br>Angular displacement ($$\\theta $$<sub>1</sub>) of particle 1. from equilibrium, \n<br><br>$${y_1}$$ = A sin$$\\theta$$<sub>1</sub>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;A = Asin$$\\theta $$<sub>1</sub>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;sin$$\\theta $$<sub>1</sub> = 1 = sin $${\\pi  \\over 2}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$$\\theta $$<sub>1</sub> = $${\\pi  \\over 2}$$\n<br><br>Similarly for particle 2 angular displacement $$\\theta $$<sub>2</sub> from equilibrium, \n<br><br>y<sub>2</sub> = Asin$$\\theta $$<sub>2</sub>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$-$$ $${A \\over 2}$$ = Asin$$\\theta $$<sub>2</sub>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;sin$$\\theta $$<sub>2</sub> = $$-$$ $${1 \\over 2}$$ = sin$$\\left( { - {\\pi  \\over 3}} \\right)$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$\\theta $$<sub>2</sub> = $$-$$ $${{\\pi  \\over 3}}$$ \n<br><br>Relative angular displacement of the two particle, \n<br><br>$$\\theta $$ = $$\\theta $$<sub>1</sub> $$-$$ $$\\theta $$<sub>2</sub>\n<br><br>= $${{\\pi  \\over 2}}$$ $$-$$ $$\\left( { - {\\pi  \\over 6}} \\right)$$\n<br><br>=  $${{{2\\pi } \\over 3}}$$\n<br><br>Relative angular velocity $$=$$ $$\\omega  - \\left( { - \\omega } \\right)$$ = $$2\\omega $$\n<br><br>If they cross each other at time t\n<br><br>then, &nbsp;&nbsp;t = $${\\theta  \\over {2\\omega }}$$ = $${{2\\pi } \\over {3 \\times 2\\omega }}$$ = $${\\pi  \\over {3 \\times {{2\\pi } \\over T}}}$$ = $${T \\over 6}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "inUwPSFSTWbKyWSTEv1klmfgwx1",
@@ -1687,7 +1773,8 @@
     "difficulty": "hard",
     "solution": "<p>1st Particle</p>\n<p>P = 0 at x = a $$\\Rightarrow$$ 'a' is the amplitude of oscillation 'A<sub>1</sub>'.</p>\n<p>At x = 0, P = b (at mean position)</p>\n<p>$$ \\Rightarrow m{v_{\\max }} = b \\Rightarrow {v_{\\max }} = {b \\over m}$$</p>\n<p>$${E_1} = {1 \\over 2}mv_{\\max }^2 = {m \\over 2}{\\left[ {{b \\over m}} \\right]^2} = {{{b^2}} \\over {2m}}$$</p>\n<p>$${A_1}{\\omega _1} = {v_{\\max }} = {b \\over m}$$</p>\n<p>$$ \\Rightarrow {\\omega _1} = {b \\over {ma}} = {1 \\over {m{n^2}}}(A = a,\\,{a \\over b} = {n^2})$$</p>\n<p>2nd Particle</p>\n<p>P = 0 at x = R $$\\Rightarrow$$ A<sub>2</sub> = R</p>\n<p>At x = 0, P = R $$\\Rightarrow$$ $${v_{\\max }} = {R \\over m}$$</p>\n<p>$${E_2} = {1 \\over 2}mv_{\\max }^2 = {m \\over 2}{\\left[ {{R \\over m}} \\right]^2} = {{{R^2}} \\over {2m}}$$</p>\n<p>$${A_2}{\\omega _2} = {R \\over m} \\Rightarrow {\\omega _2} = {R \\over {mR}} = {1 \\over m}$$</p>\n<p>(b) $${{{\\omega _2}} \\over {{\\omega _1}}} = {{1/m} \\over {1/m{n^2}}} = {n^2}$$</p>\n<p>(c) $${\\omega _1}{\\omega _2} = {1 \\over {m{n^2}}} \\times {1 \\over m} = {1 \\over {{m^2}{n^2}}}$$</p>\n<p>(d) $${{{E_1}} \\over {{\\omega _1}}} = {{{b^2}/2m} \\over {1/m{n^2}}} = {{{b^2}{n^2}} \\over 2} = {{{a^2}} \\over {2{n^2}}} = {{{R^2}} \\over 2}$$</p>\n<p>$${{{E_2}} \\over {{\\omega _2}}} = {{{R^2}/2m} \\over {1/m}} = {{{R^2}} \\over 2}$$</p>\n<p>$$ \\Rightarrow {{{E_1}} \\over {{\\omega _1}}} = {{{E_2}} \\over {{\\omega _2}}}$$</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "cFCwAnr5uP5w4PPM",
@@ -1708,7 +1795,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "In simple harmonic motion, starting from rest,\n<br><br>At $$t=0,$$ $$x=A$$\n<br><br>$$x = A\\cos \\omega t\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( i \\right)$$\n<br><br>When $$t = \\tau ,\\,\\,x = A - a$$\n<br><br>When $$t = 2\\,\\tau ,\\,x = A - 3a$$\n<br><br>From equation $$(i)$$ \n<br><br>$$A - a = A\\cos \\omega \\,\\tau \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( {ii} \\right)$$\n<br><br>$$A - 3a = A\\cos 2\\omega \\,\\tau \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( {iii} \\right)$$\n<br><br>As $$\\cos 2\\omega \\,\\tau  = 2{\\cos ^2}\\omega \\tau  - 1...\\left( {iv} \\right)$$\n<br><br>From equation $$(ii),$$ $$(iii)$$ and $$(iv)$$\n<br><br>$${{A - 3A} \\over A} = 2{\\left( {{{A - a} \\over A}} \\right)^2} - 1$$\n<br><br>$$ \\Rightarrow {{A - 3a} \\over A} = {{2{A^2} + 2{a^2} - 4Aa - {A^2}} \\over {{A^2}}}$$\n<br><br>$$ \\Rightarrow {A^2} - 3aA = {A^2} + 2{a^2} - 4Aa$$\n<br><br>$$ \\Rightarrow 2{a^2} = aA \\Rightarrow \\,\\,\\,\\,\\,\\,\\,A = 2a$$\n<br><br>$$ \\Rightarrow {a \\over A} = {1 \\over 2}$$\n<br><br>Now, $$A-a=A$$ $$\\cos \\omega \\tau $$\n<br><br>$$ \\Rightarrow \\cos \\omega \\tau  = {{A - a} \\over A} \\Rightarrow \\,\\,\\cos \\omega \\tau  = {1 \\over 2}$$\n<br><br>or, $${{2\\pi } \\over T}\\tau  = {\\pi  \\over 3} \\Rightarrow \\,\\,\\,T - 6\\,\\tau $$ ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l224gt0q",
@@ -1730,7 +1818,8 @@
     "difficulty": "medium",
     "solution": "<p>Since, the block starts executing simple harmonic motion from extreme position, we have</p>\n<p>$$x = a\\cos \\omega t$$</p>\n<p>At 1 s, we have</p>\n<p>$$x = 0.2\\cos \\left( {{\\pi  \\over 3}} \\right) = 0.1\\,m$$</p>\n<p>That is, the block is at a distance 5.1 $$-$$ 0.10 = 5 m from O, which is the range of the bebble as well. Now,</p>\n<p>$$R = {{{v^2}\\sin 2\\alpha } \\over g}$$</p>\n<p>$$S = {{{v^2}\\sin 2(\\pi /4)} \\over {10}}$$</p>\n<p>Therefore, $$v = \\sqrt {50} $$ m/s</p>\n<p><b>Alternate Method :</b></p>\n<p>Since, pebble strikes the oscillating mass after 1 sec., its time of flight is $1 \\mathrm{~s}$</p>\n<p>$$\n\\begin{aligned}\n& 1=\\frac{2 v \\sin 45^{\\circ}}{\\mathrm{g}}=\\frac{\\sqrt{2} v}{10} \\\\\\\\\n& v=\\frac{10}{\\sqrt{2}}=5 \\sqrt{2}=\\sqrt{50} \\mathrm{~m} / \\mathrm{s}\n\\end{aligned}\n$$</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "YgHkasDCKsJtSxFH",
@@ -1751,7 +1840,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<p>We know that, equation for SHM along x-axis is given by $$x = A\\sin (\\omega t + \\phi )$$</p>\n<p>Let mean position for 1st particle is at x = 0</p>\n<p>So, the SHM equation for 1st particle,</p>\n<p>$${x_1} = A\\sin (\\omega t + {\\phi _1})$$</p>\n<p>Now, as the separation between mean positions of both the particle is x$_0$</p>\n<po>So, mean position for 2nd particle is $x=x_0$</p>\n<p>Hence, the SHM equation for 2nd particle,</p>\n<p>$${x_2} = {x_0} + A\\sin (\\omega t + {\\phi _2})$$</p>\n<p>Now, the separation between particles would be</p>\n<p>$$\\left| {{x_2} - {x_1}} \\right| = {x_0} + A\\sin (\\omega t + {\\phi _2}) - A\\sin (\\omega t + {\\phi _1})$$</p>\n<p>$$ = {x_0} + A\\left[ {\\sin (\\omega t + {\\phi _2}) - \\sin (\\omega t + {\\phi _1})} \\right]$$</p>\n<p>We know,</p>\n<p>$$\\sin C - \\sin D = 2\\cos \\left( {{{C + D} \\over 2}} \\right)\\sin \\left( {{{C - D} \\over 2}} \\right)$$</p>\n<p>Hence,</p>\n<p>$$\\left| {{x_2} - {x_1}} \\right| = {x_0} + 2A\\cos \\left( {\\omega t + {{{\\phi _1} + {\\phi _2}} \\over 2}} \\right)\\sin \\left( {{{{\\phi _2} - {\\phi _1}} \\over 2}} \\right)$$</p>\n<p>For maximum separation,</p>\n<p>Let $$\\cos \\left( {\\omega t + {{{\\phi _1} + {\\phi _2}} \\over 2}} \\right) = 1$$</p>\n<p>So, $$\\left| {{x_2} - {x_1}} \\right| = {x_0} + 2A\\sin \\left( {{{{\\phi _2} - {\\phi _1}} \\over 2}} \\right)$$</p>\n<p>Since, $$\\left| {{x_2} - {x_1}} \\right| = {x_0} + A$$ (given)</p>\n<p>So, $${x_0} + A = {x_0} + 2A\\sin \\left( {{{{\\phi _2} - {\\phi _1}} \\over 2}} \\right)$$</p>\n<p>$$ \\Rightarrow \\sin \\left( {{{{\\phi _2} - {\\phi _1}} \\over 2}} \\right) = {1 \\over 2}$$</p>\n<p>$$ \\Rightarrow {{{\\phi _2} - {\\phi _1}} \\over 2} = {\\pi  \\over 6}$$</p>\n<p>$$ \\Rightarrow {\\phi _2} - {\\phi _1} = {\\pi  \\over 3}$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "nc8I9HTKAlvVNXMY",
@@ -1772,7 +1862,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "The net force becomes zero at the mean point. Therefore, linear momentum must be conserved.\n<br><br>$$\\therefore$$ $$M{v_1} = \\left( {M + m} \\right){v_2}$$\n<br><br>$$M{A_1}\\sqrt {{k \\over M}}  = \\left( {M + m} \\right){A_2}\\sqrt {{k \\over {m + M}}} $$\n<br><br>$$\\therefore$$ $$\\left( {V = A\\sqrt {{k \\over M}} } \\right)$$\n<br><br>$${A_1}\\sqrt M  = {A_2}\\sqrt {M + m} $$\n<br>$$\\therefore$$ $${{{A_1}} \\over {{A_2}}} = \\sqrt {{{m + M} \\over M}} $$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "9oh6j3dzviqrVGhd",
@@ -1794,7 +1885,8 @@
     "difficulty": "easy",
     "solution": "<p>The force exerted on charge +Q by the electric field $$\\overrightarrow E $$ is</p>\n<p>$$\\overrightarrow F  = Q\\overrightarrow E $$</p>\n<p>in the direction of $$\\overrightarrow E $$. Since $$\\overrightarrow F $$ is constant, a constant force is added to the applied force. Hence only the mean position will change.</p>\n<p>The frequency will be same.</p>\n<p>As $${v_0} = {1 \\over {2\\pi }}\\sqrt {{k \\over m}} $$ does not depend on the constant external force.</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "fuzbVNxzBoHo0KUO",
@@ -1816,7 +1908,8 @@
     "difficulty": "medium",
     "solution": "<p>Here, $${x_1} = A\\sin \\omega t$$</p>\n<p>$${x_2} = A\\sin \\left( {\\omega t + {{2\\pi } \\over 3}} \\right)$$</p>\n<p>$$\\therefore$$ $${x_1} + {x_2} = A\\sin \\omega t + A\\sin \\left( {\\omega t + {{2\\pi } \\over 3}} \\right)$$</p>\n<p>$$ = A\\sin \\omega t + A\\left[ {\\sin \\omega t\\cos {{2\\pi } \\over 3} + \\cos \\omega t\\sin {{2\\pi } \\over 3}} \\right]$$</p>\n<p>$$ = A\\sin \\omega t + A\\left[ {\\sin \\omega t\\left( { - {1 \\over 2}} \\right) + \\cos \\omega t\\left( {{{\\sqrt 3 } \\over 2}} \\right)} \\right]$$</p>\n<p>$$ = {A \\over 2}\\sin \\omega t + {{\\sqrt 3 } \\over 2}A\\cos \\omega t = A\\left[ {\\sin \\omega t\\cos {\\pi  \\over 3} + \\cos \\omega t\\sin {\\pi  \\over 3}} \\right]$$</p>\n<p>$$ = A\\sin \\left( {\\omega t + {\\pi  \\over 3}} \\right)$$</p>\n<p>$$\\because$$ $${x_1} + {x_2} + {x_3} = 0$$</p>\n<p>$$ \\Rightarrow {x_3} =  - ({x_1} + {x_2}) =  - A\\sin \\left( {\\omega t + {\\pi  \\over 3}} \\right)$$</p>\n<p>$$ = A\\sin \\left( {\\omega t + \\pi  + {\\pi  \\over 3}} \\right)$$</p>\n<p>$${x_3} = A\\sin \\left( {\\omega t + {{4\\pi } \\over 3}} \\right)$$</p>\n<p>$$\\because$$ $${x_3} = B\\sin (\\omega t + \\phi )$$</p>\n\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l4k3ei2s/2b5d51e7-1470-473c-8957-0a8a8516f1ed/77243c40-ef23-11ec-af85-e5c347851f91/file-1l4k3ei2t.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l4k3ei2s/2b5d51e7-1470-473c-8957-0a8a8516f1ed/77243c40-ef23-11ec-af85-e5c347851f91/file-1l4k3ei2t.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2011 Paper 2 Offline Physics - Simple Harmonic Motion Question 25 English Explanation\">\n\n<p>Hence, $$B = A,\\,\\phi  = {{4\\pi } \\over 3}$$</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "1l2kn8ao3",
@@ -1838,7 +1931,8 @@
     "difficulty": "medium",
     "solution": "<p>Let the ball of mass m be thrown up with an initial velocity u. Its velocity v and displacement x are related by v<sup>2</sup> $$-$$ u<sup>2</sup> = $$-$$2gx, where g is the acceleration due to gravity. The momentum (p = mv) is given by</p>\n<p>p<sup>2</sup> = m<sup>2</sup>u<sup>2</sup> $$-$$ 2m<sup>2</sup>gx,</p>\n<p>which gives</p>\n<p>$$p =  \\pm \\sqrt {{m^2}{u^2} - 2{m^2}gx} $$.</p>\n<p>At x = 0, the momentum is mu when the ball starts going up and it becomes $$-$$mu when the ball comes back. At the maximum height, x = u<sup>2</sup>/(2g), the momentum becomes zero.</p>",
     "section": "Sec 2",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "1lfme940e",
@@ -1860,7 +1954,8 @@
     "difficulty": "medium",
     "solution": "<p>The equation of single harmonic motion is $$x = A\\sin \\left( {{{2\\pi } \\over T}t} \\right)$$, where A is amplitude and T is the time period of the motion.</p>\n<p>From the given figure, $$A = 1$$ and $$T = 8$$. Thus,</p>\n<p>$$x = \\sin \\left( {{\\pi  \\over 4}t} \\right)$$</p>\n<p>The acceleration is</p>\n<p>$$a = {{{d^2}x} \\over {d{t^2}}} = {{ - {\\pi ^2}} \\over {16}}\\sin \\left( {{\\pi  \\over 4}t} \\right)$$</p>\n<p>At time $$t = {4 \\over 3}s$$, the acceleration is</p>\n<p>$$a = {{ - {\\pi ^2}} \\over {16}}\\sin \\left( {{\\pi  \\over 4} \\times {4 \\over 3}} \\right) =  - {{\\sqrt 3 } \\over {32}}{\\pi ^2}$$ cm/s$$^2$$</p>",
     "section": "Sec 4",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "62HlH0BFHZTEnXmT",
@@ -1881,7 +1976,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "For an $$SHM,$$ the acceleration $$a =  - {\\omega ^2}x$$ where $${\\omega ^2}$$ is a constant. Therefore $${a \\over x}$$ is a constant. The time period $$T$$ is also constant. Therefore $${{aT} \\over x}$$ is a constant.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lfxfquko",
@@ -1903,7 +1999,8 @@
     "difficulty": "medium",
     "solution": "(A) <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgmta8tu/73f74693-6eb6-4626-9df6-08e32f16c421/d7f6e120-de34-11ed-b429-3ba3fe2b1a93/file-1lgmta8tv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgmta8tu/73f74693-6eb6-4626-9df6-08e32f16c421/d7f6e120-de34-11ed-b429-3ba3fe2b1a93/file-1lgmta8tv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 2 Offline Physics - Simple Harmonic Motion Question 8 English Explanation 1\"><p></p>\n<p>Potential energy at point A. U$$_\\mathrm{A}$$ = 0,</p>\n<p>Kinetic Energy K$$_\\mathrm{A}$$ = maximum</p>\n<p>Potential energy at point B, U<sub>B</sub> = maximum,</p>\n<p>K<sub>B</sub> = 0</p>\n<p>The graph of potential energy as function of\ndisplacement of a simple pendulum will be parabolic graph \nas given in option p. Hence (A) $$ \\to $$ (P). The choice (S) is also \ncorrect if the mean position of the pendulum is at the origin. \nHence (A) $$ \\to $$ (P), (S).\n</p>\n<p>(P) <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgmtcke5/70f08074-051c-4116-a38b-56f5f6e8f5f5/1883fed0-de35-11ed-b429-3ba3fe2b1a93/file-1lgmtcke6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgmtcke5/70f08074-051c-4116-a38b-56f5f6e8f5f5/1883fed0-de35-11ed-b429-3ba3fe2b1a93/file-1lgmtcke6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 2 Offline Physics - Simple Harmonic Motion Question 8 English Explanation 2\"></p>\n<p>(S) <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgmsy2ur/f65192b3-fde2-433f-9a92-9ac4a22999c0/85a3db40-de33-11ed-b429-3ba3fe2b1a93/file-1lgmsy2us.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgmsy2ur/f65192b3-fde2-433f-9a92-9ac4a22999c0/85a3db40-de33-11ed-b429-3ba3fe2b1a93/file-1lgmsy2us.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 2 Offline Physics - Simple Harmonic Motion Question 8 English Explanation 3\"></p>\n<p>(B) <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgmtduzz/a2fb4d9b-b904-4aae-b27d-b10459365df0/3c849bf0-de35-11ed-b429-3ba3fe2b1a93/file-1lgmtdv00.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgmtduzz/a2fb4d9b-b904-4aae-b27d-b10459365df0/3c849bf0-de35-11ed-b429-3ba3fe2b1a93/file-1lgmtdv00.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 2 Offline Physics - Simple Harmonic Motion Question 8 English Explanation 4\"></p>\n<p>Slope of displacement time graph gives velocity.</p>\n<p>$$\\therefore$$ $$v = {{ds} \\over {dt}}$$</p>\n<p>If $$\\overrightarrow a  = 0$$ or constant</p>\n<p>$$v = u + at$$</p>\n<p>$$v = 0 + at$$</p>\n<p>$$\\therefore$$ $$a = v/t$$</p>\n<p>$$a = $$ constant</p>\n<p>(S) <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgmsy2ur/f65192b3-fde2-433f-9a92-9ac4a22999c0/85a3db40-de33-11ed-b429-3ba3fe2b1a93/file-1lgmsy2us.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgmsy2ur/f65192b3-fde2-433f-9a92-9ac4a22999c0/85a3db40-de33-11ed-b429-3ba3fe2b1a93/file-1lgmsy2us.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 2 Offline Physics - Simple Harmonic Motion Question 8 English Explanation 5\"></p>\n<p>$$\n\\begin{aligned}\n&amp; \\text { (C) } \\quad R=\\frac{v^2 \\sin 2 \\theta}{g} \\\\\n&amp; \\therefore \\quad R \\propto v^2 \\rightarrow \\operatorname{option}(\\mathrm{S})\n\\end{aligned}\n$$</p>\n<p>(D) $$T = 2\\pi \\sqrt {{l \\over g}} $$</p>\n<p>$$\\therefore$$ $$T \\propto \\sqrt l $$</p>\n<p>$${T^2} \\propto l$$ is a straight line</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lgmswewr/7ecea60c-951d-4b5d-8b84-40514a398208/575574b0-de33-11ed-b429-3ba3fe2b1a93/file-1lgmswews.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lgmswewr/7ecea60c-951d-4b5d-8b84-40514a398208/575574b0-de33-11ed-b429-3ba3fe2b1a93/file-1lgmswews.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"IIT-JEE 2008 Paper 2 Offline Physics - Simple Harmonic Motion Question 8 English Explanation 6\"></p>",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "2PhZcY8YjfpiVK8t",
@@ -1924,7 +2021,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "Here, $$x = 2 \\times {10^{ - 2}}\\cos \\,\\pi \\,t$$\n<br><br>$$\\therefore$$ $$v = {{dx} \\over {dt}} = 2 \\times {10^{ - 2}}\\,\\pi \\sin \\pi t$$\n<br><br>For the first time, the speed to be maximum, \n<br><br>$$\\sin \\pi t = 1$$ or, $$\\sin \\pi t = \\sin {\\pi  \\over 2}$$\n<br><br>$$ \\Rightarrow \\pi t = {\\pi  \\over 2}\\,\\,\\,$$ or, $$\\,\\,\\,\\,t = {1 \\over 2} = 0.5\\,\\sec .$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "F3Vl3EIFeVzopM9K",
@@ -1945,7 +2043,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "The two springs are in parallel.\n<br><br>$$f = {1 \\over {2\\pi }}\\sqrt {{{{K_1} + {K_2}} \\over m}} \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( i \\right)$$\n<br><br>$$f' = {1 \\over {2\\pi }}\\sqrt {{{4{K_1} + 4{K_2}} \\over m}} $$\n<br><br>$$ = {1 \\over {2\\pi }}\\sqrt {{{4\\left( {{K_1} + 4{K_2}} \\right)} \\over m}} $$\n<br><br>$$ = 2\\left( {{1 \\over {2\\pi }}\\sqrt {{{{K_1} + {K_2}} \\over m}} } \\right)$$\n<br><br>$$ = 2f\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ from eqn. $$\\left( i \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "LzZpukGgNRPtGq8G",
@@ -1966,7 +2065,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "Here,\n<br><br>$$x = {x_0}\\cos \\left( {\\omega t - \\pi /4} \\right)$$\n<br><br>$$\\therefore$$ Velocity, $$v = {{dx} \\over {dt}} =  - {x_0}\\omega \\sin \\left( {\\omega t - {\\pi  \\over 4}} \\right)$$\n<br><br>Acceleration,\n<br><br>$$a = {{dv} \\over {dt}} =  - {x_0}{\\omega ^2}\\cos \\left( {\\omega t - {\\pi  \\over 4}} \\right)$$\n<br><br>$$ = {x_0}{\\omega ^2}\\cos \\left[ {\\pi  + \\left( {\\omega t - {\\pi  \\over 4}} \\right)} \\right]$$\n<br><br>$$ = {x_0}{\\omega ^2}\\cos \\left( {\\omega t + {{3\\pi } \\over 4}} \\right)$$ $$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( 1 \\right)$$\n<br><br>Acceleration, $$a = A\\cos \\left( {\\omega t + \\delta } \\right)$$ $$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( 2 \\right)$$\n<br><br>Comparing the two equations, we get \n<br><br>$$A = {x_0}{\\omega ^2}$$ and $$\\delta  = {{3\\pi } \\over 4}.$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "pByDQlRirgmfmwsq",
@@ -1987,7 +2087,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "<b>KEY CONCEPT :</b> The instantaneous kinetic energy of a particle executing $$S.H.M.$$ is given by\n<br><br>$$K = {1 \\over 2}m{a^2}{\\omega ^2}{\\sin ^2}\\omega t$$\n<br><br>$$\\therefore$$ average $$K.E. =  &lt; K &gt;  =  &lt; {1 \\over 2}m{\\omega ^2}{a^2}{\\sin ^2}\\omega t &gt; $$\n<br><br>$$ = {1 \\over 2}m\\omega {}^2{a^2} &lt; {\\sin ^2}\\omega t &gt; $$\n<br><br>$$ = {1 \\over 2}m{\\omega ^2}{a^2}\\left( {{1 \\over 2}} \\right)$$\n<br><br>$$\\left( \\, \\right.$$ as $$\\left. { &lt; {{\\sin }^2}\\theta  &gt;  = {1 \\over 2}} \\right)$$\n<br><br>$$ = {1 \\over 4}m{\\omega ^2}{a^2} = {1 \\over 4}m{a^2}{\\left( {2\\pi v} \\right)^2}$$\n<br><br>$$\\left( \\, \\right.$$ $$\\left. {\\omega  = 2\\pi v} \\right)$$\n<br><br>or,  $$\\,\\,\\,\\,\\, &lt; K &gt;  = {\\pi ^2}m{a^2}{v^2}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "mguomzjj",
@@ -2009,7 +2110,8 @@
     "difficulty": "Medium",
     "solution": "<p>$$ \\begin{aligned} & x=A \\sin ^2 \\omega t+B \\cos ^2 \\omega t+C \\sin \\omega t \\cos \\omega t \\\\ & x=\\frac{A}{2}(1-\\cos 2 \\omega t)+\\frac{B}{2}(1+\\cos 2 \\omega t)+\\frac{C}{2} \\sin 2 \\omega t \\\\ & x=\\frac{A+B}{2}+\\left(\\frac{B}{2}-\\frac{A}{2}\\right)+\\cos 2 \\omega t+\\frac{C}{2} \\sin 2 \\omega t \\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(i)\\end{aligned} $$</p>\n<p>$$ \\begin{aligned} & x=\\frac{A+B}{2} \\sqrt{\\left(\\frac{B-A}{2}\\right)^2+\\left(\\frac{C}{2}\\right)^2} \\sin (2 \\omega t+\\alpha) \\\\ & \\qquad \\tan \\alpha=\\frac{B-A}{C} \\\\ & x-\\frac{A+B}{2}=\\sqrt{\\left(\\frac{B-A}{2}\\right)^2+\\left(\\frac{C}{2}\\right)^2} \\sin (2 \\omega t+\\alpha) \\\\ & x-x_0=a_0 \\sin (\\omega t+\\alpha) \\\\ & \\text { for } A=-B, C=2 B . \\\\ & \\text { Amplitude } a_0=\\sqrt{\\left(\\frac{B-A}{2}\\right)^2+\\left(\\frac{C}{2}\\right)^2}=\\sqrt{2} B \\end{aligned} $$</p>\n<p>From (i)</p>\n<p>(A) For $\\mathrm{A}=\\mathrm{B}=0, x=\\frac{\\mathrm{C}}{2} \\quad \\sin 2 \\omega t(\\mathrm{SHM})$</p>\n<p>(B) For $\\mathrm{A}=-\\mathrm{B}, \\mathrm{C}=2 \\mathrm{~B}$</p>\n<p>$$ \\begin{aligned} & x=\\frac{-\\mathrm{B}+\\mathrm{B}}{2}+\\left(+\\frac{\\mathrm{B}}{2}+\\frac{\\mathrm{B}}{2}\\right) \\cos 2 \\omega t+\\frac{2 \\mathrm{~B}}{2} \\sin 2 \\omega t \\\\ & x=\\cos 2 \\omega t+\\mathrm{B} \\sin 2 \\omega t \\\\ & x=\\sqrt{2} \\mathrm{~B} \\sin \\left(2 \\omega t+\\frac{\\pi}{4}\\right)(\\mathrm{SHM}) \\end{aligned} $$</p>\n<p>Resultant amplitude $=\\sqrt{2}$</p>\n<p>(C) For $\\mathrm{A}=\\mathrm{B}, \\mathrm{C}=0$,</p>\n<p>$$ \\begin{aligned} x & =\\frac{A+A}{2}+\\left(\\frac{A}{2}-\\frac{A}{2}\\right) \\cos 2 \\omega t+0 \\\\ & =\\frac{A+A}{2}=A(\\text { no SHM }) \\end{aligned} $$</p>\n<p>$$ \\begin{aligned} & \\text { (D) } \\mathrm{A}=\\mathrm{B}, \\mathrm{C}=2 \\mathrm{~B} \\\\ & \\begin{aligned} x=\\frac{\\mathrm{A}+\\mathrm{A}}{2}+\\left(\\frac{\\mathrm{A}}{2}-\\frac{\\mathrm{A}}{2}\\right) \\cos 2 \\omega t+\\frac{2 \\mathrm{~B}}{2} \\sin 2 \\omega t & \\\\  =\\mathrm{A}+\\mathrm{B} \\sin 2 \\omega t(\\mathrm{OR}) \\\\ x=\\mathrm{B}+\\mathrm{B} \\sin 2 \\omega t(\\mathrm{SHM}),  \\text { Amplitude }=|\\mathrm{B}| \\end{aligned} \\end{aligned} $$</p>",
     "section": "Sec 3",
-    "instruction": ""
+    "instruction": "",
+    "type": "SCQ"
   },
   {
     "id": "CtaC83vmguYf3d6j",
@@ -2030,7 +2132,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "Coin $$A$$ is moving in simple harmonic motion in vertical direction. Now we are assuming coin will leave contact with the platform when platform is at a distance of $$x$$ from the mean position which is also called amplitude.\n<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/Zb4ajf7bKuWUrM5hu/qptedzBVPpk02TsuAEokb6WBDmF4D/VLPnPxMehKFmQhcJfCMZoN/image.svg\" loading=\"lazy\" alt=\"AIEEE 2006 Physics - Simple Harmonic Motion Question 180 English Explanation\"> \n<br>At distance $$x$$ the force acting on the coin is\n<br><br>$$mg - N = m{\\omega ^2}x$$\n<br>\n<br>For coin to leave contact $$N=0$$ \n<br><br>$$ \\Rightarrow mg = m{\\omega ^2}x \\Rightarrow x = {g \\over {{\\omega ^2}}}$$\n<br><br>$$\\therefore$$ Option (B) is correct.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "J8uRzrAhyPfJjsch",
@@ -2051,7 +2154,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "Maximum velocity, \n<br><br>$${v_{\\max }} = a\\omega ,\\,\\,\\,\\,\\,{v_{\\max }} = a \\times {{2\\pi } \\over T}$$\n<br><br>$$ \\Rightarrow T = {{2\\pi a} \\over {{v_{\\max }}}} = {{2 \\times 3.14 \\times 7 \\times {{10}^{ - 3}}} \\over {4.4}} \\approx 0.01\\,s$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "ebtUyonKOJW3vNQj",
@@ -2072,7 +2176,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$$K.E.\\,$$ of a body undergoing $$SHM$$ is given by,\n<br><br>$$K.E. = {1 \\over 2}m{a^2}{\\omega ^2}{\\cos ^2}\\,\\omega t,$$\n<br><br>$$T.E. = {1 \\over 2}m{a^2}{\\omega ^2}$$\n<br><br>Given $$K.E.=0.75T.E.$$\n<br><br>$$ \\Rightarrow 0.75 = {\\cos ^2}\\omega t \\Rightarrow \\omega t = {\\pi  \\over 6}$$\n<br><br>$$ \\Rightarrow t = {\\pi  \\over {6 \\times \\omega }} \\Rightarrow t = {{\\pi  \\times 2} \\over {6 \\times 2\\pi }} \\Rightarrow t = {1 \\over 6}s$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "6uyRBI1wBMOJBn9Y",
@@ -2093,7 +2198,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$${{{d^2}x} \\over {d{t^2}}} =  - \\alpha x =  - {\\omega ^2}x$$\n<br><br>$$ \\Rightarrow \\omega  = \\sqrt \\alpha  $$ $$\\,\\,\\,\\,$$ or $$\\,\\,\\,\\,$$ $$T = {{2\\pi } \\over \\omega } = {{2\\pi } \\over {\\sqrt \\alpha  }}$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "SbAnufkqtDJhxdk1",
@@ -2114,7 +2220,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "$${v_1} = {{d{y_1}} \\over {dt}} = 0.1 \\times 100\\pi \\cos \\left( {100\\pi t + {\\pi  \\over 3}} \\right)$$\n<br><br>$${v_2} = {{d{y_2}} \\over {dt}} =  - 0.1\\pi sin\\pi t = 0.1\\pi cos\\left( {\\pi t + {\\pi  \\over 2}} \\right)$$\n<br><br>$$\\therefore$$ Phase diff. $$ = {\\phi _1} - {\\phi _2} = {\\pi  \\over 3} - {\\pi  \\over 2} = {{2\\pi  - 3\\pi } \\over 6} = {\\pi  \\over 6}$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "UyF3fOCwppXJBgLo",
@@ -2135,7 +2242,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "medium",
     "solution": "y =  sin<sup>2</sup>$$\\omega $$t\n<br><br>= $${{1 - \\cos 2\\omega t} \\over 2}$$\n<br><br>$$ = {1 \\over 2} - {1 \\over 2}\\cos \\,2\\omega t$$ \n<br><br>$$ \\therefore $$ Angular speed = 2$$\\omega $$\n<br><br>$$ \\therefore $$ Period (T) = $${{2\\pi } \\over {angular\\,speed}}$$ = $${{2\\pi } \\over {2\\omega }}$$ = $${\\pi  \\over \\omega }$$\n<br><br>So it is a periodic function.\n<br><br>As y =  sin<sup>2</sup>$$\\omega $$t\n<br><br>$${{dy} \\over {dt}}$$ = 2$$\\omega $$sin$$\\omega $$t cos$$\\omega $$t = $$\\omega $$ sin2$$\\omega $$t\n<br><br>$${{{d^2}y} \\over {d{t^2}}}$$ = $$2{\\omega ^2}$$ cos2$$\\omega $$t which is not proportional to -y.\n<br><br>Hence it is is not SHM.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "06Xs52fuhsUOl4iW",
@@ -2156,7 +2264,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "At any instant the total energy is \n<br><br>$${1 \\over 2}k{A^2} = \\,\\,$$ constant, where $$A=$$ amplitude\n<br><br>hence total energy is independent of $$x.$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "8prRwQnTYiNrCcsA",
@@ -2177,7 +2286,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$$x = 4\\left( {\\cos \\pi t + \\sin \\pi t} \\right)$$\n<br><br>$$ = \\sqrt 2  \\times 4\\left( {{{\\sin \\pi t} \\over {\\sqrt 2 }} + {{\\cos \\pi t} \\over {\\sqrt 2 }}} \\right)$$\n<br><br>$$x = 4\\sqrt 2 \\sin \\left( {\\pi t + {{45}^ \\circ }} \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "nj1E14ufjeMxKVxU",
@@ -2198,7 +2308,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$$K.E. = {1 \\over 2}m{\\omega ^2}\\left( {{a^2} - {x^2}} \\right)$$\n<br><br>When $$x=0,$$ $$K.E$$ is maximum and is equal to $${1 \\over 2}m{\\omega ^2}{a^2}.$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "4nLFC4HQ4tyheKRV",
@@ -2219,7 +2330,8 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "$$K.E = {1 \\over 2}k\\left( {{A^2} - {x^2}} \\right);\\,\\,\\,U = {1 \\over 2}k{x^2}$$\n<br><br/><b>At the mean position</b> $$x=0$$ \n<br/><br>$$\\therefore$$  $$K.E. = {1 \\over 2}k{A^2} = $$ Maximum and $$U=0$$ ",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "U23891NbmcviFxD9",
@@ -2240,6 +2352,7 @@
     "topic": "simple-harmonic-motion",
     "difficulty": "easy",
     "solution": "Let the spring constant of the original spring be $$k.$$\n<br><br>Then its time period $$T = 2\\pi \\sqrt {{m \\over k}} $$ where $$m$$ is the mass of oscillating body.\n<br>When the spring is cut into $$n$$ equal parts, the spring constant of one part becomes $$nk.$$ Therefore the new time period,\n<br><br>$$T' = 2\\pi \\sqrt {{m \\over {nk}}}  = {T \\over {\\sqrt n }}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   }
 ]

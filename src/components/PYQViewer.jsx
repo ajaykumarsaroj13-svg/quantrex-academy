@@ -14,6 +14,8 @@ export default function PYQViewer({ pyqData, topic, onClose, isLight }) {
   const [fontSize, setFontSize] = useState(1.15); // Default font size in rem
   const [sortOrder, setSortOrder] = useState('new_to_old');
   const [examLevel, setExamLevel] = useState('All Exams');
+  const [questionType, setQuestionType] = useState('All Types');
+  const [filterYear, setFilterYear] = useState('All Years');
   const [showRestoreModal, setShowRestoreModal] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false);
@@ -35,6 +37,21 @@ export default function PYQViewer({ pyqData, topic, onClose, isLight }) {
     if (examLevel !== 'All Exams') {
       filtered = filtered.filter(q => q.exam === examLevel);
     }
+    if (questionType !== 'All Types') {
+      filtered = filtered.filter(q => {
+        const t = q.type || q.questionType || 'SCQ';
+        const isMCQM = t === 'MULTI_CORRECT' || t === 'MCQM' || t === 'multi_correct' || t === 'multiple_correct' || t === 'mcqm' || (Array.isArray(q.correctOptionIndex) && q.correctOptionIndex.length > 1);
+        const isNum = t === 'NUMERICAL' || t === 'numerical' || q.answerType === 'numerical';
+        const isSubj = t === 'SUBJECTIVE' || t === 'subjective';
+        const isFIB = t === 'FIB' || t === 'fill-blanks';
+        const isTF = t === 'T/F' || t === 'TRUE_FALSE' || t === 'true_false' || t === 't/f';
+        const normalizedType = isMCQM ? 'MCQ Multiple Choice' : (isSubj ? 'Subjective' : (isNum ? 'Numerical' : (isFIB ? 'Fill in the Blanks' : (isTF ? 'True or False' : 'MCQ Single Choice'))));
+        return normalizedType === questionType;
+      });
+    }
+    if (filterYear !== 'All Years') {
+      filtered = filtered.filter(q => String(q.year) === filterYear);
+    }
     
     return filtered.sort((a, b) => {
       const yearA = parseInt(a.year) || 0;
@@ -50,6 +67,15 @@ export default function PYQViewer({ pyqData, topic, onClose, isLight }) {
   // Available exam levels
   const availableExams = useMemo(() => {
     return ['All Exams', ...new Set(rawQuestions.map(q => q.exam).filter(Boolean))];
+  }, [rawQuestions]);
+
+  // Available years
+  const availableYears = useMemo(() => {
+    return ['All Years', ...new Set(rawQuestions.map(q => String(q.year)).filter(y => y && y !== 'undefined'))].sort((a, b) => {
+      if (a === 'All Years') return -1;
+      if (b === 'All Years') return 1;
+      return parseInt(b) - parseInt(a);
+    });
   }, [rawQuestions]);
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -263,6 +289,40 @@ export default function PYQViewer({ pyqData, topic, onClose, isLight }) {
              </div>
 
              <div className="flex items-center gap-2">
+               <span className={`text-sm font-bold ${isLight ? 'text-gray-600' : 'text-gray-400'}`}>Type:</span>
+               <select 
+                 value={questionType} 
+                 onChange={(e) => {
+                   setQuestionType(e.target.value);
+                   setCurrentQuestionIndex(0); // reset on filter change
+                 }}
+                 className={`text-sm font-bold px-3 py-1.5 rounded outline-none border ${isLight ? 'bg-white border-gray-300 text-gray-800' : 'bg-obsidian border-white/20 text-gray-200'}`}
+               >
+                 <option value="All Types">All Types</option>
+                 <option value="MCQ Single Choice">MCQ Single Choice</option>
+                 <option value="MCQ Multiple Choice">MCQ Multiple Choice</option>
+                 <option value="Numerical">Numerical</option>
+                 <option value="Fill in the Blanks">Fill in the Blanks</option>
+                 <option value="True or False">True or False</option>
+                 <option value="Subjective">Subjective</option>
+               </select>
+             </div>
+
+             <div className="flex items-center gap-2">
+               <span className={`text-sm font-bold ${isLight ? 'text-gray-600' : 'text-gray-400'}`}>Year:</span>
+               <select 
+                 value={filterYear} 
+                 onChange={(e) => {
+                   setFilterYear(e.target.value);
+                   setCurrentQuestionIndex(0);
+                 }}
+                 className={`text-sm font-bold px-3 py-1.5 rounded outline-none border ${isLight ? 'bg-white border-gray-300 text-gray-800' : 'bg-obsidian border-white/20 text-gray-200'}`}
+               >
+                 {availableYears.map(y => <option key={y} value={y}>{y}</option>)}
+               </select>
+             </div>
+
+             <div className="flex items-center gap-2">
                <span className={`text-sm font-bold ${isLight ? 'text-gray-600' : 'text-gray-400'}`}>Sort by:</span>
                <select 
                  value={sortOrder} 
@@ -296,7 +356,13 @@ export default function PYQViewer({ pyqData, topic, onClose, isLight }) {
               {currentQuestion.shift && <div className={`font-medium ${isLight ? 'text-blue-700' : 'text-blue-300'}`}>{currentQuestion.shift}</div>}
             </div>
             <span className={`mt-3 md:mt-0 inline-block px-4 py-1.5 text-sm font-bold rounded-full ${isLight ? 'bg-blue-200 text-blue-800' : 'bg-blue-800/50 text-blue-200 border border-blue-500/30'}`}>
-              {currentQuestion.type || 'Single Choice'}
+              {(() => {
+                const t = currentQuestion.type || currentQuestion.questionType || 'SCQ';
+                const isMCQM = t === 'MULTI_CORRECT' || t === 'MCQM' || t === 'multi_correct' || t === 'multiple_correct' || t === 'mcqm' || (Array.isArray(currentQuestion.correctOptionIndex) && currentQuestion.correctOptionIndex.length > 1);
+                const isNum = t === 'NUMERICAL' || t === 'numerical' || currentQuestion.answerType === 'numerical';
+                const isSubj = t === 'SUBJECTIVE' || t === 'subjective';
+                return isMCQM ? 'MCQM' : (isSubj ? 'SUBJECTIVE' : (isNum ? 'NUMERICAL' : 'SCQ'));
+              })()}
             </span>
           </div>
 

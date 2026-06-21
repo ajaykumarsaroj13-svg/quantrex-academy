@@ -1,37 +1,34 @@
-const https = require('https');
 
-https.get('https://questions.examside.com/past-years/jee/jee-main/mathematics/sets-relations-and-functions', res => {
-    let data = '';
-    res.on('data', c => data += c);
-    res.on('end', () => {
-        // Regex to find all hrefs in the html
-        const regex = /href="([^"]+\/question\/[^"]+)"/g;
-        let match;
-        const urls = [];
-        while((match = regex.exec(data)) !== null) {
-            urls.push(match[1]);
-        }
-        console.log(`Found ${urls.length} URLs using HTML href match.`);
-        if (urls.length > 0) {
-            console.log(urls.slice(0, 3));
-        }
+const fs = require("fs");
+const path = require("path");
 
-        // What about JSON parsing?
-        const startStr = '<script type="application/json" data-sveltekit-fetched data-url="">';
-        const s = data.indexOf(startStr);
-        if (s !== -1) {
-            const start = s + startStr.length;
-            const end = data.indexOf('</script>', start);
-            const jsonStr = data.substring(start, end);
-            const rx2 = /"url":"([^"]+\/question\/[^"]+)"/g;
-            const urls2 = [];
-            while((match = rx2.exec(jsonStr)) !== null) {
-                urls2.push(match[1]);
-            }
-            console.log(`Found ${urls2.length} URLs using JSON match.`);
-            if (urls2.length > 0) {
-                console.log(urls2.slice(0, 3));
-            }
-        }
-    });
-});
+const dir = "public/data/questions";
+const files = fs.readdirSync(dir).filter(f => f.startsWith("adv-"));
+
+let count = 0;
+for (const file of files) {
+  const data = JSON.parse(fs.readFileSync(path.join(dir, file), "utf8"));
+  for (const q of data) {
+    let text = "";
+    if (q.question && q.question.en && q.question.en.content) text = q.question.en.content;
+    else if (typeof q.question === "string") text = q.question;
+    
+    // Check if it is marked as SCQ but text implies multiple correct
+    if (q.type === "SCQ" || q.type === "mcq") {
+       if (text.toLowerCase().includes("is/are") || text.toLowerCase().includes("which of the following are") || text.toLowerCase().includes("correct options")) {
+          // See if there is any indication of multi correct
+          let hasMulti = false;
+          if (q.correctAnswer && String(q.correctAnswer).includes(",")) hasMulti = true;
+          if (q.question && q.question.en && q.question.en.correct_options && q.question.en.correct_options.length > 1) hasMulti = true;
+          if (q.correctOptionsArray && q.correctOptionsArray.length > 1) hasMulti = true;
+          
+          if (!hasMulti) {
+              console.log(file, q.question_id, "Type:", q.type, "Correct:", q.correctAnswer || (q.question && q.question.en ? q.question.en.correct_options : null));
+              count++;
+          }
+       }
+    }
+  }
+}
+console.log("Total suspicious:", count);
+

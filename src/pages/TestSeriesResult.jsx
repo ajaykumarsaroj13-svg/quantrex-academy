@@ -20,10 +20,10 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
   useEffect(() => {
     if (!result?.testId) return;
     setLoading(true);
-    fetch(`${API_BASE}/api/test-series/${result.testId}`)
+    fetch(`/data/tests/${result.testId}.json?v=3`)
       .then((r) => r.json())
       .then((data) => {
-        if (!data.error) {
+        if (data) {
           setTestDetails(data);
         }
         setLoading(false);
@@ -81,8 +81,8 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
   const evaluatedQuestions = originalQuestions.map((q) => {
     // If backend submitted
     if (result.questionResults) {
-      const evalResult = result.questionResults.find((qr) => qr.questionNumber === q.questionNumber);
-      const isAttempted = evalResult?.userAnswer !== undefined && evalResult?.userAnswer !== -1 && evalResult?.userAnswer !== '';
+      const evalResult = result.questionResults.find((qr) => qr.questionId === q._id);
+      const isAttempted = evalResult?.isAttempted || false;
       return {
         ...q,
         userAnswer: evalResult?.userAnswer,
@@ -91,15 +91,66 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
         isAttempted,
       };
     }
-    // If local fallback
-    const ua = answersMap[q.questionNumber];
-    const isAttempted = ua !== undefined && ua !== -1 && ua !== '';
-    const isCorrect = isAttempted && (
-      q.questionType === 'MCQ'
-        ? parseInt(ua) === q.correctOption
-        : String(ua).trim() === String(q.correctAnswer || '').trim()
+
+    // Local evaluation
+    const ua = answers[q.questionNumber || q._id];
+    let isAttempted = ua !== undefined && ua !== '';
+    if (Array.isArray(ua)) isAttempted = ua.length > 0;
+
+    const isMultiCorrect = q.questionType !== 'NUMERICAL' && (
+        q.questionType === 'MULTI_CORRECT' || q.questionType === 'MCQM' || 
+        q.questionType === 'multi_correct' || 
+        q.questionType === 'multiple_correct' || 
+        q.questionType === 'MCQM' || 
+        q.questionType === 'mcqm' || 
+        q.questionType === 'MCQ (Multiple Correct)' || 
+        q.questionType === 'Multiple Correct' || 
+        (q.correctOptionsArray && q.correctOptionsArray.length > 0) || 
+        q.isMultiCorrect || 
+        (q.question?.en?.correct_options && q.question.en.correct_options.length > 1) ||
+        (q.correctAnswer && (String(q.correctAnswer).includes(',') || String(q.correctAnswer).toLowerCase().includes('and') || String(q.correctAnswer).includes('&'))) ||
+        Array.isArray(q.correctOptionIndex) ||
+        (q.question?.en?.content && (
+           q.question.en.content.toLowerCase().includes('one or more') ||
+           q.question.en.content.toLowerCase().includes('multiple correct')
+        )) ||
+        (typeof q.question === 'string' && (
+           q.question.toLowerCase().includes('one or more') ||
+           q.question.toLowerCase().includes('multiple correct')
+        ))
     );
-    const marksAwarded = isCorrect ? q.marks : (isAttempted && q.questionType === 'MCQ' ? q.negativeMarks : 0);
+
+    let isCorrect = false;
+    let actualCorrectArr = [];
+
+    if (isAttempted) {
+      if (q.questionType === 'NUMERICAL') {
+        isCorrect = String(ua).trim() === String(q.correctAnswer || '').trim();
+      } else if (isMultiCorrect) {
+         if (Array.isArray(q.correctOptionIndex)) {
+            actualCorrectArr = [...q.correctOptionIndex].sort((a,b)=>a-b);
+         } else if (q.correctAnswer && (String(q.correctAnswer).includes(',') || String(q.correctAnswer).toLowerCase().includes('and') || String(q.correctAnswer).includes('&'))) {
+            const cleaned = String(q.correctAnswer).replace(/[()]/g, '').replace(/and/ig, ',').replace(/&/g, ',');
+            actualCorrectArr = cleaned.split(',').map(s => {
+              const t = s.trim();
+              const p = parseInt(t, 10);
+              if (!isNaN(p)) return p;
+              const c = t.toUpperCase().charCodeAt(0);
+              if (c >= 65 && c <= 90) return c - 65;
+              return NaN;
+            }).filter(n => !isNaN(n)).sort((a,b)=>a-b);
+         } else if (q.correctOption !== undefined) {
+            actualCorrectArr = [parseInt(q.correctOption)];
+         }
+         
+         const userArr = Array.isArray(ua) ? [...ua].sort((a,b)=>a-b) : [parseInt(ua)];
+         isCorrect = JSON.stringify(userArr) === JSON.stringify(actualCorrectArr);
+      } else {
+         isCorrect = parseInt(ua) === q.correctOption;
+      }
+    }
+
+    const marksAwarded = isCorrect ? q.marks : (isAttempted && q.questionType !== 'NUMERICAL' ? q.negativeMarks : 0);
 
     return {
       ...q,
@@ -107,6 +158,8 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
       isCorrect,
       marksAwarded,
       isAttempted,
+      isMultiCorrect,
+      actualCorrectArr
     };
   });
 
@@ -450,18 +503,20 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
           display: flex;
           align-items: center;
           gap: 16px;
+            position: relative;
+            border: 2px solid rgba(255,255,255,0.04);
         }
         .tsr-opt-card.correct {
           background: rgba(6, 95, 70, 0.15);
-          border-color: rgba(52, 211, 153, 0.3);
+          border-color: #22c55e;
         }
         .tsr-opt-card.user-selected {
           background: rgba(127, 29, 29, 0.15);
-          border-color: rgba(248, 113, 113, 0.3);
+          border-color: #ef4444;
         }
         .tsr-opt-card.correct.user-selected {
           background: rgba(6, 95, 70, 0.2);
-          border-color: rgba(52, 211, 153, 0.4);
+          border-color: #22c55e;
         }
         
         .tsr-opt-letter {
@@ -779,28 +834,45 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                     </div>
                   ) : (
                     <div className="tsr-opts-container">
-                      {(activeQuestion.options || []).map((opt, oIdx) => {
-                        const isCorrectOption = activeQuestion.correctOption === oIdx;
-                        const isUserOption = activeQuestion.userAnswer === oIdx;
-                        
-                        let cardClass = '';
-                        if (isCorrectOption) cardClass = 'correct';
-                        else if (isUserOption) cardClass = 'user-selected';
+                                              {(activeQuestion.options || []).map((opt, oIdx) => {
+                          const isMultiCorrect = activeQuestion.isMultiCorrect;
+                          const correctArr = activeQuestion.actualCorrectArr || [];
+                          const userArr = Array.isArray(activeQuestion.userAnswer) ? activeQuestion.userAnswer : [parseInt(activeQuestion.userAnswer)];
+                          
+                          const isCorrectOption = isMultiCorrect ? correctArr.includes(oIdx) : activeQuestion.correctOption === oIdx;
+                          const isUserOption = isMultiCorrect ? userArr.includes(oIdx) : activeQuestion.userAnswer === oIdx;
+                          
+                          let cardClass = "";
+                          if (isCorrectOption && isUserOption) cardClass = "correct user-selected";
+                          else if (isCorrectOption && !isUserOption) cardClass = "correct";
+                          else if (!isCorrectOption && isUserOption) cardClass = "user-selected user-wrong";
 
-                        return (
-                          <div key={oIdx} className={`tsr-opt-card ${cardClass}`}>
-                            <span className="tsr-opt-letter">{String.fromCharCode(65 + oIdx)}</span>
-                            <span className="tex2jax_process" dangerouslySetInnerHTML={{ __html: opt }} />
-                            
-                            {isCorrectOption && (
-                              <span className="tsr-opt-status-badge correct">Correct Option</span>
-                            )}
-                            {!isCorrectOption && isUserOption && (
-                              <span className="tsr-opt-status-badge user-wrong">Your Marked Option</span>
-                            )}
-                          </div>
-                        );
-                      })}
+                          let badgeText = null;
+                          let badgeBg = "";
+                          if (isCorrectOption && isUserOption) {
+                            badgeText = "Your answer | Correct answer";
+                            badgeBg = "bg-[#22c55e]";
+                          } else if (isCorrectOption && !isUserOption) {
+                            badgeText = "Correct answer";
+                            badgeBg = "bg-[#22c55e]";
+                          } else if (!isCorrectOption && isUserOption) {
+                            badgeText = "Your answer";
+                            badgeBg = "bg-[#ef4444]";
+                          }
+
+                          return (
+                            <div key={oIdx} className={`tsr-opt-card ${cardClass}`}>
+                              <span className="tsr-opt-letter">{String.fromCharCode(65 + oIdx)}</span>
+                              <span className="tex2jax_process flex-1" dangerouslySetInnerHTML={{ __html: opt }} />
+                              
+                              {badgeText && (
+                                <div className={`absolute -top-[10px] right-6 px-2.5 py-[2px] rounded-md text-[10px] font-bold text-white tracking-wide shadow-md ${badgeBg}`}>
+                                  {badgeText}
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
                     </div>
                   )}
 

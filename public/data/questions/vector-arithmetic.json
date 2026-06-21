@@ -18,7 +18,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "medium",
     "solution": "<p>The acceleration vector $\\vec{a}$ is the total derivative of velocity with respect to time:</p>\n<p>$$\\vec{a} = \\frac{d\\vec{v}}{dt}$$</p>\n<p>The velocity of the particle is given as $\\vec{v} = -x\\hat{i} + 2y\\hat{j} - z\\hat{k}\\ \\mathrm{m/s}$</p>\n<p>The x-component of velocity is $v_x = -x$</p>\n<p>So, the x-component of acceleration is $a_x = \\frac{dv_x}{dt} = \\frac{dv_x}{dx} \\times \\frac{dx}{dt} = v_x\\frac{dv_x}{dx} = (-x)\\frac{d(-x)}{dx} = x$</p>\n<p>The y-component of velocity is $v_y = 2y$</p>\n<p>So, the y-component of acceleration is $a_y = \\frac{dv_y}{dt} = \\frac{dv_y}{dy} \\times \\frac{dy}{dt} = v_y\\frac{dv_y}{dx} = (2y)\\frac{d(2y)}{dx} = (2y)(2) = 4y$</p>\n<p>The z-component of velocity is $v_z = -z$</p>\n<p>So, the z-component of acceleration is $a_z = \\frac{dv_z}{dt} = \\frac{dv_z}{dy} \\times \\frac{dz}{dt} = v_z\\frac{dv_z}{dx} = (-z)\\frac{d(-z)}{dx} = (-z)(-1) = z$</p>\n<p>Thus, the acceleration vector is $\\vec{a} = x\\hat{i} + 4y\\hat{j} + z\\hat{k}$.</p>\n<p>At point $(1,2,4)$:</p>\n<p>$$\\vec{a} = (1)\\hat{i} + 4(2)\\hat{j} + (4)\\hat{k} = \\hat{i} + 8\\hat{j} + 4\\hat{k}$$</p>\n<p>The magnitude $|\\vec{a}|$ is,</p>\n<p>$$|\\vec{a}| = \\sqrt{a_x^2 + a_y^2 + a_z^2}$$</p>\n<p>$$|\\vec{a}| = \\sqrt{1^2 + 8^2 + 4^2} = \\sqrt{1 + 64 + 16} = \\sqrt{81}$$</p>\n<p>$$|\\vec{a}| = 9\\ \\mathrm{m/s^2}$$</p>\n<p>Therefore, the magnitude of acceleration at the given point is $9\\ \\mathrm{m/s^2}$. Therefore, the correct option is (B).</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "lv7v3whh",
@@ -39,7 +40,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "easy",
     "solution": "<p>To find the angle between the vector $$\\vec{Q}$$ and the resultant of $$(2 \\vec{Q}+2 \\vec{P})$$ and $$(2 \\vec{Q}-2 \\vec{P})$$, we first find the resultant vector of $$(2 \\vec{Q}+2 \\vec{P})$$ and $$(2 \\vec{Q}-2 \\vec{P})$$.</p>\n\n<p>The resultant vector of $$(2 \\vec{Q}+2 \\vec{P})$$ and $$(2 \\vec{Q}-2 \\vec{P})$$ can be simply found by adding these two vectors:</p>\n\n$$\n\\text{Resultant} = (2 \\vec{Q}+2 \\vec{P}) + (2 \\vec{Q}-2 \\vec{P}) = 4 \\vec{Q}\n$$\n\n<p>Now, we need to find the angle between the vector $$\\vec{Q}$$ and this resultant vector $$4\\vec{Q}$$. Since the resultant vector is just a scaled version of $$\\vec{Q}$$, they are in the same direction. The angle between any vector and another vector that is a scaled version of the first vector is always $$0^\\circ$$, because they are parallel to each other.</p>\n\n<p>Therefore, the angle between $$\\vec{Q}$$ and the resultant of $$(2 \\vec{Q}+2 \\vec{P})$$ and $$(2 \\vec{Q}-2 \\vec{P})$$ is $$0^\\circ$$.</p>\n\n<p>So, the correct option is:</p>\n<p>Option B: $$0^\\circ$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "lv5gt4yr",
@@ -48,14 +50,15 @@
     "options": [],
     "correctOption": 0,
     "correctAnswer": null,
-    "questionType": "NUMERICAL",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
     "topic": "vector-arithmetic",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& (\\vec{P}+\\vec{Q})=\\sqrt{2} A \\\\\n& R=A \\\\\n& \\theta=90^{\\circ}\n\\end{aligned}\\\\\n&\\text { Resultant }=\\sqrt{3} A\n\\end{aligned}$$</p>",
-    "section": "B"
+    "section": "B",
+    "type": "SUBJECTIVE"
   },
   {
     "id": "1lgsx8o8b",
@@ -76,7 +79,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "easy",
     "solution": "Given that when vector $$\\vec{A}=2 \\hat{i}+3 \\hat{j}+2 \\hat{k}$$ is subtracted from vector $$\\overrightarrow{\\mathrm{B}}$$, it gives a vector equal to $$2 \\hat{j}$$. \n<br/><br/>\nWe can write this as:\n<br/><br/>\n$$\\vec{B} - \\vec{A} = 2 \\hat{j}$$\n<br/><br/>\nNow, let's express the vector $$\\overrightarrow{\\mathrm{B}}$$ in terms of its components:\n<br/><br/>\n$$\\vec{B} = B_x \\hat{i} + B_y \\hat{j} + B_z \\hat{k}$$\n<br/><br/>\nSubtract vector $$\\vec{A}$$ from vector $$\\vec{B}$$:\n<br/><br/>\n$$(B_x \\hat{i} + B_y \\hat{j} + B_z \\hat{k}) - (2 \\hat{i}+3 \\hat{j}+2 \\hat{k}) = 2 \\hat{j}$$\n<br/><br/>\nComparing the components, we get:\n<br/><br/>\n$$\nB_x - 2 = 0 \\\\\nB_y - 3 = 2 \\\\\nB_z - 2 = 0\n$$\n<br/><br/>\nSolving these equations, we find the components of vector $$\\vec{B}$$:\n<br/><br/>\n$$\nB_x = 2 \\\\\nB_y = 5 \\\\\nB_z = 2\n$$\n<br/><br/>\nNow, we can find the magnitude of vector $$\\vec{B}$$:\n<br/><br/>\n$$\n|\\vec{B}| = \\sqrt{B_x^2 + B_y^2 + B_z^2} = \\sqrt{2^2 + 5^2 + 2^2} = \\sqrt{4 + 25 + 4} = \\sqrt{33}\n$$\n<br/><br/>\nTherefore, the magnitude of vector $$\\overrightarrow{\\mathrm{B}}$$ is $$\\sqrt{33}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1lh018ywo",
@@ -97,7 +101,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "easy",
     "solution": "<p>The resultant of two perpendicular vectors is given by the Pythagorean theorem.</p>\n<p>If we have two vectors of magnitudes $A$ and $\\frac{A}{2}$, the resultant $R$ is:</p>\n<p>$R = \\sqrt{A^{2} + \\left(\\frac{A}{2}\\right)^{2}} = \\sqrt{A^{2} + \\frac{A^{2}}{4}} = \\sqrt{\\frac{5A^{2}}{4}} = \\frac{\\sqrt{5} A}{2}$.</p>\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l547i59w",
@@ -118,7 +123,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "easy",
     "solution": "<p>$$\\sqrt {{A^2} + {A^2} + 2{A^2}\\cos \\theta }  = 2\\sqrt {{A^2} + {A^2} + 2{A^2}( - \\cos \\theta )} $$</p>\n<p>$$ \\Rightarrow 2{A^2} + 2{A^2}\\cos \\theta  = 8{A^2} + 8{A^2} - ( - \\cos \\theta )$$</p>\n<p>$$ \\Rightarrow 5\\cos \\theta  = 3$$</p>\n<p>$$ \\Rightarrow \\theta  = {\\cos ^{ - 1}}\\left( {{3 \\over 5}} \\right)$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1krqdgwra",
@@ -139,7 +145,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "medium",
     "solution": "$$\\left| {\\overrightarrow P } \\right| = \\left| {\\overrightarrow Q } \\right| = x$$ ..... (i)<br><br>$$\\left| {\\overrightarrow P  + \\overrightarrow Q } \\right| = n\\left| {\\overrightarrow P  - \\overrightarrow Q } \\right|$$<br><br>$${P^2} + {Q^2} + 2PQ\\cos \\theta  = {n^2}({P^2} + {Q^2} - 2PQ\\cos \\theta )$$<br><br>Using (i) in above equation<br><br>$$\\cos \\theta  = {{{n^2} - 1} \\over {1 + {n^2}}}$$<br><br>$$\\theta  = {\\cos ^{ - 1}}\\left( {{{{n^2} - 1} \\over {{n^2} + 1}}} \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1krwalshv",
@@ -160,7 +167,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "medium",
     "solution": "Given X = Y<br><br>$$\\sqrt {{X^2} + {Y^2} - 2 \\times Y\\cos \\theta } $$<br><br>$$ = n\\sqrt {{X^2} + {Y^2} + 2 \\times Y\\cos \\theta } $$<br><br>Square both sides<br><br>$$2{X^2}(1 - \\cos \\theta ) = {n^2}.2{X^2}(1 + \\cos \\theta )$$<br><br>$$1 - \\cos \\theta  = {n^2} + {n^2}\\cos \\theta $$<br><br>$$\\cos \\theta  = {{1 - {n^2}} \\over {1 + {n^2}}}$$<br><br>$$\\theta  = {\\cos ^{ - 1}}\\left[ {{{{n^2} - 1} \\over { - {n^2} - 1}}} \\right]$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1kruf7u9t",
@@ -181,7 +189,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "easy",
     "solution": "(a) $$\\overrightarrow C  = \\overrightarrow A  + \\overrightarrow B $$<br><br>Option (iv)<br><br>(b) $$\\overrightarrow A  = \\overrightarrow B  + \\overrightarrow C  = \\overrightarrow C  + \\overrightarrow B $$<br><br>Option (iii)<br><br>(c) $$\\overrightarrow B  = \\overrightarrow A  + \\overrightarrow C $$<br><br>Option (i)<br><br>(d) $$\\overrightarrow A  + \\overrightarrow B  + \\overrightarrow C  = 0$$<br><br>Option (ii)",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1ktbnmv86",
@@ -202,7 +211,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ktfq06x7/db40bc84-c372-4390-b0a4-4300eca19419/8ec07db0-12f5-11ec-8d38-4de1d1c65611/file-1ktfq06x8.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Evening Shift Physics - Vector Algebra Question 23 English Explanation\"> <br><br>Angle between $${\\overrightarrow A }$$ and $${\\overrightarrow B }$$, $$\\theta$$ = 60$$^\\circ$$\n<br><br>Angle between $${\\overrightarrow A }$$ and -$${\\overrightarrow B }$$, $$\\theta$$ = 120$$^\\circ$$\n<br><br>If angle between $${\\overrightarrow A }$$ and $${\\overrightarrow A }$$ $$-$$ $${\\overrightarrow B }$$ is $$\\alpha $$<br><br>then $$\\tan \\alpha  = $$$${{\\left| { - \\overrightarrow B } \\right|\\sin \\theta } \\over {\\overrightarrow A  + \\left| { - \\overrightarrow B } \\right|\\cos \\theta }}$$<br><br>= $${{B\\sin 120^\\circ } \\over {A + B\\cos 120^\\circ }}$$\n<br><br>=$${{B{{\\sqrt 3 } \\over 2}} \\over {A - {B \\over 2}}}$$\n<br><br>$$ \\Rightarrow $$ $$\\tan \\alpha  = {{\\sqrt 3 B} \\over {2A - B}}$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1kta8lkf1",
@@ -223,7 +233,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ktcde1qc/677819c4-6c10-4910-b2f5-8fb536dae87d/df717040-111d-11ec-9890-e1f55a1f69a0/file-1ktcde1qd.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Morning Shift Physics - Vector Algebra Question 24 English Explanation\"><br>Let magnitude be equal to $$\\lambda$$<br><br>$$\\overrightarrow {OA}  = \\lambda \\left[ {\\cos 30^\\circ \\widehat i + \\sin 30\\widehat j} \\right] = \\lambda \\left[ {{{\\sqrt 3 } \\over 2}\\widehat i + {1 \\over 2}\\widehat j} \\right]$$<br><br>$$\\overrightarrow {OB}  = \\lambda \\left[ {\\cos 60^\\circ \\widehat i - \\sin 60\\widehat j} \\right] = \\lambda \\left[ {{1 \\over 2}\\widehat i - {{\\sqrt 3 } \\over 2}\\widehat j} \\right]$$<br><br>$$\\overrightarrow {OC}  = \\lambda \\left[ {\\cos 45^\\circ ( - \\widehat i) + \\sin 45\\widehat j} \\right] = \\lambda \\left[ { - {1 \\over {\\sqrt 2 }}\\widehat i + {1 \\over {\\sqrt 2 }}\\widehat j} \\right]$$<br><br>$$\\therefore$$ $$\\overrightarrow {OA}  + \\overrightarrow {OB}  - \\overrightarrow {OC} $$<br><br>$$ = \\lambda \\left[ {\\left( {{{\\sqrt 3  + 1} \\over 2} + {1 \\over {\\sqrt 2 }}} \\right)\\widehat i + \\left( {{1 \\over 2} - {{\\sqrt 3 } \\over 2} - {1 \\over {\\sqrt 2 }}} \\right)\\widehat j} \\right]$$<br><br>$$\\therefore$$ Angle with x-axis<br><br>$${\\tan ^{ - 1}}\\left[ {{{{1 \\over 2} - {{\\sqrt 3 } \\over 2} - {1 \\over {\\sqrt 2 }}} \\over {{{\\sqrt 3 } \\over 2} + {1 \\over 2} + {1 \\over {\\sqrt 2 }}}}} \\right] = {\\tan ^{ - 1}}\\left[ {{{\\sqrt 2  - \\sqrt 6  - 2} \\over {\\sqrt 6  + \\sqrt 2  + 2}}} \\right]$$<br><br>$$ = {\\tan ^{ - 1}}\\left[ {{{1 - \\sqrt 3  - \\sqrt 2 } \\over {\\sqrt 3  + 1 + \\sqrt 2 }}} \\right]$$<br><br>Hence option (a).",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1kryvzl8h",
@@ -243,8 +254,9 @@
     "subject": "Mathematics",
     "topic": "vector-arithmetic",
     "difficulty": "medium",
-    "solution": "<p>Let the position vectors of $A,B,C,D,O$ be $\\vec a,\\vec b,\\vec c,\\vec d,\\vec 0$ respectively.</p>\n<h3>Check Assertion (A)</h3>\n<p>$ \\overrightarrow{AB}+\\overrightarrow{AC}+\\overrightarrow{AD} =(\\vec b-\\vec a)+(\\vec c-\\vec a)+(\\vec d-\\vec a) =\\vec b+\\vec c+\\vec d-3\\vec a $</p>\n<p>Also,</p>\n<p>$ 4\\overrightarrow{AO}+\\overrightarrow{OB}+\\overrightarrow{OC} =4(\\vec 0-\\vec a)+(\\vec b-\\vec 0)+(\\vec c-\\vec 0) =-4\\vec a+\\vec b+\\vec c $</p>\n<p>Equating both sides gives</p>\n<p>$ \\vec b+\\vec c+\\vec d-3\\vec a=-4\\vec a+\\vec b+\\vec c \\;\\Rightarrow\\; \\vec d=-\\vec a $</p>\n<p>But $\\vec d=-\\vec a$ means $O$ is the midpoint of $AD$, i.e. $AD$ is a diameter. Since $A$ and $D$ are the endpoints of the given semicircle (as in the figure), this is true.  </p>\n<p>So <strong>Assertion A is correct</strong> (and it doesn’t actually need $|AB|=|BC|=|CD|$).</p>\n\n<h3>Check Reason (R)</h3>\n<p>By the polygon law along the path $A\\to B\\to C\\to D$,</p>\n<p>$ \\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CD}=\\overrightarrow{AD} $</p>\n<p>Hence</p>\n<p>$ \\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CD}+\\overrightarrow{AD} =2\\overrightarrow{AD}\\neq 2\\overrightarrow{AO} $</p>\n<p>So <strong>Reason R is incorrect</strong>.</p>\n\n<h3>Correct option</h3>\n<p><strong>Option A: A is correct but R is not correct.</strong></p>",
-    "section": "A"
+    "solution": "<p>Let the position vectors of $A,B,C,D,O$ be $\\vec a,\\vec b,\\vec c,\\vec d,\\vec 0$ respectively.</p>\n<h3>Check Assertion (A)</h3>\n<p>$ \\overrightarrow{AB}+\\overrightarrow{AC}+\\overrightarrow{AD} =(\\vec b-\\vec a)+(\\vec c-\\vec a)+(\\vec d-\\vec a) =\\vec b+\\vec c+\\vec d-3\\vec a $</p>\n<p>Also,</p>\n<p>$ 4\\overrightarrow{AO}+\\overrightarrow{OB}+\\overrightarrow{OC} =4(\\vec 0-\\vec a)+(\\vec b-\\vec 0)+(\\vec c-\\vec 0) =-4\\vec a+\\vec b+\\vec c $</p>\n<p>Equating both sides gives</p>\n<p>$ \\vec b+\\vec c+\\vec d-3\\vec a=-4\\vec a+\\vec b+\\vec c \\;\\Rightarrow\\; \\vec d=-\\vec a $</p>\n<p>But $\\vec d=-\\vec a$ means $O$ is the midpoint of $AD$, i.e. $AD$ is a diameter. Since $A$ and $D$ are the endpoints of the given semicircle (as in the figure), this is true.  </p>\n<p>So <strong>Assertion A is correct</strong> (and it doesn\u2019t actually need $|AB|=|BC|=|CD|$).</p>\n\n<h3>Check Reason (R)</h3>\n<p>By the polygon law along the path $A\\to B\\to C\\to D$,</p>\n<p>$ \\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CD}=\\overrightarrow{AD} $</p>\n<p>Hence</p>\n<p>$ \\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CD}+\\overrightarrow{AD} =2\\overrightarrow{AD}\\neq 2\\overrightarrow{AO} $</p>\n<p>So <strong>Reason R is incorrect</strong>.</p>\n\n<h3>Correct option</h3>\n<p><strong>Option A: A is correct but R is not correct.</strong></p>",
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1ktjncsc4",
@@ -265,7 +277,8 @@
     "topic": "vector-arithmetic",
     "difficulty": "medium",
     "solution": "$$\\overrightarrow A  = \\overrightarrow P  + \\overrightarrow Q $$<br><br>$$\\overrightarrow B  = \\overrightarrow P  - \\overrightarrow Q $$<br><br>$$\\overrightarrow P  \\bot \\overrightarrow Q $$<br><br>$$\\left| {\\overrightarrow A } \\right| = \\left| {\\overrightarrow B } \\right| = \\sqrt {2({P^2} + {Q^2})(1 + \\cos \\theta )} $$<br><br>For $$\\left| {\\overrightarrow A  + \\overrightarrow B } \\right| = \\sqrt {3({P^2} + {Q^2})} $$<br><br>$${\\theta _1} = 60^\\circ $$<br><br>For $$\\left| {\\overrightarrow A  + \\overrightarrow B } \\right| = \\sqrt {2({P^2} + {Q^2})} $$<br><br>$${\\theta _2} = 90^\\circ $$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "3nnVXmxYp9y1YCWxEFd0V",
@@ -286,12 +299,13 @@
     "topic": "vector-arithmetic",
     "difficulty": "medium",
     "solution": "$$\\left| {\\overrightarrow A  + \\overrightarrow B } \\right| = 2a\\cos \\theta /2$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . (1)\n<br><br>$$\\left| {\\overrightarrow A  - \\overrightarrow B } \\right| = 2a\\cos {{\\left( {\\pi  - \\theta } \\right)} \\over 2} = 2a\\sin \\theta /2$$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . (2)\n<br><br>$$ \\Rightarrow \\,\\,\\,n\\left( {2a\\cos {\\theta  \\over 2}} \\right) = 2a{{\\sin \\theta } \\over 2}$$\n<br><br>$$ \\Rightarrow \\,\\,\\,\\tan {\\theta  \\over 2} = n$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "MsMMC4eMrUzxSl6vnfoNs",
     "questionNumber": 90,
-    "questionText": "In the cube of side ‘a’ shown in the figure, the vector from the central point of the face ABOD to the central point of the face BEFO will be -\n<br><br><img src=\"https://imagex.cdn.examgoal.net/7xyf27O3dslGKUHF1/BOYW6nD2vyRln04Toe2IZDDzClq1e/pVusq3EVSuskSokhjalv4G/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Morning Slot Physics - Vector Algebra Question 37 English\">\n",
+    "questionText": "In the cube of side \u2018a\u2019 shown in the figure, the vector from the central point of the face ABOD to the central point of the face BEFO will be -\n<br><br><img src=\"https://imagex.cdn.examgoal.net/7xyf27O3dslGKUHF1/BOYW6nD2vyRln04Toe2IZDDzClq1e/pVusq3EVSuskSokhjalv4G/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Morning Slot Physics - Vector Algebra Question 37 English\">\n",
     "options": [
       "$${1 \\over 2}a\\left( {\\widehat k - \\widehat i} \\right)$$",
       "$${1 \\over 2}a\\left( {\\widehat j - \\widehat i} \\right)$$",
@@ -307,6 +321,7 @@
     "topic": "vector-arithmetic",
     "difficulty": "easy",
     "solution": "$$\\overrightarrow {{r_g}}  = {a \\over 2}\\widehat i + {a \\over 2}\\widehat k$$\n<br><br>$$\\overrightarrow {{r_H}}  = {a \\over 2}\\widehat i + {a \\over 2}\\widehat k$$\n<br><br>$$\\overrightarrow {{r_H}}  - \\overrightarrow {{r_g}}  = {a \\over 2}\\left( {\\widehat j - \\widehat i} \\right)$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   }
 ]

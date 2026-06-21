@@ -10,6 +10,79 @@ import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
 import Eye from 'lucide-react/dist/esm/icons/eye';
 import BookmarkGroupModal from './BookmarkGroupModal';
 import TeacherSolution from './TeacherSolution';
+import MathRenderer from '../utils/MathRenderer';
+
+// Helper to determine if an answer is correct
+const isAnswerCorrect = (question, savedAnswer) => {
+  if (!question || !savedAnswer) return false;
+  const isSubjective = question.type === 'SUBJECTIVE' || question.type === 'subjective';
+  const optionsToRender = (question.question?.en?.options && question.question.en.options.length > 0) ? question.question.en.options : (question.options || []);
+  const isMultiCorrect = !isSubjective && (
+    question.type === 'MULTI_CORRECT' || 
+    question.type === 'multi_correct' || 
+    question.type === 'multiple_correct' || 
+    question.type === 'MCQM' || 
+    question.type === 'mcqm' || 
+    question.type === 'MCQ (Multiple Correct)' || 
+    question.type === 'Multiple Correct' || 
+    (question.correctOptionsArray && question.correctOptionsArray.length > 0) || 
+    question.isMultiCorrect || 
+    (question.question?.en?.correct_options && question.question.en.correct_options.length > 1) ||
+    (question.correctAnswer && (String(question.correctAnswer).includes(',') || String(question.correctAnswer).toLowerCase().includes('and') || String(question.correctAnswer).includes('&'))) ||
+    Array.isArray(question.correctOptionIndex) ||
+    (question.question?.en?.content && (
+       question.question.en.content.toLowerCase().includes('one or more') ||
+       question.question.en.content.toLowerCase().includes('multiple correct')
+    )) ||
+    (typeof question.question === 'string' && (
+       question.question.toLowerCase().includes('one or more') ||
+       question.question.toLowerCase().includes('multiple correct')
+    ))
+  );
+  const isNumerical = !isSubjective && !isMultiCorrect && (question.type === 'Numerical Value' || question.type === 'Integer' || question.type === 'numerical' || question.type === 'NUMERICAL' || question.type === 'integer-value' || optionsToRender.length === 0);
+
+  if (isSubjective) return true; // Can't auto grade subjective here
+  
+  if (isNumerical) {
+    return String(savedAnswer.selectedOption).trim() === String(question.correctAnswer).trim();
+  }
+  
+  if (isMultiCorrect) {
+    let correctIdxArr = [];
+    if (question.correctOptionsArray && question.correctOptionsArray.length > 0) {
+      correctIdxArr = question.correctOptionsArray;
+    } else if (question.question?.en?.correct_options && question.question.en.correct_options.length > 0) {
+      correctIdxArr = question.question.en.correct_options.map(c => c.charCodeAt(0) - 65);
+    } else if (question.correctAnswer && (String(question.correctAnswer).includes(',') || String(question.correctAnswer).toLowerCase().includes('and') || String(question.correctAnswer).includes('&'))) {
+      // Handle "(A, C)" or "0, 1" or "A and B"
+      const cleaned = String(question.correctAnswer).replace(/[()]/g, '').replace(/and/ig, ',').replace(/&/g, ',');
+      correctIdxArr = cleaned.split(',').map(s => {
+        const trimmed = s.trim();
+        const parsed = parseInt(trimmed, 10);
+        if (!isNaN(parsed)) return parsed;
+        // If it's "A", "B", etc.
+        const charCode = trimmed.toUpperCase().charCodeAt(0);
+        if (charCode >= 65 && charCode <= 90) return charCode - 65;
+        return NaN;
+      }).filter(n => !isNaN(n));
+    } else if (Array.isArray(question.correctOptionIndex)) {
+      correctIdxArr = question.correctOptionIndex;
+    }
+    
+    const selected = Array.isArray(savedAnswer.selectedOption) ? savedAnswer.selectedOption : [];
+    if (selected.length !== correctIdxArr.length) return false;
+    
+    const sortedSelected = [...selected].sort((a,b)=>a-b);
+    const sortedCorrect = [...correctIdxArr].sort((a,b)=>a-b);
+    return sortedSelected.every((val, idx) => val === sortedCorrect[idx]);
+  } else {
+    let correctIdx = parseInt(question.correctOptionIndex, 10);
+    if (isNaN(correctIdx) && question.question?.en?.correct_options && question.question.en.correct_options.length > 0) {
+      correctIdx = question.question.en.correct_options[0].charCodeAt(0) - 65;
+    }
+    return parseInt(savedAnswer.selectedOption, 10) === correctIdx;
+  }
+};
 
 export default function ExamGoalPracticeInterface({ pyqData, topic, customQuestions, practiceMode, onProgressUpdate, onClose, isLight, onToggleTheme, bookmarkGroups = [], addBookmarkGroup = () => {}, progress = {} }) {
   const storageKey = `quantrex_practice_progress_${topic ? topic.id : 'custom'}`;
@@ -59,7 +132,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
   // Helper to fix scattered MathJax by forcing inline rendering
   const fixMathJax = (html) => {
     if (!html) return '';
-    let fixed = html.replace(/\$\$/g, '$');
+    let fixed = html;
     fixed = fixed.replace(/\\root\s+([a-zA-Z0-9]+)\s+\\of\s+\{([^}]+)\}/g, '\\sqrt[$1]{$2}');
     fixed = fixed.replace(/\\root\s+([a-zA-Z0-9]+)\s+\\of\s+([a-zA-Z0-9]+)/g, '\\sqrt[$1]{$2}');
     return fixed;
@@ -130,19 +203,46 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
     );
   }
 
+  const optionsToRender = (currentQuestion.question?.en?.options && currentQuestion.question.en.options.length > 0) ? currentQuestion.question.en.options : (currentQuestion.options || []);
   const isSubjective = currentQuestion.type === 'SUBJECTIVE' || currentQuestion.type === 'subjective';
-  const isNumerical = !isSubjective && (currentQuestion.type === 'Numerical Value' || currentQuestion.type === 'Integer' || currentQuestion.type === 'numerical' || currentQuestion.type === 'NUMERICAL' || currentQuestion.type === 'integer-value' || (currentQuestion.options && currentQuestion.options.length === 0));
+  const isMultiCorrect = !isSubjective && (
+    currentQuestion.type === 'MULTI_CORRECT' || 
+    currentQuestion.type === 'multi_correct' || 
+    currentQuestion.type === 'multiple_correct' || 
+    currentQuestion.type === 'MCQM' || 
+    currentQuestion.type === 'mcqm' || 
+    currentQuestion.type === 'MCQ (Multiple Correct)' || 
+    currentQuestion.type === 'Multiple Correct' || 
+    (currentQuestion.correctOptionsArray && currentQuestion.correctOptionsArray.length > 0) || 
+    currentQuestion.isMultiCorrect || 
+    (currentQuestion.question?.en?.correct_options && currentQuestion.question.en.correct_options.length > 1) ||
+    (currentQuestion.correctAnswer && (String(currentQuestion.correctAnswer).includes(',') || String(currentQuestion.correctAnswer).toLowerCase().includes('and') || String(currentQuestion.correctAnswer).includes('&'))) ||
+    Array.isArray(currentQuestion.correctOptionIndex) ||
+    (currentQuestion.question?.en?.content && (
+       currentQuestion.question.en.content.toLowerCase().includes('one or more') ||
+       currentQuestion.question.en.content.toLowerCase().includes('multiple correct')
+    )) ||
+    (typeof currentQuestion.question === 'string' && (
+       currentQuestion.question.toLowerCase().includes('one or more') ||
+       currentQuestion.question.toLowerCase().includes('multiple correct')
+    ))
+  );
+  const isNumerical = !isSubjective && !isMultiCorrect && (currentQuestion.type === 'Numerical Value' || currentQuestion.type === 'Integer' || currentQuestion.type === 'numerical' || currentQuestion.type === 'NUMERICAL' || currentQuestion.type === 'integer-value' || optionsToRender.length === 0);
 
   const handleOptionSelect = (val) => {
     if (isAnswerChecked || isTestSubmitted) return;
-    setSelectedOption(val);
-    setSavedAnswers(prev => ({
-      ...prev,
-      [currentQuestionIndex]: { 
-        selectedOption: val, 
-        isAnswerChecked: false 
-      }
-    }));
+    if (isMultiCorrect) {
+      setSelectedOption(prev => {
+        const arr = Array.isArray(prev) ? prev : [];
+        let newArr;
+        if (arr.includes(val)) { newArr = arr.filter(x => x !== val).sort((a, b) => a - b); } else { newArr = [...arr, val].sort((a, b) => a - b); }
+        setSavedAnswers(saved => ({ ...saved, [currentQuestionIndex]: { selectedOption: newArr, isAnswerChecked: false } }));
+        return newArr;
+      });
+    } else {
+      setSelectedOption(val);
+      setSavedAnswers(prev => ({ ...prev, [currentQuestionIndex]: { selectedOption: val, isAnswerChecked: false } }));
+    }
   };
 
   const handleCheckAnswer = () => {
@@ -153,13 +253,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
       [currentQuestionIndex]: { selectedOption, isAnswerChecked: true }
     }));
 
-    let isCorrect = false;
-    if (isNumerical) {
-      isCorrect = Number(selectedOption) === Number(currentQuestion.correctAnswer);
-    } else {
-      const selectedIndex = parseInt(selectedOption, 10);
-      isCorrect = selectedIndex === currentQuestion.correctOptionIndex;
-    }
+    let isCorrect = isAnswerCorrect(currentQuestion, { selectedOption });
 
     if (onProgressUpdate) {
       onProgressUpdate(currentQuestion.id, { status: isCorrect ? 'correct' : 'wrong', timeSpentSeconds: timeSpent });
@@ -331,9 +425,18 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                     <span className="text-[#28a745] text-[13px] font-medium">
                       {currentQuestion.shift || currentQuestion.title || currentQuestion.year}
                     </span>
-                    <span className="px-2 py-0.5 bg-[#e3f2fd] text-[#1976d2] text-[11px] font-bold rounded border border-[#bbdefb]">
-                      {currentQuestion.type || 'MCQ Single Answer'}
-                    </span>
+                    {(() => {
+                      const t = currentQuestion.type || currentQuestion.questionType || 'SCQ';
+                      const isMCQM = t === 'MULTI_CORRECT' || t === 'MCQM' || t === 'multi_correct' || t === 'multiple_correct' || t === 'mcqm' || (Array.isArray(currentQuestion.correctOptionIndex) && currentQuestion.correctOptionIndex.length > 1);
+                      const isSubj = t === 'SUBJECTIVE' || t === 'subjective';
+                      const isNum = t === 'NUMERICAL' || t === 'numerical' || currentQuestion.answerType === 'numerical';
+                      let label = isMCQM ? 'MCQM' : (isSubj ? 'SUBJECTIVE' : (isNum ? 'NUMERICAL' : 'SCQ'));
+                      return (
+                        <span className={`px-2 py-0.5 text-[11px] font-bold rounded border ${isMCQM ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' : (isNum ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' : (isSubj ? 'bg-purple-500/10 text-purple-500 border-purple-500/20' : 'bg-green-500/10 text-green-600 border-green-500/20'))}`}>
+                          {label}
+                        </span>
+                      );
+                    })()}
                   </div>
                 </div>
               </div>
@@ -349,6 +452,8 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
 
             {/* Options Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              
+              
               {isSubjective ? (
                 <div className="col-span-1 md:col-span-2">
                   <div className={`p-6 border rounded-xl shadow-sm ${isAnswerChecked ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-gray-200 bg-white'}`}>
@@ -359,49 +464,68 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                   </div>
                 </div>
               ) : !isNumerical ? (
-                (currentQuestion.options || []).map((opt, idx) => {
-                  const isSelected = selectedOption === idx || selectedOption === String(idx);
-                  const isCorrectOption = idx === parseInt(currentQuestion.correctOptionIndex, 10);
-                  
-                  let boxClass = isLight ? 'border-gray-200 bg-white hover:border-gray-300' : 'border-gray-700 bg-[#1e293b] hover:border-gray-600 text-gray-200';
-                  let circleClass = 'bg-[#1976d2] text-white';
-
-                  if (isAnswerChecked || isTestSubmitted) {
-                    if (isSelected && isCorrectOption) {
-                      boxClass = isLight ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-[#28a745] bg-[#064e3b] text-white';
-                      circleClass = 'bg-[#28a745] text-white';
-                    } else if (isSelected && !isCorrectOption) {
-                      boxClass = isLight ? 'border-[#dc3545] bg-[#fdecea]' : 'border-[#dc3545] bg-[#7f1d1d] text-white';
-                      circleClass = 'bg-[#dc3545] text-white';
-                    } else if (!isSelected && isCorrectOption) {
-                      boxClass = isLight ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-[#28a745] bg-[#064e3b] text-white';
-                      circleClass = 'bg-[#28a745] text-white';
+                <>
+                  {/* Multi-correct text removed as requested */}
+                  {optionsToRender.map((opt, idx) => {
+                    const isSelected = isMultiCorrect ? (Array.isArray(selectedOption) && selectedOption.includes(idx)) : (selectedOption === idx || selectedOption === String(idx));
+                    
+                    let correctIdxArr = [];
+                    if (isMultiCorrect) {
+                      if (currentQuestion.correctOptionsArray && currentQuestion.correctOptionsArray.length > 0) {
+                        correctIdxArr = currentQuestion.correctOptionsArray;
+                      } else if (currentQuestion.question?.en?.correct_options && currentQuestion.question.en.correct_options.length > 0) {
+                        correctIdxArr = currentQuestion.question.en.correct_options.map(c => c.charCodeAt(0) - 65);
+                      } else if (currentQuestion.correctAnswer && String(currentQuestion.correctAnswer).includes(',')) {
+                        const cleaned = String(currentQuestion.correctAnswer).replace(/[()]/g, '');
+                        correctIdxArr = cleaned.split(',').map(s => {
+                          const trimmed = s.trim();
+                          const parsed = parseInt(trimmed, 10);
+                          if (!isNaN(parsed)) return parsed;
+                          const charCode = trimmed.toUpperCase().charCodeAt(0);
+                          if (charCode >= 65 && charCode <= 90) return charCode - 65;
+                          return NaN;
+                        }).filter(n => !isNaN(n));
+                      } else if (Array.isArray(currentQuestion.correctOptionIndex)) {
+                        correctIdxArr = currentQuestion.correctOptionIndex;
+                      }
                     } else {
-                      boxClass = isLight ? 'border-gray-200 bg-white opacity-50' : 'border-gray-700 bg-[#1e293b] opacity-50';
-                      circleClass = 'bg-gray-400 text-white';
+                      let cIdx = parseInt(currentQuestion.correctOptionIndex, 10);
+                      if (isNaN(cIdx) && currentQuestion.question?.en?.correct_options && currentQuestion.question.en.correct_options.length > 0) {
+                        cIdx = currentQuestion.question.en.correct_options[0].charCodeAt(0) - 65;
+                      } else if (isNaN(cIdx) && currentQuestion.correctAnswer) {
+                         const trimmed = String(currentQuestion.correctAnswer).trim();
+                         const charCode = trimmed.toUpperCase().charCodeAt(0);
+                         if (charCode >= 65 && charCode <= 90) cIdx = charCode - 65;
+                      }
+                      correctIdxArr = [cIdx];
                     }
-                  } else if (isSelected) {
-                    boxClass = isLight ? 'border-[#2962ff] bg-[#f0f4ff]' : 'border-[#60a5fa] bg-[#1e3a8a] text-white';
-                  }
+                    const isCorrectOption = correctIdxArr.includes(idx);
+                    
+                    let boxClass = isLight ? 'border-gray-200 bg-white hover:border-gray-300' : 'border-gray-700 bg-[#1e293b] hover:border-gray-600 text-gray-200';
+                    let circleClass = 'bg-[#1976d2] text-white';
 
-                  const labelChar = String.fromCharCode(65 + idx); // A, B, C, D
+                    if (isAnswerChecked || isTestSubmitted) {
+                      if (isSelected && isCorrectOption) { boxClass = isLight ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-[#28a745] bg-[#064e3b] text-white'; circleClass = 'bg-[#28a745] text-white'; }
+                      else if (isSelected && !isCorrectOption) { boxClass = isLight ? 'border-[#dc3545] bg-[#fdecea]' : 'border-[#dc3545] bg-[#7f1d1d] text-white'; circleClass = 'bg-[#dc3545] text-white'; }
+                      else if (!isSelected && isCorrectOption) { boxClass = isLight ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-[#28a745] bg-[#064e3b] text-white'; circleClass = 'bg-[#28a745] text-white'; }
+                      else { boxClass = isLight ? 'border-gray-200 bg-white opacity-50' : 'border-gray-700 bg-[#1e293b] opacity-50'; circleClass = 'bg-gray-400 text-white'; }
+                    } else if (isSelected) {
+                      boxClass = isLight ? 'border-[#2962ff] bg-[#f0f4ff]' : 'border-[#60a5fa] bg-[#1e3a8a] text-white';
+                    }
 
-                  return (
-                    <button
-                      key={idx}
-                      onClick={() => {
-                        handleOptionSelect(idx);
-                      }}
-                      disabled={isAnswerChecked || isTestSubmitted}
-                      className={`w-full text-left p-4 flex items-start gap-4 border rounded-xl transition-all shadow-sm relative overflow-hidden ${boxClass}`}
-                    >
-                      <div className={`w-[30px] h-[30px] shrink-0 rounded-full flex items-center justify-center font-bold text-[13px] ${circleClass}`}>
-                        {labelChar}
-                      </div>
-                      <div className={`flex-1 mt-1 font-medium exam-math-content ${isLight ? 'text-black' : 'text-gray-100'}`} style={{ fontSize: `${Math.max(14, fontSize - 1)}px` }} dangerouslySetInnerHTML={{ __html: fixMathJax(opt) }} />
-                    </button>
-                  );
-                })
+                    const labelChar = String.fromCharCode(65 + idx);
+                    let optContent = opt.content || opt;
+
+                    return (
+                      <button key={idx} onClick={() => handleOptionSelect(idx)} disabled={isAnswerChecked || isTestSubmitted} className={`w-full text-left p-4 flex items-start gap-4 border rounded-xl transition-all shadow-sm relative overflow-hidden ${boxClass}`}>
+                        <div className={`w-[30px] h-[30px] shrink-0 ${isMultiCorrect ? 'rounded-md' : 'rounded-full'} flex items-center justify-center font-bold text-[13px] ${circleClass}`}>
+                          {labelChar}
+                        </div>
+                        <div className={`flex-1 mt-1 font-medium exam-math-content ${isLight ? 'text-black' : 'text-gray-100'}`} style={{ fontSize: `${Math.max(14, fontSize - 1)}px` }} dangerouslySetInnerHTML={{ __html: fixMathJax(optContent) }} />
+                      </button>
+                    );
+                  })}
+                </>
               ) : (
                 <div className="col-span-1 md:col-span-2">
                   <div className={`p-6 border rounded-xl shadow-sm ${isAnswerChecked || isTestSubmitted ? (isCorrect ? 'border-[#28a745] bg-[#e8f5e9]' : 'border-[#dc3545] bg-[#fdecea]') : 'border-gray-200 bg-white'}`}>
@@ -422,6 +546,25 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
             {/* Explanation Section */}
             {(isAnswerChecked || isTestSubmitted) && (
                <div className="mt-8">
+                 {isMultiCorrect && (
+                   <div className={`p-4 rounded-xl mb-4 text-[15px] font-bold shadow-sm border ${isLight ? 'bg-blue-50 text-blue-800 border-blue-200' : 'bg-blue-900/30 text-blue-200 border-blue-800/50'}`}>
+                     Correct Answer has {(() => {
+                        let count = 0;
+                        let labels = [];
+                        if (currentQuestion.correctOptionsArray && currentQuestion.correctOptionsArray.length > 0) {
+                           count = currentQuestion.correctOptionsArray.length;
+                           labels = currentQuestion.correctOptionsArray.map(idx => String.fromCharCode(65 + parseInt(idx)));
+                        } else if (currentQuestion.question?.en?.correct_options) {
+                           count = currentQuestion.question.en.correct_options.length;
+                           labels = currentQuestion.question.en.correct_options;
+                        } else if (currentQuestion.correctAnswer) {
+                           labels = String(currentQuestion.correctAnswer).split(',').map(s => s.trim()).filter(s => s);
+                           count = labels.length;
+                        }
+                        return `${count} options correct: ${labels.join(', ')}`;
+                     })()}
+                   </div>
+                 )}
                  <TeacherSolution html={currentQuestion.solution} isLight={isLight} />
                  <div className="bg-transparent mt-4 flex justify-end">
                     <button className="text-[#1976d2] text-xs font-bold px-3 py-1 border border-[#1976d2] rounded hover:bg-[#e3f2fd] transition-colors">Add a Note</button>
@@ -509,9 +652,8 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                   let count = 0;
                   questions.forEach((q, idx) => {
                     const s = savedAnswers[idx];
-                    if (s && s.isAnswerChecked && s.selectedOption !== '') {
-                      const isNum = q.type === 'Numerical Value' || q.type === 'Integer' || q.type === 'numerical' || q.type === 'NUMERICAL' || q.type === 'integer-value' || (q.options && q.options.length === 0);
-                      if (isNum ? String(s.selectedOption).trim() === String(q.correctAnswer).trim() : parseInt(s.selectedOption, 10) === q.correctOptionIndex) count++;
+                    if (s && s.isAnswerChecked && (Array.isArray(s.selectedOption) ? s.selectedOption.length > 0 : s.selectedOption !== '')) {
+                      if (isAnswerCorrect(q, s)) count++;
                     }
                   }); return count;
                 })()}</span>
@@ -519,9 +661,8 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                   let count = 0;
                   questions.forEach((q, idx) => {
                     const s = savedAnswers[idx];
-                    if (s && s.isAnswerChecked && s.selectedOption !== '') {
-                      const isNum = q.type === 'Numerical Value' || q.type === 'Integer' || q.type === 'numerical' || q.type === 'NUMERICAL' || q.type === 'integer-value' || (q.options && q.options.length === 0);
-                      if (!(isNum ? String(s.selectedOption).trim() === String(q.correctAnswer).trim() : parseInt(s.selectedOption, 10) === q.correctOptionIndex)) count++;
+                    if (s && s.isAnswerChecked && (Array.isArray(s.selectedOption) ? s.selectedOption.length > 0 : s.selectedOption !== '')) {
+                      if (!isAnswerCorrect(q, s)) count++;
                     }
                   }); return count;
                 })()}</span>
@@ -558,12 +699,10 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                  
                  if (s && s.isAnswerChecked) {
                     const q = questions[idx];
-                    const isNum = q.type === 'Numerical Value' || q.type === 'Integer' || q.type === 'numerical' || q.type === 'NUMERICAL' || q.type === 'integer-value' || (q.options && q.options.length === 0);
-                    let correct = false;
-                    if (isNum) correct = String(s.selectedOption).trim() === String(q.correctAnswer).trim();
-                    else correct = parseInt(s.selectedOption, 10) === q.correctOptionIndex;
+                    let correct = isAnswerCorrect(q, s);
                     
-                    if (s.selectedOption === '') bubbleClass = "bg-[#ffc107] text-white"; // Seen but just revealed answer
+                    const isEmpty = Array.isArray(s.selectedOption) ? s.selectedOption.length === 0 : s.selectedOption === '';
+                    if (isEmpty) bubbleClass = "bg-[#ffc107] text-white"; // Seen but just revealed answer
                     else bubbleClass = correct ? "bg-[#28a745] text-white" : "bg-[#dc3545] text-white";
                  } else if (s && s.selectedOption !== '') {
                     bubbleClass = "bg-[#1976d2] text-white"; // attempted but not checked

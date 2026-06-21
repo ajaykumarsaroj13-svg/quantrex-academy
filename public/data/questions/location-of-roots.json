@@ -18,7 +18,8 @@
     "topic": "location-of-roots",
     "difficulty": "medium",
     "solution": "<p>$$ \\begin{aligned} & \\because \\alpha<1<\\beta \\\\ & f(1)<0 \\\\ & \\Rightarrow 1+2 a+(3 a+10)<0 \\\\ & \\Rightarrow 5 a+11<0 \\\\ & a<\\frac{-11}{5} \\\\ & \\therefore a \\in\\left(-\\infty, \\frac{-11}{5}\\right) \\end{aligned} $$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "mnswhxz2",
@@ -39,7 +40,8 @@
     "topic": "location-of-roots",
     "difficulty": "medium",
     "solution": "<p>For the quadratic equation  </p>\n<p>$$ (\\lambda+2)x^2-3\\lambda x+4\\lambda=0,\\qquad \\lambda\\neq -2 $$</p>\n<p>to have <strong>two positive roots</strong>, let us use the NCERT conditions for a quadratic equation.</p>\n<p>If the roots are $\\alpha$ and $\\beta$, then for both roots to be positive, we need:</p>\n<ol>\n<li><p>Discriminant $\\ge 0$ so that roots are real,</p></li>\n<li><p>Sum of roots $>0$,</p></li>\n<li><p>Product of roots $>0$.</p></li>\n</ol>\n\n<h3>1. Identify coefficients</h3>\n<p>Comparing with $ax^2+bx+c=0$, we get</p>\n<p>$$ a=\\lambda+2,\\qquad b=-3\\lambda,\\qquad c=4\\lambda $$</p>\n\n<h3>2. Condition for real roots</h3>\n<p>Discriminant:</p>\n<p>$$ D=b^2-4ac $$</p>\n<p>So,</p>\n<p>$$ D=(-3\\lambda)^2-4(\\lambda+2)(4\\lambda) $$</p>\n<p>$$ D=9\\lambda^2-16\\lambda(\\lambda+2) $$</p>\n<p>$$ D=9\\lambda^2-16\\lambda^2-32\\lambda $$</p>\n<p>$$ D=-7\\lambda^2-32\\lambda $$</p>\n<p>For real roots,</p>\n<p>$$ -7\\lambda^2-32\\lambda \\ge 0 $$</p>\n<p>$$ -\\lambda(7\\lambda+32)\\ge 0 $$</p>\n<p>Multiplying by $-1$ reverses the inequality:</p>\n<p>$$ \\lambda(7\\lambda+32)\\le 0 $$</p>\n<p>This gives</p>\n<p>$$ -\\frac{32}{7}\\le \\lambda \\le 0 $$</p>\n<p>So possible integral values from this condition are</p>\n<p>$$ \\lambda=-4,-3,-2,-1,0 $$</p>\n<p>But given $\\lambda\\ne -2$, so remaining are</p>\n<p>$$ \\lambda=-4,-3,-1,0 $$</p>\n\n<h3>3. Condition for sum of roots positive</h3>\n<p>Sum of roots is</p>\n<p>$$ \\alpha+\\beta = -\\frac{b}{a}=\\frac{3\\lambda}{\\lambda+2} $$</p>\n<p>For two positive roots,</p>\n<p>$$ \\frac{3\\lambda}{\\lambda+2}>0 $$</p>\n<p>Since $3>0$, this means</p>\n<p>$$ \\frac{\\lambda}{\\lambda+2}>0 $$</p>\n<p>This is positive when numerator and denominator have same sign:</p>\n<ul>\n<li><p>$\\lambda>0$ and $\\lambda+2>0$, or</p></li>\n<li><p>$\\lambda<0$ and $\\lambda+2<0$</p></li>\n</ul>\n<p>So,</p>\n<p>$$ \\lambda>0 \\quad \\text{or} \\quad \\lambda<-2 $$</p>\n<p>From our shortlisted values $-4,-3,-1,0$, this keeps only</p>\n<p>$$ \\lambda=-4,-3 $$</p>\n\n<h3>4. Condition for product of roots positive</h3>\n<p>Product of roots is</p>\n<p>$$ \\alpha\\beta=\\frac{c}{a}=\\frac{4\\lambda}{\\lambda+2} $$</p>\n<p>For positive roots,</p>\n<p>$$ \\frac{4\\lambda}{\\lambda+2}>0 $$</p>\n<p>Again,</p>\n<p>$$ \\frac{\\lambda}{\\lambda+2}>0 $$</p>\n<p>This gives the same condition:</p>\n<p>$$ \\lambda>0 \\quad \\text{or} \\quad \\lambda<-2 $$</p>\n<p>Among the shortlisted values, again we get</p>\n<p>$$ \\lambda=-4,-3 $$</p>\n\n<h3>5. Check both values</h3>\n<ul>\n<li><p>For $\\lambda=-4$:</p>\n<p>$$   D=-7(16)-32(-4)=-112+128=16>0   $$</p>\n<p>So roots are real and distinct.</p></li>\n<li><p>For $\\lambda=-3$:</p>\n<p>$$   D=-7(9)-32(-3)=-63+96=33>0   $$</p>\n<p>So roots are real and distinct.</p></li>\n</ul>\n<p>Hence both values give <strong>two positive roots</strong>.</p>\n\n<p>Therefore, the number of possible integral values of $\\lambda$ is</p>\n<p>$$ \\boxed{2} $$</p>\n<p>So, the correct option is <strong>B</strong>.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "mnsik7wf",
@@ -60,7 +62,8 @@
     "topic": "location-of-roots",
     "difficulty": "medium",
     "solution": "<p>We are given</p>\n<p>$$ \\lim_{x \\to 2} \\frac{\\tan(x-2)\\left(rx^2+(p-2)x-2p\\right)}{(x-2)^2}=5. $$</p>\n<p>We have to first find the relation between $r$ and $p$, and then determine all values of $q$ for which the roots of</p>\n<p>$$ rx^2-px+q=0 $$</p>\n<p>lie in $(0,2)$.</p>\n\n<h2>Step 1: Simplify the limit</h2>\n<p>Let</p>\n<p>$$ f(x)=rx^2+(p-2)x-2p. $$</p>\n<p>Then the given limit becomes</p>\n<p>$$ \\lim_{x\\to 2}\\frac{\\tan(x-2)\\,f(x)}{(x-2)^2}=5. $$</p>\n<p>Now, as $x\\to 2$,</p>\n<p>$$ \\tan(x-2)\\sim x-2. $$</p>\n<p>So the limit becomes</p>\n<p>$$ \\lim_{x\\to 2}\\frac{(x-2)f(x)}{(x-2)^2} = \\lim_{x\\to 2}\\frac{f(x)}{x-2}. $$</p>\n<p>For this limit to be finite, we must have</p>\n<p>$$ f(2)=0. $$</p>\n<p>Now,</p>\n<p>$$ f(2)=r(2)^2+(p-2)(2)-2p=4r+2p-4-2p=4r-4. $$</p>\n<p>So,</p>\n<p>$$ 4r-4=0 \\implies r=1. $$</p>\n<p>Then</p>\n<p>$$ f(x)=x^2+(p-2)x-2p. $$</p>\n<p>Since $f(2)=0$, factor $(x-2)$:</p>\n<p>$$ x^2+(p-2)x-2p=(x-2)(x+p). $$</p>\n<p>Hence the limit becomes</p>\n<p>$$ \\lim_{x\\to 2}\\frac{\\tan(x-2)(x-2)(x+p)}{(x-2)^2} = \\lim_{x\\to 2}\\frac{\\tan(x-2)}{x-2}(x+p). $$</p>\n<p>Using</p>\n<p>$$ \\lim_{t\\to 0}\\frac{\\tan t}{t}=1, $$</p>\n<p>we get</p>\n<p>$$ 1\\cdot (2+p)=5. $$</p>\n<p>So,</p>\n<p>$$ p+2=5 \\implies p=3. $$</p>\n<p>Thus,</p>\n<p>$$ r=1,\\qquad p=3. $$</p>\n\n<h2>Step 2: Form the quadratic equation</h2>\n<p>Now the equation becomes</p>\n<p>$$ x^2-3x+q=0. $$</p>\n<p>We want both roots to lie in $(0,2)$.</p>\n<p>Let the roots be $\\alpha_1,\\alpha_2$. Then</p>\n<p>$$ \\alpha_1+\\alpha_2=3,\\qquad \\alpha_1\\alpha_2=q. $$</p>\n<p>Since both roots lie in $(0,2)$, let us find the condition on $q$.</p>\n\n<h2>Step 3: Use condition for both roots in $(0,2)$</h2>\n<p>Let</p>\n<p>$$ f(x)=x^2-3x+q. $$</p>\n<p>Since coefficient of $x^2$ is positive, parabola opens upward.</p>\n<p>For both roots to lie in $(0,2)$, we need:</p>\n<h3>1. Real roots</h3>\n<p>So discriminant must be non-negative:</p>\n<p>$$ \\Delta=9-4q\\ge 0 \\implies q\\le \\frac94. $$</p>\n<h3>2. Both roots positive</h3>\n<p>Since product of roots is $q$,</p>\n<p>$$ q>0. $$</p>\n<h3>3. Both roots less than $2$</h3>\n<p>Now check value at $x=2$:</p>\n<p>$$ f(2)=4-6+q=q-2. $$</p>\n<p>If both roots are less than $2$, then for an upward parabola, point $x=2$ lies to the right of both roots, so we need</p>\n<p>$$ f(2)>0. $$</p>\n<p>Thus,</p>\n<p>$$ q-2>0 \\implies q>2. $$</p>\n<p>Now combine:</p>\n<p>$$ 2<q\\le \\frac94. $$</p>\n<p>So the set of all possible values of $q$ is</p>\n<p>$$ (\\alpha,\\beta]=(2,\\tfrac94]. $$</p>\n<p>Hence,</p>\n<p>$$ \\alpha=2,\\qquad \\beta=\\frac94. $$</p>\n<p>Therefore,</p>\n<p>$$ 4(\\alpha+\\beta)=4\\left(2+\\frac94\\right) =4\\left(\\frac{17}{4}\\right)=17. $$</p>\n\n<h2>Final Answer</h2>\n<p>$$ \\boxed{17} $$</p>\n<p>So, the correct option is <strong>Option C</strong>.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "m9e5j6oa",
@@ -81,7 +84,8 @@
     "topic": "location-of-roots",
     "difficulty": "medium",
     "solution": "<p>To find the set of all values of $ p \\in \\mathbb{R} $ for which both roots of the equation $ x^2-(p+2)x+(2p+9)=0 $ are negative real numbers, follow these steps:</p>\n\n<p><p><strong>Discriminant Condition</strong>: </p>\n<p>The equation's discriminant $ D $ must be non-negative for real roots:</p>\n<p>$    (p+2)^2 - 4(2p+9) \\geq 0     $</p>\n<p>Simplifying this:</p>\n<p>$    p^2 + 4p + 4 - 8p - 36 \\geq 0 \\quad \\Rightarrow \\quad p^2 - 4p - 32 \\geq 0     $</p>\n<p>This can be factored as:</p>\n<p>$    (p-8)(p+4) \\geq 0     $</p>\n<p>Meaning $ p \\in (-\\infty, -4] \\cup [8, \\infty) $.  …… (1)</p></p>\n<p><p><strong>Sum of Roots Condition</strong>: </p>\n<p>The sum of the roots (which is $ p+2 $) must be negative:</p>\n<p>$    p + 2 < 0 \\quad \\Rightarrow \\quad p < -2     $ …… (2)</p></p>\n<p><p><strong>Product of Roots Condition</strong>:</p>\n<p>The product of the roots $ (2p + 9) $ must be positive:</p>\n<p>$    2p + 9 > 0 \\quad \\Rightarrow \\quad p > -\\frac{9}{2}     $ …… (3)</p></p>\n<p><p><strong>Determine the Valid Interval</strong>:</p>\n<p>Combine the results from conditions (1), (2), and (3). From conditions (1) and (2), we find $ p < -2 $:</p>\n<p>Intersection of $ (-\\infty, -4] $ and $ (-\\frac{9}{2}, -2) $ gives:</p>\n<p>$    p \\in \\left(-\\frac{9}{2}, -4\\right]    $</p></p>\n<p><p><strong>Calculate $\\beta - 2\\alpha$</strong>:</p>\n<p>With $\\alpha = -\\frac{9}{2}$ and $\\beta = -4$, compute:</p>\n<p>$    \\beta - 2\\alpha = -4 - 2\\left(-\\frac{9}{2}\\right) = -4 + 9 = 5    $</p></p>\n\n<p>Therefore, the difference $\\beta - 2\\alpha$ is 5.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1ldo68yjn",
@@ -102,7 +106,8 @@
     "topic": "location-of-roots",
     "difficulty": "medium",
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1le5hv330/3bf12c29-312e-4d43-a5a3-c05d3e6a864c/6c2ba9c0-ad16-11ed-8a8c-4d67f5492755/file-1le5hv331.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1le5hv330/3bf12c29-312e-4d43-a5a3-c05d3e6a864c/6c2ba9c0-ad16-11ed-8a8c-4d67f5492755/file-1le5hv331.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 1st February Evening Shift Mathematics - Quadratic Equation and Inequalities Question 71 English Explanation\">\n<br><br>$$\n\\begin{aligned}\n&amp; f(1)&gt;0 \\Rightarrow k&gt;6 \\\\\\\\\n&amp; f(2)&lt;0 \\Rightarrow k&lt;8 \\\\\\\\\n&amp; f(3)&gt;0 \\Rightarrow k&gt;6 \\\\\\\\\n&amp; k \\in(6,8)\n\\end{aligned}\n$$\n<br><br>Only 1 integral value of $k$ is 7.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "NjnfwqqKfFebUKmJODjgy2xukf44aor4",
@@ -123,7 +128,8 @@
     "topic": "location-of-roots",
     "difficulty": "medium",
     "solution": "Given quadratic equation,<br><br>$$({\\lambda ^2} + 1){x^2} - 4\\lambda x + 2 = 0$$<br><br>Here coefficient of x<sup>2</sup> is ($$\\lambda $$<sup>2</sup> + 1) which is always positive. So quadratic equation is upward parabola.<br><br><picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk1kdnqq/2605942f-0ad2-47fa-bcc5-943d306c530c/a2fcb520-58fe-11eb-9b14-c18ca6002bd8/file-1kk1kdnqr-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk1kdnqq/2605942f-0ad2-47fa-bcc5-943d306c530c/a2fcb520-58fe-11eb-9b14-c18ca6002bd8/file-1kk1kdnqr-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk1kdnqq/2605942f-0ad2-47fa-bcc5-943d306c530c/a2fcb520-58fe-11eb-9b14-c18ca6002bd8/file-1kk1kdnqr-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk1kdnqq/2605942f-0ad2-47fa-bcc5-943d306c530c/a2fcb520-58fe-11eb-9b14-c18ca6002bd8/file-1kk1kdnqr-860w.jpeg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk1kdnqq/2605942f-0ad2-47fa-bcc5-943d306c530c/a2fcb520-58fe-11eb-9b14-c18ca6002bd8/file-1kk1kdnqr-1040w.jpeg\"><source media=\"(max-width: 1220px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk1kdnqq/2605942f-0ad2-47fa-bcc5-943d306c530c/a2fcb520-58fe-11eb-9b14-c18ca6002bd8/file-1kk1kdnqr-1220w.jpeg\"><source media=\"(max-width: 1400px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk1kdnqq/2605942f-0ad2-47fa-bcc5-943d306c530c/a2fcb520-58fe-11eb-9b14-c18ca6002bd8/file-1kk1kdnqr-1400w.jpeg\"><source media=\"(max-width: 1580px)\" srcset=\"https://imagex.cdn.examgoal.net/1kk1kdnqq/2605942f-0ad2-47fa-bcc5-943d306c530c/a2fcb520-58fe-11eb-9b14-c18ca6002bd8/file-1kk1kdnqr-1580w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kk1kdnqq/2605942f-0ad2-47fa-bcc5-943d306c530c/a2fcb520-58fe-11eb-9b14-c18ca6002bd8/file-1kk1kdnqr-1760w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 3rd September Evening Slot Mathematics - Quadratic Equation and Inequalities Question 130 English Explanation\"></picture><br><br>So, either f(0) &lt; 0 and f(1) &gt; 1<br><br>or f(0) &gt; 0 and f(1) &lt; 0<br><br>$$ \\therefore $$ In both those cases,<br><br>f(0) f(1) $$ \\le $$ 0<br><br>$$ \\Rightarrow $$ 2($$\\lambda $$<sup>2</sup> $$-$$ 4$$\\lambda $$ + 3) $$ \\le $$ 0<br><br>$$ \\Rightarrow $$ $$\\lambda $$$$ \\in $$ [1, 3]<br><br>At $$\\lambda $$ = 1 :<br><br>Quadratic equation becomes<br><br>2x<sup>2</sup> $$-$$ 4x + 2 = 0<br><br>$$ \\Rightarrow $$ (x $$-$$ 1)<sup>2</sup> = 0<br><br>$$ \\Rightarrow $$ x = 1, 1<br><br>As both roots can't lie between (0, 1)<br><br>So, $$\\lambda $$ = 1 can't be possible.<br><br>At $$\\lambda $$ = 3 :<br><br>10x<sup>2</sup> $$-$$ 12x + 2 = 0<br><br>$$ \\Rightarrow $$ 5x<sup>2</sup> $$-$$ 6x + 1 = 0<br><br>$$ \\Rightarrow $$ (5x $$-$$ 1) (x $$-$$ 1) = 0<br><br>$$ \\Rightarrow $$ x = 1, $${1 \\over 5}$$<br><br>In the interval (0, 1) exactly one root $${1 \\over 5}$$ present.<br><br>$$ \\therefore $$ $$\\lambda $$ $$ \\in $$ (1, 3]",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "mSNXXAHDAMqkcYrI59bPZ",
@@ -144,7 +150,8 @@
     "topic": "location-of-roots",
     "difficulty": "medium",
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/ysa5p5hg8bwg1xCpN/hGJwhISYcCW0E35JtRh3S4Gk0yL6u/Vd8eNF854ofEQemiTRgcj9/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 10th January Morning Slot Mathematics - Quadratic Equation and Inequalities Question 154 English Explanation\">\n<br><br>Let f(x) = (c $$-$$ 5)x<sup>2</sup> $$-$$ 2cx + c $$-$$ 4\n<br><br>$$ \\therefore $$&#160;&#160;f(0)f(2) &lt; 0 &#160;&#160;&#160;&#160;&#160;. . . . .(1)\n<br><br>&amp; f(2)f(3) &lt; 0&#160;&#160;&#160;&#160;&#160;&#160;. . . .    .(2)\n<br><br>from (1) and (2)\n<br><br>(c $$-$$ 4)(c $$-$$ 24) &lt; 0\n<br><br>&amp; (c $$-$$ 24)(4c $$-$$ 49) &lt; 0\n<br><br>$$ \\Rightarrow $$&#160;&#160;$${{49} \\over 4}$$ &lt; c &lt; 24\n<br><br>$$ \\therefore $$&#160;&#160;s = {113, 14, 15, . . . . . 23}\n<br><br>Number of elements in set S = 11",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "pX6k4PzHt3u5DKh2xhfDB",
@@ -165,7 +172,8 @@
     "topic": "location-of-roots",
     "difficulty": "medium",
     "solution": "x<sup>2</sup> $$-$$mx + 4 = 0\n<br><br><img src=\"https://imagex.cdn.examgoal.net/vMTlkt0hKSXHtj8Fo/GSc6UEzIPJaVqCxRUs54NHFFr70LW/AOmaknNeRZTBO6J37rZuWB/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th January Evening Slot Mathematics - Quadratic Equation and Inequalities Question 156 English Explanation\">\n<b>Case-I :</b>\n<br><br>D &gt; 0\n<br><br>m<sup>2</sup> $$-$$ 16 &gt; 0\n<br><br>$$ \\Rightarrow $$&#160;&#160;m $$ \\in $$ ($$-$$ $$\\infty $$, $$-$$ 4) $$ \\cup $$ (4, $$\\infty $$)\n<br><br><b>Case-II :</b>\n<br><br>$$ \\Rightarrow \\,\\,1 &lt; {{ - b} \\over {2a}} &lt; 5$$\n<br><br>$$ \\Rightarrow \\,\\,1 &lt; {m \\over 2} &lt; 5 \\Rightarrow \\,m \\in \\left( {2,10} \\right)$$\n<br><br><b>Case-III :</b>\n<br><br>f(1) &gt; 0&#160;&#160;&#160;and f(5) &gt; 0\n<br><br>1 $$-$$ m + 4 &gt; 0&#160;&#160;&#160;and  25 $$-$$ 5m + 4 &gt; 0\n<br><br>m &lt; 5&#160;&#160;&#160;and  m &lt; $${{29} \\over 5}$$\n<br><br><b>Case-IV :</b>\n<br><br>Let one root is x = 1\n<br><br>1 $$-$$ m + 4 = 0\n<br><br>m = 5\n<br><br>Now equation x<sup>2</sup> $$-$$ 5x + 4 = 0\n<br><br>(x $$-$$ 1) (x $$-$$ 4) = 0\n<br><br>x = 1 i.e. m = 5 is also included\n<br><br>hence m $$ \\in $$ (4, 5]\n<br><br>So given option is (4, 5)\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "TXEg01X8aehM8QjH",
@@ -182,7 +190,8 @@
     "difficulty": "medium",
     "solution": "<p>We have $${x^2} - 8kx + 16({k^2} - k + 1) = 0$$</p>\n<p>$$D > 0 \\Rightarrow k > 1$$ ..... (1)</p>\n<p>$${{ - b} \\over {2a}} > 4 \\Rightarrow {{8k} \\over 2} > 4$$</p>\n<p>$$ \\Rightarrow k > 1$$ ..... (2)</p>\n<p>Now, $$f(4) \\ge 0 \\Rightarrow 16 - 32k + 16({k^2} - k + 1) \\ge 0$$</p>\n<p>$${k^2} - 3k + 2 \\ge 0$$</p>\n<p>$$k \\le 1 \\cup k \\ge 2$$ ..... (3)</p>\n<p>Using Eqs. (1), (2) and (3), we get $${k_{\\min }} = 2$$.</p>",
     "section": "Sec 4",
-    "instruction": ""
+    "instruction": "",
+    "type": "NUMERICAL"
   },
   {
     "id": "pQ8kOFxyh1NO0kIK",
@@ -203,6 +212,7 @@
     "topic": "location-of-roots",
     "difficulty": "easy",
     "solution": "Equation $${x^2} - 2mx + {m^2} - 1 = 0$$\n<br><br>$${\\left( {x - m} \\right)^2} - 1 = 0$$\n<br><br>or $$\\left( {x - m + 1} \\right)\\left( {x - m - 1} \\right) = 0$$\n<br><br>$$x = m - 1,m + 1$$\n<br><br>$$m - 1 &gt;  - 2$$ and $$m + 1 &lt; 4$$\n<br><br>$$ \\Rightarrow m &gt;  - 1$$ and $$m&lt;3$$ \n<br><br>or $$\\,\\,\\, - 1 &lt; m &lt; 3$$\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   }
 ]

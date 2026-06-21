@@ -119,7 +119,33 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
 
   const currentStatus = qStatus[currentQuestion.id] || { visited: true, status: 'not_answered' };
   const selectedAnswer = currentStatus.selectedOption;
-  const isNumerical = currentQuestion.type === 'Numerical Value' || currentQuestion.type === 'Integer';
+  
+  const optionsToRender = (currentQuestion.question?.en?.options && currentQuestion.question.en.options.length > 0) ? currentQuestion.question.en.options : (currentQuestion.options || []);
+  const isSubjective = currentQuestion.type === 'SUBJECTIVE' || currentQuestion.type === 'subjective';
+  const isMultiCorrect = !isSubjective && (
+    currentQuestion.type === 'MULTI_CORRECT' || 
+    currentQuestion.type === 'multi_correct' || 
+    currentQuestion.type === 'multiple_correct' || 
+    currentQuestion.type === 'MCQM' || 
+    currentQuestion.type === 'mcqm' || 
+    currentQuestion.type === 'MCQ (Multiple Correct)' || 
+    currentQuestion.type === 'Multiple Correct' || 
+    (currentQuestion.correctOptionsArray && currentQuestion.correctOptionsArray.length > 0) || 
+    currentQuestion.isMultiCorrect || 
+    (currentQuestion.question?.en?.correct_options && currentQuestion.question.en.correct_options.length > 1) ||
+    (currentQuestion.correctAnswer && (String(currentQuestion.correctAnswer).includes(',') || String(currentQuestion.correctAnswer).toLowerCase().includes('and') || String(currentQuestion.correctAnswer).includes('&'))) ||
+    Array.isArray(currentQuestion.correctOptionIndex) ||
+    (currentQuestion.question?.en?.content && (
+       currentQuestion.question.en.content.toLowerCase().includes('one or more') ||
+       currentQuestion.question.en.content.toLowerCase().includes('multiple correct')
+    )) ||
+    (typeof currentQuestion.question === 'string' && (
+       currentQuestion.question.toLowerCase().includes('one or more') ||
+       currentQuestion.question.toLowerCase().includes('multiple correct')
+    ))
+  );
+  const isNumerical = !isSubjective && !isMultiCorrect && (currentQuestion.type === 'Numerical Value' || currentQuestion.type === 'Integer' || currentQuestion.type === 'numerical' || currentQuestion.type === 'NUMERICAL' || currentQuestion.type === 'integer-value' || optionsToRender.length === 0);
+
 
   const goToNextUnvisited = (nextIdx) => {
     const targetQ = questions[nextIdx];
@@ -137,18 +163,45 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
   };
 
   const handleOptionSelect = (val) => {
-    setQStatus(prev => ({
-      ...prev,
-      [currentQuestion.id]: {
-        ...prev[currentQuestion.id],
-        visited: true,
-        selectedOption: val,
+    setQStatus(prev => {
+      const currentStat = prev[currentQuestion.id] || { visited: true, status: 'not_answered' };
+      if (isMultiCorrect) {
+        const selected = Array.isArray(currentStat.selectedOption) ? currentStat.selectedOption : [];
+        let newSelected;
+        if (selected.includes(val)) {
+           newSelected = selected.filter(x => x !== val).sort((a,b) => a-b);
+        } else {
+           newSelected = [...selected, val].sort((a,b) => a-b);
+        }
+        return {
+          ...prev,
+          [currentQuestion.id]: {
+            ...currentStat,
+            visited: true,
+            selectedOption: newSelected,
+          }
+        };
+      } else {
+        return {
+          ...prev,
+          [currentQuestion.id]: {
+            ...currentStat,
+            visited: true,
+            selectedOption: val,
+          }
+        };
       }
-    }));
+    });
+  };
+
+  const isAnsSelected = (selected) => {
+    if (selected === undefined || selected === '') return false;
+    if (Array.isArray(selected)) return selected.length > 0;
+    return true;
   };
 
   const handleSaveAndNext = () => {
-    const isAns = selectedAnswer !== undefined && selectedAnswer !== '';
+    const isAns = isAnsSelected(selectedAnswer);
     setQStatus(prev => ({
       ...prev,
       [currentQuestion.id]: {
@@ -162,7 +215,7 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
   };
 
   const handleSaveAndMarkForReview = () => {
-    const isAns = selectedAnswer !== undefined && selectedAnswer !== '';
+    const isAns = isAnsSelected(selectedAnswer);
     setQStatus(prev => ({
       ...prev,
       [currentQuestion.id]: {
@@ -259,9 +312,18 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
                  </div>
                  <div>
                     <div className="text-xs text-gray-500 font-medium">Time Spent: 00:00 | <span className="text-green-600 font-bold">+4</span> <span className="text-red-500 font-bold">-1</span></div>
-                    <div className="mt-0.5 inline-block px-2 py-0.5 bg-[#e3f2fd] text-[#1976d2] text-[11px] font-bold rounded-sm uppercase tracking-wider">
-                      {currentQuestion.type || 'MCQ Single Answer'}
-                    </div>
+                    {(() => {
+                      const t = currentQuestion.type || currentQuestion.questionType || 'SCQ';
+                      const isMCQM = t === 'MULTI_CORRECT' || t === 'MCQM' || t === 'multi_correct' || t === 'multiple_correct' || t === 'mcqm' || (Array.isArray(currentQuestion.correctOptionIndex) && currentQuestion.correctOptionIndex.length > 1);
+                      const isSubj = t === 'SUBJECTIVE' || t === 'subjective';
+                      const isNum = t === 'NUMERICAL' || t === 'numerical' || currentQuestion.answerType === 'numerical';
+                      let label = isMCQM ? 'MCQM' : (isSubj ? 'SUBJECTIVE' : (isNum ? 'NUMERICAL' : 'SCQ'));
+                      return (
+                        <div className={`mt-0.5 inline-block px-2 py-0.5 text-[11px] font-bold rounded-sm uppercase tracking-wider border ${isMCQM ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' : (isNum ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' : (isSubj ? 'bg-purple-500/10 text-purple-500 border-purple-500/20' : 'bg-green-500/10 text-green-600 border-green-500/20'))}`}>
+                          {label}
+                        </div>
+                      );
+                    })()}
                  </div>
               </div>
               <div className="flex items-center gap-1">
@@ -285,9 +347,13 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
 
             {/* Options */}
             <div className="px-6 pb-6 space-y-3">
+              
+              
               {!isNumerical ? (
-                (currentQuestion.options || []).map((opt, idx) => {
-                  const isSelected = selectedAnswer === idx;
+                optionsToRender.map((opt, idx) => {
+                  const isSelected = isMultiCorrect 
+                      ? (Array.isArray(selectedAnswer) && selectedAnswer.includes(idx))
+                      : selectedAnswer === idx;
                   const labelChar = String.fromCharCode(65 + idx); // A, B, C, D
                   return (
                     <button
@@ -295,10 +361,10 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
                       onClick={() => handleOptionSelect(idx)}
                       className={`w-full text-left p-3 flex items-start gap-3 border ${isSelected ? 'border-[#3f51b5] bg-[#f0f4f8]' : 'border-gray-200 bg-[#f9f9f9]'} hover:border-[#3f51b5] transition-colors rounded-sm`}
                     >
-                      <div className={`w-7 h-7 shrink-0 rounded-full flex items-center justify-center font-bold text-sm ${isSelected ? 'bg-[#3f51b5] text-white' : 'bg-[#3f51b5] text-white'}`}>
+                      <div className={`w-7 h-7 shrink-0 flex items-center justify-center font-bold text-sm ${isMultiCorrect ? 'rounded-md' : 'rounded-full'} ${isSelected ? 'bg-[#3f51b5] text-white' : 'bg-[#3f51b5] text-white'}`}>
                         {labelChar}
                       </div>
-                      <div className="flex-1 mt-0.5" style={{ fontSize: `${Math.max(1, fontSize - 0.05)}rem` }} dangerouslySetInnerHTML={{ __html: fixMathJax(opt) }} />
+                      <div className="flex-1 mt-0.5" style={{ fontSize: `${Math.max(1, fontSize - 0.05)}rem` }} dangerouslySetInnerHTML={{ __html: fixMathJax(opt.content || opt) }} />
                     </button>
                   );
                 })

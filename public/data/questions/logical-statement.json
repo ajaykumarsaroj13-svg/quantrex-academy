@@ -13,7 +13,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "$$\n\\begin{array}{|c|c|c|c|c|c|c|c|}\n\\hline \\boldsymbol{p} & \\boldsymbol{q} & \\boldsymbol{r} & \\boldsymbol{p} \\vee \\boldsymbol{q} & \\boldsymbol{p} \\vee \\boldsymbol{r} & \\begin{array}{c}\n(\\boldsymbol{p} \\vee \\boldsymbol{q}) \\wedge \\\\\n(\\boldsymbol{p} \\vee \\boldsymbol{r})\n\\end{array} & \\boldsymbol{q} \\vee \\boldsymbol{r} & \\begin{array}{c}\n(\\boldsymbol{p} \\vee \\boldsymbol{q}) \\wedge(\\boldsymbol{p} \\vee \\boldsymbol{r}) \\\\\n\\Rightarrow(\\boldsymbol{q} \\vee \\boldsymbol{r})\n\\end{array} \\\\\n\\hline \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} \\\\\n\\hline \\mathrm{T} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} \\\\\n\\hline \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} \\\\\n\\hline \\mathrm{T} & \\mathrm{F} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{F} & \\mathrm{F} \\\\\n\\hline \\mathrm{F} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} & \\mathrm{T} \\\\\n\\hline \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} \\\\\n\\hline \\mathrm{F} & \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{F} & \\mathrm{T} & \\mathrm{T} \\\\\n\\hline \\mathrm{F} & \\mathrm{F} & \\mathrm{F} & \\mathrm{F} & \\mathrm{F} & \\mathrm{F} & \\mathrm{F} & \\mathrm{T} \\\\\n\\hline\n\\end{array}\n$$\n<br/><br/>Hence, the total number of ordered triplets are 7.",
-    "section": "B"
+    "section": "B",
+    "type": "NUMERICAL"
   },
   {
     "id": "ldqvxf4d",
@@ -34,7 +35,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "<p>The given expression is</p>\n<p>$$P \\to  \\sim Q \\wedge R$$</p>\n<p>$$ \\equiv ( \\sim P) \\vee ( \\sim Q \\wedge R)$$</p>\n<p>$$ \\equiv ( \\sim P \\vee  \\sim Q) \\wedge ( \\sim P \\vee R)$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l5baqdkw",
@@ -55,7 +57,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "<p>$$\\because$$ Given statement is</p>\n<p>(A $$\\wedge$$ C) $$\\to$$ B</p>\n<p>Then its negation is</p>\n<p>$$\\sim$$ {(A $$\\wedge$$ C) $$\\to$$ B}</p>\n<p>or $$\\sim$$ {$$\\sim$$ (A $$\\wedge$$ C) $$\\vee$$ B}</p>\n<p>$$\\therefore$$ (A $$\\wedge$$ C) $$\\wedge$$ ($$\\sim$$ B)</p>\n<p>or ($$\\sim$$ B) $$\\wedge$$ (A $$\\wedge$$ C)</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l6f32pyv",
@@ -76,7 +79,8 @@
     "topic": "logical-statement",
     "difficulty": "medium",
     "solution": "<p>P : Ramu is intelligent</p>\n<p>Q : Ramu is rich</p>\n<p>R : Ramu is not honest</p>\n<p>Given statement, \"Ramu is intelligent and honest if and only if Ramu is not rich\"</p>\n<p>$$ = (P \\wedge  \\sim R) \\Leftrightarrow \\, \\sim Q$$</p>\n<p>So, negation of the statement is</p>\n<p>$$ \\sim [(P \\wedge  \\sim R) \\Leftrightarrow \\, \\sim Q]$$</p>\n<p>$$ =  \\sim [\\{  \\sim (P \\wedge  \\sim R) \\vee \\, \\sim Q\\}  \\wedge \\{ Q \\vee (P \\wedge  \\sim R)\\} ]$$</p>\n<p>$$ = ((P \\wedge  \\sim R) \\wedge Q) \\vee ( \\sim Q \\wedge ( \\sim P \\vee R))$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1l6notty1",
@@ -97,7 +101,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "<p>p : Ramesh listens to music</p>\n<p>q : Ramesh is out of his village</p>\n<p>r : It is Sunday</p>\n<p>s : It is Saturday</p>\n<p>p $$\\to$$ q conveys the same p only if q</p>\n<p>Statement \"Ramesh listens to music only if he is in his village and it is Sunday or Saturday\"</p>\n<p>$$p \\Rightarrow (( \\sim \\,q)\\, \\wedge \\,(r\\, \\vee \\,s))$$</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1krrp2k1g",
@@ -118,7 +123,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "Truth Table <br><br><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">P</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">P$$ \\to $$q</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "LWR517jHskS2az6BJG1klt77hyt",
@@ -139,7 +145,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "Contrapositive of p $$ \\to $$ q is ~q $$ \\to $$ ~p\n<br><br>p : you will work\n<br><br>q : you will earn money\n<br><br>~q : you will not earn money\n<br><br>~p : you will not work\n<br><br>$$ \\therefore $$ ~q $$ \\to $$ ~p : If you will not earn money, you will not work",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1krzlvswd",
@@ -160,7 +167,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "p : weather is good<br><br>q : ground is not wet<br><br>$$\\sim$$ (p $$ \\wedge $$ q) $$ \\equiv $$ $$\\sim$$ p $$ \\vee $$ $$\\sim$$ q<br><br>$$\\equiv$$ weather is not good or ground is wet",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "1kryepvv0",
@@ -181,7 +189,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "P : for all M &gt; 0, there exists x$$\\in$$S such that x $$\\ge$$ M.<br><br>$$ \\sim $$ P : there exists M &gt; 0, for all x$$\\in$$S<br><br>Such that x &lt; M<br><br>Negation of 'there exists' is 'for all'.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "DnY3UxFkGprb04C8H1jgy2xukewqg1g8",
@@ -202,7 +211,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "Let p denotes statement\n<br><br>p : I reach the station in time.\n<br><br>q : I will catch the train.\n<br><br>Contrapositive of p $$ \\to $$ q\nis $$ \\sim $$q $$ \\to $$ $$ \\sim $$p\n<br><br>$$ \\sim $$q $$ \\to $$ $$ \\sim $$p :  If I will not catch the train, then I do not reach the station in time.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "mQhzgCsAFvfKM3rNxDjgy2xukfah5akq",
@@ -223,7 +233,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "p = function is differentiable at a\n<br><br>q = function is continuous at a\n<br><br>Contrapositive of statements p $$ \\to $$ q is\n<br><br>$$ \\sim $$q $$ \\to $$ $$ \\sim $$p\n<br><br>$$ \\therefore $$ Contrapositive statement is :\n<br><br> If a function f is not continuous at a, then it is not differentiable at a.\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "hLzGTd37OiUHlAyvkcjgy2xukg38l1kq",
@@ -244,7 +255,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "Let,\np : n<sup>3</sup>–1 is even, \n<br>q : n is odd\n<br><br>Contrapositive of p $$ \\to $$ q = $$ \\sim $$q $$ \\to $$ $$ \\sim $$p\n<br><br>$$ \\Rightarrow $$ If n is not odd then n<sup>3</sup> – 1 is not even.\n<br><br>$$ \\Rightarrow $$ For an integer n, if n is even, then n<sup>3</sup> – 1 is odd.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "dA7B1752ytqOXgSd827k9k2k5irgtwi",
@@ -265,7 +277,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "p = $$\\sqrt 5 $$ is an integer.\n<br><br>q : 5 is irrational\n<br><br>$$ \\sim $$$$\\left( {p \\vee q} \\right)$$ $$ \\equiv $$ $$ \\sim $$p $$ \\wedge $$ $$ \\sim $$q\n<br><br>= $$\\sqrt 5 $$ is not an integer and 5 is not irrational.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "XGWuG9V4dktxwFEkSEcmf",
@@ -286,7 +299,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "It is obvious",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "WGPsr0o7H2TKzUFjIMsK9",
@@ -307,7 +321,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "P(n) : n<sup>2</sup> $$-$$ n + 41 is prime\n<br><br>P(5) = 61 which is prime\n<br><br>P(3) = 47 which is also prime",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "oBwMmAnQrawvLlbPhGr5h",
@@ -328,7 +343,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "Let,\n<br><br>p : two numbers are not equal\n<br><br>q : squares of two numbers are not equal\n<br><br>Contrapositive of p $$ \\to $$ q is $$ \\sim $$q $$ \\to $$ $$ \\sim $$p.\n<br><br>$$ \\therefore $$ $$ \\sim $$q $$ \\to $$ $$ \\sim $$p means \"If the squares of two numbers are equal, then the numbers are equal\".",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "lCnssXZcN2ubzefec6xFx",
@@ -349,7 +365,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "Let p = you are born in India.\n<br><br>q = you are a citizen of India.\n<br><br>$$ \\therefore $$ $$ \\sim $$ p = you are not born in India.\n<br><br>$$ \\sim $$ q = you are not a citizen of India.\n<br><br>We know Contrapositive of p $$ \\to $$ q is ~q $$ \\to $$ ~p\n<br><br>So contrapositive of statement will be :\n<br><br>“If you are not a citizen of India, then you are\nnot born in India.”\n",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "v9SVtI3nIde0ejoVgeEB0",
@@ -370,7 +387,8 @@
     "topic": "logical-statement",
     "difficulty": "medium",
     "solution": "<b>Statement p :</b>\n<br>sin 120<sup>o</sup> = cos 30<sup>o</sup> = $${{\\sqrt 3 } \\over 2}$$ $$ \\Rightarrow $$ 2 sin 120<sup>o</sup> = $$\\sqrt 3 $$\n<br><br>So, $$\\sqrt {1 + \\sin {{240}^o}}  - \\sqrt {1 - \\sin {{240}^o}} $$\n<br><br> $$ = \\sqrt {{{1 - \\sqrt 3 } \\over 2}}  - \\sqrt {{{1 + \\sqrt 3 } \\over 2}}  \\ne \\sqrt 3 $$\n<br><br><b>Statement q :</b>\n<br>So, &nbsp;&nbsp;A + B + C + D = 2$$\\pi $$ \n<br><br>$$ \\Rightarrow $$ $${{A + C} \\over 2} + {{B + D} \\over 2} = \\pi $$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;cos$$\\left( {{{A + C} \\over 2}} \\right) + \\cos \\left( {{{B + D} \\over 2}} \\right)$$\n<br><br>= cos $$\\left( {{{A + C} \\over 2}} \\right)$$ $$-$$ cos$$\\left( {{{A + C} \\over 2}} \\right) = 0$$\n<br><br>Therefore, statement p is false and statement q is true.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "5pVUlnZkfL3JgxJQQJldg",
@@ -391,7 +409,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "Let,\n<br><br>p : two numbers are not equal\n<br><br>q : squares of two numbers are not equal\n<br><br>Contrapositive of p $$ \\to $$ q is $$ \\sim $$q $$ \\to $$ $$ \\sim $$p.\n<br><br>$$ \\therefore $$ $$ \\sim $$q $$ \\to $$ $$ \\sim $$p means \"If the squares of two numbers are equal, then the numbers are equal\".",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "yhonGffUZ1g1RreXDYZq2",
@@ -412,7 +431,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "Contrapositive of  p $$ \\to $$ q is $$ \\sim $$q $$ \\to $$ $$ \\sim $$p.\n<br><br>Here,\n<br><br>Let\n<br><br>&nbsp;&nbsp;&nbsp;p = Side of a square is doubles.\n<br><br>&nbsp;&nbsp;&nbsp;q =  Area of square increases four times.\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$$ \\sim $$q $$ \\to $$&nbsp;$$ \\sim $$p = If the area of a square does not increase four times, then its side is not doubled.",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "pnAtpDdWdcKtXojQpGxye",
@@ -433,7 +453,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "Contrapositive of P : If 7 is not divisible by 2, \nthen 7 is not an odd number.\n<br><br>This statement is false.\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp; V<sub>1</sub> = False (F)\n<br><br>Contrapositive of Q : If 7 is not an odd number \n,then 7 is not a prime number.\n<br><br>This statement is true.\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;V<sub>2</sub> = True (T)\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;(V<sub>1</sub>, V<sub>2</sub>) = (F, T).",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "LQt8RJq61sF54YAA",
@@ -454,7 +475,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "<p>Let, p : I become a teacher</p>\n<p>q : I will open a school</p>\n<p>$$\\therefore$$ \"If I become a teacher, then I will open a school\", is p $$\\to$$ q</p>\n<p>So, negation of $$(p \\to q) =  \\sim (p \\to q) = p \\wedge  \\sim q$$ = I will become a teacher and I will not open a school</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "aZuPum2ZGIl6pDOy",
@@ -475,7 +497,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "\"Suman is brilliant and dishonest\" an be expressed as : $${P \\wedge  \\sim R}$$\n<br><br>So “Suman is brilliant and dishonest if and only if Suman is rich” can be expressed as :\n<br><br>$$\\left( {P \\wedge  \\sim R} \\right) \\leftrightarrow Q$$\n<br><br>Now negation of this = $$ \\sim \\left[ {\\left( {P \\wedge  \\sim R} \\right) \\leftrightarrow Q} \\right]$$\n<br><br>You should know, $$p \\leftrightarrow q \\equiv q \\leftrightarrow p$$\n<br><br>So, $$ \\sim \\left[ {\\left( {P \\wedge  \\sim R} \\right) \\leftrightarrow Q} \\right] \\equiv  \\sim \\left[ {Q \\leftrightarrow \\left( {P \\wedge  \\sim R} \\right)} \\right]$$",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "O0QHhaazXNzgQQym",
@@ -496,7 +519,8 @@
     "topic": "logical-statement",
     "difficulty": "easy",
     "solution": "<p>Given that S is a non-empty subset of R.</p>\n<p>$$\\bullet$$ P : There is a rational number x $$\\in$$ S such that x > 0.</p>\n<p>Now, we need to find the negation of P. Clearly, P is equivalent to saying that \"There is a positive rational number in S.</p>\n<p>So, its negation ($$\\sim$$ P) is \"There is no positive rational number in S\".</p>\n<p>Thus, for $$\\sim$$ P : There exists no positive rational number in S.</p>\n<p>$$\\bullet$$ $$\\Leftrightarrow$$ $$\\sim$$ P : Every rational number x $$\\in$$ S satisfies x $$\\le$$ 0.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   },
   {
     "id": "IKF8zEfPChsloJ2J",
@@ -517,6 +541,7 @@
     "topic": "logical-statement",
     "difficulty": "medium",
     "solution": "<p>p : x is an irrational number</p>\n<p>q : y is a transcendental number</p>\n<p>r : x is a rational number, if y is a transcendental number</p>\n<p>$$\\Rightarrow$$ r : $$\\sim$$ p $$\\leftrightarrow$$ q</p>\n<p>S<sub>1</sub> : r $$\\equiv$$ q $$\\vee$$ p</p>\n<p>and S<sub>2</sub> : r $$\\equiv$$ $$\\sim$$ (p $$\\leftrightarrow$$ $$\\sim$$ q)</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 966px\">\n<colgroup>\n<col style=\"width: 51px\">\n<col style=\"width: 53px\">\n<col style=\"width: 83px\">\n<col style=\"width: 83px\">\n<col style=\"width: 184px\">\n<col style=\"width: 92px\">\n<col style=\"width: 193px\">\n<col style=\"width: 227px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">p</th>\n    <th class=\"tg-baqh\">q</th>\n    <th class=\"tg-baqh\">$$ \\sim p$$</th>\n    <th class=\"tg-baqh\">$$ \\sim q$$</th>\n    <th class=\"tg-baqh\">r<br>$$ \\sim p \\leftrightarrow q$$<br></th>\n    <th class=\"tg-baqh\">Statement I<br>$$q \\vee p$$<br></th>\n    <th class=\"tg-baqh\">$$(p \\leftrightarrow  \\sim q)$$</th>\n    <th class=\"tg-baqh\">Statement II<br>$$ \\sim (p \\leftrightarrow  \\sim q)$$<br></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">T</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">F</td>\n    <td class=\"tg-baqh\">T</td>\n  </tr>\n</tbody>\n</table></p>\n<p>It is clear from the table that r is not equivalent to either of the statements.</p>\n<p>Therefore, both statements are false.</p>",
-    "section": "A"
+    "section": "A",
+    "type": "SCQ"
   }
 ]
