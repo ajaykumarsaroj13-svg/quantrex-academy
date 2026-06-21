@@ -18,7 +18,7 @@ export async function fetchBlackBookQuestions(chapterId = 'function') {
     console.warn('[BlackBook] API fetch failed, using local JSON:', e.message);
     // Fallback: use global variable
     const fullData = window.DEFAULT_BLACKBOOK || [];
-    const chapter = fullData[0];
+    const chapter = fullData.find(c => c.id === chapterId) || fullData[0];
     return chapter?.questions?.map((q, idx) => ({
       ...q,
       questionIndex: idx,
