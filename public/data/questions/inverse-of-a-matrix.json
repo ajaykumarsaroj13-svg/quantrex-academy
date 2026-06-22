@@ -17,10 +17,9 @@
     "subject": "Mathematics",
     "topic": "inverse-of-a-matrix",
     "difficulty": "hard",
-    "solution": "<p>We can write the matrix as</p>\n<p>$$ M = \\begin{bmatrix}2 & -1 \\\\ 1 & 0\\end{bmatrix} = \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} + \\begin{bmatrix}1 & 0 \\\\ 0 & 1\\end{bmatrix} $$</p>\n<p>So, let $ B = \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} $. Then $ M = B + I $.</p>\n<p><b>Find $ B^2 $</b></p>\n<p>$$ B^2 = \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} = \\begin{bmatrix}0 & 0 \\\\ 0 & 0\\end{bmatrix} $$</p>\n<p>This means $ B $ is a nilpotent matrix, i.e., its square is a zero matrix.</p>\n<p><b>Expand $ M^{26} $ using the Binomial Theorem</b></p>\n<p>$$ M^{26} = (B + I)^{26} = {^{26}C_0} I + {^{26}C_1} B + {^{26}C_2} B^2 + \\ldots + {^{26}C_{26}} B^{26} $$</p>\n<p>As $ B^2 = 0 $, all higher powers of $ B $ are zero. So,</p>\n<p>$$ M^{26} = I + 26B $$</p>\n<p><b>Substitute the values</b></p>\n<p>$$ M^{26} = \\begin{bmatrix}1 & 0 \\\\ 0 & 1\\end{bmatrix} + 26 \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} = \\begin{bmatrix}27 & -26 \\\\ 26 & -25\\end{bmatrix} $$</p>\n<p>So, $ p = 27, \\, q = -26, \\, r = 26, \\, s = -25. $</p>\n<p><b>Find the sum $ D = \\sum_{k=1}^{26} M^k $</b></p>\n<p>$$ D = M + M^2 + M^3 + \\ldots + M^{26} $$</p>\n<p>Substitute $ M = B + I $:</p>\n<p>$$ D = (B + I) + (B + I)^2 + (B + I)^3 + \\ldots + (B + I)^{26} $$</p>\n<p>Since $ (B + I)^k = I + kB $, we have</p>\n<p>$$ D = (I + B) + (I + 2B) + (I + 3B) + \\ldots + (I + 26B) $$</p>\n<p>Combine like terms:</p>\n<p>$$ D = 26I + B(1 + 2 + 3 + \\ldots + 26) $$</p>\n<p>The sum $ 1 + 2 + 3 + \\ldots + 26 = 351 $, so</p>\n<p>$$ D = 26I + 351B $$</p>\n<p>Substitute the matrices:</p>\n<p>$$ \\sum_{k=1}^{26} M^k = \\begin{bmatrix}377 & -351 \\\\ 351 & -325\\end{bmatrix} = \\begin{bmatrix}a & b \\\\ c & d\\end{bmatrix} $$</p>\n<p>Hence, $ a = 377, \\, b = -351, \\, c = 351, \\, d = -325. $</p>\n<p>So, option (B) is incorrect.</p>\n<p><b>Check option (C)</b></p>\n<p>Given system of equations:</p>\n<p>$$ 27x - 26y = m $$</p>\n<p>$$ 26x - 25y = n $$</p>\n<p>Determinant of coefficients:</p>\n<p>$$ \\left|\\begin{array}{rr} 27 & -26 \\\\ 26 & -25 \\end{array}\\right| \\neq 0 $$</p>\n<p>Since the determinant is non-zero, a unique solution exists.</p>\n<p>On solving, we get:</p>\n<p>$$ x = -24n - 25m, \\quad y = -23n - 26m $$</p>\n<p>Both $ x $ and $ y $ are integers. Hence, option (C) is correct.</p>\n<p><b>Check option (D)</b></p>\n<p>We have:</p>\n<p>$$ \\left|\\begin{array}{cc} a + t & b \\\\ c & d + t \\end{array}\\right| = ad + at + dt + t^2 - bc $$</p>\n<p>Substitute $ a = 377, b = -351, c = 351, d = -325 $:</p>\n<p>$$ = (377)(-325) + t(52) + t^2 + (351)(351) = t^2 + 52t + 676 = (t + 26)^2 $$</p>\n<p>Since $ (t + 26)^2 \\neq 0 $ for all $ t > 0 $, the determinant is non-zero, so a unique solution exists. Option (D) is correct.</p>\n<p><b>Check option (A)</b></p>\n<p>Let $ N = \\begin{bmatrix}j & k \\\\ l & m\\end{bmatrix} $.</p>\n<p>Compute $ MN $:</p>\n<p>$$ MN = \\begin{bmatrix}2 & -1 \\\\ 1 & 0\\end{bmatrix} \\begin{bmatrix}j & k \\\\ l & m\\end{bmatrix} = \\begin{bmatrix}2j - l & 2k - m \\\\ j & k\\end{bmatrix} $$</p>\n<p>Compute $ N\\begin{bmatrix}1 & 1 \\\\ 0 & 1\\end{bmatrix} $:</p>\n<p>$$ N\\begin{bmatrix}1 & 1 \\\\ 0 & 1\\end{bmatrix} = \\begin{bmatrix}j & j + k \\\\ l & l + m\\end{bmatrix} $$</p>\n<p>Comparing both, we get $ j = l $ and $ 2k - m = j + k $ \u27f9 $ m - k = j $.</p>\n<p>Determinant of $ N $:</p>\n<p>$$ |N| = jm - lk = j(m - k) $$</p>\n<p>This is not always zero if $ j \\neq 0 $ and $ m \\neq k $, which means $ N $ can be invertible. Hence, option (A) is correct.</p>",
+    "solution": "<p>We can write the matrix as</p>\n<p>$$ M = \\begin{bmatrix}2 & -1 \\\\ 1 & 0\\end{bmatrix} = \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} + \\begin{bmatrix}1 & 0 \\\\ 0 & 1\\end{bmatrix} $$</p>\n<p>So, let $ B = \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} $. Then $ M = B + I $.</p>\n<p><b>Find $ B^2 $</b></p>\n<p>$$ B^2 = \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} = \\begin{bmatrix}0 & 0 \\\\ 0 & 0\\end{bmatrix} $$</p>\n<p>This means $ B $ is a nilpotent matrix, i.e., its square is a zero matrix.</p>\n<p><b>Expand $ M^{26} $ using the Binomial Theorem</b></p>\n<p>$$ M^{26} = (B + I)^{26} = {^{26}C_0} I + {^{26}C_1} B + {^{26}C_2} B^2 + \\ldots + {^{26}C_{26}} B^{26} $$</p>\n<p>As $ B^2 = 0 $, all higher powers of $ B $ are zero. So,</p>\n<p>$$ M^{26} = I + 26B $$</p>\n<p><b>Substitute the values</b></p>\n<p>$$ M^{26} = \\begin{bmatrix}1 & 0 \\\\ 0 & 1\\end{bmatrix} + 26 \\begin{bmatrix}1 & -1 \\\\ 1 & -1\\end{bmatrix} = \\begin{bmatrix}27 & -26 \\\\ 26 & -25\\end{bmatrix} $$</p>\n<p>So, $ p = 27, \\, q = -26, \\, r = 26, \\, s = -25. $</p>\n<p><b>Find the sum $ D = \\sum_{k=1}^{26} M^k $</b></p>\n<p>$$ D = M + M^2 + M^3 + \\ldots + M^{26} $$</p>\n<p>Substitute $ M = B + I $:</p>\n<p>$$ D = (B + I) + (B + I)^2 + (B + I)^3 + \\ldots + (B + I)^{26} $$</p>\n<p>Since $ (B + I)^k = I + kB $, we have</p>\n<p>$$ D = (I + B) + (I + 2B) + (I + 3B) + \\ldots + (I + 26B) $$</p>\n<p>Combine like terms:</p>\n<p>$$ D = 26I + B(1 + 2 + 3 + \\ldots + 26) $$</p>\n<p>The sum $ 1 + 2 + 3 + \\ldots + 26 = 351 $, so</p>\n<p>$$ D = 26I + 351B $$</p>\n<p>Substitute the matrices:</p>\n<p>$$ \\sum_{k=1}^{26} M^k = \\begin{bmatrix}377 & -351 \\\\ 351 & -325\\end{bmatrix} = \\begin{bmatrix}a & b \\\\ c & d\\end{bmatrix} $$</p>\n<p>Hence, $ a = 377, \\, b = -351, \\, c = 351, \\, d = -325. $</p>\n<p>So, option (B) is incorrect.</p>\n<p><b>Check option (C)</b></p>\n<p>Given system of equations:</p>\n<p>$$ 27x - 26y = m $$</p>\n<p>$$ 26x - 25y = n $$</p>\n<p>Determinant of coefficients:</p>\n<p>$$ \\left|\\begin{array}{rr} 27 & -26 \\\\ 26 & -25 \\end{array}\\right| \\neq 0 $$</p>\n<p>Since the determinant is non-zero, a unique solution exists.</p>\n<p>On solving, we get:</p>\n<p>$$ x = -24n - 25m, \\quad y = -23n - 26m $$</p>\n<p>Both $ x $ and $ y $ are integers. Hence, option (C) is correct.</p>\n<p><b>Check option (D)</b></p>\n<p>We have:</p>\n<p>$$ \\left|\\begin{array}{cc} a + t & b \\\\ c & d + t \\end{array}\\right| = ad + at + dt + t^2 - bc $$</p>\n<p>Substitute $ a = 377, b = -351, c = 351, d = -325 $:</p>\n<p>$$ = (377)(-325) + t(52) + t^2 + (351)(351) = t^2 + 52t + 676 = (t + 26)^2 $$</p>\n<p>Since $ (t + 26)^2 \\neq 0 $ for all $ t > 0 $, the determinant is non-zero, so a unique solution exists. Option (D) is correct.</p>\n<p><b>Check option (A)</b></p>\n<p>Let $ N = \\begin{bmatrix}j & k \\\\ l & m\\end{bmatrix} $.</p>\n<p>Compute $ MN $:</p>\n<p>$$ MN = \\begin{bmatrix}2 & -1 \\\\ 1 & 0\\end{bmatrix} \\begin{bmatrix}j & k \\\\ l & m\\end{bmatrix} = \\begin{bmatrix}2j - l & 2k - m \\\\ j & k\\end{bmatrix} $$</p>\n<p>Compute $ N\\begin{bmatrix}1 & 1 \\\\ 0 & 1\\end{bmatrix} $:</p>\n<p>$$ N\\begin{bmatrix}1 & 1 \\\\ 0 & 1\\end{bmatrix} = \\begin{bmatrix}j & j + k \\\\ l & l + m\\end{bmatrix} $$</p>\n<p>Comparing both, we get $ j = l $ and $ 2k - m = j + k $ ⟹ $ m - k = j $.</p>\n<p>Determinant of $ N $:</p>\n<p>$$ |N| = jm - lk = j(m - k) $$</p>\n<p>This is not always zero if $ j \\neq 0 $ and $ m \\neq k $, which means $ N $ can be invertible. Hence, option (A) is correct.</p>",
     "section": "Sec 4",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
-    "type": "SCQ"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
   },
   {
     "id": "ml8t8p8x",
@@ -36,8 +35,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>Observing properties of Matrix $A$</p>\n<p>$$ \\begin{aligned} A & =\\left[\\begin{array}{ccc} 0 & 2 & -3 \\\\ -2 & 0 & 1 \\\\ 3 & -1 & 0 \\end{array}\\right] \\\\ A^T & =\\left[\\begin{array}{ccc} 0 & -2 & 3 \\\\ 2 & 0 & -1 \\\\ -3 & 1 & 0 \\end{array}\\right]=-A \\end{aligned} $$</p>\n<p>Rearranging the given equation</p>\n<p>$$ \\begin{aligned} & B(I-A)=I+A \\\\ & B=(I+A)(I-A)^{-1} \\end{aligned} $$</p>\n<p>Finding $B^T$</p>\n<p>$$ \\begin{aligned} B^T & =\\left[(I+A)(I-A)^{-1}\\right]^T \\\\ B^T & =\\left((I-A)^{-1}\\right)^T(I+A)^T \\\\ B^T & =\\left(I-A^T\\right)^{-1}\\left(I+A^T\\right) \\end{aligned} $$</p>\n<p>Since $A^T=-A$ :</p>\n<p>$$ \\begin{aligned} B^T & =(I+A)^{-1}(I-A) \\\\ B^T B & =\\left[(I+A)^{-1}(I-A)\\right] \\cdot\\left[(I+A)(I-A)^{-1}\\right] \\\\ B^T B & =(I+A)^{-1}(I+A)(I-A)(I-A)^{-1} \\\\ B^T B & =I \\cdot I=I \\\\ B^T B & =\\left[\\begin{array}{lll} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{array}\\right] \\end{aligned} $$</p>\n<p>the sum of diagonal elements $=1+1+1=3$</p>\n<p>The sum of the diagonal elements of $B^T B$ is 3 .</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "ml81k5ta",
@@ -58,8 +56,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>We are given:</p>\n<ul>\n\n<li><p>$B=(I+A)^{-1} \\Longrightarrow B^{-1}=I+A$</p></li>\n\n<li><p>$A+C=I \\Longrightarrow A=I-C$</p></li>\n\n</ul>\n<p>Substitute $A$ into the first equation:</p>\n<p>$$ B^{-1}=I+(I-C) $$</p>\n<p>$$ B^{-1}=2 I-C........\\text { (1) } $$</p>\n<p>pre-multiply $B: B \\cdot B^{-1}=B(2 I-C) I=2 B-B C \\Longrightarrow B C=2 B-I$ ........ (2)</p>\n<p>post multiply in eqn (1): $B^{-1} B=(2 I-C) \\cdot B I=2 B-C B \\Longrightarrow C B=2 B-I$ .......(3)</p>\n<p>from (2) &amp; (3), $B C=C B$</p>\n<ol start=\"3\">\n\n<li>Set up the System of Equations Since $B C=C B$, we use the given matrix for $B C$ :</li>\n\n</ol>\n<p>$$ C B=\\left[\\begin{array}{cc} 1 & -5 \\\\ -1 & 2 \\end{array}\\right] $$</p>\n<p>Now, substitute this into the vector equation :</p>\n<p>$$ \\left[\\begin{array}{cc} 1 & -5 \\\\ -1 & 2 \\end{array}\\right]\\left[\\begin{array}{l} x_1 \\\\ x_2 \\end{array}\\right]=\\left[\\begin{array}{c} 12 \\\\ -6 \\end{array}\\right] $$</p>\n<p>This results in two linear equations :</p>\n<ul>\n\n<li><p>$x_1-5 x_2=12$</p></li>\n\n<li><p>$-x_1+2 x_2=-6$</p></li>\n\n</ul>\n<ol>\n\n<li>Solve for $x_1$ and $x_2$ \n\n<br/><br/>Adding the two equations :</li>\n\n</ol>\n<p>$$ \\left(x_1-x_1\\right)+\\left(-5 x_2+2 x_2\\right)=12-6 $$</p>\n<p>$$\\Rightarrow $$ $x_2=-2$</p>\n<p>Substitute $x_2=-2$ into the second equation :</p>\n<p>$$ \\begin{gathered} -x_1+2(-2)=-6 \\\\ -x_1-4=-6 \\Longrightarrow-x_1=-2 \\Longrightarrow \\mathbf{x}_1=\\mathbf{2} \\end{gathered} $$</p>\n<p>Final result $x_1+x_2=2+(-2)=\\mathbf{0}$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "mnrq9qef",
@@ -75,8 +72,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>$$A^{-1}=\\frac{1}{4}\\begin{bmatrix}-2 & 2\\\\-4 & 2\\end{bmatrix}=\\frac{1}{2}\\begin{bmatrix}-1 & 1\\\\-2 & 1\\end{bmatrix}$$</p>\n<p>$$\\therefore\\ PA=B$$</p>\n<p>$$\\Rightarrow\\ P=BA^{-1}$$</p>\n<p>$$=\\frac{1}{2}\\begin{bmatrix}3 & 9\\\\1 & 3\\end{bmatrix}\\begin{bmatrix}-1 & 1\\\\-2 & 1\\end{bmatrix}=\\frac{1}{2}\\begin{bmatrix}-21 & 12\\\\-7 & 4\\end{bmatrix}$$</p>\n<p>$$\\therefore\\ AQ=B$$</p>\n<p>$$\\Rightarrow\\ Q=A^{-1}B$$</p>\n<p>$$=\\frac{1}{2}\\begin{bmatrix}-1 & 1\\\\-2 & 1\\end{bmatrix}\\begin{bmatrix}3 & 9\\\\1 & 3\\end{bmatrix}=\\frac{1}{2}\\begin{bmatrix}-2 & -6\\\\-5 & -15\\end{bmatrix}$$</p>\n<p>$$\\therefore\\ |\\operatorname{tr}(2(P+Q))|=|(-21)+(4)+(-2)+(-15)|$$</p>\n<p>$$=|-34|=34$$</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "mauv239x",
@@ -90,7 +86,7 @@
     ],
     "correctOption": 2,
     "correctAnswer": null,
-    "questionType": "SCQ",
+    "questionType": "MCQ",
     "marks": 4,
     "negativeMarks": -1,
     "subject": "Mathematics",
@@ -98,8 +94,7 @@
     "difficulty": "hard",
     "solution": "<p>To find the number of $3 \\times 3$ invertible matrices $Q$ with integer entries that satisfy both $Q^{-1} = Q^T$ and $PQ = QP$, consider the given matrix $P$:</p>\n<p>$ P = \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} $</p>\n<p>The condition $PQ = QP$ implies:</p>\n<p>$ \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} \\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix} = \\begin{pmatrix} a & b & c \\\\ d & e & f \\\\ g & h & i \\end{pmatrix} \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix} $</p>\n<p>This results in:</p>\n<p>$ \\begin{pmatrix} 2a & 2b & 2c \\\\ 2d & 2e & 2f \\\\ 3g & 3h & 3i \\end{pmatrix} = \\begin{pmatrix} 2a & 2b & 3c \\\\ 2d & 2e & 3f \\\\ 2g & 2h & 3i \\end{pmatrix} $</p>\n<p>From this, we derive that:</p>\n<p>$ c = 0, \\quad f = 0, \\quad h = 0, \\quad g = 0 $</p>\n<p>Thus, the matrix $Q$ is of the form:</p>\n<p>$ Q = \\begin{pmatrix} a & b & 0 \\\\ c & d & 0 \\\\ 0 & 0 & e \\end{pmatrix} $</p>\n<p>Next, using the condition $Q^T = Q^{-1}$, we have the equation:</p>\n<p>$ Q Q^T = I $</p>\n<p>This results in:</p>\n<p>$ \\begin{pmatrix} a & b & 0 \\\\ c & d & 0 \\\\ 0 & 0 & i \\end{pmatrix} \\begin{pmatrix} a & c & 0 \\\\ b & d & 0 \\\\ 0 & 0 & i \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} $</p>\n<p>This simplifies to:</p>\n<p>$ \\begin{pmatrix} a^2 + b^2 & ac + bd & 0 \\\\ ac + bd & c^2 + d^2 & 0 \\\\ 0 & 0 & i^2 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix} $</p>\n<p>From which we conclude:</p>\n<p>$ a^2 + b^2 = 1, \\quad ac + bd = 0, \\quad c^2 + d^2 = 1, \\quad i^2 = 1 $</p>\n<p>Considering all possible integer solutions for these equations:</p>\n<p><strong>Case I:</strong> </p>\n\n<p><p>$(a, b) = (0, 1)$ or $(0, -1)$,</p></p>\n<p><p>$(c, d) = (1, 0)$ or $(-1, 0)$</p></p>\n\n<p><strong>Case II:</strong> </p>\n\n<p><p>$(a, b) = (1, 0)$ or $(-1, 0)$,</p></p>\n<p><p>$(c, d) = (0, 1)$ or $(0, -1)$</p></p>\n\n<p>For each case, $e$ can be either 1 or -1 since $i^2=1$. Therefore, $e = \\pm 1$.</p>\n<p>Combining these options, we find a total of 16 possible matrices $Q$.</p>",
     "section": "Sec 2",
-    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : \u22121 In all other cases.</li></ul>",
-    "type": "SCQ"
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
   },
   {
     "id": "m6srn3tp",
@@ -120,8 +115,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& {\\left[\\mathrm{A}\\left(\\operatorname{adj}\\left(\\mathrm{~A}^{-1}\\right)+\\operatorname{adj}\\left(\\mathrm{B}^{-1}\\right)\\right)^{-1} \\cdot \\mathrm{~B}\\right]^{-1}} \\\\\n& \\mathrm{~B}^{-1} \\cdot\\left(\\operatorname{adj}\\left(\\mathrm{~A}^{-1}\\right)+\\operatorname{adj}\\left(\\mathrm{B}^{-1}\\right)\\right) \\cdot \\mathrm{A}^{-1} \\\\\n& \\mathrm{~B}^{-1} \\operatorname{adj}\\left(\\mathrm{~A}^{-1}\\right) \\mathrm{A}^{-1}+\\mathrm{B}^{-1}\\left(\\operatorname{adj}\\left(\\mathrm{~B}^{-1}\\right)\\right) \\cdot \\mathrm{A}^{-1} \\\\\n& \\mathrm{~B}^{-1}\\left|\\mathrm{~A}^{-1}\\right| \\mathrm{I}+\\left|\\mathrm{B}^{-1}\\right| \\mathrm{IA}^{-1} \\\\\n& \\frac{\\mathrm{~B}^{-1}}{|\\mathrm{~A}|}+\\frac{\\mathrm{A}^{-1}}{|\\mathrm{~B}|} \\\\\n& \\Rightarrow \\frac{\\operatorname{adjB}}{|\\mathrm{B}||\\mathrm{A}|}+\\frac{\\operatorname{adj}}{|\\mathrm{A}||\\mathrm{B}|} \\\\\n& =\\frac{1}{|\\mathrm{~A}||\\mathrm{B}|}(\\operatorname{adjB}+\\operatorname{adjA})\n\\end{aligned}$$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "m6qignoq",
@@ -137,8 +131,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& A=\\left[\\begin{array}{cc}\n2 & -1 \\\\\n1 & 0\n\\end{array}\\right] \\\\\n& A^2=\\left[\\begin{array}{ll}\n3 & -2 \\\\\n2 & -1\n\\end{array}\\right], A^3=\\left[\\begin{array}{ll}\n4 & -3 \\\\\n3 & -2\n\\end{array}\\right], A^4=\\left[\\begin{array}{ll}\n5 & -4 \\\\\n4 & -3\n\\end{array}\\right]\n\\end{aligned}\\\\\n&\\text { and so on }\\\\\n&\\begin{aligned}\n& \\mathrm{A}^6=\\left[\\begin{array}{ll}\n7 & -6 \\\\\n6 & -5\n\\end{array}\\right] \\\\\n& \\mathrm{A}^{\\mathrm{m}}=\\left[\\begin{array}{cc}\n\\mathrm{m}+1 & -\\mathrm{m} \\\\\n\\mathrm{~m} & -\\mathrm{m}+1\n\\end{array}\\right], \\\\\n& \\mathrm{A}^{\\mathrm{m}^2}=\\left[\\begin{array}{cc}\n\\mathrm{m}^2+1 & -\\mathrm{m}^2 \\\\\n\\mathrm{~m}^2 & -\\left(\\mathrm{m}^2-1\\right)\n\\end{array}\\right] \\\\\n& \\mathrm{A}^{\\mathrm{m}^2}+\\mathrm{A}^{\\mathrm{m}}=3 \\mathrm{I}-\\mathrm{A}^{-6} \\\\\n& {\\left[\\begin{array}{cc}\n\\mathrm{m}^2+1 & -\\mathrm{m}^2 \\\\\n\\mathrm{~m}^2 & -\\left(\\mathrm{m}^2-1\\right)\n\\end{array}\\right]+\\left[\\begin{array}{cc}\n\\mathrm{m}+1 & -\\mathrm{m} \\\\\n\\mathrm{~m} & -\\mathrm{m}+1\n\\end{array}\\right]}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =3\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right]-\\left[\\begin{array}{ll}\n-5 & 6 \\\\\n-6 & 7\n\\end{array}\\right] \\\\\n& =\\left[\\begin{array}{ll}\n8 & -6 \\\\\n6 & -4\n\\end{array}\\right] \\\\\n& =\\mathrm{m}^2+1+\\mathrm{m}+1=8 \\\\\n& =\\mathrm{m}^2+\\mathrm{m}-6=0 \\Rightarrow \\mathrm{~m}=-3,2 \\\\\n& \\mathrm{n}(\\mathrm{~s})=2\n\\end{aligned}$$</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "m9gxgbx3",
@@ -154,8 +147,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "hard",
     "solution": "<p>$$\\begin{aligned}\n& B=\\left[\\operatorname{adj}\\left(A \\operatorname{adj}\\left(A^2\\right)\\right)\\right]^{-1} \\\\\n& \\operatorname{Adj}\\left(A^2\\right)=(\\operatorname{adj} A)^2 \\Rightarrow A \\operatorname{adj}\\left(A^2\\right)=A \\operatorname{adj}(A) \\cdot(\\operatorname{adj} A) \\\\\n& =A\\left(|A| A^{-1}\\right)^2=|A|^2\\left(A^{-1}\\right)=A^{-1} \\\\\n& \\Rightarrow B=\\left(\\operatorname{adj}\\left(A^{-1}\\right)\\right)^{-1}=\\left(\\left|\\left(A^{-1}\\right)\\right| A\\right)^{-1}=\\frac{A^{-1}}{-1}=-A^{-1} \\\\\n& \\Rightarrow B=-A^{-1}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& |A|=-1=\\left|\\begin{array}{lll}\n\\lambda & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & -1 & 2\n\\end{array}\\right|=-1 \\Rightarrow \\lambda=3 \\\\\n& |3 B+I|=\\left|I-3 A^{-1}\\right|=\\frac{|A|\\left|I-3 A^{-1}\\right|}{|A|}=\\frac{|A-3 I|}{|A|} \\\\\n& =\\frac{|A-3 I|}{-1}=\\frac{\\left|\\begin{array}{ccc}\n0 & 2 & 3 \\\\\n4 & 2 & 6 \\\\\n7 & -1 & -1\n\\end{array}\\right|}{-1}=38 \\\\\n& \\Rightarrow|3 B+I|=38\n\\end{aligned}$$</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "lsbku1aw",
@@ -176,8 +168,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& f(-x)=\\left[\\begin{array}{ccc}\n\\cos x & \\sin x & 0 \\\\\n-\\sin x & \\cos x & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right] \\\\\n& f(x) \\cdot f(-x)=\\left[\\begin{array}{lll}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right]=I\n\\end{aligned}$$</p>\n<p>Hence statement- I is correct</p>\n<p>Now, checking statement II</p>\n<p>$$\\begin{aligned}\n& f(y)=\\left[\\begin{array}{ccc}\n\\cos y & -\\sin y & 0 \\\\\n\\sin y & \\cos y & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right] \\\\\n& f(x) \\cdot f(y)=\\left[\\begin{array}{ccc}\n\\cos (x+y) & -\\sin (x+y) & 0 \\\\\n\\sin (x+y) & \\cos (x+y) & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right] \\\\\n& \\Rightarrow f(x) \\cdot f(y)=f(x+y)\n\\end{aligned}$$</p>\n<p>Hence statement-II is also correct.</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "lv2eqxv2",
@@ -193,8 +184,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>Let $$A=\\left[\\begin{array}{ll}a & b \\\\ b & c\\end{array}\\right]$$</p>\n<p>$$|A|=1 \\Rightarrow a c-b^2=0 \\quad \\text{... (i)}$$</p>\n<p>$$\\text { Given }\\left[\\begin{array}{ll}\na & b \\\\\nb & c\n\\end{array}\\right]\\left[\\begin{array}{l}\n1 \\\\\n1\n\\end{array}\\right]=\\left[\\begin{array}{l}\n3 \\\\\n7\n\\end{array}\\right]$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad a+b=3 \\quad \\text{... (ii)}\\\\\n& \\text { and } b+c=7 \\quad \\text{... (iii)}\n\\end{aligned}$$</p>\n<p>from (i), (ii) and (iii) $$a=1, b=2, c=5$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & A=\\left[\\begin{array}{ll}\n1 & 2 \\\\\n2 & 5\n\\end{array}\\right] \\Rightarrow A^{-1}=\\left[\\begin{array}{cc}\n5 & -2 \\\\\n-2 & 1\n\\end{array}\\right] \\\\\n& \\text { Given } A^{-1}=\\alpha A+\\beta I \\\\\n\\Rightarrow & {\\left[\\begin{array}{cc}\n5 & -2 \\\\\n-2 & 1\n\\end{array}\\right]=\\alpha\\left[\\begin{array}{ll}\n1 & 2 \\\\\n2 & 5\n\\end{array}\\right]+\\beta\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right] } \\\\\n\\Rightarrow & \\alpha=-1 \\text { and } \\beta=6 \\\\\n& \\alpha+\\beta=5\n\\end{aligned}$$</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "luxwcxug",
@@ -215,8 +205,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>$$\\begin{aligned}\n& B=\\left[\\begin{array}{ll}\n1 & 3 \\\\\n1 & 5\n\\end{array}\\right] \\\\\n& A B^{-1}=A^{-1} \\\\\n& \\Rightarrow A^2=B\n\\end{aligned}$$</p>\n<p>Also, $$B C B^{-1}=A$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow C & =B^{-1} A B \\\\\n\\Rightarrow C^4 & =\\left(B^{-1} A B\\right)\\left(B^{-1} A B\\right)\\left(B^{-1} A B\\right)\\left(B^{-1} A B\\right) \\\\\n& =B^{-1} A^4 B \\\\\n& =B^{-1} B^2 B \\\\\n\\Rightarrow \\quad C^4 & =B^2\n\\end{aligned}$$</p>\n<p>Also, $$C^2=\\left(B^{-1} A B\\right)\\left(B^{-1} A B\\right)$$</p>\n<p>$$\\begin{aligned}\n& =B^{-1} A^2 B \\\\\n& =B^{-1} B B\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow C^2=B \\\\\n& \\Rightarrow C^4+\\alpha C^2+\\beta I=0 \\\\\n& \\Rightarrow B^2+\\alpha B+\\beta I=0 \\\\\n& B^2=\\left[\\begin{array}{ll}\n1 & 3 \\\\\n1 & 5\n\\end{array}\\right]\\left[\\begin{array}{ll}\n1 & 3 \\\\\n1 & 5\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n4 & 18 \\\\\n6 & 28\n\\end{array}\\right] \\\\\n& \\Rightarrow\\left[\\begin{array}{ll}\n4 & 18 \\\\\n6 & 28\n\\end{array}\\right]+\\alpha\\left[\\begin{array}{ll}\n1 & 3 \\\\\n1 & 5\n\\end{array}\\right]+\\left[\\begin{array}{ll}\n\\beta & 0 \\\\\n0 & \\beta\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n0 & 0 \\\\\n0 & 0\n\\end{array}\\right] \\\\\n& \\Rightarrow 4+\\alpha+\\beta=0\n\\end{aligned}$$</p>\n<p>and $$18+3 \\alpha=0$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\alpha=-6 \\\\\n& \\Rightarrow \\beta=2 \\\\\n& \\Rightarrow 2 \\beta-\\alpha=10\n\\end{aligned}$$</p>",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1lguucigm",
@@ -237,8 +226,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "hard",
     "solution": "We have, $A^T=\\alpha A+I$, where $A$ is $2 \\times 2$ matrix and $\\alpha \\in R-\\{-1,1\\}$\n<br/><br/>$$\n\\begin{aligned}\n\\left(A^T\\right)^T & =\\alpha A^T+I \\\\\\\\\nA & =\\alpha A^T+I \\\\\\\\\nA & =\\alpha(\\alpha A+I)+I  \\left[\\because A^T=\\alpha A+I\\right]\\\\\\\\\nA & =\\alpha^2 A+(\\alpha+1) I \\\\\\\\\nA & \\left(1-\\alpha^2\\right)=(\\alpha+1) I \\\\\\\\\nA & =\\frac{(\\alpha+1)}{(1-\\alpha)(1+\\alpha)} I\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\nA & =\\frac{1}{1-\\alpha} I ..........(i)\\\\\\\\\n|A| & =\\frac{1}{(1-\\alpha)^2} ...........(ii)\n\\end{aligned}\n$$\n<br/><br/>Also,\n<br/><br/>$$\n\\begin{aligned}\n\\left|A^2-A\\right| & =4 \\\\\\\\\n|A||A-I| & =4 \\\\\\\\\n\\frac{1}{(1-\\alpha)^2}\\left|\\left(\\frac{1}{1-\\alpha}-1\\right) I\\right| & =4 \\\\\\\\\n\\frac{1}{(1-\\alpha)^2}\\left|\\left(\\frac{\\alpha}{1-\\alpha}\\right) I\\right| & =4 \\\\\\\\\n\\frac{1}{(1-\\alpha)^2} \\times \\frac{\\alpha^2}{(1-\\alpha)^2} & =4 \\\\\\\\\n\\frac{\\alpha^2}{(1-\\alpha)^4} & =4 \\\\\\\\\n\\frac{\\alpha}{(1-\\alpha)^2} & = \\pm 2 \\\\\\\\\n2(1-\\alpha)^2 & = \\pm \\alpha\n\\end{aligned}\n$$\n<br/><br/>If $2(1-\\alpha)^2=\\alpha$, then $2 \\alpha^2-5 \\alpha+2=0$\n<br/><br/>Sum of value of $\\alpha=\\frac{5}{2} \\quad\\left[\\because\\right.$ Sum of zero $\\left.=\\frac{\\text {-Coefficient of } x}{\\text { Coefficient of } x^2}\\right]$\n<br/><br/>If $2(1-\\alpha)^2=-\\alpha$, then $2 \\alpha^2-3 \\alpha+2=0$\n<br/><br/>$\\therefore$ No real value of $\\alpha$\n<br/><br/>Hence, sum of all values of $\\alpha=\\frac{5}{2}$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1ldu5socp",
@@ -259,8 +247,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "hard",
     "solution": "$$\n\\begin{aligned}\n& \\mathrm{AA}^{\\mathrm{T}}=\\left[\\begin{array}{cc}\n\\frac{1}{\\sqrt{10}} & \\frac{3}{\\sqrt{10}} \\\\\n\\frac{-3}{\\sqrt{10}} & \\frac{1}{\\sqrt{10}}\n\\end{array}\\right]\\left[\\begin{array}{cc}\n\\frac{1}{\\sqrt{10}} & \\frac{-3}{\\sqrt{10}} \\\\\n\\frac{3}{\\sqrt{10}} & \\frac{1}{\\sqrt{10}}\n\\end{array}\\right]=\\left[\\begin{array}{ll}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right] = I \\\\\\\\\\\n& \\mathrm{B}^2=\\left[\\begin{array}{cc}\n1 & -\\mathrm{i} \\\\\n0 & 1\n\\end{array}\\right]\\left[\\begin{array}{cc}\n1 & -\\mathrm{i} \\\\\n0 & 1\n\\end{array}\\right]=\\left[\\begin{array}{cc}\n1 & -2 \\mathrm{i} \\\\\n0 & 1\n\\end{array}\\right] \\\\\\\\\n& \\mathrm{B}^3=\\left[\\begin{array}{cc}\n1 & -3 \\mathrm{i} \\\\\n0 & 1\n\\end{array}\\right]\n\\end{aligned}\n$$\n<br/><br/>Similarly, \n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{B}^{2023}=\\left[\\begin{array}{cc}\n1 & -2023 \\mathrm{i} \\\\\n0 & 1\n\\end{array}\\right] \\\\\\\\\n& \\mathrm{M}=\\mathrm{A}^{\\mathrm{T}} \\mathrm{BA} \\\\\\\\\n& \\mathrm{M}^2=\\mathrm{M} \\cdot \\mathrm{M}=\\mathrm{A}^{\\mathrm{T}} \\mathrm{BA} \\mathrm{A}^{\\mathrm{T}} \\mathrm{BA}=\\mathrm{A}^{\\mathrm{T}} \\mathrm{B}^2 \\mathrm{~A} \\\\\\\\\n& \\mathrm{M}^3=\\mathrm{M}^2 \\cdot \\mathrm{M}=\\mathrm{A}^{\\mathrm{T}} \\mathrm{B}^2 \\mathrm{AA}^{\\mathrm{T}} \\mathrm{BA}=\\mathrm{A}^{\\mathrm{T}} \\mathrm{B}^3 \\mathrm{~A}\n\\end{aligned}\n$$\n<br/><br/>Similarly,\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{M}^{2023}= \\mathrm{A}^{\\mathrm{T}} \\mathrm{B}^{2023} \\mathrm{~A} \\\\\\\\\n& \\mathrm{AM}^{2023} \\mathrm{~A}^{\\mathrm{T}}=\\mathrm{AA}^{\\mathrm{T}} \\mathrm{B}^{2023} \\mathrm{AA}^{\\mathrm{T}} = \\mathrm{I}.\\mathrm{B}^{2023}.\\mathrm{I}=\\mathrm{B}^{2023} \\\\\\\\\n& =\\left[\\begin{array}{cc}\n1 & -2023 \\mathrm{i} \\\\\n0 & 1\n\\end{array}\\right]\n\\end{aligned}\n$$\n<br/><br/>$$ \\therefore $$ $$\n\\text { Inverse of }\\left(\\mathrm{AM}^{2023} \\mathrm{~A}^{\\mathrm{T}}\\right) \\text { is }\\left[\\begin{array}{cc}\n1 & 2023 i \\\\\n0 & 1\n\\end{array}\\right]\n$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1lgylvto4",
@@ -281,8 +268,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "$$\n\\begin{aligned}\n& \\mathrm{A}=\\left[\\begin{array}{cc}\n1 & 5 \\\\\n\\lambda & 10\n\\end{array}\\right] \\\\\\\\\n& \\Rightarrow|\\mathrm{A}-x \\mathrm{I}|=0 \\\\\\\\\n& \\Rightarrow\\left|\\begin{array}{cc}\n1-x & 5 \\\\\n\\lambda & 10-x\n\\end{array}\\right|=0 \\\\\\\\\n& \\Rightarrow(1-x)(10-x)-5 \\lambda=0 \\\\\\\\\n& \\Rightarrow 10-11 x+x^2-5 \\lambda=0\n\\end{aligned}\n$$\n<br/><br/>Also, $\\Rightarrow \\mathrm{A}^{-1}=\\alpha \\mathrm{A}+\\beta \\mathrm{I}$\n<br/><br/>$$\n\\Rightarrow \\alpha A^2+\\beta A-I=0\n$$\n<br/><br/>and $A^2-11 A+(10-5 \\lambda) I=0$\n<br/><br/>On solving, we get\n<br/><br/>$$\n\\alpha=\\frac{1}{5}, \\beta=-\\frac{11}{5}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { So, } 5 \\lambda-10=5 \\Rightarrow \\lambda=3 \\\\\\\\\n& \\therefore 4 \\alpha^2+\\beta^2+\\lambda^2 \\\\\\\\\n& =4\\left(\\frac{1}{25}\\right)+\\left(\\frac{121}{25}\\right)+9 \\\\\\\\\n& =\\frac{125}{25}+9=14\n\\end{aligned}\n$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "liiojvum",
@@ -299,8 +285,7 @@
     "difficulty": "medium",
     "solution": "<p>$\\begin{gathered}R=\\left[\\begin{array}{lll}a &amp; 3 &amp; b \\\\ c &amp; 2 &amp; d \\\\ 0 &amp; 5 &amp; 0\\end{array}\\right] \\\\\\\\ a, b, c, d, \\in\\{0,3,5,7,11,13,17,19\\}\\end{gathered}$</p>\n\n<br>Number of invertible matrices $=$ (Total matrices $)-$ (Non Invertible matrices)\n\n<br><br>$\\begin{aligned} &amp; \\text { Total matrices }=\\begin{array}{cccc}a, &amp; b, &amp; c, &amp; d \\\\  \\downarrow&amp; \\downarrow &amp; \\downarrow &amp; \\downarrow \\\\ 8 &amp; 8 &amp; 8 &amp; 8\\end{array} \\\\\\\\ &amp; =8 \\times 8 \\times 8 \\times 8=8^4=4096 \\\\ &amp; \\end{aligned}$\n\n<br><br>For Non-invertible matrices,\n\n<br><br>$$\n\n\\begin{aligned}\n\n&amp; |R|=0 \\\\\\\\\n\n&amp; |R|=-5(a d-b c)=0\n\n\\end{aligned}\n\n$$\n\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1ltxujzco/88cb65fc-2415-4803-99a2-274fb27dcdcd/3eef0380-e5a5-11ee-8041-251a62321629/file-6y3zli1ltxujzcp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1ltxujzco/88cb65fc-2415-4803-99a2-274fb27dcdcd/3eef0380-e5a5-11ee-8041-251a62321629/file-6y3zli1ltxujzcp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2023 Paper 2 Online Mathematics - Matrices and Determinants Question 15 English Explanation 1\">\n\n<br><br>Cases when both side are zero.\n\n<br><br>(i) All four $a, b, c, d$ are zero.\n\n<br><br>$$\n\na d=b c=0 \\quad 1 \\text { ways }\n\n$$\n\n<br><br>(ii) Three zero and one different digit used for $a, b$, $c, d$.\n\n<br><br>$$\n\n\\Rightarrow a d=b c\n\n$$\n\n<p>Select three from four $a, b, c, d$ assign them zero.</p>\n\n<br>$$\n\n\\text { i.e., }{ }^4 C_3 \\times 1 \\times 7=28 \\text { ways }\n\n$$\n<br><br>(iii) Two zero and two different digits\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1ltxupnhs/c44cd20e-8226-4d24-89d1-ee378ba47fe8/dca0e300-e5a5-11ee-8041-251a62321629/file-6y3zli1ltxupnht.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1ltxupnhs/c44cd20e-8226-4d24-89d1-ee378ba47fe8/dca0e300-e5a5-11ee-8041-251a62321629/file-6y3zli1ltxupnht.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2023 Paper 2 Online Mathematics - Matrices and Determinants Question 15 English Explanation 2\">\n<br><br>Hence $2 \\times 7 \\times 2 \\times 7=196$ ways\n<br><br>Case II: When both side are same but non zero number.\n<br><br>$$\na d=b c \\neq 0\n$$\n<br><br>(i) All four $a, b, c, d$ are same.\n<br><br>i.e., $a d=b c$ ( 7 ways)\n<br><br>(ii) Two alike &amp; two alike of another.\n<br><br>$$\na d=b c\n$$\n<br><br>$$\n{ }^7 \\mathrm{C}_1 \\times{ }^6 \\mathrm{C}_1 \\times 2 !=84 \\text { ways }\n$$\n\n<br><br>Total number of non invertible matrices are\n<br><br>$$\n\\begin{aligned}\n&amp; =1+28+196+7+84 \\\\\\\\\n&amp; =316\n\\end{aligned}\n$$\n\n<br><br>Hence number of invertible matric\n<br><br>$$\n\\begin{aligned}\n&amp; =8^4-316 \\\\\\\\\n&amp; =3780\n\\end{aligned}\n$$",
     "section": "Sec 2",
-    "instruction": "",
-    "type": "NUMERICAL"
+    "instruction": ""
   },
   {
     "id": "1l6i06330",
@@ -316,8 +301,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>$$\\because$$ $$A = \\left[ {\\matrix{\n   a & b  \\cr \n   c & d  \\cr \n\n } } \\right]$$ then $${A^2} = \\left[ {\\matrix{\n   {{a^2} + bc} & {b(a + d)}  \\cr \n   {c(a + d)} & {bc + {d^2}}  \\cr \n\n } } \\right]$$</p>\n<p>For A<sup>$$-$$1</sup> must exist $$ad - bc \\ne 0$$ ...... (i)</p>\n<p>and $$A = {A^{ - 1}} \\Rightarrow {A^2} = I$$</p>\n<p>$$\\therefore$$ $${a^2} + bc = {d^2} + bc = 1$$ ...... (ii)</p>\n<p>and $$b(a + d) = c(a + d) = 0$$ ...... (iii)</p>\n<p>Case I : When a = d = 0, then possible values of (b, c) are (1, 1), ($$-$$1, 1) and (1, $$-$$1) and ($$-$$1, 1).</p>\n<p>Total four matrices are possible.</p>\n<p>Case II : When a = $$-$$d then (a, d) be (1, $$-$$1) or ($$-$$1, 1).</p>\n<p>Then total possible values of (b, c) are $$(12 + 11) \\times 2 = 46$$.</p>\n<p>$$\\therefore$$ Total possible matrices $$= 46 + 4 = 50$$.</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "1l58gzk5u",
@@ -333,8 +317,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "<p>$$\\because$$ $$X = \\left[ {\\matrix{\n   0 & 1 & 0  \\cr \n   0 & 0 & 1  \\cr \n   0 & 0 & 0  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ $${X^2} = \\left[ {\\matrix{\n   0 & 0 & 1  \\cr \n   0 & 0 & 0  \\cr \n   0 & 0 & 0  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ $$Y = \\alpha I + \\beta X + \\gamma {X^2}\\left[ {\\matrix{\n   \\alpha  & \\beta  & \\gamma   \\cr \n   0 & \\alpha  & \\beta   \\cr \n   0 & 0 & \\alpha   \\cr \n\n } } \\right]$$</p>\n<p>$$\\because$$ $$Y\\,.\\,{Y^{ - 1}} = I$$</p>\n<p>$$\\therefore$$ $$\\left[ {\\matrix{\n   \\alpha  & \\beta  & \\gamma   \\cr \n   0 & \\alpha  & \\beta   \\cr \n   0 & 0 & \\alpha   \\cr \n\n } } \\right]\\left[ {\\matrix{\n   {{1 \\over 5}} & {{{ - 2} \\over 5}} & {{1 \\over 5}}  \\cr \n   0 & {{1 \\over 5}} & {{{ - 2} \\over 5}}  \\cr \n   0 & 0 & {{1 \\over 5}}  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 1 & 0  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ $$\\left[ {\\matrix{\n   {{\\alpha  \\over 5}} & {{{\\beta  - 2\\alpha } \\over 5}} & {{{\\alpha  - 2\\beta  + \\gamma } \\over 5}}  \\cr \n   0 & {{\\alpha  \\over 5}} & {{{\\beta  - 2\\alpha } \\over 5}}  \\cr \n   0 & 0 & {{\\alpha  \\over 5}}  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   0 & 0 & 0  \\cr \n   0 & 1 & 0  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right]$$</p>\n<p>$$\\therefore$$ $$\\alpha$$ = 5, $$\\beta$$ = 10, $$\\gamma$$ =15</p>\n<p>$$\\therefore$$ ($$\\alpha$$ $$-$$ $$\\beta$$ + $$\\gamma$$)<sup>2</sup> = 100</p>",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "rvBAr0Vg54rfbOxUni1klrhw2ua",
@@ -350,8 +333,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "hard",
     "solution": "As $$PQ = kI \\Rightarrow Q = k{P^{ - 1}}I$$<br><br>now $$Q = {k \\over {|P|}}(adjP)I $$\n<br><br>$$\\Rightarrow Q = {k \\over {(20 + 12\\alpha )}}\\left[ {\\matrix{\n    -  &amp;  -  &amp;  -   \\cr \n    -  &amp;  -  &amp; {( - 3\\alpha  - 4)}  \\cr \n    -  &amp;  -  &amp;  -   \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   0 &amp; 1 &amp; 0  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n\n } } \\right]$$<br><br>$$ \\because $$ $${q_{23}} = {{ - k} \\over 8} $$\n<br><br>$$\\Rightarrow {k \\over {(20 + 12\\alpha )}}( - 3\\alpha  - 4) = {{ - k} \\over 8} $$\n<br><br>$$\\Rightarrow 2(3\\alpha  + 4) = 5 + 3\\alpha $$<br><br>$$3\\alpha  =  - 3 \\Rightarrow \\alpha  =  - 1$$<br><br>also $$|Q| = {{{k^3}|I|} \\over {|P|}} \\Rightarrow {{{k^2}} \\over 2} = {{{k^3}} \\over {(20 + 12\\alpha )}}$$<br><br>$$ \\Rightarrow $$ $$(20 + 12\\alpha ) = 2k \\Rightarrow 8 = 2k \\Rightarrow k = 4$$",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "vTciYbdTPPnzWP11Sg1kls5jz0i",
@@ -367,8 +349,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "$$A = \\left[ {\\matrix{\n   0 &amp; { - \\tan {\\theta  \\over 2}}  \\cr \n   {\\tan {\\theta  \\over 2}} &amp; 0  \\cr \n\n } } \\right]$$<br><br>$$ \\Rightarrow I + A = \\left[ {\\matrix{\n   1 &amp; { - \\tan {\\theta  \\over 2}}  \\cr \n   {\\tan {\\theta  \\over 2}} &amp; 1  \\cr \n\n } } \\right]$$<br><br>$$ \\Rightarrow I - A = \\left[ {\\matrix{\n   1 &amp; {\\tan {\\theta  \\over 2}}  \\cr \n   { - \\tan {\\theta  \\over 2}} &amp; 1  \\cr \n\n } } \\right]$$ { $$\\therefore$$ $$\\left| {I - A} \\right| = {\\sec ^2}\\theta /2$$}<br><br>$$ \\Rightarrow {(I - A)^{ - 1}} = {1 \\over {{{\\sec }^2}{\\theta  \\over 2}}}\\left[ {\\matrix{\n   1 &amp; { - \\tan {\\theta  \\over 2}}  \\cr \n   {\\tan {\\theta  \\over 2}} &amp; 1  \\cr \n\n } } \\right]$$<br><br>$$ \\Rightarrow (1 + A){(I - A)^{ - 1}} $$\n\n<br><br>$$= {1 \\over {{{\\sec }^2}{\\theta  \\over 2}}}\\left[ {\\matrix{\n   1 &amp; { - \\tan {\\theta  \\over 2}}  \\cr \n   {\\tan {\\theta  \\over 2}} &amp; 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 &amp; { - \\tan {\\theta  \\over 2}}  \\cr \n   {\\tan {\\theta  \\over 2}} &amp; 1  \\cr \n\n } } \\right]$$<br><br>$$ = {1 \\over {{{\\sec }^2}{\\theta  \\over 2}}}\\left[ {\\matrix{\n   {1 - {{\\tan }^2}{\\theta  \\over 2}} &amp; { - 2\\tan {\\theta  \\over 2}}  \\cr \n   {2\\tan {\\theta  \\over 2}} &amp; {1 - {{\\tan }^2}{\\theta  \\over 2}}  \\cr \n\n } } \\right]$$<br><br>$$a = {{1 - {{\\tan }^2}{\\theta  \\over 2}} \\over {{{\\sec }^2}{\\theta  \\over 2}}}$$<br><br>$$b = {{2\\tan {\\theta  \\over 2}} \\over {{{\\sec }^2}{\\theta  \\over 2}}}$$<br><br>$$\\therefore$$ $${a^2} + {b^2} = 1$$\n<br><br>$$ \\Rightarrow $$ $$13({a^2} + {b^2})$$ = 13",
-    "section": "B",
-    "type": "NUMERICAL"
+    "section": "B"
   },
   {
     "id": "1ks088t6b",
@@ -389,8 +370,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "$$A = \\left[ {\\matrix{\n   1 &amp; 2  \\cr \n   { - 1} &amp; 4  \\cr \n\n } } \\right],|A| = 6$$<br><br>$${A^{ - 1}} = {{adjA} \\over {|A|}} = {1 \\over 6}\\left[ {\\matrix{\n   4 &amp; { - 2}  \\cr \n   1 &amp; 1  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   {{2 \\over 3}} &amp; { - {1 \\over 3}}  \\cr \n   {{1 \\over 6}} &amp; {{1 \\over 6}}  \\cr \n\n } } \\right]$$<br><br>$$\\left[ {\\matrix{\n   {{2 \\over 3}} &amp; { - {1 \\over 3}}  \\cr \n   {{1 \\over 6}} &amp; {{1 \\over 6}}  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   \\alpha  &amp; 0  \\cr \n   0 &amp; \\alpha   \\cr \n\n } } \\right] + \\left[ {\\matrix{\n   \\beta  &amp; {2\\beta }  \\cr \n   { - \\beta } &amp; {4\\beta }  \\cr \n\n } } \\right]$$<br><br>$$\\left. \\matrix{\n  \\alpha  + \\beta  = {2 \\over 3} \\hfill \\cr \n  \\beta  =  - {1 \\over 6} \\hfill \\cr}  \\right\\} \\Rightarrow \\alpha  = {2 \\over 3} + {1 \\over 6} = {5 \\over 6}$$<br><br>$$ \\therefore $$ $$4(\\alpha  - \\beta ) = 4(1) = 4$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1kudzvlxh",
@@ -412,8 +392,7 @@
     "difficulty": "medium",
     "solution": "$$\\because$$ I $$-$$ EF = G<sup>$$-$$1</sup> $$\\Rightarrow$$ G $$-$$ GEF = I ..... (i)<br/><br/>and G $$-$$ EFG = I ..... (ii)<br/><br/>Clearly, GEF = EFG $$\\to$$ option (c) is correct.<br/><br/>Also, (I $$-$$ FE) (I + FGE)<br/><br/>= I $$-$$ FE + FGE $$-$$ FEFGE<br/><br/>= I $$-$$ FE + FGE $$-$$ F(G $$-$$ I) E<br/><br/>= I $$-$$ FE + FGE $$-$$ FGE + FE<br/><br/>= I $$\\to$$ option (b) is correct but option (d) is incorrect.<br/><br/>$$\\because$$ (I $$-$$ FE) (I $$-$$ FGE) = I $$-$$ FE $$-$$ FGE + F(G $$-$$ I) E<br/><br/>= I $$-$$ 2FE<br/><br/>Now, (I $$-$$ FE) ($$-$$ FGE) = $$-$$ FE<br/><br/>$$\\Rightarrow$$ | I $$-$$ FE | | FGE | = | FE |<br/><br/>$$\\to$$ option (a) is correct.",
     "section": "Sec 3",
-    "instruction": "",
-    "type": "SCQ"
+    "instruction": ""
   },
   {
     "id": "CwFNpWMv5DwfoS0IN21kjfhizjv",
@@ -435,8 +414,7 @@
     "difficulty": "hard",
     "solution": "It is given that matrix <br><br>$$M = \\left[ {\\matrix{\n   {{{\\sin }^4}\\theta }  \\cr \n   {1 + {{\\cos }^2}\\theta }  \\cr \n\n } \\matrix{\n   { - 1 - {{\\sin }^2}\\theta }  \\cr \n   {{{\\cos }^4}\\theta }  \\cr \n\n } } \\right] = \\alpha I + \\beta {M^{ - 1}}$$, where<br><br><br>$$\\alpha $$ = $$\\alpha $$($$\\theta $$) and $$\\beta $$ = $$\\beta $$($$\\theta $$) are real numbers and I is the 2 $$ \\times $$ 2 identity matrix.<br><br>Now, <br><br>$$(M) = \\left| M \\right| = {\\sin ^4}\\theta {\\cos ^4}\\theta  + 1 + {\\sin ^2}\\theta  + {\\cos ^2}\\theta  + {\\sin ^2}\\theta {\\cos ^2}\\theta$$<br><br>= $${\\sin ^4}\\theta {\\cos ^4}\\theta  + {\\sin ^2}\\theta {\\cos ^2}\\theta  + 2$$<br><br>and$$\\left[ {\\matrix{\n   {{{\\sin }^4}\\theta }  \\cr \n   {1 + {{\\cos }^2}\\theta }  \\cr \n\n } \\matrix{\n   { - 1 - {{\\sin }^2}\\theta }  \\cr \n   {{{\\cos }^4}\\theta }  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   \\alpha   \\cr \n   0  \\cr \n\n } \\,\\matrix{\n   0  \\cr \n   \\alpha   \\cr \n\n } } \\right]$$$$ + {\\beta  \\over {\\left| M \\right|}}(adj\\,M)$$<br><br>$$ \\because $$ $$\\left[ {{M^{ - 1}} = {{adj\\,M} \\over {\\left| M \\right|}}} \\right]$$<br><br>$$ \\Rightarrow $$ $$\\left[ {\\matrix{\n   {{{\\sin }^4}\\theta }  \\cr \n   {1 + {{\\cos }^2}\\theta }  \\cr \n\n } \\matrix{\n   { - 1 - {{\\sin }^2}\\theta }  \\cr \n   {{{\\cos }^4}\\theta }  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   \\alpha   \\cr \n   0  \\cr \n\n } \\,\\matrix{\n   0  \\cr \n   \\alpha   \\cr \n\n } } \\right] + {\\beta  \\over {\\left| M \\right|}}\\left[ {\\matrix{\n   {{{\\cos }^4}\\theta }  \\cr \n   { - 1 - {{\\cos }^2}\\theta }  \\cr \n\n } \\matrix{\n   {1 + {{\\sin }^2}\\theta }  \\cr \n   {{{\\sin }^4}\\theta }  \\cr \n\n } } \\right]$$<br><br>$$ \\because $$ $$\\left\\{ {adj\\left[ {\\matrix{\n   a &amp; b  \\cr \n   c &amp; d  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   d &amp; { - b}  \\cr \n   { - c} &amp; a  \\cr \n\n } } \\right]} \\right\\}$$<br><br>$$ \\Rightarrow \\beta  =  - \\left| M \\right|$$ and $$\\alpha  = {\\sin ^4}\\theta  + {\\cos ^4}\\theta $$<br><br>$$ \\Rightarrow \\alpha  = \\alpha (\\theta ) = 1 - {1 \\over 2}{\\sin ^2}(2\\theta )$$, and $$\\beta  = \\beta (\\theta ) =  - \\left\\{ {{{\\left( {{{\\sin }^2}\\theta {{\\cos }^2}\\theta  + {1 \\over 2}} \\right)}^2} + {7 \\over 4}} \\right\\} =  - \\left\\{ {{{\\left( {{{{{\\sin }^2}(2\\theta )} \\over 4} + {1 \\over 2}} \\right)}^2} + {7 \\over 4}} \\right\\}$$<br><br>Now, $${\\alpha ^*} = {\\alpha _{\\min }} = {1 \\over 2}$$<br><br>and $${\\beta ^*} = {\\beta _{\\min }} =  - {{37} \\over {16}}$$<br><br>$$ \\because $$ $$\\alpha $$ is minimum at sin<sup>2</sup>(2$$\\theta $$) = 1 and $$\\beta $$ is minimum at sin<sup>2</sup>(2$$\\theta $$) = 1<br><br>So, $${\\alpha ^*} + {\\beta ^*} = {1 \\over 2} - {{37} \\over {16}} =  - {{29} \\over {16}}$$",
     "section": "Sec 2",
-    "instruction": "",
-    "type": "SCQ"
+    "instruction": ""
   },
   {
     "id": "FDEz8mcROZKQr1vuUT18hoxe66ijvwpuwxp",
@@ -457,13 +435,12 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "Given<br><br>\n$$\\left[ {\\matrix{\n   1 &amp; 1  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 &amp; 2  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$$$\\left[ {\\matrix{\n   1 &amp; 3  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$....$$\\left[ {\\matrix{\n   1 &amp; {n - 1}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1 &amp; {78}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$$ \\Rightarrow $$ $$\\left[ {\\matrix{\n   1 &amp; 3  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   1 &amp; 3  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right].....\\left[ {\\matrix{\n   1 &amp; {n - 1}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$ = $$\\left[ {\\matrix{\n   1 &amp; {78}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$$ \\Rightarrow $$ $$\\left[ {\\matrix{\n   1 &amp; 6  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right].....\\left[ {\\matrix{\n   1 &amp; {n - 1}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$ = $$\\left[ {\\matrix{\n   1 &amp; {78}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$$ \\Rightarrow $$ $$\\left[ {\\matrix{\n   1 &amp; {1 + 2 + 3}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right].....\\left[ {\\matrix{\n   1 &amp; {n - 1}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$ = $$\\left[ {\\matrix{\n   1 &amp; {78}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$\n<br>.\n<br>.\n<br>.\n<br>.\n<br>$$ \\Rightarrow $$ $$\\left[ {\\matrix{\n   1 &amp; {1 + 2 + 3 + .... + \\left( {n - 1} \\right)}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$ = $$\\left[ {\\matrix{\n   1 &amp; {78}  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>By comparing both sides we get,\n<br><br>1 + 2 + 3 + ........+ (n - 1) = 78\n<br><br>$$ \\Rightarrow $$ $${{n\\left( {n - 1} \\right)} \\over 2}$$ = 78\n<br><br>$$ \\Rightarrow $$ n = 13, - 12(not possible)\n<br><br>$$ \\therefore $$ The inverse of  $$\\left[ {\\matrix{\n   1 &amp; 13  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$ = $$\\left[ {\\matrix{\n   1 &amp; -13  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "1dHMda3zohOtFwklZhLEe",
     "questionNumber": 78,
-    "questionText": "If $$A = \\left[ {\\matrix{\n   {\\cos \\theta } &amp; { - \\sin \\theta }  \\cr \n   {\\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$, then the matrix A<sup>\u201350</sup> when $$\\theta $$ = $$\\pi \\over 12$$,  is equal to :\n",
+    "questionText": "If $$A = \\left[ {\\matrix{\n   {\\cos \\theta } &amp; { - \\sin \\theta }  \\cr \n   {\\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$, then the matrix A<sup>–50</sup> when $$\\theta $$ = $$\\pi \\over 12$$,  is equal to :\n",
     "options": [
       "$$\\left[ {\\matrix{\n   {  {{\\sqrt 3 } \\over 2}} &amp; { - {1 \\over 2}}  \\cr \n   {{{  1} \\over 2}} &amp; {{{\\sqrt 3 } \\over 2}}  \\cr \n\n } } \\right]$$",
       "$$\\left[ {\\matrix{\n   {{1 \\over 2}} &amp; -{{{\\sqrt 3 } \\over 2}}  \\cr \n   {{{\\sqrt 3 } \\over 2}} &amp; {{{ - 1} \\over 2}}  \\cr \n\n } } \\right]$$",
@@ -479,8 +456,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "(A<sup>$$-$$50</sup>) = (A<sup>$$-$$1</sup>)<sup>50</sup>\n<br><br>We know, \n<br><br>A<sup>$$-$$1</sup> = $${{adjA} \\over {\\left| A \\right|}}$$\n<br><br>$$\\left| A \\right|$$ = cos<sup>2</sup>$$\\theta $$ + sin<sup>2</sup>$$\\theta $$ = 1\n<br><br>cofactor of A = $$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; { - \\sin \\theta }  \\cr \n   {\\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>Adjoint of A = Transpose of cofactor matrix\n<br><br>$$ \\therefore $$&nbsp;&nbsp;Adj A = $$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;A<sup>$$-$$1</sup> = $$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;(A<sup>$$-$$1</sup>)<sup>2</sup> = $$\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   {\\cos \\theta } &amp; {\\sin \\theta }  \\cr \n   { - \\sin \\theta } &amp; {\\cos \\theta }  \\cr \n\n } } \\right]$$\n<br><br>= $$\\left[ {\\matrix{\n   {\\cos 2\\theta } &amp; {\\sin 2\\theta }  \\cr \n   { - \\sin 2\\theta } &amp; {\\cos 2\\theta }  \\cr \n\n } } \\right]$$\n<br><br>Similarly, \n<br><br>(A<sup>$$-$$1</sup>)<sup>3</sup> = $$\\left[ {\\matrix{\n   {\\cos 3\\theta } &amp; {\\sin 3\\theta }  \\cr \n   { - \\sin 3\\theta } &amp; {\\cos 3\\theta }  \\cr \n\n } } \\right]$$\n<br><br>:\n<br><br>:\n<br><br>:\n<br><br>(A<sup>$$-$$1</sup>)<sup>50</sup> = $$\\left[ {\\matrix{\n   {\\cos 50\\theta } &amp; {\\sin 50\\theta }  \\cr \n   { - \\sin 50\\theta } &amp; {\\cos 50\\theta }  \\cr \n\n } } \\right]$$\n<br><br>when  $$\\theta $$ = $${\\pi  \\over {12}}$$ then\n<br><br>$${A^{ - 50}}$$ = $$\\left[ {\\matrix{\n   {\\cos {{25\\pi } \\over 6}} &amp; {\\sin {{25\\pi } \\over 6}}  \\cr \n   { - \\sin {{25\\pi } \\over 6}} &amp; {\\cos {{25\\pi } \\over 6}}  \\cr \n\n } } \\right]$$\n<br><br>= $$\\left[ {\\matrix{\n   {{{\\sqrt 3 } \\over 2}} &amp; {{1 \\over 2}}  \\cr \n   { - {1 \\over 2}} &amp; {{{\\sqrt 3 } \\over 2}}  \\cr \n\n } } \\right]$$\n<br><br><u>Note:</u>\n<br><br>$$\\cos {{25\\pi } \\over 6} = \\cos \\left( {4\\pi  + {\\pi  \\over 6}} \\right) = \\cos {\\pi  \\over 6} = {{\\sqrt 3 } \\over 2}$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "G13VIQ4UxGankd46IX9Mu",
@@ -501,8 +477,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "Given,\n<br><br>( A $$-$$ 3I) (A $$-$$ 5I) = O\n<br><br>$$ \\Rightarrow $$ A<sup>2</sup> - 8A  + 15I = O\n<br><br>Multiplying both sides by A<sup>- 1</sup>, we get,\n<br><br>A<sup>- 1</sup>A.A - 8A<sup>- 1</sup>A + 15A<sup>- 1</sup>I = A<sup>- 1</sup>O\n<br><br>$$ \\Rightarrow $$ A - 8I + 15A<sup>- 1</sup> = O\n<br><br>$$ \\Rightarrow $$ A + 15A<sup>- 1</sup> = 8I\n<br><br>$$ \\Rightarrow $$$${A \\over 2} + {{15{A^{ - 1}}} \\over 2} = 4I$$\n<br><br>Comparing with the equation $$\\alpha $$A + $$\\beta $$A<sup>-1</sup> = 4I, we get\n<br><br>$$\\alpha $$ = $${1 \\over 2}$$ and $$\\beta $$ = $${15 \\over 2}$$\n<br><br>$$ \\therefore $$ $$\\alpha $$ + $$\\beta $$ =  $${1 \\over 2}$$ +  $${15 \\over 2}$$ =  $${16 \\over 2}$$ = 8",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "WdAPCKhiSFPJAR2URgL8E",
@@ -523,8 +498,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "Given,\n<br><br>A<sup>2</sup> $$-$$ 5A + 7I = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;A<sup>2</sup> $$-$$ 5A = $$-$$ 7I\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;AAA<sup>$$-$$1</sup> $$-$$ 5AA<sup>$$-$$1</sup> = $$-$$ 7IA<sup>$$-$$1</sup>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;AI $$-$$ 5I = $$-$$ 7A<sup>$$-$$1</sup>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;A $$-$$ 5I = $$-$$ 7A<sup>$$-$$1</sup>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;A<sup>$$-$$1</sup> = $${1 \\over 7}$$(5I $$-$$ A)\n<br><br>Hence, statement 1 is true.\n<br><br>Now A<sup>3</sup> $$-$$ 2A<sup>2</sup> $$-$$ 3A + I\n<br><br>=&nbsp;&nbsp;&nbsp;A(A<sup>2</sup>) $$-$$ 2A<sup>2</sup> $$-$$ 3A + I\n<br><br>=&nbsp;&nbsp;&nbsp;A(5A $$-$$ 7I) $$-$$ 2A<sup>2</sup> $$-$$ 3A + I\n<br><br>=&nbsp;&nbsp;&nbsp;5A<sup>2</sup> $$-$$ 7A $$-$$ 2A<sup>2</sup> $$-$$ 3A + I\n<br><br>=&nbsp;&nbsp;&nbsp;3A<sup>2</sup> $$-$$ 10A + I\n<br><br>=&nbsp;&nbsp;&nbsp;3(5A $$-$$ 7I) $$-$$ 10A + I\n<br><br>=&nbsp;&nbsp;&nbsp;15A $$-$$ 21A $$-$$ 10A + I\n<br><br>=&nbsp;&nbsp;&nbsp;5A $$-$$ 20I\n<br><br>=&nbsp;&nbsp;&nbsp;5(A $$-$$ 4I)\n<br><br>So, statement 2 is also correct.",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "NZE3QvqIskeDsv0i",
@@ -545,8 +519,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "$$BB' = B\\left( {{A^{ - 1}}A'} \\right)' = B\\left( {A'} \\right)'\\left( {{A^{ - 1}}} \\right)' = BA\\left( {{A^{ - 1}}} \\right)'$$\n<br><br>$$ = \\left( {{A^{ - 1}}A'} \\right)\\left( {A\\left( {{A^{ - 1}}} \\right)'} \\right)$$\n<br><br>$$ = {A^{ - 1}}A.A'.\\left( {{A^{ - 1}}} \\right)'\\,\\,\\,\\,\\,\\,$$ $$\\left\\{ {} \\right.$$ as $$\\,\\,\\,\\,\\,\\,$$ $$AA' = A'A$$ $$\\left. \\, \\right\\}$$\n<br><br>$$ = I\\left( {{A^{ - 1}}A} \\right)'$$\n<br><br>$$ = I.I = {I^2} = I$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "mguoq2zm",
@@ -568,8 +541,7 @@
     "difficulty": "Medium",
     "solution": "<p>$$ \\mathrm{U}^{-1} \\text { can be calculated by following shortcut } $$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgulq0ui/197a2f5c-a757-4f33-a6a1-72dda23c9ab8/548c42a0-ab35-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgulq0uj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgulq0ui/197a2f5c-a757-4f33-a6a1-72dda23c9ab8/548c42a0-ab35-11f0-8f3d-4bde4d14fc28/file-jaoe38c1mgulq0uj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Matrices and Determinants Question 3 English Explanation\">$$ \\begin{aligned} &amp;\\mathrm{U}^{-1}=\\frac{1}{3}\\left[\\begin{array}{ccc} -1 &amp; -2 &amp; 0 \\\\ -7 &amp; -5 &amp; -3 \\\\ 9 &amp; 6 &amp; 3 \\end{array}\\right]\\\\ &amp;\\text { Sum of elements of } \\mathrm{U}^{-1}=0 \\end{aligned} $$</p>",
     "section": "Sec 3",
-    "instruction": "",
-    "type": "SCQ"
+    "instruction": ""
   },
   {
     "id": "gVRbAj7S0qPH4tAt",
@@ -590,8 +562,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "medium",
     "solution": "Given $${A^2} - A + I = 0$$\n<br><br>$${A^{ - 1}}{A^2} - {A^{ - 1}}A + {A^{ - 1}}.I = {A^{ - 1}}.0$$\n<br><br>(Multiplying $$\\,\\,\\,{A^{ - 1}}$$ on both sides)\n<br><br>$$ \\Rightarrow A - 1 + {A^{ - 1}} = 0$$ \n<br><br>or $${A^{ - 1}} = 1 - A$$ ",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "BrIRgABjKyBYb3DI",
@@ -612,8 +583,7 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "easy",
     "solution": "$$A = \\left[ {\\matrix{\n   0 &amp; 0 &amp; { - 1}  \\cr \n   0 &amp; { - 1} &amp; 0  \\cr \n   { - 1} &amp; 0 &amp; 0  \\cr \n\n } } \\right]$$\n<br><br>clearly $$\\,\\,\\,A \\ne 0.\\,$$ Also $$\\,\\,\\left| A \\right| =  - 1 \\ne 0$$\n<br><br>$$\\therefore$$ $${A^{ - 1}}\\,\\,$$ exists, further \n<br><br>$$\\left( { - 1} \\right)I = \\left[ {\\matrix{\n   { - 1} &amp; 0 &amp; 0  \\cr \n   0 &amp; { - 1} &amp; 0  \\cr \n   0 &amp; 0 &amp; { - 1}  \\cr \n\n } } \\right] \\ne A$$\n<br><br>Also $${A^2} = \\left[ {\\matrix{\n   0 &amp; 0 &amp; { - 1}  \\cr \n   0 &amp; { - 1} &amp; 0  \\cr \n   { - 1} &amp; 0 &amp; 0  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   0 &amp; 0 &amp; { - 1}  \\cr \n   0 &amp; { - 1} &amp; 0  \\cr \n   { - 1} &amp; 0 &amp; 0  \\cr \n\n } } \\right]$$\n<br><br>$$ = \\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   0 &amp; 1 &amp; 0  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n\n } } \\right] = I$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   },
   {
     "id": "L5OkUKHe1Wo61y8B",
@@ -634,7 +604,6 @@
     "topic": "inverse-of-a-matrix",
     "difficulty": "easy",
     "solution": "Given that $$10B$$ $$\\,\\,\\, = \\left[ {\\matrix{\n   4 &amp; 2 &amp; 2  \\cr \n   { - 5} &amp; 0 &amp; \\alpha   \\cr \n   1 &amp; { - 2} &amp; 3  \\cr \n\n } } \\right]$$\n<br><br>$$ \\Rightarrow B = {1 \\over {10}}\\left[ {\\matrix{\n   4 &amp; 2 &amp; 2  \\cr \n   { - 5} &amp; 0 &amp; \\alpha   \\cr \n   1 &amp; { - 2} &amp; 3  \\cr \n\n } } \\right]$$\n<br><br>Also since, $$B = {A^{ - 1}} \\Rightarrow AB = I$$\n<br><br>$$ \\Rightarrow {1 \\over {10}}\\left[ {\\matrix{\n   1 &amp; { - 1} &amp; 1  \\cr \n   2 &amp; 1 &amp; { - 3}  \\cr \n   1 &amp; 1 &amp; 1  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   4 &amp; 2 &amp; 2  \\cr \n   { - 5} &amp; 0 &amp; \\alpha   \\cr \n   1 &amp; { - 2} &amp; 3  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   0 &amp; 1 &amp; 0  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n\n } } \\right]$$ \n<br><br>$$ \\Rightarrow {1 \\over {10}}\\left[ {\\matrix{\n   {10} &amp; 0 &amp; {5 - 2}  \\cr \n   0 &amp; {10} &amp; { - 5 + \\alpha }  \\cr \n   0 &amp; 0 &amp; {5 + \\alpha }  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1 &amp; 0 &amp; 0  \\cr \n   0 &amp; 1 &amp; 0  \\cr \n   0 &amp; 0 &amp; 1  \\cr \n\n } } \\right]$$\n<br><br>$$ \\Rightarrow {{5 - \\alpha } \\over {10}} = 0$$\n<br><br>$$ \\Rightarrow \\alpha  = 5$$",
-    "section": "A",
-    "type": "SCQ"
+    "section": "A"
   }
 ]
