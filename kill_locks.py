@@ -20,5 +20,5 @@ for lock in locks:
 
 print('Running git add, commit, push...')
 os.system('git add .')
-os.system('git commit -m "Force bypass cache"')
+os.system('git commit -m "Integrate Firebase Realtime Database"')
 os.system('git push')

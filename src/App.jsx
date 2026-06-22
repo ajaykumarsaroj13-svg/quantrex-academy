@@ -18,6 +18,7 @@ const BookChapterList = React.lazy(() => import('./pages/BookChapterList'));
 const BookPractice = React.lazy(() => import('./pages/BookPractice'));
 
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
+import { fetchToppersFromFirebase, fetchSyllabusFromFirebase } from './firebase';
 
 
 
@@ -102,6 +103,25 @@ export default function App() {
       localStorage.setItem('quantrex_active_page', activePage);
     } catch(e) {}
   }, [activePage]);
+
+  // Fetch initial data from Firebase
+  useEffect(() => {
+    const fetchFirebaseData = async () => {
+      try {
+        const fetchedToppers = await fetchToppersFromFirebase();
+        if (fetchedToppers) {
+          setToppers(fetchedToppers);
+        }
+        const fetchedSyllabus = await fetchSyllabusFromFirebase();
+        if (fetchedSyllabus) {
+          setSyllabus(fetchedSyllabus);
+        }
+      } catch (err) {
+        console.error("Firebase fetch error", err);
+      }
+    };
+    fetchFirebaseData();
+  }, []);
 
   // Persist syllabus when updated (e.g. from Admin Dashboard)
   useEffect(() => {
