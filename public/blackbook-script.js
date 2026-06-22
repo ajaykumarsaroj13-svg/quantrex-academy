@@ -6,7 +6,7 @@ window.DEFAULT_BLACKBOOK = [
     "questions": [
       {
         "questionNumber": 1,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Range of the function $f(x) = \\log_2(2 - \\log_{\\sqrt{2}}(16\\sin^2 x + 1))$ is :",
         "options": [
           "$[0, 1]$",
@@ -19,11 +19,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $a$ and $b$ for which $|e^{|x - b|} - a| = 2$, has four distinct solutions, are :",
         "options": [
           "$a \\in (-3, \\infty), b = 0$",
@@ -36,11 +37,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The range of the function :\n$$f(x) = \\tan^{-1} x + \\frac{1}{2} \\sin^{-1} x$$",
         "options": [
           "$(-\\pi/2, \\pi/2)$",
@@ -53,11 +55,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Find the number of real ordered pair(s) $(x, y)$ for which :\n$$16^{x^2 + y} + 16^{x + y^2} = 1$$",
         "options": [
           "0",
@@ -70,11 +73,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The complete range of values of 'a' such that $\\left(\\frac{1}{2}\\right)^{|x|} = x^2 - a$ is satisfied for maximum number of values of x is :",
         "options": [
           "$(-\\infty, -1)$",
@@ -87,11 +91,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For a real number x, let [x] denotes the greatest integer less than or equal to x. Let f : R -> R be defined by f(x) = 2x + [x] + sin x cos x. Then f is :",
         "options": [
           "One-one but not onto",
@@ -104,11 +109,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The maximum value of $\\sec^{-1} \\left( \\frac{7 - 5(x^2 + 3)}{2(x^2 + 2)} \\right)$ is :",
         "options": [
           "$\\frac{5\\pi}{6}$",
@@ -121,11 +127,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of ordered pair (a, b) from the set A = {1, 2, 3, 4, 5} so that the function f(x) = x^3/3 + (a/2)x^2 + bx + 10 is an injective mapping for all x in R :",
         "options": [
           "13",
@@ -138,11 +145,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let A be the greatest value of the function f(x) = log_x [x], (where [.] denotes greatest integer function) and B be the least value of the function g(x) = |sin x| + |cos x|, then :",
         "options": [
           "A > B",
@@ -155,11 +163,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let A = [a, \\infty) denotes domain, then f: [a, \\infty) -> B, f(x) = 2x^3 - 3x^2 + 6 will have an inverse for the smallest real value of a, if :",
         "options": [
           "a = 1, B = [5, \\infty)",
@@ -172,11 +181,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Solution of the inequation {x}({x} - 1)({x} + 2) &gt;= 0 (where {.} denotes fractional part function) is :",
         "options": [
           "x in (-2, 1)",
@@ -189,11 +199,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let f(x), g(x) be two real valued functions then the function h(x) = 2 max{f(x) - g(x), 0} is equal to :",
         "options": [
           "f(x) - g(x) - |g(x) - f(x)|",
@@ -206,11 +217,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let R = {(1, 3), (4, 2), (2, 4), (2, 3), (3, 1)} be a relation on the set A = {1, 2, 3, 4}. The relation R is :",
         "options": [
           "a function",
@@ -223,11 +235,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The true set of values of 'K' for which sin^-1(1 / (1 + sin^2 x)) = (K*pi)/6 may have a solution is :",
         "options": [
           "[1/4, 1/2]",
@@ -240,11 +253,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "A real valued function f(x) satisfies the functional equation f(x - y) = f(x)f(y) - f(a - x)f(a + y) where 'a' is a given constant and f(0) = 1, f(2a - x) is equal to :",
         "options": [
           "-f(x)",
@@ -257,11 +271,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let g : R -> R be given by g(x) = 3 + 4x if g^n(x) = g o g o g ... o g(x) n times. Then inverse of g^n(x) is equal to :",
         "options": [
           "(x + 1 - 4^n) * 4^{-n}",
@@ -274,11 +289,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let f : D -> R be defined as : f(x) = (x^2 + 2x + a) / (x^2 + 4x + 3a) where D and R denote the domain of f and the set of all real numbers respectively. If f is surjective mapping, then the complete range of a is :",
         "options": [
           "0 <= a <= 1",
@@ -291,11 +307,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f : (-\\infty, 2] \\to (-\\infty, 4]$, where $f(x) = x(4-x)$, then $f^{-1}(x)$ is given by :",
         "options": [
           "$2 - \\sqrt{4-x}$",
@@ -308,11 +325,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $[5\\sin x] + [\\cos x] + 6 = 0$, then range of $f(x) = \\sqrt{3}\\cos x + \\sin x$ corresponding to solution set of the given equation is : (where $[\\cdot]$ denotes greatest integer function)",
         "options": [
           "$[-2, -1)$",
@@ -325,11 +343,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f : \\mathbb{R} \\to \\mathbb{R}$, $f(x) = ax + \\cos x$ is an invertible function, then complete set of values of $a$ is :",
         "options": [
           "$(-2, -1] \\cup [1, 2)$",
@@ -342,11 +361,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The range of function $f(x) = [1 + \\sin x] + \\left[2 + \\sin \\frac{x}{2}\\right] + \\left[3 + \\sin \\frac{x}{3}\\right] + \\ldots + \\left[n + \\sin \\frac{x}{n}\\right] \\forall \\ x \\in [0, \\pi]$, $n \\in \\mathbb{N}$ ($[\\cdot]$ denotes greatest integer function) is :",
         "options": [
           "$\\left\\{ \\frac{n^2+n-2}{2}, \\frac{n(n+1)}{2} \\right\\}$",
@@ -359,11 +379,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f : \\mathbb{R} \\to \\mathbb{R}$, $f(x) = \\frac{x^2+ax+1}{x^2+x+1}$, then the complete set of values of '$a$' such that $f(x)$ is onto is :",
         "options": [
           "$(-\\infty, \\infty)$",
@@ -376,11 +397,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ and $g(x)$ are two functions such that $f(x) = [x] + [-x]$ and $g(x) = \\{x\\} \\ \\forall \\ x \\in \\mathbb{R}$ and $h(x) = f(g(x))$; then which of the following is incorrect ?\n($[\\cdot]$ denotes greatest integer function and $\\{\\cdot\\}$ denotes fractional part function)",
         "options": [
           "$f(x)$ and $h(x)$ are identical functions",
@@ -393,11 +415,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of elements in the range set of $f(x) = \\left[\\frac{x}{15}\\right]\\left[-\\frac{15}{x}\\right] \\forall \\ x \\in (0, 90)$; (where $[\\cdot]$ denotes greatest integer function) :",
         "options": [
           "$5$",
@@ -410,11 +433,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The graph of function $f(x)$ is shown below :\n\nThen the graph of $g(x) = \\frac{1}{f(|x|)}$ is :",
         "options": [],
         "exerciseName": "Exercise 1",
@@ -423,11 +447,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "imageUrl": "/images/q25_graph.png"
+        "imageUrl": "/images/q25_graph.png",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which of the following function is homogeneous ?",
         "options": [
           "$f(x) = x \\sin y + y \\sin x$",
@@ -440,11 +465,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} 2x + 3 & ; \\quad x \\le 1 \\\\ a^2x + 1 & ; \\quad x &gt; 1 \\end{cases}$. If the range of $f(x) = R$ (set of real numbers) then number of integral value(s), which $a$ may take :",
         "options": [
           "2",
@@ -457,11 +483,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 28,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The maximum integral value of $x$ in the domain of $f(x) = \\log_{10}(\\log_{1/3}(\\log_4(x - 5)))$ is :",
         "options": [
           "5",
@@ -474,11 +501,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 29,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Range of the function $f(x) = \\log_2 \\left( \\frac{4}{\\sqrt{x+2} + \\sqrt{2-x}} \\right)$ is :",
         "options": [
           "$(0, \\infty)$",
@@ -491,11 +519,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 30,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of integers statisfying the equation $|x^2 + 5x| + |x - x^2| = |6x|$ is :",
         "options": [
           "3",
@@ -508,11 +537,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 31,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which of the following is not an odd function ?",
         "options": [
           "$\\ln \\left( \\frac{x^4 + x^2 + 1}{(x^2 + x + 1)^2} \\right)$",
@@ -525,11 +555,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 32,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which of the following function is periodic with fundamental period $\\pi$ ?",
         "options": [
           "$f(x) = \\cos x + \\left[ \\frac{\\sin x}{2} \\right]$; where $[ \\cdot ]$ denotes greatest integer function",
@@ -542,11 +573,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 33,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : N \\longrightarrow Z$ and $f(x) = \\begin{cases} \\frac{x-1}{2} & ; \\text{ when } x \\text{ is odd} \\\\ -\\frac{x}{2} & ; \\text{ when } x \\text{ is even} \\end{cases}$, then :",
         "options": [
           "$f(x)$ is bijective",
@@ -559,11 +591,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 34,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $g(x)$ be the inverse of $f(x) = \\frac{2^{x+1} - 2^{1-x}}{2^x + 2^{-x}}$ then $g(x)$ be :",
         "options": [
           "$\\frac{1}{2} \\log_2 \\left( \\frac{2+x}{2-x} \\right)$",
@@ -576,11 +609,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 35,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which of the following is the graph of the curve $\\sqrt{|y|} = x$ is ?",
         "options": [
           "Graph (a)",
@@ -594,11 +628,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "imageUrl": "/images/q35_graph.png"
+        "imageUrl": "/images/q35_graph.png",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 36,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Range of $f(x) = \\log_{[x]} (9 - x^2)$; where $[ \\cdot ]$ denotes G.I.F. is :",
         "options": [
           "$\\{1, 2\\}$",
@@ -611,11 +646,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 37,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $e^x + e^{f(x)} = e$, then for $f(x)$ :",
         "options": [
           "Domain is $(-\\infty, 1)$",
@@ -628,11 +664,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 38,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If high voltage current is applied on the field given by the graph $y + |y| - x - |x| = 0$. On which of the following curve a person can move so that he remains safe ?",
         "options": [
           "$y = x^2$",
@@ -645,11 +682,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 39,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $|f(x) + 6 - x^2| = |f(x)| + |4 - x^2| + 2$, then $f(x)$ is necessarily non-negative for :",
         "options": [
           "$x \\in [-2, 2]$",
@@ -662,11 +700,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 40,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\cos(px) + \\sin x$ be periodic, then $p$ must be :",
         "options": [
           "Positive real number",
@@ -679,11 +718,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 41,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The domain of $f(x)$ is $(0, 1)$, therefore, the domain of $y = f(e^x) + f(\\ln|x|)$ is :",
         "options": [
           "$\\left( \\frac{1}{e}, 1 \\right)$",
@@ -696,11 +736,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 42,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $A = \\{1, 2, 3, 4\\}$ and $f : A \\rightarrow A$ satisfy $f(1) = 2, f(2) = 3, f(3) = 4, f(4) = 1$.\nSuppose $g : A \\rightarrow A$ satisfies $g(1) = 3$ and $fog = gof$, then $g =$",
         "options": [
           "$\\{(1, 3), (2, 1), (3, 2), (4, 4)\\}$",
@@ -713,11 +754,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 43,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of solutions of the equation $[y + [y]] = 2\\cos x$ is :\n(where $y = \\frac{1}{3}[\\sin x + [\\sin x + [\\sin x]]]$ and $[\\cdot] = \\text{greatest integer function}$)",
         "options": [
           "$0$",
@@ -730,11 +772,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 44,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The function, $f(x) = \\begin{cases} \\frac{(x^{2n})}{(x^{2n} \\text{sgn } x)^{2n+1}} \\left( \\frac{e^{\\frac{1}{x}} - e^{-\\frac{1}{x}}}{e^{\\frac{1}{x}} + e^{-\\frac{1}{x}}} \\right) & x \\neq 0 \\\\ 1 & x = 0 \\end{cases} \\quad n \\in N \\text{ is :}$",
         "options": [
           "Odd function",
@@ -747,11 +790,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 45,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(1) = 1$, and $f(n) = 2 \\sum_{r=1}^{n-1} f(r)$. Then $\\sum_{r=1}^m f(r)$ is equal to :",
         "options": [
           "$\\frac{3^m - 1}{2}$",
@@ -764,11 +808,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 46,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\frac{x}{\\sqrt{1+x^2}}$, then $\\underbrace{fofofo \\dots \\text{of}}_{n \\text{ times}} (x)$ is :",
         "options": [
           "$\\frac{x}{\\sqrt{1 + \\left( \\sum_{r=1}^n r \\right) x^2}}$",
@@ -781,11 +826,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 47,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : R \\rightarrow R$, $f(x) = 2x + |\\cos x|$, then $f$ is :",
         "options": [
           "One-one and into",
@@ -798,11 +844,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 48,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : R \\rightarrow R$, $f(x) = x^3 + x^2 + 3x + \\sin x$, then $f$ is :",
         "options": [
           "One-one and into",
@@ -815,11 +862,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 49,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f(x) = \\{x\\} + \\{x + 1\\} + \\{x + 2\\} + \\dots + \\{x + 99\\}$, then $[f(\\sqrt{2})]$, (where $\\{\\cdot\\}$ denotes fractional part function and $[\\cdot]$ denotes the greatest integer function) is equal to :",
         "options": [
           "$5050$",
@@ -832,11 +880,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 50,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $|\\cot x + \\text{cosec } x| = |\\cot x| + |\\text{cosec } x|$; $x \\in [0, 2\\pi]$, then complete set of values of $x$ is :",
         "options": [
           "$[0, \\pi]$",
@@ -849,11 +898,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 51,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The function $f(x) = 0$ has eight distinct real solution and $f$ also satisfy $f(4 + x) = f(4 - x)$. The sum of all the eight solution of $f(x) = 0$ is :",
         "options": [
           "$12$",
@@ -866,11 +916,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 52,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be a polynomial of degree $5$ with leading coefficient unity such that $f(1) = 5$, $f(2) = 4$, $f(3) = 3$, $f(4) = 2$, $f(5) = 1$. Then $f(6)$ is equal to :",
         "options": [
           "$0$",
@@ -883,11 +934,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 53,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : A \\rightarrow B$ be a function such that $f(x) = \\sqrt{x - 2} + \\sqrt{4 - x}$, is invertible, then which of the following is not possible ?",
         "options": [
           "$A = [3, 4]$",
@@ -900,11 +952,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 54,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of positive integral values of $x$ satisfying $\\left[ \\frac{x}{9} \\right] = \\left[ \\frac{x}{11} \\right]$ is :\n(where $[\\cdot]$ denotes greatest integer function)",
         "options": [
           "$21$",
@@ -917,11 +970,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 55,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The domain of function $f(x) = \\log_{\\left[ x + \\frac{1}{2} \\right]} (2x^2 + x - 1)$, where $[\\cdot]$ denotes the greatest integer function is :",
         "options": [
           "$\\left[ \\frac{3}{2}, \\infty \\right)$",
@@ -934,11 +988,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 56,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The solution set of the equation $[x]^2 + [x + 1] - 3 = 0$, where $[\\cdot]$ represents greatest integer function is :",
         "options": [
           "$[-1, 0) \\cup [1, 2)$",
@@ -951,11 +1006,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 57,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which among the following relations is a function ?\n(where $a, b, r$ are constants)",
         "options": [
           "$x^2 + y^2 = r^2$",
@@ -968,11 +1024,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 58,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "A funciton $f : R \\rightarrow R$ is defined as $f(x) = 3x^2 + 1$. Then $f^{-1}(x)$ is :",
         "options": [
           "$\\frac{\\sqrt{x-1}}{3}$",
@@ -985,11 +1042,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 59,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\begin{cases} 2+x, & x \\ge 0 \\\\ 4-x, & x &lt; 0 \\end{cases}$, then $f(f(x))$ is given by :",
         "options": [
           "$f(f(x)) = \\begin{cases} 4+x, & x \\ge 0 \\\\ 6-x, & x < 0 \\end{cases}$",
@@ -1002,11 +1060,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 60,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The function $f : R \\to R$ defined as $f(x) = \\frac{3x^2 + 3x - 4}{3 + 3x - 4x^2}$ is :",
         "options": [
           "One to one but not onto",
@@ -1019,11 +1078,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 61,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of solutions of the equation $e^x - \\log|x| = 0$ is :",
         "options": [
           "$0$",
@@ -1036,11 +1096,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 62,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If complete solution set of $e^{-x} \\le 4 - x$ is $[\\alpha, \\beta]$, then $[\\alpha] + [\\beta]$ is equal to :\n(where $[\\cdot]$ denotes greatest integer function)",
         "options": [
           "$0$",
@@ -1053,11 +1114,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 63,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Range of $f(x) = \\sqrt{\\sin(\\log_7(\\cos(\\sin x)))}$ is :",
         "options": [
           "$[0, 1)$",
@@ -1070,11 +1132,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 64,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If domain of $y = f(x)$ is $x \\in [-3, 2]$, then domain of $y = f([|x|])$ :\n(where $[\\cdot]$ denotes greatest integer function)",
         "options": [
           "$[-3, 2]$",
@@ -1087,11 +1150,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 65,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Range of the function $f(x) = \\cot^{-1}(\\{-x\\}) + \\sin^{-1}\\{x\\} + \\cos^{-1}\\{x\\}$, where $\\{\\cdot\\}$ denotes fractional part function :",
         "options": [
           "$\\left(\\frac{3\\pi}{4}, \\pi\\right)$",
@@ -1104,11 +1168,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 66,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : R - \\left\\{\\frac{3}{2}\\right\\} \\to R, f(x) = \\frac{3x+5}{2x-3}$. Let $f_1(x) = f(x), f_n(x) = f(f_{n-1}(x))$ for $n \\ge 2, n \\in N$, then $f_{2008}(x) + f_{2009}(x) =$ ",
         "options": [
           "$\\frac{2x^2 + 5}{2x - 3}$",
@@ -1121,11 +1186,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 67,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Range of the function, $f(x) = \\frac{(1+x+x^2)(1+x^4)}{x^3}$, for $x &gt; 0$ is :",
         "options": [
           "$[0, \\infty)$",
@@ -1138,11 +1204,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 68,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The function $f : (-\\infty, 3] \\to (0, e^7]$ defined by $f(x) = e^{x^3 - 3x^2 - 9x + 2}$ is :",
         "options": [
           "Many-one and onto",
@@ -1155,11 +1222,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 69,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\sin\\left\\{ \\log\\left( \\frac{\\sqrt{4 - x^2}}{1 - x} \\right) \\right\\} ; x \\in R$, then range of $f(x)$ is given by :",
         "options": [
           "$[-1, 1]$",
@@ -1172,11 +1240,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 70,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Set of values of '$a$' for which the function $f : R \\to R$, given by $f(x) = x^3 + (a + 2)x^2 + 3ax + 10$ is one-one is given by :",
         "options": [
           "$(-\\infty, 1] \\cup [4, \\infty)$",
@@ -1189,11 +1258,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 71,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the range of the function $f(x) = \\tan^{-1}(3x^2 + bx + c)$ is $\\left[ 0, \\frac{\\pi}{2} \\right)$; (domain is $R$), then :",
         "options": [
           "$b^2 = 3c$",
@@ -1206,11 +1276,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 72,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\sin^{-1} x - \\cos^{-1} x$, then the set of values of $k$ for which of $|f(x)| = k$ has exactly two distinct solutions is :",
         "options": [
           "$\\left( 0, \\frac{\\pi}{2} \\right]$",
@@ -1223,11 +1294,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 73,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : R \\to R$ is defined by $f(x) = \\begin{cases} (x + 1)^3 & ; \\quad x \\le 1 \\\\ \\ln x + (b^2 - 3b + 10) & ; \\quad x &gt; 1 \\end{cases}$. If $f(x)$ is invertible, then the set of all values of '$b$' is :",
         "options": [
           "$\\{1, 2\\}$",
@@ -1240,11 +1312,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 74,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ is continuous function with range $[-1, 1]$ and $f(x)$ is defined $\\forall x \\in R$. If $g(x) = \\frac{e^{f(x)} - e^{|f(x)|}}{e^{f(x)} + e^{|f(x)|}}$, then range of $g(x)$ is :",
         "options": [
           "$[0, 1]$",
@@ -1257,11 +1330,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 75,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider all functions $f : \\{1, 2, 3, 4\\} \\to \\{1, 2, 3, 4\\}$ which are one-one, onto and satisfy the following property :\nif $f(k)$ is odd then $f(k + 1)$ is even, $k = 1, 2, 3$.\nThe number of such functions is :",
         "options": [
           "4",
@@ -1274,11 +1348,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 76,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider the function $f : R - \\{1\\} \\to R - \\{2\\}$ given by $f(x) = \\frac{2x}{x - 1}$. Then :",
         "options": [
           "$f$ is one-one but not onto",
@@ -1291,11 +1366,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 77,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If range of function $f(x)$ whose domain is set of all real numbers is $[-2, 4]$, then range of function $g(x) = \\frac{1}{2} f(2x + 1)$ is equal to :",
         "options": [
           "$[-2, 4]$",
@@ -1308,11 +1384,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 78,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : \\mathbb{R} \\rightarrow \\mathbb{R}$ and $f(x) = \\frac{x(x^4 + 1)(x + 1) + x^4 + 2}{x^2 + x + 1}$, then $f(x)$ is :",
         "options": [
           "One-one, into",
@@ -1325,11 +1402,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 79,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be defined as :\n$$f(x) = \\begin{cases} |x| & 0 \\le x &lt; 1 \\\\ |x - 1| + |x - 2| & 1 \\le x &lt; 2 \\\\ |x - 3| & 2 \\le x &lt; 3 \\end{cases}$$\nThe range of function $g(x) = \\sin(7(f(x)))$ is :",
         "options": [
           "$[0, 1]$",
@@ -1342,11 +1420,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 80,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $[x]^2 - 7[x] + 10 &lt; 0$ and $4[y]^2 - 16[y] + 7 &lt; 0$, then $[x + y]$ cannot be ($[\\cdot]$ denotes greatest integer function) :",
         "options": [
           "$7$",
@@ -1359,11 +1438,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 81,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : \\mathbb{R} \\rightarrow \\mathbb{R}$ be a function defined by $f(x) = \\frac{e^{|x|} - e^{-x}}{e^x + e^{-x}}$, then",
         "options": [
           "$f(x)$ is many one, onto function",
@@ -1376,11 +1456,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 82,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The function $f(x)$ satisfy the equation $f(1 - x) + 2f(x) = 3x \\ \\forall \\ x \\in \\mathbb{R}$, then $f(0) =$ ",
         "options": [
           "$-2$",
@@ -1393,11 +1474,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 83,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : [0, 5] \\rightarrow [0, 5]$ be an invertible function defined by $f(x) = ax^2 + bx + c$, where $a, b, c \\in \\mathbb{R}$, $abc \\ne 0$, then one of the root of the equation $cx^2 + bx + a = 0$ is :",
         "options": [
           "$a$",
@@ -1410,11 +1492,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 84,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^2 + \\lambda x + \\mu \\cos x$, $\\lambda$ being an integer and $\\mu$ is a real number. The number of ordered pairs $(\\lambda, \\mu)$ for which the equation $f(x) = 0$ and $f(f(x)) = 0$ have the same (non empty) set of real roots is :",
         "options": [
           "$2$",
@@ -1427,11 +1510,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 85,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider all function $f : \\{1, 2, 3, 4\\} \\rightarrow \\{1, 2, 3, 4\\}$ which are one-one, onto and satisfy the following property :\nif $f(k)$ is odd then $f(k + 1)$ is even, $k = 1, 2, 3$.\nThe number of such function is :",
         "options": [
           "$4$",
@@ -1444,11 +1528,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 86,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which of the following is closest to the graph of $y = \\tan(\\sin x)$, $x &gt; 0$?",
         "options": [],
         "exerciseName": "Exercise 1",
@@ -1457,11 +1542,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "imageUrl": "/images/q86_graph.png"
+        "imageUrl": "/images/q86_graph.png",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 87,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider the function $f : \\mathbb{R} - \\{1\\} \\to \\mathbb{R} - \\{2\\}$ given by $f(x) = \\frac{2x}{x - 1}$. Then",
         "options": [
           "$f$ is one-one but not onto",
@@ -1474,11 +1560,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 88,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If range of function $f(x)$ whose domain is set of all real numbers is $[-2, 4]$, then range of function $g(x) = \\frac{1}{2}f(2x + 1)$ is equal to :",
         "options": [
           "$[-2, 4]$",
@@ -1491,11 +1578,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 89,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ and $f(x) = \\frac{x(x^4 + 1)(x + 1) + x^4 + 2}{x^2 + x + 1}$, then $f(x)$ is :",
         "options": [
           "One-one, into",
@@ -1508,11 +1596,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 90,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be defined as\n$$f(x) = \\begin{cases} |x| & 0 \\le x &lt; 1 \\\\ |x - 1| + |x - 2| & 1 \\le x &lt; 2 \\\\ |x - 3| & 2 \\le x &lt; 3 \\end{cases}$$\nThe range of function $g(x) = \\sin(\\pi f(x))$ is :",
         "options": [
           "$[0, 1]$",
@@ -1525,11 +1614,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 91,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integral values of $x$ in the domain of function $f$ defined as\n$f(x) = \\sqrt{\\ln|\\ln|x||} + \\sqrt{7|x| - |x|^2 - 10}$ is :",
         "options": [
           "5",
@@ -1542,11 +1632,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 92,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The complete set of values of $x$ in the domain of function $f(x) = \\sqrt{\\log_{x+2\\{x\\}}([x]^2 - 5[x] + 7)}$\n(where $[\\cdot]$ denote greatest integer function and $\\{\\cdot\\}$ denote fraction part function) is :",
         "options": [
           "$\\left(-\\frac{1}{3}, 0\\right) \\cup \\left(\\frac{1}{3}, 1\\right) \\cup (2, \\infty)$",
@@ -1559,11 +1650,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 93,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integral ordered pair $(x, y)$ that satisfy the system of equation $|x + y - 4| = 5$ and $|x - 3| + |y - 1| = 5$ is/are :",
         "options": [
           "$2$",
@@ -1576,11 +1668,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 94,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : R \\rightarrow R$, where $f(x) = \\frac{x^2 + ax + 1}{x^2 + x + 1}$. Then the complete set of values of '$a$' such that $f(x)$ is onto is :",
         "options": [
           "$(-\\infty, \\infty)$",
@@ -1593,11 +1686,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 95,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $A = \\{1, 2, 3, 4\\}$ and $f : A \\rightarrow A$, then total number of invertible function '$f$' such that $f(2) \\neq 2$, $f(4) \\neq 4, f(1) = 1$ is equal to :",
         "options": [
           "$1$",
@@ -1610,11 +1704,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 96,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The domain of definition of $f(x) = \\log_{(x^2 - x + 1)}(2x^2 - 7x + 9)$ is :",
         "options": [
           "$R$",
@@ -1627,11 +1722,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 97,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $A = \\{1, 2, 3, 4\\}, B = \\{1, 2, 3, 4, 5, 6\\}$ and $f : A \\rightarrow B$ is an injective mapping satisfying $f(i) \\neq i$, then number of such mappings are :",
         "options": [
           "$182$",
@@ -1644,11 +1740,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 98,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^2 - 2x - 3 ; x \\geq 1$ and $g(x) = 1 + \\sqrt{x + 4} ; x \\geq -4$ then the number of real solutions of equation $f(x) = g(x)$ is/are",
         "options": [
           "$0$",
@@ -1661,11 +1758,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f(x)$ is an even periodic function with period 10. In $[0, 5], f(x) = \\begin{cases} 2x & 0 \\le x &lt; 2 \\\\ 3x^2 - 8 & 2 \\le x &lt; 4 \\\\ 10x & 4 \\le x \\le 5 \\end{cases}$. Then :",
         "options": [
           "$f(-4) = 40$",
@@ -1683,11 +1781,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\left| |x^2 - 4x + 3| - 2 \\right|$. Which of the following is/are correct ?",
         "options": [
           "$f(x) = m$ has exactly two real solutions of different sign $\\forall m > 2$",
@@ -1705,11 +1804,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           2
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\cos^{-1} \\left( \\frac{1 - \\tan^2 (x/2)}{1 + \\tan^2 (x/2)} \\right)$\nWhich of the following statement(s) is/are correct about $f(x)$ ?",
         "options": [
           "Domain is $R$",
@@ -1726,11 +1826,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           2,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\left| \\log_e |x| \\right| = |k - 1| - 3$ has four distinct roots then $k$ satisfies : (where $|x| &lt; e^2, x \\neq 0$)",
         "options": [
           "$(-4, -2)$",
@@ -1747,11 +1848,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           1
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which of the following functions are defined for all $x \\in R$ ?\n(Where $[\\cdot]$ denotes greatest integer function)",
         "options": [
           "$f(x) = \\sin[x] + \\cos[x]$",
@@ -1769,11 +1871,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           2
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} x^2 & 0 &lt; x &lt; 2 \\\\ 2x - 3 & 2 \\le x &lt; 3 \\\\ x + 2 & x \\ge 3 \\end{cases}$, then the true equations :",
         "options": [
           "$f\\left(f\\left(f\\left(\\frac{3}{2}\\right)\\right)\\right) = f\\left(\\frac{3}{2}\\right)$",
@@ -1792,11 +1895,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : \\left[ \\frac{2\\pi}{3}, \\frac{5\\pi}{3} \\right] \\longrightarrow [0, 4]$ be a function defined as $f(x) = \\sqrt{3} \\sin x - \\cos x + 2$, then :",
         "options": [
           "$f^{-1}(1) = \\frac{4\\pi}{3}$",
@@ -1813,11 +1917,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be invertible function and let $f^{-1}(x)$ be its inverse. Let equation $f(x) = f^{-1}(x)$ has two real roots $\\alpha$ and $\\beta$ (with in domain of $f(x)$), then :",
         "options": [
           "$f(x) = x$ also have same two real roots",
@@ -1835,11 +1940,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           2
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The function $f(x) = \\cos^{-1} x + \\cos^{-1}\\left(\\frac{x}{2} + \\frac{\\sqrt{3-3x^2}}{2}\\right)$, then :",
         "options": [
           "Range of $f(x)$ is $\\left[\\frac{\\pi}{3}, \\frac{10\\pi}{3}\\right]$",
@@ -1856,11 +1962,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           1,
           2
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f: \\mathbb{R} \\to \\mathbb{R}$ defined by $f(x) = \\cos^{-1} (-\\{ -x \\})$, where $\\{x\\}$ is fractional part function. Then which of the following is/are correct ?",
         "options": [
           "$f$ is many-one but not even function",
@@ -1878,11 +1985,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which option(s) is/are true ?",
         "options": [
           "$f: \\mathbb{R} \\to \\mathbb{R}$, $f(x) = e^{|x|} - e^{-x}$ is many-one into function",
@@ -1900,11 +2008,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $h(x) = \\left[ \\ln \\frac{x}{e} \\right] + \\left[ \\ln \\frac{e}{x} \\right]$, where $[\\cdot]$ denotes greatest integer function, then which of the following are true ?",
         "options": [
           "range of $h(x)$ is $\\{-1, 0\\}$",
@@ -1921,11 +2030,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           2
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\begin{cases} x^3 & ; \\quad x \\in \\mathbb{Q} \\\\ -x^3 & ; \\quad x \\notin \\mathbb{Q} \\end{cases}$, then :",
         "options": [
           "$f(x)$ is periodic",
@@ -1942,11 +2052,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           2,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be a real valued continuous function such that\n$f(0) = \\frac{1}{2}$ and $f(x + y) = f(x)f(a - y) + f(y)f(a - x) \\forall x, y \\in R$,\nthen for some real $a$ :",
         "options": [
           "$f(x)$ is a periodic function",
@@ -1964,11 +2075,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           2
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f(x)$ is an even periodic function with period 10. In $[0, 5]$, $f(x) = \\begin{cases} 2x & 0 \\le x &lt; 2 \\\\ 3x^2 - 8 & 2 \\le x &lt; 4 \\\\ 10x & 4 \\le x \\le 5 \\end{cases}$. Then :",
         "options": [
           "$f(-4) = 40$",
@@ -1986,11 +2098,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For the equation $\\frac{e^{-x}}{1+x} = \\lambda$ which of the following statement(s) is/are correct ?",
         "options": [
           "when $\\lambda \\in (0, \\infty)$ equation has 2 real and distinct roots",
@@ -2008,11 +2121,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For $x \\in R^{+}$, if $x, [x], \\{x\\}$ are in harmonic progression then the value of $x$ can not be equal to :\n(where $[\\cdot]$ denotes greatest integer function, $\\{\\cdot\\}$ denotes fractional part function)",
         "options": [
           "$\\frac{1}{\\sqrt{2}} \\tan \\frac{\\pi}{8}$",
@@ -2030,11 +2144,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           2,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The equation $||x-1|+a| = 4, a \\in R$, has :",
         "options": [
           "3 distinct real roots for unique value of $a$",
@@ -2053,11 +2168,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f_n(x) = (\\sin x)^{1/n} + (\\cos x)^{1/n}, x \\in R$, then :\n(Where $I$ denotes set of integers)",
         "options": [
           "$f_2(x) > 1$ for all $x \\in \\left( 2k\\pi, (4k+1)\\frac{\\pi}{2} \\right), k \\in I$",
@@ -2074,11 +2190,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           1
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the domain of $f(x) = \\frac{1}{\\pi} \\cos^{-1}\\left[\\log_3 \\left(\\frac{x^2}{3}\\right)\\right]$ where, $x &gt; 0$ is $[a, b]$ and the range of $f(x)$ is $[c, d]$, then :",
         "options": [
           "$a, b$ are the roots of the equation $x^4 - 3x^3 - x + 3 = 0$",
@@ -2095,11 +2212,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of real values of $x$ satisfying the equation ; $\\left[\\frac{2x+1}{3}\\right] + \\left[\\frac{4x+5}{6}\\right] = \\frac{3x-1}{2}$ are greater than or equal to ($[\\cdot]$ denotes greatest integer function):",
         "options": [
           "$7$",
@@ -2117,11 +2235,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           2
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\sin^6\\left(\\frac{x}{4}\\right) + \\cos^6\\left(\\frac{x}{4}\\right)$. If $f^n(x)$ denotes $n^{\\text{th}}$ derivative of $f$ evaluated at $x$. Then which of the following hold ?",
         "options": [
           "$f^{2014}(0) = -\\frac{3}{8}$",
@@ -2139,11 +2258,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           2,
           3
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which of the following is(are) incorrect ?",
         "options": [
           "If $f(x) = \\sin x$ and $g(x) = \\ln x$ then range of $g(f(x))$ is $[-1, 1]$",
@@ -2160,11 +2280,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           1
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $[x]$ denotes the integral part of $x$ for real $x$, and\n$$S = \\left[\\frac{1}{4}\\right] + \\left[\\frac{1}{4} + \\frac{1}{200}\\right] + \\left[\\frac{1}{4} + \\frac{1}{100}\\right] + \\left[\\frac{1}{4} + \\frac{3}{200}\\right] \\dots + \\left[\\frac{1}{4} + \\frac{199}{200}\\right]$$ then",
         "options": [
           "$S$ is a composite number",
@@ -2181,11 +2302,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           1
-        ]
+        ],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 3**\n\nLet $f(x) = \\log_{\\{x\\}} [x]$\n$g(x) = \\log_{\\{x\\}} \\{x\\}$\n$h(x) = \\log_{[x]} \\{x\\}$\nwhere $[\\ ], \\{ \\}$ denotes the greatest integer function and fractional part fucntion respectively.\n\nFor $x \\in (1, 5)$ the $f(x)$ is not defined at how many points :",
         "options": [
           "5",
@@ -2198,11 +2320,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 3**\n\nLet $f(x) = \\log_{\\{x\\}} [x]$\n$g(x) = \\log_{\\{x\\}} \\{x\\}$\n$h(x) = \\log_{[x]} \\{x\\}$\nwhere $[\\ ], \\{ \\}$ denotes the greatest integer function and fractional part fucntion respectively.\n\nIf $A = \\{x : x \\in \\text{domain of } f(x)\\}$ and $B = \\{x : x \\in \\text{domain of } g(x)\\}$ then $\\forall x \\in (1, 5)$, $A - B$ will be :",
         "options": [
           "$(2, 3)$",
@@ -2215,11 +2338,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 3**\n\nLet $f(x) = \\log_{\\{x\\}} [x]$\n$g(x) = \\log_{\\{x\\}} \\{x\\}$\n$h(x) = \\log_{[x]} \\{x\\}$\nwhere $[\\ ], \\{ \\}$ denotes the greatest integer function and fractional part fucntion respectively.\n\nDomain of $h(x)$ is :\n$I$ denotes integers.",
         "options": [
           "$[2, \\infty)$",
@@ -2232,11 +2356,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 4 to 6**\n\n$\\theta$ is said to be well behaved if it lies in interval $\\left[0, \\frac{\\pi}{2}\\right]$. They are intelligent if they make domain of $f + g$ and $g$ equal. The values of $\\theta$ for which $h(\\theta)$ is defined are handsome. Let\n$f(x) = \\sqrt{\\theta x^2 - 2(\\theta^2 - 3)x - 12\\theta}, g(x) = \\ln(x^2 - 49),$\n$h(\\theta) = \\ln \\left[ \\int_0^\\theta 4 \\cos^2 t \\, dt - \\theta^2 \\right]$, where $\\theta$ is in radians.\n\nComplete set of values of $\\theta$ which are well behaved as well as intelligent is :",
         "options": [
           "$\\left[\\frac{3}{4}, \\frac{\\pi}{2}\\right]$",
@@ -2249,11 +2374,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 4 to 6**\n\n$\\theta$ is said to be well behaved if it lies in interval $\\left[0, \\frac{\\pi}{2}\\right]$. They are intelligent if they make domain of $f + g$ and $g$ equal. The values of $\\theta$ for which $h(\\theta)$ is defined are handsome. Let\n$f(x) = \\sqrt{\\theta x^2 - 2(\\theta^2 - 3)x - 12\\theta}, g(x) = \\ln(x^2 - 49),$\n$h(\\theta) = \\ln \\left[ \\int_0^\\theta 4 \\cos^2 t \\, dt - \\theta^2 \\right]$, where $\\theta$ is in radians.\n\nComplete set of values of $\\theta$ which are intelligent is :",
         "options": [
           "$\\left[\\frac{6}{7}, \\frac{7}{2}\\right]$",
@@ -2266,11 +2392,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 4 to 6**\n\n$\\theta$ is said to be well behaved if it lies in interval $\\left[0, \\frac{\\pi}{2}\\right]$. They are intelligent if they make domain of $f + g$ and $g$ equal. The values of $\\theta$ for which $h(\\theta)$ is defined are handsome. Let\n$f(x) = \\sqrt{\\theta x^2 - 2(\\theta^2 - 3)x - 12\\theta}, g(x) = \\ln(x^2 - 49),$\n$h(\\theta) = \\ln \\left[ \\int_0^\\theta 4 \\cos^2 t \\, dt - \\theta^2 \\right]$, where $\\theta$ is in radians.\n\nComplete set of values of $\\theta$ which are well behaved, intelligent and handsome is :",
         "options": [
           "$\\left(0, \\frac{\\pi}{2}\\right]$",
@@ -2283,11 +2410,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 7 to 8**\nLet $f(x) = 2 - |x - 3|$, $1 \\leq x \\leq 5$ and for rest of the values $f(x)$ can be obtained by using the relation $f(5x) = \\alpha f(x) \\forall x \\in R$.\n\nThe maximum value of $f(x)$ in $[5^4, 5^5]$ for $\\alpha = 2$ is :",
         "options": [
           "16",
@@ -2300,11 +2428,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 7 to 8**\nLet $f(x) = 2 - |x - 3|$, $1 \\leq x \\leq 5$ and for rest of the values $f(x)$ can be obtained by using the relation $f(5x) = \\alpha f(x) \\forall x \\in R$.\n\nThe value of $f(2007)$, taking $\\alpha = 5$, is :",
         "options": [
           "1118",
@@ -2317,11 +2446,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 9 to 10**\nAn even periodic function $f : R \\rightarrow R$ with period $4$ is such that\n$$f(x) = \\begin{cases} \\max(|x|, x^2) & ; \\ 0 \\leq x &lt; 1 \\\\ x & ; \\ 1 \\leq x \\leq 2 \\end{cases}$$\n\nThe value of $\\{f(5.12)\\}$ (where $\\{\\cdot\\}$ denotes fractional part function), is :",
         "options": [
           "$\\{f(3.26)\\}$",
@@ -2334,11 +2464,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 9 to 10**\nAn even periodic function $f : R \\rightarrow R$ with period $4$ is such that\n$$f(x) = \\begin{cases} \\max(|x|, x^2) & ; \\ 0 \\leq x &lt; 1 \\\\ x & ; \\ 1 \\leq x \\leq 2 \\end{cases}$$\n\nThe number of solutions of $f(x) = |3 \\sin x|$ for $x \\in (-6, 6)$ are :",
         "options": [
           "5",
@@ -2351,11 +2482,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 11 to 12**\nLet $f(x) = \\frac{2|x| - 1}{x - 3}$\n\nRange of $f(x)$ :",
         "options": [
           "$R - \\{3\\}$",
@@ -2368,11 +2500,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 11 to 12**\nLet $f(x) = \\frac{2|x| - 1}{x - 3}$\n\nRange of the values of '$k$' for which $f(x) = k$ has exactly two distinct solutions :",
         "options": [
           "$\\left(-2, \\frac{1}{3}\\right)$",
@@ -2385,11 +2518,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 13 to 14**\nLet $f(x)$ be a continuous function (define for all $x$) which satisfies $f^3(x) - 5f^2(x) + 10f(x) - 12 \\geq 0$, $f^2(x) - 4f(x) + 3 \\geq 0$ and $f^2(x) - 5f(x) + 6 \\leq 0$\n\nIf distinct positive number $b_1, b_2$ and $b_3$ are in G.P then $f(1) + \\ln b_1, f(2) + \\ln b_2, f(3) + \\ln b_3$ are in :",
         "options": [
           "A.P.",
@@ -2402,11 +2536,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 13 to 14**\nLet $f(x)$ be a continuous function (define for all $x$) which satisfies $f^3(x) - 5f^2(x) + 10f(x) - 12 \\geq 0$, $f^2(x) - 4f(x) + 3 \\geq 0$ and $f^2(x) - 5f(x) + 6 \\leq 0$\n\nThe equation of tangent that can be drawn from $(2, 0)$ on the curve $y = x^2 f(\\sin x)$ is :",
         "options": [
           "$y = 24(x + 2)$",
@@ -2419,11 +2554,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Paragraph for Question Nos. 15 to 16\nLet $f:[2, \\infty) \\to [1, \\infty)$ defined by $f(x) = 2^{x^4 - 4x^2}$ and $g:\\left[ \\frac{\\pi}{2}, \\pi \\right] \\to A$ defined by $g(x) = \\frac{\\sin x + 4}{\\sin x - 2}$ be two invertible functions, then\n\n$f^{-1}(x)$ is equal to",
         "options": [
           "$\\sqrt{2 + \\sqrt{4 - \\log_2 x}}$",
@@ -2436,11 +2572,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Paragraph for Question Nos. 15 to 16\nLet $f:[2, \\infty) \\to [1, \\infty)$ defined by $f(x) = 2^{x^4 - 4x^2}$ and $g:\\left[ \\frac{\\pi}{2}, \\pi \\right] \\to A$ defined by $g(x) = \\frac{\\sin x + 4}{\\sin x - 2}$ be two invertible functions, then\n\nThe set '$A$' equals to",
         "options": [
           "$[5, 2]$",
@@ -2453,11 +2590,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Functions",
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
-        "graph_bbox": []
+        "graph_bbox": [],
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the following columns:\n\nColumn-I                                         Column-II\n\n| Column-I | Column-II |\n|---|---|\n| (A) $f(x) = \\sin^2 2x - 2\\sin^2 x$ | (P) Range contains no natural number |\n| (B) $f(x) = \\frac{4}{\\pi} (\\sin^{-1}(\\sin \\pi x))$ | (Q) Range contains atleast one integer |\n| (C) $f(x) = \\sqrt{\\ln(\\cos(\\sin x))}$ | (R) Many one but not even function |\n| (D) $f(x) = \\tan^{-1} \\left( \\frac{x^2+1}{x^2+\\sqrt{3}} \\right)$ | (S) Both many one and even function\n                                                   (T) Periodic but not odd function |",
         "options": [
           "A $\\rightarrow$ P, B $\\rightarrow$ Q, C $\\rightarrow$ P, D $\\rightarrow$ P",
@@ -2471,11 +2609,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A→P,Q,S,T; B→Q,R; C→P,Q,S; D→P,S"
+        "answerKeyStr": "A→P,Q,S,T; B→Q,R; C→P,Q,S; D→P,S",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the following columns:\n\n| Column-I | Column-II |\n|---|---|\n| (A) If $|x^2-x| \\ge x^2+x$, then complete set of values of $x$ is | (P) $(0, \\infty)$ |\n| (B) If $|x+y| > x-y$, where $x > 0$, then complete set of values of $y$ is | (Q) $(-\\infty, 0]$ |\n| (C) If $\\log_2 x \\ge \\log_2 (x^2)$, then complete set of values of $x$ is | (R) $[-1, \\infty)$ |",
         "options": [
           "A $\\rightarrow$ R, B $\\rightarrow$ R, C $\\rightarrow$ R, D $\\rightarrow$ S",
@@ -2489,11 +2628,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A→Q; B→P; C→S; D→R"
+        "answerKeyStr": "A→Q; B→P; C→S; D→R",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the following columns:\n\nColumn-I                                         Column-II\n\n| Column-I | Column-II |\n|---|---|\n| (A) Domain of $f(x) = \\ln \\tan^{-1} \\{ (x^3 - 6x^2 + 11x - 6)x(e^x - 1) \\}$ is | (P) $\\left[-1, \\frac{5}{4}\\right]$ |\n| (B) Range of $f(x) = \\sin^2 \\frac{x}{4} + \\cos \\frac{x}{4}$ is | (Q) $[2, \\infty)$ |\n| (C) The domain of function $f(x) = \\sqrt{\\log_{(   x\n(D) Let $f(x) = \\begin{cases} x^2 & x &lt; 1 \\\\ x + 1 & x \\ge 1 \\end{cases}; g(x) = \\begin{cases} x + 2 & x &lt; 1 \\\\ x^2 & x \\ge 1 \\end{cases}$. Then range of function $f(g(x))$ is | (S) $[0, \\infty)$\n                                                   (T) $(-\\infty, -3) \\cup (-2, -1) \\cup (2, \\infty)$ |",
         "options": [
           "A $\\rightarrow$ P, B $\\rightarrow$ P, C $\\rightarrow$ R, D $\\rightarrow$ S",
@@ -2507,11 +2647,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A→R; B→P; C→T; D→S"
+        "answerKeyStr": "A→R; B→P; C→T; D→S",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} 1 + x; & 0 \\le x \\le 2 \\\\ 3 - x; & 2 &lt; x \\le 3 \\end{cases}$;\n$g(x) = f(f(x))$ :\n\n| Column-I | Column-II |\n| :--- | :--- |\n|\n\n| Column-I | Column-II |\n|---|---|\n| (A) If domain of $g(x)$ is $[a, b]$ then $b - a$ is | | (P) $1$ |\n| |\n| (B) If range of $g(x)$ is $[c, d]$ then $c + d$ is | | (Q) $2$ |\n| |\n| (C) $f(f(f(2))) + f(f(f(3)))$, is | | (R) $3$ |\n| |\n| (D) $m = \\text{maximum value of } g(x) \\text{ then } 2m - 2 \\text{ is :}$ | | (S) $4$ | |",
         "options": [
           "A $\\rightarrow$ R, B $\\rightarrow$ S, C $\\rightarrow$ S, D $\\rightarrow$ S",
@@ -2525,11 +2666,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A→R; B→R; C→R; D→S"
+        "answerKeyStr": "A→R; B→R; C→R; D→S",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be a polynomial of degree $6$ with leading coefficient $2009$. Suppose further, that $f(1)=1, f(2)=3, f(3)=5, f(4)=7, f(5)=9, f'(2)=2$, then the sum of all the digits of $f(6)$ is",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2538,11 +2680,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "26"
+        "answerKeyStr": "26",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^3 - 3x + 1$. Find the number of different real solution of the equation $f(f(x))=0$.",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2551,11 +2694,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x+y+1) = (\\sqrt{f(x)}+\\sqrt{f(y)})^2$ $\\forall \\ x, y \\in R$ and $f(0)=1$, then $f(2) = \\ldots\\ldots$",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2564,11 +2708,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the domain of $f(x) = \\sqrt{12-3^x-3^{3-x}} + \\sin^{-1}\\left(\\frac{2x}{3}\\right)$ is $[a, b]$, then $a = \\ldots\\ldots$",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2577,11 +2722,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of elements in the range of the function :\n$y = \\sin^{-1}\\left[x^2+\\frac{5}{9}\\right] + \\cos^{-1}\\left[x^2-\\frac{4}{9}\\right]$ where $[\\cdot]$ denotes the greatest integer function is",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2590,11 +2736,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of solutions of the equation $f(x-1)+f(x+1)=\\sin\\alpha, \\ 0 &lt; \\alpha &lt; \\frac{\\pi}{2}$ where\n$f(x) = \\begin{cases} 1-|x| & , \\ |x| \\le 1 \\\\ 0 & , \\ |x| &gt; 1 \\end{cases}$ is",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2603,11 +2750,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integers in the range of function $f(x) = [\\sin x] + [\\cos x] + [\\sin x + \\cos x]$ is\n(where $[\\cdot]$ denotes greatest integer function)",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2616,11 +2764,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $P(x)$ is a polynomial of degree $4$ such that $P(-1) = P(1) = 5$ and $P(-2) = P(0) = P(2) = 2$, then find the maximum value of $P(x)$.",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2629,11 +2778,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integral value(s) of $k$ for which the curve $y = \\sqrt{-x^2-2x}$ and $x+y-k=0$ intersect at 2 distinct points is/are",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2642,11 +2792,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let the solution set of the equation :\n$\\sqrt{\\left[x+\\left[\\frac{x}{2}\\right]\\right]} + \\left[\\sqrt{\\{x\\}} + \\left[\\frac{x}{3}\\right]\\right] = 3$\nis $[a, b)$. Find the product $ab$.\n(where $[\\cdot]$ and $\\{\\cdot\\}$ denote greatest integer and fractional part function respectively).",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2655,11 +2806,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "12"
+        "answerKeyStr": "12",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "For all real number $x$, let $f(x) = \\frac{1}{\\sqrt[2011]{1-x^{2011}}}$. Find the number of real roots of the equation\n$f(f(\\ldots\\ldots(f(x))\\ldots\\ldots)) = \\{-x\\}$\nwhere $f$ is applied $2013$ times and $\\{\\cdot\\}$ denotes fractional part function.",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2668,11 +2820,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Find the number of elements contained in the range of the function $f(x) = \\left[\\frac{x}{6}\\right]\\left[\\frac{-6}{x}\\right]$ $\\forall \\ x \\in (0, 30]$ (where $[\\cdot]$ denotes greatest integer function)",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2681,11 +2834,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x,y) = x^2-y^2$ and $g(x,y) = 2xy$.\nsuch that $(f(x,y))^2 - (g(x,y))^2 = \\frac{1}{2}$ and $f(x,y) \\cdot g(x,y) = \\frac{\\sqrt{3}}{4}$\nFind the number of ordered pairs $(x,y)$?",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2694,11 +2848,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\frac{x+5}{\\sqrt{x^2+1}} \\forall x \\in R$, then the smallest integral value of $k$ for which $f(x) \\le k \\forall x \\in R$ is",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2707,11 +2862,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "In the above problem, $f(x)$ is injective in the interval $x \\in (-\\infty, a]$, and $\\lambda$ is the largest possible value of $a$, then $[\\lambda] =$\n(where $[x]$ denote greatest integer $\\le x$)",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2720,11 +2876,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integral values of $m$ for which $f : R \\to R ; f(x) = \\frac{x^3}{3} + (m-1)x^2 + (m+5)x + n$ is bijective is :",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2733,11 +2890,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of roots of equation :\n$$ \\left( \\frac{(x-1)(x-3)}{(x-2)(x-4)} - e^x \\right) \\left( \\frac{(x+1)(x+3)e^x}{(x+2)(x+4)} - 1 \\right) (x^3 - \\cos x) = 0 $$",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2746,11 +2904,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of solutions of the equation $\\cos^{-1}\\left(\\frac{1-x^2-2x}{(x+1)^2}\\right) = \\pi(1-\\{x\\})$, for $x \\in [0, 76]$ is equal to. (where $\\{\\}$ denote fraction part function)",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2759,11 +2918,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "76"
+        "answerKeyStr": "76",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^2 - bx + c, b$ is an odd positive integer. Given that $f(x) = 0$ has two prime numbers as roots and $b+c = 35$. If the least value of $f(x) \\forall x \\in R$ is $\\lambda$, then $\\left[ \\left| \\frac{\\lambda}{3} \\right| \\right]$ is equal to\n(where $[\\cdot]$ denotes greatest integer function)",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2772,11 +2932,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be continuous function such that $f(0) = 1$ and $f(x) - f\\left(\\frac{x}{7}\\right) = \\frac{x}{7} \\forall x \\in R$, then $f(42) =$",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2785,11 +2946,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "8"
+        "answerKeyStr": "8",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = 4x^3 - x^2 - 2x + 1$ and $g(x) = \\begin{cases} \\min\\{f(t) : 0 \\le t \\le x\\} & ; \\ 0 \\le x \\le 1 \\\\ 3 - x & ; \\ 1 &lt; x \\le 2 \\end{cases}$ and if $\\lambda = g\\left(\\frac{1}{4}\\right) + g\\left(\\frac{3}{4}\\right) + g\\left(\\frac{5}{4}\\right)$, then $2\\lambda =$",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2798,11 +2960,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $x = 10 \\sum_{r=3}^{100} \\frac{1}{(r^2-4)}$, then $[x] =$\n(where $[\\cdot]$ denotes greatest integer function)",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2811,11 +2974,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\frac{ax+b}{cx+d}$, where $a, b, c, d$ are non zero. If $f(7) = 7$, $f(11) = 11$ and $f(f(x)) = x$ for all $x$ except $-\\frac{d}{c}$. The unique number which is not in the range of $f$ is",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2824,11 +2988,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $A = \\{x | x^2 - 4x + 3 &lt; 0, x \\in R\\}$\n$B = \\{x | 2^{1-x} + p \\le 0; x^2 - 2(p+7)x + 5 \\le 0\\}$\nIf $A \\subseteq B$, then the range of real number $p \\in [a, b]$ where $a, b$ are integers.\nFind the value of $(b - a)$.",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2837,11 +3002,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let the maximum value of expression $y = \\frac{x^4 - x^2}{x^6 + 2x^3 - 1}$ for $x &gt; 1$ is $\\frac{p}{q}$, where $p$ and $q$ are relatively prime natural numbers, then $p + q =$",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2850,11 +3016,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ is an even function, then the number of distinct real numbers $x$ such that $f(x) = f\\left(\\frac{x + 1}{x + 2}\\right)$ is :",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2863,11 +3030,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "The least integral value of $m$, $m \\in \\mathbb{R}$ for which the range of function $f(x) = \\frac{x + m}{x^2 + 1}$ contains the interval $[0, 1]$ is :",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2876,11 +3044,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 28,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $x_1, x_2, x_3$ satisfying the equation $x^3 - x^2 + \\beta x + \\gamma = 0$ are in G.P. where $x_1, x_2, x_3$ are positive numbers. Then the maximum value of $[\\beta] + [\\gamma] + 4$ is where $[\\cdot]$ denotes greatest integer function is :",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2889,11 +3058,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 29,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{0, 1, 2, 3, 4, 5\\}$. If '$m$' is the number of strictly increasing function $f$, $f: A \\rightarrow B$ and $n$ is the number of onto functions $g$, $g: B \\rightarrow A$. Then the last digit of $n - m$ is.",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2902,11 +3072,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 30,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\sum_{r=1}^n [\\log_2 r] = 2010$, where $[\\cdot]$ denotes greatest integer function, then the sum of the digits of $n$ is :",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2915,11 +3086,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "8"
+        "answerKeyStr": "8",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 31,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\frac{ax + b}{cx + d}$, where $a, b, c, d$ are non-zero. If $f(7) = 7, f(11) = 11$ and $f(f(x)) = x$ for all $x$ except $-\\frac{d}{c}$. The unique number which is not in the range of $f$ is",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2928,11 +3100,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 32,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "It is pouring down rain, and the amount of rain hitting point $(x, y)$ is given by $f(x, y) = |x^3 + 2x^2y - 5xy^2 - 6y^3|$. If Mr. 'A' starts at $(0, 0)$; find number of possible value(s) for '$m$' such that $y = mx$ is a line along which Mr. 'A' could walk without any rain falling on him.",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2941,11 +3114,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 33,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $P(x)$ be a cubic polynomial with leading co-efficient unity. Let the remainder when $P(x)$ is divided by $x^2 - 5x + 6$ equals 2 times the remainder when $P(x)$ is divided by $x^2 - 5x + 4$. If $P(0) = 100$, find the sum of the digits of $P(5)$:",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2954,11 +3128,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 34,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^2 + 10x + 20$. Find the number of real solution of the equation $f(f(f(f(x)))) = 0$",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2967,11 +3142,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 35,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "If range of $f(x) = \\frac{(\\ln x)(\\ln x^2) + \\ln x^3 + 3}{\\ln^2 x + \\ln x^2 + 2}$ can be expressed as $\\left[\\frac{a}{b}, \\frac{c}{d}\\right]$ where $a, b, c$ and $d$ are prime numbers (not necessarily distinct) then find the value of $\\frac{(a + b + c + d)}{2}$.",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2980,11 +3156,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 36,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Polynomial $P(x)$ contains only terms of odd degree. When $P(x)$ is divided by $(x - 3)$, then remainder is 6. If $P(x)$ is divided by $(x^2 - 9)$ then remainder is $g(x)$. Find the value of $g(2)$.",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -2993,11 +3170,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 37,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "The equation $2x^3 - 3x^2 + p = 0$ has three real roots. Then find the minimum value of $p$.",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -3006,11 +3184,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 38,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "Find the number of integers in the domain of $f(x) = \\frac{1}{\\sqrt{\\ln \\cos^{-1} x}}$",
         "options": [],
         "exerciseName": "Exercise 5",
@@ -3019,11 +3198,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the statements of Column I with values of Column II.\n\n| **Column-I** | **Column-II** |\n|---|---|\n| **(A) ** If  f(x) = \\frac{x}{1+x}  and  g(x) = f(f(x)) , then  g'(x)  at  x=1  is | **(P) ** is bounded |\n| **(B) ** The function  f(x) = \\sin(x) + \\cos(x) | **(Q) ** \\frac{1}{4} |\n| **(C) ** The period of  f(x) = \\sin^4(x) + \\cos^4(x)  is | **(R) ** \\frac{\\pi}{2} |\n| **(D) ** If  f(x) = x^3 + x , then  f^{-1}(2)  is | **(S) ** 1 |",
         "options": [
           "(a) (A) $\\rightarrow$ (P); (B) $\\rightarrow$ (Q); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)",
@@ -3037,11 +3217,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A→R; B→S; C→P; D→Q"
+        "answerKeyStr": "A→R; B→S; C→P; D→Q",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the functions in Column I with their properties in Column II.\n\n| **Column-I** | **Column-II** |\n|---|---|\n| **(A) ** f(x) = \\frac{x}{|x|} | **(P) ** Continuous everywhere |\n| **(B) ** f(x) = x|x| | **(Q) ** Discontinuous at  x=0 |\n| **(C) ** f(x) = [x] | **(R) ** Non-differentiable at  x=0 |\n| **(D) ** f(x) = \\sin(|x|) | **(S) ** Discontinuous at integer points |",
         "options": [
           "(a) (A) $\\rightarrow$ (P); (B) $\\rightarrow$ (Q); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)",
@@ -3055,11 +3236,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A→S; B→P; C→Q; D→R"
+        "answerKeyStr": "A→S; B→P; C→Q; D→R",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Given the graph of $y = f(x)$ below:\n\nMatch the functions in Column-I with their correct graphs in Column-II:\n\n| **Column-I (Function)** | **Column-II (Graph)** |\n|---|---|\n| **(A) ** y = f(1-x)  [Reflection about  x = \\frac{1}{2} ] | **(P) ** Graph shifted: passes through  (-1,-2), (0,0), (1,1), (2,0) |\n| **(B) ** y = f(2x)  [Horizontal compression by 2] | **(Q) ** Original  f(x)  — peaks at  (0,1) |\n| **(C) ** y = -2f(x)  [Vertical flip and scale  \\times 2 ] | **(R) ** Graph compressed: peaks at  (0,1) , x-range  [-\\frac{1}{2}, 1] |\n| **(D) ** y = 1 - f(x)  [Vertical flip + shift up 1] | **(S) ** Graph: passes through  (-1,0) , minimum  (0,-2) , passes through  (1,0) , to  (2,4) |",
         "options": [
           "(a) (A) $\\rightarrow$ (P); (B) $\\rightarrow$ (Q); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)",
@@ -3075,7 +3257,8 @@ window.DEFAULT_BLACKBOOK = [
         "graph_bbox": [],
         "imageUrl": "/images/ex4_q7_original.png",
         "answerKeyStr": "A→Q; B→R; C→P; D→S",
-        "imageUrl2": "/images/ex4_q7_options.png"
+        "imageUrl2": "/images/ex4_q7_options.png",
+        "type": "SINGLE_CORRECT"
       }
     ],
     "exercises": [
@@ -3112,7 +3295,7 @@ window.DEFAULT_BLACKBOOK = [
     "questions": [
       {
         "questionNumber": 1,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x\\rightarrow 0}\\frac{\\cos(\\tan x)-\\cos x}{x^4}=$",
         "options": [
           "$\\frac{1}{6}$",
@@ -3123,11 +3306,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x\\rightarrow 0}\\frac{(\\sin x-\\tan x)^2-(1-\\cos 2x)^4+x^5}{7(\\tan^{-1}x)^7+(\\sin^{-1}x)^6+3\\sin^5 x}$ equal to :",
         "options": [
           "$0$",
@@ -3138,11 +3322,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $a=\\lim_{x\\rightarrow 0}\\frac{\\ln(\\cos 2x)}{3x^2}$, $b=\\lim_{x\\rightarrow 0}\\frac{\\sin^2 2x}{x(1-e^x)}$, $c=\\lim_{x\\rightarrow 1}\\frac{\\sqrt{x}-x}{\\ln x}$\nThen $a,b,c$ satisfy :",
         "options": [
           "$a<b<c$",
@@ -3153,11 +3338,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)=\\cot^{-1}\\left(\\frac{3x-x^3}{1-3x^2}\\right)$ and $g(x)=\\cos^{-1}\\left(\\frac{1-x^2}{1+x^2}\\right)$, then $\\lim_{x\\rightarrow a}\\frac{f(x)-f(a)}{g(x)-g(a)}, 0<a<\\frac{1}{2}$ is :",
         "options": [
           "$\\frac{3}{2(1+a^2)}$",
@@ -3168,11 +3354,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x\\rightarrow 0} \\left( \\frac{(1+x)^{\\frac{2}{x}}}{e^2} \\right)^{\\frac{4}{\\sin x}}$ is :",
         "options": [
           "$e^4$",
@@ -3183,11 +3370,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x\\rightarrow \\infty}\\frac{3}{x} \\left[ \\frac{x}{4} \\right] = \\frac{p}{q}$ (where $[.]$ denotes greatest integer function), then $p+q$ (where $p, q$ are relative prime) is :",
         "options": [
           "$2$",
@@ -3198,11 +3386,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f(x) = \\lim_{n \\to \\infty} \\frac{x^n + \\left(\\frac{\\pi}{3}\\right)^n}{x^{n-1} + \\left(\\frac{\\pi}{3}\\right)^{n-1}}$, ($n$ is an even integer), then which of the following is incorrect ?",
         "options": [
           "(a) If $f : \\left[\\frac{\\pi}{3}, \\infty\\right) \\to \\left[\\frac{\\pi}{3}, \\infty\\right)$, then function is invertible",
@@ -3213,11 +3402,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to 0} \\frac{\\sin(\\pi \\cos^2(\\tan(\\sin x)))}{x^2} =$",
         "options": [
           "(a) $\\pi$",
@@ -3228,11 +3418,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\begin{cases} \\frac{(e^{(x+3)\\ln 27})^{\\frac{x}{27}} - 9}{3^x - 27} & ; x < 3 \\\\ \\lambda \\frac{1 - \\cos(x-3)}{(x-3)\\tan(x-3)} & ; x > 3 \\end{cases}$\nIf $\\lim_{x \\to 3} f(x)$ exist, then $\\lambda =$",
         "options": [
           "(a) $\\frac{9}{2}$",
@@ -3243,11 +3434,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to \\frac{\\pi}{3}} \\frac{\\sin \\left(\\frac{\\pi}{3} - x\\right)}{2 \\cos x - 1}$ is equal to :",
         "options": [
           "(a) $\\frac{2}{\\sqrt{3}}$",
@@ -3258,11 +3450,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to \\frac{\\pi}{2}} \\frac{\\sin x}{\\cos^{-1}\\left[\\frac{1}{4}(3\\sin x - \\sin 3x)\\right]}$, (where $[\\cdot]$ denotes greatest integer function) is :",
         "options": [
           "(a) $\\frac{2}{\\pi}$",
@@ -3273,11 +3466,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f$ be a continuous function on $R$ such that $f\\left(\\frac{1}{4^n}\\right) = (\\sin e^n) e^{-n^2} + \\frac{n^2}{n^2 + 1}$, then $f(0) =$",
         "options": [
           "(a) $1$",
@@ -3288,11 +3482,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to I^-} \\frac{e^{\\{x\\}} - \\{x\\} - 1}{\\{x\\}^2}$ equals, where $\\{ \\cdot \\}$ is fractional part function and $I$ is an integer, to :",
         "options": [
           "$\\frac{I}{2}$",
@@ -3303,11 +3498,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to \\infty} (e^{11x} - 7x)^{\\frac{1}{3x}}$ is equal to :",
         "options": [
           "$\\frac{11}{3}$",
@@ -3318,11 +3514,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to 0} \\left[ (1 - 2x)^n \\sum_{r=0}^n {^nC_r} \\left( \\frac{x + x^2}{1 - 2x} \\right)^r \\right]^{1/x}$ is :",
         "options": [
           "$e^n$",
@@ -3333,11 +3530,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For a certain value of '$c$', $\\lim_{x \\to \\infty} [(x^5 + 7x^4 + 2)^c - x]$ is finite and non-zero. Then the value of limit is :",
         "options": [
           "$\\frac{7}{5}$",
@@ -3348,11 +3546,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of non-negative integral values of $n$ for which $\\lim_{x \\to 0} \\frac{(\\cos x - 1)(\\cos x - e^x)}{x^n} = 0$ is :",
         "options": [
           "$1$",
@@ -3363,11 +3562,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to 0} \\left( \\frac{\\sin x}{x} \\right)^{\\frac{1}{1 - \\cos x}}$ :",
         "options": [
           "$e^{-1/3}$",
@@ -3378,11 +3578,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\lim_{x \\to \\infty} (\\sqrt{x^2 - x + 1} - ax - b) = 0$, then for $k \\ge 2, (k \\in \\mathbb{N})$ $\\lim_{n \\to \\infty} \\sec^{2n}(k! \\pi b) =$ ",
         "options": [
           "$a$",
@@ -3393,11 +3594,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f$ is a positive function such that $f(x + T) = f(x) (T > 0), \\forall \\, x \\in \\mathbb{R}$, then $\\lim_{n \\to \\infty} n \\left( \\frac{f(x + T) + 2f(x + 2T) + \\dots + nf(x + nT)}{f(x + T) + 4f(x + 4T) + \\dots + n^2f(x + n^2T)} \\right) =$ ",
         "options": [
           "$2$",
@@ -3408,11 +3610,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = 3x^{10} - 7x^8 + 5x^6 - 21x^3 + 3x^2 - 7$\n$265 \\left( \\lim_{h \\to 0} \\frac{h^4 + 3h^2}{(f(1 - h) - f(1)) \\sin 5h} \\right) =$ ",
         "options": [
           "$1$",
@@ -3423,11 +3626,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to 0} \\left( \\frac{\\cos x - \\sec x}{x^2(x+1)} \\right) =$",
         "options": [
           "$0$",
@@ -3438,11 +3642,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Limits",
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be a continuous and differentiable function satisfying $f(x+y) = f(x)f(y)$ $\\forall x, y \\in R$ if $f(x)$ can be expressed as $f(x) = 1 + xP(x) + x^2Q(x)$ where $\\lim_{x \\to 0} P(x) = a$ and $\\lim_{x \\to 0} Q(x) = b$, then $f'(x)$ is equal to :",
         "options": [
           "$a f(x)$",
@@ -3453,11 +3658,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Limits",
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to \\frac{\\pi}{2}} \\frac{\\left( 1 - \\tan \\frac{x}{2} \\right) (1 - \\sin x)}{\\left( 1 + \\tan \\frac{x}{2} \\right) (\\pi - 2x)^3} =$",
         "options": [
           "not exist",
@@ -3468,11 +3674,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Limits",
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to \\infty} \\left( \\frac{x-3}{x+2} \\right)^x$ is equal to :",
         "options": [
           "$e$",
@@ -3483,11 +3690,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Limits",
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to \\frac{\\pi}{2}} (\\cos x)^{\\cos x}$ is :",
         "options": [
           "$1$",
@@ -3498,11 +3706,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Limits",
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\lim_{x \\to c^-} \\{\\ln x\\}$ and $\\lim_{x \\to c^+} \\{\\ln x\\}$ exists finitely but they are not equal (where $\\{ \\cdot \\}$ denotes fractional part function), then :",
         "options": [
           "'$c$' can take only rational values",
@@ -3513,11 +3722,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Limits",
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 28,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to 0} \\left( 1 + \\frac{a \\sin bx}{\\cos x} \\right)^{\\frac{1}{x}}$, where $a, b$ are non-zero constants is equal to :",
         "options": [
           "$e^{a/b}$",
@@ -3528,11 +3738,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Limits",
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 29,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to 0} \\left( (\\cos x)^{\\frac{1}{\\sin^2 x}} + \\frac{\\sin 2x + 2\\tan^{-1} 3x + 3x^2}{\\ln (1 + 3x + \\sin^2 x) + xe^x} \\right)$ is :",
         "options": [
           "$\\sqrt{e} + \\frac{3}{2}$",
@@ -3543,11 +3754,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 30,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $a = \\lim_{x \\to 1} \\left( \\frac{x}{\\ln x} - \\frac{1}{x \\ln x} \\right); b = \\lim_{x \\to 0} \\frac{x^3 - 16x}{4x + x^2} ; c = \\lim_{x \\to 0} \\frac{\\ln(1 + \\sin x)}{x}$ and $d = \\lim_{x \\to -1} \\frac{(x + 1)^3}{3[\\sin(x + 1) - (x + 1)]}$, then the matrix $\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$ is :",
         "options": [
           "Idempotent",
@@ -3558,11 +3770,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 31,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The integral value of $n$ so that $\\lim_{x \\to 0} f(x)$ where $f(x) = \\frac{(\\sin x - x)\\left(2\\sin x - \\ln\\left(\\frac{1+x}{1-x}\\right)\\right)}{x^n}$ is a finite non-zero number, is :",
         "options": [
           "$2$",
@@ -3573,11 +3786,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 32,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider the function $f(x) = \\begin{cases} \\dfrac{\\max\\left(x, \\frac{1}{x}\\right)}{\\min\\left(x, \\frac{1}{x}\\right)} & , \\text{ if } x \\neq 0 \\\\ 1 & , \\text{ if } x = 0 \\end{cases}$, then $\\lim_{x \\to 0^-} \\{f(x)\\} + \\lim_{x \\to 1^-} \\{f(x)\\} + \\lim_{x \\to -1^-} [f(x)] =$ (where $\\{ \\cdot \\}$ denotes fraction part function and $[\\cdot]$ denotes greatest integer function)",
         "options": [
           "$0$",
@@ -3588,11 +3802,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 33,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to \\left(\\frac{1}{\\sqrt{2}}\\right)^+} \\frac{\\cos^{-1} (2x\\sqrt{1-x^2})}{x - \\frac{1}{\\sqrt{2}}} - \\lim_{x \\to \\left(\\frac{1}{\\sqrt{2}}\\right)^-} \\frac{\\cos^{-1} (2x\\sqrt{1-x^2})}{x - \\frac{1}{\\sqrt{2}}} =$",
         "options": [
           "$\\sqrt{2}$",
@@ -3603,11 +3818,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 34,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{n \\to \\infty} \\sum_{k=1}^n \\left( \\sin \\frac{\\pi}{2k} - \\cos \\frac{\\pi}{2k} - \\sin \\left( \\frac{\\pi}{2(k+2)} \\right) + \\cos \\frac{\\pi}{2(k+2)} \\right) =$",
         "options": [
           "$0$",
@@ -3618,11 +3834,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 35,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to 0^+} [1 + [x]]^{\\frac{2}{x}}$, where $[\\cdot]$ is greatest integer function, is equal to :",
         "options": [
           "$0$",
@@ -3633,11 +3850,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 36,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $m$ and $n$ are positive integers, then $\\lim_{x \\to 0} \\frac{(\\cos x)^{\\frac{1}{m}} - (\\cos x)^{\\frac{1}{n}}}{x^2}$ equals to :",
         "options": [
           "$m - n$",
@@ -3648,11 +3866,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 37,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of ordered pair $(a, b)$ such that $\\lim_{x \\to 0} \\frac{x(1 + a\\cos x) - b\\sin x}{x^3} = 1$, is :",
         "options": [
           "$\\left(-\\frac{5}{2}, -\\frac{3}{2}\\right)$",
@@ -3663,11 +3882,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 38,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "What is the value of $a + b$, if $\\lim_{x \\to 0} \\frac{\\sin (ax) - \\ln(e^x \\cos x)}{x \\sin(bx)} = \\frac{1}{2}$?",
         "options": [
           "$1$",
@@ -3678,11 +3898,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 39,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\alpha = \\lim_{n \\to \\infty} \\frac{(1^3 - 1^2) + (2^3 - 2^2) + \\dots + (n^3 - n^2)}{n^4}$, then $\\alpha$ is equal to :",
         "options": [
           "$\\frac{1}{3}$",
@@ -3693,11 +3914,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 40,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to 0} \\frac{\\cos (\\sin x) - \\cos x}{x^4}$ is equal to :",
         "options": [
           "$\\frac{1}{5}$",
@@ -3708,11 +3930,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 41,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of ordered pair $(a, b)$ such that $\\lim_{x \\to 0} \\frac{x(1 + a\\cos x) - b\\sin x}{x^3} = 1$, is :",
         "options": [
           "$\\left(-\\frac{5}{2}, -\\frac{3}{2}\\right)$",
@@ -3723,11 +3946,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 42,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider the sequence :\n$$u_n = \\sum_{r=1}^{n} \\frac{r}{2^r}, \\ n \\ge 1$$\nThen the limit of $u_n$ as $n \\to \\infty$ is :",
         "options": [
           "$1$",
@@ -3738,11 +3962,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 43,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to 0} \\left( (\\cos x)^{\\frac{1}{\\sin^2 x}} + \\frac{\\sin 2x + 2\\tan^{-1} 3x + 3x^2}{\\ln(1 + 3x + \\sin^2 x) + xe^x} \\right)$ is :",
         "options": [
           "$\\sqrt{e} + \\frac{3}{2}$",
@@ -3753,11 +3978,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 44,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For $n \\in N$ , let $f_n(x) = \\tan \\frac{x}{2} (1 + \\sec x) (1 + \\sec 2x) (1 + \\sec 4x) \\dots (1 + \\sec 2^n x)$, the $\\lim_{x \\to 0} \\frac{f_n(x)}{2x}$ is equal to :",
         "options": [
           "$0$",
@@ -3768,11 +3994,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 45,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to \\frac{\\pi}{4}} (1 + [x])^{\\frac{1}{\\ln(\\tan x)}}$ is :\n(where $[ \\ . \\ ]$ denotes greatest integer function).",
         "options": [
           "$0$",
@@ -3783,11 +4010,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 46,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\lim_{x \\to 0} \\frac{\\{ (a - n)nx - \\tan x \\} \\sin nx}{x^2} = 0, n \\neq 0$ then $a$ is equal to :",
         "options": [
           "$0$",
@@ -3798,11 +4026,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 47,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{n \\to \\infty} \\left( \\frac{n!}{n^n} \\right)^{\\frac{3n^3 + 4}{4n^4 - 1}}$, $n \\in N$ is equal to :",
         "options": [
           "$\\left( \\frac{1}{e} \\right)^{3/4}$",
@@ -3813,11 +4042,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 48,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to \\infty} \\frac{ax^2 + bx + c}{dx + e}$ ($a, b, c, d, e \\in R - \\{0\\}$) depends on the sign of :",
         "options": [
           "$a$ only",
@@ -3828,11 +4058,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 49,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\lim_{n \\to \\infty} \\tan^{-1}\\left(4n^2 \\left(1 - \\cos \\frac{x}{n}\\right)\\right)$ and $g(x) = \\lim_{n \\to \\infty} \\frac{n^2}{2} \\ln \\cos\\left(\\frac{2x}{n}\\right)$ then $\\lim_{x \\to 0} \\frac{e^{-2g(x)} - e^{f(x)}}{x^6}$ equals.",
         "options": [
           "$\\frac{8}{3}$",
@@ -3843,11 +4074,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 50,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ be a cubic polynomial and $\\lim_{x \\to 0} \\frac{\\sin^2 x}{f(x)} = \\frac{1}{3}$ then $f(1)$ can not be equal to :",
         "options": [
           "$0$",
@@ -3858,11 +4090,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 51,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to 0} \\frac{2e^{\\sin x} - e^{-\\sin x} - 1}{x^2 + 2x}$ equals to :",
         "options": [
           "$\\frac{3}{2}$",
@@ -3873,11 +4106,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 52,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $x_1, x_2, x_3, \\dots, x_n$ are the roots of $x^n + ax + b = 0$, then the value of $(x_1 - x_2)(x_1 - x_3)(x_1 - x_4) \\dots (x_1 - x_n)$ is equal to :",
         "options": [
           "$nx_1 + b$",
@@ -3888,11 +4122,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 53,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to 0} \\frac{\\sqrt[3]{1 + \\sin^2 x} - \\sqrt[4]{1 - 2\\tan x}}{\\sin x + \\tan^2 x}$ is equal to :",
         "options": [
           "$-1$",
@@ -3903,11 +4138,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 54,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\begin{vmatrix} x \\cos x & 2x \\sin x & x \\tan x \\\\ 1 & x & 1 \\\\ 1 & 2x & 1 \\end{vmatrix}$, find $\\lim_{x \\to 0} \\frac{f(x)}{x^2}$.",
         "options": [
           "$0$",
@@ -3918,11 +4154,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-1 : Single Choice Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\lim_{x \\to 0} (p \\tan q x^2 - 3 \\cos^2 x + 4)^{1/(3x^2)} = e^{5/3}; p, q \\in R$ then :",
         "options": [
           "$p = \\sqrt{2}, q = \\frac{1}{2\\sqrt{2}}$",
@@ -3936,11 +4173,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           1,
           2
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "$\\lim_{x \\to \\infty} 2 \\left(\\sqrt{25x^2 + x} - 5x\\right)$ is equal to :",
         "options": [
           "$\\lim_{x \\to 0} \\frac{2x - \\log_e(1 + x)^2}{5x^2}$",
@@ -3955,11 +4193,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           2,
           3
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $\\lim_{x \\to \\infty} (2^x + a^x + e^x)^{1/x} = L$\nwhich of the following statement(s) is(are) correct ?",
         "options": [
           "if $L = a (a > 0)$, then the range of $a$ is $[e, \\infty)$",
@@ -3974,11 +4213,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1,
           2
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $\\tan \\alpha \\cdot x + \\sin \\alpha \\cdot y = \\alpha$ and $\\alpha \\csc \\alpha \\cdot x + \\cos \\alpha \\cdot y = 1$ be two variable straight lines, $\\alpha$ being the parameter. Let $P$ be the point of intersection of the lines. In the limiting position when $\\alpha \\to 0$, the point $P$ lies on the line :",
         "options": [
           "$x = 2$",
@@ -3992,11 +4232,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           2
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f: R \\to [-1, 1]$ be defined as $f(x) = \\cos(\\sin x)$, then which of the following is(are) correct ?",
         "options": [
           "$f$ is periodic with fundamental period $2\\pi$",
@@ -4010,11 +4251,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           1,
           2
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = x + \\sqrt{x^2 + 2x}$ and $g(x) = \\sqrt{x^2 + 2x} - x$, then :",
         "options": [
           "$\\lim_{x \\to \\infty} g(x) = 1$",
@@ -4028,11 +4270,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           2
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Which of the following limits does not exist ?",
         "options": [
           "$\\lim_{x \\to \\infty} \\csc^{-1} \\left(\\frac{x}{x + 7}\\right)$",
@@ -4046,11 +4289,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           3
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x) = \\lim_{n \\to \\infty} x \\left( \\frac{3}{2} + [\\cos x] \\left( \\sqrt{n^2 + 1} - \\sqrt{n^2 - 3n + 1} \\right) \\right)$ where $[y]$ denotes largest integer $\\le y$, then identify the correct statement(s).",
         "options": [
           "(a) $\\lim_{x \\to 0} f(x) = 0$",
@@ -4065,11 +4309,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           2,
           3
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f : \\mathbb{R} \\to \\mathbb{R} ; f(x) = \\begin{cases} (-1)^n \\text{ if } x = \\frac{1}{2^n}, & n = 1, 2, 3, \\dots \\\\ 0 & \\text{otherwise} \\end{cases}$ then identify the correct statement(s).",
         "options": [
           "(a) $\\lim_{x \\to 0} f(x) = 0$",
@@ -4083,11 +4328,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           1,
           2
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\lim_{x \\to a} f(x) = \\lim_{x \\to a} [f(x)]$ ($[\\cdot]$ denotes the greatest integer function) and $f(x)$ is non-constant continuous function, then :",
         "options": [
           "(a) $\\lim_{x \\to a} f(x)$ is an integer",
@@ -4101,11 +4347,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           3
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\frac{\\cos^{-1} (1 - \\{x\\}) \\sin^{-1} (1 - \\{x\\})}{\\sqrt{2\\{x\\}(1 - \\{x\\})}}$ where $\\{x\\}$ denotes the fractional part of $x$, then :",
         "options": [
           "(a) $\\lim_{x \\to 0^+} f(x) = \\frac{\\pi}{4}$",
@@ -4119,11 +4366,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           1,
           3
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\lim_{x \\to 0} \\frac{(\\sin(\\sin x) - \\sin x)}{ax^3 + bx^5 + c} = -\\frac{1}{12}$, then:",
         "options": [
           "(a) $a = 2$",
@@ -4137,11 +4385,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           2
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x) = \\lim_{n \\to \\infty} (n(x^{1/n} - 1))$ for $x > 0$, then which of the following is/are true ?",
         "options": [
           "(a) $f\\left(\\frac{1}{x}\\right) = 0$",
@@ -4155,11 +4404,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           2,
           3
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The value of $\\lim_{n \\rightarrow \\infty} \\cos^2 (\\pi (\\sqrt[3]{n^3 + n^2 + 2n}))$ (where $n \\in N$):",
         "options": [
           "$\\frac{1}{3}$",
@@ -4172,11 +4422,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Limits",
         "correctOptionsArray": [
           2
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\alpha, \\beta \\in \\left(-\\frac{\\pi}{2}, 0\\right)$ such that $(\\sin \\alpha + \\sin \\beta) + \\frac{\\sin \\alpha}{\\sin \\beta} = 0$ and $(\\sin \\alpha + \\sin \\beta) \\frac{\\sin \\alpha}{\\sin \\beta} = -1$ and $\\lambda = \\lim_{n \\rightarrow \\infty} \\frac{1 + (2 \\sin \\alpha)^{2n}}{(2 \\sin \\beta)^{2n}}$ then :",
         "options": [
           "$\\alpha = -\\frac{\\pi}{6}$",
@@ -4190,11 +4441,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0,
           1
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\begin{cases} |x-2| + a^2 - 6a + 9 & , \\ x < 2 \\\\ 5-2x & , \\ x \\ge 2 \\end{cases}$\n\nIf $\\lim_{x \\rightarrow 2} [f(x)]$ exists, the possible values $a$ can take is/are (where $[\\cdot]$ represents the greatest integer function)",
         "options": [
           "$2$",
@@ -4207,11 +4459,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Limits",
         "correctOptionsArray": [
           1
-        ]
+        ],
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 1 to 2}}$$ \nA circular disk of unit radius is filled with a number of smaller circular disks arranged in the form of hexagon. Let $A_n$ denotes a stack of disks arranged in the shape of a hexagon having 'n' disks on a side. The figure shows the configuration $A_3$. If 'A' be the area of large disk, $S_n$ be the number of disks in $A_n$ configuration and $r_n$ be the radius of each disk in $A_n$ configuration, then\n\n$\\lim_{n \\to \\infty} \\frac{S_n}{n^2}$ :",
         "options": [
           "3",
@@ -4222,11 +4475,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": true,
         "chapter": "Limit",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 1 to 2}}$$ \nA circular disk of unit radius is filled with a number of smaller circular disks arranged in the form of hexagon. Let $A_n$ denotes a stack of disks arranged in the shape of a hexagon having 'n' disks on a side. The figure shows the configuration $A_3$. If 'A' be the area of large disk, $S_n$ be the number of disks in $A_n$ configuration and $r_n$ be the radius of each disk in $A_n$ configuration, then\n\n$\\lim_{n \\to \\infty} n r_n$ :",
         "options": [
           "$\\frac{1}{3}$",
@@ -4237,11 +4491,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": true,
         "chapter": "Limit",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 3 to 4}}$$ \nLet $f(x) = \\begin{cases} x + 3 & ; -2 < x < 0 \\\\ 4 & ; x = 0 \\\\ 2x + 5 & ; 0 < x < 1 \\end{cases}$, then\n\n$\\lim_{x \\to 0^-} f([x - \\tan x])$ is : ($[\\cdot]$ denotes greatest integer function)",
         "options": [
           "2",
@@ -4252,11 +4507,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": false,
         "chapter": "Limit",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 3 to 4}}$$ \nLet $f(x) = \\begin{cases} x + 3 & ; -2 < x < 0 \\\\ 4 & ; x = 0 \\\\ 2x + 5 & ; 0 < x < 1 \\end{cases}$, then\n\n$\\lim_{x \\to 0^+} f\\left(\\left\\{\\frac{x}{\\tan x}\\right\\}\\right)$ is : ($\\{\\cdot\\}$ denotes fractional part of function)",
         "options": [
           "4",
@@ -4267,11 +4523,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": false,
         "chapter": "Limit",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 5 to 6}}$$ \nA certain function $f(x)$ has the property that $f(3x) = \\alpha f(x)$ for all positive real values of $x$ and $f(x) = 1 - |x - 2|$ for $1 \\le x \\le 3$.\n\n$\\lim_{x \\to 2} (f(x))^{\\operatorname{cosec}\\left(\\frac{\\pi x}{2}\\right)}$ is :",
         "options": [
           "$\\frac{2}{\\pi}$",
@@ -4282,11 +4539,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": false,
         "chapter": "Limit",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 7 to 9}}$$ \nConsider the limit $\\lim_{x \\to 0} \\frac{1}{x^3} \\left( \\frac{1}{\\sqrt{1+x}} - \\frac{(1+ax)}{(1+bx)} \\right)$ exists, finite and has the value equal to $l$\n(where $a, b$ are real constants), then :\n\n$a =$",
         "options": [
           "(a) $1$",
@@ -4297,11 +4555,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 7 to 9}}$$ \nConsider the limit $\\lim_{x \\to 0} \\frac{1}{x^3} \\left( \\frac{1}{\\sqrt{1+x}} - \\frac{(1+ax)}{(1+bx)} \\right)$ exists, finite and has the value equal to $l$\n(where $a, b$ are real constants), then :\n\n$a + b =$",
         "options": [
           "(a) $\\frac{3}{4}$",
@@ -4312,11 +4571,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 7 to 9}}$$ \nConsider the limit $\\lim_{x \\to 0} \\frac{1}{x^3} \\left( \\frac{1}{\\sqrt{1+x}} - \\frac{(1+ax)}{(1+bx)} \\right)$ exists, finite and has the value equal to $l$\n(where $a, b$ are real constants), then :\n\n$\\left| \\frac{b}{l} \\right| =$",
         "options": [
           "(a) $38$",
@@ -4327,11 +4587,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 10 to 11}}$$ \nFor the curve $\\sin x + \\sin y = 1$ lying in the first quadrant there exists a constant $\\alpha$ for which\n$$\\lim_{x \\to 0} x^\\alpha \\frac{d^2y}{dx^2} = L \\text{ (not zero)}$$\n\nThe value of $\\alpha$ :",
         "options": [
           "(a) $\\frac{1}{2}$",
@@ -4342,11 +4603,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$$\\text{\\textbf{Paragraph for Question Nos. 10 to 11}}$$ \nFor the curve $\\sin x + \\sin y = 1$ lying in the first quadrant there exists a constant $\\alpha$ for which\n$$\\lim_{x \\to 0} x^\\alpha \\frac{d^2y}{dx^2} = L \\text{ (not zero)}$$\n\nThe value of $L$ :",
         "options": [
           "(a) $\\frac{1}{2}$",
@@ -4357,11 +4619,12 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-3 : Comprehension Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the columns:\n\n| **Column-I** | **Column-II** |\n|---|---|\n| **(A) ** \\lim_{n \\to \\infty} \\left( \\frac{1 + \\sqrt[n]{4}}{2} \\right)^n = | **(P) ** 2 |\n| **(B) ** Let  f(x) = \\lim_{n \\to \\infty} \\frac{2x}{\\pi} \\tan^{-1} (nx), then  \\lim_{x \\to 0^+} f(x) = | **(Q) ** 0 |\n| **(C) ** \\lim_{x \\to \\frac{\\pi}{2}^-} \\frac{\\cos(\\tan^{-1}(\\tan x))}{x - \\frac{\\pi}{2}} = | **(R) ** 1 |\n| **(D) ** If  \\lim_{x \\to 0^+} (x)^{\\frac{1}{\\ln \\sin x}} = e^L, then  L + 2 = | **(S) ** 3 |\n|  | **(T) ** Non-existent |",
         "options": [
           "A $\\rightarrow$ Q, B $\\rightarrow$ S, C $\\rightarrow$ Q, D $\\rightarrow$ R",
@@ -4373,11 +4636,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Limits",
         "answerKeyStr": "A->P; B->Q; C->R; D->S",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "$[\\cdot]$ represents greatest integer function :\n\n| **Column-I** | **Column-II** |\n|---|---|\n| **(A) ** If  f(x) = \\sin^{-1} x  and  \\lim_{x \\to \\frac{1}{2}^+} f(3x - 4x^3) = a - 3 \\lim_{x \\to \\frac{1}{2}^-} f(x), then  [a] = | **(P) ** 2 |\n| **(B) ** If  f(x) = \\tan^{-1} g(x)  where  g(x) = \\frac{3x - x^3}{1 - 3x^2}  and then find  \\left[ \\lim_{h \\to 0} \\frac{f\\left(\\frac{1}{2} + 6h\\right) - f\\left(\\frac{1}{2}\\right)}{6h} \\right] = | **(Q) ** 3 |\n| **(C) ** If  \\cos^{-1} (4x^3 - 3x) = a + b \\cos^{-1} x  for  -1 < x < \\frac{-1}{2}, then  [a + b + 2] = | **(R) ** 4 |\n| **(D) ** If  f(x) = \\cos^{-1} (4x^3 - 3x)  and  \\lim_{x \\to \\frac{1}{2}^+} f'(x) = a  and  \\lim_{x \\to \\frac{1}{2}^-} f'(x) = b, then  a + b + 3 = | **(S) ** -2 |\n|  | **(T) ** Non-existent |",
         "options": [
           "A $\\rightarrow$ Q, B $\\rightarrow$ P, C $\\rightarrow$ S, D $\\rightarrow$ Q",
@@ -4389,77 +4653,99 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Limits",
         "answerKeyStr": "A->Q; B->P; C->S; D->Q",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\lim_{x \\to 0} \\frac{\\ln \\cot \\left( \\frac{\\pi}{4} - \\beta x \\right)}{\\tan \\alpha x} = 1$, then $\\frac{\\alpha}{\\beta} = \\dots\\dots$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": -1
       },
       {
         "questionNumber": 2,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\lim_{x \\to 0} \\frac{f(x)}{\\sin^2 x} = 8$, $\\lim_{x \\to 0} \\frac{g(x)}{2 \\cos x - xe^x + x^3 + x - 2} = \\lambda$ and $\\lim_{x \\to 0} (1 + 2f(x))^{\\frac{1}{g(x)}} = \\frac{1}{e}$, then $\\lambda =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "answerKeyStr": "8"
+        "answerKeyStr": "8",
+        "type": "NUMERICAL",
+        "correctAnswer": "8",
+        "correctOption": -1
       },
       {
         "questionNumber": 3,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\alpha, \\beta$ are two distinct real roots of the equation $ax^3 + x - 1 - a = 0$, ($a \\neq -1, 0$), none of which is equal to unity, then the value of $\\lim_{x \\to (1/\\alpha)} \\frac{(1 + a)x^3 - x^2 - a}{(e^{1 - \\alpha x} - 1)(x - 1)}$ is $\\frac{al(k\\alpha - \\beta)}{\\alpha}$. Find the value of $kl$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1",
+        "correctOption": -1
       },
       {
         "questionNumber": 4,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The value of $\\lim_{x \\to 0} \\frac{(140)^x - (35)^x - (28)^x - (20)^x + 7^x + 5^x + 4^x - 1}{x \\sin^2 x} = 2 \\ln 2 \\ln k \\ln 7$, then $k =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5",
+        "correctOption": -1
       },
       {
         "questionNumber": 5,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\lim_{x \\to 0} \\frac{a \\cot x}{x} + \\frac{b}{x^2} = \\frac{1}{3}$, then $b - a =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": -1
       },
       {
         "questionNumber": 6,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the value of $\\lim_{x \\to \\infty} \\left( x + \\frac{1}{x} \\right) e^{1/x} - x$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1",
+        "correctOption": -1
       },
       {
         "questionNumber": 7,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find $\\lim_{x \\to \\alpha^+} \\left[ \\frac{\\min (\\sin x, \\{x\\})}{x - 1} \\right]$ where $\\alpha$ is root of equation $\\sin x + 1 = x$ (here $[.]$ represent greatest integer and $\\{.\\}$ represent fractional part function)",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Limits",
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "correctAnswer": "0",
+        "correctOption": -1
       }
     ]
   },
@@ -4470,7 +4756,7 @@ window.DEFAULT_BLACKBOOK = [
     "questions": [
       {
         "questionNumber": 1,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f$ be a differentiable real valued function satisfying $f(x+2y) = f(x) + f(2y) + 6xy(x + 2y) \\quad \\forall \\, x, y \\in \\mathbb{R}$. Then $f''(0), f''(1), f''(2), \\dots$ are in :",
         "options": [
           "AP",
@@ -4482,11 +4768,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of points of non-differentiability for $f(x) = \\max \\left\\{ \\left| |x| - 1 \\right|, \\frac{1}{2} \\right\\}$ is :",
         "options": [
           "4",
@@ -4498,11 +4785,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of points of discontinuity of $f(x) = \\left\\{ \\frac{x}{5} \\right\\} + \\left[ \\frac{x}{2} \\right]$ in $x \\in [0, 100]$ is/are (where $[\\cdot]$ denotes greatest integer function and $\\{\\cdot\\}$ denotes fractional part function)",
         "options": [
           "50",
@@ -4514,11 +4802,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ has isolated point of discontinuity at $x = a$ such that $|f(x)|$ is continuous at $x = a$ then :",
         "options": [
           "$\\lim_{x \\to a} f(x)$ does not exist",
@@ -4530,11 +4819,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ is a thrice differentiable function such that, $\\lim_{x \\to 0} \\frac{f(4x) - 3f(3x) + 3f(2x) - f(x)}{x^3} = 12$ then the value of $f'''(0)$ equals to :",
         "options": [
           "0",
@@ -4546,11 +4836,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$y = \\frac{1}{1 + (\\tan \\theta)^{\\sin \\theta - \\cos \\theta} + (\\cot \\theta)^{\\cos \\theta - \\cot \\theta}} + \\frac{1}{1 + (\\tan \\theta)^{\\cos \\theta - \\sin \\theta} + (\\cot \\theta)^{\\sin \\theta - \\cot \\theta}} + \\frac{1}{1 + (\\tan \\theta)^{\\cos \\theta - \\cot \\theta} + (\\cot \\theta)^{\\cot \\theta - \\sin \\theta}}$ then $\\frac{dy}{dx}$ at $\\theta = \\pi/3$ is :",
         "options": [
           "0",
@@ -4562,11 +4853,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f'(x) = \\sin(x^2)$ and $y = f(x^2 + 1)$ then $\\frac{dy}{dx}$ at $x = 1$ is :",
         "options": [
           "$2 \\sin 2$",
@@ -4578,11 +4870,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\big| |\\sin x| - |\\cos x| \\big|$, then $f'\\left(\\frac{7\\pi}{6}\right) =$",
         "options": [
           "$\\frac{\\sqrt{3} + 1}{2}$",
@@ -4594,11 +4887,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $2\\sin x \\cdot \\cos y = 1$, then $\\frac{d^2 y}{dx^2}$ at $\\left(\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right)$ is ........",
         "options": [
           "-4",
@@ -4610,11 +4904,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f$ is a differentiable function such that $x = f(t^2)$, $y = f(t^3)$ and $f'(1) \\neq 0$ if $\\left(\\frac{d^2 y}{dx^2}\\right)_{t=1} =$",
         "options": [
           "$\\frac{3}{4} \\left( \\frac{f''(1) + f'(1)}{(f'(1))^2} \\right)$",
@@ -4626,11 +4921,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} ax + 1 & \\text{if } x < 1 \\\\ 3 & \\text{if } x = 1 \\\\ bx^2 + 1 & \\text{if } x > 1 \\end{cases}$. If $f(x)$ is continuous at $x = 1$ then $(a - b)$ is equal to :",
         "options": [
           "0",
@@ -4642,11 +4938,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = 1 + \\frac{\\alpha}{\\left(\\frac{1}{x} - \\alpha\\right)} + \\frac{\\beta/x}{\\left(\\frac{1}{x} - \\alpha\\right)\\left(\\frac{1}{x} - \\beta\\right)} + \\frac{\\gamma/x^2}{\\left(\\frac{1}{x} - \\alpha\\right)\\left(\\frac{1}{x} - \\beta\\right)\\left(\\frac{1}{x} - \\gamma\\right)}$, then $\\frac{dy}{dx}$ is :",
         "options": [
           "$y \\left( \\frac{\\alpha}{\\alpha - x} + \\frac{\\beta}{\\beta - x} + \\frac{\\gamma}{\\gamma - x} \\right)$",
@@ -4658,11 +4955,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\sqrt{\\frac{1 + \\sin^{-1} x}{1 - \\tan^{-1} x}}$; then $f'(0)$ is equal to :",
         "options": [
           "4",
@@ -4674,11 +4972,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} \\sin^2 x , & x \\text{ is rational} \\\\ -\\sin^2 x , & x \\text{ is irrational} \\end{cases}$, then set of points, where $f(x)$ is continuous, is :",
         "options": [
           "$\\left\\{ (2n + 1)\\frac{\\pi}{2}, n \\in I \\right\\}$",
@@ -4690,11 +4989,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of values of $x$ in $(0, 2\\pi)$ where the function $f(x) = \\frac{\\tan x + \\cot x}{2} - \\left| \\frac{\\tan x - \\cot x}{2} \\right|$ is continuous but non-derivable :",
         "options": [
           "3",
@@ -4706,11 +5006,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = |x - 1|$ and $g(x) = f(f(f(x)))$, then $g'(x)$ is equal to :",
         "options": [
           "$1$ for $x > 2$",
@@ -4722,11 +5023,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ is a continuous function $\\forall \\, x \\in \\mathbb{R}$ and the range of $f(x)$ is $(2, \\sqrt{26})$ and $g(x) = \\left[ \\frac{f(x)}{C} \\right]$ is continuous $\\forall \\, x \\in \\mathbb{R}$, then the least positive integral value of $C$ is : (where $[\\cdot]$ denotes the greatest integer function.)",
         "options": [
           "3",
@@ -4738,11 +5040,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = x + e^x$, then $\\left(\\frac{d^2 x}{dy^2}\\right)_{x = \\ln 2}$ is :",
         "options": [
           "$-\\frac{1}{9}$",
@@ -4754,11 +5057,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^3 + 4x^2 + 6x$ and $g(x)$ be its inverse then the value of $g'(-4)$ :",
         "options": [
           "-2",
@@ -4770,11 +5074,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = 2 + |x| - |x - 1| - |x + 1|$, then $f'\\left(-\\frac{1}{2}\\right) + f'\\left(\\frac{1}{2}\\right) + f'\\left(\\frac{3}{2}\\right) + f'\\left(\\frac{5}{2}\\right)$ is equal to :",
         "options": [
           "1",
@@ -4786,11 +5091,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\cos(x^2 - 4[x]); 0 < x < 1$, (where $[\\cdot]$ denotes greatest integer function) then $f'\\left(\\frac{\\sqrt{\\pi}}{2}\\right)$ is equal to :",
         "options": [
           "$-\\sqrt{\\frac{\\pi}{2}}$",
@@ -4802,11 +5108,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $g(x)$ be the inverse of $f(x)$ such that $f'(x) = \\frac{1}{1 + x^5}$, then $\\frac{d^2(g(x))}{dx^2}$ is equal to :",
         "options": [
           "$\\frac{1}{1 + (g(x))^5}$",
@@ -4818,11 +5125,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} \\min(x, x^2) & x \\geq 0 \\\\ \\max(2x, x - 1) & x < 0 \\end{cases}$, then which of the following is not true ?",
         "options": [
           "$f(x)$ is not differentiable at $x = 0$",
@@ -4834,11 +5142,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\lim_{n \\to \\infty} \\left[ \\prod_{i=1}^n \\cos\\left(\\frac{x}{2^i}\\right) \\right]$ then $f'(x)$ is equal to :",
         "options": [
           "$\\frac{\\sin x}{x}$",
@@ -4850,11 +5159,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} \\frac{1 - \\tan x}{4x - \\pi} & x \\neq \\frac{\\pi}{4} \\\\ \\lambda & x = \\frac{\\pi}{4} \\end{cases}; x \\in \\left[0, \\frac{\\pi}{2}\\right)$. If $f(x)$ is continuous in $\\left[0, \\frac{\\pi}{2}\\right)$, then $\\lambda$ is equal to :",
         "options": [
           "1",
@@ -4866,11 +5176,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} e^{-\\frac{1}{x^2}} \\sin\\frac{1}{x} & x \\neq 0 \\\\ 0 & x = 0 \\end{cases}$, then $f'(0) =$",
         "options": [
           "1",
@@ -4882,11 +5193,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f$ be a differentiable function satisfying $f'(x) = 2f(x) + 10 \\ \\forall\\ x \\in \\mathbb{R}$ and $f(0) = 0$, then the number of real roots of the equation $f(x) + 5\\sec^2 x = 0$ in $(0, 2\\pi)$ is :",
         "options": [
           "0",
@@ -4898,11 +5210,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 28,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\begin{cases} \\frac{\\sin\\{ \\cos x \\}}{x - \\frac{\\pi}{2}} & x \\neq \\frac{\\pi}{2} \\\\ 1 & x = \\frac{\\pi}{2} \\end{cases}$, where $\\{k\\}$ represents the fractional part of $k$, then :",
         "options": [
           "$f(x)$ is continuous at $x = \\frac{\\pi}{2}$",
@@ -4914,11 +5227,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 29,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be a polynomial in $x$. The second derivative of $f(e^x)$ w.r.t. $x$ is :",
         "options": [
           "$f''(e^x)e^x + f'(e^x)$",
@@ -4930,11 +5244,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 30,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $e^{f(x)} = \\log_e x$ and $g(x)$ is the inverse function of $f(x)$, then $g'(x)$ is equal to :",
         "options": [
           "$e^x + x$",
@@ -4946,11 +5261,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 31,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = f(x)$ is differentiable $\\forall x \\in R$, then",
         "options": [
           "$y = |f(x)|$ is differentiable $\\forall x \\in R$",
@@ -4962,11 +5278,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 32,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = (x - 1)^4 (x - 2)^3 (x - 3)^2$ then the value of $f'''(1) + f''(2) + f'(3)$ is :",
         "options": [
           "$0$",
@@ -4978,11 +5295,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 33,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\left(\\frac{x}{2}\\right) - 1$, then on the interval $[0, \\pi]$ :",
         "options": [
           "$\\tan(f(x))$ and $\\frac{1}{f(x)}$ are both continuous",
@@ -4994,11 +5312,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 34,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} \\frac{\\frac{1}{e^{\\frac{1}{x-2}} - 3}}{\\frac{1}{3^{x-2} + 1}} & ; x > 2 \\\\ \\frac{b \\sin \\{-x\\}}{\\{-x\\}} & ; x < 2 \\\\ c & ; x = 2 \\end{cases}$, where $\\{\\cdot\\}$ denotes fraction part function, is continuous at $x = 2$, then $b + c =$",
         "options": [
           "$0$",
@@ -5010,11 +5329,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 35,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\frac{e^{\\tan x} - e^x + \\ln(\\sec x + \\tan x) - x}{\\tan x - x}$ be a continuous function at $x = 0$. The value of $f(0)$ equals :",
         "options": [
           "$\\frac{1}{2}$",
@@ -5026,11 +5346,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 36,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} (1 + ax)^{1/x} & ; x < 0 \\\\ b & ; x = 0 \\\\ \\frac{(x+c)^{1/3} - 1}{(x+1)^{1/2} - 1} & ; x > 0 \\end{cases}$, is continuous at $x = 0$, then $3(e^a + b + c)$ is equal to :",
         "options": [
           "$3$",
@@ -5042,11 +5363,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 37,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\sqrt{x+y} + \\sqrt{y-x} = 5$, then $\\frac{d^2y}{dx^2} =$",
         "options": [
           "$\\frac{2}{5}$",
@@ -5058,11 +5380,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 38,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = x^3 + x^4 + \\log x$ and $g$ is the inverse of $f$, then $g'(2)$ is :",
         "options": [
           "$8$",
@@ -5074,11 +5397,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 39,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of points at which the function, $f(x) = \\begin{cases} \\min\\{|x|, x^2\\} & ; \\text{if } x \\in (-\\infty, 1) \\\\ \\min\\{2x - 1, x^2\\} & ; \\text{otherwise} \\end{cases}$ is not differentiable is :",
         "options": [
           "$0$",
@@ -5090,11 +5414,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 40,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ is a function such that $f(x) + f''(x) = 0$ and $g(x) = (f(x))^2 + (f'(x))^2$ and $g(3) = 8$, then $g(8) =$",
         "options": [
           "$0$",
@@ -5106,11 +5431,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 41,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f$ is twice differentiable on $R$ such that $f(0) = 1, f'(0) = 0$ and $f''(0) = -1$, then for $a \\in R$, $\\lim_{x\\to \\infty} \\left( f\\left(\\frac{a}{\\sqrt{x}}\\right) \\right)^x =$",
         "options": [
           "$e^{-a^2}$",
@@ -5122,11 +5448,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 42,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f_1(x) = e^x$ and $f_{n+1}(x) = e^{f_n(x)}$ for any $n \\ge 1, n \\in N$. Then for any fixed $n$, the value of $\\frac{d}{dx} f_n(x)$ equals :",
         "options": [
           "$f_n(x)$",
@@ -5138,11 +5465,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 43,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = \\tan^{-1} \\left( \\frac{x^{1/3} - a^{1/3}}{1 + x^{1/3} a^{1/3}} \\right), x > 0, a > 0$, then $\\frac{dy}{dx}$ is :",
         "options": [
           "$\\frac{1}{x^{2/3}(1 + x^{2/3})}$",
@@ -5154,11 +5482,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 44,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $k + f(0)$ so that $f(x) = \\begin{cases} \\frac{\\sin (4k-1) x}{3x} & ; x < 0 \\\\ \\frac{\\tan (4k+1) x}{5x} & ; 0 < x < \\frac{\\pi}{2} \\\\ 1 & ; x = 0 \\end{cases}$ can be made continuous at $x = 0$ is :",
         "options": [
           "$1$",
@@ -5170,11 +5499,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 45,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = \\tan^{-1} \\left( \\frac{x}{1 + \\sqrt{1 - x^2}} \\right), |x| \\le 1$, then $\\frac{dy}{dx}$ at $\\left(\\frac{1}{2}\\right)$ is :",
         "options": [
           "$\\frac{1}{\\sqrt{3}}$",
@@ -5186,11 +5516,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 46,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\frac{e^x x \\cos x - x \\log_e (1+x) - x}{x^2}, x \\neq 0$. If $f(x)$ is continuous at $x = 0$, then $f(0)$ is equal to :",
         "options": [
           "$0$",
@@ -5202,11 +5533,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 47,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "A function $f(x) = \\max(\\sin x, \\cos x, 1 - \\cos x)$ is non-derivable for $n$ values of $x \\in [0, 2\\pi]$. Then the value of $n$ is :",
         "options": [
           "$2$",
@@ -5218,11 +5550,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 48,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $g$ be the inverse function of a differentiable function $f$ and $G(x) = \\frac{1}{g(x)}$. If $f(4) = 2$ and $f'(4) = \\frac{1}{16}$, then the value of $(G'(2))^2$ equals to :",
         "options": [
           "$1$",
@@ -5234,11 +5567,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 49,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\max\\left(x^4, x^2, \\frac{1}{81}\\right) \\forall x \\in [0, \\infty)$, then the sum of the square of reciprocal of all the values of $x$ where $f(x)$ is non-differentiable, is equal to :",
         "options": [
           "$1$",
@@ -5250,11 +5584,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 50,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ is derivable at $x = 2$ such that $f(2) = 2$ and $f'(2) = 4$, then the value of $\\lim_{h\\to 0} \\frac{1}{h^2} (\\ln(f(2+h^2)) - \\ln(f(2-h^2)))$ is equal to :",
         "options": [
           "$1$",
@@ -5266,11 +5601,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 51,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = (x^2 - 3x + 2)|(x^3 - 6x^2 + 11x - 6)| + \\left|\\sin\\left(x + \\frac{\\pi}{4}\\right)\\right|$. Number of points at which the function $f(x)$ is non-differentiable in $[0, 2\\pi]$, is :",
         "options": [
           "$5$",
@@ -5282,11 +5618,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 52,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f$ and $g$ be differentiable functions on $R$ (the set of all real numbers) such that $g(1) = 2 = g'(1)$ and $f'(0) = 4$. If $h(x) = f(2x g(x) + \\cos \\pi x - 3)$ then $h'(1)$ is equal to :",
         "options": [
           "$28$",
@@ -5298,11 +5635,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 53,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\frac{(x+1)^7 \\sqrt{1+x^2}}{(x^2-x+1)^6}$, then the value of $f'(0)$ is equal to :",
         "options": [
           "$10$",
@@ -5314,11 +5652,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 54,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Statement-1 : The function $f(x) = \\lim_{n\\to \\infty} \\frac{\\log_e (1+x) - x^{2n} \\sin(2x)}{1 + x^{2n}}$ is discontinuous at $x = 1$.\\nStatement-2 : L.H.L = R.H.L $\\neq f(1)$.",
         "options": [
           "Statement-1 is true, Statement-2 is true and Statement-2 is correct explanation for Statement-1",
@@ -5330,11 +5669,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 55,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\begin{cases} x & ; \\text{if } x \\text{ is rational} \\\\ 1-x & ; \\text{if } x \\text{ is irrational} \\end{cases}$, then number of points for $x \\in R$, where $y = f(f(x))$ is discontinuous is :",
         "options": [
           "$0$",
@@ -5346,11 +5686,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 56,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of points where $f(x) = \\begin{cases} \\max(|x^2-x-2|, x^2-3x) & ; x \\ge 0 \\\\ \\max(\\ln(-x), e^x) & ; x < 0 \\end{cases}$ is non-differentiable will be :",
         "options": [
           "$1$",
@@ -5362,11 +5703,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 57,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the function $f(x) = -4e^{\\frac{1-x}{2}} + 1 + x + \\frac{x^2}{2} + \\frac{x^3}{3}$ and $g(x) = f^{-1}(x)$, then the value of $g'\\left(\\frac{-7}{6}\\right)$ equals to :",
         "options": [
           "$\\frac{1}{5}$",
@@ -5378,11 +5720,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 58,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Find $k$; if possible; so that $f(x) = \\begin{cases} \\frac{\\ln(2 - \\cos 2x)}{\\ln^2(1 + \\sin 3x)} & ; x < 0 \\\\ k & ; x = 0 \\\\ \\frac{e^{\\sin 2x} - 1}{\\ln(1 + \\tan 9x)} & ; x > 0 \\end{cases}$ is continuous at $x = 0$.",
         "options": [
           "$\\frac{2}{3}$",
@@ -5394,11 +5737,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 59,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $x = \\frac{1+t}{t^3}; y = \\frac{3}{2t^2} + \\frac{2}{t}$ then the value of $\\frac{dy}{dx} - x \\left( \\frac{dy}{dx} \\right)^3$ is :",
         "options": [
           "$2$",
@@ -5410,11 +5754,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 60,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y^{-2} = 1 + 2\\sqrt{2}\\cos 2x$, then :\n$\\frac{d^2 y}{dx^2} = y(py^2 + 1)(qy^2 - 1)$ then the value of $(p+q)$ equals to :",
         "options": [
           "$7$",
@@ -5426,11 +5771,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 61,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f:\\mathbb{R} \\rightarrow \\mathbb{R}$ is not identically zero, differentiable function and satisfy the equations\n$f(xy) = f(x)f(y)$ and $f(x+z) = f(x) + f(z)$, then $f(5) =$",
         "options": [
           "$3$",
@@ -5442,11 +5788,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 62,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of points at which the function $f(x) = \\begin{cases} \\min(x, x^2) & \\text{if } -\\infty < x < 1 \\\\ \\min(2x - 1, x^2) & \\text{if } x \\ge 1 \\end{cases}$ is not derivable is :",
         "options": [
           "$0$",
@@ -5458,11 +5805,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 63,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = (x + \\sqrt{1 + x^2})^n$, then $(1 + x^2) \\frac{d^2 y}{dx^2} + x \\frac{dy}{dx}$ is :",
         "options": [
           "$n^2 y$",
@@ -5474,11 +5822,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 64,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $g(x) = f\\left(x - \\sqrt{1 - x^2}\\right)$ and $f'(x) = 1 - x^2$ then $g'(x)$ equals to :",
         "options": [
           "$1 - x^2$",
@@ -5490,11 +5839,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 65,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\lim_{n \\rightarrow \\infty} \\frac{\\log_e (2+x) - x^{2n} \\sin x}{1 + x^{2n}}$ then :",
         "options": [
           "$f(x)$ is continuous at $x = 1$",
@@ -5506,11 +5856,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 66,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x+y) = f(x)f(y)$ for all $x$ and $y$, and $f(5) = -2$, $f'(0) = 3$, then $f'(5)$ is equal to :",
         "options": [
           "$3$",
@@ -5522,11 +5873,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 67,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\lim_{n \\rightarrow \\infty} \\frac{\\log_e (2+x) - x^{2n} \\sin x}{1 + x^{2n}}$ then :",
         "options": [
           "$f(x)$ is continuous at $x = 1$",
@@ -5538,11 +5890,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 68,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\begin{cases} \\frac{x - e^x + 1 - \\{1 - \\cos 2x\\}}{x^2} & x \\ne 0 \\\\ k & x = 0 \\end{cases}$ is continuous at $x = 0$ then, which of the following statement is false ?\n(where $[\\cdot]$ denotes greatest integer function and $\\{\\cdot\\}$ denotes fraction part function.)",
         "options": [
           "$k = \\frac{-5}{2}$",
@@ -5554,11 +5907,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 69,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = ||x^2 - 10x + 21| - p|$; then the exhaustive set of values of $p$ for which $f(x)$ has exactly 6 points of non-derivability, is :",
         "options": [
           "$(4, \\infty)$",
@@ -5570,11 +5924,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 70,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\sqrt{\\frac{1 + \\sin^{-1} x}{1 - \\tan^{-1} x}}$; then $f'(0)$ is equal to :",
         "options": [
           "$4$",
@@ -5586,11 +5941,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 71,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For $t \\in (0, 1)$; let $x = \\sqrt{2^{\\sin^{-1} t}}$ and $y = \\sqrt{2^{\\cos^{-1} t}}$, then $1 + \\left( \\frac{dy}{dx} \\right)^2$ equals :",
         "options": [
           "$\\frac{x^2}{y^2}$",
@@ -5602,11 +5958,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 72,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = -1 + |x - 2|$ and $g(x) = 1 - |x|$ then set of all possible value(s) of $x$ for which $(f \\circ g)(x)$ is discontinuous is :",
         "options": [
           "$\\{0, 1, 2\\}$",
@@ -5618,11 +5975,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 73,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = [x]\\tan(\\pi x)$ then $f'(k^+)$ is equal to ($k \\in I$ and $[\\cdot]$ denotes greatest integer function):",
         "options": [
           "$(k-1)\\pi(-1)^k$",
@@ -5634,11 +5992,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 74,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\begin{cases} \\frac{a e^{\\sin x} + b e^{-\\sin x} - c}{x^2} & ; x \\ne 0 \\\\ 2 & ; x = 0 \\end{cases}$ is continuous at $x = 0$; then :",
         "options": [
           "$a = b = c$",
@@ -5650,11 +6009,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 75,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\tan x \\cdot \\cot y = \\sec \\alpha$ where $\\alpha$ is constant and $\\alpha \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ then $\\frac{d^2 y}{dx^2}$ at $\\left(\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right)$ equals to :",
         "options": [
           "$0$",
@@ -5666,11 +6026,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 76,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = (x - 3)(x - 2)(x - 1)x(x + 1)(x + 2)(x + 3)$, then $\\frac{d^2 y}{dx^2}$ at $x = 1$ is :",
         "options": [
           "$-101$",
@@ -5682,11 +6043,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 77,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x+y) = f(x)f(y)$ $\\forall x, y \\in \\mathbb{R}$, $f(0) \\ne 0$. If $f(x)$ is continuous at $x = 0$, then $f(x)$ is continuous at :",
         "options": [
           "all natural numbers only",
@@ -5698,11 +6060,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 78,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = 3x^9 - 2x^4 + 2x^3 - 3x^2 + x + \\cos x + 5$ and $g(x) = f^{-1}(x)$; then the value of $g'(6)$ equals :",
         "options": [
           "$1$",
@@ -5714,11 +6077,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 79,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = f(x)$ and $z = g(x)$ then $\\frac{d^2 y}{dz^2}$ equals",
         "options": [
           "$\\frac{g'f'' - f'g''}{(g')^2}$",
@@ -5730,11 +6094,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 80,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} x + 1 & ; x < 0 \\\\ |x - 1| & ; x \\ge 0 \\end{cases}$ and $g(x) = \\begin{cases} x + 1 & ; x < 0 \\\\ (x - 1)^2 & ; x \\ge 0 \\end{cases}$ then the number of points where $g(f(x))$ is not differentiable.",
         "options": [
           "$0$",
@@ -5746,11 +6111,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 81,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = [\\sin x] + [\\cos x]$, $x \\in [0, 2\\pi]$, where $[\\cdot]$ denotes the greatest integer function, total number of points where $f(x)$ is non differentiable is equal to :",
         "options": [
           "$2$",
@@ -5762,11 +6128,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 82,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\cos x, g(x) = \\begin{cases} \\min\\{f(t) : 0 \\le t \\le x\\} & , x \\in [0, \\pi] \\\\ (\\sin x) - 1 & , x > \\pi \\end{cases}$\nThen",
         "options": [
           "$g(x)$ is discontinuous at $x = \\pi$",
@@ -5778,11 +6145,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 83,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = (4 + x)^n, n \\in \\mathbb{N}$ and $f^r(0)$ represents the $r^{\\text{th}}$ derivative of $f(x)$ at $x = 0$, then the value of $\\sum_{r=0}^{\\infty} \\frac{f^r(0)}{r!}$ is equal to :",
         "options": [
           "$2^n$",
@@ -5794,11 +6162,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 84,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} \\frac{x}{1 + |x|} & , |x| \\ge 1 \\\\ \\frac{x}{1 - |x|} & , |x| < 1 \\end{cases}$, then domain of $f'(x)$ is :",
         "options": [
           "$(-\\infty, \\infty)$",
@@ -5810,11 +6179,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 85,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the function $f(x) = -4e^{\\frac{1-x}{2}} + 1 + x + \\frac{x^2}{2} + \\frac{x^3}{3}$ and $g(x) = f^{-1}(x)$, then the value of $g'\\left(\\frac{-7}{6}\\right)$ equals :",
         "options": [
           "$\\frac{1}{5}$",
@@ -5826,11 +6196,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 86,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of points at which the function $f(x) = (x - |x|)^2 (1 - x + |x|)^2$ is not differentiable in the interval $(-3, 4)$ is :",
         "options": [
           "Zero",
@@ -5842,11 +6213,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 87,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\sqrt{\\frac{1 + \\sin^{-1} x}{1 - \\tan^{-1} x}}$; then $f'(0)$ is equal to :",
         "options": [
           "$4$",
@@ -5858,11 +6230,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 88,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\begin{cases} e^{x-1} & ; \\ 0 \\le x \\le 1 \\\\ x + 1 - \\{x\\} & ; \\ 1 < x < 3 \\end{cases}$ and $g(x) = x^2 - ax + b$ such that $f(x)g(x)$ is continuous in $[0, 3)$ then the ordered pair $(a, b)$ is (where $\\{\\cdot\\}$ denotes fractional part function) :",
         "options": [
           "$(2, 3)$",
@@ -5874,11 +6247,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 89,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Use the following table and the fact that $f(x)$ is invertible and differentiable everywhere to find $(f^{-1})'(3)$ :\n\n| $x$ | $f(x)$ | $f'(x)$ |\n|---|---|---|\n| $3$ | $1$ | $7$ |\n| $6$ | $2$ | $10$ |\n| $9$ | $3$ | $5$ |",
         "options": [
           "$0$",
@@ -5890,11 +6264,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 90,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} x^n \\sin \\frac{1}{x} & , \\ x \\neq 0 \\\\ 0 & , \\ x = 0 \\end{cases}$\nSuch that $f(x)$ is continuous at $x = 0$; $f'(0)$ is real and finite; and $\\lim_{x \\to 0} f'(x)$ does not exist. This holds true for which of the following values of $n$ ?",
         "options": [
           "$0$",
@@ -5906,11 +6281,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SINGLE CORRECT]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x) = \\tan^{-1} (\\text{sgn} (x^2 - \\lambda x + 1))$ has exactly one point of discontinuity, then the value of $\\lambda$ can be :",
         "options": [
           "$1$",
@@ -5926,11 +6302,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "$f(x) = \\begin{cases} 2(x + 1) & ; \\ x \\le -1 \\\\ \\sqrt{1 - x^2} & ; \\ -1 < x < 1 \\\\ | |x| - 1 | - 1 | & ; \\ x \\ge 1 \\end{cases}$, then :",
         "options": [
           "$f(x)$ is non-differentiable at exactly three points",
@@ -5947,11 +6324,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\begin{cases} \\frac{x(3e^{1/x} + 4)}{2 - e^{1/x}} & ; \\ x \\neq 0 \\\\ 0 & ; \\ x = 0 \\end{cases}$\nwhich of the following statement(s) is/are correct ?",
         "options": [
           "$f(x)$ is continuous at $x = 0$",
@@ -5968,11 +6346,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $|f(x)| \\le \\sin^2 x, \\forall x \\in R$, then",
         "options": [
           "$f(x)$ is continuous at $x = 0$",
@@ -5989,11 +6368,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\begin{cases} \\frac{a(1 - x \\sin x) + b \\cos x + 5}{x^2} & ; \\ x < 0 \\\\ 3 & ; \\ x = 0 \\\\ \\left(1 + \\left(\\frac{cx + dx^3}{x^2}\\right)\\right)^{\\frac{1}{x}} & ; \\ x > 0 \\end{cases}$\nIf $f$ is continuous at $x = 0$ then correct statement(s) is/are :",
         "options": [
           "$a + c = -1$",
@@ -6011,11 +6391,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x) = |||x| - 2| + p|$ have more than 3 points of non-derivability then the value of $p$ can be :",
         "options": [
           "$0$",
@@ -6031,11 +6412,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Identify the options having correct statement :",
         "options": [
           "$f(x) = \\sqrt[3]{x^2} |x| - 1 - |x|$ is no where non-differentiable",
@@ -6052,11 +6434,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "A twice differentiable function $f(x)$ is defined for all real numbers and satisfies the following conditions :\n$f(0) = 2; \\quad f'(0) = -5 \\quad \\text{and} \\quad f''(0) = 3.$\nThe function $g(x)$ is defined by $g(x) = e^{ax} + f(x) \\ \\forall x \\in R$, where '$a$' is any constant. If $g'(0) + g''(0) = 0$ then '$a$' can be equal to :",
         "options": [
           "$1$",
@@ -6072,11 +6455,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x) = |x| \\sin x$, then $f$ is :",
         "options": [
           "differentiable everywhere",
@@ -6092,11 +6476,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $[\\ ]$ denotes the greatest integer function and $f(x) = [\\tan^2 x]$, then",
         "options": [
           "$\\lim_{x \\to 0} f(x)$ does not exist",
@@ -6112,11 +6497,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           3
         ],
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f$ be a differentiable function satisfying $f'(x) = f'(-x) \\ \\forall x \\in R$. Then",
         "options": [
           "If $f(1) = f(2)$, then $f(-1) = f(-2)$",
@@ -6132,11 +6518,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f : R \\to R$ be a function, such that $|f(x)| \\le x^{4n}, \\ n \\in N \\ \\forall x \\in R$ then $f(x)$ is :",
         "options": [
           "discontinuous at $x = 0$",
@@ -6152,11 +6539,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           3
         ],
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = [x]$ and $g(x) = 0$ when $x$ is an integer and $g(x) = x^2$ when $x$ is not an integer ($[\\ ]$ is the greatest integer function) then :",
         "options": [
           "$\\lim_{x \\to 1} g(x)$ exists, but $g(x)$ is not continuous at $x = 1$",
@@ -6173,11 +6561,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let the function $f$ be defined by $f(x) = \\begin{cases} p + qx + x^2 & , \\ x < 2 \\\\ 2px + 3qx^2 & , \\ x \\ge 2 \\end{cases}$. Then :",
         "options": [
           "$f(x)$ is continuous in $R$ if $3p + 10q = 4$",
@@ -6194,11 +6583,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = |2x - 9| + |2x| + |2x + 9|$. Which of the following are true ?",
         "options": [
           "$f(x)$ is not differentiable at $x = \\frac{9}{2}$",
@@ -6215,11 +6605,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\max(x, x^2, x^3)$ in $-2 \\le x \\le 2$. Then :",
         "options": [
           "$f(x)$ is continuous in $-2 \\le x \\le 2$",
@@ -6236,11 +6627,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x)$ be a differentiable function satisfying $f(y) f\\left(\\frac{x}{y}\\right) = f(x) \\ \\forall x, y \\in R, y \\neq 0$ and $f(1) \\neq 0$, $f'(1) = 3$, then :",
         "options": [
           "$\\text{sgn}(f(x))$ is non-differentiable at exactly one point",
@@ -6258,11 +6650,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = (x^2 - 3x + 2)(x^2 + 3x + 2)$ and $\\alpha, \\beta, \\gamma$ satisfy $\\alpha < \\beta < \\gamma$ are the roots of $f'(x) = 0$ then which of the following is/are correct ($[\\cdot]$ denotes greatest integer function) ?",
         "options": [
           "$[\\alpha] = -2$",
@@ -6278,11 +6671,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           2
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let the function $f$ be defined by $f(x) = \\begin{cases} p + qx + x^2 & , \\ x < 2 \\\\ 2px + 3qx^2 & , \\ x \\ge 2 \\end{cases}$. Then :",
         "options": [
           "$f(x)$ is continuous in $R$ if $3p + 10q = 4$",
@@ -6299,11 +6693,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $y = e^{x \\sin(x^3)} + (\\tan x)^x$ then $\\frac{dy}{dx}$ may be equal to :",
         "options": [
           "$e^{x \\sin(x^3)}[3x^3 \\cos(x^3) + \\sin(x^3)] + (\\tan x)^x[\\ln \\tan x + 2x \\text{cosec } 2x]$",
@@ -6319,11 +6714,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = x + (1-x)x^2 + (1-x)(1-x^2)x^3 + \\dots \\dots + (1-x)(1-x^2)\\dots\\dots(1-x^{n-1})x^n$; $(n \\ge 4)$ then :",
         "options": [
           "$f(x) = - \\prod_{r=1}^n (1-x^r)$",
@@ -6339,11 +6735,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\begin{cases} x^2 + a ; & 0 \\le x < 1 \\\\ -2x + b ; & 1 \\le x \\le 2 \\end{cases}$ and $g(x) = \\begin{cases} 3x + b ; & 0 \\le x < 1 \\\\ x^3 ; & 1 \\le x \\le 2 \\end{cases}$\nIf derivative of $f(x)$ w.r.t. $g(x)$ at $x = 1$ exists and is equal to $\\lambda$, then which of the following is/are correct ?",
         "options": [
           "$a+b = -3$",
@@ -6361,11 +6758,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x) = \\begin{cases} \\dfrac{\\sin[x^2]\\pi}{x^2 - 3x + 8} + ax^3 + b ; & 0 \\le x \\le 1 \\\\ 2 \\cos \\pi x + \\tan^{-1} x ; & 1 < x \\le 2 \\end{cases}$ is differentiable in $[0, 2]$ then :\n($[\\cdot]$ denotes greatest integer function)",
         "options": [
           "$a = \\frac{1}{3}$",
@@ -6381,11 +6779,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x) = \\begin{cases} 1+x & 0 \\le x \\le 2 \\\\ 3-x & 2 < x \\le 3 \\end{cases}$, then $f(f(x))$ is not differentiable at :",
         "options": [
           "$x = 1$",
@@ -6401,11 +6800,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           1
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = (x+1)(x+2)(x+3)\\dots\\dots(x+100)$ and $g(x) = f(x) f''(x) - (f'(x))^2$. Let $n$ be the number of real roots of $g(x) = 0$, then :",
         "options": [
           "$n < 2$",
@@ -6421,11 +6821,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           2
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x) = \\begin{cases} |x|-3 & , \\ \\ x < 1 \\\\ |x-2|+a & , \\ \\ x \\ge 1 \\end{cases}$, $g(x) = \\begin{cases} 2-|x| & , \\ \\ x < 2 \\\\ \\text{sgn}(x)-b & , \\ \\ x \\ge 2 \\end{cases}$\nIf $h(x) = f(x) + g(x)$ is discontinuous at exactly one point, then which of the following are correct ?",
         "options": [
           "$a = -3, b = 0$",
@@ -6443,11 +6844,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x)$ be a continuous function in $[-1, 1]$ such that\n$f(x) = \\begin{cases} \\dfrac{\\ln(ax^2+bx+c)}{x^2} & ; \\ \\ -1 \\le x < 0 \\\\ 1 & ; \\ \\ x = 0 \\\\ \\dfrac{\\sin(e^{x^2}-1)}{x^2} & ; \\ \\ 0 < x \\le 1 \\end{cases}$\nThen which of the following is/are correct ?",
         "options": [
           "$a+b+c = 0$",
@@ -6463,11 +6865,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 28,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "$f(x)$ is differentiable function satisfying the relationship $f^2(x) + f^2(y) + 2(xy-1) = f^2(x+y)$ $\\forall x, y \\in R$\nAlso $f(x) > 0 \\ \\forall x \\in R$ and $f(\\sqrt{2}) = 2$. Then which of the following statement(s) is/are correct about $f(x)$ ?",
         "options": [
           "$[f(3)] = 3$ ($[\\cdot]$ denotes greatest integer function)",
@@ -6485,11 +6888,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 29,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The function $f(x) = \\left[ \\sqrt{1-\\sqrt{1-x^2}} \\right]$, (where $[\\cdot]$ denotes greatest integer function) :",
         "options": [
           "has domain $[-1, 1]$",
@@ -6506,11 +6910,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 30,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "A function $f(x)$ satisfies the relation :\n$f(x+y) = f(x) + f(y) + xy(x+y) \\ \\forall x,y \\in R$. If $f'(0) = -1$, then :",
         "options": [
           "$f(x)$ is a polynomial function",
@@ -6527,11 +6932,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 31,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The points of discontinuities of $f(x) = \\left[ \\frac{6x}{\\pi} \\right] \\cos\\left[ \\frac{3x}{\\pi} \\right]$ in $\\left[ \\frac{\\pi}{6}, \\pi \\right]$ is/are :\n(where $[\\cdot]$ denotes greatest integer function)",
         "options": [
           "$\\frac{\\pi}{6}$",
@@ -6547,11 +6953,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           2
         ],
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 32,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\begin{cases} \\dfrac{x^2}{2} & 0 \\le x < 1 \\\\ 2x^2 - 3x + \\dfrac{3}{2} & 1 \\le x \\le 2 \\end{cases}$, then in $[0, 2]$ :",
         "options": [
           "$f(x), f'(x)$ are continuous",
@@ -6568,11 +6975,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 33,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $x = \\phi(t), y = \\psi(t)$, then $\\frac{d^2y}{dx^2} =$",
         "options": [
           "$\\frac{\\phi'\\psi'' - \\psi'\\phi''}{(\\phi')^2}$",
@@ -6588,11 +6996,12 @@ window.DEFAULT_BLACKBOOK = [
           1,
           3
         ],
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 34,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "$f(x) = [x]$ and $g(x) = \\begin{cases} 0 & , \\ \\ x \\in I \\\\ x^2 & , \\ \\ x \\notin I \\end{cases}$ where $[\\cdot]$ denotes the greatest integer function. Then",
         "options": [
           "$gof$ is continuous for all $x$",
@@ -6607,11 +7016,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOptionsArray": [
           0
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 35,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f : R^+ \\rightarrow R$ defined as $f(x) = e^x + \\ln x$ and $g = f^{-1}$ then correct statement(s) is/are :",
         "options": [
           "$g''(e) = \\frac{1-e}{(1+e)^3}$",
@@ -6627,11 +7037,12 @@ window.DEFAULT_BLACKBOOK = [
           0,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 36,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\begin{cases} \\dfrac{3x-x^2}{2} & ; \\ \\ x < 2 \\\\ [x-1] & ; \\ \\ 2 \\le x < 3 \\\\ x^2-8x+17 & ; \\ \\ x \\ge 3 \\end{cases}$; then which of the following hold(s) good ?\n($[\\cdot]$ denotes greatest integer function)",
         "options": [
           "$\\lim_{x \\rightarrow 2} f(x) = 1$",
@@ -6648,11 +7059,12 @@ window.DEFAULT_BLACKBOOK = [
           2,
           3
         ],
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "MULTI_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 2**\nLet $f(x) = \\lim_{n \\rightarrow \\infty} n^2 \\tan\\left(\\ln\\left(\\sec \\frac{x}{n}\\right)\\right)$ and $g(x) = \\min(f(x), \\{x\\})$\n(where $\\{\\cdot\\}$ denotes fractional part function)\n\nLeft hand derivative of $\\phi(x) = e^{\\sqrt{2f(x)}}$ at $x = 0$ is :",
         "options": [
           "$0$",
@@ -6664,11 +7076,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 2**\nLet $f(x) = \\lim_{n \\rightarrow \\infty} n^2 \\tan\\left(\\ln\\left(\\sec \\frac{x}{n}\\right)\\right)$ and $g(x) = \\min(f(x), \\{x\\})$\n(where $\\{\\cdot\\}$ denotes fractional part function)\n\nNumber of points in $x \\in [-1, 2]$ at which $g(x)$ is discontinuous :",
         "options": [
           "$2$",
@@ -6680,11 +7093,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 3 to 4**\nLet $f(x)$ and $g(x)$ be two differentiable functions, defined as :\n$f(x) = x^2 + xg'(1) + g''(2)$ and $g(x) = f(1)x^2 + xf'(x) + f''(x)$.\n\nThe value of $f(1) + g(-1)$ is :",
         "options": [
           "$0$",
@@ -6696,11 +7110,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 3 to 4**\nLet $f(x)$ and $g(x)$ be two differentiable functions, defined as :\n$f(x) = x^2 + xg'(1) + g''(2)$ and $g(x) = f(1)x^2 + xf'(x) + f''(x)$.\n\nThe number of integers in the domain of the function $F(x) = \\sqrt{-\\frac{f(x)}{g(x)}} + \\sqrt{3-x}$ is :",
         "options": [
           "$0$",
@@ -6712,11 +7127,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 5 to 6**\nDefine : $f(x) = |x^2 - 4x + 3| \\ln x + 2(x - 2)^{1/3}, x > 0$\n$h(x) = \\begin{cases} x - 1 & , \\ \\ x \\in Q \\\\ x^2 - x - 2 & , \\ \\ x \\notin Q \\end{cases}$\n\n$f(x)$ is non-differentiable at ........ points and the sum of corresponding $x$ value(s) is ........",
         "options": [
           "$3, 6$",
@@ -6728,11 +7144,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 5 to 6**\nDefine : $f(x) = |x^2 - 4x + 3| \\ln x + 2(x - 2)^{1/3}, x > 0$\n$h(x) = \\begin{cases} x - 1 & , \\ \\ x \\in Q \\\\ x^2 - x - 2 & , \\ \\ x \\notin Q \\end{cases}$\n\n$h(x)$ is discontinuous at $x = \\dots \\dots$",
         "options": [
           "$1 + \\sqrt{2}$",
@@ -6744,11 +7161,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider a function defined in $[-2, 2]$\n$$f(x) = \\begin{cases} \\{x\\} & -2 \\le x < -1 \\\\ |\\operatorname{sgn} x| & -1 \\le x \\le 1 \\\\ \\{-x\\} & 1 < x \\le 2 \\end{cases}$$\nwhere $\\{\\cdot\\}$ denotes the fractional part function.\n\nThe total number of points of discontinuity of $f(x)$ for $x \\in [-2, 2]$ is :",
         "options": [
           "0",
@@ -6760,11 +7178,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider a function defined in $[-2, 2]$\n$$f(x) = \\begin{cases} \\{x\\} & -2 \\le x < -1 \\\\ |\\operatorname{sgn} x| & -1 \\le x \\le 1 \\\\ \\{-x\\} & 1 < x \\le 2 \\end{cases}$$\nwhere $\\{\\cdot\\}$ denotes the fractional part function.\n\nThe number of points for $x \\in [-2, 2]$ where $f(x)$ is non-differentiable is :",
         "options": [
           "0",
@@ -6776,11 +7195,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider a function $f(x)$ in $[0, 2\\pi]$ defined as :\n$$f(x) = \\begin{cases} [\\sin x] + [\\cos x] & ; \\ \\ 0 \\le x \\le \\pi \\\\ [\\sin x] - [\\cos x] & ; \\ \\ \\pi < x \\le 2\\pi \\end{cases}$$\nwhere $[\\cdot]$ denotes greatest integer function then\n\nNumber of points where $f(x)$ is non-derivable :",
         "options": [
           "2",
@@ -6792,11 +7212,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider a function $f(x)$ in $[0, 2\\pi]$ defined as :\n$$f(x) = \\begin{cases} [\\sin x] + [\\cos x] & ; \\ \\ 0 \\le x \\le \\pi \\\\ [\\sin x] - [\\cos x] & ; \\ \\ \\pi < x \\le 2\\pi \\end{cases}$$\nwhere $[\\cdot]$ denotes greatest integer function then\n\n$\\displaystyle \\lim_{x \\to \\left(\\frac{3\\pi}{2}\\right)^+} f(x)$ equals",
         "options": [
           "0",
@@ -6808,11 +7229,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} x[x] & 0 \\le x < 2 \\\\ (x-1)[x] & 2 \\le x \\le 3 \\end{cases}$ where $[x] = \\text{greatest integer less than or equal to } x$, then :\n\nThe number of values of $x$ for $x \\in [0, 3]$ where $f(x)$ is discontinuous is :",
         "options": [
           "0",
@@ -6824,11 +7246,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} x[x] & 0 \\le x < 2 \\\\ (x-1)[x] & 2 \\le x \\le 3 \\end{cases}$ where $[x] = \\text{greatest integer less than or equal to } x$, then :\n\nThe number of values of $x$ for $x \\in [0, 3]$ where $f(x)$ is non-differentiable is :",
         "options": [
           "0",
@@ -6840,11 +7263,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} x[x] & 0 \\le x < 2 \\\\ (x-1)[x] & 2 \\le x \\le 3 \\end{cases}$ where $[x] = \\text{greatest integer less than or equal to } x$, then :\n\nThe number of integers in the range of $y = f(x)$ is :",
         "options": [
           "3",
@@ -6856,11 +7280,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a continuous and differentiable function such that $f(x+y) = f(x) \\cdot f(y)$ $\\forall\\ x, y$, $f(x) \\neq 0$ and $f(0) = 1$ and $f'(0) = 2$.\nLet $g(xy) = g(x) \\cdot g(y)$ $\\forall\\ x, y$ and $g'(1) = 2; g(1) \\neq 0$\n\nIdentify the correct option :",
         "options": [
           "$f(2) = e^4$",
@@ -6872,11 +7297,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a continuous and differentiable function such that $f(x+y) = f(x) \\cdot f(y)$ $\\forall\\ x, y$, $f(x) \\neq 0$ and $f(0) = 1$ and $f'(0) = 2$.\nLet $g(xy) = g(x) \\cdot g(y)$ $\\forall\\ x, y$ and $g'(1) = 2; g(1) \\neq 0$\n\nIdentify the correct option :",
         "options": [
           "$g(2) = 2$",
@@ -6888,11 +7314,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a continuous and differentiable function such that $f(x+y) = f(x) \\cdot f(y)$ $\\forall\\ x, y$, $f(x) \\neq 0$ and $f(0) = 1$ and $f'(0) = 2$.\nLet $g(xy) = g(x) \\cdot g(y)$ $\\forall\\ x, y$ and $g'(1) = 2; g(1) \\neq 0$\n\nThe number of values of $x$, where $f(x) = g(x)$ :",
         "options": [
           "0",
@@ -6904,11 +7331,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\displaystyle f(x) = \\frac{\\cos^2 x}{1 + \\cos x + \\cos^2 x}$ and $g(x) = \\lambda \\tan x + (1 - \\lambda)\\sin x - x$, where $\\lambda \\in \\mathbb{R}$ and $x \\in [0, \\pi/2)$.\n\n$g'(x)$ equals",
         "options": [
           "$\\displaystyle \\frac{(1 - \\cos x)(f(x) - \\lambda)}{\\cos x}$",
@@ -6920,11 +7348,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\displaystyle f(x) = \\frac{\\cos^2 x}{1 + \\cos x + \\cos^2 x}$ and $g(x) = \\lambda \\tan x + (1 - \\lambda)\\sin x - x$, where $\\lambda \\in \\mathbb{R}$ and $x \\in [0, \\pi/2)$.\n\nThe exhaustive set of values of '$\\lambda$' such that $g'(x) \\ge 0$ for any $x \\in [0, \\pi/2)$ :",
         "options": [
           "$[1, \\infty)$",
@@ -6936,11 +7365,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\displaystyle f(x) = \\lim_{n \\to \\infty} \\frac{x^2 + 2(x+1)^{2n}}{(x+1)^{2n+1} + x^2 + 1}, n \\in \\mathbb{N}$ and\n$\\displaystyle g(x) = \\tan\\left( \\frac{1}{2} \\sin^{-1} \\left( \\frac{2f(x)}{1 + f^2(x)} \\right) \\right)$, then\n\nThe number of points where $g(x)$ is non-differentiable $\\forall\\ x \\in \\mathbb{R}$ is :",
         "options": [
           "1",
@@ -6952,11 +7382,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\displaystyle f(x) = \\lim_{n \\to \\infty} \\frac{x^2 + 2(x+1)^{2n}}{(x+1)^{2n+1} + x^2 + 1}, n \\in \\mathbb{N}$ and\n$\\displaystyle g(x) = \\tan\\left( \\frac{1}{2} \\sin^{-1} \\left( \\frac{2f(x)}{1 + f^2(x)} \\right) \\right)$, then\n\n$\\displaystyle \\lim_{x \\to -3} \\frac{(x^2 + 4x + 3)}{\\sin(x+3)g(x)}$ is equal to :",
         "options": [
           "1",
@@ -6968,11 +7399,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\displaystyle f(x) = \\lim_{n \\to \\infty} \\frac{x^2 + 2(x+1)^{2n}}{(x+1)^{2n+1} + x^2 + 1}, n \\in \\mathbb{N}$ and\n$\\displaystyle g(x) = \\tan\\left( \\frac{1}{2} \\sin^{-1} \\left( \\frac{2f(x)}{1 + f^2(x)} \\right) \\right)$, then\n\n$\\displaystyle \\lim_{x \\to 0^-} \\left\\{ \\frac{f(x)}{\\tan^2 x} \\right\\} + \\lim_{x \\to -2^-} f(x) + \\lim_{x \\to -2^+} (5f(x))$ is equal to\n(where $\\{\\cdot\\}$ denotes fraction part function)",
         "options": [
           "7",
@@ -6984,11 +7416,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f$ and $g$ be two differentiable functions such that :\n$$f(x) = g'(1) \\sin x + (g''(2) - 1)x$$\n$$g(x) = x^2 - f'\\left(\\frac{\\pi}{2}\\right)x + f''\\left(-\\frac{\\pi}{2}\\right)$$\n\nThe number of solution(s) of the equation $f(x) = g(x)$ is/are :",
         "options": [
           "1",
@@ -7000,11 +7433,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f$ and $g$ be two differentiable functions such that :\n$$f(x) = g'(1) \\sin x + (g''(2) - 1)x$$\n$$g(x) = x^2 - f'\\left(\\frac{\\pi}{2}\\right)x + f''\\left(-\\frac{\\pi}{2}\\right)$$\n\nIf $\\displaystyle \\int \\frac{g(\\cos x)}{f(x)-x}dx = \\cos x + \\ln(h(x)) + C$ where $C$ is constant and $\\displaystyle h\\left(\\frac{\\pi}{2}\\right) = 1$ then $\\displaystyle \\left| h\\left(\\frac{2\\pi}{3}\\right) \\right|$ is :",
         "options": [
           "$3\\sqrt{2}$",
@@ -7016,11 +7450,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f$ and $g$ be two differentiable functions such that :\n$$f(x) = g'(1) \\sin x + (g''(2) - 1)x$$\n$$g(x) = x^2 - f'\\left(\\frac{\\pi}{2}\\right)x + f''\\left(-\\frac{\\pi}{2}\\right)$$\n\nIf $\\phi(x) = f^{-1}(x)$ then $\\displaystyle \\phi'\\left(\\frac{\\pi}{2} + 1\\right)$ equals to :",
         "options": [
           "$\\displaystyle \\frac{\\pi}{2} + 1$",
@@ -7032,11 +7467,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Suppose a function $f(x)$ satisfies the following conditions\n$$f(x+y) = \\frac{f(x) + f(y)}{1 + f(x) f(y)}, \\forall\\ x, y \\in \\mathbb{R} \\text{ and } f'(0) = 1$$\nAlso $-1 < f(x) < 1$, $\\forall\\ x \\in \\mathbb{R}$\n\n$f(x)$ increases in the complete interval :",
         "options": [
           "$(-\\infty, -1) \\cup (-1, 0) \\cup (0, 1) \\cup (1, \\infty)$",
@@ -7048,11 +7484,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Suppose a function $f(x)$ satisfies the following conditions\n$$f(x+y) = \\frac{f(x) + f(y)}{1 + f(x) f(y)}, \\forall\\ x, y \\in \\mathbb{R} \\text{ and } f'(0) = 1$$\nAlso $-1 < f(x) < 1$, $\\forall\\ x \\in \\mathbb{R}$\n\nThe value of the limit $\\displaystyle \\lim_{x \\to \\infty} (f(x))^x$ is :",
         "options": [
           "0",
@@ -7064,11 +7501,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be a polynomial satisfying $\\displaystyle \\lim_{x \\to \\infty} \\frac{x^4 f(x)}{x^8 + 1} = 3$\n$f(2) = 5, f(3) = 10, f(-1) = 2, f(-6) = 37$\n\nThe value of $\\displaystyle \\lim_{x \\to -6} \\frac{f(x) - x^2 - 1}{3(x+6)}$ equals to :",
         "options": [
           "-16",
@@ -7080,11 +7518,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 28,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be a polynomial satisfying $\\displaystyle \\lim_{x \\to \\infty} \\frac{x^4 f(x)}{x^8 + 1} = 3$\n$f(2) = 5, f(3) = 10, f(-1) = 2, f(-6) = 37$\n\nThe number of points of discontinuity of $\\displaystyle g(x) = \\frac{1}{x^2 + 1 - f(x)}$ in $\\displaystyle \\left[\\frac{-15}{2}, \\frac{5}{2}\\right]$ equals :",
         "options": [
           "4",
@@ -7096,11 +7535,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 29,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider $f(x) = x^{\\ln x}$ and $g(x) = e^2x$. Let $\\alpha$ and $\\beta$ be two values of $x$ satisfying $f(x) = g(x)$ $(\\alpha < \\beta)$\n\nIf $\\displaystyle \\lim_{x \\to \\beta} \\frac{f(x) - c\\beta}{g(x) - \\beta^2} = l$ then the value of $c - l$ equals to :",
         "options": [
           "$4 - e^2$",
@@ -7112,11 +7552,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 30,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider $f(x) = x^{\\ln x}$ and $g(x) = e^2x$. Let $\\alpha$ and $\\beta$ be two values of $x$ satisfying $f(x) = g(x)$ $(\\alpha < \\beta)$\n\nIf $\\displaystyle h(x) = \\frac{f(x)}{g(x)}$ then $h'(\\alpha)$ equals to :",
         "options": [
           "$e$",
@@ -7128,11 +7569,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 31,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\displaystyle f_n(x) + f_n(y) = \\frac{x^n + y^n}{x^n y^n}$ $\\forall\\ x, y \\in \\mathbb{R} - \\{0\\}$ where $n \\in \\mathbb{N}$ and \n$\\displaystyle g(x) = \\max \\left\\{ f_2(x), f_3(x), \\frac{1}{2} \\right\\}$ $\\forall\\ x \\in \\mathbb{R} - \\{0\\}$\n\nThe minimum value of $\\displaystyle \\sum_{k=1}^{\\infty} f_{2k}(\\operatorname{cosec} \\theta) + \\sum_{k=1}^{\\infty} f_{2k}(\\sec \\theta)$, where $\\displaystyle \\theta \\neq \\frac{k\\pi}{2} ; k \\in I$ is :",
         "options": [
           "1",
@@ -7144,11 +7586,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 32,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\displaystyle f_n(x) + f_n(y) = \\frac{x^n + y^n}{x^n y^n}$ $\\forall\\ x, y \\in \\mathbb{R} - \\{0\\}$ where $n \\in \\mathbb{N}$ and \n$\\displaystyle g(x) = \\max \\left\\{ f_2(x), f_3(x), \\frac{1}{2} \\right\\}$ $\\forall\\ x \\in \\mathbb{R} - \\{0\\}$\n\nThe number of values of $x$ for which $g(x)$ is non-differentiable ($x \\in \\mathbb{R} - \\{0\\}$) :",
         "options": [
           "3",
@@ -7160,11 +7603,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[COMPREHENSION]",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the following:\n\n| **Column-I** | **Column-II** |\n|---|---|\n| (A) If  \\int_{0}^{\\pi} \\frac{\\log \\sin x}{\\cos^2 x} \\, dx = -K  then the value of  \\frac{3K}{\\pi}  is greater than | (P)  0 |\n| (B) If  e^{x+y} + e^{y-x} = 1  and  y'' - (y')^2 + K = 0, then  K  is equal to | (Q)  1 |\n| (C) If  f(x) = x \\ln x  then  2(f^{-1})'(\\ln 4)  is more than | (R)  2 |\n| (D)  \\lim_{x \\to \\infty} (x \\ln x)^{\\frac{1}{x^2+1}}  is less than | (S)  4 |\n|  | (T)  5 |",
         "options": [
           "A $\\rightarrow$ P, B $\\rightarrow$ Q, C $\\rightarrow$ P, D $\\rightarrow$ R",
@@ -7177,11 +7621,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[MATCH THE COLUMN]",
         "answerKeyStr": "A->P,Q,R; B->Q; C->P,Q; D->R,S,T",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\displaystyle f(x) = \\begin{cases} [x] & , -2 \\le x < 0 \\\\ |x| & , 0 \\le x \\le 2 \\end{cases}$ (where $[\\cdot]$ denotes the greatest integer function) and $\\displaystyle g(x) = \\sec x, x \\in R - (2n+1)\\frac{\\pi}{2}, n \\in I$.\n\nMatch the following statements in Column-I with their values in Column-II in the interval $\\displaystyle \\left(-\\frac{3\\pi}{2}, \\frac{3\\pi}{2}\\right)$:\n\n| **Column-I** | **Column-II** |\n|---|---|\n| (A) Abscissa of points where limit of  (f \\circ g)(x)  exist is/are | (P)  -1 |\n| (B) Abscissa of points in domain of  (g \\circ f)(x), where limit of  (g \\circ f)(x)  does not exist is/are | (Q)  \\pi |\n| (C) Abscissa of points of discontinuity of  (f \\circ g)(x)  is/are | (R)  \\frac{5\\pi}{6} |\n| (D) Abscissa of points of differentiability of  (f \\circ g)(x)  is/are | (S)  -\\pi |\n|  | (T)  0 |",
         "options": [
           "A $\\rightarrow$ Q, B $\\rightarrow$ Q, C $\\rightarrow$ Q, D $\\rightarrow$ Q",
@@ -7194,11 +7639,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[MATCH THE COLUMN]",
         "answerKeyStr": "A->P,Q,R,S,T; B->P,T; C->Q,S; D->P,R,T",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let a function $f(x) = [x]\\{x\\} - |x|$ where $[\\cdot]$, $\\{\\cdot\\}$ are greatest integer and fractional part respectively. Match the following Column-I with Column-II in domain $(-3, \\infty)$:\n\n| **Column-I** | **Column-II** |\n|---|---|\n| (A)  f(x)  is continuous at  x  equal to | (P)  3 |\n| (B)  \\left| \\frac{4}{3} \\int_{2}^{3} f(x) \\, dx \\right|  is equal to | (Q)  1 |\n| (C) If  g(x) = x - 1  and if  f(x) = g(x), then number of solutions is | (R)  4 |\n| (D) If  l = \\lim_{x \\to 4^+} f(x), then  -l  is equal to | (S)  2 |",
         "options": [
           "A $\\rightarrow$ Q, B $\\rightarrow$ S, C $\\rightarrow$ P, D $\\rightarrow$ R",
@@ -7211,11 +7657,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[MATCH THE COLUMN]",
         "answerKeyStr": "A->Q; B->S; C->P; D->R",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the columns:\n\n| **Column-I** | **Column-II** |\n|---|---|\n| (A)  \\lim_{x \\to \\infty} \\left( \\frac{x^2 + 2x - 1}{2x^2 - 3x - 2} \\right)^{\\frac{2x+1}{2x-1}} = | (P)  \\frac{1}{2} |\n| (B)  \\lim_{x \\to 0} \\frac{\\log_{\\sec x/2} \\cos x}{\\log_{\\sec x} \\cos \\frac{x}{2}} = | (Q)  2 |\n| (C) Let  f(x) = \\max (\\cos x, x, 2x - 1)  where  x \\ge 0  then number of points | (R)  5 |\n| of non-differentiability of  f(x)  is |  |\n| (D) If  f(x) = [2 + 3 \\sin x],  0 < x < \\pi  then number of points at which | (S)  16 |\n| the function is discontinuous, is |  |",
         "options": [
           "A $\\rightarrow$ S, B $\\rightarrow$ S, C $\\rightarrow$ S, D $\\rightarrow$ R",
@@ -7228,11 +7675,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[MATCH THE COLUMN]",
         "answerKeyStr": "A->P; B->S; C->Q; D->R",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let the function:\n$$f(x) = \\begin{cases} ax(x-1) + b & ; \\quad x < 1 \\\\ x - 1 & ; \\quad 1 \\le x \\le 3 \\\\ px^2 + qx + 2 & ; \\quad x > 3 \\end{cases}$$\nIf $f(x)$ is continuous for all $x$, $f'(1)$ does not exist, and $f'(x)$ is continuous at $x = 3$.\n\nMatch the values in Column-I with Column-II:\n\n| **Column-I** | **Column-II** |\n|---|---|\n| (A)  a  cannot have value | (P)  1/3 |\n| (B)  b  has value | (Q)  0 |\n| (C)  p  has value | (R)  -1 |\n| (D)  q  has value | (S)  1 |",
         "options": [
           "A $\\rightarrow$ R, B $\\rightarrow$ R, C $\\rightarrow$ S, D $\\rightarrow$ Q",
@@ -7245,271 +7693,344 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[MATCH THE COLUMN]",
         "answerKeyStr": "A->S; B->Q; C->P; D->R",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = \\begin{cases} ax(x-1) + b & ; \\quad x < 1 \\\\ x + 2 & ; \\quad 1 \\le x \\le 3 \\\\ px^2 + qx + 2 & ; \\quad x > 3 \\end{cases}$ is continuous $\\forall x \\in R$ except $x = 1$ but $|f(x)|$ is differentiable everywhere and $f'(x)$ is continuous at $x = 3$ and $|a + p + b + q| = k$, then $k =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3",
+        "correctOption": -1
       },
       {
         "questionNumber": 2,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $y = \\sin(8 \\sin^{-1} x)$ then $(1-x^2) \\frac{d^2 y}{dx^2} - x \\frac{dy}{dx} = -ky$, where $k =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "64"
+        "answerKeyStr": "64",
+        "type": "NUMERICAL",
+        "correctAnswer": "64",
+        "correctOption": -1
       },
       {
         "questionNumber": 3,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $y^2 = 4ax$, then $\\frac{d^2 y}{dx^2} = \\frac{ka^2}{y^3}$, where $k^2 =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "16"
+        "answerKeyStr": "16",
+        "type": "NUMERICAL",
+        "correctAnswer": "16",
+        "correctOption": -1
       },
       {
         "questionNumber": 4,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of values of $x, x \\in [-2, 3]$ where $f(x) = [x^2] \\sin(\\pi x)$ is discontinuous is\n(where $[\\cdot]$ denotes greatest integer function)",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "8"
+        "answerKeyStr": "8",
+        "type": "NUMERICAL",
+        "correctAnswer": "8",
+        "correctOption": -1
       },
       {
         "questionNumber": 5,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $f(x)$ is continuous and differentiable in $[-3, 9]$ and $f'(x) \\in [-2, 8] \\forall x \\in (-3, 9)$. Let $N$ be the number of divisors of the greatest possible value of $f(9) - f(-3)$, then find the sum of digits of $N$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3",
+        "correctOption": -1
       },
       {
         "questionNumber": 6,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $f(x) = \\left[ \\begin{array}{ll} \\cos x^3 & ; \\quad x < 0 \\\\ \\sin x^3 - |x^3 - 1| & ; \\quad x \\ge 0 \\end{array} \\right.$\nthen find the number of points where $g(x) = f(|x|)$ is non-differentiable.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": -1
       },
       {
         "questionNumber": 7,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = x^2 + ax + 3$ and $g(x) = x + b$, where $F(x) = \\lim_{n \\to \\infty} \\frac{f(x) + (x^2)^n g(x)}{1 + (x^2)^n}$. If $F(x)$ is continuous at $x = 1$ and $x = -1$ then find the value of $(a^2 + b^2)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "17"
+        "answerKeyStr": "17",
+        "type": "NUMERICAL",
+        "correctAnswer": "17",
+        "correctOption": -1
       },
       {
         "questionNumber": 8,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = \\begin{cases} 2-x & , \\quad -3 \\le x \\le 0 \\\\ x-2 & , \\quad 0 < x < 4 \\end{cases}$\nThen $f^{-1}(x)$ is discontinuous at $x =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": -1
       },
       {
         "questionNumber": 9,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $f(x) + 2f(1-x) = x^2 + 2 \\forall x \\in R$ and $f(x)$ is a differentiable function, then the value of $f'(8)$ is",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4",
+        "correctOption": -1
       },
       {
         "questionNumber": 10,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = \\text{signum}(x)$ and $g(x) = x(x^2 - 10x + 21)$, then the number of points of discontinuity of $f[g(x)]$ is",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3",
+        "correctOption": -1
       },
       {
         "questionNumber": 11,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\frac{d^2}{dx^2} \\left( \\frac{\\sin^4 x + \\sin^2 x + 1}{\\sin^2 x + \\sin x + 1} \\right) = a \\sin^2 x + b \\sin x + c$ then the value of $b + c - a$ is",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "NUMERICAL",
+        "correctAnswer": "7",
+        "correctOption": -1
       },
       {
         "questionNumber": 12,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $f(x) = a \\cos(\\pi x) + b$, $f'\\left(\\frac{1}{2}\\right) = \\pi$ and $\\int_{1/2}^{3/2} f(x) dx = \\frac{2}{\\pi} + 1$, then find the value of\n$-\\frac{12}{\\pi} \\left( \\sin^{-1} a + \\cos^{-1} b \\right)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": -1
       },
       {
         "questionNumber": 13,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $\\alpha(x) = f(x) - f(2x)$ and $\\beta(x) = f(x) - f(4x)$\nand $\\alpha'(1) = 5, \\alpha'(2) = 7$\nthen find the value of $\\beta'(1) - 10$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "NUMERICAL",
+        "correctAnswer": "9",
+        "correctOption": -1
       },
       {
         "questionNumber": 14,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = -4 \\cdot e^{\\frac{1-x}{2}} + \\frac{x^3}{3} + \\frac{x^2}{2} + x + 1$ and $g$ be inverse function of $f$ and $h(x) = \\frac{a + bx^{3/2}}{x^{5/4}}$,\n$h'(5) = 0$, then $\\frac{a^2}{5b^2 g'\\left(\\frac{-7}{6}\\right)} =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5",
+        "correctOption": -1
       },
       {
         "questionNumber": 15,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $y = e^{2 \\sin^{-1} x}$ then $\\frac{(x^2 - 1)y'' + xy'}{y}$ is equal to",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4",
+        "correctOption": -1
       },
       {
         "questionNumber": 16,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f$ be a continuous function on $[0, \\infty)$ such that $\\lim_{x \\to \\infty} \\left( f(x) + \\int_{0}^{x} f(t) dt \\right)$ exists. Find $\\lim_{x \\to \\infty} f(x)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "correctAnswer": "0",
+        "correctOption": -1
       },
       {
         "questionNumber": 17,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = x + \\frac{x^2}{2} + \\frac{x^3}{3} + \\frac{x^4}{4} + \\frac{x^5}{5}$ and let $g(x) = f^{-1}(x)$. Find $g'''(0)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1",
+        "correctOption": -1
       },
       {
         "questionNumber": 18,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $f(x) = \\left[ \\begin{array}{ll} \\cos x^3 & ; \\quad x < 0 \\\\ \\sin x^3 - |x^3 - 1| & ; \\quad x \\ge 0 \\end{array} \\right.$\nthen find the number of points where $g(x) = f(|x|)$ is non-differentiable.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": -1
       },
       {
         "questionNumber": 19,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f : R^+ \\to R$ be a differentiable function satisfying :\n$f(xy) = \\frac{f(x)}{y} + \\frac{f(y)}{x} \\forall x, y \\in R^+$ also $f(1) = 0; f'(1) = 1$\nfind $\\lim_{x \\to e} \\left[ \\frac{1}{f(x)} \\right]$ (where $[\\cdot]$ denotes greatest integer function).",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": -1
       },
       {
         "questionNumber": 20,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "For the curve $\\sin x + \\sin y = 1$ lying in the first quadrant there exists a constant $\\alpha$ for which\n$\\lim_{x \\to 0} x^\\alpha \\frac{d^2 y}{dx^2} = L$ (not zero), then $2\\alpha =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3",
+        "correctOption": -1
       },
       {
         "questionNumber": 21,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = x \\tan^{-1}(x^2) + x^4$. Let $f^k(x)$ denotes $k^{th}$ derivative of $f(x)$ w.r.t. $x, k \\in N$. If $f^{2m}(0) \\neq 0, m \\in N$, then $m =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": -1
       },
       {
         "questionNumber": 22,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $x = \\cos \\theta$ and $y = \\sin^3 \\theta$, then $\\left| \\frac{y d^2 y}{dx^2} + \\left( \\frac{dy}{dx} \\right)^2 \\right|$ at $\\theta = \\frac{\\pi}{2}$ is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3",
+        "correctOption": -1
       },
       {
         "questionNumber": 23,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The value of $x, x \\in (2, \\infty)$ where $f(x) = \\sqrt{x + \\sqrt{8x - 16}} + \\sqrt{x - \\sqrt{8x - 16}}$ is not differentiable is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4",
+        "correctOption": -1
       },
       {
         "questionNumber": 24,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of non differentiability points of function $f(x) = \\min \\left( [x], \\{x\\}, \\left| x - \\frac{3}{2} \\right| \\right)$ for $x \\in (0, 2)$, where $[\\cdot]$ and $\\{\\cdot\\}$ denote greatest integer function and fractional part function respectively.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
         "has_graph": false,
         "chapter": "Continuity, Differentiability and Differentiation",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3",
+        "correctOption": -1
       }
     ]
   },
@@ -7520,7 +8041,7 @@ window.DEFAULT_BLACKBOOK = [
     "questions": [
       {
         "questionNumber": 1,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The difference between the maximum and minimum value of the function $f(x) = 3\\sin^4 x - \\cos^6 x$ is :",
         "options": [
           "$\\frac{3}{2}$",
@@ -7532,11 +8053,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "A function $y = f(x)$ has a second order derivative $f''(x) = 6(x - 1)$. If its graph passes through the point $(2, 1)$ and at that point the tangent to the graph is $y = 3x - 5$, then the function is :",
         "options": [
           "$(x - 1)^2$",
@@ -7548,11 +8070,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the subnormal at any point on the curve $y = 3^{1-k} \\cdot x^k$ is of constant length then $k$ equals to :",
         "options": [
           "$\\frac{1}{2}$",
@@ -7564,11 +8087,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $x^5 - 5qx + 4r$ is divisible by $(x - c)^2$ then which of the following must hold true $\\forall \\ q, r, c \\in R$?",
         "options": [
           "$q = r$",
@@ -7580,11 +8104,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "A spherical iron ball $10\\text{ cm}$ in radius is coated with a layer of ice of uniform thickness that melts at a rate of $50\\text{ cm}^3/\\text{min}$. When the thickness of ice is $5\\text{ cm}$, then the rate at which the thickness of ice decreases, is :",
         "options": [
           "$\\frac{1}{36\\pi}\\text{ cm/min}$",
@@ -7596,11 +8121,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\frac{(x - 1)(x - 2)}{(x - 3)(x - 4)}$, then number of local extremas for $g(x)$, where $g(x) = f(|x|)$:",
         "options": [
           "$3$",
@@ -7612,11 +8138,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Two straight roads $OA$ and $OB$ intersect at an angle $60^\\circ$. A car approaches $O$ from $A$, where $OA = 700\\text{ m}$ at a uniform speed of $20\\text{ m/s}$, Simultaneously, a runner starts running from $O$ towards $B$ at a uniform speed of $5\\text{ m/s}$. The time after start when the car and the runner are closest is :",
         "options": [
           "$10\\text{ sec}$",
@@ -7628,11 +8155,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} a - 3x & ; \\ -2 \\le x < 0 \\\\ 4x + 3 & ; \\ 0 \\le x < 1 \\end{cases}$; if $f(x)$ has smallest value at $x = 0$, then range of $a$, is :",
         "options": [
           "$(-\\infty, 3)$",
@@ -7644,11 +8172,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f(x) = \\begin{cases} 3 + |x - k| & , \\ x \\le k \\\\ a^2 - 2 + \\frac{\\sin(x - k)}{(x - k)} & , \\ x > k \\end{cases}$ has minimum at $x = k$, then :",
         "options": [
           "$a \\in R$",
@@ -7660,11 +8189,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For a certain curve $\\frac{d^2y}{dx^2} = 6x - 4$ and curve has local minimum value $5$ at $x = 1$. Let the global maximum and global minimum values, where $0 \\le x \\le 2$; are $M$ and $m$. Then the value of $(M - m)$ equals to :",
         "options": [
           "$-2$",
@@ -7676,11 +8206,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The tangent to $y = ax^2 + bx + \\frac{7}{2}$ at $(1, 2)$ is parallel to the normal at the point $(-2, 2)$ on the curve $y = x^2 + 6x + 10$. Then the value of $\\frac{a}{2} - b$ is :",
         "options": [
           "$2$",
@@ -7692,11 +8223,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $(a, b)$ be the point on the curve $9y^2 = x^3$ where normal to the curve make equal intercepts with the axis, then the value of $(a + b)$ is :",
         "options": [
           "$0$",
@@ -7708,11 +8240,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The curve $y = f(x)$ satisfies $\\frac{d^2y}{dx^2} = 6x - 4$ and $f(x)$ has a local minimum value $5$ when $x = 1$. Then $f(0)$ is equal to :",
         "options": [
           "$1$",
@@ -7724,11 +8257,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $A$ be the point where the curve $5\\alpha^2 x^3 + 10\\alpha x^2 + x + 2y - 4 = 0$ ($\\alpha \\in R, \\alpha \\ne 0$) meets the $y$-axis, then the equation of tangent to the curve at the point where normal at $A$ meets the curve again, is :",
         "options": [
           "$x - \\alpha y + 2\\alpha = 0$",
@@ -7740,11 +8274,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The difference between the greatest and the least value of the function $f(x) = \\cos x + \\frac{1}{2}\\cos 2x - \\frac{1}{3}\\cos 3x$ is :",
         "options": [
           "$\\frac{11}{5}$",
@@ -7756,11 +8291,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The $x$ co-ordinate of the point on the curve $y = \\sqrt{x}$ which is closest to the point $(2, 1)$ is :",
         "options": [
           "$\\frac{2 + \\sqrt{3}}{2}$",
@@ -7772,11 +8308,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The tangent at a point $P$ on the curve $y = \\ln \\left( \\frac{2 + \\sqrt{4 - x^2}}{2 - \\sqrt{4 - x^2}} \\right) - \\sqrt{4 - x^2}$ meets the $y$-axis at $T$; then $PT^2$ equals to :",
         "options": [
           "$2$",
@@ -7788,11 +8325,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\int_{x^2}^{x^3} \\frac{dt}{\\ln t}$ for $x > 1$ and $g(x) = \\int_{1}^{x} (2t^2 - \\ln t)f(t)dt$ $(x > 1)$, then :",
         "options": [
           "$g$ is increasing on $(1, \\infty)$",
@@ -7804,11 +8342,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^3 + 6x^2 + ax + 2$, if $(-3, -1)$ is the largest possible interval for which $f(x)$ is decreasing function, then $a =$",
         "options": [
           "$3$",
@@ -7820,11 +8359,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\tan^{-1} \\left( \\frac{1 - x}{1 + x} \\right)$. Then difference of the greatest and least value of $f(x)$ on $[0, 1]$ is :",
         "options": [
           "$\\pi/2$",
@@ -7836,11 +8376,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integral values of $a$ for which $f(x) = x^3 + (a + 2)x^2 + 3ax + 5$ is monotonic in $\\forall \\ x \\in R$.",
         "options": [
           "$2$",
@@ -7852,11 +8393,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of critical points of $f(x) = \\left( \\int_{0}^{x} (\\cos^2 t - \\sqrt[3]{t})dt \\right) + \\frac{3}{4}x^{4/3} - \\frac{x+1}{2}$ in $[0, 6\\pi]$ is :",
         "options": [
           "$10$",
@@ -7868,11 +8410,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\min \\left( \\frac{1}{2} - \\frac{3x^2}{4}, \\frac{5x^2}{4} \\right)$ for $0 \\le x \\le 1$, then maximum value of $f(x)$ is :",
         "options": [
           "$0$",
@@ -7884,11 +8427,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} 2 - |x^2 + 5x + 6| & x \\ne -2 \\\\ b^2 + 1 & x = -2 \\end{cases}$\nHas relative maximum at $x = -2$, then complete set of values $b$ can take is :",
         "options": [
           "$|b| \\ge 1$",
@@ -7900,11 +8444,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let for the function $f(x) = \\begin{cases} \\cos^{-1} x & ; \\ -1 \\le x \\le 0 \\\\ mx + c & ; \\ 0 < x \\le 1 \\end{cases}$,\nLagrange's mean value theorem is applicable in $[-1, 1]$ then ordered pair $(m, c)$ is :",
         "options": [
           "$\\left( 1, -\\frac{\\pi}{2} \\right)$",
@@ -7916,11 +8461,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Tangents are drawn to $y = \\cos x$ from origin then points of contact of these tangents will always lie on :",
         "options": [
           "$\\frac{1}{x^2} = \\frac{1}{y^2} + 1$",
@@ -7932,11 +8478,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Least natural number $a$ for which $x + ax^{-2} > 2 \\ \\forall \\ x \\in (0, \\infty)$ is :",
         "options": [
           "$1$",
@@ -7948,11 +8495,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 28,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Angle between the tangents to the curve $y = x^2 - 5x + 6$ at points $(2, 0)$ and $(3, 0)$ is :",
         "options": [
           "$\\frac{\\pi}{6}$",
@@ -7964,11 +8512,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 29,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Difference between the greatest and least values of the function $f(x) = \\int_{0}^{x} (\\cos^2 t + \\cos t + 2)dt$ in the interval $[0, 2\\pi]$ is $K\\pi$, then $K$ is equal to :",
         "options": [
           "$1$",
@@ -7980,11 +8529,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 30,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The range of the function $f(\\theta) = \\frac{\\sin \\theta}{\\theta} + \\frac{\\theta}{\\tan \\theta}, \\theta \\in \\left(0, \\frac{\\pi}{2}\\right)$ is equal to :",
         "options": [
           "$(0, \\infty)$",
@@ -7996,11 +8546,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 31,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of integers in the range of $c$ so that the equation $x^3 - 3x + c = 0$ has all its roots real and distinct is :",
         "options": [
           "$2$",
@@ -8012,11 +8563,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 32,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\int e^x (x - 1)(x - 2)dx$. Then $f(x)$ decreases in the interval :",
         "options": [
           "$(2, \\infty)$",
@@ -8028,11 +8580,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 33,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the cubic polynomial $y = ax^3 + bx^2 + cx + d$ ($a, b, c, d \\in R$) has only one critical point in its entire domain and $ac = 2$, then the value of $|b|$ is :",
         "options": [
           "$\\sqrt{2}$",
@@ -8044,11 +8597,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 34,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "On the curve $y = \\frac{1}{1 + x^2}$, the point at which $\\left|\\frac{dy}{dx}\\right|$ is greatest in the first quadrant is :",
         "options": [
           "$\\left( \\frac{1}{2}, \\frac{4}{5} \\right)$",
@@ -8060,11 +8614,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 35,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = 2x, g(x) = 3\\sin x - x\\cos x$, then for $x \\in \\left(0, \\frac{\\pi}{2}\\right)$ :",
         "options": [
           "$f(x) > g(x)$",
@@ -8076,11 +8631,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 36,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\sin^{-1} \\left( \\frac{2g(x)}{1 + g(x)^2} \\right)$, then which are correct ?\n(i) $f(x)$ is decreasing if $g(x)$ is increasing and $|g(x)| > 1$\n(ii) $f(x)$ is an increasing function if $g(x)$ is increasing and $|g(x)| \\le 1$\n(iii) $f(x)$ is decreasing function if $g(x)$ is decreasing and $|g(x)| > 1$",
         "options": [
           "(i) and (iii)",
@@ -8092,11 +8648,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 37,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The graph of the function $y = f(x)$ has a unique tangent at $(e^a, 0)$ through which the graph passes then $\\lim_{x \\to e^a} \\frac{\\ln(1 + 7f(x)) - \\sin(f(x))}{3f(x)}$ is equal to :",
         "options": [
           "$1$",
@@ -8108,11 +8665,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 38,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be a function such that $f'(x) = \\log_{1/3} (\\log_3 (\\sin x + a))$. The complete set of values of '$a$' for which $f(x)$ is strictly decreasing for all real values of $x$ is :",
         "options": [
           "$[4, \\infty)$",
@@ -8124,11 +8682,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 39,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = a \\ln |x| + bx^2 + x$ has extremas at $x = 1$ and $x = 3$, then :",
         "options": [
           "$a = \\frac{3}{4}, b = -\\frac{1}{8}$",
@@ -8140,11 +8699,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 40,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\begin{cases} 1 + \\sin x, & x < 0 \\\\ x^2 - x + 1, & x \\ge 0 \\end{cases}$, then :",
         "options": [
           "$f$ has a local maximum at $x = 0$",
@@ -8156,11 +8716,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 41,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $m$ and $n$ are positive integers and $f(x) = \\int_{1}^{x} (t - a)^{2n} (t - b)^{2m+1} dt, \\ a \\ne b$, then :",
         "options": [
           "$x = b$ is a point of local minimum",
@@ -8172,11 +8733,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 42,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For any real $\\theta$, the maximum value of $\\cos^2(\\cos \\theta) + \\sin^2(\\sin \\theta)$ is :",
         "options": [
           "$1$",
@@ -8188,11 +8750,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 43,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the tangent at $P$ of the curve $y^2 = x^3$ intersects the curve again at $Q$ and the straight line $OP, OQ$ have inclinations $\\alpha, \\beta$ where $O$ is origin, then $\\left( \\frac{\\tan \\alpha}{\\tan \\beta} \\right)$ has the value, equals to :",
         "options": [
           "$-1$",
@@ -8204,11 +8767,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 44,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $x + 4y = 14$ is a normal to the curve $y^2 = \\alpha x^3 - \\beta$ at $(2, 3)$, then value of $\\alpha + \\beta$ is :",
         "options": [
           "9",
@@ -8220,11 +8784,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 45,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The tangent to the curve $y = e^{kx}$ at a point $(0, 1)$ meets the x-axis at $(a, 0)$ where $a \\in [-2, -1]$, then $k \\in$ :",
         "options": [
           "$\\left[-\\frac{1}{2}, 0\\right]$",
@@ -8236,11 +8801,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 46,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which of the following graph represent the function $f(x) = \\int_0^{\\sqrt{x}} e^{-\\frac{u^2}{x}} du$, for $x > 0$ and $f(0) = 0$?",
         "options": [
           "Graph (a)",
@@ -8252,11 +8818,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 47,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = (x - a)(x - b)(x - c)$ be a real valued function where $a < b < c \\ (a, b, c \\in \\mathbb{R})$ such that $f''(\\alpha) = 0$. Then if $\\alpha \\in (c_1, c_2)$, which one of the following is correct ?",
         "options": [
           "$a < c_1 < b$ and $b < c_2 < c$",
@@ -8268,11 +8835,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 48,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f(x) = x^6 - x - 1, x \\in [1, 2]$. Consider the following statements :\n(1) $f$ is increasing on $[1, 2]$\n(2) $f$ has a root in $[1, 2]$\n(3) $f$ is decreasing on $[1, 2]$\n(4) $f$ has no root in $[1, 2]$\nWhich of the above are correct?",
         "options": [
           "1 and 2",
@@ -8284,11 +8852,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 49,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which one of the following curves is the orthogonal trajectory of straight lines passing through a fixed point $(a, b)$?",
         "options": [
           "$x - a = k(y - b)$",
@@ -8300,11 +8869,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 50,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The function $f(x) = \\sin^3 x - m \\sin x$ is defined on open interval $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ and if assumes only 1 maximum value and only 1 minimum value on this interval. Then, which one of the following must be correct ?",
         "options": [
           "$0 < m < 3$",
@@ -8316,11 +8886,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 51,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The greatest of the numbers $1, 2^{1/2}, 3^{1/3}, 4^{1/4}, 5^{1/5}, 6^{1/6} \\text{ and } 7^{1/7}$ is :",
         "options": [
           "$2^{1/2}$",
@@ -8332,11 +8903,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 52,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $l$ be the line through $(0, 0)$ and tangent to the curve $y = x^3 + x + 16$. Then the slope of $l$ equal to :",
         "options": [
           "10",
@@ -8348,11 +8920,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 53,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The slope of the tangent at the point of inflection of $y = x^3 - 3x^2 + 6x + 2009$ is equal to :",
         "options": [
           "2",
@@ -8364,12 +8937,13 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 54,
-        "questionType": "SINGLE CORRECT",
-        "text": "Let $f$ be a real valued function with $(n + 1)$ derivatives at each point of $\\mathbb{R}$. For each pair of real numbers $a, b, a < b$, such that\n$ \\ln \\left[ \\frac{f(b) + f'(b) + \\dots + f^{(n)}(b)}{f(a) + f'(a) + \\dots + f^{(n)}(a)} \\right] = b - a $\n**Statement-1 :** There is a number $c \\in (a, b)$ for which $f^{(n+1)}(c) = f(c)$\nbecause\n**Statement-2 :** If $h(x)$ be a derivable function such that $h(p) = h(q)$ then by Rolle's theorem $h'(d) = 0; d \\in (p, q)$",
+        "questionType": "SINGLE_CORRECT",
+        "text": "Let $f$ be a real valued function with $(n + 1)$ derivatives at each point of $\\mathbb{R}$. For each pair of real numbers $a, b, a < b$, such that\n$\\ln \\left[ \\frac{f(b) + f'(b) + \\dots + f^{(n)}(b)}{f(a) + f'(a) + \\dots + f^{(n)}(a)} \\right] = b - a$\n**Statement-1 :** There is a number $c \\in (a, b)$ for which $f^{(n+1)}(c) = f(c)$\nbecause\n**Statement-2 :** If $h(x)$ be a derivable function such that $h(p) = h(q)$ then by Rolle's theorem $h'(d) = 0; d \\in (p, q)$",
         "options": [
           "Statement-1 is true, statement-2 is true and statement-2 is correct explanation for statement-1",
           "Statement-1 is true, statement-2 is true and statement-2 is not correct explanation for statement-1",
@@ -8380,11 +8954,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 55,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $g(x)$ is twice differentiable real valued function satisfying $g''(x) - 3g'(x) > 3 \\ \\forall x \\ge 0$ and $g'(0) = -1$, then $h(x) = g(x) + x \\ \\forall x > 0$ is :",
         "options": [
           "strictly increasing",
@@ -8396,11 +8971,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 56,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the straight line joining the points $(0, 3)$ and $(5, -2)$ is tangent to the curve $y = \\frac{c}{x + 1}$; then the value of $c$ is :",
         "options": [
           "2",
@@ -8412,11 +8988,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 57,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of solutions(s) of $\\ln |\\sin x| = -x^2$ if $x \\in \\left[-\\frac{\\pi}{2}, \\frac{3\\pi}{2}\\right]$ is/are :",
         "options": [
           "2",
@@ -8428,11 +9005,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 58,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The equation $\\sin^{-1} x = |x - a|$ will have atleast one solution then complete set of values of $a$ be :",
         "options": [
           "$[-1, 1]$",
@@ -8444,11 +9022,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 59,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For any real number $b$, let $f(b)$ denotes the maximum of $\\left| \\sin x + \\frac{2}{3 + \\sin x} + b \\right| \\forall x \\in \\mathbb{R}$.\nThen the minimum value of $f(b) \\forall b \\in \\mathbb{R}$ is :",
         "options": [
           "$\\frac{1}{2}$",
@@ -8460,11 +9039,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 60,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Which of the following are correct",
         "options": [
           "$x^4 + 2x^2 - 6x + 2 = 0$ has exactly four real solution",
@@ -8476,11 +9056,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 61,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For any real number $b$, let $f(b)$ denotes the maximum of $\\left| \\sin x + \\frac{2}{3 + \\sin x} + b \\right| \\forall x \\in \\mathbb{R}$. Then the minimum value of $f(b) \\forall b \\in \\mathbb{R}$ is :",
         "options": [
           "$\\frac{1}{2}$",
@@ -8492,11 +9073,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 62,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $p$ be a point on the graph of $y = \\frac{x}{1 + x^2}$, then coordinates of '$p$' such that tangent drawn to curve at $p$ has the greatest slope in magnitude is :",
         "options": [
           "$(0, 0)$",
@@ -8508,11 +9090,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 63,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : [0, 2\\pi] \\to [-3, 3]$ be a given function defined as $f(x) = 3\\cos \\frac{x}{2}$. The slope of the tangent to the curve $y = f^{-1}(x)$ at the point where the curve crosses the y-axis is :",
         "options": [
           "-1",
@@ -8524,11 +9107,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 64,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of stationary points in $[0, \\pi]$ for the function $f(x) = \\sin x + \\tan x - 2x$ is :",
         "options": [
           "0",
@@ -8540,11 +9124,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 65,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $a, b, c, d \\in \\mathbb{R}$ such that $\\frac{a + 2c}{b + 3d} + \\frac{4}{3} = 0$, then the equation $ax^3 + bx^2 + cx + d = 0$ has",
         "options": [
           "atleast one root in $(-1, 0)$",
@@ -8556,11 +9141,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 66,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f'(x) = \\phi(x)(x - 2)^2$. Where $\\phi(2) \\neq 0$ and $\\phi(x)$ is continuous at $x = 2$, then in the neighbourhood of $x = 2$",
         "options": [
           "$f$ is increasing if $\\phi(2) < 0$",
@@ -8572,11 +9158,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 67,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = x^3 - 6x^2 + ax + b$ is defined on $[1, 3]$ satisfies Rolle's theorem for $c = \\frac{2\\sqrt{3} + 1}{\\sqrt{3}}$ then",
         "options": [
           "$a = -11, b = 6$",
@@ -8588,11 +9175,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 68,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For which of the following function(s) Lagrange's mean value theorem is not applicable in $[1, 2]$?",
         "options": [
           "$f(x) = \\begin{cases} \\frac{3}{2} - x & , \\quad x < \\frac{3}{2} \\\\ \\left(\\frac{3}{2} - x\\right)^2 & , \\quad x \\ge \\frac{3}{2} \\end{cases}$",
@@ -8604,11 +9192,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 69,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the curves $\\frac{x^2}{a^2} + \\frac{y^2}{4} = 1$ and $y^2 = 16x$ intersect at right angles, then :",
         "options": [
           "$a = \\pm 1$",
@@ -8620,11 +9209,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 70,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the line $x \\cos \\alpha + y \\sin \\alpha = P$ touches the curve $4x^3 = 27ay^2$, then $\\frac{P}{a} =$",
         "options": [
           "$\\cot^2 \\alpha \\cos \\alpha$",
@@ -8636,11 +9226,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[SINGLE CORRECT]"
+        "typeLabel": "[SINGLE CORRECT]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Common tangent(s) to $y = x^3$ and $x = y^3$ is/are :",
         "options": [
           "$x - y = \\frac{1}{\\sqrt{3}}$",
@@ -8654,14 +9245,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          2,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(C, D)"
       },
       {
         "questionNumber": 2,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f:[0, 8] \\to R$ be differentiable function such that $f(0) = 0$, $f(4) = 1$, $f(8) = 1$, then which of the following hold(s) good ?",
         "options": [
           "There exist some $c_1 \\in (0, 8)$ where $f'(c_1) = \\frac{1}{4}$",
@@ -8676,14 +9266,14 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(a, c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          0,
-          2,
-          3
-        ]
+          2
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, C, D)"
       },
       {
         "questionNumber": 3,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x) = \\begin{cases} \\sin^{-1}(\\sin x) & x > 0 \\\\ \\frac{\\pi}{2} & x = 0 \\\\ \\cos^{-1}(\\cos x) & x < 0 \\end{cases}$, then",
         "options": [
           "$x = 0$ is a point of maxima",
@@ -8697,14 +9287,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, c)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          2
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, C)"
       },
       {
         "questionNumber": 4,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "A function $f:R \\to R$ is given by $f(x) = \\begin{cases} x^4 \\left( 2 + \\sin\\frac{1}{x} \\right) & x \\ne 0 \\\\ 0 & x = 0 \\end{cases}$, then",
         "options": [
           "$f$ has a continuous derivative $\\forall\\ x \\in R$",
@@ -8718,14 +9307,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, c)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          2
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, C)"
       },
       {
         "questionNumber": 5,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $|f''(x)| \\le 1\\ \\forall\\ x \\in R$, and $f(0) = 0 = f'(0)$, then which of the following can not be true ?",
         "options": [
           "$f\\left(-\\frac{1}{2}\\right) = \\frac{1}{6}$",
@@ -8740,15 +9328,15 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(a, b, c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          0,
           1,
-          2,
-          3
-        ]
+          2
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, B, C, D)"
       },
       {
         "questionNumber": 6,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f:[-3, 4] \\to R$ such that $f''(x) > 0$ for all $x \\in [-3, 4]$, then which of the following are always true ?",
         "options": [
           "$f(x)$ has a relative minimum on $(-3, 4)$",
@@ -8763,14 +9351,14 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(b, c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          1,
-          2,
-          3
-        ]
+          2
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(B, C, D)"
       },
       {
         "questionNumber": 7,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x)$ be twice differentiable function such that $f''(x) > 0$ in $[0, 2]$. Then :",
         "options": [
           "$f(0) + f(2) = 2f(c)$, for atleast one $c, c \\in (0, 2)$",
@@ -8784,14 +9372,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          2,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(C, D)"
       },
       {
         "questionNumber": 8,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $g(x)$ be a cubic polynomial having local maximum at $x = -1$ and $g'(x)$ has a local minimum at $x = 1$. If $g(-1) = 10, g(3) = -22$, then :",
         "options": [
           "perpendicular distance between its two horizontal tangents is $12$",
@@ -8805,14 +9392,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(b, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          1,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(B, D)"
       },
       {
         "questionNumber": 9,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The function $f(x) = 2x^3 - 3(\\lambda + 2)x^2 + 12\\lambda x + 5$ has a maximum and a minimum for :",
         "options": [
           "$\\lambda \\in (-4, \\infty)$",
@@ -8827,15 +9413,15 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(a, b, c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          0,
           1,
-          2,
-          3
-        ]
+          2
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, B, C, D)"
       },
       {
         "questionNumber": 10,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The function $f(x) = 1 + x\\ln\\left(x + \\sqrt{1 + x^2}\\right) - \\sqrt{1 + x^2}$ is :",
         "options": [
           "strictly increasing $\\forall\\ x \\in (0, 1)$",
@@ -8849,14 +9435,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, c)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          2
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, C)"
       },
       {
         "questionNumber": 11,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $m$ and $n$ be positive integers and $x, y > 0$ and $x + y = k$, where $k$ is constant. Let $f(x, y) = x^m y^n$, then :",
         "options": [
           "$f(x, y)$ is maximum when $x = \\frac{mk}{m+n}$",
@@ -8870,14 +9455,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, D)"
       },
       {
         "questionNumber": 12,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The straight line which is both tangent and normal to the curve $x = 3t^2, y = 2t^3$ is :",
         "options": [
           "$y + \\sqrt{3}(x - 1) = 0$",
@@ -8891,14 +9475,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          2,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(C, D)"
       },
       {
         "questionNumber": 13,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "A curve is such that the ratio of the subnormal at any point to the sum of its co-ordinates is equal to the ratio of the ordinate of this point to its abscissa. If the curve passes through $(1, 0)$, then possible equation of the curve(s) is :",
         "options": [
           "$y = x \\ln x$",
@@ -8912,14 +9495,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, D)"
       },
       {
         "questionNumber": 14,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "A parabola of the form $y = ax^2 + bx + c\\ (a > 0)$ intersects the graph of $f(x) = \\frac{1}{x^2 - 4}$. The number of possible distinct intersection(s) of these graph can be :",
         "options": [
           "$0$",
@@ -8934,14 +9516,14 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(b, c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          1,
-          2,
-          3
-        ]
+          2
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(B, C, D)"
       },
       {
         "questionNumber": 15,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Gradient of the line passing through the point $(2, 8)$ and touching the curve $y = x^3$, can be :",
         "options": [
           "$3$",
@@ -8955,14 +9537,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, D)"
       },
       {
         "questionNumber": 16,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The equation $x + \\cos x = a$ has exactly one positive root, then :",
         "options": [
           "$a \\in (0, 1)$",
@@ -8976,14 +9557,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(b, c)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          1,
-          2
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(B, C)"
       },
       {
         "questionNumber": 17,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Given that $f(x)$ is a non-constant linear function. Then the curves :",
         "options": [
           "$y = f(x)$ and $y = f^{-1}(x)$ are orthogonal",
@@ -8997,14 +9577,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(b, c)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          1,
-          2
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(B, C)"
       },
       {
         "questionNumber": 18,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\int_0^x e^{t^3} (t^2 - 1) t^2 (t + 1)^{2011} (t - 2)^{2012} dt$ at $(x > 0)$ then :",
         "options": [
           "The number of point of inflections is atleast 1",
@@ -9018,14 +9597,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, D)"
       },
       {
         "questionNumber": 19,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\sin x + ax + b$. Then $f(x) = 0$ has :",
         "options": [
           "only one real root which is positive if $a > 1, b < 0$",
@@ -9040,14 +9618,14 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(a, b, c)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          0,
-          1,
-          2
-        ]
+          1
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, B, C)"
       },
       {
         "questionNumber": 20,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Which of the following graphs represent function whose derivatives have a maximum in the interval $(0, 1)$ ?",
         "options": [
           "Graph (a)",
@@ -9061,14 +9639,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, b)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          1
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, B)"
       },
       {
         "questionNumber": 21,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Consider $f(x) = \\sin^5 x + \\cos^5 x - 1, x \\in \\left[0, \\frac{\\pi}{2}\\right]$, which of the following is/are correct ?",
         "options": [
           "$f$ is strictly decreasing in $\\left[0, \\frac{\\pi}{4}\\right]$",
@@ -9083,15 +9660,15 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(a, b, c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          0,
           1,
-          2,
-          3
-        ]
+          2
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, B, C, D)"
       },
       {
         "questionNumber": 22,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\begin{cases} x^{2\\alpha+1} \\ln x & x > 0 \\\\ 0 & x = 0 \\end{cases}$\\nIf $f(x)$ satisfies rolle's theorem in interval $[0, 1]$, then $\\alpha$ can be :",
         "options": [
           "$-\\frac{1}{2}$",
@@ -9105,14 +9682,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(b, c)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          1,
-          2
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(B, C)"
       },
       {
         "questionNumber": 23,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Which of the following is/are true for the function $f(x) = \\int_0^x \\frac{\\cos t}{t} dt\\ (x > 0)$ ?",
         "options": [
           "$f(x)$ is monotonically increasing in $\\left((4n - 1)\\frac{\\pi}{2}, (4n + 1)\\frac{\\pi}{2}\\right) \\forall\\ n \\in N$",
@@ -9127,14 +9703,14 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(a, b, c)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          0,
-          1,
-          2
-        ]
+          1
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, B, C)"
       },
       {
         "questionNumber": 24,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $F(x) = (f(x))^2 + (f'(x))^2, F(0) = 6$, where $f(x)$ is a thrice differentiable function such that $|f(x)| \\le 1\\ \\forall\\ x \\in [-1, 1]$, then choose the correct statement(s)",
         "options": [
           "there is atleast one point in each of the intervals $(-1, 0)$ and $(0, 1)$ where $|f'(x)| \\le 2$",
@@ -9149,14 +9725,14 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(a, b, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          0,
-          1,
-          3
-        ]
+          1
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, B, D)"
       },
       {
         "questionNumber": 25,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = \\begin{cases} x^3 + x^2 - 10x & -1 \\le x < 0 \\\\ \\sin x & 0 \\le x < \\frac{\\pi}{2} \\\\ 1 + \\cos x & \\frac{\\pi}{2} \\le x \\le \\pi \\end{cases}$\\nthen $f(x)$ has :",
         "options": [
           "local maximum at $x = \\frac{\\pi}{2}$",
@@ -9170,14 +9746,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, D)"
       },
       {
         "questionNumber": 26,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Minimum distance between the curves $y^2 = x - 1$ and $x^2 = y - 1$ is equal to :",
         "options": [
           "$\\frac{\\sqrt{2}}{4}$",
@@ -9191,13 +9766,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(b)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          1
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(B)"
       },
       {
         "questionNumber": 27,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "For the equation $\\frac{e^{-x}}{1 + x} = \\lambda$ which of the following statement(s) is/are correct ?",
         "options": [
           "When $\\lambda \\in (0, \\infty)$ equation has 2 real and distinct roots",
@@ -9212,14 +9787,14 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(b, c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          1,
-          2,
-          3
-        ]
+          2
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(B, C, D)"
       },
       {
         "questionNumber": 28,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $y = mx + 5$ is a tangent to the curve $x^3 y^3 = ax^3 + by^3$ at $P(1, 2)$, then",
         "options": [
           "$a + b = \\frac{18}{5}$",
@@ -9233,14 +9808,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "answerKeyStr": "(a, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
-        "correctOptionsArray": [
-          0,
-          3
-        ]
+        "correctOptionsArray": [],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, D)"
       },
       {
         "questionNumber": 29,
-        "questionType": "ONE OR MORE THAN ONE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $(f(x) - 1)(x^2 + x + 1)^2 - (f(x) + 1)(x^4 + x^2 + 1) = 0$\\n$\\forall\\ x \\in R - \\{0\\}$ and $f(x) \\ne \\pm 1$, then which of the following statement(s) is/are correct ?",
         "options": [
           "$|f(x)| \\ge 2\\ \\forall\\ x \\in R - \\{0\\}$",
@@ -9255,15 +9829,15 @@ window.DEFAULT_BLACKBOOK = [
         "answerKeyStr": "(a, b, c, d)",
         "typeLabel": "[ONE OR MORE THAN ONE CORRECT]",
         "correctOptionsArray": [
-          0,
           1,
-          2,
-          3
-        ]
+          2
+        ],
+        "type": "MULTI_CORRECT",
+        "correctAnswer": "(A, B, C, D)"
       },
       {
         "questionNumber": 1,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 2**\n\nLet $y = f(x)$ such that $xy = x + y + 1$, $x \\in R - \\{1\\}$ and $g(x) = x f(x)$\n\nThe minimum value of $g(x)$ is :",
         "options": [
           "$3 - \\sqrt{2}$",
@@ -9275,11 +9849,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 2**\n\nLet $y = f(x)$ such that $xy = x + y + 1$, $x \\in R - \\{1\\}$ and $g(x) = x f(x)$\n\nThere exists two values of $x$, $x_1$ and $x_2$ where $g'(x) = \\frac{1}{2}$, then $|x_1| + |x_2| =$",
         "options": [
           "$1$",
@@ -9291,11 +9866,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 3 to 5**\n\nLet $f(x) = \\begin{cases} 1-x & ; 0 \\le x \\le 1 \\\\ 0 & ; 1 < x \\le 2 \\\\ (2-x)^2 & ; 2 < x \\le 3 \\end{cases}$ and $g(x) = \\int_0^x f(t)dt$.\n\nLet the tangent to the curve $y = g(x)$ at point $P$ whose abscissa is $\\frac{5}{2}$ cuts x-axis in point $Q$.\n\nLet the perpendicular from point $Q$ on x-axis meets the curve $y = g(x)$ in point $R$.\n\n$g(1) =$",
         "options": [
           "$0$",
@@ -9307,11 +9883,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 3 to 5**\n\nLet $f(x) = \\begin{cases} 1-x & ; 0 \\le x \\le 1 \\\\ 0 & ; 1 < x \\le 2 \\\\ (2-x)^2 & ; 2 < x \\le 3 \\end{cases}$ and $g(x) = \\int_0^x f(t)dt$.\n\nLet the tangent to the curve $y = g(x)$ at point $P$ whose abscissa is $\\frac{5}{2}$ cuts x-axis in point $Q$.\n\nLet the perpendicular from point $Q$ on x-axis meets the curve $y = g(x)$ in point $R$.\n\nEquation of tangent to the curve $y = g(x)$ at $P$ is :",
         "options": [
           "$3y = 12x + 1$",
@@ -9323,11 +9900,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 3 to 5**\n\nLet $f(x) = \\begin{cases} 1-x & ; 0 \\le x \\le 1 \\\\ 0 & ; 1 < x \\le 2 \\\\ (2-x)^2 & ; 2 < x \\le 3 \\end{cases}$ and $g(x) = \\int_0^x f(t)dt$.\n\nLet the tangent to the curve $y = g(x)$ at point $P$ whose abscissa is $\\frac{5}{2}$ cuts x-axis in point $Q$.\n\nLet the perpendicular from point $Q$ on x-axis meets the curve $y = g(x)$ in point $R$.\n\nIf $\\theta$ be the angle between tangents to the curve $y = g(x)$ at point $P$ and $R$; then $\\tan \\theta$ equals to :",
         "options": [
           "$\\frac{5}{6}$",
@@ -9339,11 +9917,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 6 to 8**\n\nLet $f(x)  0 \\; \\forall x \\in (0, \\infty)$ also $f(0) = 0$. Again $f'(x)  0 \\; \\forall x \\in (-1, \\infty)$ also $f'(-1) = 0$ given $\\lim_{x \\to -\\infty} f(x) = 0$ and $\\lim_{x \\to \\infty} f(x) = \\infty$ and function is twice differentiable.\n\nIf $f''(x) > 0 \\; \\forall x \\in (-1, \\infty)$ and $f'(0) = 1$ then number of solutions of equation $f(x) = x$ is :",
         "options": [
           "$2$",
@@ -9355,11 +9934,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 6 to 8**\n\nLet $f(x)  0 \\; \\forall x \\in (0, \\infty)$ also $f(0) = 0$. Again $f'(x)  0 \\; \\forall x \\in (-1, \\infty)$ also $f'(-1) = 0$ given $\\lim_{x \\to -\\infty} f(x) = 0$ and $\\lim_{x \\to \\infty} f(x) = \\infty$ and function is twice differentiable.\n\nIf $f''(x) < 0 \\; \\forall x \\in (0, \\infty)$ and $f'(0) = 1$ then number of solutions of equation $f(x) = x^2$ is :",
         "options": [
           "$1$",
@@ -9371,11 +9951,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 6 to 8**\n\nLet $f(x)  0 \\; \\forall x \\in (0, \\infty)$ also $f(0) = 0$. Again $f'(x)  0 \\; \\forall x \\in (-1, \\infty)$ also $f'(-1) = 0$ given $\\lim_{x \\to -\\infty} f(x) = 0$ and $\\lim_{x \\to \\infty} f(x) = \\infty$ and function is twice differentiable.\n\nThe minimum number of points where $f''(x)$ is zero is :",
         "options": [
           "$1$",
@@ -9387,11 +9968,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 9 to 11**\n\nIn the given figure graph of :\n\n$y = p(x) = x^n + a_1 x^{n-1} + a_2 x^{n-2} + ...... + a_n$ is given.\n\n[Graph description: A continuous curve plotted on a Cartesian coordinate system, with marked points at (-2, 2), (-1, 1), (0, 2), (1, 0), (2, 0), and (3, 2). The curve decreases to a local minimum at (-1, 1), increases to a local maximum at (0, 2), decreases to cross the x-axis at (1, 0), reaches a local minimum below the x-axis, increases to cross the x-axis at (2, 0), and continues upward through (3, 2).]\n\nThe product of all imaginary roots of $p(x) = 0$ is :",
         "options": [
           "$-2$",
@@ -9403,11 +9985,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 9 to 11**\n\nIn the given figure graph of :\n\n$y = p(x) = x^n + a_1 x^{n-1} + a_2 x^{n-2} + ...... + a_n$ is given.\n\n[Graph description: A continuous curve plotted on a Cartesian coordinate system, with marked points at (-2, 2), (-1, 1), (0, 2), (1, 0), (2, 0), and (3, 2). The curve decreases to a local minimum at (-1, 1), increases to a local maximum at (0, 2), decreases to cross the x-axis at (1, 0), reaches a local minimum below the x-axis, increases to cross the x-axis at (2, 0), and continues upward through (3, 2).]\n\nIf $p(x) + k = 0$ has 4 distinct real roots $\\alpha, \\beta, \\gamma, \\delta$ then $[\\alpha] + [\\beta] + [\\gamma] + [\\delta]$, (where $[\\cdot]$ denotes greatest integer function) is equal to :",
         "options": [
           "$-1$",
@@ -9419,11 +10002,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 9 to 11**\n\nIn the given figure graph of :\n\n$y = p(x) = x^n + a_1 x^{n-1} + a_2 x^{n-2} + ...... + a_n$ is given.\n\n[Graph description: A continuous curve plotted on a Cartesian coordinate system, with marked points at (-2, 2), (-1, 1), (0, 2), (1, 0), (2, 0), and (3, 2). The curve decreases to a local minimum at (-1, 1), increases to a local maximum at (0, 2), decreases to cross the x-axis at (1, 0), reaches a local minimum below the x-axis, increases to cross the x-axis at (2, 0), and continues upward through (3, 2).]\n\nThe minimum number of real roots of equation $(p'(x))^2 + p(x)p''(x) = 0$ are :",
         "options": [
           "$3$",
@@ -9435,11 +10019,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 12 to 14**\n\nThe differentiable function $y = f(x)$ has a property that the chord joining any two points $A(x_1, f(x_1))$ and $B(x_2, f(x_2))$ always intersects y-axis at $(0, 2x_1 x_2)$. Given that $f(1) = -1$, then :\n\n$\\int_0^{1/2} f(x) dx$ is equal to :",
         "options": [
           "$\\frac{1}{6}$",
@@ -9451,11 +10036,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 3,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 12 to 14**\n\nThe differentiable function $y = f(x)$ has a property that the chord joining any two points $A(x_1, f(x_1))$ and $B(x_2, f(x_2))$ always intersects y-axis at $(0, 2x_1 x_2)$. Given that $f(1) = -1$, then :\n\nThe largest interval in which $f(x)$ is monotonically increasing, is :",
         "options": [
           "$\\left(-\\infty, \\frac{1}{2}\\right]$",
@@ -9467,11 +10053,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 12 to 14**\n\nThe differentiable function $y = f(x)$ has a property that the chord joining any two points $A(x_1, f(x_1))$ and $B(x_2, f(x_2))$ always intersects y-axis at $(0, 2x_1 x_2)$. Given that $f(1) = -1$, then :\n\nIn which of the following intervals, the Rolle's theorem is applicable to the function $F(x) = f(x) + x$ ?",
         "options": [
           "$[-1, 0]$",
@@ -9483,11 +10070,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 1,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 15 to 16**\n\nLet $f(x) = 1 + \\int_0^1 (xe^y + ye^x) f(y) dy$ where $x$ and $y$ are independent variables.\n\nIf complete solution set of 'x' for which function $h(x) = f(x) + 3x$ is strictly increasing is $(-\\infty, k)$ then $\\left[\\frac{4}{3} e^k\\right]$ equals to : (where $[\\cdot]$ denotes greatest integer function):",
         "options": [
           "$1$",
@@ -9499,11 +10087,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 2,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "COMPREHENSION TYPE",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 15 to 16**\n\nLet $f(x) = 1 + \\int_0^1 (xe^y + ye^x) f(y) dy$ where $x$ and $y$ are independent variables.\n\nIf acute angle of intersection of the curves $\\frac{x}{2} + \\frac{y}{3} + \\frac{1}{3} = 0$ and $y = f(x)$ be $\\theta$ then $\\tan \\theta$ equals to :",
         "options": [
           "$\\frac{8}{25}$",
@@ -9515,11 +10104,12 @@ window.DEFAULT_BLACKBOOK = [
         "has_graph": false,
         "chapter": "Application of Derivatives",
         "correctOption": 0,
-        "typeLabel": "[COMPREHENSION TYPE]"
+        "typeLabel": "[COMPREHENSION TYPE]",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Column-I gives pair of curves and column-II gives the angle $\\theta$ between the curves at their intersection point.\n\n| **Column-I** | **Column-II** |\n|---|---|\n| (A) y = \\sin x, y = \\cos x | (P) \\frac{\\pi}{4} |\n| (B) x^2 = 4y, y = \\frac{8}{x^2+4} | (Q) \\frac{\\pi}{2} |\n| (C) \\frac{x^2}{18} + \\frac{y^2}{8} = 1, x^2 - y^2 = 5 | (R) \\tan^{-1} 3 |\n| (D) xy = 1, x^2 - y^2 = 5 | (S) \\tan^{-1} 5 |\n|  | (T) \\tan^{-1}(2\\sqrt{2}) |",
         "options": [],
         "exerciseName": "Exercise-4 : Matching Type Problems",
@@ -9527,11 +10117,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "A \\rightarrow T; B \\rightarrow R; C \\rightarrow Q; D \\rightarrow Q",
         "typeLabel": "[MATCHING TYPE]",
-        "correctAnswer": "A \\rightarrow T; B \\rightarrow R; C \\rightarrow Q; D \\rightarrow Q"
+        "correctAnswer": "A \\rightarrow T; B \\rightarrow R; C \\rightarrow Q; D \\rightarrow Q",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| **Column-I** | **Column-II** |\n|---|---|\n| (A) (\\sin^{-1} x)^{\\cos^{-1} x} - (\\cos^{-1} x)^{\\sin^{-1} x} \\forall \\ x \\in (\\cos 1, \\sin 1) | (P) Always positive |\n| (B) (\\cos x)^{\\sin x} - (\\sin x)^{\\cos x} \\forall \\ x \\in \\left(\\frac{\\pi}{4}, \\frac{\\pi}{2}\\right) | (Q) Always negative |\n| (C) (\\sin x)^{\\sin x} - (\\cos x)^{\\sin x} \\forall \\ x \\in \\left(0, \\frac{\\pi}{2}\\right) | (R) May be positive or negative for some values of x |\n| (D) (\\ln(\\ln x))^{\\ln(\\ln x)} - (\\ln x)^{\\ln x} \\forall \\ x \\in (e^e, \\infty) | (S) May result in zero for some of values of x |\n|  | (T) Indeterminate |",
         "options": [],
         "exerciseName": "Exercise-4 : Matching Type Problems",
@@ -9539,11 +10130,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "A \\rightarrow R, S; B \\rightarrow Q; C \\rightarrow R, S; D \\rightarrow Q",
         "typeLabel": "[MATCHING TYPE]",
-        "correctAnswer": "A \\rightarrow R, S; B \\rightarrow Q; C \\rightarrow R, S; D \\rightarrow Q"
+        "correctAnswer": "A \\rightarrow R, S; B \\rightarrow Q; C \\rightarrow R, S; D \\rightarrow Q",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\frac{x^3 - 4}{(x-1)^3} \\forall x \\neq 1, g(x) = \\frac{x^4 - 2x^2}{4} \\forall x \\in \\mathbb{R}, h(x) = \\frac{x^3 + 4}{(x+1)^3} \\forall x \\neq -1$,\n\n| **Column-I** | **Column-II** |\n|---|---|\n| (A) The number of possible distinct real roots of equation f(x) = c where c \\ge 4 can be | (P) 0 |\n| (B) The number of possible distinct real roots of equation g(x) = c , where c \\ge 0 can be | (Q) 1 |\n| (C) The number of possible distinct real roots of equation h(x) = c , where c \\ge 1 can be | (R) 2 |\n| (D) The number of possible distinct real roots of equation g(x) = c where -1 < c < 0 can be | (S) 3 |\n|  | (T) 4 |",
         "options": [],
         "exerciseName": "Exercise-4 : Matching Type Problems",
@@ -9551,11 +10143,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "A \\rightarrow Q, R; B \\rightarrow R, S; C \\rightarrow Q, R, S; D \\rightarrow P, R, T",
         "typeLabel": "[MATCHING TYPE]",
-        "correctAnswer": "A \\rightarrow Q, R; B \\rightarrow R, S; C \\rightarrow Q, R, S; D \\rightarrow P, R, T"
+        "correctAnswer": "A \\rightarrow Q, R; B \\rightarrow R, S; C \\rightarrow Q, R, S; D \\rightarrow P, R, T",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| **Column-I** | **Column-II** |\n|---|---|\n| (A) If \\alpha, \\beta, \\gamma are roots of x^3 - 3x^2 + 2x + 4 = 0 and y = 1 + \\frac{\\alpha}{x-\\alpha} + \\frac{\\beta x}{(x-\\alpha)(x-\\beta)} + \\frac{\\gamma x^2}{(x-\\alpha)(x-\\beta)(x-\\gamma)} then value of y at x = 2 is : | (P) 2 |\n| (B) If x^3 + ax + 1 = 0 and x^4 + ax + 1 = 0 have a common roots then the value of |a| can be equal to | (Q) 3 |\n| (C) The number of local maximas of the function x^2 + 4\\cos x + 5 is more than | (R) 4 |\n| (D) If f(x) = 2|x|^3 + 3x^2 - 12|x| + 1 , where x \\in [-1, 2] then greatest value of f(x) is more than | (S) 5 |\n|  | (T) 0 |",
         "options": [],
         "exerciseName": "Exercise-4 : Matching Type Problems",
@@ -9563,11 +10156,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "A \\rightarrow P; B \\rightarrow P; C \\rightarrow T; D \\rightarrow P, Q, R, T",
         "typeLabel": "[MATCHING TYPE]",
-        "correctAnswer": "A \\rightarrow P; B \\rightarrow P; C \\rightarrow T; D \\rightarrow P, Q, R, T"
+        "correctAnswer": "A \\rightarrow P; B \\rightarrow P; C \\rightarrow T; D \\rightarrow P, Q, R, T",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| **Column-I** | **Column-II** |\n|---|---|\n| (A) Maximum value of f(x) = \\log_2\\left(\\frac{4}{\\sqrt{x+2} + \\sqrt{2-x}}\\right) | (P) 0 |\n| (B) The value of \\left[4 \\sum_{n=1}^\\infty \\cot^{-1}\\left(1 + \\sum_{k=1}^n 2k\\right)\\right] = ([.] represent greatest integer function) | (Q) 1 |\n| (C) Let f(x) = x \\sin \\pi x, x > 0 then number of points in (0, 2) where f'(x) vanishes, is | (R) 2 |\n| (D) \\lim_{x \\to 0^+} \\left[\\frac{x}{e^x - 1}\\right] = ([.] represent greatest integer function) | (S) 3 |",
         "options": [],
         "exerciseName": "Exercise-4 : Matching Type Problems",
@@ -9575,11 +10169,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "A \\rightarrow Q; B \\rightarrow S; C \\rightarrow R; D \\rightarrow P",
         "typeLabel": "[MATCHING TYPE]",
-        "correctAnswer": "A \\rightarrow Q; B \\rightarrow S; C \\rightarrow R; D \\rightarrow P"
+        "correctAnswer": "A \\rightarrow Q; B \\rightarrow S; C \\rightarrow R; D \\rightarrow P",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider the function $f(x) = \\frac{\\ln x}{8} - ax + x^2$ and $a \\ge 0$ is a real constant :\n\n| **Column-I** | **Column-II** |\n|---|---|\n| (A) f(x) gives a local maxima at | (P) a = 1; x = \\frac{1}{4} |\n| (B) f(x) gives a local minima at | (Q) a > 1; x = \\frac{a - \\sqrt{a^2 - 1}}{4} |\n| (C) f(x) gives a point of inflection for | (R) 0 \\le a < 1 |\n| (D) f(x) is strictly increasing for all x \\in \\mathbb{R}^+ | (S) a > 1; x = \\frac{a + \\sqrt{a^2 - 1}}{4} |",
         "options": [],
         "exerciseName": "Exercise-4 : Matching Type Problems",
@@ -9587,11 +10182,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "A \\rightarrow Q; B \\rightarrow S; C \\rightarrow P; D \\rightarrow R",
         "typeLabel": "[MATCHING TYPE]",
-        "correctAnswer": "A \\rightarrow Q; B \\rightarrow S; C \\rightarrow P; D \\rightarrow R"
+        "correctAnswer": "A \\rightarrow Q; B \\rightarrow S; C \\rightarrow P; D \\rightarrow R",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "The function $f(x) = \\sqrt{ax^3 + bx^2 + cx + d}$ has its non-zero local minimum and maximum values at $x = -2$ and $x = 2$ respectively. If '$a$' is one of the root of $x^2 - x - 6 = 0$, then match the following :\n\n| **Column-I** | **Column-II** |\n|---|---|\n| (A) The value of ' a ' is | (P) 0 |\n| (B) The value of ' b ' is | (Q) 24 |\n| (C) The value of ' c ' is | (R) Greater than 32 |\n| (D) The value of ' d ' is | (S) -2 |",
         "options": [],
         "exerciseName": "Exercise-4 : Matching Type Problems",
@@ -9599,11 +10195,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "A \\rightarrow S; B \\rightarrow P; C \\rightarrow Q; D \\rightarrow R",
         "typeLabel": "[MATCHING TYPE]",
-        "correctAnswer": "A \\rightarrow S; B \\rightarrow P; C \\rightarrow Q; D \\rightarrow R"
+        "correctAnswer": "A \\rightarrow S; B \\rightarrow P; C \\rightarrow Q; D \\rightarrow R",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| **Column-I** | **Column-II** |\n|---|---|\n| (A) The ratio of altitude to the radius of the cylinder of maximum volume that can be inscribed in a given sphere is | (P) \\frac{1}{\\sqrt{2}} |\n| (B) The ratio of radius to the altitude of the cone of the greatest volume which can be inscribed in a given sphere is | (Q) \\sqrt{2} |\n| (C) The cone circumscribing the sphere of radius ' r ' has the minimum volume if its semi vertical angle is \\theta , then 33\\sin\\theta = | (R) \\frac{32}{3} |\n| (D) The greatest value of x^3y^4 if 2x + 3y = 7, x \\ge 0, y \\ge 0 is | (S) 11 |",
         "options": [],
         "exerciseName": "Exercise-4 : Matching Type Problems",
@@ -9611,11 +10208,12 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "A \\rightarrow Q; B \\rightarrow P; C \\rightarrow S; D \\rightarrow R",
         "typeLabel": "[MATCHING TYPE]",
-        "correctAnswer": "A \\rightarrow Q; B \\rightarrow P; C \\rightarrow S; D \\rightarrow R"
+        "correctAnswer": "A \\rightarrow Q; B \\rightarrow P; C \\rightarrow S; D \\rightarrow R",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "A conical vessel is to be prepared out of a circular sheet of metal of unit radius. In order that the vessel has maximum volume, the sectorial area that must be removed from the sheet is $A_1$ and the area of the given sheet is $A_2$. If $\\frac{A_2}{A_1} = m + \\sqrt{n}$, where $m, n \\in N$, then $m + n$ is equal to.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9623,11 +10221,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "9",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "9"
+        "correctAnswer": "9",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 2,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "On $[1, e]$, the least and greatest values of $f(x) = x^2 \\ln x$ are $m$ and $M$ respectively, then $[\\sqrt{M} + m]$ is : (where $[\\cdot]$ denotes greatest integer function)",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9635,11 +10235,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "2",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "2"
+        "correctAnswer": "2",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 3,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $f(x) = \\frac{px}{e^x} - \\frac{x^2}{2} + x$ is a decreasing function for every $x \\le 0$. Find the least value of $p^2$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9647,11 +10249,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "1",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "1"
+        "correctAnswer": "1",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 4,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = \\begin{cases} xe^{ax} & , x \\le 0 \\\\ x + ax^2 - x^3 & , x > 0 \\end{cases}$. Where $a$ is a positive constant. The interval in which $f'(x)$ is increasing is $\\left[ \\frac{k}{a}, \\frac{a}{l} \\right]$. Then $k + l$ is equal to",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9659,11 +10263,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "1",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "1"
+        "correctAnswer": "1",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 5,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find sum of all possible values of the real parameter '$b$' if the difference between the largest and smallest values of the function $f(x) = x^2 - 2bx + 1$ in the interval $[0, 1]$ is $4$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9671,11 +10277,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "1",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "1"
+        "correctAnswer": "1",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 6,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let '$\\theta$' be the angle in radians between the curves $\\frac{x^2}{36} + \\frac{y^2}{4} = 1$ and $x^2 + y^2 = 12$. If $\\theta = \\tan^{-1}\\left( \\frac{a}{\\sqrt{3}} \\right)$; Find the value of $a$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9683,11 +10291,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "2",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "2"
+        "correctAnswer": "2",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 7,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let set of all possible values of $\\lambda$ such that $f(x) = e^{2x} - (\\lambda + 1)e^x + 2x$ is monotonically increasing for $\\forall x \\in R$ is $(-\\infty, k]$. Find the value of $k$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9695,11 +10305,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "3",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "3"
+        "correctAnswer": "3",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 8,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $a, b, c$ and $d$ be non-negative real number such that $a^5 + b^5 \\le 1$ and $c^5 + d^5 \\le 1$. Find the maximum value of $a^2c^3 + b^2d^3$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9707,11 +10319,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "1",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "1"
+        "correctAnswer": "1",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 9,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "There is a point $(p, q)$ on the graph of $f(x) = x^2$ and a point $(r, s)$ on the graph of $g(x) = -8/x$, where $p > 0$ and $r > 0$. If the line through $(p, q)$ and $(r, s)$ is also tangent to both the curves at these points respectively, then find the value of $(p + r)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9719,11 +10333,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "5",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "5"
+        "correctAnswer": "5",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 10,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "$f(x) = \\max| 2 \\sin y - x |$ where $y \\in R$ then determine the minimum value of $f(x)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9731,11 +10347,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "2",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "2"
+        "correctAnswer": "2",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 11,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = \\int_0^x ((a-1)(t^2+t+1)^2 - (a+1)(t^4+t^2+1)) dt$. Then the total number of integral values of '$a$' for which $f'(x) = 0$ has no real roots is",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9743,11 +10361,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "3",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "3"
+        "correctAnswer": "3",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 12,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of real roots of the equation $x^{2013} + e^{2014x} = 0$ is",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9755,11 +10375,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "1",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "1"
+        "correctAnswer": "1",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 13,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let the maximum value of expression $y = \\frac{x^4 - x^2}{x^6 + 2x^3 - 1}$ for $x > 1$ is $\\frac{p}{q}$ where $p$ and $q$ are relatively prime positive integers. Find the value of $(p + q)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9767,11 +10389,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "7",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "7"
+        "correctAnswer": "7",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 14,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The least positive value of the parameter '$a$' for which there exists atleast one line that is tangent to the graph of the curve $y = x^3 - ax$, at one point and normal to the graph at another point is $\\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find product $pq$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9779,11 +10403,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "12",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "12"
+        "correctAnswer": "12",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 15,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = x^2 + 2x - t^2$ and $f(x) = 0$ has two roots $\\alpha(t)$ and $\\beta(t)$ $(\\alpha < \\beta)$ where $t$ is a real parameter. Let $I(t) = \\int_\\alpha^\\beta f(x) dx$. If the maximum value of $I(t)$ be $\\lambda$ and $|\\lambda| = \\frac{p}{q}$ where $p$ and $q$ are relatively prime positive integers. Find the product $(pq)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9791,11 +10417,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "12",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "12"
+        "correctAnswer": "12",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 16,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "A tank contains 100 litres of fresh water. A solution containing 1 gm/litre of salt runs into the tank at the rate of 1 lit/min. The homogenised mixture is pumped out of the tank at the rate of 3 lit/min. If $T$ be the time when the amount of salt in the tank is maximum.\n\nFind $[T]$ (where $[\\cdot]$ denotes greatest integer function)",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9803,11 +10431,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "27",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "27"
+        "correctAnswer": "27",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 17,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $f(x)$ is continuous and differentiable in $[-3, 9]$ and $f'(x) \\in [-2, 8]\\ \\forall\\ x \\in (-3, 9)$. Let $N$ be the number of divisors of the greatest possible value of $f(9) - f(-3)$, then find the sum of digits of $N$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9815,11 +10445,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "3",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "3"
+        "correctAnswer": "3",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 18,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "It is given that $f(x)$ is defined on $R$ satisfying $f(1) = 1$ and for $\\forall x \\in R$,\n\n$f(x+5) \\ge f(x) + 5$ and $f(x+1) \\le f(x) + 1$. If $g(x) = f(x) + 1 - x$, then $g(2002) =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9827,11 +10459,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "1",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "1"
+        "correctAnswer": "1",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 19,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of normals to the curve $3y^3 = 4x$ which passes through the point $(0, 1)$ is",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9839,11 +10473,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "1",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "1"
+        "correctAnswer": "1",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 20,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the number of real root(s) of the equation $ae^x = 1 + x + \\frac{x^2}{2}$; where $a$ is positive constant.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9851,11 +10487,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "1",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "1"
+        "correctAnswer": "1",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 21,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = ax + \\cos 2x + \\sin x + \\cos x$ is defined for $\\forall\\ x \\in R$ and $a \\in R$ and is strictly increasing function. If the range of $a$ is $\\left[ \\frac{m}{n}, \\infty \\right)$, then find the minimum value of $(m - n)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9863,11 +10501,13 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "9",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "9"
+        "correctAnswer": "9",
+        "type": "NUMERICAL",
+        "correctOption": -1
       },
       {
         "questionNumber": 22,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $p_1$ and $p_2$ are the lengths of the perpendiculars from origin on the tangent and normal drawn to the curve $x^{2/3} + y^{2/3} = 6^{2/3}$ respectively. Find the value of $\\sqrt{4p_1^2 + p_2^2}$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -9875,7 +10515,9 @@ window.DEFAULT_BLACKBOOK = [
         "chapter": "Application of Derivatives",
         "answerKeyStr": "6",
         "typeLabel": "[SUBJECTIVE TYPE]",
-        "correctAnswer": "6"
+        "correctAnswer": "6",
+        "type": "NUMERICAL",
+        "correctOption": -1
       }
     ]
   },
@@ -9884,7 +10526,7 @@ window.DEFAULT_BLACKBOOK = [
     "questions": [
       {
         "questionNumber": 1,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Sum of values of x and y satisfying the equation $3^x - 4^y = 77; 3^{x/2} - 2^y = 7$ is :",
         "options": [
           "2",
@@ -9898,11 +10540,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\prod_{i=1}^3 (x-a_i) + \\sum_{i=1}^3 a_i - 3x$ where $a_i < a_{i+1}$ for $i = 1, 2$, then $f(x) = 0$ has :",
         "options": [
           "only one distinct real root",
@@ -9916,11 +10559,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Complete set of real values of 'a' for which the equation $x^4 - 2ax^2 + x + a^2 - a = 0$ has all its roots real :",
         "options": [
           "$[3/4, \\infty)$",
@@ -9934,11 +10578,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The cubic polynomial with leading coefficient unity all whose roots are 3 units less than the roots of the equation $x^3 - 3x^2 - 4x + 12 = 0$ is denoted as $f(x)$, then $f'(x)$ is equal to:",
         "options": [
           "$3x^2 - 12x + 5$",
@@ -9952,11 +10597,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The set of values of $k (k \\in R)$ for which the equation $x^2 - 4|x| + 3 - |k - 1| = 0$ will have exactly four real roots, is :",
         "options": [
           "$(-2, 4)$",
@@ -9970,11 +10616,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integers satisfying the inequality $\\frac{x}{x+6} \\le \\frac{1}{x}$ is :",
         "options": [
           "7",
@@ -9988,11 +10635,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The product of uncommon real roots of the two polynomials $p(x) = x^4 + 2x^3 - 8x^2 - 6x + 15$ and $q(x) = x^3 + 4x^2 - x - 10$ is:",
         "options": [
           "4",
@@ -10006,11 +10654,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\lambda_1, \\lambda_2 (\\lambda_1 > \\lambda_2)$ are two values of $\\lambda$ for which the expression $f(x, y) = x^2 + \\lambda xy + y^2 - 5x - 7y + 6$ can be resolved as a product of two linear factors, then the value of $3\\lambda_1 + 2\\lambda_2$ is :",
         "options": [
           "5",
@@ -10024,11 +10673,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\alpha, \\beta$ be the roots of the quadratic equation $ax^2 + bx + c = 0$, then the roots of the equation $a(x+1)^2 + b(x+1)(x-2) + c(x-2)^2 = 0$ are :",
         "options": [
           "$\\frac{2\\alpha+1}{\\alpha-1}, \\frac{2\\beta+1}{\\beta-1}$",
@@ -10042,11 +10692,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $a, b \\in R$ distinct numbers satisfying $|a-1| + |b-1| = |a| + |b| = |a+1| + |b+1|$, then the minimum value of $|a-b|$ is :",
         "options": [
           "3",
@@ -10060,11 +10711,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The smallest positive integer p for which expression $x^2 - 2px + 3p + 4$ is negative for atleast one real x is :",
         "options": [
           "3",
@@ -10078,11 +10730,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For $x \\in R$, the expression $\\frac{x^2+2x+c}{x^2+4x+3c}$ can take all real values if $c \\in$ :",
         "options": [
           "$(1, 2)$",
@@ -10096,11 +10749,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If 2 lies between the roots of the equation $t^2 - mt + 2 = 0$, $(m \\in R)$ then the value of $[\\frac{3|x|}{9+x^2}]^m$ is : (where [.] denotes greatest integer function)",
         "options": [
           "0",
@@ -10114,11 +10768,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integral roots of the equation $x^8 - 24x^7 - 18x^5 + 39x^2 + 1155 = 0$ is :",
         "options": [
           "0",
@@ -10132,11 +10787,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the value of $m^4 + \\frac{1}{m^4} = 119$, then the value of $|m^3 - \\frac{1}{m^3}| =$",
         "options": [
           "11",
@@ -10150,11 +10806,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the equation $ax^2 + 2bx + c = 0$ and $ax^2 + 2cx + b = 0, a \\ne 0, b \\ne c$, have a common root, then their other roots are the roots of the quadratic equation:",
         "options": [
           "$a^2x(x+1) + 4bc = 0$",
@@ -10168,11 +10825,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\cos\\alpha, \\cos\\beta$ and $\\cos\\gamma$ are the roots of the equation $9x^3 - 9x^2 - x + 1 = 0$; $\\alpha, \\beta, \\gamma \\in [0, \\pi]$ then the radius of the circle whose centre is $(\\Sigma\\alpha, \\Sigma\\cos\\alpha)$ and passing through $(2\\sin^{-1}(\\tan\\pi/4), 4)$ is:",
         "options": [
           "2",
@@ -10186,11 +10844,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For real values of x, the value of expression $\\frac{11x^2-12x-6}{x^2+4x+2}$ :",
         "options": [
           "lies between -17 and -3",
@@ -10204,11 +10863,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\frac{x+3}{x^2-x-2} \\ge \\frac{1}{x-4}$ holds for all x satisfying:",
         "options": [
           "$-2 < x < 1$ or $x > 4$",
@@ -10222,11 +10882,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $x = 4 + 3i$ (where $i = \\sqrt{-1}$), then the value of $x^3 - 4x^2 - 7x + 12$ equals:",
         "options": [
           "-88",
@@ -10240,11 +10901,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\frac{x^2+x-1}{x^2-x+1}$, then the largest value of $f(x) \\forall x \\in [-1, 3]$ is:",
         "options": [
           "$3/5$",
@@ -10258,11 +10920,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "In above problem, the range of $f(x) \\forall x \\in [-1, 1]$ is:",
         "options": [
           "$[-1, 3/5]$",
@@ -10276,11 +10939,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the roots of the equation $\\frac{1}{x+p} + \\frac{1}{x+q} = \\frac{1}{r}$ are equal in magnitude but opposite in sign, then the product of the roots is:",
         "options": [
           "$-2(p^2+q^2)$",
@@ -10294,11 +10958,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If a root of the equation $a_1x^2 + b_1x + c_1 = 0$ is the reciprocal of a root of the equation $a_2x^2 + b_2x + c_2 = 0$, then :",
         "options": [
           "$(a_1a_2 - c_1c_2)^2 = (a_1b_2 - b_1c_2)(a_2b_1 - b_2c_1)$",
@@ -10312,11 +10977,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha \\ne \\beta$ but $\\alpha^2 = 5\\alpha - 3$ and $\\beta^2 = 5\\beta - 3$, then the equation with roots $\\alpha/\\beta, \\beta/\\alpha$ is:",
         "options": [
           "$3x^2 - 25x + 3 = 0$",
@@ -10330,11 +10996,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the difference between the roots of $x^2 + ax + b = 0$ is same as that of $x^2 + bx + a = 0, a \\ne b$, then:",
         "options": [
           "$a+b+4=0$",
@@ -10348,11 +11015,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\tan\\theta_i ; i=1,2,3,4$ are the roots of equation $x^4 - x^3\\sin 2\\beta + x^2\\cos 2\\beta - x\\cos\\beta - \\sin\\beta = 0$, then $\\tan(\\theta_1+\\theta_2+\\theta_3+\\theta_4) =$",
         "options": [
           "$\\sin\\beta$",
@@ -10366,11 +11034,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 28,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $a, b, c, d$ are positive real numbers such that $a/b \\ne c/d$, then the roots of the equation: $(a^2+b^2)x^2 + 2x(ac+bd) + (c^2+d^2) = 0$ are:",
         "options": [
           "real and distinct",
@@ -10384,11 +11053,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 29,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta$ are the roots of $ax^2 + bx + c = 0$, then the equation whose roots are $2+\\alpha, 2+\\beta$, is:",
         "options": [
           "$ax^2 + x(4a-b) + 4a-2b+c = 0$",
@@ -10402,11 +11072,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 30,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Minimum possible number of positive root of the quadratic equation $x^2 - (1+\\lambda)x + \\lambda - 2 = 0, \\lambda \\in R$ :",
         "options": [
           "2",
@@ -10420,11 +11091,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 31,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\alpha, \\beta$ be real roots of the quadratic equation $x^2 + kx + (k^2+2k-4) = 0$, then the minimum value of $\\alpha^2 + \\beta^2$ is equal to :",
         "options": [
           "12",
@@ -10438,11 +11110,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 32,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Polynomial $P(x) = x^2 - ax + 5$ and $Q(x) = 2x^3 + 5x - (a-3)$ when divided by $x - 2$ have same remainders, then 'a' is equal to:",
         "options": [
           "10",
@@ -10456,11 +11129,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 33,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If a and b are non-zero distinct roots of $x^2 + ax + b = 0$, then the least value of $x^2 + ax + b$ is equal to :",
         "options": [
           "$2/3$",
@@ -10474,11 +11148,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 34,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\alpha, \\beta$ be the roots of the equation $ax^2 + bx + c = 0$. A root of the equation $a^3x^2 + abcx + c^3 = 0$ is :",
         "options": [
           "$\\alpha+\\beta$",
@@ -10492,11 +11167,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 35,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $a, b, c$ be the lengths of the sides of a triangle (no two of them are equal) and $k \\in R$. If the roots of the equation $x^2 + 2(a+b+c)x + 6k(ab+bc+ca) = 0$ are real, then:",
         "options": [
           "$k < 2/3$",
@@ -10510,11 +11186,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 36,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Root(s) of the equation $9x^2 - 18|x| + 5 = 0$ belonging to the domain of definition of the function $f(x) = \\log(x^2-x-2)$ is/are:",
         "options": [
           "$\\frac{-5}{3}, \\frac{-1}{3}$",
@@ -10528,11 +11205,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 37,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\beta + \\cos^2\\alpha, \\beta + \\sin^2\\alpha$ are the roots of $x^2 + 2bx + c = 0$ and $\\gamma + \\cos^4\\alpha, \\gamma + \\sin^4\\alpha$ are the roots of $x^2 + 2Bx + C = 0$, then:",
         "options": [
           "$b-B=c-C$",
@@ -10546,11 +11224,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 38,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Minimum value of $|x-p| + |x-15| + |x-p-15|$. If $p \\le x \\le 15$ and $0 < p < 15$:",
         "options": [
           "30",
@@ -10564,11 +11243,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 39,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the quadratic equation $4x^2 - 2x - m = 0$ and $4p(q-r)x^2 - 2q(r-p)x + r(p-q) = 0$ have a common root such that second equation has equal roots then the value of m will be :",
         "options": [
           "0",
@@ -10582,11 +11262,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 40,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The range of k for which the inequality $k\\cos^2x - k\\cos x + 1 \\ge 0 \\forall x \\in (-\\infty, \\infty)$ is :",
         "options": [
           "$k > -1/2$",
@@ -10600,11 +11281,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 41,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\frac{1+\\alpha}{1-\\alpha}, \\frac{1+\\beta}{1-\\beta}, \\frac{1+\\gamma}{1-\\gamma}$ are roots of the cubic equation $f(x) = 0$ where $\\alpha, \\beta, \\gamma$ are the roots of the cubic equation $3x^3 - 2x + 5 = 0$, then the number of negative real roots of the equation $f(x) = 0$ is:",
         "options": [
           "0",
@@ -10618,11 +11300,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 42,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The sum of all integral values of $\\lambda$ for which $(\\lambda^2+\\lambda-2)x^2 + (\\lambda+2)x < 1 \\forall x \\in R$, is :",
         "options": [
           "-1",
@@ -10636,11 +11319,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 43,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta, \\gamma, \\delta \\in R$ satisfy $\\frac{(\\alpha+1)^2+(\\beta+1)^2+(\\gamma+1)^2+(\\delta+1)^2}{\\alpha+\\beta+\\gamma+\\delta} = 4$. If biquadratic equation $a_0x^4 + a_1x^3 + a_2x^2 + a_3x + a_4 = 0$ has the roots $(\\alpha+\\frac{1}{\\beta}-1), (\\beta+\\frac{1}{\\gamma}-1), (\\gamma+\\frac{1}{\\delta}-1), (\\delta+\\frac{1}{\\alpha}-1)$. Then the value of $a_2/a_0$ is :",
         "options": [
           "4",
@@ -10654,11 +11338,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 44,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the complete set of value of x satisfying $|x-1| + |x-2| + |x-3| \\ge 6$ is $(-\\infty, a] \\cup [b, \\infty)$, then $a+b=$:",
         "options": [
           "2",
@@ -10672,11 +11357,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 45,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If exactly one root of the quadratic equation $x^2 - (a+1)x + 2a = 0$ lies in the interval $(0, 3)$, then the set of value 'a' is given by:",
         "options": [
           "$(-\\infty, 0) \\cup (6, \\infty)$",
@@ -10690,11 +11376,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 46,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The condition that the root of $x^3 + 3px^2 + 3qx + r = 0$ are in H.P. is :",
         "options": [
           "$2p^3 - 3pqr + r^2 = 0$",
@@ -10708,11 +11395,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 47,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If x is real and $4y^2 + 4xy + x + 6 = 0$, then the complete set of values of x for which y is real, is:",
         "options": [
           "$x \\le -2 \\text{ or } x \\ge 3$",
@@ -10726,11 +11414,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 48,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The solution of the equation $\\log_{\\cos x} 2(3-2x) < \\log_{\\cos x} 2(2x-1)$ is :",
         "options": [
           "$(1/2, 1)$",
@@ -10744,11 +11433,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 49,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the roots $\\alpha, \\beta$ of the equation $px^2 + qx + r = 0$ are real and of opposite sign (where p, q, r are real coefficient), then the roots of the equation $\\alpha(x-\\beta)^2 + \\beta(x-\\alpha)^2 = 0$ are:",
         "options": [
           "positive",
@@ -10762,11 +11452,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 50,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let a, b and c be three distinct real roots of the cubic $x^3 + 2x^2 - 4x - 4 = 0$. If the equation $x^3 + qx^2 + rx + s = 0$ has roots $1/a, 1/b$ and $1/c$, then the value of $(q+r+s)$ is equal to:",
         "options": [
           "$3/4$",
@@ -10780,11 +11471,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 51,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Solution set of the inequality, $2 - \\log_2(x^2 + 3x) \\ge 0$ is :",
         "options": [
           "$[-4, 1]$",
@@ -10798,11 +11490,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 52,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For what least integral 'k' is the quadratic trinomial $(k - 2)x^2 + 8x + (k + 4)$ is positive for all real values of x ?",
         "options": [
           "$k = 4$",
@@ -10816,11 +11509,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 53,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If roots of the equation $(m - 2)x^2 - (8 - 2m)x - (8 - 3m) = 0$ are opposite in sign, then number of integral values(s) of m is/are :",
         "options": [
           "0",
@@ -10834,11 +11528,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 54,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\log_{0.6}(\\log_6 \\frac{x^2+x}{x+4}) < 0$, then complete set of value of 'x' is :",
         "options": [
           "$(-4, -3) \\cup (8, \\infty)$",
@@ -10852,11 +11547,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 55,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Two different real numbers $\\alpha$ and $\\beta$ are the roots of the quadratic equation $ax^2 + c = 0$ with $a, c \\ne 0$, then $\\alpha^3 + \\beta^3$ is :",
         "options": [
           "a",
@@ -10870,11 +11566,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 56,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The least integral value of 'k' for which $(k - 1)x^2 - (k + 1)x + (k + 1)$ is positive for all real value of x is:",
         "options": [
           "1",
@@ -10888,11 +11585,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 57,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $(-2, 7)$ is the highest point on the graph of $y = -2x^2 - 4ax + k$, then k equals:",
         "options": [
           "31",
@@ -10906,11 +11604,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 58,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $a+b+c=0, a, b, c \\in Q$ then roots of the equation $(b+c-a)x^2 + (c+a-b)x + (a+b-c) = 0$ are:",
         "options": [
           "rational",
@@ -10924,11 +11623,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 59,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If two roots of $x^3 - ax^2 + bx - c = 0$ are equal in magnitude but opposite in sign. Then:",
         "options": [
           "$a+bc = 0$",
@@ -10942,11 +11642,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 60,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha$ and $\\beta$ are the real roots of $x^2 + px + q = 0$ and $\\alpha^4, \\beta^4$ are the roots of $x^2 - rx + s = 0$. Then the equation $x^2 - 4qx + 2q^2 - r = 0$ has always ($\\alpha \\ne \\beta, p \\ne 0, p, q, r, s \\in R$):",
         "options": [
           "one positive and one negative root",
@@ -10960,11 +11661,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 61,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $x^2 + px + 1$ is a factor of $ax^3 + bx + c$, then:",
         "options": [
           "$a^2 + c^2 = -ab$",
@@ -10978,11 +11680,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 62,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "In a $\\Delta ABC$ $\\tan \\frac{A}{2}, \\tan \\frac{B}{2}, \\tan \\frac{C}{2}$ are in H.P., then the value of $\\cot \\frac{A}{2} \\cot \\frac{C}{2}$ is :",
         "options": [
           "3",
@@ -10996,11 +11699,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 63,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = 10 - |x - 10| \\forall x \\in [-9, 9]$, if M and m be the maximum and minimum value of $f(x)$ respectively, then :",
         "options": [
           "$M + m = 0$",
@@ -11014,11 +11718,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 64,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Solution of the quadratic equation $(3|x| - 3)^2 = |x| + 7$, which belongs to the domain of the function $y = \\sqrt{(x - 4)x}$ is :",
         "options": [
           "$\\pm \\frac{1}{9}, \\pm 2$",
@@ -11032,11 +11737,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 65,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of real solutions of the equation $x^2 + 3|x| + 2 = 0$ is :",
         "options": [
           "0",
@@ -11050,11 +11756,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 66,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the roots of equation $x^2 - bx + c = 0$ be two consecutive integers, then $b^2 - 4c =$",
         "options": [
           "3",
@@ -11068,11 +11775,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 67,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If x is real, then maximum value of $\\frac{3x^2 + 9x + 17}{3x^2 + 9x + 7}$ is:",
         "options": [
           "41",
@@ -11086,11 +11794,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 68,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\frac{x^2 + 2x + 7}{2x + 3} < 6, x \\in R$ then:",
         "options": [
           "$x \\in (-\\infty, -\\frac{3}{2}) \\cup (11, \\infty)$",
@@ -11104,11 +11813,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 69,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If x is real, then range of $\\frac{3x-2}{7x+5}$ is:",
         "options": [
           "$R - \\{\\frac{2}{5}\\}$",
@@ -11122,11 +11832,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 70,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let A denotes the set of values of x for which $\\frac{x+2}{x-4} \\le 0$ and B denotes the set of values of x for which $x^2 - ax - 4 \\le 0$. If B is the subset of A, then a CAN NOT take the integral value :",
         "options": [
           "0",
@@ -11140,11 +11851,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 71,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the quadratic polynomial $P(x) = (p - 3)x^2 - 2px + 3p - 6$ ranges from $[0, \\infty)$ for every $x \\in R$, then the value of p can be :",
         "options": [
           "3",
@@ -11158,11 +11870,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 72,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If graph of the quadratic $y = ax^2 + bx + c$ is given below :",
         "options": [
           "$a < 0, b > 0, c > 0$",
@@ -11176,11 +11889,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 73,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If quadratic equation $ax^2 + bx + c = 0$ does not have real roots, then which of the following may be false :",
         "options": [
           "$a(a-b+c)>0$",
@@ -11194,11 +11908,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 74,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Minimum value of $y = x^2 - 3x + 5, x \\in [-4, 1]$ is :",
         "options": [
           "3",
@@ -11212,11 +11927,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 75,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $3x^2 - 17x + 10 = 0$ and $x^2 - 5x + m = 0$ has a common root, then sum of all possible real values of 'm' is :",
         "options": [
           "0",
@@ -11230,11 +11946,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 76,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For real numbers x and y, if $x^2 + xy - y^2 + 2x - y + 1 = 0$, then :",
         "options": [
           "y can not be between $0$ and $\\frac{8}{5}$",
@@ -11248,11 +11965,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 77,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $3x^4 - 6x^3 + kx^2 - 8x - 12$ is divisible by $x - 3$, then it is also divisible by :",
         "options": [
           "$3x^2 - 4$",
@@ -11266,11 +11984,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 78,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The complete set of values of a so that equation $\\sin^4 x + a \\sin^2 x + 4 = 0$ has at least one real root is :",
         "options": [
           "$(\\infty, -5]$",
@@ -11284,11 +12003,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 79,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let r, s, t be the roots of the equation $x^3 + ax^2 + bx + c = 0$, such that $(rs)^2 + (st)^2 + (rt)^2 = b^2 - kac$, then $k =$",
         "options": [
           "1",
@@ -11302,11 +12022,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 80,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the roots of the cubic $x^3 + ax^2 + bx + c = 0$ are three consecutive positive integers, then the value of $\\frac{a^2}{b+1} =$",
         "options": [
           "1",
@@ -11320,11 +12041,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 81,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let 'k' be a real number. The minimum number of distinct real roots possible of the equation $(3x^2 + kx + 3)(x^2 + kx - 1) = 0$ is :",
         "options": [
           "0",
@@ -11338,11 +12060,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 82,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If r and s are variables satisfying the equation $\\frac{1}{r+s} = \\frac{1}{r} + \\frac{1}{s}$. The value of $(\\frac{r}{s})^3$ is equal to:",
         "options": [
           "1",
@@ -11356,11 +12079,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 83,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^2 + ax + b$. If the maximum and the minimum values of $f(x)$ are 3 and 2 respectively for $0 \\le x \\le 2$, then the possible ordered pair of $(a, b)$ is :",
         "options": [
           "$(-2, 3)$",
@@ -11374,11 +12098,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 84,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The roots of the equation $|x^2 - x - 6| = x + 2$ are given by :",
         "options": [
           "$-2, 2, 4$",
@@ -11392,11 +12117,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 85,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If a, b, c be the sides of $\\Delta ABC$ and equations $ax^2 + bx + c = 0$ and $5x^2 + 12x + 13 = 0$ have a common root, then $\\angle C$ is :",
         "options": [
           "$60^{\\circ}$",
@@ -11410,11 +12136,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 86,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta$ and $\\gamma$ are three real roots of the equation $x^3 - 6x^2 + 5x - 1 = 0$, then the value of $\\alpha^4 + \\beta^4 + \\gamma^4$ is:",
         "options": [
           "250",
@@ -11428,11 +12155,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 87,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If one of the roots of the equation $2x^2 - 6x + k = 0$ is $\\frac{\\alpha + 5i}{2}$, then the value of $\\alpha$ and $k$ are :",
         "options": [
           "$\\alpha = 3, k = 8$",
@@ -11446,11 +12174,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 88,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $x_1$ and $x_2$ be the real roots of the equation $x^2 - (k - 2)x + (k^2 + 3k + 5) = 0$, then the maximum value of $x_1^2 + x_2^2$ is :",
         "options": [
           "19",
@@ -11464,11 +12193,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 89,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The complete set of values of 'a' for which the inequality $(a - 1) x^2 - (a + 1)x + (a - 1) \\ge 0$ is true for all $x \\ge 2$.",
         "options": [
           "$(\\frac{3}{7}, 1]$",
@@ -11482,11 +12212,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 90,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta$ be the roots of $4x^2 - 17x + \\lambda = 0, \\lambda \\in R$ such that $1 < \\alpha < 2$ and $2 < \\beta < 3$, then the number of integral values of $\\lambda$ is:",
         "options": [
           "1",
@@ -11500,11 +12231,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 91,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Assume that p is a real number. In order of $\\sqrt{x+3p+1} - \\sqrt{x} = 1$ to have real solutions, it is necessary that:",
         "options": [
           "$p \\ge 1/4$",
@@ -11518,11 +12250,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 92,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta$ are the roots of the quadratic equation $x^2 - (3 + 2^{\\sqrt{\\log_2 3}} - 3^{\\sqrt{\\log_3 2}})x - 2(3^{\\log_3 2} - 2^{\\log_2 3}) = 0$, then the value of $\\alpha^2 + \\alpha\\beta + \\beta^2$ is equal to:",
         "options": [
           "3",
@@ -11536,11 +12269,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 93,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The minimum value of $f(x, y) = x^2 - 4x + y^2 + 6y$ when x and y are subjected to the restrictions $0 \\le x \\le 1$ and $0 \\le y \\le 1$, is :",
         "options": [
           "-1",
@@ -11554,11 +12288,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 94,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The expression $ax^2 + 2bx + c$, where 'a' is non-zero real number, has same sign as that of 'a' for every real value of x, then roots of quadratic equation $ax^2 + (b-c)x - 2b - c - a = 0$, are :",
         "options": [
           "real and equal",
@@ -11572,11 +12307,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 95,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let a, b and c be the roots of $x^3 - x + 1 = 0$, then the value of $(\\frac{1}{a+1} + \\frac{1}{b+1} + \\frac{1}{c+1})$ equals to:",
         "options": [
           "1",
@@ -11590,11 +12326,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 96,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integral values of k for which the inequality $x^2 - 2(4k - 1)x + 15k^2 - 2k - 7 \\ge 0$ holds for all $x \\in R$ is:",
         "options": [
           "2",
@@ -11608,11 +12345,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 97,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of integral values which can be taken by the expression, $f(x) = \\frac{x^3 - 1}{(x-1)(x^2 - x + 1)}$ for $x \\in R$, is:",
         "options": [
           "1",
@@ -11626,11 +12364,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 98,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The complete set of values of m for which the inequality $\\frac{x^2 - mx - 2}{x^2 + mx + 4} > -1$ is satisfied $\\forall x \\in R$, is:",
         "options": [
           "$m = 0$",
@@ -11644,11 +12383,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 99,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The complete set of values of a for which the roots of the equation $x^2 - 2|a+1|x + 1 = 0$ are real is given by:",
         "options": [
           "$(-\\infty, -2] \\cup [0, \\infty)$",
@@ -11662,11 +12402,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 100,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The quadratic polynomials defined on real coefficients $P(x) = a_1x^2 + 2b_1x + c_1, Q(x) = a_2x^2 + 2b_2x + c_2, P(x)$ and $Q(x)$ both take positive values $\\forall x \\in R$. If $f(x) = a_1a_2x^2 + b_1b_2x + c_1c_2$, then:",
         "options": [
           "$f(x) < 0 \\forall x \\in R$",
@@ -11680,11 +12421,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 101,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the equation $x^2 + 4 + 3\\cos(ax+b) = 2x$ has a solution then a possible value of $(a+b)$ equals",
         "options": [
           "$\\frac{\\pi}{4}$",
@@ -11698,11 +12440,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 102,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\alpha, \\beta$ be the roots of $x^2 - 4x + A = 0$ and $\\gamma, \\delta$ be the roots of $x^2 - 36x + B = 0$. If $\\alpha, \\beta, \\gamma, \\delta$ form an increasing G.P. and $A^t = B$ then the value of 't' equals",
         "options": [
           "4",
@@ -11716,11 +12459,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 103,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "How many roots does the following equation possess $3^{|x|}(|2 - |x||) = 1$ ?",
         "options": [
           "2",
@@ -11734,11 +12478,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 104,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\cot\\alpha$ equals the integral solution of inequality $4x^2 - 16x + 15 < 0$ and $\\sin\\beta$ equals to the slope of the bisector of the first quadrant, then $\\sin(\\alpha+\\beta)\\sin(\\alpha-\\beta)$ is equal to :",
         "options": [
           "$-3/5$",
@@ -11752,11 +12497,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 105,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider the functions $f_1(x) = x$ and $f_2(x) = 2 + \\log_e x, x > 0$, where $e$ is the base of natural logarithm. The graphs of the functions intersect :",
         "options": [
           "once in $(0, 1)$ and never in $(1, \\infty)$",
@@ -11770,11 +12516,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 106,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The sum of all the real roots of equation $x^4 - 3x^3 - 2x^2 - 3x + 1 = 0$ is :",
         "options": [
           "1",
@@ -11788,11 +12535,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 107,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta (\\alpha < \\beta)$ are the real roots of the equation $x^2 - (k+4)x + k^2 - 12 = 0$ such that $4 \\in (\\alpha, \\beta)$; then the number of integral values of $k$ equal to :",
         "options": [
           "4",
@@ -11806,11 +12554,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 108,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\alpha, \\beta$ be real roots of the quadratic equation $x^2 + kx + (k^2 + 2k - 4) = 0$, then the maximum value of $(\\alpha^2 + \\beta^2)$ is equal to :",
         "options": [
           "9",
@@ -11824,11 +12573,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 109,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = a^x - x\\ln a, a > 1$. Then the complete set of real values of $x$ for which $f'(x) > 0$ is :",
         "options": [
           "$(1, \\infty)$",
@@ -11842,11 +12592,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 110,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $a, b$ and $c$ are the roots of the equation $x^3 + 2x^2 + 1 = 0$, find $\\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix}$ :",
         "options": [
           "8",
@@ -11860,11 +12611,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 111,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\alpha, \\beta$ are the two real roots of equation $x^2 + px + q = 0, p, q \\in R, q \\ne 0$. If the quadratic equation $g(x) = 0$ has two roots $\\alpha + \\frac{1}{\\alpha}, \\beta + \\frac{1}{\\beta}$ such that sum of roots is equal to product of roots, then the complete range of $q$ is :",
         "options": [
           "$[-1/3, 3]$",
@@ -11878,11 +12630,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 112,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the equation $\\ln(x^2 + 5x) - \\ln(x + a + 3) = 0$ has exactly one solution for $x$, then number of integers in the range of $a$ is :",
         "options": [
           "4",
@@ -11896,11 +12649,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 113,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^2 + \\frac{1}{x^2} - 6x - \\frac{6}{x} + 2$, then minimum value of $f(x)$ is :",
         "options": [
           "-2",
@@ -11914,11 +12668,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 114,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $x^2 + bx + b$ is a factor of $x^3 + 2x^2 + 2x + c (c \\ne 0)$, then $b - c$ is :",
         "options": [
           "2",
@@ -11932,11 +12687,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 115,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If roots of $x^3 + 2x^2 + 1 = 0$ are $\\alpha, \\beta$ and $\\gamma$, then the value of $(\\alpha\\beta)^3 + (\\beta\\gamma)^3 + (\\alpha\\gamma)^3$, is :",
         "options": [
           "-11",
@@ -11950,11 +12706,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 116,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "How many roots does the following equation possess $3^{|x|}(|2 - |x||) = 1$?",
         "options": [
           "2",
@@ -11968,11 +12725,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 117,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The sum of all the real roots of equation $x^4 - 3x^3 - 2x^2 - 3x + 1 = 0$ is :",
         "options": [
           "1",
@@ -11986,11 +12744,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 118,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha$ and $\\beta$ are the roots of the quadratic equation $4x^2 + 2x - 1 = 0$ then the value of $\\sum_{r=1}^\\infty (\\alpha^r + \\beta^r)$ is :",
         "options": [
           "2",
@@ -12004,11 +12763,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 119,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of value(s) of $x$ satisfying the equation $(2011)^x + (2012)^x + (2013)^x - (2014)^x = 0$ is/are :",
         "options": [
           "exactly 2",
@@ -12022,11 +12782,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 120,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta (\\alpha < \\beta)$ are the real roots of the equation $x^2 - (k + 4)x + k^2 - 12 = 0$ such that $4 \\in (\\alpha, \\beta)$; then the number of integral values of $k$ equals to :",
         "options": [
           "4",
@@ -12040,11 +12801,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 121,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\alpha, \\beta$ be real roots of the quadratic equation $x^2 + kx + (k^2 + 2k - 4) = 0$, then the maximum value of $(\\alpha^2 + \\beta^2)$ is equal to :",
         "options": [
           "9",
@@ -12058,11 +12820,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 122,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The exhaustive set of values of $a$ for which inequation $(a - 1)x^2 - (a + 1)x + a - 1 \\ge 0$ is true $\\forall x \\ge 2$ :",
         "options": [
           "$(-\\infty, 1)$",
@@ -12076,11 +12839,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 123,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the equation $x^2 + ax + 12 = 0, x^2 + bx + 15 = 0$ and $x^2 + (a + b)x + 36 = 0$ have a common positive root, then $b - 2a$ is equal to.",
         "options": [
           "-6",
@@ -12094,11 +12858,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 124,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The equation $e^{\\sin x} - e^{-\\sin x} - 4 = 0$ has",
         "options": [
           "infinite number of real roots",
@@ -12112,11 +12877,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 125,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The difference between the maximum and minimum value of the function $f(x) = 3\\sin^4 x - \\cos^6 x$ is :",
         "options": [
           "$3/2$",
@@ -12130,11 +12896,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 126,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta$ are the roots of $x^2 - 3x + \\lambda = 0 (\\lambda \\in R)$ and $\\alpha < 1 < \\beta$, then the true set of values of $\\lambda$ equals :",
         "options": [
           "$\\lambda \\in (2, 9/4)$",
@@ -12148,11 +12915,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 127,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $2x^2 + 5x + 7 = 0$ and $ax^2 + bx + c = 0$ have at least one root common such that $a, b, c \\in \\{1, 2, ..., 100\\}$, then the difference between the maximum and minimum values of $a + b + c$ is :",
         "options": [
           "196",
@@ -12166,11 +12934,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 128,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Two particles, $A$ and $B$, are in motion in the $xy$-plane. Their co-ordinates at each instant of time $t(t \\ge 0)$ are given by $x_A = t, y_A = 2t, x_B = 1 - t$ and $y_B = t$. The minimum distance between particles $A$ and $B$ is :",
         "options": [
           "$1/5$",
@@ -12184,11 +12953,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 129,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $a \\ne 0$ and the equation $ax^2 + bx + c = 0$ has two roots $\\alpha$ and $\\beta$ such that $\\alpha < -3$ and $\\beta > 2$, which of the following is always true ?",
         "options": [
           "$a(a + |b| + c) > 0$",
@@ -12202,11 +12972,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 130,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of negative real roots of the equation $(x^2 + 5x)^2 - 24 = 2(x^2 + 5x)$ is :",
         "options": [
           "4",
@@ -12220,11 +12991,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 131,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of real values of $x$ satisfying the equation $3|x - 2| + |1 - 5x| + 4|3x + 1| = 13$ is :",
         "options": [
           "1",
@@ -12238,11 +13010,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 132,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\log_{\\cos x} \\sin x \\ge 2$ and $0 \\le x \\le 3\\pi$ then $\\sin x$ lies in the interval",
         "options": [
           "$[\\frac{\\sqrt{5}-1}{2}, 1]$",
@@ -12256,11 +13029,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 133,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^2 + bx + c$, minimum value of $f(x)$ is -5, then absolute value of the difference of the roots of $f(x)$ is :",
         "options": [
           "5",
@@ -12274,11 +13048,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 134,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Sum of all the solutions of the equation $|x - 3| + |x + 5| = 7x$, is :",
         "options": [
           "$6/7$",
@@ -12292,11 +13067,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 135,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^2 + \\frac{1}{x^2} - 6x - \\frac{6}{x} + 2$, then minimum value of $f(x)$ is :",
         "options": [
           "-2",
@@ -12310,11 +13086,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 136,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $a + b + c = 1, a^2 + b^2 + c^2 = 9$ and $a^3 + b^3 + c^3 = 1$, then the value of $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}$ is :",
         "options": [
           "$2/3$",
@@ -12328,11 +13105,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 137,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If roots of $x^3 + 2x^2 + 1 = 0$ are $\\alpha, \\beta$ and $\\gamma$, then the value of $(\\alpha\\beta)^3 + (\\beta\\gamma)^3 + (\\alpha\\gamma)^3$, is :",
         "options": [
           "-11",
@@ -12346,11 +13124,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 138,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $x^2 + bx + b$ is a factor of $x^3 + 2x^2 + 2x + c (c \\ne 0)$, then $b - c$ is :",
         "options": [
           "2",
@@ -12364,11 +13143,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 139,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The graph of quadratic polynomial $f(x) = ax^2 + bx + c$ is shown below :",
         "options": [
           "$\\frac{c}{a} |\\beta - \\alpha| < -2$",
@@ -12382,11 +13162,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 140,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\frac{x^2 - 3x + 4}{x^2 + 3x + 4}$, then complete solution of $0 < f(x) < 1$, is :",
         "options": [
           "$(-\\infty, \\infty)$",
@@ -12400,11 +13181,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 141,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta, \\gamma$ are the roots of the equation $x^3 + 2x^2 - x + 1 = 0$, then value of $\\frac{(2 - \\alpha)(2 - \\beta)(2 - \\gamma)}{(2 + \\alpha)(2 + \\beta)(2 + \\gamma)}$ is:",
         "options": [
           "5",
@@ -12418,11 +13200,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 142,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha$ and $\\beta$ are roots of the quadratic equation $x^2 + 4x + 3 = 0$, then the equation whose roots are $2\\alpha + \\beta$ and $\\alpha + 2\\beta$ is :",
         "options": [
           "$x^2 - 12x + 35 = 0$",
@@ -12436,11 +13219,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 143,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $a, b, c$ are real distinct numbers such that $a^3 + b^3 + c^3 = 3abc$, then the quadratic equation $ax^2 + bx + c = 0$ has",
         "options": [
           "Real roots",
@@ -12454,11 +13238,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 144,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the equation $x^2 + ax + 12 = 0, x^2 + bx + 15 = 0$ and $x^2 + (a + b)x + 36 = 0$ have a common positive root, then $b - 2a$ is equal to.",
         "options": [
           "-6",
@@ -12472,11 +13257,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 145,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider the equation $x^3 - ax^2 + bx - c = 0$, where $a, b, c$ are rational number, $a \\ne 1$. It is given that $x_1, x_2$ and $x_1x_2$ are the real roots of the equation. Then $x_1x_2 \\left(\\frac{a+1}{b+c}\\right) =$",
         "options": [
           "1",
@@ -12490,11 +13276,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 146,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The exhaustive set of values of $a$ for which inequation $(a - 1)x^2 - (a + 1)x + a - 1 \\ge 0$ is true $\\forall x \\ge 2$.",
         "options": [
           "$(-\\infty, 1)$",
@@ -12508,11 +13295,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 147,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of real solutions of the equation $x^2 - 3|x| + 2 = 0$",
         "options": [
           "2",
@@ -12526,11 +13314,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 148,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The equation $e^{\\sin x} - e^{-\\sin x} - 4 = 0$ has",
         "options": [
           "infinite number of real roots",
@@ -12544,11 +13333,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 149,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta$ are the roots of the quadratic equation $x^2 - 2(1 - \\sin 2\\theta)x - 2\\cos^2 2\\theta = 0, (\\theta \\in R)$ then the minimum value of $(\\alpha^2 + \\beta^2)$ is equal to :",
         "options": [
           "-4",
@@ -12562,11 +13352,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 150,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the equation $|\\sin x|^2 + |\\sin x| + b = 0$ has two distinct roots in $[0, \\pi]$; then the number of integers in the range of $b$ is equals to :",
         "options": [
           "0",
@@ -12580,11 +13371,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 151,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $a \\ne 0$ and the equation $ax^2 + bx + c = 0$ has two roots $\\alpha$ and $\\beta$ such that $\\alpha < -3$ and $\\beta > 2$. Which of the following is always true ?",
         "options": [
           "$a(a+|b|+c) > 0$",
@@ -12598,11 +13390,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 152,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\alpha, \\beta$ are the roots of the quadratic equation $x^2 + px + q = 0$ and $\\gamma, \\delta$ are the roots of $x^2 + px - r = 0$ then $(\\alpha - \\gamma)(\\alpha - \\delta)$ is equal to :",
         "options": [
           "$q+r$",
@@ -12616,11 +13409,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 153,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Complete set of solution of $\\log_{1/3} (2^{x+2} - 4^x) \\ge -2$ is :",
         "options": [
           "$(-\\infty, 2)$",
@@ -12634,11 +13428,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $S$ is the set of all real $x$ such that $\\frac{2x-1}{2x^3+3x^2+x}$ is positive, then $S$ contains :",
         "options": [
           "$(-\\infty, -\\frac{3}{2})$",
@@ -12652,11 +13447,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c,d"
+        "answerKeyStr": "a,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2,
+          3
+        ],
+        "correctAnswer": "A,C,D"
       },
       {
         "questionNumber": 2,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $kx^2 - 4x + 3k + 1 > 0$ for atleast one $x > 0$, then if $k \\in S$, then $S$ contains:",
         "options": [
           "$(1, \\infty)$",
@@ -12670,11 +13472,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,d"
+        "answerKeyStr": "a,b,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A,B,D"
       },
       {
         "questionNumber": 3,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The equation $|x^2 - x - 6| = x + 2$ has:",
         "options": [
           "two positive roots",
@@ -12688,11 +13497,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c"
+        "answerKeyStr": "a,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2
+        ],
+        "correctAnswer": "A,C"
       },
       {
         "questionNumber": 4,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If the roots of the equation $x^2 - ax - b = 0$ ($a, b \\in R$) are both lying between $-2$ and $2$, then :",
         "options": [
           "$|a| < 2 - \\frac{b}{2}$",
@@ -12706,11 +13521,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c,d"
+        "answerKeyStr": "a,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2,
+          3
+        ],
+        "correctAnswer": "A,C,D"
       },
       {
         "questionNumber": 5,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Consider the equation in real number $x$ and a real parameter $\\lambda, |x - 1| - |x - 2| + |x - 4| = \\lambda$. Then for $\\lambda \\ge 1$, the number of solutions, the equation can have is/are :",
         "options": [
           "1",
@@ -12724,11 +13546,19 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c,d"
+        "answerKeyStr": "a,b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "questionNumber": 6,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $a$ and $b$ are two distinct non-zero real numbers such that $a - b = \\frac{a}{b} - \\frac{1}{b} - \\frac{1}{a}$, then :",
         "options": [
           "$a > 0$",
@@ -12742,11 +13572,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,c"
+        "answerKeyStr": "b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C"
       },
       {
         "questionNumber": 7,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = ax^2 + bx + c, a > 0$ and $f(2-x) = f(2+x) \\forall x \\in R$ and $f(x) = 0$ has 2 distinct real roots, then which of the following is true ?",
         "options": [
           "Atleast one root must be positive",
@@ -12760,11 +13596,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c"
+        "answerKeyStr": "a,b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2
+        ],
+        "correctAnswer": "A,B,C"
       },
       {
         "questionNumber": 8,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "In the above problem, if roots of equation $f(x) = 0$ are non-real complex, then which of the following is false ?",
         "options": [
           "$f(x) = \\sin \\frac{\\pi x}{4}$ must have 2 solutions",
@@ -12778,11 +13621,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,d"
+        "answerKeyStr": "a,b,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A,B,D"
       },
       {
         "questionNumber": 9,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If exactly two integers lie between the roots of equation $x^2 + ax - 1 = 0$. Then integral value(s) of '$a$' is/are :",
         "options": [
           "$-1$",
@@ -12796,11 +13646,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c"
+        "answerKeyStr": "a,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2
+        ],
+        "correctAnswer": "A,C"
       },
       {
         "questionNumber": 10,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If the minimum value of the quadratic expression $y = ax^2 + bx + c$ is negative attained at negative value of $x$, then :",
         "options": [
           "$a > 0$",
@@ -12814,11 +13670,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,d"
+        "answerKeyStr": "a,b,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A,B,D"
       },
       {
         "questionNumber": 11,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The quadratic expression $ax^2 + bx + c > 0 \\forall x \\in R$, then:",
         "options": [
           "$13a - 5b + 2c > 0$",
@@ -12832,11 +13695,19 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c,d"
+        "answerKeyStr": "a,b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "questionNumber": 12,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The possible positive integral value of '$k$' for which $5x^2 - 2kx + 1 < 0$ has exactly one integral solution may be divisible by :",
         "options": [
           "$2$",
@@ -12850,11 +13721,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c"
+        "answerKeyStr": "a,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2
+        ],
+        "correctAnswer": "A,C"
       },
       {
         "questionNumber": 13,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If the equation $x^2 + px + q = 0$, the coefficient of $x$ was incorrectly written as 17 instead of 13. Then roots were found to be $-2$ and $-15$. The correct roots are :",
         "options": [
           "$-1$",
@@ -12868,11 +13745,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,d"
+        "answerKeyStr": "b,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          3
+        ],
+        "correctAnswer": "B,D"
       },
       {
         "questionNumber": 14,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $x^2 - 3x + 2 > 0$ and $x^2 - 3x - 4 \\le 0$, then:",
         "options": [
           "$|x| \\le 2$",
@@ -12886,11 +13769,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c,d"
+        "answerKeyStr": "c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          2,
+          3
+        ],
+        "correctAnswer": "C,D"
       },
       {
         "questionNumber": 15,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $5^x + (2\\sqrt{3})^{2x} - 169 \\le 0$ is true for $x$ lying in the interval :",
         "options": [
           "$(-\\infty, 2)$",
@@ -12904,11 +13793,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 16,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = x^2 + ax + b$ and $g(x) = x^2 + cx + d$ be two quadratic polynomials with real coefficients and satisfy $ac = 2(b + d)$. Then which of the following is (are) correct?",
         "options": [
           "Exactly one of either $f(x) = 0$ or $g(x) = 0$ must have real roots.",
@@ -12922,11 +13817,16 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1
+        ],
+        "correctAnswer": "B"
       },
       {
         "questionNumber": 17,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The expression $\\frac{1}{\\sqrt{x+2\\sqrt{x-1}}} + \\frac{1}{\\sqrt{x-2\\sqrt{x-1}}}$ simplifies to :",
         "options": [
           "$\\frac{2}{3-x}$ if $1 < x < 2$",
@@ -12940,11 +13840,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,c"
+        "answerKeyStr": "b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C"
       },
       {
         "questionNumber": 18,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If all values of $x$ which satisfies the inequality $\\log_{1/3} (x^2 + 2px + p^2 + 1) \\ge 0$ also satisfy the inequality $kx^2 + kx - k^2 \\le 0$ for all real values of $k$, then all possible values of $p$ lies in the interval :",
         "options": [
           "$[-1, 1]$",
@@ -12958,11 +13864,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c"
+        "answerKeyStr": "a,b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2
+        ],
+        "correctAnswer": "A,B,C"
       },
       {
         "questionNumber": 19,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Which of the following statement(s) is/are correct?",
         "options": [
           "The number of quadratic equations having real roots which remain unchanged even after squaring their roots is 3.",
@@ -12976,11 +13889,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,d"
+        "answerKeyStr": "a,b,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A,B,D"
       },
       {
         "questionNumber": 20,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $(a, 0)$ is a point on a diameter inside the circle $x^2 + y^2 = 4$. Then $x^2 - 4x - a^2 = 0$ has :",
         "options": [
           "Exactly one real root in $(-1, 0]$",
@@ -12994,11 +13914,19 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c,d"
+        "answerKeyStr": "a,b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "questionNumber": 21,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $x^2 - px + q = 0$ where $p \\in R, q \\in R, pq \\ne 0$ have the roots $\\alpha, \\beta$ such that $\\alpha + 2\\beta = 0$, then :",
         "options": [
           "$2p^2 + q = 0$",
@@ -13012,11 +13940,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c"
+        "answerKeyStr": "a,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2
+        ],
+        "correctAnswer": "A,C"
       },
       {
         "questionNumber": 22,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $a, b, c$ are rational numbers ($a > b > c > 0$) and quadratic equation $(a+b-2c)x^2 + (b+c-2a)x + (c+a-2b) = 0$ has a root in the interval $(-1, 0)$ then which of the following statement(s) is/are correct?",
         "options": [
           "$a + c < 2b$",
@@ -13030,11 +13964,19 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c,d"
+        "answerKeyStr": "a,b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "questionNumber": 23,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "For the quadratic polynomial $f(x) = 4x^2 - 8ax + a$, the statements(s) which hold good is/are :",
         "options": [
           "There is only one integral '$a$' for which $f(x)$ is non-negative $\\forall x \\in R$",
@@ -13048,11 +13990,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,d"
+        "answerKeyStr": "a,b,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A,B,D"
       },
       {
         "questionNumber": 24,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Given $a, b, c$ are three distinct real numbers satisfying the inequality $a - 2b + 4c > 0$ and the equation $ax^2 + bx + c = 0$ has no real roots. Then the possible value(s) of $\\frac{4a+2b+c}{a+3b+9c}$ is/are :",
         "options": [
           "$2$",
@@ -13066,11 +14015,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c,d"
+        "answerKeyStr": "a,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2,
+          3
+        ],
+        "correctAnswer": "A,C,D"
       },
       {
         "questionNumber": 25,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x) = x^2 - 4x + c \\forall x \\in R$, where $c$ is a real constant, then which of the following is/are true ?",
         "options": [
           "$f(0) > f(1) > f(2)$",
@@ -13084,11 +14040,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c,d"
+        "answerKeyStr": "a,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2,
+          3
+        ],
+        "correctAnswer": "A,C,D"
       },
       {
         "questionNumber": 26,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $0 < a < b < c$ and the roots $\\alpha, \\beta$ of the equation $ax^2 + bx + c = 0$ are imaginary, then :",
         "options": [
           "$|\\alpha| = |\\beta|$",
@@ -13102,11 +14065,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 27,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $x$ satisfies $|x - 1| + |x - 2| + |x - 3| > 6$, then :",
         "options": [
           "$x \\in (-\\infty, 1)$",
@@ -13120,11 +14089,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,c"
+        "answerKeyStr": "b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C"
       },
       {
         "questionNumber": 28,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If both roots of the quadratic equation $ax^2 + x + b - a = 0$ are non real and $b > -1$, then which of the following is/are correct?",
         "options": [
           "$a > 0$",
@@ -13138,11 +14113,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 29,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $a, b$ are two numbers such that $a^2 + b^2 = 7$ and $a^3 + b^3 = 10$, then :",
         "options": [
           "The greatest value of $|a + b| = 5$",
@@ -13156,11 +14137,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,d"
+        "answerKeyStr": "a,b,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A,B,D"
       },
       {
         "questionNumber": 30,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The number of non-negative integral ordered pair(s) $(x, y)$ for which $(xy - 7)^2 = x^2 + y^2$ holds is greater than or equal to :",
         "options": [
           "1",
@@ -13174,11 +14162,19 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c,d"
+        "answerKeyStr": "a,b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "questionNumber": 31,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\alpha, \\beta, \\gamma$ and $\\delta$ are the roots of the equation $x^4 - bx - 3 = 0$; then an equation whose roots are $\\frac{\\alpha+\\beta+\\gamma}{\\delta^2}, \\frac{\\alpha+\\beta+\\delta}{\\gamma^2}, \\frac{\\alpha+\\gamma+\\delta}{\\beta^2}$ and $\\frac{\\beta+\\gamma+\\delta}{\\alpha^2}$ is :",
         "options": [
           "$3x^4 + bx + 1 = 0$",
@@ -13192,11 +14188,16 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          3
+        ],
+        "correctAnswer": "D"
       },
       {
         "questionNumber": 32,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The value of $k$ for which both roots of the equation $4x^2 - 2x + k = 0$ are completely in $(-1, 1)$ may be equal to :",
         "options": [
           "$-1$",
@@ -13210,11 +14211,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 33,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $a, b, c \\in R$, then for which of the following graphs of the quadratic polynomial $y = ax^2 - 2bx + c (a \\ne 0)$; the product $(abc)$ is negative?",
         "options": [
           "[Graph a]",
@@ -13228,11 +14235,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c,d"
+        "answerKeyStr": "c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          2,
+          3
+        ],
+        "correctAnswer": "C,D"
       },
       {
         "questionNumber": 34,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If the equation $ax^2 + bx + c = 0; a, b, c \\in R$ and $a \\ne 0$ has no real roots then which of the following is/are always correct?",
         "options": [
           "$(a + b + c)(a - b + c) > 0$",
@@ -13246,11 +14259,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,d"
+        "answerKeyStr": "a,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          3
+        ],
+        "correctAnswer": "A,D"
       },
       {
         "questionNumber": 35,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\alpha$ and $\\beta$ are the roots of the equation $ax^2 + bx + c = 0; a, b, c \\in R; a \\ne 0$ then which is (are) correct:",
         "options": [
           "$\\alpha^2 + \\beta^2 = \\frac{b^2 - 2ac}{a^2}$",
@@ -13264,11 +14283,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,d"
+        "answerKeyStr": "a,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          3
+        ],
+        "correctAnswer": "A,D"
       },
       {
         "questionNumber": 36,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The equation $\\cos^2 x - \\sin x + \\lambda = 0, x \\in (0, \\pi/2)$ has roots then value(s) of $\\lambda$ can be equal to :",
         "options": [
           "0",
@@ -13282,11 +14307,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c"
+        "answerKeyStr": "a,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2
+        ],
+        "correctAnswer": "A,C"
       },
       {
         "questionNumber": 37,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If the equation $\\ln(x^2 + 5x) - \\ln(x + a + 3) = 0$ has exactly one solution for $x$, then possible integral value of $a$ is :",
         "options": [
           "-3",
@@ -13300,11 +14331,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,c,d"
+        "answerKeyStr": "b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "B,C,D"
       },
       {
         "questionNumber": 38,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The number of non-negative integral ordered pair(s) $(x, y)$ for which $(xy - 7)^2 = x^2 + y^2$ holds is greater than or equal to :",
         "options": [
           "1",
@@ -13318,11 +14356,19 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c,d"
+        "answerKeyStr": "a,b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "questionNumber": 39,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $a < 0$, then the value of $x$ satisfying $x^2 - 2a|x - a| - 3a^2 = 0$ is/are :",
         "options": [
           "$a(1 - \\sqrt{2})$",
@@ -13336,11 +14382,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,d"
+        "answerKeyStr": "a,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          3
+        ],
+        "correctAnswer": "A,D"
       },
       {
         "questionNumber": 40,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $0 < a < b < c$ and the roots $\\alpha, \\beta$ of the equation $ax^2 + bx + c = 0$ are imaginary, then",
         "options": [
           "$|\\alpha| = |\\beta|$",
@@ -13354,11 +14406,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 41,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $x$ satisfies $|x - 1| + |x - 2| + |x - 3| > 6$, then",
         "options": [
           "$x \\in (-\\infty, -1)$",
@@ -13372,11 +14430,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,c"
+        "answerKeyStr": "b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C"
       },
       {
         "questionNumber": 42,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The value of $k$ for which both roots of the equation $4x^2 - 2x + k = 0$ are completely in $(-1, 1)$, may be equal to :",
         "options": [
           "-1",
@@ -13390,11 +14454,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 43,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $\\alpha, \\beta, \\gamma, \\delta$ are roots of $x^4 - 12x^3 + \\lambda x^2 - 54x + 14 = 0$. If $\\alpha + \\beta = \\gamma + \\delta$, then",
         "options": [
           "$\\lambda = 45$",
@@ -13408,11 +14478,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c"
+        "answerKeyStr": "a,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2
+        ],
+        "correctAnswer": "A,C"
       },
       {
         "questionNumber": 44,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\frac{a^3}{a-1}, \\frac{a^2-3}{a-1}; \\frac{b^3}{b-1}, \\frac{b^2-3}{b-1}; \\frac{c^3}{c-1}, \\frac{c^2-3}{c-1}$ lie on $L: lx + my + n = 0$; where $a, b, c$ are real numbers different from $1$; then",
         "options": [
           "$a+b+c = -\\frac{m}{l}$",
@@ -13426,11 +14502,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c,d"
+        "answerKeyStr": "c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          2,
+          3
+        ],
+        "correctAnswer": "C,D"
       },
       {
         "questionNumber": 1,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\alpha = 4a - 2b + c, \\beta = 9a + 3b + c, \\gamma = 9a - 3b + c$, then which of the following is correct ?",
         "options": [
           "$\\beta < \\alpha < \\gamma$",
@@ -13444,11 +14526,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $p = b - 4a, q = 2a + b$, then $pq$ is :",
         "options": [
           "negative",
@@ -13462,11 +14545,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The smaller root $(\\alpha)$ lie in the interval :",
         "options": [
           "$(4, 7)$",
@@ -13480,11 +14564,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The larger root $(\\beta)$ lie in the interval :",
         "options": [
           "$(4, 7)$",
@@ -13498,11 +14583,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The least value of $f(x) \\forall x \\in R$ is :",
         "options": [
           "$-1$",
@@ -13516,11 +14602,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $f(-2) + f(0) + f(1) =$",
         "options": [
           "$3$",
@@ -13534,11 +14621,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = a$ has two distinct real roots, then complete set of values of $a$ is :",
         "options": [
           "$(1, \\infty)$",
@@ -13552,11 +14640,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The set of all values of $m$ for which the equation has real roots is :",
         "options": [
           "$(-\\infty, 0)$",
@@ -13570,11 +14659,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The sum of maximum value of $x_1$ and minimum value of $x_2$ is :",
         "options": [
           "$513/8$",
@@ -13588,11 +14678,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$x_1 x_2 + x_1 x_3 + x_2 x_4 + x_3 x_4 =$",
         "options": [
           "$0$",
@@ -13606,11 +14697,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$x_2^3 + x_4^3 =$",
         "options": [
           "$\\frac{2+5\\sqrt{5}}{8}$",
@@ -13624,11 +14716,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f(6)$ is equal to :",
         "options": [
           "$120$",
@@ -13642,11 +14735,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Sum of the roots of $f(x)$ is equal to :",
         "options": [
           "$15$",
@@ -13660,11 +14754,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Product of the roots of $f(x)$ is equal to :",
         "options": [
           "$120$",
@@ -13678,11 +14773,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $(\\frac{\\alpha}{2})^2 + (\\frac{\\beta}{2})^2 + (\\frac{\\gamma}{2})^2 =$",
         "options": [
           "$1$",
@@ -13696,11 +14792,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Number of values of $\\theta$ in $[0, 2\\pi]$ for which at least two roots are equal, is :",
         "options": [
           "$2$",
@@ -13714,11 +14811,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The sum of all the coefficient of $P(x)$ is :",
         "options": [
           "$20$",
@@ -13732,11 +14830,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the range of $P(x)$ is $[m, \\infty)$, then the value of $m$ is :",
         "options": [
           "$-12$",
@@ -13750,11 +14849,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the above cubic has three real and distinct solutions for $x$ then exhaustive set of value of $\\lambda$ be :",
         "options": [
           "$3 < \\lambda < 10$",
@@ -13768,11 +14868,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the cubic has exactly two real and distinct solutions for $x$ then exhaustive set of values of $\\lambda$ be :",
         "options": [
           "$\\lambda \\in (-\\infty, 3) \\cup (30, \\infty)$",
@@ -13786,11 +14887,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the cubic has four real and distinct solutions for $x$ then exhaustive set of values of $\\lambda$ be :",
         "options": [
           "$\\lambda \\in (3, 10)$",
@@ -13804,11 +14906,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ can take both positive and negative values then $t$ must lie in the interval",
         "options": [
           "$(-\\frac{1}{4}, \\frac{1}{4})$",
@@ -13822,11 +14925,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ is non-negative $\\forall x \\ge 0$ then $t$ lies in the interval",
         "options": [
           "$[\\frac{1}{5}, \\frac{1}{4}]$",
@@ -13840,11 +14944,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| Column-I | Column-II |\n|---|---|\n| (A) The least positive integer $x$, for which $\\frac{2x - 1}{2x^3 + 3x^2 + x}$ is positive, is equal to | (P) $4/3$ |\n| (B) If the quadratic equation $3x^2 + 2(a^2 + 1)x + (a^2 - 3a + 2) = 0$ possess roots of opposite sign then $a$ can be equal to | (Q) $1$ |\n| (C) The roots of the equation $\\sqrt{x+3-4\\sqrt{x-1}} + \\sqrt{x+8-6\\sqrt{x-1}} = 1$ can be equal to | (R) $6$ |\n| (D) If the roots of the equation $x^4 - 8x^3 + bx^2 - cx + 16 = 0$ are all real and positive then $2(c - b)$ is equal to | (S) $16$<br>(T) $10$ |",
         "options": [
           "A $\\rightarrow$ P, B $\\rightarrow$ R, C $\\rightarrow$ S, D $\\rightarrow$ S",
@@ -13858,11 +14963,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A -> Q ; B -> P ; C -> R ; D -> S"
+        "answerKeyStr": "A -> Q ; B -> P ; C -> R ; D -> S",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Given the inequality $ax + k^2 > 0$. The complete set of values of '$a$' so that\n\n| Column-I | Column-II |\n|---|---|\n| (A) The inequality is valid for all values of $x$ and $k$ is | (P) $R$ |\n| (B) There exists a value of $x$ such that the inequality is valid for any value of $k$ is | (Q) $\\phi$ |\n| (C) There exists a value of $k$ such that the inequality is valid for all values of $x$ is | (R) $\\{0\\}$ |\n| (D) There exists values of $x$ and $k$ for which inequality is valid is | (S) $R - \\{0\\}$<br>(T) $\\{1\\}$ |",
         "options": [
           "A $\\rightarrow$ P, B $\\rightarrow$ S, C $\\rightarrow$ S, D $\\rightarrow$ P",
@@ -13876,11 +14982,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A -> Q ; B -> S ; C -> R ; D -> P"
+        "answerKeyStr": "A -> Q ; B -> S ; C -> R ; D -> P",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| Column-I | Column-II |\n|---|---|\n| (A) The real root(s) of the equation $x^4 - 8x^2 - 9 = 0$ are | (P) No real roots |\n| (B) The real root(s) of the equation $x^{2/3} + x^{1/3} - 2 = 0$ are | (Q) $-3, 3$ |\n| (C) The real root(s) of the equation $\\sqrt{3x + 1} + 1 = \\sqrt{x}$ are | (R) $-8, 1$ |\n| (D) The real root(s) of the equation $9^x - 10(3^x) + 9 = 0$ are | (S) $0, 2$ |",
         "options": [
           "A $\\rightarrow$ R, B $\\rightarrow$ Q, C $\\rightarrow$ R, D $\\rightarrow$ R",
@@ -13894,11 +15001,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A -> Q ; B -> R ; C -> P ; D -> S"
+        "answerKeyStr": "A -> Q ; B -> R ; C -> P ; D -> S",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| Column-I | Column-II |\n|---|---|\n| (A) If $a, b$ are the roots of equation $x^2 + ax + b = 0$ ($a, b \\in R$), then the number of ordered pairs $(a, b)$ is equal to | (P) $1$ |\n| (B) If $P = \\text{cosec}\\frac{\\pi}{8} + \\text{cosec}\\frac{2\\pi}{8} + \\text{cosec}\\frac{3\\pi}{8} + \\text{cosec}\\frac{13\\pi}{8} + \\text{cosec}\\frac{14\\pi}{8} + \\text{cosec}\\frac{15\\pi}{8}$ and $Q = 8\\sin\\frac{\\pi}{18}\\sin\\frac{5\\pi}{18}\\sin\\frac{7\\pi}{18}$, then $P + Q$ is equal to | (Q) $2$ |\n| (C) Let $a_1, a_2, a_3 ......$ be positive terms of a G.P. and $a_4, 1, 2, a_{10}$ are the consecutive terms of another G.P. If $\\prod_{i=2}^{12} a_i = 4^n$ where $m$ and $n$ are coprime, then $(m + n)$ equals | (R) $3$ |\n| (D) For $x, y \\in R$, if $x^2 - 2xy + y^2 - 6y + 9 = 0$, then the value of $5x - 4y$ is equal to | (S) $15$ |",
         "options": [
           "A $\\rightarrow$ S, B $\\rightarrow$ P, C $\\rightarrow$ R, D $\\rightarrow$ P",
@@ -13912,11 +15020,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A -> Q ; B -> P ; C -> S ; D -> R"
+        "answerKeyStr": "A -> Q ; B -> P ; C -> S ; D -> R",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = ax^2 + bx + c$ where $a, b, c$ are integers. If $\\sin\\frac{\\pi}{7} \\cdot \\sin\\frac{3\\pi}{7} + \\sin\\frac{3\\pi}{7} \\cdot \\sin\\frac{5\\pi}{7} + \\sin\\frac{5\\pi}{7} \\cdot \\sin\\frac{\\pi}{7} = f(\\cos\\frac{\\pi}{7})$ then find the value of $f(2)$:",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -13925,11 +15034,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "NUMERICAL",
+        "correctAnswer": "9"
       },
       {
         "questionNumber": 2,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $a, b, c, d$ be distinct integers such that the equation $(x-a)(x-b)(x-c)(x-d) - 9 = 0$ has an integer root '$r$', then the value of $a+b+c+d-4r$ is equal to :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -13938,11 +15049,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "correctAnswer": "0"
       },
       {
         "questionNumber": 3,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Consider the equation $(x^2+x+1)^2 - (m-3)(x^2+x+1) + m = 0$, where $m$ is a real parameter. The number of positive integral values of $m$ for which equation has two distinct real roots, is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -13951,11 +15064,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 4,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of positive integral values of $m, m \\le 16$ for which the equation given in the above questions has 4 distinct real root is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -13964,11 +15079,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "NUMERICAL",
+        "correctAnswer": "7"
       },
       {
         "questionNumber": 5,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If the equation $(m^2-12)x^4 - 8x^2 - 4 = 0$ has no real roots, then the largest value of $m$ is $p\\sqrt{q}$ where $p, q$ are coprime natural numbers, then $p+q =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -13977,11 +15094,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5"
       },
       {
         "questionNumber": 6,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The least positive integral value of '$x$' satisfying $(e^x - 2) \\left(\\sin\\left(x + \\frac{\\pi}{4}\\right)\\right)(x - \\log_e 2)(\\sin x - \\cos x) < 0$ is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -13990,11 +15109,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 7,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The integral values of $x$ for which $x^2 + 17x + 71$ is perfect square of a rational number are $a$ and $b$, then $|a - b| =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14003,11 +15124,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 8,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $P(x) = x^6 - x^5 - x^3 - x^2 - x$ and $\\alpha, \\beta, \\gamma, \\delta$ are the roots of the equation $x^4 - x^3 - x^2 - 1 = 0$, then $P(\\alpha) + P(\\beta) + P(\\gamma) + P(\\delta) =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14016,11 +15139,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "NUMERICAL",
+        "correctAnswer": "6"
       },
       {
         "questionNumber": 9,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of real values of '$a$' for which the largest value of the function $f(x) = x^2 + ax + 2$ in the interval $[-2, 4]$ is 6 will be :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14029,11 +15154,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "correctAnswer": "0"
       },
       {
         "questionNumber": 10,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of all values of $n$, (where $n$ is a whole number) for which the equation $\\frac{x-8}{n-10} = \\frac{n}{x}$ has no solution.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14042,11 +15169,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "NUMERICAL",
+        "correctAnswer": "6"
       },
       {
         "questionNumber": 11,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of negative integral values of $m$ for which the expression $x^2 + 2(m-1)x + m + 5$ is positive $\\forall x > 1$ is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14055,11 +15184,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "correctAnswer": "0"
       },
       {
         "questionNumber": 12,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If the expression $ax^4 + bx^3 - x^2 + 2x + 3$ has the remainder $4x + 3$ when divided by $x^2 + x - 2$, then $a + 4b = .....$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14068,11 +15199,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "NUMERICAL",
+        "correctAnswer": "9"
       },
       {
         "questionNumber": 13,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the smallest value of $k$ for which both the roots of equation $x^2 - 8kx + 16(k^2 - k + 1) = 0$ are real, distinct and have values atleast 4.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14081,11 +15214,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 14,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $x^2 - 3x + 2$ is a factor of $x^4 - px^2 + q = 0$, then $p + q =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14094,11 +15229,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "NUMERICAL",
+        "correctAnswer": "9"
       },
       {
         "questionNumber": 15,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The sum of all real values of $k$ for which the expression $x^2 + 2xy + ky^2 + 2x + k = 0$ can be resolved into linear factors is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14107,11 +15244,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 16,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The curve $y = (a + 1)x^2 + 2$ meets the curve $y = ax + 3, a \\ne -1$ in exactly one point, then $a^2 =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14120,11 +15259,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4"
       },
       {
         "questionNumber": 17,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the number of integral values of '$a$' for which the range of function $f(x) = \\frac{x^2-ax+1}{x^2-3x+2}$ is $(-\\infty, \\infty)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14133,11 +15274,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "correctAnswer": "0"
       },
       {
         "questionNumber": 18,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "When $x^{100}$ is divided by $x^2 - 3x + 2$, the remainder is $(2^{k+1} - 1)x - 2(2^k - 1)$, then $k =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14146,11 +15289,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "99"
+        "answerKeyStr": "99",
+        "type": "NUMERICAL",
+        "correctAnswer": "99"
       },
       {
         "questionNumber": 19,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $P(x)$ be a polynomial equation of least possible degree, with rational coefficients, having $\\sqrt{7} + \\sqrt{49}$ as one of its roots. Then the product of all the roots of $P(x) = 0$ is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14159,11 +15304,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "56"
+        "answerKeyStr": "56",
+        "type": "NUMERICAL",
+        "correctAnswer": "56"
       },
       {
         "questionNumber": 20,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The range of values $k$ for which the equation $2\\cos^4 x - \\sin^4 x + k = 0$ has atleast one solution is $[\\lambda, \\mu]$. Find the value of $(9\\mu + \\delta)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14172,11 +15319,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "NUMERICAL",
+        "correctAnswer": "7"
       },
       {
         "questionNumber": 21,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $P(x)$ be a polynomial with real coefficient and $P(x) - P'(x) = x^2 + 2x + 1$. Find $P(1)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14185,11 +15334,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 22,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the smallest positive integral value of $a$ for which the greater root, of the equation $x^2 - (a^2 + a + 1)x + a(a^2 + 1) = 0$ lies between the roots of the equation $x^2 - a^2 x - 2(a^2 - 2) = 0$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14198,11 +15349,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 23,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If the equation $x^4 + kx^2 + k = 0$ has exactly two distinct real roots, then the smallest integral value of $|k|$ is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14211,11 +15364,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 24,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $a, b, c, d$ be the roots of $x^4 - x^3 - x^2 - 1 = 0$. Also consider $P(x) = x^6 - x^5 - x^3 - x^2 - x$, then the value of $P",
         "options": [
           "+ P",
@@ -14229,11 +15384,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "NUMERICAL",
+        "correctAnswer": "6"
       },
       {
         "questionNumber": 25,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of integral values of $a, a \\in [-5, 5]$ for which the equation $x^2 + 2(a - 1)x + a + 5 = 0$ has one root smaller than 1 and the other root greater than 3 is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14242,11 +15399,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4"
       },
       {
         "questionNumber": 26,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of non-negative integral values of $n, n \\le 10$ so that a root of the equation $n^2 \\sin^2 x - 2\\sin x - (2n + 1) = 0$ lies in interval $[0, \\frac{\\pi}{2}]$ is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14255,11 +15414,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "8"
+        "answerKeyStr": "8",
+        "type": "NUMERICAL",
+        "correctAnswer": "8"
       },
       {
         "questionNumber": 27,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = ax^2 + bx + c$, where $a, b, c$ are integers and $a > 1$. If $f(x)$ takes the value $p$, a prime for two distinct integer values of $x$, then the number of integer values of $x$ for which $f(x)$ takes the value $2p$ is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14268,11 +15429,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "correctAnswer": "0"
       },
       {
         "questionNumber": 28,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $x$ and $y$ are real numbers connected by the equation $9x^2 + 2xy + y^2 - 92x - 20y + 244 = 0$, then the sum of maximum value of $x$ and the minimum value of $y$ is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14281,11 +15444,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "NUMERICAL",
+        "correctAnswer": "7"
       },
       {
         "questionNumber": 29,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Consider two numbers $a, b$, sum of which is $3$ and the sum of their cubes is $7$. Then sum of all possible distinct values of $a$ is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14294,11 +15459,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 30,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $y^2(y^2 - 6) + x^2 - 8x + 24 = 0$ and the minimum value of $x^2 + y^4$ is $m$ and maximum value is $M$; then find the value of $M - 2m$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14307,11 +15474,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4"
       },
       {
         "questionNumber": 31,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Consider the equation $x^3 - ax^2 + bx - c = 0$, where $a, b, c$ are rational number, $a \\ne 1$. It is given that $x_1, x_2$ and $x_1x_2$ are the real roots of the equation. If $(b+c) = 2(a+1)$, then $x_1x_2\\left(\\frac{a+1}{b+c}\\right) =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14320,11 +15489,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 32,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $\\alpha$ satisfy the equation $x^3 + 3x^2 + 4x + 5 = 0$ and $\\beta$ satisfy the equation $x^3 - 3x^2 + 4x - 5 = 0, \\alpha, \\beta \\in R$, then $\\alpha + \\beta =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14333,11 +15504,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "correctAnswer": "0"
       },
       {
         "questionNumber": 33,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $x, y$ and $z$ are positive reals and $x^2 + xy + y^2 = 2 ; y^2 + yz + z^2 = 1$ and $z^2 + zx + x^2 = 3$. If the value of $xy + yz + zx$ can be expressed as $\\frac{p}{\\sqrt{q}}$ where $p$ and $q$ are relatively prime positive integer find the value of $p - q$ :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14346,11 +15519,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5"
       },
       {
         "questionNumber": 34,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The number of ordered pairs $(a, b)$, where $a, b$ are integers satisfying the inequality $\\min(x^2 + (a-b)x + (1-a-b)) > \\max(-x^2 + (a+b)x - (1+a+b)) \\forall x \\in R$, is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14359,11 +15534,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "NUMERICAL",
+        "correctAnswer": "9"
       },
       {
         "questionNumber": 35,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The real value of $x$ satisfying $\\sqrt{20x} + \\sqrt{20x+13} = 13$ can be expressed as $\\frac{a}{b}$ where $a$ and $b$ are relatively prime positive integers. Find the value of $b$?",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14372,11 +15549,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5"
       },
       {
         "questionNumber": 36,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If the range of the values of $a$ for which the roots of the equation $x^2 - 2x - a^2 + 1 = 0$ lie between the roots of the equation $x^2 - 2(a+1)x + a(a-1) = 0$ is $(p, q)$, then find the value of $\\left(q - \\frac{1}{p}\\right)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14385,11 +15564,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5"
       },
       {
         "questionNumber": 37,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the number of positive integers satisfying the inequality $x^2 - 10x + 16 < 0$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14398,11 +15579,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5"
       },
       {
         "questionNumber": 38,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\sin\\theta$ and $\\cos\\theta$ are the roots of the quadratic equation $ax^2 + bx + c = 0 (ac \\ne 0)$. Then find the value of $\\frac{b^2 - a^2}{ac}$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14411,11 +15594,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 39,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let the inequality $\\sin^2 x + a\\cos x + a^2 \\ge 1 + \\cos x$ is satisfied $\\forall x \\in R$, for $a \\in (-\\infty, k_1] \\cup [k_2, \\infty)$, then $|k_1| + |k_2| =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14424,11 +15609,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 40,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "$\\alpha$ and $\\beta$ are roots of the equation $2x^2 - 35x + 2 = 0$. Find the value of $\\sqrt{(2\\alpha - 35)^3(2\\beta - 35)^3}$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14437,11 +15624,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "8"
+        "answerKeyStr": "8",
+        "type": "NUMERICAL",
+        "correctAnswer": "8"
       },
       {
         "questionNumber": 41,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The sum of all integral values of '$a$' for which the equation $2x^2 - (1+2a)x + 1 + a = 0$ has a integral root.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14450,11 +15639,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 42,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x)$ be a polynomial of degree 8 such that $F(r) = \\frac{1}{r}, r = 1, 2, 3, ....., 8, 9$, then $\\frac{1}{F(10)} =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14463,11 +15654,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5"
       },
       {
         "questionNumber": 43,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $\\alpha, \\beta$ are two real roots of equation $x^2 + px + q = 0, p, q \\in R, q \\ne 0$. If the quadratic equation $g(x) = 0$ has two roots $\\alpha + \\frac{1}{\\alpha}, \\beta + \\frac{1}{\\beta}$ such that sum of its roots is equal to product of roots, then number of integral values $q$ can attain is :",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14476,11 +15669,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 44,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\cos A, \\cos B$ and $\\cos C$ are the roots of cubic $x^3 + ax^2 + bx + c = 0$, where $A, B, C$ are the angles of a triangle then find the value of $a^2 - 2b - 2c$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14489,11 +15684,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 45,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the number of positive integral values of $k$ for which $kx^2 + (k-3)x + 1 < 0$ for atleast one positive $x$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -14502,7 +15699,9 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "0"
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "correctAnswer": "0"
       }
     ]
   },
@@ -14511,7 +15710,7 @@ window.DEFAULT_BLACKBOOK = [
     "questions": [
       {
         "questionNumber": 1,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\frac{dy}{dx} \\left( \\frac{1 + \\cos x}{y} \\right) = - \\sin x$ and $f\\left(\\frac{\\pi}{2}\\right) = -1$, then $f(0)$ is:",
         "options": [
           "2",
@@ -14525,11 +15724,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The differential equation satisfied by family of curves $y = Ae^x + Be^{3x} + Ce^{5x}$ where $A, B, C$ are arbitrary constants is:",
         "options": [
           "$\\frac{d^3y}{dx^3} - 9 \\frac{d^2y}{dx^2} + 23 \\frac{dy}{dx} + 15y = 0$",
@@ -14543,11 +15743,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = y(x)$ and it follows the relation $e^{xy^2} + y \\cos(x^2) = 5$ then $y'(0)$ is equal to:",
         "options": [
           "4",
@@ -14561,11 +15762,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$(x^2 + y^2)dy = x y dx$. If $y(x_0) = e$, $y(1) = 1$, then the value of $x_0$ is equal to:",
         "options": [
           "$\\sqrt{3}e$",
@@ -14579,11 +15781,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The differential equation $\\frac{dy}{dx} = \\frac{\\sqrt{1-y^2}}{y}$ determines a family of circles with:",
         "options": [
           "Variable radii and fixed centre at $(0, 1)$",
@@ -14597,11 +15800,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Interval contained in the domain of definition of non-zero solutions of the differential equation $(x-3)^2 y' + y = 0$ is:",
         "options": [
           "$\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$",
@@ -14615,11 +15819,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "A function $y = f(x)$ satisfies the differential equation $(x+1)f'(x) - 2(x^2 + x)f(x) = \\frac{e^{x^2}}{(x+1)}$; $\\forall x > -1$. If $f(0) = 5$, then $f(x)$ is:",
         "options": [
           "$\\left(\\frac{3x+5}{x+1}\\right)e^{x^2}$",
@@ -14633,11 +15838,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The solution of the differential equation $2x^2 y \\frac{dy}{dx} = \\tan(x^2 y^2) - 2xy^2$ given $y(1) = \\sqrt{\\frac{\\pi}{2}}$ is:",
         "options": [
           "$\\sin(x^2 y^2) - 1 = 0$",
@@ -14651,11 +15857,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The differential equation whose general solution is given by $y = C_1 \\cos(x+C_2) - C_3 e^{-x+C_4} + C_5 \\sin x$, where $C_1, C_2, \\ldots, C_5$ are constants is:",
         "options": [
           "$\\frac{d^4y}{dx^4} - \\frac{d^2y}{dx^2} + y = 0$",
@@ -14669,11 +15876,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = e^{(\\alpha+1)x}$ be solution of differential equation $\\frac{d^2y}{dx^2} - 4\\frac{dy}{dx} + 4y = 0$; then $\\alpha$ is:",
         "options": [
           "0",
@@ -14687,11 +15895,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The order and degree of the differential equation $\\left(\\frac{dy}{dx}\\right)^{1/3} - 4 \\frac{d^2y}{dx^2} - 7x = 0$ are $\\alpha$ and $\\beta$, then the value of $(\\alpha + \\beta)$ is:",
         "options": [
           "3",
@@ -14705,11 +15914,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "General solution of differential equation of $f(x) \\frac{dy}{dx} = f^2(x) + f(x)y + f'(x)y$ is ($c$ being arbitrary constant):",
         "options": [
           "$y = f(x) + c e^x$",
@@ -14723,11 +15933,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The order and degree respectively of the differential equation of all tangent lines to parabola $x^2 = 2y$ is:",
         "options": [
           "1, 2",
@@ -14741,11 +15952,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The general solution of the differential equation $\\frac{dy}{dx} + x(x+y) = x(x+y)^3 - 1$ is:",
         "options": [
           "$\\ln\\left| \\frac{(x+y+1)(x+y-1)}{(x+y)^4} \\right| = x^2 + C$",
@@ -14759,11 +15971,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The general solution of $\\frac{dy}{dx} = 2y \\tan x + \\tan^2 x$ is:",
         "options": [
           "$y \\cos^2 x = \\frac{x}{2} - \\frac{\\sin 2x}{4} + C$",
@@ -14777,11 +15990,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The solution of differential equation $\\frac{d^2y}{dx^2} = \\frac{dy}{dx}, y(0) = 3$ and $y'(0) = 2$:",
         "options": [
           "is a periodic function",
@@ -14795,11 +16009,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The solution of the differential equation $(x^2+1)\\frac{d^2y}{dx^2} = 2x\\left(\\frac{dy}{dx}\\right)$ under the conditions $y(0) = 1$ and $y'(0) = 3$, is:",
         "options": [
           "$y = x^2 + 3x + 1$",
@@ -14813,11 +16028,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The differential equation of the family of curves $cy^2 = 2x + c$ (where $c$ is an arbitrary constant) is:",
         "options": [
           "$\\frac{x dy}{dx} = 1$",
@@ -14831,11 +16047,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The solution of the equation $\\frac{dy}{dx} + \\frac{1}{x} \\tan y = \\frac{1}{x^2} \\tan y \\sin y$ is:",
         "options": [
           "$2y = \\sin y (1 - 2cx^2)$",
@@ -14849,11 +16066,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Solution of the differential equation $x dy - y dx - \\sqrt{x^2 + y^2} dx = 0$ is:",
         "options": [
           "$y - \\sqrt{x^2 + y^2} = cx^2$",
@@ -14867,11 +16085,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be differentiable function on the interval $(0, \\infty)$ such that $f(1)=1$ and $\\lim_{t \\to x} \\frac{t^3 f(x) - x^3 f(t)}{t^2 - x^2} = \\frac{1}{2} \\forall x > 0$, then $f(x)$ is:",
         "options": [
           "$\\frac{1}{4x} + \\frac{3x^2}{4}$",
@@ -14885,11 +16104,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The population $p(t)$ at time '$t$' of a certain mouse species satisfies the differential equation $\\frac{d}{dt} p(t) = 0.5 p(t) - 450$. If $p(0) = 850$, then the time at which the population becomes zero is:",
         "options": [
           "$\\frac{1}{2} \\ln 18$",
@@ -14903,11 +16123,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The solution of the differential equation $\\sin 2y \\frac{dy}{dx} + 2 \\tan x \\cos^2 y = 2 \\sec x \\cos^3 y$ is ($C$ is arbitrary constant):",
         "options": [
           "$\\cos y \\sec x = \\tan x + C$",
@@ -14921,11 +16142,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The solution of the differential equation $\\frac{dy}{dx} = (4x + y + 1)^2$ is ($C$ is arbitrary constant):",
         "options": [
           "$4x + y + 1 = 2 \\tan(2x + y + C)$",
@@ -14939,11 +16161,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If a curve is such that line joining origin to any point $P(x, y)$ on the curve and the line parallel to y-axis through $P$ are equally inclined to tangent to curve at $P$, then the differential equation of the curve is:",
         "options": [
           "$x \\left(\\frac{dy}{dx}\\right)^2 - 2y \\frac{dy}{dx} = x$",
@@ -14957,11 +16180,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $y = f(x)$ satisfy the differential equation $\\frac{dy}{dx} + \\frac{y}{x} = x^2; f(1) = 1$; then value of $f(3)$ equals:",
         "options": [
           "7",
@@ -14975,11 +16199,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $y = f(x)$ and $\\frac{x}{y} \\frac{dy}{dx} = \\frac{3x^2 - y}{2y - x^2}; f(1) = 1$ then the possible value of $\\frac{1}{3} f(3)$ equals:",
         "options": [
           "9",
@@ -14993,11 +16218,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $y = f(x)$ be a real valued function satisfying $x \\frac{dy}{dx} = x^2 + y - 2, f(1) = 1$, then:",
         "options": [
           "$f(x)$ is minimum at $x = 1$",
@@ -15011,11 +16237,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c"
+        "answerKeyStr": "a,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2
+        ],
+        "correctAnswer": "A,C"
       },
       {
         "questionNumber": 2,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Solution of differential equation $x \\cos x \\left(\\frac{dy}{dx}\\right) + y (x \\sin x + \\cos x) = 1$ is:",
         "options": [
           "$xy = \\sin x + c \\cos x$",
@@ -15029,11 +16261,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 3,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If a differentiable function satisfies $(x-y)f(x+y) - (x+y)f(x-y) = 2(x^2 y - y^3) \\forall x, y \\in \\mathbb{R}$ and $f(1) = 2$, then:",
         "options": [
           "$f(x)$ must be polynomial function",
@@ -15047,11 +16285,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c"
+        "answerKeyStr": "a,b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2
+        ],
+        "correctAnswer": "A,B,C"
       },
       {
         "questionNumber": 4,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "A function $y = f(x)$ satisfies the differential equation $f(x) \\sin 2x - \\cos x + (1 + \\sin^2 x) f'(x) = 0$ with $f(0) = 0$. The value of $f\\left(\\frac{\\pi}{6}\\right)$ equals to:",
         "options": [
           "$\\frac{2}{5}$",
@@ -15065,11 +16310,16 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0
+        ],
+        "correctAnswer": "A"
       },
       {
         "questionNumber": 5,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Solution of the differential equation $(2 + 2x^2 \\sqrt{y})y dx + (x^2 \\sqrt{y} + 2)x dy = 0$ is/are:",
         "options": [
           "$xy(x^2 \\sqrt{y} + 5) = c$",
@@ -15083,11 +16333,16 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1
+        ],
+        "correctAnswer": "B"
       },
       {
         "questionNumber": 6,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $y(x)$ satisfies the differential equation $\\frac{dy}{dx} = \\sin 2x + 3y \\cot x$ and $y\\left(\\frac{\\pi}{2}\\right) = 2$ then which of the following statement(s) is/are correct?",
         "options": [
           "$y\\left(\\frac{\\pi}{6}\\right) = 0$",
@@ -15101,11 +16356,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c"
+        "answerKeyStr": "a,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2
+        ],
+        "correctAnswer": "A,C"
       },
       {
         "questionNumber": 1,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$y = g(x)$ satisfies the differential equation:",
         "options": [
           "$\\frac{dy}{dx} - y = 12x^2 + 2$",
@@ -15119,11 +16380,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $g(0)$ equals to:",
         "options": [
           "0",
@@ -15137,11 +16399,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The graph of $y = h(x)$ is symmetric with respect to line:",
         "options": [
           "$x = -1$",
@@ -15155,11 +16418,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $f(g(0)) + g(f(0))$ is equal to:",
         "options": [
           "1",
@@ -15173,11 +16437,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The largest possible value of $h(x) \\forall x \\in \\mathbb{R}$ is:",
         "options": [
           "1",
@@ -15191,11 +16456,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The function $g(x)$ is:",
         "options": [
           "$x(2 + x e^x)$",
@@ -15209,11 +16475,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The range of function $g(x)$ is:",
         "options": [
           "$\\mathbb{R}$",
@@ -15227,11 +16494,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to -\\infty} g(x)$ is:",
         "options": [
           "0",
@@ -15245,11 +16513,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the contents of **Column-I (Differential equation)** to **Column-II Solution (Integral curves)**:\n\n| Column-I | Column-II |\n|---|---|\n| (A) $y - x \\frac{dy}{dx} = y^2 + \\frac{dy}{dx}$ | (P) $y = A_1 x^2 + A_2 x + A_3$ |\n| (B) $(2x - 10y^3)\\frac{dy}{dx} + y = 0$ | (Q) $x^2 y^2 + 1 = cy$ |\n| (C) $\\left(\\frac{dy}{dx}\\right)\\left(\\frac{d^3y}{dx^3}\\right) - 3\\left(\\frac{d^2y}{dx^2}\\right)^2 = 0$ | (R) $(x+1)(1-y) = cy$ |\n| (D) $(x^2y^2 - 1)dy + 2xy^3 dx = 0$ | (S) $x = A_1 y^2 + A_2 y + A_3$ |\n|  | (T) $xy^2 = 2y^5 + c$ |",
         "options": [
           "A $\\rightarrow$ Q, B $\\rightarrow$ Q, C $\\rightarrow$ T, D $\\rightarrow$ Q",
@@ -15263,11 +16532,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A -> R ; B -> T ; C -> S ; D -> Q"
+        "answerKeyStr": "A -> R ; B -> T ; C -> S ; D -> Q",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the contents of Column-I to Column-II:\n\n| Column-I | Column-II |\n|---|---|\n| (A) Solution of differential equation $[3x^2 y + 2xy - e^x(1+x)]dx + (x^3 + x^2)dy = 0$ is: | (P) $y^2(x^2 + 1 + c e^{x^2}) = 1$ |\n| (B) Solution of differential equation $y dx - x dy - 3xy^2 e^{x^2} dx = 0$ is: | (Q) $(x^2 + x^3)y - x e^x = c$ |\n| (C) Solution of differential equation $\\frac{dy}{dx} = xy(x^2 y^2 - 1)$ is: | (R) $\\frac{x}{y} - \\frac{3}{2}e^{x^2} = c$ |\n| (D) Solution of differential equation $\\frac{dy}{dx}(x^2 y^3 + xy) = 1$ is: | (S) $\\frac{1}{x} = 2 - y^2 + c e^{-y^2/2}$ |\n|  | (T) $\\frac{2}{x} = 1 - y^2 + c e^{-y/2}$\n\n### |",
         "options": [
           "A $\\rightarrow$ P, B $\\rightarrow$ P, C $\\rightarrow$ Q, D $\\rightarrow$ Q",
@@ -15281,11 +16551,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A -> Q ; B -> R ; C -> P ; D -> S"
+        "answerKeyStr": "A -> Q ; B -> R ; C -> P ; D -> S",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the value of $|a|$ for which the area of triangle included between the coordinate axes and any tangent to the curve $x^a y = \\lambda^a$ is constant (where $\\lambda$ is constant).",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15294,11 +16565,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 2,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $y = f(x)$ satisfies the differential equation $xy(1+y)dx = dy$. If $f(0) = 1$ and $f(2) = \\frac{e^2}{k - e^2}$, then find the value of $k$.",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15307,11 +16580,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 3,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $y^2 = 3 \\cos^2 x + 2 \\sin^2 x$, then the value of $y^4 + y^3 \\frac{d^2y}{dx^2}$ is.",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15320,11 +16595,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "6"
+        "answerKeyStr": "6",
+        "type": "NUMERICAL",
+        "correctAnswer": "6"
       },
       {
         "questionNumber": 4,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x)$ be a differentiable function in $[-1, \\infty)$ and $f(0) = 1$ such that $\\lim_{t \\to x+1} \\frac{t^2 f(x+1) - (x+1)^2 f(t)}{f(t) - f(x+1)} = 1$. Find the value of $\\lim_{x \\to 1} \\frac{\\ln(f(x)) - \\ln 2}{x-1}$.",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15333,11 +16610,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 5,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $y = (a \\sin x + (b+c)\\cos x)e^{x+d}$, where $a, b, c$ and $d$ are parameters represent a family of curves, then differential equation for the given family of curves is given by $y'' - \\alpha y' + \\beta y = 0$, then $\\alpha + \\beta =$.",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15346,11 +16625,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4"
       },
       {
         "questionNumber": 6,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $y = f(x)$ satisfies the differential equation $xy(1+y)dx = dy$. If $f(0) = 1$ and $f(2) = \\frac{e^2}{k - e^2}$, then find the value of $k$. *(Note: This question appears duplicated in the source material)*",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15359,7 +16640,9 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       }
     ]
   },
@@ -15368,7 +16651,7 @@ window.DEFAULT_BLACKBOOK = [
     "questions": [
       {
         "questionNumber": 1,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The area enclosed by the curve $[x + 3y] = [x - 2]$ where $x \\in [3, 4)$ is (where $[\\cdot]$ denotes greatest integer function):",
         "options": [
           "$\\frac{2}{3}$",
@@ -15382,11 +16665,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The area of region enclosed by the curves $y = x^2$ and $y = \\sqrt{|x|}$ is:",
         "options": [
           "$\\frac{1}{3}$",
@@ -15400,11 +16684,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Area enclosed by the figure described by the equation $x^4 + 1 = 2x^2 + y^2$, is:",
         "options": [
           "$2$",
@@ -15418,11 +16703,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The area defined by $|y| \\le e^{-|x|} - \\frac{1}{2}$ in cartesian co-ordinate system, is:",
         "options": [
           "$(4 - 2\\ln 2)$",
@@ -15436,11 +16722,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For each positive integer $n > 1$; $A_n$ represents the area of the region restricted to the following two inequalities: $\\frac{x^2}{n^2} + y^2 \\le 1$ and $x^2 + \\frac{y^2}{n^2} \\le 1$. Find $\\lim_{n \\to \\infty} A_n$.",
         "options": [
           "$4$",
@@ -15454,11 +16741,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The ratio in which the area bounded by curves $y^2 = 12x$ and $x^2 = 12y$ is divided by the line $x = 3$ is:",
         "options": [
           "$7 : 15$",
@@ -15472,11 +16760,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of positive real parameter '$a$' such that area of region bounded by parabolas $y = x - ax^2$, $ay = x^2$ attains its maximum value is equal to:",
         "options": [
           "$\\frac{1}{2}$",
@@ -15490,11 +16779,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For $0 < r < 1$, let $n_r$ denotes the line that is normal to the curve $y = x^r$ at the point $(1, 1)$. Let $S_r$ denotes the region in the first quadrant bounded by the curve $y = x^r$; the $x$-axis and the line $n_r$. Then the value of $r$ that minimizes the area of $S_r$ is:",
         "options": [
           "$\\frac{1}{\\sqrt{2}}$",
@@ -15508,11 +16798,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The area bounded by $|x| = 1 - y^2$ and $|x| + |y| = 1$ is:",
         "options": [
           "$\\frac{1}{3}$",
@@ -15526,11 +16817,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Point $A$ lies on curve $y = e^{-x^2}$ and has the coordinate $(x, e^{-x^2})$ where $x > 0$. Point $B$ has coordinates $(x, 0)$. If '$O$' is the origin, then the maximum area of $\\Delta AOB$ is:",
         "options": [
           "$\\frac{1}{\\sqrt{8e}}$",
@@ -15544,11 +16836,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The area enclosed between the curves $y = ax^2$ and $x = ay^2$ ($a > 0$) is $1$ sq. unit, then the value of $a$ is:",
         "options": [
           "$\\frac{1}{\\sqrt{3}}$",
@@ -15562,11 +16855,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = x^3 - 3x^2 + 3x + 1$ and $g$ be the inverse of it; then area bounded by the curve $y = g(x)$ with $x$-axis between $x = 1$ to $x = 2$ is (in square units):",
         "options": [
           "$\\frac{1}{2}$",
@@ -15580,11 +16874,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Area bounded by $x^2y^2 + y^4 - x^2 - 5y^2 + 4 = 0$ is equal to:",
         "options": [
           "$\\frac{4\\pi}{3} + \\sqrt{2}$",
@@ -15598,11 +16893,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f : \\mathbb{R}^+ \\to \\mathbb{R}^+$ is an invertible function such that $f'(x) > 0$ and $f''(x) > 0 \\;\\forall x \\in$. If $f(1) = 1$ and $f(5) = 5$ and area bounded by $y = f(x)$, $x$-axis, $x = 1$ and $x = 5$ is $8$ sq. units. Then the area bounded by $y = f^{-1}(x)$, $x$-axis, $x = 1$ and $x = 5$ is:",
         "options": [
           "$12$",
@@ -15616,11 +16912,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "A circle centered at origin and having radius $\\pi$ units is divided by the curve $y = \\sin x$ in two parts. Then area of the upper part equals to:",
         "options": [
           "$\\frac{\\pi^2}{2}$",
@@ -15634,11 +16931,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The area of the loop formed by $y^2 = x(1 - x^3)dx$ is:",
         "options": [
           "$\\int_0^1 \\sqrt{x - x^4} \\,dx$",
@@ -15652,11 +16950,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\min\\left[x^2, \\sin\\left(\\frac{x}{2}\\right), (x - 2\\pi)^2\\right]$, the area bounded by the curve $y = f(x)$, $x$-axis, $x = 0$ and $x = 2\\pi$ is given by\n(Note: $x_1$ is the point of intersection of the curves $x^2$ and $\\sin\\left(\\frac{x}{2}\\right)$; $x_2$ is the point of intersection of the curves $\\sin\\left(\\frac{x}{2}\\right)$ and $(x - 2\\pi)^2$)",
         "options": [
           "$\\int_0^{x_1} \\sin\\left(\\frac{x}{2}\\right) dx + \\int_{x_1}^\\pi x^2 dx + \\int_\\pi^{x_2} (x - 2\\pi)^2 dx + \\int_{x_2}^{2\\pi} \\sin\\left(\\frac{x}{2}\\right) dx$",
@@ -15670,11 +16969,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The area enclosed between the curves $|x| + |y| \\ge 2$ and $y^2 = 4\\left(1 - \\frac{x^2}{9}\\right)$ is:",
         "options": [
           "$(6\\pi - 4)$ sq. units",
@@ -15688,11 +16988,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $f(x)$ be a polynomial function of degree 3 where $a < b < c$ and $f",
         "options": [
           "= f",
@@ -15706,11 +17007,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,c,d"
+        "answerKeyStr": "b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "B,C,D"
       },
       {
         "questionNumber": 2,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "$T_n = \\sum_{r=2n}^{3n-1} \\frac{r}{r^2 + n^2}$ , $S_n = \\sum_{r=2n+1}^{3n} \\frac{r}{r^2 + n^2}$, then $\\forall n \\in \\{1, 2, 3, \\dots\\}$:",
         "options": [
           "$T_n > \\frac{1}{2}\\ln 2$",
@@ -15724,11 +17032,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 3,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If a curve $y = a\\sqrt{x} + bx$ passes through point $(1, 2)$ and the area bounded by curve, line $x = 4$ and $x$-axis is $8$, then:",
         "options": [
           "$a = 3$",
@@ -15742,11 +17056,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,d"
+        "answerKeyStr": "a,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          3
+        ],
+        "correctAnswer": "A,D"
       },
       {
         "questionNumber": 4,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Area enclosed by the curves $y = x^2 + 1$ and a normal drawn to it with gradient $-1$; is equal to:",
         "options": [
           "$\\frac{2}{3}$",
@@ -15757,14 +17077,19 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
         "has_graph": false,
         "chapter": "Area Under Curves",
-        "correctOption": 3,
+        "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          3
+        ],
+        "correctAnswer": "D"
       },
       {
         "questionNumber": 1,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 3:**\nLet $f : A \\to B$, $\\displaystyle f(x) = \\frac{x + a}{bx^2 + cx + 2}$, where $A$ represents domain set and $B$ represents range set of function $f(x)$, $a, b, c \\in \\mathbb{R}$, $f(-1) = 0$ and $y = 1$ is an asymptote of $y = f(x)$ and $y = g(x)$ is the inverse of $f(x)$.\n\n$g(0)$ is equal to:",
         "options": [
           "$-1$",
@@ -15778,11 +17103,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 3:**\nLet $f : A \\to B$, $\\displaystyle f(x) = \\frac{x + a}{bx^2 + cx + 2}$, where $A$ represents domain set and $B$ represents range set of function $f(x)$, $a, b, c \\in \\mathbb{R}$, $f(-1) = 0$ and $y = 1$ is an asymptote of $y = f(x)$ and $y = g(x)$ is the inverse of $f(x)$.\n\nArea bounded between the curves $y = f(x)$ and $y = g(x)$ is:",
         "options": [
           "$2\\sqrt{5} + \\ln\\left(\\frac{3-\\sqrt{5}}{3+\\sqrt{5}}\\right)$",
@@ -15796,11 +17122,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 1 to 3:**\nLet $f : A \\to B$, $\\displaystyle f(x) = \\frac{x + a}{bx^2 + cx + 2}$, where $A$ represents domain set and $B$ represents range set of function $f(x)$, $a, b, c \\in \\mathbb{R}$, $f(-1) = 0$ and $y = 1$ is an asymptote of $y = f(x)$ and $y = g(x)$ is the inverse of $f(x)$.\n\nArea of region enclosed by asymptotes of curves $y = f(x)$ and $y = g(x)$ is:",
         "options": [
           "$4$",
@@ -15814,11 +17141,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 4 to 6:**\nFor $j = 0, 1, 2, \\dots, n$ let $S_j$ be the area of region bounded by the $x$-axis and the curve $ye^x = \\sin x$ for $j\\pi \\le x \\le (j+1)\\pi$.\n\nThe value of $S_0$ is:",
         "options": [
           "$\\frac{1}{2}(1 + e^\\pi)$",
@@ -15832,11 +17160,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 4 to 6:**\nFor $j = 0, 1, 2, \\dots, n$ let $S_j$ be the area of region bounded by the $x$-axis and the curve $ye^x = \\sin x$ for $j\\pi \\le x \\le (j+1)\\pi$.\n\nThe ratio $\\frac{S_{2009}}{S_{2010}}$ equals:",
         "options": [
           "$e^{-\\pi}$",
@@ -15850,11 +17179,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "**Paragraph for Question Nos. 4 to 6:**\nFor $j = 0, 1, 2, \\dots, n$ let $S_j$ be the area of region bounded by the $x$-axis and the curve $ye^x = \\sin x$ for $j\\pi \\le x \\le (j+1)\\pi$.\n\nThe value of $\\sum_{j=0}^{\\infty} S_j$ equals to:",
         "options": [
           "$\\frac{e^\\pi(1+e^\\pi)}{2(e^\\pi - 1)}$",
@@ -15868,11 +17198,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match Column-I to Column-II:\n**Column-I**\n(A) Area of region formed by points $(x, y)$ satisfying $[x]^2 = [y]^2$ for $0 \\le x \\le 4$ is equal to (where $[\\cdot]$ denotes greatest integer function)\n(B) The area of region formed by points $(x, y)$ satisfying $x + y \\le 6$, $x^2 + y^2 \\le 6y$ and $y^2 \\le 8x$ is $\\frac{k\\pi - 2}{12}$, then $k =$\n(C) The area in the first quadrant bounded by the curve $y = \\sin x$ and the line $\\frac{2y - 1}{\\sqrt{2} - 1} = \\frac{2}{\\pi}(6x - \\pi)$ is $\\left[\\frac{\\sqrt{3} - \\sqrt{2}}{2} - \\frac{(\\sqrt{2} + 1)\\pi}{k}\\right]$, then $k =$\n(D) If the area bounded by the graph of $y = xe^{-ax} \\; (a > 0)$ and the abscissa axis is $\\frac{1}{9}$ then the value of '$a$' is equal to\n**Column-II**\n(P) $48$\n(Q) $27$\n(R) $7$\n(S) $4$\n(T) $3$",
         "options": [],
         "exerciseName": "Exercise-4: Matching Type Problems",
@@ -15881,11 +17212,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "(A) $\\to$ (R); (B) $\\to$ (Q); (C) $\\to$ (P); (D) $\\to$ (T)"
+        "answerKeyStr": "(A) $\\to$ (R); (B) $\\to$ (Q); (C) $\\to$ (P); (D) $\\to$ (T)",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f$ be a differentiable function satisfying the condition $f\\left(\\frac{x}{y}\\right) = \\frac{f(x)}{f(y)} \\; (y \\ne 0, f(y) \\ne 0)$ $\\forall x, y \\in \\mathbb{R}$ and $f'(1) = 2$. If the smaller area enclosed by $y = f(x)$, $x^2 + y^2 = 2$ is $A$, then find $[A]$, where $[\\cdot]$ represents the greatest integer function.",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15894,11 +17226,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "$1$"
+        "answerKeyStr": "$1$",
+        "type": "NUMERICAL",
+        "correctAnswer": "$1$"
       },
       {
         "questionNumber": 2,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x)$ be a function which satisfy the equation $f(xy) = f(x) + f(y)$ for all $x > 0, y > 0$ such that $f'(1) = 2$. Let $A$ be the area of the region bounded by the curves $y = f(x)$, $y = |x^3 - 6x^2 + 11x - 6|$ and $x = 0$, then find value of $\\frac{28}{17}A$.",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15907,11 +17241,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "$7$"
+        "answerKeyStr": "$7$",
+        "type": "NUMERICAL",
+        "correctAnswer": "$7$"
       },
       {
         "questionNumber": 3,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If the area bounded by circle $x^2 + y^2 = 4$, the parabola $y = x^2 + x + 1$ and the curve $y = \\left[\\sin^2\\left(\\frac{x}{4}\\right) + \\cos\\left(\\frac{x}{4}\\right)\\right]$, (where $[\\cdot]$ denotes the greatest integer function) and $x$-axis is $\\left(\\sqrt{3} + \\frac{2\\pi}{3} - \\frac{1}{k}\\right)$, then the numerical quantity $k$ should be:",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15920,11 +17256,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "$6$"
+        "answerKeyStr": "$6$",
+        "type": "NUMERICAL",
+        "correctAnswer": "$6$"
       },
       {
         "questionNumber": 4,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let the function $f : [-4, 4] \\to [-1, 1]$ be defined implicitly by the equation $x + 5y - y^5 = 0$. If the area of triangle formed by tangent and normal to $f(x)$ at $x = 0$ and the line $y = 5$ is $A$, find $\\frac{A}{13}$.",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15933,11 +17271,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "$5$"
+        "answerKeyStr": "$5$",
+        "type": "NUMERICAL",
+        "correctAnswer": "$5$"
       },
       {
         "questionNumber": 5,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Area of the region bounded by $[x]^2 = [y]^2$, if $x \\in$, where $[\\cdot]$ denotes the greatest integer function, is:",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15946,11 +17286,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "$8$"
+        "answerKeyStr": "$8$",
+        "type": "NUMERICAL",
+        "correctAnswer": "$8$"
       },
       {
         "questionNumber": 6,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Consider $y = x^2$ and $f(x)$ where $f(x)$, is a differentiable function satisfying $f(x+1) + f(z-1) = f(x+z) \\;\\forall x,z \\in \\mathbb{R}$ and $f(0) = 0$; $f'(0) = 4$. If area bounded by curve $y = x^2$ and $y = f(x)$ is $\\Delta$, find the value of $\\left(\\frac{3}{16}\\Delta\\right)$.",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15959,11 +17301,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "$2$"
+        "answerKeyStr": "$2$",
+        "type": "NUMERICAL",
+        "correctAnswer": "$2$"
       },
       {
         "questionNumber": 7,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The least integer which is greater than or equal to the area of region in $x - y$ plane satisfying $x^6 - x^2 + y^2 \\le 0$ is:",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15972,11 +17316,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "$2$"
+        "answerKeyStr": "$2$",
+        "type": "NUMERICAL",
+        "correctAnswer": "$2$"
       },
       {
         "questionNumber": 8,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The set of points $(x, y)$ in the plane satisfying $x^{2/5} + |y| = 1$ form a curve enclosing a region of area $\\frac{p}{q}$ square units, where $p$ and $q$ are relatively prime positive integers. Find $p - q$.",
         "options": [],
         "exerciseName": "Exercise-5: Subjective Type Problems",
@@ -15985,7 +17331,9 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "$1$"
+        "answerKeyStr": "$1$",
+        "type": "NUMERICAL",
+        "correctAnswer": "$1$"
       }
     ]
   },
@@ -15994,7 +17342,7 @@ window.DEFAULT_BLACKBOOK = [
     "questions": [
       {
         "questionNumber": 1,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int a^x \\left( \\ln x + \\ln a \\cdot \\ln \\left( \\frac{x}{e} \\right)^x \\right) dx =$",
         "options": [
           "$a^x \\ln \\left( \\frac{e}{x} \\right)^{2x} + C$",
@@ -16008,11 +17356,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of :\n$\\lim_{n \\to \\infty} \\left( \\frac{1}{\\sqrt{n}\\sqrt{n+1}} + \\frac{1}{\\sqrt{n}\\sqrt{n+2}} + \\frac{1}{\\sqrt{n}\\sqrt{n+3}} + \\dots + \\frac{1}{\\sqrt{n}\\sqrt{2n}} \\right)$ is :",
         "options": [
           "$\\sqrt{2} - 1$",
@@ -16026,11 +17375,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\int \\frac{\\sin x}{\\sin (x - \\alpha)} dx = Ax + B \\log \\sin (x - \\alpha) + C$, then value of $(A, B)$ is :",
         "options": [
           "$(\\sin \\alpha, \\cos \\alpha)$",
@@ -16044,11 +17394,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the integral $\\int_0^2 \\frac{\\log(x^2 + 2)}{(x + 2)^2} dx$ is :",
         "options": [
           "$\\frac{\\sqrt{2}}{3} \\tan^{-1} \\sqrt{2} + \\frac{5}{12} \\log 2 - \\frac{1}{4} \\log 3$",
@@ -16062,11 +17413,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $I_1 = \\int_0^1 \\frac{1 + x^8}{1 + x^4} dx$ and $I_2 = \\int_0^1 \\frac{1 + x^9}{1 + x^3} dx$, then :",
         "options": [
           "$I_1 > 1, I_2 < 1$",
@@ -16080,11 +17432,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f:(0, 1) \\rightarrow (0, 1)$ be a differentiable function such that $f'(x) \\neq 0$ for all $x \\in (0, 1)$ and $f\\left(\\frac{1}{2}\\right) = \\frac{\\sqrt{3}}{2}$. Suppose for all $x$, \n$\\lim_{t \\to x} \\frac{\\int_0^t \\sqrt{1 - (f(s))^2} ds - \\int_0^x \\sqrt{1 - (f(s))^2} ds}{f(t) - f(x)} = f(x)$. \nThen the value of $f\\left(\\frac{1}{4}\\right)$ belongs to :",
         "options": [
           "$\\left\\{ \\frac{\\sqrt{7}}{4}, \\frac{\\sqrt{15}}{4} \\right\\}$",
@@ -16098,11 +17451,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(\\theta) = \\frac{4}{3} (1 - \\cos^6 \\theta - \\sin^6 \\theta)$, then\n$\\lim_{n \\to \\infty} \\frac{1}{n} \\left[ \\sqrt{f\\left(\\frac{1}{n}\\right)} + \\sqrt{f\\left(\\frac{2}{n}\\right)} + \\sqrt{f\\left(\\frac{3}{n}\\right)} + \\dots + \\sqrt{f\\left(\\frac{n}{n}\\right)} \\right] =$",
         "options": [
           "$\\frac{1 - \\cos 1}{2}$",
@@ -16116,11 +17470,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\int_0^1 \\frac{(x^6 - x^3)}{(2x^3 + 1)^3} dx$ is equal to :",
         "options": [
           "$-\\frac{1}{6}$",
@@ -16134,11 +17489,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$2 \\int_0^{\\frac{1}{\\sqrt{2}}} \\frac{\\sin^{-1} x}{x} dx - \\int_0^1 \\frac{\\tan^{-1} x}{x} dx =$",
         "options": [
           "$\\frac{\\pi}{8} \\ln 2$",
@@ -16152,11 +17508,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x)$ be a differentiable function such that $f(x) = x^2 + \\int_0^x e^{-t} f(x - t) dt$, then $\\int_0^1 f(x) dx =$",
         "options": [
           "$\\frac{1}{3}$",
@@ -16170,11 +17527,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f'(x) = f(x) + \\int_0^1 f(x)dx$ and given $f(0) = 1$, then $\\int f(x)dx$ is equal to:",
         "options": [
           "$\\frac{2}{3-e}e^x + \\left(\\frac{3-e}{1-e}\\right)x + C$",
@@ -16188,11 +17546,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For any $x \\in R$, and $f$ be a continuous function. Let $I_1 = \\int_{\\sin^2 x}^{1+\\cos^2 x} t f(t(2-t))dt$, $I_2 = \\int_{\\sin^2 x}^{1+\\cos^2 x} f(t(2-t))dt$, then $I_1 =$",
         "options": [
           "$I_2$",
@@ -16206,11 +17565,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If the integral $\\int \\frac{5 \\tan x}{\\tan x - 2} dx = x + a \\ln |\\sin x - 2 \\cos x| + C$, then '$a$' is equal to :",
         "options": [
           "1",
@@ -16224,11 +17584,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{(2 + \\sqrt{x}) dx}{(x + 1 + \\sqrt{x})^2}$ is equal to :",
         "options": [
           "$\\frac{x}{x + \\sqrt{x} + 1} + C$",
@@ -16242,11 +17603,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Evaluate $\\int \\frac{\\sqrt{x + \\sqrt{2 - x^2}} \\sqrt{1 - x\\sqrt{2 - x^2}}}{\\sqrt{1 - x^2}} dx$; $x \\in (0, 1)$:",
         "options": [
           "$2^{1/6} x + C$",
@@ -16260,11 +17622,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{dx}{\\sqrt{1 - \\tan^2 x}} = \\frac{1}{\\lambda} \\sin^{-1}(\\lambda \\sin x) + C$, then $\\lambda =$",
         "options": [
           "$\\sqrt{2}$",
@@ -16278,11 +17641,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{dx}{\\sqrt{x^{5/2} (x + 1)^{7/2}}}$ is equal to :",
         "options": [
           "$-\\left(\\frac{x+1}{x}\\right)^{1/6} + C$",
@@ -16296,11 +17660,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 18,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $I_n = \\int (\\sin x)^n dx; n \\in N$, then $5I_4 - 6I_6$ is equal to:",
         "options": [
           "$\\sin x \\cdot (\\cos x)^5 + C$",
@@ -16314,11 +17679,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 19,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{x^2}{(a + bx)^2} dx$ equals to :",
         "options": [
           "$\\frac{1}{b^3} \\left( a + bx - a \\ln |a + bx| - \\frac{a^2}{a + bx} \\right) + C$",
@@ -16332,11 +17698,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 20,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{8x^{43} + 13x^{38}}{(x^{13} + x^5 + 1)^4} dx =$",
         "options": [
           "$\\frac{x^{39}}{3(x^{13} + x^5 + 1)^3} + C$",
@@ -16350,11 +17717,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 21,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\left( \\frac{\\cos 6x + 6\\cos 4x + 15\\cos 2x + 10}{10\\cos^2 x + 5\\cos x \\cos 3x + \\cos x \\cos 5x} \\right) dx = f(x) + C$, then $f(10)$ is equal to:",
         "options": [
           "20",
@@ -16368,11 +17736,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 22,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int (1 + x - x^{-1}) e^{x + x^{-1}} dx =$",
         "options": [
           "$(x + 1) e^{x + x^{-1}} + C$",
@@ -16386,11 +17755,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 23,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\int e^x \\left( \\frac{2\\tan x}{1 + \\tan x} + \\text{cosec}^2 \\left( x + \\frac{\\pi}{4} \\right) \\right) dx = e^x \\cdot g(x) + K$, then $g\\left(\\frac{5\\pi}{4}\\right) =$",
         "options": [
           "0",
@@ -16404,11 +17774,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 24,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int e^{x\\sin x + \\cos x} \\left( \\frac{x^4 \\cos^3 x - x\\sin x + \\cos x}{x^2 \\cos^2 x} \\right) dx =$",
         "options": [
           "$e^{x\\sin x + \\cos x} \\left( x - \\frac{1}{\\cos x} \\right) + C$",
@@ -16422,11 +17793,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 25,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_0^1 \\frac{1 + x + \\sqrt{x+x^2}}{\\sqrt{x} + \\sqrt{1 + x}} dx$ is :",
         "options": [
           "$\\frac{1}{3} (2^{1/2} - 1)$",
@@ -16440,11 +17812,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 26,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int x^{x^2+1} (2\\ln x + 1) dx$",
         "options": [
           "$x^{2x} + C$",
@@ -16458,11 +17831,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 27,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\int \\frac{\\text{cosec}^2 x - 2010}{\\cos^{2010} x} dx = -\\frac{f(x)}{(g(x))^{2010}} + C$; where $f\\left(\\frac{\\pi}{4}\\right) = 1$; then the number of solutions of the equation $\\frac{f(x)}{g(x)} = \\{x\\}$ in $[0, 2\\pi]$ is/are : *(where $\\{ \\cdot \\}$ represents fractional part function)*",
         "options": [
           "0",
@@ -16476,11 +17850,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 28,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int x^x \\left( (\\ln x)^2 + \\ln x + \\frac{1}{x} \\right) dx$ is equal to :",
         "options": [
           "$x^x \\left( (\\ln x)^2 - \\frac{1}{x} \\right) + C$",
@@ -16494,11 +17869,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 29,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $I = \\int \\frac{x^2 - 1}{x^3 \\sqrt{2x^4 - 2x^2 + 1}} dx$ is equal to:",
         "options": [
           "$\\frac{\\sqrt{2x^4 - 2x^2 + 1}}{x^2} + C$",
@@ -16512,11 +17888,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 30,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$I = \\int \\left( \\frac{\\ln x - 1}{(\\ln x)^2 + 1} \\right)^2 dx$ is equal to:",
         "options": [
           "$\\frac{x}{x^2 + 1} + C$",
@@ -16530,11 +17907,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 31,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$I = \\int \\frac{dx}{\\sqrt{(x-1)^3(x+2)^5}} = k \\sqrt{\\frac{x-1}{x+2}} + C$, then '$k$' is equal to :",
         "options": [
           "$\\frac{1}{3}$",
@@ -16548,11 +17926,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 32,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{1-x^7}{x(1+x^7)} dx = P \\log|x| + Q \\log|x^7 + 1| + C$, then :",
         "options": [
           "$2P - 7Q = 0$",
@@ -16566,11 +17945,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 33,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$I = \\int \\frac{\\sin^8 x - \\cos^8 x}{1 - 2\\sin^2 x \\cos^2 x} dx$ is equal to :",
         "options": [
           "$\\sin 2x + C$",
@@ -16584,11 +17964,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 34,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$I = \\int \\frac{(\\sin 2x)^{1/3} d(\\tan^{1/3} x)}{\\sin^{2/3} x + \\cos^{2/3} x} =$",
         "options": [
           "$\\frac{1}{2^{2/3}} \\ln(1 + \\tan^{1/3} x) + C$",
@@ -16602,11 +17983,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 35,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{(2012)^{2x}}{\\sqrt{1 - (2012)^{2x}}} (2012)^{\\sin^{-1}(2012)^x} dx =$",
         "options": [
           "$(\\log_{2012} e)^2 (2012)^{\\sin^{-1}(2012)^x} + C$",
@@ -16620,11 +18002,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 36,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{(x + 2) dx}{(x^2 + 3x + 3)\\sqrt{x + 1}}$ is equal to :",
         "options": [
           "$\\frac{2}{\\sqrt{3}} \\tan^{-1} \\left( \\frac{x}{\\sqrt{3(x+1)}} \\right) + C$",
@@ -16638,11 +18021,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 37,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\left( \\frac{f(x)g'(x) - f'(x)g(x)}{f(x)g(x)} \\right) (\\log(g(x)) - \\log(f(x))) dx$ is equal to:",
         "options": [
           "$\\log \\left( \\frac{g(x)}{f(x)} \\right) + C$",
@@ -16656,11 +18040,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 38,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\left[ e^x \\left( \\ln x + \\frac{2}{x} - \\frac{1}{x^2} \\right) \\right] dx =$",
         "options": [
           "$e^x \\ln x + C_1 x + C_2$",
@@ -16674,11 +18059,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 39,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Maximum value of the function $f(x) = \\pi^2 \\int_0^1 t \\sin(x + \\pi t) dt$ over all real number $x$ :",
         "options": [
           "$\\sqrt{\\pi^2 + 1}$",
@@ -16692,11 +18078,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 40,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let '$f$' is a function, continuous on $$ such that $f(x) \\leq \\sqrt{5} \\; \\forall x \\in$ and $f(x) \\leq \\frac{2}{x} \\; \\forall x \\in [\\frac{1}{2}, 1]$ then the smallest '$a$' for which $\\int_0^1 f(x) dx \\leq a$ holds for all '$f$' is:",
         "options": [
           "$\\sqrt{5}$",
@@ -16710,11 +18097,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 41,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $I_n = \\int_1^e (\\ln x)^n d(x^2)$, then the value of $2I_n + nI_{n-1}$ equals to :",
         "options": [
           "0",
@@ -16728,11 +18116,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 42,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let a function $f: R \\rightarrow R$ be defined as $f(x) = x + \\sin x$. The value of $\\int_0^{2\\pi} f^{-1}(x) dx$ will be :",
         "options": [
           "$2\\pi^2$",
@@ -16746,11 +18135,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 43,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_{-1}^1 e^{-x^4} (2 + \\ln(x + \\sqrt{x^2+1}) + 5x^3 - 8x^4) dx$ is equal to :",
         "options": [
           "$4e$",
@@ -16764,11 +18154,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 44,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int_{-10}^0 \\frac{2[x]}{3x - [x]} dx$ is equal to (where $[*]$ denotes greatest integer function.)",
         "options": [
           "$\\frac{28}{3}$",
@@ -16782,11 +18173,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 45,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\frac{x}{1 + (\\ln x)(\\ln x)\\dots \\infty} \\; \\forall x \\in [1, \\infty)$ then $\\int_1^{2e} f(x) dx$ is:",
         "options": [
           "$\\frac{e^2 - 1}{2}$",
@@ -16800,11 +18192,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 46,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int_0^2 \\frac{(y^2 - 4y + 5) \\sin(y - 2)}{(2y^2 - 8y + 11)} dy$ is equal to :",
         "options": [
           "0",
@@ -16818,11 +18211,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 47,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $\\frac{d}{dx} F(x) = \\left( \\frac{e^{\\sin x}}{x} \\right), x > 0$. If $\\int_1^4 \\frac{3}{x} e^{\\sin x^3} dx = F(k) - F(1)$, then one of the possible values of $k$, is:",
         "options": [
           "15",
@@ -16836,11 +18230,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 48,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Value of $\\lim_{h \\to 0} \\frac{\\int_0^{\\pi+h} x^2 e^{-x^2} dx - \\int_0^\\pi x^2 e^{-x^2} dx}{h}$ is equal to :",
         "options": [
           "$\\pi(1 - \\pi^2)e^{-\\pi^2}$",
@@ -16854,11 +18249,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 49,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f: R^+ \\rightarrow R$ be a differentiable function with $f(1) = 3$ and satisfying :\n$\\int_1^{xy} f(t) dt = y \\int_1^x f(t) dt + x \\int_1^y f(t) dt \\;\\forall x, y \\in R^+$, then $f(e) =$",
         "options": [
           "3",
@@ -16872,11 +18268,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 50,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $[ \\cdot ]$ denotes the greatest integer function, then the integral $\\int_0^{\\pi/2} e^{\\sin x - [\\sin x]} d(\\sin^2 x - [\\sin^2 x])$ is $\\lambda$, then $[\\lambda - 1]$ is equal to :",
         "options": [
           "0",
@@ -16890,11 +18287,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 51,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Calculate the reciprocal of the limit $\\lim_{x \\to \\infty} \\int_0^x e^{t^2 - x^2} dt$",
         "options": [
           "0",
@@ -16908,11 +18306,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 52,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $L = \\lim_{n \\to \\infty} \\left( \\frac{(2 \\cdot 1+n)}{1^2+n \\cdot 1+n^2} + \\frac{(2 \\cdot 2+n)}{2^2+n \\cdot 2+n^2} + \\frac{(2 \\cdot 3+n)}{3^2+n \\cdot 3+n^2} + \\dots + \\frac{(2 \\cdot n+n)}{3n^2} \\right)$ then value of $e^L$ is :",
         "options": [
           "2",
@@ -16926,11 +18325,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 53,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_0^2 (\\sqrt{1+x^3} + \\sqrt{x^2+2x}) dx$ is :",
         "options": [
           "4",
@@ -16944,11 +18344,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 54,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_0^\\infty \\frac{\\ln x}{x^2+4} dx$ is :",
         "options": [
           "$\\frac{\\pi \\ln 3}{2}$",
@@ -16962,11 +18363,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 55,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_0^{10} ((x-5) + (x-5)^2 + (x-5)^3) dx$ is :",
         "options": [
           "$\\frac{125}{3}$",
@@ -16980,11 +18382,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 56,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of definite integral $\\int_0^\\infty \\frac{dx}{(1+x^9)(1+x^2)}$ equals to :",
         "options": [
           "$\\frac{\\pi}{16}$",
@@ -16998,11 +18401,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 57,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_0^{\\pi/2} \\left( \\frac{1 + \\sin 3x}{1 + 2\\sin x} \\right) dx$ equals to :",
         "options": [
           "$\\frac{\\pi}{2}$",
@@ -17016,11 +18420,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 58,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to \\infty} \\frac{\\int_0^x (\\tan^{-1} x)^2 dx}{\\sqrt{x^2+1}} =$",
         "options": [
           "$\\frac{\\pi^2}{16}$",
@@ -17034,11 +18439,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 59,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\int_0^1 \\left( \\sum_{r=1}^{2013} \\frac{x}{x^2+r^2} \\right) \\left( \\prod_{r=1}^{2013} (x^2+r^2) \\right) dx = \\frac{1}{2} \\left[ \\prod_{r=1}^{2013} (1+r^2) - k^2 \\right]$ then $k = $",
         "options": [
           "2013",
@@ -17052,11 +18458,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 60,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f(x) = 2x - \\tan^{-1} x - \\ln(x + \\sqrt{1+x^2})$",
         "options": [
           "strictly increases $\\forall x \\in R$",
@@ -17070,11 +18477,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 61,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_0^{\\pi/2} \\frac{dx}{\\tan x + \\cot x + \\text{cosec } x + \\sec x}$ is :",
         "options": [
           "$1 - \\frac{\\pi}{4}$",
@@ -17088,11 +18496,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 62,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_3^7 \\frac{\\cos x^2}{\\cos x^2 + \\cos(10-x)^2} dx$ is :",
         "options": [
           "2",
@@ -17106,11 +18515,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 63,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the integral $\\int_{e^{-1}}^{e^2} \\left| \\frac{\\ln x}{x} \\right| dx$ is :",
         "options": [
           "$\\frac{3}{2}$",
@@ -17124,11 +18534,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 64,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to \\frac{\\pi}{4}} \\frac{\\int_2^{\\text{cosec}^2 x} t g(t) dt}{x^2 - \\frac{\\pi^2}{16}}$ is :",
         "options": [
           "$\\frac{2}{\\pi} g(2)$",
@@ -17142,11 +18553,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 65,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{n \\to \\infty} \\sum_{k=1}^n \\frac{n-k}{n^2} \\cos \\frac{4k}{n}$ equals :",
         "options": [
           "$\\frac{1}{4} \\sin 4 + \\frac{1}{16} \\cos 4 - \\frac{1}{16}$",
@@ -17160,11 +18572,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 66,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For each positive integer $n$, define a function $f_n$ on $$ as follows :\n$f_n(x) = \\begin{cases} \n0 & \\text{if } x = 0 \\\\ \n\\sin \\frac{\\pi}{2n} & \\text{if } 0 < x \\le \\frac{1}{n} \\\\ \n\\sin \\frac{2\\pi}{2n} & \\text{if } \\frac{1}{n} < x \\le \\frac{2}{n} \\\\ \n\\sin \\frac{3\\pi}{2n} & \\text{if } \\frac{2}{n} < x \\le \\frac{3}{n} \\\\ \n\\vdots & \\vdots \\\\ \n\\sin \\frac{n\\pi}{2n} & \\text{if } \\frac{n-1}{n} < x \\le 1 \n\\end{cases}$\nThen the value of $\\lim_{n \\to \\infty} \\int_0^1 f_n(x) dx$ is :",
         "options": [
           "$\\pi$",
@@ -17178,11 +18591,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 67,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $n$ be a positive integer, then $\\int_0^{n+1} \\min \\{ |x-1|, |x-2|, |x-3|, \\dots , |x-n| \\} dx$ equals",
         "options": [
           "$\\frac{(n+1)}{4}$",
@@ -17196,11 +18610,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 68,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "For positive integers $k = 1, 2, 3 \\dots , n$, let $S_k$ denotes the area of $\\Delta AOB_k$ (where 'O' is origin) such that $\\angle AOB_k = \\frac{k\\pi}{2n}$, $OA = 1$ and $OB_k = k$. The value of the $\\lim_{n \\to \\infty} \\frac{1}{n^2} \\sum_{k=1}^n S_k$ is :",
         "options": [
           "$\\frac{2}{\\pi^2}$",
@@ -17214,11 +18629,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 69,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $A = \\int_0^1 \\prod_{r=1}^{2014} (r-x) dx$ and $B = \\int_0^1 \\prod_{r=0}^{2013} (r+x) dx$, then :",
         "options": [
           "$A = 2B$",
@@ -17232,11 +18648,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 70,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\left[ \\frac{x}{120} + \\frac{x^3}{30} \\right]$ defined in $$, then $\\int_0^1 (f(x) + 2) dx =$ (where $[\\cdot]$ denotes greatest integer function)",
         "options": [
           "0",
@@ -17250,11 +18667,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 71,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\int_0^{g(x)} \\frac{dt}{\\sqrt{1+t^3}}, g(x) = \\int_0^{\\cos x} (1+\\sin t)^2 dt$, then the value of $f'\\left(\\frac{\\pi}{2}\\right)$ is equal to :",
         "options": [
           "1",
@@ -17268,11 +18686,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 72,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\frac{1}{x^2} \\int_0^x (4t^2 - 2f'(t)) dt$, find $9f'(4)$",
         "options": [
           "16",
@@ -17286,11 +18705,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 73,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Evaluate $\\lim_{n \\to \\infty} \\left( \\frac{1^2}{n^3+1^3} + \\frac{2^2}{n^3+2^3} + \\frac{3^2}{n^3+3^3} + \\dots \\dots + \\frac{4}{9n} \\right)$",
         "options": [
           "$\\frac{1}{3} \\ln 3$",
@@ -17304,11 +18724,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 74,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\int_0^{2\\pi} \\cos^{-1} \\left( \\frac{1 - \\tan^2 \\frac{x}{2}}{1 + \\tan^2 \\frac{x}{2}} \\right) dx$ is :",
         "options": [
           "$\\pi^2$",
@@ -17322,11 +18743,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 75,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Given a function '$g$' continuous everywhere such that $\\int_0^1 g(t) dt = 2$ and $g(1) = 5$.\nIf $f(x) = \\frac{1}{2} \\int_0^x (x-t)^2 g(t) dt$, then the value of $f'''(1) - f''(1)$ is :",
         "options": [
           "0",
@@ -17340,11 +18762,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 76,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\int_0^\\pi \\frac{x^3 \\cos^4 x \\sin^2 x}{\\pi^2 - 3\\pi x + 3x^2} dx = \\lambda \\int_0^{\\pi/2} \\sin^2 x dx$, then the value of $\\lambda$ is :",
         "options": [
           "$\\frac{\\pi}{12}$",
@@ -17358,11 +18781,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 77,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int_0^{\\sqrt{3}} \\left( \\frac{1}{2} \\frac{d}{dx} \\left( \\tan^{-1} \\frac{2x}{1-x^2} \\right) \\right) dx$ equals to :",
         "options": [
           "$\\frac{\\pi}{3}$",
@@ -17376,11 +18800,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 78,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $y = \\{x\\}^{[x]}$ then the value of $\\int_0^3 y dx$ equals to :\n*(where $\\{\\cdot\\}$ and $[\\cdot]$ denote fractional part and greatest integer function respectively.)*",
         "options": [
           "1",
@@ -17394,11 +18819,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 79,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int_0^{\\pi/4} \\frac{\\tan^{-1} x}{x} dx =$",
         "options": [
           "$\\int_0^{\\pi/4} \\frac{\\sin x}{x} dx$",
@@ -17412,11 +18838,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 80,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\int_0^{4/\\pi} \\left( 3x^2 \\sin \\frac{1}{x} - x \\cos \\frac{1}{x} \\right) dx$ is :",
         "options": [
           "$\\frac{8\\sqrt{2}}{\\pi^3}$",
@@ -17430,11 +18857,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 81,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of values of $x$ satisfying the equation :\n$\\int_{-1}^x \\left( 8t^2 + \\frac{28t}{3} + 4 \\right) dt = \\frac{\\frac{3}{2}x + 1}{\\log_{(x+1)} \\sqrt{x+1}}$, is :",
         "options": [
           "0",
@@ -17448,11 +18876,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 82,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{n \\to \\infty} \\frac{1+2^4+3^4+\\dots+n^4}{n^5} - \\lim_{n \\to \\infty} \\frac{1+2^3+3^3+\\dots+n^3}{n^5}$ is :",
         "options": [
           "$\\frac{1}{30}$",
@@ -17466,11 +18895,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 83,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to 0^+} \\frac{\\int_1^{\\cos x} (\\cos^{-1} t) dt}{2x - \\sin 2x}$ is equal to :",
         "options": [
           "0",
@@ -17484,11 +18914,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 84,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Consider a parabola $y = \\frac{x^2}{4}$ and the point $F (0, 1)$. Let $A_1(x_1, y_1), A_2(x_2, y_2), A_3(x_3, y_3), \\dots , A_n(x_n, y_n)$ are '$n$' points on the parabola such $x_k > 0$ and $\\angle OFA_k = \\frac{k\\pi}{2n} (k = 1, 2, 3, \\dots , n)$. Then the value of $\\lim_{n \\to \\infty} \\frac{1}{n} \\sum_{k=1}^n FA_k$, is equal to :",
         "options": [
           "$\\frac{2}{\\pi}$",
@@ -17502,11 +18933,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 85,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The minimum value of $f(x) = \\int_0^3 e^{|x-t|} dt$ where $x \\in $ is :",
         "options": [
           "$2e^2 - 1$",
@@ -17520,11 +18952,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 86,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\int_0^\\infty \\frac{\\sin x}{x} dx = \\frac{\\pi}{2}$, then $\\int_0^\\infty \\frac{\\sin^3 x}{x} dx$ is equals to :",
         "options": [
           "$\\frac{\\pi}{2}$",
@@ -17538,11 +18971,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 87,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\sqrt{1+\\sin x} \\left( \\cos \\frac{x}{2} - \\sin \\frac{x}{2} \\right) dx =$",
         "options": [
           "$\\frac{1+\\sin x}{2} + C$",
@@ -17556,11 +18990,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 88,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $I_n = \\int_0^\\pi \\frac{\\sin(2nx)}{\\sin 2x} dx$, then the value of $I_{n+\\frac{1}{2}}$ is equal to $(n \\in I)$ :",
         "options": [
           "$\\frac{n\\pi}{2}$",
@@ -17574,11 +19009,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 89,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of function $f(x) = 1 + x + \\int_1^x (\\ln^2 t + 2\\ln t) dt$ where $f'(x)$ vanishes is :",
         "options": [
           "$\\frac{1}{e}$",
@@ -17592,11 +19028,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 90,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f$ be a differentiable function on $R$ and satisfies $f(x) = x^2 + \\int_0^x e^{-t} f(x-t) dt$; then $\\int_0^1 f(x) dx$ is equal to :",
         "options": [
           "$\\frac{1}{3}$",
@@ -17610,11 +19047,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 91,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_{-\\pi/2}^{\\pi/2} \\frac{\\cos^2 x}{1 + 5^x} dx$ equals to :",
         "options": [
           "$\\frac{3\\pi}{4}$",
@@ -17628,11 +19066,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 92,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\left( \\frac{x^2 - x + 1}{x^2 + 1} \\right) e^{\\cot^{-1}(x)} dx = f(x) \\cdot e^{\\cot^{-1}(x)} + C$\nwhere $C$ is constant of integration. Then $f(x)$ is equal to :",
         "options": [
           "$-x$",
@@ -17646,11 +19085,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 93,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{n \\to \\infty} \\frac{1}{n^3} \\left( \\sqrt{n^2+1} + 2\\sqrt{n^2+2^2} + \\dots + n\\sqrt{n^2+n^2} \\right) =$ :",
         "options": [
           "$\\frac{3\\sqrt{2}-1}{2}$",
@@ -17664,11 +19104,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 94,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{(x^3 - 1)}{(x^4 + 1)(x + 1)} dx$, is :",
         "options": [
           "$\\frac{1}{4} \\ln(1+x^4) + \\frac{1}{3} \\ln(1+x^3) + c$",
@@ -17682,11 +19123,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 95,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{x \\to 0^+} \\frac{\\int_1^{\\cos x} (\\cos^{-1} t) dt}{2x - \\sin 2x}$ is equal to :",
         "options": [
           "0",
@@ -17700,11 +19142,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 96,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\lim_{n \\to \\infty} \\frac{\\cos x}{1 + (\\tan^{-1} x)^n}$, then $\\int_0^\\infty f(x) dx =$",
         "options": [
           "$\\tan(\\sin 1)$",
@@ -17718,11 +19161,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 97,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{n \\to \\infty} \\sum_{k=1}^n \\left( \\frac{k}{n^2 + n + 2k} \\right) =$",
         "options": [
           "$\\frac{1}{4}$",
@@ -17736,11 +19180,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 98,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\lim_{y \\to 1^+} \\frac{\\int_1^y |t - 1| dt}{\\tan(y - 1)}$ is :",
         "options": [
           "0",
@@ -17754,11 +19199,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 99,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Given that $\\int \\frac{dx}{(1 + x^2)^n} = \\frac{x}{2(n - 1)(1 + x^2)^{n-1}} + \\frac{(2n - 3)}{2(n - 1)} \\int \\frac{dx}{(1 + x^2)^{n-1}}$. Find the value of $\\int_0^1 \\frac{dx}{(1 + x^2)^4}$ : (you may or may not use reduction formula given)",
         "options": [
           "$\\frac{11}{48} + \\frac{5\\pi}{64}$",
@@ -17772,11 +19218,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 100,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Find the value of $\\int_0^{\\pi/4} (\\sin x)^4 dx$ :",
         "options": [
           "$\\frac{3\\pi}{16}$",
@@ -17790,11 +19237,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 101,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{\\cos 9x + \\cos 6x}{2\\cos 5x - 1} dx = A\\sin 4x + B\\sin x + C$, then $A + B$ is equal to :\n(Where $C$ is constant of integration)",
         "options": [
           "$\\frac{1}{2}$",
@@ -17808,11 +19256,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 102,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{dx}{x^{2014} + x} = \\frac{1}{p} \\ln \\left( \\frac{x^q}{1 + x^r} \\right) + C$ where $p, q, r \\in N$ then the value of $(p + q + r)$ equals\n(Where $C$ is constant of integration)",
         "options": [
           "6039",
@@ -17826,11 +19275,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 103,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\int_0^1 e^{-x^2} dx = a$, then $\\int_0^1 x^2 e^{-x^2} dx$ is equal to",
         "options": [
           "$\\frac{1}{2e} (ea - 1)$",
@@ -17844,11 +19294,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 104,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x)$ is a continuous function for all real values of $x$ and satisfies $\\int_0^n f(x) dx = \\frac{n^2}{2} \\; \\forall n \\in I$, then $\\int_{-3}^5 f(|x|) dx$ is equal to :",
         "options": [
           "$\\frac{19}{2}$",
@@ -17862,11 +19313,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 105,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\int \\frac{dx}{x^4 (1 + x^3)^2} = a \\ln \\left| \\frac{1 + x^3}{x^3} \\right| + \\frac{b}{x^3} + \\frac{c}{1 + x^3} + d$, then\n(where $d$ is arbitrary constant)",
         "options": [
           "$a = \\frac{1}{3}, b = \\frac{1}{3}, c = \\frac{1}{3}$",
@@ -17880,11 +19332,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 106,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{n \\to \\infty} \\left( \\frac{1}{\\sqrt{n}\\sqrt{n+1}} + \\frac{1}{\\sqrt{n}\\sqrt{n+2}} + \\dots + \\frac{1}{\\sqrt{n}\\sqrt{4n}} \\right)$ is equal to :",
         "options": [
           "2",
@@ -17898,11 +19351,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 107,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Let $f(x) = \\int_0^x \\frac{dy}{\\sqrt{1 + y^3}}$. The value of the integral $\\int_0^2 x f(x) dx$ is equal to :",
         "options": [
           "1",
@@ -17916,11 +19370,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 108,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of the definite integral $\\int_0^{\\pi/3} \\ln(1 + \\sqrt{3} \\tan x) dx$ equals",
         "options": [
           "$\\frac{\\pi}{3} \\ln 2$",
@@ -17934,11 +19389,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 109,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $\\int_0^{100} f(x) dx = a$, then $\\sum_{r=1}^{100} \\int_0^1 f(r - 1 + x) dx =$",
         "options": [
           "$100a$",
@@ -17952,11 +19408,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 110,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $\\int_0^1 \\left( \\lim_{n \\to \\infty} \\sum_{k=0}^n \\frac{x^{k+2} 2^k}{k!} \\right) dx$ is :",
         "options": [
           "$e^2 - 1$",
@@ -17970,11 +19427,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 111,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Evaluate : $\\int x^5 \\sqrt{1 + x^3} dx$.",
         "options": [
           "$\\frac{1}{15}(1 + x^3)^{5/2} - \\frac{1}{9}(1 + x^3)^{3/2} + c$",
@@ -17988,11 +19446,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 112,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f(x) = \\int_0^x \\frac{\\sin t}{t} dt$, which of the following is true ?",
         "options": [
           "$f(0) > f(1.1)$",
@@ -18006,11 +19465,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 113,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "Evaluate : $\\int \\frac{x^3 + 3x^2 + x + 9}{(x^2 + 1)(x^2 + 3)} dx$.",
         "options": [
           "$\\ln |x^2 + 3| + 3 \\tan^{-1} x + c$",
@@ -18024,11 +19484,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 114,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{\\sqrt{\\sec^5 x}}{\\sqrt{\\sin^3 x}} dx$ equals to :",
         "options": [
           "$(\\tan x)^{3/2} - \\sqrt{\\tan x} + C$",
@@ -18042,11 +19503,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 115,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\lim_{x \\to 0} \\frac{\\int_0^x e^{\\sin(tx)} dt}{x}$ equals to :",
         "options": [
           "1",
@@ -18060,11 +19522,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 116,
-        "questionType": "SINGLE CORRECT",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $A = \\int_0^\\pi \\frac{\\sin x}{x} dx$, then $\\int_0^{\\pi/2} \\frac{\\cos 2x}{x} dx$ is equal to :",
         "options": [
           "$1 - A$",
@@ -18078,11 +19541,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[SINGLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "$\\int \\frac{dx}{(1 + \\sqrt{x})^8} = -\\frac{1}{3(1 + \\sqrt{x})^{k_1}} + \\frac{2}{7(1 + \\sqrt{x})^{k_2}} + C$, then :",
         "options": [
           "$k_1 = 5$",
@@ -18096,11 +19560,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,c"
+        "answerKeyStr": "b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C"
       },
       {
         "questionNumber": 2,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\int_{-\\alpha}^{\\alpha} \\left( e^x + \\cos x \\ln(x + \\sqrt{1 + x^2}) \\right) dx > \\frac{3}{2}$, then possible value of $\\alpha$ can be :",
         "options": [
           "$1$",
@@ -18114,11 +19584,19 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c,d"
+        "answerKeyStr": "a,b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "questionNumber": 3,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "For $a > 0$, if $I = \\int \\sqrt{\\frac{x}{a^3 - x^3}} dx = A \\sin^{-1} \\left( \\frac{x^{3/2}}{B} \\right) + C$, where $C$ is any arbitrary constant, then :",
         "options": [
           "$A = \\frac{2}{3}$",
@@ -18132,11 +19610,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 4,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $\\int x \\sin x \\cdot \\sec^3 x dx = \\frac{1}{2}(x \\cdot f(x) - g(x)) + k$, then :",
         "options": [
           "$f(x) \\notin (-1, 1)$",
@@ -18150,11 +19634,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c,d"
+        "answerKeyStr": "a,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2,
+          3
+        ],
+        "correctAnswer": "A,C,D"
       },
       {
         "questionNumber": 5,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\int (\\sin 3\\theta + \\sin \\theta) \\cos \\theta e^{\\sin \\theta} d\\theta = (A \\sin^3 \\theta + B \\cos^2 \\theta + C \\sin \\theta + D \\cos \\theta + E) e^{\\sin \\theta} + F$, then :",
         "options": [
           "$A = -4$",
@@ -18168,11 +19659,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c"
+        "answerKeyStr": "a,b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2
+        ],
+        "correctAnswer": "A,B,C"
       },
       {
         "questionNumber": 6,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "For $a > 0$, if $I = \\int \\sqrt{\\frac{x}{a^3 - x^3}} dx = A \\sin^{-1} \\left( \\frac{x^{3/2}}{B} \\right) + C$, where $C$ is any arbitrary constant, then :",
         "options": [
           "$A = \\frac{2}{3}$",
@@ -18186,11 +19684,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 7,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(\\theta) = \\lim_{n \\to \\infty} \\sum_{r=0}^{n\\theta} \\frac{2r}{n\\sqrt{(3\\theta n - 2r)(n\\theta + 2r)}}$ then :",
         "options": [
           "$f(1) = \\frac{\\pi}{6}$",
@@ -18204,11 +19708,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,d"
+        "answerKeyStr": "a,b,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A,B,D"
       },
       {
         "questionNumber": 8,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $f(x+y) = f(x)f(y)$ for all $x, y$ and $f(0) \\neq 0$, and $F(x) = \\frac{f(x)}{1 + (f(x))^2}$ then :",
         "options": [
           "$\\int_{-2010}^{2011} F(x) dx = \\int_0^{2011} F(x) dx$",
@@ -18222,11 +19733,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,d"
+        "answerKeyStr": "b,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          3
+        ],
+        "correctAnswer": "B,D"
       },
       {
         "questionNumber": 9,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $J = \\int_{-1}^2 \\left( \\cot^{-1} \\frac{1}{x} + \\cot^{-1} x \\right) dx, \\quad K = \\int_{-2\\pi}^{7\\pi} \\frac{\\sin x}{|\\sin x|} dx$. Then which of the following alternative(s) is/are correct ?",
         "options": [
           "$2J + 3K = 8\\pi$",
@@ -18240,11 +19757,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 10,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Which of the following function(s) is/are even ?",
         "options": [
           "$f(x) = \\int_0^x \\ln(t + \\sqrt{1 + t^2}) dt$",
@@ -18258,11 +19781,19 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c,d"
+        "answerKeyStr": "a,b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "questionNumber": 11,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $l_1 = \\lim_{x \\to \\infty} \\frac{x - \\cos^2 x}{x + \\sin x}$ and $l_2 = \\lim_{h \\to 0^+} \\int_{-1}^1 \\frac{h dx}{h^2 + x^2}$. Then :",
         "options": [
           "Both $l_1$ and $l_2$ are less than 22/7",
@@ -18276,11 +19807,19 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c,d"
+        "answerKeyStr": "a,b,c,d",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "questionNumber": 12,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "For $a > 0$, if $I = \\int \\sqrt{\\frac{x}{a^3 - x^3}} dx = A \\sin^{-1} \\left( \\frac{x^{3/2}}{B} \\right) + C$, where $C$ is any arbitrary constant, then :",
         "options": [
           "$A = \\frac{2}{3}$",
@@ -18294,11 +19833,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b"
+        "answerKeyStr": "a,b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "questionNumber": 13,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "If $\\int \\frac{dx}{1 - \\sin^4 x} = a \\tan x + b \\tan^{-1}(c \\tan x) + D$, then :",
         "options": [
           "$a = \\frac{1}{2}$",
@@ -18312,11 +19857,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,c"
+        "answerKeyStr": "a,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2
+        ],
+        "correctAnswer": "A,C"
       },
       {
         "questionNumber": 14,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "The value of definite integral : $\\int_{-2014}^{2014} \\frac{dx}{1 + \\sin^{2015}(x) + \\sqrt{1 + \\sin^{4030}(x)}}$ equals :",
         "options": [
           "$0$",
@@ -18327,14 +19878,19 @@ window.DEFAULT_BLACKBOOK = [
         "exerciseName": "Exercise-2 : One or More than One Answer is/are Correct",
         "has_graph": false,
         "chapter": "Indefinite and Definite Integration",
-        "correctOption": 1,
+        "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1
+        ],
+        "correctAnswer": "B"
       },
       {
         "questionNumber": 15,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $L = \\lim_{n \\to \\infty} \\int_a^\\infty \\frac{n dx}{1 + n^2 x^2}$ where $a \\in R$ then $L$ can be :",
         "options": [
           "$\\pi$",
@@ -18348,11 +19904,18 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "a,b,c"
+        "answerKeyStr": "a,b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2
+        ],
+        "correctAnswer": "A,B,C"
       },
       {
         "questionNumber": 16,
-        "questionType": "MULTIPLE CORRECT",
+        "questionType": "MULTI_CORRECT",
         "text": "Let $I = \\int_0^1 \\sqrt{\\frac{1 + \\sqrt{x}}{1 - \\sqrt{x}}} dx$ and $J = \\int_0^1 \\sqrt{\\frac{1 - \\sqrt{x}}{1 + \\sqrt{x}}} dx$ then correct statement(s) is/are :",
         "options": [
           "$I + J = 2$",
@@ -18366,11 +19929,17 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[MULTIPLE CORRECT]",
         "graph_bbox": [],
-        "answerKeyStr": "b,c"
+        "answerKeyStr": "b,c",
+        "type": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C"
       },
       {
         "questionNumber": 1,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $f : R - (2n + 1)\\frac{\\pi}{2} \\rightarrow R$ then $f(x)$ be a :",
         "options": [
           "even function",
@@ -18384,11 +19953,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of solution(s) of the equation $f(x) = x^3$ in $[0, 2\\pi]$ be :",
         "options": [
           "0",
@@ -18402,11 +19972,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The minimum number of values where $f''(x)$ vanishes on $$ is :",
         "options": [
           "2",
@@ -18420,11 +19991,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int_{-1}^1 f'(1 + x) x^2 e^{x^2} dx$ is equal to :",
         "options": [
           "1",
@@ -18438,11 +20010,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int_0^2 f(1 - t) e^{\\cos \\pi t} dt - \\int_0^2 f(2 - t) e^{\\cos \\pi t} dt$ is equal to :",
         "options": [
           "$\\int_0^2 f'(t) e^{\\cos \\pi t} dt$",
@@ -18456,11 +20029,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 6,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Minimum value of $f(x)$ is :",
         "options": [
           "0",
@@ -18474,11 +20048,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 7,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The number of points of intersection of $f(x)$ and $g(x)$ is/are :",
         "options": [
           "0",
@@ -18492,11 +20067,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 8,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The area bounded by $g(x)$ with co-ordinate axes is (in square units) :",
         "options": [
           "$\\frac{9}{4}$",
@@ -18510,11 +20086,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 9,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$b =$",
         "options": [
           "$\\frac{3}{2e} - 3$",
@@ -18528,11 +20105,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 10,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The length of the subtangent of the curve $y = f(x)$ at $x = 1/2$ is :",
         "options": [
           "$\\sqrt{e} - 1$",
@@ -18546,11 +20124,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 0,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "a"
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 11,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int_0^1 f(x) dx =$",
         "options": [
           "$\\frac{1}{e}$",
@@ -18564,11 +20143,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 12,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$f_3(x)$ equals :",
         "options": [
           "$\\frac{x^3}{3} \\left( \\ln x - \\frac{5}{6} \\right)$",
@@ -18582,11 +20162,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 13,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "Value of $\\lim_{n \\to \\infty} \\frac{(n!) f_n(1)}{\\ln(n)}$",
         "options": [
           "0",
@@ -18600,11 +20181,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 14,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "If $g(x) = \\frac{f(x) + f(-x)}{2}$ then $\\int \\frac{dx}{\\sqrt{g(e^x) - 2}}$ is equal to :",
         "options": [
           "$\\sec^{-1}(e^{-x}) + C$",
@@ -18618,11 +20200,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "b"
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 15,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "$\\int \\frac{e^x}{f(e^x)} dx$",
         "options": [
           "$\\cot^{-1}\\left(\\frac{2e^x - 1}{\\sqrt{3}}\\right) + C$",
@@ -18636,11 +20219,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 16,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $C$ is :",
         "options": [
           "7",
@@ -18654,11 +20238,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "c"
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 17,
-        "questionType": "COMPREHENSION",
+        "questionType": "SINGLE_CORRECT",
         "text": "The value of $L$ is :",
         "options": [
           "$\\frac{2}{7}$",
@@ -18672,11 +20257,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[COMPREHENSION]",
         "graph_bbox": [],
-        "answerKeyStr": "d"
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| Column-I | Column-II |\n|---|---|\n| (A) $\\lim_{n \\to \\infty} 4 \\left[ \\frac{1}{n^2} e^{\\frac{1}{n}} + \\frac{2}{n^2} e^{\\frac{2}{n}} + \\frac{3}{n^2} e^{\\frac{3}{n}} + \\dots + \\frac{1}{n} e^{\\frac{n}{n}} \\right] =$ | (P) $0$ |\n| (B) $\\int_0^1 \\ln \\left( \\frac{1}{x} - 1 \\right) dx =$ | (Q) $1$ |\n| (C) $\\int_0^{10\\pi} \\left( \\lim_{x \\to y} \\left( \\frac{\\sin x - \\sin y}{x - y} \\right) \\right) dy =$ | (R) $2$ |\n| (D) $\\int_0^\\infty \\frac{\\ln(x + \\frac{1}{x}) dx}{(1 + x^2)} = \\frac{\\pi}{2} \\ln a$, then $a =$ | (S) $4$ |\n|  | (T) $5$",
         "options": [
           "A $\\rightarrow$ P, B $\\rightarrow$ P, C $\\rightarrow$ P, D $\\rightarrow$ S",
@@ -18690,11 +20276,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A → S; B → P; C → P; D → S"
+        "answerKeyStr": "A → S; B → P; C → P; D → S",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 2,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "Match the following $\\int f(x) dx$ is equal to, if\n\n| Column-I | Column-II |\n|---|---|\n| (A) $f(x) = \\frac{1}{(x^2 + 1)\\sqrt{x^2 + 2}}$ | (P) $\\frac{x^5}{5(1 - x^4)^{5/2}} + C$ |\n| (B) $f(x) = \\frac{1}{(x + 2)\\sqrt{x^2 + 6x + 7}}$ | (Q) $\\sin^{-1} \\left( \\frac{x + 1}{(x + 2)\\sqrt{2}} \\right) + C$ |\n| (C) $f(x) = \\frac{x^4 + x^8}{(1 - x^4)^{7/2}}$ | (R) $(\\sqrt{x} - 2)\\sqrt{1 - x} + \\cos^{-1}\\sqrt{x} + C$ |\n| (D) $f(x) = \\sqrt{\\frac{1 - \\sqrt{x}}{1 + \\sqrt{x}}}$ | (S) $-\\tan^{-1} \\sqrt{1 + \\frac{2}{x^2}} + C$ |\n| | (T) $\\frac{x^6}{6(1 - x^4)^{5/2}} + C$ |",
         "options": [
           "A $\\rightarrow$ S, B $\\rightarrow$ Q, C $\\rightarrow$ S, D $\\rightarrow$ P",
@@ -18708,11 +20295,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 3,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A → S; B → Q; C → P; D → R"
+        "answerKeyStr": "A → S; B → Q; C → P; D → R",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 3,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| Column-I | Column-II |\n|---|---|\n| (A) $\\int_0^{\\pi/2} \\frac{\\cos x}{(1 + \\sin x)(2 + \\sin x)} dx =$ | (P) $\\frac{\\pi}{6}$ |\n| (B) $\\int_0^{41\\pi/4} |\\cos x| dx =$ | (Q) $20 + \\frac{1}{\\sqrt{2}}$ |\n| (C) $\\int_{-1/2}^{1/2} \\left[ [x] + \\ln \\left( \\frac{1 + x}{1 - x} \\right) \\right] dx =$ *(where $[\\cdot]$ represents greatest integer function)* | (R) $\\ln 4 - \\ln 3$ |\n| (D) $\\int_0^{\\pi/2} \\frac{2\\sqrt{\\cos \\theta}}{3(\\sqrt{\\sin \\theta} + \\sqrt{\\cos \\theta})} d\\theta =$ | (S) $-\\frac{1}{2}$ |",
         "options": [
           "A $\\rightarrow$ S, B $\\rightarrow$ R, C $\\rightarrow$ R, D $\\rightarrow$ R",
@@ -18726,11 +20314,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A → R; B → Q; C → S; D → P"
+        "answerKeyStr": "A → R; B → Q; C → S; D → P",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 4,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| Column-I | Column-II |\n|---|---|\n| (A) If quadratic equation $3x^2 + ax + 1 = 0$ and $2x^2 + bx + 1 = 0$ have a common root then value of $5ab - 2a^2 - 3b^2 =$ | (P) $6$ |\n| (B) Number of solution of $x^4 - 2x^2 \\sin^2 \\frac{\\pi x}{2} + 1 = 0$ is/are | (Q) $1$ |\n| (C) Number of points of discontinuity $y = \\frac{1}{u^2 + u - 2}$ where $u = \\frac{1}{x - 1}$ is/are | (R) $2$ |\n| (D) $\\int \\frac{dx}{x^{5/2} (1 + x)^{7/2}} = A \\left( \\frac{x + 1}{x} \\right)^{-1/A} + C$ *(Where $C$ is integration constant)*, then $A =$ | (S) $3$ |",
         "options": [
           "A $\\rightarrow$ P, B $\\rightarrow$ Q, C $\\rightarrow$ P, D $\\rightarrow$ P",
@@ -18744,11 +20333,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 1,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A → Q; B → R; C → S; D → P"
+        "answerKeyStr": "A → Q; B → R; C → S; D → P",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 5,
-        "questionType": "MATCH THE COLUMN",
+        "questionType": "SINGLE_CORRECT",
         "text": "| Column-I | Column-II |\n|---|---|\n| (A) $\\int_0^{1.5} [x^2] dx$ | (P) $-\\pi$ |\n| (B) $\\int_0^4 \\{\\sqrt{x}\\} dx$ *(where $\\{x\\}$ denotes the fractional part of $x$)* | (Q) $4(\\sqrt{2} - 1)$ |\n| (C) $\\int_0^{2\\pi} [\\sin x + \\cos x] dx$ | (R) $\\frac{7}{3}$ |\n| (D) $\\int_0^\\pi ||\\sin x| - |\\cos x|| dx$ | (S) $2 - \\sqrt{2}$\n\n*** |",
         "options": [
           "A $\\rightarrow$ P, B $\\rightarrow$ S, C $\\rightarrow$ P, D $\\rightarrow$ P",
@@ -18762,11 +20352,12 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": 2,
         "typeLabel": "[MATCH THE COLUMN]",
         "graph_bbox": [],
-        "answerKeyStr": "A → S; B → R; C → P; D → Q"
+        "answerKeyStr": "A → S; B → R; C → P; D → Q",
+        "type": "SINGLE_CORRECT"
       },
       {
         "questionNumber": 1,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "$\\int \\frac{x + (\\arccos 3x)^2}{\\sqrt{1 - 9x^2}} dx = \\frac{1}{k_1} \\left( \\sqrt{1 - 9x^2} + (\\cos^{-1} 3x)^{k_2} \\right) + C$, then $k_1^2 + k_2^2 =$ \n*(where $C$ is an arbitrary constant.)*",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18775,11 +20366,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "90"
+        "answerKeyStr": "90",
+        "type": "NUMERICAL",
+        "correctAnswer": "90"
       },
       {
         "questionNumber": 2,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\int_0^\\infty \\frac{x^3}{(a^2 + x^2)^5} dx = \\frac{1}{k a^6}$, then find the value of $\\frac{k}{8}$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18788,11 +20381,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 3,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = x \\cos x ; x \\in \\left[ \\frac{3\\pi}{2}, 2\\pi \\right]$ and $g(x)$ be its inverse. If $\\int_0^{2\\pi} g(x) dx = \\alpha \\pi^2 + \\beta \\pi + \\gamma$, where $\\alpha, \\beta$ and $\\gamma \\in R$, then find the value of $2(\\alpha + \\beta + \\gamma)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18801,11 +20396,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 4,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\int (x^6 + x^4 + x^2) \\sqrt{2x^4 + 3x^2 + 6} dx = \\frac{(\\alpha x^6 + \\beta x^4 + \\gamma x^2)^{3/2}}{18} + C$ where $C$ is constant, then find the value of $(\\beta + \\gamma - \\alpha)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18814,11 +20411,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "NUMERICAL",
+        "correctAnswer": "7"
       },
       {
         "questionNumber": 5,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If the value of the definite integral $\\int_{-1}^1 \\cot^{-1} \\left( \\frac{1}{\\sqrt{1 - x^2}} \\right) \\left( \\cot^{-1} \\frac{x}{\\sqrt{1 - x^2}} \\right) |x| dx = \\frac{\\pi^2(\\sqrt{a} - \\sqrt{b})}{\\sqrt{c}}$ where $a, b, c \\in N$ in their lowest form, then find the value of $(a + b + c)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18827,11 +20426,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "NUMERICAL",
+        "correctAnswer": "7"
       },
       {
         "questionNumber": 6,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The value of $\\int \\frac{\\tan x}{\\tan^2 x + \\tan x + 1} dx = x - \\frac{2}{\\sqrt{A}} \\tan^{-1} \\left( \\frac{2\\tan x + 1}{\\sqrt{A}} \\right) + C$\nThen the value of $A$ is:",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18840,11 +20441,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 7,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $\\int_0^1 \\frac{4x^3(1 + (x^4)^{2010})}{(1 + x^4)^{2012}} dx = \\frac{\\lambda}{\\mu}$ where $\\lambda$ and $\\mu$ are relatively prime positive integers. Find unit digit of $\\mu$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18853,11 +20456,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 8,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $\\int_1^{\\sqrt{3}} \\left( x^{2x^2 + 1} + \\ln(x^{x^{2x^2 + 1}}) \\right) dx = N$. Find the value of $(N - 6)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18866,11 +20471,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "NUMERICAL",
+        "correctAnswer": "7"
       },
       {
         "questionNumber": 9,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\int \\frac{dx}{\\cos^3 x - \\sin^3 x} = A \\tan^{-1}(f(x)) + B \\ln \\left| \\frac{\\sqrt{2} + f(x)}{\\sqrt{2} - f(x)} \\right| + C$ where $f(x) = \\sin x + \\cos x$ find the value of $(12A + 9\\sqrt{2}B) - 3$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18879,11 +20486,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "8"
+        "answerKeyStr": "8",
+        "type": "NUMERICAL",
+        "correctAnswer": "8"
       },
       {
         "questionNumber": 10,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the value of $|a|$ for which the area of triangle included between the coordinate axes and any tangent to the curve $x^a y = \\lambda^a$ is constant (where $\\lambda$ is constant.)",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18892,11 +20501,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 11,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $I = \\int_0^\\pi x^6 (\\pi - x)^8 dx$, then $\\frac{\\pi^{15}}{{15 \\choose 9} I} =$",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18905,11 +20516,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "NUMERICAL",
+        "correctAnswer": "9"
       },
       {
         "questionNumber": 12,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If maximum value of $\\int_0^1 (f(x))^3 dx$ under the condition $-1 \\le f(x) \\le 1 ; \\int_0^1 f(x) dx = 0$ is $\\frac{p}{q}$ (where $p$ and $q$ are relatively prime positive integers.). Find $p + q$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18918,11 +20531,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5"
       },
       {
         "questionNumber": 13,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let a differentiable function $f(x)$ satisfies $f(x) \\cdot f'(-x) = f(-x) \\cdot f'(x)$ and $f(0) = 1$. Find the value of $\\int_{-2}^2 \\frac{dx}{1 + f(x)}$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18931,11 +20546,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 14,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\{x\\}$ denotes the fractional part of $x$, then $I = \\int_0^{100} \\{\\sqrt{x}\\} dx$, then the value of $\\frac{9I}{155}$ is:",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18944,11 +20561,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 15,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $I_n = \\int_0^\\pi \\frac{\\sin\\left(\\left(n + \\frac{1}{2}\\right)x\\right)}{\\sin\\left(\\frac{x}{2}\\right)} dx$ where $n \\in W$. If $I_1^2 + I_2^2 + I_3^2 + \\dots + I_{20}^2 = m\\pi^2$, then find the largest prime factor of $m$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18957,11 +20576,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5"
       },
       {
         "questionNumber": 16,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $M$ be the maximum value of $72 \\int_0^y \\sqrt{x^4 + (y - y^2)^2} dx$ for $y \\in$, then find $\\frac{M}{6}$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18970,11 +20591,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4"
       },
       {
         "questionNumber": 17,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the number of points where $f(\\theta) = \\int_{-1}^1 \\frac{\\sin \\theta dx}{1 - 2x\\cos \\theta + x^2}$ is discontinuous where $\\theta \\in [0, 2\\pi]$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18983,11 +20606,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 18,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Find the value of $\\lim_{n \\to \\infty} \\frac{1}{\\sqrt{n}} \\left( 1 + \\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{3}} + \\dots + \\frac{1}{\\sqrt{n}} \\right)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -18996,11 +20621,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 19,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "The maximum value of $\\int_{-\\pi/2}^{3\\pi/2} \\sin x \\cdot f(x) dx$, subject to the condition $|f(x)| \\le 5$ is $M$, then $\\frac{M}{10}$ is equal to:",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19009,11 +20636,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 20,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Given a function $g$, continuous everywhere such that $g(1) = 5$ and $\\int_0^1 g(t) dt = 2$. If $f(x) = \\frac{1}{2} \\int_0^x (x - t)^2 g(t) dt$, then find the value of $f'''(1) + f''(1)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19022,11 +20651,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "7"
+        "answerKeyStr": "7",
+        "type": "NUMERICAL",
+        "correctAnswer": "7"
       },
       {
         "questionNumber": 21,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $f(n) = \\frac{1}{\\pi} \\int_0^{\\pi/2} \\frac{\\sin^2(n\\theta) d\\theta}{\\sin^2 \\theta}, n \\in N$, then evaluate $\\frac{f(15) + f(3)}{f(12) - f(10)}$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19035,11 +20666,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "9"
+        "answerKeyStr": "9",
+        "type": "NUMERICAL",
+        "correctAnswer": "9"
       },
       {
         "questionNumber": 22,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(2 - x) = f(2 + x)$ and $f(4 - x) = f(4 + x)$. Function $f(x)$ satisfies $\\int_0^2 f(x) dx = 5$. If $\\int_0^{50} f(x) dx = I$. Find $[\\sqrt{I} - 3]$. *(where $[\\cdot]$ denotes greatest integer function.)*",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19048,11 +20681,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "8"
+        "answerKeyStr": "8",
+        "type": "NUMERICAL",
+        "correctAnswer": "8"
       },
       {
         "questionNumber": 23,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $I_n = \\int_{-1}^1 |x| \\left( 1 + x + \\frac{x^2}{2} + \\frac{x^3}{3} + \\dots + \\frac{x^{2n}}{2n} \\right) dx$. If $\\lim_{n \\to \\infty} I_n$ can be expressed as rational $\\frac{p}{q}$ in its lowest form, then find the value of $\\frac{pq(p+q)}{10}$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19061,11 +20696,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "3"
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "correctAnswer": "3"
       },
       {
         "questionNumber": 24,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $\\lim_{n \\to \\infty} n^{-\\frac{1}{2}\\left(1 + \\frac{1}{n}\\right)} \\cdot (1^1 \\cdot 2^2 \\cdot 3^3 \\dots n^n)^{\\frac{1}{n^2}} = e^{\\frac{-p}{q}}$ where $p$ and $q$ are relative prime positive integers. Find the value of $|p + q|$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19074,11 +20711,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "5"
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "correctAnswer": "5"
       },
       {
         "questionNumber": 25,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\int_a^b |\\sin x| dx = 8$ and $\\int_0^{a+b} |\\cos x| dx = 9$ then the value of $\\frac{1}{\\sqrt{2}\\pi} \\int_a^b x \\sin x dx$ is:",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19087,11 +20726,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 26,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $f(x), g(x), h(x)$ and $\\phi(x)$ are polynomial in $x$, \n$\\left( \\int_1^x f(x) h(x) dx \\right) \\left( \\int_1^x g(x) \\phi(x) dx \\right) - \\left( \\int_1^x f(x) \\phi(x) dx \\right) \\left( \\int_1^x g(x) h(x) dx \\right)$ is divisible by $(x - 1)^\\lambda$. Find maximum value of $\\lambda$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19100,11 +20741,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4"
       },
       {
         "questionNumber": 27,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "If $\\int_0^1 (3x^2 - 3x + 1) \\cos(x^3 - 3x^2 + 4x - 2) dx = a \\sin(b)$, where $a$ and $b$ are positive integers. Find the value of $(a + b)$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19113,11 +20756,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "2"
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "correctAnswer": "2"
       },
       {
         "questionNumber": 28,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "Let $f(x) = \\int_0^x e^{x-y} f'(y) dy - (x^2 - x + 1)e^x$. Find the number of roots of the equation $f(x) = 0$.",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19126,11 +20771,13 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "1"
+        "answerKeyStr": "1",
+        "type": "NUMERICAL",
+        "correctAnswer": "1"
       },
       {
         "questionNumber": 29,
-        "questionType": "SUBJECTIVE TYPE",
+        "questionType": "NUMERICAL",
         "text": "For a positive integer $n$, let $I_n = \\int_{-\\pi}^\\pi \\left( \\frac{\\pi}{2} - |x| \\right) \\cos nx dx$. Find the value of $[I_1 + I_2 + I_3 + I_4]$ where $[\\cdot]$ denotes greatest integer function.\n\n***",
         "options": [],
         "exerciseName": "Exercise-5 : Subjective Type Problems",
@@ -19139,7 +20786,9 @@ window.DEFAULT_BLACKBOOK = [
         "correctOption": -1,
         "typeLabel": "[SUBJECTIVE TYPE]",
         "graph_bbox": [],
-        "answerKeyStr": "4"
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "correctAnswer": "4"
       }
     ]
   },
@@ -19151,1611 +20800,1985 @@ window.DEFAULT_BLACKBOOK = [
         "id": "8187ba93-e79e-4571-a2e3-147d565da3bc",
         "questionNumber": 1,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If a},\\text{ }b,\\text{ }c\\text{ are positive numbers and a }+\\text{ }b\\text{ }+\\text{ }c\\text{ }= 1,\\text{ then the maximum value of }(1 -\\text{ a})(1 -\\text{ }b)(1 -\\text{ }c)\\text{ is}: $",
+        "text": "If a$,$ $b,$ $c$ are positive numbers and a $+$ $b$ $+$ $c$ $= 1,$ then the maximum value of $(1 -$ a$)(1 -$ $b)(1 -$ $c)$ is$:$",
         "options": [
-          "$ 1 $",
-          "$ \\dfrac{2}{3} $",
-          "$ \\dfrac{8}{27} $",
-          "$ \\dfrac{4}{9} $"
+          "$1$",
+          "$\\dfrac{2}{3}$",
+          "$\\dfrac{8}{27}$",
+          "$\\dfrac{4}{9}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "b3d3676c-d078-465a-8c13-96e782886a32",
         "questionNumber": 2,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }xyz\\text{ }= (1 -\\text{ }x)(1 -\\text{ }y)(1 -\\text{ }z)\\text{ where }0 \\le\\text{ }x,\\text{ }y,\\text{ }z\\text{ }\\le 1,\\text{ then the minimum value of }x(1 -\\text{ }z) +\\text{ }y(1 -\\text{ }x) +\\text{ }z(1 -\\text{ }y)\\text{ is}: $",
+        "text": "If $xyz$ $= (1 -$ $x)(1 -$ $y)(1 -$ $z)$ where $0 \\le$ $x,$ $y,$ $z$ $\\le 1,$ then the minimum value of $x(1 -$ $z) +$ $y(1 -$ $x) +$ $z(1 -$ $y)$ is$:$",
         "options": [
-          "$ \\dfrac{3}{2} $",
-          "$ \\dfrac{1}{4} $",
-          "$ \\dfrac{3}{4} $",
-          "$ \\dfrac{1}{2} $"
+          "$\\dfrac{3}{2}$",
+          "$\\dfrac{1}{4}$",
+          "$\\dfrac{3}{4}$",
+          "$\\dfrac{1}{2}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "616c15df-a2cb-4ab3-8605-03706fe448b8",
         "questionNumber": 3,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }\\sec(\\alpha - 2\\beta), \\sec\\alpha, \\sec(\\alpha + 2\\beta)\\text{ are in arithmetical progression then }\\cos^2\\alpha = \\lambda \\cdot \\cos^2\\beta (\\beta \\neq\\text{ }n\\pi,\\text{ }n\\text{ }\\in\\text{ I})\\text{ the value of }\\lambda\\text{ is}: $",
+        "text": "If $\\sec(\\alpha - 2\\beta), \\sec\\alpha, \\sec(\\alpha + 2\\beta)$ are in arithmetical progression then $\\cos^2\\alpha = \\lambda \\cdot \\cos^2\\beta (\\beta \\neq$ $n\\pi,$ $n$ $\\in$ I$)$ the value of $\\lambda$ is$:$",
         "options": [
-          "$ 1 $",
-          "$ 2 $",
-          "$ 3 $",
-          "$ \\dfrac{1}{2} $"
+          "$1$",
+          "$2$",
+          "$3$",
+          "$\\dfrac{1}{2}$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "a719eda1-5905-4797-a137-694157bef000",
         "questionNumber": 4,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c,\\text{ }d,\\text{ }e\\text{ are non-zero and distinct positive real numbers}.\\text{ If a},\\text{ }b,\\text{ }c\\text{ are in A}.P.;\\text{ }b,\\text{ }c,\\text{ }d\\text{ are in }G.P.\\text{ and }c,\\text{ }d,\\text{ }e\\text{ are in }H.P.,\\text{ then a},\\text{ }c,\\text{ }e\\text{ are in}: $",
+        "text": "Let a$,$ $b,$ $c,$ $d,$ $e$ are non-zero and distinct positive real numbers$.$ If a$,$ $b,$ $c$ are in A$.P.;$ $b,$ $c,$ $d$ are in $G.P.$ and $c,$ $d,$ $e$ are in $H.P.,$ then a$,$ $c,$ $e$ are in$:$",
         "options": [
-          "$ \\text{A}.P. $",
-          "$ G.P. $",
-          "$ H.P. $",
-          "$ \\text{Nothing can be said} $"
+          "A$.P.$",
+          "$G.P.$",
+          "$H.P.$",
+          "Nothing can be said"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "9c9a805c-4539-4edc-9a33-a4ffb8f03aa1",
         "questionNumber": 5,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }(m\\text{ }+ 1)^{\\text{th}}, (n\\text{ }+ 1)^{\\text{th}},\\text{ and }(r\\text{ }+ 1)^{\\text{th}}\\text{ terms of a non-constant A}.P.\\text{ are in }G.P.\\text{ and }m,\\text{ }n,\\text{ }r\\text{ are in }H.P.,\\text{ then the ratio of first term of the A}.P.\\text{ to its common difference is}: $",
+        "text": "If $(m$ $+ 1)^{$th$}, (n$ $+ 1)^{$th$},$ and $(r$ $+ 1)^{$th$}$ terms of a non-constant A$.P.$ are in $G.P.$ and $m,$ $n,$ $r$ are in $H.P.,$ then the ratio of first term of the A$.P.$ to its common difference is$:$",
         "options": [
-          "$ -\\dfrac{n}{2} $",
-          "$ -n $",
-          "$ -2n $",
-          "$ +n $"
+          "$-\\dfrac{n}{2}$",
+          "$-n$",
+          "$-2n$",
+          "$+n$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "49af5397-4395-4fc1-8564-d9bea5820971",
         "questionNumber": 6,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If the equation }x^4 - 4x^3 +\\text{ ax}^2 +\\text{ bx }+ 1 = 0\\text{ has four positive roots},\\text{ then the value of }(\\text{a }+\\text{ }b)\\text{ is}: $",
+        "text": "If the equation $x^4 - 4x^3 +$ ax$^2 +$ bx $+ 1 = 0$ has four positive roots$,$ then the value of $($a $+$ $b)$ is$:$",
         "options": [
-          "$ -4 $",
-          "$ 2 $",
-          "$ 6 $",
-          "$ \\text{can not be determined} $"
+          "$-4$",
+          "$2$",
+          "$6$",
+          "can not be determined"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "5295c88d-aef8-4dea-a423-371728b6743f",
         "questionNumber": 7,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }S_1, S_2\\text{ and }S_3\\text{ are the sums of first }n\\text{ natural numbers},\\text{ their squares and their cubes respectively},\\text{ then }\\dfrac{S_1^4 S_2^2 - S_2^2 S_3^2}{S_1^2 + S_3^2} = $",
+        "text": "If $S_1, S_2$ and $S_3$ are the sums of first $n$ natural numbers$,$ their squares and their cubes respectively$,$ then $\\dfrac{S_1^4 S_2^2 - S_2^2 S_3^2}{S_1^2 + S_3^2} =$",
         "options": [
-          "$ 4 $",
-          "$ 2 $",
-          "$ 1 $",
-          "$ 0 $"
+          "$4$",
+          "$2$",
+          "$1$",
+          "$0$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "6ca7c241-aedb-45ea-9dd2-7d078ea7fd97",
         "questionNumber": 8,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }S_n = \\dfrac{1 \\cdot 2}{3!} + \\dfrac{2 \\cdot 2^2}{4!} + \\dfrac{3 \\cdot 2^3}{5!} + \\dots\\text{ upto }n\\text{ terms then the sum of the infinite terms is}: $",
+        "text": "If $S_n = \\dfrac{1 \\cdot 2}{3!} + \\dfrac{2 \\cdot 2^2}{4!} + \\dfrac{3 \\cdot 2^3}{5!} + \\dots$ upto $n$ terms then the sum of the infinite terms is$:$",
         "options": [
-          "$ 1 $",
-          "$ \\dfrac{2}{3} $",
-          "$ e $",
-          "$ \\dfrac{\\pi}{4} $"
+          "$1$",
+          "$\\dfrac{2}{3}$",
+          "$e$",
+          "$\\dfrac{\\pi}{4}$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "87434475-c529-47c5-aad7-b36174baf89c",
         "questionNumber": 9,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }\\tan\\left(\\dfrac{\\pi}{12} -\\text{ }x\\right), \\tan\\dfrac{\\pi}{12}, \\tan\\left(\\dfrac{\\pi}{12} +\\text{ }x\\right)\\text{ in order are three consecutive terms of a }G.P.\\text{ then sum of all the solutions in }[0, 314]\\text{ is }k\\pi.\\text{ The value of }k\\text{ is}: $",
+        "text": "If $\\tan\\left(\\dfrac{\\pi}{12} -$ $x\\right), \\tan\\dfrac{\\pi}{12}, \\tan\\left(\\dfrac{\\pi}{12} +$ $x\\right)$ in order are three consecutive terms of a $G.P.$ then sum of all the solutions in $[0, 314]$ is $k\\pi.$ The value of $k$ is$:$",
         "options": [
-          "$ 4950 $",
-          "$ 5050 $",
-          "$ 2525 $",
-          "$ 5010 $"
+          "$4950$",
+          "$5050$",
+          "$2525$",
+          "$5010$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "e3610c2c-7bc9-42ba-84f5-46af54fa4166",
         "questionNumber": 10,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }S_k = 1 + 2 + 3 + \\dots +\\text{ }k\\text{ and }Q_n = \\dfrac{S_2}{S_2 - 1} \\cdot \\dfrac{S_3}{S_3 - 1} \\cdot \\dfrac{S_4}{S_4 - 1} \\dots \\dfrac{S_n}{S_n - 1},\\text{ where }k,\\text{ }n\\text{ }\\in\\text{ }N\\text{ }\\lim_{n\\text{ }\\to \\infty} Q_n = $",
+        "text": "Let $S_k = 1 + 2 + 3 + \\dots +$ $k$ and $Q_n = \\dfrac{S_2}{S_2 - 1} \\cdot \\dfrac{S_3}{S_3 - 1} \\cdot \\dfrac{S_4}{S_4 - 1} \\dots \\dfrac{S_n}{S_n - 1},$ where $k,$ $n$ $\\in$ $N$ $\\lim_{n$ $\\to \\infty} Q_n =$",
         "options": [
-          "$ \\dfrac{1}{3} $",
-          "$ 1 $",
-          "$ 3 $",
-          "$ 0 $"
+          "$\\dfrac{1}{3}$",
+          "$1$",
+          "$3$",
+          "$0$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "66bb7a09-f40a-4104-9cda-8dd428c87114",
         "questionNumber": 11,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ l,\\text{ }m,\\text{ }n\\text{ are the }p^{\\text{th}},\\text{ }q^{\\text{th}}\\text{ and }r^{\\text{th}}\\text{ term of a }G.P.\\text{ all positive},\\text{ then }\\begin{\\text{vmatrix}} \\log\\text{ }l\\text{ }&\\text{ }p\\text{ }& 1 \\\\ \\log\\text{ }m\\text{ }&\\text{ }q\\text{ }& 1 \\\\ \\log\\text{ }n\\text{ }&\\text{ }r\\text{ }& 1 \\end{\\text{vmatrix}}\\text{ equals}: $",
+        "text": "$l,$ $m,$ $n$ are the $p^{$th$},$ $q^{$th$}$ and $r^{$th$}$ term of a $G.P.$ all positive$,$ then $\\begin{$vmatrix$} \\log$ $l$ $&$ $p$ $& 1 \\\\ \\log$ $m$ $&$ $q$ $& 1 \\\\ \\log$ $n$ $&$ $r$ $& 1 \\end{$vmatrix$}$ equals$:$",
         "options": [
-          "$ -1 $",
-          "$ 2 $",
-          "$ 1 $",
-          "$ 0 $"
+          "$-1$",
+          "$2$",
+          "$1$",
+          "$0$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "f6f4da32-bcfc-4a30-963f-f1605db44d22",
         "questionNumber": 12,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The number of natural numbers }< 300\\text{ that are divisible by }6\\text{ but not by }9\\text{ is}: $",
+        "text": "The number of natural numbers $< 300$ that are divisible by $6$ but not by $9$ is$:$",
         "options": [
-          "$ 49 $",
-          "$ 37 $",
-          "$ 33 $",
-          "$ 16 $"
+          "$49$",
+          "$37$",
+          "$33$",
+          "$16$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "0e1dc8ee-d973-4d6b-8b82-e415717d6007",
         "questionNumber": 13,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }x,\\text{ }y,\\text{ }z\\text{ }> 0\\text{ and }x\\text{ }+\\text{ }y\\text{ }+\\text{ }z\\text{ }= 1\\text{ then }\\dfrac{xyz}{(1 -\\text{ }x)(1 -\\text{ }y)(1 -\\text{ }z)}\\text{ is necessarily}: $",
+        "text": "If $x,$ $y,$ $z$ $> 0$ and $x$ $+$ $y$ $+$ $z$ $= 1$ then $\\dfrac{xyz}{(1 -$ $x)(1 -$ $y)(1 -$ $z)}$ is necessarily$:$",
         "options": [
-          "$ \\ge 8 $",
-          "$ \\le \\dfrac{1}{8} $",
-          "$ 1 $",
-          "$ \\text{None of these} $"
+          "$\\ge 8$",
+          "$\\le \\dfrac{1}{8}$",
+          "$1$",
+          "None of these"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "89d1b3fa-454c-4d32-874c-8a1f266cd5d3",
         "questionNumber": 14,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If the roots of the equation px}^2 +\\text{ qx }+\\text{ }r\\text{ }= 0,\\text{ where }2p,\\text{ }q, 2r\\text{ are in }G.P.,\\text{ are of the form }\\alpha^2, 4\\alpha - 4.\\text{ Then the value of }2p + 4q + 7r\\text{ is}: $",
+        "text": "If the roots of the equation px$^2 +$ qx $+$ $r$ $= 0,$ where $2p,$ $q, 2r$ are in $G.P.,$ are of the form $\\alpha^2, 4\\alpha - 4.$ Then the value of $2p + 4q + 7r$ is$:$",
         "options": [
-          "$ 0 $",
-          "$ 10 $",
-          "$ 14 $",
-          "$ 18 $"
+          "$0$",
+          "$10$",
+          "$14$",
+          "$18$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "eabf5ed4-a9f6-4984-8993-22a965d19313",
         "questionNumber": 15,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }x_1, x_2, x_3, \\dots, x_k\\text{ be the divisors of positive integer }n\\text{ }(\\text{including }1\\text{ and }n).\\text{ If }x_1 + x_2 + x_3 + \\dots + x_k = 75.\\text{ Then }\\sum_{i=1}^k\\text{ }\\left(\\dfrac{1}{x_i}\\right)\\text{ is equal to}: $",
+        "text": "Let $x_1, x_2, x_3, \\dots, x_k$ be the divisors of positive integer $n$ $($including $1$ and $n).$ If $x_1 + x_2 + x_3 + \\dots + x_k = 75.$ Then $\\sum_{i=1}^k$ $\\left(\\dfrac{1}{x_i}\\right)$ is equal to$:$",
         "options": [
-          "$ \\dfrac{75}{k} $",
-          "$ \\dfrac{75}{n} $",
-          "$ \\dfrac{1}{n} $",
-          "$ \\dfrac{1}{75} $"
+          "$\\dfrac{75}{k}$",
+          "$\\dfrac{75}{n}$",
+          "$\\dfrac{1}{n}$",
+          "$\\dfrac{1}{75}$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "f7805e6d-5beb-46c4-98aa-602cf6281714",
         "questionNumber": 16,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }a_1, a_2, a_3, \\dots, a_n\\text{ are in }H.P.\\text{ and }f(k) = \\sum_{r=1}^n\\text{ }a_r - a_k\\text{ then }\\dfrac{a_1}{f(1)}, \\dfrac{a_2}{f(2)}, \\dfrac{a_3}{f(3)}, \\dots, \\dfrac{a_n}{f(n)}\\text{ are in}: $",
+        "text": "If $a_1, a_2, a_3, \\dots, a_n$ are in $H.P.$ and $f(k) = \\sum_{r=1}^n$ $a_r - a_k$ then $\\dfrac{a_1}{f(1)}, \\dfrac{a_2}{f(2)}, \\dfrac{a_3}{f(3)}, \\dots, \\dfrac{a_n}{f(n)}$ are in$:$",
         "options": [
-          "$ \\text{A}.P. $",
-          "$ G.P. $",
-          "$ H.P. $",
-          "$ \\text{None of these} $"
+          "A$.P.$",
+          "$G.P.$",
+          "$H.P.$",
+          "None of these"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "f84a3414-61dc-4b2b-a22e-b66571413f16",
         "questionNumber": 17,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }\\alpha, \\beta\\text{ be roots of the equation }375x^2 - 25x - 2 = 0\\text{ and }s_n = \\alpha^n\\text{ }+ \\beta^n,\\text{ then }\\lim_{n\\text{ }\\to \\infty} \\left(\\sum_{r=1}^n\\text{ }s_r\\right) = \\dots $",
+        "text": "If $\\alpha, \\beta$ be roots of the equation $375x^2 - 25x - 2 = 0$ and $s_n = \\alpha^n$ $+ \\beta^n,$ then $\\lim_{n$ $\\to \\infty} \\left(\\sum_{r=1}^n$ $s_r\\right) = \\dots$",
         "options": [
-          "$ \\dfrac{1}{12} $",
-          "$ \\dfrac{1}{4} $",
-          "$ \\dfrac{1}{3} $",
-          "$ 1 $"
+          "$\\dfrac{1}{12}$",
+          "$\\dfrac{1}{4}$",
+          "$\\dfrac{1}{3}$",
+          "$1$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "818d6e9f-a444-408b-871d-cf8657d2818e",
         "questionNumber": 18,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }a_i,\\text{ }i\\text{ }= 1, 2, 3, 4\\text{ be four real members of the same sign},\\text{ then the minimum value of }\\sum \\dfrac{a_i}{a_j},\\text{ }i,\\text{ }j\\text{ }\\in \\{1, 2, 3, 4\\},\\text{ }i\\text{ }\\neq\\text{ }j\\text{ is}: $",
+        "text": "If $a_i,$ $i$ $= 1, 2, 3, 4$ be four real members of the same sign$,$ then the minimum value of $\\sum \\dfrac{a_i}{a_j},$ $i,$ $j$ $\\in \\{1, 2, 3, 4\\},$ $i$ $\\neq$ $j$ is$:$",
         "options": [
-          "$ 6 $",
-          "$ 8 $",
-          "$ 12 $",
-          "$ 24 $"
+          "$6$",
+          "$8$",
+          "$12$",
+          "$24$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "cbafcaa3-51fe-431f-89d0-d21761f62ac7",
         "questionNumber": 19,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Given that }x,\\text{ }y,\\text{ }z\\text{ are positive reals such that }xyz\\text{ }= 32.\\text{ The minimum value of }x^2 + 4xy + 4y^2 + 2z^2\\text{ is equal to}: $",
+        "text": "Given that $x,$ $y,$ $z$ are positive reals such that $xyz$ $= 32.$ The minimum value of $x^2 + 4xy + 4y^2 + 2z^2$ is equal to$:$",
         "options": [
-          "$ 64 $",
-          "$ 256 $",
-          "$ 96 $",
-          "$ 216 $"
+          "$64$",
+          "$256$",
+          "$96$",
+          "$216$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "5d4d48d9-ac5b-4588-adb8-b58a15827a30",
         "questionNumber": 20,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{In an A}.P.,\\text{ five times the fifth term is equal to eight times the eighth term}.\\text{ Then the sum of the first twenty five terms is equal to}: $",
+        "text": "In an A$.P.,$ five times the fifth term is equal to eight times the eighth term$.$ Then the sum of the first twenty five terms is equal to$:$",
         "options": [
-          "$ 25 $",
-          "$ \\dfrac{25}{2} $",
-          "$ -25 $",
-          "$ 0 $"
+          "$25$",
+          "$\\dfrac{25}{2}$",
+          "$-25$",
+          "$0$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "da64250f-9473-4032-bd4c-bbdb2f8bc1fb",
         "questionNumber": 21,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }\\alpha, \\beta\\text{ be two distinct values of }x\\text{ lying in }[0, \\pi]\\text{ for which }\\sqrt{5}\\sin\\text{ }x, 10\\sin\\text{ }x, 10(4\\sin^2\\text{ }x\\text{ }+ 1)\\text{ are }3\\text{ consecutive terms of a }G.P.\\text{ Then minimum value of }|\\alpha - \\beta| = $",
+        "text": "Let $\\alpha, \\beta$ be two distinct values of $x$ lying in $[0, \\pi]$ for which $\\sqrt{5}\\sin$ $x, 10\\sin$ $x, 10(4\\sin^2$ $x$ $+ 1)$ are $3$ consecutive terms of a $G.P.$ Then minimum value of $|\\alpha - \\beta| =$",
         "options": [
-          "$ \\dfrac{\\pi}{10} $",
-          "$ \\dfrac{\\pi}{5} $",
-          "$ \\dfrac{2\\pi}{5} $",
-          "$ \\dfrac{3\\pi}{5} $"
+          "$\\dfrac{\\pi}{10}$",
+          "$\\dfrac{\\pi}{5}$",
+          "$\\dfrac{2\\pi}{5}$",
+          "$\\dfrac{3\\pi}{5}$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "c5f4554c-2f21-4664-945d-20a9713f6785",
         "questionNumber": 22,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{In an infinite }G.P.,\\text{ the sum of first three terms is }70.\\text{ If the extreme terms are multiplied by }4\\text{ and the middle term is multiplied by }5,\\text{ the resulting terms form an A}.P.\\text{ then the sum to infinite terms of }G.P.\\text{ is}: $",
+        "text": "In an infinite $G.P.,$ the sum of first three terms is $70.$ If the extreme terms are multiplied by $4$ and the middle term is multiplied by $5,$ the resulting terms form an A$.P.$ then the sum to infinite terms of $G.P.$ is$:$",
         "options": [
-          "$ 120 $",
-          "$ 40 $",
-          "$ 160 $",
-          "$ 80 $"
+          "$120$",
+          "$40$",
+          "$160$",
+          "$80$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "71700d22-11dc-48d6-ad58-1d44ae12cae5",
         "questionNumber": 23,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The value of the sum }\\sum_{k=1}^\\infty \\sum_{n=1}^\\infty \\dfrac{k}{2^{n+k}}\\text{ is equal to}: $",
+        "text": "The value of the sum $\\sum_{k=1}^\\infty \\sum_{n=1}^\\infty \\dfrac{k}{2^{n+k}}$ is equal to$:$",
         "options": [
-          "$ 5 $",
-          "$ 4 $",
-          "$ 3 $",
-          "$ 2 $"
+          "$5$",
+          "$4$",
+          "$3$",
+          "$2$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "c6296b2a-7b06-4a45-ba1e-a8da2dc5679c",
         "questionNumber": 24,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }p,\\text{ }q,\\text{ }r\\text{ are positive real numbers},\\text{ such that }27pqr \\ge (p\\text{ }+\\text{ }q\\text{ }+\\text{ }r)^3\\text{ and }3p + 4q + 5r = 12,\\text{ then }p^3 +\\text{ }q^4 +\\text{ }r^5 = $",
+        "text": "Let $p,$ $q,$ $r$ are positive real numbers$,$ such that $27pqr \\ge (p$ $+$ $q$ $+$ $r)^3$ and $3p + 4q + 5r = 12,$ then $p^3 +$ $q^4 +$ $r^5 =$",
         "options": [
-          "$ 3 $",
-          "$ 6 $",
-          "$ 2 $",
-          "$ 4 $"
+          "$3$",
+          "$6$",
+          "$2$",
+          "$4$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "2fc8690e-bd2b-4d51-a147-564a5d358a6a",
         "questionNumber": 25,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Find the sum of the infinite series }\\dfrac{1}{9} + \\dfrac{1}{18} + \\dfrac{1}{30} + \\dfrac{1}{45} + \\dfrac{1}{63} + \\dots $",
+        "text": "Find the sum of the infinite series $\\dfrac{1}{9} + \\dfrac{1}{18} + \\dfrac{1}{30} + \\dfrac{1}{45} + \\dfrac{1}{63} + \\dots$",
         "options": [
-          "$ \\dfrac{1}{3} $",
-          "$ \\dfrac{1}{4} $",
-          "$ \\dfrac{1}{5} $",
-          "$ \\dfrac{2}{3} $"
+          "$\\dfrac{1}{3}$",
+          "$\\dfrac{1}{4}$",
+          "$\\dfrac{1}{5}$",
+          "$\\dfrac{2}{3}$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "cc493f12-9cf8-4bba-8dcc-a77ca18bfea7",
         "questionNumber": 26,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }S_r\\text{ denote the sum of first }'r'\\text{ terms of a non constant A}.P.\\text{ and }\\dfrac{S_a}{\\text{a}^2} = \\dfrac{S_b}{b^2} =\\text{ }c,\\text{ where a},\\text{ }b,\\text{ }c\\text{ are distinct then }S_c = $",
+        "text": "If $S_r$ denote the sum of first $'r'$ terms of a non constant A$.P.$ and $\\dfrac{S_a}{$a$^2} = \\dfrac{S_b}{b^2} =$ $c,$ where a$,$ $b,$ $c$ are distinct then $S_c =$",
         "options": [
-          "$ c^2 $",
-          "$ c^3 $",
-          "$ c^4 $",
-          "$ abc $"
+          "$c^2$",
+          "$c^3$",
+          "$c^4$",
+          "$abc$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "33a0dc87-7eb9-435a-bbfd-d607e40619ff",
         "questionNumber": 27,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{In an infinite }G.P.\\text{ second term is }x\\text{ and its sum is }4,\\text{ then complete set of values of }'x'\\text{ is}: $",
+        "text": "In an infinite $G.P.$ second term is $x$ and its sum is $4,$ then complete set of values of $'x'$ is$:$",
         "options": [
-          "$ (-8, 0) $",
-          "$ \\left[-\\dfrac{1}{8}, \\dfrac{1}{8}\\right] - \\{0\\} $",
-          "$ \\left[-1, -\\dfrac{1}{8}\\right) \\cup \\left(\\dfrac{1}{8}, 1\\right] $",
-          "$ (-8, 1] - \\{0\\} $"
+          "$(-8, 0)$",
+          "$\\left[-\\dfrac{1}{8}, \\dfrac{1}{8}\\right] - \\{0\\}$",
+          "$\\left[-1, -\\dfrac{1}{8}\\right) \\cup \\left(\\dfrac{1}{8}, 1\\right]$",
+          "$(-8, 1] - \\{0\\}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "23352fce-fbba-4f1a-b5b0-1a406a08a638",
         "questionNumber": 28,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The number of terms of an A}.P.\\text{ is odd}.\\text{ The sum of the odd terms }(1^{\\text{st}}, 3^{\\text{rd}}\\text{ etc}.,)\\text{ is }248\\text{ and the sum of the even terms is }217.\\text{ The last term exceeds the first by }56,\\text{ then}: $",
+        "text": "The number of terms of an A$.P.$ is odd$.$ The sum of the odd terms $(1^{$st$}, 3^{$rd$}$ etc$.,)$ is $248$ and the sum of the even terms is $217.$ The last term exceeds the first by $56,$ then$:$",
         "options": [
-          "$ \\text{the number of terms is }17 $",
-          "$ \\text{the first term is }3 $",
-          "$ \\text{the number of terms is }13 $",
-          "$ \\text{the first term is }1 $"
+          "the number of terms is $17$",
+          "the first term is $3$",
+          "the number of terms is $13$",
+          "the first term is $1$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "84f05100-d5ca-4aba-bff7-f2f02eeba1bb",
         "questionNumber": 29,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }A_1, A_2, A_3, \\dots, A_n\\text{ be squares such that for each }n\\text{ }\\ge 1\\text{ the length of a side of }A_n\\text{ equals the length of a diagonal of }A_{n+1}.\\text{ If the side of }A_1\\text{ be }20\\text{ units then the smallest value of }'n'\\text{ for which area of }A_n\\text{ is less than }1. $",
+        "text": "Let $A_1, A_2, A_3, \\dots, A_n$ be squares such that for each $n$ $\\ge 1$ the length of a side of $A_n$ equals the length of a diagonal of $A_{n+1}.$ If the side of $A_1$ be $20$ units then the smallest value of $'n'$ for which area of $A_n$ is less than $1.$",
         "options": [
-          "$ 7 $",
-          "$ 8 $",
-          "$ 9 $",
-          "$ 10 $"
+          "$7$",
+          "$8$",
+          "$9$",
+          "$10$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "b1baa085-6ae7-41e9-892c-da1e984e69fc",
         "questionNumber": 30,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }S_k = \\sum_{i=0}^\\infty \\dfrac{1}{(k\\text{ }+ 1)^i},\\text{ then }\\sum_{k=1}^n\\text{ }kS_k\\text{ equal}: $",
+        "text": "Let $S_k = \\sum_{i=0}^\\infty \\dfrac{1}{(k$ $+ 1)^i},$ then $\\sum_{k=1}^n$ $kS_k$ equal$:$",
         "options": [
-          "$ \\dfrac{n(n\\text{ }+ 1)}{2} $",
-          "$ \\dfrac{n(n\\text{ }- 1)}{2} $",
-          "$ \\dfrac{n(n\\text{ }+ 2)}{2} $",
-          "$ \\dfrac{n(n\\text{ }+ 3)}{2} $"
+          "$\\dfrac{n(n$ $+ 1)}{2}$",
+          "$\\dfrac{n(n$ $- 1)}{2}$",
+          "$\\dfrac{n(n$ $+ 2)}{2}$",
+          "$\\dfrac{n(n$ $+ 3)}{2}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "8ef8cf39-357f-455f-9a1f-298c8fb9f041",
         "questionNumber": 31,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the series }\\dfrac{2}{1 \\cdot 2} + \\dfrac{5}{2 \\cdot 3} 2^1 + \\dfrac{10}{3 \\cdot 4} 2^2 + \\dfrac{17}{4 \\cdot 5} 2^3 + \\dots\\text{ upto }n\\text{ terms is equal}: $",
+        "text": "The sum of the series $\\dfrac{2}{1 \\cdot 2} + \\dfrac{5}{2 \\cdot 3} 2^1 + \\dfrac{10}{3 \\cdot 4} 2^2 + \\dfrac{17}{4 \\cdot 5} 2^3 + \\dots$ upto $n$ terms is equal$:$",
         "options": [
-          "$ \\dfrac{n\\text{ }2^n}{n\\text{ }+ 1} $",
-          "$ \\left(\\dfrac{n}{n\\text{ }+ 1}\\right) 2^n\\text{ }+ 1 $",
-          "$ \\dfrac{n\\text{ }2^n}{n\\text{ }+ 1} - 1 $",
-          "$ \\dfrac{(n\\text{ }- 1) 2^n}{n\\text{ }+ 1} $"
+          "$\\dfrac{n$ $2^n}{n$ $+ 1}$",
+          "$\\left(\\dfrac{n}{n$ $+ 1}\\right) 2^n$ $+ 1$",
+          "$\\dfrac{n$ $2^n}{n$ $+ 1} - 1$",
+          "$\\dfrac{(n$ $- 1) 2^n}{n$ $+ 1}$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "d754392a-13ae-4953-a5d8-75ada749621e",
         "questionNumber": 32,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }(1.5)^{30} =\\text{ }k,\\text{ then the value of }\\sum_{n=2}^{29} (1.5)^n,\\text{ is}: $",
+        "text": "If $(1.5)^{30} =$ $k,$ then the value of $\\sum_{n=2}^{29} (1.5)^n,$ is$:$",
         "options": [
-          "$ 2k - 3 $",
-          "$ k\\text{ }+ 1 $",
-          "$ 2k + 7 $",
-          "$ 2k - \\dfrac{9}{2} $"
+          "$2k - 3$",
+          "$k$ $+ 1$",
+          "$2k + 7$",
+          "$2k - \\dfrac{9}{2}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "abd2d087-7589-49c7-801a-579b051f2594",
         "questionNumber": 33,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ n\\text{ arithmetic means are inserted between }7\\text{ and }49\\text{ and their sum is found to be }364,\\text{ then }n\\text{ is}: $",
+        "text": "$n$ arithmetic means are inserted between $7$ and $49$ and their sum is found to be $364,$ then $n$ is$:$",
         "options": [
-          "$ 11 $",
-          "$ 12 $",
-          "$ 13 $",
-          "$ 14 $"
+          "$11$",
+          "$12$",
+          "$13$",
+          "$14$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "46ff19f0-4b99-45f5-9b91-d4d39c4e6d9b",
         "questionNumber": 34,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The third term of a }G.P.\\text{ is }2.\\text{ Then the product of the first five terms},\\text{ is}: $",
+        "text": "The third term of a $G.P.$ is $2.$ Then the product of the first five terms$,$ is$:$",
         "options": [
-          "$ 2^3 $",
-          "$ 2^4 $",
-          "$ 2^5 $",
-          "$ \\text{none of these} $"
+          "$2^3$",
+          "$2^4$",
+          "$2^5$",
+          "none of these"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "5a8202aa-89fb-4469-86da-99f7005d24f0",
         "questionNumber": 35,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of first }n\\text{ terms of an A}.P.\\text{ is }5n^2 + 4n,\\text{ its common difference is}: $",
+        "text": "The sum of first $n$ terms of an A$.P.$ is $5n^2 + 4n,$ its common difference is$:$",
         "options": [
-          "$ 9 $",
-          "$ 10 $",
-          "$ 3 $",
-          "$ -4 $"
+          "$9$",
+          "$10$",
+          "$3$",
+          "$-4$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "15d8dd6c-cdd0-412e-bc80-c968d0d32f96",
         "questionNumber": 36,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }x\\text{ }+\\text{ }y\\text{ }=\\text{ a and }x^2 +\\text{ }y^2 =\\text{ }b,\\text{ then the value of }(x^3 +\\text{ }y^3),\\text{ is}: $",
+        "text": "If $x$ $+$ $y$ $=$ a and $x^2 +$ $y^2 =$ $b,$ then the value of $(x^3 +$ $y^3),$ is$:$",
         "options": [
-          "$ \\text{ab} $",
-          "$ \\text{a}^2 +\\text{ }b $",
-          "$ \\text{a }+\\text{ }b^2 $",
-          "$ \\dfrac{3ab -\\text{ a}^3}{2} $"
+          "ab",
+          "a$^2 +$ $b$",
+          "a $+$ $b^2$",
+          "$\\dfrac{3ab -$ a$^3}{2}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "d4b7552e-d49d-4eb2-89d3-df4835215712",
         "questionNumber": 37,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }S_1, S_2, S_3, \\dots, S_n\\text{ are the sum of infinite geometric series whose first terms are }1, 3, 5, \\dots, (2n - 1)\\text{ and whose common ratios are }\\dfrac{2}{3}, \\dfrac{2}{5}, \\dots, \\dfrac{2}{2n+1}\\text{ respectively},\\text{ then }\\left\\{\\dfrac{1}{S_1 S_2 S_3} + \\dfrac{1}{S_2 S_3 S_4} + \\dfrac{1}{S_3 S_4 S_5} + \\dots \\text{\\text{upto infinite terms}}\\right\\} = $",
+        "text": "If $S_1, S_2, S_3, \\dots, S_n$ are the sum of infinite geometric series whose first terms are $1, 3, 5, \\dots, (2n - 1)$ and whose common ratios are $\\dfrac{2}{3}, \\dfrac{2}{5}, \\dots, \\dfrac{2}{2n+1}$ respectively$,$ then $\\left\\{\\dfrac{1}{S_1 S_2 S_3} + \\dfrac{1}{S_2 S_3 S_4} + \\dfrac{1}{S_3 S_4 S_5} + \\dots $\\text{upto infinite terms$}\\right\\} =$",
         "options": [
-          "$ \\dfrac{1}{15} $",
-          "$ \\dfrac{1}{60} $",
-          "$ \\dfrac{1}{12} $",
-          "$ \\dfrac{1}{3} $"
+          "$\\dfrac{1}{15}$",
+          "$\\dfrac{1}{60}$",
+          "$\\dfrac{1}{12}$",
+          "$\\dfrac{1}{3}$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "7964a632-e51a-4da9-a531-558cbaca241c",
         "questionNumber": 38,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Sequence }\\{t_n\\}\\text{ of positive terms is a }G.P.\\text{ If }t_6, 2, 5, t_{14}\\text{ form another }G.P.\\text{ in that order},\\text{ then the product }t_1 t_2 t_3 \\dots t_{18} t_{19}\\text{ is equal to}: $",
+        "text": "Sequence $\\{t_n\\}$ of positive terms is a $G.P.$ If $t_6, 2, 5, t_{14}$ form another $G.P.$ in that order$,$ then the product $t_1 t_2 t_3 \\dots t_{18} t_{19}$ is equal to$:$",
         "options": [
-          "$ 10^9 $",
-          "$ 10^{10} $",
-          "$ 10^{17/2} $",
-          "$ 10^{19/2} $"
+          "$10^9$",
+          "$10^{10}$",
+          "$10^{17/2}$",
+          "$10^{19/2}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "011b2f88-c976-453c-b294-f85957d44300",
         "questionNumber": 39,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The minimum value of }\\dfrac{(\\text{A}^2 +\\text{ A }+ 1)(B^2 +\\text{ }B\\text{ }+ 1)(C^2 +\\text{ }C\\text{ }+ 1)(D^2 +\\text{ }D\\text{ }+ 1)}{\\text{ABCD}}\\text{ where A},\\text{ }B,\\text{ }C,\\text{ }D\\text{ }> 0\\text{ is}: $",
+        "text": "The minimum value of $\\dfrac{($A$^2 +$ A $+ 1)(B^2 +$ $B$ $+ 1)(C^2 +$ $C$ $+ 1)(D^2 +$ $D$ $+ 1)}{$ABCD$}$ where A$,$ $B,$ $C,$ $D$ $> 0$ is$:$",
         "options": [
-          "$ \\dfrac{1}{3^4} $",
-          "$ \\dfrac{1}{2^4} $",
-          "$ 2^4 $",
-          "$ 3^4 $"
+          "$\\dfrac{1}{3^4}$",
+          "$\\dfrac{1}{2^4}$",
+          "$2^4$",
+          "$3^4$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "046e09e4-bb8d-4679-a8e8-55fc2f1e7424",
         "questionNumber": 40,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }\\sum_1^{20}\\text{ }r^3 =\\text{ a}, \\sum_1^{20}\\text{ }r^2 =\\text{ }b\\text{ then sum of products of }1, 2, 3, 4 \\dots 20\\text{ taking two at a time is}: $",
+        "text": "If $\\sum_1^{20}$ $r^3 =$ a$, \\sum_1^{20}$ $r^2 =$ $b$ then sum of products of $1, 2, 3, 4 \\dots 20$ taking two at a time is$:$",
         "options": [
-          "$ \\dfrac{\\text{a }-\\text{ }b}{2} $",
-          "$ \\dfrac{\\text{a}^2 -\\text{ }b^2}{2} $",
-          "$ \\text{a }-\\text{ }b $",
-          "$ \\text{a}^2 -\\text{ }b^2 $"
+          "$\\dfrac{$a $-$ $b}{2}$",
+          "$\\dfrac{$a$^2 -$ $b^2}{2}$",
+          "a $-$ $b$",
+          "a$^2 -$ $b^2$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "878d06c0-2008-40ce-a6ae-6bf69bc53133",
         "questionNumber": 41,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the first }2n\\text{ terms of an A}.P.\\text{ is }x\\text{ and the sum of the next }n\\text{ terms is }y,\\text{ its common difference is}: $",
+        "text": "The sum of the first $2n$ terms of an A$.P.$ is $x$ and the sum of the next $n$ terms is $y,$ its common difference is$:$",
         "options": [
-          "$ \\dfrac{x\\text{ }- 2y}{3n^2} $",
-          "$ \\dfrac{2y -\\text{ }x}{3n^2} $",
-          "$ \\dfrac{x\\text{ }- 2y}{3n} $",
-          "$ \\dfrac{2y -\\text{ }x}{3n} $"
+          "$\\dfrac{x$ $- 2y}{3n^2}$",
+          "$\\dfrac{2y -$ $x}{3n^2}$",
+          "$\\dfrac{x$ $- 2y}{3n}$",
+          "$\\dfrac{2y -$ $x}{3n}$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "726098a2-9385-49aa-8ea9-ad684b2001b3",
         "questionNumber": 42,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The number of non-negative integers }'n'\\text{ satisfying }n^2 =\\text{ }p\\text{ }+\\text{ }q\\text{ and }n^3 =\\text{ }p^2 +\\text{ }q^2\\text{ where }p\\text{ and }q\\text{ are integers}. $",
+        "text": "The number of non-negative integers $'n'$ satisfying $n^2 =$ $p$ $+$ $q$ and $n^3 =$ $p^2 +$ $q^2$ where $p$ and $q$ are integers$.$",
         "options": [
-          "$ 2 $",
-          "$ 3 $",
-          "$ 4 $",
-          "$ \\text{Infinite} $"
+          "$2$",
+          "$3$",
+          "$4$",
+          "Infinite"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "915407ed-5d62-4fd0-9a17-d3e35b938436",
         "questionNumber": 43,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Concentric circles of radii }1, 2, 3, \\dots, 100\\text{ cms are drawn}.\\text{ The interior of the smallest circle is coloured red and the angular regions are coloured alternately green and red},\\text{ so that no two adjacent regions are of the same colour}.\\text{ The total area of the green regions in sq}.\\text{ cm is equals to}: $",
+        "text": "Concentric circles of radii $1, 2, 3, \\dots, 100$ cms are drawn$.$ The interior of the smallest circle is coloured red and the angular regions are coloured alternately green and red$,$ so that no two adjacent regions are of the same colour$.$ The total area of the green regions in sq$.$ cm is equals to$:$",
         "options": [
-          "$ 1000\\pi $",
-          "$ 5050\\pi $",
-          "$ 4950\\pi $",
-          "$ 5151\\pi $"
+          "$1000\\pi$",
+          "$5050\\pi$",
+          "$4950\\pi$",
+          "$5151\\pi$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "044bb37e-27ad-4d7f-a8e1-8cb3053488c1",
         "questionNumber": 44,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }\\log_2 4, \\log_{\\sqrt{2}} 8\\text{ and }\\log_3 9^{k-1}\\text{ are consecutive terms of a geometric sequence},\\text{ then the number of integers that satisfy the system of inequalities }x^2 -\\text{ }x\\text{ }> 6\\text{ and }|x| <\\text{ }k^2\\text{ is}: $",
+        "text": "If $\\log_2 4, \\log_{\\sqrt{2}} 8$ and $\\log_3 9^{k-1}$ are consecutive terms of a geometric sequence$,$ then the number of integers that satisfy the system of inequalities $x^2 -$ $x$ $> 6$ and $|x| <$ $k^2$ is$:$",
         "options": [
-          "$ 193 $",
-          "$ 194 $",
-          "$ 195 $",
-          "$ 196 $"
+          "$193$",
+          "$194$",
+          "$195$",
+          "$196$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "e1f6693c-11e6-4e91-9f26-164bed564fa4",
         "questionNumber": 45,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }T_r\\text{ be the }r^{\\text{th}}\\text{ term of an A}.P.\\text{ whose first term is }-\\dfrac{1}{2}\\text{ and common difference is }1,\\text{ then }\\sum_{r=1}^n\\text{ }\\sqrt{1 + T_r T_{r+1} T_{r+2} T_{r+3}} = $",
+        "text": "Let $T_r$ be the $r^{$th$}$ term of an A$.P.$ whose first term is $-\\dfrac{1}{2}$ and common difference is $1,$ then $\\sum_{r=1}^n$ $\\sqrt{1 + T_r T_{r+1} T_{r+2} T_{r+3}} =$",
         "options": [
-          "$ \\dfrac{n(n\\text{ }+ 1)(2n + 1)}{6} - \\dfrac{5n}{4} $",
-          "$ \\dfrac{n(n\\text{ }+ 1)(2n + 1)}{6} - \\dfrac{5n}{4} + \\dfrac{1}{4} $",
-          "$ \\dfrac{n(n\\text{ }+ 1)(2n + 1)}{6} - \\dfrac{5n}{4} + \\dfrac{1}{2} $",
-          "$ \\dfrac{n(n\\text{ }+ 1)(2n + 1)}{12} - \\dfrac{5n}{8} + 1 $"
+          "$\\dfrac{n(n$ $+ 1)(2n + 1)}{6} - \\dfrac{5n}{4}$",
+          "$\\dfrac{n(n$ $+ 1)(2n + 1)}{6} - \\dfrac{5n}{4} + \\dfrac{1}{4}$",
+          "$\\dfrac{n(n$ $+ 1)(2n + 1)}{6} - \\dfrac{5n}{4} + \\dfrac{1}{2}$",
+          "$\\dfrac{n(n$ $+ 1)(2n + 1)}{12} - \\dfrac{5n}{8} + 1$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "14385e75-ddc4-4b5f-9507-ca4a18b507bc",
         "questionNumber": 46,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }\\sum_{r=1}^n\\text{ }T_r = \\dfrac{n(n\\text{ }+ 1)(n\\text{ }+ 2)}{3},\\text{ then }\\lim_{n\\text{ }\\to \\infty} \\sum_{r=1}^n\\text{ }\\dfrac{2008}{T_r} = $",
+        "text": "If $\\sum_{r=1}^n$ $T_r = \\dfrac{n(n$ $+ 1)(n$ $+ 2)}{3},$ then $\\lim_{n$ $\\to \\infty} \\sum_{r=1}^n$ $\\dfrac{2008}{T_r} =$",
         "options": [
-          "$ 2008 $",
-          "$ 3012 $",
-          "$ 4016 $",
-          "$ 8032 $"
+          "$2008$",
+          "$3012$",
+          "$4016$",
+          "$8032$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "f2deb2be-0eb8-44fe-b47b-7939f38cf659",
         "questionNumber": 47,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the infinite series}, 1^2 - \\dfrac{2^2}{5} + \\dfrac{3^2}{5^2} - \\dfrac{4^2}{5^3} + \\dfrac{5^2}{5^4} - \\dfrac{6^2}{5^5} + \\dots\\text{ is}: $",
+        "text": "The sum of the infinite series$, 1^2 - \\dfrac{2^2}{5} + \\dfrac{3^2}{5^2} - \\dfrac{4^2}{5^3} + \\dfrac{5^2}{5^4} - \\dfrac{6^2}{5^5} + \\dots$ is$:$",
         "options": [
-          "$ \\dfrac{1}{2} $",
-          "$ \\dfrac{25}{24} $",
-          "$ \\dfrac{25}{54} $",
-          "$ \\dfrac{125}{252} $"
+          "$\\dfrac{1}{2}$",
+          "$\\dfrac{25}{24}$",
+          "$\\dfrac{25}{54}$",
+          "$\\dfrac{125}{252}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "aed32228-7aca-46fd-b645-bc2d0f93e1f1",
         "questionNumber": 48,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The absolute term in }P(x) = \\sum_{r=1}^n\\text{ }\\left(x\\text{ }- \\dfrac{1}{r}\\right)\\left(x\\text{ }- \\dfrac{1}{r+1}\\right)\\left(x\\text{ }- \\dfrac{1}{r+2}\\right)\\text{ as }n\\text{ approaches to infinity is}: $",
+        "text": "The absolute term in $P(x) = \\sum_{r=1}^n$ $\\left(x$ $- \\dfrac{1}{r}\\right)\\left(x$ $- \\dfrac{1}{r+1}\\right)\\left(x$ $- \\dfrac{1}{r+2}\\right)$ as $n$ approaches to infinity is$:$",
         "options": [
-          "$ \\dfrac{1}{2} $",
-          "$ \\dfrac{-1}{2} $",
-          "$ \\dfrac{1}{4} $",
-          "$ \\dfrac{-1}{4} $"
+          "$\\dfrac{1}{2}$",
+          "$\\dfrac{-1}{2}$",
+          "$\\dfrac{1}{4}$",
+          "$\\dfrac{-1}{4}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "6e51f87b-d11d-4c20-b1ac-e0616974c613",
         "questionNumber": 49,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c\\text{ are positive real numbers such that }p\\text{ }=\\text{ a}^2b +\\text{ ab}^2 -\\text{ a}^2c -\\text{ ac}^2;\\text{ }q\\text{ }=\\text{ }b^2c +\\text{ bc}^2 -\\text{ a}^2b -\\text{ ab}^2\\text{ and }r\\text{ }=\\text{ ac}^2 +\\text{ a}^2c -\\text{ cb}^2 -\\text{ bc}^2\\text{ and the quadratic equation px}^2 +\\text{ qx }+\\text{ }r\\text{ }= 0\\text{ has equal roots};\\text{ then a},\\text{ }b,\\text{ }c\\text{ are in}: $",
+        "text": "Let a$,$ $b,$ $c$ are positive real numbers such that $p$ $=$ a$^2b +$ ab$^2 -$ a$^2c -$ ac$^2;$ $q$ $=$ $b^2c +$ bc$^2 -$ a$^2b -$ ab$^2$ and $r$ $=$ ac$^2 +$ a$^2c -$ cb$^2 -$ bc$^2$ and the quadratic equation px$^2 +$ qx $+$ $r$ $= 0$ has equal roots$;$ then a$,$ $b,$ $c$ are in$:$",
         "options": [
-          "$ \\text{A}.P. $",
-          "$ G.P. $",
-          "$ H.P. $",
-          "$ \\text{None of these} $"
+          "A$.P.$",
+          "$G.P.$",
+          "$H.P.$",
+          "None of these"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "961579dd-42ba-42d5-865f-2dd7845697d1",
         "questionNumber": 50,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }T_k\\text{ denotes the }k^{\\text{th}}\\text{ term of an }H.P.\\text{ from the begining and }\\dfrac{T_2}{T_6} = 9,\\text{ then }\\dfrac{T_{10}}{T_4}\\text{ equals}: $",
+        "text": "If $T_k$ denotes the $k^{$th$}$ term of an $H.P.$ from the begining and $\\dfrac{T_2}{T_6} = 9,$ then $\\dfrac{T_{10}}{T_4}$ equals$:$",
         "options": [
-          "$ \\dfrac{17}{5} $",
-          "$ \\dfrac{5}{17} $",
-          "$ \\dfrac{7}{19} $",
-          "$ \\dfrac{19}{7} $"
+          "$\\dfrac{17}{5}$",
+          "$\\dfrac{5}{17}$",
+          "$\\dfrac{7}{19}$",
+          "$\\dfrac{19}{7}$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "58e3ab3d-4de5-403a-a81e-e2876fd1fa08",
         "questionNumber": 51,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Number of terms common to the two sequences }17, 21, 25, \\dots, 417\\text{ and }16, 21, 26, \\dots, 466\\text{ is}: $",
+        "text": "Number of terms common to the two sequences $17, 21, 25, \\dots, 417$ and $16, 21, 26, \\dots, 466$ is$:$",
         "options": [
-          "$ 19 $",
-          "$ 20 $",
-          "$ 21 $",
-          "$ 22 $"
+          "$19$",
+          "$20$",
+          "$21$",
+          "$22$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "291162f3-a5c5-4bba-a561-d8046b624f78",
         "questionNumber": 52,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the series }1 + \\dfrac{2}{3} + \\dfrac{1}{3^2} + \\dfrac{2}{3^3} + \\dfrac{1}{3^4} + \\dfrac{2}{3^5} + \\dfrac{1}{3^6} + \\dfrac{2}{3^7} + \\dots\\text{ upto infinite terms is equal to}: $",
+        "text": "The sum of the series $1 + \\dfrac{2}{3} + \\dfrac{1}{3^2} + \\dfrac{2}{3^3} + \\dfrac{1}{3^4} + \\dfrac{2}{3^5} + \\dfrac{1}{3^6} + \\dfrac{2}{3^7} + \\dots$ upto infinite terms is equal to$:$",
         "options": [
-          "$ \\dfrac{15}{8} $",
-          "$ \\dfrac{8}{15} $",
-          "$ \\dfrac{27}{8} $",
-          "$ \\dfrac{21}{8} $"
+          "$\\dfrac{15}{8}$",
+          "$\\dfrac{8}{15}$",
+          "$\\dfrac{27}{8}$",
+          "$\\dfrac{21}{8}$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "0952fabd-556c-4237-abee-b594f251f513",
         "questionNumber": 53,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The coefficient of }x^8\\text{ in the polynomial }(x-1)(x-2)(x-3)\\dots(x-10)\\text{ is}: $",
+        "text": "The coefficient of $x^8$ in the polynomial $(x-1)(x-2)(x-3)\\dots(x-10)$ is$:$",
         "options": [
-          "$ 2640 $",
-          "$ 1320 $",
-          "$ 1370 $",
-          "$ 2740 $"
+          "$2640$",
+          "$1320$",
+          "$1370$",
+          "$2740$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "8aaf972a-263f-46d3-b127-9a464c659dcd",
         "questionNumber": 54,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }\\alpha = \\lim_{n\\text{ }\\to \\infty} \\dfrac{(1^3 - 1^2) + (2^3 - 2^2) + \\dots + (n^3 -\\text{ }n^2)}{n^4},\\text{ then }\\alpha\\text{ is equal to}: $",
+        "text": "Let $\\alpha = \\lim_{n$ $\\to \\infty} \\dfrac{(1^3 - 1^2) + (2^3 - 2^2) + \\dots + (n^3 -$ $n^2)}{n^4},$ then $\\alpha$ is equal to$:$",
         "options": [
-          "$ \\dfrac{1}{3} $",
-          "$ \\dfrac{1}{4} $",
-          "$ \\dfrac{1}{2} $",
-          "$ \\text{non-existent} $"
+          "$\\dfrac{1}{3}$",
+          "$\\dfrac{1}{4}$",
+          "$\\dfrac{1}{2}$",
+          "non-existent"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "96941b9e-6cc6-4cac-a88c-8db4204a37d4",
         "questionNumber": 55,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }16x^4 - 32x^3 +\\text{ ax}^2 +\\text{ bx }+ 1 = 0,\\text{ a},\\text{ }b\\text{ }\\in\\text{ }R\\text{ has positive real roots only},\\text{ then a }-\\text{ }b\\text{ is equal to}: $",
+        "text": "If $16x^4 - 32x^3 +$ ax$^2 +$ bx $+ 1 = 0,$ a$,$ $b$ $\\in$ $R$ has positive real roots only$,$ then a $-$ $b$ is equal to$:$",
         "options": [
-          "$ -32 $",
-          "$ 32 $",
-          "$ 49 $",
-          "$ -49 $"
+          "$-32$",
+          "$32$",
+          "$49$",
+          "$-49$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "58cfa92a-cd93-47f2-a4cf-f5499629e248",
         "questionNumber": 56,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If ABC is a triangle and }\\tan\\dfrac{\\text{A}}{2}, \\tan\\dfrac{B}{2}, \\tan\\dfrac{C}{2}\\text{ are in }H.P.,\\text{ then the minimum value of }\\cot\\dfrac{B}{2} = $",
+        "text": "If ABC is a triangle and $\\tan\\dfrac{$A$}{2}, \\tan\\dfrac{B}{2}, \\tan\\dfrac{C}{2}$ are in $H.P.,$ then the minimum value of $\\cot\\dfrac{B}{2} =$",
         "options": [
-          "$ \\sqrt{3} $",
-          "$ 1 $",
-          "$ \\dfrac{1}{\\sqrt{2}} $",
-          "$ \\dfrac{1}{\\sqrt{3}} $"
+          "$\\sqrt{3}$",
+          "$1$",
+          "$\\dfrac{1}{\\sqrt{2}}$",
+          "$\\dfrac{1}{\\sqrt{3}}$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "b74615a8-7a29-47a8-9677-4b168e666468",
         "questionNumber": 57,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }\\alpha\\text{ and }\\beta\\text{ are the roots of the quadratic equation }4x^2 + 2x - 1 = 0\\text{ then the value of }\\sum_{r=1}^\\infty (\\alpha^r\\text{ }+ \\beta^r)\\text{ is}: $",
+        "text": "If $\\alpha$ and $\\beta$ are the roots of the quadratic equation $4x^2 + 2x - 1 = 0$ then the value of $\\sum_{r=1}^\\infty (\\alpha^r$ $+ \\beta^r)$ is$:$",
         "options": [
-          "$ 2 $",
-          "$ 3 $",
-          "$ 6 $",
-          "$ 0 $"
+          "$2$",
+          "$3$",
+          "$6$",
+          "$0$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "bb661f34-171a-4bbc-a22b-c75f181b16be",
         "questionNumber": 58,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the series }2^2 + 2(4)^2 + 3(6)^2 + \\dots\\text{ upto }10\\text{ terms is equal to}: $",
+        "text": "The sum of the series $2^2 + 2(4)^2 + 3(6)^2 + \\dots$ upto $10$ terms is equal to$:$",
         "options": [
-          "$ 11300 $",
-          "$ 12100 $",
-          "$ 12300 $",
-          "$ 11200 $"
+          "$11300$",
+          "$12100$",
+          "$12300$",
+          "$11200$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "e5d3adf6-9e02-4012-baf6-e933608f89e8",
         "questionNumber": 59,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If a and }b\\text{ are positive real numbers such that a }+\\text{ }b\\text{ }= 6,\\text{ then the minimum value of }\\left(\\dfrac{4}{\\text{a}} + \\dfrac{1}{b}\\right)\\text{ is equal to}: $",
+        "text": "If a and $b$ are positive real numbers such that a $+$ $b$ $= 6,$ then the minimum value of $\\left(\\dfrac{4}{$a$} + \\dfrac{1}{b}\\right)$ is equal to$:$",
         "options": [
-          "$ \\dfrac{2}{3} $",
-          "$ \\dfrac{1}{3} $",
-          "$ 1 $",
-          "$ \\dfrac{3}{2} $"
+          "$\\dfrac{2}{3}$",
+          "$\\dfrac{1}{3}$",
+          "$1$",
+          "$\\dfrac{3}{2}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "792d92ae-57a5-4e9a-8ddb-c82573ae46fe",
         "questionNumber": 60,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The first term of an infinite }G.P.\\text{ is the value of }x\\text{ satisfying the equation }\\log_4(4^x\\text{ }- 15) +\\text{ }x\\text{ }- 2 = 0\\text{ and the common ratio is }\\cos\\left(\\dfrac{2011\\pi}{3}\\right).\\text{ The sum of }G.P.\\text{ is}: $",
+        "text": "The first term of an infinite $G.P.$ is the value of $x$ satisfying the equation $\\log_4(4^x$ $- 15) +$ $x$ $- 2 = 0$ and the common ratio is $\\cos\\left(\\dfrac{2011\\pi}{3}\\right).$ The sum of $G.P.$ is$:$",
         "options": [
-          "$ 1 $",
-          "$ \\dfrac{4}{3} $",
-          "$ 4 $",
-          "$ 2 $"
+          "$1$",
+          "$\\dfrac{4}{3}$",
+          "$4$",
+          "$2$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "fe52563f-f1e8-44b2-9cf2-08ee644bd4e2",
         "questionNumber": 61,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c\\text{ be positive numbers},\\text{ then the minimum value of }\\dfrac{\\text{a}^4 +\\text{ }b^4 +\\text{ }c^2}{abc}\\text{ is}: $",
+        "text": "Let a$,$ $b,$ $c$ be positive numbers$,$ then the minimum value of $\\dfrac{$a$^4 +$ $b^4 +$ $c^2}{abc}$ is$:$",
         "options": [
-          "$ 4 $",
-          "$ 2^{3/4} $",
-          "$ \\sqrt{2} $",
-          "$ 2\\sqrt{2} $"
+          "$4$",
+          "$2^{3/4}$",
+          "$\\sqrt{2}$",
+          "$2\\sqrt{2}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "049cd23f-429c-43a1-89ac-6e9aa1a6b8a0",
         "questionNumber": 62,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If xy }= 1;\\text{ then minimum value of }x^2 +\\text{ }y^2\\text{ is}: $",
+        "text": "If xy $= 1;$ then minimum value of $x^2 +$ $y^2$ is$:$",
         "options": [
-          "$ 1 $",
-          "$ 2 $",
-          "$ \\sqrt{2} $",
-          "$ 4 $"
+          "$1$",
+          "$2$",
+          "$\\sqrt{2}$",
+          "$4$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "b58a2417-b1d0-405c-bad8-1fdd83e23df9",
         "questionNumber": 63,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Find the value of }\\dfrac{2}{1^3} + \\dfrac{6}{1^3 + 2^3} + \\dfrac{12}{1^3 + 2^3 + 3^3} + \\dfrac{20}{1^3 + 2^3 + 3^3 + 4^3} + \\dots\\text{ upto }60\\text{ terms}: $",
+        "text": "Find the value of $\\dfrac{2}{1^3} + \\dfrac{6}{1^3 + 2^3} + \\dfrac{12}{1^3 + 2^3 + 3^3} + \\dfrac{20}{1^3 + 2^3 + 3^3 + 4^3} + \\dots$ upto $60$ terms$:$",
         "options": [
-          "$ 2 $",
-          "$ \\dfrac{1}{2} $",
-          "$ 4 $",
-          "$ \\dfrac{1}{4} $"
+          "$2$",
+          "$\\dfrac{1}{2}$",
+          "$4$",
+          "$\\dfrac{1}{4}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "cbfef1f8-aee3-4eb5-8bc4-b560b73a4384",
         "questionNumber": 64,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Evaluate}: \\sum_{n=1}^\\infty \\dfrac{1}{(n\\text{ }+ 1)(n\\text{ }+ 2)(n\\text{ }+ 3)\\dots(n\\text{ }+\\text{ }k)} $",
+        "text": "Evaluate$: \\sum_{n=1}^\\infty \\dfrac{1}{(n$ $+ 1)(n$ $+ 2)(n$ $+ 3)\\dots(n$ $+$ $k)}$",
         "options": [
-          "$ \\dfrac{1}{(k\\text{ }- 1)(k\\text{ }- 1)!} $",
-          "$ \\dfrac{1}{k\\text{ }\\cdot\\text{ }k!} $",
-          "$ \\dfrac{1}{(k\\text{ }- 1)k!} $",
-          "$ \\dfrac{1}{k!} $"
+          "$\\dfrac{1}{(k$ $- 1)(k$ $- 1)!}$",
+          "$\\dfrac{1}{k$ $\\cdot$ $k!}$",
+          "$\\dfrac{1}{(k$ $- 1)k!}$",
+          "$\\dfrac{1}{k!}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "0271152b-0756-4fa4-866e-376c4d3cd8f5",
         "questionNumber": 65,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Consider two positive numbers a and }b.\\text{ If arithmetic mean of a and }b\\text{ exceeds their geometric mean by }3/2\\text{ and geometric mean of a and }b\\text{ exceeds their harmonic mean by }6/5\\text{ then the value of a}^2 +\\text{ }b^2\\text{ will be}: $",
+        "text": "Consider two positive numbers a and $b.$ If arithmetic mean of a and $b$ exceeds their geometric mean by $3/2$ and geometric mean of a and $b$ exceeds their harmonic mean by $6/5$ then the value of a$^2 +$ $b^2$ will be$:$",
         "options": [
-          "$ 150 $",
-          "$ 153 $",
-          "$ 156 $",
-          "$ 159 $"
+          "$150$",
+          "$153$",
+          "$156$",
+          "$159$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "a2ebc2c2-9a24-4f0c-a94f-559fdd26a440",
         "questionNumber": 66,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Sum of first }10\\text{ terms of the series},\\text{ }S\\text{ }= \\dfrac{7}{2^2 \\cdot 5^2} + \\dfrac{13}{5^2 \\cdot 8^2} + \\dfrac{19}{8^2 \\cdot 11^2} + \\dots\\text{ is}: $",
+        "text": "Sum of first $10$ terms of the series$,$ $S$ $= \\dfrac{7}{2^2 \\cdot 5^2} + \\dfrac{13}{5^2 \\cdot 8^2} + \\dfrac{19}{8^2 \\cdot 11^2} + \\dots$ is$:$",
         "options": [
-          "$ \\dfrac{255}{1024} $",
-          "$ \\dfrac{88}{1024} $",
-          "$ \\dfrac{264}{1024} $",
-          "$ \\dfrac{85}{1024} $"
+          "$\\dfrac{255}{1024}$",
+          "$\\dfrac{88}{1024}$",
+          "$\\dfrac{264}{1024}$",
+          "$\\dfrac{85}{1024}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "3c859fee-bb04-46d0-9c54-ab328435023e",
         "questionNumber": 67,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\sum_{r=1}^{10} \\dfrac{r}{1 - 3r^2 +\\text{ }r^4} = $",
+        "text": "$\\sum_{r=1}^{10} \\dfrac{r}{1 - 3r^2 +$ $r^4} =$",
         "options": [
-          "$ -\\dfrac{50}{109} $",
-          "$ -\\dfrac{54}{109} $",
-          "$ -\\dfrac{55}{111} $",
-          "$ -\\dfrac{55}{109} $"
+          "$-\\dfrac{50}{109}$",
+          "$-\\dfrac{54}{109}$",
+          "$-\\dfrac{55}{111}$",
+          "$-\\dfrac{55}{109}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "c73d72ab-a533-4e4c-9e5e-706ea95dd558",
         "questionNumber": 68,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }r^{\\text{th}}\\text{ term }t_r\\text{ of a series is given by }t_r = \\dfrac{r}{1 +\\text{ }r^2 +\\text{ }r^4}.\\text{ Then }\\lim_{n\\text{ }\\to \\infty} \\sum_{r=1}^n\\text{ }t_r\\text{ is equal to}: $",
+        "text": "Let $r^{$th$}$ term $t_r$ of a series is given by $t_r = \\dfrac{r}{1 +$ $r^2 +$ $r^4}.$ Then $\\lim_{n$ $\\to \\infty} \\sum_{r=1}^n$ $t_r$ is equal to$:$",
         "options": [
-          "$ \\dfrac{1}{2} $",
-          "$ 1 $",
-          "$ 2 $",
-          "$ \\dfrac{1}{4} $"
+          "$\\dfrac{1}{2}$",
+          "$1$",
+          "$2$",
+          "$\\dfrac{1}{4}$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "e9b0f4f3-6e19-4fef-b68e-7786f125fce6",
         "questionNumber": 69,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the series }1 + \\dfrac{4}{5} + \\dfrac{7}{5^2} + \\dfrac{10}{5^3} + \\dots\\text{ to infinite terms},\\text{ is}: $",
+        "text": "The sum of the series $1 + \\dfrac{4}{5} + \\dfrac{7}{5^2} + \\dfrac{10}{5^3} + \\dots$ to infinite terms$,$ is$:$",
         "options": [
-          "$ \\dfrac{31}{12} $",
-          "$ \\dfrac{41}{16} $",
-          "$ \\dfrac{45}{16} $",
-          "$ \\dfrac{35}{16} $"
+          "$\\dfrac{31}{12}$",
+          "$\\dfrac{41}{16}$",
+          "$\\dfrac{45}{16}$",
+          "$\\dfrac{35}{16}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "be2f3063-c51c-4ffb-8d06-566ac085338e",
         "questionNumber": 70,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The third term of a }G.P.\\text{ is }2.\\text{ Then the product of the first five terms},\\text{ is}: $",
+        "text": "The third term of a $G.P.$ is $2.$ Then the product of the first five terms$,$ is$:$",
         "options": [
-          "$ 2^3 $",
-          "$ 2^4 $",
-          "$ 2^5 $",
-          "$ \\text{none of these} $"
+          "$2^3$",
+          "$2^4$",
+          "$2^5$",
+          "none of these"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "78072c66-01a8-4ef4-afff-1e334d9a5a49",
         "questionNumber": 71,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }x_1, x_2, x_3, \\dots, x_{2n}\\text{ are in A}.P.,\\text{ then }\\sum_{r=1}^{2n} (-1)^{r+1} x_r^2\\text{ is equal to}: $",
+        "text": "If $x_1, x_2, x_3, \\dots, x_{2n}$ are in A$.P.,$ then $\\sum_{r=1}^{2n} (-1)^{r+1} x_r^2$ is equal to$:$",
         "options": [
-          "$ \\dfrac{n}{(2n - 1)} (x_1^2 - x_{2n}^2) $",
-          "$ \\dfrac{2n}{(2n - 1)} (x_1^2 - x_{2n}^2) $",
-          "$ \\dfrac{n}{n\\text{ }- 1} (x_1^2 - x_{2n}^2) $",
-          "$ \\dfrac{n}{2n + 1} (x_1^2 - x_{2n}^2) $"
+          "$\\dfrac{n}{(2n - 1)} (x_1^2 - x_{2n}^2)$",
+          "$\\dfrac{2n}{(2n - 1)} (x_1^2 - x_{2n}^2)$",
+          "$\\dfrac{n}{n$ $- 1} (x_1^2 - x_{2n}^2)$",
+          "$\\dfrac{n}{2n + 1} (x_1^2 - x_{2n}^2)$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "4df225a2-8539-40bb-b3aa-cddf1912eb02",
         "questionNumber": 72,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let two numbers have arithmetic mean }9\\text{ and geometric mean }4.\\text{ Then these numbers are roots of the equation}: $",
+        "text": "Let two numbers have arithmetic mean $9$ and geometric mean $4.$ Then these numbers are roots of the equation$:$",
         "options": [
-          "$ x^2 + 18x + 16 = 0 $",
-          "$ x^2 - 18x - 16 = 0 $",
-          "$ x^2 + 18x - 16 = 0 $",
-          "$ x^2 - 18x + 16 = 0 $"
+          "$x^2 + 18x + 16 = 0$",
+          "$x^2 - 18x - 16 = 0$",
+          "$x^2 + 18x - 16 = 0$",
+          "$x^2 - 18x + 16 = 0$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "5bee10bc-1602-4914-a57a-53e73699d968",
         "questionNumber": 73,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }p\\text{ and }q\\text{ are positive real numbers such that }p^2 +\\text{ }q^2 = 1,\\text{ then the maximum value of }(p\\text{ }+\\text{ }q)\\text{ is}: $",
+        "text": "If $p$ and $q$ are positive real numbers such that $p^2 +$ $q^2 = 1,$ then the maximum value of $(p$ $+$ $q)$ is$:$",
         "options": [
-          "$ 2 $",
-          "$ \\dfrac{1}{2} $",
-          "$ \\dfrac{1}{\\sqrt{2}} $",
-          "$ \\sqrt{2} $"
+          "$2$",
+          "$\\dfrac{1}{2}$",
+          "$\\dfrac{1}{\\sqrt{2}}$",
+          "$\\sqrt{2}$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "3d7ce594-07ac-4a9f-8abe-2c2c561f1ba3",
         "questionNumber": 74,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{A person has to count }4500\\text{ currency notes}.\\text{ Let }a_n\\text{ denote the number of notes he counts in the }n^{\\text{th}}\\text{ minute}.\\text{ If }a_1 = a_2 = \\dots = a_{10} = 150\\text{ and }a_{10}, a_{11}, a_{12}, \\dots\\text{ are in A}.P.\\text{ with common difference }-2,\\text{ then the time taken by him to count all notes is}: $",
+        "text": "A person has to count $4500$ currency notes$.$ Let $a_n$ denote the number of notes he counts in the $n^{$th$}$ minute$.$ If $a_1 = a_2 = \\dots = a_{10} = 150$ and $a_{10}, a_{11}, a_{12}, \\dots$ are in A$.P.$ with common difference $-2,$ then the time taken by him to count all notes is$:$",
         "options": [
-          "$ 34\\text{ minutes} $",
-          "$ 24\\text{ minutes} $",
-          "$ 125\\text{ minutes} $",
-          "$ 35\\text{ minutes} $"
+          "$34$ minutes",
+          "$24$ minutes",
+          "$125$ minutes",
+          "$35$ minutes"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "27093deb-f2e2-4ea3-9668-8c994f6d2a06",
         "questionNumber": 75,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{A non constant arithmetic progression has common difference }d\\text{ and first term is }(1 -\\text{ ad}).\\text{ If the sum of the first }20\\text{ terms is }20,\\text{ then the value of a is equal to}: $",
+        "text": "A non constant arithmetic progression has common difference $d$ and first term is $(1 -$ ad$).$ If the sum of the first $20$ terms is $20,$ then the value of a is equal to$:$",
         "options": [
-          "$ \\dfrac{2}{19} $",
-          "$ \\dfrac{19}{2} $",
-          "$ \\dfrac{2}{9} $",
-          "$ \\dfrac{9}{2} $"
+          "$\\dfrac{2}{19}$",
+          "$\\dfrac{19}{2}$",
+          "$\\dfrac{2}{9}$",
+          "$\\dfrac{9}{2}$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "c4c548e3-3923-4891-9827-38004ece38d0",
         "questionNumber": 76,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The value of }\\sum_{n=3}^\\infty \\dfrac{1}{n^5 - 5n^3 + 4n} = $",
+        "text": "The value of $\\sum_{n=3}^\\infty \\dfrac{1}{n^5 - 5n^3 + 4n} =$",
         "options": [
-          "$ \\dfrac{1}{120} $",
-          "$ \\dfrac{1}{96} $",
-          "$ \\dfrac{1}{24} $",
-          "$ \\dfrac{1}{144} $"
+          "$\\dfrac{1}{120}$",
+          "$\\dfrac{1}{96}$",
+          "$\\dfrac{1}{24}$",
+          "$\\dfrac{1}{144}$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "e8497634-99ce-4614-bd8c-c8d37b4b6afb",
         "questionNumber": 77,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Find the value of }\\dfrac{2}{1^3} + \\dfrac{6}{1^3 + 2^3} + \\dfrac{12}{1^3 + 2^3 + 3^3} + \\dfrac{20}{1^3 + 2^3 + 3^3 + 4^3} + \\dots\\text{ up to infinite terms}: $",
+        "text": "Find the value of $\\dfrac{2}{1^3} + \\dfrac{6}{1^3 + 2^3} + \\dfrac{12}{1^3 + 2^3 + 3^3} + \\dfrac{20}{1^3 + 2^3 + 3^3 + 4^3} + \\dots$ up to infinite terms$:$",
         "options": [
-          "$ 2 $",
-          "$ \\dfrac{1}{2} $",
-          "$ 4 $",
-          "$ \\dfrac{1}{4} $"
+          "$2$",
+          "$\\dfrac{1}{2}$",
+          "$4$",
+          "$\\dfrac{1}{4}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "e7fd806f-f135-405c-8457-6e6737188465",
         "questionNumber": 78,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The minimum value of the expression }2^x\\text{ }+ 2^{2x+1} + \\dfrac{5}{2^x},\\text{ }x\\text{ }\\in\\text{ }R\\text{ is}: $",
+        "text": "The minimum value of the expression $2^x$ $+ 2^{2x+1} + \\dfrac{5}{2^x},$ $x$ $\\in$ $R$ is$:$",
         "options": [
-          "$ 7 $",
-          "$ (7.2)^{1/7} $",
-          "$ 8 $",
-          "$ (3.10)^{1/3} $"
+          "$7$",
+          "$(7.2)^{1/7}$",
+          "$8$",
+          "$(3.10)^{1/3}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "f7f2cec3-5204-4ca0-8f5d-9f4dd860ffaa",
         "questionNumber": 79,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The value of }\\sum_{r=1}^\\infty \\dfrac{(4r + 5) 5^{-r}}{r(5r + 5)}\\text{ is}: $",
+        "text": "The value of $\\sum_{r=1}^\\infty \\dfrac{(4r + 5) 5^{-r}}{r(5r + 5)}$ is$:$",
         "options": [
-          "$ \\dfrac{1}{5} $",
-          "$ \\dfrac{2}{5} $",
-          "$ \\dfrac{1}{25} $",
-          "$ \\dfrac{2}{25} $"
+          "$\\dfrac{1}{5}$",
+          "$\\dfrac{2}{5}$",
+          "$\\dfrac{1}{25}$",
+          "$\\dfrac{2}{25}$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "74b54241-c0ee-49d8-997a-761af5fa18b3",
         "questionNumber": 1,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If the first and }(2n - 1)^{\\text{th}}\\text{ terms of an A}.P.,\\text{ }G.P.\\text{ and }H.P.\\text{ with positive terms are equal and their }n^{\\text{th}}\\text{ terms are a},\\text{ }b\\text{ and }c\\text{ respectively},\\text{ then which of the following options must be correct}: $",
+        "text": "If the first and $(2n - 1)^{$th$}$ terms of an A$.P.,$ $G.P.$ and $H.P.$ with positive terms are equal and their $n^{$th$}$ terms are a$,$ $b$ and $c$ respectively$,$ then which of the following options must be correct$:$",
         "options": [
-          "$ \\text{a }+\\text{ }c\\text{ }= 2b $",
-          "$ \\text{a }\\ge\\text{ }b\\text{ }\\ge\\text{ }c $",
-          "$ \\dfrac{2ac}{\\text{a }+\\text{ }c} =\\text{ }b $",
-          "$ \\text{ac }=\\text{ }b^2 $"
+          "a $+$ $c$ $= 2b$",
+          "a $\\ge$ $b$ $\\ge$ $c$",
+          "$\\dfrac{2ac}{$a $+$ $c} =$ $b$",
+          "ac $=$ $b^2$"
         ],
         "answerKeyStr": "b,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          3
+        ],
+        "correctAnswer": "B,D",
+        "correctOptions": [
+          1,
+          3
+        ]
       },
       {
         "id": "a5e3ae51-dfa7-4c81-a387-a8b8eea23320",
         "questionNumber": 2,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c\\text{ are distinct real numbers such that expression ax}^2 +\\text{ bx }+\\text{ }c,\\text{ bx}^2 +\\text{ cx }+\\text{ a and cx}^2 +\\text{ ax }+\\text{ }b\\text{ are always positive then possible value}(s)\\text{ of }\\dfrac{\\text{a}^2 +\\text{ }b^2 +\\text{ }c^2}{\\text{ab }+\\text{ bc }+\\text{ ca}}\\text{ may be}: $",
+        "text": "Let a$,$ $b,$ $c$ are distinct real numbers such that expression ax$^2 +$ bx $+$ $c,$ bx$^2 +$ cx $+$ a and cx$^2 +$ ax $+$ $b$ are always positive then possible value$(s)$ of $\\dfrac{$a$^2 +$ $b^2 +$ $c^2}{$ab $+$ bc $+$ ca$}$ may be$:$",
         "options": [
-          "$ 1 $",
-          "$ 2 $",
-          "$ 3 $",
-          "$ 4 $"
+          "$1$",
+          "$2$",
+          "$3$",
+          "$4$"
         ],
         "answerKeyStr": "b,c",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C",
+        "correctOptions": [
+          1,
+          2
+        ]
       },
       {
         "id": "11d26d55-311c-4250-975d-89b6b593250d",
         "questionNumber": 3,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If a},\\text{ }b,\\text{ }c\\text{ are in }H.P.,\\text{ where a }>\\text{ }c\\text{ }> 0,\\text{ then}: $",
+        "text": "If a$,$ $b,$ $c$ are in $H.P.,$ where a $>$ $c$ $> 0,$ then$:$",
         "options": [
-          "$ b\\text{ }> \\dfrac{\\text{a }+\\text{ }c}{2} $",
-          "$ \\dfrac{1}{\\text{a }-\\text{ }b} - \\dfrac{1}{b\\text{ }-\\text{ }c} < 0 $",
-          "$ \\text{ac }>\\text{ }b^2 $",
-          "$ \\text{bc}(1 -\\text{ a}),\\text{ ac}(1 -\\text{ }b),\\text{ ab}(1 -\\text{ }c)\\text{ are in A}.P. $"
+          "$b$ $> \\dfrac{$a $+$ $c}{2}$",
+          "$\\dfrac{1}{$a $-$ $b} - \\dfrac{1}{b$ $-$ $c} < 0$",
+          "ac $>$ $b^2$",
+          "bc$(1 -$ a$),$ ac$(1 -$ $b),$ ab$(1 -$ $c)$ are in A$.P.$"
         ],
         "answerKeyStr": "b,c,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "B,C,D",
+        "correctOptions": [
+          1,
+          2,
+          3
+        ]
       },
       {
         "id": "bb6744d5-f53c-4c57-8231-14e66172e450",
         "questionNumber": 4,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{In an A}.P.,\\text{ let }T_r\\text{ denote }r^{\\text{th}}\\text{ term from beginning}, T_p = \\dfrac{1}{q(p+q)}, T_q = \\dfrac{1}{p(p+q)},\\text{ then}: $",
+        "text": "In an A$.P.,$ let $T_r$ denote $r^{$th$}$ term from beginning$, T_p = \\dfrac{1}{q(p+q)}, T_q = \\dfrac{1}{p(p+q)},$ then$:$",
         "options": [
-          "$ T_1 =\\text{ common difference} $",
-          "$ T_{p+q} = \\dfrac{1}{\\text{pq}} $",
-          "$ T_{\\text{pq}} = \\dfrac{1}{p+q} $",
-          "$ T_{p+q} = \\dfrac{1}{p^2q^2} $"
+          "$T_1 =$ common difference",
+          "$T_{p+q} = \\dfrac{1}{$pq$}$",
+          "$T_{$pq$} = \\dfrac{1}{p+q}$",
+          "$T_{p+q} = \\dfrac{1}{p^2q^2}$"
         ],
         "answerKeyStr": "a,b,c",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2
+        ],
+        "correctAnswer": "A,B,C",
+        "correctOptions": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "2b6dfb56-43fb-4df5-99de-d0711e6cca6c",
         "questionNumber": 5,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Which of the following statement}(s)\\text{ is}(\\text{are})\\text{ correct}? $",
+        "text": "Which of the following statement$(s)$ is$($are$)$ correct$?$",
         "options": [
-          "$ \\text{Sum of the reciprocal of all the }n\\text{ harmonic means inserted between a and }b\\text{ is equal to }n\\text{ times the harmonic mean between two given numbers a and }b. $",
-          "$ \\text{Sum of the cubes of first }n\\text{ natural number is equal to square of the sum of the first }n\\text{ natural numbers}. $",
-          "$ \\text{If a}, A_1, A_2, A_3, \\dots, A_{2n},\\text{ }b\\text{ are in A}.P.\\text{ then }\\sum_{i=1}^{2n} A_i =\\text{ }n(\\text{a }+\\text{ }b). $",
-          "$ \\text{If the first term of the geometric progression }g_1, g_2, g_3, \\dots, \\infty\\text{ is unity},\\text{ then the value of the common ratio of the progression such that }(4g_2 + 5g_3)\\text{ is minimum equals }\\dfrac{2}{5}. $"
+          "Sum of the reciprocal of all the $n$ harmonic means inserted between a and $b$ is equal to $n$ times the harmonic mean between two given numbers a and $b.$",
+          "Sum of the cubes of first $n$ natural number is equal to square of the sum of the first $n$ natural numbers$.$",
+          "If a$, A_1, A_2, A_3, \\dots, A_{2n},$ $b$ are in A$.P.$ then $\\sum_{i=1}^{2n} A_i =$ $n($a $+$ $b).$",
+          "If the first term of the geometric progression $g_1, g_2, g_3, \\dots, \\infty$ is unity$,$ then the value of the common ratio of the progression such that $(4g_2 + 5g_3)$ is minimum equals $\\dfrac{2}{5}.$"
         ],
         "answerKeyStr": "b,c",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C",
+        "correctOptions": [
+          1,
+          2
+        ]
       },
       {
         "id": "f0b96bbf-2aca-49f0-9895-8c219526fd89",
         "questionNumber": 6,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If a},\\text{ }b,\\text{ }c\\text{ are in }3\\text{ distinct numbers in }H.P.,\\text{ a},\\text{ }b,\\text{ }c\\text{ }> 0,\\text{ then}: $",
+        "text": "If a$,$ $b,$ $c$ are in $3$ distinct numbers in $H.P.,$ a$,$ $b,$ $c$ $> 0,$ then$:$",
         "options": [
-          "$ \\dfrac{b\\text{ }+\\text{ }c\\text{ }-\\text{ a}}{\\text{a}}, \\dfrac{c\\text{ }+\\text{ a }-\\text{ }b}{b}, \\dfrac{\\text{a }+\\text{ }b\\text{ }-\\text{ }c}{c}\\text{ are in A}.P. $",
-          "$ \\dfrac{b\\text{ }+\\text{ }c}{\\text{a}}, \\dfrac{c\\text{ }+\\text{ a}}{b}, \\dfrac{\\text{a }+\\text{ }b}{c}\\text{ are in A}.P. $",
-          "$ \\text{a}^5 +\\text{ }c^5 \\ge 2b^5 $",
-          "$ \\dfrac{\\text{a }-\\text{ }b}{b\\text{ }-\\text{ }c} = \\dfrac{\\text{a}}{c} $"
+          "$\\dfrac{b$ $+$ $c$ $-$ a$}{$a$}, \\dfrac{c$ $+$ a $-$ $b}{b}, \\dfrac{$a $+$ $b$ $-$ $c}{c}$ are in A$.P.$",
+          "$\\dfrac{b$ $+$ $c}{$a$}, \\dfrac{c$ $+$ a$}{b}, \\dfrac{$a $+$ $b}{c}$ are in A$.P.$",
+          "a$^5 +$ $c^5 \\ge 2b^5$",
+          "$\\dfrac{$a $-$ $b}{b$ $-$ $c} = \\dfrac{$a$}{c}$"
         ],
         "answerKeyStr": "a,b,c,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D",
+        "correctOptions": [
+          0,
+          1,
+          2,
+          3
+        ]
       },
       {
         "id": "abc727a3-fc08-409d-9716-c4f99ce0acb9",
         "questionNumber": 7,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{All roots of equation }x^5 - 40x^4 + \\alpha\\text{ }x^3 + \\beta\\text{ }x^2 + \\gamma\\text{ }x\\text{ }+ \\delta = 0\\text{ are in }G.P.\\text{ If the sum of their reciprocals is }10,\\text{ then }\\delta\\text{ can be equal to}: $",
+        "text": "All roots of equation $x^5 - 40x^4 + \\alpha$ $x^3 + \\beta$ $x^2 + \\gamma$ $x$ $+ \\delta = 0$ are in $G.P.$ If the sum of their reciprocals is $10,$ then $\\delta$ can be equal to$:$",
         "options": [
-          "$ 32 $",
-          "$ -32 $",
-          "$ \\dfrac{1}{32} $",
-          "$ -\\dfrac{1}{32} $"
+          "$32$",
+          "$-32$",
+          "$\\dfrac{1}{32}$",
+          "$-\\dfrac{1}{32}$"
         ],
         "answerKeyStr": "a,b",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B",
+        "correctOptions": [
+          0,
+          1
+        ]
       },
       {
         "id": "568f106f-6229-4d06-9495-298f2b01f65b",
         "questionNumber": 8,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Let }a_1, a_2, a_3, \\dots\\text{ be a sequence of non-zero real numbers which are in A}.P.\\text{ for }k\\text{ }\\in\\text{ }N.\\text{ Let }f_k(x) = a_k\\text{ }x^2 + 2a_{k+1}\\text{ }x\\text{ }+ a_{k+2} $",
+        "text": "Let $a_1, a_2, a_3, \\dots$ be a sequence of non-zero real numbers which are in A$.P.$ for $k$ $\\in$ $N.$ Let $f_k(x) = a_k$ $x^2 + 2a_{k+1}$ $x$ $+ a_{k+2}$",
         "options": [
-          "$ f_k(x) = 0\\text{ has real roots for each }k\\text{ }\\in\\text{ }N. $",
-          "$ \\text{Each of }f_k(x) = 0\\text{ has one root in common}. $",
-          "$ \\text{Non-common roots of }f_1(x) = 0, f_2(x) = 0, f_3(x) = 0, \\dots\\text{ form an A}.P. $",
-          "$ \\text{None of these} $"
+          "$f_k(x) = 0$ has real roots for each $k$ $\\in$ $N.$",
+          "Each of $f_k(x) = 0$ has one root in common$.$",
+          "Non-common roots of $f_1(x) = 0, f_2(x) = 0, f_3(x) = 0, \\dots$ form an A$.P.$",
+          "None of these"
         ],
         "answerKeyStr": "a,b",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B",
+        "correctOptions": [
+          0,
+          1
+        ]
       },
       {
         "id": "464885b1-f2e0-4fa0-90e8-3eea2d2d9ac2",
         "questionNumber": 9,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Given a},\\text{ }b,\\text{ }c\\text{ are in A}.P.,\\text{ }b,\\text{ }c,\\text{ }d\\text{ are in }G.P.\\text{ and }c,\\text{ }d,\\text{ }e\\text{ are in }H.P.\\text{ If a }= 2\\text{ and }e\\text{ }= 18,\\text{ then the possible value of }'c'\\text{ can be}: $",
+        "text": "Given a$,$ $b,$ $c$ are in A$.P.,$ $b,$ $c,$ $d$ are in $G.P.$ and $c,$ $d,$ $e$ are in $H.P.$ If a $= 2$ and $e$ $= 18,$ then the possible value of $'c'$ can be$:$",
         "options": [
-          "$ 9 $",
-          "$ -6 $",
-          "$ 6 $",
-          "$ -9 $"
+          "$9$",
+          "$-6$",
+          "$6$",
+          "$-9$"
         ],
         "answerKeyStr": "b,c",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C",
+        "correctOptions": [
+          1,
+          2
+        ]
       },
       {
         "id": "f0b78dc4-9233-4c96-a961-194dab2937f1",
         "questionNumber": 10,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{The number a},\\text{ }b,\\text{ }c\\text{ in that order form a three term A}.P.\\text{ and a }+\\text{ }b\\text{ }+\\text{ }c\\text{ }= 60.\\text{ The number }(\\text{a }- 2),\\text{ }b, (c\\text{ }+ 3)\\text{ in that order form a three term }G.P.\\text{ All possible values of }(\\text{a}^2 +\\text{ }b^2 +\\text{ }c^2)\\text{ is}/\\text{are}: $",
+        "text": "The number a$,$ $b,$ $c$ in that order form a three term A$.P.$ and a $+$ $b$ $+$ $c$ $= 60.$ The number $($a $- 2),$ $b, (c$ $+ 3)$ in that order form a three term $G.P.$ All possible values of $($a$^2 +$ $b^2 +$ $c^2)$ is$/$are$:$",
         "options": [
-          "$ 1218 $",
-          "$ 1208 $",
-          "$ 1288 $",
-          "$ 1298 $"
+          "$1218$",
+          "$1208$",
+          "$1288$",
+          "$1298$"
         ],
         "answerKeyStr": "b,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          3
+        ],
+        "correctAnswer": "B,D"
       },
       {
         "id": "41575088-0d9e-46aa-a9cf-ca174a265e3a",
         "questionNumber": 11,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If }(x^2 +\\text{ }x\\text{ }+ 1) + (x^2 + 2x + 3) + (x^2 + 3x + 5) + \\dots + (x^2 + 20x + 39) = 4500,\\text{ then }x\\text{ is equal to}: $",
+        "text": "If $(x^2 +$ $x$ $+ 1) + (x^2 + 2x + 3) + (x^2 + 3x + 5) + \\dots + (x^2 + 20x + 39) = 4500,$ then $x$ is equal to$:$",
         "options": [
-          "$ 10 $",
-          "$ -10 $",
-          "$ 20.5 $",
-          "$ -20.5 $"
+          "$10$",
+          "$-10$",
+          "$20.5$",
+          "$-20.5$"
         ],
         "answerKeyStr": "a,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          3
+        ],
+        "correctAnswer": "A,D"
       },
       {
         "id": "3ce8f507-6c6c-416f-a3a4-bb89e9587160",
         "questionNumber": 12,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{For }\\Delta\\text{ ABC},\\text{ if }81 + 144a^4 + 16b^4 + 9c^4 = 144abc, (\\text{where notations have their usual meaning}),\\text{ then}: $",
+        "text": "For $\\Delta$ ABC$,$ if $81 + 144a^4 + 16b^4 + 9c^4 = 144abc, ($where notations have their usual meaning$),$ then$:$",
         "options": [
-          "$ \\text{a }>\\text{ }b\\text{ }>\\text{ }c $",
-          "$ \\text{A }<\\text{ }B\\text{ }<\\text{ }C $",
-          "$ \\text{Area of }\\Delta\\text{ ABC }= \\dfrac{3\\sqrt{3}}{8} $",
-          "$ \\text{Triangle ABC is right angled} $"
+          "a $>$ $b$ $>$ $c$",
+          "A $<$ $B$ $<$ $C$",
+          "Area of $\\Delta$ ABC $= \\dfrac{3\\sqrt{3}}{8}$",
+          "Triangle ABC is right angled"
         ],
         "answerKeyStr": "b,c,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "B,C,D"
       },
       {
         "id": "3c41a0eb-bc72-4b62-8c89-2a88ef55693f",
         "questionNumber": 13,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Let }x,\\text{ }y,\\text{ }z\\text{ }\\in \\left(0, \\dfrac{\\pi}{2}\\right)\\text{ are first three consecutive terms of an arithmetic progression such that }\\cos\\text{ }x\\text{ }+ \\cos\\text{ }y\\text{ }+ \\cos\\text{ }z\\text{ }= 1\\text{ and }\\sin\\text{ }x\\text{ }+ \\sin\\text{ }y\\text{ }+ \\sin\\text{ }z\\text{ }= \\dfrac{1}{\\sqrt{2}},\\text{ then which of the following is}/\\text{are correct}? $",
+        "text": "Let $x,$ $y,$ $z$ $\\in \\left(0, \\dfrac{\\pi}{2}\\right)$ are first three consecutive terms of an arithmetic progression such that $\\cos$ $x$ $+ \\cos$ $y$ $+ \\cos$ $z$ $= 1$ and $\\sin$ $x$ $+ \\sin$ $y$ $+ \\sin$ $z$ $= \\dfrac{1}{\\sqrt{2}},$ then which of the following is$/$are correct$?$",
         "options": [
-          "$ \\cot\\text{ }y\\text{ }= \\sqrt{2} $",
-          "$ \\cos(x\\text{ }-\\text{ }y) = \\dfrac{\\sqrt{3} - \\sqrt{2}}{2\\sqrt{2}} $",
-          "$ \\tan 2y = \\dfrac{2\\sqrt{2}}{3} $",
-          "$ \\sin(x\\text{ }-\\text{ }y) + \\sin(y\\text{ }-\\text{ }z) = 0 $"
+          "$\\cot$ $y$ $= \\sqrt{2}$",
+          "$\\cos(x$ $-$ $y) = \\dfrac{\\sqrt{3} - \\sqrt{2}}{2\\sqrt{2}}$",
+          "$\\tan 2y = \\dfrac{2\\sqrt{2}}{3}$",
+          "$\\sin(x$ $-$ $y) + \\sin(y$ $-$ $z) = 0$"
         ],
         "answerKeyStr": "a,b",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A,B"
       },
       {
         "id": "c0f76fbf-1256-4a0c-90af-5ce9a92dde51",
         "questionNumber": 14,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If the numbers }16, 20, 16,\\text{ }d\\text{ form a A}.G.P.,\\text{ then }d\\text{ can be equal to}: $",
+        "text": "If the numbers $16, 20, 16,$ $d$ form a A$.G.P.,$ then $d$ can be equal to$:$",
         "options": [
-          "$ 3 $",
-          "$ 11 $",
-          "$ -8 $",
-          "$ -16 $"
+          "$3$",
+          "$11$",
+          "$-8$",
+          "$-16$"
         ],
         "answerKeyStr": "b",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1
+        ],
+        "correctAnswer": "B"
       },
       {
         "id": "4620ec70-7a04-44fa-a7d4-cc1d16134710",
         "questionNumber": 15,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Given }\\dfrac{1000\\dots01 \\text{ (n\\text{ zeroes})}}{1000\\dots01 \\text{ (n+1\\text{ zeroes})}} < \\dfrac{1000\\dots01 \\text{ (m\\text{ zeroes})}}{1000\\dots01 \\text{ (m+1\\text{ zeroes})}},\\text{ then which of the following is true}: $",
+        "text": "Given $\\dfrac{1000\\dots01 $ (n\\text{ zeroes$)}}{1000\\dots01 $ (n+1\\text{ zeroes$)}} < \\dfrac{1000\\dots01 $ (m\\text{ zeroes$)}}{1000\\dots01 $ (m+1\\text{ zeroes$)}},$ then which of the following is true$:$",
         "options": [
-          "$ m\\text{ }+ 1 <\\text{ }n $",
-          "$ m\\text{ }<\\text{ }n $",
-          "$ m\\text{ }<\\text{ }n\\text{ }+ 1 $",
-          "$ m\\text{ }>\\text{ }n\\text{ }+ 1 $"
+          "$m$ $+ 1 <$ $n$",
+          "$m$ $<$ $n$",
+          "$m$ $<$ $n$ $+ 1$",
+          "$m$ $>$ $n$ $+ 1$"
         ],
         "answerKeyStr": "b,c",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2
+        ],
+        "correctAnswer": "B,C"
       },
       {
         "id": "daf376be-7cd6-4411-97c1-d1ac89f0447c",
         "questionNumber": 16,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If }S_r = \\sqrt{r\\text{ }+ \\sqrt{r\\text{ }+ \\sqrt{r\\text{ }+ \\dots\\infty}}},\\text{ }r\\text{ }> 0,\\text{ then which of the following is}/\\text{are correct}: $",
+        "text": "If $S_r = \\sqrt{r$ $+ \\sqrt{r$ $+ \\sqrt{r$ $+ \\dots\\infty}}},$ $r$ $> 0,$ then which of the following is$/$are correct$:$",
         "options": [
-          "$ S_2, S_6, S_{12}, S_{20}\\text{ are in A}.P. $",
-          "$ S_4, S_9, S_{16}\\text{ are irrational} $",
-          "$ (2S_3 - 1)^2, (2S_4 - 1)^2, (2S_5 - 1)^2\\text{ are in A}.P. $",
-          "$ S_2, S_{12}, S_{56}\\text{ are in }G.P. $"
+          "$S_2, S_6, S_{12}, S_{20}$ are in A$.P.$",
+          "$S_4, S_9, S_{16}$ are irrational",
+          "$(2S_3 - 1)^2, (2S_4 - 1)^2, (2S_5 - 1)^2$ are in A$.P.$",
+          "$S_2, S_{12}, S_{56}$ are in $G.P.$"
         ],
         "answerKeyStr": "a,b,c,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "A,B,C,D"
       },
       {
         "id": "0e355c2c-d4b2-4bec-b7ca-f85f4cf839f2",
         "questionNumber": 17,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Consider the A}.P. 50, 48, 46, 44, \\dots\\text{ If }S_n\\text{ denotes the sum to }n\\text{ terms of this A}.P.,\\text{ then}: $",
+        "text": "Consider the A$.P. 50, 48, 46, 44, \\dots$ If $S_n$ denotes the sum to $n$ terms of this A$.P.,$ then$:$",
         "options": [
-          "$ S_n\\text{ is maximum for }n\\text{ }= 25 $",
-          "$ \\text{the first negative terms is }26^{\\text{th}}\\text{ term} $",
-          "$ \\text{the first negative term is }27^{\\text{th}}\\text{ term} $",
-          "$ \\text{the maximum value of }S_n\\text{ is }650 $"
+          "$S_n$ is maximum for $n$ $= 25$",
+          "the first negative terms is $26^{$th$}$ term",
+          "the first negative term is $27^{$th$}$ term",
+          "the maximum value of $S_n$ is $650$"
         ],
         "answerKeyStr": "a,c,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          2,
+          3
+        ],
+        "correctAnswer": "A,C,D"
       },
       {
         "id": "c6ba0cba-aa24-4bd7-8e91-89bd176fb18a",
         "questionNumber": 18,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Let }S_n\\text{ be the sum to }n\\text{ terms of the series }\\dfrac{3}{1^2} + \\dfrac{5}{1^2 + 2^2} + \\dfrac{7}{1^2 + 2^2 + 3^2} + \\dfrac{9}{1^2 + 2^2 + 3^2 + 4^2} + \\dots\\text{ then}: $",
+        "text": "Let $S_n$ be the sum to $n$ terms of the series $\\dfrac{3}{1^2} + \\dfrac{5}{1^2 + 2^2} + \\dfrac{7}{1^2 + 2^2 + 3^2} + \\dfrac{9}{1^2 + 2^2 + 3^2 + 4^2} + \\dots$ then$:$",
         "options": [
-          "$ S_5 = 5 $",
-          "$ S_{50} = \\dfrac{100}{17} $",
-          "$ S_{1001} = \\dfrac{1001}{97} $",
-          "$ S_\\infty = 6 $"
+          "$S_5 = 5$",
+          "$S_{50} = \\dfrac{100}{17}$",
+          "$S_{1001} = \\dfrac{1001}{97}$",
+          "$S_\\infty = 6$"
         ],
         "answerKeyStr": "a,b,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A,B,D"
       },
       {
         "id": "d691d3c3-06ae-4c07-bd49-92ba2592f34d",
         "questionNumber": 19,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{For }\\Delta\\text{ ABC},\\text{ if }81 + 144a^4 + 16b^4 + 9c^4 = 144abc, (\\text{where notations have their usual meaning}),\\text{ then}: [\\text{Editor}'s\\text{ Note}:\\text{ Questions }12\\text{ and }19\\text{ are identical in the source material}.] $",
+        "text": "For $\\Delta$ ABC$,$ if $81 + 144a^4 + 16b^4 + 9c^4 = 144abc, ($where notations have their usual meaning$),$ then$: [$Editor$'s$ Note$:$ Questions $12$ and $19$ are identical in the source material$.]$",
         "options": [
-          "$ \\text{a }>\\text{ }b\\text{ }>\\text{ }c $",
-          "$ \\text{A }<\\text{ }B\\text{ }<\\text{ }C $",
-          "$ \\text{Area of }\\Delta\\text{ ABC }= \\dfrac{3\\sqrt{3}}{8} $",
-          "$ \\text{Triangle ABC is right angled} $"
+          "a $>$ $b$ $>$ $c$",
+          "A $<$ $B$ $<$ $C$",
+          "Area of $\\Delta$ ABC $= \\dfrac{3\\sqrt{3}}{8}$",
+          "Triangle ABC is right angled"
         ],
         "answerKeyStr": "b,c,d",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "B,C,D"
       },
       {
         "id": "825fb248-c98f-4e8c-a1aa-a47be42c940c",
         "questionNumber": 1,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 1\\text{ to }2 $\n$ \\text{The first four terms of a sequence are given by }T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2.\\text{ The general term is given by }T_n =\\text{ A}\\alpha^{n-1} +\\text{ }B\\beta^{n-1}\\text{ where A},\\text{ }B, \\alpha, \\beta\\text{ are independent of }n\\text{ and A is positive}. $\n\n$ \\text{The value of }(\\alpha^2 + \\beta^2 + \\alpha\\beta)\\text{ is equal to}: $",
+        "text": "Paragraph for Question Nos$. 1$ to $2$\nThe first four terms of a sequence are given by $T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2.$ The general term is given by $T_n =$ A$\\alpha^{n-1} +$ $B\\beta^{n-1}$ where A$,$ $B, \\alpha, \\beta$ are independent of $n$ and A is positive$.$\n\nThe value of $(\\alpha^2 + \\beta^2 + \\alpha\\beta)$ is equal to$:$",
         "options": [
-          "$ 1 $",
-          "$ 2 $",
-          "$ 5 $",
-          "$ 4 $"
+          "$1$",
+          "$2$",
+          "$5$",
+          "$4$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "d92a4e58-27b8-4f61-823c-b862992bdd85",
         "questionNumber": 2,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 1\\text{ to }2 $\n$ \\text{The first four terms of a sequence are given by }T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2.\\text{ The general term is given by }T_n =\\text{ A}\\alpha^{n-1} +\\text{ }B\\beta^{n-1}\\text{ where A},\\text{ }B, \\alpha, \\beta\\text{ are independent of }n\\text{ and A is positive}. $\n\n$ \\text{The value of }5(\\text{A}^2 +\\text{ }B^2)\\text{ is equal to}: $",
+        "text": "Paragraph for Question Nos$. 1$ to $2$\nThe first four terms of a sequence are given by $T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2.$ The general term is given by $T_n =$ A$\\alpha^{n-1} +$ $B\\beta^{n-1}$ where A$,$ $B, \\alpha, \\beta$ are independent of $n$ and A is positive$.$\n\nThe value of $5($A$^2 +$ $B^2)$ is equal to$:$",
         "options": [
-          "$ 2 $",
-          "$ 4 $",
-          "$ 6 $",
-          "$ 8 $"
+          "$2$",
+          "$4$",
+          "$6$",
+          "$8$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "f334bf3e-ea99-4fbe-b01f-f8790e04a185",
         "questionNumber": 3,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 3\\text{ to }4 $\n$ \\text{There are two sets A and }B\\text{ each of which consists of three numbers in A}.P.\\text{ whose sum is }15.\\text{ }D\\text{ and }d\\text{ are their respective common differences such that }D\\text{ }-\\text{ }d\\text{ }= 1,\\text{ }D\\text{ }> 0.\\text{ If }\\dfrac{p}{q} = \\dfrac{7}{8}\\text{ where }p\\text{ and }q\\text{ are the product of the numbers in those sets A and }B\\text{ respectively}. $\n\n$ \\text{Sum of the product of the numbers in set A taken two at a time is}: $",
+        "text": "Paragraph for Question Nos$. 3$ to $4$\nThere are two sets A and $B$ each of which consists of three numbers in A$.P.$ whose sum is $15.$ $D$ and $d$ are their respective common differences such that $D$ $-$ $d$ $= 1,$ $D$ $> 0.$ If $\\dfrac{p}{q} = \\dfrac{7}{8}$ where $p$ and $q$ are the product of the numbers in those sets A and $B$ respectively$.$\n\nSum of the product of the numbers in set A taken two at a time is$:$",
         "options": [
-          "$ 51 $",
-          "$ 71 $",
-          "$ 74 $",
-          "$ 86 $"
+          "$51$",
+          "$71$",
+          "$74$",
+          "$86$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "b206eab0-f2fb-43c3-9d87-efbebb9e7034",
         "questionNumber": 4,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 3\\text{ to }4 $\n$ \\text{There are two sets A and }B\\text{ each of which consists of three numbers in A}.P.\\text{ whose sum is }15.\\text{ }D\\text{ and }d\\text{ are their respective common differences such that }D\\text{ }-\\text{ }d\\text{ }= 1,\\text{ }D\\text{ }> 0.\\text{ If }\\dfrac{p}{q} = \\dfrac{7}{8}\\text{ where }p\\text{ and }q\\text{ are the product of the numbers in those sets A and }B\\text{ respectively}. $\n\n$ \\text{Sum of the product of the numbers in set }B\\text{ taken two at a time is}: $",
+        "text": "Paragraph for Question Nos$. 3$ to $4$\nThere are two sets A and $B$ each of which consists of three numbers in A$.P.$ whose sum is $15.$ $D$ and $d$ are their respective common differences such that $D$ $-$ $d$ $= 1,$ $D$ $> 0.$ If $\\dfrac{p}{q} = \\dfrac{7}{8}$ where $p$ and $q$ are the product of the numbers in those sets A and $B$ respectively$.$\n\nSum of the product of the numbers in set $B$ taken two at a time is$:$",
         "options": [
-          "$ 52 $",
-          "$ 54 $",
-          "$ 64 $",
-          "$ 74 $"
+          "$52$",
+          "$54$",
+          "$64$",
+          "$74$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "b06a841b-bfc7-4e58-93e5-ad032f114dc4",
         "questionNumber": 5,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 5\\text{ to }7 $\n$ \\text{Let }x,\\text{ }y,\\text{ }z\\text{ are positive reals and }x\\text{ }+\\text{ }y\\text{ }+\\text{ }z\\text{ }= 60\\text{ and }x\\text{ }> 3. $\n\n$ \\text{Maximum value of }(x\\text{ }- 3)(y\\text{ }+ 1)(z\\text{ }+ 5)\\text{ is}: $",
+        "text": "Paragraph for Question Nos$. 5$ to $7$\nLet $x,$ $y,$ $z$ are positive reals and $x$ $+$ $y$ $+$ $z$ $= 60$ and $x$ $> 3.$\n\nMaximum value of $(x$ $- 3)(y$ $+ 1)(z$ $+ 5)$ is$:$",
         "options": [
-          "$ (17)(21)(25) $",
-          "$ (20)(21)(23) $",
-          "$ (21)(21)(21) $",
-          "$ (23)(19)(15) $"
+          "$(17)(21)(25)$",
+          "$(20)(21)(23)$",
+          "$(21)(21)(21)$",
+          "$(23)(19)(15)$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "8bd32143-cd37-45b8-bb8c-84c245909f33",
         "questionNumber": 6,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 5\\text{ to }7 $\n$ \\text{Let }x,\\text{ }y,\\text{ }z\\text{ are positive reals and }x\\text{ }+\\text{ }y\\text{ }+\\text{ }z\\text{ }= 60\\text{ and }x\\text{ }> 3. $\n\n$ \\text{Maximum value of }(x\\text{ }- 3)(2y + 1)(3z + 5)\\text{ is}: $",
+        "text": "Paragraph for Question Nos$. 5$ to $7$\nLet $x,$ $y,$ $z$ are positive reals and $x$ $+$ $y$ $+$ $z$ $= 60$ and $x$ $> 3.$\n\nMaximum value of $(x$ $- 3)(2y + 1)(3z + 5)$ is$:$",
         "options": [
-          "$ \\dfrac{(355)^3}{3^3 \\cdot 6^2} $",
-          "$ \\dfrac{(355)^3}{3^3 \\cdot 6^3} $",
-          "$ \\dfrac{(355)^3}{3^2 \\cdot 6^3} $",
-          "$ \\text{None of these} $"
+          "$\\dfrac{(355)^3}{3^3 \\cdot 6^2}$",
+          "$\\dfrac{(355)^3}{3^3 \\cdot 6^3}$",
+          "$\\dfrac{(355)^3}{3^2 \\cdot 6^3}$",
+          "None of these"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "6d376994-0391-463f-8f93-5fb6e593ba76",
         "questionNumber": 7,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 5\\text{ to }7 $\n$ \\text{Let }x,\\text{ }y,\\text{ }z\\text{ are positive reals and }x\\text{ }+\\text{ }y\\text{ }+\\text{ }z\\text{ }= 60\\text{ and }x\\text{ }> 3. $\n\n$ \\text{Maximum value of }xyz\\text{ is}: $",
+        "text": "Paragraph for Question Nos$. 5$ to $7$\nLet $x,$ $y,$ $z$ are positive reals and $x$ $+$ $y$ $+$ $z$ $= 60$ and $x$ $> 3.$\n\nMaximum value of $xyz$ is$:$",
         "options": [
-          "$ 8 \\times 10^3 $",
-          "$ 27 \\times 10^3 $",
-          "$ 64 \\times 10^3 $",
-          "$ 125 \\times 10^3 $"
+          "$8 \\times 10^3$",
+          "$27 \\times 10^3$",
+          "$64 \\times 10^3$",
+          "$125 \\times 10^3$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "adbab818-7bfa-4c17-84fb-4706c10c7cb1",
         "questionNumber": 8,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 8\\text{ to }10 $\n$ \\text{Two consecutive numbers from }n\\text{ natural numbers }1, 2, 3, \\dots,\\text{ }n\\text{ are removed}.\\text{ Arithmetic mean of the remaining numbers is }\\dfrac{105}{4}. $\n\n$ \\text{The value of }n\\text{ is}: $",
+        "text": "Paragraph for Question Nos$. 8$ to $10$\nTwo consecutive numbers from $n$ natural numbers $1, 2, 3, \\dots,$ $n$ are removed$.$ Arithmetic mean of the remaining numbers is $\\dfrac{105}{4}.$\n\nThe value of $n$ is$:$",
         "options": [
-          "$ 48 $",
-          "$ 50 $",
-          "$ 52 $",
-          "$ 49 $"
+          "$48$",
+          "$50$",
+          "$52$",
+          "$49$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "7ecb627d-f272-4ff6-bec0-d241a74971d9",
         "questionNumber": 9,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 8\\text{ to }10 $\n$ \\text{Two consecutive numbers from }n\\text{ natural numbers }1, 2, 3, \\dots,\\text{ }n\\text{ are removed}.\\text{ Arithmetic mean of the remaining numbers is }\\dfrac{105}{4}. $\n\n$ \\text{The }G.M.\\text{ of the removed numbers is}: $",
+        "text": "Paragraph for Question Nos$. 8$ to $10$\nTwo consecutive numbers from $n$ natural numbers $1, 2, 3, \\dots,$ $n$ are removed$.$ Arithmetic mean of the remaining numbers is $\\dfrac{105}{4}.$\n\nThe $G.M.$ of the removed numbers is$:$",
         "options": [
-          "$ \\sqrt{30} $",
-          "$ \\sqrt{42} $",
-          "$ \\sqrt{56} $",
-          "$ \\sqrt{72} $"
+          "$\\sqrt{30}$",
+          "$\\sqrt{42}$",
+          "$\\sqrt{56}$",
+          "$\\sqrt{72}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "74aa1362-f8cb-42b5-a3ee-351ebbe542dc",
         "questionNumber": 10,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 8\\text{ to }10 $\n$ \\text{Two consecutive numbers from }n\\text{ natural numbers }1, 2, 3, \\dots,\\text{ }n\\text{ are removed}.\\text{ Arithmetic mean of the remaining numbers is }\\dfrac{105}{4}. $\n\n$ \\text{Let removed numbers are }x_1, x_2\\text{ then }x_1 + x_2 +\\text{ }n\\text{ }= $",
+        "text": "Paragraph for Question Nos$. 8$ to $10$\nTwo consecutive numbers from $n$ natural numbers $1, 2, 3, \\dots,$ $n$ are removed$.$ Arithmetic mean of the remaining numbers is $\\dfrac{105}{4}.$\n\nLet removed numbers are $x_1, x_2$ then $x_1 + x_2 +$ $n$ $=$",
         "options": [
-          "$ 61 $",
-          "$ 63 $",
-          "$ 65 $",
-          "$ 69 $"
+          "$61$",
+          "$63$",
+          "$65$",
+          "$69$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "73e208f6-22ac-48c3-bab8-82784007c389",
         "questionNumber": 11,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 11\\text{ to }13 $\n$ \\text{The sequence }\\{a_n\\}\\text{ is defined by formula }a_0 = 4\\text{ and }a_{n+1} = a_n^2 - 2a_n + 2\\text{ for }n\\text{ }\\ge 0.\\text{ Let the sequence }\\{b_n\\}\\text{ is defined by formula }b_0 = \\dfrac{1}{2}\\text{ and }b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall\\text{ }n\\text{ }\\ge 1. $\n\n$ \\text{The value of }a_{10}\\text{ is equal to}: $",
+        "text": "Paragraph for Question Nos$. 11$ to $13$\nThe sequence $\\{a_n\\}$ is defined by formula $a_0 = 4$ and $a_{n+1} = a_n^2 - 2a_n + 2$ for $n$ $\\ge 0.$ Let the sequence $\\{b_n\\}$ is defined by formula $b_0 = \\dfrac{1}{2}$ and $b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall$ $n$ $\\ge 1.$\n\nThe value of $a_{10}$ is equal to$:$",
         "options": [
-          "$ 1 + 2^{1024} $",
-          "$ 4^{1024} $",
-          "$ 1 + 3^{1024} $",
-          "$ 6^{1024} $"
+          "$1 + 2^{1024}$",
+          "$4^{1024}$",
+          "$1 + 3^{1024}$",
+          "$6^{1024}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "98777b1a-0fa7-4c26-91c0-63b4d8d2f498",
         "questionNumber": 12,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 11\\text{ to }13 $\n$ \\text{The sequence }\\{a_n\\}\\text{ is defined by formula }a_0 = 4\\text{ and }a_{n+1} = a_n^2 - 2a_n + 2\\text{ for }n\\text{ }\\ge 0.\\text{ Let the sequence }\\{b_n\\}\\text{ is defined by formula }b_0 = \\dfrac{1}{2}\\text{ and }b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall\\text{ }n\\text{ }\\ge 1. $\n\n$ \\text{The value of }n\\text{ for which }b_n = \\dfrac{3280}{3281}\\text{ is}: $",
+        "text": "Paragraph for Question Nos$. 11$ to $13$\nThe sequence $\\{a_n\\}$ is defined by formula $a_0 = 4$ and $a_{n+1} = a_n^2 - 2a_n + 2$ for $n$ $\\ge 0.$ Let the sequence $\\{b_n\\}$ is defined by formula $b_0 = \\dfrac{1}{2}$ and $b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall$ $n$ $\\ge 1.$\n\nThe value of $n$ for which $b_n = \\dfrac{3280}{3281}$ is$:$",
         "options": [
-          "$ 2 $",
-          "$ 3 $",
-          "$ 4 $",
-          "$ 5 $"
+          "$2$",
+          "$3$",
+          "$4$",
+          "$5$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "5d21d90b-f330-4320-bd65-bb588fc69001",
         "questionNumber": 13,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 11\\text{ to }13 $\n$ \\text{The sequence }\\{a_n\\}\\text{ is defined by formula }a_0 = 4\\text{ and }a_{n+1} = a_n^2 - 2a_n + 2\\text{ for }n\\text{ }\\ge 0.\\text{ Let the sequence }\\{b_n\\}\\text{ is defined by formula }b_0 = \\dfrac{1}{2}\\text{ and }b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall\\text{ }n\\text{ }\\ge 1. $\n\n$ \\text{The sequence }\\{b_n\\}\\text{ satisfies the recurrence formula}: $",
+        "text": "Paragraph for Question Nos$. 11$ to $13$\nThe sequence $\\{a_n\\}$ is defined by formula $a_0 = 4$ and $a_{n+1} = a_n^2 - 2a_n + 2$ for $n$ $\\ge 0.$ Let the sequence $\\{b_n\\}$ is defined by formula $b_0 = \\dfrac{1}{2}$ and $b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall$ $n$ $\\ge 1.$\n\nThe sequence $\\{b_n\\}$ satisfies the recurrence formula$:$",
         "options": [
-          "$ b_{n+1} = \\dfrac{2b_n}{1 - b_n^2} $",
-          "$ b_{n+1} = \\dfrac{2b_n}{1 + b_n^2} $",
-          "$ \\dfrac{b_n}{1 + 2b_n^2} $",
-          "$ \\dfrac{b_n}{1 - 2b_n^2} $"
+          "$b_{n+1} = \\dfrac{2b_n}{1 - b_n^2}$",
+          "$b_{n+1} = \\dfrac{2b_n}{1 + b_n^2}$",
+          "$\\dfrac{b_n}{1 + 2b_n^2}$",
+          "$\\dfrac{b_n}{1 - 2b_n^2}$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "0e543a0b-838f-4a09-a119-29d35bd867a8",
         "questionNumber": 14,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 14\\text{ to }15 $\n$ \\text{Let }f(n) = \\sum_{r=2}^n\\text{ }\\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}},\\text{ a }= \\lim_{n\\text{ }\\to \\infty}\\text{ }f(n)\\text{ and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x\\text{ }+\\text{ }t\\text{ }= 0\\text{ has two positive roots }\\alpha\\text{ and }\\beta. $\n\n$ \\text{If value of }f(7) +\\text{ }f(8)\\text{ is }\\dfrac{p}{q}\\text{ where }p\\text{ and }q\\text{ are relatively prime},\\text{ then }(p\\text{ }-\\text{ }q)\\text{ is}: $",
+        "text": "Paragraph for Question Nos$. 14$ to $15$\nLet $f(n) = \\sum_{r=2}^n$ $\\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}},$ a $= \\lim_{n$ $\\to \\infty}$ $f(n)$ and $x^2 - \\left(2a - \\dfrac{1}{2}\\right)x$ $+$ $t$ $= 0$ has two positive roots $\\alpha$ and $\\beta.$\n\nIf value of $f(7) +$ $f(8)$ is $\\dfrac{p}{q}$ where $p$ and $q$ are relatively prime$,$ then $(p$ $-$ $q)$ is$:$",
         "options": [
-          "$ 53 $",
-          "$ 55 $",
-          "$ 57 $",
-          "$ 59 $"
+          "$53$",
+          "$55$",
+          "$57$",
+          "$59$"
         ],
         "answerKeyStr": "d",
-        "correctOption": 3
+        "correctOption": 3,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "6d7d1a4d-70fd-4878-bd52-246bf56d8d21",
         "questionNumber": 15,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 14\\text{ to }15 $\n$ \\text{Let }f(n) = \\sum_{r=2}^n\\text{ }\\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}},\\text{ a }= \\lim_{n\\text{ }\\to \\infty}\\text{ }f(n)\\text{ and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x\\text{ }+\\text{ }t\\text{ }= 0\\text{ has two positive roots }\\alpha\\text{ and }\\beta. $\n\n$ \\text{Minimum value of }\\dfrac{4}{\\alpha} + \\dfrac{1}{\\beta}\\text{ is}: $",
+        "text": "Paragraph for Question Nos$. 14$ to $15$\nLet $f(n) = \\sum_{r=2}^n$ $\\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}},$ a $= \\lim_{n$ $\\to \\infty}$ $f(n)$ and $x^2 - \\left(2a - \\dfrac{1}{2}\\right)x$ $+$ $t$ $= 0$ has two positive roots $\\alpha$ and $\\beta.$\n\nMinimum value of $\\dfrac{4}{\\alpha} + \\dfrac{1}{\\beta}$ is$:$",
         "options": [
-          "$ 2 $",
-          "$ 6 $",
-          "$ 3 $",
-          "$ 4 $"
+          "$2$",
+          "$6$",
+          "$3$",
+          "$4$"
         ],
         "answerKeyStr": "b",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "118c8704-de9d-4fc3-8c47-ad97e76c2ca3",
         "questionNumber": 16,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 16\\text{ to }17 $\n$ \\text{Given the sequence of number }a_1, a_2, a_3, \\dots, a_{1005}\\text{ which satisfy }\\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009}\\text{ Also }a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010 $\n\n$ \\text{Nature of the sequence is}: $",
+        "text": "Paragraph for Question Nos$. 16$ to $17$\nGiven the sequence of number $a_1, a_2, a_3, \\dots, a_{1005}$ which satisfy $\\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009}$ Also $a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010$\n\nNature of the sequence is$:$",
         "options": [
-          "$ \\text{A}.P. $",
-          "$ G.P. $",
-          "$ \\text{A}.G.P. $",
-          "$ H.P. $"
+          "A$.P.$",
+          "$G.P.$",
+          "A$.G.P.$",
+          "$H.P.$"
         ],
         "answerKeyStr": "a",
-        "correctOption": 0
+        "correctOption": 0,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "73c2b8c9-e5ff-4294-8e85-7725557c7714",
         "questionNumber": 17,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 16\\text{ to }17 $\n$ \\text{Given the sequence of number }a_1, a_2, a_3, \\dots, a_{1005}\\text{ which satisfy }\\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009}\\text{ Also }a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010 $\n\n$ 21^{\\text{st}}\\text{ term of the sequence is equal to}: $",
+        "text": "Paragraph for Question Nos$. 16$ to $17$\nGiven the sequence of number $a_1, a_2, a_3, \\dots, a_{1005}$ which satisfy $\\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009}$ Also $a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010$\n\n$21^{$st$}$ term of the sequence is equal to$:$",
         "options": [
-          "$ \\dfrac{86}{1005} $",
-          "$ \\dfrac{83}{1005} $",
-          "$ \\dfrac{82}{1005} $",
-          "$ \\dfrac{79}{1005} $"
+          "$\\dfrac{86}{1005}$",
+          "$\\dfrac{83}{1005}$",
+          "$\\dfrac{82}{1005}$",
+          "$\\dfrac{79}{1005}$"
         ],
         "answerKeyStr": "c",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT"
       },
       {
         "id": "32f99be4-c53c-4605-a269-52385183a608",
@@ -20769,7 +22792,10 @@ window.DEFAULT_BLACKBOOK = [
           "$A $\\rightarrow$ R, B $\\rightarrow$ S, C $\\rightarrow$ P, D $\\rightarrow$ P$"
         ],
         "answerKeyStr": "A \\rightarrow R; B \\rightarrow P; C \\rightarrow Q; D \\rightarrow S",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "answer": "A \rightarrow R; B \rightarrow P; C \rightarrow Q; D \rightarrow S"
       },
       {
         "id": "4e88e4cb-3e8b-42bb-b50d-ba9d6380fc0a",
@@ -20783,7 +22809,10 @@ window.DEFAULT_BLACKBOOK = [
           "$A $\\rightarrow$ R, B $\\rightarrow$ R, C $\\rightarrow$ R, D $\\rightarrow$ P$"
         ],
         "answerKeyStr": "A \\rightarrow R, B \\rightarrow R, C \\rightarrow P, D \\rightarrow R",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "answer": "A \rightarrow R, B \rightarrow R, C \rightarrow P, D \rightarrow R"
       },
       {
         "id": "bc24aac3-0e0e-4d4b-98d6-fc93b43c999e",
@@ -20797,7 +22826,10 @@ window.DEFAULT_BLACKBOOK = [
           "$A $\\rightarrow$ R, B $\\rightarrow$ S, C $\\rightarrow$ S, D $\\rightarrow$ Q$"
         ],
         "answerKeyStr": "A \\rightarrow P, B \\rightarrow R, C \\rightarrow S, D \\rightarrow Q",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "answer": "A \rightarrow P, B \rightarrow R, C \rightarrow S, D \rightarrow Q"
       },
       {
         "id": "ffd623e6-4481-4fc0-a848-9ac4dde33d8a",
@@ -20811,7 +22843,10 @@ window.DEFAULT_BLACKBOOK = [
           "$A $\\rightarrow$ T, B $\\rightarrow$ T, C $\\rightarrow$ P, D $\\rightarrow$ P$"
         ],
         "answerKeyStr": "A \\rightarrow Q; B \\rightarrow P; C \\rightarrow T; D \\rightarrow S",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "answer": "A \rightarrow Q; B \rightarrow P; C \rightarrow T; D \rightarrow S"
       },
       {
         "id": "7a1618d6-392b-4ee9-9c97-8adc38cf44eb",
@@ -20825,7 +22860,10 @@ window.DEFAULT_BLACKBOOK = [
           "$A $\\rightarrow$ S, B $\\rightarrow$ R, C $\\rightarrow$ P, D $\\rightarrow$ R$"
         ],
         "answerKeyStr": "A \\rightarrow S; B \\rightarrow R; C \\rightarrow P; D \\rightarrow Q",
-        "correctOption": 1
+        "correctOption": 1,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "answer": "A \rightarrow S; B \rightarrow R; C \rightarrow P; D \rightarrow Q"
       },
       {
         "id": "d2d023cc-44b6-41ff-8935-ae71c72c520c",
@@ -20839,196 +22877,1115 @@ window.DEFAULT_BLACKBOOK = [
           "$A $\\rightarrow$ R, B $\\rightarrow$ P, C $\\rightarrow$ R, D $\\rightarrow$ S$"
         ],
         "answerKeyStr": "A \\rightarrow S; B \\rightarrow P; C \\rightarrow Q; D \\rightarrow R",
-        "correctOption": 2
+        "correctOption": 2,
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "answer": "A \rightarrow S; B \rightarrow P; C \rightarrow Q; D \rightarrow R"
       },
       {
         "id": "7f4c99e4-246c-455b-9a34-a56758b687eb",
         "questionNumber": 1,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c,\\text{ }d\\text{ are four distinct consecutive numbers in A}.P.\\text{ The complete set of values of }x\\text{ for which }2(\\text{a }-\\text{ }b) +\\text{ }x(b\\text{ }-\\text{ }c)^2 + (c\\text{ }-\\text{ a})^3 = 2(\\text{a }-\\text{ }d) + (b\\text{ }-\\text{ }d)^2 + (c\\text{ }-\\text{ }d)^3\\text{ is true is }(-\\infty, \\alpha] \\cup [\\beta, \\infty),\\text{ then }|\\alpha|\\text{ is equal to}: $",
+        "text": "Let a$,$ $b,$ $c,$ $d$ are four distinct consecutive numbers in A$.P.$ The complete set of values of $x$ for which $2($a $-$ $b) +$ $x(b$ $-$ $c)^2 + (c$ $-$ a$)^3 = 2($a $-$ $d) + (b$ $-$ $d)^2 + (c$ $-$ $d)^3$ is true is $(-\\infty, \\alpha] \\cup [\\beta, \\infty),$ then $|\\alpha|$ is equal to$:$",
         "options": [],
         "answerKeyStr": "8",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "8",
+        "answer": "8"
       },
       {
         "id": "5f446c76-414a-43b6-90c3-47a9f470091c",
         "questionNumber": 2,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The sum of all digits of }n\\text{ for which }\\sum_{r=1}^n\\text{ }r\\text{ }2^r\\text{ }= 2 + 2^{n+10}\\text{ is}: $",
+        "text": "The sum of all digits of $n$ for which $\\sum_{r=1}^n$ $r$ $2^r$ $= 2 + 2^{n+10}$ is$:$",
         "options": [],
         "answerKeyStr": "9",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "9",
+        "answer": "9"
       },
       {
         "id": "da52f343-f4e4-44a9-9b4a-e248319ff550",
         "questionNumber": 3,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{If }\\lim_{n\\text{ }\\to \\infty} \\sum_{r=1}^n\\text{ }\\dfrac{r\\text{ }+ 2}{2^{r+1}\\text{ }r(r\\text{ }+ 1)} = \\dfrac{1}{k},\\text{ then }k\\text{ }= $",
+        "text": "If $\\lim_{n$ $\\to \\infty} \\sum_{r=1}^n$ $\\dfrac{r$ $+ 2}{2^{r+1}$ $r(r$ $+ 1)} = \\dfrac{1}{k},$ then $k$ $=$",
         "options": [],
         "answerKeyStr": "2",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "2",
+        "answer": "2"
       },
       {
         "id": "ac944d84-75bc-4e45-8f9a-b4f49f5a76e3",
         "questionNumber": 4,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The value of }\\sum_{r=1}^\\infty \\dfrac{8r}{4r^4 + 1}\\text{ is equal to}: $",
+        "text": "The value of $\\sum_{r=1}^\\infty \\dfrac{8r}{4r^4 + 1}$ is equal to$:$",
         "options": [],
         "answerKeyStr": "2",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "2",
+        "answer": "2"
       },
       {
         "id": "2971325e-9ff0-4be2-83fb-45f68568e74e",
         "questionNumber": 5,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Three distinct non-zero real numbers form an A}.P.\\text{ and the squares of these numbers taken in same order form a }G.P.\\text{ If possible common ratio of }G.P.\\text{ are }3 \\pm \\sqrt{n},\\text{ }n\\text{ }\\in\\text{ }N\\text{ then }n\\text{ }= $",
+        "text": "Three distinct non-zero real numbers form an A$.P.$ and the squares of these numbers taken in same order form a $G.P.$ If possible common ratio of $G.P.$ are $3 \\pm \\sqrt{n},$ $n$ $\\in$ $N$ then $n$ $=$",
         "options": [],
         "answerKeyStr": "8",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "8",
+        "answer": "8"
       },
       {
         "id": "f4c0f611-29e1-4f54-8ed2-673f840df6d2",
         "questionNumber": 6,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{If }\\sqrt{\\underbrace{(1111\\dots1)}_{2n \\text{\\text{ times}}} - \\underbrace{(222\\dots2)}_{n\\text{ }\\text{\\text{ times}}}} = \\underbrace{\\text{PPP}\\dots\\text{ }P}_{n\\text{ }\\text{\\text{ times}}}\\text{ then }P\\text{ }= $",
+        "text": "If $\\sqrt{\\underbrace{(1111\\dots1)}_{2n $\\text{ times$}} - \\underbrace{(222\\dots2)}_{n$ \\text{ times$}}} = \\underbrace{$PPP$\\dots$ $P}_{n$ \\text{ times$}}$ then $P$ $=$",
         "options": [],
         "answerKeyStr": "3",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "3",
+        "answer": "3"
       },
       {
         "id": "2afbf9a6-7e44-44f2-b1d4-14bd20ccbd8e",
         "questionNumber": 7,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{In an increasing sequence of four positive integers},\\text{ the first }3\\text{ terms are in A}.P.,\\text{ the last }3\\text{ terms are in }G.P.\\text{ and the fourth term exceed the first term by }30,\\text{ then the common difference of A}.P.\\text{ lying in interval }[1, 9]\\text{ is}: $",
+        "text": "In an increasing sequence of four positive integers$,$ the first $3$ terms are in A$.P.,$ the last $3$ terms are in $G.P.$ and the fourth term exceed the first term by $30,$ then the common difference of A$.P.$ lying in interval $[1, 9]$ is$:$",
         "options": [],
         "answerKeyStr": "9",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "9",
+        "answer": "9"
       },
       {
         "id": "1c685793-c9dd-43ec-b2bd-6146d29e2850",
         "questionNumber": 8,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The }limit\\text{ of }\\dfrac{1}{n^4} \\sum_{k=1}^n\\text{ }k(k\\text{ }+ 2)(k\\text{ }+ 4)\\text{ as }n\\text{ }\\to \\infty\\text{ is equal to }\\dfrac{1}{\\lambda},\\text{ then }\\lambda = $",
+        "text": "The $limit$ of $\\dfrac{1}{n^4} \\sum_{k=1}^n$ $k(k$ $+ 2)(k$ $+ 4)$ as $n$ $\\to \\infty$ is equal to $\\dfrac{1}{\\lambda},$ then $\\lambda =$",
         "options": [],
         "answerKeyStr": "4",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "4",
+        "answer": "4"
       },
       {
         "id": "76437a69-99fd-455f-8420-4c6c7bb60bad",
         "questionNumber": 9,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{What is the last digit of }1 + 2 + 3 + \\dots +\\text{ }n\\text{ if the last digit of }1^3 + 2^3 + \\dots +\\text{ }n^3\\text{ is }1? $",
+        "text": "What is the last digit of $1 + 2 + 3 + \\dots +$ $n$ if the last digit of $1^3 + 2^3 + \\dots +$ $n^3$ is $1?$",
         "options": [],
         "answerKeyStr": "1",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "1",
+        "answer": "1"
       },
       {
         "id": "2e2b4ac4-8814-4393-912e-8c2dc3e415ec",
         "questionNumber": 10,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Three distinct positive numbers a},\\text{ }b,\\text{ }c\\text{ are in }G.P.,\\text{ while }\\log_c\\text{ a}, \\log_b\\text{ }c, \\log_a\\text{ }b\\text{ are in A}.P.\\text{ with non-zero common difference }d,\\text{ then }2d = $",
+        "text": "Three distinct positive numbers a$,$ $b,$ $c$ are in $G.P.,$ while $\\log_c$ a$, \\log_b$ $c, \\log_a$ $b$ are in A$.P.$ with non-zero common difference $d,$ then $2d =$",
         "options": [],
         "answerKeyStr": "3",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "3",
+        "answer": "3"
       },
       {
         "id": "b6409953-f1b3-41cf-a80a-dd3df4fa1056",
         "questionNumber": 11,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The numbers }\\dfrac{1}{3}, \\dfrac{1}{3} \\log_x\\text{ }y, \\dfrac{1}{3} \\log_y\\text{ }z, \\dfrac{1}{7} \\log_z\\text{ }x\\text{ are in }H.P.\\text{ If }y\\text{ }=\\text{ }x^r\\text{ and }z\\text{ }=\\text{ }x^s,\\text{ then }4(r\\text{ }+\\text{ }s) = $",
+        "text": "The numbers $\\dfrac{1}{3}, \\dfrac{1}{3} \\log_x$ $y, \\dfrac{1}{3} \\log_y$ $z, \\dfrac{1}{7} \\log_z$ $x$ are in $H.P.$ If $y$ $=$ $x^r$ and $z$ $=$ $x^s,$ then $4(r$ $+$ $s) =$",
         "options": [],
         "answerKeyStr": "6",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "6",
+        "answer": "6"
       },
       {
         "id": "75158d7a-f30d-4b4b-8369-b6248ac5779b",
         "questionNumber": 12,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{If }\\sum_{k=1}^\\infty \\dfrac{k^2}{3^k} = \\dfrac{p}{q};\\text{ where }p\\text{ and }q\\text{ are relatively prime positive integers}.\\text{ Find the value of }(p\\text{ }+\\text{ }q). $",
+        "text": "If $\\sum_{k=1}^\\infty \\dfrac{k^2}{3^k} = \\dfrac{p}{q};$ where $p$ and $q$ are relatively prime positive integers$.$ Find the value of $(p$ $+$ $q).$",
         "options": [],
         "answerKeyStr": "5",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "5",
+        "answer": "5"
       },
       {
         "id": "10fac6cd-30f0-4b2d-baad-2aca5c5dcdfe",
         "questionNumber": 13,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The sum of the terms of an infinitely decreasing Geometric Progression }(G.P.)\\text{ is equal to the greatest value of the function }f(x) =\\text{ }x^3 + 3x - 9\\text{ when }x\\text{ }\\in [-4, 3]\\text{ and the difference between the first and second term is }f'(0).\\text{ The common ratio }r\\text{ }= \\dfrac{p}{q}\\text{ where }p\\text{ and }q\\text{ are relatively prime positive integers}.\\text{ Find }(p\\text{ }+\\text{ }q). $",
+        "text": "The sum of the terms of an infinitely decreasing Geometric Progression $(G.P.)$ is equal to the greatest value of the function $f(x) =$ $x^3 + 3x - 9$ when $x$ $\\in [-4, 3]$ and the difference between the first and second term is $f'(0).$ The common ratio $r$ $= \\dfrac{p}{q}$ where $p$ and $q$ are relatively prime positive integers$.$ Find $(p$ $+$ $q).$",
         "options": [],
         "answerKeyStr": "5",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "5",
+        "answer": "5"
       },
       {
         "id": "fc288714-17c8-4313-a38e-b5522968a06e",
         "questionNumber": 14,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{A cricketer has to score }4500\\text{ runs}.\\text{ Let }a_n\\text{ denotes the number of runs he scores in the }n^{\\text{th}}\\text{ match}.\\text{ If }a_1 = a_2 = \\dots a_{10} = 150\\text{ and }a_{10}, a_{11}, a_{12}, \\dots\\text{ are in A}.P.\\text{ with common difference }(-2).\\text{ If }N\\text{ be the total number of matches played by him to score }4500\\text{ runs}.\\text{ Find the sum of the digits of }N. $",
+        "text": "A cricketer has to score $4500$ runs$.$ Let $a_n$ denotes the number of runs he scores in the $n^{$th$}$ match$.$ If $a_1 = a_2 = \\dots a_{10} = 150$ and $a_{10}, a_{11}, a_{12}, \\dots$ are in A$.P.$ with common difference $(-2).$ If $N$ be the total number of matches played by him to score $4500$ runs$.$ Find the sum of the digits of $N.$",
         "options": [],
         "answerKeyStr": "7",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "7",
+        "answer": "7"
       },
       {
         "id": "f0017c94-8600-434c-99bc-758c10ececb1",
         "questionNumber": 15,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{If }x\\text{ }= 10 \\sum_{n=3}^{100} \\dfrac{1}{n^2 - 4},\\text{ then }[x] = (\\text{where }[\\cdot]\\text{ denotes greatest integer function}). $",
+        "text": "If $x$ $= 10 \\sum_{n=3}^{100} \\dfrac{1}{n^2 - 4},$ then $[x] = ($where $[\\cdot]$ denotes greatest integer function$).$",
         "options": [],
         "answerKeyStr": "5",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "5",
+        "answer": "5"
       },
       {
         "id": "676f36c7-4547-49af-a3cb-405607516c4c",
         "questionNumber": 16,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let }f(n) = \\dfrac{4n + \\sqrt{4n^2 - 1}}{\\sqrt{2n + 1} + \\sqrt{2n - 1}},\\text{ }n\\text{ }\\in\\text{ }N\\text{ then the remainder when }f(1) +\\text{ }f(2) +\\text{ }f(3) + \\dots +\\text{ }f(60)\\text{ is divided by }9\\text{ is}: $",
+        "text": "Let $f(n) = \\dfrac{4n + \\sqrt{4n^2 - 1}}{\\sqrt{2n + 1} + \\sqrt{2n - 1}},$ $n$ $\\in$ $N$ then the remainder when $f(1) +$ $f(2) +$ $f(3) + \\dots +$ $f(60)$ is divided by $9$ is$:$",
         "options": [],
         "answerKeyStr": "8",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "8",
+        "answer": "8"
       },
       {
         "id": "098dd125-08b0-46c1-a467-33c2b6b59d22",
         "questionNumber": 17,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Find the sum of series }1 + \\dfrac{1}{2} + \\dfrac{1}{3} + \\dfrac{1}{4} + \\dfrac{1}{6} + \\dfrac{1}{8} + \\dfrac{1}{9} + \\dfrac{1}{12} + \\dots \\infty,\\text{ where the terms are the reciprocals of the positive integers whose only prime factors are two}'s\\text{ and three}'s. $",
+        "text": "Find the sum of series $1 + \\dfrac{1}{2} + \\dfrac{1}{3} + \\dfrac{1}{4} + \\dfrac{1}{6} + \\dfrac{1}{8} + \\dfrac{1}{9} + \\dfrac{1}{12} + \\dots \\infty,$ where the terms are the reciprocals of the positive integers whose only prime factors are two$'s$ and three$'s.$",
         "options": [],
         "answerKeyStr": "3",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "3",
+        "answer": "3"
       },
       {
         "id": "aeae6b04-dcc3-41ef-af9f-ea01407d846e",
         "questionNumber": 18,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let }a_1, a_2, a_3, \\dots, a_n\\text{ be real numbers in arithmetic progression such that }a_1 = 15\\text{ and }a_2\\text{ is an integer}.\\text{ Given }\\sum_{r=1}^{10} (a_r)^2 = 1185.\\text{ If }S_n = \\sum_{r=1}^n\\text{ }a_r\\text{ and maximum value of }n\\text{ is }N\\text{ for which }S_n \\ge S_{(n-1)},\\text{ then find }N\\text{ }- 10. $",
+        "text": "Let $a_1, a_2, a_3, \\dots, a_n$ be real numbers in arithmetic progression such that $a_1 = 15$ and $a_2$ is an integer$.$ Given $\\sum_{r=1}^{10} (a_r)^2 = 1185.$ If $S_n = \\sum_{r=1}^n$ $a_r$ and maximum value of $n$ is $N$ for which $S_n \\ge S_{(n-1)},$ then find $N$ $- 10.$",
         "options": [],
         "answerKeyStr": "6",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "6",
+        "answer": "6"
       },
       {
         "id": "7d1c5667-75e5-4295-880e-4c764f1296a8",
         "questionNumber": 19,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let the roots of the equation }24x^3 - 14x^2 +\\text{ kx }+ 3 = 0\\text{ form a geometric sequence of real numbers}.\\text{ If absolute value of }k\\text{ lies between the roots of the equation }x^2 + \\alpha^2x - 112 = 0,\\text{ then the largest integral value of }\\alpha\\text{ is}: $",
+        "text": "Let the roots of the equation $24x^3 - 14x^2 +$ kx $+ 3 = 0$ form a geometric sequence of real numbers$.$ If absolute value of $k$ lies between the roots of the equation $x^2 + \\alpha^2x - 112 = 0,$ then the largest integral value of $\\alpha$ is$:$",
         "options": [],
         "answerKeyStr": "2",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "2",
+        "answer": "2"
       },
       {
         "id": "345a4cdb-e132-4313-b985-6d9e6a85d85c",
         "questionNumber": 20,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{How many ordered pair}(s)\\text{ satisfy }\\log\\left(x^3 + \\dfrac{1}{3}y^3 + \\dfrac{1}{9}\\right) = \\log\\text{ }x\\text{ }+ \\log\\text{ }y $",
+        "text": "How many ordered pair$(s)$ satisfy $\\log\\left(x^3 + \\dfrac{1}{3}y^3 + \\dfrac{1}{9}\\right) = \\log$ $x$ $+ \\log$ $y$",
         "options": [],
         "answerKeyStr": "1",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "1",
+        "answer": "1"
       },
       {
         "id": "aa2603d9-f11d-43ac-82f4-74f171c7241b",
         "questionNumber": 21,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let a and }b\\text{ be positive integers}.\\text{ The value of }xyz\\text{ is }55\\text{ and }\\dfrac{343}{55}\\text{ when a},\\text{ }x,\\text{ }y,\\text{ }z,\\text{ }b\\text{ are in arithmetic and harmonic progression respectively}.\\text{ Find the value of }(\\text{a }+\\text{ }b). $",
+        "text": "Let a and $b$ be positive integers$.$ The value of $xyz$ is $55$ and $\\dfrac{343}{55}$ when a$,$ $x,$ $y,$ $z,$ $b$ are in arithmetic and harmonic progression respectively$.$ Find the value of $($a $+$ $b).$",
         "options": [],
         "answerKeyStr": "8",
-        "correctOption": -1
+        "correctOption": -1,
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "8",
+        "answer": "8"
+      }
+    ]
+  },
+  {
+    "title": "Determinants",
+    "description": "Comprehensive Practice Test on Determinants",
+    "questions": [
+      {
+        "id": "5da593d6-1564-4c4e-8d09-2c36d521a531",
+        "questionNumber": 1,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If\n\n$ \\begin{vmatrix} 1 & cos α & cos β \\\\ cos α & 1 & cos γ \\\\ cos β & cos γ & 1 \\end{vmatrix}  =  \\begin{vmatrix} 0 & cos α & cos β \\\\ cos α & 0 & cos γ \\\\ cos β & cos γ & 0 \\end{vmatrix} $\n\n\nthen the value of $\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma$ is$:$",
+        "options": [
+          " $1$ ",
+          " $3/2$ ",
+          " $3/8$ ",
+          " $9/4$ "
+        ],
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 0
+      },
+      {
+        "id": "7813c31a-3bf0-48b2-b0da-2bd37cfb27fc",
+        "questionNumber": 2,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "Let the following system of equations kx $+$ $y$ $+$ $z$ $= 1$ $x$ $+$ ky $+$ $z$ $=$ $k$ $x$ $+$ $y$ $+$ kz $=$ $k^2$ has no solution$.$ Find $|k|.$",
+        "options": [
+          " $0$ ",
+          " $1$ ",
+          " $2$ ",
+          " $3$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "8e725fdb-e04a-4c38-bda4-f9512e422a44",
+        "questionNumber": 3,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If\n\n$ \\begin{vmatrix} a & a^2 & 1+a^3 \\\\ b & b^2 & 1+b^3 \\\\ c & c^2 & 1+c^3 \\end{vmatrix}  = 0 $\n\n\nand vectors $(1,$ a$,$ a$^2), (1,$ $b,$ $b^2)$ and $(1,$ $c,$ $c^2)$ are non-coplanar$,$ then the product $abc$ equals$:$",
+        "options": [
+          " $2$ ",
+          " $-1$ ",
+          " $1$ ",
+          " $0$ "
+        ],
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 1
+      },
+      {
+        "id": "c0673859-8c5f-4eb4-9328-774fd972037c",
+        "questionNumber": 4,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If the system of linear equations $x$ $+ 2ay +$ az $= 0$ $x$ $+ 3by +$ bz $= 0$ $x$ $+ 4cy +$ cz $= 0$ has a non-zero solution$,$ then a$,$ $b,$ $c:$",
+        "options": [
+          " are in A$.P.$ ",
+          " are in $G.P.$ ",
+          " are in $H.P.$ ",
+          " satisfy a $+ 2b + 3c = 0$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "88b6e061-eeed-4e3f-b97d-e30d5896d4ff",
+        "questionNumber": 5,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If the number of quadratic polynomials ax$^2 + 2bx +$ $c$ which satisfy the following conditions$: (i)$ a$,$ $b,$ $c$ are distinct $($ii$)$ a$,$ $b,$ $c$ $\\in \\{1, 2, 3, \\dots, 2001, 2002\\} ($iii$)$ $x$ $+ 1$ divides ax$^2 + 2bx +$ $c$ is equal to $1000\\lambda,$ then find the value of $\\lambda.$",
+        "options": [
+          " $2002$ ",
+          " $2001$ ",
+          " $2003$ ",
+          " $2004$ "
+        ],
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 0
+      },
+      {
+        "id": "33d8d4ca-4935-4010-9126-4ff7d214141a",
+        "questionNumber": 6,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If the system of equations $2x +$ ay $+ 6z = 8,$ $x$ $+ 2y +$ $z$ $= 5, 2x +$ ay $+ 3z = 4$ has a unique solution then $'$a$'$ cannot be equal to$:$",
+        "options": [
+          " $2$ ",
+          " $3$ ",
+          " $4$ ",
+          " $5$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "790e53b5-d023-49a0-b51e-283886b5a67f",
+        "questionNumber": 7,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If one of the roots of the equation\n\n$ \\begin{vmatrix} 7 & 6 & x^2 - 13 \\\\ 2 & x^2 - 13 & 2 \\\\ x^2 - 13 & 3 & 7 \\end{vmatrix}  = 0 $\n\n\nis $x$ $= 2,$ then sum of all other five roots is$:$",
+        "options": [
+          " $-2$ ",
+          " $0$ ",
+          " $2\\sqrt{5}$ ",
+          " $\\sqrt{15}$ "
+        ],
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 0
+      },
+      {
+        "id": "9ae7db97-d421-4bf7-908a-500685cb7461",
+        "questionNumber": 8,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "The system of equations kx $+ (k+1)y$ $+ (k-1)z$ $= 0 (k+1)x$ $+$ ky $+ (k+2)z$ $= 0 (k-1)x$ $+ (k+2)y$ $+$ kz $= 0$ has a nontrivial solution for$:$",
+        "options": [
+          " Exactly three real values of $k.$ ",
+          " Exactly two real values of $k.$ ",
+          " Exactly one real value of $k.$ ",
+          " Infinite number of values of $k.$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "df506ae4-6e94-4355-9187-f382b699f1ea",
+        "questionNumber": 9,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If $a_1, a_2, a_3, \\dots, a_n$ are in $G.P.$ and $a_i > 0$ for each $i,$ then the determinant $\\Delta =$\n\n$ \\begin{vmatrix} log a_n & log a_{n+2} & log a_{n+4} \\\\ log a_{n+6} & log a_{n+8} & log a_{n+10} \\\\ log a_{n+12} & log a_{n+14} & log a_{n+16} \\end{vmatrix} $\n\n\nis equal to$:$",
+        "options": [
+          " $0$ ",
+          " $\\log \\left( \\sum_{i=1}^{n^2+n} a_i \\right)$ ",
+          " $1$ ",
+          " $2$ "
+        ],
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 0
+      },
+      {
+        "id": "3ad6593a-83b4-4d15-b58d-a41793b060c6",
+        "questionNumber": 10,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If $D_1 =$\n\n$ \\begin{vmatrix} a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\\\ a_3 & b_3 & c_3 \\end{vmatrix} $\n\n\nand $D_2 =$\n\n$ \\begin{vmatrix} a_1 + 2a_2 + 3a_3 & 2a_3 & 5a_2 \\\\ b_1 + 2b_2 + 3b_3 & 2b_3 & 5b_2 \\\\ c_1 + 2c_2 + 3c_3 & 2c_3 & 5c_2 \\end{vmatrix} $\n\n\nthen $D_2 / D_1$ is equal to$:$",
+        "options": [
+          " $10$ ",
+          " $-10$ ",
+          " $20$ ",
+          " $-20$ "
+        ],
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 1
+      },
+      {
+        "id": "0557c220-c123-4703-bdc1-b57e64abf669",
+        "questionNumber": 11,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If $\\Delta_1 =$\n\n$ \\begin{vmatrix} 1 & 1 & 1 \\\\ a & b & c \\\\ a^2 & b^2 & c^2 \\end{vmatrix} $\n\n\nand $\\Delta_2 =$\n\n$ \\begin{vmatrix} 1 & bc & a \\\\ 1 & ac & b \\\\ 1 & ab & c \\end{vmatrix} $\n\n\nthen$:$",
+        "options": [
+          " $\\Delta_1 = \\Delta_2$ ",
+          " $\\Delta_1 = 2\\Delta_2$ ",
+          " $\\Delta_1 + \\Delta_2 = 0$ ",
+          " $\\Delta_1 + 2\\Delta_2 = 0$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "cbf6c687-1659-4bbe-b0f6-81d39f5011fc",
+        "questionNumber": 12,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "The value of the determinant\n\n$ \\begin{vmatrix} 1 & 0 & -1 \\\\ a & 1 & 1 - a \\\\ b & a & 1 + a - b \\end{vmatrix} $\n\n\ndepends on$:$",
+        "options": [
+          " only a ",
+          " only $b$ ",
+          " neither a nor $b$ ",
+          " both a and $b$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "57659385-0ade-41d6-b31a-191f02de6cdb",
+        "questionNumber": 13,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "Sum of solutions of the equation\n\n$ \\begin{vmatrix} 1 & 2 & x \\\\ 2 & 3 & x^2 \\\\ 3 & 5 & 2 \\end{vmatrix}  = 10 is: $",
+        "options": [
+          " $1$ ",
+          " $-1$ ",
+          " $2$ ",
+          " $4$ "
+        ],
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 1
+      },
+      {
+        "id": "e3475609-8113-483c-ae3e-ea79ca7cceb8",
+        "questionNumber": 14,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If $D$ $=$\n\n$ \\begin{vmatrix} x + d & x + e & x + f \\\\ x + d + 1 & x + e + 1 & x + f + 1 \\\\ x + a & x + b & x + c \\end{vmatrix} $\n\n\nthen $D$ does not depend on$:$",
+        "options": [
+          " a ",
+          " $e$ ",
+          " $d$ ",
+          " $x$ "
+        ],
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 3
+      },
+      {
+        "id": "43f32027-4026-4895-847a-656c9000aee4",
+        "questionNumber": 15,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "The value of the determinant\n\n$ \\begin{vmatrix} x - y - z & 2x & 2x \\\\ 2y & y - z - x & 2y \\\\ 2z & 2z & z - x - y \\end{vmatrix}  = $",
+        "options": [
+          " $xyz(x+y+z)^2$ ",
+          " $(x+$y-z$)(x+y+z)^2$ ",
+          " $(x+y+z)^3$ ",
+          " $(x+y+z)^2$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "dc9ceffd-92c1-4e8d-993e-0e683ebeca27",
+        "questionNumber": 16,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "A rectangle ABCD is inscribed in a circle$.$ Let PQ be the diameter of the circle parallel to the side AB$.$ If $\\angle$ BPC $= 30^\\circ,$ then the ratio of the area of rectangle to the area of circle is$:$",
+        "options": [
+          " $\\sqrt{3} / \\pi$ ",
+          " $\\sqrt{3} / 2\\pi$ ",
+          " $3 / \\pi$ ",
+          " $\\sqrt{3} / 9\\pi$ "
+        ],
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 0
+      },
+      {
+        "id": "6b73b0ef-43a7-4a6a-a658-0951504e55a1",
+        "questionNumber": 17,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "Let ab $= 1, \\Delta =$\n\n$ \\begin{vmatrix} 1 + a^2 - b^2 & 2ab & -2b \\\\ 2ab & 1 - a^2 + b^2 & 2a \\\\ 2b & -2a & 1 - a^2 - b^2 \\end{vmatrix} $\n\n\nthen the minimum value of $\\Delta$ is$:$",
+        "options": [
+          " $3$ ",
+          " $9$ ",
+          " $27$ ",
+          " $81$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "edc5fa27-c76c-423d-88e0-6fa75144f3f0",
+        "questionNumber": 18,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "The determinant\n\n$ \\begin{vmatrix} 2 & a+b+c+d & ab+cd \\\\ a+b+c+d & 2(a+b)(c+d) & ab(c+d) + cd(a+b) \\\\ ab+cd & ab(c+d)+cd(a+b) & 2abcd \\end{vmatrix}  = 0 for $",
+        "options": [
+          " a $+$ $b$ $+$ $c$ $+$ $d$ $= 0$ ",
+          " ab $+$ cd $= 0$ ",
+          " ab$(c+d) +$ cd$($a$+b) = 0$ ",
+          " any a$,$ $b,$ $c,$ $d$ "
+        ],
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 3
+      },
+      {
+        "id": "2edce0d6-05c5-4c73-b14a-49f5d96625f2",
+        "questionNumber": 19,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "Let $\\det$ A $=$\n\n$ \\begin{vmatrix} l & m & n \\\\ p & q & r \\\\ 1 & 1 & 1 \\end{vmatrix} $\n\n\nand if $($l-m$)^2 + ($p-q$)^2 = 9, ($m-n$)^2 + ($q-r$)^2 = 16, ($n-l$)^2 + ($r-p$)^2 = 25,$ then the value of $(\\det$ A$)^2$ equals$:$",
+        "options": [
+          " $36$ ",
+          " $100$ ",
+          " $144$ ",
+          " $169$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "e086d34b-0a92-4826-b87c-e452d2f39e36",
+        "questionNumber": 20,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "The number of distinct real values of $K$ such that the system of equations $x$ $+ 2y +$ $z$ $= 1,$ $x$ $+ 3y + 4z =$ $K,$ $x$ $+ 5y + 10z =$ $K^2$ has infinitely many solutions is$:$",
+        "options": [
+          " $0$ ",
+          " $4$ ",
+          " $2$ ",
+          " $3$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "e258fcb6-e310-48bd-a025-d1be43a013f6",
+        "questionNumber": 21,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If\n\n$ \\begin{vmatrix} (x+1) & (x+1)^2 & (x+1)^3 \\\\ (x+2) & (x+2)^2 & (x+2)^3 \\\\ (x+3) & (x+3)^2 & (x+3)^3 \\end{vmatrix} $\n\n\nis expressed as a polynomial in $x,$ then the term independent of $x$ is$:$",
+        "options": [
+          " $0$ ",
+          " $2$ ",
+          " $12$ ",
+          " $16$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "5db7eea0-9509-4053-b865-af578163aac9",
+        "questionNumber": 22,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If A$,$ $B,$ $C$ are the angles of triangle ABC$,$ then the minimum value of\n\n$ \\begin{vmatrix} -2 & cos C & cos B \\\\ cos C & -1 & cos A \\\\ cos B & cos A & -1 \\end{vmatrix} $\n\n\nis equal to$:$",
+        "options": [
+          " $0$ ",
+          " $-1$ ",
+          " $1$ ",
+          " $-2$ "
+        ],
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 1
+      },
+      {
+        "id": "3561e026-5f97-49c7-8f25-4f4fe9545fc8",
+        "questionNumber": 23,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If the system of linear equations $x$ $+ 2ay +$ az $= 0$ $x$ $+ 3by +$ bz $= 0$ $x$ $+ 4cy +$ cz $= 0$ has a non-zero solution then a$,$ $b,$ $c$ are in",
+        "options": [
+          " A$.P.$ ",
+          " $G.P.$ ",
+          " $H.P.$ ",
+          " None of these "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "21751ad2-4cb1-4be8-a413-30ea12d57cc2",
+        "questionNumber": 24,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If a$,$ $b$ and $c$ are the roots of the equation $x^3 + 2x^2 + 1 = 0,$ find\n\n$ \\begin{vmatrix} a & b & x \\\\ b & c & a \\\\ c & a & b \\end{vmatrix} $",
+        "options": [
+          " $8$ ",
+          " $-8$ ",
+          " $0$ ",
+          " $2$ "
+        ],
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 0
+      },
+      {
+        "id": "b4cb30ed-ae53-48c5-83c1-258d3de18151",
+        "questionNumber": 25,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "The system of homogeneous equation $\\lambda$ $x$ $+ (\\lambda + 1)y$ $+ (\\lambda - 1)z$ $= 0, (\\lambda + 1)x$ $+ \\lambda$ $y$ $+ (\\lambda + 2)z$ $= 0, (\\lambda - 1)x$ $+ (\\lambda + 2)y$ $+ \\lambda$ $z$ $= 0$ has non-trivial solution for$:$",
+        "options": [
+          " exactly three real values of $\\lambda$ ",
+          " exactly two real values of $\\lambda$ ",
+          " exactly three real value of $\\lambda$ ",
+          " infinitely many real value of $\\lambda$ "
+        ],
+        "answerKeyStr": "c",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 2
+      },
+      {
+        "id": "e6b10055-c07b-48fe-a345-4beb91e9ad71",
+        "questionNumber": 26,
+        "exerciseName": "Exercise-1: Single Choice Problems",
+        "text": "If one of the roots of the equation\n\n$ \\begin{vmatrix} 7 & 6 & x^2 - 13 \\\\ 2 & x^2 - 13 & 2 \\\\ x^2 - 13 & 3 & 7 \\end{vmatrix}  = 0 $\n\n\nis $x$ $= 2,$ then sum of all other five roots is$:$",
+        "options": [
+          " $-2$ ",
+          " $0$ ",
+          " $2\\sqrt{5}$ ",
+          " $\\sqrt{15}$ "
+        ],
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 0
+      },
+      {
+        "id": "c79f6830-4a03-4077-a088-e49a269346e0",
+        "questionNumber": 1,
+        "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
+        "text": "Let $f($a$,$ $b) =$\n\n$ \\begin{vmatrix} a & a^2 & 0 \\\\ 1 & (2a + b) & (a + b)^2 \\\\ 0 & 1 & (2a + 3b) \\end{vmatrix} $\n\n\nthen",
+        "options": [
+          " $(2a +$ $b)$ is a factor of $f($a$,$ $b)$ ",
+          " $($a $+ 2b)$ is a factor of $f($a$,$ $b)$ ",
+          " $($a $+$ $b)$ is a factor of $f($a$,$ $b)$ ",
+          " a is a factor of $f($a$,$ $b)$ "
+        ],
+        "answerKeyStr": "b, c, d",
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "B, C, D",
+        "correctOption": null,
+        "correctOptions": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "2522db21-3124-4e17-a651-e8d31452f75c",
+        "questionNumber": 2,
+        "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
+        "text": "If\n\n$ \\begin{vmatrix} 1 + cos^2 θ & sin^2 θ & 2√3 tan θ \\\\ cos^2 θ & 1 + sin^2 θ & 2√3 tan θ \\\\ cos^2 θ & sin^2 θ & 1 + 2√3 tan θ \\end{vmatrix}  = 0 $\n\n\nthen $\\theta$ may be$:$",
+        "options": [
+          " $\\pi / 6$ ",
+          " $5\\pi / 6$ ",
+          " $7\\pi / 6$ ",
+          " $11\\pi / 6$ "
+        ],
+        "answerKeyStr": "b, d",
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          3
+        ],
+        "correctAnswer": "B, D",
+        "correctOption": null,
+        "correctOptions": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "5b9c683e-33b5-491b-a859-8dbaf881e662",
+        "questionNumber": 3,
+        "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
+        "text": "Let $\\Delta =$\n\n$ \\begin{vmatrix} a & a + d & a + 3d \\\\ a + d & a + 2d & a \\\\ a + 2d & a & a + d \\end{vmatrix} $\n\n\nthen$:$",
+        "options": [
+          " $\\Delta$ depends on a ",
+          " $\\Delta$ depends on $d$ ",
+          " $\\Delta$ is independent of a$,$ $d$ ",
+          " $\\Delta = 0$ "
+        ],
+        "answerKeyStr": "a, b",
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A, B",
+        "correctOption": null,
+        "correctOptions": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "b6ef75be-56b4-4565-9231-2163d1d0ffba",
+        "questionNumber": 4,
+        "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
+        "text": "The value$(s)$ of $\\lambda$ for which the system of equations $(1 - \\lambda)x$ $+ 3y - 4z = 0$ $x$ $- (3 + \\lambda)y$ $+ 5z = 0 3x +$ $y$ $- \\lambda$ $z$ $= 0$ possesses non-trivial solutions$.$",
+        "options": [
+          " $-1$ ",
+          " $0$ ",
+          " $1$ ",
+          " $2$ "
+        ],
+        "answerKeyStr": "a, b",
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1
+        ],
+        "correctAnswer": "A, B",
+        "correctOption": null,
+        "correctOptions": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "34c0cd50-e891-4a28-9103-d8fd0ad35ada",
+        "questionNumber": 5,
+        "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
+        "text": "Let $D(x) =$\n\n$ \\begin{vmatrix} x^2 + 4x - 3 & 2x + 4 & 13 \\\\ 2x^2 + 5x - 9 & 4x + 5 & 26 \\\\ 8x^2 - 6x + 1 & 16x - 6 & 104 \\end{vmatrix}  = αx^3 + βx^2 + γx + δ $\n\n\nthen$:$",
+        "options": [
+          " $\\alpha + \\beta = 0$ ",
+          " $\\beta + \\gamma = 0$ ",
+          " $\\alpha + \\beta + \\gamma + \\delta = 0$ ",
+          " $\\alpha + \\beta + \\gamma = 0$ "
+        ],
+        "answerKeyStr": "a, b, d",
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A, B, D",
+        "correctOption": null,
+        "correctOptions": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "id": "46b09120-b8c9-40aa-b288-68b0cf4393b6",
+        "questionNumber": 6,
+        "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
+        "text": "$($Note$:$ Question $6$ is identical to Question $5$ in source material$)$ Let $D(x) =$\n\n$ \\begin{vmatrix} x^2 + 4x - 3 & 2x + 4 & 13 \\\\ 2x^2 + 5x - 9 & 4x + 5 & 26 \\\\ 8x^2 - 6x + 1 & 16x - 6 & 104 \\end{vmatrix}  = αx^3 + βx^2 + γx + δ $\n\n\nthen$:$",
+        "options": [
+          " $\\alpha + \\beta = 0$ ",
+          " $\\beta + \\gamma = 0$ ",
+          " $\\alpha + \\beta + \\gamma + \\delta = 0$ ",
+          " $\\alpha + \\beta + \\gamma = 0$ "
+        ],
+        "answerKeyStr": "a, b, d",
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          0,
+          1,
+          3
+        ],
+        "correctAnswer": "A, B, D",
+        "correctOption": null,
+        "correctOptions": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "id": "c1a2c082-4653-4e0a-8917-5cef358d0594",
+        "questionNumber": 7,
+        "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
+        "text": "If the system of equations ax $+$ $y$ $+ 2z = 0$ $x$ $+ 2y +$ $z$ $=$ $b$ $2x +$ $y$ $+$ az $= 0$ has no solution then $($a $+$ $b)$ can be equal to$:$",
+        "options": [
+          " $-1$ ",
+          " $2$ ",
+          " $3$ ",
+          " $4$ "
+        ],
+        "answerKeyStr": "b, c, d",
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1,
+          2,
+          3
+        ],
+        "correctAnswer": "B, C, D",
+        "correctOption": null,
+        "correctOptions": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "131c6a3c-99b9-4e2c-a47b-f26491e8a3ba",
+        "questionNumber": 8,
+        "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
+        "text": "If the system of equations ax $+$ $y$ $+ 2z = 0$ $x$ $+ 2y +$ $z$ $=$ $b$ $2x +$ $y$ $+$ az $= 0$ has no solution then $($a $+$ $b)$ can be equal to",
+        "options": [
+          " $-1$ ",
+          " $2$ ",
+          " $3$ ",
+          " $4$ "
+        ],
+        "answerKeyStr": "b",
+        "type": "MULTI_CORRECT",
+        "questionType": "MULTI_CORRECT",
+        "correctOptionsArray": [
+          1
+        ],
+        "correctAnswer": "B",
+        "correctOption": null,
+        "correctOptions": [
+          1
+        ]
+      },
+      {
+        "id": "9503bf71-5f7d-4216-a58b-f82ff35ebd0a",
+        "questionNumber": 1,
+        "exerciseName": "Exercise-3: Comprehension Type Problems",
+        "text": "Paragraph for Question Nos. 1 to 3\nConsider the system of equations\n$2x + \\lambda y + 6z = 8$\n$x + 2y + \\mu z = 5$\n$x + y + 3z = 4$\nThe system of equations has:\n\nNo solution if$:$",
+        "options": [
+          " $\\lambda = 2, \\mu = 3$ ",
+          " $\\lambda \\neq 2, \\mu = 3$ ",
+          " $\\lambda \\neq 2, \\mu \\neq 3$ ",
+          " $\\lambda = 2, \\mu \\in \\mathbb{R}$ "
+        ],
+        "answerKeyStr": "b",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 1
+      },
+      {
+        "id": "30e41ea6-3017-4332-9923-96f538f90735",
+        "questionNumber": 2,
+        "exerciseName": "Exercise-3: Comprehension Type Problems",
+        "text": "Paragraph for Question Nos. 1 to 3\nConsider the system of equations\n$2x + \\lambda y + 6z = 8$\n$x + 2y + \\mu z = 5$\n$x + y + 3z = 4$\nThe system of equations has:\n\nExactly one solution if$:$",
+        "options": [
+          " $\\lambda \\neq 2, \\mu \\neq 3$ ",
+          " $\\lambda = 2, \\mu = 3$ ",
+          " $\\lambda \\neq 2, \\mu = 3$ ",
+          " $\\lambda = 2, \\mu \\in \\mathbb{R}$ "
+        ],
+        "answerKeyStr": "a",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 0
+      },
+      {
+        "id": "853b6a43-fa26-4e11-a577-36d3202ccba2",
+        "questionNumber": 3,
+        "exerciseName": "Exercise-3: Comprehension Type Problems",
+        "text": "Paragraph for Question Nos. 1 to 3\nConsider the system of equations\n$2x + \\lambda y + 6z = 8$\n$x + 2y + \\mu z = 5$\n$x + y + 3z = 4$\nThe system of equations has:\n\nInfinitely many solutions if$:$",
+        "options": [
+          " $\\lambda \\neq 2, \\mu \\neq 3$ ",
+          " $\\lambda = 2, \\mu \\neq 3$ ",
+          " $\\lambda \\neq 2, \\mu = 3$ ",
+          " $\\lambda = 2, \\mu \\in \\mathbb{R}$ "
+        ],
+        "answerKeyStr": "d",
+        "type": "SINGLE_CORRECT",
+        "questionType": "SINGLE_CORRECT",
+        "correctOption": 3
+      },
+      {
+        "id": "64aac974-9599-4617-923d-a2e1375e45e2",
+        "questionNumber": 1,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "If $3^n$ is a factor of the determinant\n\n$ \\begin{vmatrix} 1 & 1 & 1 \\\\ ^nC_1 & ^{n+3}C_1 & ^{n+6}C_1 \\\\ ^nC_2 & ^{n+3}C_2 & ^{n+6}C_2 \\end{vmatrix} $\n\n\nthen the maximum value of $n$ is $.........$",
+        "options": [],
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "3",
+        "correctOption": null,
+        "answer": "3"
+      },
+      {
+        "id": "709b1eff-44cd-4a96-9964-a2af8431165d",
+        "questionNumber": 2,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "Find the value of $\\lambda$ for which\n\n$ \\begin{vmatrix} 2a_1+b_1 & 2a_2+b_2 & 2a_3+b_3 \\\\ 2b_1+c_1 & 2b_2+c_2 & 2b_3+c_3 \\\\ 2c_1+a_1 & 2c_2+a_2 & 2c_3+a_3 \\end{vmatrix}  = λ  \\begin{vmatrix} a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\\\ c_1 & c_2 & c_3 \\end{vmatrix} $",
+        "options": [],
+        "answerKeyStr": "9",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "9",
+        "correctOption": null,
+        "answer": "9"
+      },
+      {
+        "id": "76083051-94ec-4428-a1d5-f7e016f03244",
+        "questionNumber": 3,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "Find the co-efficient of $x$ in the expansion of the determinant\n\n$ \\begin{vmatrix} (1+x)^2 & (1+x)^4 & (1+x)^6 \\\\ (1+x)^3 & (1+x)^6 & (1+x)^9 \\\\ (1+x)^4 & (1+x)^8 & (1+x)^12 \\end{vmatrix} $",
+        "options": [],
+        "answerKeyStr": "0",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "0",
+        "correctOption": null,
+        "answer": "0"
+      },
+      {
+        "id": "a12cba79-4109-4dd3-8a65-0050151470d4",
+        "questionNumber": 4,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "If $x,$ $y,$ $z$ $\\in \\mathbb{R}$ and\n\n$ \\begin{vmatrix} x & y^2 & z^3 \\\\ x^4 & y^5 & z^6 \\\\ x^7 & y^8 & z^9 \\end{vmatrix}  = 2 $\n\n\nthen find the value of\n\n$ \\begin{vmatrix} y^5 z^6 (z^3 - y^3) & x^4 z^6 (x^3 - z^3) & x^4 y^5 (y^3 - x^3) \\\\ y^2 z^3 (y^6 - z^6) & x z^3 (z^6 - x^6) & x y^2 (x^6 - y^6) \\\\ y^2 z^3 (z^3 - y^3) & x z^3 (x^3 - z^3) & x y^2 (y^3 - x^3) \\end{vmatrix} $",
+        "options": [],
+        "answerKeyStr": "4",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "4",
+        "correctOption": null,
+        "answer": "4"
+      },
+      {
+        "id": "8ce9f3b0-011b-41e4-9a61-5cea0356686a",
+        "questionNumber": 5,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "If the system of equations$: 2x + 3y -$ $z$ $= 0 3x + 2y +$ kz $= 0 4x +$ $y$ $+$ $z$ $= 0$ have a set of non-zero integral solutions then$,$ find the smallest positive value of $z.$",
+        "options": [],
+        "answerKeyStr": "5",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "5",
+        "correctOption": null,
+        "answer": "5"
+      },
+      {
+        "id": "4f073487-dc86-4fd2-a81c-e043ba77b639",
+        "questionNumber": 6,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "Find a $\\in \\mathbb{R}$ for which the system of equations $2ax - 2y + 3z = 0;$ $x$ $+$ ay $+ 2z = 0$ and $2x +$ az $= 0$ also have a non-trivial solution$.$",
+        "options": [],
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": null,
+        "answer": "2"
+      },
+      {
+        "id": "03151737-f7e0-4dc1-a631-41c22305288c",
+        "questionNumber": 7,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "If three non-zero distinct real numbers form an arithmetic progression and the squares of these numbers taken in the same order constitute a geometric progression$.$ Find the sum of all possible common ratios of the geometric progression$.$",
+        "options": [],
+        "answerKeyStr": "6",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "6",
+        "correctOption": null,
+        "answer": "6"
+      },
+      {
+        "id": "4e6ef193-f62d-4c96-8fb0-b337ab102b37",
+        "questionNumber": 8,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "Let $\\Delta_1 =$\n\n$ \\begin{vmatrix} a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\\\ c_1 & c_2 & c_3 \\end{vmatrix} $\n\n\n$\\Delta_2 =$\n\n$ \\begin{vmatrix} 6a_1 & 2a_2 & 2a_3 \\\\ 3b_1 & b_2 & b_3 \\\\ 12c_1 & 4c_2 & 4c_3 \\end{vmatrix} $\n\n\nand $\\Delta_3 =$\n\n$ \\begin{vmatrix} 3a_1+b_1 & 3a_2+b_2 & 3a_3+b_3 \\\\ 3b_1 & 3b_2 & 3b_3 \\\\ 3c_1 & 3c_2 & 3c_3 \\end{vmatrix} $\n\n\nthen $\\Delta_3 - \\Delta_2 =$ $k$ $\\Delta_1,$ find $k.$",
+        "options": [],
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "3",
+        "correctOption": null,
+        "answer": "3"
+      },
+      {
+        "id": "7c9520bb-86ff-4c96-9465-ab6bcf4e7095",
+        "questionNumber": 9,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "The minimum value of determinant $\\Delta =$\n\n$ \\begin{vmatrix} 1 & cos θ & 1 \\\\ -cos θ & 1 & cos θ \\\\ -1 & -cos θ & 2 \\end{vmatrix}  for all θ ∈ R is: $",
+        "options": [],
+        "answerKeyStr": "3",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "3",
+        "correctOption": null,
+        "answer": "3"
+      },
+      {
+        "id": "42cb4b8c-9196-476c-9035-64b3cd4e1c16",
+        "questionNumber": 10,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "For a unique value of $\\mu$ and $\\lambda,$ the system of equations given by $x$ $+$ $y$ $+$ $z$ $= 6$ $x$ $+ 2y + 3z = 14 2x + 5y + \\lambda$ $z$ $= \\mu$ has infinitely many solutions$,$ then $(\\mu - \\lambda) / 4$ is equal to",
+        "options": [],
+        "answerKeyStr": "7",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "7",
+        "correctOption": null,
+        "answer": "7"
+      },
+      {
+        "id": "17a73f98-20be-4ea4-b8d1-85d9e0165747",
+        "questionNumber": 11,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "Let $\\lim_{n$ $\\to \\infty}$ $n$ $\\sin (2\\pi$ $e$ $[n!]) =$ $k\\pi,$ where $n$ $\\in \\mathbb{N}.$ Find $k:$",
+        "options": [],
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": null,
+        "answer": "2"
+      },
+      {
+        "id": "70a2b9f3-42dc-4402-8eca-70d2085df589",
+        "questionNumber": 12,
+        "exerciseName": "Exercise-4: Subjective Type Problems",
+        "text": "If the system of linear equations $(\\cos \\theta)x$ $+ (\\sin \\theta)y$ $+ \\cos \\theta = 0 (\\sin \\theta)x$ $+ (\\cos \\theta)y$ $+ \\sin \\theta = 0 (\\cos \\theta)x$ $+ (\\sin \\theta)y$ $- \\cos \\theta = 0$ is consistent$,$ then the number of possible values of $\\theta, \\theta \\in [0, 2\\pi]$ is$:$",
+        "options": [],
+        "answerKeyStr": "2",
+        "type": "NUMERICAL",
+        "questionType": "NUMERICAL",
+        "correctAnswer": "2",
+        "correctOption": null,
+        "answer": "2"
       }
     ]
   }
