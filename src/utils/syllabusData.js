@@ -7,7 +7,7 @@ export const DEFAULT_TOPPERS = [
     "rank": "AIR 2575",
     "score": "JEE Advanced 2026",
     "year": "2026",
-    "photo": "/images/toppers/dibyanshu_adv.jpg?v=new",
+    "photo": "/images/toppers/dibyanshu_advanced.jpg?v=new",
     "testimonial": "Quantrex Academy transformed my preparation.",
     "isPoster": true
   },
@@ -17,7 +17,7 @@ export const DEFAULT_TOPPERS = [
     "rank": "AIR 2773",
     "score": "JEE Main 2026",
     "year": "2026",
-    "photo": "/images/toppers/dibyanshu_main.jpg?v=new",
+    "photo": "/images/toppers/dibyanshu_mains.jpg?v=new",
     "testimonial": "The test series was exactly like the real exam.",
     "isPoster": true
   },
