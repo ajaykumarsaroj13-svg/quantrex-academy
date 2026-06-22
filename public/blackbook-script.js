@@ -19151,12 +19151,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "8187ba93-e79e-4571-a2e3-147d565da3bc",
         "questionNumber": 1,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If a}, b, c \\text{are positive numbers and a} + b + c = 1, \\text{then the maximum value of} (1 - \\text{a})(1 - b)(1 - c) \\text{is}: $",
+        "text": "$ \\text{If a},\\text{ }b,\\text{ }c\\text{ are positive numbers and a }+\\text{ }b\\text{ }+\\text{ }c\\text{ }= 1,\\text{ then the maximum value of }(1 -\\text{ a})(1 -\\text{ }b)(1 -\\text{ }c)\\text{ is}: $",
         "options": [
-          "$1$",
-          "$\\dfrac{2}{3}$",
-          "$\\dfrac{8}{27}$",
-          "$\\dfrac{4}{9}$"
+          "$ 1 $",
+          "$ \\dfrac{2}{3} $",
+          "$ \\dfrac{8}{27} $",
+          "$ \\dfrac{4}{9} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19165,12 +19165,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "b3d3676c-d078-465a-8c13-96e782886a32",
         "questionNumber": 2,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }xyz = (1 - x)(1 - y)(1 - z) \\text{where} 0 \\le x, y, z \\le 1, \\text{then the minimum value of }x(1 - z) + y(1 - x) + z(1 - y) \\text{is}: $",
+        "text": "$ \\text{If }xyz\\text{ }= (1 -\\text{ }x)(1 -\\text{ }y)(1 -\\text{ }z)\\text{ where }0 \\le\\text{ }x,\\text{ }y,\\text{ }z\\text{ }\\le 1,\\text{ then the minimum value of }x(1 -\\text{ }z) +\\text{ }y(1 -\\text{ }x) +\\text{ }z(1 -\\text{ }y)\\text{ is}: $",
         "options": [
-          "$\\dfrac{3}{2}$",
-          "$\\dfrac{1}{4}$",
-          "$\\dfrac{3}{4}$",
-          "$\\dfrac{1}{2}$"
+          "$ \\dfrac{3}{2} $",
+          "$ \\dfrac{1}{4} $",
+          "$ \\dfrac{3}{4} $",
+          "$ \\dfrac{1}{2} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19179,12 +19179,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "616c15df-a2cb-4ab3-8605-03706fe448b8",
         "questionNumber": 3,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} \\sec(\\alpha - 2\\beta), \\sec\\alpha, \\sec(\\alpha + 2\\beta) \\text{are in arithmetical progression then} \\cos^2\\alpha = \\lambda \\cdot \\cos^2\\beta (\\beta \\neq n\\pi, n \\in \\text{I}) \\text{the value of} \\lambda \\text{is}: $",
+        "text": "$ \\text{If }\\sec(\\alpha - 2\\beta), \\sec\\alpha, \\sec(\\alpha + 2\\beta)\\text{ are in arithmetical progression then }\\cos^2\\alpha = \\lambda \\cdot \\cos^2\\beta (\\beta \\neq\\text{ }n\\pi,\\text{ }n\\text{ }\\in\\text{ I})\\text{ the value of }\\lambda\\text{ is}: $",
         "options": [
-          "$1$",
-          "$2$",
-          "$3$",
-          "$\\dfrac{1}{2}$"
+          "$ 1 $",
+          "$ 2 $",
+          "$ 3 $",
+          "$ \\dfrac{1}{2} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19193,12 +19193,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "a719eda1-5905-4797-a137-694157bef000",
         "questionNumber": 4,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let a}, b, c, d, e \\text{are non-zero and distinct positive real numbers}. \\text{If a}, b, c \\text{are in A}.P.; b, c, d \\text{are in }G.P. \\text{and }c, d, e \\text{are in }H.P., \\text{then a}, c, e \\text{are in}: $",
+        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c,\\text{ }d,\\text{ }e\\text{ are non-zero and distinct positive real numbers}.\\text{ If a},\\text{ }b,\\text{ }c\\text{ are in A}.P.;\\text{ }b,\\text{ }c,\\text{ }d\\text{ are in }G.P.\\text{ and }c,\\text{ }d,\\text{ }e\\text{ are in }H.P.,\\text{ then a},\\text{ }c,\\text{ }e\\text{ are in}: $",
         "options": [
-          "$A.P.$",
-          "$G.P.$",
-          "$H.P.$",
-          "$Nothing can be said$"
+          "$ \\text{A}.P. $",
+          "$ G.P. $",
+          "$ H.P. $",
+          "$ \\text{Nothing can be said} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19207,12 +19207,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "9c9a805c-4539-4edc-9a33-a4ffb8f03aa1",
         "questionNumber": 5,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} (m + 1)^{\\text{th}}, (n + 1)^{\\text{th}}, \\text{and} (r + 1)^{\\text{th}} \\text{terms of a non-constant A}.P. \\text{are in }G.P. \\text{and }m, n, r \\text{are in }H.P., \\text{then the ratio of first term of the A}.P. \\text{to its common difference is}: $",
+        "text": "$ \\text{If }(m\\text{ }+ 1)^{\\text{th}}, (n\\text{ }+ 1)^{\\text{th}},\\text{ and }(r\\text{ }+ 1)^{\\text{th}}\\text{ terms of a non-constant A}.P.\\text{ are in }G.P.\\text{ and }m,\\text{ }n,\\text{ }r\\text{ are in }H.P.,\\text{ then the ratio of first term of the A}.P.\\text{ to its common difference is}: $",
         "options": [
-          "$-\\dfrac{n}{2}$",
-          "$-n$",
-          "$-2n$",
-          "$+n$"
+          "$ -\\dfrac{n}{2} $",
+          "$ -n $",
+          "$ -2n $",
+          "$ +n $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19221,12 +19221,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "49af5397-4395-4fc1-8564-d9bea5820971",
         "questionNumber": 6,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If the equation }x^4 - 4x^3 + \\text{ax}^2 + \\text{bx} + 1 = 0 \\text{has four positive roots}, \\text{then the value of} (\\text{a} + b) \\text{is}: $",
+        "text": "$ \\text{If the equation }x^4 - 4x^3 +\\text{ ax}^2 +\\text{ bx }+ 1 = 0\\text{ has four positive roots},\\text{ then the value of }(\\text{a }+\\text{ }b)\\text{ is}: $",
         "options": [
-          "$-4$",
-          "$2$",
-          "$6$",
-          "$can not be determined$"
+          "$ -4 $",
+          "$ 2 $",
+          "$ 6 $",
+          "$ \\text{can not be determined} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19235,12 +19235,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "5295c88d-aef8-4dea-a423-371728b6743f",
         "questionNumber": 7,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} S_1, S_2 \\text{and} S_3 \\text{are the sums of first }n \\text{natural numbers}, \\text{their squares and their cubes respectively}, \\text{then} \\dfrac{S_1^4 S_2^2 - S_2^2 S_3^2}{S_1^2 + S_3^2} = $",
+        "text": "$ \\text{If }S_1, S_2\\text{ and }S_3\\text{ are the sums of first }n\\text{ natural numbers},\\text{ their squares and their cubes respectively},\\text{ then }\\dfrac{S_1^4 S_2^2 - S_2^2 S_3^2}{S_1^2 + S_3^2} = $",
         "options": [
-          "$4$",
-          "$2$",
-          "$1$",
-          "$0$"
+          "$ 4 $",
+          "$ 2 $",
+          "$ 1 $",
+          "$ 0 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19249,12 +19249,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "6ca7c241-aedb-45ea-9dd2-7d078ea7fd97",
         "questionNumber": 8,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} S_n = \\dfrac{1 \\cdot 2}{3!} + \\dfrac{2 \\cdot 2^2}{4!} + \\dfrac{3 \\cdot 2^3}{5!} + \\dots \\text{upto }n \\text{terms then the sum of the infinite terms is}: $",
+        "text": "$ \\text{If }S_n = \\dfrac{1 \\cdot 2}{3!} + \\dfrac{2 \\cdot 2^2}{4!} + \\dfrac{3 \\cdot 2^3}{5!} + \\dots\\text{ upto }n\\text{ terms then the sum of the infinite terms is}: $",
         "options": [
-          "$1$",
-          "$\\dfrac{2}{3}$",
-          "$e$",
-          "$\\dfrac{\\pi}{4}$"
+          "$ 1 $",
+          "$ \\dfrac{2}{3} $",
+          "$ e $",
+          "$ \\dfrac{\\pi}{4} $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19263,12 +19263,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "87434475-c529-47c5-aad7-b36174baf89c",
         "questionNumber": 9,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} \\tan\\left(\\dfrac{\\pi}{12} - x\\right), \\tan\\dfrac{\\pi}{12}, \\tan\\left(\\dfrac{\\pi}{12} + x\\right) \\text{in order are three consecutive terms of a }G.P. \\text{then sum of all the solutions in} [0, 314] \\text{is }k\\pi. \\text{The value of }k \\text{is}: $",
+        "text": "$ \\text{If }\\tan\\left(\\dfrac{\\pi}{12} -\\text{ }x\\right), \\tan\\dfrac{\\pi}{12}, \\tan\\left(\\dfrac{\\pi}{12} +\\text{ }x\\right)\\text{ in order are three consecutive terms of a }G.P.\\text{ then sum of all the solutions in }[0, 314]\\text{ is }k\\pi.\\text{ The value of }k\\text{ is}: $",
         "options": [
-          "$4950$",
-          "$5050$",
-          "$2525$",
-          "$5010$"
+          "$ 4950 $",
+          "$ 5050 $",
+          "$ 2525 $",
+          "$ 5010 $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19277,12 +19277,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "e3610c2c-7bc9-42ba-84f5-46af54fa4166",
         "questionNumber": 10,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let} S_k = 1 + 2 + 3 + \\dots + k \\text{and} Q_n = \\dfrac{S_2}{S_2 - 1} \\cdot \\dfrac{S_3}{S_3 - 1} \\cdot \\dfrac{S_4}{S_4 - 1} \\dots \\dfrac{S_n}{S_n - 1}, \\text{where }k, n \\in N \\lim_{n \\to \\infty} Q_n = $",
+        "text": "$ \\text{Let }S_k = 1 + 2 + 3 + \\dots +\\text{ }k\\text{ and }Q_n = \\dfrac{S_2}{S_2 - 1} \\cdot \\dfrac{S_3}{S_3 - 1} \\cdot \\dfrac{S_4}{S_4 - 1} \\dots \\dfrac{S_n}{S_n - 1},\\text{ where }k,\\text{ }n\\text{ }\\in\\text{ }N\\text{ }\\lim_{n\\text{ }\\to \\infty} Q_n = $",
         "options": [
-          "$\\dfrac{1}{3}$",
-          "$1$",
-          "$3$",
-          "$0$"
+          "$ \\dfrac{1}{3} $",
+          "$ 1 $",
+          "$ 3 $",
+          "$ 0 $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19291,12 +19291,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "66bb7a09-f40a-4104-9cda-8dd428c87114",
         "questionNumber": 11,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ l, m, n \\text{are the }p^{\\text{th}}, q^{\\text{th}} \\text{and }r^{\\text{th}} \\text{term of a }G.P. \\text{all positive}, \\text{then} \\begin{\\text{vmatrix}} \\log l & p & 1 \\\\ \\log m & q & 1 \\\\ \\log n & r & 1 \\end{\\text{vmatrix}} \\text{equals}: $",
+        "text": "$ l,\\text{ }m,\\text{ }n\\text{ are the }p^{\\text{th}},\\text{ }q^{\\text{th}}\\text{ and }r^{\\text{th}}\\text{ term of a }G.P.\\text{ all positive},\\text{ then }\\begin{\\text{vmatrix}} \\log\\text{ }l\\text{ }&\\text{ }p\\text{ }& 1 \\\\ \\log\\text{ }m\\text{ }&\\text{ }q\\text{ }& 1 \\\\ \\log\\text{ }n\\text{ }&\\text{ }r\\text{ }& 1 \\end{\\text{vmatrix}}\\text{ equals}: $",
         "options": [
-          "$-1$",
-          "$2$",
-          "$1$",
-          "$0$"
+          "$ -1 $",
+          "$ 2 $",
+          "$ 1 $",
+          "$ 0 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19305,12 +19305,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f6f4da32-bcfc-4a30-963f-f1605db44d22",
         "questionNumber": 12,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The number of natural numbers} < 300 \\text{that are divisible by} 6 \\text{but not by} 9 \\text{is}: $",
+        "text": "$ \\text{The number of natural numbers }< 300\\text{ that are divisible by }6\\text{ but not by }9\\text{ is}: $",
         "options": [
-          "$49$",
-          "$37$",
-          "$33$",
-          "$16$"
+          "$ 49 $",
+          "$ 37 $",
+          "$ 33 $",
+          "$ 16 $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19319,12 +19319,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "0e1dc8ee-d973-4d6b-8b82-e415717d6007",
         "questionNumber": 13,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }x, y, z > 0 \\text{and }x + y + z = 1 \\text{then} \\dfrac{xyz}{(1 - x)(1 - y)(1 - z)} \\text{is necessarily}: $",
+        "text": "$ \\text{If }x,\\text{ }y,\\text{ }z\\text{ }> 0\\text{ and }x\\text{ }+\\text{ }y\\text{ }+\\text{ }z\\text{ }= 1\\text{ then }\\dfrac{xyz}{(1 -\\text{ }x)(1 -\\text{ }y)(1 -\\text{ }z)}\\text{ is necessarily}: $",
         "options": [
-          "$\\ge 8$",
-          "$\\le \\dfrac{1}{8}$",
-          "$1$",
-          "$None of these$"
+          "$ \\ge 8 $",
+          "$ \\le \\dfrac{1}{8} $",
+          "$ 1 $",
+          "$ \\text{None of these} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19333,12 +19333,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "89d1b3fa-454c-4d32-874c-8a1f266cd5d3",
         "questionNumber": 14,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If the roots of the equation px}^2 + \\text{qx} + r = 0, \\text{where} 2p, q, 2r \\text{are in }G.P., \\text{are of the form} \\alpha^2, 4\\alpha - 4. \\text{Then the value of} 2p + 4q + 7r \\text{is}: $",
+        "text": "$ \\text{If the roots of the equation px}^2 +\\text{ qx }+\\text{ }r\\text{ }= 0,\\text{ where }2p,\\text{ }q, 2r\\text{ are in }G.P.,\\text{ are of the form }\\alpha^2, 4\\alpha - 4.\\text{ Then the value of }2p + 4q + 7r\\text{ is}: $",
         "options": [
-          "$0$",
-          "$10$",
-          "$14$",
-          "$18$"
+          "$ 0 $",
+          "$ 10 $",
+          "$ 14 $",
+          "$ 18 $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19347,12 +19347,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "eabf5ed4-a9f6-4984-8993-22a965d19313",
         "questionNumber": 15,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let} x_1, x_2, x_3, \\dots, x_k \\text{be the divisors of positive integer }n (\\text{including} 1 \\text{and }n). \\text{If} x_1 + x_2 + x_3 + \\dots + x_k = 75. \\text{Then} \\sum_{i=1}^k \\left(\\dfrac{1}{x_i}\\right) \\text{is equal to}: $",
+        "text": "$ \\text{Let }x_1, x_2, x_3, \\dots, x_k\\text{ be the divisors of positive integer }n\\text{ }(\\text{including }1\\text{ and }n).\\text{ If }x_1 + x_2 + x_3 + \\dots + x_k = 75.\\text{ Then }\\sum_{i=1}^k\\text{ }\\left(\\dfrac{1}{x_i}\\right)\\text{ is equal to}: $",
         "options": [
-          "$\\dfrac{75}{k}$",
-          "$\\dfrac{75}{n}$",
-          "$\\dfrac{1}{n}$",
-          "$\\dfrac{1}{75}$"
+          "$ \\dfrac{75}{k} $",
+          "$ \\dfrac{75}{n} $",
+          "$ \\dfrac{1}{n} $",
+          "$ \\dfrac{1}{75} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19361,12 +19361,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f7805e6d-5beb-46c4-98aa-602cf6281714",
         "questionNumber": 16,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} a_1, a_2, a_3, \\dots, a_n \\text{are in }H.P. \\text{and }f(k) = \\sum_{r=1}^n a_r - a_k \\text{then} \\dfrac{a_1}{f(1)}, \\dfrac{a_2}{f(2)}, \\dfrac{a_3}{f(3)}, \\dots, \\dfrac{a_n}{f(n)} \\text{are in}: $",
+        "text": "$ \\text{If }a_1, a_2, a_3, \\dots, a_n\\text{ are in }H.P.\\text{ and }f(k) = \\sum_{r=1}^n\\text{ }a_r - a_k\\text{ then }\\dfrac{a_1}{f(1)}, \\dfrac{a_2}{f(2)}, \\dfrac{a_3}{f(3)}, \\dots, \\dfrac{a_n}{f(n)}\\text{ are in}: $",
         "options": [
-          "$A.P.$",
-          "$G.P.$",
-          "$H.P.$",
-          "$None of these$"
+          "$ \\text{A}.P. $",
+          "$ G.P. $",
+          "$ H.P. $",
+          "$ \\text{None of these} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19375,12 +19375,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f84a3414-61dc-4b2b-a22e-b66571413f16",
         "questionNumber": 17,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} \\alpha, \\beta \\text{be roots of the equation} 375x^2 - 25x - 2 = 0 \\text{and} s_n = \\alpha^n + \\beta^n, \\text{then} \\lim_{n \\to \\infty} \\left(\\sum_{r=1}^n s_r\\right) = \\dots $",
+        "text": "$ \\text{If }\\alpha, \\beta\\text{ be roots of the equation }375x^2 - 25x - 2 = 0\\text{ and }s_n = \\alpha^n\\text{ }+ \\beta^n,\\text{ then }\\lim_{n\\text{ }\\to \\infty} \\left(\\sum_{r=1}^n\\text{ }s_r\\right) = \\dots $",
         "options": [
-          "$\\dfrac{1}{12}$",
-          "$\\dfrac{1}{4}$",
-          "$\\dfrac{1}{3}$",
-          "$1$"
+          "$ \\dfrac{1}{12} $",
+          "$ \\dfrac{1}{4} $",
+          "$ \\dfrac{1}{3} $",
+          "$ 1 $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19389,12 +19389,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "818d6e9f-a444-408b-871d-cf8657d2818e",
         "questionNumber": 18,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} a_i, i = 1, 2, 3, 4 \\text{be four real members of the same sign}, \\text{then the minimum value of} \\sum \\dfrac{a_i}{a_j}, i, j \\in \\{1, 2, 3, 4\\}, i \\neq j \\text{is}: $",
+        "text": "$ \\text{If }a_i,\\text{ }i\\text{ }= 1, 2, 3, 4\\text{ be four real members of the same sign},\\text{ then the minimum value of }\\sum \\dfrac{a_i}{a_j},\\text{ }i,\\text{ }j\\text{ }\\in \\{1, 2, 3, 4\\},\\text{ }i\\text{ }\\neq\\text{ }j\\text{ is}: $",
         "options": [
-          "$6$",
-          "$8$",
-          "$12$",
-          "$24$"
+          "$ 6 $",
+          "$ 8 $",
+          "$ 12 $",
+          "$ 24 $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19403,12 +19403,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "cbafcaa3-51fe-431f-89d0-d21761f62ac7",
         "questionNumber": 19,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Given that }x, y, z \\text{are positive reals such that }xyz = 32. \\text{The minimum value of }x^2 + 4xy + 4y^2 + 2z^2 \\text{is equal to}: $",
+        "text": "$ \\text{Given that }x,\\text{ }y,\\text{ }z\\text{ are positive reals such that }xyz\\text{ }= 32.\\text{ The minimum value of }x^2 + 4xy + 4y^2 + 2z^2\\text{ is equal to}: $",
         "options": [
-          "$64$",
-          "$256$",
-          "$96$",
-          "$216$"
+          "$ 64 $",
+          "$ 256 $",
+          "$ 96 $",
+          "$ 216 $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19417,12 +19417,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "5d4d48d9-ac5b-4588-adb8-b58a15827a30",
         "questionNumber": 20,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{In an A}.P., \\text{five times the fifth term is equal to eight times the eighth term}. \\text{Then the sum of the first twenty five terms is equal to}: $",
+        "text": "$ \\text{In an A}.P.,\\text{ five times the fifth term is equal to eight times the eighth term}.\\text{ Then the sum of the first twenty five terms is equal to}: $",
         "options": [
-          "$25$",
-          "$\\dfrac{25}{2}$",
-          "$-25$",
-          "$0$"
+          "$ 25 $",
+          "$ \\dfrac{25}{2} $",
+          "$ -25 $",
+          "$ 0 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19431,12 +19431,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "da64250f-9473-4032-bd4c-bbdb2f8bc1fb",
         "questionNumber": 21,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let} \\alpha, \\beta \\text{be two distinct values of }x \\text{lying in} [0, \\pi] \\text{for which} \\sqrt{5}\\sin x, 10\\sin x, 10(4\\sin^2 x + 1) \\text{are} 3 \\text{consecutive terms of a }G.P. \\text{Then minimum value of} |\\alpha - \\beta| = $",
+        "text": "$ \\text{Let }\\alpha, \\beta\\text{ be two distinct values of }x\\text{ lying in }[0, \\pi]\\text{ for which }\\sqrt{5}\\sin\\text{ }x, 10\\sin\\text{ }x, 10(4\\sin^2\\text{ }x\\text{ }+ 1)\\text{ are }3\\text{ consecutive terms of a }G.P.\\text{ Then minimum value of }|\\alpha - \\beta| = $",
         "options": [
-          "$\\dfrac{\\pi}{10}$",
-          "$\\dfrac{\\pi}{5}$",
-          "$\\dfrac{2\\pi}{5}$",
-          "$\\dfrac{3\\pi}{5}$"
+          "$ \\dfrac{\\pi}{10} $",
+          "$ \\dfrac{\\pi}{5} $",
+          "$ \\dfrac{2\\pi}{5} $",
+          "$ \\dfrac{3\\pi}{5} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19445,12 +19445,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "c5f4554c-2f21-4664-945d-20a9713f6785",
         "questionNumber": 22,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{In an infinite }G.P., \\text{the sum of first three terms is} 70. \\text{If the extreme terms are multiplied by} 4 \\text{and the middle term is multiplied by} 5, \\text{the resulting terms form an A}.P. \\text{then the sum to infinite terms of }G.P. \\text{is}: $",
+        "text": "$ \\text{In an infinite }G.P.,\\text{ the sum of first three terms is }70.\\text{ If the extreme terms are multiplied by }4\\text{ and the middle term is multiplied by }5,\\text{ the resulting terms form an A}.P.\\text{ then the sum to infinite terms of }G.P.\\text{ is}: $",
         "options": [
-          "$120$",
-          "$40$",
-          "$160$",
-          "$80$"
+          "$ 120 $",
+          "$ 40 $",
+          "$ 160 $",
+          "$ 80 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19459,12 +19459,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "71700d22-11dc-48d6-ad58-1d44ae12cae5",
         "questionNumber": 23,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The value of the sum} \\sum_{k=1}^\\infty \\sum_{n=1}^\\infty \\dfrac{k}{2^{n+k}} \\text{is equal to}: $",
+        "text": "$ \\text{The value of the sum }\\sum_{k=1}^\\infty \\sum_{n=1}^\\infty \\dfrac{k}{2^{n+k}}\\text{ is equal to}: $",
         "options": [
-          "$5$",
-          "$4$",
-          "$3$",
-          "$2$"
+          "$ 5 $",
+          "$ 4 $",
+          "$ 3 $",
+          "$ 2 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19473,12 +19473,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "c6296b2a-7b06-4a45-ba1e-a8da2dc5679c",
         "questionNumber": 24,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }p, q, r \\text{are positive real numbers}, \\text{such that} 27pqr \\ge (p + q + r)^3 \\text{and} 3p + 4q + 5r = 12, \\text{then }p^3 + q^4 + r^5 = $",
+        "text": "$ \\text{Let }p,\\text{ }q,\\text{ }r\\text{ are positive real numbers},\\text{ such that }27pqr \\ge (p\\text{ }+\\text{ }q\\text{ }+\\text{ }r)^3\\text{ and }3p + 4q + 5r = 12,\\text{ then }p^3 +\\text{ }q^4 +\\text{ }r^5 = $",
         "options": [
-          "$3$",
-          "$6$",
-          "$2$",
-          "$4$"
+          "$ 3 $",
+          "$ 6 $",
+          "$ 2 $",
+          "$ 4 $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19487,12 +19487,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "2fc8690e-bd2b-4d51-a147-564a5d358a6a",
         "questionNumber": 25,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Find the sum of the infinite series} \\dfrac{1}{9} + \\dfrac{1}{18} + \\dfrac{1}{30} + \\dfrac{1}{45} + \\dfrac{1}{63} + \\dots $",
+        "text": "$ \\text{Find the sum of the infinite series }\\dfrac{1}{9} + \\dfrac{1}{18} + \\dfrac{1}{30} + \\dfrac{1}{45} + \\dfrac{1}{63} + \\dots $",
         "options": [
-          "$\\dfrac{1}{3}$",
-          "$\\dfrac{1}{4}$",
-          "$\\dfrac{1}{5}$",
-          "$\\dfrac{2}{3}$"
+          "$ \\dfrac{1}{3} $",
+          "$ \\dfrac{1}{4} $",
+          "$ \\dfrac{1}{5} $",
+          "$ \\dfrac{2}{3} $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19501,12 +19501,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "cc493f12-9cf8-4bba-8dcc-a77ca18bfea7",
         "questionNumber": 26,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} S_r \\text{denote the sum of first} 'r' \\text{terms of a non constant A}.P. \\text{and} \\dfrac{S_a}{\\text{a}^2} = \\dfrac{S_b}{b^2} = c, \\text{where a}, b, c \\text{are distinct then} S_c = $",
+        "text": "$ \\text{If }S_r\\text{ denote the sum of first }'r'\\text{ terms of a non constant A}.P.\\text{ and }\\dfrac{S_a}{\\text{a}^2} = \\dfrac{S_b}{b^2} =\\text{ }c,\\text{ where a},\\text{ }b,\\text{ }c\\text{ are distinct then }S_c = $",
         "options": [
-          "$c^2$",
-          "$c^3$",
-          "$c^4$",
-          "$abc$"
+          "$ c^2 $",
+          "$ c^3 $",
+          "$ c^4 $",
+          "$ abc $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19515,12 +19515,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "33a0dc87-7eb9-435a-bbfd-d607e40619ff",
         "questionNumber": 27,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{In an infinite }G.P. \\text{second term is }x \\text{and its sum is} 4, \\text{then complete set of values of} 'x' \\text{is}: $",
+        "text": "$ \\text{In an infinite }G.P.\\text{ second term is }x\\text{ and its sum is }4,\\text{ then complete set of values of }'x'\\text{ is}: $",
         "options": [
-          "$(-8, 0)$",
-          "$\\left[-\\dfrac{1}{8}, \\dfrac{1}{8}\\right] - \\{0\\}$",
-          "$\\left[-1, -\\dfrac{1}{8}\\right) \\cup \\left(\\dfrac{1}{8}, 1\\right]$",
-          "$(-8, 1] - \\{0\\}$"
+          "$ (-8, 0) $",
+          "$ \\left[-\\dfrac{1}{8}, \\dfrac{1}{8}\\right] - \\{0\\} $",
+          "$ \\left[-1, -\\dfrac{1}{8}\\right) \\cup \\left(\\dfrac{1}{8}, 1\\right] $",
+          "$ (-8, 1] - \\{0\\} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19529,12 +19529,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "23352fce-fbba-4f1a-b5b0-1a406a08a638",
         "questionNumber": 28,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The number of terms of an A}.P. \\text{is odd}. \\text{The sum of the odd terms} (1^{\\text{st}}, 3^{\\text{rd}} \\text{etc}.,) \\text{is} 248 \\text{and the sum of the even terms is} 217. \\text{The last term exceeds the first by} 56, \\text{then}: $",
+        "text": "$ \\text{The number of terms of an A}.P.\\text{ is odd}.\\text{ The sum of the odd terms }(1^{\\text{st}}, 3^{\\text{rd}}\\text{ etc}.,)\\text{ is }248\\text{ and the sum of the even terms is }217.\\text{ The last term exceeds the first by }56,\\text{ then}: $",
         "options": [
-          "$the number of terms is 17$",
-          "$the first term is 3$",
-          "$the number of terms is 13$",
-          "$the first term is 1$"
+          "$ \\text{the number of terms is }17 $",
+          "$ \\text{the first term is }3 $",
+          "$ \\text{the number of terms is }13 $",
+          "$ \\text{the first term is }1 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19543,12 +19543,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "84f05100-d5ca-4aba-bff7-f2f02eeba1bb",
         "questionNumber": 29,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let} A_1, A_2, A_3, \\dots, A_n \\text{be squares such that for each }n \\ge 1 \\text{the length of a side of} A_n \\text{equals the length of a diagonal of} A_{n+1}. \\text{If the side of} A_1 \\text{be} 20 \\text{units then the smallest value of} 'n' \\text{for which area of} A_n \\text{is less than} 1. $",
+        "text": "$ \\text{Let }A_1, A_2, A_3, \\dots, A_n\\text{ be squares such that for each }n\\text{ }\\ge 1\\text{ the length of a side of }A_n\\text{ equals the length of a diagonal of }A_{n+1}.\\text{ If the side of }A_1\\text{ be }20\\text{ units then the smallest value of }'n'\\text{ for which area of }A_n\\text{ is less than }1. $",
         "options": [
-          "$7$",
-          "$8$",
-          "$9$",
-          "$10$"
+          "$ 7 $",
+          "$ 8 $",
+          "$ 9 $",
+          "$ 10 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19557,12 +19557,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "b1baa085-6ae7-41e9-892c-da1e984e69fc",
         "questionNumber": 30,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let} S_k = \\sum_{i=0}^\\infty \\dfrac{1}{(k + 1)^i}, \\text{then} \\sum_{k=1}^n kS_k \\text{equal}: $",
+        "text": "$ \\text{Let }S_k = \\sum_{i=0}^\\infty \\dfrac{1}{(k\\text{ }+ 1)^i},\\text{ then }\\sum_{k=1}^n\\text{ }kS_k\\text{ equal}: $",
         "options": [
-          "$\\dfrac{n(n + 1)}{2}$",
-          "$\\dfrac{n(n - 1)}{2}$",
-          "$\\dfrac{n(n + 2)}{2}$",
-          "$\\dfrac{n(n + 3)}{2}$"
+          "$ \\dfrac{n(n\\text{ }+ 1)}{2} $",
+          "$ \\dfrac{n(n\\text{ }- 1)}{2} $",
+          "$ \\dfrac{n(n\\text{ }+ 2)}{2} $",
+          "$ \\dfrac{n(n\\text{ }+ 3)}{2} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19571,12 +19571,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "8ef8cf39-357f-455f-9a1f-298c8fb9f041",
         "questionNumber": 31,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the series} \\dfrac{2}{1 \\cdot 2} + \\dfrac{5}{2 \\cdot 3} 2^1 + \\dfrac{10}{3 \\cdot 4} 2^2 + \\dfrac{17}{4 \\cdot 5} 2^3 + \\dots \\text{upto }n \\text{terms is equal}: $",
+        "text": "$ \\text{The sum of the series }\\dfrac{2}{1 \\cdot 2} + \\dfrac{5}{2 \\cdot 3} 2^1 + \\dfrac{10}{3 \\cdot 4} 2^2 + \\dfrac{17}{4 \\cdot 5} 2^3 + \\dots\\text{ upto }n\\text{ terms is equal}: $",
         "options": [
-          "$\\dfrac{n 2^n}{n + 1}$",
-          "$\\left(\\dfrac{n}{n + 1}\\right) 2^n + 1$",
-          "$\\dfrac{n 2^n}{n + 1} - 1$",
-          "$\\dfrac{(n - 1) 2^n}{n + 1}$"
+          "$ \\dfrac{n\\text{ }2^n}{n\\text{ }+ 1} $",
+          "$ \\left(\\dfrac{n}{n\\text{ }+ 1}\\right) 2^n\\text{ }+ 1 $",
+          "$ \\dfrac{n\\text{ }2^n}{n\\text{ }+ 1} - 1 $",
+          "$ \\dfrac{(n\\text{ }- 1) 2^n}{n\\text{ }+ 1} $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19585,12 +19585,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "d754392a-13ae-4953-a5d8-75ada749621e",
         "questionNumber": 32,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} (1.5)^{30} = k, \\text{then the value of} \\sum_{n=2}^{29} (1.5)^n, \\text{is}: $",
+        "text": "$ \\text{If }(1.5)^{30} =\\text{ }k,\\text{ then the value of }\\sum_{n=2}^{29} (1.5)^n,\\text{ is}: $",
         "options": [
-          "$2k - 3$",
-          "$k + 1$",
-          "$2k + 7$",
-          "$2k - \\dfrac{9}{2}$"
+          "$ 2k - 3 $",
+          "$ k\\text{ }+ 1 $",
+          "$ 2k + 7 $",
+          "$ 2k - \\dfrac{9}{2} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19599,12 +19599,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "abd2d087-7589-49c7-801a-579b051f2594",
         "questionNumber": 33,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ n \\text{arithmetic means are inserted between} 7 \\text{and} 49 \\text{and their sum is found to be} 364, \\text{then }n \\text{is}: $",
+        "text": "$ n\\text{ arithmetic means are inserted between }7\\text{ and }49\\text{ and their sum is found to be }364,\\text{ then }n\\text{ is}: $",
         "options": [
-          "$11$",
-          "$12$",
-          "$13$",
-          "$14$"
+          "$ 11 $",
+          "$ 12 $",
+          "$ 13 $",
+          "$ 14 $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19613,12 +19613,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "46ff19f0-4b99-45f5-9b91-d4d39c4e6d9b",
         "questionNumber": 34,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The third term of a }G.P. \\text{is} 2. \\text{Then the product of the first five terms}, \\text{is}: $",
+        "text": "$ \\text{The third term of a }G.P.\\text{ is }2.\\text{ Then the product of the first five terms},\\text{ is}: $",
         "options": [
-          "$2^3$",
-          "$2^4$",
-          "$2^5$",
-          "$none of these$"
+          "$ 2^3 $",
+          "$ 2^4 $",
+          "$ 2^5 $",
+          "$ \\text{none of these} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19627,12 +19627,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "5a8202aa-89fb-4469-86da-99f7005d24f0",
         "questionNumber": 35,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of first }n \\text{terms of an A}.P. \\text{is} 5n^2 + 4n, \\text{its common difference is}: $",
+        "text": "$ \\text{The sum of first }n\\text{ terms of an A}.P.\\text{ is }5n^2 + 4n,\\text{ its common difference is}: $",
         "options": [
-          "$9$",
-          "$10$",
-          "$3$",
-          "$-4$"
+          "$ 9 $",
+          "$ 10 $",
+          "$ 3 $",
+          "$ -4 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19641,12 +19641,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "15d8dd6c-cdd0-412e-bc80-c968d0d32f96",
         "questionNumber": 36,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }x + y = \\text{a and }x^2 + y^2 = b, \\text{then the value of} (x^3 + y^3), \\text{is}: $",
+        "text": "$ \\text{If }x\\text{ }+\\text{ }y\\text{ }=\\text{ a and }x^2 +\\text{ }y^2 =\\text{ }b,\\text{ then the value of }(x^3 +\\text{ }y^3),\\text{ is}: $",
         "options": [
-          "$ab$",
-          "$a^2 + b$",
-          "$a + b^2$",
-          "$\\dfrac{3ab - a^3}{2}$"
+          "$ \\text{ab} $",
+          "$ \\text{a}^2 +\\text{ }b $",
+          "$ \\text{a }+\\text{ }b^2 $",
+          "$ \\dfrac{3ab -\\text{ a}^3}{2} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19655,12 +19655,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "d4b7552e-d49d-4eb2-89d3-df4835215712",
         "questionNumber": 37,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} S_1, S_2, S_3, \\dots, S_n \\text{are the sum of infinite geometric series whose first terms are} 1, 3, 5, \\dots, (2n - 1) \\text{and whose common ratios are} \\dfrac{2}{3}, \\dfrac{2}{5}, \\dots, \\dfrac{2}{2n+1} \\text{respectively}, \\text{then} \\left\\{\\dfrac{1}{S_1 S_2 S_3} + \\dfrac{1}{S_2 S_3 S_4} + \\dfrac{1}{S_3 S_4 S_5} + \\dots \\text{\\text{upto infinite terms}}\\right\\} = $",
+        "text": "$ \\text{If }S_1, S_2, S_3, \\dots, S_n\\text{ are the sum of infinite geometric series whose first terms are }1, 3, 5, \\dots, (2n - 1)\\text{ and whose common ratios are }\\dfrac{2}{3}, \\dfrac{2}{5}, \\dots, \\dfrac{2}{2n+1}\\text{ respectively},\\text{ then }\\left\\{\\dfrac{1}{S_1 S_2 S_3} + \\dfrac{1}{S_2 S_3 S_4} + \\dfrac{1}{S_3 S_4 S_5} + \\dots \\text{\\text{upto infinite terms}}\\right\\} = $",
         "options": [
-          "$\\dfrac{1}{15}$",
-          "$\\dfrac{1}{60}$",
-          "$\\dfrac{1}{12}$",
-          "$\\dfrac{1}{3}$"
+          "$ \\dfrac{1}{15} $",
+          "$ \\dfrac{1}{60} $",
+          "$ \\dfrac{1}{12} $",
+          "$ \\dfrac{1}{3} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19669,12 +19669,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "7964a632-e51a-4da9-a531-558cbaca241c",
         "questionNumber": 38,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Sequence} \\{t_n\\} \\text{of positive terms is a }G.P. \\text{If} t_6, 2, 5, t_{14} \\text{form another }G.P. \\text{in that order}, \\text{then the product} t_1 t_2 t_3 \\dots t_{18} t_{19} \\text{is equal to}: $",
+        "text": "$ \\text{Sequence }\\{t_n\\}\\text{ of positive terms is a }G.P.\\text{ If }t_6, 2, 5, t_{14}\\text{ form another }G.P.\\text{ in that order},\\text{ then the product }t_1 t_2 t_3 \\dots t_{18} t_{19}\\text{ is equal to}: $",
         "options": [
-          "$10^9$",
-          "$10^{10}$",
-          "$10^{17/2}$",
-          "$10^{19/2}$"
+          "$ 10^9 $",
+          "$ 10^{10} $",
+          "$ 10^{17/2} $",
+          "$ 10^{19/2} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19683,12 +19683,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "011b2f88-c976-453c-b294-f85957d44300",
         "questionNumber": 39,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The minimum value of} \\dfrac{(\\text{A}^2 + \\text{A} + 1)(B^2 + B + 1)(C^2 + C + 1)(D^2 + D + 1)}{\\text{ABCD}} \\text{where A}, B, C, D > 0 \\text{is}: $",
+        "text": "$ \\text{The minimum value of }\\dfrac{(\\text{A}^2 +\\text{ A }+ 1)(B^2 +\\text{ }B\\text{ }+ 1)(C^2 +\\text{ }C\\text{ }+ 1)(D^2 +\\text{ }D\\text{ }+ 1)}{\\text{ABCD}}\\text{ where A},\\text{ }B,\\text{ }C,\\text{ }D\\text{ }> 0\\text{ is}: $",
         "options": [
-          "$\\dfrac{1}{3^4}$",
-          "$\\dfrac{1}{2^4}$",
-          "$2^4$",
-          "$3^4$"
+          "$ \\dfrac{1}{3^4} $",
+          "$ \\dfrac{1}{2^4} $",
+          "$ 2^4 $",
+          "$ 3^4 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19697,12 +19697,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "046e09e4-bb8d-4679-a8e8-55fc2f1e7424",
         "questionNumber": 40,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} \\sum_1^{20} r^3 = \\text{a}, \\sum_1^{20} r^2 = b \\text{then sum of products of} 1, 2, 3, 4 \\dots 20 \\text{taking two at a time is}: $",
+        "text": "$ \\text{If }\\sum_1^{20}\\text{ }r^3 =\\text{ a}, \\sum_1^{20}\\text{ }r^2 =\\text{ }b\\text{ then sum of products of }1, 2, 3, 4 \\dots 20\\text{ taking two at a time is}: $",
         "options": [
-          "$\\dfrac{a - b}{2}$",
-          "$\\dfrac{a^2 - b^2}{2}$",
-          "$a - b$",
-          "$a^2 - b^2$"
+          "$ \\dfrac{\\text{a }-\\text{ }b}{2} $",
+          "$ \\dfrac{\\text{a}^2 -\\text{ }b^2}{2} $",
+          "$ \\text{a }-\\text{ }b $",
+          "$ \\text{a}^2 -\\text{ }b^2 $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19711,12 +19711,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "878d06c0-2008-40ce-a6ae-6bf69bc53133",
         "questionNumber": 41,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the first} 2n \\text{terms of an A}.P. \\text{is }x \\text{and the sum of the next }n \\text{terms is }y, \\text{its common difference is}: $",
+        "text": "$ \\text{The sum of the first }2n\\text{ terms of an A}.P.\\text{ is }x\\text{ and the sum of the next }n\\text{ terms is }y,\\text{ its common difference is}: $",
         "options": [
-          "$\\dfrac{x - 2y}{3n^2}$",
-          "$\\dfrac{2y - x}{3n^2}$",
-          "$\\dfrac{x - 2y}{3n}$",
-          "$\\dfrac{2y - x}{3n}$"
+          "$ \\dfrac{x\\text{ }- 2y}{3n^2} $",
+          "$ \\dfrac{2y -\\text{ }x}{3n^2} $",
+          "$ \\dfrac{x\\text{ }- 2y}{3n} $",
+          "$ \\dfrac{2y -\\text{ }x}{3n} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19725,12 +19725,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "726098a2-9385-49aa-8ea9-ad684b2001b3",
         "questionNumber": 42,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The number of non-negative integers} 'n' \\text{satisfying }n^2 = p + q \\text{and }n^3 = p^2 + q^2 \\text{where }p \\text{and }q \\text{are integers}. $",
+        "text": "$ \\text{The number of non-negative integers }'n'\\text{ satisfying }n^2 =\\text{ }p\\text{ }+\\text{ }q\\text{ and }n^3 =\\text{ }p^2 +\\text{ }q^2\\text{ where }p\\text{ and }q\\text{ are integers}. $",
         "options": [
-          "$2$",
-          "$3$",
-          "$4$",
-          "$Infinite$"
+          "$ 2 $",
+          "$ 3 $",
+          "$ 4 $",
+          "$ \\text{Infinite} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19739,12 +19739,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "915407ed-5d62-4fd0-9a17-d3e35b938436",
         "questionNumber": 43,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Concentric circles of radii} 1, 2, 3, \\dots, 100 \\text{cms are drawn}. \\text{The interior of the smallest circle is coloured red and the angular regions are coloured alternately green and red}, \\text{so that no two adjacent regions are of the same colour}. \\text{The total area of the green regions in sq}. \\text{cm is equals to}: $",
+        "text": "$ \\text{Concentric circles of radii }1, 2, 3, \\dots, 100\\text{ cms are drawn}.\\text{ The interior of the smallest circle is coloured red and the angular regions are coloured alternately green and red},\\text{ so that no two adjacent regions are of the same colour}.\\text{ The total area of the green regions in sq}.\\text{ cm is equals to}: $",
         "options": [
-          "$1000\\pi$",
-          "$5050\\pi$",
-          "$4950\\pi$",
-          "$5151\\pi$"
+          "$ 1000\\pi $",
+          "$ 5050\\pi $",
+          "$ 4950\\pi $",
+          "$ 5151\\pi $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19753,12 +19753,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "044bb37e-27ad-4d7f-a8e1-8cb3053488c1",
         "questionNumber": 44,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} \\log_2 4, \\log_{\\sqrt{2}} 8 \\text{and} \\log_3 9^{k-1} \\text{are consecutive terms of a geometric sequence}, \\text{then the number of integers that satisfy the system of inequalities }x^2 - x > 6 \\text{and} |x| < k^2 \\text{is}: $",
+        "text": "$ \\text{If }\\log_2 4, \\log_{\\sqrt{2}} 8\\text{ and }\\log_3 9^{k-1}\\text{ are consecutive terms of a geometric sequence},\\text{ then the number of integers that satisfy the system of inequalities }x^2 -\\text{ }x\\text{ }> 6\\text{ and }|x| <\\text{ }k^2\\text{ is}: $",
         "options": [
-          "$193$",
-          "$194$",
-          "$195$",
-          "$196$"
+          "$ 193 $",
+          "$ 194 $",
+          "$ 195 $",
+          "$ 196 $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19767,12 +19767,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "e1f6693c-11e6-4e91-9f26-164bed564fa4",
         "questionNumber": 45,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let} T_r \\text{be the }r^{\\text{th}} \\text{term of an A}.P. \\text{whose first term is} -\\dfrac{1}{2} \\text{and common difference is} 1, \\text{then} \\sum_{r=1}^n \\sqrt{1 + T_r T_{r+1} T_{r+2} T_{r+3}} = $",
+        "text": "$ \\text{Let }T_r\\text{ be the }r^{\\text{th}}\\text{ term of an A}.P.\\text{ whose first term is }-\\dfrac{1}{2}\\text{ and common difference is }1,\\text{ then }\\sum_{r=1}^n\\text{ }\\sqrt{1 + T_r T_{r+1} T_{r+2} T_{r+3}} = $",
         "options": [
-          "$\\dfrac{n(n + 1)(2n + 1)}{6} - \\dfrac{5n}{4}$",
-          "$\\dfrac{n(n + 1)(2n + 1)}{6} - \\dfrac{5n}{4} + \\dfrac{1}{4}$",
-          "$\\dfrac{n(n + 1)(2n + 1)}{6} - \\dfrac{5n}{4} + \\dfrac{1}{2}$",
-          "$\\dfrac{n(n + 1)(2n + 1)}{12} - \\dfrac{5n}{8} + 1$"
+          "$ \\dfrac{n(n\\text{ }+ 1)(2n + 1)}{6} - \\dfrac{5n}{4} $",
+          "$ \\dfrac{n(n\\text{ }+ 1)(2n + 1)}{6} - \\dfrac{5n}{4} + \\dfrac{1}{4} $",
+          "$ \\dfrac{n(n\\text{ }+ 1)(2n + 1)}{6} - \\dfrac{5n}{4} + \\dfrac{1}{2} $",
+          "$ \\dfrac{n(n\\text{ }+ 1)(2n + 1)}{12} - \\dfrac{5n}{8} + 1 $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19781,12 +19781,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "14385e75-ddc4-4b5f-9507-ca4a18b507bc",
         "questionNumber": 46,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} \\sum_{r=1}^n T_r = \\dfrac{n(n + 1)(n + 2)}{3}, \\text{then} \\lim_{n \\to \\infty} \\sum_{r=1}^n \\dfrac{2008}{T_r} = $",
+        "text": "$ \\text{If }\\sum_{r=1}^n\\text{ }T_r = \\dfrac{n(n\\text{ }+ 1)(n\\text{ }+ 2)}{3},\\text{ then }\\lim_{n\\text{ }\\to \\infty} \\sum_{r=1}^n\\text{ }\\dfrac{2008}{T_r} = $",
         "options": [
-          "$2008$",
-          "$3012$",
-          "$4016$",
-          "$8032$"
+          "$ 2008 $",
+          "$ 3012 $",
+          "$ 4016 $",
+          "$ 8032 $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19795,12 +19795,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f2deb2be-0eb8-44fe-b47b-7939f38cf659",
         "questionNumber": 47,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the infinite series}, 1^2 - \\dfrac{2^2}{5} + \\dfrac{3^2}{5^2} - \\dfrac{4^2}{5^3} + \\dfrac{5^2}{5^4} - \\dfrac{6^2}{5^5} + \\dots \\text{is}: $",
+        "text": "$ \\text{The sum of the infinite series}, 1^2 - \\dfrac{2^2}{5} + \\dfrac{3^2}{5^2} - \\dfrac{4^2}{5^3} + \\dfrac{5^2}{5^4} - \\dfrac{6^2}{5^5} + \\dots\\text{ is}: $",
         "options": [
-          "$\\dfrac{1}{2}$",
-          "$\\dfrac{25}{24}$",
-          "$\\dfrac{25}{54}$",
-          "$\\dfrac{125}{252}$"
+          "$ \\dfrac{1}{2} $",
+          "$ \\dfrac{25}{24} $",
+          "$ \\dfrac{25}{54} $",
+          "$ \\dfrac{125}{252} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19809,12 +19809,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "aed32228-7aca-46fd-b645-bc2d0f93e1f1",
         "questionNumber": 48,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The absolute term in }P(x) = \\sum_{r=1}^n \\left(x - \\dfrac{1}{r}\\right)\\left(x - \\dfrac{1}{r+1}\\right)\\left(x - \\dfrac{1}{r+2}\\right) \\text{as }n \\text{approaches to infinity is}: $",
+        "text": "$ \\text{The absolute term in }P(x) = \\sum_{r=1}^n\\text{ }\\left(x\\text{ }- \\dfrac{1}{r}\\right)\\left(x\\text{ }- \\dfrac{1}{r+1}\\right)\\left(x\\text{ }- \\dfrac{1}{r+2}\\right)\\text{ as }n\\text{ approaches to infinity is}: $",
         "options": [
-          "$\\dfrac{1}{2}$",
-          "$\\dfrac{-1}{2}$",
-          "$\\dfrac{1}{4}$",
-          "$\\dfrac{-1}{4}$"
+          "$ \\dfrac{1}{2} $",
+          "$ \\dfrac{-1}{2} $",
+          "$ \\dfrac{1}{4} $",
+          "$ \\dfrac{-1}{4} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19823,12 +19823,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "6e51f87b-d11d-4c20-b1ac-e0616974c613",
         "questionNumber": 49,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let a}, b, c \\text{are positive real numbers such that }p = \\text{a}^2b + \\text{ab}^2 - \\text{a}^2c - \\text{ac}^2; q = b^2c + \\text{bc}^2 - \\text{a}^2b - \\text{ab}^2 \\text{and }r = \\text{ac}^2 + \\text{a}^2c - \\text{cb}^2 - \\text{bc}^2 \\text{and the quadratic equation px}^2 + \\text{qx} + r = 0 \\text{has equal roots}; \\text{then a}, b, c \\text{are in}: $",
+        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c\\text{ are positive real numbers such that }p\\text{ }=\\text{ a}^2b +\\text{ ab}^2 -\\text{ a}^2c -\\text{ ac}^2;\\text{ }q\\text{ }=\\text{ }b^2c +\\text{ bc}^2 -\\text{ a}^2b -\\text{ ab}^2\\text{ and }r\\text{ }=\\text{ ac}^2 +\\text{ a}^2c -\\text{ cb}^2 -\\text{ bc}^2\\text{ and the quadratic equation px}^2 +\\text{ qx }+\\text{ }r\\text{ }= 0\\text{ has equal roots};\\text{ then a},\\text{ }b,\\text{ }c\\text{ are in}: $",
         "options": [
-          "$A.P.$",
-          "$G.P.$",
-          "$H.P.$",
-          "$None of these$"
+          "$ \\text{A}.P. $",
+          "$ G.P. $",
+          "$ H.P. $",
+          "$ \\text{None of these} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19837,12 +19837,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "961579dd-42ba-42d5-865f-2dd7845697d1",
         "questionNumber": 50,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} T_k \\text{denotes the }k^{\\text{th}} \\text{term of an }H.P. \\text{from the begining and} \\dfrac{T_2}{T_6} = 9, \\text{then} \\dfrac{T_{10}}{T_4} \\text{equals}: $",
+        "text": "$ \\text{If }T_k\\text{ denotes the }k^{\\text{th}}\\text{ term of an }H.P.\\text{ from the begining and }\\dfrac{T_2}{T_6} = 9,\\text{ then }\\dfrac{T_{10}}{T_4}\\text{ equals}: $",
         "options": [
-          "$\\dfrac{17}{5}$",
-          "$\\dfrac{5}{17}$",
-          "$\\dfrac{7}{19}$",
-          "$\\dfrac{19}{7}$"
+          "$ \\dfrac{17}{5} $",
+          "$ \\dfrac{5}{17} $",
+          "$ \\dfrac{7}{19} $",
+          "$ \\dfrac{19}{7} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19851,12 +19851,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "58e3ab3d-4de5-403a-a81e-e2876fd1fa08",
         "questionNumber": 51,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Number of terms common to the two sequences} 17, 21, 25, \\dots, 417 \\text{and} 16, 21, 26, \\dots, 466 \\text{is}: $",
+        "text": "$ \\text{Number of terms common to the two sequences }17, 21, 25, \\dots, 417\\text{ and }16, 21, 26, \\dots, 466\\text{ is}: $",
         "options": [
-          "$19$",
-          "$20$",
-          "$21$",
-          "$22$"
+          "$ 19 $",
+          "$ 20 $",
+          "$ 21 $",
+          "$ 22 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19865,12 +19865,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "291162f3-a5c5-4bba-a561-d8046b624f78",
         "questionNumber": 52,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the series} 1 + \\dfrac{2}{3} + \\dfrac{1}{3^2} + \\dfrac{2}{3^3} + \\dfrac{1}{3^4} + \\dfrac{2}{3^5} + \\dfrac{1}{3^6} + \\dfrac{2}{3^7} + \\dots \\text{upto infinite terms is equal to}: $",
+        "text": "$ \\text{The sum of the series }1 + \\dfrac{2}{3} + \\dfrac{1}{3^2} + \\dfrac{2}{3^3} + \\dfrac{1}{3^4} + \\dfrac{2}{3^5} + \\dfrac{1}{3^6} + \\dfrac{2}{3^7} + \\dots\\text{ upto infinite terms is equal to}: $",
         "options": [
-          "$\\dfrac{15}{8}$",
-          "$\\dfrac{8}{15}$",
-          "$\\dfrac{27}{8}$",
-          "$\\dfrac{21}{8}$"
+          "$ \\dfrac{15}{8} $",
+          "$ \\dfrac{8}{15} $",
+          "$ \\dfrac{27}{8} $",
+          "$ \\dfrac{21}{8} $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19879,12 +19879,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "0952fabd-556c-4237-abee-b594f251f513",
         "questionNumber": 53,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The coefficient of }x^8 \\text{in the polynomial} (x-1)(x-2)(x-3)\\dots(x-10) \\text{is}: $",
+        "text": "$ \\text{The coefficient of }x^8\\text{ in the polynomial }(x-1)(x-2)(x-3)\\dots(x-10)\\text{ is}: $",
         "options": [
-          "$2640$",
-          "$1320$",
-          "$1370$",
-          "$2740$"
+          "$ 2640 $",
+          "$ 1320 $",
+          "$ 1370 $",
+          "$ 2740 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19893,12 +19893,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "8aaf972a-263f-46d3-b127-9a464c659dcd",
         "questionNumber": 54,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let} \\alpha = \\lim_{n \\to \\infty} \\dfrac{(1^3 - 1^2) + (2^3 - 2^2) + \\dots + (n^3 - n^2)}{n^4}, \\text{then} \\alpha \\text{is equal to}: $",
+        "text": "$ \\text{Let }\\alpha = \\lim_{n\\text{ }\\to \\infty} \\dfrac{(1^3 - 1^2) + (2^3 - 2^2) + \\dots + (n^3 -\\text{ }n^2)}{n^4},\\text{ then }\\alpha\\text{ is equal to}: $",
         "options": [
-          "$\\dfrac{1}{3}$",
-          "$\\dfrac{1}{4}$",
-          "$\\dfrac{1}{2}$",
-          "$non-existent$"
+          "$ \\dfrac{1}{3} $",
+          "$ \\dfrac{1}{4} $",
+          "$ \\dfrac{1}{2} $",
+          "$ \\text{non-existent} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19907,12 +19907,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "96941b9e-6cc6-4cac-a88c-8db4204a37d4",
         "questionNumber": 55,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} 16x^4 - 32x^3 + \\text{ax}^2 + \\text{bx} + 1 = 0, \\text{a}, b \\in R \\text{has positive real roots only}, \\text{then a} - b \\text{is equal to}: $",
+        "text": "$ \\text{If }16x^4 - 32x^3 +\\text{ ax}^2 +\\text{ bx }+ 1 = 0,\\text{ a},\\text{ }b\\text{ }\\in\\text{ }R\\text{ has positive real roots only},\\text{ then a }-\\text{ }b\\text{ is equal to}: $",
         "options": [
-          "$-32$",
-          "$32$",
-          "$49$",
-          "$-49$"
+          "$ -32 $",
+          "$ 32 $",
+          "$ 49 $",
+          "$ -49 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19921,12 +19921,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "58cfa92a-cd93-47f2-a4cf-f5499629e248",
         "questionNumber": 56,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If ABC is a triangle and} \\tan\\dfrac{\\text{A}}{2}, \\tan\\dfrac{B}{2}, \\tan\\dfrac{C}{2} \\text{are in }H.P., \\text{then the minimum value of} \\cot\\dfrac{B}{2} = $",
+        "text": "$ \\text{If ABC is a triangle and }\\tan\\dfrac{\\text{A}}{2}, \\tan\\dfrac{B}{2}, \\tan\\dfrac{C}{2}\\text{ are in }H.P.,\\text{ then the minimum value of }\\cot\\dfrac{B}{2} = $",
         "options": [
-          "$\\sqrt{3}$",
-          "$1$",
-          "$\\dfrac{1}{\\sqrt{2}}$",
-          "$\\dfrac{1}{\\sqrt{3}}$"
+          "$ \\sqrt{3} $",
+          "$ 1 $",
+          "$ \\dfrac{1}{\\sqrt{2}} $",
+          "$ \\dfrac{1}{\\sqrt{3}} $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -19935,12 +19935,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "b74615a8-7a29-47a8-9677-4b168e666468",
         "questionNumber": 57,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} \\alpha \\text{and} \\beta \\text{are the roots of the quadratic equation} 4x^2 + 2x - 1 = 0 \\text{then the value of} \\sum_{r=1}^\\infty (\\alpha^r + \\beta^r) \\text{is}: $",
+        "text": "$ \\text{If }\\alpha\\text{ and }\\beta\\text{ are the roots of the quadratic equation }4x^2 + 2x - 1 = 0\\text{ then the value of }\\sum_{r=1}^\\infty (\\alpha^r\\text{ }+ \\beta^r)\\text{ is}: $",
         "options": [
-          "$2$",
-          "$3$",
-          "$6$",
-          "$0$"
+          "$ 2 $",
+          "$ 3 $",
+          "$ 6 $",
+          "$ 0 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19949,12 +19949,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "bb661f34-171a-4bbc-a22b-c75f181b16be",
         "questionNumber": 58,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the series} 2^2 + 2(4)^2 + 3(6)^2 + \\dots \\text{upto} 10 \\text{terms is equal to}: $",
+        "text": "$ \\text{The sum of the series }2^2 + 2(4)^2 + 3(6)^2 + \\dots\\text{ upto }10\\text{ terms is equal to}: $",
         "options": [
-          "$11300$",
-          "$12100$",
-          "$12300$",
-          "$11200$"
+          "$ 11300 $",
+          "$ 12100 $",
+          "$ 12300 $",
+          "$ 11200 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -19963,12 +19963,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "e5d3adf6-9e02-4012-baf6-e933608f89e8",
         "questionNumber": 59,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If a and }b \\text{are positive real numbers such that a} + b = 6, \\text{then the minimum value of} \\left(\\dfrac{4}{\\text{a}} + \\dfrac{1}{b}\\right) \\text{is equal to}: $",
+        "text": "$ \\text{If a and }b\\text{ are positive real numbers such that a }+\\text{ }b\\text{ }= 6,\\text{ then the minimum value of }\\left(\\dfrac{4}{\\text{a}} + \\dfrac{1}{b}\\right)\\text{ is equal to}: $",
         "options": [
-          "$\\dfrac{2}{3}$",
-          "$\\dfrac{1}{3}$",
-          "$1$",
-          "$\\dfrac{3}{2}$"
+          "$ \\dfrac{2}{3} $",
+          "$ \\dfrac{1}{3} $",
+          "$ 1 $",
+          "$ \\dfrac{3}{2} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -19977,12 +19977,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "792d92ae-57a5-4e9a-8ddb-c82573ae46fe",
         "questionNumber": 60,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The first term of an infinite }G.P. \\text{is the value of }x \\text{satisfying the equation} \\log_4(4^x - 15) + x - 2 = 0 \\text{and the common ratio is} \\cos\\left(\\dfrac{2011\\pi}{3}\\right). \\text{The sum of }G.P. \\text{is}: $",
+        "text": "$ \\text{The first term of an infinite }G.P.\\text{ is the value of }x\\text{ satisfying the equation }\\log_4(4^x\\text{ }- 15) +\\text{ }x\\text{ }- 2 = 0\\text{ and the common ratio is }\\cos\\left(\\dfrac{2011\\pi}{3}\\right).\\text{ The sum of }G.P.\\text{ is}: $",
         "options": [
-          "$1$",
-          "$\\dfrac{4}{3}$",
-          "$4$",
-          "$2$"
+          "$ 1 $",
+          "$ \\dfrac{4}{3} $",
+          "$ 4 $",
+          "$ 2 $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -19991,12 +19991,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "fe52563f-f1e8-44b2-9cf2-08ee644bd4e2",
         "questionNumber": 61,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let a}, b, c \\text{be positive numbers}, \\text{then the minimum value of} \\dfrac{\\text{a}^4 + b^4 + c^2}{abc} \\text{is}: $",
+        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c\\text{ be positive numbers},\\text{ then the minimum value of }\\dfrac{\\text{a}^4 +\\text{ }b^4 +\\text{ }c^2}{abc}\\text{ is}: $",
         "options": [
-          "$4$",
-          "$2^{3/4}$",
-          "$\\sqrt{2}$",
-          "$2\\sqrt{2}$"
+          "$ 4 $",
+          "$ 2^{3/4} $",
+          "$ \\sqrt{2} $",
+          "$ 2\\sqrt{2} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -20005,12 +20005,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "049cd23f-429c-43a1-89ac-6e9aa1a6b8a0",
         "questionNumber": 62,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If xy} = 1; \\text{then minimum value of }x^2 + y^2 \\text{is}: $",
+        "text": "$ \\text{If xy }= 1;\\text{ then minimum value of }x^2 +\\text{ }y^2\\text{ is}: $",
         "options": [
-          "$1$",
-          "$2$",
-          "$\\sqrt{2}$",
-          "$4$"
+          "$ 1 $",
+          "$ 2 $",
+          "$ \\sqrt{2} $",
+          "$ 4 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -20019,12 +20019,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "b58a2417-b1d0-405c-bad8-1fdd83e23df9",
         "questionNumber": 63,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Find the value of} \\dfrac{2}{1^3} + \\dfrac{6}{1^3 + 2^3} + \\dfrac{12}{1^3 + 2^3 + 3^3} + \\dfrac{20}{1^3 + 2^3 + 3^3 + 4^3} + \\dots \\text{upto} 60 \\text{terms}: $",
+        "text": "$ \\text{Find the value of }\\dfrac{2}{1^3} + \\dfrac{6}{1^3 + 2^3} + \\dfrac{12}{1^3 + 2^3 + 3^3} + \\dfrac{20}{1^3 + 2^3 + 3^3 + 4^3} + \\dots\\text{ upto }60\\text{ terms}: $",
         "options": [
-          "$2$",
-          "$\\dfrac{1}{2}$",
-          "$4$",
-          "$\\dfrac{1}{4}$"
+          "$ 2 $",
+          "$ \\dfrac{1}{2} $",
+          "$ 4 $",
+          "$ \\dfrac{1}{4} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20033,12 +20033,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "cbfef1f8-aee3-4eb5-8bc4-b560b73a4384",
         "questionNumber": 64,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Evaluate}: \\sum_{n=1}^\\infty \\dfrac{1}{(n + 1)(n + 2)(n + 3)\\dots(n + k)} $",
+        "text": "$ \\text{Evaluate}: \\sum_{n=1}^\\infty \\dfrac{1}{(n\\text{ }+ 1)(n\\text{ }+ 2)(n\\text{ }+ 3)\\dots(n\\text{ }+\\text{ }k)} $",
         "options": [
-          "$\\dfrac{1}{(k - 1)(k - 1)!}$",
-          "$\\dfrac{1}{k \\cdot k!}$",
-          "$\\dfrac{1}{(k - 1)k!}$",
-          "$\\dfrac{1}{k!}$"
+          "$ \\dfrac{1}{(k\\text{ }- 1)(k\\text{ }- 1)!} $",
+          "$ \\dfrac{1}{k\\text{ }\\cdot\\text{ }k!} $",
+          "$ \\dfrac{1}{(k\\text{ }- 1)k!} $",
+          "$ \\dfrac{1}{k!} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20047,12 +20047,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "0271152b-0756-4fa4-866e-376c4d3cd8f5",
         "questionNumber": 65,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Consider two positive numbers a and }b. \\text{If arithmetic mean of a and }b \\text{exceeds their geometric mean by} 3/2 \\text{and geometric mean of a and }b \\text{exceeds their harmonic mean by} 6/5 \\text{then the value of a}^2 + b^2 \\text{will be}: $",
+        "text": "$ \\text{Consider two positive numbers a and }b.\\text{ If arithmetic mean of a and }b\\text{ exceeds their geometric mean by }3/2\\text{ and geometric mean of a and }b\\text{ exceeds their harmonic mean by }6/5\\text{ then the value of a}^2 +\\text{ }b^2\\text{ will be}: $",
         "options": [
-          "$150$",
-          "$153$",
-          "$156$",
-          "$159$"
+          "$ 150 $",
+          "$ 153 $",
+          "$ 156 $",
+          "$ 159 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -20061,12 +20061,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "a2ebc2c2-9a24-4f0c-a94f-559fdd26a440",
         "questionNumber": 66,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Sum of first} 10 \\text{terms of the series}, S = \\dfrac{7}{2^2 \\cdot 5^2} + \\dfrac{13}{5^2 \\cdot 8^2} + \\dfrac{19}{8^2 \\cdot 11^2} + \\dots \\text{is}: $",
+        "text": "$ \\text{Sum of first }10\\text{ terms of the series},\\text{ }S\\text{ }= \\dfrac{7}{2^2 \\cdot 5^2} + \\dfrac{13}{5^2 \\cdot 8^2} + \\dfrac{19}{8^2 \\cdot 11^2} + \\dots\\text{ is}: $",
         "options": [
-          "$\\dfrac{255}{1024}$",
-          "$\\dfrac{88}{1024}$",
-          "$\\dfrac{264}{1024}$",
-          "$\\dfrac{85}{1024}$"
+          "$ \\dfrac{255}{1024} $",
+          "$ \\dfrac{88}{1024} $",
+          "$ \\dfrac{264}{1024} $",
+          "$ \\dfrac{85}{1024} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -20075,12 +20075,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "3c859fee-bb04-46d0-9c54-ab328435023e",
         "questionNumber": 67,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\sum_{r=1}^{10} \\dfrac{r}{1 - 3r^2 + r^4} = $",
+        "text": "$ \\sum_{r=1}^{10} \\dfrac{r}{1 - 3r^2 +\\text{ }r^4} = $",
         "options": [
-          "$-\\dfrac{50}{109}$",
-          "$-\\dfrac{54}{109}$",
-          "$-\\dfrac{55}{111}$",
-          "$-\\dfrac{55}{109}$"
+          "$ -\\dfrac{50}{109} $",
+          "$ -\\dfrac{54}{109} $",
+          "$ -\\dfrac{55}{111} $",
+          "$ -\\dfrac{55}{109} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -20089,12 +20089,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "c73d72ab-a533-4e4c-9e5e-706ea95dd558",
         "questionNumber": 68,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let }r^{\\text{th}} \\text{term} t_r \\text{of a series is given by} t_r = \\dfrac{r}{1 + r^2 + r^4}. \\text{Then} \\lim_{n \\to \\infty} \\sum_{r=1}^n t_r \\text{is equal to}: $",
+        "text": "$ \\text{Let }r^{\\text{th}}\\text{ term }t_r\\text{ of a series is given by }t_r = \\dfrac{r}{1 +\\text{ }r^2 +\\text{ }r^4}.\\text{ Then }\\lim_{n\\text{ }\\to \\infty} \\sum_{r=1}^n\\text{ }t_r\\text{ is equal to}: $",
         "options": [
-          "$\\dfrac{1}{2}$",
-          "$1$",
-          "$2$",
-          "$\\dfrac{1}{4}$"
+          "$ \\dfrac{1}{2} $",
+          "$ 1 $",
+          "$ 2 $",
+          "$ \\dfrac{1}{4} $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -20103,12 +20103,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "e9b0f4f3-6e19-4fef-b68e-7786f125fce6",
         "questionNumber": 69,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The sum of the series} 1 + \\dfrac{4}{5} + \\dfrac{7}{5^2} + \\dfrac{10}{5^3} + \\dots \\text{to infinite terms}, \\text{is}: $",
+        "text": "$ \\text{The sum of the series }1 + \\dfrac{4}{5} + \\dfrac{7}{5^2} + \\dfrac{10}{5^3} + \\dots\\text{ to infinite terms},\\text{ is}: $",
         "options": [
-          "$\\dfrac{31}{12}$",
-          "$\\dfrac{41}{16}$",
-          "$\\dfrac{45}{16}$",
-          "$\\dfrac{35}{16}$"
+          "$ \\dfrac{31}{12} $",
+          "$ \\dfrac{41}{16} $",
+          "$ \\dfrac{45}{16} $",
+          "$ \\dfrac{35}{16} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -20117,12 +20117,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "be2f3063-c51c-4ffb-8d06-566ac085338e",
         "questionNumber": 70,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The third term of a }G.P. \\text{is} 2. \\text{Then the product of the first five terms}, \\text{is}: $",
+        "text": "$ \\text{The third term of a }G.P.\\text{ is }2.\\text{ Then the product of the first five terms},\\text{ is}: $",
         "options": [
-          "$2^3$",
-          "$2^4$",
-          "$2^5$",
-          "$none of these$"
+          "$ 2^3 $",
+          "$ 2^4 $",
+          "$ 2^5 $",
+          "$ \\text{none of these} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20131,12 +20131,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "78072c66-01a8-4ef4-afff-1e334d9a5a49",
         "questionNumber": 71,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If} x_1, x_2, x_3, \\dots, x_{2n} \\text{are in A}.P., \\text{then} \\sum_{r=1}^{2n} (-1)^{r+1} x_r^2 \\text{is equal to}: $",
+        "text": "$ \\text{If }x_1, x_2, x_3, \\dots, x_{2n}\\text{ are in A}.P.,\\text{ then }\\sum_{r=1}^{2n} (-1)^{r+1} x_r^2\\text{ is equal to}: $",
         "options": [
-          "$\\dfrac{n}{(2n - 1)} (x_1^2 - x_{2n}^2)$",
-          "$\\dfrac{2n}{(2n - 1)} (x_1^2 - x_{2n}^2)$",
-          "$\\dfrac{n}{n - 1} (x_1^2 - x_{2n}^2)$",
-          "$\\dfrac{n}{2n + 1} (x_1^2 - x_{2n}^2)$"
+          "$ \\dfrac{n}{(2n - 1)} (x_1^2 - x_{2n}^2) $",
+          "$ \\dfrac{2n}{(2n - 1)} (x_1^2 - x_{2n}^2) $",
+          "$ \\dfrac{n}{n\\text{ }- 1} (x_1^2 - x_{2n}^2) $",
+          "$ \\dfrac{n}{2n + 1} (x_1^2 - x_{2n}^2) $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -20145,12 +20145,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "4df225a2-8539-40bb-b3aa-cddf1912eb02",
         "questionNumber": 72,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Let two numbers have arithmetic mean} 9 \\text{and geometric mean} 4. \\text{Then these numbers are roots of the equation}: $",
+        "text": "$ \\text{Let two numbers have arithmetic mean }9\\text{ and geometric mean }4.\\text{ Then these numbers are roots of the equation}: $",
         "options": [
-          "$x^2 + 18x + 16 = 0$",
-          "$x^2 - 18x - 16 = 0$",
-          "$x^2 + 18x - 16 = 0$",
-          "$x^2 - 18x + 16 = 0$"
+          "$ x^2 + 18x + 16 = 0 $",
+          "$ x^2 - 18x - 16 = 0 $",
+          "$ x^2 + 18x - 16 = 0 $",
+          "$ x^2 - 18x + 16 = 0 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -20159,12 +20159,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "5bee10bc-1602-4914-a57a-53e73699d968",
         "questionNumber": 73,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{If }p \\text{and }q \\text{are positive real numbers such that }p^2 + q^2 = 1, \\text{then the maximum value of} (p + q) \\text{is}: $",
+        "text": "$ \\text{If }p\\text{ and }q\\text{ are positive real numbers such that }p^2 +\\text{ }q^2 = 1,\\text{ then the maximum value of }(p\\text{ }+\\text{ }q)\\text{ is}: $",
         "options": [
-          "$2$",
-          "$\\dfrac{1}{2}$",
-          "$\\dfrac{1}{\\sqrt{2}}$",
-          "$\\sqrt{2}$"
+          "$ 2 $",
+          "$ \\dfrac{1}{2} $",
+          "$ \\dfrac{1}{\\sqrt{2}} $",
+          "$ \\sqrt{2} $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -20173,12 +20173,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "3d7ce594-07ac-4a9f-8abe-2c2c561f1ba3",
         "questionNumber": 74,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{A person has to count} 4500 \\text{currency notes}. \\text{Let} a_n \\text{denote the number of notes he counts in the }n^{\\text{th}} \\text{minute}. \\text{If} a_1 = a_2 = \\dots = a_{10} = 150 \\text{and} a_{10}, a_{11}, a_{12}, \\dots \\text{are in A}.P. \\text{with common difference} -2, \\text{then the time taken by him to count all notes is}: $",
+        "text": "$ \\text{A person has to count }4500\\text{ currency notes}.\\text{ Let }a_n\\text{ denote the number of notes he counts in the }n^{\\text{th}}\\text{ minute}.\\text{ If }a_1 = a_2 = \\dots = a_{10} = 150\\text{ and }a_{10}, a_{11}, a_{12}, \\dots\\text{ are in A}.P.\\text{ with common difference }-2,\\text{ then the time taken by him to count all notes is}: $",
         "options": [
-          "$34 minutes$",
-          "$24 minutes$",
-          "$125 minutes$",
-          "$35 minutes$"
+          "$ 34\\text{ minutes} $",
+          "$ 24\\text{ minutes} $",
+          "$ 125\\text{ minutes} $",
+          "$ 35\\text{ minutes} $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -20187,12 +20187,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "27093deb-f2e2-4ea3-9668-8c994f6d2a06",
         "questionNumber": 75,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{A non constant arithmetic progression has common difference }d \\text{and first term is} (1 - \\text{ad}). \\text{If the sum of the first} 20 \\text{terms is} 20, \\text{then the value of a is equal to}: $",
+        "text": "$ \\text{A non constant arithmetic progression has common difference }d\\text{ and first term is }(1 -\\text{ ad}).\\text{ If the sum of the first }20\\text{ terms is }20,\\text{ then the value of a is equal to}: $",
         "options": [
-          "$\\dfrac{2}{19}$",
-          "$\\dfrac{19}{2}$",
-          "$\\dfrac{2}{9}$",
-          "$\\dfrac{9}{2}$"
+          "$ \\dfrac{2}{19} $",
+          "$ \\dfrac{19}{2} $",
+          "$ \\dfrac{2}{9} $",
+          "$ \\dfrac{9}{2} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -20201,12 +20201,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "c4c548e3-3923-4891-9827-38004ece38d0",
         "questionNumber": 76,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The value of} \\sum_{n=3}^\\infty \\dfrac{1}{n^5 - 5n^3 + 4n} = $",
+        "text": "$ \\text{The value of }\\sum_{n=3}^\\infty \\dfrac{1}{n^5 - 5n^3 + 4n} = $",
         "options": [
-          "$\\dfrac{1}{120}$",
-          "$\\dfrac{1}{96}$",
-          "$\\dfrac{1}{24}$",
-          "$\\dfrac{1}{144}$"
+          "$ \\dfrac{1}{120} $",
+          "$ \\dfrac{1}{96} $",
+          "$ \\dfrac{1}{24} $",
+          "$ \\dfrac{1}{144} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -20215,12 +20215,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "e8497634-99ce-4614-bd8c-c8d37b4b6afb",
         "questionNumber": 77,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{Find the value of} \\dfrac{2}{1^3} + \\dfrac{6}{1^3 + 2^3} + \\dfrac{12}{1^3 + 2^3 + 3^3} + \\dfrac{20}{1^3 + 2^3 + 3^3 + 4^3} + \\dots \\text{up to infinite terms}: $",
+        "text": "$ \\text{Find the value of }\\dfrac{2}{1^3} + \\dfrac{6}{1^3 + 2^3} + \\dfrac{12}{1^3 + 2^3 + 3^3} + \\dfrac{20}{1^3 + 2^3 + 3^3 + 4^3} + \\dots\\text{ up to infinite terms}: $",
         "options": [
-          "$2$",
-          "$\\dfrac{1}{2}$",
-          "$4$",
-          "$\\dfrac{1}{4}$"
+          "$ 2 $",
+          "$ \\dfrac{1}{2} $",
+          "$ 4 $",
+          "$ \\dfrac{1}{4} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20229,12 +20229,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "e7fd806f-f135-405c-8457-6e6737188465",
         "questionNumber": 78,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The minimum value of the expression} 2^x + 2^{2x+1} + \\dfrac{5}{2^x}, x \\in R \\text{is}: $",
+        "text": "$ \\text{The minimum value of the expression }2^x\\text{ }+ 2^{2x+1} + \\dfrac{5}{2^x},\\text{ }x\\text{ }\\in\\text{ }R\\text{ is}: $",
         "options": [
-          "$7$",
-          "$(7.2)^{1/7}$",
-          "$8$",
-          "$(3.10)^{1/3}$"
+          "$ 7 $",
+          "$ (7.2)^{1/7} $",
+          "$ 8 $",
+          "$ (3.10)^{1/3} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20243,12 +20243,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f7f2cec3-5204-4ca0-8f5d-9f4dd860ffaa",
         "questionNumber": 79,
         "exerciseName": "Exercise-1: Single Choice Problems",
-        "text": "$ \\text{The value of} \\sum_{r=1}^\\infty \\dfrac{(4r + 5) 5^{-r}}{r(5r + 5)} \\text{is}: $",
+        "text": "$ \\text{The value of }\\sum_{r=1}^\\infty \\dfrac{(4r + 5) 5^{-r}}{r(5r + 5)}\\text{ is}: $",
         "options": [
-          "$\\dfrac{1}{5}$",
-          "$\\dfrac{2}{5}$",
-          "$\\dfrac{1}{25}$",
-          "$\\dfrac{2}{25}$"
+          "$ \\dfrac{1}{5} $",
+          "$ \\dfrac{2}{5} $",
+          "$ \\dfrac{1}{25} $",
+          "$ \\dfrac{2}{25} $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -20257,12 +20257,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "74b54241-c0ee-49d8-997a-761af5fa18b3",
         "questionNumber": 1,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If the first and} (2n - 1)^{\\text{th}} \\text{terms of an A}.P., G.P. \\text{and }H.P. \\text{with positive terms are equal and their }n^{\\text{th}} \\text{terms are a}, b \\text{and }c \\text{respectively}, \\text{then which of the following options must be correct}: $",
+        "text": "$ \\text{If the first and }(2n - 1)^{\\text{th}}\\text{ terms of an A}.P.,\\text{ }G.P.\\text{ and }H.P.\\text{ with positive terms are equal and their }n^{\\text{th}}\\text{ terms are a},\\text{ }b\\text{ and }c\\text{ respectively},\\text{ then which of the following options must be correct}: $",
         "options": [
-          "$a + c = 2b$",
-          "$a \\ge b \\ge c$",
-          "$\\dfrac{2ac}{a + c} = b$",
-          "$ac = b^2$"
+          "$ \\text{a }+\\text{ }c\\text{ }= 2b $",
+          "$ \\text{a }\\ge\\text{ }b\\text{ }\\ge\\text{ }c $",
+          "$ \\dfrac{2ac}{\\text{a }+\\text{ }c} =\\text{ }b $",
+          "$ \\text{ac }=\\text{ }b^2 $"
         ],
         "answerKeyStr": "b,d",
         "correctOption": -1
@@ -20271,12 +20271,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "a5e3ae51-dfa7-4c81-a387-a8b8eea23320",
         "questionNumber": 2,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Let a}, b, c \\text{are distinct real numbers such that expression ax}^2 + \\text{bx} + c, \\text{bx}^2 + \\text{cx} + \\text{a and cx}^2 + \\text{ax} + b \\text{are always positive then possible value}(s) \\text{of} \\dfrac{\\text{a}^2 + b^2 + c^2}{\\text{ab} + \\text{bc} + \\text{ca}} \\text{may be}: $",
+        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c\\text{ are distinct real numbers such that expression ax}^2 +\\text{ bx }+\\text{ }c,\\text{ bx}^2 +\\text{ cx }+\\text{ a and cx}^2 +\\text{ ax }+\\text{ }b\\text{ are always positive then possible value}(s)\\text{ of }\\dfrac{\\text{a}^2 +\\text{ }b^2 +\\text{ }c^2}{\\text{ab }+\\text{ bc }+\\text{ ca}}\\text{ may be}: $",
         "options": [
-          "$1$",
-          "$2$",
-          "$3$",
-          "$4$"
+          "$ 1 $",
+          "$ 2 $",
+          "$ 3 $",
+          "$ 4 $"
         ],
         "answerKeyStr": "b,c",
         "correctOption": -1
@@ -20285,12 +20285,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "11d26d55-311c-4250-975d-89b6b593250d",
         "questionNumber": 3,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If a}, b, c \\text{are in }H.P., \\text{where a} > c > 0, \\text{then}: $",
+        "text": "$ \\text{If a},\\text{ }b,\\text{ }c\\text{ are in }H.P.,\\text{ where a }>\\text{ }c\\text{ }> 0,\\text{ then}: $",
         "options": [
-          "$b > \\dfrac{a + c}{2}$",
-          "$\\dfrac{1}{a - b} - \\dfrac{1}{b - c} < 0$",
-          "$ac > b^2$",
-          "$bc(1 - a), ac(1 - b), ab(1 - c) are in A.P.$"
+          "$ b\\text{ }> \\dfrac{\\text{a }+\\text{ }c}{2} $",
+          "$ \\dfrac{1}{\\text{a }-\\text{ }b} - \\dfrac{1}{b\\text{ }-\\text{ }c} < 0 $",
+          "$ \\text{ac }>\\text{ }b^2 $",
+          "$ \\text{bc}(1 -\\text{ a}),\\text{ ac}(1 -\\text{ }b),\\text{ ab}(1 -\\text{ }c)\\text{ are in A}.P. $"
         ],
         "answerKeyStr": "b,c,d",
         "correctOption": -1
@@ -20299,12 +20299,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "bb6744d5-f53c-4c57-8231-14e66172e450",
         "questionNumber": 4,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{In an A}.P., \\text{let} T_r \\text{denote }r^{\\text{th}} \\text{term from beginning}, T_p = \\dfrac{1}{q(p+q)}, T_q = \\dfrac{1}{p(p+q)}, \\text{then}: $",
+        "text": "$ \\text{In an A}.P.,\\text{ let }T_r\\text{ denote }r^{\\text{th}}\\text{ term from beginning}, T_p = \\dfrac{1}{q(p+q)}, T_q = \\dfrac{1}{p(p+q)},\\text{ then}: $",
         "options": [
-          "$T_1 = common difference$",
-          "$T_{p+q} = \\dfrac{1}{pq}$",
-          "$T_{pq} = \\dfrac{1}{p+q}$",
-          "$T_{p+q} = \\dfrac{1}{p^2q^2}$"
+          "$ T_1 =\\text{ common difference} $",
+          "$ T_{p+q} = \\dfrac{1}{\\text{pq}} $",
+          "$ T_{\\text{pq}} = \\dfrac{1}{p+q} $",
+          "$ T_{p+q} = \\dfrac{1}{p^2q^2} $"
         ],
         "answerKeyStr": "a,b,c",
         "correctOption": -1
@@ -20313,12 +20313,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "2b6dfb56-43fb-4df5-99de-d0711e6cca6c",
         "questionNumber": 5,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Which of the following statement}(s) \\text{is}(\\text{are}) \\text{correct}? $",
+        "text": "$ \\text{Which of the following statement}(s)\\text{ is}(\\text{are})\\text{ correct}? $",
         "options": [
-          "$Sum of the reciprocal of all the n harmonic means inserted between a and b is equal to n times the harmonic mean between two given numbers a and b.$",
-          "$Sum of the cubes of first n natural number is equal to square of the sum of the first n natural numbers.$",
-          "$If a, A_1, A_2, A_3, \\dots, A_{2n}, b are in A.P. then \\sum_{i=1}^{2n} A_i = n(a + b).$",
-          "$If the first term of the geometric progression g_1, g_2, g_3, \\dots, \\infty is unity, then the value of the common ratio of the progression such that (4g_2 + 5g_3) is minimum equals \\dfrac{2}{5}.$"
+          "$ \\text{Sum of the reciprocal of all the }n\\text{ harmonic means inserted between a and }b\\text{ is equal to }n\\text{ times the harmonic mean between two given numbers a and }b. $",
+          "$ \\text{Sum of the cubes of first }n\\text{ natural number is equal to square of the sum of the first }n\\text{ natural numbers}. $",
+          "$ \\text{If a}, A_1, A_2, A_3, \\dots, A_{2n},\\text{ }b\\text{ are in A}.P.\\text{ then }\\sum_{i=1}^{2n} A_i =\\text{ }n(\\text{a }+\\text{ }b). $",
+          "$ \\text{If the first term of the geometric progression }g_1, g_2, g_3, \\dots, \\infty\\text{ is unity},\\text{ then the value of the common ratio of the progression such that }(4g_2 + 5g_3)\\text{ is minimum equals }\\dfrac{2}{5}. $"
         ],
         "answerKeyStr": "b,c",
         "correctOption": -1
@@ -20327,12 +20327,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f0b96bbf-2aca-49f0-9895-8c219526fd89",
         "questionNumber": 6,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If a}, b, c \\text{are in} 3 \\text{distinct numbers in }H.P., \\text{a}, b, c > 0, \\text{then}: $",
+        "text": "$ \\text{If a},\\text{ }b,\\text{ }c\\text{ are in }3\\text{ distinct numbers in }H.P.,\\text{ a},\\text{ }b,\\text{ }c\\text{ }> 0,\\text{ then}: $",
         "options": [
-          "$\\dfrac{b + c - a}{a}, \\dfrac{c + a - b}{b}, \\dfrac{a + b - c}{c} are in A.P.$",
-          "$\\dfrac{b + c}{a}, \\dfrac{c + a}{b}, \\dfrac{a + b}{c} are in A.P.$",
-          "$a^5 + c^5 \\ge 2b^5$",
-          "$\\dfrac{a - b}{b - c} = \\dfrac{a}{c}$"
+          "$ \\dfrac{b\\text{ }+\\text{ }c\\text{ }-\\text{ a}}{\\text{a}}, \\dfrac{c\\text{ }+\\text{ a }-\\text{ }b}{b}, \\dfrac{\\text{a }+\\text{ }b\\text{ }-\\text{ }c}{c}\\text{ are in A}.P. $",
+          "$ \\dfrac{b\\text{ }+\\text{ }c}{\\text{a}}, \\dfrac{c\\text{ }+\\text{ a}}{b}, \\dfrac{\\text{a }+\\text{ }b}{c}\\text{ are in A}.P. $",
+          "$ \\text{a}^5 +\\text{ }c^5 \\ge 2b^5 $",
+          "$ \\dfrac{\\text{a }-\\text{ }b}{b\\text{ }-\\text{ }c} = \\dfrac{\\text{a}}{c} $"
         ],
         "answerKeyStr": "a,b,c,d",
         "correctOption": -1
@@ -20341,12 +20341,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "abc727a3-fc08-409d-9716-c4f99ce0acb9",
         "questionNumber": 7,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{All roots of equation }x^5 - 40x^4 + \\alpha x^3 + \\beta x^2 + \\gamma x + \\delta = 0 \\text{are in }G.P. \\text{If the sum of their reciprocals is} 10, \\text{then} \\delta \\text{can be equal to}: $",
+        "text": "$ \\text{All roots of equation }x^5 - 40x^4 + \\alpha\\text{ }x^3 + \\beta\\text{ }x^2 + \\gamma\\text{ }x\\text{ }+ \\delta = 0\\text{ are in }G.P.\\text{ If the sum of their reciprocals is }10,\\text{ then }\\delta\\text{ can be equal to}: $",
         "options": [
-          "$32$",
-          "$-32$",
-          "$\\dfrac{1}{32}$",
-          "$-\\dfrac{1}{32}$"
+          "$ 32 $",
+          "$ -32 $",
+          "$ \\dfrac{1}{32} $",
+          "$ -\\dfrac{1}{32} $"
         ],
         "answerKeyStr": "a,b",
         "correctOption": -1
@@ -20355,12 +20355,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "568f106f-6229-4d06-9495-298f2b01f65b",
         "questionNumber": 8,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Let} a_1, a_2, a_3, \\dots \\text{be a sequence of non-zero real numbers which are in A}.P. \\text{for }k \\in N. \\text{Let} f_k(x) = a_k x^2 + 2a_{k+1} x + a_{k+2} $",
+        "text": "$ \\text{Let }a_1, a_2, a_3, \\dots\\text{ be a sequence of non-zero real numbers which are in A}.P.\\text{ for }k\\text{ }\\in\\text{ }N.\\text{ Let }f_k(x) = a_k\\text{ }x^2 + 2a_{k+1}\\text{ }x\\text{ }+ a_{k+2} $",
         "options": [
-          "$f_k(x) = 0 has real roots for each k \\in N.$",
-          "$Each of f_k(x) = 0 has one root in common.$",
-          "$Non-common roots of f_1(x) = 0, f_2(x) = 0, f_3(x) = 0, \\dots form an A.P.$",
-          "$None of these$"
+          "$ f_k(x) = 0\\text{ has real roots for each }k\\text{ }\\in\\text{ }N. $",
+          "$ \\text{Each of }f_k(x) = 0\\text{ has one root in common}. $",
+          "$ \\text{Non-common roots of }f_1(x) = 0, f_2(x) = 0, f_3(x) = 0, \\dots\\text{ form an A}.P. $",
+          "$ \\text{None of these} $"
         ],
         "answerKeyStr": "a,b",
         "correctOption": -1
@@ -20369,12 +20369,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "464885b1-f2e0-4fa0-90e8-3eea2d2d9ac2",
         "questionNumber": 9,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Given a}, b, c \\text{are in A}.P., b, c, d \\text{are in }G.P. \\text{and }c, d, e \\text{are in }H.P. \\text{If a} = 2 \\text{and }e = 18, \\text{then the possible value of} 'c' \\text{can be}: $",
+        "text": "$ \\text{Given a},\\text{ }b,\\text{ }c\\text{ are in A}.P.,\\text{ }b,\\text{ }c,\\text{ }d\\text{ are in }G.P.\\text{ and }c,\\text{ }d,\\text{ }e\\text{ are in }H.P.\\text{ If a }= 2\\text{ and }e\\text{ }= 18,\\text{ then the possible value of }'c'\\text{ can be}: $",
         "options": [
-          "$9$",
-          "$-6$",
-          "$6$",
-          "$-9$"
+          "$ 9 $",
+          "$ -6 $",
+          "$ 6 $",
+          "$ -9 $"
         ],
         "answerKeyStr": "b,c",
         "correctOption": -1
@@ -20383,12 +20383,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f0b78dc4-9233-4c96-a961-194dab2937f1",
         "questionNumber": 10,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{The number a}, b, c \\text{in that order form a three term A}.P. \\text{and a} + b + c = 60. \\text{The number} (\\text{a} - 2), b, (c + 3) \\text{in that order form a three term }G.P. \\text{All possible values of} (\\text{a}^2 + b^2 + c^2) \\text{is}/\\text{are}: $",
+        "text": "$ \\text{The number a},\\text{ }b,\\text{ }c\\text{ in that order form a three term A}.P.\\text{ and a }+\\text{ }b\\text{ }+\\text{ }c\\text{ }= 60.\\text{ The number }(\\text{a }- 2),\\text{ }b, (c\\text{ }+ 3)\\text{ in that order form a three term }G.P.\\text{ All possible values of }(\\text{a}^2 +\\text{ }b^2 +\\text{ }c^2)\\text{ is}/\\text{are}: $",
         "options": [
-          "$1218$",
-          "$1208$",
-          "$1288$",
-          "$1298$"
+          "$ 1218 $",
+          "$ 1208 $",
+          "$ 1288 $",
+          "$ 1298 $"
         ],
         "answerKeyStr": "b,d",
         "correctOption": -1
@@ -20397,12 +20397,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "41575088-0d9e-46aa-a9cf-ca174a265e3a",
         "questionNumber": 11,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If} (x^2 + x + 1) + (x^2 + 2x + 3) + (x^2 + 3x + 5) + \\dots + (x^2 + 20x + 39) = 4500, \\text{then }x \\text{is equal to}: $",
+        "text": "$ \\text{If }(x^2 +\\text{ }x\\text{ }+ 1) + (x^2 + 2x + 3) + (x^2 + 3x + 5) + \\dots + (x^2 + 20x + 39) = 4500,\\text{ then }x\\text{ is equal to}: $",
         "options": [
-          "$10$",
-          "$-10$",
-          "$20.5$",
-          "$-20.5$"
+          "$ 10 $",
+          "$ -10 $",
+          "$ 20.5 $",
+          "$ -20.5 $"
         ],
         "answerKeyStr": "a,d",
         "correctOption": -1
@@ -20411,12 +20411,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "3ce8f507-6c6c-416f-a3a4-bb89e9587160",
         "questionNumber": 12,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{For} \\Delta \\text{ABC}, \\text{if} 81 + 144a^4 + 16b^4 + 9c^4 = 144abc, (\\text{where notations have their usual meaning}), \\text{then}: $",
+        "text": "$ \\text{For }\\Delta\\text{ ABC},\\text{ if }81 + 144a^4 + 16b^4 + 9c^4 = 144abc, (\\text{where notations have their usual meaning}),\\text{ then}: $",
         "options": [
-          "$a > b > c$",
-          "$A < B < C$",
-          "$Area of \\Delta ABC = \\dfrac{3\\sqrt{3}}{8}$",
-          "$Triangle ABC is right angled$"
+          "$ \\text{a }>\\text{ }b\\text{ }>\\text{ }c $",
+          "$ \\text{A }<\\text{ }B\\text{ }<\\text{ }C $",
+          "$ \\text{Area of }\\Delta\\text{ ABC }= \\dfrac{3\\sqrt{3}}{8} $",
+          "$ \\text{Triangle ABC is right angled} $"
         ],
         "answerKeyStr": "b,c,d",
         "correctOption": -1
@@ -20425,12 +20425,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "3c41a0eb-bc72-4b62-8c89-2a88ef55693f",
         "questionNumber": 13,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Let }x, y, z \\in \\left(0, \\dfrac{\\pi}{2}\\right) \\text{are first three consecutive terms of an arithmetic progression such that} \\cos x + \\cos y + \\cos z = 1 \\text{and} \\sin x + \\sin y + \\sin z = \\dfrac{1}{\\sqrt{2}}, \\text{then which of the following is}/\\text{are correct}? $",
+        "text": "$ \\text{Let }x,\\text{ }y,\\text{ }z\\text{ }\\in \\left(0, \\dfrac{\\pi}{2}\\right)\\text{ are first three consecutive terms of an arithmetic progression such that }\\cos\\text{ }x\\text{ }+ \\cos\\text{ }y\\text{ }+ \\cos\\text{ }z\\text{ }= 1\\text{ and }\\sin\\text{ }x\\text{ }+ \\sin\\text{ }y\\text{ }+ \\sin\\text{ }z\\text{ }= \\dfrac{1}{\\sqrt{2}},\\text{ then which of the following is}/\\text{are correct}? $",
         "options": [
-          "$\\cot y = \\sqrt{2}$",
-          "$\\cos(x - y) = \\dfrac{\\sqrt{3} - \\sqrt{2}}{2\\sqrt{2}}$",
-          "$\\tan 2y = \\dfrac{2\\sqrt{2}}{3}$",
-          "$\\sin(x - y) + \\sin(y - z) = 0$"
+          "$ \\cot\\text{ }y\\text{ }= \\sqrt{2} $",
+          "$ \\cos(x\\text{ }-\\text{ }y) = \\dfrac{\\sqrt{3} - \\sqrt{2}}{2\\sqrt{2}} $",
+          "$ \\tan 2y = \\dfrac{2\\sqrt{2}}{3} $",
+          "$ \\sin(x\\text{ }-\\text{ }y) + \\sin(y\\text{ }-\\text{ }z) = 0 $"
         ],
         "answerKeyStr": "a,b",
         "correctOption": -1
@@ -20439,12 +20439,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "c0f76fbf-1256-4a0c-90af-5ce9a92dde51",
         "questionNumber": 14,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If the numbers} 16, 20, 16, d \\text{form a A}.G.P., \\text{then }d \\text{can be equal to}: $",
+        "text": "$ \\text{If the numbers }16, 20, 16,\\text{ }d\\text{ form a A}.G.P.,\\text{ then }d\\text{ can be equal to}: $",
         "options": [
-          "$3$",
-          "$11$",
-          "$-8$",
-          "$-16$"
+          "$ 3 $",
+          "$ 11 $",
+          "$ -8 $",
+          "$ -16 $"
         ],
         "answerKeyStr": "b",
         "correctOption": -1
@@ -20453,12 +20453,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "4620ec70-7a04-44fa-a7d4-cc1d16134710",
         "questionNumber": 15,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Given} \\dfrac{1000\\dots01 \\text{ (n \\text{zeroes})}}{1000\\dots01 \\text{ (n+1 \\text{zeroes})}} < \\dfrac{1000\\dots01 \\text{ (m \\text{zeroes})}}{1000\\dots01 \\text{ (m+1 \\text{zeroes})}}, \\text{then which of the following is true}: $",
+        "text": "$ \\text{Given }\\dfrac{1000\\dots01 \\text{ (n\\text{ zeroes})}}{1000\\dots01 \\text{ (n+1\\text{ zeroes})}} < \\dfrac{1000\\dots01 \\text{ (m\\text{ zeroes})}}{1000\\dots01 \\text{ (m+1\\text{ zeroes})}},\\text{ then which of the following is true}: $",
         "options": [
-          "$m + 1 < n$",
-          "$m < n$",
-          "$m < n + 1$",
-          "$m > n + 1$"
+          "$ m\\text{ }+ 1 <\\text{ }n $",
+          "$ m\\text{ }<\\text{ }n $",
+          "$ m\\text{ }<\\text{ }n\\text{ }+ 1 $",
+          "$ m\\text{ }>\\text{ }n\\text{ }+ 1 $"
         ],
         "answerKeyStr": "b,c",
         "correctOption": -1
@@ -20467,12 +20467,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "daf376be-7cd6-4411-97c1-d1ac89f0447c",
         "questionNumber": 16,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{If} S_r = \\sqrt{r + \\sqrt{r + \\sqrt{r + \\dots\\infty}}}, r > 0, \\text{then which of the following is}/\\text{are correct}: $",
+        "text": "$ \\text{If }S_r = \\sqrt{r\\text{ }+ \\sqrt{r\\text{ }+ \\sqrt{r\\text{ }+ \\dots\\infty}}},\\text{ }r\\text{ }> 0,\\text{ then which of the following is}/\\text{are correct}: $",
         "options": [
-          "$S_2, S_6, S_{12}, S_{20} are in A.P.$",
-          "$S_4, S_9, S_{16} are irrational$",
-          "$(2S_3 - 1)^2, (2S_4 - 1)^2, (2S_5 - 1)^2 are in A.P.$",
-          "$S_2, S_{12}, S_{56} are in G.P.$"
+          "$ S_2, S_6, S_{12}, S_{20}\\text{ are in A}.P. $",
+          "$ S_4, S_9, S_{16}\\text{ are irrational} $",
+          "$ (2S_3 - 1)^2, (2S_4 - 1)^2, (2S_5 - 1)^2\\text{ are in A}.P. $",
+          "$ S_2, S_{12}, S_{56}\\text{ are in }G.P. $"
         ],
         "answerKeyStr": "a,b,c,d",
         "correctOption": -1
@@ -20481,12 +20481,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "0e355c2c-d4b2-4bec-b7ca-f85f4cf839f2",
         "questionNumber": 17,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Consider the A}.P. 50, 48, 46, 44, \\dots \\text{If} S_n \\text{denotes the sum to }n \\text{terms of this A}.P., \\text{then}: $",
+        "text": "$ \\text{Consider the A}.P. 50, 48, 46, 44, \\dots\\text{ If }S_n\\text{ denotes the sum to }n\\text{ terms of this A}.P.,\\text{ then}: $",
         "options": [
-          "$S_n is maximum for n = 25$",
-          "$the first negative terms is 26^{th} term$",
-          "$the first negative term is 27^{th} term$",
-          "$the maximum value of S_n is 650$"
+          "$ S_n\\text{ is maximum for }n\\text{ }= 25 $",
+          "$ \\text{the first negative terms is }26^{\\text{th}}\\text{ term} $",
+          "$ \\text{the first negative term is }27^{\\text{th}}\\text{ term} $",
+          "$ \\text{the maximum value of }S_n\\text{ is }650 $"
         ],
         "answerKeyStr": "a,c,d",
         "correctOption": -1
@@ -20495,12 +20495,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "c6ba0cba-aa24-4bd7-8e91-89bd176fb18a",
         "questionNumber": 18,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{Let} S_n \\text{be the sum to }n \\text{terms of the series} \\dfrac{3}{1^2} + \\dfrac{5}{1^2 + 2^2} + \\dfrac{7}{1^2 + 2^2 + 3^2} + \\dfrac{9}{1^2 + 2^2 + 3^2 + 4^2} + \\dots \\text{then}: $",
+        "text": "$ \\text{Let }S_n\\text{ be the sum to }n\\text{ terms of the series }\\dfrac{3}{1^2} + \\dfrac{5}{1^2 + 2^2} + \\dfrac{7}{1^2 + 2^2 + 3^2} + \\dfrac{9}{1^2 + 2^2 + 3^2 + 4^2} + \\dots\\text{ then}: $",
         "options": [
-          "$S_5 = 5$",
-          "$S_{50} = \\dfrac{100}{17}$",
-          "$S_{1001} = \\dfrac{1001}{97}$",
-          "$S_\\infty = 6$"
+          "$ S_5 = 5 $",
+          "$ S_{50} = \\dfrac{100}{17} $",
+          "$ S_{1001} = \\dfrac{1001}{97} $",
+          "$ S_\\infty = 6 $"
         ],
         "answerKeyStr": "a,b,d",
         "correctOption": -1
@@ -20509,12 +20509,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "d691d3c3-06ae-4c07-bd49-92ba2592f34d",
         "questionNumber": 19,
         "exerciseName": "Exercise-2: One or More than One Answer is/are Correct",
-        "text": "$ \\text{For} \\Delta \\text{ABC}, \\text{if} 81 + 144a^4 + 16b^4 + 9c^4 = 144abc, (\\text{where notations have their usual meaning}), \\text{then}: [\\text{Editor}'s \\text{Note}: \\text{Questions} 12 \\text{and} 19 \\text{are identical in the source material}.] $",
+        "text": "$ \\text{For }\\Delta\\text{ ABC},\\text{ if }81 + 144a^4 + 16b^4 + 9c^4 = 144abc, (\\text{where notations have their usual meaning}),\\text{ then}: [\\text{Editor}'s\\text{ Note}:\\text{ Questions }12\\text{ and }19\\text{ are identical in the source material}.] $",
         "options": [
-          "$a > b > c$",
-          "$A < B < C$",
-          "$Area of \\Delta ABC = \\dfrac{3\\sqrt{3}}{8}$",
-          "$Triangle ABC is right angled$"
+          "$ \\text{a }>\\text{ }b\\text{ }>\\text{ }c $",
+          "$ \\text{A }<\\text{ }B\\text{ }<\\text{ }C $",
+          "$ \\text{Area of }\\Delta\\text{ ABC }= \\dfrac{3\\sqrt{3}}{8} $",
+          "$ \\text{Triangle ABC is right angled} $"
         ],
         "answerKeyStr": "b,c,d",
         "correctOption": -1
@@ -20523,12 +20523,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "825fb248-c98f-4e8c-a1aa-a47be42c940c",
         "questionNumber": 1,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 1 \\text{to} 2 $\n$ \\text{The first four terms of a sequence are given by} T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2. \\text{The general term is given by} T_n = \\text{A}\\alpha^{n-1} + B\\beta^{n-1} \\text{where A}, B, \\alpha, \\beta \\text{are independent of }n \\text{and A is positive}. $\n\n$ \\text{The value of} (\\alpha^2 + \\beta^2 + \\alpha\\beta) \\text{is equal to}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 1\\text{ to }2 $\n$ \\text{The first four terms of a sequence are given by }T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2.\\text{ The general term is given by }T_n =\\text{ A}\\alpha^{n-1} +\\text{ }B\\beta^{n-1}\\text{ where A},\\text{ }B, \\alpha, \\beta\\text{ are independent of }n\\text{ and A is positive}. $\n\n$ \\text{The value of }(\\alpha^2 + \\beta^2 + \\alpha\\beta)\\text{ is equal to}: $",
         "options": [
-          "$1$",
-          "$2$",
-          "$5$",
-          "$4$"
+          "$ 1 $",
+          "$ 2 $",
+          "$ 5 $",
+          "$ 4 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -20537,12 +20537,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "d92a4e58-27b8-4f61-823c-b862992bdd85",
         "questionNumber": 2,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 1 \\text{to} 2 $\n$ \\text{The first four terms of a sequence are given by} T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2. \\text{The general term is given by} T_n = \\text{A}\\alpha^{n-1} + B\\beta^{n-1} \\text{where A}, B, \\alpha, \\beta \\text{are independent of }n \\text{and A is positive}. $\n\n$ \\text{The value of} 5(\\text{A}^2 + B^2) \\text{is equal to}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 1\\text{ to }2 $\n$ \\text{The first four terms of a sequence are given by }T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2.\\text{ The general term is given by }T_n =\\text{ A}\\alpha^{n-1} +\\text{ }B\\beta^{n-1}\\text{ where A},\\text{ }B, \\alpha, \\beta\\text{ are independent of }n\\text{ and A is positive}. $\n\n$ \\text{The value of }5(\\text{A}^2 +\\text{ }B^2)\\text{ is equal to}: $",
         "options": [
-          "$2$",
-          "$4$",
-          "$6$",
-          "$8$"
+          "$ 2 $",
+          "$ 4 $",
+          "$ 6 $",
+          "$ 8 $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -20551,12 +20551,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f334bf3e-ea99-4fbe-b01f-f8790e04a185",
         "questionNumber": 3,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 3 \\text{to} 4 $\n$ \\text{There are two sets A and }B \\text{each of which consists of three numbers in A}.P. \\text{whose sum is} 15. D \\text{and }d \\text{are their respective common differences such that }D - d = 1, D > 0. \\text{If} \\dfrac{p}{q} = \\dfrac{7}{8} \\text{where }p \\text{and }q \\text{are the product of the numbers in those sets A and }B \\text{respectively}. $\n\n$ \\text{Sum of the product of the numbers in set A taken two at a time is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 3\\text{ to }4 $\n$ \\text{There are two sets A and }B\\text{ each of which consists of three numbers in A}.P.\\text{ whose sum is }15.\\text{ }D\\text{ and }d\\text{ are their respective common differences such that }D\\text{ }-\\text{ }d\\text{ }= 1,\\text{ }D\\text{ }> 0.\\text{ If }\\dfrac{p}{q} = \\dfrac{7}{8}\\text{ where }p\\text{ and }q\\text{ are the product of the numbers in those sets A and }B\\text{ respectively}. $\n\n$ \\text{Sum of the product of the numbers in set A taken two at a time is}: $",
         "options": [
-          "$51$",
-          "$71$",
-          "$74$",
-          "$86$"
+          "$ 51 $",
+          "$ 71 $",
+          "$ 74 $",
+          "$ 86 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -20565,12 +20565,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "b206eab0-f2fb-43c3-9d87-efbebb9e7034",
         "questionNumber": 4,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 3 \\text{to} 4 $\n$ \\text{There are two sets A and }B \\text{each of which consists of three numbers in A}.P. \\text{whose sum is} 15. D \\text{and }d \\text{are their respective common differences such that }D - d = 1, D > 0. \\text{If} \\dfrac{p}{q} = \\dfrac{7}{8} \\text{where }p \\text{and }q \\text{are the product of the numbers in those sets A and }B \\text{respectively}. $\n\n$ \\text{Sum of the product of the numbers in set }B \\text{taken two at a time is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 3\\text{ to }4 $\n$ \\text{There are two sets A and }B\\text{ each of which consists of three numbers in A}.P.\\text{ whose sum is }15.\\text{ }D\\text{ and }d\\text{ are their respective common differences such that }D\\text{ }-\\text{ }d\\text{ }= 1,\\text{ }D\\text{ }> 0.\\text{ If }\\dfrac{p}{q} = \\dfrac{7}{8}\\text{ where }p\\text{ and }q\\text{ are the product of the numbers in those sets A and }B\\text{ respectively}. $\n\n$ \\text{Sum of the product of the numbers in set }B\\text{ taken two at a time is}: $",
         "options": [
-          "$52$",
-          "$54$",
-          "$64$",
-          "$74$"
+          "$ 52 $",
+          "$ 54 $",
+          "$ 64 $",
+          "$ 74 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -20579,12 +20579,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "b06a841b-bfc7-4e58-93e5-ad032f114dc4",
         "questionNumber": 5,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 5 \\text{to} 7 $\n$ \\text{Let }x, y, z \\text{are positive reals and }x + y + z = 60 \\text{and }x > 3. $\n\n$ \\text{Maximum value of} (x - 3)(y + 1)(z + 5) \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 5\\text{ to }7 $\n$ \\text{Let }x,\\text{ }y,\\text{ }z\\text{ are positive reals and }x\\text{ }+\\text{ }y\\text{ }+\\text{ }z\\text{ }= 60\\text{ and }x\\text{ }> 3. $\n\n$ \\text{Maximum value of }(x\\text{ }- 3)(y\\text{ }+ 1)(z\\text{ }+ 5)\\text{ is}: $",
         "options": [
-          "$(17)(21)(25)$",
-          "$(20)(21)(23)$",
-          "$(21)(21)(21)$",
-          "$(23)(19)(15)$"
+          "$ (17)(21)(25) $",
+          "$ (20)(21)(23) $",
+          "$ (21)(21)(21) $",
+          "$ (23)(19)(15) $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20593,12 +20593,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "8bd32143-cd37-45b8-bb8c-84c245909f33",
         "questionNumber": 6,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 5 \\text{to} 7 $\n$ \\text{Let }x, y, z \\text{are positive reals and }x + y + z = 60 \\text{and }x > 3. $\n\n$ \\text{Maximum value of} (x - 3)(2y + 1)(3z + 5) \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 5\\text{ to }7 $\n$ \\text{Let }x,\\text{ }y,\\text{ }z\\text{ are positive reals and }x\\text{ }+\\text{ }y\\text{ }+\\text{ }z\\text{ }= 60\\text{ and }x\\text{ }> 3. $\n\n$ \\text{Maximum value of }(x\\text{ }- 3)(2y + 1)(3z + 5)\\text{ is}: $",
         "options": [
-          "$\\dfrac{(355)^3}{3^3 \\cdot 6^2}$",
-          "$\\dfrac{(355)^3}{3^3 \\cdot 6^3}$",
-          "$\\dfrac{(355)^3}{3^2 \\cdot 6^3}$",
-          "$None of these$"
+          "$ \\dfrac{(355)^3}{3^3 \\cdot 6^2} $",
+          "$ \\dfrac{(355)^3}{3^3 \\cdot 6^3} $",
+          "$ \\dfrac{(355)^3}{3^2 \\cdot 6^3} $",
+          "$ \\text{None of these} $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -20607,12 +20607,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "6d376994-0391-463f-8f93-5fb6e593ba76",
         "questionNumber": 7,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 5 \\text{to} 7 $\n$ \\text{Let }x, y, z \\text{are positive reals and }x + y + z = 60 \\text{and }x > 3. $\n\n$ \\text{Maximum value of }xyz \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 5\\text{ to }7 $\n$ \\text{Let }x,\\text{ }y,\\text{ }z\\text{ are positive reals and }x\\text{ }+\\text{ }y\\text{ }+\\text{ }z\\text{ }= 60\\text{ and }x\\text{ }> 3. $\n\n$ \\text{Maximum value of }xyz\\text{ is}: $",
         "options": [
-          "$8 \\times 10^3$",
-          "$27 \\times 10^3$",
-          "$64 \\times 10^3$",
-          "$125 \\times 10^3$"
+          "$ 8 \\times 10^3 $",
+          "$ 27 \\times 10^3 $",
+          "$ 64 \\times 10^3 $",
+          "$ 125 \\times 10^3 $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -20621,12 +20621,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "adbab818-7bfa-4c17-84fb-4706c10c7cb1",
         "questionNumber": 8,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 8 \\text{to} 10 $\n$ \\text{Two consecutive numbers from }n \\text{natural numbers} 1, 2, 3, \\dots, n \\text{are removed}. \\text{Arithmetic mean of the remaining numbers is} \\dfrac{105}{4}. $\n\n$ \\text{The value of }n \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 8\\text{ to }10 $\n$ \\text{Two consecutive numbers from }n\\text{ natural numbers }1, 2, 3, \\dots,\\text{ }n\\text{ are removed}.\\text{ Arithmetic mean of the remaining numbers is }\\dfrac{105}{4}. $\n\n$ \\text{The value of }n\\text{ is}: $",
         "options": [
-          "$48$",
-          "$50$",
-          "$52$",
-          "$49$"
+          "$ 48 $",
+          "$ 50 $",
+          "$ 52 $",
+          "$ 49 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -20635,12 +20635,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "7ecb627d-f272-4ff6-bec0-d241a74971d9",
         "questionNumber": 9,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 8 \\text{to} 10 $\n$ \\text{Two consecutive numbers from }n \\text{natural numbers} 1, 2, 3, \\dots, n \\text{are removed}. \\text{Arithmetic mean of the remaining numbers is} \\dfrac{105}{4}. $\n\n$ \\text{The }G.M. \\text{of the removed numbers is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 8\\text{ to }10 $\n$ \\text{Two consecutive numbers from }n\\text{ natural numbers }1, 2, 3, \\dots,\\text{ }n\\text{ are removed}.\\text{ Arithmetic mean of the remaining numbers is }\\dfrac{105}{4}. $\n\n$ \\text{The }G.M.\\text{ of the removed numbers is}: $",
         "options": [
-          "$\\sqrt{30}$",
-          "$\\sqrt{42}$",
-          "$\\sqrt{56}$",
-          "$\\sqrt{72}$"
+          "$ \\sqrt{30} $",
+          "$ \\sqrt{42} $",
+          "$ \\sqrt{56} $",
+          "$ \\sqrt{72} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20649,12 +20649,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "74aa1362-f8cb-42b5-a3ee-351ebbe542dc",
         "questionNumber": 10,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 8 \\text{to} 10 $\n$ \\text{Two consecutive numbers from }n \\text{natural numbers} 1, 2, 3, \\dots, n \\text{are removed}. \\text{Arithmetic mean of the remaining numbers is} \\dfrac{105}{4}. $\n\n$ \\text{Let removed numbers are} x_1, x_2 \\text{then} x_1 + x_2 + n = $",
+        "text": "$ \\text{Paragraph for Question Nos}. 8\\text{ to }10 $\n$ \\text{Two consecutive numbers from }n\\text{ natural numbers }1, 2, 3, \\dots,\\text{ }n\\text{ are removed}.\\text{ Arithmetic mean of the remaining numbers is }\\dfrac{105}{4}. $\n\n$ \\text{Let removed numbers are }x_1, x_2\\text{ then }x_1 + x_2 +\\text{ }n\\text{ }= $",
         "options": [
-          "$61$",
-          "$63$",
-          "$65$",
-          "$69$"
+          "$ 61 $",
+          "$ 63 $",
+          "$ 65 $",
+          "$ 69 $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20663,12 +20663,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "73e208f6-22ac-48c3-bab8-82784007c389",
         "questionNumber": 11,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 11 \\text{to} 13 $\n$ \\text{The sequence} \\{a_n\\} \\text{is defined by formula} a_0 = 4 \\text{and} a_{n+1} = a_n^2 - 2a_n + 2 \\text{for }n \\ge 0. \\text{Let the sequence} \\{b_n\\} \\text{is defined by formula} b_0 = \\dfrac{1}{2} \\text{and} b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall n \\ge 1. $\n\n$ \\text{The value of} a_{10} \\text{is equal to}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 11\\text{ to }13 $\n$ \\text{The sequence }\\{a_n\\}\\text{ is defined by formula }a_0 = 4\\text{ and }a_{n+1} = a_n^2 - 2a_n + 2\\text{ for }n\\text{ }\\ge 0.\\text{ Let the sequence }\\{b_n\\}\\text{ is defined by formula }b_0 = \\dfrac{1}{2}\\text{ and }b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall\\text{ }n\\text{ }\\ge 1. $\n\n$ \\text{The value of }a_{10}\\text{ is equal to}: $",
         "options": [
-          "$1 + 2^{1024}$",
-          "$4^{1024}$",
-          "$1 + 3^{1024}$",
-          "$6^{1024}$"
+          "$ 1 + 2^{1024} $",
+          "$ 4^{1024} $",
+          "$ 1 + 3^{1024} $",
+          "$ 6^{1024} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20677,12 +20677,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "98777b1a-0fa7-4c26-91c0-63b4d8d2f498",
         "questionNumber": 12,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 11 \\text{to} 13 $\n$ \\text{The sequence} \\{a_n\\} \\text{is defined by formula} a_0 = 4 \\text{and} a_{n+1} = a_n^2 - 2a_n + 2 \\text{for }n \\ge 0. \\text{Let the sequence} \\{b_n\\} \\text{is defined by formula} b_0 = \\dfrac{1}{2} \\text{and} b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall n \\ge 1. $\n\n$ \\text{The value of }n \\text{for which} b_n = \\dfrac{3280}{3281} \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 11\\text{ to }13 $\n$ \\text{The sequence }\\{a_n\\}\\text{ is defined by formula }a_0 = 4\\text{ and }a_{n+1} = a_n^2 - 2a_n + 2\\text{ for }n\\text{ }\\ge 0.\\text{ Let the sequence }\\{b_n\\}\\text{ is defined by formula }b_0 = \\dfrac{1}{2}\\text{ and }b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall\\text{ }n\\text{ }\\ge 1. $\n\n$ \\text{The value of }n\\text{ for which }b_n = \\dfrac{3280}{3281}\\text{ is}: $",
         "options": [
-          "$2$",
-          "$3$",
-          "$4$",
-          "$5$"
+          "$ 2 $",
+          "$ 3 $",
+          "$ 4 $",
+          "$ 5 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -20691,12 +20691,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "5d21d90b-f330-4320-bd65-bb588fc69001",
         "questionNumber": 13,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 11 \\text{to} 13 $\n$ \\text{The sequence} \\{a_n\\} \\text{is defined by formula} a_0 = 4 \\text{and} a_{n+1} = a_n^2 - 2a_n + 2 \\text{for }n \\ge 0. \\text{Let the sequence} \\{b_n\\} \\text{is defined by formula} b_0 = \\dfrac{1}{2} \\text{and} b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall n \\ge 1. $\n\n$ \\text{The sequence} \\{b_n\\} \\text{satisfies the recurrence formula}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 11\\text{ to }13 $\n$ \\text{The sequence }\\{a_n\\}\\text{ is defined by formula }a_0 = 4\\text{ and }a_{n+1} = a_n^2 - 2a_n + 2\\text{ for }n\\text{ }\\ge 0.\\text{ Let the sequence }\\{b_n\\}\\text{ is defined by formula }b_0 = \\dfrac{1}{2}\\text{ and }b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall\\text{ }n\\text{ }\\ge 1. $\n\n$ \\text{The sequence }\\{b_n\\}\\text{ satisfies the recurrence formula}: $",
         "options": [
-          "$b_{n+1} = \\dfrac{2b_n}{1 - b_n^2}$",
-          "$b_{n+1} = \\dfrac{2b_n}{1 + b_n^2}$",
-          "$\\dfrac{b_n}{1 + 2b_n^2}$",
-          "$\\dfrac{b_n}{1 - 2b_n^2}$"
+          "$ b_{n+1} = \\dfrac{2b_n}{1 - b_n^2} $",
+          "$ b_{n+1} = \\dfrac{2b_n}{1 + b_n^2} $",
+          "$ \\dfrac{b_n}{1 + 2b_n^2} $",
+          "$ \\dfrac{b_n}{1 - 2b_n^2} $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -20705,12 +20705,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "0e543a0b-838f-4a09-a119-29d35bd867a8",
         "questionNumber": 14,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 14 \\text{to} 15 $\n$ \\text{Let }f(n) = \\sum_{r=2}^n \\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}}, \\text{a} = \\lim_{n \\to \\infty} f(n) \\text{and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x + t = 0 \\text{has two positive roots} \\alpha \\text{and} \\beta. $\n\n$ \\text{If value of }f(7) + f(8) \\text{is} \\dfrac{p}{q} \\text{where }p \\text{and }q \\text{are relatively prime}, \\text{then} (p - q) \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 14\\text{ to }15 $\n$ \\text{Let }f(n) = \\sum_{r=2}^n\\text{ }\\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}},\\text{ a }= \\lim_{n\\text{ }\\to \\infty}\\text{ }f(n)\\text{ and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x\\text{ }+\\text{ }t\\text{ }= 0\\text{ has two positive roots }\\alpha\\text{ and }\\beta. $\n\n$ \\text{If value of }f(7) +\\text{ }f(8)\\text{ is }\\dfrac{p}{q}\\text{ where }p\\text{ and }q\\text{ are relatively prime},\\text{ then }(p\\text{ }-\\text{ }q)\\text{ is}: $",
         "options": [
-          "$53$",
-          "$55$",
-          "$57$",
-          "$59$"
+          "$ 53 $",
+          "$ 55 $",
+          "$ 57 $",
+          "$ 59 $"
         ],
         "answerKeyStr": "d",
         "correctOption": 3
@@ -20719,12 +20719,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "6d7d1a4d-70fd-4878-bd52-246bf56d8d21",
         "questionNumber": 15,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 14 \\text{to} 15 $\n$ \\text{Let }f(n) = \\sum_{r=2}^n \\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}}, \\text{a} = \\lim_{n \\to \\infty} f(n) \\text{and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x + t = 0 \\text{has two positive roots} \\alpha \\text{and} \\beta. $\n\n$ \\text{Minimum value of} \\dfrac{4}{\\alpha} + \\dfrac{1}{\\beta} \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 14\\text{ to }15 $\n$ \\text{Let }f(n) = \\sum_{r=2}^n\\text{ }\\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}},\\text{ a }= \\lim_{n\\text{ }\\to \\infty}\\text{ }f(n)\\text{ and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x\\text{ }+\\text{ }t\\text{ }= 0\\text{ has two positive roots }\\alpha\\text{ and }\\beta. $\n\n$ \\text{Minimum value of }\\dfrac{4}{\\alpha} + \\dfrac{1}{\\beta}\\text{ is}: $",
         "options": [
-          "$2$",
-          "$6$",
-          "$3$",
-          "$4$"
+          "$ 2 $",
+          "$ 6 $",
+          "$ 3 $",
+          "$ 4 $"
         ],
         "answerKeyStr": "b",
         "correctOption": 1
@@ -20733,12 +20733,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "118c8704-de9d-4fc3-8c47-ad97e76c2ca3",
         "questionNumber": 16,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 16 \\text{to} 17 $\n$ \\text{Given the sequence of number} a_1, a_2, a_3, \\dots, a_{1005} \\text{which satisfy} \\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009} \\text{Also} a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010 $\n\n$ \\text{Nature of the sequence is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 16\\text{ to }17 $\n$ \\text{Given the sequence of number }a_1, a_2, a_3, \\dots, a_{1005}\\text{ which satisfy }\\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009}\\text{ Also }a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010 $\n\n$ \\text{Nature of the sequence is}: $",
         "options": [
-          "$A.P.$",
-          "$G.P.$",
-          "$A.G.P.$",
-          "$H.P.$"
+          "$ \\text{A}.P. $",
+          "$ G.P. $",
+          "$ \\text{A}.G.P. $",
+          "$ H.P. $"
         ],
         "answerKeyStr": "a",
         "correctOption": 0
@@ -20747,12 +20747,12 @@ window.DEFAULT_BLACKBOOK = [
         "id": "73c2b8c9-e5ff-4294-8e85-7725557c7714",
         "questionNumber": 17,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 16 \\text{to} 17 $\n$ \\text{Given the sequence of number} a_1, a_2, a_3, \\dots, a_{1005} \\text{which satisfy} \\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009} \\text{Also} a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010 $\n\n$ 21^{\\text{st}} \\text{term of the sequence is equal to}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 16\\text{ to }17 $\n$ \\text{Given the sequence of number }a_1, a_2, a_3, \\dots, a_{1005}\\text{ which satisfy }\\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009}\\text{ Also }a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010 $\n\n$ 21^{\\text{st}}\\text{ term of the sequence is equal to}: $",
         "options": [
-          "$\\dfrac{86}{1005}$",
-          "$\\dfrac{83}{1005}$",
-          "$\\dfrac{82}{1005}$",
-          "$\\dfrac{79}{1005}$"
+          "$ \\dfrac{86}{1005} $",
+          "$ \\dfrac{83}{1005} $",
+          "$ \\dfrac{82}{1005} $",
+          "$ \\dfrac{79}{1005} $"
         ],
         "answerKeyStr": "c",
         "correctOption": 2
@@ -20845,7 +20845,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "7f4c99e4-246c-455b-9a34-a56758b687eb",
         "questionNumber": 1,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let a}, b, c, d \\text{are four distinct consecutive numbers in A}.P. \\text{The complete set of values of }x \\text{for which} 2(\\text{a} - b) + x(b - c)^2 + (c - \\text{a})^3 = 2(\\text{a} - d) + (b - d)^2 + (c - d)^3 \\text{is true is} (-\\infty, \\alpha] \\cup [\\beta, \\infty), \\text{then} |\\alpha| \\text{is equal to}: $",
+        "text": "$ \\text{Let a},\\text{ }b,\\text{ }c,\\text{ }d\\text{ are four distinct consecutive numbers in A}.P.\\text{ The complete set of values of }x\\text{ for which }2(\\text{a }-\\text{ }b) +\\text{ }x(b\\text{ }-\\text{ }c)^2 + (c\\text{ }-\\text{ a})^3 = 2(\\text{a }-\\text{ }d) + (b\\text{ }-\\text{ }d)^2 + (c\\text{ }-\\text{ }d)^3\\text{ is true is }(-\\infty, \\alpha] \\cup [\\beta, \\infty),\\text{ then }|\\alpha|\\text{ is equal to}: $",
         "options": [],
         "answerKeyStr": "8",
         "correctOption": -1
@@ -20854,7 +20854,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "5f446c76-414a-43b6-90c3-47a9f470091c",
         "questionNumber": 2,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The sum of all digits of }n \\text{for which} \\sum_{r=1}^n r 2^r = 2 + 2^{n+10} \\text{is}: $",
+        "text": "$ \\text{The sum of all digits of }n\\text{ for which }\\sum_{r=1}^n\\text{ }r\\text{ }2^r\\text{ }= 2 + 2^{n+10}\\text{ is}: $",
         "options": [],
         "answerKeyStr": "9",
         "correctOption": -1
@@ -20863,7 +20863,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "da52f343-f4e4-44a9-9b4a-e248319ff550",
         "questionNumber": 3,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{If} \\lim_{n \\to \\infty} \\sum_{r=1}^n \\dfrac{r + 2}{2^{r+1} r(r + 1)} = \\dfrac{1}{k}, \\text{then }k = $",
+        "text": "$ \\text{If }\\lim_{n\\text{ }\\to \\infty} \\sum_{r=1}^n\\text{ }\\dfrac{r\\text{ }+ 2}{2^{r+1}\\text{ }r(r\\text{ }+ 1)} = \\dfrac{1}{k},\\text{ then }k\\text{ }= $",
         "options": [],
         "answerKeyStr": "2",
         "correctOption": -1
@@ -20872,7 +20872,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "ac944d84-75bc-4e45-8f9a-b4f49f5a76e3",
         "questionNumber": 4,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The value of} \\sum_{r=1}^\\infty \\dfrac{8r}{4r^4 + 1} \\text{is equal to}: $",
+        "text": "$ \\text{The value of }\\sum_{r=1}^\\infty \\dfrac{8r}{4r^4 + 1}\\text{ is equal to}: $",
         "options": [],
         "answerKeyStr": "2",
         "correctOption": -1
@@ -20881,7 +20881,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "2971325e-9ff0-4be2-83fb-45f68568e74e",
         "questionNumber": 5,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Three distinct non-zero real numbers form an A}.P. \\text{and the squares of these numbers taken in same order form a }G.P. \\text{If possible common ratio of }G.P. \\text{are} 3 \\pm \\sqrt{n}, n \\in N \\text{then }n = $",
+        "text": "$ \\text{Three distinct non-zero real numbers form an A}.P.\\text{ and the squares of these numbers taken in same order form a }G.P.\\text{ If possible common ratio of }G.P.\\text{ are }3 \\pm \\sqrt{n},\\text{ }n\\text{ }\\in\\text{ }N\\text{ then }n\\text{ }= $",
         "options": [],
         "answerKeyStr": "8",
         "correctOption": -1
@@ -20890,7 +20890,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f4c0f611-29e1-4f54-8ed2-673f840df6d2",
         "questionNumber": 6,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{If} \\sqrt{\\underbrace{(1111\\dots1)}_{2n \\text{ \\text{times}}} - \\underbrace{(222\\dots2)}_{n \\text{ \\text{times}}}} = \\underbrace{\\text{PPP}\\dots P}_{n \\text{ \\text{times}}} \\text{then }P = $",
+        "text": "$ \\text{If }\\sqrt{\\underbrace{(1111\\dots1)}_{2n \\text{\\text{ times}}} - \\underbrace{(222\\dots2)}_{n\\text{ }\\text{\\text{ times}}}} = \\underbrace{\\text{PPP}\\dots\\text{ }P}_{n\\text{ }\\text{\\text{ times}}}\\text{ then }P\\text{ }= $",
         "options": [],
         "answerKeyStr": "3",
         "correctOption": -1
@@ -20899,7 +20899,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "2afbf9a6-7e44-44f2-b1d4-14bd20ccbd8e",
         "questionNumber": 7,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{In an increasing sequence of four positive integers}, \\text{the first} 3 \\text{terms are in A}.P., \\text{the last} 3 \\text{terms are in }G.P. \\text{and the fourth term exceed the first term by} 30, \\text{then the common difference of A}.P. \\text{lying in interval} [1, 9] \\text{is}: $",
+        "text": "$ \\text{In an increasing sequence of four positive integers},\\text{ the first }3\\text{ terms are in A}.P.,\\text{ the last }3\\text{ terms are in }G.P.\\text{ and the fourth term exceed the first term by }30,\\text{ then the common difference of A}.P.\\text{ lying in interval }[1, 9]\\text{ is}: $",
         "options": [],
         "answerKeyStr": "9",
         "correctOption": -1
@@ -20908,7 +20908,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "1c685793-c9dd-43ec-b2bd-6146d29e2850",
         "questionNumber": 8,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The }limit \\text{of} \\dfrac{1}{n^4} \\sum_{k=1}^n k(k + 2)(k + 4) \\text{as }n \\to \\infty \\text{is equal to} \\dfrac{1}{\\lambda}, \\text{then} \\lambda = $",
+        "text": "$ \\text{The }limit\\text{ of }\\dfrac{1}{n^4} \\sum_{k=1}^n\\text{ }k(k\\text{ }+ 2)(k\\text{ }+ 4)\\text{ as }n\\text{ }\\to \\infty\\text{ is equal to }\\dfrac{1}{\\lambda},\\text{ then }\\lambda = $",
         "options": [],
         "answerKeyStr": "4",
         "correctOption": -1
@@ -20917,7 +20917,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "76437a69-99fd-455f-8420-4c6c7bb60bad",
         "questionNumber": 9,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{What is the last digit of} 1 + 2 + 3 + \\dots + n \\text{if the last digit of} 1^3 + 2^3 + \\dots + n^3 \\text{is} 1? $",
+        "text": "$ \\text{What is the last digit of }1 + 2 + 3 + \\dots +\\text{ }n\\text{ if the last digit of }1^3 + 2^3 + \\dots +\\text{ }n^3\\text{ is }1? $",
         "options": [],
         "answerKeyStr": "1",
         "correctOption": -1
@@ -20926,7 +20926,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "2e2b4ac4-8814-4393-912e-8c2dc3e415ec",
         "questionNumber": 10,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Three distinct positive numbers a}, b, c \\text{are in }G.P., \\text{while} \\log_c \\text{a}, \\log_b c, \\log_a b \\text{are in A}.P. \\text{with non-zero common difference }d, \\text{then} 2d = $",
+        "text": "$ \\text{Three distinct positive numbers a},\\text{ }b,\\text{ }c\\text{ are in }G.P.,\\text{ while }\\log_c\\text{ a}, \\log_b\\text{ }c, \\log_a\\text{ }b\\text{ are in A}.P.\\text{ with non-zero common difference }d,\\text{ then }2d = $",
         "options": [],
         "answerKeyStr": "3",
         "correctOption": -1
@@ -20935,7 +20935,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "b6409953-f1b3-41cf-a80a-dd3df4fa1056",
         "questionNumber": 11,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The numbers} \\dfrac{1}{3}, \\dfrac{1}{3} \\log_x y, \\dfrac{1}{3} \\log_y z, \\dfrac{1}{7} \\log_z x \\text{are in }H.P. \\text{If }y = x^r \\text{and }z = x^s, \\text{then} 4(r + s) = $",
+        "text": "$ \\text{The numbers }\\dfrac{1}{3}, \\dfrac{1}{3} \\log_x\\text{ }y, \\dfrac{1}{3} \\log_y\\text{ }z, \\dfrac{1}{7} \\log_z\\text{ }x\\text{ are in }H.P.\\text{ If }y\\text{ }=\\text{ }x^r\\text{ and }z\\text{ }=\\text{ }x^s,\\text{ then }4(r\\text{ }+\\text{ }s) = $",
         "options": [],
         "answerKeyStr": "6",
         "correctOption": -1
@@ -20944,7 +20944,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "75158d7a-f30d-4b4b-8369-b6248ac5779b",
         "questionNumber": 12,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{If} \\sum_{k=1}^\\infty \\dfrac{k^2}{3^k} = \\dfrac{p}{q}; \\text{where }p \\text{and }q \\text{are relatively prime positive integers}. \\text{Find the value of} (p + q). $",
+        "text": "$ \\text{If }\\sum_{k=1}^\\infty \\dfrac{k^2}{3^k} = \\dfrac{p}{q};\\text{ where }p\\text{ and }q\\text{ are relatively prime positive integers}.\\text{ Find the value of }(p\\text{ }+\\text{ }q). $",
         "options": [],
         "answerKeyStr": "5",
         "correctOption": -1
@@ -20953,7 +20953,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "10fac6cd-30f0-4b2d-baad-2aca5c5dcdfe",
         "questionNumber": 13,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{The sum of the terms of an infinitely decreasing Geometric Progression} (G.P.) \\text{is equal to the greatest value of the function }f(x) = x^3 + 3x - 9 \\text{when }x \\in [-4, 3] \\text{and the difference between the first and second term is }f'(0). \\text{The common ratio }r = \\dfrac{p}{q} \\text{where }p \\text{and }q \\text{are relatively prime positive integers}. \\text{Find} (p + q). $",
+        "text": "$ \\text{The sum of the terms of an infinitely decreasing Geometric Progression }(G.P.)\\text{ is equal to the greatest value of the function }f(x) =\\text{ }x^3 + 3x - 9\\text{ when }x\\text{ }\\in [-4, 3]\\text{ and the difference between the first and second term is }f'(0).\\text{ The common ratio }r\\text{ }= \\dfrac{p}{q}\\text{ where }p\\text{ and }q\\text{ are relatively prime positive integers}.\\text{ Find }(p\\text{ }+\\text{ }q). $",
         "options": [],
         "answerKeyStr": "5",
         "correctOption": -1
@@ -20962,7 +20962,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "fc288714-17c8-4313-a38e-b5522968a06e",
         "questionNumber": 14,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{A cricketer has to score} 4500 \\text{runs}. \\text{Let} a_n \\text{denotes the number of runs he scores in the }n^{\\text{th}} \\text{match}. \\text{If} a_1 = a_2 = \\dots a_{10} = 150 \\text{and} a_{10}, a_{11}, a_{12}, \\dots \\text{are in A}.P. \\text{with common difference} (-2). \\text{If }N \\text{be the total number of matches played by him to score} 4500 \\text{runs}. \\text{Find the sum of the digits of }N. $",
+        "text": "$ \\text{A cricketer has to score }4500\\text{ runs}.\\text{ Let }a_n\\text{ denotes the number of runs he scores in the }n^{\\text{th}}\\text{ match}.\\text{ If }a_1 = a_2 = \\dots a_{10} = 150\\text{ and }a_{10}, a_{11}, a_{12}, \\dots\\text{ are in A}.P.\\text{ with common difference }(-2).\\text{ If }N\\text{ be the total number of matches played by him to score }4500\\text{ runs}.\\text{ Find the sum of the digits of }N. $",
         "options": [],
         "answerKeyStr": "7",
         "correctOption": -1
@@ -20971,7 +20971,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f0017c94-8600-434c-99bc-758c10ececb1",
         "questionNumber": 15,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{If }x = 10 \\sum_{n=3}^{100} \\dfrac{1}{n^2 - 4}, \\text{then} [x] = (\\text{where} [\\cdot] \\text{denotes greatest integer function}). $",
+        "text": "$ \\text{If }x\\text{ }= 10 \\sum_{n=3}^{100} \\dfrac{1}{n^2 - 4},\\text{ then }[x] = (\\text{where }[\\cdot]\\text{ denotes greatest integer function}). $",
         "options": [],
         "answerKeyStr": "5",
         "correctOption": -1
@@ -20980,7 +20980,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "676f36c7-4547-49af-a3cb-405607516c4c",
         "questionNumber": 16,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let }f(n) = \\dfrac{4n + \\sqrt{4n^2 - 1}}{\\sqrt{2n + 1} + \\sqrt{2n - 1}}, n \\in N \\text{then the remainder when }f(1) + f(2) + f(3) + \\dots + f(60) \\text{is divided by} 9 \\text{is}: $",
+        "text": "$ \\text{Let }f(n) = \\dfrac{4n + \\sqrt{4n^2 - 1}}{\\sqrt{2n + 1} + \\sqrt{2n - 1}},\\text{ }n\\text{ }\\in\\text{ }N\\text{ then the remainder when }f(1) +\\text{ }f(2) +\\text{ }f(3) + \\dots +\\text{ }f(60)\\text{ is divided by }9\\text{ is}: $",
         "options": [],
         "answerKeyStr": "8",
         "correctOption": -1
@@ -20989,7 +20989,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "098dd125-08b0-46c1-a467-33c2b6b59d22",
         "questionNumber": 17,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Find the sum of series} 1 + \\dfrac{1}{2} + \\dfrac{1}{3} + \\dfrac{1}{4} + \\dfrac{1}{6} + \\dfrac{1}{8} + \\dfrac{1}{9} + \\dfrac{1}{12} + \\dots \\infty, \\text{where the terms are the reciprocals of the positive integers whose only prime factors are two}'s \\text{and three}'s. $",
+        "text": "$ \\text{Find the sum of series }1 + \\dfrac{1}{2} + \\dfrac{1}{3} + \\dfrac{1}{4} + \\dfrac{1}{6} + \\dfrac{1}{8} + \\dfrac{1}{9} + \\dfrac{1}{12} + \\dots \\infty,\\text{ where the terms are the reciprocals of the positive integers whose only prime factors are two}'s\\text{ and three}'s. $",
         "options": [],
         "answerKeyStr": "3",
         "correctOption": -1
@@ -20998,7 +20998,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "aeae6b04-dcc3-41ef-af9f-ea01407d846e",
         "questionNumber": 18,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let} a_1, a_2, a_3, \\dots, a_n \\text{be real numbers in arithmetic progression such that} a_1 = 15 \\text{and} a_2 \\text{is an integer}. \\text{Given} \\sum_{r=1}^{10} (a_r)^2 = 1185. \\text{If} S_n = \\sum_{r=1}^n a_r \\text{and maximum value of }n \\text{is }N \\text{for which} S_n \\ge S_{(n-1)}, \\text{then find }N - 10. $",
+        "text": "$ \\text{Let }a_1, a_2, a_3, \\dots, a_n\\text{ be real numbers in arithmetic progression such that }a_1 = 15\\text{ and }a_2\\text{ is an integer}.\\text{ Given }\\sum_{r=1}^{10} (a_r)^2 = 1185.\\text{ If }S_n = \\sum_{r=1}^n\\text{ }a_r\\text{ and maximum value of }n\\text{ is }N\\text{ for which }S_n \\ge S_{(n-1)},\\text{ then find }N\\text{ }- 10. $",
         "options": [],
         "answerKeyStr": "6",
         "correctOption": -1
@@ -21007,7 +21007,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "7d1c5667-75e5-4295-880e-4c764f1296a8",
         "questionNumber": 19,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let the roots of the equation} 24x^3 - 14x^2 + \\text{kx} + 3 = 0 \\text{form a geometric sequence of real numbers}. \\text{If absolute value of }k \\text{lies between the roots of the equation }x^2 + \\alpha^2x - 112 = 0, \\text{then the largest integral value of} \\alpha \\text{is}: $",
+        "text": "$ \\text{Let the roots of the equation }24x^3 - 14x^2 +\\text{ kx }+ 3 = 0\\text{ form a geometric sequence of real numbers}.\\text{ If absolute value of }k\\text{ lies between the roots of the equation }x^2 + \\alpha^2x - 112 = 0,\\text{ then the largest integral value of }\\alpha\\text{ is}: $",
         "options": [],
         "answerKeyStr": "2",
         "correctOption": -1
@@ -21016,7 +21016,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "345a4cdb-e132-4313-b985-6d9e6a85d85c",
         "questionNumber": 20,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{How many ordered pair}(s) \\text{satisfy} \\log\\left(x^3 + \\dfrac{1}{3}y^3 + \\dfrac{1}{9}\\right) = \\log x + \\log y $",
+        "text": "$ \\text{How many ordered pair}(s)\\text{ satisfy }\\log\\left(x^3 + \\dfrac{1}{3}y^3 + \\dfrac{1}{9}\\right) = \\log\\text{ }x\\text{ }+ \\log\\text{ }y $",
         "options": [],
         "answerKeyStr": "1",
         "correctOption": -1
@@ -21025,7 +21025,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "aa2603d9-f11d-43ac-82f4-74f171c7241b",
         "questionNumber": 21,
         "exerciseName": "Exercise-5: Subjective Type Problems",
-        "text": "$ \\text{Let a and }b \\text{be positive integers}. \\text{The value of }xyz \\text{is} 55 \\text{and} \\dfrac{343}{55} \\text{when a}, x, y, z, b \\text{are in arithmetic and harmonic progression respectively}. \\text{Find the value of} (\\text{a} + b). $",
+        "text": "$ \\text{Let a and }b\\text{ be positive integers}.\\text{ The value of }xyz\\text{ is }55\\text{ and }\\dfrac{343}{55}\\text{ when a},\\text{ }x,\\text{ }y,\\text{ }z,\\text{ }b\\text{ are in arithmetic and harmonic progression respectively}.\\text{ Find the value of }(\\text{a }+\\text{ }b). $",
         "options": [],
         "answerKeyStr": "8",
         "correctOption": -1

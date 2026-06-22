@@ -213,7 +213,10 @@ export default function MathRenderer({ text, className = '' }) {
   if (!text) return null;
 
   return (
-    <div className={`math-renderer ${className}`}>
+    <div 
+      className={`math-renderer ${className}`} 
+      style={{ fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
+    >
       {parseFullText(text)}
     </div>
   );
