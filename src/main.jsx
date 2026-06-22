@@ -43,7 +43,7 @@ localStorage.setItem = function(key, value) {
 
 // Load massive data scripts dynamically to prevent Vite from hanging during build
 Promise.all([
-  loadScript('/data-script.js?v=3.0'),
+  loadScript('/data-script.js?v=4.0'),
   loadScript('/blackbook-script.js?v=3.3')
 ]).then(() => {
   ReactDOM.createRoot(document.getElementById('root')).render(
@@ -57,3 +57,4 @@ Promise.all([
   console.error("Failed to load massive data scripts", err);
   document.getElementById('root').innerHTML = "<div style='color:white;padding:20px'>Failed to load critical data. Please refresh.</div>";
 });
+
