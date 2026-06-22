@@ -20523,7 +20523,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "825fb248-c98f-4e8c-a1aa-a47be42c940c",
         "questionNumber": 1,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 1 \\text{to} 2\n\\text{The first four terms of a sequence are given by} T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2. \\text{The general term is given by} T_n = \\text{A}\\alpha^{n-1} + B\\beta^{n-1} \\text{where A}, B, \\alpha, \\beta \\text{are independent of }n \\text{and A is positive}.\n\n\\text{The value of} (\\alpha^2 + \\beta^2 + \\alpha\\beta) \\text{is equal to}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 1 \\text{to} 2 $\n$ \\text{The first four terms of a sequence are given by} T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2. \\text{The general term is given by} T_n = \\text{A}\\alpha^{n-1} + B\\beta^{n-1} \\text{where A}, B, \\alpha, \\beta \\text{are independent of }n \\text{and A is positive}. $\n\n$ \\text{The value of} (\\alpha^2 + \\beta^2 + \\alpha\\beta) \\text{is equal to}: $",
         "options": [
           "$1$",
           "$2$",
@@ -20537,7 +20537,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "d92a4e58-27b8-4f61-823c-b862992bdd85",
         "questionNumber": 2,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 1 \\text{to} 2\n\\text{The first four terms of a sequence are given by} T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2. \\text{The general term is given by} T_n = \\text{A}\\alpha^{n-1} + B\\beta^{n-1} \\text{where A}, B, \\alpha, \\beta \\text{are independent of }n \\text{and A is positive}.\n\n\\text{The value of} 5(\\text{A}^2 + B^2) \\text{is equal to}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 1 \\text{to} 2 $\n$ \\text{The first four terms of a sequence are given by} T_1 = 0, T_2 = 1, T_3 = 1, T_4 = 2. \\text{The general term is given by} T_n = \\text{A}\\alpha^{n-1} + B\\beta^{n-1} \\text{where A}, B, \\alpha, \\beta \\text{are independent of }n \\text{and A is positive}. $\n\n$ \\text{The value of} 5(\\text{A}^2 + B^2) \\text{is equal to}: $",
         "options": [
           "$2$",
           "$4$",
@@ -20551,7 +20551,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "f334bf3e-ea99-4fbe-b01f-f8790e04a185",
         "questionNumber": 3,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 3 \\text{to} 4\n\\text{There are two sets A and }B \\text{each of which consists of three numbers in A}.P. \\text{whose sum is} 15. D \\text{and }d \\text{are their respective common differences such that }D - d = 1, D > 0. \\text{If} \\dfrac{p}{q} = \\dfrac{7}{8} \\text{where }p \\text{and }q \\text{are the product of the numbers in those sets A and }B \\text{respectively}.\n\n\\text{Sum of the product of the numbers in set A taken two at a time is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 3 \\text{to} 4 $\n$ \\text{There are two sets A and }B \\text{each of which consists of three numbers in A}.P. \\text{whose sum is} 15. D \\text{and }d \\text{are their respective common differences such that }D - d = 1, D > 0. \\text{If} \\dfrac{p}{q} = \\dfrac{7}{8} \\text{where }p \\text{and }q \\text{are the product of the numbers in those sets A and }B \\text{respectively}. $\n\n$ \\text{Sum of the product of the numbers in set A taken two at a time is}: $",
         "options": [
           "$51$",
           "$71$",
@@ -20565,7 +20565,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "b206eab0-f2fb-43c3-9d87-efbebb9e7034",
         "questionNumber": 4,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 3 \\text{to} 4\n\\text{There are two sets A and }B \\text{each of which consists of three numbers in A}.P. \\text{whose sum is} 15. D \\text{and }d \\text{are their respective common differences such that }D - d = 1, D > 0. \\text{If} \\dfrac{p}{q} = \\dfrac{7}{8} \\text{where }p \\text{and }q \\text{are the product of the numbers in those sets A and }B \\text{respectively}.\n\n\\text{Sum of the product of the numbers in set }B \\text{taken two at a time is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 3 \\text{to} 4 $\n$ \\text{There are two sets A and }B \\text{each of which consists of three numbers in A}.P. \\text{whose sum is} 15. D \\text{and }d \\text{are their respective common differences such that }D - d = 1, D > 0. \\text{If} \\dfrac{p}{q} = \\dfrac{7}{8} \\text{where }p \\text{and }q \\text{are the product of the numbers in those sets A and }B \\text{respectively}. $\n\n$ \\text{Sum of the product of the numbers in set }B \\text{taken two at a time is}: $",
         "options": [
           "$52$",
           "$54$",
@@ -20579,7 +20579,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "b06a841b-bfc7-4e58-93e5-ad032f114dc4",
         "questionNumber": 5,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 5 \\text{to} 7\n\\text{Let }x, y, z \\text{are positive reals and }x + y + z = 60 \\text{and }x > 3.\n\n\\text{Maximum value of} (x - 3)(y + 1)(z + 5) \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 5 \\text{to} 7 $\n$ \\text{Let }x, y, z \\text{are positive reals and }x + y + z = 60 \\text{and }x > 3. $\n\n$ \\text{Maximum value of} (x - 3)(y + 1)(z + 5) \\text{is}: $",
         "options": [
           "$(17)(21)(25)$",
           "$(20)(21)(23)$",
@@ -20593,7 +20593,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "8bd32143-cd37-45b8-bb8c-84c245909f33",
         "questionNumber": 6,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 5 \\text{to} 7\n\\text{Let }x, y, z \\text{are positive reals and }x + y + z = 60 \\text{and }x > 3.\n\n\\text{Maximum value of} (x - 3)(2y + 1)(3z + 5) \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 5 \\text{to} 7 $\n$ \\text{Let }x, y, z \\text{are positive reals and }x + y + z = 60 \\text{and }x > 3. $\n\n$ \\text{Maximum value of} (x - 3)(2y + 1)(3z + 5) \\text{is}: $",
         "options": [
           "$\\dfrac{(355)^3}{3^3 \\cdot 6^2}$",
           "$\\dfrac{(355)^3}{3^3 \\cdot 6^3}$",
@@ -20607,7 +20607,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "6d376994-0391-463f-8f93-5fb6e593ba76",
         "questionNumber": 7,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 5 \\text{to} 7\n\\text{Let }x, y, z \\text{are positive reals and }x + y + z = 60 \\text{and }x > 3.\n\n\\text{Maximum value of }xyz \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 5 \\text{to} 7 $\n$ \\text{Let }x, y, z \\text{are positive reals and }x + y + z = 60 \\text{and }x > 3. $\n\n$ \\text{Maximum value of }xyz \\text{is}: $",
         "options": [
           "$8 \\times 10^3$",
           "$27 \\times 10^3$",
@@ -20621,7 +20621,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "adbab818-7bfa-4c17-84fb-4706c10c7cb1",
         "questionNumber": 8,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 8 \\text{to} 10\n\\text{Two consecutive numbers from }n \\text{natural numbers} 1, 2, 3, \\dots, n \\text{are removed}. \\text{Arithmetic mean of the remaining numbers is} \\dfrac{105}{4}.\n\n\\text{The value of }n \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 8 \\text{to} 10 $\n$ \\text{Two consecutive numbers from }n \\text{natural numbers} 1, 2, 3, \\dots, n \\text{are removed}. \\text{Arithmetic mean of the remaining numbers is} \\dfrac{105}{4}. $\n\n$ \\text{The value of }n \\text{is}: $",
         "options": [
           "$48$",
           "$50$",
@@ -20635,7 +20635,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "7ecb627d-f272-4ff6-bec0-d241a74971d9",
         "questionNumber": 9,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 8 \\text{to} 10\n\\text{Two consecutive numbers from }n \\text{natural numbers} 1, 2, 3, \\dots, n \\text{are removed}. \\text{Arithmetic mean of the remaining numbers is} \\dfrac{105}{4}.\n\n\\text{The }G.M. \\text{of the removed numbers is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 8 \\text{to} 10 $\n$ \\text{Two consecutive numbers from }n \\text{natural numbers} 1, 2, 3, \\dots, n \\text{are removed}. \\text{Arithmetic mean of the remaining numbers is} \\dfrac{105}{4}. $\n\n$ \\text{The }G.M. \\text{of the removed numbers is}: $",
         "options": [
           "$\\sqrt{30}$",
           "$\\sqrt{42}$",
@@ -20649,7 +20649,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "74aa1362-f8cb-42b5-a3ee-351ebbe542dc",
         "questionNumber": 10,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 8 \\text{to} 10\n\\text{Two consecutive numbers from }n \\text{natural numbers} 1, 2, 3, \\dots, n \\text{are removed}. \\text{Arithmetic mean of the remaining numbers is} \\dfrac{105}{4}.\n\n\\text{Let removed numbers are} x_1, x_2 \\text{then} x_1 + x_2 + n = $",
+        "text": "$ \\text{Paragraph for Question Nos}. 8 \\text{to} 10 $\n$ \\text{Two consecutive numbers from }n \\text{natural numbers} 1, 2, 3, \\dots, n \\text{are removed}. \\text{Arithmetic mean of the remaining numbers is} \\dfrac{105}{4}. $\n\n$ \\text{Let removed numbers are} x_1, x_2 \\text{then} x_1 + x_2 + n = $",
         "options": [
           "$61$",
           "$63$",
@@ -20663,7 +20663,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "73e208f6-22ac-48c3-bab8-82784007c389",
         "questionNumber": 11,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 11 \\text{to} 13\n\\text{The sequence} \\{a_n\\} \\text{is defined by formula} a_0 = 4 \\text{and} a_{n+1} = a_n^2 - 2a_n + 2 \\text{for }n \\ge 0. \\text{Let the sequence} \\{b_n\\} \\text{is defined by formula} b_0 = \\dfrac{1}{2} \\text{and} b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall n \\ge 1.\n\n\\text{The value of} a_{10} \\text{is equal to}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 11 \\text{to} 13 $\n$ \\text{The sequence} \\{a_n\\} \\text{is defined by formula} a_0 = 4 \\text{and} a_{n+1} = a_n^2 - 2a_n + 2 \\text{for }n \\ge 0. \\text{Let the sequence} \\{b_n\\} \\text{is defined by formula} b_0 = \\dfrac{1}{2} \\text{and} b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall n \\ge 1. $\n\n$ \\text{The value of} a_{10} \\text{is equal to}: $",
         "options": [
           "$1 + 2^{1024}$",
           "$4^{1024}$",
@@ -20677,7 +20677,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "98777b1a-0fa7-4c26-91c0-63b4d8d2f498",
         "questionNumber": 12,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 11 \\text{to} 13\n\\text{The sequence} \\{a_n\\} \\text{is defined by formula} a_0 = 4 \\text{and} a_{n+1} = a_n^2 - 2a_n + 2 \\text{for }n \\ge 0. \\text{Let the sequence} \\{b_n\\} \\text{is defined by formula} b_0 = \\dfrac{1}{2} \\text{and} b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall n \\ge 1.\n\n\\text{The value of }n \\text{for which} b_n = \\dfrac{3280}{3281} \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 11 \\text{to} 13 $\n$ \\text{The sequence} \\{a_n\\} \\text{is defined by formula} a_0 = 4 \\text{and} a_{n+1} = a_n^2 - 2a_n + 2 \\text{for }n \\ge 0. \\text{Let the sequence} \\{b_n\\} \\text{is defined by formula} b_0 = \\dfrac{1}{2} \\text{and} b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall n \\ge 1. $\n\n$ \\text{The value of }n \\text{for which} b_n = \\dfrac{3280}{3281} \\text{is}: $",
         "options": [
           "$2$",
           "$3$",
@@ -20691,7 +20691,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "5d21d90b-f330-4320-bd65-bb588fc69001",
         "questionNumber": 13,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 11 \\text{to} 13\n\\text{The sequence} \\{a_n\\} \\text{is defined by formula} a_0 = 4 \\text{and} a_{n+1} = a_n^2 - 2a_n + 2 \\text{for }n \\ge 0. \\text{Let the sequence} \\{b_n\\} \\text{is defined by formula} b_0 = \\dfrac{1}{2} \\text{and} b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall n \\ge 1.\n\n\\text{The sequence} \\{b_n\\} \\text{satisfies the recurrence formula}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 11 \\text{to} 13 $\n$ \\text{The sequence} \\{a_n\\} \\text{is defined by formula} a_0 = 4 \\text{and} a_{n+1} = a_n^2 - 2a_n + 2 \\text{for }n \\ge 0. \\text{Let the sequence} \\{b_n\\} \\text{is defined by formula} b_0 = \\dfrac{1}{2} \\text{and} b_n = \\dfrac{2a_0 a_1 a_2 \\dots a_{n-1}}{a_n} \\forall n \\ge 1. $\n\n$ \\text{The sequence} \\{b_n\\} \\text{satisfies the recurrence formula}: $",
         "options": [
           "$b_{n+1} = \\dfrac{2b_n}{1 - b_n^2}$",
           "$b_{n+1} = \\dfrac{2b_n}{1 + b_n^2}$",
@@ -20705,7 +20705,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "0e543a0b-838f-4a09-a119-29d35bd867a8",
         "questionNumber": 14,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 14 \\text{to} 15\n\\text{Let }f(n) = \\sum_{r=2}^n \\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}}, \\text{a} = \\lim_{n \\to \\infty} f(n) \\text{and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x + t = 0 \\text{has two positive roots} \\alpha \\text{and} \\beta.\n\n\\text{If value of }f(7) + f(8) \\text{is} \\dfrac{p}{q} \\text{where }p \\text{and }q \\text{are relatively prime}, \\text{then} (p - q) \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 14 \\text{to} 15 $\n$ \\text{Let }f(n) = \\sum_{r=2}^n \\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}}, \\text{a} = \\lim_{n \\to \\infty} f(n) \\text{and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x + t = 0 \\text{has two positive roots} \\alpha \\text{and} \\beta. $\n\n$ \\text{If value of }f(7) + f(8) \\text{is} \\dfrac{p}{q} \\text{where }p \\text{and }q \\text{are relatively prime}, \\text{then} (p - q) \\text{is}: $",
         "options": [
           "$53$",
           "$55$",
@@ -20719,7 +20719,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "6d7d1a4d-70fd-4878-bd52-246bf56d8d21",
         "questionNumber": 15,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 14 \\text{to} 15\n\\text{Let }f(n) = \\sum_{r=2}^n \\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}}, \\text{a} = \\lim_{n \\to \\infty} f(n) \\text{and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x + t = 0 \\text{has two positive roots} \\alpha \\text{and} \\beta.\n\n\\text{Minimum value of} \\dfrac{4}{\\alpha} + \\dfrac{1}{\\beta} \\text{is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 14 \\text{to} 15 $\n$ \\text{Let }f(n) = \\sum_{r=2}^n \\dfrac{r}{\\binom{r}{2} \\cdot \\binom{r+1}{2}}, \\text{a} = \\lim_{n \\to \\infty} f(n) \\text{and }x^2 - \\left(2a - \\dfrac{1}{2}\\right)x + t = 0 \\text{has two positive roots} \\alpha \\text{and} \\beta. $\n\n$ \\text{Minimum value of} \\dfrac{4}{\\alpha} + \\dfrac{1}{\\beta} \\text{is}: $",
         "options": [
           "$2$",
           "$6$",
@@ -20733,7 +20733,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "118c8704-de9d-4fc3-8c47-ad97e76c2ca3",
         "questionNumber": 16,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 16 \\text{to} 17\n\\text{Given the sequence of number} a_1, a_2, a_3, \\dots, a_{1005} \\text{which satisfy} \\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009} \\text{Also} a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010\n\n\\text{Nature of the sequence is}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 16 \\text{to} 17 $\n$ \\text{Given the sequence of number} a_1, a_2, a_3, \\dots, a_{1005} \\text{which satisfy} \\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009} \\text{Also} a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010 $\n\n$ \\text{Nature of the sequence is}: $",
         "options": [
           "$A.P.$",
           "$G.P.$",
@@ -20747,7 +20747,7 @@ window.DEFAULT_BLACKBOOK = [
         "id": "73c2b8c9-e5ff-4294-8e85-7725557c7714",
         "questionNumber": 17,
         "exerciseName": "Exercise-3: Comprehension Type Problems",
-        "text": "$ \\text{Paragraph for Question Nos}. 16 \\text{to} 17\n\\text{Given the sequence of number} a_1, a_2, a_3, \\dots, a_{1005} \\text{which satisfy} \\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009} \\text{Also} a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010\n\n21^{\\text{st}} \\text{term of the sequence is equal to}: $",
+        "text": "$ \\text{Paragraph for Question Nos}. 16 \\text{to} 17 $\n$ \\text{Given the sequence of number} a_1, a_2, a_3, \\dots, a_{1005} \\text{which satisfy} \\dfrac{a_1}{a_1 + 1} = \\dfrac{a_2}{a_2 + 3} = \\dfrac{a_3}{a_3 + 5} = \\dots = \\dfrac{a_{1005}}{a_{1005} + 2009} \\text{Also} a_1 + a_2 + a_3 + \\dots + a_{1005} = 2010 $\n\n$ 21^{\\text{st}} \\text{term of the sequence is equal to}: $",
         "options": [
           "$\\dfrac{86}{1005}$",
           "$\\dfrac{83}{1005}$",

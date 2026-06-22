@@ -108,7 +108,7 @@ function parseFullText(text) {
     const line = lines[i];
 
     // Detect markdown table: lines starting with |
-    if (line.trim().startsWith('|') && i + 1 < lines.length && lines[i + 1].trim().startsWith('|---')) {
+    if (line.trim().startsWith('|') && i + 1 < lines.length && /^\|\s*:?-{3,}/.test(lines[i + 1].trim())) {
       // It's a table — collect all rows
       const tableLines = [];
       // header row
