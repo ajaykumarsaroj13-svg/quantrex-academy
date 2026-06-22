@@ -1,8 +1,0 @@
-
-			const colorMode =
-				window.localStorage.getItem('nuxt-color-mode') ||
-				window.localStorage.getItem('color-theme') ||
-				'light';
-			if (colorMode === 'dark') window.document.documentElement.classList.add('dark');
-			window.localStorage.removeItem('nuxt-color-mode');
-		
