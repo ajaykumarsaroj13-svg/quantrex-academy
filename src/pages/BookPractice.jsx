@@ -490,7 +490,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
               </div>
 
                 {/* Question Text */}
-                <div className="leading-[1.9] text-black mb-6 font-bold" style={{ fontSize: `${fontSize}px` }}>
+                <div className="leading-[1.9] text-black mb-6 font-bold whitespace-pre-wrap" style={{ fontSize: `${fontSize}px` }}>
                   <MathRenderer text={question.text} />
                 </div>
 
@@ -605,7 +605,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
                           <div className={`w-8 h-8 shrink-0 rounded-full border-2 flex items-center justify-center font-bold text-[13px] transition-colors ${circleClass}`}>
                             {OPTION_LABELS[i]}
                           </div>
-                            <div className="flex-1 mt-0.5 font-semibold text-black leading-relaxed" style={{ fontSize: `${Math.max(13, fontSize - 1)}px` }}>
+                            <div className="flex-1 mt-0.5 font-semibold text-black leading-relaxed whitespace-pre-wrap" style={{ fontSize: `${Math.max(13, fontSize - 1)}px` }}>
                               <MathRenderer text={opt} />
                             </div>
                           {isAttempted && isActuallyCorrect && (
