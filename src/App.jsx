@@ -87,16 +87,11 @@ export default function App() {
   });
 
   const [toppers, setToppers] = useState(() => {
-    // Clear old cache
-    if (localStorage.getItem('quantrex_toppers_v9')) {
-      localStorage.removeItem('quantrex_toppers_v7');
-    }
-    const saved = localStorage.getItem('quantrex_toppers_v9');
-    if (saved) {
-      try { return JSON.parse(saved); } catch (e) {}
-    }
-    const activeToppers = window.DEFAULT_TOPPERS && window.DEFAULT_TOPPERS.length > 0 
-      ? window.DEFAULT_TOPPERS 
+    // Clear old/stale cache (v7, v9 carried broken topper image paths)
+    localStorage.removeItem('quantrex_toppers_v7');
+    localStorage.removeItem('quantrex_toppers_v9');
+    const activeToppers = window.DEFAULT_TOPPERS && window.DEFAULT_TOPPERS.length > 0
+      ? window.DEFAULT_TOPPERS
       : DEFAULT_TOPPERS;
     return activeToppers;
   });

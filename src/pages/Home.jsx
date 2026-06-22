@@ -171,7 +171,12 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
                   key={idx}
                   className="shrink-0 snap-center group relative bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold/40 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transition-all duration-500 hover:-translate-y-2 flex flex-col w-[300px] md:w-[400px]"
                 >
-                  <img src={t.photo} alt={t.name} className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+                  <img
+                    src={t.photo}
+                    alt={t.name}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/toppers/dibyanshu_mains.jpg'; }}
+                    className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                  />
                 </div>
               ))}
               </div>
