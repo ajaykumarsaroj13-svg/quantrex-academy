@@ -1,0 +1,107 @@
+[
+  {
+    "id": "4Alko7gVMaP2XraCHw1kluhs5rq",
+    "questionNumber": 85,
+    "questionText": "The difference between degree and order of a differential equation that represents the family of curves given by $${y^2} = a\\left( {x + {{\\sqrt a } \\over 2}} \\right)$$, a &gt; 0 is _________.",
+    "options": [],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "NUMERICAL",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "order-and-degree",
+    "difficulty": "medium",
+    "solution": "$${y^2} = a\\left( {x + {{\\sqrt a } \\over 2}} \\right)$$\n<br><br>Differentiating both sides, we get\n<br><br>$$2yy' = a$$<br><br>$${y^2} = 2yy'\\left( {x + {{\\sqrt {2yy'} } \\over 2}} \\right)$$<br><br>$$y = 2y'\\left( {x + {{\\sqrt {yy'} } \\over {\\sqrt 2 }}} \\right)$$<br><br>$$y - 2xy' = \\sqrt 2 y'\\sqrt {yy'} $$<br><br>$${\\left( {y - 2x{{dy} \\over {dx}}} \\right)^2} = 2y{\\left( {{{dy} \\over {dx}}} \\right)^3}$$<br><br>D = 3 &amp; O = 1<br><br>$$ \\therefore $$ D $$-$$ O = 3 $$-$$ 1 = 2",
+    "section": "B",
+    "type": "NUMERICAL"
+  },
+  {
+    "id": "PVddRaYxCsHwkkYj",
+    "questionNumber": 125,
+    "questionText": "The differential equation whose solution is $$A{x^2} + B{y^2} = 1$$ \n<br>where $$A$$ and $$B$$ are arbitrary constants is of ",
+    "options": [
+      "second order and second degree",
+      "first  order and second degree ",
+      "first order and first degree",
+      "second order and first degree"
+    ],
+    "correctOption": 3,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "order-and-degree",
+    "difficulty": "medium",
+    "solution": "$$A{x^2} + B{y^2} = 1\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( 1 \\right)$$\n<br><br>$$Ax + by{{dy} \\over {dx}} = 0\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( 2 \\right)$$\n<br><br>$$A + By{{{d^2}y} \\over {d{x^2}}} + B{\\left( {{{dy} \\over {dx}}} \\right)^2} = 0\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( 3 \\right)$$\n<br><br>From $$(2)$$ and $$(3)$$ \n<br><br>$$x\\left\\{ { - By{{{d^2}y} \\over {d{x^2}}} - B{{\\left( {{{dy} \\over {dx}}} \\right)}^2}} \\right\\} + By{{dy} \\over {dx}} = 0$$\n<br><br>Dividing both sides by $$-B,$$ we get \n<br><br>$$ \\Rightarrow xy{{{d^2}y} \\over {d{x^2}}} + x{\\left( {{{dy} \\over {dx}}} \\right)^2} - y{{dy} \\over {dx}} = 0$$\n<br><br>Which is $$DE$$ of order $$2$$ and degree $$1.$$ ",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "9wlLHTpefi6qCARx",
+    "questionNumber": 182,
+    "questionText": "The differential equation representing the family of curves $${y^2} = 2c\\left( {x + \\sqrt c } \\right),$$ where $$c&gt;0,$$ is a parameter, is of order and degree as follows: ",
+    "options": [
+      "order $$1,$$ degree $$2$$",
+      "order $$1,$$ degree $$1$$",
+      "order $$1,$$ degree $$3$$",
+      "order $$2,$$ degree $$2$$"
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "order-and-degree",
+    "difficulty": "medium",
+    "solution": "$${y^2} = 2c\\left( {x + \\sqrt c } \\right)\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( i \\right)$$\n<br><br>$$2yy' = 2c.1\\,\\,\\,or\\,\\,\\,yy' = c\\,\\,\\,...\\left( {ii} \\right)$$\n<br><br>$$ \\Rightarrow {y^2} = 2yy'\\left( {x + \\sqrt {yy'} } \\right)$$\n<br><br>$$\\left[ \\, \\right.$$ On putting value of $$c$$ from $$(ii)$$ in $$(i)$$ $$\\left. \\, \\right]$$\n<br><br>On simplifying, we get \n<br><br>$${\\left( {y - 2xy'} \\right)^2} = 4yy{'^3}\\,\\,\\,\\,\\,\\,\\,\\,\\,...\\left( {iii} \\right)$$\n<br><br>Hence equation $$(iii)$$ is of order $$1$$ and degree $$3.$$ ",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "74wvDLmkOoJYDYJv",
+    "questionNumber": 173,
+    "questionText": "The degree and order of the differential equation of the family of all parabolas whose axis is $$x$$-axis, are respectively.",
+    "options": [
+      "$$2, 3$$ ",
+      "$$2,1$$ ",
+      "$$1,2$$ ",
+      "$$3,2.$$"
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "order-and-degree",
+    "difficulty": "easy",
+    "solution": "General equation of parabola whose axis is along X-axis\n<br><br>$${y^2} = 4a\\left( {x - h} \\right)$$\n<br><br>Differentiating with respect to x, we get\n<br><br>$$2y{y_1} = 4a$$\n<br><br>$$ \\Rightarrow y{y_1} = 2a$$ \n<br><br>Again differentiating with respect to x, we get\n<br><br>$$ \\Rightarrow {y_1}^2 + y{y_2} = 0$$\n<br><br>Degree $$=1,$$ order $$=2.$$",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "v1C52TlUog2JpJ03",
+    "questionNumber": 174,
+    "questionText": "The order and degree of the differential equation \n<br>$$\\,{\\left( {1 + 3{{dy} \\over {dx}}} \\right)^{2/3}} = 4{{{d^3}y} \\over {d{x^3}}}$$ are ",
+    "options": [
+      "$$\\left( {1,{2 \\over 3}} \\right)$$ ",
+      "$$(3, 1)$$ ",
+      "$$(3,3)$$ ",
+      "$$(1,2)$$"
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "order-and-degree",
+    "difficulty": "easy",
+    "solution": "$${\\left( {1 + 3{{d\\,y} \\over {d\\,x}}} \\right)^2} =$$ (4)<sup>3</sup>$${\\left( {{{{d^3}y} \\over {d\\,{x^3}}}} \\right)^3}$$\n<br><br>$$ \\Rightarrow {\\left( {1 + 3{{d\\,y} \\over {d\\,x}}} \\right)^2} = 16{\\left( {{{{d^3}y} \\over {d\\,{x^3}}}} \\right)^3}$$\n<br><br>$$ \\therefore $$ Order = 3 and Degree = 3",
+    "section": "A",
+    "type": "SCQ"
+  }
+]

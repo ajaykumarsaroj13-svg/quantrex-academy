@@ -1,0 +1,32 @@
+{
+  "testId": "mock_test_1",
+  "title": "Ultimate Mock Test 1 (Full Syllabus)",
+  "totalQuestions": 75,
+  "duration": 180,
+  "questions": [
+    {
+      "questionId": "mq1",
+      "subject": "Physics",
+      "text": "<p>A particle moves in a straight line with retardation proportional to its displacement. Its loss of kinetic energy for any displacement \\(x\\) is proportional to:</p>",
+      "options": ["\\(x\\)", "\\(x^2\\)", "\\(\\ln x\\)", "\\(e^x\\)"],
+      "correctOptionIndex": 1,
+      "solution": "<p>Retardation \\(a = -kx\\). We know \\(v \\frac{dv}{dx} = -kx\\). Integrating both sides, \\(\\frac{v^2}{2} = -\\frac{kx^2}{2} + C\\). Loss of KE is proportional to \\(x^2\\).</p>"
+    },
+    {
+      "questionId": "mq2",
+      "subject": "Chemistry",
+      "text": "<p>Which of the following compounds will exhibit geometrical isomerism?</p>",
+      "options": ["1-Phenyl-2-butene", "3-Phenyl-1-butene", "2-Phenyl-1-butene", "1,1-Diphenyl-1-propene"],
+      "correctOptionIndex": 0,
+      "solution": "<p>1-Phenyl-2-butene has restricted rotation around the C=C bond and different groups attached to the double-bonded carbons, allowing for cis-trans isomerism.</p>"
+    },
+    {
+      "questionId": "mq3",
+      "subject": "Mathematics",
+      "text": "<p>If \\(\\alpha\\) and \\(\\beta\\) are the roots of the equation \\(x^2 - x + 1 = 0\\), then \\(\\alpha^{2009} + \\beta^{2009}\\) is equal to:</p>",
+      "options": ["-1", "1", "2", "-2"],
+      "correctOptionIndex": 1,
+      "solution": "<p>The roots of \\(x^2 - x + 1 = 0\\) are \\(-\\omega\\) and \\(-\\omega^2\\). Substituting these into the expression gives \\((-\\omega)^{2009} + (-\\omega^2)^{2009} = -(\\omega^2 + \\omega) = 1\\).</p>"
+    }
+  ]
+}

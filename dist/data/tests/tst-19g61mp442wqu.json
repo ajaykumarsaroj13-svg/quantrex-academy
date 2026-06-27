@@ -1,0 +1,480 @@
+{
+  "testId": "tst-19g61mp442wqu",
+  "title": "Ellipse - Chapter Test",
+  "examType": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "totalQuestions": 25,
+  "questions": [
+    {
+      "id": "mnswhqnc",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $\\mathrm{P}(3 \\cos \\alpha, 2 \\sin \\alpha), \\alpha \\neq 0$, be a point on the ellipse $\\frac{x^2}{9}+\\frac{y^2}{4}=1, \\mathrm{Q}$ be a point on the circle $x^2+y^2-14 x-14 y+82=0$ and R be a point on the line $x+y=5$ such that the centroid of the triangle PQR is $\\left(2+\\cos \\alpha, 3+\\frac{2}{3} \\sin \\alpha\\right)$. Then the sum of the ordinates of all possible points R is:</p>",
+      "options": [
+        "<p>6</p>",
+        "<p>2</p>",
+        "<p>4</p>",
+        "<p>8</p>"
+      ],
+      "correctOption": 3,
+      "solution": "<p><b>Centroid :</b></p>\n<p>Let $Q$ be a point on the given circle. First write the circle in standard form:</p>\n<p>$$x^2+y^2-14x-14y+82=0 \\Rightarrow (x-7)^2+(y-7)^2=16$$</p>\n<p>So we can take</p>\n<p>$$Q(7+4\\cos\\theta,\\;7+4\\sin\\theta)$$</p>\n<p>Point $R$ lies on the line $x+y=5$. Let its ordinate be $y$, then its abscissa is $5-y$, so</p>\n<p>$$R(5-y,\\;y)$$</p>\n<p>Now use the centroid formula. For triangle $PQR$, centroid is</p>\n<p>$$ \\left(\\frac{x_P+x_Q+x_R}{3},\\;\\frac{y_P+y_Q+y_R}{3}\\right) $$</p>\n<p>Given $P(3\\cos\\alpha,\\;2\\sin\\alpha)$, so the centroid becomes</p>\n<p>$$ \\begin{aligned} &amp; \\left(\\frac{3 \\cos \\alpha+7+4 \\cos \\theta+5-y}{3}, \\frac{2 \\sin \\alpha+7+4 \\sin \\theta+y}{3}\\right) \\\\ &amp; =\\left(\\cos \\alpha+2, \\frac{2}{3} \\sin \\alpha+3\\right) \\end{aligned} $$</p>\n<p><img alt=\"JEE Main 2026 (Online) 4th April Evening Shift Mathematics - Ellipse Question 2 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mozwrnke/23257ac8-41c9-4572-9862-645f7a3dddc7/2c9b22e0-4c82-11f1-999e-c37a02c95833/file-6y3zli1mozwrnkf.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mozwrnke/23257ac8-41c9-4572-9862-645f7a3dddc7/2c9b22e0-4c82-11f1-999e-c37a02c95833/file-6y3zli1mozwrnkf.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p><b>On comparison</b></p>\n<p>Compare the $x$-coordinates:</p>\n<p>$$\\frac{3 \\cos \\alpha+7+4 \\cos \\theta+5-y}{3}=\\cos\\alpha+2 \\Rightarrow 4\\cos\\theta=y-6$$</p>\n<p>So,</p>\n<p>$$ \\cos \\theta=\\frac{y-6}{4} $$</p>\n<p>Compare the $y$-coordinates:</p>\n<p>$$\\frac{2 \\sin \\alpha+7+4 \\sin \\theta+y}{3}=\\frac{2}{3}\\sin\\alpha+3 \\Rightarrow 4\\sin\\theta=2-y$$</p>\n<p>So,</p>\n<p>$$ \\sin \\theta=\\frac{2-y}{4} $$</p>\n<p>Now use the identity $\\sin^2\\theta+\\cos^2\\theta=1$:</p>\n<p>$$\\sin ^2 \\theta+\\cos ^2 \\theta=1 \\Rightarrow(y-6)^2+(y-2)^2=16$$</p>\n<p>Simplify:</p>\n<p>$$y^2-8 y+12=0$$</p>\n<p>This quadratic gives two possible values of $y$ (ordinates of $R$). The sum of roots is $8$, so</p>\n<p>$$\\Rightarrow \\text { Sum of ordinates }=8$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "jaoe38c1lsd4d0vp",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$P$$ be a parabola with vertex $$(2,3)$$ and directrix $$2 x+y=6$$. Let an ellipse $$E: \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1, a>b$$, of eccentricity $$\\frac{1}{\\sqrt{2}}$$ pass through the focus of the parabola $$P$$. Then, the square of the length of the latus rectum of $$E$$, is</p>",
+      "options": [
+        "$$\\frac{512}{25}$$\n",
+        "$$\\frac{656}{25}$$\n",
+        "$$\\frac{385}{8}$$\n",
+        "$$\\frac{347}{8}$$"
+      ],
+      "correctOption": 1,
+      "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsjwesuo/97ad35c7-e930-402f-8ae3-bf6649f70495/50a78900-ca2d-11ee-8854-3b5a6c9e9092/file-6y3zli1lsjwesup.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsjwesuo/97ad35c7-e930-402f-8ae3-bf6649f70495/50a78900-ca2d-11ee-8854-3b5a6c9e9092/file-6y3zli1lsjwesup.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 31st January Evening Shift Mathematics - Ellipse Question 38 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\text { Slope of axis }=\\frac{1}{2} \\\\\n&amp; y-3=\\frac{1}{2}(x-2) \\\\\n&amp; \\Rightarrow 2 y-6=x-2 \\\\\n&amp; \\Rightarrow 2 y-x-4=0 \\\\\n&amp; 2 x+y-6=0 \\\\\n&amp; 4 x+2 y-12=0 \\\\\n&amp; \\alpha+1.6=4 \\Rightarrow \\alpha=2.4 \\\\\n&amp; \\beta+2.8=6 \\Rightarrow \\beta=3.2\n\\end{aligned}$$</p>\n<p>Ellipse passes through $$(2.4,3.2)$$</p>\n<p>$$\\Rightarrow \\frac{\\left(\\frac{24}{10}\\right)^2}{\\mathrm{a}^2}+\\frac{\\left(\\frac{32}{10}\\right)^2}{\\mathrm{~b}^2}=1$$ ..... (1)</p>\n<p>Also $$1-\\frac{\\mathrm{b}^2}{\\mathrm{a}^2}=\\frac{1}{2}=\\frac{\\mathrm{b}^2}{\\mathrm{a}^2}=\\frac{1}{2}$$</p>\n<p>$$\\Rightarrow a^2=2 b^2$$</p>\n<p>Put in (1) $$\\Rightarrow b^2=\\frac{328}{25}$$</p>\n<p>$$\\Rightarrow\\left(\\frac{2 \\mathrm{~b}^2}{\\mathrm{a}}\\right)^2=\\frac{4 \\mathrm{~b}^2}{\\mathrm{a}^2} \\times \\mathrm{b}^2=4 \\times \\frac{1}{2} \\times \\frac{328}{25}=\\frac{656}{25}\n$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "liins5l0",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $T_1$ and $T_2$ be two distinct common tangents to the ellipse $E: \\frac{x^2}{6}+\\frac{y^2}{3}=1$ and the parabola $P: y^2=12 x$. Suppose that the tangent $T_1$ touches $P$ and $E$ at the points $A_1$ and $A_2$, respectively and the tangent $T_2$ touches $P$ and $E$ at the points $A_4$ and $A_3$, respectively. Then which of the following statements is(are) true?",
+      "options": [
+        "The area of the quadrilateral $A_1 A_2 A_3 A_4$ is 35 square units",
+        "The area of the quadrilateral $A_1 A_2 A_3 A_4$ is 36 square units",
+        "The tangents $T_1$ and $T_2$ meet the $x$-axis at the point $(-3,0)$",
+        "The tangents $T_1$ and $T_2$ meet the $x$-axis at the point $(-6,0)$"
+      ],
+      "correctOption": 0,
+      "solution": "$$\n\\begin{aligned}\n&amp; E: \\frac{x^2}{6}+\\frac{y^2}{3}=1 \\text {, Tangent : } y=m_1 x \\pm \\sqrt{6 m_1^2+3} \\\\\\\\\n&amp; P: y^2=12 x, \\text { Tangent: } y=m_2 x+\\frac{3}{m_2}\n\\end{aligned}\n$$\n\n<br><br>For common tangent\n<br><br>$$\n\\begin{aligned}\n&amp; m=m_1=m_2, \\pm \\sqrt{6 m_1^2+3}=\\frac{3}{m_2} \\\\\\\\\n&amp; \\Rightarrow m= \\pm 1\n\\end{aligned}\n$$\n<br><br>$\\Rightarrow$ Equation of common tangents $y=x+3$ and $y=-x-3$ point of contact for parabola is $\\left(\\frac{a}{m^2}, \\frac{2 a}{m}\\right)$\n<br><br>$$\n\\Rightarrow A_1 \\equiv(3,6), \\quad A_4(3-6)\n$$\n\n<br><br>Let $A_2\\left(x_1, y_1\\right) \\Rightarrow$ tangent to $E$ is $\\frac{x x_1}{6}+\\frac{y y_1}{3}=1$\n<br><br>$A_3$ is mirror image of $A_2$ in $x$-axis $\\Rightarrow A_3(-2,-1)$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lrv17k8v/36cdea38-3996-45b9-84dd-d9db5a0fc939/7cc0ccf0-bc80-11ee-8bcb-35b04a6ab76c/file-6y3zli1lrv17k8w.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lrv17k8v/36cdea38-3996-45b9-84dd-d9db5a0fc939/7cc0ccf0-bc80-11ee-8bcb-35b04a6ab76c/file-6y3zli1lrv17k8w.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2023 Paper 1 Online Mathematics - Ellipse Question 4 English Explanation\">\n<br>Intersection point of $T_1=0$ and $T_2=0$ is $(-3,0)$\n<br><br>Area of quadrilateral $A_1 A_2 A_3 A_4=\\frac{1}{2}(12+2) \\times 5=35$ square units",
+      "marks": 4,
+      "negativeMarks": -2,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "VkdvpRdbpHlWvtYoCNZTw",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let S and S' be the foci of an ellipse and B be any one of the extremities of its minor axis. If $$\\Delta $$S'BS is a right angled triangle with right angle at B and area ($$\\Delta $$S'BS) = 8 sq. units, then the length of a latus rectum of the ellipse is :\n",
+      "options": [
+        "2",
+        "4$$\\sqrt 2 $$",
+        "4",
+        "2$$\\sqrt 2 $$"
+      ],
+      "correctOption": 2,
+      "solution": "<img src=\"https://imagex.cdn.examgoal.net/cH2yd1rBwE8MpVjWl/S1Lgwel1qXsIkRYdVLVK0Ddl8FoXc/11ov3FXLC1UMoDHntHG4tZ/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th January Evening Slot Mathematics - Ellipse Question 98 English Explanation\">\n<br>b<sup>2</sup> = a<sup>2</sup>e<sup>2</sup> . . . . . .   (i)\n<br><br>$${1 \\over 2}$$ S'B.SB = 8\n<br><br>S'B.SB = 16\n<br><br>a<sup>2</sup>e<sup>2</sup> + b<sup>2</sup> = 16 . . . . .(ii)\n<br><br>b<sup>2</sup> = a<sup>2</sup> (1 $$-$$ e<sup>2</sup>) . . . . .(iii)\n<br><br>using (i), (ii), (iii) a = 4\n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b = $$2\\sqrt 2 $$\n<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e = $${1 \\over {\\sqrt 2 }}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;$$\\ell $$ (L.R) $$=$$ $${{2{b^2}} \\over a} = 4$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "fqgR73iD6te7y31I",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "An ellipse has $$OB$$ as semi minor axis, $$F$$ and $$F$$' its focii and theangle $$FBF$$' is a right angle. Then the eccentricity of the ellipse is :",
+      "options": [
+        "$${1 \\over {\\sqrt 2 }}$$ ",
+        "$${1 \\over 2}$$",
+        "$${1 \\over 4}$$",
+        "$${1 \\over {\\sqrt 3 }}$$"
+      ],
+      "correctOption": 0,
+      "solution": "as $$\\angle FBF' = {90^ \\circ }$$\n<br><br>$$ \\Rightarrow F{B^2} + F'{B^2} = FF{'^2}$$\n<br><br>$$\\therefore$$ $${\\left( {\\sqrt {{a^2}{e^2} + {b^2}} } \\right)^2} + \\left( {\\sqrt {{a^2}{e^2} + {b^2}} } \\right) = {\\left( {2ae} \\right)^2}$$\n<br><br>$$ \\Rightarrow 2\\left( {{a^2}{e^2} + {b^2}} \\right) = 4{a^2}{e^2}$$\n<br><br>$$ \\Rightarrow {e^2} = {{{b^2}} \\over {{a^2}}}$$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/IHZPNjUjilcYnLA1X/3qiTGwl6Kn6qK6XkZGNhf4EoUD9ja/IqqX75geqF6bBcQQb0JSHs/image.png\" loading=\"lazy\" alt=\"AIEEE 2005 Mathematics - Ellipse Question 117 English Explanation\">\n<br><br>Also $${e^2} = 1 - {b^2}/{a^2} = 1 - {e^2}$$\n<br><br>$$ \\Rightarrow 2{e^2} = 1,\\,\\,e = {1 \\over {\\sqrt 2 }}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "2oTqNMY0qPaZCT9gEHjgy2xukfjjqpjo",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If the co-ordinates of two points A and B <br>are $$\\left( {\\sqrt 7 ,0} \\right)$$ and $$\\left( { - \\sqrt 7 ,0} \\right)$$ respectively and<br> P is any\npoint on the conic, 9x<sup>2</sup> + 16y<sup>2</sup> = 144, then PA + PB is equal to :",
+      "options": [
+        "8",
+        "9",
+        "16",
+        "6"
+      ],
+      "correctOption": 0,
+      "solution": "9x<sup>2</sup> + 16y<sup>2</sup> = 144\n<br><br>$$ \\Rightarrow $$ $${{{x^2}} \\over {16}} + {{{y^2}} \\over 9} = 1$$\n<br><br>$$ \\therefore $$ a = 4; b = 3;\n<br><br>Now e = $$\\sqrt {1 - {9 \\over {16}}}  = {{\\sqrt 7 } \\over 4}$$\n<br><br>A and B are foci\n<br><br>PA + PB = 2a = 2 × 4 = 8",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "tlme8nbcqh",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If any point on an ellipse is (3sin<span class=\"math-tex\">$\\alpha$</span>, 5cos<span class=\"math-tex\">$\\alpha$</span>), then what is the eccentricity of the ellipse?",
+      "options": [
+        "4/3",
+        "4/5",
+        "3/4",
+        "1/2"
+      ],
+      "correctOption": 1,
+      "solution": "<ol>\n<li><p>Given point $(x,y)=(3\\sin\\alpha,\\;5\\cos\\alpha)$.  </p></li>\n<li><p>Then  </p>\n<p>$\\sin\\alpha=\\frac{x}{3},\\quad \\cos\\alpha=\\frac{y}{5}.$  </p></li>\n<li><p>Using $\\sin^2\\alpha+\\cos^2\\alpha=1$,  </p>\n<p>$$      \\Bigl(\\frac{x}{3}\\Bigr)^2+\\Bigl(\\frac{y}{5}\\Bigr)^2=1.    $$  </p></li>\n<li><p>This is the ellipse with semi-major axis $a=5$ and semi-minor axis $b=3$.  </p></li>\n<li><p>Eccentricity $e=\\sqrt{1-\\frac{b^2}{a^2}}            =\\sqrt{1-\\frac{3^2}{5^2}}            =\\sqrt{\\frac{16}{25}}            =\\frac{4}{5}.$  </p></li>\n</ol>\n<p>Answer: $\\displaystyle \\frac{4}{5}$ (Option B).</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "lsamf0th",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $\\mathrm{P}$ be a point on the ellipse $\\frac{x^2}{9}+\\frac{y^2}{4}=1$. Let the line passing through $\\mathrm{P}$ and parallel to $y$-axis meet the circle $x^2+y^2=9$ at point $\\mathrm{Q}$ such that $\\mathrm{P}$ and $\\mathrm{Q}$ are on the same side of the $x$-axis. Then, the eccentricity of the locus of the point $R$ on $P Q$ such that $P R: R Q=4: 3$ as $P$ moves on the ellipse, is :",
+      "options": [
+        "$\\frac{13}{21}$",
+        "$\\frac{\\sqrt{139}}{23}$",
+        "$\\frac{\\sqrt{13}}{7}$",
+        "$\\frac{11}{19}$"
+      ],
+      "correctOption": 2,
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsqdjrqo/772aa650-3e8c-46a8-adce-0608922ed01d/09ef1300-cdbd-11ee-a926-9fabe9a328d8/file-6y3zli1lsqdjrqp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsqdjrqo/772aa650-3e8c-46a8-adce-0608922ed01d/09ef1300-cdbd-11ee-a926-9fabe9a328d8/file-6y3zli1lsqdjrqp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 1st February Evening Shift Mathematics - Ellipse Question 41 English Explanation 1\">\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsqdl51c/d5a5c6d5-b0af-43b9-b7e2-7efa69d9eeff/30039c00-cdbd-11ee-a926-9fabe9a328d8/file-6y3zli1lsqdl51d.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsqdl51c/d5a5c6d5-b0af-43b9-b7e2-7efa69d9eeff/30039c00-cdbd-11ee-a926-9fabe9a328d8/file-6y3zli1lsqdl51d.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 1st February Evening Shift Mathematics - Ellipse Question 41 English Explanation 2\">\n<br>$\\begin{aligned} &amp; \\mathrm{h}=3 \\cos \\theta \\\\\\\\ &amp; \\mathrm{k}=\\frac{18}{7} \\sin \\theta\\end{aligned}$\n<br><br>$\\begin{aligned} &amp; \\therefore \\text { locus }=\\frac{\\mathrm{x}^2}{9}+\\frac{49 \\mathrm{y}^2}{324}=1 \\\\\\\\ &amp; \\mathrm{e}=\\sqrt{1-\\frac{324}{49 \\times 9}}=\\frac{\\sqrt{117}}{21}=\\frac{\\sqrt{13}}{7}\\end{aligned}$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "lv7v4g1l",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let the line $$2 x+3 y-\\mathrm{k}=0, \\mathrm{k}>0$$, intersect the $$x$$-axis and $$y$$-axis at the points $$\\mathrm{A}$$ and $$\\mathrm{B}$$, respectively. If the equation of the circle having the line segment $$A B$$ as a diameter is $$x^2+y^2-3 x-2 y=0$$ and the length of the latus rectum of the ellipse $$x^2+9 y^2=k^2$$ is $$\\frac{m}{n}$$, where $$m$$ and $$n$$ are coprime, then $$2 \\mathrm{~m}+\\mathrm{n}$$ is equal to</p>",
+      "options": [
+        "12",
+        "13",
+        "11",
+        "10"
+      ],
+      "correctOption": 2,
+      "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwgi30yz/efd8a8c4-b19c-464d-9aab-50da9ed84968/ccf9e7b0-177f-11ef-97dc-2d80937d5077/file-1lwgi30z0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwgi30yz/efd8a8c4-b19c-464d-9aab-50da9ed84968/ccf9e7b0-177f-11ef-97dc-2d80937d5077/file-1lwgi30z0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 5th April Morning Shift Mathematics - Ellipse Question 34 English Explanation\"></p>\n<p>Equation of circle with $$A B$$ as diameter</p>\n<p>$$\\begin{aligned}\n&amp; \\left(x-\\frac{k}{2}\\right) x+y\\left(y-\\frac{k}{3}\\right)=0 \\\\\n&amp; \\Rightarrow x^2+y^2-\\frac{k x}{2}-\\frac{k y}{3}=0\n\\end{aligned}$$</p>\n<p>Comparing, $$k=6$$</p>\n<p>Latus rectum of ellipse</p>\n<p>$$\\begin{aligned}\n&amp; x^2+9 y^2=k^2=6^2 \\\\\n&amp; \\Rightarrow \\frac{x^2}{6^2}+\\frac{y^2}{2^2}=1 \\\\\n&amp; \\text { L.R }=\\frac{2 b^2}{a}=\\frac{2 \\times 4}{6}=\\frac{4}{3} \\\\\n&amp; m=4 \\\\\n&amp; n=3 \\\\\n&amp; 2 m+n=8+3=11\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "m6v426wh",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The equation of the chord, of the ellipse $\\frac{x^2}{25}+\\frac{y^2}{16}=1$, whose mid-point is $(3,1)$ is :</p>",
+      "options": [
+        "$5 x+16 y=31$\n",
+        "$48 x+25 y=169$\n",
+        "$4 x+122 y=134$\n",
+        "$25 x+101 y=176$"
+      ],
+      "correctOption": 1,
+      "solution": "<p>$$\\begin{aligned}\n&\\text { Equation of chord with given middle point }\\\\\n&\\begin{aligned}\n& \\mathrm{T}=\\mathrm{S}_1 \\\\\n& \\Rightarrow \\frac{3 \\mathrm{x}}{25}+\\frac{\\mathrm{y}}{16}-1=\\frac{9}{25}+\\frac{1}{16}-1 \\\\\n& 48 \\mathrm{x}+25 \\mathrm{y}=144+25 \\\\\n& 48 \\mathrm{x}+25 \\mathrm{y}=169 \\text { Ans. }\n\\end{aligned}\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "1l58g1v33",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The locus of the mid point of the line segment joining the point (4, 3) and the points on the ellipse $${x^2} + 2{y^2} = 4$$ is an ellipse with eccentricity :</p>",
+      "options": [
+        "$${{\\sqrt 3 } \\over 2}$$",
+        "$${1 \\over {2\\sqrt 2 }}$$",
+        "$${1 \\over {\\sqrt 2 }}$$",
+        "$${1 \\over 2}$$"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Let $$P(2\\cos \\theta ,\\,\\sqrt 2 \\sin \\theta )$$ be any point on ellipse $${{{x^2}} \\over 4} + {{{y^2}} \\over 2} = 1$$ and Q(4, 3) and let (h, k) be the mid point of PQ</p>\n<p>then $$h = {{2\\cos \\theta  + 4} \\over 2},\\,k = {{\\sqrt 2 \\sin \\theta  + 3} \\over 2}$$</p>\n<p>$$\\therefore$$ $$\\cos \\theta  = h - 2,\\,\\sin \\theta  = {{2k - 3} \\over {\\sqrt 2 }}$$</p>\n<p>$$\\therefore$$ $${(h - 2)^2} + {\\left( {{{2k - 3} \\over {\\sqrt 2 }}} \\right)^2} = 1$$</p>\n<p>$$ \\Rightarrow {{{{(x - 2)}^2}} \\over 1} + {{{{\\left( {y - {3 \\over 2}} \\right)}^2}} \\over {{1 \\over 2}}} = 1$$</p>\n<p>$$\\therefore$$ $$e = \\sqrt {1 - {1 \\over 2}}  = {1 \\over {\\sqrt 2 }}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "1ktk7nk5w",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "An angle of intersection of the curves, $${{{x^2}} \\over {{a^2}}} + {{{y^2}} \\over {{b^2}}} = 1$$ and x<sup>2</sup> + y<sup>2</sup> = ab, a &gt; b, is :",
+      "options": [
+        "$${\\tan ^{ - 1}}\\left( {{{a + b} \\over {\\sqrt {ab} }}} \\right)$$",
+        "$${\\tan ^{ - 1}}\\left( {{{a - b} \\over {2\\sqrt {ab} }}} \\right)$$",
+        "$${\\tan ^{ - 1}}\\left( {{{a - b} \\over {\\sqrt {ab} }}} \\right)$$",
+        "$${\\tan ^{ - 1}}\\left( {2\\sqrt {ab} } \\right)$$"
+      ],
+      "correctOption": 2,
+      "solution": "$${{{x^2}} \\over {{a^2}}} + {{{y^2}} \\over {{b^2}}} = 1,{x^2} + {y^2} = ab$$<br><br>$${{2{x_1}} \\over {{a^2}}} + {{2{y_1}y'} \\over {{b^2}}} = 0$$<br><br>$$ \\Rightarrow {y_1}' = {{ - {x_1}} \\over {{a^2}}}{{{b^2}} \\over {{y_1}}}$$ .... (1)<br><br>$$\\therefore$$ $$2{x_1} + 2{y_1}y' = 0$$<br><br>$$ \\Rightarrow {y_2}' = {{ - {x_1}} \\over {{y_1}}}$$ ..... (2)<br><br>Here (x<sub>1</sub>y<sub>1</sub>) is point of intersection of both curves<br><br>$$\\therefore$$ $$x_1^2 = {{{a^2}b} \\over {a + b}},y_1^2 = {{a{b^2}} \\over {a + b}}$$<br><br>$$\\therefore$$ $$\\tan \\theta  = \\left| {{{{y_1}' - {y_2}'} \\over {1 + {y_1}'{y_2}'}}} \\right| = \\left| {{{{{ - {x_1}{b^2}} \\over {{a^2}{y_1}}} + {{{x_1}} \\over {{y_1}}}} \\over {1 + {{x_1^2{b^2}} \\over {{a^2}y_1^2}}}}} \\right|$$<br><br>$$\\tan \\theta  = \\left| {{{ - {b^2}{x_1}{y_1} + {a^2}{x_1}{y_1}} \\over {{a^2}y_1^2 + {b^2}x_1^2}}} \\right|$$<br><br>$$\\tan \\theta  = \\left| {{{a - b} \\over {\\sqrt {ab} }}} \\right|$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "1l57oi7dz",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let the eccentricity of an ellipse $${{{x^2}} \\over {{a^2}}} + {{{y^2}} \\over {{b^2}}} = 1$$, $$a > b$$, be $${1 \\over 4}$$. If this ellipse passes through the point $$\\left( { - 4\\sqrt {{2 \\over 5}} ,3} \\right)$$, then $${a^2} + {b^2}$$ is equal to :</p>",
+      "options": [
+        "29",
+        "31",
+        "32",
+        "34"
+      ],
+      "correctOption": 1,
+      "solution": "<p>$${{{x^2}} \\over {{a^2}}} + {{{y^2}} \\over {{b^2}}} = 1$$</p>\n<p>$$ \\Rightarrow {{{{\\left( { - 4\\sqrt {{2 \\over 5}} } \\right)}^2}} \\over {{a^2}}} + {{32} \\over {{b^2}}} = 1$$</p>\n<p>$$ \\Rightarrow {{32} \\over {5{a^2}}} + {9 \\over {{b^2}}} = 1$$ ..... (i)</p>\n<p>$${a^2}(1 - {e^2}) = {b^2}$$</p>\n<p>$${a^2}\\left( {1 - {1 \\over {16}}} \\right) = {b^2}$$</p>\n<p>$$15{a^2} = 16{b^2} \\Rightarrow {a^2} = {{16{b^2}} \\over {15}}$$</p>\n<p>From (i)</p>\n<p>$${6 \\over {{b^2}}} + {9 \\over {{b^2}}} = 1 \\Rightarrow {b^2} = 15$$ & $${a^2} = 16$$</p>\n<p>$${a^2} + {b^2} = 15 + 16 = 31$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "30eir6NIWjeZA7OrQd1kmm3uurg",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let a tangent be drawn to the ellipse $${{{x^2}} \\over {27}} + {y^2} = 1$$ at $$(3\\sqrt 3 \\cos \\theta ,\\sin \\theta )$$ where $$0 \\in \\left( {0,{\\pi  \\over 2}} \\right)$$. Then the value of $$\\theta$$ such that the sum of intercepts on axes made by this tangent is minimum is equal to :",
+      "options": [
+        "$${{\\pi  \\over 6}}$$",
+        "$${{\\pi  \\over 3}}$$",
+        "$${{\\pi  \\over 8}}$$",
+        "$${{\\pi  \\over 4}}$$"
+      ],
+      "correctOption": 0,
+      "solution": "Tangent = $${x \\over {3\\sqrt 3 }}\\cos \\theta  + y\\sin \\theta  = 1$$<br><br>x-intercept = $${3\\sqrt 3 }$$ sec$$\\theta$$<br><br>y-intercept = cosec$$\\theta$$<br><br>sum = $${3\\sqrt 3 }$$ sec$$\\theta$$ + cosec$$\\theta$$ = f($$\\theta$$) $$\\theta$$$$\\in$$$$\\left( {0,{\\pi  \\over 2}} \\right)$$<br><br>$$ \\Rightarrow $$ f'($$\\theta$$) = $${3\\sqrt 3 }$$ sec$$\\theta$$tan$$\\theta$$ $$-$$ cosec$$\\theta$$ cot$$\\theta$$ = 0<br><br>$$ \\Rightarrow $$ $${{3\\sqrt 3 \\sin \\theta } \\over {{{\\cos }^2}\\theta }} = {{\\cos \\theta } \\over {\\sin \\theta }}$$<br><br>$$ \\Rightarrow {\\tan ^3}\\theta  = {\\left( {{1 \\over {\\sqrt 3 }}} \\right)^3}$$<br><br>$$ \\Rightarrow \\tan \\theta  = {1 \\over {\\sqrt 3 }}$$<br><br>$$ \\Rightarrow $$ $$\\theta$$ = $${{\\pi  \\over 6}}$$<br><br>also f'($$\\theta$$) changes sign $$-$$ to + hence minimum.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "ml98p4qa",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let the length of the latus rectum of an ellipse $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1,(a>b)$, be 30 . If its eccentricity is the maximum value of the function $f(t)=-\\frac{3}{4}+2 t-t^2$, then $\\left(a^2+b^2\\right)$ is equal to</p>\n",
+      "options": [
+        "<p>276</p>\n",
+        "<p>516</p>\n",
+        "<p>256</p>\n",
+        "<p>496</p>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>length of latus rectum of ellipse $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1,(a>b)$ is given as:</p>\n<p>$$ l=\\frac{2 b^2}{a}=30 \\Rightarrow b^2=15 a $$</p>\n<p>It is given that eccentricity is the maximum value of the function $f(t)=-t^2+2 t-\\frac{3}{4}$</p>\n<p>max value of quadratic function $a x^2+b x+c$ is given as $\\frac{-D}{4 a}=\\frac{4 a c-b^2}{4 a}$</p>\n<p>$$ f(t)_{\\max }=\\frac{4(-1)\\left(-\\frac{3}{4}\\right)-(2)^2}{4(-1)}=\\frac{3-4}{-4}=\\frac{1}{4} $$</p>\n<p>so eccentricity $e=\\sqrt{1-\\frac{b^2}{a^2}}=\\frac{1}{4}$</p>\n<p>squaring</p>\n<p>$$ 1-\\frac{b^2}{a^2}=\\frac{1}{16} $$</p>\n<p>put value of $b^2=15 a$</p>\n<p>$$ \\begin{aligned} & \\frac{a^2-15 a}{a^2}=\\frac{1}{16} \\\\ & 16 a^2-240 a=a^2 \\\\ & 15 a^2-240 a=0 \\\\ & a(15 a-240)=0 \\\\ & \\text { since } a \\neq 0, a=\\frac{240}{15}=16 \\end{aligned} $$</p>\n<p>Now, value of $a^2+b^2=a^2+15 a\\left\\{b^2=15 a\\right\\}$</p>\n<p>$$ \\begin{aligned} & =(16)^2+15 \\times 16 \\\\ & =256+240=496  \\end{aligned} $$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "7U4w1GA7rQRFV2KmmT7k9k2k5gjiucr",
+      "questionNumber": 16,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let the line y = mx and the ellipse 2x<sup>2</sup> + y<sup>2</sup> = 1\nintersect at a ponit P in the first quadrant. If the\nnormal to this ellipse at P meets the co-ordinate axes at $$\\left( { - {1 \\over {3\\sqrt 2 }},0} \\right)$$ and (0, $$\\beta $$), then $$\\beta $$ is equal\nto :",
+      "options": [
+        "$${{\\sqrt 2 } \\over 3}$$",
+        "$${2 \\over 3}$$",
+        "$${{2\\sqrt 2 } \\over 3}$$",
+        "$${2 \\over {\\sqrt 3 }}$$"
+      ],
+      "correctOption": 0,
+      "solution": "Let P be (x<sub>1</sub>\n, y<sub>1</sub>)\n<br><br>Equation of normal at P is $${x \\over {2{x_1}}} - {y \\over {{y_1}}} = {1 \\over 2} - 1$$\n<br><br>It passes through $$\\left( { - {1 \\over {3\\sqrt 2 }},0} \\right)$$\n<br><br>$$ \\therefore $$ $${{ - 1} \\over {6\\sqrt 2 {x_1}}} =  - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ x<sub>1</sub> = $${1 \\over {3\\sqrt 2 }}$$\n<br><br>Also using 2$$x_1^2$$ + $$y_1^2$$ = 1\n<br><br>$$ \\Rightarrow $$ $$y_1^2$$ = 1 - $${2 \\over {18}}$$\n<br><br>$$ \\Rightarrow $$ y<sub>1</sub> = $${{2\\sqrt 2 } \\over 3}$$\n<br><br>(0, $$\\beta $$) is on the normal.\n<br><br>So 0 - $${\\beta  \\over {{{2\\sqrt 2 } \\over 3}}}$$ = $$ - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $$\\beta $$ = $${{\\sqrt 2 } \\over 3}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "KbnTkPZf7qScCM6DN6YHH",
+      "questionNumber": 17,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let S = $$\\left\\{ {\\left( {x,y} \\right) \\in {R^2}:{{{y^2}} \\over {1 + r}} - {{{x^2}} \\over {1 - r}}} \\right\\};r \\ne  \\pm 1.$$ Then S represents :",
+      "options": [
+        "an ellipse whose eccentricity is&nbsp;$${1 \\over {\\sqrt {r + 1} }},$$&nbsp;where r &gt; 1",
+        "an ellipse whose eccentricity is&nbsp;$${2 \\over {\\sqrt {r + 1} }},$$&nbsp;where 0 &lt; r &lt; 1",
+        "an ellipse whose eccentricity is&nbsp;$${2 \\over {\\sqrt {r - 1} }},$$&nbsp;where 0 &lt; r &lt; 1",
+        "an ellipse whose eccentricity is&nbsp;$$\\sqrt {{2 \\over {r + 1}}}$$,&nbsp;where r &gt; 1"
+      ],
+      "correctOption": 3,
+      "solution": "$${{{y^2}} \\over {1 + r}} - {{{x^2}} \\over {1 - r}} = 1$$\n<br><br>for r &gt; 1, &nbsp;&nbsp;&nbsp;&nbsp;$${{{y^2}} \\over {1 + r}} + {{{x^2}} \\over {1 - r}} = 1$$\n<br><br>$$e = \\sqrt {1 - \\left( {{{r - 1} \\over {r + 2}}} \\right)} $$\n<br><br>$$ = \\sqrt {{{\\left( {r + 1} \\right) - \\left( {r - 1} \\right)} \\over {\\left( {r + 1} \\right)}}} $$\n<br><br>$$ = \\sqrt {{2 \\over {r + 1}}}  = \\sqrt {{2 \\over {r + 1}}} $$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "lsapbol9",
+      "questionNumber": 18,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1, \\mathrm{a}>\\mathrm{b}$ be an ellipse, whose eccentricity is $\\frac{1}{\\sqrt{2}}$ and the length of the latusrectum is $\\sqrt{14}$. Then the square of the eccentricity of $\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$ is :",
+      "options": [
+        "3",
+        "$${7 \\over 2}$$",
+        "$${3 \\over 2}$$",
+        "$${5 \\over 2}$$"
+      ],
+      "correctOption": 2,
+      "solution": "<p>\n\n<p>Given the ellipse $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$ with $a > b$, the eccentricity $ e $ is given by the formula:</p>\n\n<p>$ e = \\sqrt{1 - \\left(\\frac{b}{a}\\right)^2} $</p>\n\n<p>It is provided that the eccentricity $ e $ is $ \\frac{1}{\\sqrt{2}} $ (given), so we can equate the two expressions for eccentricity:</p>\n\n<p>$ \\frac{1}{\\sqrt{2}} = \\sqrt{1 - \\left(\\frac{b}{a}\\right)^2} $</p>\n\n<p>Squaring both sides to eliminate the square root gives:</p>\n\n<p>$ \\frac{1}{2} = 1 - \\left(\\frac{b}{a}\\right)^2 $</p>\n\n<p>$ \\left(\\frac{b}{a}\\right)^2 = 1 - \\frac{1}{2} $</p>\n\n<p>$ \\left(\\frac{b}{a}\\right)^2 = \\frac{1}{2} $</p>\n\n<p>Taking the square root on both sides:</p>\n\n<p>$ \\frac{b}{a} = \\frac{1}{\\sqrt{2}} $</p>\n\n<p>$ a = b\\sqrt{2} $</p>\n\n<p>Now, for the ellipse, the length of the latus rectum is given by the formula:</p>\n\n<p>$ \\text{Length of Latus Rectum (L)} = \\frac{2b^2}{a} $</p>\n\n<p>It's provided that the length of the latus rectum $ L $ is $ \\sqrt{14} $, so substitute the known values to find $ b $:</p>\n\n<p>$ \\sqrt{14} = \\frac{2b^2}{b\\sqrt{2}} = \\frac{2b}{\\sqrt{2}} $</p>\n\n<p>$ b\\sqrt{2} = \\sqrt{14} $</p>\n\n<p>$ b^2 = \\frac{14}{2} $</p>\n\n<p>$ b^2 = 7 $</p>\n\n<p>And since $ a = b\\sqrt{2} $, we can find $ a^2 $:</p>\n\n<p>$ a^2 = (b\\sqrt{2})^2 $</p>\n\n<p>$ a^2 = 7 \\cdot 2 $</p>\n\n<p>$ a^2 = 14 $</p>\n\n<p>Now we have an ellipse with $ a^2 = 14 $ and $ b^2 = 7 $. The equation of a hyperbola similar to the given ellipse but with the terms subtracted is:</p>\n\n<p>$ \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 $</p>\n\n<p>For the hyperbola, the square of the eccentricity $ e' $ is given by:</p>\n\n<p>$ (e')^2 = 1 + \\frac{b^2}{a^2} $</p>\n\n<p>Substitute the values we've found for $ a^2 $ and $ b^2 $ into the formula for the square of the hyperbola's eccentricity:</p>\n\n<p>$ (e')^2 = 1 + \\frac{b^2}{a^2} $</p>\n\n<p>$ (e')^2 = 1 + \\frac{7}{14} $</p>\n\n<p>$ (e')^2 = 1 + \\frac{1}{2} $</p>\n\n<p>$ (e')^2 = \\frac{3}{2} $</p>\n\n<p>Therefore, the square of the eccentricity of the hyperbola is $ \\frac{3}{2} $, which corresponds to option C.</p>\n\n</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "1lsg4p9ak",
+      "questionNumber": 19,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$A(\\alpha, 0)$$ and $$B(0, \\beta)$$ be the points on the line $$5 x+7 y=50$$. Let the point $$P$$ divide the line segment $$A B$$ internally in the ratio $$7:3$$. Let $$3 x-25=0$$ be a directrix of the ellipse $$E: \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$$ and the corresponding focus be $$S$$. If from $$S$$, the perpendicular on the $$x$$-axis passes through $$P$$, then the length of the latus rectum of $$E$$ is equal to,</p>",
+      "options": [
+        "$$\\frac{25}{3}$$\n",
+        "$$\\frac{25}{9}$$\n",
+        "$$\\frac{32}{5}$$\n",
+        "$$\\frac{32}{9}$$"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$\\left.\\begin{array}{l}\n\\mathrm{A}=(10,0) \\\\\n\\mathrm{B}=\\left(0, \\frac{50}{7}\\right)\n\\end{array}\\right\\} \\mathrm{P}=(3,5)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsoxo287/d8da4921-3aa3-467d-a404-6687dd0b31e6/268e3570-ccf2-11ee-a330-494dca5e9a63/file-6y3zli1lsoxo288.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsoxo287/d8da4921-3aa3-467d-a404-6687dd0b31e6/268e3570-ccf2-11ee-a330-494dca5e9a63/file-6y3zli1lsoxo288.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 30th January Evening Shift Mathematics - Ellipse Question 37 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\text { ae }=3 \\\\\n&amp; \\frac{\\mathrm{a}}{\\mathrm{e}}=\\frac{25}{3} \\\\\n&amp; \\mathrm{a}=5 \\\\\n&amp; \\mathrm{~b}=4\n\\end{aligned}$$</p>\n<p>Length of $$L R=\\frac{2 b^2}{a}=\\frac{32}{5}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "luy6z5ey",
+      "questionNumber": 20,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$f(x)=x^2+9, g(x)=\\frac{x}{x-9}$$ and $$\\mathrm{a}=f \\circ g(10), \\mathrm{b}=g \\circ f(3)$$. If $$\\mathrm{e}$$ and $$l$$ denote the eccentricity and the length of the latus rectum of the ellipse $$\\frac{x^2}{\\mathrm{a}}+\\frac{y^2}{\\mathrm{~b}}=1$$, then $$8 \\mathrm{e}^2+l^2$$ is equal to.</p>",
+      "options": [
+        "6",
+        "12",
+        "8",
+        "16"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$\\begin{aligned}\n& g(10)=10 \\\\\n& a=f(g(10))=f(10)=109 \\\\\n& f(3)=18 \\\\\n& b=g(f(3))=g(18)=2 \\\\\n& \\frac{x^2}{109}+\\frac{y^2}{2}=1 \\\\\n& e=\\sqrt{1-\\frac{2}{109}}=\\sqrt{\\frac{107}{109}} \\\\\n& I=\\frac{2 b^2}{a}=\\frac{2 \\times 2}{\\sqrt{109}}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n8 e^2+l^2 & =\\frac{8 \\times 107}{109}+\\frac{16}{109} \\\\\n& =8\n\\end{aligned}\n$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "1lguvb7is",
+      "questionNumber": 21,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Consider ellipses $$\\mathrm{E}_{k}: k x^{2}+k^{2} y^{2}=1, k=1,2, \\ldots, 20$$. Let $$\\mathrm{C}_{k}$$ be the circle which touches the four chords joining the end points (one on minor axis and another on major axis) of the ellipse $$\\mathrm{E}_{k}$$. If $$r_{k}$$ is the radius of the circle $$\\mathrm{C}_{k}$$, then the value of $$\\sum_\\limits{k=1}^{20} \\frac{1}{r_{k}^{2}}$$ is :</p>",
+      "options": [
+        "2870",
+        "3210",
+        "3320",
+        "3080"
+      ],
+      "correctOption": 3,
+      "solution": "We have, $E_K=K x^2+K^2 y^2=1, K=1,2, \\ldots 20$\n<br><br>$\\Rightarrow \\frac{x^2}{\\frac{1}{K}}+\\frac{y^2}{\\frac{1}{K^2}}=1$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1ln5ufvyu/8420caac-c5f0-403f-a175-e82f7eb8d93d/8ea00c50-5f75-11ee-8999-67742721d03c/file-6y3zli1ln5ufvyv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1ln5ufvyu/8420caac-c5f0-403f-a175-e82f7eb8d93d/8ea00c50-5f75-11ee-8999-67742721d03c/file-6y3zli1ln5ufvyv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 11th April Morning Shift Mathematics - Ellipse Question 45 English Explanation\">\n<br><br>Equation of $A B$ is $\\frac{x}{\\frac{1}{\\sqrt{K}}}+\\frac{y}{\\frac{1}{K}}=1$\n<br><br> or $ \\sqrt{K} x+K y=1$\n<br><br>$r_K$ is the radius of circle $C_K$,\n<br><br>So, $r_K=$ perpendicular distance from $(0,0)$ to $\\mathrm{AB}$\n<br><br>$$\n\\begin{aligned}\nr_K &amp; =\\frac{|0+0-1|}{\\sqrt{(\\sqrt{K})^2+K^2}} \\\\\\\\\n&amp; =\\frac{1}{\\sqrt{K+K^2}} \\\\\\\\\n\\frac{1}{r_K^2} &amp; =K+K^2\n\\end{aligned}\n$$\n<br><br>$$\n\\begin{aligned}\n\\sum_{K=1}^{20} \\frac{1}{r_K^2} &amp; =\\sum_{K=1}^{20} K+\\sum_{K=1}^{20} K^2 \\\\\\\\\n&amp; =\\frac{20 \\times 21}{2}+\\frac{20 \\times 21 \\times 41}{6} \\\\\\\\\n&amp; =210+2870=3080\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "m9fnusiy",
+      "questionNumber": 22,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let for two distinct values of p the lines $y=x+\\mathrm{p}$ touch the ellipse $\\mathrm{E}: \\frac{x^2}{4^2}+\\frac{y^2}{3^2}=1$ at the points A and B . Let the line $y=x$ intersect E at the points C and D . Then the area of the quadrilateral $A B C D$ is equal to :</p>",
+      "options": [
+        "48",
+        "20",
+        "24",
+        "36"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$E: \\frac{x^2}{4^2}+\\frac{y^2}{3^2}=1$</p>\n<p>$$\\begin{aligned}\n&amp; T: y=m x \\pm \\sqrt{16 m^2+9} \\\\\n&amp; y=x+p \\\\\n&amp; \\Rightarrow m=1 \\\\\n&amp; \\Rightarrow p= \\pm \\sqrt{16+9} \\\\\n&amp; = \\pm 5\n\\end{aligned}$$</p>\n<p>$T: y=x \\pm 5$ will to cut the $E$ at $A\\left(-\\frac{16}{5}, \\frac{9}{5}\\right)$</p>\n<p>$$B\\left(\\frac{16}{5},-\\frac{9}{5}\\right)$$</p>\n<p>Also, $y=x$ will cut the $E$ at $C\\left(\\frac{12}{5}, \\frac{12}{5}\\right)$</p>\n<p>$$D\\left(-\\frac{12}{5},-\\frac{12}{5}\\right)$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9rtb1cu/629e7525-f42d-4c18-a8c2-6c2a8d04fcef/1f3c9be0-1f17-11f0-9588-0d31893f02ea/file-jaoe38c1m9rtb1cv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9rtb1cu/629e7525-f42d-4c18-a8c2-6c2a8d04fcef/1f3c9be0-1f17-11f0-9588-0d31893f02ea/file-jaoe38c1m9rtb1cv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 4th April Evening Shift Mathematics - Ellipse Question 19 English Explanation\"></p>\n<p>$A B C D$ in not give in cyclic order</p>\n<p>$\\therefore$ it does not form any quadrilateral</p>\n<p>$\\therefore \\quad$ No option should match</p>\n<p>If order is not considered then</p>\n<p>Area $=24$ sq. unit.</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "1QUrJBfisyzUzBEz",
+      "questionNumber": 23,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The line passing through the extremity $$A$$ of the major axis and extremity $$B$$ of the minor axis of the ellipse $${x^2} + 9{y^2} = 9$$ meets its auxiliary circle at the point $$M$$. Then the area of the triangle with vertices at $$A$$, $$M$$ and the origin $$O$$ is ",
+      "options": [
+        "$${{31} \\over {10}}$$ ",
+        "$${{29} \\over {10}}$$",
+        "$${{21} \\over {10}}$$",
+        "$${{27} \\over {10}}$$"
+      ],
+      "correctOption": 3,
+      "solution": "<p>Equation of line AM is $$x + 3y - 3 = 0$$.</p>\n<p>Perpendicular distance of line from origin is $$3/\\sqrt {10} $$.</p>\n<p>Length of AM is</p>\n<p>$$2\\sqrt {9 - {9 \\over {10}}}  = 2 \\times {9 \\over {\\sqrt {10} }}$$</p>\n<p>The required area of the rectangle is</p>\n<p>$${1 \\over 2} \\times 2 \\times {9 \\over {\\sqrt {10} }} \\times {3 \\over {\\sqrt {10} }} = {{27} \\over {10}}$$ sq. unit</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "1lgrg5nwu",
+      "questionNumber": 24,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$\\mathrm{P}\\left(\\frac{2 \\sqrt{3}}{\\sqrt{7}}, \\frac{6}{\\sqrt{7}}\\right), \\mathrm{Q}, \\mathrm{R}$$ and $$\\mathrm{S}$$ be four points on the ellipse $$9 x^{2}+4 y^{2}=36$$. Let $$\\mathrm{PQ}$$ and $$\\mathrm{RS}$$ be mutually perpendicular and pass through the origin. If $$\\frac{1}{(P Q)^{2}}+\\frac{1}{(R S)^{2}}=\\frac{p}{q}$$, where $$p$$ and $$q$$ are coprime, then $$p+q$$ is equal to :</p>",
+      "options": [
+        "143",
+        "147",
+        "137",
+        "157"
+      ],
+      "correctOption": 3,
+      "solution": "Given, points $P$ and $R$ are on the ellipse defined by $9x^2+4y^2=36$ which simplifies to $\\frac{x^2}{4} + \\frac{y^2}{9} = 1$. \nThis is the standard form of the equation of an ellipse centered at the origin, with semi-major axis $a=3$ along the $y$-axis and semi-minor axis $b=2$ along the $x$-axis. \n<br/><br/>OP is the distance from origin O to point P, which is given by :\n\n<br/><br/>$$OP =r_1 = \\sqrt{\\left(\\frac{2\\sqrt{3}}{\\sqrt{7}}\\right)^2 + \\left(\\frac{6}{\\sqrt{7}}\\right)^2} = \\sqrt{\\frac{12}{7} + \\frac{36}{7}} = \\sqrt{\\frac{48}{7}} = 2\\sqrt{\\frac{12}{7}}.$$\n\n<br/><br/>1. Let's represent the given point $P\\left(\\frac{2 \\sqrt{3}}{\\sqrt{7}}, \\frac{6}{\\sqrt{7}}\\right)$ in polar coordinates. We can write $P$ as $(r_1 \\cos \\theta, r_1 \\sin \\theta)$. Since $P$ lies on the ellipse, it must satisfy the equation of the ellipse. Substituting $x=r_1 \\cos \\theta$ and $y=r_1 \\sin \\theta$ into the equation of the ellipse gives us :\n\n  <br/><br/> $$\\frac{r_1^2 \\cos ^2 \\theta}{4}+\\frac{r_1^2 \\sin ^2 \\theta}{9}=1$$\n\n <br/><br/>  Simplifying this, we obtain :\n\n<br/><br/>   $$\\frac{\\cos ^2 \\theta}{4}+\\frac{\\sin ^2 \\theta}{9}=\\frac{7}{48} \\quad \\text{--- (equation 1)}$$\n\n<br/><br/>2. Similarly, if we represent the point $R$ as $(-r_2 \\sin \\theta, r_2 \\cos \\theta)$, (the negative sign is due to the fact that line RS is perpendicular to line PQ. Since they are perpendicular, the angle between them is 90 degrees or $\\pi/2$ radians. In terms of sin and cos, $\\sin(\\theta + \\pi/2) = \\cos(\\theta)$ and $\\cos(\\theta + \\pi/2) = -\\sin(\\theta)$.) it too should satisfy the equation of the ellipse. We have :\n\n<br/><br/>   $$\\frac{r_2^2 \\sin ^2 \\theta}{4}+\\frac{r_2^2 \\cos ^2 \\theta}{9}=1$$\n\n <br/><br/>  Simplifying this, we obtain :\n\n <br/><br/>  $$\\frac{\\sin ^2 \\theta}{4}+\\frac{\\cos ^2 \\theta}{9}=\\frac{1}{r_2^2} \\quad \\text{--- (equation 2)}$$\n\n<br/><br/>3. From equations (1) and (2), we have :\n\n<br/><br/>   $$\\frac{1}{r_2^2}=\\frac{1}{4}+\\frac{1}{9}-\\frac{7}{48}=\\frac{31}{144}$$\n\n<br/><br/>4. Now, note that lines $PQ$ and $RS$ are perpendicular and pass through the origin, so $PQ = 2OP$ and $RS = 2OR$. Thus,\n\n<br/><br/>   $$\\frac{1}{PQ^2} + \\frac{1}{RS^2} = \\frac{1}{4} \\left(\\frac{1}{r_1^2} + \\frac{1}{r_2^2} \\right)$$\n\n<br/><br/>5. Substituting the values of $r_1$ and $r_2$, we obtain :\n\n<br/><br/>   $$\\frac{1}{PQ^2} + \\frac{1}{RS^2} = \\frac{1}{4}\\left(\\frac{7}{48}+\\frac{31}{144}\\right)=\\frac{13}{144} = \\frac{p}{q}$$\n\n<br/><br/>6. Hence, $p = 13$ and $q = 144$.\n\n<br/><br/>7. So, the final answer $p+q = 13 + 144 = 157$.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "mnrqb419",
+      "questionNumber": 25,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let A be the point (3, 0) and circles with variable diameter AB touch the circle $x^2 + y^2 = 36$ internally. Let the curve C be the locus of the point B. If the eccentricity of C is $e$, then $72e^2$ is equal to ________.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p><img alt=\"JEE Main 2026 (Online) 2nd April Evening Shift Mathematics - Ellipse Question 6 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mozykyyo/ab058528-d4c1-4d6c-bdeb-3e4f1f4a7dea/45010000-4c89-11f1-8557-21d2ff4ed907/file-6y3zli1mozykyyp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mozykyyo/ab058528-d4c1-4d6c-bdeb-3e4f1f4a7dea/45010000-4c89-11f1-8557-21d2ff4ed907/file-6y3zli1mozykyyp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>Let the variable point be $B(h,k)$.</p>\n<p>We are told that the circle having $AB$ as diameter touches the fixed circle $x^2+y^2=36$ internally.</p>\n<p>If a circle has endpoints of a diameter at $A(3,0)$ and $B(h,k)$, then its equation is</p>\n<p>$$ (x-h)(x-3) + (y-k)(y-0) = 0 $$</p>\n<p>Expanding this, we get</p>\n<p>$$x^2 + y^2 - (h+3)x - ky + 3h = 0$$</p>\n<p>So, the centre of this circle is</p>\n<p>Centre $$\\left(\\frac{h+3}{2}, \\frac{k}{2}\\right)$$</p>\n<p>Now, the fixed circle $x^2+y^2=36$ has centre $C_1(0,0)$ and radius $R=6$.</p>\n<p>The variable circle (with diameter $AB$) has radius equal to half of $AB$, so</p>\n<p>$$r=\\frac{1}{2}\\left(\\sqrt{(h-3)^2 + k^2}\\right)$$</p>\n<p>Since the two circles touch internally, the distance between their centres equals the difference of radii:</p>\n<p>$$\\therefore\\ C_1C_2 = |R-r|$$</p>\n<p>Here, $C_2\\left(\\frac{h+3}{2},\\frac{k}{2}\\right)$. So,</p>\n<p>$$\\sqrt{\\left(\\frac{h+3}{2}\\right)^2 + \\left(\\frac{k}{2}\\right)^2} = \\left|6 - \\frac{1}{2}\\left(\\sqrt{(h-3)^2 + k^2}\\right)\\right|$$</p>\n<p>On simplifying and writing the locus in terms of a general point $(x,y)$ (i.e., replacing $(h,k)$ by $(x,y)$), we get</p>\n<p>$$\\sqrt{(x+3)^2 + y^2} + \\sqrt{(x-3)^2 + y^2} = 12$$</p>\n<p>This is the standard form of an ellipse: sum of distances from two fixed points (foci) is constant $=2a$.</p>\n<p>So,</p>\n<p>$$2a = 12 \\quad \\therefore\\ a = 6$$</p>\n<p>Comparing, the foci are $(-3,0)$ and $(3,0)$.</p>\n<p>The distance between the foci is $6$, so $2c=6$. Using $c=ae$, we write</p>\n<p>$$2ae = 6$$</p>\n<p>Substituting $a=6$:</p>\n<p>$$12e = 6$$</p>\n<p>So,</p>\n<p>$$e = \\frac{1}{2}$$</p>\n<p>Finally,</p>\n<p>$$\\therefore\\ 72e^2 = 72\\left(\\frac{1}{4}\\right) = 18$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    }
+  ]
+}

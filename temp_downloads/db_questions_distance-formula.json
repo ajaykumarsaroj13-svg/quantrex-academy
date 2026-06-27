@@ -1,0 +1,80 @@
+[
+  {
+    "id": "m6rp6fyg",
+    "questionNumber": 75,
+    "questionText": "<p>Let the distance between two parallel lines be 5 units and a point $P$ lie between the lines at a unit distance from one of them. An equilateral triangle $P Q R$ is formed such that $Q$ lies on one of the parallel lines, while R lies on the other. Then $(Q R)^2$ is equal to _________.</p>",
+    "options": [],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "NUMERICAL",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "distance-formula",
+    "difficulty": "medium",
+    "solution": "<p>We set up a coordinate system so that the two parallel lines are given by</p>\n<p>$$ y = 0 \\quad \\text{and} \\quad y = 5, $$</p>\n<p>since their distance is 5 units. Choose point</p>\n<p>$$ P = (0,1) $$</p>\n<p>so that the distance from $P$ to the line $y=0$ is 1 unit (and its distance to the line $y=5$ is 4 units).</p>\n<p>Let point</p>\n<p>$$ Q = (a,0) $$</p>\n<p>be on the line $y = 0$, and let point</p>\n<p>$$ R = (b,5) $$</p>\n<p>be on the line $y = 5$. Since triangle $PQR$ is equilateral with side length $s$, we require:</p>\n<p>$$ PQ = PR = QR = s. $$</p>\n<p>A convenient method is to “rotate” $Q$ about $P$ by an angle of $60^\\circ$ to obtain $R$. In complex-number (or vector) terms, if we translate so that $P$ is at the origin, then the rotation is given by</p>\n<p>$$ e^{i60^\\circ} = \\cos 60^\\circ + i \\sin 60^\\circ = \\frac{1}{2} + i \\frac{\\sqrt{3}}{2}. $$</p>\n<p>Thus, writing $Q$ in vector form relative to $P$, we have</p>\n<p>$$ Q - P = (a, -1). $$</p>\n<p>Rotating this by $60^\\circ$ gives</p>\n<p>$$ R - P = \\left(a\\cos60^\\circ - (-1)\\sin60^\\circ,\\; a\\sin60^\\circ + (-1)\\cos60^\\circ\\right). $$</p>\n<p>Substituting the values $\\cos60^\\circ = \\frac{1}{2}$ and $\\sin60^\\circ = \\frac{\\sqrt{3}}{2}$, we obtain</p>\n<p>$ \\begin{aligned} R - P &= \\left(\\frac{a}{2} + \\frac{\\sqrt{3}}{2},\\; \\frac{a\\sqrt{3}}{2} - \\frac{1}{2}\\right), \\\\ \\text{so} \\quad R &= \\left( \\frac{a+\\sqrt{3}}{2},\\; 1 + \\frac{a\\sqrt{3}}{2} - \\frac{1}{2} \\right) = \\left( \\frac{a+\\sqrt{3}}{2},\\; \\frac{a\\sqrt{3}+1}{2} \\right). \\end{aligned} $</p>\n<p>Since $R$ lies on $y = 5$, its $y$-coordinate must equal 5:</p>\n<p>$$ \\frac{a\\sqrt{3}+1}{2} = 5. $$</p>\n<p>Solve for $a$:</p>\n<p>$ \\begin{aligned} a\\sqrt{3} + 1 &= 10, \\\\ a\\sqrt{3} &= 9, \\\\ a &= \\frac{9}{\\sqrt{3}} = 3\\sqrt{3}. \\end{aligned} $</p>\n<p>Now, the side length $s$ (which is the distance $PQ$) is given by</p>\n<p>$ \\begin{aligned} s^2 &= PQ^2 = \\left(3\\sqrt{3} - 0\\right)^2 + \\left(0 - 1\\right)^2 \\\\ &= (3\\sqrt{3})^2 + 1^2 \\\\ &= 27 + 1 \\\\ &= 28. \\end{aligned} $</p>\n<p>Thus, the square of side $QR$ is</p>\n<p>$$ (QR)^2 = s^2 = 28. $$</p>",
+    "section": "B",
+    "type": "NUMERICAL"
+  },
+  {
+    "id": "1l545buee",
+    "questionNumber": 79,
+    "questionText": "<p>The distance between the two points A and A' which lie on y = 2 such that both the line segments AB and A' B (where B is the point (2, 3)) subtend angle $${\\pi  \\over 4}$$ at the origin, is equal to :</p>",
+    "options": [
+      "10",
+      "$${48  \\over 5}$$",
+      "$${52  \\over 5}$$",
+      "3"
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "distance-formula",
+    "difficulty": "medium",
+    "solution": "Let $A(\\alpha, 2) \\quad$ Given $B(2,3)$\n<br/><br/>\n$$\n\\begin{aligned}\n& m_{O A}=\\frac{2}{\\alpha} \\quad\\&\\quad m_{O B}=\\frac{3}{2} \\\\\\\\\n& \\tan \\frac{\\pi}{4}=\\left|\\frac{\\frac{2}{\\alpha}-\\frac{3}{2}}{1+\\frac{2}{\\alpha} \\cdot \\frac{3}{2}}\\right| \\Rightarrow \\frac{4-3 \\alpha}{2 \\alpha+6}=\\pm 1 \\\\\\\\\n& 4-3 \\alpha=2 \\alpha+6 \\quad \\& 4-3 \\alpha=-2 \\alpha-6 \\\\\\\\\n& \\alpha=\\frac{-2}{5} \\& \\alpha=10 \\\\\\\\\n& A\\left(-\\frac{2}{5}, 2\\right) \\& A^{\\prime}(10,2) \\text { and } B(2,3) \\\\\\\\\n& A A^{\\prime}=10+\\frac{2}{5}=\\frac{52}{5}\n\\end{aligned}\n$$",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "1ktocacrw",
+    "questionNumber": 89,
+    "questionText": "A man starts walking from the point P($$-$$3, 4), touches the x-axis at R, and then turns to reach at the point Q(0, 2). The man is walking at a constant speed. If the man reaches the point Q in the minimum time, then $$50\\left( {{{(PR)}^2} + {{(RQ)}^2}} \\right)$$ is equal to ____________.",
+    "options": [],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "NUMERICAL",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "distance-formula",
+    "difficulty": "medium",
+    "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1kwjjmzcw/b86a6d68-7b5e-434f-a89c-eef8431d96b0/715950f0-5074-11ec-8a49-997c456a58f9/file-1kwjjmzcx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1kwjjmzcw/b86a6d68-7b5e-434f-a89c-eef8431d96b0/715950f0-5074-11ec-8a49-997c456a58f9/file-1kwjjmzcx.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2021 (Online) 1st September Evening Shift Mathematics - Straight Lines and Pair of Straight Lines Question 87 English Explanation\">\n<br>For minimum $(P R+R Q)$\n<br><br>$R$ lies on $P Q^{\\prime}$ (where $Q^{\\prime}$ is image of $Q$ in $X$-axis)\n<br><br>$\\Rightarrow$ Equation on $P Q^{\\prime}$ is\n<br><br>$$\n2 x+y+2=0 \\Rightarrow R(-1,0)\n$$\n<br><br>$$ \\therefore $$ 50(PR<sup>2</sup> + RQ<sup>2</sup>)<br><br>= 50(20 + 5)<br><br>= 50(25)<br><br>= 1250",
+    "section": "B",
+    "type": "NUMERICAL"
+  },
+  {
+    "id": "qEqKSCymL9HY964D",
+    "questionNumber": 215,
+    "questionText": "A triangle with vertices $$\\left( {4,0} \\right),\\left( { - 1, - 1} \\right),\\left( {3,5} \\right)$$ is :",
+    "options": [
+      "isosceles and right angled",
+      "isosceles but not right angled",
+      "right angled but not isosceles ",
+      "neither right angled nor isosceles "
+    ],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "distance-formula",
+    "difficulty": "easy",
+    "solution": "$$AB = \\sqrt {{{\\left( {4 + 1} \\right)}^2} + {{\\left( {0 + 1} \\right)}^2}}  = \\sqrt {26} ;$$\n<br><br>$$BC = \\sqrt {{{\\left( {3 + 1} \\right)}^2} + {{\\left( {5 + 1} \\right)}^2}}  = \\sqrt {52} $$\n<br><br>$$CA = \\sqrt {{{\\left( {4 - 3} \\right)}^2} + {{\\left( {0 - 5} \\right)}^2}}  = \\sqrt {26} ;$$\n<br><br>In isosceles triangle side $$AB=CA$$\n<br><br>For right angled triangle, $$B{C^2} = A{B^2} + A{C^2}$$\n<br><br>So, here $$BC = \\sqrt {52} $$ or $$B{C^2} = 52$$\n<br><br>or $$\\,\\,\\,\\,\\,\\,\\,\\,\\,{\\left( {\\sqrt {26} } \\right)^2} + {\\left( {\\sqrt {26} } \\right)^2} = 52$$\n<br><br>So, the given triangle is right angled and also isosceles.",
+    "section": "A",
+    "type": "SCQ"
+  }
+]

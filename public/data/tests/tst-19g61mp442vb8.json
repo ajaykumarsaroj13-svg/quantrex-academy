@@ -1,0 +1,290 @@
+{
+  "testId": "tst-19g61mp442vb8",
+  "title": "Ellipse Test - 1 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "1ldyc1pa5",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let C be the largest circle centred at (2, 0) and inscribed in the ellipse $${{{x^2}} \\over {36}} + {{{y^2}} \\over {16}} = 1$$. If (1, $$\\alpha$$) lies on C, then 10 $$\\alpha^2$$ is equal to ____________</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "$\\frac{x^{2}}{36}+\\frac{y^{2}}{16}=1$\n<br/><br/>\n$r^{2}=(x-2)^{2}+y^{2}$\n<br/><br/>\nSolving simultaneously\n<br/><br/>\n$-5 x^{2}+36 x+\\left(9 r^{2}-180\\right)=0$\n<br/><br/>\n$D=0$\n<br/><br/>\n$r^{2}=\\frac{128}{10}$\n<br/><br/>\nDistance between $(1, \\alpha)$ and $(2,0)$ should be $r$\n<br/><br/>\n$$\n\\begin{aligned}\n& 1+\\alpha^{2}=\\frac{128}{10} \\\\\\\\\n& \\alpha^{2}=\\frac{118}{10} \\\\\\\\\n&=118.00\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "mnsik0rt",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Tangents are drawn to the ellipse $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$ at points where it is intersected by the line $l x+m y+n=0$. The point of intersection of tangents at these points is</p>\n",
+      "options": [
+        "<p>$\\left(\\frac{a l}{n}, \\frac{b m}{n}\\right)$</p>\n",
+        "<p>$\\left(\\frac{a^2 l}{m}, \\frac{b^2 m}{n}\\right)$</p>\n",
+        "<p>$\\left(\\frac{b l}{n}, \\frac{a m}{n}\\right)$</p>\n",
+        "<p>$\\left(\\frac{-a^2 l}{n}, \\frac{-b^2 m}{n}\\right)$</p>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>Let $\\left(x_1, y_1\\right)$ be the point of intersection of tangents to the ellipse, where it is intersected by the line $l x+m y+n=0$. Then, the equation of the chord of contact of tangents is</p>\n<p>$$ \\frac{x x_1}{a^2}+\\frac{y y_1}{b^2}=1\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(i) $$</p>\n<p>Clearly, $l x+m y+n=0$ and (i) represents the same line.</p>\n<p>$$ \\begin{array}{ll} \\therefore & \\frac{x_1}{a^2 l}=\\frac{y_1}{b^2 m}=\\frac{1}{-n} \\\\ \\Rightarrow & x_1=\\frac{-a^2 l}{n}, y_1=\\frac{-b^2 m}{n} \\end{array} $$</p>\n<p>Thus, the required point is $\\left(\\frac{-a^2 l}{n}, \\frac{-b^2 m}{n}\\right)$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "tlmc33hjom",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The foci of the ellipse 4x<sup>2</sup> + 9y<sup>2</sup> = 1 are&nbsp;at Q and R. If P(x, y) is any point on the ellipse, then what is PQ + PR equal to?",
+      "options": [
+        "2",
+        "1",
+        "2/3",
+        "1/3"
+      ],
+      "correctOption": 1,
+      "solution": "<p><strong>Explanation:</strong></p>\n<p>Given the equation of the ellipse: </p>\n<p>$ 4x^2 + 9y^2 = 1 $</p>\n<p>To express this in standard form, divide the entire equation by 1:</p>\n<p>$ \\frac{x^2}{(1/2)^2} + \\frac{y^2}{(1/3)^2} = 1 $</p>\n<p>Here, $ a = \\frac{1}{2} $ and $ b = \\frac{1}{3} $.</p>\n<p>Now, calculate the eccentricity $ e $:</p>\n<p>$ e = \\sqrt{1 - \\frac{b^2}{a^2}} = \\sqrt{1 - \\frac{(1/3)^2}{(1/2)^2}} = \\frac{\\sqrt{5}}{3} $</p>\n<p>The coordinates of the foci for the ellipse, located along the x-axis, are:</p>\n<p>$ (\\pm ae, 0) = \\left(\\pm \\frac{1}{2} \\cdot \\frac{\\sqrt{5}}{3}, 0\\right) = \\left(\\pm \\frac{\\sqrt{5}}{6}, 0\\right) $</p>\n<p>For any point $ P(x, y) $ on the ellipse, the sum of distances from the point to each focus (denoted as $ PQ + PR $) is equal to the major axis length:</p>\n<p>$ PQ + PR = 2a = 2 \\times \\frac{1}{2} = 1 $</p>\n<p>Thus, the sum of the distances from any point on the ellipse to the two foci is 1. </p>\n<p><strong>Therefore, the answer is 1.</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "mnsik15d",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>A rectangle is inscribed in an ellipse with the equation $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$</p>\n<p>What is the maximum area of the rectangle that can be inscribed in the ellipse?</p>\n",
+      "options": [
+        "<p>$\\frac{a b}{2}$</p>\n",
+        "<p>$a b$</p>\n",
+        "<p>$2 a b$</p>\n",
+        "<p>$\\frac{a^2 b^2}{2}$.</p>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>Let the rectangle have vertices at $( \\pm x, \\pm y)$ on the ellipse. From the ellipse equation</p>\n<p>$$ x=a \\cos \\theta, y=b \\sin \\theta $$</p>\n<p>The area of the rectangle is</p>\n<p>$$ A=4 x y=4(a \\cos \\theta \\cdot b \\sin \\theta) $$</p>\n<p>Using the identity $\\sin 2 \\theta=2 \\sin \\theta \\cos \\theta$, we rewrite $A=2 a b \\sin 2 \\theta$</p>\n<p>To maximize $A$, we maximize $\\sin 2 \\theta$, which reaches its maximum value of 1 when $2 \\theta=\\frac{\\pi}{2}$.</p>\n<p>Thus, the maximum area is</p>\n<p>$$ A_{\\max }=2 a b $$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "mnswhqnc",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $\\mathrm{P}(3 \\cos \\alpha, 2 \\sin \\alpha), \\alpha \\neq 0$, be a point on the ellipse $\\frac{x^2}{9}+\\frac{y^2}{4}=1, \\mathrm{Q}$ be a point on the circle $x^2+y^2-14 x-14 y+82=0$ and R be a point on the line $x+y=5$ such that the centroid of the triangle PQR is $\\left(2+\\cos \\alpha, 3+\\frac{2}{3} \\sin \\alpha\\right)$. Then the sum of the ordinates of all possible points R is:</p>",
+      "options": [
+        "<p>6</p>",
+        "<p>2</p>",
+        "<p>4</p>",
+        "<p>8</p>"
+      ],
+      "correctOption": 3,
+      "solution": "<p><b>Centroid :</b></p>\n<p>Let $Q$ be a point on the given circle. First write the circle in standard form:</p>\n<p>$$x^2+y^2-14x-14y+82=0 \\Rightarrow (x-7)^2+(y-7)^2=16$$</p>\n<p>So we can take</p>\n<p>$$Q(7+4\\cos\\theta,\\;7+4\\sin\\theta)$$</p>\n<p>Point $R$ lies on the line $x+y=5$. Let its ordinate be $y$, then its abscissa is $5-y$, so</p>\n<p>$$R(5-y,\\;y)$$</p>\n<p>Now use the centroid formula. For triangle $PQR$, centroid is</p>\n<p>$$ \\left(\\frac{x_P+x_Q+x_R}{3},\\;\\frac{y_P+y_Q+y_R}{3}\\right) $$</p>\n<p>Given $P(3\\cos\\alpha,\\;2\\sin\\alpha)$, so the centroid becomes</p>\n<p>$$ \\begin{aligned} &amp; \\left(\\frac{3 \\cos \\alpha+7+4 \\cos \\theta+5-y}{3}, \\frac{2 \\sin \\alpha+7+4 \\sin \\theta+y}{3}\\right) \\\\ &amp; =\\left(\\cos \\alpha+2, \\frac{2}{3} \\sin \\alpha+3\\right) \\end{aligned} $$</p>\n<p><img alt=\"JEE Main 2026 (Online) 4th April Evening Shift Mathematics - Ellipse Question 2 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mozwrnke/23257ac8-41c9-4572-9862-645f7a3dddc7/2c9b22e0-4c82-11f1-999e-c37a02c95833/file-6y3zli1mozwrnkf.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mozwrnke/23257ac8-41c9-4572-9862-645f7a3dddc7/2c9b22e0-4c82-11f1-999e-c37a02c95833/file-6y3zli1mozwrnkf.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p><b>On comparison</b></p>\n<p>Compare the $x$-coordinates:</p>\n<p>$$\\frac{3 \\cos \\alpha+7+4 \\cos \\theta+5-y}{3}=\\cos\\alpha+2 \\Rightarrow 4\\cos\\theta=y-6$$</p>\n<p>So,</p>\n<p>$$ \\cos \\theta=\\frac{y-6}{4} $$</p>\n<p>Compare the $y$-coordinates:</p>\n<p>$$\\frac{2 \\sin \\alpha+7+4 \\sin \\theta+y}{3}=\\frac{2}{3}\\sin\\alpha+3 \\Rightarrow 4\\sin\\theta=2-y$$</p>\n<p>So,</p>\n<p>$$ \\sin \\theta=\\frac{2-y}{4} $$</p>\n<p>Now use the identity $\\sin^2\\theta+\\cos^2\\theta=1$:</p>\n<p>$$\\sin ^2 \\theta+\\cos ^2 \\theta=1 \\Rightarrow(y-6)^2+(y-2)^2=16$$</p>\n<p>Simplify:</p>\n<p>$$y^2-8 y+12=0$$</p>\n<p>This quadratic gives two possible values of $y$ (ordinates of $R$). The sum of roots is $8$, so</p>\n<p>$$\\Rightarrow \\text { Sum of ordinates }=8$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "mnswhwe8",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let a focus of the ellipse $\\mathrm{E}: \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$ be $\\mathrm{S}(4,0)$ and its eccentricity be $\\frac{4}{5}$. If the point $\\mathrm{P}(3, \\alpha)$ lies on E and O is the origin, then the area of $\\triangle \\mathrm{POS}$ is equal to:</p>\n",
+      "options": [
+        "<p>12/5</p>\n",
+        "<p>14/5</p>\n",
+        "<p>24/5</p>\n",
+        "<p>48/5</p>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>For the ellipse</p>\n<p>$$ E:\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1 $$</p>\n<p>a focus is $S(4,0)$ and eccentricity is</p>\n<p>$$ e=\\frac{4}{5} $$</p>\n<p>We need the area of $\\triangle POS$, where $P(3,\\alpha)$ lies on the ellipse and $O=(0,0)$.</p>\n\n<p>Since the focus is on the $x$-axis, the ellipse has major axis along the $x$-axis.</p>\n<p>For such an ellipse, focus is at $(\\pm ae,0)$.</p>\n<p>Given one focus is $(4,0)$, so</p>\n<p>$$ ae=4 $$</p>\n<p>and $e=\\frac{4}{5}$. Therefore,</p>\n<p>$$ a\\cdot \\frac{4}{5}=4 $$</p>\n<p>$$ a=5 $$</p>\n<p>Now,</p>\n<p>$$ c=ae=4 $$</p>\n<p>and for ellipse,</p>\n<p>$$ b^2=a^2-c^2 $$</p>\n<p>So,</p>\n<p>$$ b^2=25-16=9 $$</p>\n<p>Hence the ellipse is</p>\n<p>$$ \\frac{x^2}{25}+\\frac{y^2}{9}=1 $$</p>\n\n<p>Since $P(3,\\alpha)$ lies on the ellipse, substitute $x=3$:</p>\n<p>$$ \\frac{3^2}{25}+\\frac{\\alpha^2}{9}=1 $$</p>\n<p>$$ \\frac{9}{25}+\\frac{\\alpha^2}{9}=1 $$</p>\n<p>$$ \\frac{\\alpha^2}{9}=1-\\frac{9}{25} =\\frac{16}{25} $$</p>\n<p>$$ \\alpha^2=\\frac{144}{25} $$</p>\n<p>$$ \\alpha=\\pm \\frac{12}{5} $$</p>\n\n<p>Now find the area of triangle with vertices</p>\n<p>$$ O(0,0),\\quad P(3,\\alpha),\\quad S(4,0) $$</p>\n<p>Using base $OS$:</p>\n<p>$$ OS=4 $$</p>\n<p>Since $OS$ lies on the $x$-axis, the height from $P$ to $OS$ is $|\\alpha|$.</p>\n<p>So area is</p>\n<p>$$ \\frac{1}{2}\\times 4\\times |\\alpha| =2|\\alpha| $$</p>\n<p>$$ =2\\times \\frac{12}{5} =\\frac{24}{5} $$</p>\n<p>Therefore, the area of $\\triangle POS$ is</p>\n<p>$$ \\boxed{\\frac{24}{5}} $$</p>\n<p>So, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option C}} $$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "1ks0744oi",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "A ray of light through (2, 1) is reflected at a point P on the y-axis and then passes through the point (5, 3). If this reflected ray is the directrix of an ellipse with eccentricity $${1 \\over 3}$$ and the distance of the nearer focus from this directrix is $${8 \\over {\\sqrt {53} }}$$, then the equation of the other directrix can be :",
+      "options": [
+        "11x + 7y + 8 = 0 or 11x + 7y $$-$$ 15 = 0",
+        "11x $$-$$ 7y $$-$$ 8 = 0 or 11x + 7y + 15 = 0",
+        "2x $$-$$ 7y + 29 = 0 or 2x $$-$$ 7y $$-$$ 7 = 0",
+        "2x $$-$$ 7y $$-$$ 39 = 0 or 2x $$-$$ 7y $$-$$ 7 = 0"
+      ],
+      "correctOption": 2,
+      "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks2597cj/49307003-80f8-4c1d-9107-1cb8529f8b08/01d44520-f7b2-11eb-b37d-c3b778e1195d/file-1ks2597ck-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks2597cj/49307003-80f8-4c1d-9107-1cb8529f8b08/01d44520-f7b2-11eb-b37d-c3b778e1195d/file-1ks2597ck-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ks2597cj/49307003-80f8-4c1d-9107-1cb8529f8b08/01d44520-f7b2-11eb-b37d-c3b778e1195d/file-1ks2597ck.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Morning Shift Mathematics - Ellipse Question 73 English Explanation\"></picture> <br><br>Equation of reflected Ray<br><br>$$y - 1 = {2 \\over 7}(x + 2)$$<br><br>$$7x - 7 = 2x + 4$$<br><br>$$2x - 7y + 11 = 0$$<br><br>Let the equation of other directrix is <br><br>$$2x - 7y + \\lambda $$ = 0<br><br>Distance of directrix from focus<br><br>$${a \\over e} - e = {8 \\over {\\sqrt {53} }}$$<br><br>$$3a - {a \\over 3} = {8 \\over {\\sqrt {53} }}$$ or $$a = {3 \\over {\\sqrt {53} }}$$<br><br>Distance from other focus $${a \\over e} + ae$$<br><br>$$3a + {a \\over 3} = {{10a} \\over 3} = {{10} \\over 3} \\times {3 \\over {\\sqrt {53} }} = {{10} \\over {\\sqrt {53} }}$$<br><br>Distance between two directrix = $$ = {{2a} \\over e}$$<br><br>$$ = 2 \\times 3 \\times {3 \\over {\\sqrt {53} }} = {{18} \\over {\\sqrt {53} }}$$<br><br>$$\\left| {{{\\lambda  - 11} \\over {\\sqrt {53} }}} \\right| = {{18} \\over {\\sqrt {53} }}$$<br><br>$$\\lambda  - 11 = 18$$ or $$-$$ 18<br><br>$$\\lambda  = 29$$ or $$-$$7<br><br>$$2x - 7y - 7 = 0$$ or $$2x - 7y + 29 = 0$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "O5LrT1PzrQ3u0sAl",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $${F_1}\\left( {{x_1},0} \\right)$$ and $${F_2}\\left( {{x_2},0} \\right)$$ for $${{x_1} &lt; 0}$$ and $${{x_2} &gt; 0}$$, be the foci of the ellipse $${{{x^2}} \\over 9} + {{{y^2}} \\over 8} = 1$$. Suppose a parabola having vertex at the origin and focus at $${F_2}$$ intersects the ellipse at point $$M$$ in the first quadrant and at point $$N$$ in the fourth quadrant. \n<br><br><p>The orthocentre of the triangle $${F_1}MN$$ is </p>",
+      "options": [
+        "$$\\left( { - {9 \\over {10}},0} \\right)$$ ",
+        "$$\\left( {  {2 \\over {3}},0} \\right)$$",
+        "$$\\left( {  {9 \\over {10}},0} \\right)$$",
+        "$$\\left( {{2 \\over 3},\\sqrt 6 } \\right)$$ "
+      ],
+      "correctOption": 0,
+      "solution": "<p>F<sub>1</sub>(x, 0) and F<sub>2</sub>(x<sub>2</sub>, 0) are the foci of the ellipse:</p>\n<p>$${{{x^2}} \\over 9} + {{{y^2}} \\over 8} = 1$$</p>\n<p>Therefore, a<sup>2</sup> = 9 and b<sup>2</sup> = 8.</p>\n<p>$${b^2} = {a^2}(1 - {e^2})$$</p>\n<p>$$1 - {e^2} = {8 \\over 9} \\Rightarrow {e^2} = 1 - {8 \\over 9} = {1 \\over 9} \\Rightarrow e = {1 \\over 3}$$</p>\n<p>The focus is</p>\n<p>$${F_1}\\left( { - 3 \\times {1 \\over 3},0} \\right)$$ and $${F_2}\\left( {3 \\times {1 \\over 3},0} \\right)$$</p>\n<p>That is, F<sub>1</sub>($$-$$1, 0) and F<sub>2</sub>(1, 0).</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0ri1rwr/6eca64eb-8b1f-4b48-91b6-8520b36e0cdc/5d2facc0-a405-11ec-9e3c-d721fdc6a078/file-1l0ri1rws.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0ri1rwr/6eca64eb-8b1f-4b48-91b6-8520b36e0cdc/5d2facc0-a405-11ec-9e3c-d721fdc6a078/file-1l0ri1rws.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 2 Offline Mathematics - Ellipse Question 15 English Explanation 1\"></p>\n<p>The equation of parabola is</p>\n<p>$${y^2} = 4(O{F_2})x$$</p>\n<p>$${y^2} = 4x(O{F_2} = 1)$$</p>\n<p>The point of intersection of ellipse and parabola is</p>\n<p>$${{{x^2}} \\over 9} + {{4x} \\over 8} = 1 \\Rightarrow {{{x^2}} \\over 9} + {x \\over 2} = 1$$</p>\n<p>$$ \\Rightarrow 2{x^2} + 9x - 18 = 0$$</p>\n<p>$$ \\Rightarrow 2{x^2} + 12x - 3x - 18 = 0$$</p>\n<p>$$ \\Rightarrow 2x(x + 6) - 3(x + 6) = 0$$</p>\n<p>$$ \\Rightarrow x = {3 \\over 2}$$ (x $$-$$6 is rejected)</p>\n<p>Now, $${y^2}(4){3 \\over 2} = 6$$</p>\n<p>$$y =  \\pm \\sqrt 6 $$</p>\n<p>That is, the points M and N are, respectively, $$M\\left( {{3 \\over 2},\\sqrt 6 } \\right)$$ and $$N\\left( {{3 \\over 2}, - \\sqrt 6 } \\right)$$.</p>\n<p>Let the orthocenter be (h, k).</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l0ri2j0n/faa3d707-d5b5-4f3f-9d9c-8e2f2bbd06fa/72203d70-a405-11ec-9e3c-d721fdc6a078/file-1l0ri2j0o.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l0ri2j0n/faa3d707-d5b5-4f3f-9d9c-8e2f2bbd06fa/72203d70-a405-11ec-9e3c-d721fdc6a078/file-1l0ri2j0o.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 2 Offline Mathematics - Ellipse Question 15 English Explanation 2\"></p>\n<p>The slope of $$OM = {{k - \\sqrt 6 } \\over {h - (3/2)}}$$</p>\n<p>The slope of $$ON = {{\\sqrt 6 } \\over { - 1 - (3/2)}} = {{ - 2\\sqrt 6 } \\over 5}$$</p>\n<p>Now, $$\\left( {{{k - \\sqrt 6 } \\over {h - (3/2)}}} \\right)\\left( {{{ - 2\\sqrt 6 } \\over 5}} \\right) =  - 1$$</p>\n<p>$$2\\sqrt 6 k - 12 = 5h - {{15} \\over 2}$$</p>\n<p>$$5h - 2\\sqrt 6 k = {{15} \\over 2} - 12 = {{ - 9} \\over 2}$$</p>\n<p>The slope of $$ON = {{k + \\sqrt 6 } \\over {h - (3/2)}}$$</p>\n<p>The slope of $${F_1}M = {{\\sqrt 6 } \\over {1 + (3/2)}} = {{2\\sqrt 6 } \\over 5}$$</p>\n<p>$${{k + \\sqrt 6 } \\over {h - (3/2)}} \\times {{2\\sqrt 6 } \\over 5} =  - 1$$</p>\n<p>$$2\\sqrt 6 k + 12 =  - 5h + {{15} \\over 2}$$</p>\n<p>$$5h + 2\\sqrt 6 k = {{15} \\over 2} - 12 = {{ - 9} \\over 2}$$</p>\n<p>$$5h + 2\\sqrt 6 k = {{ - 9} \\over 2}$$ ....... (1)</p>\n<p>$$5h - 2\\sqrt 6 k = {{ - 9} \\over 2}$$ ........ (2)</p>\n<p>Solving Eqs. (1) and (2), we get</p>\n<p>$$10h =  - 9 \\Rightarrow h = {{ - 9} \\over {10}}$$ and k = 0</p>\n<p>Hence, the orthocentre of the triangle F<sub>1</sub>MN is $$\\left( {{{ - 9} \\over {10}},0} \\right)$$.</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "7U4w1GA7rQRFV2KmmT7k9k2k5gjiucr",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let the line y = mx and the ellipse 2x<sup>2</sup> + y<sup>2</sup> = 1\nintersect at a ponit P in the first quadrant. If the\nnormal to this ellipse at P meets the co-ordinate axes at $$\\left( { - {1 \\over {3\\sqrt 2 }},0} \\right)$$ and (0, $$\\beta $$), then $$\\beta $$ is equal\nto :",
+      "options": [
+        "$${{\\sqrt 2 } \\over 3}$$",
+        "$${2 \\over 3}$$",
+        "$${{2\\sqrt 2 } \\over 3}$$",
+        "$${2 \\over {\\sqrt 3 }}$$"
+      ],
+      "correctOption": 0,
+      "solution": "Let P be (x<sub>1</sub>\n, y<sub>1</sub>)\n<br><br>Equation of normal at P is $${x \\over {2{x_1}}} - {y \\over {{y_1}}} = {1 \\over 2} - 1$$\n<br><br>It passes through $$\\left( { - {1 \\over {3\\sqrt 2 }},0} \\right)$$\n<br><br>$$ \\therefore $$ $${{ - 1} \\over {6\\sqrt 2 {x_1}}} =  - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ x<sub>1</sub> = $${1 \\over {3\\sqrt 2 }}$$\n<br><br>Also using 2$$x_1^2$$ + $$y_1^2$$ = 1\n<br><br>$$ \\Rightarrow $$ $$y_1^2$$ = 1 - $${2 \\over {18}}$$\n<br><br>$$ \\Rightarrow $$ y<sub>1</sub> = $${{2\\sqrt 2 } \\over 3}$$\n<br><br>(0, $$\\beta $$) is on the normal.\n<br><br>So 0 - $${\\beta  \\over {{{2\\sqrt 2 } \\over 3}}}$$ = $$ - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $$\\beta $$ = $${{\\sqrt 2 } \\over 3}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "m9fnuqu6",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>A line passing through the point $P(\\sqrt{5}, \\sqrt{5})$ intersects the ellipse $\\frac{x^2}{36}+\\frac{y^2}{25}=1$ at $A$ and $B$ such that $(P A) \\cdot(P B)$ is maximum. Then $5\\left(P A^2+P B^2\\right)$ is equal to :</p>",
+      "options": [
+        "290\n",
+        "377 ",
+        "338 ",
+        "218\n"
+      ],
+      "correctOption": 2,
+      "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9zp4lij/9338f091-7a7f-44d2-96c6-c15ecf771f71/0cd2bbb0-236d-11f0-9dec-d979098f3e1c/file-jaoe38c1m9zp4lik.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9zp4lij/9338f091-7a7f-44d2-96c6-c15ecf771f71/0cd2bbb0-236d-11f0-9dec-d979098f3e1c/file-jaoe38c1m9zp4lik.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Morning Shift Mathematics - Ellipse Question 20 English Explanation 1\"></p>\n<p>$$\\begin{aligned}\n&amp; \\frac{x-\\sqrt{5}}{\\cos \\theta}=\\frac{y-\\sqrt{5}}{\\sin \\theta}=r \\\\\n&amp; x=r \\cos \\theta+\\sqrt{5} \\\\\n&amp; y=r \\sin \\theta+\\sqrt{5} \\\\\n&amp; 25 x^2+36 y^2=900,(x, y) \\text { lie on } E \\\\\n&amp; r^2\\left[25 \\cos ^2 \\theta+36 \\sin ^2 \\theta\\right]+r[50 \\sqrt{5} \\cos \\theta+72 \\sqrt{5} \\sin \\theta] \\\\\n&amp; \\quad+25[5]+36[5]=900 \\\\\n&amp; r_1 r_2=\\frac{900-305}{25+11 \\sin ^2 \\theta},\\left(r_1 r_2\\right)_{\\max }=\\frac{595}{25}=\\frac{119}{5} \\\\\n&amp; \\left|r_1 \\cdot r_2\\right|_{\\max }=\\left(\\frac{595}{25}\\right)=\\left(\\frac{119}{5}\\right) \\text { at } \\theta=0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9zp5pxr/3dc86d46-b0aa-47ee-8f23-9954c012446e/2c0c81f0-236d-11f0-9dec-d979098f3e1c/file-jaoe38c1m9zp5pxs.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9zp5pxr/3dc86d46-b0aa-47ee-8f23-9954c012446e/2c0c81f0-236d-11f0-9dec-d979098f3e1c/file-jaoe38c1m9zp5pxs.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Morning Shift Mathematics - Ellipse Question 20 English Explanation 2\"></p>\n<p>$$\\begin{aligned}\n&amp; \\frac{x^2}{36}+\\frac{y^2}{25}=1 \\\\\n&amp; \\text { At } y=\\sqrt{5} \\\\\n&amp; \\frac{x^2}{36}+\\frac{1}{5}=1 \\\\\n&amp; \\Rightarrow \\frac{x^2}{36}=\\frac{4}{5} \\Rightarrow x= \\pm \\frac{12}{\\sqrt{5}} \\\\\n&amp; P A^2+P B^2=(P A+P B)^2-2 P A \\cdot P B=\\left(\\frac{24}{\\sqrt{5}}\\right)^2-2 \\cdot \\frac{119}{5} \\\\\n&amp; 5\\left(P A^2+P B^2\\right)=5\\left(\\frac{24^2}{5}-\\frac{2.119}{5}\\right)=24^2-238 \\\\\n&amp; =338 .\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "1uvsN9WuUVTtVaGYvw18hoxe66ijvwq7lwv",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If the tangent to the parabola y<sup>2</sup> = x at a point\n($$\\alpha $$, $$\\beta $$), ($$\\beta $$ &gt; 0) is also a tangent to the ellipse,\nx<sup>2</sup> + 2y<sup>2</sup> = 1, then $$\\alpha $$ is equal to :",
+      "options": [
+        "$$\\sqrt 2  + 1$$",
+        "$$\\sqrt 2  - 1$$",
+        "$$2\\sqrt 2  + 1$$",
+        "$$2\\sqrt 2 - 1$$"
+      ],
+      "correctOption": 0,
+      "solution": "Point P($$\\alpha $$, $$\\beta $$) is on the parabola y<sup>2</sup> = x\n<br><br>$$ \\therefore $$ $${\\beta ^2} = \\alpha $$ ...........(1)\n<br><br>Equation of tangent to the parabola y<sup>2</sup> = x\n<br><br>at ($$\\alpha $$, $$\\beta $$) is T = 0\n<br><br>$$\\beta y = {{x + \\alpha } \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $$2\\beta y = x + \\alpha $$\n<br><br>$$ \\Rightarrow $$ $$y = {1 \\over {2\\beta }}x + {\\alpha  \\over {2\\beta }}$$\n<br><br>For this straight line, m = $${1 \\over {2\\beta }}$$ and c = $${\\alpha  \\over {2\\beta }}$$\n<br><br>This tangent is also a tangent to ellipse x<sup>2</sup> + 2y<sup>2</sup> = 1.\n<br><br>$$ \\Rightarrow $$ $${{{x^2}} \\over 1} + {{{y^2}} \\over {{1 \\over 2}}} = 1$$\n<br><br>$$ \\therefore $$ $${a^2} = 1$$ and $${b^2} = {1 \\over 2}$$.\n<br><br>We know the condition of tangency on ellipse is\n<br><br>$${c^2} = {a^2}{m^2} + {b^2}$$\n<br><br>$$ \\Rightarrow $$ $${\\left( {{\\alpha  \\over {2\\beta }}} \\right)^2} = 1{\\left( {{1 \\over {2\\beta }}} \\right)^2} + {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $${{{\\alpha ^2}} \\over {4{\\beta ^2}}} = {1 \\over {4{\\beta ^2}}} + {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $${\\alpha ^2} = 1 + 2{\\beta ^2}$$\n<br><br>$$ \\Rightarrow $$ $${\\alpha ^2} = 1 + 2\\alpha $$\n<br><br>$$ \\Rightarrow $$ $${\\alpha ^2} - 2\\alpha  - 1 = 0$$\n<br><br>$$ \\Rightarrow $$ $$\\alpha  = 1 + \\sqrt 2 $$ and $$\\alpha  = 1 - \\sqrt 2 $$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "tlme8nbcqh",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If any point on an ellipse is (3sin<span class=\"math-tex\">$\\alpha$</span>, 5cos<span class=\"math-tex\">$\\alpha$</span>), then what is the eccentricity of the ellipse?",
+      "options": [
+        "4/3",
+        "4/5",
+        "3/4",
+        "1/2"
+      ],
+      "correctOption": 1,
+      "solution": "<ol>\n<li><p>Given point $(x,y)=(3\\sin\\alpha,\\;5\\cos\\alpha)$.  </p></li>\n<li><p>Then  </p>\n<p>$\\sin\\alpha=\\frac{x}{3},\\quad \\cos\\alpha=\\frac{y}{5}.$  </p></li>\n<li><p>Using $\\sin^2\\alpha+\\cos^2\\alpha=1$,  </p>\n<p>$$      \\Bigl(\\frac{x}{3}\\Bigr)^2+\\Bigl(\\frac{y}{5}\\Bigr)^2=1.    $$  </p></li>\n<li><p>This is the ellipse with semi-major axis $a=5$ and semi-minor axis $b=3$.  </p></li>\n<li><p>Eccentricity $e=\\sqrt{1-\\frac{b^2}{a^2}}            =\\sqrt{1-\\frac{3^2}{5^2}}            =\\sqrt{\\frac{16}{25}}            =\\frac{4}{5}.$  </p></li>\n</ol>\n<p>Answer: $\\displaystyle \\frac{4}{5}$ (Option B).</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "YPUS6uIIDYQa7Fw1",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "A focus of an ellipse is at the origin. The directrix is the line $$x=4$$ and the eccentricity is $${{1 \\over 2}}$$. Then the length of the semi-major axis is :",
+      "options": [
+        "$${{8 \\over 3}}$$",
+        "$${{2 \\over 3}}$$",
+        "$${{4 \\over 3}}$$",
+        "$${{5 \\over 3}}$$"
+      ],
+      "correctOption": 0,
+      "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/7VFHcnwNT2KbaxetC/Ygi2yXzjgL4mpY8G32wy8AeIppesQ/oDshQmKSrXKKTKMvzNlr0S/image.png\" loading=\"lazy\" alt=\"AIEEE 2008 Mathematics - Ellipse Question 114 English Explanation\">\n<br><br>Perpendicular distance of directrix from focus \n<br><br>$$ = {a \\over e} - ae = 4$$\n<br><br>$$ \\Rightarrow a\\left( {2 - {1 \\over 2}} \\right) = 4$$\n<br><br>$$ \\Rightarrow a = {8 \\over 3}$$\n<br><br>$$\\therefore$$ Semi major axis $$=8/3$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "UpdYGwyWWDYrcvXF",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The eccentricity of an ellipse, with its centre at the origin, is $${1 \\over 2}$$. If one of the directrices is $$x=4$$, then the equation of the ellipse is :",
+      "options": [
+        "$$4{x^2} + 3{y^2} = 1$$ ",
+        "$$3{x^2} + 4{y^2} = 12$$",
+        "$$4{x^2} + 3{y^2} = 12$$",
+        "$$3{x^2} + 4{y^2} = 1$$"
+      ],
+      "correctOption": 1,
+      "solution": "$$e = {1 \\over 2}.\\,\\,$$ Directrix,  $$x = {a \\over e} = 4$$ \n<br><br>$$\\therefore$$ $$a = 4 \\times {1 \\over 2} = 2$$ \n<br><br>$$\\therefore$$ $$b = 2\\sqrt {1 - {1 \\over 4}}  = \\sqrt 3 $$\n<br><br>Equation of elhipe  is \n<br><br>$${{{x^2}} \\over 4} + {{{y^2}} \\over 3} = 1 \\Rightarrow 3{x^2} + 4{y^2} = 12$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    },
+    {
+      "id": "m6t9xqsj",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The length of the chord of the ellipse $\\frac{x^2}{4}+\\frac{y^2}{2}=1$, whose mid-point is $\\left(1, \\frac{1}{2}\\right)$, is :</p>",
+      "options": [
+        "$\\frac{2}{3} \\sqrt{15}$\n",
+        "$\\frac{1}{3} \\sqrt{15}$\n",
+        "$\\sqrt{15}$\n",
+        "$\\frac{5}{3} \\sqrt{15}$"
+      ],
+      "correctOption": 0,
+      "solution": "<p>$$\\begin{aligned}\n&amp;\\begin{aligned}\n&amp; \\mathrm{T}=\\mathrm{S}_1 \\\\\n&amp; \\frac{\\mathrm{x} \\cdot 1}{4}+\\frac{\\mathrm{y} \\cdot 1 / 2}{2}=\\frac{1}{4}+\\frac{1}{8} \\\\\n&amp; \\mathrm{x}+\\mathrm{y}=\\frac{3}{2}\n\\end{aligned}\\\\\n&amp;\\text { solve with ellipse }\\\\\n&amp;\\begin{aligned}\n\\mathrm{PR} &amp; =\\sqrt{\\left(\\mathrm{x}_2-\\mathrm{x}_1\\right)^2+\\left(\\mathrm{y}_2-\\mathrm{y}_1\\right)^2} \\\\\n&amp; =\\sqrt{2}\\left|\\mathrm{x}_2-\\mathrm{x}_1\\right|\n\\end{aligned}\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7j7sgs0/cc2c4f68-7a9b-4ab5-8c95-c50e707abd99/471c3f00-f2c4-11ef-839d-2d40708f8cbd/file-jaoe38c1m7j7sgs1.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7j7sgs0/cc2c4f68-7a9b-4ab5-8c95-c50e707abd99/471c3f00-f2c4-11ef-839d-2d40708f8cbd/file-jaoe38c1m7j7sgs1.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 23rd January Evening Shift Mathematics - Ellipse Question 29 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; y_2=\\frac{3}{2}-x_2 \\\\\n&amp; y_1=\\frac{3}{2}-x_1 \\\\\n&amp; y_2-y_1=x_2-x_1 \\\\\n&amp; x^2+2 y^2=4 \\\\\n&amp; x^2+2\\left(\\frac{3}{2}-x\\right)^2=4 \\\\\n&amp; 6 x^2-12 x+1=0 \\\\\n&amp; x_1+x_2=2 \\\\\n&amp; x_1 x_2=1 / 6 \\\\\n&amp; \\left|x_2-x_1\\right|=\\sqrt{\\left(x_2+x_1\\right)^2-4 x_1 x_2} \\\\\n&amp; \\quad=\\sqrt{4-4 / 6} \\\\\n&amp; P R=\\sqrt{2} \\cdot 2 \\cdot \\frac{\\sqrt{5}}{\\sqrt{2} \\sqrt{3}}=\\frac{2}{3} \\sqrt{15}\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Ellipse"
+    }
+  ]
+}

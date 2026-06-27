@@ -1,0 +1,465 @@
+{
+  "testId": "tst-19g71mp2bkbtt",
+  "title": "Differential Equations - Chapter Test",
+  "examType": "JEE Main",
+  "durationMinutes": 60,
+  "totalMarks": 100,
+  "totalQuestions": 25,
+  "questions": [
+    {
+      "id": "tlm69mswer",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the degree of the differential equation of all circles touching both the coordinate axes in the first quadrant?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 1,
+      "solution": "<p>We begin by noting that any circle that touches both the x‐axis and y‐axis in the first quadrant must have its center at (r, r) (since the distance to each axis is equal) and radius r. Therefore, the equation of such a circle is</p>\n<p>$$ (x - r)^2 + (y - r)^2 = r^2. $$</p>\n<p>Step 1. Expand the equation:</p>\n<p>• Expanding gives</p>\n<p>$$   x^2 - 2rx + r^2 + y^2 - 2ry + r^2 = r^2.   $$</p>\n<p>• Simplify by combining like terms:</p>\n<p>$$   x^2 + y^2 - 2r(x + y) + r^2 = 0. \\tag{1}   $$</p>\n<p>Step 2. Differentiate (1) with respect to x:</p>\n<p>• When differentiating, treat r as a constant (since each circle in the family has a fixed r):</p>\n<p>$$   \\frac{d}{dx}(x^2 + y^2 - 2r(x+y) + r^2) = 0.   $$</p>\n<p>• This gives</p>\n<p>$$   2x + 2yy' - 2r(1+y') = 0.   $$</p>\n<p>• Dividing by 2, we obtain</p>\n<p>$$   x + yy' = r(1+y'). \\tag{2}   $$</p>\n<p>Step 3. Eliminate the parameter r:</p>\n<p>• Solve (2) for r:</p>\n<p>$$   r = \\frac{x+yy'}{1+y'}.   $$</p>\n<p>• Substitute this expression for r into (1):</p>\n<p>$$   x^2+y^2 - 2(x+y)\\left(\\frac{x+yy'}{1+y'}\\right) + \\left(\\frac{x+yy'}{1+y'}\\right)^2 = 0.   $$</p>\n<p>• Multiply through by $(1+y')^2$ to eliminate denominators:</p>\n<p>$$   (x^2+y^2)(1+y')^2 - 2(x+y)(x+yy')(1+y') + (x+yy')^2 = 0.   $$</p>\n<p>Step 4. Identify the degree of the differential equation:</p>\n<p>• The “degree” of a differential equation is defined as the highest power (exponent) of the highest order derivative (here, $y'$) when the equation is written in a polynomial form (i.e. free of radicals and fractions in $y'$).</p>\n<p>• In our final equation, even though the differential equation is of the first order (only $y'$ appears), the derivative $y'$ appears up to the second power (in the term $(1+y')^2$ and in the expansion of $(x+yy')^2$).</p>\n<p>• Therefore, the degree of the differential equation is 2.</p>\n<p>Final Answer: Option B (2).</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "1l2sm02eo",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$f:[1,\\infty ) \\to [2,\\infty )$$ be a differentiable function such that $$f(1) = 2$$. If $$6\\int\\limits_1^x {f(t)dt = 3xf(x) - {x^3} - 5} $$ for all $$x \\ge 1$$, then the value of f(2) is ___________.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>It is given that</p>\n<p>$$6\\int\\limits_1^x {f(t)dt = 3xf(x) - {x^3}} - 5$$</p>\n<p>$$ \\Rightarrow 6f(x) = 3f(x) + 3xf'(x) - 3{x^2}$$</p>\n<p>$$ \\Rightarrow 3f(x) = 3xf'(x) - 3{x^2} \\Rightarrow xf'(x) - f(x) = {x^2}$$</p>\n<p>$$ \\Rightarrow x{{dy} \\over {dx}} - y = {x^2} \\Rightarrow {{dy} \\over {dx}} - {1 \\over x}y = x$$ .... (1)</p>\n<p>Now, $$I.F. = {e^{\\int { - {1 \\over x}dx} }} = {e^{ - {{\\log }_e}x}}$$</p>\n<p>Multiplying Eq. (1) both sides by $${1 \\over x}$$, we get</p>\n<p>$${1 \\over x}{{dy} \\over {dx}} - {1 \\over {{x^2}}}y = 1 \\Rightarrow {d \\over {dx}}\\left( {y.{1 \\over x}} \\right) = 1$$</p>\n<p>Integrating, we get</p>\n<p>$${y \\over x} = x + c$$</p>\n<p>Substituting x = 1 and y = 2, we get</p>\n<p>$$ \\Rightarrow 2 = 1 + c \\Rightarrow c = 1 \\Rightarrow y = {x^2} + x$$</p>\n<p>$$ \\Rightarrow f(x) = {x^2} + x \\Rightarrow f(2) = 6$$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "Alm5jY7wF8yGlWtkEhjgy2xukfg6y95k",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If y = y(x) is the solution of the differential <br><br/>equation $${{5 + {e^x}} \\over {2 + y}}.{{dy} \\over {dx}} + {e^x} = 0$$  satisfying\ny(0) = 1, then a value of y(log<sub>e</sub>13) is :",
+      "options": [
+        "-1",
+        "1",
+        "0",
+        "2"
+      ],
+      "correctOption": 0,
+      "solution": "$${{5 + {e^x}} \\over {2 + y}}.{{dy} \\over {dx}} + {e^x} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{5 + {e^x}} \\over {2 + y}}.{{dy} \\over {dx}} = -{e^x} $$\n<br><br>Integrating both sides,\n<br><br>$$ \\Rightarrow $$ $$\\int {{{dy} \\over {2 + y}}}  = \\int {{{ - {e^x}} \\over {{e^x} + 5}}} dx$$\n<br><br>$$ \\Rightarrow $$ ln (y + 2) = – ln(e<sup>x</sup>\n + 5) + k\n<br><br>$$ \\Rightarrow $$ (y + 2) (e<sup>x</sup>\n + 5) = C\n<br><br>$$ \\because $$ y(0) = 1\n<br><br>$$ \\Rightarrow $$ C = 18\n<br><br>$$ \\therefore $$ y + 2 = $${{{18} \\over {{e^x} + 5}}}$$\n<br><br>At x = log<sub>e</sub>13\n<br><br>y + 2 = $${{{18} \\over {13 + 5}}}$$ = 1\n<br><br>$$ \\Rightarrow $$ y = -1",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "1lh00e9y0",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If the solution curve of the differential equation $$\\left(y-2 \\log _{e} x\\right) d x+\\left(x \\log _{e} x^{2}\\right) d y=0, x > 1$$ passes through the points $$\\left(e, \\frac{4}{3}\\right)$$ and $$\\left(e^{4}, \\alpha\\right)$$, then $$\\alpha$$ is equal to ____________.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "The given differential equation is,\n<br/><br/>$$\n\\begin{aligned}\n& (y-2 \\log x) d x+\\left(x \\log x^2\\right) d y=0 \\\\\\\\\n& \\Rightarrow \\frac{d y}{d x}=\\frac{(2 \\log x-y)}{2 x \\log x} \\\\\\\\\n& \\Rightarrow \\frac{d y}{d x}+\\frac{y}{2 x \\log x}=\\frac{1}{x}\n\\end{aligned}\n$$\n<br/><br/>It is a linear differential equation.\n<br/><br/>$$\n\\therefore \\text { I.F. }=e^{\\int \\frac{1}{2 x \\log x} d x}\n$$\n<br/><br/>Put $\\log x=t \\Rightarrow \\frac{1}{x} d x=d t$\n<br/><br/>$$\n\\therefore \\text { I.F. }=e^{\\int \\frac{1}{2 t} d t}=e^{\\log (t)^{\\frac{1}{2}}}=\\sqrt{t}=\\sqrt{\\log x}\n$$\n<br/><br/>So, required solution is,\n<br/><br/>$$\n\\begin{aligned}\n& y \\sqrt{\\log x}=\\int \\frac{\\sqrt{\\log x}}{x} d x \\\\\\\\\n& \\log x=v \\Rightarrow \\frac{1}{x} d x=d v \\\\\\\\\n& \\Rightarrow y \\sqrt{\\log x}=\\int \\sqrt{v} d v+C \\\\\\\\\n& \\Rightarrow y \\sqrt{\\log x}=\\frac{2 v^{3 / 2}}{3}+C \\\\\\\\\n& \\Rightarrow y \\sqrt{\\log x}=\\frac{2}{3}(\\log x)^{3 / 2}+C\n\\end{aligned}\n$$\n<br/><br/>Now, this curve passes through $\\left(e, \\frac{4}{3}\\right)$ and $\\left(e^4, \\alpha\\right)$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore \\frac{4}{3} \\sqrt{\\log e}=\\frac{2}{3}(\\log e)^{3 / 2}+C \\\\\\\\\n& \\Rightarrow C=\\frac{4}{3}-\\frac{2}{3}=\\frac{2}{3}\n\\end{aligned}\n$$\n<br/><br/>Also, $\\alpha \\sqrt{\\log e^4}=\\frac{2}{3}\\left(\\log e^4\\right)^{3 / 2}+\\frac{2}{3}$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow 2 \\alpha=\\frac{2}{3} \\times(4)^{3 / 2}+\\frac{2}{3}=\\frac{16}{3}+\\frac{2}{3}=\\frac{18}{3} \\\\\\\\\n& \\Rightarrow \\alpha=3\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "luy6z4dh",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The solution of the differential equation $$(x^2+y^2) \\mathrm{d} x-5 x y \\mathrm{~d} y=0, y(1)=0$$, is :</p>",
+      "options": [
+        "$$\\left|x^2-4 y^2\\right|^5=x^2$$\n",
+        "$$\\left|x^2-2 y^2\\right|^6=x$$\n",
+        "$$\\left|x^2-2 y^2\\right|^5=x^2$$\n",
+        "$$\\left|x^2-4 y^2\\right|^6=x$$"
+      ],
+      "correctOption": 0,
+      "solution": "<p>$$\\begin{aligned}\n& \\left(x^2+y^2\\right) d x-5 x y d y=0 \\\\\n& \\frac{d y}{d x}=\\frac{x^2+y^2}{5 x y} \\\\\n& \\text { Let } y=v x \\\\\n& \\frac{d y}{d x}=v+x \\frac{d v}{d x} \\\\\n& V+x \\frac{d v}{d x}=\\frac{1+v^2}{5 v} \\\\\n& x \\frac{d v}{d x}=\\frac{1+v^2-5 v^2}{5 v}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\frac{1}{8} \\int \\frac{8 \\times 5 v d v}{1-4 v^2}=\\int \\frac{d x}{x} \\\\\n& \\frac{-5}{8} \\ln \\left|1-4 v^2\\right|=\\ln |x|+\\ln c \\\\\n& \\Rightarrow \\frac{5}{8} \\ln \\frac{\\left|x^2-4 y^2\\right|}{x^2}+\\ln |x|=\\ln c \\\\\n& \\left|\\frac{x^2-4 y^2}{x^2}\\right|^{5 / 8}|x|=c \\\\\n& \\frac{\\left|x^2-4 y^2\\right|^{5 / 8}}{|x|^{\\frac{1}{4}}}=c \\because y(1)=0 \\Rightarrow c=1 \\\\\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow\\left|x^2-4 y^2\\right|^{5 / 8}=|x|^{\\frac{1}{4}} \\\\\n& \\left|x^2-4 y^2\\right|^5=x^2\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "m6rp5uzy",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $y=f(x)$ be the solution of the differential equation $\\frac{\\mathrm{d} y}{\\mathrm{~d} x}+\\frac{x y}{x^2-1}=\\frac{x^6+4 x}{\\sqrt{1-x^2}},-1< x<1$ such that $f(0)=0$. If $6 \\int_{-1 / 2}^{1 / 2} f(x) \\mathrm{d} x=2 \\pi-\\alpha$ then $\\alpha^2$ is equal to _________ .</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>I.F. $\\mathrm{e}^{-\\frac{1}{2} \\int \\frac{2 \\mathrm{x}}{1-\\mathrm{x}^2} \\mathrm{dx}}=\\mathrm{e}^{-\\frac{1}{2} \\ln \\left(1-\\mathrm{x}^2\\right)}=\\sqrt{1-\\mathrm{x}^2}$</p>\n<p>$$y \\times \\sqrt{1-x^2}=\\int\\left(x^6+4 x\\right) d x=\\frac{x^7}{7}+2 x^2+c$$</p>\n<p>Given $y(0)=0 \\Rightarrow c=0$</p>\n<p>$$y=\\frac{\\frac{x^7}{7}+2 x^2}{\\sqrt{1-x^2}}$$</p>\n<p>$$\\begin{aligned}\n&\\text { Now, } 6 \\int_{-\\frac{1}{2}}^{\\frac{1}{2}} \\frac{\\frac{x^7}{7}+2 x^2}{\\sqrt{1-x^2}} d x=6 \\int_{-\\frac{1}{2}}^{\\frac{1}{2}} \\frac{2 x^2}{\\sqrt{1-x^2}} d x\\\\\n&=24 \\int_0^{\\frac{1}{2}} \\frac{\\mathrm{x}^2}{\\sqrt{1-\\mathrm{x}^2}} \\mathrm{dx}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { Put } x=\\sin \\theta \\\\\n& d x=\\cos \\theta d \\theta \\\\\n& =24 \\int_0^{\\frac{\\pi}{6}} \\frac{\\sin ^2 \\theta}{\\cos \\theta} \\cos \\theta d \\theta \\\\\n& =24 \\int_0^{\\frac{\\pi}{6}}\\left(\\frac{1-\\cos 2 \\theta}{2}\\right) d \\theta=12\\left[\\theta-\\frac{\\sin 2 \\theta}{2}\\right]_0^{\\frac{\\pi}{6}} \\\\\n& =12\\left(\\frac{\\pi}{6}-\\frac{\\sqrt{3}}{4}\\right) \\\\\n& =2 \\pi-3 \\sqrt{3} \\\\\n& \\alpha^2=(3 \\sqrt{3})^2=27\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "FCSYRKqNo2ber6iq",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let the population of rabbits surviving at time $$t$$ be governed  by the differential equation $${{dp\\left( t \\right)} \\over {dt}} = {1 \\over 2}p\\left( t \\right) - 200.$$ If $$p(0)=100,$$ then $$p(t)$$ equals:",
+      "options": [
+        "$$600 - 500\\,{e^{t/2}}$$ ",
+        "$$400 - 300\\,{e^{-t/2}}$$",
+        "$$400 - 300\\,{e^{t/2}}$$",
+        "$$300 - 200\\,{e^{-t/2}}$$"
+      ],
+      "correctOption": 2,
+      "solution": "Given differential equation is \n<br><br>$${{dp\\left( t \\right)} \\over {dt}} = {1 \\over 2}p\\left( t \\right) - 200$$\n<br><br>By separating the variable, we get \n<br><br>$$dp\\left( t \\right) = \\left[ {{1 \\over 2}p\\left( t \\right) - 200} \\right]dt$$\n<br><br>$$ \\Rightarrow {{dp\\left( t \\right)} \\over {{1 \\over 2}p\\left( t \\right) - 200}} = dt$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ Integrating on both the sides,\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\int {{{d\\left( {p\\left( t \\right)} \\right)} \\over {{1 \\over 2}p\\left( t \\right) - 200}}}  = \\int {dt} $$\n<br><br>Let $${1 \\over 2}p\\left( t \\right) - 200 = s \\Rightarrow {{dp\\left( t \\right)} \\over 2} = ds$$\n<br><br>So, $$\\int {{{d\\,p\\left( t \\right)} \\over {\\left( {{1 \\over 2}p\\left( t \\right) - 200} \\right)}}}  = \\int {dt} $$\n<br><br>$$ \\Rightarrow \\int {{{2ds} \\over s} = \\int {dt} }  \\Rightarrow 2\\log s = t + c$$\n<br><br>$$ \\Rightarrow 2\\log \\left( {{{p\\left( t \\right)} \\over 2} - 200} \\right) = t + c$$\n<br><br>$$ \\Rightarrow {{p\\left( t \\right)} \\over 2} - 200 = {e^{{1 \\over 2}}}k$$\n<br><br>Using given condition $$p\\left( t \\right) = 400 - 300{e^{t/2}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "mszO1KF7rYzvMbyn",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let a solution $$y=y(x)$$ of the differential equation,\n<br/><br/> $$x\\sqrt {{x^2} - 1} \\,\\,dy - y\\sqrt {{y^2} - 1} \\,dx = 0$$ satify $$y\\left( 2 \\right) = {2 \\over {\\sqrt 3 }}.$$ \n<p><b>STATEMENT-1 :</b> $$y\\left( x \\right) = \\sec \\left( {{{\\sec }^{ - 1}}x - {\\pi  \\over 6}} \\right)$$ and \n<br><br/><b>STATEMENT-2 :</b> $$y\\left( x \\right)$$ given by $${1 \\over y} = {{2\\sqrt 3 } \\over x} - \\sqrt {1 - {1 \\over {{x^2}}}} $$ </p>",
+      "options": [
+        "STATEMENT-1 is True, STATEMENT-2 is True;STATEMENT-2 is a correct explanation for STATEMENT-1",
+        "STATEMENT-1 is True, STATEMENT-2 is True;STATEMENT-2 is <b>NOT</b> a correct explanation for STATEMENT-1",
+        "STATEMENT-1 is True, STATEMENT-2 is False",
+        "STATEMENT-1 is False , STATEMENT-2 is True"
+      ],
+      "correctOption": 2,
+      "solution": "<p>The given differential equation is</p>\n<p>$$x\\sqrt {{x^2} - 1} dy - y\\sqrt {{y^2} - 1} dx = 0$$</p>\n<p>$$ = \\int {{{dy} \\over {y\\sqrt {{y^2} - 1} }} = \\int {{{dx} \\over {x\\sqrt {{x^2} - 1} }}} } $$</p>\n<p>$$ \\Rightarrow {\\sec ^{ - 1}}y = {\\sec ^{ - 1}}x + c$$</p>\n<p>$$y = \\sec [{\\sec ^{ - 1}}x + C]$$ [$$\\because$$ $$y(2) = {2 \\over {\\sqrt 3 }}$$]</p>\n<p>$${2 \\over {\\sqrt 3 }} = \\sec ({\\sec ^{ - 1}}2 + C)$$</p>\n<p>$$ = {\\sec ^{ - 1}}{2 \\over {\\sqrt 3 }} - {\\sec ^{ - 1}}2 = C$$</p>\n<p>$$C = {\\pi  \\over 6} - {\\pi  \\over 3} = {{ - \\pi } \\over 6}$$ [$$\\therefore$$ $$y = \\sec \\left[ {{{\\sec }^{ - 1}}x - {\\pi  \\over 6}} \\right]$$]</p>\n<p>Statement 1 is true</p>\n<p>Also, $${1 \\over y} = \\cos \\left[ {\\cos  - {\\pi  \\over x} - {\\pi  \\over 6}} \\right]$$</p>\n<p>$$\\cos \\left( {{{\\cos }^{ - 1}}{1 \\over x}} \\right)\\cos {\\pi  \\over 6} + \\sin ({\\cos ^{ - 1}}{1 \\over x})\\sin {\\pi  \\over 6}$$</p>\n<p>$$ = {1 \\over y} = {{\\sqrt 3 } \\over {2x}} + {1 \\over 2}\\sqrt {1 - {1 \\over {{x^2}}}} $$</p>\n<p>$$\\therefore$$ Statement 2 is false.</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "nXpEQlCFiYbA3EetYk7k9k2k5fmqk1a",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let y = y(x) be the solution curve of the differential equation,\n<br><br/>$$\\left( {{y^2} - x} \\right){{dy} \\over {dx}} = 1$$, satisfying y(0) =\n1. This curve intersects the x-axis at a point whose abscissa is :\n",
+      "options": [
+        "2 + e",
+        "-e",
+        "2",
+        "2 - e"
+      ],
+      "correctOption": 3,
+      "solution": "$$\\left( {{y^2} - x} \\right){{dy} \\over {dx}} = 1$$\n<br><br>$$ \\Rightarrow $$ $${{dx} \\over {dy}}$$ + x = y<sup>2</sup>\n<br><br>I.F = $${e^{\\int {dy} }}$$ = e<sup>y</sup>\n<br><br>Solution is given by\n<br><br>xe<sup>y</sup> = $${\\int {{y^2}{e^y}dy} }$$\n<br><br>$$ \\Rightarrow $$ xe<sup>y</sup> = (y<sup>2</sup> – 2y + 2)e<sup>y</sup> + C\n<br><br>y(0) = 1 means x = 0, y = 1\n<br><br>$$ \\therefore $$ C = -e\n<br><br>$$ \\therefore $$ xe<sup>y</sup> = (y<sup>2</sup> – 2y + 2)e<sup>y</sup> - e\n<br><br>put y = 0\n<br><br>$$ \\therefore $$ x = 0 – 0 + 2 – e\n<br><br>$$ \\Rightarrow $$ x = 2 - e",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "lkfclsdOLEyMMUct",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The solution of the equation $$\\,{{{d^2}y} \\over {d{x^2}}} = {e^{ - 2x}}$$ ",
+      "options": [
+        "$${{{e^{ - 2x}}} \\over 4}$$ ",
+        "$${{{e^{ - 2x}}} \\over 4} + cx + d$$ ",
+        "$${1 \\over 4}{e^{ - 2x}} + c{x^2} + d$$ ",
+        "$$\\,{1 \\over 4}{e^{ - 4x}} + cx + d$$ "
+      ],
+      "correctOption": 1,
+      "solution": "$${{{a^2}y} \\over {d{x^2}}} = {e^{ - 2x}};{\\mkern 1mu} $$\n<br><br>$${{dy} \\over {dx}} = {{{e^{ - 2x}}} \\over { - 2}} + c;$$\n<br><br>$$y = {{{e^{ - 2x}}} \\over 4} + cx + d$$ ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "lv0vxcw0",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If the solution $$y=y(x)$$ of the differential equation $$(x^4+2 x^3+3 x^2+2 x+2) \\mathrm{d} y-(2 x^2+2 x+3) \\mathrm{d} x=0$$ satisfies $$y(-1)=-\\frac{\\pi}{4}$$, then $$y(0)$$ is equal to :</p>",
+      "options": [
+        "$$-\\frac{\\pi}{12}$$\n",
+        "$$\\frac{\\pi}{2}$$\n",
+        "0",
+        "$$\\frac{\\pi}{4}$$"
+      ],
+      "correctOption": 3,
+      "solution": "<p>$$\\begin{aligned}\n& \\left(x^4+2 x^3+3 x^2+2 x+2\\right) d y-\\left(2 x^2+2 x+3\\right) d x=0 \\\\\n& \\int d y=\\int\\left(\\frac{2 x^2+2 x+3}{x^4+2 x^3+3 x^2+2 x+2} d x\\right. \\\\\n& \\int d y=\\int \\frac{1}{x^2+1} d x+\\int \\frac{}{x^2+2 x+2} d x \\\\\n& y=\\tan ^{-1}(x)+\\tan ^{-1}(1+x)+C \\\\\n& y(-1)=\\tan ^{-1}(-1)+\\tan ^{-1}(1-1)+C \\\\\n& y(-1)=-\\frac{\\pi}{4}+C=\\left(\\frac{-\\pi}{4}\\right)-\\{\\text { given }\\} \\\\\n& \\Rightarrow C=0 \\\\\n& \\text { So, } y(x)=\\tan ^{-1}(x)+\\tan ^{-1}(1+x) \\\\\n& y(0)=\\tan ^{-1}(0)+\\tan ^{-1}(1+0) \\\\\n& y(0)=\\frac{\\pi}{4}\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "1ldyb0ayc",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$y = y(x)$$ be the solution of the differential equation $${x^3}dy + (xy - 1)dx = 0,x > 0,y\\left( {{1 \\over 2}} \\right) = 3 - \\mathrm{e}$$. Then y (1) is equal to</p>",
+      "options": [
+        "2 $$-$$ e",
+        "3",
+        "1",
+        "e"
+      ],
+      "correctOption": 2,
+      "solution": "$x^{3} d y+x y d x-d x=0$\n<br/><br/>\n$\\Rightarrow \\frac{d y}{d x}=\\frac{1-x y}{x^{3}}$\n<br/><br/>\n$\\Rightarrow \\frac{d y}{d x}+\\frac{y}{x^{2}}=\\frac{1}{x^{3}}$\n<br/><br/>\nI.F. $=e^{\\int \\frac{d x}{x^{2}}}=e^{-\\frac{1}{x}}$\n<br/><br/>\n$\\therefore \\quad y e^{-\\frac{1}{x}}=\\int \\frac{e^{-\\frac{1}{x}}}{x^{3}} d x$\n<br/><br/>\nFor RHS put $-\\frac{1}{x}=t \\Rightarrow \\frac{d x}{x^{2}}=d t$\n<br/><br/>\n$\\therefore y e^{-\\frac{1}{x}}=-\\int t e^{t} d t$\n<br/><br/>\n$\\Rightarrow y e^{-\\frac{1}{x}}=-\\left[t e^{t}-e^{t}\\right]+c$\n<br/><br/>\n$\\Rightarrow y e^{-\\frac{1}{x}}=\\frac{e^{-\\frac{1}{x}}}{x}+e^{-\\frac{1}{x}}+c$\n<br/><br/>\n$$\n\\downarrow y\\left(\\frac{1}{2}\\right)=3-e\n$$\n<br/><br/>\n$\\Rightarrow(3-e) e^{-2}=2 e^{-2}+e^{-2}+c$\n<br/><br/>\n$\\Rightarrow \\quad c=-\\frac{1}{e}$\n<br/><br/>\nFor $y(1)$ put $x=1, c=-e^{-1}$ in equation (i) we get $y e^{-1}=e^{-1}+e^{-1}-e^{-1}$\n<br/><br/>\n$\\Rightarrow y=1$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "rnmxkZT2jG9mNT3hkCdZl",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The solution of the differential equation\n<br><br>$${{dy} \\over {dx}}\\, + \\,{y \\over 2}\\,\\sec x = {{\\tan x} \\over {2y}},\\,\\,$$  \n<br><br>where 0 $$ \\le $$ x &lt; $${\\pi  \\over 2}$$, and y (0) = 1, is given  by : ",
+      "options": [
+        "y = 1 $$-$$ $${x \\over {\\sec x + \\tan x}}$$ ",
+        "y<sup>2</sup> = 1 + $${x \\over {\\sec x + \\tan x}}$$",
+        "y<sup>2</sup> = 1 $$-$$ $${x \\over {\\sec x + \\tan x}}$$",
+        "y = 1 + $${x \\over {\\sec x + \\tan x}}$$"
+      ],
+      "correctOption": 2,
+      "solution": "Given, \n<br><br>$${{dy} \\over {dx}} + {y \\over 2}\\sec x = {{\\tan x} \\over {2y}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$2y{{dy} \\over {dx}} + {y^2}\\sec x = \\tan x$$\n<br><br>Now, let\n<br><br>y<sup>2</sup> $$=$$ t\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;2y$${{dy} \\over {dx}} = {{dt} \\over {dx}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp; New equation,\n<br><br>$${{dt} \\over {dx}} + t\\sec x = \\tan x$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;I.F $$=$$  $${e^{\\int {\\sec xdx} }}$$\n<br><br>$$=$$&nbsp;&nbsp;&nbsp;$${e^{\\ln \\left( {\\sec x + \\tan x} \\right)}}$$\n<br><br>$$=$$&nbsp;&nbsp;&nbsp;sec x + tan x\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Solution is,\n<br><br>t(sec x + tan x) $$=$$ $$\\int {\\tan x} $$ (sec x + tan x) dx\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;t(sec x + tan x) $$=$$ sec x + tan x $$-$$ x + c\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp; t $$=$$ 1 $$-$$ $${x \\over {\\sec x + \\tan x}} + c$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;y<sup>2</sup> $$=$$ 1 $$-$$ $${x \\over {\\sec x + \\tan x}} + c$$\n<br><br>Given,\n<br><br>y(0) $$=$$ 1\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;1 $$=$$ 1 $$-$$ 0 + c\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;c $$=$$ 0\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;y<sup>2</sup> $$=$$ 1 $$-$$ $${x \\over {\\sec x + \\tan x}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "bKLPl8x59ic5sk0Yvo1kls4nhfs",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If a curve passes through the origin and the slope of the tangent to it at any point (x, y) is $${{{x^2} - 4x + y + 8} \\over {x - 2}}$$, then this curve also passes through the point :",
+      "options": [
+        "(4, 4)",
+        "(5, 5)",
+        "(5, 4)",
+        "(4, 5)"
+      ],
+      "correctOption": 1,
+      "solution": "Given<br><br>y (0) = 0<br><br>&amp; $${{dy} \\over {dx}} = {{{{(x - 2)}^2} + y + 4} \\over {x - 2}}$$<br><br>$$ \\Rightarrow {{dy} \\over {dx}} - {y \\over {x - 2}} = (x - 2) + {4 \\over {x - 2}}$$<br><br>$$ \\Rightarrow I.F. = {e^{ - \\int {{1 \\over {x - 2}}dx} }} = {1 \\over {x - 2}}$$<br><br>Solution of D.E.<br><br>$$ \\Rightarrow y.{1 \\over {x - 2}} = \\int {{1 \\over {x - 2}}\\left( {(x - 2) + {4 \\over {x - 2}}} \\right)} \\,.\\,dx$$<br><br>$$ \\Rightarrow {y \\over {x - 2}} = x - {4 \\over {x - 2}} + C$$<br><br>Now, at x = 0, y = 0 $$ \\Rightarrow $$ C = $$-$$2<br><br>$$ \\therefore $$ y = x (x $$-$$ 2) $$-$$ 4 $$-$$ 2 (x $$-$$ 2)<br><br>$$ \\Rightarrow $$ y = x<sup>2</sup> $$-$$ 4x<br><br>This curve passes through (5, 5)",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "FcgPlMWlchDinxtwe8jgy2xukfuup2te",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The general solution of the differential equation\n<br><br/>$$\\sqrt {1 + {x^2} + {y^2} + {x^2}{y^2}} $$ + xy$${{dy} \\over {dx}}$$ = 0 is :\n<br><br>(where C is a constant of integration)\n",
+      "options": [
+        "$$\\sqrt {1 + {y^2}}  + \\sqrt {1 + {x^2}}  = {1 \\over 2}{\\log _e}\\left( {{{\\sqrt {1 + {x^2}}  - 1} \\over {\\sqrt {1 + {x^2}}  + 1}}} \\right) + C$$",
+        "$$\\sqrt {1 + {y^2}}  - \\sqrt {1 + {x^2}}  = {1 \\over 2}{\\log _e}\\left( {{{\\sqrt {1 + {x^2}}  - 1} \\over {\\sqrt {1 + {x^2}}  + 1}}} \\right) + C$$",
+        "$$\\sqrt {1 + {y^2}}  + \\sqrt {1 + {x^2}}  = {1 \\over 2}{\\log _e}\\left( {{{\\sqrt {1 + {x^2}}  + 1} \\over {\\sqrt {1 + {x^2}}  - 1}}} \\right) + C$$",
+        "$$\\sqrt {1 + {y^2}}  - \\sqrt {1 + {x^2}}  = {1 \\over 2}{\\log _e}\\left( {{{\\sqrt {1 + {x^2}}  + 1} \\over {\\sqrt {1 + {x^2}}  - 1}}} \\right) + C$$"
+      ],
+      "correctOption": 2,
+      "solution": "$$\\sqrt {1 + {x^2} + {y^2} + {x^2}{y^2}} $$ + xy$${{dy} \\over {dx}}$$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {\\left( {1 + {x^2}} \\right)\\left( {1 + {y^2}} \\right)} $$ + xy$${{dy} \\over {dx}}$$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {\\left( {1 + {x^2}} \\right)} \\sqrt {\\left( {1 + {y^2}} \\right)} $$ = -xy$${{dy} \\over {dx}}$$\n<br><br>$$ \\Rightarrow $$ $$\\int {{{ydy} \\over {\\sqrt {1 + {y^2}} }}}  =  - \\int {{{\\sqrt {1 + {x^2}} } \\over x}} dx$$ .....(1)\n<br><br>Now put 1 + x<sup>2</sup>\n = u<sup>2</sup>\n and 1 + y<sup>2</sup>\n = v<sup>2</sup>\n<br><br>2xdx = 2udu and 2ydy = 2vdv\n<br><br>$$ \\Rightarrow $$ xdx = udu and ydy = vdv\n<br><br>Substitute these values in equation (1)\n<br><br>$$\\int {{{vdv} \\over v}}  =  - \\int {{{{u^2}du} \\over {{u^2} - 1}}} $$\n<br><br>$$ \\Rightarrow $$ $$\\int {dv}  =  - \\int {{{{u^2} - 1 + 1} \\over {{u^2} - 1}}} du$$\n<br><br>$$ \\Rightarrow $$ v = $$ - \\int {\\left( {1 + {1 \\over {{u^2} - 1}}} \\right)} du$$\n<br><br>$$ \\Rightarrow $$ v = -u - $${1 \\over 2}{\\log _e}\\left| {{{u - 1} \\over {u + 1}}} \\right|$$ + C\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {1 + {y^2}} $$ = $$ - \\sqrt {1 + {x^2}} $$ + $${1 \\over 2}{\\log _e}\\left| {{{\\sqrt {1 + {x^2}}  + 1} \\over {\\sqrt {1 + {x^2}}  - 1}}} \\right|$$ + C\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {1 + {y^2}}  + \\sqrt {1 + {x^2}}  = {1 \\over 2}{\\log _e}\\left( {{{\\sqrt {1 + {x^2}}  + 1} \\over {\\sqrt {1 + {x^2}}  - 1}}} \\right) + C$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "zgBCh2waK1nNexvl3j1kmkmayl5",
+      "questionNumber": 16,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If the curve y = y(x) is the solution of the differential equation<br><br> $$2({x^2} + {x^{5/4}})dy - y(x + {x^{1/4}})dx = {2x^{9/4}}dx$$, x &gt; 0 which <br><br>passes through the point $$\\left( {1,1 - {4 \\over 3}{{\\log }_e}2} \\right)$$, then the value of y(16) is equal to :",
+      "options": [
+        "$$4\\left( {{{31} \\over 3} - {8 \\over 3}{{\\log }_e}3} \\right)$$",
+        "$$\\left( {{{31} \\over 3} - {8 \\over 3}{{\\log }_e}3} \\right)$$",
+        "$$\\left( {{{31} \\over 3} + {8 \\over 3}{{\\log }_e}3} \\right)$$",
+        "$$4\\left( {{{31} \\over 3} + {8 \\over 3}{{\\log }_e}3} \\right)$$"
+      ],
+      "correctOption": 0,
+      "solution": "$${{dy} \\over {dx}} - {y \\over {2x}} = {{{x^{9/4}}} \\over {{x^{5/4}}({x^{3/4}} + 1)}}$$<br><br>$$IF = {e^{ - \\int {{{dx} \\over {2x}}} }} = {e^{ - {1 \\over 2}\\ln x}} = {1 \\over {{x^{1/2}}}}$$<br><br>$$y.{x^{ - 1/2}} = \\int {{{{x^{9/4}}.{x^{ - 1/2}}} \\over {{x^{5/4}}({x^{3/4}} + 1)}}} dx$$<br><br>= $$\\int {{{{x^{1/2}}} \\over {({x^{3/4}} + 1)}}} dx$$<br><br>Let, $$x = {t^4} \\Rightarrow dx = 4{t^3}dt$$<br><br>= $$\\int {{{{t^2}.4{t^3}dt} \\over {({t^3} + 1)}}} $$<br><br>= $$4\\int {{{{t^2}({t^3} + 1 - 1)} \\over {({t^3} + 1)}}} d$$<br><br>= $$4\\int {{t^2}dt - 4\\int {{{{t^2}} \\over {{t^3} + 1}}dt} } $$<br><br>= $${{4{t^3}} \\over 3} - {4 \\over 3}\\ln ({t^3} + 1) + C$$<br><br>$$y{x^{ - 1/2}} = {{4{x^{3/4}}} \\over 3} - {4 \\over 3}\\ln ({x^{3/4}} + 1) + C$$\n<br><br>It passes through the point $$\\left( {1,1 - {4 \\over 3}{{\\log }_e}2} \\right)$$\n<br><br>$$ \\therefore $$ $$1 - {4 \\over 3}{\\log _e}2 = {4 \\over 3} - {4 \\over 3}{\\log _e}2 + C$$<br><br>$$ \\Rightarrow C =  - {1 \\over 3}$$<br><br>$$y = {4 \\over 3}{x^{5/4}} - {4 \\over 3}\\sqrt x \\ln ({x^{3/4}} + 1) - {{\\sqrt x } \\over 3}$$<br><br>$$y(16) = {4 \\over 3} \\times 32 - {4 \\over 3} \\times 4\\ln 9 - {4 \\over 3}$$<br><br>$$ = {{124} \\over 3} - {{32} \\over 3}\\ln 3 = 4\\left( {{{31} \\over 3} - {8 \\over 3}\\ln 3} \\right)$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "1krzqf052",
+      "questionNumber": 17,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let y = y(x) be the solution of the differential <br><br/>equation xdy = (y + x<sup>3</sup> cosx)dx with y($$\\pi$$) = 0, then $$y\\left( {{\\pi  \\over 2}} \\right)$$ is equal to :",
+      "options": [
+        "$${{{\\pi ^2}} \\over 4} + {\\pi  \\over 2}$$",
+        "$${{{\\pi ^2}} \\over 2} + {\\pi  \\over 4}$$",
+        "$${{{\\pi ^2}} \\over 2} - {\\pi  \\over 4}$$",
+        "$${{{\\pi ^4}} \\over 4} - {\\pi  \\over 2}$$"
+      ],
+      "correctOption": 0,
+      "solution": "$$xdy = (y + {x^3}\\cos x)dx$$<br><br>$$ \\Rightarrow $$ $$xdy = ydx + {x^3}\\cos xdx$$<br><br>$$ \\Rightarrow $$ $${{xdy - ydx} \\over {{x^2}}} = {{{x^3}coxdx} \\over {{x^2}}}$$<br><br>$$ \\Rightarrow $$ $${d \\over {dx}}\\left( {{y \\over x}} \\right) = \\int {x\\cos xdx} $$<br><br>$$ \\Rightarrow {y \\over x} = x\\sin x - \\int {1.\\sin xdx} $$<br><br>$$ \\Rightarrow $$ $${y \\over x} = x\\sin x + \\cos x + C$$<br><br>$$ \\Rightarrow 0 =  - 1 + C \\Rightarrow C = 1,x = \\pi ,y = 0$$<br><br>so, $${y \\over x} = x\\sin x + \\cos x + 1$$<br><br>$$y = {x^2}\\sin x + x\\cos x + x$$<br><br>$$x = {\\pi  \\over 2}$$<br><br>$$y\\left( {{\\pi  \\over 2}} \\right) = {{{\\pi ^2}} \\over 4} + {\\pi  \\over 2}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "Po1lw9JbsWomUyZs",
+      "questionNumber": 18,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The differential equation of all circles passing through the origin and having their centres on the $$x$$-axis is :",
+      "options": [
+        "$${y^2} = {x^2} + 2xy{{dy} \\over {dx}}$$ ",
+        "$${y^2} = {x^2} - 2xy{{dy} \\over {dx}}$$ ",
+        "$${x^2} = {y^2} + xy{{dy} \\over {dx}}$$",
+        "$${x^2} = {y^2} + 3xy{{dy} \\over {dx}}$$"
+      ],
+      "correctOption": 0,
+      "solution": "General equation of circles passing through origin \n<br><br>and having their centres on the $$x$$-axis is \n<br><br>$${x^2} + {y^2} + 2gx = 0\\,\\,\\,\\,....\\left( i \\right)$$\n<br><br>On differentiating $$w.r.t.x,$$ we get\n<br><br>$$2x + 2y.{{dy} \\over {dx}} + 2g = 0$$\n<br><br>$$ \\Rightarrow g =  - \\left( {x + y{{dy} \\over {dx}}} \\right)$$\n<br><br>$$\\therefore$$ equation $$(i)$$ be \n<br><br>$${x^2} + {y^2} + 2\\left\\{ { - \\left( {x + y{{dy} \\over {dx}}} \\right)} \\right\\}x = 0$$\n<br><br>$$ \\Rightarrow {x^2} + {y^2} - 2{x^2} - 2x{{dy} \\over {dx}}.y = 0$$\n<br><br>$$ \\Rightarrow {y^2} = {x^2} + 2xy{{dy} \\over {dx}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "ml7rbyno",
+      "questionNumber": 19,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $y = y(x)$ be the solution of the differential equation $\\sec x \\dfrac{dy}{dx} - 2y = 2 + 3 \\sin x$, $x \\in \\left(-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right)$,</p><p>$y(0) = -\\dfrac{7}{4}$. Then $y\\left(\\dfrac{\\pi}{6}\\right)$ is equal to :</p>",
+      "options": [
+        "<p>$-\\dfrac{5}{2}$</p>",
+        "<p>$-3\\sqrt{2} - 7$</p>",
+        "<p>$-\\dfrac{5}{4}$</p>",
+        "<p>$-3\\sqrt{3} - 7$</p>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>$$ \\begin{aligned} & \\frac{d y}{d x}-2 \\cos x \\cdot y=\\cos x(2+3 \\sin x) \\\\ & I \\cdot F=e^{-2 \\sin x} \\\\ & G \\cdot S y \\cdot e^{-2 \\sin x}=\\int e^{-2 \\sin x} \\cos x(2+3 \\sin x) d x \\\\ & \\text { Put } \\begin{array}{l} \\sin x=t \\\\ \\cos x \\cdot d x=d t \\end{array} \\end{aligned} $$</p>\n<p>$$ y=e^{-2 \\sin x}\\left(\\frac{2+3 \\sin x}{-2}-\\frac{3}{4}\\right)+c $$</p>\n<p>When $x=0, c=0$</p>\n<p>When $x=\\frac{\\pi}{6}, y=-\\frac{5}{2}$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "m6srmyj6",
+      "questionNumber": 20,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let a curve $y=f(x)$ pass through the points $(0,5)$ and $\\left(\\log _e 2, k\\right)$. If the curve satisfies the differential equation $2(3+y) e^{2 x} d x-\\left(7+e^{2 x}\\right) d y=0$, then $k$ is equal to</p>",
+      "options": [
+        "32",
+        "8",
+        "4",
+        "16"
+      ],
+      "correctOption": 1,
+      "solution": "<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=\\frac{2(3+y) \\cdot e^{2 x}}{7+e^{2 x}} \\\\\n& \\frac{d y}{d x}-\\frac{2 y \\cdot e^{2 x}}{7+e^{2 x}}=\\frac{6 \\cdot e^{2 x}}{7+e^{2 x}} \\\\\n& \\text { I.F. }=e^{-\\int \\frac{2 e^{2 x}}{7+e^{2 x}}}=\\frac{1}{7+e^{2 x}}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\therefore y \\cdot \\frac{1}{7+\\mathrm{e}^{2 \\mathrm{x}}}=\\int \\frac{6 \\mathrm{e}^{2 \\mathrm{x}}}{\\left(7+3^{2 x}\\right)^2} \\mathrm{dx} \\\\\n& \\quad \\frac{\\mathrm{y}}{7+\\mathrm{e}^{2 \\mathrm{x}}}=\\frac{-3}{7+\\mathrm{e}^{2 \\mathrm{x}}}+C \\\\\n& (0,5) \\Rightarrow \\frac{5}{8}=\\frac{-3}{8}+C \\Rightarrow C=1 \\\\\n& \\therefore y=-3+7+\\mathrm{e}^{2 \\mathrm{x}} \\\\\n& y=\\mathrm{e}^{2 \\mathrm{x}}+4 \\\\\n& \\therefore \\mathrm{k}=8\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "1l58ffh9e",
+      "questionNumber": 21,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If the solution of the differential equation <br/><br/>$${{dy} \\over {dx}} + {e^x}\\left( {{x^2} - 2} \\right)y = \\left( {{x^2} - 2x} \\right)\\left( {{x^2} - 2} \\right){e^{2x}}$$ satisfies $$y(0) = 0$$, then the value of y(2) is _______________.</p>",
+      "options": [
+        "$$-$$1",
+        "1",
+        "0",
+        "e"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$\\because$$ $${{dy} \\over {dx}} + {e^x}({x^2} - 2)y = ({x^2} - 2x)({x^2} - 2){e^{2x}}$$</p>\n<p>Here, $$I.F. = {e^{\\int {{e^x}({x^2} - 2)dx} }}$$</p>\n<p>$$ = {e^{({x^2} - 2x){e^x}}}$$</p>\n<p>$$\\therefore$$ Solution of the differential equation is</p>\n<p>$$y\\,.\\,{e^{({x^2} - 2x){e^x}}} = \\int {({x^2} - 2x)({x^2} - 2){e^{2x}}\\,.\\,{e^{({x^2} - 2x){e^x}}}dx} $$</p>\n<p>$$ = \\int {({x^2} - 2x){e^x}\\,.\\,({x^2} - 2){e^x}\\,.\\,{e^{({x^2} - 2x){e^x}}}dx} $$</p>\n<p>Let $$({x^2} - 2x){e^x} = t$$</p>\n<p>$$\\therefore$$ $$({x^2} - 2){e^x}dx = dt$$</p>\n<p>$$y\\,.\\,{e^{({x^2} - 2x){e^x}}} = \\int {t\\,.\\,{e^t}dt} $$</p>\n<p>$$y\\,.\\,{e^{({x^2} - 2x){e^x}}} = ({x^2} - 2x - 1){e^{({x^2} - 2x){e^x}}} + c$$</p>\n<p>$$\\therefore$$ $$y(0) = 0$$</p>\n<p>$$\\therefore$$ $$c = 1$$</p>\n<p>$$\\therefore$$ $$y = ({x^2} - 2x - 1) + {e^{(2x - {x^2}){e^x}}}$$</p>\n<p>$$\\therefore$$ $$y(2) =  - 1 + 1 = 0$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "tlm69mp4da",
+      "questionNumber": 22,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>What is the solution of the following differential equation?</p>\n\n<p><span class=\"math-tex\">$\\rm \\ln\\left(\\frac{dy}{dx}\\right)+y = x$</span></p>\n",
+      "options": [
+        "e<sup>x</sup> + e<sup>y</sup> = c",
+        "e<sup>x + y</sup> = c",
+        "e<sup>x</sup> - e<sup>y</sup> = c",
+        "e<sup>x - y</sup> = c"
+      ],
+      "correctOption": 2,
+      "solution": "<p>The given differential equation is </p>\n<p>$$ \\ln\\left(\\frac{dy}{dx}\\right) + y = x. $$</p>\n<p>To solve this differential equation, we first manipulate it in a way to isolate the derivative term:</p>\n\n<p><p>Take the exponential on both sides to eliminate the natural logarithm:</p>\n<p>$$ \\frac{dy}{dx} = e^{x-y}. $$</p></p>\n<p><p>This is a separable differential equation, so we can rearrange to get:</p>\n<p>$$ e^y \\, dy = e^x \\, dx. $$</p></p>\n<p><p>Now, integrate both sides:</p>\n<p>$$ \\int e^y \\, dy = \\int e^x \\, dx. $$</p></p>\n<p><p>After integrating, we have:</p>\n<p>$$ e^y = e^x + C, $$</p>\n<p>where $C$ is the integration constant.</p></p>\n<p><p>Rearranging gives the implicit solution:</p>\n<p>$$ e^x - e^y = C. $$</p></p>\n\n<p>Thus, the correct solution among the options provided is:</p>\n<p><strong>Option C</strong>: $ e^x - e^y = c $</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "14bMOFYlViUBQmzhHc1kmhz8mfm",
+      "questionNumber": 23,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If y = y(x) is the solution of the differential equation, <br><br>$${{dy} \\over {dx}} + 2y\\tan x = \\sin x,y\\left( {{\\pi  \\over 3}} \\right) = 0$$, then the maximum value of the function y(x) over R is equal to:",
+      "options": [
+        "$${1 \\over 8}$$",
+        "8",
+        "$$-$$$${15 \\over 4}$$",
+        "$${1 \\over 2}$$"
+      ],
+      "correctOption": 0,
+      "solution": "$${{dy} \\over {dx}} + 2\\tan x.y = \\sin x$$<br><br>$$I.F. = {e^{2\\ln (\\sec x)}} = {\\sec ^2}x$$<br><br>$$y.{\\sec ^2}x = \\int {\\sin x{{\\sec }^2}xdx = \\int {\\tan x\\sec x\\,dx + c} } $$<br><br>$$y{\\sec ^2}x = \\sec x + c$$<br><br>$$y = \\cos x + c{\\cos ^2}x$$<br><br>$$x = {\\pi  \\over 3},y = 0$$<br><br>$$ \\Rightarrow {1 \\over 2} + {c \\over 4} \\Rightarrow c =  - 2$$<br><br>$$ \\therefore $$ $$y = \\cos x - 2{\\cos ^2}x$$<br><br>$$y =  - 2\\left( {{{\\cos }^2}x - {1 \\over 2}\\cos x} \\right) =  - 2\\left( {{{\\left( {\\cos x - {1 \\over 4}} \\right)}^2} - {1 \\over {16}}} \\right)$$<br><br>$$y = {1 \\over 8} - 2{\\left( {\\cos x - {1 \\over 4}} \\right)^2}$$<br><br>$$ \\therefore $$ $${y_{\\max }} = {1 \\over 8}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "1krtc61w8",
+      "questionNumber": 24,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let y = y(x) be the solution of the differential equation $$\\cos e{c^2}xdy + 2dx = (1 + y\\cos 2x)\\cos e{c^2}xdx$$, with $$y\\left( {{\\pi  \\over 4}} \\right) = 0$$. Then, the value of $${(y(0) + 1)^2}$$ is equal to :",
+      "options": [
+        "e<sup>1/2</sup>",
+        "e<sup>$$-$$1/2</sup>",
+        "e<sup>$$-$$1</sup>",
+        "e"
+      ],
+      "correctOption": 2,
+      "solution": "$${{dy} \\over {dx}} + 2{\\sin ^2}x = 1 + y\\cos 2x$$<br><br>$$ \\Rightarrow {{dy} \\over {dx}} + ( - \\cos 2x)y = \\cos 2x$$<br><br>$$I.F. = {e^{\\int { - \\cos 2xdx} }} = {e^{ - {{\\sin 2x} \\over 2}}}$$<br><br>Solution of D.E.<br><br>$$y\\left( {{e^{ - {{\\sin 2x} \\over 2}}}} \\right) = \\int {(\\cos 2x)\\left( {{e^{ - {{\\sin 2x} \\over 2}}}} \\right)} dx + c$$<br><br>$$ \\Rightarrow y\\left( {{e^{ - {{\\sin 2x} \\over 2}}}} \\right) =  - {e^{ - {{\\sin 2x} \\over 2}}} + c$$<br><br>Given<br><br>$$y\\left( {{\\pi  \\over 4}} \\right) = 0$$<br><br>$$ \\Rightarrow 0 =  - {e^{{{ - 1} \\over 2}}} + c \\Rightarrow c = {e^{{{ - 1} \\over 2}}}$$<br><br>$$ \\Rightarrow y\\left( {{e^{ - {{\\sin 2x} \\over 2}}}} \\right) =  - {e^{ - {{\\sin 2x} \\over 2}}} + {e^{{{ - 1} \\over 2}}}$$<br><br>at x = 0<br><br>$$y =  - 1 + {e^{{{ - 1} \\over 2}}}$$<br><br>$$ \\Rightarrow y(0) =  - 1 + {e^{{{ - 1} \\over 2}}} \\Rightarrow {(y(0) + 1)^2} = {e^{ - 1}}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    },
+    {
+      "id": "1krygiv8j",
+      "questionNumber": 25,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let y = y(x) be the solution of the differential equation dy = e<sup>$$\\alpha$$x + y</sup> dx; $$\\alpha$$ $$\\in$$ N. If y(log<sub>e</sub>2) = log<sub>e</sub>2 and y(0) = log<sub>e</sub>$$\\left( {{1 \\over 2}} \\right)$$, then the value of $$\\alpha$$ is equal to _____________.",
+      "options": [],
+      "correctOption": 0,
+      "solution": "$$\\int {{e^{ - y}}} dy = \\int {{e^{\\alpha x}}} dx$$<br><br>$$ \\Rightarrow {e^{ - y}} = {{{e^{\\alpha x}}} \\over \\alpha } + c$$ ..... (i)<br><br>Put (x, y) = (ln2, ln2)<br><br>$${{ - 1} \\over 2} = {{{2^\\alpha }} \\over \\alpha } + C$$ ..... (ii)<br><br>Put (x, y) $$ \\equiv $$ (0, $$-$$ln2) in (i)<br><br>$$ - 2 = {1 \\over \\alpha } + C$$ ..... (iii)<br><br>(ii) $$-$$ (iii)<br><br>$${{{2^\\alpha } - 1} \\over \\alpha } = {3 \\over 2}$$<br><br>$$\\Rightarrow$$ $$\\alpha$$ = 2 (as $$\\alpha$$ $$\\in$$ N)",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Differential Equations"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "testId": "tst-19g61moerqhnq",
+  "title": "Statistics Test - 2 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "1ks01t341",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If the mean and variance of the following data : 6, 10, 7, 13, a, 12, b, 12 are 9 and $${{37} \\over 4}$$ <br><br>respectively, then (a $$-$$ b)<sup>2</sup> is equal to :",
+      "options": [
+        "24",
+        "12",
+        "32",
+        "16"
+      ],
+      "correctOption": 3,
+      "solution": "Mean = $${{6 + 10 + 7 + 13 + a + 12 + b + 12} \\over 8} = 9$$<br><br>60 + a + b = 72<br><br>a + b = 12 .....(1)<br><br>variance $$ = {{\\sum {x_i^2} } \\over n} - {\\left( {{{\\sum {x_i^{}} } \\over n}} \\right)^2} = {{37} \\over 4}$$<br><br>$$\\sum {x_i^2}  = {6^2} + {10^2} + {7^2} + {13^2} + {a^2} + {b^2} + {12^2} + {12^2} = {a^2} + {b^2} + 642$$<br><br>$${{{a^2} + {b^2} + 642} \\over 8} - {(9)^2} = {{37} \\over 4}$$<br><br>$${{{a^2} + {b^2}} \\over 8} + {{321} \\over 4} - 81 = {{37} \\over 4}$$<br><br>$${{{a^2} + {b^2}} \\over 8} = 81 + {{37} \\over 4} - {{321} \\over 4}$$<br><br>$${{{a^2} + {b^2}} \\over 8} = 81 - 71$$<br><br>$$\\therefore$$ a<sup>2</sup> + b<sup>2</sup> + 2ab = 144<br><br>80 + 2ab = 144<br><br>$$\\therefore$$ 2ab = 64<br><br>$$ \\therefore $$ $${(a - b)^2} = {a^2} + {b^2} - 2ab = 80 - 64 = 16$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "q3HGzZnYw0060luY",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "In an experiment with 15 observations on $$x$$, then following results were available:\n<br>$$\\sum {{x^2}}  = 2830$$, $$\\sum x  = 170$$\n<br>One observation that was 20 was found to be wrong and was replaced by the correct value\n30. Then the corrected variance is :",
+      "options": [
+        "188.66",
+        "177.33",
+        "8.33",
+        "78.00"
+      ],
+      "correctOption": 3,
+      "solution": "Given that, \n<br><br>N = 15,  $$\\sum {x{}^2}  = 2830,\\,\\sum x  = 170$$ \n<br><br>As, 20 was replaced by 30 then,\n<br><br>$$\\sum x  = 170 - 20 + 30 = 180$$\n<br><br>and $$\\sum {{x^2}}  = 2830 - 400 + 900 = 3330$$\n<br><br>So, the corrected variance \n<br><br>$$ = {{\\sum {{x^2}} } \\over N} - {\\left( {{{\\sum x } \\over N}} \\right)^2}$$\n<br><br>$$ = {{3330} \\over {15}} - {\\left( {{{180} \\over {15}}} \\right)^2}$$\n<br><br>$$ = 222 - {12^2}$$\n<br><br>$$ = 222 - 144$$\n<br><br>$$ = 78$$ ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "tlmnk0kpq2",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The frequency distribution of the marks obtained by students in a Science examination is given below:<br>\n&nbsp;\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 313.417px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Marks</td>\n\t\t\t<td>5-15<br>\n\t\t\t&nbsp;</td>\n\t\t\t<td>15-25<br>\n\t\t\t&nbsp;</td>\n\t\t\t<td>25-35<br>\n\t\t\t&nbsp;</td>\n\t\t\t<td>35-45<br>\n\t\t\t&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Number of<br>\n\t\t\tstudents</td>\n\t\t\t<td>20</td>\n\t\t\t<td>30</td>\n\t\t\t<td>30</td>\n\t\t\t<td>20</td>\n\t\t</tr>\n\t</tbody>\n</table>\nWhat is the arithmetic mean?",
+      "options": [
+        "<span style=\"\">20</span>",
+        "25",
+        "30",
+        "35"
+      ],
+      "correctOption": 1,
+      "solution": "<p>To find the arithmetic mean of grouped data, we use the formula</p>\n<p>$$ \\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i} $$</p>\n<p>where:</p>\n<ul>\n<li><p>$f_i$ = frequency</p></li>\n<li><p>$x_i$ = class mark of each class interval</p></li>\n</ul>\n<h3>Step 1: Find the class marks</h3>\n<p>Class mark $x_i = \\frac{\\text{lower limit} + \\text{upper limit}}{2}$</p>\n<p>So,</p>\n<ul>\n<li><p>For $5-15$: $x_1 = \\frac{5+15}{2} = 10$</p></li>\n<li><p>For $15-25$: $x_2 = \\frac{15+25}{2} = 20$</p></li>\n<li><p>For $25-35$: $x_3 = \\frac{25+35}{2} = 30$</p></li>\n<li><p>For $35-45$: $x_4 = \\frac{35+45}{2} = 40$</p></li>\n</ul>\n<h3>Step 2: Multiply frequency by class mark</h3>\n<p>$ \\begin{array}{|c|c|c|} \\hline \\text{Class Interval} & f_i & f_i x_i \\\\ \\hline 5-15 & 20 & 20 \\times 10 = 200 \\\\ 15-25 & 30 & 30 \\times 20 = 600 \\\\ 25-35 & 30 & 30 \\times 30 = 900 \\\\ 35-45 & 20 & 20 \\times 40 = 800 \\\\ \\hline \\end{array} $</p>\n<p>Now,</p>\n<p>$$ \\sum f_i = 20+30+30+20 = 100 $$</p>\n<p>and</p>\n<p>$$ \\sum f_i x_i = 200+600+900+800 = 2500 $$</p>\n<h3>Step 3: Find the mean</h3>\n<p>$$ \\bar{x} = \\frac{2500}{100} = 25 $$</p>\n<p>So, the arithmetic mean is</p>\n<p>$$ \\boxed{25} $$</p>\n<p>Therefore, the correct option is <strong>Option 2</strong>.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Statistics"
+    },
+    {
+      "id": "ml7rno4x",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>A random variable X takes values 0, 1, 2, 3 with probabilities $\\frac{2a+1}{30}$, $\\frac{8a-1}{30}$, $\\frac{4a+1}{30}$, $b$ respectively, where $a, b \\in \\mathbb{R}$. <br/><br/>Let $\\mu$ and $\\sigma$ respectively be the mean and standard deviation of $X$ such that $\\sigma^2 + \\mu^2 = 2$.</p><p>Then $\\frac{a}{b}$ is equal to:</p>",
+      "options": [
+        "<p>12</p>",
+        "<p>60</p>",
+        "<p>30</p>",
+        "<p>3</p>"
+      ],
+      "correctOption": 1,
+      "solution": "<p>$$ \\begin{array}{|c|c|c|c|c|} \\hline \\mathrm{X} & 0 & 1 & 2 & 3 \\\\ \\hline p(n) & \\frac{2 a+1}{30} & \\frac{8 a-1}{30} & \\frac{4 a+1}{30} & \\mathrm{~b} \\\\ \\hline \\end{array} $$</p>\n<p>$$ \\begin{aligned} &\\begin{aligned} & \\mu=\\Sigma \\times p(n)=0+\\frac{8 a-1}{30}+2 \\times \\frac{4 a+1}{30}+3 b=\\frac{16 a+90 b+1}{30} \\\\ & \\sigma^2=\\Sigma x^2 p(n)-\\mu^2 \\Rightarrow \\sigma^2+\\mu^2=\\Sigma x^2 p(n)=2 \\\\ & \\frac{8 a-1}{30}+\\frac{4(4 a+1)}{30}+9 b=2 \\\\ & 8 a+90 b-19=0 \\ldots \\ldots \\ldots(i) \\\\ & \\Sigma p(n)=1 \\Rightarrow 14 a+1+30 b=30 \\\\ & 14 a+30 b-29=0 \\ldots \\ldots . .(i i) \\end{aligned}\\\\ &\\text { From (i) and (ii) }\\\\ &a=2 \\quad b=\\frac{1}{30}=\\frac{a}{b}=60 \\end{aligned} $$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "gghxq0uoNUICOkl2",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If the mean deviation of number 1, 1 + d, 1 + 2d,........, 1 + 100d from their mean is 255, then the d is\nequal to",
+      "options": [
+        "20.0",
+        "10.1",
+        "20.2",
+        "10.0"
+      ],
+      "correctOption": 1,
+      "solution": "Mean $$\\,\\,\\,\\,\\left( {\\overline x } \\right) = {{Sum\\,\\,of\\,\\,numbers} \\over n}$$ \n<br><br>$$ = {{{n \\over 2}\\left( {a + l} \\right)} \\over n}$$\n<br><br>$$ = {1 \\over 2}\\left( {1 + l + 100d} \\right)$$\n<br><br>$$ = 1 + 50\\,d.$$ \n<br><br>Mean deviation (M.D) $$ = {1 \\over n}\\sum\\limits_{i = 1}^{101} {\\left| {{x_i} - \\overline x } \\right|} $$\n<br><br>$$ = {1 \\over {101}}$$[ 50d + 49d + 48d + .......d + 0 + ..... + 50d] \n<br><br>$$ = {1 \\over {101}}.2d\\left( {1 + 2 + .... + 50} \\right)$$\n<br><br>$$ = {1 \\over {101}}.2d.{{50 \\times 51} \\over 2}$$\n<br><br>$$ = {{50 \\times 51\\,d} \\over {101}}$$ \n<br><br>Given that M.D = 255\n<br><br>$$\\therefore\\,\\,\\,$$ $${{50 \\times 51\\,d} \\over {101}} = 255$$\n<br><br>$$ \\Rightarrow \\,\\,\\,d = {{101 \\times 255} \\over {51 \\times 50}}$$ \n<br><br>$$ = 10.1$$ ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "tllz3lio10",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p style=\"\">Which one of the following subjects shows highest variability of marks ?</p>\n",
+      "options": [
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Biology"
+      ],
+      "correctOption": 3,
+      "solution": "<p>The variability of marks in each subject can be assessed using their standard deviations (SD). The higher the standard deviation, the greater the variability of marks.</p>\n\n<p>From the given data:</p>\n\n<ul>\n\n<li>Mathematics: Mean = 40, SD = 15</li>\n\n<li>Physics: Mean = 28, SD = 12</li>\n\n<li>Chemistry: Mean = 38, SD = 14</li>\n\n<li>Biology: Mean = 36, SD = 16</li>\n\n</ul>\n\n<p>We can observe the standard deviations to determine which subject has the highest variability:</p>\n\n<ul>\n\n<li>Mathematics: SD = 15</li>\n\n<li>Physics: SD = 12</li>\n\n<li>Chemistry: SD = 14</li>\n\n<li>Biology: SD = 16</li>\n\n</ul>\n\n<p>Since the standard deviation for Biology is the highest (16), we conclude that Biology has the highest variability of marks among the given subjects.</p>\n\n<p>Therefore, the answer is:</p>\n\n<p><strong>Option D: Biology</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Statistics"
+    },
+    {
+      "id": "voIKBn3jwUXSNIhC",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The average marks of boys in a class is 52 and that of girls is 42. The average marks of boys\nand girls combined is 50. The percentage of boys in the class is",
+      "options": [
+        "80",
+        "60",
+        "40",
+        "20"
+      ],
+      "correctOption": 0,
+      "solution": "Let x and y are number of boys and girls in a class respectively. \n<br><br>$$\\therefore$$ 52x + 42y = 50 (x + y)\n<br><br>$$ \\Rightarrow$$ 52x + 42y = 50x + 50y\n<br><br>$$ \\Rightarrow$$ 2x = 8y\n<br><br>$$ \\Rightarrow$$ x = 4y\n<br><br>$$\\therefore$$ Total no. of students = x + y = 4y + y = 5y\n<br><br>$$\\therefore$$ Percentage of boys = $${{4y} \\over {5y}} \\times 100\\,\\% $$ = 80%",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "1krxjeee4",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let the mean and variance of the frequency distribution<br><br>$$\\matrix{\n   {x:} &amp; {{x_1} = 2} &amp; {{x_2} = 6} &amp; {{x_3} = 8} &amp; {{x_4} = 9}  \\cr \n   {f:} &amp; 4 &amp; 4 &amp; \\alpha  &amp; \\beta   \\cr \n\n } $$<br><br>be 6 and 6.8 respectively. If x<sub>3</sub> is changed from 8 to 7, then the mean for the new data will be :",
+      "options": [
+        "4",
+        "5",
+        "$${{17} \\over 3}$$",
+        "$${{16} \\over 3}$$"
+      ],
+      "correctOption": 2,
+      "solution": "Given 32 + 8$$\\alpha$$ + 9$$\\beta$$ = (8 + $$\\alpha$$ + $$\\beta$$) $$\\times$$ 6<br><br>$$\\Rightarrow$$ 2$$\\alpha$$ + 3$$\\beta$$ = 16 ..... (i)<br><br>Also, 4 $$\\times$$ 16 + 4 $$\\times$$ $$\\alpha$$ + 9$$\\beta$$ = (8 + $$\\alpha$$ + $$\\beta$$) $$\\times$$ 6.8<br><br>$$\\Rightarrow$$ 640 + 40$$\\alpha$$ + 90$$\\beta$$ = 544 + 68$$\\alpha$$ + 68$$\\beta$$<br><br>$$\\Rightarrow$$ 28$$\\alpha$$ $$-$$ 22$$\\beta$$ = 96<br><br>$$\\Rightarrow$$ 14$$\\alpha$$ $$-$$ 11$$\\beta$$ = 48 ..... (ii)<br><br>from (i) &amp; (ii)<br><br>$$\\alpha$$ = 5 &amp; $$\\beta$$ = 2<br><br>So, new mean = $${{32 + 35 + 18} \\over {15}} = {{85} \\over {15}} = {{17} \\over 3}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "tlm69mp4a5",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If M is the mean of n observations x<sub>1</sub> - k, x<sub>2</sub> - k, x<sub>3</sub> - k, _ _ _, x<sub>n</sub> - k, where k is any real number, then what is the mean of x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, _ _ _, x<sub>n</sub>?",
+      "options": [
+        "M",
+        "M + k",
+        "M - k",
+        "kM"
+      ],
+      "correctOption": 1,
+      "solution": "<p>The mean of the observations $$x_1 - k, x_2 - k, x_3 - k, \\dots, x_n - k$$ is given by:</p>\n<p>$$M = \\frac{(x_1 - k) + (x_2 - k) + (x_3 - k) + \\dots + (x_n - k)}{n}$$</p>\n<p>We can rewrite this as:</p>\n<p>$$M = \\frac{x_1 + x_2 + x_3 + \\dots + x_n - nk}{n}$$</p>\n<p>$$M = \\frac{x_1 + x_2 + x_3 + \\dots + x_n}{n} - \\frac{nk}{n}$$</p>\n<p>$$M = \\frac{x_1 + x_2 + x_3 + \\dots + x_n}{n} - k$$</p>\n<p>Let's denote the mean of $$x_1, x_2, x_3, \\dots, x_n$$ as $$M_x$$.  Then:</p>\n<p>$$M_x = \\frac{x_1 + x_2 + x_3 + \\dots + x_n}{n}$$</p>\n<p>Substituting this back into the equation for M, we get:</p>\n<p>$$M = M_x - k$$</p>\n<p>Solving for $$M_x$$, we find:</p>\n<p>$$M_x = M + k$$</p>\n<p>Therefore, the mean of $$x_1, x_2, x_3, \\dots, x_n$$ is $$M + k$$.</p>\n<p>The correct option is <strong>B: M + k</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Statistics"
+    },
+    {
+      "id": "lwv98xzo",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If two random variables $X$ and $Y$ are connected by relation\n$\\frac{2 X-3 Y}{5 X+4 Y}=4$ and $X$ follows Binomial distribution with parameters $n=10$ and $p=\\frac{1}{2}$, then what is the variance of $Y$ ?",
+      "options": [
+        "<p>$\\frac{810}{361}$</p>",
+        "<p>$\\frac{9}{19}$</p>",
+        "<p>$\\frac{21}{361}$</p>",
+        "<p>$\\frac{121}{361}$</p>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>To find the variance of $ Y $, we need to explore the given relation and the properties of the given distributions. The relation between the random variables $ X $ and $ Y $ is:</p>\n\n<p>$$\\frac{2X - 3Y}{5X + 4Y} = 4$$</p>\n\n<p>We need to manipulate this relation to express $ Y $ in terms of $ X $. Starting from the given equation:</p>\n\n<p>$$\\frac{2X - 3Y}{5X + 4Y} = 4$$</p>\n\n<p>Multiply both sides by $ (5X + 4Y) $ to clear the fraction:</p>\n\n<p>$$2X - 3Y = 4(5X + 4Y)$$</p>\n\n<p>Expanding the right side, we get:</p>\n\n<p>$$2X - 3Y = 20X + 16Y$$</p>\n\n<p>Bring all terms involving $ X $ to one side and all terms involving $ Y $ to the other side:</p>\n\n<p>$$2X - 20X = 16Y + 3Y$$</p>\n\n<p>Simplify the equation:</p>\n\n<p>$$-18X = 19Y$$</p>\n\n<p>Solving for $ Y $, we obtain:</p>\n\n<p>$$Y = -\\frac{18}{19} X$$</p>\n\n<p>This shows that $ Y $ is a linear function of $ X $. Since $ X $ follows a binomial distribution $ B(n, p) $ with parameters $ n = 10 $ and $ p = \\frac{1}{2} $, we can use the properties of the variance of linear transformations of random variables.</p>\n\n<p>The variance of $ X $ in a binomial distribution $ B(n, p) $ is given by:</p>\n\n<p>$$\\text{Var}(X) = np(1 - p)$$</p>\n\n<p>Substitute the given values:</p>\n\n<p>$$\\text{Var}(X) = 10 \\cdot \\frac{1}{2} \\cdot \\left(1 - \\frac{1}{2}\\right) = 10 \\cdot \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{10}{4} = \\frac{5}{2}$$</p>\n\n<p>Since $ Y $ is given by $ Y = -\\frac{18}{19} X $, use the property of variance for a linear transformation $ Y = aX $ where $ a = -\\frac{18}{19} $:</p>\n\n<p>$$\\text{Var}(Y) = \\left(-\\frac{18}{19}\\right)^2 \\text{Var}(X)$$</p>\n\n<p>Substituting the known variance of $ X $:</p>\n\n<p>$$\\text{Var}(Y) = \\left(\\frac{18}{19}\\right)^2 \\cdot \\frac{5}{2}$$</p>\n\n<p>Calculate the value:</p>\n\n<p>$$\\text{Var}(Y) = \\frac{324}{361} \\cdot \\frac{5}{2} = \\frac{324 \\times 5}{361 \\times 2} = \\frac{1620}{722} = \\frac{810}{361}$$</p>\n\n<p>Therefore, the variance of $ Y $ is:</p>\n\n<p>$$\\text{Var}(Y) = \\frac{810}{361}$$</p>\n\n<p>The correct option is:</p>\n\n<p><strong>Option A: $$\\frac{810}{361}$$</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Statistics"
+    },
+    {
+      "id": "IME5czDs8NRxifwSDCVpU",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "5 students of a class have an average height 150 cm and variance 18 cm<sup>2</sup>. A new student, whose height is 156 cm, joined them. The variance (in cm<sup>2</sup>) of the height of these six students is :",
+      "options": [
+        "16",
+        "22",
+        "20",
+        "18"
+      ],
+      "correctOption": 2,
+      "solution": "Average height of 5 students, \n<br><br>$$\\overline x  = {{{x_1} + {x_2} + {x_3} + {x_4} + {x_5}} \\over 5} = 150$$\n<br><br>$$ \\Rightarrow \\,\\,\\,\\sum\\limits_{i = 1}^5 {{x_i}}  = 750$$\n<br><br>We know, \n<br><br>Variance $$\\left( \\sigma  \\right) = {{\\sum {x_i^2} } \\over 5} - {\\left( {\\overline x } \\right)^2}$$\n<br><br>given that,\n<br><br>$${{\\sum {x_i^2} } \\over 5} - {\\left( {150} \\right)^2} = 18$$\n<br><br>$$ \\Rightarrow \\,\\,\\,\\sum {x_i^2}  = 112590$$\n<br><br>Height of new student, x<sub>6</sub> $$=$$ 156 cm\n<br><br>New average height&nbsp;&nbsp;$$\\left( {{{\\overline x }_{new}}} \\right) = {{750 + 156} \\over 6} = 151$$\n<br><br>New variance &nbsp;&nbsp;$$ = {{\\,\\sum\\limits_{i = 1}^6 {x_i^2} } \\over 6} - {\\left( {{{\\overline x }_{new}}} \\right)^2}$$\n<br><br>$$ = {{112590 + {{\\left( {156} \\right)}^2}} \\over 6} - {\\left( {151} \\right)^2}$$\n<br><br>$$ = 22821 - 22801$$\n<br><br>$$ = 20$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "ml8t8l05",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If the mean deviation about the median of the numbers $\\mathrm{k}, 2 \\mathrm{k}, 3 \\mathrm{k}, \\ldots ., 1000 \\mathrm{k}$ is 500 , then $\\mathrm{k}^2$ is equal to :</p>\n",
+      "options": [
+        "<p>1</p>\n",
+        "<p>16</p>\n",
+        "<p>9</p>\n",
+        "<p>4</p>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>$$ \\begin{aligned} & \\because \\text { median }=\\frac{1001 k}{2}=X_M \\\\ & \\therefore \\text { mean deviation about median }=\\frac{\\sum\\left|X_i-X_M\\right|}{n} \\\\ & =\\frac{2\\left(\\frac{k}{2}+\\frac{3 k}{2}+\\frac{5 k}{2}+\\ldots . . .500 \\text { terms }\\right)}{1000}=\\frac{2 . \\frac{k}{2}(500)^2}{1000}=\\frac{500 k}{2}=500(\\text { given }) \\\\ & \\therefore k=2 \\\\ & \\therefore k^2=4 \\end{aligned} $$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "0lLhsD5yfJG9GnWwsSjgy2xukfqbxcbz",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If the mean and the standard deviation of the\n<br>data 3, 5, 7, a, b are 5 and 2 respectively, then\na and b are the roots of the equation :",
+      "options": [
+        "x<sup>2</sup> – 20x + 18 = 0",
+        "2x<sup>2</sup> – 20x + 19 = 0\n",
+        "x<sup>2</sup> – 10x + 18 = 0",
+        "x<sup>2</sup> – 10x + 19 = 0\n"
+      ],
+      "correctOption": 3,
+      "solution": "Mean = $${{3 + 5 + 7 + a + b} \\over 5}$$ = 5\n<br><br>$$ \\Rightarrow $$ $$a$$ + b = 10\n<br><br>Variance = $${{{3^2} + {5^2} + {7^2} + {a^2} + {b^2}} \\over 5}$$ - (5)<sup>2</sup> = 4\n<br><br>$$ \\Rightarrow $$ $${{a^2} + {b^2}}$$ = 62\n<br><br>$$ \\Rightarrow $$ $${\\left( {a + b} \\right)^2} - 2ab$$ = 62\n<br><br>$$ \\Rightarrow $$ $$ab$$ = 19\n<br><br>So $$a$$ and b are the roots of the equation\n<br><br>x<sup>2</sup> – 10x + 19 = 0",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "1l6f2xzmg",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If the mean deviation about median for the numbers 3, 5, 7, 2k, 12, 16, 21, 24, arranged in the ascending order, is 6 then the median is :</p>",
+      "options": [
+        "11.5",
+        "10.5",
+        "12",
+        "11"
+      ],
+      "correctOption": 3,
+      "solution": "<p>Median $$ = {{2k + 12} \\over 2} = k + 6$$</p>\n<p>Mean deviation $$ = \\sum {{{|{x_i} - M|} \\over n} = 6} $$</p>\n<p>$$ \\Rightarrow {{(k + 3) + (k + 1) + (k - 1) + (6 - k) + (6 - k) + (10 - k) + (15 - k) + (18 - k)} \\over 8}$$</p>\n<p>$$\\therefore$$ $${{58 - 2k} \\over 8} = 6$$</p>\n<p>$$k = 5$$</p>\n<p>Median $$ = {{2 \\times 5 + 12} \\over 2} = 11$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Statistics"
+    },
+    {
+      "id": "tlm69mp4e1",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The following tables gives the frequency distribution of number of peas per pea pod of 198 pods:</p>\n\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:300px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\"><strong>Number of peas</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">1</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">2</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">3</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">4</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">5</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">6</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">7</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\"><strong>Frequency</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">4</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">33</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">76</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">50</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">26</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">8</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 10px;\">\n\t\t\t<p style=\"text-align: center;\">1</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<br>\nWhat is the median of this distribution?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctOption": 0,
+      "solution": "<p>To find the median for 198 data points, we look for the $\\tfrac{198}{2}$th and $\\left(\\tfrac{198}{2} + 1\\right)$th observations—that is, the 99th and the 100th observations—once the data is listed in ascending order.</p>\n\n<p>Compute cumulative frequencies:</p>\n\n\n<p><p>1 pea: $4$</p></p>\n<p><p>2 peas: $4 + 33 = 37$</p></p>\n<p><p>3 peas: $37 + 76 = 113$</p></p>\n<p><p>4 peas: $113 + 50 = 163$</p></p>\n<p><p>5 peas: $163 + 26 = 189$</p></p>\n<p><p>6 peas: $189 + 8 = 197$</p></p>\n<p><p>7 peas: $197 + 1 = 198$</p></p>\n\n\n<p>Identify the classes containing the 99th and 100th observations:</p>\n\n\n<p><p>The cumulative frequency reaches 113 at 3 peas.</p></p>\n<p><p>This means both the 99th and the 100th observations fall in the group with 3 peas.</p></p>\n\n<p>Since both the 99th and 100th observations are in the “3 peas” category, the median is $3$. </p>\n<p><strong>Correct answer: 3</strong> (Option A).</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Statistics"
+    }
+  ]
+}

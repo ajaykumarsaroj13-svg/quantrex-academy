@@ -1,0 +1,369 @@
+{
+  "id": "real_test_256",
+  "examType": "JEE Advanced",
+  "title": "NDA Mathematics 14th September 2025",
+  "year": "2025",
+  "duration": 180,
+  "totalMarks": 180,
+  "totalQuestions": 16,
+  "isOfficial": true,
+  "questions": [
+    {
+      "id": "tlmnk0kpm2",
+      "questionNumber": 1,
+      "questionText": "What is the slope of the tangent to the curve y = f(x) at x = 0.5",
+      "options": [
+        "<span class=\"math-tex\">$4\\pi \\sqrt{3}\\,/\\,27 $</span>",
+        "<span class=\"math-tex\">$8\\pi \\sqrt{3}\\,/\\,27 $</span>",
+        "<span class=\"math-tex\">$4\\pi$</span>",
+        "<span class=\"math-tex\">$8\\pi$</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Consider the function</p>\n<p><span class=\"math-tex\">$ y = f(x) = x \\cdot \\frac{\\sin^{-1}x}{\\sqrt{1 - x^2}} + \\ln \\sqrt{1 - x^2} $</span></p>\n<p>Now differentiate <span class=\"math-tex\">$ f(x) $</span> step by step:</p>\n<p><span class=\"math-tex\">$ f'(x) = \\left( \\sin^{-1}x + \\frac{x}{\\sqrt{1 - x^2}} \\right) \\cdot \\sqrt{1 - x^2} + x \\cdot \\sin^{-1}x + \\frac{2x}{2\\sqrt{1 - x^2}} $</span></p>\n<p><span class=\"math-tex\">$ + \\frac{1}{\\sqrt{1 - x^2}} \\cdot \\frac{1}{2\\sqrt{1 - x^2}} \\cdot (-2x) $</span></p>\n<p>After simplification,</p>\n<p><span class=\"math-tex\">$ = \\sqrt{1 - x^2} \\cdot \\sin^{-1}x + x + \\frac{x^2 \\cdot \\sin^{-1}x}{\\sqrt{1 - x^2}} - \\frac{x}{1 - x^2} $</span></p>\n<p>Combining the terms gives</p>\n<p><span class=\"math-tex\">$ f'(x) = \\frac{(1 - x^2)\\sin^{-1}x + x\\sqrt{1 - x^2} + x^2 \\sin^{-1}x - x\\sqrt{1 - x^2}}{(1 - x^2)\\sqrt{1 - x^2}} $</span></p>\n<p><span class=\"math-tex\">$ = \\frac{\\sin^{-1}x}{(1 - x^2)\\sqrt{1 - x^2}} $</span></p>\n<p>Evaluating this derivative at <span class=\"math-tex\">$ x = 0.5 $</span>:</p>\n<p><span class=\"math-tex\">$ f'(0.5) = \\frac{\\sin^{-1}(0.5)}{(1 - 0.25)\\sqrt{1 - 0.25}} = \\frac{\\frac{\\pi}{6}}{\\frac{3}{4} \\cdot \\frac{\\sqrt{3}}{2}} = \\frac{\\pi}{6} \\cdot \\frac{8}{3\\sqrt{3}} = \\frac{4\\pi\\sqrt{3}}{27} $</span></p>\n<p><strong>Therefore, the slope of <span class=\"math-tex\">$ y = f(x) $</span> at <span class=\"math-tex\">$ x = 0.5 $</span> is <span class=\"math-tex\">$\\frac{4\\pi\\sqrt{3}}{27}$</span>.</strong></p>",
+      "section": "Sec 1",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpmd",
+      "questionNumber": 2,
+      "questionText": "The function has",
+      "options": [
+        "&nbsp;a minimum at x = 1",
+        "a maximum at x = 1",
+        "&nbsp;neither maximum nor minimum at x = 1",
+        "no extremum"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Given  </p>\n<p>$$ f(x)=1-\\sqrt[3]{(x-1)^2}=1-(x-1)^{2/3} $$</p>\n<p>We have to check the nature of the function at $x=1$.</p>\n<p>First, find the value of the function at $x=1$:</p>\n<p>$$ f(1)=1-(1-1)^{2/3}=1-0=1 $$</p>\n<p>Now observe that for every real $x$,</p>\n<p>$$ (x-1)^2 \\ge 0 $$</p>\n<p>So,</p>\n<p>$$ \\sqrt[3]{(x-1)^2} \\ge 0 $$</p>\n<p>Therefore,</p>\n<p>$$ f(x)=1-\\sqrt[3]{(x-1)^2} \\le 1 $$</p>\n<p>This means for all $x$,</p>\n<p>$$ f(x)\\le f(1) $$</p>\n<p>Hence, the value at $x=1$ is greater than or equal to the value at every nearby point as well as every real point.</p>\n<p>So, $f(x)$ has a maximum at $x=1$.</p>\n<p>Therefore, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 2: a maximum at } x=1} $$</p>",
+      "section": "Sec 1",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpnc",
+      "questionNumber": 3,
+      "questionText": "<p>A wire of length 20 cm is to be bent into a rectangle. Which of the following statements is/are correct?</p>\n\n<p>I. The rectangle of the largest area is the square.</p>\n\n<p>II. It is possible to form a rectangle of an area of<span class=\"math-tex\">$ 27c m ^ 2$</span></p>\n\n<p>Select the answer using the code given below.</p>\n",
+      "options": [
+        "&nbsp;I only",
+        "II only",
+        "Both I and II",
+        "&nbsp;Neither I nor II"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Let the length and breadth of the rectangle be $l$ cm and $b$ cm.</p>\n<p>Since the wire of length $20$ cm is bent into a rectangle, its perimeter is $20$ cm.</p>\n<p>So,</p>\n<p>$$ 2(l+b)=20 $$</p>\n<p>$$ l+b=10 $$</p>\n<p>Now, area of the rectangle is</p>\n<p>$$ A=lb $$</p>\n<p>Substitute $b=10-l$:</p>\n<p>$$ A=l(10-l) $$</p>\n<p>$$ A=10l-l^2 $$</p>\n<p>This is a quadratic expression. To find its maximum value, we complete the square:</p>\n<p>$$ A=-(l^2-10l) $$</p>\n<p>$$ A=-\\left(l^2-10l+25-25\\right) $$</p>\n<p>$$ A=-\\left((l-5)^2-25\\right) $$</p>\n<p>$$ A=25-(l-5)^2 $$</p>\n<p>Since $(l-5)^2 \\ge 0$, the maximum value of $A$ is</p>\n<p>$$ A=25 $$</p>\n<p>and this happens when</p>\n<p>$$ l-5=0 \\Rightarrow l=5 $$</p>\n<p>Then,</p>\n<p>$$ b=10-5=5 $$</p>\n<p>So the rectangle is a square.</p>\n<p>Hence, Statement I is correct.</p>\n<p>Now check Statement II:</p>\n<p>The maximum possible area is</p>\n<p>$$ 25 \\text{ cm}^2 $$</p>\n<p>So an area of</p>\n<p>$$ 27 \\text{ cm}^2 $$</p>\n<p>is not possible.</p>\n<p>Hence, Statement II is false.</p>\n<p>Therefore, the correct answer is:</p>\n<p>$$ \\boxed{\\text{Option 1: I only}} $$</p>",
+      "section": "Sec 1",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpnk",
+      "questionNumber": 4,
+      "questionText": "<p>Consider the following statements regarding the function f(x) = 1/(x - 5)</p>\n\n<p>Statement-I: f(x) is decreasing on the intervals x &lt; 5 and x &gt; 5</p>\n\n<p>Statement-II: f''(x) &gt; 0 for all x ≠ 5.</p>\n\n<p>Which one of the following is correct in respect of the above statements?</p>\n",
+      "options": [
+        "Both Statement-I and Statement-II are correct and Statement-II explains Statement-I",
+        "&nbsp;Both Statement-I and Statement-II are correct but Statement-II does not explain Statement-I",
+        "Statement-I is correct but Statement-II is not correct",
+        "Statement-I is not correct but Statement-ll is correct"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Given</p>\n<p>$$ f(x)=\\frac{1}{x-5}=(x-5)^{-1}, \\qquad x\\neq 5 $$</p>\n<p>We will check both statements one by one.</p>\n<h3>Checking Statement-I</h3>\n<p>To test whether the function is increasing or decreasing, we find the first derivative.</p>\n<p>$$ f'(x)=\\frac{d}{dx}(x-5)^{-1} = -1(x-5)^{-2} = -\\frac{1}{(x-5)^2} $$</p>\n<p>Now, for every $x\\neq 5$,</p>\n<p>$$ (x-5)^2>0 $$</p>\n<p>So,</p>\n<p>$$ f'(x)=-\\frac{1}{(x-5)^2}<0 $$</p>\n<p>Since $f'(x)<0$ for all $x\\neq 5$, the function is decreasing on each interval of its domain:</p>\n<ul>\n<li><p>for $x<5$</p></li>\n<li><p>for $x>5$</p></li>\n</ul>\n<p>So, <strong>Statement-I is correct</strong>.</p>\n\n<h3>Checking Statement-II</h3>\n<p>Now find the second derivative.</p>\n<p>$$ f'(x)=-(x-5)^{-2} $$</p>\n<p>Differentiating again,</p>\n<p>$$ f''(x)= -(-2)(x-5)^{-3} = 2(x-5)^{-3} = \\frac{2}{(x-5)^3} $$</p>\n<p>Now observe:</p>\n<ul>\n<li><p>if $x>5$, then $(x-5)^3>0$, so</p>\n<p>$$   f''(x)>0   $$</p></li>\n<li><p>if $x<5$, then $(x-5)^3<0$, so</p>\n<p>$$   f''(x)<0   $$</p></li>\n</ul>\n<p>Therefore, $f''(x)>0$ is <strong>not true for all $x\\neq 5$</strong>.</p>\n<p>So, <strong>Statement-II is not correct</strong>.</p>\n\n<h3>Final conclusion</h3>\n<ul>\n<li><p>Statement-I is correct</p></li>\n<li><p>Statement-II is not correct</p></li>\n</ul>\n<p>Hence, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 3}} $$</p>\n<p>That is, <strong>Statement-I is correct but Statement-II is not correct.</strong></p>",
+      "section": "Sec 1",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONLY ONE</b> of these four options is the correct answer.</li><li>For each question, choose the option corresponding to the correct answer.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 If ONLY the correct option is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpnn",
+      "questionNumber": 5,
+      "questionText": "<p>Consider the following statements:</p>\n\n<p>Statement-I: The function &nbsp;<span class=\"math-tex\">$f(x)=\\frac{x^{3}+128}{x}$</span>&nbsp;has a minimum value 48 at x = 4</p>\n\n<p>Statement-II: As x increases through 4, f'(x) changes sign from positive to negative.</p>\n\n<p>Which one of the following is correct in respect of the above statements?</p>\n",
+      "options": [
+        "Both Statement-I and Statement-II are correct and Statement-II explains Statement-I",
+        "&nbsp;Both Statement-I and Statement-II are correct but Statement-II does not explain Statement-I",
+        "&nbsp;Statement-I is correct but Statement-II is not correct",
+        "Statement-I is not correct but Statement-II is correct"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQM",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Given</p>\n<p>$$ f(x)=\\frac{x^3+128}{x}=x^2+\\frac{128}{x}, \\qquad x\\ne 0 $$</p>\n<p>We will check both statements.</p>\n<p>First, find the derivative:</p>\n<p>$$ f'(x)=\\frac{d}{dx}\\left(x^2+\\frac{128}{x}\\right) =2x-\\frac{128}{x^2} $$</p>\n<p>Now check at $x=4$:</p>\n<p>$$ f(4)=4^2+\\frac{128}{4}=16+32=48 $$</p>\n<p>So at $x=4$, the function value is indeed $48$.</p>\n<p>Now solve $f'(x)=0$:</p>\n<p>$$ 2x-\\frac{128}{x^2}=0 $$</p>\n<p>$$ 2x=\\frac{128}{x^2} $$</p>\n<p>$$ 2x^3=128 $$</p>\n<p>$$ x^3=64 $$</p>\n<p>$$ x=4 $$</p>\n<p>So $x=4$ is a critical point.</p>\n<p>Now check the sign of $f'(x)$ around $x=4$.</p>\n<ul>\n<li>For $x<4$, take $x=3$:</li>\n</ul>\n<p>$$ f'(3)=2(3)-\\frac{128}{9}=6-\\frac{128}{9}<0 $$</p>\n<ul>\n<li>For $x>4$, take $x=5$:</li>\n</ul>\n<p>$$ f'(5)=10-\\frac{128}{25}>0 $$</p>\n<p>So, as $x$ increases through $4$, $f'(x)$ changes from negative to positive, not from positive to negative.</p>\n<p>This means:</p>\n<ul>\n<li><p>$f(x)$ has a minimum at $x=4$</p></li>\n<li><p>minimum value is $48$</p></li>\n</ul>\n<p>Therefore, Statement-I is correct.</p>\n<p>But Statement-II is not correct.</p>\n<p>Hence, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 3}} $$</p>\n<p>Statement-I is correct but Statement-II is not correct.</p>",
+      "section": "Sec 2",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kplq",
+      "questionNumber": 6,
+      "questionText": "What is the area bounded by the curve f(x) the x-axis and the lines x = - 2 and x = 1",
+      "options": [
+        "1/3",
+        "2/3",
+        "5/2",
+        "3"
+      ],
+      "correctOption": 3,
+      "correctAnswer": null,
+      "questionType": "MCQM",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p><img alt=\"NDA Mathematics 14th September 2025 Mathematics - Area Under The Curves Question 1 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mnppxr1n/e36e0734-c120-4ffb-b989-83df1d834011/685f0fb0-331b-11f1-82ad-95801ecaa576/file-6y3zli1mnppxr1o.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mnppxr1n/e36e0734-c120-4ffb-b989-83df1d834011/685f0fb0-331b-11f1-82ad-95801ecaa576/file-6y3zli1mnppxr1o.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>The required area is:</p>\n<p><span class=\"math-tex\">$ \\left| \\int_{-2}^{0} x^2 \\, dx \\right| + \\int_{0}^{1} x^2 \\, dx $</span></p>\n<p><span class=\"math-tex\">$ = -\\left[ \\frac{x^3}{3} \\right]_{-2}^{0} + \\left[ \\frac{x^3}{3} \\right]_{0}^{1} $</span></p>\n<p><span class=\"math-tex\">$ = \\left[ 0 + \\frac{8}{3} \\right] + \\left[ \\frac{1}{3} - 0 \\right] = \\frac{8}{3} + \\frac{1}{3} = \\frac{9}{3} = 3 $</span></p>\n<p><strong>Therefore, the correct answer is Option 4.</strong></p>",
+      "section": "Sec 2",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpfd",
+      "questionNumber": 7,
+      "questionText": "What is the remainder when&nbsp;<span class=\"math-tex\">$5 ^ {99}$</span> is divided by 13?",
+      "options": [
+        "10",
+        "9",
+        "8",
+        "6"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQM",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the remainder when $5^{99}$ is divided by $13$, we use modular arithmetic.</p>\n<p>We need to find:</p>\n<p>$$ 5^{99} \\bmod 13 $$</p>\n<p>Let us first find powers of $5$ modulo $13$:</p>\n<p>$$ 5^1 = 5 \\equiv 5 \\pmod{13} $$</p>\n<p>$$ 5^2 = 25 \\equiv 25 - 13 = 12 \\pmod{13} $$</p>\n<p>$$ 5^4 = (5^2)^2 \\equiv 12^2 = 144 \\equiv 144 - 143 = 1 \\pmod{13} $$</p>\n<p>So we get:</p>\n<p>$$ 5^4 \\equiv 1 \\pmod{13} $$</p>\n<p>Now divide $99$ by $4$:</p>\n<p>$$ 99 = 4 \\times 24 + 3 $$</p>\n<p>Therefore,</p>\n<p>$$ 5^{99} = 5^{4 \\times 24 + 3} = (5^4)^{24} \\cdot 5^3 $$</p>\n<p>Taking modulo $13$:</p>\n<p>$$ 5^{99} \\equiv (1)^{24} \\cdot 5^3 \\pmod{13} $$</p>\n<p>$$ 5^{99} \\equiv 5^3 = 125 \\pmod{13} $$</p>\n<p>Now divide $125$ by $13$:</p>\n<p>$$ 125 = 13 \\times 9 + 8 $$</p>\n<p>So,</p>\n<p>$$ 125 \\equiv 8 \\pmod{13} $$</p>\n<p>Hence, the remainder is:</p>\n<p>$$ \\boxed{8} $$</p>\n<p>So the correct option is Option 3.</p>",
+      "section": "Sec 2",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpgg",
+      "questionNumber": 8,
+      "questionText": "Which one of the following is the greatest coefficient in the expansion of&nbsp;<span class=\"math-tex\">$(1 + x) ^ {100}$</span>&nbsp;?",
+      "options": [
+        "&nbsp;The coefficient of&nbsp;<span class=\"math-tex\">$x ^ {100}$</span>",
+        "The coefficient of&nbsp;<span class=\"math-tex\">$x ^ {99}$</span>",
+        "The coefficient of&nbsp;<span class=\"math-tex\">$x ^ {51}$</span>",
+        "The coefficient of&nbsp;<span class=\"math-tex\">$ x ^ {50}$</span>"
+      ],
+      "correctOption": 3,
+      "correctAnswer": null,
+      "questionType": "MCQM",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>In the expansion of</p>\n<p>$$ (1+x)^{100}, $$</p>\n<p>the general term is</p>\n<p>$$ T_{r+1}=\\binom{100}{r}x^r. $$</p>\n<p>So, the coefficient of $x^r$ is</p>\n<p>$$ \\binom{100}{r}. $$</p>\n<p>We have to find which of the given coefficients is greatest.</p>\n<p>The options correspond to:</p>\n<ul>\n<li><p>coefficient of $x^{100}$ is $\\binom{100}{100}$</p></li>\n<li><p>coefficient of $x^{99}$ is $\\binom{100}{99}$</p></li>\n<li><p>coefficient of $x^{51}$ is $\\binom{100}{51}$</p></li>\n<li><p>coefficient of $x^{50}$ is $\\binom{100}{50}$</p></li>\n</ul>\n<p>Now, in binomial coefficients, the greatest coefficient in the expansion of $(1+x)^n$ occurs in the middle.</p>\n<p>Since $100$ is even, the middle term is the</p>\n<p>$$ \\left(\\frac{100}{2}+1\\right) = 51\\text{st term}, $$</p>\n<p>which contains</p>\n<p>$$ x^{50}. $$</p>\n<p>Its coefficient is</p>\n<p>$$ \\binom{100}{50}, $$</p>\n<p>and this is the greatest coefficient.</p>\n<p>Also, using symmetry,</p>\n<p>$$ \\binom{100}{51}=\\binom{100}{49}, $$</p>\n<p>so it is smaller than $\\binom{100}{50}$.</p>\n<p>Therefore, the greatest coefficient is the coefficient of $x^{50}$.</p>\n<p>$$ \\boxed{\\text{Option 4}} $$</p>",
+      "section": "Sec 2",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>Each question has <b>FOUR</b> options (A), (B), (C) and (D). <b>ONE OR MORE THAN ONE</b> of these four option(s) is(are) correct answer(s).</li><li>For each question, choose the option(s) corresponding to (all) the correct answer(s).</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 ONLY if (all) the correct option(s) is(are) chosen;<br><i>Partial Marks</i> : +3 If all the four options are correct but ONLY three options are chosen;<br><i>Partial Marks</i> : +2 If three or more options are correct but ONLY two options are chosen, both of which are correct;<br><i>Partial Marks</i> : +1 If two or more options are correct but ONLY one option is chosen and it is a correct option;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpm2",
+      "questionNumber": 9,
+      "questionText": "What is the slope of the tangent to the curve y = f(x) at x = 0.5",
+      "options": [
+        "<span class=\"math-tex\">$4\\pi \\sqrt{3}\\,/\\,27 $</span>",
+        "<span class=\"math-tex\">$8\\pi \\sqrt{3}\\,/\\,27 $</span>",
+        "<span class=\"math-tex\">$4\\pi$</span>",
+        "<span class=\"math-tex\">$8\\pi$</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": 0,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Consider the function</p>\n<p><span class=\"math-tex\">$ y = f(x) = x \\cdot \\frac{\\sin^{-1}x}{\\sqrt{1 - x^2}} + \\ln \\sqrt{1 - x^2} $</span></p>\n<p>Now differentiate <span class=\"math-tex\">$ f(x) $</span> step by step:</p>\n<p><span class=\"math-tex\">$ f'(x) = \\left( \\sin^{-1}x + \\frac{x}{\\sqrt{1 - x^2}} \\right) \\cdot \\sqrt{1 - x^2} + x \\cdot \\sin^{-1}x + \\frac{2x}{2\\sqrt{1 - x^2}} $</span></p>\n<p><span class=\"math-tex\">$ + \\frac{1}{\\sqrt{1 - x^2}} \\cdot \\frac{1}{2\\sqrt{1 - x^2}} \\cdot (-2x) $</span></p>\n<p>After simplification,</p>\n<p><span class=\"math-tex\">$ = \\sqrt{1 - x^2} \\cdot \\sin^{-1}x + x + \\frac{x^2 \\cdot \\sin^{-1}x}{\\sqrt{1 - x^2}} - \\frac{x}{1 - x^2} $</span></p>\n<p>Combining the terms gives</p>\n<p><span class=\"math-tex\">$ f'(x) = \\frac{(1 - x^2)\\sin^{-1}x + x\\sqrt{1 - x^2} + x^2 \\sin^{-1}x - x\\sqrt{1 - x^2}}{(1 - x^2)\\sqrt{1 - x^2}} $</span></p>\n<p><span class=\"math-tex\">$ = \\frac{\\sin^{-1}x}{(1 - x^2)\\sqrt{1 - x^2}} $</span></p>\n<p>Evaluating this derivative at <span class=\"math-tex\">$ x = 0.5 $</span>:</p>\n<p><span class=\"math-tex\">$ f'(0.5) = \\frac{\\sin^{-1}(0.5)}{(1 - 0.25)\\sqrt{1 - 0.25}} = \\frac{\\frac{\\pi}{6}}{\\frac{3}{4} \\cdot \\frac{\\sqrt{3}}{2}} = \\frac{\\pi}{6} \\cdot \\frac{8}{3\\sqrt{3}} = \\frac{4\\pi\\sqrt{3}}{27} $</span></p>\n<p><strong>Therefore, the slope of <span class=\"math-tex\">$ y = f(x) $</span> at <span class=\"math-tex\">$ x = 0.5 $</span> is <span class=\"math-tex\">$\\frac{4\\pi\\sqrt{3}}{27}$</span>.</strong></p>",
+      "section": "Sec 3",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpmd",
+      "questionNumber": 10,
+      "questionText": "The function has",
+      "options": [
+        "&nbsp;a minimum at x = 1",
+        "a maximum at x = 1",
+        "&nbsp;neither maximum nor minimum at x = 1",
+        "no extremum"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": 0,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Given  </p>\n<p>$$ f(x)=1-\\sqrt[3]{(x-1)^2}=1-(x-1)^{2/3} $$</p>\n<p>We have to check the nature of the function at $x=1$.</p>\n<p>First, find the value of the function at $x=1$:</p>\n<p>$$ f(1)=1-(1-1)^{2/3}=1-0=1 $$</p>\n<p>Now observe that for every real $x$,</p>\n<p>$$ (x-1)^2 \\ge 0 $$</p>\n<p>So,</p>\n<p>$$ \\sqrt[3]{(x-1)^2} \\ge 0 $$</p>\n<p>Therefore,</p>\n<p>$$ f(x)=1-\\sqrt[3]{(x-1)^2} \\le 1 $$</p>\n<p>This means for all $x$,</p>\n<p>$$ f(x)\\le f(1) $$</p>\n<p>Hence, the value at $x=1$ is greater than or equal to the value at every nearby point as well as every real point.</p>\n<p>So, $f(x)$ has a maximum at $x=1$.</p>\n<p>Therefore, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 2: a maximum at } x=1} $$</p>",
+      "section": "Sec 3",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpnc",
+      "questionNumber": 11,
+      "questionText": "<p>A wire of length 20 cm is to be bent into a rectangle. Which of the following statements is/are correct?</p>\n\n<p>I. The rectangle of the largest area is the square.</p>\n\n<p>II. It is possible to form a rectangle of an area of<span class=\"math-tex\">$ 27c m ^ 2$</span></p>\n\n<p>Select the answer using the code given below.</p>\n",
+      "options": [
+        "&nbsp;I only",
+        "II only",
+        "Both I and II",
+        "&nbsp;Neither I nor II"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": 0,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Let the length and breadth of the rectangle be $l$ cm and $b$ cm.</p>\n<p>Since the wire of length $20$ cm is bent into a rectangle, its perimeter is $20$ cm.</p>\n<p>So,</p>\n<p>$$ 2(l+b)=20 $$</p>\n<p>$$ l+b=10 $$</p>\n<p>Now, area of the rectangle is</p>\n<p>$$ A=lb $$</p>\n<p>Substitute $b=10-l$:</p>\n<p>$$ A=l(10-l) $$</p>\n<p>$$ A=10l-l^2 $$</p>\n<p>This is a quadratic expression. To find its maximum value, we complete the square:</p>\n<p>$$ A=-(l^2-10l) $$</p>\n<p>$$ A=-\\left(l^2-10l+25-25\\right) $$</p>\n<p>$$ A=-\\left((l-5)^2-25\\right) $$</p>\n<p>$$ A=25-(l-5)^2 $$</p>\n<p>Since $(l-5)^2 \\ge 0$, the maximum value of $A$ is</p>\n<p>$$ A=25 $$</p>\n<p>and this happens when</p>\n<p>$$ l-5=0 \\Rightarrow l=5 $$</p>\n<p>Then,</p>\n<p>$$ b=10-5=5 $$</p>\n<p>So the rectangle is a square.</p>\n<p>Hence, Statement I is correct.</p>\n<p>Now check Statement II:</p>\n<p>The maximum possible area is</p>\n<p>$$ 25 \\text{ cm}^2 $$</p>\n<p>So an area of</p>\n<p>$$ 27 \\text{ cm}^2 $$</p>\n<p>is not possible.</p>\n<p>Hence, Statement II is false.</p>\n<p>Therefore, the correct answer is:</p>\n<p>$$ \\boxed{\\text{Option 1: I only}} $$</p>",
+      "section": "Sec 3",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpnk",
+      "questionNumber": 12,
+      "questionText": "<p>Consider the following statements regarding the function f(x) = 1/(x - 5)</p>\n\n<p>Statement-I: f(x) is decreasing on the intervals x &lt; 5 and x &gt; 5</p>\n\n<p>Statement-II: f''(x) &gt; 0 for all x ≠ 5.</p>\n\n<p>Which one of the following is correct in respect of the above statements?</p>\n",
+      "options": [
+        "Both Statement-I and Statement-II are correct and Statement-II explains Statement-I",
+        "&nbsp;Both Statement-I and Statement-II are correct but Statement-II does not explain Statement-I",
+        "Statement-I is correct but Statement-II is not correct",
+        "Statement-I is not correct but Statement-ll is correct"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": 0,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Given</p>\n<p>$$ f(x)=\\frac{1}{x-5}=(x-5)^{-1}, \\qquad x\\neq 5 $$</p>\n<p>We will check both statements one by one.</p>\n<h3>Checking Statement-I</h3>\n<p>To test whether the function is increasing or decreasing, we find the first derivative.</p>\n<p>$$ f'(x)=\\frac{d}{dx}(x-5)^{-1} = -1(x-5)^{-2} = -\\frac{1}{(x-5)^2} $$</p>\n<p>Now, for every $x\\neq 5$,</p>\n<p>$$ (x-5)^2>0 $$</p>\n<p>So,</p>\n<p>$$ f'(x)=-\\frac{1}{(x-5)^2}<0 $$</p>\n<p>Since $f'(x)<0$ for all $x\\neq 5$, the function is decreasing on each interval of its domain:</p>\n<ul>\n<li><p>for $x<5$</p></li>\n<li><p>for $x>5$</p></li>\n</ul>\n<p>So, <strong>Statement-I is correct</strong>.</p>\n\n<h3>Checking Statement-II</h3>\n<p>Now find the second derivative.</p>\n<p>$$ f'(x)=-(x-5)^{-2} $$</p>\n<p>Differentiating again,</p>\n<p>$$ f''(x)= -(-2)(x-5)^{-3} = 2(x-5)^{-3} = \\frac{2}{(x-5)^3} $$</p>\n<p>Now observe:</p>\n<ul>\n<li><p>if $x>5$, then $(x-5)^3>0$, so</p>\n<p>$$   f''(x)>0   $$</p></li>\n<li><p>if $x<5$, then $(x-5)^3<0$, so</p>\n<p>$$   f''(x)<0   $$</p></li>\n</ul>\n<p>Therefore, $f''(x)>0$ is <strong>not true for all $x\\neq 5$</strong>.</p>\n<p>So, <strong>Statement-II is not correct</strong>.</p>\n\n<h3>Final conclusion</h3>\n<ul>\n<li><p>Statement-I is correct</p></li>\n<li><p>Statement-II is not correct</p></li>\n</ul>\n<p>Hence, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 3}} $$</p>\n<p>That is, <strong>Statement-I is correct but Statement-II is not correct.</strong></p>",
+      "section": "Sec 3",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpkx",
+      "questionNumber": 13,
+      "questionText": "The circle&nbsp;<span class=\"math-tex\">$ x ^ 2 + y ^ 2 - 2kx - 2ky + k ^ 2 = 0$</span> touches the x-axis at P and y-axis at Q. What is PQ equal to?",
+      "options": [
+        "<span class=\"math-tex\">$ \\sqrt{2}k $</span>",
+        "2k",
+        "<span class=\"math-tex\">$2\\sqrt{2}k $</span>",
+        "4k"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Given circle:</p>\n<p>$$ x^2 + y^2 - 2kx - 2ky + k^2 = 0 $$</p>\n<p>We compare it with the standard form:</p>\n<p>$$ x^2 + y^2 - 2gx - 2fy + c = 0 $$</p>\n<p>So,</p>\n<p>$$ g = k, \\quad f = k, \\quad c = k^2 $$</p>\n<p>Hence, the centre of the circle is</p>\n<p>$$ (k, k) $$</p>\n<p>and the radius is</p>\n<p>$$ r = \\sqrt{g^2 + f^2 - c} = \\sqrt{k^2 + k^2 - k^2} = \\sqrt{k^2} = k $$</p>\n<p>Now, the circle touches the $x$-axis and $y$-axis.</p>\n<p>Since it touches the $x$-axis, the point of contact $P$ lies vertically below the centre.  </p>\n<p>So,</p>\n<p>$$ P = (k, 0) $$</p>\n<p>Since it touches the $y$-axis, the point of contact $Q$ lies horizontally left of the centre.  </p>\n<p>So,</p>\n<p>$$ Q = (0, k) $$</p>\n<p>Now find $PQ$ using distance formula:</p>\n<p>$$ PQ = \\sqrt{(k-0)^2 + (0-k)^2} $$</p>\n<p>$$ PQ = \\sqrt{k^2 + k^2} = \\sqrt{2k^2} = k\\sqrt{2} $$</p>\n<p>Therefore,</p>\n<p>$$ \\boxed{PQ = \\sqrt{2}k} $$</p>\n<p>So, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 1}} $$</p>",
+      "section": "Sec 4",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpf1",
+      "questionNumber": 14,
+      "questionText": "If&nbsp;<span class=\"math-tex\">$\\alpha =\\frac{-1+\\sqrt{-3}}{2}$</span> then what is the value of <span class=\"math-tex\">$(1+\\alpha ^{19}-\\alpha ^{35})^{100}-(1-3\\alpha ^{25}+\\alpha ^{38})^{50}? $</span><br>\n&nbsp;",
+      "options": [
+        "-2",
+        "-1",
+        "0",
+        "2"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "",
+      "section": "Sec 4",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpfo",
+      "questionNumber": 15,
+      "questionText": "If&nbsp;&nbsp;<span class=\"math-tex\">$(\\frac{1-i}{1+i})^{2m}(\\frac{1+i}{1-i})^{2n}=1$</span>where <span class=\"math-tex\">$i=\\sqrt{-1}$</span> then what is the smallest positive value of (m - n)?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>$ \\left(\\frac{1-i}{1+i}\\right)^{2m}\\left(\\frac{1+i}{1-i}\\right)^{2n}=1 $</p>\n<p>We will simplify each fraction first.</p>\n<h2>Step 1: Simplify $\\dfrac{1-i}{1+i}$</h2>\n<p>Multiply numerator and denominator by the conjugate of the denominator, that is, $(1-i)$:</p>\n<p>$ \\frac{1-i}{1+i}=\\frac{(1-i)^2}{(1+i)(1-i)} $</p>\n<p>Now,</p>\n<p>$ (1-i)^2=1-2i+i^2=1-2i-1=-2i $</p>\n<p>and</p>\n<p>$ (1+i)(1-i)=1-i^2=1-(-1)=2 $</p>\n<p>So,</p>\n<p>$ \\frac{1-i}{1+i}=\\frac{-2i}{2}=-i $</p>\n<p>Similarly,</p>\n<p>$ \\frac{1+i}{1-i}=i $</p>\n<h2>Step 2: Substitute in the given expression</h2>\n<p>$ (-i)^{2m}(i)^{2n}=1 $</p>\n<p>Now,</p>\n<p>$ (-i)^2=-1 \\quad \\text{and} \\quad i^2=-1 $</p>\n<p>Therefore,</p>\n<p>$ (-i)^{2m}=\\left((-i)^2\\right)^m=(-1)^m $</p>\n<p>and</p>\n<p>$ i^{2n}=(i^2)^n=(-1)^n $</p>\n<p>So the equation becomes</p>\n<p>$ (-1)^m(-1)^n=1 $</p>\n<p>$ (-1)^{m+n}=1 $</p>\n<p>This is possible when $m+n$ is even.</p>\n<h2>Step 3: Rewrite in a better way</h2>\n<p>Notice that</p>\n<p>$ \\left(\\frac{1+i}{1-i}\\right)=\\left(\\frac{1-i}{1+i}\\right)^{-1} $</p>\n<p>So the given expression can also be written as</p>\n<p>$ \\left(\\frac{1-i}{1+i}\\right)^{2m-2n}=1 $</p>\n<p>$ \\left(\\frac{1-i}{1+i}\\right)^{2(m-n)}=1 $</p>\n<p>Since</p>\n<p>$ \\frac{1-i}{1+i}=-i $</p>\n<p>we get</p>\n<p>$ (-i)^{2(m-n)}=1 $</p>\n<p>But</p>\n<p>$ (-i)^2=-1 $</p>\n<p>So,</p>\n<p>$ (-1)^{m-n}=1 $</p>\n<p>This means $m-n$ must be even.</p>\n<p>Hence the smallest positive value of $m-n$ is</p>\n<p>$ \\boxed{2} $</p>\n<p>So, the correct option is:</p>\n<p>$ \\boxed{\\text{Option 2}} $</p>",
+      "section": "Sec 4",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    },
+    {
+      "id": "tlmnk0kpg1",
+      "questionNumber": 16,
+      "questionText": "Let 1, ω, <span class=\"math-tex\">$\\omega ^ 2$</span> be three cube roots of unity. If x = a + b <span class=\"math-tex\">$y=a\\omega +b\\omega ^{2}, z=a\\omega ^{2}+b\\omega$</span> then what is&nbsp;<span class=\"math-tex\">$ x ^ 2 + y ^ 2 + z ^ 2$</span> equal to?",
+      "options": [
+        "6ab",
+        "3ab",
+        "<span class=\"math-tex\">$a ^ 2 + b ^ 2$</span>",
+        "1"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 3,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>Given</p>\n<p>$$ x=a+b,\\qquad y=a\\omega+b\\omega^2,\\qquad z=a\\omega^2+b\\omega $$</p>\n<p>We have to find</p>\n<p>$$ x^2+y^2+z^2 $$</p>\n<p>Now,</p>\n<p>$$ x^2=(a+b)^2=a^2+b^2+2ab $$</p>\n<p>Also,</p>\n<p>$$ y^2=(a\\omega+b\\omega^2)^2 $$</p>\n<p>Using $(p+q)^2=p^2+q^2+2pq$,</p>\n<p>$$ y^2=a^2\\omega^2+b^2\\omega^4+2ab\\omega^3 $$</p>\n<p>Since for cube roots of unity,</p>\n<p>$$ \\omega^3=1,\\qquad \\omega^4=\\omega $$</p>\n<p>So,</p>\n<p>$$ y^2=a^2\\omega^2+b^2\\omega+2ab $$</p>\n<p>Similarly,</p>\n<p>$$ z^2=(a\\omega^2+b\\omega)^2 $$</p>\n<p>$$ z^2=a^2\\omega^4+b^2\\omega^2+2ab\\omega^3 $$</p>\n<p>Again using $\\omega^4=\\omega$ and $\\omega^3=1$,</p>\n<p>$$ z^2=a^2\\omega+b^2\\omega^2+2ab $$</p>\n<p>Now add all three:</p>\n<p>$$ x^2+y^2+z^2 $$</p>\n<p>$$ =(a^2+b^2+2ab)+(a^2\\omega^2+b^2\\omega+2ab)+(a^2\\omega+b^2\\omega^2+2ab) $$</p>\n<p>Group like terms:</p>\n<p>$$ = a^2(1+\\omega+\\omega^2)+b^2(1+\\omega+\\omega^2)+6ab $$</p>\n<p>For cube roots of unity,</p>\n<p>$$ 1+\\omega+\\omega^2=0 $$</p>\n<p>Therefore,</p>\n<p>$$ x^2+y^2+z^2=6ab $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{6ab} $$</p>\n<p>Hence, Option 1.</p>",
+      "section": "Sec 4",
+      "instruction": "<ul><li>This section contains <b>FOUR (04)</b> Matching List Sets.</li><li>Each set has <b>ONE</b> Multiple Choice Question.</li><li>Each set has <b>TWO</b> lists: <b>List-I</b> and <b>List-II</b>.</li><li><b>FOUR</b> options are given in each Multiple Choice Question based on <b>List-I</b> and <b>List-II</b> and <b>ONLY ONE</b> of these four options satisfies the condition asked in the Multiple Choice Question.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +3 ONLY if the option corresponding to the correct combination is chosen;<br><i>Zero Marks</i> : 0 If none of the options is chosen (i.e. the question is unanswered);<br><i>Negative Marks</i> : −1 In all other cases.</li></ul>"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Mathematics"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+[
+  {
+    "id": "1lgpy8jfv",
+    "questionNumber": 70,
+    "questionText": "<p>Let the tangent and normal at the point $$(3 \\sqrt{3}, 1)$$ on the ellipse $$\\frac{x^{2}}{36}+\\frac{y^{2}}{4}=1$$ meet the $$y$$-axis at the points $$A$$ and $$B$$ respectively. Let the circle $$C$$ be drawn taking $$A B$$ as a diameter and the line $$x=2 \\sqrt{5}$$ intersect $$C$$ at the points $$P$$ and $$Q$$. If the tangents at the points $$P$$ and $$Q$$ on the circle intersect at the point $$(\\alpha, \\beta)$$, then $$\\alpha^{2}-\\beta^{2}$$ is equal to :</p>",
+    "options": [
+      "61",
+      "$$\\frac{304}{5}\n$$",
+      "60",
+      "$$\\frac{314}{5}\n$$"
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "normal-to-ellipse",
+    "difficulty": "hard",
+    "solution": "$$\n\\begin{aligned}\n& \\frac{x^2}{36}+\\frac{y^2}{4}=1 \\\\\\\\\n& T: \\frac{3 \\sqrt{3} x}{36}+\\frac{y}{4}=1 \\\\\\\\\n& T: \\frac{\\sqrt{3} x}{12}+\\frac{y}{4}=1 \\\\\\\\\n& N: \\frac{x-3 \\sqrt{3}}{\\frac{3 \\sqrt{3}}{36}}=\\frac{y-1}{\\frac{1}{4}}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\frac{12 x-36 \\sqrt{3}}{\\sqrt{3}}=4 y-4 \\\\\\\\\n& 3 x-9 \\sqrt{3}=\\sqrt{3} y-\\sqrt{3} \\\\\\\\\n& N: 3 x-\\sqrt{3} y=8 \\sqrt{3} \\\\\\\\\n& A(0,4) \\quad B(0,-8) \\\\\\\\\n& \\text { C: } x^2+(y-4)(y+8)=0 \\\\\\\\\n& \\text { Line } x=2 \\sqrt{5} \\\\\\\\\n& 20+y^2+4 y-32=0 \\\\\\\\\n& y^2+4 y-12=0 \\\\\\\\\n& (y+6)(y-2)=0\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& P(2 \\sqrt{5},-6) \\quad Q(2 \\sqrt{5}, 2) \\\\\\\\\n& C: x^2+y^2+4 y-32=0 \\\\\\\\\n& P(2 \\sqrt{5},-6) \\quad Q(2 \\sqrt{5}, 2) \\\\\\\\\n& T: x x_1+y y_1+2 y+2 y_1-32=0 \\\\\\\\\n& T_1: 2 \\sqrt{5} x-6 y+2 y-12-32=0 \\\\\\\\\n& \\quad 2 \\sqrt{5} x-4 y=44 \\\\\\\\\n& T_1: \\sqrt{5} x-2 y=22 .......(i) \\\\\\\\\n& T_2: 2 \\sqrt{5} x+2 y+2 y+4-32=0 \\\\\\\\\n& 2 \\sqrt{5} x+4 y=28 \\\\\\\\\n& T_2: \\sqrt{5} x+2 y=14 .......(ii)\n\\end{aligned}\n$$\n<br/><br/>From (i) and (ii), we get\n<br/><br/>$$\n\\begin{aligned}\n& \\alpha=\\frac{18}{\\sqrt{5}} \\quad \\beta=-2 \\\\\\\\\n& \\alpha^2-\\beta^2=\\frac{304}{5}\n\\end{aligned}\n$$",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "1ldpt2o9m",
+    "questionNumber": 69,
+    "questionText": "<p>If the maximum distance of normal to the ellipse $$\\frac{x^{2}}{4}+\\frac{y^{2}}{b^{2}}=1, b < 2$$, from the origin is 1, then the eccentricity of the ellipse is :</p>",
+    "options": [
+      "$$\\frac{\\sqrt{3}}{4}$$",
+      "$$\\frac{1}{2}$$",
+      "$$\\frac{1}{\\sqrt{2}}$$",
+      "$$\\frac{\\sqrt{3}}{2}$$"
+    ],
+    "correctOption": 3,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "normal-to-ellipse",
+    "difficulty": "hard",
+    "solution": "Equation of normal is\n\n<br/><br/>$2 x \\sec \\theta-b y \\operatorname{cosec} \\theta=4-b^{2}$\n\n<br/><br/>Distance from $(0,0)=\\frac{4-b^{2}}{\\sqrt{4 \\sec ^{2} \\theta+b^{2} \\operatorname{cosec}^{2} \\theta}}$\n\n<br/><br/>Distance is maximum if\n\n<br/><br/>$4 \\sec ^{2} \\theta+b^{2} \\operatorname{cosec}^{2} \\theta$ is minimum\n\n<br/><br/>$\\Rightarrow \\tan ^{2} \\theta=\\frac{\\mathrm{b}}{2}$\n\n<br/><br/>$\\Rightarrow \\frac{4-b^{2}}{\\sqrt{4 \\cdot \\frac{b+2}{2}+b^{2} \\cdot \\frac{b+2}{b}}}=1$\n\n<br/><br/>$\\Rightarrow 4-b^{2}=(b+2) \\Rightarrow b^{2}+b-2=0$\n\n<br/><br/>$\\Rightarrow(b+2)(b-1)=0$\n\n<br/><br/>$\\Rightarrow b=1$\n\n<br/><br/>$\\therefore e=\\sqrt{1-\\frac{1}{4}}=\\frac{\\sqrt{3}}{2}$",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "1EvusdwISdLMDs07h4jgy2xukfakgvy9",
+    "questionNumber": 58,
+    "questionText": "Let x = 4 be a directrix to an ellipse whose centre is at the origin and its eccentricity is $${1 \\over 2}$$. If P(1, $$\\beta $$), $$\\beta $$ &gt; 0 is a point on this ellipse, then the equation of the normal to it at P is :",
+    "options": [
+      "4x – 3y = 2\n",
+      "8x – 2y = 5",
+      "7x – 4y = 1 ",
+      "4x – 2y = 1"
+    ],
+    "correctOption": 3,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "normal-to-ellipse",
+    "difficulty": "medium",
+    "solution": "$$e = {1 \\over 2}$$   <br><br>$$x = {a \\over e} = 4$$<br><br>$$ \\Rightarrow $$ a = 2<br><br>$${e^2} = 1 - {{{b^2}} \\over {{a^2}}} $$\n<br><br>$$\\Rightarrow {1 \\over 4} = 1 - {{{b^2}} \\over 4}$$<br><br>$${{{b^2}} \\over 4} = {3 \\over 4} \\Rightarrow {b^2} = 3$$<br><br>$$ \\therefore $$ Ellipse $${{{x^2}} \\over 4} + {{{y^2}} \\over 3} = 1$$<br><br>P(1, $$\\beta $$) is on the ellipse<br><br> $${1 \\over 4} + {{{\\beta ^2}} \\over 3} = 1$$<br><br>$${{{\\beta ^2}} \\over 3} = {3 \\over 4} \\Rightarrow \\beta  = {3 \\over 2}$$<br><br>$$ \\Rightarrow P\\left( {1,{3 \\over 2}} \\right)$$<br><br>Equation of normal $${{{a^2}x} \\over {{x_1}}} - {{{b^2}y} \\over {{y_1}}} = {a^2} - {b^2}$$<br><br>$$ \\Rightarrow $$ $${{4x} \\over 1} - {{3y} \\over {{3 \\over 2}}} = 4 - 3$$<br><br>$$ \\Rightarrow $$ $$4x - 2y = 1$$",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "N3TmnUyC4v34yUj1Gpjgy2xukg0cqp9y",
+    "questionNumber": 59,
+    "questionText": "If the normal at an end of a latus rectum of an\nellipse passes through an extremity of the\nminor axis, then the eccentricity e of the ellipse\nsatisfies :",
+    "options": [
+      "e<sup>4</sup> + 2e<sup>2</sup> – 1 = 0",
+      "e<sup>4</sup> + e<sup>2</sup> – 1 = 0",
+      "e<sup>2</sup> + 2e – 1 = 0",
+      "e<sup>2</sup> + e – 1 = 0"
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "normal-to-ellipse",
+    "difficulty": "medium",
+    "solution": "Equation of normal at $$\\left( {ae,{{{b^2}} \\over a}} \\right)$$\n<br><br>$${{{a^2}x} \\over {ae}} - {{{b^2}y} \\over {{{{b^2}} \\over a}}} = {a^2} - {b^2}$$\n<br><br>It passes through (0,–b)\n<br><br>$$ \\therefore $$ $$0 - {{{b^2}\\left( { - b} \\right)} \\over {{{{b^2}} \\over a}}} = {a^2} - {b^2}$$\n<br><br>$$ \\Rightarrow $$ $$a$$b = $${a^2} - {b^2}$$\n<br><br>$$ \\Rightarrow $$ $$a$$b = $${a^2}{e^2}$$ [as b<sup>2</sup> = $${a^2}\\left( {1 - {e^2}} \\right)$$]\n<br><br>$$ \\Rightarrow $$ $$a$$<sup>2</sup>b<sup>2</sup> = $${a^4}{e^4}$$\n<br><br>$$ \\Rightarrow $$ $${{{{b^2}} \\over {{a^2}}}}$$ = e<sup>4</sup>\n<br><br>$$ \\Rightarrow $$ $${1 - {e^2}}$$ = e<sup>4</sup>\n<br><br>$$ \\Rightarrow $$ e<sup>4</sup> + e<sup>2</sup> – 1 = 0",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "7U4w1GA7rQRFV2KmmT7k9k2k5gjiucr",
+    "questionNumber": 58,
+    "questionText": "Let the line y = mx and the ellipse 2x<sup>2</sup> + y<sup>2</sup> = 1\nintersect at a ponit P in the first quadrant. If the\nnormal to this ellipse at P meets the co-ordinate axes at $$\\left( { - {1 \\over {3\\sqrt 2 }},0} \\right)$$ and (0, $$\\beta $$), then $$\\beta $$ is equal\nto :",
+    "options": [
+      "$${{\\sqrt 2 } \\over 3}$$",
+      "$${2 \\over 3}$$",
+      "$${{2\\sqrt 2 } \\over 3}$$",
+      "$${2 \\over {\\sqrt 3 }}$$"
+    ],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "normal-to-ellipse",
+    "difficulty": "medium",
+    "solution": "Let P be (x<sub>1</sub>\n, y<sub>1</sub>)\n<br><br>Equation of normal at P is $${x \\over {2{x_1}}} - {y \\over {{y_1}}} = {1 \\over 2} - 1$$\n<br><br>It passes through $$\\left( { - {1 \\over {3\\sqrt 2 }},0} \\right)$$\n<br><br>$$ \\therefore $$ $${{ - 1} \\over {6\\sqrt 2 {x_1}}} =  - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ x<sub>1</sub> = $${1 \\over {3\\sqrt 2 }}$$\n<br><br>Also using 2$$x_1^2$$ + $$y_1^2$$ = 1\n<br><br>$$ \\Rightarrow $$ $$y_1^2$$ = 1 - $${2 \\over {18}}$$\n<br><br>$$ \\Rightarrow $$ y<sub>1</sub> = $${{2\\sqrt 2 } \\over 3}$$\n<br><br>(0, $$\\beta $$) is on the normal.\n<br><br>So 0 - $${\\beta  \\over {{{2\\sqrt 2 } \\over 3}}}$$ = $$ - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$ $$\\beta $$ = $${{\\sqrt 2 } \\over 3}$$",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "5Xy9INkIXJfGIM8vGg3rsa0w2w9jx2eobip",
+    "questionNumber": 72,
+    "questionText": "The tangent and normal to the ellipse 3x<sup>2</sup>\n + 5y<sup>2</sup>\n = 32 at the point P(2, 2) meet the x-axis at Q and R,\nrespectively. Then the area (in sq. units) of the triangle PQR is :",
+    "options": [
+      "$${{14} \\over 3}$$",
+      "$${{16} \\over 3}$$",
+      "$${{68} \\over {15}}$$",
+      "$${{34} \\over {15}}$$"
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "normal-to-ellipse",
+    "difficulty": "medium",
+    "solution": "$$3{x^2} + 5{y^2} = 32$$<br><br>\n6x + 10yy' = 0<br><br>\n$$ \\Rightarrow y' = {{ - 3x} \\over {5y}}$$<br><br>\n$$ \\Rightarrow y{'_{(2,2)}} =  - {3 \\over 5}$$<br><br>\nTangent $$(y - 2) =  - {3 \\over 5}(x - 2) \\Rightarrow Q\\left( {{{16} \\over 3},0} \\right)$$<br><br>\nNormal $$(y - 2) =  {5 \\over 3}(x - 2) \\Rightarrow R\\left( {{{4} \\over 5},0} \\right)$$<br><br>\n$$ \\therefore $$ Area = $${1 \\over 2}(QR) \\times 2 = QR = {{68} \\over {15}}$$",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "ABobMP93kuwLqACJVx3rsa0w2w9jx65dnxr",
+    "questionNumber": 72,
+    "questionText": "If the normal to the ellipse 3x<sup>2</sup>\n + 4y<sup>2</sup>\n = 12 at a point P on it is parallel to the line, 2x + y = 4 and the tangent\nto the ellipse at P passes through Q(4,4) then PQ is equal to :",
+    "options": [
+      "$${{\\sqrt {61} } \\over 2}$$",
+      "$${{\\sqrt {221} } \\over 2}$$",
+      "$${{\\sqrt {157} } \\over 2}$$",
+      "$${{5\\sqrt 5 } \\over 2}$$"
+    ],
+    "correctOption": 3,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "normal-to-ellipse",
+    "difficulty": "medium",
+    "solution": "Equation of ellipse is $${{{x^2}} \\over 4} + {{{y^2}} \\over 3} = 1$$<br><br>\nNormal at P(2 cos $$\\theta $$, $$\\sqrt 3 \\sin \\theta $$) is 2x sin$$\\theta $$ - $$\\sqrt 3 y\\,cos\\theta $$ = sin $$\\theta $$ cos $$\\theta $$ as the normal is parallel to 2x + y = 4<br><br>\n$$ \\Rightarrow $$ $${2 \\over {\\sqrt 3 }}\\tan \\theta  =  - 2$$<br><br>\n$$ \\Rightarrow \\tan \\theta  =  - \\sqrt 3 \\,\\,......\\,(i)$$<br><br>\ntangent at P(2 cos $$\\theta $$, $$\\sqrt 3 \\sin \\theta $$) is <br><br>\n$$\\sqrt 3 $$ x cos $$\\theta $$ + 2y sin $$\\theta $$ = 2 $$\\sqrt 3 $$<br><br>\nPasses through (4, 4)<br><br>\n$$ \\Rightarrow $$ 4$$\\sqrt 3 $$ cos $$\\theta $$ + 8 sin $$\\theta $$ = 2$$\\sqrt 3 $$ ....... (ii)<br><br>\nFrom (i) and (ii) <br><br>\n$$ \\Rightarrow P\\left( { - 1,{3 \\over 2}} \\right)\\,\\&amp; \\,Q(4,4)$$<br><br>\n$$ \\Rightarrow PQ = \\sqrt {25 + {{25} \\over 4}}  = {{5\\sqrt 5 } \\over 2}$$",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "Fdaip3SiqPfH8cxI",
+    "questionNumber": 72,
+    "questionText": "The eccentricity of an ellipse whose centre is at the origin is $${1 \\over 2}$$. If one of its directrices is x = – 4, then the\nequation of the normal to it at $$\\left( {1,{3 \\over 2}} \\right)$$ is :",
+    "options": [
+      "2y – x = 2",
+      "4x – 2y = 1",
+      "4x + 2y = 7",
+      "x + 2y = 4"
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "normal-to-ellipse",
+    "difficulty": "medium",
+    "solution": "Given e = $${1 \\over 2}$$ and $${a \\over e}$$ = 4\n<br><br>$$ \\therefore $$ $$a$$ = 2\n<br><br>We have b<sup>2</sup> = $$a$$<sup>2</sup> (1 – e<sup>2</sup>) = $$4\\left( {1 - {1 \\over 4}} \\right)$$ = 3\n<br><br>$$ \\therefore $$ Equation of ellipse is\n<br><br>$${{{x^2}} \\over 4} + {{{y^2}} \\over 3} = 1$$\n<br><br>Now, the equation of normal at $$\\left( {1,{3 \\over 2}} \\right)$$ is\n<br><br>$${{{a^2}x} \\over {{x_1}}} - {{{b^2}y} \\over {{y_1}}} = {a^2} - {b^2}$$\n<br><br>$$ \\Rightarrow $$ $${{4x} \\over 1} - {{3y} \\over {{3 \\over 2}}} = 4 - 3$$\n<br><br>$$ \\Rightarrow $$ 4x – 2y = 1",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "OU6YDlvw1pCfcPEH",
+    "questionNumber": 43,
+    "questionText": "The normal at a point $$P$$ on the ellipse $${x^2} + 4{y^2} = 16$$ meets the $$x$$- axis $$Q$$. If $$M$$ is the mid point of the line segment $$PQ$$, then the locus of $$M$$ intersects the latus rectums of the given ellipse at the points",
+    "options": [
+      "$$\\left( { \\pm {{3\\sqrt 5 } \\over 2},\\, \\pm {2 \\over 7}} \\right)$$ ",
+      "$$\\left( { \\pm {{3\\sqrt 5 } \\over 2},\\, \\pm \\sqrt {{{19} \\over 4}} } \\right)$$ ",
+      "$$\\left( { \\pm 2\\sqrt 3 , \\pm {1 \\over 7}} \\right)$$ ",
+      "$$\\left( { \\pm 2\\sqrt 3 , \\pm {{4\\sqrt 3 } \\over 7}} \\right)$$ "
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "normal-to-ellipse",
+    "difficulty": "medium",
+    "solution": "<p>The normal is</p>\n<p>$$4x\\sec \\phi  - 2y\\cos ec\\phi  = 12$$</p>\n<p>Now, the points Q and M are given by</p>\n<p>$$Q \\equiv (3\\cos \\phi ,0)$$</p>\n<p>$$M \\equiv (\\alpha ,\\beta )$$</p>\n<p>Therefore, $$\\alpha  = {{3\\cos \\phi  + 4\\cos \\phi } \\over 2} = {7 \\over 2}\\cos \\phi  \\Rightarrow \\cos \\phi  = {2 \\over 7}\\alpha $$</p>\n<p>and $$\\beta  = \\sin \\phi ;{\\cos ^2}\\phi  + {\\sin ^2}\\phi  = 1$$.</p>\n<p>Therefore, $${4 \\over {49}}{\\alpha ^2} + {\\beta ^2} = 1 \\Rightarrow {4 \\over {49}}{x^2} + {y^2} = 1$$</p>\n<p>Hence, the rectum is $$x =  \\pm 2\\sqrt 3 $$.</p>\n<p>Hence,</p>\n<p>$${{48} \\over {49}} + {y^2} = 1 \\Rightarrow y =  \\pm {1 \\over 7}$$</p>\n<p>$$\\left( { \\pm 2\\sqrt 3 , \\pm {1 \\over 7}} \\right)$$</p>\n<p>Hence, the locus of M intersects the latus rectum of the given ellipse at the points</p>",
+    "section": "Sec 2",
+    "instruction": "",
+    "type": "SCQ"
+  }
+]

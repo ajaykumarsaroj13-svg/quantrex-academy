@@ -1,0 +1,48 @@
+Created At: 2026-06-05T08:00:25Z
+Completed At: 2026-06-05T08:00:26Z
+File Path: `file:///C:/Users/Admin/.gemini/antigravity/scratch/quantrexacadmy/src/pages/StudentDashboard.jsx`
+Total Lines: 1077
+Total Bytes: 60169
+Showing lines 1 to 800
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import React, { useState, useEffect } from 'react';
+2: import { BarChart, BookOpen, Clock, PlayCircle, LogOut, CheckCircle, Lock, ShieldCheck, Trophy, Sparkles, Target, ArrowRight, BrainCircuit, FileText, Download, Flame, Send } from 'lucide-react';
+3: import { loadDbFromBlob } from '../blob';
+4: import VideoPlayer from '../components/VideoPlayer';
+5: import PdfViewer from '../components/PdfViewer';
+6: import ExamGoalPracticeInterface from '../components/ExamGoalPracticeInterface';
+7: import ChapterPYQDashboard from '../components/ChapterPYQDashboard';
+8: import { usePYQProgress } from '../hooks/usePYQProgress';
+9: import pyqSetsRelationData from '../../backend/data/test_series/examgoal_pyqs_sets_relation.json';
+10: import testsData from '../utils/testsData2.json';
+11: import advancedTestsData from '../utils/advancedTestsData.json';
+12: 
+13: export default function StudentDashboard({ user, courses, setActivePage, setExamTest, syllabus, initialClass, initialTab, initialChapterTab }) {
+14:   const [tests, setTests] = useState([]);
+15:   const [testCategory, setTestCategory] = useState('jee-mains'); // jee-mains, jee-advanced
+16:   const [activeTab, setActiveTab] = useState(initialTab || 'courses'); // courses, live, tests, ai-analytics, doubts
+17:   const [purchasedList, setPurchasedList] = useState([]);
+18:   
+19:   // Syllabus selection states
+20:   const [selectedSyllabusClass, setSelectedSyllabusClass] = useState(initialClass || 'jee-mains');
+21:   const [selectedSyllabusChapterId, setSelectedSyllabusChapterId] = useS
+<truncated 43948 bytes>
+                                   <Flame className="h-4 w-4 fill-current text-gold" /> {f.title}
+784:                                                </span>
+785:                                                {f.url && (
+786:                                                  <button
+787:                                                    onClick={() => setInlinePdf(isActive ? null : { id: `formula-${f.id}`, url: f.url, title: f.title })}
+788:                                                    className={`px-2.5 py-1 text-[9px] font-bold uppercase rounded-lg flex items-center gap-1 ${
+789:                                                      isActive ? 'bg-gold text-obsidian' : 'bg-electric/10 text-electric border border-electric/20 hover:bg-electric/20'
+790:                                                    }`}
+791:                                                  >
+792:                                                    {isActive ? 'Close' : '📄 View File'}
+793:                                                  </button>
+794:                                                )}
+795:                                              </h5>
+796:                                              {f.content && (
+797:                                                <p className="text-gray-300 leading-relaxed whitespace-pre-line text-[11px] font-mono leading-relaxed bg-obsidian/30 p-2.5 rounded border border-white/5">{f.content}</p>
+798:                                              )}
+799:                                              {f.url && (f.url.startsWith('data:image/') || /\.(png|jpg|jpeg|gif|webp)$/i.test(f.url)) && !isActive && (
+800:                                                <img src={f.url} alt={f.title} className="max-w-full rounded-lg border border-white/5 mt-2" style={{maxHeight:'320px',objectFit:'contain'}} />
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

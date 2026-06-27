@@ -1,0 +1,295 @@
+{
+  "testId": "tst-19g61mp3vfh0r",
+  "title": "Straight Line Test - 4 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "lwv4k4kv",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The number of points represented by the equation $x = 5$ on the $xy$-plane is</p>",
+      "options": [
+        "<p>Zero</p>",
+        "<p>One</p>",
+        "<p>Two</p>",
+        "<p>Infinitely many</p>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>The equation $$x = 5$$ represents a vertical line on the $xy$-plane where the $$x$$-coordinate of every point on that line is 5. To understand why this is the case, consider the following:</p>\n\n<p>In a standard Cartesian coordinate system, an equation of the form $$x = c$$ (where $$c$$ is a constant) describes a vertical line that intersects the x-axis at $$x = c$$. All points on this line share the same $$x$$-coordinate, but their $$y$$-coordinates can vary freely. Consequently, the line will include every possible $$y$$-coordinate associated with the given $$x$$-coordinate.</p>\n\n<p>Therefore, the number of points described by the equation $$x = 5$$ is indeed infinitely many, because for every possible value of $$y$$, there exists a corresponding point (5, $$y$$) on the line.</p>\n\n<p>Based on the options provided:</p>\n\n<p><b>Option A:</b> Zero - This would imply no points exist, which is incorrect.</p>\n\n<p><b>Option B:</b> One - This would imply only one point exists, which is incorrect.</p>\n\n<p><b>Option C:</b> Two - This would imply only two points exist, which is incorrect.</p>\n\n<p><b>Option D:</b> Infinitely many - This accurately describes the situation.</p>\n\n<p>The correct answer is:</p>\n\n<p><b>Option D: Infinitely many</b></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tlmnk0kpkv",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the value of sin <span class=\"math-tex\">$\\theta $</span>&nbsp;if&nbsp;<span class=\"math-tex\">$\\theta $</span> is the acute angle between the lines whose equations are px + qy = p + q and p(x - y) + q(x + y) = 2q&nbsp;",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{\\sqrt{3}}{2}$</span>",
+        "<span class=\"math-tex\">$\\frac{3}{4} $</span>",
+        "1/2",
+        "<span class=\"math-tex\">$\\frac{1}{\\sqrt{2}}$</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>For the two lines,</p>\n<p>$$px + qy = p + q$$</p>\n<p>and</p>\n<p>$$p(x-y) + q(x+y) = 2q$$</p>\n<p>we need the acute angle $\\theta$ between them, and then find $\\sin \\theta$.</p>\n<p>First, write both lines in slope form.</p>\n<p>The first line is:</p>\n<p>$$px + qy = p+q$$</p>\n<p>So,</p>\n<p>$$qy = -px + (p+q)$$</p>\n<p>$$y = -\\frac{p}{q}x + \\frac{p+q}{q}$$</p>\n<p>Hence, slope of first line is</p>\n<p>$$m_1 = -\\frac{p}{q}$$</p>\n<p>Now simplify the second line:</p>\n<p>$$p(x-y) + q(x+y) = 2q$$</p>\n<p>Expanding,</p>\n<p>$$px - py + qx + qy = 2q$$</p>\n<p>$$(p+q)x + (q-p)y = 2q$$</p>\n<p>So,</p>\n<p>$$(q-p)y = -(p+q)x + 2q$$</p>\n<p>$$y = -\\frac{p+q}{q-p}x + \\frac{2q}{q-p}$$</p>\n<p>Hence, slope of second line is</p>\n<p>$$m_2 = -\\frac{p+q}{q-p} = \\frac{p+q}{p-q}$$</p>\n<p>Now use the formula for angle between two lines:</p>\n<p>$$\\tan \\theta = \\left| \\frac{m_2 - m_1}{1 + m_1m_2} \\right|$$</p>\n<p>Substitute the values:</p>\n<p>$$\\tan \\theta = \\left| \\frac{\\frac{p+q}{p-q} - \\left(-\\frac{p}{q}\\right)}{1 + \\left(-\\frac{p}{q}\\right)\\left(\\frac{p+q}{p-q}\\right)} \\right|$$</p>\n<p>So,</p>\n<p>$$\\tan \\theta = \\left| \\frac{\\frac{p+q}{p-q} + \\frac{p}{q}}{1 - \\frac{p(p+q)}{q(p-q)}} \\right|$$</p>\n<p>Take LCM in numerator:</p>\n<p>$$\\frac{q(p+q) + p(p-q)}{q(p-q)} = \\frac{pq + q^2 + p^2 - pq}{q(p-q)} = \\frac{p^2+q^2}{q(p-q)}$$</p>\n<p>Now denominator:</p>\n<p>$$1 - \\frac{p(p+q)}{q(p-q)} = \\frac{q(p-q) - p(p+q)}{q(p-q)}$$</p>\n<p>$$= \\frac{pq - q^2 - p^2 - pq}{q(p-q)} = -\\frac{p^2+q^2}{q(p-q)}$$</p>\n<p>Therefore,</p>\n<p>$$\\tan \\theta = \\left| \\frac{\\frac{p^2+q^2}{q(p-q)}}{-\\frac{p^2+q^2}{q(p-q)}} \\right| = 1$$</p>\n<p>So,</p>\n<p>$$\\theta = 45^\\circ$$</p>\n<p>since the acute angle is asked.</p>\n<p>Hence,</p>\n<p>$$\\sin \\theta = \\sin 45^\\circ = \\frac{1}{\\sqrt{2}}$$</p>\n<p>So the correct answer is:</p>\n<p>$$\\boxed{\\frac{1}{\\sqrt{2}}}$$</p>\n<p>Option 4</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tlm69msw5i",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the equation of the diagonal BD?",
+      "options": [
+        "2x - 3y + 2 = 0",
+        "3x - 2y + 5 = 0",
+        "2x - 3y + 8 = 0",
+        "3x - 2y - 5 = 0"
+      ],
+      "correctOption": 2,
+      "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9s3wnwh/93c6396b-83f9-4d74-8c31-24d3daefe2eb/93efa710-1f40-11f0-a646-7974e590840e/file-jaoe38c1m9s3wnwi.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9s3wnwh/93c6396b-83f9-4d74-8c31-24d3daefe2eb/93efa710-1f40-11f0-a646-7974e590840e/file-jaoe38c1m9s3wnwi.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 14 November 2021 Mathematics - Coordinate System and Straight Line Question 19 English Explanation\"></p>\n<p>To find the equation of diagonal BD in parallelogram ABCD, we need to consider its relation to diagonal AC because, in a parallelogram, the diagonals bisect each other.</p>\n\n<p></p><p><strong>Find the Midpoint of AC:</strong></p>\n<p>The midpoint of line segment AC is calculated using the midpoint formula:</p>\n<p>$    \\text{Midpoint of AC} = \\left(\\frac{1 + 3}{2}, \\frac{3 + 5}{2}\\right) = (2, 4)    $</p>\n<p>This midpoint is also the midpoint of diagonal BD.</p><p></p>\n<p></p><p><strong>Determine the Equation of BD:</strong></p>\n<p>The slope of BD can be calculated using the points B(-1, 2) and D, where D can be determined using the midpoint condition. However, here we determine the slope directly from given coordinates without explicit calculation of D.</p>\n<p>$    \\text{Slope of BD} = \\frac{2 - 4}{-1 - 2} = \\frac{-2}{-3} = \\frac{2}{3}    $</p>\n<p>Using point B(-1, 2) with the slope, the equation of the line BD can be determined using the point-slope form:</p>\n<p>$    y - 2 = \\frac{2}{3}(x + 1)    $</p><p></p>\n<p></p><p><strong>Convert to Standard Form:</strong></p>\n<p>Simplifying the equation:</p>\n<p>$    y - 2 = \\frac{2}{3}x + \\frac{2}{3}    $</p>\n<p>$    3y - 6 = 2x + 2    $</p>\n<p>Rearranging terms gives:</p>\n<p>$    2x - 3y + 8 = 0    $</p><p></p>\n\n<p>Thus, the equation of diagonal BD is $2x - 3y + 8 = 0$.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tlmc33hjpa",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What are the coordinates of vertex D?",
+      "options": [
+        "(2, 1)",
+        "(1, 2)",
+        "(1, 1)",
+        "(3, 1)"
+      ],
+      "correctOption": 3,
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1md5k8m4e/1ab267b9-ab00-419f-ad34-55325f033a9e/48ea91e0-620b-11f0-acf1-89c5d98f0107/file-jaoe38c1md5k8m4f.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1md5k8m4e/1ab267b9-ab00-419f-ad34-55325f033a9e/48ea91e0-620b-11f0-acf1-89c5d98f0107/file-jaoe38c1md5k8m4f.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 1st September 2024 Mathematics - Coordinate System and Straight Line Question 13 English Explanation\">\n\n<p>ABCD is an isosceles trapezium, with AB parallel to DC. The given vertices are A(2, 3), B(4, 3), and C(5, 1). We need to find the coordinates of vertex D.</p>\n<p>In an isosceles trapezium, the diagonals bisect each other. Let O be the midpoint of both diagonals AC and BD.</p>\n<p>To find the midpoint O:</p>\n<p>For diagonal AC:</p>\n\n<p></p><p>x-coordinate of O: $\\frac{5+2}{2} = \\frac{7}{2} = 3.5$</p><p></p>\n<p></p><p>y-coordinate of O: $\\frac{1+3}{2} = \\frac{4}{2} = 2$</p><p></p>\n\n<p>For diagonal BD:</p>\n\n<p></p><p>Using the same midpoint, equate it for x and y:</p><p></p>\n<p></p><p>$\\frac{4 + a}{2} = 3.5$ which implies $a = 3$</p><p></p>\n<p></p><p>$\\frac{3 + b}{2} = 2$ which implies $b = 1$</p><p></p>\n\n<p>Thus, the coordinates of D are (3, 1).</p>\n<p><strong>Therefore, the correct option is (3, 1).</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tllz3lnt1v",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the equation of the straight line which passes through the point (1, -2) and cuts off equal intercepts from the axes ?",
+      "options": [
+        "x + y - 1 = 0",
+        "<span style=\"\">x - y - 1 = 0</span>",
+        "<span style=\"\">x + y + 1 = 0</span>",
+        "<span style=\"\">x - y - 2 = 0</span>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>To determine the equation of the straight line that passes through the point (1, -2) and cuts off equal intercepts from the axes, we can proceed as follows:</p>\n\n<p>Let the intercepts on the x-axis and y-axis be $ a $. Hence, the equation of the line with equal intercepts is given by</p>\n\n<p>$$\\frac{x}{a} + \\frac{y}{a} = 1$$</p>\n\n<p>or simply,</p>\n\n<p>$$x + y = a$$</p>\n\n<p>We need to find the value of $ a $. Since the line passes through the point (1, -2), we can substitute $ x = 1 $ and $ y = -2 $ into the equation:</p>\n\n<p>$$1 + (-2) = a$$</p>\n\n<p>$$a = -1$$</p>\n\n<p>Therefore, the equation of the line is</p>\n\n<p>$$x + y = -1$$</p>\n\n<p>This equation can also be written as</p>\n\n<p>$$x + y + 1 = 0$$</p>\n\n<p>Thus, the correct option is:</p>\n\n<p><strong>Option C: $ x + y + 1 = 0 $</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tllz3lnt3o",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the equation of the locus of the mid-point of the line segment obtained by cutting the line x + y = p, (where p is a real number) by the coordinate axes ?",
+      "options": [
+        "x - y = 0",
+        "<span style=\"\">x + y = 0</span>",
+        "<span style=\"\">x - y = p</span>",
+        "<span style=\"\">x + y = p</span>"
+      ],
+      "correctOption": 0,
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzv7dxns/807b5e96-2641-4ccd-82f0-727b513592f8/5fc6c280-5afa-11ef-9950-13fe19d7003d/file-jaoe38c1lzv7dxnt.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzv7dxns/807b5e96-2641-4ccd-82f0-727b513592f8/5fc6c280-5afa-11ef-9950-13fe19d7003d/file-jaoe38c1lzv7dxnt.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 10 April 2022 Mathematics - Coordinate System and Straight Line Question 29 English Explanation\">\n<p>To determine the equation of the locus of the mid-point of the line segment cut by the line $ x + y = p $ on the coordinate axes, we first need to find the points where the line intersects the axes.</p>\n\n<p>The given line equation is:</p>\n\n<p>$$ x + y = p $$</p>\n\n<p>First, let's find the intersection points with the coordinate axes.</p>\n\n<p><strong>Intersection with the x-axis:</strong></p>\n\n<p>For the x-axis, $ y = 0 $. So we substitute $ y = 0 $ into the line equation:</p>\n\n<p>$$ x + 0 = p $$</p>\n\n<p>Which gives:</p>\n\n<p>$$ x = p $$</p>\n\n<p>Hence, the intersection point with the x-axis is $ (p, 0) $.</p>\n\n<p><strong>Intersection with the y-axis:</strong></p>\n\n<p>For the y-axis, $ x = 0 $. So we substitute $ x = 0 $ into the line equation:</p>\n\n<p>$$ 0 + y = p $$</p>\n\n<p>Which gives:</p>\n\n<p>$$ y = p $$</p>\n\n<p>Hence, the intersection point with the y-axis is $ (0, p) $.</p>\n\n<p>Now, the mid-point of the line segment connecting these two points $(p, 0)$ and $(0, p)$ can be found using the mid-point formula:</p>\n\n<p>$$ \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right) $$</p>\n\n<p>Substituting $ x_1 = p $, $ y_1 = 0 $, $ x_2 = 0 $, and $ y_2 = p $ into the formula, we get:</p>\n\n<p>$$ \\left( \\frac{p + 0}{2}, \\frac{0 + p}{2} \\right) = \\left( \\frac{p}{2}, \\frac{p}{2} \\right) $$</p>\n\n<p>Let's denote the mid-point as $(x, y)$. Therefore, we have:</p>\n\n<p>$$ x = \\frac{p}{2} \\quad \\text{and} \\quad y = \\frac{p}{2} $$</p>\n\n<p>Since $ x $ and $ y $ are both equal to $ \\frac{p}{2} $, we can simply say:</p>\n\n<p>$$ x = y $$</p>\n\n<p>This is the equation of the locus of the mid-point.</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option A: x - y = 0</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tlmnk0kpni",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the area of the region bounded by |x| &lt;= 2k and |y| &lt;= k where k is a positive real number?",
+      "options": [
+        "<span class=\"math-tex\">$ 2k ^ 2$</span>",
+        "<span class=\"math-tex\">$4k ^ 2$</span>",
+        "<span class=\"math-tex\">$5k ^ 2$</span>",
+        "<span class=\"math-tex\">$ 8k ^ 2$</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>Given:</p>\n<p>$$|x| \\le 2k \\quad \\text{and} \\quad |y| \\le k$$</p>\n<p>where $k > 0$.</p>\n<p>Now,</p>\n<p>$$|x| \\le 2k \\implies -2k \\le x \\le 2k$$</p>\n<p>So the length along the $x$-axis is:</p>\n<p>$$2k - (-2k) = 4k$$</p>\n<p>Also,</p>\n<p>$$|y| \\le k \\implies -k \\le y \\le k$$</p>\n<p>So the length along the $y$-axis is:</p>\n<p>$$k - (-k) = 2k$$</p>\n<p>Thus, the bounded region is a rectangle with:</p>\n<ul>\n<li><p>length $= 4k$</p></li>\n<li><p>breadth $= 2k$</p></li>\n</ul>\n<p>Hence, area:</p>\n<p>$$= 4k \\times 2k = 8k^2$$</p>\n<p>So the correct answer is:</p>\n<p>$$\\boxed{8k^2}$$</p>\n<p>Option 4</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tllz3linmh",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The base AB of an equilateral triangle ABC with side 8 cm lies along the y-axis such that the mid-point of AB is at the origin and B lies above the origin. What is the equation of line passing through (8, 0) and parallel to the side AC ?",
+      "options": [
+        "<span style=\"\">x −&nbsp;</span><span class=\"math-tex\">$\\sqrt{3}$</span><span style=\"\">y − 8 = 0</span>",
+        "<span style=\"\">x +&nbsp;</span><span class=\"math-tex\">$\\sqrt{3}$</span><span style=\"\">y − 8 = 0</span>",
+        "<span style=\"\"><span class=\"math-tex\">$\\sqrt{3}$</span>x + y − 8</span><span class=\"math-tex\">$\\sqrt{3}$</span><span style=\"\">&nbsp;= 0</span>",
+        "<span style=\"\"><span class=\"math-tex\">$\\sqrt{3}$</span></span>x − y − 8<span class=\"math-tex\">$\\sqrt{3}$</span>&nbsp;= 0"
+      ],
+      "correctOption": 0,
+      "solution": "<p>In an equilateral triangle, all sides are equal, and each angle measures 60°.</p>\n\n<p>The slopes of parallel lines are equal.</p>\n\n<p>The slope of a line inclined to the x-axis at an angle θ in the positive direction is given by tan θ.</p>\n\n<p>The equation of a line with slope m that passes through the point (a,b) is given by: y - b = m(x - a).</p>\n\n<ul>\n\n<li>tan(180° + x) = tan x</li>\n\n</ul>\n\n<p><u><strong>Calculation:</strong></u></p>\n\n<p><strong>Given:</strong> The base AB of an equilateral triangle ABC with side length 8 cm lies along the y-axis such that the mid-point of AB is at the origin and B lies above the origin.</p>\n\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzy3cali/88615810-2cc5-48d2-9d0d-f466a598e8fd/e7954460-5c90-11ef-a5b8-3b1f74e52ad9/file-jaoe38c1lzy3calj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzy3cali/88615810-2cc5-48d2-9d0d-f466a598e8fd/e7954460-5c90-11ef-a5b8-3b1f74e52ad9/file-jaoe38c1lzy3calj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 4 September 2022 Mathematics - Coordinate System and Straight Line Question 35 English Explanation\">\n\n<p>From the figure, it can be observed that AC makes an angle of (180° + 30°) = 210° with the positive x-axis.</p>\n\n<p>⇒ Slope of AC = tan 210° = tan (180° + 30°) = tan 30° = <span class=\"math-tex\">$1 \\over \\sqrt{3}$</span></p>\n\n<p>⇒ Therefore, the slope of any line parallel to AC is also <span class=\"math-tex\">$1 \\over \\sqrt{3}$</span></p>\n\n<p>The equation of the line passing through the point (8, 0) and parallel to side AC is:</p>\n\n<p>y - 0 = <span class=\"math-tex\">$1 \\over \\sqrt{3}$</span>(x - 8)</p>\n\n<p>⇒ x - <span class=\"math-tex\">$\\sqrt{3}$</span> y - 8 = 0</p>\n\n<p><strong>∴ The correct option is (A).</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tlmnk0kpkq",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Which one of the following is the perpendicular form of the straight line <span class=\"math-tex\">$\\sqrt{3}x+2y=7$</span>&nbsp;?",
+      "options": [
+        "<span class=\"math-tex\">$y=-\\frac{\\sqrt{3}}{2}x+\\frac{7}{2}$</span>",
+        "<span class=\"math-tex\">$\\frac{x}{(\\frac{7}{\\sqrt{3}})}+\\frac{y}{(\\frac{7}{2})}=1$</span>",
+        "<span class=\"math-tex\">$\\frac{\\sqrt{3}}{\\sqrt{7}}x+\\frac{2}{\\sqrt{7}}y=\\sqrt{7}$</span>",
+        "<span class=\"math-tex\">$\\frac{\\sqrt{3}}{\\sqrt{7}}x+\\frac{2}{\\sqrt{7}}y=7$</span>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>For a straight line, the perpendicular or normal form is</p>\n<p>$$ x\\cos \\alpha + y\\sin \\alpha = p $$</p>\n<p>where $p$ is the perpendicular distance of the line from the origin.</p>\n<p>Given line:</p>\n<p>$$ \\sqrt{3}x+2y=7 $$</p>\n<p>To convert it into perpendicular form, divide the whole equation by</p>\n<p>$$ \\sqrt{(\\sqrt{3})^2+2^2}=\\sqrt{3+4}=\\sqrt{7} $$</p>\n<p>So we get</p>\n<p>$$ \\frac{\\sqrt{3}}{\\sqrt{7}}x+\\frac{2}{\\sqrt{7}}y=\\frac{7}{\\sqrt{7}} $$</p>\n<p>Now,</p>\n<p>$$ \\frac{7}{\\sqrt{7}}=\\sqrt{7} $$</p>\n<p>Hence the equation becomes</p>\n<p>$$ \\frac{\\sqrt{3}}{\\sqrt{7}}x+\\frac{2}{\\sqrt{7}}y=\\sqrt{7} $$</p>\n<p>So the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 3}} $$</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tlm69mp4h4",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the acute angle between the lines x - 2 = 0 and&nbsp;√3x - y - 2 = 0?",
+      "options": [
+        "0°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "correctOption": 1,
+      "solution": "<p>We have two lines:</p>\n\n<p><p>$x - 2 = 0 \\quad\\Longrightarrow\\quad x=2.$  </p>\n<p>This is a <strong>vertical</strong> line, so it makes a $90^\\circ$ angle with the $x$-axis.</p></p>\n<p><p>$\\sqrt{3}x - y - 2 = 0 \\quad\\Longrightarrow\\quad y=\\sqrt{3}x - 2.$  </p>\n<p>This line has slope $m = \\sqrt{3}$. A line with slope $\\sqrt{3}$ makes a $\\tan^{-1}(\\sqrt{3}) = 60^\\circ$ angle with the $x$-axis.</p></p>\n\n<hr />\n<h3>Finding the angle between the lines</h3>\n\n<p><p>The vertical line (Line 1) makes a $90^\\circ$ angle with the $x$-axis.  </p></p>\n<p><p>The second line (Line 2) makes a $60^\\circ$ angle with the $x$-axis.</p></p>\n\n<p>The <strong>acute angle</strong> between the two lines is the difference of these angles:</p>\n<p>$ 90^\\circ - 60^\\circ = 30^\\circ. $</p>\n<p>Hence, the acute angle between the lines is $30^\\circ$.</p>\n<hr />\n<p><strong>Answer: 30° (Option B).</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tlm69msw67",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What are the coordinates of circumcentre of the triangle?",
+      "options": [
+        "(4, 0)",
+        "(2, 1)",
+        "(0, 4)",
+        "(2, -1)"
+      ],
+      "correctOption": 0,
+      "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9s12vte/87f9d7bf-e074-4100-8c0b-683dbb14f7ce/85846720-1f35-11f0-84e0-3912d7a7ed7f/file-jaoe38c1m9s12vtf.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m9s12vte/87f9d7bf-e074-4100-8c0b-683dbb14f7ce/85846720-1f35-11f0-84e0-3912d7a7ed7f/file-jaoe38c1m9s12vtf.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 14 November 2021 Mathematics - Coordinate System and Straight Line Question 16 English Explanation\"></p>\n<p>In the figure, line segments $MO$ and $NO$ are the perpendicular bisectors of the sides of the triangle. The circumcentre is the intersection point of $MO$ and $NO$.</p>\n\n<p><strong>Find the vertices of the triangle:</strong></p>\n\n\n<p></p><p>Intersection of lines $AB$ and $BC$ gives point $B$.  </p>\n<p>$B = (2, -1)$</p><p></p>\n\n<p></p><p>Intersection of lines $AC$ and $BC$ gives point $C$.  </p>\n<p>$C = (6, -1)$</p><p></p>\n\n<p></p><p>Intersection of lines $AB$ and $AC$ gives point $A$.  </p>\n<p>$A = (2, 1)$</p><p></p>\n\n\n<p><strong>Find the midpoints:</strong></p>\n\n\n<p></p><p>Midpoint $M$ of segment $BC$:  </p>\n<p>$M = \\left(\\frac{2 + 6}{2}, \\frac{-1 - 1}{2}\\right) = (4, -1)$</p><p></p>\n\n<p></p><p>Midpoint $N$ of segment $AC$:  </p>\n<p>$N = \\left(\\frac{2 + 6}{2}, \\frac{-1 + 1}{2}\\right) = (4, 0)$</p><p></p>\n\n\n<p><strong>Determine the equations of the perpendicular bisectors:</strong></p>\n\n\n<p></p><p>The slope of line $BC$ is 0, so $MO$ is vertical with an undefined slope.  </p>\n<p>Equation: $x - 4 = 0$ $(i)$</p><p></p>\n\n<p></p><p>The slope of line $AC$ is $-\\frac{1}{2}$, so the slope of $NO$ is 2.  </p>\n<p>Equation: $y = 2x - 8 $ $(ii)$</p><p></p>\n\n\n<p><strong>Find the circumcentre by solving the equations:</strong></p>\n\n\n<p></p><p>From equation $(i)$, $x = 4$.</p><p></p>\n<p></p><p>Substitute $x = 4$ in equation $(ii)$:  </p>\n<p>$y = 2(4) - 8 = 0$.</p><p></p>\n\n<p>Thus, the coordinates of the circumcentre are $(4, 0)$.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tlmnk0kpkj",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The equation of the locus of a point equidistant from the points (a, b) and (c, d) is (a - c)&nbsp; x + (b - d)&nbsp; y + k = 0 What is the value of k?",
+      "options": [
+        "<span class=\"math-tex\">$a^2 - c^2 + b^2 - d^2$</span>",
+        "<span class=\"math-tex\">$c^2 + d^2 - a^2 - b^2$</span>",
+        "<span class=\"math-tex\">$(a^2 - c^2 + b^2 - d^2) / 2$</span>",
+        "<span class=\"math-tex\">$(c^2 + d^2 - a^2 - b^2) / 2$</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>Let the moving point be $P(x,y)$.</p>\n<p>Since $P$ is equidistant from $(a,b)$ and $(c,d)$, we have</p>\n<p>$$ \\sqrt{(x-a)^2+(y-b)^2}=\\sqrt{(x-c)^2+(y-d)^2} $$</p>\n<p>Squaring both sides,</p>\n<p>$$ (x-a)^2+(y-b)^2=(x-c)^2+(y-d)^2 $$</p>\n<p>Now expand both sides:</p>\n<p>$$ x^2-2ax+a^2+y^2-2by+b^2=x^2-2cx+c^2+y^2-2dy+d^2 $$</p>\n<p>Cancel $x^2$ and $y^2$:</p>\n<p>$$ -2ax+a^2-2by+b^2=-2cx+c^2-2dy+d^2 $$</p>\n<p>Bring all terms to one side:</p>\n<p>$$ 2(c-a)x+2(d-b)y+a^2+b^2-c^2-d^2=0 $$</p>\n<p>Divide by $2$:</p>\n<p>$$ (c-a)x+(d-b)y+\\frac{a^2+b^2-c^2-d^2}{2}=0 $$</p>\n<p>Multiply by $-1$ to match the given form:</p>\n<p>$$ (a-c)x+(b-d)y+\\frac{c^2+d^2-a^2-b^2}{2}=0 $$</p>\n<p>Comparing with</p>\n<p>$$ (a-c)x+(b-d)y+k=0 $$</p>\n<p>we get</p>\n<p>$$ k=\\frac{c^2+d^2-a^2-b^2}{2} $$</p>\n<p>So, the correct answer is:</p>\n<p>$$ \\boxed{\\frac{c^2+d^2-a^2-b^2}{2}} $$</p>\n<p>Option 4.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tllxlrvuoj",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the sum of the intercepts of the line whose perpendicular distance from origin is 4 units and the angle which the normal makes with positive direction of x-axis is 15°?",
+      "options": [
+        "8",
+        "4√6",
+        "8√6",
+        "16"
+      ],
+      "correctOption": 2,
+      "solution": "<p>To solve this problem, we need to understand the equation of a line in the normal form. The normal form of a line is given by:</p>\n\n<p>\n\n<p>$$ x \\cos \\theta + y \\sin \\theta = p $$</p>\n\n</p>\n\n<p>Here, $ \\theta $ is the angle that the perpendicular (or normal) from the origin makes with the positive direction of the x-axis, and $ p $ is the length of this perpendicular from the origin to the line.</p>\n\n<p>Given:</p>\n\n<ul>\n\n<li>$ \\theta = 15^\\circ $</li>\n\n<li>$ p = 4 \\text{ units} $</li>\n\n</ul>\n\n<p>We can substitute these values into the normal form equation:</p>\n\n<p>\n\n<p>$$ x \\cos 15^\\circ + y \\sin 15^\\circ = 4 $$</p>\n\n</p>\n\n<p>We know the trigonometric values:</p>\n\n<ul>\n\n<li>$ \\cos 15^\\circ = \\cos (45^\\circ - 30^\\circ) = \\cos 45^\\circ \\cos 30^\\circ + \\sin 45^\\circ \\sin 30^\\circ $</li>\n\n<li>$ = \\left(\\frac{1}{\\sqrt{2}}\\right) \\left(\\frac{\\sqrt{3}}{2}\\right) + \\left(\\frac{1}{\\sqrt{2}}\\right) \\left(\\frac{1}{2}\\right) $</li>\n\n<li>$ = \\frac{\\sqrt{3}}{2\\sqrt{2}} + \\frac{1}{2\\sqrt{2}} $</li>\n\n<li>$ = \\frac{\\sqrt{3} + 1}{2\\sqrt{2}} = \\frac{\\sqrt{6} + \\sqrt{2}}{4} $</li>\n\n</ul>\n\n<p>Similarly,</p>\n\n<ul>\n\n<li>$ \\sin 15^\\circ = \\sin (45^\\circ - 30^\\circ) = \\sin 45^\\circ \\cos 30^\\circ - \\cos 45^\\circ \\sin 30^\\circ $</li>\n\n<li>$ = \\left(\\frac{1}{\\sqrt{2}}\\right) \\left(\\frac{\\sqrt{3}}{2}\\right) - \\left(\\frac{1}{\\sqrt{2}}\\right) \\left(\\frac{1}{2}\\right) $</li>\n\n<li>$ = \\frac{\\sqrt{3}}{2\\sqrt{2}} - \\frac{1}{2\\sqrt{2}} $</li>\n\n<li>$ = \\frac{\\sqrt{3} - 1}{2\\sqrt{2}} = \\frac{\\sqrt{6} - \\sqrt{2}}{4} $</li>\n\n</ul>\n\n<p>Plugging the values of $ \\cos 15^\\circ $ and $ \\sin 15^\\circ $ back into the equation:</p>\n\n<p>\n\n<p>$$ x \\left(\\frac{\\sqrt{6} + \\sqrt{2}}{4}\\right) + y \\left(\\frac{\\sqrt{6} - \\sqrt{2}}{4}\\right) = 4 $$</p>\n\n</p>\n\n<p>Multiplying through by 4 to simplify:</p>\n\n<p>\n\n<p>$$ x (\\sqrt{6} + \\sqrt{2}) + y (\\sqrt{6} - \\sqrt{2}) = 16 $$</p>\n\n</p>\n\n<p>To find the intercepts, we set $ y = 0 $ for the x-intercept and $ x = 0 $ for the y-intercept.</p>\n\n<p>For the x-intercept:</p>\n\n<p>\n\n<p>$$ x (\\sqrt{6} + \\sqrt{2}) = 16 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ x = \\frac{16}{\\sqrt{6} + \\sqrt{2}} $$</p>\n\n</p>\n\n<p>For the y-intercept:</p>\n\n<p>\n\n<p>$$ y (\\sqrt{6} - \\sqrt{2}) = 16 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ y = \\frac{16}{\\sqrt{6} - \\sqrt{2}} $$</p>\n\n</p>\n\n<p>The sum of the intercepts is:</p>\n\n<p>\n\n<p>$$ \\frac{16}{\\sqrt{6} + \\sqrt{2}} + \\frac{16}{\\sqrt{6} - \\sqrt{2}} $$</p>\n\n</p>\n\n<p>We can simplify using the property of conjugates:</p>\n\n<p>\n\n<p>$$ \\frac{16(\\sqrt{6} - \\sqrt{2}) + 16(\\sqrt{6} + \\sqrt{2})}{(\\sqrt{6} + \\sqrt{2})(\\sqrt{6} - \\sqrt{2})} $$</p>\n\n</p>\n\n<p>\n\n<p>$$ \\frac{16\\sqrt{6} - 16\\sqrt{2} + 16\\sqrt{6} + 16\\sqrt{2}}{6 - 2} $$</p>\n\n</p>\n\n<p>\n\n<p>$$ \\frac{32\\sqrt{6}}{4} = 8\\sqrt{6} $$</p>\n\n</p>\n\n<p>Therefore, the sum of the intercepts is:\n\n<p>Option C: $ 8\\sqrt{6} $</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tllxlrvuo2",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "For&nbsp;what values&nbsp;of k is the line&nbsp;(k - 3)x - (5 - k<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">2</span>) y + k<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">2&nbsp;</span>- 7k + 6 = 0 parallel&nbsp;to the line x + y = 1?",
+      "options": [
+        "-1, 1",
+        "-1, 2",
+        "1, -2",
+        "2, -2"
+      ],
+      "correctOption": 1,
+      "solution": "<p>When two lines are parallel, their coefficients must satisfy the following ratio:</p>\n\n<p>$\\frac{a_1}{a_2} = \\frac{b_1}{b_2}$</p>\n\n<p><strong>Calculation:</strong></p>\n\n<p>The equations of the lines are:</p>\n\n<p>$(k - 3)x - (5 - k^2)y + k^2 - 7k + 6 = 0$ &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;-----(1)</p>\n\n<p>$x + y - 1 = 0$ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-----(2)</p>\n\n<p>By comparing the coefficients, we have:</p>\n\n<p>$a_1 = k - 3$, $b_1 = -(5 - k^2)$, $a_2 = 1$, $b_2 = 1$</p>\n\n<p>Using the concept of parallel lines, we get:</p>\n\n<p>$\\frac{k - 3}{1} = \\frac{k^2 - 5}{1}$</p>\n\n<p>Solving the equation:</p>\n\n<p>$k - 3 = k^2 - 5$</p>\n\n<p>$k^2 - k - 2 = 0$</p>\n\n<p>Factorizing the quadratic equation, we get:</p>\n\n<p>$(k - 2)(k + 1) = 0$</p>\n\n<p>Solving for $k$:</p>\n\n<p>$k = 2$ or $k = -1$</p>\n\n<p><strong>Therefore, the correct answer is option B: -1, 2.</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    },
+    {
+      "id": "tllz3lnt38",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "A straight line passes through the point of intersection of x + 2y + 2 = 0 and 2x - 3y - 3 = 0. It cuts equal intercepts in the fourth quadrant. What is the sum of the absolute values of the intercepts?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correctOption": 0,
+      "solution": "<p>Let’s solve the problem step by step.</p>\n\n<p>We start by finding the point of intersection of the given lines:</p>\n\n<p>$$x + 2y + 2 = 0 \\quad \\text{(1)}$$</p>\n\n<p>$$2x - 3y - 3 = 0 \\quad \\text{(2)}$$</p>\n\n<p>To find the intersection point, we can solve these simultaneous equations.</p>\n\n<p>Multiply equation (1) by 2:</p>\n\n<p>$$2(x + 2y + 2) = 0$$</p>\n\n<p>$$2x + 4y + 4 = 0 \\quad \\text{(3)}$$</p>\n\n<p>Now we have:</p>\n\n<p>$$2x + 4y + 4 = 0 \\quad \\text{(3)}$$</p>\n\n<p>$$2x - 3y - 3 = 0 \\quad \\text{(2)}$$</p>\n\n<p>Subtract equation (2) from (3):</p>\n\n<p>$$ (2x + 4y + 4) - (2x - 3y - 3) = 0$$</p>\n\n<p>$$ 2x + 4y + 4 - 2x + 3y + 3 = 0$$</p>\n\n<p>$$ 7y + 7 = 0$$</p>\n\n<p>$$ y = -1 $$</p>\n\n<p>Substitute $ y = -1 $ back into equation (1):</p>\n\n<p>$$ x + 2(-1) + 2 = 0$$</p>\n\n<p>$$ x - 2 + 2 = 0$$</p>\n\n<p>$$ x = 0$$</p>\n\n<p>So, the point of intersection is $ (0, -1) $.</p>\n\n<p>Next, we need to determine the equation of the line that passes through this point and cuts equal intercepts in the fourth quadrant. The general form of a line cutting intercepts on the coordinate axes is:</p>\n\n<p>$$ \\frac{x}{a} + \\frac{y}{b} = 1 $$</p>\n\n<p>If the intercepts are equal (let's call them $ c $), then:</p>\n\n<p>$$ a = -c \\ \\text{and} \\ b = -c $$</p>\n\n<p>Thus, the equation becomes:</p>\n\n<p>$$ \\frac{x}{c} + \\frac{y}{c} = 1 $$</p>\n\n<p>$$ \\frac{x + y}{c} = 1 $$</p>\n\n<p>$$ x + y = c $$</p>\n\n<p>We know that the line passes through point $ (0, -1) $, so substitute these coordinates into the equation:</p>\n\n<p>$$0 + (-1) = c$$</p>\n\n<p>$$ c = -1 $$</p>\n\n<p>The equation of the line is:</p>\n\n<p>$$ x + y = -1 $$</p>\n\n<p>The x-intercept is found by setting $ y = 0 $:</p>\n\n<p>$$ x + 0 = -1 $$</p>\n\n<p>$$ x = -1 $$</p>\n\n<p>The y-intercept is found by setting $ x = 0 $:</p>\n\n<p>$$ 0 + y = -1 $$</p>\n\n<p>$$ y = -1 $$</p>\n\n<p>The absolute values of the intercepts are:</p>\n\n<p>$$ \\left| -1 \\right| = 1 $$</p>\n\n<p>Since the intercepts are equal, the sum of the absolute values is:</p>\n\n<p>$$ 1 + 1 = 2 $$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option A: 2</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Straight Line"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "mauvk0p1",
+    "questionNumber": 43,
+    "questionText": "<p>Let <b>α</b> and <b>β</b> be the real numbers such that</p>\n<p>$ \\lim\\limits_{x \\to 0} \\frac{1}{x^3} \\left( \\frac{\\alpha}{2} \\int\\limits_0^x \\frac{1}{1-t^2} \\, dt + \\beta x \\cos x \\right) = 2. $</p>\n<p>Then the value of <b>α + β</b> is ___________.</p>",
+    "options": [],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "NUMERICAL",
+    "marks": 4,
+    "negativeMarks": 0,
+    "subject": "Mathematics",
+    "topic": "existance-of-limits",
+    "difficulty": "hard",
+    "solution": "",
+    "section": "Sec 3",
+    "instruction": "<ul><li>This section contains <b>FOUR (04)</b> questions.</li><li>The answer to each question is a <b>NUMERICAL VALUE</b>.</li><li>For each question, enter the correct numerical value corresponding to the answer in the designated place using the mouse and the on-screen virtual numeric keypad.</li><li>If the numerical value has more than two decimal places, <b>truncate/round-off</b> the value to <b>TWO</b> decimal places.</li><li>Answer to each question will be evaluated according to the following marking scheme:<br><i>Full Marks</i> : +4 If ONLY the correct numerical value is entered in the designated place;<br><i>Zero Marks</i> : 0 In all other cases.</li></ul>",
+    "type": "NUMERICAL"
+  },
+  {
+    "id": "1krrxiqlj",
+    "questionNumber": 83,
+    "questionText": "If $$\\mathop {\\lim }\\limits_{x \\to 0} {{\\alpha x{e^x} - \\beta {{\\log }_e}(1 + x) + \\gamma {x^2}{e^{ - x}}} \\over {x{{\\sin }^2}x}} = 10,\\alpha ,\\beta ,\\gamma  \\in R$$, then the value of $$\\alpha$$ + $$\\beta$$ + $$\\gamma$$ is _____________.",
+    "options": [],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "NUMERICAL",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "existance-of-limits",
+    "difficulty": "medium",
+    "solution": "$$\\mathop {\\lim }\\limits_{x \\to 0} {{\\alpha x\\left( {1 + x + {{{x^2}} \\over x}} \\right) - \\beta \\left( {x - {{{x^2}} \\over 2} + {{{x^3}} \\over 3}} \\right) + \\gamma {x^2}(1 - x)} \\over {{x^3}}}$$<br><br>$$\\mathop {\\lim }\\limits_{x \\to 0} {{x(\\alpha  - \\beta ) + {x^2}\\left( {\\alpha  + {\\beta  \\over 2} + \\gamma } \\right) + {x^3}\\left( {{\\alpha  \\over 2} - {\\beta  \\over 3} - \\gamma } \\right)} \\over {{x^3}}} = 10$$<br><br>For limit to exist<br><br>$$\\alpha  - \\beta  = 0,\\alpha  + {\\beta  \\over 2} + \\gamma  = 0$$$${\\alpha  \\over 2} - {\\beta  \\over 3} - \\gamma  = 10$$ ..... (i)<br><br>$$\\beta  = \\alpha ,\\gamma  =  - 3{\\alpha  \\over 2}$$<br><br>Put in (i)<br><br>$${\\alpha  \\over 2} - {\\alpha  \\over 3} + {{3\\alpha } \\over 2} = 10$$<br><br>$${\\alpha  \\over 6} + {{3\\alpha } \\over 2} = 10 \\Rightarrow {{\\alpha  + 9\\alpha } \\over 6} = 10$$<br><br>$$ \\Rightarrow \\alpha  = 6$$<br><br>$$\\alpha$$ = 6, $$\\beta$$ = 6, $$\\gamma$$ = $$-$$9<br><br>$$\\alpha$$ + $$\\beta$$ + $$\\gamma$$ = 3",
+    "section": "B",
+    "type": "NUMERICAL"
+  },
+  {
+    "id": "wcEtMRsaibecOeOmm3jgy2xukf0x5uc1",
+    "questionNumber": 60,
+    "questionText": "Let [t] denote the greatest integer\n$$ \\le $$ t. If for some\n<br>$$\\lambda $$ $$ \\in $$ R - {1, 0}, $$\\mathop {\\lim }\\limits_{x \\to 0} \\left| {{{1 - x + \\left| x \\right|} \\over {\\lambda  - x + \\left[ x \\right]}}} \\right|$$ = L, then L is\nequal to :",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "$${1 \\over 2}$$"
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "existance-of-limits",
+    "difficulty": "medium",
+    "solution": "Here $$\\mathop {\\lim }\\limits_{x \\to 0} \\left| {{{1 - x + \\left| x \\right|} \\over {\\lambda  - x + [x]}}} \\right| = L$$<br><br>Here L.H.L. $$\\mathop {\\lim }\\limits_{h \\to 0^-} \\left| {{{1 + h + h} \\over {\\lambda  + h - 1}}} \\right| = \\left| {{1 \\over {\\lambda  - 1}}} \\right|$$<br><br>R.H.L. = $$\\mathop {\\lim }\\limits_{h \\to 0^+} \\left| {{{1 - h + h} \\over {\\lambda  + h + 0}}} \\right| = \\left| {{1 \\over \\lambda }} \\right|$$<br><br>$$ \\because $$ Limit exists. Hence L.H.L. = R.H.L.<br><br>$$ \\Rightarrow $$ $$\\left| {\\lambda  - 1} \\right| = \\left| \\lambda  \\right|$$<br><br>$$ \\Rightarrow $$ $$\\lambda  = {1 \\over 2}$$ \n<br><br>$$ \\therefore $$ L = $${1 \\over {\\left| \\lambda  \\right|}}$$ = 2",
+    "section": "A",
+    "type": "SCQ"
+  }
+]

@@ -1,0 +1,1 @@
+const fs = require('fs'); const data = fs.readFileSync('public/blackbook-script.js', 'utf-8'); const match = data.match(/"title"\s*:\s*"([^"]+)"/g); console.log(match ? match.length : 0); if(match) console.log(match.slice(0, 10));

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "m6ulvpm1",
+    "questionNumber": 61,
+    "questionText": "<p>Let $f(x)=\\frac{2^{x+2}+16}{2^{2 x+1}+2^{x+4}+32}$. Then the value of $8\\left(f\\left(\\frac{1}{15}\\right)+f\\left(\\frac{2}{15}\\right)+\\ldots+f\\left(\\frac{59}{15}\\right)\\right)$ is equal to</p>",
+    "options": [
+      "108",
+      "92",
+      "118",
+      "102"
+    ],
+    "correctOption": 2,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "periodic-functions",
+    "difficulty": "medium",
+    "solution": "<p>$$\\begin{aligned}\n& f(x)=\\frac{42^x+16}{2.2^{2 x}+16.2^x+32} \\\\\n& f(x)=\\frac{2\\left(2^x+4\\right)}{2^{2 x}+8.2^x+16} \\\\\n& f(x)=\\frac{2}{2^x+4} \\\\\n& f(4-x)=\\frac{2^x}{2\\left(2^x+4\\right)} \\\\\n& f(x)+f(4-x)=\\frac{1}{2}\n\\end{aligned}$$</p>\n<p>So, $\\quad \\mathrm{f}\\left(\\frac{1}{15}\\right)+\\mathrm{f}\\left(\\frac{59}{15}\\right)=\\frac{1}{2}$</p>\n<p>$$\\begin{aligned}\n& \\text { Similarly }=f\\left(\\frac{29}{15}\\right)+f\\left(\\frac{31}{15}\\right)=\\frac{1}{2} \\\\\n& f\\left(\\frac{30}{15}\\right)=f(2)=\\frac{2}{2^2+4}=\\frac{2}{8}=\\frac{1}{4} \\\\\n& \\Rightarrow 8\\left(29 \\times \\frac{1}{2}+\\frac{1}{4}\\right)\n\\end{aligned}$$</p>\n<p>Ans. 118</p>",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "ppQGcnezfmhpR75Kf71kjzwwqkc",
+    "questionNumber": 49,
+    "questionText": "Let f : [0, 2] $$ \\to $$ R be the function defined by<br><br>$$f(x) = (3 - \\sin (2\\pi x))\\sin \\left( {\\pi x - {\\pi  \\over 4}} \\right) - \\sin \\left( {3\\pi x + {\\pi  \\over 4}} \\right)$$<br><br>If $$\\alpha ,\\,\\beta  \\in [0,2]$$ are such that $$\\{ x \\in [0,2]:f(x) \\ge 0\\}  = [\\alpha ,\\beta ]$$, then the value of $$\\beta  - \\alpha $$ is ..........",
+    "options": [],
+    "correctOption": 0,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "periodic-functions",
+    "difficulty": "medium",
+    "solution": "The given function f : [0, 2] $$ \\to $$ R defined by<br><br>$$f(x) = (3 - \\sin (2\\pi x))\\sin \\left( {\\pi x - {\\pi  \\over 4}} \\right) - \\sin \\left( {3\\pi x + {\\pi  \\over 4}} \\right)$$<br><br>$$ = (3 - \\sin (2\\pi x))\\left[ {{{\\sin \\pi x} \\over {\\sqrt 2 }} - {{\\cos \\pi x} \\over {\\sqrt 2 }}} \\right] - \\left\\{ {{{\\sin 3\\pi x} \\over {\\sqrt 2 }} + {{\\cos (3\\pi x)} \\over {\\sqrt 2 }}} \\right\\}$$<br><br>$$ = (3 - \\sin (2\\pi x)){{[\\sin (\\pi x) - \\cos (\\pi x)} \\over {\\sqrt 2 }} - {1 \\over {\\sqrt 2 }}[3\\sin (\\pi x) - 4{\\sin ^3}(\\pi x) + 4{\\cos ^3}(\\pi x) - 3\\cos (\\pi x)]$$<br><br>$$ = {{\\sin (\\pi x) - \\cos (\\pi x)} \\over {\\sqrt 2 }}[3 - \\sin (2\\pi x) - 3 + 4\\{ {\\sin ^2}(\\pi x) + {\\cos ^2}(\\pi x) + \\sin (\\pi x)\\cos (\\pi x)\\} ]$$<br><br>$$ = {{\\sin (\\pi x) - \\cos (\\pi x)} \\over {\\sqrt 2 }}[4 + \\sin (2\\pi x)]$$<br><br>As, $$f(x) \\ge 0\\forall  \\in [\\alpha ,\\beta ]$$, where $$\\alpha ,\\beta  \\in [0,2]$$, so<br><br>$$\\sin (\\pi x) - \\cos (\\pi x) \\ge 0$$<br><br>as $$4 + \\sin (2\\pi x) &gt; 0\\,\\forall x \\in R$$.<br><br>$$ \\Rightarrow \\pi x \\in \\left[ {{\\pi  \\over 4},{{5\\pi } \\over 4}} \\right] \\Rightarrow x \\in \\left[ {{1 \\over 4},{5 \\over 4}} \\right]$$<br><br>$$ \\therefore $$ $$\\alpha  = {1 \\over 4}$$ and $$\\beta  = {5 \\over 4}$$<br><br>Therefore the value of $$(\\beta  - \\alpha ) = 1$$",
+    "section": "Sec 3",
+    "instruction": "",
+    "type": "SUBJECTIVE"
+  },
+  {
+    "id": "bIuxRNjZnQV19sc9",
+    "questionNumber": 176,
+    "questionText": "The period of $${\\sin ^2}\\theta $$ is ",
+    "options": [
+      "$${\\pi ^2}$$ ",
+      "$$\\pi $$  ",
+      "$$2\\pi $$ ",
+      "$$\\pi /2$$ "
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "periodic-functions",
+    "difficulty": "easy",
+    "solution": "The period of $${\\sin ^2}\\theta $$ is = $$\\pi $$\n<br><br><b>Note :</b>\n<br>(1) When $$n$$ is odd then the period of $${\\sin ^n}\\theta $$, $${\\cos ^n}\\theta $$, $${\\csc ^n}\\theta $$, $${\\sec ^n}\\theta $$ = $$2\\pi $$\n<br><br>(2) When $$n$$ is even then the period of $${\\sin ^n}\\theta $$, $${\\cos ^n}\\theta $$, $${\\csc ^n}\\theta $$, $${\\sec ^n}\\theta $$ = $$\\pi $$\n<br><br>(3) When $$n$$ is even/odd then the period of $${\\tan ^n}\\theta $$, $${\\cot ^n}\\theta $$ = $$\\pi $$\n<br><br>(3) When $$n$$ is even/odd then the period of $$\\left| {{{\\sin }^n}\\theta } \\right|$$, $$\\left| {{{\\cos }^n}\\theta } \\right|$$, $$\\left| {{{\\csc }^n}\\theta } \\right|$$, $$\\left| {{{\\sec }^n}\\theta } \\right|$$, $$\\left| {{{\\tan }^n}\\theta } \\right|$$, $$\\left| {{{\\cot }^n}\\theta } \\right|$$ = $$\\pi $$",
+    "section": "A",
+    "type": "SCQ"
+  },
+  {
+    "id": "rGh90lKpMIAeYj89",
+    "questionNumber": 177,
+    "questionText": "Which one is not periodic?",
+    "options": [
+      "$$\\left| {\\sin 3x} \\right| + {\\sin ^2}x$$ ",
+      "$$\\cos \\sqrt x  + {\\cos ^2}x$$ ",
+      "$$\\cos \\,4x + {\\tan ^2}x$$ ",
+      "$$cos\\,2x + \\sin x$$ "
+    ],
+    "correctOption": 1,
+    "correctAnswer": null,
+    "questionType": "MCQ",
+    "marks": 4,
+    "negativeMarks": -1,
+    "subject": "Mathematics",
+    "topic": "periodic-functions",
+    "difficulty": "medium",
+    "solution": "$$\\sqrt x $$ is non periodic function and $$\\cos \\left( {something} \\right)$$ is a periodic function so here in $$\\cos \\sqrt x $$ $$ \\to $$ inside periodic function there is non periodic function which always produce non periodic function.\n<br><br>$${{{\\cos }^2}x}$$ is a periodic function with period $$\\pi $$\n<br><br><b>Note :</b>\n<br>(1) When $$n$$ is odd then the period of $${\\sin ^n}\\theta $$, $${\\cos ^n}\\theta $$, $${\\csc ^n}\\theta $$, $${\\sec ^n}\\theta $$ = $$2\\pi $$\n<br><br>(2) When $$n$$ is even then the period of $${\\sin ^n}\\theta $$, $${\\cos ^n}\\theta $$, $${\\csc ^n}\\theta $$, $${\\sec ^n}\\theta $$ = $$\\pi $$\n<br><br>(3) When $$n$$ is even/odd then the period of $${\\tan ^n}\\theta $$, $${\\cot ^n}\\theta $$ = $$\\pi $$\n<br><br>(3) When $$n$$ is even/odd then the period of $$\\left| {{{\\sin }^n}\\theta } \\right|$$, $$\\left| {{{\\cos }^n}\\theta } \\right|$$, $$\\left| {{{\\csc }^n}\\theta } \\right|$$, $$\\left| {{{\\sec }^n}\\theta } \\right|$$, $$\\left| {{{\\tan }^n}\\theta } \\right|$$, $$\\left| {{{\\cot }^n}\\theta } \\right|$$ = $$\\pi $$\n<br><br>$$\\cos \\sqrt x  + {\\cos ^2}x$$  = non periodic function + periodic function = non periodic function",
+    "section": "A",
+    "type": "SCQ"
+  }
+]
