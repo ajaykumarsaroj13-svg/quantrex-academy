@@ -152,7 +152,9 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
   // ─── Exercise type detection ─────────────────────────────────────────────
   const isMatchingType = activeExercise?.includes('Exercise 4') || activeExercise?.includes('Exercise-4');
   const isSubjective = activeExercise?.includes('Exercise 5') || activeExercise?.includes('Exercise-5');
-  const isMultiCorrect = activeExercise?.includes('Exercise 2') || activeExercise?.includes('Exercise-2');
+  
+  const t = (question?.type || question?.questionType || '').toUpperCase().trim();
+  const isMultiCorrect = activeExercise?.includes('Exercise 2') || activeExercise?.includes('Exercise-2') || t === 'MULTI_CORRECT' || t === 'MULTIPLE_CORRECT' || t === 'MCQM';
 
   // ─── Persist progress ────────────────────────────────────────────────────
   useEffect(() => {
@@ -543,6 +545,9 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
                     {question.typeLabel}
                   </span>
                 )}
+                {isMultiCorrect && <span className="px-2 py-0.5 bg-purple-100 text-purple-800 text-[11px] font-bold rounded border border-purple-200">[MULTI CORRECT]</span>}
+                {!isMultiCorrect && !isMatchingType && !isSubjective && question?.type !== 'NUMERICAL' && question?.type !== 'numerical' && <span className="px-2 py-0.5 bg-blue-100 text-blue-800 text-[11px] font-bold rounded border border-blue-200">[SINGLE CORRECT]</span>}
+                {(question?.type === 'NUMERICAL' || question?.type === 'numerical') && <span className="px-2 py-0.5 bg-orange-100 text-orange-800 text-[11px] font-bold rounded border border-orange-200">[NUMERICAL]</span>}
                 {isMatchingType && (
                   <span className="px-2 py-0.5 bg-purple-50 text-purple-700 text-[11px] font-bold rounded border border-purple-200">
                     Matching Type

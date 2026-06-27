@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -104,7 +104,7 @@
   body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
     font-size: 0.9375rem;   /* 15px */
     line-height: 1.65;
     letter-spacing: 0.01em;
@@ -125,7 +125,7 @@
   h4 { font-size: clamp(1rem, 1.5vw, 1.25rem); font-weight: 600; }
 
   p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
     color: var(--text-secondary);
     line-height: 1.75;
   }
@@ -340,7 +340,7 @@ html.light .bg-white\/5 { background-color: rgba(0,0,0,0.05) !important; border-
   border: 1px solid #d1d9e6;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2c3e50;
   transition: all 0.3s ease;
 }
@@ -383,7 +383,7 @@ html.light .bg-white\/5 { background-color: rgba(0,0,0,0.05) !important; border-
 .nta-section-instruction {
   color: #111827 !important;
   line-height: 1.6;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .nta-section-instruction ul {
   margin-top: 8px;
@@ -484,7 +484,7 @@ html.light .bg-white\/5 { background-color: rgba(0,0,0,0.05) !important; border-
 
 /* Normalize ExamGoal HTML Content */
 .exam-math-content *, .dashboard-preview-html * {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
   background-color: transparent !important;
 }
 
@@ -505,7 +505,7 @@ html.light .bg-white\/5 { background-color: rgba(0,0,0,0.05) !important; border-
 .nta-q-content :not(mjx-container):not(mjx-container *),
 .nta-option-text :not(mjx-container):not(mjx-container *) {
   color: inherit !important;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
   background-color: transparent !important;
 }
 
@@ -522,6 +522,11 @@ mjx-container svg {
 }
 
 .math-renderer { white-space: pre-wrap; }
+span.inline-exam-p {
+  display: inline !important;
+  margin-right: 0.25rem;
+}
+
 
 /* ================================================================
    SCROLL REVEAL ANIMATIONS
@@ -577,7 +582,7 @@ mjx-container svg {
 .nta-section-instruction {
   color: #111827 !important;
   line-height: 1.6;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .nta-section-instruction ul {
   margin-top: 8px;
@@ -678,7 +683,7 @@ mjx-container svg {
 
 /* Normalize ExamGoal HTML Content */
 .exam-math-content *, .dashboard-preview-html * {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
   background-color: transparent !important;
 }
 
@@ -699,23 +704,10 @@ mjx-container svg {
 .nta-q-content :not(mjx-container):not(mjx-container *),
 .nta-option-text :not(mjx-container):not(mjx-container *) {
   color: inherit !important;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
   background-color: transparent !important;
 }
 
-
-/* Fix MathJax rendering broken by global inherited properties */
-mjx-container, mjx-container * {
-  letter-spacing: normal !important;
-  line-height: normal !important;
-  box-sizing: content-box !important;
-  border-color: currentColor !important;
-}
-mjx-container svg {
-  display: inline !important;
-}
-
-.math-renderer { white-space: pre-wrap; }
 
 /* ================================================================
    SCROLL REVEAL ANIMATIONS

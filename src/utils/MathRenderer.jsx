@@ -51,7 +51,9 @@ function parseMath(text) {
       const mathStr = remaining.slice(2, end);
       parts.push(
         <span key={key++} className="inline-block my-1">
-          <BlockMath math={mathStr} errorColor="#ef4444" />
+          <InlineMath math={`\\displaystyle ${mathStr}`} renderError={(error) => {
+            return <span className="text-red-500 font-mono text-sm" title={error.message}>{mathStr}</span>;
+          }} />
         </span>
       );
       remaining = remaining.slice(end + 2);

@@ -71,6 +71,9 @@ export default function App() {
     if (localStorage.getItem('quantrex_syllabus_v6')) {
       localStorage.removeItem('quantrex_syllabus_v6');
     }
+    if (localStorage.getItem('quantrex_syllabus_v7')) {
+      localStorage.removeItem('quantrex_syllabus_v7');
+    }
     if (localStorage.getItem('quantrex_syllabus_v8')) {
       localStorage.removeItem('quantrex_syllabus_v8');
     }
@@ -80,13 +83,28 @@ export default function App() {
     if (localStorage.getItem('quantrex_syllabus_v10')) {
       localStorage.removeItem('quantrex_syllabus_v10');
     }
-    const saved = localStorage.getItem('quantrex_syllabus_v10');
-    if (saved) { try { return JSON.parse(saved); } catch (e) {} }
+    const saved = localStorage.getItem('quantrex_syllabus_v11');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch (e) {
+        return DEFAULT_SYLLABUS;
+      }
+    }
     return DEFAULT_SYLLABUS;
   });
+
+  // Re-fetch default syllabus on mount if not in localStorage
   useEffect(() => {
+    if (!localStorage.getItem('quantrex_syllabus_v11')) {
+      const def = DEFAULT_SYLLABUS;
+      if (def) {
+        setSyllabus(def);
+        localStorage.setItem('quantrex_syllabus_v11', JSON.stringify(def));
+      }
+    }
     loadDbFromBlob('syllabusData').then(data => {
-      if (data) { setSyllabus(data); localStorage.setItem('quantrex_syllabus_v10', JSON.stringify(data)); }
+      if (data) { setSyllabus(data); localStorage.setItem('quantrex_syllabus_v11', JSON.stringify(data)); }
     });
   }, []);
 

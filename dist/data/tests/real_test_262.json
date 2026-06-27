@@ -1,0 +1,413 @@
+{
+  "id": "real_test_262",
+  "examType": "JEE Advanced",
+  "title": "NDA Mathematics 4 September 2022",
+  "year": "2022",
+  "duration": 180,
+  "totalMarks": 180,
+  "totalQuestions": 18,
+  "isOfficial": true,
+  "questions": [
+    {
+      "id": "tllz3linuv",
+      "questionNumber": 1,
+      "questionText": "<span style=\"\">Under which one of the following conditions does the function f(x) = (p sec x)</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;+ (q cosec x)</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;attain minimum value ?</span>",
+      "options": [
+        "<span style=\"\">tan</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;x =&nbsp;</span><span class=\"math-tex\">$\\frac{q}{p}$</span>",
+        "<span style=\"\">cot</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;x =&nbsp;</span><span class=\"math-tex\">$\\frac{q}{p}$</span>",
+        "<span style=\"\">tan</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;x = pq</span>",
+        "<span style=\"\">cot</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;x = pq</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine the condition under which the function $ f(x) = p \\sec^2 x + q \\csc^2 x $ attains its minimum value, we need to analyze the given function. Let's go through the details step-by-step:</p>\n\n<p>First, recall the trigonometric identities for secant and cosecant:</p>\n\n<p>\n\n<p>$$ \\sec x = \\frac{1}{\\cos x} \\quad \\text{and} \\quad \\csc x = \\frac{1}{\\sin x} $$</p>\n\n</p>\n\n<p>Thus, we have:</p>\n\n<p>\n\n<p>$$ \\sec^2 x = \\frac{1}{\\cos^2 x} \\quad \\text{and} \\quad \\csc^2 x = \\frac{1}{\\sin^2 x} $$</p>\n\n</p>\n\n<p>Now rewrite the function $ f(x) $ as follows:</p>\n\n<p>\n\n<p>$$ f(x) = p \\sec^2 x + q \\csc^2 x = p \\frac{1}{\\cos^2 x} + q \\frac{1}{\\sin^2 x} $$</p>\n\n</p>\n\n<p>We want to find the value of $ x $ at which $ f(x) $ is minimized. To do this, we will use the method of differentiation. We know that:</p>\n\n<p>\n\n<p>$$ \\sec^2 x = 1 + \\tan^2 x \\quad \\text{and} \\quad \\csc^2 x = 1 + \\cot^2 x $$</p>\n\n</p>\n\n<p>Express each term in terms of either $ \\tan x $ or $ \\cot x $. Consider the identity $ \\sin^2 x + \\cos^2 x = 1 $ and combine the given function:</p>\n\n<p>To find the local minima, let's differentiate $ f(x) $ with respect to $ x $ and set the derivative equal to zero:</p>\n\n<p>\n\n<p>$$ \\frac{d}{dx} \\left( p \\sec^2 x + q \\csc^2 x \\right) = 0 $$</p>\n\n</p>\n\n<p>After differentiating and simplifying, the conditions for minimum value will point us towards a relationship that balances the terms. The critical point typically is where:</p>\n\n<p>\n\n<p>$$ \\tan^2 x = \\frac{q}{p} \\quad \\text{or} \\quad \\cot^2 x = \\frac{p}{q} $$</p>\n\n</p>\n\n<p>This simplification indicates that the minimum occurs under these conditions, which translates to:</p>\n\n<p>The condition for the minimum is:</p>\n\n<p>\n\n<p>$$ \\tan^2 x = \\frac{q}{p} $$</p>\n\n</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option A:</strong> $ \\tan^2 x = \\frac{q}{p} $</p>",
+      "section": "Sec 1",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linvi",
+      "questionNumber": 2,
+      "questionText": "<span style=\"\">Where does the function f(x) =&nbsp;</span><span class=\"math-tex\">$\\displaystyle\\sum_{j=1}^7$</span><span style=\"\">(x − j)</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;attain its minimum value ?</span>",
+      "options": [
+        "x = 3.5",
+        "x = 4",
+        "x = 4.5",
+        "x = 5"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine where the function $$f(x) = \\sum_{j=1}^7 (x - j)^2$$ attains its minimum value, we need to expand and analyze the function.</p>\n\n<p>First, let's write the function explicitly:</p>\n\n<p>$$ f(x) = (x - 1)^2 + (x - 2)^2 + (x - 3)^2 + (x - 4)^2 + (x - 5)^2 + (x - 6)^2 + (x - 7)^2 $$</p>\n\n<p>To find the minimum value, we can take the derivative of the function with respect to $ x $ and set it to zero:</p>\n\n<p>$$ f'(x) = 2(x - 1) + 2(x - 2) + 2(x - 3) + 2(x - 4) + 2(x - 5) + 2(x - 6) + 2(x - 7) $$</p>\n\n<p>We can simplify this:</p>\n\n<p>$$ f'(x) = 2[(x - 1) + (x - 2) + (x - 3) + (x - 4) + (x - 5) + (x - 6) + (x - 7)] $$</p>\n\n<p>This sums to:</p>\n\n<p>$$ f'(x) = 2[7x - (1 + 2 + 3 + 4 + 5 + 6 + 7)] $$</p>\n\n<p>Noting that the sum of the first 7 positive integers is:</p>\n\n<p>$$ 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28 $$</p>\n\n<p>Thus:</p>\n\n<p>$$ f'(x) = 2(7x - 28) = 14x - 56 $$</p>\n\n<p>Setting the derivative to zero to find the critical points:</p>\n\n<p>$$ 14x - 56 = 0 $$</p>\n\n<p>Solving for $ x $:</p>\n\n<p>$$ 14x = 56 \\quad \\Rightarrow \\quad x = 4 $$</p>\n\n<p>Hence, the function attains its minimum value at <b>Option B: $ x = 4 $</b>.</p>\n\n<p></p>",
+      "section": "Sec 1",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linsq",
+      "questionNumber": 3,
+      "questionText": "What is the area of the region (in the first quadrant) bounded by y =&nbsp;<span class=\"math-tex\">$\\sqrt{1−\\text{x}^2}$</span>, y = x and y = 0 ?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{\\pi}{4}$</span>",
+        "<span class=\"math-tex\">$\\frac{\\pi}{6}$</span>",
+        "<span class=\"math-tex\">$\\frac{\\pi}{8}$</span>",
+        "<span class=\"math-tex\">$\\frac{\\pi}{12}$</span>"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lz524w21/f8e04a09-5ef9-4844-8f76-f6d912059502/75b97390-4c99-11ef-83ea-f13f3964c046/file-jaoe38c1lz524w22.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lz524w21/f8e04a09-5ef9-4844-8f76-f6d912059502/75b97390-4c99-11ef-83ea-f13f3964c046/file-jaoe38c1lz524w22.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 4 September 2022 Mathematics - Area Under The Curves Question 12 English Explanation\"><p>To find the area of the region in the first quadrant bounded by the curves $ y = \\sqrt{1 - x^2} $, $ y = x $, and $ y = 0 $, we need to determine the points of intersection and set up the appropriate integral.</p>\n\n<p>First, we find the points of intersection of the curves $ y = \\sqrt{1 - x^2} $ and $ y = x $.</p>\n\n<p>Set $ \\sqrt{1 - x^2} = x $. Squaring both sides, we get:</p>\n\n<p>$$ 1 - x^2 = x^2 $$</p>\n\n<p>Solving for $ x $, we get:</p>\n\n<p>$$ 1 = 2x^2 \\implies x^2 = \\frac{1}{2} \\implies x = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2} $$</p>\n\n<p>Therefore, the curves intersect at $ \\left( \\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2} \\right) $.</p>\n\n<p>The desired region is from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $. We divide the area into two parts:</p>\n\n<ul>\n\n<li>The area under $ y = \\sqrt{1 - x^2} $ from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $.</li>\n\n<li>The area under $ y = x $ from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $.</li>\n\n</ul>\n\n<p>The total area can be calculated as the difference of these two integrals:</p>\n\n<p>The area under $ y = \\sqrt{1 - x^2} $ from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $:</p>\n\n<p>$$ \\text{Area}_1 = \\int_0^{\\frac{\\sqrt{2}}{2}} \\sqrt{1 - x^2} \\, dx $$</p>\n\n<p>The area under $ y = x $ from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $:</p>\n\n<p>$$ \\text{Area}_2 = \\int_0^{\\frac{\\sqrt{2}}{2}} x \\, dx $$</p>\n\n<p>Using the integral method, we find:</p>\n\n<p>For $ \\text{Area}_1 $, we use the substitution $ x = \\sin \\theta $, $ dx = \\cos \\theta \\, d\\theta $, and the limits change from $ x=0 $ to $ x=\\frac{\\sqrt{2}}{2} $ which means $ \\theta $ ranges from $ 0 $ to $ \\frac{\\pi}{4} $:</p>\n\n<p>$$ \\int_0^{\\frac{\\sqrt{2}}{2}} \\sqrt{1 - x^2} \\, dx = \\int_0^{\\frac{\\pi}{4}} \\cos^2 \\theta \\, d\\theta $$</p>\n\n<p>Using the identity $ \\cos^2 \\theta = \\frac{1 + \\cos 2\\theta}{2} $, the integral becomes:</p>\n\n<p>$$ \\int_0^{\\frac{\\pi}{4}} \\cos^2 \\theta \\, d\\theta = \\int_0^{\\frac{\\pi}{4}} \\frac{1 + \\cos 2\\theta}{2} \\, d\\theta $$</p>\n\n<p>Evaluating this integral, we get:</p>\n\n<p>$$ \\int_0^{\\frac{\\pi}{4}} \\frac{1 + \\cos 2\\theta}{2} \\, d\\theta = \\left[ \\frac{\\theta}{2} + \\frac{\\sin 2\\theta}{4} \\right]_0^{\\frac{\\pi}{4}} = \\frac{\\pi}{8} + \\frac{0}{4} = \\frac{\\pi}{8} $$</p>\n\n<p>Similarly, calculating $ \\text{Area}_2 $:</p>\n\n<p>$$ \\int_0^{\\frac{\\sqrt{2}}{2}} x \\, dx = \\left[ \\frac{x^2}{2} \\right]_0^{\\frac{\\sqrt{2}}{2}} = \\frac{ \\left( \\frac{\\sqrt{2}}{2} \\right)^2 }{2} = \\frac{1}{4} $$</p>\n\n<p>The area of the region bounded by the curves in the first quadrant is:</p>\n\n<p>$$ \\text{Area} = \\text{Area}_1 - \\text{Area}_2 = \\frac{\\pi}{8} - \\frac{1}{4} = \\frac{\\pi}{8} - \\frac{2}{8} = \\frac{\\pi - 2}{8} $$</p>\n\n<p>Thus, the appropriate multiple choice option that matches this result is:</p>\n\n<p>Option C: $ \\frac{\\pi}{8} $</p>",
+      "section": "Sec 1",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linsx",
+      "questionNumber": 4,
+      "questionText": "What is the area of the region bounded by x − |y| = 0 and x − 2 = 0 ?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lz521ne9/d8452805-8d1d-45f9-938f-62930f841397/1b9b6210-4c99-11ef-83ea-f13f3964c046/file-jaoe38c1lz521nea.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lz521ne9/d8452805-8d1d-45f9-938f-62930f841397/1b9b6210-4c99-11ef-83ea-f13f3964c046/file-jaoe38c1lz521nea.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 4 September 2022 Mathematics - Area Under The Curves Question 11 English Explanation\">\n<p>To determine the area of the region bounded by the lines $ x - |y| = 0 $ and $ x - 2 = 0 $, we'll first analyze these equations and then find the enclosed area.</p>\n\n<p>The equation $ x - |y| = 0 $ can be written as:</p>\n\n<p>$$ x = |y| $$</p>\n\n<p>This equation represents two lines, $ x = y $ and $ x = -y $. These lines form a 'V' shape on the coordinate plane, with the vertex at the origin $(0,0)$.</p>\n\n<p>The equation $ x - 2 = 0 $ simply represents the vertical line:</p>\n\n<p>$$ x = 2 $$</p>\n\n<p>Let's visualize these lines on a coordinate plane:</p>\n\n<ul>\n\n<li>Line 1: $ x = y $</li>\n\n<li>Line 2: $ x = -y $</li>\n\n<li>Line 3: $ x = 2 $</li>\n\n</ul>\n\n<p>The region of interest is bounded by these lines, forming a triangle between the origin $(0,0)$, the point where $ x = y $ intersects $ x = 2 $ (i.e., $(2,2)$), and the point where $ x = -y $ intersects $ x = 2 $ (i.e., $(2,-2)$).</p>\n\n<p>To find the area of this triangular region, we use the formula for the area of a triangle:</p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\cdot \\text{base} \\cdot \\text{height} $$</p>\n\n<p>The base of the triangle is the vertical distance between the points $(2,2)$ and $ (2,-2) $, which is:</p>\n\n<p>$$ 2 - (-2) = 4 $$</p>\n\n<p>The height is the horizontal distance from the origin $(0,0)$ to the line $ x = 2 $, which is:</p>\n\n<p>$$ 2 $$</p>\n\n<p>Therefore, the area is:</p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\cdot 4 \\cdot 2 = 4 $$</p>\n\n<p>Thus, the area of the region bounded by the given lines is:</p>\n\n<p>Option C: 4</p>",
+      "section": "Sec 1",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linx2",
+      "questionNumber": 5,
+      "questionText": "<span style=\"\">What is the area of the region enclosed in the first quadrant by x</span><sup>2</sup><span style=\"\">&nbsp;+ y</span><sup>2</sup><span style=\"\">&nbsp;= π</span><sup>2</sup><span style=\"\">, y = sin x and x = 0 ?</span>",
+      "options": [
+        "<span class=\"math-tex\">$​\\frac{\\pi^3}{4}$</span>&nbsp;− 1",
+        "<span class=\"math-tex\">$​\\frac{\\pi^3}{4}$</span>&nbsp;− 2",
+        "<span class=\"math-tex\">$​\\frac{\\pi^3}{2}$</span>&nbsp;− 1",
+        "<span class=\"math-tex\">$​\\frac{\\pi^2}{4}$</span>&nbsp;− 2"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the area of the region enclosed in the first quadrant by the given curves $x^2 + y^2 = \\pi^2$, $y = \\sin x$, and $x = 0$, we need to take the following steps:</p>\n\n<ol>\n\n<li>Determine the limits of integration</li>\n\n<li>Calculate the area under $y = \\sin x$ from $x=0$ to $x=\\pi$</li>\n\n<li>Calculate the area of the circle segment from $x=0$ to $x=\\pi$</li>\n\n<li>Subtract the two areas to find the enclosed region</li>\n\n</ol>\n\n<p>First, observe that $x^2 + y^2 = \\pi^2$ is a circle centered at the origin with radius $\\pi$. In the first quadrant, the limits of integration for $x$ range from 0 to $\\pi$.</p>\n\n<p>We start by calculating the area under the curve $y = \\sin x$ from $x = 0$ to $x = \\pi$. The integral for this area $A_{\\text{sin}}$ is:</p>\n\n<p>$$ A_{\\text{sin}} = \\int_0^{\\pi} \\sin x \\, dx $$</p>\n\n<p>Solving this integral, we have:</p>\n\n<p>$$ A_{\\text{sin}} = [-\\cos x]_0^{\\pi} = -\\cos(\\pi) - (-\\cos(0)) = -(-1) - (-1) = 2 $$</p>\n\n<p>Next, we calculate the area of the quarter circle from $x=0$ to $x=\\pi$ in the first quadrant. The area $A_{\\text{circle}}$ is:</p>\n\n<p>$$ A_{\\text{circle}} = \\frac{1}{4} \\times \\pi \\times (\\pi^2) = \\frac{\\pi^3}{4} $$</p>\n\n<p>Therefore, to find the desired area, we subtract the area under $y = \\sin x$ from the area of the quarter circle:</p>\n\n<p>$$ A_{\\text{enclosed}} = A_{\\text{circle}} - A_{\\text{sin}} = \\frac{\\pi^3}{4} - 2 $$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option B <span class=\"math-tex\">$$\\frac{\\pi^3}{4} - 2$$</span></p>",
+      "section": "Sec 1",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3lin5k",
+      "questionNumber": 6,
+      "questionText": "<span style=\"\">What is&nbsp;</span><span class=\"math-tex\">$\\displaystyle\\sum_{r=0}^n$</span><span style=\"\">2</span><sup>r&nbsp;</sup><span style=\"\">C(n, r) equal to ?</span>",
+      "options": [
+        "<span style=\"\">2</span><sup>n</sup>",
+        "<span style=\"\">3</span><sup>n</sup>",
+        "<span style=\"\">2</span><sup>2n</sup>",
+        "<span style=\"\">3</span><sup>2n</sup>"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>The given expression is:</p>\n\n<p>$$\\sum_{r=0}^n 2^r \\binom{n}{r}$$</p>\n\n<p>To find the value of this sum, we can use the binomial theorem. The binomial theorem states that:</p>\n\n<p>$$ (x + y)^n = \\sum_{r=0}^n \\binom{n}{r} x^{n-r} y^r $$</p>\n\n<p>We can compare this with our given expression by setting $ x = 1 $ and $ y = 2 $, so our sum becomes:</p>\n\n<p>$$ (1 + 2)^n = \\sum_{r=0}^n \\binom{n}{r} 1^{n-r} 2^r $$</p>\n\n<p>Simplifying $1^{n-r}$ to 1, we get:</p>\n\n<p>$$ (1 + 2)^n = \\sum_{r=0}^n \\binom{n}{r} 2^r $$</p>\n\n<p>Therefore, the sum is equal to:</p>\n\n<p>$$ 3^n $$</p>\n\n<p>So, the correct answer is:</p>\n\n<p>Option B</p>\n\n<p><span style=\"\">3</span><sup>n</sup></p>",
+      "section": "Sec 1",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linbd",
+      "questionNumber": 7,
+      "questionText": "<p style=\"\">What is the value of q if the coefficients of x<span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">3</span>&nbsp;and x<span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">6</span>&nbsp;are equal ?</p>\n",
+      "options": [
+        "p",
+        "9p",
+        "<span class=\"math-tex\">$\\frac{1}{\\text{p}}$</span>",
+        "<span style=\"\">p</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<ol>\n<li><p>General term of the expansion of $(p + qx)^9$:  </p>\n<p>$$T_{r+1} = \\binom{9}{r}\\,p^{9-r}\\,(q x)^r = \\binom{9}{r}\\,p^{9-r}\\,q^r\\,x^r.$$  </p></li>\n<li><p>Coefficient of $x^3$ (take $r=3$):  </p>\n<p>$$a_3 = \\binom{9}{3}\\,p^{9-3}\\,q^3 = \\binom{9}{3}\\,p^6\\,q^3.$$  </p></li>\n<li><p>Coefficient of $x^6$ (take $r=6$):  </p>\n<p>$$a_6 = \\binom{9}{6}\\,p^{9-6}\\,q^6 = \\binom{9}{6}\\,p^3\\,q^6.$$  </p></li>\n<li><p>Equate $a_3$ and $a_6$:  </p>\n<p>$$\\binom{9}{3}\\,p^6\\,q^3 \\;=\\;\\binom{9}{6}\\,p^3\\,q^6.$$  </p>\n<p>Since $\\binom{9}{3} = \\binom{9}{6}$ and assuming $p,q\\neq0$, divide both sides by $\\binom{9}{3}\\,p^3\\,q^3$:  </p>\n<p>$$p^3 = q^3 \\quad\\Longrightarrow\\quad q = p.$$</p></li>\n</ol>\n<p>Answer: q = p.</p>",
+      "section": "Sec 1",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linbv",
+      "questionNumber": 8,
+      "questionText": "<p style=\"\">What is the ratio of the coefficients of middle terms in the expansion (when expanded in ascending powers of x)?</p>\n",
+      "options": [
+        "<span style=\"\">pq</span>",
+        "p/q",
+        "4p/5q",
+        "1/(pq)"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<ol>\n<li><p>Number of terms in $(p+qx)^9$  </p>\n<p>Total terms = $9+1=10$ (even), so there are two middle terms (5th and 6th).</p></li>\n<li><p>General term (ascending powers of $x$):  </p>\n<p>$      T_{r+1} = \\binom{9}{r}\\,p^{9-r}\\,(qx)^r,      \\quad\\text{for }r=0,1,\\dots,9.    $  </p>\n<p>Coefficient of $x^r$ is $\\displaystyle \\binom{9}{r}p^{9-r}q^r$.</p></li>\n<li><p>Middle terms correspond to $r=4$ and $r=5$:  </p>\n<p>$      C_4 = \\binom{9}{4}p^{9-4}q^4 = \\binom{9}{4}p^5q^4,      \\quad      C_5 = \\binom{9}{5}p^{9-5}q^5 = \\binom{9}{5}p^4q^5.    $</p></li>\n<li><p>Compute $\\binom{9}{4}$ and $\\binom{9}{5}$:  </p>\n<p>$\\displaystyle \\binom{9}{4}=\\binom{9}{5}=126$.  </p>\n<p>Hence</p>\n<p>$      C_4 = 126\\,p^5q^4,\\quad      C_5 = 126\\,p^4q^5.    $</p></li>\n<li><p>Ratio of the two middle coefficients  </p>\n<p>$      \\frac{C_4}{C_5}      = \\frac{126\\,p^5q^4}{126\\,p^4q^5}      = \\frac{p^5}{p^4}\\,\\frac{q^4}{q^5}      = \\frac{p}{q}.    $</p></li>\n</ol>\n<p>Answer: Option B, $\\displaystyle \\frac{p}{q}$.</p>",
+      "section": "Sec 1",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linuv",
+      "questionNumber": 9,
+      "questionText": "<span style=\"\">Under which one of the following conditions does the function f(x) = (p sec x)</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;+ (q cosec x)</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;attain minimum value ?</span>",
+      "options": [
+        "<span style=\"\">tan</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;x =&nbsp;</span><span class=\"math-tex\">$\\frac{q}{p}$</span>",
+        "<span style=\"\">cot</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;x =&nbsp;</span><span class=\"math-tex\">$\\frac{q}{p}$</span>",
+        "<span style=\"\">tan</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;x = pq</span>",
+        "<span style=\"\">cot</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;x = pq</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine the condition under which the function $ f(x) = p \\sec^2 x + q \\csc^2 x $ attains its minimum value, we need to analyze the given function. Let's go through the details step-by-step:</p>\n\n<p>First, recall the trigonometric identities for secant and cosecant:</p>\n\n<p>\n\n<p>$$ \\sec x = \\frac{1}{\\cos x} \\quad \\text{and} \\quad \\csc x = \\frac{1}{\\sin x} $$</p>\n\n</p>\n\n<p>Thus, we have:</p>\n\n<p>\n\n<p>$$ \\sec^2 x = \\frac{1}{\\cos^2 x} \\quad \\text{and} \\quad \\csc^2 x = \\frac{1}{\\sin^2 x} $$</p>\n\n</p>\n\n<p>Now rewrite the function $ f(x) $ as follows:</p>\n\n<p>\n\n<p>$$ f(x) = p \\sec^2 x + q \\csc^2 x = p \\frac{1}{\\cos^2 x} + q \\frac{1}{\\sin^2 x} $$</p>\n\n</p>\n\n<p>We want to find the value of $ x $ at which $ f(x) $ is minimized. To do this, we will use the method of differentiation. We know that:</p>\n\n<p>\n\n<p>$$ \\sec^2 x = 1 + \\tan^2 x \\quad \\text{and} \\quad \\csc^2 x = 1 + \\cot^2 x $$</p>\n\n</p>\n\n<p>Express each term in terms of either $ \\tan x $ or $ \\cot x $. Consider the identity $ \\sin^2 x + \\cos^2 x = 1 $ and combine the given function:</p>\n\n<p>To find the local minima, let's differentiate $ f(x) $ with respect to $ x $ and set the derivative equal to zero:</p>\n\n<p>\n\n<p>$$ \\frac{d}{dx} \\left( p \\sec^2 x + q \\csc^2 x \\right) = 0 $$</p>\n\n</p>\n\n<p>After differentiating and simplifying, the conditions for minimum value will point us towards a relationship that balances the terms. The critical point typically is where:</p>\n\n<p>\n\n<p>$$ \\tan^2 x = \\frac{q}{p} \\quad \\text{or} \\quad \\cot^2 x = \\frac{p}{q} $$</p>\n\n</p>\n\n<p>This simplification indicates that the minimum occurs under these conditions, which translates to:</p>\n\n<p>The condition for the minimum is:</p>\n\n<p>\n\n<p>$$ \\tan^2 x = \\frac{q}{p} $$</p>\n\n</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option A:</strong> $ \\tan^2 x = \\frac{q}{p} $</p>",
+      "section": "Sec 2",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linvi",
+      "questionNumber": 10,
+      "questionText": "<span style=\"\">Where does the function f(x) =&nbsp;</span><span class=\"math-tex\">$\\displaystyle\\sum_{j=1}^7$</span><span style=\"\">(x − j)</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;attain its minimum value ?</span>",
+      "options": [
+        "x = 3.5",
+        "x = 4",
+        "x = 4.5",
+        "x = 5"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine where the function $$f(x) = \\sum_{j=1}^7 (x - j)^2$$ attains its minimum value, we need to expand and analyze the function.</p>\n\n<p>First, let's write the function explicitly:</p>\n\n<p>$$ f(x) = (x - 1)^2 + (x - 2)^2 + (x - 3)^2 + (x - 4)^2 + (x - 5)^2 + (x - 6)^2 + (x - 7)^2 $$</p>\n\n<p>To find the minimum value, we can take the derivative of the function with respect to $ x $ and set it to zero:</p>\n\n<p>$$ f'(x) = 2(x - 1) + 2(x - 2) + 2(x - 3) + 2(x - 4) + 2(x - 5) + 2(x - 6) + 2(x - 7) $$</p>\n\n<p>We can simplify this:</p>\n\n<p>$$ f'(x) = 2[(x - 1) + (x - 2) + (x - 3) + (x - 4) + (x - 5) + (x - 6) + (x - 7)] $$</p>\n\n<p>This sums to:</p>\n\n<p>$$ f'(x) = 2[7x - (1 + 2 + 3 + 4 + 5 + 6 + 7)] $$</p>\n\n<p>Noting that the sum of the first 7 positive integers is:</p>\n\n<p>$$ 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28 $$</p>\n\n<p>Thus:</p>\n\n<p>$$ f'(x) = 2(7x - 28) = 14x - 56 $$</p>\n\n<p>Setting the derivative to zero to find the critical points:</p>\n\n<p>$$ 14x - 56 = 0 $$</p>\n\n<p>Solving for $ x $:</p>\n\n<p>$$ 14x = 56 \\quad \\Rightarrow \\quad x = 4 $$</p>\n\n<p>Hence, the function attains its minimum value at <b>Option B: $ x = 4 $</b>.</p>\n\n<p></p>",
+      "section": "Sec 2",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linsq",
+      "questionNumber": 11,
+      "questionText": "What is the area of the region (in the first quadrant) bounded by y =&nbsp;<span class=\"math-tex\">$\\sqrt{1−\\text{x}^2}$</span>, y = x and y = 0 ?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{\\pi}{4}$</span>",
+        "<span class=\"math-tex\">$\\frac{\\pi}{6}$</span>",
+        "<span class=\"math-tex\">$\\frac{\\pi}{8}$</span>",
+        "<span class=\"math-tex\">$\\frac{\\pi}{12}$</span>"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lz524w21/f8e04a09-5ef9-4844-8f76-f6d912059502/75b97390-4c99-11ef-83ea-f13f3964c046/file-jaoe38c1lz524w22.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lz524w21/f8e04a09-5ef9-4844-8f76-f6d912059502/75b97390-4c99-11ef-83ea-f13f3964c046/file-jaoe38c1lz524w22.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 4 September 2022 Mathematics - Area Under The Curves Question 12 English Explanation\"><p>To find the area of the region in the first quadrant bounded by the curves $ y = \\sqrt{1 - x^2} $, $ y = x $, and $ y = 0 $, we need to determine the points of intersection and set up the appropriate integral.</p>\n\n<p>First, we find the points of intersection of the curves $ y = \\sqrt{1 - x^2} $ and $ y = x $.</p>\n\n<p>Set $ \\sqrt{1 - x^2} = x $. Squaring both sides, we get:</p>\n\n<p>$$ 1 - x^2 = x^2 $$</p>\n\n<p>Solving for $ x $, we get:</p>\n\n<p>$$ 1 = 2x^2 \\implies x^2 = \\frac{1}{2} \\implies x = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2} $$</p>\n\n<p>Therefore, the curves intersect at $ \\left( \\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2} \\right) $.</p>\n\n<p>The desired region is from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $. We divide the area into two parts:</p>\n\n<ul>\n\n<li>The area under $ y = \\sqrt{1 - x^2} $ from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $.</li>\n\n<li>The area under $ y = x $ from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $.</li>\n\n</ul>\n\n<p>The total area can be calculated as the difference of these two integrals:</p>\n\n<p>The area under $ y = \\sqrt{1 - x^2} $ from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $:</p>\n\n<p>$$ \\text{Area}_1 = \\int_0^{\\frac{\\sqrt{2}}{2}} \\sqrt{1 - x^2} \\, dx $$</p>\n\n<p>The area under $ y = x $ from $ x = 0 $ to $ x = \\frac{\\sqrt{2}}{2} $:</p>\n\n<p>$$ \\text{Area}_2 = \\int_0^{\\frac{\\sqrt{2}}{2}} x \\, dx $$</p>\n\n<p>Using the integral method, we find:</p>\n\n<p>For $ \\text{Area}_1 $, we use the substitution $ x = \\sin \\theta $, $ dx = \\cos \\theta \\, d\\theta $, and the limits change from $ x=0 $ to $ x=\\frac{\\sqrt{2}}{2} $ which means $ \\theta $ ranges from $ 0 $ to $ \\frac{\\pi}{4} $:</p>\n\n<p>$$ \\int_0^{\\frac{\\sqrt{2}}{2}} \\sqrt{1 - x^2} \\, dx = \\int_0^{\\frac{\\pi}{4}} \\cos^2 \\theta \\, d\\theta $$</p>\n\n<p>Using the identity $ \\cos^2 \\theta = \\frac{1 + \\cos 2\\theta}{2} $, the integral becomes:</p>\n\n<p>$$ \\int_0^{\\frac{\\pi}{4}} \\cos^2 \\theta \\, d\\theta = \\int_0^{\\frac{\\pi}{4}} \\frac{1 + \\cos 2\\theta}{2} \\, d\\theta $$</p>\n\n<p>Evaluating this integral, we get:</p>\n\n<p>$$ \\int_0^{\\frac{\\pi}{4}} \\frac{1 + \\cos 2\\theta}{2} \\, d\\theta = \\left[ \\frac{\\theta}{2} + \\frac{\\sin 2\\theta}{4} \\right]_0^{\\frac{\\pi}{4}} = \\frac{\\pi}{8} + \\frac{0}{4} = \\frac{\\pi}{8} $$</p>\n\n<p>Similarly, calculating $ \\text{Area}_2 $:</p>\n\n<p>$$ \\int_0^{\\frac{\\sqrt{2}}{2}} x \\, dx = \\left[ \\frac{x^2}{2} \\right]_0^{\\frac{\\sqrt{2}}{2}} = \\frac{ \\left( \\frac{\\sqrt{2}}{2} \\right)^2 }{2} = \\frac{1}{4} $$</p>\n\n<p>The area of the region bounded by the curves in the first quadrant is:</p>\n\n<p>$$ \\text{Area} = \\text{Area}_1 - \\text{Area}_2 = \\frac{\\pi}{8} - \\frac{1}{4} = \\frac{\\pi}{8} - \\frac{2}{8} = \\frac{\\pi - 2}{8} $$</p>\n\n<p>Thus, the appropriate multiple choice option that matches this result is:</p>\n\n<p>Option C: $ \\frac{\\pi}{8} $</p>",
+      "section": "Sec 2",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linsx",
+      "questionNumber": 12,
+      "questionText": "What is the area of the region bounded by x − |y| = 0 and x − 2 = 0 ?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lz521ne9/d8452805-8d1d-45f9-938f-62930f841397/1b9b6210-4c99-11ef-83ea-f13f3964c046/file-jaoe38c1lz521nea.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lz521ne9/d8452805-8d1d-45f9-938f-62930f841397/1b9b6210-4c99-11ef-83ea-f13f3964c046/file-jaoe38c1lz521nea.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 4 September 2022 Mathematics - Area Under The Curves Question 11 English Explanation\">\n<p>To determine the area of the region bounded by the lines $ x - |y| = 0 $ and $ x - 2 = 0 $, we'll first analyze these equations and then find the enclosed area.</p>\n\n<p>The equation $ x - |y| = 0 $ can be written as:</p>\n\n<p>$$ x = |y| $$</p>\n\n<p>This equation represents two lines, $ x = y $ and $ x = -y $. These lines form a 'V' shape on the coordinate plane, with the vertex at the origin $(0,0)$.</p>\n\n<p>The equation $ x - 2 = 0 $ simply represents the vertical line:</p>\n\n<p>$$ x = 2 $$</p>\n\n<p>Let's visualize these lines on a coordinate plane:</p>\n\n<ul>\n\n<li>Line 1: $ x = y $</li>\n\n<li>Line 2: $ x = -y $</li>\n\n<li>Line 3: $ x = 2 $</li>\n\n</ul>\n\n<p>The region of interest is bounded by these lines, forming a triangle between the origin $(0,0)$, the point where $ x = y $ intersects $ x = 2 $ (i.e., $(2,2)$), and the point where $ x = -y $ intersects $ x = 2 $ (i.e., $(2,-2)$).</p>\n\n<p>To find the area of this triangular region, we use the formula for the area of a triangle:</p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\cdot \\text{base} \\cdot \\text{height} $$</p>\n\n<p>The base of the triangle is the vertical distance between the points $(2,2)$ and $ (2,-2) $, which is:</p>\n\n<p>$$ 2 - (-2) = 4 $$</p>\n\n<p>The height is the horizontal distance from the origin $(0,0)$ to the line $ x = 2 $, which is:</p>\n\n<p>$$ 2 $$</p>\n\n<p>Therefore, the area is:</p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\cdot 4 \\cdot 2 = 4 $$</p>\n\n<p>Thus, the area of the region bounded by the given lines is:</p>\n\n<p>Option C: 4</p>",
+      "section": "Sec 2",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linx2",
+      "questionNumber": 13,
+      "questionText": "<span style=\"\">What is the area of the region enclosed in the first quadrant by x</span><sup>2</sup><span style=\"\">&nbsp;+ y</span><sup>2</sup><span style=\"\">&nbsp;= π</span><sup>2</sup><span style=\"\">, y = sin x and x = 0 ?</span>",
+      "options": [
+        "<span class=\"math-tex\">$​\\frac{\\pi^3}{4}$</span>&nbsp;− 1",
+        "<span class=\"math-tex\">$​\\frac{\\pi^3}{4}$</span>&nbsp;− 2",
+        "<span class=\"math-tex\">$​\\frac{\\pi^3}{2}$</span>&nbsp;− 1",
+        "<span class=\"math-tex\">$​\\frac{\\pi^2}{4}$</span>&nbsp;− 2"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the area of the region enclosed in the first quadrant by the given curves $x^2 + y^2 = \\pi^2$, $y = \\sin x$, and $x = 0$, we need to take the following steps:</p>\n\n<ol>\n\n<li>Determine the limits of integration</li>\n\n<li>Calculate the area under $y = \\sin x$ from $x=0$ to $x=\\pi$</li>\n\n<li>Calculate the area of the circle segment from $x=0$ to $x=\\pi$</li>\n\n<li>Subtract the two areas to find the enclosed region</li>\n\n</ol>\n\n<p>First, observe that $x^2 + y^2 = \\pi^2$ is a circle centered at the origin with radius $\\pi$. In the first quadrant, the limits of integration for $x$ range from 0 to $\\pi$.</p>\n\n<p>We start by calculating the area under the curve $y = \\sin x$ from $x = 0$ to $x = \\pi$. The integral for this area $A_{\\text{sin}}$ is:</p>\n\n<p>$$ A_{\\text{sin}} = \\int_0^{\\pi} \\sin x \\, dx $$</p>\n\n<p>Solving this integral, we have:</p>\n\n<p>$$ A_{\\text{sin}} = [-\\cos x]_0^{\\pi} = -\\cos(\\pi) - (-\\cos(0)) = -(-1) - (-1) = 2 $$</p>\n\n<p>Next, we calculate the area of the quarter circle from $x=0$ to $x=\\pi$ in the first quadrant. The area $A_{\\text{circle}}$ is:</p>\n\n<p>$$ A_{\\text{circle}} = \\frac{1}{4} \\times \\pi \\times (\\pi^2) = \\frac{\\pi^3}{4} $$</p>\n\n<p>Therefore, to find the desired area, we subtract the area under $y = \\sin x$ from the area of the quarter circle:</p>\n\n<p>$$ A_{\\text{enclosed}} = A_{\\text{circle}} - A_{\\text{sin}} = \\frac{\\pi^3}{4} - 2 $$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option B <span class=\"math-tex\">$$\\frac{\\pi^3}{4} - 2$$</span></p>",
+      "section": "Sec 2",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3lin5k",
+      "questionNumber": 14,
+      "questionText": "<span style=\"\">What is&nbsp;</span><span class=\"math-tex\">$\\displaystyle\\sum_{r=0}^n$</span><span style=\"\">2</span><sup>r&nbsp;</sup><span style=\"\">C(n, r) equal to ?</span>",
+      "options": [
+        "<span style=\"\">2</span><sup>n</sup>",
+        "<span style=\"\">3</span><sup>n</sup>",
+        "<span style=\"\">2</span><sup>2n</sup>",
+        "<span style=\"\">3</span><sup>2n</sup>"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>The given expression is:</p>\n\n<p>$$\\sum_{r=0}^n 2^r \\binom{n}{r}$$</p>\n\n<p>To find the value of this sum, we can use the binomial theorem. The binomial theorem states that:</p>\n\n<p>$$ (x + y)^n = \\sum_{r=0}^n \\binom{n}{r} x^{n-r} y^r $$</p>\n\n<p>We can compare this with our given expression by setting $ x = 1 $ and $ y = 2 $, so our sum becomes:</p>\n\n<p>$$ (1 + 2)^n = \\sum_{r=0}^n \\binom{n}{r} 1^{n-r} 2^r $$</p>\n\n<p>Simplifying $1^{n-r}$ to 1, we get:</p>\n\n<p>$$ (1 + 2)^n = \\sum_{r=0}^n \\binom{n}{r} 2^r $$</p>\n\n<p>Therefore, the sum is equal to:</p>\n\n<p>$$ 3^n $$</p>\n\n<p>So, the correct answer is:</p>\n\n<p>Option B</p>\n\n<p><span style=\"\">3</span><sup>n</sup></p>",
+      "section": "Sec 2",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linbd",
+      "questionNumber": 15,
+      "questionText": "<p style=\"\">What is the value of q if the coefficients of x<span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">3</span>&nbsp;and x<span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">6</span>&nbsp;are equal ?</p>\n",
+      "options": [
+        "p",
+        "9p",
+        "<span class=\"math-tex\">$\\frac{1}{\\text{p}}$</span>",
+        "<span style=\"\">p</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<ol>\n<li><p>General term of the expansion of $(p + qx)^9$:  </p>\n<p>$$T_{r+1} = \\binom{9}{r}\\,p^{9-r}\\,(q x)^r = \\binom{9}{r}\\,p^{9-r}\\,q^r\\,x^r.$$  </p></li>\n<li><p>Coefficient of $x^3$ (take $r=3$):  </p>\n<p>$$a_3 = \\binom{9}{3}\\,p^{9-3}\\,q^3 = \\binom{9}{3}\\,p^6\\,q^3.$$  </p></li>\n<li><p>Coefficient of $x^6$ (take $r=6$):  </p>\n<p>$$a_6 = \\binom{9}{6}\\,p^{9-6}\\,q^6 = \\binom{9}{6}\\,p^3\\,q^6.$$  </p></li>\n<li><p>Equate $a_3$ and $a_6$:  </p>\n<p>$$\\binom{9}{3}\\,p^6\\,q^3 \\;=\\;\\binom{9}{6}\\,p^3\\,q^6.$$  </p>\n<p>Since $\\binom{9}{3} = \\binom{9}{6}$ and assuming $p,q\\neq0$, divide both sides by $\\binom{9}{3}\\,p^3\\,q^3$:  </p>\n<p>$$p^3 = q^3 \\quad\\Longrightarrow\\quad q = p.$$</p></li>\n</ol>\n<p>Answer: q = p.</p>",
+      "section": "Sec 3",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3linbv",
+      "questionNumber": 16,
+      "questionText": "<p style=\"\">What is the ratio of the coefficients of middle terms in the expansion (when expanded in ascending powers of x)?</p>\n",
+      "options": [
+        "<span style=\"\">pq</span>",
+        "p/q",
+        "4p/5q",
+        "1/(pq)"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<ol>\n<li><p>Number of terms in $(p+qx)^9$  </p>\n<p>Total terms = $9+1=10$ (even), so there are two middle terms (5th and 6th).</p></li>\n<li><p>General term (ascending powers of $x$):  </p>\n<p>$      T_{r+1} = \\binom{9}{r}\\,p^{9-r}\\,(qx)^r,      \\quad\\text{for }r=0,1,\\dots,9.    $  </p>\n<p>Coefficient of $x^r$ is $\\displaystyle \\binom{9}{r}p^{9-r}q^r$.</p></li>\n<li><p>Middle terms correspond to $r=4$ and $r=5$:  </p>\n<p>$      C_4 = \\binom{9}{4}p^{9-4}q^4 = \\binom{9}{4}p^5q^4,      \\quad      C_5 = \\binom{9}{5}p^{9-5}q^5 = \\binom{9}{5}p^4q^5.    $</p></li>\n<li><p>Compute $\\binom{9}{4}$ and $\\binom{9}{5}$:  </p>\n<p>$\\displaystyle \\binom{9}{4}=\\binom{9}{5}=126$.  </p>\n<p>Hence</p>\n<p>$      C_4 = 126\\,p^5q^4,\\quad      C_5 = 126\\,p^4q^5.    $</p></li>\n<li><p>Ratio of the two middle coefficients  </p>\n<p>$      \\frac{C_4}{C_5}      = \\frac{126\\,p^5q^4}{126\\,p^4q^5}      = \\frac{p^5}{p^4}\\,\\frac{q^4}{q^5}      = \\frac{p}{q}.    $</p></li>\n</ol>\n<p>Answer: Option B, $\\displaystyle \\frac{p}{q}$.</p>",
+      "section": "Sec 3",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3lincf",
+      "questionNumber": 17,
+      "questionText": "<p style=\"\">Under what condition the coefficients of x<span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">2</span>&nbsp;and x<span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">4</span>&nbsp;are equal ?</p>\n",
+      "options": [
+        "<span style=\"\">p ∶ q = 7 ∶ 2</span>",
+        "<span style=\"\">p</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;∶ q</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;= 7 ∶ 2</span>",
+        "p ∶ q = 2 ∶ 7",
+        "<span style=\"\">p</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;∶ q</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span><span style=\"\">&nbsp;= 2 ∶ 7</span>"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<ol>\n<li><p>General term of $(p+qx)^9$:  </p>\n<p>$      T_{r+1} = \\binom{9}{r} p^{9-r}(qx)^r = \\binom{9}{r}p^{9-r}q^r\\,x^r.    $</p></li>\n<li><p>Coefficient of $x^2$ ($r=2$):  </p>\n<p>$      \\binom{9}{2}p^{7}q^2 = 36\\,p^7q^2.    $</p></li>\n<li><p>Coefficient of $x^4$ ($r=4$):  </p>\n<p>$      \\binom{9}{4}p^{5}q^4 = 126\\,p^5q^4.    $</p></li>\n<li><p>Equate the two coefficients:  </p>\n<p>$      36\\,p^7q^2 \\;=\\;126\\,p^5q^4      \\;\\Longrightarrow\\;      \\frac{36}{126}\\;=\\;\\frac{q^2}{p^2}      \\;\\Longrightarrow\\;      \\frac{2}{7} \\;=\\;\\frac{q^2}{p^2}      \\;\\Longrightarrow\\;      p^2 : q^2 = 7 : 2.    $</p></li>\n</ol>\n<p>Answer: Option B.</p>",
+      "section": "Sec 3",
+      "instruction": ""
+    },
+    {
+      "id": "tllz3lin8n",
+      "questionNumber": 18,
+      "questionText": "What is the diameter of a circle inscribed in a regular polygon of 12 sides, each of length 1 cm ?",
+      "options": [
+        "<span style=\"\">1 +&nbsp;</span><span class=\"math-tex\">$\\sqrt{2}$</span><span style=\"\">&nbsp;cm</span>",
+        "<span style=\"\">2 +&nbsp;</span><span class=\"math-tex\">$\\sqrt{2}$</span><span style=\"\">&nbsp;cm</span>",
+        "<span style=\"\">2 +&nbsp;</span><span class=\"math-tex\">$\\sqrt{3}$</span><span style=\"\">&nbsp;cm</span>",
+        "<span style=\"\">3 +&nbsp;</span><span class=\"math-tex\">$\\sqrt{3}$</span><span style=\"\">&nbsp;cm</span>"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<ol>\n<li><p>In a regular 12-gon of side $AB=1$, draw radii $OA$ and $OB$.  </p>\n<p>∠AOB = central angle = $\\dfrac{360^\\circ}{12}=30^\\circ$.</p></li>\n<li><p>Let $M$ be midpoint of $AB$. Then $OM$ is the inradius $r$, and $AM=\\tfrac12$.</p></li>\n<li><p>In right ΔAOM,  </p>\n<p>$\\displaystyle \\tan\\angle AOM=\\tan\\bigl(\\tfrac{∠AOB}2\\bigr)=\\tan15^\\circ      =\\frac{AM}{OM}=\\frac{\\tfrac12}{r}$.  </p>\n<p>So </p>\n<p>$      r=\\frac{\\tfrac12}{\\tan15^\\circ}        =\\frac12\\;\\frac1{\\tan15^\\circ}.    $</p></li>\n<li><p>Compute $\\tan15^\\circ$ using $\\tan(45^\\circ-30^\\circ)$:  </p>\n<p>$      \\tan15^\\circ      =\\frac{\\tan45^\\circ-\\tan30^\\circ}{1+\\tan45^\\circ\\tan30^\\circ}      =\\frac{1-\\tfrac1{\\sqrt3}}{1+1\\cdot\\tfrac1{\\sqrt3}}      =2-\\sqrt3.    $</p>\n<p>Hence  </p>\n<p>$      \\frac1{\\tan15^\\circ}=\\frac1{2-\\sqrt3}        =2+\\sqrt3.    $</p></li>\n<li><p>Diameter $D=2r$:  </p>\n<p>$      D=2\\cdot\\frac12\\,(2+\\sqrt3)=2+\\sqrt3.    $</p></li>\n</ol>\n<p>Answer: Option C.</p>",
+      "section": "Sec 3",
+      "instruction": ""
+    }
+  ],
+  "sections": [
+    {
+      "name": "Mathematics"
+    }
+  ]
+}

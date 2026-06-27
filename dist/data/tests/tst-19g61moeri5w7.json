@@ -1,0 +1,285 @@
+{
+  "testId": "tst-19g61moeri5w7",
+  "title": "Complex Number Test - 3 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "1kwutrxo9",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "A Linear Programming Problem is as follows:<br/><br/>Minimize z = 2x + y<br/><br/>subject to the constraints <br/><br/>x $$\\ge$$ 3, x $$\\le$$ 9, y $$\\ge$$ 0<br/><br/>x $$-$$ y $$\\ge$$ 0, x + y $$\\le$$ 14<br/><br/>The feasible region has",
+      "options": [
+        "5 corner points including (0, 0) and (9, 5)",
+        "5 corner points including (7, 7) and (3, 3)",
+        "5 corner points including (14, 0) and (9, 0)",
+        "5 corner points including (3, 6) and (9, 5)"
+      ],
+      "correctOption": 1,
+      "solution": null,
+      "marks": 1,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "nHsjBMNAmiB2KcyTWe1kjgw60wf",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $$\\omega  \\ne 1$$ be a cube root of unity. Then the minimum of the set $$\\{ {\\left| {a + b\\omega  + c{\\omega ^2}} \\right|^2}:a,b,c$$ distinct non-zero integers} equals ..................",
+      "options": [],
+      "correctOption": 0,
+      "solution": "Given, $$\\omega  \\ne 1$$ be a cube root of unity, then $${\\left| {a + b\\omega  + c{\\omega ^2}} \\right|^2}$$<br><br>= $$(a + b\\omega  + c{\\omega ^2})\\overline {(a + b\\omega  + c{\\omega ^2})} $$,<br><br>[$$ \\because $$ $$z\\overline z  = |z{|^2}$$]<br><br>= $$(a + b\\omega  + c{\\omega ^2})$$ $${(a + b\\overline \\omega   + 2c{{\\overline \\omega  }^2})}$$<br><br>[$$ \\because $$ $${\\overline \\omega  }$$ = $$\\omega $$<sup>2</sup> and $${{{\\overline \\omega  }^2}}$$ = $$\\omega $$]<br><br>= $${a^2} + {b^2} + {c^2} + ab({\\omega ^2} + \\omega ) + bc({\\omega ^2} + {\\omega ^4}) + ac(\\omega  + {\\omega ^2})$$<br><br>[as $${\\omega ^3} = 1$$]<br><br>$$ = {a^2} + {b^2} + {c^2} + ab( - 1) + bc( - 1) + ac( - 1)$$<br><br>[as $$\\omega  + {\\omega ^2} =  - 1,\\,{\\omega ^4} = \\omega $$]<br><br><br>$$ = {a^2} + {b^2} + {c^2} - ab - bc - ca$$<br><br>$$ = {1 \\over 2}\\{ {(a - b)^2} + {(b - c)^2} + {(c - a)^2}\\} $$<br><br>$$ \\because $$ a, b and c are distinct non-zero integers. For minimum value a= 1, b = 2 and c = 3<br><br>$$ \\therefore $$ $$|a + b\\omega  + c{\\omega ^2}|_{\\min }^2 = {1 \\over 2}\\{ {1^2} + {1^2} + {2^2}\\}  = {6 \\over 2} = 3.00$$",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "zrx1He6H0PulM6MQ",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If $$z \\ne 1$$ and $$\\,{{{z^2}} \\over {z - 1}}\\,$$ is real, then the point represented by the complex number z lies :",
+      "options": [
+        "either on the real axis or a circle passing through the origin.",
+        "on a circle with centre at the origin",
+        "either on real axis or on a circle not passing through the origin.",
+        "on the imaginary axis."
+      ],
+      "correctOption": 0,
+      "solution": "Let $$z = x + iy$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,{z^2} = {x^2} - {y^2} + 2ixy$$\n<br><br>Now $${{{z^2}} \\over {z - 1}}$$ is real \n<br><br>$$ \\Rightarrow {\\mathop{\\rm Im}\\nolimits} \\left( {{{{z^2}} \\over {z - 1}}} \\right) = 0$$\n<br><br>$$ \\Rightarrow {\\mathop{\\rm Im}\\nolimits} \\left( {{{{x^2} - {y^2} + 2ixy} \\over {\\left( {x - 1} \\right) + iy}}} \\right) = 0$$\n<br><br>$$ \\Rightarrow {\\mathop{\\rm Im}\\nolimits} \\left[ {\\left( {{x^2} - {y^2} + 2ixy} \\right)\\left. {\\left( {x - 1} \\right) - iy} \\right)} \\right] = 0$$\n<br><br>$$ \\Rightarrow 2xy\\left( {x - 1} \\right) - y\\left( {{x^2} - {y^2}} \\right) = 0$$\n<br><br>$$ \\Rightarrow y\\left( {{x^2} + {y^2} - 2x} \\right) = 0$$\n<br><br>$$ \\Rightarrow y = 0;\\,{x^2} + {y^2} - 2x = 0$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,$$ $$z$$ lies either on real axis or on a circle through origin.",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "tllxlrvtue",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If z z̅ = |z + z̅ |, where z = x + iy, i = <span class=\"math-tex\">$\\sqrt{-1}$</span>,&nbsp;then the locus of z is a pair of:",
+      "options": [
+        "straight lines",
+        "rectangular hyperbolas",
+        "parabolas",
+        "circles"
+      ],
+      "correctOption": 3,
+      "solution": "<p>To solve for the locus of the complex number $ z $ given the equation $ z \\bar{z} = |z + \\bar{z}| $, let's start by breaking down the given information.</p>\n\n<p>Let $ z = x + iy $, where $ i = \\sqrt{-1} $ and $ x $ and $ y $ are real numbers.</p>\n\n<p>The complex conjugate of $ z $ is $ \\bar{z} = x - iy $.</p>\n\n<p>First, calculate $ z \\bar{z} $:</p>\n\n<p>$$ z \\bar{z} = (x + iy)(x - iy) = x^2 + y^2 $$</p>\n\n<p>Next, calculate $ z + \\bar{z} $:</p>\n\n<p>$$ z + \\bar{z} = (x + iy) + (x - iy) = 2x $$</p>\n\n<p>We need the magnitude of $ z + \\bar{z} $:</p>\n\n<p>$$ |z + \\bar{z}| = |2x| = 2|x| $$</p>\n\n<p>The given equation is:</p>\n\n<p>$$ z \\bar{z} = |z + \\bar{z}| $$</p>\n\n<p>Substitute the calculated values:</p>\n\n<p>$$ x^2 + y^2 = 2|x| $$</p>\n\n<p>Note that $ x $ could be positive or negative, so the equation $ x^2 + y^2 = 2x $ or $ x^2 + y^2 = -2x $ applies based on the value of $ |x| $. This leads to two separate cases:</p>\n\n<p>1. $ x^2 + y^2 = 2x $</p>\n\n<p>2. $ x^2 + y^2 = -2x $</p>\n\n<p>We can rewrite these equations by completing the square:</p>\n\n<p>For $ x^2 + y^2 = 2x $:</p>\n\n<p>$$ x^2 - 2x + y^2 = 0 $$</p>\n\n<p>We complete the square:</p>\n\n<p>$$ (x - 1)^2 + y^2 = 1 $$</p>\n\n<p>Similarly, for $ x^2 + y^2 = -2x $:</p>\n\n<p>$$ x^2 + 2x + y^2 = 0 $$</p>\n\n<p>Complete the square:</p>\n\n<p>$$ (x + 1)^2 + y^2 = 1 $$</p>\n\n<p>These are the equations of two circles with radius 1, centered at (1, 0) and (-1, 0), respectively.</p>\n\n<p>Therefore, the locus of $ z $ is a pair of circles.</p>\n\n<p>The correct option is:</p>\n\n<p><strong>Option D</strong>: circles</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "1l136ajlo",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If Re(z + 2) = | z $$-$$ 2 |, then the locus of z is</p>",
+      "options": [
+        "parabola",
+        "circle",
+        "ellipse",
+        "hyperbola"
+      ],
+      "correctOption": 0,
+      "solution": "<p>Let z = x + iy</p>\n<p>Re(z + 2) = | z $$-$$ 2 |</p>\n<p>Re(x + iy + 2) = | x + iy $$-$$ 2 |</p>\n<p>x + 2 = $$\\sqrt {{{(x - 2)}^2} + {y^2}} $$</p>\n<p>Squaring on both sides,</p>\n<p>(x + 2)<sup>2</sup> = (x $$-$$ 2)<sup>2</sup> + y<sup>2</sup></p>\n<p>x<sup>2</sup> + 4 + 4x = x<sup>2</sup> + 4 $$-$$ 4x + y<sup>2</sup> $$\\Rightarrow$$ y<sup>2</sup> = 8x</p>\n<p>The locus of z is a parabola.</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "m6riex2w",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>If $\\alpha + i\\beta$ and $\\gamma + i\\delta$ are the roots of $x^2 - (3 - 2i)x - (2i - 2) = 0$, $i = \\sqrt{-1}$, then $\\alpha \\gamma + \\beta \\delta$ is equal to:</p>",
+      "options": [
+        "<p>2</p>",
+        "<p>-6</p>",
+        "<p>6</p>",
+        "<p>-2</p>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>$$\\begin{aligned}\n& x^2-(3-2 i) x-(2 i-2)=0 \\\\\n& x=\\frac{(3-2 i) \\pm \\sqrt{(3-2 i)^2-4(1)(-(2 i-2))}}{2(1)} \\\\\n& ==\\frac{(3-2 i) \\pm \\sqrt{9-4-12 i+8 i-8}}{2} \\\\\n& ==\\frac{3-2 i \\pm \\sqrt{-3-4 i}}{2} \\\\\n& =\\frac{3-2 i \\pm \\sqrt{(1)^2+(2 i)^2-2(1)(2 i)}}{2} \\\\\n& =\\frac{3-2 \\mathrm{i} \\pm(1-2 \\mathrm{i})}{2} \\\\\n& \\Rightarrow \\frac{3-2 \\mathrm{i}+1-2 \\mathrm{i}}{2} \\text { or } \\frac{3-2 \\mathrm{i}-1+2 \\mathrm{i}}{2} \\\\\n& \\Rightarrow 2-2 \\mathrm{i} \\text { or } 1+0 \\mathrm{i} \\\\\n& \\text { So } \\alpha \\gamma+\\beta \\delta=2(1)+(-2)(0)=2\n\\end{aligned}$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "1ldsg85m1",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$\\alpha  = 8 - 14i,A = \\left\\{ {z \\in c:{{\\alpha z - \\overline \\alpha  \\overline z } \\over {{z^2} - {{\\left( {\\overline z } \\right)}^2} - 112i}}=1} \\right\\}$$ and $$B = \\left\\{ {z \\in c:\\left| {z + 3i} \\right| = 4} \\right\\}$$. Then $$\\sum\\limits_{z \\in A \\cap B} {({\\mathop{\\rm Re}\\nolimits} z - {\\mathop{\\rm Im}\\nolimits} z)} $$ is equal to ____________.</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>Let $$z = x + iy$$</p>\n<p>and $$\\alpha  = 8 - 14i$$</p>\n<p>$${{\\alpha z - \\overline \\alpha  \\,\\overline z } \\over {{z^2} - {{\\overline z }^2} - 112i}} = 1$$</p>\n<p>$$\\therefore$$ $${{(16y - 28x)} \\over {4xy - 112i}} = 1$$</p>\n<p>$$(16y - 28x + 112)i = 4xy$$</p>\n<p>$$\\therefore$$ $$z =  - 7i$$ or 4</p>\n<p>Now, $$z =  - 7i$$ satisfy B</p>\n<p>$$B:{x^2} + {(y + 3)^2} = 16$$</p>\n<p>$$A \\cap B = (0, - 7)$$</p>\n<p>$${\\mathop{\\rm Re}\\nolimits} z - lm\\,z = 7$$</p>",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "TBLslHD22EPp6lLBJjjgy2xukf8z8vmo",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let $$u = {{2z + i} \\over {z - ki}}$$, z = x + iy and k &gt; 0.  If the curve represented<br> by Re(u) + Im(u) = 1 intersects the y-axis at the points P and Q where PQ = 5, then the value of k is :",
+      "options": [
+        "2",
+        "4",
+        "1/2",
+        "3/2"
+      ],
+      "correctOption": 0,
+      "solution": "Given, z = x + iy<br><br>and $$u = {{2z + i} \\over {z - ki}}$$<br><br>$$ = {{2(x + iy) + i} \\over {(x + iy) - ki}}$$<br><br>$$ = {{2x + i(2y + 1)} \\over {x + i(y - k)}} \\times {{x - i(y - k)} \\over {x - i(y - k)}}$$<br><br>$$ = {{2{x^2} + (2y + 1)(y - k) + i(2xy + x - 2xy + 2kx)} \\over {{x^2} + {{(y - k)}^2}}}$$<br><br>Given, <br><br>$${\\mathop{\\rm Re}\\nolimits} (u) + {\\mathop{\\rm Im}\\nolimits} (u) = 1$$<br><br>$$ \\Rightarrow {{2{x^2} + (2y + 1)(y - k)} \\over {{x^2} + {{(y - k)}^2}}} + {{x + 2kx} \\over {{x^2} + {{(y - k)}^2}}} = 1$$<br><br>$$ \\Rightarrow 2{x^2} + (2y + 1)(y - k) + x + 2kx = {x^2} + {(y - k)^2}$$<br><br>This curve intersect the y-axis at point P and Q, so at point P and Q x = 0<br><br>Putting x = 0 at the above equation,<br><br>$$ \\therefore $$ $$(2y + 1)(y - k) = {(y - k)^2}$$<br><br>$$ \\Rightarrow 2{y^2} + y - 2yk - k = {y^2} + {k^2} - 2ky$$<br><br>$$ \\Rightarrow {y^2} + y - (k + {k^2}) = 0$$<br><br>Let roots of this quadratic equation y<sub>1</sub> and y<sub>2</sub><br><br>$$ \\therefore $$ Point P (0, y<sub>1</sub>) and Q (0, y<sub>2</sub>)<br><br>and $${y_{_1}} + {y_2} = 1$$ , $${y_1}{y_2} =  - k - {k^2}$$<br><br>$$ \\therefore $$ $${({y_1} - {y_2})^2} = {({y_1} + {y_2})^2} - 4{y_1}{y_2}$$<br><br>$$ = 1 + 4k + 4{k^2}$$<br><br>$$ \\Rightarrow |{y_1} - {y_2}| = \\sqrt {1 + 4k + 4{k^2}} $$<br><br>Given, PQ = 5<br><br>$$ \\Rightarrow |{y_1} - {y_2}| = 5$$<br><br>$$ \\Rightarrow \\sqrt {1 + 4k + 4{k^2}}  = 5$$<br><br>$$ \\Rightarrow {k^2} + k - 6 = 0$$<br><br>$$ \\Rightarrow k =  - 3,\\,2$$<br><br>So, k = 2 (Given k &gt; 0)",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "1ks061tqe",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let C be the set of all complex numbers. Let<br><br>$${S_1} = \\{ z \\in C||z - 3 - 2i{|^2} = 8\\} $$<br><br>$${S_2} = \\{ z \\in C|{\\mathop{\\rm Re}\\nolimits} (z) \\ge 5\\} $$ and <br><br>$${S_3} = \\{ z \\in C||z - \\overline z | \\ge 8\\} $$.<br><br>Then the number of elements in $${S_1} \\cap {S_2} \\cap {S_3}$$ is equal to :",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "Infinite"
+      ],
+      "correctOption": 0,
+      "solution": "$${S_1}:|z - 3 - 2i{|^2} = 8$$<br><br>$$|z - 3 - 2i| = 2\\sqrt 2 $$<br><br>$${(x - 3)^2} + {(y - 2)^2} = {(2\\sqrt 2 )^2}$$<br><br>$${S_2}:x \\ge 5$$<br><br>$${S_3}:|z - \\overline z | \\ge 8$$<br><br>$$|2iy| \\ge 8$$<br><br>$$2|y| \\ge 8$$<br><br>$$\\therefore$$ $$y \\ge 4$$, $$y \\le  - 4$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ks21dkmm/cf45d027-e9ea-42af-8cc1-177969d39125/d6ceece0-f7a2-11eb-92c1-6d24961c245f/file-1ks21dkmn.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Morning Shift Mathematics - Complex Numbers Question 122 English Explanation\"><br><br>$$n\\left( {{S_1} \\cap {S_2} \\cap {S_3}} \\right) = 1$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "1kwutcln3",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The points on the curve $${{{x^2}} \\over 9} + {{{y^2}} \\over {25}} = 1$$, where tangent is parallel to x-axis are",
+      "options": [
+        "($$\\pm$$ 5, 0)",
+        "(0, $$\\pm$$ 5)",
+        "(0, $$\\pm$$ 3)",
+        "($$\\pm$$ 3, 0)"
+      ],
+      "correctOption": 1,
+      "solution": null,
+      "marks": 1,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "lwv3x8fa",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>What is $(1 + i)^4 + (1 - i)^4$ equal to, where $i=\\sqrt{-1}$?</p>",
+      "options": [
+        "<p>4</p>",
+        "<p>0</p>",
+        "<p>-4</p>",
+        "<p>-8</p>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>To determine the value of $$(1 + i)^4 + (1 - i)^4$$, where $$i = \\sqrt{-1}$$, we need to simplify the complex expressions. Let's start by breaking down the powers of complex numbers.</p>\n\n<p>First, express each term in a more manageable form using the binomial theorem or by identifying patterns in powers of complex numbers:</p>\n\n<p>Consider the polar form of the complex numbers. Given that $$1 + i$$ and $$1 - i$$ can be expressed as follows:</p>\n\n<p>$$1 + i = \\sqrt{2} \\, (\\cos \\frac{\\pi}{4} + i \\sin \\frac{\\pi}{4})$$</p>\n\n<p>$$1 - i = \\sqrt{2} \\, (\\cos \\frac{\\pi}{4} - i \\sin \\frac{\\pi}{4})$$</p>\n\n<p>Now raise these to the 4th power using the De Moivre's Theorem:</p>\n\n<p>$$ (1 + i)^4 = (\\sqrt{2})^4 \\, (\\cos 4 \\cdot \\frac{\\pi}{4} + i \\sin 4 \\cdot \\frac{\\pi}{4})  = 4 \\, (\\cos \\pi + i \\sin \\pi)  = 4 \\, (-1 + 0i) = -4 $$</p>\n\n<p>$$ (1 - i)^4 = (\\sqrt{2})^4 \\, (\\cos 4 \\cdot (\\frac{\\pi}{4}) - i \\sin 4 \\cdot (\\frac{\\pi}{4}))  = 4 \\, (\\cos \\pi - i \\sin \\pi)  = 4 \\, (-1 - 0i) = -4 $$</p>\n\n<p>Next, we add these results together:</p>\n\n<p>\n\n<p>$$ (1 + i)^4 + (1 - i)^4 = -4 + (-4) = -8 $$</p>\n\n</p>\n\n<p>So, the correct answer is:</p>\n\n<p>Option D</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "1lgyl12p4",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p> Let $$A=\\left\\{\\theta \\in(0,2 \\pi): \\frac{1+2 i \\sin \\theta}{1-i \\sin \\theta}\\right.$$ is purely imaginary $$\\}$$. Then the sum of the elements in $$\\mathrm{A}$$ is :</p>",
+      "options": [
+        "$$3 \\pi$$",
+        "$$\\pi$$",
+        "$$2 \\pi$$",
+        "$$4 \\pi$$"
+      ],
+      "correctOption": 3,
+      "solution": "$$\n\\begin{aligned}\n& \\text { Here, } z=\\frac{1+2 i \\sin \\theta}{1-i \\sin \\theta} \\times \\frac{1+i \\sin \\theta}{1+i \\sin \\theta} \\\\\\\\\n& \\frac{1+i \\sin \\theta+2 i \\sin \\theta-2 \\sin ^2 \\theta}{1-i^2 \\sin ^2 \\theta} \\\\\\\\\n& =\\frac{\\left(1-2 \\sin ^2 \\theta\\right)+i(3 \\sin \\theta)}{1+\\sin ^2 \\theta}\n\\end{aligned}\n$$\n<br/><br/>$\\because z$ is purely imaginary, so $\\operatorname{Re} z=0$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow \\frac{1-2 \\sin ^2 \\theta}{1+\\sin ^2 \\theta}=0 \\\\\\\\\n& \\Rightarrow 2 \\sin ^2 \\theta=1 \\Rightarrow \\sin ^2 \\theta=\\frac{1}{2} \\\\\\\\\n& \\Rightarrow \\sin \\theta= \\pm \\frac{1}{\\sqrt{2}}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore A=\\left[\\frac{\\pi}{4}, \\frac{3 \\pi}{4}, \\frac{5 \\pi}{4}, \\frac{7 \\pi}{4}\\right] \\because \\theta \\in(0,2 \\pi)\\\\\\\\\n& \\therefore \\text { Sum }=\\frac{\\pi+3 \\pi+5 \\pi+7 \\pi}{4}=\\frac{16 \\pi}{4}=4 \\pi\n\\end{aligned}\n$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "1kwuuqz0n",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The function $$f(x) = 2{x^3} - 15{x^2} + 36x + 6$$ is increasing in the interval",
+      "options": [
+        "($$-$$ $$\\infty$$, 2) $$\\cup$$ (3, $$\\infty$$)",
+        "($$-$$ $$\\infty$$, 2)",
+        "($$-$$ $$\\infty$$, 2] $$\\cup$$ [3, $$\\infty$$)",
+        "[3, $$\\infty$$)"
+      ],
+      "correctOption": 2,
+      "solution": null,
+      "marks": 1,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "ACZzZlXbS3L9a3R9ns1kmm2z0b8",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "Let a complex number be w = 1 $$-$$ $${\\sqrt 3 }$$i. Let another complex number z be such that |zw| = 1 and arg(z) $$-$$ arg(w) = $${\\pi  \\over 2}$$. Then the area of the triangle with vertices origin, z and w is equal to :",
+      "options": [
+        "4",
+        "$${1 \\over 4}$$",
+        "2",
+        "$${1 \\over 2}$$"
+      ],
+      "correctOption": 3,
+      "solution": "<picture><source media=\"(max-width: 1227px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs.jpeg\"><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-860w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-1040w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 18th March Evening Shift Mathematics - Complex Numbers Question 129 English Explanation\"></picture>\n<br>Given, w = 1 $$-$$ $$\\sqrt 3 $$ i<br><br>$$ \\Rightarrow |w| = \\sqrt {{{(1)}^2} + {{( - \\sqrt 3 )}^2}}  = 2$$<br><br>Also, given | zw | = 1<br><br>$$ \\Rightarrow $$ | z | | w | = 1 (using property)<br><br>$$ \\Rightarrow $$ | z | = $${1 \\over 2}$$<br><br>Also, arg(z) $$-$$ arg(w) = $${{\\pi {} } \\over 2}$$<br><br>$$ \\therefore $$ Angle between two complex number z and w is $${{\\pi {} } \\over 2}$$.<br><br>$$ \\therefore $$ $$\\angle zow = {{\\pi {} } \\over 2}$$<br><br>$$ \\therefore $$ $$\\Delta$$zow is a right angle triangle with base $$ow = 2$$ and height $$oz = {1 \\over 2}$$<br><br>$$ \\therefore $$ Area = $${1 \\over 2} \\times 2 \\times {1 \\over 2} = {1 \\over 2}$$",
+      "marks": 4,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    },
+    {
+      "id": "1kwuvnjhj",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "The absolute maximum value of the function $$f(x) = 4x - {1 \\over 2}{x^2}$$ in the interval $$\\left[ { - 2,{9 \\over 2}} \\right]$$ is ",
+      "options": [
+        "8",
+        "9",
+        "6",
+        "10"
+      ],
+      "correctOption": 0,
+      "solution": null,
+      "marks": 1,
+      "negativeMarks": -1,
+      "topic": "Complex Number"
+    }
+  ]
+}

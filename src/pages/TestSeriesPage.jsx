@@ -13,6 +13,7 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData }) => {
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState('JEE Main');
   const [searchQuery, setSearchQuery] = useState('');
+  const [activeNdaFolder, setActiveNdaFolder] = useState(null);
 
   const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
 
@@ -56,6 +57,13 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData }) => {
   const filtered = useMemo(() => {
     let arr = tests;
     if (activeTab !== 'All') arr = arr.filter(t => t.examType === activeTab);
+    if (activeTab === 'NDA' && activeNdaFolder) {
+      if (activeNdaFolder === 'Mathematics') {
+        arr = arr.filter(t => t.id && t.id.includes('math'));
+      } else if (activeNdaFolder === 'General Ability') {
+        arr = arr.filter(t => t.id && t.id.includes('gat'));
+      }
+    }
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
       arr = arr.filter(t =>
@@ -103,14 +111,16 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData }) => {
               return (
                 <button
                   key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className={`px-6 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-colors flex items-center gap-2 ${
-                    activeTab === tab ? 'bg-electric text-obsidian' : 'text-gray-400 hover:text-white hover:bg-white/5'
+                  onClick={() => { setActiveTab(tab); setActiveNdaFolder(null); }}
+                  className={`flex-1 md:flex-none px-6 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 ${
+                    activeTab === tab 
+                      ? 'bg-electric text-black shadow-[0_0_15px_rgba(0,255,136,0.4)]' 
+                      : 'text-gray-400 hover:text-white hover:bg-white/5'
                   }`}
                 >
                   {tab}
-                  <span className={`text-[10px] px-2 py-0.5 rounded-full ${activeTab === tab ? 'bg-obsidian/20 text-obsidian' : 'bg-white/10 text-gray-400'}`}>
-                     {count} Tests
+                  <span className={`text-[10px] ml-2 px-2 py-0.5 rounded-full ${activeTab === tab ? 'bg-obsidian/20 text-obsidian' : 'bg-white/10 text-gray-400'}`}>
+                     {count}
                   </span>
                 </button>
               );
@@ -129,9 +139,30 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData }) => {
         </div>
       </div>
 
+
       {/* Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {loading ? (
+      <div className="max-w-7xl mx-auto">
+        {activeTab === 'NDA' && !activeNdaFolder ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-10">
+            <div onClick={() => setActiveNdaFolder('Mathematics')} className="bg-cyberdark border border-white/10 rounded-2xl p-8 hover:border-blue-500 hover:-translate-y-2 transition-all cursor-pointer flex flex-col items-center justify-center min-h-[200px]">
+              <div className="bg-blue-500/20 p-4 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-400"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-1.22-1.82A2 2 0 0 0 8.53 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg>
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-2">Mathematics</h2>
+              <p className="text-gray-400">{tests.filter(t => t.examType === 'NDA' && t.id && t.id.includes('math')).length} Tests</p>
+            </div>
+            
+            <div onClick={() => setActiveNdaFolder('General Ability')} className="bg-cyberdark border border-white/10 rounded-2xl p-8 hover:border-purple-500 hover:-translate-y-2 transition-all cursor-pointer flex flex-col items-center justify-center min-h-[200px]">
+              <div className="bg-purple-500/20 p-4 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-purple-400"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-1.22-1.82A2 2 0 0 0 8.53 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg>
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-2">General Ability</h2>
+              <p className="text-gray-400">{tests.filter(t => t.examType === 'NDA' && t.id && t.id.includes('gat')).length} Tests</p>
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {loading ? (
           <div className="col-span-full text-center py-20 text-gray-400 flex flex-col items-center">
             <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-electric mb-4"></div>
             Loading test series...
@@ -183,6 +214,8 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData }) => {
               </div>
             </div>
           ))
+        )}
+        </div>
         )}
       </div>
     </div>

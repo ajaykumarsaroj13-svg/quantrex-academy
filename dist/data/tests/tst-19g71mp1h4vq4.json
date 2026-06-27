@@ -1,0 +1,290 @@
+{
+  "testId": "tst-19g71mp1h4vq4",
+  "title": "Indefinite Integration Test - 4 (Topic Test)",
+  "examType": "JEE Main",
+  "durationMinutes": 36,
+  "totalMarks": 60,
+  "totalQuestions": 15,
+  "questions": [
+    {
+      "id": "1lc05vk9v",
+      "questionNumber": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The value of $$\\int {{1 \\over {{{[{{(x - 1)}^3}{{(x + 2)}^5}]}^{{1 \\over 4}}}}}dx} $$, is</p>",
+      "options": [
+        "$${4 \\over 3}{\\left( {{{x + 1} \\over {x - 2}}} \\right)^{{1 \\over 4}}} + C$$",
+        "$${3 \\over 4}{\\left( {{{x - 1} \\over {x + 2}}} \\right)^{{1 \\over 4}}} + C$$",
+        "$${4 \\over 3}{\\left( {{{x - 1} \\over {x + 2}}} \\right)^{{1 \\over 4}}} + C$$",
+        "$${1 \\over 3}{\\left( {{{2x - 1} \\over {4x - 3}}} \\right)^{{1 \\over 4}}} + C$$"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$I = \\int {{1 \\over {{{\\left( {{{x - 1} \\over {x + 2}}} \\right)}^{3/4}}{{(x + 2)}^2}}}dx} $$</p>\n<p>Let $${{x - 1} \\over {x + 2}} = t \\Rightarrow {{3dx} \\over {{{(x + 2)}^2}}} = dt$$</p>\n<p>$$ \\Rightarrow I = {1 \\over 3}\\int {{1 \\over {{t^{3/4}}}}dt = {1 \\over 3}\\left( {{{{t^{1/4}}} \\over {1/4}}} \\right) + C} $$</p>\n<p>$$ = {{{4^{{t^{1/4}}}}} \\over 3} + C = {4 \\over 3}{\\left( {{{x - 1} \\over {x + 2}}} \\right)^{1/4}} + C$$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "tlm69mp4df",
+      "questionNumber": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is&nbsp;<span class=\"math-tex\">$\\rm \\int e^{\\left(2\\ln x+\\ln x^2\\right)}dx$</span> equal to?",
+      "options": [
+        "<span class=\"math-tex\">$\\rm \\frac{x^4}{4}+c$</span>",
+        "<span class=\"math-tex\">$\\rm \\frac{x^3}{3}+c$</span>",
+        "<span class=\"math-tex\">$\\rm \\frac{2x^5}{5}+c$</span>",
+        "<span class=\"math-tex\">$\\rm \\frac{x^5}{5}+c$</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<h3>Concept</h3>\n\n<p><p>$ e^{\\ln x} = x $.</p></p>\n<p><p>$\\int x^n \\, dx = \\frac{x^{n+1}}{n+1} + c$.</p></p>\n\n<h3>Calculation</h3>\n<p>Let $ I = \\int e^{\\left(2\\ln x + \\ln x^2\\right)} \\, dx $.</p>\n<p>$ I = \\int e^{\\left(\\ln x^2 + \\ln x^2\\right)} \\, dx $</p>\n<p>$ I = \\int e^{2\\ln x^2} \\, dx $</p>\n<p>$ I = \\int e^{\\ln x^4} \\, dx $</p>\n<p>Using the property $ e^{\\ln a} = a $, we have:</p>\n<p>$ I = \\int x^4 \\, dx $</p>\n<p>Therefore, the integral becomes:</p>\n<p>$ \\int x^4 \\, dx = \\frac{x^5}{5} + c $</p>\n<p><strong>Hence, the value of the integral $\\int e^{\\left(2\\ln x+\\ln x^2\\right)} \\, dx$ is $\\frac{x^5}{5} + c$.</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "lwv8xl1i",
+      "questionNumber": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>What is the value of $\\beta$?</p>",
+      "options": [
+        "<p>$-\\frac{2}{3}$</p>",
+        "<p>$-\\frac{1}{3}$</p>",
+        "<p>$\\frac{1}{3}$</p>",
+        "<p>$\\frac{2}{3}$</p>"
+      ],
+      "correctOption": 2,
+      "solution": "<p>To find the value of <strong>&#946;</strong>, we need to solve the given integral and compare it with the provided solution form. The integral is:</p>\n\n<p>$$\\int \\frac{d x}{\\sqrt{x+1}-\\sqrt{x-1}}$$</p>\n\n<p>Let's first simplify the integrand. To do this, multiply the numerator and the denominator by the conjugate of the denominator:</p>\n\n<p>$$\\int \\frac{\\sqrt{x+1}+\\sqrt{x-1}}{(\\sqrt{x+1}-\\sqrt{x-1})(\\sqrt{x+1}+\\sqrt{x-1})} d x$$</p>\n\n<p>The denominator simplifies to:</p>\n\n<p>$$ (\\sqrt{x+1})^2 - (\\sqrt{x-1})^2 = (x+1) - (x-1) = 2 $$</p>\n\n<p>So the integral now becomes:</p>\n\n<p>$$\\int \\frac{\\sqrt{x+1} + \\sqrt{x-1}}{2} d x = \\frac{1}{2} \\int (\\sqrt{x+1} + \\sqrt{x-1}) d x$$</p>\n\n<p>This integral can be split into two separate integrals:</p>\n\n<p>$$\\frac{1}{2} \\left( \\int \\sqrt{x+1} dx + \\int \\sqrt{x-1} dx \\right)$$</p>\n\n<p>For the first integral:</p>\n\n<p>$$\\int \\sqrt{x+1} d x$$</p>\n\n<p>Let $u = x+1$, hence $d u = d x$. Then it becomes:</p>\n\n<p>$$\\int \\sqrt{u} d u = \\frac{2}{3} u^{\\frac{3}{2}} = \\frac{2}{3} (x+1)^{\\frac{3}{2}}$$</p>\n\n<p>For the second integral:</p>\n\n<p>$$\\int \\sqrt{x-1} d x$$</p>\n\n<p>Let $v = x-1$, hence $d v = d x$. Then it becomes:</p>\n\n<p>$$\\int \\sqrt{v} d v = \\frac{2}{3} v^{\\frac{3}{2}} = \\frac{2}{3} (x-1)^{\\frac{3}{2}}$$</p>\n\n<p>Combining these results, we get:</p>\n\n<p>$$\\frac{1}{2} \\left( \\frac{2}{3} (x+1)^{\\frac{3}{2}} + \\frac{2}{3} (x-1)^{\\frac{3}{2}} \\right) = \\frac{1}{3} (x+1)^{\\frac{3}{2}} + \\frac{1}{3} (x-1)^{\\frac{3}{2}} + c$$</p>\n\n<p>Comparing with the given form:</p>\n\n<p>$$\\alpha (x+1)^{\\frac{3}{2}} + \\beta (x-1)^{\\frac{3}{2}} + c$$</p>\n\n<p>We see that:</p>\n\n<p>$$\\alpha = \\frac{1}{3} \\quad \\text{and} \\quad \\beta = \\frac{1}{3}$$</p>\n\n<p>Hence, the value of &#946; is:</p>\n\n<p><strong>Option C: $\\frac{1}{3}$</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "tllz3lnsww",
+      "questionNumber": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If&nbsp;<span class=\"math-tex\">$I_1 =\\int\\frac{e^x dx}{e^x + e^{-x}}$</span>&nbsp;and&nbsp;<span class=\"math-tex\">$I_2 =\\int\\frac{dx}{e^{2x} + 1},$</span>then what is I<sub>1</sub> + I<sub>2</sub> equal to?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{x}{2}+c$</span>",
+        "x + c",
+        "ln (e<sup>x</sup> + e<sup>-x</sup>) + c",
+        "<span style=\"\">ln (e</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">x</span><span style=\"\">&nbsp;- e</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">-x</span><span style=\"\">) + c</span>"
+      ],
+      "correctOption": 1,
+      "solution": "<p>Given: <span class=\"math-tex\">$I_1 = ∫ \\frac{e^x \\, dx}{e^x + e^{-x}}$</span></p>\n\n<p>We can rewrite the denominator:</p>\n\n<p><span class=\"math-tex\">$I_1 = ∫ \\frac{e^x \\, dx}{e^x + \\frac{1}{e^x}}$</span></p>\n\n<p>Multiply numerator and denominator by <span class=\"math-tex\">e^x</span>:</p>\n\n<p><span class=\"math-tex\">$I_1 = ∫ \\frac{e^{2x} \\, dx}{e^{2x} + 1}$</span> &nbsp; &nbsp; &nbsp; &nbsp; ----(1)</p>\n\n<p>Given: <span class=\"math-tex\">$I_2 = ∫ \\frac{dx}{e^{2x} + 1}$</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ----(2)</p>\n\n<p>By adding equations (1) and (2), we get:</p>\n\n<p><span class=\"math-tex\">$I = I_1 + I_2$</span></p>\n\n<p><span class=\"math-tex\">$I = ∫ \\frac{e^{2x} \\, dx}{e^{2x} + 1} + ∫ \\frac{dx}{e^{2x} + 1}$</span></p>\n\n<p>Combine the integrands:</p>\n\n<p><span class=\"math-tex\">$I = ∫ \\left( \\frac{e^{2x}}{e^{2x} + 1} + \\frac{1}{e^{2x} + 1} \\right) dx$</span></p>\n\n<p>Simplify the integrand:</p>\n\n<p><span class=\"math-tex\">$I = ∫ \\frac{e^{2x} + 1}{e^{2x} + 1} \\, dx$</span></p>\n\n<p>This simplifies to:</p>\n\n<p>⇒ I = ∫ dx</p>\n\n<p>Using the formula given above:</p>\n\n<p><strong>∴ <span style=\"\">I</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em; font-size:10.5px;\">1</span><span style=\"\">&nbsp;+ I</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em; font-size:10.5px;\">2&nbsp;</span> = x + C</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "tlm69mp4g2",
+      "questionNumber": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>What is&nbsp;<span class=\"math-tex\">$\\int \\dfrac{dx}{sec^2({tan}^{-1}x)}$</span>&nbsp;equal to?</p>\n",
+      "options": [
+        "sin<sup>-1</sup> x + c",
+        "tan<sup>-1</sup> x + c",
+        "sec<sup>-1</sup> x + c",
+        "cos<sup>-1</sup> x + c"
+      ],
+      "correctOption": 1,
+      "solution": "<p>To solve the integral </p>\n<p>$$  \\int \\dfrac{dx}{\\sec^2(\\tan^{-1} x)} $$ </p>\n<p>first, recall the identity for the trigonometric function $\\sec^2 \\theta = 1 + \\tan^2 \\theta$. Applying this identity to the given integral, where $\\theta = \\tan^{-1} x$, leads to:</p>\n<p>$$  \\sec^2(\\tan^{-1} x) = 1 + \\tan^2(\\tan^{-1} x) = 1 + x^2  $$ </p>\n<p>Thus, the integral becomes:</p>\n<p>$$  \\int \\dfrac{dx}{1 + x^2}  $$ </p>\n<p>Recognize this as the standard form for the integral that results in the inverse tangent function:</p>\n<p>$$  \\int \\dfrac{dx}{1 + x^2} = \\tan^{-1} x + C  $$ </p>\n<p>Hence, the correct result for the given integral is:</p>\n<p>$$  \\tan^{-1} x + C  $$ </p>\n<p>The correct option is Option B:</p>\n<p><strong>tan<sup>-1</sup> x + c</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "tlm69mswbz",
+      "questionNumber": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is the integral of f(x) = 1 + x<sup>2</sup> + x<sup>4</sup> with respect to x<sup>2</sup>?",
+      "options": [
+        "<span class=\"math-tex\">$\\rm x + \\frac{x^3}{3}+\\frac{x^5}{5}+C$</span>",
+        "<span class=\"math-tex\">$\\rm \\frac{x^3}{3}+\\frac{x^5}{5}+C$</span>",
+        "<span class=\"math-tex\">$\\rm x^2 + \\frac{x^4}{4}+\\frac{x^6}{6}+C$</span>",
+        "<span class=\"math-tex\">$\\rm x^2 + \\frac{x^4}{2}+\\frac{x^6}{3}+C$</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>To solve the integral</p>\n<p>$$\\int \\left(1 + x^2 + x^4\\right) \\, d(x^2),$$</p>\n<p>follow these steps:</p>\n\n<p><p><strong>Substitute:</strong>  </p>\n<p>Let</p>\n<p>$$u = x^2.$$</p>\n<p>Then, the differential is</p>\n<p>$$d(x^2) = du.$$</p></p>\n<p><p><strong>Rewrite the Integrand:</strong>  </p>\n<p>Notice that:</p></p>\n\n\n<p><p>$x^2 = u$</p></p>\n<p><p>$x^4 = (x^2)^2 = u^2$</p>\n<p>Thus, the function becomes:</p>\n<p>$$1 + x^2 + x^4 = 1 + u + u^2.$$</p></p>\n\n\n<p><p><strong>Set Up the Integral:</strong>  </p>\n<p>The integral now is:</p>\n<p>$$\\int (1 + u + u^2) \\, du.$$</p></p>\n<p><p><strong>Integrate Term by Term:</strong>  </p></p>\n\n\n<p><p>$\\int 1 \\, du = u$</p></p>\n<p><p>$\\int u \\, du = \\frac{u^2}{2}$</p></p>\n<p><p>$\\int u^2 \\, du = \\frac{u^3}{3}$</p>\n<p>So, combining these results we have:</p>\n<p>$$u + \\frac{u^2}{2} + \\frac{u^3}{3} + C.$$</p></p>\n\n\n<p><p><strong>Substitute Back $u = x^2$:</strong></p>\n<p>$$x^2 + \\frac{(x^2)^2}{2} + \\frac{(x^2)^3}{3} + C = x^2 + \\frac{x^4}{2} + \\frac{x^6}{3} + C.$$</p></p>\n\n<p>Thus, the integral of $f(x) = 1 + x^2 + x^4$ with respect to $x^2$ is:</p>\n<p>$$x^2 + \\frac{x^4}{2} + \\frac{x^6}{3} + C.$$</p>\n<p>This corresponds to Option D.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "tlm69mswed",
+      "questionNumber": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "If&nbsp;<span class=\"math-tex\">$\\rm \\int \\sqrt{1 - sin 2x} \\space dx$</span>&nbsp;= A sinx + B cosx + C, where 0 &lt; x &lt;&nbsp;<span class=\"math-tex\">$\\frac{\\pi}{4}$</span>, then which one of the following is correct?",
+      "options": [
+        "A + B = 0",
+        "A + B - 2 = 0",
+        "A + B + 2 = 0",
+        "A + B - 1 = 0"
+      ],
+      "correctOption": 1,
+      "solution": "<p><strong>Concept:</strong></p>\n<p>The fundamental trigonometric identity is:</p>\n<p>$ \\sin^2 x + \\cos^2 x = 1 $</p>\n<p>The integrals of sine and cosine functions are:</p>\n<p>$ \\int \\sin x \\, dx = -\\cos x $</p>\n<p>$ \\int \\cos x \\, dx = \\sin x $</p>\n<p><strong>Calculation:</strong></p>\n<p>We need to evaluate $\\int \\sqrt{1 - \\sin 2x} \\, dx$. We assume it is expressed as $A \\sin x + B \\cos x + C$.</p>\n<p>Thus, we have:</p>\n<p>$ \\int \\sqrt{\\sin^2 x + \\cos^2 x - 2 \\sin x \\cos x} \\, dx = A \\sin x + B \\cos x + C $</p>\n<p>This simplifies to:</p>\n<p>$ \\int \\sqrt{(\\sin x - \\cos x)^2} \\, dx = A \\sin x + B \\cos x + C $</p>\n<p>Further reducing gives:</p>\n<p>$ \\int |\\sin x - \\cos x| \\, dx = A \\sin x + B \\cos x + C \\quad \\text{----(i)} $</p>\n<p>For $0 < x < \\frac{\\pi}{4}$, we know $\\sin x < \\cos x$.</p>\n<p>Thus:</p>\n<p>$ |\\sin x - \\cos x| = -\\sin x + \\cos x \\quad \\text{----(ii)} $</p>\n<p>From (i) and (ii), we derive:</p>\n<p>$ \\int (-\\sin x + \\cos x) \\, dx = A \\sin x + B \\cos x + C $</p>\n<p>This evaluates to:</p>\n<p>$ \\cos x + \\sin x + C = A \\sin x + B \\cos x + C $</p>\n<p>By comparing coefficients, we determine $A = 1$, $B = 1$, and $C = 0$.</p>\n<p><strong>Therefore, the equation $A + B - 2 = 0$ is correct.</strong></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "1lc0d4zvj",
+      "questionNumber": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$f(x) = \\int {{{{x^2}dx} \\over {(1 + {x^2})(1 + \\sqrt {1 + {x^2}} )}}} $$ and $$f(0) = 0$$, then the value of $$f(1)$$ be</p>",
+      "options": [
+        "$$\\log (1 + \\sqrt 2 )$$",
+        "$$\\log (1 + \\sqrt 2 ) - {\\pi  \\over 4}$$",
+        "$$\\log (1 + \\sqrt 2 ) + {\\pi  \\over 2}$$",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "solution": "<p>$$f(x) = \\int {{{{x^2}dx} \\over {(1 + {x^2})(1 + \\sqrt {1 + {x^2}} )}}} $$</p>\n<p>Let $$x = \\tan \\theta $$</p>\n<p>$$ \\Rightarrow dx = {\\sec ^2}\\theta d\\theta  = (1 + {x^2})d\\theta $$</p>\n<p>$$f(x) = \\int {{{{x^2}dx} \\over {(1 + {x^2})(1 + \\sqrt {1 + {x^2}} )}}} $$</p>\n<p>$$ = \\int {{{{{\\tan }^2}\\theta {{\\sec }^2}\\theta d\\theta } \\over {{{\\sec }^2}\\theta (1 + \\sec \\theta )}} = \\int {{{{{\\tan }^2}\\theta d\\theta } \\over {1 + \\sec \\theta }}} } $$</p>\n<p>$$ = \\int {{{{{\\sin }^2}\\theta d\\theta } \\over {\\cos \\theta (1 + \\cos \\theta )}}} $$</p>\n<p>$$ = \\int {{{1 - {{\\cos }^2}\\theta d\\theta } \\over {\\cos \\theta (1 + \\cos \\theta )}}} $$</p>\n<p>$$ = \\int {{{(1 - \\cos \\theta )d\\theta } \\over {\\cos \\theta }}} $$</p>\n<p>$$ = \\int {\\sec \\theta d\\theta  - \\int {d\\theta } } $$</p>\n<p>$$ = \\log (x + \\sqrt {1 + {x^2}} ) - {\\tan ^{ - 1}}x + C$$</p>\n<p>$$\\therefore$$ $$f(0) = \\log (0 + \\sqrt {1 + 0} ) - {\\tan ^{ - 1}}(0) + C$$</p>\n<p>$$0 = \\log 1 - 0 + C$$</p>\n<p>$$ \\Rightarrow C = 0$$</p>\n<p>$$\\therefore$$ $$f(1) = \\log (1 + \\sqrt {1 + {1^2}} ) - {\\tan ^{ - 1}}(1)$$</p>\n<p>$$ = \\log (1 + \\sqrt 2 ) - {\\pi  \\over 4}$$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "tlmc33hjt2",
+      "questionNumber": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is U(x) V(x) equal to?&nbsp;",
+      "options": [
+        "<span class=\"math-tex\">$\\rm\\sqrt{x^2+x^4}$</span>",
+        "<span class=\"math-tex\">$\\rm\\sqrt{x+x^3}$</span>",
+        "<span class=\"math-tex\">$\\rm \\frac{\\sqrt{x^2+x^4}}{2}$</span>",
+        "<span class=\"math-tex\">$\\rm 2\\sqrt{x^2+x^4}$</span>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>First write the integral as  </p>\n<p>$$2\\int\\frac{x^2-1}{\\sqrt{x^2+1}}\\,dx = x\\sqrt{x^2+1}-3\\ln\\bigl(x+\\sqrt{x^2+1}\\bigr)+C.$$  </p>\n<p>Hence  </p>\n<p>$$U(x)V(x)=x\\sqrt{x^2+1}=\\sqrt{x^2+x^4},$$  </p>\n<p>so the correct choice is Option 1.</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "lx7pbgg7",
+      "questionNumber": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>The value of integral $$\\int \\frac{d x}{(1+x)^{3 / 4}(x-2)^{5 / 4}}$$ is is equal to</p>",
+      "options": [
+        "$$-\\frac{3}{4}\\left(\\frac{x+1}{x-2}\\right)^{1 / 4}+C$$\n",
+        "$$-\\frac{3}{4}\\left(\\frac{x-2}{x+1}\\right)^{1 / 4}+C$$\n",
+        "$$-\\frac{4}{3}\\left(\\frac{x+1}{x-2}\\right)^{1 / 4}+C$$\n",
+        "$$-\\frac{4}{3}\\left(\\frac{x-2}{x+1}\\right)^{1 / 4}+C$$"
+      ],
+      "correctOption": 2,
+      "solution": "<p>$$\\begin{aligned}\n\\text { Let } I & =\\int \\frac{d x}{(x+1)^{3 / 4}(x-2)^{5 / 4}} \\\\\n& =\\int \\frac{d x}{\\left(\\frac{x+1}{x-2}\\right)^{3 / 4}(x-2)^2}\n\\end{aligned}$$</p>\n<p>On putting, $$\\frac{x+1}{x-2}=t \\Rightarrow \\frac{d}{d x}\\left(\\frac{x+1}{x-2}\\right)=\\frac{d t}{d x}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad \\frac{(x-2) \\frac{d}{d x}(x+1)-(x+1) \\frac{d}{d x}(x-2)}{(x-2)^2}=\\frac{d t}{d x} \\\\\n& \\Rightarrow \\quad \\frac{(x-2)(1)-(x+1)(1)}{(x-2)^2}=\\frac{d t}{d x}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad \\frac{-3}{(x-2)^2} d x=d t \\\\\n& \\text { So, } I=\\int \\frac{d t}{-3 t^{3 / 4}}=-\\frac{1}{3}\\left(\\frac{t^{-3 / 4+1}}{-\\frac{3}{4}+1}\\right)+C \\\\\n& =-\\frac{1}{3}\\left(4 t^{1 / 4}\\right)+C=-\\frac{4}{3}\\left(\\frac{x+1}{x-2}\\right)^{1 / 4}+C \\\\\n&\n\\end{aligned}$$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "lwv8majs",
+      "questionNumber": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>What is the value of $\\beta$ ?</p>",
+      "options": [
+        "<p>7</p>",
+        "<p>13</p>",
+        "<p>17</p>",
+        "<p>26</p>"
+      ],
+      "correctOption": 0,
+      "solution": "<p>To find the value of $\\beta$, we need to simplify the given integral and match it with the given expression:</p>\n\n<p>Given:\n\n<p>$$\\int \\frac{3 \\cos x + 4 \\sin x}{2 \\cos x + 5 \\sin x} dx = \\frac{\\alpha x}{29} + \\frac{\\beta}{29} \\ln |2 \\cos x + 5 \\sin x| + c$$</p></p>\n\n<p>Let's use the method of partial fractions to separate the integral. We define $u = 2 \\cos x + 5 \\sin x$. Then, the derivative $du$ is:</p>\n\n<p>$$du = -2 \\sin x \\, dx + 5 \\cos x \\, dx$$</p>\n\n<p>This implies:</p>\n\n<p>$$du = 5 \\cos x \\, dx - 2 \\sin x \\, dx$$</p>\n\n<p>It can be observed that the numerator $3 \\cos x + 4 \\sin x$ can be represented as:</p>\n\n<p>$$3 \\cos x + 4 \\sin x = A(2 \\cos x + 5 \\sin x) + B(5 \\cos x - 2 \\sin x)$$</p>\n\n<p>Now we need to solve for constants $A$ and $B$. Matching coefficients for $\\cos x$ and $\\sin x$:\n\n<p>$3 = 2A + 5B$</p>\n\n<p>$4 = 5A - 2B$</p>\n\n<p>Solving the system of equations:</p></p>\n\n<p>From the first equation, solve for $A$:\n\n<p>$$2A + 5B = 3$$</p>\n\n<p>$$A = \\frac{3 - 5B}{2}$$</p></p>\n\n<p>Substitute into the second equation:\n\n<p>$$4 = 5\\left(\\frac{3 - 5B}{2}\\right) - 2B$$</p>\n\n<p>$$4 = \\frac{15 - 25B}{2} - 2B$$</p>\n\n<p>$$8 = 15 - 25B - 4B$$</p>\n\n<p>$$8 = 15 - 29B$$</p>\n\n<p>$$29B = 7$$</p>\n\n<p>$$B = \\frac{7}{29}$$</p>\n\n<p>Now we found the value of $B$ which is $\\beta$. So, the value of $\\beta$ is 7.</p>\n\n<p>Thus, the correct option is: <b>Option A</b></p>",
+      "marks": 2.5,
+      "negativeMarks": -0.83,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "m6q1wfu5",
+      "questionNumber": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>(a) Find: $\\int \\cos ^3 x e^{\\log \\sin x} d x$</p>\n<p>OR</p>\n<p>(b) Find: $\\int \\frac{1}{5+4 x-x^2} d x$</p>",
+      "options": [],
+      "correctOption": 0,
+      "solution": "<p>$$\\begin{array}{ll}\n\\text { (a) Let } & I=\\int \\cos ^3 x e^{\\log \\sin x} d x \\\\\n\\text { or } & I=\\int \\cos ^3 x \\sin x d x\n\\end{array}$$</p>\n<p>Put $\\cos x=t \\Rightarrow-\\sin x d x=d t$</p>\n<p>$$\\therefore \\quad I=-\\int t^3 d t$$</p>\n<p>or, $$I=-\\frac{t^4}{4}+C$$</p>\n<p>or, $$I=-\\frac{\\cos ^4 x}{4}+C$$</p>\n<p>OR</p>\n<p>(b) Let</p>\n<p>$$\\begin{aligned}\nI & =\\int \\frac{d x}{5+4 x-x^2} \\\\\n& =\\int \\frac{d x}{5+4-4+4 x-x^2} \\\\\n& =\\int \\frac{d x}{(3)^2-(x-2)^2} \\\\\n& =\\frac{1}{2 \\times 3} \\log \\left|\\frac{3+(x-2)}{3-(x-2)}\\right|+C \\\\\n{[\\text { using }} & \\left.\\int \\frac{1}{a^2-x^2} d x=\\frac{1}{2 a} \\log \\left|\\frac{a+x}{a-x}\\right|+C\\right] \\\\\n& =\\frac{1}{6} \\log \\left|\\frac{x+1}{5-x}\\right|+C\n\\end{aligned}$$</p>",
+      "marks": 2,
+      "negativeMarks": -1,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "m6q1wbqc",
+      "questionNumber": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>$\\int \\frac{1}{x(\\log x)^2} d x$ is equal to</p>",
+      "options": [
+        " $2 \\log (\\log x)+c$\n",
+        " $-\\frac{1}{\\log x}+c$\n",
+        " $\\frac{(\\log x)^3}{3}+c$\n",
+        " $\\frac{3}{(\\log x)^3}+c$"
+      ],
+      "correctOption": 1,
+      "solution": "<p>$$\\begin{aligned}\n& \\text { Let } \\quad I=\\int \\frac{1}{x(\\log x)^2}=d x \\\\\n& \\log x=t \\Rightarrow \\frac{1}{x} d x=d t\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\therefore & I=\\int \\frac{d t}{t^2}=-\\frac{1}{t}+C \\\\\n\\text { Thus, } & I=-\\frac{1}{\\log x}+C\n\\end{array}$$</p>",
+      "marks": 1,
+      "negativeMarks": -1,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "tlmnk0kpml",
+      "questionNumber": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "What is u + v equal to?",
+      "options": [
+        "<span class=\"math-tex\">$-\\frac{du}{dx}$</span>",
+        "<span class=\"math-tex\">$-\\frac{dv}{dx}$</span>",
+        "<span class=\"math-tex\">$\\frac{du}{dx}$</span>",
+        "<span class=\"math-tex\">$\\frac{dv}{dx}$</span>"
+      ],
+      "correctOption": 3,
+      "solution": "<p>Given</p>\n<p>$$ u=\\int e^x \\cos x \\, dx \\quad \\text{and} \\quad v=\\int e^x \\sin x \\, dx $$</p>\n<p>we differentiate both with respect to $x$:</p>\n<p>$$ \\frac{du}{dx}=e^x \\cos x $$</p>\n<p>and</p>\n<p>$$ \\frac{dv}{dx}=e^x \\sin x $$</p>\n<p>Now,</p>\n<p>$$ u=\\int e^x \\cos x \\, dx $$</p>\n<p>Using integration by parts,</p>\n<p>$$ u=e^x \\cos x+\\int e^x \\sin x \\, dx $$</p>\n<p>So,</p>\n<p>$$ u=e^x \\cos x+v $$</p>\n<p>Similarly,</p>\n<p>$$ v=\\int e^x \\sin x \\, dx $$</p>\n<p>Again by integration by parts,</p>\n<p>$$ v=e^x \\sin x-\\int e^x \\cos x \\, dx $$</p>\n<p>So,</p>\n<p>$$ v=e^x \\sin x-u $$</p>\n<p>Now add these two equations:</p>\n<p>$$ u+v=(e^x \\cos x+v)+(e^x \\sin x-u) $$</p>\n<p>But a simpler way is to use the standard results:</p>\n<p>$$ u=\\frac{e^x}{2}(\\sin x+\\cos x) $$</p>\n<p>$$ v=\\frac{e^x}{2}(\\sin x-\\cos x) $$</p>\n<p>Therefore,</p>\n<p>$$ u+v=\\frac{e^x}{2}(\\sin x+\\cos x)+\\frac{e^x}{2}(\\sin x-\\cos x) $$</p>\n<p>$$ u+v=e^x \\sin x $$</p>\n<p>And since</p>\n<p>$$ \\frac{dv}{dx}=e^x \\sin x $$</p>\n<p>we get</p>\n<p>$$ u+v=\\frac{dv}{dx} $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{\\text{Option 4: } \\frac{dv}{dx}} $$</p>",
+      "marks": 2.5,
+      "negativeMarks": -0.833,
+      "topic": "Indefinite Integration"
+    },
+    {
+      "id": "lx7v85s2",
+      "questionNumber": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "questionType": "MCQ",
+      "questionText": "<p>Let $$f(x)=\\int \\frac{\\sqrt{x}}{(1+x)^2} d x$$, where $$x \\geq 0$$. Then, $$f(3)-f(1)$$ is equal to</p>",
+      "options": [
+        "$$\\frac{\\pi}{12}+\\frac{1}{2}-\\frac{\\sqrt{3}}{4}$$\n",
+        "$$-\\frac{\\pi}{6}+\\frac{1}{2}+\\frac{\\sqrt{3}}{4}$$\n",
+        "$$-\\frac{\\pi}{12}+\\frac{1}{2}+\\frac{\\sqrt{3}}{4}$$\n",
+        "$$\\frac{\\pi}{6}+\\frac{1}{2}-\\frac{\\sqrt{3}}{4}$$"
+      ],
+      "correctOption": 0,
+      "solution": "<p>$$\\text { We have, } f(x)=\\int \\frac{\\sqrt{x}}{(1+x)^2} d x \\text {, where } x \\geq 0$$</p>\n<p>$$\\text { Let } I=\\int \\frac{\\sqrt{x}}{(1+x)^2} d x$$</p>\n<p>On putting, $$x=\\tan ^2 \\theta \\Rightarrow d x=2 \\tan \\theta \\sec ^2 \\theta d \\theta$$</p>\n<p>$$\\begin{aligned}\n\\therefore \\quad & =\\int \\frac{(\\tan \\theta)\\left(2 \\tan \\theta \\sec ^2 \\theta\\right)}{\\left(1+\\tan ^2 \\theta\\right)^2} d \\theta \\\\\n& =\\int \\frac{2 \\tan ^2 \\theta \\sec ^2 \\theta}{\\sec ^4 \\theta} d \\theta \\\\\n& =2 \\int \\sin ^2 \\theta d \\theta \\\\\n& =2 \\int \\frac{1-\\cos 2 \\theta}{2} d \\theta \\\\\n& =\\theta-\\frac{\\sin 2 \\theta}{2}+C \\\\\n& =\\theta-\\frac{\\tan \\theta}{1+\\tan ^2 \\theta}+C=\\tan ^{-1} \\sqrt{x}-\\frac{\\sqrt{x}}{1+x}+C\n\\end{aligned}\n$$</p>\n<p>$$\n\\begin{aligned}\n& \\therefore f(3)-f(1)=\\left(\\tan ^{-1} \\sqrt{3}-\\frac{\\sqrt{3}}{1+3}+C\\right) \\\\\n& -\\left(\\tan ^{-1} \\sqrt{1}-\\frac{\\sqrt{1}}{1+1}+C\\right) \\\\\n& =\\frac{\\pi}{3}-\\frac{\\pi}{4}+\\frac{1}{2}-\\frac{\\sqrt{3}}{4}=\\frac{\\pi}{12}+\\frac{1}{2}-\\frac{\\sqrt{3}}{4}\n\\end{aligned}\n$$</p>",
+      "marks": 3,
+      "negativeMarks": -1,
+      "topic": "Indefinite Integration"
+    }
+  ]
+}

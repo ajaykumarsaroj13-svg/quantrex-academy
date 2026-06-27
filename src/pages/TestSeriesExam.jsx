@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import '../components/NTAExamInterface.css';
 import TeacherSolution from '../components/TeacherSolution';
+import { fixExamGoalHtml } from '../utils/htmlCleaner';
 
 // ─── Constants ────────────────────────────────────────────────
 const STATUS = {
@@ -550,8 +551,18 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
 
           {/* Question text */}
           <div className="nta-question-text">
+            <div className="flex flex-wrap gap-2 mb-4">
+              {(question.shift || question.title || question.year) && (
+                <span className="px-2 py-0.5 bg-[#e8f5e9] text-[#2e7d32] text-xs font-bold rounded border border-green-200">
+                  {question.shift || question.title || question.year}
+                </span>
+              )}
+              {isMultiCorrect && <span className="px-2 py-0.5 bg-purple-100 text-purple-800 text-xs font-bold rounded border border-purple-200">[MULTI CORRECT]</span>}
+              {!isMultiCorrect && question?.questionType !== 'NUMERICAL' && <span className="px-2 py-0.5 bg-blue-100 text-blue-800 text-xs font-bold rounded border border-blue-200">[SINGLE CORRECT]</span>}
+              {question?.questionType === 'NUMERICAL' && <span className="px-2 py-0.5 bg-orange-100 text-orange-800 text-xs font-bold rounded border border-orange-200">[NUMERICAL]</span>}
+            </div>
             <div className="nta-q-content tex2jax_process"
-              dangerouslySetInnerHTML={{ __html: question?.questionText || '' }}
+              dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(question?.questionText || question?.question || '') }}
             />
           </div>
 
@@ -561,7 +572,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
               <p className="nta-numerical-hint">Enter your integer/numerical answer:</p>
               <div className="nta-numerical-input-wrapper">
                 <input
-                  type="number"
+                  type="text"
                   className="nta-numerical-input"
                   value={numericalInput}
                   onChange={e => {
@@ -621,7 +632,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
                     <div className="nta-option-text tex2jax_process">
                       {isCorrect && <style>{`#opt-${idx} * { color: #064e3b !important; fill: #064e3b !important; font-weight: bold !important; }`}</style>}
                       {isWrong && <style>{`#opt-${idx} * { color: #7f1d1d !important; fill: #7f1d1d !important; font-weight: bold !important; }`}</style>}
-                      <div id={`opt-${idx}`} dangerouslySetInnerHTML={{ __html: opt }} />
+                      <div id={`opt-${idx}`} dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(opt) }} />
                     </div>
                     {isCorrect && <span className="nta-correct-tick">✓</span>}
                     {isWrong && <span className="nta-wrong-cross">✗</span>}
@@ -635,7 +646,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           {mode === 'practice' && question?.questionType !== 'NUMERICAL' && isAnswered && !answerChecked && (
             <div className="nta-check-answer-wrap">
               <button className="nta-check-answer-btn" onClick={checkAnswer}>
-                ✔ Check Answer
+                ✓ Check Answer
               </button>
             </div>
           )}
@@ -643,7 +654,21 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           {/* Practice mode: Solution box */}
           {mode === 'practice' && answerChecked && showSolution && question?.solution && (
             <div className="mt-6">
-              <TeacherSolution html={question.solution} />
+              <TeacherSolution
+                html={question.solution}
+                correctOptionLabel={(() => {
+                  if (question?.questionType === 'NUMERICAL') return question.correctAnswer;
+                  if (isMultiCorrect) {
+                    const correctArr = Array.isArray(question.correctAnswer) ? question.correctAnswer : [question.correctOptionIndex];
+                    return correctArr.filter(i => i !== undefined && i !== -1).map(i => String.fromCharCode(65 + i)).join(', ');
+                  }
+                  if (question.correctOptionIndex !== undefined && question.correctOptionIndex >= 0) {
+                    return String.fromCharCode(65 + question.correctOptionIndex);
+                  }
+                  return null;
+                })()}
+                isLight={isLight}
+              />
             </div>
           )}
 

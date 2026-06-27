@@ -87,9 +87,10 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
   useEffect(() => {
     if (selectedSyllabusClass === 'jee-advanced') {
       setChapterTab('pyqs');
-      const currentSubject = selectedSyllabusSubject || Object.keys(syllabus['jee-advanced']?.subjects || {})[0];
-      if (!selectedSyllabusChapterId && syllabus['jee-advanced']?.subjects?.[currentSubject]?.chapters?.length > 0) {
-        setSelectedSyllabusChapterId(syllabus['jee-advanced'].subjects[currentSubject].chapters[0].id);
+      const actualClassKey = 'advanced';
+      const currentSubject = selectedSyllabusSubject || Object.keys(syllabus[actualClassKey]?.subjects || {})[0];
+      if (!selectedSyllabusChapterId && syllabus[actualClassKey]?.subjects?.[currentSubject]?.chapters?.length > 0) {
+        setSelectedSyllabusChapterId(syllabus[actualClassKey].subjects[currentSubject].chapters[0].id);
       }
     }
   }, [selectedSyllabusClass, syllabus]);
@@ -292,7 +293,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                           setActivePyqData(null);
                           
                           // Default to first subject when class changes
-                          const subjects = syllabus[cls.id]?.subjects || {};
+                          const actualClassKey = cls.id === 'jee-mains' ? 'mains' : cls.id === 'jee-advanced' ? 'advanced' : cls.id;
+                          const subjects = syllabus[actualClassKey]?.subjects || {};
                           const firstSubjectKey = Object.keys(subjects)[0];
                           if (firstSubjectKey) {
                             setSelectedSyllabusSubject(firstSubjectKey);
@@ -312,161 +314,168 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   </div>
 
                   {/* Subject Selection */}
-                  {Object.keys(syllabus[selectedSyllabusClass]?.subjects || {}).length > 0 && (
-                    <div className="flex flex-wrap gap-2">
-                      {Object.entries(syllabus[selectedSyllabusClass]?.subjects || {}).map(([subjKey, subjVal]) => (
-                        <button
-                          key={subjKey}
-                          onClick={() => {
-                            setSelectedSyllabusSubject(subjKey);
-                            setSelectedSyllabusChapterId('');
-                            setChapterTab('videos');
-                            setExamGoalOverviewConfig(null);
-                            setActivePyqData(null);
-                          }}
-                          className={`py-1.5 px-4 text-xs font-bold uppercase rounded-full border transition-all duration-300 ${
-                            selectedSyllabusSubject === subjKey
-                              ? 'bg-cyan-500/10 border-cyan-500/30 text-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.1)]'
-                              : 'bg-white/5 border-white/5 text-gray-400 hover:text-gray-200 hover:bg-white/10'
-                          }`}
-                        >
-                          {subjVal.label || subjKey}
-                        </button>
-                      ))}
-                    </div>
-                  )}
+                  {(() => {
+                      const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
+                      return Object.keys(syllabus[actualClassKey]?.subjects || {}).length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {Object.entries(syllabus[actualClassKey]?.subjects || {}).map(([subjKey, subjVal]) => (
+                          <button
+                            key={subjKey}
+                            onClick={() => {
+                              setSelectedSyllabusSubject(subjKey);
+                              setSelectedSyllabusChapterId('');
+                              setChapterTab('videos');
+                              setExamGoalOverviewConfig(null);
+                              setActivePyqData(null);
+                            }}
+                            className={`py-1.5 px-4 text-xs font-bold uppercase rounded-full border transition-all duration-300 ${
+                              selectedSyllabusSubject === subjKey
+                                ? 'bg-cyan-500/10 border-cyan-500/30 text-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.1)]'
+                                : 'bg-white/5 border-white/5 text-gray-400 hover:text-gray-200 hover:bg-white/10'
+                            }`}
+                          >
+                            {subjVal.label || subjKey}
+                          </button>
+                        ))}
+                      </div>
+                    );
+                  })()}
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-2">
                   <div className="md:col-span-1 space-y-3 border-r border-white/5 pr-4 max-h-[70vh] overflow-y-auto custom-scrollbar">
                     <span className="text-[10px] text-cyan-400/80 uppercase font-black tracking-widest block mb-4 border-b border-white/10 pb-2">Chapters List</span>
-                    {syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters?.map((ch, index) => {
-                      const isActive = selectedSyllabusChapterId === ch.id;
-                      
-                      const premiumGradients = [
-                        'from-[#FF416C] to-[#FF4B2B]', // Vibrant Red-Orange
-                        'from-[#4776E6] to-[#8E54E9]', // Deep Blue-Purple
-                        'from-[#00B4DB] to-[#0083B0]', // Ocean Blue
-                        'from-[#f12711] to-[#f5af19]', // Fire
-                        'from-[#8E2DE2] to-[#4A00E0]', // Mystical Purple
-                        'from-[#11998e] to-[#38ef7d]', // Emerald
-                        'from-[#FC466B] to-[#3F5EFB]', // Pink Blue
-                        'from-[#00c6ff] to-[#0072ff]', // Sky Blue
-                        'from-[#F09819] to-[#EDDE5D]', // Golden Yellow
-                      ];
-                      
-                      const colorTheme = premiumGradients[index % premiumGradients.length];
-                      
-                      let icon = "➗";
-                      let lowerTitle = ch.title.toLowerCase();
-                      if (lowerTitle.includes("sets") || lowerTitle.includes("relations")) icon = "∪";
-                      else if (lowerTitle.includes("function")) icon = "ƒ(x)";
-                      else if (lowerTitle.includes("logarithm")) icon = "㏒";
-                      else if (lowerTitle.includes("trigonometr") || lowerTitle.includes("heights") || lowerTitle.includes("inverse")) icon = "θ";
-                      else if (lowerTitle.includes("quadratic")) icon = "x²";
-                      else if (lowerTitle.includes("complex")) icon = "𝑖";
-                      else if (lowerTitle.includes("permutation") || lowerTitle.includes("combination")) icon = "ⁿCₖ";
-                      else if (lowerTitle.includes("binomial")) icon = "(x+y)ⁿ";
-                      else if (lowerTitle.includes("sequence") || lowerTitle.includes("progression") || lowerTitle.includes("series")) icon = "∑";
-                      else if (lowerTitle.includes("straight line")) icon = "y=mx";
-                      else if (lowerTitle.includes("circle") || lowerTitle.includes("conic") || lowerTitle.includes("parabola") || lowerTitle.includes("ellipse") || lowerTitle.includes("hyperbola")) icon = "⦾";
-                      else if (lowerTitle.includes("limit") || lowerTitle.includes("continuity") || lowerTitle.includes("differentiability")) icon = "lim";
-                      else if (lowerTitle.includes("derivative") || lowerTitle.includes("differentiation")) icon = "dy/dx";
-                      else if (lowerTitle.includes("integral") || lowerTitle.includes("integration") || lowerTitle.includes("area")) icon = "∫";
-                      else if (lowerTitle.includes("differential equation")) icon = "∇";
-                      else if (lowerTitle.includes("vector") || lowerTitle.includes("3d")) icon = "v⃗";
-                      else if (lowerTitle.includes("matri") || lowerTitle.includes("determinant")) icon = "[ ]";
-                      else if (lowerTitle.includes("probability")) icon = "P(E)";
-                      else if (lowerTitle.includes("statistics")) icon = "σ";
-                      else if (lowerTitle.includes("mathematical reasoning")) icon = "p→q";
-
-                      return (
-                        <button
-                          key={ch.id}
-                          onClick={() => {
-                          setSelectedSyllabusChapterId(ch.id);
-                          setChapterTab('pyqs');
+                    {(() => {
+                        const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
+                        return syllabus[actualClassKey]?.subjects?.[selectedSyllabusSubject]?.chapters?.map((ch, index) => {
+                          const isActive = selectedSyllabusChapterId === ch.id;
                           
-                          setIsPyqLoading(true);
-                          setActivePyqData(null);
+                          const premiumGradients = [
+                            'from-[#FF416C] to-[#FF4B2B]', // Vibrant Red-Orange
+                            'from-[#4776E6] to-[#8E54E9]', // Deep Blue-Purple
+                            'from-[#00B4DB] to-[#0083B0]', // Ocean Blue
+                            'from-[#f12711] to-[#f5af19]', // Fire
+                            'from-[#8E2DE2] to-[#4A00E0]', // Mystical Purple
+                            'from-[#11998e] to-[#38ef7d]', // Emerald
+                            'from-[#FC466B] to-[#3F5EFB]', // Pink Blue
+                            'from-[#00c6ff] to-[#0072ff]', // Sky Blue
+                            'from-[#F09819] to-[#EDDE5D]', // Golden Yellow
+                          ];
+                          
+                          const colorTheme = premiumGradients[index % premiumGradients.length];
+                          
+                          let icon = "➗";
+                          let lowerTitle = ch.title.toLowerCase();
+                          if (lowerTitle.includes("sets") || lowerTitle.includes("relations")) icon = "∪";
+                          else if (lowerTitle.includes("function")) icon = "ƒ(x)";
+                          else if (lowerTitle.includes("logarithm")) icon = "㏒";
+                          else if (lowerTitle.includes("trigonometr") || lowerTitle.includes("heights") || lowerTitle.includes("inverse")) icon = "θ";
+                          else if (lowerTitle.includes("quadratic")) icon = "x²";
+                          else if (lowerTitle.includes("complex")) icon = "𝑖";
+                          else if (lowerTitle.includes("permutation") || lowerTitle.includes("combination")) icon = "ⁿCₖ";
+                          else if (lowerTitle.includes("binomial")) icon = "(x+y)ⁿ";
+                          else if (lowerTitle.includes("sequence") || lowerTitle.includes("progression") || lowerTitle.includes("series")) icon = "∑";
+                          else if (lowerTitle.includes("straight line")) icon = "y=mx";
+                          else if (lowerTitle.includes("circle") || lowerTitle.includes("conic") || lowerTitle.includes("parabola") || lowerTitle.includes("ellipse") || lowerTitle.includes("hyperbola")) icon = "⦾";
+                          else if (lowerTitle.includes("limit") || lowerTitle.includes("continuity") || lowerTitle.includes("differentiability")) icon = "lim";
+                          else if (lowerTitle.includes("derivative") || lowerTitle.includes("differentiation")) icon = "dy/dx";
+                          else if (lowerTitle.includes("integral") || lowerTitle.includes("integration") || lowerTitle.includes("area")) icon = "∫";
+                          else if (lowerTitle.includes("differential equation")) icon = "∇";
+                          else if (lowerTitle.includes("vector") || lowerTitle.includes("3d")) icon = "v⃗";
+                          else if (lowerTitle.includes("matri") || lowerTitle.includes("determinant")) icon = "[ ]";
+                          else if (lowerTitle.includes("probability")) icon = "P(E)";
+                          else if (lowerTitle.includes("statistics")) icon = "σ";
+                          else if (lowerTitle.includes("mathematical reasoning")) icon = "p→q";
 
-                          const slug = ch.url ? ch.url.split('/').pop() : ch.id;
-                          const fetchSlug = selectedSyllabusClass === 'jee-advanced' ? 'adv-' + slug : slug;
-                          fetch(import.meta.env.BASE_URL + `data/questions/${fetchSlug}.json?_t=${Date.now()}`)
-                            .then(res => res.json())
-                            .then(data => {
-                              if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
-                                setActivePyqData(data);
-                                return;
-                              }
-                              const topicsMap = {};
-                              const topicsList = [];
-                              const questionsArray = Array.isArray(data) ? data : (data.data || []);
-                              if (questionsArray.length > 0) {
-                                questionsArray.forEach(q => {
-                                  if (!q.id) q.id = q.question_id || q._id || `q_${Math.random().toString(36).slice(2)}`;
-                                  if (!q.correctAnswer && q.answer) q.correctAnswer = q.answer;
-                                  let tName = q.topic || 'General';
-                                  if (tName === slug || tName === ch.id) tName = 'All Questions';
-                                  const tId = tName.toLowerCase().replace(/\s+/g, '_');
-                                  if (!topicsMap[tId]) {
-                                    topicsMap[tId] = [];
-                                    topicsList.push({ id: tId, name: tName });
+                          return (
+                            <button
+                              key={ch.id}
+                              onClick={() => {
+                              setSelectedSyllabusChapterId(ch.id);
+                              setChapterTab('pyqs');
+                              
+                              setIsPyqLoading(true);
+                              setActivePyqData(null);
+
+                              const slug = ch.url ? ch.url.split('/').pop() : ch.id;
+                              const fetchSlug = selectedSyllabusClass === 'jee-advanced' ? 'adv-' + slug : slug;
+                              fetch(import.meta.env.BASE_URL + `data/questions/${fetchSlug}.json?_t=${Date.now()}`)
+                                .then(res => res.json())
+                                .then(data => {
+                                  if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
+                                    setActivePyqData(data);
+                                    return;
                                   }
-                                  topicsMap[tId].push(q);
-                                });
-                              }
-                              setActivePyqData({
-                                topics: topicsList.length > 0 ? topicsList : [{ id: 'general', name: 'General Questions' }],
-                                questions: Object.keys(topicsMap).length > 0 ? topicsMap : { 'general': [] }
-                              });
-                            })
-                            .catch(err => {
-                              console.error('Error fetching PYQs:', err);
-                              setActivePyqData({ topics: [], questions: {} });
-                            })
-                            .finally(() => setIsPyqLoading(false));
+                                  const topicsMap = {};
+                                  const topicsList = [];
+                                  const questionsArray = Array.isArray(data) ? data : (data.data || []);
+                                  if (questionsArray.length > 0) {
+                                    questionsArray.forEach(q => {
+                                      if (!q.id) q.id = q.question_id || q._id || `q_${Math.random().toString(36).slice(2)}`;
+                                      if (!q.correctAnswer && q.answer) q.correctAnswer = q.answer;
+                                      let tName = q.topic || 'General';
+                                      if (tName === slug || tName === ch.id) tName = 'All Questions';
+                                      const tId = tName.toLowerCase().replace(/\s+/g, '_');
+                                      if (!topicsMap[tId]) {
+                                        topicsMap[tId] = [];
+                                        topicsList.push({ id: tId, name: tName });
+                                      }
+                                      topicsMap[tId].push(q);
+                                    });
+                                  }
+                                  setActivePyqData({
+                                    topics: topicsList.length > 0 ? topicsList : [{ id: 'general', name: 'General Questions' }],
+                                    questions: Object.keys(topicsMap).length > 0 ? topicsMap : { 'general': [] }
+                                  });
+                                })
+                                .catch(err => {
+                                  console.error('Error fetching PYQs:', err);
+                                  setActivePyqData({ topics: [], questions: {} });
+                                })
+                                .finally(() => setIsPyqLoading(false));
 
-                          setExamGoalOverviewConfig({ id: ch.id, title: ch.title, startTab: 'topic' });
-                        }} className={`relative w-full p-3.5 pl-4 rounded-2xl text-[13px] text-left font-bold transition-all duration-300 flex items-center gap-3.5 overflow-hidden group border shadow-sm hover:-translate-y-0.5 ${
-                            isActive 
-                              ? `bg-[#13162b] text-white border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.5)]` 
-                              : `bg-cyberdark/40 text-gray-300 border-white/5 hover:bg-[#1a1f3c] hover:border-white/10 hover:shadow-lg`
-                          }`}
-                        >
-                          {/* Active state animated background glow */}
-                          {isActive && (
-                            <div className={`absolute inset-0 bg-gradient-to-r ${colorTheme} opacity-10 pointer-events-none`} />
-                          )}
-                          
-                          {/* Colored left strip border indicator */}
-                          <div className={`absolute left-0 top-0 bottom-0 w-1.5 transition-all duration-300 ${isActive ? `bg-gradient-to-b ${colorTheme}` : 'bg-transparent group-hover:bg-white/10'}`} />
-                          
-                          {/* Sleek icon box */}
-                          <span className={`flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-[13px] font-black font-mono transition-all duration-300 shadow-inner ${
-                            isActive 
-                              ? `bg-gradient-to-br ${colorTheme} text-white shadow-md` 
-                              : `bg-black/50 text-gray-400 border border-white/5 group-hover:text-white group-hover:bg-gradient-to-br group-hover:${colorTheme} group-hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]`
-                          }`}>
-                            {icon}
-                          </span>
-                          <span className={`truncate flex-1 tracking-wide ${isActive ? 'drop-shadow-sm font-extrabold text-[13.5px]' : ''}`}>{ch.title}</span>
-                          
-                          {/* Tiny arrow indicator for active state */}
-                          {isActive && (
-                            <span className={`absolute right-3 opacity-80 flex items-center text-white drop-shadow-sm`}>
-                              <ArrowRight className="w-4 h-4" />
-                            </span>
-                          )}
-                        </button>
-                      );
-                    })}
+                              setExamGoalOverviewConfig({ id: ch.id, title: ch.title, startTab: 'topic' });
+                            }} className={`relative w-full p-3.5 pl-4 rounded-2xl text-[13px] text-left font-bold transition-all duration-300 flex items-center gap-3.5 overflow-hidden group border shadow-sm hover:-translate-y-0.5 ${
+                                isActive 
+                                  ? `bg-[#13162b] text-white border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.5)]` 
+                                  : `bg-cyberdark/40 text-gray-300 border-white/5 hover:bg-[#1a1f3c] hover:border-white/10 hover:shadow-lg`
+                              }`}
+                            >
+                              {/* Active state animated background glow */}
+                              {isActive && (
+                                <div className={`absolute inset-0 bg-gradient-to-r ${colorTheme} opacity-10 pointer-events-none`} />
+                              )}
+                              
+                              {/* Colored left strip border indicator */}
+                              <div className={`absolute left-0 top-0 bottom-0 w-1.5 transition-all duration-300 ${isActive ? `bg-gradient-to-b ${colorTheme}` : 'bg-transparent group-hover:bg-white/10'}`} />
+                              
+                              {/* Sleek icon box */}
+                              <span className={`flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-[13px] font-black font-mono transition-all duration-300 shadow-inner ${
+                                isActive 
+                                  ? `bg-gradient-to-br ${colorTheme} text-white shadow-md` 
+                                  : `bg-black/50 text-gray-400 border border-white/5 group-hover:text-white group-hover:bg-gradient-to-br group-hover:${colorTheme} group-hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]`
+                              }`}>
+                                {icon}
+                              </span>
+                              <span className={`truncate flex-1 tracking-wide ${isActive ? 'drop-shadow-sm font-extrabold text-[13.5px]' : ''}`}>{ch.title}</span>
+                              
+                              {/* Tiny arrow indicator for active state */}
+                              {isActive && (
+                                <span className={`absolute right-3 opacity-80 flex items-center text-white drop-shadow-sm`}>
+                                  <ArrowRight className="w-4 h-4" />
+                                </span>
+                              )}
+                            </button>
+                          );
+                        });
+                      })()}
                   </div>
 
                     <div className="md:col-span-3">
                       {selectedSyllabusChapterId ? (
                         (() => {
-                          const chapter = syllabus[selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters?.find(ch => ch.id === selectedSyllabusChapterId);
+                          const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
+                          const chapter = syllabus[actualClassKey]?.subjects?.[selectedSyllabusSubject]?.chapters?.find(ch => ch.id === selectedSyllabusChapterId);
                           if (!chapter) return null;
                           return (
                             <div className="space-y-6 w-full animate-fade-in">
@@ -687,7 +696,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-blue-600"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
                                            </div>
                                            <div>
-                                             <h4 className="text-gray-800 font-bold text-lg">{chapter.title || 'Sets and Relation'}</h4>
+                                             <h4 className="text-gray-800 font-bold text-lg">{chapter.title || 'Chapter Questions'}</h4>
                                              <p className="text-gray-500 text-sm font-medium">Previous Year Questions</p>
                                            </div>
                                          </div>
