@@ -111,7 +111,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
     setPurchasedList(list);
 
     const loadTests = async () => {
-      const activeData = testCategory === 'jee-advanced' ? (testsData?.advanced || []) : (testsData?.mains || []);
+      const activeData = testCategory === 'jee-advanced' ? (testsData?.advanced || []) : testCategory === 'nda' ? (testsData?.nda || []) : (testsData?.mains || []);
       setTests(activeData);
       localStorage.setItem('quantrex_tests', JSON.stringify(activeData));
     };
@@ -839,7 +839,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
             {activeTab === 'tests' && (
               <div className="space-y-6">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                  <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">JEE Test Series Portal</h3>
+                  <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">{testCategory === 'nda' ? 'NDA' : 'JEE'} Test Series Portal</h3>
                   <div className="flex bg-obsidian/60 p-1 border border-white/5 rounded-lg">
                     <button
                       onClick={() => setTestCategory('jee-mains')}
@@ -852,6 +852,12 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                       className={`px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'jee-advanced' ? 'bg-gold text-obsidian shadow-[0_0_10px_rgba(255,215,0,0.3)]' : 'text-gray-400 hover:text-white'}`}
                     >
                       JEE Advanced
+                    </button>
+                    <button
+                      onClick={() => setTestCategory('nda')}
+                      className={`px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'nda' ? 'bg-green-500 text-obsidian shadow-[0_0_10px_rgba(34,197,94,0.3)]' : 'text-gray-400 hover:text-white'}`}
+                    >
+                      NDA
                     </button>
                   </div>
                 </div>

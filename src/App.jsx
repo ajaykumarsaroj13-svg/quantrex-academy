@@ -130,7 +130,20 @@ export default function App() {
   });
   useEffect(() => {
     loadDbFromBlob('testsData').then(data => {
-      if (data && data.mains && data.advanced) { setTestsData(data); localStorage.setItem('quantrex_tests_data_v2', JSON.stringify(data)); }
+      if (!data) return;
+      // Normalize: if data is already structured { mains, advanced }, use it
+      if (data.mains && data.advanced) {
+        setTestsData(data);
+        localStorage.setItem('quantrex_tests_data_v2', JSON.stringify(data));
+      } else if (Array.isArray(data)) {
+        // Flat array: split by examType
+        const mains = data.filter(t => (t.examType || '').toLowerCase().includes('main'));
+        const advanced = data.filter(t => (t.examType || '').toLowerCase().includes('advanced'));
+        const nda = data.filter(t => (t.examType || '').toLowerCase().includes('nda'));
+        const structured = { mains, advanced, nda };
+        setTestsData(structured);
+        localStorage.setItem('quantrex_tests_data_v2', JSON.stringify(structured));
+      }
     });
   }, []);
 
