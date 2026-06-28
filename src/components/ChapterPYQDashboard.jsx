@@ -24,8 +24,15 @@ import BookmarkGroupModal from './BookmarkGroupModal';
 // Strip LaTeX delimiters for plain text preview
 const stripLatex = (html) => {
   if (!html) return '';
+  let text = html;
+  if (typeof text === 'object') {
+    text = text.en?.content || text.en?.questionText || text.en?.direction || text.content || text.questionText || '';
+  }
+  if (typeof text !== 'string') {
+    text = String(text);
+  }
   // Remove display math $$...$$
-  let text = html.replace(/\$\$[^$]*\$\$/g, '[Math]');
+  text = text.replace(/\$\$[^$]*\$\$/g, '[Math]');
   // Remove inline math $...$
   text = text.replace(/\$[^$]*\$/g, '[Math]');
   // Remove \(...\) inline math

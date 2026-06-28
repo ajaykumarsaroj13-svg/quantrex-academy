@@ -11,7 +11,8 @@
     "options": [],
     "solution": "Given, $f(x)=\\sum_\\limits{k=1}^{10} k x^{k}$\n<br/><br/>$$\n\\begin{aligned}\n& f(x)=x+2 x^2+\\ldots \\ldots \\ldots+10 x^{10} \\\\\\\\\n& f(x) . x=x^2+2 x^3+\\ldots \\ldots \\ldots+9 x^{10}+10 x^{11} \\\\\\\\\n& f(x)(1-x)=x+x^2+x^3+\\ldots \\ldots \\ldots+x^{10}-10 x^{11} \\\\\\\\\n& \\therefore f(x)=\\frac{x\\left(1-x^{10}\\right)}{(1-x)^2}-\\frac{10 x^{11}}{(1-x)}\n\\end{aligned}\n$$\n<br/><br/>$$ \\Rightarrow $$ $$\nf(x)=\\frac{x-x^{11}-10 x^{11}+10 x^{12}}{(1-x)^2} = \\frac{10 x^{12}-11 x^{11}+x}{(1-x)^2}\n$$\n<br/><br/>So, \n<br/><br/>$$\n\\begin{aligned}\n& f(2)=2\\left(1-2^{10}\\right)+10 \\cdot 2^{11} \\\\\\\\\n& =2+18 \\cdot 2^{10}\n\\end{aligned}\n$$\n<br/><br/>$$f'\\left( x \\right) = {{{{\\left( {1 - x} \\right)}^2}\\left( {120{x^{11}} - 121{x^{10}} + 1} \\right) + 2\\left( {1 - x} \\right)\\left( {10{x^{12}} - {{11.x}^{11}} + 2} \\right)} \\over {{{\\left( {1 - x} \\right)}^4}}}$$\n<br/><br/>So,\n<br/><br/>$$f'\\left( x \\right) = {{1\\left( {{{120.2}^{11}} - {{121.2}^{10}} + 1} \\right) + 2\\left( { - 1} \\right)\\left( {{{10.2}^{12}} - {{11.2}^{11}} + 2} \\right)} \\over {{{\\left( { - 1} \\right)}^4}}}$$\n<br/><br/>= $${2^{10}}\\left( {83} \\right) - 3$$\n<br/><br/>Hence $2 f(2)+f^{\\prime}(2)=119.2^{10}+1$\n<br/><br/>$$\n\\Rightarrow \\text { So, } \\mathrm{n}=10\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 13th April Evening Shift"
+    "title": "JEE Main 2023 (Online) 13th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7a7",
@@ -30,7 +31,8 @@
     ],
     "solution": "$f(x)=\\sin ^{3}\\left(\\frac{\\pi}{3} \\cos \\left(\\frac{\\pi}{3 \\sqrt{2}}\\left(-4 x^{3}+5 x^{2}+1\\right)^{3 / 2}\\right)\\right)$\n\n<br/><br/>$$\n\\begin{aligned}\n& f^{\\prime}(x)=3 \\sin ^{2}\\left(\\frac{\\pi}{3} \\cos \\left(\\frac{\\pi}{3 \\sqrt{2}}\\left(-4 x^{3}+5 x^{2}+1\\right)^{3 / 2}\\right)\\right) \\\\\\\\\n& \\cos \\left(\\frac{\\pi}{3} \\cos \\left(\\frac{\\pi}{3 \\sqrt{2}}\\left(-4 x^{3}+5 x^{2}+1\\right)^{3 / 2}\\right)\\right) \\\\\\\\\n& \\frac{\\pi}{3}\\left(-\\sin \\left(\\frac{\\pi}{3 \\sqrt{2}}\\left(-4 x^{3}+5 x^{2}+1\\right)^{3 / 2}\\right)\\right) \\\\\\\\\n& \\frac{\\pi}{3 \\sqrt{2}} \\frac{3}{2}\\left(-4 x^{3}+5 x^{3}+1\\right)^{1 / 2}\\left(-12 x^{2}+10 x\\right)\n\\end{aligned}\n$$\n\n<br/><br/>$f^{\\prime}(1)=\\frac{3 \\pi^{2}}{16}$\n\n<br/><br/>$$\n\\begin{aligned}\n& f(1)=\\sin ^{3}\\left(\\frac{\\pi}{3} \\cos \\left(\\frac{\\pi}{3 \\sqrt{2}} 2 \\sqrt{2}\\right)\\right) \\\\\\\\\n&=\\sin ^{3}\\left(-\\frac{\\pi}{6}\\right)=\\frac{-1}{8} \\\\\\\\\n& \\therefore 2 f^{\\prime}(1)+3 \\pi^{2} f(1)=0\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 31st January Morning Shift"
+    "title": "JEE Main 2023 (Online) 31st January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7a8",
@@ -49,7 +51,8 @@
     ],
     "solution": "$$f(x)=\\frac{\\sin x+\\cos x-\\sqrt{2}}{\\sin x-\\cos x}$$\n<br/><br/>$$\n\\begin{aligned}\n& =\\frac{\\frac{1}{\\sqrt{2}} \\sin x+\\frac{1}{\\sqrt{2}} \\cos x-1}{\\frac{1}{\\sqrt{2}} \\sin x-\\frac{1}{\\sqrt{2}} \\cos x} \\\\\\\\\n& =\\frac{\\cos \\left(x-\\frac{\\pi}{4}\\right)-1}{\\sin \\left(x-\\frac{\\pi}{4}\\right)} \\\\\\\\\n& =\\frac{-2 \\sin ^2\\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right)}{2 \\sin \\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right) \\cos \\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right)}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow f(x)=-\\tan \\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right) \\\\\\\\\n& \\Rightarrow f^{\\prime}(x)=-\\frac{1}{2} \\sec ^2\\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right)\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow f^{\\prime \\prime}(x)=-\\frac{1}{2} \\cdot 2 \\sec \\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right) \\cdot \\sec \\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right)\\tan \\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right) \\times \\frac{1}{2} \\\\\\\\\n& =-\\frac{1}{2} \\sec ^2\\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right) \\cdot \\tan \\left(\\frac{x}{2}-\\frac{\\pi}{8}\\right)\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Now, } f\\left(\\frac{7 \\pi}{12}\\right) f^{\\prime \\prime}\\left(\\frac{7 \\pi}{12}\\right) \\\\\\\\\n& =-\\tan \\left(\\frac{7 \\pi}{24}-\\frac{\\pi}{8}\\right) \\times \\frac{-1}{2} \\sec ^2\\left(\\frac{7 \\pi}{24}-\\frac{\\pi}{8}\\right) \\times \\tan \\left(\\frac{7 \\pi}{24}-\\frac{\\pi}{8}\\right) \\\\\\\\\n& =\\frac{1}{2} \\tan ^2\\left(\\frac{\\pi}{6}\\right) \\times \\sec ^2 \\frac{\\pi}{6} \\\\\\\\\n& =\\frac{1}{2} \\times \\frac{1}{3} \\times \\frac{4}{3}=\\frac{2}{9}\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 8th April Morning Shift"
+    "title": "JEE Main 2023 (Online) 8th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7a9",
@@ -68,7 +71,8 @@
     ],
     "solution": "$$(a + \\sqrt 2 b\\cos x)(a - \\sqrt 2 b\\cos y) = {a^2} - {b^2}$$<br><br>$$ \\Rightarrow {a^2} - \\sqrt 2 ab\\cos y + \\sqrt 2 ab\\cos x - 2{b^2}\\cos x\\cos y = {a^2} - {b^2}$$<br><br>Differentiating both sides :<br><br>$$0 - \\sqrt 2 ab\\left( { - \\sin y{{dy} \\over {dx}}} \\right) + \\sqrt 2 ab( - \\sin x)$$<br><br>$$ - 2{b^2}\\left[ {\\cos x\\left( { - \\sin y{{dy} \\over {dx}}} \\right) + \\cos y( - \\sin x)} \\right] = 0$$<br><br>At $$\\left( {{\\pi  \\over 4},{\\pi  \\over 4}} \\right)$$ :<br><br>$$ab{{dy} \\over {dx}} - ab - 2{b^2}\\left( { - {1 \\over 2}{{dy} \\over {dx}} - {1 \\over 2}} \\right) = 0$$<br><br>$$ \\Rightarrow {{dx} \\over {dy}} = {{ab + {b^2}} \\over {ab - {b^2}}} = {{a + b} \\over {a - b}}$$; a, b &gt; 0",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 4th September Morning Slot"
+    "title": "JEE Main 2020 (Online) 4th September Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7aa",
@@ -87,7 +91,8 @@
     ],
     "solution": "$$y\\sqrt {1 - {x^2}}  = k - x\\sqrt {1 - {y^2}} $$ ....(1)\n<br><br>On differentiating both side of eq. (1) w.r.t. x we\nget,\n<br><br>$${{dy} \\over {dx}}\\sqrt {1 - {x^2}}  - y{{2x} \\over {2\\sqrt {1 - {x^2}} }}$$\n<br><br>= 0 - $$\\sqrt {1 - {y^2}}  + {{xy} \\over {\\sqrt {1 - {y^2}} }}{{dy} \\over {dx}}$$\n<br><br>Put x = $${1 \\over 2}$$ and y = $$ - {1 \\over 4}$$, we get\n<br><br>$${{dy} \\over {dx}}{{\\sqrt 3 } \\over 2} - \\left( { - {1 \\over 4}} \\right){{{1 \\over 2}} \\over {{{\\sqrt 3 } \\over 2}}}$$\n<br><br>= $$ - {{\\sqrt {15} } \\over 4} + {{ - {1 \\over 8}} \\over {{{\\sqrt {15} } \\over 4}}}.{{dy} \\over {dx}}$$\n<br><br>$$ \\therefore $$ $${{dy} \\over {dx}} =  - {{\\sqrt 5 } \\over 2}$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 7th January Evening Slot"
+    "title": "JEE Main 2020 (Online) 7th January Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7ab",
@@ -106,7 +111,8 @@
     ],
     "solution": "x<sup>k</sup> + y<sup>k</sup> = a<sup>k</sup>\n<br><br>$$ \\Rightarrow $$ kx<sup>k - 1</sup> + ky<sup>k - 1</sup>$${{{dy} \\over {dx}}}$$ = 0\n<br><br>$$ \\Rightarrow $$ $${{{dy} \\over {dx}} + {{\\left( {{x \\over y}} \\right)}^{k - 1}}}$$ = 0 ...(1)\n<br><br>Given $${{dy} \\over {dx}} + {\\left( {{y \\over x}} \\right)^{{1 \\over 3}}} = 0$$ ...(2)\n<br><br>Comparing (1) and (2), we get\n<br><br>k - 1 = $$ - {1 \\over 3}$$\n<br><br>$$ \\Rightarrow $$ k = $${2 \\over 3}$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 7th January Morning Slot"
+    "title": "JEE Main 2020 (Online) 7th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7ac",
@@ -125,7 +131,8 @@
     ],
     "solution": "$$y\\left( \\alpha  \\right) = \\sqrt {2\\left( {{{\\tan \\alpha  + \\cot \\alpha } \\over {1 + {{\\tan }^2}\\alpha }}} \\right) + {1 \\over {{{\\sin }^2}\\alpha }}}$$\n<br><br>= $$\\sqrt {2\\left( {{{1 + {{\\tan }^2}\\alpha } \\over {\\tan \\alpha \\left( {1 + {{\\tan }^2}\\alpha } \\right)}}} \\right) + {1 \\over {{{\\sin }^2}\\alpha }}} $$\n<br><br>= $$\\sqrt {2\\left( {{{\\cos \\alpha } \\over {\\sin \\alpha }}} \\right) + {1 \\over {{{\\sin }^2}\\alpha }}} $$\n<br><br>= $$\\sqrt {{{\\sin 2\\alpha  + 1} \\over {{{\\sin }^2}\\alpha }}} $$\n<br><br>= $${{\\left| {\\sin \\alpha  + \\cos \\alpha } \\right|} \\over {\\left| {\\sin \\alpha } \\right|}}$$\n<br><br>At $$\\alpha $$ = $${{5\\pi } \\over 6}$$\n<br><br>$${\\left| {\\sin \\alpha  + \\cos \\alpha } \\right|}$$ = -(sin$$\\alpha $$ + cos$$\\alpha $$)\n<br><br>and |sin$$\\alpha $$| = sin$$\\alpha $$\n<br><br>$$ \\therefore $$ y($$\\alpha $$) = $${{ - \\left( {\\sin \\alpha  + \\cos \\alpha } \\right)} \\over {\\sin \\alpha }}$$\n<br><br>= -1 - cot$$\\alpha $$\n<br><br>$$ \\therefore $$ $${{dy} \\over {d\\alpha }}$$ = cosec<sup>2</sup>$$\\alpha $$\n<br><br>So $${{{dy} \\over {d\\alpha }}}$$ at $$\\alpha $$ = $${{5\\pi } \\over 6}$$,\n<br><br>= cosec<sup>2</sup>$${{5\\pi } \\over 6}$$ = 4",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 7th January Morning Slot"
+    "title": "JEE Main 2020 (Online) 7th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7ad",
@@ -144,7 +151,8 @@
     ],
     "solution": "y = 1 $$ \\Rightarrow $$ x = 0<br><br>\n$${e^y}{{dy} \\over {dx}} + x{{dy} \\over {dx}} + y = 0$$<br><br>\n$$ \\Rightarrow e{{dy} \\over {dx}} + 1 = 0 \\Rightarrow {{dy} \\over {dx}} =  - {1 \\over e}$$<br><br>\n$$ \\Rightarrow {e^y}{{{d^2}y} \\over {d{x^2}}} + {e^y}{\\left( {{{dy} \\over {dx}}} \\right)^2} + x{{{d^2}y} \\over {d{x^2}}} + 2{{dy} \\over {dx}} = 0$$<br><br>\nx = 0, y = 1<br><br>\n$$ \\Rightarrow e{{{d^2}y} \\over {d{x^2}}} + e{\\left( { - {1 \\over e}} \\right)^2} + 0 + 2\\left( { - {1 \\over e}} \\right) = 0$$<br><br>\n$$ \\Rightarrow {{{d^2}y} \\over {d{x^2}}} = {1 \\over {{e^2}}}$$",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 12th April Morning Slot"
+    "title": "JEE Main 2019 (Online) 12th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7ae",
@@ -163,7 +171,8 @@
     ],
     "solution": "Given, x<sup>2</sup> + y<sup>2</sup>  + sin y = 4\n<br><br>After differentiating the above equation &nbsp;w.r.t.x &nbsp;we get\n<br><br>2x + 2y $${{dy} \\over {dx}}$$ + cos y $${{dy} \\over {dx}}$$ = 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . . . (1)\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;2x + (2y + cos y) $${{dy} \\over {dx}}$$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$${{dy} \\over {dx}}$$ = $${{ - 2x} \\over {2y + \\cos y}}$$\n<br><br>At ($$-$$ 2, 0), $${\\left( {{{dy} \\over {dx}}} \\right)_{\\left( { - 2,0} \\right)}}$$ = $${{ - 2x - 2} \\over {2 \\times 0 + \\cos 0}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$${\\left( {{{dy} \\over {dx}}} \\right)_{\\left( { - 2,0} \\right)}}$$ = $${4 \\over {0 + 1}}$$\n<br><br>$$ \\Rightarrow $$ &nbsp;&nbsp;$${\\left( {{{dy} \\over {dx}}} \\right)_{\\left( { - 2,0} \\right)}}$$ = 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . . . .(2)\n<br><br>Again differentiating equation (1) w.r.t&nbsp;&nbsp;to&nbsp;&nbsp;x, we get \n<br><br>2 + 2 $${\\left( {{{dy} \\over {dx}}} \\right)^2}$$ + 2y$${{{d^2}y} \\over {d{x^2}}}$$ $$-$$ sin y $${\\left( {{{dy} \\over {dx}}} \\right)^2}$$ + cos y $${{{d^2}y} \\over {d{x^2}}}$$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp; 2 + (2 $$-$$ sin y) $${\\left( {{{dy} \\over {dx}}} \\right)^2}$$ + (2y + cos y)$${{{d^2}y} \\over {d{x^2}}}$$ = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;(2y + cos y) $${{{d^2}y} \\over {d{x^2}}}$$ = $$-$$ 2 $$-$$ (2 $$-$$ sin y)$${\\left( {{{dy} \\over {dx}}} \\right)^2}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp; $${{{d^2}y} \\over {d{x^2}}}$$ = $${{ - 2 - \\left( {2 - \\sin y} \\right){{\\left( {{{dy} \\over {dx}}} \\right)}^2}} \\over {2y + \\cos y}}$$\n<br><br>So, at ($$-$$ 2, 0),\n<br><br>$${{{d^2}y} \\over {d{x^2}}}$$  = $${{ - 2 - \\left( {2 - 0} \\right) \\times {4^2}} \\over {2 \\times 0 + 1}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$${{{d^2}y} \\over {d{x^2}}}$$ = $${{ - 2 - 2 \\times 16} \\over 1}$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ $${{{d^2}y} \\over {d{x^2}}}$$ = $$-$$ 34",
     "__v": 0,
-    "title": "JEE Main 2018 (Online) 15th April Morning Slot"
+    "title": "JEE Main 2018 (Online) 15th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7af",
@@ -182,7 +191,8 @@
     ],
     "solution": "Given,<br><br>\n$$f\\left( x \\right) = \\left| {\\matrix{\n   {\\cos x} &amp; x &amp; 1  \\cr \n   {2\\sin x} &amp; {{x^2}} &amp; {2x}  \\cr \n   {\\tan x} &amp; x &amp; 1  \\cr \n\n } } \\right|$$<br><br>\n= cosx(x<sup>2</sup> - 2x<sup>2</sup>) - x(2 sinx - 2x tanx) + (2x sinx - x<sup>2</sup> tanx)<br>\n= x<sup>2</sup> (tanx - cosx)<br>\n$$ \\therefore $$ $${f^{'}}(x)$$ = 2x (tanx - cosx) + x<sup>2</sup>(sec<sup>2</sup>x + sinx)<br><br>\n$$ \\therefore $$ $$\\mathop {\\lim }\\limits_{x \\to 0} {{f'\\left( x \\right)} \\over x}$$<br><br>\n= $$\\mathop {\\lim }\\limits_{x \\to o} {{2x(\\tan x - \\cos x) + {x^2}({{\\sec }^2}x + \\sin x)} \\over x}$$<br><br>\n= $$\\mathop {\\lim }\\limits_{x \\to o} \\,\\,2(\\tan x - \\cos x) + x({\\sec ^2}x + \\sin x)$$<br><br>\n= 2 (0-1) + 0<br><br>\n= -2\n",
     "__v": 0,
-    "title": "JEE Main 2018 (Online) 15th April Morning Slot"
+    "title": "JEE Main 2018 (Online) 15th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7b0",
@@ -201,7 +211,8 @@
     ],
     "solution": "<p>The given equation is</p>\n<p>$$y = {({x^2} + \\sqrt {{x^2} - 1} )^{15}} + {(x - \\sqrt {{x^2} - 1} )^{15}}$$</p>\n<p>Differentiating w.r.t. x, we get</p>\n<p>$${{dy} \\over {dx}} = 15{(x + \\sqrt {{x^2} - 1} )^{14}}\\left( {1 + {{1(2x)} \\over {2\\sqrt {{x^2} - 1} }}} \\right) + 15{(x - \\sqrt {{x^2} - 1} )^{14}}\\left( {1 - {{1(2x)} \\over {2\\sqrt {{x^2} - 1} }}} \\right)$$</p>\n<p>Here, we have used the standard differentiatials</p>\n<p>$${d \\over {dx}}{x^n} = n\\,{x^{n - 1}}$$</p>\n<p>That is, $${d \\over {dx}}(\\sqrt {f(x)} ) = {1 \\over {2\\sqrt {f(x)} }} \\times {d \\over {dx}}(f(x))$$</p>\n<p>Therefore</p>\n<p>$${{dy} \\over {dx}} = {{15{{(x + \\sqrt {{x^2} - 1} )}^{14}}(\\sqrt {{x^2} - 1}  + x)} \\over {\\sqrt {{x^2} - 1} }} + {{15{{(x - \\sqrt {{x^2} - 1} )}^{14}}(\\sqrt {{x^2} - 1}  - x)} \\over {\\sqrt {{x^2} - 1} }}$$</p>\n<p>$$ \\Rightarrow \\sqrt {{x^2} - 1} {{dy} \\over {dx}} = 15{(x + \\sqrt {{x^2} - 1} )^{15}} - 15{(x - \\sqrt {{x^2} - 1} )^{15}}$$</p>\n<p>Differentiating w.r.t. x, we get</p>\n<p>$${{1(2x)} \\over {2\\sqrt {{x^2} + 1} }}{{dy} \\over {dx}} + \\sqrt {{x^2} - 1} {{{d^2}y} \\over {d{x^2}}} = 15 \\times 15{(x + \\sqrt {{x^2} - 1} )^{14}}\\left( {1 + {{1(2x)} \\over {2\\sqrt {{x^2} - 1} }}} \\right) - 15 \\times 15{(x - \\sqrt {{x^2} - 1} )^{14}}\\left( {{{1 - 1(2x)} \\over {2\\sqrt {{x^2} - 1} }}} \\right)$$</p>\n<p>$$ \\Rightarrow {x \\over {\\sqrt {{x^2} - 1} }}{{dy} \\over {dx}} + \\sqrt {{x^2} - 1} {{{d^2}y} \\over {d{x^2}}} = 225{(x + \\sqrt {{x^2} - 1} )^{14}}{{(\\sqrt {{x^2} - 1}  + x)} \\over {\\sqrt {{x^2} - 1} }} - {{225{{(x - \\sqrt {{x^2} - 1} )}^{14}}(\\sqrt {{x^2} - 1}  - x)} \\over {\\sqrt {{x^2} - 1} }}$$</p>\n<p>$$ \\Rightarrow \\sqrt {{x^2} - 1} \\left[ {{x \\over {\\sqrt {{x^2} - 1} }}{{dy} \\over {dx}} + \\sqrt {{x^2} - 1} {{{d^2}y} \\over {d{x^2}}}} \\right] = 225{(x + \\sqrt {{x^2} - 1} )^{15}} + 225{(x - \\sqrt {{x^2} - 1} )^{15}}$$</p>\n<p>$$ \\Rightarrow x{{dy} \\over {dx}} + ({x^2} - 1){{{d^2}y} \\over {d{x^2}}} = 225\\left[ {{{(x + \\sqrt {{x^2} - 1} )}^{15}} + {{(x - \\sqrt {{x^2} - 1} )}^{15}}} \\right]$$</p>\n<p>Substituting $${(x + \\sqrt {{x^2} - 1} )^{15}} + {(x - \\sqrt {{x^2} - 1} )^{15}} = y$$, we get</p>\n<p>$$({x^2} - 1){{{d^2}y} \\over {d{x^2}}} + {{x\\,dy} \\over {dx}} = 225y$$</p>",
     "__v": 0,
-    "title": "JEE Main 2017 (Online) 8th April Morning Slot"
+    "title": "JEE Main 2017 (Online) 8th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7b1",
@@ -220,26 +231,8 @@
     ],
     "solution": "$${x^{2x}} - 2{x^x}\\,\\cot \\,y - 1 = 0$$ \n<br><br>$$ \\Rightarrow 2\\,\\cot \\,y = {x^x} - {x^{ - x}}$$\n<br><br>$$ \\Rightarrow 2\\,\\cot \\,y\\, = u - {1 \\over u}$$\n<br><br>where $$u = {x^x}$$\n<br><br>Differentiating both sides with respect to $$x,$$ \n<br><br>we get $$ \\Rightarrow  - 2\\cos e{c^2}y{{dy} \\over {dx}}$$\n<br><br>$$ = \\left( {1 + {1 \\over {{u^2}}}} \\right){{du} \\over {dx}}$$\n<br><br>where $$u = {x^x} \\Rightarrow \\log \\,u = x\\,\\log \\,x$$\n<br><br>$$ \\Rightarrow {1 \\over u}{{du} \\over {dx}} = 1 + \\log \\,x$$\n<br><br>$$ \\Rightarrow {{du} \\over {dx}} = {x^x}\\left( {1 + \\log \\,x} \\right)$$\n<br><br>$$\\therefore$$ We get $$ - 2\\cos e{c^2}y{{dy} \\over {dx}}$$\n<br><br>$$ = \\left( {1 + {x^{ - 2x}}} \\right){x^x}\\left( {1 + \\log \\,x} \\right)$$\n<br><br>$$ \\Rightarrow {{dy} \\over {dx}} = {{\\left( {{x^x} + {x^{ - x}}} \\right)\\left( {1 + \\log x} \\right)} \\over { - 2\\left( {1 + {{\\cot }^2}y} \\right)}}\\,\\,\\,\\,\\,\\,...\\left( i \\right)$$ \n<br><br>Now when \n<br><br>$$x=1,$$ $${x^{2x}} - 2{x^x}\\,\\cot \\,y - 1 = 0,$$ \n<br><br>gives $$1 - 2\\,\\cot y - 1 = 0$$ \n<br><br>$$ \\Rightarrow \\,\\,\\cot y\\, = 0$$\n<br><br>$$\\therefore$$ From equation $$(i),$$ at $$x=1$$ \n<br><br>and $$\\cot \\,y = 0,$$ we get \n<br><br>$$y'\\left( 1 \\right) = {{\\left( {1 + 1} \\right)\\left( {1 + 0} \\right)} \\over { - 2\\left( {1 + 0} \\right)}} =  - 1$$",
     "__v": 0,
-    "title": "AIEEE 2009"
-  },
-  {
-    "_id": "6a2bdc0c2762cf4b5769b7b2",
-    "question_id": "6w6kX8NSR0YKot8W",
-    "chapterId": "differentiation-of-implicit-function",
-    "subject": "Mathematics",
-    "topic": "differentiation-of-implicit-function",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$${{4\\sqrt 2 } \\over {{7^3}{3^2}}}$$ ",
-      "$$-{{4\\sqrt 2 } \\over {{7^3}{3^2}}}$$",
-      "$${{4\\sqrt 2 } \\over {{7^3}3}}$$ ",
-      "$$-{{4\\sqrt 2 } \\over {{7^3}3}}$$"
-    ],
-    "solution": "<p>We have</p>\n<p>$${y^3} - 3y + x = 0$$</p>\n<p>Differentiate both sides we get</p>\n<p>$$3{y^2}.y' - 3y' + 1 = 0$$ ..... (i)</p>\n<p>Put $$y = 2\\sqrt 2 ,x =  - 10\\sqrt 2 $$ then</p>\n<p>$$y'( - 10\\sqrt 2 ) = {{ - 1} \\over {21}}$$</p>\n<p>Differentiate eq. (i), we get</p>\n<p>$$3{y^2}y'' + 6y{(y')^2} - 3y'' = 0$$</p>\n<p>Put $$y = 2\\sqrt 2 ,x =  - 10\\sqrt 2 ,y' = {{ - 1} \\over {21}}$$ then</p>\n<p>$$y''( - 10\\sqrt 2 ) = {{ - 4\\sqrt 2 } \\over {{7^3}\\,.\\,{3^2}}}$$</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2008 Paper 1 Offline"
+    "title": "AIEEE 2009",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7b3",
@@ -258,7 +251,8 @@
     ],
     "solution": "$$f\\left( x \\right) = a{x^2} + bx + c$$\n<br><br>$$f\\left( 1 \\right) = f\\left( { - 1} \\right)$$\n<br><br>$$ \\Rightarrow a + b + c = a - b + c$$\n<br><br>or $$b = 0$$\n<br><br>$$\\therefore$$ $$f\\left( x \\right) = a{x^2} + c$$ \n<br><br>or $$f'\\left( x \\right) = 2ax$$\n<br><br>Now $$f'\\left( a \\right);f'\\left( b \\right);$$\n<br><br>and $$f'\\left( c \\right)$$ are $$2a\\left( a \\right);2a\\left( b \\right);2a\\left( c \\right)$$\n<br><br>i.e.$$\\,2{a^2},\\,2ab,\\,2ac.$$\n<br><br>$$ \\Rightarrow $$ If $$a,b,c$$ are in $$A.P.$$ then\n<br><br>$$f'\\left( a \\right);f'\\left( b \\right)$$ and \n<br><br>$$f'\\left( c \\right)$$ are also in $$A.P.$$",
     "__v": 0,
-    "title": "AIEEE 2003"
+    "title": "AIEEE 2003",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc0c2762cf4b5769b7b4",
@@ -277,6 +271,7 @@
     ],
     "solution": "$$y = {\\left( {x + \\sqrt {1 + {x^2}} } \\right)^n}$$\n<br><br>$${{dy} \\over {dx}} = n{\\left( {x + \\sqrt {1 + {x^2}} } \\right)^{n - 1}}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\left( {1 + {1 \\over 2}{{\\left( {1 + {x^2}} \\right)}^{ - 1/2}}.2x} \\right);$$\n<br><br>$${{dy} \\over {dx}} = n{\\left( {x + \\sqrt {1 + {x^2}} } \\right)^{n - 1}}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,{{\\left( {\\sqrt {1 + {x^2}}  + x} \\right)} \\over {\\sqrt {1 + {x^2}} }}$$\n<br><br>$$ = {{n{{\\left( {\\sqrt {1 + {x^2}}  + x} \\right)}^n}} \\over {\\sqrt {1 + {x^2}} }}$$\n<br><br>or $$\\sqrt {1 + {x^2}} {{dy} \\over {dx}} = ny$$\n<br><br>or $$\\sqrt {1 + {x^2}} {y_1} = ny$$\n<br><br>$$\\left( {{y_1} = {{dy} \\over {dx}}} \\right)$$ \n<br><br>Squaring, $$\\left( {1 + {x^2}} \\right){y_1}^2 = {n^2}{y^2}$$\n<br><br>Differentiating, $$\\left( {1 + {x^2}} \\right)2{y_1}{y_2} + {y_1}^2.2x$$\n<br><br>$$ = {n^2}.2y{y_1}$$\n<br><br>or $$\\left( {1 + {x^2}} \\right){y_2} + x{y_1} = {n^2}y$$\n",
     "__v": 0,
-    "title": "AIEEE 2002"
+    "title": "AIEEE 2002",
+    "exam": "JEE Main"
   }
 ]

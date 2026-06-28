@@ -28,7 +28,14 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
 
   const fixMathJax = (html) => {
     if (!html) return '';
-    let fixed = html.replace(/\$\$/g, '$');
+    let fixed = html;
+    if (typeof fixed === 'object') {
+      fixed = fixed.en?.content || fixed.en?.questionText || fixed.en || fixed.content || fixed.questionText || '';
+    }
+    if (typeof fixed !== 'string') {
+      fixed = String(fixed);
+    }
+    fixed = fixed.replace(/\$\$/g, '$');
     fixed = fixed.replace(/\\root\s+([a-zA-Z0-9]+)\s+\\of\s+\{([^}]+)\}/g, '\\sqrt[$1]{$2}');
     fixed = fixed.replace(/\\root\s+([a-zA-Z0-9]+)\s+\\of\s+([a-zA-Z0-9]+)/g, '\\sqrt[$1]{$2}');
     return fixed;

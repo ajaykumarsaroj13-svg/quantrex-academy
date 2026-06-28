@@ -1,24 +1,5 @@
 [
   {
-    "_id": "6a2bdca02762cf4b576a166a",
-    "question_id": "mp9urojl",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 3,
-    "tags": [],
-    "options": [
-      "<p>$\\sqrt{\\frac{5 + \\sqrt{35}}{2}}$</p>",
-      "<p>$\\sqrt{\\frac{7 + \\sqrt{53}}{2}}$</p>",
-      "<p>$\\frac{7 + \\sqrt{53}}{2}$</p>",
-      "<p>$\\frac{5 + \\sqrt{35}}{2}$</p>"
-    ],
-    "solution": "<p>$$I=\\int\\limits_{0}^{2} \\frac{1}{3+3^x}\\,dx \\quad \\ldots\\ (1)$$</p>\n<p>$$I=\\int\\limits_{0}^{2} \\frac{1}{3+3^{2-x}}\\,dx \\quad \\ldots\\ (2)$$</p>\n<p>Adding (1) and (2)</p>\n<p>$$2I=\\int\\limits_{0}^{2} \\left(\\frac{1}{3+3^x}+\\frac{3^x}{3(3+3^x)}\\right)dx$$</p>\n<p>$$2I=\\int\\limits_{0}^{2} \\left(\\frac{3+3^x}{3(3+3^x)}\\right)dx$$</p>\n<p>$$2I=\\int\\limits_{0}^{2} \\frac{1}{3}\\,dx$$</p>\n<p>$$2I=\\frac{1}{3}[x]_{0}^{2}$$</p>\n<p>$$2I=\\frac{2}{3}$$</p>\n<p>$$\\Rightarrow I=\\frac{1}{3}$$</p>\n<p>$$\\Rightarrow \\text{Option (B) is correct.}$$</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2026 Paper 2 Online"
-  },
-  {
     "_id": "6a2bdca02762cf4b576a166b",
     "question_id": "ml8t8kya",
     "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
@@ -35,7 +16,8 @@
     ],
     "solution": "<p>$$ \\begin{aligned} &\\begin{aligned} & \\int \\frac{\\cos y}{1+2 \\sin y} d y=\\int \\frac{1}{16(\\sqrt{x+9 \\sqrt{x}})(4+\\sqrt{9+\\sqrt{x}})} d x \\\\ & \\Rightarrow \\frac{1}{2} \\int \\frac{2 \\cos y}{1+2 \\sin y} d y=\\int \\frac{1}{4 t} d t \\end{aligned}\\\\ &\\text { Put } 4+\\sqrt{9+\\sqrt{x}}=t\\\\ &\\begin{aligned} & \\Rightarrow \\frac{1}{2 \\sqrt{9+\\sqrt{x}}} \\cdot \\frac{1}{2 \\sqrt{x}} d x=d t \\Rightarrow \\frac{1}{4 \\sqrt{x+9 \\sqrt{x}}} d x=d t \\\\ & \\Rightarrow \\frac{1}{2} \\log |1+2 \\sin y|=\\frac{1}{4} \\log |t|+\\log c \\Rightarrow \\sqrt{1+2 \\sin y}=c t^{1 / 4} \\Rightarrow \\frac{1}{4} \\log |t|+\\log c \\\\ & \\Rightarrow \\sqrt{1+2 \\sin y}=c t^{1 / 4} \\Rightarrow \\sqrt{1+2 \\sin y}=c(4+\\sqrt{9+\\sqrt{x}})^{1 / 4} \\\\ & \\left(256, \\frac{\\pi}{2}\\right) \\Rightarrow \\sqrt{3}=c(\\sqrt{3}) \\Rightarrow c=1 \\\\ & (49, \\alpha) \\Rightarrow \\sqrt{1+2 \\sin \\alpha}=(1) 8^{1 / 4} \\\\ & \\Rightarrow 1+2 \\sin \\alpha=2 \\sqrt{2} \\Rightarrow 2 \\sin \\alpha=2 \\sqrt{2}-1 \\end{aligned} \\end{aligned} $$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 22nd January Evening Shift"
+    "title": "JEE Main 2026 (Online) 22nd January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a166c",
@@ -54,7 +36,8 @@
     ],
     "solution": "<p>$$ \\begin{aligned} & x d y-y d x=\\sqrt{x^2+y^2} d x \\\\ & \\frac{x d y-y d x}{x^2}=\\frac{\\sqrt{x^2+y^2}}{x^2} d x \\end{aligned} $$</p>\n<p>$$ \\begin{aligned} & \\int \\frac{d(y / x)}{\\sqrt{1+(y / x)^2}}=\\int \\frac{1}{x} d x \\\\ & \\log \\left(\\frac{y}{x}+\\sqrt{1+\\left(\\frac{y}{x}\\right)^2}\\right)=\\log x+\\log C \\\\ & y+\\sqrt{x^2+y^2}=x^2 \\\\ & y-\\sqrt{x^2+y^2}=-1 \\\\ & 2 y=x^2-1 \\\\ & y(3)=4 \\end{aligned} $$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 22nd January Morning Shift"
+    "title": "JEE Main 2026 (Online) 22nd January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a166d",
@@ -73,7 +56,8 @@
     ],
     "solution": "<p>Given equation is :</p>\n<p>$$ x \\frac{d y}{d x}-\\sin 2 y=x^3\\left(2-x^3\\right) \\cos ^2 y, \\quad x \\neq 0 $$</p>\n<p>Divide by $x \\cos ^2 y$</p>\n<p>$$ \\sec ^2 y \\frac{d y}{d x}-\\frac{\\sin 2 y}{x \\cos ^2 y}=x^2\\left(2-x^3\\right) $$</p>\n<p>$$ \\sec ^2 y \\frac{d y}{d x}-\\frac{2 \\tan y}{x}=2 x^2-x^5 $$</p>\n<p>Substitute $\\tan y=t$ and differentiate w.r.t $x$</p>\n<p>$$ \\sec ^2 y \\frac{d y}{d x}=\\frac{d t}{d x} $$</p>\n<p>Equation (1) becomes linear differential equation.</p>\n<p>$\\frac{d t}{d x}-\\frac{2}{x} t=2 x^2-x^5$</p>\n<p>Integrating factor $I F=e^{\\int\\left(-\\frac{2}{x}\\right) d x}=e^{-2 \\ln x}=e^{\\ln \\left(\\frac{1}{x^2}\\right)}=\\frac{1}{x^2}$</p>\n<p>Solution of linear differential equation :</p>\n<p>$$ t \\cdot I F=\\int(I F)\\left(2 x^2-x^5\\right) d x $$</p>\n<p>$$\\Rightarrow $$ $t \\cdot \\frac{1}{x^2}=\\int \\frac{1}{x^2}\\left(2 x^2-x^5\\right) d x$</p>\n<p>$$\\Rightarrow $$ $$ \\frac{t}{x^2}=\\int\\left(2-x^3\\right) d x=2 x-\\frac{x^4}{4}+C $$</p>\n<p>put value of $t=\\tan y$</p>\n<p>$$ \\frac{\\tan y}{x^2}=2 x-\\frac{x^4}{4}+C $$</p>\n<p>using condition $y(2)=0$ to find $C$.</p>\n<p>$$ \\frac{\\tan (0)}{2^2}=2 \\times 2-\\frac{2^4}{4}+C \\Longrightarrow C=0 $$</p>\n<p>So, solution of differential equation is</p>\n<p>$$ \\tan y=2 x^3-\\frac{x^6}{4} $$</p>\n<p>to calculate $\\tan (y(1))$, put $x=1$ in the solution.</p>\n<p>$$ \\tan (y(1))=2(1)^3-\\frac{(1)^6}{4} $$</p>\n<p>$=2-\\frac{1}{4}=\\frac{7}{4}$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 28th January Morning Shift"
+    "title": "JEE Main 2026 (Online) 28th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a166e",
@@ -92,7 +76,8 @@
     ],
     "solution": "<p>$$2y(ydx-xdy)+x^2dy=0$$</p>\n<p>$$\\Rightarrow -2yx^2\\,d\\left(\\frac{y}{x}\\right)+x^2dy=0$$</p>\n<p>$$\\Rightarrow -2y\\,d\\left(\\frac{y}{x}\\right)+dy=0$$</p>\n<p>$$\\Rightarrow -2d\\left(\\frac{y}{x}\\right)+\\frac{1}{y}dy=0$$</p>\n<p>$$\\Rightarrow -\\frac{2y}{x}+\\log_e y=C$$</p>\n<p>Given $x(e)=e$</p>\n<p>$$\\Rightarrow C=-1$$</p>\n<p>$$\\therefore -\\frac{2y}{x}+\\log_e y=-1$$</p>\n<p>$$\\Rightarrow \\frac{2y}{x}-\\log_e y=1$$</p>\n<p>Put $y=e^2$, we get</p>\n<p>$$\\Rightarrow \\frac{2e^2}{x}-2=1 \\rightarrow \\frac{2e^2}{x}=3 \\rightarrow x=\\frac{2e^2}{3}$$</p>\n<p>$$\\Rightarrow x(e^2)=\\frac{2e^2}{3}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 2nd April Evening Shift"
+    "title": "JEE Main 2026 (Online) 2nd April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a166f",
@@ -111,7 +96,8 @@
     ],
     "solution": "<p>$$\\frac{dy}{dx} = y(2+\\ln x)$$</p>\n<p>To solve this, first separate the variables by dividing both sides by $y$:</p>\n<p>$$\\int\\limits{} \\frac{dy}{y} = \\int\\limits{} (2+\\ln x)\\,dx$$</p>\n<p>Now integrate both sides. The left side gives $\\ln y$. For the right side, integrate term by term:</p>\n<p>$$\\ln y = 2x + x\\ln x - x + C$$</p>\n<p>Combine like terms $2x-x=x$:</p>\n<p>$$\\ln y = x + x\\ln x + C$$</p>\n<p>Since it passes through $(1,e)$, put $x=1$ and $y=e$ in the equation. Then $\\ln y=\\ln e=1$ and $\\ln 1=0$:</p>\n<p>$$1 = 1 + 0 + C \\rightarrow C = 0$$</p>\n<p>So the required relation becomes:</p>\n<p>$$\\ln y = x + x\\ln x$$</p>\n<p>Taking antilog (exponential) on both sides:</p>\n<p>$$f(x)=y=e^{x+x\\ln x}$$</p>\n<p>Now substitute $x=e$. Also, $\\ln e=1$:</p>\n<p>$$\\Rightarrow f(e)=e^{e+e}=e^{2e}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 2nd April Morning Shift"
+    "title": "JEE Main 2026 (Online) 2nd April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1670",
@@ -130,7 +116,8 @@
     ],
     "solution": "<p>$$\\int \\frac{dy}{y+1}=-\\int \\frac{\\cos x}{1+\\sin x}\\,dx$$</p>\n<p>On the left side, $\\int \\frac{dy}{y+1}=\\ln (y+1)$.</p>\n<p>On the right side, take $1+\\sin x$ as substitution: let $u=1+\\sin x$, then $du=\\cos x\\,dx$. So, $$-\\int \\frac{\\cos x}{1+\\sin x}\\,dx=-\\int \\frac{du}{u}=-\\ln(1+\\sin x).$$</p>\n<p>So we get $$\\Rightarrow \\ln (y+1)=-\\ln (1+\\sin x)+C$$</p>\n<p>Now use the initial condition $y(0)=0$. Put $x=0$ and $y=0$ in the equation:</p>\n<p>$$\\therefore y(0)=0 \\rightarrow \\ln(0+1)=-\\ln(1+\\sin 0)+C$$</p>\n<p>That is $$0=-\\ln(1)+C \\Rightarrow C=0.$$</p>\n<p>So $$\\Rightarrow \\ln (y+1)=-\\ln (1+\\sin x)$$</p>\n<p>Taking antilog on both sides, $$\\Rightarrow y+1=\\frac{1}{1+\\sin x}$$</p>\n<p>Given that the curve passes through $$\\left(\\alpha,-\\frac{1}{2}\\right)$$, substitute $y=-\\frac{1}{2}$ and $x=\\alpha$:</p>\n<p>$$-\\frac{1}{2}+1=\\frac{1}{1+\\sin \\alpha}$$</p>\n<p>So $$\\frac{1}{2}=\\frac{1}{1+\\sin \\alpha} \\Rightarrow 1+\\sin \\alpha=2 \\Rightarrow \\sin \\alpha=1$$</p>\n<p>Now $\\sin \\alpha=1$ gives $$\\Rightarrow \\alpha=\\frac{\\pi}{2} \\text{ (as per options)}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 2nd April Morning Shift"
+    "title": "JEE Main 2026 (Online) 2nd April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1671",
@@ -149,7 +136,8 @@
     ],
     "solution": "<p>Given</p>\n<p>$$ \\frac{dy}{dx}=(1+x+x^2)(1-y+y^2), \\qquad y(0)=\\frac12 $$</p>\n<p>We will solve it by the method of separation of variables.</p>\n<p>Since</p>\n<p>$$ \\frac{dy}{1-y+y^2}=(1+x+x^2)\\,dx $$</p>\n<p>Now simplify the denominator on the left:</p>\n<p>$$ 1-y+y^2=y^2-y+1=\\left(y-\\frac12\\right)^2+\\frac34 $$</p>\n<p>So,</p>\n<p>$$ \\int \\frac{dy}{\\left(y-\\frac12\\right)^2+\\left(\\frac{\\sqrt3}{2}\\right)^2} = \\int (1+x+x^2)\\,dx $$</p>\n<p>Using the standard result</p>\n<p>$$ \\int \\frac{du}{u^2+a^2}=\\frac1a \\tan^{-1}\\left(\\frac{u}{a}\\right) $$</p>\n<p>we get</p>\n<p>$$ \\frac{2}{\\sqrt3}\\tan^{-1}\\left(\\frac{2y-1}{\\sqrt3}\\right) = x+\\frac{x^2}{2}+\\frac{x^3}{3}+C $$</p>\n<p>Now use the initial condition $y(0)=\\frac12$.</p>\n<p>Then</p>\n<p>$$ 2y-1=0 $$</p>\n<p>so</p>\n<p>$$ \\frac{2}{\\sqrt3}\\tan^{-1}(0)=C \\Rightarrow C=0 $$</p>\n<p>Hence,</p>\n<p>$$ \\frac{2}{\\sqrt3}\\tan^{-1}\\left(\\frac{2y-1}{\\sqrt3}\\right) = x+\\frac{x^2}{2}+\\frac{x^3}{3} $$</p>\n<p>At $x=1$,</p>\n<p>$$ x+\\frac{x^2}{2}+\\frac{x^3}{3} = 1+\\frac12+\\frac13 = \\frac{11}{6} $$</p>\n<p>Therefore,</p>\n<p>$$ \\frac{2}{\\sqrt3}\\tan^{-1}\\left(\\frac{2y(1)-1}{\\sqrt3}\\right)=\\frac{11}{6} $$</p>\n<p>So</p>\n<p>$$ \\tan^{-1}\\left(\\frac{2y(1)-1}{\\sqrt3}\\right)=\\frac{11\\sqrt3}{12} $$</p>\n<p>Taking tangent on both sides,</p>\n<p>$$ \\frac{2y(1)-1}{\\sqrt3}=\\tan\\left(\\frac{11\\sqrt3}{12}\\right) $$</p>\n<p>Hence,</p>\n<p>$$ 2y(1)-1=\\sqrt3 \\tan\\left(\\frac{11\\sqrt3}{12}\\right) $$</p>\n<p>So the correct answer is</p>\n<p>$$ \\boxed{\\sqrt3 \\tan\\left(\\frac{11\\sqrt3}{12}\\right)} $$</p>\n<p>Therefore, the correct option is $\\boxed{\\text{C}}$.</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 4th April Morning Shift"
+    "title": "JEE Main 2026 (Online) 4th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1672",
@@ -163,35 +151,8 @@
     "options": [],
     "solution": "<p>We are given the differential equation  </p>\n<p>$ x \\sin\\left(\\frac{y}{x}\\right) dy = \\left(y \\sin\\left(\\frac{y}{x}\\right) - x\\right) dx $</p>\n<p>with initial condition $ y(1) = \\frac{\\pi}{2} $.</p>\n\n<h3>Step 1: Express the differential equation in standard form</h3>\n<p>$ x \\sin\\left(\\frac{y}{x}\\right) \\frac{dy}{dx} = y \\sin\\left(\\frac{y}{x}\\right) - x $</p>\n<p>$ \\Rightarrow \\frac{dy}{dx} = \\frac{y \\sin\\left(\\frac{y}{x}\\right) - x}{x \\sin\\left(\\frac{y}{x}\\right)} $</p>\n<p>$ \\Rightarrow \\frac{dy}{dx} = \\frac{y}{x} - \\frac{1}{\\sin\\left(\\frac{y}{x}\\right)} $</p>\n\n<h3>Step 2: Substitution $ y = vx $</h3>\n<p>Let $ y = vx $, where $v$ is a function of $x$.</p>\n<p>Then  </p>\n<p>$ \\frac{dy}{dx} = v + x \\frac{dv}{dx} $</p>\n<p>Substitute in the differential equation:</p>\n<p>$ v + x \\frac{dv}{dx} = v - \\frac{1}{\\sin v} $</p>\n<p>Simplify:</p>\n<p>$ x \\frac{dv}{dx} = -\\frac{1}{\\sin v} $</p>\n<p>$ \\Rightarrow \\sin v\\, dv = -\\frac{dx}{x} $</p>\n\n<h3>Step 3: Integrate both sides</h3>\n<p>$ \\int \\sin v\\, dv = -\\int \\frac{dx}{x} $</p>\n<p>$ - \\cos v = - \\ln|x| + C $</p>\n<p>$ \\Rightarrow \\cos v = \\ln|x| + C $</p>\n<p>Now recall $ v = \\frac{y}{x} $, so:</p>\n<p>$ \\boxed{\\cos\\left(\\frac{y}{x}\\right) = \\ln|x| + C} $</p>\n\n<h3>Step 4: Apply the initial condition $ y(1) = \\frac{\\pi}{2} $</h3>\n<p>$ x = 1, \\, y = \\frac{\\pi}{2} \\Rightarrow \\frac{y}{x} = \\frac{\\pi}{2} $</p>\n<p>$ \\cos\\left(\\frac{\\pi}{2}\\right) = 0 = \\ln 1 + C \\Rightarrow C = 0 $</p>\n<p>So the particular solution is:</p>\n<p>$ \\boxed{\\cos\\left(\\frac{y}{x}\\right) = \\ln x} $</p>\n\n<h3>Step 5: Find $ \\alpha $</h3>\n<p>We are told that </p>\n<p>$ \\alpha = \\cos\\left( \\frac{y(e^{12})}{e^{12}} \\right) $</p>\n<p>From the equation above:</p>\n<p>$ \\cos\\left(\\frac{y}{x}\\right) = \\ln x $</p>\n<p>Thus at $ x = e^{12} $:</p>\n<p>$ \\alpha = \\ln(e^{12}) = 12 $</p>\n<p>$ \\boxed{\\alpha = 12} $</p>\n\n<h3>Step 6: Equation of circle</h3>\n<p>Given:</p>\n<p>$ x^2 + y^2 - 2px + 2py + \\alpha + 2 = 0 $</p>\n<p>Substitute $ \\alpha = 12 $:</p>\n<p>$ x^2 + y^2 - 2px + 2py + 14 = 0 $</p>\n\n<h3>Step 7: Write in standard form of circle</h3>\n<p>We know:</p>\n<p>$ x^2 + y^2 - 2gx - 2fy + c = 0 $</p>\n<p>represents a circle with center $ (g, f) $ and radius $ r = \\sqrt{g^2 + f^2 - c} $.</p>\n<p>Compare with the given equation:</p>\n<p>$ x^2 + y^2 - 2px + 2py + 14 = 0 $</p>\n<p>We can write $ +2py = -2f y \\Rightarrow f = -p $.  </p>\n<p>Hence:</p>\n<p>$ g = p, \\quad f = -p, \\quad c = 14 $</p>\n<p>Radius:</p>\n<p>$ r = \\sqrt{g^2 + f^2 - c} = \\sqrt{p^2 + (-p)^2 - 14} = \\sqrt{2p^2 - 14} $</p>\n\n<h3>Step 8: Condition for $ r \\leq 6 $</h3>\n<p>$ \\sqrt{2p^2 - 14} \\leq 6 $</p>\n<p>$ \\Rightarrow 2p^2 - 14 \\leq 36 $</p>\n<p>$ \\Rightarrow 2p^2 \\leq 50 $</p>\n<p>$ \\Rightarrow p^2 \\leq 25 $</p>\n<p>$ \\Rightarrow -5 \\leq p \\leq 5 $</p>\n\n<h3>Step 9: Count the integral values</h3>\n<p>Integral values of $ p $ are:</p>\n<p>$ -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 $</p>\n<p>Hence, total number of integral values $ = 11 $.</p>\n\n<p>$ \\boxed{11} $</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 5th April Morning Shift"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a1673",
-    "question_id": "mauvk0vy",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "hard",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "",
-    "__v": 0,
-    "title": "JEE Advanced 2025 Paper 1 Online"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a1674",
-    "question_id": "mauvk0vy",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "hard",
-    "marks": 3,
-    "tags": [],
-    "options": [],
-    "solution": "",
-    "__v": 0,
-    "title": "JEE Advanced 2025 Paper 1 Online"
+    "title": "JEE Main 2026 (Online) 5th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1675",
@@ -210,7 +171,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\frac{d x}{d y}+\\frac{x}{1+y^2}=\\frac{2 e^{\\tan ^{-1} y}}{1+y^2} \\\\\n& \\text { I.F. }=e^{\\tan ^{-1} y} \\\\\n& x^{\\tan ^{-1} y}=\\int \\frac{2\\left(e^{\\tan ^{-1} y}\\right)^2 d y}{1+y^2} \\\\\n& \\text { Put } \\tan ^{-1} y=t, \\frac{d y}{1+y^2}=d t \\\\\n& x e^{\\tan ^{-1} y}=\\int 2 e^{2 t} d t \\\\\n& x e^{\\tan ^{-1} y}=e^{2 \\tan ^{-1} y}+c \\\\\n& x=e^{\\tan ^{-1} y}+c e^{-\\tan ^{-1} y} \\\\\n& \\because y=0, x=1 \\\\\n& 1=1+c \\Rightarrow c=0 \\\\\n& y=\\frac{1}{\\sqrt{3}}, x=e^{\\pi / 6}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 22nd January Evening Shift"
+    "title": "JEE Main 2025 (Online) 22nd January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1676",
@@ -229,7 +191,8 @@
     ],
     "solution": "<p>$\\begin{aligned} & y^2 d x+\\left(x-\\frac{1}{y}\\right) d y=0 \\\\ & y^2 d x=\\left(\\frac{1}{y}-x\\right) d y \\\\ & \\Rightarrow y^2 \\frac{d x}{d y}=\\frac{1}{y}-x \\\\ & \\Rightarrow \\frac{d x}{d y}+\\frac{x}{y^2}=\\frac{1}{y^3} \\\\ & \\text { I.F. }=e^{\\int \\frac{1}{y^2} d y}=e^{\\frac{-1}{y}}\\end{aligned}$</p>\n<p>$\\therefore$ Solution is</p>\n<p>$$ x e^{\\frac{-1}{y}}=\\int e^{-\\frac{1}{y}} \\times \\frac{1}{y^3} d y+C $$</p>\n<p>Let $\\frac{-1}{y}=t$</p>\n<p>$$ \\Rightarrow \\frac{1}{y^2} d y=d t $$</p>\n<p>$\\begin{aligned} & \\Rightarrow x e^{-\\frac{1}{y}}=-\\int e^t t d t+C \\\\ & \\Rightarrow x e^{-\\frac{1}{y}}=-e^t(t-1)+C \\\\ & \\Rightarrow x e^{-\\frac{1}{y}}=-e^{\\frac{-1}{y}}\\left(\\frac{-1}{y}-1\\right)+C\\end{aligned}$</p>\n\n$\\begin{aligned} & x(1)=1 \\\\ & \\Rightarrow e^{-1}=-e^{-1}(-2)+C \\\\ & \\Rightarrow C=-e^{-1} \\\\ & \\Rightarrow x=\\frac{1}{y}+1-e^{-1+\\frac{1}{y}} \\\\ & x\\left(\\frac{1}{2}\\right)=3-e\\end{aligned}$",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 22nd January Morning Shift"
+    "title": "JEE Main 2025 (Online) 22nd January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1677",
@@ -248,7 +211,8 @@
     ],
     "solution": "<p>$\\begin{aligned} & f(x+y)=f(x) f^{\\prime}(y)+f^{\\prime}(x) f(x) \\\\ & \\text { Put }=x=y=0 \\\\ & f(0)=f(0) f^{\\prime}(0)+f^{\\prime}(0) f(0) \\\\ & f^{\\prime}(0)=\\frac{1}{2} \\\\ & \\text { Put } y=0 \\\\ & f(x)=f(x) f^{\\prime}(0)+f^{\\prime}(x) f(0) \\\\ & f(x)=\\frac{1}{2} f(x)+f^{\\prime}(x) \\\\ & f^{\\prime}(x)=\\frac{f(x)}{2}\\end{aligned}$</p>\n<p>$$ \\frac{d y}{d x}=\\frac{y}{2} \\Rightarrow \\int \\frac{d y}{y}=\\int \\frac{d x}{2} $$</p>\n<p>$$ \\Rightarrow \\ln y=\\frac{x}{2}+c $$</p>\n<p>$\\begin{aligned} & \\because \\mathrm{f}(0)=1 \\Rightarrow \\mathrm{C}=0 \\\\ & \\ell \\mathrm{ny}=\\frac{\\pi}{2} \\Rightarrow \\mathrm{f}(\\mathrm{x})=\\mathrm{e}^{\\mathrm{x} / 2} \\\\ & \\ln \\mathrm{f}(\\mathrm{n})=\\frac{\\mathrm{n}}{2} \\\\ & \\sum_{\\mathrm{n}=1}^{100} \\ell \\mathrm{f}(\\mathrm{n})=\\frac{1}{2} \\sum_{\\mathrm{n}=1}^{100} \\mathrm{n}=\\frac{5050}{2} \\\\ & =2525\\end{aligned}$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 22nd January Morning Shift"
+    "title": "JEE Main 2025 (Online) 22nd January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1678",
@@ -267,7 +231,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n\\quad y d y & =(x d y-y d x) \\sin \\left(\\frac{x}{y}\\right) \\\\\n\\frac{d y}{y} & =\\left(\\frac{x d y-y d x}{y^2}\\right) \\sin \\left(\\frac{x}{y}\\right) \\\\\n\\frac{d y}{y} & =\\sin \\left(\\frac{x}{y}\\right) d\\left(-\\frac{x}{y}\\right) \\\\\n\\Rightarrow \\quad \\ell n y & =\\cos \\frac{x}{y}+C\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& x(1)=\\frac{\\pi}{2} \\Rightarrow 0=\\cos \\frac{\\pi}{2}+C \\Rightarrow C=0 \\\\\n& \\text { थny }=\\cos \\frac{x}{y} \\\\\n& \\text { but } y=2 \\Rightarrow \\cos \\frac{x}{2}=\\ln 2 \\\\\n& \\qquad \\begin{aligned}\n\\cos x & =2 \\cos ^2 \\frac{x}{2}-1 \\\\\n& =2(\\ln 2)^2-1\n\\end{aligned}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 23rd January Evening Shift"
+    "title": "JEE Main 2025 (Online) 23rd January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1679",
@@ -286,7 +251,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=\\frac{2(3+y) \\cdot e^{2 x}}{7+e^{2 x}} \\\\\n& \\frac{d y}{d x}-\\frac{2 y \\cdot e^{2 x}}{7+e^{2 x}}=\\frac{6 \\cdot e^{2 x}}{7+e^{2 x}} \\\\\n& \\text { I.F. }=e^{-\\int \\frac{2 e^{2 x}}{7+e^{2 x}}}=\\frac{1}{7+e^{2 x}}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\therefore y \\cdot \\frac{1}{7+\\mathrm{e}^{2 \\mathrm{x}}}=\\int \\frac{6 \\mathrm{e}^{2 \\mathrm{x}}}{\\left(7+3^{2 x}\\right)^2} \\mathrm{dx} \\\\\n& \\quad \\frac{\\mathrm{y}}{7+\\mathrm{e}^{2 \\mathrm{x}}}=\\frac{-3}{7+\\mathrm{e}^{2 \\mathrm{x}}}+C \\\\\n& (0,5) \\Rightarrow \\frac{5}{8}=\\frac{-3}{8}+C \\Rightarrow C=1 \\\\\n& \\therefore y=-3+7+\\mathrm{e}^{2 \\mathrm{x}} \\\\\n& y=\\mathrm{e}^{2 \\mathrm{x}}+4 \\\\\n& \\therefore \\mathrm{k}=8\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 23rd January Morning Shift"
+    "title": "JEE Main 2025 (Online) 23rd January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a167a",
@@ -305,7 +271,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\left(1+x^2\\right) \\frac{d y}{d x}+x y=5 x^1 \\sqrt{1+x^2} \\\\\n& \\frac{d y}{d x}+\\frac{x y}{1+x^2}=\\frac{5 x^2}{\\sqrt{1+x^2}} \\\\\n& \\therefore \\text { I.F. }=e^{\\int \\frac{x}{1+x^2} d x}=e^{\\frac{\\ln \\left(1+x^2\\right)}{2}}=\\sqrt{1+x^2} \\\\\n& \\therefore y \\sqrt{1+x^2}=\\int \\frac{5 x^2}{\\sqrt{1+x^2}} \\cdot \\sqrt{1+x^2} d x \\\\\n& \\therefore y \\sqrt{1+x^2}=\\int \\frac{5 x^2}{\\sqrt{1+x^2}} \\cdot \\sqrt{1+x^2} d x \\\\\n& y \\sqrt{1+x^2}=\\frac{5 x^3}{3}+C \\\\\n& \\because y(0)=0 \\Rightarrow 0=0+C \\Rightarrow C=0 \\\\\n& \\therefore y=\\frac{5 x^3}{3 \\sqrt{1+x^2}} \\\\\n& y(\\sqrt{3})=\\frac{15 \\sqrt{3}}{32}=\\frac{5 \\sqrt{3}}{2}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 24th January Morning Shift"
+    "title": "JEE Main 2025 (Online) 24th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a167b",
@@ -319,7 +286,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n&\\text { Differentiate both sides }\\\\\n&\\begin{aligned}\n& 4(x+2) f(x)+2(x+2)^2 f^{\\prime}(x)-6(x+2)=10(x+2) f(x) \\\\\n& 2(x+2)^2 f^{\\prime}(x)-6(x+2) f(x)=6(x+2) \\\\\n& (x+2) \\frac{d y}{d x}-3 y=3 \\\\\n& \\int \\frac{d y}{d x}=3 \\int \\frac{d x}{x+2} \\\\\n& \\ln (y+1)=3 \\ln (x+2)+C \\\\\n& (y+1)=C(x+2)^3 \\\\\n& f(0)=\\frac{3}{2} \\\\\n& f(2)=19\n\\end{aligned}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 24th January Morning Shift"
+    "title": "JEE Main 2025 (Online) 24th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a167c",
@@ -333,7 +301,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n& \\frac{d y}{d x}+\\frac{\\left(\\sin ^{-1} \\frac{x}{2}\\right)}{\\sqrt{4-x^2}} y=\\frac{\\left(\\sin ^{-3} \\frac{x}{2}\\right)^3}{\\sqrt{4-x^2}} \\\\\n& y e^{\\frac{\\left(\\sin ^{-1} \\frac{x}{2}\\right)^2}{2}}=\\int \\frac{\\left(\\sin ^{-3} \\frac{x}{2}\\right)^3}{4-x^2} e^{\\frac{\\left(\\sin ^{-1} \\frac{x}{2}\\right)^2}{2}} d x \\\\\n& y=\\left(\\sin ^{-1} \\frac{x}{2}\\right)^2-2+c \\cdot e^{\\frac{-\\left(\\sin ^{-1} \\frac{x}{2}\\right)^2}{2}} \\\\\n& y(2)=\\frac{\\pi^2}{4}-2 \\Rightarrow c=0 \\\\\n& y(0)=-2\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 28th January Evening Shift"
+    "title": "JEE Main 2025 (Online) 28th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a167d",
@@ -352,7 +321,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n&\\int_0^{\\mathrm{x}} \\mathrm{tf}(\\mathrm{t}) \\mathrm{dt}=\\mathrm{x}^2+(\\mathrm{x}), \\mathrm{x}>0\\\\\n&\\text { Diff. both side w.r. to } x\\\\\n&\\begin{aligned}\n& x f(x)=x^2 f^{\\prime}(x)+2 x f(x) \\\\\n& -x f(x)=x^2 f^{\\prime}(x) \\\\\n& \\int \\frac{f^{\\prime}(x)}{f(x)} d x=\\int \\frac{-1}{x} d x \\\\\n& \\operatorname{logdf}(x)=-\\log x+\\log c \\\\\n& f(x)=\\frac{c}{x}\n\\end{aligned}\\\\\n&\\mathrm{f}(2)=3 \\Rightarrow 3=\\frac{\\mathrm{c}}{2} \\Rightarrow \\mathrm{c}=6\\\\\n&f(x)=\\frac{6}{x}\\\\\n&f(6)=1\\quad\\therefore (1)\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 28th January Morning Shift"
+    "title": "JEE Main 2025 (Online) 28th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a167e",
@@ -371,7 +341,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\cos x(\\ln (\\cos x))^2 d y+(\\sin x-3 y(\\sin x) \\ln (\\cos x)) d x=0 \\\\\n& \\cos x(\\ln (\\cos x))^2 \\frac{d y}{d x}-3 \\sin x \\cdot \\ln (\\cos x) y=-\\sin x \\\\\n& \\frac{d y}{d x}-\\frac{3 \\tan x}{\\ln (\\cos x)} y=\\frac{-\\tan x}{(\\ln (\\cos x))^2} \\\\\n& \\frac{d y}{d x}+\\frac{3 \\tan x}{\\ln (\\sec x)} y=\\frac{-\\tan x}{(\\ln (\\sec x))^2} \\\\\n& \\text { I.F. }=e^{\\int \\frac{3 \\tan x}{\\ln (\\sec x)} d x}=(\\ln (\\sec x))^3\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& y \\times(\\ln (\\sec x))^3=-\\int \\frac{\\tan x}{(\\ln (\\sec x))^2}(\\ln (\\sec x))^3 d x \\\\\n& y \\times(\\ln (\\sec x))^3=-\\frac{1}{2}(\\ln (\\sec x))^2+C \\\\\n& \\text { Given }: x=\\frac{\\pi}{4}, y=-\\frac{1}{\\ln 2} \\\\\n& \\frac{-1}{\\ln 2} \\times(\\ln \\sqrt{2})^3=-\\frac{1}{2} \\times(\\ln \\sqrt{2})^2+C \\\\\n& \\Rightarrow \\frac{-1}{8 \\ln 2} \\times(\\ln 2)^3=\\frac{-1}{2} \\times \\frac{1}{4}(\\ln 2)^2+C \\\\\n& -\\frac{1}{8}(\\ln 2)^2=\\frac{-1}{8}(\\ln 2)^2+C \\\\\n& \\Rightarrow C=0 \\\\\n& \\therefore y(\\ln (\\sec x))^3=\\frac{-1}{2}(\\ln (\\sec x))^2+0 \\\\\n& y=\\frac{-1}{2 \\ln (\\sec x)} \\\\\n& y=\\frac{1}{2 \\ln (\\cos x)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\therefore y\\left(\\frac{\\pi}{6}\\right)=\\frac{1}{2 \\ln \\left(\\cos \\frac{\\pi}{6}\\right)} \\\\\n& =\\frac{1}{2 \\ln \\left(\\frac{\\sqrt{3}}{2}\\right)} \\\\\n& =\\frac{1}{2\\left(\\frac{1}{2} \\ln 3-\\ln 2\\right)} \\\\\n& =\\frac{1}{\\ln 3-\\ln 4}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 29th January Morning Shift"
+    "title": "JEE Main 2025 (Online) 29th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a167f",
@@ -390,35 +361,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\left(7 x^4 \\cot y-e^x \\operatorname{cosec} y\\right) \\frac{d x}{d y}=x^5 \\\\\n& x^5 \\frac{d y}{d x}-7 x^4 \\cot y=-e^x \\operatorname{cosec} y \\\\\n& \\frac{d y}{d x}-\\frac{7}{x} \\cot y=-\\frac{e^x}{x^5} \\operatorname{cosec} y \\\\\n& \\sin y \\frac{d y}{d x}-\\frac{7}{x} \\cos y=-\\frac{e^x}{x^5} \\\\\n& \\text { Let }-\\cos y=t \\\\\n& \\sin y \\frac{d y}{d x}=\\frac{d t}{d x} \\\\\n& \\therefore \\frac{d t}{d x}+\\frac{7}{x} t=-\\frac{e^x}{x^5}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\therefore \\text { I.F. }=e^{\\int \\frac{7}{x} d x}=x^7 \\\\\n& t \\cdot x^7=\\int \\frac{-e^x}{x^5} \\cdot x^7 d x \\\\\n& -\\cos y \\cdot x^7=-\\int e^x x^2 d x \\\\\n& \\cos y x^7=e^x\\left(x^2-2 x+2\\right)+c \\\\\n& \\because \\quad x=1 \\text { then } y=\\frac{\\pi}{2} \\Rightarrow c=-e \\\\\n& \\therefore \\quad \\cos y \\cdot x^7=e^x\\left(x^2-2 x+2\\right)-e \\\\\n& \\text { When } x=2 \\text { then } \\cos y=\\frac{2 e^2-e}{128}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 4th April Evening Shift"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a1680",
-    "question_id": "maval108",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "<p>$\\frac{d y}{d x}+\\frac{y}{x}=\\frac{x^2}{x^2}+\\frac{y^2}{x^2}$</p>\n<p>$\\begin{aligned} & \\frac{d y}{d x}+\\frac{y}{x}=1+\\left(\\frac{y}{x}\\right)^2 \\\\ & \\text { Let } \\frac{y}{x}=t \\\\ & y=x t \\\\ & \\frac{d y}{d x}=x \\frac{d t}{d x}+t \\\\ & \\therefore x \\frac{d t}{d x}+t+t=1+t^2 \\\\ & \\Rightarrow x \\frac{d t}{d x}+2 t=1+t^2 \\\\ & \\Rightarrow x \\frac{d t}{d x}+t^2+1-2 t \\\\ & \\Rightarrow x \\frac{d t}{d x}=(t-1)^2 \\\\ & \\Rightarrow \\frac{d t}{(t-1)^2}=\\frac{d x}{x}\\end{aligned}$</p>\n<p>Integrating both sides</p>\n<p>$$ \\begin{aligned} & \\Rightarrow \\int \\frac{d t}{(t-1)^2}=\\int \\frac{d x}{x} \\\\ & \\Rightarrow \\frac{-1}{(t-1)}=\\ln x+C \\\\ & \\Rightarrow \\frac{-1}{\\frac{y}{x}-1}=\\ln x+C \\\\ & \\Rightarrow \\frac{-x}{y-x}=\\ln x+C \\end{aligned} $$</p>\n<p>Given $y(1)=0$</p>\n<p>$$ \\begin{aligned} & 1=C \\\\ & \\Rightarrow \\frac{-x}{y-x}=\\ln x+1 ..........(i)\\end{aligned} $$</p>\n<p>$\\therefore $ Put $x=e$</p>\n<p>$\\begin{aligned} & \\frac{-e}{y-e}=1+1 \\\\ & \\Rightarrow-e=2(y-e) \\\\ & \\Rightarrow e=2(e-y) \\\\ & \\Rightarrow \\frac{e}{2}=e-y \\\\ & \\Rightarrow y=e-\\frac{e}{2} \\Rightarrow \\frac{e}{2} \\Rightarrow y=\\frac{e}{2} \\\\ & \\text { Put } x=e^2 \\text { in (i) } \\\\ & \\Rightarrow \\frac{-e^2}{y-e^2}=2+1\\end{aligned}$</p>\n<p>$\\begin{aligned} & \\Rightarrow-e^2=3\\left(y-e^2\\right) \\\\ & \\Rightarrow-e^2=3 y-3 e^2 \\\\ & \\Rightarrow 2 e^2=3 y \\\\ & \\Rightarrow y=\\frac{2}{3} e^2 \\\\ & \\therefore \\frac{2(y(e))^2}{y\\left(e^2\\right)}=2 \\frac{\\left(\\frac{e}{2}\\right)^2}{\\frac{2}{3} e^2} \\\\ & \\Rightarrow \\frac{\\frac{1}{2}}{\\frac{2}{3}}=\\frac{3}{4}=00.75\\end{aligned}$</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2025 Paper 2 Online"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a1681",
-    "question_id": "maval108",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "<p>$\\frac{d y}{d x}+\\frac{y}{x}=\\frac{x^2}{x^2}+\\frac{y^2}{x^2}$</p>\n<p>$\\begin{aligned} & \\frac{d y}{d x}+\\frac{y}{x}=1+\\left(\\frac{y}{x}\\right)^2 \\\\ & \\text { Let } \\frac{y}{x}=t \\\\ & y=x t \\\\ & \\frac{d y}{d x}=x \\frac{d t}{d x}+t \\\\ & \\therefore x \\frac{d t}{d x}+t+t=1+t^2 \\\\ & \\Rightarrow x \\frac{d t}{d x}+2 t=1+t^2 \\\\ & \\Rightarrow x \\frac{d t}{d x}+t^2+1-2 t \\\\ & \\Rightarrow x \\frac{d t}{d x}=(t-1)^2 \\\\ & \\Rightarrow \\frac{d t}{(t-1)^2}=\\frac{d x}{x}\\end{aligned}$</p>\n<p>Integrating both sides</p>\n<p>$$ \\begin{aligned} & \\Rightarrow \\int \\frac{d t}{(t-1)^2}=\\int \\frac{d x}{x} \\\\ & \\Rightarrow \\frac{-1}{(t-1)}=\\ln x+C \\\\ & \\Rightarrow \\frac{-1}{\\frac{y}{x}-1}=\\ln x+C \\\\ & \\Rightarrow \\frac{-x}{y-x}=\\ln x+C \\end{aligned} $$</p>\n<p>Given $y(1)=0$</p>\n<p>$$ \\begin{aligned} & 1=C \\\\ & \\Rightarrow \\frac{-x}{y-x}=\\ln x+1 ..........(i)\\end{aligned} $$</p>\n<p>$\\therefore $ Put $x=e$</p>\n<p>$\\begin{aligned} & \\frac{-e}{y-e}=1+1 \\\\ & \\Rightarrow-e=2(y-e) \\\\ & \\Rightarrow e=2(e-y) \\\\ & \\Rightarrow \\frac{e}{2}=e-y \\\\ & \\Rightarrow y=e-\\frac{e}{2} \\Rightarrow \\frac{e}{2} \\Rightarrow y=\\frac{e}{2} \\\\ & \\text { Put } x=e^2 \\text { in (i) } \\\\ & \\Rightarrow \\frac{-e^2}{y-e^2}=2+1\\end{aligned}$</p>\n<p>$\\begin{aligned} & \\Rightarrow-e^2=3\\left(y-e^2\\right) \\\\ & \\Rightarrow-e^2=3 y-3 e^2 \\\\ & \\Rightarrow 2 e^2=3 y \\\\ & \\Rightarrow y=\\frac{2}{3} e^2 \\\\ & \\therefore \\frac{2(y(e))^2}{y\\left(e^2\\right)}=2 \\frac{\\left(\\frac{e}{2}\\right)^2}{\\frac{2}{3} e^2} \\\\ & \\Rightarrow \\frac{\\frac{1}{2}}{\\frac{2}{3}}=\\frac{3}{4}=00.75\\end{aligned}$</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2025 Paper 2 Online"
+    "title": "JEE Main 2025 (Online) 4th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1682",
@@ -432,7 +376,8 @@
     "options": [],
     "solution": "$\\frac{d x}{d y}-\\frac{x}{y}=\\frac{1-y^2}{y}$\n<br/><br/>Integrating factor $=\\mathrm{e}^{\\int-\\frac{1}{y} d y}=\\frac{1}{y}$\n<br/><br/>$\\begin{aligned} & x \\cdot \\frac{1}{y}=\\int \\frac{1-y^2}{y^2} d y \\\\\\\\ & \\frac{x}{y}=\\frac{-1}{y}-y+c \\\\\\\\ & x=-1-y^2+c y\\end{aligned}$\n<br/><br/>$\\begin{aligned} & x(1)=1 \\\\\\\\ & 1=-1-1+c \\Rightarrow c=3 \\\\\\\\ & x=-1-y^2+3 y \\\\\\\\ & 5 x(2)=5(-1-4+6) \\\\\\\\ & =5\\end{aligned}$",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 1st February Evening Shift"
+    "title": "JEE Main 2024 (Online) 1st February Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1683",
@@ -451,7 +396,8 @@
     ],
     "solution": "$\\begin{aligned} & \\frac{d y}{d x}=2 x(x+y)^3-x(x+y)-1 \\\\\\\\ & \\text { Put } x+y=t \\\\\\\\ & \\Rightarrow \\frac{d y}{d x}=\\frac{d t}{d x}-1 \\\\\\\\ & \\frac{d t}{d x}-1=2 x(t)^3-x t\\end{aligned}$\n<br/><br/>$\\begin{aligned} \\Rightarrow & \\frac{d t}{2 t^3-t}=x d x \\\\\\\\ & \\int \\frac{1}{2 t^3-t} d t=\\int x d x \\\\\\\\ \\Rightarrow & \\int \\frac{t}{2 t^4-t^2} d t=\\int x d x\\end{aligned}$\n<br/><br/>$\\begin{aligned} & t^2=z \\\\\\\\ & 2 t d t=d z \\\\\\\\ & \\frac{1}{2} \\int \\frac{d z}{2 z^2-z}=\\int x d x \\\\\\\\ & \\ln \\left|\\frac{z-\\frac{1}{2}}{z}\\right|=x^2+c\\end{aligned}$\n<br/><br/>$\\ln \\left|\\frac{(x+y)^2-\\frac{1}{2}}{(x+y)^2}\\right|=x^2+c$\n<br/><br/>$y(0)=1 \\Rightarrow c=\\ln \\left(\\frac{1}{2}\\right)$\n<br/><br/>$\\Rightarrow \\frac{(x+y)^2-\\frac{1}{2}}{(x+y)^2}=e^{x^2} \\times \\frac{1}{2}$\n<br/><br/>$\\frac{(x+y)^2-\\frac{1}{2}}{(x+y)^2}=\\sqrt{e} \\times \\frac{1}{2}$\n<br/><br/>$\\Rightarrow(x+y)^2=\\frac{1}{2-\\sqrt{e}}$",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 1st February Morning Shift"
+    "title": "JEE Main 2024 (Online) 1st February Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1684",
@@ -470,7 +416,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\left(x^2-4\\right) d y-\\left(y^2-3 y\\right) d x=0 \\\\\n& \\Rightarrow \\int \\frac{d y}{y^2-3 y}=\\int \\frac{d x}{x^2-4} \\\\\n& \\Rightarrow \\frac{1}{3} \\int \\frac{y-(y-3)}{y(y-3)} d y=\\int \\frac{d x}{x^2-4} \\\\\n& \\Rightarrow \\frac{1}{3}(\\ln |y-3|-\\ln |y|)=\\frac{1}{4} \\ln \\left|\\frac{x-2}{x+2}\\right|+C \\\\\n& \\Rightarrow \\frac{1}{3} \\ln \\left|\\frac{y-3}{y}\\right|=\\frac{1}{4} \\ln \\left|\\frac{x-2}{x+2}\\right|+C\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { At } \\mathrm{x}=4, \\mathrm{y}=\\frac{3}{2} \\\\\n& \\therefore \\mathrm{C}=\\frac{1}{4} \\ln 3 \\\\\n& \\therefore \\frac{1}{3} \\ln \\left|\\frac{\\mathrm{y}-3}{\\mathrm{y}}\\right|=\\frac{1}{4} \\ln \\left|\\frac{\\mathrm{x}-2}{\\mathrm{x}+2}\\right|+\\frac{1}{4} \\ln (3) \\\\\n& \\text { At } \\mathrm{x}=10 \\\\\n& \\frac{1}{3} \\ln \\left|\\frac{\\mathrm{y}-3}{\\mathrm{y}}\\right|=\\frac{1}{4} \\ln \\left|\\frac{2}{3}\\right|+\\frac{1}{4} \\ln (3) \\\\\n& \\ln \\left|\\frac{\\mathrm{y}-3}{\\mathrm{y}}\\right|=\\ln 2^{3 / 4}, \\forall \\mathrm{x}>2, \\frac{\\mathrm{dy}}{\\mathrm{dx}}<0 \\\\\n& \\text { as } \\mathrm{y}(4)=\\frac{3}{2} \\Rightarrow \\mathrm{y} \\in(0,3) \\\\\n& -\\mathrm{y}+3=8^{1 / 4} \\cdot \\mathrm{y} \\\\\n& \\mathrm{y}=\\frac{3}{1+8^{1 / 4}}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 27th January Evening Shift"
+    "title": "JEE Main 2024 (Online) 27th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1685",
@@ -484,7 +431,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=\\frac{x+y-2}{x-y} \\\\\n& \\mathrm{x}=\\mathrm{X}+\\mathrm{h}, \\mathrm{y}=\\mathrm{Y}+\\mathrm{k} \\\\\n& \\frac{d Y}{d X}=\\frac{X+Y}{X-Y} \\\\\n& \\left.\\begin{array}{l}\n\\mathrm{h}+\\mathrm{k}-2=0 \\\\\n\\mathrm{~h}-\\mathrm{k}=0\n\\end{array}\\right\\} \\mathrm{h}=\\mathrm{k}=1 \\\\\n& \\mathrm{Y}=\\mathrm{vX} \\\\\n& v+\\frac{d v}{d X}=\\frac{1+v}{1-v} \\Rightarrow X-\\frac{d v}{d X}=\\frac{1+v^2}{1-v} \\\\\n&\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\frac{1-v}{1+v^2} d v=\\frac{d X}{X} \\\\\n& \\tan ^{-1} v-\\frac{1}{2} \\ln \\left(1+v^2\\right)=\\ln |X|+C\n\\end{aligned}$$</p>\n<p>As curve is passing through $$(2,1)$$</p>\n<p>$$\\begin{aligned}\n& \\tan ^{-1}\\left(\\frac{y-1}{x-1}\\right)-\\frac{1}{2} \\ln \\left(1+\\left(\\frac{y-1}{x-1}\\right)^2\\right)=\\ln |x-1| \\\\\n& \\therefore \\alpha=1 \\text { and } \\beta=2 \\\\\n& \\Rightarrow 5 \\beta+\\alpha=11\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 27th January Evening Shift"
+    "title": "JEE Main 2024 (Online) 27th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1686",
@@ -498,7 +446,8 @@
     "options": [],
     "solution": "<p>$$\\begin{array}{ll}\n2 x+3 y-2=t & 4 x+6 y-4=2 t \\\\\n2+3 \\frac{d y}{d x}=\\frac{d t}{d x} & 4 x+6 y-7=2 t-3\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=\\frac{-(2 x+3 y-2)}{4 x+6 y-7} \\\\\n& \\frac{d t}{d x}=\\frac{-3 t+4 t-6}{2 t-3}=\\frac{t-6}{2 t-3} \\\\\n& \\int \\frac{2 t-3}{t-6} d t=\\int d x \\\\\n& \\int\\left(\\frac{2 t-12}{t-6}+\\frac{9}{t-6}\\right) \\cdot d t=x \\\\\n& 2 t+9 \\ln (t-6)=x+c \\\\\n& 2(2 x+3 y-2)+9 \\ln (2 x+3 y-8)=x+c \\\\\n& x=0, y=3 \\\\\n& c=14 \\\\\n& 4 x+6 y-4+9 \\ln (2 x+3 y-8)=x+14 \\\\\n& x+2 y+3 \\ln (2 x+3 y-8)=6 \\\\\n& \\alpha=1, \\beta=2, \\gamma=8 \\\\\n& \\alpha+2 \\beta+3 \\gamma=1+4+24=29\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 27th January Morning Shift"
+    "title": "JEE Main 2024 (Online) 27th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1687",
@@ -517,7 +466,8 @@
     ],
     "solution": "<p>Differential equation :-</p>\n<p>$$\\begin{aligned}\n& x \\cos \\frac{y}{x} \\frac{d y}{d x}=y \\cos \\frac{y}{x}+x \\\\\n& \\cos \\frac{y}{x}\\left[x \\frac{d y}{d x}-y\\right]=x\n\\end{aligned}$$</p>\n<p>Divide both sides by $$\\mathrm{x}^2$$</p>\n<p>$$\\cos \\frac{y}{x}\\left(\\frac{x \\frac{d y}{d x}-y}{x^2}\\right)=\\frac{1}{x}$$</p>\n<p>Let $$\\frac{y}{x}=t$$</p>\n<p>$$\\begin{aligned}\n& \\cos \\mathrm{t}\\left(\\frac{\\mathrm{dt}}{\\mathrm{dx}}\\right)=\\frac{1}{\\mathrm{x}} \\\\\n& \\cos \\mathrm{t~dt}=\\frac{1}{\\mathrm{x}} \\mathrm{dx}\n\\end{aligned}$$</p>\n<p>Integrating both sides</p>\n<p>$$\\begin{aligned}\n& \\sin \\mathrm{t}=\\ln |\\mathrm{x}|+\\mathrm{c} \\\\\n& \\sin \\frac{\\mathrm{y}}{\\mathrm{x}}=\\ln |\\mathrm{x}|+\\mathrm{c}\n\\end{aligned}$$</p>\n<p>Using $$\\mathrm{y}(1)=\\frac{\\pi}{3}$$, we get $$\\mathrm{c}=\\frac{\\sqrt{3}}{2}$$</p>\n<p>So, $$\\alpha=\\sqrt{3} \\Rightarrow \\alpha^2=3$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 29th January Evening Shift"
+    "title": "JEE Main 2024 (Online) 29th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1688",
@@ -531,7 +481,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n& \\int\\left(\\frac{1}{x}+\\frac{\\ln x}{x}\\right) d x+\\int \\frac{d y}{1+y^2}=0 \\\\\n& \\ln x+\\frac{(\\ln x)^2}{2}+\\tan ^{-1} y=C\n\\end{aligned}$$</p>\n<p>Put $$x=y=1$$</p>\n<p>$$\\begin{aligned}\n& \\therefore C=\\frac{\\pi}{4} \\\\\n& \\Rightarrow \\ln x+\\frac{(\\ln x)^2}{2}+\\tan ^{-1} y=\\frac{\\pi}{4}\n\\end{aligned}$$</p>\n<p>Put $$x=e$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\mathrm{y}=\\tan \\left(\\frac{\\pi}{4}-\\frac{3}{2}\\right)=\\frac{1-\\tan \\frac{3}{2}}{1+\\tan \\frac{3}{2}} \\\\\n& \\therefore \\alpha=1, \\beta=1 \\\\\n& \\Rightarrow \\alpha+2 \\beta=3\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 29th January Morning Shift"
+    "title": "JEE Main 2024 (Online) 29th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1689",
@@ -545,7 +496,8 @@
     "options": [],
     "solution": "<p>$$\\mathrm{A}=\\frac{1}{2}\\left(\\frac{-\\mathrm{y}}{\\mathrm{Y}^{\\prime}(\\mathrm{x})}+\\mathrm{x}\\right)(\\mathrm{y}-\\mathrm{xY} / \\mathrm{x})=\\frac{-\\mathrm{y}^2}{2 \\mathrm{Y}^{\\prime}(\\mathrm{x})}+1$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsoxkuuf/8206ce56-06e1-4b71-9f96-f1cdb4f19baf/cd6cd370-ccf1-11ee-a330-494dca5e9a63/file-6y3zli1lsoxkuug.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsoxkuuf/8206ce56-06e1-4b71-9f96-f1cdb4f19baf/cd6cd370-ccf1-11ee-a330-494dca5e9a63/file-6y3zli1lsoxkuug.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 30th January Evening Shift Mathematics - Differential Equations Question 64 English Explanation\"></p>\n<p>$$\\Rightarrow\\left(-y+x Y^{\\prime}(x)\\right)\\left(y-x Y^{\\prime}(x)\\right)=-y^2+2 Y^{\\prime}(x)$$</p>\n<p>$$\\begin{aligned}\n-y^2+x y Y^{\\prime}(x)+x y Y^{\\prime}(x) &amp; -x^2\\left[Y^{\\prime}(x)\\right]^2 \\\\\n= &amp; -y^2+2 Y^{\\prime}(x)\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; 2 x y-x^2 Y^{\\prime}(x)=2 \\\\\n&amp; \\frac{d y}{d x}=\\frac{2 x y-2}{x^2} \\\\\n&amp; \\frac{d y}{d x}-\\frac{2}{x} y=\\frac{-2}{x^2} \\\\\n&amp; \\text { I.F. }=e^{-2 \\ln x}=\\frac{1}{x^2} \\\\\n&amp; y \\cdot \\frac{1}{x^2}=\\frac{2}{3} x^{-3}+c \\\\\n&amp; \\text { Put } x=1, y=1 \\\\\n&amp; 1=\\frac{2}{3}+c \\Rightarrow c=\\frac{1}{3} \\\\\n&amp; Y=\\frac{2}{3} \\cdot \\frac{1}{X}+\\frac{1}{3} X^2 \\\\\n\\Rightarrow \\quad &amp; 12 Y(2)=\\frac{5}{3} \\times 12=20\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 30th January Evening Shift"
+    "title": "JEE Main 2024 (Online) 30th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a168a",
@@ -564,7 +516,8 @@
     ],
     "solution": "<p>$$\\frac{d y}{d x}=2(x-1) \\sin x+\\left(x^2-2 x\\right) \\cos x$$</p>\n<p>Now both side integrate</p>\n<p>$$\\begin{aligned}\n& y(x)=\\int 2(x-1) \\sin x d x+\\left[\\left(x^2-2 x\\right)(\\sin x)-\\int(2 x-2) \\sin x d x\\right] \\\\\n& y(x)=\\left(x^2-2 x\\right) \\sin x+\\lambda \\\\\n& y(0)=0+\\lambda \\Rightarrow 2=\\lambda \\\\\n& y(x)=\\left(x^2-2 x\\right) \\sin x+2 \\\\\n& y(2)=2\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 30th January Morning Shift"
+    "title": "JEE Main 2024 (Online) 30th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a168b",
@@ -578,7 +531,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n& \\sec ^2 x \\frac{d x}{d y}+e^{2 y} \\tan ^2 x+\\tan x=0 \\\\\n& \\left(\\text { Put } \\tan x=t \\Rightarrow \\sec ^2 x \\frac{d x}{d y}=\\frac{d t}{d y}\\right) \\\\\n& \\frac{d t}{d y}+e^{2 y} \\times t^2+t=0 \\\\\n& \\frac{d t}{d y}+t=-t^2 \\cdot e^{2 y} \\\\\n& \\frac{1}{t^2} \\frac{d t}{d y}+\\frac{1}{t}=-e^{2 y} \\\\\n& \\left(\\text { Put } \\frac{1}{t}=u \\frac{-1}{t^2} \\frac{d t}{d y}=\\frac{d u}{d y}\\right) \\\\\n& \\frac{-d u}{d y}+u=-e^{2 y} \\\\\n& \\frac{d u}{d y}-u=e^{2 y} \\\\\n& \\text { I.F. }=e^{-\\int d y}=e^{-y} \\\\\n& u e^{-y}=\\int e^{-y} \\times e^{2 y} d y \\\\\n& \\frac{1}{\\tan x} \\times e^{-y}=e^y+c \\\\\n& x=\\frac{\\pi}{4}, y=0, c=0 \\\\\n& \\begin{aligned}\n& \\mathrm{x}=\\frac{\\pi}{6}, \\quad \\mathrm{y}=\\alpha \\\\\n& \\sqrt{3} \\mathrm{e}^{-\\alpha}=\\mathrm{e}^\\alpha+0 \\\\\n& \\mathrm{e}^{2 \\alpha}=\\sqrt{3} \\\\\n& \\mathrm{e}^{8 \\alpha}=9\n\\end{aligned}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 31st January Evening Shift"
+    "title": "JEE Main 2024 (Online) 31st January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a168c",
@@ -597,7 +551,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=\\frac{\\sin x+y \\cos x}{\\sin x \\cdot \\cos x\\left(\\frac{1}{\\cos x}-\\sin x \\cdot \\frac{\\sin x}{\\cos x}\\right)} \\\\\n& =\\frac{\\sin x+y \\cos x}{\\sin x\\left(1-\\sin ^2 x\\right)} \\\\\n& \\frac{d y}{d x}=\\sec ^2 x+y \\cdot 2(\\operatorname{cosec} 2 x) \\\\\n& \\frac{d y}{d x}-2 \\operatorname{cosec}(2 x) \\cdot y=\\sec ^2 x \\\\\n& \\frac{d y}{d x}+p \\cdot y=Q\n\\end{aligned}$$</p>\n<p>$$\\text { I.F. }=\\mathrm{e}^{\\int p \\mathrm{dx}}=\\mathrm{e}^{\\int-2 \\operatorname{cosec}(2 \\mathrm{x}) \\mathrm{dx}}$$</p>\n<p>Let $$2 \\mathrm{x}=\\mathrm{t}$$</p>\n<p>$$2 \\frac{\\mathrm{dx}}{\\mathrm{dt}}=1$$</p>\n<p>$$\\mathrm{dx}=\\frac{\\mathrm{dt}}{2}$$</p>\n<p>$$=\\mathrm{e}^{-\\int \\operatorname{cosec}(\\mathrm{t}) \\mathrm{dt}}$$</p>\n<p>$$=\\mathrm{e}^{-\\ln \\left|\\tan \\frac{t}{2}\\right|}$$</p>\n<p>$$=\\mathrm{e}^{-\\ln |\\tan x|}=\\frac{1}{|\\tan x|}$$</p>\n<p>$$\\begin{aligned}\n& y(\\text { IF })=\\int Q(I F) d x+c \\\\\n& \\Rightarrow y \\frac{1}{|\\tan x|}=\\int \\sec ^2 x \\cdot \\frac{1}{|\\tan x|}+c \\\\\n& y \\cdot \\frac{1}{|\\tan x|}=\\int \\frac{d t}{|t|}+c \\quad \\text { for } \\tan x=t \\\\\n& y \\cdot \\frac{1}{|\\tan x|}=\\ln |t|+c \\\\\n& y=|\\tan x|(\\ln |\\tan x|+c) \\\\\n& \\text { Put } x=\\frac{\\pi}{4}, y=2 \\\\\n& 2=\\ln 1+c \\Rightarrow c=2 \\\\\n& y=|\\tan x|(\\ln |\\tan x|+2) \\\\\n& y\\left(\\frac{\\pi}{3}\\right)=\\sqrt{3}(\\ln \\sqrt{3}+2)\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 31st January Morning Shift"
+    "title": "JEE Main 2024 (Online) 31st January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a168d",
@@ -616,7 +571,8 @@
     ],
     "solution": "<p>$$\\frac{\\mathrm{dx}}{\\mathrm{dy}}=\\frac{\\mathrm{x}}{\\mathrm{y}}\\left(\\ln \\left(\\frac{\\mathrm{x}}{\\mathrm{y}}\\right)+1\\right)$$</p>\n<p>Let $$\\frac{x}{y}=t \\Rightarrow x=t y$$</p>\n<p>$$\\begin{aligned}\n& \\frac{d x}{d y}=t+y \\frac{d t}{d y} \\\\\n& t+y \\frac{d t}{d y}=t(\\ln (t)+1)\n\\end{aligned}$$</p>\n<p>$$\\mathrm{y} \\frac{\\mathrm{dt}}{\\mathrm{dy}}=\\mathrm{t} \\ln (\\mathrm{t}) \\Rightarrow \\frac{\\mathrm{dt}}{\\mathrm{t} \\ln (\\mathrm{t})}=\\frac{\\mathrm{dy}}{\\mathrm{y}}$$</p>\n<p>$$\\Rightarrow \\int \\frac{\\mathrm{dt}}{\\mathrm{t} \\cdot \\ln (\\mathrm{t})}=\\int \\frac{\\mathrm{dy}}{\\mathrm{y}}$$</p>\n<p>$$\\Rightarrow \\int \\frac{d p}{p}=\\int \\frac{d y}{y} \\quad$$ let $$\\ln t=p$$</p>\n<p>$$\\frac{1}{\\mathrm{t}} \\mathrm{dt}=\\mathrm{dp}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\ln p=\\ln y+c \\\\\n& \\ln (\\ln t)=\\ln y+c \\\\\n& \\ln \\left(\\ln \\left(\\frac{x}{y}\\right)\\right)=\\ln y+c \\\\\n& \\text { at } x=e, y=1 \\\\\n& \\ln \\left(\\ln \\left(\\frac{e}{1}\\right)\\right)=\\ln (1)+c \\Rightarrow c=0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\ln \\left|\\ln \\left(\\frac{x}{y}\\right)\\right|=\\ln y \\\\\n& \\left|\\ln \\left(\\frac{x}{y}\\right)\\right|=e^{\\ln y} \\\\\n& \\left|\\ln \\left(\\frac{x}{y}\\right)\\right|=y\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 31st January Morning Shift"
+    "title": "JEE Main 2024 (Online) 31st January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a168e",
@@ -635,7 +591,8 @@
     ],
     "solution": "<p>$$\\frac{d y}{d x}+\\frac{y\\left(2 x^3+8 x\\right)}{\\left(x^2+4\\right)^2}=\\frac{2}{\\left(x^2+4\\right)^2}$$</p>\n<p>$$\\mathrm{IF}=e^{\\int \\frac{2 x^3+8 x}{\\left(x^2+4\\right)^2} d x}$$</p>\n<p>$$\\text { Let }\\left(x^2+4\\right)^2=t \\quad \\Rightarrow 2\\left(x^2+4\\right)(2 x) d x=d t$$</p>\n<p>$$\\begin{gathered}\n=e^{\\int \\frac{d t}{2 t}}=e^{\\log \\sqrt{t}}=\\sqrt{t}=\\left(x^2+4\\right) \\\\\n\\therefore \\quad y\\left(x^2+4\\right)=\\int \\frac{2}{x^2+4}+c \\\\\n\\Rightarrow y\\left(x^2+4\\right)=\\tan ^{-1}\\left(\\frac{x}{2}\\right)+c \\\\\ny(0)=0\n\\end{gathered}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow 0=0+c \\quad \\Rightarrow c=0 \\\\\n& \\text { put } x=2 \\\\\n& y(8)=\\frac{\\pi}{4} \\quad \\Rightarrow \\quad y=\\frac{\\pi}{32} \\\\\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 4th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 4th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a168f",
@@ -649,7 +606,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=(x+y+z)^2 \\\\\n& \\text { Put } x+y+z=t \\\\\n& \\Rightarrow 1+\\frac{d y}{d x}=\\frac{d t}{d x} \\\\\n& \\text { Given DE } \\Rightarrow \\frac{d t}{d x}-1=t^2 \\\\\n& \\Rightarrow \\frac{d t}{1+t^2}=d x \\Rightarrow \\tan ^{-1} t=x+c \\\\\n& \\Rightarrow x+y+z=\\tan (x+c) \\\\\n& \\Rightarrow y(x)=\\tan (x+c)-x-2 \\\\\n& \\because y(0)=-2 \\Rightarrow-2=\\tan c-0-2 \\\\\n& \\qquad \\Rightarrow c=0 \\\\\n& \\Rightarrow y(x)=\\tan x-x-2 \\\\\n& \\frac{d y}{d x}=\\sec ^2 x-1 \\geq 0\n\\end{aligned}$$</p>\n<p>$$\\Rightarrow y(x)$$ is increasing if $$x \\in\\left(0, \\frac{\\pi}{3}\\right)$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\alpha=y\\left(\\frac{\\pi}{3}\\right), \\beta=y(0) \\\\\n& \\Rightarrow \\alpha=-\\frac{\\pi}{3}-2+\\sqrt{3} \\text { and } \\beta=-2\n\\end{aligned}$$</p>\n<p>Now, $$(3 \\alpha+\\pi)^2+\\beta^2=(6+3 \\sqrt{3})^2+(-2)^2$$</p>\n<p>$$=67-36 \\sqrt{3}=y+\\delta \\sqrt{3}$$.</p>\n<p>$$\\Rightarrow \\gamma+\\delta=31$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 4th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 4th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1690",
@@ -668,7 +626,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\left(x^4+2 x^3+3 x^2+2 x+2\\right) d y-\\left(2 x^2+2 x+3\\right) d x=0 \\\\\n& \\int d y=\\int\\left(\\frac{2 x^2+2 x+3}{x^4+2 x^3+3 x^2+2 x+2} d x\\right. \\\\\n& \\int d y=\\int \\frac{1}{x^2+1} d x+\\int \\frac{}{x^2+2 x+2} d x \\\\\n& y=\\tan ^{-1}(x)+\\tan ^{-1}(1+x)+C \\\\\n& y(-1)=\\tan ^{-1}(-1)+\\tan ^{-1}(1-1)+C \\\\\n& y(-1)=-\\frac{\\pi}{4}+C=\\left(\\frac{-\\pi}{4}\\right)-\\{\\text { given }\\} \\\\\n& \\Rightarrow C=0 \\\\\n& \\text { So, } y(x)=\\tan ^{-1}(x)+\\tan ^{-1}(1+x) \\\\\n& y(0)=\\tan ^{-1}(0)+\\tan ^{-1}(1+0) \\\\\n& y(0)=\\frac{\\pi}{4}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 4th April Morning Shift"
+    "title": "JEE Main 2024 (Online) 4th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1691",
@@ -687,7 +646,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=\\frac{(2+\\alpha) x-\\beta y+2}{\\beta x-2 \\alpha y-(\\beta \\gamma-4 \\alpha)} \\\\\n& \\beta x d y-2 \\alpha y d y-(\\beta \\gamma-4 \\alpha) d y \\\\\n& =2 x d x+\\alpha x d x-\\beta y d x+2 d x \\\\\n& \\beta \\int(x d y+y d y)-\\alpha y^2-(\\beta \\gamma-4 x) y=x^2+\\frac{\\alpha x^2}{2}+2 x \\\\\n& \\beta x y-\\alpha y^2-(\\beta \\gamma-4 \\alpha) y=x^2+\\frac{\\alpha x^2}{2}+2 x \\\\\n& \\left(1+\\frac{\\alpha}{2}\\right) x^2+\\alpha y^2-\\beta x y+2 x+(\\beta \\gamma-4 \\alpha) y=0 \\\\\n& \\because \\text { this represents circle passing through origin } \\\\\n& \\Rightarrow \\beta=0 \\text { and } 1+\\frac{\\alpha}{2}=\\alpha \\\\\n& \\Rightarrow \\alpha=2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\therefore C: 2 x^2+2 y^2+2 x-8 y=0 \\\\\n& x^2+y^2+x-4 y=0 \\\\\n& \\text { Radius }=\\sqrt{\\frac{1}{4}+4-0} \\\\\n& \\quad=\\frac{\\sqrt{17}}{2}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 6th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 6th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1692",
@@ -701,7 +661,8 @@
     "options": [],
     "solution": "<p>Given the differential equation</p>\n\n<p>$$\\left(e^y + 1\\right) \\cos x \\, dx + e^y \\sin x \\, dy = 0,$$</p>\n\n<p>we aim to find the value of $ e^{y\\left(\\frac{\\pi}{6}\\right)} $ given that the solution $ y(x) $ passes through the point $\\left(\\frac{\\pi}{2}, 0\\right)$.</p>\n\n<p>First, we recognize that the differential equation can be rearranged as:</p>\n\n<p>$$d\\left(e^y \\sin x\\right) + \\cos x \\, dx = 0.$$</p>\n\n<p>Integrating this expression, we obtain:</p>\n\n<p>$$ e^y \\sin x + \\sin x = C,$$</p>\n\n<p>where $ C $ is a constant. Given that the solution passes through the point $\\left(\\frac{\\pi}{2}, 0\\right)$, we substitute these values into the equation to find $ C $:</p>\n\n<p>$$ e^0 \\sin\\left(\\frac{\\pi}{2}\\right) + \\sin\\left(\\frac{\\pi}{2}\\right) = C \\Rightarrow 1 + 1 = C \\Rightarrow C = 2.$$</p>\n\n<p>Thus, the equation simplifies to:</p>\n\n<p>$$e^y \\sin x + \\sin x = 2.$$</p>\n\n<p>We now need to determine the value of $ e^{y\\left(\\frac{\\pi}{6}\\right)} $. Substituting $ x = \\frac{\\pi}{6} $ into the equation, we get:</p>\n\n<p>$$ \\left(e^{y\\left(\\frac{\\pi}{6}\\right)} + 1\\right) \\cdot \\sin\\left(\\frac{\\pi}{6}\\right) = 2.$$</p>\n\n<p>Since $\\sin\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{2}$, the equation becomes:</p>\n\n<p>$$ \\left(e^{y\\left(\\frac{\\pi}{6}\\right)} + 1\\right) \\cdot \\frac{1}{2} = 2 \\Rightarrow e^{y\\left(\\frac{\\pi}{6}\\right)} + 1 = 4 \\Rightarrow e^{y\\left(\\frac{\\pi}{6}\\right)} = 3.$$</p>\n\n<p>Therefore, the value of $ e^{y\\left(\\frac{\\pi}{6}\\right)} $ is $ 3 $.</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 6th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 6th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1693",
@@ -720,7 +681,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\sec y \\frac{d y}{d x}+2 x \\sin y=x^3 \\cos y \\\\\n& \\Rightarrow \\sec ^2 y \\frac{d y}{d x}+2 x \\tan y=x^3\n\\end{aligned}$$</p>\n<p>Let $$z=\\tan y$$</p>\n<p>$$\\begin{aligned}\n& \\frac{d z}{d x}=\\sec ^2 y \\frac{d y}{d x} \\\\\n& \\Rightarrow \\frac{d z}{d x}+2 x z=x^3\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\text { I.F. }=e^{x^2} \\\\\n& \\Rightarrow z . e^{x^2}=\\int e^{x^2} \\cdot x^3 d x+c\n\\end{aligned}$$</p>\n<p>$$\\Rightarrow \\tan y \\cdot e^{x^2}=\\frac{1}{2}\\left(x^2 e^{x^2}-e^{x^2}\\right)+c$$</p>\n<p>$$\\Rightarrow \\tan (0) \\cdot e=\\frac{1}{2}(1 \\cdot e-e)+c$$</p>\n<p>$$\\Rightarrow c=0$$</p>\n<p>$$\\Rightarrow \\tan y=\\frac{x^2-1}{2}$$</p>\n<p>$$f(x)=\\tan ^{-1}\\left(\\frac{x^2-1}{2}\\right) \\Rightarrow f(\\sqrt{3})=\\frac{\\pi}{4}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 8th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 8th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1694",
@@ -734,7 +696,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n& \\alpha|x|=|y| e^{x y-\\beta} \\\\\n& \\frac{x d y-y d x}{y^2}+\\frac{x y(x d y+y d x)}{y^2}=0 \\\\\n& -d\\left(\\frac{x}{y}\\right)+\\frac{x}{y} d(x y)=0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\int d(x y)=\\int \\frac{d\\left(\\frac{x}{y}\\right)}{\\frac{x}{y}} \\\\\n& x y=\\ln \\left|\\frac{x}{y}\\right|+\\ln c \\\\\n& x y=\\ln \\left(\\left|\\frac{x}{y}\\right| \\cdot c\\right) \\\\\n& \\because y(1)=2 \\\\\n& 2=\\ln \\left|\\frac{1}{2}\\right| c \\Rightarrow c=2 e^2 \\\\\n& \\therefore \\quad \\operatorname{solution} x y=\\ln \\left(\\left|\\frac{x}{y}\\right| \\cdot 2 e^2\\right) \\\\\n& e^{x y}=\\frac{|x|}{|y|} \\cdot 2 e^2 \\\\\n& 2|x|=|y| e^{x y-2} \\\\\n& \\Rightarrow \\alpha=2, \\beta=2, \\alpha+\\beta=4\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 8th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 8th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1695",
@@ -753,7 +716,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\left(1+y^2\\right) e^{\\tan x} d x+\\cos ^2 x\\left(1+e^{2 \\tan x}\\right) d y=0 \\\\\n& \\frac{d y}{1+y^2}=-\\frac{e^{\\tan x} \\cdot \\sec ^2 x d x}{1+e^{2 \\tan x}} \\\\\n& \\int \\frac{d y}{1+y^2}=-\\int \\frac{e^{\\tan x} \\cdot \\sec ^2 x d x}{1+e^{2 \\tan x}}\n\\end{aligned}$$</p>\n<p>Let $$e^{\\tan x}=t$$</p>\n<p>$$\\begin{aligned}\n& e^{\\tan x} \\cdot \\sec ^2 x d x=d t \\\\\n& \\int \\frac{d y}{1+y^2}=-\\int \\frac{d t}{1+t^2}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\tan ^{-1} y=-\\tan ^{-1} t+c \\\\\n& \\tan ^{-1} y=-\\tan ^{-1}\\left(e^{\\tan x}\\right)+c \\\\\n& \\text { at } x=0, y=1 \\\\\n& \\tan ^{-1}(1)=-\\tan ^{-1}(1)+c \\\\\n& \\frac{\\pi}{4}=-\\frac{\\pi}{4}+c \\\\\n& c=\\frac{\\pi}{2} \\\\\n& \\tan ^{-1} y=-\\tan ^{-1}\\left(e^{\\tan x}\\right)+\\frac{\\pi}{2}\n\\end{aligned}$$</p>\n<p>Now, at $$x=\\frac{\\pi}{4}$$</p>\n<p>$$\\begin{aligned}\n& \\tan ^{-1} y=-\\tan ^{-1}(e)+\\frac{\\pi}{2} \\\\\n& \\tan ^{-1} y=\\cot ^{-1} e=\\tan ^{-1} \\frac{1}{e} \\\\\n& \\Rightarrow y=\\frac{1}{e}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 8th April Morning Shift"
+    "title": "JEE Main 2024 (Online) 8th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1696",
@@ -767,7 +731,8 @@
     "options": [],
     "solution": "Let the equation of tangent to the curve at $(x, y)$. \n<br><br>Whose slope is $\\frac{d y}{d x}$ is\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lnkjbalj/b11eb6ae-312f-49ae-887d-c92b77fa1799/cc33a060-6789-11ee-b7ba-e3cd7ea3cf86/file-6y3zli1lnkjbalk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lnkjbalj/b11eb6ae-312f-49ae-887d-c92b77fa1799/cc33a060-6789-11ee-b7ba-e3cd7ea3cf86/file-6y3zli1lnkjbalk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 10th April Evening Shift Mathematics - Differential Equations Question 85 English Explanation\">\n<br><br>$$\n\\begin{aligned}\n&amp;\\mathrm{Y}-y=\\frac{d y}{d x}(\\mathrm{X}-x)\\\\\\\\\n&amp;\\begin{aligned}\n&amp; \\text { Putting } Y=0 \\Rightarrow X=x-\\frac{y}{\\left(\\frac{d y}{d x}\\right)} \\mathrm{t} \\\\\\\\\n&amp; \\Rightarrow \\alpha=x-\\frac{y}{\\left(\\frac{d y}{d x}\\right)}\n\\end{aligned}\n\\end{aligned}\n$$\n<br><br>and putting $\\mathrm{X}=0 \\Rightarrow \\mathrm{Y}=y-x \\frac{d y}{d x}$\n<br><br>$$\n\\Rightarrow \\beta=y-x \\frac{d y}{d x}\n$$\n<br><br>$\\because \\mathrm{P}$ divides $\\mathrm{AB}$ in $1: k$\n<br><br>$$\nx=\\frac{k \\alpha+0}{k+1} \\text { and } y=\\frac{k \\times 0+\\beta}{k+1}\n$$\n<br><br>$$\n\\begin{aligned}\n&amp; \\Rightarrow x(k+1)=k\\left(x-\\frac{y}{\\frac{d y}{d x}}\\right) \\\\\\\\\n&amp; \\Rightarrow x k+x=x k-\\frac{y k}{\\frac{d y}{d x}} \\\\\\\\\n&amp;\\Rightarrow x \\frac{d y}{d x}=-y k\n\\end{aligned}\n$$\n<br><br>$$\n\\begin{aligned}\n&amp; \\text { or } \\int \\frac{d y}{y}=-k \\times \\int \\frac{1}{x} d x \\\\\\\\\n&amp; \\Rightarrow \\log y=-k \\log x+\\log \\mathrm{C} \\\\\\\\\n&amp; \\text { or } \\log y \\times x^k=\\log \\mathrm{C} \\\\\\\\\n&amp; \\Rightarrow y x^k=\\mathrm{C} \\\\\\\\\n&amp; \\text { putting } x=1, y=1 \\Rightarrow c=1 \\\\\\\\\n&amp; \\text { so } y x^k=1\n\\end{aligned}\n$$\n<br><br>Putting $x=\\frac{1}{10}, y=100 \\Rightarrow 100 \\times\\left(\\frac{1}{100}\\right)^k=1 \\Rightarrow k=2$ \n<br><br>so $y x^2=1$ or $y=\\frac{1}{x^2}$\n<br><br>Now $e^{\\frac{d y}{d x}}=k x+\\frac{k}{2}$\n<br><br>$$\n\\Rightarrow \\frac{d y}{d x}=\\log _e\\left(k x+\\frac{k}{2}\\right)=\\log _e(2 x+1)\n$$\n<br><br>On integrating\n<br><br>$$\n\\begin{aligned}\n&amp; y=\\int 1 \\cdot \\log _e(2 x+1) d x \\\\\\\\\n&amp; =x \\log _e(2 x+1)-\\int \\frac{1 \\times 2}{2 x+1} \\times x d x \\\\\\\\\n&amp; =x \\log _e(2 x+1)-\\int 1-\\frac{1}{2 x+1} d x \\\\\\\\\n&amp; y=x \\log _e(2 x+1)-x+\\frac{1}{2} \\log _e(2 x+1)+c\n\\end{aligned}\n$$\n<br><br>Put $x=0, y=k=2 \\Rightarrow c=2$ putting $x=1$\n<br><br>$$\n\\begin{aligned}\n&amp; y(1)=\\log _e 3-1+\\frac{1}{2} \\log _e 3+2=\\frac{3}{2} \\log _e 3-1+2 \\\\\\\\\n&amp; \\Rightarrow 4 y(1)=6 \\log _e 3+4 \\\\\\\\\n&amp; \\Rightarrow 4 y(1)-6 \\log _e 3= 4\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 10th April Evening Shift"
+    "title": "JEE Main 2023 (Online) 10th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1697",
@@ -786,7 +751,8 @@
     ],
     "solution": "I.F $=\\mathrm{e}^{\\int \\frac{5 \\mathrm{dx}}{\\mathrm{x}\\left(\\mathrm{x}^5+1\\right)}}=\\mathrm{e}^{\\int \\frac{5 \\mathrm{x}^{-6} \\mathrm{dx}}{\\left(\\mathrm{x}^{-5}+1\\right)}}$\n<br/><br/>Put, $1+\\mathrm{x}^{-5}=\\mathrm{t} \\Rightarrow-5 \\mathrm{x}^{-6} \\mathrm{dx}=\\mathrm{dt}$\n<br/><br/>$$ \\therefore $$ $$\ne^{\\int-\\frac{d t}{t}}=e^{-\\ln t}=\\frac{1}{t}=\\frac{x^5}{1+x^5}\n$$\n<br/><br/>$$\n\\begin{aligned}\ny \\cdot \\frac{x^5}{1+x^5} & =\\int \\frac{x^5}{\\left(1+x^5\\right)} \\times \\frac{\\left(1+x^5\\right)^2}{x^7} d x \\\\\\\\\n& =\\int x^3 d x+\\int x^{-2} d x\n\\end{aligned}\n$$\n<br/><br/>$$\ny \\cdot \\frac{x^5}{1+x^5}=\\frac{x^4}{4}-\\frac{1}{x}+c\n$$\n<br/><br/>$$\n\\text { Given that: } x=1 \\Rightarrow y=2\n$$\n<br/><br/>$$\n\\begin{aligned}\n& 2 \\cdot \\frac{1}{2}=\\frac{1}{4}-1+\\mathrm{c} \\\\\\\\\n& \\mathrm{c}=\\frac{7}{4} \\\\\\\\\n& \\mathrm{y} \\cdot \\frac{\\mathrm{x}^5}{1+\\mathrm{x}^5}=\\frac{\\mathrm{x}^4}{4}-\\frac{1}{\\mathrm{x}}+\\frac{7}{4} \\\\\\\\\n& \\text { Now put, } \\mathrm{x}=2 \\\\\\\\\n& \\mathrm{y} \\cdot\\left(\\frac{32}{33}\\right)=\\frac{21}{4} \\\\\\\\\n& \\mathrm{y}=\\frac{693}{128}\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 11th April Evening Shift"
+    "title": "JEE Main 2023 (Online) 11th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1698",
@@ -805,7 +771,8 @@
     ],
     "solution": "We have,\n<br/><br/>$$\n\\begin{aligned}\n& \\left(1-x^2 y^2\\right) d x=y d x+x d y, y(1)=2 \\\\\\\\\n& d x=\\frac{y d x+x d y}{1-(x y)^2}\n\\end{aligned}\n$$\n<br/><br/>On integrating both sides, we get\n<br/><br/>$$\n\\begin{aligned}\n\\int d x & =\\int \\frac{d(x y)}{1-(x y)^2} \\\\\\\\\nx & =\\frac{1}{2} \\log \\left|\\frac{1+x y}{1-x y}\\right|+C\n\\end{aligned}\n$$\n<br/><br/>As, $y(1)=2$\n<br/><br/>$$\n\\begin{aligned}\n1 & =\\frac{1}{2} \\log \\left|\\frac{1+2}{1-2}\\right|+C \\\\\\\\\n\\Rightarrow C & =1-\\frac{1}{2} \\log 3\n\\end{aligned}\n$$\n<br/><br/>Now, substitute $x=2$ as $y(2)=\\alpha$\n<br/><br/>$$\n2=\\frac{1}{2} \\log \\left|\\frac{1+2 \\alpha}{1-2 \\alpha}\\right|+1-\\frac{1}{2} \\log 3\n$$\n<br/><br/>$$\n\\begin{aligned}\n1+\\frac{1}{2} \\log 3 & =\\frac{1}{2} \\log \\left|\\frac{1+2 \\alpha}{1-2 \\alpha}\\right| \\\\\\\\\n2+\\log 3 & =\\log \\left|\\frac{1+2 \\alpha}{1-2 \\alpha}\\right|\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n&\\Rightarrow \\frac{1+2 \\alpha}{1-2 \\alpha} \\mid  =3 e^2 \\\\\\\\\n&\\Rightarrow \\frac{1+2 \\alpha}{1-2 \\alpha}= \\pm \\frac{3 e^2}{1} \\\\\\\\\n& \\Rightarrow\\frac{1}{2 \\alpha}  =\\frac{ \\pm 3 e^2+1}{ \\pm 3 e^2-1} \\\\\\\\\n&\\Rightarrow 2 \\alpha=\\frac{ \\pm 3 e^2-1}{ \\pm 3 e^2+1}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{array}{ll}\n\\Rightarrow  \\alpha=\\frac{1}{2}\\left(\\frac{ \\pm 3 e^2-1}{1 \\pm 3 e^2}\\right) \\\\\\\\\n\\therefore  \\alpha=\\frac{3 e^2-1}{2\\left(1+3 e^2\\right)} \\text { or } \\frac{3 e^2+1}{2\\left(3 e^2-1\\right)}\n\\end{array}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 11th April Morning Shift"
+    "title": "JEE Main 2023 (Online) 11th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a1699",
@@ -824,7 +791,8 @@
     ],
     "solution": "<p>The given differential equation is</p>\n<p>$$\\frac{d y}{d x} = y + 7$$</p>\n<p>This is a first order linear differential equation and can be solved using an integrating factor. </p>\n<p>Rearrange the equation to the standard form of a linear differential equation :</p>\n<p>$$\\frac{d y}{d x} - y = 7$$</p>\n<p>The integrating factor is $e^{-\\int dx} = e^{-x}$.</p>\n<p>Multiplying each side of the equation by the integrating factor gives :</p>\n<p>$$e^{-x} \\frac{d y}{d x} - e^{-x} y = 7e^{-x}$$</p>\n<p>The left-hand side of the equation is the derivative of $(e^{-x}y)$ with respect to $x$. So we can write the equation as :</p>\n<p>$$\\frac{d}{d x}(e^{-x}y) = 7e^{-x}$$</p>\n<p>Integrate both sides with respect to $x$ :</p>\n<p>$$e^{-x}y = -7e^{-x} + C$$</p>\n<p>Multiply both sides by $e^{x}$ to isolate $y$ :</p>\n<p>$$y = -7 + Ce^{x}$$</p>\n<p>So, the general solution to the differential equation is $y = -7 + Ce^{x}$.</p>\n<p>Now, let&#39;s apply the initial conditions to find the particular solutions :</p>\n<p>For $y_{1}(0)=0$, we substitute into the general solution and solve for $C$ :</p>\n<p>$$0 = -7 + C$$</p>\n<p>So, $C = 7$, and the solution for $y_{1}$ is $y_{1}(x) = 7e^{x} - 7$.</p>\n<p>For $y_{2}(0)=1$, again substitute into the general solution:</p>\n<p>$$1 = -7 + C$$</p>\n<p>So, $C = 8$, and the solution for $y_{2}$ is $y_{2}(x) = 8e^{x} - 7$.</p>\n<p>The two curves intersect when $y_{1}(x) = y_{2}(x)$. Setting these equal and solving for $x$ gives :</p>\n<p>$$7e^{x} - 7 = 8e^{x} - 7$$</p>\n<p>$$e^{x} = 0$$</p>\n<p>But $e^{x} = 0$ has no solution, because the exponential function never equals zero.</p>\n<p>So, the curves $y=y_{1}(x)$ and $y=y_{2}(x)$ do not intersect at any point.</p>\n",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 13th April Morning Shift"
+    "title": "JEE Main 2023 (Online) 13th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a169a",
@@ -843,7 +811,8 @@
     ],
     "solution": "$$\n\\begin{aligned}\n& \\frac{d y}{d x}+\\frac{x+a}{y-2}=0 \\\\\\\\\n& \\frac{d y}{d x}=\\frac{x+a}{2-y} \\\\\\\\\n& (2-y) d y=(x+a) d x \\\\\\\\\n& 2 y \\frac{-y}{2}=\\frac{x^2}{2}+\\mathrm{ax}+\\mathrm{c} \\\\\\\\\n& \\mathrm{a}+\\mathrm{c}=-\\frac{1}{2} \\text { as } \\mathrm{y}(1)=0 \\\\\\\\\n& \\mathrm{X}^2+\\mathrm{y}^2+2 \\mathrm{ax}-4 \\mathrm{y}-1-2 \\mathrm{a}=0 \\\\\\\\\n& \\pi \\mathrm{r}^2=4 \\pi \\\\\\\\\n& \\mathrm{r}^2=4 \\\\\\\\\n& 4=\\sqrt{a^2+4+1+2 a} \\\\\\\\\n& (\\mathrm{a}+1)^2=0\n\\end{aligned}\n$$\n<br/><br/>$$\nP, Q=(0,2 \\pm \\sqrt{3})\n$$\n<br/><br/>Equation of normal at $\\mathrm{P}, \\mathrm{Q}$ are $\\mathrm{y}-2=\\sqrt{3}(\\mathrm{x}-1)$\n<br/><br/>$$\n\\begin{aligned}\n& \\mathrm{y}-2=-\\sqrt{3}(\\mathrm{x}-1) \\\\\\\\\n& \\mathrm{R}=\\left(1-\\frac{2}{\\sqrt{3}}, 0\\right) \\\\\\\\\n& \\mathrm{S}=\\left(1+\\frac{2}{\\sqrt{3}}, 0\\right) \\\\\\\\\n& \\mathrm{RS}=\\frac{4}{\\sqrt{3}}=4 \\frac{\\sqrt{3}}{3}\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 1st February Morning Shift"
+    "title": "JEE Main 2023 (Online) 1st February Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a169b",
@@ -862,7 +831,8 @@
     ],
     "solution": "<p>Given,</p>\n<p>$$\\left( {{x^2} - 3{y^2}} \\right)dx + 3xydy = 0$$</p>\n<p>$$ \\Rightarrow {x^2}dx - 3{y^2}dx + 3xydy = 0$$</p>\n<p>$$ \\Rightarrow {{{x^2}dx} \\over {3xdx}} - {{3{y^2}dx} \\over {3xdx}} + {{3ydy} \\over {3xdx}} = 0$$</p>\n<p>$$ \\Rightarrow {x \\over 3} - {{{y^2}} \\over x} + y{{dy} \\over {dx}} = 0$$</p>\n<p>Let $${y^2} = t$$</p>\n<p>$$2y{{dy} \\over {dx}} = {{dt} \\over {dx}}$$</p>\n<p>$$\\therefore$$ $${1 \\over 2}{{dt} \\over {dx}} - {t \\over x} + {x \\over 3} = 0$$</p>\n<p>$$ \\Rightarrow {{dt} \\over {dx}} - {{2t} \\over x} =  - {{2x} \\over 3}$$</p>\n<p>This is linear Differential Equation.</p>\n<p>$$\n\\text { I.F. }=e^{\\int-\\frac{2}{x} d x}=e^{-2 \\ln |x|}=e^{\\ln \\frac{1}{x^2}}=\\frac{1}{x^2}\n$$</p>\n<p>So, $t \\cdot \\frac{1}{x^2}=\\int \\frac{1}{x^2}\\left(\\frac{-2 x}{3}\\right) d x \n$\n<br/><br/>$\\Rightarrow \\frac{y^2}{x^2}=\\frac{-2}{3} \\ln |x|+C$ \n<br/><br/>When, $x=1, y=1$\n<br/><br/>$$\n1=\\frac{-2}{3} \\ln (1)+C \\Rightarrow C=1 $$\n<br/><br/>$$ \\therefore \\frac{y^2}{x^2}=\\frac{-2}{3} \\ln |x|+1\n$$\n<br/><br/>At $x=e, \\frac{y^2(e)}{e^2}=\\frac{-2}{3}+1 $\n<br/><br/>$\\Rightarrow y^2(e)=\\frac{e^2}{3} $\n<br/><br/>$\\Rightarrow 6 y^2(e)=2 e^2$</p>",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 24th January Evening Shift"
+    "title": "JEE Main 2023 (Online) 24th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a169c",
@@ -881,7 +851,8 @@
     ],
     "solution": "<p>Given,</p>\n<p>$$y(x + 1)dx - {x^2}dy = 0$$</p>\n<p>$$ \\Rightarrow \\left( {{{x + 1} \\over {{x^2}}}} \\right)dx = {{dy} \\over y}$$</p>\n<p>$$ \\Rightarrow {1 \\over x}dx + {{dx} \\over {{x^2}}} = {{dy} \\over y}$$</p>\n<p>Integrating both sides, we get</p>\n<p>$$\\int {{{dx} \\over x} + \\int {{{dx} \\over {{x^2}}} = \\int {{{dy} \\over y}} } } $$</p>\n<p>$$ \\Rightarrow \\ln |x| - {1 \\over x} = \\ln |y| + C$$ ..... (1)</p>\n<p>Given $$y(1) = e$$</p>\n<p>$$\\therefore$$ $$x = 1$$ and $$y = e$$</p>\n<p>Putting value of x and y in equation (1), we get</p>\n<p>$$\\ln |1| - {1 \\over 1} = \\ln |e| + C$$</p>\n<p>$$ \\Rightarrow 0 - 1 = 1 + C$$</p>\n<p>$$ \\Rightarrow C =  - 2$$</p>\n<p>$$\\therefore$$ Equation (1) becomes,</p>\n<p>$$\\ln |x| =  - {1 \\over x} = \\ln |y| - 2$$</p>\n<p>$$ \\Rightarrow \\ln |y| = \\ln |x| - {1 \\over x} + 2$$</p>\n<p>$$ \\Rightarrow y = {e^{\\ln |x|}}\\,.\\,{e^{2 - {1 \\over x}}}$$</p>\n<p>$$ \\Rightarrow y = x\\,.\\,{e^{2 - {1 \\over x}}}$$</p>\n<p>Now,</p>\n<p>$$\\mathop {\\lim }\\limits_{x \\to {0^ + }} y$$</p>\n<p>$$ = \\mathop {\\lim }\\limits_{x \\to {0^ + }} \\left( {x\\,.\\,{e^{2 - {1 \\over x}}}} \\right)$$</p>\n<p>$$ = 0\\,.\\,{e^{ - \\alpha }}$$</p>\n<p>$$ = 0$$</p>",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 29th January Morning Shift"
+    "title": "JEE Main 2023 (Online) 29th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a169d",
@@ -900,7 +871,8 @@
     ],
     "solution": "<p>$$y = vx$$</p>\n<p>$$v + x{{dv} \\over {dx}} =  - \\left( {{{1 + 3{v^2}} \\over {3 + {v^2}}}} \\right)$$</p>\n<p>$$x{{dv} \\over {dx}} =  - \\left( {{{1 + 3{v^2}} \\over {3 + {v^2}}} + v} \\right)$$</p>\n<p>$${{dv} \\over {dx}} =  - \\left( {{{{{(1 + v)}^3}} \\over {3 + {v^2}}}} \\right)$$</p>\n<p>$$ \\Rightarrow {{3 + {v^2}} \\over {{{(1 + v)}^3}}} = {{ - dx} \\over x}$$</p>\n<p>$$ \\Rightarrow \\ln |v + 1| + {{2v} \\over {{{(v + 1)}^2}}} = C - \\ln |x|$$</p>\n<p>$$x = 1,v = 0 \\Rightarrow C = 0$$</p>\n<p>$$ \\Rightarrow \\ln |x + y| - \\ln |x| + {{2xy} \\over {{{(x + y)}^2}}} =  - \\ln |x|$$</p>",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 30th January Evening Shift"
+    "title": "JEE Main 2023 (Online) 30th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a169e",
@@ -919,7 +891,8 @@
     ],
     "solution": "$\\left(3 y^{2}-5 x^{2}\\right) y \\cdot d x+2 x\\left(x^{2}-y^{2}\\right) d y=0$\n\n<br/><br/>$$\n\\Rightarrow \\frac{d y}{d x}=\\frac{y\\left(5 x^{2}-3 y^{2}\\right)}{2 x\\left(x^{2}-y^{2}\\right)}\n$$\n\n<br/><br/>Put $\\mathrm{y}=\\mathrm{mx}$\n\n<br/><br/>$$\n\\Rightarrow m+x \\cdot \\frac{d m}{d x}=\\frac{m\\left(5-3 m^{2}\\right)}{2\\left(1-m^{2}\\right)}\n$$\n\n<br/><br/>$$\n\\begin{aligned}\n& x \\cdot \\frac{d m}{d x}=\\frac{\\left(5-3 m^{2}\\right) m-2 m\\left(1-m^{2}\\right)}{2\\left(1-m^{2}\\right)} \\\\\\\\\n& \\Rightarrow \\frac{\\mathrm{dx}}{\\mathrm{x}}=\\frac{2\\left(\\mathrm{~m}^{2}-1\\right)}{\\mathrm{m}\\left(\\mathrm{m}^{2}-3\\right)} \\mathrm{dm} \\\\\\\\\n& \\Rightarrow \\frac{d x}{x}=\\left(\\frac{2}{m}-\\frac{\\frac{4}{3}}{m}+\\frac{\\frac{4 m}{3}}{\\mathrm{~m}^{2}-3}\\right) d m\n\\end{aligned}\n$$\n\n<br/><br/>$\\Rightarrow \\int \\frac{d x}{x}=\\int \\frac{\\left(\\frac{2}{3}\\right)}{m}+\\int \\frac{2}{3}\\left(\\frac{2 m}{m^{2}-3}\\right) d m$\n\n<br/><br/>$\\Rightarrow \\ln |\\mathrm{x}|=\\frac{2}{3} \\ln |\\mathrm{m}|+\\frac{2}{3} \\ln \\left|\\mathrm{m}^{2}-3\\right|+\\mathrm{C}$\n\n<br/><br/>Or, $\\ln |\\mathrm{x}|=\\frac{2}{3} \\ln \\left|\\frac{\\mathrm{y}}{\\mathrm{x}}\\right|+\\frac{2}{3} \\ln \\left|\\left(\\frac{\\mathrm{y}}{\\mathrm{x}}\\right)^{2}-3\\right|+\\mathrm{C}$\n\n<br/><br/>Put $(\\mathrm{x}=1, \\mathrm{y}=1)$ : we get $\\mathrm{c}=-\\frac{2}{3} \\ln (2)$\n\n<br/><br/>$\\Rightarrow \\ln |\\mathrm{x}|=\\frac{2}{3} \\ln \\left|\\frac{\\mathrm{y}}{\\mathrm{x}}\\right|+\\frac{2}{3} \\ln \\left|\\left(\\frac{\\mathrm{y}}{\\mathrm{x}}\\right)^{2}-3\\right|-\\frac{2}{3} \\ln (2)$\n\n<br/><br/>$\\Rightarrow\\left(\\frac{\\mathrm{y}}{\\mathrm{x}}\\right)\\left[\\left(\\frac{\\mathrm{y}}{\\mathrm{x}}\\right)^{2}-3\\right]=2 .\\left(\\mathrm{x}^{3 / 2}\\right)$ ........(1)\n\n<br/><br/>Put $\\mathrm{x}=2$ in equation (1), we get\n<br/><br/>$\\Rightarrow \\mathrm{y}\\left(\\mathrm{y}^{2}-12\\right)=4 \\times 2 \\times 2 \\times 2 \\sqrt{2}$\n\n<br/><br/>$\\Rightarrow \\mathrm{y}^{3}-12 \\mathrm{y}=32 \\sqrt{2}$\n\n<br/><br/>$\\Rightarrow\\left|\\mathrm{y}^{3}(2)-12 \\mathrm{y}(2)\\right|=32 \\sqrt{2}$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 31st January Evening Shift"
+    "title": "JEE Main 2023 (Online) 31st January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a169f",
@@ -938,26 +911,8 @@
     ],
     "solution": "We have, $\\left(1+\\log _e x\\right) \\frac{d x}{d y}-x \\log _e x=e^{y}, x>0$\n\n<br/><br/>Put $x \\log _e x=t$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow  \\left(x \\cdot \\frac{1}{x}+\\log _e x\\right) \\frac{d x}{d y}  =\\frac{d t}{d y} \\\\\\\\\n& \\Rightarrow  \\left(1+\\log _e x\\right) \\frac{d x}{d y}  =\\frac{d t}{d y} \\\\\\\\\n& \\therefore  \\frac{d t}{d y}-t  =e^{y}\n\\end{aligned}\n$$\n<br/><br/>Now, IF $=e^{\\int-d y}=e^{-y}$\n<br/><br/>$\\begin{aligned} & \\therefore \\text { General solution, } t\\left(e^{-y}\\right)=\\int\\left(e^y \\cdot e^{-y}\\right) d y+c \\\\\\\\ & \\Rightarrow t e^{-y}=\\int d y+c \\\\\\\\ & \\Rightarrow t e^{-y}=y+c \\\\\\\\ & \\Rightarrow \\left(x \\log _e x\\right) e^{-y}=y+c ..........(i)\\end{aligned}$\n<br/><br/>Equation (i), passes through the point $(1,0)$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore 0=0+c \\\\\\\\\n& \\Rightarrow c=0 \\\\\\\\\n& \\therefore \\left(x \\log _e x\\right) e^{-y}=y \\\\\\\\\n& \\Rightarrow x \\log _e x=y e^y\n\\end{aligned}\n$$\n\n<br/><br/>Which passes through $(\\alpha, 2)$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore \\alpha \\log _e \\alpha=2 e^2 \\\\\\\\\n& \\Rightarrow \\log _e \\alpha^\\alpha=2 e^2 \\\\\\\\\n& \\Rightarrow \\alpha^\\alpha=e^{2 e^2}\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 6th April Evening Shift"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16a0",
-    "question_id": "liinswjk",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$\\frac{e^2+4}{3}$",
-      "$\\frac{\\log _e 4+e}{3}$",
-      "$\\frac{4 e^2}{3}$",
-      "$\\frac{e^2-4}{3}$"
-    ],
-    "solution": "1. We are given a relationship between the integral of the function $f(t)$ and the function $f(x)$ :\n <br/><br/>  $$3 \\int\\limits_1^x f(t) d t=x f(x)-\\frac{x^3}{3}, x \\in[1, \\infty)$$\n\n<br/><br/>2. Differentiate both sides of the above equation with respect to $x$ :\n<br/><br/>$$\n3(f(x) \\cdot 1-0)=1 . f(x)+x f^{\\prime}(x)-\\frac{3 x^2}{3}\n$$\n\n  <br/><br/>$$ \\Rightarrow $$ $$3f(x) = f(x) + xf'(x) - x^2$$\n  <br/><br/>$$ \\Rightarrow $$ $$2f(x) = xf'(x) - x^2$$\n\n<br/><br/>3. We can rewrite this as a first order linear differential equation:\n\n  <br/><br/> $$xf'(x) - 2f(x) = x^2$$\n\n<br/><br/>4. The general form of a first order linear differential equation is:\n\n   <br/><br/>$$y'(x) + p(x)y = q(x)$$\n   \n <br/><br/>  Here $y = f(x)$, $p(x) = -\\frac{2}{x}$, and $q(x) = x$.\n\n<br/><br/>5. The integrating factor is obtained by exponentiating the integral of $p(x)$ with respect to $x$:\n\n  <br/><br/> $$e^{\\int p(x) dx} = e^{\\int -\\frac{2}{x} dx} = e^{-2\\ln|x|} = \\frac{1}{x^2}$$\n<br/><br/>6. $$ \\therefore $$ Solution of D.E :\n<br/><br/>$$\n\\begin{gathered}\ny \\cdot\\left(\\frac{1}{x^2}\\right)=\\int(x) \\frac{1}{x^2} d x \\\\\\\\\n\\frac{y}{x^2}=\\ln x+c \\\\\\\\\ny=x^2  ln x+c x^2\n\\end{gathered}\n$$\n<br/><br/>$$ \\therefore $$ The general solution is :\n\n<br/><br/>$$y(x) = x^2(\\ln x + c)$$\n\n<br/><br/>Here, $y(x)$ is the same as $f(x)$, i.e. the function we're trying to find. \n\n<br/><br/>7. Given that $f(1) = \\frac{1}{3}$, let's use this condition to find the constant $c$ :\n\n<br/><br/>$$\\frac{1}{3} = 1^2(\\ln 1 + c) \\Rightarrow c = \\frac{1}{3}$$\n\n<br/><br/>Therefore, the function $f(x)$ we are looking for is:\n\n<br/><br/>$$f(x) = x^2(\\ln x + \\frac{1}{3})$$\n\n<br/><br/>We want to find $f(e)$, so substituting $x=e$ into the function, we get :\n\n<br/><br/>$$f(e) = e^2(\\ln e + \\frac{1}{3}) = e^2(1 + \\frac{1}{3}) = \\frac{4e^2}{3}$$\n\n<br/><br/>So, the correct answer is \n\n<br/><br/>Option C : $\\frac{4e^2}{3}$",
-    "__v": 0,
-    "title": "JEE Advanced 2023 Paper 2 Online"
+    "title": "JEE Main 2023 (Online) 6th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16a1",
@@ -971,7 +926,8 @@
     "options": [],
     "solution": "<p>$${{dy} \\over {dx}} = {y \\over x}{{(4{y^2} + 2{x^2})} \\over {(3{y^2} + {x^2})}}$$</p>\n<p>Put $$y = vx$$</p>\n<p>$$ \\Rightarrow {{dy} \\over {dx}} = v + x{{dv} \\over {dx}}$$</p>\n<p>$$ \\Rightarrow v + x{{dv} \\over {dx}} = {{v(4{v^2} + 2)} \\over {(3{v^2} + 1)}}$$</p>\n<p>$$ \\Rightarrow x{{dv} \\over {dx}} = v\\left( {{{(4{v^2} + 2 - 3{v^2} - 1)} \\over {3{v^2} + 1}}} \\right)$$</p>\n<p>$$ \\Rightarrow \\int {(3{v^2} + 1){{dv} \\over {{v^3} + v}} = \\int {{{dx} \\over x}} } $$</p>\n<p>$$ \\Rightarrow \\ln |{v^3} + v| = \\ln x + c$$</p>\n<p>$$ \\Rightarrow \\ln \\left| {{{\\left( {{y \\over x}} \\right)}^3} + \\left( {{y \\over x}} \\right)} \\right| = \\ln x + C$$</p>\n<p>$$ \\downarrow \\,y(1) = 1$$</p>\n<p>$$ \\Rightarrow C = \\ln 2$$</p>\n<p>$$\\therefore$$ for $$y(2)$$</p>\n<p>$$\\ln \\left( {{{{y^3}} \\over 8} + {y \\over 2}} \\right) = 2\\ln 2 \\Rightarrow {{{y^3}} \\over 8} + {y \\over 2} = 4$$</p>\n<p>$$ \\Rightarrow [y(2)] = 2$$</p>\n<p>$$ \\Rightarrow n = 3$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 25th July Evening Shift"
+    "title": "JEE Main 2022 (Online) 25th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16a2",
@@ -990,7 +946,8 @@
     ],
     "solution": "$\\left(x-y^{2}\\right) d x+y\\left(5 x+y^{2}\\right) d y=0$\n<br/><br/>\n$$\ny \\frac{d y}{d x}=\\frac{y^{2}-x}{5 x+y^{2}}\n$$<br/><br/>\nLet $y^{2}=t$\n\n$$\n\\frac{1}{2} \\cdot \\frac{d t}{d x}=\\frac{t-x}{5 x+t}\n$$\n<br/><br/>\nNow substitute, $t=v x$\n<br/><br/>\n$$\n\\begin{aligned}\n& \\frac{d t}{d x}=v+x \\frac{d v}{d x} \\\\\\\\\n& \\frac{1}{2}\\left\\{v+x \\frac{d v}{d x}\\right\\}=\\frac{v-1}{5+v} \\\\\\\\\n& x \\frac{d v}{d x}=\\frac{2 v-2}{5+v}-v=\\frac{-3 v-v^{2}-2}{5+v} \\\\\\\\\n& \\int \\frac{5+v}{v^{2}+3 v+2} d v=\\int-\\frac{d x}{x} \\\\\\\\\n& \\int \\frac{4}{v+1} d v-\\int \\frac{3}{v+2} d v=-\\int \\frac{d x}{x} \\\\\\\\\n& 4 \\ln |v+1|-3 \\ln |v+2|=-\\ln x+\\ln C \\\\\\\\\n& \\left|\\frac{(v+1)^{4}}{(v+2)^{3}}\\right|=\\frac{c}{x} \\\\\\\\\n& \\left| \\frac{\\left(\\frac{y^{2}}{x}+1\\right)^{4}}{\\left(\\frac{y^{2}}{x}+2\\right)^{3}}\\right|=\\frac{c}{x} \\\\\\\\\n& \\left|\\left(y^{2}+x\\right)^{4}\\right|=C\\left|\\left(y^{2}+2 x\\right)^{3}\\right|\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 25th July Morning Shift"
+    "title": "JEE Main 2022 (Online) 25th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16a3",
@@ -1009,7 +966,8 @@
     ],
     "solution": "<p>$$2{x^2}{{dy} \\over {dx}} - 2xy + 3{y^2} = 0$$</p>\n<p>$$ \\Rightarrow 2x(xdy - ydx) + 3{y^3}dx = 0$$</p>\n<p>$$ \\Rightarrow 2\\left( {{{xdy - ydx} \\over {{y^2}}}} \\right) + 3{{dx} \\over x} = 0$$</p>\n<p>$$ \\Rightarrow  - {{2x} \\over y} + 3\\ln x = C$$</p>\n<p>$$\\because$$ $$y(e) = {e \\over 3} \\Rightarrow  - 6 + 3 = C \\Rightarrow C =  - 3$$</p>\n<p>Now, at $$x = 1$$, $$ - {2 \\over y} + 0 =  - 3$$</p>\n<p>$$y = {2 \\over 3}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 25th June Evening Shift"
+    "title": "JEE Main 2022 (Online) 25th June Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16a4",
@@ -1028,7 +986,8 @@
     ],
     "solution": "$$\n\\int\\left(\\frac{x(\\cos x-\\sin x)}{e^x+1}+\\frac{g(x)\\left(e^x+1-x e^x\\right)}{\\left(e^x+1\\right)^2}\\right) d x=\\frac{x g(x)}{e^x+1}+c\n$$<br/><br/>\nOn differentiating both sides w.r.t. $\\mathrm{x}$, we get<br/><br/>\n$$\n\\begin{aligned}\n&\\left(\\frac{x(\\cos x-\\sin x)}{e^x+1}+\\frac{g(x)\\left(e^x+1-x e^x\\right.}{\\left(e^x+1\\right)^2}\\right) \\\\\\\\\n&=\\frac{\\left(e^x+1\\right)\\left(g(x)+x g^{\\prime}(x)\\right)-e^x \\cdot x \\cdot g(x)}{\\left(e^x+1\\right)^2} \\\\\\\\\n&\\left(e^x+1\\right) x(\\cos x-\\sin x)+g(x)\\left(e^x+1-x e^x\\right) \\\\\\\\\n&=\\left(e^x+1\\right)\\left(g(x)+x g^{\\prime}(x)\\right)-e^x \\cdot x \\cdot g(x) \\\\\\\\\n&\\Rightarrow g g^{\\prime}(x)=\\cos x-\\sin x \\\\\\\\\n&\\Rightarrow g(x)=\\sin x+\\cos x+C\n\\end{aligned}\n$$<br/><br/>\n$\\mathrm{g}(\\mathrm{x})$ is increasing in $(0, \\pi / 4)$<br/><br/>\n$g \"(x)=-\\sin x-\\cos x<0$<br/><br/>\n$\\Rightarrow \\mathrm{g}^{\\prime}(\\mathrm{x})$ is decreasing function<br/><br/>\nlet $h(x)=g(x)+g^{\\prime}(x)=2 \\cos x+C$<br/><br/>\n$$\n\\Rightarrow \\mathrm{h}^{\\prime}(\\mathrm{x})=\\mathrm{g}^{\\prime}(\\mathrm{x})+\\mathrm{g}^{\\prime \\prime}(\\mathrm{x})=-2 \\sin \\mathrm{x}<0\n$$<br/><br/>\n$\\Rightarrow \\mathrm{h}$ is decreasing<br/><br/>\nlet $\\phi(\\mathrm{x})=\\mathrm{g}(\\mathrm{x})-\\mathrm{g}^{\\prime}(\\mathrm{x})=2 \\sin \\mathrm{x}+\\mathrm{C}$<br/><br/>\n$$\n\\Rightarrow \\phi^{\\prime}(\\mathrm{x})=\\mathrm{g}^{\\prime}(\\mathrm{x})-\\mathrm{g}{ }^{\\prime \\prime}(\\mathrm{x})=2 \\cos \\mathrm{x}>0\n$$<br/><br/>\n$\\Rightarrow \\phi$ is increasing<br/><br/>\nHence option D is correct.",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 25th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 25th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16a5",
@@ -1047,7 +1006,8 @@
     ],
     "solution": "<p>$${{dy} \\over {dx}} = {{{y^2}} \\over {xy - {x^2} - {y^2}}}$$</p>\n<p>Put $$y = vx$$ we get</p>\n<p>$$v + x{{dv} \\over {dx}} = {{{v^2}} \\over {v - 1 - {v^2}}}$$</p>\n<p>$$ \\Rightarrow x{{dv} \\over {dx}} = {{{v^2} - {v^2} + v + {v^3}} \\over {v - 1 - {v^2}}}$$</p>\n<p>$$ \\Rightarrow \\int {{{v - 1 - {v^2}} \\over {v(1 + {v^2})}}dv = \\int {{{dx} \\over x}} } $$</p>\n<p>$${\\tan ^{ - 1}}\\left( {{y \\over x}} \\right) - \\ln \\left( {{y \\over x}} \\right) = \\ln x + c$$</p>\n<p>As it passes through (1, 1)</p>\n<p>$$c = {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow {\\tan ^{ - 1}}\\left( {{y \\over x}} \\right)\\ln \\left( {{y \\over x}} \\right) = \\ln x + {\\pi  \\over 4}$$</p>\n<p>Put $$y = \\sqrt 3 x$$ we get</p>\n<p>$$ \\Rightarrow {\\pi  \\over 3} - \\ln \\sqrt 3  = \\ln x + {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow \\ln x = {\\pi  \\over {12}} - \\ln \\sqrt 3  = \\ln \\alpha $$</p>\n<p>$$\\therefore$$ $$\\ln \\left( {\\sqrt 3 \\alpha } \\right) = \\ln \\sqrt 3  + \\ln \\alpha $$</p>\n<p>$$ = \\ln \\sqrt 3  + {\\pi  \\over {12}} - \\ln \\sqrt 3  = {\\pi  \\over {12}}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 25th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 25th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16a6",
@@ -1061,7 +1021,8 @@
     "options": [],
     "solution": "<p>$$(4 + {x^2})dy - 2x({x^2} + 3y + 4)dx = 0$$</p>\n<p>$$ \\Rightarrow {{dy} \\over {dx}} = \\left( {{{6x} \\over {{x^2} + 4}}} \\right)y + 2x$$</p>\n<p>$$ \\Rightarrow {{dy} \\over {dx}} - \\left( {{{6x} \\over {{x^2} + 4}}} \\right)y = 2x$$</p>\n<p>$$I.F. = {e^{ - 3\\ln ({x^2} + 4)}} = {1 \\over {{{({x^2} + 4)}^3}}}$$</p>\n<p>So $${y \\over {{{({x^2} + 4)}^3}}} = \\int {{{2x} \\over {{{({x^2} + 4)}^3}}}dx + c} $$</p>\n<p>$$ \\Rightarrow y =  - {1 \\over 2}({x^2} + 4) + c{({x^2} + 4)^3}$$</p>\n<p>When x = 0, y = 0 gives $$c = {1 \\over {32}}$$,</p>\n<p>So, for x = 2, y = 12</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 26th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 26th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16a7",
@@ -1080,7 +1041,8 @@
     ],
     "solution": "<p>$${{dy} \\over {dx}} + {{{2^{x-y}}({2^y} - 1)} \\over {{2^x} - 1}}=0$$, x, y > 0, y(1) = 1</p>\n<p>$${{dy} \\over {dx}} =  - {{{2^x}({2^y} - 1)} \\over {{2^y}({2^x} - 1)}}$$</p>\n<p>$$\\int {{{{2^y}} \\over {{2^y} - 1}}dy =  - \\int {{{{2^x}} \\over {{2^x} - 1}}dx} } $$</p>\n<p>$$ = {{{{\\log }_e}({2^y} - 1)} \\over {{{\\log }_e}2}} =  - {{{{\\log }_e}({2^x} - 1)} \\over {{{\\log }_e}2}} + {{{{\\log }_e}c} \\over {{{\\log }_e}2}}$$</p>\n<p>$$ = |({2^y} - 1)({2^x} - 1)| = c$$</p>\n<p>$$\\because$$ $$y(1) = 1$$</p>\n<p>$$\\therefore$$ $$c = 1$$</p>\n<p>$$ = |({2^y} - 1)({2^x} - 1)| = 1$$</p>\n<p>For $$x = 2$$</p>\n<p>$$|({2^y} - 1)3| = 1$$</p>\n<p>$${2^y} - 1 = {1 \\over 3} \\Rightarrow 2y = {4 \\over 3}$$</p>\n<p>Taking log to base 2.</p>\n<p>$$\\therefore$$ $$y = 2 - {\\log _2}3$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 27th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 27th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16a8",
@@ -1099,7 +1061,8 @@
     ],
     "solution": "<p>$${{xdy - ydx} \\over {\\sqrt {{x^2} + {y^2}} }} = dx$$</p>\n<p>$$ \\Rightarrow {{dy} \\over {dx}} = {{\\sqrt {{x^2} + {y^2}} } \\over x} + {y \\over x}$$</p>\n<p>$$ \\Rightarrow {{dy} \\over {dx}} = \\sqrt {1 + {{{y^2}} \\over {{x^2}}}}  + {y \\over x}$$</p>\n<p>Let $${y \\over x} = v$$</p>\n<p>$$ \\Rightarrow v + x{{dv} \\over {dx}} = \\sqrt {1 + {v^2}}  + v$$</p>\n<p>$$ \\Rightarrow {{dv} \\over {\\sqrt {1 + {v^2}} }} = {{dx} \\over x}$$</p>\n<p>OR $$\\ln \\left( {v + \\sqrt {1 + {v^2}} } \\right) = \\ln x + C$$</p>\n<p>at $$x = 1,\\,y = 0$$</p>\n<p>$$ \\Rightarrow C = 0$$</p>\n<p>$${y \\over x} + \\sqrt {1 + {{{y^2}} \\over {{x^2}}}}  = x$$</p>\n<p>At $$x = 2$$,</p>\n<p>$${y \\over 2} + \\sqrt {1 + {{{y^2}} \\over 4}}  = 2$$</p>\n<p>$$ \\Rightarrow 1 + {{{y^2}} \\over 4} = 4 + {{{y^2}} \\over 4} - 2y$$</p>\n<p>OR $$y = {3 \\over 2}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 28th July Morning Shift"
+    "title": "JEE Main 2022 (Online) 28th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16a9",
@@ -1118,7 +1081,8 @@
     ],
     "solution": "<p>$$({\\sin ^2}2x){{dy} \\over {dx}} + (8{\\sin ^2}2x + 2\\sin 4x)y$$</p>\n<p>$$ = 2{e^{ - 4x}}(2\\sin 2x + \\cos 2x)$$</p>\n<p>$${{dy} \\over {dx}} + (8 + 4\\cot 2x)y = 2{e^{ - 4x}}\\left( {{{2\\sin 2x + \\cos 2x} \\over {{{\\sin }^2}2x}}} \\right)$$</p>\n<p>Integrating factor</p>\n<p>$$(I.F.) = {e^{\\int {(8 + 4\\cot 2x)dx} }}$$</p>\n<p>$$ = {e^{8x + 2\\ln \\sin 2x}}$$</p>\n<p>Solution of differential equation</p>\n<p>$$y.\\,{e^{8x + 2\\ln \\sin 2x}}$$</p>\n<p>$$ = \\int {2{e^{(4x + 2\\ln \\sin 2x)}}{{(2\\sin 2x + \\cos 2x)} \\over {{{\\sin }^2}2x}}dx} $$</p>\n<p>$$ = 2\\int {{e^{4x}}(2\\sin 2x + \\cos 2x)dx} $$</p>\n<p>$$y.\\,{e^{8x + 2\\ln \\sin 2x}} = {e^{4x}}\\sin 2x + c$$</p>\n<p>$$y\\left( {{\\pi  \\over 4}} \\right) = {e^{ - \\pi }}$$</p>\n<p>$${e^{ - \\pi }}\\,.\\,{e^{2\\pi }} = {e^\\pi } + c \\Rightarrow c = 0$$</p>\n<p>$$y\\left( {{\\pi  \\over 6}} \\right) = {{{e^{{{2\\pi } \\over 3}}}{{\\sqrt 3 } \\over 2}} \\over {{e^{\\left( {{{4\\pi } \\over 3} + 2\\ln {{\\sqrt 3 } \\over 2}} \\right)}}}}$$</p>\n<p>$$ = {e^{{{ - 2\\pi } \\over 3}}}\\,.\\,{2 \\over {\\sqrt 3 }}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 28th July Morning Shift"
+    "title": "JEE Main 2022 (Online) 28th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16aa",
@@ -1137,7 +1101,8 @@
     ],
     "solution": "<p>Given differential equation</p>\n<p>$$2y{e^{{x \\over {{y^2}}}}}dx + \\left( {{y^2} - 4x{e^{{x \\over {{y^2}}}}}} \\right)dy = 0,\\,x(1) = 0$$</p>\n<p>$$ \\Rightarrow {e^{{x \\over {{y^2}}}}}[2ydx - 4xdy] =  - {y^2}dy$$</p>\n<p>$$ \\Rightarrow {e^{{x \\over {{y^2}}}}}\\left[ {{{2{y^2}dx - 4xydy} \\over {{y^4}}}} \\right] = {{ - 1} \\over y}dy$$</p>\n<p>$$ \\Rightarrow 2{e^{{x \\over {{y^2}}}}}d\\left( {{x \\over {{y^2}}}} \\right) =  - {1 \\over y}dy$$</p>\n<p>$$ \\Rightarrow 2{e^{{x \\over {{y^2}}}}} =  - \\ln y + c$$ ...... (i)</p>\n<p>Now, using x(1) = 0, c = 2</p>\n<p>So, for x(e), Put y = e in (i)</p>\n<p>$$2{e^{{x \\over {{e^2}}}}} =  - 1 + 2$$</p>\n<p>$$ \\Rightarrow {x \\over {{e^2}}} = \\ln \\left( {{1 \\over 2}} \\right) \\Rightarrow x(e) =  - {e^2}\\ln 2$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 28th June Evening Shift"
+    "title": "JEE Main 2022 (Online) 28th June Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16ab",
@@ -1156,7 +1121,8 @@
     ],
     "solution": "<p>$$\\left( {{1 \\over {\\sqrt {1 - {{{y^2}} \\over {{x^2}}}} }} + {e^{{y \\over x}}}} \\right){{dy} \\over {dx}} = 1 + \\left( {{1 \\over {\\sqrt {1 - {{{y^2}} \\over {{x^2}}}} }} + {e^{{y \\over x}}}} \\right){y \\over x}$$</p>\n<p>Putting y = tx</p>\n<p>$$\\left( {{1 \\over {\\sqrt {1 - {t^2}} }} + {e^t}} \\right)\\left( {t + x{{dt} \\over {dx}}} \\right) = 1 + \\left( {{1 \\over {\\sqrt {1 - {t^2}} }} + {e^t}} \\right)t$$</p>\n<p>$$ \\Rightarrow x\\left( {{1 \\over {\\sqrt {1 - {t^2}} }} + {e^t}} \\right){{dt} \\over {dx}} = 1$$</p>\n<p>$$ \\Rightarrow {\\sin ^{ - 1}}t + {e^t} = \\ln x + C$$</p>\n<p>$$ \\Rightarrow {\\sin ^{ - 1}}\\left( {{y \\over x}} \\right) + {e^{y/x}} = \\ln x + C$$</p>\n<p>at x = 1, y = 0</p>\n<p>So, $$0 + {e^0} = 0 + C \\Rightarrow C = 1$$</p>\n<p>at $$(2\\alpha ,\\alpha )$$</p>\n<p>$${\\sin ^{ - 1}}\\left( {{y \\over x}} \\right) + {e^{y/x}} = \\ln x + 1$$</p>\n<p>$$ \\Rightarrow {\\pi  \\over 6} + {e^{{1 \\over 2}}} - 1 = \\ln (2\\alpha )$$</p>\n<p>$$ \\Rightarrow \\alpha  = {1 \\over 2}{e^{\\left( {{\\pi  \\over 6} + {e^{{1 \\over 2}}} - 1} \\right)}}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 28th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 28th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16ac",
@@ -1175,7 +1141,8 @@
     ],
     "solution": "$\\frac{d y}{d x}=\\frac{x+y-2}{x-y}=\\frac{(x-1)+(y-1)}{(x-1)-(y-1)}$\n\n<br/><br/>Let $x-1=X, y-1=Y$\n\n<br/><br/>$$\n\\frac{d Y}{d X}=\\frac{X+Y}{X-Y}\n$$\n\n<br/><br/>Let $Y=t X \\Rightarrow \\frac{d Y}{d X}=t+X \\frac{d t}{d X}$\n\n<br/><br/>$t+X \\frac{d t}{d X}=\\frac{1+t}{1-t}$\n\n<br/><br/>$X \\frac{d t}{d X}=\\frac{1+t}{1-t}-t=\\frac{1+t^{2}}{1-t}$\n\n<br/><br/>$\\int \\frac{1-t}{1+t^{2}} d t=\\int \\frac{d X}{X}$\n\n<br/><br/>$$\n\\begin{aligned}\n&\\tan ^{-1} t-\\frac{1}{2} \\ln \\left(1+t^{2}\\right)=\\ln |X|+c \\\\\\\\\n&\\tan ^{-1}\\left(\\frac{y-1}{x-1}\\right)-\\frac{1}{2} \\ln \\left(1+\\left(\\frac{y-1}{x-1}\\right)^{2}\\right)=\\ln |x-1|+c\n\\end{aligned}\n$$\n\n<br/><br/>Curve passes through $(2,1)$\n\n<br/><br/>$0-0=0+c \\Rightarrow c=0$\n\n<br/><br/>If $(k+1,2)$ also satisfies the curve\n\n<br/><br/>$$\n\\begin{aligned}\n&\\tan ^{-1}\\left(\\frac{1}{k}\\right)-\\frac{1}{2} \\ln \\left(\\frac{1+k^{2}}{k^{2}}\\right)=\\ln k \\\\\\\\\n&2 \\tan ^{-1}\\left(\\frac{1}{k}\\right)=\\ln \\left(1+k^{2}\\right)\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th July Evening Shift"
+    "title": "JEE Main 2022 (Online) 29th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16ad",
@@ -1194,7 +1161,8 @@
     ],
     "solution": "$\\frac{d y}{d x}+\\left(\\frac{2 x^{2}+11 x+13}{x^{3}+6 x^{2}+11 x+6}\\right) y=\\frac{(x+3)}{x+1}, x>-1$,\n\n<br/><br/>Integrating factor I.F. $=e^{\\int \\frac{2 x^{2}+11 x+13}{x^{3}+6 x^{2}+11 x+6} d x}$\n\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Let } \\frac{2 x^{2}+11 x+13}{(x+1)(x+2)(x+3)}=\\frac{A}{x+1}+\\frac{B}{x+2}+\\frac{C}{x+3} \\\\\\\\\n& A=2, B=1, C=-1 \\\\\\\\\n& \\text { I.F. }=e^{(2 \\ln |x+1|+\\ln |x+2|-\\ln |x+3|)} \\\\\\\\\n& =\\frac{(x+1)^{2}(x+2)}{x+3}\n\\end{aligned}\n$$\n\n<br/><br/>Solution of differential equation\n\n<br/><br/>$$\n\\begin{aligned}\n&y \\cdot \\frac{(x+1)^{2}(x+2)}{x+3}=\\int(x+1)(x+2) d x \\\\\\\\\n&y \\frac{(x+1)^{2}(x+2)}{x+3}=\\frac{x^{3}}{3}+\\frac{3 x^{2}}{2}+2 x+c\n\\end{aligned}\n$$\n\n<br/><br/>Curve passes through $(0,1)$\n\n<br/><br/>$$\n\\begin{gathered}\n1 \\times \\frac{1 \\times 2}{3}=0+c \\Rightarrow c=\\frac{2}{3} \\\\\\\\\n\\text { So, } y(1)=\\frac{\\frac{1}{3}+\\frac{3}{2}+2+\\frac{2}{3}}{\\frac{\\left(2^{2} \\times 3\\right)}{4}}=\\frac{3}{2}\n\\end{gathered}\n$$",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th July Evening Shift"
+    "title": "JEE Main 2022 (Online) 29th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16ae",
@@ -1213,7 +1181,8 @@
     ],
     "solution": "<p>Given,</p>\n<p>$$(1 + {e^{2x}}){{dy} \\over {dx}} + 2(1 + {y^2}){e^x} = 0$$</p>\n<p>$$ \\Rightarrow {{dy} \\over {dx}} = {{ - 2(1 + {y^2}){e^x}} \\over {1 + {e^{2x}}}}$$</p>\n<p>$$ \\Rightarrow \\int {{{dy} \\over {1 + {y^2}}} = \\int {{{ - 2{e^x}dx} \\over {(1 + {e^{2x}})}}} } $$</p>\n<p>$$ \\Rightarrow {\\tan ^{ - 1}}(y) = \\int {{{ - 2{e^x}dx} \\over {(1 + {e^{2x}})}}} $$</p>\n<p>Now,</p>\n<p>Let $${e^x} = t$$</p>\n<p>$$ \\Rightarrow {e^x}dx = dt$$</p>\n<p>$$ \\Rightarrow {\\tan ^{ - 1}}(y) = \\int {{{ - 2dt} \\over {1 + {t^2}}}} $$</p>\n<p>$$ \\Rightarrow {\\tan ^{ - 1}}(y) =  - 2{\\tan ^{ - 1}}(t) + C$$</p>\n<p>$$ \\Rightarrow {\\tan ^{ - 1}}(y) =  - 2{\\tan ^{ - 1}}({e^x}) + C$$ [Putting value of t]</p>\n<p>Given, y(0) = 0 means when x = 0 the y = 0</p>\n<p>$$\\therefore$$ $${\\tan ^{ - 1}}(0) =  - 2{\\tan ^{ - 1}}({e^o}) + C$$</p>\n<p>$$ \\Rightarrow 0 =  - 2 \\times {\\pi  \\over 4} + C$$</p>\n<p>$$ \\Rightarrow C = {\\pi  \\over 2}$$</p>\n<p>$$\\therefore$$ $${\\tan ^{ - 1}}(y) = 2{\\tan ^{ - 1}}({e^x}) + {\\pi  \\over 2}$$</p>\n<p>$$ \\Rightarrow y = \\tan \\left( { - 2{{\\tan }^{ - 1}}({e^x}) + {\\pi  \\over 2}} \\right)$$</p>\n<p>Differentiating both sides, we get</p>\n<p>$$y' = {\\sec ^2}\\left( { - 2{{\\tan }^{ - 1}}({e^x}) + {\\pi  \\over 2}} \\right) - 2\\,.\\,{{{e^x}} \\over {1 + {e^{2x}}}}$$</p>\n<p>$$ = {\\sec ^2}\\left( { - 2{{\\tan }^{ - 1}}({e^x}) + {\\pi  \\over 2}} \\right) \\times {{ - 2{e^x}} \\over {1 + {e^{2x}}}}$$</p>\n<p>$$\\therefore$$ $$y'(0) = {\\sec ^2}\\left( { - 2{{\\tan }^{ - 1}}({e^o}) + {\\pi  \\over 2}} \\right) \\times {{ - 2{e^o}} \\over {1 + {e^o}}}$$</p>\n<p>$$ = {\\sec ^2}\\left( { - 2 \\times {\\pi  \\over 4} + {\\pi  \\over 2}} \\right) \\times {{ - 2} \\over 2}$$</p>\n<p>$$ = {\\sec ^2}(0)x - 1$$</p>\n<p>$$ = 1 \\times 1$$</p>\n<p>$$ =  - 1$$</p>\n<p>And</p>\n<p>$$y\\left( {\\log _e^{\\sqrt 3 }} \\right) = \\tan \\left( { - 2{{\\tan }^{ - 1}}\\left( {{e^{\\log _e^{\\sqrt 3 }}}} \\right) + {\\pi  \\over 2}} \\right)$$</p>\n<p>$$ = \\tan \\left( { - 2{{\\tan }^{ - 1}}(\\sqrt 3 ) + {\\pi  \\over 2}} \\right)$$</p>\n<p>$$ = \\tan \\left( { - 2 \\times {\\pi  \\over 3} + {\\pi  \\over 2}} \\right)$$</p>\n<p>$$ = \\tan \\left( { - {\\pi  \\over 6}} \\right)$$</p>\n<p>$$ =  - \\tan \\left( {{\\pi  \\over 6}} \\right)$$</p>\n<p>$$ =  - {1 \\over {\\sqrt 3 }}$$</p>\n<p>$$\\therefore$$ $$6\\left( {y'(0) + {{\\left( {y(\\log _e^{\\sqrt 3 })} \\right)}^2}} \\right)$$</p>\n<p>$$ = 6\\left( { - 1 + {{\\left( {{{ - 1} \\over {\\sqrt 3 }}} \\right)}^2}} \\right)$$</p>\n<p>$$ = 6\\left( { - 1 + {1 \\over 3}} \\right) = 6 \\times {{ - 2} \\over 3} =  - 4$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th June Evening Shift"
+    "title": "JEE Main 2022 (Online) 29th June Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16af",
@@ -1232,21 +1201,8 @@
     ],
     "solution": "<p>Given,</p>\n<p>$$x{{dy} \\over {dx}} - y = \\sqrt {{y^2} + 16x} $$</p>\n<p>$$ \\Rightarrow x{{dy} \\over {dx}} = y + \\sqrt {{y^2} + 16x} $$</p>\n<p>$$ \\Rightarrow {{dy} \\over {dx}} = {y \\over x} + \\sqrt {{{\\left( {{y \\over x}} \\right)}^2} + 16} $$</p>\n<p>This is a homogenous different equation.</p>\n<p>Let $${y \\over x} = v$$</p>\n<p>$$ \\Rightarrow y = vx$$</p>\n<p>$$ \\Rightarrow {{dy} \\over {dx}} = v + x{{dv} \\over {dx}}$$</p>\n<p>$$\\therefore$$ $$v + x{{dv} \\over {dx}} =v+ \\sqrt {{v^2} + 16} $$</p>\n<p>$$ \\Rightarrow $$ $$ x{{dv} \\over {dx}} = \\sqrt {{v^2} + 16} $$</p>\n<p>$$ \\Rightarrow {{dv} \\over {\\sqrt {{v^2} + 16} }} = {{dx} \\over x}$$</p>\n<p>Integrating both sides, we get</p>\n<p>$$\\int {{{dv} \\over {\\sqrt {{v^2} + 16} }} = \\int {{{dx} \\over x}} } $$</p>\n<p>$$ \\Rightarrow \\ln \\left| {v + \\sqrt {{v^2} + 16} } \\right| = \\ln x + \\ln c$$</p>\n<p>$$ \\Rightarrow v + \\sqrt {{v^2} + 16}  = cx$$</p>\n<p>Now putting, $$v = {y \\over x}$$, we get</p>\n<p>$${y \\over x} + \\sqrt {{{{y^2}} \\over {{x^2}}} + 16}  = cx$$</p>\n<p>$$ \\Rightarrow {y \\over x} + \\sqrt {{{{y^2} + 16{x^2}} \\over {{x^2}}}}  = cx$$</p>\n<p>$$ \\Rightarrow y + \\sqrt {{y^2} + 16{x^2}}  = c{x^2}$$ ...... (1)</p>\n<p>Given, $$y(1) = 3$$</p>\n<p>$$\\therefore$$ When x = 1 then y = 3.</p>\n<p>Putting in equation (1) we get,</p>\n<p>$$3 + \\sqrt {9 + 16}  = c.\\,1$$</p>\n<p>$$ \\Rightarrow c = 8$$</p>\n<p>$$\\therefore$$ Solution of equation,</p>\n<p>$$y + \\sqrt {{y^2} + 16{x^2}}  = 8{x^2}$$</p>\n<p>Now, y(2) means when x = 2 then y = ?</p>\n<p>$$\\therefore$$ $$y + \\sqrt {{y^2} + 16 \\times 4}  = 8 \\times 4$$</p>\n<p>$$ \\Rightarrow y = 15$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th June Morning Shift"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16b0",
-    "question_id": "l7g9d3h4",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "<p>$$xdy = ({y^2} - 4y)dx = 0$$</p>\n<p>$$ \\Rightarrow xdy = ({y^2} - 4y)dx$$</p>\n<p>$$ \\Rightarrow {{dy} \\over {({y^2} - 4x)}} = {{dx} \\over x}$$</p>\n<p>$$ \\Rightarrow {{dy} \\over {y(y - 4)}} = {{dx} \\over x}$$</p>\n<p>$$ \\Rightarrow {1 \\over 4} \\times {{y - (y - 4)} \\over {y(y - 4)}}dy = {{dx} \\over x}$$</p>\n<p>$$ \\Rightarrow {1 \\over 4}\\left( {{1 \\over {y - 4}} - {1 \\over y}} \\right)dy = {{dx} \\over x}$$</p>\n<p>Integrating both side, we get</p>\n<p>$$ \\Rightarrow {1 \\over 4}\\int {\\left( {{1 \\over {y - 4}} - {1 \\over y}} \\right)dy = \\int {{{dx} \\over x}} } $$</p>\n<p>$$ \\Rightarrow {1 \\over 4}\\left( {\\ln \\left| {{{y - 4} \\over y}} \\right|} \\right) = \\ln |x| + {1 \\over 4}\\ln C$$ (Cont.)</p>\n<p>$$ \\Rightarrow {1 \\over 4}\\ln \\left| {{{y - 4} \\over y}} \\right| = \\ln x + {1 \\over 4}\\ln C$$ [As $$x > 0$$, so $$|x| = x$$]</p>\n<p>$$ \\Rightarrow \\ln \\left| {{{y - 4} \\over y}} \\right| = 4\\ln x + \\ln C$$</p>\n<p>$$ \\Rightarrow \\ln \\left| {{{y - 4} \\over y}} \\right| = \\ln ({x^4}C)$$</p>\n<p>$$ \\Rightarrow {{y - 4} \\over y} = \\, \\pm \\,C{x^4}$$</p>\n<p>$$ \\Rightarrow {{y - 4} \\over y} = \\lambda {x^4}$$ [Assume $$ \\pm \\,C = \\lambda $$]</p>\n<p>Given, $$y(1) = 2$$</p>\n<p>$$\\therefore$$ $${{2 - 4} \\over 2} = \\lambda {(1)^4}$$</p>\n<p>$$ \\Rightarrow \\lambda  = -1$$</p>\n<p>$$\\therefore$$ $${{y - 4} \\over y} =  - {x^4}$$</p>\n<p>Now, $$y(\\sqrt 2 ) =  - {(\\sqrt 2 )^4} = {{y - 4} \\over y}$$</p>\n<p>$$ \\Rightarrow {{y - 4} \\over y} =  - 4$$</p>\n<p>$$ \\Rightarrow y - 4 =  - 4y$$</p>\n<p>$$ \\Rightarrow 5y = 4$$</p>\n<p>$$ \\Rightarrow y = {4 \\over 5}$$</p>\n<p>$$\\therefore$$ $$10y(\\sqrt 2 ) = 10 \\times {4 \\over 5} = 8$$</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2022 Paper 2 Online"
+    "title": "JEE Main 2022 (Online) 29th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16b1",
@@ -1265,7 +1221,8 @@
     ],
     "solution": "$${{dy} \\over {dx}} = {{{y^2} - {x^2}} \\over {2xy}}$$<br><br>Put $$y = vx$$<br><br>$$v + x{{dv} \\over {dx}} = {{{v^2}{x^2} - {x^2}} \\over {2v{x^2}}} = {{{v^2} - 1} \\over {2v}}$$<br><br>$$x{{dv} \\over {dx}} = {{{v^2} - 1 - 2{v^2}} \\over {2v}} =  - {{({v^2} + 1)} \\over {2v}}$$<br><br>$$ \\Rightarrow {{2v} \\over {{v^2} + 1}}dv =  - {{dx} \\over x}$$<br><br>$$\\ln ({v^2} + 1) =  - \\ln x + \\ln c \\Rightarrow {v^2} + 1 = {c \\over x}$$<br><br>$$ \\Rightarrow {{{y^2}} \\over {{x^2}}} + 1 = {c \\over x} \\Rightarrow {x^2} + {y^2} = cx$$<br><br>It pass through (1, 1)<br><br>$$ \\therefore $$ $${x^2} + {y^2} - 2x = 0$$<br><br>Similarly for second differential equation $${{dy} \\over {dx}} = $$$${{2xy} \\over {{x^2} - {y^2}}}$$<br><br>Equation of curve is x<sup>2</sup> + y<sup>2</sup> $$-$$ 2y = 0<br><br>Now required area is <br><br><img src=\"https://imagex.cdn.examgoal.net/1kobs2q1z/29737c15-7238-49f2-8f49-7cabc182c63d/6fea7770-adcd-11eb-a769-3d50c86bdc83/file-1kobs2q20.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 16th March Evening Shift Mathematics - Differential Equations Question 175 English Explanation\"><br><br>$$ = 2\\int\\limits_0^1 {\\left( {\\sqrt {2x - {x^2}}  - x} \\right)} dx $$\n<br><br>$$= ({\\pi  \\over 2} - 1)$$ sq. units",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 16th March Evening Shift"
+    "title": "JEE Main 2021 (Online) 16th March Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16b2",
@@ -1279,7 +1236,8 @@
     "options": [],
     "solution": "Given, $${{dy} \\over {dx}}$$ = 2(x + 1)\n<br><br>Integrating both sides, we get\n<br><br>$$y = {x^2} + 2x + c$$\n<br><br>Let the two roots of the quadratic equation $$\\alpha $$ and $$\\beta $$\n<br><br><img src=\"https://imagex.cdn.examgoal.net/1koe9ygw7/dff3c9ed-78ad-4e55-9e48-bc4cae4d5765/ef39da60-af2c-11eb-b63f-e30f270809af/file-1koe9ygw8.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 16th March Morning Shift Mathematics - Differential Equations Question 177 English Explanation\"><br><br>As parabola intercept the x axis so D &gt; 0\n<br><br>From figure, AB = |$$\\alpha $$ - $$\\beta $$| = $${{\\sqrt D } \\over {\\left| a \\right|}}$$ = $$\\sqrt D $$\n<br><br>and BC = $$ - {D \\over {4a}}$$ = $$ - {D \\over 4}$$\n<br><br>$$ \\therefore $$ Area of rectangle (ABCD) = AB $$ \\times $$ BC = $$\\sqrt D  \\times {D \\over 4}$$\n<br><br>From property we know,\n<br><br>Area of parabola with the x axis = $${2 \\over 3}$$(Area of rectangle)\n<br><br>$$ \\Rightarrow $$ $${{4\\sqrt 8 } \\over 3}$$ = $${2 \\over 3} \\times \\sqrt D  \\times {D \\over 4}$$\n<br><br>$$ \\Rightarrow $$ $$D\\sqrt D $$ = $$8\\sqrt 8 $$\n<br><br>$$ \\Rightarrow $$ D = 8\n<br><br>$$ \\therefore $$ b<sup>2</sup> - 4ac = 8\n<br><br>$$ \\Rightarrow $$ 4 - 4c = 8\n<br><br>$$ \\Rightarrow $$ 1 $$-$$ c = 2 $$ \\Rightarrow $$ c = $$-$$ 1<br><br>Equation of f(x) = x<sup>2</sup> + 2x $$-$$ 1<br><br>$$ \\therefore $$ f(1) = 1 + 2 $$-$$ 1 = 2",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 16th March Morning Shift"
+    "title": "JEE Main 2021 (Online) 16th March Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16b3",
@@ -1298,7 +1256,8 @@
     ],
     "solution": "$${{dy} \\over {dx}} = (x - 1)y + (x - 1)$$<br><br>$${{dy} \\over {dx}} = (x - 1)(y + 1)$$<br><br>$${{dy} \\over {y + 1}} = (x - 1)dx$$<br><br>Integrating both sides, we get<br><br>$$\\ln (y + 1) = {{{x^2}} \\over 2} - x + c$$<br><br>$$x = 0,y = 0$$<br><br>$$ \\Rightarrow c = 0$$<br><br>$$ \\therefore $$ $$\\ln (y + 1) = {{{x^2}} \\over 2} - x$$<br><br>putting $$x = 1,\\ln (y + 1) = {1 \\over 2} - 1 =  - {1 \\over 2}$$<br><br>$$y + 1 = {e^{ - {1 \\over 2}}}$$<br><br>$$y = {e^{ - {1 \\over 2}}} - 1$$<br><br>$$ \\therefore $$ $$y(1) = {e^{ - {1 \\over 2}}} - 1$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 17th March Morning Shift"
+    "title": "JEE Main 2021 (Online) 17th March Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16b4",
@@ -1312,7 +1271,8 @@
     "options": [],
     "solution": "$$xdy - ydx = \\sqrt {{x^2} - {y^2}} dx$$<br><br>dividing both sides by x<sup>2</sup>, we get<br><br>$${{xdy - ydx} \\over {{x^2}}} = {{\\sqrt {{x^2} - {y^2}} } \\over {{x^2}}}dx$$<br><br>$$ \\Rightarrow d\\left( {{y \\over x}} \\right) = {1 \\over x}\\sqrt {1 - {{\\left( {{y \\over x}} \\right)}^2}} dx$$<br><br>$$ \\Rightarrow {{d\\left( {{y \\over x}} \\right)} \\over {\\sqrt {1 - {{\\left( {{y \\over x}} \\right)}^2}} }} = {{dx} \\over x}$$<br><br>Integrating both side, we get<br><br>$$ \\Rightarrow \\int {{{d\\left( {{y \\over x}} \\right)} \\over {\\sqrt {1 - {{\\left( {{y \\over x}} \\right)}^2}} }} = \\int {{{dx} \\over x}} } $$<br><br>$${\\sin ^{ - 1}}\\left( {{y \\over x}} \\right) = \\ln (x) + C$$<br><br>Given, y(1) = 0 $$ \\Rightarrow $$ at x = 1, y = 0<br><br>$$ \\therefore $$ $$ \\Rightarrow {\\sin ^{ - 1}}(0) = \\ln (1) + C$$<br><br>$$ \\Rightarrow $$ C = 0<br><br>$$ \\therefore $$ $${\\sin ^{ - 1}}\\left( {{y \\over x}} \\right) = \\ln (x)$$<br><br>$$ \\Rightarrow $$ y = x sin(ln(x))<br><br>$$ \\therefore $$ Area $$ = \\int_1^{{e^{\\pi {} }}} {x\\sin (\\ln (x))} dx$$<br><br>Let, lnx = t<br><br>$$ \\Rightarrow $$ x = e<sup>t</sup><br><br>$$ \\Rightarrow $$ dx = e<sup>t</sup> dt<br><br>New lower limit, t = ln(1) = 0<br><br>and upper limit t = ln$$({e^{\\pi {} }})$$ = $${\\pi {} }$$<br><br>$$ \\therefore $$ Area = $$\\int_0^{^{\\pi {} }} {{e^t}\\sin (t).{e^t}} dt$$<br><br>$$ = \\int_0^{^{\\pi {} }} {{e^{2t}}\\sin t\\,} dt$$<br><br>$$ = \\left[ {{{{e^{2t}}} \\over {({1^2} + {2^2})}}(2\\sin t - 1\\cos t)} \\right]_0^{\\pi {} }$$<br><br>$$ = {\\left[ {{{{e^{2\\pi {} }}} \\over 5}(0 - ( - 1)) - {1 \\over 5}( - 1)} \\right]}$$<br><br>$$ = {{{e^{2\\pi {} }}} \\over 5} + {1 \\over 5}$$<br><br>$$  = \\alpha {e^{2\\pi {} }} + \\beta $$<br><br>$$ \\therefore $$ $$\\alpha  = {1 \\over 5},\\beta  = {1 \\over 5}$$<br><br>So, $$10(\\alpha  + \\beta ) = 4$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 18th March Evening Shift"
+    "title": "JEE Main 2021 (Online) 18th March Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16b5",
@@ -1326,7 +1286,8 @@
     "options": [],
     "solution": "$$\\cos \\left( {{1 \\over 2}{{\\cos }^{ - 1}}({e^{ - x}})} \\right)dx = \\sqrt {{e^{2x}} - 1} dy$$<br><br>Put cos<sup>$$-$$1</sup>(e<sup>$$-$$x</sup>) $$\\theta$$, $$\\theta$$ $$\\in$$ [0, $$\\pi$$]<br><br>$$\\cos \\theta  = {e^{ - x}} \\Rightarrow 2{\\cos ^2}{\\theta  \\over 2} - 1 = {e^{ - x}}$$<br><br>$$\\cos {\\theta  \\over 2} = \\sqrt {{{{e^{ - x}} + 1} \\over 2}}  = \\sqrt {{{{e^x} + 1} \\over {2{c^x}}}} $$<br><br>$$\\sqrt {{{{e^x} + 1} \\over {2{c^x}}}} dx = \\sqrt {{e^{2x}} - 1} dy$$<br><br>$${1 \\over {\\sqrt 2 }}\\int {{{dx} \\over {\\sqrt {{e^x}} \\sqrt {{e^x} - 1} }} = \\int {dy} } $$<br><br>Put $${e^x} = t,{{dt} \\over {dx}} = {e^x}$$<br><br>$${1 \\over {\\sqrt 2 }}\\int {{{dx} \\over {{e^x}\\sqrt {{e^x}} \\sqrt {{e^x} - 1} }} = \\int {dy} } $$<br><br>$$\\int {{{dt} \\over {t\\sqrt {{t^2} - t} }} = \\sqrt 2 y} $$<br><br>Put $$t = {1 \\over z},{{dt} \\over {dz}} =  - {1 \\over {{z^2}}}$$<br><br>$$\\int {{{ - {{dz} \\over {{z^2}}}} \\over {{1 \\over z}\\sqrt {{1 \\over {{z^2}}} - {1 \\over z}} }} = \\sqrt {2y} } $$<br><br>$$ - \\int {{{dz} \\over {\\sqrt {1 - z} }} = \\sqrt 2 y} $$<br><br>$${{ - 2{{(1 - z)}^{1/2}}} \\over { - 1}} = \\sqrt 2 y + c$$<br><br>$$2{\\left( {1 - {1 \\over t}} \\right)^{1/2}} = \\sqrt 2 y + c$$<br><br>$$2{(1 - {e^{ - x}})^{1/2}} = \\sqrt 2 y + c\\buildrel {(0, - 1)} \\over\n \\longrightarrow  \\Rightarrow c = \\sqrt 2 $$<br><br>$$2{(1 - {e^{ - x}})^{1/2}} = \\sqrt 2 (y + 1)$$, passes through ($$\\alpha$$, 0)<br><br>$$2{(1 - {e^{ - \\alpha }})^{1/2}} = \\sqrt 2 $$<br><br>$$\\sqrt {1 - {e^{ - \\alpha }}}  = {1 \\over {\\sqrt 2 }} \\Rightarrow 1 - {e^{ - \\alpha }} = {1 \\over 2}$$<br><br>$${e^{ - \\alpha }} = {1 \\over 2} \\Rightarrow {e^\\alpha } = 2$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 20th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 20th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16b6",
@@ -1345,7 +1306,8 @@
     ],
     "solution": "We have,<br><br>$${{dy} \\over {dx}} = {{x\\left( {{y \\over x}.\\tan {y \\over x} - 1} \\right)} \\over {x\\tan {y \\over x}}}$$<br><br>$$\\therefore$$ $${{dy} \\over {dx}} = {y \\over x} - \\cot \\left( {{y \\over x}} \\right)$$<br><br>Put $${y \\over x} = v$$<br><br>$$ \\Rightarrow y = vn$$<br><br>$$\\therefore$$ $${{dy} \\over {dx}} = v + {{ndv} \\over {dx}}$$<br><br>Now, we get<br><br>$$v + n{{dv} \\over {dx}} = v - \\cot (v)$$<br><br>$$ \\Rightarrow \\int {(\\tan )dv}  =  - \\int {{{dx} \\over x}} $$<br><br>$$\\therefore$$ $$\\ln \\left| {\\sec \\left( {{y \\over x}} \\right)} \\right| =  - \\ln \\left| x \\right| + c$$<br><br>As, $$\\left( {{1 \\over 2}} \\right) = \\left( {{y \\over x}} \\right) \\Rightarrow C = 0$$<br><br>$$\\therefore$$ $$\\sec \\left( {{y \\over x}} \\right) = {1 \\over x}$$<br><br>$$ \\Rightarrow \\cos \\left( {{y \\over x}} \\right) = x$$<br><br>$$\\therefore$$ $$y = x{\\cos ^{ - 1}}(x)$$<br><br>So, required bounded area<br><br>$$ = \\int\\limits_0^{{1 \\over {\\sqrt 2 }}} {\\mathop x\\limits_{(II)} (\\mathop {{{\\cos }^{ - 1}}x}\\limits_{(I)} )dx = \\left( {{{\\pi  - 1} \\over 8}} \\right)} $$ (I. B. P.)<br><br>$$\\therefore$$ Option (1) is correct.",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 20th July Morning Shift"
+    "title": "JEE Main 2021 (Online) 20th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16b7",
@@ -1364,7 +1326,8 @@
     ],
     "solution": "$${e^x}\\sqrt {1 - {y^2}} dx + {y \\over x}dy = 0$$<br><br>$$ \\Rightarrow {e^x}\\sqrt {1 - {y^2}} dx + {{ - y} \\over x}dy$$<br><br>$$ \\Rightarrow \\int {{{ - y} \\over {\\sqrt {1 - {y^2}} }}} dy = \\int_{II}^{{e^x}} {_1^xdx} $$<br><br>$$ \\Rightarrow \\sqrt {1 - {y^2}}  = {e^x}(x - 1) + c$$<br><br>Given : At x = 1, y = $$-$$1<br><br>$$\\Rightarrow$$ 0 = 0 + c $$\\Rightarrow$$ c = 0<br><br>$$\\therefore$$ $$\\sqrt {1 - {y^2}}  = {e^x}(x - 1)$$<br><br>At x = 3 <br><br>$$1 - {y^2} = {({e^3}2)^2} \\Rightarrow {y^2} = 1 - 4{e^6}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 20th July Morning Shift"
+    "title": "JEE Main 2021 (Online) 20th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16b8",
@@ -1378,7 +1341,8 @@
     "options": [],
     "solution": "Let y + 1 = Y and x + 2 = X<br><br>dy = dY<br><br>dx = dX<br><br>$$\\left( {X{e^{{X \\over X}}} + Y} \\right)dX = XdY$$<br><br>$$ \\Rightarrow {{XdY - YdX} \\over {{X^2}}} = {{{e^{{Y \\over X}}}} \\over X}dX$$<br><br>$$ \\Rightarrow {e^{ - {Y \\over X}}}d\\left( {{Y \\over X}} \\right) = {{dX} \\over X}$$<br><br>$$ \\Rightarrow  - {e^{ - {Y \\over X}}} = \\ln |X| + c$$<br><br>$$ \\Rightarrow  - {e^{ - \\left( {{{y + 1} \\over {x + 2}}} \\right)}} = \\ln |x + 2| + c$$<br><br>$$\\because$$ (1, 1) satisfy this equation<br><br>So, $$c =  - {e^{ - {2 \\over 3}}} - \\ln 3$$<br><br>Now, $$y =  - 1 - (x + 2)\\ln \\left( {\\ln \\left( {\\left| {{3 \\over {x + 2}}} \\right|} \\right) + {e^{ - {2 \\over 3}}}} \\right)$$<br><br>Domain :<br><br>$$\\ln \\left| {{3 \\over {x + 2}}} \\right| &gt; {e^{ - {e^{ - {2 \\over 3}}}}}$$<br><br>$$ \\Rightarrow {3 \\over {\\left| {x + 2} \\right|}} &gt; {e^{ - {e^{ - {2 \\over 3}}}}}$$<br><br>$$ \\Rightarrow \\left| {x + 2} \\right| &lt; 3{e^{{e^{ - {2 \\over 3}}}}}$$<br><br>$$ \\Rightarrow  - 3{e^{{e^{ - {2 \\over 3}}}}} - 2 &lt; x &lt; 3{e^{{e^{ - {2 \\over 3}}}}} - 2$$<br><br>So, $$\\alpha  + \\beta  =  - 4$$<br><br>$$ \\Rightarrow \\left| {\\alpha  + \\beta } \\right| = 4$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 22th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 22th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16b9",
@@ -1397,7 +1361,8 @@
     ],
     "solution": "$${{dp} \\over {dt}} = {{p - 900} \\over 2}$$<br><br>$$\\int\\limits_{850}^0 {{{dp} \\over {p - 900}} = \\int\\limits_0^t {{{dt} \\over 2}} } $$<br><br>$$ \\Rightarrow $$ $$\\ln |p - 900|_{850}^0 = {t \\over 2}$$<br><br>$$ \\Rightarrow $$ $$\\ln 900 - \\ln 50 = {t \\over 2}$$<br><br>$$ \\Rightarrow $$ $${t \\over 2} = \\ln 18$$<br><br>$$ \\Rightarrow t = 2\\ln 18$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 24th February Morning Shift"
+    "title": "JEE Main 2021 (Online) 24th February Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16ba",
@@ -1416,7 +1381,8 @@
     ],
     "solution": "$$xdy = (y + {x^3}\\cos x)dx$$<br><br>$$ \\Rightarrow $$ $$xdy = ydx + {x^3}\\cos xdx$$<br><br>$$ \\Rightarrow $$ $${{xdy - ydx} \\over {{x^2}}} = {{{x^3}coxdx} \\over {{x^2}}}$$<br><br>$$ \\Rightarrow $$ $${d \\over {dx}}\\left( {{y \\over x}} \\right) = \\int {x\\cos xdx} $$<br><br>$$ \\Rightarrow {y \\over x} = x\\sin x - \\int {1.\\sin xdx} $$<br><br>$$ \\Rightarrow $$ $${y \\over x} = x\\sin x + \\cos x + C$$<br><br>$$ \\Rightarrow 0 =  - 1 + C \\Rightarrow C = 1,x = \\pi ,y = 0$$<br><br>so, $${y \\over x} = x\\sin x + \\cos x + 1$$<br><br>$$y = {x^2}\\sin x + x\\cos x + x$$<br><br>$$x = {\\pi  \\over 2}$$<br><br>$$y\\left( {{\\pi  \\over 2}} \\right) = {{{\\pi ^2}} \\over 4} + {\\pi  \\over 2}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 25th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 25th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16bb",
@@ -1435,7 +1401,8 @@
     ],
     "solution": "$${{dy - dx} \\over {{e^{y - x}}}} = xdx$$<br><br>$$ \\Rightarrow {{dy - dx} \\over {{e^{y - x}}}} = xdx$$<br><br>$$ \\Rightarrow  - {e^{x - y}} = {{{x^2}} \\over 2} + c$$<br><br>At x = 0, y = 0 $$\\Rightarrow$$ c = $$-$$1<br><br>$$ \\Rightarrow {e^{x - y}} = {{2 - {x^2}} \\over 2}$$<br><br>$$ \\Rightarrow y = x - \\ln \\left( {{{2 - {x^2}} \\over 2}} \\right)$$<br><br>$$ \\Rightarrow {{dy} \\over {dx}} = 1 + {{2x} \\over {2 - {x^2}}} = {{2 + 2x - {x^2}} \\over {2 - {x^2}}}$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1krwhoue1/79b31f24-a40b-4a0d-a13f-65135db61817/ee6b5c90-f495-11eb-9dc6-a7061d629865/file-1krwhoue2.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 25th July Morning Shift Mathematics - Differential Equations Question 162 English Explanation\"><br>So minimum value occurs at $$x = 1 - \\sqrt 3 $$<br><br>$$y\\left( {1 - \\sqrt 3 } \\right) = \\left( {1 - \\sqrt 3 } \\right) - \\ln \\left( {{{2 - \\left( {4 - 2\\sqrt 3 } \\right)} \\over 2}} \\right)$$<br><br>$$ = \\left( {1 - \\sqrt 3 } \\right) - \\ln \\left( {\\sqrt 3  - 1} \\right)$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 25th July Morning Shift"
+    "title": "JEE Main 2021 (Online) 25th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16bc",
@@ -1454,7 +1421,8 @@
     ],
     "solution": "$$2{x^2}dy + ({e^y} - 2x)dx = 0$$<br><br>$${{dy} \\over {dx}} + {{{e^y} - 2x} \\over {2{x^2}}} = 0 \\Rightarrow {{dy} \\over {dx}} + {{{e^y}} \\over {2{x^2}}} - {1 \\over x} = 0$$<br><br>$${e^{ - y}}{{dy} \\over {dx}} - {{{e^{ - y}}} \\over x} =  - {1 \\over {2{x^2}}} \\Rightarrow $$ Put $${e^{ - y}} = z$$<br><br>$${{ - dz} \\over {dx}} - {z \\over x} =  - {1 \\over {2{x^2}}} \\Rightarrow xdz + zdx = {{dx} \\over {2x}}$$<br><br>$$d(xz) = {{dx} \\over {2x}} \\Rightarrow xz = {1 \\over 2}{\\log _e}x + c$$<br><br>$$x{e^{ - y}} = {1 \\over 2}{\\log _e}x + c$$, passes through (e, 1)<br><br>$$ \\Rightarrow C = {1 \\over 2}$$<br><br>$$x{e^{ - y}} = {{{{\\log }_e}ex} \\over 2}$$<br><br>$${e^{ - y}} = {1 \\over 2} \\Rightarrow y = {\\log _e}2$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 26th August Evening Shift"
+    "title": "JEE Main 2021 (Online) 26th August Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16bd",
@@ -1473,7 +1441,8 @@
     ],
     "solution": "$${{dx} \\over {dt}} \\propto x$$<br><br>$${{dx} \\over {dt}} = \\lambda x$$<br><br>$$\\int\\limits_{1000}^x {{{dx} \\over x} = \\int\\limits_0^t {\\lambda dt} } $$<br><br>$$\\ln x - \\ln 1000 = \\lambda t$$<br><br>$$\\ln \\left( {{x \\over {1000}}} \\right) = \\lambda t$$<br><br>Put t = 2, x = 1200<br><br>$$\\ln \\left( {{{12} \\over {10}}} \\right) = 2\\lambda  \\Rightarrow \\lambda  = {1 \\over 2}\\ln {6 \\over 5}$$<br><br>Now, $$\\ln \\left( {{x \\over {1000}}} \\right) = {t \\over 2}\\ln \\left( {{6 \\over 5}} \\right)$$<br><br>$$x = 1000{e^{{t \\over 2}\\ln \\left( {{6 \\over 5}} \\right)}}$$<br><br>$$x = 2000$$ at $$t = {k \\over {\\ln \\left( {{6 \\over 5}} \\right)}}$$<br><br>$$ \\Rightarrow 2000 = 1000{e^{{k \\over {2\\ln (6/5)}} \\times \\ln (6/5)}}$$<br><br>$$ \\Rightarrow 2 = {e^{k/2}}$$<br><br>$$ \\Rightarrow \\ln 2 = {k \\over 2}$$<br><br>$$ \\Rightarrow {k \\over {\\ln 2}} = 2$$<br><br>$$ \\Rightarrow {\\left( {{k \\over {\\ln 2}}} \\right)^2} = 4$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 26th February Morning Shift"
+    "title": "JEE Main 2021 (Online) 26th February Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16be",
@@ -1492,7 +1461,8 @@
     ],
     "solution": "$${{dy} \\over {dx}} - 2xy = 2(2\\sin x - 5)x - 2\\cos x$$<br><br>IF = $${e^{ - {x^2}}}$$<br><br>So, $$y.{e^{ - {x^2}}} = \\int {{e^{ - {x^2}}}(2x(2\\sin x - 5) - 2\\cos x)dx} $$<br><br>$$ \\Rightarrow y.{e^{ - {x^2}}} = {e^{ - {x^2}}}(5 - 2\\sin x) + c$$<br><br>$$ \\Rightarrow y = 5 - 2\\sin x + c.{e^{{x^2}}}$$<br><br>Given at x = 0, y = 7<br><br>$$\\Rightarrow$$ 7 = 5 + c $$\\Rightarrow$$ c = 2<br><br>So, $$y = 5 - 2\\sin x + 2{e^{{x^2}}}$$<br><br>Now, at x = $$\\pi$$,<br><br>y = 5 + 2$${e^{{x^2}}}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th August Morning Shift"
+    "title": "JEE Main 2021 (Online) 27th August Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16bf",
@@ -1511,7 +1481,8 @@
     ],
     "solution": "$$(x - {x^3})dy = (y + y{x^2} - 3{x^4})dx$$<br><br>$$ \\Rightarrow xdy - ydx = (y{x^2} - 3{x^4})dx + {x^3}dy$$<br><br>$$ \\Rightarrow {{xdy - ydx} \\over {{x^2}}} = (ydx + xdy) - 3{x^2}dx$$<br><br>$$ \\Rightarrow d\\left( {{y \\over x}} \\right) = d(xy) - d({x^3})$$<br><br>Integrate<br><br>$$ \\Rightarrow {y \\over x} = xy - {x^3} + c$$<br><br>given f(3) = 3<br><br>$$ \\Rightarrow {3 \\over 3} = 3 \\times 3 - {3^3} + c$$<br><br>$$ \\Rightarrow c = 19$$<br><br>$$\\therefore$$ $${y \\over x} = xy - {x^3} + 19$$<br><br>at $$x = 4,{y \\over 4} = 4y - 64 + 19$$<br><br>$$15y = 4 \\times 45$$<br><br>$$ \\Rightarrow y = 12$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 27th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c0",
@@ -1525,7 +1496,8 @@
     "options": [],
     "solution": "$$\\int {{e^{ - y}}} dy = \\int {{e^{\\alpha x}}} dx$$<br><br>$$ \\Rightarrow {e^{ - y}} = {{{e^{\\alpha x}}} \\over \\alpha } + c$$ ..... (i)<br><br>Put (x, y) = (ln2, ln2)<br><br>$${{ - 1} \\over 2} = {{{2^\\alpha }} \\over \\alpha } + C$$ ..... (ii)<br><br>Put (x, y) $$ \\equiv $$ (0, $$-$$ln2) in (i)<br><br>$$ - 2 = {1 \\over \\alpha } + C$$ ..... (iii)<br><br>(ii) $$-$$ (iii)<br><br>$${{{2^\\alpha } - 1} \\over \\alpha } = {3 \\over 2}$$<br><br>$$\\Rightarrow$$ $$\\alpha$$ = 2 (as $$\\alpha$$ $$\\in$$ N)",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 27th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c1",
@@ -1544,7 +1516,8 @@
     ],
     "solution": "$${{dy} \\over {dx}} = {e^{3x}}.{e^{4y}} \\Rightarrow \\int {{e^{ - 4y}}dy = \\int {{e^{3x}}dx} } $$<br><br>$${{{e^{ - 4y}}} \\over { - 4}} = {{{e^{3x}}} \\over 3} + C \\Rightarrow  - {1 \\over 4} - {1 \\over 3} = C \\Rightarrow C =  - {7 \\over {12}}$$<br><br>$${{{e^{ - 4y}}} \\over { - 4}} = {{{e^{3x}}} \\over 3} - {7 \\over {12}} \\Rightarrow {e^{ - 4y}} = {{4{e^{3x}} - 7} \\over { - 3}}$$<br><br>$${e^{4y}} = {3 \\over {7 - 4{e^{3x}}}} \\Rightarrow 4y = \\ln \\left( {{3 \\over {7 - 4{e^{3x}}}}} \\right)$$<br><br>$$4y = \\ln \\left( {{3 \\over 6}} \\right)$$ when $$x =  - {2 \\over 3}\\ln 2$$<br><br>$$y = {1 \\over 4}\\ln \\left( {{1 \\over 2}} \\right) =  - {1 \\over 4}\\ln 2$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th July Morning Shift"
+    "title": "JEE Main 2021 (Online) 27th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c2",
@@ -1558,7 +1531,8 @@
     "options": [],
     "solution": "$$\\sec y{{dy} \\over {dx}} = 2\\sin x\\cos y$$<br><br>$${\\sec ^2}ydy = 2\\sin xdx$$<br><br>$$\\tan y =  - 2\\cos x + c$$<br><br>$$c = 2$$<br><br>$$\\tan y =  - 2\\cos x + 2 \\Rightarrow $$ at $$x = {\\pi  \\over 2}$$<br><br>$$\\tan y = 2$$<br><br>$${\\sec ^2}y{{dy} \\over {dx}} = 2\\sin x$$<br><br>$$ \\therefore $$ $$5{{dy} \\over {dx}} = 2$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th July Morning Shift"
+    "title": "JEE Main 2021 (Online) 27th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c3",
@@ -1577,7 +1551,8 @@
     ],
     "solution": "Let, $$y = tx$$<br><br>$${{dy} \\over {dx}} = t + x{{dt} \\over {dx}}$$<br><br>$$\\therefore$$ $$tx\\left( {t + x{{dt} \\over {dx}}} \\right) = x\\left( {{t^2} + {{\\varphi ({t^2})} \\over {\\varphi '({t^2})}}} \\right)$$<br><br>$${t^2} + xt{{dt} \\over {dx}} = {t^2} + {{\\varphi ({t^2})} \\over {\\varphi '({t^2})}}$$<br><br>$$\\int {{{t\\varphi '({t^2})} \\over {\\varphi ({t^2})}}} dt = \\int {{{dx} \\over x}} $$<br><br>Let $$\\varphi ({t^2}) = p$$<br><br>$$\\therefore$$ $$\\varphi '({t^2})2tdt = dp$$<br><br>$$ \\Rightarrow \\int {{{dy} \\over {2p}}}  = \\int {{{dx} \\over x}} $$<br><br>$${1 \\over 2}\\ln \\varphi ({t^2}) = \\ln x + \\ln c$$<br><br>$$\\varphi ({t^2}) = {x^2}k$$<br><br>$$\\varphi \\left( {{{{y^2}} \\over {{x^2}}}} \\right) = k{x^2},\\varphi (1) = k$$<br><br>$$\\varphi \\left( {{{{y^2}} \\over 4}} \\right) = 4\\varphi (1)$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 31st August Evening Shift"
+    "title": "JEE Main 2021 (Online) 31st August Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c4",
@@ -1596,7 +1571,8 @@
     ],
     "solution": "$${{dy} \\over {dx}} = {{{2^{x + y}} - {2^x}} \\over {{2^y}}}$$<br><br>$${2^y}{{dy} \\over {dx}} = {2^x}({2^y} - 1)$$<br><br>$$\\int {{{{2^y}} \\over {{2^y} - 1}}dy = \\int {{2^x}\\,dx} } $$<br><br>$${{\\ln ({2^y} - 1)} \\over {\\ln 2}} = {{{2^x}} \\over {\\ln 2}} + C$$<br><br>$$ \\Rightarrow {\\log _2}({2^y} - 1) = {2^x}{\\log _2}e + C$$<br><br>$$\\because$$ $$y(0) = 1 \\Rightarrow 0 = {\\log _2}e + C$$<br><br>$$C =  - {\\log _2}e$$<br><br>$$ \\Rightarrow {\\log _2}({2^y} - 1) = ({2^x} - 1){\\log _2}e$$<br><br>put x = 1, $${\\log _2}({2^y} - 1) = {\\log _2}e$$<br><br>2<sup>y</sup> = e + 1<br><br>y = log<sub>2</sub>(e + 1) Ans.",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 31st August Morning Shift"
+    "title": "JEE Main 2021 (Online) 31st August Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c5",
@@ -1615,7 +1591,8 @@
     ],
     "solution": "$$2{x^2}dy = \\left( {2xy + {y^2}} \\right)dx$$<br><br>\n$$ \\Rightarrow 2{x^2}{{dy} \\over {dx}} = 2xy + {y^2}$$<br><br>\n$$ \\Rightarrow {{2{x^2}} \\over {2{x^2}{y^2}}}{{dy} \\over {dx}} = {{2xy} \\over {2{x^2}{y^2}}} + {{{y^2}} \\over {2{x^2}{y^2}}}$$<br><br>\n$$ \\Rightarrow {1 \\over {{y^2}}}{{dy} \\over {dx}} - {1 \\over x}{1 \\over y} = {1 \\over {2{x^2}}}$$<br><br>\nLet $$ - {1 \\over y} = t$$<br><br>\n$$ \\Rightarrow {1 \\over {{y^2}}}{{dy} \\over {dx}} = {{dt} \\over {dx}}$$<br><br>\n$$ \\Rightarrow {{dt} \\over {dx}} + t{1 \\over x} = {1 \\over {2{x^2}}}$$<br><br>\nThis is linear differentiatial equation.<br><br>\n$$ \\therefore I.F = {e^{\\int {{1 \\over x}dx} }} = {e^{\\ln x}}$$<br><br>\n$$ \\therefore t.{e^{\\ln x}} = \\int {{1 \\over {2{x^2}}}.{e^{\\ln x}}dx} $$<br><br>\n$$ \\Rightarrow  - {1 \\over y}.x = \\int {{1 \\over {2{x^2}}}.xdx} $$<br><br>\n$$ \\Rightarrow  - {x \\over y} = {1 \\over 2}\\int {{{dx} \\over x}} $$<br><br>\n$$ \\Rightarrow  - {x \\over y} = {1 \\over 2}\\ln x + c$$<br><br>\nThis curve passes through the point (1, 2)<br><br>\n$$ \\therefore  - {1 \\over 2} = 0 + c$$<br><br>\n$$ \\Rightarrow c =  - {1 \\over 2}$$<br><br>\n$$ \\therefore  - {x \\over y} = {1 \\over 2}\\ln x - {1 \\over 2}$$<br><br>\n$$ \\Rightarrow  - {{2x} \\over y} = \\ln x - 1$$<br><br>\n$$ \\Rightarrow y = {{2x} \\over {1 - \\ln x}}$$<br><br>\n$$ \\Rightarrow f\\left( x \\right) = {{2x} \\over {1 - \\ln x}}$$<br><br>\nSo, $$f\\left( {{1 \\over 2}} \\right) = {{2 \\times {1 \\over 2}} \\over {1 - \\ln \\left( {{1 \\over 2}} \\right)}} = {1 \\over {1 + {{\\log }_e}2}}$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 2nd September Evening Slot"
+    "title": "JEE Main 2020 (Online) 2nd September Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c6",
@@ -1634,7 +1611,8 @@
     ],
     "solution": "$${x^3}dy + xy\\,dx = {x^2}dy + 2y\\,dx$$<br><br>$$ \\Rightarrow dy({x^3} - {x^2}) = dx(2y - xy)$$<br><br>$$ \\Rightarrow $$ $$ - \\int {{1 \\over y}dx} $$ = $$\\int {{{x - 2} \\over {{x^2}(x - 1)}}dx} $$<br><br>$$ \\Rightarrow $$ $$ - \\ln y = \\int {\\left( {{A \\over x} + {B \\over {{x^2}}} + {C \\over {(x - 1)}}} \\right)dx} $$<br><br>Where A = 1, B = +2, C = $$ - $$1<br><br>$$ \\Rightarrow  - \\ln y = \\ln x - {2 \\over x} - \\ln (x - 1) + \\lambda $$<br><br>As $$  y(2) = e$$<br><br>$$ \\Rightarrow  - 1 = \\ln 2 - 1 - 0 + \\lambda $$<br><br>$$ \\therefore $$ $$\\lambda  =  - \\ln 2$$<br><br>$$ \\Rightarrow \\ln y =  - \\ln x + {2 \\over x} + \\ln (x - 1) + \\ln 2$$<br><br>Now put x = 4 in equation<br><br>$$ \\Rightarrow \\ln y =  - \\ln 4 + {1 \\over 2} + \\ln 3 + \\ln 2$$<br><br>$$ \\Rightarrow {\\mathop{\\rm lny}\\nolimits}  = ln\\left( {{3 \\over 2}} \\right) + {1 \\over 2}\\ln e$$<br><br>$$ \\Rightarrow y = {3 \\over 2}\\sqrt e $$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 3rd September Evening Slot"
+    "title": "JEE Main 2020 (Online) 3rd September Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c7",
@@ -1653,7 +1631,8 @@
     ],
     "solution": "Given (1 + e<sup>-x</sup>)(1 + y<sup>2</sup>)$${{dy} \\over {dx}}$$ = y<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ $$\\left( {{{{y^2} + 1} \\over {{y^2}}}} \\right)dy = {{{e^x}dx} \\over {{e^x} + 1}}$$\n<br><br>Integrating both sides,\n<br><br>$$\\int {\\left( {{{{y^2} + 1} \\over {{y^2}}}} \\right)dy = } \\int {{{{e^x}dx} \\over {{e^x} + 1}}} $$<br><br>$$ \\Rightarrow $$ $$y - {1 \\over y} = ln\\left| {{e^x} + 1} \\right| + c$$<br><br>It passes through (0, 1)<br><br>$$ \\Rightarrow $$ c = $$ - ln2$$<br><br>$$ \\Rightarrow $$ $${y^2} - 1 = yln\\left( {{{{e^x} + 1} \\over 2}} \\right)$$<br><br>$$ \\Rightarrow $$ $${y^2} = 1 + yln\\left( {{{{e^x} + 1} \\over 2}} \\right)$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 3rd September Morning Slot"
+    "title": "JEE Main 2020 (Online) 3rd September Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c8",
@@ -1672,7 +1651,8 @@
     ],
     "solution": "$${{dy} \\over {dx}} - {{y + 3x} \\over {\\ln (y + 3x)}} + 3 = 0$$<br><br>Let $$\\ln (y + 3x) = t$$<br><br>$${1 \\over {y + 3x}}.\\left( {{{dy} \\over {dx}} + 3} \\right) = {{dt} \\over {dx}}$$<br><br>$$ \\Rightarrow \\left( {{{dy} \\over {dx}} + 3} \\right) = {{y + 3x} \\over {\\ln (y + 3x)}}$$<br><br>$$ \\therefore $$ $$\\left( {y + 3x} \\right){{dt} \\over {dx}} = {{y + 3x} \\over t}$$<br><br>$$ \\Rightarrow tdt = dx$$<br><br>$${{{t^2}} \\over 2} = x + c$$<br><br>$${1 \\over 2}{\\left( {\\ln (y + 3x)} \\right)^2} = x + c$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 4th September Evening Slot"
+    "title": "JEE Main 2020 (Online) 4th September Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16c9",
@@ -1691,7 +1671,8 @@
     ],
     "solution": "$$xy' - y = {x^2}(x{\\mathop{\\rm cosx}\\nolimits}  + sinx),\\,x &gt; 0,\\,y(\\pi ) = \\pi $$<br><br>$$y' - {1 \\over x}y = x\\{ x\\cos x\\, + \\,\\sin x\\} $$<br><br>$$I.F. = {e^{ - \\int {{1 \\over 2}dx} }} = {e^{ - \\ln x}} = {1 \\over x}$$<br><br>$$ \\therefore $$ $$y.{1 \\over x} = \\int {{1 \\over x}.x(x\\,cos\\,x + sin\\,x)<br>dx} $$<br><br>$${{y \\over x}}$$ = $$\\int ( x\\,\\cos \\,x + \\sin \\,x)dx$$<br><br>$$ = x\\,\\sin \\,x + C$$<br><br>$${{y \\over x}}$$ = $$x\\,\\sin \\,x + C$$<br><br>$$ \\Rightarrow y = {x^2} = \\sin \\,x + cx$$<br><br>x = $$\\pi $$, y = $$\\pi $$<br><br>$$\\pi $$ = $$\\pi $$c $$ \\Rightarrow $$ C = 1<br><br>$$y = {x^2}\\sin x + x \\Rightarrow y\\left( {{\\pi  \\over 2}} \\right) = {{{\\pi ^2}} \\over 4} + {\\pi  \\over 2}$$<br><br>$$y' = 2x\\sin x + {x^2}\\cos x + 1$$<br><br>y\" = $$2\\sin x + 2x\\cos x + 2x\\cos x - {x^2}\\sin x$$<br><br>y\" $$\\left( {{\\pi  \\over 2}} \\right) = 2 - {{{\\pi ^2}} \\over 4} $$\n<br><br>$$\\Rightarrow y\\left( {{\\pi  \\over 2}} \\right)$$ + y\" $$\\left( {{\\pi  \\over 2}} \\right) = 2 + {\\pi  \\over 2}$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 4th September Morning Slot"
+    "title": "JEE Main 2020 (Online) 4th September Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16ca",
@@ -1710,7 +1691,8 @@
     ],
     "solution": "$${{5 + {e^x}} \\over {2 + y}}.{{dy} \\over {dx}} + {e^x} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{5 + {e^x}} \\over {2 + y}}.{{dy} \\over {dx}} = -{e^x} $$\n<br><br>Integrating both sides,\n<br><br>$$ \\Rightarrow $$ $$\\int {{{dy} \\over {2 + y}}}  = \\int {{{ - {e^x}} \\over {{e^x} + 5}}} dx$$\n<br><br>$$ \\Rightarrow $$ ln (y + 2) = – ln(e<sup>x</sup>\n + 5) + k\n<br><br>$$ \\Rightarrow $$ (y + 2) (e<sup>x</sup>\n + 5) = C\n<br><br>$$ \\because $$ y(0) = 1\n<br><br>$$ \\Rightarrow $$ C = 18\n<br><br>$$ \\therefore $$ y + 2 = $${{{18} \\over {{e^x} + 5}}}$$\n<br><br>At x = log<sub>e</sub>13\n<br><br>y + 2 = $${{{18} \\over {13 + 5}}}$$ = 1\n<br><br>$$ \\Rightarrow $$ y = -1",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 5th September Morning Slot"
+    "title": "JEE Main 2020 (Online) 5th September Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16cb",
@@ -1729,7 +1711,8 @@
     ],
     "solution": "$$\\sqrt {1 + {x^2} + {y^2} + {x^2}{y^2}} $$ + xy$${{dy} \\over {dx}}$$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {\\left( {1 + {x^2}} \\right)\\left( {1 + {y^2}} \\right)} $$ + xy$${{dy} \\over {dx}}$$ = 0\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {\\left( {1 + {x^2}} \\right)} \\sqrt {\\left( {1 + {y^2}} \\right)} $$ = -xy$${{dy} \\over {dx}}$$\n<br><br>$$ \\Rightarrow $$ $$\\int {{{ydy} \\over {\\sqrt {1 + {y^2}} }}}  =  - \\int {{{\\sqrt {1 + {x^2}} } \\over x}} dx$$ .....(1)\n<br><br>Now put 1 + x<sup>2</sup>\n = u<sup>2</sup>\n and 1 + y<sup>2</sup>\n = v<sup>2</sup>\n<br><br>2xdx = 2udu and 2ydy = 2vdv\n<br><br>$$ \\Rightarrow $$ xdx = udu and ydy = vdv\n<br><br>Substitute these values in equation (1)\n<br><br>$$\\int {{{vdv} \\over v}}  =  - \\int {{{{u^2}du} \\over {{u^2} - 1}}} $$\n<br><br>$$ \\Rightarrow $$ $$\\int {dv}  =  - \\int {{{{u^2} - 1 + 1} \\over {{u^2} - 1}}} du$$\n<br><br>$$ \\Rightarrow $$ v = $$ - \\int {\\left( {1 + {1 \\over {{u^2} - 1}}} \\right)} du$$\n<br><br>$$ \\Rightarrow $$ v = -u - $${1 \\over 2}{\\log _e}\\left| {{{u - 1} \\over {u + 1}}} \\right|$$ + C\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {1 + {y^2}} $$ = $$ - \\sqrt {1 + {x^2}} $$ + $${1 \\over 2}{\\log _e}\\left| {{{\\sqrt {1 + {x^2}}  + 1} \\over {\\sqrt {1 + {x^2}}  - 1}}} \\right|$$ + C\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {1 + {y^2}}  + \\sqrt {1 + {x^2}}  = {1 \\over 2}{\\log _e}\\left( {{{\\sqrt {1 + {x^2}}  + 1} \\over {\\sqrt {1 + {x^2}}  - 1}}} \\right) + C$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 6th September Morning Slot"
+    "title": "JEE Main 2020 (Online) 6th September Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16cc",
@@ -1748,7 +1731,8 @@
     ],
     "solution": "$$\\left( {{y^2} - x} \\right){{dy} \\over {dx}} = 1$$\n<br><br>$$ \\Rightarrow $$ $${{dx} \\over {dy}}$$ + x = y<sup>2</sup>\n<br><br>I.F = $${e^{\\int {dy} }}$$ = e<sup>y</sup>\n<br><br>Solution is given by\n<br><br>xe<sup>y</sup> = $${\\int {{y^2}{e^y}dy} }$$\n<br><br>$$ \\Rightarrow $$ xe<sup>y</sup> = (y<sup>2</sup> – 2y + 2)e<sup>y</sup> + C\n<br><br>y(0) = 1 means x = 0, y = 1\n<br><br>$$ \\therefore $$ C = -e\n<br><br>$$ \\therefore $$ xe<sup>y</sup> = (y<sup>2</sup> – 2y + 2)e<sup>y</sup> - e\n<br><br>put y = 0\n<br><br>$$ \\therefore $$ x = 0 – 0 + 2 – e\n<br><br>$$ \\Rightarrow $$ x = 2 - e",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 7th January Evening Slot"
+    "title": "JEE Main 2020 (Online) 7th January Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16cd",
@@ -1767,7 +1751,8 @@
     ],
     "solution": "Given,\n $${e^y}\\left( {{{dy} \\over {dx}} - 1} \\right) = {e^x}$$\n<br><br>$$ \\Rightarrow $$ $${e^y}{{dy} \\over {dx}} - {e^y} = {e^x}$$ ....(1)\n<br><br>Let $${e^y} = t$$ $$ \\Rightarrow $$ $${e^y}{{dy} \\over {dx}} = {{dt} \\over {dx}}$$\n<br><br>$$ \\therefore $$ $${{dt} \\over {dx}} - t = {e^x}$$\n<br><br>So here p = -1 and q = e<sup>x</sup>\n<br><br>We know, IF = $${e^{\\int {pdx} }}$$\n<br><br>= $${e^{\\int { - 1dx} }}$$ = $${e^{ - x}}$$\n<br><br>$$ \\therefore $$ t.$${e^{ - x}}$$ = $$\\int {{e^x}.{e^{ - x}}dx} $$\n<br><br>$$ \\Rightarrow $$ t.$${e^{ - x}}$$ = x + c\n<br><br>Putting value of t, we get\n<br><br>$${e^y}{e^{ - x}}$$ = x + c\n<br><br>$$ \\Rightarrow $$ $${e^{y - x}} = x + c$$ .....(2)\n<br><br>Given y(0) = 0 means y = 0 when x = 0.\n<br><br>Putting in equation (2), we get\n<br><br>e<sup>0</sup> = 0 + c\n<br><br>$$ \\Rightarrow $$ c = 1\n<br><br>$$ \\therefore $$ $${e^{y - x}} = x + 1$$ ....(3)\n<br><br>Now we have to find y(1), which means when x = 1 find the value of y in the above equation.\n<br><br>Putting x = 1 in equation (3)\n<br><br>$${e^{y - 1}} = 1 + 1$$\n<br><br>$$ \\Rightarrow $$ y - 1 = log<sub>e</sub>2\n<br><br>$$ \\Rightarrow $$ y = 1 + log<sub>e</sub>2",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 7th January Morning Slot"
+    "title": "JEE Main 2020 (Online) 7th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16ce",
@@ -1786,7 +1771,8 @@
     ],
     "solution": "Given $$\\sqrt {1 - {x^2}} {{dy} \\over {dx}} + \\sqrt {1 - {y^2}}  = 0$$\n<br><br>$$ \\Rightarrow $$ $${{dy} \\over {dx}} =  - {{\\sqrt {1 - {y^2}} } \\over {\\sqrt {1 - {x^2}} }}$$\n<br><br>$$ \\Rightarrow $$ $${{dy} \\over {\\sqrt {1 - {y^2}} }} + {{dx} \\over {\\sqrt {1 - {x^2}} }} = 0$$\n<br><br>$$ \\Rightarrow $$ sin<sup>-1</sup> y + sin<sup>-1</sup> x = c\n<br><br>Given that $$y\\left( {{1 \\over 2}} \\right) = {{\\sqrt 3 } \\over 2}$$\n<br><br>So when x = $${1 \\over 2}$$ then y = $${{\\sqrt 3 } \\over 2}$$\n<br><br>$$ \\therefore $$ sin<sup>-1</sup> $${{\\sqrt 3 } \\over 2}$$ + sin<sup>-1</sup> $${1 \\over 2}$$ = c\n<br><br>$$ \\Rightarrow $$ c = $${\\pi  \\over 3}$$ + $${\\pi  \\over 6}$$ = $${\\pi  \\over 2}$$\n<br><br>So  sin<sup>-1</sup> y + sin<sup>-1</sup> x = $${\\pi  \\over 2}$$\n<br><br>$$ \\Rightarrow $$ sin<sup>-1</sup> y = $${\\pi  \\over 2}$$ - sin<sup>-1</sup> x\n<br><br>$$ \\Rightarrow $$ sin<sup>-1</sup> y = cos<sup>-1</sup> x\n<br><br>Now $$y\\left( { - {1 \\over {\\sqrt 2 }}} \\right)$$ means x = $$ - {1 \\over {\\sqrt 2 }}$$ and find y.\n<br><br>Putting x = $$ - {1 \\over {\\sqrt 2 }}$$\n<br><br>sin<sup>-1</sup> y = cos<sup>-1</sup> $$\\left( { - {1 \\over {\\sqrt 2 }}} \\right)$$ = $${{3\\pi } \\over 4}$$\n<br/><br/>y (at x = $$ - {1 \\over {\\sqrt 2 }}$$) = sin($${{3\\pi } \\over 4}$$) = $${{1 \\over {\\sqrt 2 }}}$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 8th January Morning Slot"
+    "title": "JEE Main 2020 (Online) 8th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16cf",
@@ -1805,7 +1791,8 @@
     ],
     "solution": "$${{dy} \\over {dx}} = {{xy} \\over {{x^2} + {y^2}}}$$\n<br><br>Let y = vx\n<br><br>$$ \\therefore $$ $${{dy} \\over {dx}}$$ = v + x.$${{dv} \\over {dx}}$$\n<br><br>$$ \\Rightarrow $$  v + x.$${{dv} \\over {dx}}$$ = $${{x\\left( {vx} \\right)} \\over {{x^2} + {v^2}{x^2}}}$$ = $${v \\over {1 + {v^2}}}$$\n<br><br>$$ \\Rightarrow $$ x.$${{dv} \\over {dx}}$$ = $${v \\over {1 + {v^2}}}$$ - v = $${{v - v - {v^3}} \\over {1 + {v^2}}}$$ = $$ - {{{v^3}} \\over {1 + {v^2}}}$$\n<br><br>$$ \\Rightarrow $$ $$\\int {{{1 + {v^2}} \\over {{v^3}}}} dv =  - \\int {{{dx} \\over x}} $$\n<br><br>$$ \\Rightarrow $$ $$ - {1 \\over {2{v^2}}} + \\log v$$ = $$ - \\log x + C$$\n<br><br>$$ \\Rightarrow $$ $$ - {1 \\over 2}{{{x^2}} \\over {{y^2}}} + \\log \\left( {{y \\over x}} \\right)$$ = $$ - \\log x + C$$ ......(1)\n<br><br>putting x = 1, y = 1 we get\n<br><br>$$ \\Rightarrow $$ C = $$ - {1 \\over 2}$$\n<br><br>From eq. (1)\n<br><br>$$ - {1 \\over 2}{{{x^2}} \\over {{y^2}}} + \\log \\left( {{y \\over x}} \\right)$$ = $$ - \\log x  - {1 \\over 2}$$\n<br><br>Put y = e\n<br><br>$$ - {1 \\over 2}{{{x^2}} \\over {{e^2}}} + \\log \\left( {{e \\over x}} \\right)$$ = $$ - \\log x  - {1 \\over 2}$$\n<br><br>$$ \\Rightarrow $$  x<sup>2</sup> = 3e<sup>2</sup>\n<br><br>$$ \\Rightarrow $$  x = $$ \\pm $$3$$\\sqrt e $$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 9th January Evening Slot"
+    "title": "JEE Main 2020 (Online) 9th January Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16d0",
@@ -1819,7 +1806,8 @@
     "options": [],
     "solution": "(x + 1)dy = ((x + 1)<sup>2</sup> + y – 3)dx\n<br><br>$$ \\Rightarrow $$ (1 + x)$${{dy} \\over {dx}}$$ - y = (1 + x)<sup>2</sup> - 3\n<br><br>$$ \\Rightarrow $$ $${{dy} \\over {dx}} - {y \\over {1 + x}} = \\left( {1 + x} \\right) - {3 \\over {1 + x}}$$\n<br><br>I.F = $${e^{ - \\int {{{dx} \\over {1 + x}}} }}$$ = $${1 \\over {1 + x}}$$\n<br><br>Solution of the differential equation,\n<br><br>$$y\\left( {{1 \\over {1 + x}}} \\right)$$ = $$\\int {\\left( {\\left( {1 + x} \\right) - {3 \\over {1 + x}}} \\right)\\left( {{1 \\over {1 + x}}} \\right)dx} $$\n<br><br>$$ \\Rightarrow $$ $${y \\over {1 + x}}$$ = $$\\int {{{{x^2} + 2x + 1 - 3} \\over {{{\\left( {x + 1} \\right)}^2}}}dx} $$\n<br><br>$$ \\Rightarrow $$ $${y \\over {1 + x}}$$ = x + $${3 \\over {1 + x}}$$ + C\n<br><br>As y(2) = 0 $$ \\Rightarrow $$ x = 2, y = 0\n<br><br>$$ \\therefore $$ 0 = 2 + $${3 \\over {1 + 2}}$$ + C\n<br><br>$$ \\Rightarrow $$ C = -3\n<br><br>So solution is $${y \\over {1 + x}}$$ = x + $${3 \\over {1 + x}}$$ - 3\n<br><br>y(3) means x = 3 and find value of y.\n<br><br>$${y \\over {1 + 3}} = 3 + {3 \\over {1 + 3}} - 3$$\n<br><br>$$ \\Rightarrow $$ y = 3\n",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 9th January Morning Slot"
+    "title": "JEE Main 2020 (Online) 9th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16d1",
@@ -1838,7 +1826,8 @@
     ],
     "solution": "(x<sup>2</sup> $$-$$ y<sup>2</sup>) dx + 2xy dy = 0\n<br><br>$${{dy} \\over {dx}} = {{{y^2} - {x^2}} \\over {2xy}}$$\n<br><br>Put &nbsp;&nbsp;$$y = vx \\Rightarrow {{dy} \\over {dx}} = v + x{{dv} \\over {dx}}$$\n<br><br>Solving we get, \n<br><br>$$\\int {{{2v} \\over {{v^2} + 1}}dv = \\int { - {{dx} \\over x}} } $$\n<br><br>ln(v<sup>2</sup> + 1) = $$-$$ ln x + C\n<br><br>(y<sup>2</sup> + x<sup>2</sup>) = Cx\n<br><br>1 + 1 = C $$ \\Rightarrow $$ C = 2\n<br><br>y<sup>2</sup> + x<sup>2</sup> = 2x",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 10th January Evening Slot"
+    "title": "JEE Main 2019 (Online) 10th January Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16d2",
@@ -1857,7 +1846,8 @@
     ],
     "solution": "$${{dy} \\over {dx}} + 3{\\sec ^2}x.y = {\\sec ^2}x$$\n<br><br>I.F. = $${e^{3\\int {{{\\sec }^2}xdx} }} = {e^{3\\tan x}}$$\n<br><br>or&nbsp;&nbsp;&nbsp;$$y.e{}^{3\\tan x} = \\int {{{\\sec }^2}x.{e^{3\\tan x}}} $$\n<br><br>or&nbsp;&nbsp;&nbsp;$$y.{e^{3\\tan x}} = {1 \\over 3}{e^{3\\tan x}} + C$$\n<br><br>Given\n<br><br>$$y\\left( {{\\pi  \\over 4}} \\right) = {4 \\over 3}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$${4 \\over 3}.{e^3} = {1 \\over 3}{e^3} + C$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;C = e<sup>3</sup>",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 10th January Morning Slot"
+    "title": "JEE Main 2019 (Online) 10th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16d3",
@@ -1876,7 +1866,8 @@
     ],
     "solution": "$${{dy} \\over {dx}} + \\left( {{{2x + 1} \\over x}} \\right)y = {e^{ - 2x}}$$\n<br><br>I.F. $$ = {e^{\\int {\\left( {{{2x + 1} \\over x}} \\right)dx} }} = {e^{\\int {\\left( {2 + {1 \\over x}} \\right)dx} }} = {e^{2x + \\ell nx}} = {e^{2x}}.x$$\n<br><br>So,&nbsp;&nbsp;$$y\\left( {x{e^{2x}}} \\right) = \\int {{e^{ - 2x}}.x{e^{2x}} + C} $$\n<br><br>$$ \\Rightarrow xy{e^{2x}} = \\int {xdx + C} $$\n<br><br>$$ \\Rightarrow 2xy{e^{2x}} = {x^2} + 2C$$\n<br><br>It passes through $$\\left( {1,{1 \\over 2}{e^{ - 2}}} \\right)$$ we get C $$=$$ 0\n<br><br>$$y = {{x{e^{ - 2x}}} \\over 2}$$\n<br><br>$$ \\Rightarrow {{dy} \\over {dx}} = {1 \\over 2}{e^{ - 2x}}\\left( { - 2x + 1} \\right)$$\n<br><br>$$ \\Rightarrow f(x)$$ is decreasing in $$\\left( {{1 \\over 2},1} \\right)$$\n<br><br>$$y\\left( {{{\\log }_e}2} \\right) = {{\\left( {{{\\log }_e}2} \\right){e^{ - 2({{\\log }_e}2)}}} \\over 2}$$\n<br><br>$$ = {1 \\over 8}{\\log _e}2$$\n<br><br>",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 11th January Morning Slot"
+    "title": "JEE Main 2019 (Online) 11th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16d4",
@@ -1895,7 +1886,8 @@
     ],
     "solution": "$$({y^2} - {x^3})dx - xydy = 0$$<br><br>\n$$ \\Rightarrow y(ydx - xdy) = {x^3}dx$$<br><br>\n$$ \\Rightarrow {y \\over x}\\left( {{{ydx - xdy} \\over {{x^2}}}} \\right) = dx$$<br><br>\n$$ \\Rightarrow  - {y \\over x}d\\left( {{y \\over x}} \\right) = dx$$<br><br>\n$$ \\Rightarrow  - {1 \\over 2}{\\left( {{y \\over x}} \\right)^2} = x + k$$<br><br>\n$$ \\Rightarrow  - {y^2} = 2{x^3} + 2{x^2}k$$<br><br>\n$$ \\Rightarrow {y^2} + 2{x^3} + c{x^2} = 0$$\n",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 12th April Evening Slot"
+    "title": "JEE Main 2019 (Online) 12th April Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16d5",
@@ -1914,7 +1906,8 @@
     ],
     "solution": "$${({x^2} + 1)^2}{{dy} \\over {dx}} + 2x({x^2} + 1)y = 1$$\n<br><br>$$ \\Rightarrow $$ $${{dy} \\over {dx}} + \\left( {{{2x} \\over {1 + {x^2}}}} \\right)y = {1 \\over {{{\\left( {1 + {x^2}} \\right)}^2}}}$$\n<br><br>I.F = $${e^{\\int {{{2x} \\over {1 + {x^2}}}dx} }} = {e^{\\ln \\left( {1 + {x^2}} \\right)}} = 1 + {x^2}$$\n<br><br>$$ \\therefore $$ $${d \\over {dx}}\\left( {\\left( {1 + {x^2}} \\right)y} \\right) = {1 \\over {1 + {x^2}}}$$\n<br><br>Integrating both sides we get,\n<br><br>$${\\left( {1 + {x^2}} \\right)y}$$ = $${\\tan ^{ - 1}}x$$ + C\n<br><br>When x = 0 then y = 0\n<br><br>So, 0 = 0 + C\n<br><br>$$ \\Rightarrow $$ C = 0\n<br><br>$$ \\Rightarrow $$ $${\\left( {1 + {x^2}} \\right)y}$$ = $${\\tan ^{ - 1}}x$$\n<br><br>Put x = 1,\n<br><br>y.(2) = $${\\pi  \\over 4}$$\n<br><br>$$ \\Rightarrow $$ y = $${\\pi  \\over 8}$$ = y(1)\n<br><br>Given,\n<br><br>$$\\sqrt ay(1)$$ = $$\\pi \\over 32$$\n<br><br>$$ \\Rightarrow $$ $$\\sqrt a. {\\pi  \\over 8}$$ = $$\\pi \\over 32$$\n<br><br>$$ \\Rightarrow $$ $$\\sqrt a  = {1 \\over 4}$$\n<br><br>$$ \\Rightarrow $$ $$a = {1 \\over {16}}$$",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 8th April Morning Slot"
+    "title": "JEE Main 2019 (Online) 8th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16d6",
@@ -1933,21 +1926,8 @@
     ],
     "solution": "If f(xy) = f(x) f(y) $$\\forall $$ x, y $$ \\in $$ R and f(0) $$ \\ne $$ 0\n<br><br>put x = y = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;f(0) = [f(0)]<sup>2</sup>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;f(0) = 1\n<br><br>put y = 0 $$ \\Rightarrow $$&nbsp;f(0) = f(x) f(0)\n<br><br>$$ \\Rightarrow $$&nbsp;f(x) = 1\n<br><br>given that $${{dy} \\over {dx}}$$ = f(x)\n<br><br>$$ \\therefore $$&nbsp;&nbsp;$${{dy} \\over {dx}}$$ = 1 $$ \\Rightarrow $$&nbsp;y = x + k\n<br><br>given that y(0) = 1\n<br><br>$$ \\therefore $$&nbsp;&nbsp;k = 1\n<br><br>hence y = x + 1\n<br><br>y$$\\left( {{1 \\over 4}} \\right)$$ + y$$\\left( {{3 \\over 4}} \\right)$$ = $$\\left( {{1 \\over 4} + 1} \\right)$$ + $$\\left( {{3 \\over 4} + 1} \\right)$$ = 3",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 9th January Evening Slot"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16d7",
-    "question_id": "FOTDnyILdIaAO9Akzr1kjvhbdvv",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "We have,<br><br>$${{dy} \\over {dx}} = (2 + 5y)(5y - 2)$$<br><br>$$ \\Rightarrow {{dy} \\over {25{y^2} - 4}} = dx$$<br><br>$$ \\Rightarrow {1 \\over {25}}\\left( {{{dy} \\over {{y^2} - {4 \\over {25}}}}} \\right) = dx$$<br><br>On integrating both sides, we get<br><br>$${1 \\over {25}}\\int {{{dy} \\over {{y^2} - {{\\left( {{2 \\over 5}} \\right)}^2}}} = \\int {dx} } $$<br><br>$$ \\Rightarrow {1 \\over {25}} \\times {1 \\over {2 \\times 2/5}}\\log \\left| {{{y - 2/5} \\over {y + 2/5}}} \\right| = x + C$$<br><br>$$ \\Rightarrow \\log \\left| {{{5y - 2} \\over {5y + 2}}} \\right| = 20(x + C)$$<br><br>$$ \\Rightarrow \\left| {{{5y - 2} \\over {5y + 2}}} \\right| = A{e^{20x}}$$ [$$ \\because $$ e<sup>20C</sup> = A]<br><br>when x = 0 $$ \\Rightarrow $$ y = 0, then A = 1<br><br>$$ \\therefore $$ $$\\left| {{{5y - 2} \\over {5y + 2}}} \\right| = {e^{20x}}$$<br><br>$$\\mathop {\\lim }\\limits_{x \\to  - \\infty } \\left| {{{5f(x) - 2} \\over {5f(x) + 2}}} \\right| = \\mathop {\\lim }\\limits_{x \\to  - \\infty } {e^{20x}}$$<br><br>$$ \\Rightarrow \\mathop {\\lim }\\limits_{n \\to  - \\infty } \\left| {{{5f(x) - 2} \\over {5f(x) + 2}}} \\right| = 0$$<br><br>$$ \\Rightarrow \\mathop {\\lim }\\limits_{n \\to  - \\infty } 5f(x) - 2 = 0$$<br><br>$$ \\Rightarrow \\mathop {\\lim }\\limits_{n \\to  - \\infty } f(x) = {2 \\over 5} = 0.4$$",
-    "__v": 0,
-    "title": "JEE Advanced 2018 Paper 2 Offline"
+    "title": "JEE Main 2019 (Online) 9th January Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16d8",
@@ -1966,7 +1946,8 @@
     ],
     "solution": "(x<sup>2</sup> $$-$$ y<sup>2</sup>) dx + 2xydy = 0\n<br><br>$$ \\Rightarrow $$&nbsp;$${{dy} \\over {dx}}$$ = $${{{y^2} - {x^2}} \\over {2xy}}$$\n<br><br>Let y = vx\n<br><br>$${{dy} \\over {dx}}$$ = v + x $${{dv} \\over {dx}}$$\n<br><br>$$ \\Rightarrow $$&nbsp; v + x$${{dv} \\over {dx}}$$ = $${{{v^2}{x^2} - {x^2}} \\over {2v{x^2}}}$$ $$ \\Rightarrow $$&nbsp;v + x$${{dv} \\over {dx}}$$ = $${{{v^2} - 1} \\over {2v}}$$\n<br><br>$$ \\Rightarrow $$&nbsp; x$${{dv} \\over {dx}}$$ = $${{ - {v^2} - 1} \\over {2v}}$$\n<br><br>$$ \\Rightarrow $$&nbsp; $${{2vdv} \\over {{v^2} + 1}}$$ = $$-$$ $${{dx} \\over x}$$\n<br><br>After intergrating, we get \n<br><br>$$\\ln \\left| {{v^2} + 1} \\right|$$ = $$-$$ ln$$\\left| x \\right|$$ + lnc\n<br><br>$${{y{}^2} \\over {{x^2}}}$$ + 1 = $${c \\over x}$$\n<br><br>As curve passes through the point (1, 1), so 1 + 1 = c\n<br><br>$$ \\Rightarrow $$&nbsp; c = 2\n<br><br>x<sup>2</sup> + y<sup>2</sup> $$-$$ 2x = 0, which is a circle of radius one. ",
     "__v": 0,
-    "title": "JEE Main 2018 (Online) 15th April Evening Slot"
+    "title": "JEE Main 2018 (Online) 15th April Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16d9",
@@ -1985,71 +1966,8 @@
     ],
     "solution": "When x $$ \\in $$ [0, 1], then $${{dy} \\over {dx}}$$ + 2y = 1&nbsp;\n<br><br>$$ \\Rightarrow $$&nbsp;y =  $${1 \\over 2}$$ + C<sub>1</sub>e<sup>$$-$$2x</sup>\n<br><br>$$ \\because $$ y(0) = 0 $$ \\Rightarrow $$ y(x) = $${1 \\over 2}$$ $$-$$ $${1 \\over 2}$$e<sup>$$-$$2x</sup>\n<br><br>Here, y(1) = $${1 \\over 2}$$ $$-$$ $${1 \\over 2}$$ e<sup>$$-$$2</sup> = $${{{e^2} - 1} \\over {2{e^2}}}$$\n<br><br>When $$x \\notin \\left[ {0,1} \\right]$$, then $${{dy} \\over {dx}}$$ + 2y = 0 $$ \\Rightarrow $$  y = c<sub>2</sub> e<sup>$$-$$2x</sup>\n<br><br>$$ \\because $$&nbsp; y(1) = $${{{e^2} - 1} \\over 2}$$ $$ \\Rightarrow $$  $${{{e^2} - 1} \\over 2}$$ = c<sup>2</sup>e<sup>$$-$$2</sup> $$ \\Rightarrow $$&nbsp;C<sub>2</sub> = $${{{e^2} - 1} \\over 2}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;y(x) $$\\left( {{{{e^2} - 1} \\over 2}} \\right){e^{ - 2x}} \\Rightarrow y\\left( {{3 \\over 2}} \\right)$$ = $${{{e^2} - 1} \\over {2{e^3}}}$$",
     "__v": 0,
-    "title": "JEE Main 2018 (Online) 15th April Morning Slot"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16da",
-    "question_id": "DoIUpuVQsFrTDWQX1c1kjy0fk2o",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "16",
-      "3",
-      "9",
-      "80"
-    ],
-    "solution": "$${{dy} \\over {dx}} = {1 \\over {8\\sqrt x  + \\sqrt {9 + \\sqrt x } \\sqrt {4 + \\sqrt {9 + \\sqrt x } } }}$$<br><br>$$ \\Rightarrow y = \\sqrt {4 + \\sqrt { + \\sqrt x } }  + c$$<br><br>Now, $$y(0) = \\sqrt 7  + c$$<br><br>$$ \\Rightarrow c = 0$$<br><br>$$y(256) = \\sqrt {4 + \\sqrt {9 + \\sqrt {16} } }  = \\sqrt {4 + 5}  = 3$$",
-    "__v": 0,
-    "title": "JEE Advanced 2017 Paper 2 Offline"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16db",
-    "question_id": "zYowBa7N8hymNQ7iAK1kjy5of7w",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$$g'\\left( { - {\\pi  \\over 2}} \\right) = 0$$",
-      "$$g'\\left( { - {\\pi  \\over 2}} \\right) =  - 2\\pi $$",
-      "$$g'\\left( {{\\pi  \\over 2}} \\right) = 2\\pi $$",
-      "$$g'\\left( {{\\pi  \\over 2}} \\right) = 0$$"
-    ],
-    "solution": "$$g(x) = \\int_{\\sin x}^{\\sin (2x)} {{{\\sin }^{ - 1}}} (t)\\,dt$$<br><br>g'(x) = 2cos 2x sin<sup>$$-$$1</sup>(sin2 x) $$-$$ cos x sin<sup>$$-$$1</sup>(sin x)<br><br>$$g'\\left( {{\\pi  \\over 2}} \\right) =  - 2{\\sin ^{ - 1}}(0) = 0$$<br><br>$$g'\\left( { - {\\pi  \\over 2}} \\right) =  - 2{\\sin ^{ - 1}}(0) = 0$$<br><br>No option is matching.",
-    "__v": 0,
-    "title": "JEE Advanced 2017 Paper 2 Offline"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16dc",
-    "question_id": "bRHrhKQ418ysiBiI",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "hard",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "intersects $$y=x+2$$ exactly at one point ",
-      "intersects $$y=x+2$$ exactly at two points ",
-      "intersects $$y = {\\left( {x + 2} \\right)^2}$$",
-      "does NOT intersect $$\\,y = {\\left( {x + 3} \\right)^2}$$ "
-    ],
-    "solution": "<b>Options (A) and (B)</b>: The given differential equation is<br><br>\n$$\n\\left[x^2+4 x+4+y(x+2)\\right] \\frac{d y}{d x}-y^2=0 \\quad(x&gt;0)\n$$<br><br>\nwhich is further simplified as follows:<br><br>\n$$\n\\left[(x+2)^2+y(x+2)\\right] \\frac{d y}{d x}-y^2=0\n$$<br><br>\nSubstituting $x+2=t$, we get<br><br>\n$$\n\\frac{d x}{d y}=\\frac{d t}{d y}\n$$<br><br>\nNow,<br><br>\n$$\n(x+2)^2+y(x+2)-y^2 \\frac{d x}{d y}=0\n$$<br><br>\nThat is,<br><br>\n$$\n\\begin{aligned}\n&amp;t^2+y t-y^2 \\frac{d t}{d y}  =0 \\\\\\\\\n&amp;y^2 \\frac{d t}{d y}-y t-t^2 =0 \\\\\\\\\n&amp;\\frac{1}{t^2} \\frac{d t}{d y}-\\frac{1}{y t} =\\frac{1}{y^2}\n\\end{aligned}\n$$<br><br>\nLet $\\frac{1}{t}=z$; therefore,<br><br>\n$$\n\\frac{d t}{d y}\\left(-\\frac{1}{t^2}\\right)=\\frac{d z}{d y}\n$$<br><br>\nNow, <br><br>$\\begin{aligned} \\frac{-d z}{d y}-\\frac{z}{y} &amp; =\\frac{1}{y^2} \\Rightarrow \\frac{d z}{d y}+\\frac{z}{y}=\\frac{-1}{y^2} \\\\\\\\ \\Rightarrow d(z y) &amp; =\\int-\\frac{1}{y} d y \\\\\\\\ \\Rightarrow z y &amp; =-\\ln |y|+\\ln c \\\\\\\\ \\Rightarrow \\frac{y}{t} &amp; =-\\ln |y|+\\ln c\\end{aligned}$\n<br><br>\n$$\n\\Rightarrow \\frac{y}{(x+2)}=-\\ln |y|+\\ln c ~~~~~...(1)\n$$<br><br>\nwhich passes through the point $(1,3)$. Therefore, from Eq. (1), we get<br><br>\n$$\n\\begin{aligned}\n &amp;\\frac{z}{3} =-\\ln 3+c \\Rightarrow c=\\ln 3 e \\\\\\\\\n &amp;\\frac{y}{x+2} =-\\ln |y|+\\ln 3 e=\\ln \\left(\\frac{3 e}{|y|}\\right) \\\\\\\\\n &amp;\\frac{3 e}{|y|} =e^{y /(x+2)} \\\\\\\\\n &amp;3 e =|y| e^{y /(x+2)}\n\\end{aligned}\n$$<br><br>\nSubstituting $y=(x+2)$, we get $3 e=|x+2| e^1$<br><br>\n$$\n|x+2|=3 \\Rightarrow x+2=-3,3 \\Rightarrow x=-5,1\n$$<br><br>\nTherefore, $x=1$ (since $x \\neq-5)$.<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1li7g4cgv/fb8c8272-38a3-48ac-afd4-50099912575f/0a423af0-fd5a-11ed-9057-a7f9a0e389da/file-1li7g4cgw.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1li7g4cgv/fb8c8272-38a3-48ac-afd4-50099912575f/0a423af0-fd5a-11ed-9057-a7f9a0e389da/file-1li7g4cgw.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Advanced 2016 Paper 1 Offline Mathematics - Differential Equations Question 30 English Explanation\"><br>\nThat is, the solution curve intersects $y=(x+2)$ exactly at one point and not at two points. Therefore, option (A) is correct and option (B) is incorrect.<br><br>\n<b>Option (C)</b>: We have<br><br>\n$$\n\\frac{3 e}{\\left|(x+2)^2\\right|}=e^{(x+2)}\n$$<br><br>\nwhich meets at two points for $x&lt;0$ and for $x&gt;0$, there is no intersection point.<br><br>\nHence, option $(\\mathrm{C})$ is incorrect.<br><br>\n<b>Option (D)</b>: We have<br><br>\n$$\n\\frac{3 e}{(x+3)^2}=e^{\\frac{(x+3)^2}{(x+2)}}=e^{\\frac{(x+2)^2+1+2(x+2)}{(x+2)}}=e^{2+\\frac{1}{(x+2)}+(x+2)}\n$$<br><br>\nTherefore, there is no intersection point for $x&gt;0$. Hence option (D) is correct.",
-    "__v": 0,
-    "title": "JEE Advanced 2016 Paper 1 Offline",
-    "type": "MULTIPLE_CORRECT",
-    "correctOptionsArray": [
-      0,
-      3
-    ],
-    "correctOptionIndex": 0,
-    "correctOption": 0
+    "title": "JEE Main 2018 (Online) 15th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16dd",
@@ -2068,7 +1986,8 @@
     ],
     "solution": "$$y\\left( {1 + xy} \\right)dx = xdy$$\n<br><br>$${{xdy - ydx} \\over {{y^2}}} = xdx \\Rightarrow \\int { - d\\left( {{x \\over y}} \\right) = \\int {xdx} } $$ \n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$ - {x \\over y} = {{{x^2}} \\over 2} + C\\,\\,$$ \n<br><br>as $$\\,\\,\\,y\\left( 1 \\right) =  - 1 \\Rightarrow C = {1 \\over 2}$$\n<br><br>Hence, $$y = {{ - 2x} \\over {{x^2} + 1}} \\Rightarrow f\\left( {{{ - 1} \\over 2}} \\right) = {4 \\over 5}$$",
     "__v": 0,
-    "title": "JEE Main 2016 (Offline)"
+    "title": "JEE Main 2016 (Offline)",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16de",
@@ -2087,7 +2006,8 @@
     ],
     "solution": "$$\\mathop {\\lim }\\limits_{t \\to x} {{{t^2}f\\left( x \\right) - {x^2}f\\left( t \\right)} \\over {t - x}} = 1$$\n<br><br>It is in $${0 \\over 0}$$ form\n<br><br>So, applying L' Hospital rule,\n<br><br>$$\\mathop {\\lim }\\limits_{t \\to x} {{2tf\\left( x \\right) - {x^2}f'\\left( x \\right)} \\over 1} = 1$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;2xf(x) $$-$$ x<sup>2</sup>f '(x) = 1\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;f '(x) $$-$$ $${2 \\over x}$$f(x) $$=$$ $${1 \\over {{x^2}}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;I.F =  $${e^{\\int {{{ - 2} \\over x}dx} }} = {e^{ - 2\\log x}} = {1 \\over {{x^2}}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Solution of equation,\n<br><br>f(x)$${1 \\over {{x^2}}}$$ = $$\\int {{1 \\over x}\\left( { - {1 \\over {{x^2}}}} \\right)} \\,dx$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${{f(x)} \\over {{x^2}}} = {1 \\over {3{x^3}}} + C$$\n<br><br>Given that,\n<br><br>f(1) = 1\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$${1 \\over 1}$$ = $${1 \\over 3}$$ + C\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;C $$=$$ $${2 \\over 3}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;f(x) $$=$$  $${2 \\over 3}$$ x<sup>2</sup> + $${1 \\over {3x}}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;f$$\\left( {{3 \\over 2}} \\right) = {2 \\over 3} \\times {\\left( {{3 \\over 2}} \\right)^2} + {1 \\over 3} \\times {2 \\over 3} = {{31} \\over {18}}$$",
     "__v": 0,
-    "title": "JEE Main 2016 (Online) 9th April Morning Slot"
+    "title": "JEE Main 2016 (Online) 9th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16df",
@@ -2106,26 +2026,8 @@
     ],
     "solution": "Given differential equation is \n<br><br>$${{dp\\left( t \\right)} \\over {dt}} = {1 \\over 2}p\\left( t \\right) - 200$$\n<br><br>By separating the variable, we get \n<br><br>$$dp\\left( t \\right) = \\left[ {{1 \\over 2}p\\left( t \\right) - 200} \\right]dt$$\n<br><br>$$ \\Rightarrow {{dp\\left( t \\right)} \\over {{1 \\over 2}p\\left( t \\right) - 200}} = dt$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ Integrating on both the sides,\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\int {{{d\\left( {p\\left( t \\right)} \\right)} \\over {{1 \\over 2}p\\left( t \\right) - 200}}}  = \\int {dt} $$\n<br><br>Let $${1 \\over 2}p\\left( t \\right) - 200 = s \\Rightarrow {{dp\\left( t \\right)} \\over 2} = ds$$\n<br><br>So, $$\\int {{{d\\,p\\left( t \\right)} \\over {\\left( {{1 \\over 2}p\\left( t \\right) - 200} \\right)}}}  = \\int {dt} $$\n<br><br>$$ \\Rightarrow \\int {{{2ds} \\over s} = \\int {dt} }  \\Rightarrow 2\\log s = t + c$$\n<br><br>$$ \\Rightarrow 2\\log \\left( {{{p\\left( t \\right)} \\over 2} - 200} \\right) = t + c$$\n<br><br>$$ \\Rightarrow {{p\\left( t \\right)} \\over 2} - 200 = {e^{{1 \\over 2}}}k$$\n<br><br>Using given condition $$p\\left( t \\right) = 400 - 300{e^{t/2}}$$",
     "__v": 0,
-    "title": "JEE Main 2014 (Offline)"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16e0",
-    "question_id": "RAdycwC4rYEDFR49",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "easy",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$$sin\\left( {{y \\over x}} \\right) = \\log x + {1 \\over 2}$$ ",
-      "$$cos\\,ec\\left( {{y \\over x}} \\right) = \\log x + 2$$ ",
-      "$$\\,s\\,ec\\left( {{{2y} \\over x}} \\right) = \\log x + 2\\,$$ ",
-      "$$\\,cos\\left( {{{2y} \\over x}} \\right) = \\log x + {1 \\over 2}$$ "
-    ],
-    "solution": "<p>Given, the slope of curve at $$(x,y)$$ is</p>\n<p>$$\\begin{aligned}\n& \\frac{y}{x}+\\sec \\left(\\frac{y}{x}\\right), x>0 . \\\\\n\\therefore \\quad & \\frac{d y}{d x}=\\frac{y}{x}+\\sec \\left(\\frac{y}{x}\\right) \\quad \\text{... (i)}\n\\end{aligned}$$</p>\n<p>Put $$y=v x \\Rightarrow \\frac{d y}{d x}=v+x \\frac{d v}{d x}$$ in the equation (i)</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\quad v+x \\frac{d v}{d x}=\\frac{v x}{x}+\\sec \\left(\\frac{v x}{x}\\right) \\\\\n& \\Rightarrow \\quad v+x \\frac{d v}{d x}=v+\\sec (v) \\\\\n& \\Rightarrow \\quad x \\frac{d v}{d x}=\\sec v \\\\\n& \\Rightarrow \\quad \\cos v d v=\\frac{d x}{x} \\\\\n& \\Rightarrow \\quad \\int \\cos v d v=\\int \\frac{d x}{x} \\\\\n& \\Rightarrow \\quad \\sin v=\\ln x+c \\\\\n& \\Rightarrow \\quad \\sin \\left(\\frac{y}{x}\\right)=\\ln x+c \\quad \\text{... (i)}\n\\end{aligned}$$</p>\n<p>Put $$x=1$$ and $$y=\\frac{\\pi}{6}$$ in the equation (ii)</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & & \\sin \\frac{\\pi}{6} & =\\log 1+c \\\\\n\\Rightarrow & & \\frac{1}{2} & =0+c \\\\\n\\Rightarrow & & c & =\\frac{1}{2}\n\\end{aligned}$$</p>\n<p>Put $$c=\\frac{1}{2}$$ in the equation (ii)</p>\n<p>$$\\Rightarrow \\quad \\sin \\frac{y}{x}=\\log x+\\frac{1}{2}$$</p>\n<p>Hints:</p>\n<p>(i) the slope of a curve at $$(x, y)$$ is equal to $$\\frac{d y}{d x}$$</p>\n<p>(ii) For the solution of homogeneous differential equation $$\\frac{d y}{d x}=f\\left(\\frac{y}{x}\\right)$$ put $$y=v x$$ i.e. $$\\frac{d y}{d x}=v+x \\frac{d v}{d x}$$.</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2013 Paper 1 Offline"
+    "title": "JEE Main 2014 (Offline)",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16e1",
@@ -2144,7 +2046,8 @@
     ],
     "solution": "Given, Rate of change is $${{dp} \\over {dx}} = 100 - 12\\sqrt x $$\n<br><br>$$ \\Rightarrow dP = \\left( {100 - 12\\sqrt x } \\right)dx$$\n<br><br>By intergrating $$\\int {dP = \\int {\\left( {100 - 12\\sqrt x } \\right)} } dx$$\n<br><br>$$\\int {dP}  = \\int {\\left( {100 - 12\\sqrt x } \\right)} dx$$\n<br><br>$$P = 100x - 8{x^{3/2}} + C$$\n<br><br>Given, when $$x=0$$ then $$P=2000$$ \n<br><br>$$ \\Rightarrow C = 2000$$\n<br><br>Now when $$x$$$$=25$$ \n<br><br>then $$P = 100 \\times 25 - 8 \\times {\\left( {25} \\right)^{3/2}} + 2000$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$=4500-1000$$\n<br><br>$$ \\Rightarrow P = 3500$$",
     "__v": 0,
-    "title": "JEE Main 2013 (Offline)"
+    "title": "JEE Main 2013 (Offline)",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16e2",
@@ -2163,7 +2066,8 @@
     ],
     "solution": "Given differential equation is \n<br><br>$${{dp\\left( t \\right)} \\over {dt}} = 0.5p\\left( t \\right) - 450$$\n<br><br>$$ \\Rightarrow {{dp\\left( t \\right)} \\over {dt}} = {1 \\over 2}p\\left( t \\right) - 450$$\n<br><br>$$ \\Rightarrow {{dp\\left( t \\right)} \\over {dt}} = {{p\\left( t \\right) - 900} \\over 2}$$\n<br><br>$$ \\Rightarrow 2{{dp\\left( t \\right)} \\over {dt}} = \\left[ {900 - p\\left( t \\right)} \\right]$$\n<br><br>$$ \\Rightarrow 2{{dp\\left( t \\right)} \\over {900 - p\\left( t \\right)}} =  - dt$$\n<br><br>Integrate both sides, we get \n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, - 2\\int {{{dp\\left( t \\right)} \\over {900 - p\\left( t \\right)}}}  = \\int {dt} $$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,Let\\,\\,900 - p\\left( t \\right) = u$$\n<br><br>$$ \\Rightarrow  - dp\\left( t \\right) = du$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,\\,$$ We have, \n<br><br>$$2\\int {{{du} \\over u}}  = \\int {dt \\Rightarrow 2\\,\\ln \\,u = t + c} $$\n<br><br>$$ \\Rightarrow 2\\ln \\left[ {900 - p\\left( t \\right)} \\right] = t + c$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ when $$t = 0,p\\left( 0 \\right) = 850$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,$$ $$2\\ln \\left( {50} \\right) = c$$\n<br><br>$$ \\Rightarrow 2\\left[ {\\ln \\left( {{{900 - p\\left( t \\right)} \\over {50}}} \\right)} \\right] = t$$\n<br><br>$$ \\Rightarrow 900 - p\\left( t \\right) = 50{e^{{t \\over 2}}}$$\n<br><br>$$ \\Rightarrow p\\left( t \\right) = 900 - 50{e^{{t \\over 2}}}$$\n<br><br>Let $$p\\left( {{t_1}} \\right) = 0$$\n<br><br>$$0 = 900 - 50{e^{{{{t_1}} \\over 2}}}$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,\\,{t_1} = 2\\ln 18$$ ",
     "__v": 0,
-    "title": "AIEEE 2012"
+    "title": "AIEEE 2012",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16e3",
@@ -2182,21 +2086,8 @@
     ],
     "solution": "$${{dV\\left( t \\right)} \\over {dt}} =  - k\\left( {T - t} \\right)$$\n<br><br>$$ \\Rightarrow \\int {dVt}  =  - k\\int {\\left( {T - t} \\right)} dt$$\n<br><br>$$V\\left( t \\right) = {{k{{\\left( {T - t} \\right)}^2}} \\over 2} + c$$\n<br><br>$$V\\left( 0 \\right) = I \\Rightarrow I = {{K{T^2}} \\over 2} + C$$\n<br><br>$$ \\Rightarrow C = I - {{K{T^2}} \\over 2}$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,\\,V\\left( T \\right) = 0 + C = I - {{K{T^2}} \\over 2}$$",
     "__v": 0,
-    "title": "AIEEE 2011"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16e4",
-    "question_id": "1l2sm02eo",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "<p>It is given that</p>\n<p>$$6\\int\\limits_1^x {f(t)dt = 3xf(x) - {x^3}} - 5$$</p>\n<p>$$ \\Rightarrow 6f(x) = 3f(x) + 3xf'(x) - 3{x^2}$$</p>\n<p>$$ \\Rightarrow 3f(x) = 3xf'(x) - 3{x^2} \\Rightarrow xf'(x) - f(x) = {x^2}$$</p>\n<p>$$ \\Rightarrow x{{dy} \\over {dx}} - y = {x^2} \\Rightarrow {{dy} \\over {dx}} - {1 \\over x}y = x$$ .... (1)</p>\n<p>Now, $$I.F. = {e^{\\int { - {1 \\over x}dx} }} = {e^{ - {{\\log }_e}x}}$$</p>\n<p>Multiplying Eq. (1) both sides by $${1 \\over x}$$, we get</p>\n<p>$${1 \\over x}{{dy} \\over {dx}} - {1 \\over {{x^2}}}y = 1 \\Rightarrow {d \\over {dx}}\\left( {y.{1 \\over x}} \\right) = 1$$</p>\n<p>Integrating, we get</p>\n<p>$${y \\over x} = x + c$$</p>\n<p>Substituting x = 1 and y = 2, we get</p>\n<p>$$ \\Rightarrow 2 = 1 + c \\Rightarrow c = 1 \\Rightarrow y = {x^2} + x$$</p>\n<p>$$ \\Rightarrow f(x) = {x^2} + x \\Rightarrow f(2) = 6$$</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2011 Paper 1 Offline"
+    "title": "AIEEE 2011",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16e5",
@@ -2215,45 +2106,8 @@
     ],
     "solution": "$$\\cos xdy = y\\left( {\\sin x - y} \\right)dx$$\n<br><br>$${{dy} \\over {dx}} = y\\tan x - {y^2}\\,\\,\\sec \\,x$$\n<br><br>$${1 \\over {{y^2}}}{{dy} \\over {dx}} - {1 \\over y}\\,\\tan \\,x =  - \\sec \\,x\\,....\\left( i \\right)$$\n<br><br>Let $$\\,\\,\\,\\,{1 \\over y} = t \\Rightarrow  - {1 \\over {{y^2}}}{{dy} \\over {dx}} = {{dt} \\over {dx}}$$\n<br><br>From equation $$(i)$$ \n<br><br>$$ - {{dt} \\over {dx}} - \\tan x =  - \\sec x$$\n<br><br>$$ \\Rightarrow {{dt} \\over {dx}} + \\left( {\\tan x} \\right)t = \\sec x$$\n<br><br>$${\\rm I}.F. = {e^{\\int {\\tan xdx} }} = {\\left( e \\right)^{\\log \\left| {\\sec x} \\right|}}\\sec x$$\n<br><br>Solution $$:$$ $$\\,\\,t\\left( {{\\rm I}.F} \\right) = \\int {\\left( {{\\rm I}.F} \\right)\\sec xdx} $$\n<br><br>$$ \\Rightarrow {1 \\over y}\\sec x = \\tan x + c$$",
     "__v": 0,
-    "title": "AIEEE 2010"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16e6",
-    "question_id": "uv1ib8L3dJo5Df1Y",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "hard",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "(A)$$\\to$$(P), (Q), (S); (B)$$\\to$$(P), (T), (S); (C)$$\\to$$(P), (Q), (R), (T); (D)$$\\to$$(S)",
-      "(A)$$\\to$$(P), (Q), (S); (B)$$\\to$$(P), (T), (R); (C)$$\\to$$(P), (Q), (R), (T); (D)$$\\to$$(R)",
-      "(A)$$\\to$$(P), (Q), (S); (B)$$\\to$$(P), (T), (S); (C)$$\\to$$(S), (Q), (R), (T); (D)$$\\to$$(S)",
-      "(A)$$\\to$$(P), (T), (S); (B)$$\\to$$(P), (T), (S); (C)$$\\to$$(P), (Q), (R), (T); (D)$$\\to$$(S)"
-    ],
-    "solution": "<p>(A) We have $${(x - 3)^2}{{dy} \\over {dx}} + y = 0$$</p>\n<p>$$\\int {{{dx} \\over {{{(x - 3)}^2}}} =  - \\int {{{dy} \\over y}} } $$</p>\n<p>$$ \\Rightarrow {1 \\over {x - 3}} = \\ln |y| + c$$</p>\n<p>So the domain is $$R \\to \\{ 3\\} $$.</p>\n<p>(B) On substituting $$x = t + 3$$, we get</p>\n<p>$$\\int\\limits_{ - 2}^2 {(t + 2)(t + 1)t(t - 1)(t - 2)dt = \\int\\limits_{ - 2}^2 {t({t^2} - 1)({t^2} - 4)dt = 0} } $$ (being odd function)</p>\n<p>(C) $$f(x) = {5 \\over 4} - {\\left( {\\sin x - {1 \\over 2}} \\right)^2}$$</p>\n<p>The maximum value occurs when $$\\sin x = 1/2$$.</p>\n<p>(D) $$f'(x) > 0$$ if $$\\cos x > \\sin x$$.</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2009 Paper 1 Offline"
-  },
-  {
-    "_id": "6a2bdca02762cf4b576a16e7",
-    "question_id": "mszO1KF7rYzvMbyn",
-    "chapterId": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "subject": "Mathematics",
-    "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "STATEMENT-1 is True, STATEMENT-2 is True;STATEMENT-2 is a correct explanation for STATEMENT-1",
-      "STATEMENT-1 is True, STATEMENT-2 is True;STATEMENT-2 is <b>NOT</b> a correct explanation for STATEMENT-1",
-      "STATEMENT-1 is True, STATEMENT-2 is False",
-      "STATEMENT-1 is False , STATEMENT-2 is True"
-    ],
-    "solution": "<p>The given differential equation is</p>\n<p>$$x\\sqrt {{x^2} - 1} dy - y\\sqrt {{y^2} - 1} dx = 0$$</p>\n<p>$$ = \\int {{{dy} \\over {y\\sqrt {{y^2} - 1} }} = \\int {{{dx} \\over {x\\sqrt {{x^2} - 1} }}} } $$</p>\n<p>$$ \\Rightarrow {\\sec ^{ - 1}}y = {\\sec ^{ - 1}}x + c$$</p>\n<p>$$y = \\sec [{\\sec ^{ - 1}}x + C]$$ [$$\\because$$ $$y(2) = {2 \\over {\\sqrt 3 }}$$]</p>\n<p>$${2 \\over {\\sqrt 3 }} = \\sec ({\\sec ^{ - 1}}2 + C)$$</p>\n<p>$$ = {\\sec ^{ - 1}}{2 \\over {\\sqrt 3 }} - {\\sec ^{ - 1}}2 = C$$</p>\n<p>$$C = {\\pi  \\over 6} - {\\pi  \\over 3} = {{ - \\pi } \\over 6}$$ [$$\\therefore$$ $$y = \\sec \\left[ {{{\\sec }^{ - 1}}x - {\\pi  \\over 6}} \\right]$$]</p>\n<p>Statement 1 is true</p>\n<p>Also, $${1 \\over y} = \\cos \\left[ {\\cos  - {\\pi  \\over x} - {\\pi  \\over 6}} \\right]$$</p>\n<p>$$\\cos \\left( {{{\\cos }^{ - 1}}{1 \\over x}} \\right)\\cos {\\pi  \\over 6} + \\sin ({\\cos ^{ - 1}}{1 \\over x})\\sin {\\pi  \\over 6}$$</p>\n<p>$$ = {1 \\over y} = {{\\sqrt 3 } \\over {2x}} + {1 \\over 2}\\sqrt {1 - {1 \\over {{x^2}}}} $$</p>\n<p>$$\\therefore$$ Statement 2 is false.</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2008 Paper 2 Offline"
+    "title": "AIEEE 2010",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16e8",
@@ -2272,7 +2126,8 @@
     ],
     "solution": "$${{xdy} \\over {dx}} = y\\left( {\\log y - \\log x + 1} \\right)$$\n<br><br>$${{dy} \\over {dx}} = {y \\over x}\\left( {\\log \\left( {{y \\over x}} \\right) + 1} \\right)$$\n<br><br>Put $$\\,\\,\\,\\,y = vx$$\n<br><br>$${{dy} \\over {dx}} = v + {{xdv} \\over {dx}}$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, \\Rightarrow v + {{xdv} \\over {dx}} = v\\left( {\\log v + 1} \\right)$$\n<br><br>$${{xdv} \\over {dx}} = v\\,\\log \\,v$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, \\Rightarrow {{dv} \\over {v\\,\\log \\,v}} = {{dx} \\over x}$$ \n<br><br>Put $$\\,\\,\\,\\,\\log \\,v = z$$\n<br><br>$$ \\Rightarrow {1 \\over v}dv = dz$$\n<br><br>$$ \\Rightarrow {{dz} \\over x} = {{dx} \\over x}$$\n<br><br>$$ \\Rightarrow \\ln \\,z = \\ln x + \\ln \\,c$$\n<br><br>$$x = cx\\,\\,\\,\\,$$ or $$\\,\\,\\,\\,\\,\\log v = cx\\,\\,\\,$$ \n<br><br>or $$\\,\\,\\,\\,$$ $$\\log \\left( {{y \\over x}} \\right) = cx.$$",
     "__v": 0,
-    "title": "AIEEE 2005"
+    "title": "AIEEE 2005",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16e9",
@@ -2291,7 +2146,8 @@
     ],
     "solution": "$$ydx + \\left( {x + {x^2}y} \\right)dy = 0$$\n<br><br>$$ \\Rightarrow {{dx} \\over {dy}} =  - {x \\over y} - {x^2}$$\n<br><br>$$ \\Rightarrow {{dx} \\over {dy}} + {x \\over y} =  - {x^2},$$\n<br><br>It is Bernoullis form. Divide by $${x^2}$$\n<br><br>$${x^{ - 2}}{{dx} \\over {dy}} + {x^{ - 1}}\\left( {{1 \\over y}} \\right) =  - 1.$$\n<br><br>put $${x^{ - 1}} = t,\\,\\, - {x^{ - 2}}{{dx} \\over {dy}} = {{dt} \\over {dy}}$$\n<br><br>We get, $$ - {{dt} \\over {dy}} + t\\left( {{1 \\over y}} \\right) =  - 1$$\n<br><br>$$ \\Rightarrow {{dt} \\over {dy}} - \\left( {{1 \\over y}} \\right)t = 1$$\n<br><br>It is linear in $$t.$$ \n<br><br>Integrating factor \n<br><br>$$ = {e^{\\int { - {1 \\over y}dy} }} = {e^{ - \\log y}} = {y^{ - 1}}$$\n<br><br>$$\\therefore$$ Solution is \n<br><br>$$t\\left( {{y^{ - 1}}} \\right) = \\int {\\left( {{y^{ - 1}}} \\right)} dy + c$$\n<br><br>$$ \\Rightarrow {1 \\over x}.{1 \\over y} = \\log y + c$$\n<br><br>$$ \\Rightarrow \\log y - {1 \\over {xy}} = c$$",
     "__v": 0,
-    "title": "AIEEE 2004"
+    "title": "AIEEE 2004",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdca02762cf4b576a16ea",
@@ -2310,6 +2166,7 @@
     ],
     "solution": "$${{{a^2}y} \\over {d{x^2}}} = {e^{ - 2x}};{\\mkern 1mu} $$\n<br><br>$${{dy} \\over {dx}} = {{{e^{ - 2x}}} \\over { - 2}} + c;$$\n<br><br>$$y = {{{e^{ - 2x}}} \\over 4} + cx + d$$ ",
     "__v": 0,
-    "title": "AIEEE 2002"
+    "title": "AIEEE 2002",
+    "exam": "JEE Main"
   }
 ]

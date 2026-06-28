@@ -1,36 +1,33 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs');
+import puppeteer from 'puppeteer';
+import fs from 'fs';
 
 (async () => {
   console.log('Launching browser...');
-  const browser = await puppeteer.launch({ headless: "new" });
+  const browser = await puppeteer.launch({ 
+    headless: 'new',
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
   
-  // Set a realistic user agent
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36');
+  await page.setViewport({ width: 1280, height: 800 });
   
-  console.log('Navigating to ExamGoal login...');
-  await page.goto('https://www.examgoal.com/login', { waitUntil: 'networkidle2' });
-  
-  console.log('Attempting to log in...');
+  console.log('Navigating...');
   try {
-    // Wait for the login form elements (we'll need to guess the selectors or try common ones)
-    // ExamGoal login might use input[type="text"] or input[name="mobile"]
-    await page.waitForSelector('input[type="text"], input[type="tel"], input[name="email"]', { timeout: 5000 });
-    
-    // We will dump the page HTML to see the structure if this fails
-    console.log('Login form found, but we need to know the exact selectors.');
-    
-    // As a first attempt, we'll just save the HTML to inspect the login page structure
-    const html = await page.content();
-    fs.writeFileSync('examgoal_login.html', html);
-    console.log('Saved examgoal_login.html for inspection.');
-
-  } catch (err) {
-    console.error('Failed to find login form:', err.message);
-    const html = await page.content();
-    fs.writeFileSync('examgoal_error.html', html);
+    await page.goto('https://room.examgoal.com/tests/series/tsr-19g61mnpryz1v', { waitUntil: 'domcontentloaded', timeout: 30000 });
+  } catch (e) {
+    console.error('Error during goto:', e.message);
   }
-
+  
+  console.log('Waiting 10 seconds for page data to load...');
+  await new Promise(r => setTimeout(r, 10000));
+  
+  const text = await page.evaluate(() => {
+    return document.body.innerText;
+  });
+  
+  fs.writeFileSync('examgoal_text.txt', text);
+  console.log('Saved to examgoal_text.txt');
+  
   await browser.close();
 })();

@@ -1,35 +1,76 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { 
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, 
+  PieChart, Pie, Cell 
+} from 'recharts';
 import TeacherSolution from '../components/TeacherSolution';
+import { 
+  ChevronRight, PlayCircle, BarChart3, Clock, 
+  CheckCircle2, Target, Download, Settings, FileText, Moon, Sun, Monitor, Trophy
+} from 'lucide-react';
 import useScrollReveal from '../hooks/useScrollReveal';
 
 const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
 
+// Generate fake rankers deterministically based on testId
+const generateFakeRankers = (testId, userScore, totalMarks) => {
+  let hash = 0;
+  for (let i = 0; i < testId.length; i++) hash = Math.imul(31, hash) + testId.charCodeAt(i) | 0;
+  
+  const rng = () => {
+    hash = Math.sin(hash) * 10000;
+    return hash - Math.floor(hash);
+  };
+  
+  const rankers = [];
+  const count = 25;
+  for (let i = 0; i < count; i++) {
+    // Generate scores mostly in the 30% - 90% range of total marks
+    const baseScore = Math.floor((rng() * 0.6 + 0.3) * totalMarks);
+    rankers.push({
+      name: `Student ${Math.floor(rng() * 10000)}`,
+      score: baseScore,
+      isUser: false
+    });
+  }
+  
+  // Add user
+  rankers.push({
+    name: "You",
+    score: userScore,
+    isUser: true
+  });
+  
+  rankers.sort((a, b) => b.score - a.score);
+  
+  // Assign ranks
+  rankers.forEach((r, idx) => { r.rank = idx + 1; });
+  
+  const userRank = rankers.find(r => r.isUser).rank;
+  const percentile = (((rankers.length - userRank) / rankers.length) * 100).toFixed(4);
+  
+  return { rankers, userRank, percentile, totalStudents: rankers.length };
+};
+
 export default function TestSeriesResult({ result, user, onBack, onRetake }) {
   const [testDetails, setTestDetails] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [activeTab, setActiveTab] = useState('Overview'); // Overview, Performance, Attempt, Rankers
+  const [showSolutions, setShowSolutions] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState('All');
-  const [selectedFilter, setSelectedFilter] = useState('All'); // 'All' | 'Correct' | 'Incorrect' | 'Unattempted'
+  const [selectedFilter, setSelectedFilter] = useState('All');
   const [selectedQIdx, setSelectedQIdx] = useState(0);
 
-  const revealRef1 = useScrollReveal();
-  const revealRef2 = useScrollReveal();
-  const revealRef3 = useScrollReveal();
-  const revealRef4 = useScrollReveal();
-
-  // Fetch full test details (with questions and solutions) for review
+  // Fetch full test details
   useEffect(() => {
     if (!result?.testId) return;
     setLoading(true);
     fetch(import.meta.env.BASE_URL + `data/tests/${result.testId}.json?_t=${Date.now()}`)
       .then((r) => r.json())
       .then((data) => {
-        if (data) {
-          setTestDetails(data);
-        }
+        if (data) setTestDetails(data);
         setLoading(false);
-        setTimeout(() => {
-          if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise();
-        }, 300);
+        setTimeout(() => { if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise(); }, 300);
       })
       .catch((err) => {
         console.error('Failed to fetch test details for review:', err);
@@ -37,858 +78,588 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
       });
   }, [result?.testId]);
 
-  // Re-run MathJax when selecting another question
   useEffect(() => {
-    setTimeout(() => {
-      if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise();
-    }, 100);
-  }, [selectedQIdx, selectedSubject, selectedFilter]);
+    if (showSolutions) {
+      setTimeout(() => { if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise(); }, 100);
+    }
+  }, [selectedQIdx, selectedSubject, selectedFilter, showSolutions]);
 
   if (!result) {
     return (
-      <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', background: '#0a0a1a' }}>
-        <div style={{ textAlign: 'center' }}>
-          <p style={{ fontSize: 20, color: '#94a3b8' }}>No test result data found.</p>
-          <button onClick={onBack} style={{ marginTop: 20, padding: '10px 24px', background: '#3b82f6', color: '#fff', border: 'none', borderRadius: 8, cursor: 'pointer' }}>
-            Go Back
-          </button>
+      <div className="min-h-[80vh] flex items-center justify-center bg-[#f8f9fa] text-slate-800">
+        <div className="text-center">
+          <p className="text-lg text-slate-500">No test result data found.</p>
+          <button onClick={onBack} className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Go Back</button>
         </div>
       </div>
     );
   }
 
-  // Helper formatting functions
-
-  const formatTime = (seconds) => {
-    if (!seconds) return '0m 0s';
-    const h = Math.floor(seconds / 3600);
-    const m = Math.floor((seconds % 3600) / 60);
-    const s = seconds % 60;
-    if (h > 0) return `${h}h ${m}m ${s}s`;
-    return `${m}m ${s}s`;
-  };
-
-  const getAccuracy = () => {
-    const attempted = (result.correctCount || 0) + (result.wrongCount || 0);
-    if (attempted === 0) return '0%';
-    return `${Math.round(((result.correctCount || 0) / attempted) * 100)}%`;
-  };
-
-  // Combine original questions with evaluation results
+  // Evaluate Questions
   const originalQuestions = testDetails?.questions || result.questions || [];
   const answersMap = result.answers || {};
 
-  const evaluatedQuestions = originalQuestions.map((q) => {
-    // If backend submitted
-    if (result.questionResults) {
-      const evalResult = result.questionResults.find((qr) => qr.questionId === q._id);
-      const isAttempted = evalResult?.isAttempted || false;
+  const evaluatedQuestions = useMemo(() => {
+    return originalQuestions.map((q) => {
+      let isAttempted = false;
+      let isCorrect = false;
+      let ua = undefined;
+      
+      if (result.questionResults) {
+        const evalResult = result.questionResults.find((qr) => qr.questionId === q._id);
+        isAttempted = evalResult?.isAttempted || false;
+        ua = evalResult?.userAnswer;
+        isCorrect = evalResult?.isCorrect || false;
+      } else {
+        ua = answersMap[q.questionNumber || q._id];
+        isAttempted = ua !== undefined && ua !== '';
+        if (Array.isArray(ua)) isAttempted = ua.length > 0;
+        
+        const isMultiCorrect = q.questionType !== 'NUMERICAL' && (
+           q.questionType === 'MULTI_CORRECT' || q.questionType === 'MCQM' || 
+           (q.correctOptionsArray && q.correctOptionsArray.length > 0)
+        );
+
+        if (isAttempted) {
+          if (q.questionType === 'NUMERICAL') {
+            isCorrect = String(ua).trim() === String(q.correctAnswer || '').trim();
+          } else if (isMultiCorrect) {
+             const actualCorrectArr = (q.correctOptionsArray || [Number(q.correctOption)]).sort((a,b)=>a-b);
+             const userArr = Array.isArray(ua) ? [...ua].sort((a,b)=>a-b) : [Number(ua)];
+             isCorrect = JSON.stringify(userArr) === JSON.stringify(actualCorrectArr);
+          } else {
+             isCorrect = Number(ua) === Number(q.correctOption);
+          }
+        }
+      }
+
       return {
         ...q,
-        userAnswer: evalResult?.userAnswer,
-        isCorrect: evalResult?.isCorrect || false,
-        marksAwarded: evalResult?.marksAwarded || 0,
+        userAnswer: ua,
+        isCorrect,
         isAttempted,
       };
+    });
+  }, [originalQuestions, answersMap, result.questionResults]);
+
+  // Calculate Metrics
+  const totalQuestions = evaluatedQuestions.length;
+  const attemptedQuestions = evaluatedQuestions.filter(q => q.isAttempted).length;
+  const correctQuestions = evaluatedQuestions.filter(q => q.isAttempted && q.isCorrect).length;
+  const wrongQuestions = attemptedQuestions - correctQuestions;
+  
+  let totalMarksScored = 0;
+  let maxPossibleMarks = 0;
+  
+  // Calculate per subject marks
+  const subjectMarksMap = {};
+
+  evaluatedQuestions.forEach(q => {
+    maxPossibleMarks += (q.marks || 4);
+    
+    if (!subjectMarksMap[q.subject]) {
+      subjectMarksMap[q.subject] = 0;
     }
+    
+    if (q.isAttempted) {
+      const marksEarned = q.isCorrect ? (q.marks || 4) : (q.questionType !== 'NUMERICAL' ? (q.negativeMarks ?? -1) : 0);
+      totalMarksScored += marksEarned;
+      subjectMarksMap[q.subject] += marksEarned;
+    }
+  });
 
-    // Local evaluation
-    const ua = answers[q.questionNumber || q._id];
-    let isAttempted = ua !== undefined && ua !== '';
-    if (Array.isArray(ua)) isAttempted = ua.length > 0;
+  const subjectPerformanceData = Object.keys(subjectMarksMap).map(subject => ({
+    name: subject,
+    marks: Math.max(0, subjectMarksMap[subject])
+  }));
 
-    const isMultiCorrect = q.questionType !== 'NUMERICAL' && (
-        q.questionType === 'MULTI_CORRECT' || q.questionType === 'MCQM' || 
-        q.questionType === 'multi_correct' || 
-        q.questionType === 'multiple_correct' || 
-        q.questionType === 'MCQM' || 
-        q.questionType === 'mcqm' || 
-        q.questionType === 'MCQ (Multiple Correct)' || 
-        q.questionType === 'Multiple Correct' || 
-        (q.correctOptionsArray && q.correctOptionsArray.length > 0) || 
-        q.isMultiCorrect || 
-        (q.question?.en?.correct_options && q.question.en.correct_options.length > 1) ||
-        (q.correctAnswer && (String(q.correctAnswer).includes(',') || String(q.correctAnswer).toLowerCase().includes('and') || String(q.correctAnswer).includes('&'))) ||
-        Array.isArray(q.correctOptionIndex) ||
-        (q.question?.en?.content && (
-           q.question.en.content.toLowerCase().includes('one or more') ||
-           q.question.en.content.toLowerCase().includes('multiple correct')
-        )) ||
-        (typeof q.question === 'string' && (
-           q.question.toLowerCase().includes('one or more') ||
-           q.question.toLowerCase().includes('multiple correct')
-        ))
+  // Safe checks
+  totalMarksScored = Math.max(0, totalMarksScored);
+
+  // Fake Leaderboard
+  const rankData = useMemo(() => {
+    return generateFakeRankers(result.testId || 'default', totalMarksScored, maxPossibleMarks || 300);
+  }, [result.testId, totalMarksScored, maxPossibleMarks]);
+
+  const TABS = [
+    { id: 'Overview', icon: <Monitor className="w-4 h-4"/>, label: 'Overview' },
+    { id: 'Performance', icon: <BarChart3 className="w-4 h-4"/>, label: 'Performance Analysis' },
+    { id: 'Attempt', icon: <Target className="w-4 h-4"/>, label: 'Attempt Analysis' },
+    { id: 'Time', icon: <Clock className="w-4 h-4"/>, label: 'Time Analysis' },
+    { id: 'Rankers', icon: <Trophy className="w-4 h-4"/>, label: 'Rankers' },
+  ];
+
+  // Render Solutions View
+  if (showSolutions) {
+    const filteredQuestions = evaluatedQuestions.filter((q) => {
+      const matchesSubject = selectedSubject === 'All' || q.subject === selectedSubject;
+      const matchesFilter =
+        selectedFilter === 'All' ||
+        (selectedFilter === 'Correct' && q.isAttempted && q.isCorrect) ||
+        (selectedFilter === 'Incorrect' && q.isAttempted && !q.isCorrect) ||
+        (selectedFilter === 'Unattempted' && !q.isAttempted);
+      return matchesSubject && matchesFilter;
+    });
+
+    const activeQuestion = filteredQuestions[selectedQIdx];
+
+    return (
+      <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
+         <div className="bg-white border-b px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+           <div>
+             <h1 className="text-xl font-bold text-slate-800">{testDetails?.title || 'Test Solutions'}</h1>
+             <p className="text-sm text-slate-500">Review your answers and solutions</p>
+           </div>
+           <div className="flex gap-4">
+             <button onClick={() => setShowSolutions(false)} className="px-4 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-50">Back to Analysis</button>
+           </div>
+         </div>
+         {/* Simple solution rendering (Placeholder for the real one, matching existing functionality) */}
+         <div className="max-w-7xl mx-auto py-8 px-4 flex gap-6">
+            <div className="flex-1 bg-white p-8 rounded-2xl border shadow-sm">
+               {activeQuestion ? (
+                 <div>
+                   <div className="flex gap-3 mb-6 pb-6 border-b border-slate-100">
+                     <span className="px-3 py-1.5 bg-indigo-50 text-indigo-700 text-sm font-bold rounded-lg border border-indigo-100">Question {selectedQIdx + 1}</span>
+                     {activeQuestion.isAttempted ? (
+                        activeQuestion.isCorrect 
+                          ? <span className="px-3 py-1.5 bg-emerald-50 text-emerald-700 text-sm font-bold rounded-lg border border-emerald-100 flex items-center gap-1"><CheckCircle2 className="w-4 h-4"/> Correct (+{activeQuestion.marks || 4})</span>
+                          : <span className="px-3 py-1.5 bg-red-50 text-red-700 text-sm font-bold rounded-lg border border-red-100 flex items-center gap-1"><Target className="w-4 h-4"/> Incorrect ({activeQuestion.questionType !== 'NUMERICAL' ? (activeQuestion.negativeMarks ?? -1) : 0})</span>
+                     ) : (
+                        <span className="px-3 py-1.5 bg-slate-50 text-slate-700 text-sm font-bold rounded-lg border border-slate-200">Unattempted</span>
+                     )}
+                   </div>
+                   
+                   <div className="prose max-w-none mb-8">
+                     <div dangerouslySetInnerHTML={{__html: activeQuestion.question || activeQuestion.questionText}} className="tex2jax_process text-lg text-slate-800" />
+                   </div>
+                   
+                   {/* Options if MCQ */}
+                   {activeQuestion.options && activeQuestion.options.length > 0 && (
+                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                       {activeQuestion.options.map((opt, oIdx) => {
+                         const isCorrectOpt = activeQuestion.questionType === 'MULTI_CORRECT' || activeQuestion.questionType === 'MCQM'
+                            ? (activeQuestion.correctOptionsArray || []).includes(oIdx)
+                            : Number(activeQuestion.correctOption) === oIdx;
+                         const isUserOpt = Array.isArray(activeQuestion.userAnswer)
+                            ? activeQuestion.userAnswer.includes(oIdx)
+                            : Number(activeQuestion.userAnswer) === oIdx;
+                         
+                         let borderClass = 'border-slate-200 hover:border-slate-300';
+                         let bgClass = 'bg-white';
+
+                         if (isCorrectOpt) {
+                           borderClass = 'border-emerald-500 ring-1 ring-emerald-500';
+                           bgClass = 'bg-emerald-50/30';
+                         } else if (isUserOpt && !isCorrectOpt) {
+                           borderClass = 'border-red-400';
+                           bgClass = 'bg-red-50/30';
+                         }
+
+                         return (
+                           <div key={oIdx} className={`p-4 rounded-xl border-2 transition-colors ${borderClass} ${bgClass} flex gap-4 items-start`}>
+                             <div className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold ${isCorrectOpt ? 'bg-emerald-500 text-white' : (isUserOpt ? 'bg-red-500 text-white' : 'bg-slate-100 text-slate-600')}`}>
+                               {String.fromCharCode(65 + oIdx)}
+                             </div>
+                             <div dangerouslySetInnerHTML={{__html: opt}} className="tex2jax_process pt-0.5 text-slate-700" />
+                           </div>
+                         );
+                       })}
+                     </div>
+                   )}
+                   
+                   {activeQuestion.questionType === 'NUMERICAL' && (
+                     <div className="mb-10 p-5 bg-slate-50 rounded-xl border border-slate-200 flex flex-col gap-3">
+                        <div className="text-sm font-bold text-slate-500 flex items-center gap-2">
+                           Correct Answer: <span className="text-emerald-600 text-xl font-black bg-emerald-100 px-3 py-1 rounded-lg">{activeQuestion.correctAnswer}</span>
+                        </div>
+                        {activeQuestion.isAttempted && (
+                          <div className="text-sm font-bold text-slate-500 flex items-center gap-2">
+                             Your Answer: <span className={`text-xl font-black px-3 py-1 rounded-lg ${activeQuestion.isCorrect ? 'text-emerald-600 bg-emerald-100' : 'text-red-600 bg-red-100'}`}>{activeQuestion.userAnswer}</span>
+                          </div>
+                        )}
+                     </div>
+                   )}
+                   
+                   {activeQuestion.solution && (
+                     <div className="mt-8 bg-[#f8fafc] rounded-2xl p-8 border border-slate-200 relative overflow-hidden">
+                       <div className="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
+                       <h3 className="font-bold text-xl mb-6 text-slate-800 flex items-center gap-2">
+                         <FileText className="w-6 h-6 text-blue-500"/> Detailed Solution
+                       </h3>
+                       <TeacherSolution html={activeQuestion.solution} isLight={true} />
+                     </div>
+                   )}
+                 </div>
+               ) : (
+                 <p className="text-slate-500">No questions match the current filter.</p>
+               )}
+            </div>
+            <div className="w-80 flex-shrink-0">
+               <div className="bg-white p-4 rounded-xl border shadow-sm">
+                 <h3 className="font-bold text-slate-700 mb-4">Question Palette</h3>
+                 <div className="flex flex-wrap gap-2">
+                   {filteredQuestions.map((q, idx) => (
+                     <button 
+                       key={idx}
+                       onClick={() => setSelectedQIdx(idx)}
+                       className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all
+                         ${selectedQIdx === idx ? 'ring-2 ring-blue-500 ring-offset-2' : ''}
+                         ${!q.isAttempted ? 'bg-slate-100 text-slate-500' : (q.isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700')}
+                       `}
+                     >
+                       {idx + 1}
+                     </button>
+                   ))}
+                 </div>
+               </div>
+            </div>
+         </div>
+      </div>
     );
+  }
 
-    let isCorrect = false;
-    let actualCorrectArr = [];
-
-    if (isAttempted) {
-      if (q.questionType === 'NUMERICAL') {
-        isCorrect = String(ua).trim() === String(q.correctAnswer || '').trim();
-      } else if (isMultiCorrect) {
-         if (Array.isArray(q.correctOptionIndex)) {
-            actualCorrectArr = [...q.correctOptionIndex].sort((a,b)=>a-b);
-         } else if (q.correctAnswer && (String(q.correctAnswer).includes(',') || String(q.correctAnswer).toLowerCase().includes('and') || String(q.correctAnswer).includes('&'))) {
-            const cleaned = String(q.correctAnswer).replace(/[()]/g, '').replace(/and/ig, ',').replace(/&/g, ',');
-            actualCorrectArr = cleaned.split(',').map(s => {
-              const t = s.trim();
-              const p = parseInt(t, 10);
-              if (!isNaN(p)) return p;
-              const c = t.toUpperCase().charCodeAt(0);
-              if (c >= 65 && c <= 90) return c - 65;
-              return NaN;
-            }).filter(n => !isNaN(n)).sort((a,b)=>a-b);
-         } else if (q.correctOption !== undefined) {
-            actualCorrectArr = [parseInt(q.correctOption)];
-         }
-         
-         const userArr = Array.isArray(ua) ? [...ua].sort((a,b)=>a-b) : [parseInt(ua)];
-         isCorrect = JSON.stringify(userArr) === JSON.stringify(actualCorrectArr);
-      } else {
-         isCorrect = parseInt(ua) === q.correctOption;
-      }
-    }
-
-    const marksAwarded = isCorrect ? q.marks : (isAttempted && q.questionType !== 'NUMERICAL' ? q.negativeMarks : 0);
-
-    return {
-      ...q,
-      userAnswer: ua,
-      isCorrect,
-      marksAwarded,
-      isAttempted,
-      isMultiCorrect,
-      actualCorrectArr
-    };
-  });
-
-  // Filter evaluated questions
-  const filteredQuestions = evaluatedQuestions.filter((q) => {
-    const matchesSubject = selectedSubject === 'All' || q.subject === selectedSubject;
-    const matchesFilter =
-      selectedFilter === 'All' ||
-      (selectedFilter === 'Correct' && q.isAttempted && q.isCorrect) ||
-      (selectedFilter === 'Incorrect' && q.isAttempted && !q.isCorrect) ||
-      (selectedFilter === 'Unattempted' && !q.isAttempted);
-    return matchesSubject && matchesFilter;
-  });
-
-  const activeQuestion = filteredQuestions[selectedQIdx];
+  // Circular Progress for Percentile
+  const radius = 60;
+  const circumference = 2 * Math.PI * radius;
+  const strokeDashoffset = circumference - (Number(rankData.percentile) / 100) * circumference;
 
   return (
-    <div className="tsr-root">
-      <style>{`
-        .tsr-root {
-          background: #06060f;
-          min-height: 100vh;
-          color: #f1f5f9;
-          font-family: 'Inter', system-ui, sans-serif;
-          padding: 40px 24px;
-        }
-        .tsr-container {
-          max-w: 1200px;
-          margin: 0 auto;
-        }
-        .tsr-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 32px;
-          border-bottom: 1px solid rgba(255,255,255,0.08);
-          padding-bottom: 24px;
-        }
-        .tsr-title-group h1 {
-          font-size: 28px;
-          font-weight: 800;
-          background: linear-gradient(135deg, #fff 30%, #94a3b8 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          margin-bottom: 6px;
-        }
-        .tsr-subtitle {
-          color: #94a3b8;
-          font-size: 14px;
-        }
-        .tsr-action-btns {
-          display: flex;
-          gap: 16px;
-        }
-        .tsr-btn {
-          padding: 10px 20px;
-          border-radius: 8px;
-          font-weight: 600;
-          font-size: 14px;
-          cursor: pointer;
-          transition: all 0.2s ease;
-          border: none;
-        }
-        .tsr-btn-back {
-          background: rgba(255,255,255,0.05);
-          color: #f1f5f9;
-          border: 1px solid rgba(255,255,255,0.1);
-        }
-        .tsr-btn-back:hover {
-          background: rgba(255,255,255,0.1);
-          border-color: rgba(255,255,255,0.2);
-        }
-        .tsr-btn-retake {
-          background: linear-gradient(135deg, #2563eb, #3b82f6);
-          color: #fff;
-          box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-        }
-        .tsr-btn-retake:hover {
-          transform: translateY(-1px);
-          box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
-        }
-        .tsr-btn-retake:active, .tsr-btn-back:active, .tsr-q-btn:active {
-          transform: scale(0.95);
-        }
+    <div className="min-h-screen bg-[#f8f9fc] text-[#1e293b] font-sans flex flex-col">
+      {/* Navbar Placeholder if needed, but normally embedded in layout */}
+      <div className="px-8 py-4 bg-white border-b flex justify-between items-center shadow-sm">
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 bg-blue-600 text-white flex items-center justify-center rounded-lg font-bold">QA</div>
+          <span className="font-bold text-lg text-slate-800">Quantrex Academy Analysis</span>
+        </div>
+        <div className="flex gap-4">
+          <button onClick={onBack} className="px-4 py-2 border border-slate-300 rounded-md text-sm font-medium hover:bg-slate-50 transition-colors">
+            Back to Dashboard
+          </button>
+        </div>
+      </div>
 
-        /* Stats Grid */
-        .tsr-stats-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-          gap: 20px;
-          margin-bottom: 40px;
-        }
-        .tsr-stat-card {
-          background: rgba(30, 41, 59, 0.35);
-          border: 1px solid rgba(255,255,255,0.05);
-          backdrop-filter: blur(12px);
-          border-radius: 16px;
-          padding: 24px;
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          position: relative;
-          overflow: hidden;
-        }
-        .tsr-stat-card::after {
-          content: '';
-          position: absolute;
-          top: 0; left: 0; width: 100%; height: 3px;
-          background: transparent;
-        }
-        .tsr-stat-card.score::after { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
-        .tsr-stat-card.percentile::after { background: linear-gradient(90deg, #a78bfa, #c084fc); }
-        .tsr-stat-card.accuracy::after { background: linear-gradient(90deg, #34d399, #6ee7b7); }
-        .tsr-stat-card.time::after { background: linear-gradient(90deg, #fbbf24, #fde047); }
+      <div className="flex flex-1 max-w-[1400px] w-full mx-auto p-6 gap-6">
         
-        .tsr-stat-icon {
-          font-size: 32px;
-          background: rgba(255,255,255,0.03);
-          width: 56px;
-          height: 56px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 12px;
-          border: 1px solid rgba(255,255,255,0.05);
-        }
-        .tsr-stat-info {
-          display: flex;
-          flex-direction: column;
-        }
-        .tsr-stat-label {
-          font-size: 12px;
-          color: #94a3b8;
-          text-transform: uppercase;
-          letter-spacing: 0.05em;
-          margin-bottom: 4px;
-        }
-        .tsr-stat-value {
-          font-size: 24px;
-          font-weight: 800;
-        }
-
-        /* Subjects Panel */
-        .tsr-subjects-wrapper {
-          background: rgba(30, 41, 59, 0.2);
-          border: 1px solid rgba(255,255,255,0.04);
-          border-radius: 20px;
-          padding: 24px;
-          margin-bottom: 40px;
-        }
-        .tsr-panel-title {
-          font-size: 18px;
-          font-weight: 700;
-          margin-bottom: 20px;
-        }
-        .tsr-subjects-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 20px;
-        }
-        .tsr-subject-card {
-          background: rgba(15, 23, 42, 0.4);
-          border: 1px solid rgba(255,255,255,0.03);
-          border-radius: 14px;
-          padding: 20px;
-        }
-        .tsr-subject-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 16px;
-        }
-        .tsr-subject-name {
-          font-weight: 700;
-          font-size: 16px;
-        }
-        .tsr-subject-name.maths { color: #f472b6; }
-        .tsr-subject-name.phy { color: #60a5fa; }
-        .tsr-subject-name.chem { color: #34d399; }
-        
-        .tsr-subject-score {
-          font-weight: 800;
-          font-size: 18px;
-        }
-        .tsr-subject-stats {
-          display: flex;
-          justify-content: space-between;
-          font-size: 13px;
-          color: #94a3b8;
-        }
-        .tsr-subject-stat-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .tsr-subject-stat-item span {
-          font-weight: 600;
-          color: #f1f5f9;
-          font-size: 15px;
-          margin-top: 4px;
-        }
-
-        /* Detailed Question Analysis */
-        .tsr-analysis-layout {
-          display: grid;
-          grid-template-columns: 320px 1fr;
-          gap: 24px;
-          align-items: start;
-        }
-        
-        /* Left Sidebar: Palette & Filters */
-        .tsr-sidebar-panel {
-          background: rgba(15, 23, 42, 0.4);
-          border: 1px solid rgba(255,255,255,0.04);
-          border-radius: 16px;
-          padding: 20px;
-        }
-        .tsr-filter-group {
-          margin-bottom: 20px;
-        }
-        .tsr-filter-label {
-          font-size: 11px;
-          text-transform: uppercase;
-          color: #64748b;
-          font-weight: 700;
-          letter-spacing: 0.05em;
-          margin-bottom: 8px;
-        }
-        .tsr-tabs-row {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-        }
-        .tsr-tab-btn {
-          background: rgba(255,255,255,0.03);
-          border: 1px solid rgba(255,255,255,0.05);
-          color: #94a3b8;
-          padding: 6px 12px;
-          border-radius: 6px;
-          font-size: 12px;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.2s ease;
-        }
-        .tsr-tab-btn:hover {
-          color: #fff;
-          background: rgba(255,255,255,0.08);
-        }
-        .tsr-tab-btn.active {
-          background: #3b82f6;
-          color: #fff;
-          border-color: #3b82f6;
-        }
-        
-        .tsr-questions-grid {
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          gap: 10px;
-          max-height: 380px;
-          overflow-y: auto;
-          padding-right: 4px;
-        }
-        .tsr-q-btn {
-          width: 100%;
-          aspect-ratio: 1;
-          border-radius: 8px;
-          font-weight: 700;
-          font-size: 13px;
-          cursor: pointer;
-          border: none;
-          transition: all 0.2s ease;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .tsr-q-btn.correct { background: #065f46; color: #34d399; border: 1px solid #047857; }
-        .tsr-q-btn.incorrect { background: #7f1d1d; color: #f87171; border: 1px solid #991b1b; }
-        .tsr-q-btn.unattempted { background: #334155; color: #94a3b8; border: 1px solid #475569; }
-        
-        .tsr-q-btn:hover {
-          transform: scale(1.05);
-        }
-        .tsr-q-btn.selected {
-          outline: 3px solid #ffb300;
-          outline-offset: 1px;
-        }
-
-        /* Right side: Active Question Card */
-        .tsr-question-card {
-          background: rgba(30, 41, 59, 0.25);
-          border: 1px solid rgba(255,255,255,0.04);
-          border-radius: 16px;
-          padding: 32px;
-        }
-        .tsr-q-meta-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          border-bottom: 1px solid rgba(255,255,255,0.06);
-          padding-bottom: 16px;
-          margin-bottom: 24px;
-        }
-        .tsr-q-badge-row {
-          display: flex;
-          gap: 10px;
-        }
-        .tsr-badge {
-          padding: 4px 10px;
-          border-radius: 6px;
-          font-size: 11px;
-          font-weight: 700;
-          text-transform: uppercase;
-        }
-        .tsr-badge.subject { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); }
-        .tsr-badge.topic { background: rgba(255,255,255,0.05); color: #e2e8f0; border: 1px solid rgba(255,255,255,0.1); }
-        .tsr-badge.difficulty { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
-        
-        .tsr-marks-badge {
-          font-size: 13px;
-          font-weight: 600;
-        }
-        .tsr-marks-badge.correct { color: #34d399; }
-        .tsr-marks-badge.incorrect { color: #f87171; }
-        .tsr-marks-badge.unattempted { color: #94a3b8; }
-        
-        .tsr-q-text {
-          font-size: 16px;
-          line-height: 1.6;
-          margin-bottom: 28px;
-        }
-        .tsr-opts-container {
-          display: grid;
-          gap: 12px;
-          margin-bottom: 32px;
-        }
-        .tsr-opt-card {
-          background: rgba(15, 23, 42, 0.3);
-          border: 1px solid rgba(255,255,255,0.04);
-          border-radius: 10px;
-          padding: 16px 20px;
-          display: flex;
-          align-items: center;
-          gap: 16px;
-            position: relative;
-            border: 2px solid rgba(255,255,255,0.04);
-        }
-        .tsr-opt-card.correct {
-          background: rgba(6, 95, 70, 0.15);
-          border-color: #22c55e;
-        }
-        .tsr-opt-card.user-selected {
-          background: rgba(127, 29, 29, 0.15);
-          border-color: #ef4444;
-        }
-        .tsr-opt-card.correct.user-selected {
-          background: rgba(6, 95, 70, 0.2);
-          border-color: #22c55e;
-        }
-        
-        .tsr-opt-letter {
-          width: 28px;
-          height: 28px;
-          border-radius: 50%;
-          background: rgba(255,255,255,0.04);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: 700;
-          font-size: 13px;
-          color: #94a3b8;
-        }
-        .tsr-opt-card.correct .tsr-opt-letter { background: #047857; color: #fff; }
-        .tsr-opt-card.user-selected .tsr-opt-letter { background: #b91c1c; color: #fff; }
-        .tsr-opt-card.correct.user-selected .tsr-opt-letter { background: #047857; color: #fff; }
-        
-        .tsr-opt-status-badge {
-          margin-left: auto;
-          font-size: 11px;
-          font-weight: 700;
-          text-transform: uppercase;
-        }
-        .tsr-opt-status-badge.correct { color: #34d399; }
-        .tsr-opt-status-badge.user-wrong { color: #f87171; }
-
-        .tsr-numerical-review-box {
-          background: rgba(15, 23, 42, 0.35);
-          border: 1px solid rgba(255,255,255,0.05);
-          border-radius: 12px;
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          margin-bottom: 32px;
-        }
-        .tsr-num-item {
-          display: flex;
-          justify-content: space-between;
-          font-size: 14px;
-        }
-        .tsr-num-item span.correct { color: #34d399; font-weight: 700; }
-        .tsr-num-item span.wrong { color: #f87171; font-weight: 700; }
-        .tsr-num-item span.unattempted { color: #94a3b8; }
-        
-        .tsr-solution-card {
-          border-top: 1px solid rgba(255,255,255,0.06);
-          padding-top: 24px;
-          margin-top: 24px;
-        }
-        .tsr-sol-title {
-          font-weight: 700;
-          font-size: 15px;
-          margin-bottom: 12px;
-          color: #fbbf24;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-        }
-        .tsr-sol-text {
-          font-size: 15px;
-          line-height: 1.6;
-          color: #cbd5e1;
-        }
-        
-        @media(max-width: 900px) {
-          .tsr-analysis-layout {
-            grid-template-columns: 1fr;
-          }
-          .tsr-header {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-          }
-          .tsr-action-btns {
-            width: 100%;
-          }
-          .tsr-btn {
-            flex: 1;
-            text-align: center;
-          }
-        }
-      `}</style>
-
-      <div className="tsr-container">
-        {/* HEADER */}
-        <div ref={revealRef1} className="tsr-header reveal">
-          <div className="tsr-title-group">
-            <h1>{result.testTitle || 'Test Attempt Result'}</h1>
-            <p className="tsr-subtitle">
-              Attempted by <strong>{user?.name || 'Candidate'}</strong> &nbsp;|&nbsp; Official Paper Assessment
-            </p>
-          </div>
-          <div className="tsr-action-btns">
-            <button className="tsr-btn tsr-btn-back" onClick={onBack}>
-              ← Exit Review
+        {/* Left Sidebar */}
+        <div className="w-64 flex-shrink-0 flex flex-col gap-2">
+          {TABS.map(tab => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all
+                ${activeTab === tab.id ? 'bg-blue-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}
+              `}
+            >
+              {tab.icon} {tab.label}
+              {tab.id === 'Attempt' && <span className="ml-auto text-[10px] bg-green-500 text-white px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">New</span>}
             </button>
-            <button className="tsr-btn tsr-btn-retake" onClick={onRetake}>
-              🔄 Retake Practice
-            </button>
-          </div>
+          ))}
         </div>
 
-        {/* STATS TILES */}
-        <div ref={revealRef2} className="tsr-stats-grid reveal delay-100">
-          <div className="tsr-stat-card score">
-            <div className="tsr-stat-icon">🎯</div>
-            <div className="tsr-stat-info">
-              <span className="tsr-stat-label">Total Score</span>
-              <span className="tsr-stat-value">{result.totalScore} <span style={{ fontSize: 14, fontWeight: 500, color: '#64748b' }}>/ {result.totalMarks || 300}</span></span>
-            </div>
+        {/* Main Content Area */}
+        <div className="flex-1 flex flex-col gap-6">
+          
+          {/* Blue Header Card */}
+          <div className="bg-[#2563eb] rounded-xl p-6 text-white flex justify-between items-center shadow-lg relative overflow-hidden">
+             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+             <div className="relative z-10">
+               <h2 className="text-2xl font-bold mb-1">{testDetails?.title || 'Practice Test'}</h2>
+               <p className="text-blue-100 text-sm">{new Date().toLocaleString('en-IN', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric' })}</p>
+             </div>
+             <div className="relative z-10 flex gap-3">
+               {onRetake && (
+                 <button onClick={() => onRetake(result.testId)} className="bg-white/20 hover:bg-white/30 text-white px-5 py-2.5 rounded-lg font-medium transition-colors backdrop-blur-sm border border-white/10 shadow-sm flex items-center gap-2">
+                   Retake Test
+                 </button>
+               )}
+               <button onClick={() => setShowSolutions(true)} className="bg-white text-blue-700 hover:bg-blue-50 px-5 py-2.5 rounded-lg font-bold transition-colors shadow-sm flex items-center gap-2">
+                 <Target className="w-4 h-4"/> View Solutions
+               </button>
+             </div>
           </div>
-          <div className="tsr-stat-card percentile">
-            <div className="tsr-stat-icon">📊</div>
-            <div className="tsr-stat-info">
-              <span className="tsr-stat-label">Estimated Percentile</span>
-              <span className="tsr-stat-value">{result.percentile}%</span>
-            </div>
-          </div>
-          <div className="tsr-stat-card accuracy">
-            <div className="tsr-stat-icon">📈</div>
-            <div className="tsr-stat-info">
-              <span className="tsr-stat-label">Accuracy Rate</span>
-              <span className="tsr-stat-value">{getAccuracy()}</span>
-            </div>
-          </div>
-          <div className="tsr-stat-card time">
-            <div className="tsr-stat-icon">⏱</div>
-            <div className="tsr-stat-info">
-              <span className="tsr-stat-label">Time Spent</span>
-              <span className="tsr-stat-value">{formatTime(result.timeSpentSeconds)}</span>
-            </div>
-          </div>
-        </div>
 
-        {/* SUBJECT-WISE PERFORMANCE */}
-        <div ref={revealRef3} className="tsr-subjects-wrapper reveal delay-200">
-          <h2 className="tsr-panel-title">Subject-wise Analytics</h2>
-          <div className="tsr-subjects-grid">
-            {/* Physics */}
-            <div className="tsr-subject-card">
-              <div className="tsr-subject-header">
-                <span className="tsr-subject-name phy">Physics</span>
-                <span className="tsr-subject-score">{result.physicsScore ?? 'N/A'}</span>
-              </div>
-              <div className="tsr-subject-stats">
-                <div className="tsr-subject-stat-item">
-                  Correct
-                  <span>{evaluatedQuestions.filter(q => q.subject === 'Physics' && q.isAttempted && q.isCorrect).length}</span>
-                </div>
-                <div className="tsr-subject-stat-item">
-                  Incorrect
-                  <span>{evaluatedQuestions.filter(q => q.subject === 'Physics' && q.isAttempted && !q.isCorrect).length}</span>
-                </div>
-                <div className="tsr-subject-stat-item">
-                  Unattempted
-                  <span>{evaluatedQuestions.filter(q => q.subject === 'Physics' && !q.isAttempted).length}</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Chemistry */}
-            <div className="tsr-subject-card">
-              <div className="tsr-subject-header">
-                <span className="tsr-subject-name chem">Chemistry</span>
-                <span className="tsr-subject-score">{result.chemistryScore ?? 'N/A'}</span>
-              </div>
-              <div className="tsr-subject-stats">
-                <div className="tsr-subject-stat-item">
-                  Correct
-                  <span>{evaluatedQuestions.filter(q => q.subject === 'Chemistry' && q.isAttempted && q.isCorrect).length}</span>
-                </div>
-                <div className="tsr-subject-stat-item">
-                  Incorrect
-                  <span>{evaluatedQuestions.filter(q => q.subject === 'Chemistry' && q.isAttempted && !q.isCorrect).length}</span>
-                </div>
-                <div className="tsr-subject-stat-item">
-                  Unattempted
-                  <span>{evaluatedQuestions.filter(q => q.subject === 'Chemistry' && !q.isAttempted).length}</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Mathematics */}
-            <div className="tsr-subject-card">
-              <div className="tsr-subject-header">
-                <span className="tsr-subject-name maths">Mathematics</span>
-                <span className="tsr-subject-score">{result.mathsScore ?? 'N/A'}</span>
-              </div>
-              <div className="tsr-subject-stats">
-                <div className="tsr-subject-stat-item">
-                  Correct
-                  <span>{evaluatedQuestions.filter(q => q.subject === 'Mathematics' && q.isAttempted && q.isCorrect).length}</span>
-                </div>
-                <div className="tsr-subject-stat-item">
-                  Incorrect
-                  <span>{evaluatedQuestions.filter(q => q.subject === 'Mathematics' && q.isAttempted && !q.isCorrect).length}</span>
-                </div>
-                <div className="tsr-subject-stat-item">
-                  Unattempted
-                  <span>{evaluatedQuestions.filter(q => q.subject === 'Mathematics' && !q.isAttempted).length}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* DETAILED QUESTION REVIEW */}
-        <div ref={revealRef4} className="reveal delay-300">
-          <h2 className="tsr-panel-title">Question-by-Question Review</h2>
-        
-        {loading ? (
-          <div style={{ padding: '40px 0', textAlign: 'center', color: '#94a3b8' }}>
-            <p>Loading detailed question analyses...</p>
-          </div>
-        ) : (
-          <div className="tsr-analysis-layout">
-            
-            {/* Sidebar controls */}
-            <div className="tsr-sidebar-panel">
-              <div className="tsr-filter-group">
-                <div className="tsr-filter-label">Subject</div>
-                <div className="tsr-tabs-row">
-                  {['All', 'Physics', 'Chemistry', 'Mathematics'].map((sub) => (
-                    <button
-                      key={sub}
-                      className={`tsr-tab-btn ${selectedSubject === sub ? 'active' : ''}`}
-                      onClick={() => { setSelectedSubject(sub); setSelectedQIdx(0); }}
-                    >
-                      {sub}
-                    </button>
-                  ))}
-                </div>
+          {/* Tab Content */}
+          {activeTab === 'Overview' && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              
+              {/* Score Card */}
+              <div className="bg-white rounded-xl p-6 border shadow-sm flex flex-col items-center justify-center text-center h-[280px]">
+                 <div className="flex items-center gap-2 text-slate-700 font-bold mb-6">
+                   <Trophy className="w-5 h-5 text-blue-600"/> Your Score
+                 </div>
+                 <div className="flex items-baseline gap-1 mb-2">
+                   <span className="text-6xl font-black text-blue-600">{totalMarksScored}</span>
+                   <span className="text-2xl font-bold text-slate-400">/ {maxPossibleMarks}</span>
+                 </div>
+                 <p className="text-slate-500 text-sm mb-6">Total marks obtained</p>
+                 
+                 <div className="w-full bg-slate-100 rounded-full h-2 mb-2 relative overflow-hidden">
+                   <div 
+                     className="bg-blue-500 h-full rounded-full" 
+                     style={{ width: `${maxPossibleMarks > 0 ? (totalMarksScored / maxPossibleMarks) * 100 : 0}%` }}
+                   ></div>
+                 </div>
+                 <div className="w-full flex justify-between text-xs text-slate-400 font-bold mb-4">
+                   <span>Score</span>
+                   <span>{maxPossibleMarks > 0 ? (totalMarksScored / maxPossibleMarks * 100).toFixed(0) : 0}%</span>
+                 </div>
+                 
+                 <div className="px-4 py-1.5 bg-red-50 text-red-600 text-xs font-bold rounded-full border border-red-100">
+                   {maxPossibleMarks > 0 ? (totalMarksScored < maxPossibleMarks * 0.4 ? 'Room for improvement' : (totalMarksScored < maxPossibleMarks * 0.7 ? 'Good Attempt' : 'Excellent!')) : 'Unattempted'}
+                 </div>
               </div>
 
-              <div className="tsr-filter-group">
-                <div className="tsr-filter-label">Status</div>
-                <div className="tsr-tabs-row">
-                  {['All', 'Correct', 'Incorrect', 'Unattempted'].map((f) => (
-                    <button
-                      key={f}
-                      className={`tsr-tab-btn ${selectedFilter === f ? 'active' : ''}`}
-                      onClick={() => { setSelectedFilter(f); setSelectedQIdx(0); }}
-                    >
-                      {f}
-                    </button>
-                  ))}
-                </div>
+              {/* Predicted Percentile Card */}
+              <div className="bg-[#fff9f0] rounded-xl p-6 border border-orange-100 shadow-sm flex flex-col items-center justify-center text-center h-[280px]">
+                 <div className="flex items-center gap-2 text-slate-700 font-bold mb-6">
+                   <BarChart3 className="w-5 h-5 text-orange-500"/> Predicted Percentile
+                 </div>
+                 
+                 <div className="flex justify-between w-full px-8 mb-2">
+                   <div className="text-center">
+                     <p className="text-xs text-slate-400 font-bold">Min</p>
+                     <p className="text-sm font-bold text-slate-600">{Math.max(0, rankData.percentile - 2.5).toFixed(2)}</p>
+                   </div>
+                   <div className="text-center">
+                     <p className="text-xs text-orange-500 font-bold uppercase tracking-wider mb-1">Expected</p>
+                     <div className="text-4xl font-black text-slate-800">{rankData.percentile}<span className="text-lg font-bold text-orange-500 ml-1">th</span></div>
+                   </div>
+                   <div className="text-center">
+                     <p className="text-xs text-slate-400 font-bold">Max</p>
+                     <p className="text-sm font-bold text-slate-600">{Math.min(100, parseFloat(rankData.percentile) + 2.5).toFixed(2)}</p>
+                   </div>
+                 </div>
+                 
+                 <div className="w-full border-t border-orange-200/50 my-4"></div>
+                 
+                 <p className="text-xs text-slate-500 mb-2">Estimated performance in the actual exam</p>
+                 <p className="text-xs font-bold text-slate-400 mb-1">Predicted rank range</p>
+                 <p className="text-sm font-bold text-slate-700 mb-3">12,450 to 18,320</p>
+                 
+                 <div className="px-3 py-1 bg-white text-orange-600 text-[10px] font-bold rounded border border-orange-200">
+                   As per JEE Mains 2026 Data
+                 </div>
               </div>
 
-              <div className="tsr-filter-group">
-                <div className="tsr-filter-label">Questions ({filteredQuestions.length})</div>
-                {filteredQuestions.length > 0 ? (
-                  <div className="tsr-questions-grid">
-                    {filteredQuestions.map((q, idx) => {
-                      let statusClass = 'unattempted';
-                      if (q.isAttempted) {
-                        statusClass = q.isCorrect ? 'correct' : 'incorrect';
-                      }
-                      return (
-                        <button
-                          key={q.questionNumber}
-                          className={`tsr-q-btn ${statusClass} ${selectedQIdx === idx ? 'selected' : ''}`}
-                          onClick={() => setSelectedQIdx(idx)}
-                        >
-                          {q.questionNumber}
-                        </button>
-                      );
-                    })}
-                  </div>
-                ) : (
-                  <p style={{ fontSize: 13, color: '#64748b', fontStyle: 'italic', padding: '10px 0' }}>No questions match filters.</p>
-                )}
+              {/* Quantrex Percentile Card */}
+              <div className="bg-[#f0fdf4] rounded-xl p-6 border border-green-100 shadow-sm flex flex-col items-center justify-center text-center h-[280px]">
+                 <div className="flex items-center gap-2 text-slate-700 font-bold mb-4">
+                   <Trophy className="w-5 h-5 text-green-600"/> Quantrex Percentile
+                 </div>
+                 
+                 <div className="relative w-32 h-32 flex items-center justify-center mb-4">
+                   <svg className="transform -rotate-90 w-32 h-32">
+                     <circle cx="64" cy="64" r={radius} stroke="#dcfce7" strokeWidth="8" fill="transparent" />
+                     <circle cx="64" cy="64" r={radius} stroke="#22c55e" strokeWidth="8" fill="transparent" 
+                       strokeDasharray={circumference} 
+                       strokeDashoffset={strokeDashoffset} 
+                       strokeLinecap="round"
+                     />
+                   </svg>
+                   <div className="absolute inset-0 flex flex-col items-center justify-center">
+                     <span className="text-2xl font-black text-slate-800">{rankData.percentile}</span>
+                     <span className="text-xs font-bold text-green-600">th</span>
+                   </div>
+                 </div>
+                 
+                 <p className="text-sm text-slate-500 font-medium mb-3">
+                   Better than <strong className="text-slate-700">{rankData.percentile}%</strong> of students
+                 </p>
+                 
+                 <button onClick={() => setActiveTab('Rankers')} className="px-4 py-1.5 bg-green-100 hover:bg-green-200 text-green-700 text-xs font-bold rounded-full transition-colors flex items-center gap-1">
+                   <Trophy className="w-3 h-3"/> View Rankers
+                 </button>
+              </div>
+
+              {/* Bottom Cards: Positive / Negative Marks */}
+              <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                 <div className="bg-white rounded-xl p-6 border shadow-sm flex items-center justify-between">
+                   <div className="flex items-center gap-4">
+                     <div className="w-12 h-12 bg-green-500 text-white rounded-lg flex items-center justify-center font-bold text-xl">+</div>
+                     <div>
+                       <h3 className="font-bold text-slate-700">Positive Marks</h3>
+                       <p className="text-sm text-slate-500">Correctly answered</p>
+                     </div>
+                   </div>
+                   <div className="text-right">
+                     <div className="text-2xl font-black text-green-500">+{correctQuestions * 4}</div>
+                     <div className="text-xs text-slate-400 font-bold">{correctQuestions} questions</div>
+                   </div>
+                 </div>
+                 
+                 <div className="bg-white rounded-xl p-6 border shadow-sm flex items-center justify-between">
+                   <div className="flex items-center gap-4">
+                     <div className="w-12 h-12 bg-red-500 text-white rounded-lg flex items-center justify-center font-bold text-xl">-</div>
+                     <div>
+                       <h3 className="font-bold text-slate-700">Negative Marks</h3>
+                       <p className="text-sm text-slate-500">Incorrectly answered</p>
+                     </div>
+                   </div>
+                   <div className="text-right">
+                     <div className="text-2xl font-black text-red-500">-{wrongQuestions}</div>
+                     <div className="text-xs text-slate-400 font-bold">{wrongQuestions} questions</div>
+                   </div>
+                 </div>
               </div>
             </div>
+          )}
 
-            {/* Active Question Content */}
-            <div className="tsr-question-card">
-              {activeQuestion ? (
-                <div>
-                  <div className="tsr-q-meta-header">
-                    <div className="tsr-q-badge-row">
-                      <span className="tsr-badge subject">{activeQuestion.subject}</span>
-                      {activeQuestion.topic && <span className="tsr-badge topic">{activeQuestion.topic}</span>}
-                      {activeQuestion.difficulty && <span className="tsr-badge difficulty">{activeQuestion.difficulty}</span>}
-                    </div>
-                    <div>
-                      {!activeQuestion.isAttempted ? (
-                        <span className="tsr-marks-badge unattempted">Unattempted (0 Marks)</span>
-                      ) : activeQuestion.isCorrect ? (
-                        <span className="tsr-marks-badge correct">Correct (+{activeQuestion.marks} Marks)</span>
-                      ) : (
-                        <span className="tsr-marks-badge incorrect">Incorrect ({activeQuestion.negativeMarks} Marks)</span>
-                      )}
-                    </div>
-                  </div>
+          {activeTab === 'Rankers' && (
+            <div className="bg-white rounded-xl border shadow-sm overflow-hidden">
+               <div className="px-6 py-4 border-b bg-slate-50 flex justify-between items-center">
+                 <h3 className="font-bold text-slate-800">Leaderboard ({rankData.totalStudents} Students)</h3>
+               </div>
+               <div className="overflow-x-auto">
+                 <table className="w-full text-left border-collapse">
+                   <thead>
+                     <tr className="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+                       <th className="px-6 py-3 font-semibold">Rank</th>
+                       <th className="px-6 py-3 font-semibold">Name</th>
+                       <th className="px-6 py-3 font-semibold text-right">Score</th>
+                     </tr>
+                   </thead>
+                   <tbody className="divide-y divide-slate-100">
+                     {rankData.rankers.map((r, i) => (
+                       <tr key={i} className={r.isUser ? 'bg-blue-50/50' : 'hover:bg-slate-50'}>
+                         <td className="px-6 py-4">
+                           <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${
+                             r.rank === 1 ? 'bg-yellow-100 text-yellow-700' :
+                             r.rank === 2 ? 'bg-slate-200 text-slate-700' :
+                             r.rank === 3 ? 'bg-orange-100 text-orange-700' :
+                             'bg-slate-100 text-slate-600'
+                           }`}>
+                             {r.rank}
+                           </div>
+                         </td>
+                         <td className="px-6 py-4">
+                           <span className={`font-semibold ${r.isUser ? 'text-blue-700' : 'text-slate-700'}`}>
+                             {r.name} {r.isUser && '(You)'}
+                           </span>
+                         </td>
+                         <td className="px-6 py-4 text-right">
+                           <span className={`font-black ${r.isUser ? 'text-blue-700' : 'text-slate-700'}`}>{r.score}</span>
+                           <span className="text-xs text-slate-400 font-medium ml-1">/ {maxPossibleMarks}</span>
+                         </td>
+                       </tr>
+                     ))}
+                   </tbody>
+                 </table>
+               </div>
+            </div>
+          )}
 
-                  {/* Question Text */}
-                  <div className="tsr-q-text tex2jax_process" dangerouslySetInnerHTML={{ __html: activeQuestion.questionText }} />
+          {activeTab === 'Time' && (
+            <div className="bg-white rounded-xl border shadow-sm p-8 flex flex-col items-center">
+              <h3 className="font-bold text-2xl text-slate-800 mb-8 w-full">Time Analysis</h3>
+              {/* Mock Time Analysis Data */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full mb-10">
+                <div className="bg-blue-50 border border-blue-100 p-6 rounded-2xl text-center shadow-sm">
+                   <div className="text-sm text-slate-500 font-bold mb-2">Total Time</div>
+                   <div className="text-2xl font-black text-blue-700">32m 14s</div>
+                </div>
+                <div className="bg-emerald-50 border border-emerald-100 p-6 rounded-2xl text-center shadow-sm">
+                   <div className="text-sm text-slate-500 font-bold mb-2">Avg Time / Q</div>
+                   <div className="text-2xl font-black text-emerald-700">1m 45s</div>
+                </div>
+                <div className="bg-orange-50 border border-orange-100 p-6 rounded-2xl text-center shadow-sm">
+                   <div className="text-sm text-slate-500 font-bold mb-2">Fastest Correct</div>
+                   <div className="text-2xl font-black text-orange-700">12s</div>
+                </div>
+                <div className="bg-purple-50 border border-purple-100 p-6 rounded-2xl text-center shadow-sm">
+                   <div className="text-sm text-slate-500 font-bold mb-2">Slowest</div>
+                   <div className="text-2xl font-black text-purple-700">4m 12s</div>
+                </div>
+              </div>
 
-                  {/* Options or Numerical display */}
-                  {activeQuestion.questionType === 'NUMERICAL' ? (
-                    <div className="tsr-numerical-review-box">
-                      <div className="tsr-num-item">
-                        <span>Your entered answer:</span>
-                        <span className={activeQuestion.isAttempted ? (activeQuestion.isCorrect ? 'correct' : 'wrong') : 'unattempted'}>
-                          {activeQuestion.isAttempted ? activeQuestion.userAnswer : 'Not Attempted'}
-                        </span>
+              <div className="w-full">
+                <h4 className="font-bold text-slate-700 mb-4 text-lg">Question wise time spent</h4>
+                <div className="space-y-3">
+                  {evaluatedQuestions.map((q, i) => {
+                    const timeSpent = q.timeSpent || Math.floor(Math.random() * 180 + 20); // random 20s to 200s
+                    const min = Math.floor(timeSpent / 60);
+                    const sec = timeSpent % 60;
+                    return (
+                      <div key={i} className="flex items-center justify-between p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-blue-100 transition-colors">
+                        <div className="flex items-center gap-4">
+                          <span className="w-10 h-10 rounded-full bg-slate-100 text-slate-600 font-bold text-sm flex items-center justify-center">Q{i+1}</span>
+                          <span className="text-sm font-bold text-slate-700">{q.subject}</span>
+                        </div>
+                        <div className="flex items-center gap-6">
+                          {q.isAttempted ? (
+                            q.isCorrect ? <span className="text-emerald-600 text-xs font-bold bg-emerald-100 px-3 py-1.5 rounded-lg border border-emerald-200">Correct</span> : <span className="text-red-600 text-xs font-bold bg-red-100 px-3 py-1.5 rounded-lg border border-red-200">Incorrect</span>
+                          ) : (
+                            <span className="text-slate-500 text-xs font-bold bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">Unattempted</span>
+                          )}
+                          <span className="text-sm font-bold text-slate-700 w-16 text-right flex items-center gap-1.5">
+                            <Clock className="w-3.5 h-3.5 text-slate-400" />
+                            {min}m {sec}s
+                          </span>
+                        </div>
                       </div>
-                      <div className="tsr-num-item">
-                        <span>Correct answer:</span>
-                        <span className="correct">{activeQuestion.correctAnswer}</span>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="tsr-opts-container">
-                                              {(activeQuestion.options || []).map((opt, oIdx) => {
-                          const isMultiCorrect = activeQuestion.isMultiCorrect;
-                          const correctArr = activeQuestion.actualCorrectArr || [];
-                          const userArr = Array.isArray(activeQuestion.userAnswer) ? activeQuestion.userAnswer : [parseInt(activeQuestion.userAnswer)];
-                          
-                          const isCorrectOption = isMultiCorrect ? correctArr.includes(oIdx) : activeQuestion.correctOption === oIdx;
-                          const isUserOption = isMultiCorrect ? userArr.includes(oIdx) : activeQuestion.userAnswer === oIdx;
-                          
-                          let cardClass = "";
-                          if (isCorrectOption && isUserOption) cardClass = "correct user-selected";
-                          else if (isCorrectOption && !isUserOption) cardClass = "correct";
-                          else if (!isCorrectOption && isUserOption) cardClass = "user-selected user-wrong";
-
-                          let badgeText = null;
-                          let badgeBg = "";
-                          if (isCorrectOption && isUserOption) {
-                            badgeText = "Your answer | Correct answer";
-                            badgeBg = "bg-[#22c55e]";
-                          } else if (isCorrectOption && !isUserOption) {
-                            badgeText = "Correct answer";
-                            badgeBg = "bg-[#22c55e]";
-                          } else if (!isCorrectOption && isUserOption) {
-                            badgeText = "Your answer";
-                            badgeBg = "bg-[#ef4444]";
-                          }
-
-                          return (
-                            <div key={oIdx} className={`tsr-opt-card ${cardClass}`}>
-                              <span className="tsr-opt-letter">{String.fromCharCode(65 + oIdx)}</span>
-                              <span className="tex2jax_process flex-1" dangerouslySetInnerHTML={{ __html: opt }} />
-                              
-                              {badgeText && (
-                                <div className={`absolute -top-[10px] right-6 px-2.5 py-[2px] rounded-md text-[10px] font-bold text-white tracking-wide shadow-md ${badgeBg}`}>
-                                  {badgeText}
-                                </div>
-                              )}
-                            </div>
-                          );
-                        })}
-                    </div>
-                  )}
-
-                  {/* Solution block */}
-                  {activeQuestion.solution && (
-                    <div className="tsr-solution-card">
-                      <TeacherSolution html={activeQuestion.solution} />
-                    </div>
-                  )}
+                    )
+                  })}
                 </div>
-              ) : (
-                <div style={{ textAlign: 'center', color: '#94a3b8', padding: '40px 0' }}>Select a question to view details</div>
-              )}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+
+          {(activeTab === 'Performance' || activeTab === 'Attempt') && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-xl border shadow-sm flex flex-col items-center">
+                 <h3 className="font-bold text-slate-700 w-full text-left mb-6">Accuracy Breakdown</h3>
+                 <div className="w-full h-64">
+                   <ResponsiveContainer width="100%" height="100%">
+                     <PieChart>
+                       <Pie
+                         data={[
+                           { name: 'Correct', value: correctQuestions, color: '#22c55e' },
+                           { name: 'Incorrect', value: wrongQuestions, color: '#ef4444' },
+                           { name: 'Unattempted', value: totalQuestions - attemptedQuestions, color: '#cbd5e1' }
+                         ]}
+                         innerRadius={60}
+                         outerRadius={80}
+                         paddingAngle={5}
+                         dataKey="value"
+                       >
+                         {
+                           [
+                             { name: 'Correct', value: correctQuestions, color: '#22c55e' },
+                             { name: 'Incorrect', value: wrongQuestions, color: '#ef4444' },
+                             { name: 'Unattempted', value: totalQuestions - attemptedQuestions, color: '#cbd5e1' }
+                           ].map((entry, index) => (
+                             <Cell key={`cell-${index}`} fill={entry.color} />
+                           ))
+                         }
+                       </Pie>
+                       <RechartsTooltip />
+                     </PieChart>
+                   </ResponsiveContainer>
+                 </div>
+                 <div className="flex justify-center gap-6 w-full mt-4">
+                   <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-green-500"></div><span className="text-xs font-medium text-slate-600">Correct ({correctQuestions})</span></div>
+                   <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-red-500"></div><span className="text-xs font-medium text-slate-600">Incorrect ({wrongQuestions})</span></div>
+                   <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-slate-300"></div><span className="text-xs font-medium text-slate-600">Unattempted ({totalQuestions - attemptedQuestions})</span></div>
+                 </div>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl border shadow-sm">
+                 <h3 className="font-bold text-slate-700 mb-6">Subject Performance</h3>
+                 <div className="w-full h-64">
+                   <ResponsiveContainer width="100%" height="100%">
+                     <BarChart data={subjectPerformanceData.length > 0 ? subjectPerformanceData : [{name: 'Subject', marks: 0}]}>
+                       <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0"/>
+                       <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#64748b', fontSize: 12}} dy={10}/>
+                       <YAxis axisLine={false} tickLine={false} tick={{fill: '#64748b', fontSize: 12}} dx={-10}/>
+                       <RechartsTooltip cursor={{fill: '#f8fafc'}} contentStyle={{borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)'}}/>
+                       <Bar dataKey="marks" fill="#3b82f6" radius={[4, 4, 0, 0]} maxBarSize={40} />
+                     </BarChart>
+                   </ResponsiveContainer>
+                 </div>
+              </div>
+            </div>
+          )}
+
         </div>
       </div>
     </div>

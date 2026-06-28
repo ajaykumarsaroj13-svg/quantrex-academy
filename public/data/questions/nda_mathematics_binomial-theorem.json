@@ -117,7 +117,7 @@
     },
     "solution": "<p>To find the remainder when $5^{99}$ is divided by $13$, we use modular arithmetic.</p>\n<p>We need to find:</p>\n<p>$$ 5^{99} \\bmod 13 $$</p>\n<p>Let us first find powers of $5$ modulo $13$:</p>\n<p>$$ 5^1 = 5 \\equiv 5 \\pmod{13} $$</p>\n<p>$$ 5^2 = 25 \\equiv 25 - 13 = 12 \\pmod{13} $$</p>\n<p>$$ 5^4 = (5^2)^2 \\equiv 12^2 = 144 \\equiv 144 - 143 = 1 \\pmod{13} $$</p>\n<p>So we get:</p>\n<p>$$ 5^4 \\equiv 1 \\pmod{13} $$</p>\n<p>Now divide $99$ by $4$:</p>\n<p>$$ 99 = 4 \\times 24 + 3 $$</p>\n<p>Therefore,</p>\n<p>$$ 5^{99} = 5^{4 \\times 24 + 3} = (5^4)^{24} \\cdot 5^3 $$</p>\n<p>Taking modulo $13$:</p>\n<p>$$ 5^{99} \\equiv (1)^{24} \\cdot 5^3 \\pmod{13} $$</p>\n<p>$$ 5^{99} \\equiv 5^3 = 125 \\pmod{13} $$</p>\n<p>Now divide $125$ by $13$:</p>\n<p>$$ 125 = 13 \\times 9 + 8 $$</p>\n<p>So,</p>\n<p>$$ 125 \\equiv 8 \\pmod{13} $$</p>\n<p>Hence, the remainder is:</p>\n<p>$$ \\boxed{8} $$</p>\n<p>So the correct option is Option 3.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -241,7 +241,7 @@
     },
     "solution": "<p>In the expansion of</p>\n<p>$$ (1+x)^{100}, $$</p>\n<p>the general term is</p>\n<p>$$ T_{r+1}=\\binom{100}{r}x^r. $$</p>\n<p>So, the coefficient of $x^r$ is</p>\n<p>$$ \\binom{100}{r}. $$</p>\n<p>We have to find which of the given coefficients is greatest.</p>\n<p>The options correspond to:</p>\n<ul>\n<li><p>coefficient of $x^{100}$ is $\\binom{100}{100}$</p></li>\n<li><p>coefficient of $x^{99}$ is $\\binom{100}{99}$</p></li>\n<li><p>coefficient of $x^{51}$ is $\\binom{100}{51}$</p></li>\n<li><p>coefficient of $x^{50}$ is $\\binom{100}{50}$</p></li>\n</ul>\n<p>Now, in binomial coefficients, the greatest coefficient in the expansion of $(1+x)^n$ occurs in the middle.</p>\n<p>Since $100$ is even, the middle term is the</p>\n<p>$$ \\left(\\frac{100}{2}+1\\right) = 51\\text{st term}, $$</p>\n<p>which contains</p>\n<p>$$ x^{50}. $$</p>\n<p>Its coefficient is</p>\n<p>$$ \\binom{100}{50}, $$</p>\n<p>and this is the greatest coefficient.</p>\n<p>Also, using symmetry,</p>\n<p>$$ \\binom{100}{51}=\\binom{100}{49}, $$</p>\n<p>so it is smaller than $\\binom{100}{50}$.</p>\n<p>Therefore, the greatest coefficient is the coefficient of $x^{50}$.</p>\n<p>$$ \\boxed{\\text{Option 4}} $$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -365,7 +365,7 @@
     },
     "solution": "<ol>\n<li><p>Convert to decimal  </p>\n<p>$x=(1111)_2=1\\cdot2^3+1\\cdot2^2+1\\cdot2^1+1\\cdot2^0=8+4+2+1=15$  </p>\n<p>$y=(1001)_2=1\\cdot2^3+0\\cdot2^2+0\\cdot2^1+1\\cdot2^0=8+1=9$  </p>\n<p>$z=(110)_2=1\\cdot2^2+1\\cdot2^1+0\\cdot2^0=4+2=6$  </p></li>\n<li><p>Observe the identity  </p>\n<p>For any $a,b,c$,  </p>\n<p>$$a^3+b^3+c^3-3abc=(a+b+c)\\bigl(a^2+b^2+c^2-ab-bc-ca\\bigr).$$  </p>\n<p>Here take $a=x,\\;b=-y,\\;c=-z$.  </p>\n<p>Then  </p>\n<p>$$x^3+(-y)^3+(-z)^3-3\\,x(-y)(-z)      =\\bigl(x-y-z\\bigr)\\times\\bigl(\\dots\\bigr).$$  </p>\n<p>But $x-y-z=15-9-6=0$, so the whole expression is $0$.  </p></li>\n<li><p>Hence  </p>\n<p>$$x^3-y^3-z^3-3xyz=0.$$  </p></li>\n<li><p>In binary this is $(0)_2$.  </p></li>\n</ol>\n<p>Answer: Option D.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -488,7 +488,7 @@
     },
     "solution": "<ol>\n<li><p>General term of the expansion of $(\\sqrt{3}+5^{1/4})^{12}$ is  </p>\n<p>$      T_{k+1} = \\binom{12}{k}(\\sqrt{3})^{\\,12-k}\\bigl(5^{1/4}\\bigr)^{k}            = \\binom{12}{k}\\,3^{\\frac{12-k}{2}}\\,5^{\\frac{k}{4}},      \\quad k=0,1,2,\\dots,12.    $</p></li>\n<li><p>For $T_{k+1}$ to be rational, both exponents must be integers:  </p>\n<p>a) $\\displaystyle \\frac{12-k}{2}$ must be an integer  </p>\n<p>b) $\\displaystyle \\frac{k}{4}$ must be an integer  </p></li>\n<li><p>Condition (a) ⇒ $12-k$ is even ⇒ $k$ is even.  </p>\n<p>Condition (b) ⇒ $k$ is a multiple of 4.</p></li>\n<li><p>Values of $k$ satisfying both:  </p>\n<p>$k=0,4,8,12$.  </p></li>\n<li><p>Number of rational terms = 4.</p></li>\n</ol>\n<p>Answer: Option C.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -611,7 +611,7 @@
     },
     "solution": "<ol>\n<li><p>Sum of binomial coefficients in $(x+y)^n$ is  </p>\n<p>$$\\sum_{k=0}^n \\binom{n}{k} = 2^n.$$  </p>\n<p>Given $2^n = 256$, so  </p>\n<p>$$2^n = 2^8\\implies n=8.$$</p></li>\n<li><p>The coefficients in the expansion of $(x+y)^8$ are  </p>\n<p>$$\\binom{8}{0},\\binom{8}{1},\\dots,\\binom{8}{8}.$$</p></li>\n<li><p>For even $n$, the greatest binomial coefficient is  </p>\n<p>$$\\binom{n}{n/2} = \\binom{8}{4}.$$</p></li>\n<li><p>The term $\\binom{8}{4}x^{8-4}y^4=\\binom{8}{4}x^4y^4$ is the $(4+1)$th term, i.e.\\ the 5th term.</p></li>\n</ol>\n<p>Answer: Fifth term. (Option C)</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -734,7 +734,7 @@
     },
     "solution": "<ol>\n<li><p>Compute $(\\sqrt{2}+1)^2$:  </p>\n<p>$$(\\sqrt{2}+1)^2 = 2 + 1 + 2\\sqrt{2} = 3 + 2\\sqrt{2}.$$</p></li>\n<li><p>Multiply by $\\sqrt{2}+1$ to get the cube:  </p>\n<p>$$(\\sqrt{2}+1)^3 = (\\sqrt{2}+1)\\,(3 + 2\\sqrt{2})$$  </p>\n<p>$$= 3\\sqrt{2} + 2\\cdot2 + 3 + 2\\sqrt{2}$$  </p>\n<p>$$= 7 + 5\\sqrt{2}.$$</p></li>\n<li><p>Approximate $5\\sqrt{2}$:  </p>\n<p>$$5\\sqrt{2} \\approx 5 \\times 1.414 = 7.07$$  </p>\n<p>Therefore  </p>\n<p>$$(\\sqrt{2}+1)^3 \\approx 7 + 7.07 = 14.07.$$</p></li>\n<li><p>Find natural $k$ such that  </p>\n<p>$$k < 14.07 < k+2.$$  </p>\n<p>Checking integers:</p></li>\n</ol>\n<ul>\n<li><p>If $k=13$, then $13 < 14.07 < 15$ ✔  </p></li>\n<li><p>Other options (11, 15, 17) fail to bracket 14.07 within a width of 2.</p></li>\n</ul>\n<p>Answer: 13.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -857,7 +857,7 @@
     },
     "solution": "<p>First note that  </p>\n<p>$$(1+x)^p\\,(1+x)^q=(1+x)^{\\,p+q}$$  </p>\n<p>so the coefficient of $x^3$ is  </p>\n<p>$$\\binom{p+q}{3} \\;=\\;35.$$  </p>\n<p>That means  </p>\n<p>$$\\frac{(p+q)(p+q-1)(p+q-2)}{6}=35.$$  </p>\n<p>Try $p+q=n$:  </p>\n\n<p>If $n=7$, then $\\tfrac{7\\cdot6\\cdot5}{6}=35$.  </p>\n\n<p>Hence  </p>\n<p>$ p+q=7. $  </p>\n<p>Answer: Option 3 (7).</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -981,7 +981,7 @@
     },
     "solution": "<p>To find the remainder of $ 7^n - 6n $ when divided by 36 for $ n = 100 $, consider the expression:</p>\n<p>$ p(n) = 7^n - 6n $</p>\n<p>This can be rewritten as:</p>\n<p>$ p(n) = (6 + 1)^n - 6n $</p>\n<p>Using the binomial expansion, we have:</p>\n<p>$ = 1 + 6n + \\binom{n}{2}6^2 + \\binom{n}{3}6^3 + \\ldots + 6^n - 6n $</p>\n<p>This simplifies to:</p>\n<p>$ = 1 + 6^2\\left(\\binom{n}{2} + \\binom{n}{3} \\times 6 + \\ldots + 6^{n-2}\\right) $</p>\n<p>For $ n = 100 $:</p>\n<p>$ = 1 + 36\\left(\\binom{100}{2} + \\binom{100}{3} \\times 6 + \\ldots + 6^{98}\\right) $</p>\n<p>Thus, the expression becomes:</p>\n<p>$ p(100) = 1 + 36k $</p>\n<p>Where $ k $ is some integer determined by the combinations and powers of 6.</p>\n<p>Therefore, when $ 7^n - 6n $ is divided by 36, the remainder is:</p>\n<p>$ \\boxed{1} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1105,7 +1105,7 @@
     },
     "solution": "<h3>Explanation:</h3>\n<p><strong>Given:</strong></p>\n<p>$ (8 + 3\\sqrt{7})^{20} = U + V \\quad \\text{...(i)} $</p>\n<p>$ (8 - 3\\sqrt{7})^{20} = W \\quad \\text{...(ii)} $</p>\n<p>Where $ U $ is an integer, $ 0 < V < 1 $, and $ 0 < W < 1 $.</p>\n<p><strong>Adding Equations (i) and (ii):</strong></p>\n<p>$ U + V + W = (8 + 3\\sqrt{7})^{20} + (8 - 3\\sqrt{7})^{20} $</p>\n<p>Expanding the expression using the binomial theorem:</p>\n<p>$ = 2 \\left[ \\binom{20}{0} \\cdot 8^{20} + \\binom{20}{2} \\cdot 8^{18} \\cdot (3\\sqrt{7})^2 + \\ldots + (3\\sqrt{7})^{20} \\right] $</p>\n<p>Since the binomial expansion results in an even number:</p>\n\n<p><strong>$ U $ is an integer.</strong></p>\n\n<p>Given that $ 0 < V < 1 $ and $ 0 < W < 1 $:</p>\n\n<p><strong>$ V + W $ must be an integer.</strong></p>\n\n<p>Thus, we conclude that:</p>\n<p>$ V + W = 1 $</p>\n<p><strong>Therefore, option (d) is correct.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1229,7 +1229,7 @@
     },
     "solution": "<p>Here’s a quick way to see it:</p>\n\n<p><p>Note that  </p>\n<p>$$ (8+3\\sqrt7)(8-3\\sqrt7) = 8^2 - (3\\sqrt7)^2 = 64 - 63 = 1. $$</p></p>\n<p><p>Raising both sides to the 20th power gives  </p>\n<p>$$ (8+3\\sqrt7)^{20}\\,(8-3\\sqrt7)^{20} = 1^{20} = 1. $$</p></p>\n<p><p>By definition,  </p>\n<p>$$(8+3\\sqrt7)^{20} = U+V,\\quad (8-3\\sqrt7)^{20} = W,$$  </p>\n<p>so  </p>\n<p>$$(U+V)\\,W = 1.$$</p></p>\n\n<p>Answer: 1.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1353,7 +1353,7 @@
     },
     "solution": "<p>To find the coefficient of $ x^{10} $ in the expansion of the expression:</p>\n<p>$ (1 - x^2)^{20} \\left( 2 - x^2 - \\frac{1}{x^2} \\right)^{-5} $</p>\n<p>we need to simplify and manipulate the expression carefully.</p>\n<p><strong>Step 1: Simplify the Second Factor</strong></p>\n<p>First, rewrite the second factor to make it easier to handle:</p>\n<p>$ 2 - x^2 - \\frac{1}{x^2} = \\frac{2x^2 - x^4 - 1}{x^2} $</p>\n<p>Now, write the entire expression:</p>\n<p>$ (1 - x^2)^{20} \\left( \\frac{2x^2 - x^4 - 1}{x^2} \\right)^{-5} $</p>\n<p><strong>Step 2: Simplify the Denominator</strong></p>\n<p>Notice that $ 2x^2 - x^4 - 1 = - (x^4 - 2x^2 + 1) $, which factors further:</p>\n<p>$ - (x^4 - 2x^2 + 1) = - (x^2 - 1)^2 $</p>\n<p>So, the expression becomes:</p>\n<p>$ (1 - x^2)^{20} \\left( \\frac{ - (x^2 - 1)^2 }{ x^2 } \\right)^{-5} $</p>\n<p><strong>Step 3: Simplify the Negative Exponent</strong></p>\n<p>Apply the negative exponent:</p>\n<p>$ \\left( \\frac{ - (x^2 - 1)^2 }{ x^2 } \\right)^{-5} = \\left( -1 \\right)^{-5} x^{10} (x^2 - 1)^{-10} $</p>\n<p>Since $ (-1)^{-5} = -1 $, the expression simplifies to:</p>\n<p>$ - x^{10} (x^2 - 1)^{-10} $</p>\n<p><strong>Step 4: Combine with the First Factor</strong></p>\n<p>Now, combine this with the first factor:</p>\n<p>$ (1 - x^2)^{20} \\times \\left( - x^{10} (x^2 - 1)^{-10} \\right) = - x^{10} (x^2 - 1)^{20} (x^2 - 1)^{-10} = - x^{10} (x^2 - 1)^{10} $</p>\n<p><strong>Step 5: Expand $ (x^2 - 1)^{10} $</strong></p>\n<p>Use the binomial theorem to expand:</p>\n<p>$ (x^2 - 1)^{10} = \\sum_{k=0}^{10} \\binom{10}{k} (x^2)^{10 - k} (-1)^k $</p>\n<p><strong>Step 6: Multiply and Find the Coefficient</strong></p>\n<p>Multiply by $ - x^{10} $:</p>\n<p>$ - x^{10} (x^2 - 1)^{10} = - \\sum_{k=0}^{10} \\binom{10}{k} (-1)^k x^{10} \\cdot x^{2(10 - k)} = - \\sum_{k=0}^{10} \\binom{10}{k} (-1)^k x^{30 - 2k} $</p>\n<p>We are interested in the term where the exponent of $ x $ is 10:</p>\n<p>$ 30 - 2k = 10 \\implies 2k = 20 \\implies k = 10 $</p>\n<p><strong>Step 7: Calculate the Coefficient for $ k = 10 $</strong></p>\n<p>Compute the coefficient:</p>\n<p>$ \\text{Coefficient} = - \\binom{10}{10} (-1)^{10} = -1 \\times 1 = -1 $</p>\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{-1}$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1476,7 +1476,7 @@
     },
     "solution": "<p>To find the value of $ mn $, we start with the general term in the expansion of $ \\left(mx + \\frac{1}{x}\\right)^n $, given by the binomial theorem:</p>\n\n<p>$$ T_{k+1} = \\binom{n}{k} \\left(mx\\right)^{n-k} \\left(\\frac{1}{x}\\right)^k $$</p>\n\n<p>We need to find the 4th term in this expansion, so let $ k = 3 $. Substituting $ k = 3 $ into the general term formula, we get:</p>\n\n<p>$$ T_4 = \\binom{n}{3} \\left(mx\\right)^{n-3} \\left(\\frac{1}{x}\\right)^3 $$</p>\n\n<p>Simplify the expression:</p>\n\n<p>$$ T_4 = \\binom{n}{3} m^{n-3} x^{n-3} \\cdot \\frac{1}{x^3} $$</p>\n\n<p>Combine the exponents of $ x $:</p>\n\n<p>$$ T_4 = \\binom{n}{3} m^{n-3} x^{n-3-3} = \\binom{n}{3} m^{n-3} x^{n-6} $$</p>\n\n<p>Given that the 4th term is $ \\frac{5}{2} $, this implies:</p>\n\n<p>$$ \\binom{n}{3} m^{n-3} x^{n-6} = \\frac{5}{2} $$</p>\n\n<p>For the term to be a constant (i.e., not dependent on $ x $), the exponent of $ x $ must be zero:</p>\n\n<p>$$ n - 6 = 0 \\Rightarrow n = 6 $$</p>\n\n<p>Substitute $ n = 6 $ into the equation for the 4th term:</p>\n\n<p>$$ T_4 = \\binom{6}{3} m^{6-3} x^0 = \\frac{5}{2} $$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$ \\binom{6}{3} m^3 = \\frac{5}{2} $$</p>\n\n<p>Calculate $ \\binom{6}{3} $:</p>\n\n<p>$$ \\binom{6}{3} = \\frac{6!}{3!3!} = 20 $$</p>\n\n<p>Substitute $ \\binom{6}{3} $ into the equation:</p>\n\n<p>$$ 20 m^3 = \\frac{5}{2} $$</p>\n\n<p>Solve for $ m^3 $:</p>\n\n<p>$$ m^3 = \\frac{5}{2} \\times \\frac{1}{20} = \\frac{5}{40} = \\frac{1}{8} $$</p>\n\n<p>Taking the cube root of both sides, we find:</p>\n\n<p>$$ m = \\frac{1}{2} $$</p>\n\n<p>Finally, calculate $ mn $:</p>\n\n<p>$$ mn = \\left( \\frac{1}{2} \\right) \\times 6 = 3 $$</p>\n\n<p>Therefore, the value of $ mn $ is 3. The correct option is:</p>\n\n<p><strong>Option B</strong></p>\n\n<p>3</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1599,7 +1599,7 @@
     },
     "solution": "<p>The expression we need to expand is $$(x + y)^{2n+1}(x - y)^{2n+1}$$. To find the product, we can use the formula for the binomial expansion of two binomial expressions.</p>\n\n<p>To make it simpler, let us first consider individual expansions:</p>\n\n<p>The binomial expansion of $$(x + y)^{2n+1}$$ is:</p>\n\n<p>$$ (x + y)^{2n+1} = \\sum_{k=0}^{2n+1} \\binom{2n+1}{k} x^{2n+1-k} y^k $$</p>\n\n<p>Similarly, the binomial expansion of $$(x - y)^{2n+1}$$ is:</p>\n\n<p>$$ (x - y)^{2n+1} = \\sum_{k=0}^{2n+1} \\binom{2n+1}{k} x^{2n+1-k} (-y)^k $$</p>\n\n<p>Now, we multiply these two expansions together. Notice that when we multiply the terms of these expansions, we will have the product of the coefficients and the variables:</p>\n\n<p>$$ (x + y)^{2n+1} (x - y)^{2n+1} = \\sum_{i=0}^{2n+1} \\sum_{j=0}^{2n+1} \\binom{2n+1}{i} \\binom{2n+1}{j} x^{(2n+1-i) + (2n+1-j)} y^{i+j} (-1)^j $$</p>\n\n<p>The middle terms of the entire expansion will occur when the powers of $$x$$ and $$y$$ combined give the middle index. In this case, the sum of the powers of $$x$$ and $$y$$ will be $$2n+1$$, as the total power is $$(2n+1) + (2n+1) = 4n+2$$ and the middle term power will be half, which is $$2n+1$$.</p>\n\n<p>If the sum of the middle terms is zero, then their contributions must cancel each other out. This can only happen if the exponents of $$x$$ and $$y$$ in these middle terms lead to symmetric contributions.</p>\n\n<p>To derive the specific exponents, we observe that for each pair, the contributions require the exponents: </p>\n\n<p>$$x^{k}$$ and $$y^{2n+1-k}$$ versus $$x^{k}$$ and $$(-y)^{2n+1-k}$$</p>\n\n<p>Since it is given the middle terms cancel out, this implies that:</p>\n\n<p>$$ (x + y)y = 0 \\implies (x - y)(x + y) = 0  $$</p>\n\n<p>Thus, the symmetry in the exponents implies that the powers of $$x$$ and $$y$$ must be equal.</p>\n\n<p>Finally, let’s conclude. Given integer terms of the binomial expansion, we need:</p>\n\n<p>$$ \\left(\\frac{x}{y}\\right)^2 = 1 \\implies \\left(\\frac{x^2}{y^2}\\right) = 1 $$</p>\n\n<p>Thus, the value of $$\\left(\\frac{x^2}{y^2}\\right)$$ is $$1$$.</p>\n\n<style>\n\n<p>table {</p>\n\n<p>width: 100%;</p>\n\n<p>border-collapse: collapse;</p>\n\n<p>margin: 20px 0;</p>\n\n<p>}</p>\n\n<p>th {</p>\n\n<p>background-color: blue;</p>\n\n<p>color: white;</p>\n\n<p>border: 1px solid lightgrey;</p>\n\n<p>padding: 10px;</p>\n\n<p>}</p>\n\n<p>td {</p>\n\n<p>border: 1px solid lightgrey;</p>\n\n<p>padding: 10px;</p>\n\n<p>text-align: left;</p>\n\n<p>}</p>\n\n</style>\n\n<table>\n\n<tr>\n\n<th>Option</th>\n\n<th>Value</th>\n\n</tr>\n\n<tr>\n\n<td>A</td>\n\n<td>1</td>\n\n</tr>\n\n<tr>\n\n<td>B</td>\n\n<td>2</td>\n\n</tr>\n\n<tr>\n\n<td>C</td>\n\n<td>4</td>\n\n</tr>\n\n<tr>\n\n<td>D</td>\n\n<td>8</td>\n\n</tr>\n\n</table>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option A</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1722,7 +1722,7 @@
     },
     "solution": "<ol>\n<li><p>Let  </p>\n<p>$f(x) = (1 - x)^4 + (5 - x)^4.$  </p></li>\n<li><p>Observe that shifting the variable by the midpoint of 1 and 5 (which is 3) simplifies symmetry.  </p>\n<p>Put  </p>\n<p>$$y = x - 3.$$  </p>\n<p>Then  </p>\n<p>$$1 - x = 1 - (y + 3) = -\\,y - 2 = -(y + 2),$$  </p>\n<p>$$5 - x = 5 - (y + 3) = 2 - y = -(y - 2)\\quad\\text{(up to a sign, but even powers ignore sign).}$$  </p></li>\n<li><p>Substitute into $f(x)$:  </p>\n<p>$$f(x) = (-(y+2))^4 + (-(y-2))^4 = (y+2)^4 + (y-2)^4.$$  </p></li>\n<li><p>Expand or combine using binomial expansion:  </p>\n<p>$$(y+2)^4 = y^4 + 8y^3 + 24y^2 + 32y + 16,$$  </p>\n<p>$$(y-2)^4 = y^4 - 8y^3 + 24y^2 - 32y + 16.$$  </p>\n<p>Adding, the odd terms cancel:  </p>\n<p>$$(y+2)^4 + (y-2)^4 = 2y^4 + 48y^2 + 32.$$</p></li>\n<li><p>The equation $f(x)=82$ becomes  </p>\n<p>$$2y^4 + 48y^2 + 32 = 82$$  </p>\n<p>$$\\Longrightarrow 2y^4 + 48y^2 - 50 = 0$$  </p>\n<p>$$\\Longrightarrow y^4 + 24y^2 - 25 = 0.$$</p></li>\n<li><p>Put $u = y^2\\;(u\\ge0)$. Then  </p>\n<p>$$u^2 + 24u - 25 = 0.$$  </p>\n<p>Solve:  </p>\n<p>$$u = \\frac{-24 \\pm \\sqrt{24^2 + 4\\cdot25}}{2} = \\frac{-24 \\pm \\sqrt{676}}{2} = \\frac{-24 \\pm 26}{2}.$$  </p>\n<p>Thus  </p>\n<p>$$u_1 = 1,\\quad u_2 = -25\\ (\\text{reject, since }u\\ge0).$$  </p></li>\n<li><p>From $u_1 = 1$ we get  </p>\n<p>$$y^2 = 1\\;\\Longrightarrow\\;y = \\pm1.$$  </p>\n<p>Recall $y = x - 3$, so  </p>\n<p>$$x - 3 = \\pm1\\;\\Longrightarrow\\;x = 3 \\pm 1 \\;\\Rightarrow\\;x = 2,\\,4.$$</p></li>\n<li><p>Therefore there are exactly 2 real solutions.</p></li>\n</ol>\n<p>Answer: Option B (2).</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1845,7 +1845,7 @@
     },
     "solution": "<ol>\n<li><p>Let $x$ be the variable. We want to solve  </p>\n<p>$      (1 - x)^4 + (5 - x)^4 = 82    $</p></li>\n<li><p>Make the substitution $t = x - 3$. Then  </p>\n<p>$      1 - x = 1 - (t+3) = -2 - t,\\quad      5 - x = 5 - (t+3) = 2 - t.    $  </p>\n<p>The equation becomes  </p>\n<p>$      (-2 - t)^4 + (2 - t)^4 = 82.    $</p></li>\n<li><p>Notice $(-2 - t)^4 = (t + 2)^4$ and $(2 - t)^4 = (t - 2)^4$. So  </p>\n<p>$      (t+2)^4 + (t-2)^4 = 82.    $</p></li>\n<li><p>Expand or use symmetry:  </p>\n<p>$      (t+2)^4 + (t-2)^4      = \\bigl(t^4 + 8t^3 + 24t^2 + 32t + 16\\bigr)      + \\bigl(t^4 - 8t^3 + 24t^2 - 32t + 16\\bigr)      = 2t^4 + 48t^2 + 32.    $  </p>\n<p>Hence the equation is  </p>\n<p>$      2t^4 + 48t^2 + 32 = 82      \\quad\\Longrightarrow\\quad      2t^4 + 48t^2 - 50 = 0      \\quad\\Longrightarrow\\quad      t^4 + 24t^2 - 25 = 0.    $</p></li>\n<li><p>Solve for $t^2$:  </p>\n<p>$      t^2 = \\frac{-24 \\pm \\sqrt{24^2 + 4\\cdot25}}{2}            = \\frac{-24 \\pm \\sqrt{676}}{2}            = \\frac{-24 \\pm 26}{2}.    $  </p>\n<p>Thus  </p>\n<p>$      t^2 = 1 \\quad\\text{or}\\quad t^2 = -25.    $  </p>\n<p>So the four roots for $t$ are  </p>\n<p>$      t = \\pm1,\\quad t = \\pm5i.    $</p></li>\n<li><p>Convert back to $x = t + 3$. The four roots are  </p>\n<p>$      x = 3 \\pm 1 \\quad\\text{and}\\quad x = 3 \\pm 5i,    $  </p>\n<p>i.e. $x = 4,\\,2,\\,3+5i,\\,3-5i$.</p></li>\n<li><p>Sum of all roots:  </p>\n<p>$      (4 + 2) + \\bigl((3+5i) + (3-5i)\\bigr)      = 6 + (6)      = 12.    $</p></li>\n</ol>\n<p>Answer: Option B (12).</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1968,7 +1968,7 @@
     },
     "solution": "<p>To solve this problem, we need to find the value of the sum:</p>\n<p>$ S = T_1 + 2T_2 + 3T_3 + \\dots + nT_n $</p>\n<p>where $ T_k $ are the coefficients in the expansion of $ (1 + x)^n $:</p>\n<p>$ (1 + x)^n = 1 + T_1 x + T_2 x^2 + T_3 x^3 + \\dots + T_n x^n $</p>\n<p><strong>Step 1: Understand the Binomial Theorem</strong></p>\n<p>The binomial expansion of $ (1 + x)^n $ is:</p>\n<p>$ (1 + x)^n = \\sum_{k=0}^{n} \\binom{n}{k} x^k $</p>\n<p>So, the coefficients $ T_k $ are binomial coefficients:</p>\n<p>$ T_k = \\binom{n}{k} $</p>\n<p><strong>Step 2: Write the Sum Using Binomial Coefficients</strong></p>\n<p>Substitute $ T_k = \\binom{n}{k} $ into $ S $:</p>\n<p>$ S = \\sum_{k=1}^{n} k \\cdot \\binom{n}{k} $</p>\n<p><strong>Step 3: Use a Known Binomial Identity</strong></p>\n<p>Recall the identity for the sum involving $ k \\cdot \\binom{n}{k} $:</p>\n<p>$ \\sum_{k=0}^{n} k \\cdot \\binom{n}{k} = n \\cdot 2^{n-1} $</p>\n<p>But our sum starts from $ k = 1 $ instead of $ k = 0 $. However, since $ \\binom{n}{0} = 1 $ and $ 0 \\cdot \\binom{n}{0} = 0 $, the sum remains the same whether we start from $ k = 0 $ or $ k = 1 $:</p>\n<p>$ \\sum_{k=0}^{n} k \\cdot \\binom{n}{k} = \\sum_{k=1}^{n} k \\cdot \\binom{n}{k} $</p>\n<p>Therefore,</p>\n<p>$ S = n \\cdot 2^{n-1} $</p>\n<p><strong>Step 4: Conclusion</strong></p>\n<p>The value of the sum $ S $ is $ n \\cdot 2^{n-1} $.</p>\n<hr />\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{n\\,2^{\\,n\\,-\\,1}}$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2091,7 +2091,7 @@
     },
     "solution": "\n<p>Given equation:\n$ (1 + x)^n = 1 + T_1 x + T_2 x^2 + T_3 x^3 + \\ldots + T_n x^n \\quad \\text{----(1)} $</p>\n<p>For $ n = 3 $, the equation becomes:\n$ (1 + x)^3 = 1 + T_1 x + T_2 x^2 + T_3 x^3 $</p>\n<p>Expanding $ (1 + x)^3 $:\n$ 1 + 3x + 3x^2 + x^3 = 1 + T_1 x + T_2 x^2 + T_3 x^3 $</p>\n<p>By comparing coefficients from both sides, we find:\n$ T_1 = 3, \\quad T_2 = 3, \\quad T_3 = 1 $</p>\n<h4>Now, the required sum is:</h4>\n<p>$ S = 1 - T_1 + 2T_2 - 3T_3 + \\ldots + (-1)^n nT_n $</p>\n<p>For $ n = 3 $, this becomes:\n$ S = 1 - T_1 + 2T_2 - 3T_3 $\nSubstituting the values:\n$ S = 1 - 3 + 2 \\times 3 - 3 \\times 1 $\n$ S = 1 - 3 + 6 - 3 $\n$ S = 1 $</p>\n<h3>Conclusion:</h3>\n<p>The correct answer is $ \\boxed{1} $.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2214,7 +2214,7 @@
     },
     "solution": "<p>The binomial theorem states that:</p>\n<p>$$ (1 + x)^n = \\sum_{k=0}^n \\binom{n}{k} x^k $$</p>\n<p>This can be expanded to:</p>\n<p>$$ (1 + x)^n = 1 + \\binom{n}{1} x + \\binom{n}{2} x^2 + \\binom{n}{3} x^3 + \\dots + \\binom{n}{n} x^n $$</p>\n<p>In this expansion, we identify:</p>\n<p>$$ T_k = \\binom{n}{k} $$</p>\n<p>We are asked to find the sum:</p>\n<p>$$ \\sum_{k=1}^n T_k = \\binom{n}{1} + \\binom{n}{2} + \\binom{n}{3} + \\dots + \\binom{n}{n} $$</p>\n<p>From the binomial theorem, we know that:</p>\n<p>$$ (1 + 1)^n = \\sum_{k=0}^n \\binom{n}{k} $$</p>\n<p>Since $ (1 + 1)^n = 2^n $, this gives us:</p>\n<p>$$ 2^n = \\binom{n}{0} + \\binom{n}{1} + \\binom{n}{2} + \\dots + \\binom{n}{n} $$</p>\n<p>However, $\\binom{n}{0} = 1$, so we must subtract this from the total sum to get:</p>\n<p>$$ \\sum_{k=1}^n \\binom{n}{k} = 2^n - 1 $$</p>\n<p>Thus:</p>\n<p>$$ T_1 + T_2 + T_3 + \\dots + T_n = 2^n - 1 $$</p>\n<p>So the correct option is:</p>\n<p>Option B: $ 2^n - 1 $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2337,7 +2337,7 @@
     },
     "solution": "<p>To determine the mean of the numbers $1, 2, 3, \\ldots, 10$ with frequencies given by the binomial coefficients $ \\binom{9}{0}, \\binom{9}{1}, \\binom{9}{2}, \\ldots, \\binom{9}{9} $, we first need to understand the formula for the mean of a weighted dataset.</p>\n\n<p>The mean $\\mu$ of a dataset where each number $x_i$ has a corresponding frequency $f_i$ is given by:</p>\n\n<p>$$  \\mu = \\frac{\\sum_{i=1}^{n} x_i \\cdot f_i}{\\sum_{i=1}^{n} f_i} $$</p>\n\n<p>For the dataset $1, 2, 3, \\ldots, 10$ with frequencies $ \\binom{9}{0}, \\binom{9}{1}, \\binom{9}{2}, \\ldots, \\binom{9}{9} $, we have:</p>\n\n<p>First, we find the numerator $\\sum_{i=1}^{10} x_i \\cdot f_i$:</p>\n\n<p>$$ \\sum_{i=1}^{10} i \\cdot \\binom{9}{i-1}  = 1 \\cdot \\binom{9}{0} + 2 \\cdot \\binom{9}{1} + 3 \\cdot \\binom{9}{2} + \\ldots + 10 \\cdot \\binom{9}{9} $$</p>\n\n<p>Next, we find the denominator $\\sum_{i=0}^{9} \\binom{9}{i}$, which represents the total number of occurrences:</p>\n\n<p>$$ \\sum_{i=0}^{9} \\binom{9}{i} = 2^9 = 512  $$</p>\n\n<p>We also recall the binomial theorem applied to evaluate the weighted sum in the numerator. When the sum is accompanied by linear coefficients (such as $i$ in the one we're solving):</p>\n\n<p>$$  \\sum_{i=1}^{10} i \\cdot \\binom{9}{i-1} = \\sum_{k=0}^{9} (k+1) \\cdot \\binom{9}{k} $$</p>\n\n<p>Rewriting the expression inside the sum, we have:</p>\n\n<p>$$ \\sum_{k=0}^{9} (k+1) \\cdot \\binom{9}{k} = \\sum_{k=0}^{9} k \\cdot \\binom{9}{k} + \\sum_{k=0}^{9} \\binom{9}{k} $$</p>\n\n<p>The first part, $\\sum_{k=0}^{9} k \\cdot \\binom{9}{k}$, simplifies as follows:</p>\n\n<p>From properties of binomial coefficients:</p>\n\n<p>$$ k \\cdot \\binom{9}{k} = 9 \\cdot \\binom{8}{k-1} $$</p>\n\n<p>Therefore,</p>\n\n<p>$$  \\sum_{k=0}^{9} k \\cdot \\binom{9}{k} = 9 \\sum_{j=0}^{8} \\binom{8}{j} = 9 \\cdot 2^8 = 9 \\cdot 256 = 2304  $$</p>\n\n<p>Adding the sum of binomial coefficients:</p>\n\n<p>$$  \\sum_{k=0}^{9} \\binom{9}{k} = 2^9 = 512  $$</p>\n\n<p>Thus:</p>\n\n<p>$$ \\sum_{k=0}^{9} (k+1) \\cdot \\binom{9}{k} = 2304 + 512 = 2816 $$</p>\n\n<p>Finally, the mean is calculated as:</p>\n\n<p>$$ \\mu = \\frac{2816}{512} = 5.5 $$</p>\n\n<p>Therefore, the correct answer is Option C: 5.5</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2460,7 +2460,7 @@
     },
     "solution": "<p>The problem involves a binomial distribution where $ B(n, p) $ with $ n = 6 $. Given the condition $ 9P(X = 4) = P(X = 2) $, we need to determine the value of $ p $. </p>\n\n<p>The probability mass function for a binomial distribution is given by:</p>\n\n<p>\n\n<p>$$ P(X = k) = \\binom{n}{k} p^k (1 - p)^{n - k} $$</p>\n\n</p>\n\n<p>For $ n = 6 $, the probabilities can be written as:</p>\n\n<p>\n\n<p>$$ P(X = 4) = \\binom{6}{4} p^4 (1 - p)^2 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ P(X = 2) = \\binom{6}{2} p^2 (1 - p)^4 $$</p>\n\n</p>\n\n<p>According to the given condition, we have:</p>\n\n<p>\n\n<p>$$ 9 \\cdot \\binom{6}{4} p^4 (1 - p)^2 = \\binom{6}{2} p^2 (1 - p)^4 $$</p>\n\n</p>\n\n<p>First, let's compute the binomial coefficients:</p>\n\n<p>\n\n<p>$$ \\binom{6}{4} = \\frac{6!}{4! \\cdot (6 - 4)!} = 15 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ \\binom{6}{2} = \\frac{6!}{2! \\cdot (6 - 2)!} = 15 $$</p>\n\n</p>\n\n<p>Substituting these into the equation gives:</p>\n\n<p>\n\n<p>$$ 9 \\cdot 15 \\cdot p^4 \\cdot (1 - p)^2 = 15 \\cdot p^2 \\cdot (1 - p)^4 $$</p>\n\n</p>\n\n<p>We can cancel the common factors from both sides:</p>\n\n<p>\n\n<p>$$ 9 p^4 (1 - p)^2 = p^2 (1 - p)^4 $$</p>\n\n</p>\n\n<p>Divide both sides by $ p^2 (1 - p)^2 $, assuming $ p \\neq 0 $ and $ p \\neq 1 $ to avoid trivial solutions:</p>\n\n<p>\n\n<p>$$ 9 p^2 = (1 - p)^2 $$</p>\n\n</p>\n\n<p>Solving the quadratic equation:</p>\n\n<p>\n\n<p>$$ 9 p^2 = 1 - 2p + p^2 $$</p>\n\n</p>\n\n<p>Rearrange terms to form a standard quadratic equation:</p>\n\n<p>\n\n<p>$$ 8 p^2 + 2p - 1 = 0 $$</p>\n\n</p>\n\n<p>Using the quadratic formula $ p = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} $, where $ a = 8 $, $ b = 2 $, and $ c = -1 $:</p>\n\n<p>\n\n<p>$$ p = \\frac{-2 \\pm \\sqrt{2^2 - 4 \\cdot 8 \\cdot (-1)}}{2 \\cdot 8} $$</p>\n\n</p>\n\n<p>\n\n<p>$$ p = \\frac{-2 \\pm \\sqrt{4 + 32}}{16} $$</p>\n\n</p>\n\n<p>\n\n<p>$$ p = \\frac{-2 \\pm \\sqrt{36}}{16} $$</p>\n\n</p>\n\n<p>\n\n<p>$$ p = \\frac{-2 \\pm 6}{16} $$</p>\n\n</p>\n\n<p>This results in two solutions:</p>\n\n<p>\n\n<p>$$ p = \\frac{4}{16} = \\frac{1}{4} $$</p>\n\n</p>\n\n<p>\n\n<p>$$ p = \\frac{-8}{16} = -\\frac{1}{2} $$ (not a valid probability) </p></p>\n\n<p>Thus, the value of $ p $ is:</p>\n\n<p>Option A: $ \\frac{1}{4} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2583,7 +2583,7 @@
     },
     "solution": "<p>The binomial expansion of $$(a + b)^n$$ is given by:</p>\n\n<p>\n\n<p>$$ \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k $$</p>\n\n</p>\n\n<p>For the given expression $$\\left(x^{-\\frac{8}{3}} + x^2 \\log_{10} x \\right)^8$$, the sixth term corresponds to $$k = 5$$ because the general term $$T_{k+1}$$ corresponds to the term with $$k$$ in the binomial expansion. Here, $$a = x^{-\\frac{8}{3}}$$, $$b = x^2 \\log_{10} x$$ and $$n=8$$. The sixth term ($$T_6$$) is:</p>\n\n<p>\n\n<p>$$ T_6 = \\binom{8}{5} (x^{-\\frac{8}{3}})^{8-5} (x^2 \\log_{10} x)^5 $$</p>\n\n</p>\n\n<p>Simplifying the powers of $$x$$, we get:</p>\n\n<p>\n\n<p>$$ T_6 = \\binom{8}{5} (x^{-\\frac{8}{3}})^3 (x^2 \\log_{10} x)^5 $$</p>\n\n<p>$$ T_6 = \\binom{8}{5} x^{-8} (x^{10} (\\log_{10} x)^5) $$</p>\n\n</p>\n\n<p>Combining like terms:</p>\n\n<p>\n\n<p>$$ T_6 = \\binom{8}{5} x^{-8 + 10} (\\log_{10} x)^5 $$</p>\n\n<p>$$ T_6 = \\binom{8}{5} x^2 (\\log_{10} x)^5 $$</p>\n\n</p>\n\n<p>Given that this term equals 5600:</p>\n\n<p>\n\n<p>$$ \\binom{8}{5} x^2 (\\log_{10} x)^5 = 5600 $$</p>\n\n</p>\n\n<p>First, calculate the binomial coefficient $$\\binom{8}{5}$$:</p>\n\n<p>\n\n<p>$$ \\binom{8}{5} = \\binom{8}{3} = \\frac{8!}{5!3!} = \\frac{8 \\cdot 7 \\cdot 6}{3 \\cdot 2 \\cdot 1} = 56 $$</p>\n\n</p>\n\n<p>Thus, the equation simplifies to:</p>\n\n<p>\n\n<p>$$ 56 x^2 (\\log_{10} x)^5 = 5600 $$</p>\n\n</p>\n\n<p>Dividing both sides by 56:</p>\n\n<p>\n\n<p>$$ x^2 (\\log_{10} x)^5 = 100 $$</p>\n\n</p>\n\n<p>Let $$\\log_{10} x = y$$. Therefore, $$x = 10^y$$ and substituting back into the equation:</p>\n\n<p>\n\n<p>$$ (10^y)^2 y^5 = 100 $$</p>\n\n<p>$$ 10^{2y} y^5 = 100 $$</p>\n\n<p>$$ 10^{2y} y^5 = 10^2 $$</p>\n\n</p>\n\n<p>Comparing the exponents, we get:</p>\n\n<p>\n\n<p>$$ 2y + \\log_{10} y^5 = 2 $$</p>\n\n<p>$$ 2y + 5 \\log_{10} y = 2 $$</p>\n\n</p>\n\n<p>This equation must be solved numerically or through trial and error. However, by inspection and testing values, we find that when $$x = 10$$:</p>\n\n<p>\n\n<p>$$ \\log_{10} 10 = 1 $$</p>\n\n<p>so</p>\n\n<p>$$ 2 \\cdot 1 + 5 \\cdot \\log_{10} 1 = 2 $$</p>\n\n<p>which simplifies to:</p>\n\n<p>$$ 2 \\cdot 1 + 5 \\cdot 0 = 2 $$</p>\n\n</p>\n\n<p>Hence, the value of $$x$$ is 10.</p>\n\n<p>The correct option is:\n\n<strong>Option D: 10</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2706,7 +2706,7 @@
     },
     "solution": "<h3>Given Expression:</h3>\n\n<p>$ (3x - y)^4 (x + 3y)^4 $</p>\n\n<p>First, we simplify:</p>\n\n<p>$ (3x - y)(x + 3y) $</p>\n\n<p>Expanding the product:</p>\n\n<p>$ = 3x^2 + 9xy - xy - 3y^2 = 3x^2 + 8xy - 3y^2 $</p>\n\n<p>Thus, the expression becomes:</p>\n\n<p>$ (3x^2 + 8xy - 3y^2)^4 $</p>\n\n<h3>Multinomial Expansion:</h3>\n\n<p>The expression $(3x^2 + 8xy - 3y^2)^4$ is a multinomial expansion. To find the number of distinct terms in the expansion, we use the general formula for the number of terms in the expansion of $(a_1 + a_2 + \\cdots + a_m)^n$:</p>\n\n<p>$ \\text{Number of terms} = \\binom{n + m - 1}{m - 1} $</p>\n\n<p>Here, $n = 4$ (the exponent) and $m = 3$ (the number of different terms: $3x^2$, $8xy$, and $-3y^2$).</p>\n\n<p>Plugging in the values:</p>\n\n<p>$ \\text{Number of terms} = \\binom{4 + 3 - 1}{3 - 1} = \\binom{6}{2} $</p>\n\n<p>Calculating $\\binom{6}{2}$:</p>\n\n<p>$ \\binom{6}{2} = \\frac{6!}{2!(6-2)!} = \\frac{6 \\times 5}{2 \\times 1} = 15 $</p>\n\n<h3>Conclusion</h3>\n\n<p>Therefore, the number of distinct terms in the expansion of $(3x - y)^4 (x + 3y)^4$ is:</p>\n\n<p>$ \\boxed{15} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2829,7 +2829,7 @@
     },
     "solution": "<p>To determine the correctness of the statements about the binomial coefficient $ C(n, r) $ or $ \\binom{n}{r} $, let's apply the concepts of binomial coefficients:</p>\n\n<h3>Binomial Coefficient $ \\binom{n}{r} $:</h3>\n\n<p>The binomial coefficient $ \\binom{n}{r} $ represents the number of ways to choose $ r $ elements from $ n $ elements without regard to the order. It is given by:</p>\n\n<p>$ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} $</p>\n\n<h3>Key Concepts:</h3>\n\n<ol>\n<li><strong>When $ n $ is even</strong>:</li>\n</ol>\n<ul>\n<li>The greatest binomial coefficient occurs at $ r = \\frac{n}{2} $.</li><br>\n<li>For $ n = 2r $, the binomial coefficient $ \\binom{n}{r} $ is maximized.</li>\n</ul>\n<ol>\n<li><strong>When $ n $ is odd</strong>:</li>\n</ol>\n<ul>\n<li>The greatest binomial coefficient occurs at $ r = \\frac{n-1}{2} $ and $ r = \\frac{n+1}{2} $.</li><br>\n<li>For $ n = 2r - 1 $ and $ n = 2r + 1 $, the binomial coefficient $ \\binom{n}{r} $ is maximized.</li>\n</ul>\n<h3>Verification of Statements:</h3>\n\n<ol>\n<li><strong>Statement 1</strong>: $ C(n, r) $ is greatest if $ n = 2r $.</li>\n</ol>\n<ul>\n<li>This means $ n $ is even, and the maximum binomial coefficient occurs at $ r = \\frac{n}{2} $.</li><br>\n<li>This statement is correct.</li>\n</ul>\n<ol>\n<li><strong>Statement 2</strong>: $ C(n, r) $ is greatest if $ n = 2r - 1 $ and $ n = 2r + 1 $.</li>\n</ol>\n<ul>\n<li>This means $ n $ is odd, and the maximum binomial coefficient occurs at $ r = \\frac{n-1}{2} $ or $ r = \\frac{n+1}{2} $.</li><br>\n<li>This statement is also correct.</li>\n</ul>\n<h3>Conclusion:</h3>\n\n<p>Both statements are correct. Therefore, the correct answer is:</p>\n\n<p>$ \\boxed{\\text{Option C: Both 1 and 2}} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2952,7 +2952,7 @@
     },
     "solution": "<p>The given expression is:</p>\n\n<p>$$\\sum_{r=0}^n 2^r \\binom{n}{r}$$</p>\n\n<p>To find the value of this sum, we can use the binomial theorem. The binomial theorem states that:</p>\n\n<p>$$ (x + y)^n = \\sum_{r=0}^n \\binom{n}{r} x^{n-r} y^r $$</p>\n\n<p>We can compare this with our given expression by setting $ x = 1 $ and $ y = 2 $, so our sum becomes:</p>\n\n<p>$$ (1 + 2)^n = \\sum_{r=0}^n \\binom{n}{r} 1^{n-r} 2^r $$</p>\n\n<p>Simplifying $1^{n-r}$ to 1, we get:</p>\n\n<p>$$ (1 + 2)^n = \\sum_{r=0}^n \\binom{n}{r} 2^r $$</p>\n\n<p>Therefore, the sum is equal to:</p>\n\n<p>$$ 3^n $$</p>\n\n<p>So, the correct answer is:</p>\n\n<p>Option B</p>\n\n<p><span style=\"\">3</span><sup>n</sup></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3075,7 +3075,7 @@
     },
     "solution": "<ol>\n<li><p>General term of the expansion of $(p + qx)^9$:  </p>\n<p>$$T_{r+1} = \\binom{9}{r}\\,p^{9-r}\\,(q x)^r = \\binom{9}{r}\\,p^{9-r}\\,q^r\\,x^r.$$  </p></li>\n<li><p>Coefficient of $x^3$ (take $r=3$):  </p>\n<p>$$a_3 = \\binom{9}{3}\\,p^{9-3}\\,q^3 = \\binom{9}{3}\\,p^6\\,q^3.$$  </p></li>\n<li><p>Coefficient of $x^6$ (take $r=6$):  </p>\n<p>$$a_6 = \\binom{9}{6}\\,p^{9-6}\\,q^6 = \\binom{9}{6}\\,p^3\\,q^6.$$  </p></li>\n<li><p>Equate $a_3$ and $a_6$:  </p>\n<p>$$\\binom{9}{3}\\,p^6\\,q^3 \\;=\\;\\binom{9}{6}\\,p^3\\,q^6.$$  </p>\n<p>Since $\\binom{9}{3} = \\binom{9}{6}$ and assuming $p,q\\neq0$, divide both sides by $\\binom{9}{3}\\,p^3\\,q^3$:  </p>\n<p>$$p^3 = q^3 \\quad\\Longrightarrow\\quad q = p.$$</p></li>\n</ol>\n<p>Answer: q = p.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3198,7 +3198,7 @@
     },
     "solution": "<ol>\n<li><p>Number of terms in $(p+qx)^9$  </p>\n<p>Total terms = $9+1=10$ (even), so there are two middle terms (5th and 6th).</p></li>\n<li><p>General term (ascending powers of $x$):  </p>\n<p>$      T_{r+1} = \\binom{9}{r}\\,p^{9-r}\\,(qx)^r,      \\quad\\text{for }r=0,1,\\dots,9.    $  </p>\n<p>Coefficient of $x^r$ is $\\displaystyle \\binom{9}{r}p^{9-r}q^r$.</p></li>\n<li><p>Middle terms correspond to $r=4$ and $r=5$:  </p>\n<p>$      C_4 = \\binom{9}{4}p^{9-4}q^4 = \\binom{9}{4}p^5q^4,      \\quad      C_5 = \\binom{9}{5}p^{9-5}q^5 = \\binom{9}{5}p^4q^5.    $</p></li>\n<li><p>Compute $\\binom{9}{4}$ and $\\binom{9}{5}$:  </p>\n<p>$\\displaystyle \\binom{9}{4}=\\binom{9}{5}=126$.  </p>\n<p>Hence</p>\n<p>$      C_4 = 126\\,p^5q^4,\\quad      C_5 = 126\\,p^4q^5.    $</p></li>\n<li><p>Ratio of the two middle coefficients  </p>\n<p>$      \\frac{C_4}{C_5}      = \\frac{126\\,p^5q^4}{126\\,p^4q^5}      = \\frac{p^5}{p^4}\\,\\frac{q^4}{q^5}      = \\frac{p}{q}.    $</p></li>\n</ol>\n<p>Answer: Option B, $\\displaystyle \\frac{p}{q}$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3321,7 +3321,7 @@
     },
     "solution": "<ol>\n<li><p>General term of $(p+qx)^9$:  </p>\n<p>$      T_{r+1} = \\binom{9}{r} p^{9-r}(qx)^r = \\binom{9}{r}p^{9-r}q^r\\,x^r.    $</p></li>\n<li><p>Coefficient of $x^2$ ($r=2$):  </p>\n<p>$      \\binom{9}{2}p^{7}q^2 = 36\\,p^7q^2.    $</p></li>\n<li><p>Coefficient of $x^4$ ($r=4$):  </p>\n<p>$      \\binom{9}{4}p^{5}q^4 = 126\\,p^5q^4.    $</p></li>\n<li><p>Equate the two coefficients:  </p>\n<p>$      36\\,p^7q^2 \\;=\\;126\\,p^5q^4      \\;\\Longrightarrow\\;      \\frac{36}{126}\\;=\\;\\frac{q^2}{p^2}      \\;\\Longrightarrow\\;      \\frac{2}{7} \\;=\\;\\frac{q^2}{p^2}      \\;\\Longrightarrow\\;      p^2 : q^2 = 7 : 2.    $</p></li>\n</ol>\n<p>Answer: Option B.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3444,7 +3444,7 @@
     },
     "solution": "<p>To determine the number of terms in the expansion of the given expression, we start by simplifying it. The given expression is:</p>\n\n<p>$$\\left(1 + \\frac{2}{x}\\right)^9 \\left(1 - \\frac{2}{x}\\right)^9$$</p>\n\n<p>We can observe that this expression is in the form of the product of two binomials raised to the same power. By using a known identity of binomials, we have:</p>\n\n<p>$$ (1 + a)^n (1 - a)^n = \\left[(1 + a)(1 - a)\\right]^n = (1 - a^2)^n $$</p>\n\n<p>In our case, $ a = \\frac{2}{x} $ and $ n = 9 $. Substituting these values in, we get:</p>\n\n<p>$$ \\left(1 + \\frac{2}{x}\\right)^9 \\left(1 - \\frac{2}{x}\\right)^9 = \\left(1 - \\left(\\frac{2}{x}\\right)^2\\right)^9 = \\left(1 - \\frac{4}{x^2}\\right)^9 $$</p>\n\n<p>Next, we need to determine the number of distinct terms in the binomial expansion of $ \\left(1 - \\frac{4}{x^2}\\right)^9 $. The general term in the binomial expansion of $ (1 - y)^n $ is given by:</p>\n\n<p>$$ T_k = \\binom{n}{k} (-y)^k = \\binom{9}{k} \\left(-\\frac{4}{x^2}\\right)^k $$</p>\n\n<p>Where $ \\binom{9}{k} $ is the binomial coefficient and $ k $ ranges from $ 0 $ to $ 9 $. This gives us $ 10 $ different terms (from $ k = 0 $ to $ k = 9 $). Therefore, $ k \\in 0, 1, 2, \\ldots, 9 $, representing 10 terms in total.</p>\n\n<p>Hence, the number of terms in the expansion is:</p>\n\n<p><strong>Option B: 10</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3567,7 +3567,7 @@
     },
     "solution": "<p>\n\n<p>To analyze these statements, we need to understand the binomial expansion of $$(x + y)^{10}$$. According to the Binomial Theorem, the expansion of $$(x + y)^n$$ is given by:</p>\n\n<p>$$ (x + y)^n = \\sum_{k=0}^{n} \\binom{n}{k} x^{n-k} y^k $$</p>\n\n<p>where $$\\binom{n}{k}$$ is the binomial coefficient.</p>\n\n<p>In the case of $$(x + y)^{10}$$, the binomial coefficients are $$\\binom{10}{k}$$, where $$k$$ ranges from 0 to 10.</p>\n\n</p>\n\n<p>\n\n<p>Let's first address each statement:</p>\n\n</p>\n\n<p>\n\n<strong>Statement 1:</strong> \"Among all the coefficients of the terms, the coefficient of the 6th term has the highest value.\"\n\n</p>\n\n<p>\n\n<p>The general term of the binomial expansion of $$(x + y)^{10}$$ is given by:</p>\n\n<p>$$ T_{k+1} = \\binom{10}{k} x^{10-k} y^k $$</p>\n\n<p>Thus, the 6th term corresponds to $$k = 5$$. To find the 6th term, we calculate:</p>\n\n<p>$$ T_6 = \\binom{10}{5} x^{10-5} y^5 = \\binom{10}{5} x^5 y^5 $$</p>\n\n<p>The binomial coefficient $$\\binom{10}{5}$$ is calculated as follows:</p>\n\n<p>$$ \\binom{10}{5} = \\frac{10!}{5! \\cdot (10-5)!} = \\frac{10!}{5! \\cdot 5!} = \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6}{5 \\times 4 \\times 3 \\times 2 \\times 1} = 252 $$</p>\n\n<p>To determine if this is the highest value, we compare it with other coefficients like $$\\binom{10}{4}$$ and $$\\binom{10}{6}$$:</p>\n\n<ul>\n<li>$$\\binom{10}{4} = \\binom{10}{6} = 210$$ (since $$\\binom{n}{k} = \\binom{n}{n-k}$$).</li><br>\n<li>We need not check further because $$\\binom{10}{5} = 252$$ is the highest.</li>\n</ul>\n<p>Hence, statement 1 is correct.</p>\n\n</p>\n\n<p>\n\n<strong>Statement 2:</strong> \"The coefficient of the 3rd term is equal to the coefficient of the 9th term.\"\n\n</p>\n\n<p>\n\n<p>The 3rd term corresponds to $$k = 2$$, and the 9th term corresponds to $$k = 8$$.</p>\n\n<p>Thus, the coefficients are:</p>\n\n<ul>\n<li>$$T_3 = \\binom{10}{2} x^{10-2} y^2 = \\binom{10}{2} x^8 y^2$$</li><br>\n<li>$$T_9 = \\binom{10}{8} x^{10-8} y^8 = \\binom{10}{8} x^2 y^8$$</li>\n</ul>\n<p>Using the property $$\\binom{n}{k} = \\binom{n}{n-k}$$:</p>\n\n<p>$$\\binom{10}{2} = \\binom{10}{8}$$</p>\n\n<p>Therefore, the coefficients are indeed equal.</p>\n\n<p>Hence, statement 2 is also correct.</p>\n\n</p>\n\n<p>\n\n<p>Having analyzed both statements, we find that both are correct.</p>\n\n</p>\n\n<p>\n\n<strong>Answer:</strong> Option C (Both 1 and 2)\n\n</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3690,7 +3690,7 @@
     },
     "solution": "\n<p>Given,</p>\n\n<p>C(51, 21) - C(51, 22) + C(51, 23) - C(51, 24) + C(51, 25) - C(51, 26) + C(51, 27) - C(51, 28) + C(51, 29) - C(51, 30)</p>\n\n<p>We know that&nbsp;<span style=\"line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">n</span>C<span style=\"line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em; font-size:10.5px;\">r&nbsp;</span>=&nbsp;<span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">n</span>C<span style=\"font-size: 10.5px;\">n-r</span></p>\n\n<p>So we can write,</p>\n\n<p>C(51, 21) = C(51, 30)</p>\n\n<p>C(51, 22) = C(51, 29)</p>\n\n<p>C(51, 23) = C(51, 28)</p>\n\n<p>C(51, 24) = C(51, 27)</p>\n\n<p>C(51, 25) = C(51, 26)</p>\n\n<p>So the above expression can be written as</p>\n\n<p>C(51, 30) - C(51, 29) + C(51, 28) - C(51, 27) + C(51, 26) - C(51, 26) + C(51, 27) - C(51, 28) + C(51, 29) - C(51, 30)</p>\n\n<p>= C(51, 30) - C(51, 30) + C(51, 29) - C(51, 29) + C(51, 28) - C(51, 28) + C(51, 27) - C(51, 27) + C(51, 26) - C(51, 26)</p>\n\n<p>= 0</p>\n\n<p>Checking option C:</p>\n\n<p>C(51, 51) - C(51, 0)</p>\n\n<p>Using&nbsp;<span style=\"line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size: 10.5px;\">n</span>C<span style=\"line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em; font-size: 10.5px;\">r&nbsp;</span>=&nbsp;<span style=\"line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size: 10.5px;\">n</span>C<sub>n</sub><span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">-r&nbsp;</span>we can write C(51, 51) = C(51, 0),</p>\n\n<p>C(51, 0) - C(51, 0) = 0</p>\n\n<p><strong>∴ The value of the expression is C(51, 51) - C(51, 0).</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3813,7 +3813,7 @@
     },
     "solution": "<p>To determine the (n + 1)th term from the end in the expansion of $$ \\left( x + \\frac{1}{x} \\right)^{2n} $$ when arranged in descending powers of $x$, we should first examine the general term in the binomial expansion of $$ \\left( x + \\frac{1}{x} \\right)^{2n} $$, which can be written as:</p>\n\n<p>$$ T_{k+1} = C(2n, k) \\cdot x^{2n-k} \\cdot \\left( \\frac{1}{x} \\right)^k = C(2n, k) \\cdot x^{2n-2k} $$</p>\n\n<p>Now, we need to find the position of the (n + 1)th term from the end in the sequence of terms arranged in descending powers of $x$. If there are $2n + 1$ terms in the expansion, the (n + 1)th term from the end corresponds to the (2n - n + 1)th term from the beginning, which simplifies to the (n + 1)th term from the beginning.</p>\n\n<p>Thus, the (n + 1)th term from the end is:</p>\n\n<p>$$ T_{n+1} = C(2n, n) \\cdot x^{2n-2n} = C(2n, n) \\cdot x^0 = C(2n, n) $$</p>\n\n<p>Therefore, the correct answer is Option C: $ C(2n, n) $.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3936,7 +3936,7 @@
     },
     "solution": "<p>To solve the division of binary numbers $ (1110011)_2 $ by $ (10111)_2 $, follow these steps:</p>\n\n<p>First, convert the binary numbers to their decimal equivalents to understand the calculation better.</p>\n\n<p>The binary number $ (1110011)_2 $ can be converted to decimal as follows:</p>\n\n<p>$$ 1 \\cdot 2^6 + 1 \\cdot 2^5 + 1 \\cdot 2^4 + 0 \\cdot 2^3 + 0 \\cdot 2^2 + 1 \\cdot 2^1 + 1 \\cdot 2^0 = 64 + 32 + 16 + 0 + 0 + 2 + 1 = 115 $$</p>\n\n<p>So, $ (1110011)_2 = 115_{10} $.</p>\n\n<p>The binary number $ (10111)_2 $ can be converted to decimal as follows:</p>\n\n<p>$$ 1 \\cdot 2^4 + 0 \\cdot 2^3 + 1 \\cdot 2^2 + 1 \\cdot 2^1 + 1 \\cdot 2^0 = 16 + 0 + 4 + 2 + 1 = 23 $$</p>\n\n<p>So, $ (10111)_2 = 23_{10} $.</p>\n\n<p>Now, perform the division in decimal form:</p>\n\n<p>$$ 115 \\div 23 = 5 $$</p>\n\n<p>Next, convert the decimal result back to binary:</p>\n\n<p>$$ 5_{10} = (101)_2 $$</p>\n\n<p>Therefore, the division $ (1110011)_2 $ by $ (10111)_2 $ results in $ (101)_2 $.</p>\n\n<p>Thus, the answer is:</p>\n\n<p><strong>Option A: $ (101)_2 $</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -4059,7 +4059,7 @@
     },
     "solution": "<p>We begin by noticing that the expression inside the parentheses can be rewritten in a familiar form. Observe that</p>\n<p>$$ \\left(\\frac{a}{b} + \\frac{b}{a}\\right)^2 = \\frac{a^2}{b^2} + 2\\left(\\frac{a}{b}\\cdot\\frac{b}{a}\\right) + \\frac{b^2}{a^2} = \\frac{a^2}{b^2} + 2 + \\frac{b^2}{a^2}. $$</p>\n<p>This means that</p>\n<p>$$ \\frac{a^2}{b^2} + \\frac{b^2}{a^2} + 2 = \\left(\\frac{a}{b} + \\frac{b}{a}\\right)^2. $$</p>\n<p>Now, raising this to the 21st power gives</p>\n<p>$$ \\left(\\frac{a^2}{b^2} + \\frac{b^2}{a^2} + 2\\right)^{21} = \\left[\\left(\\frac{a}{b} + \\frac{b}{a}\\right)^2\\right]^{21} = \\left(\\frac{a}{b} + \\frac{b}{a}\\right)^{42}. $$</p>\n<p>Next, consider the expansion of the binomial</p>\n<p>$$ \\left(\\frac{a}{b} + \\frac{b}{a}\\right)^{42}. $$</p>\n<p>The Binomial Theorem tells us that the expansion of $$(p+q)^{42}$$ has</p>\n<p>$$ 42 + 1 = 43 $$</p>\n<p>terms, corresponding to the powers $k=0, 1, 2, \\dots, 42$. Each term will be of the form</p>\n<p>$$ \\binom{42}{k}\\left(\\frac{a}{b}\\right)^{42-k}\\left(\\frac{b}{a}\\right)^k. $$</p>\n<p>Since for different values of $k$ the exponents of $a$ and $b$ are different, no terms combine.</p>\n<p>Thus, the expansion contains 43 distinct terms.</p>\n<p>Therefore, the correct answer is Option D: 43.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4182,7 +4182,7 @@
     },
     "solution": "<h3>Explanation</h3>\n<h4>Formula Used</h4>\n<p>The binomial expansion formula allows us to expand an expression of the form $(x + y)^n$, where $n$ is a natural number. The expansion of $(x + y)^n$ contains $(n + 1)$ terms. The general form of the expansion is:</p>\n<p>$ (x + y)^n = \\binom{n}{0} x^n y^0 + \\binom{n}{1} x^{n-1} y^1 + \\binom{n}{2} x^{n-2} y^2 + \\cdots + \\binom{n}{n-1} x y^{n-1} + \\binom{n}{n} x^0 y^n $</p>\n<h4>Calculation</h4>\n<p>Consider the specific expansion of $(1 + x)^n$:</p>\n<p>$ (1 + x)^n = 1 + n x + \\cdots + n x^{n-1} + x^n $</p>\n<p>From this expansion, we can identify the coefficients of the terms relevant to the problem:</p>\n\n<p><p>$p$, the coefficient of the first term, is 1.</p></p>\n<p><p>$q$, the coefficient of the second term, is $n$.</p></p>\n<p><p>$r$, the coefficient of the $n$th term, is $n$.</p></p>\n<p><p>$s$, the coefficient of the $(n+1)$th term, is 1.</p></p>\n\n<p>Now, calculate the expression $(ps + qr)$:</p>\n<p>$ ps + qr = (1 \\cdot 1) + (n \\cdot n) = 1 + n^2 $</p>\n<p>The value of $(ps + qr)$ is thus $1 + n^2$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4305,7 +4305,7 @@
     },
     "solution": "<h3>Concept</h3>\n<p>The binomial coefficient formula is given by:</p>\n<p>$ \\binom{n}{r} = \\frac{n!}{r!(n - r)!} $</p>\n<p>For the expansion of $(1 + x)^n$, it can be written as:</p>\n<p>$ (1 + x)^n = \\binom{n}{0} \\cdot 1^{(n-0)} \\cdot x^0 + \\binom{n}{1} \\cdot 1^{(n-1)} \\cdot x^1 + \\binom{n}{2} \\cdot 1^{(n-2)} \\cdot x^2 + \\ldots + \\binom{n}{n} \\cdot 1^{(n-n)} \\cdot x^n $</p>\n<h3>Calculation</h3>\n<p>Given the expression $(1 + x)^{2n}$, the expansion is:</p>\n<p>$ \\binom{2n}{0} \\cdot 1^{(2n-0)} \\cdot x^0 + \\binom{2n}{1} \\cdot 1^{(2n-1)} \\cdot x^1 + \\ldots + \\binom{2n}{2n} \\cdot 1^{(2n-2n)} \\cdot x^{2n} $</p>\n\n<p><p><strong>First term</strong>: $\\binom{2n}{0} \\cdot 1 \\cdot 1 = 1$</p></p>\n<p><p><strong>Last term</strong>: $\\binom{2n}{2n} \\cdot 1 \\cdot x^{2n} = 1 \\cdot x^{2n} = x^{2n}$</p></p>\n\n<p>The sum of the first and last coefficients is calculated as:</p>\n<p>$  1 + x^{2n} $</p>\n\n<p><p>Coefficient of $1$ in the first term is 1.</p></p>\n<p><p>Coefficient of $x^{2n}$ in the last term is 1.</p></p>\n\n<p>Therefore, the sum of the coefficients of the first and last terms is:</p>\n<p>$  1 + 1 = 2 $</p>\n<p>Thus, the sum of these coefficients is 2.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4428,7 +4428,7 @@
     },
     "solution": "\n<p>Given:</p>\n<p>$ (1 + 4x + 4x^2)^5 $</p>\n<p>This can be rewritten as:</p>\n<p>$ [(1 + 2x)^2]^5 = (1 + 2x)^{10} $</p>\n<p>Here, $n = 10$ (which is even), thus:</p>\n<p>$ \\text{Middle term} = \\left(\\frac{n}{2} + 1\\right) = \\left(\\frac{10}{2} + 1\\right) = 6^{\\text{th}} \\text{ term} $</p>\n<p>Calculating the $6^{\\text{th}}$ term, $T_6$:</p>\n<p>$ T_6 = \\binom{10}{5} \\times (1)^5 \\times (2x)^5 $</p>\n<p>$ \\Rightarrow \\frac{10!}{5!5!} \\times 32x^5 $</p>\n<p>$ \\Rightarrow 8064x^5 $</p>\n<p><strong>Conclusion:</strong></p>\n<p>The coefficient of the middle term in the expansion of $(1 + 4x + 4x^2)^5$ is <strong>8064</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4551,7 +4551,7 @@
     },
     "solution": "<h3>Concept</h3>\n<p>The expansion of $(1 + x)^n$ is given by:</p>\n<p>$ (1 + x)^n = C_0 + xC_1 + x^2C_2 + \\ldots + x^nC_n. $</p>\n<p>In this expansion, $C_0, C_1, C_2, \\ldots, C_n$ are the coefficients.</p>\n<h3>Calculation</h3>\n<p>We need to find the sum:</p>\n<p>$  S = C_1 + C_2 + C_3 + \\ldots + C_n. $</p>\n\n<p><p>Consider the polynomial expansion:  </p>\n<p>$    (1 + x)^n = C_0 + xC_1 + x^2C_2 + \\ldots + x^nC_n.    $</p></p>\n<p><p>Substitute $x = 1$ into the expansion:</p>\n<p>$    (1 + 1)^n = C_0 + C_1 + C_2 + \\ldots + C_n = 2^n.    $</p></p>\n<p><p>Notice that the left-hand side of this equation simplifies to $2^n$.</p></p>\n<p><p>Since $C_0 = 1$ (the coefficient of $x^0$ in the expansion), we find:</p>\n<p>$    C_1 + C_2 + \\ldots + C_n = 2^n - C_0 = 2^n - 1.    $</p></p>\n\n<p>Thus, the value of $C_1 + C_2 + C_3 + \\ldots + C_n$ is $2^n - 1$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"

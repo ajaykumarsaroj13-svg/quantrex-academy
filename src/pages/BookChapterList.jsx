@@ -16,36 +16,60 @@ export default function BookChapterList({ book, setActivePage, setPracticeChapte
 
   useEffect(() => {
     if (book.id === 'black-book-maths') {
-      const allowedChapters = [
-        'black_book_ch1_functions',
-        'black_book_ch2_limits',
-        'black_book_ch3_continuity',
-        'black_book_ch4_aod',
-        'black_book_ch5_integration'
+      const staticChapters = [
+        {
+          id: 'black-book-ch1-functions',
+          title: 'Functions',
+          totalQuestions: 183
+        },
+        {
+          id: 'black-book-ch2-limits',
+          title: 'Limits',
+          totalQuestions: 89
+        },
+        {
+          id: 'black-book-ch3-continuity',
+          title: 'Continuity and Differentiability',
+          totalQuestions: 187
+        },
+        {
+          id: 'black-book-ch4-aod',
+          title: 'Application of Derivatives',
+          totalQuestions: 145
+        },
+        {
+          id: 'black-book-ch5-integration',
+          title: 'Indefinite and Definite Integration',
+          totalQuestions: 183
+        },
+        {
+          id: 'quadratic-equations',
+          title: 'Quadratic Equations',
+          totalQuestions: 269
+        },
+        {
+          id: 'sequence-and-series',
+          title: 'Sequence and Series',
+          totalQuestions: 142
+        },
+        {
+          id: 'determinants',
+          title: 'Determinants',
+          totalQuestions: 49
+        },
+        {
+          id: 'adv-area-under-curves',
+          title: 'Area Under Curves',
+          totalQuestions: 37
+        },
+        {
+          id: 'adv-differential-equations',
+          title: 'Differential Equations',
+          totalQuestions: 49
+        }
       ];
-      // Since it's a static site, we can fetch the data from the public folder or import it
-      fetch(import.meta.env.BASE_URL + 'blackbook-data-v4.js')
-        .then(res => res.text())
-        .then(text => {
-          // It's a JS file defining window.blackBookDemoData
-          const script = document.createElement('script');
-          script.text = text;
-          document.head.appendChild(script);
-          if (window.DEFAULT_BLACKBOOK) {
-            const filteredData = window.DEFAULT_BLACKBOOK
-              .filter(c => allowedChapters.includes(c.id))
-              .map(c => ({
-                ...c,
-                totalQuestions: c.questions ? c.questions.length : 0
-              }));
-            setBookData(prev => ({ ...prev, chapters: filteredData }));
-          }
-          setLoading(false);
-        })
-        .catch(err => {
-          console.error("Failed to load blackbook chapters:", err);
-          setLoading(false);
-        });
+      setBookData(prev => ({ ...prev, chapters: staticChapters }));
+      setLoading(false);
     } else {
       setLoading(false);
     }
@@ -122,7 +146,7 @@ export default function BookChapterList({ book, setActivePage, setPracticeChapte
                 </p>
               </div>
               
-              {chapter.questions && chapter.questions.length > 0 && (
+              {chapter.totalQuestions > 0 && (
                 <div className={`h-10 w-10 rounded-full flex items-center justify-center transition-transform group-hover:scale-110 ${
                   isLight ? 'bg-blue-50 text-electric' : 'bg-electric/20 text-electric'
                 }`}>

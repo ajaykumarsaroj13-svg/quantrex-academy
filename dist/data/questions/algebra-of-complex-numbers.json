@@ -16,7 +16,8 @@
     ],
     "solution": "<p>$ 50\\left(\\frac{2x}{1+3i}-\\frac{y}{1-2i}\\right)=31+17i $</p>\n<p>We need to find $10(x-3y)$.</p>\n<p>First, simplify the fractions by rationalising the denominators.</p>\n<p>$ \\frac{2x}{1+3i}=\\frac{2x(1-3i)}{(1+3i)(1-3i)} $</p>\n<p>$ =\\frac{2x(1-3i)}{1+9}=\\frac{2x(1-3i)}{10} $</p>\n<p>$ =\\frac{x}{5}(1-3i) $</p>\n<p>Similarly,</p>\n<p>$ \\frac{y}{1-2i}=\\frac{y(1+2i)}{(1-2i)(1+2i)} $</p>\n<p>$ =\\frac{y(1+2i)}{1+4}=\\frac{y(1+2i)}{5} $</p>\n<p>Now substitute into the given equation:</p>\n<p>$ 50\\left(\\frac{x}{5}(1-3i)-\\frac{y}{5}(1+2i)\\right)=31+17i $</p>\n<p>Take $\\frac{1}{5}$ common inside:</p>\n<p>$ 50\\cdot \\frac{1}{5}\\left[x(1-3i)-y(1+2i)\\right]=31+17i $</p>\n<p>$ 10\\left[x(1-3i)-y(1+2i)\\right]=31+17i $</p>\n<p>Expand:</p>\n<p>$ 10\\left[x-3xi-y-2yi\\right]=31+17i $</p>\n<p>$ 10\\left[(x-y)+(-3x-2y)i\\right]=31+17i $</p>\n<p>So,</p>\n<p>$ 10(x-y)+10(-3x-2y)i=31+17i $</p>\n<p>Now compare real and imaginary parts:</p>\n<p>$ 10(x-y)=31 $</p>\n<p>$ 10(-3x-2y)=17 $</p>\n<p>Thus,</p>\n<p>$ x-y=\\frac{31}{10} $</p>\n<p>$ -3x-2y=\\frac{17}{10} $</p>\n<p>Now solve these equations.</p>\n<p>From the first equation,</p>\n<p>$ x=y+\\frac{31}{10} $</p>\n<p>Substitute into the second:</p>\n<p>$ -3\\left(y+\\frac{31}{10}\\right)-2y=\\frac{17}{10} $</p>\n<p>$ -3y-\\frac{93}{10}-2y=\\frac{17}{10} $</p>\n<p>$ -5y=\\frac{17}{10}+\\frac{93}{10} $</p>\n<p>$ -5y=\\frac{110}{10}=11 $</p>\n<p>$ y=-\\frac{11}{5} $</p>\n<p>Then</p>\n<p>$ x=y+\\frac{31}{10}=-\\frac{11}{5}+\\frac{31}{10} $</p>\n<p>$ x=-\\frac{22}{10}+\\frac{31}{10}=\\frac{9}{10} $</p>\n<p>Now find:</p>\n<p>$ 10(x-3y)=10\\left(\\frac{9}{10}-3\\left(-\\frac{11}{5}\\right)\\right) $</p>\n<p>$ =10\\left(\\frac{9}{10}+\\frac{33}{5}\\right) $</p>\n<p>$ =10\\left(\\frac{9}{10}+\\frac{66}{10}\\right) $</p>\n<p>$ =10\\cdot \\frac{75}{10}=75 $</p>\n<p>Therefore, the value of $10(x-3y)$ is</p>\n<p>$ \\boxed{75} $</p>\n<p>So, the correct option is $\\boxed{\\text{D}}$.</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 2nd April Morning Shift"
+    "title": "JEE Main 2026 (Online) 2nd April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ed3",
@@ -35,7 +36,8 @@
     ],
     "solution": "<p>Given:</p>\n<ul>\n<li><p>$\\alpha,\\beta$ are roots of $x^2+ax+b=0$</p></li>\n<li><p>$\\beta-\\alpha=\\sqrt{11}$</p></li>\n<li><p>$\\beta^2-\\alpha^2=3i\\sqrt{11}$</p></li>\n</ul>\n<p>We have to find $\\left(\\beta^3-\\alpha^3\\right)^2$.</p>\n<p>Now,</p>\n<p>$$ \\beta^2-\\alpha^2=(\\beta-\\alpha)(\\beta+\\alpha) $$</p>\n<p>Substituting the given values,</p>\n<p>$$ 3i\\sqrt{11}=\\sqrt{11}(\\beta+\\alpha) $$</p>\n<p>Since $\\sqrt{11}\\neq 0$, we get</p>\n<p>$$ \\beta+\\alpha=3i $$</p>\n<p>Now use the identity</p>\n<p>$$ \\beta^3-\\alpha^3=(\\beta-\\alpha)(\\beta^2+\\alpha\\beta+\\alpha^2) $$</p>\n<p>So first let us find $\\beta^2+\\alpha\\beta+\\alpha^2$.</p>\n<p>We know</p>\n<p>$$ (\\beta+\\alpha)^2=\\beta^2+\\alpha^2+2\\alpha\\beta $$</p>\n<p>Also,</p>\n<p>$$ \\alpha\\beta=\\frac{(\\alpha+\\beta)^2-(\\beta-\\alpha)^2}{4} $$</p>\n<p>Substitute the values:</p>\n<p>$$ \\alpha+\\beta=3i,\\qquad \\beta-\\alpha=\\sqrt{11} $$</p>\n<p>Thus,</p>\n<p>$$ \\alpha\\beta=\\frac{(3i)^2-(\\sqrt{11})^2}{4} =\\frac{-9-11}{4} =\\frac{-20}{4} =-5 $$</p>\n<p>Now,</p>\n<p>$$ \\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta $$</p>\n<p>So,</p>\n<p>$$ \\alpha^2+\\beta^2=(3i)^2-2(-5)=-9+10=1 $$</p>\n<p>Hence,</p>\n<p>$$ \\beta^2+\\alpha\\beta+\\alpha^2=1+(-5)=-4 $$</p>\n<p>Therefore,</p>\n<p>$$ \\beta^3-\\alpha^3=(\\beta-\\alpha)(\\beta^2+\\alpha\\beta+\\alpha^2) =\\sqrt{11}\\cdot(-4) =-4\\sqrt{11} $$</p>\n<p>Now square it:</p>\n<p>$$ \\left(\\beta^3-\\alpha^3\\right)^2=\\left(-4\\sqrt{11}\\right)^2=16\\cdot 11=176 $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{176} $$</p>\n<p>Hence, Option B is correct.</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 5th April Morning Shift"
+    "title": "JEE Main 2026 (Online) 5th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ed4",
@@ -54,7 +56,8 @@
     ],
     "solution": "<p>$\\begin{aligned} & z=\\frac{-\\sqrt{6} i \\pm \\sqrt{-6+12}}{2} \\\\ & =\\frac{-\\sqrt{6} i \\pm \\sqrt{6}}{2} \\\\ & =\\frac{\\sqrt{6}}{2}( \\pm 1-i)\\end{aligned}$</p>\n<p>$\\begin{aligned} & \\alpha=\\frac{-\\sqrt{6}}{2}(1+\\mathrm{i}), \\beta=\\frac{\\sqrt{6}}{2}(1-\\mathrm{i}) \\\\ & \\alpha=\\frac{-\\sqrt{6}}{2} \\times \\sqrt{2} \\mathrm{e}^{\\mathrm{i} \\pi / 4}, \\beta=+\\frac{\\sqrt{6}}{2} \\times \\sqrt{2}-\\mathrm{i} \\pi / 4 \\\\ & \\alpha=-\\sqrt{3} \\mathrm{e}^{\\mathrm{i} \\pi / 4}, \\beta=+\\sqrt{3} \\mathrm{e}^{-\\mathrm{i} \\pi / 4}\\end{aligned}$</p>\n<p>$\\begin{aligned} & \\alpha^8+\\beta^8=81 \\cdot \\mathrm{e}^{\\mathrm{i} 2 \\pi}+81 \\cdot \\mathrm{e}^{\\mathrm{i}(-2 \\pi)} \\\\ & =81(1+1)=162\\end{aligned}$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 6th April Evening Shift"
+    "title": "JEE Main 2026 (Online) 6th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ed5",
@@ -73,7 +76,8 @@
     ],
     "solution": "<p>To solve the problem, we start with the given information about the complex numbers $ z_1, z_2, $ and $ z_3 $, which lie on the unit circle $ |z| = 1 $. Their arguments are as follows:</p>\n\n<p><p>$ \\arg(z_1) = -\\frac{\\pi}{4} $</p></p>\n<p><p>$ \\arg(z_2) = 0 $</p></p>\n<p><p>$ \\arg(z_3) = \\frac{\\pi}{4} $</p></p>\n\n<p>Thus, the complex numbers can be represented as:</p>\n\n<p><p>$ z_1 = e^{-i\\frac{\\pi}{4}} = \\frac{1}{\\sqrt{2}} - \\frac{i}{\\sqrt{2}} $</p></p>\n<p><p>$ z_2 = e^{i\\cdot 0} = 1 $</p></p>\n<p><p>$ z_3 = e^{i\\frac{\\pi}{4}} = \\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}} $</p></p>\n\n<p>Next, calculate the conjugates needed:</p>\n\n<p><p>$ \\bar{z}_2 = 1 $</p></p>\n<p><p>$ \\bar{z}_3 = \\frac{1}{\\sqrt{2}} - \\frac{i}{\\sqrt{2}} $</p></p>\n<p><p>$ \\bar{z}_1 = \\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}} $</p></p>\n\n<p>We need to evaluate:</p>\n<p>$ z_1 \\bar{z}_2 + z_2 \\bar{z}_3 + z_3 \\bar{z}_1 $</p>\n\n<p>Calculate each term separately:</p>\n\n\n<p><p>$ z_1 \\bar{z}_2 = \\left(\\frac{1}{\\sqrt{2}} - \\frac{i}{\\sqrt{2}}\\right) \\cdot 1 = \\frac{1}{\\sqrt{2}} - \\frac{i}{\\sqrt{2}} $</p></p>\n<p><p>$ z_2 \\bar{z}_3 = 1 \\cdot \\left(\\frac{1}{\\sqrt{2}} - \\frac{i}{\\sqrt{2}}\\right) = \\frac{1}{\\sqrt{2}} - \\frac{i}{\\sqrt{2}} $</p></p>\n<p><p>$ z_3 \\bar{z}_1 = \\left(\\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}}\\right) \\cdot \\left(\\frac{1}{\\sqrt{2}} + \\frac{i}{\\sqrt{2}}\\right) = \\frac{(1 + i)^2}{2} = \\frac{1 + 2i - 1}{2} = i $</p></p>\n\n\n<p>Sum the evaluated terms:</p>\n\n\n<p><p>$ z_1 \\bar{z}_2 + z_2 \\bar{z}_3 + z_3 \\bar{z}_1 = \\left(\\frac{1}{\\sqrt{2}} - \\frac{i}{\\sqrt{2}}\\right) + \\left(\\frac{1}{\\sqrt{2}} - \\frac{i}{\\sqrt{2}}\\right) + i $</p></p>\n<p><p>Simplify: </p>\n<p>$ = \\sqrt{2} + i - \\sqrt{2}i = \\sqrt{2} + i(1-\\sqrt{2}) $</p></p>\n\n\n<p>Calculate the modulus squared:</p>\n\n\n<p><p>$ \\left| \\sqrt{2} + i (1 - \\sqrt{2}) \\right|^2 = (\\sqrt{2})^2 + (1-\\sqrt{2})^2 $</p></p>\n<p><p>$ = 2 + (1 - 2\\sqrt{2} + 2) = 5 - 2\\sqrt{2} $</p></p>\n\n<p>Thus, the expression $ |z_1 \\bar{z}_2 + z_2 \\bar{z}_3 + z_3 \\bar{z}_1|^2 $ simplifies as follows:</p>\n\n<p><p>$ \\alpha = 5 $</p></p>\n<p><p>$ \\beta = -2 $</p></p>\n\n<p>Finally, compute $ \\alpha^2 + \\beta^2 $:</p>\n\n<p>$ \\alpha^2 + \\beta^2 = 5^2 + (-2)^2 = 25 + 4 = 29 $</p>\n\n<p>Therefore, the value of $ \\alpha^2 + \\beta^2 $ is 29.</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 22nd January Morning Shift"
+    "title": "JEE Main 2025 (Online) 22nd January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ed6",
@@ -92,7 +96,8 @@
     ],
     "solution": "<p>$\\begin{aligned} &amp; |z|=1 \\\\ &amp; \\left|\\frac{z}{\\bar{z}}+\\frac{\\bar{z}}{z}\\right|=1 \\\\ &amp; \\Rightarrow\\left|z^2+(\\bar{z})^2\\right|=1 \\\\ &amp; \\text { Let } z=x+i y \\\\ &amp; \\Rightarrow\\left|(x+i y)^2+(x-i y)^2\\right|=1 \\\\ &amp; \\Rightarrow\\left|2 x^2-2 y^2\\right|=1 \\\\ &amp; \\Rightarrow\\left|x^2-y^2\\right|=\\frac{1}{2} \\\\ &amp; \\Rightarrow x^2-y^2=\\frac{ \\pm 1}{2} \\\\ &amp; \\text { and } x^2+y^2=1\\end{aligned}$</p>\n<p>Case I: $x^2-y^2=\\frac{1}{2}$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m8ii1mj7/0971f1cd-0183-43bf-a65d-cd6f19f1d998/cfdc0a30-062b-11f0-95f4-0f12c369875d/file-jaoe38c1m8ii1mj8.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m8ii1mj7/0971f1cd-0183-43bf-a65d-cd6f19f1d998/cfdc0a30-062b-11f0-95f4-0f12c369875d/file-jaoe38c1m8ii1mj8.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 23rd January Evening Shift Mathematics - Complex Numbers Question 32 English Explanation 1\"></p>\n<p>Case II: $x^2-y^2=-\\frac{1}{2}$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m8ii2zdl/b25ccd9e-31b7-4dbd-bdc9-31ee9e90ca46/f5972890-062b-11f0-95f4-0f12c369875d/file-jaoe38c1m8ii2zdm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m8ii2zdl/b25ccd9e-31b7-4dbd-bdc9-31ee9e90ca46/f5972890-062b-11f0-95f4-0f12c369875d/file-jaoe38c1m8ii2zdm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 23rd January Evening Shift Mathematics - Complex Numbers Question 32 English Explanation 2\"></p>\n<p>Hence, we get 8 complex numbers.</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 23rd January Evening Shift"
+    "title": "JEE Main 2025 (Online) 23rd January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ed7",
@@ -111,7 +116,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\text { Sol. } 2 z^2-32-2 i=0 \\\\\n& 2\\left(z-\\frac{i}{z}\\right)=3 \\\\\n& \\alpha-\\frac{i}{\\alpha}=\\frac{3}{2} \\\\\n& \\Rightarrow \\alpha^2-\\frac{1}{\\alpha^2}-2 i=\\frac{9}{4} \\\\\n& \\Rightarrow \\alpha^2-\\frac{1}{\\alpha^2}-2 i=\\frac{9}{4} \\\\\n& \\Rightarrow \\frac{9}{4}+2 i=\\alpha^2-\\frac{1}{\\alpha^2} \\\\\n& \\Rightarrow \\frac{81}{16}-4+9 i=\\alpha^4+\\frac{1}{\\alpha^4}-2 \\\\\n& \\Rightarrow \\frac{49}{16}+9 i=\\alpha^4+\\frac{1}{\\alpha^4} \\\\\n& \\text { Similarly } \\\\\n& \\Rightarrow \\frac{49}{16}+9 i=\\beta^4+\\frac{1}{\\beta^4}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\frac{\\alpha^{19}+\\beta^{19}+\\alpha^{11}+\\beta^{11}}{\\alpha^{15}+\\beta^{15}}=\\frac{\\alpha^{15}\\left(\\alpha^4+\\frac{1}{\\alpha^4}\\right)+\\beta^{15}\\left(\\beta^4+\\frac{1}{\\beta^4}\\right)}{\\alpha^{15}+\\beta^{15}} \\\\\n& =\\frac{\\left(\\alpha^{15}+\\beta^{15}\\right)\\left(\\frac{49}{16}+9 \\mathrm{i}\\right)}{\\left(\\alpha^{15}+\\beta^{15}\\right)} \\\\\n& \\text { Real }=\\frac{49}{16} \\\\\n& \\text { Im }=9 \\\\\n& \\text { Ans. } 441\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 24th January Morning Shift"
+    "title": "JEE Main 2025 (Online) 24th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ed8",
@@ -130,7 +136,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& x^2-(3-2 i) x-(2 i-2)=0 \\\\\n& x=\\frac{(3-2 i) \\pm \\sqrt{(3-2 i)^2-4(1)(-(2 i-2))}}{2(1)} \\\\\n& ==\\frac{(3-2 i) \\pm \\sqrt{9-4-12 i+8 i-8}}{2} \\\\\n& ==\\frac{3-2 i \\pm \\sqrt{-3-4 i}}{2} \\\\\n& =\\frac{3-2 i \\pm \\sqrt{(1)^2+(2 i)^2-2(1)(2 i)}}{2} \\\\\n& =\\frac{3-2 \\mathrm{i} \\pm(1-2 \\mathrm{i})}{2} \\\\\n& \\Rightarrow \\frac{3-2 \\mathrm{i}+1-2 \\mathrm{i}}{2} \\text { or } \\frac{3-2 \\mathrm{i}-1+2 \\mathrm{i}}{2} \\\\\n& \\Rightarrow 2-2 \\mathrm{i} \\text { or } 1+0 \\mathrm{i} \\\\\n& \\text { So } \\alpha \\gamma+\\beta \\delta=2(1)+(-2)(0)=2\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 28th January Evening Shift"
+    "title": "JEE Main 2025 (Online) 28th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ed9",
@@ -149,7 +156,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\frac{z^2+3 i}{z-2+i}=2+3 i \\\\\n& z^2+3 i=(z-2+i)(2+3 i) \\\\\n& z^2+3 i=2 z-4+2 i+3 i z-6 i-3 \\\\\n& z^2+3 i=(2 z-7)+i(3 z-4) \\\\\n& z^2-(2+3 i) z+(7+7 i)=0\n\\end{aligned}\\\\\n&\\text { This is a quadratic in } z \\text {. }\\\\\n&\\begin{aligned}\n& z_1+z_2=2+3 i \\\\\n& z_1+z_2=7+7 i \\\\\n& z_1^2+z_2^2=\\left(z_1+z_2\\right)^2-2 z_1 z_2 \\\\\n& =(2+3 i)^2-2(7+7 i) \\\\\n& =4-9+12 i-14-14 i \\\\\n& =-19-2 i\n\\end{aligned}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 3rd April Morning Shift"
+    "title": "JEE Main 2025 (Online) 3rd April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694eda",
@@ -168,7 +176,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\omega_1=(8 \\sin \\theta+7 \\cos \\theta)+i(\\sin \\theta+4 \\cos \\theta) \\\\\n& \\omega_2=(\\sin \\theta+4 \\cos \\theta)+i(8 \\sin \\theta+7 \\cos \\theta) \\\\\n& \\alpha=(8 \\sin \\theta+7 \\cos \\theta)+(\\sin \\theta+4 \\cos \\theta) \\\\\n& \\quad-(\\sin \\theta+4 \\cos \\theta)+(8 \\sin \\theta+7 \\cos \\theta)=0 \\\\\n& \\beta=(8 \\sin \\theta+7 \\cos \\theta)^2+(\\sin \\theta+4 \\cos \\theta)^2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =65 \\sin ^2 \\theta+65 \\cos ^2 \\theta+56 \\sin 2 \\theta+4 \\sin 2 \\theta \\\\\n& =65+60 \\sin 2 \\theta \\\\\n& (\\alpha+\\beta)_{\\max }=125=p \\\\\n& (\\alpha+\\beta)_{\\min }=5=q \\\\\n& p+q=130\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 4th April Evening Shift"
+    "title": "JEE Main 2025 (Online) 4th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694edb",
@@ -187,21 +196,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& 1+10 \\operatorname{Re}\\left(\\frac{2 \\cos \\theta+i \\sin \\theta}{\\cos \\theta-3 i \\sin \\theta}\\right)=0 \\\\\n& \\therefore \\mathrm{z}+\\overline{\\mathrm{z}}=2 \\operatorname{Re}(\\mathrm{z}) \\\\\n& \\frac{2 \\cos \\theta+\\mathrm{i} \\sin \\theta}{\\cos \\theta-3 \\mathrm{i} \\sin \\theta}+\\frac{2 \\cos \\theta-\\mathrm{i} \\sin \\theta}{\\cos \\theta+3 \\mathrm{i} \\sin \\theta}=2 \\times\\left(\\frac{-1}{10}\\right) \\\\\n& \\frac{\\left(2 \\cos ^2 \\theta-3 \\sin ^2 \\theta\\right)+\\left(2 \\cos ^2 \\theta\\right)-\\left(3 \\sin ^2 \\theta\\right)}{\\cos ^2 \\theta+9 \\sin ^2 \\theta}=\\frac{-2}{10} \\\\\n& \\Rightarrow \\frac{2 \\cos ^2 \\theta-3 \\sin ^2 \\theta}{\\cos ^2 \\theta+9 \\sin ^2 \\theta}=\\frac{-1}{10} \\\\\n& \\Rightarrow 20 \\cos ^2 \\theta-30 \\sin ^2 \\theta=-\\cos ^2 \\theta-9 \\sin ^2 \\theta \\\\\n& 21 \\cos ^2 \\theta-21 \\sin ^2 \\theta=0 \\\\\n& \\Rightarrow \\cos 2 \\theta=0 \\\\\n& 2 \\theta=\\frac{\\pi}{2}, \\frac{3 \\pi}{2}, \\frac{5 \\pi}{2}, \\frac{7 \\pi}{2} \\\\\n& \\Rightarrow \\sum \\theta^2=\\frac{\\pi^2}{16}+\\frac{9 \\pi^2}{16}+\\frac{25 \\pi^2}{16}+\\frac{49 \\pi^2}{16}=\\frac{84 \\pi^2}{16}=\\frac{21 \\pi^2}{4}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 8th April Evening Shift"
-  },
-  {
-    "_id": "6a2bdbba2762cf4b57694edc",
-    "question_id": "lwoi03v9",
-    "chapterId": "algebra-of-complex-numbers",
-    "subject": "Mathematics",
-    "topic": "algebra-of-complex-numbers",
-    "difficulty": "hard",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "<p>$$f(1)=1+a+b+c=-9 \\quad \\Rightarrow \\quad a+b+c=-10\\quad \\text{.... (i)}$$</p>\n<p>$$\\begin{aligned}\n& 4 x^3+3 a x^2+2 b x=0 \\text { roots are } \\sqrt{3} i,-\\sqrt{3} i, 0 \\\\\n& \\Rightarrow \\quad 4 \\mathrm{x}^2+3 \\mathrm{ax}+2 \\mathrm{~b}=0<\\begin{array}{l}\n\\sqrt{3} i \\\\\n-\\sqrt{3} i\n\\end{array} \\\\\n& \\Rightarrow \\quad \\mathrm{a}=0 \\& \\frac{2 \\mathrm{~b}}{4}=(\\sqrt{3} \\mathrm{i})(-\\sqrt{3} \\mathrm{i}) \\\\\n& \\mathrm{b}=6 \\text { use } \\mathrm{a}, \\mathrm{b} \\text { in (1) } \\Rightarrow \\mathrm{c}=-16 \\\\\n& \\Rightarrow \\quad \\mathrm{f}(\\mathrm{x})=\\mathrm{x}^4+6 \\mathrm{x}^2 \\quad 16=0 \\\\\n& \\left(x^2+8\\right)\\left(x^2-2\\right)=0 \\\\\n& \\Rightarrow \\quad \\mathrm{x}= \\pm \\sqrt{8} \\mathrm{i}, \\pm \\sqrt{2} \\quad \\Rightarrow \\quad\\left|\\alpha_1\\right|^2+\\left|\\alpha_2\\right|^2+\\left|\\alpha_3\\right|^2+\\left|\\alpha_4\\right|^2=20 \\\\\n&\n\\end{aligned}$$</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2024 Paper 1 Online"
+    "title": "JEE Main 2025 (Online) 8th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694edd",
@@ -220,7 +216,8 @@
     ],
     "solution": "Let $z=x+i y$\n<br/><br/>$$\n\\begin{aligned}\n& |z-1|=1 \\Rightarrow|x+i y-1|=1 \\\\\\\\\n& (x-1)^2+y^2=1 .......(1)\n\\end{aligned}\n$$\n<br/><br/>$\\begin{aligned} & (\\sqrt{2}-1)(z+\\bar{z})-i(z-\\bar{z})=2 \\sqrt{2} \\text { (Given) } \\\\\\\\ & (\\sqrt{2}-1)(2 x)-i(2 i y)=2 \\sqrt{2} \\\\\\\\ & (\\sqrt{2}-1) x+y=\\sqrt{2} .........(2)\\end{aligned}$\n<br/><br/>Solving (1) and (2), we get\n<br/><br/>$$\n\\begin{aligned}\n& (x-1)^2+(\\sqrt{2}-(\\sqrt{2}-1) x)^2=1 \\\\\\\\\n& \\left(x^2-2 x+1\\right)+2+(\\sqrt{2}-1)^2 x^2-2 \\sqrt{2}(\\sqrt{2}-1) x=0 \\\\\\\\\n& x^2\\left(1+(\\sqrt{2}-1)^2\\right)+x(-2-2 \\sqrt{2}(\\sqrt{2}-1))+2=0 \\\\\\\\\n& x^2(4-2 \\sqrt{2})+x(2 \\sqrt{2}-6)+2=0 \\\\\\\\\n& x^2(2-\\sqrt{2})+x(\\sqrt{2}-3)+1=0\n\\end{aligned}\n$$\n<br/><br/>$\\begin{aligned} & \\Rightarrow x=1 \\text { and } x=\\frac{1}{2-\\sqrt{2}} ..........(3) \\\\\\\\ & \\text { When } x=1, y=1 \\Rightarrow z_2=1+i \\\\\\\\ & \\text { When } x=\\frac{1}{2-\\sqrt{2}}, y=\\sqrt{2}-\\frac{1}{\\sqrt{2}} \\\\\\\\ & \\Rightarrow z_1=\\left(1+\\frac{1}{\\sqrt{2}}\\right)+\\frac{i}{\\sqrt{2}}\\end{aligned}$\n<br/><br/>Now,\n<br/><br/>$$\n\\begin{aligned}\n& \\left|\\sqrt{2} z_1-z_2\\right|^2 \\\\\\\\\n& =\\left|\\left(\\frac{1}{\\sqrt{2}}+1\\right) \\sqrt{2}+i-(1+i)\\right|^2 \\\\\\\\\n& =(\\sqrt{2})^2 \\\\\\\\\n& =2\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 1st February Morning Shift"
+    "title": "JEE Main 2024 (Online) 1st February Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ede",
@@ -234,7 +231,8 @@
     "options": [],
     "solution": "<p>$$x^2+x+1=0 \\Rightarrow x=\\omega, \\omega^2=\\alpha$$</p>\n<p>Let $$\\alpha=\\omega$$</p>\n<p>Now $$(1+\\alpha)^7=-\\omega^{14}=-\\omega^2=1+\\omega$$</p>\n<p>$$\\begin{aligned}\n& A=1, B=1, C=0 \\\\\n& \\therefore 5(3 A-2 B-C)=5(3-2-0)=5\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 27th January Morning Shift"
+    "title": "JEE Main 2024 (Online) 27th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694edf",
@@ -248,7 +246,8 @@
     "options": [],
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsr8r3kr/364277a2-5c20-422c-867f-2e93bd294016/10be8ab0-ce37-11ee-9412-cd4f9c6f2c40/file-6y3zli1lsr8r3ks.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsr8r3kr/364277a2-5c20-422c-867f-2e93bd294016/10be8ab0-ce37-11ee-9412-cd4f9c6f2c40/file-6y3zli1lsr8r3ks.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 29th January Evening Shift Mathematics - Complex Numbers Question 51 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; x=\\frac{\\sqrt{6} \\pm i \\sqrt{6}}{2}=\\frac{\\sqrt{6}}{2}(1 \\pm i) \\\\\n&amp; \\alpha=\\sqrt{3}\\left(e^{i \\frac{\\pi}{4}}\\right), \\beta=\\sqrt{3}\\left(e^{-i \\frac{\\pi}{4}}\\right) \\\\\n&amp; \\therefore \\frac{\\alpha^{99}}{\\beta}+\\alpha^{98}=\\alpha^{98}\\left(\\frac{\\alpha}{\\beta}+1\\right) \\\\\n&amp; =\\frac{\\alpha^{98}(\\alpha+\\beta)}{\\beta}=3^{49}\\left(e^{i 99 \\frac{\\pi}{4}}\\right) \\times \\sqrt{2} \\\\\n&amp; =3^{49}(-1+i) \\\\\n&amp; =3^n(a+i b) \\\\\n&amp; \\therefore n=49, a=-1, b=1 \\\\\n&amp; \\therefore n+a+b=49-1+1=49\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 29th January Evening Shift"
+    "title": "JEE Main 2024 (Online) 29th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ee0",
@@ -267,7 +266,8 @@
     ],
     "solution": "<p>To begin with, let's analyze the given equation:</p>\n<p>$$|z+1|=\\alpha z+\\beta(1+i)$$</p>\n\n<p>First, we compute the modulus of the left side:</p>\n<p>Let's take the given value of z,</p>\n<p>$$z = \\frac{1}{2} - 2i$$</p>\n\n<p>Now, we find $$z + 1$$:</p>\n<p>$$z + 1 = \\left(\\frac{1}{2} - 2i\\right) + 1 = \\frac{3}{2} - 2i$$</p>\n\n<p>Then, the modulus of $$z + 1$$ is calculated as follows:</p>\n<p>$$|z + 1| = \\left|\\frac{3}{2} - 2i\\right| = \\sqrt{\\left(\\frac{3}{2}\\right)^2 + (-2)^2}$$</p>\n<p>$$|z + 1| = \\sqrt{\\frac{9}{4} + 4}$$</p>\n<p>$$|z + 1| = \\sqrt{\\frac{9}{4} + \\frac{16}{4}}$$</p>\n<p>$$|z + 1| = \\sqrt{\\frac{25}{4}}$$</p>\n<p>$$|z + 1| = \\frac{5}{2}$$</p>\n\n<p>Now we need to equate the modulus to the right-hand side of the equation and solve for $$\\alpha$$ and $$\\beta$$. Let's rewrite the equation:</p>\n<p>$$\\frac{5}{2} = \\alpha z + \\beta(1 + i)$$</p>\n<p>Substitute $$z$$ with its value:</p>\n<p>$$\\frac{5}{2} = \\alpha \\left(\\frac{1}{2} - 2i\\right) + \\beta(1+i)$$</p>\n\n<p>Rewrite the equation separating real and imaginary parts:</p>\n<p>$$\\frac{5}{2} = \\alpha \\left(\\frac{1}{2}\\right) - 2\\alpha i + \\beta + \\beta i$$</p>\n<p>$$\\frac{5}{2} = \\left(\\alpha \\frac{1}{2} + \\beta\\right) + \\left(-2\\alpha + \\beta\\right)i$$</p>\n\n<p>For the above equality to hold, both real and imaginary parts must be equal.</p>\n\n<p>Equating real parts:</p>\n<p>$$\\alpha \\frac{1}{2} + \\beta = \\frac{5}{2}$$</p>\n\n<p>Equating imaginary parts:</p>\n<p>$$-2\\alpha + \\beta = 0$$</p>\n\n<p>We now have a system of two linear equations:</p>\n<p>1) $$\\frac{\\alpha}{2} + \\beta = \\frac{5}{2}$$</p>\n<p>2) $$-2\\alpha + \\beta = 0$$</p>\n\n<p>Let's solve the system by isolating $$\\beta$$ from the second equation and then substituting it into the first one:</p>\n<p>$$\\beta = 2\\alpha$$</p>\n\n<p>Now substitute $$\\beta$$ in the first equation:</p>\n<p>$$\\frac{\\alpha}{2} + 2\\alpha = \\frac{5}{2}$$</p>\n<p>$$\\alpha \\left(\\frac{1}{2} + 2\\right) = \\frac{5}{2}$$</p>\n<p>$$\\alpha \\left(\\frac{1}{2} + \\frac{4}{2}\\right) = \\frac{5}{2}$$</p>\n<p>$$\\alpha \\left(\\frac{5}{2}\\right) = \\frac{5}{2}$$</p>\n\n<p>To find the value of $$\\alpha$$, we divide both sides by $$\\frac{5}{2}$$:</p>\n<p>$$\\alpha = 1$$</p>\n\n<p>Now, we use the value of $$\\alpha$$ to find $$\\beta$$:</p>\n<p>$$\\beta = 2\\alpha$$</p>\n<p>$$\\beta = 2 \\cdot 1$$</p>\n<p>$$\\beta = 2$$</p>\n\n<p>Finally, we add both $$\\alpha$$ and $$\\beta$$ to find $$\\alpha + \\beta$$:</p>\n<p>$$\\alpha + \\beta = 1 + 2 = 3$$</p>\n\n<p>The value of $$\\alpha + \\beta$$ is 3.</p>\n<p>So, the correct answer is Option C) 3.</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 29th January Morning Shift"
+    "title": "JEE Main 2024 (Online) 29th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ee1",
@@ -281,7 +281,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n& \\alpha^6+\\alpha^4+\\beta^4-5 \\alpha^2 \\\\\n& =\\alpha^4(\\alpha-2)+\\alpha^4-5 \\alpha^2+(\\beta-2)^2 \\\\\n& =\\alpha^5-\\alpha^4-5 \\alpha^2+\\beta^2-4 \\beta+4 \\\\\n& =\\alpha^3(\\alpha-2)-\\alpha^4-5 \\alpha^2+\\beta-2-4 \\beta+4 \\\\\n& =-2 \\alpha^3-5 \\alpha^2-3 \\beta+2 \\\\\n& =-2 \\alpha(\\alpha-2)-5 \\alpha^2-3 \\beta+2 \\\\\n& =-7 \\alpha^2+4 \\alpha-3 \\beta+2 \\\\\n& =-7(\\alpha-2)+4 \\alpha-3 \\beta+2 \\\\\n& =-3 \\alpha-3 \\beta+16=-3(1)+16=13\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 29th January Morning Shift"
+    "title": "JEE Main 2024 (Online) 29th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ee2",
@@ -300,7 +301,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& z^2=-i \\bar{z} \\\\\n& \\left|z^2\\right|=|i \\bar{z}| \\\\\n& \\left|z^2\\right|=|z| \\\\\n& |z|^2-|z|=0 \\\\\n& |z|(|z|-1)=0 \\\\\n& |z|=0 \\text { (not acceptable) } \\\\\n& \\therefore|z|=1 \\\\\n& \\therefore|z|^2=1\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 30th January Morning Shift"
+    "title": "JEE Main 2024 (Online) 30th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ee3",
@@ -319,7 +321,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& z_1+z_2=5 \\\\\n& z_1^3+z_2^3=20+15 i \\\\\n& z_1^3+z_2^3=\\left(z_1+z_2\\right)^3-3 z_1 z_2\\left(z_1+z_2\\right) \\\\\n& z_1^3+z_2^3=125-3 z_1 \\cdot z_2(5) \\\\\n& \\Rightarrow 20+15 i=125-15 z_1 z_2 \\\\\n& \\Rightarrow 3 z_1 z_2=25-4-3 i \\\\\n& \\Rightarrow 3 z_1 z_2=21-3 i \\\\\n& \\Rightarrow z_1 \\cdot z_2=7-i \\\\\n& \\Rightarrow\\left(z_1+z_2\\right)^2=25 \\\\\n& \\Rightarrow z_1^2+z_2^2=25-2(7-i) \\\\\n& \\Rightarrow 11+2 i \\\\\n& \\left(z_1^2+z_2^2\\right)^2=121-4+44 i \\\\\n& \\Rightarrow z_1^4+z_2^4+2(7-i)^2=117+44 i \\\\\n& \\Rightarrow z_1^4+z_2^4=117+44 i-2(49-1-14 i) \\\\\n& \\Rightarrow\\left|z_1^4+z_2^4\\right|=75\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 31st January Evening Shift"
+    "title": "JEE Main 2024 (Online) 31st January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ee4",
@@ -338,7 +341,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& (\\bar{z})^2+|z|=0 \\quad \\text{... (1)}\\\\\n& z^2+|\\bar{z}|=0 \\quad \\text{... (2)}\n\\end{aligned}$$</p>\n<p>From equation (1) and (2)</p>\n<p>$$\\begin{aligned}\n& \\text { as }|z|=|\\bar{z}| \\\\\n& \\Rightarrow \\quad(\\bar{z})^2=z^2 \\\\\n& \\Rightarrow \\quad z=\\bar{z} \\text { or } z=-\\bar{z} \\\\\n& \\Rightarrow \\operatorname{Im}(z)=0 \\text { or } \\operatorname{Re}(z)=0\n\\end{aligned}$$</p>\n<p>Case I : If $$\\operatorname{Im}(z)=0$$</p>\n<p>$$\\Rightarrow z=x$$</p>\n<p>Putting value of $$z$$ in equation (1)</p>\n<p>$$\\begin{aligned}\n& x^2+|x|=0 \\\\\n& \\Rightarrow x=0 \\quad \\text{[Rejected]\n}\n\\end{aligned}$$</p>\n<p>Case II : If $$\\operatorname{Re}(z)=0$$</p>\n<p>$$\\Rightarrow z=i y$$</p>\n<p>Putting value of $$z$$ in equation (1)</p>\n<p>$$\\begin{aligned}\n& -y^2+|y|=0 \\\\\n& y= \\pm 1 \\text { as } y \\neq 0\n\\end{aligned}$$</p>\n<p>Hence, $$z= \\pm i$$ are the solution of the given equation</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow \\alpha=i-i=0 \\\\\n& \\text { and } \\beta=i(-i)=1 \\\\\n& \\Rightarrow \\quad 4\\left(\\alpha^2+\\beta^2\\right)=4(0+1) \\\\\n& \\quad=4\n\\end{aligned}$$</p>\n<p>$$\\therefore$$ Option (3) is correct</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 4th April Morning Shift"
+    "title": "JEE Main 2024 (Online) 4th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ee5",
@@ -357,7 +361,8 @@
     ],
     "solution": "<p>$$\\frac{1+i \\cos \\theta}{1-2 i \\cos \\theta}$$ is purely imaginary</p>\n<p>$$n=\\frac{1+i \\cos \\theta}{1-2 i \\cos \\theta} \\times \\frac{1+2 i \\cos \\theta}{1+2 i \\cos \\theta}=\\frac{1+3 i \\cos \\theta-2 \\cos ^2 \\theta}{1+4 \\cos ^2 \\theta}$$</p>\n<p>$$n=\\frac{1-2 \\cos ^2 \\theta}{1+4 \\cos ^2 \\theta}+i\\left(\\frac{3 \\cos \\theta}{1+4 \\cos ^2 \\theta}\\right)$$</p>\n<p>$$n$$ is purely imaginary</p>\n<p>$$\\Rightarrow \\frac{1-2 \\cos ^2 \\theta}{1+4 \\cos ^2 \\theta}=0$$</p>\n<p>$$\\Rightarrow \\cos ^2 \\theta=\\frac{1}{2}$$</p>\n<p>$$\\Rightarrow \\cos \\theta= \\pm \\frac{1}{\\sqrt{2}}$$</p>\n<p>$$\\theta$$ can be $$\\frac{\\pi}{4}, \\frac{-\\pi}{4}, \\frac{3 \\pi}{4}, \\frac{-3 \\pi}{4}, \\frac{5 \\pi}{4}, \\frac{7 \\pi}{4}$$</p>\n<p>Sum of all possible values of $$\\theta=3 \\pi$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 8th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 8th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ee6",
@@ -376,21 +381,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& |z+2|=1 \\\\\n& \\operatorname{Im}_m\\left(\\frac{z+1}{z+2}\\right)=\\frac{1}{5} \\\\\n& |\\operatorname{Re}(\\overline{z+2})|=?\n\\end{aligned}$$</p>\n<p>Let $$z=x+i y$$</p>\n<p>$$\\begin{aligned}\n& \\because|z+2|=1 \\Rightarrow(x+2)^2+y^2=1 \\quad \\ldots(1) \\\\\n& I_m\\left(\\frac{z+1}{z+2}\\right)=\\frac{1}{5} \\Rightarrow I_m\\left(\\frac{x+i y+1}{x+i y+2}\\right)=\\frac{1}{5} \\\\\n& \\Rightarrow I_m\\left|\\frac{[(x+1)+i y][(x+)-i y]}{(x+2)^2+y^2}\\right|=\\frac{1}{5}\n\\end{aligned}$$</p>\n<p>$$\\frac{y(x+2)-y(x+)}{(x+2)^2+y^2}=\\frac{1}{5}\\quad \\text{.... (2)}$$</p>\n<p>$$\\Rightarrow y=\\frac{1}{5}$$</p>\n<p>Substituting in equation (1)</p>\n<p>$$\\begin{aligned}\n& (x+2)^2+\\frac{1}{25}=1 \\\\\n& (x+2)^2=\\frac{24}{25} \\\\\n& \\Rightarrow x=-2 \\pm \\frac{\\sqrt{24}}{5} \\\\\n& |\\operatorname{Re}(\\overline{x+i y+2})| \\\\\n& =x+2= \\pm \\frac{\\sqrt{24}}{5}=\\frac{2 \\sqrt{6}}{5}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 8th April Morning Shift"
-  },
-  {
-    "_id": "6a2bdbba2762cf4b57694ee7",
-    "question_id": "liio6ji6",
-    "chapterId": "algebra-of-complex-numbers",
-    "subject": "Mathematics",
-    "topic": "algebra-of-complex-numbers",
-    "difficulty": "hard",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "$$\n\\begin{aligned}\n& A=\\frac{1967+1686 i \\sin \\theta}{7-3 i \\cos \\theta} \\\\\\\\\n& =\\frac{281(7+6 i \\sin \\theta)}{7-3 i \\cos \\theta} \\times \\frac{7+3 i \\cos \\theta}{7+3 i \\cos \\theta} \\\\\\\\\n& =\\frac{281(49-18 \\sin \\theta \\cos \\theta+i(21 \\cos \\theta+42 \\sin \\theta))}{49+9 \\cos ^2 \\theta}\n\\end{aligned}\n$$\n<br/><br/>For positive integer\n<br/><br/>$$\n\\begin{aligned}\n& \\operatorname{Im}(A)=0 \\\\\\\\\n& 21 \\cos \\theta+42 \\sin \\theta=0 \\\\\\\\\n& \\tan \\theta=\\frac{-1}{2} ; \\sin 2 \\theta=\\frac{-4}{5}, \\cos ^2 \\theta=\\frac{4}{5}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\operatorname{Re}(\\mathrm{A})=\\frac{281(49-9 \\sin 2 \\theta)}{49+9 \\cos ^2 \\theta} \\\\\\\\\n& =\\frac{281\\left(49-9 \\times \\frac{-4}{5}\\right)}{49+9 \\times \\frac{4}{5}}=281(+ \\text { ve integer })\n\\end{aligned}\n$$",
-    "__v": 0,
-    "title": "JEE Advanced 2023 Paper 1 Online"
+    "title": "JEE Main 2024 (Online) 8th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ee8",
@@ -409,7 +401,8 @@
     ],
     "solution": "Given that $z=x+i y$\n<br/><br/>$$\n\\begin{aligned}\n& \\text { then } \\frac{2 z-3 i}{4 z+2 i}=\\frac{2(x+i y)-3 i}{4(x+i y)+2 i} \\\\\\\\\n& =\\frac{2 x+i(2 y-3)}{4 x+i(4 y+2)} \\times \\frac{4 x-i(4 y+2)}{4 x-i(4 y+2)} \\\\\\\\\n& =\\frac{8 x^2+(2 y-3)(4 y+2)}{(4 x)^2+(4 y+2)^2}+i\\left(\\frac{4 x(2 y-3)-2 x(4 y+2)}{(4 x)^2+(4 y+2)^2}\\right)\n\\end{aligned}\n$$\n<br/><br/>Since, $\\frac{2 z-3 i}{4 z+2 i}$ is Real $\\Rightarrow \\operatorname{Img}\\left(\\frac{2 z-3 i}{4 z+2 i}\\right)=0$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow 4 x(2 y-3)-2 x(4 y+2)=0 \\\\\\\\\n& \\Rightarrow 2 x(4 y-6-4 y-2)=0 \\\\\\\\\n& \\Rightarrow 2 x(-8)=0 \\Rightarrow x=0\n\\end{aligned}\n$$\n<br/><br/>Also, $(4 x)^2+(4 y+2)^2 \\neq 0 \\Rightarrow y+x^2+y^2 \\neq \\frac{-1}{4}$\n<br/><br/> If $x=0$, then $y \\neq-\\frac{1}{2}$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 10th April Evening Shift"
+    "title": "JEE Main 2023 (Online) 10th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ee9",
@@ -428,7 +421,8 @@
     ],
     "solution": "Let, $z=x+i y$\n<br/><br/>So, $\\frac{2 z-3 i}{2 z+i}$ is purely imaginary\n$~~$[Given]\n<br/><br/>$$\n\\begin{aligned}\n& \\text { Now, }\\left(\\frac{2 z-3 i}{2 z+i}\\right)+\\left(\\frac{\\overline{2 z-3 i}}{2 z+i}\\right)=0 \\\\\\\\\n& \\Rightarrow \\frac{2 z-3 i}{2 z+i}+\\frac{2 \\bar{z}+3 i}{2 \\bar{z}-i}=0\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow(2 z-3 i)(2 \\bar{z}-i)+(2 \\bar{z}+3 i)(2 z+i)=0 \\\\\\\\\n& \\Rightarrow\\left\\{4|z|^2-6 i \\bar{z}-2 i z-3\\right\\}+\\left\\{4|z|^2+6 i z+2 i \\bar{z}-3\\right\\}=0 \\\\\\\\\n& \\Rightarrow 8|z|^2-4 i \\bar{z}+4 i z-6=0 \\\\\\\\\n& \\Rightarrow 8\\left(x^2+y^2\\right)-4 i(x-i y)+4 i(x+i y)-6=0 \\\\\\\\\n& \\Rightarrow 8\\left(x^2+y^2\\right)-4 i x-4 y+4 i x-4 y-6=0 \\\\\\\\\n& \\Rightarrow 8\\left(x^2+y^2\\right)-8 y-6=0 \\\\\\\\\n& \\Rightarrow 4\\left(x^2+y^2\\right)-4 y-3=0\n\\end{aligned}\n$$\n<br/><br/>Given that, $x+y^2=0$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow x=-y^2 \\\\\\\\\n& \\Rightarrow 4\\left(y^4+y^2\\right)-4 y=3 \\\\\\\\\n& \\Rightarrow y^4+y^2-y=\\frac{3}{4}\n\\end{aligned}\n$$\n<br/><br/>Hence, required answer is $\\frac{3}{4}$.",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 10th April Morning Shift"
+    "title": "JEE Main 2023 (Online) 10th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694eea",
@@ -442,7 +436,8 @@
     "options": [],
     "solution": "Put $z=x+i y$\n<br/><br/>$$\n\\begin{aligned}\n& \\operatorname{lm}\\left(\\frac{z^2+8 i z-15}{z^2-3 i z-2}\\right)=0 \\\\\\\\\n& \\Rightarrow-\\left(x^2-y^2-8 y-15\\right)(2 x y-3 x)+(2 x y+8 x)\\left(x^2-\\right. \\left.y^2+3 y-2\\right)=0 \\\\\\\\\n& \\Rightarrow\\left(x^2-y^2\\right)(2 x y+8 x-2 x y+3 x)+(8 y+15)(2 x y-  3 x)+(2 x y+8 x)(3 y-2)=0 \\\\\\\\\n& \\Rightarrow 11 x^3-11 x y^2+16 x y^2-24 x y+30 x y-45 x+6 x y^2 -4 x y+24 x y-16 x=0 \\\\\\\\\n& \\Rightarrow 11 x^3+11 x y^2+26 x y-61 x=0 \\\\\\\\\n& \\Rightarrow\\left(11 x^2+11 y^2+26 y-61)=0\\right. \\\\\\\\\n& \\because \\alpha \\neq 0, \\Rightarrow x=0 \\text { (neglected) } \\\\\\\\\n& \\text { Put } y=-\\frac{13}{11}, \\quad x=\\alpha \\\\\\\\\n& 11 \\alpha^2+11 \\cdot \\frac{13^2}{11^2}-26 \\cdot \\frac{13}{11}-61=0 \\\\\\\\\n& \\Rightarrow 121 \\alpha^2=840 \\\\\\\\\n& \\Rightarrow 242 \\alpha^2=1680\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 11th April Evening Shift"
+    "title": "JEE Main 2023 (Online) 11th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694eeb",
@@ -456,7 +451,8 @@
     "options": [],
     "solution": "<p>Let $$z = x + iy$$</p>\n<p>and $$\\alpha  = 8 - 14i$$</p>\n<p>$${{\\alpha z - \\overline \\alpha  \\,\\overline z } \\over {{z^2} - {{\\overline z }^2} - 112i}} = 1$$</p>\n<p>$$\\therefore$$ $${{(16y - 28x)} \\over {4xy - 112i}} = 1$$</p>\n<p>$$(16y - 28x + 112)i = 4xy$$</p>\n<p>$$\\therefore$$ $$z =  - 7i$$ or 4</p>\n<p>Now, $$z =  - 7i$$ satisfy B</p>\n<p>$$B:{x^2} + {(y + 3)^2} = 16$$</p>\n<p>$$A \\cap B = (0, - 7)$$</p>\n<p>$${\\mathop{\\rm Re}\\nolimits} z - lm\\,z = 7$$</p>",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 29th January Evening Shift"
+    "title": "JEE Main 2023 (Online) 29th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694eec",
@@ -475,7 +471,8 @@
     ],
     "solution": "<p>Let, $${z_1} = {x_1} + i{y_1}$$</p>\n<p>and $${z_2} = {x_2} + i{y_2}$$</p>\n<p>$$\\therefore$$ $${z_1}{z_2} = {x_1}{x_2} - {y_1}{y_2} + i({x_1}{y_2} + {x_2}{y_1})$$</p>\n<p>Given, $${\\mathop{\\rm Re}\\nolimits} ({z_1} + {z_2}) = 0$$</p>\n<p>$$ \\Rightarrow {x_1} + {x_2} = 0$$ ...... (1)</p>\n<p>also given, $${\\mathop{\\rm Re}\\nolimits} ({z_1}{z_2}) = 0$$</p>\n<p>$$ \\Rightarrow {x_1}{x_2} - {y_1}{y_2} = 0$$</p>\n<p>$$ \\Rightarrow {x_1}{x_2} = {y_1}{y_2}$$</p>\n<p>$$ \\Rightarrow {y_1}{y_2} =  - x_1^2$$ [$$\\because$$ $${x_2} =  - {x_1}$$]</p>\n<p>So, multiplication of imaginary part's of z<sub>1</sub> and z<sub>2</sub> is negative. It means sign of y<sub>1</sub> and y<sub>2</sub> are opposite of each other.</p>\n<p>$$ \\therefore $$ B and C are correct.</p>",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 29th January Morning Shift"
+    "title": "JEE Main 2023 (Online) 29th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694eed",
@@ -494,7 +491,8 @@
     ],
     "solution": "Let $z=x+i y$\n<br/><br/>$$\n\\begin{array}{ll}\n&\\Rightarrow  z^2=x^2-y^2+2 i x y \\\\\\\\\n&\\therefore  a z^2+b z \\\\\\\\\n& =a\\left(x^2-y^2+2 i x y\\right)+b(x+i y) \\\\\\\\\n& =a\\left(x^2-y^2\\right)+b x+2 a i x y+b i y\n\\end{array}\n$$\n<br/><br/>$\\begin{array}{ll}\\operatorname{Re}\\left(a z^2+b z\\right)=b \\\\\\\\ \\Rightarrow a\\left(x^2-y^2\\right)+b x=a \\\\\\\\ \\Rightarrow x^2-y^2+\\frac{b}{a} x=1 .........(i)\\end{array}$\n<br/><br/>$\\begin{aligned} & \\text { and } b z^2+a z \\\\\\\\ & =b\\left(x^2-y^2+2 i x y\\right)+a(x+i y) \\\\\\\\ & =b\\left(x^2-y^2\\right)+a x+2 b i x y+a i y \\\\\\\\ & \\operatorname{Re}\\left(b z^2+a z\\right)=b \\\\\\\\ & \\Rightarrow  b\\left(x^2-y^2\\right)+a x=b \\\\\\\\ & \\Rightarrow x^2-y^2+\\frac{a}{b} x=1 ..........(ii)\\end{aligned}$\n<br/><br/>On subtracting Equation (ii) from Equation (i), we get\n<br/><br/>$$\n\\begin{aligned}\n& \\frac{b}{a} x-\\frac{a}{b} x=0 \\\\\\\\\n& \\Rightarrow \\left(\\frac{b}{a}-\\frac{a}{b}\\right) x=0 \\\\\\\\\n& \\Rightarrow x=0 \\text { or } \\frac{b}{a}-\\frac{a}{b}=0 \\\\\\\\\n& \\Rightarrow b^2-a^2=0 \\\\\\\\\n& \\Rightarrow a= \\pm b \\\\\\\\\n& \\Rightarrow a=-b(\\text { since } a \\neq b)\n\\end{aligned}\n$$\n<br/><br/>From (i), when $x=0$, then\n<br/><br/>$$\n\\begin{aligned}\n& 0-y^2=1 \\Rightarrow y^2=-1 \\\\\\\\\n& \\Rightarrow y \\in \\phi \\Rightarrow z \\in \\phi \\text { has no solution. }\n\\end{aligned}\n$$\n\n<br/><br/>When, $a=-b$, then $x^2-y^2-x=1$ has infinitely many solutions.",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 6th April Evening Shift"
+    "title": "JEE Main 2023 (Online) 6th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694eee",
@@ -513,7 +511,8 @@
     ],
     "solution": "$$\n\\begin{aligned}\n& \\text { Here, } z=\\frac{1+2 i \\sin \\theta}{1-i \\sin \\theta} \\times \\frac{1+i \\sin \\theta}{1+i \\sin \\theta} \\\\\\\\\n& \\frac{1+i \\sin \\theta+2 i \\sin \\theta-2 \\sin ^2 \\theta}{1-i^2 \\sin ^2 \\theta} \\\\\\\\\n& =\\frac{\\left(1-2 \\sin ^2 \\theta\\right)+i(3 \\sin \\theta)}{1+\\sin ^2 \\theta}\n\\end{aligned}\n$$\n<br/><br/>$\\because z$ is purely imaginary, so $\\operatorname{Re} z=0$\n<br/><br/>$$\n\\begin{aligned}\n& \\Rightarrow \\frac{1-2 \\sin ^2 \\theta}{1+\\sin ^2 \\theta}=0 \\\\\\\\\n& \\Rightarrow 2 \\sin ^2 \\theta=1 \\Rightarrow \\sin ^2 \\theta=\\frac{1}{2} \\\\\\\\\n& \\Rightarrow \\sin \\theta= \\pm \\frac{1}{\\sqrt{2}}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\therefore A=\\left[\\frac{\\pi}{4}, \\frac{3 \\pi}{4}, \\frac{5 \\pi}{4}, \\frac{7 \\pi}{4}\\right] \\because \\theta \\in(0,2 \\pi)\\\\\\\\\n& \\therefore \\text { Sum }=\\frac{\\pi+3 \\pi+5 \\pi+7 \\pi}{4}=\\frac{16 \\pi}{4}=4 \\pi\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 8th April Evening Shift"
+    "title": "JEE Main 2023 (Online) 8th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694eef",
@@ -527,7 +526,8 @@
     "options": [],
     "solution": "<p>$$\\because$$ $${z^2} + z + 1 = 0$$</p>\n<p>$$\\Rightarrow$$ $$\\omega$$ or $$\\omega$$<sup>2</sup></p>\n<p>$$\\because$$ $$\\left| {\\sum\\limits_{n = 1}^{15} {{{\\left( {{z^n} + {{( - 1)}^n}{1 \\over {{z^n}}}} \\right)}^2}} } \\right|$$</p>\n<p>$$ = \\left| {\\sum\\limits_{n = 1}^{15} {{z^{2n}} + \\sum\\limits_{n = 1}^{15} {{z^{ - 2n}} + 2\\,.\\,\\sum\\limits_{n = 1}^{15} {{{( - 1)}^n}} } } } \\right|$$</p>\n<p>$$ = \\left| {0 + 0 - 2} \\right|$$</p>\n<p>$$ = 2$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 26th June Evening Shift"
+    "title": "JEE Main 2022 (Online) 26th June Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef0",
@@ -546,7 +546,8 @@
     ],
     "solution": "<p>$$\\because$$ $${{1 - i\\sin \\alpha } \\over {1 + 2i\\sin \\alpha }}$$ is purely imaginary</p>\n<p>$$\\therefore$$ $${{1 - i\\sin \\alpha } \\over {1 + 2i\\sin \\alpha }} + {{1 + i\\sin \\alpha } \\over {1 - 2i\\sin \\alpha }} = 0$$</p>\n<p>$$ \\Rightarrow 1 - 2{\\sin ^2}\\alpha  = 0$$</p>\n<p>$$\\therefore$$ $$\\alpha  = {{5\\pi } \\over 4},\\,{{7\\pi } \\over 4}$$</p>\n<p>and $${{1 + i\\cos \\beta } \\over {1 - 2i\\cos \\beta }}$$ is purely real</p>\n<p>$${{1 + i\\cos \\beta } \\over {1 - 2i\\cos \\beta }} - {{1 - i\\cos \\beta } \\over {1 + 2i\\cos \\beta }} = 0$$</p>\n<p>$$ \\Rightarrow \\cos \\beta  = 0$$</p>\n<p>$$\\therefore$$ $$\\beta  = {{3\\pi } \\over 2}$$</p>\n<p>$$\\therefore$$ $$S = \\left\\{ {\\left( {{{5\\pi } \\over 2},{{3\\pi } \\over 2}} \\right),\\left( {{{7\\pi } \\over 4},{{3\\pi } \\over 2}} \\right)} \\right\\}$$</p>\n<p>$${Z_{\\alpha \\beta }} = 1 - i$$ and $${Z_{\\alpha \\beta }} =  - 1 - i$$</p>\n<p>$$\\therefore$$ $$\\sum\\limits_{(\\alpha ,\\beta ) \\in S} {\\left( {i{Z_{\\alpha \\beta }} + {1 \\over {i{{\\overline Z }_{\\alpha \\beta }}}}} \\right) = i( - 2i) + {1 \\over i}\\left[ {{1 \\over {1 + i}} + {1 \\over { - 1 + i}}} \\right]} $$</p>\n<p>$$ = 2 + {1 \\over i}{{2i} \\over { - 2}} = 1$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 27th July Evening Shift"
+    "title": "JEE Main 2022 (Online) 27th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef1",
@@ -560,7 +561,8 @@
     "options": [],
     "solution": "<p>$$\\because$$ $${z^2} = \\overline z \\,.\\,{2^{1 - |z|}}$$ ...... (1)</p>\n<p>$$ \\Rightarrow |z{|^2} = |\\overline z |\\,.\\,{2^{1 - |z|}}$$</p>\n<p>$$ \\Rightarrow |z| = {2^{1 - |z|}}$$,</p>\n<p>$$\\because$$ $$b \\ne 0 \\Rightarrow |z| \\ne 0$$</p>\n<p>$$\\therefore$$ $$|z| = 1$$ ...... (2)</p>\n<p>$$\\because$$ $$z = a + ib$$ then $$\\sqrt {{a^2} + {b^2}}  = 1$$ ...... (3)</p>\n<p>Now again from equation (1), equation (2), equation (3) we get :</p>\n<p>$${a^2} - {b^2} + i2ab = (a - ib){2^0}$$</p>\n<p>$$\\therefore$$ $${a^2} - {b^2} = a$$ and $$2ab =  - b$$</p>\n<p>$$\\therefore$$ $$a =  - {1 \\over 2}$$ and $$b = \\, \\pm \\,{{\\sqrt 3 } \\over 2}$$</p>\n<p>$$z =  - {1 \\over 2} + {{\\sqrt 3 } \\over 2}i$$ or $$z =  - {1 \\over 2} - {{\\sqrt 3 } \\over 2}i$$</p>\n<p>$${z^n} = {(z + 1)^n} \\Rightarrow {\\left( {{{z + 1} \\over z}} \\right)^n} = 1$$</p>\n<p>$${\\left( {1 + {1 \\over z}} \\right)^n} = 1$$</p>\n<p>$$\\left( {{{1 + \\sqrt 3 i} \\over 2}} \\right) = 1$$, then minimum value of n is 6.</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 28th July Evening Shift"
+    "title": "JEE Main 2022 (Online) 28th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef2",
@@ -579,7 +581,8 @@
     ],
     "solution": "<p>Given equation,</p>\n<p>$${x^2} + (2i - 1) = 0$$</p>\n<p>$$ \\Rightarrow {x^2} = 1 - 2i$$</p>\n<p>Let $$\\alpha$$ and $$\\beta$$ are the two roots of the equation.</p>\n<p>As, we know roots of a equation satisfy the equation so</p>\n<p>$${\\alpha ^2} = 1 - 2i$$</p>\n<p>and $${\\beta ^2} = 1 - 2i$$</p>\n<p>$$\\therefore$$ $${\\alpha ^2} = {\\beta ^2} = 1 - 2i$$</p>\n<p>$$\\therefore$$ $$|{\\alpha ^2}| = \\sqrt {{1^2} + {{( - 2)}^2}}  = \\sqrt {15} $$</p>\n<p>Now, $$|{\\alpha ^8} + {\\beta ^8}|$$</p>\n<p>$$|{\\alpha ^8} + {\\alpha ^8}|$$</p>\n<p>$$ = 2|{\\alpha ^8}|$$</p>\n<p>$$ = 2|{\\alpha ^2}{|^4}$$</p>\n<p>$$ = 2{\\left( {\\sqrt 5 } \\right)^4}$$</p>\n<p>$$ = 2 \\times 25$$</p>\n<p>$$ = 50$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 29th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef3",
@@ -593,7 +596,8 @@
     "options": [],
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lc8b9cup/a3a99286-f2d0-4b94-be08-ef95f78a420f/8454b500-870a-11ed-95c4-a7dd61250e50/file-1lc8b9cuq.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lc8b9cup/a3a99286-f2d0-4b94-be08-ef95f78a420f/8454b500-870a-11ed-95c4-a7dd61250e50/file-1lc8b9cuq.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th June Morning Shift Mathematics - Complex Numbers Question 111 English Explanation\"><br>\n$S$ represents the shaded region shown in the diagram.\n<br><br>\nClearly $z_{1}$ will be the point of intersection of $P A$ and given circle.\n<br><br>\n$P A: 2 x+y=4$ and given circle has equation $(x-2)^{2}+y^{2}=1$\n<br><br>\nOn solving we get\n<br><br>\n$z_{1}=\\left(2-\\frac{1}{\\sqrt{5}}\\right)+\\frac{2}{\\sqrt{5}} i \\Rightarrow\\left|z_{1}\\right|^{2}=5-\\frac{4}{\\sqrt{5}}$\n<br><br>\n$z_{2}$ will be either $B$ or $C$.\n<br><br>\n$\\because  P B=\\sqrt{17}$ and $P C=\\sqrt{13}$ hence $z_{2}=1$\n<br><br>\nSo $5\\left(\\left|z_{1}\\right|^{2}+\\left|z_{2}\\right|^{2}\\right)=30-4 \\sqrt{5}$\n<br><br>\nClearly $\\alpha=30$ and $\\beta=-4 \\Rightarrow \\alpha+\\beta=26$",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 29th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef4",
@@ -607,7 +611,8 @@
     "options": [],
     "solution": "Let $$X = \\left( {\\matrix{\n   a &amp; b  \\cr \n   c &amp; d  \\cr \n\n } } \\right)$$ &amp; $$A = {\\left( {\\matrix{\n   0 &amp; i  \\cr \n   1 &amp; 0  \\cr \n\n } } \\right)^n}$$<br><br>$$\\Rightarrow$$ AX = IX<br><br>$$\\Rightarrow$$ A = I<br><br>$$ \\Rightarrow {\\left( {\\matrix{\n   0 &amp; i  \\cr \n   1 &amp; 0  \\cr \n\n } } \\right)^n} = I$$<br><br>$$ \\Rightarrow {A^8} = \\left[ {\\matrix{\n   1 &amp; 0  \\cr \n   0 &amp; 1  \\cr \n\n } } \\right]$$<br><br>$$\\Rightarrow$$ n is multiple of 8<br><br>So, number of 2 digit numbers in the set <br><br>S = 11 (16, 24, 32, .........., 96)",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 25th July Morning Shift"
+    "title": "JEE Main 2021 (Online) 25th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef5",
@@ -626,7 +631,8 @@
     ],
     "solution": "Given $${{z - i} \\over {z + 2i}} \\in R$$<br><br>Then $$\\arg \\left( {{{z - i} \\over {z + 2i}}} \\right)$$ is 0 or $$\\pi $$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ktp1p6w0/6e5c96fc-1f6b-4d79-a495-a6241de65a74/58386200-1816-11ec-872b-bb20e4927270/file-1ktp1p6w1.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th August Morning Shift Mathematics - Complex Numbers Question 117 English Explanation\"><br><br>$$\\Rightarrow$$ S is straight line in complex",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th August Morning Shift"
+    "title": "JEE Main 2021 (Online) 27th August Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef6",
@@ -640,7 +646,8 @@
     "options": [],
     "solution": "Re $$(z) = {{3 - 6{{\\cos }^2}\\theta } \\over {1 + 9{{\\cos }^2}\\theta }} = 0$$<br><br>$$\\Rightarrow$$ $$\\theta$$ = $${{\\pi  \\over 4}}$$<br><br>Hence, sin<sup>2</sup>3$$\\theta$$ + cos<sup>2</sup>$$\\theta$$ = 1.",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 27th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef7",
@@ -659,7 +666,8 @@
     ],
     "solution": "Given z = x + iy\n<br><br>and $${z^2} = i{\\left| z \\right|^2}$$\n<br><br>$$ \\Rightarrow $$ (x + iy)<sup>2</sup>\n = i(x<sup>2</sup> + y<sup>2</sup>)\n<br><br>$$ \\Rightarrow $$ x<sup>2</sup> - y<sup>2</sup> + 2ixy = i(x<sup>2</sup> + y<sup>2</sup>) + 0\n<br><br>Comparing both side we get,\n<br><br>x<sup>2</sup> - y<sup>2</sup> = 0\n<br><br>$$ \\Rightarrow $$ x<sup>2</sup> = y<sup>2</sup>\n<br><br>and 2xy = (x<sup>2</sup> + y<sup>2</sup>)\n<br><br>$$ \\Rightarrow $$ (x - y)<sup>2</sup> = 0\n<br><br>$$ \\Rightarrow $$ x = y\n<br><br>$$ \\therefore $$ z lies on line x = y",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 6th September Evening Slot"
+    "title": "JEE Main 2020 (Online) 6th September Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef8",
@@ -678,7 +686,8 @@
     ],
     "solution": "Given z = x + iy \n<br><br> |z| – Re(z) $$ \\le $$ 1\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {{x^2} + {y^2}} $$ - x $$ \\le $$ 1\n<br><br>$$ \\Rightarrow $$ $$\\sqrt {{x^2} + {y^2}} $$ $$ \\le $$ 1 + x\n<br><br>$$ \\Rightarrow $$ x<sup>2</sup> + y<sup>2</sup> $$ \\le $$ 1 + 2x + x<sup>2</sup>\n<br><br>$$ \\Rightarrow $$ y<sup>2</sup> $$ \\le $$ 2x + 1\n<br><br>$$ \\Rightarrow $$ y<sup>2</sup> $$ \\le $$ 2$$\\left( {x + {1 \\over 2}} \\right)$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 6th September Morning Slot"
+    "title": "JEE Main 2020 (Online) 6th September Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694ef9",
@@ -697,7 +706,8 @@
     ],
     "solution": "Let Re (z) = x, then<br><br>\n$${{2(x + 10i) - n} \\over {2(x + 10i) + n}} = 2i - 1$$<br><br>\n$$ \\Rightarrow \\left( {2x - n} \\right) + 20i =  - \\left( {2x + n} \\right) - 40 - 20i + 2ni$$<br><br>\n$$ \\Rightarrow 2x - n = 2x - n - 40$$<br><br>\n&amp; 20 = -20 + 2n $$ \\Rightarrow $$ x = -10 &amp;  n = 20",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 12th April Evening Slot"
+    "title": "JEE Main 2019 (Online) 12th April Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694efa",
@@ -716,7 +726,8 @@
     ],
     "solution": "$${{z - \\alpha } \\over {z + \\alpha }} + {{\\overline z  - \\alpha } \\over {\\overline z  + \\alpha }} = 0$$\n<br><br>$$z\\overline z  + z\\alpha  - \\alpha \\overline z  - {\\alpha ^2} + z\\overline z  - z\\alpha  + \\overline z \\alpha  - {\\alpha ^2} = 0$$\n<br><br>$${\\left| z \\right|^2} = {\\alpha ^2},$$&nbsp;&nbsp;$$a =  \\pm 2$$",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 12th January Morning Slot"
+    "title": "JEE Main 2019 (Online) 12th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694efb",
@@ -735,7 +746,8 @@
     ],
     "solution": "$$\\omega  = {{5 + 3z} \\over {5(1 - z)}}$$z\n<br><br>$$ \\Rightarrow $$ $$5\\omega \\left( {1 - z} \\right) = 5 + 3z$$\n<br><br>$$ \\Rightarrow $$ $$5\\omega  - 5\\omega z = 5 + 3z$$\n<br><br>$$ \\Rightarrow $$ $$5\\omega  - 5 = 5\\omega z + 3z$$\n<br><br>$$ \\Rightarrow $$ $$z\\left( {5\\omega  + 3} \\right) = 5\\left( {\\omega  - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $$z = {{5\\left( {\\omega  - 1} \\right)} \\over {3 + 5\\omega }}$$\n<br><br>$$ \\Rightarrow $$ $$z = {{5\\left( {\\omega  - 1} \\right)} \\over {5\\left( {\\omega  + {3 \\over 5}} \\right)}}$$\n<br><br>$$ \\Rightarrow $$ $$z = {{\\left( {\\omega  - 1} \\right)} \\over {\\left( {\\omega  + {3 \\over 5}} \\right)}}$$\n<br><br>Given |z| &lt; 1\n<br><br>$$ \\Rightarrow $$ $$\\left| {{{\\omega  - 1} \\over {\\omega  + {3 \\over 5}}}} \\right|$$ &lt; 1\n<br><br>$$ \\Rightarrow $$ $$\\left| {\\omega  - 1} \\right| &lt; \\left| {\\omega  + {3 \\over 5}} \\right|$$\n<br><br>$$ \\Rightarrow $$ $$\\left| {\\omega  - 1} \\right| &lt; \\left| {\\omega  - \\left( { - {3 \\over 5}} \\right)} \\right|$$\n<br><br>It says distance of $$\\omega $$ from point 1 is less than distance from point $${\\left( { - {3 \\over 5}} \\right)}$$.\n<img src=\"https://imagex.cdn.examgoal.net/7kejek2124su1/c94f19f5-e63d-4f0a-bc3f-fd934bc01db3/637e3e90-f45b-11e9-a7bc-b7b08ce8d541/file-7kejek2124su2-320w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Evening Slot Mathematics - Complex Numbers Question 161 English Explanation\">\n<br><br>x coordinate of perpendicular bisector of points $${\\left( { - {3 \\over 5},0} \\right)}$$ and (1, 0),\n<br><br>x = $${{1 - {3 \\over 5}} \\over 2}$$ = $${1 \\over 5}$$\n<br><br>As $$\\omega $$ is closer to point (1, 0) so $$\\omega $$ should present in the right side of perpendicular bisector.\n<br><br>$$ \\therefore $$ $${\\mathop{\\rm Re}\\nolimits} (\\omega ) &gt; {1 \\over 5}$$\n<br><br>$$ \\Rightarrow $$ 5Re( $$\\omega$$) &gt; 1\n<br><br><b>Other Method :</b>\n<br><br>$$\\omega  = {{5 + 3z} \\over {5(1 - z)}}$$z\n<br><br>$$ \\Rightarrow $$ $$5\\omega \\left( {1 - z} \\right) = 5 + 3z$$\n<br><br>$$ \\Rightarrow $$ $$5\\omega  - 5\\omega z = 5 + 3z$$\n<br><br>$$ \\Rightarrow $$ $$5\\omega  - 5 = 5\\omega z + 3z$$\n<br><br>$$ \\Rightarrow $$ $$z\\left( {5\\omega  + 3} \\right) = 5\\left( {\\omega  - 1} \\right)$$\n<br><br>$$ \\Rightarrow $$ $$z = {{5\\left( {\\omega  - 1} \\right)} \\over {3 + 5\\omega }}$$\n\n<br><br>Given |z| &lt; 1\n<br><br>$$ \\Rightarrow $$ $$\\left| {{{5\\left( {\\omega  - 1} \\right)} \\over {5\\omega  + 3}}} \\right|$$ &lt; 1\n<br><br>$$ \\Rightarrow $$ $$5\\left| {\\omega  - 1} \\right| &lt; \\left| {5\\omega  + 3} \\right|$$\n<br><br>$$ \\Rightarrow $$ $$25\\left( {{\\omega ^2} - 2\\omega  + 1} \\right) &lt; 25{\\omega ^2} + 30\\omega  + 9$$\n<br><br>$$ \\Rightarrow $$ $$25\\left( {\\omega \\overline \\omega   - \\omega  - \\overline \\omega   + 1} \\right)$$ &lt; \n<br><br>$$25\\omega \\overline \\omega   + 15\\omega  + 15\\overline \\omega   + 9$$\n<br><br>(Using $${\\left| z \\right|^2} = z\\overline z $$)\n<br><br>$$ \\Rightarrow $$ $$16 &lt; 40\\omega  + 40\\overline \\omega  $$\n<br><br>$$ \\Rightarrow $$ $$\\omega  + \\overline \\omega   &gt; {2 \\over 5}$$\n<br><br>$$ \\Rightarrow $$ $$2{\\mathop{\\rm Re}\\nolimits} \\left( \\omega  \\right) &gt; {2 \\over 5}$$\n<br><br>$$ \\Rightarrow $$ 5Re( $$\\omega$$) &gt; 1",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 9th April Evening Slot"
+    "title": "JEE Main 2019 (Online) 9th April Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694efc",
@@ -754,7 +766,8 @@
     ],
     "solution": "Given complex number,\n<br><br>$${{3 + 2i\\sin \\theta } \\over {1 - 2i\\sin \\theta }}$$\n<br><br>$$ = {{\\left( {3 + 2i\\sin \\theta } \\right)\\left( {1 + 2i\\sin \\theta } \\right)} \\over {1 + 4{{\\sin }^2}\\theta }}$$\n<br><br>$$ = {{3 + 6i\\sin \\theta  + 2i\\sin \\theta  - 4{{\\sin }^2}\\theta } \\over {1 + 4{{\\sin }^2}\\theta }}$$\n<br><br>$$ = {{\\left( {3 - 4{{\\sin }^2}\\theta } \\right) + i\\left( {8\\sin \\theta } \\right)} \\over {1 + 4{{\\sin }^2}\\theta }}$$\n<br><br>As complex number is purely imaginary, So real part of this complex number is zero. \n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$${{3 - 4{{\\sin }^2}\\theta } \\over {1 + 4{{\\sin }^2}\\theta }}$$  = 0\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$3 - 4{\\sin ^2}\\theta  = 0$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$\\sin \\theta  =  \\pm {{\\sqrt 3 } \\over 2}$$\n<br><br>as &nbsp;&nbsp;$$\\theta $$  $$ \\in $$ $$\\left( { - {\\pi  \\over 2},\\pi } \\right)$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;$$\\theta $$ $$=$$ $$-$$ $${\\pi  \\over 3},{\\pi  \\over 3},{{2\\pi } \\over 3}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;Sum of those values of A is \n<br><br>$$ =  - {\\pi  \\over 3} + {\\pi  \\over 3} + {{2\\pi } \\over 3}$$\n<br><br>$$ = {{2\\pi } \\over 3}$$",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 9th January Morning Slot"
+    "title": "JEE Main 2019 (Online) 9th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694efd",
@@ -773,7 +786,8 @@
     ],
     "solution": "As w = $${{1 + \\left( {1 - 8\\alpha } \\right)z} \\over {1 - z}}$$, w is purely imaginary<br><br>\n$$ \\therefore w$$  + $$\\bar w$$ = 0<br><br>\n$$ \\Rightarrow $$ $${{1 + \\left( {1 - 8\\alpha } \\right)z} \\over {1 - z}}$$ + $${{1 + \\left( {1 - 8\\alpha } \\right)\\bar z} \\over {1 - \\bar z}}$$ = 0<br><br>\n$$ \\Rightarrow $$ [1 + (1 - 8$$\\alpha $$)][1 - $$\\bar z$$] + [1 + ( 1 - 8$$\\alpha $$)][1 - z] = 0<br><br>\n$$ \\Rightarrow $$ 2 - (z + $$\\bar z$$) + (1 - 8$$\\alpha $$)(z + $$\\bar z$$) - 2(1 - 8$$\\alpha $$) = 0<br><br>\n$$ \\Rightarrow $$ 2 - (z + $$\\bar z$$) + (z + $$\\bar z$$) - 8$$\\alpha $$(z + $$\\bar z$$) - 2 + 16$$\\alpha $$ = 0<br><br>\n$$ \\Rightarrow $$ 16$$\\alpha $$ =  8$$\\alpha $$(z + $$\\bar z)$$<br><br>\nz + $$\\bar z$$ = 2 or $$\\alpha $$ = 0<br><br>\nbut z + $$\\bar z$$ = 2 is not possible as Re(Z) $$ \\ne $$ 1<br><br>\n$$ \\therefore $$ $$\\alpha $$ = 0<br><br>\n$$ \\therefore $$ $$\\alpha $$ $$ \\in $$ {0}",
     "__v": 0,
-    "title": "JEE Main 2018 (Online) 15th April Morning Slot"
+    "title": "JEE Main 2018 (Online) 15th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694efe",
@@ -792,26 +806,8 @@
     ],
     "solution": "Given 2$$\\omega $$ + 1 = z;\n<br><br>z = $$\\sqrt 3 i$$\n<br><br>$$ \\Rightarrow $$ $$\\omega  = {{\\sqrt 3 i - 1} \\over 2}$$\n<br><br>$$ \\Rightarrow $$ As $$\\omega $$ is complex cube root of unity.\n<br><br>$${\\omega ^3} = 1$$\n<br><br>$$1 + \\omega  + {\\omega ^2} = 0$$\n<br><br>$$\\left| {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; { - {\\omega ^2} - 1} &amp; {{\\omega ^2}}  \\cr \n   1 &amp; {{\\omega ^2}} &amp; {{\\omega ^7}}  \\cr \n\n } } \\right| = 3k$$\n<br><br>$$ \\Rightarrow $$ $$\\left| {\\matrix{\n   1 &amp; 1 &amp; 1  \\cr \n   1 &amp; \\omega  &amp; {{\\omega ^2}}  \\cr \n   1 &amp; {{\\omega ^2}} &amp; \\omega   \\cr \n\n } } \\right| = 3k$$\n<br><br>Applying R<sub>1</sub> $$ \\to $$ R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub>\n<br><br>$$ \\Rightarrow $$ $$\\left| {\\matrix{\n   3 &amp; 0 &amp; 0  \\cr \n   1 &amp; \\omega  &amp; {{\\omega ^2}}  \\cr \n   1 &amp; {{\\omega ^2}} &amp; \\omega   \\cr \n\n } } \\right| = 3k$$\n<br><br>$$ \\Rightarrow $$ $$3\\left( {{\\omega ^2} - {\\omega ^4}} \\right) = 3k$$\n<br><br>$$ \\Rightarrow $$ $$\\left( {{\\omega ^2} - \\omega } \\right) = k$$\n<br><br>$$ \\therefore $$ $$k = \\left( {{{ - 1 - \\sqrt 3 i} \\over 2}} \\right) - \\left( {{{ - 1 + \\sqrt 3 i} \\over 2}} \\right)$$\n<br><br>$$ \\Rightarrow $$ k = $${ - \\sqrt 3 i}$$ = -z",
     "__v": 0,
-    "title": "JEE Main 2017 (Offline)"
-  },
-  {
-    "_id": "6a2bdbba2762cf4b57694eff",
-    "question_id": "6JujqveOd1HFnezyDc1kjxogyse",
-    "chapterId": "algebra-of-complex-numbers",
-    "subject": "Mathematics",
-    "topic": "algebra-of-complex-numbers",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$$1 - \\sqrt {1 + {y^2}} $$",
-      "$$ - 1 - \\sqrt {1 - {y^2}} $$",
-      "$$1 + \\sqrt {1 + {y^2}} $$",
-      "$$ - 1 + \\sqrt {1 - {y^2}} $$"
-    ],
-    "solution": "<p>It is given that $$z = x + iy$$ satisfies $${\\mathop{\\rm Im}\\nolimits} \\left( {{{az + b} \\over {z + 1}}} \\right) = y$$.</p>\n<p>Therefore,</p>\n<p>$${\\mathop{\\rm Im}\\nolimits} \\left( {{{a(x + iy) + b} \\over {(x + iy) + 1}}} \\right) = y$$</p>\n<p>$$ \\Rightarrow Im\\left( {{{ax + iay + b} \\over {x + iy + 1}}} \\right) = y$$</p>\n<p>Rationalizing the above equation and multiplying and dividing LHS by (x + 1 $$-$$ iy), we get</p>\n<p>$${\\mathop{\\rm Im}\\nolimits} \\left( {{{(ax + iay + b)} \\over {(x + iy + 1)}} \\times {{(x + 1 - iy)} \\over {(x + 1 - iy)}}} \\right) = y$$</p>\n<p>Using $${a^2} - {b^2} = (a + b)(a - b)$$, we get</p>\n<p>$${\\mathop{\\rm Im}\\nolimits} \\left( {{{(ax + iay + b)} \\over {{{(x + 1)}^2} - {{(iy)}^2}}}} \\right) = y$$</p>\n<p>$${\\mathop{\\rm Im}\\nolimits} \\left( {{{a{x^2} + ax - iayx + iaxy - {i^2}a{y^2} + bx + b - iby} \\over {{{(x + 1)}^2} + {y^2}}}} \\right) = y$$ (as $${i^2} =  - 1$$)</p>\n<p>$${\\mathop{\\rm Im}\\nolimits} \\left( {{{(a{x^2} + ax + a{y^2} + bx + b) + i(axy - ayx + ay - by)} \\over {{{(x + 1)}^2} + {y^2}}}} \\right) = y$$</p>\n<p>Rearranging LHS, we get</p>\n$${\\mathop{\\rm Im}\\nolimits} \\left( {{{[(a{x^2} + bx) + (ax + b) + a{y^2}] + i(ay - by)} \\over {{{(x + 1)}^2} + {y^2}}}} \\right) = y$$</p>\n<p>$$ \\Rightarrow {{ay - by} \\over {{{(x + 1)}^2} + {y^2}}} = y$$ (as imaginary value in bracket is coefficient of i)</p>\n<p>$$ \\Rightarrow y(a - b) = y({(x + 1)^2} + {y^2}) \\Rightarrow (a - b) = {(x + 1)^2} + {y^2}$$</p>\n<p>It is given that a $$-$$ b = 1 and y $$\\ne$$ 0</p>\n<p>$$ \\Rightarrow 1 = {(x + 1)^2} + {y^2}$$</p>\n<p>$$ \\Rightarrow 1 - {y^2} = {(x + 1)^2} \\Rightarrow (x + 1) =  \\pm \\sqrt {1 - {y^2}} $$ (as $${x^2} = b \\Rightarrow x =  \\pm \\sqrt 6 $$)</p>\n<p>$$ \\Rightarrow 1 =  - 1 \\pm \\sqrt {1 - {y^2}} $$</p>\n<p>or, $$x =  - 1 + \\sqrt {1 - {y^2}} $$ and $$x =  - 1 - \\sqrt {1 - {y^2}} $$</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2017 Paper 1 Offline"
+    "title": "JEE Main 2017 (Offline)",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694f00",
@@ -830,7 +826,8 @@
     ],
     "solution": "Rationalizing the given expression\n<br><br>$${{\\left( {2 + 3i\\sin \\theta } \\right)\\left( {1 + 2i\\sin \\theta } \\right)} \\over {1 + 4{{\\sin }^2}\\theta }}$$\n<br><br>For the given expression to be purely imaginary, real part of the above expression should be  equal to zero.\n<br><br>$$ \\Rightarrow {{2 - 6{{\\sin }^2}\\theta } \\over {1 + 4{{\\sin }^2}\\theta }} = 0$$\n<br><br>$$ \\Rightarrow {\\sin ^2}\\theta  = {1 \\over 3}$$\n<br><br>$$ \\Rightarrow \\sin \\theta  =  \\pm {1 \\over {\\sqrt 3 }}$$ ",
     "__v": 0,
-    "title": "JEE Main 2016 (Offline)"
+    "title": "JEE Main 2016 (Offline)",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694f01",
@@ -849,7 +846,8 @@
     ],
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/TBiqeV4kaUdW7vACY/UktjWcrrLmpsbWwCT4UJDpT0wO57e/bcv4xiSNlvLsUtB0bby7hB/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2016 (Online) 9th April Morning Slot Mathematics - Complex Numbers Question 174 English Explanation\">\n<br><br>Here, \n<br><br>z $$-$$ (3 + 3i) = $$2\\sqrt 2 $$ (cos($$-$$135<sup>o</sup>) + i sin ($$-$$ 135<sup>o</sup>))\n<br><br>= $$2\\sqrt 2 $$ ($$-$$ $${1 \\over {\\sqrt 2 }}$$ $$-$$$${i \\over {\\sqrt 2 }}$$)\n<br><br>= $$-$$ 2 $$-$$ 2i\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;z = 3 + 3 i $$-$$ 2 $$-$$ 2 i = 1 + i\n<br><br><u>Note </u>: \n<br><br>Polar form of a complex number :\n<br><br>z = r (cos$$\\theta $$ + i sin$$\\theta $$)\n<br><br>Here r  = modulus of z and $$\\theta $$ argument of z. ",
     "__v": 0,
-    "title": "JEE Main 2016 (Online) 9th April Morning Slot"
+    "title": "JEE Main 2016 (Online) 9th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694f02",
@@ -868,7 +866,8 @@
     ],
     "solution": "Given that $$\\left| {z - {4 \\over z}} \\right| = 2$$\n<br><br>Now $$\\left| z \\right| = \\left| {z - {4 \\over z} + {4 \\over { - z}}} \\right| \\le \\left| {z - {4 \\over z}} \\right| + {4 \\over {\\left| z \\right|}}$$\n<br><br>$$ \\Rightarrow \\left| z \\right| \\le 2 + {4 \\over {\\left| z \\right|}}$$\n<br><br>$$ \\Rightarrow {\\left| z \\right|^2} - 2\\left| z \\right| - 4 \\le 0$$\n<br><br>$$ \\Rightarrow \\left( {\\left| z \\right| - {{2 + \\sqrt {20} } \\over 2}} \\right)\\left( {\\left| z \\right| - {{2 - \\sqrt {20} } \\over 2}} \\right) \\le 0$$\n<br><br>$$\\left( {\\left| z \\right| - \\left( {1 + \\sqrt 5 } \\right)} \\right)\\left( {\\left| z \\right| - \\left( {1 - \\sqrt 5 } \\right)} \\right) \\le 0$$\n<br><br>$$ \\Rightarrow \\left( { - \\sqrt 5  + 1} \\right) \\le \\left| z \\right| \\le \\left( {\\sqrt 5  + 1} \\right)$$\n<br><br>$$ \\Rightarrow {\\left| z \\right|_{\\max }} = \\sqrt 5  + 1$$",
     "__v": 0,
-    "title": "AIEEE 2009"
+    "title": "AIEEE 2009",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694f03",
@@ -887,7 +886,8 @@
     ],
     "solution": "$${z^2} + z + 1 = 0 \\Rightarrow z = \\omega \\,\\,\\,$$  or $$\\,\\,\\,{\\omega ^2}$$ \n<br><br>So, $$z + {1 \\over z} = \\omega  + {\\omega ^2} =  - 1$$\n<br><br>$${z^2} + {1 \\over {{z^2}}} = {\\omega ^2} + \\omega  =  - 1,$$ \n<br><br>$${z^3} + {1 \\over {{z^3}}} = {\\omega ^3} + {\\omega ^3} = 2$$\n<br><br>$${z^4} + {1 \\over {{z^4}}} =  - 1,$$\n<br><br>$${z^5} + {1 \\over {{z^5}}} =  - 1$$\n<br><br>and $$\\,\\,\\,\\,{z^6} + {1 \\over {{z^6}}} = 2$$ \n<br><br>$$\\therefore$$ The given sum $$ = 1 + 1 + 4 + 1 + 1 + 4 = 12$$ ",
     "__v": 0,
-    "title": "AIEEE 2006"
+    "title": "AIEEE 2006",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbba2762cf4b57694f04",
@@ -906,6 +906,7 @@
     ],
     "solution": "Given $$\\left| {z - 4} \\right| &lt; \\left| {z - 2} \\right|$$ \n<br><br>Let $$\\,\\,\\,z = x + iy$$\n<br><br>$$ \\Rightarrow \\left| {\\left. {\\left( {x - 4} \\right) + iy} \\right)} \\right| &lt; \\left| {\\left( {x - 2} \\right) + iy} \\right|$$\n<br><br>$$ \\Rightarrow {\\left( {x - 4} \\right)^2} + {y^2} &lt; {\\left( {x - 2} \\right)^2} + {y^2}$$\n<br><br>$$ \\Rightarrow {x^2} - 8x + 16 &lt; {x^2} - 4x + 4$$\n<br><br>$$ \\Rightarrow 12 &lt; 4x$$\n<br><br>$$ \\Rightarrow x &gt; 3$$\n<br><br>$$ \\Rightarrow {\\mathop{\\rm Re}\\nolimits} \\left( z \\right) &gt; 3$$",
     "__v": 0,
-    "title": "AIEEE 2002"
+    "title": "AIEEE 2002",
+    "exam": "JEE Main"
   }
 ]

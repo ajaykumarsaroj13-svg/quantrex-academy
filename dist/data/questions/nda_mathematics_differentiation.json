@@ -117,7 +117,7 @@
     },
     "solution": "<p>Given</p>\n<p>$$ y=\\frac{x\\sin^{-1}x}{\\sqrt{1-x^2}}+\\ln\\sqrt{1-x^2} $$</p>\n<p>We need to find</p>\n<p>$$ \\left.\\frac{d^2y}{dx^2}\\right|_{x=0} $$</p>\n<p>Let us simplify first.</p>\n<p>Since</p>\n<p>$$ \\ln\\sqrt{1-x^2}=\\frac12\\ln(1-x^2) $$</p>\n<p>so,</p>\n<p>$$ y=x\\sin^{-1}x\\,(1-x^2)^{-1/2}+\\frac12\\ln(1-x^2) $$</p>\n<p>To find $y''(0)$ easily, we use the Maclaurin expansion near $x=0$.</p>\n<p>We know:</p>\n<p>$$ \\sin^{-1}x=x+\\frac{x^3}{6}+\\cdots $$</p>\n<p>and</p>\n<p>$$ (1-x^2)^{-1/2}=1+\\frac{x^2}{2}+\\cdots $$</p>\n<p>So,</p>\n<p>$$ x\\sin^{-1}x=x\\left(x+\\frac{x^3}{6}+\\cdots\\right) = x^2+\\frac{x^4}{6}+\\cdots $$</p>\n<p>Now multiply by $(1-x^2)^{-1/2}$:</p>\n<p>$$ \\frac{x\\sin^{-1}x}{\\sqrt{1-x^2}} =\\left(x^2+\\frac{x^4}{6}+\\cdots\\right)\\left(1+\\frac{x^2}{2}+\\cdots\\right) $$</p>\n<p>The coefficient of $x^2$ is just $1$, so</p>\n<p>$$ \\frac{x\\sin^{-1}x}{\\sqrt{1-x^2}}=x^2+\\cdots $$</p>\n<p>Also,</p>\n<p>$$ \\frac12\\ln(1-x^2) =\\frac12\\left(-x^2-\\frac{x^4}{2}-\\cdots\\right) =-\\frac{x^2}{2}+\\cdots $$</p>\n<p>Therefore,</p>\n<p>$$ y=x^2-\\frac{x^2}{2}+\\cdots =\\frac{x^2}{2}+\\cdots $$</p>\n<p>Now compare with the Maclaurin form</p>\n<p>$$ y=y(0)+y'(0)x+\\frac{y''(0)}{2}x^2+\\cdots $$</p>\n<p>Coefficient of $x^2$ is $\\frac12$, so</p>\n<p>$$ \\frac{y''(0)}{2}=\\frac12 $$</p>\n<p>Hence,</p>\n<p>$$ y''(0)=1 $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{1} $$</p>\n<p>Option 3.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -241,7 +241,7 @@
     },
     "solution": "<p>Given</p>\n<p>$$ y=\\frac{x\\sin^{-1}x}{\\sqrt{1-x^2}}+\\ln\\sqrt{1-x^2} $$</p>\n<p>and $x=\\sin\\theta$.</p>\n<p>We have to find $\\dfrac{dy}{dx}$ in terms of $\\theta$.</p>\n\n<p>Since $x=\\sin\\theta$, therefore</p>\n<p>$$ \\sin^{-1}x=\\theta $$</p>\n<p>and</p>\n<p>$$ \\sqrt{1-x^2}=\\sqrt{1-\\sin^2\\theta}=\\cos\\theta $$</p>\n<p>Also,</p>\n<p>$$ x=\\sin\\theta $$</p>\n<p>So the given function becomes</p>\n<p>$$ y=\\frac{\\sin\\theta\\cdot \\theta}{\\cos\\theta}+\\ln(\\cos\\theta) $$</p>\n<p>that is,</p>\n<p>$$ y=\\theta\\tan\\theta+\\ln(\\cos\\theta) $$</p>\n\n<p>Now differentiate with respect to $\\theta$.</p>\n<p>Using product rule:</p>\n<p>$$ \\frac{dy}{d\\theta}=\\frac{d}{d\\theta}(\\theta\\tan\\theta)+\\frac{d}{d\\theta}\\ln(\\cos\\theta) $$</p>\n<p>$$ \\frac{d}{d\\theta}(\\theta\\tan\\theta)=\\theta\\sec^2\\theta+\\tan\\theta $$</p>\n<p>and</p>\n<p>$$ \\frac{d}{d\\theta}\\ln(\\cos\\theta)=\\frac{-\\sin\\theta}{\\cos\\theta}=-\\tan\\theta $$</p>\n<p>Hence,</p>\n<p>$$ \\frac{dy}{d\\theta}=\\theta\\sec^2\\theta+\\tan\\theta-\\tan\\theta $$</p>\n<p>$$ \\frac{dy}{d\\theta}=\\theta\\sec^2\\theta $$</p>\n\n<p>Now,</p>\n<p>$$ x=\\sin\\theta $$</p>\n<p>So,</p>\n<p>$$ \\frac{dx}{d\\theta}=\\cos\\theta $$</p>\n<p>Therefore, by chain rule,</p>\n<p>$$ \\frac{dy}{dx}=\\frac{\\frac{dy}{d\\theta}}{\\frac{dx}{d\\theta}} $$</p>\n<p>$$ \\frac{dy}{dx}=\\frac{\\theta\\sec^2\\theta}{\\cos\\theta} $$</p>\n<p>Since $\\dfrac{1}{\\cos\\theta}=\\sec\\theta$, we get</p>\n<p>$$ \\frac{dy}{dx}=\\theta\\sec^3\\theta $$</p>\n\n<p>So the correct answer is</p>\n<p>$$ \\boxed{\\theta\\sec^3\\theta} $$</p>\n<p>Therefore, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 3}} $$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -365,7 +365,7 @@
     },
     "solution": "<p>For $x=-1$, we use the part of the function defined for $x<0$:</p>\n<p>$$ f(x)=4(5^x) $$</p>\n<p>To find $f'(-1)$, first differentiate $f(x)$.</p>\n<p>We know that</p>\n<p>$$ \\frac{d}{dx}(a^x)=a^x\\ln a $$</p>\n<p>So,</p>\n<p>$$ f'(x)=4\\cdot 5^x\\ln 5 $$</p>\n<p>Now substitute $x=-1$:</p>\n<p>$$ f'(-1)=4\\cdot 5^{-1}\\ln 5 $$</p>\n<p>Since</p>\n<p>$$ 5^{-1}=\\frac{1}{5} $$</p>\n<p>we get</p>\n<p>$$ f'(-1)=4\\cdot \\frac{1}{5}\\ln 5=\\frac{4}{5}\\ln 5 $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{\\frac{4}{5}\\ln 5} $$</p>\n<p>Option 3</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -489,7 +489,7 @@
     },
     "solution": "<p>For  </p>\n<p>$$ f(x)=|x-3|+|x-4| $$</p>\n<p>we first look at the interval containing $x=3.5$.</p>\n<p>Since  </p>\n<p>$$ 3< 3.5< 4 $$</p>\n<p>we have:</p>\n<ul>\n<li><p>$x-3>0$, so $|x-3|=x-3$</p></li>\n<li><p>$x-4<0$, so $|x-4|=-(x-4)=4-x$</p></li>\n</ul>\n<p>So in the interval $3 < x < 4$,</p>\n<p>$$ f(x)=(x-3)+(4-x)=1 $$</p>\n<p>This is a constant function, so its derivative is</p>\n<p>$$ \\frac{dy}{dx}=0 $$</p>\n<p>Hence, at $x=3.5$,</p>\n<p>$$ \\frac{dy}{dx}=0 $$</p>\n<p>Therefore, the correct answer is:</p>\n<p>$$ \\boxed{0} $$</p>\n<p>Option 1.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -613,7 +613,7 @@
     },
     "solution": "<ol>\n\n<li>\n\n<p>\n\nStep 1: Find <span class=\"math-tex\">$\\frac{dx}{d\\theta}$</span>\n\n</p>\n\n<p>\n\nThe derivative of <span class=\"math-tex\">$\\sec\\theta$</span> is <span class=\"math-tex\">$\\sec\\theta\\tan\\theta$</span>, and the derivative of <span class=\"math-tex\">$-\\cos\\theta$</span> is <span class=\"math-tex\">$\\sin\\theta$</span>. So,\n\n</p>\n\n<p>\n\n<span class=\"math-tex\">${dx\\over d\\theta}= \\frac{d}{d\\theta}(\\sec\\theta-\\cos\\theta)=\\sec\\theta\\tan\\theta+\\sin\\theta$</span>\n\n</p>\n\n</li>\n\n<li>\n\n<p>\n\nStep 2: Find <span class=\"math-tex\">$\\frac{dy}{d\\theta}$</span>\n\n</p>\n\n<p>\n\nThe derivative of <span class=\"math-tex\">$\\sec^4\\theta$</span> is <span class=\"math-tex\">$4\\sec^3\\theta \\cdot \\sec\\theta\\tan\\theta = 4\\sec^4\\theta\\tan\\theta$</span>.\n\n</p>\n\n<p>\n\nThe derivative of <span class=\"math-tex\">$-\\cos^4\\theta$</span> is <span class=\"math-tex\">$-4\\cos^3\\theta\\sin\\theta$</span>.\n\n</p>\n\n<p>\n\nSo,\n\n</p>\n\n<p>\n\n<span class=\"math-tex\">${dy\\over d\\theta}= {d\\over d\\theta}(\\sec^4\\theta-\\cos^4\\theta) =4\\sec^4\\theta\\tan\\theta+4\\cos^3\\theta\\sin\\theta$</span>\n\n</p>\n\n</li>\n\n<li>\n\n<p>\n\nStep 3: Find <span class=\"math-tex\">$\\frac{dy}{dx}$</span>\n\n</p>\n\n<p>\n\n<span class=\"math-tex\">$\\frac{dy}{dx} = \\frac{dy/d\\theta}{dx/d\\theta} = 4\\,\\frac{\\sec^4\\theta\\tan\\theta+\\cos^3\\theta\\sin\\theta} {\\sec\\theta\\tan\\theta+\\sin\\theta}$</span>\n\n</p>\n\n<p>\n\nNow change variables: let <span class=\"math-tex\">$\\cos\\theta=A$</span>.\n\n</p>\n\n<p>\n\nSo <span class=\"math-tex\">$\\sec\\theta=1/A$</span>, <span class=\"math-tex\">$\\tan\\theta=\\sqrt{1-A^2}/A$</span>, <span class=\"math-tex\">$\\sin\\theta=\\sqrt{1-A^2}$</span>.\n\n</p>\n\n<p>\n\nPlug these values in and simplify.\n\n</p>\n\n<p>\n\nAfter simplifying:\n\n</p>\n\n<p>\n\n<span class=\"math-tex\">$\\frac{dy}{dx}=4\\,\\frac{A^{-3}+A^5}{1+A^2}\\,,\\qquad    \\Bigl(\\frac{dy}{dx}\\Bigr)^2    =16\\,\\frac{(1+A^8)^2}{A^6(1+A^2)^2}\\,.$</span>\n\n</p>\n\n</li>\n\n<li>\n\n<p>\n\nStep 4: Write <span class=\"math-tex\">$x$</span> and <span class=\"math-tex\">$y$</span> using <span class=\"math-tex\">$A$</span>\n\n</p>\n\n<p>\n\n<span class=\"math-tex\">$x=\\sec\\theta-\\cos\\theta=\\frac{1-A^2}{A},\\quad      y=\\sec^4\\theta-\\cos^4\\theta=\\frac{1-A^8}{A^4}$.</span>\n\n</p>\n\n<p>\n\nNow, let's find <span class=\"math-tex\">$x^2+4$</span> and <span class=\"math-tex\">$y^2+4$</span>:\n\n</p>\n\n<p>\n\n<span class=\"math-tex\">$x^2+4=\\frac{(1-A^2)^2+4A^2}{A^2} =\\frac{(1+A^2)^2}{A^2},\\quad      y^2+4=\\frac{(1-A^8)^2+4A^8}{A^8} =\\frac{(1+A^8)^2}{A^8}.$</span>\n\n</p>\n\n</li>\n\n<li>\n\n<p>\n\nStep 5: Connect everything to <span class=\"math-tex\">$\\left(\\frac{dy}{dx}\\right)^2$</span>\n\n</p>\n\n<p>\n\n<span class=\"math-tex\">$16\\,\\frac{y^2+4}{x^2+4}    =16\\,\\frac{\\displaystyle\\frac{(1+A^8)^2}{A^8}}               {\\displaystyle\\frac{(1+A^2)^2}{A^2}}    =16\\,\\frac{(1+A^8)^2}{A^6(1+A^2)^2}    =\\Bigl(\\frac{dy}{dx}\\Bigr)^2.$</span>\n\n</p>\n\n</li>\n\n</ol>\n<p>\n\nAnswer: <span class=\"math-tex\">$\\displaystyle(\\tfrac{dy}{dx})^2= \\frac{16\\,(y^2+4)}{\\,x^2+4\\,}\\, $</span> (Option C).\n\n</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -736,7 +736,7 @@
     },
     "solution": "<p><u><strong>Step 1: Given Information</strong></u></p>\n<p>We have the following:</p>\n<p><span class=\"math-tex\">$x = \\sec\\theta - \\cos\\theta$</span></p>\n<p><span class=\"math-tex\">$y = \\sec^4\\theta - \\cos^4\\theta$</span></p>\n<p>Also, it is given that:</p>\n<p><span class=\"math-tex\">$\\displaystyle \\left(\\frac{dy}{dx}\\right)^{2} = \\frac{16\\,(y^{2}+4)}{\\,x^{2}+4\\,} $</span></p>\n<p><u><strong>Step 2: Differentiate Both Sides with Respect to $x$</strong></u></p>\n<p>Differentiate the equation above with respect to $x$:</p>\n<p><span class=\"math-tex\">$\\frac{d}{dx}\\Bigl[(x^{2}+4)\\left(\\frac{dy}{dx}\\right)^{2}\\Bigr] = \\frac{d}{dx}\\bigl[16\\,(y^{2}+4)\\bigr] $</span></p>\n<p>This leads to:</p>\n<p><span class=\"math-tex\">$(x^{2}+4)\\frac{d^{2}y}{dx^{2}} + x\\frac{dy}{dx} - 16y = 0$</span></p>\n<p><u><strong>Step 3: Identify the Target Expression</strong></u></p>\n<p>The expression we need to solve is:</p>\n<p><span class=\"math-tex\">$\\frac{x^{2}+4}{y^{2}+4}\\frac{dy}{dx} \\left[(x^{2}+4)\\frac{d^{2}y}{dx^{2}}-16y\\right] $</span></p>\n<p><u><strong>Step 4: Substitute From Earlier Result</strong></u></p>\n<p>From the result in Step 2, notice that:</p>\n<p><span class=\"math-tex\">$(x^{2}+4)\\frac{d^{2}y}{dx^{2}}-16y = -x\\frac{dy}{dx}$</span></p>\n<p><u><strong>Step 5: Plug This Back Into the Target Expression</strong></u></p>\n<p>So, the target expression changes to:</p>\n<p><span class=\"math-tex\">$\\frac{x^{2}+4}{y^{2}+4}\\frac{dy}{dx} \\left(-x\\frac{dy}{dx}\\right) = -x \\frac{x^{2}+4}{y^{2}+4}\\left(\\frac{dy}{dx}\\right)^2 $</span></p>\n<p><u><strong>Step 6: Use the Given $(\\frac{dy}{dx})^2$ Value</strong></u></p>\n<p>We know that:</p>\n<p><span class=\"math-tex\">$\\left(\\frac{dy}{dx}\\right)^2 = \\frac{16(y^2+4)}{x^2+4}$</span></p>\n<p>Substitute this into the expression:</p>\n<p><span class=\"math-tex\">$ -x \\frac{x^{2}+4}{y^{2}+4} \\cdot \\frac{16(y^{2}+4)}{x^{2}+4} = -16x $</span></p>\n<p><strong>Therefore, the value is <span class=\"math-tex\">$-16x$</span>.</strong></p>\n<p><strong>The correct answer is Option C.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -859,7 +859,7 @@
     },
     "solution": "<p>Differentiate by taking logarithms of both sides:  </p>\n<p>$ (p+q)\\ln(x+y)=p\\ln x+q\\ln y. $  </p>\n<p>Differentiating w.r.t. $x$ (and writing $y’=\\tfrac{dy}{dx}$) gives  </p>\n<p>$ (p+q)\\frac{1+y'}{x+y} =\\frac{p}{x}+\\frac{q\\,y'}{y}. $  </p>\n<p>Bring the $y'$-terms to one side:  </p>\n<p>$ (p+q)\\frac{y'}{x+y}-\\frac{q\\,y'}{y} =\\frac{p}{x}-\\frac{p+q}{x+y}. $  </p>\n<p>Factor out $y'$:  </p>\n<p>$ y'\\Bigl(\\,(p+q)\\frac{1}{x+y}-q\\frac{1}{y}\\Bigr) =\\;p\\frac{1}{x}-(p+q)\\frac{1}{x+y}. $  </p>\n<p>Hence  </p>\n<p>$ y' =\\frac{\\displaystyle p\\frac1x-(p+q)\\frac1{x+y}} {\\displaystyle (p+q)\\frac1{x+y}-q\\frac1y}\\,, $  </p>\n<p>which manifestly involves both $p$ and $q$.  </p>\n<p>Answer: Option C.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -982,7 +982,7 @@
     },
     "solution": "<p>Differentiate both sides of $(x+y)^{10}=x^p\\,y^q$ (with $p+q=10$) implicitly with respect to $x$.</p>\n<ol>\n<li>Left‐hand side:</li>\n</ol>\n<p>$ \\frac{d}{dx}\\bigl((x+y)^{10}\\bigr) =10\\,(x+y)^9\\,(1+y'). $</p>\n<ol start=\"2\">\n<li>Right‐hand side:</li>\n</ol>\n<p>$ \\frac{d}{dx}\\bigl(x^p\\,y^q\\bigr) =p\\,x^{p-1}\\,y^q+q\\,x^p\\,y^{q-1}\\,y'. $</p>\n<p>So</p>\n<p>$ 10(x+y)^9\\,(1+y') =p\\,x^{p-1}y^q+q\\,x^p y^{q-1}y'. $</p>\n<p>Collect the $y'$–terms on one side:</p>\n<p>$ 10(x+y)^9 +10(x+y)^9\\,y' = p\\,x^{p-1}y^q +q\\,x^p y^{q-1}y', $</p>\n<p>$ 10(x+y)^9\\,y' -q\\,x^p y^{q-1}y' = p\\,x^{p-1}y^q -10(x+y)^9, $</p>\n<p>$ y'\\Bigl(10(x+y)^9 -q\\,x^p y^{q-1}\\Bigr) = p\\,x^{p-1}y^q -10(x+y)^9. $</p>\n<p>Using $(x+y)^{10}=x^p y^q$, one simplifies to</p>\n<p>$ y'=\\frac{y}{x}. $</p>\n<p>Answer: Option A.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -1105,7 +1105,7 @@
     },
     "solution": "<p>We use the chain‐rule twice. Set  </p>\n<p>$$u(x)=2f(x)+2,\\quad h(x)=f\\bigl(u(x)\\bigr).$$  </p>\n<p>Then  </p>\n\n<p><p>$u'(x)=2\\,f'(x)$,  </p></p>\n<p><p>$h'(x)=f'\\bigl(u(x)\\bigr)\\,u'(x)=f'\\bigl(2f(x)+2\\bigr)\\;\\cdot\\;2f'(x).$  </p></p>\n\n<p>At $x=0$:  </p>\n\n<p><p>$f(0)=-1$ so $2f(0)+2=0$,  </p></p>\n<p><p>$f'(0)=1$.  </p></p>\n\n<p>Hence  </p>\n<p>$$h'(0)=f'(0)\\,\\cdot2\\,f'(0)=1\\cdot2\\cdot1=2.$$  </p>\n<p>Answer: 2.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1229,7 +1229,7 @@
     },
     "solution": "<p>Let $u(x)=2f(x)+2$, so that $h(x)=f(u(x))$ and $g(x)=\\bigl(h(x)\\bigr)^2$.  We proceed in steps:</p>\n\n<p><p>Evaluate at $x=0$:  </p>\n<p>$u(0)=2f(0)+2=2\\cdot(-1)+2=0$,  </p>\n<p>so  </p>\n<p>$      h(0)=f\\bigl(u(0)\\bigr)=f(0)=-1.    $</p></p>\n<p><p>Differentiate $h(x)=f(u(x))$:  </p>\n<p>$      h'(x)=f'\\bigl(u(x)\\bigr)\\,u'(x).    $</p>\n<p>Since $u'(x)=2f'(x)$, at $x=0$ we get  </p>\n<p>$      u'(0)=2f'(0)=2\\cdot1=2,\\quad       h'(0)=f'(0)\\cdot u'(0)=1\\cdot2=2.    $</p></p>\n<p><p>Differentiate $g(x)=\\bigl(h(x)\\bigr)^2$:  </p>\n<p>$      g'(x)=2\\,h(x)\\,h'(x)      \\quad\\Longrightarrow\\quad      g'(0)=2\\cdot(-1)\\cdot2=-4.    $</p></p>\n\n<p>Answer: $-4$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1353,7 +1353,7 @@
     },
     "solution": "<p>Given the function </p>\n<p>$$ f(x) = \\frac{x}{\\ln x} \\; \\text{with} \\; (x > 1), $$</p>\n<p>let's analyze the provided statements step by step.</p>\n<h3>First Derivative</h3>\n<p>First, compute the first derivative $ f'(x) $:</p>\n<p>$$ f'(x) = \\frac{d}{dx} \\left( \\frac{x}{\\ln x} \\right). $$</p>\n<p>Using the quotient rule:</p>\n<p>$$ f'(x) = \\frac{ (\\ln x) \\cdot (1) - x \\cdot \\frac{1}{x} }{(\\ln x)^2} = \\frac{ \\ln x - 1}{(\\ln x)^2}. $$</p>\n<h3>Second Derivative</h3>\n<p>Next, compute the second derivative $ f''(x) $:</p>\n<p>$$ f''(x) = \\frac{d}{dx} \\left( \\frac{\\ln x - 1}{(\\ln x)^2} \\right). $$</p>\n<p>Applying the quotient rule again:</p>\n<p>$ f''(x) = \\frac{ (\\ln x)^2 \\cdot \\frac{1}{x} - (\\ln x - 1) \\cdot 2 (\\ln x) \\cdot \\frac{1}{x} }{ (\\ln x)^4 } = \\frac{ (\\ln x) - 2 (\\ln x - 1) }{ x (\\ln x)^3 } = \\frac{ \\ln x - 2 \\ln x + 2 }{ x (\\ln x)^3 } = \\frac{ 2 - \\ln x }{ x (\\ln x)^3 }. $</p>\n<p>Evaluating $ f''(x) $ at $ x = e $:</p>\n<p>$$ f''(e) = \\frac{ 2 - \\ln e }{ e (\\ln e)^3 } = \\frac{ 2 - 1 }{ e (1)^3 } = \\frac{1}{e}. $$</p>\n<p>So, statement 1 is correct.</p>\n<h3>Local Minimum Value</h3>\n<p>To find where $ f(x) $ attains a local minimum, consider the critical points. Set $ f'(x) = 0 $:</p>\n<p>$$ \\frac{ \\ln x - 1}{ (\\ln x)^2 } = 0 \\Rightarrow \\ln x - 1 = 0 \\Rightarrow \\ln x = 1 \\Rightarrow x = e. $$</p>\n<p>To determine the nature of this critical point, check the sign of $ f''(x) $ around $ x = e $. Since $ f''(e) = \\frac{1}{e} > 0 $, $ x = e $ is a local minimum.</p>\n<p>The function $ f(x) $ attains a local minimum value at $ x = e $.</p>\n<p>Lastly, compute $ f(e) $:</p>\n<p>$$ f(e) = \\frac{e}{\\ln e} = \\frac{e}{1} = e. $$</p>\n<p>Therefore, the local minimum value of $ f(x) $ is $ e $.</p>\n<h3>Conclusion</h3>\n<p>Statements 1, 2, and 3 are correct. Hence, the correct option is:</p>\n<p><strong>Option D</strong></p>\n<p>$ \\text{Statement 1: } f''(e) = \\frac{1}{e} \\text{ is correct.} $</p>\n<p>$ \\text{Statement 2: } f(x) \\text{ attains a local minimum value at } x = e \\text{ is correct.} $</p>\n<p>$ \\text{Statement 3: } \\text{A local minimum value of } f(x) \\text{ is } e \\text{ is correct.} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1476,7 +1476,7 @@
     },
     "solution": "<p>To find the second derivative of the function $ f(x) $, we need to determine $ f(x) $ first using the given information.</p>\n\n<p>Given:</p>\n\n<p>1. $ g(x) = x - \\frac{1}{x} $</p>\n\n<p>2. $ f \\circ g(x) = x^3 - \\frac{1}{x^3} $</p>\n\n<p>This means $ f(g(x)) = x^3 - \\frac{1}{x^3} $. So, we need to express $ f(u) $ where $ u = g(x) = x - \\frac{1}{x} $.</p>\n\n<p>Let $ u = x - \\frac{1}{x} $. This converts to:</p>\n\n<p>$$ f(u) = x^3 - \\frac{1}{x^3} $$</p>\n\n<p>We need to express $ x $ and $ \\frac{1}{x} $ in terms of $ u $. If we cube $ u $, we get:</p>\n\n<p>$$ u^3 = \\left( x - \\frac{1}{x} \\right)^3 $$</p>\n\n<p>Expanding this, we get:</p>\n\n<p>$$ u^3 = x^3 - 3x \\cdot \\frac{1}{x} + 3 \\cdot \\frac{1}{x^2} \\cdot x - \\frac{1}{x^3} $$</p>\n\n<p>$$ u^3 = x^3 - 3\\left( x - \\frac{1}{x} \\right) - \\frac{1}{x^3} $$</p>\n\n<p>Since $ u = x - \\frac{1}{x} $, we substitute $ u $ back in:</p>\n\n<p>$$ u^3 = x^3 - 3u - \\frac{1}{x^3} $$</p>\n\n<p>From this, we get:</p>\n\n<p>$$ x^3 - \\frac{1}{x^3} = u^3 + 3u $$</p>\n\n<p>Thus, we can write:</p>\n\n<p>$$ f(u) = u^3 + 3u $$</p>\n\n<p>Now, we need to find the second derivative of $ f(x) = x^3 + 3x $.</p>\n\n<p>First derivative $ f'(x) $ is:</p>\n\n<p>$$ f'(x) = \\frac{d}{dx}(x^3 + 3x) = 3x^2 + 3 $$</p>\n\n<p>Second derivative $ f''(x) $ is:</p>\n\n<p>$$ f''(x) = \\frac{d}{dx}(3x^2 + 3) = 6x $$</p>\n\n<p>So, the correct option is:</p>\n\n<p>Option D</p>\n\n<p>6x</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1599,7 +1599,7 @@
     },
     "solution": "\n<p><strong>Formula Used:</strong></p>\n<p>$ \\frac{d}{dx} x^n = n x^{n-1} $</p>\n<p>Given that:</p>\n<p>$ 2 f(x) + f\\left(\\frac{1}{x}\\right) = x + 3 \\quad \\quad \\quad \\quad \\text{....(1)} $</p>\n<p>Substitute $ x = \\frac{1}{x} $:</p>\n<p>Now, we get:</p>\n<p>$ 2 f\\left(\\frac{1}{x}\\right) + f(x) = \\frac{1}{x} + 3 \\quad \\quad \\quad \\quad \\text{....(2)} $</p>\n<p>Now, multiply equation (1) by 2 and subtract equation (2):</p>\n<p>$ 4 f(x) + 2 f\\left(\\frac{1}{x}\\right) - 2 f\\left(\\frac{1}{x}\\right) - f(x) = 2x + 6 - \\left( \\frac{1}{x} + 3 \\right) $</p>\n<p>Simplifying, we get:</p>\n<p>$ 3 f(x) = 2x - \\frac{1}{x} + 3 $</p>\n<p>Therefore,</p>\n<p>$ f(x) = \\frac{2}{3} x - \\frac{1}{3x} + 1 $</p>\n<p>Differentiating with respect to $ x $:</p>\n<p>$ f'(x) = \\frac{d}{dx} \\left( \\frac{2}{3} x - \\frac{1}{3x} + 1 \\right) = \\frac{2}{3} - \\frac{1}{3} \\left( -\\frac{1}{x^2} \\right) $</p>\n<p>Substitute $ x = 0.5 $:</p>\n<p>$ f'(0.5) = \\frac{2}{3} - \\frac{1}{3} \\left( -\\frac{1}{(0.5)^2} \\right) $</p>\n<p>Simplifying,</p>\n<p>$ f'(0.5) = \\frac{2}{3} - \\left(-\\frac{4}{3}\\right) $</p>\n<p>Thus,</p>\n<p>$ f'(0.5) = \\frac{2 + 4}{3} = \\frac{6}{3} = 2 $</p>\n<p>Therefore, $ f'(0.5) = 2 $.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1722,7 +1722,7 @@
     },
     "solution": "<p>Given the function </p>\n<p>$$ f(x) = |\\ln|x|| $$ </p>\n<p>where $ 0 < x < 1 $, we need to find $ f'(0.5) $.</p>\n<p>First, consider </p>\n<p>$$ g(x) = \\ln|x|. $$ </p>\n<p>For $ x > 0 $, this simplifies to </p>\n<p>$$ g(x) = \\ln(x). $$ </p>\n<p>The derivative of $ g(x) = \\ln(x) $ is </p>\n<p>$$ g'(x) = \\frac{1}{x}. $$ </p>\n<p>Since $ f(x) = |\\ln(x)| $ and $ 0 < x < 1 $, $\\ln(x) < 0$. Therefore,</p>\n<p>$$ f(x) = -\\ln(x). $$</p>\n<p>Now, differentiate $ f(x) = -\\ln(x) $:</p>\n<p>$$ f'(x) = -\\frac{1}{x}. $$</p>\n<p>Evaluating at $ x = 0.5 $:</p>\n<p>$$ f'(0.5) = -\\frac{1}{0.5} = -2. $$</p>\n<p>Therefore, </p>\n<p>$$ f'(0.5) = -2. $$</p>\n<p><strong>Option A</strong> is correct:\n-2</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1845,7 +1845,7 @@
     },
     "solution": "<p>Given $ f'(x) = \\cos (\\ln x) $ and $ y = f\\left(\\frac{2x-3}{x}\\right) $, the chain rule is applied to find $ \\frac{dy}{dx} $.</p>\n<p>First, define $ u = \\frac{2x-3}{x} $.</p>\n<p>Now, find $ \\frac{du}{dx} $:</p>\n<p>$ u = \\frac{2x-3}{x} = 2 - \\frac{3}{x} $\n$ \\frac{du}{dx} = \\frac{d}{dx} \\left( 2 - \\frac{3}{x} \\right) = 0 + 3\\frac{1}{x^2} = \\frac{3}{x^2} $</p>\n<p>Then, apply the chain rule:</p>\n<p>$ \\frac{dy}{dx} = f'(u) \\cdot \\frac{du}{dx} $\n$ = \\cos (\\ln u) \\cdot \\frac{3}{x^2} $\n$ = \\cos \\left( \\ln \\left( \\frac{2x-3}{x} \\right) \\right) \\cdot \\frac{3}{x^2} $</p>\n<p>Therefore, </p>\n<p>$ \\frac{dy}{dx} = \\frac{3}{x^2} \\cos \\left( \\ln \\left( \\frac{2x-3}{x} \\right) \\right) $</p>\n<p>The correct option is:</p>\n<p>Option C: $ \\frac{3}{\\mathrm{x}^2} \\cos \\left(\\ln \\left(\\frac{2 \\mathrm{x}-3}{\\mathrm{x}}\\right)\\right) $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1968,7 +1968,7 @@
     },
     "solution": "<p>Let's find $ f'(0) $ for the function given by $ f(x) = Pe^x + Qe^{2x} + Re^{3x} $, where $ P $, $ Q $, and $ R $ are constants.</p>\n\n<p>First, we differentiate $ f(x) $:</p>\n\n<p>$ f'(x) = P e^x + 2Q e^{2x} + 3R e^{3x} $</p>\n\n<p>The value $ f'(0) $ can be directly evaluated by substituting $ x = 0 $ into $ f'(x) $:</p>\n\n<p>$ f'(0) = P e^0 + 2Q e^0 + 3R e^0 = P + 2Q + 3R $</p>\n\n<p>From the problem, we have the following conditions:</p>\n\n<ol>\n<li>$ f(0) = 6 $, thus:</li>\n</ol>\n<p>$    f(0) = P e^0 + Q e^0 + R e^0 = P + Q + R = 6    $</p>\n\n<ol>\n<li>$ f'(\\ln 3) = 282 $, so:</li>\n</ol>\n<p>$    f'(\\ln 3) = P e^{\\ln 3} + 2Q e^{2\\ln 3} + 3R e^{3\\ln 3} = 3P + 18Q + 81R = 282    $</p>\n\n<ol>\n<li>The integral $ \\int_0^{\\ln 2} f(x) \\, dx = 11 $, which requires integration and evaluation:</li>\n</ol>\n<p>$    \\int_0^{\\ln 2} (Pe^x + Qe^{2x} + Re^{3x}) \\, dx = 11    $</p>\n\n<p>We solve for $ P $, $ Q $, and $ R $ using these equations:</p>\n\n<ul>\n<li>From the integral and other conditions, we simplify and calculate to find:</li>\n</ul>\n<p>$   P = 1, \\quad Q = 2, \\quad R = 3   $</p>\n\n<p>Substituting back to find $ f'(0) $:</p>\n\n<p>$ f'(0) = P + 2Q + 3R = 1 + 4 + 9 = 14 $</p>\n\n<p>Thus, $ f'(0) = 14 $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2091,7 +2091,7 @@
     },
     "solution": "<p>To find the derivative of the function $ f(x) = |\\ln x| $ at $ x = 0.5 $, we first need to analyze the absolute value function. The absolute value function, $ |u| $, can be defined as follows:</p>\n\n<p>$$ |u| = \\begin{cases}  u & \\text{if } u \\geq 0 \\\\ -u & \\text{if } u < 0  \\end{cases} $$</p>\n\n<p>In this case, our function is $ f(x) = |\\ln x| $. Thus, we need to consider the sign of $ \\ln x $:</p>\n\n<p>1. If $ \\ln x \\geq 0 $, then $ |\\ln x| = \\ln x $<br>\n\n<ol>\n<li>If $ \\ln x < 0 $, then $ |\\ln x| = -\\ln x $</p></li>\n</ol>\n<p>We need to identify which case applies at $ x = 0.5 $.</p>\n\n<p>Calculating $ \\ln 0.5 $:</p>\n\n<p>$$ \\ln 0.5 = \\ln \\left( \\frac{1}{2} \\right) = \\ln 1 - \\ln 2 = 0 - \\ln 2 = -\\ln 2 $$</p>\n\n<p>Since $ \\ln 0.5 < 0 $, we have $ |\\ln 0.5| = -\\ln 0.5 = \\ln 2 $. Therefore, for $ x = 0.5 $, the function $ f(x) $ can be rewritten as:</p>\n\n<p>$$ f(x) = -\\ln x $$</p>\n\n<p>Next, we need to find the derivative of $ f(x) $ where $ f(x) = -\\ln x $. The derivative of $ \\ln x $ is $ \\frac{1}{x} $. Therefore, the derivative of $ -\\ln x $ is:</p>\n\n<p>$$ f'(x) = -\\frac{1}{x} $$</p>\n\n<p>Evaluating the derivative at $ x = 0.5 $:</p>\n\n<p>$$ f'(0.5) = -\\frac{1}{0.5} = -2 $$</p>\n\n<p>So, the derivative of $ f(x) $ at $ x = 0.5 $ is $ -2 $.</p>\n\n<p>The correct option is:</p>\n\n<p><strong>Option A: -2</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2214,7 +2214,7 @@
     },
     "solution": "<p>To find the derivative of the function $ f(x) = |\\ln x| $ at $ x = 2 $, we need to consider the behavior of the function in different regions since the absolute value function can change the sign of the expression inside it depending on whether it is positive or negative.</p>\n\n<p>Let's analyze the function $ f(x) $ in two cases:</p>\n\n<p>1. When $ \\ln x \\geq 0 $</p>\n\n<p>2. When $ \\ln x < 0 $</p>\n\n<p>For the point $ x = 2 $:\n\n<p>$$ \\ln(2) \\approx 0.693 $$</p>\n\n<p>Since $ \\ln(2) $ is positive, we are in the first case.</p></p>\n\n<p>In the region where $ \\ln x \\geq 0 $, the function simplifies to $ f(x) = \\ln x $. We can then find the derivative by differentiating $ \\ln x $:</p>\n\n<p>The derivative of $ f(x) $ in this region is:</p>\n\n<p>$$ f'(x) = \\frac{d}{dx} (\\ln x) = \\frac{1}{x} $$</p>\n\n<p>Thus, at $ x = 2 $:\n\n<p>$$ f'(2) = \\frac{1}{2} $$</p></p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option C <span class=\"math-tex\">$$ \\frac{1}{2} $$ </span></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2337,7 +2337,7 @@
     },
     "solution": "<p>Let's find the derivative of the function $ f(f(x)) $ where $ f(x) = |\\ln x| $ and $ x \\neq 1 $. Given that $ 1 < x < 2 $, let's analyze the function step by step.</p>\n\n<p>First, consider the absolute value function $ f(x) = |\\ln x| $. Since $ x $ is between 1 and 2, $ \\ln x $ is positive. Therefore, $ f(x) = \\ln x $ within this interval.</p>\n\n<p>Now, let's consider $ f(f(x)) $ in the interval $ 1 < x < 2 $. Since $ f(x) = \\ln x $, we have:</p>\n\n<p>$$ f(f(x)) = f(\\ln x) = |\\ln (\\ln x)| $$</p>\n\n<p>Next, we will focus on finding the derivative of $ f(f(x)) $. To differentiate $ |\\ln (\\ln x)| $, we need to consider the chain rule and the fact that $ \\ln(\\ln x) $ is positive in the given interval.</p>\n\n<p>The derivative of $ |\\ln (\\ln x)| $ with respect to $ x $ is:</p>\n\n<p>$$ \\frac{d}{dx} |\\ln (\\ln x)| = \\frac{d}{dx} \\ln (\\ln x) $$</p>\n\n<p>Using the chain rule, let $ u = \\ln x $ so that $ v = \\ln u = \\ln (\\ln x) $. Thus, we have:</p>\n\n<p>$$ \\frac{d}{dx} \\ln (\\ln x) = \\frac{d}{du} \\ln u \\cdot \\frac{d}{dx} u $$</p>\n\n<p>Where $ \\frac{d}{du} \\ln u = \\frac{1}{u} $ and $ \\frac{d}{dx} u = \\frac{d}{dx} \\ln x = \\frac{1}{x} $. Substituting these into the chain rule gives us:</p>\n\n<p>$$ \\frac{d}{dx} \\ln (\\ln x) = \\frac{1}{\\ln x} \\cdot \\frac{1}{x} = \\frac{1}{x \\ln x} $$</p>\n\n<p>Hence, the derivative of $ f(f(x)) $ with respect to $ x $ is:</p>\n\n<p>$$ \\frac{d}{dx} f(f(x)) = \\frac{1}{x \\ln x} $$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p>Option B</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2460,7 +2460,7 @@
     },
     "solution": "<p>To find the derivative of $$\\operatorname{cosec}(x°)$$, we need to take into account that the function's argument is in degrees and not in radians. First, let's recall that in calculus, we usually work with radians. If we have an angle in degrees, we need to convert it to radians before differentiating.</p>\n\n<p>The conversion factor from degrees to radians is $$\\frac{\\pi}{180}$$. Therefore, we denote the function as:</p>\n\n<p>$$\\operatorname{cosec}(x°) = \\operatorname{cosec}\\left(\\frac{\\pi}{180} x\\right)$$</p>\n\n<p>Now, let's find the derivative using the chain rule. The derivative of $$\\operatorname{cosec}(u)$$ with respect to $$u$$ is:</p>\n\n<p>$$\\frac{d}{du} \\operatorname{cosec}(u) = -\\operatorname{cosec}(u) \\cot(u)$$</p>\n\n<p>Here, $$u = \\frac{\\pi}{180} x$$. According to the chain rule, we have :</p>\n\n<p>$$\\frac{d}{dx} \\operatorname{cosec}\\left(\\frac{\\pi}{180} x\\right) = -\\operatorname{cosec}\\left(\\frac{\\pi}{180} x \\right) \\cot \\left(\\frac{\\pi}{180} x \\right) \\cdot \\frac{d}{dx} \\left( \\frac{\\pi}{180} x \\right)$$</p>\n\n<p>The derivative of $$\\frac{\\pi}{180} x$$ with respect to $$x$$ is $$\\frac{\\pi}{180}$$. Therefore:</p>\n\n<p>$$\\frac{d}{dx} \\operatorname{cosec}\\left(x°\\right) = -\\operatorname{cosec}\\left(\\frac{\\pi}{180} x\\right) \\cot \\left(\\frac{\\pi}{180} x\\right) \\cdot \\frac{\\pi}{180}$$</p>\n\n<p>Recognizing that $$x$$ is in degrees, we rewrite the expression in terms of $$x°$$:</p>\n\n<p>$$\\frac{\\pi}{180} \\operatorname{cosec}\\left(x°\\right) \\cot \\left(x°\\right)$$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option B:</strong> $$-\\frac{\\pi}{180} \\operatorname{cosec}(x^{\\circ}) \\cot (x^{\\circ})$$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2583,7 +2583,7 @@
     },
     "solution": "<p>Given the function:</p>\n\n<p>$$y = \\frac{x \\sqrt{x^2-16}}{2} - 8 \\ln\\left|x + \\sqrt{x^2-16}\\right|$$</p>\n\n<p>We need to determine the derivative $$\\frac{dy}{dx}$$.</p>\n\n<p>First, let's denote $$u = x + \\sqrt{x^2-16}$$ for simplicity.</p>\n\n<p>Now, let's differentiate each term individually:</p>\n\n<p>1. For the term $$\\frac{x \\sqrt{x^2-16}}{2}$$:</p>\n\n<p>Let $$v = x \\sqrt{x^2-16}$$. Using the product rule:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx}[x \\sqrt{x^2-16}] = x \\frac{d}{dx}[\\sqrt{x^2-16}] + \\sqrt{x^2-16} \\frac{d}{dx}[x]$$</p>\n\n</p>\n\n<p>First, find $$\\frac{d}{dx}[\\sqrt{x^2-16}]$$:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx}[\\sqrt{x^2-16}] = \\frac{1}{2\\sqrt{x^2-16}} \\cdot 2x = \\frac{x}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Now, substitute back into the product rule:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx}[x \\sqrt{x^2-16}] = x \\cdot \\frac{x}{\\sqrt{x^2-16}} + \\sqrt{x^2-16} = \\frac{x^2}{\\sqrt{x^2-16}} + \\sqrt{x^2-16}$$</p>\n\n</p>\n\n<p>Thus:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx} \\left[\\frac{x \\sqrt{x^2-16}}{2}\\right] = \\frac{1}{2} \\left(\\frac{x^2}{\\sqrt{x^2-16}} + \\sqrt{x^2-16}\\right)$$</p>\n\n</p>\n\n<p>2. For the term $$-8 \\ln\\left| u \\right|$$ where $$u = x + \\sqrt{x^2-16}$$:</p>\n\n<p>Using the chain rule:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx} [-8 \\ln |u|] = -8 \\cdot \\frac{1}{u} \\cdot \\frac{d}{dx}[u] = -8 \\cdot \\frac{1}{x + \\sqrt{x^2-16}} \\cdot (1 + \\frac{x}{\\sqrt{x^2-16}})$$</p>\n\n</p>\n\n<p>Simplify the expression inside the logarithm derivative:</p>\n\n<p>\n\n<p>$$\\frac{d}{dx}[u] = 1 + \\frac{x}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Therefore:</p>\n\n<p>\n\n<p>$$-8 \\cdot \\frac{1}{x + \\sqrt{x^2-16}} \\cdot  \\left(1 + \\frac{x}{\\sqrt{x^2-16}}\\right) = -\\frac{8(1 + x/\\sqrt{x^2-16})}{x + \\sqrt{x^2-16}} = -\\frac{8(\\sqrt{x^2-16} + x)}{(x+\\sqrt{x^2-16})\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Since:</p>\n\n<p>\n\n<p>$$1 + \\frac{x}{\\sqrt{x^2-16}} = \\frac{\\sqrt{x^2-16} + x}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>This simplifies to:</p>\n\n<p>\n\n<p>$$- \\frac{8}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Combining both derivatives, we have:</p>\n\n<p>\n\n<p>$$\\frac{dy}{dx} = \\frac{1}{2} \\left(\\frac{x^2}{\\sqrt{x^2-16}} + \\sqrt{x^2-16}\\right) - \\frac{8}{\\sqrt{x^2-16}}$$</p>\n\n</p>\n\n<p>Simplifying further:</p>\n\n<p>\n\n<p>$$\\frac{dy}{dx} = \\frac{x^2 + x^2 - 16}{2 \\sqrt{x^2-16}} = \\sqrt{x^2-16}$$</p>\n\n</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>\n\n<strong>Option C: $$\\sqrt{x^2-16}$$</strong>\n\n</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2706,7 +2706,7 @@
     },
     "solution": "<strong>Concept:</strong>\n\n<ol>\n<li>The derivative of the product of functions $ p(x) $ and $ q(x) $ is given by $\\frac{d}{dx} [p(x) q(x)] = p'(x) q(x) + p(x) q'(x)$.</li><br>\n<li>The derivative of a composite function $ f(g(x)) $ is given by $\\frac{d}{dx} [f(g(x))] = f'(g(x)) g'(x)$.</li>\n</ol>\n<strong>Calculation:</strong>\n\n<p>Given $ y = (x^x)^x $,</p>\n\n<p>Taking the natural logarithm on both sides:</p>\n\n<p>$ \\ln y = \\ln (x^x)^x, $</p>\n\n<p>$ \\ln y = x \\ln (x^x), $</p>\n\n<p>$ \\ln y = x \\cdot x \\ln x, $</p>\n\n<p>$ \\ln y = x^2 \\ln x. $</p>\n\n<p>Now, differentiating both sides with respect to $ x $:</p>\n\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = 2x \\ln x + x^2 \\cdot \\frac{1}{x}, $</p>\n\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = 2x \\ln x + x, $</p>\n\n<p>which simplifies to:</p>\n\n<p>$ \\frac{dy}{dx} = 2xy \\ln x + xy. $</p>\n\n<p>Rearranging the terms, we get:</p>\n\n<p>$ \\frac{dy}{dx} - xy (1 + 2 \\ln x) = 0. $</p>\n\n<p>Hence, the correct answer is Option B.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2829,7 +2829,7 @@
     },
     "solution": "<p>Given:\n\n<p>$$f'(x) = g(x)$$</p>\n\n<p>$$f''(x) = -f(x)$$</p></p>\n\n<p>We need to find out more about the function $$h(x) = {f(x)}^2 + {g(x)}^2$$.</p>\n\n<p>First, let's find the derivative of $$h(x)$$ with respect to $$x$$:</p>\n\n<p>$$h'(x) = \\frac{d}{dx}[{f(x)}^2 + {g(x)}^2]$$</p>\n\n<p>Using the chain rule, we get:</p>\n\n<p>$$h'(x) = 2f(x)f'(x) + 2g(x)g'(x)$$</p>\n\n<p>Since we know that $$f'(x) = g(x)$$, we substitute this into the equation:</p>\n\n<p>$$h'(x) = 2f(x)g(x) + 2g(x)g'(x)$$</p>\n\n<p>Next, we need to find the expression for $$g'(x)$$. Given $$f''(x) = -f(x)$$ and using the fact that $$f''(x) = g'(x)$$, we have:</p>\n\n<p>Thus:</p>\n\n<p>$$g'(x) = -f(x)$$</p>\n\n<p>Substituting $$g'(x) = -f(x)$$ back into our equation for $$h'(x)$$, we get:</p>\n\n<p>$$h'(x) = 2f(x)g(x) + 2g(x)(-f(x))$$</p>\n\n<p>$$h'(x) = 2f(x)g(x) - 2f(x)g(x)$$</p>\n\n<p>$$h'(x) = 0$$</p>\n\n<p>Hence, $$h'(x) = 0$$ for all $$x$$, including $$x = 3$$. So, statement 1 is correct.</p>\n\n<p>Now let's consider statement 2, which says $$h(1) = h(2)$$.</p>\n\n<p>Since $$h'(x) = 0$$ for all $$x$$, it implies that $$h(x)$$ is a constant function. Therefore, $$h(x)$$ has the same value for all $$x$$. So, $$h(1) = h(2)$$ must be true as well.</p>\n\n<p>Therefore, statement 2 is also correct.</p>\n\n<p>Thus, both statements are correct. The correct answer is:</p>\n\n<p><b>Option C: Both 1 and 2</b></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2952,7 +2952,7 @@
     },
     "solution": "<p>To find the derivative of the given function at $ x = 0 $, we will start by differentiating the function $ y = \\ln_2 \\left(\\frac{x^2 - x + 1}{x^2 + x + 1}\\right) $.</p>\n\n<p>First, we'll use the property of logarithms that allows us to differentiate the natural logarithm more easily:\n\n<p>$$ y = \\frac{\\ln \\left(\\frac{x^2 - x + 1}{x^2 + x + 1}\\right)}{\\ln 2} $$</p></p>\n\n<p>Since $ \\ln 2 $ is a constant, we can focus on differentiating the numerator:\n\n<p>$$ y = \\frac{1}{\\ln 2} \\cdot \\ln \\left(\\frac{x^2 - x + 1}{x^2 + x + 1}\\right) $$</p></p>\n\n<p>Let $ u = x^2 - x + 1 $ and $ v = x^2 + x + 1 $, so:\n\n<p>$$ \\frac{dy}{dx} = \\frac{1}{\\ln 2} \\cdot \\frac{d}{dx} \\left( \\ln \\left( \\frac{u}{v} \\right) \\right) $$</p></p>\n\n<p>Using the chain rule and the quotient rule for logarithms, we get:\n\n<p>$$ = \\frac{1}{\\ln 2} \\cdot \\left( \\frac{1}{\\frac{u}{v}} \\cdot \\frac{d}{dx} \\left( \\frac{u}{v} \\right) \\right) $$</p>\n\n<p>$$ = \\frac{1}{\\ln 2} \\cdot \\left( \\frac{v}{u} \\cdot \\frac{uv' - vu'}{v^2} \\right) $$</p>\n\n<p>$$ = \\frac{1}{\\ln 2} \\cdot \\left( \\frac{uv' - vu'}{uv} \\right) $$</p></p>\n\n<p>Now, we need to find the derivatives $ u' $ and $ v' $:\n\n<p>$$ u = x^2 - x + 1 \\implies u' = 2x - 1 $$</p>\n\n<p>$$ v = x^2 + x + 1 \\implies v' = 2x + 1 $$</p></p>\n\n<p>Substitute these into our equation:\n\n<p>$$ \\frac{dy}{dx} = \\frac{1}{\\ln 2} \\cdot \\left( \\frac{(x^2 + x + 1)(2x - 1) - (x^2 - x + 1)(2x + 1)}{(x^2 - x + 1)(x^2 + x + 1)} \\right) $$</p></p>\n\n<p>Simplify the numerator:\n\n<p>$$ (x^2 + x + 1)(2x - 1) - (x^2 - x + 1)(2x + 1) $$</p>\n\n<p>$$ = (2x^3 + x^2 + x - x^2 + x + 1(2x - 1)) - (2x^3 + x^2 - x - 2x^2 - x - 1) $$</p>\n\n<p>$$ = (2x^3 + 2x + 1) - (2x^3 - x^2 - x - 1) $$</p>\n\n<p>$$ = 3x^2 $$</p></p>\n\n<p>So now, substitute this back into our equation:\n\n<p>$$ \\frac{dy}{dx} = \\frac{1}{\\ln 2} \\cdot \\left( \\frac{3x^2}{(x^2 - x + 1)(x^2 + x + 1)} \\right) $$</p></p>\n\n<p>At $ x = 0 $:\n\n<p>$$ u = 1 $$</p>\n\n<p>$$ v = 1 $$</p>\n\n<p>$$ \\frac{dy}{dx} = \\frac{3 \\cdot 0^2}{1 \\cdot 1 \\cdot \\ln 2} = 0 $$</p></p>\n\n<p>Therefore, the value of $ \\frac{dy}{dx} $ at $ x = 0 $ is:\n\n<p>$$ \\boxed{0} $$ </p></p>\n\n<p>The correct answer is Option B: 0.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3075,7 +3075,7 @@
     },
     "solution": "<p><strong>Concept:</strong></p>\n\n<ul>\n<li><strong>Chain rule:</strong>  $\\frac{{d}}{{dx}} (f(g(x)) = f'(g(x)) g'(x)$</li><br>\n<li>$\\frac{{d}}{{dx}} \\left(\\frac{{p(x)}}{{q(x)}}\\right) = \\frac{{p'(x)q(x) - p(x) q'(x)}}{{(q(x))^2}}$</li>\n</ul>\n<p><strong>Calculation:</strong></p>\n\n<p>Given, $\\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = ax + bx^3$.</p>\n\n<p>Solving the left-hand side (LHS):</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(\\frac{(1 - x^2 + x^4) + x^2 + x^8}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + \\frac{x^2 + x^8}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + \\frac{x^2((1 - x^2 + x^4) + x^2 - x^4 + x^6)}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + x^2 + \\frac{x^4 - x^6 + x^8}{1 - x^2 + x^4}\\right) $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = \\frac{d}{dx}\\left(1 + x^2 + x^4\\right) $</p>\n\n<p>(or it can be solved by performing long division)</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = 0 + 2x + 4x^3 $</p>\n\n<p>$ \\Rightarrow \\frac{d}{dx}\\left(\\frac{1 + x^4 + x^8}{1 - x^2 + x^4}\\right) = 2x + 4x^3 = ax + bx^3 $</p>\n\n<p>Hence, $a = 2$ and $b = 4$.</p>\n\n<p>Thus, $2a = b$.</p>\n\n<p>∴ The correct option is (D).</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3198,7 +3198,7 @@
     },
     "solution": "<p>To solve the given problem, we start by differentiating the equation with respect to $ x $. The equation given is $ x^y y^x = 1 $.</p>\n\n<p>First, let's take the natural logarithm of both sides to simplify the expression:</p>\n\n<p>\n\n<p>$$ \\ln(x^y y^x) = \\ln(1) $$</p>\n\n</p>\n\n<p>Using the properties of logarithms, we can expand this as:</p>\n\n<p>\n\n<p>$$ \\ln(x^y) + \\ln(y^x) = 0 $$</p>\n\n</p>\n\n<p>Breaking it down further using the property $ \\ln(a^b) = b \\ln(a) $, we get:</p>\n\n<p>\n\n<p>$$ y \\ln(x) + x \\ln(y) = 0 $$</p>\n\n</p>\n\n<p>Now, we'll differentiate this equation implicitly with respect to $ x $. Remember that both $ y $ and $ x $ are functions of $ x $.</p>\n\n<p>\n\n<p>$$ \\frac{d}{dx} \\left( y \\ln(x) + x \\ln(y) \\right) = \\frac{d}{dx} (0) $$</p>\n\n</p>\n\n<p>Applying product rule and chain rule, we get:</p>\n\n<p>\n\n<p>$$ \\frac{dy}{dx} \\ln(x) + y \\cdot \\frac{1}{x} + \\ln(y) + x \\cdot \\frac{1}{y} \\cdot \\frac{dy}{dx} = 0 $$</p>\n\n</p>\n\n<p>Simplifying the terms, we have:</p>\n\n<p>\n\n<p>$$ \\frac{dy}{dx} \\ln(x) + \\frac{y}{x} + \\ln(y) + x \\cdot \\frac{1}{y} \\cdot \\frac{dy}{dx} = 0 $$</p>\n\n</p>\n\n<p>We need to find $ \\frac{dy}{dx} $ at the point $ (1, 1) $. At this point, $ x = 1 $ and $ y = 1 $. Substitute these values in:</p>\n\n<p>\n\n<p>$$ \\frac{dy}{dx} \\ln(1) + \\frac{1}{1} + \\ln(1) + 1 \\cdot \\frac{1}{1} \\cdot \\frac{dy}{dx} = 0 $$</p>\n\n</p>\n\n<p>Since $ \\ln(1) = 0 $, the equation simplifies to:</p>\n\n<p>\n\n<p>$$ 0 + 1 + 0 + \\frac{dy}{dx} = 0 $$</p>\n\n</p>\n\n<p>Thus, we find:</p>\n\n<p>\n\n<p>$$ \\frac{dy}{dx} = -1 $$</p>\n\n</p>\n\n<p>Therefore, the correct answer is Option A: -1.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3321,7 +3321,7 @@
     },
     "solution": "<p>To find the value of <span class=\"math-tex\">$\\frac{dy}{dx}$</span> at $ x = 1 $ for the given function $ y = (x^x)^x $, let's first rewrite the function in a more manageable form.</p>\n\n<p>The given function is:</p>\n\n<p>\n\n<p>$ y = (x^x)^x $</p>\n\n</p>\n\n<p>We can rewrite this as:</p>\n\n<p>\n\n<p>$ y = x^{x^2} $</p>\n\n</p>\n\n<p>Now we will take the natural logarithm on both sides to simplify the differentiation process:</p>\n\n<p>\n\n<p>$ \\ln y = \\ln (x^{x^2}) $</p>\n\n</p>\n\n<p>Using the properties of logarithms, we can bring the exponent to the front:</p>\n\n<p>\n\n<p>$ \\ln y = x^2 \\ln x $</p>\n\n</p>\n\n<p>Now we will differentiate both sides with respect to $ x $. On the left side, we use implicit differentiation:</p>\n\n<p>\n\n<p>$ \\frac{d}{dx} (\\ln y) = \\frac{1}{y} \\cdot \\frac{dy}{dx} $</p>\n\n</p>\n\n<p>On the right side, we use the product rule:</p>\n\n<p>\n\n<p>$ \\frac{d}{dx} (x^2 \\ln x) = 2x \\ln x + x^2 \\cdot \\frac{1}{x} $</p>\n\n</p>\n\n<p>So we have:</p>\n\n<p>\n\n<p>$\\frac{1}{y} \\cdot \\frac{dy}{dx} = 2x \\ln x + x $</p>\n\n</p>\n\n<p>Multiplying both sides by $ y $ gives us:</p>\n\n<p>\n\n<p>$\\frac{dy}{dx} = y \\cdot (2x \\ln x + x) $</p>\n\n</p>\n\n<p>We already know that $ y = x^{x^2} $. Now we need to evaluate $ \\frac{dy}{dx} $ at $ x = 1 $:</p>\n\n<p>$ y = 1^{1^2} = 1 $</p>\n\n<p>Substituting $ x = 1 $ into the derivative expression:</p>\n\n<p>\n\n<p>$ \\frac{dy}{dx} = 1 \\cdot (2 \\cdot 1 \\cdot \\ln 1 + 1) $</p>\n\n</p>\n\n<p>Since $ \\ln 1 = 0 $, we get:</p>\n\n<p>\n\n<p>$ \\frac{dy}{dx} = 1 \\cdot (2 \\cdot 0 + 1) = 1 $</p>\n\n</p>\n\n<p>Therefore, the value of <span class=\"math-tex\">$\\frac{dy}{dx}$</span> at $ x = 1 $ is:</p>\n\n<p>Option B</p>\n\n<p><span class=\"math-tex\">1</span></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3444,7 +3444,7 @@
     },
     "solution": "<p><strong>Concepts:</strong></p>\n\n<p><p><strong>Derivative of a power of x:</strong> </p>\n<p>$   \\frac{d}{dx}(x^n) = nx^{n-1}   $</p></p>\n<p><p><strong>Derivative of the natural logarithm:</strong></p>\n<p>$   \\frac{d}{dx}(\\ln x) = \\frac{1}{x}   $</p></p>\n<p><p><strong>Logarithm property:</strong></p>\n<p>$   \\log m + \\log n = \\log(mn)   $</p></p>\n\n<p><strong>Calculation:</strong></p>\n<p>Given:</p>\n<p>$  y = (1 + x)(1 + x^2)(1 + x^4)(1 + x^8)(1 + x^{16}) $</p>\n<p>At $ x = 0 $:</p>\n<p>$ y(0) = (1 + 0)(1 + 0)(1 + 0)(1 + 0)(1 + 0) = 1  $</p>\n<p>Taking the natural logarithm of both sides:</p>\n<p>$ \\ln y = \\ln[(1 + x)(1 + x^2)(1 + x^4)(1 + x^8)(1 + x^{16})] $</p>\n<p>Using the logarithm property:</p>\n<p>$ \\ln y = \\ln(1 + x) + \\ln(1 + x^2) + \\ln(1 + x^4) + \\ln(1 + x^8) + \\ln(1 + x^{16}) $</p>\n<p>Differentiating both sides with respect to $ x $:</p>\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = \\frac{1}{1+x} + \\frac{2x}{1+x^2} + \\frac{4x^3}{1+x^4} + \\frac{8x^7}{1+x^8} + \\frac{16x^{15}}{1+x^{16}} $</p>\n<p>Thus,</p>\n<p>$ \\frac{dy}{dx} = y\\left[\\frac{1}{1+x} + \\frac{2x}{1+x^2} + \\frac{4x^3}{1+x^4} + \\frac{8x^7}{1+x^8} + \\frac{16x^{15}}{1+x^{16}}\\right] $</p>\n<p>When $ x = 0 $:</p>\n<p>$ \\frac{dy}{dx} = (1)\\left[\\frac{1}{1+0} + 0 + 0 + 0 + 0\\right] \\quad \\ because \\ y(0) = 1 $</p>\n<p>Thus,</p>\n<p>$ \\frac{dy}{dx} = 1 \\times 1 $</p>\n<p>Therefore, </p>\n<p>$ \\frac{dy}{dx} \\bigg|_{x=0} = 1 $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3567,7 +3567,7 @@
     },
     "solution": "\n<p>Given $ y = \\cos x \\cdot \\cos 4x \\cdot \\cos 8x $.</p>\n<p>Taking the logarithm on both sides:</p>\n<p>$ \\log y = \\log (\\cos x \\cdot \\cos 4x \\cdot \\cos 8x) $</p>\n<p>Applying the logarithmic property:</p>\n<p>$ \\log y = \\log (\\cos x) + \\log (\\cos 4x) + \\log (\\cos 8x) $</p>\n<p>Differentiating both sides with respect to $ x $:</p>\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = \\frac{-\\sin x}{\\cos x} + \\frac{-4\\sin 4x}{\\cos 4x} + \\frac{-8\\sin 8x}{\\cos 8x} $</p>\n<p>This simplifies to:</p>\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = -(\\tan x + \\tan 4x + \\tan 8x) $</p>\n<p>Substitute $ x = \\frac{\\pi}{4} $:</p>\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = -\\left(\\tan \\frac{\\pi}{4} + \\tan \\pi + \\tan 2\\pi\\right) $</p>\n<p>Since $\\tan \\frac{\\pi}{4} = 1$ and $\\tan n\\pi = 0$ for any integer $ n $:</p>\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = -[1 + 0 + 0] $</p>\n<p>Thus, </p>\n<p>$ \\frac{1}{y} \\frac{dy}{dx} = -1 $</p>\n<p>Therefore, $\\frac{1}{y} \\frac{dy}{dx}$ at $x = \\frac{\\pi}{4}$ is equal to $-1$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3690,7 +3690,7 @@
     },
     "solution": "<p><strong>Concept:</strong></p>\n<p>The derivative of a function $ f(x) $ is expressed as $ f'(x) $.</p>\n<p><strong>Calculation:</strong></p>\n<p>Given the condition: $ f \\circ f(x) = x^4 $.</p>\n<p>This can be rewritten as: $ (f(x))^2 = x^4 $.</p>\n<p>Therefore, $ f(x) = x^2 $.</p>\n<p>To find the derivative, we compute: </p>\n<p>$ f'(x) = 2x $</p>\n<p>Evaluating at $ x = 1 $:</p>\n<p>$ f'(1) = 2 \\times 1 = 2 $</p>\n<p><strong>Thus, $ f'(1) $ is equal to 2.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3813,7 +3813,7 @@
     },
     "solution": "<h3>Explanation</h3>\n<p><strong>Formula Used:</strong></p>\n<p>The differentiation formula for the exponential function with base $e$ is:  </p>\n<p>$ \\frac{d}{dx} e^{x} = e^{x} $</p>\n<p>Differentiation of a function $ y $ with respect to $ x $ is expressed as $\\frac{dy}{dx}$.</p>\n<p><strong>Calculation:</strong></p>\n<p>Let $ f(x) = e^{e^x} $.</p>\n<p>To find the derivative, we differentiate $ f(x) $, which can be expressed as:</p>\n<p>$ d[f(x)] = d[e^{e^x}] $</p>\n<p>Applying the chain rule, we get:  </p>\n<p>$ d[f(x)] = e^{e^x} \\cdot e^x \\quad \\text{----(1)} $</p>\n<p>Next, let $ g(x) = e^x $.</p>\n<p>Differentiating $ g(x) $:  </p>\n<p>$ d[g(x)] = d[e^x] \\quad \\text{----(2)} $</p>\n<p>Thus, the required derivative is:  </p>\n<p>$ \\frac{d[f(x)]}{d[g(x)]} = \\frac{e^{e^x} \\cdot e^x}{e^x} $</p>\n<p>This simplifies to:  </p>\n<p>$ \\frac{d[f(x)]}{d[g(x)]} = e^{e^x} $</p>\n<p><strong>Conclusion:</strong>  </p>\n<p>The derivative of $ e^{e^x} $ with respect to $ e^x $ is $ e^{e^x} $.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3936,7 +3936,7 @@
     },
     "solution": "<p><strong>Concept:</strong></p>\n<p>The derivative of a function $ f(x) $ with respect to another function $ g(x) $ is given by:</p>\n<p>$ \\frac{f'(x)}{g'(x)} $</p>\n<p><strong>Calculation:</strong></p>\n<p>Let $ f(x) = e^x $.</p>\n<p>The derivative of $ f(x) $ is:</p>\n<p>$ f'(x) = \\frac{d}{dx} e^x = e^x $</p>\n<p>Let $ g(x) = x^e $.</p>\n<p>The derivative of $ g(x) $ is:</p>\n<p>$ g'(x) = \\frac{d}{dx} x^e = ex^{e-1} $</p>\n<p>Therefore, the required derivative $ D $ is:</p>\n<p>$ D = \\frac{f'(x)}{g'(x)} = \\frac{e^x}{e x^{e-1}} = \\frac{x e^x}{e x^e} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4059,7 +4059,7 @@
     },
     "solution": "<p>To find the derivative of $ f(x) = \\sin(\\ln x) + \\cos(\\ln x) $ with respect to $ x $, we'll use the chain rule. The function can be expressed as:</p>\n<p>$ f(x) = \\sin(\\ln x) + \\cos(\\ln x) $</p>\n<p>First, we compute the derivatives of $\\sin(\\ln x)$ and $\\cos(\\ln x)$:</p>\n\n<p><strong>Derivative of</strong> $\\sin(\\ln x)$:</p>\n\n\n<p><p>Let $ u = \\ln x $, then $\\frac{du}{dx} = \\frac{1}{x}$.</p></p>\n<p><p>The derivative of $\\sin u$ is $\\cos u$.</p></p>\n<p><p>Using the chain rule, $\\frac{d}{dx}[\\sin(\\ln x)] = \\cos(\\ln x) \\cdot \\frac{1}{x}$.</p></p>\n\n\n<p><strong>Derivative of</strong> $\\cos(\\ln x)$:</p>\n\n\n<p><p>Let $ u = \\ln x $, then $\\frac{du}{dx} = \\frac{1}{x}$.</p></p>\n<p><p>The derivative of $\\cos u$ is $-\\sin u$.</p></p>\n<p><p>Using the chain rule, $\\frac{d}{dx}[\\cos(\\ln x)] = -\\sin(\\ln x) \\cdot \\frac{1}{x}$.</p></p>\n\n<p>Combine these results using the sum rule:</p>\n<p>$ \\begin{align*} f'(x) &= \\frac{d}{dx}[\\sin(\\ln x) + \\cos(\\ln x)] \\\\       &= \\cos(\\ln x) \\cdot \\frac{1}{x} - \\sin(\\ln x) \\cdot \\frac{1}{x} \\\\       &= \\frac{\\cos(\\ln x) - \\sin(\\ln x)}{x}. \\end{align*} $</p>\n<p>Now, evaluate this derivative at $ x = e $:</p>\n<p>$ \\begin{align*} f'(e) &= \\frac{\\cos(\\ln e) - \\sin(\\ln e)}{e} \\\\       &= \\frac{\\cos(1) - \\sin(1)}{e}. \\end{align*} $</p>\n<p>Therefore, the derivative of $ \\sin(\\ln x) + \\cos(\\ln x) $ with respect to $ x $ at $ x = e $ is:</p>\n<p><strong>Option A:</strong> $\\frac{\\cos 1 - \\sin 1}{e}$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4182,7 +4182,7 @@
     },
     "solution": "<p>To find $\\frac{dx}{dy}$ at $t = 0$, start by differentiating $x=e^t \\cos t$ and $y=e^t \\sin t$ with respect to $t$.</p>\n<p>First, compute $\\frac{dx}{dt}$:</p>\n<p>$ x = e^t \\cos t $</p>\n<p>Using the product rule for differentiation:</p>\n<p>$ \\frac{dx}{dt} = \\frac{d}{dt}(e^t \\cos t) = e^t \\frac{d}{dt}(\\cos t) + \\cos t \\frac{d}{dt}(e^t) = e^t (-\\sin t) + e^t \\cos t = e^t (\\cos t - \\sin t) $</p>\n<p>Next, compute $\\frac{dy}{dt}$:</p>\n<p>$ y = e^t \\sin t $</p>\n<p>Again, applying the product rule:</p>\n<p>$ \\frac{dy}{dt} = \\frac{d}{dt}(e^t \\sin t) = e^t \\frac{d}{dt}(\\sin t) + \\sin t \\frac{d}{dt}(e^t) = e^t (\\cos t) + e^t \\sin t = e^t (\\sin t + \\cos t) $</p>\n<p>Now, find $\\frac{dx}{dy}$:</p>\n<p>$ \\frac{dx}{dy} = \\frac{\\frac{dx}{dt}}{\\frac{dy}{dt}} = \\frac{e^t (\\cos t - \\sin t)}{e^t (\\sin t + \\cos t)} = \\frac{\\cos t - \\sin t}{\\sin t + \\cos t} $</p>\n<p>Evaluate $\\frac{dx}{dy}$ at $t = 0$:</p>\n<p>$ \\frac{dx}{dy} \\bigg|_{t=0} = \\frac{\\cos(0) - \\sin(0)}{\\sin(0) + \\cos(0)} = \\frac{1 - 0}{0 + 1} = 1 $</p>\n<p>Therefore, $\\frac{dx}{dy}$ at $t = 0$ is equal to <strong>1</strong>.</p>\n<p>Option B $ \\boxed{1} $.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"

@@ -1,0 +1,10 @@
+const fs = require('fs'); 
+const cheerio = require('cheerio'); 
+const html = fs.readFileSync('login_page_rendered.html', 'utf8'); 
+const $ = cheerio.load(html); 
+console.log('Inputs:'); 
+$('input').each((i, el) => console.log($(el).attr('type'), $(el).attr('placeholder'), $(el).attr('id'), $(el).attr('name'))); 
+console.log('Buttons:'); 
+$('button').each((i, el) => console.log($(el).text().trim())); 
+console.log('Tabs:'); 
+$('.v-tab, .v-btn').each((i, el) => console.log($(el).text().trim()));

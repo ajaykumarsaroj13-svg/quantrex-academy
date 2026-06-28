@@ -25,9 +25,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "bohrs-model-and-hydrogen-spectrum",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To determine the longest wavelength associated with the Paschen series, we need to understand what the Paschen series is and how its wavelength can be calculated. The Paschen series pertains to the spectral line emissions of the hydrogen atom as an electron transitions from higher energy levels (n > 3) down to n = 3. The formula used to calculate the wavelength ($\\lambda$) of the emitted photon during such a transition in the hydrogen atom is given by the Rydberg formula:</p>\n\n\n\n<p>$\\frac{1}{\\lambda} = R_{H} \\left( \\frac{1}{3^2} - \\frac{1}{n^2} \\right)$</p>\n\n\n\n<p>where,</p>\n\n<ul>\n\n<li>$R_{H}$ is the Rydberg constant for hydrogen, $R_{H} = 1.097 \\times 10^7 \\, \\text{m}^{-1}$.</li>\n\n<li>$n$ is the principal quantum number of the higher energy level (For the longest wavelength, we use the smallest possible value of $n$ that is larger than 3, which is $n=4$, since for longer wavelength transitions, the difference in energy levels should be the smallest).</li>\n\n</ul>\n\n<p>To find the longest wavelength, we plug in $n=4$ into the Rydberg equation, as this corresponds to the smallest energy transition within the Paschen series ($n=4$ to $n=3$):</p>\n\n\n\n<p>$\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\left( \\frac{1}{3^2} - \\frac{1}{4^2} \\right)$</p>\n\n\n\n\n\n<p>$\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\left( \\frac{1}{9} - \\frac{1}{16} \\right)$</p>\n\n\n\n\n\n<p>$\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\left( \\frac{16 - 9}{144} \\right)$</p>\n\n\n\n\n\n<p>$\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\times \\frac{7}{144}$</p>\n\n\n\n\n\n<p>$\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\times \\frac{7}{144}$</p>\n\n\n\n\n\n<p>$\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\times \\frac{7}{144}$</p>\n\n\n\n\n\n<p>$\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\times \\frac{7}{144} = 76403.47\\, \\text{m}^{-1}$</p>\n\n\n\n<p>Finally, we calculate $\\lambda$ by taking the reciprocal of this value:</p>\n\n\n\n<p>$\\lambda = \\frac{1}{76403.47} \\approx 1.308 \\times 10^{-5} \\, \\text{m} = 1.308 \\times 10^{-5} \\times 10^{2} \\, \\text{cm} = 1.308 \\times 10^{-3} \\, \\text{cm}$</p>\n\n\n\n<p>It seems there was a mistake in my calculation. Revising the calculation properly:</p>\n\n\n\n<p>$\\lambda = \\frac{1}{1.097 \\times 10^7 \\times \\frac{7}{144}}$</p>\n\n\n\n<p>Correctly evaluating this, we should directly compute:</p>\n\n\n\n<p>$\\lambda \\approx \\frac{144}{7 \\times 1.097 \\times 10^7} = \\frac{144}{7.679 \\times 10^7} \\approx 1.876 \\times 10^{-6} \\, \\text{m}$</p>\n\n\n\n<p>Therefore, the correct option that matches our calculation for the longest wavelength in the Paschen series is:</p>\n\n<p>Option B: <strong>$1.876 \\times 10^{-6} \\, \\text{m}$</strong>.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2955q",
@@ -46,9 +48,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "uniform-circular-motion",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>When a car takes a turn on a banked road, the forces involved are the gravitational force, the normal force from the surface, and frictional force (if any). The net force provides the necessary centripetal force for the circular motion. The angle of banking and static friction contribute to the maximum speed the car can achieve without slipping.</p>\n\n<p>The forces acting on the car are as follows:</p>\n\n<p>1. The normal force ($$N$$) acts perpendicular to the surface of the road.</p>\n\n<p>2. Gravitational force ($$mg$$) acts downward.</p>\n\n<p>3. Frictional force ($$f$$), which can provide additional centripetal force if needed. It acts parallel to the surface of the road, towards the center of the circle.</p>\n\n<p>The normal force and the gravitational force components can be resolved into two directions: perpendicular and parallel to the road surface. The maximum speed is achieved when all available forces (normal, frictional) are utilized to provide the necessary centripetal force ($$F_c$$) without slipping.</p>\n\n<p>The centripetal force required for circular motion is given by:</p>\n\n<p>$F_c = \\frac{mv^2}{r}$</p>\n\n<p>Where:</p>\n\n<ul>\n\n<li>$$m$$ = mass of the car = $$800 kg$$</li>\n\n<li>$$v$$ = speed of the car</li>\n\n<li>$$r$$ = radius of the turn = $$300 m$$</li>\n\n</ul>\n\n<p>On a banked curve, the maximum velocity can be calculated using the formula:</p>\n\n<p>$v = \\sqrt{rg(\\tan\\theta + \\mu)\\Big/\\big(1-\\mu\\tan\\theta)}$</p>\n\n<p>Where:</p>\n\n<ul>\n\n<li>$$\\theta$$ = angle of banking = $$30^{\\circ}$$</li>\n\n<li>$$\\mu$$ = coefficient of static friction = $$0.2$$</li>\n\n<li>$$g$$ = acceleration due to gravity = $$10 m/s^2$$</li>\n\n</ul>\n\n<p>First, calculate the tangent of the angle:</p>\n\n<p>$\\tan30^{\\circ} = \\frac{1}{\\sqrt{3}} = \\frac{1}{1.73}$</p>\n\n<p>Substitute all the values into the formula:</p>\n\n<p>$v = \\sqrt{300 \\times 10 \\times \\left(\\frac{1}{1.73} + 0.2\\right)\\Big/\\big(1 - 0.2 \\times \\frac{1}{1.73}\\big)}$</p>\n\n<p>$v = \\sqrt{3000 \\times \\left(\\frac{1}{1.73} + 0.2\\right)\\Big/\\big(1 - \\frac{0.2}{1.73}\\big)}$</p>\n\n<p>$v = \\sqrt{3000 \\times \\frac{1 + 1.73 \\times 0.2}{1.73 - 0.2}}$</p>\n\n<p>$v = \\sqrt{3000 \\times \\frac{1 + 0.346}{1.73 - 0.2}}$</p>\n\n<p>$v = \\sqrt{3000 \\times \\frac{1.346}{1.53}}$</p>\n\n<p>$v = \\sqrt{3000 \\times 0.8797}$</p>\n\n<p>$v = \\sqrt{2639.1} \\approx 51.37 \\, m/s$</p>\n\n<p>Hence, the closest option to the calculated maximum speed without slipping is:</p>\n\n<p>Option A: 51.4 m/s</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb295ad",
@@ -67,9 +71,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "electric-power-and-heating-effect-of-current",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& P=v \\times i \\Rightarrow i=\\frac{110}{220}=\\frac{1}{2} \\mathrm{~A} \\\\\n& i=n e \\Rightarrow n=\\frac{1}{2 \\times 1.6 \\times 10^{-19}}=31.25 \\times 10^{17}\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb295g9",
@@ -88,9 +94,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "photoelectric-effect",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To find the stopping potential ($V_s$) when UV light of wavelength $300 $ nm is incident on a metal surface with a work function of $2.13$ eV, we can use the photoelectric equation which relates the energy of the incident photons, the work function of the metal, and the kinetic energy of the emitted electrons.</p>\n\n<p>The energy (E) of the photons can be calculated using the equation:</p>\n\n<p>$E = \\frac{hc}{\\lambda}$</p>\n\n<p>where $h$ is the Planck constant, $c$ is the speed of light, and $\\lambda$ is the wavelength of the incident light. Given that $hc = 1240 $ eV nm, we can calculate the energy of the UV light photons directly.</p>\n\n<p>Substituting $hc = 1240 $ eV nm and $\\lambda = 300 $ nm into the equation gives:</p>\n\n<p>$E = \\frac{1240 \\, \\text{eV nm}}{300 \\, \\text{nm}} = 4.13 \\, \\text{eV}$</p>\n\n<p>Next, we can calculate the maximum kinetic energy of the emitted electrons using the photoelectric effect equation:</p>\n\n<p>$K_{max} = E - \\phi$</p>\n\n<p>where $K_{max}$ is the maximum kinetic energy of the emitted electrons, $E$ is the energy of the incident photons, and $\\phi$ is the work function of the metal.</p>\n\n<p>Given $E = 4.13$ eV and the work function $\\phi = 2.13$ eV, we have:</p>\n\n<p>$K_{max} = 4.13 \\, \\text{eV} - 2.13 \\, \\text{eV} = 2 \\, \\text{eV}$</p>\n\n<p>The stopping potential ($V_s$) is related to the maximum kinetic energy of the emitted electrons by the equation:</p>\n\n<p>$K_{max} = eV_s$</p>\n\n<p>where $e$ is the elementary charge (the charge of an electron), and $V_s$ is the stopping potential. Since $e = 1$ when using energy in eV and potential in volts, the stopping potential $V_s$ can be directly equated to the kinetic energy in eV:</p>\n\n<p>$V_s = K_{max} = 2 \\, \\text{V}$</p>\n\n<p>Therefore, the stopping potential is $2$ V, which corresponds to Option B.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb295dx",
@@ -109,9 +117,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "inductance-self-and-mutual",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To find the self-inductance of the coil, we can use the formula for induced electromotive force (emf), which is given by Faraday's law of electromagnetic induction as it applies to self-induction:</p>\n\n<p>$$ \\text{emf} = - L \\frac{\\Delta I}{\\Delta t} $$</p>\n\n<p>Where:</p>\n\n<ul>\n\n<li>$ \\text{emf} $ = induced voltage in volts (V)</li>\n\n<li>$ L $ = self-inductance of the coil in henries (H)</li>\n\n<li>$ \\Delta I $ = change in current in amperes (A)</li>\n\n<li>$ \\Delta t $ = time interval in seconds (s) over which the current change occurs</li>\n\n</ul>\n\n<p>Here, the problem gives us the following data:</p>\n\n<ul>\n\n<li>$ \\text{emf} = 0.1 \\, \\text{V} $</li>\n\n<li>$ \\Delta I = 2 \\, \\text{A} - (-2 \\, \\text{A}) = 4 \\, \\text{A} $</li>\n\n<li>$ \\Delta t = 0.2 \\, \\text{s} $</li>\n\n</ul>\n\n<p>Substituting the given values into the formula, we get:</p>\n\n<p>$$ 0.1 = -L \\frac{4}{0.2} $$</p>\n\n<p>Solving for $ L $, the equation becomes:</p>\n\n<p>$$ 0.1 = -L \\cdot 20 $$</p>\n\n<p>Therefore:</p>\n\n<p>$$ L = - \\frac{0.1}{20} $$</p>\n\n<p>Calculating the value of $ L $:</p>\n\n<p>$$ L = -0.005 \\, \\text{H} $$</p>\n\n<p>Or, expressing $ L $ in millihenries (mH):</p>\n\n<p>$$ L = -5 \\, \\text{mH} $$</p>\n\n<p>However, considering the absolute value (since inductance is a magnitude and cannot be negative in this context):</p>\n\n<p>$$ L = 5 \\, \\text{mH} $$</p>\n\n<p>Thus, the self-inductance of the coil is <strong>5 mH</strong>, which corresponds to <strong>Option D</strong>.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29elu",
@@ -130,9 +140,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "displacement-current-and-properties-of-em-waves",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To find the intensity of the given electromagnetic wave, we need to use the formula for the intensity of an electromagnetic wave:</p>\n\n<p>$$ I = \\frac{1}{2} \\epsilon_0 c E_0^2 $$</p>\n\n<p>where:</p>\n\n<ul>\n\n<li>$$I$$ is the intensity in $$\\mathrm{W} / \\mathrm{m}^2$$</li>\n\n<li>$$\\epsilon_0$$ is the permittivity of free space, given as $$9 \\times 10^{-12} \\mathrm{C}^2 \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$$</li>\n\n<li>$$c$$ is the speed of light in vacuum, approximately $$3 \\times 10^8 \\mathrm{~m/s}$$</li>\n\n<li>$$E_0$$ is the peak electric field, given as $$600 \\mathrm{Vm}^{-1}$$</li>\n\n</ul>\n\n<p>Now, substitute these values into the formula:</p>\n\n<p>$$ I = \\frac{1}{2} \\times 9 \\times 10^{-12} \\times 3 \\times 10^8 \\times (600)^2 $$</p>\n\n<p>Simplify the expression step-by-step:</p>\n\n<p>$$ I = \\frac{1}{2} \\times 9 \\times 10^{-12} \\times 3 \\times 10^8 \\times 360000 $$</p>\n\n<p>First, calculate $$9 \\times 3 \\times 360000$$:</p>\n\n<p>$$ I = \\frac{1}{2} \\times 9.72 \\times 10^{-4} \\times 360000 $$</p>\n\n<p>Combine 9 and 3 into 27, giving you:</p>\n\n<p>$$ I = 13.5 \\times 10^{-4} \\times 360000 $$</p>\n\n<p>Then, calculate the multiplication:</p>\n\n<p>$$ I = 13.5 \\times 36 $$</p>\n\n<p>Finally, multiply the remaining values:</p>\n\n<p>$$ I = 486 \\times 10^{-4} $$</p>\n\n<p>The final value is:</p>\n\n<p>The intensity, $$I$$, is 486 $$\\mathrm{W} / \\mathrm{m}^2$$. Therefore, the correct option is:</p>\n\n<p>Option A: 486</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb295bj",
@@ -151,9 +163,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "semiconductor-and-p-n-junction-diode",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>The energy required to create a hole in a p-type semiconductor can be directly related to the acceptor level because this energy level represents the minimum energy required to excite an electron from the valence band into the acceptor level, effectively creating a hole. The acceptor level is given as $$6 \\, \\text{eV}$$.</p>\n\n<p>To find the maximum wavelength of light that can excite an electron into this level, we use the equation that relates the energy ($$E$$) of a photon to its wavelength ($$\\lambda$$):</p>\n\n<p>$$E = \\frac{hc}{\\lambda}$$</p>\n\n<p>Where:</p>\n\n<ul>\n\n<li>$$E$$ is the energy in electronvolts (eV),</li>\n\n<li>$$h$$ is Planck's constant,</li>\n\n<li>$$c$$ is the speed of light, and</li>\n\n<li>$$\\lambda$$ is the wavelength in nanometers (nm).</li>\n\n</ul>\n\n<p>The product of $$hc$$ is given as $$1242 \\, \\text{eV nm}$$, allowing us to solve for $$\\lambda$$ directly:</p>\n\n<p>$$\\lambda = \\frac{hc}{E}$$</p>\n\n<p>Substituting the given values:</p>\n\n<p>$$\\lambda = \\frac{1242 \\, \\text{eV nm}}{6 \\, \\text{eV}} = 207 \\, \\text{nm}$$</p>\n\n<p>Thus, the maximum wavelength of light that can create a hole in the semiconductor by exciting an electron into the acceptor level is $$207 \\, \\text{nm}$$. Therefore, the correct answer is Option D: 207 nm.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29ebb",
@@ -172,9 +186,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "electric-charges-and-coulombs-law",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& F_1=\\frac{K Q^2}{r^2}=16 \\mathrm{~N} \\\\\n& F_2=\\frac{K\\left(\\frac{Q}{2}\\right)\\left(\\frac{3}{4}\\right)}{r^2}=\\frac{3}{8} \\times 16=6 \\mathrm{~N}\n\\end{aligned}$$</p>\n<p>Final charges on spheres are $$\\frac{Q}{2}$$ and $$\\frac{3 Q}{4}$$.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29ea0",
@@ -193,9 +209,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "lenses",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To find the refractive index of the material of a thin convex lens, we can make use of the Lensmaker's Formula. The Lensmaker's formula is given by:</p>\n\n\n\n<p>$$\\frac{1}{f} = \\left( \\frac{\\mu - 1}{\\mu} \\right) \\left( \\frac{1}{R_1} - \\frac{1}{R_2} \\right)$$</p>\n\n\n\n<p>where</p>\n\n<ul>\n\n<li>$f$ is the focal length of the lens,</li>\n\n<li>$\\mu$ is the refractive index of the material of the lens,</li>\n\n<li>$R_1$ is the radius of curvature of the first surface (convex side, positive),</li>\n\n<li>$R_2$ is the radius of curvature of the second surface (concave side, negative for convex lens).</li>\n\n</ul>\n\n<p>Given in the question, the radii of curvature are $15 \\, \\mathrm{cm}$ and $30 \\, \\mathrm{cm}$ respectively, and the focal length $f = 20\\, \\mathrm{cm}$.</p>\n\n<p>It's important to pay attention to the signs of the radii of curvature according to the lens maker's convention. For convex lenses, $R_1$ is positive and $R_2$ is negative; however, since the problem doesn't specify which curvature corresponds to which side in relation to the direction of light travel, we'll assume the light travels from left to right: thus, $R_1 = +15 \\, \\mathrm{cm}$ and $R_2 = -30 \\, \\mathrm{cm}$.</p>\n\n<p>Substituting the given values into the Lensmaker's Formula, we get:</p>\n\n\n\n<p>$$\\frac{1}{20} = (\\mu - 1) \\left( \\frac{1}{15} - \\frac{1}{-30} \\right) $$</p>\n\n\n\n<p>$$\\frac{1}{20} = (\\mu - 1) \\left( \\frac{1}{15} + \\frac{1}{30} \\right) $$</p>\n\n<p>$$\\frac{1}{20} = (\\mu - 1) \\left( \\frac{2 + 1}{30} \\right) $$</p>\n\n<p>$$\\frac{1}{20} = (\\mu - 1) \\left( \\frac{3}{30} \\right) $$</p>\n\n<p>$$\\frac{1}{20} = (\\mu - 1) \\left( \\frac{1}{10} \\right) $$</p>\n\n<p>$$\\frac{1}{20} = \\frac{\\mu - 1}{10}$$</p>\n\n\n\n<p>Now, solve for $\\mu$:</p>\n\n\n\n<p>$$\\mu - 1 = \\frac{10}{20} $$</p>\n\n<p>$$\\mu - 1 = 0.5 $$</p>\n\n<p>$$\\mu = 1.5$$</p>\n\n\n\n<p>Hence, the refractive index of the material of the lens is <strong>1.5</strong>, which corresponds to <strong>Option B</strong>.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29ej7",
@@ -214,9 +232,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "acceleration-due-to-gravity-and-its-variation",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To solve this question, we first need to understand how gravitational force (and hence weight) changes with depth under the surface of the Earth. The gravitational force at a depth $d$ is given by the formula:</p>\n\n<p>$$ F = F_0 \\left(1 - \\frac{d}{R}\\right) $$</p>\n\n<p>where $F_0$ is the gravitational force (or the weight) at the surface, $R$ is the radius of the Earth, and $d$ is the depth below the Earth's surface.</p>\n\n<p>In your question, the body weighs 300 N on the surface, so $F_0 = 300$ N. It is taken to a depth of $\\frac{R}{4}$ under the surface. Therefore, $d = \\frac{R}{4}$.</p>\n\n<p>Substituting these values into our formula, we get:</p>\n\n<p>$$ F = 300 \\left(1 - \\frac{\\frac{R}{4}}{R}\\right) $$</p>\n\n<p>$$ F = 300 \\left(1 - \\frac{1}{4}\\right) $$</p>\n\n<p>$$ F = 300 \\left(\\frac{3}{4}\\right) $$</p>\n\n<p>$$ F = 225 \\, \\text{N} $$</p>\n\n<p>Therefore, at a depth of $\\frac{R}{4}$ under the surface of the Earth, the body would weigh 225 N. The correct option is <strong>Option D</strong>.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2957z",
@@ -235,9 +255,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "specific-heat-capacity-calorimetry-and-change-of-state",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To evaluate the veracity of the given statements, we need to understand the physical quantities involved and their dimensional formulas. Specifically, we're looking at the dimensions of specific heat and gas constant.</p>\n\n<p><strong>Specific Heat:</strong></p>\n\n<p>Specific heat (c) is the amount of heat required to raise the temperature of a unit mass of a substance by one degree Celsius (or one Kelvin, since the increment is the same in both scales). Its formula is $$q = mc\\Delta T$$, where $$q$$ is the heat added, $$m$$ is the mass, $$c$$ is the specific heat, and $$\\Delta T$$ is the change in temperature.</p>\n\n<p>From the formula, we can deduce the dimensions of specific heat as follows:</p>\n\n<p>$$[q] = [m][c][\\Delta T]$$</p>\n\n<p>Knowing that the dimension of heat (q) is equivalent to energy, which is $$[\\mathrm{M} \\mathrm{L}^2 \\mathrm{T}^{-2}]$$, the mass (m) is $$[\\mathrm{M}]$$, and temperature ($\\Delta T$) is $$[\\mathrm{K}]$$, we can solve for $$[c]$$:</p>\n\n<p>$$[\\mathrm{M} \\mathrm{L}^2 \\mathrm{T}^{-2}] = [\\mathrm{M}][c][\\mathrm{K}]$$</p>\n\n<p>So, $$[c] = [\\mathrm{L}^2 \\mathrm{T}^{-2} \\mathrm{K}^{-1}]$$</p>\n\n<p>This reveals that Statement (I) is <strong>correct</strong>.</p>\n\n<p><strong>Gas Constant:</strong></p>\n\n<p>The gas constant (R) appears in the ideal gas law, represented as $$PV = nRT$$, where P is pressure, V is volume, n is the number of moles, R is the gas constant, and T is the temperature. The dimensions of the gas constant can be derived from this relation.</p>\n\n<p>Pressure (P) has dimensions $$[\\mathrm{M} \\mathrm{L}^{-1} \\mathrm{T}^{-2}]$$, volume (V) has dimensions $$[\\mathrm{L}^3]$$, and temperature (T) has dimensions $$[\\mathrm{K}]$$.</p>\n\n<p>Therefore, $$[\\mathrm{M} \\mathrm{L}^{-1} \\mathrm{T}^{-2}][\\mathrm{L}^3] = [n][R][\\mathrm{K}]$$</p>\n\n<p>Considering that the mole (n) is a dimensionless quantity, we can deduce the dimensions of R as:</p>\n\n<p>$$[R] = \\frac{[\\mathrm{M} \\mathrm{L}^2 \\mathrm{T}^{-2}]}{[\\mathrm{K}]} = [\\mathrm{M} \\mathrm{L}^2 \\mathrm{T}^{-2} \\mathrm{K}^{-1}]$$</p>\n\n<p>This indicates that Statement (II) has stated the dimensions incorrectly, presenting them as $$[\\mathrm{M} \\mathrm{L}^2 \\mathrm{T}^{-1} \\mathrm{K}^{-1}]$$ when it should be $$[\\mathrm{M} \\mathrm{L}^2 \\mathrm{T}^{-2} \\mathrm{K}^{-1}]$$, making Statement (II) <strong>incorrect</strong>.</p>\n\n<p>Based on the analysis:</p>\n\n<p>Option A, \"Statement (I) is incorrect but statement (II) is correct,\" is wrong because Statement (I) is correct.</p>\n\n<p>Option B, \"Both statement (I) and statement (II) are incorrect,\" is wrong because Statement (I) is correct.</p>\n\n<p>Option C, \"Both statement (I) and statement (II) are correct,\" is wrong because Statement (II) is incorrect.</p>\n\n<p>Option D, \"Statement (I) is correct but statement (II) is incorrect,\" is the <strong>correct</strong> choice, reflecting the true nature of the statements provided.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb295f4",
@@ -256,9 +278,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "degree-of-freedom-and-law-of-equipartition-of-energy",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>The energy of a diatomic molecule depends on the degrees of freedom it has. For a non-rigid diatomic molecule, there are more degrees of freedom compared to a rigid diatomic molecule. Specifically, a non-rigid diatomic molecule has translational, rotational, and vibrational degrees of freedom. The translational and rotational degrees of freedom are the same for both rigid and non-rigid diatomic molecules, which include:</p>\n\n<ul>\n\n<li>3 translational degrees of freedom,</li>\n\n<li>2 rotational degrees of freedom (since linear molecules do not have the third rotational freedom because it requires rotating around the bond axis, which doesn't change the energy for linear molecules).</li>\n\n</ul>\n\n<p>Additionally, non-rigid diatomic molecules have vibrational degrees of freedom. For a simple diatomic molecule, there is 1 vibrational degree of freedom (since vibration along the bond axis is possible). However, considering the energy distribution across these vibrations requires accounting for both the potential and kinetic energy associated with vibrations, effectively doubling the vibrational degrees of freedom for energy calculations to 2 (one for kinetic and one for potential energy).</p>\n\n<p>Thus, the total degrees of freedom for a non-rigid diatomic molecule are:</p>\n\n<ul>\n\n<li>3 (translational) + 2 (rotational) + 2 (vibrational) = 7 degrees of freedom.</li>\n\n</ul>\n\n<p>The formula for the average energy of a molecule in terms of degrees of freedom at temperature T is given by:</p>\n\n<p>$ E = \\frac{f}{2}k_\\mathrm{B}T $</p>\n\n<p>where $f$ is the total number of degrees of freedom, $k_\\mathrm{B}$ is the Boltzmann constant, and $T$ is the temperature.</p>\n\n<p>Plugging in the values for a non-rigid diatomic molecule:</p>\n\n<p>$ E = \\frac{7}{2}k_\\mathrm{B}T $</p>\n\n<p>Therefore, the total energy for 10 such molecules would be:</p>\n\n<p>$ 10 \\times \\frac{7}{2}k_\\mathrm{B}T = 35k_\\mathrm{B}T $</p>\n\n<p>So, the correct answer is:</p>\n\n<p>Option D: 35 $k_\\mathrm{B}T$.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29efa",
@@ -277,9 +301,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "kinetic-theory-of-gases-and-gas-laws",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To solve this problem, we can use the first law of thermodynamics, which states:</p>\n\n<p>$$\\Delta Q = \\Delta U + W$$</p>\n\n<p>where:</p>\n\n<ul>\n\n<li>$$\\Delta Q$$ is the heat transferred to the system, in this case, $$48 \\mathrm{~J}$$. </li>\n\n<li>$$\\Delta U$$ is the change in internal energy of the system. </li>\n\n<li>$$W$$ is the work done by the system.</li>\n\n</ul>\n\n<p>For one mole of an ideal gas, the change in internal energy can be calculated using the equation:</p>\n\n<p>$$\\Delta U = nC_{v}\\Delta T$$</p>\n\n<p>where:</p>\n\n<ul>\n\n<li>$$n$$ is the number of moles, which is $$1$$ in this case. </li>\n\n<li>$$C_{v}$$ is the molar specific heat capacity at constant volume. </li>\n\n<li>$$\\Delta T$$ is the change in temperature, in Kelvins.</li>\n\n</ul>\n\n<p>Given that we are dealing with helium, a monatomic ideal gas, we know that:</p>\n\n<p>$$C_{v} = \\frac{3}{2}R$$</p>\n\n<p>Substituting the given values, we get:</p>\n\n<p>$$\\Delta U = (1) \\frac{3}{2}(8.3 \\mathrm{~J} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1})(2^{\\circ} \\mathrm{C})$$</p>\n\n<p>Since a change in temperature of $$1^{\\circ} \\mathrm{C}$$ is equivalent to a change in temperature of $$1 \\mathrm{~K}$$, we can directly substitute $$2^{\\circ} \\mathrm{C}$$ as a $$2 \\mathrm{~K}$$ change without needing to convert Celsius to Kelvin as both scales have the same magnitude of degree.</p>\n\n<p>Therefore,</p>\n\n<p>$$\\Delta U = 1 \\times \\frac{3}{2} \\times 8.3 \\times 2 = 24.9 \\mathrm{~J}$$</p>\n\n<p>Now, substituting $$\\Delta U$$ and $$\\Delta Q$$ into the first law of thermodynamics:</p>\n\n<p>$$48 = 24.9 + W$$</p>\n\n<p>Solving for $$W$$ we find:</p>\n\n<p>$$W = 48 - 24.9 = 23.1 \\mathrm{~J}$$</p>\n\n<p>Thus, the work done by the gas is $$23.1 \\mathrm{~J}$$, which corresponds to Option A.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29599",
@@ -298,9 +324,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "equilibrium-of-a-particle",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To determine the force that the branch pulls on the chain, we need to consider the combined weight of the body and the chain, as this is the total force that the branch must support due to gravity.</p>\n\n<p>The weight of the body is given as $$200\\, \\mathrm{N}$$.</p>\n\n<p>To find the weight of the chain, we use the formula for weight, which is the mass of an object multiplied by the acceleration due to gravity ($$g$$). The mass of the chain is given as $$10\\, \\mathrm{kg}$$ and $$g = 10\\, \\mathrm{m/s}^2$$, so:</p>\n\n<p>$$\\text{Weight of the chain} = \\text{Mass of the chain} \\times g$$\n\n<p>$$= 10\\, \\mathrm{kg} \\times 10\\, \\mathrm{m/s}^2$$</p>\n\n<p>$$= 100\\, \\mathrm{N}$$</p></p>\n\n<p>The total force that the branch must support is the sum of the weight of the body and the weight of the chain:</p>\n\n<p>$$\\text{Total force} = \\text{Weight of the body} + \\text{Weight of the chain}$$\n\n<p>$$= 200\\, \\mathrm{N} + 100\\, \\mathrm{N}$$</p>\n\n<p>$$= 300\\, \\mathrm{N}$$</p></p>\n\n<p>Therefore, the branch pulls the chain by a force of $$300\\, \\mathrm{N}$$, which corresponds to Option A.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acox",
@@ -319,9 +347,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "magnetic-properties-of-matter",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>In para and dia materials, susceptibility is independent of magnetic field.</p>\n<p>Inside a current carrying wire, $$B \\propto X$$</p>\n<p>Outside a current carrying wire, $$B \\propto \\frac{1}{x}$$</p>\n<p>Inside a solenoid, B is constant upto ends.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2956u",
@@ -340,9 +370,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "motion-under-gravity",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>To solve this problem, we'll use the equations of motion under constant acceleration due to gravity. Let's define:</p>\n\n<p><p>$ h $: Height of the tower</p></p>\n<p><p>$ u $: Initial speed of projection (same magnitude in both cases)</p></p>\n<p><p>$ g $: Acceleration due to gravity (positive downward)</p></p>\n<p><p>$ t_1 $: Time taken to reach the ground when projected upwards</p></p>\n<p><p>$ t_2 $: Time taken to reach the ground when projected downwards</p></p>\n<p><p>$ t $: Time taken to reach the ground when simply dropped</p></p>\n\n<p><strong>Case 1: Projectile Thrown Upwards</strong></p>\n<p>When the body is projected upwards from the top of the tower, its initial velocity is $ -u $ (since upward direction is negative), and it reaches the ground in time $ t_1 $. The equation of motion is:</p>\n<p>$ h = -u t_1 + \\frac{1}{2} g t_1^2 $</p>\n<p><strong>Case 2: Projectile Thrown Downwards</strong></p>\n<p>When the body is projected downwards from the top of the tower, its initial velocity is $ u $, and it reaches the ground in time $ t_2 $. The equation is:</p>\n<p>$ h = u t_2 + \\frac{1}{2} g t_2^2 $</p>\n<p><strong>Case 3: Body Dropped</strong></p>\n<p>When the body is simply dropped, its initial velocity is $ 0 $, and it reaches the ground in time $ t $:</p>\n<p>$ h = \\frac{1}{2} g t^2 $</p>\n<p><strong>Step 1: Equate the Heights</strong></p>\n<p>From cases 1 and 2, equate the expressions for $ h $:</p>\n<p>$ -u t_1 + \\frac{1}{2} g t_1^2 = u t_2 + \\frac{1}{2} g t_2^2 $</p>\n<p><strong>Step 2: Solve for $ u $</strong></p>\n<p>Simplify the equation:</p>\n<p>$ -u t_1 - u t_2 = \\frac{1}{2} g t_2^2 - \\frac{1}{2} g t_1^2 $</p>\n<p>$ -u (t_1 + t_2) = \\frac{1}{2} g (t_2^2 - t_1^2) $</p>\n<p>$ -u (t_1 + t_2) = \\frac{1}{2} g (t_2 - t_1)(t_2 + t_1) $</p>\n<p>Divide both sides by $ t_1 + t_2 $:</p>\n<p>$ -u = \\frac{1}{2} g (t_2 - t_1) $</p>\n<p>$ u = \\frac{1}{2} g (t_1 - t_2) $</p>\n<p><strong>Step 3: Express $ h $ in Terms of $ t_1 $ and $ t_2 $</strong></p>\n<p>Substitute $ u $ back into one of the equations for $ h $:</p>\n<p>$ h = -\\left( \\frac{1}{2} g (t_1 - t_2) \\right) t_1 + \\frac{1}{2} g t_1^2 $</p>\n<p>Simplify:</p>\n<p>$ h = \\frac{1}{2} g t_1 t_2 $</p>\n<p><strong>Step 4: Equate the Height for the Dropped Case</strong></p>\n<p>From the dropped case:</p>\n<p>$ h = \\frac{1}{2} g t^2 $</p>\n<p>Set the two expressions for $ h $ equal to each other:</p>\n<p>$ \\frac{1}{2} g t^2 = \\frac{1}{2} g t_1 t_2 $</p>\n<p>$ t^2 = t_1 t_2 $</p>\n<p><strong>Step 5: Solve for $ t $</strong></p>\n<p>$ t = \\sqrt{t_1 t_2} $</p>\n<p><strong>Conclusion:</strong></p>\n<p>The time required for the body to reach the ground when dropped is the geometric mean of $ t_1 $ and $ t_2 $:</p>\n<p><strong>Answer:</strong> Option B</p>\n<p>$ t = \\sqrt{t_1 \\, t_2} $</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29ehp",
@@ -361,9 +393,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "surface-tension-excess-pressure-and-capillarity",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>The difference in pressure inside a soap bubble as compared to the outside is due to the surface tension created by the soap film on the bubble. This difference in pressure can be calculated using the formula that relates the surface tension of the soap bubble to the radius of the bubble. The correct formula for the pressure difference ($$\\Delta P$$) across a soap bubble is given by:</p>\n\n<p>$$\\Delta P = \\frac{4 S}{R}$$</p>\n\n<p>Here, $$S$$ is the surface tension of the bubble and $$R$$ is the radius of the bubble. The factor of 4 comes from the fact that a soap bubble has two surfaces (an inner and an outer surface), and for each surface, the Laplace pressure (which contributes to the pressure difference due to surface tension) is given by $$\\frac{2S}{R}$$. Thus, for two surfaces, you double this amount, resulting in the $$\\frac{4 S}{R}$$ term.</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option B</p>\n\n<p>$$\\frac{4 \\mathrm{~S}}{\\mathrm{R}}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb295cr",
@@ -382,9 +416,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "vernier-calipers",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& 0.04=4(\\text { L. C.) } \\\\\n& \\Rightarrow \\text { L.C }=0.01 \\mathrm{~mm} \\\\\n& \\begin{array}{l}\n1 \\mathrm{MSD}-\\frac{49}{50} M S D=0.01 \\mathrm{~mm} \\\\\n\\Rightarrow 1 \\mathrm{MSD}=50 \\times 0.01 \\mathrm{~mm} \\\\\n\\quad=0.5 \\mathrm{~mm} \\\\\n\\Rightarrow 1 \\mathrm{~cm}=20(0.5 \\mathrm{~mm})\n\\end{array}\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29ekd",
@@ -403,9 +439,11 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "vernier-calipers",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>To find the refractive index of the glass slab, we first need to calculate the actual readings using the Main Scale Reading (MSR) and Vernier Coincidence (VC), and understand how to translate these values into a measurement of the refractive index. We will start by calculating the Least Count (LC) of the vernier calipers.</p>\n\n<p>The least count (LC) of the traveling microscope is given by the formula:</p>\n\n<p>$ \\text{LC} = \\text{MSD} - \\text{VSD} $</p>\n\n<p>Where MSD is the value of one main scale division and VSD is the value of one vernier scale division in terms of the main scale. We are told 50 vernier scale divisions equal 49 main scale divisions (MSD), so 1 VSD is $ \\frac{49}{50} $ of an MSD.</p>\n\n<p>Given that 20 divisions on the main scale represent 1 cm, each main scale division (MSD) represents:</p>\n\n<p>$ 1 \\, \\text{MSD} = \\frac{1 \\, \\text{cm}}{20} = 0.05 \\, \\text{cm} $</p>\n\n<p>Therefore, the least count (LC) of the microscope is:</p>\n\n<p>$ \\text{LC} = 0.05 \\, \\text{cm} - \\left( \\frac{49}{50} \\times 0.05 \\, \\text{cm} \\right) = 0.05 \\, \\text{cm} - 0.049 \\, \\text{cm} = 0.001 \\, \\text{cm} $</p>\n\n<p>Now, using the least count to find the total reading (TR) from both supplied observations:</p>\n\n<ol>\n<li>For the mark on paper, the total reading (TR) is:</li>\n</ol>\n<p>$ \\text{TR} = \\text{MSR} + (\\text{VC} \\times \\text{LC}) $</p>\n\n<p>$ \\text{TR}_{\\text{paper}} = 8.45 \\, \\text{cm} + (26 \\times 0.001 \\, \\text{cm}) = 8.45 \\, \\text{cm} + 0.026 \\, \\text{cm} = 8.476 \\, \\text{cm} $</p>\n\n<ol>\n<li>For the mark on the paper seen through the slab, the total reading is:</li>\n</ol>\n<p>$ \\text{TR}_{\\text{seen through slab}} = 7.12 \\, \\text{cm} + (41 \\times 0.001 \\, \\text{cm}) = 7.12 \\, \\text{cm} + 0.041 \\, \\text{cm} = 7.161 \\, \\text{cm} $</p>\n\n<ol>\n<li>For the powder particle on the top surface of the glass slab:</li>\n</ol>\n<p>$ \\text{TR}_{\\text{top surface}} = 4.05 \\, \\text{cm} + (1 \\times 0.001 \\, \\text{cm}) = 4.05 \\, \\text{cm} + 0.001 \\, \\text{cm} = 4.051 \\, \\text{cm} $</p>\n\n<p>The real depth (RD) observed directly is the difference between the first and third observations (mark on paper and powder particle on top surface):</p>\n\n<p>$ \\text{RD} = \\text{TR}_{\\text{paper}} - \\text{TR}_{\\text{top surface}} = 8.476 \\, \\text{cm} - 4.051 \\, \\text{cm} = 4.425 \\, \\text{cm} $</p>\n\n<p>The apparent depth (AD) when viewed through the slab is the difference between the second and third observations:</p>\n\n<p>$ \\text{AD} = \\text{TR}_{\\text{seen through slab}} - \\text{TR}_{\\text{top surface}} = 7.161 \\, \\text{cm} - 4.051 \\, \\text{cm} = 3.11 \\, \\text{cm} $</p>\n\n<p>The refractive index ($n$) of the glass slab can be found using the formula:</p>\n\n<p>$ n = \\frac{\\text{Real Depth (RD)}}{\\text{Apparent Depth (AD)}} = \\frac{4.425 \\, \\text{cm}}{3.11 \\, \\text{cm}} $</p>\n\n<p>Calculating this gives:</p>\n\n<p>$ n = \\frac{4.425}{3.11} \\approx 1.42 $</p>\n\n<p>Therefore, the refractive index of the glass slab is approximately 1.42, which corresponds to Option D.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29egr",
@@ -424,169 +462,191 @@
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "energy",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>The relationship between kinetic energy (K.E) and momentum (p) of a body can be expressed through their respective definitions. Kinetic energy is given by $$K.E = \\frac{1}{2} mv^2$$ where $m$ is the mass of the body and $v$ is its velocity. The momentum (p) of a body is given by $$p = mv$$. To express kinetic energy in terms of momentum, we can manipulate the expression for momentum as follows:</p>\n\n<p>$$p = mv \\implies v = \\frac{p}{m}$$</p>\n\n<p>Substituting $v$ in the kinetic energy formula, we get</p>\n\n<p>$$K.E = \\frac{1}{2} m\\left(\\frac{p}{m}\\right)^2 = \\frac{1}{2} \\frac{p^2}{m}$$</p>\n\n<p>Therefore, we see that kinetic energy is directly proportional to the square of the momentum $(K.E \\propto p^2)$.</p>\n\n<p>Now, given that the kinetic energy of a body becomes 36 times its original value, we can set up the proportionality as</p>\n\n<p>$$\\frac{K.E_{\\text{final}}}{K.E_{\\text{original}}} = 36$$</p>\n\n<p>Since $K.E_{\\text{final}} = 36 \\times K.E_{\\text{original}}$ and knowing $K.E \\propto p^2$, we can express this relationship through the squares of the initial and final momentum:</p>\n\n<p>$$\\frac{p_{\\text{final}}^2}{p_{\\text{original}}^2} = 36$$</p>\n\n<p>Taking the square root of both sides to find the ratio of final to initial momentum, we have</p>\n\n<p>$$\\frac{p_{\\text{final}}}{p_{\\text{original}}} = \\sqrt{36} = 6$$</p>\n\n<p>This indicates that the final momentum is 6 times the original momentum. To find the percentage increase in the momentum, we calculate the increase from the original to the final, subtracting the original momentum (which is considered 1 times itself):</p>\n\n<p>$$\\text{Percentage increase} = \\left(\\frac{p_{\\text{final}} - p_{\\text{original}}}{p_{\\text{original}}}\\right) \\times 100\\% = \\left(\\frac{6p - p}{p}\\right) \\times 100\\% \n= \\left(6 - 1\\right) \\times 100\\% = 5 \\times 100\\% = 500\\%$$</p>\n\n<p>Therefore, the correct answer is Option B: 500%.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29eno",
       "questionNumber": 21,
       "questionText": "<p>For a given series LCR circuit it is found that maximum current is drawn when value of variable capacitance is $$2.5 \\mathrm{~nF}$$. If resistance of $$200 \\Omega$$ and $$100 \\mathrm{~mH}$$ inductor is being used in the given circuit. The frequency of ac source is _________ $$\\times 10^3 \\mathrm{~Hz}$$ (given $$\\mathrm{a}^2=10$$)</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "ac-circuits-and-power-in-ac-circuits",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To solve this problem, we need to use the concept of resonance in an LCR (inductor-capacitor-resistor) circuit. At resonance, the inductive reactance and capacitive reactance cancel each other out. The condition for resonance in an LCR circuit is given by:</p>\n\n<p>$$\\omega L = \\frac{1}{\\omega C}$$</p>\n\n<p>Where:\n\n<ul>\n\n<li>$$\\omega$$ is the angular frequency</li>\n\n<li>$$L$$ is the inductance</li>\n\n<li>$$C$$ is the capacitance</li>\n\n</ul>\n\n</p>\n\n<p>Rewriting for angular frequency:</p>\n\n<p>$$\\omega^2 = \\frac{1}{LC}$$</p>\n\n<p>The angular frequency $$\\omega$$ is related to the frequency $ f $ by:</p>\n\n<p>$$\\omega = 2 \\pi f$$</p>\n\n<p>Substituting this into the equation for angular frequency gives:</p>\n\n<p>$$ (2 \\pi f)^2 = \\frac{1}{LC} $$</p>\n\n<p>Therefore, the frequency $ f $ can be found by:</p>\n\n<p>$$ f = \\frac{1}{2 \\pi \\sqrt{LC}} $$</p>\n\n<p>Given values:\n\n<ul>\n\n<li>Inductance, $$L = 100 \\mathrm{~mH} = 100 \\times 10^{-3} \\mathrm{~H}$$</li>\n\n<li>Capacitance, $$C = 2.5 \\mathrm{~nF} = 2.5 \\times 10^{-9} \\mathrm{~F}$$</li>\n\n</ul>\n\n</p>\n\n<p>Plug these values into the frequency equation:</p>\n\n<p>$$ f = \\frac{1}{2 \\pi \\sqrt{(100 \\times 10^{-3}) (2.5 \\times 10^{-9})}} $$</p>\n\n<p>First, calculate the product of $ L $ and $ C $:</p>\n\n<p>$$ L \\cdot C = 100 \\times 10^{-3} \\cdot 2.5 \\times 10^{-9} = 2.5 \\times 10^{-10} $$</p>\n\n<p>Now, take the square root of the product:</p>\n\n<p>$$ \\sqrt{2.5 \\times 10^{-10}} = \\sqrt{2.5} \\times 10^{-5} $$</p>\n\n<p>Given that $$ \\mathrm{a}^2 = 10 $$, we have:</p>\n\n<p>$$ \\mathrm{a} = \\sqrt{10} $$</p>\n\n<p>Since $ \\sqrt{2.5} = \\frac{\\sqrt{10}}{2} $:</p>\n\n<p>$$ \\sqrt{2.5} \\times 10^{-5} = \\frac{\\sqrt{10}}{2} \\times 10^{-5} $$</p>\n\n<p>Now substitute back into the frequency formula:</p>\n\n<p>$$ f = \\frac{1}{2 \\pi \\left( \\frac{\\sqrt{10}}{2} \\times 10^{-5} \\right) } = \\frac{1}{\\pi \\sqrt{10} \\times 10^{-5}} $$</p>\n\n<p>Simplify the equation:</p>\n\n<p>$$ f = \\frac{10^5}{\\pi \\sqrt{10}} $$</p>\n\n<p>Given that $$ \\pi \\approx 3.14 $$, we get:</p>\n\n<p>$$ f \\approx \\frac{10^5}{3.14 \\times 3.162} $$</p>\n\n<p>Simplify further:</p>\n\n<p>$$ f \\approx \\frac{10^5}{9.93} \\approx 10 \\times 10^3 \\mathrm{~Hz} $$</p>\n\n<p>Thus, the frequency of the AC source is approximately:</p>\n\n<p>$$ 10 \\times 10^3 \\mathrm{~Hz} $$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acle",
       "questionNumber": 22,
       "questionText": "<p>A capacitor of $$10 \\mu \\mathrm{F}$$ capacitance whose plates are separated by $$10 \\mathrm{~mm}$$ through air and each plate has area $$4 \\mathrm{~cm}^2$$ is now filled equally with two dielectric media of $$K_1=2, K_2=3$$ respectively as shown in figure. If new force between the plates is $$8 \\mathrm{~N}$$. The supply voltage is ________ V.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lvayw6yv/5e6ca136-fcb0-4d84-8dc3-b89a330c4e0d/9edd6570-00a8-11ef-be3f-17279d79e67d/file-1lvayw6yw.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lvayw6yv/5e6ca136-fcb0-4d84-8dc3-b89a330c4e0d/9edd6570-00a8-11ef-be3f-17279d79e67d/file-1lvayw6yw.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Physics - Capacitor Question 30 English\"></p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "capacitors-with-dielectric",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{array}{ll}\nC_1=10 \\mu \\mathrm{F} & C_2=15 \\mu \\mathrm{F} \\\\\nF=F_1+F_2 &\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& F=\\frac{\\left(10 \\times 10^{-6} V\\right)^2}{2 \\cdot \\frac{A}{2} \\cdot \\epsilon_0}+\\frac{(15~~10)}{2 \\cdot \\frac{A}{2} \\cdot \\epsilon_0}=8 \\\\\n& V^2=0.9 \\times 10^{-4} \\\\\n& V=0.95 \\times 10^{-2} \\mathrm{~V} \\\\\n\\end{aligned}$$</p>\n<p>Data in consistent. Answer not matching.</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acqd",
       "questionNumber": 23,
       "questionText": "<p>In the given figure an ammeter A consists of a $$240 \\Omega$$ coil connected in parallel to a $$10 \\Omega$$ shunt. The reading of the ammeter is ________ $$\\mathrm{mA}$$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lvayk93i/5307b31c-b4fe-4181-95c8-a2133e78c595/52ccb2e0-00a7-11ef-be3f-17279d79e67d/file-1lvayk93j.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lvayk93i/5307b31c-b4fe-4181-95c8-a2133e78c595/52ccb2e0-00a7-11ef-be3f-17279d79e67d/file-1lvayk93j.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Physics - Current Electricity Question 50 English\"></p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "galvanometer-voltmeter-and-ammeter",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& i=\\frac{24}{140 \\cdot 4+r_A}=\\frac{24}{140 \\cdot 4+9 \\cdot 6}=0.16 \\mathrm{~A} \\\\\n& i=160 \\mathrm{~mA}\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29gzg",
       "questionNumber": 24,
       "questionText": "<p>In Franck-Hertz experiment, the first dip in the current-voltage graph for hydrogen is observed at $$10.2 \\mathrm{~V}$$. The wavelength of light emitted by hydrogen atom when excited to the first excitation level is ________ nm. (Given hc $$=1245 \\mathrm{~eV} \\mathrm{~nm}, \\mathrm{e}=1.6 \\times 10^{-19} \\mathrm{C}$$).</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "particle-nature-of-light-the-photon",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>The Franck-Hertz experiment provides evidence for quantized energy levels within atoms. When atoms are excited by electrons with a specific kinetic energy, they can jump to higher energy levels. Upon returning to lower levels, they emit photons whose energies correspond to the difference between these levels. The first dip in the current-voltage graph for hydrogen, observed at $$10.2 \\mathrm{~V}$$, corresponds to the energy required to excite a hydrogen atom to its first excitation level. The wavelength of the light emitted when the atom returns to its ground state can be calculated using the energy of the photon emitted.</p>\n\n<p>To find the wavelength ($$\\lambda$$) of light emitted, we use the relationship between energy ($$E$$), Planck's constant ($$h$$), the speed of light ($$c$$), and wavelength ($$\\lambda$$), given in the equation form as $$E = \\frac{hc}{\\lambda}$$.</p>\n\n<p>However, we are given $$hc$$ in electron volts per nanometer ($$1245 \\mathrm{~eV} \\cdot \\mathrm{nm}$$), and the energy is also given in terms of voltage ($$10.2 \\mathrm{~V}$$). First, we convert the energy into electron volts (eV) using the formula: $$E = eV$$, where $$e$$ is the charge of an electron ($$1.6 \\times 10^{-19} \\mathrm{C}$$).</p>\n\n<p>The energy in electron volts can be directly calculated as:\n\n<p>$$E = 10.2 \\mathrm{~V} \\cdot 1.6 \\times 10^{-19} \\mathrm{C/electron} = 10.2 \\mathrm{~eV}$$,</p>\n\n<p>since $$1 \\mathrm{~V} \\cdot 1 \\mathrm{~C} = 1 \\mathrm{~eV}$$ by definition.</p></p>\n\n<p>Next, using the energy-wavelength relationship and the given value for $$hc$$, the wavelength can be calculated as:\n\n<p>$$\\lambda = \\frac{hc}{E}$$</p></p>\n\n<p>Substituting the given values yields:\n\n<p>$$\\lambda = \\frac{1245 \\mathrm{~eV} \\cdot \\mathrm{nm}}{10.2 \\mathrm{~eV}}$$</p></p>\n\n<p>This simplifies to:\n\n<p>$$\\lambda = \\frac{1245}{10.2} \\mathrm{~nm}$$</p></p>\n\n<p>Calculating this gives:\n\n<p>$$\\lambda \\approx 122.06 \\mathrm{~nm}$$.</p></p>\n\n<p>Therefore, the wavelength of light emitted by the hydrogen atom when excited to the first excitation level is approximately $$122.06 \\mathrm{~nm}$$. </p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29fxq",
       "questionNumber": 25,
       "questionText": "<p>A coil having 100 turns, area of $$5 \\times 10^{-3} \\mathrm{~m}^2$$, carrying current of $$1 \\mathrm{~mA}$$ is placed in uniform magnetic field of $$0.20 \\mathrm{~T}$$ such a way that plane of coil is perpendicular to the magnetic field. The work done in turning the coil through $$90^{\\circ}$$ is _________ $$\\mu \\mathrm{J}$$.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "magnetic-moment",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To find the work done in turning the coil through $$90^{\\circ}$$, we first need to understand the concept of torque on a current-carrying loop in a magnetic field and how work done relates to the change in potential energy of the system. The potential energy (U) of a magnetic dipole in a magnetic field is given by:</p>\n\n<p>$$U = - \\vec{M} \\cdot \\vec{B}$$</p>\n\n<p>where:</p>\n\n<ul>\n\n<li>$\\vec{M}$ is the magnetic moment of the coil, and</li>\n\n<li>$\\vec{B}$ is the magnetic field.</li>\n\n</ul>\n\n<p>For a coil with $N$ turns, carrying current $I$, and with an area $A$, the magnetic moment $\\vec{M}$ is defined as:</p>\n\n<p>$$M = NI \\cdot A$$</p>\n\n<p>Given that the coil has $$100$$ turns, carries a current of $$1 \\, \\mathrm{mA} = 1 \\times 10^{-3} \\, \\mathrm{A}$$, and the area of the coil is $$5 \\times 10^{-3} \\, \\mathrm{m}^2$$, we can calculate its magnetic moment as follows:</p>\n\n<p>$$M = 100 \\cdot 1 \\times 10^{-3} \\cdot 5 \\times 10^{-3} = 0.5 \\times 10^{-3} \\, \\mathrm{Am}^2$$</p>\n\n<p>Since the coil is initially placed such that its plane is perpendicular to the magnetic field (i.e., the angle $ \\theta = 0^{\\circ} $), and then it is turned through $90^{\\circ}$, the initial and final angles ($\\theta_i$ and $\\theta_f$) of the coil with respect to the magnetic field are $0^{\\circ}$ and $90^{\\circ}$ respectively. This means the initial potential energy ($U_i$) and final potential energy ($U_f$) of the system are:</p>\n\n<p>$$U_i = - M B \\cos(\\theta_i)$$</p>\n\n<p>$$U_f = - M B \\cos(\\theta_f)$$</p>\n\n<p>Given that $B = 0.20 \\, \\mathrm{T}$, $\\theta_i = 0^{\\circ} \\, (\\cos(0) = 1)$, and $\\theta_f = 90^{\\circ} \\, (\\cos(90^{\\circ}) = 0)$, the potential energies are:</p>\n\n<p>$$U_i = - 0.5 \\times 10^{-3} \\cdot 0.20 \\cdot 1 = - 1 \\times 10^{-4} \\, \\mathrm{J}$$</p>\n\n<p>$$U_f = - 0.5 \\times 10^{-3} \\cdot 0.20 \\cdot 0 = 0 \\, \\mathrm{J}$$</p>\n\n<p>The work done ($W$) is equal to the change in potential energy:</p>\n\n<p>$$W = U_f - U_i$$</p>\n\n<p>$$W = 0 - (- 1 \\times 10^{-4}) = 1 \\times 10^{-4} \\, \\mathrm{J}$$</p>\n\n<p>Therefore, the work done in turning the coil through $90^{\\circ}$ is $$100 \\mu \\mathrm{J}$$.</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29gxb",
       "questionNumber": 26,
       "questionText": "<p>A particle moves in a straight line so that its displacement $$x$$ at any time $$t$$ is given by $$x^2=1+t^2$$. Its acceleration at any time $$\\mathrm{t}$$ is $$x^{-\\mathrm{n}}$$ where $$\\mathrm{n}=$$ _________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "average-acceleration-and-instantaneous-acceleration",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>Given the displacement of the particle $$x^2 = 1 + t^2$$, we want to find the acceleration, which is the second derivative of displacement with respect to time, $$a = \\frac{d^2x}{dt^2}$$, and we are given that the acceleration at any time $$t$$ is $$x^{-n}$$, for us to find the value of $$n$$.</p>\n\n<p>First, let's find the first derivative of displacement with respect to time, which gives us the velocity. Differentiating $$x^2 = 1 + t^2$$ with respect to t, we get:</p>\n\n<p>$$2x\\frac{dx}{dt} = 2t$$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$\\frac{dx}{dt} = \\frac{t}{x}$$</p>\n\n<p>Now, let's differentiate this velocity to find the acceleration:</p>\n\n<p>$$a = \\frac{d^2x}{dt^2} = \\frac{d}{dt}\\left(\\frac{t}{x}\\right)$$</p>\n\n<p>To differentiate $$\\frac{t}{x}$$ with respect to $$t$$, we'll use the quotient rule:</p>\n\n<p>$$\\frac{d}{dt}\\left(\\frac{t}{x}\\right) = \\frac{x\\cdot 1 - t\\cdot \\frac{dx}{dt}}{x^2}$$</p>\n\n<p>Substitute $$\\frac{dx}{dt} = \\frac{t}{x}$$ into the equation:</p>\n\n<p>$$a = \\frac{x(1) - t(\\frac{t}{x})}{x^2} = \\frac{x - \\frac{t^2}{x}}{x^2} = \\frac{x^2 - t^2}{x^3}$$</p>\n\n<p>Recalling that the displacement equation given was $$x^2 = 1 + t^2$$, substitute this into our expression for acceleration:</p>\n\n<p>$$a = \\frac{1 + t^2 - t^2}{x^3} = \\frac{1}{x^3}$$</p>\n\n<p>Thus, the acceleration of the particle at any time $$t$$ is $$x^{-3}$$, which means our value for $$n$$ is $$3$$.</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acm6",
       "questionNumber": 27,
       "questionText": "<p>A wire of cross sectional area A, modulus of elasticity $$2 \\times 10^{11} \\mathrm{~Nm}^{-2}$$ and length $$2 \\mathrm{~m}$$ is stretched between two vertical rigid supports. When a mass of $$2 \\mathrm{~kg}$$ is suspended at the middle it sags lower from its original position making angle $$\\theta=\\frac{1}{100}$$ radian on the points of support. The value of A is ________ $$\\times 10^{-4} \\mathrm{~m}^2$$ (consider $$x&lt;&lt;\\mathrm{L}$$ ).</p>\n<p>(given : $$\\mathrm{g}=10 \\mathrm{~m} / \\mathrm{s}^2$$)</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lvaz8q4p/254847ef-ff31-48ee-b867-e282ff67c03a/fb607390-00a9-11ef-be3f-17279d79e67d/file-1lvaz8q4q.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lvaz8q4p/254847ef-ff31-48ee-b867-e282ff67c03a/fb607390-00a9-11ef-be3f-17279d79e67d/file-1lvaz8q4q.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Physics - Properties of Matter Question 71 English\"></p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "mechanical-properties-of-solids",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n\\Delta I_{\\text {spring }} &amp; =\\left(\\sqrt{L^2+x^2}\\right)-L \\\\\n&amp; =\\frac{x^2}{2 L} \\\\\nT=k \\Delta I &amp; =\\frac{k n^2}{2 L}\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwbjb8c8/38e9be6c-cd47-49ee-8647-258f37fcf2b4/af05e780-14c4-11ef-b239-251b0141b71b/file-1lwbjb8c9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwbjb8c8/38e9be6c-cd47-49ee-8647-258f37fcf2b4/af05e780-14c4-11ef-b239-251b0141b71b/file-1lwbjb8c9.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Physics - Properties of Matter Question 71 English Explanation\"></p>\n<p>$$\\begin{array}{rl}\n&amp;\\Rightarrow 2 T \\theta=m g \\\\\n&amp; 2\\left(\\frac{Y A}{l}\\right) \\frac{x^2}{2 l} \\theta=m g \\\\\n&amp; A =\\frac{m g}{\\theta^3 Y} \\\\\n&amp; =\\frac{20}{10^{-6} \\times 2 \\times 10^{11}} \\\\\n&amp; =10 \\times 10^{-5} \\\\\n&amp; =1 \\times 10^{-4}\n\\end{array}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29eoa",
       "questionNumber": 28,
       "questionText": "<p>Three balls of masses $$2 \\mathrm{~kg}, 4 \\mathrm{~kg}$$ and $$6 \\mathrm{~kg}$$ respectively are arranged at centre of the edges of an equilateral triangle of side $$2 \\mathrm{~m}$$. The moment of inertia of the system about an axis through the centroid and perpendicular to the plane of triangle, will be ________ $$\\mathrm{kg} \\mathrm{~m}^2$$.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "moment-of-inertia",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lycativ4/73b62d51-7a39-440e-a119-b71e415f033d/b0f77d70-3cc8-11ef-b1db-75e49a1f78b6/file-jaoe38c1lycativb.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lycativ4/73b62d51-7a39-440e-a119-b71e415f033d/b0f77d70-3cc8-11ef-b1db-75e49a1f78b6/file-jaoe38c1lycativb.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Physics - Rotational Motion Question 53 English Explanation\">\n\nMoment of inertia about c and perpendicular to the\nplane is :\n\n<p>$$\\begin{aligned}\n&amp; I=2 \\times\\left(\\frac{a}{2 \\sqrt{3}}\\right)^2+4 \\times\\left(\\frac{a}{2 \\sqrt{3}}\\right)^2+6\\left(\\frac{a}{2 \\sqrt{3}}\\right)^2 \\\\\\\\\n&amp; I=4 \\mathrm{~kg} \\mathrm{~m}^2\n\\end{aligned}$$</p>\n<p>Distance between centroid and midpoint of sides</p>\n<p>$$=\\frac{a}{2 \\sqrt{3}}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a8u8",
       "questionNumber": 29,
       "questionText": "<p>For the reaction at $$298 \\mathrm{~K}, 2 \\mathrm{~A}+\\mathrm{B} \\rightarrow \\mathrm{C}, \\Delta \\mathrm{H}=400 \\mathrm{~kJ} \\mathrm{~mol}^{-1}$$ and $$\\Delta S=0.2 \\mathrm{~kJ} \\mathrm{~mol}^{-1} \\mathrm{~K}^{-1}$$. The reaction will become spontaneous above __________ $$\\mathrm{K}$$.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "entropy-free-energy-change-and-spontaneity",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To determine the temperature above which the reaction $$2A+B \\rightarrow C$$ becomes spontaneous, we can use the Gibbs free energy equation:</p>\n\n<p>$$\\Delta G = \\Delta H - T\\Delta S$$</p>\n\n<p>The reaction becomes spontaneous when $$\\Delta G$$ is negative. Therefore, we need to find the temperature at which $$\\Delta G$$ changes from positive to negative. We set $$\\Delta G$$ to zero to find the threshold temperature:</p>\n\n<p>$$0 = \\Delta H - T\\Delta S$$</p>\n\n<p>Substituting the given values of $$\\Delta H = 400 \\, \\text{kJ mol}^{-1} = 400,000 \\, \\text{J mol}^{-1}$$ (since 1 kJ = 1000 J) and $$\\Delta S = 0.2 \\, \\text{kJ mol}^{-1} K^{-1} = 200 \\, \\text{J mol}^{-1} K^{-1}$$, we get:</p>\n\n<p>$$0 = 400,000 \\, \\text{J mol}^{-1} - T(200 \\, \\text{J mol}^{-1} K^{-1})$$</p>\n\n<p>Solving for $$T$$, we have:</p>\n\n<p>$$T = \\frac{400,000 \\, \\text{J mol}^{-1}}{200 \\, \\text{J mol}^{-1} K^{-1}}$$</p>\n\n<p>$$T = 2000 \\, \\text{K}$$</p>\n\n<p>Therefore, the reaction will become spontaneous above $$2000 \\, \\text{K}$$. This means that at temperatures higher than 2000 K, the reaction tends towards product formation without the need for external energy to drive the process.</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29gxu",
       "questionNumber": 30,
       "questionText": "<p>Two coherent monochromatic light beams of intensities I and $$4 \\mathrm{~I}$$ are superimposed. The difference between maximum and minimum possible intensities in the resulting beam is $$x \\mathrm{~I}$$. The value of $$x$$ is __________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Physics",
       "topic": "huygens-principle-and-interference-of-light",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>When two coherent light beams interfere, the resulting intensity at a point depends on the principle of superposition and is related to their amplitudes. Let the amplitude of the first light beam be A, then its intensity, which is proportional to the square of its amplitude, is given as $$I \\propto A^2$$. Since intensity is directly proportional to the square of amplitude, for the second beam with intensity $$4I$$, its amplitude would be $$2A$$, as $$4I \\propto (2A)^2$$.</p>\n\n<p>The maximum intensity ($$I_{max}$$) occurs when the two beams are in phase and their amplitudes add up constructively, which can be represented as:</p>\n\n<p>$$I_{max} \\propto (A + 2A)^2 = (3A)^2 = 9A^2$$</p>\n\n<p>Given that $$I \\propto A^2$$, substituting this relation to express $$I_{max}$$ in terms of $$I$$, we get:</p>\n\n<p>$$I_{max} = 9I$$</p>\n\n<p>The minimum intensity ($$I_{min}$$) occurs when the two beams are completely out of phase, leading their amplitudes to subtract destructively, thus</p>\n\n<p>$$I_{min} \\propto (2A - A)^2 = A^2$$</p>\n\n<p>Again, using the fact that $$I \\propto A^2$$, we find that:</p>\n\n<p>$$I_{min} = I$$</p>\n\n<p>Now, the difference between the maximum and minimum intensities in the resulting beam is:</p>\n\n<p>$$xI = I_{max} - I_{min} = 9I - I$$</p>\n\n<p>$$xI = 8I$$</p>\n\n<p>Therefore, the value of $$x$$ is 8.</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acuc",
@@ -605,9 +665,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "properties-preparation-and-uses-of-phenols",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwbk6pkz/aa645809-4cd2-412b-8840-8f0222b425bd/1a6d2530-14c8-11ef-a0f4-45babcaa12d2/file-1lwbk6pl0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwbk6pkz/aa645809-4cd2-412b-8840-8f0222b425bd/1a6d2530-14c8-11ef-a0f4-45babcaa12d2/file-1lwbk6pl0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Alcohols, Phenols and Ethers Question 23 English Explanation\"></p>\n<p>Methoxy group is o-, p-directing. Nitration of methoxy benzene will produce p-isomer as the major product due to steric crowding in o-isomers. Bromination of p-nitroanisole (A) with excess of $$\\mathrm{Br}_2$$ will result in disubstitution to give 2, 5-dibromo-4-nitroanisole.\n(B) as the major product.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2achx",
@@ -626,9 +688,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "chemical-reactions-for-aldehydes-and-ketones",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwblqp5r/eb97fa65-ebe3-464f-8362-256094971ac4/2f6966f0-14ce-11ef-ab9d-41d0386b3046/file-1lwblqp5s.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwblqp5r/eb97fa65-ebe3-464f-8362-256094971ac4/2f6966f0-14ce-11ef-ab9d-41d0386b3046/file-1lwblqp5s.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Aldehydes, Ketones and Carboxylic Acids Question 62 English Explanation\"></p>\n<p>The major product (P) formed in the given reaction is 2-hydroxy propanoic acid.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a7zg",
@@ -647,9 +711,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "isomerism",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>Let's analyze each statement to determine which one is incorrect regarding the geometrical isomers of 2-butene.</p>\n\n<p><strong>Option A:</strong> \"Cis-2-butene and trans-2-butene are not interconvertible at room temperature.\"</p>\n\n<p>This statement is correct. Cis and trans isomers of 2-butene are not readily interconvertible at room temperature due to the energy barrier associated with the rotation around the double bond. The double bond ensures rigidity, making interconversion between these isomers difficult without sufficient energy input.</p>\n\n<p><strong>Option B:</strong> \"Trans-2-butene is more stable than cis-2-butene.\"</p>\n\n<p>This statement is correct. The trans isomer is more stable than the cis isomer due to reduced steric hindrance. In the cis isomer, the bulkier substituents (methyl groups) are on the same side, leading to increased steric repulsion.</p>\n\n<p><strong>Option C:</strong> \"Cis-2-butene has less dipole moment than trans-2-butene.\"</p>\n\n<p>This statement is incorrect. The cis isomer typically has a higher dipole moment than the trans isomer because the substituents on the same side of the double bond create a net dipole moment. In the trans isomer, the dipole moments of the substituents cancel each other out, resulting in a lower overall dipole moment.</p>\n\n<p><strong>Option D:</strong> \"Cis-2-butene and trans-2-butene are stereoisomers.\"</p>\n\n<p>This statement is correct. Cis-2-butene and trans-2-butene are indeed stereoisomers because they have the same molecular formula and connectivity of atoms but differ in the spatial arrangement of the substituents around the double bond.</p>\n\n<p>Therefore, the incorrect statement is:</p>\n\n<p><strong>Option C: Cis-2-butene has less dipole moment than trans-2-butene.</strong></p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acsx",
@@ -668,9 +734,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "electron-displacement-effect",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>Methoxy group strongly activates benzene ring towards electrophilic aromatic substitution due to $$+\\mathrm{R}$$ effect. Methyl group weakly activates benzene ring due to its $$+\\mathrm{I}$$ and $$+\\mathrm{H}$$ effects. $$\\mathrm{CF}_3$$ group strongly deactivates the benzene ring due to $$-\\mathrm{I}$$ and $$-\\mathrm{H}$$ effects.</p>\n<p>Therefore, the correct order of the given compounds towards electrophilic aromatic substitution is</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwbm2u0u/8bcbe528-7697-4b05-a2e4-dcaba8a2ee23/80e0d9e0-14cf-11ef-ab9d-41d0386b3046/file-1lwbm2u0v.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwbm2u0u/8bcbe528-7697-4b05-a2e4-dcaba8a2ee23/80e0d9e0-14cf-11ef-ab9d-41d0386b3046/file-1lwbm2u0v.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Basics of Organic Chemistry Question 63 English Explanation\"></p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a7u8",
@@ -689,9 +757,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "proteins-and-enzymes",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>The correct answer is Option A: (B) and (D).</p>\n<p>Let’s analyze each statement:</p>\n<p>(A) Enzymes are biocatalysts. - This statement is correct. Enzymes are indeed biocatalysts, meaning they are natural catalytic substances produced by living organisms to speed up chemical reactions in cells without being consumed in the process. They are crucial for a myriad of biological processes.</p>\n<p>(B) Enzymes are non-specific and can catalyse different kinds of reactions. - This statement is incorrect. Enzymes are highly specific in nature; they typically catalyze only one kind of reaction or a very limited range of reactions. This specificity is a result of the unique 3D structure of the enzyme molecule, particularly the active site where substrate molecules bind.</p>\n<p>(C) Most enzymes are globular proteins. - This statement is correct. The vast majority of enzymes are indeed globular proteins. This means they are folded into a compact shape which is crucial for their function. Their globular structure allows for the creation of specific active sites where the chemical reactions take place.</p>\n<p>(D) Enzyme - oxidase catalyses the hydrolysis of maltose into glucose. - This statement is incorrect. The enzyme that catalyses the hydrolysis of maltose into glucose is maltase, not oxidase. Oxidases are a class of enzymes that catalyze the transfer of electrons to oxygen, and are involved in oxidation reactions, not in the hydrolysis of sugars.</p>\n<p>Therefore, the incorrect statements regarding enzymes are (B) Enzymes are non-specific and can catalyse different kinds of reactions, and (D) Enzyme - oxidase catalyses the hydrolysis of maltose into glucose, making Option A the correct choice.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a7x3",
@@ -710,9 +780,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "chemical-equilibrium-law-of-mass-action-and-equilibrium-constant",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To solve this problem, we need to understand the relationship between the equilibrium constant in terms of pressure, $$K_P$$, and the equilibrium constant in terms of concentration, $$K_C$$. The relationship between these two constants for a general reaction is given by:\n\n<p>$$ K_P = K_C (RT)^{\\Delta n} $$</p>\n\n<p>where:</p>\n\n</p>\n\n<p>\n\n<p>$$\\Delta n$$ is the change in the number of moles of gas (moles of gaseous products minus moles of gaseous reactants),</p>\n\n</p>\n\n<p>\n\n<p>$$R$$ is the ideal gas constant, and</p>\n\n</p>\n\n<p>\n\n<p>$$T$$ is the temperature in Kelvin.</p>\n\n</p>\n\n<p>For the given reaction:\n\n<p>$$ \\mathrm{CO}_{(\\mathrm{g})}+\\frac{1}{2} \\mathrm{O}_{2(\\mathrm{~g})} \\rightleftharpoons \\mathrm{CO}_{2(\\mathrm{~g})} $$</p>\n\n<p>we need to calculate $$\\Delta n$$.</p></p>\n\n<p>On the reactants side, we have:</p>\n\n<ul>\n\n<li>1 mole of $$\\mathrm{CO}$$ (g)</li>\n\n<li>0.5 moles of $$\\mathrm{O}_2$$ (g)</li>\n\n</ul>\n\n<p>So, the total number of moles of reactants is:</p>\n\n<p>$$ 1 + \\frac{1}{2} = \\frac{3}{2} = 1.5 $$</p>\n\n<p>On the products side, we have:</p>\n\n<ul>\n\n<li>1 mole of $$\\mathrm{CO}_2$$ (g)</li>\n\n</ul>\n\n<p>The total number of moles of products is:</p>\n\n<p>$$ 1 $$</p>\n\n<p>Therefore, $$\\Delta n$$ is:</p>\n\n<p>$$ \\Delta n = \\text{moles of products} - \\text{moles of reactants} = 1 - 1.5 = -0.5 $$</p>\n\n<p>Now, we can use the relationship between $$K_P$$ and $$K_C$$:</p>\n\n<p>$$ K_P = K_C (RT)^{\\Delta n} $$</p>\n\n<p>Substituting $$\\Delta n = -0.5$$, we get:</p>\n\n<p>$$ K_P = K_C (RT)^{-0.5} $$</p>\n\n<p>or equivalently:</p>\n\n<p>$$ \\frac{K_P}{K_C} = (RT)^{-0.5} $$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option D</strong>: $$\\frac{1}{\\sqrt{R T}}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2ack2",
@@ -731,9 +803,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "diazonium-salts-and-other-nitrogen-containing-compounds",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lwbkzz7j/4820a1d4-0b01-4427-b7f2-9a571aaac53e/4853e8f0-14cb-11ef-a601-b50d01558610/file-jaoe38c1lwbkzz7k.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lwbkzz7j/4820a1d4-0b01-4427-b7f2-9a571aaac53e/4853e8f0-14cb-11ef-a601-b50d01558610/file-jaoe38c1lwbkzz7k.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Compounds Containing Nitrogen Question 50 English Explanation\"></p>\n<p>Conversion of diazonium chloride to chlorobenzene with $$\\mathrm{Cu}_2 \\mathrm{Cl}_2$$ is Sandmeyer reaction and the fusion of chlorobenzene to sodium phenoxide in presence of $$\\mathrm{NaOH}$$ at high temperature and high pressure is Dow's process.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a27q",
@@ -752,9 +826,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "warners-theory-and-valence-bond-theory",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>Hybridisation of $$\\mathrm{P}$$ in $$\\mathrm{PF}_5$$ is $$s p^3 d$$ but the hybridisation of $$\\mathrm{Br}$$ in $$\\mathrm{BrF}_5$$ is $$s p^3 d^2$$. So, statement-I is false.</p>\n<p>Hybridisation of $$\\mathrm{S}$$ in $$\\mathrm{SF}_6$$ is $$s p^3 d^2$$ but the hybridisation of $$\\mathrm{Co}^{3+}$$ in $$[\\mathrm{Co}(\\mathrm{NH}_3)_6]^{3+}$$ is $$d^2 s p^3$$ as $$\\mathrm{NH}_3$$ is a strong field ligand forcing the unpaired electrons to pair up. So, statement-II is false.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a2am",
@@ -773,9 +849,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "crystal-field-theory-cft",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>(A) $$\\mathrm{TiCl}_4: \\mathrm{Ti}^{4+}: 3 d^0 4 s^0$$ or $$\\mathrm{e}^0 \\mathrm{t}_2^0$$</p>\n<p>(B) $$\\left[\\mathrm{FeO}_4\\right]^{2-}: \\mathrm{Fe}^{6+}: 3 d^2 4 s^0$$ or $$\\mathrm{e}^2 \\mathrm{t}_2^0$$</p>\n<p>(C) $$\\left[\\mathrm{FeCl}_4\\right]^{-}: \\mathrm{Fe}^{3+}: 3 d^5 4 s^0$$ or $$\\mathrm{e}^2 \\mathrm{t}_2^3$$</p>\n<p>(D) $$\\left[\\mathrm{CoCl}_4\\right]^{2-}: \\mathrm{Co}^{2+}: 3 d^7 4 s^0$$ or $$\\mathrm{e}^4 \\mathrm{t}_2^3$$</p>\n<p>$$\\therefore$$ Correct matching of tetrahedral complexes given in List-I with their electronic configuration given in List-II is</p>\n<p>(A)-(III); (B)-(I); (C)-(IV); (D)-(II)</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a7ya",
@@ -794,9 +872,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "nomenclature-of-coordination-compounds",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>The correct IUPAC name of $$[\\mathrm{PtBr}_2(\\mathrm{PMe}_3)_2]$$ is dibromobis(trimethylphosphine)platinum(II).</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a2ec",
@@ -815,9 +895,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "properties-of-transition-elements",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>The number of unpaired electrons in a transition metal is determined by its electronic configuration in the context of its ground state. The elements listed, Scandium (Sc), Chromium (Cr), Vanadium (V), Titanium (Ti), and Manganese (Mn), are transition metals that have different numbers of unpaired electrons. Here is the electronic configuration and the corresponding number of unpaired electrons for each:</p>\n\n<p><p><strong>Scandium (Sc)</strong>:  </p>\n<p>Electronic Configuration: $$ [\\mathrm{Ar}] \\, 3d^1 \\, 4s^2 $$  </p>\n<p>Unpaired Electrons: 1 </p></p>\n<p><p><strong>Titanium (Ti)</strong>:  </p>\n<p>Electronic Configuration: $$ [\\mathrm{Ar}] \\, 3d^2 \\, 4s^2 $$  </p>\n<p>Unpaired Electrons: 2 </p></p>\n<p><p><strong>Vanadium (V)</strong>:  </p>\n<p>Electronic Configuration: $$ [\\mathrm{Ar}] \\, 3d^3 \\, 4s^2 $$  </p>\n<p>Unpaired Electrons: 3 </p></p>\n<p><p><strong>Chromium (Cr)</strong>:  </p>\n<p>Electronic Configuration: $$ [\\mathrm{Ar}] \\, 3d^5 \\, 4s^1 $$  </p>\n<p>Unpaired Electrons: 6  </p></p>\n<p><p><strong>Manganese (Mn)</strong>:  </p>\n<p>Electronic Configuration: $$ [\\mathrm{Ar}] \\, 3d^5 \\, 4s^2 $$  </p>\n<p>Unpaired Electrons: 5  </p></p>\n\n<p>Arranging them in increasing order of number of unpaired electrons: </p>\n<p>$$ (\\mathrm{A})<(\\mathrm{D})<(\\mathrm{C})<(\\mathrm{E})<(\\mathrm{B}) $$</p>\n<p>Therefore, the correct choice is <strong>Option B</strong>.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a269",
@@ -836,9 +918,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "electrochemical-series-cell-and-their-emf",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>An electrochemical cell can be converted into an electrolytic cell by applying an external potential greater than $$E_{\\text {cell }}^{\\circ}$$. The entire cell reaction will be reversed. The oxidised species will be reduced and the reduced species will be oxidised.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acnh",
@@ -857,9 +941,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "reaction-of-alkanes",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>In aqueous medium the reaction follows $$\\mathrm{S_N 1}$$ mechanism majorly</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwbjw73x/393c202f-082e-4e53-b9d8-9eb03712d9be/f6107ad0-14c6-11ef-a0f4-45babcaa12d2/file-1lwbjw73y.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwbjw73x/393c202f-082e-4e53-b9d8-9eb03712d9be/f6107ad0-14c6-11ef-a0f4-45babcaa12d2/file-1lwbjw73y.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Hydrocarbons Question 41 English Explanation\"></p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a2db",
@@ -878,9 +964,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "group-14-elements-carbon-family",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>(A) Covalent radius of group 14 elements increases from $$\\mathrm{C}$$ to $$\\mathrm{Pb}$$.</p>\n<p>(B) Electronegativity decreases from $$\\mathrm{C}$$ to $$\\mathrm{Si}$$ and thereafter it remains more or less constant.</p>\n<p>(C) Maximum covalency of $$\\mathrm{C}$$ is 4 as the outermost shell of $$\\mathrm{C}$$ is $$2^{\\text {nd }}$$ shell and it cannot expand its octet. But other elements can expand their covalency due to the availability of vacant d-orbitals.</p>\n<p>(D) Heavier elements do not form $$\\mathrm{p} \\pi-\\mathrm{p} \\pi$$ bonds due to their larger atomic size.</p>\n<p>(E) Carbon can show negative oxidation states when it is covalently bonded to less electronegative elements like $$\\mathrm{CH}_4$$.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29ww2",
@@ -899,9 +987,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "experiments-involving-physical-chemistry",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>Organic compounds run slower than solvent in thin layer chromatography. $$\\mathrm{R}_{\\mathrm{f}}$$ is not an integral value. It is the ratio of distance travelled by the organic compound to that of solvent. $$\\mathrm{R}_{\\mathrm{f}}$$ value of a polar compound is smaller than that of non-polar compound as the polar compound is retained more by the adsorbent than non-polar compound.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29icb",
@@ -920,9 +1010,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "oxidation-and-reduction-reactions",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>Due to inert pair effect $$\\mathrm{Pb}^{2+}$$ is more stable than $$\\mathrm{Pb}^{4+}$$ and $$\\mathrm{Tl}^{+}$$ is more stable than $$\\mathrm{Tl}^{3+}$$. Therefore, $$\\mathrm{Pb}^{4+}$$ and $$\\mathrm{T}^{3+}$$ will function as oxidising agents and easily get reduced to $$\\mathrm{Pb}^{2+}$$ and $$\\mathrm{TI}^{+}$$ respectively.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29nmy",
@@ -941,9 +1033,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "types-of-redox-reactions",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>(A) $$\\stackrel{\\circ}{\\mathrm{N}}_2+\\stackrel{\\circ}{\\mathrm{O}}_2 \\longrightarrow 2 \\mathrm{NO}_{(\\mathrm{g})}$$</p>\n<p>Combination reaction</p>\n<p>(B) $$2 \\mathrm{~Pb}\\left(\\mathrm{NO}_3\\right)_{2(\\mathrm{~s})} \\longrightarrow 2 \\mathrm{PbO}+4 \\mathrm{NO}_2+\\mathrm{O}_2$$</p>\n<p>Decomposition reaction</p>\n<p>(C) $$2 \\mathrm{Na}_{(\\mathrm{s})}+2 \\mathrm{H}_2 \\mathrm{O}(\\mathrm{I}) \\longrightarrow 2 \\mathrm{NaOH}_{(\\mathrm{aq})}+\\mathrm{H}_{2(\\mathrm{~g})}$$</p>\n<p>Displacement reaction</p>\n<p>(D) $$2 \\mathrm{NO}_{2(\\mathrm{~g})}+2 \\mathrm{OH}_{(\\mathrm{g})}^{-} \\longrightarrow \\mathrm{NO}_{2 \\text { (aq) }}^{-}+\\mathrm{NO}_{3(\\text { (qq) }}^{-}+\\mathrm{H}_2 \\mathrm{O}$$</p>\n<p>Nitrogen oxidises and reduces both. So it is a disproportionation reaction.</p>\n<p>$$\\mathrm{A} \\rightarrow(\\mathrm{IV}), \\mathrm{B} \\rightarrow(\\mathrm{I}), \\mathrm{C} \\rightarrow(\\mathrm{II}), \\mathrm{D} \\rightarrow(\\mathrm{III})$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a7vy",
@@ -962,9 +1056,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "physiochemical-trends-in-alkali-metals",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To match List I (Alkali Metals) with List II (Emission Wavelength in nm), we need to know the characteristic emission lines of these elements. Here is the information for the typical emission wavelengths:</p>\n\n<ul>\n\n<li><b>Lithium (Li):</b> 670.8 nm</li>\n\n<li><b>Sodium (Na):</b> 589.2 nm</li>\n\n<li><b>Rubidium (Rb):</b> 780.0 nm</li>\n\n<li><b>Cesium (Cs):</b> 455.5 nm</li>\n\n</ul>\n\n<p>Now let's match these with the given options:</p>\n\n<ul>\n\n<li><b>A. Li (III):</b> 670.8 nm</li>\n\n<li><b>B. Na (I):</b> 589.2 nm</li>\n\n<li><b>C. Rb (IV):</b> 780.0 nm</li>\n\n<li><b>D. Cs (II):</b> 455.5 nm</li>\n\n</ul>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option B<br>\n\n<p>(A)-(III), (B)-(I), (C)-(IV), (D)-(II)</p></p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29j92",
@@ -983,9 +1079,11 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "systematic-analysis-of-anions",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>The $$\\mathrm{Br}^{-}$$ ion present in the salt gives pale yellow ppt. of $$\\mathrm{AgBr}$$ with $$\\mathrm{AgNO}_3$$, insoluble in dil $$\\mathrm{HNO}_3$$ but partially soluble in aq. $$\\mathrm{NH}_4 \\mathrm{OH}$$.</p>\n<p>$$\\mathrm{Br}^{-}+\\mathrm{AgNO}_3 \\rightarrow \\underset{\\text { Pale yellow }}{\\mathrm{AgBr} \\downarrow}+\\mathrm{NO}_3^{-}$$</p>\n<p>$$\\mathrm{AgBr}+2 \\mathrm{NH}_4 \\mathrm{OH} \\rightarrow \\underset{\\text { Partially soluble }}{\\left[\\mathrm{Ag}\\left(\\mathrm{NH}_3\\right)_2\\right] \\mathrm{Br}}+2 \\mathrm{H}_2 \\mathrm{O}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2a2bp",
@@ -1004,169 +1102,191 @@
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "concentration-terms",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>To calculate the molality $(\\mathrm{m})$ of a 3M (molar) aqueous solution of $\\mathrm{NaCl}$, we need to follow certain steps, using the given data and understanding the definitions properly.</p>\n\n<p>Molarity (M) is defined as the number of moles of solute per liter of solution. Molality $(\\mathrm{m})$, on the other hand, is defined as the number of moles of solute per kilogram of solvent. The given density of the solution is $1.25 \\mathrm{~g} \\mathrm{~mL}^{-1}$ which allows us to calculate the mass of the solvent in a given volume of solution.</p>\n\n<p>We know:</p>\n\n<ul>\n\n<li>Molarity (M) of NaCl = $3 \\mathrm{~M}$</li>\n\n<li>Density of NaCl solution = $1.25 \\mathrm{~g} \\mathrm{~mL}^{-1}$</li>\n\n<li>Molar mass of $\\mathrm{NaCl} = \\mathrm{Na} + \\mathrm{Cl} = 23 + 35.5 = 58.5 \\mathrm{~g} \\mathrm{~mol}^{-1}$</li>\n\n</ul>\n\n<p>First, to find the molality, we need to find the moles of NaCl in a given mass of the solvent. Keeping in mind that $3 \\mathrm{~M}$ means there are $3 \\mathrm{~moles}$ of $\\mathrm{NaCl}$ per liter of solution, we consider 1 liter (or 1000 mL) of solution to simplify our calculation, knowing that density can convert volume to mass directly.</p>\n\n<p>The mass of 1 liter of NaCl solution is $1.25 \\mathrm{~g} \\mathrm{~mL}^{-1} \\times 1000 \\mathrm{~mL} = 1250 \\mathrm{~g}$.</p>\n\n<p>Since we have a 3 M solution of NaCl,\n\n<p>$3 \\mathrm{~moles} = \\frac{\\text{mass of the solution} - \\text{mass of solvent}}{\\text{molar mass of NaCl}}$</p></p>\n\n<p>With 3 moles of NaCl, the mass of NaCl present in 1 L solution $= 3 \\mathrm{~moles} \\times 58.5 \\mathrm{~g/mol} = 175.5 \\mathrm{~g}$</p>\n\n<p>The mass of the solvent (water) can be found by subtracting the mass of NaCl from the total mass of the solution.</p>\n\n<p>$\\text{Mass of solvent} = 1250 \\mathrm{~g} - 175.5 \\mathrm{~g} = 1074.5 \\mathrm{~g}$</p>\n\n<p>To convert this mass into kilograms (since molality is expressed per kilogram of solvent),</p>\n\n<p>$1074.5 \\mathrm{~g} = 1.0745 \\mathrm{~kg}$</p>\n\n<p>Finally, the molality $(\\mathrm{m})$,\n\n<p>$\\mathrm{m} = \\frac{\\text{moles of solute}}{\\text{kilograms of solvent}} = \\frac{3 \\mathrm{~moles}}{1.0745 \\mathrm{~kg}}$</p></p>\n\n<p>$\\mathrm{m} \\approx 2.79$</p>\n\n<p>So, the correct answer is</p>\n\n<p><strong>Option D: 2.79 m</strong></p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acik",
       "questionNumber": 51,
       "questionText": "<p>Number of carbocations from the following that are not stabilized by hyperconjugation is _______.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lvb1aupm/b7877bc1-149d-4b6b-a645-edf4a6f5ac8a/08cac5a0-00b2-11ef-be3f-17279d79e67d/file-1lvb1aupn.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lvb1aupm/b7877bc1-149d-4b6b-a645-edf4a6f5ac8a/08cac5a0-00b2-11ef-be3f-17279d79e67d/file-1lvb1aupn.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Basics of Organic Chemistry Question 64 English\"></p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "stability-of-intermediate",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwbnxhco/41d3b7c4-1974-40e9-9ac7-c37e8c5b55fe/be4d7980-14d6-11ef-b3c9-5ba1278f485b/file-1lwbnxhcp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwbnxhco/41d3b7c4-1974-40e9-9ac7-c37e8c5b55fe/be4d7980-14d6-11ef-b3c9-5ba1278f485b/file-1lwbnxhcp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Basics of Organic Chemistry Question 64 English Explanation\"></p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acem",
       "questionNumber": 52,
       "questionText": "<p>Total number of species from the following with central atom utilising $$\\mathrm{sp}^2$$ hybrid orbitals for bonding is ________.</p> <p>$$\\mathrm{NH}_3, \\mathrm{SO}_2, \\mathrm{SiO}_2, \\mathrm{BeCl}_2, \\mathrm{C}_2 \\mathrm{H}_2, \\mathrm{C}_2 \\mathrm{H}_4, \\mathrm{BCl}_3, \\mathrm{HCHO}, \\mathrm{C}_6 \\mathrm{H}_6, \\mathrm{BF}_3, \\mathrm{C}_2 \\mathrm{H}_4 \\mathrm{Cl}_2$$</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "hybridization-and-vsepr-theory",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>$$\\mathrm{SO}_2, \\mathrm{C}_2 \\mathrm{H}_4, \\mathrm{BCl}_3, \\mathrm{HCHO}, \\mathrm{C}_6 \\mathrm{H}_6, \\mathrm{BF}_3$$ are $$s p^2$$ hybridised central atom</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2ackq",
       "questionNumber": 53,
       "questionText": "<p>Consider the following reactions</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lvb196jf/c82ce0c0-ecd0-4dc9-93bf-b42a4b1272c4/da4f82b0-00b1-11ef-be3f-17279d79e67d/file-1lvb196jg.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lvb196jf/c82ce0c0-ecd0-4dc9-93bf-b42a4b1272c4/da4f82b0-00b1-11ef-be3f-17279d79e67d/file-1lvb196jg.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Chemical Bonding &amp; Molecular Structure Question 47 English\"></p>\n<p>The number of protons that do not involve in hydrogen bonding in the product B is _________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "hydrogen-bonding",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\mathrm{NiS + HN{O_3} + HCl\\buildrel {} \\over\n \\longrightarrow \\mathop {NiC{l_2}}\\limits_{(A)}  + S + NO + {H_2}O}$$</p>\n<p>$$\\mathrm{\\mathop {NiC{l_2}}\\limits_{(A)}  + N{H_4}OH +}$$ Dimethylgyoxime $$\\mathrm{\\buildrel {} \\over\n \\longrightarrow \\mathop {Ni{{(dmg)}_2}}\\limits_{(B)}  + N{H_4}Cl + {H_2}O}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwbmse3q/e8123551-b987-47da-b57a-5609937bd1cf/479e5060-14d2-11ef-8218-dfd8f7832166/file-1lwbmse3r.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwbmse3q/e8123551-b987-47da-b57a-5609937bd1cf/479e5060-14d2-11ef-8218-dfd8f7832166/file-1lwbmse3r.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Chemical Bonding &amp; Molecular Structure Question 47 English Explanation\"></p>\n<p>Total 12 proton do not involve in H-bond</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2abd4",
       "questionNumber": 54,
       "questionText": "<p>Consider the two different first order reactions given below</p>\n<p>$$\\begin{aligned}\n& \\mathrm{A}+\\mathrm{B} \\rightarrow \\mathrm{C} \\text { (Reaction 1) } \\\\\n& \\mathrm{P} \\rightarrow \\mathrm{Q} \\text { (Reaction 2) }\n\\end{aligned}$$</p>\n<p>The ratio of the half life of Reaction 1 :  Reaction 2 is $$5: 2$$ If $$t_1$$ and $$t_2$$ represent the time taken to complete $$2 / 3^{\\text {rd }}$$ and $$4 / 5^{\\text {th }}$$ of Reaction 1 and Reaction 2 , respectively, then the value of the ratio $$t_1: t_2$$ is _________ $$\\times 10^{-1}$$ (nearest integer).\n[Given : $$\\log _{10}(3)=0.477$$ and $$\\log _{10}(5)=0.699$$]</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "integrated-rate-law-equations",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\mathrm{A+B \\rightarrow C}$$ Reaction .... (1)</p>\n<p>$$\\mathrm{P} \\rightarrow \\mathrm{Q} \\quad$$ Reaction .... (2)</p>\n<p>$$\\frac{\\left(t_{\\frac{1}{2}}\\right)_1}{\\left(t_{\\frac{1}{2}}\\right)_2}=\\frac{k}{k_1}= \\frac{5}{2}$$</p>\n<p>$$\\begin{aligned}\n& \\frac{\\frac{t_2}{3}}{t_{\\frac{4}{5}}^5}=\\frac{k_2}{k_1} \\frac{\\log 3}{\\log 5} \\\\\n& =\\left(\\frac{5}{2}\\right) \\frac{0.477}{0.699}=1.7 \\\\\n& =17 \\times 10^{-1} \\\\\n& =x=17\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2abdo",
       "questionNumber": 55,
       "questionText": "<p>An amine $$(\\mathrm{X})$$ is prepared by ammonolysis of benzyl chloride. On adding p-toluenesulphonyl chloride to it the solution remains clear. Molar mass of the amine $$(\\mathrm{X})$$ formed is _________ $$\\mathrm{g} \\mathrm{mol}^{-1}$$.</p>\n<p>(Given molar mass in $$\\mathrm{gmol}^{-1} \\mathrm{C}: 12, \\mathrm{H}: 1, \\mathrm{O}: 16, \\mathrm{~N}: 14$$)</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "aliphatic-amines",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwbneomw/80cd3ff6-b58f-4bd3-ac16-0f6be1ccb3a3/b38e3b80-14d4-11ef-8218-dfd8f7832166/file-1lwbneomx.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwbneomw/80cd3ff6-b58f-4bd3-ac16-0f6be1ccb3a3/b38e3b80-14d4-11ef-8218-dfd8f7832166/file-1lwbneomx.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Compounds Containing Nitrogen Question 51 English Explanation\"></p>\n<p>Molar mass of amine $$=287 \\mathrm{~g} / \\mathrm{mol}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2abeg",
       "questionNumber": 56,
       "questionText": "<p>Among $$\\mathrm{VO}_2^{+}, \\mathrm{MnO}_4^{-}$$ and $$\\mathrm{Cr}_2 \\mathrm{O}_7^{2-}$$, the spin-only magnetic moment value of the species with least oxidising ability is __________ BM (Nearest integer).</p>\n<p>(Given atomic member $$\\mathrm{V}=23, \\mathrm{Mn}=25, \\mathrm{Cr}=24$$)</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "properties-of-transition-elements",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>In order to determine the spin-only magnetic moment value of the species with the least oxidizing ability, we first need to analyze their oxidation states and electron configurations.</p>\n\n<p>1. $$\\mathrm{VO}_2^{+}$$:</p>\n\n<p>For vanadium in $$\\mathrm{VO}_2^{+}$$, the oxidation state is +5. The electronic configuration of V is $$[Ar] \\, 3d^3 \\, 4s^2$$. Thus, in +5 oxidation state, vanadium will have zero d-electrons (since it loses 5 electrons) and, consequently, $$\\mathrm{VO}_2^{+}$$ is diamagnetic (since zero unpaired electrons).</p>\n\n<p>2. $$\\mathrm{MnO}_4^{-}$$:</p>\n\n<p>For manganese in $$\\mathrm{MnO}_4^{-}$$, the oxidation state is +7. The electronic configuration of Mn is $$[Ar] \\, 3d^5 \\, 4s^2$$. Thus, in +7 oxidation state, manganese will have zero d-electrons (since it loses 7 electrons) and, consequently, $$\\mathrm{MnO}_4^{-}$$ is also diamagnetic (since zero unpaired electrons).</p>\n\n<p>3. $$\\mathrm{Cr}_2 \\mathrm{O}_7^{2-}$$:</p>\n\n<p>For chromium in $$\\mathrm{Cr}_2 \\mathrm{O}_7^{2-}$$, we have two chromium atoms. Each chromium is in the +6 oxidation state. The electronic configuration of Cr is $$[Ar] \\, 3d^5 \\, 4s^1$$. Thus, in +6 oxidation state, each chromium will have zero d-electrons (since it loses 6 electrons) and, consequently, $$\\mathrm{Cr}_2 \\mathrm{O}_7^{2-}$$ is also diamagnetic (since zero unpaired electrons).</p>\n\n<p>From these observations, we note that all the species we analyzed are diamagnetic. However, to identify the species with the least oxidizing ability, we look at their standard reduction potentials (E° values).\n\n<p>Typically, the oxidizing ability increases with increasing positive E° values. Given the nature of these species, we can infer that:</p></p>\n\n<ul>\n\n<li>$$\\mathrm{MnO}_4^{-}$$ is a very strong oxidizing agent (very high E° value).</li>\n\n<li>$$\\mathrm{Cr}_2 \\mathrm{O}_7^{2-}$$ is also a strong oxidizing agent (high but less than $$\\mathrm{MnO}_4^{-}$$).</li>\n\n<li>$$\\mathrm{VO}_2^{+}$$ has a moderate oxidizing ability (lesser E° value than both $$\\mathrm{MnO}_4^{-}$$ and $$\\mathrm{Cr}_2 \\mathrm{O}_7^{2-}$$).</li>\n\n</ul>\n\n<p>Therefore, among the given species, $$\\mathrm{VO}_2^{+}$$ has the least oxidizing ability.</p>\n\n<p>As mentioned previously, $$\\mathrm{VO}_2^{+}$$ has zero unpaired electrons, making it diamagnetic. The spin-only magnetic moment is given by the formula:</p>\n\n<p>$$\\mu = \\sqrt{n(n+2)}$$</p>\n\n<p>where $$n$$ is the number of unpaired electrons.</p>\n\n<p>For $$\\mathrm{VO}_2^{+}$$, $$n=0$$, thus:</p>\n\n<p>$$\\mu = \\sqrt{0(0+2)} = 0 \\ \\text{BM}$$</p>\n\n<p>Given the options, the nearest integer value of the spin-only magnetic moment for the species with the least oxidizing ability (which is $$\\mathrm{VO}_2^{+}$$) is indeed:</p>\n\n<p><strong>0 BM</strong></p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acrn",
       "questionNumber": 57,
       "questionText": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lvb1unlu/2102956c-eac8-471e-8f0f-b7c0988ec3c3/2f7c8e20-00b4-11ef-be3f-17279d79e67d/file-1lvb1unlv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lvb1unlu/2102956c-eac8-471e-8f0f-b7c0988ec3c3/2f7c8e20-00b4-11ef-be3f-17279d79e67d/file-1lvb1unlv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Haloalkanes and Haloarenes Question 37 English\"></p>\n<p>The ratio of number of oxygen atoms to bromine atoms in the product Q is _________ $$\\times 10^{-1}$$.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "haloarenes",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwbn1tjk/6e4eead1-60a6-4f18-b682-bd836a186aa0/4dd3dd00-14d3-11ef-8218-dfd8f7832166/file-1lwbn1tjl.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwbn1tjk/6e4eead1-60a6-4f18-b682-bd836a186aa0/4dd3dd00-14d3-11ef-8218-dfd8f7832166/file-1lwbn1tjl.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Haloalkanes and Haloarenes Question 37 English Explanation\"></p>\n<p>Number of O-atoms $$=3$$</p>\n<p>Number of $$\\mathrm{Br}$$-atoms $$=2$$</p>\n<p>$$\\begin{aligned}\n\\text { Required ratio } &amp; =\\frac{3}{2}=1.5 \\\\\n&amp; =15 \\times 10^{-1}\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acph",
       "questionNumber": 58,
       "questionText": "<p>When '$$x$$' $$\\times 10^{-2} \\mathrm{~mL}$$ methanol (molar mass $$=32 \\mathrm{~g}$$' density $$=0.792 \\mathrm{~g} / \\mathrm{cm}^3$$) is added to $$100 \\mathrm{~mL}$$. water (density $$=1 \\mathrm{~g} / \\mathrm{cm}^3$$), the following diagram is obtained.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lvb1k87b/c33d3f4b-f9c6-44b3-9ba4-73062ad12fa1/0d7f0970-00b3-11ef-be3f-17279d79e67d/file-1lvb1k87c.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lvb1k87b/c33d3f4b-f9c6-44b3-9ba4-73062ad12fa1/0d7f0970-00b3-11ef-be3f-17279d79e67d/file-1lvb1k87c.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Solutions Question 46 English\"></p>\n<p>$$x=$$ ________ (nearest integer).</p>\n<p>[Given : Molal freezing point depression constant of water at $$273.15 \\mathrm{~K}$$ is $$1.86 \\mathrm{~K} \\mathrm{~kg} \\mathrm{~mol}^{-1}$$]</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "depression-in-freezing-point",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& \\Delta T_f=2.5^{\\circ} \\mathrm{C} \\\\\n& \\Delta T_f=i \\times k_f \\times m \\\\\n& 2.5=1 \\times 1.86 \\times \\frac{n_B}{0.1} \\\\\n& n_B=\\frac{2.5 \\times 0.1}{1.86}=0.1344 \\mathrm{~mol} \\\\\n& \\text { mass of methanol }=0.1344 \\times 32=4.3 \\mathrm{~g} \\\\\n& d=\\frac{m}{v} \\\\\n& v=\\frac{m}{d} \\\\\n& v=\\frac{4.3}{0.792} \\mathrm{~mL} \\\\\n& =5.43 \\mathrm{~mL} \\\\\n& =543 \\times 10^{-2} \\mathrm{~mL} \\\\\n& x=543\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2abca",
       "questionNumber": 59,
       "questionText": "<p>For hydrogen atom, energy of an electron in first excited state is $$-3.4 \\mathrm{~eV}, \\mathrm{K} . \\mathrm{E}$$. of the same electron of hydrogen atom is $$x \\mathrm{~eV}$$. Value of $$x$$ is _________ $$\\times 10^{-1} \\mathrm{~eV}$$. (Nearest integer)</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "bohrs-model-for-hydrogen-atom",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>To determine the kinetic energy (K.E.) of an electron in the first excited state of a hydrogen atom, we need to understand the relationship between the total energy, potential energy, and kinetic energy in an atom.\n\n<p>In a hydrogen atom, the total energy (E) of an electron in the nth state is given by:</p></p>\n\n<p>\n\n<p>$$E_n = - \\frac{13.6}{n^2} \\mathrm{~eV}$$</p>\n\n</p>\n\n<p>For the first excited state, $ n = 2 $. So, plugging in the value:</p>\n\n<p>\n\n<p>$$E_2 = - \\frac{13.6}{2^2} = - \\frac{13.6}{4} = - 3.4 \\mathrm{~eV}$$</p>\n\n</p>\n\n<p>This value represents the total energy (E) of the electron in the first excited state. According to the virial theorem for an electron in a Coulomb potential (as in a hydrogen atom), the kinetic energy (K.E.) is equal to the negative of the total energy:</p>\n\n<p>\n\n<p>$$\\mathrm{K.E.} = - E$$</p>\n\n</p>\n\n<p>Substituting the total energy we calculated:</p>\n\n<p>\n\n<p>$$\\mathrm{K.E.} = - (-3.4) = 3.4 \\mathrm{~eV}$$</p>\n\n</p>\n\n<p>Now, we need to find the value of $$x$$ in the form of $$x \\times 10^{-1} \\mathrm{~eV}$$.</p>\n\n<p>\n\n<p>$$3.4 \\mathrm{~eV} = 34 \\times 10^{-1} \\mathrm{~eV}$$</p>\n\n</p>\n\n<p>Therefore, the value of $$x$$ is 34.</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2acik",
       "questionNumber": 60,
       "questionText": "<p>Number of carbocations from the following that are not stabilized by hyperconjugation is _______.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lvb1aupm/b7877bc1-149d-4b6b-a645-edf4a6f5ac8a/08cac5a0-00b2-11ef-be3f-17279d79e67d/file-1lvb1aupn.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lvb1aupm/b7877bc1-149d-4b6b-a645-edf4a6f5ac8a/08cac5a0-00b2-11ef-be3f-17279d79e67d/file-1lvb1aupn.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Basics of Organic Chemistry Question 64 English\"></p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Chemistry",
       "topic": "stability-of-intermediate",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwbnxhco/41d3b7c4-1974-40e9-9ac7-c37e8c5b55fe/be4d7980-14d6-11ef-b3c9-5ba1278f485b/file-1lwbnxhcp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwbnxhco/41d3b7c4-1974-40e9-9ac7-c37e8c5b55fe/be4d7980-14d6-11ef-b3c9-5ba1278f485b/file-1lwbnxhcp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Chemistry - Basics of Organic Chemistry Question 64 English Explanation\"></p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294m1",
@@ -1185,9 +1305,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "lines-in-space",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwad7urv/960c0402-e139-4dd9-89a4-53df9b260717/11b135b0-1420-11ef-90c1-6758c45d5635/file-1lwad7urw.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwad7urv/960c0402-e139-4dd9-89a4-53df9b260717/11b135b0-1420-11ef-90c1-6758c45d5635/file-1lwad7urw.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Mathematics - 3D Geometry Question 68 English Explanation\"></p>\n<p>$$\\text { Line } L \\Rightarrow \\frac{x-0}{1}=\\frac{y-3}{1}=\\frac{z-1}{-1}=\\mu$$</p>\n<p>Point $$M(\\mu, \\mu+3,-\\mu+1)$$</p>\n<p>Direction vector of $$Q M=(\\mu-3, \\mu+6,-\\mu)$$</p>\n<p>Direction vector of line $$L=(1,1,-1)$$</p>\n<p>Both direction vector are perpendicular so</p>\n<p>$$\\begin{aligned}\n&amp; 1 \\times(\\mu-3)+1 \\times(\\mu+6)-1 \\times(-\\mu)=0 \\\\\n&amp; \\mu=-1\n\\end{aligned}$$</p>\n<p>Point $$M(-1,2,2)$$ midpoint of $$P Q$$</p>\n<p>So point $$P(\\alpha, \\beta, \\gamma)=(-5,7,3)$$</p>\n<p>Area of $$\\triangle P Q R=\\frac{1}{2}|\\overrightarrow{P Q} \\times \\overrightarrow{Q R}|$$</p>\n<p>$$\\begin{aligned}\n&amp; \\overrightarrow{P Q}=(8,-10,-2) \\\\\n&amp; \\overrightarrow{Q R}=(-1,8,-2) \\\\\n&amp; \\overrightarrow{P Q} \\times \\overrightarrow{Q R}=\\left|\\begin{array}{ccc}\n\\hat{i} &amp; \\hat{j} &amp; \\hat{k} \\\\\n8 &amp; -10 &amp; -2 \\\\\n-1 &amp; 8 &amp; -2\n\\end{array}\\right|=36 \\hat{i}+18 \\hat{j}+54 \\hat{k}\n\\end{aligned}$$</p>\n<p>Area of $$\\triangle P Q R=\\lambda$$</p>\n<p>$$\\lambda=\\frac{1}{2} \\sqrt{(36)^2+(18)^2+(54)^2}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\lambda^2=\\frac{1}{4}(4536) \\\\\n&amp; \\lambda^2=1134 \\\\\n&amp; \\lambda^2=14 K \\text { (given) } \\\\\n&amp; 14 K=1134 \\\\\n&amp; K=\\frac{1134}{14}=81 \\\\\n&amp; K=81\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294kx",
@@ -1206,9 +1328,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "area-bounded-between-the-curves",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\left\\{(x, y): \\frac{a}{x^2} \\leq y \\leq \\frac{1}{x}, 1 \\leq x \\leq 2,0< a<1\\right\\}$$</p>\n<p>$$ \\Rightarrow \\int\\limits_1^2 {\\left( {{1 \\over x} - {a \\over {{x^2}}}} \\right)dx = \\left| {\\ln |x| + {a \\over x}} \\right|_1^2} $$</p>\n<p>$$\\begin{aligned}\n& \\left(\\ln 2+\\frac{a}{2}\\right)-(\\ln 1+a)=\\ln 2-\\frac{a}{2} \\\\\n& \\Rightarrow \\quad \\frac{a}{2}=\\frac{1}{7} \\\\\n& \\Rightarrow \\quad a=\\frac{2}{7} \\\\\n& \\quad 7 a-3=\\frac{2}{7} \\times 7-3=-1\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294qv",
@@ -1227,9 +1351,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "position-of-a-point-with-respect-to-circle",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwabk4bk/5b6f7bc9-3122-44bf-ae55-efc3ca540e79/9484e510-1419-11ef-b3d9-7392e0033caf/file-1lwabk4bl.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwabk4bk/5b6f7bc9-3122-44bf-ae55-efc3ca540e79/9484e510-1419-11ef-b3d9-7392e0033caf/file-1lwabk4bl.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Mathematics - Circle Question 27 English Explanation\"></p>\n<p>Slope of $$B F=\\left(m_{B F}\\right)=\\frac{3-1}{8-6}=1$$</p>\n<p>$$\\begin{aligned}\n&amp; m_{A C}=\\frac{k+2}{h-5}=-1(A C \\perp B F) \\\\\n&amp; \\Rightarrow k+2=5-h \\\\\n&amp; \\Rightarrow k=3-h \\quad \\ldots \\text { (i) } \\\\\n&amp; m_{A D}=\\frac{1+2}{6-5}=3 \\\\\n&amp; m_{B C}=\\frac{k-3}{h-8}=-\\frac{1}{3}(A D \\perp B C) \\\\\n&amp; \\Rightarrow 3 k-9=8-h \\quad \\ldots \\text { (ii) }\n\\end{aligned}$$</p>\n<p>From (i) &amp; (ii)</p>\n<p>$$h=-4, k=7$$</p>\n<p>Now, $$h^2+k^2=16+49=65$$</p>\n<p>$$h^2+k^2-65=0$$</p>\n<p>Locus is $$x^2+y^2-65=0$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2948r",
@@ -1248,9 +1374,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "modulus-of-complex-numbers",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& \\left|\\frac{z_1-2 z_2}{\\frac{1}{2}-z_1 \\bar{z}_2}\\right|=2 \\\\\n& \\left|z_1-2 z_2\\right|=\\left|1-2 z_1 \\bar{z}_2\\right| \\\\\n& \\Rightarrow\\left(z_1-2 z_2\\right)\\left(\\bar{z}_1-2 \\bar{z}_2\\right)=\\left(1-2 z_1 \\bar{z}_2\\right)\\left(1-2 \\bar{z}_1 z_2\\right) \\\\\n& \\Rightarrow\\left|z_1\\right|^2+4\\left|z_2\\right|^2-2 \\bar{z}_1 z_2-2 \\bar{z}_2 z_1 \\\\\n& \\quad=1+4\\left|z_1\\right|^2\\left|z_2\\right|^2-2 z_1 \\bar{z}_2-2 \\bar{z}_1 z_2 \\\\\n& \\Rightarrow\\left|z_1\\right|^2+4\\left|z_2\\right|^2-4\\left|z_1\\right|^2\\left|z_2\\right|^2-1=0 \\\\\n& \\Rightarrow\\left(\\left|z_1\\right|^2-1\\right)\\left(1-4\\left|z_2\\right|^2\\right)=0 \\\\\n& \\Rightarrow\\left|z_1\\right|=1 \\text { and }\\left|z_2\\right|=\\frac{1}{2}\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294oh",
@@ -1269,9 +1397,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-      "difficulty": "hard",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& \\frac{d y}{d x}=\\frac{(2+\\alpha) x-\\beta y+2}{\\beta x-2 \\alpha y-(\\beta \\gamma-4 \\alpha)} \\\\\n& \\beta x d y-2 \\alpha y d y-(\\beta \\gamma-4 \\alpha) d y \\\\\n& =2 x d x+\\alpha x d x-\\beta y d x+2 d x \\\\\n& \\beta \\int(x d y+y d y)-\\alpha y^2-(\\beta \\gamma-4 x) y=x^2+\\frac{\\alpha x^2}{2}+2 x \\\\\n& \\beta x y-\\alpha y^2-(\\beta \\gamma-4 \\alpha) y=x^2+\\frac{\\alpha x^2}{2}+2 x \\\\\n& \\left(1+\\frac{\\alpha}{2}\\right) x^2+\\alpha y^2-\\beta x y+2 x+(\\beta \\gamma-4 \\alpha) y=0 \\\\\n& \\because \\text { this represents circle passing through origin } \\\\\n& \\Rightarrow \\beta=0 \\text { and } 1+\\frac{\\alpha}{2}=\\alpha \\\\\n& \\Rightarrow \\alpha=2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\therefore C: 2 x^2+2 y^2+2 x-8 y=0 \\\\\n& x^2+y^2+x-4 y=0 \\\\\n& \\text { Radius }=\\sqrt{\\frac{1}{4}+4-0} \\\\\n& \\quad=\\frac{\\sqrt{17}}{2}\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294td",
@@ -1290,9 +1420,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "differentiation-of-composite-function",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>To determine $$g^{\\prime}(0)$$, we start by applying the chain rule and product rule to find the derivative of the given function $$g(x) = h\\left(\\mathrm{e}^x\\right) \\mathrm{e}^{h(x)}$$.</p>\n\n<p>The product rule states that if we have two functions $$u(x)$$ and $$v(x)$$, then the derivative of their product is given by:</p>\n\n<p>$$ (u(x)v(x))' = u'(x)v(x) + u(x)v'(x) $$</p>\n\n<p>Let's denote $$u(x) = h(\\mathrm{e}^x)$$ and $$v(x) = \\mathrm{e}^{h(x)}$$.</p>\n\n<p>First, we need to find $$u'(x)$$ and $$v'(x)$$. Using the chain rule, we find:</p>\n\n<p>$$ u'(x) = \\frac{d}{dx}h(\\mathrm{e}^x) = h'(\\mathrm{e}^x) \\cdot \\frac{d}{dx}(\\mathrm{e}^x) = h'(\\mathrm{e}^x) \\cdot \\mathrm{e}^x $$</p>\n\n<p>Now, the derivative of $$v(x)$$ is:</p>\n\n<p>$$ v'(x) = \\frac{d}{dx}(\\mathrm{e}^{h(x)}) = \\mathrm{e}^{h(x)} \\cdot h'(x) $$</p>\n\n<p>Using the product rule, we get the derivative of $$g(x)$$:</p>\n\n<p>$$ g'(x) = u'(x) v(x) + u(x) v'(x) $$</p>\n\n<p>Substituting $$u(x)$$, $$v(x)$$, $$u'(x)$$, and $$v'(x)$$ into the above expression, we get:</p>\n\n<p>$$ g'(x) = \\left( h'(\\mathrm{e}^x) \\mathrm{e}^x \\right) \\mathrm{e}^{h(x)} + \\left( h(\\mathrm{e}^x) \\right) \\left( \\mathrm{e}^{h(x)} h'(x) \\right) $$</p>\n\n<p>Next, we need to evaluate this at $$x = 0$$:</p>\n\n<p>First, we know that:</p>\n\n<p>$$ h(0) = 0 $$</p>\n\n<p>$$ h(1) = 1 $$</p>\n\n<p>$$ h'(0) = 2 $$</p>\n\n<p>$$ h'(1) = 2 $$</p>\n\n<p>Substituting $$x = 0$$ into the expressions, we get:</p>\n\n<p>$$ u(0) = h(\\mathrm{e}^0) = h(1) = 1 $$</p>\n\n<p>$$ v(0) = \\mathrm{e}^{h(0)} = \\mathrm{e}^0 = 1 $$</p>\n\n<p>$$ u'(0) = h'(\\mathrm{e}^0) \\mathrm{e}^0 = h'(1) \\cdot 1 = 2 $$</p>\n\n<p>$$ v'(0) = \\mathrm{e}^{h(0)} h'(0) = \\mathrm{e}^0 \\cdot 2 = 2 $$</p>\n\n<p>Therefore, evaluating $$g'(0)$$:</p>\n\n<p>$$ g'(0) = \\left( u'(0) v(0) \\right) + \\left( u(0) v'(0) \\right) $$</p>\n\n<p>$$ g'(0) = \\left( 2 \\cdot 1 \\right) + \\left( 1 \\cdot 2 \\right) $$</p>\n\n<p>$$ g'(0) = 2 + 2 = 4 $$</p>\n\n<p>Thus, the value of $$g^{\\prime}(0)$$ is 4, which corresponds to Option A.</p>\n\n<p>The correct answer is <strong>Option A: 4</strong>.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29471",
@@ -1311,9 +1443,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "range",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$f\\left(\\frac{1}{\\pi}\\right)< f\\left(\\frac{1}{e}\\right) \\quad \\text { as } \\frac{1}{\\pi}<\\frac{1}{e}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow\\left(\\frac{1}{1}\\right)^{\\frac{2}{\\pi}}<\\left(\\frac{1}{\\frac{1}{e}}\\right)^{\\frac{2}{e}} \\\\\n& \\Rightarrow(\\pi)^{\\frac{2}{\\pi}}<(e)^{\\frac{2}{e}} \\\\\n& \\Rightarrow \\pi^e < e^\\pi\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294cr",
@@ -1332,9 +1466,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "range",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& f(x)=\\frac{1}{7-\\sin 5 x} \\\\\\\\\n& -1 \\leq \\sin 5 x \\leq 1 \\\\\\\\\n& -1 \\leq-\\sin 5 x \\leq 1 \\\\\\\\\n& -1+7 \\leq 7-\\sin 5 x \\leq 1+7 \\\\\\\\\n& 6 \\leq 7-\\sin 5 x \\leq 8 \\\\\\\\\n& \\frac{1}{8} \\leq \\frac{1}{7-\\sin 5 x} \\leq \\frac{1}{6} \\\\\\\\\n& \\frac{1}{8} \\leq f(x) \\leq \\frac{1}{6} \\\\\\\\\n& \\text { Range }=\\left[\\frac{1}{8}, \\frac{1}{6}\\right]\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294vs",
@@ -1353,9 +1489,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "standard-integral",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& \\int \\frac{1}{a^2 \\sin ^2 x+b^2 \\cos ^2 x} d x=\\frac{1}{12} \\tan ^{-1}(3 \\tan x)+c \\\\\n& I=\\int \\frac{\\sec ^2 x}{b^2+a^2 \\tan ^2 x} d x \\\\\n& \\tan x=t \\\\\n& \\Rightarrow \\sec ^2 x d x=d t \\\\\n& I=\\int \\frac{d t}{b^2+a^2 t^2} \\\\\n& =\\frac{1}{b a} \\tan ^{-1}\\left(\\frac{a t}{b}\\right)+c \\\\\n& I=\\frac{1}{a b} \\tan ^{-1}\\left(\\frac{a}{b} \\tan x\\right)+c \\\\\n& \\Rightarrow a b=12 \\text { and } \\frac{a}{b}=3\\\\\n& \\Rightarrow a^2=36 \\text { and } b^2=4\\\\\n& \\Rightarrow \\text { Maximum value of } a \\sin x+b \\cos x \\text { is } \\sqrt{a^2+b^2}\n\\end{aligned}$$</p>\n<p>$$\\quad=\\sqrt{36+4}$$</p>\n<p>$$\\quad=\\sqrt{40}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294dv",
@@ -1374,9 +1512,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "limits-of-algebric-function",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\mathop {\\lim }\\limits_{n \\to \\infty } {{({1^2} - 1)(n - 1) + ({2^2} - 2)(n - 2) + ... + \\left( {{{(n - 1)}^2} - (n - 1)} \\right) \\times 1} \\over {({1^3} + {2^3} + ... + {n^3}) - ({1^2} + {2^2} + ... + {n^2})}}$$</p>\n<p>$$\\begin{aligned}\n& \\text { Numerator }=\\sum_{r=1}^{n-1}\\left((r-1)^2-(r-1)\\right)(n-r) \\\\\n& =\\sum_{r=1}^{n-1}(r-1)-(r-2)(n-r) \\\\\n& =\\sum_{r=1}^{n-1}-r^3+(n+3) r^2-(2+3 n) r+2 n\n\\end{aligned}$$</p>\n<p>We will take term with the greatest power of $$n$$</p>\n<p>$$=\\frac{-1}{4} n^4+\\frac{1}{3} n^4=\\frac{1}{12} n^4$$</p>\n<p>$$\\begin{aligned}\n& \\text { Denominator }=\\sum_{r=1}^n r^3-\\sum_{r=1}^n r^2 \\\\\n& =\\left(\\frac{n(n+1)}{2}\\right)^2-\\left(\\frac{n(n+1)(2 n+1)}{6}\\right)\n\\end{aligned}$$</p>\n<p>Greatest power of $$n$$ is $$\\frac{n^4}{4}$$</p>\n<p>$$\\lim _\\limits{n \\rightarrow \\infty} \\frac{\\frac{1}{12} n^4}{\\frac{n^4}{4}}=\\frac{1}{3}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294f8",
@@ -1395,9 +1535,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "adjoint-of-a-matrix",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& |A|=3 \\\\\n& \\left|\\operatorname{adj}\\left(-4 \\operatorname{adj}\\left(-3 \\operatorname{adj}\\left(3 \\operatorname{adj}(2 A)^{-1}\\right)\\right)\\right)\\right| \\\\\n& =\\left|-4 \\operatorname{adj}\\left(-3 \\operatorname{adj}\\left(3 \\operatorname{adj}\\left((2 A)^{-1}\\right)\\right)\\right)\\right|^2\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& =4^6\\left|-3 \\operatorname{adj}\\left(\\operatorname{aadj}\\left((2 A)^{-1}\\right)\\right)\\right|^4 \\\\\n& =4^6 \\cdot 3^{12}\\left|\\operatorname{aadj}\\left((2 A)^{-1}\\right)\\right|^8 \\\\\n& =4^6 \\cdot 3^{12} \\cdot 3^{24}\\left|(2 A)^{-1}\\right|^{16} \\\\\n& =4^6 \\cdot 3^{36} 2^{-48}\\left|A^{-1}\\right|^{16} \\\\\n& =\\frac{2^{-36} 3^{36}}{3^{16}}=2^{-36} 3^{20} \\\\\n& m=-36 \\\\\n& n=20 \\\\\n& m+2 n=4\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294sf",
@@ -1416,9 +1558,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "number-of-permutations",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>NAGPUR</p>\n<p>Word at $$315^{\\text {th }}$$ position</p>\n<p>$$\\begin{aligned}\n& \\text { A...... }=5!=120 \\\\\n& \\text { G....... }=5!=120 \\\\\n& \\text { NA..... }=4!=24 \\\\\n& \\text { NG..... }=4!=24 \\\\\n& \\text { NP..... }=4!=24\n\\end{aligned}$$</p>\n<p>..... Till 312 words</p>\n<p>$$313^{\\text {th }} \\text { word }=\\text { NRAGPU }$$</p>\n<p>$$314^{\\text {th }}$$ word $$=$$ $$\\mathrm{NRAGUP}$$</p>\n<p>$$315^{\\text {th }} \\text { word }=\\text { NRAPGU }$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294ut",
@@ -1437,9 +1581,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "number-of-combinations",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>Given $0 \\leq r \\leq n$. If $\\binom{n+1}{r+1} : \\binom{n}{r} : \\binom{n-1}{r-1} = 55 : 35 : 21$, then we are to determine the value of $2n + 5r$.</p>\n\n<h3>Step-by-Step Solution:</h3>\n\n<ol>\n<li>Write the given proportions involving binomial coefficients:</li>\n</ol>\n<p>$    \\frac{n+1}{r+1} \\times \\binom{n}{r} : \\binom{n}{r} : \\frac{r}{n} \\times \\binom{n}{r} = 55 : 35 : 21    $</p>\n\n<ol>\n<li>Simplify the proportions:</li>\n</ol>\n<p>$    \\frac{n+1}{r+1} = \\frac{55}{35} \\quad \\text{and} \\quad \\frac{n}{r} = \\frac{35}{21}    $</p>\n\n<ol>\n<li>From the simplified ratios, we establish the following two equations:</li>\n</ol>\n<p>$    \\frac{n+1}{r+1} = \\frac{11}{7} \\quad \\Rightarrow \\quad 7(n+1) = 11(r+1) \\quad \\Rightarrow \\quad 7n - 11r = 4 \\quad \\text{.... (1)}    $</p>\n\n<p>$    \\frac{n}{r} = \\frac{5}{3} \\quad \\Rightarrow \\quad 3n = 5r \\quad \\Rightarrow \\quad 3n - 5r = 0 \\quad \\text{.... (2)}    $</p>\n\n<ol>\n<li>Solve equations (1) and (2) simultaneously:</li>\n</ol>\n<ul>\n<li>From equation (2), solve for $n$:</li>\n</ul>\n<p>$      3n = 5r \\quad \\Rightarrow \\quad n = \\frac{5r}{3}      $</p>\n\n<ul>\n<li>Substitute $n$ into equation (1):</li>\n</ul>\n<p>$      7 \\left(\\frac{5r}{3}\\right) - 11r = 4 \\quad \\Rightarrow \\quad \\frac{35r}{3} - 11r = 4      $</p>\n\n<p>$      \\frac{35r - 33r}{3} = 4 \\quad \\Rightarrow \\quad \\frac{2r}{3} = 4 \\quad \\Rightarrow \\quad 2r = 12 \\quad \\Rightarrow \\quad r = 6      $</p>\n\n<ul>\n<li>Substituting $r$ back to find $n$:</li>\n</ul>\n<p>$      n = \\frac{5 \\times 6}{3} = 10      $</p>\n\n<ol>\n<li>Compute $2n + 5r$:</li>\n</ol>\n<p>$    2n + 5r = 2 \\times 10 + 5 \\times 6 = 20 + 30 = 50    $</p>\n\n<p>Thus, the value of $2n + 5r$ is 50.</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294g8",
@@ -1458,9 +1604,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "classical-defininition-of-probability",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>We have 3 letters and 5 addresses, where 3 letters are posted to exactly 2 addresses. First, we will select 2 addresses in $${ }^5 C_2$$ ways.</p>\n<p>Now, 3 letters can be posted to exactly 2 addresses in 6 ways.</p>\n<p>$$\\begin{aligned}\n\\therefore \\text { Probability }=\\frac{{ }^5 C_2 \\times 6}{5^3} & \\\\\n& =\\frac{60}{125}=\\frac{12}{25}\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294nj",
@@ -1479,9 +1627,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "geometric-progression",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwac04ho/c0187de2-d2dd-45ec-8dc9-5238b7084f24/51988fc0-141b-11ef-aad1-15919f5484e3/file-1lwac04hp.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwac04ho/c0187de2-d2dd-45ec-8dc9-5238b7084f24/51988fc0-141b-11ef-aad1-15919f5484e3/file-1lwac04hp.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Mathematics - Sequences and Series Question 64 English Explanation\"></p>\n<p>$$\\triangle A B C$$ is an equilateral triangle having side $$=a$$ unit</p>\n<p>Now, perimeter $$=$$ sum of all sides $$=3 a$$</p>\n<p>Area $$=\\frac{\\sqrt{3}}{4} a^2$$</p>\n<p>Now, $$\\ln \\triangle D E F, D E=\\frac{a}{2}=E F=D F$$</p>\n<p>$$\\begin{aligned}\n&amp; \\text { Perimeter }=3 \\times \\frac{a}{2}=\\frac{3 a}{2} \\\\\n&amp; \\text { Area }=\\frac{\\sqrt{3}}{4} \\times\\left(\\frac{a}{2}\\right)^2=\\frac{\\sqrt{3} a^2}{16}\n\\end{aligned}$$</p>\n<p>Now, $$P=3 a+\\frac{3 a}{2}+\\frac{3 a}{4}+\\cdots$$</p>\n<p>$$Q=\\frac{\\sqrt{3}}{4} a^2+\\frac{\\sqrt{3}}{16} a^2+\\frac{\\sqrt{3}}{64} a^2+\\cdots$$</p>\n<p>$$P=\\frac{3 a}{1-\\frac{1}{2}}=3 a \\times 2 \\Rightarrow P=6 a \\quad \\text{.... (i)}$$</p>\n<p>$$Q=\\frac{\\frac{\\sqrt{3}}{4} a^2}{1-\\frac{1}{4}}=\\frac{4}{3} \\times \\frac{\\sqrt{3}}{4} a^2 \\quad Q=\\frac{\\sqrt{3}}{3} a^2 \\quad \\text{.... (ii)}$$</p>\n<p>From equation (i) &amp; (ii)</p>\n<p>$$\\begin{aligned}\n&amp; P=6 a \\\\\n&amp; Q=\\frac{\\sqrt{3}}{3} a^2 \\\\\n&amp; Q=\\frac{\\sqrt{3}}{3} \\times \\frac{P^2}{36} \\\\\n&amp; P^2=36 \\sqrt{3} Q\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294px",
@@ -1500,9 +1650,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "arithmetic-progression",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>To determine the value of $$\\mathrm{m}$$, we need to formulate the problem using some basic concepts of arithmetic progression and work. Let's first understand the nature of the problem:</p>\n\n<p>Initially, there are $$\\mathrm{m}$$ computers, and it is estimated that with these $$\\mathrm{m}$$ computers, the assignment can be completed in 17 days.</p>\n\n<p>However, due to the crash of 4 computers every day starting from the second day onward, the total time taken extends by 8 days, making it 25 days in total.</p>\n\n<p>To begin with, let's define the total work (W) in terms of the number of computers and days:</p>\n\n<p>The total work (W) is given by:</p>\n\n<p>The amount of work completed each day with $$\\mathrm{m}$$ computers for 17 days:</p>\n\n<p>$$W = 17m$$</p>\n\n<p>When computers crash, the number of working computers each day forms an arithmetic sequence. On the first day, there are $$\\mathrm{m}$$ computers. On the second day, there are $$\\mathrm{m} - 4$$ computers, on the third day, there are $$\\mathrm{m} - 8$$ computers, and so on. We need to sum this series until 25 days are completed.</p>\n\n<p>This can be formulated as:</p>\n\n<p>Total work done over 25 days with decrement in the number of computers:</p>\n\n<p>$$W = m + (m - 4) + (m - 8) + \\ldots + \\left[m - 4 \\times (n - 1)\\right]$$</p>\n\n<p>where $$n$$ is the number of days. Here, $$n = 25$$.</p>\n\n<p>Notice that we form an arithmetic series where the first term (a) is $$\\mathrm{m}$$ and the common difference (d) is -4. The sum of the first n terms of an arithmetic series is:</p>\n\n<p>$$S_n = \\frac{n}{2} \\left[ 2a + (n - 1)d \\right]$$</p>\n\n<p>Plugging in the values:</p>\n\n<p>$$S_{25} = \\frac{25}{2} \\left[ 2m + (25 - 1)(-4) \\right]$$</p>\n\n<p>$$S_{25} = \\frac{25}{2} \\left[ 2m - 96 \\right]$$</p>\n\n<p>$$S_{25} = \\frac{25}{2} \\left[ 2m - 96 \\right] = 25(m - 48)$$</p>\n\n<p>This work should be equivalent to the work calculated earlier, so:</p>\n\n<p>$$17m = 25(m - 48)$$</p>\n\n<p>Solving for $$\\mathrm{m}$$:</p>\n\n<p>$$17m = 25m - 1200$$</p>\n\n<p>$$8m = 1200$$</p>\n\n<p>$$m = 150$$</p>\n\n<p>Thus, the value of $$\\mathrm{m}$$ is equal to:</p>\n\n<p>Option C: 150</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294aa",
@@ -1521,9 +1673,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "symmetric-transitive-and-reflexive-properties",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& A=\\{1,2,3,4,5\\} \\\\\n& x R y \\Leftrightarrow 4 x \\leq 5 y \\\\\n& 4 x \\leq 5 y \\quad \\Rightarrow \\quad \\frac{x}{y} \\leq \\frac{5}{4} \\quad \\Rightarrow \\frac{x}{y} \\leq 1.25\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& R=\\{(1,2),(1,3),(1,4),(1,5),(1,1),(2,2),(2,3),(2,4), \\\\\n& (2,5),(3,3),(3,4),(3,5),(4,4),(4,5),(5,4),(5,5)\\} \\\\\n& \\therefore \\quad n(R)=m=16\n\\end{aligned}$$</p>\n<p>Elements to be added to $$R$$ to make it symmetric</p>\n<p>$$(1,2) \\in R \\quad \\Rightarrow \\quad(2,1)$$ should be added</p>\n<p>Similarly, $$(3,1),(4,1),(5,1),(3,2),(4,2),(5,2),(4,3), (5,3)$$</p>\n<p>$$\\therefore 9$$ elements should be added</p>\n<p>$$\\begin{array}{ll}\n\\therefore & n=9 \\\\\n\\therefore & m+n=25\n\\end{array}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294xq",
@@ -1542,9 +1696,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "locus",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwagdtgz/adc2b178-39c7-4610-ae95-7cf96da59f71/72edac30-142c-11ef-983f-65b4bd1ca415/file-1lwagdth0.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwagdtgz/adc2b178-39c7-4610-ae95-7cf96da59f71/72edac30-142c-11ef-983f-65b4bd1ca415/file-1lwagdth0.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Mathematics - Straight Lines and Pair of Straight Lines Question 33 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\therefore \\frac{(h-2)^2+(k-1)^2}{(h-1)^2+(k-3)^2}=\\frac{25}{16} \\\\\n&amp; \\frac{h^2+k^2-4 h-2 k+5}{h^2+k^2-2 h-6 k+10}=\\frac{25}{16} \\\\\n\\end{aligned}$$</p>\n<p>Replacing $$h \\rightarrow x$$ and $$k \\rightarrow y$$.</p>\n<p>$$\\begin{aligned}\n&amp; 16 x^2+16 y^2-64 x-32 y+80 \\\\\n&amp; =25 x^2+25 y^2-50 x-150 y+250 \\\\\n&amp; 9 x^2+9 y^2+14 x-118 y+170=0 \\\\\n&amp; \\Rightarrow a=9, b=9, c=0, d=14, e=-118 \\\\\n&amp; a^2+2 b+3 c+4 d+e \\\\\n&amp; 81+18+56-118 \\\\\n&amp; \\Rightarrow 37\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294hw",
@@ -1563,9 +1719,11 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "vector-or-cross-product-of-two-vectors-and-its-applications",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& \\vec{a}=2 \\hat{i}+\\hat{j}-\\hat{k} \\\\\n& \\vec{b}=((\\vec{a} \\times(\\hat{i}+\\hat{j})) \\times \\hat{i}) \\times \\hat{i} \\\\\n& \\vec{a} \\times(\\hat{i}+\\hat{j})=\\left|\\begin{array}{ccc}\n\\hat{i} & \\hat{j} & \\hat{k} \\\\\n2 & 1 & -1 \\\\\n1 & 1 & 0\n\\end{array}\\right| \\\\\n&=\\hat{i}(1)-\\hat{j}(1)+\\hat{k}(2-1) \\\\\n&=\\hat{i}-\\hat{j}+\\hat{k}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& (\\vec{a} \\times(\\hat{i}+\\hat{j})) \\times \\hat{i}=\\left|\\begin{array}{ccc}\n\\hat{i} & \\hat{j} & \\hat{k} \\\\\n1 & -1 & 1 \\\\\n1 & 0 & 0\n\\end{array}\\right| \\\\\n& \\quad=\\hat{i}(0)-\\hat{j}(-1)+\\hat{k}(1) \\\\\n& \\quad=\\hat{j}+\\hat{k}\n\\end{aligned}$$</p>\n<p>$$\\left( {(\\overrightarrow a  \\times (\\widehat i + \\widehat j) \\times \\widehat i} \\right) \\times \\widehat i = \\left| {\\matrix{\n   {\\widehat i} & {\\widehat j} & {\\widehat k}  \\cr \n   0 & 1 & 1  \\cr \n   1 & 0 & 0  \\cr \n\n } } \\right|$$</p>\n<p>$$\\begin{aligned}\n& =\\hat{i}(0)-\\hat{j}(-1)+\\hat{k}(-1) \\\\\n\\vec{b}= & \\hat{j}-\\hat{k}\n\\end{aligned}$$</p>\n<p>Projection of $$\\vec{a}$$ on $$\\vec{b}=\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|}$$</p>\n<p>$$=\\frac{2}{\\sqrt{2}}=\\sqrt{2}$$</p>\n<p>Square of projection $$=2$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294j7",
@@ -1584,169 +1742,191 @@
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "vector-or-cross-product-of-two-vectors-and-its-applications",
-      "difficulty": "hard",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& |(\\vec{a} \\times \\vec{b}) \\times \\vec{c}|=|\\vec{a} \\times \\vec{b}||\\vec{c}| \\sin 60^{\\circ} \\\\\n& \\left|\\begin{array}{ccc}\ni & j & k \\\\\n6 & 1 & -1 \\\\\n1 & 1 & 0\n\\end{array}\\right|=i(1)-j(1)+k(5) \\\\\n& =i-j+5 k \\\\\n& |\\vec{a} \\times \\vec{b}|=\\sqrt{1+1+25}=\\sqrt{27} \\\\\n& |\\vec{c}-\\vec{a}|=2 \\sqrt{2} \\\\\n& c^2+a^2-2 a c=8 \\\\\n& c^2-12 c+30=0 \\\\\n& c=\\frac{12+\\sqrt{24}}{2}=6+\\sqrt{6} \\\\\n& \\Rightarrow|(\\vec{a} \\times \\vec{b}) \\times \\vec{c}|=\\sqrt{27} \\times(6+\\sqrt{6}) \\times \\frac{\\sqrt{3}}{2} \\\\\n& =\\frac{a}{2}(6+\\sqrt{6}) \\\\\n\\end{aligned}$$</p>",
-      "section": "A"
+      "section": "A",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29516",
       "questionNumber": 81,
       "questionText": "<p>If the shortest distance between the lines $$\\frac{x-\\lambda}{3}=\\frac{y-2}{-1}=\\frac{z-1}{1}$$ and $$\\frac{x+2}{-3}=\\frac{y+5}{2}=\\frac{z-4}{4}$$ is $$\\frac{44}{\\sqrt{30}}$$, then the largest possible value of $$|\\lambda|$$ is equal to _________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "lines-in-space",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\n& L_1: \\frac{x-\\lambda}{3}=\\frac{y-2}{-1}=\\frac{z-1}{1} \\\\\n& L_2: \\frac{x+2}{-3}=\\frac{y+5}{2}=\\frac{z-4}{4}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& n_1 \\times n_2=\\left|\\begin{array}{ccc}\n\\hat{i} & \\hat{j} & \\hat{k} \\\\\n3 & -1 & 1 \\\\\n-3 & 2 & 4\n\\end{array}\\right| \\\\\n& =-6 \\hat{i}-15 \\hat{j}+3 \\hat{k} \\\\\n& d=\\left|\\frac{[(\\lambda+2) \\hat{i}+7 \\hat{j}-3 \\hat{k}][-6 \\hat{i}-15 \\hat{j}+3 \\hat{k}]}{|-6 \\hat{i}-15 \\hat{j}+3 \\hat{k}|}\\right|=\\frac{44}{\\sqrt{30}} \\\\\n& \\left|\\frac{-6 \\lambda-12-105-9}{\\sqrt{270}}\\right|=\\frac{44}{\\sqrt{30}} \\\\\n& |6 \\lambda+126|=132 \\\\\n& |\\lambda+21|=22 \\\\\n& \\lambda+21= \\pm 22 \\\\\n& |\\lambda|_{\\max }=43\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294zl",
       "questionNumber": 82,
       "questionText": "<p>Let $$[t]$$ denote the largest integer less than or equal to $$t$$. If $$\\int_\\limits0^3\\left(\\left[x^2\\right]+\\left[\\frac{x^2}{2}\\right]\\right) \\mathrm{d} x=\\mathrm{a}+\\mathrm{b} \\sqrt{2}-\\sqrt{3}-\\sqrt{5}+\\mathrm{c} \\sqrt{6}-\\sqrt{7}$$, where $$\\mathrm{a}, \\mathrm{b}, \\mathrm{c} \\in \\mathbf{Z}$$, then $$\\mathrm{a}+\\mathrm{b}+\\mathrm{c}$$ is equal to __________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "properties-of-definite-integration",
-      "difficulty": "hard",
+      "difficulty": "Easy",
       "solution": "<p>$$\\int_\\limits0^3\\left(\\left[x^2\\right]+\\left[\\frac{x^2}{2}\\right]\\right) d x \\quad=\\int_\\limits0^1 0 d x+\\int_1^{\\sqrt{2}} 1 d x+\\int_\\limits{\\sqrt{2}}^{\\sqrt{3}} 3 d x+$$</p>\n<p>$$\n\\begin{aligned}\n& \\int_\\limits{\\sqrt{3}}^2 4 d x+\\int_\\limits2^{\\sqrt{5}} 6 d x+\\int_\\limits{\\sqrt{5}}^{\\sqrt{6}} 7 d x+\\int_\\limits{\\sqrt{6}}^{\\sqrt{7}} 9 d x+\\int_\\limits{\\sqrt{7}}^{\\sqrt{8}} 10 d x+\\int_\\limits{\\sqrt{8}}^3 12 d x \\\\\n& =31-6 \\sqrt{2}-\\sqrt{3}-\\sqrt{5}-\\sqrt{7}-2 \\sqrt{6} \\\\\n& \\Rightarrow a=31, b=-6, c=-2 \\\\\n& \\Rightarrow a+b+c=23\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29503",
       "questionNumber": 83,
       "questionText": "<p>If the solution $$y(x)$$ of the given differential equation $$\\left(e^y+1\\right) \\cos x \\mathrm{~d} x+\\mathrm{e}^y \\sin x \\mathrm{~d} y=0$$ passes through the point $$\\left(\\frac{\\pi}{2}, 0\\right)$$, then the value of $$e^{y\\left(\\frac{\\pi}{6}\\right)}$$ is equal to _________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "solution-of-differential-equations-by-method-of-separation-variables-and-homogeneous",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>Given the differential equation</p>\n\n<p>$$\\left(e^y + 1\\right) \\cos x \\, dx + e^y \\sin x \\, dy = 0,$$</p>\n\n<p>we aim to find the value of $ e^{y\\left(\\frac{\\pi}{6}\\right)} $ given that the solution $ y(x) $ passes through the point $\\left(\\frac{\\pi}{2}, 0\\right)$.</p>\n\n<p>First, we recognize that the differential equation can be rearranged as:</p>\n\n<p>$$d\\left(e^y \\sin x\\right) + \\cos x \\, dx = 0.$$</p>\n\n<p>Integrating this expression, we obtain:</p>\n\n<p>$$ e^y \\sin x + \\sin x = C,$$</p>\n\n<p>where $ C $ is a constant. Given that the solution passes through the point $\\left(\\frac{\\pi}{2}, 0\\right)$, we substitute these values into the equation to find $ C $:</p>\n\n<p>$$ e^0 \\sin\\left(\\frac{\\pi}{2}\\right) + \\sin\\left(\\frac{\\pi}{2}\\right) = C \\Rightarrow 1 + 1 = C \\Rightarrow C = 2.$$</p>\n\n<p>Thus, the equation simplifies to:</p>\n\n<p>$$e^y \\sin x + \\sin x = 2.$$</p>\n\n<p>We now need to determine the value of $ e^{y\\left(\\frac{\\pi}{6}\\right)} $. Substituting $ x = \\frac{\\pi}{6} $ into the equation, we get:</p>\n\n<p>$$ \\left(e^{y\\left(\\frac{\\pi}{6}\\right)} + 1\\right) \\cdot \\sin\\left(\\frac{\\pi}{6}\\right) = 2.$$</p>\n\n<p>Since $\\sin\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{2}$, the equation becomes:</p>\n\n<p>$$ \\left(e^{y\\left(\\frac{\\pi}{6}\\right)} + 1\\right) \\cdot \\frac{1}{2} = 2 \\Rightarrow e^{y\\left(\\frac{\\pi}{6}\\right)} + 1 = 4 \\Rightarrow e^{y\\left(\\frac{\\pi}{6}\\right)} = 3.$$</p>\n\n<p>Therefore, the value of $ e^{y\\left(\\frac{\\pi}{6}\\right)} $ is $ 3 $.</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2951p",
       "questionNumber": 84,
       "questionText": "<p>The length of the latus rectum and directrices of hyperbola with eccentricity e are 9 and $$x= \\pm \\frac{4}{\\sqrt{3}}$$, respectively. Let the line $$y-\\sqrt{3} x+\\sqrt{3}=0$$ touch this hyperbola at $$\\left(x_0, y_0\\right)$$. If $$\\mathrm{m}$$ is the product of the focal distances of the point $$\\left(x_0, y_0\\right)$$, then $$4 \\mathrm{e}^2+\\mathrm{m}$$ is equal to _________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "tangent-to-hyperbola",
-      "difficulty": "hard",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwaskftu/d526b7cc-575f-4620-8047-7c036e1ade54/189a8020-145c-11ef-a76a-45e5478b32e1/file-1lwaskftv.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwaskftu/d526b7cc-575f-4620-8047-7c036e1ade54/189a8020-145c-11ef-a76a-45e5478b32e1/file-1lwaskftv.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Mathematics - Hyperbola Question 23 English Explanation\"></p>\n<p>$$y=m x \\pm \\sqrt{a^2 m^2-b^2}$$ is the tangent</p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow m=\\sqrt{3} \\Rightarrow a^2 m^2-b^2=3 \\\\\n&amp; \\Rightarrow 3 a^2-b^2=3\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\frac{2 b^2}{a}=9 \\Rightarrow b^2=\\frac{9 a}{2} \\Rightarrow 3 a^2-\\frac{9 a}{2}=3 \\\\\n&amp; \\Rightarrow a^2-\\frac{3}{2} a-1=0 \\\\\n&amp; \\Rightarrow a=2 \\text { or }-0.5 \\text { (ignore) } \\\\\n&amp; \\Rightarrow b=3 \\\\\n&amp; \\Rightarrow \\frac{x^2}{4}-\\frac{y^2}{9}=1 \\\\\n&amp; \\Rightarrow \\text { Solving hyperbola and tangent } y=\\sqrt{3 x}-\\sqrt{3} \\\\\n&amp; x_0=4, y_0=3 \\sqrt{3}, e=\\sqrt{1+\\frac{9}{4}}=\\frac{\\sqrt{13}}{2} \\\\\n&amp; P F_1 \\cdot P F_2= \\\\\n&amp; \\sqrt{(4-\\sqrt{13})^2+(3 \\sqrt{3})^2} \\sqrt{(4+\\sqrt{13})^2+(3 \\sqrt{3})^2} \\\\\n&amp; =\\sqrt{(56-8 \\sqrt{13})(56+8 \\sqrt{13})} \\\\\n&amp; =\\sqrt{2304}=48=m \\\\\n&amp; \\Rightarrow 4 e^2+m=13+48=61\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294ya",
       "questionNumber": 85,
       "questionText": "<p>Let $$[t]$$ denote the greatest integer less than or equal to $$t$$. Let $$f:[0, \\infty) \\rightarrow \\mathbf{R}$$ be a function defined by $$f(x)=\\left[\\frac{x}{2}+3\\right]-[\\sqrt{x}]$$. Let $$\\mathrm{S}$$ be the set of all points in the interval $$[0,8]$$ at which $$f$$ is not continuous. Then $$\\sum_\\limits{\\text {aes }} a$$ is equal to __________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "continuity",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>$$\\begin{aligned}\nf(x) & =\\left[\\frac{x}{3}+3\\right]-[\\sqrt{x}] \\\\\n& =\\left[\\frac{x}{2}\\right]-[\\sqrt{x}]+3\n\\end{aligned}$$</p>\n<p>Critical points where $$f(x)$$ might change behaviours when $$\\frac{x}{2} \\in$$ integer and $$\\sqrt{x} \\in$$ integer</p>\n<p>$$\\Rightarrow$$ Critical points,</p>\n<p>$$\\begin{aligned}\n& f(0)=3 \\\\\n& f\\left(0^{+}\\right)=3 \\\\\n& f\\left(1^{-}\\right)=3 \\\\\n& f\\left(1^{+}\\right)=2 \\\\\n& f\\left(2^{-}\\right)=2 \\\\\n& f\\left(2^{+}\\right)=3 \\\\\n& f\\left(3^{+}\\right)=f\\left(3^{-}\\right)=3=f\\left(4^{+}\\right)=f\\left(4^{-}\\right)=f\\left(5^{+}\\right)=f\\left(5^{-}\\right) \\\\\n& f\\left(6^{-}\\right)=3 \\\\\n& f\\left(6^{+}\\right)=4 \\\\\n& f\\left(7^{-}\\right)=f\\left(7^{+}\\right)=4 \\\\\n& f\\left(8^{-}\\right)=4 \\\\\n& f(8)=5\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow f(x) \\text { is not continuous at } \\\\\n& x=1,2,6,8 \\\\\n& \\Rightarrow \\sum_{a \\in s} a=1+2+6+8 \\\\\n& \\quad=17\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb29535",
       "questionNumber": 86,
       "questionText": "<p>If the system of equations</p>\n<p>$$\\begin{aligned}\n& 2 x+7 y+\\lambda z=3 \\\\\n& 3 x+2 y+5 z=4 \\\\\n& x+\\mu y+32 z=-1\n\\end{aligned}$$</p>\n<p>has infinitely many solutions, then $$(\\lambda-\\mu)$$ is equal to ______ :</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "solutions-of-system-of-linear-equations-in-two-or-three-variables-using-determinants-and-matrices",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>To determine if the system of equations:</p>\n\n<p>$$\\begin{aligned} 2x + 7y + \\lambda z = 3 \\\\ 3x + 2y + 5z = 4 \\\\ x + \\mu y + 32z = -1 \\end{aligned}$$</p>\n\n<p>has infinitely many solutions, we must use Cramer's rule.</p>\n\n<p>The determinants are calculated as follows:</p>\n\n<p>$$\\begin{aligned} \\Delta &= -2\\lambda + 3\\lambda\\mu - 10\\mu - 509 \\\\ \\Delta_1 &= 2\\lambda + 3\\lambda\\mu - 15\\mu - 739 \\\\ \\Delta_2 &= -7\\lambda - 7 \\\\ \\Delta_3 &= \\mu + 39  \\end{aligned}$$</p>\n\n<p>To have infinitely many solutions, the determinants must satisfy:</p>\n\n<p>$$\\begin{aligned} \\Delta = \\Delta_1 = \\Delta_2 = \\Delta_3 = 0  \\end{aligned}$$</p>\n\n<p>Solving these equations, we find:</p>\n\n<p>$$\\lambda = -1, \\mu = -39$$</p>\n\n<p>Thus, the value of $ \\lambda - \\mu $ is:</p>\n\n<p>$$ \\lambda - \\mu = 38 $$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2954k",
       "questionNumber": 87,
       "questionText": "<p>From a lot of 12 items containing 3 defectives, a sample of 5 items is drawn at random. Let the random variable $$X$$ denote the number of defective items in the sample. Let items in the sample be drawn one by one without replacement. If variance of $$X$$ is $$\\frac{m}{n}$$, where $$\\operatorname{gcd}(m, n)=1$$, then $$n-m$$ is equal to _________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "probability-distribution-of-a-random-variable",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p>Given a lot of 12 items, 3 are defective.</p>\n<p>Good items, $$12-3=9$$</p>\n<p>Let $$X$$ denote the number of defective items.</p>\n<p>So, value of $$X=0,1,2,3$$</p>\n<p>A sample of $$S$$ items is drawn.</p>\n<p>$$P(X=0)=G G G G G$$</p>\n<p>(here $$G$$ is good item and $$d$$ is defective)</p>\n<p>$$\\begin{aligned}\n& \\frac{9}{12} \\cdot \\frac{8}{11} \\cdot \\frac{7}{10} \\cdot \\frac{6}{9} \\cdot \\frac{5}{8}=\\frac{21}{132}=\\frac{7}{44} \\\\\n& P(X=1)=5\\left[\\frac{9 \\cdot 8 \\cdot 7 \\cdot 6 \\cdot 3}{12 \\cdot 11 \\cdot 10 \\cdot 9 \\cdot 8}\\right]=\\frac{21}{44} \\\\\n& P(X=2)=5\\left[\\frac{9 \\cdot 8 \\cdot 7 \\cdot 3 \\cdot 2}{12 \\cdot 11 \\cdot 10 \\cdot 9 \\cdot 8}\\right]=\\frac{14}{44} \\\\\n& P(X=3)=5\\left[\\frac{3 \\cdot 2 \\cdot 1 \\cdot 9 \\cdot 8}{12 \\cdot 11 \\cdot 10 \\cdot 9 \\cdot 8}\\right]=\\frac{2}{44} \\\\\n& P(X=4)=0 \\\\\n& P(X=5)=0\n\\end{aligned}$$</p>\n<p><style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n</style>\n<table class=\"tg\" style=\"undefined;table-layout: fixed; width: 588px\">\n<colgroup>\n<col style=\"width: 85px\">\n<col style=\"width: 90px\">\n<col style=\"width: 86px\">\n<col style=\"width: 77px\">\n<col style=\"width: 81px\">\n<col style=\"width: 85px\">\n<col style=\"width: 84px\">\n</colgroup>\n<thead>\n  <tr>\n    <th class=\"tg-baqh\">$$X$$</th>\n    <th class=\"tg-baqh\">0</th>\n    <th class=\"tg-baqh\">1</th>\n    <th class=\"tg-baqh\">2</th>\n    <th class=\"tg-baqh\">3</th>\n    <th class=\"tg-baqh\">4</th>\n    <th class=\"tg-baqh\">5</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-baqh\">$$P(X)$$</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{7}{44}<br>$$</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{21}{44}<br>$$</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{14}{44}<br>$$</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{2}{44}<br>$$</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">$$XP(X)$$</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{21}{44}<br>$$</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{28}{44}<br>$$</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{6}{44}<br>$$</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">$$X^2P(X)$$</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{21}{44}<br>$$</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{56}{44}<br>$$</td>\n    <td class=\"tg-baqh\">$$<br>\\frac{18}{44}<br>$$</td>\n    <td class=\"tg-baqh\">0</td>\n    <td class=\"tg-baqh\">0</td>\n  </tr>\n</tbody>\n</table></p>\n<p>$$\\begin{aligned}\n& \\sigma_x^2=\\sum X^2 P(x)-\\left(\\sum x P(x)\\right)^2 \\\\\n& =\\frac{95}{44}-\\left(\\frac{55}{44}\\right)^2 \\\\\n& =\\frac{4180-3025}{1936}=\\frac{1155}{1936}=\\frac{105}{176}=\\frac{m}{n} \\\\\n& =n-m=71\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb294yu",
       "questionNumber": 88,
       "questionText": "<p>In a triangle $$\\mathrm{ABC}, \\mathrm{BC}=7, \\mathrm{AC}=8, \\mathrm{AB}=\\alpha \\in \\mathrm{N}$$ and $$\\cos \\mathrm{A}=\\frac{2}{3}$$. If $$49 \\cos (3 \\mathrm{C})+42=\\frac{\\mathrm{m}}{\\mathrm{n}}$$, where $$\\operatorname{gcd}(m, n)=1$$, then $$m+n$$ is equal to _________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "cosine-rule",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwap0izi/fd6cee3f-e437-4a65-830c-d11ed7b1c7a4/3378e3e0-144e-11ef-860c-d121cbcdd1fc/file-1lwap0izj.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwap0izi/fd6cee3f-e437-4a65-830c-d11ed7b1c7a4/3378e3e0-144e-11ef-860c-d121cbcdd1fc/file-1lwap0izj.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Mathematics - Properties of Triangle Question 3 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\cos A=\\frac{2}{3}=\\frac{\\alpha^2+8^2-7^2}{2 \\cdot \\alpha \\cdot 8} \\\\\n&amp; \\Rightarrow\\left(\\alpha^2+15\\right) 3=32 \\alpha \\\\\n&amp; 3 \\alpha^2-32 \\alpha+45=0 \\\\\n&amp; \\Rightarrow \\alpha=\\frac{5}{3}, 9 \\\\\n&amp; \\because \\alpha \\in N \\Rightarrow \\alpha=9 \\\\\n&amp; \\cos C=\\frac{7^2+8^2-9^2}{2 \\cdot 7 \\cdot 8}=\\frac{2}{7}\n\\end{aligned}$$</p>\n<p>$$\n\\begin{aligned}\n\\cos 3 C &amp; =4 \\cos ^3 C-3 \\cos C \\\\\n= &amp; \\frac{4 \\times 8}{7^3}-\\frac{6}{7} \\\\\n49 \\cos 3 C &amp; =\\frac{32}{7}-42 \\\\\n\\Rightarrow \\quad &amp; 49 \\cos 3 C+42=\\frac{32}{7} \\\\\n\\Rightarrow \\quad &amp; m+n =39\n\\end{aligned}\n$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2952b",
       "questionNumber": 89,
       "questionText": "<p>Let $$\\alpha, \\beta$$ be roots of $$x^2+\\sqrt{2} x-8=0$$. If $$\\mathrm{U}_{\\mathrm{n}}=\\alpha^{\\mathrm{n}}+\\beta^{\\mathrm{n}}$$, then $$\\frac{\\mathrm{U}_{10}+\\sqrt{2} \\mathrm{U}_9}{2 \\mathrm{U}_8}$$ is equal to ________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "relation-between-roots-and-coefficients",
-      "difficulty": "medium",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwapcytl/545aa1a6-edf5-4e15-9137-baf3d0f62d19/8d6a2390-144f-11ef-860c-d121cbcdd1fc/file-1lwapcytm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwapcytl/545aa1a6-edf5-4e15-9137-baf3d0f62d19/8d6a2390-144f-11ef-860c-d121cbcdd1fc/file-1lwapcytm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Mathematics - Quadratic Equation and Inequalities Question 35 English Explanation\"></p>\n<p>$$\\Rightarrow \\alpha^2+\\sqrt{2} \\alpha=8$$</p>\n<p>$$\\begin{aligned}\n\\alpha+\\beta=\\sqrt{2}, \\quad \\alpha \\beta=-8, &amp; \\Rightarrow \\alpha+\\sqrt{2}=\\frac{8}{\\alpha} \\\\\n&amp; \\Rightarrow \\beta+\\sqrt{2}=\\frac{8}{\\beta}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\frac{U_{10}+\\sqrt{2} U_9}{2 U_8}=\\frac{\\alpha^{10}+\\beta^{10}+\\sqrt{2} \\alpha^9+\\sqrt{2} \\beta^9}{2 \\alpha^8+2 \\beta^8} \\\\\n&amp; =\\frac{\\alpha^9(\\alpha+\\sqrt{2})+\\beta^9(\\beta+\\sqrt{2})}{2\\left(\\alpha^8+\\beta^8\\right)} \\\\\n&amp; =\\frac{\\alpha^9 \\cdot\\left(\\frac{8}{\\alpha}\\right)+\\beta^9\\left(\\frac{8}{\\beta}\\right)}{2\\left(\\alpha^8+\\beta^8\\right)}=\\frac{8}{2}=4\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     },
     {
       "id": "lvb2953r",
       "questionNumber": 90,
       "questionText": "<p>If $$\\mathrm{S}(x)=(1+x)+2(1+x)^2+3(1+x)^3+\\cdots+60(1+x)^{60}, x \\neq 0$$, and $$(60)^2 \\mathrm{~S}(60)=\\mathrm{a}(\\mathrm{b})^{\\mathrm{b}}+\\mathrm{b}$$, where $$a, b \\in N$$, then $$(a+b)$$ equal to _________.</p>",
       "options": [],
-      "correctOption": 0,
-      "correctAnswer": null,
+      "correctOption": null,
+      "correctAnswer": "",
       "questionType": "NUMERICAL",
       "marks": 4,
       "negativeMarks": -1,
       "subject": "Mathematics",
       "topic": "summation-of-series",
-      "difficulty": "hard",
+      "difficulty": "Easy",
       "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwawri93/7135ddd1-f250-4342-8c29-b0037fcb56d9/81a82a80-146c-11ef-a0c7-b1f23fa7cdc4/file-1lwawri94.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwawri93/7135ddd1-f250-4342-8c29-b0037fcb56d9/81a82a80-146c-11ef-a0c7-b1f23fa7cdc4/file-1lwawri94.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 6th April Evening Shift Mathematics - Sequences and Series Question 62 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; (-x)(S(x))=\\frac{(1+x)\\left[(1+x)^{60}-1\\right]}{(1+x-1)}-60(1+x)^{61} \\\\\n&amp; (-x) S(x)=\\frac{(1+x)\\left[(1+x)^{60}-1\\right]}{x}-60(1+x)^{61} \\\\\n&amp; x S(x)=60(1+x)^{61}-\\frac{(1+x)\\left[(1+x)^{60}-1\\right]}{x}\n\\end{aligned}$$</p>\n<p>Multiplying $$x$$ on both side,</p>\n<p>$$x^2 S(x)=60 x(1+x)^{61}-(1+x)\\left[(1+x)^{60}-1\\right]$$</p>\n<p>Putting $$x=60$$</p>\n<p>$$\\begin{aligned}\n&amp; (60)^2 S(60)=60 \\times 60(61)^{61}-(61)\\left[61^{60}-1\\right] \\\\\n&amp; =60 \\times 60(61)^{61}-(61) \\cdot 61^{60}+61 \\\\\n&amp; =(61)^{61}[60 \\times 60-1]+61 \\\\\n&amp; =(3600-1) \\cdot 61^{61}+61 \\\\\n&amp; a=3600-1, \\quad b=61 \\Rightarrow a+b=3660\n\\end{aligned}$$</p>",
-      "section": "B"
+      "section": "B",
+      "instruction": "",
+      "examSource": "jee-main"
     }
   ],
   "sections": [

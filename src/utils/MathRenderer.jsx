@@ -1,97 +1,138 @@
 /**
  * MathRenderer.jsx
- * Renders text containing $...$ inline math using KaTeX.
- * Splits text by $ delimiters and renders math blocks with KaTeX,
- * and plain text as normal React text nodes.
+ * Renders text containing optional $...$ or $$...$$ math and HTML tags.
+ * Uses KaTeX renderToString to render math blocks, allowing raw HTML tags (like tables, br, b) to render natively.
  */
-import React from 'react';
-import { InlineMath, BlockMath } from 'react-katex';
+import React, { useMemo } from 'react';
+import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
-/**
- * Parse a string with $...$ (inline) and $$...$$ (display) math
- * and return an array of React elements.
- */
-function parseMath(text) {
-  if (!text) return null;
+function convertMarkdownTableToHtml(text) {
+  if (!text) return '';
+  const lines = text.split('\n');
+  let inTable = false;
+  let htmlLines = [];
+  let tableHeader = true;
 
-  const parts = [];
-  let remaining = text;
-  let key = 0;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.startsWith('|') && line.endsWith('|')) {
+      if (!inTable) {
+        inTable = true;
+        htmlLines.push('<table class="w-full text-left border-collapse border border-gray-300 mt-4 mb-4 text-sm"><tbody>');
+        tableHeader = true;
+      }
+      
+      // Skip separator line (e.g. |---|---|)
+      if (line.includes('---') || line.includes('- - -')) {
+        tableHeader = false;
+        continue;
+      }
+      
+      const cells = line.split('|').map(c => c.trim()).filter((c, idx, arr) => idx > 0 && idx < arr.length - 1);
+      
+      htmlLines.push('<tr>');
+      cells.forEach(cell => {
+        const tag = tableHeader ? 'th' : 'td';
+        const classes = tableHeader 
+          ? 'border border-gray-300 p-2 bg-gray-100 font-bold' 
+          : 'border border-gray-300 p-2';
+        htmlLines.push(`<${tag} class="${classes}">${cell}</${tag}>`);
+      });
+      htmlLines.push('</tr>');
+      tableHeader = false; // only the first row is header
+    } else {
+      if (inTable) {
+        inTable = false;
+        htmlLines.push('</tbody></table>');
+      }
+      htmlLines.push(lines[i]);
+    }
+  }
+  if (inTable) {
+    htmlLines.push('</tbody></table>');
+  }
+  return htmlLines.join('\n');
+}
 
+function renderMathInText(text) {
+  if (!text) return '';
+  
+  // Convert markdown tables first
+  const parsedText = convertMarkdownTableToHtml(text);
+  
+  let remaining = String(parsedText);
+  let html = '';
+  
   while (remaining.length > 0) {
-    // Check for display math $$...$$
     const displayStart = remaining.indexOf('$$');
-    // Check for inline math $...$
     const inlineStart = remaining.indexOf('$');
-
+    
     if (inlineStart === -1) {
-      // No more math — just plain text
-      parts.push(<span key={key++}>{remaining}</span>);
+      html += remaining;
       break;
     }
-
+    
     const isDisplay = displayStart === inlineStart;
-
+    
     if (inlineStart > 0) {
-      // Text before the math
-      parts.push(<span key={key++}>{remaining.slice(0, inlineStart)}</span>);
+      html += remaining.slice(0, inlineStart);
       remaining = remaining.slice(inlineStart);
       continue;
     }
-
-    // We're at the start of a math block
+    
+    // We are at the start of a math block
     if (isDisplay && remaining.startsWith('$$')) {
       const end = remaining.indexOf('$$', 2);
       if (end === -1) {
-        // Malformed — treat rest as text
-        parts.push(<span key={key++}>{remaining}</span>);
+        html += remaining;
         break;
       }
       const mathStr = remaining.slice(2, end);
-      parts.push(
-        <span key={key++} className="inline-block my-1">
-          <InlineMath math={`\\displaystyle ${mathStr}`} renderError={(error) => {
-            return <span className="text-red-500 font-mono text-sm" title={error.message}>{mathStr}</span>;
-          }} />
-        </span>
-      );
+      try {
+        const mathHtml = katex.renderToString(mathStr, { displayMode: true, throwOnError: false });
+        html += `<span class="inline-block my-1">${mathHtml}</span>`;
+      } catch (e) {
+        html += `<span class="text-red-500 font-mono text-sm">${mathStr}</span>`;
+      }
       remaining = remaining.slice(end + 2);
     } else if (remaining.startsWith('$')) {
       const end = remaining.indexOf('$', 1);
       if (end === -1) {
-        // Malformed — treat rest as text
-        parts.push(<span key={key++}>{remaining}</span>);
+        html += remaining;
         break;
       }
       const mathStr = remaining.slice(1, end);
-        parts.push(
-          <InlineMath key={key++} math={`\\displaystyle ${mathStr}`} renderError={(error) => {
-            return <span className="text-red-500 font-mono text-sm" title={error.message}>{mathStr}</span>;
-          }} />
-        );
+      try {
+        const mathHtml = katex.renderToString(mathStr, { displayMode: false, throwOnError: false });
+        html += mathHtml;
+      } catch (e) {
+        html += `<span class="text-red-500 font-mono text-sm">${mathStr}</span>`;
+      }
       remaining = remaining.slice(end + 1);
     } else {
-      // Shouldn't happen, but guard anyway
-      parts.push(<span key={key++}>{remaining[0]}</span>);
+      html += remaining[0];
       remaining = remaining.slice(1);
     }
   }
-
-  return parts;
+  
+  return html;
 }
 
 /**
  * MathRenderer component
- * @param {string} text - The text containing optional $...$ math
+ * @param {string} text - The text containing optional $...$ math and HTML
  * @param {string} className - Additional CSS class names
  */
 export default function MathRenderer({ text, className = '' }) {
   if (!text) return null;
 
+  const html = useMemo(() => renderMathInText(text), [text]);
+
   return (
-    <span className={`math-renderer ${className}`}>
-      {parseMath(text)}
-    </span>
+    <span 
+      className={`math-renderer ${className}`}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   );
 }

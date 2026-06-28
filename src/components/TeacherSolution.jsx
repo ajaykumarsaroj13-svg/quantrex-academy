@@ -9,7 +9,13 @@ export default function TeacherSolution({ html, isLight = true, correctOptionLab
   const content = useMemo(() => {
     if (!html) return '<p style="color:#999;font-style:italic;font-family:sans-serif;font-size:14px;">Solution coming soon — stay tuned! 📝</p>';
     
-    let text = html.toString();
+    let text = html;
+    if (typeof text === 'object') {
+      text = text.en?.explanation || text.en?.solution || text.explanation || text.solution || '';
+    }
+    if (!text) return '<p style="color:#999;font-style:italic;font-family:sans-serif;font-size:14px;">Solution coming soon — stay tuned! 📝</p>';
+    
+    text = String(text);
     
     // Strip inline styles and fonts from ExamGoal data that break handwriting format
     text = text.replace(/style\s*=\s*"[^"]*"/gi, '');

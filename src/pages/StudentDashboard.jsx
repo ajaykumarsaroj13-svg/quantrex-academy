@@ -248,7 +248,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
           {[
             { id: 'courses', icon: BookOpen, label: 'My Courses' },
             { id: 'live', icon: PlayCircle, label: 'Live Classes' },
-            { id: 'tests', icon: Target, label: 'Test Series', isPage: true, pageId: 'test-series' },
+            { id: 'tests', icon: Target, label: 'Official Paper', isPage: true, pageId: 'test-series' },
+            { id: 'ultimate-tests', icon: Target, label: 'Ultimate Test Series', isPage: true, pageId: 'ultimate-test-series' },
             { id: 'ai-analytics', icon: BrainCircuit, label: 'AI Analytics' },
             { id: 'doubts', icon: LogOut, label: '24/7 Doubts' }
           ].map((item) => (
@@ -365,7 +366,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                           const colorTheme = premiumGradients[index % premiumGradients.length];
                           
                           let icon = "➗";
-                          let lowerTitle = ch.title.toLowerCase();
+                          let lowerTitle = String(ch.title || '').toLowerCase();
                           if (lowerTitle.includes("sets") || lowerTitle.includes("relations")) icon = "∪";
                           else if (lowerTitle.includes("function")) icon = "ƒ(x)";
                           else if (lowerTitle.includes("logarithm")) icon = "㏒";
@@ -397,8 +398,17 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                               setIsPyqLoading(true);
                               setActivePyqData(null);
 
-                              const slug = ch.url ? ch.url.split('/').pop() : ch.id;
-                              const fetchSlug = selectedSyllabusClass === 'jee-advanced' ? 'adv-' + slug : slug;
+                              const slug = (ch.url && ch.url !== '#') ? ch.url.split('/').pop() : (ch.id || '');
+                              let fetchSlug = String(slug || ch.id || 'unknown');
+                              if (selectedSyllabusClass === 'jee-advanced') {
+                                if (fetchSlug.startsWith('physics_')) fetchSlug = fetchSlug.replace('physics_', '');
+                                else if (fetchSlug.startsWith('chemistry_')) fetchSlug = fetchSlug.replace('chemistry_', '');
+                                else if (fetchSlug.startsWith('mathematics_')) fetchSlug = fetchSlug.replace('mathematics_', '');
+
+                                if (!fetchSlug.startsWith('adv-') && !fetchSlug.startsWith('ch_adv_math_')) {
+                                  fetchSlug = 'adv-' + fetchSlug;
+                                }
+                              }
                               fetch(import.meta.env.BASE_URL + `data/questions/${fetchSlug}.json?_t=${Date.now()}`)
                                 .then(res => res.json())
                                 .then(data => {
@@ -413,7 +423,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                     questionsArray.forEach(q => {
                                       if (!q.id) q.id = q.question_id || q._id || `q_${Math.random().toString(36).slice(2)}`;
                                       if (!q.correctAnswer && q.answer) q.correctAnswer = q.answer;
-                                      let tName = q.topic || 'General';
+                                      let tName = String(q.topic || 'General');
                                       if (tName === slug || tName === ch.id) tName = 'All Questions';
                                       const tId = tName.toLowerCase().replace(/\s+/g, '_');
                                       if (!topicsMap[tId]) {
@@ -653,8 +663,17 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                 )}
                                 {/* 4. PYQs Tab */}
                                 {chapterTab === 'pyqs' && (() => {
-                                  const slug = chapter.url ? chapter.url.split('/').pop() : chapter.id;
-                                  const fetchSlug = selectedSyllabusClass === 'jee-advanced' ? 'adv-' + slug : slug;
+                                    const slug = (chapter.url && chapter.url !== '#') ? chapter.url.split('/').pop() : (chapter.id || '');
+                                    let fetchSlug = String(slug || chapter.id || 'unknown');
+                                    if (selectedSyllabusClass === 'jee-advanced') {
+                                      if (fetchSlug.startsWith('physics_')) fetchSlug = fetchSlug.replace('physics_', '');
+                                      else if (fetchSlug.startsWith('chemistry_')) fetchSlug = fetchSlug.replace('chemistry_', '');
+                                      else if (fetchSlug.startsWith('mathematics_')) fetchSlug = fetchSlug.replace('mathematics_', '');
+
+                                      if (!fetchSlug.startsWith('adv-') && !fetchSlug.startsWith('ch_adv_math_')) {
+                                        fetchSlug = 'adv-' + fetchSlug;
+                                      }
+                                    }
                                   const qCount = chapterQuestionCounts[fetchSlug] || 0;
                                   return (
                                     <div className="space-y-4">
@@ -676,7 +695,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                                 questionsArray.forEach(q => {
                                                   if (!q.id) q.id = q.question_id || q._id || `q_${Math.random().toString(36).slice(2)}`;
                                                   if (!q.correctAnswer && q.answer) q.correctAnswer = q.answer;
-                                                  let tName = q.topic || 'General';
+                                                  let tName = String(q.topic || 'General');
                                                   if (tName === slug || tName === chapter.id) tName = 'All Questions';
                                                   const tId = tName.toLowerCase().replace(/\s+/g, '_');
                                                   if (!topicsMap[tId]) { topicsMap[tId] = []; topicsList.push({ id: tId, name: tName }); }
@@ -721,7 +740,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                                   const questionsArray = Array.isArray(data) ? data : (data.data || []);
                                                   questionsArray.forEach(q => {
                                                     if (!q.id) q.id = q.question_id || q._id || `q_${Math.random().toString(36).slice(2)}`;
-                                                    let tName = q.topic || 'General';
+                                                    let tName = String(q.topic || 'General');
                                                     if (tName === slug || tName === chapter.id) tName = 'All Questions';
                                                     const tId = tName.toLowerCase().replace(/\s+/g, '_');
                                                     if (!topicsMap[tId]) { topicsMap[tId] = []; topicsList.push({ id: tId, name: tName }); }
@@ -848,7 +867,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
             {activeTab === 'tests' && (
               <div className="space-y-6">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                  <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">{testCategory === 'nda' ? 'NDA' : 'JEE'} Test Series Portal</h3>
+                  <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">{testCategory === 'nda' ? 'NDA' : 'JEE'} Official Paper Portal</h3>
                   <div className="flex bg-obsidian/60 p-1 border border-white/5 rounded-lg">
                     <button
                       onClick={() => setTestCategory('jee-mains')}

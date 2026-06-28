@@ -49,14 +49,32 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           data.questions = sortQuestions(data.questions, data.examType);
         }
         setTestData(data);
-        if (data.questions) {
-           const order = data.examType === 'JEE Advanced' ? ADV_SUBJECT_ORDER : DEFAULT_SUBJECT_ORDER;
-           const sub = order[0];
-           const qs = data.questions.filter(q => q.subject === sub);
-           const secs = [...new Set(qs.map(q => q.section || 'A'))].sort();
-           if (secs.length > 0) setCurrentSection(secs[0]);
+
+        const savedStateJson = localStorage.getItem(`quantrex_exam_state_${testId}`);
+        if (savedStateJson && mode === 'exam') {
+          try {
+             const savedState = JSON.parse(savedStateJson);
+             if (savedState.answers) setAnswers(savedState.answers);
+             if (savedState.statusMap) setStatusMap(savedState.statusMap);
+             if (savedState.timeLeft) setTimeLeft(savedState.timeLeft);
+             if (savedState.currentSubjectIdx !== undefined) setCurrentSubjectIdx(savedState.currentSubjectIdx);
+             if (savedState.currentSection !== undefined) setCurrentSection(savedState.currentSection);
+             if (savedState.currentQIdx !== undefined) setCurrentQIdx(savedState.currentQIdx);
+          } catch(e) { console.error("Error loading saved state", e); }
+        } else {
+            if (data.questions) {
+               const order = data.examType === 'JEE Advanced' ? ADV_SUBJECT_ORDER : DEFAULT_SUBJECT_ORDER;
+               const present = new Set(data.questions.map(q => q.subject || 'Miscellaneous'));
+               const ordered = order.filter(s => present.has(s));
+               [...present].forEach(s => { if (!ordered.includes(s)) ordered.push(s); });
+               const sub = ordered[0] || order[0];
+               const qs = data.questions.filter(q => (q.subject || 'Miscellaneous') === sub);
+               const secs = [...new Set(qs.map(q => q.section || 'A'))].sort();
+               if (secs.length > 0) setCurrentSection(secs[0]);
+            }
+            setTimeLeft((data.durationMinutes || data.duration || 180) * 60);
         }
-        setTimeLeft((data.durationMinutes || data.duration || 180) * 60);
+
         setLoading(false);
         setTimeout(() => { if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise(); }, 300);
       })
@@ -76,12 +94,14 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   function sortQuestions(qs, examType) {
     const order = examType === 'JEE Advanced' ? ADV_SUBJECT_ORDER : DEFAULT_SUBJECT_ORDER;
     return [...qs].sort((a, b) => {
-      const ai = order.indexOf(a.subject) === -1 ? 99 : order.indexOf(a.subject);
-      const bi = order.indexOf(b.subject) === -1 ? 99 : order.indexOf(b.subject);
+      const aSub = a.subject || 'Miscellaneous';
+      const bSub = b.subject || 'Miscellaneous';
+      const ai = order.indexOf(aSub) === -1 ? 99 : order.indexOf(aSub);
+      const bi = order.indexOf(bSub) === -1 ? 99 : order.indexOf(bSub);
       if (ai !== bi) return ai - bi;
       // Section A before B
-      const as = a.section === 'B' ? 1 : 0;
-      const bs = b.section === 'B' ? 1 : 0;
+      const as = (a.section || 'A') === 'B' ? 1 : 0;
+      const bs = (b.section || 'A') === 'B' ? 1 : 0;
       return as - bs;
     });
   }
@@ -98,6 +118,20 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
     return () => clearInterval(timerRef.current);
   }, [testData, loading, mode]);
 
+  // ── Auto-save State ──────────────────────────────────────────
+  useEffect(() => {
+    if (loading || mode === 'practice' || !testId || !testData) return;
+    const stateToSave = {
+      answers,
+      statusMap,
+      timeLeft,
+      currentSubjectIdx,
+      currentSection,
+      currentQIdx
+    };
+    localStorage.setItem(`quantrex_exam_state_${testId}`, JSON.stringify(stateToSave));
+  }, [answers, statusMap, timeLeft, currentSubjectIdx, currentSection, currentQIdx, loading, mode, testId, testData]);
+
   // ── Re-render MathJax ────────────────────────────────────────
   useEffect(() => {
     setTimeout(() => { if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise(); }, 120);
@@ -110,7 +144,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   const subjects = (() => {
     const order = testData?.examType === 'JEE Advanced' ? ADV_SUBJECT_ORDER : DEFAULT_SUBJECT_ORDER;
     if (!testData?.questions) return order;
-    const present = new Set(testData.questions.map(q => q.subject));
+    const present = new Set(testData.questions.map(q => q.subject || 'Miscellaneous'));
     const ordered = order.filter(s => present.has(s));
     // Add any extra subjects not in order
     [...present].forEach(s => { if (!ordered.includes(s)) ordered.push(s); });
@@ -122,7 +156,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   // Get Section A and B for current subject
   const getSectionQs = useCallback((subjectName, section) => {
     if (!testData?.questions) return [];
-    return testData.questions.filter(q => q.subject === subjectName && q.section === section);
+    return testData.questions.filter(q => (q.subject || 'Miscellaneous') === subjectName && (q.section || 'A') === section);
   }, [testData]);
 
   const getSectionTypeLabel = useCallback((subjectName, section) => {
@@ -137,7 +171,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
 
   const getSubjectQs = useCallback((subjectName) => {
     if (!testData?.questions) return [];
-    return testData.questions.filter(q => q.subject === subjectName);
+    return testData.questions.filter(q => (q.subject || 'Miscellaneous') === subjectName);
   }, [testData]);
 
   const currentSectionQs = getSectionQs(currentSubject, currentSection);
@@ -146,7 +180,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
 
   // Check which sections exist for current subject
   const sectionsForSubject = (sub) => {
-    const qs = testData.questions.filter(q => q.subject === sub);
+    const qs = testData.questions.filter(q => (q.subject || 'Miscellaneous') === sub);
     const secs = [...new Set(qs.map(q => q.section || 'A'))];
     return secs.sort();
   };
@@ -299,6 +333,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   // ── Submit ───────────────────────────────────────────────────
   const doSubmit = (auto = false) => {
     clearInterval(timerRef.current);
+    localStorage.removeItem(`quantrex_exam_state_${testId}`);
     const timeTaken = Math.floor((Date.now() - startTimeRef.current) / 1000);
     let score = 0, correct = 0, wrong = 0, attempted = 0;
     testData?.questions?.forEach(q => {
@@ -340,7 +375,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
       }
     });
     setShowSubmitModal(false);
-    if (onSubmit) onSubmit({ score, correct, wrong, attempted, timeTaken, autoSubmitted: auto, answers, questions: testData?.questions });
+    if (onSubmit) onSubmit({ testId, score, correct, wrong, attempted, timeTaken, autoSubmitted: auto, answers, questions: testData?.questions });
   };
 
   const handleAutoSubmit = () => doSubmit(true);

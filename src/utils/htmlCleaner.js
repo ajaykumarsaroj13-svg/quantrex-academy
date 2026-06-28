@@ -1,6 +1,12 @@
 export function fixExamGoalHtml(html) {
   if (!html) return '';
   let cleaned = html;
+  if (typeof cleaned === 'object') {
+    cleaned = cleaned.en?.content || cleaned.en?.questionText || cleaned.en || cleaned.content || cleaned.questionText || '';
+  }
+  if (typeof cleaned !== 'string') {
+    cleaned = String(cleaned);
+  }
 
   // 1. Remove wrapping <center> tags which force block layout
   cleaned = cleaned.replace(/<center>/gi, '<span>').replace(/<\/center>/gi, '</span>');

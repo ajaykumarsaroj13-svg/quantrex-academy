@@ -11,7 +11,8 @@
     "options": [],
     "solution": "<p>Power (P) is defined as the rate at which work is done. It can be calculated as the dot product of the force vector $(\\overrightarrow{\\mathrm{F}})$ and the velocity vector $(\\overrightarrow{\\mathrm{V}})$.</p>\n<p>According to Newton's Second Law $(\\vec{F}=m \\vec{a})$, the acceleration is :</p>\n<p>$$ \\overrightarrow{\\mathrm{a}}=\\frac{\\overrightarrow{\\mathrm{F}}}{\\mathrm{~m}}=\\frac{2 \\mathrm{t} \\hat{\\imath}+6 \\mathrm{t}^2 \\hat{\\jmath}}{2} $$</p>\n<p>$$ \\overrightarrow{\\mathrm{a}}=\\left(\\mathrm{t} \\hat{\\imath}+3 \\mathrm{t}^2 \\hat{\\jmath}\\right) \\mathrm{m} / \\mathrm{s}^2 $$</p>\n<p>Velocity is the integral of acceleration with respect to time. Since the body begins to move, we assume the initial velocity is zero at $\\mathrm{t}=0$ :</p>\n<p>$$ \\vec{v}=\\int \\vec{a} d t=\\int_0^t\\left(t \\hat{\\imath}+3 t^2 \\hat{\\jmath}\\right) d t $$</p>\n<p>$$ \\vec{v}=\\left(\\frac{t^2}{2}\\right) \\hat{\\imath}+\\left(\\frac{3 t^3}{3}\\right) \\hat{\\jmath}=\\left(\\frac{t^2}{2}\\right) \\hat{\\imath}+t^3 \\hat{\\jmath} $$</p>\n<p>Force at $\\mathrm{t}=2$ :</p>\n<p>$$ \\overrightarrow{\\mathrm{F}}(2)=[2(2)] \\hat{i}+\\left[6(2)^2\\right] \\hat{\\jmath}=(4 \\hat{i}+24 \\hat{\\jmath}) \\mathrm{N} $$</p>\n<p>Velocity at $\\mathrm{t}=2$ :</p>\n<p>$$ \\vec{v}(2)=\\left[\\frac{(2)^2}{2}\\right] \\hat{\\imath}+(2)^3 \\hat{\\jmath}=(2 \\hat{\\imath}+8 \\hat{\\jmath}) \\mathrm{m} / \\mathrm{s} $$</p>\n<p>So, the power at $\\mathrm{t}=2 \\mathrm{~s}$ is,</p>\n<p>$$ \\mathrm{P}=\\overrightarrow{\\mathrm{F}} \\cdot \\overrightarrow{\\mathrm{v}} $$</p>\n<p>$$ \\begin{gathered} P=(4 \\hat{\\imath}+24 \\hat{\\jmath}) \\cdot(2 \\hat{\\imath}+8 \\hat{\\jmath}) \\\\ P=(4 \\times 2)+(24 \\times 8) \\\\ P=8+192=200 \\mathrm{~W} \\end{gathered} $$</p>\n<p>Therefore, the correct answer is 200 .</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 4th April Morning Shift"
+    "title": "JEE Main 2026 (Online) 4th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe7b",
@@ -30,7 +31,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\vec{F}=\\left(6 t \\hat{i}+6 t^2 \\hat{j}\\right) N \\\\\n& \\vec{F}=m \\vec{a}=\\left(6 t \\hat{i}+6 t^2 \\hat{j}\\right) \\\\\n& \\vec{a}=\\frac{\\vec{F}}{m}=\\left(3 t \\hat{i}+3 t^2 \\hat{j}\\right) \\\\\n& \\vec{v}=\\int_\\limits0^t \\vec{a} d t=\\frac{3 t^2}{2} \\hat{i}+t^3 \\hat{j} \\\\\n& P=\\vec{F} \\cdot \\vec{v}=\\left(9 t^3+6 t^5\\right) W\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 31st January Evening Shift"
+    "title": "JEE Main 2024 (Online) 31st January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe7c",
@@ -49,7 +51,8 @@
     ],
     "solution": "<p>When a body moves under the influence of a constant power, the relationship between displacement and time can be established through the concept of power. Power (P) is defined as the rate at which work is done, and it can also be expressed in terms of force (F) and velocity (v) as $ P = F \\cdot v $.</p>\n\n<p>For a constant power P and assuming the force acts in the direction of the velocity, we can analyze how displacement (s) changes with time (t). Since force can also be written as $ F = \\frac{d(mv)}{dt} $ for a constant mass m, this simplifies to $ F = m \\frac{dv}{dt} $, because mass doesn't change with time for most cases. Integrating force over a distance gives work (W), and power is the rate of doing work, thus we can connect these concepts.</p>\n\n<p>The kinetic energy (K.E) of the body is given by $ K.E = \\frac{1}{2}mv^2 $, and the work done by the force is equal to the change in kinetic energy. Considering power is constant, $ P = \\frac{dW}{dt} = \\frac{d(\\frac{1}{2}mv^2)}{dt} $. Rearranging terms to focus on velocity and integrating with respect to time will give us a relation involving velocity and time.</p>\n\n<p>For a constant mass system, and using $ P = F \\cdot v = m \\cdot a \\cdot v = m \\cdot \\frac{dv}{dt} \\cdot v $, and knowing that $ P = \\text{constant} $, we rearrange to find the relationship between velocity and time.</p>\n\n<p>Given $ P = m \\cdot v \\cdot \\frac{dv}{dt} $, we rearrange to $ \\frac{P}{m} dt = v dv $. Integrating both sides where the initial condition is when $ t = 0, v = 0 $, we get $ \\frac{P}{m} t = \\frac{1}{2} v^2 $, solving for $ v $ gives $ v \\propto t^{1/2} $, so $ v = k \\cdot t^{1/2} $ for some constant $ k $.</p>\n\n<p>The displacement $ s $ is obtained by integrating the velocity with respect to time, $ s = \\int v dt = \\int k \\cdot t^{1/2} dt = \\frac{2}{3}k \\cdot t^{3/2} $. Therefore, the displacement $ s $ is proportional to $ t^{3/2} $.</p>\n\n<p>The correct answer is <strong>Option B</strong>, $ t^{3/2} $.</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 5th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 5th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe7d",
@@ -68,7 +71,8 @@
     ],
     "solution": "Let us first find the power required to lift the water using each motor. Let $P_1$ be the power of the first motor, and $P_2$ be the power of the second motor.\n<br/><br/>\nThe work done in lifting the water is given by $W = mgh$, where $m$ is the mass of water lifted, $g$ is the acceleration due to gravity, and $h$ is the height through which the water is lifted. In this case, $m = 300\\mathrm{~kg}$ and $h = 100\\mathrm{~m}$ for the first motor, and $m = 50\\mathrm{~kg}$ and $h = 100\\mathrm{~m}$ for the second motor.\n<br/><br/>\nThe work done in lifting the water in 5 minutes by the first motor is:<br/><br/>\n$$W_1 = mgh = (300\\mathrm{~kg})(9.8\\mathrm{~m/s^2})(100\\mathrm{~m}) = 294000\\mathrm{~J}$$\n<br/><br/>\nThe power required to do this work in 5 minutes is:<br/><br/>\n$$P_1 = \\frac{W_1}{t_1} = \\frac{294000\\mathrm{~J}}{300\\mathrm{~s}} = 980\\mathrm{~W}$$\n<br/><br/>\nThe work done in lifting the water in 2 minutes by the second motor is:<br/><br/>\n$$W_2 = mgh = (50\\mathrm{~kg})(9.8\\mathrm{~m/s^2})(100\\mathrm{~m}) = 49000\\mathrm{~J}$$\n<br/><br/>\nThe power required to do this work in 2 minutes is:<br/><br/>\n$$P_2 = \\frac{W_2}{t_2} = \\frac{49000\\mathrm{~J}}{120\\mathrm{~s}} = 408.33\\mathrm{~W}$$\n<br/><br/>\nThe ratio of the powers of the two motors is:<br/><br/>\n$$\\frac{P_1}{P_2} = \\frac{980\\mathrm{~W}}{408.33\\mathrm{~W}} \\approx 2.4$$\n<br/><br/>\nWe are given that this ratio is equal to:<br/><br/>\n$$\\frac{3 \\sqrt{x}}{\\sqrt{x}+1}$$\n<br/><br/>\nWe can solve for $x$ as follows:<br/><br/>\n$$\\frac{3 \\sqrt{x}}{\\sqrt{x}+1} = 2.4$$<br/><br/>\n$$3\\sqrt{x} = 2.4(\\sqrt{x}+1)$$<br/><br/>\n$$3\\sqrt{x} = 2.4\\sqrt{x} + 2.4$$<br/><br/>\n$$(3-2.4)\\sqrt{x} = 2.4$$<br/><br/>\n$$0.6\\sqrt{x} = 2.4$$<br/><br/>\n$$\\sqrt{x} = 4$$<br/><br/>\n$$x = 16$$<br/><br/>\nTherefore, the value of $x$ is 16.",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 13th April Morning Shift"
+    "title": "JEE Main 2023 (Online) 13th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe7e",
@@ -87,7 +91,8 @@
     ],
     "solution": "<p>$${{dm} \\over {dt}} = 0.5$$ kg/s</p>\n<p>$$v = 5$$ m/s</p>\n<p>$$F = {{vdm} \\over {dt}} = 2.5$$ kg m/s<sup>2</sup></p>\n<p>$$P = \\overline F \\,.\\,\\overline v  = (2.5)(5)$$ W</p>\n<p>$$ = 12.5$$ W</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 27th July Morning Shift"
+    "title": "JEE Main 2022 (Online) 27th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe7f",
@@ -106,7 +111,8 @@
     ],
     "solution": "$$P = F.v = mav$$<br><br>$$P = {{mvdv} \\over {dt}}$$<br><br>$$\\int\\limits_0^t {Pdt}  = m\\int\\limits_0^v {vdv} $$<br><br>$$Pt = {{m{v^2}} \\over 2}$$<br><br>$$v = \\sqrt {{{2Pt} \\over m}} $$<br><br>$${{dx} \\over {dt}} = \\sqrt {{{2Pt} \\over m}} $$<br><br>$$\\int {dx}  = \\int {\\sqrt {{{2Pt} \\over m}} } dt$$<br><br>$$x \\propto {t^{3/2}}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 18th March Morning Shift"
+    "title": "JEE Main 2021 (Online) 18th March Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe80",
@@ -125,7 +131,8 @@
     ],
     "solution": "P = constant<br><br>$${1 \\over 2}$$mv<sup>2</sup> = Pt<br><br>$$\\Rightarrow$$ v $$\\propto$$ $$\\sqrt t $$<br><br>$${{dx} \\over {dt}} = C\\sqrt t $$ [C = constant]<br><br>by integration.<br><br>$$x = C{{{t^{{1 \\over 2} + 1}}} \\over {{1 \\over 2} + 1}}$$<br><br>$$x \\propto {t^{3/2}}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 20th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 20th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe81",
@@ -144,7 +151,8 @@
     ],
     "solution": "P = const.<br><br>$$P = Fv = {{m{v^2}dv} \\over {dx}}$$<br><br>$$\\int\\limits_0^x {{P \\over m}dx}  = \\int\\limits_0^v {{v^2}dv} $$<br><br>$${{Px} \\over m} = {{{v^3}} \\over 3}$$<br><br>$${\\left( {{{3Px} \\over m}} \\right)^{1/3}} = v = {{dx} \\over {dt}}$$<br><br>$${\\left( {{{3P} \\over m}} \\right)^{1/3}}\\int\\limits_0^t {dt}  = \\int\\limits_0^x {{x^{ - 1/3}}} dx$$<br><br>$$ \\Rightarrow x = {\\left( {{{8P} \\over {9m}}} \\right)^{1/2}}{t^{3/2}}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 27th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe82",
@@ -163,7 +171,8 @@
     ],
     "solution": "$$P = Fv$$<br><br>$$P = m{{dv} \\over {dt}}v$$<br><br>$$ \\Rightarrow $$ $$vdv = {P \\over m}dt$$\n<br><br>Integrating both sides, we get<br><br>$${V^2} = k't$$<br><br>$$ \\Rightarrow $$ V = k\"$$\\sqrt t $$\n<br><br>$$ \\Rightarrow $$ $${{ds} \\over {dt}}$$ = k\"$$\\sqrt t $$\n<br><br>$$ \\Rightarrow $$ $$\\int {ds}  = \\int {k''\\sqrt t } dt$$\n\n<br><br>$$ \\Rightarrow $$ s $$ \\propto $$ t<sup>3/2</sup>",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 3rd September Evening Slot"
+    "title": "JEE Main 2020 (Online) 3rd September Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe83",
@@ -182,7 +191,8 @@
     ],
     "solution": "Net force on motor will be\n<br><br>F<sub>m</sub> = [920 + 68(10)]g + 6000\n= 22000 N\n<br><br>So, required power for motor\n<br><br>P = F<sub>m</sub>.V = 22000$$ \\times $$3 = 66000 W",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 7th January Evening Slot"
+    "title": "JEE Main 2020 (Online) 7th January Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe84",
@@ -201,7 +211,8 @@
     ],
     "solution": "<br><br>F = mg + f\n<br><br>F = 20000 + 4000 = 24000 N\n<br><br>We know, Power(P) = Fv\n<br><br>$$ \\Rightarrow $$ v = $${P \\over F}$$ = $${{60 \\times 746} \\over {24000}}$$\n<br><br>$$ \\Rightarrow $$ v $$ \\approx $$ 1.9 m/s",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 7th January Morning Slot"
+    "title": "JEE Main 2020 (Online) 7th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe85",
@@ -220,21 +231,8 @@
     ],
     "solution": "We know, \n<br><br>centripetal acceleration = $${{{V^2}} \\over R}$$\n<br><br>$$ \\therefore $$&nbsp;&nbsp;&nbsp;According to question, \n<br><br>$${{{V^2}} \\over R}$$ = $${n^2}R{t^2}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;V<sup>2</sup> = n<sup>2</sup> R<sup>2</sup> t<sup>2</sup>\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;V = nRt\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$${{dV} \\over {dt}}$$ = nR\n<br><br>Power (P) = Force (F) $$ \\times $$ Velocity (V)\n<br><br>= M $${{dV} \\over {dt}}$$(V)\n<br><br>= M (nR) (nRt)\n<br><br>= Mn<sup>2</sup>R<sup>2</sup>t",
     "__v": 0,
-    "title": "JEE Main 2016 (Online) 10th April Morning Slot"
-  },
-  {
-    "_id": "6a2bdc802762cf4b5769fe86",
-    "question_id": "zVh3bL6jKMa13fxE",
-    "chapterId": "power",
-    "subject": "Physics",
-    "topic": "power",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "<p>To determine the speed of a particle after $ t = 5 $ seconds, given a constant power, the following steps should be taken :</p>\n\n<p><p><strong>Power Equation:</strong> Power is the rate at which work is done, and work is the change in kinetic energy :</p>\n<p>$$ P = \\frac{d(W)}{dt} = \\frac{d}{dt} \\left( \\frac{1}{2} m v^2 \\right) $$</p></p>\n<p><p><strong>Given Data :</strong></p></p>\n\n\n<p><p>Mass of the particle ($ m $) = 0.2 kg</p></p>\n<p><p>Constant power ($ P $) = 0.5 W</p></p>\n<p><p>Initial speed ($ v_0 $) = 0 m/s</p></p>\n\n\n<p><p><strong>Differentiating Kinetic Energy with Respect to Time :</strong></p>\n<p>$$ P = \\frac{d}{dt} \\left( \\frac{1}{2} m v^2 \\right) = m v \\frac{dv}{dt} $$</p></p>\n<p><p><strong>Rearranging to Solve for $ v \\frac{dv}{dt} $ :</strong></p>\n<p>$$ 0.5 = 0.2 \\cdot v \\cdot \\frac{dv}{dt} $$</p>\n<p>$$ \\frac{dv}{dt} = \\frac{5}{2v} $$</p></p>\n<p><p><strong>Integrating Both Sides :</strong></p>\n<p>$$ v \\, dv = \\frac{5}{2} \\, dt $$</p>\n<p>$$ \\int v \\, dv = \\int \\frac{5}{2} \\, dt $$</p>\n<p>$$ \\frac{v^2}{2} = \\frac{5t}{2} + C $$</p></p>\n<p><p><strong>Applying Initial Condition (when $ t = 0 $, $ v = 0 $) :</strong></p>\n<p>$$ 0 = \\frac{5 \\cdot 0}{2} + C $$</p>\n<p>$$ C = 0 $$</p></p>\n<p><p><strong>Solving for $ v $ :</strong></p>\n<p>$$ \\frac{v^2}{2} = \\frac{5t}{2} $$</p>\n<p>$$ v^2 = 5t $$</p>\n<p>$$ v = \\sqrt{5t} $$</p></p>\n<p><p><strong>Speed After 5 Seconds :</strong></p>\n<p>$$ v = \\sqrt{5 \\cdot 5} = \\sqrt{25} = 5 \\, \\text{m/s} $$</p></p>\n\n<p>Thus, the speed of the particle after 5 seconds is <strong>5 m/s</strong>.</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2013 Paper 1 Offline"
+    "title": "JEE Main 2016 (Online) 10th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc802762cf4b5769fe87",
@@ -253,6 +251,7 @@
     ],
     "solution": "$$u = 0;v = u + aT;v = aT$$\n<br><br>Instantaneous power $$ = F \\times v = m.\\,a.\\,at = m.{a^2}.t$$\n<br><br>$$\\therefore$$ Instantaneous power $$ = {{m{v^2}t} \\over {{T^2}}}$$",
     "__v": 0,
-    "title": "AIEEE 2005"
+    "title": "AIEEE 2005",
+    "exam": "JEE Main"
   }
 ]

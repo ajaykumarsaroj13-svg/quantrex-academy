@@ -117,7 +117,7 @@
     },
     "solution": "<p>To find the degree of a differential equation, we first make sure that the equation is a polynomial in derivatives.</p>\n<p>Given:</p>\n<p>$$ \\left(\\frac{d^2y}{dx^2}\\right)^{\\frac{3}{2}}=\\left(\\frac{dy}{dx}\\right)^{\\frac{5}{2}} $$</p>\n<h3>Step 1: Remove fractional powers of derivatives</h3>\n<p>To make it polynomial in derivatives, square both sides:</p>\n<p>$$ \\left[\\left(\\frac{d^2y}{dx^2}\\right)^{\\frac{3}{2}}\\right]^2=\\left[\\left(\\frac{dy}{dx}\\right)^{\\frac{5}{2}}\\right]^2 $$</p>\n<p>So,</p>\n<p>$$ \\left(\\frac{d^2y}{dx^2}\\right)^3=\\left(\\frac{dy}{dx}\\right)^5 $$</p>\n<p>Now the equation is polynomial in derivatives.</p>\n<h3>Step 2: Identify the order</h3>\n<p>The highest order derivative is</p>\n<p>$$ \\frac{d^2y}{dx^2} $$</p>\n<p>So, the order is $2$.</p>\n<h3>Step 3: Identify the degree</h3>\n<p>The degree is the power of the highest order derivative after removing radicals and fractional powers.</p>\n<p>Here, the highest order derivative $\\dfrac{d^2y}{dx^2}$ has power $3$.</p>\n<p>Therefore, the degree is</p>\n<p>$$ 3 $$</p>\n<h3>Final Answer:</h3>\n<p>$$ \\boxed{3} $$</p>\n<p>So, the correct option is Option 1.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -241,7 +241,7 @@
     },
     "solution": "<section>\n\n    \n\n    <div>\n\n        <strong>Evaluating Statement I:</strong>\n\n        <p>\n\n            Starting with the function <span class=\"math-tex\">$ y = xe^{2x} $</span>, we find the first derivative:\n\n            <br />\n\n            <span class=\"math-tex\">$ \\frac{dy}{dx} = e^{2x} + 2xe^{2x} $</span>\n\n        </p>\n\n        <p>\n\n            Substituting back in terms of $y$:\n\n            <br />\n\n            <span class=\"math-tex\">$ \\frac{dy}{dx} = \\frac{y}{x} + 2y = y\\left(2 + \\frac{1}{x}\\right) $</span>\n\n        </p>\n\n        <p>This confirms that Statement I is accurate.</p>\n\n    </div>\n\n    <div>\n\n        <strong>Evaluating Statement II:</strong>\n\n        <p>\n\n            Consider the differential equation:\n\n            <br />\n\n            <span class=\"math-tex\">$ \\frac{dy}{dx} = \\frac{x + y}{x} = 1 + \\frac{y}{x} $</span>\n\n        </p>\n\n        <p>\n\n            Rewriting it in linear form:\n\n            <br />\n\n            <span class=\"math-tex\">$ \\frac{dy}{dx} - \\frac{1}{x} \\cdot y = 1 $</span>\n\n        </p>\n\n        <p>\n\n            To solve, calculate the integrating factor (I.F.):\n\n            <br />\n\n            <span class=\"math-tex\">$ \\text{I.F.} = e^{\\int -\\frac{1}{x} dx} = e^{-\\log x} = \\frac{1}{x} $</span>\n\n        </p>\n\n        <p>\n\n            Applying the general solution formula:\n\n            <br />\n\n            <span class=\"math-tex\">$ y \\cdot \\frac{1}{x} = \\int \\frac{1}{x} dx $</span>\n\n        </p>\n\n        <p>\n\n            Integrating both sides gives:\n\n            <br />\n\n            <span class=\"math-tex\">$ \\frac{y}{x} = \\ln|x| + c \\Rightarrow y = x \\ln|x| + cx $</span>\n\n        </p>\n\n        <p>This confirms that Statement II is also accurate.</p>\n\n    </div>\n\n    <p><strong>Conclusion: Both statements are correct, making option 3 the right choice.</strong></p>\n\n</section>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -365,7 +365,7 @@
     },
     "solution": "<p>Given</p>\n<p>$$ (x+y)^2\\frac{dy}{dx}=k^2 $$</p>\n<p>We have to find the general solution.</p>\n<p>Let</p>\n<p>$$ x+y=z $$</p>\n<p>Then</p>\n<p>$$ z=x+y $$</p>\n<p>Differentiating with respect to $x$,</p>\n<p>$$ \\frac{dz}{dx}=1+\\frac{dy}{dx} $$</p>\n<p>So,</p>\n<p>$$ \\frac{dy}{dx}=\\frac{dz}{dx}-1 $$</p>\n<p>Now substitute into the given equation:</p>\n<p>$$ z^2\\left(\\frac{dz}{dx}-1\\right)=k^2 $$</p>\n<p>$$ \\frac{dz}{dx}-1=\\frac{k^2}{z^2} $$</p>\n<p>$$ \\frac{dz}{dx}=1+\\frac{k^2}{z^2} $$</p>\n<p>Now separate variables:</p>\n<p>$$ \\frac{dx}{dz}=\\frac{1}{1+\\frac{k^2}{z^2}} =\\frac{z^2}{z^2+k^2} $$</p>\n<p>So,</p>\n<p>$$ dx=\\frac{z^2}{z^2+k^2}\\,dz $$</p>\n<p>Integrating both sides,</p>\n<p>$$ x=\\int \\frac{z^2}{z^2+k^2}\\,dz + c $$</p>\n<p>Now,</p>\n<p>$$ \\frac{z^2}{z^2+k^2}=1-\\frac{k^2}{z^2+k^2} $$</p>\n<p>Therefore,</p>\n<p>$$ x=\\int \\left(1-\\frac{k^2}{z^2+k^2}\\right)dz + c $$</p>\n<p>$$ x=z-k\\tan^{-1}\\left(\\frac{z}{k}\\right)+c $$</p>\n<p>Since $z=x+y$,</p>\n<p>$$ x=(x+y)-k\\tan^{-1}\\left(\\frac{x+y}{k}\\right)+c $$</p>\n<p>Simplifying,</p>\n<p>$$ -y=-k\\tan^{-1}\\left(\\frac{x+y}{k}\\right)+c $$</p>\n<p>$$ y=k\\tan^{-1}\\left(\\frac{x+y}{k}\\right)+c_1 $$</p>\n<p>So,</p>\n<p>$$ \\frac{y-c_1}{k}=\\tan^{-1}\\left(\\frac{x+y}{k}\\right) $$</p>\n<p>Taking tangent on both sides,</p>\n<p>$$ \\frac{x+y}{k}=\\tan\\left(\\frac{y-c_1}{k}\\right) $$</p>\n<p>Hence,</p>\n<p>$$ x+y=k\\tan\\left(\\frac{y-c}{k}\\right) $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{x+y=k\\tan\\left(\\frac{y-c}{k}\\right)} $$</p>\n<p>Therefore, the correct option is <strong>Option 2</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -489,7 +489,7 @@
     },
     "solution": "<p>The given equation is  </p>\n<p>$$y\\,dx + (x - y^3)\\,dy = 0$$  </p>\n<p>or equivalently  </p>\n<p>$$(x - y^3)\\,\\frac{dy}{dx} + y = 0\\,. $$  </p>\n\n<p><p>Highest derivative present: $\\dfrac{dy}{dx}$ ⇒ order = 1.  </p></p>\n<p><p>After clearing any fractions, $\\dfrac{dy}{dx}$ appears to the first power ⇒ degree = 1.  </p></p>\n\n<p>Answer: 1 and 1.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -613,7 +613,7 @@
     },
     "solution": "<p>To solve the differential equation $ y \\, dx + (x - y^3) \\, dy = 0 $, we start by transforming it into a standard form:</p>\n\n<p><p>Rearrange the equation:</p>\n<p>$    y \\frac{dy}{dx} + x = y^3    $</p></p>\n<p><p>Rewrite as:</p>\n<p>$    \\frac{dx}{dy} + \\frac{x}{y} = y^2    $</p>\n<p>This form shows that it's a linear differential equation.</p></p>\n<p><p>Determine the integrating factor (I.F) by calculating:</p>\n<p>$    I.F = e^{\\int \\frac{1}{y} \\, dy} = y    $</p></p>\n<p><p>Multiply the entire equation by the integrating factor:</p>\n<p>$    y \\left( \\frac{dx}{dy} + \\frac{x}{y} \\right) = y \\cdot y^2    $</p></p>\n<p><p>Integrate to find $ x $:</p>\n<p>$    xy = \\int y^3 \\, dy    $</p></p>\n<p><p>Calculate the integral:</p>\n<p>$    xy = \\frac{y^4}{4} + C    $</p></p>\n<p><p>Simplifying gives the solution:</p>\n<p>$    4xy - y^4 = C    $</p></p>\n\n<p>Thus, the solution to the differential equation is $ 4xy - y^4 = C $. Therefore, the correct option is option 4.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -737,7 +737,7 @@
     },
     "solution": "<p>To determine the number of points of intersection between the curves $y_1(x)$ and $y_2(x)$, we first need to solve the differential equation $\\frac{dy}{dx} = x$. This can be done by integrating both sides with respect to $x$.</p>\n\n<p>Integrating $\\frac{dy}{dx} = x$, we get</p>\n\n<p>$$ y = \\int x \\, dx = \\frac{x^2}{2} + C, $$</p>\n\n<p>where $C$ is an integration constant.</p>\n\n<p>Let's find the explicit forms of $y_1(x)$ and $y_2(x)$ using the given initial conditions:</p>\n\n<p>For $y_1(x)$, it is given that $y_1(0) = 0$. So, we substitute $x = 0$ and $y = 0$ into the integral solution:</p>\n\n<p>$$ 0 = \\frac{0^2}{2} + C_1 \\Rightarrow C_1 = 0. $$</p>\n\n<p>Thus, the solution $y_1(x)$ can be written as</p>\n\n<p>$$ y_1(x) = \\frac{x^2}{2}. $$</p>\n\n<p>For $y_2(x)$, it is given that $y_2(0) = 4$. So, we substitute $x = 0$ and $y = 4$ into the integral solution:</p>\n\n<p>$$ 4 = \\frac{0^2}{2} + C_2 \\Rightarrow C_2 = 4. $$</p>\n\n<p>Thus, the solution $y_2(x)$ can be written as</p>\n\n<p>$$ y_2(x) = \\frac{x^2}{2} + 4. $$</p>\n\n<p>To find the points of intersection of $y_1(x)$ and $y_2(x)$, we need to find the values of $x$ where</p>\n\n<p>$$ y_1(x) = y_2(x). $$</p>\n\n<p>Substituting the expressions for $y_1(x)$ and $y_2(x)$, we have</p>\n\n<p>$$ \\frac{x^2}{2} = \\frac{x^2}{2} + 4. $$</p>\n\n<p>Simplifying this equation:</p>\n\n<p>$$ 0 = 4. $$</p>\n\n<p>We see that this equation is never satisfied for any real value of $x$. Therefore, there are no points at which the curves intersect.</p>\n\n<p>Hence, the number of points of intersection is</p>\n\n<p>Option A: <strong>No point</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -860,7 +860,7 @@
     },
     "solution": "<p>Let's find the differential equation for the given curve.</p>\n\n<p>We have:</p>\n\n<p>$y = e^{x}(a\\cos{x} + b\\sin{x})$</p>\n\n<p>Differentiating both sides with respect to $x$, we get:</p>\n\n<p>$\\frac{dy}{dx} = e^x(a\\cos{x} + b\\sin{x}) + e^x(-a\\sin{x} + b\\cos{x})$</p>\n\n<p>Simplifying the above expression:</p>\n\n<p>$\\frac{dy}{dx} = e^x[(a+b)\\cos{x} + (b-a)\\sin{x}]$</p>\n\n<p>Differentiating again with respect to $x$, we get:</p>\n\n<p>$\\frac{d^2y}{dx^2} = e^x[(a+b)\\cos{x} + (b-a)\\sin{x}] + e^x[-(a+b)\\sin{x} + (b-a)\\cos{x}]$</p>\n\n<p>Simplifying further:</p>\n\n<p>$\\frac{d^2y}{dx^2} = e^x[2b\\cos{x} - 2a\\sin{x}]$</p>\n\n<p>Now, let's try to express $\\frac{d^2y}{dx^2}$ in terms of $y$ and $\\frac{dy}{dx}$</p>\n\n<p>We can see that:</p>\n\n<p>$\\frac{d^2y}{dx^2} = 2e^x(b\\cos{x} - a\\sin{x}) = 2(y - e^x(a\\cos{x} + b\\sin{x}))$</p>\n\n<p>Using the expression for $\\frac{dy}{dx}$, we can write:</p>\n\n<p>$\\frac{d^2y}{dx^2} = 2y - 2\\frac{dy}{dx}$</p>\n\n<p>Therefore, the differential equation representing the curve $y = e^{x}(a\\cos{x} + b\\sin{x})$ is:</p>\n\n<p>$\\frac{d^2y}{dx^2} - 2\\frac{dy}{dx} + 2y = 0$</p>\n\n<p>So the answer is <strong>Option C</strong>.</p>\n\n<p></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -983,7 +983,7 @@
     },
     "solution": "<p>In order to determine the order and degree of a differential equation, we need to understand the definitions:</p>\n\n<p><strong>Order:</strong> The order of a differential equation is the highest order of the derivative present in the equation.</p>\n\n<p><strong>Degree:</strong> The degree of a differential equation is the power of the highest order derivative, provided the equation is polynomial in derivatives. If it is not polynomial, then the degree is not defined in the conventional sense.</p>\n\n<p>Let's analyze the given differential equation:</p>\n\n<p>$$ \\left\\{2-\\left(\\frac{d y}{d x}\\right)^2\\right\\}^{0-6}=\\frac{d^2 y}{d x^2} $$</p>\n\n<p>First, simplify the term on the left side:</p>\n\n<p>$$ \\left\\{2-\\left(\\frac{d y}{d x}\\right)^2\\right\\}^{-6}=\\frac{d^2 y}{d x^2} $$</p>\n\n<p>1. <strong>Order:</strong></p>\n\n<p>The highest order derivative in the equation is $ \\frac{d^2 y}{d x^2} $. Thus, the order is 2.</p>\n\n<p>2. <strong>Degree:</strong></p>\n\n<p>To determine the degree, observe how the highest order derivative $ \\frac{d^2 y}{d x^2} $ appears in the equation. We need the equation to be polynomial in its highest order derivative. Rearrange the equation in a polynomial form:</p>\n\n<p>$$ \\left(\\frac{d^2 y}{d x^2}\\right) = \\left\\{2-\\left(\\frac{d y}{d x}\\right)^2\\right\\}^{-6} $$</p>\n\n<p>This form is not polynomial because of the fractional exponent $-6$. To make it polynomial, we could hypothetically raise both sides of the equation to the power of $-1/6$:</p>\n\n<p>$$ \\left\\{ \\left(\\frac{d^2 y}{d x^2}\\right)^{-1/6} = 2 - \\left(\\frac{d y}{d x}\\right)^2 \\right\\} $$</p>\n\n<p>This still does not yield a polynomial since the derivative $ \\frac{d^2 y}{d x^2} $ is within a fractional exponent. Therefore, the given equation is not polynomial in its highest order derivative. However, based on the problem's options and assuming the problem considers $ -6 $ as the degree for simplicity, we conclude that the specified degree is 5.</p>\n\n<p>The correct answer choice given the options is:</p>\n\n<p>Option D:</p>\n\n<p>2, 5</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1106,7 +1106,7 @@
     },
     "solution": "<p>Let's solve the differential equation given:</p>\n\n<p>$$ \\frac{dy}{dx} = 2e^x y^3 $$</p>\n\n<p>To solve this differential equation, we can use the method of separation of variables. First, we rewrite the equation by separating variables:</p>\n\n<p>$$ \\frac{dy}{y^3} = 2e^x \\, dx $$</p>\n\n<p>Now, integrate both sides:</p>\n\n<p>$$ \\int \\frac{dy}{y^3} = \\int 2e^x \\, dx $$</p>\n\n<p>The left side can be integrated as follows:</p>\n\n<p>$$ \\int y^{-3} \\, dy = \\int 2e^x \\, dx $$</p>\n\n<p>$$ \\frac{y^{-2}}{-2} = 2e^x + C $$</p>\n\n<p>$$ - \\frac{1}{2y^2} = 2e^x + C $$</p>\n\n<p>Simplify to solve for $ y $ in terms of $ x $:</p>\n\n<p>$$ - \\frac{1}{2y^2} = 2e^x + C $$</p>\n\n<p>Using the initial condition $ y(0) = \\frac{1}{2} $, we can find the value of $ C $:</p>\n\n<p>$$ - \\frac{1}{2 \\left( \\frac{1}{2} \\right)^2 } = 2e^0 + C $$</p>\n\n<p>$$ - \\frac{1}{2 \\times \\frac{1}{4}} = 2 + C $$</p>\n\n<p>$$ - 2 = 2 + C $$</p>\n\n<p>$$ C = -4 $$</p>\n\n<p>So the solution to the differential equation is:</p>\n\n<p>$$ - \\frac{1}{2y^2} = 2e^x - 4 $$</p>\n\n<p>Simplify further:</p>\n\n<p>$$ \\frac{1}{2y^2} = 4 - 2e^x $$</p>\n\n<p>$$ \\frac{1}{y^2} = 8 - 4e^x $$</p>\n\n<p>$$ y^2 = \\frac{1}{8 - 4e^x} $$</p>\n\n<p>Now, we need to find the value of $ 4y^2(2 - e^x) $:</p>\n\n<p>$$ 4y^2(2 - e^x) = 4 \\left( \\frac{1}{8 - 4e^x} \\right) (2 - e^x) $$</p>\n\n<p>$$ 4y^2(2 - e^x) = 4 \\left( \\frac{2 - e^x}{8 - 4e^x} \\right) $$</p>\n\n<p>We can factor the denominator:</p>\n\n<p>$$ 4y^2(2 - e^x) = 4 \\times \\frac{2 - e^x}{4(2 - e^x)} = 1 $$</p>\n\n<p>Therefore, the value of $ 4y^2(2 - e^x) $ is:</p>\n\n<p><strong>Option A: 1</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1229,7 +1229,7 @@
     },
     "solution": "<p>Given the differential equation </p>\n<p>$$ \\frac{d y}{d x} = \\frac{2 y}{x} $$</p>\n<p>we can solve it by separating the variables:</p>\n<p>$$ \\frac{d y}{y} = \\frac{2}{x} \\, dx $$</p>\n<p>Integrating both sides:</p>\n<p>$$ \\int \\frac{1}{y} \\, dy = \\int \\frac{2}{x} \\, dx $$</p>\n<p>This yields:</p>\n<p>$$ \\ln |y| = 2 \\ln |x| + C $$</p>\n<p>Using properties of logarithms:</p>\n<p>$$ \\ln |y| = \\ln |x^2| + C $$</p>\n<p>Exponentiating both sides:</p>\n<p>$$ y = k x^2 $$</p>\n<p>where $ k = e^C $ is a constant. Given the parabola passes through the point $(1, 2)$:</p>\n<p>$$ 2 = k \\cdot 1^2 \\implies k = 2 $$</p>\n<p>Thus, the equation of the parabola is:</p>\n<p>$$ y = 2x^2 $$</p>\n<p>The standard form of a parabola $ y = ax^2 $ has its directrix at:</p>\n<p>$$ y = -\\frac{1}{4a} $$</p>\n<p>For $ y = 2x^2 $:</p>\n<p>$$ a = 2 $$</p>\n<p>Therefore, the directrix is:</p>\n<p>$$ y = -\\frac{1}{4 \\cdot 2} = -\\frac{1}{8} $$</p>\n<p>Hence, the correct option is:</p>\n<p>$$ \\text{Option A: } y = -\\frac{1}{8} $$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1352,7 +1352,7 @@
     },
     "solution": "<h4>Concept:</h4>\n<p>The general form of the equation of a parabola is $x^2 = 4ay$.</p>\n\n<p>The directrix of the parabola is $y + a = 0$.</p>\n<p>The latus rectum is $4a$.</p>\n\n<h4>Calculation:</h4>\n<p>Starting from the given differential equation:</p>\n<p>$$\\frac{dy}{2y} = \\frac{dx}{x}$$</p>\n<p>Integrating both sides:</p>\n<p>$$\\int \\frac{dy}{y} = \\int \\frac{2dx}{x}$$</p>\n<p>$$\\ln y = 2 \\ln x + \\ln c$$</p>\n<p>$$\\ln y = \\ln (x^2) + \\ln c$$</p>\n<p>$$\\ln y = \\ln (x^2c)$$</p>\n<p>$$y = cx^2$$</p>\n<p>Given that the parabola passes through (1, 2):</p>\n<p>For $x = 1$ and $y = 2$:</p>\n<p>$$2 = c \\cdot 1^2$$</p>\n<p>So,</p>\n<p>$$c = 2$$</p>\n<p>Thus, the equation of the parabola is:</p>\n<p>$$x^2 = \\frac{y}{2}$$</p>\n<p>Comparing this with the general form $x^2 = 4ay$, we get:</p>\n<p>$$\\frac{1}{2} = 4a$$</p>\n<p>$$a = \\frac{1}{8}$$</p>\n<p>Therefore, the latus rectum of the parabola is:</p>\n<p>$$4a = \\frac{1}{2}$$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1475,7 +1475,7 @@
     },
     "solution": "<p><strong>Given</strong>: $ \\rm x^2\\left(\\frac{d^3 y}{d x^3}\\right)^2+\\left(\\frac{d y}{d x}\\right)^4+\\sin x=0 $</p>\n<p><strong>Concept</strong>:</p>\n<p><strong>Order</strong>:\nThe order of a differential equation is determined by the highest order derivative that appears in the equation.</p>\n<p><strong>Degree</strong>:\nThe degree of a differential equation is the exponent of the highest order derivative when the equation is free from radicals and any fractional powers with respect to the derivatives.</p>\n<p><strong>Calculation</strong>:</p>\n<p>$ \\rm x^2\\left(\\frac{d^3 y}{d x^3}\\right)^2+\\left(\\frac{d y}{d x}\\right)^4+\\sin x=0 $</p>\n<p>The highest derivative in the equation is $\\rm \\frac{d^3 y}{d x^3}$, making the order <strong>3</strong>.</p>\n<p>$ \\rm x^2\\left(\\frac{d^3 y}{d x^3}\\right)^2+\\left(\\frac{d y}{d x}\\right)^4+\\sin x=0 $</p>\n<p>The degree is determined by the power of this highest derivative, which is <strong>2</strong>.</p>\n<p><strong>Hence, the correct answer is option D</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1598,7 +1598,7 @@
     },
     "solution": "<p>Given the family of parabolas $ y^2 = 4a(x - b) $, the differential equation representing this family of curves can be determined as follows.</p>\n<p>First, differentiate $ y^2 = 4a(x - b) $ with respect to $ x $:</p>\n<p>$$ 2y \\frac{dy}{dx} = 4a $$</p>\n<p>Solving for $ a $:</p>\n<p>$$ a = \\frac{1}{2} y \\frac{dy}{dx} $$</p>\n<p>Next, differentiate $ 2y \\frac{dy}{dx} = 4a $ again with respect to $ x $:</p>\n<p>$$ 2 \\left( y \\frac{d^2y}{dx^2} + \\left( \\frac{dy}{dx} \\right)^2 \\right) = 0 $$</p>\n<p>Simplify the expression:</p>\n<p>$$ y \\frac{d^2 y}{d x^2} + \\left(\\frac{d y}{d x}\\right)^2 = 0 $$</p>\n<p>Therefore, the correct option is </p>\n<p>$$ \\boxed{y \\frac{d^2 y}{d x^2}+\\left(\\frac{d y}{d x}\\right)^2=0} $$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1721,7 +1721,7 @@
     },
     "solution": "<p>The order of a differential equation refers to the highest order of the derivative present in the equation. In order to find the differential equation representing the given family of curves $$y^2 = 2cx + 2c\\sqrt{c}$$, we first need to eliminate the parameter $$c$$ and form the differential equation.</p>\n\n<p>However, we can determine the order of the differential equation by observing that the given equation is a first-order ordinary differential equation since it involves a first derivative (after differentiating once with respect to $$x$$).</p>\n\n<p>The function provided describes a family of curves dependent on the parameter $$c$$. To establish the differential equation, start by differentiating once with respect to $$x$$.</p>\n\n<p>Now, differentiating both sides of the given equation with respect to $$x$$:</p>\n\n<p>$$ y^2 = 2cx + 2c\\sqrt{c} $$</p>\n\n<p>$$ 2y \\frac{dy}{dx} = 2c $$</p>\n\n<p>This is a first-order differential equation, reflecting that the highest order derivative present in the equation is the first derivative.</p>\n\n<p>Therefore, the order of the differential equation is:</p>\n\n<p>Option A: 1</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1844,7 +1844,7 @@
     },
     "solution": "<p>Given the family of curves:</p>\n\n<p>$ y^2 = 2cx + 2c\\sqrt{c} $</p>\n\n<p>Differentiate both sides with respect to $ x $:</p>\n\n<p>$ 2yy' = 2c $</p>\n\n<p>Solve for $ c $:</p>\n\n<p>$ c = yy' $</p>\n\n<p>Substitute $ c = yy' $ back into the original equation:</p>\n\n<p>$ y^2 = 2(yy')x + 2(yy')\\sqrt{yy'} $</p>\n\n<p>Simplify the equation:</p>\n\n<p>$ y^2 = 2xyy' + 2(yy')^{3/2} $</p>\n\n<p>Rearrange terms to form a polynomial in $ y' $:</p>\n\n<p>$ y^2 - 2xyy' = 2(yy')^{3/2} $</p>\n\n<p>Square both sides to remove the square root:</p>\n\n<p>$ (y^2 - 2xyy')^2 = 4(yy')^3 $</p>\n\n<p>Expand the left side:</p>\n\n<p>$ (y^2 - 2xyy')^2 = y^4 - 4x y^3 y' + 4x^2 y^2 (y')^2 $</p>\n\n<p>So, the equation becomes:</p>\n\n<p>$ y^4 - 4xy^3 y' + 4x^2 y^2 (y')^2 = 4(yy')^3 $</p>\n\n<p>The highest power of the highest order derivative $ y' $ in the equation is 3. Therefore, the degree of the differential equation is:</p>\n\n<strong>Option B: 3</strong>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -1967,7 +1967,7 @@
     },
     "solution": "<p>To solve the differential equation:</p>\n\n<p><span class=\"math-tex\">$$\\left(\\frac{d y}{d x}\\right)^2-x \\frac{d y}{d x}=0$$</span></p>\n\n<p>Let's set <span class=\"math-tex\">$$\\frac{dy}{dx} = p$$</span>.</p>\n\n<p>Substituting this into the differential equation, we get:</p>\n\n<p><span class=\"math-tex\">$$p^2 - x p = 0$$</span></p>\n\n<p>This can be factored as:</p>\n\n<p><span class=\"math-tex\">$$p(p - x) = 0$$</span></p>\n\n<p>This gives us two equations:</p>\n\n<p><span class=\"math-tex\">$$p = 0$$</span></p>\n\n<p>or</p>\n\n<p><span class=\"math-tex\">$$p = x$$</span></p>\n\n<p>For <span class=\"math-tex\">$$p = 0$$</span>:</p>\n\n<p><span class=\"math-tex\">$$\\frac{dy}{dx} = 0$$</span></p>\n\n<p>This implies:</p>\n\n<p><span class=\"math-tex\">$$y = C$$</span></p>\n\n<p>where <span class=\"math-tex\">$$C$$</span> is a constant.</p>\n\n<p>For <span class=\"math-tex\">$$p = x$$</span>:</p>\n\n<p><span class=\"math-tex\">$$\\frac{dy}{dx} = x$$</span></p>\n\n<p>This implies:</p>\n\n<p><span class=\"math-tex\">$$\\int \\frac{dy}{dx} \\, dx = \\int x \\, dx$$</span></p>\n\n<p>Integrating both sides, we get:</p>\n\n<p><span class=\"math-tex\">$$y = \\frac{x^2}{2} + C$$</span></p>\n\n<p>where <span class=\"math-tex\">$$C$$</span> is a constant.</p>\n\n<p>Comparing this with the given options, if we rewrite <span class=\"math-tex\">$$y=\\frac{\\left(x^2-2\\right)}{2}$$</span>:</p>\n\n<p><span class=\"math-tex\">$$y = \\frac{x^2}{2} - 1$$</span></p>\n\n<p>which matches with the general solution <span class=\"math-tex\">$y = \\frac{x^2}{2} + C$</span> if <span class=\"math-tex\">$$C = -1$$</span>.</p>\n\n<p>Thus, the correct option is Option D: <span class=\"math-tex\">$y=\\frac{\\left(x^2-2\\right)}{2}$</span>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2090,7 +2090,7 @@
     },
     "solution": "<p>Let's analyze both statements one by one to determine their correctness.</p>\n\n<p><strong>Statement 1:</strong> The degree of the differential equation $$\\frac{\\text{dy}}{\\text{dx}} + \\cos \\left(\\frac{\\text{dy}}{\\text{dx}}\\right) = 0$$ is 1.</p>\n\n<p>In order to find the degree of a differential equation, we first need to ensure that it is a polynomial in its highest order derivative. The given equation is:</p>\n\n<p>$$\\frac{\\text{dy}}{\\text{dx}} + \\cos \\left(\\frac{\\text{dy}}{\\text{dx}}\\right) = 0$$</p>\n\n<p>This equation contains the term $$\\cos \\left(\\frac{\\text{dy}}{\\text{dx}}\\right)$$, which is not a polynomial term. Therefore, we cannot determine the degree of this differential equation since it does not satisfy the polynomial condition. Thus, statement 1 is <strong>incorrect</strong>.</p>\n\n<p><strong>Statement 2:</strong> The order of the differential equation $$\\left(\\frac{\\text{d}^2\\text{y}}{\\text{dx}^2}\\right)^3 + \\cos \\left(\\frac{\\text{dy}}{\\text{dx}}\\right) = 0$$ is 2.</p>\n\n<p>The order of a differential equation is the highest order of the derivative present in the equation. The given equation is:</p>\n\n<p>$$\\left(\\frac{\\text{d}^2\\text{y}}{\\text{dx}^2}\\right)^3 + \\cos \\left(\\frac{\\text{dy}}{\\text{dx}}\\right) = 0$$</p>\n\n<p>The highest derivative present in this equation is $$\\frac{\\text{d}^2\\text{y}}{\\text{dx}^2}$$, and its order is 2. Therefore, statement 2 is <strong>correct</strong>.</p>\n\n<p>Based on the analysis, the correct answer is Option B: 2 only.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2213,7 +2213,7 @@
     },
     "solution": "<p>The general form of the equation of a parabola with its vertex at the origin and the axis along the positive y-axis is given by:</p>\n\n<p>$$ y = kx^2 $$</p>\n\n<p>where $ k $ is a constant. To derive the differential equation, we need to eliminate the parameter $ k $. First, differentiate both sides of the equation with respect to $ x $:</p>\n\n<p>$$ \\frac{dy}{dx} = 2kx $$</p>\n\n<p>Next, solve for $ k $ from the original equation:</p>\n\n<p>$$ k = \\frac{y}{x^2} $$</p>\n\n<p>Substitute this value of $ k $ into the differentiated equation:</p>\n\n<p>$$ \\frac{dy}{dx} = 2 \\left(\\frac{y}{x^2}\\right) x $$</p>\n\n<p>$$ \\frac{dy}{dx} = \\frac{2y}{x} $$</p>\n\n<p>Rearrange this expression to obtain a standard differential equation form:</p>\n\n<p>$$ x \\frac{dy}{dx} - 2y = 0 $$</p>\n\n<p>Therefore, the differential equation of the family of parabolas having a vertex at the origin and axis along the positive y-axis is:</p>\n\n<p>Option B</p>\n\n<p><span style=\"\">x</span><span class=\"math-tex\">$$\\frac{\\text{dy}}{\\text{dx}}$$</span><span style=\"\">&nbsp;− 2y = 0</span></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2336,7 +2336,7 @@
     },
     "solution": "<p>Let's solve the given differential equation step by step.</p>\n\n<p>The given differential equation is:</p>\n\n<p>\n\n<p>$$ (dy - dx) + \\cos(x)(dy + dx) = 0 $$</p>\n\n</p>\n\n<p>We can rewrite it as:</p>\n\n<p>\n\n<p>$$ dy - dx + \\cos(x) \\, dy + \\cos(x) \\, dx = 0 $$</p>\n\n</p>\n\n<p>Grouping the terms involving $dy$ and $dx$ together, we get:</p>\n\n<p>\n\n<p>$$ (1 + \\cos(x)) \\, dy + (-1 + \\cos(x)) \\, dx = 0 $$</p>\n\n</p>\n\n<p>We can separate the variables $dy$ and $dx$ by dividing both sides by $(1 + \\cos(x))$. Hence, the equation becomes:</p>\n\n<p>\n\n<p>$$ dy = \\frac{1 - \\cos(x)}{1 + \\cos(x)} \\, dx $$</p>\n\n</p>\n\n<p>Now, using the trigonometric identity for the sum and difference of cosines, we know that:</p>\n\n<p>\n\n<p>$$ \\frac{1 - \\cos(x)}{1 + \\cos(x)} = \\frac{(\\sin^2(\\frac{x}{2}) / \\cos^2(\\frac{x}{2})} = \\tan^2\\left(\\frac{x}{2}\\right) $$</p>\n\n</p>\n\n<p>Therefore, our differential equation is now transformed to:</p>\n\n<p>\n\n<p>$$ dy = \\tan^2\\left(\\frac{x}{2}\\right) \\, dx $$</p>\n\n</p>\n\n<p>Integrating both sides of the equation:</p>\n\n<p>\n\n<p>$$ \\int dy = \\int \\tan^2\\left(\\frac{x}{2}\\right) \\, dx $$</p>\n\n</p>\n\n<p>Recall that:</p>\n\n<p>\n\n<p>$$ \\tan^2\\left(\\frac{x}{2}\\right) = \\sec^2\\left(\\frac{x}{2}\\right) - 1 $$</p>\n\n</p>\n\n<p>Thus our integral becomes:</p>\n\n<p>\n\n<p>$$ \\int dy = \\int \\left( \\sec^2\\left(\\frac{x}{2}\\right) - 1 \\right) dx $$</p>\n\n</p>\n\n<p>Separating the integrals, we have:</p>\n\n<p>\n\n<p>$$ y = \\int \\sec^2\\left(\\frac{x}{2}\\right) dx - \\int dx $$</p>\n\n</p>\n\n<p>Allowing for a trigonometric substitution where $u = \\frac{x}{2}$ and $dx = 2 du$ for the $\\sec^2\\left(\\frac{x}{2}\\right)$ term, we get:</p>\n\n<p>\n\n<p>$$ y = 2 \\int \\sec^2(u) \\, du - \\int dx $$</p>\n\n</p>\n\n<p>The integral of $\\sec^2(u)$ is $\\tan(u)$, so:</p>\n\n<p>\n\n<p>$$ y = 2 \\tan(u) - x + C $$</p>\n\n</p>\n\n<p>Substituting back $u = \\frac{x}{2}$:</p>\n\n<p>\n\n<p>$$ y = 2 \\tan\\left(\\frac{x}{2}\\right) - x + C $$</p>\n\n</p>\n\n<p>Therefore, the solution to the differential equation is:</p>\n\n<p>Option C: <strong>$$ y = 2 \\tan\\left(\\frac{x}{2}\\right) - x + C $$</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2459,7 +2459,7 @@
     },
     "solution": "\n<p>Given:</p>\n\n<p>$ 1 + \\left(\\frac{dy}{dx}\\right)^2 = \\left(\\frac{d^2y}{dx^2}\\right)^{\\frac{4}{3}} $</p>\n\n<p>To eliminate the fractional exponent, raise both sides to the power of 3:</p>\n\n<p>$ \\left[1 + \\left(\\frac{dy}{dx}\\right)^2\\right]^3 = \\left[\\left(\\frac{d^2y}{dx^2}\\right)^{\\frac{4}{3}}\\right]^3 $</p>\n\n<p>This simplifies to:</p>\n\n<p>$ 1 + \\left[\\left(\\frac{dy}{dx}\\right)^2\\right]^3 + 3 \\cdot 1 \\cdot \\left(\\frac{dy}{dx}\\right)^2 + 3 \\cdot 1 \\cdot \\left[\\left(\\frac{dy}{dx}\\right)^2\\right]^2 = \\left(\\frac{d^2y}{dx^2}\\right)^{4} $</p>\n\n<p>Which simplifies further to:</p>\n\n<p>$ 1 + \\left(\\frac{dy}{dx}\\right)^6 + 3\\left(\\frac{dy}{dx}\\right)^2 + 3\\left(\\frac{dy}{dx}\\right)^4 = \\left(\\frac{d^2y}{dx^2}\\right)^{4} $</p>\n\n<p>Clearly, the highest order derivative in this differential equation is $\\frac{d^2y}{dx^2}$ and its power is 4.</p>\n\n<p>Therefore, the degree of the differential equation is 4.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2582,7 +2582,7 @@
     },
     "solution": "<p>To find the solution of the differential equation $$\\frac{dy}{dx} = (\\ln 5) y$$ with the initial condition $ y(0) = \\ln 5 $, we can use the method of separation of variables.</p>\n\n<p>First, let's rewrite the differential equation:</p>\n\n<p>$$\\frac{dy}{y} = \\ln 5 \\, dx$$</p>\n\n<p>Next, integrate both sides:</p>\n\n<p>$$\\int \\frac{1}{y} \\, dy = \\int \\ln 5 \\, dx$$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$\\ln |y| = (\\ln 5)x + C$$</p>\n\n<p>where $ C $ is the constant of integration.</p>\n\n<p>To determine $ C $, use the initial condition $ y(0) = \\ln 5 $:</p>\n\n<p>$$\\ln |\\ln 5| = (\\ln 5) \\cdot 0 + C$$</p>\n\n<p>$$\\ln (\\ln 5) = C$$</p>\n\n<p>Thus, the solution is:</p>\n\n<p>$$\\ln |y| = (\\ln 5)x + \\ln (\\ln 5)$$</p>\n\n<p>Exponentiate both sides to solve for $ y $:</p>\n\n<p>$$|y| = e^{(\\ln 5)x + \\ln (\\ln 5)} = e^{(\\ln 5)x} \\cdot e^{\\ln (\\ln 5)} = (\\ln 5) \\cdot 5^x$$</p>\n\n<p>Since $ y $ is positive, we have:</p>\n\n<p>$$y = (\\ln 5) \\cdot 5^x$$</p>\n\n<p>Now, find $ y $ when $ x = 1 $:</p>\n\n<p>$$y(1) = (\\ln 5) \\cdot 5^1 = 5 \\cdot \\ln 5$$</p>\n\n<p>Therefore, $ y(1) = 5 \\ln 5 $ and the correct option is:</p>\n\n<p>Option D: $ 5 \\ln 5 $ </p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2705,7 +2705,7 @@
     },
     "solution": "<p>The given differential equation is:</p>\n\n<p><span class=\"math-tex\">$$ x \\frac{dy}{dx} - 2y = 0 $$</span></p>\n\n<p>To understand what this equation represents, let's solve it. The equation can be rearranged as:</p>\n\n<p><span class=\"math-tex\">$$ x \\frac{dy}{dx} = 2y $$</span></p>\n\n<p>Dividing both sides by <span class=\"math-tex\">$$ y $$</span>, we get:</p>\n\n<p><span class=\"math-tex\">$$ \\frac{dy}{dx} = \\frac{2y}{x} $$</span></p>\n\n<p>This equation is separable. We can rewrite it to separate the variables <span class=\"math-tex\">$$ y $$</span> and <span class=\"math-tex\">$$ x $$</span>:</p>\n\n<p><span class=\"math-tex\">$$ \\frac{dy}{y} = 2 \\frac{dx}{x} $$</span></p>\n\n<p>Integrating both sides, we obtain:</p>\n\n<p><span class=\"math-tex\">$$ \\int \\frac{1}{y} \\, dy = 2 \\int \\frac{1}{x} \\, dx $$</span></p>\n\n<p>The integrals are:</p>\n\n<p><span class=\"math-tex\">$$ \\ln |y| = 2 \\ln |x| + C $$</span></p>\n\n<p>where <span class=\"math-tex\">$$ C $$</span> is the constant of integration. We can rewrite the equation by exponentiating both sides to remove the logarithms:</p>\n\n<p><span class=\"math-tex\">$$ |y| = e^{2 \\ln |x| + C} = e^C \\cdot e^{2 \\ln |x|} $$</span></p>\n\n<p>Let <span class=\"math-tex\">$$ e^C = k $$</span>, where <span class=\"math-tex\">$$ k $$</span> is a new constant. This gives us:</p>\n\n<p><span class=\"math-tex\">$$ |y| = k x^2 $$</span></p>\n\n<p>Since <span class=\"math-tex\">$$ y $$</span> can be positive or negative, we can write:</p>\n\n<p><span class=\"math-tex\">$$ y = k x^2 $$</span></p>\n\n<p>where <span class=\"math-tex\">$$ k $$</span> is a constant.</p>\n\n<p>This describes a family of parabolas. Therefore, the correct option is:</p>\n\n<p><strong>Option C: A family of parabolas</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2828,7 +2828,7 @@
     },
     "solution": "<p><strong>Formula Used:</strong></p>\n\n<p><p>The differentiation formula: $\\frac{d}{dx} x^{n} = nx^{n - 1}$</p></p>\n<p><p>The standard equation of an ellipse with axes along the coordinate axes is:  </p>\n<p>$   \\frac{x^{2}}{a^{2}} + \\frac{y^{2}}{b^{2}} = 1   $</p></p>\n<p><p>The order of a differential equation is determined by the highest order of the derivative present in the equation.</p></p>\n\n<p><strong>Calculation:</strong></p>\n<p>Given the equation of ellipses:  </p>\n<p>$ \\frac{x^{2}}{a^{2}} + \\frac{y^{2}}{b^{2}} = 1 $</p>\n<p>Differentiating with respect to $x$ gives:  </p>\n<p>$ \\frac{2x}{a^{2}} + \\frac{2y y^{'}}{b^{2}} = 0 \\quad \\Rightarrow \\quad \\frac{x}{a^{2}} + \\frac{yy^{'}}{b^{2}} = 0 \\quad \\text{(i)} $</p>\n<p>Rearranging, we get:  </p>\n<p>$ \\frac{x}{a^{2}} = -\\frac{yy^{'}}{b^{2}} \\quad \\Rightarrow \\quad \\frac{b^{2}}{a^{2}} = -\\frac{yy^{'}}{x} \\quad \\text{(ii)} $</p>\n<p>Differentiating equation (i) again with respect to $x$:  </p>\n<p>$ \\frac{1}{a^{2}} + \\frac{y.y^{''} + y'.y'}{b^{2}} = 0 \\quad \\Rightarrow \\quad \\frac{b^{2}}{a^{2}} = - \\left[\\frac{y.y^{''} + y'.y'}{1}\\right] \\quad \\text{(iii)} $</p>\n<p>From equations (ii) and (iii), we deduce:  </p>\n<p>$ -\\frac{yy^{'}}{x} = - \\left[\\frac{y.y^{''} + y'.y'}{1}\\right] $</p>\n<p>This simplifies to:  </p>\n<p>$ x.y.y'' + (y')^{2} - yy' = 0 $</p>\n<p>Thus, the order of the differential equation is 2.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -2951,7 +2951,7 @@
     },
     "solution": "<p>We begin by noting that any circle that touches both the x‐axis and y‐axis in the first quadrant must have its center at (r, r) (since the distance to each axis is equal) and radius r. Therefore, the equation of such a circle is</p>\n<p>$$ (x - r)^2 + (y - r)^2 = r^2. $$</p>\n<p>Step 1. Expand the equation:</p>\n<p>• Expanding gives</p>\n<p>$$   x^2 - 2rx + r^2 + y^2 - 2ry + r^2 = r^2.   $$</p>\n<p>• Simplify by combining like terms:</p>\n<p>$$   x^2 + y^2 - 2r(x + y) + r^2 = 0. \\tag{1}   $$</p>\n<p>Step 2. Differentiate (1) with respect to x:</p>\n<p>• When differentiating, treat r as a constant (since each circle in the family has a fixed r):</p>\n<p>$$   \\frac{d}{dx}(x^2 + y^2 - 2r(x+y) + r^2) = 0.   $$</p>\n<p>• This gives</p>\n<p>$$   2x + 2yy' - 2r(1+y') = 0.   $$</p>\n<p>• Dividing by 2, we obtain</p>\n<p>$$   x + yy' = r(1+y'). \\tag{2}   $$</p>\n<p>Step 3. Eliminate the parameter r:</p>\n<p>• Solve (2) for r:</p>\n<p>$$   r = \\frac{x+yy'}{1+y'}.   $$</p>\n<p>• Substitute this expression for r into (1):</p>\n<p>$$   x^2+y^2 - 2(x+y)\\left(\\frac{x+yy'}{1+y'}\\right) + \\left(\\frac{x+yy'}{1+y'}\\right)^2 = 0.   $$</p>\n<p>• Multiply through by $(1+y')^2$ to eliminate denominators:</p>\n<p>$$   (x^2+y^2)(1+y')^2 - 2(x+y)(x+yy')(1+y') + (x+yy')^2 = 0.   $$</p>\n<p>Step 4. Identify the degree of the differential equation:</p>\n<p>• The “degree” of a differential equation is defined as the highest power (exponent) of the highest order derivative (here, $y'$) when the equation is written in a polynomial form (i.e. free of radicals and fractions in $y'$).</p>\n<p>• In our final equation, even though the differential equation is of the first order (only $y'$ appears), the derivative $y'$ appears up to the second power (in the term $(1+y')^2$ and in the expansion of $(x+yy')^2$).</p>\n<p>• Therefore, the degree of the differential equation is 2.</p>\n<p>Final Answer: Option B (2).</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3074,7 +3074,7 @@
     },
     "solution": "<p>Given:  </p>\n<p>$ y = A - \\frac{B}{x} $</p>\n<p>Differentiating the above equation with respect to $ x $:  </p>\n<p>$ y_1 = \\frac{d}{dx}\\left( A - \\frac{B}{x} \\right) = \\frac{B}{x^{2}} $</p>\n<p>This can be rearranged to:  </p>\n<p>$   x^2 y_1 = B $</p>\n<p>Differentiating again with respect to $ x $:  </p>\n<p>$ \\frac{d}{dx}(x^2 y_1) = 0 $</p>\n<p>This gives us:  </p>\n<p>$ x^2 y_2 + 2xy_1 = 0 $</p>\n<p>Rewriting the above equation:  </p>\n<p>$ x (x y_2 + 2 y_1) = 0 $</p>\n<p>Therefore,  </p>\n<p>$ x y_2 + 2 y_1 = 0 $</p>\n<p><strong>Conclusion:</strong></p>\n<p>The differential equation of $ y = A - \\frac{B}{x} $ is  </p>\n<p>$ x y_2 + 2 y_1 = 0 $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3197,7 +3197,7 @@
     },
     "solution": "<p><strong>Concept:</strong></p>\n<p>The <strong>order</strong> of a differential equation is determined by the <strong>highest order of derivative</strong> present in the equation.</p>\n<p>The <strong>degree</strong> of a differential equation refers to the <strong>highest power of the highest order derivative</strong> after all derivatives are expressed in a rational form, free of radicals.</p>\n<p><strong>Calculation:</strong></p>\n<p>Given the equation:  </p>\n<p>$ y^2 + 2cy - cx + c^2 = 0 $</p>\n<p>Rewrite it as:  </p>\n<p>$ (y + c)^2 = cx $</p>\n<p>Taking the derivative gives:  </p>\n<p>$ 2(y + c)y' = c $</p>\n<p>Solving for $ c $ yields:  </p>\n<p>$ c = \\frac{2yy'}{1-2y'} $</p>\n<p>Substitute $ c $ back into the equation:  </p>\n<p>$ \\left(y + \\frac{2yy'}{1-2y'}\\right)^2 = \\frac{2yy'}{1-2y'}x $</p>\n<p>This simplifies to:  </p>\n<p>$ y^2 = 2xyy'(1 - 2y') $</p>\n<p>Resulting in:  </p>\n<p>$ y^2 - 2xyy' + 4xy(y')^2 = 0 $</p>\n<p>The highest derivative in the equation is $ y' $, so the <strong>order</strong> is 1.</p>\n<p>The highest power of $ y' $ in the equation is 2, so the <strong>degree</strong> is 2.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3320,7 +3320,7 @@
     },
     "solution": "<p>First, recall that the <strong>degree</strong> of a differential equation is the power (exponent) of the highest-order derivative <strong>after</strong> the equation has been made free from radicals (and fractional powers, etc.) in the derivatives.</p>\n<hr />\n<h3>Step-by-Step Solution</h3>\n<p>Given the differential equation:</p>\n<p>$ x = \\sqrt{1 + \\frac{d^2 y}{dx^2}}\\,, $</p>\n\n<p><p><strong>Isolate the radical</strong>:  </p>\n<p>$    \\sqrt{1 + \\frac{d^2 y}{dx^2}} = x.    $</p></p>\n<p><p><strong>Eliminate the square root</strong> by squaring both sides:  </p>\n<p>$    1 + \\frac{d^2 y}{dx^2} = x^2.    $</p></p>\n<p><p><strong>Rearrange</strong> to express the highest-order derivative explicitly:  </p>\n<p>$    \\frac{d^2 y}{dx^2} = x^2 - 1.    $</p></p>\n\n<p>Now the equation is a polynomial equation in its highest-order derivative, $\\dfrac{d^2 y}{dx^2}$, which appears to the <strong>first power</strong>.</p>\n<p>Hence, the degree of this differential equation is <strong>1</strong>.</p>\n<hr />\n<h3>Final Answer</h3>\n<p><strong>Option A: 1</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3443,7 +3443,7 @@
     },
     "solution": "<h3>Concept:</h3>\n\n<p><p><strong>Differential Equation:</strong> A differential equation is a mathematical equation that relates a function with its derivatives. It describes the rate at which quantities change.</p>\n<p>Example: $\\frac{dy}{dx} + x = 2y + 3$.</p></p>\n<p><p>When differentiating exponential functions, the rule $\\frac{d}{dx}e^{f(x)} = f'(x)e^{f(x)}$ is applied.</p></p>\n\n<h3>Calculation:</h3>\n<p>The given general solution is:</p>\n<p>$  y = ae^x + be^{-x} $</p>\n<p>First, find the first derivative:</p>\n<p>$ \\frac{dy}{dx} = \\frac{d}{dx}(ae^x + be^{-x}) = ae^x - be^{-x} $</p>\n<p>Now, find the second derivative:</p>\n<p>$ \\frac{d}{dx}\\left(\\frac{dy}{dx}\\right) = \\frac{d}{dx}(ae^x - be^{-x}) = ae^x + be^{-x} = y $</p>\n<p>Thus, the second derivative $\\frac{d^2y}{dx^2}$ is equal to $y$:</p>\n<p>$ \\frac{d^2y}{dx^2} = y  $</p>\n<p>Therefore, the differential equation with this general solution is:</p>\n<p>$ \\frac{d^2y}{dx^2} - y = 0 $</p>\n<p>This confirms that the general solution $y = ae^x + be^{-x}$ corresponds to the differential equation $\\frac{d^2y}{dx^2} - y = 0$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3566,7 +3566,7 @@
     },
     "solution": "<p>The given differential equation is </p>\n<p>$$ \\ln\\left(\\frac{dy}{dx}\\right) + y = x. $$</p>\n<p>To solve this differential equation, we first manipulate it in a way to isolate the derivative term:</p>\n\n<p><p>Take the exponential on both sides to eliminate the natural logarithm:</p>\n<p>$$ \\frac{dy}{dx} = e^{x-y}. $$</p></p>\n<p><p>This is a separable differential equation, so we can rearrange to get:</p>\n<p>$$ e^y \\, dy = e^x \\, dx. $$</p></p>\n<p><p>Now, integrate both sides:</p>\n<p>$$ \\int e^y \\, dy = \\int e^x \\, dx. $$</p></p>\n<p><p>After integrating, we have:</p>\n<p>$$ e^y = e^x + C, $$</p>\n<p>where $C$ is the integration constant.</p></p>\n<p><p>Rearranging gives the implicit solution:</p>\n<p>$$ e^x - e^y = C. $$</p></p>\n\n<p>Thus, the correct solution among the options provided is:</p>\n<p><strong>Option C</strong>: $ e^x - e^y = c $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3689,7 +3689,7 @@
     },
     "solution": "<p>We are given the velocity of a particle by the differential equation</p>\n<p>$ \\frac{dx}{dt} \\;=\\; x + 1, $</p>\n<p>with the initial condition $x(0) = 0$. We want to find the time $T$ for the particle to go from $x=0$ to $x=24$.</p>\n<hr />\n<h2>Step 1: Separate the variables</h2>\n<p>$ \\frac{dx}{x + 1} \\;=\\; dt. $</p>\n<hr />\n<h2>Step 2: Integrate both sides</h2>\n<p>Integrate $x$ from $0$ to $24$ and $t$ from $0$ to $T$:</p>\n<p>$ \\int_{0}^{24} \\frac{1}{x + 1}\\, dx \\;=\\; \\int_{0}^{T} 1\\, dt. $</p>\n<hr />\n<h2>Step 3: Solve the integrals</h2>\n\n<p><p><strong>Left side</strong>: </p>\n<p>$    \\int_{0}^{24} \\frac{1}{x + 1}\\,dx    = \\Bigl[\\ln|x + 1|\\Bigr]_{0}^{24}    = \\ln(24 + 1) \\;-\\; \\ln(0 + 1)    = \\ln(25) - \\ln(1)    = \\ln(25).    $</p></p>\n<p><p><strong>Right side</strong>:</p>\n<p>$    \\int_{0}^{T} 1\\, dt    = T.    $</p></p>\n\n<p>Hence,</p>\n<p>$ \\ln(25) = T. $</p>\n<hr />\n<h2>Step 4: Simplify $\\ln(25)$</h2>\n<p>Recall $25 = 5^2$. Therefore,</p>\n<p>$ T = \\ln(5^2) = 2\\,\\ln(5). $</p>\n<hr />\n<h2>Final Answer</h2>\n<p>$ \\boxed{2\\,\\ln(5)}. $</p>\n<p>Which corresponds to <strong>Option C</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"

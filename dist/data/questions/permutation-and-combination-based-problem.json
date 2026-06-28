@@ -16,7 +16,8 @@
     ],
     "solution": "<p>$\\begin{aligned} & \\mathrm{P}=(6 \\text { tail })+(4 \\text { tail }+1 \\text { head })+(2 \\text { tail }+2 \\text { head })+(3 \\text { head }) \\\\ & \\mathrm{P}=\\left(\\frac{1}{2}\\right)^6+\\frac{5!}{1!4!}\\left(\\frac{1}{2}\\right)^5+\\frac{4!}{2!2!}\\left(\\frac{1}{2}\\right)^4+\\left(\\frac{1}{2}\\right)^3 \\\\ & \\mathrm{P}=\\frac{1}{64}+\\frac{5}{32}+\\frac{3}{8}+\\frac{1}{8} \\\\ & \\mathrm{P}=\\frac{1+10+24+8}{64}=\\frac{43}{64}=\\frac{\\mathrm{m}}{\\mathrm{n}} \\\\ & \\mathrm{m}+\\mathrm{n}=107\\end{aligned}$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 2nd April Evening Shift"
+    "title": "JEE Main 2026 (Online) 2nd April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9e4",
@@ -30,7 +31,8 @@
     "options": [],
     "solution": "<p>Total number of ways to select any $3$ different dates from $31$ days is</p>\n<p>$$ \\binom{31}{3} $$</p>\n<p>Now we count the number of selections in which the three dates are in an increasing A.P.</p>\n<p>Let the three dates be</p>\n<p>$$ a-d,\\ a,\\ a+d $$</p>\n<p>where $d \\ge 1$ is an integer.</p>\n<p>So we need all triples of the form</p>\n<p>$$ x,\\ x+r,\\ x+2r $$</p>\n<p>with</p>\n<p>$$ x \\ge 1,\\quad x+2r \\le 31 $$</p>\n<p>For a fixed common difference $r$, the first term $x$ can be chosen from</p>\n<p>$$ 1,2,3,\\dots,31-2r $$</p>\n<p>So number of A.P.s with common difference $r$ is</p>\n<p>$$ 31-2r $$</p>\n<p>Now $r$ can take values</p>\n<p>$$ 1,2,3,\\dots,15 $$</p>\n<p>because</p>\n<p>$$ x+2r \\le 31 \\Rightarrow 2r \\le 30 \\Rightarrow r \\le 15 $$</p>\n<p>Hence total favourable selections are</p>\n<p>$$ \\sum_{r=1}^{15} (31-2r) $$</p>\n<p>This is</p>\n<p>$$ 15\\cdot 31 - 2\\sum_{r=1}^{15} r $$</p>\n<p>$$ = 465 - 2\\cdot \\frac{15\\cdot 16}{2} $$</p>\n<p>$$ = 465 - 240 $$</p>\n<p>$$ = 225 $$</p>\n<p>Therefore,</p>\n<p>$$ P=\\frac{225}{\\binom{31}{3}} $$</p>\n<p>Now,</p>\n<p>$$ \\binom{31}{3}=\\frac{31\\cdot 30\\cdot 29}{6}=4495 $$</p>\n<p>So,</p>\n<p>$$ P=\\frac{225}{4495} $$</p>\n<p>Divide numerator and denominator by $5$:</p>\n<p>$$ P=\\frac{45}{899} $$</p>\n<p>Thus,</p>\n<p>$$ a=45,\\quad b=899 $$</p>\n<p>Therefore,</p>\n<p>$$ a+b=45+899=944 $$</p>\n<p>So the required answer is</p>\n<p>$$ \\boxed{944} $$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 4th April Evening Shift"
+    "title": "JEE Main 2026 (Online) 4th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9e5",
@@ -49,7 +51,8 @@
     ],
     "solution": "<p>We want every pair drawn to have <b>one blue</b> and <b>one green</b>. Since there are 6 blue and 6 green balls, we will draw a total of 6 pairs.</p>\n<p>For each pair to be mixed (one of each colour), we must match the 6 blue balls with the 6 green balls in pairs. The number of such “good” pairings is counted by choosing and matching one ball of one colour with one ball of the other colour.</p>\n<p>The total number of ways to split 12 balls into 6 pairs (without caring about the order of drawing inside a pair) is counted separately. The required probability is:</p>\n<p>Probability $=\\frac{\\lfloor 6 \\times\\lfloor 6}{\\left(\\frac{12}{\\left(\\lfloor 2)^6\\lfloor 6\\right.}\\right) \\times\\lfloor 6}=\\frac{16}{231}$</p>\n<p>So, the probability that each drawn pair consists of one blue and one green ball is $\\frac{16}{231}$.</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 6th April Evening Shift"
+    "title": "JEE Main 2026 (Online) 6th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9e6",
@@ -68,7 +71,8 @@
     ],
     "solution": "<p>$$ \\begin{aligned} & \\text { Mean }=8 \\\\ & \\frac{2+4+10+x+y+12+14}{7}=8 \\\\ & \\Rightarrow x+y=14 \\\\ & \\text { variance }=16 \\\\ & 16=\\frac{2^2+4^2+10^2+x^2+y^2+12^2+14^2+y^2}{7}-8^2 \\\\ & \\Rightarrow x^2+y^2=100 \\\\ & \\therefore x=8, y=6 \\\\ & \\text { New set }:\\{1,2,3,4,5,6\\} \\\\ & \\text { Required probability }=1-P(\\text { both number are } \\geq 4) \\\\ & =1-\\frac{{ }^3 C_2}{{ }^6 C_2} \\\\ & =1-\\frac{3}{15} \\\\ & =\\frac{4}{5} \\end{aligned} $$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 21st January Morning Shift"
+    "title": "JEE Main 2026 (Online) 21st January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9e7",
@@ -87,7 +91,8 @@
     ],
     "solution": "<p>Total ways for selecting any two squares $={ }^{16} \\mathrm{C}_2=120$</p>\n<p>Total ways for selecting common side squares</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7j7ickv/f2a29438-464d-430b-9d74-a709b8b147e9/2dc69bf0-f2c3-11ef-839d-2d40708f8cbd/file-jaoe38c1m7j7ickw.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7j7ickv/f2a29438-464d-430b-9d74-a709b8b147e9/2dc69bf0-f2c3-11ef-839d-2d40708f8cbd/file-jaoe38c1m7j7ickw.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 23rd January Evening Shift Mathematics - Probability Question 32 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp;=24\\\\\n&amp;\\text { so required probability }\\\\\n&amp;\\begin{aligned}\n&amp; =1-\\frac{24}{120} \\\\\n&amp; =\\frac{4}{5}\n\\end{aligned}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 23rd January Evening Shift"
+    "title": "JEE Main 2025 (Online) 23rd January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9e8",
@@ -106,7 +111,8 @@
     ],
     "solution": "<p>A, E,G R D N</p>\n<p>$$\\text { Probabllity }(\\mathrm{P})=\\frac{\\text { favourable case }}{\\text { Total case }}$$</p>\n<p>(when A & E are in order)</p>\n<p>Total case $=6$ !</p>\n<p>Favourable case $={ }^6 \\mathrm{C}_2 .4$ !</p>\n<p>$$P=\\frac{(15) 4!}{(30) 4!}$$</p>\n<p>Probablity when not in order $=1-\\frac{1}{2}=\\frac{1}{2}$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 28th January Evening Shift"
+    "title": "JEE Main 2025 (Online) 28th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9e9",
@@ -120,7 +126,8 @@
     "options": [],
     "solution": "<p>Total number of ways of selecting $3$ distinct numbers from $\\{1,2,\\dots,40\\}$ is</p>\n<p>$$\\binom{40}{3}=\\frac{40\\cdot 39\\cdot 38}{6}=9880.$$</p>\n<p>Now, three numbers in increasing G.P. can be written as</p>\n<p>$$a,\\; ar,\\; ar^2 \\quad (r>1).$$</p>\n<p>Let $r=\\dfrac{p}{q}$ in lowest form, where $p>q$ and $\\gcd(p,q)=1$.</p>\n<p>Then</p>\n<p>$$a,\\; a\\frac{p}{q},\\; a\\frac{p^2}{q^2}$$</p>\n<p>must all be integers. So $a$ must be a multiple of $q^2$. Write</p>\n<p>$$a=kq^2 \\quad (k\\in\\mathbb{N}).$$</p>\n<p>Then the triple becomes</p>\n<p>$$kq^2,\\; kpq,\\; kp^2,$$</p>\n<p>which is strictly increasing since $p>q$.</p>\n<p>Also all must be $\\le 40$. Since</p>\n<p>$$q^2 < pq < p^2,$$</p>\n<p>it is enough to ensure</p>\n<p>$$kp^2 \\le 40 \\;\\Rightarrow\\; k \\le \\left\\lfloor \\frac{40}{p^2}\\right\\rfloor.$$</p>\n<p>So for each coprime pair $(p,q)$ with $p>q$, the number of valid triples equals $\\left\\lfloor \\dfrac{40}{p^2}\\right\\rfloor$.</p>\n<p>Now $p^2\\le 40 \\Rightarrow p\\le 6$. Count for each $p$:</p>\n<ul>\n<li><p>$p=2$: $q=1$ (1 value), $\\left\\lfloor \\frac{40}{4}\\right\\rfloor=10$  $\\Rightarrow 10$</p></li>\n<li><p>$p=3$: $q=1,2$ (2 values), $\\left\\lfloor \\frac{40}{9}\\right\\rfloor=4$  $\\Rightarrow 2\\cdot 4=8$</p></li>\n<li><p>$p=4$: $q=1,3$ (2 values), $\\left\\lfloor \\frac{40}{16}\\right\\rfloor=2$ $\\Rightarrow 2\\cdot 2=4$</p></li>\n<li><p>$p=5$: $q=1,2,3,4$ (4 values), $\\left\\lfloor \\frac{40}{25}\\right\\rfloor=1$ $\\Rightarrow 4\\cdot 1=4$</p></li>\n<li><p>$p=6$: $q=1,5$ (2 values), $\\left\\lfloor \\frac{40}{36}\\right\\rfloor=1$ $\\Rightarrow 2\\cdot 1=2$</p></li>\n</ul>\n<p>Hence number of favourable triples:</p>\n<p>$$10+8+4+4+2=28.$$</p>\n<p>Therefore required probability is</p>\n<p>$$\\frac{28}{9880}=\\frac{7}{2470} \\quad (\\gcd(7,2470)=1).$$</p>\n<p>So $m=7,\\; n=2470 \\Rightarrow m+n=2477.$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 2nd April Morning Shift"
+    "title": "JEE Main 2025 (Online) 2nd April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9ea",
@@ -139,7 +146,8 @@
     ],
     "solution": "<p>$$\\begin{array}{lll}\n3 E, & 1 D, & 8 P \\\\\n3 E, & 2 D, & 7 P \\\\\n4 E, & 1 D, & 7 P \\\\\n4 E, & 2 D, & 6 P\n\\end{array}$$</p>\n<p>$$\\begin{aligned}\n& P=\\frac{{ }^4 C_3 \\cdot{ }^2 C_1 \\cdot{ }^{10} C_8+{ }^4 C_3 \\cdot{ }^2 C_2 \\cdot{ }^{10} C_7+{ }^4 C_4 \\cdot{ }^2 C_1 \\cdot{ }^{10} C_7+{ }^4 C_4 \\cdot{ }^2 C_2 \\cdot{ }^{10} C_6}{{ }^{10} C_{12}} \\\\\n& =\\frac{129}{182}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 4th April Morning Shift"
+    "title": "JEE Main 2025 (Online) 4th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9eb",
@@ -158,7 +166,8 @@
     ],
     "solution": "<p>$$\\frac{{ }^6 \\mathrm{C}_4}{{ }^{15} \\mathrm{C}_4} \\times \\frac{{ }^9 \\mathrm{C}_4}{{ }^{11} \\mathrm{C}_4}=\\frac{3}{715}$$</p>\n<p>Hence option (3) is correct.</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 27th January Evening Shift"
+    "title": "JEE Main 2024 (Online) 27th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9ec",
@@ -177,7 +186,8 @@
     ],
     "solution": "<p>To solve this problem, we need to first determine the probability of getting a head (H) and the probability of getting a tail (T).</p>\n<p>Since a head is twice as likely to occur as a tail, we can denote the probability of getting a tail as $$ P(T) = p $$ and the probability of getting a head as $$ P(H) = 2p $$.</p>\n<p>These probabilities must sum to 1 because those are the only two possible outcomes for each coin toss :\n<br/><br/>$$ P(H) + P(T) = 1 $$\n<br/><br/>$$ 2p + p = 1 $$\n<br/><br/>$$ 3p = 1 $$\n<br/><br/>$$ p = \\frac{1}{3} $$</p>\n<p>Therefore, the probability of getting a tail (T) is $$ P(T) = \\frac{1}{3} $$ and the probability of getting a head (H) is $$ P(H) = 2 \\times \\frac{1}{3} = \\frac{2}{3} $$.</p>\n<p>Now to find the probability of getting two tails and one head, we need to consider the different sequences in which this can occur. There are three unique sequences: TTH, THT, and HTT.</p>\n<p>The probability of each sequence is found by multiplying the probabilities of each individual event since each coin toss is independent:\n<br/><br/>$$ P(TTH) = P(T) \\times P(T) \\times P(H) = \\left(\\frac{1}{3}\\right)^2 \\times \\frac{2}{3} = \\frac{1}{9} \\times \\frac{2}{3} = \\frac{2}{27} $$\n<br/><br/>$$ P(THT) = P(T) \\times P(H) \\times P(T) = \\frac{1}{3} \\times \\frac{2}{3} \\times \\frac{1}{3} = \\frac{2}{27} $$\n<br/><br/>$$ P(HTT) = P(H) \\times P(T) \\times P(T) = \\frac{2}{3} \\times \\left(\\frac{1}{3}\\right)^2 = \\frac{2}{27} $$</p>\n<p>The overall probability of getting two tails and one head in any order is the sum of these individual probabilities :\n<br/><br/>$$ P(2T1H) = P(TTH) + P(THT) + P(HTT) = \\frac{2}{27} + \\frac{2}{27} + \\frac{2}{27} = \\frac{6}{27} $$</p>\n<p>Simplifying this expression gives us:\n$$ P(2T1H) = \\frac{6}{27} = \\frac{2}{9} $$</p>\n<p>Therefore, the correct answer is :\n<br/><br/>Option B :\n$$\\frac{2}{9}$$</p>\n",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 31st January Evening Shift"
+    "title": "JEE Main 2024 (Online) 31st January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9ed",
@@ -196,7 +206,8 @@
     ],
     "solution": "<p>Equation is $$a x^2+b x+c=0$$</p>\n<p>$$\\mathrm{D}>0$$ [for roots to be real & distinct]</p>\n<p>$$\\Rightarrow b^2-4 a c>0$$</p>\n<p>For $$b<2$$ no value of $$a$$ & $$c$$ are possible</p>\n<p>$$\\begin{aligned}\n& \\text { For } b=3 \\Rightarrow a c<\\frac{9}{4} \\\\\n& (a, c) \\in\\{(1,1),(1,2),(2,1)\\} \\Rightarrow 3 \\text { cases }\n\\end{aligned}$$</p>\n<p>For $$b=4 \\Rightarrow a c<4$$</p>\n<p>$$(a, c) \\in\\{(1,1),(1,2),(2,1),(3,1),(1,3)\\} \\Rightarrow 5 \\text { cases }$$</p>\n<p>For $$b=5 \\Rightarrow a c<\\frac{25}{4}$$</p>\n<p>$$\\begin{aligned}\n& (a, c) \\in\\{(1,1),(1,2),(2,1),(3,1),(1,3),(2,2), \\\\\n& (4,1),(1,4),(3,2),(2,3),(5,1),(1,5),(1,6), \\\\\n& (6,1)\\}=14 \\text { cases }\n\\end{aligned}$$</p>\n<p>For $$b=6 \\Rightarrow a c<9$$</p>\n<p>$$\\begin{aligned}\n& (a, c) \\in\\{(1,1),(1,2),(2,1),(3,1),(1,3),(2,2), \\\\\n& (4,1),(1,4),(3,2),(2,3),(5,1),(1,5),(1,6), \\\\\n& (6,1),(2,4),(4,2)\\}=16 \\text { cases }\n\\end{aligned}$$</p>\n<p>Total cases $$=3+5+14+16=38$$ cases</p>\n<p>$$\\Rightarrow$$ Probability, $$p=\\frac{38}{216}$$</p>\n<p>$$\\Rightarrow 216 p=38$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 5th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 5th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9ee",
@@ -215,35 +226,8 @@
     ],
     "solution": "Required probability $=1-\\frac{D_{(15)}+{ }^{15} C_1 \\cdot D_{(14)}+{ }^{15} C_2 D_{(13)}}{15 !}$\n<br/><br/>Taking $\\mathrm{D}_{(15)}$ as $\\frac{15 !}{e}$\n<br/><br/>$\\mathrm{D}_{(14)}$ as $\\frac{14 \\text { ! }}{e}$\n<br/><br/>$\\mathrm{D}_{(13)}$ as $\\frac{13 \\text { ! }}{e}$\n<br/><br/>$$\n\\text { We get, } \\text { Required probability } = 1-\\left(\\frac{\\frac{15 !}{e}+15 \\cdot \\frac{14 !}{e}+\\frac{15 \\times 14}{2} \\times \\frac{13 !}{e}}{15 !}\\right)\n$$\n<br/><br/>$$\n=1-\\left(\\frac{1}{e}+\\frac{1}{e}+\\frac{1}{2 e}\\right)=1-\\frac{5}{2 e} \\approx .08\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 29th January Morning Shift"
-  },
-  {
-    "_id": "6a2bdc7d2762cf4b5769f9ef",
-    "question_id": "liiofyxu",
-    "chapterId": "permutation-and-combination-based-problem",
-    "subject": "Mathematics",
-    "topic": "permutation-and-combination-based-problem",
-    "difficulty": "hard",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "Number of elements in $\\mathrm{X}$ which are multiple of 5\n<br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1ltxtd4vs/76088ac3-a427-4789-9e24-76814a3a0e8d/97699070-e5a0-11ee-b6cf-cfad6f5d435f/file-6y3zli1ltxtd4vt.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1ltxtd4vs/76088ac3-a427-4789-9e24-76814a3a0e8d/97699070-e5a0-11ee-b6cf-cfad6f5d435f/file-6y3zli1ltxtd4vt.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2023 Paper 2 Online Mathematics - Probability Question 10 English Explanation 1\">\n<br>Among these 38 elements, let us calculate when element is not divisible by 20\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1ltxtewfh/2365dc4b-8231-4441-8bf3-8443a5b90eda/c88065d0-e5a0-11ee-b6cf-cfad6f5d435f/file-6y3zli1ltxtewfi.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1ltxtewfh/2365dc4b-8231-4441-8bf3-8443a5b90eda/c88065d0-e5a0-11ee-b6cf-cfad6f5d435f/file-6y3zli1ltxtewfi.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2023 Paper 2 Online Mathematics - Probability Question 10 English Explanation 2\">\n<br>$\\therefore p=\\frac{38-7}{38} $\n<br><br>$\n \\therefore 38 p=31$",
-    "__v": 0,
-    "title": "JEE Advanced 2023 Paper 2 Online"
-  },
-  {
-    "_id": "6a2bdc7d2762cf4b5769f9f0",
-    "question_id": "liiovy12",
-    "chapterId": "permutation-and-combination-based-problem",
-    "subject": "Mathematics",
-    "topic": "permutation-and-combination-based-problem",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "<p>Total number of ways of selecting 2 persons $={ }^{49} \\mathrm{C}_2$</p>\n\n<p>Number of ways in which 2 friends are selected $=6 \\times 7 \\times 2=84$</p>\n\n\n\n<p>$$7 \\mathrm{P}=\\frac{84 \\times 2}{49 \\times 48} \\times 7=\\frac{1}{2}$$</p>\n\n",
-    "__v": 0,
-    "title": "JEE Advanced 2023 Paper 2 Online"
+    "title": "JEE Main 2023 (Online) 29th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9f1",
@@ -257,7 +241,8 @@
     "options": [],
     "solution": "<p>Total number of numbers from given</p>\n<p>Condition = n(s) = 2<sup>6</sup>.</p>\n<p>Every required number is of the form</p>\n<p>A = 7 . (10<sup>a<sub>1</sub></sup> + 10<sup>a<sub>2</sub></sup> + 10<sup>a<sub>3</sub></sup> + .......) + 111111</p>\n<p>Here 111111 is always divisible by 21.</p>\n<p>$$\\therefore$$ If A is divisible by 21 then</p>\n<p>10<sup>a<sub>1</sub></sup> + 10<sup>a<sub>2</sub></sup> + 10<sup>a<sub>3</sub></sup> + ....... must be divisible by 3.</p>\n<p>For this we have <sup>6</sup>C<sub>0</sub> + <sup>6</sup>C<sub>3</sub> + <sup>6</sup>C<sub>6</sub> cases are there</p>\n<p>$$\\therefore$$ n(E) = <sup>6</sup>C<sub>0</sub> + <sup>6</sup>C<sub>3</sub> + <sup>6</sup>C<sub>6</sub> = 22</p>\n<p>$$\\therefore$$ Required probability = $${{22} \\over {{2^6}}} = p$$</p>\n<p>$$\\therefore$$ $${{11} \\over {32}} = p$$</p>\n<p>$$\\therefore$$ $$96p = 33$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 26th June Evening Shift"
+    "title": "JEE Main 2022 (Online) 26th June Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9f2",
@@ -276,7 +261,8 @@
     ],
     "solution": "No. of ways to select and arrange $\\mathrm{x}_1, \\mathrm{x}_2, \\mathrm{x}_3, \\mathrm{x}_4, \\mathrm{x}_5$ from $1,2,3$.......18<br/><br/>\n$$\n\\begin{aligned}\n& \\mathrm{n}(\\mathrm{s})={ }^{18} \\mathrm{C}_5 \\\\\\\\\n& \\begin{array}{lllll}\nx_1 & \\underset{7}{\\left(x_2\\right)} & x_3 & \\underset{11}{\\left(x_4\\right)} & x_5\n\\end{array} \\\\\\\\\n& \\mathrm{n}(\\mathrm{E})={ }^6 \\mathrm{C}_1 \\times{ }^3 \\mathrm{C}_1 \\times{ }^7 \\mathrm{C}_1 \\\\\\\\\n& P(E)=\\frac{6 \\times 3 \\times 7}{{ }^{18} C_5} \\\\\\\\\n& \\frac{1}{17 \\times 4}=\\frac{1}{68} \\\\\\\\\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 27th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 27th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9f3",
@@ -295,7 +281,8 @@
     ],
     "solution": "Number of one-one function from $\\{a, b, c, d\\}$ to set $\\{1,2,3,4,5\\}$ is ${ }^{5} P_{4}=120 n(s)$.\n<br/><br/>\nThe required possible set of value (f(a), $f(b), f(c), f(d))$ such that $f(a)+2 f(b)-f(c)=f(d)$ are $(5,3,2,1),(5,1,2,3),(4,1,3,5),(3,1,4,5)$, $(5,4,3,2)$ and $(3,4,5,2)$\n<br/><br/>\n$\\therefore n(E)=6$\n<br/><br/>\n$\\therefore $ Required probability $=\\frac{n(E)}{n(S)}=\\frac{6}{120}=\\frac{1}{20}$",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 28th June Evening Shift"
+    "title": "JEE Main 2022 (Online) 28th June Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9f4",
@@ -314,7 +301,8 @@
     ],
     "solution": "<p>First 10 prime numbers are</p>\n<p>={2, 3, 5, 7, 11, 13, 17, 19, 23, 29}</p>\n<p>Let A is a 2 $$\\times$$ 2 matrix,</p>\n<p>$$A = \\left[ {\\matrix{\n   a & b  \\cr \n   c & d  \\cr \n\n } } \\right]$$</p>\n<p>Given that matrix A is singular.</p>\n<p>$$\\therefore$$ | A | = 0</p>\n<p>$$ \\Rightarrow \\left| {\\matrix{\n   a & b  \\cr \n   c & d  \\cr \n\n } } \\right| = 0$$</p>\n<p>$$ \\Rightarrow ad = bc$$</p>\n<p>Case I :</p>\n<p>ad = bc condition satisfy when a = b = c = d.</p>\n<p>For ex when a = 2, b = 2, c = 2, d = 2, then ad = bc satisfy.</p>\n<p>Now there are 10 prime numbers.</p>\n<p>We can choose any one of the 10 prime number in $${}^{10}C_{1}$$ = 10 ways and put them in the four positions of the matrix and matrix will be singular.</p>\n<p>$$\\therefore$$ In this case, total favorable case = 10</p>\n<p>Case 2 :</p>\n<p>ad = bc condition satisfies when</p>\n<p>(1)</p>\n<p>a = 2, d - 3 then</p>\n<p>(a) b = 2, c = 3</p>\n<p>(b) b = 3, c = 2</p>\n<p>or</p>\n<p>a = 3, d = 2 then</p>\n<p>(a) b = 2, c = 3</p>\n<p>(b) b = 3, c = 2</p>\n<p>So you can see for two different prime number for a and d there are 4 possible value of b and c which satisfy ad = bc condition.</p>\n<p>Two different values of a and d can be chosen from 10 prime numbers = $${}^{10}C_{2}$$ ways</p>\n<p>And for each combination of a and d there are 4 possible values of b and c.</p>\n<p>$$\\therefore$$ Total possible values = $${}^{10}C_{2}$$ $$\\times$$ 4</p>\n<p>From case I and case II total possible values of 10 prime numbers which satisfy ad = bc condition</p>\n<p>= 10 + $${}^{10}C_{2}$$ $$\\times$$ 4</p>\n<p>For sample space,</p>\n<p>Number of ways to fill element a of matrix A = chose any prime number among 10 available prime number = $${}^{10}C_{1}$$ ways</p>\n<p>Similarly,</p>\n<p>For element b of matrix A = $${}^{10}C_{1}$$ ways</p>\n<p>For element c of matrix A = $${}^{10}C_{1}$$ ways</p>\n<p>For element d of matrix A = $${}^{10}C_{1}$$ ways</p>\n<p>$$\\therefore$$ Sample space = $${}^{10}C_{1}$$ $$\\times$$ $${}^{10}C_{1}$$ $$\\times$$ $${}^{10}C_{1}$$ $$\\times$$ $${}^{10}C_{1}$$ = 10<sup>4</sup></p>\n<p>$$\\therefore$$ Probability $$ = {{10 + {{}^{10}C_{2}} \\times 4} \\over {{{10}^4}}}$$</p>\n<p>$$ = {{10 + 180} \\over {{{10}^4}}}$$</p>\n<p>$$ = {{190} \\over {{{10}^4}}}$$</p>\n<p>$$ = {{19} \\over {{{10}^3}}}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 29th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9f5",
@@ -333,7 +321,8 @@
     ],
     "solution": "Total ways of choosing square = $${}^{64}{C_2}$$<br><br>$$ = {{64 \\times 63} \\over {2 \\times 1}} = 32 \\times 63$$<br><br>ways of choosing two squares having common side = 2 (7 $$\\times$$ 8) = 112<br><br>Required probability $$ = {{112} \\over {32 \\times 63}} = {{16} \\over {32 \\times 9}} = {1 \\over {18}}$$.<br><br>Ans. (b)",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 1st September Evening Shift"
+    "title": "JEE Main 2021 (Online) 1st September Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9f6",
@@ -352,7 +341,8 @@
     ],
     "solution": "AAEIIMNNOTX<br><br>----------------M----------------<br><br>Total words with M at fourth Place = $${{10!} \\over {2!2!2!}}$$<br><br>Total words = $${{11!} \\over {2!2!2!}}$$<br><br>Required probability = $${{10!} \\over {11!}}$$ = $${{1} \\over {11}}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 20th July Morning Shift"
+    "title": "JEE Main 2021 (Online) 20th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9f7",
@@ -371,7 +361,8 @@
     ],
     "solution": "$$A = \\left| {\\matrix{\n   a &amp; b  \\cr \n   c &amp; d  \\cr \n\n } } \\right|$$<br><br>| A | = ad $$-$$ bc<br><br>Total case = 6<sup>4</sup><br><br>For non-singular matrix | A | $$\\ne$$ 0 $$\\Rightarrow$$ ad $$-$$ bc $$\\ne$$ 0<br><br>$$\\Rightarrow$$ ad $$\\ne$$ bc<br><br>And a, b, c, d are all different numbers in the set {1, 2, 3, 4, 5, 6}<br><br>Now for ad = bc<br><br>(i) 6 $$\\times$$ 1 = 2 $$\\times$$ 3<br><br>$$\\Rightarrow$$ $$\\left. \\matrix{\n  a = 6,b = 2,c = 3,d = 1 \\hfill \\cr \n  or\\,a = 1,b = 2,c = 3,d = 6 \\hfill \\cr \n  : \\hfill \\cr \n  : \\hfill \\cr}  \\right\\}$$ 8 each cases<br><br>(ii) 6 $$\\times$$ 2 = 3 $$\\times$$ 4<br><br>$$\\Rightarrow$$ $$\\left. \\matrix{\n  a = 6,b = 3,c = 4,d = 2 \\hfill \\cr \n  or\\,a = 2,b = 3,c = 4,d = 6 \\hfill \\cr \n  : \\hfill \\cr \n  : \\hfill \\cr}  \\right\\}$$ 8 such cases<br><br>favourable cases<br><br>= $$^6C_4 \\times 4!  - 16$$<br><br>required probability <br><br>$$ = {{{^6C_4 \\times 4!} - 16} \\over {{6^4}}} = {{43} \\over {162}}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 22th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 22th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9f8",
@@ -390,7 +381,8 @@
     ],
     "solution": "Given, set P = {1, 2, 3, 4, 5}<br/><br/>Let the two subsets be A and B<br/><br/>Then, n (A $$\\cap$$ B) = 2 (as given in question)\n<br/><br/>We can choose two elements from set P in <sup>5</sup>C<sub>2</sub> ways.\n<br/><br/>After choosing two common elements for set A and B, each of remaining three elements from set P have three choice (1) It can go to set A (2) It can go to set B (3) It don't go to any sets it stays at set P.\n<br/><br/>$$ \\therefore $$ Total ways for the three elements = 3 $$ \\times $$ 3 $$ \\times $$ 3 = 3<sup>3</sup>\n<br/><br/>$$\\therefore$$ Required probability = $${{{}^5{C_2} \\times {3^3}} \\over {\\left( {{2^5}} \\right)\\left( {{2^5}} \\right)}}$$ = $${{{}^5{C_2} \\times {3^3}} \\over {{4^5}}} = {{10 \\times 27} \\over {{2^{10}}}} = {{135} \\over {{2^9}}}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 24th February Evening Shift"
+    "title": "JEE Main 2021 (Online) 24th February Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9f9",
@@ -409,7 +401,8 @@
     ],
     "solution": "n(s) = n(when 7 appears on thousands place)<br><br>+ n (7 does not appear on thousands place)<br><br>= 9 $$\\times$$ 9 $$\\times$$ 9 + 8 $$\\times$$ 9 $$\\times$$ 9 $$\\times$$ 3<br><br>= 33 $$\\times$$ 9 $$\\times$$ 9<br><br>n(E) = n(last digit 7 &amp; 7 appears once)<br><br>+n(last digit 2 when 7 appears once)<br><br>= 8 $$\\times$$ 9 $$\\times$$ 9 + (3 $$\\times$$ 9 $$\\times$$ 9 - 2 $$\\times$$ 9)<br><br>$$\\therefore$$ $$P(E) = {{8 \\times 9 \\times 9 + 9 \\times 25} \\over {33 \\times 9 \\times 9}} = {{97} \\over {297}}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 25th February Evening Shift"
+    "title": "JEE Main 2021 (Online) 25th February Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9fa",
@@ -428,7 +421,8 @@
     ],
     "solution": "Required probability = $${{{}^9{C_3}{{.3}^6}} \\over {{4^9}}}$$<br><br>$$ = {{{}^9{C_3}} \\over {27}}.{\\left( {{3 \\over 4}} \\right)^9}$$<br><br>$$ = {{28} \\over 9}.{\\left( {{3 \\over 4}} \\right)^9} \\Rightarrow k = {{28} \\over 9}$$<br><br>Which satisfies $$\\left| {x - 3} \\right| &lt; 1$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 25th July Morning Shift"
+    "title": "JEE Main 2021 (Online) 25th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9fb",
@@ -447,7 +441,8 @@
     ],
     "solution": "Digits = 3, 3, 4, 4, 4, 5, 5<br><br>Total 7 digit numbers = $${{7!} \\over {2!2!3!}}$$<br><br>Number of 7 digit number divisible by 2 $$ \\Rightarrow $$ last digit = 4<br><br> <picture><source media=\"(max-width: 2210px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr.jpeg\"><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-860w.jpeg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-1040w.jpeg\"><source media=\"(max-width: 1220px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-1220w.jpeg\"><source media=\"(max-width: 1400px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-1400w.jpeg\"><source media=\"(max-width: 1580px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-1580w.jpeg\"><source media=\"(max-width: 1760px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-1760w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kmg8posq/25d8327b-51fa-4743-a7f2-4d704a16cab7/347622a0-88a9-11eb-b86e-cb3577c30dae/file-1kmg8posr-1940w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th February Evening Shift Mathematics - Probability Question 151 English Explanation\"></picture> <br><br>Now 7 digit numbers which are divisible by 2 = $${{6!} \\over {2!2!2!}}$$<br><br>Required probability = $${{{{6!} \\over {2!2!2!}}} \\over {{{7!} \\over {3!2!2!}}}} = {3 \\over 7}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 26th February Evening Shift"
+    "title": "JEE Main 2021 (Online) 26th February Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9fc",
@@ -466,7 +461,8 @@
     ],
     "solution": "g(3) = 2g(1) can be defined in 3 ways<br><br>number of onto functions in this condition = 3 $$\\times$$ 4!<br><br>Total number of onto functions = 6!<br><br>Required probability = $${{3 \\times 4!} \\over {6!}} = {1 \\over {10}}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 31st August Evening Shift"
+    "title": "JEE Main 2021 (Online) 31st August Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9fd",
@@ -485,7 +481,8 @@
     ],
     "solution": "Sample space = 9 $$ \\times $$ 10<sup>4</sup><br><br>Case - I<br><br>Out of exactly two digits selected one is zero then favourable cases = $${}^9{C_1}({2^4} - 1)$$<br><br>Case - II<br><br>Both selected digits are non-zero then favourable cases = $${}^9{C_2}({2^5} - 2)$$<br><br>Probability = $${{9({2^4} - 1) + {{9.8} \\over 2}({2^5} - 2)} \\over {9 \\times {{10}^4}}}$$<br><br>$$ = {{15 + 120} \\over {{{10}^4}}} = {{135} \\over {{{10}^4}}}$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 3rd September Evening Slot"
+    "title": "JEE Main 2020 (Online) 3rd September Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9fe",
@@ -504,7 +501,8 @@
     ],
     "solution": "Out of 11 consecutive natural numbers either\n6 even and 5 odd numbers or 5 even and 6\nodd numbers.\n<br><br>Let, E = Even\n<br>O = Odd\n<br><br><b>Case-1 :</b>\n<br><br>E, O, E, O, E, O, E, O, E, O, E\n<br><br>2b = a + c $$ \\Rightarrow $$ Even\n<br><br>$$ \\Rightarrow $$ Both a and c should be either even or odd.\n<br><br>P = $${{{}^6{C_2} + {}^5{C_2}} \\over {{}^{11}{C_3}}}$$ = $${5 \\over {33}}$$\n<br><br><b>Case -2 :</b>\n<br><br>O, E, O, E, O, E, O, E, O, E, O\n<br><br>P = $${{{}^5{C_2} + {}^6{C_2}} \\over {{}^{11}{C_3}}}$$ = $${5 \\over {33}}$$\n<br><br>Total probability = $${1 \\over 2} \\times {5 \\over {33}}$$ + $${1 \\over 2} \\times {5 \\over {33}}$$ = $${5 \\over {33}}$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 6th September Morning Slot"
+    "title": "JEE Main 2020 (Online) 6th September Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769f9ff",
@@ -523,7 +521,8 @@
     ],
     "solution": "Total ways of distribution = 4<sup>10</sup> = 2<sup>20</sup>\n<br><br>Number of ways selecting two boxes out of four = <sup>4</sup>C<sub>2</sub>\n<br><br>Then number of ways selecting 5 balls out of 10 = <sup>10</sup>C<sub>5</sub>\n<br><br>Then no of ways of distributing 5 balls into two groups of 2 balls and 3 balls = <sup>5</sup>C<sub>3</sub>.2!\n<br><br>Then number of ways to distributing remaining balls into two boxes = 2<sup>5</sup>\n<br><br>Number of ways placing exactly 2 and 3 balls in two of these boxes \n<br><br>= <sup>4</sup>C<sub>2</sub> $$ \\times $$ <sup>10</sup>C<sub>5</sub> $$ \\times $$ <sup>5</sup>C<sub>3</sub>.2! $$ \\times $$ 2<sup>5</sup>\n<br><br>= $${{{{6.252.10.2.2}^5}} \\over {{2^{20}}}}$$\n<br><br>= $${{945} \\over {{2^{10}}}}$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 9th January Evening Slot"
+    "title": "JEE Main 2020 (Online) 9th January Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769fa00",
@@ -542,7 +541,8 @@
     ],
     "solution": "<p>We can solve this problem by counting the number of \"nice\" subsets in the set S = {1, 2, $\\ldots$, 20 }, and then dividing that number by the total number of possible subsets of S.</p>\n<p>The sum of all elements in S is :</p>\n<p>1 + 2 + $\\ldots$ + 20 = $\\frac{{20 \\times 21}}{2}$ = 210</p>\n<p>Since a \"nice\" subset must sum to 203, the elements not in the subset must sum to 210 - 203 = 7.</p>\n<p>Now we need to find the ways to make the sum of 7 using the elements of S. The combinations are :</p>\n<ol>\n<li>1. 7</li>\n<li>2. 1 + 6</li>\n<li>3. 2 + 5</li>\n<li>4. 3 + 4</li>\n<li>5. 1 + 2 + 4</li>\n<li>6. 1 + 3 + 3(This doesn't work since 3 is repeated)</li>\n<li>7. 2 + 2 + 3(This doesn't work since 2 is repeated)</li>\n</ol>\n<p>So, there are 5 \"nice\" subsets.</p>\n<p>Since the set S has 20 elements, there are $2^{20}$ possible subsets (including the empty set and the set itself). The probability of randomly choosing a \"nice\" subset is therefore :\n<br><img src=\"https://imagex.cdn.examgoal.net/my2xRi7ZFGGmuESCF/nSUvAgfQyrvldLL9wgipBkqITyR9K/aJBM5MCF9krbfmSU0Nq7oz/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 11th January Evening Slot Mathematics - Probability Question 189 English Explanation\"></p>",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 11th January Evening Slot"
+    "title": "JEE Main 2019 (Online) 11th January Evening Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769fa01",
@@ -561,45 +561,8 @@
     ],
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/3rsa0w4kejxtbv0gn/cbaba235-9788-4365-aab6-26c15ead6ffa/4bdff270-a0ea-11e9-a4ff-cd603c22e5ad/file-3rsa0w4kejxtbv0go.jpg\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 12th April Morning Slot Mathematics - Probability Question 178 English Explanation\"><br>\nChoosing vertices of a regular hexagon alternate, here A<sub>1</sub>, A<sub>3</sub>, A<sub>5</sub> or A<sub>2</sub>, A<sub>4</sub>, A<sub>6</sub> will result in an equilateral triangle.<br><br>\nHence the required probability = $${2 \\over {{}^6{C_3}}}$$ = $${1 \\over {10}}$$",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 12th April Morning Slot"
-  },
-  {
-    "_id": "6a2bdc7d2762cf4b5769fa02",
-    "question_id": "4DDFjPjhulOTlP9dJd1kjtqo5u6",
-    "chapterId": "permutation-and-combination-based-problem",
-    "subject": "Mathematics",
-    "topic": "permutation-and-combination-based-problem",
-    "difficulty": "hard",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$${1 \\over {15}}$$",
-      "$${1 \\over {10}}$$",
-      "$${7 \\over {60}}$$",
-      "$${1 \\over {5}}$$"
-    ],
-    "solution": "Here, $$n({T_1} \\cap {T_2} \\cap {T_3} \\cap {T_4})$$ = Total $$ - n(\\overline {{T_1}}  \\cup \\overline {{T_2}}  \\cup \\overline {{T_3}}  \\cup \\overline {{T_4}} )$$<br><br>$$ \\Rightarrow $$ $$n({T_1} \\cap {T_2} \\cap {T_3} \\cap {T_4})$$<br><br>$$ = 5! - [{}^4{C_1}4!2!\\, - ({}^3{C_1}3!2! + {}^3{C_1}3!2!2!) + ({}^2{C_1}2!2!\\, + \\,{}^4{C_1}2.2!) - 2]$$<br><br>$$ \\Rightarrow $$ $$n({T_1} \\cap {T_2} \\cap {T_3} \\cap {T_4})$$<br><br>$$ = 120 - [192 - (36 + 72) + (8 + 16) - 2]$$<br><br>$$ = 120 - [192 - 108 + 24 - 2] = 14$$<br><br>$$ \\therefore $$ Required probability = $${{14} \\over {120}} = {7 \\over {60}}$$",
-    "__v": 0,
-    "title": "JEE Advanced 2018 Paper 1 Offline"
-  },
-  {
-    "_id": "6a2bdc7d2762cf4b5769fa03",
-    "question_id": "jcB4OEvYn7wYvlX22L1kjtq6n0b",
-    "chapterId": "permutation-and-combination-based-problem",
-    "subject": "Mathematics",
-    "topic": "permutation-and-combination-based-problem",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$${3 \\over {40}}$$",
-      "$${1 \\over 8}$$",
-      "$${7 \\over 40}$$",
-      "$${1 \\over 5}$$"
-    ],
-    "solution": "Here, five students S<sub>1</sub>, S<sub>1</sub>, S<sub>3</sub>, S<sub>4</sub> and S<sub>5</sub> and five seats R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>, R<sub>4</sub> and R<sub>5</sub><br><br>$$ \\therefore $$ Total number of arrangement of sitting five students is 5! = 120<br><br>Here, S<sub>1</sub> gets previously allotted seat R<sub>1</sub><br><br>$$ \\therefore $$ S<sub>2</sub>, S<sub>3</sub>, S<sub>4</sub> and S<sub>5</sub> not get previously seats. <br><br>Total number of way S<sub>2</sub>, S<sub>3</sub>, S<sub>4</sub> and S<sub>5</sub> not get previously seats is<br><br>$$4!\\left( {1 - {1 \\over {1!}} + {1 \\over {2!}} - {1 \\over {3!}} + {1 \\over {4!}}} \\right)$$<br><br>$$ = 24\\left( {1 - 1 + {1 \\over 2} - {1 \\over 6} + {1 \\over {24}}} \\right)$$<br><br>$$ = 24\\left( {{{12 - 4 + 1} \\over {24}}} \\right) = 9$$<br><br>$$ \\therefore $$ Required probability = $${9 \\over {120}} = {3 \\over {40}}$$",
-    "__v": 0,
-    "title": "JEE Advanced 2018 Paper 1 Offline"
+    "title": "JEE Main 2019 (Online) 12th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769fa04",
@@ -618,26 +581,8 @@
     ],
     "solution": "Let the number of children in each  family  be x. \n<br><br>Thus the total number of children in both  the families are 2x \n<br><br>Now, it is given that 3 tickets are distributed amongst  the children of these two families. \n<br><br>Thus, the probability  that all the three tickets go to the children in family B\n<br><br>= $${{{}^x{C_3}} \\over {{}^{2x}{C_3}}}$$ = $${1 \\over {12}}$$\n<br><br>$$ \\Rightarrow $$ $$\\,\\,\\,$$  $${{x\\left( {x - 1} \\right)\\left( {x - 2} \\right)} \\over {2x\\left( {2x - 1} \\right)\\left( {2x - 2} \\right)}}$$ = $${1 \\over {12}}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;$${{\\left( {x - 2} \\right)} \\over {\\left( {2x - 1} \\right)}}$$ = $${1 \\over 6}$$\n<br><br>Thus,  the number of children in each family is 5.",
     "__v": 0,
-    "title": "JEE Main 2018 (Online) 16th April Morning Slot"
-  },
-  {
-    "_id": "6a2bdc7d2762cf4b5769fa05",
-    "question_id": "jdwUif7cnDoeoItc8C1kjy0x32p",
-    "chapterId": "permutation-and-combination-based-problem",
-    "subject": "Mathematics",
-    "topic": "permutation-and-combination-based-problem",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$${1 \\over {2}}$$",
-      "$${36 \\over {55}}$$",
-      "$${6 \\over {11}}$$",
-      "$${5 \\over {11}}$$"
-    ],
-    "solution": "<p>To solve this problem, we need to find the total number of possible solutions to the equation $ x + y + z = 10 $ where $ x, y, $ and $ z $ are nonnegative integers.</p>\n\n<p>First, we employ the \"stars and bars\" method to determine the number of nonnegative integer solutions to this equation. This method states that the number of ways to partition $ n $ identical items (our sum) into $ k $ distinct groups (our variables) is given by:</p>\n\n<p>$$ \\binom{n + k - 1}{k - 1} $$</p>\n\n<p>For $ x + y + z = 10 $, we have $ n = 10 $ and $ k = 3 $. Plugging into the formula, we get:</p>\n\n<p>$$ \\binom{10 + 3 - 1}{3 - 1} = \\binom{12}{2} $$</p>\n\n<p>We calculate the binomial coefficient:</p>\n\n<p>$$ \\binom{12}{2} = \\frac{12 \\times 11}{2 \\times 1} = 66 $$</p>\n\n<p>So, there are 66 possible solutions to the equation $ x + y + z = 10 $.</p>\n\n<p>Next, we need to find the number of solutions for which $ z $ is even. Let $ z = 2k $ where $ k $ is a nonnegative integer. Then the equation becomes:</p>\n\n<p>$$ x + y + 2k = 10 $$</p>\n\n<p>Rearranging it, we get:</p>\n\n<p>$$ x + y = 10 - 2k $$</p>\n\n<p>Here, $ 10 - 2k $ must be nonnegative, so $ k $ can take values $ 0, 1, 2, 3, 4, 5 $ making total 6 possible values of k.</p>\n\n<p>For each value of $ k $, $ x + y $ must equal the corresponding $ 10 - 2k $. The number of nonnegative integer solutions to $ x + y = m $ for any nonnegative integer $ m $ is given by:</p>\n\n<p>$$ \\binom{m + 1}{1} = m + 1 $$</p>\n\n<p>We will sum the solutions for each valid $ k $:</p>\n\n<p>When $ k = 0 $: $ x + y = 10 $, the number of solutions is $ 11 $.<br>\n\n<p>When $ k = 1 $: $ x + y = 8 $, the number of solutions is $ 9 $.<br></p>\n\n<p>When $ k = 2 $: $ x + y = 6 $, the number of solutions is $ 7 $.<br></p>\n\n<p>When $ k = 3 $: $ x + y = 4 $, the number of solutions is $ 5 $.<br></p>\n\n<p>When $ k = 4 $: $ x + y = 2 $, the number of solutions is $ 3 $.<br></p>\n\n<p>When $ k = 5 $: $ x + y = 0 $, the number of solutions is $ 1 $.<br></p></p>\n\n<p>Summing these, we get:</p>\n\n<p>$$ 11 + 9 + 7 + 5 + 3 + 1 = 36 $$</p>\n\n<p>Thus, there are 36 solutions where $ z $ is even out of a total of 66 solutions. Hence, the probability that $ z $ is even is given by:</p>\n\n<p>$$ \\frac{36}{66} = \\frac{6}{11} $$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option C: $$ \\frac{6}{11} $$</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2017 Paper 2 Offline"
+    "title": "JEE Main 2018 (Online) 16th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769fa06",
@@ -656,7 +601,8 @@
     ],
     "solution": "<p>The number of ways to form a committee having at least one woman is</p>\n<p>$$ = {}^5{C_1} \\times {}^{10}{C_3} + {}^5{C_2} \\times {}^{10}{C_2} + {}^5{C_3} \\times {}^{10}{C_1} + {}^5{C_4}$$</p>\n<p>$$ = {{5!} \\over {4!}} \\times {{10!} \\over {7! \\times 3!}} + {{5!} \\over {2!3!}} \\times {{10!} \\over {8!2!}} + {{5!} \\over {3!2!}} \\times {{10!} \\over {9!1!}} + {{5!} \\over {4!}}$$</p>\n<p>$$ = 5 \\times {{10 \\times 9 \\times 8} \\over {3 \\times 2}} + {{5 \\times 4} \\over {2 \\times 1}} \\times {{10 \\times 9} \\over 2} + {{5 \\times 4} \\over {2 \\times 1}} \\times 10 + 5$$</p>\n<p>$$ = 600 + 450 + 100 + 5 = 1155$$</p>\n<p>The number of ways to form a committee having more women than men is</p>\n<p>$${}^5{C_2} \\times {}^{10}{C_2} + {}^5{C_4} = {{5!} \\over {6!2!}} \\times {{10!} \\over {9!}} + {{5!} \\over {4!}}$$</p>\n<p>$$ = 10 \\times 10 + 5 = 105$$</p>\n<p>Therefore, the probability for the committees to have more women than men is</p>\n<p>$${{105} \\over {1155}} = {1 \\over {11}}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2017 (Online) 9th April Morning Slot"
+    "title": "JEE Main 2017 (Online) 9th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769fa07",
@@ -675,26 +621,8 @@
     ],
     "solution": "1<sup>st</sup> ball can go any of the 3 boxes. So total choices for 1<sup>st</sup> ball = 3\n<br><br>2<sup>nd</sup> ball can also go any of the 3 boxes. So total choices for 2<sup>nd</sup> ball = 3\n<br>.\n<br>.\n<br>.\n<br>.\n<br>12<sup>th</sup> ball can go any of the 3 boxes. So total choices for 12<sup>th</sup> ball = 3\n<br><br>Total choices for all 12 balls = $$3 \\times $$$$3 \\times $$$$3 \\times $$.................12 times = 3<sup>12</sup>.\n<br><br>Now question says choose 3 balls from 12 balls. So no of ways = $${}^{12}{C_3}$$ ways.\n<br>And then put it in a box. No of ways we can put = $${}^{12}{C_3} \\times 1$$ ways.\n<br><br>Now we have 9 balls left and we have to put those 9 balls in the remaining 2 boxes.\n<br><br>Each ball can go to any of the 2 boxes, so for each ball there is 2 choices.\n<br><br>$$\\therefore$$ Total ways for 9 balls = 2<sup>9</sup>\n<br><br>$$\\therefore$$ Total ways we can put those 12 balls in the boxes = $${}^{12}{C_3} \\times 1 \\times {2^9}$$\n<br><br>$$\\therefore$$ Required probability = $${{{}^{12}{C_3} \\times 1 \\times {2^9}} \\over {{3^{12}}}}$$ = $${{55} \\over 3}{\\left( {{2 \\over 3}} \\right)^{11}}$$\n<br><br>So option (C) is correct.",
     "__v": 0,
-    "title": "JEE Main 2015 (Offline)"
-  },
-  {
-    "_id": "6a2bdc7d2762cf4b5769fa08",
-    "question_id": "ni30BeQgPTnY1o6Q",
-    "chapterId": "permutation-and-combination-based-problem",
-    "subject": "Mathematics",
-    "topic": "permutation-and-combination-based-problem",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$${1 \\over 2}$$ ",
-      "$${1 \\over 3}$$",
-      "$${2 \\over 3}$$",
-      "$${3 \\over 4}$$"
-    ],
-    "solution": "<p>Given, 3 boys and 2 girls stand in a queue.</p>\n<p>Sample space $$n(s)=\\left| \\!{\\underline {\\,\n  {5} \\,}} \\right.=120$$</p>\n<p>According to the given condition, following cases may arise.</p>\n<p>BGGBB $$\\quad \\left| \\!{\\underline {\\,\n  {3} \\,}} \\right. \\left| \\!{\\underline {\\,\n  {2} \\,}} \\right.$$</p>\n<p>GGBBB $$\\quad \\left| \\!{\\underline {\\,\n  {3} \\,}} \\right. \\left| \\!{\\underline {\\,\n  {2} \\,}} \\right.$$</p>\n<p>GBGBB $$\\quad \\left| \\!{\\underline {\\,\n  {3} \\,}} \\right. \\left| \\!{\\underline {\\,\n  {2} \\,}} \\right.$$</p>\n<p>GBBGB $$\\quad \\left| \\!{\\underline {\\,\n  {3} \\,}} \\right. \\left| \\!{\\underline {\\,\n  {2} \\,}} \\right.$$</p>\n<p>BGBGB $$\\quad \\left| \\!{\\underline {\\,\n  {3} \\,}} \\right. \\left| \\!{\\underline {\\,\n  {2} \\,}} \\right.$$</p>\n<p>So, number of favorable ways $$=5\\left| \\!{\\underline {\\,\n  {3} \\,}} \\right. \\left| \\!{\\underline {\\,\n  {2} \\,}} \\right.=60$$</p>\n<p>Required probability $$=\\frac{60}{120}=\\frac{1}{2}$$</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2014 Paper 2 Offline"
+    "title": "JEE Main 2015 (Offline)",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769fa09",
@@ -713,7 +641,8 @@
     ],
     "solution": "Out of nine balls three balls can be chosen = $${}^9{C_3}$$ ways\n<br><br>$$\\therefore$$ Sample space = $${}^9{C_3}$$ = $${{9!} \\over {3!6!}}$$ = $${{9 \\times 8 \\times 7} \\over 6}$$ = 84\n<br><br>According to the question, all three ball should be different. So out of 3 red balls 1 is chosen and out of 4 blue 1 is chosen and out of 2 green 1 is chosen.\n<br><br>$$\\therefore$$ Total cases = $${}^3{C_1} \\times {}^4{C_1} \\times {}^2{C_1}$$ = 3 $$ \\times $$ 4 $$ \\times $$ 2 = 24\n<br><br>$$\\therefore$$ Probability = $${{24} \\over {84}}$$ = $${{2} \\over {7}}$$",
     "__v": 0,
-    "title": "AIEEE 2010"
+    "title": "AIEEE 2010",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc7d2762cf4b5769fa0a",
@@ -732,6 +661,7 @@
     ],
     "solution": "Four numbers can be chosen $${}^{20}{C_4}$$ ways.\n<br><br>When common difference  d = 1 then the possible sets are (1, 2, 3, 4) (2, 3, 4, 5) (3, 4, 5, 6) ................. (17, 18, 19, 20) = 17 sets\n<br>So when d = 1 then 17 different AP's are possible with 4 numbers.\n<br><br>Now let's create a table of all possible sets -\n<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}\n.tg .tg-s6z2{text-align:center}\n.tg .tg-baqh{text-align:center;vertical-align:top}\n.tg .tg-wyy1{background-color:#26ade4;text-align:center}\n</style>\n<table class=\"tg\">\n  <tbody><tr>\n    <th class=\"tg-wyy1\">Common <br>Difference<br>(d)</th>\n    <th class=\"tg-wyy1\">Possible Sets </th>\n    <th class=\"tg-wyy1\">No of AP</th>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">d = 1</td>\n    <td class=\"tg-s6z2\">(1, 2, 3, 4) (2, 3, 4, 5) (3, 4, 5, 6) ................. (17, 18, 19, 20)</td>\n    <td class=\"tg-s6z2\">17</td>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">d = 2</td>\n    <td class=\"tg-s6z2\">(1, 3, 5, 7) (2, 4, 6, 8) (3, 5, 7, 9) ................. (14, 16, 18, 20)</td>\n    <td class=\"tg-s6z2\">14</td>\n  </tr>\n  <tr>\n    <td class=\"tg-s6z2\">d = 3</td>\n    <td class=\"tg-s6z2\">(1, 4, 7, 10) (2, 5, 8, 11) (3, 6, 9, 12) ................. (11, 14, 17, 20)</td>\n    <td class=\"tg-s6z2\">11</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">d = 4</td>\n    <td class=\"tg-baqh\">(1, 5, 9, 13) (2, 6, 10, 14) (3, 7, 11, 15) ................. (8, 12, 16, 20)</td>\n    <td class=\"tg-baqh\">8</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">d = 5</td>\n    <td class=\"tg-baqh\">(1, 6, 11, 16) (2, 7, 12, 17) (3, 8, 13, 18) (4, 9, 14, 19) (5, 10, 15, 20)</td>\n    <td class=\"tg-baqh\">5</td>\n  </tr>\n  <tr>\n    <td class=\"tg-baqh\">d = 6</td>\n    <td class=\"tg-baqh\">(1, 7, 13, 19) (2, 8, 14, 20)</td>\n    <td class=\"tg-baqh\">2</td>\n  </tr>\n</tbody></table>\n<br><br>$$\\therefore$$ Total no of AP = 17 + 14 + 11 + 8 + 5 + 2 = 57\n<br><br>$$\\therefore$$ Required probability = $${{57} \\over {{}^{20}{C_4}}}$$ = $${1 \\over {85}}$$\n<br><br>$$\\therefore$$ <b>Statement - 1:</b> is true.\n<br><br>$$\\therefore$$ <b>Statement - 2:</b> is false as common difference can also be $$ \\pm 6$$.",
     "__v": 0,
-    "title": "AIEEE 2010"
+    "title": "AIEEE 2010",
+    "exam": "JEE Main"
   }
 ]

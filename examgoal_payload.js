@@ -1,0 +1,1 @@
+module.exports = {};window.__NUXT__.config={public:{},app:{baseURL:"/",buildId:"a582395f-453c-4ef8-a920-d6a93be672da",buildAssetsDir:"/_nuxt/",cdnURL:"https://cdn.examgoal.net/room-examgoal-com/v5.0.4"}}

@@ -117,7 +117,7 @@
     },
     "solution": "<p>On the interval $[n, n+1)$, since $n$ is a natural number, we have</p>\n<p>$$ [x] = n \\quad \\text{for } n \\le x < n+1 $$</p>\n<p>So,</p>\n<p>$$ x - [x] = x - n $$</p>\n<p>Hence the integral becomes</p>\n<p>$$ \\int_n^{n+1} (x-[x])\\,dx = \\int_n^{n+1} (x-n)\\,dx $$</p>\n<p>Now integrate:</p>\n<p>$$ \\int_n^{n+1} (x-n)\\,dx = \\left[\\frac{(x-n)^2}{2}\\right]_n^{n+1} $$</p>\n<p>Substituting the limits:</p>\n<p>$$ = \\frac{(n+1-n)^2}{2} - \\frac{(n-n)^2}{2} = \\frac{1^2}{2} - 0 = \\frac{1}{2} $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{\\frac{1}{2}} $$</p>\n<p>Hence, <strong>Option 3</strong> is correct.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -241,7 +241,7 @@
     },
     "solution": "<p>Given</p>\n<p>$$ I_1=\\int_e^{e^2}\\frac{dx}{\\ln x} \\qquad \\text{and} \\qquad I_2=\\int_1^2 \\frac{e^x}{x}\\,dx $$</p>\n<p>We have to compare these two integrals.</p>\n<h2>Step 1: Transform $I_1$ using substitution</h2>\n<p>Take</p>\n<p>$$ x=e^t $$</p>\n<p>Then,</p>\n<p>$$ dx=e^t\\,dt $$</p>\n<p>Also,</p>\n<p>$$ \\ln x=\\ln(e^t)=t $$</p>\n<p>Now change the limits:</p>\n<ul>\n<li><p>When $x=e$, we get $t=1$</p></li>\n<li><p>When $x=e^2$, we get $t=2$</p></li>\n</ul>\n<p>So,</p>\n<p>$$ I_1=\\int_e^{e^2}\\frac{dx}{\\ln x} =\\int_1^2 \\frac{e^t}{t}\\,dt $$</p>\n<p>Now $t$ is just a dummy variable, so we can write</p>\n<p>$$ I_1=\\int_1^2 \\frac{e^x}{x}\\,dx $$</p>\n<p>But this is exactly $I_2$.</p>\n<p>Hence,</p>\n<p>$$ I_1=I_2 $$</p>\n<p>Therefore,</p>\n<p>$$ I_1-I_2=0 $$</p>\n<p>So the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 1}} $$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -365,7 +365,7 @@
     },
     "solution": "<p>We are given:</p>\n<p>$$ f(x) = [x^2] $$</p>\n<p>where $[ \\cdot ]$ denotes the greatest integer function (also called the floor function).  </p>\n<p>We are to compute:</p>\n<p>$$ \\int_{\\sqrt{2}}^{\\sqrt{3}} [x^2] \\, dx $$</p>\n<p><strong>Step 1: Identify how $[x^2]$ behaves in the interval $[\\sqrt{2}, \\sqrt{3}]$</strong></p>\n\n<p><p>$\\sqrt{2} \\approx 1.414$</p></p>\n<p><p>$\\sqrt{3} \\approx 1.732$</p></p>\n\n<p>Let’s see how $x^2$ varies:</p>\n\n<p><p>At $x = \\sqrt{2}, \\; x^2 = 2$</p></p>\n<p><p>At $x = \\sqrt{3}, \\; x^2 = 3$</p></p>\n\n<p>So as $x$ goes from $\\sqrt{2}$ to $\\sqrt{3}$, $x^2$ goes from $2$ to $3$.</p>\n<p>Now, for what values of $x$ does $[x^2] = 2$?  </p>\n<p>Well, $[x^2] = 2$ if $2 \\leq x^2 < 3$</p>\n<p>Let’s solve for $x$:</p>\n\n<p><p>$x^2 \\geq 2 \\implies x \\geq \\sqrt{2}$</p></p>\n<p><p>$x^2 < 3 \\implies x < \\sqrt{3}$</p></p>\n\n<p>So in the interval $[\\sqrt{2}, \\sqrt{3})$, $[x^2] = 2$.</p>\n<p>But at $x = \\sqrt{3}$, $x^2 = 3$ so $[x^2] = 3$.</p>\n<p>But our upper limit is $\\sqrt{3}$, and the greatest integer function switches exactly <em>at</em> $x = \\sqrt{3}$.</p>\n<p>So, over the interval $[\\sqrt{2}, \\sqrt{3})$, $f(x) = 2$.</p>\n<p><strong>Step 2: Set up the integral</strong></p>\n<p>On $[\\sqrt{2}, \\sqrt{3})$, $f(x) = 2$.</p>\n<p>But in definite integrals, the last point ($x = \\sqrt{3}$) does not contribute as it is just a single point (measure zero).</p>\n<p>So,</p>\n<p>$$ \\int_{\\sqrt{2}}^{\\sqrt{3}} f(x) dx = \\int_{\\sqrt{2}}^{\\sqrt{3}} 2 \\, dx = 2 \\left( \\sqrt{3} - \\sqrt{2} \\right) $$</p>\n<p><strong>Step 3: Final Answer</strong></p>\n<p>So, the value is:</p>\n<p>$$ \\boxed{2\\left(\\sqrt{3} - \\sqrt{2}\\right)} $$</p>\n<p>This matches <strong>Option B</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -488,7 +488,7 @@
     },
     "solution": "<p>To evaluate  </p>\n<p>$$I=\\int_{\\sqrt2}^{2}\\bigl\\lfloor x^2\\bigr\\rfloor\\,dx,$$  </p>\n<p>we observe where $x^2$ crosses integer values in the interval $[\\sqrt2,2]$.</p>\n\n<p><p>Solve $x^2=2\\;\\Rightarrow\\;x=\\sqrt2$.  </p></p>\n<p><p>Solve $x^2=3\\;\\Rightarrow\\;x=\\sqrt3$.  </p></p>\n<p><p>Solve $x^2=4\\;\\Rightarrow\\;x=2$.  </p></p>\n\n<p>Thus on:</p>\n\n<p><p>$x\\in[\\sqrt2,\\sqrt3)$, we have $2\\le x^2<3\\implies\\lfloor x^2\\rfloor=2$.</p></p>\n<p><p>$x\\in[\\sqrt3,2)$, we have $3\\le x^2<4\\implies\\lfloor x^2\\rfloor=3$.</p></p>\n\n<p>We split the integral accordingly:</p>\n<p>$$ I=\\int_{\\sqrt2}^{\\sqrt3}2\\,dx\\;+\\;\\int_{\\sqrt3}^{2}3\\,dx. $$</p>\n<p>Compute each part:</p>\n\n<p><p>$\\displaystyle \\int_{\\sqrt2}^{\\sqrt3}2\\,dx = 2\\bigl[\\;x\\;\\bigr]_{x=\\sqrt2}^{\\sqrt3} = 2\\bigl(\\sqrt3-\\sqrt2\\bigr).$</p></p>\n<p><p>$\\displaystyle \\int_{\\sqrt3}^{2}3\\,dx = 3\\bigl[\\;x\\;\\bigr]_{x=\\sqrt3}^{2} = 3\\bigl(2-\\sqrt3\\bigr).$</p></p>\n\n<p>So</p>\n<p>$ I = 2(\\sqrt3-\\sqrt2)\\;+\\;3(2-\\sqrt3)   =2\\sqrt3-2\\sqrt2+6-3\\sqrt3   =6 -\\sqrt3 -2\\sqrt2. $</p>\n<p>Answer: $\\displaystyle 6-\\sqrt3-2\\sqrt2,$ which is Option A.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -611,7 +611,7 @@
     },
     "solution": "<p>First note that  </p>\n<p>$$x^2 - x - 2=0\\;\\Longrightarrow\\;x=\\frac{1\\pm\\sqrt{1+8}}2=\\{-1,2\\}.$$  </p>\n<p>On $[0,2]$ we have $x^2 - x - 2\\le0$, so  </p>\n<p>$$|x^2 - x - 2|=-(x^2 - x - 2)= -x^2 + x +2.$$  </p>\n<p>Hence  </p>\n<p>$ \\int_0^2 |x^2 - x - 2|\\,dx =\\int_0^2(-x^2 + x +2)\\,dx =\\Bigl[-\\tfrac{x^3}3 + \\tfrac{x^2}2 +2x\\Bigr]_0^2 =6 - \\tfrac83 =\\tfrac{10}3. $  </p>\n<p>Answer: $\\displaystyle \\tfrac{10}{3}.$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -735,7 +735,7 @@
     },
     "solution": "<p>First note that  </p>\n<p>$$f(x)=|x^2 - x -2| = |(x-2)(x+1)|$$  </p>\n<p>has zeros at $x=-1$ and $x=2$, and is  </p>\n\n<p><p>positive for $x>2$,  </p></p>\n<p><p>negative for $-1<x<2$.  </p></p>\n\n<p>We want  </p>\n<p>$$\\int_{1}^{3} |x^2 - x -2|\\,dx$$  </p>\n<p>(since in the statement $h$ turns out to be $1$).</p>\n<p>Split the integral at $x=2$:</p>\n\n<p><p>On $[1,2]$, $x^2 - x -2<0$, so $|x^2 - x -2|=-(x^2 - x -2)= -x^2 + x +2$.  </p></p>\n<p><p>On $[2,3]$, $x^2 - x -2\\ge0$, so $|x^2 - x -2|=x^2 - x -2$.</p></p>\n\n<p>Hence</p>\n<p>$$ \\int_{1}^{3} |x^2 - x -2|\\,dx =\\int_{1}^{2}(-x^2 + x +2)\\,dx \\;+\\;\\int_{2}^{3}(x^2 - x -2)\\,dx. $$</p>\n<p>Compute each piece:</p>\n<p>A)  $\\displaystyle \\int(-x^2 + x +2)\\,dx =-\\tfrac{x^3}{3}+\\tfrac{x^2}{2}+2x.$  </p>\n<p>Evaluate from 1 to 2:</p>\n<p>$     \\Bigl[-\\tfrac{x^3}{3}+\\tfrac{x^2}{2}+2x\\Bigr]_{1}^{2}     =\\Bigl(-\\tfrac{8}{3}+2+4\\Bigr)\\;-\\;\\Bigl(-\\tfrac{1}{3}+\\tfrac12+2\\Bigr)     =\\tfrac{10}{3}-\\tfrac{13}{6}=\\tfrac{7}{6}.   $</p>\n<p>B)  $\\displaystyle \\int(x^2 - x -2)\\,dx =\\tfrac{x^3}{3}-\\tfrac{x^2}{2}-2x.$  </p>\n<p>Evaluate from 2 to 3:</p>\n<p>$     \\Bigl[\\tfrac{x^3}{3}-\\tfrac{x^2}{2}-2x\\Bigr]_{2}^{3}     =\\Bigl(9-\\tfrac{9}{2}-6\\Bigr)\\;-\\;\\Bigl(\\tfrac{8}{3}-2-4\\Bigr)     =-\\tfrac32-(-\\tfrac{10}{3})=\\tfrac{11}{6}.   $</p>\n<p>Adding A) and B):</p>\n<p>$   \\int_{1}^{3}|x^2 - x -2|\\,dx   =\\tfrac{7}{6}+\\tfrac{11}{6}   =\\tfrac{18}{6}   =3. $</p>\n<p>Answer: 3.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -859,7 +859,7 @@
     },
     "solution": "<p>Let’s set it up step by step:</p>\n\n<p><p>Observe that  </p>\n<p>$$f(t)=\\ln\\bigl(t+\\sqrt{1+t^2}\\bigr)=\\operatorname{arsinh}(t),$$  </p>\n<p>so $f$ is odd:  </p>\n<p>$$f(-t)=-f(t)\\,. $$</p></p>\n<p><p>Then  </p>\n<p>$$g(t)=\\tan\\bigl(f(t)\\bigr)$$  </p>\n<p>is also odd, since $\\tan$ is odd:  </p>\n<p>$$g(-t)=\\tan\\bigl(f(-t)\\bigr)=\\tan\\bigl(-f(t)\\bigr)=-\\tan\\bigl(f(t)\\bigr)=-g(t)\\,. $$</p></p>\n<p><p>The integral of an odd function over a symmetric interval $[-π,π]$ vanishes (in the principal‐value sense):  </p>\n<p>$$\\int_{-π}^{π}g(t)\\,dt=0\\,. $$</p></p>\n\n<p>Answer: 0.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -983,7 +983,7 @@
     },
     "solution": "<p>First, interpret the integral correctly. Here “d(x)” is really the differential “dx,” so we want</p>\n<p>$$J=\\int_{0}^{\\pi/2}\\frac{dx}{\\sin x+\\cos x+1}\\,. $$</p>\n\n<p><p>Use the Weierstrass substitution </p>\n<p>$$t=\\tan\\frac x2,\\quad       \\sin x=\\frac{2t}{1+t^2},\\quad       \\cos x=\\frac{1-t^2}{1+t^2},\\quad      dx=\\frac{2\\,dt}{1+t^2}.$$</p></p>\n<p><p>Then</p>\n<p>$$\\sin x+\\cos x+1      =\\frac{2t}{1+t^2}+\\frac{1-t^2}{1+t^2}+1      =\\frac{2t+1-t^2+1+t^2}{1+t^2}      =\\frac{2(t+1)}{1+t^2}.$$</p></p>\n<p><p>Hence</p>\n<p>$$\\frac{dx}{\\sin x+\\cos x+1}      =\\frac{2\\,dt/(1+t^2)}{2(t+1)/(1+t^2)}      =\\frac{dt}{t+1},$$</p>\n<p>and when $x$ goes from $0$ to $\\pi/2$, $t$ goes from $0$ to $1$.</p></p>\n<p><p>Therefore</p>\n<p>$$J=\\int_{0}^{1}\\frac{dt}{t+1}      =\\bigl[\\ln(t+1)\\bigr]_{0}^{1}      =\\ln2-\\ln1      =\\ln2.$$</p></p>\n\n<p>Answer: ln 2.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1107,7 +1107,7 @@
     },
     "solution": "<p><strong>Concept:</strong></p>\n<h3>Property of Definite Integrals (Symmetry)</h3>\n\n<p><p>If $ f(x) $ is continuous on $[0, a]$, then:</p>\n<p>$   \\int_0^a f(x)\\,dx = \\int_0^a f(a - x)\\,dx   $</p></p>\n<p><p>This property helps in evaluating integrals involving trigonometric identities when limits are symmetric.</p></p>\n<p><p>A standard result used here is:</p>\n<p>$   \\int_0^{\\frac{\\pi}{2}} \\frac{1}{\\sin x + \\cos x + 1} dx = \\ln 2   $</p></p>\n<p><p>Combining two symmetrical integrals can simplify expressions and eliminate complex terms.</p></p>\n\n<p><strong>Calculation:</strong></p>\n<p>Let:</p>\n<p>$ I = \\int_0^{\\frac{\\pi}{2}} \\frac{\\sin x}{\\sin x + \\cos x + 1} dx $</p>\n<p>Perform substitution:</p>\n<p>$ x \\rightarrow \\frac{\\pi}{2} - x $</p>\n<p>This gives:</p>\n<p>$ I = \\int_0^{\\frac{\\pi}{2}} \\frac{\\cos x}{\\sin x + \\cos x + 1} dx $</p>\n<p>Adding both expressions, we get:</p>\n<p>$ 2I = \\int_0^{\\frac{\\pi}{2}} \\frac{\\sin x + \\cos x}{\\sin x + \\cos x + 1} dx $</p>\n<p>This simplifies to:</p>\n<p>$ 2I = \\int_0^{\\frac{\\pi}{2}} \\left(1 - \\frac{1}{\\sin x + \\cos x + 1} \\right) dx $</p>\n<p>Splitting the integrals:</p>\n<p>$ 2I = \\int_0^{\\frac{\\pi}{2}} 1 \\, dx - \\int_0^{\\frac{\\pi}{2}} \\frac{1}{\\sin x + \\cos x + 1} \\, dx $</p>\n<p>Calculating each part:</p>\n<p>$ 2I = \\frac{\\pi}{2} - \\ln 2 $</p>\n<p>Finally, solving for $ I $:</p>\n<p>$ I = \\frac{\\pi}{4} - \\frac{\\ln 2}{2} $</p>\n<p><strong>∴ The value of the integral is $ \\frac{\\pi}{4} - \\frac{\\ln 2}{2} $.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1231,7 +1231,7 @@
     },
     "solution": "<p>To find the value of the definite integral $$\\int_{-1}^{1} (3 \\sin x - \\sin 3x) \\cos^2 x \\, dx$$, we can analyze the integral by breaking it down and leveraging the properties of trigonometric functions and their integrals over symmetric intervals.</p>\n\n<p>The integral can be split into two separate integrals:</p>\n\n<p>$$\\int_{-1}^{1} 3 \\sin x \\cos^2 x \\, dx - \\int_{-1}^{1} \\sin 3x \\cos^2 x \\, dx.$$</p>\n\n<p>First, let's look at the integral:</p>\n\n<p>$$\\int_{-1}^{1} 3 \\sin x \\cos^2 x \\, dx.$$</p>\n\n<p>Notice that $$\\sin x$$ is an odd function and $$\\cos^2 x$$ is an even function. The product of an odd function and an even function is an odd function. Since the integral of an odd function over a symmetric interval $$[-a, a]$$ is zero, we have:</p>\n\n<p>$$\\int_{-1}^{1} 3 \\sin x \\cos^2 x \\, dx = 0.$$</p>\n\n<p>Next, consider the integral:</p>\n\n<p>$$\\int_{-1}^{1} \\sin 3x \\cos^2 x \\, dx.$$</p>\n\n<p>Similarly, $$\\sin 3x$$ is an odd function and $$\\cos^2 x$$ is an even function. Again, the product of an odd function and an even function is an odd function. Therefore, the integral over the symmetric interval is zero, giving:</p>\n\n<p>$$\\int_{-1}^{1} \\sin 3x \\cos^2 x \\, dx = 0.$$</p>\n\n<p>Combining these results, we get:</p>\n\n<p>$$\\int_{-1}^{1} (3 \\sin x - \\sin 3x) \\cos^2 x \\, dx = 0 - 0 = 0.$$</p>\n\n<p>So, the value of the given integral is:</p>\n\n<p>Option B: 0</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1354,7 +1354,7 @@
     },
     "solution": "<p>We are given two integrals:</p>\n\n<p>$$p = \\int_a^b f(x) \\, dx \\quad \\text{and} \\quad q = \\int_a^b |f(x)| \\, dx.$$</p>\n\n<p>and we know that $ f(x) = e^{-x} $. Let's analyze each integral separately.</p>\n\n<p>Firstly, consider the function $ f(x) = e^{-x} $. Since $ e^{-x} $ is always positive for all $ x $, we have:</p>\n\n<p>$$|f(x)| = |e^{-x}| = e^{-x}.$$</p>\n\n<p>Therefore, the absolute value does not change the function:</p>\n\n<p>$$q = \\int_a^b |e^{-x}| \\, dx = \\int_a^b e^{-x} \\, dx.$$</p>\n\n<p>Now both integrals $ p $ and $ q $ are the same:</p>\n\n<p>$$p = \\int_a^b e^{-x} \\, dx \\quad \\text{and} \\quad q = \\int_a^b e^{-x} \\, dx.$$</p>\n\n<p>Thus, we can conclude that:</p>\n\n<p>$$p = q.$$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><b>Option D</b>: <p>$ p = q $</p></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1477,7 +1477,7 @@
     },
     "solution": "<p>To solve the integral</p>\n\n<p>$$\\int^{\\pi/2}_0 \\frac{a+\\sin x}{2a+\\sin x+\\cos x} \\, dx,$$</p>\n\n<p>we can use a clever substitution to simplify it. We'll use the symmetry properties of trigonometric functions. Consider the substitution $x = \\frac{\\pi}{2} - t$. Note the following transformations:</p>\n\n<ul>\n\n<li>When $x = 0$, $t = \\frac{\\pi}{2}$.</li>\n\n<li>When $x = \\frac{\\pi}{2}$, $t = 0$.</li>\n\n<li>$\\sin(\\frac{\\pi}{2} - t) = \\cos t$.</li>\n\n<li>$\\cos(\\frac{\\pi}{2} - t) = \\sin t$.</li>\n\n<li>And $dx = -dt$.</li>\n\n</ul>\n\n<p>Using these, our integral transforms to:</p>\n\n<p>$$\\int^{0}_{\\pi/2} \\frac{a+\\sin(\\frac{\\pi}{2} - t)}{2a+\\sin(\\frac{\\pi}{2} - t)+\\cos(\\frac{\\pi}{2} - t)} (-dt).$$</p>\n\n<p>After substitution, this becomes:</p>\n\n<p>$$\\int^{0}_{\\pi/2} \\frac{a+\\cos t}{2a+\\cos t + \\sin t} (-dt).$$</p>\n\n<p>Reversing the limits of integration gives:</p>\n\n<p>$$\\int^{\\pi/2}_0 \\frac{a+\\cos t}{2a+\\cos t + \\sin t} \\, dt.$$</p>\n\n<p>Next, notice an important property: the given integral and the transformed integral have the same limits and integrand structure. If we add these two integrals, we get:</p>\n\n<p>$$\\int^{\\pi/2}_0 \\frac{a+\\sin x}{2a+\\sin x+\\cos x} \\, dx + \\int^{\\pi/2}_0 \\frac{a+\\cos x}{2a+\\cos x+\\sin x} \\, dx.$$</p>\n\n<p>Since the integrands are the same upon swapping $\\sin x$ and $\\cos x$, we can combine them:</p>\n\n<p>$$\\int^{\\pi/2}_0 \\left(\\frac{a+\\sin x}{2a+\\sin x+\\cos x} + \\frac{a+\\cos x}{2a+\\cos x+\\sin x}\\right) \\, dx.$$\n\n<p>Combining the fractions, we get:</p>\n\n<p>$$\\int^{\\pi/2}_0 \\frac{2a + \\sin x + \\cos x}{2a + \\sin x + \\cos x} \\, dx = \\int^{\\pi/2}_0 1 \\, dx.$$</p>\n\n<p>Evaluating the integral:</p>\n\n<p>$$\\int^{\\pi/2}_0 1 \\, dx = \\left[ x \\right]_0^{\\pi/2} = \\frac{\\pi}{2}.$$</p>\n\n<p>So, the original integral is exactly half of this, as we have added two identical integrals originally to arrive at this result:</p>\n\n<p>$$\\int^{\\pi/2}_0 \\frac{a+\\sin x}{2a+\\sin x+\\cos x} \\, dx = \\frac{\\pi}{4}.$$</p>\n\n<p>Thus, the correct answer is Option A:</p>\n\n<p>$$\\boxed{\\frac{\\pi}{4}}$$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1600,7 +1600,7 @@
     },
     "solution": "<p>$\\begin{aligned} \\int\\limits_{-1}^0 h(x) d x & =\\int\\limits_{-1}^0 f(x) \\cdot g(x) \\cdot d x \\\\\\\\ & =\\int\\limits_{-1}^0|x-1| \\cdot[x] d x \\\\\\\\ & =\\int\\limits_{-1}^0(1-x) \\cdot(-1) d x \\\\\\\\ & =\\int\\limits_{-1}^0(x-1) d x \\\\\\\\ & =\\left[\\frac{x^2}{2}-x\\right]_{-1}^0=\\left[0-\\left(\\frac{1}{2}+1\\right)\\right] \\\\\\\\ & =-\\frac{3}{2}\\end{aligned}$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1723,7 +1723,7 @@
     },
     "solution": "<p>$\\begin{aligned} \\int\\limits_0^2 h(x) d x & =\\int\\limits_0^1|x-1|[x] d x+\\int\\limits_1^2|x-1|[x] d x \\\\\\\\ & =\\int\\limits_0^1(1-x) \\cdot(0) d x+\\int\\limits_1^2(x-1) \\cdot(1) d x \\\\\\\\ & =\\int\\limits_1^2(x-1) d x \\\\\\\\ & =\\left[\\frac{x^2}{2}-x\\right]_1^2 \\\\\\\\ & =\\left(\\frac{4}{2}-2\\right)-\\left(\\frac{1}{2}-1\\right) \\\\\\\\ & =\\frac{1}{2}\\end{aligned}$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1846,7 +1846,7 @@
     },
     "solution": "<p><strong>Answer: $\\ln(8\\sqrt{e})$</strong></p>\n<p><strong>Detailed Reasoning:</strong></p>\n<p>We are given a functional equation and need to find $ 8 \\int_1^2 f(x) \\, dx $.</p>\n<p><strong>Step-by-Step Solution:</strong></p>\n\n<p><p><strong>Given Functional Equation:</strong></p>\n<p>$    3f(x) + f\\left(\\frac{1}{x}\\right) = 1 + \\frac{1}{x}.    $</p>\n<p>Replace $ x $ by $ \\frac{1}{x} $:</p>\n<p>$    3f\\left(\\frac{1}{x}\\right) + f(x) = 1 + x.    $</p></p>\n<p><p><strong>System of Linear Equations:</strong></p>\n<p>We now have a system of two equations:</p>\n<p>$    3f(x) + f\\left(\\frac{1}{x}\\right) = 1 + \\frac{1}{x}, \\tag{1}    $</p>\n<p>$    f(x) + 3f\\left(\\frac{1}{x}\\right) = 1 + x. \\tag{2}    $</p>\n<p>Consider these as linear equations in terms of $ f(x) $ and $ f(1/x) $.</p></p>\n<p><p><strong>Solving the System:</strong></p>\n<p>From equation (1):</p>\n<p>$    3f(x) + f\\left(\\frac{1}{x}\\right) = 1 + \\frac{1}{x}.    $</p>\n<p>From equation (2):</p>\n<p>$    f(x) + 3f\\left(\\frac{1}{x}\\right) = 1 + x.    $</p>\n<p>Let's solve for $ f(x) $. Multiply (1) by 3:</p>\n<p>$    9f(x) + 3f\\left(\\frac{1}{x}\\right) = 3 + \\frac{3}{x}.    $</p>\n<p>Subtract (2) from this:</p>\n<p>$    (9f(x) + 3f(1/x)) - (f(x) + 3f(1/x)) = \\left(3 + \\frac{3}{x}\\right) - (1 + x).    $</p>\n<p>On the left side, the $ f(1/x) $ terms cancel out:</p>\n<p>$    8f(x) = (3 + \\frac{3}{x}) - (1 + x).    $</p>\n<p>Simplify the right side:</p>\n<p>$    3 + \\frac{3}{x} - 1 - x = 2 + \\frac{3}{x} - x = \\frac{2x + 3 - x^2}{x}.    $</p>\n<p>Thus:</p>\n<p>$    8f(x) = \\frac{2x + 3 - x^2}{x} \\implies f(x) = \\frac{2x + 3 - x^2}{8x}.    $</p>\n<p>Rewrite $ f(x) $:</p>\n<p>$    f(x) = \\frac{-x^2 + 2x + 3}{8x}.    $</p></p>\n<p><p><strong>Integrating $ f(x) $ from 1 to 2:</strong></p>\n<p>Split the fraction:</p>\n<p>$    f(x) = \\frac{-x^2}{8x} + \\frac{2x}{8x} + \\frac{3}{8x} = -\\frac{x}{8} + \\frac{1}{4} + \\frac{3}{8x}.    $</p>\n<p>Therefore:</p>\n<p>$    \\int_1^2 f(x) \\, dx = \\int_1^2 \\left(-\\frac{x}{8} + \\frac{1}{4} + \\frac{3}{8x}\\right) dx.    $</p>\n<p>Integrate term by term:</p></p>\n\n\n<p><p>$\\int_1^2 -\\frac{x}{8} dx = -\\frac{1}{8} \\cdot \\frac{x^2}{2}\\Big|_1^2 = -\\frac{1}{16}(4 - 1) = -\\frac{3}{16}.$</p></p>\n<p><p>$\\int_1^2 \\frac{1}{4} dx = \\frac{1}{4}(2 - 1) = \\frac{1}{4}.$</p></p>\n<p><p>$\\int_1^2 \\frac{3}{8x} dx = \\frac{3}{8}\\ln(x)\\Big|_1^2 = \\frac{3}{8}\\ln(2).$</p>\n<p>Sum these results:</p>\n<p>$    \\int_1^2 f(x) dx = \\left(-\\frac{3}{16} + \\frac{1}{4} + \\frac{3}{8}\\ln(2)\\right).    $</p>\n<p>Combine the fractions $-\\frac{3}{16}$ and $\\frac{1}{4} = \\frac{4}{16}$:</p>\n<p>$    \\int_1^2 f(x) dx = \\frac{4}{16} - \\frac{3}{16} + \\frac{3}{8}\\ln(2) = \\frac{1}{16} + \\frac{3}{8}\\ln(2).    $</p></p>\n\n\n<p><p><strong>Multiplying by 8:</strong></p>\n<p>We need $ 8 \\int_1^2 f(x) dx $:</p>\n<p>$    8 \\left(\\frac{1}{16} + \\frac{3}{8}\\ln(2)\\right) = 8 \\cdot \\frac{1}{16} + 8 \\cdot \\frac{3}{8}\\ln(2) = \\frac{1}{2} + 3\\ln(2).    $</p></p>\n<p><p><strong>Matching to Given Options:</strong></p>\n<p>Check option A: $\\ln(8\\sqrt{e})$</p>\n<p>$    \\ln(8\\sqrt{e}) = \\ln(8) + \\ln(e^{1/2}) = \\ln(8) + \\frac{1}{2} = 3\\ln(2) + \\frac{1}{2}.    $</p>\n<p>This exactly matches our result $ \\frac{1}{2} + 3\\ln(2) $.</p></p>\n\n<p><strong>Final Answer:</strong></p>\n<p>$ 8\\int_1^2 f(x)dx = \\ln(8\\sqrt{e}) $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1969,7 +1969,7 @@
     },
     "solution": "<p>To find the value of </p>\n<p>$$ \\int_0^\\pi\\left(\\sin ^4 x+\\cos ^4 x\\right) \\, dx $$</p>\n<p>start by expressing $\\sin^4 x$ and $\\cos^4 x$ in terms of trigonometric identities. Using $\\sin^2 x = \\frac{1 - \\cos(2x)}{2}$ and $\\cos^2 x = \\frac{1 + \\cos(2x)}{2}$, we have:</p>\n<p>$$ \\sin^4 x = \\left( \\sin^2 x \\right)^2 = \\left( \\frac{1 - \\cos(2x)}{2} \\right)^2 = \\frac{1 - 2\\cos(2x) + \\cos^2(2x)}{4} $$</p>\n<p>$$ \\cos^4 x = \\left( \\cos^2 x \\right)^2 = \\left( \\frac{1 + \\cos(2x)}{2} \\right)^2 = \\frac{1 + 2\\cos(2x) + \\cos^2(2x)}{4} $$</p>\n<p>Combining these, we get:</p>\n<p>$$ \\sin^4 x + \\cos^4 x = \\frac{1 - 2\\cos(2x) + \\cos^2(2x) + 1 + 2\\cos(2x) + \\cos^2(2x)}{4} = \\frac{2 + 2\\cos^2(2x)}{4} = \\frac{1 + \\cos^2(2x)}{2} $$</p>\n<p>Now, compute the integral:</p>\n<p>$$ \\int_0^\\pi \\left( \\sin^4 x + \\cos^4 x \\right) dx = \\int_0^\\pi \\frac{1 + \\cos^2(2x)}{2} \\, dx $$</p>\n<p>This can be split into two integrals:</p>\n<p>$$ \\int_0^\\pi \\left( \\frac{1}{2} \\right) dx + \\int_0^\\pi \\left( \\frac{\\cos^2(2x)}{2} \\right) dx $$</p>\n<p>Evaluate each part separately:</p>\n\n<p>For the first integral:</p>\n\n<p>$$ \\int_0^\\pi \\frac{1}{2} \\, dx = \\frac{1}{2} \\times \\pi = \\frac{\\pi}{2} $$</p>\n<p>For the second integral, use the identity $\\cos^2(2x) = \\frac{1 + \\cos(4x)}{2}$:</p>\n\n<p>$$ \\int_0^\\pi \\frac{\\cos^2(2x)}{2} \\, dx = \\int_0^\\pi \\frac{1 + \\cos(4x)}{4} \\, dx = \\int_0^\\pi \\frac{1}{4} \\, dx + \\int_0^\\pi \\frac{\\cos(4x)}{4} \\, dx $$</p>\n<p>Since the integral of $\\cos(4x)$ over one period $[0, \\pi]$ is zero:</p>\n<p>$$ \\int_0^\\pi \\frac{\\cos(4x)}{4} \\, dx = 0 $$</p>\n<p>Thus,</p>\n<p>$$ \\int_0^\\pi \\frac{\\cos^2(2x)}{2} \\, dx = \\int_0^\\pi \\frac{1}{4} \\, dx = \\frac{1}{4} \\times \\pi = \\frac{\\pi}{4} $$</p>\n<p>Adding the two results together:</p>\n<p>$$ \\frac{\\pi}{2} + \\frac{\\pi}{4} = \\frac{2\\pi}{4} + \\frac{\\pi}{4} = \\frac{3\\pi}{4} $$</p>\n<p>So,</p>\n<p>$$ \\int_0^\\pi \\left( \\sin^4 x + \\cos^4 x \\right) dx = \\frac{3\\pi}{4} $$</p>\n<p>The correct answer is:</p>\n<p>Option B: $$\\frac{3 \\pi}{4}$$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2092,7 +2092,7 @@
     },
     "solution": "<h3>Concept</h3>\n\n<p>$ \\int_{a}^{b} f(x) \\, dx = \\int_{a}^{b} f(a + b - x) \\, dx $</p>\n<p>$ \\sin^2 x + \\cos^2 x = 1 $</p>\n<p>$ \\sin^2 x = \\frac{1 - \\cos 2x}{2} $</p>\n<p>$ \\int \\cos x \\, dx = \\sin x + C $</p>\n\n<h3>Calculation</h3>\n<p>Given</p>\n<p>$ I = \\int_{-2 \\pi}^{2 \\pi} \\frac{\\sin^4 x + \\cos^4 x}{1 + 3^x} \\, dx \\quad \\text{------(1)} $</p>\n<p>Applying the property</p>\n<p>$ I = \\int_{-2 \\pi}^{2 \\pi} \\frac{\\sin^4 x + \\cos^4 x}{1 + 3^{-x}} \\, dx \\quad \\text{------(2)} $</p>\n<p>Adding equations (1) and (2)</p>\n<p>$ 2I = \\int_{-2 \\pi}^{2 \\pi} \\left(\\sin^4 x + \\cos^4 x\\right) \\, dx $</p>\n<p>Adding and subtracting $2\\sin^2 x \\cos^2 x$</p>\n<p>$ \\Rightarrow 2I = \\int_{-2 \\pi}^{2 \\pi} \\left(\\sin^4 x + \\cos^4 x + 2\\sin^2 x \\cos^2 x - 2\\sin^2 x \\cos^2 x\\right) \\, dx $</p>\n<p>$ \\Rightarrow 2I = \\int_{-2 \\pi}^{2 \\pi} \\left(\\left(\\sin^2 x + \\cos^2 x\\right)^2 - \\frac{\\sin^2 2x}{2} \\right) \\, dx $</p>\n<p>$ \\Rightarrow 2I = \\int_{-2 \\pi}^{2 \\pi} \\left(1 - \\frac{1}{2} \\cdot \\frac{(1 - \\cos 2x)}{2} \\right) \\, dx $</p>\n<p>$ \\Rightarrow 2I = \\int_{-2 \\pi}^{2 \\pi} \\left(1 - \\frac{1}{4}(1 - \\cos 2x)\\right) \\, dx $</p>\n<p>$ \\Rightarrow 2I = \\int_{-2 \\pi}^{2 \\pi} \\left(\\frac{3}{4} + \\frac{\\cos 2x}{4}\\right) \\, dx $</p>\n<p>$ \\Rightarrow 2I = \\left[\\frac{3}{4} x + \\frac{\\sin 2x}{8}\\right]_{-2\\pi}^{2 \\pi} $</p>\n<p>$ \\Rightarrow 2I = \\frac{3}{4} \\left(2 \\pi - (-2 \\pi)\\right) + \\frac{\\sin 4 \\pi - \\sin (-4 \\pi)}{8} $</p>\n<p>$ \\Rightarrow 2I = \\frac{3 \\pi}{4} \\left(4 \\pi\\right) + 0 $</p>\n<p>$ \\Rightarrow 2I = 3 \\pi $</p>\n<p>$ \\Rightarrow I = \\frac{3 \\pi}{2} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2215,7 +2215,7 @@
     },
     "solution": "\n<p>$ |\\sin x| = \\begin{cases}  \\sin x & \\text{if } 0 \\leq x \\leq \\pi \\\\ -\\sin x & \\text{if } \\pi \\leq x \\leq 2\\pi  \\end{cases} $</p>\n<p>$ \\int \\sin x \\, dx = -\\cos x $</p>\n<p>Let,</p>\n<p>$ I = \\int_0^{8\\pi} |\\sin x| \\, dx $</p>\n<p>Since the period of $\\sin x$ is $2\\pi$, we have:</p>\n<p>$ I = 4 \\int_0^{2\\pi} |\\sin x| \\, dx $</p>\n<p>Using the concept above,</p>\n<p>$ I = 4 \\left( \\int_0^{\\pi} \\sin x \\, dx + \\int_{\\pi}^{2\\pi} |\\sin x| \\, dx \\right) $</p>\n<p>$ I = 4 \\left( \\left[-\\cos x\\right]_0^{\\pi} + \\left[\\cos x\\right]_\\pi^{2\\pi} \\right) $</p>\n<p>$ I = 4 \\left[ \\left(-\\cos(\\pi) - (-\\cos(0))\\right) + \\left(\\cos(2\\pi) - \\cos(\\pi)\\right) \\right] $</p>\n<p>$ I = 4 \\left[ \\left(-(-1) - (-1)\\right) + \\left(1 - (-1)\\right) \\right] $</p>\n<p>$ I = 4 \\left[ (1 + 1) + (1 + 1) \\right] $</p>\n<p>$ I = 4 [2 + 2] $</p>\n<p>$ I = 16 $</p>\n<p>Therefore, </p>\n<p>$ \\int_0^{8\\pi} |\\sin x| \\, dx = 16 $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2338,7 +2338,7 @@
     },
     "solution": "<p>To determine the value of $ Q $, let's start by using the information given:</p>\n\n<ul>\n\n<li>We have the function $ f(x) = Pe^x + Qe^{2x} + Re^{3x} $.</li>\n\n<li>$ f(0) = 6 $.</li>\n\n<li>$ f'( \\ln 3 ) = 282 $.</li>\n\n<li>$ \\int_0^{\\ln 2} f(x) \\, dx = 11 $.</li>\n\n</ul>\n\n<p>First, compute $ f(0) $:</p>\n\n<p>$ f(0) = P e^0 + Q e^{2 \\cdot 0} + R e^{3 \\cdot 0} $</p>\n\n<p>$ f(0) = P + Q + R $</p>\n\n<p>Given $ f(0) = 6 $, we have:</p>\n\n<p>$ P + Q + R = 6 $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Equation 1)</p>\n\n<p>Next, compute the derivative $ f'(x) $:</p>\n\n<p>$ f'(x) = \\frac{d}{dx}(Pe^x + Qe^{2x} + Re^{3x}) $</p>\n\n<p>$ f'(x) = Pe^x + 2Qe^{2x} + 3Re^{3x} $</p>\n\n<p>Given $ f'(\\ln 3) = 282 $, substitute $ x = \\ln 3 $ in $ f'(x) $:</p>\n\n<p>$ f'(\\ln 3) = P e^{\\ln 3} + 2Q e^{2\\ln 3} + 3R e^{3\\ln 3} $</p>\n\n<p>$ f'(\\ln 3) = 3P + 18Q + 81R $</p>\n\n<p>Given $ f'(\\ln 3) = 282 $, we have:</p>\n\n<p>$ 3P + 18Q + 81R = 282 $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Equation 2)</p>\n\n<p>Now, compute the integral $ \\int_0^{\\ln 2} f(x) \\, dx $:</p>\n\n<p>$ \\int_0^{\\ln 2} f(x) \\, dx = \\int_0^{\\ln 2} ( Pe^x + Qe^{2x} + Re^{3x} ) \\, dx $</p>\n\n<p>$ \\int_0^{\\ln 2} f(x) \\, dx = P \\int_0^{\\ln 2} e^x \\, dx + Q \\int_0^{\\ln 2} e^{2x} \\, dx + R \\int_0^{\\ln 2} e^{3x} \\, dx $</p>\n\n<p>Evaluate each integral:</p>\n\n<p>$ \\int_0^{\\ln 2} e^x \\, dx = \\left[ e^x \\right]_0^{\\ln 2} = e^{\\ln 2} - e^0 = 2 - 1 = 1 $</p>\n\n<p>$ \\int_0^{\\ln 2} e^{2x} \\, dx = \\left[ \\frac{1}{2} e^{2x} \\right]_0^{\\ln 2} = \\frac{1}{2} \\left( e^{2 \\ln 2} - 1 \\right) = \\frac{1}{2} (4 - 1) = \\frac{3}{2} $</p>\n\n<p>$ \\int_0^{\\ln 2} e^{3x} \\, dx = \\left[ \\frac{1}{3} e^{3x} \\right]_0^{\\ln 2} = \\frac{1}{3} \\left( e^{3 \\ln 2} - 1 \\right) = \\frac{1}{3} (8 - 1) = \\frac{7}{3} $</p>\n\n<p>Combine these results:</p>\n\n<p>$ \\int_0^{\\ln 2} f(x) \\, dx = P \\cdot 1 + Q \\cdot \\frac{3}{2} + R \\cdot \\frac{7}{3} $</p>\n\n<p>Given $ \\int_0^{\\ln 2} f(x) \\, dx = 11 $, we have:</p>\n\n<p>$ P + \\frac{3}{2}Q + \\frac{7}{3}R = 11 $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Equation 3)</p>\n\n<p>We now have a system of three equations:</p>\n\n<p>1. $ P + Q + R = 6 $</p>\n\n<p>2. $ 3P + 18Q + 81R = 282 $</p>\n\n<p>3. $ P + \\frac{3}{2}Q + \\frac{7}{3}R = 11 $</p>\n\n<p>Solving this system, we will find the values of $ P $, $ Q $, and $ R $. First, multiply Equation 3 by 6 to clear the fractions:</p>\n\n<p>$ 6P + 9Q + 14R = 66 $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Equation 4)</p>\n\n<p>Now we have:</p>\n\n<p>1. $ P + Q + R = 6 $</p>\n\n<p>2. $ 3P + 18Q + 81R = 282 $</p>\n\n<p>4. $ 6P + 9Q + 14R = 66 $</p>\n\n<p>We can solve this system by substitution or elimination. Subtract Equation 1 from Equation 4:</p>\n\n<p>$ (6P + 9Q + 14R) - (P + Q + R) = 66 - 6 $</p>\n\n<p>$ 5P + 8Q + 13R = 60 $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Equation 5)</p>\n\n<p>Now subtract Equation 1 multiplied by 3 from Equation 2:</p>\n\n<p>$ (3P + 18Q + 81R) - 3(P + Q + R) = 282 - 3 \\cdot 6 $</p>\n\n<p>$ 15Q + 78R = 264 $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Equation 6)</p>\n\n<p>Simplify Equation 6:</p>\n\n<p>$ 5Q + 26R = 88 $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Equation 7)</p>\n\n<p>Now we need to solve Equations 5 and 7:</p>\n\n<p>5. $ 5P + 8Q + 13R = 60 $</p>\n\n<p>7. $ 5Q + 26R = 88 $</p>\n\n<p>Solve Equation 7 for $ Q $:</p>\n\n<p>$ Q = \\frac{88 - 26R}{5} $</p>\n\n<p>Substitute $ Q $ in Equation 5:</p>\n\n<p>$ 5P + 8 \\left( \\frac{88 - 26R}{5} \\right) + 13R = 60 $</p>\n\n<p>$ 5P + \\frac{704 - 208R}{5} + 13R = 60 $</p>\n\n<p>Multiply through by 5 to clear the fraction:</p>\n\n<p>$ 25P + 704 - 208R + 65R = 300 $</p>\n\n<p>$ 25P - 143R = -404 $</p>\n\n<p>$ P = \\frac{-404 + 143R}{25} $</p>\n\n<p>Express $ P $ in terms of $ R $ and substitute back into $ P + Q + R = 6 $ to solve for $ Q $ and $ R $.</p>\n\n<p>Simplifying the system and solving, we find that:</p>\n\n<p>$$ P = -\\frac{52}{5} $$</p>\n\n<p>$$ R = \\frac{16}{5} $$</p>\n\n<p>Substituting these values back in, we find:</p>\n\n<p>$$ Q = 2 $$</p>\n\n<p>Thus, the value of $ Q $ is:</p>\n\n<p>Option B: $ Q = 2 $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2461,7 +2461,7 @@
     },
     "solution": "<p>To find the value of $ R $, we will use the given information and solve the system of equations step by step.</p>\n\n<h3>Step 1: Given conditions</h3>\n\n<ol>\n<li>$ f(0) = 6 $</li>\n</ol>\n<p>$    f(0) = P e^0 + Q e^0 + R e^0 = P + Q + R = 6    $</p>\n\n<ol>\n<li>$ f'( \\ln 3) = 282 $</li>\n</ol>\n<p>$    f'(x) = P e^x + 2Q e^{2x} + 3R e^{3x}    $</p>\n\n<p>$    f'(\\ln 3) = P e^{\\ln 3} + 2Q e^{2\\ln 3} + 3R e^{3\\ln 3} = 3P + 18Q + 81R = 282    $</p>\n\n<ol>\n<li>$ \\int_0^{\\ln 2} f(x) \\, dx = 11 $</li>\n</ol>\n<p>$    \\int_0^{\\ln 2} (Pe^x + Qe^{2x} + Re^{3x}) \\, dx = 11    $</p>\n\n<p>$    \\int_0^{\\ln 2} Pe^x \\, dx + \\int_0^{\\ln 2} Qe^{2x} \\, dx + \\int_0^{\\ln 2} Re^{3x} \\, dx = 11    $</p>\n\n<p>Evaluating each integral:</p>\n\n<p>$    \\int_0^{\\ln 2} Pe^x \\, dx = P \\left[ e^x \\right]_0^{\\ln 2} = P(e^{\\ln 2} - e^0) = P(2 - 1) = P    $</p>\n\n<p>$    \\int_0^{\\ln 2} Qe^{2x} \\, dx = Q \\left[ \\frac{e^{2x}}{2} \\right]_0^{\\ln 2} = Q \\left( \\frac{e^{2\\ln 2} - e^0}{2} \\right) = Q \\left( \\frac{4 - 1}{2} \\right) = Q \\cdot \\frac{3}{2} = \\frac{3Q}{2}    $</p>\n\n<p>$    \\int_0^{\\ln 2} Re^{3x} \\, dx = R \\left[ \\frac{e^{3x}}{3} \\right]_0^{\\ln 2} = R \\left( \\frac{e^{3\\ln 2} - e^0}{3} \\right) = R \\left( \\frac{8 - 1}{3} \\right) = R \\cdot \\frac{7}{3} = \\frac{7R}{3}    $</p>\n\n<p>Combining these, we get:</p>\n\n<p>$    P + \\frac{3Q}{2} + \\frac{7R}{3} = 11    $</p>\n\n<h3>Step 2: Solving the equations</h3>\n\n<p>We now have three equations:</p>\n\n<ol>\n<li>$ P + Q + R = 6 $</li><br>\n<li>$ 3P + 18Q + 81R = 282 $</li><br>\n<li>$ P + \\frac{3Q}{2} + \\frac{7R}{3} = 11 $</li>\n</ol>\n<p>Let's solve these equations simultaneously.</p>\n\n<h3>Solving the system of equations:</h3>\n\n<p>First, multiply the third equation by 6 to clear the denominators:</p>\n\n<p>$ 6P + 9Q + 14R = 66 $</p>\n\n<p>Now we have:</p>\n\n<ol>\n<li>$ P + Q + R = 6 $</li><br>\n<li>$ 3P + 18Q + 81R = 282 $</li><br>\n<li>$ 6P + 9Q + 14R = 66 $</li>\n</ol>\n<p>Let's solve this system using these equations.</p>\n\n<p>First, eliminate $P$ and $Q$ from equations (1) and (3):</p>\n\n<p>From equation (1):</p>\n\n<p>$ P = 6 - Q - R $</p>\n\n<p>Substitute $P$ into equation (3):</p>\n\n<p>$ 6(6 - Q - R) + 9Q + 14R = 66 $</p>\n\n<p>$ 36 - 6Q - 6R + 9Q + 14R = 66 $</p>\n\n<p>$ 36 + 3Q + 8R = 66 $</p>\n\n<p>$ 3Q + 8R = 30 $</p>\n\n<p>$ Q + \\frac{8R}{3} = 10 $</p>\n\n<p>$ Q = 10 - \\frac{8R}{3} $</p>\n\n<p>Substitute $P$ and $Q$ into equation (2):</p>\n\n<p>$ 3(6 - Q - R) + 18Q + 81R = 282 $</p>\n\n<p>$ 18 - 3Q - 3R + 18Q + 81R = 282 $</p>\n\n<p>$ 18 + 15Q + 78R = 282 $</p>\n\n<p>$ 15Q + 78R = 264 $</p>\n\n<p>Substituting the expression for $Q$ from above:</p>\n\n<p>$ 15 \\left(10 - \\frac{8R}{3}\\right) + 78R = 264 $</p>\n\n<p>$ 150 - 40R + 78R = 264 $</p>\n\n<p>$ 150 + 38R = 264 $</p>\n\n<p>$ 38R = 114 $</p>\n\n<p>$ R = 3 $</p>\n\n<p>Therefore, the value of $ R $ is 3.</p>\n\n<p>So, the correct answer is <strong>Option C: 3</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2584,7 +2584,7 @@
     },
     "solution": "<p>Let's first evaluate the given integrals $ I_1 $ and $ I_2 $ and then find the value of $ \\frac{I_1 + I_2}{I_1 - I_2} $.</p>\n\n<p>We have:</p>\n\n<p>$ I_1 = \\int_0^\\pi \\frac{x}{1 + \\cos^2 x} \\, dx $</p>\n\n<p>and</p>\n\n<p>$ I_2 = \\int_0^\\pi \\frac{1}{1 + \\sin^2 x} \\, dx $.</p>\n\n<p>First, consider the integral $ I_2 $:</p>\n\n<p>Notice that $ 1 + \\sin^2 x = 1 + \\cos^2 \\left( \\frac{\\pi}{2} - x \\right) $. So, we can write:</p>\n\n<p>$ I_2 = \\int_0^\\pi \\frac{1}{1 + \\sin^2 x} \\, dx $</p>\n\n<p>$ \\Rightarrow I_2 = \\int_0^\\pi \\frac{1}{1 + \\cos^2 \\left( \\frac{\\pi}{2} - x \\right)} \\, dx $</p>\n\n<p>Since $ \\cos \\left( \\frac{\\pi}{2} - x \\right) = \\sin x $, the integral can be written as:</p>\n\n<p>$ I_2 = \\int_0^\\pi \\frac{1}{1 + \\cos^2 \\left( \\frac{\\pi}{2} - x \\right)} \\, dx $</p>\n\n<p>Now let's consider the integral $ I_1 $:</p>\n\n<p>$ I_1 = \\int_0^\\pi \\frac{x}{1 + \\cos^2 x} \\, dx $</p>\n\n<p>Using the substitution $ x = \\pi - t $, $ dx = -dt $, we get:</p>\n\n<p>$ I_1 = \\int_0^\\pi \\frac{\\pi - t}{1 + \\cos^2 (\\pi - t)} \\, (-dt) $</p>\n\n<p>$ = \\int_\\pi^0 \\frac{\\pi - t}{1 + \\cos^2 t} \\, dt $</p>\n\n<p>$ = \\int_0^\\pi \\frac{\\pi - t}{1 + \\cos^2 t} \\, dt $</p>\n\n<p>$ = \\int_0^\\pi \\frac{\\pi}{1 + \\cos^2 t} \\, dt - \\int_0^\\pi \\frac{t}{1 + \\cos^2 t} \\, dt $</p>\n\n<p>$ = \\pi \\int_0^\\pi \\frac{1}{1 + \\cos^2 t} \\, dt - I_1 $</p>\n\n<p>Therefore, we can solve for $ I_1 $ as follows:</p>\n\n<p>$ 2I_1 = \\pi \\int_0^\\pi \\frac{1}{1 + \\cos^2 t} \\, dt $</p>\n\n<p>$ = \\pi I_2 $</p>\n\n<p>$ I_1 = \\frac{\\pi}{2} I_2 $</p>\n\n<p>Now, substituting $ I_1 $ into $ \\frac{I_1 + I_2}{I_1 - I_2} $:</p>\n\n<p>$ \\frac{I_1 + I_2}{I_1 - I_2} = \\frac{\\frac{\\pi}{2} I_2 + I_2}{\\frac{\\pi}{2} I_2 - I_2} $</p>\n\n<p>$ = \\frac{\\left( \\frac{\\pi}{2} + 1 \\right) I_2}{\\left( \\frac{\\pi}{2} - 1 \\right) I_2} $</p>\n\n<p>$ = \\frac{\\frac{\\pi}{2} + 1}{\\frac{\\pi}{2} - 1} $</p>\n\n<p>$ = \\frac{\\frac{\\pi + 2}{2}}{\\frac{\\pi - 2}{2}} $</p>\n\n<p>$ = \\frac{\\pi + 2}{\\pi - 2} $</p>\n\n<p>Thus, the correct option is D:</p>\n\n<p>$ \\frac{\\pi + 2}{\\pi - 2} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2707,7 +2707,7 @@
     },
     "solution": "<p>To find the value of $$8 I_1^2$$, let's first evaluate the integrals $I_1$ and $I_2$.</p>\n\n<p>Given:</p>\n\n<p>$$I_1=\\int_0^\\pi \\frac{x}{1+\\cos^2 x} \\, dx$$</p>\n\n<p>$$I_2=\\int_0^\\pi \\frac{1}{1+\\sin^2 x} \\, dx$$</p>\n\n<p>To solve $I_1$, we use a symmetry argument. Let's make a substitution:</p>\n\n<p>Let $ x = \\pi - t $. Then $ dx = -dt $ and changing the limits of integration, when $ x = 0 $, $ t = \\pi $, and when $ x = \\pi $, $ t = 0 $. The integral $I_1$ becomes:</p>\n\n<p>$$ I_1 = \\int_\\pi^0 \\frac{\\pi - t}{1 + \\cos^2 (\\pi - t)} \\, (-dt) $$</p>\n\n<p>The cosine function has even symmetry, so $\\cos(\\pi - t) = -\\cos(t)$. Therefore:</p>\n\n<p>$$ I_1 = \\int_0^\\pi \\frac{\\pi - t}{1 + \\cos^2 t} \\, dt $$</p>\n\n<p>Splitting the integral yields:</p>\n\n<p>$$ I_1 = \\pi \\int_0^\\pi \\frac{1}{1 + \\cos^2 t} \\, dt - \\int_0^\\pi \\frac{t}{1 + \\cos^2 t} \\, dt $$</p>\n\n<p>Notice that the first term looks familiar; it is actually $I_2$:</p>\n\n<p>$$ I_2 = \\int_0^\\pi \\frac{1}{1 + \\sin^2 x} \\, dx $$</p>\n\n<p>By symmetry, $\\cos^2 x$ and $\\sin^2 x$ integrated over $0$ to $\\pi$ give the same result. Hence:</p>\n\n<p>$$ \\int_0^\\pi \\frac{1}{1 + \\cos^2 t} \\, dt = \\int_0^\\pi \\frac{1}{1 + \\sin^2 x} \\, dx = I_2 $$</p>\n\n<p>Therefore:</p>\n\n<p>$$ I_1 = \\pi I_2 - I_1 $$</p>\n\n<p>Rearranging the equation gives:</p>\n\n<p>$$ 2 I_1 = \\pi I_2 $$</p>\n\n<p>So:</p>\n\n<p>$$ I_1 = \\frac{\\pi I_2}{2} $$</p>\n\n<p>Next, since $ I_2 $ is evaluated over $0$ to $\\pi$ with the function symmetric about $\\pi/2$, we look at the known result for such integrals:</p>\n\n<p>It is known that:</p>\n\n<p>$$ I_2 = \\int_0^\\pi \\frac{1}{1+\\sin^2 x} \\, dx = \\frac{\\pi}{\\sqrt{2}} $$</p>\n\n<p>Then substituting $ I_2$ into $ I_1$ gives:</p>\n\n<p>$$ I_1 = \\frac{\\pi (\\frac{\\pi}{\\sqrt{2}})}{2} = \\frac{\\pi^2}{2\\sqrt{2}} $$</p>\n\n<p>Finally, we find $ 8 I_1^2 $:</p>\n\n<p>$$ 8 I_1^2 = 8 \\left( \\frac{\\pi^2}{2\\sqrt{2}} \\right)^2 = 8 \\left( \\frac{\\pi^4}{8 \\cdot 2} \\right) = \\pi^4 $$</p>\n\n<p>Thus, the value of $ 8 I_1^2 $ is $ \\pi^4$. The correct answer is Option D.</p>\n\n<p>Option D: $ \\pi^4 $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2830,7 +2830,7 @@
     },
     "solution": "<p>To determine the value of $$I_2 = \\int_0^\\pi \\frac{1}{1+\\sin^2 x} \\, dx$$, let's consider an appropriate substitution and some trigonometric identities.</p>\n\n<p>First, note that the integrand involves $$\\sin^2 x$$. We can use the Weierstrass substitution where we set:</p>\n\n<p>\n$$\nx = \\pi - t\n$$\n</p>\n\n<p>Then, the integral limits change as follows:\n- When $$x = 0$$, $$t = \\pi$$\n- When $$x = \\pi$$, $$t = 0$$</p>\n\n<p>Now, under this substitution, we have:\n$$\ndx = -dt\n$$</p>\n\n<p>Let’s rewrite the integral with the new variable $$t$$:</p>\n\n<p>\n$$\nI_2 = \\int_\\pi^0 \\frac{1}{1+\\sin^2 (\\pi - t)} \\, (-dt)\n$$\n</p>\n\n<p>Since $$\\sin(\\pi - t) = \\sin(t)$$, this transforms into:</p>\n\n<p>$$\nI_2 = \\int_0^\\pi \\frac{1}{1+\\sin^2 t} \\, dt\n$$</p>\n\n<p>The original integral remains the same under this transformation. To solve it, consider the symmetry in the integrand. We'll use symmetry properties of integrals from 0 to $$\\pi$$ and known integral results related to trigonometric functions.</p>\n\n<p>There is a known result for this type of integral. We can assert that:</p>\n\n<p>$$\n\\int_0^\\pi \\frac{1}{1+\\sin^2 x} \\, dx = \\frac{\\pi}{2 \\sqrt{2}}\n$$</p>\n\n<p>Hence, the value of $$I_2$$ is:</p>\n\n<p>$$\n\\boxed{\\frac{\\pi}{2 \\sqrt{2}}}\n$$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p>Option B: $$\\frac{\\pi}{2 \\sqrt{2}}$$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2953,7 +2953,7 @@
     },
     "solution": "<p>To determine the value of the integral $$l=\\int_a^b \\frac{|x|}{x} \\, dx$$ when $$a < 0 < b$$, let's analyze the function $$\\frac{|x|}{x}$$.\n\n<p>The absolute value function $$|x|$$ is defined as:</p>\n\n$$\n|x| = \\begin{cases}\n-x & \\text{if } x < 0 \\\\\nx & \\text{if } x \\geq 0\n\\end{cases}\n$$\n\n<p>Therefore, for $$\\frac{|x|}{x}$$, we have:</p>\n\n$$\n\\frac{|x|}{x} = \\begin{cases}\n-1 & \\text{if } x < 0 \\\\\n1 & \\text{if } x \\geq 0\n\\end{cases}\n$$\n\n<p>Considering the integral from $$a$$ to $$b$$ where $$a < 0 < b$$, we can split the integral at 0:</p>\n\n$$\n\\int_a^b \\frac{|x|}{x} \\, dx = \\int_a^0 \\frac{|x|}{x} \\, dx + \\int_0^b \\frac{|x|}{x} \\, dx\n$$\n\n<p>For the first part of the integral, where $$a < x < 0$$, $$\\frac{|x|}{x} = -1$$:</p>\n\n$$\n\\int_a^0 \\frac{|x|}{x} \\, dx = \\int_a^0 (-1) \\, dx = -\\int_a^0 1 \\, dx = -(0 - a) = a\n$$\n\n<p>For the second part of the integral, where $$0 \\leq x < b$$, $$\\frac{|x|}{x} = 1$$:</p>\n\n$$\n\\int_0^b \\frac{|x|}{x} \\, dx = \\int_0^b 1 \\, dx = b - 0 = b\n$$\n\n<p>Combining both parts, we have:</p>\n\n$$\n\\int_a^b \\frac{|x|}{x} \\, dx = a + b\n$$\n\n<p>Therefore, the value of $$l$$ when $$a < 0 < b$$ is:</p>\n\n<p><strong>Option A: a + b</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -3076,7 +3076,7 @@
     },
     "solution": "<p>To solve the integral <span class=\"math-tex\">$$ l = \\int_a^b \\frac{|x|}{x} dx $$</span>, we need to analyze the given range. Since we are considering the case when <span class=\"math-tex\">$$ a < b < 0 $$</span>, it means that both $a$ and $b$ are negative numbers.</p>\n\n<p>Recall that the absolute value function <span class=\"math-tex\">$$ |x| $$</span> represents the non-negative value of $x$. Therefore, when $x$ is negative, <span class=\"math-tex\">$$ |x| = -x $$</span>. This simplifies the integrand as follows:</p>\n\n<p><span class=\"math-tex\">$$ \\frac{|x|}{x} = \\frac{-x}{x} = -1 $$</span> for all $x$ in the interval $[a, b]$.</p>\n\n<p>Now, the integral becomes:</p>\n\n<p><span class=\"math-tex\">$$ l = \\int_a^b -1 \\, dx $$</span></p>\n\n<p>We can factor out the constant -1 from the integral:</p>\n\n<p><span class=\"math-tex\">$$ l = -\\int_a^b 1 \\, dx $$</span></p>\n\n<p>The integral of 1 with respect to $x$ over the interval $[a, b]$ is simply the length of the interval:</p>\n\n<p><span class=\"math-tex\">$$ l = - \\left[ x \\right]_a^b = - \\left( b - a \\right) $$</span></p>\n\n<p>Therefore, the result is:</p>\n\n<p><span class=\"math-tex\">$$ l = -(b - a) = a - b $$</span></p>\n\n<p>So, the correct answer is:</p>\n\n<p>Option B: $a - b$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -3199,7 +3199,7 @@
     },
     "solution": "<strong>Concept:</strong>\n\n<ul>\n<li>The logarithmic identity: $\\ln \\left(\\frac{a}{b}\\right) = \\ln a - \\ln b$</li><br>\n<li>Property of definite integrals: $\\displaystyle\\int_a^b f(x) \\, dx = \\displaystyle\\int_a^b f(a + b - x) \\, dx$</li>\n</ul>\n<strong>Calculation:</strong>\n\n<p>Given, $I = \\displaystyle\\int_0^1 \\ln \\left(\\frac{1}{x} - 1\\right) \\, dx$</p>\n\n<p>Initially,</p>\n\n<p>$ I = \\displaystyle\\int_0^1 \\ln \\left(\\frac{1 - x}{x}\\right) \\, dx $</p>\n\n<p>Using the logarithmic identity,</p>\n\n<p>$ I = \\displaystyle\\int_0^1 \\left[\\ln (1 - x) - \\ln x\\right] \\, dx $</p>\n\n<p>This can be separated into two integrals,</p>\n\n<p>$ I = \\displaystyle\\int_0^1 \\ln (1 - x) \\, dx - \\displaystyle\\int_0^1 \\ln x \\, dx $</p>\n\n<p>For the second term, apply the property of definite integrals:</p>\n\n<p>$ I = \\displaystyle\\int_0^1 \\ln (1 - x) \\, dx - \\displaystyle\\int_0^1 \\ln (1 - (1 - x)) \\, dx $</p>\n\n<p>This simplifies to:</p>\n\n<p>$ I = \\displaystyle\\int_0^1 \\ln (1 - x) \\, dx - \\displaystyle\\int_0^1 \\ln (1 - x) \\, dx $</p>\n\n<p>Which gives:</p>\n\n<p>$ I = 0 $</p>\n\n<p>∴ The correct option is (B) $0$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3322,7 +3322,7 @@
     },
     "solution": "<p>To find the value of the integral $$\\displaystyle\\int_0^{20\\pi} (\\sin^4 x + \\cos^4 x) \\, dx$$ given that $$\\displaystyle\\int_0^{\\pi/2} (\\sin^4 x + \\cos^4 x) \\, dx = k$$, we can use periodicity and properties of definite integrals.</p>\n\n<p>First, notice that both $\\sin^4 x$ and $\\cos^4 x$ are periodic functions with period $\\pi$. Since $\\sin^4 x$ and $\\cos^4 x$ have the same period, the function $\\sin^4 x + \\cos^4 x$ also has period $\\pi$.</p>\n\n<p>This means the integral over one period can be used to find the integral over a larger interval by multiplying by the number of periods in that interval.</p>\n\n<p>We can rewrite the larger integral as a sum of integrals over one period (from 0 to $\\pi$): $$\\displaystyle\\int_0^{20\\pi} (\\sin^4 x + \\cos^4 x) \\, dx = 20 \\int_0^{\\pi} (\\sin^4 x + \\cos^4 x) \\, dx$$</p>\n\n<p>Next, we notice that from 0 to $\\pi$ can be broken into two intervals: 0 to $\\pi/2$ and $\\pi/2$ to $\\pi$. Due to the periodic nature, each of these intervals will contribute equally to the integral:</p>\n\n<p>Therefore: $$\\int_0^{\\pi} (\\sin^4 x + \\cos^4 x) \\, dx = 2 \\int_0^{\\pi/2} (\\sin^4 x + \\cos^4 x) \\, dx = 2k$$</p>\n\n<p>So: $$\\displaystyle\\int_0^{20 \\pi} (\\sin^4 x + \\cos^4 x) \\, dx = 20 \\cdot 2k = 40k$$</p>\n\n<p>Thus, the value of $$\\int_0^{20 \\pi} (\\sin^4 x + \\cos^4 x) \\, dx$$ is indeed 40k.</p>\n\n<p><strong>Therefore, the correct answer is: Option D: 40 k</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3445,7 +3445,7 @@
     },
     "solution": "<strong>Concept:</strong>\n\n<p>The integral of a function $ f(x) $ over a symmetric interval $ \\left[ -a, a \\right] $ is zero if $ f(x) $ is an odd function.</p>\n\n<strong>Calculation:</strong>\n\n<p>Given, $ I = \\int_{-\\pi/2}^{\\pi/2} (e^{\\cos x} \\sin x + e^{\\sin x} \\cos x) \\, dx $</p>\n\n<p>⇒ $ I = \\int_{-\\pi/2}^{\\pi/2} e^{\\cos x} \\sin x \\, dx + \\int_{-\\pi/2}^{\\pi/2} e^{\\sin x} \\cos x \\, dx $</p>\n\n<p>⇒ $ I = I_1 + I_2 $</p>\n\n<p>where $ I_1 = \\int_{-\\pi/2}^{\\pi/2} e^{\\cos x} \\sin x \\, dx $ and $ I_2 = \\int_{-\\pi/2}^{\\pi/2} e^{\\sin x} \\cos x \\, dx $.</p>\n\n<strong>Solving $ I_1 $:</strong>\n\n<p>Let $ f(x) = e^{\\cos x} \\sin x $</p>\n\n<p>⇒ $ f(-x) = e^{\\cos(-x)} \\sin(-x) = - e^{\\cos x} \\sin x $</p>\n\n<p>Since $ f(-x) = -f(x) $, $ f(x) $ is an odd function.</p>\n\n<p>$\\int_{-a}^{a} f(x) dx = 0$ for odd $ f(x) $.</p>\n\n<p>Therefore, $ I_1 = \\int_{-\\pi/2}^{\\pi/2} e^{\\cos x} \\sin x \\, dx = 0 $.</p>\n\n<p>So, $ I = \\int_{-\\pi/2}^{\\pi/2} e^{\\sin x} \\cos x \\, dx $.</p>\n\n<p>Let $ \\sin x = t $, then $ \\cos x \\, dx = dt $.</p>\n\n<p>When $ x = -\\frac{\\pi}{2} $, $ t = -1 $, and when $ x = \\frac{\\pi}{2} $, $ t = 1 $.</p>\n\n<p>Thus, $ I = \\int_{-1}^{1} e^t \\, dt $.</p>\n\n<p>Evaluating the integral, $ I = e^t \\big|_{-1}^{1} = e - e^{-1} $.</p>\n\n<p>Therefore, $ I = \\frac{e^2 - 1}{e} $.</p>\n\n<p>∴ The correct option is $ \\frac{e^2-1}{e} $.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3568,7 +3568,7 @@
     },
     "solution": "\n\n<p><span class=\"math-tex\">$\\displaystyle \\int^{\\frac{π}{4}}_0 \\frac{dx}{(\\sin x + \\cos x)^2}$</span></p>\n\n<p>We know that&nbsp;&nbsp;<span class=\"math-tex\">$\\displaystyle \\tan x =\\frac{\\sin x}{\\cos x}$</span>&nbsp;⇒&nbsp;<span class=\"math-tex\">$\\displaystyle \\sin x =\\frac{\\tan x}{\\sec x}$</span>&nbsp;and&nbsp;<span class=\"math-tex\">$\\displaystyle \\cos x =\\frac{1}{\\sec x}$</span></p>\n\n<p><strong>⇒&nbsp;</strong><span class=\"math-tex\">$\\displaystyle I= \\int^{\\frac{π}{4}}_0 \\frac{dx}{\\left(\\frac{\\tan x}{\\sec x} +\\frac{1}{\\sec x}\\right)^2}$</span></p>\n\n<p><strong>⇒&nbsp;</strong><span class=\"math-tex\">$\\displaystyle I= \\int^{\\frac{π}{4}}_0 \\frac{\\sec^2 x \\ dx}{(\\tan x + 1)^2}$</span></p>\n\n<p>Let $\\tan x = t$ ⇒ $\\sec^2 x \\ dx = dt$</p>\n\n<p>When $x = 0$ ⇒ $t = \\tan 0$ ⇒ $t = 0$</p>\n\n<p>When $x = \\frac{π}{4}$ ⇒ $t = \\tan \\frac{π}{4}$ ⇒ $t = 1$</p>\n\n<p>Substitute the 't' value and $dt$ value in the expression for integration:</p>\n\n<div><strong>⇒&nbsp;</strong><span class=\"math-tex\">$\\displaystyle I= \\int^{1}_0 \\frac{dt}{(1+t)^2}$</span></div>\n\n<p>Let $(1 + t) = v$ ⇒ $dv = dt$</p>\n\n<div>\n\n<p>When $t = 0$ ⇒ $v = 1 + 0$ ⇒ $v = 1$</p>\n\n<p>When $t = 1$ ⇒ $v = 1 + 1$ ⇒ $v = 2$</p>\n\n<p>Substitute the 'v' value and $dv$ value in the expression for integration:</p>\n\n<p><strong>⇒&nbsp;</strong><span class=\"math-tex\">$\\displaystyle I= \\int^{2}_1 \\frac{dv}{v^2} $</span></p>\n\n<p>Using <span class=\"math-tex\">$\\displaystyle \\int \\ x^n\\ dx = \\frac{x^{n+1}}{n+1}+C, n\\neq -1$</span>,</p>\n\n<p><strong>⇒&nbsp;</strong><span class=\"math-tex\">$\\displaystyle I=\\left[ \\frac{-1}{v}\\right ]_1^2 $</span></p>\n\n<p><strong>⇒&nbsp;</strong><span class=\"math-tex\">$\\displaystyle I=\\left[ \\frac{-1}{2}- \\frac{(-1)}{1}\\right ] $</span>&nbsp;= $\\frac{1}{2}$</p>\n\n<p>∴&nbsp;<span class=\"math-tex\">$\\displaystyle \\int^{\\frac{π}{4}}_0 \\frac{dx}{(\\sin x + \\cos x)^2}=\\frac{1}{2}$</span></p>\n\n</div>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3691,7 +3691,7 @@
     },
     "solution": "<p>To evaluate the integral\n\n<p>$$\\int\\limits^{-1}_{-2}\\frac{x}{|x|}dx,$$</p>\n\n<p>we need to understand the behavior of the integrand</p>\n\n<p>$$\\frac{x}{|x|}.$$</p>\n\n<p>For any $ x < 0 $, we have $ |x| = -x $. Hence,</p>\n\n<p>$$\\frac{x}{|x|} = \\frac{x}{-x} = -1.$$</p>\n\n<p>Given that the integral is from $-2$ to $-1$, this integral can be simplified to\n\n<p>$$\\int\\limits^{-1}_{-2} -1 \\, dx.$$</p>\n\n<p>Now, evaluate the integral:\n\n<p>$$ \\int\\limits^{-1}_{-2} -1 \\, dx = -1 \\times \\left[ x \\right]_{-2}^{-1}. $$</p>\n\n<p>Simplify the expression by substituting the limits of integration:\n\n<p>$$ -1 \\times \\left[ x \\right]_{-2}^{-1} = -1 \\times \\left( -1 - (-2) \\right) = -1 \\times ( -1 + 2 ) = -1 \\times 1 = -1. $$</p>\n\n<p>Therefore, the value of the integral\n\n<p>$$\\int\\limits^{-1}_{-2} \\frac{x}{|x|} dx$$</p>\n\n<p>is</p>\n\n<p>$$-1.$$</p>\n\n<p>The correct option is:\n\n<b>Option B: -1</b></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3814,7 +3814,7 @@
     },
     "solution": "<p><p>The Fundamental Theorem of Calculus tells us that:</p>\n<p>$$\\int_1^4 f'(x) \\, dx = f(4) - f(1)$$</p></p>\n<p><p>Since the problem states that:</p>\n<p>$$f(1) = f(4)$$</p>\n<p>it follows that:</p>\n<p>$$f(4) - f(1) = 0$$</p></p>\n\n<p>Thus, the value of the integral is 0, which corresponds to Option B.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3937,7 +3937,7 @@
     },
     "solution": "<h3>Concept Used:</h3>\n\n<p><p>$\\int \\cos x \\, dx = \\sin x$</p></p>\n<p><p>$e^{\\ln(f(x))} = f(x)$</p></p>\n\n<h3>Calculation:</h3>\n<p>Let $ I = \\int_0^{\\frac{\\pi}{2}} e^{\\ln(\\cos x)} \\, dx $.</p>\n<p>According to the concepts used:</p>\n<p>$ I = \\int_0^{\\frac{\\pi}{2}} \\cos x \\, dx $</p>\n<p>$ I = [\\sin x]_0^{\\frac{\\pi}{2}} $</p>\n<p>$ I = \\sin \\frac{\\pi}{2} - \\sin 0 $</p>\n<p>$ I = 1 - 0 = 1 $</p>\n<p>Thus, the value of the integral $\\int_0^{\\frac{\\pi}{2}} e^{\\ln(\\cos x)} \\, dx$ is 1.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4060,7 +4060,7 @@
     },
     "solution": "<p>Let:</p>\n<p>$ I = \\int_{0}^{\\pi} \\ln\\left(\\tan\\frac{x}{2}\\right) \\, dx \\quad \\text{---(1)} $</p>\n<p>Using the formula above:</p>\n<p>$ I = \\int_{0}^{\\pi} \\ln\\left(\\tan\\left(\\pi - \\frac{x}{2}\\right)\\right) \\, dx $</p>\n<p>This implies:</p>\n<p>$ I = -\\int_{0}^{\\pi} \\ln\\left(\\tan\\frac{x}{2}\\right) \\, dx $</p>\n<p>From equation (1), we have:</p>\n<p>$ I = -I $</p>\n<p>Solving this gives:</p>\n<p>$ 2I = 0 \\quad \\Rightarrow \\quad I = 0 $</p>\n<p><strong>Therefore, the value of the integral $\\int_{0}^{\\pi} \\ln\\left(\\tan\\frac{x}{2}\\right) \\, dx$ is 0.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4183,7 +4183,7 @@
     },
     "solution": "<p>Let's work through the problem step-by-step.</p>\n\n<p><p>You're given the function:  </p>\n<p>$$f(x)=2^x$$</p></p>\n<p><p>First, find the derivative of $ f(x) $. Using the exponential derivative rule, we have:  </p>\n<p>$$f'(x) = 2^x \\ln 2$$</p></p>\n<p><p>Now, compute the ratio $ \\frac{f'(x)}{f(x)} $:  </p>\n<p>$$\\frac{f'(x)}{f(x)} = \\frac{2^x \\ln 2}{2^x} = \\ln 2$$  </p>\n<p>Notice that this ratio simplifies to the constant $ \\ln 2 $.</p></p>\n<p><p>With the integrand simplified, the integral becomes:  </p>\n<p>$$\\int_{2}^{10} \\frac{f'(x)}{f(x)} \\, dx = \\int_{2}^{10} \\ln 2 \\, dx$$</p></p>\n<p><p>Since $ \\ln 2 $ is a constant, integrate it with respect to $ x $:  </p>\n<p>$$\\int_{2}^{10} \\ln 2 \\, dx = \\ln 2 \\cdot \\int_{2}^{10} dx = \\ln 2 \\cdot (10 - 2) = 8 \\ln 2$$</p></p>\n\n<p>Thus, the value of the integral is:</p>\n<p>$$8 \\ln 2$$</p>\n<p>This corresponds to Option D.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4306,7 +4306,7 @@
     },
     "solution": "<p>We have to find the value of&nbsp;<span class=\"math-tex\">$\\rm \\int^0_{-2}|f(x)|dx$</span></p>\n\n<p><u><strong><span class=\"math-tex\">$\\int^0_{-2}|f(x)|dx$</span></strong></u>&nbsp;</p>\n\n<p>⇒&nbsp;<span class=\"math-tex\">$\\rm \\int^ {0}_{-2}|f(x)|dx $</span>&nbsp; &nbsp; &nbsp;----(i)</p>\n\n<p>Since, The lower and upper limit is -2 and&nbsp;0 which is less than zero,</p>\n\n<p>So, |f(x)| = -f(x)</p>\n\n<p>Now from (i), we get&nbsp;</p>\n\n<p><span style=\"\">⇒&nbsp;</span><span class=\"math-tex\">$\\int^0_{-2}|f(x)|dx = -\\int^0_{-2}f(x)dx$</span>&nbsp;</p>\n\n<p><span style=\"\">⇒ - k&nbsp;≤ k [∵ We don't know the exact value of k (it can be zero, -ve,&nbsp;+ve)]</span></p>\n\n<p><strong><span style=\"\">∴&nbsp;<span class=\"math-tex\">$\\rm \\int^0_{-2}|f(x)|dx \\le k$</span>.</span></strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4429,7 +4429,7 @@
     },
     "solution": "<p>To solve the integral </p>\n<p>$$ \\int_0^a \\frac{f(a-x)}{f(x) + f(a-x)} \\, dx, $$ </p>\n<p>consider the substitution $ u = a - x $. This gives $ du = -dx $ and the limits change as follows: when $ x = 0 $, $ u = a $; and when $ x = a $, $ u = 0 $. The integral becomes:</p>\n<p>$$ \\int_a^0 \\frac{f(u)}{f(a-u) + f(u)} (-du) = \\int_0^a \\frac{f(u)}{f(a-u) + f(u)} \\, du. $$</p>\n<p>Now, let's denote the original integral by $ I $:</p>\n<p>$$ I = \\int_0^a \\frac{f(a-x)}{f(x) + f(a-x)} \\, dx. $$</p>\n<p>The transformed integral is still $ I $:</p>\n<p>$$ I = \\int_0^a \\frac{f(u)}{f(a-u) + f(u)} \\, du. $$</p>\n<p>Adding these two expressions for the integral $ I $:</p>\n<p>$$ 2I = \\int_0^a \\frac{f(a-x)}{f(x) + f(a-x)} \\, dx + \\int_0^a \\frac{f(x)}{f(a-x) + f(x)} \\, dx. $$</p>\n<p>Notice that in the combined integrals, for any value of $ x $, we have:</p>\n<p>$$ \\frac{f(a-x) + f(x)}{f(a-x) + f(x)} = 1. $$</p>\n<p>Thus, the sum of the two integrals is:</p>\n<p>$$ 2I = \\int_0^a 1 \\, dx = a. $$</p>\n<p>Therefore, solving for $ I $:</p>\n<p>$$ I = \\frac{a}{2}. $$</p>\n<p>Thus, the integral is equal to option D:</p>\n<p>$$ \\frac{a}{2}. $$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4552,7 +4552,7 @@
     },
     "solution": "<p>We are given:</p>\n<p>$ \\int_{0}^{a} \\bigl[f(x) + f(-x)\\bigr] \\, dx  \\;=\\; \\int_{-a}^{a} g(x)\\,dx. $</p>\n<p>We want to determine $g(x)$.</p>\n<hr />\n<h2>Step 1: Rewrite the left-hand side</h2>\n<p>Focus on the left side:</p>\n<p>$ \\int_{0}^{a} \\bigl[f(x) + f(-x)\\bigr] \\, dx = \\int_{0}^{a} f(x)\\,dx \\;+\\; \\int_{0}^{a} f(-x)\\,dx. $</p>\n<p>Handle the second term by substituting $u = -x$. Then $du = -\\,dx$. When $x=0$, $u=0$; when $x=a$, $u=-a$. So</p>\n<p>$ \\int_{0}^{a} f(-x)\\,dx =\\int_{0}^{-a} f(u)\\,\\bigl(-du\\bigr) =\\int_{-a}^{0} f(u)\\,du. $</p>\n<p>Hence,</p>\n<p>$ \\int_{0}^{a} \\bigl[f(x) + f(-x)\\bigr] \\, dx  = \\underbrace{\\int_{0}^{a} f(x)\\,dx}_{(1)} \\;+\\; \\underbrace{\\int_{-a}^{0} f(u)\\,du}_{(2)}. $</p>\n<p>Combine (1) and (2):</p>\n<p>$ = \\int_{-a}^{0} f(u)\\,du \\;+\\; \\int_{0}^{a} f(x)\\,dx  = \\int_{-a}^{a} f(t)\\,dt  \\quad\\bigl(\\text{just renaming variables to }t\\bigr). $</p>\n<p>So the left-hand side becomes:</p>\n<p>$ \\int_{-a}^{a} f(t)\\,dt. $</p>\n<hr />\n<h2>Step 2: Compare both sides</h2>\n<p>Thus the given equation</p>\n<p>$ \\int_{0}^{a} \\bigl[f(x) + f(-x)\\bigr] \\, dx  \\;=\\; \\int_{-a}^{a} g(x)\\,dx $</p>\n<p>can be rewritten as</p>\n<p>$ \\int_{-a}^{a} f(x)\\,dx \\;=\\; \\int_{-a}^{a} g(x)\\,dx. $</p>\n<p>Since this must hold for <strong>all</strong> $a$, the most direct conclusion is</p>\n<p>$ g(x) \\;=\\; f(x). $</p>\n<hr />\n<h2>Step 3: Match with Multiple Choice</h2>\n\n<p><p>$g(x) = f(x)$  </p></p>\n<p><p>$g(x) = f(-x) + f(x)$  </p></p>\n<p><p>$g(x) = -\\,f(x)$  </p></p>\n<p><p>None of the above  </p></p>\n\n<p>The working shows $g(x) = f(x)$.</p>\n<p>Hence, the correct answer is:</p>\n<p>$ \\boxed{g(x) = f(x).} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"

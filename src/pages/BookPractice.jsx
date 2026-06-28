@@ -15,7 +15,7 @@ import Cloud from 'lucide-react/dist/esm/icons/cloud';
 import RefreshCw from 'lucide-react/dist/esm/icons/refresh-cw';
 import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
 import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
-import { fetchBlackBookProgress, saveBlackBookProgress, resetBlackBookProgress } from '../utils/blackBookApi';
+import { fetchBlackBookQuestions, fetchBlackBookProgress, saveBlackBookProgress, resetBlackBookProgress } from '../utils/blackBookApi';
 import { playVoiceFeedback } from '../utils/voiceFeedback';
 import MathRenderer from '../utils/MathRenderer';
 import TeacherSolution from '../components/TeacherSolution';
@@ -593,7 +593,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
                         <CheckCircle className="w-5 h-5" /> Answer Key
                       </h3>
                       <div className="text-green-900 font-mono text-sm leading-relaxed whitespace-pre-wrap">
-                        {question.answerKeyStr || 'Answer not available'}
+                        {question.answerKeyStr || question.correctAnswer || 'Answer not available'}
                       </div>
                     </div>
                   )}
@@ -618,7 +618,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
                         <CheckCircle className="w-5 h-5" /> Answer
                       </h3>
                       <div className="text-3xl font-bold text-green-700 mt-1">
-                        {question.answerKeyStr || 'N/A'}
+                        {question.answerKeyStr || question.correctAnswer || 'N/A'}
                       </div>
                     </div>
                   ) : (

@@ -5,6 +5,7 @@ import LogOut from 'lucide-react/dist/esm/icons/log-out';
 import Moon from 'lucide-react/dist/esm/icons/moon';
 import Sun from 'lucide-react/dist/esm/icons/sun';
 import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import Target from 'lucide-react/dist/esm/icons/target';
 import logoImg from '../assets/logo.png';
 
 export default function Navbar({ activePage, setActivePage, user, onLogout, customLogo, theme, onToggleTheme, themeColor, onColorChange }) {
@@ -78,7 +79,19 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
           }`}
         >
           <Sparkles className="h-3.5 w-3.5 text-gold" />
-          Test Series
+          Official Paper
+        </button>
+
+        <button
+          onClick={() => setActivePage('ultimate-test-series')}
+          className={`uppercase transition-all duration-200 hover:scale-105 flex items-center gap-1 ${
+            activePage === 'ultimate-test-series'
+              ? (isLight ? 'text-blue-600' : 'text-electric')
+              : (isLight ? 'text-gray-600 hover:text-blue-600' : 'text-platinum hover:text-white')
+          }`}
+        >
+          <Target className="h-3.5 w-3.5 text-blue-400" />
+          Ultimate Series
         </button>
 
         <button

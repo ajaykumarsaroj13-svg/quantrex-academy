@@ -16,7 +16,8 @@
     ],
     "solution": "<p>Significant figures are the digits in a number that carry meaningful information about its precision. In other words, they are the numbers that are known with certainty.</p>\n<p>Here is how we calculate significant figures for each number:</p>\n<ul>\n<li><p>A. 0.00253: There are 3 significant figures here (253). Leading zeroes do not count as significant figures.</p>\n</li><br/>\n<li><p>B. 1.0003: There are 5 significant figures here. All non-zero digits are significant, and zeroes between non-zero digits or at the end of the number and after the decimal point are significant.</p>\n</li><br/>\n<li><p>C. 15.0: There are 3 significant figures here. The zero after the decimal point counts as it indicates the precision of the measurement.</p>\n</li><br/>\n<li><p>D. 163: There are 3 significant figures here. All non-zero digits are significant.</p>\n</li>\n</ul>\n<p>So, comparing these, we see that options A (0.00253), C (15.0), and D (163) each have 3 significant figures.</p>\n",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 8th April Evening Shift"
+    "title": "JEE Main 2023 (Online) 8th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc9f2762cf4b576a155b",
@@ -35,7 +36,8 @@
     ],
     "solution": "<p>$${{0.02858 \\times 0.112} \\over {0.5702}}$$ = 0.00561</p>\n<p>Reported answer should not be more precise than\nleast precise term (0.112 is the least precise term with three significant figures) in calculations, so there should\nbe three significant figures in reported answer.</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th June Evening Shift"
+    "title": "JEE Main 2022 (Online) 29th June Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc9f2762cf4b576a155c",
@@ -49,7 +51,8 @@
     "options": [],
     "solution": "Number of significant figures = 3",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 25th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 25th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdc9f2762cf4b576a155d",
@@ -63,34 +66,7 @@
     "options": [],
     "solution": "10<sup>$$-$$3</sup> has no role in significant digits. Here in 50000.020, Number of significant figure = 8 as all zeroes between non zero digits are counted as significant digits and also the last zero is also significant digit as zeroes at the end or right of the number is significant only if they are present  at the right side of the decimal.",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 26th February Morning Shift"
-  },
-  {
-    "_id": "6a2bdc9f2762cf4b576a155e",
-    "question_id": "4w1hSBHmi3gOVwys",
-    "chapterId": "significant-figures",
-    "subject": "Chemistry",
-    "topic": "significant-figures",
-    "difficulty": "easy",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "<p>The universal gas constant, denoted by R, can be calculated using the Avogadro number (N<sub>A</sub>) and the Boltzmann constant (k<sub>B</sub>) by the following relationship:</p>\n\n$$\nR = N_A \\times k_B\n$$\n\n<p>Given that:</p>\n\n$$\nN_A = 6.023 \\times 10^{23} \\text{ mol}^{-1}\n$$\n\n$$\nk_B = 1.380 \\times 10^{-23} \\text{ J K}^{-1}\n$$\n\n<p>Let's multiply these values to find R:</p>\n\n$$\nR = (6.023 \\times 10^{23} \\text{ mol}^{-1}) \\times (1.380 \\times 10^{-23} \\text{ J K}^{-1})\n$$\n\n$$\nR = (6.023 \\times 1.380) \\times (10^{23} \\times 10^{-23}) \\text{ J mol}^{-1} \\text{K}^{-1}\n$$\n\n$$\nR = 8.31174 \\times 10^{0} \\text{ J mol}^{-1} \\text{K}^{-1}\n$$\n\n<p>To determine the number of significant digits in the calculated value of R, we must consider the number of significant digits in the given values of N<sub>A</sub> and k<sub>B</sub>.</p>\n\n<p>The value for N<sub>A</sub> has four significant digits (6.023), and the value for k<sub>B</sub> also has four significant digits (1.380). When multiplying or dividing numbers, the number of significant digits in the result is determined by the number with the smallest amount of significant digits used in the calculation.</p>\n\n<p>In this case, since both constants have four significant digits, the value of R calculated from their multiplication will also contain four significant digits:</p>\n\n$$\nR \\approx 8.314 \\text{ J mol}^{-1} \\text{K}^{-1}\n$$\n\n<p>Therefore, the calculated value of the universal gas constant R has four significant digits.</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2014 Paper 1 Offline"
-  },
-  {
-    "_id": "6a2bdc9f2762cf4b576a155f",
-    "question_id": "WmmmYD0HDt8JOzZO",
-    "chapterId": "significant-figures",
-    "subject": "Chemistry",
-    "topic": "significant-figures",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [],
-    "solution": "<p>To find the average titre value, first add up the three measurements provided and then divide by the number of measurements.</p>\n\n<p>The sum of the measurements is:</p>\n$$\n25.2 \\, \\text{mL} + 25.25 \\, \\text{mL} + 25.0 \\, \\text{mL} = 75.45 \\, \\text{mL}\n$$\n\n<p>Since there are three measurements, divide this sum by 3 to calculate the average:</p>\n$$\n\\text{Average titre value} = \\frac{75.45 \\, \\text{mL}}{3} = 25.15 \\, \\text{mL}\n$$\n\n<p>When reporting the average, we must consider the significant figures of the original measurements. The number of significant figures is determined by the least precise measurement, which in this case is 25.0 mL with three significant figures. Therefore, we should report the average value to three significant figures as well.</p>\n\n<p>The average value of 25.15 mL has four significant figures, so we need to round it to three significant figures. However, this is slightly tricky since 25.15 already appears to be rounded to four significant figures. We should consult the original measurements to decide on the best course of action.</p>\n\n<p>Looking at the individual measurements (25.2, 25.25, and 25.0), we should consider the lowest decimal place which they all have in common, which is the first decimal place. The third measurement has no second decimal place, indicating its level of precision. Thus, the number of significant figures for the average titre value should be in line with this level of precision. Since the average calculated is 25.15, when we adjust to the first decimal place for consistent significant figures, the average is 25.1 mL with three significant figures.</p>\n\n$$\n\\text{Corrected Average titre value} = 25.1 \\, \\text{mL}\n$$\n\n<p>Therefore, the number of significant figures in the average titre value is three: 25.1 mL.</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2010 Paper 1 Offline"
+    "title": "JEE Main 2021 (Online) 26th February Morning Shift",
+    "exam": "JEE Main"
   }
 ]

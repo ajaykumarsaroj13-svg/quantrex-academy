@@ -11,7 +11,8 @@
     "options": [],
     "solution": "<p>$$A = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 1 & 0  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right] + \\left[ {\\matrix{\n   0 & a & a  \\cr \n   0 & 0 & b  \\cr \n   0 & 0 & 0  \\cr \n\n } } \\right] = I + B$$</p>\n<p>$${B^2} = \\left[ {\\matrix{\n   0 & a & a  \\cr \n   0 & 0 & b  \\cr \n   0 & 0 & 0  \\cr \n\n } } \\right] + \\left[ {\\matrix{\n   0 & a & a  \\cr \n   0 & 0 & b  \\cr \n   0 & 0 & 0  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   0 & 0 & {ab}  \\cr \n   0 & 0 & 0  \\cr \n   0 & 0 & 0  \\cr \n\n } } \\right]$$</p>\n<p>$${B^3} = 0$$</p>\n<p>$$\\therefore$$ $${A^n} = {(1 + B)^n} = {}^n{C_0}I + {}^n{C_1}B + {}^n{C_2}{B^2} + {}^n{C_3}{B^3} + \\,\\,....$$</p>\n<p>$$ = \\left[ {\\matrix{\n   1 & 0 & 0  \\cr \n   0 & 1 & 0  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right] + \\left[ {\\matrix{\n   0 & {na} & {na}  \\cr \n   0 & 0 & {nb}  \\cr \n   0 & 0 & 0  \\cr \n\n } } \\right] + \\left[ {\\matrix{\n   0 & 0 & {{{n(n - 1)ab} \\over 2}}  \\cr \n   0 & 0 & 0  \\cr \n   0 & 0 & 0  \\cr \n\n } } \\right]$$</p>\n<p>$$ = \\left[ {\\matrix{\n   1 & {na} & {na + {{n(n - 1)} \\over 2}ab}  \\cr \n   0 & 1 & {nb}  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   1 & {48} & {2160}  \\cr \n   0 & 1 & {48}  \\cr \n   0 & 0 & 1  \\cr \n\n } } \\right]$$</p>\n<p>On comparing we get $$na = 48$$, $$nb = 96$$ and</p>\n<p>$$na + {{n(n - 1)} \\over 2}ab = 2160$$</p>\n<p>$$ \\Rightarrow a = 4,n = 12$$ and $$b = 8$$</p>\n<p>$$n + a + b = 24$$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 25th July Evening Shift"
+    "title": "JEE Main 2022 (Online) 25th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbc22762cf4b57695832",
@@ -30,6 +31,7 @@
     ],
     "solution": "$$\\left[ {\\matrix{\n   1 &amp; {...} &amp; {...}  \\cr \n   {...} &amp; 1 &amp; {...}  \\cr \n   {...} &amp; {...} &amp; 1  \\cr \n\n } } \\right]\\,\\,$$ are $$6$$ non-singular matrices because $$6$$\n<br><br>blanks will be filled by $$5$$ zeros and $$1$$ one.\n<br><br>Similarly, $$\\left[ {\\matrix{\n   {...} &amp; {...} &amp; 1  \\cr \n   {...} &amp; 1 &amp; {...}  \\cr \n   1 &amp; {...} &amp; {...}  \\cr \n\n } } \\right]\\,\\,$$ are $$6$$ non-singular matrices.\n<br><br>So, required cases are more than $$7,$$ non-singular $$3 \\times 3$$ matrices.",
     "__v": 0,
-    "title": "AIEEE 2010"
+    "title": "AIEEE 2010",
+    "exam": "JEE Main"
   }
 ]

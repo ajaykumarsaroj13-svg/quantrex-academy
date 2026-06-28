@@ -117,7 +117,7 @@
     },
     "solution": null,
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -241,7 +241,7 @@
     },
     "solution": null,
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -365,7 +365,7 @@
     },
     "solution": "<p>A number is divisible by $4$ if its last two digits form a number divisible by $4$.</p>\n<p>We have to form $4$-digit numbers using $1,2,3,4$ without repetition.</p>\n<p>So first, let us find all possible last two-digit endings using these digits that are divisible by $4$.</p>\n<p>Possible two-digit numbers from $1,2,3,4$ without repetition:</p>\n<p>$$12,\\ 13,\\ 14,\\ 21,\\ 23,\\ 24,\\ 31,\\ 32,\\ 34,\\ 41,\\ 42,\\ 43$$</p>\n<p>Among these, the ones divisible by $4$ are:</p>\n<p>$$12,\\ 24,\\ 32$$</p>\n<p>So there are $3$ choices for the last two digits.</p>\n<p>Now for each such choice, the remaining $2$ digits can be arranged in the first two places in:</p>\n<p>$$2! = 2$$</p>\n<p>ways.</p>\n<p>Hence total numbers:</p>\n<p>$$3 \\times 2 = 6$$</p>\n<p>Therefore, the required number of $4$-digit numbers is</p>\n<p>$$\\boxed{6}$$</p>\n<p>So the correct option is:</p>\n<p>$$\\boxed{\\text{Option 2}}$$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -489,7 +489,7 @@
     },
     "solution": "<p>To form a triangle, we must choose any $3$ points such that they are <strong>not collinear</strong>.</p>\n<h3>Step 1: Total ways of choosing 3 points from 8 points</h3>\n<p>$$ {}^8C_3 = \\frac{8 \\cdot 7 \\cdot 6}{3 \\cdot 2 \\cdot 1} = 56 $$</p>\n<h3>Step 2: Subtract the sets of 3 collinear points</h3>\n<p>It is given that $4$ points are collinear.  </p>\n<p>Any choice of $3$ points from these $4$ points will not form a triangle.</p>\n<p>Number of such choices:</p>\n<p>$$ {}^4C_3 = 4 $$</p>\n<h3>Step 3: Required number of triangles</h3>\n<p>$$ 56 - 4 = 52 $$</p>\n<p>So, the number of triangles formed is</p>\n<p>$$ \\boxed{52} $$</p>\n<p>Hence, the correct option is <strong>Option 4</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -613,7 +613,7 @@
     },
     "solution": "<p>To form a quadrilateral, we need to choose $4$ points such that no three of them are collinear in a way that makes the figure degenerate.</p>\n<p>We are given:</p>\n<ul>\n<li><p>Total points $= 8$</p></li>\n<li><p>Out of these, $4$ points are collinear</p></li>\n</ul>\n<p>First, find the total number of ways to choose any $4$ points from $8$:</p>\n<p>$$ \\binom{8}{4} = 70 $$</p>\n<p>But among these, the sets of $4$ points that all lie on the same straight line cannot form a quadrilateral.</p>\n<p>Since exactly $4$ points are collinear, the number of such invalid selections is:</p>\n<p>$$ \\binom{4}{4} = 1 $$</p>\n<p>So, required number of quadrilaterals is:</p>\n<p>$$ 70 - 1 = 69 $$</p>\n<p>Hence, the correct answer is:</p>\n<p>$$ \\boxed{69} $$</p>\n<p>So, Option 2 is correct.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -737,7 +737,7 @@
     },
     "solution": "<h3>Step 1: Letters in the word CAPITAL</h3>\n<p>Word = C, A, P, I, T, A, L  </p>\n<ul>\n<li><p>Total letters = 7  </p></li>\n<li><p>Vowels = A, I, A (3 vowels, with <strong>A repeated twice</strong>)  </p></li>\n<li><p>Consonants = C, P, T, L (4 consonants)</p></li>\n</ul>\n\n<h3>Step 2: Condition that all consonants are together</h3>\n<p>When consonants are together, treat them as <strong>one single block</strong>.  </p>\n<ul>\n<li><p>This block = {C, P, T, L}  </p></li>\n<li><p>So now the arrangement is between: <strong>[one consonant block] + 3 vowels (A, I, A)</strong></p></li>\n</ul>\n<p>Thus, total units to arrange = 1 (block) + 3 (vowels) = 4 units.  </p>\n<p>(The vowels contain a repetition of A.)</p>\n\n<h3>Step 3: Arrangement of the 4 units</h3>\n<p>Number of ways to arrange =  </p>\n<p>$ \\frac{4!}{2!} = 12 $</p>\n<p>(Dividing by $2!$ because of the two identical A’s.)</p>\n\n<h3>Step 4: Arrangement inside the consonant block</h3>\n<p>There are 4 consonants (C, P, T, L), all different.  </p>\n<p>Ways to arrange them = $4! = 24$</p>\n\n<h3>Step 5: Total Arrangements</h3>\n<p>$ \\text{Total arrangements} = 12 \\times 24 = 288 $</p>\n\n<h3>Final Answer:</h3>\n<p><strong>Option C: 288</strong> </p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -860,7 +860,7 @@
     },
     "solution": "<ol>\n<li><p>Formula for number of diagonals in an n-sided polygon:  </p>\n<p>From each vertex, you can draw diagonals to the other $(n - 3)$ non-adjacent vertices.  </p>\n<p>Total diagonals $= \\dfrac{n(n - 3)}{2}$.  </p></li>\n<li><p>Set this equal to 20:  </p>\n<p>$$\\frac{n(n - 3)}{2} = 20$$  </p>\n<p>Multiply both sides by 2:  </p>\n<p>$$n(n - 3) = 40$$  </p>\n<p>Expand:  </p>\n<p>$$n^2 - 3n - 40 = 0$$  </p></li>\n<li><p>Solve the quadratic equation $n^2 - 3n - 40 = 0$.  </p>\n<p>Discriminant $D = (-3)^2 - 4 \\times 1 \\times (-40) = 9 + 160 = 169$.  </p>\n<p>$$n = \\frac{3 \\pm \\sqrt{169}}{2} = \\frac{3 \\pm 13}{2}$$  </p>\n<p>Positive root:  </p>\n<p>$$n = \\frac{3 + 13}{2} = \\frac{16}{2} = 8$$  </p></li>\n<li><p>Therefore, the polygon has 8 sides.  </p></li>\n</ol>\n<p>Answer: Option C (8)</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -983,7 +983,7 @@
     },
     "solution": "<ol>\n<li><p>Vowels in “DELHI”: E, I  </p>\n<p>Consonants in “DELHI”: D, L, H  </p></li>\n<li><p>Positions in the word DELHI:  </p>\n<p>• 1 → consonant  </p>\n<p>• 2 → vowel  </p>\n<p>• 3 → consonant  </p>\n<p>• 4 → consonant  </p>\n<p>• 5 → vowel  </p></li>\n<li><p>Number of ways to arrange the 3 consonants (D, L, H) in the 3 consonant‐positions:  </p>\n<p>$$3! \\;=\\; 6$$</p></li>\n<li><p>Number of ways to arrange the 2 vowels (E, I) in the 2 vowel‐positions:  </p>\n<p>$$2! \\;=\\; 2$$</p></li>\n<li><p>Total number of arrangements keeping vowel/consonant positions unchanged:  </p>\n<p>$$3!\\times 2! \\;=\\; 6\\times 2 \\;=\\; 12$$</p></li>\n</ol>\n<p>Answer: 12 (Option C)</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -1106,7 +1106,7 @@
     },
     "solution": "<ol>\n<li><p>For positive integers $x,y,z$, set  </p>\n<p>$      x = a+1,\\quad y = b+1,\\quad z = c+1,    $  </p>\n<p>where $a,b,c\\ge0$.  </p></li>\n<li><p>Then  </p>\n<p>$      x+y+z = 5 \\;\\Longrightarrow\\; (a+1)+(b+1)+(c+1)=5       \\;\\Longrightarrow\\; a+b+c = 5-3 = 2.    $</p></li>\n<li><p>Number of non-negative integer solutions of $a+b+c=2$ is by stars and bars  </p>\n<p>$      \\binom{2+3-1}{3-1} = \\binom{4}{2} = 6.    $</p></li>\n</ol>\n<p>Answer: 6.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -1229,7 +1229,7 @@
     },
     "solution": "<ol>\n<li><p>Given  </p>\n<p>$$\\binom{5n}{r} = \\binom{5n}{n+r}.$$  </p></li>\n<li><p>Recall the identity  </p>\n<p>$$\\binom{N}{k} = \\binom{N}{N-k}.$$  </p>\n<p>Here $N=5n$.  </p></li>\n<li><p>Therefore equality holds if either  </p>\n<p>a) $$r = 5n - (n+r)\\quad\\text{or}\\quad b)\\;r = n+r.$$  </p></li>\n<li><p>Case (b): $r = n+r\\implies n=0$, not acceptable for general $n>0$.  </p></li>\n<li><p>Case (a):  </p>\n<p>$$r = 5n - n - r = 4n - r\\;\\implies\\;2r = 4n\\;\\implies\\;r = 2n.$$  </p></li>\n</ol>\n<p>Answer: 2n (Option B).</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -1352,7 +1352,7 @@
     },
     "solution": "<ol>\n<li><p>“At most 3 things” means you can select 0, 1, 2 or 3 items.  </p></li>\n<li><p>Number of ways to choose $k$ items from 6 is given by the binomial coefficient $\\displaystyle \\binom{6}{k}$.  </p></li>\n<li><p>Total number of selections  </p>\n<p>$$\\sum_{k=0}^{3}\\binom{6}{k} = \\binom{6}{0} + \\binom{6}{1} + \\binom{6}{2} + \\binom{6}{3}$$  </p></li>\n<li><p>Compute each term:  </p>\n<p>$\\displaystyle \\binom{6}{0}=1,\\quad \\binom{6}{1}=6,\\quad \\binom{6}{2}=15,\\quad \\binom{6}{3}=20$  </p></li>\n<li><p>Sum them:  </p>\n<p>$$1 + 6 + 15 + 20 = 42$$  </p></li>\n</ol>\n<p>Answer: Option D.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -1475,7 +1475,7 @@
     },
     "solution": "<p>Every 4-digit number with all odd digits must pick each digit from {1, 3, 5, 7, 9}, so there are 5 choices per place. By the multiplication principle:</p>\n<p>$$5\\times5\\times5\\times5 = 5^4 = 625.$$</p>\n<p>Answer: 625 (Option 1).</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1599,7 +1599,7 @@
     },
     "solution": "<p>First, note that “INDIA” has 5 letters with a repeated vowel: I, N, D, I, A.  </p>\n<p>We need vowels (I, I, A) in the 3 odd positions (1, 3, 5) and consonants (N, D) in the 2 even positions (2, 4).</p>\n\n<p><p>Ways to arrange the 3 vowels in positions 1, 3, 5:  </p>\n<p>$$\\frac{3!}{2!}\\;=\\;3$$  </p>\n<p>(since I repeats twice)</p></p>\n<p><p>Ways to arrange the 2 consonants in positions 2, 4:  </p>\n<p>$$2!\\;=\\;2$$</p></p>\n\n<p>Total permutations = $3\\times2=6$.</p>\n<p>Answer: 6.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1723,7 +1723,7 @@
     },
     "solution": "<p>First, identify the vowels and consonants in “EQUATION”:</p>\n\n<p><p>Vowels (5): E, U, A, I, O  </p></p>\n<p><p>Consonants (3): Q, T, N  </p></p>\n\n<p>We want all vowels together and all consonants together. Treat each group as a “block.” Then:</p>\n\n<p><p>Number of ways to arrange the two blocks (vowels‐block and consonants‐block):  </p>\n<p>$$2! = 2$$  </p></p>\n<p><p>Number of ways to permute the 5 vowels inside their block:  </p>\n<p>$$5! = 120$$  </p></p>\n<p><p>Number of ways to permute the 3 consonants inside their block:  </p>\n<p>$$3! = 6$$  </p></p>\n\n<p>Multiply them:  </p>\n<p>$$2! \\times 5! \\times 3! = 2 \\times 120 \\times 6 = 1440$$  </p>\n<p>Answer: <strong>1440</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1847,7 +1847,7 @@
     },
     "solution": "<p>First, note that the 2 compulsory courses are already chosen, so the student must pick  </p>\n<p>$ (n - 2) - 2 = n - 4 $  </p>\n<p>more courses out of the remaining  </p>\n<p>$ n - 2 $  </p>\n<p>optional courses.  </p>\n<p>Number of ways =  </p>\n<p>$ \\binom{n - 2}{\\,n - 4\\,} = \\binom{n - 2}{2} = \\frac{(n - 2)(n - 3)}{2}. $  </p>\n<p>That matches Option 4.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1971,7 +1971,7 @@
     },
     "solution": "<p>To determine the maximum number of possible points of intersection from four straight lines and a circle, we need to consider intersections both between the lines themselves and between each line and the circle.</p>\n\n<p><strong>Intersection Among the Lines:</strong></p>\n\n\n<p><p>With 4 lines, the maximum number of intersection points between the lines is determined using the combination formula $^nC_2$, where $n = 4$. Thus, the number of intersection points is:</p>\n<p>$    \\binom{4}{2} = 6    $</p></p>\n\n\n<p><strong>Intersection of the Lines with the Circle:</strong></p>\n\n\n<p><p>Each line can intersect the circle at most at 2 points. Therefore, with 4 lines, the maximum number of intersection points between the lines and the circle is:</p>\n<p>$    4 \\times 2 = 8    $</p></p>\n\n\n<p><strong>Total Maximum Intersection Points:</strong></p>\n\n\n<p><p>By adding the intersections among the lines and those with the circle, we arrive at the total maximum possible intersection points:</p>\n<p>$    6 + 8 = 14    $</p></p>\n\n<p>Therefore, the maximum number of possible points of intersection is <strong>14</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -2095,7 +2095,7 @@
     },
     "solution": "<p>First, count letters in ZOOLOGY:</p>\n\n<p><p>Vowels: O, O, O (3 identical)  </p></p>\n<p><p>Consonants: Z, L, G, Y (4 distinct)  </p></p>\n\n\n<p><p>Total distinct arrangements  </p>\n<p>$$\\frac{7!}{3!} = \\frac{5040}{6} = 840$$  </p></p>\n<p><p>Favorable arrangements (pattern C-V-C-V-C-V-C):  </p></p>\n\n\n<p><p>Consonants can occupy the 4 “C” slots in $4!$ ways.  </p></p>\n<p><p>Vowels (all O’s) fill the 3 “V” slots in exactly 1 way.  </p>\n<p>$$\\text{Favorable} = 4! = 24$$  </p></p>\n\n\n<p><p>Probability  </p>\n<p>$$\\frac{24}{840} = \\frac{1}{35}$$  </p></p>\n\n<p>Answer: 1/35.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -2219,7 +2219,7 @@
     },
     "solution": "<p>Let’s count how many ordered triples $(x,y,z)$ with $1\\le x,y,z\\le6$ satisfy $x < y < z$.</p>\n\n<p><p>First pick any 3 distinct faces out of the 6.  </p>\n<p>Number of ways:  </p>\n<p>$$    \\binom{6}{3}    $$</p></p>\n<p><p>Once those 3 values are chosen, there’s exactly one way to arrange them in strictly increasing order $x < y < z$.</p></p>\n\n<p>Hence  </p>\n<p>$$ \\binom{6}{3} = \\frac{6\\cdot5\\cdot4}{3\\cdot2\\cdot1} = 20. $$</p>\n<p>Answer: Option 1 (20).</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -2343,7 +2343,7 @@
     },
     "solution": "<p>To find the sum of all four-digit numbers formed by using all the digits $0$, $1$, $4$, and $5$ without repetition, we need to consider the permutations where the leading digit is non-zero (since a leading zero would make it a three-digit number). </p>\n<p><strong>Step 1: Determine the Number of Valid Four-Digit Numbers</strong></p>\n\n<p><p><strong>Total digits available:</strong> $0$, $1$, $4$, $5$ (4 digits)</p></p>\n<p><p><strong>Leading digit choices:</strong> Since the leading digit cannot be $0$, we have $3$ choices: $1$, $4$, or $5$.</p></p>\n<p><p><strong>Permutations of the remaining digits:</strong> After choosing the leading digit, the remaining $3$ digits can be arranged in $3! = 6$ ways.</p></p>\n\n<p><strong>Total valid four-digit numbers:</strong></p>\n<p>$ \\text{Total numbers} = \\text{Leading digit choices} \\times \\text{Permutations of remaining digits} = 3 \\times 6 = 18 $</p>\n<p><strong>Step 2: Calculate the Contribution of Each Digit at Each Place Value</strong></p>\n<p>To find the total sum, we'll calculate the sum contributed by each digit at each position (thousands, hundreds, tens, units).</p>\n<p><strong>Thousands Place (Leftmost Digit):</strong></p>\n\n<p><p><strong>Digits used:</strong> $1$, $4$, $5$ (cannot be $0$)</p></p>\n<p><p><strong>Each digit appears:</strong> $6$ times (since for each leading digit, there are $6$ permutations)</p></p>\n<p><p><strong>Digit sum at thousands place:</strong></p>\n<p>$   \\text{Sum} = 6 \\times (1 + 4 + 5) = 6 \\times 10 = 60   $</p></p>\n<p><p><strong>Contribution to total sum:</strong></p>\n<p>$   60 \\times 1000 = 60,\\!000   $</p></p>\n\n<p><strong>Hundreds Place:</strong></p>\n\n<p><p><strong>Digits used:</strong> $0$, $1$, $4$, $5$</p></p>\n<p><p><strong>Digit counts:</strong></p></p>\n<p><p>$0$ appears $6$ times</p></p>\n<p><p>Each of $1$, $4$, and $5$ appears $4$ times</p></p>\n<p><p><strong>Digit sum at hundreds place:</strong></p>\n<p>$   \\text{Sum} = (6 \\times 0) + (4 \\times 1) + (4 \\times 4) + (4 \\times 5) = 0 + 4 + 16 + 20 = 40   $</p></p>\n<p><p><strong>Contribution to total sum:</strong></p>\n<p>$   40 \\times 100 = 4,\\!000   $</p></p>\n\n<p><strong>Tens Place:</strong></p>\n\n<p><p><strong>Same digit counts as hundreds place</strong></p></p>\n<p><p><strong>Contribution to total sum:</strong></p>\n<p>$   40 \\times 10 = 400   $</p></p>\n\n<p><strong>Units Place (Rightmost Digit):</strong></p>\n\n<p><p><strong>Same digit counts as hundreds place</strong></p></p>\n<p><p><strong>Contribution to total sum:</strong></p>\n<p>$   40 \\times 1 = 40   $</p></p>\n\n<p><strong>Step 3: Sum All Contributions</strong></p>\n<p>Add the contributions from all place values to find the total sum:</p>\n<p>$ \\text{Total Sum} = 60,\\!000 + 4,\\!000 + 400 + 40 = 64,\\!440 $</p>\n<hr />\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{64440}$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -2466,7 +2466,7 @@
     },
     "solution": "<p>To solve this problem, we need to calculate the number of ways to invite 3 women and 3 men such that 3 of them are the man's relatives and 3 are his wife's relatives.</p>\n<p><strong>Given:</strong></p>\n\n<p><p>Man's relatives: 4 women and 3 men</p></p>\n<p><p>Wife's relatives: 3 women and 4 men</p></p>\n\n<p><strong>Constraints:</strong></p>\n\n<p><p>Total invited: 6 people (3 women and 3 men)</p></p>\n<p><p>From man's relatives: total of 3 people</p></p>\n<p><p>From wife's relatives: total of 3 people</p></p>\n<p><p>Number of women from man's relatives ($ w_m $) and wife's relatives ($ w_w $) must sum to 3:</p>\n<p>$ w_m + w_w = 3 $</p></p>\n<p><p>Number of men from man's relatives ($ m_m $) and wife's relatives ($ m_w $) must sum to 3:</p>\n<p>$ m_m + m_w = 3 $</p></p>\n<p><p>From man's relatives:</p>\n<p>$ w_m + m_m = 3 $</p></p>\n<p><p>From wife's relatives:</p>\n<p>$ w_w + m_w = 3 $</p></p>\n\n<p>From constraints (4) and (6):</p>\n<p>$ m_m = 3 - w_m $</p>\n<p>From constraints (4) and (7):</p>\n<p>$ m_w = 3 - w_w $</p>\n<p>Also, since $ w_m + w_w = 3 $, $ m_m = w_w $ and $ m_w = w_m $.</p>\n<p>We can now consider all possible values of $ w_m $ (number of women from the man's relatives):</p>\n<p><strong>Case 1:</strong> $ w_m = 0 $</p>\n\n<p><p>Man's relatives: 0 women, 3 men</p></p>\n<p><p>Wife's relatives: 3 women, 0 men</p></p>\n<p><p>Ways: $ C(4,0) \\times C(3,3) \\times C(3,3) \\times C(4,0) = 1 \\times 1 \\times 1 \\times 1 = 1 $</p></p>\n\n<p><strong>Case 2:</strong> $ w_m = 1 $</p>\n\n<p><p>Man's relatives: 1 woman, 2 men</p></p>\n<p><p>Wife's relatives: 2 women, 1 man</p></p>\n<p><p>Ways: $ C(4,1) \\times C(3,2) \\times C(3,2) \\times C(4,1) = 4 \\times 3 \\times 3 \\times 4 = 144 $</p></p>\n\n<p><strong>Case 3:</strong> $ w_m = 2 $</p>\n\n<p><p>Man's relatives: 2 women, 1 man</p></p>\n<p><p>Wife's relatives: 1 woman, 2 men</p></p>\n<p><p>Ways: $ C(4,2) \\times C(3,1) \\times C(3,1) \\times C(4,2) = 6 \\times 3 \\times 3 \\times 6 = 324 $</p></p>\n\n<p><strong>Case 4:</strong> $ w_m = 3 $</p>\n\n<p><p>Man's relatives: 3 women, 0 men</p></p>\n<p><p>Wife's relatives: 0 women, 3 men</p></p>\n<p><p>Ways: $ C(4,3) \\times C(3,0) \\times C(3,0) \\times C(4,3) = 4 \\times 1 \\times 1 \\times 4 = 16 $</p></p>\n\n<p><strong>Total Ways:</strong></p>\n<p>$ 1 + 144 + 324 + 16 = 485 $</p>\n<hr />\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{485}$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -2589,7 +2589,7 @@
     },
     "solution": "<p>To count the number of triangles that can be formed using the given points on the sides of triangle $PQR$, we need to calculate the number of distinct combinations of these points taken three at a time.</p>\n\n<p>Let’s denote the number of points on sides $PQ$, $QR$, and $RP$ as follows:</p>\n\n<p>Points on $PQ$: 3</p>\n\n<p>Points on $QR$: 4</p>\n\n<p>Points on $RP$: 5</p>\n\n<p>Thus, the total number of points is $3 + 4 + 5 = 12$.</p>\n\n<p>The formula for the number of ways to choose $r$ points from $n$ points is given by the binomial coefficient:</p>\n\n<p>$$ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} $$</p>\n\n<p>In this problem, we need to choose 3 points out of 12:</p>\n\n<p>$$ \\binom{12}{3} = \\frac{12!}{3!(12-3)!} = \\frac{12!}{3!(9)!} $$</p>\n\n<p>By calculating the above expression:</p>\n\n<p>$$ \\binom{12}{3} = \\frac{12 \\times 11 \\times 10}{3 \\times 2 \\times 1} = 220 $$</p>\n\n<p>However, we need to ensure that no three points lie on the same line to form a valid triangle. The points that might lie on the same line are on the same side of the triangle ($PQ$, $QR$, or $RP$). Since no valid triangle can be formed if we choose all 3 points from any one side, we need to subtract these cases.</p>\n\n<p>For each of the sides:</p>\n\n<p>- On $PQ$ (3 points): $ \\binom{3}{3} = 1 $</p>\n\n<p>- On $QR$ (4 points): $ \\binom{4}{3} = 4 $</p>\n\n<p>- On $RP$ (5 points): $ \\binom{5}{3} = 10 $</p>\n\n<p>Thus, the total number of invalid cases: $1 + 4 + 10 = 15$.</p>\n\n<p>The total number of valid triangles is therefore:</p>\n\n<p>$$ \\binom{12}{3} - 15 = 220 - 15 = 205 $$</p>\n\n<p>Thus, the number of triangles formed is 205.</p>\n\n<p>The correct option is A: 205.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -2712,7 +2712,7 @@
     },
     "solution": "<p>To determine the maximum value of $ k $ in the expression $ 26! = n \\cdot 8^k $, we need to consider the prime factorization of $ 8 $ and the number of times each of its prime factors appear in $ 26! $.</p>\n\n<p>First, notice that $ 8 $ can be factored into primes as follows:</p>\n\n<p>$$8 = 2^3$$</p>\n\n<p>Therefore, for $ 8^k $ to be a factor of $ 26! $, it should be equivalent to $ 2^{3k} $. To find the maximum value of $ k $, we need to determine the highest power of $ 2 $ that divides $ 26! $.</p>\n\n<p>The power of a prime $ p $ in $ n! $ is given by the sum:</p>\n\n<p>$$ \\sum\\limits_{i=1}^{\\infty} \\left\\lfloor \\frac{n}{p^i} \\right\\rfloor $$</p>\n\n<p>For our problem, we need to calculate the highest power of $ 2 $ in $ 26! $. This can be computed as follows:</p>\n\n<p>$$\\left\\lfloor \\frac{26}{2} \\right\\rfloor + \\left\\lfloor \\frac{26}{4} \\right\\rfloor + \\left\\lfloor \\frac{26}{8} \\right\\rfloor + \\left\\lfloor \\frac{26}{16} \\right\\rfloor$$</p>\n\n<p>Evaluating each term, we get:</p>\n\n<p>$$\\left\\lfloor \\frac{26}{2} \\right\\rfloor = \\left\\lfloor 13 \\right\\rfloor = 13$$</p>\n\n<p>$$\\left\\lfloor \\frac{26}{4} \\right\\rfloor = \\left\\lfloor 6.5 \\right\\rfloor = 6$$</p>\n\n<p>$$\\left\\lfloor \\frac{26}{8} \\right\\rfloor = \\left\\lfloor 3.25 \\right\\rfloor = 3$$</p>\n\n<p>$$\\left\\lfloor \\frac{26}{16} \\right\\rfloor = \\left\\lfloor 1.625 \\right\\rfloor = 1$$</p>\n\n<p>Adding these together, we find:</p>\n\n<p>$$13 + 6 + 3 + 1 = 23$$</p>\n\n<p>Therefore, the highest power of $ 2 $ that divides $ 26! $ is $ 2^{23} $.</p>\n\n<p>Since $ 8^k = 2^{3k} $, the value of $ k $ must satisfy:</p>\n\n<p>$$3k \\leq 23$$</p>\n\n<p>Simplifying, we have:</p>\n\n<p>$$k \\leq \\left\\lfloor \\frac{23}{3} \\right\\rfloor = 7$$</p>\n\n<p>Thus, the maximum value of $ k $ is $ 7 $.</p>\n\n<p>The correct answer is <b>Option B: $ 7 $</b>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -2835,7 +2835,7 @@
     },
     "solution": "<p>To determine how many four-digit natural numbers exist such that all of the digits are even, we first need to identify the possible even digits. The even digits are 0, 2, 4, 6, and 8.</p>\n\n<p>A four-digit natural number ranges from 1000 to 9999. Therefore, the first digit (thousands place) cannot be 0. This gives us the even digits 2, 4, 6, and 8 as options for the first digit.</p>\n\n<p>For each of the remaining three digits (hundreds place, tens place, and units place), any of the even digits (0, 2, 4, 6, 8) can be used.</p>\n\n<p>Thus, we have the following choices for each place value in the four-digit number:</p>\n<ul>\n<li>Thousands place: 4 choices (2, 4, 6, 8)</li>\n<li>Hundreds place: 5 choices (0, 2, 4, 6, 8)</li>\n<li>Tens place: 5 choices (0, 2, 4, 6, 8)</li>\n<li>Units place: 5 choices (0, 2, 4, 6, 8)</li>\n</ul>\n\n<p>The total number of four-digit natural numbers can then be calculated by multiplying the number of choices for each digit:</p>\n\n<p>$$4 \\times 5 \\times 5 \\times 5$$</p>\n\n<p>Calculating this, we get:</p>\n<p>$$4 \\times 5^3 = 4 \\times 125 = 500$$</p>\n\n<p>Therefore, there are 500 four-digit natural numbers such that all of the digits are even.</p>\n\n<p>The correct answer is:</p>\n<p>Option B</p>\n<p>500</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -2958,7 +2958,7 @@
     },
     "solution": "<p>To determine how many four-digit numbers formed by using the digits 1, 2, 3, and 5 without repetition are divisible by 4, we need to understand the divisibility rule for 4. A number is divisible by 4 if the last two digits of the number form a number itself divisible by 4.</p>\n\n<p>Let's examine which pairs of digits from 1, 2, 3, and 5 result in a number divisible by 4:</p>\n\n<ul>\n\n<li>12 (since 12 ÷ 4 = 3)</li>\n\n<li>32 (since 32 ÷ 4 = 8)</li>\n\n<li>52 (since 52 ÷ 4 = 13)</li>\n\n</ul>\n\n<p>So, the valid pairs for the last two digits are (1, 2), (3, 2), and (5, 2).</p>\n\n<p>We now need to form four-digit numbers where the last two digits are one of these pairs. For each pair of last two digits, we can arrange the remaining two digits (chosen from the remaining digits) in the first two positions.</p>\n\n<p>Let's calculate the possibilities:</p>\n\n<ol>\n\n<li>If the last two digits are 12:\n\n<ul>\n\n<li>The remaining two digits are 3 and 5. These can be arranged in 2! (2 factorial) ways.\n\n<p>$$2! = 2 \\times 1 = 2$$</li></p>\n\n</ul>\n\n</li>\n\n<li>If the last two digits are 32:\n\n<ul>\n\n<li>The remaining two digits are 1 and 5. These can be arranged in 2! ways.\n\n<p>$$2! = 2 \\times 1 = 2$$</li></p>\n\n</ul>\n\n</li>\n\n<li>If the last two digits are 52:\n\n<ul>\n\n<li>The remaining two digits are 1 and 3. These can be arranged in 2! ways.\n\n<p>$$2! = 2 \\times 1 = 2$$</li></p>\n\n</ul>\n\n</li>\n\n</ol>\n\n<p>Since we have three valid pairs of last two digits, and each pair offers 2 valid arrangements of the remaining digits, the total number of four-digit numbers divisible by 4 is:</p>\n\n<p>$$3 \\times 2 = 6$$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option D - 6</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -3081,7 +3081,7 @@
     },
     "solution": "<p>To determine the number of different matrices, each with 4 entries, that can be formed using the numbers 1, 2, 3, and 4 (with repetition allowed), we can approach this problem by considering a $2 \\times 2$ matrix.</p>\n\n<p>Each entry in the $2 \\times 2$ matrix has 4 possible choices (1, 2, 3, or 4). Since the matrix has 4 entries in total, we need to calculate the total number of possible combinations of these entries. We use the following formula:</p>\n\n<p>$$ \\text{Total number of matrices} = \\text{number of choices per entry}^{\\text{number of entries}} $$</p>\n\n<p>In this case, the number of choices per entry is 4, and the number of entries is 4 (as the matrix is $2 \\times 2$). Substituting these values, we get:</p>\n\n<p>$$ \\text{Total number of matrices} = 4^4 = 256 $$</p>\n\n<p>Hence, the number of different $2 \\times 2$ matrices that can be formed using the numbers 1, 2, 3, and 4 (with repetition allowed) is 256.</p>\n\n<p>The correct option is:</p>\n\n<p>Option C</p>\n\n<p>256</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -3204,7 +3204,7 @@
     },
     "solution": "<p>To determine the remainder when the sum of the factorials $ 1! + 3! + 5! + 7! + \\ldots + 199! $ is divided by 24, we can use some properties of factorials and modular arithmetic.</p>\n\n<p>First, recall that for any integer $ n \\geq 4 $, $ n! $ is divisible by both 4 and 6. This is because $ n! $ contains both 4 and 6 as factors (for $ n \\geq 4 $). Therefore, $ n! $ for $ n \\geq 4 $ is divisible by $ \\text{lcm}(4, 6) = 24 $.</p>\n\n<p>Thus, for $ 5! $, $ 7! $, $ 9! $, and so on up to $ 199! $, each term is divisible by 24, which means their remainders when divided by 24 are all zero.</p>\n\n<p>So, the sum of the terms starting from $ 5! $ to $ 199! $ contributes nothing to the remainder. They are all 0 modulo 24.</p>\n\n<p>Now let’s consider the remaining terms: $ 1! $ and $ 3! $.</p>\n\n<p>We calculate their factorials:</p>\n\n<ul>\n\n<li> $ 1! = 1 $ </li>\n\n<li> $ 3! = 3 \\times 2 \\times 1 = 6 $ </li>\n\n</ul>\n\n<p>Now we sum these results:</p>\n\n<p>$$ 1! + 3! = 1 + 6 = 7 $$</p>\n\n<p>The sum $ 1 + 6 = 7 $ is then divided by 24 to find the remainder:</p>\n\n<p>Clearly, 7 is less than 24, so the remainder when 7 is divided by 24 is simply 7.</p>\n\n<p>Therefore, the remainder when $ 1! + 3! + 5! + 7! + \\ldots + 199! $ is divided by 24 is:</p>\n\n<p><strong>Option C: 7</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -3327,7 +3327,7 @@
     },
     "solution": "<p>To determine the maximum number of points of intersection among 10 circles, we'll use combinatorial reasoning based on the properties of circles in a plane.</p>\n<hr />\n<p><strong>Step 1: Understand Circle Intersections</strong></p>\n\n<p><strong>Maximum Intersections Between Two Circles:</strong> Any two distinct circles in a plane can intersect at a maximum of <strong>2 points</strong>.</p>\n\n<hr />\n<p><strong>Step 2: Calculate the Number of Circle Pairs</strong></p>\n\n<p><p><strong>Total Number of Circles (n):</strong> 10</p></p>\n<p><p><strong>Number of Unique Pairs of Circles:</strong> The number of ways to choose 2 circles out of 10 is given by the combination formula:</p>\n<p>$   \\text{Number of pairs} = C(n, 2) = \\frac{n(n - 1)}{2}   $</p>\n<p>$   C(10, 2) = \\frac{10 \\times 9}{2} = 45   $</p></p>\n\n<hr />\n<p><strong>Step 3: Calculate Maximum Intersection Points</strong></p>\n\n<p><p><strong>Maximum Intersections per Pair:</strong> 2</p></p>\n<p><p><strong>Total Maximum Intersections (T):</strong></p>\n<p>$   T = \\text{Number of pairs} \\times \\text{Intersections per pair}   $</p>\n<p>$   T = 45 \\times 2 = 90   $</p></p>\n\n<hr />\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{90}$</p>\n<hr />\n<p><strong>Therefore, the maximum number of points of intersection of 10 circles is 90.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -3450,7 +3450,7 @@
     },
     "solution": "<p>To solve this problem, we first need to understand what the Harmonic Mean (H) is and then apply it to the given binomial coefficients. The Harmonic Mean of three numbers $a$, $b$, and $c$ is given by:</p>\n\n<p>\n\n<p>$$    H = \\frac{3}{\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}}.    $$</p>\n\n</p>\n\n<p>In this case, our three numbers are the binomial coefficients $ \\binom{10}{4} $, $ \\binom{10}{5} $, and $ \\binom{10}{6} $. We need to calculate these coefficients first.</p>\n\n<p>The binomial coefficient $ \\binom{n}{k} $ is computed using the formula:</p>\n\n<p>\n\n<p>$$    \\binom{n}{k} = \\frac{n!}{k!(n-k)!}.   $$</p>\n\n</p>\n\n<p>Let's start by calculating each of the coefficients:</p>\n\n<p>\n\n<p>$$ \\binom{10}{4} = \\frac{10!}{4!(10-4)!} = \\frac{10!}{4!6!} = 210. $$</p>\n\n</p>\n\n<p>\n\n<p>$$ \\binom{10}{5} = \\frac{10!}{5!5!} = 252. $$</p>\n\n</p>\n\n<p>\n\n<p>$$ \\binom{10}{6} = \\frac{10!}{6!4!} = 210. $$</p>\n\n</p>\n\n<p>Now we have the values:\n\n<ul>\n\n<li>$ a = 210 $</li>\n\n<li>$ b = 252 $</li>\n\n<li>$ c = 210 $</li>\n\n</ul>\n\n</p>\n\n<p>Let's calculate the Harmonic Mean (H):</p>\n\n<p>\n\n<p>$$    H = \\frac{3}{\\frac{1}{210} + \\frac{1}{252} + \\frac{1}{210}}.   $$</p>\n\n</p>\n\n<p>First, we need to find the sum of the reciprocals:</p>\n\n<p>\n\n<p>$$    \\frac{1}{210} + \\frac{1}{252} + \\frac{1}{210} = \\frac{1}{210} + \\frac{1}{210} + \\frac{1}{252}    = \\frac{2}{210} + \\frac{1}{252}.   $$</p>\n\n</p>\n\n<p>We find a common denominator for the fractions:</p>\n\n<p>\n\n<p>$$    \\frac{2}{210} = \\frac{2 \\times 6}{210 \\times 6} = \\frac{12}{1260},    $$</p>\n\n</p>\n\n<p>\n\n<p>$$    \\frac{1}{252} = \\frac{1 \\times 5}{252 \\times 5} = \\frac{5}{1260}.   $$</p>\n\n</p>\n\n<p>Adding these together gives us:</p>\n\n<p>\n\n<p>$$    \\frac{12}{1260} + \\frac{5}{1260} = \\frac{17}{1260}.   $$</p>\n\n</p>\n\n<p>Substitute it back into the Harmonic Mean formula:</p>\n\n<p>\n\n<p>$$    H = \\frac{3}{\\frac{17}{1260}} = \\frac{3 \\times 1260}{17} = \\frac{3780}{17} = 222.352941.   $$</p>\n\n</p>\n\n<p>Finally, we calculate:</p>\n\n<p>\n\n<p>$$    \\frac{270}{H} = \\frac{270}{222.352941} \\approx 1.215.   $$</p>\n\n</p>\n\n<p>Hence, the correct answer is:</p>\n\n<p>Option C: $ \\frac{17}{14} $.",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -3573,7 +3573,7 @@
     },
     "solution": "<p>To determine the number of 6-digit numbers that can be formed using the digits 0, 1, 2, 3, 4, and 5 exactly once, and that are divisible by 6, we need to consider the properties of numbers divisible by 6.</p>\n\n<p>A number is divisible by 6 if and only if it is divisible by both 2 and 3.</p>\n\n<p>1. <strong>Divisibility by 2:</strong> The number must end in an even digit. Since we can use each digit only once, the possible digits for the units place (last digit) are 0, 2, and 4.</p>\n\n<p>2. <strong>Divisibility by 3:</strong> The sum of the digits must be divisible by 3. The sum of the digits 0, 1, 2, 3, 4, and 5 is</p>\n\n$$\n0 + 1 + 2 + 3 + 4 + 5 = 15\n$$\n\n<p>Since 15 is divisible by 3, any permutation of these digits will be divisible by 3.</p>\n\n<p>Now, let's calculate the number of permutations for each case where the number ends in an even digit:</p>\n\n<p><strong>Case 1: The number ends in 0.</strong></p>\n\n<p>We have the digits 1, 2, 3, 4, and 5 left to arrange in the first 5 positions. Therefore, the number of permutations is:</p>\n\n$$\n5! = 120\n$$\n\n<p><strong>Case 2: The number ends in 2.</strong></p>\n\n<p>We have the digits 0, 1, 3, 4, and 5 left. Since the first digit cannot be 0 (it cannot start with 0), we need to subtract the permutations where 0 is in the first position.</p>\n\n<ul>\n    <li>Total permutations without restriction: $$ 5! = 120 $$</li>\n    <li>Permutations starting with 0: $$ 4! = 24 $$</li>\n</ul>\n\n<p>So, the valid permutations are:</p>\n\n$$\n120 - 24 = 96\n$$\n\n<p><strong>Case 3: The number ends in 4.</strong></p>\n\n<p>We have the digits 0, 1, 2, 3, and 5 left. Similar to Case 2, the first digit cannot be 0:</p>\n\n<ul>\n    <li>Total permutations without restriction: $$ 5! = 120 $$</li>\n    <li>Permutations starting with 0: $$ 4! = 24 $$</li>\n</ul>\n\n<p>So, the valid permutations are:</p>\n\n$$\n120 - 24 = 96\n$$\n\n<p>Now we sum the valid permutations from all cases:</p>\n\n$$\n120 + 96 + 96 = 312\n$$\n\n<p>Therefore, the correct answer is:</p>\n\n<p><strong>Option D: 312</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -3696,7 +3696,7 @@
     },
     "solution": "<p>To verify the given statements, we will use Wilson's Theorem. Wilson's Theorem states that for a prime number $ p $, the factorial of $ (p-1) $ is congruent to -1 modulo $ p $. In mathematical terms, it can be expressed as:</p>\n\n<p>\n\n<p>$$ (p-1)! \\equiv -1 \\ (\\text{mod} \\ p) $$</p>\n\n</p>\n\n<p>Now, let's analyze each statement one by one:</p>\n\n<p><strong>Statement 1: (25)! + 1 is divisible by 26</strong></p>\n\n<ol>\n\n<li>\n\n<p>Note that 26 is not a prime number, hence we cannot directly apply Wilson’s Theorem here. However, 26 can be factored into prime factors: $ 26 = 2 \\times 13 $.</p>\n\n</li>\n\n<li>\n\n<p>We need to check if $ (25)! + 1 $ is divisible by both 2 and 13.</p>\n\n</li>\n\n<li>\n\n<p>$ 25! $ is obviously divisible by 2 (since it includes all integers from 1 to 25), so $ 25! \\equiv 0 \\ (\\text{mod} \\ 2) $. Thus, $ 25! + 1 \\equiv 1 \\ (\\text{mod} \\ 2) $. This is not divisible by 2, so $ (25)! + 1 $ is <strong>not</strong> divisible by 26.</p>\n\n</li>\n\n</ol>\n\n<p><strong>Statement 2: (6)! + 1 is divisible by 7</strong></p>\n\n<ol>\n\n<li>\n\n<p>Note that 7 is a prime number, so we can apply Wilson’s Theorem here. According to Wilson's Theorem:</p>\n\n</li>\n\n<p>\n\n<p>$$ (7-1)! \\equiv -1 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n<li>\n\n<p>This means:</p>\n\n<p>\n\n<p>$$ 6! \\equiv -1 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n</li>\n\n<li>\n\n<p>By adding 1 to both sides of the congruence:</p>\n\n<p>\n\n<p>$$ 6! + 1 \\equiv -1 + 1 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n</li>\n\n<li>\n\n<p>This simplifies to:</p>\n\n<p>\n\n<p>$$ 6! + 1 \\equiv 0 \\ (\\text{mod} \\ 7) $$</p>\n\n</p>\n\n</li>\n\n<li>\n\n<p>Thus, $ (6)! + 1 $ is divisible by 7. So Statement 2 is correct.</p>\n\n</li>\n\n</ol>\n\n<p>Therefore, the correct answer is:</p>\n\n<p><strong>Option B: 2 only</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -3819,7 +3819,7 @@
     },
     "solution": "<p>Let's delve into the problem by using a combinatorial approach. When $m$ lines are parallel to each other and $n$ lines are parallel to each other in a different direction, they create a grid pattern that forms parallelograms.</p>\n\n<p>First, we need to understand how to count the number of parallelograms formed in this setup. A parallelogram is determined by selecting any two lines from the $m$ parallel lines and any two lines from the $n$ parallel lines.</p>\n\n<p>The number of ways to choose 2 lines from $m$ parallel lines is given by the combination formula:</p>\n\n<p>$$\\binom{m}{2} = \\frac{m(m-1)}{2}$$</p>\n\n<p>Similarly, the number of ways to choose 2 lines from $n$ parallel lines is:</p>\n\n<p>$$\\binom{n}{2} = \\frac{n(n-1)}{2}$$</p>\n\n<p>Since we need to choose 2 lines from each set of parallel lines to form a parallelogram, the total number of parallelograms formed is the product of these two combinations:</p>\n\n<p>$$ \\binom{m}{2} \\times \\binom{n}{2} = \\frac{m(m-1)}{2} \\times \\frac{n(n-1)}{2} $$</p>\n\n<p>We know from the problem statement that this product equals 60:</p>\n\n<p>$$ \\frac{m(m-1)}{2} \\times \\frac{n(n-1)}{2} = 60 $$</p>\n\n<p>Multiplying both sides by 4 to clear the fractions, we get:</p>\n\n<p>$$ m(m-1) \\times n(n-1) = 240 $$</p>\n\n<p>Now we need to find pairs of integers $(m, n)$ that satisfy this equation. Let's test some possible values:</p>\n\n<p>When $m = 5$, we have:</p>\n\n<p>$$ 5 \\times 4 = 20 $$</p>\n\n<p>This implies we need:</p>\n\n<p>$$ n(n-1) = 12 $$</p>\n\n<p>Checking possible values for $n$:</p>\n\n<p>When $n = 4$, we have:</p>\n\n<p>$$ 4 \\times 3 = 12 $$</p>\n\n<p>So, $m = 5$ and $n = 4$ is a valid solution.</p>\n\n<p>Thus, $m + n = 5 + 4 = 9$.</p>\n\n<p>The correct answer is:</p>\n\n<p><strong>Option D: 9</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -3942,7 +3942,7 @@
     },
     "solution": "<p>To determine the correct relationship between the number of permutations of the words 'PERMUTATIONS' and 'COMBINATIONS', we first need to calculate the number of permutations for each word, considering that both words contain repeated letters.</p>\n\n<p>For the word 'PERMUTATIONS', the frequency of each letter is as follows:</p>\n\n<ul>\n\n<li>P: 1</li>\n\n<li>E: 1</li>\n\n<li>R: 1</li>\n\n<li>M: 1</li>\n\n<li>U: 1</li>\n\n<li>T: 2</li>\n\n<li>A: 1</li>\n\n<li>I: 1</li>\n\n<li>O: 1</li>\n\n<li>N: 1</li>\n\n<li>S: 1</li>\n\n</ul>\n\n<p>The total number of letters is 12, and there are 2 repeated 'T's. Therefore, the total number of permutations of the word 'PERMUTATIONS' is given by:</p>\n\n<p>$$ x = \\frac{12!}{2!} $$</p>\n\n<p>Next, for the word 'COMBINATIONS', the frequency of each letter is:</p>\n\n<ul>\n\n<li>C: 1</li>\n\n<li>O: 2</li>\n\n<li>M: 1</li>\n\n<li>B: 1</li>\n\n<li>I: 2</li>\n\n<li>N: 2</li>\n\n<li>A: 1</li>\n\n<li>T: 1</li>\n\n<li>S: 1</li>\n\n</ul>\n\n<p>The total number of letters is 12, and there are 2 repeated 'O's, 2 repeated 'I's, and 2 repeated 'N's. Therefore, the total number of permutations of the word 'COMBINATIONS' is given by:</p>\n\n<p>$$ y = \\frac{12!}{2! \\cdot 2! \\cdot 2!} $$</p>\n\n<p>To find the relationship between $x$ and $y$, we divide the two expressions:</p>\n\n<p>$$ \\frac{y}{x} = \\frac{\\frac{12!}{2! \\cdot 2! \\cdot 2!}}{\\frac{12!}{2!}} = \\frac{1}{2! \\cdot 2!} = \\frac{1}{4} $$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$ y = \\frac{1}{4}x \\quad \\text{or} \\quad y = \\frac{x}{4} $$</p>\n\n<p>Thus, the correct relationship is:</p>\n\n<p>$$ x = 4y $$</p>\n\n<p>The answer is Option C: x = 4y.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -4065,7 +4065,7 @@
     },
     "solution": "<p>To find the percentage of 5-digit numbers formed using the digits 0, 1, 2, 4, 5 without repetition that are greater than 50,000, we need to count the number of valid numbers that meet this criterion and compare it to the total number of possible 5-digit numbers.</p>\n\n<h3>Step 1: Total Number of 5-Digit Numbers</h3>\n\n<p>The total number of 5-digit numbers that can be formed using the digits 0, 1, 2, 4, 5 without repetition is calculated as follows:</p>\n\n<ul>\n<li>The first digit (thousands place) cannot be 0, so there are 4 choices (1, 2, 4, 5).</li><br>\n<li>The second digit can be any of the remaining 4 digits.</li><br>\n<li>The third digit can be any of the remaining 3 digits.</li><br>\n<li>The fourth digit can be any of the remaining 2 digits.</li><br>\n<li>The fifth digit can be the remaining 1 digit.</li>\n</ul>\n<p>Thus, the total number of 5-digit numbers is:</p>\n\n<p>$ 4 \\times 4! = 4 \\times 24 = 96 $</p>\n\n<h3>Step 2: Number of 5-Digit Numbers Greater than 50,000</h3>\n\n<p>To be greater than 50,000, the first digit must be either 5. Let’s count the numbers formed with each of these choices:</p>\n\n<ol>\n<li><strong>First digit is 5:</strong></li>\n</ol>\n<ul>\n<li>Remaining digits: 0, 1, 2, 4</li><br>\n<li>The number of permutations of these 4 digits:</li>\n</ul>\n<p>$ 4! = 24 $</p>\n\n<h3>Step 3: Calculate the Percentage</h3>\n\n<p>The number of numbers greater than 50,000 is 24. The total number of 5-digit numbers is 96. Therefore, the percentage of numbers that are greater than 50,000 is calculated as follows:</p>\n\n<p>$ \\text{Percentage} = \\left( \\frac{24}{96} \\right) \\times 100\\% = 25\\% $</p>\n\n<h3>Conclusion</h3>\n\n<p>The percentage of numbers that are greater than 50,000 is:</p>\n\n<p>$ \\boxed{25\\%} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -4188,7 +4188,7 @@
     },
     "solution": "<p>To determine the remainder when the sum $$ S = 0! + 1! + 2! + 3! + \\ldots + 100! $$ is divided by 8, we need to analyze the factorial terms modulo 8.</p>\n\n<p>First, we evaluate the factorials up to a point where patterns in their remainders can be observed:</p>\n\n<ul>\n\n<li>$$ 0! = 1 $$</li>\n\n<li>$$ 1! = 1 $$</li>\n\n<li>$$ 2! = 2 $$</li>\n\n<li>$$ 3! = 6 $$</li>\n\n<li>$$ 4! = 24 \\equiv 0 \\pmod{8} $$</li>\n\n</ul>\n\n<p>For any $$ n! $$ where $$ n \\geq 4 $$, the factorial will always be divisible by 8 because it includes the product of at least three factors (e.g., 2, 4, and 2). Therefore, for any $$ n \\geq 4 $$, $$ n! \\equiv 0 \\pmod{8} $$.</p>\n\n<p>Now let's sum the remainders up to 3! since higher factorials contribute zero modulo 8:</p>\n\n<ul>\n\n<li>$$ 0! \\equiv 1 \\pmod{8} $$</li>\n\n<li>$$ 1! \\equiv 1 \\pmod{8} $$</li>\n\n<li>$$ 2! \\equiv 2 \\pmod{8} $$</li>\n\n<li>$$ 3! \\equiv 6 \\pmod{8} $$</li>\n\n</ul>\n\n<p>Adding these remainders modulo 8 gives us:</p>\n\n<p>$$ 1 + 1 + 2 + 6 \\equiv 10 \\pmod{8} \\equiv 2 \\pmod{8} $$</p>\n\n<p>Hence, the remainder when the sum $$ S $$ is divided by 8 is 2. Therefore, the correct option is:</p>\n\n<p><strong>Option C: 2</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -4311,7 +4311,7 @@
     },
     "solution": "<p>To determine the remainder of the sum $ S = 0! + 1! + 2! + 3! + \\ldots + 100! \\, $ when divided by 60, we need to analyze the factorials and their properties with respect to modulo 60.</p>\n\n<p>First, note that:</p>\n\n<p>60 can be factored as:\n\n<p>$$ 60 = 2^2 \\times 3 \\times 5 $$</p></p>\n\n<p>Therefore, if we find the remainders of factorials modulo 2, 3, and 5 separately, we can use the Chinese Remainder Theorem to find the overall remainder modulo 60.</p>\n\n<p>Let’s examine the factorials and their behavior under mod 60:</p>\n\n<p>For $ n \\geq 5 $, $ n! $ will always be divisible by 60 because it includes 2, 3, and 5 as factors. Thus, $ 5!, 6!, 7!, \\ldots, 100! $ are all divisible by 60 and contribute 0 to the sum modulo 60.</p>\n\n<p>Therefore, we only need to consider the sum of the factorials from 0 to 4:</p>\n\n<p>$$ S = 0! + 1! + 2! + 3! + 4! $$</p>\n\n<p>Calculating each factorial:</p>\n\n<p>$$ 0! = 1 $$</p>\n\n<p>$$ 1! = 1 $$</p>\n\n<p>$$ 2! = 2 $$</p>\n\n<p>$$ 3! = 6 $$</p>\n\n<p>$$ 4! = 24 $$</p>\n\n<p>Thus, the sum becomes:\n\n<p>$$ S = 1 + 1 + 2 + 6 + 24 = 34 $$</p></p>\n\n<p>Now, we need the remainder when 34 is divided by 60. Since 34 is less than 60, the remainder is simply 34.</p>\n\n<p>So, the remainder of $ S $ when divided by 60 is: <strong>34</strong></p>\n\n<p><strong>Answer: Option D</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -4434,7 +4434,7 @@
     },
     "solution": "<p>To determine how many four-digit natural numbers have all odd digits, we need to consider the choices we have for each digit.</p>\n\n<p>A four-digit number has the form $ \\overline{abcd} $, where $a, b, c,$ and $d$ are digits.</p>\n\n<p>In this problem, each digit must be odd. The odd digits available are 1, 3, 5, 7, and 9. Thus, for each digit in our four-digit number, there are 5 possible choices.</p>\n\n<p>Since the number must be a four-digit number, the first digit (a) cannot be zero. But since zero is not an odd number, this constraint does not affect our available choices.</p>\n\n<p>Thus, we calculate the total number of four-digit natural numbers with all odd digits as follows:</p>\n\n<p>Total Choices $ = 5 \\times 5 \\times 5 \\times 5 = 5^4 $</p>\n\n<p>Now, compute this:</p>\n\n<p>$$5^4 = 625$$</p>\n\n<p>Therefore, the correct answer is Option A: 625.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -4557,7 +4557,7 @@
     },
     "solution": "<p>To find the number of words listed before the first word that starts with the letter 'C' in the dictionary, we need to consider all permutations of the letters of the word 'MATHEMATICS'.</p>\n\n<p>The word 'MATHEMATICS' contains 11 letters in total, and some letters are repeated. The letters are:</p>\n\n<p>M - 2 times<br>\n\n<p>A - 2 times<br></p>\n\n<p>T - 2 times<br></p>\n\n<p>H - 1 time<br></p>\n\n<p>E - 1 time<br></p>\n\n<p>I - 1 time<br></p>\n\n<p>C - 1 time<br></p>\n\n<p>S - 1 time</p></p>\n\n<p>To calculate the total number of permutations of these letters, we use the formula for permutations of multiset:</p>\n\n<p>$$ \\frac{n!}{n_1! \\cdot n_2! \\cdot n_3! \\cdot \\ldots \\cdot n_k!} $$</p>\n\n<p>where $ n $ is the total number of letters, and $ n_1, n_2, \\ldots, n_k $ are the frequencies of each distinct letter.</p>\n\n<p>For 'MATHEMATICS', this is:</p>\n\n<p>$$ n = 11 $$</p>\n\n<p>$$ n_1 = 2 \\, \\text{(M)} $$</p>\n\n<p>$$ n_2 = 2 \\, \\text{(A)} $$</p>\n\n<p>$$ n_3 = 2 \\, \\text{(T)} $$</p>\n\n<p>$$ n_4 = 1 \\, \\text{(H)} $$</p>\n\n<p>$$ n_5 = 1 \\, \\text{(E)} $$</p>\n\n<p>$$ n_6 = 1 \\, \\text{(I)} $$</p>\n\n<p>$$ n_7 = 1 \\, \\text{(C)} $$</p>\n\n<p>$$ n_8 = 1 \\, \\text{(S)} $$</p>\n\n<p>So, the total number of distinct permutations is:</p>\n\n<p>$$ \\frac{11!}{2! \\cdot 2! \\cdot 2! \\cdot 1! \\cdot 1! \\cdot 1! \\cdot 1! \\cdot 1!} $$</p>\n\n<p>Calculating the factorials, we have:</p>\n\n<p>$$ 11! = 39916800 $$</p>\n\n<p>$$ 2! = 2 $$</p>\n\n<p>Thus:</p>\n\n<p>$$ \\frac{39916800}{2 \\cdot 2 \\cdot 2 \\cdot 1 \\cdot 1 \\cdot 1 \\cdot 1 \\cdot 1} = \\frac{39916800}{8} = 4989600 $$</p>\n\n<p>Now, we need to find the number of permutations starting with each letter before 'C' in alphabetical order. The letters before C in the word 'MATHEMATICS' are A and B (but B is not in our list, so we only consider A).</p>\n\n<p>We'll start with permutations that begin with 'A'. The remaining letters 'MATHEMATICS' without 'A' total 10 letters.</p>\n\n<p>$$ \\text{Remaining letters: M, A, T, H, E, M, A, T, I, C, S} $$</p>\n\n<p>The number of permutations of these 10 letters is:</p>\n\n<p>$$ \\frac{10!}{2! \\cdot 2! \\cdot 1! \\cdot 1! \\cdot 1! \\cdot 1! \\cdot 1! \\cdot 1!} $$</p>\n\n<p>Calculating the factorials, we have:</p>\n\n<p>$$ 10! = 3628800 $$</p>\n\n<p>So:</p>\n\n<p>$$ \\frac{3628800}{2 \\cdot 2 \\cdot 1 \\cdot 1 \\cdot 1 \\cdot 1 \\cdot 1} = \\frac{3628800}{4} = 907200 $$</p>\n\n<p>Thus, there are 907200 permutations that start with 'A'. Since 'B' is not in the list, no permutations start with 'B'. Hence, all permutations of 'MATHEMATICS' that start with any letter before 'C' are those that start with 'A'.</p>\n\n<p>Therefore, the number of words in the list before the first word starting with 'C' is 907200:</p>\n\n<p><b>Option C</b></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -4680,7 +4680,7 @@
     },
     "solution": "<ol>\n<li><p>Vowels in “QUESTION”: U, E, I, O (4 letters)  </p>\n<p>Consonants: Q, S, T, N (4 letters)</p></li>\n<li><p>Choose 2 vowels out of 4:  </p>\n<p>$$^4C_2=\\frac{4!}{2!\\,2!}=6$$</p></li>\n<li><p>Choose 2 consonants out of 4:  </p>\n<p>$$^4C_2=6$$</p></li>\n<li><p>Total ways to select the 4 letters (2 vowels + 2 consonants):  </p>\n<p>$$6\\times6=36$$</p></li>\n<li><p>For each such selection, number of arrangements of 4 distinct letters:  </p>\n<p>$$4!=24$$</p></li>\n<li><p>Hence total number of 4-letter “words”:  </p>\n<p>$$36\\times24=864$$</p></li>\n</ol>\n<p>Answer: 864 (Option D)</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -4803,7 +4803,7 @@
     },
     "solution": "<p>We are asked to form 8‑letter arrangements using all the letters of the word <strong>QUESTION</strong>, such that consonants and vowels occupy alternate positions.  </p>\n\n<p><strong>Step 1: Letters in the word \"QUESTION\"</strong></p>\n<ul>\n<li><p>Total letters = 8, all distinct.  </p></li>\n<li><p>Vowels = <strong>U, E, I, O</strong> → 4 vowels.  </p></li>\n<li><p>Consonants = <strong>Q, S, T, N</strong> → 4 consonants.  </p></li>\n</ul>\n<p>So we have <strong>4 vowels</strong> and <strong>4 consonants</strong>.</p>\n\n<p><strong>Step 2: Possible patterns for alternation</strong></p>\n<p>Since the number of vowels = number of consonants = 4 each, the arrangement can start either with a vowel or with a consonant.  </p>\n<p>So possible patterns are:  </p>\n<ol>\n<li><p>V C V C V C V C  </p></li>\n<li><p>C V C V C V C V  </p></li>\n</ol>\n\n<p><strong>Step 3: Number of arrangements for each pattern</strong></p>\n<ul>\n<li><p>Arrange vowels in the 4 vowel places: $4!$ ways.  </p></li>\n<li><p>Arrange consonants in the 4 consonant places: $4!$ ways.  </p></li>\n</ul>\n<p>So, for one pattern:</p>\n<p>$$4! \\times 4! = 24 \\times 24 = 576$$  </p>\n\n<p><strong>Step 4: For both patterns</strong></p>\n<p>Total arrangements = $576 + 576 = 1152$.</p>\n\n<p><strong>Final Answer:</strong></p>\n<p>$ \\boxed{1152} $</p>\n<p>Correct Option: <strong>C (1152)</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -4926,7 +4926,7 @@
     },
     "solution": "<ol>\n<li><p>Letters in “QUESTION”: Q, U, E, S, T, I, O, N  </p>\n<p>– Vowels (4): U, E, I, O  </p>\n<p>– Consonants (4): Q, S, T, N  </p></li>\n<li><p>To keep all consonants together, treat the block (Q S T N) as one object.  </p></li>\n<li><p>Now we have 5 objects to arrange: the consonant‐block + 4 vowels.  </p>\n<p>Number of ways = $5! = 120$.  </p></li>\n<li><p>Within the consonant‐block, the 4 consonants can be arranged in $4! = 24$ ways.  </p></li>\n<li><p>Total number of “words” =  </p>\n<p>$$5! \\times 4! = 120 \\times 24 = 2880.$$  </p></li>\n</ol>\n<p>Answer: 2880 (Option B)</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -5049,7 +5049,7 @@
     },
     "solution": "<p>To determine the number of ways of drawing 3 balls from a box containing 2 white balls, 3 black balls, and 4 red balls with at least one black ball, we can follow these steps:</p>\n\n<p>1. First, let's calculate the total number of ways to draw 3 balls from the 9 balls (2 white + 3 black + 4 red).</p>\n\n<p>The total number of ways to choose 3 balls out of 9 is given by the combination formula $$ C(n, r) = \\frac{n!}{r!(n-r)!} $$ where $$ n $$ is the total number of items, and $$ r $$ is the number of items to choose.</p>\n\n<p>So, the total number of combinations is:</p>\n\n<p>$$ C(9, 3) = \\frac{9!}{3!(9-3)!} = \\frac{9!}{3! \\cdot 6!} = \\frac{9 \\cdot 8 \\cdot 7}{3 \\cdot 2 \\cdot 1} = 84 $$</p>\n\n<p>2. Now, let's calculate the number of ways to draw 3 balls with no black balls at all. In this case, we are only selecting from the 2 white and 4 red balls, which means a total of 6 balls.</p>\n\n<p>The number of ways to choose 3 balls out of these 6 (excluding black balls) is:</p>\n\n<p>$$ C(6, 3) = \\frac{6!}{3!(6-3)!} = \\frac{6!}{3! \\cdot 3!} = \\frac{6 \\cdot 5 \\cdot 4}{3 \\cdot 2 \\cdot 1} = 20 $$</p>\n\n<p>3. To find the number of ways to draw 3 balls with at least one black ball, we subtract the number of ways to draw 3 balls with no black balls from the total number of ways to draw 3 balls.</p>\n\n<p>Thus, the number of ways to draw 3 balls with at least one black ball is:</p>\n\n<p>$$ C(9, 3) - C(6, 3) = 84 - 20 = 64 $$</p>\n\n<p>Therefore, the number of ways to draw 3 balls from the box with at least one black ball is <strong>64</strong>.</p>\n\n<p>The correct answer is Option C: <strong>64</strong>.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -5172,7 +5172,7 @@
     },
     "solution": "<p>First, let's analyze the given equation:</p>\n\n<p>$$C(3n, 2n) = C(3n, 2n - 7)$$</p>\n\n<p>We can use the properties of binomial coefficients, specifically the symmetry property, which tells us that:</p>\n\n<p>$$C(n, k) = C(n, n - k)$$</p>\n\n<p>Using this property, we can rewrite the given equation:</p>\n\n<p>$$C(3n, 2n) = C(3n, 3n - (2n - 7))$$</p>\n\n<p>Simplifying the right-hand side:</p>\n\n<p>$$C(3n, 2n) = C(3n, 3n - 2n + 7) = C(3n, n + 7)$$</p>\n\n<p>This tells us that:</p>\n\n<p>$$2n = n + 7$$</p>\n\n<p>Solving for $n$, we get:</p>\n\n<p>$$2n - n = 7$$</p>\n\n<p>$$n = 7$$</p>\n\n<p>Now we need to find the value of $C(n, n - 5)$ with $n = 7$:</p>\n\n<p>$$C(7, 7 - 5) = C(7, 2)$$</p>\n\n<p>The binomial coefficient $C(7, 2)$ is calculated as:</p>\n\n<p>$$C(7, 2) = \\frac{7!}{2!(7 - 2)!} = \\frac{7!}{2! \\cdot 5!}$$</p>\n\n<p>Simplifying the factorial terms:</p>\n\n<p>$$C(7, 2) = \\frac{7 \\times 6 \\times 5!}{2 \\times 1 \\times 5!} = \\frac{7 \\times 6}{2 \\times 1} = \\frac{42}{2} = 21$$</p>\n\n<p>Therefore, the value of $C(n, n - 5)$ is:</p>\n\n<p>Option D: 21</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -5295,7 +5295,7 @@
     },
     "solution": "<p>To determine the number of odd numbers between 300 and 400 in which none of the digits is repeated, we need to analyze the properties of these numbers carefully.</p>\n\n<p>First, let's breakdown the problem:</p>\n\n<ul>\n\n<li>The numbers must be between 300 and 400, which means they must start with the digit '3'.</li>\n\n<li>The numbers must be odd, which implies that the unit digit must be an odd number: 1, 3, 5, 7, or 9.</li>\n\n<li>No digits can be repeated.</li>\n\n</ul>\n\n<p>Since the number must start with the digit '3', let's denote the number as 3Xy, where X and y are the other digits. Let's identify possible combinations for X and y based on the conditions:</p>\n\n<ul>\n\n<li>Unit digit (y) can be 1, 5, 7, or 9 (since 3 cannot be repeated).</li>\n\n</ul>\n\n<p>For each choice of y, X can be any digit from 0-9, except for 3 (as it is the hundreds digit) and y. Let's analyze the possibilities:</p>\n\n<p>If y = 1:</p>\n\n<ul>\n\n<li>Possible choices for X are: 0, 2, 4, 5, 6, 7, 8, 9 (8 choices)</li>\n\n</ul>\n\n<p>If y = 5:</p>\n\n<ul>\n\n<li>Possible choices for X are: 0, 1, 2, 4, 6, 7, 8, 9 (8 choices)</li>\n\n</ul>\n\n<p>If y = 7:</p>\n\n<ul>\n\n<li>Possible choices for X are: 0, 1, 2, 4, 5, 6, 8, 9 (8 choices)</li>\n\n</ul>\n\n<p>If y = 9:</p>\n\n<ul>\n\n<li>Possible choices for X are: 0, 1, 2, 4, 5, 6, 7, 8 (8 choices)</li>\n\n</ul>\n\n<p>Thus, for each odd unit digit (1, 5, 7, 9), we have 8 possible choices for the tens digit (X).</p>\n\n<p>Therefore, the total number of such numbers = 4 * 8 = 32.</p>\n\n<p>So, the correct answer is:</p>\n\n<p><strong>Option A: 32</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -5418,7 +5418,7 @@
     },
     "solution": "<p>To solve this problem, we need to count the number of valid permutations of the word 'TIGER' where the vowels (I and E) do not occupy the even positions. Let's break it down step-by-step.</p>\n\n<p>The word 'TIGER' consists of 5 letters, with positions as follows:</p>\n\n<p>1 (T), 2 (I), 3 (G), 4 (E), 5 (R)</p>\n\n<p>First, let's identify the even positions: positions 2 and 4. We need to ensure the vowels I and E do not occupy these positions.</p>\n\n<p>To achieve this, we must place the vowels only in the odd positions 1, 3, and 5. Here’s a detailed approach:</p>\n\n<ol>\n\n<li>Identify the number of odd positions (three: 1, 3, and 5).</li>\n\n<li>Identify the number of even positions (two: 2 and 4).</li>\n\n</ol>\n\n<p>The vowels can only go in odd positions. Let’s assign the vowels to the available odd positions:</p>\n\n<ol>\n\n<li>Number of ways to place 2 vowels (I and E) in 3 odd positions (1, 3, 5): <br>\n\n<ul>\n<li>We choose 2 out of 3 positions for the vowels: $$^3C_2 = 3$$ (ways)<br></li><br>\n<li>We arrange the 2 vowels in these 2 positions: $$2! = 2$$ (ways)</li>\n</ul>\n</li>\n\n</ol>\n\n<p>Thus, the number of ways to place the vowels: $$3 \\times 2 = 6$$</p>\n\n<p>Now, place the remaining 3 consonants (T, G, R) in the remaining 3 positions (one odd position and two even positions). The number of ways to arrange the consonants is:</p>\n\n<p>$$3! = 6$$</p>\n\n<p>Finally, multiply the two results together:</p>\n\n<p>Total valid permutations = $$6 \\times 6 = 36$$</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option B: 36</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -5541,7 +5541,7 @@
     },
     "solution": "<p>To determine the maximum value of $ n $ such that $ 5^n $ divides $ 30! + 35! $, we first need to find the highest power of $ 5 $ that divides each factorial individually: $ 30! $ and $ 35! $.</p>\n\n<p>We can use the formula for the highest power of a prime $ p $ dividing $ n! $:\n\n<p>$$ \\left\\lfloor \\frac{n}{p} \\right\\rfloor + \\left\\lfloor \\frac{n}{p^2} \\right\\rfloor + \\left\\lfloor \\frac{n}{p^3} \\right\\rfloor + \\ldots $$</p>\n\n<p>where $ p $ is the prime number and $ n $ is the factorial number.</p></p>\n\n<p>For $ 30! $:\n\n<p>$$ \\left\\lfloor \\frac{30}{5} \\right\\rfloor + \\left\\lfloor \\frac{30}{25} \\right\\rfloor = 6 + 1 = 7 $$</p>\n\n<p>So, $ 30! $ contains $ 5^7 $.</p></p>\n\n<p>For $ 35! $:\n\n<p>$$ \\left\\lfloor \\frac{35}{5} \\right\\rfloor + \\left\\lfloor \\frac{35}{25} \\right\\rfloor = 7 + 1 = 8 $$</p>\n\n<p>So, $ 35! $ contains $ 5^8 $.</p></p>\n\n<p>Next, consider $ 30! + 35! $. Since $ 35! $ is greater than $ 30! $, we can factor out $ 30! $ from the expression:</p>\n\n<p>$$ 30! + 35! = 30! (1 + \\frac{35!}{30!}) = 30! \\left(1 + 35 \\times 34 \\times 33 \\times 32 \\times 31\\right) $$</p>\n\n<p>We need to determine the highest power of $ 5 $ dividing the expression inside the parentheses:\n\n<p>$$ 1 + 2782560 $$</p>\n\n<p>The precise number $ 2782561 $ is not divisible by $ 5 $, so the power of $ 5 $ does not change solely based on the addition.</p></p>\n\n<p>Therefore, the highest power of $ 5 $ in $ 30! + 35! $ will be determined by the smaller of the two powers, which is $ 5^7 $ from $ 30! $.</p>\n\n<p>Thus, the maximum value of $ n $ such that $ 5^n $ divides $ 30! + 35! $ is $ \\boxed{7} $.</p>\n\n<p>The correct answer is Option C: 7.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -5664,7 +5664,7 @@
     },
     "solution": "<p>To find the value of the given expression, let's break it down step by step.</p>\n\n<p>The given expression is a summation of terms where each term comprises a factorial multiplied by a coefficient. The general term is structured as:</p>\n\n<p>$$k \\cdot k!$$</p>\n\n<p>Where $ k $ ranges from 2 to 9. Additionally, there is a constant term 2 added at the end.</p>\n\n<p>We can express the summation formally as:</p>\n\n<p>$$\\sum_{k=2}^{9} k \\cdot k! + 2$$</p>\n\n<p>To simplify this, note that $k \\cdot k! = (k + 1 - 1) \\cdot k! = (k+1)! - k! $. Therefore:</p>\n\n<p>$$\\sum_{k=2}^{9} k \\cdot k! = \\sum_{k=2}^{9} ((k + 1)! - k!)$$</p>\n\n<p>When expanded, this telescopes as follows:</p>\n\n<p>$$((3! - 2!) + (4! - 3!) + (5! - 4!) + \\ldots + (10! - 9!))$$</p>\n\n<p>Most terms cancel out, leaving us with:</p>\n\n<p>$$10! - 2!$$</p>\n\n<p>Since $2! = 2$, the expression simplifies to:</p>\n\n<p>$$10! - 2 + 2 = 10!$$</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p>Option B: $$10!$$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -5787,7 +5787,7 @@
     },
     "solution": "<p><strong>Statement I:</strong> <span class=\"math-tex\">$\\frac{n!}{3!}$</span> is divisible by 6, where $ n > 3 $</p>\n\n<p>Let $ n = 4 $</p>\n\n<p>⇒ <span class=\"math-tex\">$\\displaystyle \\frac{4!}{3!} = \\frac{4 \\times 3 \\times 2 \\times 1}{3 \\times 2 \\times 1} = 4$</span></p>\n\n<p>4 is not divisible by 6.</p>\n\n<p>Therefore, Statement I is incorrect.</p>\n\n<p><strong>Statement II:</strong> <span class=\"math-tex\">$\\frac{n!}{3!} + 3$</span> is divisible by 7, where $ n > 3 $</p>\n\n<p>Let $ n = 5 $</p>\n\n<p>⇒ <span class=\"math-tex\">$\\displaystyle \\frac{5!}{3!} + 3 = \\frac{5 \\times 4 \\times 3!}{3!} + 3 = 20 + 3 = 23$</span></p>\n\n<p>23 is not divisible by 7.</p>\n\n<p>Therefore, Statement II is incorrect.</p>\n\n<p><strong>∴ Neither Statement I nor II is correct.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -5910,7 +5910,7 @@
     },
     "solution": "<p>To determine how many ways a team of 5 players can be selected out of 9 players while excluding two particular players, we can follow these steps:</p>\n\n<p>Given that we need to exclude two particular players, we effectively have only 7 players available for selection.</p>\n\n<p>Now we need to select 5 players from these 7 available players. The number of ways to select 5 players out of 7 can be calculated using the combination formula:</p>\n\n<p>\n\n<p>$$C(n, k) = \\frac{n!}{k!(n-k)!}$$</p>\n\n</p>\n\n<p>Here, $ n = 7 $ and $ k = 5 $. Plugging in these values, we get:</p>\n\n<p>\n\n<p>$$C(7, 5) = \\frac{7!}{5!(7-5)!} = \\frac{7!}{5! \\cdot 2!}$$</p>\n\n</p>\n\n<p>Calculating the factorials, we have:</p>\n\n<p>\n\n<p>$$7! = 7 \\cdot 6 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 = 5040$$</p>\n\n</p>\n\n<p>\n\n<p>$$5! = 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 = 120$$</p>\n\n</p>\n\n<p>\n\n<p>$$2! = 2 \\cdot 1 = 2$$</p>\n\n</p>\n\n<p>Now plug these values back into the combination formula:</p>\n\n<p>\n\n<p>$$C(7, 5) = \\frac{5040}{120 \\cdot 2} = \\frac{5040}{240} = 21$$</p>\n\n</p>\n\n<p>Therefore, the number of ways to select a team of 5 players out of 7 available players is 21.</p>\n\n<p>Thus, the correct answer is:</p>\n\n<p><b>Option B: 21</b></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -6033,7 +6033,7 @@
     },
     "solution": "<p>To find the number of 3-digit numbers less than 500 with all digits different that can be formed from the set </p>\n<p>$$S = \\{2, 3, 4, 5, 6, 7, 9\\},$$ </p>\n<p>follow these steps:</p>\n\n<p><p><strong>Determine the hundreds digit:</strong>  </p>\n<p>Since the number must be less than 500, the hundreds digit must be less than 5. From the set $$S,$$ the eligible digits for the hundreds place are $$\\{2, 3, 4\\}.$$  </p></p>\n\n\n<p>Number of choices: <strong>3</strong></p>\n\n\n<p><p><strong>Determine the tens digit:</strong>  </p>\n<p>After choosing the hundreds digit, there are $$7 - 1 = 6$$ digits left in $$S.$$  </p></p>\n\n\n<p>Number of choices: <strong>6</strong></p>\n\n\n<p><p><strong>Determine the ones digit:</strong>  </p>\n<p>With two digits already used (hundreds and tens), there are $$7 - 2 = 5$$ digits remaining.  </p></p>\n\n\n<p>Number of choices: <strong>5</strong></p>\n\n\n<p><p><strong>Calculate the total number of numbers:</strong>  </p>\n<p>Multiply the number of choices for each digit:</p>\n<p>$$\\text{Total count} = 3 \\times 6 \\times 5 = 90.$$</p></p>\n\n<p>Thus, there are $$\\boxed{90}$$ different 3-digit numbers that can be formed under these conditions.</p>\n<p>The answer corresponds to Option C.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -6156,7 +6156,7 @@
     },
     "solution": "<p>Given that $ C(n, 4) $, $ C(n, 5) $, and $ C(n, 6) $ are in A.P.:</p>\n<p>$ 2 C(n, 5) = C(n, 4) + C(n, 6) $</p>\n<p>Substituting the combinations:</p>\n<p>$ 2 \\times \\frac{n!}{5!(n-5)!} = \\frac{n!}{4!(n-4)!} + \\frac{n!}{6!(n-6)!} $</p>\n<p>Simplifying, we have:</p>\n<p>$ \\frac{1}{60(n-5)(n-6)!} = \\frac{1}{24(n-4)(n-5)(n-6)!} + \\frac{1}{720(n-6)!} $</p>\n<p>Multiplying both sides by $ 24(n - 5)(n - 6) $:</p>\n<p>$ \\frac{1}{5} - \\frac{1}{2(n-4)} = \\frac{n-5}{60} $</p>\n<p>Further, multiply by $ 60(n-4) $ on both sides:</p>\n<p>$ 12(n-4) = 30 + (n-5)(n-4) $</p>\n<p>This simplifies to:</p>\n<p>$ 12n - 48 = 30 + n^2 - 9n + 20 $</p>\n<p>Rearranging:</p>\n<p>$ n^2 - 21n + 98 = 0 $</p>\n<p>Solving this quadratic equation gives:</p>\n<p>$ n = 14 \\quad \\text{or} \\quad n = 7 $</p>\n<p>Thus, the value of $ n $ is 7.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -6279,7 +6279,7 @@
     },
     "solution": "<p>Let's break down the problem step by step:</p>\n\n<p>Identify the vowels and consonants in the word \"LUCKNOW\":</p>\n\n\n<p><p>Vowels: U, O (2 vowels)</p></p>\n<p><p>Consonants: L, C, K, N, W (5 consonants)</p></p>\n\n\n<p>Since we need a 4-letter word containing exactly two vowels:</p>\n\n\n<p><p>Choose 2 vowels out of the 2 available:</p>\n<p>$$\\binom{2}{2} = 1$$</p></p>\n<p><p>Choose 2 consonants out of the 5 available:</p>\n<p>$$\\binom{5}{2} = 10$$</p></p>\n\n\n<p><p>After selecting the letters, arrange the 4 chosen letters (2 vowels and 2 consonants) in any order. The number of ways to arrange 4 distinct letters is:</p>\n<p>$$4! = 24$$</p></p>\n<p><p>Multiply the number of ways for each step:</p>\n<p>$$\\text{Total words} = 1 \\times 10 \\times 24 = 240$$</p></p>\n\n<p>Thus, the number of 4-letter words containing exactly two vowels is 240.</p>\n<p>The correct option is Option A.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -6402,7 +6402,7 @@
     },
     "solution": "<p>Let's break down the problem step-by-step:</p>\n\n<p><p>To find the number of straight lines that can be drawn by joining any two of the 20 distinct points, we use the combination formula:</p>\n<p>$$\\text{Number of lines} = \\binom{20}{2} = \\frac{20 \\times 19}{2} = 190.$$</p>\n<p>This shows that statement 1, which claims there are 380 lines, is incorrect.</p></p>\n<p><p>For the number of triangles, we choose any three points out of the 20:</p>\n<p>$$\\text{Number of triangles} = \\binom{20}{3} = \\frac{20 \\times 19 \\times 18}{3 \\times 2 \\times 1} = 1140.$$</p>\n<p>So, statement 2 is correct.</p></p>\n\n<p>Therefore, the correct answer is: Option B (2 only).</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -6525,7 +6525,7 @@
     },
     "solution": "<p>Given: $ n = 10 $</p>\n<p>Now, using the formula:</p>\n<p>$ \\text{Triangles with no common side} = \\frac{10(10-4)(10-5)}{6} $</p>\n<p>$ = \\frac{10 \\times 6 \\times 5}{6} $</p>\n<p>$ = 50 $</p>\n<p><strong>Therefore, the number of triangles is 50.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -6648,7 +6648,7 @@
     },
     "solution": "<p><strong>Formula Used:</strong></p>\n<p>The factorial function is used to find the number of ways to arrange a set of items:</p>\n<p>$ n! = n \\times (n - 1) \\times (n - 2) \\times \\ldots \\times 3 \\times 2 \\times 1 $</p>\n<p>For example:</p>\n\n<p><p>$ 5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120 $</p></p>\n<p><p>$ 2! = 2 \\times 1 = 2 $</p></p>\n\n<p><strong>Calculation:</strong></p>\n<p>To form a 5-digit number using the digits 3, 5, 7, and 9, where each digit appears at least once, consider the following cases where one digit repeats:</p>\n\n<p><strong>Cases:</strong></p>\n\n\n<p><p>(3, 5, 7, 9, 3)</p></p>\n<p><p>(3, 5, 7, 9, 5)</p></p>\n<p><p>(3, 5, 7, 9, 7)</p></p>\n<p><p>(3, 5, 7, 9, 9)</p></p>\n\n\n<p><strong>Calculation for Each Case:</strong></p>\n\n\n<p><p>For the combination (3, 5, 7, 9, 3), you need to calculate the number of distinct arrangements. The formula for permutations when one element is repeated is:</p>\n<p>$    \\text{Number of arrangements} = \\frac{5!}{2!}    $</p></p>\n<p><p>This simplifies to:</p>\n<p>$    \\frac{120}{2} = 60    $</p></p>\n<p><p>Thus, there are 60 arrangements for each case.</p></p>\n\n\n<p><strong>Total Arrangements:</strong></p>\n\n\n<p><p>Since there are 4 such cases, the total number of 5-digit numbers is:</p>\n<p>$    60 \\times 4 = 240    $</p></p>\n\n<p>Therefore, there are 240 different 5-digit numbers that can be formed using these digits where each digit appears at least once.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -6771,7 +6771,7 @@
     },
     "solution": "<p>To determine how many distinct matrices can be formed with all four entries taken from the set $\\{1, 2\\}$, we need to consider different matrix configurations. Let's explore these configurations:</p>\n\n<p><strong>2 × 2 Matrices:</strong></p>\n\n\n<p><p>A 2 × 2 matrix consists of 4 entries.</p></p>\n<p><p>Each entry can independently be either 1 or 2, providing 2 choices per entry.</p></p>\n<p><p>Therefore, the total number of 2 × 2 matrices is calculated by:</p>\n<p>$      2 \\times 2 \\times 2 \\times 2 = 16      $</p></p>\n\n\n<p><strong>4 × 1 Matrices:</strong></p>\n\n\n<p><p>A 4 × 1 matrix also has 4 entries.</p></p>\n<p><p>Again, each entry can be either 1 or 2.</p></p>\n<p><p>The total number of 4 × 1 matrices is:</p>\n<p>$      2 \\times 2 \\times 2 \\times 2 = 16      $</p></p>\n\n\n<p><strong>1 × 4 Matrices:</strong></p>\n\n\n<p><p>A 1 × 4 matrix contains 4 entries as well.</p></p>\n<p><p>With each entry being 1 or 2, the total number of 1 × 4 matrices is:</p>\n<p>$      2 \\times 2 \\times 2 \\times 2 = 16      $</p></p>\n\n<p>Summing up the number of matrices from all configurations, we have:</p>\n<p>$ 16 \\text{ (from 2 × 2)} + 16 \\text{ (from 4 × 1)} + 16 \\text{ (from 1 × 4)} = 48 $</p>\n<p>Therefore, a total of 48 distinct matrices can be formed.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -6894,7 +6894,7 @@
     },
     "solution": "<p>The sum of binomial coefficients from $ C(n, 1) $ to $ C(n, n) $ can be expressed as follows:</p>\n<p>$$ C(n, 1) + C(n, 2) + \\cdots + C(n, n) = 2^n - 1 $$</p>\n<p>This identity stems from the binomial theorem, which states that:</p>\n<p>$$ (1 + 1)^n = C(n, 0) + C(n, 1) + C(n, 2) + \\cdots + C(n, n) = 2^n $$</p>\n<p>Since $ C(n, 0) = 1 $, subtracting 1 from the total gives:</p>\n<p>$$ C(n, 1) + C(n, 2) + \\cdots + C(n, n) = 2^n - 1 $$</p>\n<p>Therefore, the correct option that matches this expression is:</p>\n<p><strong>Option C:</strong></p>\n<p>$$ 1 + 2 + 2^2 + 2^3 + \\cdots + 2^{n-1} = 2^n - 1 $$</p>\n<p>This represents the sum of a geometric series starting from 1 up to $ 2^{n-1} $.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -7017,7 +7017,7 @@
     },
     "solution": "<p>To find the number of 5-digit prime numbers that can be formed using the digits 1, 2, 3, 4, and 5 without repetition, follow these steps:</p>\n\n<p><p><strong>Permutations of Digits</strong>: Calculate all possible permutations of the 5 digits. The total number is:</p>\n<p>$$ 5! = 120 $$</p></p>\n<p><p><strong>Check for Primality</strong>:</p>\n<p>For each permutation, check if the number is prime. A prime number is only divisible by 1 and itself. To optimize, note that a number is not prime if the sum of its digits is divisible by 3.</p></p>\n<p><p><strong>Sum of Digits</strong>:</p>\n<p>The sum of the digits 1, 2, 3, 4, and 5 is:</p>\n<p>$$ 1 + 2 + 3 + 4 + 5 = 15 $$</p>\n<p>Since 15 is divisible by 3, any permutation of these digits will also have a sum divisible by 3.</p></p>\n<p><p><strong>Conclusion</strong>:</p>\n<p>Since all permutations of these digits will result in a number whose sum is divisible by 3, none of these permutations will be prime.</p></p>\n\n<p>Therefore, the number of 5-digit prime numbers is:</p>\n<p><strong>Option D: 0</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -7140,7 +7140,7 @@
     },
     "solution": "<p>To find the number of ways to select a team of 5 players from 8 players while excluding a particular player, first exclude the specified player. This leaves us with 7 players to choose from. The problem then reduces to selecting 5 players from these remaining 7 players.</p>\n<p>The number of ways to choose 5 players from 7 can be calculated using the combination formula:</p>\n<p>$$ \\binom{n}{r} = \\frac{n!}{r!(n - r)!} $$</p>\n<p>Where:</p>\n\n<p><p>$ n = 7 $ is the total number of players we are choosing from.</p></p>\n<p><p>$ r = 5 $ is the number of players to be selected.</p></p>\n\n<p>Substitute these values into the formula:</p>\n<p>$$ \\binom{7}{5} = \\frac{7!}{5!(7 - 5)!} = \\frac{7!}{5! \\cdot 2!} $$</p>\n<p>Calculate the factorials:</p>\n\n<p><p>$ 7! = 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 5040 $</p></p>\n<p><p>$ 5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120 $</p></p>\n<p><p>$ 2! = 2 \\times 1 = 2 $</p></p>\n\n<p>Now plug these into the combination formula:</p>\n<p>$$ \\binom{7}{5} = \\frac{5040}{120 \\times 2} = \\frac{5040}{240} = 21 $$</p>\n<p>Therefore, the number of ways to select the team of 5 players without including the particular player is 21.</p>\n\n<p><strong>Option C: 21</strong></p>\n",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"

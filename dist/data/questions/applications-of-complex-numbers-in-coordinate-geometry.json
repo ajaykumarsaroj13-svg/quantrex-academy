@@ -1,24 +1,5 @@
 [
   {
-    "_id": "6a2bdbbd2762cf4b57695308",
-    "question_id": "mp9v6822",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "hard",
-    "marks": 3,
-    "tags": [],
-    "options": [
-      "<p>$\\dfrac{b + i a}{d + i c} = i$</p>",
-      "<p>If $\\omega = \\dfrac{-1 + i \\sqrt{3}}{2}$, then $\\dfrac{a \\omega + b}{c \\omega + d} = \\omega$</p>",
-      "<p>If $m$ is an integer greater than $2$ such that $(ST)^2 = (ST)^m$, then $m$ is an integer multiple of $8$</p>",
-      "<p>If $z \\in H$, then $\\dfrac{az + b}{cz + d} \\in H$</p>"
-    ],
-    "solution": "<p>First, multiply matrices $S$ and $T$:</p>\n<p>$$ S T = \\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \\end{bmatrix} \\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix} = \\begin{bmatrix} 0 & -1 \\\\ 1 & 1 \\end{bmatrix} = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} $$</p>\n<p>So, $a = 0$, $b = -1$, $c = 1$, and $d = 1$.</p>\n<p><b>(A)</b></p>\n<p>We calculate:</p>\n<p>$$ \\frac{b + ia}{d + ic} = \\frac{-1}{1 + i} \\times \\frac{1 - i}{1 - i} = \\frac{-1 + i}{2} $$</p>\n<p>The result is a complex number, but this does not satisfy the given condition, so this statement is <b>incorrect</b>.</p>\n<p><b>(B)</b></p>\n<p>Now check the transformation using $\\omega$:</p>\n<p>$$ \\frac{a\\omega + b}{c\\omega + d} = \\frac{-1}{\\omega + 1} = \\frac{-1}{-\\omega^2} = \\omega $$</p>\n<p>This equality holds true, so this statement is <b>correct</b>.</p>\n<p><b>(C)</b></p>\n<p>Compute higher powers of $ST$:</p>\n<p>$$ (ST)^2 = \\begin{bmatrix} 0 & -1 \\\\ 1 & 1 \\end{bmatrix} \\begin{bmatrix} 0 & -1 \\\\ 1 & 1 \\end{bmatrix} = \\begin{bmatrix} -1 & -1 \\\\ 1 & 0 \\end{bmatrix} $$</p>\n<p>$$ (ST)^3 = \\begin{bmatrix} -1 & -1 \\\\ 1 & 0 \\end{bmatrix} \\begin{bmatrix} 0 & -1 \\\\ 1 & 1 \\end{bmatrix} = \\begin{bmatrix} -1 & 0 \\\\ 0 & -1 \\end{bmatrix} = -I $$</p>\n<p>Thus, $(ST)^6 = I$. Therefore, if $(ST)^2 = (ST)^M$, then $M = 6\\lambda + 2$, where $\\lambda$ is an integer. Since the statement does not correctly represent this, it is <b>incorrect</b>.</p>\n<p><b>(D)</b></p>\n<p>For $z = x + iy$, we have:</p>\n<p>$$ \\frac{az + b}{cz + d} = \\frac{-1}{z + 1} $$</p>\n<p>Substitute $z = x + iy$:</p>\n<p>$$ \\frac{-1}{x + iy + 1} = \\frac{-1}{(x + 1) + iy} \\times \\frac{(x + 1) - iy}{(x + 1) - iy} = \\frac{-(x + 1) + iy}{(x + 1)^2 + y^2} $$</p>\n<p>The imaginary part is $\\frac{y}{(x + 1)^2 + y^2}$, which is positive since $y > 0$. This means the image of every $z \\in H$ stays in $H$. Hence, this statement is <b>correct</b>.</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2026 Paper 2 Online"
-  },
-  {
     "_id": "6a2bdbbd2762cf4b57695309",
     "question_id": "ml8t8mnb",
     "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
@@ -35,7 +16,8 @@
     ],
     "solution": "<p>$$ \\frac{3}{2} \\leq\\left|z-\\left(\\frac{3}{2}+\\frac{3}{2} i\\right)\\right| \\leq \\frac{7}{2} $$</p><img alt=\"JEE Main 2026 (Online) 23rd January Morning Shift Mathematics - Complex Numbers Question 13 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mm53gpq6/81403bfe-9d0e-4258-8c97-4e0daba35f52/a16385e0-13f7-11f1-a5aa-9180806cce30/file-jaoe38c1mm53gpq7.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mm53gpq6/81403bfe-9d0e-4258-8c97-4e0daba35f52/a16385e0-13f7-11f1-a5aa-9180806cce30/file-jaoe38c1mm53gpq7.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\">\n<p>$$ \\begin{aligned} &amp; \\text { Min distance }=\\sqrt{16+9}-\\frac{7}{2} \\\\ &amp; =5-\\frac{7}{2} \\\\ &amp; =\\frac{3}{2} \\end{aligned} $$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 23rd January Morning Shift"
+    "title": "JEE Main 2026 (Online) 23rd January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769530a",
@@ -54,7 +36,8 @@
     ],
     "solution": "<p>Given, $\\mathrm{S}=\\left\\{z \\in \\mathbb{C}:\\left|\\frac{z-6 i}{z-2 i}\\right|=1\\right.$ and $\\left.\\left|\\frac{z-8+2 i}{z+2 i}\\right|=\\frac{3}{5}\\right\\}$</p>\n<p>$\\left|\\frac{z-6 i}{z-2 i}\\right|=1$</p>\n<p>$$\\Rightarrow $$ $$ |z-6 i|=|z-2 i|-(1) $$</p>\n<p>equation (1) represent $z$ is a point which is equidistant from point $(0,2)$ and $(0,6)$ so $z$ lies on the line segment which is perpendicular bisector of the line segment joining point $(0,2)$ &amp; $ (0,6)$.</p>\n<p>If $z=x+i y$ then solution of equation (1) is $y=\\frac{6+2}{2}=4$ and $x \\in R$. \n\n<br><br>So, solution is $z=x+4 i$ &amp; $ x \\in R$.</p>\n<p><img alt=\"JEE Main 2026 (Online) 24th January Morning Shift Mathematics - Complex Numbers Question 11 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlrmui43/55c45272-1b37-49d4-abec-540d27c088f2/75329830-0c90-11f1-9b8a-dddf048f946a/file-6y3zli1mlrmui44.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlrmui43/55c45272-1b37-49d4-abec-540d27c088f2/75329830-0c90-11f1-9b8a-dddf048f946a/file-6y3zli1mlrmui44.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$\\begin{aligned} &amp; \\text { Solving }\\left|\\frac{z-8+2 i}{z+2 i}\\right|=\\frac{3}{5} \\\\\\\\ &amp; \\text { Substitute } z=x+4 i \\\\\\\\ &amp; \\frac{|x+4 i-8+2 i|}{|x+4 i+2 i|}=\\frac{3}{5}\\end{aligned}$</p>\n<p>$$\\Rightarrow $$ $5|x+6 i-8|=3|x+6 i|$</p>\n<p>$$\\Rightarrow $$ $5|(x-8)+6 i|=3|x+6 i|$</p>\n<p>$$\\Rightarrow $$ $5 \\sqrt{(x-8)^2+6^2}=3 \\sqrt{x^2+6^2}$</p>\n<p>Squaring</p>\n<p>$$\\Rightarrow $$ $ 25\\left(x^2+64-16 x+36\\right)=9 x^2+324$</p>\n<p>$$\\Rightarrow $$ $25 x^2-400 x+2500=9 x^2+324$</p>\n<p>$$\\Rightarrow $$ $16 x^2-400 x+2176=0$</p>\n<p>$$\\Rightarrow $$ $x^2-25 x+136=0$</p>\n<p>$$\\Rightarrow $$ $x^2-17 x-8 x+136=0$</p>\n<p>$$\\Rightarrow $$ $x(x-17)-8(x-17)=0$</p>\n<p>$$\\Rightarrow $$ $(x-17)(x-8)=0$</p>\n<p>$$\\therefore $$ $x=17, x=8$</p>\n<p>So set S contain two complex number $z_1=17+4 i$ and $z_2=8+4 i$</p>\n\n$\\begin{aligned} &amp; \\text { To find } \\sum_{z \\in S}|z|^2=\\left|z_1\\right|^2+\\left|z_2\\right|^2 \\\\\\\\ &amp; =|17+4 i|^2+|8+4 i|^2 \\\\\\\\ &amp; =17^2+4^2+8^2+4^2 \\\\\\\\ &amp; =289+16+64+16=385\\end{aligned}$",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 24th January Morning Shift"
+    "title": "JEE Main 2026 (Online) 24th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769530b",
@@ -73,7 +56,8 @@
     ],
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 28th January Evening Shift Mathematics - Complex Numbers Question 18 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mlatpst0/71944940-31cc-4fb8-98b6-61752854d9fd/ff467d40-0351-11f1-88cb-d1b467e76c7d/file-6y3zli1mlatpst1.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mlatpst0/71944940-31cc-4fb8-98b6-61752854d9fd/ff467d40-0351-11f1-88cb-d1b467e76c7d/file-6y3zli1mlatpst1.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p><p><b>Analyze Set $A$ :</b></p><p></p>\n<p>The set $A$ is defined as $\\{z \\in \\mathbb{C}:|z-2| \\leq 4\\}$.</p>\n<ul>\n\n<li><p>This represents a circle (and its interior) centered at $(2,0)$ with a radius $r=4$.</p></li>\n\n<li><p>The circle extends from $x=-2$ to $x=6$ along the real axis.</p></li>\n\n</ul>\n<p><b>Analyze Set $B$ :</b></p>\n<p>The set $B$ is defined as $\\{z \\in \\mathbb{C}:|z-2|+|z+2|=5\\}$.</p>\n<ul>\n\n<li><p>By the definition of an ellipse, the sum of distances from two fixed points (foci) is constant.</p></li>\n\n<li><p>Here, the foci are $F_1(2,0)$ and $F_2(-2,0)$, and the length of the major axis $2 a=5$, so $a=2.5$.</p></li>\n\n</ul>\n<ul>\n\n<li><p>By the definition of an ellipse, the sum of distances from two fixed points (foci) is constant.</p></li>\n\n<li><p>Here, the foci are $F_1(2,0)$ and $F_2(-2,0)$, and the length of the major axis $2 a=5$, so $a=2.5$.</p></li>\n\n<li><p>The distance between foci is $2 a e=4$, so $e=\\frac{4}{5}=0.8$.</p></li>\n\n<li><p>The semi-minor axis $b$ can be found using $b^2=a^2\\left(1-e^2\\right)=(2.5)^2(1-0.64)= 6.25(0.36)=2.25$, so $b=1.5$.</p></li>\n\n<li><p>The ellipse is centered at the origin $(0,0)$ and extends from $x=-2.5$ to $x=2.5$ along the real axis.</p></li>\n\n</ul>\n<p>To find $\\max \\left\\{\\left|z_1-z_2\\right|: z_1 \\in A\\right.$ and $\\left.z_2 \\in B\\right\\} \\quad$ This means maximize the distance between a point $z_1$ in the circle and a point $z_2$ on the ellipse.</p>\n<p>The furthest point in set $A$ (the circle) is at the rightmost edge, $z_1=(2+4,0)=(6,0)$.</p>\n<p>The furthest point in set $B$ (the ellipse) from $z_1$ is at its leftmost edge, $z_2=(-2.5,0)$.</p>\n<p>Maximum Distance $\\left|z_1-z_2\\right|=|6-(-2.5)|=|6+2.5|=8.5=\\frac{17}{2}$</p>\n",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 28th January Evening Shift"
+    "title": "JEE Main 2026 (Online) 28th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769530c",
@@ -92,7 +76,8 @@
     ],
     "solution": "<p>Let $z=x+i y$</p>\n<p>$|z-(\\alpha+i \\beta)|=r$ represents a circle in the complex plane with centre at $(\\alpha, \\beta)$ and radius is $r$ unit.</p>\n<p>Cartesian equation</p>\n<p>$$ (x-\\alpha)^2+(y-\\beta)^2=r^2 $$</p>\n<p>The equations $|z-6|=5$ and $|z-(-2+6 i)|=5$ describe two circles with the same radius $(r=5)$.</p>\n<ul>\n\n<li><p><b>Circle 1 :</b> Center $C_1=(6,0)$</p></li>\n\n<li><p><b>Circle 2 :</b> Center $C_2=(-2,6)$</p></li>\n\n</ul>\n<p>Cartesian equation</p>\n<p>$$ (x-6)^2+y^2=25 \\quad \\text { and } \\quad(x+2)^2+(y-6)^2=25 $$</p>\n<p>Expanding both:</p>\n<ul>\n\n<li><p>$x^2-12 x+36+y^2=25 \\Longrightarrow \\mathbf{x}^2+\\mathbf{y}^2-12 \\mathbf{x}+\\mathbf{1 1}=\\mathbf{0}\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(i)$</p></li>\n\n<li><p>$x^2+4 x+4+y^2-12 y+36=25 \\Longrightarrow \\mathbf{x}^2+\\mathbf{y}^2+\\mathbf{4} \\mathbf{x}-\\mathbf{1 2} \\mathbf{y}+\\mathbf{1 5}=\\mathbf{0}\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,...(ii)$</p></li>\n\n</ul>\n<p>Subtracting the first equation from the second to find the common chord:</p>\n<p>$$ \\begin{gathered} (4 x-(-12 x))-12 y+(15-11)=0 \\\\ 16 x-12 y+4=0 \\Longrightarrow \\mathbf{4}-\\mathbf{3} \\mathbf{y}+\\mathbf{1}=\\mathbf{0} \\Longrightarrow \\mathbf{y}=\\frac{\\mathbf{4} \\mathbf{x}+\\mathbf{1}}{\\mathbf{3}} \\end{gathered} $$</p>\n<p>Substitute $y$ back into the first circle equation:</p>\n<p>$$ (x-6)^2+\\left(\\frac{4 x+1}{3}\\right)^2=25 $$</p>\n<p>multiply both sides by 9</p>\n<p>$$ \\begin{aligned} & 9\\left(x^2+36-12 x\\right)+16 x^2+8 x+1=225 \\\\ & 25 x^2-100 x+100=0 \\\\ & x^2-4 x+4=0 \\\\ & (x-2)^2=0 \\Rightarrow x=2 \\end{aligned} $$</p>\n<p>put $x=2$ in $y=(4 x+1) / 3$</p>\n<p>$$ y=(4 \\times 2+1) / 3=9 / 3=3 $$</p>\n<p>$$ \\text { so } z=2+3 i $$</p>\n<p>calculate $z^3+3 z^2-15 z+141$</p>\n<p>Compute $z^3$</p>\n<p>$$ \\begin{gathered} z^3=z \\cdot z^2=(2+3 i)(-5+12 i) \\\\ =-10+24 i-15 i+36 i^2 \\\\ =-10+9 i-36 \\\\ =-46+9 i \\end{gathered} $$</p>\n<p>Compute $z^2$</p>\n<p>$$ (2+3 i)^2=4+12 i+9 i^2=4+12 i-9=-5+12 i $$</p>\n<p>so</p>\n<p>$$ \\begin{gathered} z^3=-46+9 i \\\\ 3 z^2=-15+36 i \\\\ -15 z=-30-45 i \\end{gathered} $$</p>\n<p>Add everything</p>\n<p>$$ (-46+9 i)+(-15+36 i)+(-30-45 i)+141 $$</p>\n<p>Real parts:</p>\n<p>$$ -46-15-30+141=50 $$</p>\n<p>Imaginary parts:</p>\n<p>$$ 9 i+36 i-45 i=0 $$</p>\n<p>So $z^3+3 z^2-15 z+141=50$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 28th January Morning Shift"
+    "title": "JEE Main 2026 (Online) 28th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769530d",
@@ -111,7 +96,8 @@
     ],
     "solution": "<p><img alt=\"JEE Main 2026 (Online) 2nd April Evening Shift Mathematics - Complex Numbers Question 8 English Explanation\" src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mp01hpf4/b32a83df-e970-4f6e-bdd4-37aa9b25cafd/a5978f00-4c94-11f1-9864-53d65aa0ef81/file-6y3zli1mp01hpf5.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mp01hpf4/b32a83df-e970-4f6e-bdd4-37aa9b25cafd/a5978f00-4c94-11f1-9864-53d65aa0ef81/file-6y3zli1mp01hpf5.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\"></p>\n<p>$$ \\begin{aligned} &amp; |z|=r \\\\ &amp; O A=r \\end{aligned} $$</p>\n<p><b>Step 1:</b> Circle $C_1:|z|=r$ has centre $O(0,0)$ and radius $r$ (so $OA=r$).</p>\n<p><b>Step 2:</b> Circle $C_2:|z-3-4i|=5$ has centre at the point $(3,4)$ and radius $5$.</p>\n<p><b>Step 3:</b> Distance between the centres is</p>\n<p>$$OC=\\sqrt{3^2+4^2}=5$$</p>\n<p><b>Step 4:</b> Since $C_2$ lies completely inside $C_1$, the minimum distance between a point $z_1$ on $C_1$ and a point $z_2$ on $C_2$ happens when the two points are on the same line through the centres, on the nearest sides.</p>\n<p>So,</p>\n<p>minimum $\\left|\\mathrm{z}_1-\\mathrm{z}_2\\right|= r-(OC+5)=r-(5+5)=r-10$</p>\n<p>Given minimum $\\left|\\mathrm{z}_1-\\mathrm{z}_2\\right|=2$, we get</p>\n<p>$$ \\Rightarrow r-10=2 \\Rightarrow r=12 $$</p>\n<p><b>Step 5:</b> The maximum distance $\\left|z_1-z_2\\right|$ happens when $z_1$ and $z_2$ are on opposite sides along the same line through the centres.</p>\n<p>Then the farthest distance is</p>\n<p>$$ \\left|z_1-z_2\\right|= r+(OC+5)=r+10 $$</p>\n<p>Substituting $r=12$,</p>\n<p>$$ \\left|z_1-z_2\\right|=12+10=22 $$</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 2nd April Evening Shift"
+    "title": "JEE Main 2026 (Online) 2nd April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769530e",
@@ -130,7 +116,8 @@
     ],
     "solution": "<p>Let</p>\n<p>$$ z = x + iy $$</p>\n<p>where $x, y \\in \\mathbb{R}$.</p>\n<p>We are given:</p>\n<p>$$ |z+2| = |z-2| $$</p>\n<p>and</p>\n<p>$$ \\arg\\left(\\frac{z+3}{z-i}\\right)=\\frac{\\pi}{4} $$</p>\n<p>We will use these one by one.</p>\n\n<h3>1. Using $|z+2| = |z-2|$</h3>\n<p>Substitute $z = x+iy$:</p>\n<p>$$ |x+iy+2| = |x+iy-2| $$</p>\n<p>So,</p>\n<p>$$ \\sqrt{(x+2)^2+y^2} = \\sqrt{(x-2)^2+y^2} $$</p>\n<p>Squaring both sides:</p>\n<p>$$ (x+2)^2 + y^2 = (x-2)^2 + y^2 $$</p>\n<p>$$ x^2+4x+4 = x^2-4x+4 $$</p>\n<p>$$ 8x = 0 $$</p>\n<p>$$ x = 0 $$</p>\n<p>Hence,</p>\n<p>$$ z = iy $$</p>\n<p>So the point lies on the imaginary axis.</p>\n\n<h3>2. Using the argument condition</h3>\n<p>Now,</p>\n<p>$$ \\frac{z+3}{z-i} = \\frac{3+iy}{i(y-1)} $$</p>\n<p>We are given that its argument is $\\dfrac{\\pi}{4}$.</p>\n<p>A complex number has argument $\\dfrac{\\pi}{4}$ when its real and imaginary parts are equal and positive in sign together.</p>\n<p>Let us simplify:</p>\n<p>$$ \\frac{3+iy}{i(y-1)} $$</p>\n<p>Since $\\dfrac{1}{i} = -i$, we get</p>\n<p>$$ \\frac{3+iy}{i(y-1)} = \\frac{-i(3+iy)}{y-1} $$</p>\n<p>Now expand:</p>\n<p>$$ -i(3+iy) = -3i - i^2y = y - 3i $$</p>\n<p>So,</p>\n<p>$$ \\frac{z+3}{z-i} = \\frac{y-3i}{y-1} = \\frac{y}{y-1} - i\\frac{3}{y-1} $$</p>\n<p>Thus real part is</p>\n<p>$$ \\frac{y}{y-1} $$</p>\n<p>and imaginary part is</p>\n<p>$$ -\\frac{3}{y-1} $$</p>\n<p>Since argument is $\\dfrac{\\pi}{4}$, we need</p>\n<p>$$ \\frac{\\text{imaginary part}}{\\text{real part}} = \\tan\\frac{\\pi}{4} = 1 $$</p>\n<p>So,</p>\n<p>$$ \\frac{-\\frac{3}{y-1}}{\\frac{y}{y-1}} = 1 $$</p>\n<p>$$ -\\frac{3}{y} = 1 $$</p>\n<p>$$ y = -3 $$</p>\n<p>Therefore,</p>\n<p>$$ z = -3i $$</p>\n\n<h3>3. Find $|z|^2$</h3>\n<p>$$ |z|^2 = 0^2 + (-3)^2 = 9 $$</p>\n<p>So,</p>\n<p>$$ \\boxed{9} $$</p>\n<p>Hence, the correct option is <strong>Option A</strong>.</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 4th April Morning Shift"
+    "title": "JEE Main 2026 (Online) 4th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769530f",
@@ -149,26 +136,8 @@
     ],
     "solution": "<p>$$ |z-(3+5 i)|+|z-(5+11 i)|=4 \\sqrt{5} $$</p>\n<p>So, $\\mathrm{S}_1(3,5) \\&amp; \\mathrm{~S}_2(5,11)$ are two foci of ellipse, where $2 \\mathrm{ae}=\\mathrm{S}_1 \\mathrm{~S}_2=2 \\sqrt{10} \\&amp; 2 \\mathrm{a}=4 \\sqrt{5}$</p>\n<p>$$ \\Rightarrow \\mathrm{a}=2 \\sqrt{5}, \\mathrm{e}=\\frac{1}{\\sqrt{2}} \\&amp; \\mathrm{~b}^2=\\mathrm{a}^2\\left(1-\\mathrm{e}^2\\right) \\text { gives } \\mathrm{b}^2=10 $$</p>\n<p>$\\&amp;$ center of an ellipse is mid point of both focus</p>\n<p>∴ center $(4,8)$</p>\n<p>Equation of circle is $|\\mathrm{Z}-(4+8 \\mathrm{i})|=\\sqrt{10}$</p>\n<p>⇒ Ellipse $\\&amp;$ given circle are concentric \\&amp; radius of given circle is equal to length of minor axis of given ellipse</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1mox9zzml/0a709d1f-1ff9-4c93-810b-d6c07a5c42a5/91206cd0-4b0f-11f1-8353-79c9d062302a/file-6y3zli1mox9zzmm.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1mox9zzml/0a709d1f-1ff9-4c93-810b-d6c07a5c42a5/91206cd0-4b0f-11f1-8353-79c9d062302a/file-6y3zli1mox9zzmm.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2026 (Online) 8th April Evening Shift Mathematics - Complex Numbers Question 7 English Explanation\"></p>\n<p>⇒ Two points which are common to both.</p>",
     "__v": 0,
-    "title": "JEE Main 2026 (Online) 8th April Evening Shift"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b57695310",
-    "question_id": "mauv8dv7",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "medium",
-    "marks": 3,
-    "tags": [],
-    "options": [
-      "<p>S is a circle with centre $\\left(-\\frac{1}{3}, \\frac{10}{3}\\right)$</p>",
-      "<p>S is a circle with centre $\\left(\\frac{1}{3}, \\frac{8}{3} \\right)$</p>",
-      "<p>S is a circle with radius $\\frac{\\sqrt{2}}{3}$</p>",
-      "<p>S is a circle with radius $\\frac{2\\sqrt{2}}{3}$</p>"
-    ],
-    "solution": "",
-    "__v": 0,
-    "title": "JEE Advanced 2025 Paper 1 Online"
+    "title": "JEE Main 2026 (Online) 8th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695311",
@@ -187,7 +156,8 @@
     ],
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7g6hk8c/072b3cfb-b7f1-4ebf-96a9-4192ea2be6d8/d4d7b430-f118-11ef-8021-7171fbb6e15f/file-jaoe38c1m7g6hkab.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7g6hk8c/072b3cfb-b7f1-4ebf-96a9-4192ea2be6d8/d4d7b430-f118-11ef-8021-7171fbb6e15f/file-jaoe38c1m7g6hkab.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 22nd January Evening Shift Mathematics - Complex Numbers Question 34 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\text { Let } z=x+i y \\\\\n&amp; (x+i y)(1+i)+(x-i y)(1-i)=4 \\\\\n&amp; x+i x+i y-y+x-i x-i y-y=4 \\\\\n&amp; 2 x-2 y=4 \\\\\n&amp; x-y=2 \\\\\n&amp; |z-3| \\leq 1 \\\\\n&amp; (x-3)^2+y^2 \\leq 1\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp;\\text { Area of shaded region }=\\frac{\\pi \\cdot 1^2}{4}-\\frac{1}{2} \\cdot 1 \\cdot 1=\\frac{\\pi}{4}-\\frac{1}{2}\\\\\n&amp;\\text { Area of unshaded region inside the circle }\\\\\n&amp;\\begin{aligned}\n&amp; =\\frac{3}{4} \\pi \\cdot 1^2+\\frac{1}{2} \\cdot 1 \\cdot 1=\\frac{3 \\pi}{4}+\\frac{1}{2} \\\\\n&amp; \\therefore \\text { difference of area }=\\left(\\frac{3 \\pi}{4}+\\frac{1}{2}\\right)-\\left(\\frac{\\pi}{4}-\\frac{1}{2}\\right)\n\\end{aligned}\\\\\n&amp;=\\frac{\\pi}{2}+1\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 22nd January Evening Shift"
+    "title": "JEE Main 2025 (Online) 22nd January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695312",
@@ -206,7 +176,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\left|\\frac{\\bar{z}-i}{2 \\bar{z}+i}\\right|=\\frac{1}{3} \\\\\n& \\left|\\frac{\\bar{z}-i}{\\bar{z}+\\frac{i}{2}}\\right|=\\frac{2}{3} \\\\\n& 3|x-i y-i|=2\\left|x-i y+\\frac{i}{2}\\right| \\\\\n& 9\\left(x^2+(y+1)^2\\right)=4\\left(x^2+(y-1 / 3)^2\\right) \\\\\n& 9 x^2+9 y^2+18 y+9=4 x^2+4 y^2-4 y+1 \\\\\n& 5 x^2+5 y^2+22 y+8=0 \\\\\n& x^2+y^2+\\frac{22}{5} y+\\frac{8}{5}=0 \\\\\n& \\text { centre } \\Rightarrow\\left(0,-\\frac{11}{5}\\right)\n\\end{aligned}$$</p>\n<p>$$\\left| {{1 \\over 2}\\left| {\\matrix{\n   0 & 0 & 1  \\cr \n   0 & { - 11/5} & 1  \\cr \n   \\alpha  & 0 & 1  \\cr \n\n } } \\right|} \\right| = 11$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow\\left(-\\frac{11}{5} \\alpha\\right)^2=(11 \\times 2)^2 \\\\\n& \\Rightarrow \\alpha^2=100\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 23rd January Morning Shift"
+    "title": "JEE Main 2025 (Online) 23rd January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695313",
@@ -225,7 +196,8 @@
     ],
     "solution": "<p>$$z_1=\\sqrt{3}+2 \\sqrt{2} i \\quad \\& \\frac{\\left|z_2\\right|}{\\left|z_1\\right|}=\\frac{1}{\\sqrt{3}}$$</p>\n<p>given $\\arg \\left(\\frac{z_2}{z_1}\\right)=\\frac{\\pi}{6}$</p>\n<p>$$\\begin{aligned}\n& z_2=\\frac{\\left|z_2\\right|}{\\left|z_1\\right|} \\cdot z_1 \\mathrm{e}^{i\\left(\\frac{\\pi}{6}\\right)} \\\\\n& z_2=\\frac{1}{\\sqrt{3}} \\cdot \\frac{(\\sqrt{3}+2 \\sqrt{2} i)(\\sqrt{3}+i)}{2} \\\\\n& z_2=\\frac{(3-2 \\sqrt{2})+i(2 \\sqrt{6}+\\sqrt{3})}{2 \\sqrt{3}}\n\\end{aligned}$$</p>\n<p>Now,</p>\n<p>$$z_1-z_2=\\frac{(3+2 \\sqrt{2})+i(2 \\sqrt{6}-\\sqrt{3})}{2 \\sqrt{3}}$$</p>\n<p>$\\left|z_1-z_2\\right|=\\left|z_2\\right| \\Rightarrow \\Delta \\mathrm{ABO}$ is isosceles with angles $\\frac{\\pi}{6}, \\frac{\\pi}{6} \\& \\frac{2 \\pi}{3}$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 28th January Morning Shift"
+    "title": "JEE Main 2025 (Online) 28th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695314",
@@ -244,7 +216,8 @@
     ],
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m74eavjj/cf3b4187-87a2-4cb6-883f-6e4738beaf35/fc1d2bf0-ea9d-11ef-a609-9ff1bf33ab00/file-jaoe38c1m74eavjk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m74eavjj/cf3b4187-87a2-4cb6-883f-6e4738beaf35/fc1d2bf0-ea9d-11ef-a609-9ff1bf33ab00/file-jaoe38c1m74eavjk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 29th January Morning Shift Mathematics - Complex Numbers Question 38 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\because \\mathrm{AB}=\\sqrt{100}=10 \\\\\n&amp; \\therefore\\left|\\mathrm{Z}_1-\\mathrm{Z}_2\\right|_{\\min }=10-2-1=7\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 29th January Morning Shift"
+    "title": "JEE Main 2025 (Online) 29th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695315",
@@ -263,7 +236,8 @@
     ],
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mahspy9r/34cc9346-4281-40b1-a499-a4d16f87c2fa/35bf4310-2d61-11f0-8626-437cf7e3192a/file-jaoe38c1mahspy9t.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mahspy9r/34cc9346-4281-40b1-a499-a4d16f87c2fa/35bf4310-2d61-11f0-8626-437cf7e3192a/file-jaoe38c1mahspy9t.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 2nd April Morning Shift Mathematics - Complex Numbers Question 26 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp;\\begin{aligned}\n&amp; \\frac{2+k^2 z}{k+\\bar{z}}=k z \\\\\n&amp; \\Rightarrow 2+k^2 z=k^2 z+k \\bar{z} \\\\\n&amp; \\Rightarrow 2+k|z|^2 \\quad\\left(z \\bar{z}=|z|^2,|z|=1\\right) \\\\\n&amp; \\Rightarrow 2=k \\\\\n&amp; \\therefore k+k^2 i=2+4 i\n\\end{aligned}\\\\\n&amp;\\therefore \\quad \\text { The maximum distance is }\\\\\n&amp;\\begin{aligned}\n&amp; =\\sqrt{(4-2)+(2-1)^2}+\\text { radius } \\\\\n&amp; =\\sqrt{(2)^2+(1)^2}+1 \\\\\n&amp; =\\sqrt{5}+1\n\\end{aligned}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 2nd April Morning Shift"
+    "title": "JEE Main 2025 (Online) 2nd April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695316",
@@ -282,7 +256,8 @@
     ],
     "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mac7rlev/4e2f2a3f-cb84-4d9e-86d8-421dfb73183b/5878f370-2a4f-11f0-9466-cb7a6c2e7e97/file-jaoe38c1mac7rlew.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mac7rlev/4e2f2a3f-cb84-4d9e-86d8-421dfb73183b/5878f370-2a4f-11f0-9466-cb7a6c2e7e97/file-jaoe38c1mac7rlew.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 3rd April Evening Shift Mathematics - Complex Numbers Question 20 English Explanation\"></p>\n<p>$$ \\begin{aligned} &amp; z_0=z_1+z_2+z_3 \\\\ &amp; \\sum_{k=1}^3\\left(z_k-z_0\\right)^2=\\left(z_1-z_0\\right)^2+\\left(z_2-z_0\\right)^2+\\left(z_3-z_0\\right)^2 \\end{aligned} $$</p>\n<p>Let $z_0$ is origin $\\Rightarrow z_1, z_2, z_3$ lies on a circle having $\\left|z_0-z_i\\right|=R$</p>\n<p>$$ \\begin{aligned} &amp; \\therefore z_1=R e^{i 2 \\pi / 3} z_2=R e^{i 4 \\pi / 3} z_3=R e^{i 6 \\pi / 3} \\\\ &amp; \\Rightarrow z_1^2+z_2^2+z_3^2=R^2\\left[e^{i 4 \\pi / 3}+e^{i 8 \\pi / 3}+e^{i 12 \\pi / 3}\\right] \\\\ &amp; =0 \\\\ &amp; \\therefore \\sum_{k=1}^3\\left(z_k-z_0\\right)^2=0 \\end{aligned} $$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 3rd April Evening Shift"
+    "title": "JEE Main 2025 (Online) 3rd April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695317",
@@ -296,7 +271,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n&\\text { Let } z=x+i y\\\\\n&\\begin{aligned}\n& |z-2-i|=3 \\Rightarrow(x-2)^2+(y-1)^2=3^2 \\\\\n& \\operatorname{Re}(z-i z)=\\operatorname{Re}(x+i y-i x+y)=x+y \\Rightarrow x+y=2 \\\\\n& \\Rightarrow A=\\left\\{(x, y):(x-2)^2+(y-1)^2=3^2, x, y \\in R\\right\\}, \\\\\n& B=\\{(x, y): x+y=2\\} \\\\\n& \\Rightarrow x-2=-y \\Rightarrow y^2+(y-1)^2=3^2 \\\\\n& \\Rightarrow 2 y^2-2 y-8=0 \\Rightarrow y^2-y-4=0 \\\\\n& y_1+y_2=1, y_1 y_2=-4 \\\\\n& \\Rightarrow y_1^2+y_2^2 \\\\\n& =\\left(y_1+y_2\\right)^2-2 y_1 y_2=9 \\\\\n& \\Rightarrow x_1+x_2=4\\left(y_1+y_2\\right)=3, \\\\\n& x_1 x_2=\\left(2-y_1\\right)\\left(2-y_2\\right)=4-2\\left(y_1+y_2\\right)+y_1 y_2=-2 \\\\\n& \\Rightarrow x_1^2+x_2^2=\\left(x_1+x_2\\right)^2-2 x_1 x_2=13 \\\\\n& \\because S=\\left\\{\\left(x_1, y_1\\right),\\left(x_2, y_2\\right)\\right\\} \\\\\n& \\Rightarrow \\sum_{z \\in S}|z|^2=\\left(x_1^2+y_1^2\\right)+\\left(x_2^2+y_2^2\\right)=22\n\\end{aligned}\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 4th April Morning Shift"
+    "title": "JEE Main 2025 (Online) 4th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695318",
@@ -315,7 +291,8 @@
     ],
     "solution": "<p>$\\operatorname{Re}\\left(\\frac{\\mathrm{z}-1}{2 \\mathrm{z}+\\mathrm{i}}\\right)+\\operatorname{Re}\\left(\\frac{\\overline{\\mathrm{z}}-1}{2 \\bar{z}-\\mathrm{i}}\\right)=2$</p>\n<p>Here, $\\frac{\\mathrm{z}-1}{2 \\mathrm{z}+\\mathrm{i}}=\\left(\\frac{\\overline{\\bar{z}-1}}{2 \\overline{\\mathrm{z}}-\\mathrm{i}}\\right)=2$</p>\n<p>$=\\operatorname{Re}\\left(\\frac{z-1}{2 z+i}\\right)+\\operatorname{Re}\\left(\\overline{\\frac{z-1}{2 z+i}}\\right)=2$</p>\n<p>$=2 \\operatorname{Re}\\left(\\frac{z-1}{2 z+1}\\right)=2 \\Rightarrow \\operatorname{Re}\\left(\\frac{z-1}{2 z+i}\\right)=1$</p>\n<p>$$\\begin{aligned}\n& \\text { Let } z=x+i y \\\\\n& \\operatorname{Re}\\left(\\frac{(x-1)+i y}{2 x+i(2 y+1)}\\right)=1 \\Rightarrow \\operatorname{Re}\\left[\\frac{((x-1)+i y)(2 x-i(y+1)}{(2 x+i(2 y+1)(2 x-i(2 y+1))}\\right]=1 \\\\\n& \\Rightarrow \\frac{2 x(x-1)+y(2 y+1)}{4 x^2+(2 y+1)^2}=1 \\\\\n& \\Rightarrow 2 x^2-2 x+2 y^2+y=4 x^2+4 y^2+1+4 y \\\\\n& \\Rightarrow 2 x^2+2 y^2+3 y+2 x+1=0 \\\\\n& \\Rightarrow x^2+y^2+x+\\frac{3}{2} y+\\frac{1}{2}=0 \\\\\n& \\text { centre }=\\left(\\frac{-1}{2}, \\frac{-3}{4}\\right), r=\\sqrt{\\frac{1}{4}+\\frac{9}{16}-\\frac{1}{2}}=\\frac{\\sqrt{5}}{4} \\\\\n& a=\\frac{-1}{2}, b=\\frac{-3}{4}, r^2=\\frac{5}{16}\n\\end{aligned}$$</p>\n<p>$15 \\frac{\\mathrm{ab}}{\\mathrm{r}^2}=15 \\times\\left(\\frac{-1}{2}\\right) \\times\\left(\\frac{-3}{4}\\right) \\times \\frac{16}{5}=18$</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 7th April Evening Shift"
+    "title": "JEE Main 2025 (Online) 7th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695319",
@@ -334,7 +311,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& \\frac{z-i}{z+i}=\\frac{\\bar{z}+i}{\\bar{z}-i} \\\\\n& =z \\bar{z}-i \\bar{z}-i z-1=z \\bar{z}+z i+i \\bar{z}-1 \\\\\n& =z+\\bar{z}=0 \\\\\n& =2 x=0 \\\\\n& =x=0 \\quad \\text { (y-axis) }\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& |z|=1 \\\\\n& \\therefore \\quad z=i \\quad(z \\neq-i \\text { is given })\n\\end{aligned}$$</p>\n<p>Statement 1 is incorrect</p>\n<p>$$\\begin{aligned}\n& \\frac{z-i}{z+i}+\\frac{\\bar{z}-1}{\\bar{z}+1}=0 \\\\\n& =z \\bar{z}-\\bar{z}+z-1+z \\bar{z}-z+\\bar{z}-1=0 \\\\\n& =z \\bar{z}=1 \\\\\n& =|z|=1\n\\end{aligned}$$</p>\n<p>Statement 2 is correct</p>",
     "__v": 0,
-    "title": "JEE Main 2025 (Online) 7th April Morning Shift"
+    "title": "JEE Main 2025 (Online) 7th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769531a",
@@ -348,7 +326,8 @@
     "options": [],
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsz1bfzj/da67c7ec-984a-45c9-af11-5958669a974a/42ad13f0-d280-11ee-9b77-fbceb54c8042/file-6y3zli1lsz1bfzk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lsz1bfzj/da67c7ec-984a-45c9-af11-5958669a974a/42ad13f0-d280-11ee-9b77-fbceb54c8042/file-6y3zli1lsz1bfzk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 1st February Morning Shift Mathematics - Complex Numbers Question 60 English Explanation\">\n<br><br>Clearly for the shaded region $z_1$ is the intersection of the circle and the line passing through $\\mathrm{P}\\left(\\mathrm{L}_1\\right)$ and $\\mathrm{z}_2$ is intersection of line $\\mathrm{L}_1 \\&amp; \\mathrm{~L}_2$\n<br><br>Circle : $(x+2)^2+(y-3)^2=1$\n<br><br>$$\n\\begin{aligned}\n&amp; \\mathrm{L}_1: \\mathrm{x}+\\mathrm{y}-1=0 \\\\\\\\\n&amp; \\mathrm{~L}_2: \\mathrm{x}-\\mathrm{y}+4=0\n\\end{aligned}\n$$\n<br><br>On solving circle $\\&amp; \\mathrm{~L}_1$ we get\n<br><br>$$\n\\mathrm{z}_1:\\left(-2-\\frac{1}{\\sqrt{2}}, 3+\\frac{1}{\\sqrt{2}}\\right)\n$$\n\n<br><br>On solving $\\mathrm{L}_1$ and $\\mathrm{z}_2$ is intersection of line $\\mathrm{L}_1 \\&amp; \\mathrm{~L}_2$ we get $z_2:\\left(\\frac{-3}{2}, \\frac{5}{2}\\right)$\n<br><br>$\\begin{aligned} &amp; \\left|z_1\\right|^2+2\\left|z_2\\right|^2=14+5 \\sqrt{2}+17 \\\\\\\\ &amp; =31+5 \\sqrt{2}\\end{aligned}$\n<br><br>$\\begin{array}{ll}\\text { So } &amp; \\alpha=31 \\\\\\\\ &amp; \\beta=5 \\\\\\\\ &amp; \\alpha+\\beta=36\\end{array}$",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 1st February Morning Shift"
+    "title": "JEE Main 2024 (Online) 1st February Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769531b",
@@ -362,7 +341,8 @@
     "options": [],
     "solution": "<p>$$\\begin{aligned}\n& \\left|z-z_0\\right|^2=4 \\\\\n& \\Rightarrow\\left(\\alpha-z_0\\right)\\left(\\bar{\\alpha}-\\bar{z}_0\\right)=4 \\\\\n& \\Rightarrow \\alpha \\bar{\\alpha}-\\alpha \\bar{z}_0-z_0 \\bar{\\alpha}+\\left|z_0\\right|^2=4 \\\\\n& \\Rightarrow|\\alpha|^2-\\alpha \\bar{z}_0-z_0 \\bar{\\alpha}=2 \\quad\\text{......... (1)} \\\\\n& \\left|z-z_0\\right|^2=16\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow\\left(\\frac{1}{\\bar{\\alpha}}-z_0\\right)\\left(\\frac{1}{\\alpha}-\\bar{z}_0\\right)=16 \\\\\n& \\Rightarrow\\left(1-\\bar{\\alpha} z_0\\right)\\left(1-\\alpha \\bar{z}_0\\right)=16|\\alpha|^2 \\\\\n& \\Rightarrow 1-\\bar{\\alpha} z_0-\\alpha \\bar{z}_0+|\\alpha|^2\\left|z_0\\right|^2=16|\\alpha|^2 \\\\\n& \\Rightarrow 1-\\bar{\\alpha} z_0-\\alpha \\bar{z}_0=14|\\alpha|^2 \\quad\\text{....... (2)}\n\\end{aligned}$$</p>\n<p>From (1) and (2)</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow 5|\\alpha|^2=1 \\\\\n& \\Rightarrow 100|\\alpha|^2=20\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 27th January Evening Shift"
+    "title": "JEE Main 2024 (Online) 27th January Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769531c",
@@ -381,7 +361,8 @@
     ],
     "solution": "<p>$$|z-i|=|z+i|=|z-1|$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lt1dbkuq/8fa39b20-7b31-407e-a4e3-48710c870daf/c548b320-d3c8-11ee-a50b-bb659a2e1d74/file-1lt1dbkur.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lt1dbkuq/8fa39b20-7b31-407e-a4e3-48710c870daf/c548b320-d3c8-11ee-a50b-bb659a2e1d74/file-1lt1dbkur.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 27th January Morning Shift Mathematics - Complex Numbers Question 59 English Explanation\"></p>\n<p>$$\\mathrm{ABC}$$ is a triangle. Hence its circum-centre will be the only point whose distance from A, B, C will be same.</p>\n<p>So $$n(S)=1$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 27th January Morning Shift"
+    "title": "JEE Main 2024 (Online) 27th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769531d",
@@ -400,7 +381,8 @@
     ],
     "solution": "<p>$$|z-1| \\leq 2 \\quad \\Rightarrow \\quad(x-1)^2+y^2=4$$</p>\n<p>$$\\begin{aligned}\n&amp; z+\\bar{z}+i(z-\\bar{z}) \\leq 2 \\\\\n\\Rightarrow \\quad &amp; x-y \\leq 1 \\\\\n&amp; \\operatorname{Im}(z) \\geq 0 \\\\\n\\Rightarrow \\quad &amp; y \\geq 0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwhf72y5/53205d83-bd1d-474f-a6fc-77a86f42ba34/4b0075d0-1801-11ef-b156-f754785ad3ce/file-1lwhf72y6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwhf72y5/53205d83-bd1d-474f-a6fc-77a86f42ba34/4b0075d0-1801-11ef-b156-f754785ad3ce/file-1lwhf72y6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 4th April Evening Shift Mathematics - Complex Numbers Question 45 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\text { Required area }=\\left(\\frac{\\frac{3 \\pi}{4}}{2 \\pi}\\right)(\\pi)(2)^2 \\\\\n&amp; =\\frac{3}{2} \\pi\n\\end{aligned}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 4th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 4th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769531e",
@@ -419,7 +401,8 @@
     ],
     "solution": "<p>$$S_1=\\{z \\in C:|z| \\leq 5\\}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lwekhn5c/6d7750d9-cc34-4e40-9c38-cefbaf7666fe/a4650700-166f-11ef-8416-25c08f86a011/file-1lwekhn5d.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lwekhn5c/6d7750d9-cc34-4e40-9c38-cefbaf7666fe/a4650700-166f-11ef-8416-25c08f86a011/file-1lwekhn5d.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 5th April Evening Shift Mathematics - Complex Numbers Question 40 English Explanation 1\"></p>\n<p>$$S_2=\\operatorname{Im}\\left(\\frac{z+1-\\sqrt{3} i}{1-\\sqrt{3} i}\\right) \\geq 0$$</p>\n<p>Take $$z=x+i y$$</p>\n<p>$$=\\frac{x+i y+1-\\sqrt{3} i}{1-\\sqrt{3} i} \\times \\frac{1+\\sqrt{3} i}{1+\\sqrt{3} i}$$</p>\n<p>$$\\begin{aligned}\n= &amp; \\frac{x+i y+1-\\sqrt{3} i+\\sqrt{3} i x-\\sqrt{3} y+\\sqrt{3} i+3}{1+3} \\\\\n&amp; =y+\\sqrt{3} x \\geq 0 \\\\\nS_3= &amp; x \\geq 0\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lweku1ft/5285b6dd-899b-419d-8a11-3e28b70cd80a/fd24cb90-1670-11ef-8416-25c08f86a011/file-1lweku1fu.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lweku1ft/5285b6dd-899b-419d-8a11-3e28b70cd80a/fd24cb90-1670-11ef-8416-25c08f86a011/file-1lweku1fu.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 5th April Evening Shift Mathematics - Complex Numbers Question 40 English Explanation 2\"></p>\n<p>$$\\begin{aligned}\n&amp; y+\\sqrt{3} x=0 \\\\\n&amp; y=-\\sqrt{3} x \\\\\n&amp; \\text { Slope }=-\\sqrt{3} \\\\\n&amp; 90+\\theta=120^{\\circ} \\\\\n&amp; \\theta=30^{\\circ} \\\\\n&amp; 90-\\theta=60^{\\circ}\n\\end{aligned}$$</p>\n<p>In first quadrant we have angle $$\\frac{\\pi}{2}$$</p>\n<p>so, total angle $$90^{\\circ}+60^{\\circ}=150^{\\circ}$$</p>\n<p>So, area $$\\frac{\\pi r^2}{2 \\pi} \\times \\frac{5 \\pi}{6}=\\frac{125 \\pi}{12}$$</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 5th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 5th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769531f",
@@ -438,7 +421,8 @@
     ],
     "solution": "<p>$$\\begin{aligned}\n& n=\\frac{z-2 i}{z+2 i} \\\\\n& \\text { Let } z=x+i y \\\\\n& n=\\frac{x+(y-2) i}{x+(y+2) i} \\times\\left(\\frac{x-(y+2) i}{x-(y+2) i}\\right) \\\\\n& \\operatorname{Re}(n)=\\frac{x^2+(y-2)(y+2)}{x^2+(y+2)^2}=0 \\\\\n& \\Rightarrow x^2+(y-2)(y+2)=0\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow x^2+y^2-4=0 \\\\\n& \\Rightarrow x^2+y^2=4 \\\\\n& \\text { also, }|z-(6+8 i)| \\leq|z|+|-6-8 i| \\\\\n& |z-(6+8 i)| \\leq 2+10=12\n\\end{aligned}$$</p>\n<p>Hence, Maximum value of $$|z-(6+8 i)|$$ is 12.</p>",
     "__v": 0,
-    "title": "JEE Main 2024 (Online) 9th April Evening Shift"
+    "title": "JEE Main 2024 (Online) 9th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695320",
@@ -457,7 +441,8 @@
     ],
     "solution": "Given, $$\nz_0=\\frac{1+3 i}{2}, z_1=(1+i)\n$$\n<br/><br/>$$\n\\left|z_1-z_0\\right|=\\left|\\frac{1-i}{2}\\right|=\\frac{1}{\\sqrt{2}}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\left|z_1-z_0\\right|\\left|z_2-z_0\\right|=1 \\\\\\\\\n& \\Rightarrow \\frac{1}{\\sqrt{2}}\\left|z_2-z_0\\right|=1 \\\\\\\\\n& \\Rightarrow\\left|z_2-z_0\\right|=\\sqrt{2}\n\\end{aligned}\n$$\n<br/><br/>$$\n\\begin{aligned}\n& \\frac{z_2-z_0}{z_1-z_0}=\\frac{\\left|z_2-z_0\\right|}{\\left|z_1-z_0\\right|}( \\pm 1)= \\pm 2 \\\\\\\\\n& z_2=z_0 \\pm 2\\left(z_1-z_0\\right)\n\\end{aligned}\n$$\n<br/><br/>$$\nz_2=2 z_1-z_0=\\frac{3}{2}+\\frac{1}{2} i \\Rightarrow\\left|z_2\\right|^2=\\frac{5}{2}\n$$\n<br/><br/>OR\n<br/><br/>$$\nz_2=3 z_0-2 z_1=\\frac{-1}{2}+\\frac{5}{2} i \\Rightarrow\\left|z_2\\right|^2=\\frac{13}{2}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 12th April Morning Shift"
+    "title": "JEE Main 2023 (Online) 12th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695321",
@@ -471,7 +456,8 @@
     "options": [],
     "solution": "Given the expression for $w$ as :\n\n<br/><br/>$$w = z\\bar{z} + k_1z + k_2iz + \\lambda(1+i), \\quad \\text{where } k_1, k_2 \\in \\mathbb{R}.$$\n\n<br/><br/>1. If $w = x+iy$, we can separate this into the real and imaginary parts :\n\n <br/><br/> The real part is: $$\\text{Re}(w) = x^2 + y^2 + k_1x - k_2y + \\lambda = 0.$$\n   \n  <br/><br/> The imaginary part is: $$\\text{Im}(w) = k_1y + k_2x + \\lambda = 0.$$\n\n<br/><br/>2. We know the circle C of radius 1 touches the line $y=1$ and the y-axis. The standard form of the equation of a circle is $(x-h)^2 + (y-k)^2 = r^2$, where $(h, k)$ is the center of the circle and $r$ is the radius. If the circle touches y-axis, then the x-coordinate of the center $h$ must be equal to the radius. Also, the circle touches the line $y=1$, so the y-coordinate of the center $k$ must be 1 unit above this line, hence $k=2$. So the circle's equation is $(x-1)^2 + (y-2)^2 = 1$.\n\n<br/><br/>3. By comparing this with $\\text{Re}(w) = 0$, we can see that $k_1=-2$, $k_2=4$, and $\\lambda=4$.\n\n<br/><br/>4. The equation for the curve $\\text{Im}(w)=0$ becomes $-2y + 4x + 4 = 0$, which simplifies to $y = 2x + 2$.\n\n<br/><br/>5. To find the intersection points A and B, we solve the system of equations consisting of the circle and the line. Substituting $y = 2x + 2$ into the equation of the circle gives $5x^2 - 2x = 0$, with solutions $x = 0$ and $x = 2/5$.\n\n<br/><br/>6. Substituting $x = 0$ and $x = 2/5$ into $y = 2x + 2$ gives $y = 2$ and $y = 6/5$ respectively. So, the intersection points are A = $(0, 2)$ and B = $(2/5, 14/5)$.\n\n<br/><br/>7. The distance between A and B is $AB = \\sqrt{[(2/5)^2 + (4/5)^2]} = \\sqrt{4/5}$.\n\n<br/><br/>8. Finally, $30(AB)^2 = 30 \\times (4/5) = 24$.",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 13th April Morning Shift"
+    "title": "JEE Main 2023 (Online) 13th April Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695322",
@@ -490,7 +476,8 @@
     ],
     "solution": "$\\begin{aligned} & \\left|\\frac{1+a i}{b+i}\\right|=1 \\\\\\\\ & |1+i a|=|b+i| \\\\\\\\ & a^2+1=b^2+1 \\Rightarrow \\mathrm{a}=\\pm \\mathrm{b} \\Rightarrow \\mathrm{b}=-\\mathrm{a} \\quad \\text { as } \\mathrm{ab}<0 \\\\\\\\ & (\\mathrm{a} +\\mathrm{ib}) \\text { lies on }|z-1|=|2 z| \\\\\\\\ & |a+i b-1|=2|a+i b| \\\\\\\\ & (a-1)^2+b^2=4\\left(a^2+b^2\\right) \\\\\\\\ & (a-1)^2=a^2=4\\left(2 a^2\\right) \\\\\\\\ & 1-2 a=6 a^2 \\Rightarrow 6 a^2+2 a-1=0 \\\\\\\\ & a=\\frac{-2 \\pm \\sqrt{28}}{12}=\\frac{-1 \\pm \\sqrt{7}}{6} \\\\\\\\ & a=\\frac{\\sqrt{7}-1}{6} \\text { and } b=\\frac{1-\\sqrt{7}}{6}\\end{aligned}$\n<br/><br/>$$\n\\begin{aligned}\n& {[a]=0} \\\\\\\\\n& \\therefore \\frac{1+[a]}{4 b}=\\frac{6}{4(1-\\sqrt{7})}=-\\left(\\frac{1+\\sqrt{7}}{4}\\right)\n\\end{aligned}\n$$\n<br/><br/>Similarly when $$a = {{ - 1 - \\sqrt 7 } \\over 6}\\,\\text { and }\\,b = {{1 + \\sqrt 7 } \\over 6}$$\n<br/><br/>then [$a$] = -1\n<br/><br/>$$ \\therefore $$ $${{1 + \\left[ a \\right]} \\over {4b}} = {{1 - 1} \\over {4 \\times {{1 + \\sqrt 7 } \\over 6}}}$$ = 0",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 1st February Evening Shift"
+    "title": "JEE Main 2023 (Online) 1st February Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695323",
@@ -509,7 +496,8 @@
     ],
     "solution": "$$\\left| {{{z - 2} \\over {z - 3}}} \\right| = 2$$\n<br/><br/>$$\n\\begin{aligned}\n& \\sqrt{(x-2)^2+y^2}=2 \\sqrt{(x-3)^2+y^2} \\\\\\\\\n& \\Rightarrow x^2+y^2-4 x+4=4 x^2+4 y^2-24 x+36 \\\\\\\\\n& \\Rightarrow 3 x^2+3 y^2-20 x+32=0 \\\\\\\\\n& \\Rightarrow x^2+y^2-\\frac{20}{3} \\mathrm{x}+\\frac{32}{3}=0 \\\\\\\\\n& \\Rightarrow (\\alpha, \\beta)=\\left(\\frac{10}{3}, 0\\right) \\\\\\\\\n& \\gamma=\\sqrt{\\frac{100}{9}-\\frac{32}{3}}=\\sqrt{\\frac{4}{9}}=\\frac{2}{3} \\\\\\\\\n& 3(\\alpha + \\beta + \\gamma)=3\\left(\\frac{10}{3}+\\frac{2}{3}\\right) \\\\\\\\\n& =12\n\\end{aligned}\n$$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 1st February Morning Shift"
+    "title": "JEE Main 2023 (Online) 1st February Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695324",
@@ -528,7 +516,8 @@
     ],
     "solution": "$\\left|z-z_{1}\\right|^{2}-\\left|z-z_{2}\\right|^{2}=\\left|z_{1}-z_{2}\\right|^{2}$\n<br/><br/>\n$\\Rightarrow(x-2)^{2}+(y-3)^{2}-(x-3)^{2}-(y-4)^{2}=1+1$\n<br/><br/>\n$\\Rightarrow-4 x+4+9-6 y-9+6 x-16+8 y=2$\n<br/><br/>\n$\\Rightarrow 2 x+2 y=14$\n<br/><br/>\n$\\Rightarrow x+y=7$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 25th January Morning Shift"
+    "title": "JEE Main 2023 (Online) 25th January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695325",
@@ -547,7 +536,8 @@
     ],
     "solution": "Let $\\mathrm{w}=\\mathrm{z}+\\frac{1}{\\mathrm{z}}=4 \\mathrm{e}^{\\mathrm{i} \\theta}+\\frac{1}{4} \\mathrm{e}^{-\\mathrm{i} \\theta}$\n\n<br/><br/>$\\Rightarrow \\mathrm{w}=\\frac{17}{4} \\cos \\theta+\\mathrm{i} \\frac{15}{4} \\sin \\theta$\n\n<br/><br/>So locus of $w$ is ellipse $\\frac{x^{2}}{\\left(\\frac{17}{4}\\right)^{2}}+\\frac{y^{2}}{\\left(\\frac{15}{4}\\right)^{2}}=1$\n\n<br/><br/>Locus of $\\mathrm{z}$ is circle $\\mathrm{x}^{2}+\\mathrm{y}^{2}=16$\n\n<br/><br/>So intersect at 4 points.",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 31st January Morning Shift"
+    "title": "JEE Main 2023 (Online) 31st January Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695326",
@@ -561,7 +551,8 @@
     "options": [],
     "solution": "Given equation of circle,\n<br/><br/>$$\n\\begin{aligned}\n& \\quad|z-\\alpha|^2+|z-\\beta|^2=2 \\lambda \\\\\\\\\n& \\therefore 2 \\lambda=|\\alpha-\\beta|^2 .........(i)\n\\end{aligned}\n$$\n\n<br/><br/>For circle,\n<br/><br/>$$\n\\left|z-z_1\\right|^2+\\left|z-z_2\\right|^2=\\left|z_1-z_2\\right|^2\n$$\n<br/><br/>$\\begin{array}{lll}\\text { Radius, } r=\\frac{\\left|z_1-z_2\\right|}{2}=\\frac{|\\alpha-\\beta|}{2}=\\sqrt{\\lambda-1}  \\\\\\\\ \\Rightarrow  |\\alpha-\\beta|=2 \\sqrt{\\lambda-1}  \\\\\\\\ \\Rightarrow |\\alpha-\\beta|^2=4(\\lambda-1) \\\\\\\\ \\Rightarrow 2 \\lambda=4(\\lambda-1) [\\because \\text { Using Eq. (i)] }  \\\\\\\\ \\Rightarrow 2 \\lambda=4 \\\\\\\\ \\Rightarrow \\lambda=2  \\end{array}$\n<br/><br/>$\\begin{array}{ll}\\Rightarrow |\\alpha-\\beta|^2=4 \\\\\\\\ \\Rightarrow |\\alpha-\\beta|=2\\end{array}$",
     "__v": 0,
-    "title": "JEE Main 2023 (Online) 6th April Evening Shift"
+    "title": "JEE Main 2023 (Online) 6th April Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695327",
@@ -580,7 +571,8 @@
     ],
     "solution": "<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l7nbq29i/e583a584-7e22-4939-89d9-b1f38618bbd4/01c10960-2c4f-11ed-9dc0-a1792fcc650d/file-1l7nbq29j.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l7nbq29i/e583a584-7e22-4939-89d9-b1f38618bbd4/01c10960-2c4f-11ed-9dc0-a1792fcc650d/file-1l7nbq29j.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 26th July Morning Shift Mathematics - Complex Numbers Question 96 English Explanation\"></p>\n<p>$${{{z_2} - 0} \\over {(1 + 2i) - 0}} = {{|OB|} \\over {|OA|}}{e^{{{i\\pi } \\over 4}}}$$</p>\n<p>$$ \\Rightarrow {{{z_2}} \\over {1 + 2i}} = \\sqrt 2 {e^{{{i\\pi } \\over 4}}}$$</p>\n<p>OR $${z_2} = (1 + 2i)(1 + i)$$</p>\n<p>$$ =  - 1 + 3i$$</p>\n<p>$$\\arg {z_2} = \\pi  - {\\tan ^{ - 1}}3$$</p>\n<p>$$|{z_2}| = \\sqrt {10} $$</p>\n<p>$${z_1} - 2{z_2} = (1 + 2i) + 2 - 6i = 3 - 4i$$</p>\n<p>$$\\arg ({z_1} - 2{z_2}) =  - {\\tan ^{ - 1}}{4 \\over 3}$$</p>\n<p>$$|2{z_1} - {z_2}| = |2 + 4i + 1 - 3i| = |3 + i| = \\sqrt {10} $$</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 26th July Morning Shift"
+    "title": "JEE Main 2022 (Online) 26th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695328",
@@ -599,7 +591,8 @@
     ],
     "solution": "<p>$${C_1}:|z - (4 + 3i)| = 2$$ and $${C_2}:|z| + |z - 4| = 6$$, $$z \\in C$$</p>\n<p>C<sub>1</sub> represents a circle with centre (4, 3) and radius 2 and C<sub>2</sub> represents a ellipse with focii at (0, 0) and (4, 0) and length of major axis = 6, and length of semi-major axis 2$$\\sqrt5$$ and (4, 2) lies inside the both C<sub>1</sub> and C<sub>2</sub> and (4, 3) lies outside the C<sub>2</sub></p>\n<p> <img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5p8atn5/a1f6e8e9-ac22-432a-959c-96b00d255605/c11c6010-05c2-11ed-b1f1-b5d4135a474f/file-1l5p8atn6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5p8atn5/a1f6e8e9-ac22-432a-959c-96b00d255605/c11c6010-05c2-11ed-b1f1-b5d4135a474f/file-1l5p8atn6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 27th June Evening Shift Mathematics - Complex Numbers Question 107 English Explanation\"> </p>\n<p> $$\\therefore$$ number of intersection points = 2</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 27th June Evening Shift"
+    "title": "JEE Main 2022 (Online) 27th June Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695329",
@@ -613,7 +606,8 @@
     "options": [],
     "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lc8e8f52/d1800b00-4e42-4501-bb81-7122062be06f/25ad5460-8716-11ed-92bb-e57e64e1a06d/file-1lc8e8f53.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lc8e8f52/d1800b00-4e42-4501-bb81-7122062be06f/25ad5460-8716-11ed-92bb-e57e64e1a06d/file-1lc8e8f53.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 28th June Morning Shift Mathematics - Complex Numbers Question 108 English Explanation\"><br>\nat line $y=-2$, we have $(5,-2)(6,-2)(1,-2)(0,-2)$ $\\Rightarrow 4$ points <br><br>at line $y=-1$, we have $(4,-1)(5,-1)(6,-1)(2,-1)$ $(1,-1)(0,-1) \\Rightarrow 6$ points\n<br><br>\nat line $y=0$, we have $(0,0)(1,0)(2,0)(3,0)(4,0)$ $(5,0)(6,0) \\Rightarrow 7$ points\n<br><br>\nat line $y=1$, we have $(1,1),(2,1),(3,1),(4,1),(5,1)$ i.e. 5 points\n<br><br>\nsymmetrically\n<br><br>\nat line $y=-5$, we have 5 points\n<br><br>\nat line $y=-4$, we have 7 points\n<br><br>\nat line $y=-3$, we have 6 points\n<br><br>\nSo Total integral points $=2(5+7+6)+4$\n<br><br>\n$$\n=40\n$$",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 28th June Morning Shift"
+    "title": "JEE Main 2022 (Online) 28th June Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769532a",
@@ -632,7 +626,8 @@
     ],
     "solution": "$S:\\{z=x+i y:|z-1+i| \\geq|z|,|z|&lt;2,|z-i|=|z-1|\\}$\n<br><br>\n$$\n|z-1+i| \\geq|z|\n$$<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lc8c3waq/4ba6cc0d-ceab-4ef1-baed-c4899ebff5b2/d5a07220-870d-11ed-ae18-7336d1cc7e9d/file-1lc8c3war.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lc8c3waq/4ba6cc0d-ceab-4ef1-baed-c4899ebff5b2/d5a07220-870d-11ed-ae18-7336d1cc7e9d/file-1lc8c3war.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th July Evening Shift Mathematics - Complex Numbers Question 87 English Explanation 1\"><br>\n$|z|&lt;2$<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lc8c4zsj/031ee17e-0a26-48dd-a170-9b19fe86b156/f422a830-870d-11ed-9cef-67b5ed764fcf/file-1lc8c4zsk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lc8c4zsj/031ee17e-0a26-48dd-a170-9b19fe86b156/f422a830-870d-11ed-9cef-67b5ed764fcf/file-1lc8c4zsk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th July Evening Shift Mathematics - Complex Numbers Question 87 English Explanation 2\"><br>\n$$\n|z-i| = |z-1|\n$$<br><br>\n<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lc8c6vi8/11bce565-65c8-4e70-b43c-71f126e96d89/28717710-870e-11ed-9cef-67b5ed764fcf/file-1lc8c6vi9.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lc8c6vi8/11bce565-65c8-4e70-b43c-71f126e96d89/28717710-870e-11ed-9cef-67b5ed764fcf/file-1lc8c6vi9.png\" loading=\"lazy\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh\" alt=\"JEE Main 2022 (Online) 29th July Evening Shift Mathematics - Complex Numbers Question 87 English Explanation 3\"><br>\n$\\because \\quad w \\in S$ and $w=2 x+i y$\n<br><br>\n$2 x&lt;\\frac{1}{2} \\quad\\quad \\therefore x&lt;\\frac{1}{4}$\n<br><br>\n$(2 x)^{2}+(-2 x)^{2}&lt;4$\n<br><br>\n$4 x^{2}+4 x^{2}&lt;4$\n<br><br>\n$x^{2}&lt;\\frac{1}{2} \\Rightarrow x \\in\\left(-\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}\\right)$\n<br><br>\n$\\therefore \\quad x \\in\\left(-\\frac{1}{2}, \\frac{1}{4}\\right]$",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th July Evening Shift"
+    "title": "JEE Main 2022 (Online) 29th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769532b",
@@ -651,7 +646,8 @@
     ],
     "solution": "<p>Let $$z = x + iy$$</p>\n<p>$$\\therefore$$ $$|z| = \\sqrt {{x^2} + {y^2}} $$</p>\n<p>Given, $$|z| = 3$$</p>\n<p>$$\\therefore$$ $$\\sqrt {{x^2} + {y^2}}  = 3$$</p>\n<p>$$ \\Rightarrow {x^2} + {y^2} = 9 = {3^2}$$</p>\n<p>This represent a circle with center at (0, 0) and radius = 3</p>\n<p>Now, given</p>\n<p>$$\\arg (z - 1) - \\arg (z + 1) = {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow \\arg (x + iy - 1) - \\arg (x + iy + 1) = {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow \\arg (x - 1 + iy) - \\arg (x + 1 + iy) = {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow {\\tan ^{ - 1}}\\left( {{y \\over {x - 1}}} \\right) - {\\tan ^{ - 1}}\\left( {{y \\over {x + 1}}} \\right) = {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow {\\tan ^{ - 1}}\\left( {{{{y \\over {x - 1}} - {y \\over {x + 1}}} \\over {1 + {y \\over {x - 1}} \\times {y \\over {x + 1}}}}} \\right) = {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow {\\tan ^{ - 1}}\\left( {{{{{xy + y - xy + y} \\over {{x^2} - 1}}} \\over {{{{x^2} - 1 + {y^2}} \\over {{x^2} - 1}}}}} \\right) = {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow {\\tan ^{ - 1}}\\left( {{{xy + y - xy + y} \\over {{x^2} - 1 + {y^2}}}} \\right) = {\\pi  \\over 4}$$</p>\n<p>$$ \\Rightarrow {{2y} \\over {{x^2} - 1 + {y^2}}} = \\tan \\left( {{\\pi  \\over 4}} \\right)$$</p>\n<p>$$ \\Rightarrow 2y = {x^2} + {y^2} - 1$$</p>\n<p>$$ \\Rightarrow {x^2} + {y^2} - 2y - 1 = 0$$</p>\n<p>$$ \\Rightarrow {x^2} + {(y - 1)^2} = {(\\sqrt 2 )^2}$$</p>\n<p>This represent a circle with center at (0, 1) and radius $$\\sqrt 2 $$.</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1l5miv4n5/2aac6eff-97fb-4c96-bb71-32df8bb84dca/b7223400-0445-11ed-9d9a-21bdd0f00aa4/file-1l5miv4n6.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1l5miv4n5/2aac6eff-97fb-4c96-bb71-32df8bb84dca/b7223400-0445-11ed-9d9a-21bdd0f00aa4/file-1l5miv4n6.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2022 (Online) 29th June Evening Shift Mathematics - Complex Numbers Question 110 English Explanation\"></p>\n<p>From diagram you can see both the circles do not cut anywhere.</p>",
     "__v": 0,
-    "title": "JEE Main 2022 (Online) 29th June Evening Shift"
+    "title": "JEE Main 2022 (Online) 29th June Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769532c",
@@ -670,7 +666,8 @@
     ],
     "solution": "Let, z = x + iy<br><br><img src=\"https://imagex.cdn.examgoal.net/1kq43zyyv/9b013561-61cd-4443-8f8f-52164d84cac2/3a7c7d70-d12e-11eb-bdce-9d5b826a16d8/file-1kq43zyyw.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 17th March Evening Shift Mathematics - Complex Numbers Question 132 English Explanation\"><br><br>S<sub>1</sub> $$ \\equiv $$ (x $$-$$ 1)<sup>2</sup> + y<sup>2</sup> $$ \\le $$ 2 ..... (1)<br><br>S<sub>2</sub> $$ \\equiv $$ x + y $$ \\ge $$ 1 ..... (2)<br><br>S<sub>3</sub> $$\\equiv$$ y $$ \\le $$ 1 .... (3)<br><br>$$ \\Rightarrow $$ S<sub>1</sub> $$\\cap$$ S<sub>2</sub> $$\\cap$$ S<sub>3</sub> has infinitely many elements.",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 17th March Evening Shift"
+    "title": "JEE Main 2021 (Online) 17th March Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769532d",
@@ -689,7 +686,8 @@
     ],
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1ko1sl3nu/41176162-9112-4aaa-af9c-f64c6bee5af2/987f62a0-a84f-11eb-a94c-69e2e5235eff/file-1ko1sl3nv.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 17th March Morning Shift Mathematics - Complex Numbers Question 133 English Explanation\">\n<br>Each side length = |z|\n<br><br>Area of $$\\Delta$$ = $${1 \\over 2}$$ (area of square)<br><br>= $${1 \\over 2}$$|z|<sup>2</sup>",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 17th March Morning Shift"
+    "title": "JEE Main 2021 (Online) 17th March Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769532e",
@@ -708,7 +706,8 @@
     ],
     "solution": "<picture><source media=\"(max-width: 1227px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs.jpeg\"><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-500w.jpeg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-680w.jpeg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-860w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1kmth5ucr/637f85d6-957a-40a6-8e6c-80661ef8d357/6f2cebb0-8ff0-11eb-8dc2-2d770738b30d/file-1kmth5ucs-1040w.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 18th March Evening Shift Mathematics - Complex Numbers Question 129 English Explanation\"></picture>\n<br>Given, w = 1 $$-$$ $$\\sqrt 3 $$ i<br><br>$$ \\Rightarrow |w| = \\sqrt {{{(1)}^2} + {{( - \\sqrt 3 )}^2}}  = 2$$<br><br>Also, given | zw | = 1<br><br>$$ \\Rightarrow $$ | z | | w | = 1 (using property)<br><br>$$ \\Rightarrow $$ | z | = $${1 \\over 2}$$<br><br>Also, arg(z) $$-$$ arg(w) = $${{\\pi {} } \\over 2}$$<br><br>$$ \\therefore $$ Angle between two complex number z and w is $${{\\pi {} } \\over 2}$$.<br><br>$$ \\therefore $$ $$\\angle zow = {{\\pi {} } \\over 2}$$<br><br>$$ \\therefore $$ $$\\Delta$$zow is a right angle triangle with base $$ow = 2$$ and height $$oz = {1 \\over 2}$$<br><br>$$ \\therefore $$ Area = $${1 \\over 2} \\times 2 \\times {1 \\over 2} = {1 \\over 2}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 18th March Evening Shift"
+    "title": "JEE Main 2021 (Online) 18th March Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769532f",
@@ -727,7 +726,8 @@
     ],
     "solution": "$$a|z{|^2} + \\alpha \\overline z  + \\overline \\alpha  z + d = 0$$<br><br>$$ \\Rightarrow $$ $$z\\overline z  + \\left( {{\\alpha  \\over a}} \\right)\\overline z  + \\left( {{{\\overline \\alpha  } \\over a}} \\right)z + {d \\over a} = 0$$<br><br>$$ \\therefore $$ Centre $$ =  - {\\alpha  \\over a}$$<br><br>$$r = \\sqrt {{{\\left| {{\\alpha  \\over a}} \\right|}^2} - {d \\over a}} $$<br><br>$$ \\Rightarrow {\\left| {{\\alpha  \\over a}} \\right|^2} \\ge {d \\over a}$$<br><br>$$ \\Rightarrow {\\left| \\alpha  \\right|^2} \\ge ad$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 18th March Morning Shift"
+    "title": "JEE Main 2021 (Online) 18th March Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695330",
@@ -741,7 +741,8 @@
     "options": [],
     "solution": "For equilateral triangle with vertices z<sub>1</sub>, z<sub>2</sub> and z<sub>3</sub>,<br><br>$$z_1^2 + z_2^2 + z_3^3 = {z_1}{z_2} + {z_2}{z_3} + {z_3}{z_1}$$<br><br>Here one vertex z<sub>3</sub> is 0<br><br>$$ \\therefore $$ $$z_1^2 + z_2^2 = {z_1}{z_2} + 0 + 0$$<br><br>Given, z<sub>1</sub>, z<sub>2</sub> are roots of $${z^2} + az + 12 = 0$$<br><br>$$ \\therefore $$ $${z_1} + {z_2} =  - a$$<br><br>$${z_1}{z_2} = 12$$<br><br>$$ \\therefore $$ $$z_1^2 + z_2^2 + 2{z_1}{z_2} = {z_1}{z_2} + 2{z_1}{z_2}$$<br><br>$$ \\Rightarrow {({z_1} + {z_2})^2} = 3{z_1}{z_2}$$<br><br>$$ \\Rightarrow {( - a)^2} = 3 \\times 12$$<br><br>$$ \\Rightarrow {a^2} = 36$$<br><br>$$ \\Rightarrow a =  \\pm 6$$<br><br>$$ \\Rightarrow |a|\\, = 6$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 18th March Morning Shift"
+    "title": "JEE Main 2021 (Online) 18th March Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695331",
@@ -760,7 +761,8 @@
     ],
     "solution": "$$(2 - i)z = (2 + i)\\overline z $$<br><br>$$ \\Rightarrow (2 - i)(x + iy) = (2 + i)(x - iy)$$<br><br>$$ \\Rightarrow 2x - ix + 2iy + y = 2x + ix - 2 - iy + y$$<br><br>$$ \\Rightarrow 2ix - 4iy = 0$$<br><br>$${L_1}:x - 2y = 0$$<br><br>$$ \\Rightarrow (2 + i)z + (i - 2)\\overline z  - 4i = 0$$<br><br>$$ \\Rightarrow (2 + i)(x + iy) + (i - 2)(x - iy) - 4i = 0$$<br><br>$$ \\Rightarrow 2x + ix + 2iy - y + ix - 2x + y + 2iy - 4i = 0$$<br><br>$$ \\Rightarrow 2ix + 4iy - 4i = 0$$<br><br>$${L_2}:x + 2y - 2 = 0$$<br><br>Solve L<sub>1</sub> and L<sub>2</sub><sub></sub>: x = 1, $$4y = 2,y = {1 \\over 2}$$<br><br>$$ \\therefore $$ $$x = 1$$<br><br>Centre $$\\left( {1,{1 \\over 2}} \\right)$$<br><br>$${L_3}:iz + \\overline z  + 1 + i = 0$$<br><br>$$ \\Rightarrow i(x + iy) + x - iy + 1 + i = 0$$<br><br>$$ \\Rightarrow ix - y + x - iy + 1 + i = 0$$<br><br>$$ \\Rightarrow (x - y + 1) + i(x - y + 1) = 0$$<br><br>Radius = distance from $$\\left( {1,{1 \\over 2}} \\right)$$ to $$x - y + 1 = 0$$<br><br>$$ \\Rightarrow $$ $$r = {{1 - {1 \\over 2} + 1} \\over {\\sqrt 2 }}$$<br><br>$$ \\Rightarrow $$ $$r = {3 \\over {2\\sqrt 2 }}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 25th February Morning Shift"
+    "title": "JEE Main 2021 (Online) 25th February Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695332",
@@ -774,7 +776,8 @@
     "options": [],
     "solution": "Equation of circle is (x<sup>2</sup> $$-$$ y<sup>2</sup>) + 2y<sup>2</sup> + 2x = 0<br><br>x<sup>2</sup> + y<sup>2</sup> + 2x = 0<br><br>Centre : ($$-$$1, 0)<br><br>Parabola : x<sup>2</sup> $$-$$ 6x $$-$$ y + 13 = 0<br><br>(x $$-$$ 3)<sup>2</sup> = y $$-$$ 4<br><br>Vertex : (3, 4)<br><br>Equation of line $$ \\equiv y - 0 = {{4 - 0} \\over {3 + 1}}(x + 1)$$<br><br>$$y = x + 1$$<br><br>y-intercept = 1",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 25th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 25th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695333",
@@ -793,7 +796,8 @@
     ],
     "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktcxhytx/6e45e324-69b9-441c-9796-9a00f8cd1096/8305d360-116c-11ec-bae2-11c4e14cc3fe/file-1ktcxhyty-320w.jpeg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ktcxhytx/6e45e324-69b9-441c-9796-9a00f8cd1096/8305d360-116c-11ec-bae2-11c4e14cc3fe/file-1ktcxhyty-500w.jpeg\"><img src=\"https://imagex.cdn.examgoal.net/1ktcxhytx/6e45e324-69b9-441c-9796-9a00f8cd1096/8305d360-116c-11ec-bae2-11c4e14cc3fe/file-1ktcxhyty.jpeg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th August Morning Shift Mathematics - Complex Numbers Question 121 English Explanation\"></picture> <br><br>In $$\\Delta$$OAC<br><br>$$\\sin \\left( {{\\pi  \\over 4}} \\right) = {1 \\over {AC}}$$<br><br>$$ \\Rightarrow AC = \\sqrt 2 $$<br><br>Also, $$\\tan {\\pi  \\over 4} = {{OA} \\over {OC}} = {1 \\over {OC}}$$<br><br>$$\\Rightarrow$$ OC = 1<br><br>$$\\therefore$$ centre (0, 1); Radius = $$\\sqrt 2 $$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 26th August Morning Shift"
+    "title": "JEE Main 2021 (Online) 26th August Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695334",
@@ -807,7 +811,8 @@
     "options": [],
     "solution": "Let, z = x + iy<br><br>Given, z(1 + i) + $$\\overline z $$ (1 $$-$$ i) $$ \\ge $$ $$-$$ 10<br><br>$$ \\Rightarrow $$ z + $$\\overline z $$ + i (z $$-$$ $$\\overline z $$) $$ \\ge $$ $$-$$ 10<br><br>$$ \\Rightarrow $$ 2x + i (2iy) $$ \\ge $$ $$-$$ 10<br><br>$$ \\Rightarrow $$ x + i<sup>2</sup> y $$ \\ge $$ $$-$$ 5<br><br>$$ \\Rightarrow $$ x $$-$$ y $$ \\ge $$ $$-$$ 5 ...... (1)<br><br>Also given, | z + 5 | $$ \\le $$ 4<br><br>$$ \\Rightarrow $$ | z $$-$$ ($$-$$5 + 0i) | $$ \\le $$ 4 ...... (2)<br><br>It represents a circle whose center at ($$-$$ 5, 0) and radius 4. z is inside of the circle.\n<img src=\"https://imagex.cdn.examgoal.net/1km3rg8o4/c418f05f-cdd0-468c-971c-00be9c581260/4abb6a40-81cc-11eb-b851-cf4c8f313b1d/file-1km3rg8o5-487w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 26th February Evening Shift Mathematics - Complex Numbers Question 137 English Explanation\">\n<br><br>From (1) and (2) z is the shaded region of the diagram.<br><br>Now, | z + 1 | = | z $$-$$ ($$-$$1 + 0 i) | = distance of z from ($$-$$1, 0).<br><br>Clearly 'p' is the required position of 'z' when | z + 1 | is maximum.<br><br>$$ \\therefore $$ P $$ \\equiv $$ ($$-$$5 $$-$$ 4 cos45$$^\\circ$$, 0 $$-$$ 4sin45$$^\\circ$$) = ($$-$$5$$-$$2$$\\sqrt 2 $$, $$-$$2$$\\sqrt 2 $$)<br><br>$$ \\therefore $$ (PQ)<sup>2</sup>|<sub>max</sub> = 32 + 16$$\\sqrt 2 $$<br><br>$$ \\Rightarrow $$ $$\\alpha$$ = 32<br><br>$$ \\Rightarrow $$ $$\\beta$$ = 16<br><br>Thus, $$\\alpha$$ + $$\\beta$$ = 48",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 26th February Evening Shift"
+    "title": "JEE Main 2021 (Online) 26th February Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695335",
@@ -826,7 +831,8 @@
     ],
     "solution": "|t $$-$$ 2| $$\\le$$ 1<br><br>Put t = x + iy<br><br><picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks29zpcq/530bb07a-dd67-46e9-a211-e9a9a6af836f/874af7a0-f7c4-11eb-bd75-e1c4006282d9/file-1ks29zpcr-320w.png\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1ks29zpcq/530bb07a-dd67-46e9-a211-e9a9a6af836f/874af7a0-f7c4-11eb-bd75-e1c4006282d9/file-1ks29zpcr-500w.png\"><img src=\"https://imagex.cdn.examgoal.net/1ks29zpcq/530bb07a-dd67-46e9-a211-e9a9a6af836f/874af7a0-f7c4-11eb-bd75-e1c4006282d9/file-1ks29zpcr.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Evening Shift Mathematics - Complex Numbers Question 124 English Explanation\"></picture><br><br>(x $$-$$ 2)<sup>2</sup> + y<sup>2</sup> $$\\le$$ 1<br><br>Also, t(1 + i) + $$\\overline t$$(1 $$-$$ i) $$\\ge$$ 4<br><br>x $$-$$ y $$\\ge$$ 2<br><br>Let point on circle be A(2 + cos$$\\theta$$, sin$$\\theta$$)<br><br>$$\\theta  \\in \\left[ { - {{3\\pi } \\over 4},{\\pi  \\over 4}} \\right]$$<br><br>$${(AP)^2} = {\\left( {2 + \\cos \\theta  - {5 \\over 2}} \\right)^2} + \\sin \\theta $$<br><br>$$ = {\\cos ^2}\\theta  - \\cos \\theta  + {1 \\over 4} + {\\sin ^2}\\theta $$<br><br>$$ = {5 \\over 4} - \\cos \\theta $$<br><br>For (AP)<sup>2</sup> maximum $$\\theta  =  - {{3\\pi } \\over 4}$$<br><br>$${(AP)^2} = {5 \\over 4} + {1 \\over {\\sqrt 2 }} = {{5\\sqrt 2  + 4} \\over {4\\sqrt 2 }}$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th July Evening Shift"
+    "title": "JEE Main 2021 (Online) 27th July Evening Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695336",
@@ -845,7 +851,8 @@
     ],
     "solution": "$${S_1}:|z - 3 - 2i{|^2} = 8$$<br><br>$$|z - 3 - 2i| = 2\\sqrt 2 $$<br><br>$${(x - 3)^2} + {(y - 2)^2} = {(2\\sqrt 2 )^2}$$<br><br>$${S_2}:x \\ge 5$$<br><br>$${S_3}:|z - \\overline z | \\ge 8$$<br><br>$$|2iy| \\ge 8$$<br><br>$$2|y| \\ge 8$$<br><br>$$\\therefore$$ $$y \\ge 4$$, $$y \\le  - 4$$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ks21dkmm/cf45d027-e9ea-42af-8cc1-177969d39125/d6ceece0-f7a2-11eb-92c1-6d24961c245f/file-1ks21dkmn.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th July Morning Shift Mathematics - Complex Numbers Question 122 English Explanation\"><br><br>$$n\\left( {{S_1} \\cap {S_2} \\cap {S_3}} \\right) = 1$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 27th July Morning Shift"
+    "title": "JEE Main 2021 (Online) 27th July Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695337",
@@ -859,7 +866,8 @@
     "options": [],
     "solution": "Let $$z = x + iy$$<br><br>$$\\arg \\left( {{{x - 2 + iy} \\over {x + 2 + iy}}} \\right) = {\\pi  \\over 4}$$<br><br>$$\\arg (x - 2 + iy) - \\arg (x + 2 + iy) = {\\pi  \\over 4}$$<br><br>$${\\tan ^{ - 1}}\\left( {{y \\over {x - 2}}} \\right) - {\\tan ^{ - 1}}\\left( {{y \\over {x + 2}}} \\right) = {\\pi  \\over 4}$$<br><br>$${{{y \\over {x - 2}} - {y \\over {x + 2}}} \\over {1 + \\left( {{y \\over {x - 2}}} \\right).\\left( {{y \\over {x + 2}}} \\right)}} = \\tan {\\pi  \\over 4} = 1$$<br><br>$${{xy + 2y - xy + 2y} \\over {{x^2} - 4 + {y^2}}} = 1$$<br><br>$$4y = {x^2} - 4 + {y^2}$$<br><br>$${x^2} + {y^2} - 4y - 4 = 0$$<br><br>locus is a circle with center (0, 2) &amp; radius = $$2\\sqrt 2 $$<br><br><img src=\"https://imagex.cdn.examgoal.net/1ktyhca6t/e5064306-e9bb-44f8-8fea-1aa8fff2d0ee/91294540-1d46-11ec-8962-a33be0922e13/file-1ktyhca6u.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 31st August Morning Shift Mathematics - Complex Numbers Question 115 English Explanation\"><br><br>min. value = $${(AP)^2} = {(OP - OA)^2}$$<br><br>$$ = {\\left( {9\\sqrt 2  - 2\\sqrt 2 } \\right)^2}$$<br><br>$$ = {\\left( {7\\sqrt 2 } \\right)^2} = 98$$",
     "__v": 0,
-    "title": "JEE Main 2021 (Online) 31st August Morning Shift"
+    "title": "JEE Main 2021 (Online) 31st August Morning Shift",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695338",
@@ -878,7 +886,8 @@
     ],
     "solution": "Given, z = x + iy<br><br>and $$u = {{2z + i} \\over {z - ki}}$$<br><br>$$ = {{2(x + iy) + i} \\over {(x + iy) - ki}}$$<br><br>$$ = {{2x + i(2y + 1)} \\over {x + i(y - k)}} \\times {{x - i(y - k)} \\over {x - i(y - k)}}$$<br><br>$$ = {{2{x^2} + (2y + 1)(y - k) + i(2xy + x - 2xy + 2kx)} \\over {{x^2} + {{(y - k)}^2}}}$$<br><br>Given, <br><br>$${\\mathop{\\rm Re}\\nolimits} (u) + {\\mathop{\\rm Im}\\nolimits} (u) = 1$$<br><br>$$ \\Rightarrow {{2{x^2} + (2y + 1)(y - k)} \\over {{x^2} + {{(y - k)}^2}}} + {{x + 2kx} \\over {{x^2} + {{(y - k)}^2}}} = 1$$<br><br>$$ \\Rightarrow 2{x^2} + (2y + 1)(y - k) + x + 2kx = {x^2} + {(y - k)^2}$$<br><br>This curve intersect the y-axis at point P and Q, so at point P and Q x = 0<br><br>Putting x = 0 at the above equation,<br><br>$$ \\therefore $$ $$(2y + 1)(y - k) = {(y - k)^2}$$<br><br>$$ \\Rightarrow 2{y^2} + y - 2yk - k = {y^2} + {k^2} - 2ky$$<br><br>$$ \\Rightarrow {y^2} + y - (k + {k^2}) = 0$$<br><br>Let roots of this quadratic equation y<sub>1</sub> and y<sub>2</sub><br><br>$$ \\therefore $$ Point P (0, y<sub>1</sub>) and Q (0, y<sub>2</sub>)<br><br>and $${y_{_1}} + {y_2} = 1$$ , $${y_1}{y_2} =  - k - {k^2}$$<br><br>$$ \\therefore $$ $${({y_1} - {y_2})^2} = {({y_1} + {y_2})^2} - 4{y_1}{y_2}$$<br><br>$$ = 1 + 4k + 4{k^2}$$<br><br>$$ \\Rightarrow |{y_1} - {y_2}| = \\sqrt {1 + 4k + 4{k^2}} $$<br><br>Given, PQ = 5<br><br>$$ \\Rightarrow |{y_1} - {y_2}| = 5$$<br><br>$$ \\Rightarrow \\sqrt {1 + 4k + 4{k^2}}  = 5$$<br><br>$$ \\Rightarrow {k^2} + k - 6 = 0$$<br><br>$$ \\Rightarrow k =  - 3,\\,2$$<br><br>So, k = 2 (Given k &gt; 0)",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 4th September Morning Slot"
+    "title": "JEE Main 2020 (Online) 4th September Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695339",
@@ -897,7 +906,8 @@
     ],
     "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kkjollo9/93c72f8b-c92a-49f4-8192-7d5ca34bd672/40115780-62f5-11eb-aba0-150069576dc4/file-1kkjolloa-365w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 5th September Morning Slot Mathematics - Complex Numbers Question 145 English Explanation\">\nLet $$z = x + iy$$<br><br>Length of side = 4<br><br>$$AB = 4$$<br><br>$$|z - \\overline z | = 4$$<br><br>$$|2y|\\, = 4;$$$$ \\Rightarrow $$ $$|y|\\, = 2$$<br><br>$$BC = 4$$<br><br>$$ \\Rightarrow $$ $$|\\overline z  - (\\overline z  - 2{\\mathop{\\rm Re}\\nolimits} (\\overline z )|\\, = 4$$<br><br>$$ \\Rightarrow $$ $$|2x|\\, = 4;\\,$$$$ \\Rightarrow $$ $$|x|\\, = 2$$<br><br>$$ \\therefore $$ $$|z|\\, = \\,\\sqrt {{x^2} + {y^2}}  = \\sqrt {4 + 4}  = 2\\sqrt 2 $$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 5th September Morning Slot"
+    "title": "JEE Main 2020 (Online) 5th September Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769533a",
@@ -916,7 +926,8 @@
     ],
     "solution": "$${\\mathop{\\rm Re}\\nolimits} \\left( {{{z - 1} \\over {2z + i}}} \\right) = 1$$\n<br><br>Put z = x + iy\n<br><br>$$ \\therefore $$ $${\\mathop{\\rm Re}\\nolimits} \\left( {{{\\left( {x + iy} \\right) - 1} \\over {2\\left( {x + iy} \\right) + i}}} \\right) = 1$$\n<br><br>$$ \\Rightarrow $$ $${\\mathop{\\rm Re}\\nolimits} \\left( {\\left( {{{\\left( {x - 1} \\right) + iy} \\over {2x + i\\left( {2y + 1} \\right)}}} \\right)\\left( {{{2x - i\\left( {2y + 1} \\right)} \\over {2x - i\\left( {2y + 1} \\right)}}} \\right)} \\right) = 1$$\n<br><br>$$ \\Rightarrow $$ $${\\mathop{\\rm Re}\\nolimits} \\left( {{{\\left\\{ {\\left( {x - 1} \\right) + iy} \\right\\}\\left\\{ {2x - i\\left( {2y + 1} \\right)} \\right\\}} \\over {4{x^2} + {{\\left( {2y + 1} \\right)}^2}}}} \\right) = 1$$\n<br><br>Real part of this equation is  = 1\n<br><br>$$ \\therefore $$ $${{2x\\left( {x - 1} \\right) + y\\left( {2y + 1} \\right)} \\over {4{x^2} + {{\\left( {2y + 1} \\right)}^2}}}$$ = 1\n<br><br>$$ \\Rightarrow $$ 2x<sup>2</sup> + 2y<sup>2</sup> +2x + 3y + 1 = 0\n<br><br>$$ \\Rightarrow $$ x<sup>2</sup> + y<sup>2</sup> +x + $${3 \\over 2}$$y + $${1 \\over 2}$$ = 0\n<br><br>This is an equation of circle. \n<br><br>$$ \\therefore $$ Locus is a circle whose\n<br><br>center is $$\\left( { - {1 \\over 2}, - {3 \\over 4}} \\right)$$ and radius $${{\\sqrt 5 } \\over 4}$$\n<br><br>$$ \\therefore $$ Diameter = 2 $$ \\times $$ $${{\\sqrt 5 } \\over 4}$$ = $${{\\sqrt 5 } \\over 2}$$",
     "__v": 0,
-    "title": "JEE Main 2020 (Online) 7th January Morning Slot"
+    "title": "JEE Main 2020 (Online) 7th January Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769533b",
@@ -935,7 +946,8 @@
     ],
     "solution": "Let the complex number z = x + iy<br><br>\nNow given | (x + iy) - 1 | = | (x+iy) - i |<br><br>\n$$ \\Rightarrow $$ (x - 1)<sup>2</sup> + y<sup>2</sup> = x<sup>2</sup> + (y - 1)<sup>2</sup><br><br>\n$$ \\Rightarrow $$ x = y<br><br>\n$$ \\therefore $$ the correct answer is option (D)",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 12th April Morning Slot"
+    "title": "JEE Main 2019 (Online) 12th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769533c",
@@ -954,7 +966,8 @@
     ],
     "solution": "Let h + ik = $${{\\alpha  + i} \\over {\\alpha  - i}}$$\n<br><br>= $${{\\left( {\\alpha  + i} \\right)\\left( {\\alpha  + i} \\right)} \\over {\\left( {\\alpha  - i} \\right)\\left( {\\alpha  + i} \\right)}}$$\n<br><br>= $${{\\left( {{\\alpha ^2} - 1} \\right) + 2i\\alpha } \\over {{\\alpha ^2} + 1}}$$\n<br><br>$$ \\therefore $$ h = $${{{\\alpha ^2} - 1} \\over {{\\alpha ^2} + 1}}$$ and k = $${{2\\alpha } \\over {{\\alpha ^2} + 1}}$$\n<br><br>By squaring and adding we get\n<br><br>h<sup>2</sup> + k<sup>2</sup> = 1\n<br><br>$$ \\therefore $$ This is circle whose radius is 1.",
     "__v": 0,
-    "title": "JEE Main 2019 (Online) 9th April Morning Slot"
+    "title": "JEE Main 2019 (Online) 9th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769533d",
@@ -973,7 +986,8 @@
     ],
     "solution": "Given, \n<br><br>2 $$\\,\\left| \\, \\right.$$z + 3i$$\\,\\left| \\, \\right.$$ = $$\\,\\left| \\, \\right.$$z $$-$$i$$\\,\\left| \\, \\right.$$\n<br><br>Let z = x + iy\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 2 $$\\,\\left| \\, \\right.$$ x + iy + 3i $$\\,\\left| \\, \\right.$$ = $$\\,\\left| \\, \\right.$$ x + iy $$-$$ i $$\\,\\left| \\, \\right.$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 2 $$\\,\\left| \\, \\right.$$ x + i (y + 3)$$\\,\\left| \\, \\right.$$ = $$\\,\\left| \\, \\right.$$ x + i (y $$-$$ 1)$$\\,\\left| \\, \\right.$$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 2 $$\\sqrt {{x^2} + {{\\left( {y + 3} \\right)}^2}} $$ = $$\\sqrt {{x^2} + {{\\left( {y - 1} \\right)}^2}} $$\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 4 (x<sup>2</sup> + y<sup>2</sup> + 6y + 9) = x<sup>2</sup> + y<sup>2</sup> $$-$$ 2y + 1\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ 3x<sup>2</sup> + 3y<sup>2</sup> + 26y + 35 = 0\n<br><br>$$ \\Rightarrow $$$$\\,\\,\\,$$ x<sup>2</sup> + y<sup>2</sup> + $${{26} \\over 3}$$ y + $${{35} \\over 3}$$ = 0\n<br><br>This is a equation of circle with center ($$-$$ $${{13} \\over 3}$$, 0) \n<br><br>$$\\therefore\\,\\,\\,$$ Radius = $$\\sqrt {0 + {{169} \\over 9} - {{35} \\over 3}} $$\n<br><br>= $$\\sqrt {{{64} \\over 9}} $$\n<br><br>= $${8 \\over 3}$$",
     "__v": 0,
-    "title": "JEE Main 2017 (Online) 8th April Morning Slot"
+    "title": "JEE Main 2017 (Online) 8th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769533e",
@@ -992,72 +1006,8 @@
     ],
     "solution": "Let z = x + iy\n<br><br>Then, \n<br><br>Im $$\\left( {{{iz - 2} \\over {z - i}}} \\right)$$ + 1 = 0\n<br><br>$$ \\Rightarrow $$ $${\\mathop{\\rm Im}\\nolimits} \\left[ {\\left( {{{i\\left( {x + iy} \\right) - 2} \\over {x + iy - i}}} \\right)} \\right] + 1 = 0$$\n<br><br>$$ \\Rightarrow $$$${\\mathop{\\rm Im}\\nolimits} \\left[ {\\left( {{{ix - y - 2} \\over {x + i\\left( {y - 1} \\right)}}} \\right)} \\right] + 1 = 0$$\n<br><br>$$ \\Rightarrow $$$${\\mathop{\\rm Im}\\nolimits} \\left[ {\\left( {{{ix - y - 2} \\over {x + i\\left( {y - 1} \\right)}}} \\right)\\left( {{{x - i\\left( {y - 1} \\right)} \\over {x - i\\left( {y - 1} \\right)}}} \\right)} \\right] + 1 = 0$$\n<br><br>$$ \\Rightarrow $$$${\\mathop{\\rm Im}\\nolimits} \\left[ {\\left( {{\\matrix{\n  i{x^2} - {i^2}x\\left( {y - 1} \\right) - xy +  \\hfill \\cr \n  \\,\\,\\,\\,iy\\left( {y - 1} \\right) - 2x + i2\\left( {y - 1} \\right) \\hfill \\cr}  \\over {{x^2} - {i^2}{{\\left( {y - 1} \\right)}^2}}}} \\right)} \\right] + 1 = 0$$\n<br><br>$$ \\Rightarrow $$ $${\\mathop{\\rm Im}\\nolimits} \\left[ {\\left( {{\\matrix{\n  i{x^2} + x\\left( {y - 1} \\right) - xy \\hfill \\cr \n  \\,\\,\\, - 2x + i\\left( {y - 1} \\right)\\left( {y + 2} \\right) \\hfill \\cr}  \\over {{x^2} + {{\\left( {y - 1} \\right)}^2}}}} \\right)} \\right] + 1 = 0$$\n<br><br>$$ \\Rightarrow $$$${\\mathop{\\rm Im}\\nolimits} \\left[ {\\left( {{\\matrix{\n  x\\left( {y - 1} \\right) - xy\\, - 2x \\hfill \\cr \n  \\,\\, + i\\left[ {\\left( {y - 1} \\right)\\left( {y + 2} \\right) + {x^2}} \\right] \\hfill \\cr}  \\over {{x^2} + {{\\left( {y - 1} \\right)}^2}}}} \\right)} \\right] + 1 = 0$$\n<br><br>$$ \\Rightarrow $$$${{\\left( {y - 1} \\right)\\left( {y + 2} \\right) + {x^2}} \\over {{x^2} + {{\\left( {y - 1} \\right)}^2}}} + 1 = 0$$\n<br><br>$$ \\Rightarrow $$2x<sup>2</sup> + 2y<sup>2</sup> - y - 1 = 0\n <br><br>$$ \\Rightarrow $$x<sup>2</sup> + y<sup>2</sup> - $$\\left( {{1 \\over 2}} \\right)$$y - $$\\left( {{1 \\over 2}} \\right)$$ = 0\n<br><br>$$ \\therefore $$ Center of the circle is $$\\left( {0,{1 \\over 4}} \\right)$$\n<br><br>$$ \\therefore $$ Radius = $$\\sqrt {{0^2} + {{\\left( {{1 \\over 4}} \\right)}^2} + {1 \\over 2}} $$\n<br><br>= $$\\sqrt {{1 \\over {16}} + {1 \\over 2}} $$\n<br><br>= $$\\sqrt {{9 \\over {16}}} $$\n<br><br>= $${{3 \\over 4}}$$",
     "__v": 0,
-    "title": "JEE Main 2017 (Online) 9th April Morning Slot"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b5769533f",
-    "question_id": "ihl0TRCrnfKwMCpA",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "the circle with radius $${{1 \\over {2a}}}$$and centre $$\\left\\{ {{1 \\over {2a}},\\,0} \\right\\}\\,for\\,a &gt; 0\\,,b \\ne \\,0$$",
-      "the circle with radius $$-{{1 \\over {2a}}}$$and centre $$\\left\\{ -{{1 \\over {2a}},\\,0} \\right\\}\\,for\\,a &lt; 0\\,,b \\ne \\,0$$",
-      "the x-axis for $$a \\ne \\,\\,0,\\,b \\ne \\,0$$",
-      "the y-axis for $$a = \\,\\,0,\\,b \\ne \\,0$$"
-    ],
-    "solution": "<p>Here, $$x + iy = {1 \\over {a + ibt}} \\times {{a - ibt} \\over {a - ibt}}$$</p>\n<p>$$\\therefore$$ $$x + iy = {{a - ibt} \\over {{a^2} + {b^2}{t^2}}}$$</p>\n<p>Let a $$\\ne$$ 0, b $$\\ne$$ 0</p>\n<p>$$\\therefore$$ $$x = {a \\over {{a^2} + {b^2}{t^2}}}$$ and $$y = {{ - bt} \\over {{a^2} + {b^2}{t^2}}}$$</p>\n<p>$$ \\Rightarrow {y \\over x} = {{ - bt} \\over a} \\Rightarrow t = {{ay} \\over {bx}}$$</p>\n<p>On putting $$x = {a \\over {{a^2} + {b^2}{t^2}}}$$, we get</p>\n<p>$$x\\left( {{a^2} + {b^2}\\,.\\,{{{a^2}{y^2}} \\over {{b^2}{x^2}}}} \\right) = a$$</p>\n<p>$$ \\Rightarrow {a^2}({x^2} + {y^2}) = ax$$</p>\n<p>or, $${x^2} + {y^2} - {x \\over a} = 0$$ ...... (i)</p>\n<p>or, $${\\left( {x - {1 \\over {2a}}} \\right)^2} + {y^2} = {1 \\over {4{a^2}}}$$</p>\n<p>$$\\therefore$$ Option (a) is correct.</p>\n<p>For a $$\\ne$$ 0 and b = 0,</p>\n<p>$$x + iy = {1 \\over a} \\Rightarrow x = {1 \\over a},\\,y = 0$$</p>\n<p>$$\\Rightarrow$$ z lies on X-axis.</p>\n<p>$$\\therefore$$ Option (c) is correct.</p>\n<p>For a = 0 and b $$\\ne$$ 0,</p>\n<p>$$x + iy = {1 \\over {ibt}}$$</p>\n<p>$$ \\Rightarrow x = 0,\\,y =  - {1 \\over {bt}}$$</p>\n<p>$$\\Rightarrow$$ z lies on Y-axis.</p>\n<p>$$\\therefore$$ Option (d) is correct.</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2016 Paper 2 Offline",
-    "type": "MULTIPLE_CORRECT",
-    "correctOptionsArray": [
-      0,
-      2,
-      3
-    ],
-    "correctOptionIndex": 0,
-    "correctOption": 0
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b57695340",
-    "question_id": "eUDGT101pGJLol0F",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$${1 \\over {\\sqrt 2 }}$$ ",
-      "$${1 \\over 2}\\,$$ ",
-      "$${1 \\over {\\sqrt 7 }}$$ ",
-      "$${1 \\over 3}$$ "
-    ],
-    "solution": "<p>If $$z=x+i y$$, then $$\\left(x-x_0\\right)^2+\\left(y-y_0\\right)^2=r^2$$ and $$\\left(x-x_0\\right)^2+\\left(y-y_0\\right)^2=4 r^2$$ can be written as $$\\left|Z-Z_0\\right|^2=r^2$$ and $$\\left|Z-Z_0\\right|^2=4 r^2$$ respectively where, $$\\mathrm{Z}_0=x_0+i y_0$$ (given)</p> <p>$$\\Rightarrow\\left|Z-Z_0\\right|^2=r^2$$ and $$\\left|Z-Z_0\\right|^2=4 r^2$$</p> <p>$$\\Rightarrow\\left(Z-Z_0\\right)\\left(\\bar{Z}-\\bar{Z}_0\\right)=r^2$$ and $$\\left(Z-Z_0\\right)\\left(\\bar{Z}-\\bar{Z}_0\\right)=4 r^2\\left(|Z|^2=Z \\bar{Z}\\right)$$</p>\n<p>$$\\begin{aligned}\n& \\text { Given, } \\alpha \\text { and } \\frac{1}{\\bar{\\alpha}} \\text { line on circles }\\left(x-x_0\\right)^2+\\left(y-y_0\\right)^2 \\\\\n& =r^2 \\text { and }\\left(x-x_0\\right)^2+\\left(y-y_0\\right)^2=4 r^2 \\text { respectively } \\\\\n& \\begin{array}{l}\n\\therefore \\quad\\left(\\alpha-Z_0\\right)\\left(\\bar{\\alpha}-\\bar{Z}_0\\right)=r^2 \\text { and } \\\\\n\\quad\\left(\\frac{1}{\\bar{\\alpha}}-Z_0\\right)\\left(\\frac{1}{\\alpha}-\\bar{Z}_0\\right)=4 r^2\n\\end{array}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow & |\\alpha|^2-\\alpha \\bar{Z}_0-\\bar{\\alpha} Z_0+\\left|Z_0\\right|^2=r^2 \\text { and } \\\\\n& \\frac{1}{|\\alpha|^2}-\\frac{1}{\\bar{\\alpha}} \\bar{Z}_0-\\frac{1}{\\alpha} Z_0+\\left|\\bar{Z}_0\\right|^2=4 r^2 \\\\\n\\Rightarrow & \\alpha Z_0+\\bar{\\alpha} Z_0=|\\alpha|^2+\\left|Z_0\\right|^2-r^2 \\text { and } \\\\\n& \\frac{\\alpha \\bar{Z}_0}{|\\alpha|^2}+\\frac{\\bar{\\alpha} Z_0}{|\\alpha|^2}=\\frac{1}{|\\alpha|^2}+\\left|Z_0\\right|^2-4 r^2 \\\\\n\\Rightarrow & \\alpha \\bar{Z}_0+\\bar{\\alpha} Z_0=|\\alpha|^2+\\left|Z_0\\right|^2-r^2 =|\\alpha|^2\\left(\\frac{1}{\\left|\\alpha^2\\right|}+\\left|Z_0^2\\right|-4 r^2\\right)\n\\end{aligned}$$</p>\n<p>$$\\Rightarrow|\\alpha|^2+\\left|Z_0\\right|^2-r^2=1+|\\alpha|^2\\left|Z_0\\right|^2-4|\\alpha|^2 r^2 \\quad\\text{... (i)}$$</p>\n<p>Given, $$2\\left|Z_0\\right|^2=r^2+2$$</p>\n<p>Put $$\\left|Z_0\\right|^2=\\frac{r^2}{2}+1$$ in the equation (i)</p>\n<p>$$\\begin{aligned}\n& \\Rightarrow|\\alpha|^2+\\frac{r^2}{2}+1-r^2=1+|\\alpha|^2\\left(\\frac{r^2}{2}+1\\right)-4|\\alpha|^2 r^2 \\\\\n& \\Rightarrow|\\alpha|^2-\\frac{r^2}{2}=\\frac{1}{2}|\\alpha|^2 r^2+|\\alpha|^2-4|\\alpha|^2 r^2\n\\end{aligned}$$</p>\n<p>$$\\begin{array}{ll}\n\\Rightarrow & -\\frac{r^2}{2}=\\frac{1}{2}|\\alpha|^2 r^2-4|\\alpha|^2 r^2 \\\\\n\\Rightarrow & -\\frac{1}{2}=\\frac{1}{2}(\\alpha)^2-4|\\alpha|^2 \\\\\n\\Rightarrow & \\frac{-1}{2}=-\\frac{7}{2}|\\alpha|^2 \\\\\n\\Rightarrow & |\\alpha|^2=\\frac{1}{7} \\\\\n\\Rightarrow & |\\alpha|=\\frac{1}{\\sqrt{7}}\n\\end{array}$$</p>\n<p>Hints :</p>\n<p>(i) Apply the property $$Z \\cdot \\bar{Z}=|\\bar{Z}|^2$$</p>\n<p>(ii) If $$Z=(x+i y)$$ and $$Z_0=\\left(x_0+i y_0\\right)$$ then $$\\left(x-x_0\\right)^2+\\left(y-y_0\\right)^2=r^2$$ and $$\\left(x-x_0\\right)^2+ \\left(y-y_0\\right)^2=4 r^2$$ can be written as $$\\left|Z-Z_0\\right|^2=r^2$$ and $$\\left|Z-Z_0\\right|^2=4 r^2$$ respectively.</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2013 Paper 1 Offline"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b57695341",
-    "question_id": "ZycKqWsm9LEf7qWK",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$${{10\\pi } \\over 3}$$ ",
-      "$${{20\\pi } \\over 3}$$ ",
-      "$${{16\\pi } \\over 3}$$ ",
-      "$${{32\\pi } \\over 3}$$ "
-    ],
-    "solution": "<p>Given, $$S_1=\\{z \\in C:|z|&lt;4\\}$$ i.e. $$S_1$$ lies inside the circle of centre $$(0,0)$$ and radius 4.</p>\n<p>Given, $$S_3=\\{z \\in C: \\operatorname{Re}(z)&gt;0\\}$$ i.e. $$S_3$$ lies right side of the line $$x=0$$.</p>\n<p>Also given $$S_2=\\left\\{z \\in C: \\operatorname{Im}\\left(\\frac{z-1+\\sqrt{3} i}{1-\\sqrt{3} i}\\right)&gt;0\\right\\}$$</p>\n<p>Put $$z=x+i y$$ in $$\\operatorname{Im}\\left(\\frac{z-1+\\sqrt{3} i}{1-\\sqrt{3} i}\\right)&gt;0$$</p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow \\operatorname{Im}\\left(\\frac{x-1+i(y+\\sqrt{3})}{1-\\sqrt{3} i}\\right)&gt;0 \\\\\n&amp; \\Rightarrow \\operatorname{Im}\\left(\\frac{(x-1)+i(y+\\sqrt{3})}{1-\\sqrt{3} i} \\times \\frac{1+\\sqrt{3} i}{1+\\sqrt{3} i}\\right)&gt;0 \\\\\n&amp; \\Rightarrow \\operatorname{Im}\\left[\\begin{array}{l}\n\\frac{(x-1)-\\sqrt{3}(y+\\sqrt{3})}{4}+ \\\\\ni\\left(\\frac{\\sqrt{3}(x-1)+(y+\\sqrt{3})}{4}\\right)\n\\end{array}\\right]&gt;0 \\\\\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\Rightarrow \\quad \\frac{\\sqrt{3} x+y}{4}&gt;0 \\\\\n&amp; \\Rightarrow \\sqrt{3} x+y&gt;0\n\\end{aligned}$$</p>\n<p>$$\\text { So, } S_2 \\text { lies above the line } \\sqrt{3} x+y=0$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzrzkn2d/1ad4a0b5-51be-4ea7-9dbc-ed10f4624924/77464f50-5935-11ef-ae84-3be1ebc4694b/file-jaoe38c1lzrzkn2e.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzrzkn2d/1ad4a0b5-51be-4ea7-9dbc-ed10f4624924/77464f50-5935-11ef-ae84-3be1ebc4694b/file-jaoe38c1lzrzkn2e.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 2 Offline Mathematics - Complex Numbers Question 32 English Explanation 1\"></p>\n<p>$$\\text { Given, } S=S_1 \\cap S_2 \\cap S_3$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1lzrzu1yj/e6b0a6cf-d815-4900-beb2-b442f6ab418c/7d0fd3b0-5936-11ef-ae84-3be1ebc4694b/file-jaoe38c1lzrzu1yk.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1lzrzu1yj/e6b0a6cf-d815-4900-beb2-b442f6ab418c/7d0fd3b0-5936-11ef-ae84-3be1ebc4694b/file-jaoe38c1lzrzu1yk.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Advanced 2013 Paper 2 Offline Mathematics - Complex Numbers Question 32 English Explanation 2\"></p>\n<p>Here, $$\\angle \\mathrm{AOC}=\\frac{\\pi}{2}+\\frac{\\pi}{3}=\\frac{5 \\pi}{6}$$</p>\n<p>Area of $$S=\\frac{1}{2}\\left(\\frac{5 \\pi}{6}\\right) \\cdot 4^2=\\frac{20 \\pi}{3}$$ Sq. Units</p>\n<p>Hints:</p>\n<p>(i) $$|z| &lt; a$$ implies $$z$$ lies inside the circle of centre $$(0,0)$$ and radius $$a$$</p>\n<p>(ii) $$\\operatorname{Re}(z)&gt;0$$ implies $$z$$ lies on the right side of the line $$x=0$$ i.e. $$y$$-axis.</p>\n<p>(iii) Put $$z=x+i y$$ in the expression $$\\operatorname{Im}\\left(\\frac{z-1+\\sqrt{3} i}{1-\\sqrt{3} i}\\right)&gt;0$$</p>\n<p>(iv) If a circular arc $$A B$$ form $$\\theta$$ angle at the centre of circle of radius R, then the area of this circular section is $$\\frac{1}{2} \\theta \\cdot r^2$$</p>",
-    "__v": 0,
-    "title": "JEE Advanced 2013 Paper 2 Offline"
+    "title": "JEE Main 2017 (Online) 9th April Morning Slot",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695342",
@@ -1076,7 +1026,8 @@
     ],
     "solution": "Let $$z = x + iy$$ \n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,{z^2} = {x^2} - {y^2} + 2ixy$$\n<br><br>Now $${{{z^2}} \\over {z - 1}}$$ is real \n<br><br>$$ \\Rightarrow {\\mathop{\\rm Im}\\nolimits} \\left( {{{{z^2}} \\over {z - 1}}} \\right) = 0$$\n<br><br>$$ \\Rightarrow {\\mathop{\\rm Im}\\nolimits} \\left( {{{{x^2} - {y^2} + 2ixy} \\over {\\left( {x - 1} \\right) + iy}}} \\right) = 0$$\n<br><br>$$ \\Rightarrow {\\mathop{\\rm Im}\\nolimits} \\left[ {\\left( {{x^2} - {y^2} + 2ixy} \\right)\\left. {\\left( {x - 1} \\right) - iy} \\right)} \\right] = 0$$\n<br><br>$$ \\Rightarrow 2xy\\left( {x - 1} \\right) - y\\left( {{x^2} - {y^2}} \\right) = 0$$\n<br><br>$$ \\Rightarrow y\\left( {{x^2} + {y^2} - 2x} \\right) = 0$$\n<br><br>$$ \\Rightarrow y = 0;\\,{x^2} + {y^2} - 2x = 0$$\n<br><br>$$\\therefore$$ $$\\,\\,\\,\\,$$ $$z$$ lies either on real axis or on a circle through origin.",
     "__v": 0,
-    "title": "AIEEE 2012"
+    "title": "AIEEE 2012",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695343",
@@ -1095,140 +1046,8 @@
     ],
     "solution": "As real part of roots is $$1$$\n<br><br>Let roots are $$1 + pi,1 + q$$\n<br><br>$$\\therefore$$ sum of roots $$ = 1 + pi + 1 + qi =  - \\alpha $$\n<br><br>which is real $$ \\Rightarrow q =  - p\\,\\,$$\n<br><br>or root are $$1+pi$$ and $$1-pi$$ \n<br><br>product of roots $$ = 1 + {p^2} = \\beta  \\in \\left( {1,\\infty } \\right)$$\n<br><br>$$p \\ne 0$$ as roots are distinct.",
     "__v": 0,
-    "title": "AIEEE 2011"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b57695344",
-    "question_id": "qZzlM8sTUZqCyY7a",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "(A) - q, s ; (B) - p ; (C) - p, t ; (D) - q, r, s, t",
-      "(A) - q, r ; (B) - p ; (C) - p, s, t ; (D) - q, r, s, t",
-      "(A) - p, r ; (B) - p ; (C) - p, t ; (D) -q, r, s, t",
-      "(A) - p ; (B) - q ; (C) - r, s ; (D) -q, r, s, t"
-    ],
-    "solution": "<p>(A) z is equidistant from the points $$i|z|$$ and $$ - i|z|$$, whose perpendicular bisector is $${\\mathop{\\rm Im}\\nolimits} (z) = 0$$.</p>\n<p>(B) Sum of distance of z from (4, 0) and ($$-$$4, 0) is a constant 10, hence locus of z is ellipse with semi-major axis 5 and focus at ($$\\pm$$ 4, 0), ae = 4.</p>\n<p>$$\\therefore$$ $$e = {4 \\over 5}$$</p>\n<p>(C) $$|z| \\le |w| + \\left| {{1 \\over w}} \\right| = {5 \\over 2} < 3$$</p>\n<p>(D) $$|z| \\le |w| + \\left| {{1 \\over w}} \\right| = 2$$</p>\n<p>$$\\therefore$$ $${\\mathop{\\rm Re}\\nolimits} (z) \\le |z| \\le 2$$</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2010 Paper 2 Offline"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b57695345",
-    "question_id": "qZzlM8sTUZqCyY7a",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "(A) - q, s ; (B) - p ; (C) - p, t ; (D) - q, r, s, t",
-      "(A) - q, r ; (B) - p ; (C) - p, s, t ; (D) - q, r, s, t",
-      "(A) - p, r ; (B) - p ; (C) - p, t ; (D) -q, r, s, t",
-      "(A) - p ; (B) - q ; (C) - r, s ; (D) -q, r, s, t"
-    ],
-    "solution": "<p>(A) z is equidistant from the points $$i|z|$$ and $$ - i|z|$$, whose perpendicular bisector is $${\\mathop{\\rm Im}\\nolimits} (z) = 0$$.</p>\n<p>(B) Sum of distance of z from (4, 0) and ($$-$$4, 0) is a constant 10, hence locus of z is ellipse with semi-major axis 5 and focus at ($$\\pm$$ 4, 0), ae = 4.</p>\n<p>$$\\therefore$$ $$e = {4 \\over 5}$$</p>\n<p>(C) $$|z| \\le |w| + \\left| {{1 \\over w}} \\right| = {5 \\over 2} < 3$$</p>\n<p>(D) $$|z| \\le |w| + \\left| {{1 \\over w}} \\right| = 2$$</p>\n<p>$$\\therefore$$ $${\\mathop{\\rm Re}\\nolimits} (z) \\le |z| \\le 2$$</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2010 Paper 2 Offline"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b57695346",
-    "question_id": "9w8vsVSODzZ4a5og",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "0 ",
-      "1 ",
-      "2",
-      "$$\\infty $$ "
-    ],
-    "solution": "<p>In the Cartesian coordinates sets A, B and C defined the regions given by</p>\n<p>$$A:y\\ge1,B:(x-2)+(y-1)^2=9$$</p>\n<p>B and C being a circle and a straight line intersect in two points, out of which only one satisfies $$y > -1$$.</p>\n<p>Thus, the no. of elements in the set A $$\\cap$$ B $$\\cap$$ C is 1.</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2008 Paper 1 Offline"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b57695347",
-    "question_id": "KE1fEXiov3j0vBfn",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "25 and 29",
-      "30 and 34",
-      "35 and 39",
-      "40 and 44"
-    ],
-    "solution": "<p>$$|z + 1 - i{|^2} + |z - 5 - i{|^2}$$</p>\n<p>The points ($$-1,1$$) and (5, 1) are the extremities of the diameter of the given circle of radius 3</p>\n<p>Hence, PA$$^2$$ + PB$$^2$$ = AB$$^2$$ = 36</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2008 Paper 1 Offline"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b57695348",
-    "question_id": "vFgKCRU7NBR2veIj",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "hard",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "- 6 and 3",
-      "- 3 and 6",
-      "- 6 and 6",
-      "- 3 and 9"
-    ],
-    "solution": "<p>Since, $$|w - (2 + i)| < 3$$</p>\n<p>$$|w| - |2 + i| < 3$$</p>\n<p>$$ - 3 + \\sqrt 5  < |w| < 3 + \\sqrt 5 $$</p>\n<p>$$ - 3 - \\sqrt 5  < |w| < 3 - \\sqrt 5 $$</p>\n<p>Also, $$|z - (2 + i)| = 3$$</p>\n<p>$$ - 3 + \\sqrt 5  \\le |z| \\le 3 + \\sqrt 5 $$</p>\n<p>$$\\therefore$$ $$ - 3 < |z| - |w| + 3 < 9$$</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2008 Paper 1 Offline"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b57695349",
-    "question_id": "5dnw1uFD2TQzDHiu",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "6 + 7i",
-      "-7 + 6i",
-      "7 + 6i",
-      "- 6 + 7i"
-    ],
-    "solution": "<p>given $$-$$ $$\\alpha$$ particle</p>\n<p>In the direction of, or, Now rotation about origin through angle of means multiply by</p>\n<p>$${z_0} = 1 + 2i = (1,2) = ({x_0},{y_0})$$</p>\n<p>$${z_1} = ({x_0} + 5,{y_0} + 3)$$</p>\n<p>$$ = (6,5) = 6 + 5i$$</p>\n<p>$$\\Rightarrow 2$$ in the direction of $$i = j$$</p>\n<p>$${x_1} = 2\\cos 45^\\circ $$</p>\n<p>$${y_1} = 2\\sin 45^\\circ $$</p>\n<p>$${z_2}(7 + 6i)$$</p>\n<p>Now, rotation about origin through an angle of 2$$\\pi$$ means multiply z$$_2$$ by $$ \\to {e^{i\\pi /2}}$$</p>\n<p>$$\\cos 90^\\circ  + i\\sin 90^\\circ  = i$$</p>\n<p>$${z_3} = i(7 + 6i)$$</p>\n<p>$$ =  - 6 + 7i$$</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2008 Paper 2 Offline"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b5769534a",
-    "question_id": "1lg5919rj",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "Medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "a line not passing through the origin",
-      "$$|z|=\\sqrt{2}$$",
-      "the X-axis",
-      "the Y-axis"
-    ],
-    "solution": "<p>Given, $$|z|=1$$ and $$z \\neq \\pm 1$$</p>\n<p>To find : values of $$\\frac{z}{1-z^{2}}$$ lies on ?</p>\n<p>Any complex number $$z$$ can be written as :</p>\n<p>Since, $$|z|=1$$</p>\n<p>$$z=r(\\cos \\theta+i \\sin \\theta), \\text { where } r=|z|\n$$</p>\n<p>Then, $$z=(\\cos \\theta+i \\sin \\theta)$$</p>\n<p>Consider, $$\\frac{z}{1-z^{2}}$$</p>\n<p>$$\\begin{aligned}& =\\frac{\\cos \\theta+i \\sin \\theta}{1-\\left(\\cos ^{2} \\theta+i^{2} \\sin ^{2} \\theta+2 i \\sin \\theta \\cos \\theta\\right)} \\\\& =\\frac{\\cos \\theta+i \\sin \\theta}{1-\\cos ^{2} \\theta+\\sin ^{2} \\theta-2 i \\sin \\theta \\cos \\theta} \\\\& =\\frac{\\cos \\theta+i \\sin \\theta}{\\sin ^{2} \\theta+\\sin ^{2} \\theta-2 i \\sin \\theta \\cos \\theta} \\\\\n& =\\frac{\\cos \\theta+i \\sin \\theta}{2 \\sin ^{2} \\theta-2 i \\sin \\theta \\cos \\theta} \\\\& =\\frac{\\cos \\theta+i \\sin \\theta}{2 \\sin \\theta(\\sin \\theta-i \\cos \\theta)}\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}& =\\frac{(\\cos \\theta+i \\sin \\theta)(\\sin \\theta+i \\cos \\theta)}{2 \\sin \\theta} \\\\\n& {\\left[\\frac{1}{(\\sin \\theta-i \\cos \\theta)}=\\sin \\theta+i \\cos \\theta\\right]} \\\\& =\\frac{\\sin \\theta \\cos \\theta+i \\cos ^{2} \\theta+i \\sin ^{2} \\theta+i^{2} \\sin \\theta \\cos \\theta}{2 \\sin \\theta} \\\\\n& =\\frac{i\\left(\\cos ^{2} \\theta+\\sin ^{2} \\theta\\right)}{2 \\sin \\theta}=\\frac{i}{2 \\sin \\theta}\\end{aligned}$$</p>\n<p>Thus, $$\\frac{z}{1-z^{2}}$$ lies on the imaginary axis that is the $$\\mathrm{Y}$$-axis in argand plane.</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2007 Paper 2 Offline"
+    "title": "AIEEE 2011",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b5769534b",
@@ -1247,83 +1066,8 @@
     ],
     "solution": "$$z$$ lies on or inside the circle with center $$(-4,0)$$ and radius $$3$$ units. \n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/hZrtkKsmuK1xHgWOu/qutke2wReX6HYKQR27Ulhd6KLQIAO/l4wUEb12mSEZmRZBRxhF1v/image.png\" loading=\"lazy\" alt=\"AIEEE 2007 Mathematics - Complex Numbers Question 192 English Explanation\">\n<br><br>From the Argand diagram maximum value of $$\\left| {z + 1} \\right|$$ is $$6$$ ",
     "__v": 0,
-    "title": "AIEEE 2007"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b5769534c",
-    "question_id": "1lg0jpoof",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "Medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$$3{e^{i\\pi /4}} + 4i$$",
-      "$$(3 - 4i){e^{i\\pi /4}}$$",
-      "$$(4 + 3i){e^{i\\pi /4}}$$",
-      "$$(3 + 4i){e^{i\\pi /4}}$$"
-    ],
-    "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mggpjz9w/c328141d-f524-46d5-bf1f-08b26045b4e3/57e73140-a391-11f0-a089-8f220d161699/file-jaoe38c1mggpjz9x.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mggpjz9w/c328141d-f524-46d5-bf1f-08b26045b4e3/57e73140-a391-11f0-a089-8f220d161699/file-jaoe38c1mggpjz9x.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2007 Paper 1 Offline Mathematics - Complex Numbers Question 15 English Explanation\"></p>\n<p>$$\\overrightarrow {OP}  = \\overrightarrow {OA}  + \\overrightarrow {OP} $$</p>\n<p>$$\\overrightarrow {OP}  = \\overrightarrow {OA}  + \\overrightarrow {OB} $$</p>\n<p>$$\\overrightarrow {OP}  = 3{e^{{{i\\pi } \\over 4}}} + 4{e^{i\\left( {{\\pi  \\over 2} + {\\pi  \\over 4}} \\right)}}$$</p>\n<p>$$ = 3{e^{{{i\\pi } \\over 4}}} + 4{e^{{{i\\pi } \\over 2}}}.\\,{e^{{{i\\pi } \\over 4}}}$$</p>\n<p>$$ = 3{e^{{{i\\pi } \\over 4}}} + 4i{e^{{{i\\pi } \\over 4}}}$$</p>\n<p>$$ = {e^{{{i\\pi } \\over 4}}}(3 + 4i)$$</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2007 Paper 1 Offline"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b5769534d",
-    "question_id": "mguoq6mv",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "Medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "<p>0.75</p>\n",
-      "<p>1.25</p>\n",
-      "<p>1</p>\n",
-      "<p>0.5</p>"
-    ],
-    "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mgw1c9jc/b3f08a72-246f-408a-91bd-bb842747d34e/30a5d570-abff-11f0-9a87-0b9e04185c83/file-jaoe38c1mgw1c9jd.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mgw1c9jc/b3f08a72-246f-408a-91bd-bb842747d34e/30a5d570-abff-11f0-9a87-0b9e04185c83/file-jaoe38c1mgw1c9jd.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2006 Mathematics - Complex Numbers Question 4 English Explanation\"></p>\n<p>Here, equation of $C_2:(x-1)^2+(y-1)^2=(\\sqrt{2})^2$ and $C_1:(x-1)^2+(y-1)^2=(1)^2$</p>\n<p>$\\begin{aligned} &amp; \\therefore P(1+\\cos \\theta, 1+\\sin \\theta) \\text { and } Q(1+\\sqrt{2} \\sin \\theta, 1+\\sqrt{2} \\sin \\theta) \\\\\\\\ &amp; \\therefore P A^2+P B^2+P C^2+P D^2\\end{aligned}$</p>\n<p>$\\begin{aligned}=\\{(1 &amp; \\left.+\\cos \\theta)^2+(1+\\sin \\theta)^2\\right\\} +\\left\\{(\\cos \\theta-1)^2+(1+\\sin \\theta)^2\\right\\}  +\\left\\{(1+\\cos \\theta)^2+(1-\\sin \\theta)^2\\right\\} +\\left\\{(1-\\cos \\theta)^2+(1-\\sin \\theta)^2\\right\\} \\\\\\\\ =16 &amp; \\end{aligned}$</p>\n<p>Similarly,</p>\n<p>$$ \\begin{array}{ll} Q A^2+Q B^2+Q C^2+Q D^2 &amp; =12 \\\\ \\therefore \\frac{\\Sigma Q A^2}{\\Sigma P A^2}=\\frac{12}{16}=0.75 \\end{array} $$</p>\n<p>Hence (a) is the correct answer.</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2006"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b5769534e",
-    "question_id": "1lgfa85cn",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "Medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$$\\left( {1 - 2\\sqrt 3 } \\right) + i,\\left( {1 + \\sqrt 3 } \\right) - i, - \\sqrt 3 i$$",
-      "$$\\left( {1 - \\sqrt 3 } \\right) + i,\\left( {2 + \\sqrt 3 } \\right) - i, -  i$$",
-      "$$\\left( {1 - \\sqrt 3 } \\right) + i,\\left( {1 + 2\\sqrt 3 } \\right) - i, - \\sqrt 5 i$$",
-      "$$\\left( {1 - \\sqrt 3 } \\right) + i,\\left( {1 + \\sqrt 3 } \\right) - i, - \\sqrt 3 i$$"
-    ],
-    "solution": "<p>$$|z-1|=\\sqrt{2}$$</p>\n<p>$$\\Rightarrow(x-1)^{2}+y^{2}=2$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mhdsmvqr/2ecdda5a-1e98-45c4-a801-261cbf88b994/416ba830-b5c3-11f0-9ec4-03fc35f0b3a4/file-jaoe38c1mhdsmvqs.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mhdsmvqr/2ecdda5a-1e98-45c4-a801-261cbf88b994/416ba830-b5c3-11f0-9ec4-03fc35f0b3a4/file-jaoe38c1mhdsmvqs.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2005 Mains Mathematics - Complex Numbers Question 12 English Explanation\"></p>\n<p>$$\\therefore$$ Centre $$=(1,0)$$</p>\n<p>i.e., $$1+i \\cdot 0\\left(\\right.$$ say $$\\left.z_{1}\\right)$$</p>\n<p>$$\\begin{aligned}\nz_{2} &amp; =2+\\sqrt{3} i \\\\\n\\text { radius } &amp; =\\sqrt{2}\n\\end{aligned}$$</p>\n<p>To obtain B, OA is rotated with $$90^{\\circ}$$</p>\n<p>$$\\begin{aligned}\n\\frac{z_{3}-z_{1}}{z_{2}-z_{1}} &amp; =\\left|\\frac{z_{3}-z_{1}}{z_{2}-z_{1}}\\right| e^{i \\pi / 2} \\\\\n\\Rightarrow \\quad \\frac{z_{3}-z_{1}}{z_{2}-z_{1}} &amp; =\\left|\\frac{z_{3}-z_{1}}{z_{2}-z_{1}}\\right|\\left(\\cos \\frac{\\pi}{2}+i \\sin \\frac{\\pi}{2}\\right) \\\\\n\\Rightarrow \\quad \\frac{z_{3}-z_{1}}{z_{2}-z_{1}} &amp; =\\frac{\\mathrm{OB}}{\\mathrm{OA}}(0+i) \\\\\n\\Rightarrow \\quad \\frac{z_{3}-z_{1}}{z_{2}-z_{1}} &amp; =1 . i\\quad \\because (\\mathrm{OA=OB (radius))} \\\\\n\\Rightarrow \\quad\\left(z_{3}-z_{1}\\right) &amp; =i\\left(z_{2}-z_{1}\\right) \\\\\n\\Rightarrow \\quad z_{3}-1 &amp; =i(2+\\sqrt{3} i-1) \\\\\n\\Rightarrow \\quad z_{3} &amp; =1+i+\\sqrt{3} i^{2} \\\\\n&amp; =1-\\sqrt{3}+i\n\\end{aligned}$$</p>\n<p>Similarly, we can calculate Co-ordinate D</p>\n<p>$$\\begin{aligned}\n\\frac{z_{5}-z_{1}}{z_{2}-z_{1}} &amp; =\\left|\\frac{z_{5}-z_{1}}{z_{2}-z_{1}}\\right| e^{i\\left(\\frac{-\\pi}{2}\\right)} \\\\\n&amp; =\\frac{\\mathrm{OD}}{\\mathrm{OA}} \\cos \\left(\\frac{-\\pi}{2}\\right)+i\\left(-\\sin \\frac{\\pi}{2}\\right) \\\\\n&amp; =0-i \\\\\n\\Rightarrow \\quad z_{5}-z_{1} &amp; =\\left(z_{2}-z_{1}\\right)(-i) \\\\\n\\Rightarrow \\quad z_{5} &amp; =z_{1}+(1+i \\sqrt{3})(-i) \\\\\n&amp; =1+(-i)+\\sqrt{3} \\\\\n&amp; =(1+\\sqrt{3})-i\n\\end{aligned}$$</p>\n<p>Similarly, we can calculate co-ordinate C</p>\n<p>$$\\begin{aligned}\n\\frac{z_{4}-z_{1}}{z_{2}-z_{1}} &amp; =\\left|\\frac{z_{4}-z_{1}}{z_{2}-z_{1}}\\right| e^{i \\pi} \\\\\n\\Rightarrow \\quad \\frac{z_{4}-z_{1}}{z_{2}-z_{1}} &amp; =\\frac{\\mathrm{OC}}{\\mathrm{OA}}(-1+0)\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad z_{4}-z_{1} &amp; =\\left(z_{2}-z_{1}\\right)(-1) \\\\\n&amp; =(-1)(1+\\sqrt{3} i)=-1-\\sqrt{3} i \\\\\n\\Rightarrow \\quad z_{4} &amp; =z_{1}-1-\\sqrt{3} i \\\\\n&amp; =1-1-\\sqrt{3} i=-\\sqrt{3} i\n\\end{aligned}$$</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2005 Mains"
-  },
-  {
-    "_id": "6a2bdbbd2762cf4b5769534f",
-    "question_id": "1lgfa85cn",
-    "chapterId": "applications-of-complex-numbers-in-coordinate-geometry",
-    "subject": "Mathematics",
-    "topic": "applications-of-complex-numbers-in-coordinate-geometry",
-    "difficulty": "Medium",
-    "marks": 4,
-    "tags": [],
-    "options": [
-      "$$\\left( {1 - 2\\sqrt 3 } \\right) + i,\\left( {1 + \\sqrt 3 } \\right) - i, - \\sqrt 3 i$$",
-      "$$\\left( {1 - \\sqrt 3 } \\right) + i,\\left( {2 + \\sqrt 3 } \\right) - i, -  i$$",
-      "$$\\left( {1 - \\sqrt 3 } \\right) + i,\\left( {1 + 2\\sqrt 3 } \\right) - i, - \\sqrt 5 i$$",
-      "$$\\left( {1 - \\sqrt 3 } \\right) + i,\\left( {1 + \\sqrt 3 } \\right) - i, - \\sqrt 3 i$$"
-    ],
-    "solution": "<p>$$|z-1|=\\sqrt{2}$$</p>\n<p>$$\\Rightarrow(x-1)^{2}+y^{2}=2$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mhdsmvqr/2ecdda5a-1e98-45c4-a801-261cbf88b994/416ba830-b5c3-11f0-9ec4-03fc35f0b3a4/file-jaoe38c1mhdsmvqs.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mhdsmvqr/2ecdda5a-1e98-45c4-a801-261cbf88b994/416ba830-b5c3-11f0-9ec4-03fc35f0b3a4/file-jaoe38c1mhdsmvqs.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"IIT-JEE 2005 Mains Mathematics - Complex Numbers Question 12 English Explanation\"></p>\n<p>$$\\therefore$$ Centre $$=(1,0)$$</p>\n<p>i.e., $$1+i \\cdot 0\\left(\\right.$$ say $$\\left.z_{1}\\right)$$</p>\n<p>$$\\begin{aligned}\nz_{2} &amp; =2+\\sqrt{3} i \\\\\n\\text { radius } &amp; =\\sqrt{2}\n\\end{aligned}$$</p>\n<p>To obtain B, OA is rotated with $$90^{\\circ}$$</p>\n<p>$$\\begin{aligned}\n\\frac{z_{3}-z_{1}}{z_{2}-z_{1}} &amp; =\\left|\\frac{z_{3}-z_{1}}{z_{2}-z_{1}}\\right| e^{i \\pi / 2} \\\\\n\\Rightarrow \\quad \\frac{z_{3}-z_{1}}{z_{2}-z_{1}} &amp; =\\left|\\frac{z_{3}-z_{1}}{z_{2}-z_{1}}\\right|\\left(\\cos \\frac{\\pi}{2}+i \\sin \\frac{\\pi}{2}\\right) \\\\\n\\Rightarrow \\quad \\frac{z_{3}-z_{1}}{z_{2}-z_{1}} &amp; =\\frac{\\mathrm{OB}}{\\mathrm{OA}}(0+i) \\\\\n\\Rightarrow \\quad \\frac{z_{3}-z_{1}}{z_{2}-z_{1}} &amp; =1 . i\\quad \\because (\\mathrm{OA=OB (radius))} \\\\\n\\Rightarrow \\quad\\left(z_{3}-z_{1}\\right) &amp; =i\\left(z_{2}-z_{1}\\right) \\\\\n\\Rightarrow \\quad z_{3}-1 &amp; =i(2+\\sqrt{3} i-1) \\\\\n\\Rightarrow \\quad z_{3} &amp; =1+i+\\sqrt{3} i^{2} \\\\\n&amp; =1-\\sqrt{3}+i\n\\end{aligned}$$</p>\n<p>Similarly, we can calculate Co-ordinate D</p>\n<p>$$\\begin{aligned}\n\\frac{z_{5}-z_{1}}{z_{2}-z_{1}} &amp; =\\left|\\frac{z_{5}-z_{1}}{z_{2}-z_{1}}\\right| e^{i\\left(\\frac{-\\pi}{2}\\right)} \\\\\n&amp; =\\frac{\\mathrm{OD}}{\\mathrm{OA}} \\cos \\left(\\frac{-\\pi}{2}\\right)+i\\left(-\\sin \\frac{\\pi}{2}\\right) \\\\\n&amp; =0-i \\\\\n\\Rightarrow \\quad z_{5}-z_{1} &amp; =\\left(z_{2}-z_{1}\\right)(-i) \\\\\n\\Rightarrow \\quad z_{5} &amp; =z_{1}+(1+i \\sqrt{3})(-i) \\\\\n&amp; =1+(-i)+\\sqrt{3} \\\\\n&amp; =(1+\\sqrt{3})-i\n\\end{aligned}$$</p>\n<p>Similarly, we can calculate co-ordinate C</p>\n<p>$$\\begin{aligned}\n\\frac{z_{4}-z_{1}}{z_{2}-z_{1}} &amp; =\\left|\\frac{z_{4}-z_{1}}{z_{2}-z_{1}}\\right| e^{i \\pi} \\\\\n\\Rightarrow \\quad \\frac{z_{4}-z_{1}}{z_{2}-z_{1}} &amp; =\\frac{\\mathrm{OC}}{\\mathrm{OA}}(-1+0)\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n\\Rightarrow \\quad z_{4}-z_{1} &amp; =\\left(z_{2}-z_{1}\\right)(-1) \\\\\n&amp; =(-1)(1+\\sqrt{3} i)=-1-\\sqrt{3} i \\\\\n\\Rightarrow \\quad z_{4} &amp; =z_{1}-1-\\sqrt{3} i \\\\\n&amp; =1-1-\\sqrt{3} i=-\\sqrt{3} i\n\\end{aligned}$$</p>",
-    "__v": 0,
-    "title": "IIT-JEE 2005 Mains"
+    "title": "AIEEE 2007",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695350",
@@ -1342,7 +1086,8 @@
     ],
     "solution": "Given quadratic equation,\n<br>$${Z^2} + aZ + b = 0$$\n<br>and two roots are $${Z_1}$$ and $${Z_2}$$.\n<br><br>$$\\therefore$$ $${Z_1}$$ + $${Z_2}$$ = $$-a$$ and $${Z_1}$$$${Z_2}$$ = $$b$$\n<br><br>Question says,\n<br>There are three complex numbers:\n<br>1. Origin (0)\n<br>2. $${Z_1}$$\n<br>3. $${Z_2}$$\n<br>and they form an equilateral triangle. So They are the vertices of the triangle.\n<br><br>[ <b>Important Point :</b> If $${Z_1}$$, $${Z_2}$$ and $${Z_3}$$ are the vertices of an equilateral triangle then -\n<br>$$Z_1^2$$ + $$Z_2^2$$ + $$Z_3^2$$ = $${Z_1}{Z_2}$$ + $${Z_2}{Z_3}$$ + $${Z_3}{Z_1}$$ ]\n<br><br>In this question,\n<br>$${Z_1}$$ = 0, $${Z_2}$$ = $${Z_1}$$ and $${Z_3}$$ = $${Z_2}$$\n<br><br>By putting those values in the equation we get,\n<br><br>$${0^2}$$ + $$Z_1^2$$ + $$Z_2^2$$ = $$0$$ + $${Z_1}{Z_2}$$ + 0\n<br><br>$$ \\Rightarrow $$ $$Z_1^2$$ + $$Z_2^2$$ = $${Z_1}{Z_2}$$\n<br><br>$$ \\Rightarrow $$ $$Z_1^2$$ + $$Z_2^2$$ = $$b$$  [ as $${Z_1}$$$${Z_2}$$ = $$b$$ ]\n<br><br>$$ \\Rightarrow $$ $${\\left( {{Z_1} + {Z_2}} \\right)^2}$$ - $$2{Z_1}{Z_2}$$ = $$b$$\n<br><br>$$ \\Rightarrow $$ $${\\left( {{Z_1} + {Z_2}} \\right)^2}$$ - $$2b$$ = $$b$$\n<br><br>$$ \\Rightarrow $$ $${\\left( {{Z_1} + {Z_2}} \\right)^2}$$ = $$3b$$\n<br><br>$$ \\Rightarrow $$ $${\\left( { - a} \\right)^2}$$ = $$3b$$\n<br><br>$$ \\Rightarrow $$ $${a^2}$$ = $$3b$$\n<br><br>So Option (D) is correct.\n<br><br>[ <b>Note :</b> This question is asked to check if you know the following formula -\n<br><br>\"If $${Z_1}$$, $${Z_2}$$ and $${Z_3}$$ are the vertices of an equilateral triangle then -\n<br>$$Z_1^2$$ + $$Z_2^2$$ + $$Z_3^2$$ = $${Z_1}{Z_2}$$ + $${Z_2}{Z_3}$$ + $${Z_3}{Z_1}$$\" ]",
     "__v": 0,
-    "title": "AIEEE 2003"
+    "title": "AIEEE 2003",
+    "exam": "JEE Main"
   },
   {
     "_id": "6a2bdbbd2762cf4b57695351",
@@ -1361,6 +1106,7 @@
     ],
     "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/cS1KrBX6koN0z3rNq/sQymFSayicc7wEOwWztOZxCuaA3Um/UIKVCPGcJb9eHTXL91fn96/image.png\" loading=\"lazy\" alt=\"AIEEE 2002 Mathematics - Complex Numbers Question 204 English Explanation\">\nLet the circle be $$\\left| {z - {z_3}} \\right| = r.$$ \n<br><br>Then according to given conditions \n<br><br>$$\\left| {{z_3} - {z_1}} \\right| = r + a$$ (Shown in the image)\n<br><br>and $$\\left| {{z_3} - {z_2}} \\right| = r + b.$$ (Shown in the image)\n<br><br>Eliminating $$r,$$ we get \n<br><br>$$\\left| {{z_3} - {z_1}} \\right| - \\left| {{z_3} - {z_2}} \\right| = a - b.$$ \n<br><br>$$\\therefore$$ Locus of center $${z_3}$$  is \n<br><br>$$\\left| {z - {z_1}} \\right| - \\left| {z - {z_2}} \\right| = a - b$$ = constant.\n<br><br>Definition of hyperbola says, when difference of distance between two points is constant from a particular point then that particular point will lie on a hyperbola.\n<br><br>Here distance of z<sub>1</sub> from z<sub>3</sub> is = $$r + a$$ and distance of z<sub>2</sub> from z<sub>3</sub> is = $$r + b$$\n<br><br>Now their difference = ($$r + a$$) - ($$r + b$$) = $$a - b$$ = a constant\n<br><br>$$\\therefore$$ Locus of z<sub>3</sub> is a hyperbola.",
     "__v": 0,
-    "title": "AIEEE 2002"
+    "title": "AIEEE 2002",
+    "exam": "JEE Main"
   }
 ]

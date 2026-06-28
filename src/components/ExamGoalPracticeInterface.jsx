@@ -136,6 +136,12 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
   const fixMathJax = (html) => {
     if (!html) return '';
     let fixed = html;
+    if (typeof fixed === 'object') {
+      fixed = fixed.en?.content || fixed.en?.questionText || fixed.en || fixed.content || fixed.questionText || '';
+    }
+    if (typeof fixed !== 'string') {
+      fixed = String(fixed);
+    }
     fixed = fixed.replace(/\\root\s+([a-zA-Z0-9]+)\s+\\of\s+\{([^}]+)\}/g, '\\sqrt[$1]{$2}');
     fixed = fixed.replace(/\\root\s+([a-zA-Z0-9]+)\s+\\of\s+([a-zA-Z0-9]+)/g, '\\sqrt[$1]{$2}');
     return fixed;
@@ -573,7 +579,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                      })()}
                    </div>
                  )}
-                 <TeacherSolution html={currentQuestion.solution} isLight={isLight} correctOptionLabel={(() => {
+                 <TeacherSolution html={currentQuestion.solution || currentQuestion.question?.en?.explanation} isLight={isLight} correctOptionLabel={(() => {
                    const q = currentQuestion;
                    const opts = (q.question?.en?.options && q.question.en.options.length > 0) ? q.question.en.options : (q.options || []);
                    const isNumerical = q.type === 'Numerical Value' || q.type === 'numerical' || q.type === 'NUMERICAL' || q.type === 'integer-value' || q.type === 'Integer' || q.type === 'FIB' || opts.length === 0;

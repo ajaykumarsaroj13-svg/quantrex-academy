@@ -117,7 +117,7 @@
     },
     "solution": "<p>Consider the function</p>\n<p><span class=\"math-tex\">$ y = f(x) = x \\cdot \\frac{\\sin^{-1}x}{\\sqrt{1 - x^2}} + \\ln \\sqrt{1 - x^2} $</span></p>\n<p>Now differentiate <span class=\"math-tex\">$ f(x) $</span> step by step:</p>\n<p><span class=\"math-tex\">$ f'(x) = \\left( \\sin^{-1}x + \\frac{x}{\\sqrt{1 - x^2}} \\right) \\cdot \\sqrt{1 - x^2} + x \\cdot \\sin^{-1}x + \\frac{2x}{2\\sqrt{1 - x^2}} $</span></p>\n<p><span class=\"math-tex\">$ + \\frac{1}{\\sqrt{1 - x^2}} \\cdot \\frac{1}{2\\sqrt{1 - x^2}} \\cdot (-2x) $</span></p>\n<p>After simplification,</p>\n<p><span class=\"math-tex\">$ = \\sqrt{1 - x^2} \\cdot \\sin^{-1}x + x + \\frac{x^2 \\cdot \\sin^{-1}x}{\\sqrt{1 - x^2}} - \\frac{x}{1 - x^2} $</span></p>\n<p>Combining the terms gives</p>\n<p><span class=\"math-tex\">$ f'(x) = \\frac{(1 - x^2)\\sin^{-1}x + x\\sqrt{1 - x^2} + x^2 \\sin^{-1}x - x\\sqrt{1 - x^2}}{(1 - x^2)\\sqrt{1 - x^2}} $</span></p>\n<p><span class=\"math-tex\">$ = \\frac{\\sin^{-1}x}{(1 - x^2)\\sqrt{1 - x^2}} $</span></p>\n<p>Evaluating this derivative at <span class=\"math-tex\">$ x = 0.5 $</span>:</p>\n<p><span class=\"math-tex\">$ f'(0.5) = \\frac{\\sin^{-1}(0.5)}{(1 - 0.25)\\sqrt{1 - 0.25}} = \\frac{\\frac{\\pi}{6}}{\\frac{3}{4} \\cdot \\frac{\\sqrt{3}}{2}} = \\frac{\\pi}{6} \\cdot \\frac{8}{3\\sqrt{3}} = \\frac{4\\pi\\sqrt{3}}{27} $</span></p>\n<p><strong>Therefore, the slope of <span class=\"math-tex\">$ y = f(x) $</span> at <span class=\"math-tex\">$ x = 0.5 $</span> is <span class=\"math-tex\">$\\frac{4\\pi\\sqrt{3}}{27}$</span>.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -241,7 +241,7 @@
     },
     "solution": "<p>Given  </p>\n<p>$$ f(x)=1-\\sqrt[3]{(x-1)^2}=1-(x-1)^{2/3} $$</p>\n<p>We have to check the nature of the function at $x=1$.</p>\n<p>First, find the value of the function at $x=1$:</p>\n<p>$$ f(1)=1-(1-1)^{2/3}=1-0=1 $$</p>\n<p>Now observe that for every real $x$,</p>\n<p>$$ (x-1)^2 \\ge 0 $$</p>\n<p>So,</p>\n<p>$$ \\sqrt[3]{(x-1)^2} \\ge 0 $$</p>\n<p>Therefore,</p>\n<p>$$ f(x)=1-\\sqrt[3]{(x-1)^2} \\le 1 $$</p>\n<p>This means for all $x$,</p>\n<p>$$ f(x)\\le f(1) $$</p>\n<p>Hence, the value at $x=1$ is greater than or equal to the value at every nearby point as well as every real point.</p>\n<p>So, $f(x)$ has a maximum at $x=1$.</p>\n<p>Therefore, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 2: a maximum at } x=1} $$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -365,7 +365,7 @@
     },
     "solution": "<p>Let the length and breadth of the rectangle be $l$ cm and $b$ cm.</p>\n<p>Since the wire of length $20$ cm is bent into a rectangle, its perimeter is $20$ cm.</p>\n<p>So,</p>\n<p>$$ 2(l+b)=20 $$</p>\n<p>$$ l+b=10 $$</p>\n<p>Now, area of the rectangle is</p>\n<p>$$ A=lb $$</p>\n<p>Substitute $b=10-l$:</p>\n<p>$$ A=l(10-l) $$</p>\n<p>$$ A=10l-l^2 $$</p>\n<p>This is a quadratic expression. To find its maximum value, we complete the square:</p>\n<p>$$ A=-(l^2-10l) $$</p>\n<p>$$ A=-\\left(l^2-10l+25-25\\right) $$</p>\n<p>$$ A=-\\left((l-5)^2-25\\right) $$</p>\n<p>$$ A=25-(l-5)^2 $$</p>\n<p>Since $(l-5)^2 \\ge 0$, the maximum value of $A$ is</p>\n<p>$$ A=25 $$</p>\n<p>and this happens when</p>\n<p>$$ l-5=0 \\Rightarrow l=5 $$</p>\n<p>Then,</p>\n<p>$$ b=10-5=5 $$</p>\n<p>So the rectangle is a square.</p>\n<p>Hence, Statement I is correct.</p>\n<p>Now check Statement II:</p>\n<p>The maximum possible area is</p>\n<p>$$ 25 \\text{ cm}^2 $$</p>\n<p>So an area of</p>\n<p>$$ 27 \\text{ cm}^2 $$</p>\n<p>is not possible.</p>\n<p>Hence, Statement II is false.</p>\n<p>Therefore, the correct answer is:</p>\n<p>$$ \\boxed{\\text{Option 1: I only}} $$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -489,7 +489,7 @@
     },
     "solution": "<p>Given</p>\n<p>$$ f(x)=\\frac{1}{x-5}=(x-5)^{-1}, \\qquad x\\neq 5 $$</p>\n<p>We will check both statements one by one.</p>\n<h3>Checking Statement-I</h3>\n<p>To test whether the function is increasing or decreasing, we find the first derivative.</p>\n<p>$$ f'(x)=\\frac{d}{dx}(x-5)^{-1} = -1(x-5)^{-2} = -\\frac{1}{(x-5)^2} $$</p>\n<p>Now, for every $x\\neq 5$,</p>\n<p>$$ (x-5)^2>0 $$</p>\n<p>So,</p>\n<p>$$ f'(x)=-\\frac{1}{(x-5)^2}<0 $$</p>\n<p>Since $f'(x)<0$ for all $x\\neq 5$, the function is decreasing on each interval of its domain:</p>\n<ul>\n<li><p>for $x<5$</p></li>\n<li><p>for $x>5$</p></li>\n</ul>\n<p>So, <strong>Statement-I is correct</strong>.</p>\n\n<h3>Checking Statement-II</h3>\n<p>Now find the second derivative.</p>\n<p>$$ f'(x)=-(x-5)^{-2} $$</p>\n<p>Differentiating again,</p>\n<p>$$ f''(x)= -(-2)(x-5)^{-3} = 2(x-5)^{-3} = \\frac{2}{(x-5)^3} $$</p>\n<p>Now observe:</p>\n<ul>\n<li><p>if $x>5$, then $(x-5)^3>0$, so</p>\n<p>$$   f''(x)>0   $$</p></li>\n<li><p>if $x<5$, then $(x-5)^3<0$, so</p>\n<p>$$   f''(x)<0   $$</p></li>\n</ul>\n<p>Therefore, $f''(x)>0$ is <strong>not true for all $x\\neq 5$</strong>.</p>\n<p>So, <strong>Statement-II is not correct</strong>.</p>\n\n<h3>Final conclusion</h3>\n<ul>\n<li><p>Statement-I is correct</p></li>\n<li><p>Statement-II is not correct</p></li>\n</ul>\n<p>Hence, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 3}} $$</p>\n<p>That is, <strong>Statement-I is correct but Statement-II is not correct.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -613,7 +613,7 @@
     },
     "solution": "<p>Given</p>\n<p>$$ f(x)=\\frac{x^3+128}{x}=x^2+\\frac{128}{x}, \\qquad x\\ne 0 $$</p>\n<p>We will check both statements.</p>\n<p>First, find the derivative:</p>\n<p>$$ f'(x)=\\frac{d}{dx}\\left(x^2+\\frac{128}{x}\\right) =2x-\\frac{128}{x^2} $$</p>\n<p>Now check at $x=4$:</p>\n<p>$$ f(4)=4^2+\\frac{128}{4}=16+32=48 $$</p>\n<p>So at $x=4$, the function value is indeed $48$.</p>\n<p>Now solve $f'(x)=0$:</p>\n<p>$$ 2x-\\frac{128}{x^2}=0 $$</p>\n<p>$$ 2x=\\frac{128}{x^2} $$</p>\n<p>$$ 2x^3=128 $$</p>\n<p>$$ x^3=64 $$</p>\n<p>$$ x=4 $$</p>\n<p>So $x=4$ is a critical point.</p>\n<p>Now check the sign of $f'(x)$ around $x=4$.</p>\n<ul>\n<li>For $x<4$, take $x=3$:</li>\n</ul>\n<p>$$ f'(3)=2(3)-\\frac{128}{9}=6-\\frac{128}{9}<0 $$</p>\n<ul>\n<li>For $x>4$, take $x=5$:</li>\n</ul>\n<p>$$ f'(5)=10-\\frac{128}{25}>0 $$</p>\n<p>So, as $x$ increases through $4$, $f'(x)$ changes from negative to positive, not from positive to negative.</p>\n<p>This means:</p>\n<ul>\n<li><p>$f(x)$ has a minimum at $x=4$</p></li>\n<li><p>minimum value is $48$</p></li>\n</ul>\n<p>Therefore, Statement-I is correct.</p>\n<p>But Statement-II is not correct.</p>\n<p>Hence, the correct option is:</p>\n<p>$$ \\boxed{\\text{Option 3}} $$</p>\n<p>Statement-I is correct but Statement-II is not correct.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14th September 2025",
+    "title": "NDA (II) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025",
@@ -737,7 +737,7 @@
     },
     "solution": "<ol>\n<li><p>Let AB = x, so AC = 3 – x.  </p></li>\n<li><p>Since ∠B = 90°, by Pythagoras  </p>\n<p>$$BC = \\sqrt{AC^2 - AB^2} = \\sqrt{(3 - x)^2 - x^2} = \\sqrt{9 - 6x}\\,. $$  </p></li>\n<li><p>Area $A$ of ΔABC:  </p>\n<p>$$A = \\tfrac12 \\times AB \\times BC = \\tfrac12\\,x\\,\\sqrt{9 - 6x}\\,. $$  </p></li>\n<li><p>To maximise $A$, set $\\dfrac{dA}{dx}=0$:  </p>\n<p>$$A = \\tfrac12\\,x\\,(9 - 6x)^{1/2},$$  </p>\n<p>$$\\frac{dA}{dx} = \\frac12\\,(9-6x)^{1/2} - \\frac{6x}{4\\,(9-6x)^{1/2}}                   = \\frac{18 - 18x}{4\\sqrt{9-6x}} = 0     \\;\\Longrightarrow\\; x = 1.$$  </p></li>\n<li><p>Thus  </p>\n<p>$$AB = 1,\\quad AC = 2,\\quad BC = \\sqrt{9 - 6\\cdot1} = \\sqrt3.$$  </p></li>\n<li><p>∠A satisfies  </p>\n<p>$$\\tan A = \\frac{BC}{AB} = \\frac{\\sqrt3}{1} = \\sqrt3      \\;\\Longrightarrow\\; A = \\frac{\\pi}{3}.$$</p></li>\n</ol>\n<p>Answer: Option C, $\\displaystyle \\pi/3$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -860,7 +860,7 @@
     },
     "solution": "<ol>\n<li><p>Let AB = x, BC = y. Then AC (hypotenuse) = $\\sqrt{x^2 + y^2}$.  </p></li>\n<li><p>Given  </p>\n<p>$$x + \\sqrt{x^2 + y^2} = 3\\,. $$  </p></li>\n<li><p>From this,  </p>\n<p>$$\\sqrt{x^2 + y^2} = 3 - x \\quad\\Rightarrow\\quad x^2 + y^2 = (3 - x)^2 = 9 - 6x + x^2$$  </p>\n<p>$$\\therefore y^2 = 9 - 6x\\,,\\quad y = \\sqrt{9 - 6x}\\,. $$  </p></li>\n<li><p>Area of $\\triangle ABC$  </p>\n<p>$$A = \\frac12\\,(AB)(BC) = \\frac12\\,x\\,y = \\frac12\\,x\\sqrt{9 - 6x}\\,. $$  </p></li>\n<li><p>To find the maximum, set  </p>\n<p>$$f(x) = x\\sqrt{9 - 6x}\\quad\\Longrightarrow\\quad f^2(x) = x^2(9 - 6x) = 9x^2 - 6x^3\\,. $$  </p>\n<p>Differentiate:  </p>\n<p>$$\\frac{d}{dx}\\bigl(f^2(x)\\bigr) = 18x - 18x^2 = 18x(1 - x)\\,. $$  </p>\n<p>Setting $18x(1 - x)=0$ gives $x=0$ or $x=1$.  Discard $x=0$.  </p></li>\n<li><p>For $x=1$,  </p>\n<p>$$y = \\sqrt{9 - 6\\cdot1} = \\sqrt{3},\\qquad A_{\\max} = \\frac12\\cdot1\\cdot\\sqrt{3} = \\frac{\\sqrt{3}}2\\,. $$  </p></li>\n</ol>\n<p>Answer: Option A.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -983,7 +983,7 @@
     },
     "solution": "<ol>\n<li><p>Let slope of tangent be  </p>\n<p>$    \\frac{dy}{dx}=4.    $</p></li>\n<li><p>Integrate both sides w.r.t. $x$:  </p>\n<p>$    y=\\int 4\\,dx=4x+C.    $</p></li>\n<li><p>Curve passes through origin $(0,0)$:  </p>\n<p>$    0=4\\cdot0+C\\quad\\implies\\quad C=0.    $</p></li>\n<li><p>Hence  </p>\n<p>$    y=4x,    $</p>\n<p>a straight line of slope 4.  At $x=1$, $y=4\\cdot1=4$, so it passes through $(1,4)$.</p></li>\n</ol>\n<p>Answer: Option A.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -1106,7 +1106,7 @@
     },
     "solution": "<h3>Understanding the Function $f(x) = x^2 + 9$</h3>\n<p>This function represents a parabola that opens upwards. You might remember from your studies that for a quadratic function $ax^2 + bx + c$, if $a > 0$, the parabola opens upwards and has a minimum value. If $a < 0$, it opens downwards and has a maximum value. Here, for $f(x) = x^2 + 9$, $a=1$, which is positive, so it's an upward-opening parabola.</p>\n<p>Let's find its vertex. The $x$-coordinate of the vertex of a parabola $ax^2 + bx + c$ is given by $x = -b/(2a)$.</p>\n<p>For $f(x) = x^2 + 9$, we can write it as $x^2 + 0x + 9$. So, $a=1$ and $b=0$.</p>\n<p>The $x$-coordinate of the vertex is $x = -0/(2 \\times 1) = 0$.</p>\n<p>At $x=0$, the value of the function is $f(0) = 0^2 + 9 = 9$.</p>\n<p>So, the vertex is at $(0, 9)$. Since the parabola opens upwards, this vertex represents the lowest point, which means it's a minimum.</p>\n<h3>Statement I: $f(x)$ is an increasing function.</h3>\n<p>For a function to be an increasing function, its value must continuously increase as $x$ increases over its entire domain. Mathematically, this means its derivative, $f'(x)$, must be greater than zero for all $x$.</p>\n<p>Let's find the derivative of $f(x)$:</p>\n<p>$$f(x) = x^2 + 9$$</p>\n<p>Using the rules of differentiation:</p>\n<p>$$f'(x) = \\frac{d}{dx}(x^2) + \\frac{d}{dx}(9)$$</p>\n<p>$$f'(x) = 2x + 0$$</p>\n<p>$$f'(x) = 2x$$</p>\n<p>Now, let's check for what values of $x$ is $f'(x) > 0$:</p>\n<p>$$2x > 0 \\implies x > 0$$</p>\n<p>This tells us that $f(x)$ is increasing only when $x > 0$.</p>\n<p>What happens when $x < 0$?</p>\n<p>If $x < 0$, then $2x < 0$. For example, if $x = -1$, $f'(-1) = 2(-1) = -2$, which is less than 0. This means the function is <em>decreasing</em> for $x < 0$.</p>\n<p>Since the function is decreasing for $x < 0$ and increasing only for $x > 0$, it is not an increasing function over its entire domain (all real numbers).</p>\n<p>Therefore, Statement I is incorrect.</p>\n<h3>Statement II: $f(x)$ has local maximum at $x = 0$.</h3>\n<p>To find local maxima or minima, we first find the critical points by setting the first derivative to zero:</p>\n<p>$$f'(x) = 0$$</p>\n<p>$$2x = 0$$</p>\n<p>$$x = 0$$</p>\n<p>So, $x=0$ is a critical point. Now, we need to determine if it's a local maximum or a local minimum. We can use the second derivative test.</p>\n<p>First, let's find the second derivative:</p>\n<p>$$f''(x) = \\frac{d}{dx}(f'(x)) = \\frac{d}{dx}(2x)$$</p>\n<p>$$f''(x) = 2$$</p>\n<p>Now, evaluate the second derivative at the critical point $x=0$:</p>\n<p>$$f''(0) = 2$$</p>\n<p>Since $f''(0) = 2$, which is greater than 0 ($f''(x) > 0$), the function has a local <strong>minimum</strong> at $x=0$.</p>\n<p>As we discussed at the beginning, $f(x) = x^2 + 9$ is an upward-opening parabola, and its vertex at $x=0$ is indeed a minimum point. It does not have a local maximum at $x=0$.</p>\n<p>Therefore, Statement II is incorrect.</p>\n<h3>Conclusion</h3>\n<p>Since both Statement I and Statement II are incorrect, the correct option is the one that says neither statement is correct.</p>\n<p>The final answer is $\\boxed{\\text{Neither I nor II}}$.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 13 April 2025",
+    "title": "NDA (I) 2025",
     "topic": "General",
     "type": "SCQ",
     "year": "2025"
@@ -1229,7 +1229,7 @@
     },
     "solution": "<p>First, compute the derivative and find critical points:</p>\n\n<p><p>f ′(x)=d/dx[cos2x + x]=−2 sin2x + 1.  </p></p>\n<p><p>Set f ′(x)=0 ⇒ 1−2 sin2x=0 ⇒ sin2x=½  </p>\n<p>⇒ 2x=π/6 or 5π/6  ⇒ x=π/12 or 5π/12.</p></p>\n\n<p>Next, evaluate f(x)=cos2x + x at these and at the endpoints x=±π/2:</p>\n\n<p><p>At x=π/12:  </p>\n<p>$$f\\bigl(\\tfrac{\\pi}{12}\\bigr)=\\cos\\!\\bigl(\\tfrac{\\pi}{6}\\bigr)+\\tfrac{\\pi}{12}   =\\frac{\\sqrt3}{2}+\\frac{\\pi}{12}\\approx1.128.$$</p></p>\n<p><p>At x=5π/12:  </p>\n<p>$$f\\bigl(\\tfrac{5\\pi}{12}\\bigr)=\\cos\\!\\bigl(\\tfrac{5\\pi}{6}\\bigr)+\\tfrac{5\\pi}{12}   =-\\frac{\\sqrt3}{2}+\\frac{5\\pi}{12}\\approx0.443.$$</p></p>\n<p><p>At x=π/2:  </p>\n<p>$$f\\bigl(\\tfrac{\\pi}{2}\\bigr)=\\cos\\pi+\\tfrac{\\pi}{2}=-1+\\tfrac{\\pi}{2}\\approx0.571.$$</p></p>\n<p><p>At x=−π/2:  </p>\n<p>$$f\\bigl(-\\tfrac{\\pi}{2}\\bigr)=\\cos(-\\pi)-\\tfrac{\\pi}{2}=-1-\\tfrac{\\pi}{2}\\approx-2.571.$$</p></p>\n\n<p>The largest value is  </p>\n<p>$$\\frac{\\sqrt3}{2}+\\frac{\\pi}{12},$$  </p>\n<p>so Option 2 is correct.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1353,7 +1353,7 @@
     },
     "solution": "<p>Let’s find the minimum of  </p>\n<p>$$f(x)=\\cos2x+x\\,,\\qquad x\\in\\bigl[-\\tfrac\\pi2,\\tfrac\\pi2\\bigr].$$  </p>\n\n<p><p>Compute the derivative:  </p>\n<p>$$f'(x)=-2\\sin2x+1=0\\quad\\Longrightarrow\\quad\\sin2x=\\tfrac12.$$  </p>\n<p>This gives interior critical points  </p>\n<p>$$x=\\frac\\pi{12}\\quad\\text{and}\\quad x=\\frac{5\\pi}{12}$$  </p>\n<p>(both lie in $[-\\tfrac\\pi2,\\tfrac\\pi2]$).  </p></p>\n<p><p>Evaluate $f$ at the critical points and the endpoints:  </p></p>\n\n\n<p><p>$x=-\\tfrac\\pi2:\\;f(-\\tfrac\\pi2)=\\cos(-\\pi)-\\tfrac\\pi2=-1-\\tfrac\\pi2$  </p></p>\n<p><p>$x=\\tfrac\\pi{12}:\\;f(\\tfrac\\pi{12})=\\tfrac{\\sqrt3}{2}+\\tfrac\\pi{12}>0$  </p></p>\n<p><p>$x=\\tfrac{5\\pi}{12}:\\;f(\\tfrac{5\\pi}{12})=-\\tfrac{\\sqrt3}{2}+\\tfrac{5\\pi}{12}>0$  </p></p>\n<p><p>$x=\\tfrac\\pi2:\\;f(\\tfrac\\pi2)=-1+\\tfrac\\pi2>0$  </p></p>\n\n<p>The smallest value is  </p>\n<p>$$f\\bigl(-\\tfrac\\pi2\\bigr)=-1-\\tfrac\\pi2\\,, $$  </p>\n<p>which matches Option 1.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 1st September 2024",
+    "title": "NDA (II) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024",
@@ -1477,7 +1477,7 @@
     },
     "solution": "<p>A function has neither a maximum nor minimum in an interval if its derivative is either always positive or always negative in that interval.</p>\n\n<p>Let's find the derivative of the given function:</p>\n\n<p>$$f'(x) = 16x^2 - 8bx + 1$$</p>\n\n<p>For the derivative to be always positive or always negative, the discriminant of the quadratic expression must be negative. This is because if the discriminant is positive, the quadratic has two distinct real roots, meaning the derivative changes sign and the function has a maximum or minimum.</p>\n\n<p>The discriminant of the quadratic is:</p>\n\n<p>$$D = (-8b)^2 - 4 \\cdot 16 \\cdot 1 = 64b^2 - 64$$</p>\n\n<p>We want this discriminant to be negative: </p>\n\n<p>$$64b^2 - 64 < 0$$</p>\n\n<p>Dividing both sides by 64:</p>\n\n<p>$$b^2 - 1 < 0$$</p>\n\n<p>Factoring:</p>\n\n<p>$$(b - 1)(b + 1) < 0$$</p>\n\n<p>This inequality holds when $b$ lies between -1 and 1. However, we are only interested in non-negative values of $b$. Therefore, the solution is:</p>\n\n<p>$$0 < b < 1$$</p>\n\n<p>Therefore, the correct answer is <strong>Option A</strong>. </p>\n\n<p></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1600,7 +1600,7 @@
     },
     "solution": "<p>To determine what $\\varphi(a)$ is equal to, let's analyze the given function:</p>\n\n<p>$$\\varphi(a) = \\int_{a}^{a + 100 \\pi} |\\sin x| dx$$</p>\n\n<p>First, consider the behavior and period of the sine function. The function $\\sin x$ is periodic with a period of $2 \\pi$. Therefore, $|\\sin x|$ also repeats every $2 \\pi$.</p>\n\n<p>Given that the integral is over an interval of length $100 \\pi$, we can express this in terms of the periods of $|\\sin x|$:</p>\n\n<p>The interval length is $\\frac{100 \\pi}{2 \\pi} = 50$ periods.</p>\n\n<p>Next, consider the integral over a single period of $|\\sin x|$. Since $|\\sin x|$ is symmetric and periodic over $[0, 2 \\pi]$, we can simplify the computation:</p>\n\n<p>Let's calculate the integral over one period:</p>\n\n<p>$$\\int_{0}^{2 \\pi} |\\sin x| dx$$</p>\n\n<p>We know that:</p>\n\n<p>$$\\int_0^{2 \\pi} |\\sin x| dx = 2 \\int_0^{\\pi} \\sin x dx$$</p>\n\n<p>The integral of $\\sin x$ from $0$ to $\\pi$ is:</p>\n\n<p>$$\\int_0^{\\pi} \\sin x dx = [-\\cos x]_0^{\\pi} = -\\cos(\\pi) - (-\\cos(0)) = 1 + 1 = 2$$</p>\n\n<p>Thus:</p>\n\n<p>$$\\int_{0}^{2 \\pi} |\\sin x| dx = 2 \\cdot 2 = 4$$</p>\n\n<p>Each period of $|\\sin x|$ contributes $4$ units to the integral. Since there are $50$ periods within our interval, the total integral is:</p>\n\n<p>$$\\varphi(a) = 50 \\cdot 4 = 200$$</p>\n\n<p>So, $\\varphi(a)$ is a constant value of $200$, regardless of $a$.</p>\n\n<p>Therefore, the correct answer is:</p>\n\n<p>Option D</p>\n\n<p>200</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1723,7 +1723,7 @@
     },
     "solution": "<p>To determine $\\varphi'(a)$, let's start by understanding what the function $\\varphi(a)$ represents. It is given by</p>\n\n<p>$$\\varphi(a) = \\int_{a}^{a + 100\\pi} |\\sin x| \\, dx$$</p>\n\n<p>We need to find the derivative of this function with respect to $a$. To do this, we can use the Leibniz rule for differentiation under the integral sign, which states that if you have an integral of the form</p>\n\n<p>$$\\int_{u(a)}^{v(a)} f(x) \\, dx$$</p>\n\n<p>then the derivative with respect to $a$ is given by</p>\n\n<p>$$\\frac{d}{da} \\left( \\int_{u(a)}^{v(a)} f(x) \\, dx \\right) = f(v(a)) \\cdot \\frac{d}{da}v(a) - f(u(a)) \\cdot \\frac{d}{da}u(a) + \\int_{u(a)}^{v(a)} \\frac{\\partial}{\\partial a} f(x, a) \\, dx$$</p>\n\n<p>In our case:</p>\n\n<ul>\n\n<li>$u(a) = a$</li>\n\n<li> $v(a) = a + 100\\pi$</li>\n\n<li> $f(x) = |\\sin x|$ (independent of $a$)</li>\n\n</ul>\n\n<p>Since $f(x)$ is independent of $a$, the partial derivative $\\frac{\\partial}{\\partial a} f(x, a)$ is zero. Therefore, the derivative simplifies to</p>\n\n<p>$$\\varphi'(a) = |\\sin(v(a))| \\cdot v'(a) - |\\sin(u(a))| \\cdot u'(a)$$</p>\n\n<p>Substitute $v(a) = a + 100\\pi$ and $u(a) = a$:</p>\n\n<ul>\n\n<li>$v'(a) = 1$</li>\n\n<li>$u'(a) = 1$</li>\n\n</ul>\n\n<p>Therefore, we get:</p>\n\n<p>$$\\varphi'(a) = |\\sin(a + 100\\pi)| \\cdot 1 - |\\sin(a)| \\cdot 1$$</p>\n\n<p>Since $\\sin(x)$ has a period of $2\\pi$, we know that adding $100\\pi$ effectively cycles through the sine function 50 times (because $100\\pi$ is $50 \\cdot 2\\pi$). Hence, $\\sin(a + 100\\pi) = \\sin(a)$. This means that:</p>\n\n<p>$$|\\sin(a + 100\\pi)| = |\\sin(a)|$$</p>\n\n<p>Substituting this in, we get:</p>\n\n<p>$$\\varphi'(a) = |\\sin(a)| - |\\sin(a)| = 0$$</p>\n\n<p>Thus, $\\varphi'(a) = 0$.</p>\n\n<p>The correct answer is:</p>\n\n<p><strong>Option A: 0</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1846,7 +1846,7 @@
     },
     "solution": "<p>Let's analyze the given statements one by one to determine which of them are correct.</p>\n\n<p><strong>Statement 1: $ f'(0) = 0 $</strong></p>\n\n<p>This statement is based on the condition that $ f(x) $ has a local maximum at $ x = 0 $. For a function to have a local maximum at a point, its first derivative at that point must be zero. Thus, we have:</p>\n\n<p>$$ f'(0) = 0 $$</p>\n\n<p>So, Statement 1 is correct.</p>\n\n<p><strong>Statement 2: $ f''(0) < 0 $</strong></p>\n\n<p>For a point $ x = 0 $ to be a local maximum, not only must the first derivative be zero, but the second derivative at that point must be negative. This indicates that the function changes concavity and thus confirms a local maximum:</p>\n\n<p>$$ f''(0) < 0 $$</p>\n\n<p>So, Statement 2 is also correct.</p>\n\n<p>Therefore, both statements 1 and 2 are correct. The correct answer is:</p>\n\n<p><strong>Option C:</strong> Both 1 and 2</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -1969,7 +1969,7 @@
     },
     "solution": "<p>First, let's break down the problem. We are given a differentiable function $ f(x) $ that has a local maximum at $ x = 0 $. This means that at $ x = 0 $, the first derivative of $ f(x) $, $ f'(x) $, is zero, and the second derivative, $ f''(x) $, is less than or equal to zero (because we have a local maximum).</p>\n\n<p>Now, let us consider the function $ y = 2f(x) + ax - b $. To find the conditions under which $ y $ has a relative maximum at $ x = 0 $, we need to look at the first and second derivatives of $ y $ and apply the conditions for a maximum.</p>\n\n<p>The first derivative of $ y $ with respect to $ x $ is:</p>\n\n<p>$$ y' = \\frac{d}{dx}(2f(x) + ax - b) = 2f'(x) + a $$</p>\n\n<p>At $ x = 0 $, for $ y $ to have a relative maximum, we need $ y'(0) = 0 $. So, we set:</p>\n\n<p>$$ y'(0) = 2f'(0) + a = 0 $$</p>\n\n<p>Since $ f(x) $ has a local maximum at $ x = 0 $, we know that $ f'(0) = 0 $. Therefore:</p>\n\n<p>$$ 2(0) + a = 0 $$</p>\n\n<p>This simplifies to:</p>\n\n<p>$$ a = 0 $$</p>\n\n<p>Next, let’s check the second derivative of $ y $, $ y'' $, to confirm it is less than 0 at $ x = 0 $ to confirm a local maximum:</p>\n\n<p>$$ y'' = \\frac{d^2}{dx^2}(2f(x) + ax - b) = 2f''(x) $$</p>\n\n<p>At $ x = 0 $, we need:</p>\n\n<p>$$ y''(0) = 2f''(0) $$</p>\n\n<p>Since $ f(x) $ has a local maximum at $ x = 0 $, we know that $ f''(0) \\leq 0 $. Therefore,</p>\n\n<p>$$ y''(0) = 2f''(0) \\leq 0 $$</p>\n\n<p>This means that as long as $ a = 0 $, the conditions for a relative maximum are automatically satisfied, regardless of the value of $ b $.</p>\n\n<p>Hence, the correct option is:</p>\n\n<p><strong>Option B: for all $b$ and $a = 0$</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 21 April 2024",
+    "title": "NDA (I) 2024",
     "topic": "General",
     "type": "SCQ",
     "year": "2024"
@@ -2092,7 +2092,7 @@
     },
     "solution": "<p><strong>Minima and Maxima of a Function:</strong> These represent the points where the first derivative (slope) of the function equals zero.</p>\n<p>To determine the minima or maxima of a function $ f(x) $, follow these steps:</p>\n<p><strong>Step 1:</strong> Calculate the first derivative $ f'(x) $ of the function.</p>\n<p><strong>Step 2:</strong> Set the first derivative equal to zero and solve for the critical points (e.g., $ x_1 $, $ x_2 $).</p>\n<p><strong>Step 3:</strong> Find the second derivative $ f''(x) $ and evaluate its sign at the critical points.</p>\n<p><strong>Step 4:</strong> If $ f''(x) < 0 $, the function has a maximum at that point; if $ f''(x) > 0 $, it has a minimum at that point.</p>\n<h3>Calculation:</h3>\n<p>Given: $ 4x^2 + y^2 = 9 $</p>\n<p>To find the maximum $ y $:</p>\n<p>$ y = \\sqrt{9 - 4x^2} $</p>\n<p>Differentiate with respect to $ x $:</p>\n<p>$ \\frac{dy}{dx} = \\frac{-8x}{2 \\sqrt{9 - 4x^2}} $</p>\n<p>Set the derivative equal to zero to find the critical points:</p>\n<p>$ \\frac{-8x}{2 \\sqrt{9 - 4x^2}} = 0 $</p>\n<p>This implies:</p>\n<p>$ x = 0 $</p>\n<p>To confirm $ y $ is a maximum at $ x = 0 $, compute the second derivative:</p>\n<p>$ \\frac{d^2y}{dx^2} = \\frac{-4\\sqrt{9 - 4x^2} - 32x^2 / (2 \\sqrt{9 - 4x^2})}{(9 - 4x^2)} $</p>\n<p>At $ x = 0 $:</p>\n<p>$ \\frac{d^2y}{dx^2} = \\frac{-4 \\times 3}{9^{3/2}} = -\\frac{4}{3} $</p>\n<p>Since $\\frac{d^2y}{dx^2} < 0$, $ y $ has a maximum at $ x = 0 $.</p>\n<p>Thus, the maximum value of $ y $ is:</p>\n<p>$ y = \\sqrt{9 - 4(0)^2} = \\sqrt{9} = 3 $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2215,7 +2215,7 @@
     },
     "solution": "<p>To find the maximum value of $ xy $ given the equation $ 4x^2 + y^2 = 9 $, Lagrange multipliers can be used. Define the function $ f(x,y) = xy $ and the constraint $ g(x,y) = 4x^2 + y^2 - 9 = 0 $.</p>\n<p>Using Lagrange multipliers:</p>\n\n<p><p>Set up the Lagrangian:\n$$ \\mathcal{L}(x, y, \\lambda) = xy + \\lambda (9 - 4x^2 - y^2) $$</p></p>\n<p><p>Take the partial derivatives with respect to $ x $, $ y $, and $ \\lambda $:\n$$ \\frac{\\partial \\mathcal{L}}{\\partial x} = y - 8x\\lambda = 0 $$\n$$ \\frac{\\partial \\mathcal{L}}{\\partial y} = x - 2y\\lambda = 0 $$\n$$ \\frac{\\partial \\mathcal{L}}{\\partial \\lambda} = 9 - 4x^2 - y^2 = 0 $$</p></p>\n<p><p>Solve the system of equations:\nFrom $ \\frac{\\partial \\mathcal{L}}{\\partial x} = 0 $:\n$$ y = 8x\\lambda $$</p>\n<p>From $ \\frac{\\partial \\mathcal{L}}{\\partial y} = 0 $:\n$$ x = 2y\\lambda $$</p>\n<p>Substitute $ y = 8x\\lambda $ into $ x = 2y\\lambda $:\n$$ x = 2(8x\\lambda)\\lambda $$\n$$ x = 16x\\lambda^2 $$\n$$ 1 = 16\\lambda^2 $$\n$$ \\lambda^2 = \\frac{1}{16} $$\n$$ \\lambda = \\pm \\frac{1}{4} $$</p>\n<p>Consider $ \\lambda = \\frac{1}{4} $:\n$$ y = 8x\\left(\\frac{1}{4}\\right) = 2x $$</p>\n<p>Substitute $ y = 2x $ into the constraint $ 4x^2 + y^2 = 9 $:\n$$ 4x^2 + (2x)^2 = 9 $$\n$$ 4x^2 + 4x^2 = 9 $$\n$$ 8x^2 = 9 $$\n$$ x^2 = \\frac{9}{8} $$\n$$ x = \\pm \\frac{3}{2\\sqrt{2}} = \\pm \\frac{3\\sqrt{2}}{4} $$</p>\n<p>For $ x = \\frac{3\\sqrt{2}}{4} $:\n$$ y = 2 \\left(\\frac{3\\sqrt{2}}{4}\\right) = \\frac{3\\sqrt{2}}{2} $$</p>\n<p>Now calculate $ xy $:\n$$ xy = \\left(\\frac{3\\sqrt{2}}{4}\\right) \\left(\\frac{3\\sqrt{2}}{2}\\right) = \\frac{9 \\cdot 2}{8} = \\frac{18}{8} = \\frac{9}{4} $$</p>\n<p>Therefore, the maximum value of $ xy $ is $ \\boxed{\\frac{9}{4}} $.</p></p>\n",
     "subject": "mathematics",
-    "title": "NDA Mathematics 3 September 2023",
+    "title": "NDA (II) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2338,7 +2338,7 @@
     },
     "solution": "<p>To determine which of the statements are correct, let's analyze each one in detail:</p>\n\n<p><strong>Statement 1: $ f(x) = \\ln x $ is increasing in $ (0, \\infty) $</strong></p>\n\n<p>To verify if $ f(x) = \\ln x $ is increasing, we need to find the derivative of $ f(x) $ and check its sign in the interval $ (0, \\infty) $.</p>\n\n<p>The derivative of $ f(x) = \\ln x $ is given by:</p>\n\n<p>$$ f'(x) = \\frac{d}{dx} (\\ln x) = \\frac{1}{x} $$</p>\n\n<p>In the interval $ (0, \\infty) $, $ x $ is always positive, therefore $ \\frac{1}{x} $ is always positive. Hence, $ f(x) = \\ln x $ is an increasing function in $ (0, \\infty) $.</p>\n\n<p>Thus, Statement 1 is correct.</p>\n\n<p><strong>Statement 2: $ g(x) = e^x + e^{\\frac{1}{x}} $ is decreasing in $ (0, \\infty) $</strong></p>\n\n<p>To verify if $ g(x) = e^x + e^{\\frac{1}{x}} $ is decreasing, we need to find the derivative of $ g(x) $ and check its sign in the interval $ (0, \\infty) $.</p>\n\n<p>The derivative of $ g(x) $ is given by:</p>\n\n<p>$$ g'(x) = \\frac{d}{dx} \\left( e^x + e^{\\frac{1}{x}} \\right) $$</p>\n\n<p>Applying the chain rule to the second term, we get:</p>\n\n<p>$$ g'(x) = e^x + e^{\\frac{1}{x}} \\cdot \\left( -\\frac{1}{x^2} \\right) = e^x - \\frac{e^{\\frac{1}{x}}}{x^2} $$</p>\n\n<p>To determine if $ g'(x) $ is negative in $ (0, \\infty) $, we need to check if:</p>\n\n<p>$$ e^x - \\frac{e^{\\frac{1}{x}}}{x^2} < 0 $$</p>\n\n<p>However, for $ x > 0 $, $ e^x $ grows exponentially, and $ e^{\\frac{1}{x}} $ is always positive. Thus, $ e^x $ will always be larger than $ \\frac{e^{\\frac{1}{x}}}{x^2} $ for $ x > 1 $. This indicates that $ g'(x) $ is generally positive in $ (0, \\infty) $.</p>\n\n<p>Therefore, $ g(x) = e^x + e^{\\frac{1}{x}} $ is not a decreasing function in $ (0, \\infty) $.</p>\n\n<p>Thus, Statement 2 is incorrect.</p>\n\n<p><strong>Conclusion:</strong></p>\n\n<p>The correct answer is:</p>\n\n<p><strong>Option A: 1 only</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2461,7 +2461,7 @@
     },
     "solution": "<p>To find the derivative of $$\\sin^2 x$$ with respect to $$\\cos^2 x$$, we need to use the concept of implicit differentiation. We will first express the derivatives of these functions with respect to $$x$$ and then use the chain rule.</p>\n\n<p>First, let's find the derivatives of $$\\sin^2 x$$ and $$\\cos^2 x$$ with respect to $$x$$:</p>\n\n<p>The derivative of $$\\sin^2 x$$ with respect to $$x$$ is found using the chain rule:</p>\n\n<p>\n  $$\\frac{d}{dx} (\\sin^2 x) = 2 \\sin x \\cdot \\cos x = \\sin 2x$$\n</p>\n\n<p>The derivative of $$\\cos^2 x$$ with respect to $$x$$ is also found using the chain rule:</p>\n\n<p>\n  $$\\frac{d}{dx} (\\cos^2 x) = 2 \\cos x \\cdot (-\\sin x) = -\\sin 2x$$\n</p>\n\n<p>Now we need to find the derivative of $$\\sin^2 x$$ with respect to $$\\cos^2 x$$. By using the chain rule in the form:</p>\n\n<p>\n  $$\\frac{d}{d(\\cos^2 x)} (\\sin^2 x) = \\frac{\\frac{d}{dx} (\\sin^2 x)}{\\frac{d}{dx} (\\cos^2 x)}$$\n</p>\n\n<p>Substituting the derivatives we calculated earlier, we get:</p>\n\n<p>\n  $$\\frac{d}{d(\\cos^2 x)} (\\sin^2 x) = \\frac{\\sin 2x}{-\\sin 2x} = -1$$\n</p>\n\n<p>Therefore, the correct answer is Option A: -1.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 16 April 2023",
+    "title": "NDA (I) 2023",
     "topic": "General",
     "type": "SCQ",
     "year": "2023"
@@ -2584,7 +2584,7 @@
     },
     "solution": "<p>To determine the condition under which the function $ f(x) = p \\sec^2 x + q \\csc^2 x $ attains its minimum value, we need to analyze the given function. Let's go through the details step-by-step:</p>\n\n<p>First, recall the trigonometric identities for secant and cosecant:</p>\n\n<p>\n\n<p>$$ \\sec x = \\frac{1}{\\cos x} \\quad \\text{and} \\quad \\csc x = \\frac{1}{\\sin x} $$</p>\n\n</p>\n\n<p>Thus, we have:</p>\n\n<p>\n\n<p>$$ \\sec^2 x = \\frac{1}{\\cos^2 x} \\quad \\text{and} \\quad \\csc^2 x = \\frac{1}{\\sin^2 x} $$</p>\n\n</p>\n\n<p>Now rewrite the function $ f(x) $ as follows:</p>\n\n<p>\n\n<p>$$ f(x) = p \\sec^2 x + q \\csc^2 x = p \\frac{1}{\\cos^2 x} + q \\frac{1}{\\sin^2 x} $$</p>\n\n</p>\n\n<p>We want to find the value of $ x $ at which $ f(x) $ is minimized. To do this, we will use the method of differentiation. We know that:</p>\n\n<p>\n\n<p>$$ \\sec^2 x = 1 + \\tan^2 x \\quad \\text{and} \\quad \\csc^2 x = 1 + \\cot^2 x $$</p>\n\n</p>\n\n<p>Express each term in terms of either $ \\tan x $ or $ \\cot x $. Consider the identity $ \\sin^2 x + \\cos^2 x = 1 $ and combine the given function:</p>\n\n<p>To find the local minima, let's differentiate $ f(x) $ with respect to $ x $ and set the derivative equal to zero:</p>\n\n<p>\n\n<p>$$ \\frac{d}{dx} \\left( p \\sec^2 x + q \\csc^2 x \\right) = 0 $$</p>\n\n</p>\n\n<p>After differentiating and simplifying, the conditions for minimum value will point us towards a relationship that balances the terms. The critical point typically is where:</p>\n\n<p>\n\n<p>$$ \\tan^2 x = \\frac{q}{p} \\quad \\text{or} \\quad \\cot^2 x = \\frac{p}{q} $$</p>\n\n</p>\n\n<p>This simplification indicates that the minimum occurs under these conditions, which translates to:</p>\n\n<p>The condition for the minimum is:</p>\n\n<p>\n\n<p>$$ \\tan^2 x = \\frac{q}{p} $$</p>\n\n</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option A:</strong> $ \\tan^2 x = \\frac{q}{p} $</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2707,7 +2707,7 @@
     },
     "solution": "<p>To determine where the function $$f(x) = \\sum_{j=1}^7 (x - j)^2$$ attains its minimum value, we need to expand and analyze the function.</p>\n\n<p>First, let's write the function explicitly:</p>\n\n<p>$$ f(x) = (x - 1)^2 + (x - 2)^2 + (x - 3)^2 + (x - 4)^2 + (x - 5)^2 + (x - 6)^2 + (x - 7)^2 $$</p>\n\n<p>To find the minimum value, we can take the derivative of the function with respect to $ x $ and set it to zero:</p>\n\n<p>$$ f'(x) = 2(x - 1) + 2(x - 2) + 2(x - 3) + 2(x - 4) + 2(x - 5) + 2(x - 6) + 2(x - 7) $$</p>\n\n<p>We can simplify this:</p>\n\n<p>$$ f'(x) = 2[(x - 1) + (x - 2) + (x - 3) + (x - 4) + (x - 5) + (x - 6) + (x - 7)] $$</p>\n\n<p>This sums to:</p>\n\n<p>$$ f'(x) = 2[7x - (1 + 2 + 3 + 4 + 5 + 6 + 7)] $$</p>\n\n<p>Noting that the sum of the first 7 positive integers is:</p>\n\n<p>$$ 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28 $$</p>\n\n<p>Thus:</p>\n\n<p>$$ f'(x) = 2(7x - 28) = 14x - 56 $$</p>\n\n<p>Setting the derivative to zero to find the critical points:</p>\n\n<p>$$ 14x - 56 = 0 $$</p>\n\n<p>Solving for $ x $:</p>\n\n<p>$$ 14x = 56 \\quad \\Rightarrow \\quad x = 4 $$</p>\n\n<p>Hence, the function attains its minimum value at <b>Option B: $ x = 4 $</b>.</p>\n\n<p></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 4 September 2022",
+    "title": "NDA (II) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2830,7 +2830,7 @@
     },
     "solution": "<p>To determine the number of extreme values of the function $ \\sin(4x) + 2x $ within the interval $ 0 < x < \\frac{\\pi}{2} $, we need to find the critical points by taking the derivative of the function and setting it to zero.</p>\n\n<p>First, let's find the derivative of $ f(x) = \\sin(4x) + 2x $:</p>\n\n<p>The derivative of $ \\sin(4x) $ is $ 4 \\cos(4x) $, and the derivative of $ 2x $ is $ 2 $. Therefore,</p>\n\n<p>$$ f'(x) = 4 \\cos(4x) + 2 $$</p>\n\n<p>We set the derivative to zero to find the critical points:</p>\n\n<p>$$ 4 \\cos(4x) + 2 = 0 $$</p>\n\n<p>Simplifying this equation:</p>\n\n<p>$$ 4 \\cos(4x) = -2 $$</p>\n\n<p>$$ \\cos(4x) = -\\frac{1}{2} $$</p>\n\n<p>Now, we need to find the solutions to $ \\cos(4x) = -\\frac{1}{2} $ within the interval $ 0 < x < \\frac{\\pi}{2} $. The principal values for $ \\cos^{-1}(-\\frac{1}{2}) $ are:</p>\n\n<p>$$ 4x = \\frac{2\\pi}{3}, \\frac{4\\pi}{3} + 2k\\pi \\quad \\text{for integer } k $$</p>\n\n<p>Thus,</p>\n\n<p>$$ x = \\frac{\\pi}{6}, \\frac{\\pi}{3} + \\frac{k\\pi}{2} $$</p>\n\n<p>We must now check which of these values lie within the interval $ 0 < x < \\frac{\\pi}{2} $:</p>\n\n<ul>\n\n<li>For $ k = 0 $: $ x = \\frac{\\pi}{6}, \\frac{\\pi}{3} $</li>\n\n<li>For $ k = 1 $: $ x = \\frac{\\pi}{6} + \\frac{\\pi}{2} = \\frac{2\\pi + \\pi}{6} = \\frac{3\\pi}{6} = \\frac{\\pi}{2} $ (Not in the interval since $ x \\rightarrow \\frac{\\pi}{2} $)</li>\n\n<li>Similarly for $ k = -1 $, it will not be inside the interval.</li>\n\n</ul>\n\n<p>Thus, only $ x = \\frac{\\pi}{6}$ and $ \\frac{\\pi}{3} $ are within the interval $ 0 < x < \\frac{\\pi}{2} $.</p>\n\n<p>Therefore, there are 2 extreme values within the given interval.</p>\n\n<p>The correct answer is:</p>\n\n<p><strong>Option B</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -2953,7 +2953,7 @@
     },
     "solution": "<p>To determine the value of $m + 8n$, we first need to find the derivative of the function $f(x) = \\frac{m}{x} + 2nx + 1$ and then use the information that the derivative vanishes at $x = 2$.</p>\n\n<p>Let's start by finding the derivative of $f(x)$. The function is:</p>\n\n<p>$$f(x) = \\frac{m}{x} + 2nx + 1$$</p>\n\n<p>The derivative $f'(x)$ with respect to $x$ is given by:</p>\n\n<p>$$f'(x) = \\frac{d}{dx}\\left(\\frac{m}{x}\\right) + \\frac{d}{dx}(2nx) + \\frac{d}{dx}(1)$$</p>\n\n<p>Calculating each term separately, we have:</p>\n\n<p>$$\\frac{d}{dx}\\left(\\frac{m}{x}\\right) = -\\frac{m}{x^2}$$</p>\n\n<p>$$\\frac{d}{dx}(2nx) = 2n$$</p>\n\n<p>$$\\frac{d}{dx}(1) = 0$$</p>\n\n<p>Therefore, the derivative $f'(x)$ is:</p>\n\n<p>$$f'(x) = -\\frac{m}{x^2} + 2n$$</p>\n\n<p>We are given that $f'(x)$ vanishes at $x = 2$. This means $f'(2) = 0$. Setting $x = 2$ in the derivative equation, we get:</p>\n\n<p>$$-\\frac{m}{2^2} + 2n = 0$$</p>\n\n<p>This can be simplified to:</p>\n\n<p>$$-\\frac{m}{4} + 2n = 0$$</p>\n\n<p>Solving for $m$ in terms of $n$, we get:</p>\n\n<p>$$-\\frac{m}{4} = -2n$$</p>\n\n<p>$$\\frac{m}{4} = 2n$$</p>\n\n<p>$$m = 8n$$</p>\n\n<p>We are asked to find the value of $m + 8n$. Substituting $m = 8n$ into the expression $m + 8n$, we get:</p>\n\n<p>$$m + 8n = 8n + 8n = 16n$$</p>\n\n<p>However, we cannot determine the exact numerical value of $m + 8n$ without knowing the value of $n$. Therefore, the answer to the problem is:</p>\n\n<p>Option D: Cannot be determined due to insufficient data</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3076,7 +3076,7 @@
     },
     "solution": "\n<p>Given $ xy = 4225$, we can express $ y $ as:\n\n<p>$ y = \\frac{4225}{x} $ ------(i)</p></p>\n\n<p>Let $ S $ be the sum, defined as $ S = x + y = x + \\frac{4225}{x} $.</p>\n\n<p>To find the critical points, we take the derivative of $ S $:\n\n<p>$ \\frac{dS}{dx} = 1 - \\frac{4225}{x^2} $</p></p>\n\n<p>Setting the derivative equal to zero to find critical points:\n\n<p>$ \\frac{dS}{dx} = 0 $ implies $ \\frac{x^2 - 4225}{x^2} = 0 $</p></p>\n\n<p>Solving for $ x $:\n\n<p>$ x^2 = 4225 $ leads to $ x = 65 $</p></p>\n\n<p>Now, let's analyze the second derivative:\n\n<p>$ \\frac{d^2S}{dx^2} = \\frac{8450}{x^3} $</p></p>\n\n<p>Since $ \\frac{d^2S}{dx^2} $ is positive at $ x = 65 $, $ S $ has a minimum at $ x = 65 $.</p>\n\n<p>Substituting $ x = 65 $ back into equation (i):\n\n<p>$ y = \\frac{4225}{x} = 65 $ ------(ii)</p></p>\n\n<p><strong>Therefore, the minimum value of the sum $ S $ when $ x = 65 $ is $ S = 65 + 65 = 130 $.</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 10 April 2022",
+    "title": "NDA (I) 2022",
     "topic": "General",
     "type": "SCQ",
     "year": "2022"
@@ -3199,7 +3199,7 @@
     },
     "solution": "<p>Let's analyze the function $$f(x) = x^2 + 1$$ on the interval $$[1,2]$$ step by step:</p>\n\n<p><strong>Evaluating the Endpoints:</strong></p>\n\n\n<p><p>At $$x = 1:$$</p>\n<p>$$f(1) = 1^2 + 1 = 2$$</p></p>\n<p><p>At $$x = 2:$$</p>\n<p>$$f(2) = 2^2 + 1 = 5$$</p></p>\n\n\n<p><strong>Determining the Minimum and Maximum:</strong></p>\n\n\n<p><p>Since $$f(x)$$ is a quadratic function with a positive coefficient for $$x^2$$, it is a parabola opening upwards.</p></p>\n<p><p>On the interval $$[1,2]$$, the function is increasing because the derivative $$f'(x) = 2x$$ is positive for all $$x > 0$$.</p></p>\n<p><p>Therefore, the <strong>minimum value</strong> occurs at the left endpoint, $$x = 1$$, which gives $$f(1) = 2$$.</p></p>\n<p><p>The <strong>maximum value</strong> occurs at the right endpoint, $$x = 2$$, which gives $$f(2) = 5$$.</p></p>\n\n\n<p><strong>Conclusion:</strong></p>\n\n\n<p><p><strong>Statement 1:</strong> \"The maximum value of the function is 5.\" — This is correct.</p></p>\n<p><p><strong>Statement 2:</strong> \"The minimum value of the function is 2.\" — This is also correct.</p></p>\n\n<p>Thus, both statements are correct. </p>\n<p>The answer is Option C: Both 1 and 2.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3322,7 +3322,7 @@
     },
     "solution": "\n<p>The equation of the curve is $ y = e^x $.</p>\n<p>The derivative, representing the slope of the tangent to this curve, is:</p>\n<p>$ \\frac{dy}{dx} = e^x $</p>\n<p>To find the slope of the tangent at the point (0, 1), we substitute $ x = 0 $ into the derivative:</p>\n<p>$ \\frac{dy}{dx}_{(0,1)} = e^0 = 1 $</p>\n<p>Now, we can find the equation of the tangent line at the point (0, 1). Using the point-slope form of a line, we have:</p>\n<p>$ y - 1 = 1 \\cdot (x - 0) $</p>\n<p>Simplifying this equation:</p>\n<p>$ x - y + 1 = 0 $</p>\n<p>To find where this tangent meets the x-axis, set $ y = 0 $ in the equation:</p>\n<p>$ x - 0 + 1 = 0 $</p>\n<p>Solving for $ x $:</p>\n<p>$ x = -1 $</p>\n<p><strong>Therefore, the tangent will intersect the x-axis at (-1, 0).</strong></p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3445,7 +3445,7 @@
     },
     "solution": "<p>Let's analyze the function step-by-step. We have:</p>\n<p>$$f(x) = x + \\frac{1}{x}$$</p>\n<p>with the understanding that $ x \\neq 0 $.</p>\n\n<p>Find the critical points by differentiating $ f(x) $:</p>\n\n\n<p><p>First derivative:</p>\n<p>$$f'(x) = 1 - \\frac{1}{x^2}$$</p></p>\n<p><p>Set $ f'(x) = 0 $:</p>\n<p>$$1 - \\frac{1}{x^2} = 0 \\quad \\Rightarrow \\quad \\frac{1}{x^2} = 1 \\quad \\Rightarrow \\quad x^2 = 1$$</p>\n<p>This gives two critical points: $ x = 1 $ and $ x = -1 $.</p></p>\n\n\n<p>Determine the nature of the critical points using the second derivative:</p>\n\n\n<p><p>Second derivative:</p>\n<p>$$f''(x) = \\frac{d}{dx} \\left(1 - \\frac{1}{x^2}\\right) = \\frac{2}{x^3}$$</p></p>\n<p><p>At $ x = 1 $:</p>\n<p>$$f''(1) = \\frac{2}{1^3} = 2 > 0$$</p>\n<p>So, $ f(x) $ has a local minimum at $ x = 1 $.</p></p>\n<p><p>At $ x = -1 $:</p>\n<p>$$f''(-1) = \\frac{2}{(-1)^3} = -2 < 0$$</p>\n<p>So, $ f(x) $ has a local maximum at $ x = -1 $.</p></p>\n\n\n<p>Calculate the function values at these points:</p>\n\n\n<p><p>For $ x = 1 $ (local minimum):</p>\n<p>$$f(1) = 1 + \\frac{1}{1} = 2$$</p></p>\n\n<p><p>For $ x = -1 $ (local maximum):</p>\n<p>$$f(-1) = -1 + \\frac{1}{-1} = -1 - 1 = -2$$</p></p>\n\n<p>Now, let’s evaluate the statements given:</p>\n\n<p><p><strong>Statement 1:</strong> “The local maximum value of $ f(x) $ is less than its local minimum value.”</p>\n<p>Comparison: </p></p>\n<p><p>Local maximum value: $-2$</p></p>\n<p><p>Local minimum value: $2$</p>\n<p>Since $-2 < 2$, this statement is correct.</p></p>\n<p><p><strong>Statement 2:</strong> “The local maximum value of $ f(x) $ occurs at $ x = 1 $.”</p>\n<p>We found that the local maximum occurs at $ x = -1 $, not $ x = 1 $. Hence, this statement is incorrect.</p></p>\n\n<p>Thus, the correct answer is:</p>\n<p>Option A: 1 only.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3568,7 +3568,7 @@
     },
     "solution": "<p>To find the maximum area of a rectangle inscribed in a circle of radius 2 units, follow these steps:</p>\n\n<p><p>Since the rectangle is inscribed in the circle, its diagonal is equal to the diameter of the circle. The diameter is:</p>\n<p>$$\\text{Diameter} = 2 \\times 2 = 4 \\text{ units}.$$</p></p>\n<p><p>Let the sides of the rectangle be $$a$$ and $$b$$. The diagonal (by the Pythagorean Theorem) is:</p>\n<p>$$\\sqrt{a^2 + b^2} = 4,$$</p>\n<p>which implies:</p>\n<p>$$a^2 + b^2 = 16.$$</p></p>\n<p><p>The area of the rectangle is:</p>\n<p>$$A = a \\times b.$$</p>\n<p>To maximize the area for a given sum of squares, the rectangle should be a square (i.e., $$a = b$$). </p></p>\n<p><p>Setting $$a = b$$, substitute into the equation:</p>\n<p>$$2a^2 = 16 \\quad \\Rightarrow \\quad a^2 = 8 \\quad \\Rightarrow \\quad a = 2\\sqrt{2}.$$</p></p>\n\n<p><p>Calculate the area:</p>\n<p>$$A = a^2 = (2\\sqrt{2})^2 = 8 \\text{ square units}.$$</p></p>\n\n<p>Thus, the maximum area of the rectangle is 8 square units, which corresponds to Option C.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3691,7 +3691,7 @@
     },
     "solution": "<p>f(x) = x<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">3</span>&nbsp;+ x<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">2</span>&nbsp;+ kx</p>\n\n<p>f<sup>'</sup>(x) = 3x<sup>2</sup>&nbsp;+ 2x + k</p>\n\n<p>For no extremum,&nbsp;f&nbsp;should have zero turning points.</p>\n\n<p>There will be no slope existing either it is +ve or -ve</p>\n\n<p>For that above quadratic have no real roots.</p>\n\n<p>⇒&nbsp;<span style=\"\">f</span><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">'</span><span style=\"\">(x)&nbsp;≠ 0 which is only possible when,</span></p>\n\n<p>2<sup>2</sup>&nbsp;- 4&nbsp;× 3&nbsp;× k &lt; 0</p>\n\n<p>⇒ 4 - 12k &lt; 0</p>\n\n<p><span style=\"background-color: rgb(255, 255, 255);\">⇒&nbsp;</span>4 &lt; 12k</p>\n\n<p><span style=\"background-color: rgb(255, 255, 255);\">⇒&nbsp;</span>1 &lt; 3k</p>\n\n<p><span style=\"background-color: rgb(255, 255, 255);\">⇒&nbsp;</span>3k &gt; 1</p>\n\n<p><strong>∴ The condition that f(x) = x<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">3</span>&nbsp;+ x<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">2</span>&nbsp;+ kx has no local extremum is&nbsp;3k &gt; 1</strong></p>\n",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3814,7 +3814,7 @@
     },
     "solution": "<p>To determine when the function </p>\n<p>$$f(x) = x^2 - kx$$ </p>\n<p>is monotonically increasing on the interval $$(1, \\infty),$$ </p>\n<p>we follow these steps:</p>\n\n<p><p>Find the derivative of $f(x)$:</p>\n<p>$$f'(x) = 2x - k.$$</p></p>\n<p><p>For $f(x)$ to be increasing on $$(1, \\infty),$$ its derivative must be positive for every $x > 1$. Since $f'(x)$ is a linear function (and hence strictly increasing in $x$), its minimum on $$(1, \\infty)$$ occurs at the left endpoint, $x = 1$. Therefore, we need:</p>\n<p>$$f'(1) > 0.$$</p></p>\n\n<p><p>Substitute $x = 1$ into the derivative:</p>\n<p>$$f'(1) = 2(1) - k = 2 - k > 0.$$</p></p>\n\n<p><p>Solve for $k$:</p>\n<p>$$2 - k > 0 \\quad \\Longrightarrow \\quad k < 2.$$</p></p>\n\n<p>Thus, the function is monotonically increasing in the interval $$(1, \\infty)$$ if and only if $$k < 2.$$ </p>\n<p>Among the given options, this corresponds to:</p>\n<p>Option A: $$k < 2.$$</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -3937,7 +3937,7 @@
     },
     "solution": "<p>Let's work through the problem step by step:</p>\n\n<p><p>The curve is given by:</p>\n<p>$$ x^2 = y $$</p></p>\n\n<p><p>Differentiate both sides with respect to $$x$$ to get the slope of the tangent line:</p>\n<p>$$ \\frac{d}{dx}(x^2) = \\frac{dy}{dx} \\quad \\Rightarrow \\quad 2x = \\frac{dy}{dx} $$</p></p>\n\n<p><p>At the point $$(1, 1)$$, substitute $$x = 1$$:</p>\n<p>$$ \\frac{dy}{dx} = 2 \\cdot 1 = 2 $$</p>\n<p>So, the slope $$m=2$$.</p></p>\n<p><p>The angle $$\\theta$$ that the tangent makes with the positive $$x$$-axis satisfies:</p>\n<p>$$ \\tan \\theta = m = 2 $$</p>\n<p>Therefore:</p>\n<p>$$ \\theta = \\tan^{-1}(2) $$</p></p>\n<p><p>Approximating:</p>\n<p>$$ \\theta \\approx \\tan^{-1}(2) \\approx 1.107 \\text{ radians} $$</p>\n<p>(or about $$63.4^\\circ$$)</p></p>\n<p><p>Comparing with the given options:</p></p>\n\n\n<p><p>$$\\frac{\\pi}{3} \\approx 1.047 \\text{ radians}$$</p></p>\n<p><p>$$\\frac{\\pi}{2} \\approx 1.571 \\text{ radians}$$</p>\n<p>Since:</p>\n<p>$$ \\frac{\\pi}{3} < 1.107 < \\frac{\\pi}{2} $$</p>\n<p>The correct interval corresponds to Option D:</p>\n<p>$$ \\frac{\\pi}{3} < \\theta < \\frac{\\pi}{2} $$</p></p>\n\n<p>Thus, the answer is Option D.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 14 November 2021",
+    "title": "NDA (II) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4060,7 +4060,7 @@
     },
     "solution": "<h3>Concept</h3>\n<p>For the function $ f(x) = \\sin x $:</p>\n\n<p><p>The function increases in intervals where $ f'(x) > 0 $.</p></p>\n<p><p>The function decreases in intervals where $ f'(x) < 0 $.</p></p>\n\n<h3>Calculation</h3>\n<p>Given the function $ f(x) = \\sin x $, the derivative is:</p>\n<p>$ f'(x) = \\cos x $</p>\n\n<p><p>For $ x \\in \\left(0, \\frac{\\pi}{2}\\right) $, $ \\cos x > 0 $.</p></p>\n<p><p>For $ x \\in \\left(\\frac{\\pi}{2}, \\pi\\right) $, $ \\cos x < 0 $.</p></p>\n\n<p>Therefore, for $ x \\in (0, \\pi) $, $ f(x) $ increases until it reaches a maximum at $ \\frac{\\pi}{2} $ and then decreases to a local minimum at $ \\pi $.</p>\n\n<p>For $ x \\in \\left(\\frac{5\\pi}{2}, 3\\pi\\right) $, $ \\cos x < 0 $.</p>\n\n<p>Thus, $ f(x) $ decreases in the interval $ \\left(\\frac{5\\pi}{2}, 3\\pi\\right) $.</p>\n<p><strong>Conclusion:</strong> Statement 2 is correct.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4183,7 +4183,7 @@
     },
     "solution": "<p>The slope of the curve given by the function $ y = -x^3 + 3x^2 + 2x - 27 $ is determined by its derivative. To find the point where the slope is maximum, we first need to find the derivative of the function and then determine where this derivative has a maximum value.</p>\n\n<p><p><strong>Find the derivative of the function:</strong>  </p>\n<p>The derivative of $ y = -x^3 + 3x^2 + 2x - 27 $ is:</p>\n<p>$$    y' = \\frac{d}{dx}(-x^3 + 3x^2 + 2x - 27) = -3x^2 + 6x + 2    $$</p></p>\n<p><p><strong>Find the critical points of $ y' $:</strong>  </p>\n<p>The maximum slope is found where the derivative $ y' = -3x^2 + 6x + 2 $ reaches a critical point. A critical point occurs where the second derivative is zero or undefined. Thus, take the derivative of $ y' $:</p>\n<p>$$    y'' = \\frac{d}{dx}(-3x^2 + 6x + 2) = -6x + 6    $$</p>\n<p>Set the second derivative to zero to find critical points:</p>\n<p>$$     -6x + 6 = 0     $$</p>\n<p>Solving for $ x $:</p>\n<p>$$     -6x = -6     $$</p>\n<p>$$     x = 1     $$</p></p>\n<p><p><strong>Determine if this is a maximum by examining the sign of $ y'' $:</strong>  </p>\n<p>For $ x = 1 $:</p>\n<p>$ y''(1) = -6(1) + 6 = 0 $</p>\n<p>Typically, an inflection point occurs here as $ y'' = 0 $, hence no conclusive proof of it being a maximum from the second derivative alone. However, since the derivative $ y'' $ changes sign around $ x = 1 $, the slope may indeed be a maximum near this point.</p></p>\n\n<p>Therefore, the maximum slope occurs at Option C, $ x = 1 $.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4306,7 +4306,7 @@
     },
     "solution": "<p>To find the maximum value of $ P = xy $ given the constraint $ x + y = 20 $, the method of completing the square or using calculus can be applied.</p>\n<p>First, express $ y $ in terms of $ x $:</p>\n<p>$  y = 20 - x  $</p>\n<p>Substitute this into the expression for $ P $:</p>\n<p>$  P = x(20 - x) = 20x - x^2  $</p>\n<p>This is a quadratic expression in terms of $ x $: </p>\n<p>$  P = -x^2 + 20x  $</p>\n<p>A quadratic equation of the form $ ax^2 + bx + c $ has its maximum (or minimum) value at $ x = -\\frac{b}{2a} $. Here, $ a = -1 $ and $ b = 20 $.</p>\n<p>Thus, the value of $ x $ that maximizes $ P $ is:</p>\n<p>$  x = -\\frac{20}{2(-1)} = 10  $</p>\n<p>Substituting $ x = 10 $ into $ y = 20 - x $, we get:</p>\n<p>$  y = 20 - 10 = 10  $</p>\n<p>Substitute these values into the expression for $ P $:</p>\n<p>$  P = 10 \\cdot 10 = 100  $</p>\n<p>Thus, the maximum value of $ P $ is:</p>\n<h2>Option A: 100</h2>\n<p>Therefore, the correct answer is 100.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
@@ -4429,7 +4429,7 @@
     },
     "solution": "<p><strong>Concept:</strong></p>\n<p><strong>Second Derivative Test:</strong> Let $ f $ be a function defined on an interval $ I $.</p>\n\n<p><p>Calculate $ f'(x) $.</p></p>\n<p><p>Solve $ f'(x) = 0 $ to find its roots. Suppose $ x = c $ is a root.</p></p>\n<p><p>Calculate $ f''(x) $ and evaluate it at $ x = c $.</p></p>\n<p><p>If $ f''(c) < 0 $, then $ x = c $ is a point of local maxima.</p></p>\n<p><p>If $ f''(c) > 0 $, then $ x = c $ is a point of local minima.</p></p>\n<p><p>If $ f''(c) = 0 $, use the <strong>first derivative test</strong>.</p></p>\n\n<p><strong>Note:</strong></p>\n<p><strong>Maxima and Minima on a Closed Interval:</strong></p>\n<p>Let $ f(x) $ be a function defined on $[a, b]$. Let $ m $ be the local minimum, and $ M $ be the local maximum of $ f(x) $.</p>\n\n<p><p>The minimum value of $ f(x) $ on $[a, b]$ is the smallest of $ m $, $ f(a) $, and $ f(b) $.</p></p>\n<p><p>The maximum value on $[a, b]$ is the greatest of $ M $, $ f(a) $, and $ f(b) $.</p></p>\n\n<p><strong>Calculation:</strong></p>\n<p>Let $ f(x) = \\sin 2x \\cdot \\cos 2x $.</p>\n\n<p><p>$ f'(x) = 2 \\cos^2 2x - 2 \\sin^2 2x $.</p></p>\n<p><p>This simplifies to $ f'(x) = 2(\\cos^2 2x - \\sin^2 2x) $.</p></p>\n<p><p>Since $ \\cos 2x = \\cos^2 x - \\sin^2 x $, we have $ f'(x) = 2\\cos 4x $.</p></p>\n\n<p>Set $ f'(x) = 0 $:</p>\n\n<p>$ 2\\cos 4x = 0 $ implies $ x = \\pi/8 $.</p>\n\n<p>Calculate the second derivative:</p>\n\n<p>$ f''(x) = -8 \\sin 4x $.</p>\n\n<p>Since $ f''(x) = -8 < 0 $, $ x = \\pi/8 $ is a point of maxima.</p>\n<p>Thus, the maximum value of $ f(x) = \\sin 2x \\cdot \\cos 2x $ is given by $ f(\\pi/8) = \\sin(\\pi/4) \\cdot \\cos(\\pi/4) = \\frac{1}{2} $.</p>",
     "subject": "mathematics",
-    "title": "NDA Mathematics 18 April 2021",
+    "title": "NDA (I) 2021",
     "topic": "General",
     "type": "SCQ",
     "year": "2021"
