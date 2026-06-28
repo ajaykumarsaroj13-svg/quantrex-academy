@@ -1,0 +1,157 @@
+[
+  {
+    "_id": "6a2bdc0c2762cf4b5769b79c",
+    "question_id": "lv0vxcdq",
+    "chapterId": "differentiation-of-composite-function",
+    "subject": "Mathematics",
+    "topic": "differentiation-of-composite-function",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "4",
+      "2",
+      "16",
+      "8"
+    ],
+    "solution": "<p>Given that  $$(g \\circ f)(x) = x$$  for all $$x \\in \\mathbf{R}$$. This means $$g(f(x)) = x$$ for all $$x \\in \\mathbf{R}$$. Differentiating both sides with respect to $$x$$, we get:\n\n<p>$$g'(f(x)) \\cdot f'(x) = 1$$</p>\n\n</p>\n\n<p>Now, we want to find the value of $$8g'(2)$$. To do this, we need to find a value of $$x$$ such that $$f(x) = 2$$. Let's solve for $$x$$:\n\n<p>$$x^5 + 2e^{x/4} = 2$$</p>\n\n</p>\n\n<p>By inspection, we see that $$x = 0$$ is a solution. Therefore, $$f(0) = 2$$. Now, we can substitute this into our differentiated equation:\n\n<p>$$g'(f(0)) \\cdot f'(0) = 1$$</p>\n\n<p>$$g'(2) \\cdot f'(0) = 1$$</p>\n\n</p>\n\n<p>Let's find $$f'(0)$$:\n\n<p>$$f'(x) = 5x^4 + \\frac{1}{2}e^{x/4}$$</p>\n\n<p>$$f'(0) = \\frac{1}{2}$$</p>\n\n</p>\n\n<p>Substituting this back into our equation:\n\n<p>$$g'(2) \\cdot \\frac{1}{2} = 1$$</p>\n\n<p>$$g'(2) = 2$$</p>\n\n</p>\n\n<p>Finally, we can calculate $$8g'(2)$$:\n\n<p>$$8g'(2) = 8 \\cdot 2 = \\boxed{16}$$</p></p>\n\n<p></p>",
+    "__v": 0,
+    "title": "JEE Main 2024 (Online) 4th April Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc0c2762cf4b5769b79d",
+    "question_id": "lvb294td",
+    "chapterId": "differentiation-of-composite-function",
+    "subject": "Mathematics",
+    "topic": "differentiation-of-composite-function",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "4",
+      "5",
+      "3",
+      "8"
+    ],
+    "solution": "<p>To determine $$g^{\\prime}(0)$$, we start by applying the chain rule and product rule to find the derivative of the given function $$g(x) = h\\left(\\mathrm{e}^x\\right) \\mathrm{e}^{h(x)}$$.</p>\n\n<p>The product rule states that if we have two functions $$u(x)$$ and $$v(x)$$, then the derivative of their product is given by:</p>\n\n<p>$$ (u(x)v(x))' = u'(x)v(x) + u(x)v'(x) $$</p>\n\n<p>Let's denote $$u(x) = h(\\mathrm{e}^x)$$ and $$v(x) = \\mathrm{e}^{h(x)}$$.</p>\n\n<p>First, we need to find $$u'(x)$$ and $$v'(x)$$. Using the chain rule, we find:</p>\n\n<p>$$ u'(x) = \\frac{d}{dx}h(\\mathrm{e}^x) = h'(\\mathrm{e}^x) \\cdot \\frac{d}{dx}(\\mathrm{e}^x) = h'(\\mathrm{e}^x) \\cdot \\mathrm{e}^x $$</p>\n\n<p>Now, the derivative of $$v(x)$$ is:</p>\n\n<p>$$ v'(x) = \\frac{d}{dx}(\\mathrm{e}^{h(x)}) = \\mathrm{e}^{h(x)} \\cdot h'(x) $$</p>\n\n<p>Using the product rule, we get the derivative of $$g(x)$$:</p>\n\n<p>$$ g'(x) = u'(x) v(x) + u(x) v'(x) $$</p>\n\n<p>Substituting $$u(x)$$, $$v(x)$$, $$u'(x)$$, and $$v'(x)$$ into the above expression, we get:</p>\n\n<p>$$ g'(x) = \\left( h'(\\mathrm{e}^x) \\mathrm{e}^x \\right) \\mathrm{e}^{h(x)} + \\left( h(\\mathrm{e}^x) \\right) \\left( \\mathrm{e}^{h(x)} h'(x) \\right) $$</p>\n\n<p>Next, we need to evaluate this at $$x = 0$$:</p>\n\n<p>First, we know that:</p>\n\n<p>$$ h(0) = 0 $$</p>\n\n<p>$$ h(1) = 1 $$</p>\n\n<p>$$ h'(0) = 2 $$</p>\n\n<p>$$ h'(1) = 2 $$</p>\n\n<p>Substituting $$x = 0$$ into the expressions, we get:</p>\n\n<p>$$ u(0) = h(\\mathrm{e}^0) = h(1) = 1 $$</p>\n\n<p>$$ v(0) = \\mathrm{e}^{h(0)} = \\mathrm{e}^0 = 1 $$</p>\n\n<p>$$ u'(0) = h'(\\mathrm{e}^0) \\mathrm{e}^0 = h'(1) \\cdot 1 = 2 $$</p>\n\n<p>$$ v'(0) = \\mathrm{e}^{h(0)} h'(0) = \\mathrm{e}^0 \\cdot 2 = 2 $$</p>\n\n<p>Therefore, evaluating $$g'(0)$$:</p>\n\n<p>$$ g'(0) = \\left( u'(0) v(0) \\right) + \\left( u(0) v'(0) \\right) $$</p>\n\n<p>$$ g'(0) = \\left( 2 \\cdot 1 \\right) + \\left( 1 \\cdot 2 \\right) $$</p>\n\n<p>$$ g'(0) = 2 + 2 = 4 $$</p>\n\n<p>Thus, the value of $$g^{\\prime}(0)$$ is 4, which corresponds to Option A.</p>\n\n<p>The correct answer is <strong>Option A: 4</strong>.</p>",
+    "__v": 0,
+    "title": "JEE Main 2024 (Online) 6th April Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc0c2762cf4b5769b79e",
+    "question_id": "1ldr85iqr",
+    "chapterId": "differentiation-of-composite-function",
+    "subject": "Mathematics",
+    "topic": "differentiation-of-composite-function",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "<p>$$f'(x) = {{3x + 2} \\over {2x + 3}}x \\in R - \\left\\{ { - {3 \\over 2}} \\right\\}$$</p>\n<p>$${f^5}(x) = {f_o}{f_o}{f_o}{f_o}f(x)$$</p>\n<p>$${f_o}f(x) = {{13x + 12} \\over {12x + 13}}$$</p>\n<p>$${f_o}{f_o}{f_o}{f_o}f(x) = {{1563x + 1562} \\over {1562x + 1563}}$$</p>\n<p>$$ \\equiv {{ax + b} \\over {bx + a}}$$</p>\n<p>$$\\therefore$$ $$a = 1563,b = 1562$$</p>\n<p>$$ = 3125$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 30th January Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc0c2762cf4b5769b79f",
+    "question_id": "1l5ai1at2",
+    "chapterId": "differentiation-of-composite-function",
+    "subject": "Mathematics",
+    "topic": "differentiation-of-composite-function",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${1 \\over {49}}$$",
+      "$${3 \\over {49}}$$",
+      "$${43 \\over {49}}$$",
+      "$${91 \\over {49}}$$"
+    ],
+    "solution": "<p>$$f(x) = 3{x^2} + 1$$</p>\n<p>f'(x) is bijective function</p>\n<p>and $$f(g(x)) = x \\Rightarrow g(x)$$ is inverse of f(x)</p>\n<p>$$g(f(x)) = x$$</p>\n<p>$$g'(f(x))\\,.\\,f'(x) = 1$$</p>\n<p>$$g'(f(x)) = {1 \\over {3{x^2} + 1}}$$</p>\n<p>Put x = 4 we get</p>\n<p>$$g'(63) = {1 \\over {49}}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 25th June Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc0c2762cf4b5769b7a0",
+    "question_id": "HrO6IQwQJN5Eo4N4zJ3rsa0w2w9jx220fw8",
+    "chapterId": "differentiation-of-composite-function",
+    "subject": "Mathematics",
+    "topic": "differentiation-of-composite-function",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "a$$\\alpha $$<sup>2</sup> + b$$\\alpha $$ - a = -2$$\\alpha $$<sup>2</sup>",
+      "a$$\\alpha $$<sup>2</sup> + b$$\\alpha $$ + a = 0",
+      "a$$\\alpha $$<sup>2</sup> - b$$\\alpha $$ - a = 0",
+      "a$$\\alpha $$<sup>2</sup> - b$$\\alpha $$ - a = 1"
+    ],
+    "solution": "f(x) = ln(sin x), g(x) = sin<sup>–1</sup> (e<sup>–x</sup>)<br><br>\nf(g(x)) = ln(sin(sin<sup>–1</sup> e<sup>–x</sup>)) = -x<br><br>\nf(g($$\\alpha $$)) = – $$\\alpha $$ = b<br><br>\nAs f(g(x)) = – x <br><br>\n$$ \\therefore $$ (f(g(x)))' = – 1<br><br>\n $$ \\Rightarrow $$ (f(g($$\\alpha $$)))' = – 1 = a<br><br>\n$$ \\therefore $$ b = – $$\\alpha $$,\na = – 1<br><br>\n$$ \\therefore $$ a$$\\alpha $$<sup>2</sup> - b$$\\alpha $$ - a = - $$\\alpha $$<sup>2</sup> + $$\\alpha $$<sup>2</sup> + 1 = 1",
+    "__v": 0,
+    "title": "JEE Main 2019 (Online) 10th April Evening Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc0c2762cf4b5769b7a1",
+    "question_id": "nJGKt5gcnsbeag2W6jFE6",
+    "chapterId": "differentiation-of-composite-function",
+    "subject": "Mathematics",
+    "topic": "differentiation-of-composite-function",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "33",
+      "12",
+      "9",
+      "15"
+    ],
+    "solution": "Given ƒ(1) = 1, ƒ'(1) = 3\n<br><br>Let y = ƒ(ƒ(ƒ(x))) + (ƒ(x))<sup>2\n</sup>\n<br><br>On differentiating both sides with respect to x we get,\n<br><br>$${{dy} \\over {dx}}$$ = ƒ'(ƒ(ƒ(x))).ƒ'(ƒ(x)).ƒ'(x) + 2ƒ(x).ƒ'(x)\n<br><br>Now at x = 1,\n<br><br>$${{dy} \\over {dx}}$$ = ƒ'(ƒ(ƒ(1))).ƒ'(ƒ(1)).ƒ'(1) + 2ƒ(1).ƒ'(1)\n<br><br>= ƒ'(ƒ(1)).ƒ'(1).ƒ'(1) + 2.1.ƒ'(1)\n<br><br>= ƒ'(1).ƒ'(1).ƒ'(1) + 2.1.ƒ'(1)\n<br><br>= 3$$ \\times $$3$$ \\times $$3 + 2$$ \\times $$3\n<br><br>= 33",
+    "__v": 0,
+    "title": "JEE Main 2019 (Online) 8th April Evening Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc0c2762cf4b5769b7a3",
+    "question_id": "mgG2EkWdjrRPzc2r",
+    "chapterId": "differentiation-of-composite-function",
+    "subject": "Mathematics",
+    "topic": "differentiation-of-composite-function",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${1 \\over {1 + {{\\left\\{ {g\\left( x \\right)} \\right\\}}^5}}}$$ ",
+      "$$1 + {\\left\\{ {g\\left( x \\right)} \\right\\}^5}$$ ",
+      "$$1 + {x^5}$$ ",
+      "$$5{x^4}$$ "
+    ],
+    "solution": "Since $$f(x)$$ and $$g(x)$$ are inverse of each other\n<br><br>$$\\therefore$$ $$g'\\left( {f\\left( x \\right)} \\right) = {1 \\over {f'\\left( x \\right)}}$$\n<br><br>$$ \\Rightarrow g'\\left( {f\\left( x \\right)} \\right) = 1 + {x^5}$$\n<br><br>$$\\left( \\, \\right.$$ As $$\\,f'\\left( x \\right) = {1 \\over {1 + {x^5}}}$$ $$\\left. \\, \\right)$$\n<br><br>Here $$x=g(y)$$\n<br><br>$$\\therefore$$ $$g'\\left( y \\right) = 1 + \\left\\{ {g\\left( y \\right)} \\right\\}$$\n<br><br>$$ \\Rightarrow g'\\left( x \\right) = 1 + \\left\\{ {g\\left( x \\right)} \\right\\}$$",
+    "__v": 0,
+    "title": "JEE Main 2014 (Offline)",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc0c2762cf4b5769b7a5",
+    "question_id": "h3iEjCw8iLxihq9W",
+    "chapterId": "differentiation-of-composite-function",
+    "subject": "Mathematics",
+    "topic": "differentiation-of-composite-function",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$-4$$ ",
+      "$$0$$ ",
+      "$$-2$$ ",
+      "$$4$$ "
+    ],
+    "solution": "$$g'\\left( x \\right) = 2\\left( {f\\left( {2f\\left( x \\right) + 2} \\right)} \\right)$$\n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\left( {{d \\over {dx}}\\left( {f\\left( {2f\\left( x \\right) + 2} \\right)} \\right)} \\right)$$\n<br><br>$$ = 2f\\left( {2f\\left( x \\right) + 2} \\right)f'\\left( {2f\\left( x \\right)} \\right)$$ \n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\, + \\left. 2 \\right).\\left( {2f'\\left( x \\right)} \\right)$$\n<br><br>$$ \\Rightarrow g'\\left( 0 \\right) = 2f\\left( {2f\\left( 0 \\right) + 2} \\right).$$ \n<br><br>$$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,f'\\left( {2f\\left( 0 \\right) + 2} \\right).2f'\\left( 0 \\right)$$\n<br><br>$$ = 4f\\left( 0 \\right){\\left( {f'\\left( 0 \\right)} \\right)^2}$$\n<br><br>$$ = 4\\left( { - 1} \\right){\\left( 1 \\right)^2} =  - 4$$",
+    "__v": 0,
+    "title": "AIEEE 2010",
+    "exam": "JEE Main"
+  }
+]

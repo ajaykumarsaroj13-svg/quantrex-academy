@@ -1,0 +1,259 @@
+{
+  "id": "real_test_257",
+  "examType": "JEE Advanced",
+  "title": "NDA Mathematics 16 April 2023",
+  "year": "2023",
+  "duration": 180,
+  "totalMarks": 180,
+  "totalQuestions": 11,
+  "isOfficial": true,
+  "questions": [
+    {
+      "id": "tllwm7dkbe",
+      "questionNumber": 1,
+      "questionText": "<p>Consider the following statements :</p>\n\n<p>1. f(x) = In x is increasing in (0, ∞)</p>\n\n<p>2. <span class=\"math-tex\">$g(x)=e^x+e^{\\frac{1}{x}} $</span> is decreasing in (0, ∞)</p>\n\n<p>Which of the statements given above is/are correct ?&nbsp;&nbsp;</p>\n",
+      "options": [
+        "1 only&nbsp;",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine which of the statements are correct, let's analyze each one in detail:</p>\n\n<p><strong>Statement 1: $ f(x) = \\ln x $ is increasing in $ (0, \\infty) $</strong></p>\n\n<p>To verify if $ f(x) = \\ln x $ is increasing, we need to find the derivative of $ f(x) $ and check its sign in the interval $ (0, \\infty) $.</p>\n\n<p>The derivative of $ f(x) = \\ln x $ is given by:</p>\n\n<p>$$ f'(x) = \\frac{d}{dx} (\\ln x) = \\frac{1}{x} $$</p>\n\n<p>In the interval $ (0, \\infty) $, $ x $ is always positive, therefore $ \\frac{1}{x} $ is always positive. Hence, $ f(x) = \\ln x $ is an increasing function in $ (0, \\infty) $.</p>\n\n<p>Thus, Statement 1 is correct.</p>\n\n<p><strong>Statement 2: $ g(x) = e^x + e^{\\frac{1}{x}} $ is decreasing in $ (0, \\infty) $</strong></p>\n\n<p>To verify if $ g(x) = e^x + e^{\\frac{1}{x}} $ is decreasing, we need to find the derivative of $ g(x) $ and check its sign in the interval $ (0, \\infty) $.</p>\n\n<p>The derivative of $ g(x) $ is given by:</p>\n\n<p>$$ g'(x) = \\frac{d}{dx} \\left( e^x + e^{\\frac{1}{x}} \\right) $$</p>\n\n<p>Applying the chain rule to the second term, we get:</p>\n\n<p>$$ g'(x) = e^x + e^{\\frac{1}{x}} \\cdot \\left( -\\frac{1}{x^2} \\right) = e^x - \\frac{e^{\\frac{1}{x}}}{x^2} $$</p>\n\n<p>To determine if $ g'(x) $ is negative in $ (0, \\infty) $, we need to check if:</p>\n\n<p>$$ e^x - \\frac{e^{\\frac{1}{x}}}{x^2} < 0 $$</p>\n\n<p>However, for $ x > 0 $, $ e^x $ grows exponentially, and $ e^{\\frac{1}{x}} $ is always positive. Thus, $ e^x $ will always be larger than $ \\frac{e^{\\frac{1}{x}}}{x^2} $ for $ x > 1 $. This indicates that $ g'(x) $ is generally positive in $ (0, \\infty) $.</p>\n\n<p>Therefore, $ g(x) = e^x + e^{\\frac{1}{x}} $ is not a decreasing function in $ (0, \\infty) $.</p>\n\n<p>Thus, Statement 2 is incorrect.</p>\n\n<p><strong>Conclusion:</strong></p>\n\n<p>The correct answer is:</p>\n\n<p><strong>Option A: 1 only</strong></p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7dkbp",
+      "questionNumber": 2,
+      "questionText": "What is the derivative of sin<sup>2</sup> x with respect to cos<sup>2</sup>x ?&nbsp;&nbsp;",
+      "options": [
+        "-1",
+        "1",
+        "sin2x",
+        "cos2x"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the derivative of $$\\sin^2 x$$ with respect to $$\\cos^2 x$$, we need to use the concept of implicit differentiation. We will first express the derivatives of these functions with respect to $$x$$ and then use the chain rule.</p>\n\n<p>First, let's find the derivatives of $$\\sin^2 x$$ and $$\\cos^2 x$$ with respect to $$x$$:</p>\n\n<p>The derivative of $$\\sin^2 x$$ with respect to $$x$$ is found using the chain rule:</p>\n\n<p>\n  $$\\frac{d}{dx} (\\sin^2 x) = 2 \\sin x \\cdot \\cos x = \\sin 2x$$\n</p>\n\n<p>The derivative of $$\\cos^2 x$$ with respect to $$x$$ is also found using the chain rule:</p>\n\n<p>\n  $$\\frac{d}{dx} (\\cos^2 x) = 2 \\cos x \\cdot (-\\sin x) = -\\sin 2x$$\n</p>\n\n<p>Now we need to find the derivative of $$\\sin^2 x$$ with respect to $$\\cos^2 x$$. By using the chain rule in the form:</p>\n\n<p>\n  $$\\frac{d}{d(\\cos^2 x)} (\\sin^2 x) = \\frac{\\frac{d}{dx} (\\sin^2 x)}{\\frac{d}{dx} (\\cos^2 x)}$$\n</p>\n\n<p>Substituting the derivatives we calculated earlier, we get:</p>\n\n<p>\n  $$\\frac{d}{d(\\cos^2 x)} (\\sin^2 x) = \\frac{\\sin 2x}{-\\sin 2x} = -1$$\n</p>\n\n<p>Therefore, the correct answer is Option A: -1.</p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7dkbu",
+      "questionNumber": 3,
+      "questionText": "For what value of m with m &lt; 0, is the area bounded by the lines y = x, y = mx and x = 2 equal to 3 ?",
+      "options": [
+        "<span class=\"math-tex\">$- \\frac{1}{2}$</span>",
+        "-1",
+        "<span class=\"math-tex\">$- \\frac{3}{2}$</span>",
+        "-2"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine the value of $$m$$ for which the area bounded by the lines $$y = x$$, $$y = mx$$, and $$x = 2$$ is equal to 3, we need to find the area of the triangle formed by these lines. The vertices of the triangle are the points of intersection of these lines.</p>\n\n<p>The lines intersect at the following points:\n\n<ul>\n\n<li>$$y = x$$ and $$x = 2$$ intersect at the point $$(2, 2)$$.</li>\n\n<li>$$y = mx$$ and $$x = 2$$ intersect at the point $$(2, 2m)$$.</li>\n\n<li>The lines $$y = x$$ and $$y = mx$$ intersect at the origin $$(0, 0)$$ because at this point, $$y = x = mx$$ implies $$x(1 - m) = 0$$, so $$x = 0$$.</li>\n\n</ul>\n\n</p>\n\n<p>The area of the triangle can be found using the formula for the area of a triangle with vertices at $$(x_1, y_1)$$, $$(x_2, y_2)$$, and $$(x_3, y_3)$$:</p>\n\n<p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \\right| $$</p>\n\n</p>\n\n<p>Substituting the coordinates of the vertices $$(0, 0)$$, $$(2, 2)$$, and $$(2, 2m)$$:</p>\n\n<p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\left| 0(2 - 2m) + 2(2m - 0) + 2(0 - 2) \\right| $$</p>\n\n</p>\n\n<p>Simplifying inside the absolute value:</p>\n\n<p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\left| 2(2m) + 2(-2) \\right| $$</p>\n\n</p>\n\n<p>\n\n<p>$$ = \\frac{1}{2} \\left| 4m - 4 \\right| $$</p>\n\n</p>\n\n<p>Since we are given that the area is 3, we set up the equation:</p>\n\n<p>\n\n<p>$$ \\frac{1}{2} \\left| 4m - 4 \\right| = 3 $$</p>\n\n</p>\n\n<p>Multiplying both sides by 2 to eliminate the fraction:</p>\n\n<p>\n\n<p>$$ \\left| 4m - 4 \\right| = 6 $$</p>\n\n</p>\n\n<p>This absolute value equation splits into two cases:</p>\n\n<p>1. $$4m - 4 = 6$$</p>\n\n<p>2. $$4m - 4 = -6$$</p>\n\n<p>Solving the first case:</p>\n\n<p>\n\n<p>$$ 4m - 4 = 6 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ 4m = 10 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ m = \\frac{5}{2} $$</p>\n\n</p>\n\n<p>Since this is positive, it does not satisfy $$m < 0$$.</p>\n\n<p>Solving the second case:</p>\n\n<p>\n\n<p>$$ 4m - 4 = -6 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ 4m = -2 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ m = -\\frac{1}{2} $$</p>\n\n</p>\n\n<p>This value is negative and satisfies $$m < 0$$.</p>\n\n<p>Therefore, the correct value of $$m$$ is</p>\n\n<p>\n\n<p>$$ m = -\\frac{1}{2} $$</p>\n\n</p>\n\n<p>The correct option is <span class=\"math-tex\">$$- \\frac{1}{2}$$</span>.</p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7dkbe",
+      "questionNumber": 4,
+      "questionText": "<p>Consider the following statements :</p>\n\n<p>1. f(x) = In x is increasing in (0, ∞)</p>\n\n<p>2. <span class=\"math-tex\">$g(x)=e^x+e^{\\frac{1}{x}} $</span> is decreasing in (0, ∞)</p>\n\n<p>Which of the statements given above is/are correct ?&nbsp;&nbsp;</p>\n",
+      "options": [
+        "1 only&nbsp;",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine which of the statements are correct, let's analyze each one in detail:</p>\n\n<p><strong>Statement 1: $ f(x) = \\ln x $ is increasing in $ (0, \\infty) $</strong></p>\n\n<p>To verify if $ f(x) = \\ln x $ is increasing, we need to find the derivative of $ f(x) $ and check its sign in the interval $ (0, \\infty) $.</p>\n\n<p>The derivative of $ f(x) = \\ln x $ is given by:</p>\n\n<p>$$ f'(x) = \\frac{d}{dx} (\\ln x) = \\frac{1}{x} $$</p>\n\n<p>In the interval $ (0, \\infty) $, $ x $ is always positive, therefore $ \\frac{1}{x} $ is always positive. Hence, $ f(x) = \\ln x $ is an increasing function in $ (0, \\infty) $.</p>\n\n<p>Thus, Statement 1 is correct.</p>\n\n<p><strong>Statement 2: $ g(x) = e^x + e^{\\frac{1}{x}} $ is decreasing in $ (0, \\infty) $</strong></p>\n\n<p>To verify if $ g(x) = e^x + e^{\\frac{1}{x}} $ is decreasing, we need to find the derivative of $ g(x) $ and check its sign in the interval $ (0, \\infty) $.</p>\n\n<p>The derivative of $ g(x) $ is given by:</p>\n\n<p>$$ g'(x) = \\frac{d}{dx} \\left( e^x + e^{\\frac{1}{x}} \\right) $$</p>\n\n<p>Applying the chain rule to the second term, we get:</p>\n\n<p>$$ g'(x) = e^x + e^{\\frac{1}{x}} \\cdot \\left( -\\frac{1}{x^2} \\right) = e^x - \\frac{e^{\\frac{1}{x}}}{x^2} $$</p>\n\n<p>To determine if $ g'(x) $ is negative in $ (0, \\infty) $, we need to check if:</p>\n\n<p>$$ e^x - \\frac{e^{\\frac{1}{x}}}{x^2} < 0 $$</p>\n\n<p>However, for $ x > 0 $, $ e^x $ grows exponentially, and $ e^{\\frac{1}{x}} $ is always positive. Thus, $ e^x $ will always be larger than $ \\frac{e^{\\frac{1}{x}}}{x^2} $ for $ x > 1 $. This indicates that $ g'(x) $ is generally positive in $ (0, \\infty) $.</p>\n\n<p>Therefore, $ g(x) = e^x + e^{\\frac{1}{x}} $ is not a decreasing function in $ (0, \\infty) $.</p>\n\n<p>Thus, Statement 2 is incorrect.</p>\n\n<p><strong>Conclusion:</strong></p>\n\n<p>The correct answer is:</p>\n\n<p><strong>Option A: 1 only</strong></p>",
+      "section": "B",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7dkbp",
+      "questionNumber": 5,
+      "questionText": "What is the derivative of sin<sup>2</sup> x with respect to cos<sup>2</sup>x ?&nbsp;&nbsp;",
+      "options": [
+        "-1",
+        "1",
+        "sin2x",
+        "cos2x"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the derivative of $$\\sin^2 x$$ with respect to $$\\cos^2 x$$, we need to use the concept of implicit differentiation. We will first express the derivatives of these functions with respect to $$x$$ and then use the chain rule.</p>\n\n<p>First, let's find the derivatives of $$\\sin^2 x$$ and $$\\cos^2 x$$ with respect to $$x$$:</p>\n\n<p>The derivative of $$\\sin^2 x$$ with respect to $$x$$ is found using the chain rule:</p>\n\n<p>\n  $$\\frac{d}{dx} (\\sin^2 x) = 2 \\sin x \\cdot \\cos x = \\sin 2x$$\n</p>\n\n<p>The derivative of $$\\cos^2 x$$ with respect to $$x$$ is also found using the chain rule:</p>\n\n<p>\n  $$\\frac{d}{dx} (\\cos^2 x) = 2 \\cos x \\cdot (-\\sin x) = -\\sin 2x$$\n</p>\n\n<p>Now we need to find the derivative of $$\\sin^2 x$$ with respect to $$\\cos^2 x$$. By using the chain rule in the form:</p>\n\n<p>\n  $$\\frac{d}{d(\\cos^2 x)} (\\sin^2 x) = \\frac{\\frac{d}{dx} (\\sin^2 x)}{\\frac{d}{dx} (\\cos^2 x)}$$\n</p>\n\n<p>Substituting the derivatives we calculated earlier, we get:</p>\n\n<p>\n  $$\\frac{d}{d(\\cos^2 x)} (\\sin^2 x) = \\frac{\\sin 2x}{-\\sin 2x} = -1$$\n</p>\n\n<p>Therefore, the correct answer is Option A: -1.</p>",
+      "section": "B",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7dkbu",
+      "questionNumber": 6,
+      "questionText": "For what value of m with m &lt; 0, is the area bounded by the lines y = x, y = mx and x = 2 equal to 3 ?",
+      "options": [
+        "<span class=\"math-tex\">$- \\frac{1}{2}$</span>",
+        "-1",
+        "<span class=\"math-tex\">$- \\frac{3}{2}$</span>",
+        "-2"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine the value of $$m$$ for which the area bounded by the lines $$y = x$$, $$y = mx$$, and $$x = 2$$ is equal to 3, we need to find the area of the triangle formed by these lines. The vertices of the triangle are the points of intersection of these lines.</p>\n\n<p>The lines intersect at the following points:\n\n<ul>\n\n<li>$$y = x$$ and $$x = 2$$ intersect at the point $$(2, 2)$$.</li>\n\n<li>$$y = mx$$ and $$x = 2$$ intersect at the point $$(2, 2m)$$.</li>\n\n<li>The lines $$y = x$$ and $$y = mx$$ intersect at the origin $$(0, 0)$$ because at this point, $$y = x = mx$$ implies $$x(1 - m) = 0$$, so $$x = 0$$.</li>\n\n</ul>\n\n</p>\n\n<p>The area of the triangle can be found using the formula for the area of a triangle with vertices at $$(x_1, y_1)$$, $$(x_2, y_2)$$, and $$(x_3, y_3)$$:</p>\n\n<p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \\right| $$</p>\n\n</p>\n\n<p>Substituting the coordinates of the vertices $$(0, 0)$$, $$(2, 2)$$, and $$(2, 2m)$$:</p>\n\n<p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\left| 0(2 - 2m) + 2(2m - 0) + 2(0 - 2) \\right| $$</p>\n\n</p>\n\n<p>Simplifying inside the absolute value:</p>\n\n<p>\n\n<p>$$ \\text{Area} = \\frac{1}{2} \\left| 2(2m) + 2(-2) \\right| $$</p>\n\n</p>\n\n<p>\n\n<p>$$ = \\frac{1}{2} \\left| 4m - 4 \\right| $$</p>\n\n</p>\n\n<p>Since we are given that the area is 3, we set up the equation:</p>\n\n<p>\n\n<p>$$ \\frac{1}{2} \\left| 4m - 4 \\right| = 3 $$</p>\n\n</p>\n\n<p>Multiplying both sides by 2 to eliminate the fraction:</p>\n\n<p>\n\n<p>$$ \\left| 4m - 4 \\right| = 6 $$</p>\n\n</p>\n\n<p>This absolute value equation splits into two cases:</p>\n\n<p>1. $$4m - 4 = 6$$</p>\n\n<p>2. $$4m - 4 = -6$$</p>\n\n<p>Solving the first case:</p>\n\n<p>\n\n<p>$$ 4m - 4 = 6 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ 4m = 10 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ m = \\frac{5}{2} $$</p>\n\n</p>\n\n<p>Since this is positive, it does not satisfy $$m < 0$$.</p>\n\n<p>Solving the second case:</p>\n\n<p>\n\n<p>$$ 4m - 4 = -6 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ 4m = -2 $$</p>\n\n</p>\n\n<p>\n\n<p>$$ m = -\\frac{1}{2} $$</p>\n\n</p>\n\n<p>This value is negative and satisfies $$m < 0$$.</p>\n\n<p>Therefore, the correct value of $$m$$ is</p>\n\n<p>\n\n<p>$$ m = -\\frac{1}{2} $$</p>\n\n</p>\n\n<p>The correct option is <span class=\"math-tex\">$$- \\frac{1}{2}$$</span>.</p>",
+      "section": "B",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7djoz",
+      "questionNumber": 7,
+      "questionText": "If the sixth term in the binomial expansion of&nbsp;<span class=\"math-tex\">$\\left(x^{-\\frac{8}{3}}+x^2 \\log _{10} x\\right)^8$</span>&nbsp;is 5600, then what is the value of x ?&nbsp;",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "10"
+      ],
+      "correctOption": 3,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>The binomial expansion of $$(a + b)^n$$ is given by:</p>\n\n<p>\n\n<p>$$ \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k $$</p>\n\n</p>\n\n<p>For the given expression $$\\left(x^{-\\frac{8}{3}} + x^2 \\log_{10} x \\right)^8$$, the sixth term corresponds to $$k = 5$$ because the general term $$T_{k+1}$$ corresponds to the term with $$k$$ in the binomial expansion. Here, $$a = x^{-\\frac{8}{3}}$$, $$b = x^2 \\log_{10} x$$ and $$n=8$$. The sixth term ($$T_6$$) is:</p>\n\n<p>\n\n<p>$$ T_6 = \\binom{8}{5} (x^{-\\frac{8}{3}})^{8-5} (x^2 \\log_{10} x)^5 $$</p>\n\n</p>\n\n<p>Simplifying the powers of $$x$$, we get:</p>\n\n<p>\n\n<p>$$ T_6 = \\binom{8}{5} (x^{-\\frac{8}{3}})^3 (x^2 \\log_{10} x)^5 $$</p>\n\n<p>$$ T_6 = \\binom{8}{5} x^{-8} (x^{10} (\\log_{10} x)^5) $$</p>\n\n</p>\n\n<p>Combining like terms:</p>\n\n<p>\n\n<p>$$ T_6 = \\binom{8}{5} x^{-8 + 10} (\\log_{10} x)^5 $$</p>\n\n<p>$$ T_6 = \\binom{8}{5} x^2 (\\log_{10} x)^5 $$</p>\n\n</p>\n\n<p>Given that this term equals 5600:</p>\n\n<p>\n\n<p>$$ \\binom{8}{5} x^2 (\\log_{10} x)^5 = 5600 $$</p>\n\n</p>\n\n<p>First, calculate the binomial coefficient $$\\binom{8}{5}$$:</p>\n\n<p>\n\n<p>$$ \\binom{8}{5} = \\binom{8}{3} = \\frac{8!}{5!3!} = \\frac{8 \\cdot 7 \\cdot 6}{3 \\cdot 2 \\cdot 1} = 56 $$</p>\n\n</p>\n\n<p>Thus, the equation simplifies to:</p>\n\n<p>\n\n<p>$$ 56 x^2 (\\log_{10} x)^5 = 5600 $$</p>\n\n</p>\n\n<p>Dividing both sides by 56:</p>\n\n<p>\n\n<p>$$ x^2 (\\log_{10} x)^5 = 100 $$</p>\n\n</p>\n\n<p>Let $$\\log_{10} x = y$$. Therefore, $$x = 10^y$$ and substituting back into the equation:</p>\n\n<p>\n\n<p>$$ (10^y)^2 y^5 = 100 $$</p>\n\n<p>$$ 10^{2y} y^5 = 100 $$</p>\n\n<p>$$ 10^{2y} y^5 = 10^2 $$</p>\n\n</p>\n\n<p>Comparing the exponents, we get:</p>\n\n<p>\n\n<p>$$ 2y + \\log_{10} y^5 = 2 $$</p>\n\n<p>$$ 2y + 5 \\log_{10} y = 2 $$</p>\n\n</p>\n\n<p>This equation must be solved numerically or through trial and error. However, by inspection and testing values, we find that when $$x = 10$$:</p>\n\n<p>\n\n<p>$$ \\log_{10} 10 = 1 $$</p>\n\n<p>so</p>\n\n<p>$$ 2 \\cdot 1 + 5 \\cdot \\log_{10} 1 = 2 $$</p>\n\n<p>which simplifies to:</p>\n\n<p>$$ 2 \\cdot 1 + 5 \\cdot 0 = 2 $$</p>\n\n</p>\n\n<p>Hence, the value of $$x$$ is 10.</p>\n\n<p>The correct option is:\n\n<strong>Option D: 10</strong></p>",
+      "section": "B",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7djoz",
+      "questionNumber": 8,
+      "questionText": "If the sixth term in the binomial expansion of&nbsp;<span class=\"math-tex\">$\\left(x^{-\\frac{8}{3}}+x^2 \\log _{10} x\\right)^8$</span>&nbsp;is 5600, then what is the value of x ?&nbsp;",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "10"
+      ],
+      "correctOption": 3,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>The binomial expansion of $$(a + b)^n$$ is given by:</p>\n\n<p>\n\n<p>$$ \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k $$</p>\n\n</p>\n\n<p>For the given expression $$\\left(x^{-\\frac{8}{3}} + x^2 \\log_{10} x \\right)^8$$, the sixth term corresponds to $$k = 5$$ because the general term $$T_{k+1}$$ corresponds to the term with $$k$$ in the binomial expansion. Here, $$a = x^{-\\frac{8}{3}}$$, $$b = x^2 \\log_{10} x$$ and $$n=8$$. The sixth term ($$T_6$$) is:</p>\n\n<p>\n\n<p>$$ T_6 = \\binom{8}{5} (x^{-\\frac{8}{3}})^{8-5} (x^2 \\log_{10} x)^5 $$</p>\n\n</p>\n\n<p>Simplifying the powers of $$x$$, we get:</p>\n\n<p>\n\n<p>$$ T_6 = \\binom{8}{5} (x^{-\\frac{8}{3}})^3 (x^2 \\log_{10} x)^5 $$</p>\n\n<p>$$ T_6 = \\binom{8}{5} x^{-8} (x^{10} (\\log_{10} x)^5) $$</p>\n\n</p>\n\n<p>Combining like terms:</p>\n\n<p>\n\n<p>$$ T_6 = \\binom{8}{5} x^{-8 + 10} (\\log_{10} x)^5 $$</p>\n\n<p>$$ T_6 = \\binom{8}{5} x^2 (\\log_{10} x)^5 $$</p>\n\n</p>\n\n<p>Given that this term equals 5600:</p>\n\n<p>\n\n<p>$$ \\binom{8}{5} x^2 (\\log_{10} x)^5 = 5600 $$</p>\n\n</p>\n\n<p>First, calculate the binomial coefficient $$\\binom{8}{5}$$:</p>\n\n<p>\n\n<p>$$ \\binom{8}{5} = \\binom{8}{3} = \\frac{8!}{5!3!} = \\frac{8 \\cdot 7 \\cdot 6}{3 \\cdot 2 \\cdot 1} = 56 $$</p>\n\n</p>\n\n<p>Thus, the equation simplifies to:</p>\n\n<p>\n\n<p>$$ 56 x^2 (\\log_{10} x)^5 = 5600 $$</p>\n\n</p>\n\n<p>Dividing both sides by 56:</p>\n\n<p>\n\n<p>$$ x^2 (\\log_{10} x)^5 = 100 $$</p>\n\n</p>\n\n<p>Let $$\\log_{10} x = y$$. Therefore, $$x = 10^y$$ and substituting back into the equation:</p>\n\n<p>\n\n<p>$$ (10^y)^2 y^5 = 100 $$</p>\n\n<p>$$ 10^{2y} y^5 = 100 $$</p>\n\n<p>$$ 10^{2y} y^5 = 10^2 $$</p>\n\n</p>\n\n<p>Comparing the exponents, we get:</p>\n\n<p>\n\n<p>$$ 2y + \\log_{10} y^5 = 2 $$</p>\n\n<p>$$ 2y + 5 \\log_{10} y = 2 $$</p>\n\n</p>\n\n<p>This equation must be solved numerically or through trial and error. However, by inspection and testing values, we find that when $$x = 10$$:</p>\n\n<p>\n\n<p>$$ \\log_{10} 10 = 1 $$</p>\n\n<p>so</p>\n\n<p>$$ 2 \\cdot 1 + 5 \\cdot \\log_{10} 1 = 2 $$</p>\n\n<p>which simplifies to:</p>\n\n<p>$$ 2 \\cdot 1 + 5 \\cdot 0 = 2 $$</p>\n\n</p>\n\n<p>Hence, the value of $$x$$ is 10.</p>\n\n<p>The correct option is:\n\n<strong>Option D: 10</strong></p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7djpf",
+      "questionNumber": 9,
+      "questionText": "How many terms are there in the expansion of (3x - y)<sup>4</sup>(x + 3y)<sup>4</sup> ?&nbsp;&nbsp;",
+      "options": [
+        "9",
+        "12",
+        "15",
+        "17"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<h3>Given Expression:</h3>\n\n<p>$ (3x - y)^4 (x + 3y)^4 $</p>\n\n<p>First, we simplify:</p>\n\n<p>$ (3x - y)(x + 3y) $</p>\n\n<p>Expanding the product:</p>\n\n<p>$ = 3x^2 + 9xy - xy - 3y^2 = 3x^2 + 8xy - 3y^2 $</p>\n\n<p>Thus, the expression becomes:</p>\n\n<p>$ (3x^2 + 8xy - 3y^2)^4 $</p>\n\n<h3>Multinomial Expansion:</h3>\n\n<p>The expression $(3x^2 + 8xy - 3y^2)^4$ is a multinomial expansion. To find the number of distinct terms in the expansion, we use the general formula for the number of terms in the expansion of $(a_1 + a_2 + \\cdots + a_m)^n$:</p>\n\n<p>$ \\text{Number of terms} = \\binom{n + m - 1}{m - 1} $</p>\n\n<p>Here, $n = 4$ (the exponent) and $m = 3$ (the number of different terms: $3x^2$, $8xy$, and $-3y^2$).</p>\n\n<p>Plugging in the values:</p>\n\n<p>$ \\text{Number of terms} = \\binom{4 + 3 - 1}{3 - 1} = \\binom{6}{2} $</p>\n\n<p>Calculating $\\binom{6}{2}$:</p>\n\n<p>$ \\binom{6}{2} = \\frac{6!}{2!(6-2)!} = \\frac{6 \\times 5}{2 \\times 1} = 15 $</p>\n\n<h3>Conclusion</h3>\n\n<p>Therefore, the number of distinct terms in the expansion of $(3x - y)^4 (x + 3y)^4$ is:</p>\n\n<p>$ \\boxed{15} $</p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7djpw",
+      "questionNumber": 10,
+      "questionText": "<p>Consider the following statements for a fixed natural number n:</p>\n\n<p>1. C(n, r) is greatest if n = 2r</p>\n\n<p>2.&nbsp;C(n, r) is greatest if n = 2r - 1 and n = 2r + 1&nbsp;</p>\n\n<p>Which of the statements given above is/are correct ?</p>\n",
+      "options": [
+        "1 only&nbsp;",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "correctOption": 2,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To determine the correctness of the statements about the binomial coefficient $ C(n, r) $ or $ \\binom{n}{r} $, let's apply the concepts of binomial coefficients:</p>\n\n<h3>Binomial Coefficient $ \\binom{n}{r} $:</h3>\n\n<p>The binomial coefficient $ \\binom{n}{r} $ represents the number of ways to choose $ r $ elements from $ n $ elements without regard to the order. It is given by:</p>\n\n<p>$ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} $</p>\n\n<h3>Key Concepts:</h3>\n\n<ol>\n<li><strong>When $ n $ is even</strong>:</li>\n</ol>\n<ul>\n<li>The greatest binomial coefficient occurs at $ r = \\frac{n}{2} $.</li><br>\n<li>For $ n = 2r $, the binomial coefficient $ \\binom{n}{r} $ is maximized.</li>\n</ul>\n<ol>\n<li><strong>When $ n $ is odd</strong>:</li>\n</ol>\n<ul>\n<li>The greatest binomial coefficient occurs at $ r = \\frac{n-1}{2} $ and $ r = \\frac{n+1}{2} $.</li><br>\n<li>For $ n = 2r - 1 $ and $ n = 2r + 1 $, the binomial coefficient $ \\binom{n}{r} $ is maximized.</li>\n</ul>\n<h3>Verification of Statements:</h3>\n\n<ol>\n<li><strong>Statement 1</strong>: $ C(n, r) $ is greatest if $ n = 2r $.</li>\n</ol>\n<ul>\n<li>This means $ n $ is even, and the maximum binomial coefficient occurs at $ r = \\frac{n}{2} $.</li><br>\n<li>This statement is correct.</li>\n</ul>\n<ol>\n<li><strong>Statement 2</strong>: $ C(n, r) $ is greatest if $ n = 2r - 1 $ and $ n = 2r + 1 $.</li>\n</ol>\n<ul>\n<li>This means $ n $ is odd, and the maximum binomial coefficient occurs at $ r = \\frac{n-1}{2} $ or $ r = \\frac{n+1}{2} $.</li><br>\n<li>This statement is also correct.</li>\n</ul>\n<h3>Conclusion:</h3>\n\n<p>Both statements are correct. Therefore, the correct answer is:</p>\n\n<p>$ \\boxed{\\text{Option C: Both 1 and 2}} $</p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllwm7djzf",
+      "questionNumber": 11,
+      "questionText": "What is the area of minor segment ?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{(\\pi-2) a^2}{4}$</span>",
+        "<span class=\"math-tex\">$\\frac{(\\pi-1) a^2}{4}$</span>",
+        "<span class=\"math-tex\">$\\frac{(\\pi-2) a^2}{2}$</span>",
+        "<span class=\"math-tex\">$\\frac{(\\pi-1) a^2}{2}$</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lwmx3ac1/ea3f28af-c9c2-41b7-9d4b-10186656684f/310ab100-1b07-11ef-8d9c-656f98383c8d/file-6y3zli1lwmx3ac2.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lwmx3ac1/ea3f28af-c9c2-41b7-9d4b-10186656684f/310ab100-1b07-11ef-8d9c-656f98383c8d/file-6y3zli1lwmx3ac2.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"NDA Mathematics 16 April 2023 Mathematics - Circle Question 20 English Explanation\">\n<p>To find the area of the minor segment of the circle defined by the equation $$(x - a)^2 + y^2 = a^2$$ partitioned by the line $$y = x$$, we need to follow these steps:</p>\n\n<p><strong>1. Identify the points of intersection:</strong></p>\n\n<p>The line $$y = x$$ intersects the circle at points where both equations hold true.</p>\n\n<p>Substitute $$y = x$$ into the circle's equation:</p>\n\n<p>$$ (x - a)^2 + x^2 = a^2 $$</p>\n\n<p>Expanding and simplifying:</p>\n\n<p>$$ x^2 - 2ax + a^2 + x^2 = a^2 $$</p>\n\n<p>$$ 2x^2 - 2ax = 0 $$</p>\n\n<p>$$ 2x(x - a) = 0 $$</p>\n\n<p>Thus, the solutions are $$ x = 0 $$ and $$ x = a $$, giving the points of intersection as $$(0,0)$$ and $$(a, a)$$.</p>\n\n<p><strong>2. Calculate the area of the minor segment:</strong></p>\n\n<p>The circle has a radius of $$ a $$ and subtended by the angle at the center formed with the line $$y = x$$.</p>\n\n<p>The total area of the circle is:</p>\n\n<p>$$ \\pi a^2 $$</p>\n\n<p>The sector area subtended by the angle $$ \\pi/2 $$ is:</p>\n\n<p>$$ \\frac{1}{4} \\pi a^2 $$</p>\n\n<p>Now, we need to calculate the area of the triangular part under the line $$y = x$$ from $$ (0,0) $$ to $$ (a, a) $$ which is a right triangle.</p>\n\n<p>The area of this right triangle is:</p>\n\n<p>$$ \\frac{1}{2} \\cdot a \\cdot a = \\frac{a^2}{2} $$</p>\n\n<p>The area of the minor segment is the area of the sector minus the area of the triangular part:</p>\n\n<p>$$ \\frac{1}{4} \\pi a^2 - \\frac{a^2}{2} $$</p>\n\n<p>Simplifying the expression:</p>\n\n<p>$$ \\frac{\\pi a^2}{4} - \\frac{2a^2}{4} = \\frac{(\\pi - 2) a^2}{4} $$</p>\n\n<p>Therefore, the area of the minor segment is:</p>\n\n<p><strong>Option A</strong> $$ \\frac{(\\pi - 2) a^2}{4} $$</p>",
+      "section": "A",
+      "instruction": ""
+    }
+  ],
+  "sections": [
+    {
+      "name": "Mathematics"
+    }
+  ]
+}

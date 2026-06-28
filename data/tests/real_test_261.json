@@ -1,0 +1,259 @@
+{
+  "id": "real_test_261",
+  "examType": "JEE Advanced",
+  "title": "NDA Mathematics 3 September 2023",
+  "year": "2023",
+  "duration": 180,
+  "totalMarks": 180,
+  "totalQuestions": 11,
+  "isOfficial": true,
+  "questions": [
+    {
+      "id": "tllxlrvu9i",
+      "questionNumber": 1,
+      "questionText": "What is the maximum value of y?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{3}{2}$</span>",
+        "3",
+        "4",
+        "6"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p><strong>Minima and Maxima of a Function:</strong> These represent the points where the first derivative (slope) of the function equals zero.</p>\n<p>To determine the minima or maxima of a function $ f(x) $, follow these steps:</p>\n<p><strong>Step 1:</strong> Calculate the first derivative $ f'(x) $ of the function.</p>\n<p><strong>Step 2:</strong> Set the first derivative equal to zero and solve for the critical points (e.g., $ x_1 $, $ x_2 $).</p>\n<p><strong>Step 3:</strong> Find the second derivative $ f''(x) $ and evaluate its sign at the critical points.</p>\n<p><strong>Step 4:</strong> If $ f''(x) < 0 $, the function has a maximum at that point; if $ f''(x) > 0 $, it has a minimum at that point.</p>\n<h3>Calculation:</h3>\n<p>Given: $ 4x^2 + y^2 = 9 $</p>\n<p>To find the maximum $ y $:</p>\n<p>$ y = \\sqrt{9 - 4x^2} $</p>\n<p>Differentiate with respect to $ x $:</p>\n<p>$ \\frac{dy}{dx} = \\frac{-8x}{2 \\sqrt{9 - 4x^2}} $</p>\n<p>Set the derivative equal to zero to find the critical points:</p>\n<p>$ \\frac{-8x}{2 \\sqrt{9 - 4x^2}} = 0 $</p>\n<p>This implies:</p>\n<p>$ x = 0 $</p>\n<p>To confirm $ y $ is a maximum at $ x = 0 $, compute the second derivative:</p>\n<p>$ \\frac{d^2y}{dx^2} = \\frac{-4\\sqrt{9 - 4x^2} - 32x^2 / (2 \\sqrt{9 - 4x^2})}{(9 - 4x^2)} $</p>\n<p>At $ x = 0 $:</p>\n<p>$ \\frac{d^2y}{dx^2} = \\frac{-4 \\times 3}{9^{3/2}} = -\\frac{4}{3} $</p>\n<p>Since $\\frac{d^2y}{dx^2} < 0$, $ y $ has a maximum at $ x = 0 $.</p>\n<p>Thus, the maximum value of $ y $ is:</p>\n<p>$ y = \\sqrt{9 - 4(0)^2} = \\sqrt{9} = 3 $</p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvu9u",
+      "questionNumber": 2,
+      "questionText": "What is the maximum value of xy ?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{9}{4}$</span>",
+        "<span class=\"math-tex\">$\\frac{3}{2}$</span>",
+        "<span class=\"math-tex\">$\\frac{4}{9}$</span>",
+        "<span class=\"math-tex\">$\\frac{2}{3}$</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the maximum value of $ xy $ given the equation $ 4x^2 + y^2 = 9 $, Lagrange multipliers can be used. Define the function $ f(x,y) = xy $ and the constraint $ g(x,y) = 4x^2 + y^2 - 9 = 0 $.</p>\n<p>Using Lagrange multipliers:</p>\n\n<p><p>Set up the Lagrangian:\n$$ \\mathcal{L}(x, y, \\lambda) = xy + \\lambda (9 - 4x^2 - y^2) $$</p></p>\n<p><p>Take the partial derivatives with respect to $ x $, $ y $, and $ \\lambda $:\n$$ \\frac{\\partial \\mathcal{L}}{\\partial x} = y - 8x\\lambda = 0 $$\n$$ \\frac{\\partial \\mathcal{L}}{\\partial y} = x - 2y\\lambda = 0 $$\n$$ \\frac{\\partial \\mathcal{L}}{\\partial \\lambda} = 9 - 4x^2 - y^2 = 0 $$</p></p>\n<p><p>Solve the system of equations:\nFrom $ \\frac{\\partial \\mathcal{L}}{\\partial x} = 0 $:\n$$ y = 8x\\lambda $$</p>\n<p>From $ \\frac{\\partial \\mathcal{L}}{\\partial y} = 0 $:\n$$ x = 2y\\lambda $$</p>\n<p>Substitute $ y = 8x\\lambda $ into $ x = 2y\\lambda $:\n$$ x = 2(8x\\lambda)\\lambda $$\n$$ x = 16x\\lambda^2 $$\n$$ 1 = 16\\lambda^2 $$\n$$ \\lambda^2 = \\frac{1}{16} $$\n$$ \\lambda = \\pm \\frac{1}{4} $$</p>\n<p>Consider $ \\lambda = \\frac{1}{4} $:\n$$ y = 8x\\left(\\frac{1}{4}\\right) = 2x $$</p>\n<p>Substitute $ y = 2x $ into the constraint $ 4x^2 + y^2 = 9 $:\n$$ 4x^2 + (2x)^2 = 9 $$\n$$ 4x^2 + 4x^2 = 9 $$\n$$ 8x^2 = 9 $$\n$$ x^2 = \\frac{9}{8} $$\n$$ x = \\pm \\frac{3}{2\\sqrt{2}} = \\pm \\frac{3\\sqrt{2}}{4} $$</p>\n<p>For $ x = \\frac{3\\sqrt{2}}{4} $:\n$$ y = 2 \\left(\\frac{3\\sqrt{2}}{4}\\right) = \\frac{3\\sqrt{2}}{2} $$</p>\n<p>Now calculate $ xy $:\n$$ xy = \\left(\\frac{3\\sqrt{2}}{4}\\right) \\left(\\frac{3\\sqrt{2}}{2}\\right) = \\frac{9 \\cdot 2}{8} = \\frac{18}{8} = \\frac{9}{4} $$</p>\n<p>Therefore, the maximum value of $ xy $ is $ \\boxed{\\frac{9}{4}} $.</p></p>\n",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvuhb",
+      "questionNumber": 3,
+      "questionText": "What is the area between the&nbsp;curve&nbsp;f(x) = x |x|&nbsp;and x-axis for x = [-1, 1]?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{2}{3}$</span>",
+        "<span class=\"math-tex\">$\\frac{1}{2}$</span>",
+        "<span class=\"math-tex\">$\\frac{1}{4}$</span>",
+        "<span class=\"math-tex\">$\\frac{1}{3}$</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the area between the curve $ f(x) = x |x| $ and the x-axis for $ x $ in the interval $[-1, 1]$, we need to evaluate the definite integral of $ |x| \\cdot x $ from $-1$ to $1$:</p>\n<p>$$ \\int_{-1}^{1} f(x) \\, dx = \\int_{-1}^{1} x|x| \\, dx $$</p>\n<p>Breaking it down into two integrals over the intervals $[-1, 0]$ and $[0, 1]$:</p>\n<p>For $x \\in [-1, 0]$, $ x |x| = x^2 $ because $ |x| = -x $:</p>\n<p>$$ \\int_{-1}^{0} x|x| \\, dx = \\int_{-1}^{0} x^2 \\, dx $$</p>\n<p>For $x \\in [0, 1]$, $ x |x| = x^2 $ because $ |x| = x $:</p>\n<p>$$ \\int_{0}^{1} x|x| \\, dx = \\int_{0}^{1} x^2 \\, dx $$</p>\n<p>Calculate each integral:</p>\n<p>$$ \\int_{-1}^{0} x^2 \\, dx = \\left[ \\frac{x^3}{3} \\right]_{-1}^{0} = \\left( \\frac{0^3}{3} - \\frac{(-1)^3}{3} \\right) = 0 - \\left( -\\frac{1}{3} \\right) = \\frac{1}{3} $$</p>\n<p>$$ \\int_{0}^{1} x^2 \\, dx = \\left[ \\frac{x^3}{3} \\right]_{0}^{1} = \\left( \\frac{1^3}{3} - \\frac{0^3}{3} \\right) = \\frac{1}{3} - 0 = \\frac{1}{3} $$</p>\n<p>Add the results:</p>\n<p>$$ \\int_{-1}^{1} x|x| \\, dx = \\frac{1}{3} + \\frac{1}{3} = \\frac{2}{3} $$</p>\n<p>Hence, the area between the curve $ f(x) = x |x| $ and the x-axis for $ x $ in the interval $[-1, 1]$ is:</p>\n<p>$$ \\boxed{\\frac{2}{3}} $$</p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvu9i",
+      "questionNumber": 4,
+      "questionText": "What is the maximum value of y?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{3}{2}$</span>",
+        "3",
+        "4",
+        "6"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p><strong>Minima and Maxima of a Function:</strong> These represent the points where the first derivative (slope) of the function equals zero.</p>\n<p>To determine the minima or maxima of a function $ f(x) $, follow these steps:</p>\n<p><strong>Step 1:</strong> Calculate the first derivative $ f'(x) $ of the function.</p>\n<p><strong>Step 2:</strong> Set the first derivative equal to zero and solve for the critical points (e.g., $ x_1 $, $ x_2 $).</p>\n<p><strong>Step 3:</strong> Find the second derivative $ f''(x) $ and evaluate its sign at the critical points.</p>\n<p><strong>Step 4:</strong> If $ f''(x) < 0 $, the function has a maximum at that point; if $ f''(x) > 0 $, it has a minimum at that point.</p>\n<h3>Calculation:</h3>\n<p>Given: $ 4x^2 + y^2 = 9 $</p>\n<p>To find the maximum $ y $:</p>\n<p>$ y = \\sqrt{9 - 4x^2} $</p>\n<p>Differentiate with respect to $ x $:</p>\n<p>$ \\frac{dy}{dx} = \\frac{-8x}{2 \\sqrt{9 - 4x^2}} $</p>\n<p>Set the derivative equal to zero to find the critical points:</p>\n<p>$ \\frac{-8x}{2 \\sqrt{9 - 4x^2}} = 0 $</p>\n<p>This implies:</p>\n<p>$ x = 0 $</p>\n<p>To confirm $ y $ is a maximum at $ x = 0 $, compute the second derivative:</p>\n<p>$ \\frac{d^2y}{dx^2} = \\frac{-4\\sqrt{9 - 4x^2} - 32x^2 / (2 \\sqrt{9 - 4x^2})}{(9 - 4x^2)} $</p>\n<p>At $ x = 0 $:</p>\n<p>$ \\frac{d^2y}{dx^2} = \\frac{-4 \\times 3}{9^{3/2}} = -\\frac{4}{3} $</p>\n<p>Since $\\frac{d^2y}{dx^2} < 0$, $ y $ has a maximum at $ x = 0 $.</p>\n<p>Thus, the maximum value of $ y $ is:</p>\n<p>$ y = \\sqrt{9 - 4(0)^2} = \\sqrt{9} = 3 $</p>",
+      "section": "B",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvu9u",
+      "questionNumber": 5,
+      "questionText": "What is the maximum value of xy ?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{9}{4}$</span>",
+        "<span class=\"math-tex\">$\\frac{3}{2}$</span>",
+        "<span class=\"math-tex\">$\\frac{4}{9}$</span>",
+        "<span class=\"math-tex\">$\\frac{2}{3}$</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the maximum value of $ xy $ given the equation $ 4x^2 + y^2 = 9 $, Lagrange multipliers can be used. Define the function $ f(x,y) = xy $ and the constraint $ g(x,y) = 4x^2 + y^2 - 9 = 0 $.</p>\n<p>Using Lagrange multipliers:</p>\n\n<p><p>Set up the Lagrangian:\n$$ \\mathcal{L}(x, y, \\lambda) = xy + \\lambda (9 - 4x^2 - y^2) $$</p></p>\n<p><p>Take the partial derivatives with respect to $ x $, $ y $, and $ \\lambda $:\n$$ \\frac{\\partial \\mathcal{L}}{\\partial x} = y - 8x\\lambda = 0 $$\n$$ \\frac{\\partial \\mathcal{L}}{\\partial y} = x - 2y\\lambda = 0 $$\n$$ \\frac{\\partial \\mathcal{L}}{\\partial \\lambda} = 9 - 4x^2 - y^2 = 0 $$</p></p>\n<p><p>Solve the system of equations:\nFrom $ \\frac{\\partial \\mathcal{L}}{\\partial x} = 0 $:\n$$ y = 8x\\lambda $$</p>\n<p>From $ \\frac{\\partial \\mathcal{L}}{\\partial y} = 0 $:\n$$ x = 2y\\lambda $$</p>\n<p>Substitute $ y = 8x\\lambda $ into $ x = 2y\\lambda $:\n$$ x = 2(8x\\lambda)\\lambda $$\n$$ x = 16x\\lambda^2 $$\n$$ 1 = 16\\lambda^2 $$\n$$ \\lambda^2 = \\frac{1}{16} $$\n$$ \\lambda = \\pm \\frac{1}{4} $$</p>\n<p>Consider $ \\lambda = \\frac{1}{4} $:\n$$ y = 8x\\left(\\frac{1}{4}\\right) = 2x $$</p>\n<p>Substitute $ y = 2x $ into the constraint $ 4x^2 + y^2 = 9 $:\n$$ 4x^2 + (2x)^2 = 9 $$\n$$ 4x^2 + 4x^2 = 9 $$\n$$ 8x^2 = 9 $$\n$$ x^2 = \\frac{9}{8} $$\n$$ x = \\pm \\frac{3}{2\\sqrt{2}} = \\pm \\frac{3\\sqrt{2}}{4} $$</p>\n<p>For $ x = \\frac{3\\sqrt{2}}{4} $:\n$$ y = 2 \\left(\\frac{3\\sqrt{2}}{4}\\right) = \\frac{3\\sqrt{2}}{2} $$</p>\n<p>Now calculate $ xy $:\n$$ xy = \\left(\\frac{3\\sqrt{2}}{4}\\right) \\left(\\frac{3\\sqrt{2}}{2}\\right) = \\frac{9 \\cdot 2}{8} = \\frac{18}{8} = \\frac{9}{4} $$</p>\n<p>Therefore, the maximum value of $ xy $ is $ \\boxed{\\frac{9}{4}} $.</p></p>\n",
+      "section": "B",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvuhb",
+      "questionNumber": 6,
+      "questionText": "What is the area between the&nbsp;curve&nbsp;f(x) = x |x|&nbsp;and x-axis for x = [-1, 1]?",
+      "options": [
+        "<span class=\"math-tex\">$\\frac{2}{3}$</span>",
+        "<span class=\"math-tex\">$\\frac{1}{2}$</span>",
+        "<span class=\"math-tex\">$\\frac{1}{4}$</span>",
+        "<span class=\"math-tex\">$\\frac{1}{3}$</span>"
+      ],
+      "correctOption": 0,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To find the area between the curve $ f(x) = x |x| $ and the x-axis for $ x $ in the interval $[-1, 1]$, we need to evaluate the definite integral of $ |x| \\cdot x $ from $-1$ to $1$:</p>\n<p>$$ \\int_{-1}^{1} f(x) \\, dx = \\int_{-1}^{1} x|x| \\, dx $$</p>\n<p>Breaking it down into two integrals over the intervals $[-1, 0]$ and $[0, 1]$:</p>\n<p>For $x \\in [-1, 0]$, $ x |x| = x^2 $ because $ |x| = -x $:</p>\n<p>$$ \\int_{-1}^{0} x|x| \\, dx = \\int_{-1}^{0} x^2 \\, dx $$</p>\n<p>For $x \\in [0, 1]$, $ x |x| = x^2 $ because $ |x| = x $:</p>\n<p>$$ \\int_{0}^{1} x|x| \\, dx = \\int_{0}^{1} x^2 \\, dx $$</p>\n<p>Calculate each integral:</p>\n<p>$$ \\int_{-1}^{0} x^2 \\, dx = \\left[ \\frac{x^3}{3} \\right]_{-1}^{0} = \\left( \\frac{0^3}{3} - \\frac{(-1)^3}{3} \\right) = 0 - \\left( -\\frac{1}{3} \\right) = \\frac{1}{3} $$</p>\n<p>$$ \\int_{0}^{1} x^2 \\, dx = \\left[ \\frac{x^3}{3} \\right]_{0}^{1} = \\left( \\frac{1^3}{3} - \\frac{0^3}{3} \\right) = \\frac{1}{3} - 0 = \\frac{1}{3} $$</p>\n<p>Add the results:</p>\n<p>$$ \\int_{-1}^{1} x|x| \\, dx = \\frac{1}{3} + \\frac{1}{3} = \\frac{2}{3} $$</p>\n<p>Hence, the area between the curve $ f(x) = x |x| $ and the x-axis for $ x $ in the interval $[-1, 1]$ is:</p>\n<p>$$ \\boxed{\\frac{2}{3}} $$</p>",
+      "section": "B",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvu2j",
+      "questionNumber": 7,
+      "questionText": "What is the number of real roots of the&nbsp;equation?",
+      "options": [
+        "0",
+        "2",
+        "4",
+        "8"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "NUMERICAL",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<ol>\n<li><p>Let  </p>\n<p>$f(x) = (1 - x)^4 + (5 - x)^4.$  </p></li>\n<li><p>Observe that shifting the variable by the midpoint of 1 and 5 (which is 3) simplifies symmetry.  </p>\n<p>Put  </p>\n<p>$$y = x - 3.$$  </p>\n<p>Then  </p>\n<p>$$1 - x = 1 - (y + 3) = -\\,y - 2 = -(y + 2),$$  </p>\n<p>$$5 - x = 5 - (y + 3) = 2 - y = -(y - 2)\\quad\\text{(up to a sign, but even powers ignore sign).}$$  </p></li>\n<li><p>Substitute into $f(x)$:  </p>\n<p>$$f(x) = (-(y+2))^4 + (-(y-2))^4 = (y+2)^4 + (y-2)^4.$$  </p></li>\n<li><p>Expand or combine using binomial expansion:  </p>\n<p>$$(y+2)^4 = y^4 + 8y^3 + 24y^2 + 32y + 16,$$  </p>\n<p>$$(y-2)^4 = y^4 - 8y^3 + 24y^2 - 32y + 16.$$  </p>\n<p>Adding, the odd terms cancel:  </p>\n<p>$$(y+2)^4 + (y-2)^4 = 2y^4 + 48y^2 + 32.$$</p></li>\n<li><p>The equation $f(x)=82$ becomes  </p>\n<p>$$2y^4 + 48y^2 + 32 = 82$$  </p>\n<p>$$\\Longrightarrow 2y^4 + 48y^2 - 50 = 0$$  </p>\n<p>$$\\Longrightarrow y^4 + 24y^2 - 25 = 0.$$</p></li>\n<li><p>Put $u = y^2\\;(u\\ge0)$. Then  </p>\n<p>$$u^2 + 24u - 25 = 0.$$  </p>\n<p>Solve:  </p>\n<p>$$u = \\frac{-24 \\pm \\sqrt{24^2 + 4\\cdot25}}{2} = \\frac{-24 \\pm \\sqrt{676}}{2} = \\frac{-24 \\pm 26}{2}.$$  </p>\n<p>Thus  </p>\n<p>$$u_1 = 1,\\quad u_2 = -25\\ (\\text{reject, since }u\\ge0).$$  </p></li>\n<li><p>From $u_1 = 1$ we get  </p>\n<p>$$y^2 = 1\\;\\Longrightarrow\\;y = \\pm1.$$  </p>\n<p>Recall $y = x - 3$, so  </p>\n<p>$$x - 3 = \\pm1\\;\\Longrightarrow\\;x = 3 \\pm 1 \\;\\Rightarrow\\;x = 2,\\,4.$$</p></li>\n<li><p>Therefore there are exactly 2 real solutions.</p></li>\n</ol>\n<p>Answer: Option B (2).</p>",
+      "section": "B",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvu2j",
+      "questionNumber": 8,
+      "questionText": "What is the number of real roots of the&nbsp;equation?",
+      "options": [
+        "0",
+        "2",
+        "4",
+        "8"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<ol>\n<li><p>Let  </p>\n<p>$f(x) = (1 - x)^4 + (5 - x)^4.$  </p></li>\n<li><p>Observe that shifting the variable by the midpoint of 1 and 5 (which is 3) simplifies symmetry.  </p>\n<p>Put  </p>\n<p>$$y = x - 3.$$  </p>\n<p>Then  </p>\n<p>$$1 - x = 1 - (y + 3) = -\\,y - 2 = -(y + 2),$$  </p>\n<p>$$5 - x = 5 - (y + 3) = 2 - y = -(y - 2)\\quad\\text{(up to a sign, but even powers ignore sign).}$$  </p></li>\n<li><p>Substitute into $f(x)$:  </p>\n<p>$$f(x) = (-(y+2))^4 + (-(y-2))^4 = (y+2)^4 + (y-2)^4.$$  </p></li>\n<li><p>Expand or combine using binomial expansion:  </p>\n<p>$$(y+2)^4 = y^4 + 8y^3 + 24y^2 + 32y + 16,$$  </p>\n<p>$$(y-2)^4 = y^4 - 8y^3 + 24y^2 - 32y + 16.$$  </p>\n<p>Adding, the odd terms cancel:  </p>\n<p>$$(y+2)^4 + (y-2)^4 = 2y^4 + 48y^2 + 32.$$</p></li>\n<li><p>The equation $f(x)=82$ becomes  </p>\n<p>$$2y^4 + 48y^2 + 32 = 82$$  </p>\n<p>$$\\Longrightarrow 2y^4 + 48y^2 - 50 = 0$$  </p>\n<p>$$\\Longrightarrow y^4 + 24y^2 - 25 = 0.$$</p></li>\n<li><p>Put $u = y^2\\;(u\\ge0)$. Then  </p>\n<p>$$u^2 + 24u - 25 = 0.$$  </p>\n<p>Solve:  </p>\n<p>$$u = \\frac{-24 \\pm \\sqrt{24^2 + 4\\cdot25}}{2} = \\frac{-24 \\pm \\sqrt{676}}{2} = \\frac{-24 \\pm 26}{2}.$$  </p>\n<p>Thus  </p>\n<p>$$u_1 = 1,\\quad u_2 = -25\\ (\\text{reject, since }u\\ge0).$$  </p></li>\n<li><p>From $u_1 = 1$ we get  </p>\n<p>$$y^2 = 1\\;\\Longrightarrow\\;y = \\pm1.$$  </p>\n<p>Recall $y = x - 3$, so  </p>\n<p>$$x - 3 = \\pm1\\;\\Longrightarrow\\;x = 3 \\pm 1 \\;\\Rightarrow\\;x = 2,\\,4.$$</p></li>\n<li><p>Therefore there are exactly 2 real solutions.</p></li>\n</ol>\n<p>Answer: Option B (2).</p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvu3d",
+      "questionNumber": 9,
+      "questionText": "What is the sum of all the roots of the&nbsp;equation?",
+      "options": [
+        "24",
+        "12",
+        "10",
+        "6"
+      ],
+      "correctOption": 1,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<ol>\n<li><p>Let $x$ be the variable. We want to solve  </p>\n<p>$      (1 - x)^4 + (5 - x)^4 = 82    $</p></li>\n<li><p>Make the substitution $t = x - 3$. Then  </p>\n<p>$      1 - x = 1 - (t+3) = -2 - t,\\quad      5 - x = 5 - (t+3) = 2 - t.    $  </p>\n<p>The equation becomes  </p>\n<p>$      (-2 - t)^4 + (2 - t)^4 = 82.    $</p></li>\n<li><p>Notice $(-2 - t)^4 = (t + 2)^4$ and $(2 - t)^4 = (t - 2)^4$. So  </p>\n<p>$      (t+2)^4 + (t-2)^4 = 82.    $</p></li>\n<li><p>Expand or use symmetry:  </p>\n<p>$      (t+2)^4 + (t-2)^4      = \\bigl(t^4 + 8t^3 + 24t^2 + 32t + 16\\bigr)      + \\bigl(t^4 - 8t^3 + 24t^2 - 32t + 16\\bigr)      = 2t^4 + 48t^2 + 32.    $  </p>\n<p>Hence the equation is  </p>\n<p>$      2t^4 + 48t^2 + 32 = 82      \\quad\\Longrightarrow\\quad      2t^4 + 48t^2 - 50 = 0      \\quad\\Longrightarrow\\quad      t^4 + 24t^2 - 25 = 0.    $</p></li>\n<li><p>Solve for $t^2$:  </p>\n<p>$      t^2 = \\frac{-24 \\pm \\sqrt{24^2 + 4\\cdot25}}{2}            = \\frac{-24 \\pm \\sqrt{676}}{2}            = \\frac{-24 \\pm 26}{2}.    $  </p>\n<p>Thus  </p>\n<p>$      t^2 = 1 \\quad\\text{or}\\quad t^2 = -25.    $  </p>\n<p>So the four roots for $t$ are  </p>\n<p>$      t = \\pm1,\\quad t = \\pm5i.    $</p></li>\n<li><p>Convert back to $x = t + 3$. The four roots are  </p>\n<p>$      x = 3 \\pm 1 \\quad\\text{and}\\quad x = 3 \\pm 5i,    $  </p>\n<p>i.e. $x = 4,\\,2,\\,3+5i,\\,3-5i$.</p></li>\n<li><p>Sum of all roots:  </p>\n<p>$      (4 + 2) + \\bigl((3+5i) + (3-5i)\\bigr)      = 6 + (6)      = 12.    $</p></li>\n</ol>\n<p>Answer: Option B (12).</p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvu66",
+      "questionNumber": 10,
+      "questionText": "What is T<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">1</span>&nbsp;+ 2T<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">2</span>&nbsp;+ 3T<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">3</span>&nbsp;+ ... + nT<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">n</span>&nbsp;equal to ?",
+      "options": [
+        "0",
+        "1",
+        "2<sup>n</sup>",
+        "n2<span style=\"position: relative; line-height: 0; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">n - 1</span>"
+      ],
+      "correctOption": 3,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "<p>To solve this problem, we need to find the value of the sum:</p>\n<p>$ S = T_1 + 2T_2 + 3T_3 + \\dots + nT_n $</p>\n<p>where $ T_k $ are the coefficients in the expansion of $ (1 + x)^n $:</p>\n<p>$ (1 + x)^n = 1 + T_1 x + T_2 x^2 + T_3 x^3 + \\dots + T_n x^n $</p>\n<p><strong>Step 1: Understand the Binomial Theorem</strong></p>\n<p>The binomial expansion of $ (1 + x)^n $ is:</p>\n<p>$ (1 + x)^n = \\sum_{k=0}^{n} \\binom{n}{k} x^k $</p>\n<p>So, the coefficients $ T_k $ are binomial coefficients:</p>\n<p>$ T_k = \\binom{n}{k} $</p>\n<p><strong>Step 2: Write the Sum Using Binomial Coefficients</strong></p>\n<p>Substitute $ T_k = \\binom{n}{k} $ into $ S $:</p>\n<p>$ S = \\sum_{k=1}^{n} k \\cdot \\binom{n}{k} $</p>\n<p><strong>Step 3: Use a Known Binomial Identity</strong></p>\n<p>Recall the identity for the sum involving $ k \\cdot \\binom{n}{k} $:</p>\n<p>$ \\sum_{k=0}^{n} k \\cdot \\binom{n}{k} = n \\cdot 2^{n-1} $</p>\n<p>But our sum starts from $ k = 1 $ instead of $ k = 0 $. However, since $ \\binom{n}{0} = 1 $ and $ 0 \\cdot \\binom{n}{0} = 0 $, the sum remains the same whether we start from $ k = 0 $ or $ k = 1 $:</p>\n<p>$ \\sum_{k=0}^{n} k \\cdot \\binom{n}{k} = \\sum_{k=1}^{n} k \\cdot \\binom{n}{k} $</p>\n<p>Therefore,</p>\n<p>$ S = n \\cdot 2^{n-1} $</p>\n<p><strong>Step 4: Conclusion</strong></p>\n<p>The value of the sum $ S $ is $ n \\cdot 2^{n-1} $.</p>\n<hr />\n<p><strong>Answer:</strong></p>\n<p>$\\boxed{n\\,2^{\\,n\\,-\\,1}}$</p>",
+      "section": "A",
+      "instruction": ""
+    },
+    {
+      "id": "tllxlrvu6p",
+      "questionNumber": 11,
+      "questionText": "What is 1 - T<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">1</span>&nbsp;+ 2T<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">2</span>&nbsp;- 3T<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">3</span>&nbsp;+ ... + (-1)<span style=\"position: relative;  line-height: 0; vertical-align: baseline; top: -0.5em;font-size:10.5px;\">n</span>nT<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">n&nbsp;</span>equal to ?&nbsp;",
+      "options": [
+        "0",
+        "-2<span style=\"position: relative; line-height: 0; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">n - 1</span>",
+        "n2<span style=\"position: relative; line-height: 0; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">n - 1</span>",
+        "1"
+      ],
+      "correctOption": 3,
+      "correctAnswer": null,
+      "questionType": "MCQ",
+      "marks": 4,
+      "negativeMarks": -1,
+      "subject": "Mathematics",
+      "topic": "General",
+      "difficulty": "Medium",
+      "solution": "\n<p>Given equation:\n$ (1 + x)^n = 1 + T_1 x + T_2 x^2 + T_3 x^3 + \\ldots + T_n x^n \\quad \\text{----(1)} $</p>\n<p>For $ n = 3 $, the equation becomes:\n$ (1 + x)^3 = 1 + T_1 x + T_2 x^2 + T_3 x^3 $</p>\n<p>Expanding $ (1 + x)^3 $:\n$ 1 + 3x + 3x^2 + x^3 = 1 + T_1 x + T_2 x^2 + T_3 x^3 $</p>\n<p>By comparing coefficients from both sides, we find:\n$ T_1 = 3, \\quad T_2 = 3, \\quad T_3 = 1 $</p>\n<h4>Now, the required sum is:</h4>\n<p>$ S = 1 - T_1 + 2T_2 - 3T_3 + \\ldots + (-1)^n nT_n $</p>\n<p>For $ n = 3 $, this becomes:\n$ S = 1 - T_1 + 2T_2 - 3T_3 $\nSubstituting the values:\n$ S = 1 - 3 + 2 \\times 3 - 3 \\times 1 $\n$ S = 1 - 3 + 6 - 3 $\n$ S = 1 $</p>\n<h3>Conclusion:</h3>\n<p>The correct answer is $ \\boxed{1} $.</p>",
+      "section": "A",
+      "instruction": ""
+    }
+  ],
+  "sections": [
+    {
+      "name": "Mathematics"
+    }
+  ]
+}

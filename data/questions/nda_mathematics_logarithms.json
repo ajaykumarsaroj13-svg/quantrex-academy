@@ -1,0 +1,2282 @@
+[
+  {
+    "_id": "6a3df4197c54ae41c1c441c9",
+    "examGoalId": "tlmnk0kpgj",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 1,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.833,
+    "options": [
+      "<span class=\"math-tex\">$\\log _{a^{2}}(0.5)$</span>",
+      "<div><span class=\"math-tex\">$\\log _{0.5}(a^{2})$</span></div>\n",
+      "<span class=\"math-tex\">$2(\\log _{a^{2}}(0.5))$</span>",
+      "<span class=\"math-tex\">$2\\log _{0.5}(a^{2})$</span>"
+    ],
+    "question": "<div>For the following two (02) items:<br>\nLet&nbsp;<span class=\"math-tex\">$\\alpha$</span> and&nbsp;<span class=\"math-tex\">$\\beta $</span>&nbsp;be the roots of the quadratic equation<br>\n<span class=\"math-tex\">$(x^{2}+(\\log _{0.5}(\\alpha ^{2}))x+(\\log _{0.5}(\\alpha ^{2}))^{4}=0$</span><br>\nwhere&nbsp;<span class=\"math-tex\">$a ^ 2 \\ne1$</span>&nbsp;and&nbsp;<span class=\"math-tex\">$\\log _{0.5}(\\alpha ^{2})&gt;0$</span>&nbsp;Further,&nbsp;<span class=\"math-tex\">$\\beta ^{2}=\\alpha (\\log _{\\alpha ^{2}}(0.5))$</span><br>\n&nbsp;</div>\n<div>What is ẞ equal to?</div>",
+    "rawData": {
+      "question_id": "tlmnk0kpgj",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.833,
+      "paperId": "nda-mathematics-14th-september-2025",
+      "paperTitle": "NDA Mathematics 14th September 2025",
+      "permalink": "what-is--equal-to-nda-mathematics-5ewtroymoqi4d0mu",
+      "question": {
+        "en": {
+          "direction": null,
+          "comprehension": "For the following two (02) items:<br>\nLet&nbsp;<span class=\"math-tex\">$\\alpha$</span> and&nbsp;<span class=\"math-tex\">$\\beta $</span>&nbsp;be the roots of the quadratic equation<br>\n<span class=\"math-tex\">$(x^{2}+(\\log _{0.5}(\\alpha ^{2}))x+(\\log _{0.5}(\\alpha ^{2}))^{4}=0$</span><br>\nwhere&nbsp;<span class=\"math-tex\">$a ^ 2 \\ne1$</span>&nbsp;and&nbsp;<span class=\"math-tex\">$\\log _{0.5}(\\alpha ^{2})&gt;0$</span>&nbsp;Further,&nbsp;<span class=\"math-tex\">$\\beta ^{2}=\\alpha (\\log _{\\alpha ^{2}}(0.5))$</span><br>\n&nbsp;",
+          "content": "What is ẞ equal to?",
+          "options": [
+            {
+              "identifier": "1",
+              "content": "<span class=\"math-tex\">$\\log _{a^{2}}(0.5)$</span>"
+            },
+            {
+              "identifier": "2",
+              "content": "<div><span class=\"math-tex\">$\\log _{0.5}(a^{2})$</span></div>\n"
+            },
+            {
+              "identifier": "3",
+              "content": "<span class=\"math-tex\">$2(\\log _{a^{2}}(0.5))$</span>"
+            },
+            {
+              "identifier": "4",
+              "content": "<span class=\"math-tex\">$2\\log _{0.5}(a^{2})$</span>"
+            }
+          ],
+          "correct_options": [
+            "2"
+          ],
+          "explanation": "<p>Let  </p>\n<p>$$k=\\log_{0.5}(\\alpha^2)$$</p>\n<p>Then the given quadratic equation becomes</p>\n<p>$$x^2+kx+k^4=0$$</p>\n<p>and its roots are $\\alpha$ and $\\beta$.</p>\n<p>So, by Vieta’s formulas,</p>\n<p>$$\\alpha+\\beta=-k \\qquad \\text{and} \\qquad \\alpha\\beta=k^4$$</p>\n<p>Also given:</p>\n<p>$$\\beta^2=\\alpha\\left(\\log_{\\alpha^2}(0.5)\\right)$$</p>\n<p>Now use the change of base relation:</p>\n<p>$$\\log_{\\alpha^2}(0.5)=\\frac{1}{\\log_{0.5}(\\alpha^2)}=\\frac{1}{k}$$</p>\n<p>So the condition becomes</p>\n<p>$$\\beta^2=\\frac{\\alpha}{k}$$</p>\n<p>Hence,</p>\n<p>$$\\alpha=k\\beta^2$$</p>\n<p>Now substitute this into the product relation:</p>\n<p>$$\\alpha\\beta=k^4$$</p>\n<p>So,</p>\n<p>$$(k\\beta^2)\\beta=k^4$$</p>\n<p>$$k\\beta^3=k^4$$</p>\n<p>Since $k>0$, divide by $k$:</p>\n<p>$$\\beta^3=k^3$$</p>\n<p>Thus,</p>\n<p>$$\\beta=k$$</p>\n<p>because $k>0$.</p>\n<p>But $k=\\log_{0.5}(\\alpha^2)$, therefore</p>\n<p>$$\\beta=\\log_{0.5}(\\alpha^2)$$</p>\n<p>So the correct option is:</p>\n<p>$$\\boxed{\\log_{0.5}(\\alpha^2)}$$</p>\n<p>That is, <strong>Option 2</strong>.</p>",
+          "answer": null
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": "<p>निम्नलिखित दो (02) प्रश्नांशों के लिए :<br>\nमान लीजिए कि&nbsp;द्विघात समीकरण<span class=\"math-tex\">$(x^{2}+(\\log _{0.5}(\\alpha ^{2}))x+(\\log _{0.5}(\\alpha ^{2}))^{4}=0$</span>के मूल&nbsp;<span class=\"math-tex\">$\\alpha$</span>&nbsp;और&nbsp;<span class=\"math-tex\">$\\beta $</span>&nbsp;हैं, जहाँ <span class=\"math-tex\">$a ^ 2 \\ne1$</span> और <span class=\"math-tex\">$\\log _{0.5}(\\alpha ^{2})&gt;0$</span> है। इसके अतिरिक्त, &nbsp;<span class=\"math-tex\">$\\beta ^{2}=\\alpha (\\log _{\\alpha ^{2}}(0.5))$</span>&nbsp;है।&nbsp;</p>",
+          "content": "ẞ किसके बराबर है?",
+          "options": [
+            {
+              "identifier": "1",
+              "content": "<span class=\"math-tex\">$\\log _{a^{2}}(0.5)$</span>"
+            },
+            {
+              "identifier": "2",
+              "content": "<div><span class=\"math-tex\">$\\log _{0.5}(a^{2})$</span></div>\n"
+            },
+            {
+              "identifier": "3",
+              "content": "<span class=\"math-tex\">$2(\\log _{a^{2}}(0.5))$</span>"
+            },
+            {
+              "identifier": "4",
+              "content": "<span class=\"math-tex\">$2\\log _{0.5}(a^{2})$</span>"
+            }
+          ],
+          "correct_options": [
+            "2"
+          ],
+          "explanation": null,
+          "answer": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2025,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 14th September 2025",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "What is ẞ equal to?"
+        },
+        "hi": {
+          "title": "NDA Mathematics 14th September 2025",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "ẞ किसके बराबर है?"
+        }
+      },
+      "yearKey": "nda-mathematics-14th-september-2025"
+    },
+    "solution": "<p>Let  </p>\n<p>$$k=\\log_{0.5}(\\alpha^2)$$</p>\n<p>Then the given quadratic equation becomes</p>\n<p>$$x^2+kx+k^4=0$$</p>\n<p>and its roots are $\\alpha$ and $\\beta$.</p>\n<p>So, by Vieta’s formulas,</p>\n<p>$$\\alpha+\\beta=-k \\qquad \\text{and} \\qquad \\alpha\\beta=k^4$$</p>\n<p>Also given:</p>\n<p>$$\\beta^2=\\alpha\\left(\\log_{\\alpha^2}(0.5)\\right)$$</p>\n<p>Now use the change of base relation:</p>\n<p>$$\\log_{\\alpha^2}(0.5)=\\frac{1}{\\log_{0.5}(\\alpha^2)}=\\frac{1}{k}$$</p>\n<p>So the condition becomes</p>\n<p>$$\\beta^2=\\frac{\\alpha}{k}$$</p>\n<p>Hence,</p>\n<p>$$\\alpha=k\\beta^2$$</p>\n<p>Now substitute this into the product relation:</p>\n<p>$$\\alpha\\beta=k^4$$</p>\n<p>So,</p>\n<p>$$(k\\beta^2)\\beta=k^4$$</p>\n<p>$$k\\beta^3=k^4$$</p>\n<p>Since $k>0$, divide by $k$:</p>\n<p>$$\\beta^3=k^3$$</p>\n<p>Thus,</p>\n<p>$$\\beta=k$$</p>\n<p>because $k>0$.</p>\n<p>But $k=\\log_{0.5}(\\alpha^2)$, therefore</p>\n<p>$$\\beta=\\log_{0.5}(\\alpha^2)$$</p>\n<p>So the correct option is:</p>\n<p>$$\\boxed{\\log_{0.5}(\\alpha^2)}$$</p>\n<p>That is, <strong>Option 2</strong>.</p>",
+    "subject": "mathematics",
+    "title": "NDA (II) 2025",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2025",
+    "correctAnswer": "<div><span class=\"math-tex\">$\\log _{0.5}(a^{2})$</span></div>\n"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441ca",
+    "examGoalId": "tlmnk0kph2",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 2,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.833,
+    "options": [
+      "n &lt; 7",
+      "7 &lt; n &lt; 9",
+      "9 &lt; n &lt; 12",
+      "n &gt; 12"
+    ],
+    "question": "<div>For the following two (02) items:<br>\nLet&nbsp;<span class=\"math-tex\">$p=\\sum_{j=1}^{n}\\log_{10}2^{j} and q=\\sum_{j=1}^{n}\\log_{10}5^{j}$</span></div>\n<div>If p + q = 66 then which one of the following is correct?</div>",
+    "rawData": {
+      "question_id": "tlmnk0kph2",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.833,
+      "paperId": "nda-mathematics-14th-september-2025",
+      "paperTitle": "NDA Mathematics 14th September 2025",
+      "permalink": "if-p--q--66-then-which-one-of-the-following-is-correct-nda-mathematics-zi25a9cz6fslceps",
+      "question": {
+        "en": {
+          "direction": null,
+          "comprehension": "For the following two (02) items:<br>\nLet&nbsp;<span class=\"math-tex\">$p=\\sum_{j=1}^{n}\\log_{10}2^{j} and q=\\sum_{j=1}^{n}\\log_{10}5^{j}$</span>",
+          "content": "If p + q = 66 then which one of the following is correct?",
+          "options": [
+            {
+              "identifier": "1",
+              "content": "n &lt; 7"
+            },
+            {
+              "identifier": "2",
+              "content": "7 &lt; n &lt; 9"
+            },
+            {
+              "identifier": "3",
+              "content": "9 &lt; n &lt; 12"
+            },
+            {
+              "identifier": "4",
+              "content": "n &gt; 12"
+            }
+          ],
+          "correct_options": [
+            "3"
+          ],
+          "explanation": "<p>Let us carefully solve this problem step-by-step using the basic properties of logarithms and sequences. </p>\n<p>We are given the following two expressions:</p>\n<p>$$p = \\sum_{j=1}^{n}\\log_{10}2^{j}$$</p>\n<p>$$q = \\sum_{j=1}^{n}\\log_{10}5^{j}$$</p>\n<p>We are also given that the sum of $p$ and $q$ is $66$. Let us write down the equation for $p + q$:</p>\n<p>$$p + q = \\sum_{j=1}^{n}\\log_{10}2^{j} + \\sum_{j=1}^{n}\\log_{10}5^{j}$$</p>\n<p>Because both summations have the same limits (from $j=1$ to $n$), we can combine them into a single summation:</p>\n<p>$$p + q = \\sum_{j=1}^{n} \\left( \\log_{10}2^{j} + \\log_{10}5^{j} \\right)$$</p>\n<p>According to the product property of logarithms, we know that $\\log_a m + \\log_a n = \\log_a(m \\times n)$. Applying this property inside the summation, we get:</p>\n<p>$$p + q = \\sum_{j=1}^{n} \\log_{10}(2^{j} \\times 5^{j})$$</p>\n<p>Using the laws of exponents, $a^x \\times b^x = (a \\times b)^x$. Therefore:</p>\n<p>$$p + q = \\sum_{j=1}^{n} \\log_{10}(10^{j})$$</p>\n<p>Now, using the power rule of logarithms, $\\log_a(m^n) = n \\log_a m$, we can bring the exponent $j$ in front of the logarithm:</p>\n<p>$$p + q = \\sum_{j=1}^{n} j \\log_{10}(10)$$</p>\n<p>Since the logarithm of a number to the same base is $1$ (i.e., $\\log_{10} 10 = 1$), our expression simplifies beautifully to:</p>\n<p>$$p + q = \\sum_{j=1}^{n} j$$</p>\n<p>This is simply the sum of the first $n$ natural numbers. From the NCERT chapter on Sequences and Series, we know the formula for the sum of the first $n$ natural numbers is:</p>\n<p>$$p + q = \\frac{n(n+1)}{2}$$</p>\n<p>We are given that $p + q = 66$. Substituting this value into our equation:</p>\n<p>$$66 = \\frac{n(n+1)}{2}$$</p>\n<p>To solve for $n$, we multiply both sides by $2$:</p>\n<p>$$132 = n(n+1)$$</p>\n<p>$$n^2 + n - 132 = 0$$</p>\n<p>Now, we solve this quadratic equation by splitting the middle term. We look for two numbers that multiply to $-132$ and add up to $+1$. These numbers are $12$ and $-11$.</p>\n<p>$$n^2 + 12n - 11n - 132 = 0$$</p>\n<p>$$n(n + 12) - 11(n + 12) = 0$$</p>\n<p>$$(n - 11)(n + 12) = 0$$</p>\n<p>This gives us two possible values for $n$:</p>\n<p>$$n = 11 \\quad \\text{or} \\quad n = -12$$</p>\n<p>Since $n$ represents the number of terms in a summation, it must be a positive integer. Therefore, we can discard $n = -12$ and take:</p>\n<p>$$n = 11$$</p>\n<p>Now, let us examine the given options to see where our value of $11$ fits:</p>\n<p>Option 1: $n < 7$</p>\n<p>Option 2: $7 < n < 9$</p>\n<p>Option 3: $9 < n < 12$</p>\n<p>Option 4: $n > 12$</p>\n<p>Since $11$ lies strictly between $9$ and $12$, Option 3 is the correct choice. </p>\n<p>Correct Answer: Option 3</p>",
+          "answer": null
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": "निम्नलिखित दो (02) प्रश्नांशों के लिए :<br>\nमान लीजिए कि&nbsp;<span class=\"math-tex\">$p=\\sum_{j=1}^{n}\\log_{10}2^{j} $</span>&nbsp;और&nbsp;<span class=\"math-tex\">$q=\\sum_{j=1}^{n}\\log_{10}5^{j}$</span>&nbsp;है।&nbsp;",
+          "content": "यदि p + q = 66 है, तो निम्नलिखित में से कौन-सा एक सही है?",
+          "options": [
+            {
+              "identifier": "1",
+              "content": "n &lt; 7"
+            },
+            {
+              "identifier": "2",
+              "content": "7 &lt; n &lt; 9"
+            },
+            {
+              "identifier": "3",
+              "content": "9 &lt; n &lt; 12"
+            },
+            {
+              "identifier": "4",
+              "content": "n &gt; 12"
+            }
+          ],
+          "correct_options": [
+            "3"
+          ],
+          "explanation": null,
+          "answer": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2025,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 14th September 2025",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If p + q = 66 then which one of the following is correct?"
+        },
+        "hi": {
+          "title": "NDA Mathematics 14th September 2025",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "यदि p + q = 66 है, तो निम्नलिखित में से कौन-सा एक सही है?"
+        }
+      },
+      "yearKey": "nda-mathematics-14th-september-2025"
+    },
+    "solution": "<p>Let us carefully solve this problem step-by-step using the basic properties of logarithms and sequences. </p>\n<p>We are given the following two expressions:</p>\n<p>$$p = \\sum_{j=1}^{n}\\log_{10}2^{j}$$</p>\n<p>$$q = \\sum_{j=1}^{n}\\log_{10}5^{j}$$</p>\n<p>We are also given that the sum of $p$ and $q$ is $66$. Let us write down the equation for $p + q$:</p>\n<p>$$p + q = \\sum_{j=1}^{n}\\log_{10}2^{j} + \\sum_{j=1}^{n}\\log_{10}5^{j}$$</p>\n<p>Because both summations have the same limits (from $j=1$ to $n$), we can combine them into a single summation:</p>\n<p>$$p + q = \\sum_{j=1}^{n} \\left( \\log_{10}2^{j} + \\log_{10}5^{j} \\right)$$</p>\n<p>According to the product property of logarithms, we know that $\\log_a m + \\log_a n = \\log_a(m \\times n)$. Applying this property inside the summation, we get:</p>\n<p>$$p + q = \\sum_{j=1}^{n} \\log_{10}(2^{j} \\times 5^{j})$$</p>\n<p>Using the laws of exponents, $a^x \\times b^x = (a \\times b)^x$. Therefore:</p>\n<p>$$p + q = \\sum_{j=1}^{n} \\log_{10}(10^{j})$$</p>\n<p>Now, using the power rule of logarithms, $\\log_a(m^n) = n \\log_a m$, we can bring the exponent $j$ in front of the logarithm:</p>\n<p>$$p + q = \\sum_{j=1}^{n} j \\log_{10}(10)$$</p>\n<p>Since the logarithm of a number to the same base is $1$ (i.e., $\\log_{10} 10 = 1$), our expression simplifies beautifully to:</p>\n<p>$$p + q = \\sum_{j=1}^{n} j$$</p>\n<p>This is simply the sum of the first $n$ natural numbers. From the NCERT chapter on Sequences and Series, we know the formula for the sum of the first $n$ natural numbers is:</p>\n<p>$$p + q = \\frac{n(n+1)}{2}$$</p>\n<p>We are given that $p + q = 66$. Substituting this value into our equation:</p>\n<p>$$66 = \\frac{n(n+1)}{2}$$</p>\n<p>To solve for $n$, we multiply both sides by $2$:</p>\n<p>$$132 = n(n+1)$$</p>\n<p>$$n^2 + n - 132 = 0$$</p>\n<p>Now, we solve this quadratic equation by splitting the middle term. We look for two numbers that multiply to $-132$ and add up to $+1$. These numbers are $12$ and $-11$.</p>\n<p>$$n^2 + 12n - 11n - 132 = 0$$</p>\n<p>$$n(n + 12) - 11(n + 12) = 0$$</p>\n<p>$$(n - 11)(n + 12) = 0$$</p>\n<p>This gives us two possible values for $n$:</p>\n<p>$$n = 11 \\quad \\text{or} \\quad n = -12$$</p>\n<p>Since $n$ represents the number of terms in a summation, it must be a positive integer. Therefore, we can discard $n = -12$ and take:</p>\n<p>$$n = 11$$</p>\n<p>Now, let us examine the given options to see where our value of $11$ fits:</p>\n<p>Option 1: $n < 7$</p>\n<p>Option 2: $7 < n < 9$</p>\n<p>Option 3: $9 < n < 12$</p>\n<p>Option 4: $n > 12$</p>\n<p>Since $11$ lies strictly between $9$ and $12$, Option 3 is the correct choice. </p>\n<p>Correct Answer: Option 3</p>",
+    "subject": "mathematics",
+    "title": "NDA (II) 2025",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2025",
+    "correctAnswer": "9 &lt; n &lt; 12"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441cb",
+    "examGoalId": "tlmnk0kph6",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 3,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.833,
+    "options": [
+      "<span class=\"math-tex\">$\\log_{10} 2 \\cdot 5$</span>",
+      "<span class=\"math-tex\">$5\\log_{10} 2 \\cdot 5$</span>",
+      "<span class=\"math-tex\">$10\\log_{10} 2 \\cdot 5$</span>",
+      "<span class=\"math-tex\">$15\\log_{10} 2 \\cdot 5$</span>"
+    ],
+    "question": "<div>For the following two (02) items:<br>\nLet&nbsp;<span class=\"math-tex\">$p=\\sum_{j=1}^{n}\\log_{10}2^{j} and q=\\sum_{j=1}^{n}\\log_{10}5^{j}$</span></div>\n<div>If p + q = 15 then what is equal to? q - p</div>",
+    "rawData": {
+      "question_id": "tlmnk0kph6",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.833,
+      "paperId": "nda-mathematics-14th-september-2025",
+      "paperTitle": "NDA Mathematics 14th September 2025",
+      "permalink": "if-p--q--15-then-what-is-equal-to-q-p-nda-mathematics-vyvmppvdiww4e7ua",
+      "question": {
+        "en": {
+          "direction": null,
+          "comprehension": "For the following two (02) items:<br>\nLet&nbsp;<span class=\"math-tex\">$p=\\sum_{j=1}^{n}\\log_{10}2^{j} and q=\\sum_{j=1}^{n}\\log_{10}5^{j}$</span>",
+          "content": "If p + q = 15 then what is equal to? q - p",
+          "options": [
+            {
+              "identifier": "1",
+              "content": "<span class=\"math-tex\">$\\log_{10} 2 \\cdot 5$</span>"
+            },
+            {
+              "identifier": "2",
+              "content": "<span class=\"math-tex\">$5\\log_{10} 2 \\cdot 5$</span>"
+            },
+            {
+              "identifier": "3",
+              "content": "<span class=\"math-tex\">$10\\log_{10} 2 \\cdot 5$</span>"
+            },
+            {
+              "identifier": "4",
+              "content": "<span class=\"math-tex\">$15\\log_{10} 2 \\cdot 5$</span>"
+            }
+          ],
+          "correct_options": [
+            "4"
+          ],
+          "explanation": "<p>Let us solve this problem step by step using the fundamental properties of logarithms and mathematical induction concepts regarding the sum of a sequence.</p>\n<p>We are given:</p>\n<p>$$p = \\sum_{j=1}^{n}\\log_{10}2^{j}$$</p>\n<p>$$q = \\sum_{j=1}^{n}\\log_{10}5^{j}$$</p>\n<p>$$p + q = 15$$</p>\n<p><strong>Step 1: Simplify the expressions for $p$ and $q$</strong></p>\n<p>We will use the power rule of logarithms, which states that $\\log_a (m^k) = k \\log_a m$. </p>\n<p>For $p$:</p>\n<p>$$p = \\sum_{j=1}^{n} j \\log_{10}2$$</p>\n<p>Since $\\log_{10}2$ is a constant, we can take it outside the summation:</p>\n<p>$$p = \\log_{10}2 \\sum_{j=1}^{n} j$$</p>\n<p>From our study of sequences and series, we know that the sum of the first $n$ natural numbers is given by the formula $\\sum_{j=1}^{n} j = \\frac{n(n+1)}{2}$. Substituting this back, we get:</p>\n<p>$$p = \\frac{n(n+1)}{2} \\log_{10}2$$</p>\n<p>Similarly, for $q$:</p>\n<p>$$q = \\sum_{j=1}^{n} j \\log_{10}5$$</p>\n<p>$$q = \\log_{10}5 \\sum_{j=1}^{n} j$$</p>\n<p>$$q = \\frac{n(n+1)}{2} \\log_{10}5$$</p>\n<p><strong>Step 2: Use the given relation $p + q = 15$</strong></p>\n<p>Substitute the simplified expressions for $p$ and $q$ into the given equation:</p>\n<p>$$\\frac{n(n+1)}{2} \\log_{10}2 + \\frac{n(n+1)}{2} \\log_{10}5 = 15$$</p>\n<p>Let us take $\\frac{n(n+1)}{2}$ as a common factor:</p>\n<p>$$\\frac{n(n+1)}{2} (\\log_{10}2 + \\log_{10}5) = 15$$</p>\n<p>According to the product rule of logarithms, $\\log_a m + \\log_a n = \\log_a (mn)$. Applying this to our equation:</p>\n<p>$$\\frac{n(n+1)}{2} \\log_{10}(2 \\times 5) = 15$$</p>\n<p>$$\\frac{n(n+1)}{2} \\log_{10}(10) = 15$$</p>\n<p>We know that the logarithm of a base to itself is always $1$, meaning $\\log_{10}10 = 1$. Therefore:</p>\n<p>$$\\frac{n(n+1)}{2} (1) = 15$$</p>\n<p>$$\\frac{n(n+1)}{2} = 15$$</p>\n<p><strong>Step 3: Calculate the value of $q - p$</strong></p>\n<p>Now, let us write the expression for $q - p$ using the simplified forms we found in Step 1:</p>\n<p>$$q - p = \\frac{n(n+1)}{2} \\log_{10}5 - \\frac{n(n+1)}{2} \\log_{10}2$$</p>\n<p>Taking $\\frac{n(n+1)}{2}$ as a common factor gives:</p>\n<p>$$q - p = \\frac{n(n+1)}{2} (\\log_{10}5 - \\log_{10}2)$$</p>\n<p>Substitute the value $\\frac{n(n+1)}{2} = 15$ that we calculated in Step 2:</p>\n<p>$$q - p = 15 (\\log_{10}5 - \\log_{10}2)$$</p>\n<p>Next, we apply the quotient rule of logarithms, which states that $\\log_a m - \\log_a n = \\log_a \\left(\\frac{m}{n}\\right)$:</p>\n<p>$$q - p = 15 \\log_{10} \\left(\\frac{5}{2}\\right)$$</p>\n<p>$$q - p = 15 \\log_{10} (2.5)$$</p>\n<p>In the options provided, the decimal $2.5$ is represented using the notation $2 \\cdot 5$. </p>\n<p>Therefore, our final answer matches Option 4 perfectly.</p>\n<p><strong>Correct Answer:</strong></p>\n<p>Option 4: $$15\\log_{10} 2 \\cdot 5$$</p>",
+          "answer": null
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": "निम्नलिखित दो (02) प्रश्नांशों के लिए :<br>\nमान लीजिए कि&nbsp;<span class=\"math-tex\">$p=\\sum_{j=1}^{n}\\log_{10}2^{j} $</span>&nbsp;और&nbsp;<span class=\"math-tex\">$q=\\sum_{j=1}^{n}\\log_{10}5^{j}$</span>&nbsp;है।&nbsp;",
+          "content": "यदि p + q = 15 है, तो q - p किसके बराबर है?",
+          "options": [
+            {
+              "identifier": "1",
+              "content": "<span class=\"math-tex\">$\\log_{10} 2 \\cdot 5$</span>"
+            },
+            {
+              "identifier": "2",
+              "content": "<span class=\"math-tex\">$5\\log_{10} 2 \\cdot 5$</span>"
+            },
+            {
+              "identifier": "3",
+              "content": "<span class=\"math-tex\">$10\\log_{10} 2 \\cdot 5$</span>"
+            },
+            {
+              "identifier": "4",
+              "content": "<span class=\"math-tex\">$15\\log_{10} 2 \\cdot 5$</span>"
+            }
+          ],
+          "correct_options": [
+            "4"
+          ],
+          "explanation": null,
+          "answer": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2025,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 14th September 2025",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If p + q = 15 then what is equal to? q - p"
+        },
+        "hi": {
+          "title": "NDA Mathematics 14th September 2025",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "यदि p + q = 15 है, तो q - p किसके बराबर है?"
+        }
+      },
+      "yearKey": "nda-mathematics-14th-september-2025"
+    },
+    "solution": "<p>Let us solve this problem step by step using the fundamental properties of logarithms and mathematical induction concepts regarding the sum of a sequence.</p>\n<p>We are given:</p>\n<p>$$p = \\sum_{j=1}^{n}\\log_{10}2^{j}$$</p>\n<p>$$q = \\sum_{j=1}^{n}\\log_{10}5^{j}$$</p>\n<p>$$p + q = 15$$</p>\n<p><strong>Step 1: Simplify the expressions for $p$ and $q$</strong></p>\n<p>We will use the power rule of logarithms, which states that $\\log_a (m^k) = k \\log_a m$. </p>\n<p>For $p$:</p>\n<p>$$p = \\sum_{j=1}^{n} j \\log_{10}2$$</p>\n<p>Since $\\log_{10}2$ is a constant, we can take it outside the summation:</p>\n<p>$$p = \\log_{10}2 \\sum_{j=1}^{n} j$$</p>\n<p>From our study of sequences and series, we know that the sum of the first $n$ natural numbers is given by the formula $\\sum_{j=1}^{n} j = \\frac{n(n+1)}{2}$. Substituting this back, we get:</p>\n<p>$$p = \\frac{n(n+1)}{2} \\log_{10}2$$</p>\n<p>Similarly, for $q$:</p>\n<p>$$q = \\sum_{j=1}^{n} j \\log_{10}5$$</p>\n<p>$$q = \\log_{10}5 \\sum_{j=1}^{n} j$$</p>\n<p>$$q = \\frac{n(n+1)}{2} \\log_{10}5$$</p>\n<p><strong>Step 2: Use the given relation $p + q = 15$</strong></p>\n<p>Substitute the simplified expressions for $p$ and $q$ into the given equation:</p>\n<p>$$\\frac{n(n+1)}{2} \\log_{10}2 + \\frac{n(n+1)}{2} \\log_{10}5 = 15$$</p>\n<p>Let us take $\\frac{n(n+1)}{2}$ as a common factor:</p>\n<p>$$\\frac{n(n+1)}{2} (\\log_{10}2 + \\log_{10}5) = 15$$</p>\n<p>According to the product rule of logarithms, $\\log_a m + \\log_a n = \\log_a (mn)$. Applying this to our equation:</p>\n<p>$$\\frac{n(n+1)}{2} \\log_{10}(2 \\times 5) = 15$$</p>\n<p>$$\\frac{n(n+1)}{2} \\log_{10}(10) = 15$$</p>\n<p>We know that the logarithm of a base to itself is always $1$, meaning $\\log_{10}10 = 1$. Therefore:</p>\n<p>$$\\frac{n(n+1)}{2} (1) = 15$$</p>\n<p>$$\\frac{n(n+1)}{2} = 15$$</p>\n<p><strong>Step 3: Calculate the value of $q - p$</strong></p>\n<p>Now, let us write the expression for $q - p$ using the simplified forms we found in Step 1:</p>\n<p>$$q - p = \\frac{n(n+1)}{2} \\log_{10}5 - \\frac{n(n+1)}{2} \\log_{10}2$$</p>\n<p>Taking $\\frac{n(n+1)}{2}$ as a common factor gives:</p>\n<p>$$q - p = \\frac{n(n+1)}{2} (\\log_{10}5 - \\log_{10}2)$$</p>\n<p>Substitute the value $\\frac{n(n+1)}{2} = 15$ that we calculated in Step 2:</p>\n<p>$$q - p = 15 (\\log_{10}5 - \\log_{10}2)$$</p>\n<p>Next, we apply the quotient rule of logarithms, which states that $\\log_a m - \\log_a n = \\log_a \\left(\\frac{m}{n}\\right)$:</p>\n<p>$$q - p = 15 \\log_{10} \\left(\\frac{5}{2}\\right)$$</p>\n<p>$$q - p = 15 \\log_{10} (2.5)$$</p>\n<p>In the options provided, the decimal $2.5$ is represented using the notation $2 \\cdot 5$. </p>\n<p>Therefore, our final answer matches Option 4 perfectly.</p>\n<p><strong>Correct Answer:</strong></p>\n<p>Option 4: $$15\\log_{10} 2 \\cdot 5$$</p>",
+    "subject": "mathematics",
+    "title": "NDA (II) 2025",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2025",
+    "correctAnswer": "<span class=\"math-tex\">$15\\log_{10} 2 \\cdot 5$</span>"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441cc",
+    "examGoalId": "lwv3tyse",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 0,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "<p>$bd^2 f^3$</p>",
+      "<p>$bdf$</p>",
+      "<p>$b^3 d^2 f$</p>",
+      "<p>$b^2 d^2 f^2$</p>"
+    ],
+    "question": "<div>If $\\log _b a=p, \\log _d c=2 p$ and $\\log _f e=3 p$, then what is $(a c e)^{\\frac{1}{p}}$ equal to ?</div>",
+    "rawData": {
+      "question_id": "lwv3tyse",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperId": "nda-mathematics-21-april-2024",
+      "paperTitle": "NDA Mathematics 21 April 2024",
+      "permalink": "pif-loga--p-logc--2p-and-loge--3p-then-nda-mathematics-odyacdrwd5yj7bed",
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "If $\\log _b a=p, \\log _d c=2 p$ and $\\log _f e=3 p$, then what is $(a c e)^{\\frac{1}{p}}$ equal to ?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "<p>$bd^2 f^3$</p>"
+            },
+            {
+              "identifier": "B",
+              "content": "<p>$bdf$</p>"
+            },
+            {
+              "identifier": "C",
+              "content": "<p>$b^3 d^2 f$</p>"
+            },
+            {
+              "identifier": "D",
+              "content": "<p>$b^2 d^2 f^2$</p>"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "<p>To determine what $(a c e)^{\\frac{1}{p}}$ equals, let's first make use of the given values and the properties of logarithms.</p>\n\n<p>Given:</p>\n\n<p>$$\\log_b a = p$$</p>\n\n<p>$$\\log_d c = 2p$$</p>\n\n<p>$$\\log_f e = 3p$$</p>\n\n<p>We can express $a$, $c$, and $e$ in terms of $p$:</p>\n\n<p>From the first equation, $\\log_b a = p$, we get:</p>\n\n<p>$$b^p = a$$</p>\n\n<p>From the second equation, $\\log_d c = 2p$, we get:</p>\n\n<p>$$d^{2p} = c$$</p>\n\n<p>From the third equation, $\\log_f e = 3p$, we get:</p>\n\n<p>$$f^{3p} = e$$</p>\n\n<p>Now, we need to find $(a c e)^{\\frac{1}{p}}$:</p>\n\n<p>Substituting the values we found:</p>\n\n<p>$$a = b^p$$</p>\n\n<p>$$c = d^{2p}$$</p>\n\n<p>$$e = f^{3p}$$</p>\n\n<p>Hence,</p>\n\n<p>$$a c e = b^p \\cdot d^{2p} \\cdot f^{3p}$$</p>\n\n<p>Now we raise this product to the power $\\frac{1}{p}$:</p>\n\n<p>$$\\left(b^p \\cdot d^{2p} \\cdot f^{3p}\\right)^{\\frac{1}{p}}$$</p>\n\n<p>Using the property of exponents $(x^a)^b = x^{ab}$, we get:</p>\n\n<p>$$b^{p \\cdot \\frac{1}{p}} \\cdot d^{2p \\cdot \\frac{1}{p}} \\cdot f^{3p \\cdot \\frac{1}{p}}$$</p>\n\n<p>Simplifying the exponents:</p>\n\n<p>$$b^1 \\cdot d^2 \\cdot f^3$$</p>\n\n<p>$$b \\cdot d^2 \\cdot f^3$$</p>\n\n<p>Therefore, the expression $(a c e)^{\\frac{1}{p}}$ simplifies to $b \\cdot d^2 \\cdot f^3$.</p>\n\n<p>The correct option is:</p>\n\n<p>Option A: $bd^2 f^3$</p>"
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": null,
+          "content": "<p>यदि $$\\log _b a=p, \\log _d c=2 p$$ और $$\\log _f e=3 p$$, तो $$(a c e)^{\\frac{1}{p}}$$ किसके बराबर है ?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$$b d^2 f^3$$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$$b d f$$\n"
+            },
+            {
+              "identifier": "C",
+              "content": "$$b^3 d^2 f$$\n"
+            },
+            {
+              "identifier": "D",
+              "content": "$$b^2 d^2 f^2$$"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 90000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2024,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 21 April 2024",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If $\\log _b a=p, \\log _d c=2 p$ and $\\log _f e=3 p$, then what is $(a c e)^{\\frac{1}{p}}$ equal to ?"
+        },
+        "hi": {
+          "title": "NDA Mathematics 21 April 2024",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "यदि $$\\log _b a=p, \\log _d c=2 p$$ और $$\\log _f e=3 p$$, तो $$(a c e)^{\\frac{1}{p}}$$ किसके बराबर है ?"
+        }
+      },
+      "yearKey": "nda-mathematics-21-april-2024"
+    },
+    "solution": "<p>To determine what $(a c e)^{\\frac{1}{p}}$ equals, let's first make use of the given values and the properties of logarithms.</p>\n\n<p>Given:</p>\n\n<p>$$\\log_b a = p$$</p>\n\n<p>$$\\log_d c = 2p$$</p>\n\n<p>$$\\log_f e = 3p$$</p>\n\n<p>We can express $a$, $c$, and $e$ in terms of $p$:</p>\n\n<p>From the first equation, $\\log_b a = p$, we get:</p>\n\n<p>$$b^p = a$$</p>\n\n<p>From the second equation, $\\log_d c = 2p$, we get:</p>\n\n<p>$$d^{2p} = c$$</p>\n\n<p>From the third equation, $\\log_f e = 3p$, we get:</p>\n\n<p>$$f^{3p} = e$$</p>\n\n<p>Now, we need to find $(a c e)^{\\frac{1}{p}}$:</p>\n\n<p>Substituting the values we found:</p>\n\n<p>$$a = b^p$$</p>\n\n<p>$$c = d^{2p}$$</p>\n\n<p>$$e = f^{3p}$$</p>\n\n<p>Hence,</p>\n\n<p>$$a c e = b^p \\cdot d^{2p} \\cdot f^{3p}$$</p>\n\n<p>Now we raise this product to the power $\\frac{1}{p}$:</p>\n\n<p>$$\\left(b^p \\cdot d^{2p} \\cdot f^{3p}\\right)^{\\frac{1}{p}}$$</p>\n\n<p>Using the property of exponents $(x^a)^b = x^{ab}$, we get:</p>\n\n<p>$$b^{p \\cdot \\frac{1}{p}} \\cdot d^{2p \\cdot \\frac{1}{p}} \\cdot f^{3p \\cdot \\frac{1}{p}}$$</p>\n\n<p>Simplifying the exponents:</p>\n\n<p>$$b^1 \\cdot d^2 \\cdot f^3$$</p>\n\n<p>$$b \\cdot d^2 \\cdot f^3$$</p>\n\n<p>Therefore, the expression $(a c e)^{\\frac{1}{p}}$ simplifies to $b \\cdot d^2 \\cdot f^3$.</p>\n\n<p>The correct option is:</p>\n\n<p>Option A: $bd^2 f^3$</p>",
+    "subject": "mathematics",
+    "title": "NDA (I) 2024",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2024"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441cd",
+    "examGoalId": "lwv447tt",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 1,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "<p>Zero</p>",
+      "<p>One</p>",
+      "<p>Two</p>",
+      "<p>Three</p>"
+    ],
+    "question": "<div><p>What is the number of solutions of $\\log_4(x - 1) = \\log_2(x - 3)$?</p></div>",
+    "rawData": {
+      "question_id": "lwv447tt",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperId": "nda-mathematics-21-april-2024",
+      "paperTitle": "NDA Mathematics 21 April 2024",
+      "permalink": "pwhat-is-the-number-of-solutions-of-log4x-1--log-nda-mathematics-inviycb5zjj1mzlc",
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>What is the number of solutions of $\\log_4(x - 1) = \\log_2(x - 3)$?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "<p>Zero</p>"
+            },
+            {
+              "identifier": "B",
+              "content": "<p>One</p>"
+            },
+            {
+              "identifier": "C",
+              "content": "<p>Two</p>"
+            },
+            {
+              "identifier": "D",
+              "content": "<p>Three</p>"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "<p>To find the number of solutions to the equation $$\\log_4(x - 1) = \\log_2(x - 3)$$, we need to understand the relationship between the logarithmic bases.</p>\n\n<p>We can use the change of base formula to rewrite the term on the left side in terms of base 2 logarithms. Recall that the change of base formula is:</p>\n\n<p>$$\\log_b(a) = \\frac{\\log_k(a)}{\\log_k(b)}$$</p>\n\n<p>Here, we want to rewrite $$\\log_4(x - 1)$$ in terms of base 2. Since 4 is $$2^2$$, we can express it as:</p>\n\n<p>$$\\log_4(x - 1) = \\frac{\\log_2(x - 1)}{\\log_2(4)}$$</p>\n\n<p>Since $$\\log_2(4) = \\log_2(2^2) = 2$$, we have:</p>\n\n<p>$$\\log_4(x - 1) = \\frac{\\log_2(x - 1)}{2}$$</p>\n\n<p>Now our equation becomes:</p>\n\n<p>$$\\frac{\\log_2(x - 1)}{2} = \\log_2(x - 3)$$</p>\n\n<p>To eliminate the fraction, we multiply both sides of the equation by 2:</p>\n\n<p>$$\\log_2(x - 1) = 2 \\log_2(x - 3)$$</p>\n\n<p>Using the power rule of logarithms, which states $$a \\log_b(c) = \\log_b(c^a)$$, we can rewrite the right side of the equation:</p>\n\n<p>$$\\log_2(x - 1) = \\log_2((x - 3)^2)$$</p>\n\n<p>Since the bases are the same, we can set the arguments equal to each other:</p>\n\n<p>$$x - 1 = (x - 3)^2$$</p>\n\n<p>Now, we solve the resulting quadratic equation. Expand the square on the right side:</p>\n\n<p>$$x - 1 = x^2 - 6x + 9$$</p>\n\n<p>Rearrange all terms to one side of the equation to set it to zero:</p>\n\n<p>$$x^2 - 6x + 9 - x + 1 = 0$$</p>\n\n<p>Simplify the equation:</p>\n\n<p>$$x^2 - 7x + 10 = 0$$</p>\n\n<p>Now we solve this quadratic equation either by factoring, completing the square, or using the quadratic formula. This quadratic can be factored as:</p>\n\n<p>$$(x - 2)(x - 5) = 0$$</p>\n\n<p>Setting each factor equal to zero gives us the potential solutions:</p>\n\n<p>$$x - 2 = 0 \\implies x = 2$$</p>\n\n<p>$$x - 5 = 0 \\implies x = 5$$</p>\n\n<p>However, these solutions must be checked to ensure they satisfy the original logarithmic equations. Both values must make the arguments of the logarithms positive:</p>\n\n<p>For $$x = 2$$:</p>\n\n<p>$$x - 1 = 1$$ (which is positive)</p>\n\n<p>$$x - 3 = -1$$ (which is not positive; hence, $$x = 2$$ is not a valid solution)</p>\n\n<p>For $$x = 5$$:</p>\n\n<p>$$x - 1 = 4$$ (which is positive)</p>\n\n<p>$$x - 3 = 2$$ (which is positive; hence, $$x = 5$$ is a valid solution)</p>\n\n<p>Therefore, there is only one valid solution:</p>\n\n<p>Option B: One</p>"
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": null,
+          "content": "<p>$$\\log _4(x-1)=\\log _2(x-3)$$ के हलों की संख्या कितनी है ?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "शून्य\n"
+            },
+            {
+              "identifier": "B",
+              "content": "एक\n"
+            },
+            {
+              "identifier": "C",
+              "content": "दो\n"
+            },
+            {
+              "identifier": "D",
+              "content": "तीन"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 90000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2024,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 21 April 2024",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "What is the number of solutions of $\\log_4(x - 1) = \\log_2(x - 3)$?"
+        },
+        "hi": {
+          "title": "NDA Mathematics 21 April 2024",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "$$\\log _4(x-1)=\\log _2(x-3)$$ के हलों की संख्या कितनी है ?"
+        }
+      },
+      "yearKey": "nda-mathematics-21-april-2024"
+    },
+    "solution": "<p>To find the number of solutions to the equation $$\\log_4(x - 1) = \\log_2(x - 3)$$, we need to understand the relationship between the logarithmic bases.</p>\n\n<p>We can use the change of base formula to rewrite the term on the left side in terms of base 2 logarithms. Recall that the change of base formula is:</p>\n\n<p>$$\\log_b(a) = \\frac{\\log_k(a)}{\\log_k(b)}$$</p>\n\n<p>Here, we want to rewrite $$\\log_4(x - 1)$$ in terms of base 2. Since 4 is $$2^2$$, we can express it as:</p>\n\n<p>$$\\log_4(x - 1) = \\frac{\\log_2(x - 1)}{\\log_2(4)}$$</p>\n\n<p>Since $$\\log_2(4) = \\log_2(2^2) = 2$$, we have:</p>\n\n<p>$$\\log_4(x - 1) = \\frac{\\log_2(x - 1)}{2}$$</p>\n\n<p>Now our equation becomes:</p>\n\n<p>$$\\frac{\\log_2(x - 1)}{2} = \\log_2(x - 3)$$</p>\n\n<p>To eliminate the fraction, we multiply both sides of the equation by 2:</p>\n\n<p>$$\\log_2(x - 1) = 2 \\log_2(x - 3)$$</p>\n\n<p>Using the power rule of logarithms, which states $$a \\log_b(c) = \\log_b(c^a)$$, we can rewrite the right side of the equation:</p>\n\n<p>$$\\log_2(x - 1) = \\log_2((x - 3)^2)$$</p>\n\n<p>Since the bases are the same, we can set the arguments equal to each other:</p>\n\n<p>$$x - 1 = (x - 3)^2$$</p>\n\n<p>Now, we solve the resulting quadratic equation. Expand the square on the right side:</p>\n\n<p>$$x - 1 = x^2 - 6x + 9$$</p>\n\n<p>Rearrange all terms to one side of the equation to set it to zero:</p>\n\n<p>$$x^2 - 6x + 9 - x + 1 = 0$$</p>\n\n<p>Simplify the equation:</p>\n\n<p>$$x^2 - 7x + 10 = 0$$</p>\n\n<p>Now we solve this quadratic equation either by factoring, completing the square, or using the quadratic formula. This quadratic can be factored as:</p>\n\n<p>$$(x - 2)(x - 5) = 0$$</p>\n\n<p>Setting each factor equal to zero gives us the potential solutions:</p>\n\n<p>$$x - 2 = 0 \\implies x = 2$$</p>\n\n<p>$$x - 5 = 0 \\implies x = 5$$</p>\n\n<p>However, these solutions must be checked to ensure they satisfy the original logarithmic equations. Both values must make the arguments of the logarithms positive:</p>\n\n<p>For $$x = 2$$:</p>\n\n<p>$$x - 1 = 1$$ (which is positive)</p>\n\n<p>$$x - 3 = -1$$ (which is not positive; hence, $$x = 2$$ is not a valid solution)</p>\n\n<p>For $$x = 5$$:</p>\n\n<p>$$x - 1 = 4$$ (which is positive)</p>\n\n<p>$$x - 3 = 2$$ (which is positive; hence, $$x = 5$$ is a valid solution)</p>\n\n<p>Therefore, there is only one valid solution:</p>\n\n<p>Option B: One</p>",
+    "subject": "mathematics",
+    "title": "NDA (I) 2024",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2024"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441ce",
+    "examGoalId": "lwv447we",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 3,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "<p>$-1$</p>",
+      "<p>$-\\frac{1}{2}$</p>",
+      "<p>0</p>",
+      "<p>1</p>"
+    ],
+    "question": "<div><p>For $x \\geq y > 1$, let $\\log_x\\left( \\frac{x}{y} \\right) + \\log_y\\left(\\frac{y}{x}\\right) = k$, then the value of $k$ can never be equal to :</p></div>",
+    "rawData": {
+      "question_id": "lwv447we",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperId": "nda-mathematics-21-april-2024",
+      "paperTitle": "NDA Mathematics 21 April 2024",
+      "permalink": "pfor-x-geq-y--1-let-logxleft-fracxy-right-nda-mathematics-5wpf0vyn6azimuun",
+      "question": {
+        "en": {
+          "comprehension": null,
+          "direction": null,
+          "content": "<p>For $x \\geq y > 1$, let $\\log_x\\left( \\frac{x}{y} \\right) + \\log_y\\left(\\frac{y}{x}\\right) = k$, then the value of $k$ can never be equal to :</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "<p>$-1$</p>"
+            },
+            {
+              "identifier": "B",
+              "content": "<p>$-\\frac{1}{2}$</p>"
+            },
+            {
+              "identifier": "C",
+              "content": "<p>0</p>"
+            },
+            {
+              "identifier": "D",
+              "content": "<p>1</p>"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": "<p>We can simplify the given expression using the change of base formula and properties of logarithms:</p>\n\n<p>\n\n<p>$$ \\begin{aligned} \\log_x\\left( \\frac{x}{y} \\right) + \\log_y\\left(\\frac{y}{x}\\right) &= \\frac{\\log\\left(\\frac{x}{y}\\right)}{\\log x} + \\frac{\\log\\left(\\frac{y}{x}\\right)}{\\log y}\\\\\\\\ &= \\frac{\\log x - \\log y}{\\log x} + \\frac{\\log y - \\log x}{\\log y}\\\\\\\\ &= 1 - \\frac{\\log y}{\\log x} + \\frac{\\log y}{\\log y} - \\frac{\\log x}{\\log y}\\\\\\\\ &= 1 + \\frac{\\log y}{\\log y} - \\left(\\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y}\\right)\\\\\\\\ &= 2 - \\left(\\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y}\\right) \\end{aligned} $$</p>\n\n</p>\n\n<p>Now, let's analyze the expression  $$ \\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y} $$.  Since  $$x \\ge y > 1$$, we know that  $$ \\log x \\ge \\log y > 0$$.  Therefore, both  $$ \\frac{\\log y}{\\log x}$$  and  $$ \\frac{\\log x}{\\log y}$$ are positive.  By AM-GM,\n\n<p>$$ \\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y} \\ge 2\\sqrt{\\frac{\\log y}{\\log x} \\cdot \\frac{\\log x}{\\log y}} \\ge 2. $$</p></p>\n\n<p>This means  $$ 2 - \\left(\\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y}\\right) \\le 0$$.  In other words,  $$k \\le 0$$.  Therefore,  $$k$$ can never be equal to  $$\\boxed{1}$$.</p>"
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": null,
+          "content": "<p>$$x \\geqslant y>1$$ के लिए, मान लीजिए $$\\log _x\\left(\\frac{x}{y}\\right)+\\log _y\\left(\\frac{y}{x}\\right)=k$$, तो $$k$$ का मान किसके बराबर कभी भी नहीं हो सकता है ?</p>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$$-1$$\n"
+            },
+            {
+              "identifier": "B",
+              "content": "$$-\\frac{1}{2}$$"
+            },
+            {
+              "identifier": "C",
+              "content": "0"
+            },
+            {
+              "identifier": "D",
+              "content": "1"
+            }
+          ],
+          "correct_options": [
+            "D"
+          ],
+          "answer": null,
+          "explanation": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 90000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2024,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 21 April 2024",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "For $x \\geq y > 1$, let $\\log_x\\left( \\frac{x}{y} \\right) + \\log_y\\left(\\frac{y}{x}\\right) = k$, then the value of $k$ can never be equal to :"
+        },
+        "hi": {
+          "title": "NDA Mathematics 21 April 2024",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "$$x \\geqslant y>1$$ के लिए, मान लीजिए $$\\log _x\\left(\\frac{x}{y}\\right)+\\log _y\\left(\\frac{y}{x}\\right)=k$$, तो $$k$$ का मान किसके बराबर कभी भी नहीं हो सकता है ?"
+        }
+      },
+      "yearKey": "nda-mathematics-21-april-2024"
+    },
+    "solution": "<p>We can simplify the given expression using the change of base formula and properties of logarithms:</p>\n\n<p>\n\n<p>$$ \\begin{aligned} \\log_x\\left( \\frac{x}{y} \\right) + \\log_y\\left(\\frac{y}{x}\\right) &= \\frac{\\log\\left(\\frac{x}{y}\\right)}{\\log x} + \\frac{\\log\\left(\\frac{y}{x}\\right)}{\\log y}\\\\\\\\ &= \\frac{\\log x - \\log y}{\\log x} + \\frac{\\log y - \\log x}{\\log y}\\\\\\\\ &= 1 - \\frac{\\log y}{\\log x} + \\frac{\\log y}{\\log y} - \\frac{\\log x}{\\log y}\\\\\\\\ &= 1 + \\frac{\\log y}{\\log y} - \\left(\\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y}\\right)\\\\\\\\ &= 2 - \\left(\\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y}\\right) \\end{aligned} $$</p>\n\n</p>\n\n<p>Now, let's analyze the expression  $$ \\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y} $$.  Since  $$x \\ge y > 1$$, we know that  $$ \\log x \\ge \\log y > 0$$.  Therefore, both  $$ \\frac{\\log y}{\\log x}$$  and  $$ \\frac{\\log x}{\\log y}$$ are positive.  By AM-GM,\n\n<p>$$ \\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y} \\ge 2\\sqrt{\\frac{\\log y}{\\log x} \\cdot \\frac{\\log x}{\\log y}} \\ge 2. $$</p></p>\n\n<p>This means  $$ 2 - \\left(\\frac{\\log y}{\\log x} + \\frac{\\log x}{\\log y}\\right) \\le 0$$.  In other words,  $$k \\le 0$$.  Therefore,  $$k$$ can never be equal to  $$\\boxed{1}$$.</p>",
+    "subject": "mathematics",
+    "title": "NDA (I) 2024",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2024"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441cf",
+    "examGoalId": "tllz3linqs",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 1,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "0",
+      "1",
+      "2",
+      "10"
+    ],
+    "question": "<div><span style=\"\">What is the minimum value of the function f(x) = log</span><sub><span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em; font-size:10.5px;\">10</span></sub><span style=\"\">(x</span><sup><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span></sup><span style=\"\">&nbsp;+ 2x + 11) ?</span></div>",
+    "rawData": {
+      "question_id": "tllz3linqs",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperId": "nda-mathematics-4-september-2022",
+      "paperTitle": "NDA Mathematics 4 September 2022",
+      "permalink": "span-stylewhat-is-the-minimum-value-of-the-function-fx-nda-mathematics-wo53bmp2le0t98vx",
+      "question": {
+        "en": {
+          "direction": null,
+          "comprehension": null,
+          "content": "<span style=\"\">What is the minimum value of the function f(x) = log</span><sub><span style=\" line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em; font-size:10.5px;\">10</span></sub><span style=\"\">(x</span><sup><span style=\" line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; font-size:10.5px;\">2</span></sup><span style=\"\">&nbsp;+ 2x + 11) ?</span>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "2"
+            },
+            {
+              "identifier": "D",
+              "content": "10"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "explanation": "<p>To find the minimum value of the function $$f(x) = \\log_{10}(x^2 + 2x + 11)$$, we first need to analyze the expression inside the logarithm: $$g(x) = x^2 + 2x + 11$$.</p>\n\n<p>This is a quadratic function in the form $$ax^2 + bx + c$$, where $$a = 1$$, $$b = 2$$, and $$c = 11$$. The quadratic function opens upwards because the coefficient of $$x^2$$ is positive. Therefore, the minimum value of $$g(x)$$ occurs at the vertex of the parabola.</p>\n\n<p>The x-coordinate of the vertex for a quadratic function $$ax^2 + bx + c$$ is given by:</p>\n\n<p>$$x = -\\frac{b}{2a}$$</p>\n\n<p>Substituting the values of $$a$$ and $$b$$, we get:</p>\n\n<p>$$x = -\\frac{2}{2 \\cdot 1} = -1$$</p>\n\n<p>Now we substitute $$x = -1$$ back into the quadratic function $$g(x)$$ to find the minimum value:</p>\n\n<p>$$g(-1) = (-1)^2 + 2(-1) + 11 = 1 - 2 + 11 = 10$$</p>\n\n<p>Thus, the minimum value of $$x^2 + 2x + 11$$ is 10. Now, we need to find the logarithm of this minimum value:</p>\n\n<p>$$f(-1) = \\log_{10}(10)$$</p>\n\n<p>Since $$\\log_{10}(10) = 1$$, the minimum value of the function $$f(x)$$ is:</p>\n\n<p>$$f(x) = 1$$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option B: 1</strong></p>",
+          "answer": null
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": null,
+          "content": "फलन f(x) = log<sub>10</sub>(x<sup>2</sup> + 2x + 11) का न्यूनतम मान क्या है ?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "2"
+            },
+            {
+              "identifier": "D",
+              "content": "10"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "explanation": null,
+          "answer": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2022,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 4 September 2022",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "What is the minimum value of the function f(x) = log10(x2 + 2x + 11) ?"
+        },
+        "hi": {
+          "title": "NDA Mathematics 4 September 2022",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "फलन f(x) = log10(x2 + 2x + 11) का न्यूनतम मान क्या है ?"
+        }
+      },
+      "yearKey": "nda-mathematics-4-september-2022"
+    },
+    "solution": "<p>To find the minimum value of the function $$f(x) = \\log_{10}(x^2 + 2x + 11)$$, we first need to analyze the expression inside the logarithm: $$g(x) = x^2 + 2x + 11$$.</p>\n\n<p>This is a quadratic function in the form $$ax^2 + bx + c$$, where $$a = 1$$, $$b = 2$$, and $$c = 11$$. The quadratic function opens upwards because the coefficient of $$x^2$$ is positive. Therefore, the minimum value of $$g(x)$$ occurs at the vertex of the parabola.</p>\n\n<p>The x-coordinate of the vertex for a quadratic function $$ax^2 + bx + c$$ is given by:</p>\n\n<p>$$x = -\\frac{b}{2a}$$</p>\n\n<p>Substituting the values of $$a$$ and $$b$$, we get:</p>\n\n<p>$$x = -\\frac{2}{2 \\cdot 1} = -1$$</p>\n\n<p>Now we substitute $$x = -1$$ back into the quadratic function $$g(x)$$ to find the minimum value:</p>\n\n<p>$$g(-1) = (-1)^2 + 2(-1) + 11 = 1 - 2 + 11 = 10$$</p>\n\n<p>Thus, the minimum value of $$x^2 + 2x + 11$$ is 10. Now, we need to find the logarithm of this minimum value:</p>\n\n<p>$$f(-1) = \\log_{10}(10)$$</p>\n\n<p>Since $$\\log_{10}(10) = 1$$, the minimum value of the function $$f(x)$$ is:</p>\n\n<p>$$f(x) = 1$$</p>\n\n<p>Therefore, the correct option is:</p>\n\n<p><strong>Option B: 1</strong></p>",
+    "subject": "mathematics",
+    "title": "NDA (II) 2022",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2022"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441d0",
+    "examGoalId": "tllz3lint6",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 0,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "f(x) + f(−x) = 0",
+      "f(x)−f(−x) = 0",
+      "2f(x) = f(−x)",
+      "f(x) = 2f(−x)"
+    ],
+    "question": "<div><span style=\"\">If f(x) = ln (x +&nbsp;</span><span class=\"math-tex\">$\\sqrt{1+\\text{x}^2}$</span><span style=\"\">), then which one of the following is correct ?</span></div>",
+    "rawData": {
+      "question_id": "tllz3lint6",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperId": "nda-mathematics-4-september-2022",
+      "paperTitle": "NDA Mathematics 4 September 2022",
+      "permalink": "span-styleif-fx--ln-x-nbspspanspan-classma-nda-mathematics-sthbvi4qswrvfrh7",
+      "question": {
+        "en": {
+          "direction": null,
+          "comprehension": null,
+          "content": "<span style=\"\">If f(x) = ln (x +&nbsp;</span><span class=\"math-tex\">$\\sqrt{1+\\text{x}^2}$</span><span style=\"\">), then which one of the following is correct ?</span>",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "f(x) + f(−x) = 0"
+            },
+            {
+              "identifier": "B",
+              "content": "f(x)−f(−x) = 0"
+            },
+            {
+              "identifier": "C",
+              "content": "2f(x) = f(−x)"
+            },
+            {
+              "identifier": "D",
+              "content": "f(x) = 2f(−x)"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "explanation": "<p>To find the correct option, we first need to analyze the function given:</p>\n\n<p>$$f(x) = \\ln \\left( x + \\sqrt{1 + x^2} \\right)$$</p>\n\n<p>We are asked to evaluate the function's behavior with respect to $ x $ and $ -x $. Let's define $ f(-x) $ and see how it relates to $ f(x) $.</p>\n\n<p>Substitute $ -x $ into the function:</p>\n\n<p>$$f(-x) = \\ln \\left( -x + \\sqrt{1 + (-x)^2} \\right)$$</p>\n\n<p>Simplify the expression inside the logarithm:</p>\n\n<p>$$f(-x) = \\ln \\left( -x + \\sqrt{1 + x^2} \\right)$$</p>\n\n<p>Now, let's add $ f(x) $ and $ f(-x) $:</p>\n\n<p>$$ f(x) + f(-x) = \\ln \\left( x + \\sqrt{1 + x^2} \\right) + \\ln \\left( -x + \\sqrt{1 + x^2} \\right) $$</p>\n\n<p>Using the property of logarithms, $ \\ln(a) + \\ln(b) = \\ln(ab) $, we get:</p>\n\n<p>$$ f(x) + f(-x) = \\ln \\left( \\left( x + \\sqrt{1 + x^2} \\right) \\left( -x + \\sqrt{1 + x^2} \\right) \\right) $$</p>\n\n<p>Evaluate the product inside the logarithm:</p>\n\n<p>$$ ( x + \\sqrt{1 + x^2} ) ( -x + \\sqrt{1 + x^2} ) = -x^2 + (1 + x^2) = 1 $$</p>\n\n<p>So, we have:</p>\n\n<p>$$ f(x) + f(-x) = \\ln(1) $$</p>\n\n<p>We know that $ \\ln(1) = 0 $. Therefore:</p>\n\n<p>$$ f(x) + f(-x) = 0 $$</p>\n\n<p>Hence, the correct option is:</p>\n\n<p><strong>Option A: $ f(x) + f(-x) = 0 $</strong></p>",
+          "answer": null
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": null,
+          "content": "यदि f(x) = <span style=\"\">ln (x +&nbsp;</span><span class=\"math-tex\">$\\sqrt{1+\\text{x}^2}$</span><span style=\"\">)&nbsp;</span>है, तो निम्नलिखित में से कौन-सा सही है ?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "f(x) + f(−x) = 0"
+            },
+            {
+              "identifier": "B",
+              "content": "f(x)−f(−x) = 0"
+            },
+            {
+              "identifier": "C",
+              "content": "2f(x) = f(−x)"
+            },
+            {
+              "identifier": "D",
+              "content": "f(x) = 2f(−x)"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "explanation": null,
+          "answer": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2022,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 4 September 2022",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If f(x) = ln (x + $\\sqrt{1+\\text{x}^2}$), then which one of the following is correct ?"
+        },
+        "hi": {
+          "title": "NDA Mathematics 4 September 2022",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "यदि f(x) = ln (x + $\\sqrt{1+\\text{x}^2}$) है, तो निम्नलिखित में से कौन-सा सही है ?"
+        }
+      },
+      "yearKey": "nda-mathematics-4-september-2022"
+    },
+    "solution": "<p>To find the correct option, we first need to analyze the function given:</p>\n\n<p>$$f(x) = \\ln \\left( x + \\sqrt{1 + x^2} \\right)$$</p>\n\n<p>We are asked to evaluate the function's behavior with respect to $ x $ and $ -x $. Let's define $ f(-x) $ and see how it relates to $ f(x) $.</p>\n\n<p>Substitute $ -x $ into the function:</p>\n\n<p>$$f(-x) = \\ln \\left( -x + \\sqrt{1 + (-x)^2} \\right)$$</p>\n\n<p>Simplify the expression inside the logarithm:</p>\n\n<p>$$f(-x) = \\ln \\left( -x + \\sqrt{1 + x^2} \\right)$$</p>\n\n<p>Now, let's add $ f(x) $ and $ f(-x) $:</p>\n\n<p>$$ f(x) + f(-x) = \\ln \\left( x + \\sqrt{1 + x^2} \\right) + \\ln \\left( -x + \\sqrt{1 + x^2} \\right) $$</p>\n\n<p>Using the property of logarithms, $ \\ln(a) + \\ln(b) = \\ln(ab) $, we get:</p>\n\n<p>$$ f(x) + f(-x) = \\ln \\left( \\left( x + \\sqrt{1 + x^2} \\right) \\left( -x + \\sqrt{1 + x^2} \\right) \\right) $$</p>\n\n<p>Evaluate the product inside the logarithm:</p>\n\n<p>$$ ( x + \\sqrt{1 + x^2} ) ( -x + \\sqrt{1 + x^2} ) = -x^2 + (1 + x^2) = 1 $$</p>\n\n<p>So, we have:</p>\n\n<p>$$ f(x) + f(-x) = \\ln(1) $$</p>\n\n<p>We know that $ \\ln(1) = 0 $. Therefore:</p>\n\n<p>$$ f(x) + f(-x) = 0 $$</p>\n\n<p>Hence, the correct option is:</p>\n\n<p><strong>Option A: $ f(x) + f(-x) = 0 $</strong></p>",
+    "subject": "mathematics",
+    "title": "NDA (II) 2022",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2022"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441d1",
+    "examGoalId": "tllz3lnsvw",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 0,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "<span class=\"math-tex\">$\\frac{\\ln 2}{100}$</span>",
+      "<span class=\"math-tex\">$\\frac{\\ln 5}{100}$</span>",
+      "<span class=\"math-tex\">$\\frac{\\ln 10}{100}$</span>",
+      "<span class=\"math-tex\">$\\frac{2 \\ln 2}{100}$</span>"
+    ],
+    "question": "<div>A radioactive substance decays at a rate proportional to the amount of substance present. If half of the substance decays in 100 years, then what is the decay constant (proportionality constant) ?</div>",
+    "rawData": {
+      "question_id": "tllz3lnsvw",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperId": "nda-mathematics-10-april-2022",
+      "paperTitle": "NDA Mathematics 10 April 2022",
+      "permalink": "a-radioactive-substance-decays-at-a-rate-proportional-to-the-nda-mathematics-es8zu7gqlqwqmm43",
+      "question": {
+        "en": {
+          "direction": null,
+          "comprehension": null,
+          "content": "A radioactive substance decays at a rate proportional to the amount of substance present. If half of the substance decays in 100 years, then what is the decay constant (proportionality constant) ?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "<span class=\"math-tex\">$\\frac{\\ln 2}{100}$</span>"
+            },
+            {
+              "identifier": "B",
+              "content": "<span class=\"math-tex\">$\\frac{\\ln 5}{100}$</span>"
+            },
+            {
+              "identifier": "C",
+              "content": "<span class=\"math-tex\">$\\frac{\\ln 10}{100}$</span>"
+            },
+            {
+              "identifier": "D",
+              "content": "<span class=\"math-tex\">$\\frac{2 \\ln 2}{100}$</span>"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "explanation": "<p>To determine the decay constant for a radioactive substance that decays at a rate proportional to the amount present, we can use the formula for exponential decay:</p>\n\n<p>\n\n<p>$$N(t) = N_0 e^{-kt}$$</p>\n\n</p>\n\n<p>where:</p>\n\n<ul>\n\n<li>$$N(t)$$ is the amount of substance at time $$t$$</li>\n\n<li>$$N_0$$ is the initial amount of the substance</li>\n\n<li>$$k$$ is the decay constant (proportionality constant)</li>\n\n<li>$$t$$ is the time</li>\n\n</ul>\n\n<p>Given that the half-life of the substance (the time it takes for half of the substance to decay) is 100 years, we can set $$N(t) = \\frac{N_0}{2}$$ and $$t = 100$$.</p>\n\n<p>Using these values in the exponential decay formula, we get:</p>\n\n<p>\n\n<p>$$\\frac{N_0}{2} = N_0 e^{-k \\cdot 100}$$</p>\n\n</p>\n\n<p>Dividing both sides of the equation by $$N_0$$ gives:</p>\n\n<p>\n\n<p>$$\\frac{1}{2} = e^{-100k}$$</p>\n\n</p>\n\n<p>Taking the natural logarithm (ln) of both sides, we get:</p>\n\n<p>\n\n<p>$$\\ln \\left(\\frac{1}{2}\\right) = \\ln \\left(e^{-100k}\\right)$$</p>\n\n</p>\n\n<p>Since $$\\ln \\left(\\frac{1}{2}\\right)$$ simplifies to $$-\\ln(2)$$ and $$\\ln \\left(e^{-100k}\\right)$$ simplifies to $$-100k$$, we can write:</p>\n\n<p>\n\n<p>$$-\\ln(2) = -100k$$</p>\n\n</p>\n\n<p>Solving for $$k$$, we get:</p>\n\n<p>\n\n<p>$$k = \\frac{\\ln(2)}{100}$$</p>\n\n</p>\n\n<p>Therefore, the decay constant for the radioactive substance is:</p>\n\n<p>Option A: $$\\frac{\\ln 2}{100}$$</p>",
+          "answer": null
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": null,
+          "content": "एक रेडियोधर्मी पदार्थ के क्षय होने की दर, उस पदार्थ की विद्यमान मात्रा के समानुपाती है। यदि आधा पदार्थ 100 वर्षों में क्षय होता है, तो क्षय स्थिरांक (आनुपातिकता स्थिरांक) क्या है?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "<span class=\"math-tex\">$\\frac{\\ln 2}{100}$</span>"
+            },
+            {
+              "identifier": "B",
+              "content": "<span class=\"math-tex\">$\\frac{\\ln 5}{100}$</span>"
+            },
+            {
+              "identifier": "C",
+              "content": "<span class=\"math-tex\">$\\frac{\\ln 10}{100}$</span>"
+            },
+            {
+              "identifier": "D",
+              "content": "<span class=\"math-tex\">$\\frac{2 \\ln 2}{100}$</span>"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "explanation": null,
+          "answer": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2022,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 10 April 2022",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "A radioactive substance decays at a rate proportional to the amount of substance present. If half of the substance decays in 100 years, then what is the decay constant (proportionality constant) ?"
+        },
+        "hi": {
+          "title": "NDA Mathematics 10 April 2022",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "एक रेडियोधर्मी पदार्थ के क्षय होने की दर, उस पदार्थ की विद्यमान मात्रा के समानुपाती है। यदि आधा पदार्थ 100 वर्षों में क्षय होता है, तो क्षय स्थिरांक (आनुपातिकता स्थिरांक) क्या है?"
+        }
+      },
+      "yearKey": "nda-mathematics-10-april-2022"
+    },
+    "solution": "<p>To determine the decay constant for a radioactive substance that decays at a rate proportional to the amount present, we can use the formula for exponential decay:</p>\n\n<p>\n\n<p>$$N(t) = N_0 e^{-kt}$$</p>\n\n</p>\n\n<p>where:</p>\n\n<ul>\n\n<li>$$N(t)$$ is the amount of substance at time $$t$$</li>\n\n<li>$$N_0$$ is the initial amount of the substance</li>\n\n<li>$$k$$ is the decay constant (proportionality constant)</li>\n\n<li>$$t$$ is the time</li>\n\n</ul>\n\n<p>Given that the half-life of the substance (the time it takes for half of the substance to decay) is 100 years, we can set $$N(t) = \\frac{N_0}{2}$$ and $$t = 100$$.</p>\n\n<p>Using these values in the exponential decay formula, we get:</p>\n\n<p>\n\n<p>$$\\frac{N_0}{2} = N_0 e^{-k \\cdot 100}$$</p>\n\n</p>\n\n<p>Dividing both sides of the equation by $$N_0$$ gives:</p>\n\n<p>\n\n<p>$$\\frac{1}{2} = e^{-100k}$$</p>\n\n</p>\n\n<p>Taking the natural logarithm (ln) of both sides, we get:</p>\n\n<p>\n\n<p>$$\\ln \\left(\\frac{1}{2}\\right) = \\ln \\left(e^{-100k}\\right)$$</p>\n\n</p>\n\n<p>Since $$\\ln \\left(\\frac{1}{2}\\right)$$ simplifies to $$-\\ln(2)$$ and $$\\ln \\left(e^{-100k}\\right)$$ simplifies to $$-100k$$, we can write:</p>\n\n<p>\n\n<p>$$-\\ln(2) = -100k$$</p>\n\n</p>\n\n<p>Solving for $$k$$, we get:</p>\n\n<p>\n\n<p>$$k = \\frac{\\ln(2)}{100}$$</p>\n\n</p>\n\n<p>Therefore, the decay constant for the radioactive substance is:</p>\n\n<p>Option A: $$\\frac{\\ln 2}{100}$$</p>",
+    "subject": "mathematics",
+    "title": "NDA (I) 2022",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2022"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441d2",
+    "examGoalId": "tlm69msw21",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 1,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "0",
+      "1",
+      "log<sub>2</sub>10",
+      "log<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">5</span>2"
+    ],
+    "question": "<div>If&nbsp;<span style=\"\">log</span><span style=\" position: relative; line-height: 0; vertical-align: baseline; bottom: -0.25em; font-size:10.5px;\">10</span> 2 log<sub>2</sub><sub>&nbsp;</sub>10 + log<sub>10</sub>(10<sup>x</sup>) = 2, then what is the value of x?</div>",
+    "rawData": {
+      "question_id": "tlm69msw21",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperId": "nda-mathematics-14-november-2021",
+      "paperTitle": "NDA Mathematics 14 November 2021",
+      "permalink": "ifnbspspan-stylelogspanspan-style-position-rel-nda-mathematics-oup6danlcjhkvwox",
+      "question": {
+        "en": {
+          "direction": null,
+          "comprehension": null,
+          "content": "If&nbsp;<span style=\"\">log</span><span style=\" position: relative; line-height: 0; vertical-align: baseline; bottom: -0.25em; font-size:10.5px;\">10</span> 2 log<sub>2</sub><sub>&nbsp;</sub>10 + log<sub>10</sub>(10<sup>x</sup>) = 2, then what is the value of x?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "log<sub>2</sub>10"
+            },
+            {
+              "identifier": "D",
+              "content": "log<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">5</span>2"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "explanation": "<p>Let's break down the equation step by step:</p>\n\n<p><p>The given equation is:</p>\n<p>$$\\log_{10} 2 \\cdot \\log_2 10 + \\log_{10}(10^x) = 2.$$</p></p>\n<p><p>Notice that the logarithm of an exponent simplifies as follows:</p>\n<p>$$\\log_{10}(10^x) = x.$$</p>\n<p>So, the equation becomes:</p>\n<p>$$\\log_{10} 2 \\cdot \\log_2 10 + x = 2.$$</p></p>\n<p><p>A key logarithmic identity is:</p>\n<p>$$\\log_a b \\cdot \\log_b a = 1.$$</p>\n<p>Here, with $ a = 10 $ and $ b = 2 $, we have:</p>\n<p>$$\\log_{10} 2 \\cdot \\log_2 10 = 1.$$</p></p>\n<p><p>Substitute this value back into the equation:</p>\n<p>$$1 + x = 2.$$</p></p>\n<p><p>Solve for $ x $:</p>\n<p>$$x = 2 - 1 = 1.$$</p></p>\n\n<p>Thus, the value of $ x $ is 1, which corresponds to Option B.</p>",
+          "answer": null
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": null,
+          "content": "यदि&nbsp;log<sub>10</sub> 2 log<sub>2</sub>&nbsp;10 + log<sub>10</sub>(10<sup>x</sup>) = 2 है,&nbsp;तो x का मान क्या है?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "log<sub>2</sub>10"
+            },
+            {
+              "identifier": "D",
+              "content": "log<span style=\"position: relative;  line-height: 0; vertical-align: baseline; bottom: -0.25em;font-size:10.5px;\">5</span>2"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "explanation": "<p>हमारे पास समीकरण है:</p>\n<p>$$ \\log_{10}2 \\cdot \\log_{2}10 + \\log_{10}(10^x) = 2 $$</p>\n<p>इसका समाधान करने के लिए निम्नलिखित चरण अपनाएँ:</p>\n\n<p><p>सबसे पहले ध्यान दें कि $$\\log_{10}(10^x) = x$$ क्योंकि $$\\log_b(b^x)=x$$ होता है।</p></p>\n<p><p>अब समीकरण इस प्रकार हो जाता है:</p>\n<p>$$    \\log_{10}2 \\cdot \\log_{2}10 + x = 2    $$</p></p>\n<p><p>यह ज्ञात है कि $$\\log_{10}2 \\cdot \\log_{2}10 = 1$$। इस तथ्य को समझने के लिए:</p></p>\n\n\n<p><p>हम जानते हैं कि $$\\log_{2}10 = \\frac{1}{\\log_{10}2}$$।</p></p>\n<p><p>अत: $$\\log_{10}2 \\cdot \\frac{1}{\\log_{10}2} = 1$$।</p></p>\n\n\n<p><p>तो समीकरण बनता है:</p>\n<p>$$    1 + x = 2    $$</p></p>\n<p><p>यहाँ से, $$x = 2 - 1 = 1$$</p></p>\n\n<p>इस प्रकार, x का मान 1 है। </p>\n<p>उत्तर विकल्प B है।</p>",
+          "answer": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2021,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 14 November 2021",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If log10 2 log2 10 + log10(10x) = 2, then what is the value of x?"
+        },
+        "hi": {
+          "title": "NDA Mathematics 14 November 2021",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "यदि log10 2 log2 10 + log10(10x) = 2 है, तो x का मान क्या है?"
+        }
+      },
+      "yearKey": "nda-mathematics-14-november-2021"
+    },
+    "solution": "<p>Let's break down the equation step by step:</p>\n\n<p><p>The given equation is:</p>\n<p>$$\\log_{10} 2 \\cdot \\log_2 10 + \\log_{10}(10^x) = 2.$$</p></p>\n<p><p>Notice that the logarithm of an exponent simplifies as follows:</p>\n<p>$$\\log_{10}(10^x) = x.$$</p>\n<p>So, the equation becomes:</p>\n<p>$$\\log_{10} 2 \\cdot \\log_2 10 + x = 2.$$</p></p>\n<p><p>A key logarithmic identity is:</p>\n<p>$$\\log_a b \\cdot \\log_b a = 1.$$</p>\n<p>Here, with $ a = 10 $ and $ b = 2 $, we have:</p>\n<p>$$\\log_{10} 2 \\cdot \\log_2 10 = 1.$$</p></p>\n<p><p>Substitute this value back into the equation:</p>\n<p>$$1 + x = 2.$$</p></p>\n<p><p>Solve for $ x $:</p>\n<p>$$x = 2 - 1 = 1.$$</p></p>\n\n<p>Thus, the value of $ x $ is 1, which corresponds to Option B.</p>",
+    "subject": "mathematics",
+    "title": "NDA (II) 2021",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2021"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441d3",
+    "examGoalId": "tlm69mp47n",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 2,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "<span class=\"math-tex\">$\\dfrac{\\pi}{12}$</span>",
+      "<span class=\"math-tex\">$\\dfrac{\\pi}{3}$</span>",
+      "<span class=\"math-tex\">$\\dfrac{\\pi}{4}$</span>",
+      "<span class=\"math-tex\">$\\dfrac{\\pi}{6}$</span>"
+    ],
+    "question": "<div>The value of x, satisfying the equation&nbsp; <span class=\"math-tex\">$log_{cos x} ~sin x = 1$</span>, where <span class=\"math-tex\">$0&lt;x&lt;\\dfrac{\\pi}{2}$</span>, is</div>",
+    "rawData": {
+      "question_id": "tlm69mp47n",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperId": "nda-mathematics-18-april-2021",
+      "paperTitle": "NDA Mathematics 18 April 2021",
+      "permalink": "the-value-of-x-satisfying-the-equationnbsp-span-classm-nda-mathematics-hdnwilyxk876bbtv",
+      "question": {
+        "en": {
+          "direction": null,
+          "comprehension": null,
+          "content": "The value of x, satisfying the equation&nbsp; <span class=\"math-tex\">$log_{cos x} ~sin x = 1$</span>, where <span class=\"math-tex\">$0&lt;x&lt;\\dfrac{\\pi}{2}$</span>, is",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "<span class=\"math-tex\">$\\dfrac{\\pi}{12}$</span>"
+            },
+            {
+              "identifier": "B",
+              "content": "<span class=\"math-tex\">$\\dfrac{\\pi}{3}$</span>"
+            },
+            {
+              "identifier": "C",
+              "content": "<span class=\"math-tex\">$\\dfrac{\\pi}{4}$</span>"
+            },
+            {
+              "identifier": "D",
+              "content": "<span class=\"math-tex\">$\\dfrac{\\pi}{6}$</span>"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "explanation": "<p>The given equation is </p>\n<p>$$ \\log_{\\cos x}(\\sin x) = 1. $$</p>\n<p>This implies:</p>\n<p>$$ \\sin x = (\\cos x)^1 = \\cos x. $$</p>\n<p>Thus, we have:</p>\n<p>$$ \\sin x = \\cos x. $$</p>\n<p>By dividing both sides by $\\cos x$, we get:</p>\n<p>$$ \\tan x = 1. $$</p>\n<p>The solutions to $\\tan x = 1$ are given by:</p>\n<p>$$ x = \\frac{\\pi}{4} + k\\pi $$</p>\n<p>where $k \\in \\mathbb{Z}$. However, the constraint is $0 < x < \\frac{\\pi}{2}$. Therefore, the solution that satisfies this condition is:</p>\n<p>$$ x = \\frac{\\pi}{4}. $$</p>\n<p>Therefore, the value of $x$ satisfying the equation is:</p>\n<p><strong>Option C: $$\\frac{\\pi}{4}$$</strong>.</p>",
+          "answer": null
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": null,
+          "content": "समीकरण <span class=\"math-tex\">$log_{cos x} ~sin x = 1$</span>&nbsp;को संतुष्ट करनेवाले x का मान क्या है जहाँ&nbsp;<span class=\"math-tex\">$0&lt;x&lt;\\dfrac{\\pi}{2}$</span>?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "<span class=\"math-tex\">$\\dfrac{\\pi}{12}$</span>"
+            },
+            {
+              "identifier": "B",
+              "content": "<span class=\"math-tex\">$\\dfrac{\\pi}{3}$</span>"
+            },
+            {
+              "identifier": "C",
+              "content": "<span class=\"math-tex\">$\\dfrac{\\pi}{4}$</span>"
+            },
+            {
+              "identifier": "D",
+              "content": "<span class=\"math-tex\">$\\dfrac{\\pi}{6}$</span>"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "explanation": null,
+          "answer": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2021,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 18 April 2021",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "The value of x, satisfying the equation  $log_{cos x} ~sin x = 1$, where $0<x<\\dfrac{\\pi}{2}$, is"
+        },
+        "hi": {
+          "title": "NDA Mathematics 18 April 2021",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "समीकरण $log_{cos x} ~sin x = 1$ को संतुष्ट करनेवाले x का मान क्या है जहाँ $0<x<\\dfrac{\\pi}{2}$?"
+        }
+      },
+      "yearKey": "nda-mathematics-18-april-2021"
+    },
+    "solution": "<p>The given equation is </p>\n<p>$$ \\log_{\\cos x}(\\sin x) = 1. $$</p>\n<p>This implies:</p>\n<p>$$ \\sin x = (\\cos x)^1 = \\cos x. $$</p>\n<p>Thus, we have:</p>\n<p>$$ \\sin x = \\cos x. $$</p>\n<p>By dividing both sides by $\\cos x$, we get:</p>\n<p>$$ \\tan x = 1. $$</p>\n<p>The solutions to $\\tan x = 1$ are given by:</p>\n<p>$$ x = \\frac{\\pi}{4} + k\\pi $$</p>\n<p>where $k \\in \\mathbb{Z}$. However, the constraint is $0 < x < \\frac{\\pi}{2}$. Therefore, the solution that satisfies this condition is:</p>\n<p>$$ x = \\frac{\\pi}{4}. $$</p>\n<p>Therefore, the value of $x$ satisfying the equation is:</p>\n<p><strong>Option C: $$\\frac{\\pi}{4}$$</strong>.</p>",
+    "subject": "mathematics",
+    "title": "NDA (I) 2021",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2021"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441d4",
+    "examGoalId": "tlm69mp493",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 1,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "question": "<div><p>If n = 100!, then what is the value of the following?</p>\n\n<p><span class=\"math-tex\">$\\rm \\dfrac{1}{log_2n}+\\dfrac{1}{log_3n}+\\dfrac{1}{log_4n}+{.....}+\\dfrac{1}{log_{100}n}$</span></p>\n</div>",
+    "rawData": {
+      "question_id": "tlm69mp493",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "isBonus": false,
+      "isOutOfSyllabus": false,
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperId": "nda-mathematics-18-april-2021",
+      "paperTitle": "NDA Mathematics 18 April 2021",
+      "permalink": "pif-n--100-then-what-is-the-value-of-the-followingp-nda-mathematics-pnzhloss1kbavadz",
+      "question": {
+        "en": {
+          "direction": null,
+          "comprehension": null,
+          "content": "<p>If n = 100!, then what is the value of the following?</p>\n\n<p><span class=\"math-tex\">$\\rm \\dfrac{1}{log_2n}+\\dfrac{1}{log_3n}+\\dfrac{1}{log_4n}+{.....}+\\dfrac{1}{log_{100}n}$</span></p>\n",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "2"
+            },
+            {
+              "identifier": "D",
+              "content": "3"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "explanation": "<h3>Concept</h3>\n<p><strong>Product Rule</strong>: The logarithm of a product is equal to the sum of the logarithms of the individual factors.</p>\n<p>$ \\log_a(mn) = \\log_a m + \\log_a n $</p>\n<p><strong>Change of Base Rule</strong>: This relates logarithms of different bases to each other.</p>\n<p>$ \\log_m n = \\frac{1}{\\log_n m} $</p>\n<h3>Calculation</h3>\n<p>Given the expression:</p>\n<p>$ \\frac{1}{\\log_2 n} + \\frac{1}{\\log_3 n} + \\frac{1}{\\log_4 n} + \\ldots + \\frac{1}{\\log_{100} n} $</p>\n<p>Using the change of base rule, this can be simplified to:</p>\n<p>$ \\log_n 2 + \\log_n 3 + \\log_n 4 + \\ldots + \\log_n 100 $</p>\n<p>This sum is equivalent to:</p>\n<p>$ \\log_n (2 \\times 3 \\times 4 \\times \\ldots \\times 100) $</p>\n<p>Which simplifies to:</p>\n<p>$ \\log_n (100!) $</p>\n<p>Since $ n = 100! $, the expression becomes:</p>\n<p>$ \\log_{100!} (100!) $</p>\n<p>This evaluates to:</p>\n<p>$ 1 $</p>\n<p>Thus, the value of the given expression is 1.</p>",
+          "answer": null
+        },
+        "hi": {
+          "direction": null,
+          "comprehension": null,
+          "content": "<p>यदि n = 100!&nbsp;तो निम्नलिखित का क्या मूल्य है?</p>\n\n<p><span class=\"math-tex\">$\\rm \\dfrac{1}{log_2n}+\\dfrac{1}{log_3n}+\\dfrac{1}{log_4n}+{.....}+\\dfrac{1}{log_{100}n}$</span></p>\n",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "2"
+            },
+            {
+              "identifier": "D",
+              "content": "3"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "explanation": null,
+          "answer": null
+        }
+      },
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "subject": "mathematics",
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2021,
+      "bookmark": {
+        "en": {
+          "title": "NDA Mathematics 18 April 2021",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If n = 100!, then what is the value of the following?\n\n$\\rm \\dfrac{1}{log_2n}+\\dfrac{1}{log_3n}+\\dfrac{1}{log_4n}+{.....}+\\dfrac{1}{log_{100}n}$\n"
+        },
+        "hi": {
+          "title": "NDA Mathematics 18 April 2021",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "यदि n = 100! तो निम्नलिखित का क्या मूल्य है?\n\n$\\rm \\dfrac{1}{log_2n}+\\dfrac{1}{log_3n}+\\dfrac{1}{log_4n}+{.....}+\\dfrac{1}{log_{100}n}$\n"
+        }
+      },
+      "yearKey": "nda-mathematics-18-april-2021"
+    },
+    "solution": "<h3>Concept</h3>\n<p><strong>Product Rule</strong>: The logarithm of a product is equal to the sum of the logarithms of the individual factors.</p>\n<p>$ \\log_a(mn) = \\log_a m + \\log_a n $</p>\n<p><strong>Change of Base Rule</strong>: This relates logarithms of different bases to each other.</p>\n<p>$ \\log_m n = \\frac{1}{\\log_n m} $</p>\n<h3>Calculation</h3>\n<p>Given the expression:</p>\n<p>$ \\frac{1}{\\log_2 n} + \\frac{1}{\\log_3 n} + \\frac{1}{\\log_4 n} + \\ldots + \\frac{1}{\\log_{100} n} $</p>\n<p>Using the change of base rule, this can be simplified to:</p>\n<p>$ \\log_n 2 + \\log_n 3 + \\log_n 4 + \\ldots + \\log_n 100 $</p>\n<p>This sum is equivalent to:</p>\n<p>$ \\log_n (2 \\times 3 \\times 4 \\times \\ldots \\times 100) $</p>\n<p>Which simplifies to:</p>\n<p>$ \\log_n (100!) $</p>\n<p>Since $ n = 100! $, the expression becomes:</p>\n<p>$ \\log_{100!} (100!) $</p>\n<p>This evaluates to:</p>\n<p>$ 1 $</p>\n<p>Thus, the value of the given expression is 1.</p>",
+    "subject": "mathematics",
+    "title": "NDA (I) 2021",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2021"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441d5",
+    "examGoalId": "kzmzDf0OBVuAle3QFO1krdpdvc0",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 1,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "$$x \\in (0,\\infty )$$",
+      "$$x \\in \\left( {{1 \\over 7},7} \\right)$$",
+      "$$x \\in \\left( {0,{1 \\over 7}} \\right) \\cup (7,\\infty )$$",
+      "$$x \\in \\left( {{1 \\over 7},\\infty } \\right)$$"
+    ],
+    "question": "<div>If $${x^{{{\\log }_7}x}} &gt; 7$$ where x &gt; 0, then which one of the following is correct?</div>",
+    "rawData": {
+      "question_id": "kzmzDf0OBVuAle3QFO1krdpdvc0",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "languages": [
+        "en"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperTitle": "NDA 2019 Paper 2",
+      "permalink": "if-xlog-7x--7-where-x--0-then-which-one-of-nda-mathematics-logarithms-vvr8vfvmbt81mhif",
+      "question": {
+        "en": {
+          "direction": null,
+          "content": "If $${x^{{{\\log }_7}x}} &gt; 7$$ where x &gt; 0, then which one of the following is correct?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$$x \\in (0,\\infty )$$"
+            },
+            {
+              "identifier": "B",
+              "content": "$$x \\in \\left( {{1 \\over 7},7} \\right)$$"
+            },
+            {
+              "identifier": "C",
+              "content": "$$x \\in \\left( {0,{1 \\over 7}} \\right) \\cup (7,\\infty )$$"
+            },
+            {
+              "identifier": "D",
+              "content": "$$x \\in \\left( {{1 \\over 7},\\infty } \\right)$$"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "$${x^{{{\\log }_7}x}} &gt; 7$$ where x &gt; 0.<br><br>Taking log on base 7 both sides<br><br>$${\\log _7}x.{\\log _7}x &gt; {\\log _7}7$$ [$$\\because$$ $${\\log _a}{m^n} = n{\\log _a}m$$]<br><br>$$ \\Rightarrow {({\\log _7}x)^2} &gt; 1$$ [$$\\because$$ $${\\log _a}a = 1$$]<br><br>$$ \\Rightarrow {\\log _7}x &gt; ( \\pm \\,1)$$<br><br>$$\\therefore$$ $$x &gt; {7^1} \\Rightarrow x &gt; 7$$<br><br>and $$x &gt; {7^{ - 1}} \\Rightarrow x &lt; {1 \\over 7}$$<br><br>Hence, $$x \\in \\left( {{1 \\over 7},7} \\right)$$"
+        }
+      },
+      "subject": "mathematics",
+      "subjectGroup": null,
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2019,
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "paperId": "nda-2019-paper-2",
+      "isOutOfSyllabus": false,
+      "isBonus": false,
+      "bookmark": {
+        "en": {
+          "title": "NDA 2019 Paper 2",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If $${x^{{{\\log }_7}x}} > 7$$ where x > 0, then which one of the following is correct?"
+        }
+      },
+      "yearKey": "nda-2019-paper-2"
+    },
+    "solution": "$${x^{{{\\log }_7}x}} &gt; 7$$ where x &gt; 0.<br><br>Taking log on base 7 both sides<br><br>$${\\log _7}x.{\\log _7}x &gt; {\\log _7}7$$ [$$\\because$$ $${\\log _a}{m^n} = n{\\log _a}m$$]<br><br>$$ \\Rightarrow {({\\log _7}x)^2} &gt; 1$$ [$$\\because$$ $${\\log _a}a = 1$$]<br><br>$$ \\Rightarrow {\\log _7}x &gt; ( \\pm \\,1)$$<br><br>$$\\therefore$$ $$x &gt; {7^1} \\Rightarrow x &gt; 7$$<br><br>and $$x &gt; {7^{ - 1}} \\Rightarrow x &lt; {1 \\over 7}$$<br><br>Hence, $$x \\in \\left( {{1 \\over 7},7} \\right)$$",
+    "subject": "mathematics",
+    "title": "NDA 2019 Paper 2",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2019"
+  },
+  {
+    "_id": "6a3df41a7c54ae41c1c441d6",
+    "examGoalId": "lTiVvgGqP7UVzzG14Z1krdqg6p6",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 1,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "Negative power of 10 is less than 1",
+      "Negative power of 10 is between 0 and 1",
+      "Negative power of 10 is positive",
+      "Negative power of 10 is negative"
+    ],
+    "question": "<div>If 0 &lt; a &lt; 1, the value of log<sub>10</sub> a is negative. This is justified by</div>",
+    "rawData": {
+      "question_id": "lTiVvgGqP7UVzzG14Z1krdqg6p6",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "languages": [
+        "en"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperTitle": "NDA 2018 Paper 1",
+      "permalink": "if-0--a--1-the-value-of-logsub10sub-a-is-negative-t-nda-mathematics-logarithms-zheygz9vohski6xn",
+      "question": {
+        "en": {
+          "direction": null,
+          "content": "If 0 &lt; a &lt; 1, the value of log<sub>10</sub> a is negative. This is justified by",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "Negative power of 10 is less than 1"
+            },
+            {
+              "identifier": "B",
+              "content": "Negative power of 10 is between 0 and 1"
+            },
+            {
+              "identifier": "C",
+              "content": "Negative power of 10 is positive"
+            },
+            {
+              "identifier": "D",
+              "content": "Negative power of 10 is negative"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "Let log<sub>10</sub> a = x<br><br>$$\\Rightarrow$$ a = 10<sup>x</sup><br><br>It is given that 0 &lt; a &lt; 1<br><br>$$\\Rightarrow$$ 0 &lt; 10<sup>x</sup> &lt; 1<br><br>$$\\Rightarrow$$ x must be negative.<br><br>$$\\therefore$$ If 0 &lt; a &lt; 1, the value of log<sub>10</sub> a is negative implies that negative power of 10 is between 0 and 1."
+        }
+      },
+      "subject": "mathematics",
+      "subjectGroup": null,
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2018,
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "paperId": "nda-2018-paper-1",
+      "isOutOfSyllabus": false,
+      "isBonus": false,
+      "bookmark": {
+        "en": {
+          "title": "NDA 2018 Paper 1",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If 0 < a < 1, the value of log10 a is negative. This is justified by"
+        }
+      },
+      "yearKey": "nda-2018-paper-1"
+    },
+    "solution": "Let log<sub>10</sub> a = x<br><br>$$\\Rightarrow$$ a = 10<sup>x</sup><br><br>It is given that 0 &lt; a &lt; 1<br><br>$$\\Rightarrow$$ 0 &lt; 10<sup>x</sup> &lt; 1<br><br>$$\\Rightarrow$$ x must be negative.<br><br>$$\\therefore$$ If 0 &lt; a &lt; 1, the value of log<sub>10</sub> a is negative implies that negative power of 10 is between 0 and 1.",
+    "subject": "mathematics",
+    "title": "NDA 2018 Paper 1",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2018"
+  },
+  {
+    "_id": "6a3df41b7c54ae41c1c441d7",
+    "examGoalId": "nChrY3n9aULrsone6c1krdqcuyc",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 2,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "$$-$$ 3",
+      "2",
+      "1",
+      "3"
+    ],
+    "question": "<div>If $$x + {\\log _{15}}(1 + {3^x}) = x{\\log _{15}}5 + {\\log _{15}}12$$, where x is an integer, then what is x equal to?</div>",
+    "rawData": {
+      "question_id": "nChrY3n9aULrsone6c1krdqcuyc",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "languages": [
+        "en"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperTitle": "NDA 2018 Paper 1",
+      "permalink": "if-x--log-151--3x--xlog-155--log--nda-mathematics-logarithms-qsngcvu4jrwmx1zc",
+      "question": {
+        "en": {
+          "direction": null,
+          "content": "If $$x + {\\log _{15}}(1 + {3^x}) = x{\\log _{15}}5 + {\\log _{15}}12$$, where x is an integer, then what is x equal to?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$$-$$ 3"
+            },
+            {
+              "identifier": "B",
+              "content": "2"
+            },
+            {
+              "identifier": "C",
+              "content": "1"
+            },
+            {
+              "identifier": "D",
+              "content": "3"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "We have,<br><br>$$x + {\\log _{15}}(1 + {3^x}) = x{\\log _{15}}5 + {\\log _{15}}12$$<br><br>$$ \\Rightarrow {\\log _{15}}{15^x} + {\\log _{15}}(1 + {3^x}) = lo{g_{15}}{5^x} + {\\log _{15}}12$$<br><br>[$$\\because$$ $${\\log _a}a = 1$$ and $${\\log _b}{a^m} = m{\\log _b}a$$]<br><br>$$ \\Rightarrow {\\log _{15}}[{15^x}(1 + {3^x})] = lo{g_{15}}({5^x} \\times 12)$$ [$$\\because$$ $$\\log a + \\log b = \\log ab$$]<br><br>$$ \\Rightarrow {15^x}(1 + {3^x}) = 12\\,.\\,{5^x}$$<br><br>$$ \\Rightarrow {3^x}(1 + {3^x}) = 12$$<br><br>$$ \\Rightarrow y(1 + y) = 12$$ [where, $$y = {3^x}$$]<br><br>$$ \\Rightarrow {y^2} + y - 12 = 0$$<br><br>$$ \\Rightarrow (y + 4)(y - 3) = 0$$<br><br>$$ \\Rightarrow y =  - 4,3$$<br><br>$$ \\Rightarrow {3^x} =  - 4,3$$<br><br>$$ \\Rightarrow {3^x} = 3$$ [$$\\because$$ $${3^x} \\ne  - 4$$]<br><br>$$\\therefore$$ x = 1"
+        }
+      },
+      "subject": "mathematics",
+      "subjectGroup": null,
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2018,
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "paperId": "nda-2018-paper-1",
+      "isOutOfSyllabus": false,
+      "isBonus": false,
+      "bookmark": {
+        "en": {
+          "title": "NDA 2018 Paper 1",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If $$x + {\\log _{15}}(1 + {3^x}) = x{\\log _{15}}5 + {\\log _{15}}12$$, where x is an integer, then what is x equal to?"
+        }
+      },
+      "yearKey": "nda-2018-paper-1"
+    },
+    "solution": "We have,<br><br>$$x + {\\log _{15}}(1 + {3^x}) = x{\\log _{15}}5 + {\\log _{15}}12$$<br><br>$$ \\Rightarrow {\\log _{15}}{15^x} + {\\log _{15}}(1 + {3^x}) = lo{g_{15}}{5^x} + {\\log _{15}}12$$<br><br>[$$\\because$$ $${\\log _a}a = 1$$ and $${\\log _b}{a^m} = m{\\log _b}a$$]<br><br>$$ \\Rightarrow {\\log _{15}}[{15^x}(1 + {3^x})] = lo{g_{15}}({5^x} \\times 12)$$ [$$\\because$$ $$\\log a + \\log b = \\log ab$$]<br><br>$$ \\Rightarrow {15^x}(1 + {3^x}) = 12\\,.\\,{5^x}$$<br><br>$$ \\Rightarrow {3^x}(1 + {3^x}) = 12$$<br><br>$$ \\Rightarrow y(1 + y) = 12$$ [where, $$y = {3^x}$$]<br><br>$$ \\Rightarrow {y^2} + y - 12 = 0$$<br><br>$$ \\Rightarrow (y + 4)(y - 3) = 0$$<br><br>$$ \\Rightarrow y =  - 4,3$$<br><br>$$ \\Rightarrow {3^x} =  - 4,3$$<br><br>$$ \\Rightarrow {3^x} = 3$$ [$$\\because$$ $${3^x} \\ne  - 4$$]<br><br>$$\\therefore$$ x = 1",
+    "subject": "mathematics",
+    "title": "NDA 2018 Paper 1",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2018"
+  },
+  {
+    "_id": "6a3df41b7c54ae41c1c441d8",
+    "examGoalId": "tdTqW5mMEsPTzMr5fq1krdq2fns",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 1,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "0",
+      "1",
+      "$${n \\over 2}$$",
+      "n"
+    ],
+    "question": "<div>If $$n = (2017)!$$, then what is $${1 \\over {{{\\log }_2}n}} + {1 \\over {{{\\log }_3}n}} + {1 \\over {{{\\log }_4}n}} + ... + {1 \\over {{{\\log }_{2017}}n}}$$ equal to?</div>",
+    "rawData": {
+      "question_id": "tdTqW5mMEsPTzMr5fq1krdq2fns",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "languages": [
+        "en"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperTitle": "NDA 2018 Paper 1",
+      "permalink": "if-n--2017-then-what-is-1-over-log-2n-nda-mathematics-logarithms-wtdlxv5mapilbz09",
+      "question": {
+        "en": {
+          "direction": null,
+          "content": "If $$n = (2017)!$$, then what is $${1 \\over {{{\\log }_2}n}} + {1 \\over {{{\\log }_3}n}} + {1 \\over {{{\\log }_4}n}} + ... + {1 \\over {{{\\log }_{2017}}n}}$$ equal to?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "0"
+            },
+            {
+              "identifier": "B",
+              "content": "1"
+            },
+            {
+              "identifier": "C",
+              "content": "$${n \\over 2}$$"
+            },
+            {
+              "identifier": "D",
+              "content": "n"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "We have,<br><br>$${1 \\over {{{\\log }_2}n}} + {1 \\over {{{\\log }_3}n}} + {1 \\over {{{\\log }_4}n}} + ... + {1 \\over {{{\\log }_{2017}}n}}$$<br><br>$$ = {\\log _n}2 + {\\log _n}3 + {\\log _n}4 + .... + {\\log _n}2017$$<br><br>$$\\because$$ $$\\left[ {{{\\log }_b}a = {1 \\over {{{\\log }_a}b}}} \\right]$$<br><br>$$ = {\\log _n}(2.3.4.....2017)$$ [$$\\because$$ $$\\log a + \\log b = \\log ab$$]<br><br>$$ = {\\log _n}(1\\,.\\,2\\,.\\,3\\,.\\,4......2017)$$<br><br>$$ = {\\log _n}(2017)!$$ [$$\\because$$ $$n(n - 1)(n - 2)....3\\,.\\,2\\,.\\,1 = n!$$]<br><br>$$ = {\\log _{(2017)!}}(2017)!$$ [$$\\because$$ n = 2017!]<br><br>= 1 [$$\\because$$ $${\\log _a}a = 1$$]"
+        }
+      },
+      "subject": "mathematics",
+      "subjectGroup": null,
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2018,
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "paperId": "nda-2018-paper-1",
+      "isOutOfSyllabus": false,
+      "isBonus": false,
+      "bookmark": {
+        "en": {
+          "title": "NDA 2018 Paper 1",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If $$n = (2017)!$$, then what is $${1 \\over {{{\\log }_2}n}} + {1 \\over {{{\\log }_3}n}} + {1 \\over {{{\\log }_4}n}} + ... + {1 \\over {{{\\log }_{2017}}n}}$$ equal to?"
+        }
+      },
+      "yearKey": "nda-2018-paper-1"
+    },
+    "solution": "We have,<br><br>$${1 \\over {{{\\log }_2}n}} + {1 \\over {{{\\log }_3}n}} + {1 \\over {{{\\log }_4}n}} + ... + {1 \\over {{{\\log }_{2017}}n}}$$<br><br>$$ = {\\log _n}2 + {\\log _n}3 + {\\log _n}4 + .... + {\\log _n}2017$$<br><br>$$\\because$$ $$\\left[ {{{\\log }_b}a = {1 \\over {{{\\log }_a}b}}} \\right]$$<br><br>$$ = {\\log _n}(2.3.4.....2017)$$ [$$\\because$$ $$\\log a + \\log b = \\log ab$$]<br><br>$$ = {\\log _n}(1\\,.\\,2\\,.\\,3\\,.\\,4......2017)$$<br><br>$$ = {\\log _n}(2017)!$$ [$$\\because$$ $$n(n - 1)(n - 2)....3\\,.\\,2\\,.\\,1 = n!$$]<br><br>$$ = {\\log _{(2017)!}}(2017)!$$ [$$\\because$$ n = 2017!]<br><br>= 1 [$$\\because$$ $${\\log _a}a = 1$$]",
+    "subject": "mathematics",
+    "title": "NDA 2018 Paper 1",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2018"
+  },
+  {
+    "_id": "6a3df41b7c54ae41c1c441d9",
+    "examGoalId": "0Q55vDUEglG0SlZWvI1krdpp5pe",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 1,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "$${7 \\over 2}$$",
+      "$${{19} \\over 6}$$",
+      "4",
+      "7"
+    ],
+    "question": "<div>What is the value of $${\\log _9}27 + {\\log _8}32$$ ?</div>",
+    "rawData": {
+      "question_id": "0Q55vDUEglG0SlZWvI1krdpp5pe",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "languages": [
+        "en"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperTitle": "NDA 2018 Paper 2",
+      "permalink": "what-is-the-value-of-log-927--log-832--nda-mathematics-logarithms-47cyy6bnhirnfmfa",
+      "question": {
+        "en": {
+          "direction": null,
+          "content": "What is the value of $${\\log _9}27 + {\\log _8}32$$ ?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$${7 \\over 2}$$"
+            },
+            {
+              "identifier": "B",
+              "content": "$${{19} \\over 6}$$"
+            },
+            {
+              "identifier": "C",
+              "content": "4"
+            },
+            {
+              "identifier": "D",
+              "content": "7"
+            }
+          ],
+          "correct_options": [
+            "B"
+          ],
+          "answer": null,
+          "explanation": "$${\\log _9}27 + {\\log _8}32 = {\\log _{{3^2}}}{3^3} + {\\log _{{2^3}}}{2^5}$$<br><br>$$ = {3 \\over 2}{\\log _3}3 + {5 \\over 3}{\\log _2}2$$<br><br>$$\\because$$ $$\\left[ {{{\\log }_{{a^m}}}{b^n} = {n \\over m}{{\\log }_a}b} \\right]$$<br><br>$$ = {3 \\over 2} + {5 \\over 3} = {{19} \\over 6}$$"
+        }
+      },
+      "subject": "mathematics",
+      "subjectGroup": null,
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2018,
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "paperId": "nda-2018-paper-2",
+      "isOutOfSyllabus": false,
+      "isBonus": false,
+      "bookmark": {
+        "en": {
+          "title": "NDA 2018 Paper 2",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "What is the value of $${\\log _9}27 + {\\log _8}32$$ ?"
+        }
+      },
+      "yearKey": "nda-2018-paper-2"
+    },
+    "solution": "$${\\log _9}27 + {\\log _8}32 = {\\log _{{3^2}}}{3^3} + {\\log _{{2^3}}}{2^5}$$<br><br>$$ = {3 \\over 2}{\\log _3}3 + {5 \\over 3}{\\log _2}2$$<br><br>$$\\because$$ $$\\left[ {{{\\log }_{{a^m}}}{b^n} = {n \\over m}{{\\log }_a}b} \\right]$$<br><br>$$ = {3 \\over 2} + {5 \\over 3} = {{19} \\over 6}$$",
+    "subject": "mathematics",
+    "title": "NDA 2018 Paper 2",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2018"
+  },
+  {
+    "_id": "6a3df41b7c54ae41c1c441da",
+    "examGoalId": "BF5Gw8CnbzW1OKeZuU1krdpuj0l",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 2,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "$$-$$ 10.0",
+      "$$-$$ 0.5",
+      "$$-$$ 0.4",
+      "$$-$$ 0.2"
+    ],
+    "question": "<div>If $${(0.2)^x} = 2$$ and $${\\log _{10}}2 = 0.3010$$, then what is the value of x to the nearest tenth?</div>",
+    "rawData": {
+      "question_id": "BF5Gw8CnbzW1OKeZuU1krdpuj0l",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "languages": [
+        "en"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperTitle": "NDA 2018 Paper 2",
+      "permalink": "if-02x--2-and-log-102--03010-then-wh-nda-mathematics-logarithms-omvoyluke6spy7cs",
+      "question": {
+        "en": {
+          "direction": null,
+          "content": "If $${(0.2)^x} = 2$$ and $${\\log _{10}}2 = 0.3010$$, then what is the value of x to the nearest tenth?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$$-$$ 10.0"
+            },
+            {
+              "identifier": "B",
+              "content": "$$-$$ 0.5"
+            },
+            {
+              "identifier": "C",
+              "content": "$$-$$ 0.4"
+            },
+            {
+              "identifier": "D",
+              "content": "$$-$$ 0.2"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "We have, $${(0.2)^x} = 2$$<br><br>Taking $${\\log _{10}}$$ on both side<br><br>$$x{\\log _{10}}0.2 = {\\log _{10}}2$$ [$$\\because$$ $$\\log {a^{{m^n}}} = n\\log {a^m}$$]<br><br>$$ \\Rightarrow x{\\log _{10}}\\left( {{2 \\over {10}}} \\right) = {\\log _{10}}2$$<br><br>$$ \\Rightarrow x[{\\log _{10}}2 - {\\log _{10}}10] = {\\log _{10}}2$$<br><br>$$ \\Rightarrow x[0.3010 - 1] = 0.3010$$ [$$\\because$$ $$lo{g_a}a = 1$$]<br><br>$$\\therefore$$ $$x =  - {{0.3010} \\over {0.6990}} =  - 0.43 \\approx  - 0.4$$"
+        }
+      },
+      "subject": "mathematics",
+      "subjectGroup": null,
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2018,
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "paperId": "nda-2018-paper-2",
+      "isOutOfSyllabus": false,
+      "isBonus": false,
+      "bookmark": {
+        "en": {
+          "title": "NDA 2018 Paper 2",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If $${(0.2)^x} = 2$$ and $${\\log _{10}}2 = 0.3010$$, then what is the value of x to the nearest tenth?"
+        }
+      },
+      "yearKey": "nda-2018-paper-2"
+    },
+    "solution": "We have, $${(0.2)^x} = 2$$<br><br>Taking $${\\log _{10}}$$ on both side<br><br>$$x{\\log _{10}}0.2 = {\\log _{10}}2$$ [$$\\because$$ $$\\log {a^{{m^n}}} = n\\log {a^m}$$]<br><br>$$ \\Rightarrow x{\\log _{10}}\\left( {{2 \\over {10}}} \\right) = {\\log _{10}}2$$<br><br>$$ \\Rightarrow x[{\\log _{10}}2 - {\\log _{10}}10] = {\\log _{10}}2$$<br><br>$$ \\Rightarrow x[0.3010 - 1] = 0.3010$$ [$$\\because$$ $$lo{g_a}a = 1$$]<br><br>$$\\therefore$$ $$x =  - {{0.3010} \\over {0.6990}} =  - 0.43 \\approx  - 0.4$$",
+    "subject": "mathematics",
+    "title": "NDA 2018 Paper 2",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2018"
+  },
+  {
+    "_id": "6a3df41b7c54ae41c1c441db",
+    "examGoalId": "aY10mbldzMWJS9m2bb1krdpl4b7",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 2,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "$$3{\\log _2}7$$",
+      "$$1 - 3{\\log _2}7$$",
+      "$$1 - 3{\\log _7}2$$",
+      "$${7 \\over 8}$$"
+    ],
+    "question": "<div>What is the value of $${\\log _7}{\\log _7}\\sqrt {7\\sqrt {7\\sqrt 7 } } $$ equal to?</div>",
+    "rawData": {
+      "question_id": "aY10mbldzMWJS9m2bb1krdpl4b7",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "languages": [
+        "en"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperTitle": "NDA 2018 Paper 2",
+      "permalink": "what-is-the-value-of-log-7log-7sqrt-7sqrt-7sq-nda-mathematics-logarithms-7odie3g1fpqh5wto",
+      "question": {
+        "en": {
+          "direction": null,
+          "content": "What is the value of $${\\log _7}{\\log _7}\\sqrt {7\\sqrt {7\\sqrt 7 } } $$ equal to?",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "$$3{\\log _2}7$$"
+            },
+            {
+              "identifier": "B",
+              "content": "$$1 - 3{\\log _2}7$$"
+            },
+            {
+              "identifier": "C",
+              "content": "$$1 - 3{\\log _7}2$$"
+            },
+            {
+              "identifier": "D",
+              "content": "$${7 \\over 8}$$"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "We have, $$\\sqrt {7\\sqrt {7\\sqrt 7 } }  = {7^{{1 \\over 2}}}{.7^{{1 \\over 4}}}{.7^{{1 \\over 8}}} = {7^{{7 \\over 8}}}$$<br><br>Now, $${\\log _7}{\\log _7}\\sqrt {7\\sqrt {7\\sqrt 7 } } $$<br><br>$$ = {\\log _7}{\\log _7}{(7)^{{7 \\over 8}}}$$<br><br>$$ = {\\log _7}.{7 \\over 8}.{\\log _7}(7)$$ [$$\\because$$ $${\\log _a}a = 1$$]<br><br>$$ = {\\log _7}\\left( {{7 \\over 8}} \\right)$$<br><br>$$ = {\\log _7}7 - {\\log _7}8$$ [$$\\because$$ $$\\log {m \\over n} = \\log m - \\log n$$]<br><br>$$ = {\\log _7}7 - {\\log _7}{2^3} = 1 - 3{\\log _7}2$$ [$$\\because$$ $${\\log _b}{a^n} = n{\\log _b}a$$]"
+        }
+      },
+      "subject": "mathematics",
+      "subjectGroup": null,
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2018,
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "paperId": "nda-2018-paper-2",
+      "isOutOfSyllabus": false,
+      "isBonus": false,
+      "bookmark": {
+        "en": {
+          "title": "NDA 2018 Paper 2",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "What is the value of $${\\log _7}{\\log _7}\\sqrt {7\\sqrt {7\\sqrt 7 } } $$ equal to?"
+        }
+      },
+      "yearKey": "nda-2018-paper-2"
+    },
+    "solution": "We have, $$\\sqrt {7\\sqrt {7\\sqrt 7 } }  = {7^{{1 \\over 2}}}{.7^{{1 \\over 4}}}{.7^{{1 \\over 8}}} = {7^{{7 \\over 8}}}$$<br><br>Now, $${\\log _7}{\\log _7}\\sqrt {7\\sqrt {7\\sqrt 7 } } $$<br><br>$$ = {\\log _7}{\\log _7}{(7)^{{7 \\over 8}}}$$<br><br>$$ = {\\log _7}.{7 \\over 8}.{\\log _7}(7)$$ [$$\\because$$ $${\\log _a}a = 1$$]<br><br>$$ = {\\log _7}\\left( {{7 \\over 8}} \\right)$$<br><br>$$ = {\\log _7}7 - {\\log _7}8$$ [$$\\because$$ $$\\log {m \\over n} = \\log m - \\log n$$]<br><br>$$ = {\\log _7}7 - {\\log _7}{2^3} = 1 - 3{\\log _7}2$$ [$$\\because$$ $${\\log _b}{a^n} = n{\\log _b}a$$]",
+    "subject": "mathematics",
+    "title": "NDA 2018 Paper 2",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2018"
+  },
+  {
+    "_id": "6a3df41b7c54ae41c1c441dc",
+    "examGoalId": "y1wyNRHzAMUJ2u7DtJ1krdqmqmr",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 2,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "2, $$-$$3",
+      "only 2",
+      "1",
+      "3"
+    ],
+    "question": "<div>If $$x + {\\log _{10}}(1 + {2^x}) = x{\\log _{10}}5 + {\\log _{10}}6$$ then x is equal to</div>",
+    "rawData": {
+      "question_id": "y1wyNRHzAMUJ2u7DtJ1krdqmqmr",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "languages": [
+        "en"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperTitle": "NDA 2017 Paper 2",
+      "permalink": "if-x--log-101--2x--xlog-105--log--nda-mathematics-logarithms-7f9hlwmbyuosdgom",
+      "question": {
+        "en": {
+          "direction": null,
+          "content": "If $$x + {\\log _{10}}(1 + {2^x}) = x{\\log _{10}}5 + {\\log _{10}}6$$ then x is equal to",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "2, $$-$$3"
+            },
+            {
+              "identifier": "B",
+              "content": "only 2"
+            },
+            {
+              "identifier": "C",
+              "content": "1"
+            },
+            {
+              "identifier": "D",
+              "content": "3"
+            }
+          ],
+          "correct_options": [
+            "C"
+          ],
+          "answer": null,
+          "explanation": "$$x + {\\log _{10}}(1 + {2^x}) = x{\\log _{10}}5 + {\\log _{10}}6$$<br><br>$$ \\Rightarrow x - x{\\log _{10}}5 = {\\log _{10}}6 - {\\log _{10}}(1 + {2^x})$$<br><br>$$ \\Rightarrow x(1 - {\\log _{10}}5) = {\\log _{10}}6 - {\\log _{10}}(1 + {2^x})$$<br><br>$$ \\Rightarrow x({\\log _{10}}10 - {\\log _{10}}5) = {\\log _{10}}6 - {\\log _{10}}(1 + {2^x})$$ [$$\\because$$ $${\\log _{10}}10 = 1$$]<br><br>$$ \\Rightarrow x\\left( {{{\\log }_{10}}{{10} \\over 5}} \\right) = {\\log _{10}}{6 \\over {1 + {2^x}}}$$<br><br>$$\\because$$ $$\\left[ {{{\\log }_{10}}a - {{\\log }_{10}}b = {{\\log }_{10}}{a \\over b}} \\right]$$<br><br>$$ \\Rightarrow x{\\log _{10}}2 = {\\log _{10}}{6 \\over {1 + {2^x}}}$$<br><br>For only x = 1, above equation is satisfied <br><br>$$\\therefore$$ x = 1 is only solution."
+        }
+      },
+      "subject": "mathematics",
+      "subjectGroup": null,
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2017,
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "paperId": "nda-2017-paper-2",
+      "isOutOfSyllabus": false,
+      "isBonus": false,
+      "bookmark": {
+        "en": {
+          "title": "NDA 2017 Paper 2",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If $$x + {\\log _{10}}(1 + {2^x}) = x{\\log _{10}}5 + {\\log _{10}}6$$ then x is equal to"
+        }
+      },
+      "yearKey": "nda-2017-paper-2"
+    },
+    "solution": "$$x + {\\log _{10}}(1 + {2^x}) = x{\\log _{10}}5 + {\\log _{10}}6$$<br><br>$$ \\Rightarrow x - x{\\log _{10}}5 = {\\log _{10}}6 - {\\log _{10}}(1 + {2^x})$$<br><br>$$ \\Rightarrow x(1 - {\\log _{10}}5) = {\\log _{10}}6 - {\\log _{10}}(1 + {2^x})$$<br><br>$$ \\Rightarrow x({\\log _{10}}10 - {\\log _{10}}5) = {\\log _{10}}6 - {\\log _{10}}(1 + {2^x})$$ [$$\\because$$ $${\\log _{10}}10 = 1$$]<br><br>$$ \\Rightarrow x\\left( {{{\\log }_{10}}{{10} \\over 5}} \\right) = {\\log _{10}}{6 \\over {1 + {2^x}}}$$<br><br>$$\\because$$ $$\\left[ {{{\\log }_{10}}a - {{\\log }_{10}}b = {{\\log }_{10}}{a \\over b}} \\right]$$<br><br>$$ \\Rightarrow x{\\log _{10}}2 = {\\log _{10}}{6 \\over {1 + {2^x}}}$$<br><br>For only x = 1, above equation is satisfied <br><br>$$\\therefore$$ x = 1 is only solution.",
+    "subject": "mathematics",
+    "title": "NDA 2017 Paper 2",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2017"
+  },
+  {
+    "_id": "6a3df41b7c54ae41c1c441dd",
+    "examGoalId": "kuzI0cwyHbOVDF6OtL1krdqqokm",
+    "chapterId": "nda_mathematics_logarithms",
+    "correctOptionIndex": 0,
+    "difficulty": "Medium",
+    "exam": "nda",
+    "marks": 2.5,
+    "negativeMarks": -0.83,
+    "options": [
+      "24",
+      "18",
+      "12",
+      "4"
+    ],
+    "question": "<div>If $${\\log _8}m + {\\log _8}{1 \\over 6} = {2 \\over 3}$$, then m is equal to</div>",
+    "rawData": {
+      "question_id": "kuzI0cwyHbOVDF6OtL1krdqqokm",
+      "chapter": "logarithms",
+      "chapterGroup": "algebra",
+      "country": "in",
+      "difficulty": null,
+      "exam": "nda",
+      "examGroup": "defence",
+      "languages": [
+        "en"
+      ],
+      "marks": 2.5,
+      "negMarks": 0.83,
+      "paperTitle": "NDA 2015 Paper 2",
+      "permalink": "if-log-8m--log-81-over-6--2-over-3-then-nda-mathematics-logarithms-xsjjxokz9od7lryp",
+      "question": {
+        "en": {
+          "direction": null,
+          "content": "If $${\\log _8}m + {\\log _8}{1 \\over 6} = {2 \\over 3}$$, then m is equal to",
+          "options": [
+            {
+              "identifier": "A",
+              "content": "24"
+            },
+            {
+              "identifier": "B",
+              "content": "18"
+            },
+            {
+              "identifier": "C",
+              "content": "12"
+            },
+            {
+              "identifier": "D",
+              "content": "4"
+            }
+          ],
+          "correct_options": [
+            "A"
+          ],
+          "answer": null,
+          "explanation": "We have, $${\\log _8}m + {\\log _8}{1 \\over 6} = {2 \\over 3}$$<br><br>$$ \\Rightarrow {\\log _8}{m \\over 6} = {2 \\over 3}$$ [$$\\because$$ $${\\log _a}m + {\\log _a}n = {\\log _a}(m \\times n)$$]<br><br>$$ \\Rightarrow {m \\over 6} = {(8)^{{2 \\over 3}}} = {({2^3})^{{2 \\over 3}}} = {2^2} = 4$$<br><br>$$\\therefore$$ $$m = 6 \\times 4 = 24$$"
+        }
+      },
+      "subject": "mathematics",
+      "subjectGroup": null,
+      "timeAllotted": 75000,
+      "topic": null,
+      "type": "mcq",
+      "year": 2015,
+      "section": [
+        "chapter",
+        "paper"
+      ],
+      "paperId": "nda-2015-paper-2",
+      "isOutOfSyllabus": false,
+      "isBonus": false,
+      "bookmark": {
+        "en": {
+          "title": "NDA 2015 Paper 2",
+          "subTitle": "Logarithms • Mathematics",
+          "excerpt": "If $${\\log _8}m + {\\log _8}{1 \\over 6} = {2 \\over 3}$$, then m is equal to"
+        }
+      },
+      "yearKey": "nda-2015-paper-2"
+    },
+    "solution": "We have, $${\\log _8}m + {\\log _8}{1 \\over 6} = {2 \\over 3}$$<br><br>$$ \\Rightarrow {\\log _8}{m \\over 6} = {2 \\over 3}$$ [$$\\because$$ $${\\log _a}m + {\\log _a}n = {\\log _a}(m \\times n)$$]<br><br>$$ \\Rightarrow {m \\over 6} = {(8)^{{2 \\over 3}}} = {({2^3})^{{2 \\over 3}}} = {2^2} = 4$$<br><br>$$\\therefore$$ $$m = 6 \\times 4 = 24$$",
+    "subject": "mathematics",
+    "title": "NDA 2015 Paper 2",
+    "topic": "General",
+    "type": "SCQ",
+    "year": "2015"
+  }
+]

@@ -1,0 +1,632 @@
+[
+  {
+    "_id": "6a2bdbba2762cf4b57694eb0",
+    "question_id": "ml98p66k",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "hard",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "<p>360</p>\n",
+      "<p>348</p>\n",
+      "<p>320</p>\n",
+      "<p>340</p>"
+    ],
+    "solution": "<p>$$ \\begin{aligned} L_1 & : \\vec{r}=\\hat{i}+\\hat{j}+3 \\hat{k}+\\lambda(2 \\hat{i}+3 \\hat{j}+4 \\hat{k}) \\\\ L_2 & : \\vec{r}=(4 \\hat{i}+\\hat{j})+\\mu(5 \\hat{i}+2 \\hat{j}+\\hat{k}) \\end{aligned} $$</p>\n<p>at the intersection point R , position vectors are equal.</p>\n<p>$$ (\\hat{i}+2 \\hat{j}+3 \\hat{k})+\\lambda(2 \\hat{i}+3 \\hat{j}+4 \\hat{k})=(4 \\hat{i}+\\hat{j})+\\mu(5 \\hat{i}+2 \\hat{j}+\\hat{k}) $$</p>\n<p>equating components of $\\hat{i}, \\hat{j}$ and $\\hat{k}$.</p>\n<p>$$ \\begin{aligned} & 1+2 \\lambda=4+5 \\mu \\Longrightarrow 2 \\lambda-5 \\mu=3 \\text {...... (1) } \\\\ & 2+3 \\lambda=1+2 \\mu \\Longrightarrow 3 \\lambda-2 \\mu=-1 \\text {.....(2) } \\\\ & 3+4 \\lambda=\\mu \\Longrightarrow \\mu-4 \\lambda=3 ...... (3)\\\\ & \\text { eqn (1) } \\times 3 \\text { - eqn (2) } \\times 2 \\\\ & -15 \\mu+4 \\mu=9+2 \\Longrightarrow-11 \\mu=11 \\Longrightarrow \\mu=-1 \\end{aligned} $$</p>\n<p>substitute in equation (1)</p>\n<p>$$ 2 \\lambda-5(-1)=3 \\Longrightarrow \\lambda=\\frac{3-5}{2}=-1 $$</p>\n<p>Now, checking equation (3) $(-1)-4(-1)=3=$ R.H.S consistent.</p>\n<p>Now finding point R using $\\lambda=-1$ in $L_1$</p>\n<p>$$ \\begin{gathered} \\overrightarrow{O R}=(\\hat{i}+2 \\hat{j}+3 \\hat{k})-(2 \\hat{i}+3 \\hat{j}+4 \\hat{k}) \\\\ \\overrightarrow{O R}=-\\hat{i}-\\hat{i}-\\hat{k} \\end{gathered} $$</p>\n<p>Point P lies on $L_1$ so its position vector is $\\quad \\overrightarrow{O P}=(1+2 \\lambda) \\hat{i}+(2+3 \\lambda) \\hat{j}+(3+4 \\lambda) \\hat{k}$ It is given that</p>\n<p>$$ \\begin{gathered} |\\overrightarrow{P R}|=\\sqrt{29} \\Rightarrow|\\overrightarrow{P R}|^2=29 \\\\ \\overrightarrow{P R}=\\overrightarrow{O R}-\\overrightarrow{O P} \\\\ \\overrightarrow{P R}=(-2-2 \\lambda) \\hat{i}+(-3-3 \\lambda) \\hat{j}+(-4-4 \\lambda) \\hat{k} \\\\ |\\overrightarrow{P R}|^2=4(1+\\lambda)^2+9(1+\\lambda)^2+16(1+\\lambda)^2=29 \\\\ 29(1+\\lambda)^2=29 \\Rightarrow(1+\\lambda)^2=1 \\Rightarrow \\lambda=0,-2 \\end{gathered} $$</p>\n<p>point $P$ lies in first octant, means position vector of $P$ must be positive, so $\\lambda=0$</p>\n<p>$$ \\overrightarrow{O P}=\\hat{i}+2 \\hat{j}+3 \\hat{k} $$</p>\n<p>similarly Q lies on $L_2$, so position vector of Q is</p>\n<p>$$ \\begin{gathered} \\overrightarrow{O Q}=(4+5 \\mu) \\hat{i}+(1+2 \\mu) \\hat{j}+\\mu \\hat{k} \\\\ |\\overrightarrow{P Q}|=\\sqrt{\\frac{47}{3}} \\Rightarrow|\\overrightarrow{P Q}|^2=\\frac{47}{3} \\quad \\text { (given) } \\\\ \\overrightarrow{P Q}=\\overrightarrow{O Q}-\\overrightarrow{O P} \\\\ \\overrightarrow{P Q}=(3+5 \\mu) \\hat{i}+(-1+2 \\mu) \\hat{j}+(\\mu-3) \\hat{k} \\\\ (3+5 \\mu)^2+(-1+2 \\mu)^2+(\\mu-3)^2=\\frac{47}{3} \\\\ 30 \\mu^2+20 \\mu+19=\\frac{47}{3} \\\\ 90 \\mu^2+60 \\mu+57=47 \\\\ 90 \\mu^2+60 \\mu+10=0 \\\\ 9 \\mu^2+6 \\mu+1=0 \\\\ (3 \\mu+1)^2=0 \\Rightarrow \\mu=-\\frac{1}{3} \\end{gathered} $$</p>\n<p>finding position vector of Q using $\\mu=-1 / 3$</p>\n<p>$$ \\begin{gathered} \\overrightarrow{O Q}=\\left(4-\\frac{5}{3}\\right) \\hat{i}+\\left(1-\\frac{2}{3}\\right) \\hat{j}-\\frac{1}{3} \\hat{k} \\\\ \\overrightarrow{O Q}=\\frac{7}{3} \\hat{i}+\\frac{1}{3} \\hat{j}-\\frac{1}{3} \\hat{k} \\end{gathered} $$</p>\n<p>$$ \\begin{aligned} & \\text { calculate } 27|Q R|^2 \\\\ & \\qquad \\overrightarrow{Q R}=\\overrightarrow{O R}-\\overrightarrow{O Q} \\\\ & \\overrightarrow{Q R}=-\\frac{10}{3} \\hat{i}-\\frac{4}{3} \\hat{j}-\\frac{2}{3} \\hat{k} \\\\ & |\\overrightarrow{Q R}|^2=\\frac{9}{100}+\\frac{9}{16}+\\frac{9}{4}=\\frac{9}{120} \\\\ & 27|\\overrightarrow{Q R}|^2=\\frac{9}{120} \\times 27=360\\end{aligned} $$</p>",
+    "__v": 0,
+    "title": "JEE Main 2026 (Online) 24th January Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eb1",
+    "question_id": "ml81k4bh",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "<p>4</p>\n",
+      "<p>5</p>\n",
+      "<p>6</p>\n",
+      "<p>3</p>"
+    ],
+    "solution": "<p>Given, $|\\vec{a}|=|\\vec{b}|=|\\vec{c}|=1$</p>\n<p>$|\\vec{a}-\\vec{b}|^2+|\\vec{b}-\\vec{c}|^2+|\\vec{c}-\\vec{a}|^2=9$</p>\n<p>$$\\Rightarrow $$ $|\\vec{a}|^2+|\\vec{b}|^2-2 \\vec{a} \\cdot \\vec{b}+|\\vec{b}|^2+|\\vec{c}|^2-2 \\vec{b} \\cdot \\vec{c}+|\\vec{c}|^2+|\\vec{a}|^2-2 \\vec{c} \\cdot \\vec{a}=9$</p>\n<p>$$\\Rightarrow $$ $6+2(\\vec{a} \\cdot \\vec{b}+\\vec{b} \\cdot \\vec{c}+\\vec{c} \\cdot \\vec{a})=9 \\quad\\{|\\vec{a}|=|\\vec{b}|=|\\vec{c}|=1\\}$</p>\n<p>$$ \\vec{a} \\cdot \\vec{b}+\\vec{b} \\cdot \\vec{c}+\\vec{c} \\cdot \\vec{a}=-\\frac{3}{2} $$</p>\n<p>also,</p>\n<p>$$ |\\vec{a}+\\vec{b}+\\vec{c}|^2=3+2(\\vec{a} \\cdot \\vec{b}+\\vec{b} \\cdot \\vec{c}+\\vec{c} \\cdot \\vec{a}) $$</p>\n<p>$=3+2\\left(-\\frac{3}{2}\\right)=3-3=0$</p>\n<p>So</p>\n<p>$$ \\vec{a}+\\vec{b}+\\vec{c}=0 $$</p>\n<p>$$\\Rightarrow $$ $\\vec{a}+\\vec{b}=-\\vec{c}$</p>\n<p>$$\\Rightarrow $$ $|\\vec{a}+\\vec{b}|^2=|\\vec{c}|^2=1$</p>\n<p>$$\\Rightarrow $$ $|\\vec{a}|^2+|\\vec{b}|^2+2 \\vec{a} \\cdot \\vec{b}=1$</p>\n<p>$$\\Rightarrow $$ $1+1+2 \\vec{a} \\cdot \\vec{b}=1$</p>\n<p>$$\\Rightarrow $$ $$ \\vec{a} \\cdot \\vec{b}=-\\frac{1}{2} $$</p>\n<p>Similarly,</p>\n<p>$$ \\vec{b} \\cdot \\vec{c}=-\\frac{1}{2} \\quad \\text { and } \\quad \\vec{a} \\cdot \\vec{c}=-\\frac{1}{2} $$</p>\n<p>so,</p>\n<p>$$ \\vec{a} \\cdot \\vec{b}=\\vec{b} \\cdot \\vec{c}=\\vec{c} \\cdot \\vec{a}=-\\frac{1}{2} $$</p>\n<p>It is given that</p>\n<p>$$ |2 \\vec{a}+k \\vec{b}+k \\vec{c}|=3 $$</p>\n<p>$$\\Rightarrow $$ $|2 \\vec{a}+k \\vec{b}+k \\vec{c}|^2=9$</p>\n<p>$$\\Rightarrow $$ $4|\\vec{a}|^2+k^2|\\vec{b}|^2+k^2|\\vec{c}|^2+4 k \\vec{a} \\cdot \\vec{b}+2 k^2 \\vec{b} \\cdot \\vec{c}+4 k \\vec{a} \\cdot \\vec{c}=9$</p>\n<p>$$\\Rightarrow $$ $4(1)^2+k^2(1)^2+k^2(1)^2+4 k\\left(-\\frac{1}{2}\\right)+2 k^2\\left(-\\frac{1}{2}\\right)+4 k\\left(-\\frac{1}{2}\\right)=9$</p>\n<p>$$\\Rightarrow $$ $4+2 k^2-2 k-k^2-2 k=9$</p>\n<p>$$\\Rightarrow $$ $k^2-4 k-5=0$</p>\n<p>$$\\Rightarrow $$ $(k-5)(k+1)=0$</p>\n<p>$$\\Rightarrow $$ $k=5,-1$</p>",
+    "__v": 0,
+    "title": "JEE Main 2026 (Online) 28th January Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eb2",
+    "question_id": "mnswhry6",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "<p>$\\frac{1}{5}(\\vec{a}-4 \\vec{b})$</p>\n",
+      "<p>$\\frac{1}{5}(\\vec{b}-4 \\vec{a})$</p>\n",
+      "<p>$\\frac{1}{5}(-\\vec{a}+4 \\vec{b})$</p>\n",
+      "<p>$\\frac{1}{5}(-\\vec{b}+4 \\vec{a})$</p>"
+    ],
+    "solution": "$\\begin{aligned} & \\overrightarrow{\\mathrm{OR}}=\\frac{\\overrightarrow{\\mathrm{OP}}}{5}=\\frac{\\overrightarrow{\\mathrm{a}}}{5} \\\\ & \\overrightarrow{\\mathrm{RM}}=\\frac{\\overrightarrow{\\mathrm{OQ}}}{5}=\\frac{\\overrightarrow{\\mathrm{b}}}{5} \\\\ & \\overrightarrow{\\mathrm{OM}}-\\overrightarrow{\\mathrm{OR}}=\\frac{\\overrightarrow{\\mathrm{b}}}{5} \\\\ & \\overrightarrow{\\mathrm{OM}}=\\frac{\\overrightarrow{\\mathrm{a}}+\\overline{\\mathrm{b}}}{5} \\\\ & \\overrightarrow{\\mathrm{PM}}=\\overrightarrow{\\mathrm{OM}}-\\overrightarrow{\\mathrm{OP}} \\\\ & \\frac{\\overrightarrow{\\mathrm{a}}+\\overrightarrow{\\mathrm{b}}}{5}-\\overrightarrow{\\mathrm{a}} \\\\ & =\\frac{\\overrightarrow{\\mathrm{b}}-4 \\overrightarrow{\\mathrm{a}}}{5}\\end{aligned}$",
+    "__v": 0,
+    "title": "JEE Main 2026 (Online) 5th April Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eb3",
+    "question_id": "m6t9xqu3",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$\\sqrt7$",
+      "14",
+      "7",
+      "3"
+    ],
+    "solution": "<p>$$\\begin{aligned}\n&\\begin{aligned}\n& \\mathrm{A} \\equiv\\left(\\frac{5 \\mathrm{r}-1}{\\mathrm{r}+1}, \\frac{5 \\mathrm{r}-1}{\\mathrm{r}+1}, \\frac{10 \\mathrm{r}+2}{\\mathrm{r}+1}\\right) \\\\\n& (\\overrightarrow{\\mathrm{OQ}} \\cdot \\overrightarrow{\\mathrm{OA}})-\\frac{|\\overrightarrow{\\mathrm{OP}} \\times \\overrightarrow{\\mathrm{OA}}|^2}{5}=10 \\quad\\text{.... (1)}\\\\\n& \\overrightarrow{\\mathrm{OQ}} \\cdot \\overrightarrow{\\mathrm{OA}}=\\frac{10}{\\mathrm{r}+1}(15 \\mathrm{r}+1) \\\\\n& |\\overrightarrow{\\mathrm{OP}} \\times \\overrightarrow{\\mathrm{OA}}|^2=\\frac{\\mathrm{r}^2}{(\\mathrm{r}+1)^2}(800)\n\\end{aligned}\\\\\n&\\text { so by equation (1) }\\\\\n&\\begin{aligned}\n& \\frac{10}{r+1}(15 r+1)-\\frac{1}{5} \\frac{r^2(800)}{(r+1)^2}=10 \\\\\n& 2 r^2-14 r=0 \\\\\n& r=7, r \\neq 0\n\\end{aligned}\n\\end{aligned}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2025 (Online) 23rd January Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eb4",
+    "question_id": "m6srmtqs",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "hard",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$2 \\sqrt{3}$",
+      "$5 \\sqrt{3}$\n",
+      "$2+\\sqrt{3}$\n",
+      "$2-\\sqrt{3}$"
+    ],
+    "solution": "<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7ea7r2a/4d2148a5-ace9-43e4-b042-174504d81874/d7343a20-f00d-11ef-9717-875b14a45511/file-jaoe38c1m7ea7r2b.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7ea7r2a/4d2148a5-ace9-43e4-b042-174504d81874/d7343a20-f00d-11ef-9717-875b14a45511/file-jaoe38c1m7ea7r2b.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 23rd January Morning Shift Mathematics - Vector Algebra Question 43 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp; \\overrightarrow{\\mathrm{c}}=\\alpha \\overrightarrow{\\mathrm{a}}+\\beta \\overrightarrow{\\mathrm{b}} \\ldots .(1) \\\\\n&amp; \\overrightarrow{\\mathrm{a}} . \\overrightarrow{\\mathrm{c}}=\\alpha \\overrightarrow{\\mathrm{a}} \\cdot \\overrightarrow{\\mathrm{a}}+\\beta \\overrightarrow{\\mathrm{b}} \\cdot \\overrightarrow{\\mathrm{a}} \\\\\n&amp; 0=\\alpha+\\beta \\cos 15^{\\circ} \\ldots .(2) \\\\\n&amp; (1) \\Rightarrow \\overrightarrow{\\mathrm{b}} \\cdot \\overrightarrow{\\mathrm{c}}=\\alpha \\overrightarrow{\\mathrm{a}} \\cdot \\overrightarrow{\\mathrm{~b}}+\\beta \\overrightarrow{\\mathrm{b}} \\cdot \\overrightarrow{\\mathrm{~b}} \\\\\n&amp; \\Rightarrow \\cos 75^{\\circ}=\\alpha \\cos 15^{\\circ}+\\beta \\ldots .(3) \\\\\n&amp; (2) \\&amp;(3) \\Rightarrow \\cos 75^{\\circ}=-\\beta \\cos ^2 15^{\\circ}+\\beta\n\\end{aligned}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\beta=\\frac{\\cos 75^{\\circ}}{\\sin ^2 15^{\\circ}}=\\frac{1}{\\sin 15^{\\circ}}=\\frac{2 \\sqrt{2}}{\\sqrt{3}-1} \\\\\n&amp; (2) \\Rightarrow \\alpha=\\frac{-\\cos 15^{\\circ}}{\\sin 15^{\\circ}}=\\frac{-(\\sqrt{3}+1)}{(\\sqrt{3}-1)} \\\\\n&amp; \\therefore \\overrightarrow{\\mathrm{c}}=\\frac{-(\\sqrt{3}+1)}{(\\sqrt{3}-1)} \\overrightarrow{\\mathrm{a}}+\\left(\\frac{2 \\sqrt{2}}{\\sqrt{3}-1}\\right) \\overrightarrow{\\mathrm{b}}\n\\end{aligned}$$</p>\n<p>Now</p>\n<p>$$\\begin{aligned}\n&amp; \\alpha+\\sqrt{2}(\\sqrt{3}-1) \\beta=\\frac{-(\\sqrt{3}+1)}{(\\sqrt{3}-1)}+\\frac{\\sqrt{2}(\\sqrt{3}-1) \\cdot 2 \\sqrt{2}}{\\sqrt{3}-1} \\\\\n&amp; =\\frac{-(\\sqrt{3}+1)^2}{2}+4 \\\\\n&amp; =\\frac{-3-1-2 \\sqrt{3}+8}{2} \\\\\n&amp; =2-\\sqrt{3}\n\\end{aligned}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2025 (Online) 23rd January Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eb5",
+    "question_id": "m6v43as8",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "4",
+      "3",
+      "1",
+      "6"
+    ],
+    "solution": "<p>We know that,</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7c1ldse/7b516524-27be-47be-9dfd-ab85c6645c7d/8ed102e0-eed2-11ef-81d9-610d814056f7/file-jaoe38c1m7c1ldsf.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m7c1ldse/7b516524-27be-47be-9dfd-ab85c6645c7d/8ed102e0-eed2-11ef-81d9-610d814056f7/file-jaoe38c1m7c1ldsf.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2025 (Online) 24th January Evening Shift Mathematics - Vector Algebra Question 38 English Explanation\"></p>\n<p>$$\\begin{aligned}\n&amp;\\begin{aligned}\n&amp; \\mathrm{O} \\text { (orthocentre) } \\frac{\\overrightarrow{\\mathrm{p}}+\\overrightarrow{\\mathrm{q}}+\\overrightarrow{\\mathrm{r}}}{4} \\\\\n&amp; \\mathrm{C}(\\text { circum centre) } \\alpha \\overrightarrow{\\mathrm{p}}+\\beta \\overrightarrow{\\mathrm{q}}+\\gamma \\overrightarrow{\\mathrm{r}} \\\\\n&amp; \\mathrm{C} \\text { (centroid) }=\\frac{\\overrightarrow{\\mathrm{p}}+\\overrightarrow{\\mathrm{q}}+\\overrightarrow{\\mathrm{r}}}{3}\n\\end{aligned}\\\\\n&amp;\\text { by relation }\\\\\n&amp;\\begin{aligned}\n&amp; \\Rightarrow 2(\\alpha \\overrightarrow{\\mathrm{p}}+\\beta \\overrightarrow{\\mathrm{q}}+\\gamma \\overrightarrow{\\mathrm{r}})+\\frac{\\overrightarrow{\\mathrm{p}}+\\overrightarrow{\\mathrm{q}}+\\overrightarrow{\\mathrm{r}}}{4}=3\\left(\\frac{\\overrightarrow{\\mathrm{p}}+\\overrightarrow{\\mathrm{q}}+\\overrightarrow{\\mathrm{r}}}{3}\\right) \\\\\n&amp; \\Rightarrow 8(\\alpha \\overrightarrow{\\mathrm{p}}+\\beta \\overrightarrow{\\mathrm{q}}+\\gamma \\overrightarrow{\\mathrm{r}})=3(\\overrightarrow{\\mathrm{p}}+\\overrightarrow{\\mathrm{q}}+\\overrightarrow{\\mathrm{r}}) \\\\\n&amp; \\Rightarrow 8 \\alpha=3,8 \\beta=3,8 \\gamma=3 \\\\\n&amp; \\alpha=\\frac{3}{8}, \\beta=\\frac{3}{8}, \\gamma=\\frac{3}{8} \\\\\n&amp; \\therefore \\alpha+2 \\beta+3 \\gamma \\\\\n&amp; \\frac{3}{8}+\\frac{6}{8}+\\frac{15}{8}=\\frac{24}{8}=3\n\\end{aligned}\n\\end{aligned}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2025 (Online) 24th January Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eb6",
+    "question_id": "m6riex0p",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "<p>2</p>",
+      "<p>0</p>",
+      "<p>$ \\frac{9}{2} $</p>",
+      "<p>1</p>"
+    ],
+    "solution": "<p>$$\\begin{aligned}\n&\\text { Equation of angle bisector : } \\mathrm{x}-\\mathrm{y}=0\\\\\n&\\begin{aligned}\n& \\left|\\frac{\\mathrm{a}(1-\\mathrm{a})}{\\sqrt{2}}\\right|=\\frac{9}{\\sqrt{2}} \\Rightarrow \\mathrm{a}=5 \\text { or }-4 \\\\\n& \\text { Sum }=5+(-4)=1\n\\end{aligned}\n\\end{aligned}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2025 (Online) 28th January Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eb7",
+    "question_id": "m9fnut02",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "<p>$$\\begin{aligned}\n&\\text { Assuming Vertex } A \\text { to be origin }\\\\\n&\\begin{aligned}\n& \\vec{A}=\\vec{a}_1=\\overrightarrow{0} \\\\\n& \\vec{B}=\\vec{a}_1+\\vec{u}=\\vec{u}=2 \\hat{i}-\\hat{j}+\\hat{k} \\\\\n& \\vec{C}=\\vec{a}_1+\\vec{v}=\\vec{v}=3 \\hat{i}-4 \\hat{j}-4 \\hat{k}\n\\end{aligned}\n\\end{aligned}$$</p>\n<p>One solving</p>\n<p>$\\vec{A}=\\overrightarrow{0}, \\vec{B}=2 \\hat{i}-\\hat{j}+\\hat{k}$ and $\\vec{C}=3 \\hat{i}-4 \\hat{j}-4 \\hat{k}$, are the position vector of vertices $A B$ and $C$ respectively.</p>\n<p>$$\\begin{aligned}\n& \\vec{G}=\\frac{1}{3}(\\vec{A}+\\vec{B}+\\vec{C})=\\frac{1}{3}(\\overrightarrow{0}+\\vec{B}+\\vec{C})=\\frac{1}{3}(\\vec{B}+\\vec{C}) \\\\\n& \\Rightarrow \\vec{G}=\\frac{5}{3} \\hat{i}-\\frac{5}{3} \\hat{j}-\\hat{k} \\\\\n& \\overrightarrow{A G}=\\vec{G}-\\vec{A}=\\vec{G} \\\\\n& |\\overrightarrow{A G}|^2=\\left(\\frac{5}{3}\\right)^2+\\left(\\frac{5}{3}\\right)^2+(1)^2=\\frac{25}{9}+\\frac{25}{9}+1=\\frac{50}{9}+1=\\frac{59}{9} \\\\\n& \\overrightarrow{B C}=\\vec{G}-\\vec{B} \\\\\n& \\vec{B}=2 \\hat{i}-\\hat{j}+\\hat{k} \\\\\n& |\\overrightarrow{B G}|^2=\\left(\\frac{1}{3}\\right)^3+\\left(\\frac{2}{3}\\right)^2+4=\\frac{1}{9}+\\frac{4}{9}+4=\\frac{5}{9}+4=\\frac{41}{9} \\\\\n& \\overrightarrow{C G}=\\vec{G}-\\vec{C} \\\\\n& \\vec{C}=3 \\hat{i}-4 \\hat{j}-4 \\hat{k} \\\\\n& \\left.\\overrightarrow{C G}\\right|^2=\\left(\\frac{4}{3}\\right)^2+\\left(\\frac{7}{3}\\right)^2+9=\\frac{16}{9}+\\frac{49}{9}+9=\\frac{65}{9}+9=\\frac{65}{9}+\\frac{81}{9}=\\frac{146}{9}\n\\end{aligned}$$</p>\n<p>$6\\left(|\\overrightarrow{A G}|^2+|\\overrightarrow{B G}|^2+|\\overrightarrow{C G}|^2\\right)=6 \\cdot\\left(\\frac{59}{9}+\\frac{41}{9}+\\frac{146}{9}\\right)=6 \\cdot \\frac{246}{9}=164$</p>",
+    "__v": 0,
+    "title": "JEE Main 2025 (Online) 4th April Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eb8",
+    "question_id": "jaoe38c1lsco116r",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "45",
+      "50",
+      "42",
+      "49"
+    ],
+    "solution": "<p>$$\\begin{aligned}\n&amp; \\mathrm{AB}=5 \\\\\n&amp; \\mathrm{AC}=5\n\\end{aligned}$$</p>\n<p><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lt1v5c9e/0c2c210a-ab17-46c0-813d-6d826d2adf6f/7c1dc320-d40e-11ee-b9d5-0585032231f0/file-1lt1v5c9f.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lt1v5c9e/0c2c210a-ab17-46c0-813d-6d826d2adf6f/7c1dc320-d40e-11ee-b9d5-0585032231f0/file-1lt1v5c9f.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0 auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2024 (Online) 27th January Evening Shift Mathematics - Vector Algebra Question 81 English Explanation\"></p>\n<p>$$\\therefore \\mathrm{D}$$ is midpoint of $$\\mathrm{BC}$$</p>\n<p>$$\\begin{aligned}\n&amp; \\mathrm{D}\\left(\\frac{1}{2}, \\frac{3}{2}, 3\\right) \\\\\n&amp; \\therefore l=\\sqrt{\\left(2-\\frac{1}{2}\\right)^2+\\left(-3-\\frac{3}{2}\\right)^2+(3-3)^2} \\\\\n&amp; l=\\sqrt{\\frac{45}{2}} \\\\\n&amp; \\therefore 2 l^2=45\n\\end{aligned}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2024 (Online) 27th January Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eb9",
+    "question_id": "jaoe38c1lseyalpj",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "30",
+      "$$-$$30",
+      "$$-$$25",
+      "35"
+    ],
+    "solution": "<p>$$\\begin{aligned}\n& \\vec{a}+5 \\vec{b}=\\lambda \\vec{c} \\\\\n& \\vec{b}+6 \\vec{c}=\\mu \\vec{a}\n\\end{aligned}$$</p>\n<p>Eliminating $$\\vec{a}$$</p>\n<p>$$\\begin{aligned}\n& \\lambda \\overrightarrow{\\mathrm{c}}-5 \\overrightarrow{\\mathrm{b}}=\\frac{6}{\\mu} \\overrightarrow{\\mathrm{c}}+\\frac{1}{\\mu} \\overrightarrow{\\mathrm{b}} \\\\\n& \\therefore \\mu=\\frac{-1}{5}, \\lambda=-30 \\\\\n& \\alpha=5, \\beta=30\n\\end{aligned}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2024 (Online) 29th January Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694eba",
+    "question_id": "1lgvq2r23",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$\\overrightarrow {QP} $$",
+      "$$\\overrightarrow {PQ} $$",
+      "$$2\\overrightarrow {PQ} $$",
+      "$$2\\overrightarrow {QP} $$"
+    ],
+    "solution": "1. **Circumcenter $ P $**:\n <br/><br/>The circumcenter of a triangle is equidistant from the vertices of the triangle. It is the center of the circumcircle, the circle that passes through all three vertices of the triangle.\n\n<br/><br/>2. **Orthocenter $ Q $**:\n <br/><br/>The orthocenter of a triangle is the point of intersection of its three altitudes. An altitude of a triangle is a perpendicular line segment drawn from a vertex to its opposite side (or its extension).\n\n<br/><br/>3. **Centroid $ G $**:\n<br/><br/>The centroid of a triangle is the point of intersection of its medians. A median of a triangle is a line segment joining a vertex to the midpoint of the opposite side. The centroid always divides each median in a 2:1 ratio, with the larger segment being closer to the vertex.\n\n<br/><br/>With the above definitions, it's known that the centroid divides the line segment joining the circumcenter and orthocenter in the ratio 2 : 1, meaning :\n<br/><br/>$ \\overrightarrow{PG} =  \\frac{2}{3} \\overrightarrow{PQ} $\n<br/><br/>$ \\overrightarrow{PQ} = 3\\overrightarrow{PG} $\n  \n<p>The position vector of the centroid $G$ in terms of the vertices $A, B,$ and $C$ is :\n<br/><br/>$ \\overrightarrow{G} = \\frac{\\overrightarrow{A} + \\overrightarrow{B} + \\overrightarrow{C}}{3} $</p>\n<p>Because $P$ is the circumcenter and is at the origin in this problem:\n<br/><br/>$ \\overrightarrow{PA} = \\overrightarrow{A} $\n<br/><br/>$ \\overrightarrow{PB} = \\overrightarrow{B} $\n<br/><br/>$ \\overrightarrow{PC} = \\overrightarrow{C} $</p>\n<p>Substituting these into the equation for $G$ :\n<br/><br/>$ \\overrightarrow{PG} = \\frac{\\overrightarrow{PA} + \\overrightarrow{PB} + \\overrightarrow{PC}}{3} $</p>\n<p>Now, using the relationship between $PQ$ and $PG$ established earlier :\n<br/><br/>$ \\overrightarrow{PQ} = 3\\overrightarrow{PG} = \\overrightarrow{PA} + \\overrightarrow{PB} + \\overrightarrow{PC} $</p>",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 10th April Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ebb",
+    "question_id": "1lgxt48t5",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${x^2} + x - 2 = 0$$",
+      "$$3{x^2} + 2x - 1 = 0$$",
+      "$$3{x^2} - 2x - 1 = 0$$",
+      "$${x^2} - x - 2 = 0$$"
+    ],
+    "solution": "An arc $P Q$ of a circle subtends a right angle at its centre $O$. The mid-point of an $\\operatorname{arc} P Q$ is $R$. So, $P R=R Q$ \n<br><br>Also given that, $$\\overrightarrow {OP}  = \\overrightarrow u ,\\overrightarrow {OR}  = \\overrightarrow v $$, and $$\\overrightarrow {OQ}  = \\alpha \\overrightarrow u  + \\beta \\overrightarrow v $$\n<br><br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lnbavvev/3506a77b-c00f-43d4-873d-aea0b917a5f0/c874fd70-6275-11ee-af05-bf9054b926c1/file-6y3zli1lnbavvew.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/6y3zli1lnbavvev/3506a77b-c00f-43d4-873d-aea0b917a5f0/c874fd70-6275-11ee-af05-bf9054b926c1/file-6y3zli1lnbavvew.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh;vertical-align:baseline\" alt=\"JEE Main 2023 (Online) 10th April Morning Shift Mathematics - Vector Algebra Question 96 English Explanation\">\n<br><br>Let $$\\overrightarrow {OP}  = \\overrightarrow u$$\n<br><br>$$\n\\begin{aligned}\n&amp; \\overrightarrow{OQ}=\\overrightarrow{q}=\\alpha \\overrightarrow{u}+\\beta \\overrightarrow{v} \\\\\\\\\n&amp; \\overrightarrow{O R}=\\overrightarrow{v}\n\\end{aligned}\n$$\n<br><br>Clearly, $\\overrightarrow{q}=\\hat{\\mathbf{j}}$\n<br><br>$$\n\\overrightarrow{u}=\\hat{\\mathbf{i}}, \\overrightarrow{v}=\\frac{\\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}}{\\sqrt{2}}\n$$\n<br><br>Now, given, $\\overrightarrow{q}=\\alpha \\overrightarrow{u}+\\beta \\overrightarrow{v}$\n<br><br>$$\n\\begin{array}{ll}\n\\Rightarrow &amp; \\hat{\\mathbf{j}}=\\alpha(\\hat{\\mathbf{i}})+\\beta\\left(\\frac{\\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}}{\\sqrt{2}}\\right) \\\\\\\\\n\\Rightarrow &amp; \\hat{\\mathbf{j}}=\\mathbf{i}\\left(\\alpha+\\frac{\\beta}{\\sqrt{2}}\\right)+\\frac{\\beta}{\\sqrt{2}} \\hat{\\mathbf{j}}\n\\end{array}\n$$\n<br><br>On comparing both sides, we get\n<br><br>$$\n\\begin{array}{rlrl}\n\\alpha+\\frac{\\beta}{\\sqrt{2}}  =0 \\text { and } \\frac{\\beta}{\\sqrt{2}}=1 \\\\\\\\\n\\Rightarrow  \\alpha  =-\\frac{\\beta}{\\sqrt{2}} \\quad \\therefore \\beta  =\\sqrt{2} \\\\\\\\\n\\Rightarrow  \\alpha  =-1, \\beta^2=2\n\\end{array}\n$$\n<br><br>Now, $\\alpha$ and $\\beta^2$ are roots of the quadratic equation is $x^2-x-2=0$",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 10th April Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ebc",
+    "question_id": "1lguu8s7l",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "Only (B) is true",
+      "Only (A) is true",
+      "Neither (A) nor (B) is true",
+      "Both (A) and (B) are true"
+    ],
+    "solution": "We have,\n<br/><br/>$$\n\\begin{aligned}\n& 10\\left|a_i\\right|<1, i=1,2,3 \\\\\\\\\n& \\text { Let } \\left|a_1\\right| \\geq\\left|a_2\\right| \\geq\\left|a_3\\right| \\\\\\\\\n& |\\vec{a}|=\\sqrt{a_1^2+a_2^2+a_3^2} \\geq \\sqrt{a_1^2} \\\\\\\\\n& \\therefore|\\vec{a}| \\geq\\left|a_1\\right| \\text { or } \\max \\left\\{\\left|a_1\\right|,\\left|a_2\\right|,\\left|a_3\\right|\\right\\} \\text {. }\n\\end{aligned}\n$$\n<br/><br/>Hence, (A) is true.\n<br/><br/>$$\n\\begin{array}{rlrl} \n&  |\\vec{a}|  =\\sqrt{a_1^2+a_2^2+a_3^2} \\leq \\sqrt{a_1^2+a_1^2+a_1^2} \\\\\\\\\n& =\\sqrt{3}\\left|a_1\\right| \\\\\\\\\n\\therefore &  |\\vec{a}|=\\sqrt{3}\\left|a_1\\right|<3\\left|a_1\\right| \\\\\\\\\n\\therefore & |\\vec{a}|<3 \\max \\left\\{\\left|a_1\\right|,\\left|a_2\\right|,\\left|a_3\\right|\\right\\}\n\\end{array}\n$$\n<br/><br/>Hence, (B) is also true.",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 11th April Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ebd",
+    "question_id": "1ldybks1h",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$\\frac{5}{2}$$",
+      "4",
+      "2",
+      "3"
+    ],
+    "solution": "Let the position vector of $P, Q, R$ be $\\overrightarrow{0}, \\overrightarrow{a}, \\overrightarrow{b}$ \n<br><br>$\\Rightarrow$ Position vector of $A=\\frac{2 \\overrightarrow{a}+\\overrightarrow{b}}{3}, $\n<br><br>Position vector of $B=\\frac{2 \\overrightarrow{b}}{3}$ and \n<br><br>Position vector of $C=\\frac{\\overrightarrow{a}}{3}$\n<br><img src=\"https://app-content.cdn.examgoal.net/fly/@width/image/1lfhv3u5p/8ecc7bc1-f988-47d9-9271-a3d8261cd426/d568c1d0-c7af-11ed-b61f-698c390a560e/file-1lfhv3u5q.png?format=png\" data-orsrc=\"https://app-content.cdn.examgoal.net/image/1lfhv3u5p/8ecc7bc1-f988-47d9-9271-a3d8261cd426/d568c1d0-c7af-11ed-b61f-698c390a560e/file-1lfhv3u5q.png\" loading=\"lazy\" style=\"max-width:100%;height:auto;display:block;margin:0px auto;max-height:40vh\" alt=\"JEE Main 2023 (Online) 24th January Morning Shift Mathematics - Vector Algebra Question 111 English Explanation\">\n<br>$$\n\\begin{aligned}\n&amp; \\therefore \\overrightarrow{A B}=\\frac{2 \\vec{b}}{3}-\\left(\\frac{2 \\vec{a}+\\vec{b}}{3}\\right)=\\frac{\\vec{b}}{3}-\\frac{2 \\vec{a}}{3}=\\frac{\\vec{b}-2 \\vec{a}}{3} \\\\\\\\\n&amp; \\overrightarrow{C A}=\\frac{2 \\vec{a}+\\vec{b}}{3}-\\frac{\\vec{a}}{3}=\\frac{\\vec{a}+\\vec{b}}{3} \\\\\\\\\n&amp; \\text { Area of } \\triangle P Q R=\\frac{1}{2}|\\overrightarrow{P Q} \\times \\overrightarrow{P R}|=\\frac{1}{2}|\\vec{a} \\times \\vec{b}| \\\\\\\\\n&amp; \\text { Area of } \\triangle A B C=\\frac{1}{2}|\\overrightarrow{C A} \\times \\overrightarrow{A B}| \\\\\n&amp; =\\frac{1}{2}\\left|\\left(\\frac{\\vec{a}+\\vec{b}}{3}\\right) \\times\\left(\\frac{\\vec{b}-2 \\vec{a}}{3}\\right)\\right|=\\frac{1}{2}\\left|\\frac{\\vec{a} \\times \\vec{b}}{3}\\right| \\\\\\\\\n&amp; \\therefore \\frac{\\text { Area }(\\triangle P Q R)}{\\text { Area }(\\triangle A B C)}=\\frac{\\frac{1}{2}|\\vec{a} \\times \\vec{b}|}{\\frac{1}{2}\\left|\\frac{\\vec{a} \\times \\vec{b}}{3}\\right|}=3 \\text { sq. units }\n\\end{aligned}\n$$",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 24th January Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ebe",
+    "question_id": "1l6m59jzo",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "a non-empty finite set",
+      "equal to $$\\mathbf{N}$$",
+      "equal to $$\\mathbf{R}-\\{0\\}$$",
+      "equal to $$\\mathbf{R}$$"
+    ],
+    "solution": "<p>Clearly $$\\overrightarrow a $$, $$\\overrightarrow b $$, $$\\overrightarrow c $$ are non-coplanar</p>\n<p>$$\\left| {\\matrix{\n   {1 + t} & {1 - t} & 1  \\cr \n   {1 - t} & {1 + t} & 2  \\cr \n   t & { - t} & 1  \\cr \n\n } } \\right| \\ne 0$$</p>\n<p>$$ \\Rightarrow (1 + t)(1 + t + 2t) - (1 - t)(1 - t - 2t) + 1({t^2} - t - t - {t^2}) \\ne 0$$</p>\n<p>$$ \\Rightarrow (3{t^2} + 4t + 1) - (1 - t)(1 - 3t) - 2t \\ne 0$$</p>\n<p>$$ \\Rightarrow (3{t^2} + 4t + 1) - (3{t^2} - 4t + 1) - 2t \\ne 0$$</p>\n<p>$$ \\Rightarrow t \\ne 0$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 28th July Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ebf",
+    "question_id": "1l54taa8j",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${{\\sqrt {82} } \\over 2}$$",
+      "$${{\\sqrt {62} } \\over 2}$$",
+      "$${{\\sqrt {69} } \\over 2}$$",
+      "$${{\\sqrt {66} } \\over 2}$$"
+    ],
+    "solution": "$\\overrightarrow{A B} \\| \\overrightarrow{A C}$ if\n<br/><br/>\n$\\frac{1}{2}=\\frac{\\alpha-4}{-6}=\\frac{1}{2}$\n<br/><br/>\n$\\Rightarrow \\alpha=1$\n<br/><br/>\n$\\vec{a}, \\vec{b}, \\vec{c}$ are non-collinear for $\\alpha=2$ (smallest positive integer)\n<br/><br/>\nMid point of $B C=M\\left(\\frac{5}{2}, 0, \\frac{9}{2}\\right)$\n<br/><br/>\n$A M=\\sqrt{\\frac{9}{4}+16+\\frac{9}{4}}=\\frac{\\sqrt{82}}{2}$",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 29th June Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ec0",
+    "question_id": "PKaCFkWCxapnmisq1O1kmhvprkw",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${1 \\over {\\sqrt 2 }}$$",
+      "$${1 \\over 2}$$",
+      "1",
+      "2$${\\sqrt 2 }$$"
+    ],
+    "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kohsfyh7/5964d015-b282-4072-a236-39c50c374eb0/93d698c0-b11b-11eb-bb0b-8f691d9fb96b/file-1kohsfyh8.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 16th March Morning Shift Mathematics - Vector Algebra Question 195 English Explanation\">\n<br>($$\\alpha$$, $$\\beta$$) $$ \\equiv $$ (2 cos 75$$^\\circ$$, 2 sin 75$$^\\circ$$)<br><br>Area = $${1 \\over 2}$$ (2 cos 75$$^\\circ$$) (2 sin 75$$^\\circ$$)<br><br>= sin(150$$^\\circ$$) = $${1 \\over 2}$$ square unit",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 16th March Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ec1",
+    "question_id": "HlfRsGRwqx3bVkQvd41kmlijvdt",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "1",
+      "$$ - {5 \\over 4}$$",
+      "$${4 \\over 5}$$",
+      "$$-$$1"
+    ],
+    "solution": "$${\\left| {\\overrightarrow a } \\right|_{old}} = {\\left| {\\overrightarrow a } \\right|_{new}}$$<br><br>(3p)<sup>2</sup> + 1 = (p + 1)<sup>2</sup> + 10<br><br>$$ \\Rightarrow $$ 9p<sup>2</sup> $$-$$ p<sup>2</sup> $$-$$ 2p $$-$$ 10 = 0<br><br>$$ \\Rightarrow $$ 8p<sup>2</sup> $$-$$ 2p $$-$$ 10 = 0<br><br>$$ \\Rightarrow $$ 4p<sup>2</sup> $$-$$ p $$-$$ 5 = 0<br><br>$$ \\Rightarrow $$ 4p<sup>2</sup> $$-$$ 5p + 4p $$-$$ 5 = 0<br><br>$$ \\Rightarrow $$ (4p $$-$$ 5) (p + 1) = 0<br><br>$$ \\Rightarrow $$ p = $${5 \\over 4}$$, $$-$$ 1",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 18th March Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ec2",
+    "question_id": "1krzmlysr",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${2 \\over {{1 \\over a} + {1 \\over b}}}$$",
+      "$${{a + b} \\over 2}$$",
+      "$${1 \\over a} + {1 \\over b}$$",
+      "$$\\sqrt {ab} $$"
+    ],
+    "solution": "Because vectors are coplanar<br><br>Hence, $$\\left| {\\matrix{\n   a &amp; a &amp; c  \\cr \n   1 &amp; 0 &amp; 1  \\cr \n   c &amp; c &amp; b  \\cr \n\n } } \\right| = 0$$<br><br>$$ \\Rightarrow {c^2} = ab \\Rightarrow c = \\sqrt {ab} $$",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 25th July Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ec3",
+    "question_id": "WE3BfzabLGO8CzgZL41kluxsedn",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${1 \\over {\\sqrt 3 }}\\left( {\\widehat i - \\widehat j + \\widehat k} \\right)$$",
+      "$${1 \\over {\\sqrt 2 }}\\left( { - \\widehat j + \\widehat k} \\right)$$",
+      "$${1 \\over {\\sqrt 2 }}\\left( {\\widehat i - \\widehat j} \\right)$$",
+      "$${1 \\over {\\sqrt 3 }}\\left( {\\widehat i + \\widehat j - \\widehat k} \\right)$$"
+    ],
+    "solution": "$$\\overrightarrow {{a_2}}  = \\lambda \\overrightarrow {{a_1}} $$<br><br>$$\\widehat i + y\\widehat j + z\\widehat k = \\lambda (x\\widehat i - \\widehat j + \\widehat k)$$<br><br>$$1 = \\lambda x,y =  - \\lambda ,z = \\lambda $$<br><br>$$x\\widehat i + y\\widehat j + z\\widehat k = {1 \\over \\lambda }\\widehat i - \\lambda \\widehat j + \\lambda \\widehat k$$<br><br>Unit vector $$ = {{{1 \\over \\lambda }\\widehat i - \\lambda \\widehat j + \\lambda \\widehat k} \\over {\\sqrt {{1 \\over {{\\lambda ^2}}} + {\\lambda ^2} + {\\lambda ^2}} }}$$<br><br>$$ = {{\\widehat i - {\\lambda ^2}\\widehat j + {\\lambda ^2}\\widehat k} \\over {\\sqrt {1 + 2{\\lambda ^4}} }}$$<br><br>Let $${\\lambda ^2} = 1$$, possible unit vector $$ = {{\\widehat i - \\widehat j + \\widehat k} \\over {\\sqrt 3 }}$$",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 26th February Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ec4",
+    "question_id": "fMrt9F3WxfZGa87KLbjgy2xukezm4q3d",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "do not intersect for any values of $$l$$ and m",
+      "intersect for all values of $$l$$ and m",
+      "intersect when $$l$$ = 2 and m = $${1 \\over 2}$$",
+      "intersect when $$l$$ = 1 and m = 2"
+    ],
+    "solution": "L<sub>1</sub> = $$\\overrightarrow r  = \\left( {\\widehat i - \\widehat j} \\right) + l\\left( {2\\widehat i + \\widehat k} \\right)$$\n<br><br>= $$\\widehat i\\left( {1 + 2l} \\right) + \\widehat j\\left( { - 1} \\right) + \\widehat k\\left( l \\right)$$\n<br><br>L<sub>2</sub> = $$\\overrightarrow r  = \\left( {2\\widehat i - \\widehat j} \\right) + m\\left( {\\widehat i + \\widehat j + \\widehat k} \\right)$$\n<br><br>= $$\\widehat i\\left( {2 + m} \\right) + \\widehat j\\left( {m - 1} \\right) + \\widehat k\\left( { - m} \\right)$$\n<br><br>Equating coefficient of $$\\widehat i$$, $$\\widehat j$$ and $$\\widehat k$$ of L<sub>1</sub>\n and L<sub>2</sub>\n<br><br>2l + 1 = m + 2 ... (1)\n<br><br>–1 = –1 + m ...(2)\n<br><br>l = –m ...(3)\n<br><br>from (ii) m = 0\n<br><br>from (iii) $$l$$ = 0\n<br><br>These values of m and $$l$$ do not satisfy equation (1).\n<br><br>Hence the two lines do not intersect for any values of $$l$$ and m.",
+    "__v": 0,
+    "title": "JEE Main 2020 (Online) 3rd September Morning Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ec5",
+    "question_id": "vyIvUkH6pDxHx9TP8Pjgy2xukfw15iow",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "Let angle between $$\\overrightarrow a $$ and $$\\overrightarrow b $$\n be $$\\theta $$.\n<br><br>$$\\sqrt 3 \\left| {\\overrightarrow a  + \\overrightarrow b } \\right| + \\left| {\\overrightarrow a  - \\overrightarrow b } \\right|$$\n<br><br>= $$\\sqrt 3 \\left( {\\sqrt {1 + 1 + 2\\cos \\theta } } \\right)$$ + $$\\left( {\\sqrt {1 + 1 - 2\\cos \\theta } } \\right)$$\n<br><br>= $$\\sqrt 3 \\left( {\\sqrt {2 + 2\\cos \\theta } } \\right)$$ + $$\\left( {\\sqrt {2 - 2\\cos \\theta } } \\right)$$\n<br><br>= $$\\sqrt 6 \\left( {\\sqrt {1 + \\cos \\theta } } \\right)$$ + $$\\sqrt 2 \\left( {\\sqrt {1 - \\cos \\theta } } \\right)$$\n<br><br>= $$\\sqrt 6 \\left( {\\sqrt {2{{\\cos }^2}{\\theta  \\over 2}} } \\right)$$ + $$\\sqrt 2 \\left( {\\sqrt {2{{\\sin }^2}{\\theta  \\over 2}} } \\right)$$\n<br><br>= $$2\\sqrt 3 \\left| {\\cos {\\theta  \\over 2}} \\right|$$ + 2$$\\left| {\\sin {\\theta  \\over 2}} \\right|$$\n<br><br>$$ \\le $$ $$\\sqrt {{{\\left( {2\\sqrt 3 } \\right)}^2} + {{\\left( 2 \\right)}^2}} $$ = 4\n<br><br><b>Note :</b> |x| = $$\\sqrt {{x^2}} $$\n<br><br>|x - 1| = $$\\sqrt {{{\\left( {x - 1} \\right)}^2}} $$\n<br><br>|sin x| = $$\\sqrt {{{\\sin }^2}x} $$\n<br><br>That is why $${\\sqrt {{{\\sin }^2}{\\theta  \\over 2}} }$$ = $$\\left| {\\sin {\\theta  \\over 2}} \\right|$$ and $${\\sqrt {{{\\cos }^2}{\\theta  \\over 2}} }$$ = $$\\left| {\\cos {\\theta  \\over 2}} \\right|$$",
+    "__v": 0,
+    "title": "JEE Main 2020 (Online) 6th September Morning Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ec6",
+    "question_id": "6n5pJMAxl9mPBSplixN9e",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${1 \\over 2}\\left( {4\\widehat i + 8\\widehat j + 11\\widehat k} \\right)$$",
+      "$${1 \\over 3}\\left( {6\\widehat i + 11\\widehat j + 15\\widehat k} \\right)$$",
+      "$${1 \\over 3}\\left( {6\\widehat i + 13\\widehat j + 18\\widehat k} \\right)$$",
+      "$${1 \\over 4}\\left( {8\\widehat i + 14\\widehat j + 19\\widehat k} \\right)$$"
+    ],
+    "solution": "Suppose angular bisector of A meets BC at D(x, , z) \n<br><br>Using angular bisector theorem,\n<br><br>$${{AB} \\over {AC}}$$ = $${{BD} \\over {DC}}$$\n<br><br> $${{BD} \\over {DC}}$$ = $${{\\sqrt {{{\\left( {4 - 2} \\right)}^2} + {{\\left( {7 - 3} \\right)}^2} + {{\\left( {8 - 4} \\right)}^2}} } \\over {\\sqrt {{{\\left( {4 - 2} \\right)}^2} + {{\\left( {7 - 5} \\right)}^2} + {{\\left( {8 - 7} \\right)}^2}} }}$$\n<br><br>= $${{\\sqrt {{2^2} + {4^2} + {4^2}} } \\over {\\sqrt {{2^2} + {2^2} + {1^2}} }}$$ = $${6 \\over 3}$$ = 2\n<br><br><img src=\"https://imagex.cdn.examgoal.net/qCIAKkwrD9W9S4iGq/4O4ky7dgN1zGeENZG3lSYJ7pWUJYK/NRPZflfFdRmyENh1D2Yeco/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2018 (Online) 15th April Evening Slot Mathematics - Vector Algebra Question 238 English Explanation\">\n<br><br>So, D(x, y, z) $$ \\equiv $$ $$\\left( {{{\\left( 2 \\right)\\left( 2 \\right) + \\left( 1 \\right)\\left( 2 \\right)} \\over {2 + 1}},{{\\left( 2 \\right)\\left( 5 \\right) + \\left( 1 \\right)\\left( 3 \\right)} \\over {2 + 1}}} \\right.$$, $$\\left. {{{\\left( 2 \\right)\\left( 7 \\right) + \\left( 1 \\right)\\left( 4 \\right)} \\over {2 + 1}}} \\right)$$\n<br><br>D(x, y, z) $$ \\equiv $$ $$\\left( {{6 \\over 3},{{13} \\over 3},{{18} \\over 3}} \\right)$$\n<br><br>Therefore, position vector of point  p = $${1 \\over 3}$$ (6i + 13j + 18k)",
+    "__v": 0,
+    "title": "JEE Main 2018 (Online) 15th April Evening Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ec7",
+    "question_id": "GzUDojnFZg8u9lKQ6BPEk",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${\\overrightarrow a  + \\overrightarrow b  + \\overrightarrow c }$$ ",
+      "$$ - \\left( {{{\\overrightarrow a  + \\overrightarrow b  + \\overrightarrow c } \\over 2}} \\right)$$",
+      "$$\\overrightarrow 0 $$ ",
+      "$$\\left( {{{\\overrightarrow a  + \\overrightarrow b  + \\overrightarrow c } \\over 2}} \\right)$$ "
+    ],
+    "solution": "<img src=\"https://imagex.cdn.examgoal.net/kPfwtYX1pGNG9DFza/OUsLU1JZxDWeg8h4fr7JcWzXsbXfm/9AUhoqvSExWJ1mw6miocAb/image.png\" style=\"max-width: 100%;  height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2016 (Online) 10th April Morning Slot Mathematics - Vector Algebra Question 233 English Explanation\">\n<br><br>Given,\n<br><br>Position vector of circumcentre,  $$\\overrightarrow C  = {{\\overrightarrow a  + \\overrightarrow b  + \\overrightarrow c } \\over 4}$$\n<br><br>We know, position vector of centroid,  $$\\overrightarrow G  = {{\\overrightarrow a  + \\overrightarrow b  + \\overrightarrow c } \\over 3}$$\n<br><br>Now, let $$\\overrightarrow R $$ be the orthocentre of the triangle.\n<br><br>We know,  $$\\overrightarrow G $$  $$ = {{2\\overrightarrow C  + \\overrightarrow R } \\over 3}$$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;3$$\\overrightarrow G $$ $$ = 2\\overrightarrow C  + \\overrightarrow R $$\n<br><br>$$ \\Rightarrow $$&nbsp;&nbsp;&nbsp;$$\\overrightarrow R  = 3\\overrightarrow G  - 2\\overrightarrow C $$\n<br><br>=&nbsp;&nbsp;&nbsp;$$\\left( {\\overrightarrow a  + \\overrightarrow b  + \\overrightarrow c } \\right) - 2\\left( {{{\\overrightarrow a  + \\overrightarrow b  + \\overrightarrow c } \\over 4}} \\right)$$\n<br><br>=&nbsp;&nbsp;&nbsp;$${{\\overrightarrow a  + \\overrightarrow b  + \\overrightarrow c } \\over 2}$$",
+    "__v": 0,
+    "title": "JEE Main 2016 (Online) 10th April Morning Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ec9",
+    "question_id": "1moQH12BR5I24J9y",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$\\sqrt {18} $$ ",
+      "$$\\sqrt {72} $$",
+      "$$\\sqrt {33} $$",
+      "$$\\sqrt {45} $$ "
+    ],
+    "solution": "As $$M$$ is mid point of $$BC$$  \n<br><br>$$\\therefore$$ $$\\overrightarrow {AM}  = {1 \\over 2}\\left( {\\overrightarrow {AB}  + \\overrightarrow {AC} } \\right)$$\n<br><br>$$ = 4\\overrightarrow i  + \\overrightarrow j  + 4\\overrightarrow k $$\n<br><br>Length of median $$AM$$ \n<br><br>$$ = \\sqrt {16 + 1 + 16}  = \\sqrt {33} $$ ",
+    "__v": 0,
+    "title": "JEE Main 2013 (Offline)",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ecb",
+    "question_id": "4qsvyU90C1dWTbNp",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$0$$ ",
+      "$${\\pi  \\over 4}$$",
+      "$${\\pi  \\over 2}$$ ",
+      "$$\\pi $$ "
+    ],
+    "solution": "Clearly $$\\overrightarrow a  =  - {8 \\over 7}\\overrightarrow c $$\n<br><br>$$ \\Rightarrow \\overrightarrow a ||\\overrightarrow c $$ and are opposite in direction \n<br><br>$$\\therefore$$ Angle between $$\\overrightarrow a $$ and $$\\overrightarrow c $$ is $$\\pi .$$",
+    "__v": 0,
+    "title": "AIEEE 2008",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ecc",
+    "question_id": "Kup36fmEjHBf8paP",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "the Geometric Mean of $$a$$  and  $$b$$",
+      "the Arithmetic Mean of $$a$$  and  $$b$$",
+      "equal to zero ",
+      "the Harmonic Mean of $$a$$ and $$b$$"
+    ],
+    "solution": "Vector $$a\\overrightarrow i  + a\\overrightarrow j  + c\\overrightarrow k ,\\,\\,\\overrightarrow i  + \\overrightarrow k $$ \n<br><br>and $$c\\overrightarrow i  + c\\overrightarrow j  + b\\overrightarrow k $$ are coplanar\n<br><br>$$\\left| {\\matrix{\n   a &amp; a &amp; c  \\cr \n   1 &amp; 0 &amp; 1  \\cr \n   c &amp; c &amp; b  \\cr \n\n } } \\right| = 0 \\Rightarrow {c^2} = ab$$ \n<br><br>$$ \\Rightarrow c = \\sqrt {ab} $$\n<br><br>$$\\therefore$$ $$c$$ is $$G.M.$$ of $$a$$ and $$b.$$",
+    "__v": 0,
+    "title": "AIEEE 2005",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ecd",
+    "question_id": "iFtmeeyyKqw8k9qd",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$\\overrightarrow {PA}  + \\overrightarrow {PB}  = 2\\overrightarrow {PC} $$ ",
+      "$$\\overrightarrow {PA}  + \\overrightarrow {PB}  = \\overrightarrow {PC} $$ ",
+      "$$\\overrightarrow {PA}  + \\overrightarrow {PB}  = 2\\overrightarrow {PC}  = \\overrightarrow 0 $$ ",
+      "$$\\overrightarrow {PA}  + \\overrightarrow {PB}  = \\overrightarrow {PC}  = \\overrightarrow 0 $$ "
+    ],
+    "solution": "$$\\overrightarrow {PA}  + \\overrightarrow {AP = 0} $$ and $$\\overrightarrow {PC}  + \\overrightarrow {CP}  = 0$$\n<br><br>$$ \\Rightarrow \\overrightarrow {PA}  + \\overrightarrow {AC}  + \\overrightarrow {CP}  = 0$$ \n<br><br>and \n<br><br>$$\\overrightarrow {PB}  + \\overrightarrow {BC}  + \\overrightarrow {CP}  = 0$$\n<br><br>Adding, we get \n<br><br>$$\\overrightarrow {PA}  + \\overrightarrow {PB}  + \\overrightarrow {AC}  + \\overrightarrow {BC}  + 2\\overrightarrow {CP}  = 0.$$\n<br><br>Since \n<br><br>$$\\overrightarrow {AC}  =  - \\overrightarrow {BC} $$ $$\\,\\,\\,\\,\\,\\,$$ &amp; $$\\,\\,\\,\\,\\,\\,$$ $$\\overrightarrow {CP}  =  - \\overrightarrow {PC} $$\n<br><br>$$ \\Rightarrow \\overrightarrow {PA}  + \\overrightarrow {PB}  - 2\\overrightarrow {PC}  = 0.$$\n<br><br><img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/y2ftkcbazvpvJgIwI/hX5rZvNqCVKH3zV4v9JvMufrvm9T8/uimAbSVRQfRevppnlI630v/image.png\" loading=\"lazy\" alt=\"AIEEE 2005 Mathematics - Vector Algebra Question 263 English Explanation\">",
+    "__v": 0,
+    "title": "AIEEE 2005",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ece",
+    "question_id": "p4AOH1crTPg4bgPR",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$\\overrightarrow{0}$",
+      "$$\\lambda \\overrightarrow b $$ ",
+      "$$\\lambda \\overrightarrow c $$",
+      "$$\\lambda \\overrightarrow a $$"
+    ],
+    "solution": "If $\\overrightarrow{\\mathbf{a}}+2 \\overrightarrow{\\mathbf{b}}$ is collinear with $\\overrightarrow{\\mathbf{c}}$, then\n<br/><br/>$$\n\\overrightarrow{\\mathbf{a}}+2 \\overrightarrow{\\mathbf{b}}=t \\overrightarrow{\\mathbf{c}}\n$$\n<br/><br/>Also, if $\\overrightarrow{\\mathbf{b}}+3 \\overrightarrow{\\mathbf{c}}$ is collinear with $\\overrightarrow{\\mathbf{a}}$, then\n<br/><br/>$$\n\\begin{aligned}\n& \\overrightarrow{\\mathbf{b}}+3 \\overrightarrow{\\mathbf{c}}=\\lambda \\overrightarrow{\\mathbf{a}} \\\\\\\\\n& \\Rightarrow \\overrightarrow{\\mathbf{b}}=\\lambda \\overrightarrow{\\mathbf{a}}-3 \\overrightarrow{\\mathbf{c}}\n\\end{aligned}\n$$\n<br/><br/>On putting this value in Eq. (i), we get\n<br/><br/>$$\n\\overrightarrow{\\mathbf{a}}+2(\\lambda \\overrightarrow{\\mathbf{a}}-3 \\overrightarrow{\\mathbf{c}})=t \\overrightarrow{\\mathbf{c}}\n$$\n<br/><br/>$$\n\n\\Rightarrow  \\overrightarrow{\\mathbf{a}}+2 \\lambda \\overrightarrow{\\mathbf{a}}-6 \\overrightarrow{\\mathbf{c}}=t \\overrightarrow{\\mathbf{c}} $$\n<br/><br/>$$\n\\Rightarrow (\\overrightarrow{\\mathbf{a}}-6 \\overrightarrow{\\mathbf{c}})=t \\overrightarrow{\\mathbf{c}}-2 \\lambda \\overrightarrow{\\mathbf{a}}\n\n$$\n<br/><br/>On comparing, we get\n<br/><br/>and $-6=t $\n<br/><br/>$\\Rightarrow t=-6$\n<br/><br/>From Eq. (i),\n<br/><br/>$$\\vec{a}+2 \\vec{b}=-6 \\vec{c} $$\n<br/><br/>$$\\Rightarrow \\vec{a}+2 \\vec{b}+6 \\vec{c}=\\overrightarrow{0}$$",
+    "__v": 0,
+    "title": "AIEEE 2004",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ecf",
+    "question_id": "ZBaAeUoELX0dxgSK",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "parallelogram but not a rhombus ",
+      "square ",
+      "rhombus ",
+      "None"
+    ],
+    "solution": "$$A = \\left( {7, - 4,7} \\right),B = \\left( {1, - 6,10} \\right),$$\n<br><br>$$C = \\left( { - 1, - 3,4} \\right)$$ and $$D = \\left( {5, - 1,5} \\right)$$\n<br><br>$$AB = \\sqrt {{{\\left( {7 - 1} \\right)}^2} + {{\\left( { - 4 + 6} \\right)}^2} + {{\\left( {7 - 10} \\right)}^2}} $$\n<br><br>$$ = \\sqrt {36 + 4 + 9}  = 7$$\n<br><br>Similarly $$BC = 7,\\,\\,CD = \\sqrt {41} ,\\,\\,DA = \\sqrt {17} $$ \n<br><br>$$\\therefore$$ None of the options is satisfied ",
+    "__v": 0,
+    "title": "AIEEE 2003",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ed0",
+    "question_id": "ksVbg1zWUG2kWR6p",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$0$$ ",
+      "$$2$$ ",
+      "$$-1$$ ",
+      "$$1$$"
+    ],
+    "solution": "$$\\left| {\\matrix{\n   a &amp; {{a^2}} &amp; {1 + {a^3}}  \\cr \n   b &amp; {{b^2}} &amp; {1 + {b^3}}  \\cr \n   c &amp; {{c^2}} &amp; {1 + {c^3}}  \\cr \n\n } } \\right| = 0$$\n<br><br>$$ \\Rightarrow \\left| {\\matrix{\n   a &amp; {{a^2}} &amp; 1  \\cr \n   b &amp; {{b^2}} &amp; 1  \\cr \n   c &amp; {{c^2}} &amp; 1  \\cr \n\n } } \\right| + \\left| {\\matrix{\n   a &amp; {{a^2}} &amp; {{a^3}}  \\cr \n   b &amp; {{b^2}} &amp; {{b^3}}  \\cr \n   c &amp; {{c^2}} &amp; {{c^3}}  \\cr \n\n } } \\right| = 0$$\n<br><br>$$ \\Rightarrow \\left( {1 + abc} \\right)\\left| {\\matrix{\n   1 &amp; a &amp; {{a^2}}  \\cr \n   1 &amp; b &amp; {{b^2}}  \\cr \n   1 &amp; c &amp; {{c^2}}  \\cr \n\n } } \\right| = 0$$\n<br><br>As $$\\,\\,\\,\\left| {\\matrix{\n   1 &amp; a &amp; {{a^2}}  \\cr \n   1 &amp; b &amp; {{b^2}}  \\cr \n   1 &amp; c &amp; {{c^2}}  \\cr \n\n } } \\right| \\ne 0$$  (given condition) \n<br><br>$$\\therefore$$ $$abc=-1$$ ",
+    "__v": 0,
+    "title": "AIEEE 2003",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbba2762cf4b57694ed1",
+    "question_id": "nsIbnkrvsOGyXaLY",
+    "chapterId": "algebra-and-modulus-of-vectors",
+    "subject": "Mathematics",
+    "topic": "algebra-and-modulus-of-vectors",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$\\sqrt {288} $$ ",
+      "$$\\sqrt {18} $$",
+      "$$\\sqrt {72} $$",
+      "$$\\sqrt {33} $$"
+    ],
+    "solution": "<img class=\"question-image\" src=\"https://imagex.cdn.examgoal.net/nlN8TOHdMaAyDG829/NavHIZJHjqeOtZPOBdZnSmBtua9FJ/bkAy9DXynVLetNttFTpO45/image.png\" loading=\"lazy\" alt=\"AIEEE 2003 Mathematics - Vector Algebra Question 273 English Explanation\">\n<br><br>$$PV\\,\\,$$ of $$\\,\\,\\overrightarrow {AD} $$ $$ = {{\\left( {3 + 5} \\right)i + \\left( {0 - 2} \\right)j + \\left( {4 + 4} \\right)k} \\over 2}$$\n<br><br>$$ = 4i - j + 4k\\,\\,$$ \n<br><br>or $$\\,\\,\\,\\left| {\\overrightarrow {AD} } \\right| = \\sqrt {16 + 16 + 1}  = \\sqrt {33} $$",
+    "__v": 0,
+    "title": "AIEEE 2003",
+    "exam": "JEE Main"
+  }
+]
