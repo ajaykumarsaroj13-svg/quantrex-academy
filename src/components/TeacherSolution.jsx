@@ -2,7 +2,8 @@ import React, { useMemo, useEffect, useRef } from 'react';
 
 /**
  * TeacherSolution
- * Minimal, native-looking format with guaranteed MathJax processing.
+ * Beautiful, neat, and highly readable format.
+ * Preserves original MathJax rendering perfectly.
  */
 export default function TeacherSolution({ html, isLight = true, correctOptionLabel }) {
   const containerRef = useRef(null);
@@ -58,32 +59,46 @@ export default function TeacherSolution({ html, isLight = true, correctOptionLab
           color: ${isLight ? '#334155' : '#e2e8f0'};
           margin-top: 10px;
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-          font-size: 16px;
-          line-height: 1.6;
+          font-size: 14.5px;
+          line-height: 1.65;
         }
 
         .correct-badge {
           display: inline-flex;
           align-items: center;
-          background: ${isLight ? '#dcfce7' : 'rgba(34, 197, 94, 0.15)'};
-          color: ${isLight ? '#166534' : '#4ade80'};
-          font-weight: 600;
-          font-size: 15px;
-          padding: 6px 14px;
-          border-radius: 6px;
-          margin-bottom: 20px;
+          background: ${isLight ? 'linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)' : 'linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(22, 163, 74, 0.1) 100%)'};
+          color: ${isLight ? '#15803d' : '#4ade80'};
+          font-weight: 700;
+          font-size: 14.5px;
+          padding: 8px 18px;
+          border-radius: 8px;
+          margin-bottom: 24px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+          border: 1px solid ${isLight ? '#86efac' : 'rgba(74, 222, 128, 0.2)'};
+        }
+
+        .solution-content-wrapper {
+          border-left: 3px solid ${isLight ? '#3b82f6' : '#38bdf8'};
+          background: ${isLight ? 'rgba(241, 245, 249, 0.5)' : 'rgba(15, 23, 42, 0.3)'};
+          padding: 16px 20px;
+          border-radius: 0 8px 8px 0;
         }
 
         .solution-title {
-          font-size: 14px;
-          font-weight: 700;
-          color: ${isLight ? '#64748b' : '#94a3b8'};
+          font-size: 13px;
+          font-weight: 800;
+          color: ${isLight ? '#3b82f6' : '#38bdf8'};
           margin-bottom: 12px;
           text-transform: uppercase;
+          letter-spacing: 1px;
         }
         
         .solution-content p {
           margin-bottom: 12px;
+        }
+        
+        .solution-content p:last-child {
+          margin-bottom: 0;
         }
 
         .solution-content strong, 
@@ -96,14 +111,14 @@ export default function TeacherSolution({ html, isLight = true, correctOptionLab
         .solution-content img {
           max-width: 100%;
           height: auto;
-          margin: 10px auto;
+          margin: 12px auto;
           display: block;
-          border-radius: 4px;
+          border-radius: 6px;
         }
 
         /* Dark mode specific for images */
         .dark .solution-content img {
-          filter: brightness(0.9);
+          filter: brightness(0.95);
           background: transparent;
         }
       `}</style>
@@ -114,13 +129,14 @@ export default function TeacherSolution({ html, isLight = true, correctOptionLab
         </div>
       )}
       
-      <div className="solution-title">Explanation</div>
-      
-      <div 
-        ref={containerRef}
-        className="tex2jax_process solution-content" 
-        dangerouslySetInnerHTML={{ __html: content }} 
-      />
+      <div className="solution-content-wrapper">
+        <div className="solution-title">Step-by-Step Explanation</div>
+        <div 
+          ref={containerRef}
+          className="tex2jax_process solution-content" 
+          dangerouslySetInnerHTML={{ __html: content }} 
+        />
+      </div>
     </div>
   );
 }
