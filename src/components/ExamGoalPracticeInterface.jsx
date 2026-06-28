@@ -11,9 +11,8 @@ import Eye from 'lucide-react/dist/esm/icons/eye';
 import BookmarkGroupModal from './BookmarkGroupModal';
 import TeacherSolution from './TeacherSolution';
 import MathRenderer from '../utils/MathRenderer';
-import CharacterToast from './CharacterToast';
-import { playVoiceFeedback } from '../utils/voiceFeedback';
-
+import TeacherSolution from './TeacherSolution';
+import MathRenderer from '../utils/MathRenderer';
 // Helper to determine if an answer is correct
 const isAnswerCorrect = (question, savedAnswer) => {
   if (!question || !savedAnswer) return false;
@@ -125,8 +124,8 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
   });
   const [timeSpent, setTimeSpent] = useState(0);
   const [fontSize, setFontSize] = useState(18); // Default 18px
+  const [showExplanation, setShowExplanation] = useState(false);
   const [bookmarkModalOpen, setBookmarkModalOpen] = useState(false);
-  const [characterFeedback, setCharacterFeedback] = useState(null);
 
   const questions = customQuestions || (topic ? (pyqData.questions[topic.id] || []) : []);
   const currentQuestion = questions[currentQuestionIndex];
@@ -264,11 +263,6 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
 
     let isCorrect = isAnswerCorrect(currentQuestion, { selectedOption });
 
-    if (practiceMode === 'practice') {
-      const fb = playVoiceFeedback(isCorrect);
-      setCharacterFeedback(fb);
-    }
-
     if (onProgressUpdate) {
       onProgressUpdate(currentQuestion.id, { status: isCorrect ? 'correct' : 'wrong', timeSpentSeconds: timeSpent });
     }
@@ -317,14 +311,6 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
   };
-
-  // Determine correct answer state
-  let isCorrect = false;
-  if (isNumerical) {
-    isCorrect = String(selectedOption).trim() === String(currentQuestion.correctAnswer).trim();
-  } else {
-    isCorrect = selectedOption === currentQuestion.correctOptionIndex;
-  }
 
   return (
     <div className={`fixed inset-0 z-[100] flex flex-col font-sans overflow-hidden ${isLight ? 'bg-[#f5f5f5]' : 'bg-[#0f172a]'}`}>
@@ -479,7 +465,6 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                 </div>
               ) : !isNumerical ? (
                 <>
-                  {/* Multi-correct text removed as requested */}
                   {optionsToRender.map((opt, idx) => {
                     const isSelected = isMultiCorrect ? (Array.isArray(selectedOption) && selectedOption.includes(idx)) : (selectedOption === idx || selectedOption === String(idx));
                     
@@ -758,9 +743,6 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
         onSave={handleSaveBookmarkGroups}
         onCreateGroup={addBookmarkGroup}
       />
-
-      {/* Character Toast Feedback */}
-      <CharacterToast feedback={characterFeedback} onClose={() => setCharacterFeedback(null)} />
     </div>
   );
 }

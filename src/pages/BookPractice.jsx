@@ -16,10 +16,8 @@ import RefreshCw from 'lucide-react/dist/esm/icons/refresh-cw';
 import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
 import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
 import { fetchBlackBookQuestions, fetchBlackBookProgress, saveBlackBookProgress, resetBlackBookProgress } from '../utils/blackBookApi';
-import { playVoiceFeedback } from '../utils/voiceFeedback';
 import MathRenderer from '../utils/MathRenderer';
 import TeacherSolution from '../components/TeacherSolution';
-import CharacterToast from '../components/CharacterToast';
 
 const OPTION_LABELS = ['A', 'B', 'C', 'D', 'E'];
 
@@ -222,9 +220,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
         selectedIdx: optIdx, isChecked: true, isCorrect: correct
       });
 
-      // Play voice feedback immediately
-      const fb = playVoiceFeedback(correct);
-      setCharacterFeedback(fb);
+      // Audio feedback removed as requested
 
       setTimeout(() => {
         if (scrollRef.current) {
@@ -286,9 +282,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
       selectedIdx: selectedIdx ?? -1, isChecked: true, isCorrect: correct
     });
 
-    // Play voice feedback based on whether answer is correct
-    const fb = playVoiceFeedback(correct);
-    setCharacterFeedback(fb);
+    // Audio feedback removed as requested
 
     setTimeout(() => {
       if (scrollRef.current) {
@@ -874,10 +868,6 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
 
         </div>
       </div>
-      
-      {/* Character Toast Feedback */}
-      <CharacterToast feedback={characterFeedback} onClose={() => setCharacterFeedback(null)} />
     </div>
   );
 }
-
