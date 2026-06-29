@@ -11,8 +11,7 @@ import Eye from 'lucide-react/dist/esm/icons/eye';
 import BookmarkGroupModal from './BookmarkGroupModal';
 import TeacherSolution from './TeacherSolution';
 import MathRenderer from '../utils/MathRenderer';
-import TeacherSolution from './TeacherSolution';
-import MathRenderer from '../utils/MathRenderer';
+
 // Helper to determine if an answer is correct
 const isAnswerCorrect = (question, savedAnswer) => {
   if (!question || !savedAnswer) return false;
