@@ -12,7 +12,7 @@ const AdminDashboard = React.lazy(() => import('./pages/AdminDashboard'));
 const NtaTestInterface = React.lazy(() => import('./pages/NtaTestInterface'));
 const TestSystem = React.lazy(() => import('./pages/TestSystem'));
 const TestSeriesPage = React.lazy(() => import('./pages/TestSeriesPage'));
-const UltimateTestSeriesPage = React.lazy(() => import('./pages/UltimateTestSeriesPage'));
+const PremiumUltimateTestSeries = React.lazy(() => import('./pages/PremiumUltimateTestSeries'));
 const TestSeriesExam = React.lazy(() => import('./pages/TestSeriesExam'));
 const TestSeriesResult = React.lazy(() => import('./pages/TestSeriesResult'));
 const BooksLibrary = React.lazy(() => import('./pages/BooksLibrary'));
@@ -417,7 +417,7 @@ export default function App() {
       case 'admin-dashboard': return <AdminDashboard user={user} courses={courses} setCourses={setCourses} setCustomLogo={setCustomLogo} syllabus={syllabus} setSyllabus={setSyllabus} toppers={toppers} setToppers={setToppers} homeData={homeData} setHomeData={setHomeData} booksData={booksData} setBooksData={setBooksData} testsData={testsData} setTestsData={setTestsData} />;
       case 'test-series': return <TestSeriesPage user={user} onStartTest={handleStartTestSeries} onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} testsData={testsData} />;
       case 'ultimate-test-series': return (
-        <UltimateTestSeriesPage 
+        <PremiumUltimateTestSeries 
           user={user} 
           onStartTest={handleStartTestSeries} 
           onViewResult={(tid) => {
@@ -432,6 +432,7 @@ export default function App() {
              }
           }}
           onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} 
+          isLight={isLight}
         />
       );
       case 'test-series-exam': return <TestSeriesExam testId={activeTestId} mode={activeTestMode} user={user} onSubmit={handleTestSubmit} onExit={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} />;

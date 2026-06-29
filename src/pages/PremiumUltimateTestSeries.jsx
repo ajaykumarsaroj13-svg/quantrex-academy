@@ -11,7 +11,7 @@ import Calendar from 'lucide-react/dist/esm/icons/calendar';
 import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
 import logoImg from '../assets/logo.png';
 
-const PremiumUltimateTestSeries = ({ user, onStartTest, onBack, isLight }) => {
+const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, isLight }) => {
   const [tests, setTests] = useState([]);
   const [loading, setLoading] = useState(true);
   
@@ -209,19 +209,42 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onBack, isLight }) => {
                                                     )}
                                                  </div>
                                               </div>
-                                              <div className="shrink-0">
+                                              <div className="shrink-0 flex items-center gap-2.5">
                                                  {test.isUpcoming ? (
                                                     <button disabled className={`w-full sm:w-auto px-6 py-2.5 rounded-xl text-sm font-bold ${isLight ? 'bg-gray-100 text-gray-400 border-gray-200' : 'bg-white/5 text-gray-500 border-white/5'} cursor-not-allowed border`}>
                                                        Locked
                                                     </button>
-                                                 ) : (
-                                                    <button 
-                                                       onClick={() => onStartTest(test.testId || test.id, 'exam', 'jee-main-ultimate-series-2027')}
-                                                       className="w-full sm:w-auto px-6 py-2.5 rounded-xl text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white shadow-[0_0_15px_rgba(37,99,235,0.2)] transition-all flex items-center justify-center gap-2"
-                                                    >
-                                                       {localStorage.getItem(`quantrex_exam_state_${test.testId || test.id}`) ? 'Resume Test' : 'Start Test'} <ChevronRight className="w-4 h-4" />
-                                                    </button>
-                                                 )}
+                                                 ) : (() => {
+                                                    const tid = test.testId || test.id;
+                                                    const isAttempted = localStorage.getItem(`quantrex_test_result_${tid}`);
+                                                    const isResumable = localStorage.getItem(`quantrex_exam_state_${tid}`);
+                                                    return (
+                                                      <>
+                                                        {isAttempted && (
+                                                          <button 
+                                                            onClick={() => onViewResult && onViewResult(tid)}
+                                                            className={`px-5 py-2.5 rounded-xl text-sm font-bold border transition-all flex items-center justify-center gap-2 ${
+                                                              isLight 
+                                                                ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-700' 
+                                                                : 'bg-emerald-500/10 border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-400'
+                                                            }`}
+                                                          >
+                                                            View Result
+                                                          </button>
+                                                        )}
+                                                        <button 
+                                                           onClick={() => onStartTest(tid, 'exam', 'ultimate-test-series')}
+                                                           className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 ${
+                                                             isAttempted 
+                                                               ? (isLight ? 'bg-gray-100 hover:bg-gray-200 text-gray-700' : 'bg-white/5 hover:bg-white/10 text-gray-300')
+                                                               : 'bg-blue-600 hover:bg-blue-50 text-white shadow-[0_0_15px_rgba(37,99,235,0.2)]'
+                                                           }`}
+                                                        >
+                                                           {isResumable ? 'Resume' : (isAttempted ? 'Retake' : 'Start Test')} <ChevronRight className="w-4 h-4" />
+                                                        </button>
+                                                      </>
+                                                    );
+                                                 })()}
                                               </div>
                                            </div>
                                         ))}
