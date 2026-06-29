@@ -123,8 +123,8 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onBack, isLight }) => {
               <span className="whitespace-nowrap">QUANTREX MOCK TESTS</span>
               <span className={`w-full border-t ${isLight ? 'border-gray-300' : 'border-gray-600/50'}`}></span>
             </div>
-            <SidebarItem label="Full Tests" active={activeCategory === 'ExamGOAL Mock Tests' && activeGroup === 'Full Tests'} onClick={() => { setActiveCategory('ExamGOAL Mock Tests'); setActiveGroup('Full Tests'); setExpandedSection(null); }} isLight={isLight} theme={theme} />
-            <SidebarItem label="Part Tests" active={activeCategory === 'ExamGOAL Mock Tests' && activeGroup === 'Part Tests'} onClick={() => { setActiveCategory('ExamGOAL Mock Tests'); setActiveGroup('Part Tests'); setExpandedSection(null); }} isLight={isLight} theme={theme} />
+            <SidebarItem label="Full Tests" active={activeCategory === 'Quantrex Academy Mock Tests' && activeGroup === 'Full Tests'} onClick={() => { setActiveCategory('Quantrex Academy Mock Tests'); setActiveGroup('Full Tests'); setExpandedSection(null); }} isLight={isLight} theme={theme} />
+            <SidebarItem label="Part Tests" active={activeCategory === 'Quantrex Academy Mock Tests' && activeGroup === 'Part Tests'} onClick={() => { setActiveCategory('Quantrex Academy Mock Tests'); setActiveGroup('Part Tests'); setExpandedSection(null); }} isLight={isLight} theme={theme} />
           </div>
         </div>
 
