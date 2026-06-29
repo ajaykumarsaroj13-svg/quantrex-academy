@@ -12,6 +12,7 @@ const AdminDashboard = React.lazy(() => import('./pages/AdminDashboard'));
 const NtaTestInterface = React.lazy(() => import('./pages/NtaTestInterface'));
 const TestSystem = React.lazy(() => import('./pages/TestSystem'));
 const TestSeriesPage = React.lazy(() => import('./pages/TestSeriesPage'));
+const UltimateTestSeriesPage = React.lazy(() => import('./pages/UltimateTestSeriesPage'));
 const TestSeriesExam = React.lazy(() => import('./pages/TestSeriesExam'));
 const TestSeriesResult = React.lazy(() => import('./pages/TestSeriesResult'));
 const BooksLibrary = React.lazy(() => import('./pages/BooksLibrary'));
@@ -415,7 +416,24 @@ export default function App() {
       case 'student-dashboard': return <StudentDashboard user={user} courses={courses} setActivePage={setActivePage} setExamTest={setExamTest} syllabus={syllabus} initialClass={initialClass} initialTab={initialTab} initialChapterTab={initialChapterTab} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} testsData={testsData} />;
       case 'admin-dashboard': return <AdminDashboard user={user} courses={courses} setCourses={setCourses} setCustomLogo={setCustomLogo} syllabus={syllabus} setSyllabus={setSyllabus} toppers={toppers} setToppers={setToppers} homeData={homeData} setHomeData={setHomeData} booksData={booksData} setBooksData={setBooksData} testsData={testsData} setTestsData={setTestsData} />;
       case 'test-series': return <TestSeriesPage user={user} onStartTest={handleStartTestSeries} onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} testsData={testsData} />;
-      case 'ultimate-test-series': return <TestSeriesPage user={user} mode="ultimate" onStartTest={handleStartTestSeries} onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} testsData={testsData} />;
+      case 'ultimate-test-series': return (
+        <UltimateTestSeriesPage 
+          user={user} 
+          onStartTest={handleStartTestSeries} 
+          onViewResult={(tid) => {
+             setActiveTestId(tid);
+             localStorage.setItem('quantrex_test_source', 'ultimate-test-series');
+             const res = localStorage.getItem(`quantrex_test_result_${tid}`);
+             if (res) {
+               setTestResult(JSON.parse(res));
+               setActivePage('test-series-result');
+             } else {
+               alert("Result details not found locally.");
+             }
+          }}
+          onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} 
+        />
+      );
       case 'test-series-exam': return <TestSeriesExam testId={activeTestId} mode={activeTestMode} user={user} onSubmit={handleTestSubmit} onExit={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} />;
       case 'test-series-result': return <TestSeriesResult result={testResult} user={user} onBack={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')} onRetake={() => { if (activeTestId) handleStartTestSeries(activeTestId, activeTestMode, localStorage.getItem('quantrex_test_source')); }} />;
       case 'exam-mode': return <TestSystem test={examTest} user={user} onBackToDashboard={() => setActivePage('student-dashboard')} />;
