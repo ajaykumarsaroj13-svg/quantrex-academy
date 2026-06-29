@@ -1,6 +1,52 @@
 import React, { useState, useEffect } from 'react';
 import { BarChart, BookOpen, Clock, PlayCircle, LogOut, CheckCircle, Lock, ShieldCheck, Trophy, Sparkles, Target, ArrowRight, BrainCircuit, FileText, Download, Flame, Send, Globe, ListOrdered, RotateCcw, X, Play } from 'lucide-react';
 import { loadDbFromBlob } from '../blob';
+import logoImg from '../assets/logo.png';
+
+const NtaLogo = ({ className = "w-4 h-4 mr-1.5" }) => (
+  <svg className={className} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="#ffffff" stroke="#cbd5e1" strokeWidth="2"/>
+    <path d="M15 38 C 30 24, 70 24, 85 38 L 85 48 C 70 34, 30 34, 15 48 Z" fill="#FF9933"/>
+    <path d="M15 48 C 30 34, 70 34, 85 48 L 85 58 C 70 44, 30 44, 15 58 Z" fill="#ffffff"/>
+    <path d="M15 58 C 30 44, 70 44, 85 58 L 85 68 C 70 54, 30 54, 15 68 Z" fill="#128807"/>
+    <circle cx="50" cy="53" r="5" stroke="#000088" strokeWidth="1"/>
+    <path d="M36 50 L 46 60 L 64 36" stroke="#16a34a" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+  </svg>
+);
+
+const IitLogo = ({ className = "w-4 h-4 mr-1.5" }) => (
+  <svg className={className} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="#0f172a" stroke="#d97706" strokeWidth="2"/>
+    <circle cx="50" cy="50" r="42" stroke="#d97706" strokeWidth="1" strokeDasharray="3 3"/>
+    <path d="M50 22 C45 32 41 38 41 50 C41 60 50 66 50 66 C50 66 59 60 59 50 C59 38 55 32 50 22 Z" fill="#f59e0b"/>
+    <path d="M50 32 C47 38 44 42 44 50 C44 57 50 61 50 61 C50 61 56 57 56 50 C56 42 53 38 50 32 Z" fill="#fef08a"/>
+    <path d="M28 64 C28 74 72 74 72 64" stroke="#d97706" strokeWidth="3" fill="none"/>
+    <path d="M38 68 L 32 78 L 68 78 L 62 68" fill="#d97706"/>
+    <line x1="30" y1="52" x2="36" y2="52" stroke="#d97706" strokeWidth="2"/>
+    <line x1="64" y1="52" x2="70" y2="52" stroke="#d97706" strokeWidth="2"/>
+  </svg>
+);
+
+const UpscLogo = ({ className = "w-4 h-4 mr-1.5" }) => (
+  <svg className={className} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="#1e293b" stroke="#eab308" strokeWidth="2"/>
+    <path d="M50 18 C46 18 43 22 43 28 C43 32 45 35 45 42 L 55 42 C 55 35 57 32 57 28 C57 22 54 18 50 18 Z" fill="#eab308"/>
+    <rect x="38" y="42" width="24" height="6" fill="#eab308" rx="1"/>
+    <circle cx="50" cy="45" r="2" fill="#1e293b"/>
+    <path d="M28 72 L 72 28 M 28 28 L 72 72" stroke="#eab308" strokeWidth="3" strokeLinecap="round"/>
+    <path d="M50 42 L 50 74 C45 74 42 70 42 66" stroke="#eab308" strokeWidth="2" fill="none"/>
+    <path d="M50 42 L 50 74 C55 74 58 70 58 66" stroke="#eab308" strokeWidth="2" fill="none"/>
+    <path d="M36 56 C 40 56, 44 50, 50 50 C 56 50, 60 56, 64 56" stroke="#eab308" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+  </svg>
+);
+
+const getExamLogo = (examId) => {
+  if (examId === 'jee-mains' || examId === 'JEE Main') return <NtaLogo className="w-3.5 h-3.5 mr-1" />;
+  if (examId === 'jee-advanced' || examId === 'JEE Advanced') return <IitLogo className="w-3.5 h-3.5 mr-1" />;
+  if (examId === 'nda' || examId === 'NDA') return <UpscLogo className="w-3.5 h-3.5 mr-1" />;
+  return null;
+};
+
 import VideoPlayer from '../components/VideoPlayer';
 import PdfViewer from '../components/PdfViewer';
 import ExamGoalPracticeInterface from '../components/ExamGoalPracticeInterface';
@@ -274,6 +320,29 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
           <div className="glass-panel p-8 rounded-2xl border border-white/5 min-h-[60vh] space-y-6">
             {activeTab === 'courses' && (
               <div className="space-y-6 font-mono text-xs">
+                {/* Coaching Header Banner */}
+                <div className="flex flex-col items-center justify-center text-center py-6 mb-6 border-b border-white/5">
+                  <div className={`relative h-16 w-16 rounded-2xl overflow-hidden border shadow-lg bg-gradient-to-br from-electric/20 to-blue-600/20 flex items-center justify-center p-1.5 mb-2 ${
+                    isLight ? 'border-blue-200' : 'border-electric/30 shadow-[0_0_20px_rgba(0,255,136,0.15)]'
+                  }`}>
+                    <img src={logoImg} alt="Quantrex Logo" className="h-full w-full object-contain" />
+                  </div>
+                  <div>
+                    <h2 className={`font-logo font-black text-2xl tracking-wider uppercase bg-gradient-to-r ${
+                      isLight
+                        ? 'from-blue-700 via-blue-500 to-amber-500'
+                        : 'from-white via-electric to-gold'
+                    } bg-clip-text text-transparent leading-none`}>
+                      Quantrex Academy
+                    </h2>
+                    <p className={`text-[9px] tracking-[0.2em] font-bold uppercase mt-1 font-logo ${
+                      isLight ? 'text-amber-600' : 'text-gold'
+                    }`}>
+                      Where Rankers Are Engineered
+                    </p>
+                  </div>
+                </div>
+
                 <div className="flex flex-col gap-4 mb-6">
                   {/* Class Selection */}
                   <div className="flex flex-wrap bg-cyberdark/50 backdrop-blur-xl p-1.5 border border-white/10 rounded-xl w-fit shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
@@ -303,12 +372,13 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                             setSelectedSyllabusSubject('');
                           }
                         }}
-                        className={`flex-1 min-w-[120px] py-2 px-4 text-xs font-bold uppercase rounded-lg transition-all duration-300 ${
+                        className={`flex items-center justify-center flex-1 min-w-[120px] py-2 px-4 text-xs font-bold uppercase rounded-lg transition-all duration-300 ${
                           selectedSyllabusClass === cls.id 
                             ? 'bg-gradient-to-r from-blue-600/30 to-cyan-500/30 text-cyan-300 border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.15)]' 
                             : 'text-gray-400 hover:text-gray-200 hover:bg-white/5 border border-transparent'
                         }`}
                       >
+                        {getExamLogo(cls.id)}
                         {cls.label}
                       </button>
                     ))}
@@ -876,25 +946,51 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
             {/* MOCK TESTS TAB */}
             {activeTab === 'tests' && (
               <div className="space-y-6">
+                {/* Coaching Header Banner */}
+                <div className="flex flex-col items-center justify-center text-center py-6 mb-6 border-b border-white/5">
+                  <div className={`relative h-16 w-16 rounded-2xl overflow-hidden border shadow-lg bg-gradient-to-br from-electric/20 to-blue-600/20 flex items-center justify-center p-1.5 mb-2 ${
+                    isLight ? 'border-blue-200' : 'border-electric/30 shadow-[0_0_20px_rgba(0,255,136,0.15)]'
+                  }`}>
+                    <img src={logoImg} alt="Quantrex Logo" className="h-full w-full object-contain" />
+                  </div>
+                  <div>
+                    <h2 className={`font-logo font-black text-2xl tracking-wider uppercase bg-gradient-to-r ${
+                      isLight
+                        ? 'from-blue-700 via-blue-500 to-amber-500'
+                        : 'from-white via-electric to-gold'
+                    } bg-clip-text text-transparent leading-none`}>
+                      Quantrex Academy
+                    </h2>
+                    <p className={`text-[9px] tracking-[0.2em] font-bold uppercase mt-1 font-logo ${
+                      isLight ? 'text-amber-600' : 'text-gold'
+                    }`}>
+                      Where Rankers Are Engineered
+                    </p>
+                  </div>
+                </div>
+
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">{testCategory === 'nda' ? 'NDA' : 'JEE'} Official Paper Portal</h3>
                   <div className="flex bg-obsidian/60 p-1 border border-white/5 rounded-lg">
                     <button
                       onClick={() => setTestCategory('jee-mains')}
-                      className={`px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'jee-mains' ? 'bg-electric text-obsidian shadow-[0_0_10px_rgba(0,240,255,0.3)]' : 'text-gray-400 hover:text-white'}`}
+                      className={`flex items-center px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'jee-mains' ? 'bg-electric text-obsidian shadow-[0_0_10px_rgba(0,240,255,0.3)]' : 'text-gray-400 hover:text-white'}`}
                     >
+                      {getExamLogo('jee-mains')}
                       JEE Main
                     </button>
                     <button
                       onClick={() => setTestCategory('jee-advanced')}
-                      className={`px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'jee-advanced' ? 'bg-gold text-obsidian shadow-[0_0_10px_rgba(255,215,0,0.3)]' : 'text-gray-400 hover:text-white'}`}
+                      className={`flex items-center px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'jee-advanced' ? 'bg-gold text-obsidian shadow-[0_0_10px_rgba(255,215,0,0.3)]' : 'text-gray-400 hover:text-white'}`}
                     >
+                      {getExamLogo('jee-advanced')}
                       JEE Advanced
                     </button>
                     <button
                       onClick={() => setTestCategory('nda')}
-                      className={`px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'nda' ? 'bg-green-500 text-obsidian shadow-[0_0_10px_rgba(34,197,94,0.3)]' : 'text-gray-400 hover:text-white'}`}
+                      className={`flex items-center px-4 py-1.5 text-xs font-bold uppercase rounded transition-all ${testCategory === 'nda' ? 'bg-green-500 text-obsidian shadow-[0_0_10px_rgba(34,197,94,0.3)]' : 'text-gray-400 hover:text-white'}`}
                     >
+                      {getExamLogo('nda')}
                       NDA
                     </button>
                   </div>
