@@ -803,3 +803,80 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ========================================================================= */
+/* SOLUTION PANEL VISIBILITY AND CONTRAST OVERRIDES (LIGHT & DARK THEMES)    */
+/* ========================================================================= */
+
+/* LIGHT MODE SOLUTION TEXT COLOR OVERRIDE */
+html.light .nta-solution-text,
+html.light .nta-solution-text *,
+html.light .premium-solution-wrapper .solution-body,
+html.light .premium-solution-wrapper .solution-body * {
+  color: #1e293b !important; /* Premium dark slate */
+}
+
+/* DARK MODE SOLUTION TEXT COLOR OVERRIDE */
+html:not(.light) .nta-solution-text,
+html:not(.light) .nta-solution-text *,
+html:not(.light) .premium-solution-wrapper .solution-body,
+html:not(.light) .premium-solution-wrapper .solution-body * {
+  color: #cbd5e1 !important; /* Premium light slate */
+}
+
+/* Ensure step badges text remains white in both modes */
+.nta-solution-text .step-badge,
+.premium-solution-wrapper .step-badge {
+  color: #ffffff !important;
+}
+
+/* Accent connector words */
+html.light .nta-solution-text .connector-word,
+html.light .premium-solution-wrapper .connector-word {
+  color: #6366f1 !important; /* Indigo accent */
+}
+html:not(.light) .nta-solution-text .connector-word,
+html:not(.light) .premium-solution-wrapper .connector-word {
+  color: #a5b4fc !important; /* Light indigo accent */
+}
+
+/* MathJax / Formulas: Ensure vibrant distinct colors in both modes */
+html.light .nta-solution-text .MathJax,
+html.light .nta-solution-text mjx-container,
+html.light .nta-solution-text .MathJax *,
+html.light .nta-solution-text mjx-container *,
+html.light .premium-solution-wrapper .solution-body .MathJax,
+html.light .premium-solution-wrapper .solution-body mjx-container,
+html.light .premium-solution-wrapper .solution-body .MathJax *,
+html.light .premium-solution-wrapper .solution-body mjx-container * {
+  color: #2563eb !important; /* Rich blue for formulas in light mode */
+  fill: #2563eb !important;
+}
+
+html:not(.light) .nta-solution-text .MathJax,
+html:not(.light) .nta-solution-text mjx-container,
+html:not(.light) .nta-solution-text .MathJax *,
+html:not(.light) .nta-solution-text mjx-container *,
+html:not(.light) .premium-solution-wrapper .solution-body .MathJax,
+html:not(.light) .premium-solution-wrapper .solution-body mjx-container,
+html:not(.light) .premium-solution-wrapper .solution-body .MathJax *,
+html:not(.light) .premium-solution-wrapper .solution-body mjx-container * {
+  color: #38bdf8 !important; /* Bright sky blue for formulas in dark mode */
+  fill: #38bdf8 !important;
+}
+
+/* Strong / bold items */
+html.light .nta-solution-text strong,
+html.light .nta-solution-text b,
+html.light .premium-solution-wrapper .solution-body strong,
+html.light .premium-solution-wrapper .solution-body b {
+  color: #d97706 !important; /* Amber accent */
+  background-color: rgba(217, 119, 6, 0.05) !important;
+}
+html:not(.light) .nta-solution-text strong,
+html:not(.light) .nta-solution-text b,
+html:not(.light) .premium-solution-wrapper .solution-body strong,
+html:not(.light) .premium-solution-wrapper .solution-body b {
+  color: #fbbf24 !important; /* Bright amber accent */
+  background-color: rgba(251, 191, 36, 0.1) !important;
+}
+

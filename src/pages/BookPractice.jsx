@@ -737,7 +737,7 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
                       <Eye className="w-4 h-4" /> View Solution
                     </button>
                   ) : (
-                      <TeacherSolution html={question.solution} />
+                      <TeacherSolution html={question.solution} isLight={isLight} />
                   )}
                 </div>
               )}

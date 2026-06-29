@@ -249,14 +249,14 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, e
           handleStartPractice(groupQs, 'practice', true, idx);
         }
       }}
-      className={`bg-[#1e1e24] border border-[#2d2d35] rounded-xl p-5 mb-4 ${groupQs ? 'cursor-pointer hover:border-blue-500/50 transition-colors' : ''}`}
+      className={`rounded-xl p-5 mb-4 border transition-all ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-[#1e1e24] border-[#2d2d35]'} ${groupQs ? (isLight ? 'cursor-pointer hover:border-blue-500 hover:shadow-md' : 'cursor-pointer hover:border-blue-500/50') : ''}`}
     >
       <div className="flex justify-between items-start mb-4">
-        <div className="flex items-center gap-3">
-          <span className="w-8 h-8 rounded-full bg-[#111115] border border-[#2d2d35] flex items-center justify-center text-sm font-bold text-gray-400">
+        <div className="flex items-center gap-3 flex-wrap">
+          <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold border ${isLight ? 'bg-slate-100 border-slate-200 text-slate-700' : 'bg-[#111115] border-[#2d2d35] text-gray-400'}`}>
             {idx + 1}
           </span>
-          <span className="px-3 py-1 bg-[#2d2d35] text-gray-300 text-xs font-bold rounded">{q.shift || q.year || q.title}</span>
+          <span className={`px-3 py-1 text-xs font-bold rounded ${isLight ? 'bg-slate-100 text-slate-600' : 'bg-[#2d2d35] text-gray-300'}`}>{q.shift || q.year || q.title}</span>
           <span className="px-3 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-bold rounded capitalize">{q.difficulty || 'Medium'}</span>
           {(() => {
             const t = q.type || q.questionType || 'SCQ';
@@ -278,34 +278,34 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, e
           {progress[q.id]?.status === 'correct' && <span className="text-xs text-green-400 bg-green-500/10 px-2 py-1 rounded">Correct</span>}
           {progress[q.id]?.status === 'wrong' && <span className="text-xs text-red-400 bg-red-500/10 px-2 py-1 rounded">Wrong</span>}
         </div>
-        <button onClick={(e) => { e.stopPropagation(); handleBookmarkClick(q.id); }} className={`${(progress[q.id]?.bookmarkGroups && progress[q.id]?.bookmarkGroups.length > 0) ? 'text-yellow-400' : 'text-gray-700 hover:text-white'}`}>
+        <button onClick={(e) => { e.stopPropagation(); handleBookmarkClick(q.id); }} className={`${(progress[q.id]?.bookmarkGroups && progress[q.id]?.bookmarkGroups.length > 0) ? 'text-yellow-400' : (isLight ? 'text-slate-400 hover:text-slate-600' : 'text-gray-700 hover:text-white')}`}>
           <Bookmark className="w-5 h-5" fill={(progress[q.id]?.bookmarkGroups && progress[q.id]?.bookmarkGroups.length > 0) ? 'currentColor' : 'none'} />
         </button>
       </div>
-      <div className="text-gray-400 text-sm mb-4 leading-relaxed line-clamp-3">{stripLatex(q.question).substring(0, 220)}{stripLatex(q.question).length > 220 ? '...' : ''}</div>
+      <div className={`text-sm mb-4 leading-relaxed line-clamp-3 ${isLight ? 'text-slate-600' : 'text-gray-400'}`}>{stripLatex(q.question).substring(0, 220)}{stripLatex(q.question).length > 220 ? '...' : ''}</div>
       {!isBookmarkTab && (
         <div className="flex gap-3">
-          <button onClick={(e) => { e.stopPropagation(); handleStartPractice([q], 'practice', true); }} className="px-4 py-2 bg-blue-600 text-white text-xs font-bold rounded-lg hover:bg-blue-500">Reattempt / View</button>
+          <button onClick={(e) => { e.stopPropagation(); handleStartPractice([q], 'practice', true); }} className="px-4 py-2 bg-blue-600 text-white text-xs font-bold rounded-lg hover:bg-blue-500 shadow-sm transition-colors">Reattempt / View</button>
         </div>
       )}
     </div>
   );
 
   return (
-    <div className="w-full flex flex-col space-y-6 bg-[#111115] min-h-screen p-4 md:p-6 rounded-2xl text-sans">
+    <div className={`w-full flex flex-col space-y-6 min-h-screen p-4 md:p-6 rounded-2xl text-sans ${isLight ? 'bg-slate-50 text-slate-900' : 'bg-[#111115] text-white'}`}>
 
         
       {/* Header with Back Button */}
       <div className="flex items-center justify-between mb-4 flex-wrap gap-4">
         <div className="flex items-center gap-4">
-          <button onClick={onBack} className={`p-2 rounded-xl transition-colors ${isLight ? 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm' : 'bg-black/20 text-gray-400 hover:text-white hover:bg-black/40'}`}>
+          <button onClick={onBack} className={`p-2 rounded-xl transition-colors ${isLight ? 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm border border-gray-200' : 'bg-black/20 text-gray-400 hover:text-white hover:bg-black/40'}`}>
             <ArrowLeft className="w-5 h-5" />
           </button>
-          <h2 className="text-[28px] sm:text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-200 to-purple-300 drop-shadow-sm pb-1">{chapterName || 'Chapter PYQs'}</h2>
+          <h2 className={`text-[28px] sm:text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r ${isLight ? 'from-blue-600 via-indigo-600 to-purple-600' : 'from-blue-300 via-indigo-200 to-purple-300'} drop-shadow-sm pb-1`}>{chapterName || 'Chapter PYQs'}</h2>
         </div>
         <button 
           onClick={handleRestart}
-          className="flex items-center gap-2 bg-red-500/10 hover:bg-red-500/20 text-red-400 px-4 py-2 rounded-xl transition-colors text-sm font-bold border border-red-500/20"
+          className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-colors text-sm font-bold border ${isLight ? 'bg-red-50 hover:bg-red-100 text-red-600 border-red-200' : 'bg-red-500/10 hover:bg-red-500/20 text-red-400 border-red-500/20'}`}
         >
           <RefreshCw className="w-4 h-4" /> Restart
         </button>
@@ -313,26 +313,18 @@ export default function ChapterPYQDashboard({ chapterId, chapterName, pyqData, e
 
       {/* EXAMGOAL STYLED TOP STATS BAR */}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-        <div className="bg-gradient-to-br from-[#1e1e24] to-[#25252b] p-4 rounded-xl border border-white/5 shadow-lg relative overflow-hidden">
-          <span className="text-xs text-gray-700 font-bold uppercase tracking-wider block mb-1">Total Qs</span>
-          <span className="text-2xl font-black text-white">{allQuestions.length}</span>
-        </div>
-        <div className="bg-gradient-to-br from-[#1e1e24] to-[#25252b] p-4 rounded-xl border border-white/5 shadow-lg relative overflow-hidden border-l-4 border-l-green-500">
-          <span className="text-xs text-gray-700 font-bold uppercase tracking-wider block mb-1">Correct (+4)</span>
-          <span className="text-2xl font-black text-green-400">{stats.correct}</span>
-        </div>
-        <div className="bg-gradient-to-br from-[#1e1e24] to-[#25252b] p-4 rounded-xl border border-white/5 shadow-lg relative overflow-hidden border-l-4 border-l-red-500">
-          <span className="text-xs text-gray-700 font-bold uppercase tracking-wider block mb-1">Incorrect (-1)</span>
-          <span className="text-2xl font-black text-red-400">{stats.wrong}</span>
-        </div>
-        <div className="bg-gradient-to-br from-[#1e1e24] to-[#25252b] p-4 rounded-xl border border-white/5 shadow-lg relative overflow-hidden border-l-4 border-l-blue-500">
-          <span className="text-xs text-gray-700 font-bold uppercase tracking-wider block mb-1">Accuracy</span>
-          <span className="text-2xl font-black text-blue-400">{stats.accuracy}%</span>
-        </div>
-        <div className="bg-gradient-to-br from-[#1e1e24] to-[#25252b] p-4 rounded-xl border border-white/5 shadow-lg relative overflow-hidden border-l-4 border-l-purple-500">
-          <span className="text-xs text-gray-700 font-bold uppercase tracking-wider block mb-1">Time Spent</span>
-          <span className="text-2xl font-black text-purple-400">{formatTime(stats.timeSpent)}</span>
-        </div>
+        {[
+          { label: 'Total Qs', val: allQuestions.length, border: 'border-white/5', valClass: isLight ? 'text-slate-800' : 'text-white' },
+          { label: 'Correct (+4)', val: stats.correct, border: 'border-l-green-500 border-l-4 border-t-white/5 border-r-white/5 border-b-white/5', valClass: 'text-green-500' },
+          { label: 'Incorrect (-1)', val: stats.wrong, border: 'border-l-red-500 border-l-4 border-t-white/5 border-r-white/5 border-b-white/5', valClass: 'text-red-500' },
+          { label: 'Accuracy', val: `${stats.accuracy}%`, border: 'border-l-blue-500 border-l-4 border-t-white/5 border-r-white/5 border-b-white/5', valClass: 'text-blue-500' },
+          { label: 'Time Spent', val: formatTime(stats.timeSpent), border: 'border-l-purple-500 border-l-4 border-t-white/5 border-r-white/5 border-b-white/5', valClass: 'text-purple-500' }
+        ].map((card, idx) => (
+          <div key={idx} className={`p-4 rounded-xl shadow-lg relative overflow-hidden border ${isLight ? 'bg-white border-slate-200' : 'bg-gradient-to-br from-[#1e1e24] to-[#25252b] ' + card.border}`}>
+            <span className={`text-xs font-bold uppercase tracking-wider block mb-1 ${isLight ? 'text-slate-400' : 'text-gray-500'}`}>{card.label}</span>
+            <span className={`text-2xl font-black ${card.valClass}`}>{card.val}</span>
+          </div>
+        ))}
       </div>
 
       {/* EXAMGOAL PILL TABS */}

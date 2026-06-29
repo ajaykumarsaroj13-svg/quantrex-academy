@@ -75,7 +75,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
     { role: 'ai', text: 'Hello! I am your Quantrex AI Math Mentor. Ask me any IIT-JEE Mathematics equation or problem from Calculus, Geometry, or Algebra.' }
   ]);
   const [aiLoading, setAiLoading] = useState(false);
-  const [theme, setTheme] = useState('dark');
+  const theme = isLight ? 'light' : 'dark';
 
   useEffect(() => {
     if (initialClass) {
@@ -199,12 +199,12 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
       )}
 
       {examGoalOverviewConfig && activePyqData && !isPyqLoading && (
-        <div className="fixed inset-0 z-50 bg-[#000000] overflow-y-auto">
+        <div className={`fixed inset-0 z-50 overflow-y-auto ${isLight ? 'bg-slate-100' : 'bg-[#000000]'}`}>
             <ChapterPYQDashboard 
               chapterId={examGoalOverviewConfig.id}
               chapterName={examGoalOverviewConfig.title}
               pyqData={activePyqData} 
-              isLight={false}
+              isLight={isLight}
               exam={selectedSyllabusClass}
               initialTab={examGoalOverviewConfig.startTab}
               onBack={() => {
@@ -344,8 +344,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-2">
-                  <div className="md:col-span-1 space-y-3 border-r border-white/5 pr-4 max-h-[70vh] overflow-y-auto custom-scrollbar">
-                    <span className="text-[10px] text-cyan-400/80 uppercase font-black tracking-widest block mb-4 border-b border-white/10 pb-2">Chapters List</span>
+                  <div className={`md:col-span-1 space-y-3 pr-4 max-h-[70vh] overflow-y-auto custom-scrollbar border-r ${isLight ? 'border-slate-200' : 'border-white/5'}`}>
+                    <span className={`text-[10px] uppercase font-black tracking-widest block mb-4 border-b pb-2 ${isLight ? 'text-blue-600 border-slate-200' : 'text-cyan-400/80 border-white/10'}`}>Chapters List</span>
                     {(() => {
                         const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
                         return syllabus[actualClassKey]?.subjects?.[selectedSyllabusSubject]?.chapters?.map((ch, index) => {
@@ -447,8 +447,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                               setExamGoalOverviewConfig({ id: ch.id, title: ch.title, startTab: 'topic' });
                             }} className={`relative w-full p-3.5 pl-4 rounded-2xl text-[13px] text-left font-bold transition-all duration-300 flex items-center gap-3.5 overflow-hidden group border shadow-sm hover:-translate-y-0.5 ${
                                 isActive 
-                                  ? `bg-[#13162b] text-white border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.5)]` 
-                                  : `bg-cyberdark/40 text-gray-300 border-white/5 hover:bg-[#1a1f3c] hover:border-white/10 hover:shadow-lg`
+                                  ? (isLight ? 'bg-blue-600 text-white border-transparent shadow-[0_4px_15px_rgba(37,99,235,0.25)]' : 'bg-[#13162b] text-white border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.5)]') 
+                                  : (isLight ? 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:border-slate-300' : 'bg-cyberdark/40 text-gray-300 border-white/5 hover:bg-[#1a1f3c] hover:border-white/10 hover:shadow-lg')
                               }`}
                             >
                               {/* Active state animated background glow */}
@@ -463,7 +463,9 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                               <span className={`flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-[13px] font-black font-mono transition-all duration-300 shadow-inner ${
                                 isActive 
                                   ? `bg-gradient-to-br ${colorTheme} text-white shadow-md` 
-                                  : `bg-black/50 text-gray-400 border border-white/5 group-hover:text-white group-hover:bg-gradient-to-br group-hover:${colorTheme} group-hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]`
+                                  : (isLight 
+                                      ? 'bg-slate-100 text-slate-500 border border-slate-200 group-hover:text-white group-hover:bg-gradient-to-br group-hover:' + colorTheme + ' group-hover:shadow-[0_0_10px_rgba(37,99,235,0.2)]'
+                                      : 'bg-black/50 text-gray-400 border border-white/5 group-hover:text-white group-hover:bg-gradient-to-br group-hover:' + colorTheme + ' group-hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]')
                               }`}>
                                 {icon}
                               </span>
@@ -491,21 +493,25 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                             <div className="space-y-6 w-full animate-fade-in">
                               <div className="flex items-center gap-3 mb-2">
                                 <div className="w-1.5 h-8 bg-gradient-to-b from-cyan-400 to-blue-600 rounded-full shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
-                                <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 font-black text-2xl uppercase tracking-widest drop-shadow-sm">
+                                <h4 className={`font-black text-2xl uppercase tracking-widest drop-shadow-sm ${isLight ? 'text-slate-800' : 'text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400'}`}>
                                   {chapter.title}
                                 </h4>
                               </div>
 
                               {/* Topics covered */}
                               {chapter.topics && chapter.topics.length > 0 && (
-                                <div className="p-5 bg-gradient-to-br from-[#1F2833]/80 to-[#0B0C10]/80 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl space-y-3 mb-6">
-                                  <span className="text-[10px] text-cyan-400/80 uppercase font-black tracking-widest flex items-center gap-2">
+                                <div className={`p-5 rounded-2xl shadow-xl space-y-3 mb-6 border ${isLight ? 'bg-white border-slate-200' : 'bg-gradient-to-br from-[#1F2833]/80 to-[#0B0C10]/80 backdrop-blur-md border-white/10'}`}>
+                                  <span className={`text-[10px] uppercase font-black tracking-widest flex items-center gap-2 ${isLight ? 'text-blue-600' : 'text-cyan-400/80'}`}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
                                     Topics Covered In This Chapter
                                   </span>
                                   <div className="flex flex-wrap gap-2.5">
                                     {chapter.topics.map(t => (
-                                      <span key={t.id} className="text-[11px] font-semibold text-gray-200 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10 hover:border-cyan-500/50 hover:bg-cyan-500/10 hover:text-cyan-300 transition-all shadow-sm cursor-default">
+                                      <span key={t.id} className={`text-[11px] font-semibold px-3 py-1.5 rounded-lg border transition-all shadow-sm cursor-default ${
+                                        isLight 
+                                          ? 'text-slate-600 bg-slate-50 border-slate-200 hover:border-blue-500/50 hover:bg-blue-50 hover:text-blue-600' 
+                                          : 'text-gray-200 bg-white/5 border-white/10 hover:border-cyan-500/50 hover:bg-cyan-500/10 hover:text-cyan-300'
+                                      }`}>
                                         {t.title}
                                       </span>
                                     ))}
@@ -514,7 +520,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                               )}
 
                               {/* Premium Sub-tab selection */}
-                              <div className="flex bg-cyberdark/50 backdrop-blur-xl p-1.5 border border-white/10 rounded-xl justify-between gap-2 overflow-x-auto shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+                              <div className={`flex p-1.5 border rounded-xl justify-between gap-2 overflow-x-auto ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-cyberdark/50 border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.5)]'}`}>
                                 {[
                                   { id: 'videos', label: 'Lectures', icon: '🎥' },
                                   { id: 'pdfs', label: 'Notes/DPPs', icon: '📄' },
@@ -527,10 +533,14 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                     <button
                                       key={subTab.id}
                                       onClick={() => setChapterTab(subTab.id)}
-                                      className={`relative flex-1 flex flex-col sm:flex-row items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg transition-all duration-300 uppercase whitespace-nowrap overflow-hidden group ${
+                                      className={`relative flex-1 flex flex-col sm:flex-row items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg transition-all duration-300 uppercase whitespace-nowrap overflow-hidden group border ${
                                         isActive 
-                                          ? 'bg-gradient-to-r from-blue-600/20 to-cyan-500/20 border border-cyan-400/30 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.15)]' 
-                                          : 'hover:bg-white/5 border border-transparent text-gray-400 hover:text-gray-200'
+                                          ? (isLight 
+                                              ? 'bg-blue-50 border-blue-200 text-blue-600 shadow-[0_4px_12px_rgba(37,99,235,0.08)] font-bold' 
+                                              : 'bg-gradient-to-r from-blue-600/20 to-cyan-500/20 border-cyan-400/30 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.15)] font-bold') 
+                                          : (isLight 
+                                              ? 'hover:bg-slate-50 border-transparent text-slate-500 hover:text-slate-700' 
+                                              : 'hover:bg-white/5 border-transparent text-gray-400 hover:text-gray-200')
                                       }`}
                                     >
                                       {isActive && (
@@ -546,7 +556,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                               </div>
 
                               {/* Premium Tab Contents Panel */}
-                              <div className="relative p-6 bg-gradient-to-b from-[#1F2833]/40 to-[#0B0C10]/40 backdrop-blur-md border border-white/10 rounded-2xl min-h-[35vh] shadow-[0_8px_32px_rgba(0,0,0,0.4)] overflow-hidden">
+                              <div className={`relative p-6 border rounded-2xl min-h-[35vh] overflow-hidden ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-gradient-to-b from-[#1F2833]/40 to-[#0B0C10]/40 backdrop-blur-md border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]'}`}>
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[120px] bg-cyan-500/5 blur-[80px] pointer-events-none rounded-full" />
                                 
                                 {/* 1. Lectures */}
@@ -558,14 +568,14 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                       chapter.videos.map(v => {
                                         const unlocked = isResourceUnlocked(v);
                                         return (
-                                          <div key={v.id} className="flex justify-between items-center p-3 bg-cyberdark/60 border border-white/5 rounded-lg">
+                                          <div key={v.id} className={`flex justify-between items-center p-3 rounded-lg border ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-cyberdark/60 border-white/5'}`}>
                                             <div>
                                               <div className="flex items-center gap-1.5">
-                                                <h5 className="text-white font-semibold text-xs">{v.title}</h5>
+                                                <h5 className={`font-semibold text-xs ${isLight ? 'text-slate-800' : 'text-white'}`}>{v.title}</h5>
                                                 {v.isFree && <span className="text-[8px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-1.5 py-0.2 rounded font-bold">DEMO</span>}
                                                 {!unlocked && <span className="text-[8px] bg-red-500/10 text-red-400 border border-red-500/20 px-1.5 py-0.2 rounded font-bold">LOCKED</span>}
                                               </div>
-                                              <span className="text-[9px] text-gray-500 block mt-0.5">Duration: {v.duration} {v.downloadBlocked && '• 🔒 Secured'}</span>
+                                              <span className={`text-[9px] block mt-0.5 ${isLight ? 'text-slate-400' : 'text-gray-500'}`}>Duration: {v.duration} {v.downloadBlocked && '• 🔒 Secured'}</span>
                                             </div>
                                             <button
                                               onClick={() => {
@@ -602,14 +612,14 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                         const unlocked = isResourceUnlocked(p);
                                         return (
                                           <div key={p.id} className="space-y-2">
-                                            <div className="flex justify-between items-center p-3 bg-cyberdark/60 border border-white/5 rounded-lg">
+                                            <div className={`flex justify-between items-center p-3 rounded-lg border ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-cyberdark/60 border-white/5'}`}>
                                               <div>
                                                 <div className="flex items-center gap-1.5">
-                                                  <h5 className="text-white font-semibold text-xs">{p.title}</h5>
+                                                  <h5 className={`font-semibold text-xs ${isLight ? 'text-slate-800' : 'text-white'}`}>{p.title}</h5>
                                                   {p.isFree && <span className="text-[8px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-1.5 py-0.2 rounded font-bold">FREE</span>}
                                                   {!unlocked && <span className="text-[8px] bg-red-500/10 text-red-400 border border-red-500/20 px-1.5 py-0.2 rounded font-bold">LOCKED</span>}
                                                 </div>
-                                                <span className="text-[9px] text-gray-500 block mt-0.5">Size: {p.size || 'Unknown'}</span>
+                                                <span className={`text-[9px] block mt-0.5 ${isLight ? 'text-slate-400' : 'text-gray-500'}`}>Size: {p.size || 'Unknown'}</span>
                                               </div>
                                               <button
                                                 onClick={() => {
@@ -641,15 +651,15 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                     ) : (
                                       chapter.formulas.map(f => {
                                          return (
-                                           <div key={f.id} className="p-4 bg-cyberdark/40 border border-white/5 rounded-xl space-y-2">
-                                             <h5 className="text-gold font-bold text-xs border-b border-white/5 pb-1 flex items-center justify-between gap-1.5">
+                                           <div key={f.id} className={`p-4 rounded-xl space-y-2 border ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-cyberdark/40 border-white/5'}`}>
+                                             <h5 className={`font-bold text-xs border-b pb-1 flex items-center justify-between gap-1.5 ${isLight ? 'text-blue-600 border-slate-200' : 'text-gold border-white/5'}`}>
                                                <span className="flex items-center gap-1.5">
-                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 fill-current text-gold"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> {f.title}
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`h-4 w-4 fill-current ${isLight ? 'text-blue-600' : 'text-gold'}`}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> {f.title}
                                                </span>
                                                {f.url && (
                                                  <button
                                                    onClick={() => setSelectedPdf({ id: `formula-${f.id}`, url: f.url, title: f.title })}
-                                                   className="px-2.5 py-1 text-[9px] font-bold uppercase rounded-lg flex items-center gap-1 bg-electric/10 text-electric border border-electric/20 hover:bg-electric/20"
+                                                   className={`px-2.5 py-1 text-[9px] font-bold uppercase rounded-lg flex items-center gap-1 ${isLight ? 'bg-blue-50 text-blue-600 border border-blue-200 hover:bg-blue-100' : 'bg-electric/10 text-electric border border-electric/20 hover:bg-electric/20'}`}
                                                  >
                                                    📄 View File
                                                  </button>
@@ -708,19 +718,19 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                             .finally(() => setIsPyqLoading(false));
                                           setExamGoalOverviewConfig({ id: chapter.id, title: chapter.title, startTab: 'topic' });
                                         }}
-                                         className="bg-white border-l-4 border-electric rounded-lg p-4 flex items-center justify-between cursor-pointer hover:shadow-lg transition-all shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+                                         className={`border-l-4 border-electric rounded-lg p-4 flex items-center justify-between cursor-pointer hover:shadow-lg transition-all border ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-[#1e1e24] border-white/5 shadow-md'}`}
                                        >
                                          <div className="flex items-center gap-4">
                                            <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-blue-600"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
                                            </div>
                                            <div>
-                                             <h4 className="text-gray-800 font-bold text-lg">{chapter.title || 'Chapter Questions'}</h4>
-                                             <p className="text-gray-500 text-sm font-medium">Previous Year Questions</p>
+                                             <h4 className={`font-bold text-lg ${isLight ? 'text-slate-800' : 'text-white'}`}>{chapter.title || 'Chapter Questions'}</h4>
+                                             <p className={`text-sm font-medium ${isLight ? 'text-slate-400' : 'text-gray-400'}`}>Previous Year Questions</p>
                                            </div>
                                          </div>
                                          <div className="flex items-center gap-3">
-                                           <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-md text-xs font-bold">{qCount} Questions</span>
+                                           <span className={`px-3 py-1 rounded-md text-xs font-bold ${isLight ? 'bg-slate-100 text-slate-600' : 'bg-white/5 text-gray-300'}`}>{qCount} Questions</span>
                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gray-400"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                                          </div>
                                        </div>
@@ -752,15 +762,15 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                                 .finally(() => setIsPyqLoading(false));
                                               setExamGoalOverviewConfig({ id: chapter.id, title: chapter.title, startTab: 'bookmarks' });
                                             }}
-                                           className="bg-white border-l-4 border-yellow-400 rounded-lg p-4 flex items-center justify-between cursor-pointer hover:shadow-lg transition-all shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+                                           className={`border-l-4 border-yellow-400 rounded-lg p-4 flex items-center justify-between cursor-pointer hover:shadow-lg transition-all border ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-[#1e1e24] border-white/5 shadow-md'}`}
                                          >
                                            <div className="flex items-center gap-4">
                                              <div className="w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center">
                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-yellow-500"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
                                              </div>
                                              <div>
-                                               <h4 className="text-gray-800 font-bold text-lg">Bookmarks</h4>
-                                               <p className="text-gray-500 text-sm font-medium">Saved Questions</p>
+                                               <h4 className={`font-bold text-lg ${isLight ? 'text-slate-800' : 'text-white'}`}>Bookmarks</h4>
+                                               <p className={`text-sm font-medium ${isLight ? 'text-slate-400' : 'text-gray-400'}`}>Saved Questions</p>
                                              </div>
                                            </div>
                                            <div className="flex items-center gap-3">
@@ -782,10 +792,10 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                              </span>
                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gray-400"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                                            </div>
-                                         </div>
-                                    </div>
-                                  );
-                                })()}
+                                          </div>
+                                     </div>
+                                   );
+                                 })()}
 
                                 {/* 5. Mock Tests */}
                                 {chapterTab === 'mockTests' && (
@@ -794,10 +804,10 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                       <p className="text-gray-500 italic py-6 text-center">No mock exams uploaded yet.</p>
                                     ) : (
                                       chapter.mockTests.map(t => (
-                                        <div key={t.id} className="p-4 bg-cyberdark/60 border border-white/5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                        <div key={t.id} className={`p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4 border ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-cyberdark/60 border-white/5'}`}>
                                           <div className="space-y-1">
-                                            <h5 className="text-white font-bold text-xs">{t.title}</h5>
-                                            <span className="text-[9px] text-gray-500 block">
+                                            <h5 className={`font-bold text-xs ${isLight ? 'text-slate-800' : 'text-white'}`}>{t.title}</h5>
+                                            <span className={`text-[9px] block ${isLight ? 'text-slate-400' : 'text-gray-500'}`}>
                                               Duration: {t.durationMinutes} minutes • Type: {t.type === 'link' ? 'AI Quiz Embed Link' : 'Quantrex JEE Pattern'}
                                             </span>
                                           </div>
@@ -828,11 +838,11 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                           );
                         })()
                       ) : (
-                        <div className="flex flex-col items-center justify-center p-12 bg-obsidian/30 border border-white/5 rounded-2xl min-h-[40vh] text-center space-y-3">
-                          <div className="h-12 w-12 bg-white/5 rounded-full flex items-center justify-center text-gray-500">
+                        <div className={`flex flex-col items-center justify-center p-12 rounded-2xl min-h-[40vh] text-center space-y-3 border ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-obsidian/30 border-white/5'}`}>
+                          <div className={`h-12 w-12 rounded-full flex items-center justify-center ${isLight ? 'bg-slate-100 text-slate-400' : 'bg-white/5 text-gray-500'}`}>
                             <BookOpen className="h-5 w-5" />
                           </div>
-                          <p className="text-xs text-gray-500 font-mono">Select a chapter from the left menu to view contents.</p>
+                          <p className={`text-xs font-mono ${isLight ? 'text-slate-400' : 'text-gray-500'}`}>Select a chapter from the left menu to view contents.</p>
                         </div>
                       )}
                     </div>
