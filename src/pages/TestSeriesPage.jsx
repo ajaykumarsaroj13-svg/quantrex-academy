@@ -10,47 +10,14 @@ import Folder from 'lucide-react/dist/esm/icons/folder';
 import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
 import logoImg from '../assets/logo.png';
 
-const NtaLogo = ({ className = "w-4 h-4 mr-1.5" }) => (
-  <svg className={className} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="48" fill="#ffffff" stroke="#cbd5e1" strokeWidth="2"/>
-    <path d="M15 38 C 30 24, 70 24, 85 38 L 85 48 C 70 34, 30 34, 15 48 Z" fill="#FF9933"/>
-    <path d="M15 48 C 30 34, 70 34, 85 48 L 85 58 C 70 44, 30 44, 15 58 Z" fill="#ffffff"/>
-    <path d="M15 58 C 30 44, 70 44, 85 58 L 85 68 C 70 54, 30 54, 15 68 Z" fill="#128807"/>
-    <circle cx="50" cy="53" r="5" stroke="#000088" strokeWidth="1"/>
-    <path d="M36 50 L 46 60 L 64 36" stroke="#16a34a" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-  </svg>
-);
+import logoMainsImg from '../assets/logo_mains.png';
+import logoAdvancedImg from '../assets/logo_advanced.png';
+import logoNdaImg from '../assets/logo_nda.png';
 
-const IitLogo = ({ className = "w-4 h-4 mr-1.5" }) => (
-  <svg className={className} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="48" fill="#0f172a" stroke="#d97706" strokeWidth="2"/>
-    <circle cx="50" cy="50" r="42" stroke="#d97706" strokeWidth="1" strokeDasharray="3 3"/>
-    <path d="M50 22 C45 32 41 38 41 50 C41 60 50 66 50 66 C50 66 59 60 59 50 C59 38 55 32 50 22 Z" fill="#f59e0b"/>
-    <path d="M50 32 C47 38 44 42 44 50 C44 57 50 61 50 61 C50 61 56 57 56 50 C56 42 53 38 50 32 Z" fill="#fef08a"/>
-    <path d="M28 64 C28 74 72 74 72 64" stroke="#d97706" strokeWidth="3" fill="none"/>
-    <path d="M38 68 L 32 78 L 68 78 L 62 68" fill="#d97706"/>
-    <line x1="30" y1="52" x2="36" y2="52" stroke="#d97706" strokeWidth="2"/>
-    <line x1="64" y1="52" x2="70" y2="52" stroke="#d97706" strokeWidth="2"/>
-  </svg>
-);
-
-const UpscLogo = ({ className = "w-4 h-4 mr-1.5" }) => (
-  <svg className={className} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="48" fill="#1e293b" stroke="#eab308" strokeWidth="2"/>
-    <path d="M50 18 C46 18 43 22 43 28 C43 32 45 35 45 42 L 55 42 C 55 35 57 32 57 28 C57 22 54 18 50 18 Z" fill="#eab308"/>
-    <rect x="38" y="42" width="24" height="6" fill="#eab308" rx="1"/>
-    <circle cx="50" cy="45" r="2" fill="#1e293b"/>
-    <path d="M28 72 L 72 28 M 28 28 L 72 72" stroke="#eab308" strokeWidth="3" strokeLinecap="round"/>
-    <path d="M50 42 L 50 74 C45 74 42 70 42 66" stroke="#eab308" strokeWidth="2" fill="none"/>
-    <path d="M50 42 L 50 74 C55 74 58 70 58 66" stroke="#eab308" strokeWidth="2" fill="none"/>
-    <path d="M36 56 C 40 56, 44 50, 50 50 C 56 50, 60 56, 64 56" stroke="#eab308" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-  </svg>
-);
-
-const getExamLogo = (examId) => {
-  if (examId === 'jee-mains' || examId === 'JEE Main') return <NtaLogo />;
-  if (examId === 'jee-advanced' || examId === 'JEE Advanced') return <IitLogo />;
-  if (examId === 'nda' || examId === 'NDA') return <UpscLogo />;
+const getExamLogo = (examId, className = "w-4 h-4 mr-1.5 rounded-full object-cover") => {
+  if (examId === 'jee-mains' || examId === 'JEE Main') return <img src={logoMainsImg} alt="JEE Main" className={className} />;
+  if (examId === 'jee-advanced' || examId === 'JEE Advanced') return <img src={logoAdvancedImg} alt="JEE Advanced" className={className} />;
+  if (examId === 'nda' || examId === 'NDA') return <img src={logoNdaImg} alt="NDA" className={className} />;
   return null;
 };
 
@@ -391,8 +358,8 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                       <h4 className="text-white font-black text-sm uppercase tracking-widest leading-none m-0">JEE MAIN</h4>
                     </div>
                     <div className="p-8 flex flex-col items-center flex-grow">
-                      <div className="bg-white rounded-full p-4 mb-4 shadow-[0_0_20px_rgba(255,255,255,0.05)] border border-slate-100 flex items-center justify-center">
-                        <NtaLogo className="w-16 h-16" />
+                      <div className="bg-white rounded-full overflow-hidden w-24 h-24 mb-4 shadow-[0_0_20px_rgba(255,255,255,0.05)] border border-slate-100 flex items-center justify-center">
+                        <img src={logoMainsImg} alt="JEE Main" className="w-full h-full object-cover" />
                       </div>
                       <span className="text-white font-bold text-sm tracking-wide text-center">राष्ट्रीय परीक्षा एजेंसी</span>
                       <span className="text-gray-400 text-xs font-semibold text-center mt-1">National Testing Agency</span>
@@ -420,8 +387,8 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                       <h4 className="text-white font-black text-sm uppercase tracking-widest leading-none m-0">JEE ADVANCED</h4>
                     </div>
                     <div className="p-8 flex flex-col items-center flex-grow">
-                      <div className="bg-slate-950 rounded-full p-4 mb-4 shadow-[0_0_20px_rgba(234,179,8,0.05)] border border-[#d97706]/20 flex items-center justify-center">
-                        <IitLogo className="w-16 h-16" />
+                      <div className="bg-slate-950 rounded-full overflow-hidden w-24 h-24 mb-4 shadow-[0_0_20px_rgba(234,179,8,0.05)] border border-[#d97706]/20 flex items-center justify-center">
+                        <img src={logoAdvancedImg} alt="JEE Advanced" className="w-full h-full object-cover" />
                       </div>
                       <span className="text-white font-bold text-sm tracking-wide text-center">JEE ADVANCED</span>
                       <span className="text-gray-400 text-xs font-semibold text-center mt-1">Actual Papers & PYQs</span>
@@ -449,8 +416,8 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                       <h4 className="text-white font-black text-sm uppercase tracking-widest leading-none m-0">NDA</h4>
                     </div>
                     <div className="p-8 flex flex-col items-center flex-grow">
-                      <div className="bg-slate-950 rounded-full p-4 mb-4 shadow-[0_0_20px_rgba(34,197,94,0.05)] border border-[#22c55e]/20 flex items-center justify-center">
-                        <UpscLogo className="w-16 h-16" />
+                      <div className="bg-slate-950 rounded-full overflow-hidden w-24 h-24 mb-4 shadow-[0_0_20px_rgba(34,197,94,0.05)] border border-[#22c55e]/20 flex items-center justify-center">
+                        <img src={logoNdaImg} alt="NDA" className="w-full h-full object-cover" />
                       </div>
                       <span className="text-white font-bold text-sm tracking-wide text-center">UPSC</span>
                       <span className="text-gray-400 text-xs font-semibold text-center mt-1">Union Public Service Commission</span>
