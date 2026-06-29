@@ -362,7 +362,7 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                         <img src={logoMainsImg} alt="JEE Main" className="w-full h-full object-cover" />
                       </div>
                       <span className="text-white font-bold text-sm tracking-wide text-center">राष्ट्रीय परीक्षा एजेंसी</span>
-                      <span className="text-gray-400 text-xs font-semibold text-center mt-1">National Testing Agency</span>
+                      <span className="bg-white/10 text-white text-[11px] font-extrabold px-4 py-1.5 rounded mt-2 tracking-wide text-center border border-white/10">National Testing Agency</span>
                       <div className="w-full border-t border-white/5 my-6"></div>
                       <div className="flex flex-col gap-2 w-full text-center">
                         <span className="text-sm font-bold text-gray-300 flex items-center justify-center gap-1.5">
@@ -391,7 +391,7 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                         <img src={logoAdvancedImg} alt="JEE Advanced" className="w-full h-full object-cover" />
                       </div>
                       <span className="text-white font-bold text-sm tracking-wide text-center">JEE ADVANCED</span>
-                      <span className="text-gray-400 text-xs font-semibold text-center mt-1">Actual Papers & PYQs</span>
+                      <span className="text-[#d97706] text-xs font-bold text-center mt-1">Actual Papers & PYQs</span>
                       <div className="w-full border-t border-white/5 my-6"></div>
                       <div className="flex flex-col gap-2 w-full text-center">
                         <span className="text-sm font-bold text-gray-300 flex items-center justify-center gap-1.5">
@@ -419,15 +419,18 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                       <div className="bg-slate-950 rounded-full overflow-hidden w-24 h-24 mb-4 shadow-[0_0_20px_rgba(34,197,94,0.05)] border border-[#22c55e]/20 flex items-center justify-center">
                         <img src={logoNdaImg} alt="NDA" className="w-full h-full object-cover" />
                       </div>
+                      <span className="text-gray-400 text-[11px] font-semibold text-center">सत्यमेव जयते</span>
                       <span className="text-white font-bold text-sm tracking-wide text-center">UPSC</span>
-                      <span className="text-gray-400 text-xs font-semibold text-center mt-1">Union Public Service Commission</span>
-                      <div className="w-full border-t border-white/5 my-6"></div>
+                      <span className="text-gray-500 text-[10px] font-semibold text-center mt-0.5">Union Public Service Commission</span>
+                      <span className="text-white font-extrabold text-base tracking-wide text-center mt-2">NDA</span>
+                      <span className="text-[#d97706] text-xs font-bold text-center mt-0.5">Actual Papers & PYQs</span>
+                      <div className="w-full border-t border-white/5 my-5"></div>
                       <div className="flex flex-col gap-2 w-full text-center">
                         <span className="text-sm font-bold text-gray-300 flex items-center justify-center gap-1.5">
-                          📅 2008 - 2026
+                          📅 2021 – 2025
                         </span>
                         <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider">
-                          18+ Years of Papers
+                          5+ Years of Papers
                         </span>
                       </div>
                       <button
