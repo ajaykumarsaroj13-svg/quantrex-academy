@@ -1,4 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { 
+  ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, 
+  BarChart, Bar, Cell, PieChart, Pie, Legend, LineChart, Line
+} from 'recharts';
 import { motion, AnimatePresence } from 'framer-motion';
 import FileText from 'lucide-react/dist/esm/icons/file-text';
 import BarChart2 from 'lucide-react/dist/esm/icons/bar-chart-2';
@@ -61,6 +65,38 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
     setShowPurchaseModal(false);
   };
 
+  // Dynamic Attempts & Bookmarks
+  const attempts = useMemo(() => {
+    const list = [];
+    tests.forEach(t => {
+      const tid = t.testId || t.id || t.title;
+      const res = localStorage.getItem(`quantrex_test_result_${tid}`);
+      if (res) {
+        try {
+          list.push({ test: t, result: JSON.parse(res) });
+        } catch (e) {}
+      }
+    });
+    return list;
+  }, [tests]);
+
+  const [bookmarkedIds, setBookmarkedIds] = useState(() => {
+    try {
+      const stored = localStorage.getItem('quantrex_ultimate_bookmarked_tests');
+      return stored ? JSON.parse(stored) : [];
+    } catch (e) {
+      return [];
+    }
+  });
+
+  const toggleBookmark = (tid) => {
+    setBookmarkedIds(prev => {
+      const next = prev.includes(tid) ? prev.filter(id => id !== tid) : [...prev, tid];
+      localStorage.setItem('quantrex_ultimate_bookmarked_tests', JSON.stringify(next));
+      return next;
+    });
+  };
+
   const groupTests = useMemo(() => {
     return tests.filter(t => t.category === activeCategory && t.groupName === activeGroup);
   }, [tests, activeCategory, activeGroup]);
@@ -68,7 +104,9 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
   const totalTests = groupTests.length;
   const availableTests = groupTests.filter(t => !t.isUpcoming).length;
   const upcomingTests = groupTests.filter(t => t.isUpcoming).length;
-  const attemptedTests = 0; 
+  const attemptedTests = useMemo(() => {
+    return attempts.filter(att => att.test.category === activeCategory && att.test.groupName === activeGroup).length;
+  }, [attempts, activeCategory, activeGroup]);
 
   const sectionsMap = useMemo(() => {
     const map = new Map();
@@ -192,146 +230,457 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
              ))}
            </div>
 
-           {/* Scrollable Content */}
-           <div className="flex-1 overflow-y-auto px-4 sm:px-8 py-6 sm:py-8 custom-scrollbar relative">
-              
-              <h2 className={`text-xl sm:text-2xl font-bold mb-6 ${theme.text}`}>
-                 {activeCategory === 'Chapter and Topic Wise Tests' ? 'Topics' : activeGroup}
-              </h2>
+            {/* Scrollable Content */}
+            <div className="flex-1 overflow-y-auto px-4 sm:px-8 py-6 sm:py-8 custom-scrollbar relative">
+               
+               {activeNav === 'All Tests' && (
+                 <>
+                   <h2 className={`text-xl sm:text-2xl font-bold mb-6 ${theme.text}`}>
+                      {activeCategory === 'Chapter and Topic Wise Tests' ? 'Topics' : activeGroup}
+                   </h2>
 
-              {loading ? (
-                <div className={`py-20 flex justify-center ${theme.textMuted} font-medium`}>Loading test series...</div>
-              ) : sections.length === 0 ? (
-                <div className={`py-20 text-center ${theme.textMuted} font-medium`}>No sections found for this group.</div>
-              ) : (
-                <div className="flex flex-col gap-3 max-w-5xl">
-                   {sections.map(([sectionName, testsList]) => {
-                      const isExpanded = expandedSection === sectionName;
-                      const sAvailable = testsList.filter(t => !t.isUpcoming).length;
-                      const sUpcoming = testsList.filter(t => t.isUpcoming).length;
-                      const sAttempted = 0; 
-                      // Calculate free tests (1 per section if not unlocked, otherwise all available)
-                      const sFree = isUnlocked ? testsList.length : 1; 
+                   {loading ? (
+                     <div className={`py-20 flex justify-center ${theme.textMuted} font-medium`}>Loading test series...</div>
+                   ) : sections.length === 0 ? (
+                     <div className={`py-20 text-center ${theme.textMuted} font-medium`}>No sections found for this group.</div>
+                   ) : (
+                     <div className="flex flex-col gap-3 max-w-5xl">
+                        {sections.map(([sectionName, testsList]) => {
+                           const isExpanded = expandedSection === sectionName;
+                           const sAvailable = testsList.filter(t => !t.isUpcoming).length;
+                           const sUpcoming = testsList.filter(t => t.isUpcoming).length;
+                           const sFree = isUnlocked ? testsList.length : 1; 
 
-                      return (
-                         <div key={sectionName} className={`${theme.bgCard} rounded-xl border ${isExpanded ? theme.borderPrimary + ' shadow-md' : theme.border} overflow-hidden transition-all duration-300`}>
-                            <div 
-                               onClick={() => setExpandedSection(isExpanded ? null : sectionName)}
-                               className={`px-4 sm:px-6 py-4 cursor-pointer ${theme.bgCardHover} transition-colors flex items-center justify-between group`}
-                            >
-                               <div className="pr-4">
-                                  <h3 className={`font-bold text-base sm:text-lg mb-1.5 ${isLight ? 'text-gray-800' : 'text-gray-100'} group-hover:${theme.primary} transition-colors leading-tight`}>{sectionName}</h3>
-                                  <div className="flex flex-wrap gap-2 sm:gap-4 text-[10px] sm:text-xs font-semibold">
-                                     {sFree > 0 && <span className="text-blue-500 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> {sFree} {isUnlocked ? 'Unlocked' : 'Free'}</span>}
-                                     {sAvailable > 0 && <span className="text-emerald-500 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> {sAvailable} Available</span>}
-                                     {sUpcoming > 0 && <span className="text-amber-500 flex items-center gap-1"><Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> {sUpcoming} Upcoming</span>}
+                           return (
+                              <div key={sectionName} className={`${theme.bgCard} rounded-xl border ${isExpanded ? theme.borderPrimary + ' shadow-md' : theme.border} overflow-hidden transition-all duration-300`}>
+                                 <div 
+                                    onClick={() => setExpandedSection(isExpanded ? null : sectionName)}
+                                    className={`px-4 sm:px-6 py-4 cursor-pointer ${theme.bgCardHover} transition-colors flex items-center justify-between group`}
+                                 >
+                                    <div className="pr-4">
+                                       <h3 className={`font-bold text-base sm:text-lg mb-1.5 ${isLight ? 'text-gray-800' : 'text-gray-100'} group-hover:${theme.primary} transition-colors leading-tight`}>{sectionName}</h3>
+                                       <div className="flex flex-wrap gap-2 sm:gap-4 text-[10px] sm:text-xs font-semibold">
+                                          {sFree > 0 && <span className="text-blue-500 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> {sFree} {isUnlocked ? 'Unlocked' : 'Free'}</span>}
+                                          {sAvailable > 0 && <span className="text-emerald-500 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> {sAvailable} Available</span>}
+                                          {sUpcoming > 0 && <span className="text-amber-500 flex items-center gap-1"><Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> {sUpcoming} Upcoming</span>}
+                                       </div>
+                                    </div>
+                                    <ChevronRight className={`w-5 h-5 shrink-0 ${theme.textMuted} transition-transform duration-300 ${isExpanded ? 'rotate-90 text-blue-500' : 'group-hover:text-blue-500'}`} />
+                                 </div>
+
+                                 {/* Expanded Tests List */}
+                                 <AnimatePresence>
+                                    {isExpanded && (
+                                       <motion.div 
+                                          initial={{ height: 0, opacity: 0 }}
+                                          animate={{ height: 'auto', opacity: 1 }}
+                                          exit={{ height: 0, opacity: 0 }}
+                                          className={`border-t ${theme.border} ${theme.bgExpanded} overflow-hidden`}
+                                       >
+                                          <div className="p-3 sm:p-4 flex flex-col gap-2.5">
+                                             {testsList.map((test, index) => {
+                                                const isLocked = !isUnlocked && index > 0;
+                                                const tid = test.testId || test.id || test.title;
+                                                const isBookmarked = bookmarkedIds.includes(tid);
+                                                
+                                                return (
+                                                <div key={tid} className={`${isLight ? 'bg-white' : 'bg-[#22273b]'} border ${theme.border} rounded-lg p-4 flex flex-col md:flex-row md:items-center justify-between hover:border-blue-500/50 transition-all shadow-sm group relative overflow-hidden`}>
+                                                   {/* Lock overlay visual hint */}
+                                                   {isLocked && !test.isUpcoming && (
+                                                     <div className="absolute top-0 right-0 p-2 opacity-5 pointer-events-none">
+                                                       <Lock className="w-24 h-24" />
+                                                     </div>
+                                                   )}
+
+                                                   <div className={`flex flex-col gap-2 mb-4 md:mb-0 ${isLocked ? 'opacity-70' : ''}`}>
+                                                      <div className={`text-sm sm:text-base font-bold ${theme.text} group-hover:text-blue-500 transition-colors flex items-center gap-2 pr-10`}>
+                                                        {isLocked && !test.isUpcoming && <Lock className="w-4 h-4 text-amber-500 shrink-0" />}
+                                                        {test.title}
+                                                      </div>
+                                                      
+                                                      {/* Syllabus / Section Tag */}
+                                                      <div className={`text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:px-2.5 sm:py-1 w-fit rounded-md ${isLight ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-gray-400'}`}>
+                                                        Syllabus: {test.sectionName || sectionName}
+                                                      </div>
+
+                                                      <div className={`flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm ${theme.textMuted} font-medium mt-1`}>
+                                                         <span className="flex items-center gap-1.5"><FileText className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400" /> {test.totalQuestions} Questions</span>
+                                                         <span className="flex items-center gap-1.5"><Clock className="w-3 h-3 sm:w-4 sm:h-4 text-emerald-400" /> {test.durationMinutes} Mins</span>
+                                                         <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-amber-400" /> {test.maxMarks} Marks</span>
+                                                         {test.isUpcoming && (
+                                                            <span className="flex items-center gap-1 text-amber-600 bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/20 text-[10px] sm:text-xs font-bold ml-0 sm:ml-1 mt-1 sm:mt-0 w-fit">
+                                                               <Calendar className="w-3 h-3" /> 
+                                                               Live on {new Date(test.liveAt).toLocaleDateString()}
+                                                            </span>
+                                                         )}
+                                                      </div>
+                                                   </div>
+
+                                                   {/* Bookmark Toggle */}
+                                                   {!test.isUpcoming && (
+                                                     <button 
+                                                       onClick={(e) => { e.stopPropagation(); toggleBookmark(tid); }}
+                                                       className={`absolute top-3 right-3 p-1.5 rounded-lg transition-colors ${
+                                                         isBookmarked 
+                                                           ? 'text-amber-500 bg-amber-500/10' 
+                                                           : 'text-gray-400 hover:text-white hover:bg-white/10'
+                                                       }`}
+                                                       title={isBookmarked ? "Remove Bookmark" : "Bookmark Test"}
+                                                     >
+                                                       <Bookmark className="w-4 h-4 fill-current" style={{ fill: isBookmarked ? 'currentColor' : 'none' }} />
+                                                     </button>
+                                                   )}
+
+                                                   <div className="shrink-0 flex items-center gap-2.5 relative z-10 w-full md:w-auto mt-2 md:mt-0">
+                                                      {test.isUpcoming ? (
+                                                         <button disabled className={`w-full md:w-auto px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold ${isLight ? 'bg-gray-100 text-gray-400 border-gray-200' : 'bg-white/5 text-gray-500 border-white/5'} cursor-not-allowed border`}>
+                                                            Upcoming
+                                                         </button>
+                                                      ) : isLocked ? (
+                                                         <button 
+                                                            onClick={() => setShowPurchaseModal(true)}
+                                                            className={`w-full md:w-auto px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-md hover:from-amber-400 hover:to-orange-400 transition-colors flex items-center justify-center gap-2 transform hover:scale-[1.02] active:scale-[0.98]`}
+                                                         >
+                                                            <Lock className="w-4 h-4" /> Unlock Test
+                                                         </button>
+                                                      ) : (() => {
+                                                         const isAttempted = localStorage.getItem(`quantrex_test_result_${tid}`);
+                                                         const isResumable = localStorage.getItem(`quantrex_exam_state_${tid}`);
+                                                         return (
+                                                           <div className="flex gap-2 w-full md:w-auto">
+                                                             {isAttempted && (
+                                                               <button 
+                                                                 onClick={() => onViewResult && onViewResult(tid)}
+                                                                 className={`flex-1 md:flex-none px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all flex items-center justify-center gap-1 sm:gap-2 ${
+                                                                   isLight 
+                                                                     ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-700' 
+                                                                     : 'bg-emerald-500/10 border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-400'
+                                                                 }`}
+                                                               >
+                                                                 Result
+                                                               </button>
+                                                             )}
+                                                             <button 
+                                                                onClick={() => onStartTest(tid, 'exam', 'ultimate-test-series')}
+                                                                className={`flex-1 md:flex-none px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 ${
+                                                                  isAttempted 
+                                                                    ? (isLight ? 'bg-gray-100 hover:bg-gray-200 text-gray-700' : 'bg-white/5 hover:bg-white/10 text-gray-300')
+                                                                    : 'bg-blue-600 hover:bg-blue-50 text-white shadow-[0_0_15px_rgba(37,99,235,0.2)]'
+                                                                }`}
+                                                             >
+                                                                {isResumable ? 'Resume' : (isAttempted ? 'Retake' : 'Start Test')} <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
+                                                             </button>
+                                                           </div>
+                                                         );
+                                                      })()}
+                                                   </div>
+                                                </div>
+                                             )})}
+                                          </div>
+                                       </motion.div>
+                                    )}
+                                 </AnimatePresence>
+                              </div>
+                           );
+                        })}
+                     </div>
+                   )}
+                 </>
+               )}
+
+               {/* ANALYTICS TAB */}
+               {activeNav === 'Analytics' && (
+                 <div className="space-y-6 max-w-5xl">
+                   <h2 className={`text-xl sm:text-2xl font-bold mb-2 ${theme.text}`}>Performance & Analytics</h2>
+                   <p className={`${theme.textMuted} text-xs mb-6`}>Analytics tailored specifically for the JEE Main Ultimate Test Series.</p>
+                   
+                   {(() => {
+                     const hasData = attempts.length > 0;
+                     const displayAttempts = hasData ? attempts.length : 4;
+                     const displayAvg = hasData ? Math.round(attempts.reduce((acc, curr) => acc + (curr.result.score || 0), 0) / attempts.length) : 184;
+                     const displayBest = hasData ? Math.max(...attempts.map(a => a.result.score || 0)) : 246;
+                     const displayAcc = hasData 
+                       ? Math.round((attempts.reduce((acc, curr) => acc + (curr.result.correct || 0), 0) / (attempts.reduce((acc, curr) => acc + (curr.result.correct || 0), 0) + attempts.reduce((acc, curr) => acc + (curr.result.wrong || 0), 0) || 1)) * 100) 
+                       : 76;
+
+                     const scoreData = hasData 
+                       ? attempts.map((a, idx) => ({ name: `T-${idx+1}`, score: a.result.score }))
+                       : [
+                           { name: 'Test 1', score: 156 },
+                           { name: 'Test 2', score: 182 },
+                           { name: 'Test 3', score: 204 },
+                           { name: 'Test 4', score: 194 }
+                         ];
+
+                     const distributionData = hasData
+                       ? [
+                           { name: 'Correct', value: attempts.reduce((acc, curr) => acc + (curr.result.correct || 0), 0), color: '#10b981' },
+                           { name: 'Wrong', value: attempts.reduce((acc, curr) => acc + (curr.result.wrong || 0), 0), color: '#ef4444' }
+                         ]
+                       : [
+                           { name: 'Correct', value: 120, color: '#10b981' },
+                           { name: 'Wrong', value: 40, color: '#ef4444' }
+                         ];
+
+                     return (
+                       <>
+                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                           <div className={`p-5 rounded-2xl border ${theme.bgCard} ${theme.border}`}>
+                             <span className="text-[10px] uppercase font-bold tracking-wider text-gray-500">Attempted</span>
+                             <h2 className="text-3xl font-black mt-1 text-blue-500">{displayAttempts} Tests</h2>
+                             {!hasData && <span className="text-[9px] text-amber-500 font-bold block mt-1">Showing Demo Stats</span>}
+                           </div>
+                           <div className={`p-5 rounded-2xl border ${theme.bgCard} ${theme.border}`}>
+                             <span className="text-[10px] uppercase font-bold tracking-wider text-gray-500">Average Score</span>
+                             <h2 className="text-3xl font-black mt-1 text-purple-400">{displayAvg} / 300</h2>
+                           </div>
+                           <div className={`p-5 rounded-2xl border ${theme.bgCard} ${theme.border}`}>
+                             <span className="text-[10px] uppercase font-bold tracking-wider text-gray-500">Best Score</span>
+                             <h2 className="text-3xl font-black mt-1 text-emerald-400">{displayBest} / 300</h2>
+                           </div>
+                           <div className={`p-5 rounded-2xl border ${theme.bgCard} ${theme.border}`}>
+                             <span className="text-[10px] uppercase font-bold tracking-wider text-gray-500">Accuracy</span>
+                             <h2 className="text-3xl font-black mt-1 text-amber-500">{displayAcc}%</h2>
+                           </div>
+                         </div>
+
+                         {/* Charts */}
+                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6">
+                           <div className={`lg:col-span-8 p-5 rounded-2xl border ${theme.bgCard} ${theme.border} flex flex-col justify-between`}>
+                             <h4 className="font-bold text-xs uppercase tracking-wider font-mono mb-4">Score Trends</h4>
+                             <div className="h-[220px] w-full">
+                               <ResponsiveContainer width="100%" height="100%">
+                                 <AreaChart data={scoreData}>
+                                   <defs>
+                                     <linearGradient id="colorScore" x1="0" y1="0" x2="0" y2="1">
+                                       <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.4}/>
+                                       <stop offset="95%" stopColor="#3b82f6" stopOpacity={0}/>
+                                     </linearGradient>
+                                   </defs>
+                                   <XAxis dataKey="name" stroke="#888888" fontSize={10} tickLine={false} axisLine={false} />
+                                   <YAxis stroke="#888888" fontSize={10} tickLine={false} axisLine={false} domain={[0, 300]} />
+                                   <Tooltip contentStyle={{ background: '#0a0a0c', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px' }} />
+                                   <Area type="monotone" dataKey="score" stroke="#3b82f6" fillOpacity={1} fill="url(#colorScore)" name="Score" strokeWidth={2} />
+                                 </AreaChart>
+                               </ResponsiveContainer>
+                             </div>
+                           </div>
+
+                           <div className={`lg:col-span-4 p-5 rounded-2xl border ${theme.bgCard} ${theme.border} flex flex-col justify-between`}>
+                             <h4 className="font-bold text-xs uppercase tracking-wider font-mono mb-4">Answer Accuracy</h4>
+                             <div className="h-[180px] w-full flex items-center justify-center">
+                               <ResponsiveContainer width="100%" height="100%">
+                                 <PieChart>
+                                   <Pie
+                                     data={distributionData}
+                                     cx="50%"
+                                     cy="50%"
+                                     innerRadius={50}
+                                     outerRadius={70}
+                                     paddingAngle={5}
+                                     dataKey="value"
+                                   >
+                                     {distributionData.map((entry, index) => (
+                                       <Cell key={`cell-${index}`} fill={entry.color} />
+                                     ))}
+                                   </Pie>
+                                   <Tooltip />
+                                 </PieChart>
+                               </ResponsiveContainer>
+                             </div>
+                             <div className="flex justify-center gap-4 text-[10px] font-bold">
+                               <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded bg-emerald-500"></span> Correct</span>
+                               <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded bg-red-500"></span> Wrong</span>
+                             </div>
+                           </div>
+                         </div>
+
+                         {/* Subject Accuracy */}
+                         <div className={`p-5 rounded-2xl border ${theme.bgCard} ${theme.border} mt-6`}>
+                           <h4 className="font-bold text-xs uppercase tracking-wider font-mono mb-4">Subject Wise Correctness</h4>
+                           <div className="space-y-4">
+                             {[
+                               { subject: 'Physics', accuracy: hasData ? Math.round(attempts.reduce((acc, curr) => acc + (curr.result.questionResults?.filter(qr => qr.subject === 'Physics' && qr.isCorrect).length || 0), 0) / (attempts.reduce((acc, curr) => acc + (curr.result.questionResults?.filter(qr => qr.subject === 'Physics' && qr.isAttempted).length || 0), 0) || 1) * 100) || 72 : 72, color: 'bg-blue-500' },
+                               { subject: 'Mathematics', accuracy: hasData ? Math.round(attempts.reduce((acc, curr) => acc + (curr.result.questionResults?.filter(qr => qr.subject === 'Mathematics' && qr.isCorrect).length || 0), 0) / (attempts.reduce((acc, curr) => acc + (curr.result.questionResults?.filter(qr => qr.subject === 'Mathematics' && qr.isAttempted).length || 0), 0) || 1) * 100) || 68 : 68, color: 'bg-amber-500' },
+                               { subject: 'Chemistry', accuracy: hasData ? Math.round(attempts.reduce((acc, curr) => acc + (curr.result.questionResults?.filter(qr => qr.subject === 'Chemistry' && qr.isCorrect).length || 0), 0) / (attempts.reduce((acc, curr) => acc + (curr.result.questionResults?.filter(qr => qr.subject === 'Chemistry' && qr.isAttempted).length || 0), 0) || 1) * 100) || 82 : 82, color: 'bg-emerald-500' }
+                             ].map((subj, idx) => (
+                               <div key={idx} className="space-y-1">
+                                 <div className="flex justify-between text-xs font-bold">
+                                   <span>{subj.subject}</span>
+                                   <span>{subj.accuracy}% Accuracy</span>
+                                 </div>
+                                 <div className="h-2 w-full bg-black/30 rounded-full overflow-hidden">
+                                   <div className={`h-full ${subj.color}`} style={{ width: `${subj.accuracy}%` }} />
+                                 </div>
+                               </div>
+                             ))}
+                           </div>
+                         </div>
+                       </>
+                     );
+                   })()}
+                 </div>
+               )}
+
+               {/* MISTAKES TAB */}
+               {activeNav === 'Mistakes' && (
+                 <div className="space-y-6 max-w-5xl">
+                   <h2 className={`text-xl sm:text-2xl font-bold mb-2 ${theme.text}`}>Mistakes & Review</h2>
+                   <p className={`${theme.textMuted} text-xs mb-6`}>Review questions you answered incorrectly in the Ultimate Series tests.</p>
+                   
+                   {(() => {
+                     const hasData = attempts.length > 0;
+                     // Extract mistake questions from attempts
+                     const userMistakes = [];
+                     attempts.forEach(att => {
+                       const qResults = att.result.questionResults || [];
+                       qResults.forEach((qr, idx) => {
+                         if (qr.isAttempted && !qr.isCorrect) {
+                           userMistakes.push({
+                             testTitle: att.test.title,
+                             testId: att.test.testId || att.test.id,
+                             questionNumber: qr.questionNumber || idx + 1,
+                             subject: qr.subject || att.test.groupName || 'Miscellaneous',
+                             topic: qr.topic || att.test.sectionName || 'General',
+                             userAnswer: qr.userAnswer,
+                             correctAnswer: qr.correctAnswer || qr.correctOption
+                           });
+                         }
+                       });
+                     });
+
+                     const displayMistakes = userMistakes.length > 0 ? userMistakes : [
+                       { testTitle: "Units and Measurement Test - 1", testId: "test_units_1", questionNumber: 4, subject: "Physics", topic: "Dimensional Homogeneity", userAnswer: "2", correctAnswer: "1" },
+                       { testTitle: "Complex Numbers Test - 2", testId: "test_complex_2", questionNumber: 12, subject: "Mathematics", topic: "De Moivre Theorem", userAnswer: "3", correctAnswer: "4" }
+                     ];
+
+                     return (
+                       <div className="space-y-3">
+                         {!hasData && (
+                           <div className="p-3 bg-amber-500/10 border border-amber-500/20 text-amber-500 text-[10px] rounded-xl font-bold">
+                             💡 Note: Showing demo mistakes. Attempt tests to populate this list dynamically.
+                           </div>
+                         )}
+                         {displayMistakes.map((mistake, idx) => (
+                           <div key={idx} className={`p-4 rounded-xl border ${theme.bgCard} ${theme.border} flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4`}>
+                             <div className="space-y-1.5">
+                               <div className="flex items-center gap-2">
+                                 <span className="text-[9px] font-bold uppercase px-2 py-0.5 rounded bg-red-500/10 border border-red-500/20 text-red-400">
+                                   Q{mistake.questionNumber} Incorrect
+                                 </span>
+                                 <span className="text-[9px] font-bold uppercase px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 text-blue-400">
+                                   {mistake.subject}
+                                 </span>
+                               </div>
+                               <h4 className="font-bold text-sm text-white pr-4">{mistake.testTitle}</h4>
+                               <p className="text-[10px] text-gray-400">Topic: <strong className="text-gray-300">{mistake.topic}</strong> • Your Ans: <strong className="text-red-400">{mistake.userAnswer}</strong> • Correct: <strong className="text-emerald-400">{mistake.correctAnswer}</strong></p>
+                             </div>
+                             
+                             <button
+                               onClick={() => onViewResult && onViewResult(mistake.testId)}
+                               className="px-4 py-2 rounded-lg text-xs font-bold bg-blue-600 hover:bg-blue-500 text-white flex items-center gap-1.5 shadow-sm transition-all"
+                             >
+                               Review Solution <ChevronRight className="w-3.5 h-3.5" />
+                             </button>
+                           </div>
+                         ))}
+                       </div>
+                     );
+                   })()}
+                 </div>
+               )}
+
+               {/* BOOKMARKS TAB */}
+               {activeNav === 'Bookmarks' && (
+                 <div className="space-y-6 max-w-5xl">
+                   <h2 className={`text-xl sm:text-2xl font-bold mb-2 ${theme.text}`}>Bookmarked Tests</h2>
+                   <p className={`${theme.textMuted} text-xs mb-6`}>Access your bookmarked tests from the Ultimate Series.</p>
+                   
+                   {(() => {
+                     const bookmarks = tests.filter(t => bookmarkedIds.includes(t.testId || t.id || t.title));
+                     if (bookmarks.length === 0) {
+                       return (
+                         <div className="py-20 text-center text-gray-500 text-sm font-medium">
+                           No bookmarked tests. Click the bookmark icon on any test in the 'All Tests' list to save it here.
+                         </div>
+                       );
+                     }
+
+                     return (
+                       <div className="flex flex-col gap-3">
+                         {bookmarks.map((test, index) => {
+                           const tid = test.testId || test.id || test.title;
+                           const isAttempted = localStorage.getItem(`quantrex_test_result_${tid}`);
+                           const isResumable = localStorage.getItem(`quantrex_exam_state_${tid}`);
+                           
+                           return (
+                             <div key={tid} className={`${isLight ? 'bg-white' : 'bg-[#22273b]'} border ${theme.border} rounded-lg p-4 flex flex-col md:flex-row md:items-center justify-between hover:border-blue-500/50 transition-all shadow-sm group relative overflow-hidden`}>
+                               <div className="flex flex-col gap-2 mb-4 md:mb-0">
+                                  <div className={`text-sm sm:text-base font-bold ${theme.text} group-hover:text-blue-500 transition-colors flex items-center gap-2 pr-10`}>
+                                    {test.title}
+                                  </div>
+                                  
+                                  <div className="flex flex-wrap gap-2">
+                                    <div className={`text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-md ${isLight ? 'bg-purple-100 text-purple-700' : 'bg-purple-500/10 text-purple-400'}`}>
+                                      {test.groupName}
+                                    </div>
+                                    <div className={`text-[10px] sm:text-xs font-medium px-2 py-0.5 rounded-md ${isLight ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-gray-400'}`}>
+                                      Syllabus: {test.sectionName || 'General'}
+                                    </div>
+                                  </div>
+
+                                  <div className={`flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm ${theme.textMuted} font-medium mt-1`}>
+                                     <span className="flex items-center gap-1.5"><FileText className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400" /> {test.totalQuestions} Questions</span>
+                                     <span className="flex items-center gap-1.5"><Clock className="w-3 h-3 sm:w-4 sm:h-4 text-emerald-400" /> {test.durationMinutes} Mins</span>
+                                     <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-amber-400" /> {test.maxMarks} Marks</span>
                                   </div>
                                </div>
-                               <ChevronRight className={`w-5 h-5 shrink-0 ${theme.textMuted} transition-transform duration-300 ${isExpanded ? 'rotate-90 text-blue-500' : 'group-hover:text-blue-500'}`} />
-                            </div>
 
-                            {/* Expanded Tests List */}
-                            <AnimatePresence>
-                               {isExpanded && (
-                                  <motion.div 
-                                     initial={{ height: 0, opacity: 0 }}
-                                     animate={{ height: 'auto', opacity: 1 }}
-                                     exit={{ height: 0, opacity: 0 }}
-                                     className={`border-t ${theme.border} ${theme.bgExpanded} overflow-hidden`}
-                                  >
-                                     <div className="p-3 sm:p-4 flex flex-col gap-2.5">
-                                        {testsList.map((test, index) => {
-                                           const isLocked = !isUnlocked && index > 0;
-                                           
-                                           return (
-                                           <div key={test.testId || test.id} className={`${isLight ? 'bg-white' : 'bg-[#22273b]'} border ${theme.border} rounded-lg p-4 flex flex-col md:flex-row md:items-center justify-between hover:border-blue-500/50 transition-all shadow-sm group relative overflow-hidden`}>
-                                              {/* Lock overlay visual hint */}
-                                              {isLocked && !test.isUpcoming && (
-                                                <div className="absolute top-0 right-0 p-2 opacity-5 pointer-events-none">
-                                                  <Lock className="w-24 h-24" />
-                                                </div>
-                                              )}
+                               {/* Bookmark Toggle */}
+                               <button 
+                                 onClick={(e) => { e.stopPropagation(); toggleBookmark(tid); }}
+                                 className="absolute top-3 right-3 p-1.5 rounded-lg text-amber-500 bg-amber-500/10 transition-colors"
+                                 title="Remove Bookmark"
+                               >
+                                 <Bookmark className="w-4 h-4 fill-current" />
+                               </button>
 
-                                              <div className={`flex flex-col gap-2 mb-4 md:mb-0 ${isLocked ? 'opacity-70' : ''}`}>
-                                                 <div className={`text-sm sm:text-base font-bold ${theme.text} group-hover:text-blue-500 transition-colors flex items-center gap-2`}>
-                                                   {isLocked && !test.isUpcoming && <Lock className="w-4 h-4 text-amber-500 shrink-0" />}
-                                                   {test.title}
-                                                 </div>
-                                                 
-                                                 {/* Syllabus / Section Tag */}
-                                                 <div className={`text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:px-2.5 sm:py-1 w-fit rounded-md ${isLight ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-gray-400'}`}>
-                                                   Syllabus: {test.sectionName || sectionName}
-                                                 </div>
+                               <div className="shrink-0 flex items-center gap-2.5 relative z-10 w-full md:w-auto mt-2 md:mt-0">
+                                  <div className="flex gap-2 w-full md:w-auto">
+                                    {isAttempted && (
+                                      <button 
+                                        onClick={() => onViewResult && onViewResult(tid)}
+                                        className={`flex-1 md:flex-none px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all flex items-center justify-center gap-1 sm:gap-2 ${
+                                          isLight 
+                                            ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-700' 
+                                            : 'bg-emerald-500/10 border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-400'
+                                        }`}
+                                      >
+                                        Result
+                                      </button>
+                                    )}
+                                    <button 
+                                       onClick={() => onStartTest(tid, 'exam', 'ultimate-test-series')}
+                                       className={`flex-1 md:flex-none px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 ${
+                                         isAttempted 
+                                           ? (isLight ? 'bg-gray-100 hover:bg-gray-200 text-gray-700' : 'bg-white/5 hover:bg-white/10 text-gray-300')
+                                           : 'bg-blue-600 hover:bg-blue-50 text-white shadow-[0_0_15px_rgba(37,99,235,0.2)]'
+                                       }`}
+                                    >
+                                       {isResumable ? 'Resume' : (isAttempted ? 'Retake' : 'Start Test')} <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
+                                    </button>
+                                  </div>
+                               </div>
+                             </div>
+                           );
+                         })}
+                       </div>
+                     );
+                   })()}
+                 </div>
+               )}
 
-                                                 <div className={`flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm ${theme.textMuted} font-medium mt-1`}>
-                                                    <span className="flex items-center gap-1.5"><FileText className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400" /> {test.totalQuestions} Questions</span>
-                                                    <span className="flex items-center gap-1.5"><Clock className="w-3 h-3 sm:w-4 sm:h-4 text-emerald-400" /> {test.durationMinutes} Mins</span>
-                                                    <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-amber-400" /> {test.maxMarks} Marks</span>
-                                                    {test.isUpcoming && (
-                                                       <span className="flex items-center gap-1 text-amber-600 bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/20 text-[10px] sm:text-xs font-bold ml-0 sm:ml-1 mt-1 sm:mt-0 w-fit">
-                                                          <Calendar className="w-3 h-3" /> 
-                                                          Live on {new Date(test.liveAt).toLocaleDateString()}
-                                                       </span>
-                                                    )}
-                                                 </div>
-                                              </div>
-                                              <div className="shrink-0 flex items-center gap-2.5 relative z-10 w-full md:w-auto mt-2 md:mt-0">
-                                                 {test.isUpcoming ? (
-                                                    <button disabled className={`w-full md:w-auto px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold ${isLight ? 'bg-gray-100 text-gray-400 border-gray-200' : 'bg-white/5 text-gray-500 border-white/5'} cursor-not-allowed border`}>
-                                                       Upcoming
-                                                    </button>
-                                                 ) : isLocked ? (
-                                                    <button 
-                                                       onClick={() => setShowPurchaseModal(true)}
-                                                       className={`w-full md:w-auto px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-md hover:from-amber-400 hover:to-orange-400 transition-colors flex items-center justify-center gap-2 transform hover:scale-[1.02] active:scale-[0.98]`}
-                                                    >
-                                                       <Lock className="w-4 h-4" /> Unlock Test
-                                                    </button>
-                                                 ) : (() => {
-                                                    const tid = test.testId || test.id;
-                                                    const isAttempted = localStorage.getItem(`quantrex_test_result_${tid}`);
-                                                    const isResumable = localStorage.getItem(`quantrex_exam_state_${tid}`);
-                                                    return (
-                                                      <div className="flex gap-2 w-full md:w-auto">
-                                                        {isAttempted && (
-                                                          <button 
-                                                            onClick={() => onViewResult && onViewResult(tid)}
-                                                            className={`flex-1 md:flex-none px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all flex items-center justify-center gap-1 sm:gap-2 ${
-                                                              isLight 
-                                                                ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-700' 
-                                                                : 'bg-emerald-500/10 border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-400'
-                                                            }`}
-                                                          >
-                                                            Result
-                                                          </button>
-                                                        )}
-                                                        <button 
-                                                           onClick={() => onStartTest(tid, 'exam', 'ultimate-test-series')}
-                                                           className={`flex-1 md:flex-none px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 ${
-                                                             isAttempted 
-                                                               ? (isLight ? 'bg-gray-100 hover:bg-gray-200 text-gray-700' : 'bg-white/5 hover:bg-white/10 text-gray-300')
-                                                               : 'bg-blue-600 hover:bg-blue-50 text-white shadow-[0_0_15px_rgba(37,99,235,0.2)]'
-                                                           }`}
-                                                        >
-                                                           {isResumable ? 'Resume' : (isAttempted ? 'Retake' : 'Start Test')} <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
-                                                        </button>
-                                                      </div>
-                                                    );
-                                                 })()}
-                                              </div>
-                                           </div>
-                                        )})}
-                                     </div>
-                                  </motion.div>
-                               )}
-                            </AnimatePresence>
-                         </div>
-                      );
-                   })}
-                </div>
-              )}
-           </div>
-
+            </div>
         </div>
       </div>
       
