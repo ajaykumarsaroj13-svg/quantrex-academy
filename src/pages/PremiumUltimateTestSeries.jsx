@@ -9,11 +9,31 @@ import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2';
 import Clock from 'lucide-react/dist/esm/icons/clock';
 import Calendar from 'lucide-react/dist/esm/icons/calendar';
 import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import ClipboardList from 'lucide-react/dist/esm/icons/clipboard-list';
+import MessageCircleQuestion from 'lucide-react/dist/esm/icons/message-circle-question';
+import Globe from 'lucide-react/dist/esm/icons/globe';
+import Target from 'lucide-react/dist/esm/icons/target';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import Layers from 'lucide-react/dist/esm/icons/layers';
+import BrainCircuit from 'lucide-react/dist/esm/icons/brain-circuit';
+import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check';
+import Trophy from 'lucide-react/dist/esm/icons/trophy';
+import Info from 'lucide-react/dist/esm/icons/info';
+import Bell from 'lucide-react/dist/esm/icons/bell';
+import BellOff from 'lucide-react/dist/esm/icons/bell-off';
+import Zap from 'lucide-react/dist/esm/icons/zap';
+import Rocket from 'lucide-react/dist/esm/icons/rocket';
+import Lock from 'lucide-react/dist/esm/icons/lock';
 import logoImg from '../assets/logo.png';
-
+import PremiumBanner from '../components/PremiumBanner';
 const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, isLight }) => {
   const [tests, setTests] = useState([]);
   const [loading, setLoading] = useState(true);
+  
+  // States for Landing and Lock
+  const [showLanding, setShowLanding] = useState(true);
+  const [showPurchaseModal, setShowPurchaseModal] = useState(false);
+  const [isUnlocked, setIsUnlocked] = useState(localStorage.getItem('quantrex_premium_unlocked') === 'true');
   
   // State for Navigation
   const [activeNav, setActiveNav] = useState('All Tests'); 
@@ -34,6 +54,12 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
         setLoading(false);
       });
   }, []);
+
+  const handlePurchase = () => {
+    localStorage.setItem('quantrex_premium_unlocked', 'true');
+    setIsUnlocked(true);
+    setShowPurchaseModal(false);
+  };
 
   const groupTests = useMemo(() => {
     return tests.filter(t => t.category === activeCategory && t.groupName === activeGroup);
@@ -58,27 +84,32 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
 
   // Theme configuration
   const theme = {
-    bg: isLight ? 'bg-gray-50' : 'bg-[#1b1f2e]',
+    bg: isLight ? 'bg-gray-50' : 'bg-[#0f1219]',
     bgNav: isLight ? 'bg-white' : 'bg-[#161a27]',
     bgSidebar: isLight ? 'bg-gray-100' : 'bg-[#1b1f2e]',
-    bgContent: isLight ? 'bg-white' : 'bg-[#1b1f2e]',
-    bgCard: isLight ? 'bg-white' : 'bg-[#22273b]',
-    bgCardHover: isLight ? 'hover:bg-gray-50' : 'hover:bg-[#2a3045]',
-    bgExpanded: isLight ? 'bg-gray-50' : 'bg-[#1a1e2d]',
-    border: isLight ? 'border-gray-200' : 'border-[#2d3246]',
+    bgContent: isLight ? 'bg-white' : 'bg-[#11141e]',
+    bgCard: isLight ? 'bg-white' : 'bg-[#1a1f2e]',
+    bgCardHover: isLight ? 'hover:bg-gray-50' : 'hover:bg-[#202638]',
+    bgExpanded: isLight ? 'bg-gray-50' : 'bg-[#151925]',
+    border: isLight ? 'border-gray-200' : 'border-[#262c40]',
     text: isLight ? 'text-gray-900' : 'text-white',
     textMuted: isLight ? 'text-gray-500' : 'text-gray-400',
     primary: 'text-[#3b82f6]',
     borderPrimary: 'border-[#3b82f6]'
   };
 
+  if (showLanding) {
+    return <PremiumBanner onStart={() => setShowLanding(false)} onBack={onBack} fullScreen={true} theme={isLight ? 'light' : 'dark'} />;
+  }
+
+  // --- Main App Area (After Explore) ---
   return (
     <div className={`min-h-screen flex flex-col font-sans overflow-hidden h-screen ${theme.bg} ${theme.text}`}>
       
       {/* Top Header */}
       <div className={`${theme.bgContent} border-b ${theme.border} px-4 py-3 flex items-center justify-between shrink-0 shadow-sm z-10`}>
          <div className="flex items-center gap-3">
-           <button onClick={onBack} className={`p-1.5 rounded-lg transition-colors ${isLight ? 'hover:bg-gray-100' : 'hover:bg-white/10'}`}>
+           <button onClick={() => setShowLanding(true)} className={`p-1.5 rounded-lg transition-colors ${isLight ? 'hover:bg-gray-100' : 'hover:bg-white/10'}`}>
               <ArrowLeft className={`w-5 h-5 ${theme.textMuted}`} />
            </button>
            <div className="flex items-center gap-2">
@@ -96,7 +127,7 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
       <div className="flex flex-1 overflow-hidden">
         
         {/* Far-Left Vertical Nav (Icon Bar) */}
-        <div className={`w-20 ${theme.bgNav} border-r ${theme.border} flex flex-col items-center py-4 gap-2 shrink-0 z-10`}>
+        <div className={`w-20 ${theme.bgNav} border-r ${theme.border} flex flex-col items-center py-4 gap-2 shrink-0 z-10 hidden md:flex`}>
           <NavIconButton icon={<FileText className="w-5 h-5" />} label="All Tests" active={activeNav === 'All Tests'} onClick={() => setActiveNav('All Tests')} isLight={isLight} theme={theme} />
           <NavIconButton icon={<BarChart2 className="w-5 h-5" />} label="Analytics" active={activeNav === 'Analytics'} onClick={() => setActiveNav('Analytics')} isLight={isLight} theme={theme} />
           <NavIconButton icon={<XCircle className="w-5 h-5" />} label="Mistakes" active={activeNav === 'Mistakes'} onClick={() => setActiveNav('Mistakes')} isLight={isLight} theme={theme} />
@@ -104,7 +135,7 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
         </div>
 
         {/* Sidebar Menu (Categories & Groups) */}
-        <div className={`w-72 ${theme.bgSidebar} border-r ${theme.border} overflow-y-auto shrink-0 py-5 custom-scrollbar`}>
+        <div className={`w-72 ${theme.bgSidebar} border-r ${theme.border} overflow-y-auto shrink-0 py-5 custom-scrollbar hidden md:block`}>
           
           <div className="mb-8">
             <div className={`px-4 text-[10px] ${isLight ? 'text-gray-400 border-gray-300' : 'text-gray-500 border-gray-600/50'} font-black uppercase tracking-wider mb-3 flex items-center gap-2`}>
@@ -132,17 +163,39 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
         <div className={`flex-1 ${theme.bgContent} flex flex-col overflow-hidden relative`}>
            
            {/* Top Stats Row */}
-           <div className={`px-8 py-5 shrink-0 flex flex-wrap gap-4 border-b ${theme.border} ${isLight ? 'bg-gray-50' : 'bg-[#1b1f2e]'}`}>
+           <div className={`px-4 sm:px-8 py-4 sm:py-5 shrink-0 flex flex-wrap gap-2 sm:gap-4 border-b ${theme.border} ${isLight ? 'bg-gray-50' : 'bg-[#1b1f2e]'}`}>
               <StatBadge icon={<FileText className="w-4 h-4" />} label="Total" value={totalTests} color="gray" isLight={isLight} />
               <StatBadge icon={<CheckCircle2 className="w-4 h-4" />} label="Available" value={availableTests} color="emerald" isLight={isLight} />
               <StatBadge icon={<Clock className="w-4 h-4" />} label="Upcoming" value={upcomingTests} color="amber" isLight={isLight} />
               <StatBadge icon={<BarChart2 className="w-4 h-4" />} label="Attempted" value={attemptedTests} color="blue" isLight={isLight} />
            </div>
+           
+           {/* Mobile Navigation (replaces sidebar on small screens) */}
+           <div className={`md:hidden px-4 py-3 border-b ${theme.border} flex flex-wrap gap-2`}>
+             {['Physics', 'Mathematics', 'Chemistry'].map(group => (
+               <button 
+                 key={group}
+                 onClick={() => { setActiveCategory('Chapter and Topic Wise Tests'); setActiveGroup(group); setExpandedSection(null); }}
+                 className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors border ${activeCategory === 'Chapter and Topic Wise Tests' && activeGroup === group ? (isLight ? 'bg-blue-100 border-blue-300 text-blue-700' : 'bg-blue-500/20 border-blue-500/30 text-blue-400') : (isLight ? 'bg-white border-gray-200 text-gray-600' : 'bg-[#22273b] border-[#2d3246] text-gray-400')}`}
+               >
+                 {group}
+               </button>
+             ))}
+             {['Full Tests', 'Part Tests'].map(group => (
+               <button 
+                 key={group}
+                 onClick={() => { setActiveCategory('Quantrex Academy Mock Tests'); setActiveGroup(group); setExpandedSection(null); }}
+                 className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors border ${activeCategory === 'Quantrex Academy Mock Tests' && activeGroup === group ? (isLight ? 'bg-blue-100 border-blue-300 text-blue-700' : 'bg-blue-500/20 border-blue-500/30 text-blue-400') : (isLight ? 'bg-white border-gray-200 text-gray-600' : 'bg-[#22273b] border-[#2d3246] text-gray-400')}`}
+               >
+                 {group}
+               </button>
+             ))}
+           </div>
 
            {/* Scrollable Content */}
-           <div className="flex-1 overflow-y-auto px-8 py-8 custom-scrollbar relative">
+           <div className="flex-1 overflow-y-auto px-4 sm:px-8 py-6 sm:py-8 custom-scrollbar relative">
               
-              <h2 className={`text-2xl font-bold mb-6 ${theme.text}`}>
+              <h2 className={`text-xl sm:text-2xl font-bold mb-6 ${theme.text}`}>
                  {activeCategory === 'Chapter and Topic Wise Tests' ? 'Topics' : activeGroup}
               </h2>
 
@@ -157,24 +210,24 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
                       const sAvailable = testsList.filter(t => !t.isUpcoming).length;
                       const sUpcoming = testsList.filter(t => t.isUpcoming).length;
                       const sAttempted = 0; 
-                      const sFree = 0; 
+                      // Calculate free tests (1 per section if not unlocked, otherwise all available)
+                      const sFree = isUnlocked ? testsList.length : 1; 
 
                       return (
                          <div key={sectionName} className={`${theme.bgCard} rounded-xl border ${isExpanded ? theme.borderPrimary + ' shadow-md' : theme.border} overflow-hidden transition-all duration-300`}>
                             <div 
                                onClick={() => setExpandedSection(isExpanded ? null : sectionName)}
-                               className={`px-6 py-4 cursor-pointer ${theme.bgCardHover} transition-colors flex items-center justify-between group`}
+                               className={`px-4 sm:px-6 py-4 cursor-pointer ${theme.bgCardHover} transition-colors flex items-center justify-between group`}
                             >
-                               <div>
-                                  <h3 className={`font-bold text-lg mb-1.5 ${isLight ? 'text-gray-800' : 'text-gray-100'} group-hover:${theme.primary} transition-colors`}>{sectionName}</h3>
-                                  <div className="flex gap-4 text-xs font-semibold">
-                                     {sFree > 0 && <span className="text-blue-500 flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5" /> {sFree} Free</span>}
-                                     {sAvailable > 0 && <span className="text-emerald-500 flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5" /> {sAvailable} Available</span>}
-                                     {sUpcoming > 0 && <span className="text-amber-500 flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" /> {sUpcoming} Upcoming</span>}
-                                     {sAttempted > 0 && <span className="text-blue-500 flex items-center gap-1.5"><BarChart2 className="w-3.5 h-3.5" /> {sAttempted} Attempted</span>}
+                               <div className="pr-4">
+                                  <h3 className={`font-bold text-base sm:text-lg mb-1.5 ${isLight ? 'text-gray-800' : 'text-gray-100'} group-hover:${theme.primary} transition-colors leading-tight`}>{sectionName}</h3>
+                                  <div className="flex flex-wrap gap-2 sm:gap-4 text-[10px] sm:text-xs font-semibold">
+                                     {sFree > 0 && <span className="text-blue-500 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> {sFree} {isUnlocked ? 'Unlocked' : 'Free'}</span>}
+                                     {sAvailable > 0 && <span className="text-emerald-500 flex items-center gap-1"><CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> {sAvailable} Available</span>}
+                                     {sUpcoming > 0 && <span className="text-amber-500 flex items-center gap-1"><Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> {sUpcoming} Upcoming</span>}
                                   </div>
                                </div>
-                               <ChevronRight className={`w-5 h-5 ${theme.textMuted} transition-transform duration-300 ${isExpanded ? 'rotate-90 text-blue-500' : 'group-hover:text-blue-500'}`} />
+                               <ChevronRight className={`w-5 h-5 shrink-0 ${theme.textMuted} transition-transform duration-300 ${isExpanded ? 'rotate-90 text-blue-500' : 'group-hover:text-blue-500'}`} />
                             </div>
 
                             {/* Expanded Tests List */}
@@ -186,68 +239,88 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
                                      exit={{ height: 0, opacity: 0 }}
                                      className={`border-t ${theme.border} ${theme.bgExpanded} overflow-hidden`}
                                   >
-                                     <div className="p-4 flex flex-col gap-2.5">
-                                        {testsList.map(test => (
-                                           <div key={test.testId || test.id} className={`${isLight ? 'bg-white' : 'bg-[#22273b]'} border ${theme.border} rounded-lg p-5 flex flex-col sm:flex-row sm:items-center justify-between hover:border-blue-500/50 transition-all shadow-sm group`}>
-                                              <div className="flex flex-col gap-2 mb-4 sm:mb-0">
-                                                 <div className={`text-base font-bold ${theme.text} group-hover:text-blue-500 transition-colors`}>{test.title}</div>
+                                     <div className="p-3 sm:p-4 flex flex-col gap-2.5">
+                                        {testsList.map((test, index) => {
+                                           const isLocked = !isUnlocked && index > 0;
+                                           
+                                           return (
+                                           <div key={test.testId || test.id} className={`${isLight ? 'bg-white' : 'bg-[#22273b]'} border ${theme.border} rounded-lg p-4 flex flex-col md:flex-row md:items-center justify-between hover:border-blue-500/50 transition-all shadow-sm group relative overflow-hidden`}>
+                                              {/* Lock overlay visual hint */}
+                                              {isLocked && !test.isUpcoming && (
+                                                <div className="absolute top-0 right-0 p-2 opacity-5 pointer-events-none">
+                                                  <Lock className="w-24 h-24" />
+                                                </div>
+                                              )}
+
+                                              <div className={`flex flex-col gap-2 mb-4 md:mb-0 ${isLocked ? 'opacity-70' : ''}`}>
+                                                 <div className={`text-sm sm:text-base font-bold ${theme.text} group-hover:text-blue-500 transition-colors flex items-center gap-2`}>
+                                                   {isLocked && !test.isUpcoming && <Lock className="w-4 h-4 text-amber-500 shrink-0" />}
+                                                   {test.title}
+                                                 </div>
                                                  
                                                  {/* Syllabus / Section Tag */}
-                                                 <div className={`text-xs font-medium px-2.5 py-1 w-fit rounded-md ${isLight ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-gray-400'}`}>
+                                                 <div className={`text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:px-2.5 sm:py-1 w-fit rounded-md ${isLight ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-gray-400'}`}>
                                                    Syllabus: {test.sectionName || sectionName}
                                                  </div>
 
-                                                 <div className={`flex flex-wrap items-center gap-4 text-sm ${theme.textMuted} font-medium mt-1`}>
-                                                    <span className="flex items-center gap-1.5"><FileText className="w-4 h-4 text-blue-400" /> {test.totalQuestions} Questions</span>
-                                                    <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-emerald-400" /> {test.durationMinutes} Mins</span>
-                                                    <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-amber-400" /> {test.maxMarks} Marks</span>
+                                                 <div className={`flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm ${theme.textMuted} font-medium mt-1`}>
+                                                    <span className="flex items-center gap-1.5"><FileText className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400" /> {test.totalQuestions} Questions</span>
+                                                    <span className="flex items-center gap-1.5"><Clock className="w-3 h-3 sm:w-4 sm:h-4 text-emerald-400" /> {test.durationMinutes} Mins</span>
+                                                    <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-amber-400" /> {test.maxMarks} Marks</span>
                                                     {test.isUpcoming && (
-                                                       <span className="flex items-center gap-1.5 text-amber-600 bg-amber-500/10 px-2.5 py-0.5 rounded-md border border-amber-500/20 text-xs font-bold ml-1">
-                                                          <Calendar className="w-3.5 h-3.5" /> 
+                                                       <span className="flex items-center gap-1 text-amber-600 bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/20 text-[10px] sm:text-xs font-bold ml-0 sm:ml-1 mt-1 sm:mt-0 w-fit">
+                                                          <Calendar className="w-3 h-3" /> 
                                                           Live on {new Date(test.liveAt).toLocaleDateString()}
                                                        </span>
                                                     )}
                                                  </div>
                                               </div>
-                                              <div className="shrink-0 flex items-center gap-2.5">
+                                              <div className="shrink-0 flex items-center gap-2.5 relative z-10 w-full md:w-auto mt-2 md:mt-0">
                                                  {test.isUpcoming ? (
-                                                    <button disabled className={`w-full sm:w-auto px-6 py-2.5 rounded-xl text-sm font-bold ${isLight ? 'bg-gray-100 text-gray-400 border-gray-200' : 'bg-white/5 text-gray-500 border-white/5'} cursor-not-allowed border`}>
-                                                       Locked
+                                                    <button disabled className={`w-full md:w-auto px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold ${isLight ? 'bg-gray-100 text-gray-400 border-gray-200' : 'bg-white/5 text-gray-500 border-white/5'} cursor-not-allowed border`}>
+                                                       Upcoming
+                                                    </button>
+                                                 ) : isLocked ? (
+                                                    <button 
+                                                       onClick={() => setShowPurchaseModal(true)}
+                                                       className={`w-full md:w-auto px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-md hover:from-amber-400 hover:to-orange-400 transition-colors flex items-center justify-center gap-2 transform hover:scale-[1.02] active:scale-[0.98]`}
+                                                    >
+                                                       <Lock className="w-4 h-4" /> Unlock Test
                                                     </button>
                                                  ) : (() => {
                                                     const tid = test.testId || test.id;
                                                     const isAttempted = localStorage.getItem(`quantrex_test_result_${tid}`);
                                                     const isResumable = localStorage.getItem(`quantrex_exam_state_${tid}`);
                                                     return (
-                                                      <>
+                                                      <div className="flex gap-2 w-full md:w-auto">
                                                         {isAttempted && (
                                                           <button 
                                                             onClick={() => onViewResult && onViewResult(tid)}
-                                                            className={`px-5 py-2.5 rounded-xl text-sm font-bold border transition-all flex items-center justify-center gap-2 ${
+                                                            className={`flex-1 md:flex-none px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all flex items-center justify-center gap-1 sm:gap-2 ${
                                                               isLight 
                                                                 ? 'bg-emerald-50 border-emerald-200 hover:bg-emerald-100 text-emerald-700' 
                                                                 : 'bg-emerald-500/10 border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-400'
                                                             }`}
                                                           >
-                                                            View Result
+                                                            Result
                                                           </button>
                                                         )}
                                                         <button 
                                                            onClick={() => onStartTest(tid, 'exam', 'ultimate-test-series')}
-                                                           className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 ${
+                                                           className={`flex-1 md:flex-none px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 ${
                                                              isAttempted 
                                                                ? (isLight ? 'bg-gray-100 hover:bg-gray-200 text-gray-700' : 'bg-white/5 hover:bg-white/10 text-gray-300')
                                                                : 'bg-blue-600 hover:bg-blue-50 text-white shadow-[0_0_15px_rgba(37,99,235,0.2)]'
                                                            }`}
                                                         >
-                                                           {isResumable ? 'Resume' : (isAttempted ? 'Retake' : 'Start Test')} <ChevronRight className="w-4 h-4" />
+                                                           {isResumable ? 'Resume' : (isAttempted ? 'Retake' : 'Start Test')} <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
                                                         </button>
-                                                      </>
+                                                      </div>
                                                     );
                                                  })()}
                                               </div>
                                            </div>
-                                        ))}
+                                        )})}
                                      </div>
                                   </motion.div>
                                )}
@@ -262,6 +335,78 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
         </div>
       </div>
       
+      {/* Purchase Modal */}
+      <AnimatePresence>
+        {showPurchaseModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            <motion.div 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              exit={{ opacity: 0 }}
+              onClick={() => setShowPurchaseModal(false)}
+              className="absolute inset-0 bg-black/70 backdrop-blur-md"
+            />
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0, y: 30 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 30 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="bg-[#12182b] border border-[#1e2538] rounded-3xl p-6 sm:p-8 max-w-[400px] w-full relative z-10 shadow-2xl overflow-hidden"
+            >
+              {/* Decorative top gradient */}
+              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-amber-500 via-orange-500 to-red-500"></div>
+              
+              <button 
+                onClick={() => setShowPurchaseModal(false)}
+                className="absolute top-4 right-4 text-gray-400 hover:text-white p-2 transition-colors rounded-full hover:bg-white/10"
+              >
+                <XCircle className="w-6 h-6" />
+              </button>
+
+              <div className="text-center mt-2">
+                <div className="mx-auto w-20 h-20 bg-gradient-to-br from-amber-500/20 to-orange-500/20 rounded-full flex items-center justify-center mb-6 border border-amber-500/30">
+                  <Lock className="w-10 h-10 text-amber-500" />
+                </div>
+                
+                <h2 className="text-2xl font-black text-white mb-2 tracking-tight leading-tight">Unlock Premium Access</h2>
+                <p className="text-gray-400 text-sm mb-6 leading-relaxed">
+                  Get full access to all <strong className="text-white">530+</strong> Topic, Chapter, and Full-length mock tests for JEE Main 2027.
+                </p>
+
+                <div className="bg-[#0b101e] border border-amber-500/30 rounded-2xl p-6 mb-8 relative shadow-[0_0_20px_rgba(245,158,11,0.05)]">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-red-600 to-red-500 text-white text-[10px] font-black uppercase tracking-wider px-4 py-1.5 rounded-full shadow-md whitespace-nowrap">
+                    Limited Time Offer
+                  </div>
+                  <div className="flex flex-col items-center gap-1">
+                    <div className="flex items-center justify-center gap-2 mb-1">
+                       <span className="text-gray-500 font-bold line-through decoration-red-500/70 decoration-2 text-xl">₹1999</span>
+                       <span className="bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded">75% OFF</span>
+                    </div>
+                    <div className="flex items-start justify-center gap-1">
+                      <span className="text-2xl text-amber-500 font-bold mt-1.5">₹</span>
+                      <span className="text-6xl font-black text-white tracking-tighter drop-shadow-md">499</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button 
+                  onClick={handlePurchase}
+                  className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white text-lg font-black py-4 rounded-xl shadow-[0_5px_20px_rgba(245,158,11,0.4)] transition-all transform hover:scale-[1.03] active:scale-[0.97] border border-amber-400/50 flex flex-col items-center justify-center gap-1"
+                >
+                  <span>Buy Now</span>
+                  <span className="text-[10px] font-medium opacity-80 font-mono tracking-widest uppercase">Unlock Full Series</span>
+                </button>
+                
+                <div className="mt-4 flex items-center justify-center gap-2 text-[10px] text-gray-500 font-mono uppercase tracking-widest">
+                  <ShieldCheck className="h-4 w-4 text-emerald-500/70" />
+                  Secured by <span className="font-bold text-blue-400/80 tracking-normal">Razorpay</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
       <style dangerouslySetInnerHTML={{__html: `
         .custom-scrollbar::-webkit-scrollbar {
           width: 6px;
@@ -321,11 +466,11 @@ const StatBadge = ({ icon, label, value, color, isLight }) => {
    };
 
    return (
-      <div className={`flex items-center gap-2.5 px-4 py-2 rounded-xl border shadow-sm ${colorConfig[color]}`}>
-         <div className="opacity-80 p-1.5 rounded-lg bg-white/20">{icon}</div>
+      <div className={`flex items-center gap-2 sm:gap-2.5 px-3 sm:px-4 py-2 rounded-xl border shadow-sm flex-1 min-w-[120px] ${colorConfig[color]}`}>
+         <div className="opacity-80 p-1 sm:p-1.5 rounded-lg bg-white/20 shrink-0">{icon}</div>
          <div className="flex flex-col">
-           <span className={`text-[10px] font-bold tracking-wider uppercase opacity-80`}>{label}</span>
-           <span className="text-lg font-black leading-none">{value}</span>
+           <span className={`text-[9px] sm:text-[10px] font-bold tracking-wider uppercase opacity-80 whitespace-nowrap`}>{label}</span>
+           <span className="text-base sm:text-lg font-black leading-none">{value}</span>
          </div>
       </div>
    );

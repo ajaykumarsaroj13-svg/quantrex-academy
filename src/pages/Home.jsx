@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, Sparkles, BookOpen, Star, HelpCircle, PhoneCall, Gift, MessageCircle, Bot, FileText, Flame, Award, Layers, ChevronRight, Zap, Target, TrendingUp, Rocket, Trophy, CheckCircle } from 'lucide-react';
-
-export default function Home({ user, setActivePage, courses, setCourses, toppers, onStartLearning, homeData }) {
+import PremiumBanner from '../components/PremiumBanner';
+import ContactSection from '../components/ContactSection';
+export default function Home({ user, setActivePage, courses, setCourses, toppers, onStartLearning, homeData, isLight }) {
   const [activeFaq, setActiveFaq] = useState(null);
 
   const mathHubCards = [
@@ -138,7 +139,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
 
   return (
     <motion.div 
-      className="relative w-full overflow-hidden bg-obsidian min-h-screen text-white font-inter"
+      className={`relative w-full overflow-hidden min-h-screen font-inter ${isLight ? 'bg-white' : 'bg-obsidian'}`}
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -150,6 +151,11 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
         <div className="absolute top-[20%] right-[-10%] w-96 h-96 bg-blue-600/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-2000"></div>
         <div className="absolute bottom-[-20%] left-[20%] w-[500px] h-[500px] bg-gold/10 rounded-full mix-blend-screen filter blur-[120px] pointer-events-none"></div>
       </div>
+
+      {/* ==================== 0. PREMIUM TEST SERIES BANNER (TOP) ==================== */}
+      <section className="relative z-20 pt-8 pb-4 px-4 md:px-8 max-w-7xl mx-auto w-full">
+         <PremiumBanner onStart={() => setActivePage('ultimate-test-series')} theme={isLight ? 'light' : 'dark'} />
+      </section>
 
       {/* ==================== 1. RESULTS / HALL OF FAME (SLIDING AT THE VERY TOP) ==================== */}
       {toppers && toppers.length > 0 && (
@@ -300,6 +306,7 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
           </div>
         </div>
       </section>
+
 
       {/* ==================== 3. FACULTY CREDENTIALS SECTION (RESTORED) ==================== */}
       <section className="py-24 px-6 md:px-12 bg-cyberdark/40 border-t border-white/5 relative overflow-hidden z-10">
@@ -503,6 +510,8 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
           </button>
         </div>
       </section>
+
+      <ContactSection theme={isLight ? 'light' : 'dark'} />
 
       {/* ==================== MOBILE STICKY FOOTER ==================== */}
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-obsidian/90 backdrop-blur-md border-t border-white/10 py-3.5 px-4 md:hidden flex justify-around items-center">

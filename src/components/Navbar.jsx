@@ -130,14 +130,14 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
           title={isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
           className={`theme-toggle-btn relative h-9 w-16 rounded-full border flex items-center transition-all duration-300 ${
             isLight
-              ? 'bg-blue-50 border-blue-200 justify-end'
-              : 'bg-white/5 border-white/10 justify-start'
+              ? 'bg-slate-200 border-slate-300 justify-end shadow-inner'
+              : 'bg-slate-800 border-slate-600 justify-start shadow-inner'
           }`}
         >
-          <span className={`absolute inset-y-0.5 w-7 rounded-full transition-all duration-300 flex items-center justify-center text-xs shadow-sm ${
+          <span className={`absolute inset-y-0.5 w-7 rounded-full transition-all duration-300 flex items-center justify-center text-xs shadow-md ${
             isLight
-              ? 'right-0.5 bg-amber-400 text-white'
-              : 'left-0.5 bg-electric/80 text-obsidian'
+              ? 'right-0.5 bg-white text-amber-500'
+              : 'left-0.5 bg-obsidian text-blue-400 border border-slate-600'
           }`}>
             {isLight ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
           </span>

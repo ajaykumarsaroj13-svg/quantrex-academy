@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import MathCanvas from './components/MathCanvas';
 import Home from './pages/Home';
+import FloatingContact from './components/FloatingContact';
 import Auth from './pages/Auth';
 import Shield from 'lucide-react/dist/esm/icons/shield';
 import { loadDbFromBlob } from './blob';
@@ -405,18 +406,28 @@ export default function App() {
   const isExamMode = activePage === 'exam-mode' || activePage === 'test-series-exam';
 
 
+  const RedirectToLogin = () => {
+    useEffect(() => {
+      localStorage.setItem('quantrex_redirect_after_login', 'ultimate-test-series');
+      setActivePage('login');
+    }, []);
+    return <div className="flex-grow flex items-center justify-center min-h-[60vh]"><div className="animate-spin rounded-full h-12 w-12 border-4 border-gold border-t-transparent"></div></div>;
+  };
+
   const renderPage = () => {
     switch (activePage) {
       case 'books': return <BooksLibrary setActivePage={setActivePage} setReadingBook={setReadingBook} user={user} theme="dark" booksData={booksData} />;
       case 'book-reader': return <BookReader book={readingBook} setActivePage={setActivePage} theme="dark" />;
       case 'book-chapters': return <BookChapterList book={readingBook} setActivePage={setActivePage} setPracticeChapter={setPracticeChapter} theme="dark" />;
       case 'book-practice': return <BookPractice chapter={practiceChapter} setActivePage={setActivePage} theme="dark" />;
-      case 'home': return <Home setActivePage={setActivePage} user={user} courses={courses} setCourses={setCourses} onEnrollSuccess={handleEnrollSuccess} onStartLearning={handleStartLearning} toppers={toppers} homeData={homeData} />;
+      case 'home': return <Home setActivePage={setActivePage} user={user} courses={courses} setCourses={setCourses} onEnrollSuccess={handleEnrollSuccess} onStartLearning={handleStartLearning} toppers={toppers} homeData={homeData} isLight={isLight} />;
       case 'login': return <Auth onLoginSuccess={handleLoginSuccess} setActivePage={setActivePage} />;
       case 'student-dashboard': return <StudentDashboard user={user} courses={courses} setActivePage={setActivePage} setExamTest={setExamTest} syllabus={syllabus} initialClass={initialClass} initialTab={initialTab} initialChapterTab={initialChapterTab} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} testsData={testsData} />;
       case 'admin-dashboard': return <AdminDashboard user={user} courses={courses} setCourses={setCourses} setCustomLogo={setCustomLogo} syllabus={syllabus} setSyllabus={setSyllabus} toppers={toppers} setToppers={setToppers} homeData={homeData} setHomeData={setHomeData} booksData={booksData} setBooksData={setBooksData} testsData={testsData} setTestsData={setTestsData} />;
       case 'test-series': return <TestSeriesPage user={user} onStartTest={handleStartTestSeries} onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} testsData={testsData} />;
-      case 'ultimate-test-series': return (
+      case 'ultimate-test-series': 
+        if (!user) return <RedirectToLogin />;
+        return (
         <PremiumUltimateTestSeries 
           user={user} 
           onStartTest={handleStartTestSeries} 
@@ -443,8 +454,9 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-obsidian flex flex-col justify-between">
+    <div className="relative min-h-screen flex flex-col justify-between">
       <MathCanvas />
+      {!isExamMode && <FloatingContact isLight={isLight} />}
 
       {!isExamMode && (
         <Navbar
