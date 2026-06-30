@@ -46,7 +46,7 @@ export default function PremiumBanner({ onStart, onBack, fullScreen = false, the
           </div>
           
           {/* Quick Contact Buttons */}
-          <div className="flex gap-2 w-full md:w-auto">
+          <div className="flex gap-2 w-full md:w-auto md:mr-28 relative z-30">
             <a href="https://wa.me/918700508344" target="_blank" rel="noreferrer" className={`flex-1 md:flex-none flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-md border text-[10px] sm:text-xs font-bold transition-all ${isLight ? 'bg-green-50 text-green-700 border-green-200 hover:bg-green-100' : 'bg-green-500/10 text-green-400 border-green-500/20 hover:bg-green-500/20'}`}>
               <MessageCircle className="w-3.5 h-3.5" /> WhatsApp
             </a>
@@ -117,7 +117,7 @@ export default function PremiumBanner({ onStart, onBack, fullScreen = false, the
                 { icon: BrainCircuit, text: 'Most Relevant Questions', color: 'cyan' },
                 { icon: BarChart2, text: 'Deep Performance Analysis', color: 'purple' },
                 { icon: ShieldCheck, text: 'JEE Rank Predictor', color: 'blue' },
-                { icon: Trophy, text: 'Best Video Solutions', color: 'amber' }
+                { icon: Zap, text: '100% Brand New Questions (No PYQs)', color: 'amber' }
               ].map((feat, i) => (
                 <div key={i} className="flex items-center gap-2">
                   <feat.icon className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${
@@ -190,7 +190,7 @@ export default function PremiumBanner({ onStart, onBack, fullScreen = false, the
               <div className="flex items-center gap-1.5 text-left w-full justify-center">
                 <Info className={`w-3.5 h-3.5 shrink-0 ${isLight ? 'text-blue-500' : 'text-cyan-400'}`} />
                 <p className={`text-[9px] sm:text-[10px] font-medium ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>
-                  Note: This test series does not contain any PYQs.
+                  Note: 100% Fresh & original questions. Does not contain JEE Main PYQs.
                 </p>
               </div>
             </div>
