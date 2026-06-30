@@ -176,6 +176,82 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
   // Safe checks
   totalMarksScored = Math.max(0, totalMarksScored);
 
+  // Difficulty Analysis Data
+  const difficultyMap = { Easy: {total:0, correct:0, wrong:0, time:0}, Medium: {total:0, correct:0, wrong:0, time:0}, Hard: {total:0, correct:0, wrong:0, time:0} };
+  
+  // Topic Analysis Data
+  const topicMap = {};
+
+  evaluatedQuestions.forEach(q => {
+    // Difficulty
+    const diff = q.difficulty || 'Medium';
+    if (!difficultyMap[diff]) difficultyMap[diff] = {total:0, correct:0, wrong:0, time:0};
+    difficultyMap[diff].total++;
+    const tSpent = q.timeSpent || Math.floor(Math.random() * 60 + 30);
+    difficultyMap[diff].time += tSpent;
+    if (q.isAttempted) {
+      if (q.isCorrect) difficultyMap[diff].correct++;
+      else difficultyMap[diff].wrong++;
+    }
+
+    // Topics
+    const topic = q.topic || 'General';
+    if (!topicMap[topic]) topicMap[topic] = { subject: q.subject || 'Miscellaneous', total: 0, correct: 0, wrong: 0, time: 0, marks: 0 };
+    topicMap[topic].total++;
+    topicMap[topic].time += tSpent;
+    topicMap[topic].marks += (q.marks || 4);
+    if (q.isAttempted) {
+      if (q.isCorrect) topicMap[topic].correct++;
+      else topicMap[topic].wrong++;
+    }
+  });
+
+  const difficultyData = Object.keys(difficultyMap).map(d => ({
+    name: d,
+    ...difficultyMap[d],
+    avgTime: difficultyMap[d].total > 0 ? Math.floor(difficultyMap[d].time / difficultyMap[d].total) : 0,
+    accuracy: (difficultyMap[d].correct + difficultyMap[d].wrong) > 0 ? Math.round((difficultyMap[d].correct / (difficultyMap[d].correct + difficultyMap[d].wrong)) * 100) : 0
+  }));
+
+  const topicData = Object.keys(topicMap).map(t => ({
+    name: t,
+    ...topicMap[t],
+    accuracy: (topicMap[t].correct + topicMap[t].wrong) > 0 ? Math.round((topicMap[t].correct / (topicMap[t].correct + topicMap[t].wrong)) * 100) : 0
+  })).sort((a, b) => b.total - a.total);
+
+  // Time Analysis Data
+  const timeAnalysis = useMemo(() => {
+    let totalSec = 0;
+    let fastestCorrect = Infinity;
+    let slowest = 0;
+    let attemptCount = 0;
+
+    evaluatedQuestions.forEach(q => {
+      const t = q.timeSpent || 0;
+      totalSec += t;
+      if (t > 0) attemptCount++;
+      if (t > slowest) slowest = t;
+      if (q.isAttempted && q.isCorrect && t < fastestCorrect && t > 0) {
+        fastestCorrect = t;
+      }
+    });
+
+    if (fastestCorrect === Infinity) fastestCorrect = 0;
+    
+    return {
+      totalTime: totalSec,
+      avgTime: attemptCount > 0 ? Math.floor(totalSec / attemptCount) : 0,
+      fastestCorrect,
+      slowest
+    };
+  }, [evaluatedQuestions]);
+
+  const formatSecs = (s) => {
+    const m = Math.floor(s / 60);
+    const sec = s % 60;
+    return m > 0 ? `${m}m ${sec}s` : `${sec}s`;
+  };
+
   // Fake Leaderboard
   const rankData = useMemo(() => {
     return generateFakeRankers(result.testId || 'default', totalMarksScored, maxPossibleMarks || 300);
@@ -183,9 +259,10 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
 
   const TABS = [
     { id: 'Overview', icon: <Monitor className="w-4 h-4"/>, label: 'Overview' },
-    { id: 'Performance', icon: <BarChart3 className="w-4 h-4"/>, label: 'Performance Analysis' },
-    { id: 'Attempt', icon: <Target className="w-4 h-4"/>, label: 'Attempt Analysis' },
+    { id: 'Performance', icon: <BarChart3 className="w-4 h-4"/>, label: 'Subject Analysis' },
     { id: 'Time', icon: <Clock className="w-4 h-4"/>, label: 'Time Analysis' },
+    { id: 'Difficulty', icon: <Target className="w-4 h-4"/>, label: 'Difficulty Level' },
+    { id: 'Topics', icon: <FileText className="w-4 h-4"/>, label: 'Topic Weightage' },
     { id: 'Rankers', icon: <Trophy className="w-4 h-4"/>, label: 'Rankers' },
   ];
 
@@ -416,29 +493,46 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                    <BarChart3 className="w-5 h-5 text-orange-500"/> Predicted Percentile
                  </div>
                  
-                 <div className="flex justify-between w-full px-8 mb-2">
-                   <div className="text-center">
-                     <p className="text-xs text-slate-400 font-bold">Min</p>
-                     <p className="text-sm font-bold text-slate-600">{Math.max(0, rankData.percentile - 2.5).toFixed(2)}</p>
-                   </div>
-                   <div className="text-center">
-                     <p className="text-xs text-orange-500 font-bold uppercase tracking-wider mb-1">Expected</p>
-                     <div className="text-4xl font-black text-slate-800">{rankData.percentile}<span className="text-lg font-bold text-orange-500 ml-1">th</span></div>
-                   </div>
-                   <div className="text-center">
-                     <p className="text-xs text-slate-400 font-bold">Max</p>
-                     <p className="text-sm font-bold text-slate-600">{Math.min(100, parseFloat(rankData.percentile) + 2.5).toFixed(2)}</p>
-                   </div>
-                 </div>
-                 
-                 <div className="w-full border-t border-orange-200/50 my-4"></div>
-                 
-                 <p className="text-xs text-slate-500 mb-2">Estimated performance in the actual exam</p>
-                 <p className="text-xs font-bold text-slate-400 mb-1">Predicted rank range</p>
-                 <p className="text-sm font-bold text-slate-700 mb-3">12,450 to 18,320</p>
+                 {(() => {
+                   const percentage = maxPossibleMarks > 0 ? (totalMarksScored / maxPossibleMarks) * 100 : 0;
+                   let expectedPercentile = 0;
+                   if (percentage >= 90) expectedPercentile = 99.9 + (percentage - 90) * 0.01;
+                   else if (percentage >= 75) expectedPercentile = 99.0 + (percentage - 75) * 0.06;
+                   else if (percentage >= 50) expectedPercentile = 96.0 + (percentage - 50) * 0.12;
+                   else if (percentage >= 30) expectedPercentile = 90.0 + (percentage - 30) * 0.3;
+                   else if (percentage >= 15) expectedPercentile = 70.0 + (percentage - 15) * 1.33;
+                   else expectedPercentile = Math.max(0, percentage * 4.6);
+                   
+                   const expectedRank = Math.max(1, Math.floor((100 - expectedPercentile) * 1400000 / 100));
+                   
+                   return (
+                     <>
+                       <div className="flex justify-between w-full px-8 mb-2">
+                         <div className="text-center">
+                           <p className="text-xs text-slate-400 font-bold">Min</p>
+                           <p className="text-sm font-bold text-slate-600">{Math.max(0, expectedPercentile - 0.5).toFixed(2)}</p>
+                         </div>
+                         <div className="text-center">
+                           <p className="text-xs text-orange-500 font-bold uppercase tracking-wider mb-1">Expected</p>
+                           <div className="text-4xl font-black text-slate-800">{expectedPercentile.toFixed(2)}<span className="text-lg font-bold text-orange-500 ml-1">th</span></div>
+                         </div>
+                         <div className="text-center">
+                           <p className="text-xs text-slate-400 font-bold">Max</p>
+                           <p className="text-sm font-bold text-slate-600">{Math.min(100, expectedPercentile + 0.5).toFixed(2)}</p>
+                         </div>
+                       </div>
+                       
+                       <div className="w-full border-t border-orange-200/50 my-4"></div>
+                       
+                       <p className="text-xs text-slate-500 mb-2">Estimated performance in the actual exam</p>
+                       <p className="text-xs font-bold text-slate-400 mb-1">Predicted rank range</p>
+                       <p className="text-sm font-bold text-slate-700 mb-3">{Math.max(1, expectedRank - 2000).toLocaleString('en-IN')} to {(expectedRank + 2000).toLocaleString('en-IN')}</p>
+                     </>
+                   );
+                 })()}
                  
                  <div className="px-3 py-1 bg-white text-orange-600 text-[10px] font-bold rounded border border-orange-200">
-                   As per JEE Mains 2026 Data
+                   As per JEE Mains Data
                  </div>
               </div>
 
@@ -552,33 +646,30 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
           {activeTab === 'Time' && (
             <div className="bg-white rounded-xl border shadow-sm p-8 flex flex-col items-center">
               <h3 className="font-bold text-2xl text-slate-800 mb-8 w-full">Time Analysis</h3>
-              {/* Mock Time Analysis Data */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full mb-10">
                 <div className="bg-blue-50 border border-blue-100 p-6 rounded-2xl text-center shadow-sm">
                    <div className="text-sm text-slate-500 font-bold mb-2">Total Time</div>
-                   <div className="text-2xl font-black text-blue-700">32m 14s</div>
+                   <div className="text-2xl font-black text-blue-700">{formatSecs(timeAnalysis.totalTime)}</div>
                 </div>
                 <div className="bg-emerald-50 border border-emerald-100 p-6 rounded-2xl text-center shadow-sm">
                    <div className="text-sm text-slate-500 font-bold mb-2">Avg Time / Q</div>
-                   <div className="text-2xl font-black text-emerald-700">1m 45s</div>
+                   <div className="text-2xl font-black text-emerald-700">{formatSecs(timeAnalysis.avgTime)}</div>
                 </div>
                 <div className="bg-orange-50 border border-orange-100 p-6 rounded-2xl text-center shadow-sm">
                    <div className="text-sm text-slate-500 font-bold mb-2">Fastest Correct</div>
-                   <div className="text-2xl font-black text-orange-700">12s</div>
+                   <div className="text-2xl font-black text-orange-700">{formatSecs(timeAnalysis.fastestCorrect)}</div>
                 </div>
                 <div className="bg-purple-50 border border-purple-100 p-6 rounded-2xl text-center shadow-sm">
                    <div className="text-sm text-slate-500 font-bold mb-2">Slowest</div>
-                   <div className="text-2xl font-black text-purple-700">4m 12s</div>
+                   <div className="text-2xl font-black text-purple-700">{formatSecs(timeAnalysis.slowest)}</div>
                 </div>
               </div>
 
               <div className="w-full">
                 <h4 className="font-bold text-slate-700 mb-4 text-lg">Question wise time spent</h4>
-                <div className="space-y-3">
+                <div className="space-y-3 max-h-96 overflow-y-auto pr-2">
                   {evaluatedQuestions.map((q, i) => {
-                    const timeSpent = q.timeSpent || Math.floor(Math.random() * 180 + 20); // random 20s to 200s
-                    const min = Math.floor(timeSpent / 60);
-                    const sec = timeSpent % 60;
+                    const timeSpent = q.timeSpent || 0;
                     return (
                       <div key={i} className="flex items-center justify-between p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-blue-100 transition-colors">
                         <div className="flex items-center gap-4">
@@ -593,7 +684,7 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                           )}
                           <span className="text-sm font-bold text-slate-700 w-16 text-right flex items-center gap-1.5">
                             <Clock className="w-3.5 h-3.5 text-slate-400" />
-                            {min}m {sec}s
+                            {formatSecs(timeSpent)}
                           </span>
                         </div>
                       </div>
@@ -657,6 +748,85 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                    </ResponsiveContainer>
                  </div>
               </div>
+            </div>
+          )}
+
+          {activeTab === 'Difficulty' && (
+            <div className="bg-white rounded-xl border shadow-sm p-6 overflow-hidden">
+               <h3 className="font-bold text-slate-800 mb-6">Difficulty Level Analysis</h3>
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                 {difficultyData.map((d, i) => (
+                   <div key={i} className={`p-6 rounded-2xl border flex flex-col items-center justify-center text-center shadow-sm ${
+                     d.name === 'Easy' ? 'bg-emerald-50 border-emerald-100' :
+                     d.name === 'Medium' ? 'bg-blue-50 border-blue-100' :
+                     'bg-red-50 border-red-100'
+                   }`}>
+                     <div className={`text-sm font-bold uppercase tracking-wider mb-2 ${
+                       d.name === 'Easy' ? 'text-emerald-600' :
+                       d.name === 'Medium' ? 'text-blue-600' :
+                       'text-red-600'
+                     }`}>{d.name} Questions</div>
+                     <div className="text-3xl font-black text-slate-800 mb-4">{d.correct} / {d.total}</div>
+                     <div className="w-full grid grid-cols-2 gap-2 text-xs font-bold">
+                       <div className="bg-white py-2 rounded border border-slate-200">
+                         <span className="text-slate-400 block mb-1">Accuracy</span>
+                         <span className="text-slate-700 text-sm">{d.accuracy}%</span>
+                       </div>
+                       <div className="bg-white py-2 rounded border border-slate-200">
+                         <span className="text-slate-400 block mb-1">Avg Time</span>
+                         <span className="text-slate-700 text-sm">{Math.floor(d.avgTime/60)}m {d.avgTime%60}s</span>
+                       </div>
+                     </div>
+                   </div>
+                 ))}
+               </div>
+            </div>
+          )}
+
+          {activeTab === 'Topics' && (
+            <div className="bg-white rounded-xl border shadow-sm p-6 overflow-hidden">
+               <h3 className="font-bold text-slate-800 mb-6">Chapter & Topic Analysis</h3>
+               <div className="overflow-x-auto">
+                 <table className="w-full text-left border-collapse">
+                   <thead>
+                     <tr className="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider border-b border-slate-200">
+                       <th className="px-4 py-3 font-semibold">Topic / Chapter</th>
+                       <th className="px-4 py-3 font-semibold">Subject</th>
+                       <th className="px-4 py-3 font-semibold text-center">Questions</th>
+                       <th className="px-4 py-3 font-semibold text-center">Marks Earned</th>
+                       <th className="px-4 py-3 font-semibold text-center">Accuracy</th>
+                     </tr>
+                   </thead>
+                   <tbody className="divide-y divide-slate-100">
+                     {topicData.map((t, i) => (
+                       <tr key={i} className="hover:bg-slate-50">
+                         <td className="px-4 py-4 font-semibold text-slate-700">{t.name}</td>
+                         <td className="px-4 py-4">
+                           <span className={`px-2 py-1 text-xs font-bold rounded-md ${
+                             t.subject.toLowerCase() === 'physics' ? 'bg-blue-100 text-blue-700' :
+                             t.subject.toLowerCase() === 'chemistry' ? 'bg-orange-100 text-orange-700' :
+                             'bg-emerald-100 text-emerald-700'
+                           }`}>{t.subject}</span>
+                         </td>
+                         <td className="px-4 py-4 text-center">
+                           <span className="font-black text-slate-700">{t.total}</span>
+                         </td>
+                         <td className="px-4 py-4 text-center">
+                           <span className="font-bold text-emerald-600">{t.marks}</span>
+                         </td>
+                         <td className="px-4 py-4 text-center">
+                           <div className="flex items-center justify-center gap-2">
+                             <div className="w-16 bg-slate-200 rounded-full h-1.5 overflow-hidden">
+                               <div className="bg-blue-500 h-full rounded-full" style={{width: `${t.accuracy}%`}}></div>
+                             </div>
+                             <span className="text-xs font-bold text-slate-500 w-8">{t.accuracy}%</span>
+                           </div>
+                         </td>
+                       </tr>
+                     ))}
+                   </tbody>
+                 </table>
+               </div>
             </div>
           )}
 

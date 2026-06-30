@@ -5,9 +5,11 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState({}); // { qIdx: selectedOptionIdx }
   const [statusMap, setStatusMap] = useState({}); // { qIdx: 'not_visited' | 'not_answered' | 'answered' | 'marked' | 'answered_marked' }
+  const [timeSpentMap, setTimeSpentMap] = useState({}); // { qIdx: secondsSpent }
   const [timeLeft, setTimeLeft] = useState(180 * 60); // 3 hours default
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+  const [questionResults, setQuestionResults] = useState([]);
   const [showExplanation, setShowExplanation] = useState(false);
 
   // Trigger MathJax re-render when question changes
@@ -26,6 +28,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
         const parsed = JSON.parse(savedData);
         setAnswers(parsed.answers || {});
         setStatusMap(parsed.statusMap || {});
+        setTimeSpentMap(parsed.timeSpentMap || {});
         setTimeLeft(parsed.timeLeft || (test.durationMinutes || 180) * 60);
         setCurrentIdx(parsed.currentIdx || 0);
       } else {
@@ -44,12 +47,13 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
       const progress = {
         answers,
         statusMap,
+        timeSpentMap,
         timeLeft,
         currentIdx
       };
       localStorage.setItem(`nta_test_progress_${test.id}`, JSON.stringify(progress));
     }
-  }, [answers, statusMap, timeLeft, currentIdx, isSubmitted, test]);
+  }, [answers, statusMap, timeSpentMap, timeLeft, currentIdx, isSubmitted, test]);
 
   useEffect(() => {
     if (isSubmitted || timeLeft <= 0) return;
@@ -62,9 +66,13 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
         }
         return prev - 1;
       });
+      setTimeSpentMap(prev => ({
+        ...prev,
+        [currentIdx]: (prev[currentIdx] || 0) + 1
+      }));
     }, 1000);
     return () => clearInterval(timer);
-  }, [timeLeft, isSubmitted]);
+  }, [timeLeft, isSubmitted, currentIdx]);
 
   const handleSaveAndNext = () => {
     if (answers[currentIdx] !== undefined) {
@@ -116,16 +124,35 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
 
   const handleSubmit = () => {
     let finalScore = 0;
-    questions.forEach((q, idx) => {
-      // In practice mode correctOption might be 'A', map it to index 0
+    const results = questions.map((q, idx) => {
       let correctIdx = q.correctOption;
       if (typeof correctIdx === 'string') {
         correctIdx = correctIdx.charCodeAt(0) - 65;
       }
-      if (answers[idx] === correctIdx) finalScore += 4;
-      else if (answers[idx] !== undefined) finalScore -= 1;
+      
+      const isAttempted = answers[idx] !== undefined;
+      let isCorrect = false;
+      
+      if (isAttempted) {
+        if (answers[idx] === correctIdx) {
+          finalScore += 4;
+          isCorrect = true;
+        } else {
+          finalScore -= 1;
+        }
+      }
+
+      return {
+        questionId: q.id || idx,
+        isAttempted,
+        isCorrect,
+        userAnswer: answers[idx],
+        timeSpent: timeSpentMap[idx] || 0
+      };
     });
+
     setScore(finalScore);
+    setQuestionResults(results);
     setIsSubmitted(true);
     if (test && test.id) {
       localStorage.removeItem(`nta_test_progress_${test.id}`);
@@ -144,8 +171,20 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
       <div className="min-h-screen bg-gray-100 flex items-center justify-center font-sans">
         <div className="bg-white p-8 rounded shadow-lg text-center">
           <h2 className="text-2xl font-bold mb-4 text-green-600">Test Submitted Successfully!</h2>
-          <p className="text-lg">Your Score: {score} / {questions.length * 4}</p>
-          <button onClick={onBackToDashboard} className="mt-6 px-6 py-2 bg-blue-600 text-white rounded">Back to Dashboard</button>
+          <p className="text-lg mb-6">Your Score: {score} / {questions.length * 4}</p>
+          <button 
+            onClick={() => onBackToDashboard({
+              testId: test?.id || test?._id,
+              score,
+              totalMarks: questions.length * 4,
+              answers,
+              questionResults,
+              questions: questions
+            })} 
+            className="mt-6 px-6 py-2 bg-blue-600 text-white rounded font-bold shadow-md hover:bg-blue-700 transition"
+          >
+            View Full Analysis
+          </button>
         </div>
       </div>
     );
