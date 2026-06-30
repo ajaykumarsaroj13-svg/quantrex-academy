@@ -20,6 +20,7 @@ import ExamGoalChapterOverview from '../components/ExamGoalChapterOverview';
 import ChapterPYQDashboard from '../components/ChapterPYQDashboard';
 import { usePYQProgress } from '../hooks/usePYQProgress';
 import BookmarkGroupModal from '../components/BookmarkGroupModal';
+import StudentAnalyticsDashboard from '../components/StudentAnalyticsDashboard';
 
 
 
@@ -2310,48 +2311,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
 
             {/* AI PERFORMANCE ANALYTICS */}
             {activeTab === 'ai-analytics' && (
-              <div className="space-y-6">
-                <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">AI performance Analytics</h3>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="p-5 bg-cyberdark border border-white/5 rounded-xl space-y-4">
-                    <h4 className="text-white font-bold text-xs uppercase tracking-wider font-mono">Chapter-wise Strengths</h4>
-                    <div className="space-y-3 font-mono text-xs">
-                      {[
-                        { topic: 'Calculus (Limits, Integrals)', rate: 82, color: 'bg-electric' },
-                        { topic: 'Algebra (Matrices, Complex)', rate: 75, color: 'bg-gold' },
-                        { topic: 'Coordinate Geometry', rate: 58, color: 'bg-red-500' },
-                        { topic: 'Probability & Stats', rate: 64, color: 'bg-platinum' }
-                      ].map((t, idx) => (
-                        <div key={idx} className="space-y-1">
-                          <div className="flex justify-between text-[10px]">
-                            <span className="text-gray-400">{t.topic}</span>
-                            <span className="text-white font-bold">{t.rate}% Accuracy</span>
-                          </div>
-                          <div className="h-1.5 w-full bg-obsidian rounded-full overflow-hidden">
-                            <div className={`h-full ${t.color}`} style={{ width: `${t.rate}%` }} />
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="p-5 bg-cyberdark border border-white/5 rounded-xl space-y-4">
-                    <h4 className="text-white font-bold text-xs uppercase tracking-wider font-mono flex items-center gap-1">
-                      <ShieldCheck className="h-4 w-4 text-gold" />
-                      AI Rank Predictor v2.0
-                    </h4>
-                    <div className="text-center p-4 bg-obsidian/60 border border-white/5 rounded-lg space-y-2">
-                      <span className="text-[10px] text-gray-500 font-mono uppercase block">Estimated JEE Adv Rank</span>
-                      <h2 className="text-2xl font-bold font-display text-glow-gold">AIR 1,200 - 1,800</h2>
-                      <p className="text-[10px] text-gray-400 font-mono leading-relaxed">Based on weekly performance metrics and daily mock streak patterns.</p>
-                    </div>
-                    <div className="bg-emerald-950/20 border border-emerald-900 text-emerald-400 p-3 rounded-lg text-[10px] font-mono leading-relaxed">
-                      💡 **AI Recommendation:** Spend 3 hours reviewing conic section transformations. Your accuracy in Ellipse intersection lines is below JEE average.
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <StudentAnalyticsDashboard user={user} syllabus={syllabus} isLight={isLight} />
             )}
 
             {/* AI DOUBT SOLVER CHAT PANEL */}
