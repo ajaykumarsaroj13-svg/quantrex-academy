@@ -26,6 +26,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   const [currentQIdx, setCurrentQIdx]   = useState(0);
   const [answers, setAnswers]           = useState({});
   const [statusMap, setStatusMap]       = useState({});
+  const [timeSpentMap, setTimeSpentMap] = useState({});
   const [timeLeft, setTimeLeft]         = useState(180 * 60);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [numericalInput, setNumericalInput]   = useState('');
@@ -56,6 +57,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
              const savedState = JSON.parse(savedStateJson);
              if (savedState.answers) setAnswers(savedState.answers);
              if (savedState.statusMap) setStatusMap(savedState.statusMap);
+             if (savedState.timeSpentMap) setTimeSpentMap(savedState.timeSpentMap);
              if (savedState.timeLeft) setTimeLeft(savedState.timeLeft);
              if (savedState.currentSubjectIdx !== undefined) setCurrentSubjectIdx(savedState.currentSubjectIdx);
              if (savedState.currentSection !== undefined) setCurrentSection(savedState.currentSection);
@@ -106,39 +108,6 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
     });
   }
 
-  // ── Timer ────────────────────────────────────────────────────
-  useEffect(() => {
-    if (!testData || loading || mode === 'practice') return;
-    timerRef.current = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev <= 1) { clearInterval(timerRef.current); handleAutoSubmit(); return 0; }
-        return prev - 1;
-      });
-    }, 1000);
-    return () => clearInterval(timerRef.current);
-  }, [testData, loading, mode]);
-
-  // ── Auto-save State ──────────────────────────────────────────
-  useEffect(() => {
-    if (loading || mode === 'practice' || !testId || !testData) return;
-    const stateToSave = {
-      answers,
-      statusMap,
-      timeLeft,
-      currentSubjectIdx,
-      currentSection,
-      currentQIdx
-    };
-    localStorage.setItem(`quantrex_exam_state_${testId}`, JSON.stringify(stateToSave));
-  }, [answers, statusMap, timeLeft, currentSubjectIdx, currentSection, currentQIdx, loading, mode, testId, testData]);
-
-  // ── Re-render MathJax ────────────────────────────────────────
-  useEffect(() => {
-    setTimeout(() => { if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise(); }, 120);
-    setShowSolution(false);
-    setAnswerChecked(false);
-  }, [currentSubjectIdx, currentSection, currentQIdx]);
-
   // ── Derived data ─────────────────────────────────────────────
   // Get subjects present in this paper, in NTA order
   const subjects = (() => {
@@ -184,6 +153,49 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
     const secs = [...new Set(qs.map(q => q.section || 'A'))];
     return secs.sort();
   };
+
+
+  // ── Timer ────────────────────────────────────────────────────
+  useEffect(() => {
+    if (!testData || loading || mode === 'practice') return;
+    timerRef.current = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) { clearInterval(timerRef.current); handleAutoSubmit(); return 0; }
+        return prev - 1;
+      });
+      if (qKey) {
+        setTimeSpentMap(prev => ({
+          ...prev,
+          [qKey]: (prev[qKey] || 0) + 1
+        }));
+      }
+    }, 1000);
+    return () => clearInterval(timerRef.current);
+  }, [testData, loading, mode, qKey]);
+
+  // ── Auto-save State ──────────────────────────────────────────
+  useEffect(() => {
+    if (loading || mode === 'practice' || !testId || !testData) return;
+    const stateToSave = {
+      answers,
+      statusMap,
+      timeSpentMap,
+      timeLeft,
+      currentSubjectIdx,
+      currentSection,
+      currentQIdx
+    };
+    localStorage.setItem(`quantrex_exam_state_${testId}`, JSON.stringify(stateToSave));
+  }, [answers, statusMap, timeSpentMap, timeLeft, currentSubjectIdx, currentSection, currentQIdx, loading, mode, testId, testData]);
+
+  // ── Re-render MathJax ────────────────────────────────────────
+  useEffect(() => {
+    setTimeout(() => { if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise(); }, 120);
+    setShowSolution(false);
+    setAnswerChecked(false);
+  }, [currentSubjectIdx, currentSection, currentQIdx]);
+
+
 
   // ── Mark question as visited ─────────────────────────────────
   useEffect(() => {
@@ -374,8 +386,50 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
         }
       }
     });
+    const questionResults = testData?.questions?.map(q => {
+      const ua = answers[q.questionNumber];
+      const timeSpent = timeSpentMap[q.questionNumber] || 0;
+      let isAttempted = false;
+      let isCorrect = false;
+
+      if (ua !== undefined && ua !== null && ua !== '' && (!Array.isArray(ua) || ua.length > 0)) {
+        isAttempted = true;
+        if (q.questionType === 'NUMERICAL') {
+          if (String(ua).trim() === String(q.correctAnswer || '').trim()) isCorrect = true;
+        } else if (q.questionType === 'MCQM') {
+          const correctArr = Array.isArray(q.correctOptionsArray) ? q.correctOptionsArray : [Number(q.correctOption)];
+          const userArr = Array.isArray(ua) ? ua : [Number(ua)];
+          isCorrect = correctArr.length === userArr.length && correctArr.every(val => userArr.includes(val));
+        } else {
+          if (Number(ua) === Number(q.correctOption)) isCorrect = true;
+        }
+      }
+
+      return {
+        questionId: q.id || q.questionNumber,
+        isAttempted,
+        isCorrect,
+        userAnswer: ua,
+        timeSpent,
+        difficulty: q.difficulty || 'Medium',
+        topic: q.topic || 'General',
+        subject: q.subject || 'Miscellaneous'
+      };
+    }) || [];
+
     setShowSubmitModal(false);
-    if (onSubmit) onSubmit({ testId, score, correct, wrong, attempted, timeTaken, autoSubmitted: auto, answers, questions: testData?.questions });
+    if (onSubmit) onSubmit({ 
+      testId, 
+      score, 
+      correct, 
+      wrong, 
+      attempted, 
+      timeTaken, 
+      autoSubmitted: auto, 
+      answers, 
+      questions: testData?.questions,
+      questionResults 
+    });
   };
 
   const handleAutoSubmit = () => doSubmit(true);
