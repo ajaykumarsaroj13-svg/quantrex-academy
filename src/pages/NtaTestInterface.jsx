@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MistakeBooster from '../components/MistakeBooster';
+import { fixExamGoalHtml } from '../utils/htmlCleaner';
 
 export default function NtaTestInterface({ test, user, onBackToDashboard, mode = 'test', isLight = true }) {
   const [questions, setQuestions] = useState([]);
