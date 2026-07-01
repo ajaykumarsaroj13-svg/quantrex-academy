@@ -1,23 +1,23 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import axios from 'axios';
 
 /**
  * AI Generator for "Attempt Similar Question" (Mistake Booster AI)
- * Uses the Gemini API to generate a similar question based on the original.
+ * Uses the Gemini API or OpenAI API to generate a similar question based on the original.
  */
 export const generateSimilarQuestion = async (originalQuestion, count = 1) => {
   const { subject, type, questionType, marks, negativeMarks, difficulty, topic } = originalQuestion;
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.VITE_OPENAI_API_KEY;
 
   // Fallback to mock generation if API key is missing
   if (!apiKey) {
-    console.warn('VITE_GEMINI_API_KEY is not set. Falling back to mock generator.');
+    console.warn('AI API key is not set. Falling back to mock generator.');
     return generateMockSimilarQuestion(originalQuestion, count);
   }
 
-  try {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" }); // Using advanced reasoning model for NotebookLM-grade quality
+  const isOpenAI = apiKey.trim().startsWith('sk-');
 
+  try {
     const isNDA = subject?.toLowerCase().includes('english') || subject?.toLowerCase().includes('general ability') || subject?.toLowerCase().includes('nda');
     const isMathScience = subject?.toLowerCase().includes('math') || subject?.toLowerCase().includes('physics') || subject?.toLowerCase().includes('chemistry');
 
@@ -76,9 +76,39 @@ export const generateSimilarQuestion = async (originalQuestion, count = 1) => {
       }
     `;
 
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
+    let text = "";
+    if (isOpenAI) {
+      const response = await axios.post(
+        'https://api.openai.com/v1/chat/completions',
+        {
+          model: 'gpt-4o',
+          messages: [
+            {
+              role: 'system',
+              content: 'You are an expert academic examiner. Respond ONLY with a valid JSON array of objects, with no markdown formatting outside the JSON.'
+            },
+            {
+              role: 'user',
+              content: prompt
+            }
+          ],
+          temperature: 0.7
+        },
+        {
+          headers: {
+            'Authorization': `Bearer ${apiKey.trim()}`,
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+      text = response.data.choices[0].message.content;
+    } else {
+      const genAI = new GoogleGenerativeAI(apiKey);
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      text = response.text();
+    }
     
     // Parse the JSON response
     // Remove markdown code blocks if the model wrapped it
