@@ -106,10 +106,12 @@ export const generateCustomTest = async (baseUrl, chapterSlugs, types, questionC
                 const tk = typeKey.toUpperCase();
                 const typeMatches = shuffled.filter(q => {
                     const qType = (q.type || q.questionType || '').toUpperCase().trim();
+                    const hasOptions = Array.isArray(q.options) && q.options.length > 0;
+                    
                     if (tk === 'MCQ' || tk === 'SINGLE_CORRECT') {
-                        return qType === 'SINGLE_CORRECT' || qType === 'MCQ' || qType === 'SINGLE CORRECT' || (qType === '' && Array.isArray(q.options) && q.options.length > 0);
+                        return (qType === 'SINGLE_CORRECT' || qType === 'MCQ' || qType === 'SINGLE CORRECT' || qType === 'SCQ' || qType === '') && hasOptions;
                     } else if (tk === 'NUMERICAL') {
-                        return qType === 'NUMERICAL' || qType === 'INTEGER' || (qType === '' && Array.isArray(q.options) && q.options.length === 0);
+                        return qType === 'NUMERICAL' || qType === 'INTEGER' || !hasOptions;
                     } else if (tk === 'MULTI_CORRECT' || tk === 'MULTIPLE_CORRECT') {
                         return qType === 'MULTI_CORRECT' || qType === 'MCQM' || qType === 'MULTIPLE CORRECT' || qType === 'MULTIPLE_CORRECT';
                     } else if (tk === 'COMPREHENSION') {
