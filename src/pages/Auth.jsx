@@ -17,6 +17,7 @@ export default function Auth({ onLoginSuccess, setActivePage }) {
   
   // Registration Inputs
   const [name, setName] = useState('');
+  const [fatherName, setFatherName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
@@ -78,13 +79,14 @@ export default function Auth({ onLoginSuccess, setActivePage }) {
       }
 
       if (authMode === 'student-signup') {
-        if (!name || !phone || !email || !password) {
+        if (!name || !fatherName || !phone || !email || !password) {
           alert("Please fill all required fields.");
           return;
         }
         const mockUser = {
           id: 'usr_' + Math.random().toString(36).substr(2, 9),
           name: name,
+          fatherName: fatherName,
           email: email,
           phone: phone,
           class: studentClass,
@@ -268,6 +270,14 @@ export default function Auth({ onLoginSuccess, setActivePage }) {
                   <div className="relative">
                     <UserCheck className="absolute top-3 left-3 h-4 w-4 text-gray-500" />
                     <input type="text" required value={name} onChange={(e) => setName(e.target.value)} placeholder="John Doe" className="w-full pl-10 pr-4 py-3 bg-cyberdark/50 border border-white/10 focus:border-gold/50 text-sm rounded-lg text-white transition-colors outline-none" />
+                  </div>
+                </div>
+
+                <div className="space-y-1.5">
+                  <label className="text-[10px] font-bold text-gray-400 uppercase font-mono">Father's Name</label>
+                  <div className="relative">
+                    <UserCheck className="absolute top-3 left-3 h-4 w-4 text-gray-500" />
+                    <input type="text" required value={fatherName} onChange={(e) => setFatherName(e.target.value)} placeholder="Father's Full Name" className="w-full pl-10 pr-4 py-3 bg-cyberdark/50 border border-white/10 focus:border-gold/50 text-sm rounded-lg text-white transition-colors outline-none" />
                   </div>
                 </div>
 

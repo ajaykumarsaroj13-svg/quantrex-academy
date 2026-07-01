@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MistakeBooster from '../components/MistakeBooster';
 import { fixExamGoalHtml } from '../utils/htmlCleaner';
 
-export default function NtaTestInterface({ test, user, onBackToDashboard, mode = 'test', isLight = true }) {
+export default function NtaTestInterface({ test, user, onBackToDashboard, setActivePage, mode = 'test', isLight = true }) {
   const [questions, setQuestions] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState({}); // { qIdx: selectedOptionIdx }
@@ -13,13 +13,30 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
   const [score, setScore] = useState(0);
   const [questionResults, setQuestionResults] = useState([]);
   const [showExplanation, setShowExplanation] = useState(false);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+
+  // Section Splitting Helpers
+  const mcqIndices = questions.map((q, idx) => ({ q, idx })).filter(item => Array.isArray(item.q.options) && item.q.options.length > 0).map(item => item.idx);
+  const numericalIndices = questions.map((q, idx) => ({ q, idx })).filter(item => !Array.isArray(item.q.options) || item.q.options.length === 0).map(item => item.idx);
+  
+  const currentQ = questions[currentIdx];
+  const isCurrentMcq = currentQ && Array.isArray(currentQ.options) && currentQ.options.length > 0;
+  const currentSection = isCurrentMcq ? 'A' : 'B';
+  
+  const jumpToSection = (sec) => {
+    if (sec === 'A') {
+      if (mcqIndices.length > 0) setCurrentIdx(mcqIndices[0]);
+    } else {
+      if (numericalIndices.length > 0) setCurrentIdx(numericalIndices[0]);
+    }
+  };
 
   // Trigger MathJax re-render when question changes
   useEffect(() => {
     if (window.MathJax && window.MathJax.typesetPromise) {
       window.MathJax.typesetPromise().catch((err) => console.log('MathJax error:', err));
     }
-  }, [currentIdx, questions, showExplanation]);
+  }, [currentIdx, questions, showExplanation, isSubmitted]);
 
   useEffect(() => {
     if (test && test.questions) {
@@ -180,6 +197,26 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
        }
     });
 
+    let secACorrect = 0, secAIncorrect = 0, secAAttempted = 0;
+    let secBCorrect = 0, secBIncorrect = 0, secBAttempted = 0;
+
+    questions.forEach((q, i) => {
+      const qr = questionResults.find(r => r.questionId === (q.id || i));
+      const isMcq = Array.isArray(q.options) && q.options.length > 0;
+      if (qr?.isAttempted) {
+        if (isMcq) {
+          secAAttempted++;
+          if (qr.isCorrect) secACorrect++; else secAIncorrect++;
+        } else {
+          secBAttempted++;
+          if (qr.isCorrect) secBCorrect++; else secBIncorrect++;
+        }
+      }
+    });
+
+    const secATotal = mcqIndices.length;
+    const secBTotal = numericalIndices.length;
+
     return (
       <div className={`min-h-screen ${isLight ? 'bg-[#f8f9fa] text-slate-900' : 'bg-[#0a0a0c] text-white'} font-sans p-6 overflow-y-auto`}>
         <div className="max-w-4xl mx-auto space-y-8">
@@ -215,6 +252,55 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
               <div className={`text-sm font-bold uppercase tracking-wider mb-2 ${isLight ? 'text-red-700' : 'text-red-400'}`}>Incorrect</div>
               <div className={`text-4xl font-black ${isLight ? 'text-red-600' : 'text-red-500'}`}>{incorrect}</div>
             </div>
+          </div>
+
+          {/* Section-wise Analysis */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {secATotal > 0 && (
+              <div className={`p-6 rounded-2xl border ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-[#151515] border-white/10'}`}>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-blue-500 mb-4 border-b border-blue-500/20 pb-2 flex justify-between items-center">
+                  <span>Section A (MCQ)</span>
+                  <span className="text-xs text-gray-500 font-semibold">{secAAttempted} / {secATotal} Attempted</span>
+                </h3>
+                <div className="grid grid-cols-3 gap-2 text-center">
+                  <div>
+                    <div className="text-[10px] text-gray-500 uppercase font-bold">Correct</div>
+                    <div className="text-lg font-black text-emerald-500">{secACorrect}</div>
+                  </div>
+                  <div>
+                    <div className="text-[10px] text-gray-500 uppercase font-bold">Incorrect</div>
+                    <div className="text-lg font-black text-red-500">{secAIncorrect}</div>
+                  </div>
+                  <div>
+                    <div className="text-[10px] text-gray-500 uppercase font-bold">Score</div>
+                    <div className="text-lg font-black text-blue-500">{(secACorrect * 4) - secAIncorrect}</div>
+                  </div>
+                </div>
+              </div>
+            )}
+            
+            {secBTotal > 0 && (
+              <div className={`p-6 rounded-2xl border ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-[#151515] border-white/10'}`}>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-blue-500 mb-4 border-b border-blue-500/20 pb-2 flex justify-between items-center">
+                  <span>Section B (Numerical)</span>
+                  <span className="text-xs text-gray-500 font-semibold">{secBAttempted} / {secBTotal} Attempted</span>
+                </h3>
+                <div className="grid grid-cols-3 gap-2 text-center">
+                  <div>
+                    <div className="text-[10px] text-gray-500 uppercase font-bold">Correct</div>
+                    <div className="text-lg font-black text-emerald-500">{secBCorrect}</div>
+                  </div>
+                  <div>
+                    <div className="text-[10px] text-gray-500 uppercase font-bold">Incorrect</div>
+                    <div className="text-lg font-black text-red-500">{secBIncorrect}</div>
+                  </div>
+                  <div>
+                    <div className="text-[10px] text-gray-500 uppercase font-bold">Score</div>
+                    <div className="text-lg font-black text-blue-500">{(secBCorrect * 4) - secBIncorrect}</div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Solutions List */}
@@ -296,7 +382,22 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
 
                   <div className={`p-6 rounded-xl border ${isLight ? 'bg-blue-50 border-blue-100' : 'bg-blue-900/10 border-blue-500/20'}`}>
                     <h4 className="text-sm font-bold uppercase tracking-wider text-blue-500 mb-4 border-b border-blue-500/20 pb-2">Solution Explanation</h4>
-                    <div dangerouslySetInnerHTML={{ __html: q.explanation || q.solution || "Solution not available." }} className="tex2jax_process text-sm leading-relaxed" />
+                    {user ? (
+                      <div dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(q.explanation || q.solution || "Solution not available.") }} className="tex2jax_process text-sm leading-relaxed" />
+                    ) : (
+                      <div className="text-center py-4 space-y-3">
+                        <p className={`text-xs ${isLight ? 'text-gray-600' : 'text-gray-400'}`}>🔑 Detailed explanation is locked. Log in to access step-by-step solutions.</p>
+                        <button 
+                          onClick={() => {
+                            localStorage.setItem('quantrex_redirect_after_login', 'exam-mode');
+                            if (setActivePage) setActivePage('login');
+                          }}
+                          className="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-xs font-bold rounded-lg uppercase tracking-wider hover:from-blue-700 hover:to-blue-800 transition-all shadow-md"
+                        >
+                          Login to Unlock Detailed Solution
+                        </button>
+                      </div>
+                    )}
                   </div>
 
                   {(!isAttempted || !isCorrect) && (
@@ -313,7 +414,6 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
     );
   }
 
-  const currentQ = questions[currentIdx];
   if (!currentQ) return <div className="bg-white min-h-screen">Loading...</div>;
 
   const counts = { answered: 0, not_answered: 0, not_visited: 0, marked: 0, answered_marked: 0 };
@@ -338,9 +438,25 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
         </div>
       </header>
 
-      {/* Subject Tabs */}
-      <div className={`flex text-sm border-b ${isLight ? 'bg-white border-gray-300' : 'bg-[#1a1a1a] border-white/10'}`}>
-        <button className="px-6 py-2 bg-blue-600 text-white font-bold rounded-t-lg ml-2 mt-1">Mathematics</button>
+      {/* Subject & Section Tabs */}
+      <div className={`flex flex-col border-b ${isLight ? 'bg-white border-gray-300' : 'bg-[#1a1a1a] border-white/10'}`}>
+        <div className="flex text-sm">
+          <button className="px-6 py-2 bg-blue-600 text-white font-bold rounded-t-lg ml-2 mt-1">Mathematics</button>
+        </div>
+        <div className={`flex text-xs px-3 py-1.5 gap-2 border-t ${isLight ? 'bg-gray-50 border-gray-200' : 'bg-[#151515] border-white/5'}`}>
+          <button 
+            onClick={() => jumpToSection('A')} 
+            className={`px-4 py-1.5 rounded font-black uppercase transition-all ${currentSection === 'A' ? 'bg-blue-600 text-white shadow-md' : (isLight ? 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300' : 'bg-[#222] text-gray-300 hover:bg-[#333] border border-white/10')}`}
+          >
+            Section A (MCQ)
+          </button>
+          <button 
+            onClick={() => jumpToSection('B')} 
+            className={`px-4 py-1.5 rounded font-black uppercase transition-all ${currentSection === 'B' ? 'bg-blue-600 text-white shadow-md' : (isLight ? 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300' : 'bg-[#222] text-gray-300 hover:bg-[#333] border border-white/10')}`}
+          >
+            Section B (Numerical)
+          </button>
+        </div>
       </div>
 
       <div className="flex flex-1 overflow-hidden">
@@ -381,17 +497,20 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
                 
                 <div className="space-y-4 mt-6">
                   {currentQ.type === 'integer' || currentQ.options.length === 0 ? (
-                    <div className="flex items-center gap-4 p-4 border border-blue-200 bg-blue-50/50 rounded-lg shadow-sm">
+                    <div className={`flex items-center gap-4 p-4 border rounded-lg shadow-sm ${isLight ? 'border-blue-200 bg-blue-50/50' : 'border-blue-900/30 bg-blue-950/20'}`}>
                       <span className={`font-bold text-sm ${isLight ? 'text-blue-900' : 'text-blue-400'}`}>Enter Numerical Answer:</span>
                       <input 
                         type="number"
-                        className="px-4 py-2 border border-gray-300 rounded font-mono text-base focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none w-48 shadow-inner"
+                        className={`px-4 py-2 border rounded font-mono text-base outline-none w-48 shadow-inner ${isLight ? 'bg-white border-gray-300 text-gray-800 focus:ring-2 focus:ring-blue-200 focus:border-blue-500' : 'bg-[#222] border-white/10 text-white focus:ring-2 focus:ring-blue-900/30 focus:border-blue-500'}`}
                         placeholder="e.g. 42"
                         value={answers[currentIdx] || ''}
                         onChange={(e) => {
                            const val = e.target.value;
                            setAnswers(prev => ({ ...prev, [currentIdx]: val }));
-                           if (mode === 'practice' && val !== '') setShowExplanation(true);
+                           if (mode === 'practice' && val !== '') {
+                             if (!user) setShowAuthModal(true);
+                             else setShowExplanation(true);
+                           }
                         }}
                       />
                     </div>
@@ -405,7 +524,10 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
                           checked={answers[currentIdx] === oIdx}
                           onChange={() => {
                              setAnswers(prev => ({ ...prev, [currentIdx]: oIdx }));
-                             if (mode === 'practice') setShowExplanation(true);
+                             if (mode === 'practice') {
+                               if (!user) setShowAuthModal(true);
+                               else setShowExplanation(true);
+                             }
                           }}
                         />
                         <span className="text-sm font-medium tex2jax_process flex-1" dangerouslySetInnerHTML={{ __html: opt }} />
@@ -419,7 +541,10 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
                   <div className="mt-8 pt-6 border-t border-dashed border-gray-300">
                     {!showExplanation ? (
                       <button 
-                        onClick={() => setShowExplanation(true)}
+                        onClick={() => {
+                          if (!user) setShowAuthModal(true);
+                          else setShowExplanation(true);
+                        }}
                         className="px-4 py-2 bg-purple-100 hover:bg-purple-200 text-purple-800 font-bold rounded-lg text-xs uppercase tracking-wider transition-colors"
                       >
                         Reveal Answer & Explanation
@@ -431,7 +556,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
                           {currentQ.type !== 'integer' && currentQ.options.length > 0 && <span className="font-bold text-sm text-gray-800">Option {String.fromCharCode(65 + (currentQ.correctOption === 'A' ? 0 : currentQ.correctOption === 'B' ? 1 : currentQ.correctOption === 'C' ? 2 : 3))}</span>}
                         </div>
                         <h4 className="text-sm font-bold text-purple-900 border-b border-purple-200/50 pb-2">Detailed Explanation</h4>
-                        <div className="text-sm text-gray-700 leading-relaxed tex2jax_process" dangerouslySetInnerHTML={{ __html: currentQ.explanation }} />
+                        <div className="text-sm text-gray-700 leading-relaxed tex2jax_process" dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(currentQ.explanation || currentQ.solution || "Solution not available.") }} />
                         {(() => {
                            let correctIdx = currentQ.correctOption;
                            if (typeof correctIdx === 'string') correctIdx = correctIdx.charCodeAt(0) - 65;
@@ -481,25 +606,53 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
           </div>
 
           <div className={`flex-1 p-4 overflow-y-auto ${isLight ? 'bg-[#dbeaf4]' : 'bg-[#0a0a0c]'}`}>
-            <div className={`font-bold px-3 py-1.5 mb-3 rounded shadow-sm ${isLight ? 'bg-[#1a5b8c] text-white' : 'bg-[#1a1a1a] text-blue-300 border border-white/10'}`}>Mathematics</div>
-            <div className="flex flex-wrap gap-2.5">
-              {questions.map((_, i) => {
-                const s = statusMap[i];
-                let shapeClass = "w-9 h-9 flex items-center justify-center text-sm font-bold cursor-pointer text-white shadow hover:scale-105 transition-transform ";
-                if (s === 'answered') shapeClass += "bg-[#22c55e] rounded-t-full rounded-l-full border border-green-700";
-                else if (s === 'not_answered') shapeClass += "bg-[#ef4444] rounded-t-full rounded-r-full border border-red-700";
-                else if (s === 'marked') shapeClass += "bg-[#9333ea] rounded-full border border-purple-800";
-                else if (s === 'answered_marked') shapeClass += "bg-[#9333ea] rounded-full border border-purple-800 relative";
-                else shapeClass += isLight ? "bg-white border border-[#cbd5e1] text-black rounded" : "bg-[#222] border border-white/20 text-gray-200 rounded";
-                
-                return (
-                  <div key={i} onClick={() => jumpToQuestion(i)} className={shapeClass}>
-                    {i + 1}
-                    {s === 'answered_marked' && <div className="absolute bottom-0 right-0 w-3 h-3 bg-[#22c55e] rounded-full border-2 border-white"></div>}
-                  </div>
-                );
-              })}
-            </div>
+            {mcqIndices.length > 0 && (
+              <>
+                <div className={`font-bold px-3 py-1.5 mb-2 rounded shadow-sm text-xs ${isLight ? 'bg-[#1a5b8c] text-white' : 'bg-[#1a1a1a] text-blue-300 border border-white/10'}`}>Section A (MCQ)</div>
+                <div className="flex flex-wrap gap-2.5 mb-5">
+                  {mcqIndices.map((i) => {
+                    const s = statusMap[i];
+                    let shapeClass = "w-9 h-9 flex items-center justify-center text-sm font-bold cursor-pointer text-white shadow hover:scale-105 transition-transform ";
+                    if (s === 'answered') shapeClass += "bg-[#22c55e] rounded-t-full rounded-l-full border border-green-700";
+                    else if (s === 'not_answered') shapeClass += "bg-[#ef4444] rounded-t-full rounded-r-full border border-red-700";
+                    else if (s === 'marked') shapeClass += "bg-[#9333ea] rounded-full border border-purple-800";
+                    else if (s === 'answered_marked') shapeClass += "bg-[#9333ea] rounded-full border border-purple-800 relative";
+                    else shapeClass += isLight ? "bg-white border border-[#cbd5e1] text-black rounded" : "bg-[#222] border border-white/20 text-gray-200 rounded";
+                    
+                    return (
+                      <div key={i} onClick={() => jumpToQuestion(i)} className={shapeClass}>
+                        {i + 1}
+                        {s === 'answered_marked' && <div className="absolute bottom-0 right-0 w-3 h-3 bg-[#22c55e] rounded-full border-2 border-white"></div>}
+                      </div>
+                    );
+                  })}
+                </div>
+              </>
+            )}
+
+            {numericalIndices.length > 0 && (
+              <>
+                <div className={`font-bold px-3 py-1.5 mb-2 rounded shadow-sm text-xs ${isLight ? 'bg-[#1a5b8c] text-white' : 'bg-[#1a1a1a] text-blue-300 border border-white/10'}`}>Section B (Numerical)</div>
+                <div className="flex flex-wrap gap-2.5">
+                  {numericalIndices.map((i) => {
+                    const s = statusMap[i];
+                    let shapeClass = "w-9 h-9 flex items-center justify-center text-sm font-bold cursor-pointer text-white shadow hover:scale-105 transition-transform ";
+                    if (s === 'answered') shapeClass += "bg-[#22c55e] rounded-t-full rounded-l-full border border-green-700";
+                    else if (s === 'not_answered') shapeClass += "bg-[#ef4444] rounded-t-full rounded-r-full border border-red-700";
+                    else if (s === 'marked') shapeClass += "bg-[#9333ea] rounded-full border border-purple-800";
+                    else if (s === 'answered_marked') shapeClass += "bg-[#9333ea] rounded-full border border-purple-800 relative";
+                    else shapeClass += isLight ? "bg-white border border-[#cbd5e1] text-black rounded" : "bg-[#222] border border-white/20 text-gray-200 rounded";
+                    
+                    return (
+                      <div key={i} onClick={() => jumpToQuestion(i)} className={shapeClass}>
+                        {i + 1}
+                        {s === 'answered_marked' && <div className="absolute bottom-0 right-0 w-3 h-3 bg-[#22c55e] rounded-full border-2 border-white"></div>}
+                      </div>
+                    );
+                  })}
+                </div>
+              </>
+            )}
           </div>
 
           {/* Submit Button (NTA puts it under palette) */}
@@ -508,6 +661,37 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
           </div>
         </div>
       </div>
+
+      {showAuthModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/65 backdrop-blur-sm p-4 animate-fade-in">
+          <div className={`w-full max-w-md p-6 rounded-2xl shadow-2xl border transition-all scale-100 ${isLight ? 'bg-white border-gray-200 text-gray-800' : 'bg-zinc-900 border-white/10 text-white'}`}>
+            <div className="flex items-center gap-3 text-amber-500 mb-4">
+              <span className="text-2xl">🔑</span>
+              <h3 className="text-lg font-black uppercase tracking-wider">Solution Locked</h3>
+            </div>
+            <p className={`text-sm mb-6 leading-relaxed ${isLight ? 'text-gray-600' : 'text-gray-300'}`}>
+              Detailed step-by-step explanations and math solutions are reserved for registered users. Please log in or create an account to unlock all features of Quantrex Academy!
+            </p>
+            <div className="flex justify-end gap-3">
+              <button 
+                onClick={() => setShowAuthModal(false)}
+                className={`px-4 py-2 text-xs font-bold rounded-lg uppercase tracking-wider transition-colors ${isLight ? 'bg-gray-100 hover:bg-gray-200 text-gray-700' : 'bg-white/5 hover:bg-white/10 text-gray-300'}`}
+              >
+                Close
+              </button>
+              <button 
+                onClick={() => {
+                  localStorage.setItem('quantrex_redirect_after_login', 'exam-mode');
+                  if (setActivePage) setActivePage('login');
+                }}
+                className="px-5 py-2 text-xs font-bold rounded-lg uppercase tracking-wider bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-md transition-all"
+              >
+                Login / Register
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

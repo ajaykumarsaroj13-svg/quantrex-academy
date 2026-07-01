@@ -498,7 +498,7 @@ export default function App() {
       );
       case 'test-series-exam': return <TestSeriesExam testId={activeTestId} mode={activeTestMode} user={user} onSubmit={handleTestSubmit} onExit={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} />;
       case 'test-series-result': return <TestSeriesResult result={testResult} user={user} onBack={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')} onRetake={() => { if (activeTestId) handleStartTestSeries(activeTestId, activeTestMode, localStorage.getItem('quantrex_test_source')); }} />;
-      case 'exam-mode': return <NtaTestInterface test={examTest} user={user} onBackToDashboard={() => setActivePage('student-dashboard')} mode="test" isLight={isLight} />;
+      case 'exam-mode': return <NtaTestInterface test={examTest} user={user} onBackToDashboard={() => setActivePage('student-dashboard')} setActivePage={setActivePage} mode="test" isLight={isLight} />;
       default: return null;
     }
   };

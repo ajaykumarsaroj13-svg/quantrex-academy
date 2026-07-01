@@ -58,6 +58,16 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
           Home
         </button>
 
+        {!user && (
+          <button
+            onClick={() => setActivePage('login')}
+            className="text-[10px] tracking-wider uppercase text-amber-500 hover:text-amber-400 font-black transition-all duration-200 hover:scale-105 border border-amber-500/30 px-2.5 py-1 rounded bg-amber-500/5 hover:bg-amber-500/10 flex items-center gap-1.5 animate-pulse"
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            Login (Access All Features)
+          </button>
+        )}
+
         <button
           onClick={() => setActivePage('student-dashboard')}
           className={`uppercase transition-all duration-200 hover:scale-105 flex items-center gap-1 ${
