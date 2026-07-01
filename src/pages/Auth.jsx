@@ -10,6 +10,8 @@ import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
 import BookOpen from 'lucide-react/dist/esm/icons/book-open';
 import Target from 'lucide-react/dist/esm/icons/target';
 import GraduationCap from 'lucide-react/dist/esm/icons/graduation-cap';
+import Trophy from 'lucide-react/dist/esm/icons/trophy';
+import Layers from 'lucide-react/dist/esm/icons/layers';
 
 export default function Auth({ onLoginSuccess, setActivePage }) {
   const [authMode, setAuthMode] = useState('student-login'); // student-login, student-signup, admin-login
@@ -204,23 +206,81 @@ export default function Auth({ onLoginSuccess, setActivePage }) {
             <p className="text-sm font-mono text-gray-400">Where Ambition Meets Excellence.</p>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4 max-h-[420px] overflow-y-auto pr-2 custom-scrollbar">
+            <span className="text-[9px] uppercase font-black tracking-widest text-gold/80 block border-b border-gold/10 pb-1.5 mb-2">Portal Access Includes:</span>
+            
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center shrink-0 border border-gold/20">
-                <Target className="h-4 w-4 text-gold" />
+              <div className="w-8 h-8 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 border border-blue-500/20">
+                <Target className="h-4 w-4 text-blue-400" />
               </div>
               <div>
-                <h4 className="text-white text-sm font-bold">Ultimate Test Series</h4>
-                <p className="text-xs text-gray-400 mt-1">Unlock 530+ Premium Tests for JEE, NDA, and Boards.</p>
+                <h4 className="text-white text-xs font-bold flex items-center gap-1.5">
+                  JEE Main Test Series
+                  <span className="text-[8px] bg-blue-500/20 text-blue-400 font-extrabold px-1.5 py-0.5 rounded uppercase">Full Syllabus</span>
+                </h4>
+                <p className="text-[10px] text-gray-400 mt-0.5">Topic-wise practice, mock exams, and instant grading.</p>
               </div>
             </div>
+
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0 border border-blue-500/20">
-                <BookOpen className="h-4 w-4 text-blue-400" />
+              <div className="w-8 h-8 rounded-xl bg-amber-500/10 flex items-center justify-center shrink-0 border border-amber-500/20">
+                <Trophy className="h-4 w-4 text-amber-400" />
               </div>
               <div>
-                <h4 className="text-white text-sm font-bold">Detailed Analytics</h4>
-                <p className="text-xs text-gray-400 mt-1">Identify weaknesses and track your rank improvement.</p>
+                <h4 className="text-white text-xs font-bold flex items-center gap-1.5">
+                  JEE Advanced Mock Tests
+                  <span className="text-[8px] bg-amber-500/20 text-amber-400 font-extrabold px-1.5 py-0.5 rounded uppercase">Advanced</span>
+                </h4>
+                <p className="text-[10px] text-gray-400 mt-0.5">Vibrant MCQs (multi-correct) and numerical type tests.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="w-8 h-8 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20">
+                <GraduationCap className="h-4 w-4 text-emerald-400" />
+              </div>
+              <div>
+                <h4 className="text-white text-xs font-bold flex items-center gap-1.5">
+                  NDA (Maths & GAT) Mock
+                  <span className="text-[8px] bg-emerald-500/20 text-emerald-400 font-extrabold px-1.5 py-0.5 rounded uppercase">Defense</span>
+                </h4>
+                <p className="text-[10px] text-gray-400 mt-0.5">Exam-oriented GAT papers & specialized math series.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="w-8 h-8 rounded-xl bg-purple-500/10 flex items-center justify-center shrink-0 border border-purple-500/20">
+                <BookOpen className="h-4 w-4 text-purple-400" />
+              </div>
+              <div>
+                <h4 className="text-white text-xs font-bold flex items-center gap-1.5">
+                  Boards & Foundation
+                  <span className="text-[8px] bg-purple-500/20 text-purple-400 font-extrabold px-1.5 py-0.5 rounded uppercase">11th / 12th</span>
+                </h4>
+                <p className="text-[10px] text-gray-400 mt-0.5">Board pattern mock tests and chapter-wise references.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="w-8 h-8 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0 border border-cyan-500/20">
+                <Layers className="h-4 w-4 text-cyan-400" />
+              </div>
+              <div>
+                <h4 className="text-white text-xs font-bold flex items-center gap-1.5">
+                  Handbooks & Solutions
+                  <span className="text-[8px] bg-cyan-500/20 text-cyan-400 font-extrabold px-1.5 py-0.5 rounded uppercase">PDFs & Formulas</span>
+                </h4>
+                <p className="text-[10px] text-gray-400 mt-0.5">Complete formula books, study modules & detailed solutions.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <div className="w-8 h-8 rounded-xl bg-pink-500/10 flex items-center justify-center shrink-0 border border-pink-500/20">
+                <ShieldCheck className="h-4 w-4 text-pink-400" />
+              </div>
+              <div>
+                <h4 className="text-white text-xs font-bold">AI Dashboard & Analytics</h4>
+                <p className="text-[10px] text-gray-400 mt-0.5">Real-time stats tracking, average accuracy, and mistake analysis.</p>
               </div>
             </div>
           </div>

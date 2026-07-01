@@ -32,7 +32,13 @@ import { generateCustomTest } from './utils/testGenerator';
 export default function App() {
   const [activePage, setActivePage] = useState(() => localStorage.getItem('quantrex_active_page') || 'home');
   const [token, setToken] = useState(localStorage.getItem('token') || null);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(() => {
+    const savedUser = localStorage.getItem('user');
+    if (savedUser) {
+      try { return JSON.parse(savedUser); } catch (e) { return null; }
+    }
+    return null;
+  });
   const [courses, setCourses] = useState([]);
   const [examTest, setExamTest] = useState(() => {
     const saved = localStorage.getItem('quantrex_exam_test');
