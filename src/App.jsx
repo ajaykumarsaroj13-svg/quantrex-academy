@@ -497,7 +497,7 @@ export default function App() {
       case 'book-chapters': return <BookChapterList book={readingBook} setActivePage={setActivePage} setPracticeChapter={setPracticeChapter} theme="dark" />;
       case 'book-practice': return <BookPractice chapter={practiceChapter} setActivePage={setActivePage} theme="dark" />;
       case 'home': return <Home setActivePage={setActivePage} user={user} courses={courses} setCourses={setCourses} onEnrollSuccess={handleEnrollSuccess} onStartLearning={handleStartLearning} toppers={toppers} homeData={homeData} isLight={isLight} />;
-      case 'login': return <Auth onLoginSuccess={handleLoginSuccess} setActivePage={setActivePage} />;
+      case 'login': return <Auth onLoginSuccess={handleLoginSuccess} setActivePage={setActivePage} isLight={isLight} />;
       case 'student-dashboard': return <StudentDashboard user={user} courses={courses} setActivePage={setActivePage} setExamTest={setExamTest} syllabus={syllabus} initialClass={initialClass} initialTab={initialTab} initialChapterTab={initialChapterTab} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} testsData={testsData} />;
       case 'admin-dashboard': return <AdminDashboard user={user} courses={courses} setCourses={setCourses} setCustomLogo={setCustomLogo} syllabus={syllabus} setSyllabus={setSyllabus} toppers={toppers} setToppers={setToppers} homeData={homeData} setHomeData={setHomeData} booksData={booksData} setBooksData={setBooksData} testsData={testsData} setTestsData={setTestsData} />;
       case 'test-series': return <TestSeriesPage user={user} onStartTest={handleStartTestSeries} onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} testsData={testsData} />;

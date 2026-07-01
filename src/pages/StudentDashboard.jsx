@@ -1584,685 +1584,639 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
         {!selectedVideo && (
           <div className="glass-panel p-8 rounded-2xl border border-white/5 min-h-[60vh] space-y-6">
             {activeTab === 'courses' && (
-              <div className="space-y-6 font-mono text-xs">
-                {/* Coaching Header Banner */}
-                {(() => {
-                  let titleText = "";
-                  let subText = "";
-                  
-                  if (selectedSyllabusClass === 'jee-mains') {
-                    titleText = "JEE MAIN";
-                    subText = "National Testing Agency";
-                  } else if (selectedSyllabusClass === 'jee-advanced') {
-                    titleText = "JEE ADVANCED";
-                    subText = "Indian Institutes of Technology";
-                  } else if (selectedSyllabusClass === 'nda') {
-                    titleText = "NDA";
-                    subText = "Union Public Service Commission";
-                  } else {
-                    return null;
+              <div className="space-y-4">
+                {/* Accordion Exam Panels */}
+                {[
+                  {
+                    id: "jee-mains",
+                    title: "JEE MAIN",
+                    subText: "Joint Entrance Examination - Main (conducted by NTA)",
+                    icon: "🎯",
+                    color: "#06b6d4", // cyan
+                    bg: "bg-cyan-500",
+                    border: "border-cyan-500",
+                    text: "text-cyan-400 font-extrabold shadow-[0_0_10px_rgba(6,182,212,0.3)]",
+                    activeBg: "bg-cyan-900 bg-opacity-20",
+                    subjects: syllabus["jee-mains"]?.subjects || {}
+                  },
+                  {
+                    id: "jee-advanced",
+                    title: "JEE ADVANCED",
+                    subText: "Joint Entrance Examination - Advanced (conducted by IITs)",
+                    icon: "🔥",
+                    color: "#3b82f6", // blue
+                    bg: "bg-blue-500",
+                    border: "border-blue-500",
+                    text: "text-blue-400 font-extrabold shadow-[0_0_10px_rgba(59,130,246,0.3)]",
+                    activeBg: "bg-blue-900 bg-opacity-20",
+                    subjects: syllabus["jee-advanced"]?.subjects || {}
+                  },
+                  {
+                    id: "nda",
+                    title: "NDA",
+                    subText: "National Defence Academy Examination (conducted by UPSC)",
+                    icon: "🎖️",
+                    color: "#f59e0b", // amber
+                    bg: "bg-amber-500",
+                    border: "border-amber-500",
+                    text: "text-amber-400 font-extrabold shadow-[0_0_10px_rgba(245,158,11,0.3)]",
+                    activeBg: "bg-amber-900 bg-opacity-20",
+                    subjects: syllabus["nda"]?.subjects || {}
+                  },
+                  {
+                    id: "class-12",
+                    title: "CLASS 12 Boards",
+                    subText: "Senior Secondary School Certificate Board Examination",
+                    icon: "🎓",
+                    color: "#10b981", // emerald
+                    bg: "bg-emerald-500",
+                    border: "border-emerald-500",
+                    text: "text-emerald-400 font-extrabold shadow-[0_0_10px_rgba(16,185,129,0.3)]",
+                    activeBg: "bg-emerald-900 bg-opacity-20",
+                    subjects: {} // empty for now (placeholder)
+                  },
+                  {
+                    id: "class-11",
+                    title: "CLASS 11 Foundation",
+                    subText: "Secondary School Foundation & Concept Building Stage",
+                    icon: "📚",
+                    color: "#8b5cf6", // violet
+                    bg: "bg-violet-500",
+                    border: "border-violet-500",
+                    text: "text-violet-400 font-extrabold shadow-[0_0_10px_rgba(139,92,246,0.3)]",
+                    activeBg: "bg-violet-900 bg-opacity-20",
+                    subjects: {} // empty for now (placeholder)
                   }
+                ].map((exam) => {
+                  const isOpen = selectedSyllabusClass === exam.id;
+                  const subjects = exam.subjects;
+                  const hasContent = Object.keys(subjects).length > 0;
                   
                   return (
-                    <div className="flex justify-center py-2 mb-2">
-                      <div className={`relative px-8 py-4 rounded-xl border flex flex-col items-center justify-center overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.3)] transition-all ${
-                        isLight 
-                          ? 'bg-gradient-to-r from-blue-50 via-white to-blue-50 border-blue-200' 
-                          : 'bg-gradient-to-r from-[#0f1225] via-cyberdark to-[#0f1225] border-cyan-500/30'
-                      }`}>
-                        {/* Glowing background effect */}
-                        {!isLight && (
-                          <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-electric/5 to-blue-500/10 pointer-events-none" />
-                        )}
-                        <h2 className={`relative font-logo font-black text-3xl md:text-4xl tracking-widest uppercase bg-gradient-to-r ${
-                          isLight
-                            ? 'from-blue-800 via-blue-600 to-amber-600'
-                            : 'from-cyan-300 via-electric to-blue-400'
-                        } bg-clip-text text-transparent leading-tight drop-shadow-sm`}>
-                          {titleText}
-                        </h2>
-                        <p className={`relative text-[10px] md:text-xs tracking-[0.3em] font-bold uppercase mt-1 font-logo ${
-                          isLight ? 'text-slate-500' : 'text-cyan-200/60'
-                        }`}>
-                          {subText}
-                        </p>
-                        
-                        {/* Decorative border highlights */}
-                        <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${isLight ? 'from-transparent via-blue-400 to-transparent' : 'from-transparent via-cyan-400 to-transparent'}`} />
-                        <div className={`absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r ${isLight ? 'from-transparent via-blue-200 to-transparent' : 'from-transparent via-cyan-500/50 to-transparent'}`} />
-                      </div>
-                    </div>
-                  );
-                })()}
-
-                <div className="flex flex-col gap-4 mb-6">
-                  {/* Class/Exam Selection — Colorful Strips */}
-                  <div className="flex flex-wrap gap-2">
-                    {[
-                      { id: 'jee-mains', label: 'JEE Mains', strip: 'from-cyan-400 to-blue-600', badge: 'bg-cyan-50 text-cyan-700 border-cyan-400', badgeDark: 'bg-cyan-900/40 text-cyan-300 border-cyan-500', dot: 'bg-cyan-500', stripStyle: '#06b6d4' },
-                      { id: 'jee-advanced', label: 'JEE Advanced', strip: 'from-violet-400 to-purple-700', badge: 'bg-purple-50 text-purple-700 border-purple-400', badgeDark: 'bg-purple-900/40 text-purple-300 border-purple-500', dot: 'bg-purple-500', stripStyle: '#8b5cf6' },
-                      { id: 'nda', label: 'NDA', strip: 'from-emerald-400 to-teal-600', badge: 'bg-emerald-50 text-emerald-700 border-emerald-400', badgeDark: 'bg-emerald-900/40 text-emerald-300 border-emerald-500', dot: 'bg-emerald-500', stripStyle: '#10b981' },
-                      { id: 'class-12', label: 'Class 12', strip: 'from-orange-400 to-red-600', badge: 'bg-orange-50 text-orange-700 border-orange-400', badgeDark: 'bg-orange-900/40 text-orange-300 border-orange-500', dot: 'bg-orange-500', stripStyle: '#f97316' },
-                      { id: 'class-11', label: 'Class 11', strip: 'from-rose-400 to-pink-600', badge: 'bg-rose-50 text-rose-700 border-rose-400', badgeDark: 'bg-pink-900/40 text-pink-300 border-pink-500', dot: 'bg-rose-500', stripStyle: '#fb7185' },
-                    ].map(cls => {
-                      const isActive = selectedSyllabusClass === cls.id;
-                      return (
-                        <button
-                          key={cls.id}
-                          onClick={() => {
-                            setSelectedSyllabusClass(cls.id);
+                    <div
+                      key={exam.id}
+                      className={
+                        "group rounded-2xl border transition-all duration-500 overflow-hidden " +
+                        (isOpen
+                          ? (isLight ? "bg-white shadow-xl border-slate-300" : "bg-gradient-to-b from-[#1F2833] to-[#0B0C10] shadow-[0_0_30px_rgba(6,182,212,0.15)] border-white border-opacity-15")
+                          : (isLight ? "bg-slate-50 hover:bg-white border-slate-200 hover:border-slate-300 hover:shadow-md" : "bg-[#111625] hover:bg-[#1a2135] border-white border-opacity-5 hover:border-opacity-10 hover:shadow-cyan-950 bg-opacity-80"))
+                      }
+                    >
+                      {/* Accordion Header */}
+                      <button
+                        onClick={() => {
+                          if (isOpen) {
+                            setSelectedSyllabusClass('');
+                          } else {
+                            setSelectedSyllabusClass(exam.id);
+                            setSelectedSyllabusSubject('');
                             setSelectedSyllabusChapterId('');
                             setChapterTab('videos');
                             setExamGoalOverviewConfig(null);
                             setActivePyqData(null);
-                            const actualClassKey = cls.id === 'jee-mains' ? 'mains' : cls.id === 'jee-advanced' ? 'advanced' : cls.id;
-                            const subjects = syllabus[actualClassKey]?.subjects || {};
-                            const firstSubjectKey = Object.keys(subjects)[0];
-                            if (firstSubjectKey) setSelectedSyllabusSubject(firstSubjectKey);
-                            else setSelectedSyllabusSubject('');
-                          }}
-                          style={isActive ? { borderLeftColor: cls.stripStyle, borderLeftWidth: '4px' } : { borderLeftColor: cls.stripStyle, borderLeftWidth: '3px' }}
-                          className={`relative flex items-center gap-2 py-2 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg ${
-                            isActive
-                              ? isLight
-                                ? `${cls.badge} shadow-md scale-[1.03]`
-                                : `${cls.badgeDark} shadow-lg scale-[1.03]`
-                              : isLight
-                                ? 'bg-white border-slate-200 text-slate-500 hover:border-slate-300'
-                                : 'bg-white/10 border-white/20 text-gray-300 hover:text-white'
-                          }`}
-                        >
-                          <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${cls.dot} ${isActive ? 'opacity-100' : 'opacity-60'}`} />
-                          {getExamLogo(cls.id, "w-4 h-4 rounded-full object-cover flex-shrink-0")}
-                          <span className="tracking-wider">{cls.label}</span>
-                          {isActive && <span className={`w-1.5 h-1.5 rounded-full ${cls.dot} animate-pulse ml-0.5`} />}
-                        </button>
-                      );
-                    })}
-                  </div>
-
-                  {/* Subject Selection — Colorful Strips */}
-                  {(() => {
-                    const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
-                    const subjects = syllabus[actualClassKey]?.subjects || {};
-                    if (Object.keys(subjects).length === 0) return null;
-                    const subjectColors = {
-                      mathematics: { dot: 'bg-blue-500', active: 'bg-blue-50 border-blue-500 text-blue-700', activeDark: 'bg-blue-900/40 border-blue-400 text-blue-300', stripStyle: '#3b82f6' },
-                      physics:     { dot: 'bg-amber-500', active: 'bg-amber-50 border-amber-500 text-amber-700', activeDark: 'bg-amber-900/40 border-amber-400 text-amber-300', stripStyle: '#f59e0b' },
-                      chemistry:   { dot: 'bg-emerald-500', active: 'bg-emerald-50 border-emerald-500 text-emerald-700', activeDark: 'bg-emerald-900/40 border-emerald-400 text-emerald-300', stripStyle: '#10b981' },
-                      biology:     { dot: 'bg-pink-500', active: 'bg-pink-50 border-pink-500 text-pink-700', activeDark: 'bg-pink-900/40 border-pink-400 text-pink-300', stripStyle: '#ec4899' },
-                      english:     { dot: 'bg-violet-500', active: 'bg-violet-50 border-violet-500 text-violet-700', activeDark: 'bg-violet-900/40 border-violet-400 text-violet-300', stripStyle: '#8b5cf6' },
-                    };
-                    const defaultColor = { dot: 'bg-teal-500', active: 'bg-teal-50 border-teal-500 text-teal-700', activeDark: 'bg-teal-900/40 border-teal-400 text-teal-300', stripStyle: '#14b8a6' };
-                    return (
-                      <div className="flex flex-wrap gap-2 items-center">
-                        {Object.entries(subjects).map(([subjKey, subjVal]) => {
-                          const isSubjActive = selectedSyllabusSubject === subjKey;
-                          const colors = subjectColors[subjKey] || defaultColor;
-                          return (
-                            <button
-                              key={subjKey}
-                              onClick={() => {
-                                setSelectedSyllabusSubject(subjKey);
-                                setSelectedSyllabusChapterId('');
-                                setChapterTab('videos');
-                                setExamGoalOverviewConfig(null);
-                                setActivePyqData(null);
-                              }}
-                              style={isSubjActive ? { borderLeftColor: colors.stripStyle, borderLeftWidth: '4px' } : { borderLeftColor: colors.stripStyle, borderLeftWidth: '3px' }}
-                              className={`relative flex items-center gap-2 py-1.5 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md ${
-                                isSubjActive
-                                  ? isLight ? colors.active : colors.activeDark
-                                  : isLight ? 'bg-white border-slate-200 text-slate-500 hover:border-slate-300' : 'bg-white/10 border-white/20 text-gray-300 hover:text-white'
-                              }`}
-                            >
-                              <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${colors.dot} ${isSubjActive ? 'opacity-100' : 'opacity-60'}`} />
-                              <span className="tracking-wider">{subjVal.label || subjKey}</span>
-                            </button>
-                          );
-                        })}
-                        {/* Custom Test Button */}
-                        <button
-                          onClick={() => {
-                            setSelectedSyllabusSubject('custom_test');
-                            setSelectedSyllabusChapterId('');
-                            setChapterTab('videos');
-                            setExamGoalOverviewConfig(null);
-                            setActivePyqData(null);
-                          }}
-                          style={selectedSyllabusSubject === 'custom_test' ? { borderLeftColor: '#f59e0b', borderLeftWidth: '4px' } : { borderLeftColor: '#f59e0b', borderLeftWidth: '3px' }}
-                          className={`relative flex items-center gap-2 ml-auto py-1.5 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md ${
-                            selectedSyllabusSubject === 'custom_test'
-                              ? isLight ? 'bg-amber-50 border-amber-500 text-amber-700' : 'bg-amber-900/40 border-amber-400 text-amber-300'
-                              : isLight ? 'bg-white border-amber-200 text-amber-600 hover:border-amber-400' : 'bg-amber-500/10 border-amber-500/30 text-amber-500 hover:border-amber-400'
-                          }`}
-                        >
-                          <svg className={`w-3.5 h-3.5 ${selectedSyllabusSubject === 'custom_test' ? 'opacity-100' : 'opacity-70'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                          </svg>
-                          <span className="tracking-wider">Create Custom Test</span>
-                        </button>
-                      </div>
-                    );
-                  })()}
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-2">
-                  {selectedSyllabusSubject === 'custom_test' ? (
-                    <div className="col-span-1 md:col-span-4">
-                      <CustomTestBuilder selectedSyllabusClass={selectedSyllabusClass} isLight={isLight} syllabus={syllabus} />
-                    </div>
-                  ) : (
-                    <>
-                      <div className={`md:col-span-1 space-y-3 pr-4 max-h-[70vh] overflow-y-auto custom-scrollbar border-r ${isLight ? 'border-slate-200' : 'border-white/5'}`}>
-                        <span className={`text-[10px] uppercase font-black tracking-widest flex items-center gap-2 mb-4 border-b pb-2 pl-2 border-l-4 ${isLight ? 'text-blue-700 border-slate-200 border-l-blue-600' : 'text-cyan-300 border-white/10 border-l-cyan-500'}`}>
-                          <span className={`w-1.5 h-1.5 rounded-full animate-ping ${isLight ? 'bg-blue-500' : 'bg-cyan-400'}`} />
-                          Chapters List
-                        </span>
-                        {(() => {
-                        const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
-                        return syllabus[actualClassKey]?.subjects?.[selectedSyllabusSubject]?.chapters?.map((ch, index) => {
-                          const isActive = selectedSyllabusChapterId === ch.id;
+                          }
+                        }}
+                        className="w-full px-6 py-5 flex items-center justify-between gap-4 text-left transition-all duration-300"
+                      >
+                        <div className="flex items-center gap-4 flex-1 min-w-0">
+                          {/* Animated Icon Container */}
+                          <div className={
+                            "w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-lg transition-transform duration-500 group-hover:scale-110 " +
+                            (isOpen ? "bg-gradient-to-br from-cyan-500 to-blue-600 text-white" : (isLight ? "bg-slate-100 text-slate-700" : "bg-white bg-opacity-5 text-gray-300"))
+                          }>
+                            {exam.icon}
+                          </div>
                           
-                          const premiumGradients = [
-                            'from-[#FF416C] to-[#FF4B2B]', // Vibrant Red-Orange
-                            'from-[#4776E6] to-[#8E54E9]', // Deep Blue-Purple
-                            'from-[#00B4DB] to-[#0083B0]', // Ocean Blue
-                            'from-[#f12711] to-[#f5af19]', // Fire
-                            'from-[#8E2DE2] to-[#4A00E0]', // Mystical Purple
-                            'from-[#11998e] to-[#38ef7d]', // Emerald
-                            'from-[#FC466B] to-[#3F5EFB]', // Pink Blue
-                            'from-[#00c6ff] to-[#0072ff]', // Sky Blue
-                            'from-[#F09819] to-[#EDDE5D]', // Golden Yellow
-                          ];
-                          
-                          const colorTheme = premiumGradients[index % premiumGradients.length];
-                          
-                          let icon = "➗";
-                          let lowerTitle = String(ch.title || '').toLowerCase();
-                          if (lowerTitle.includes("sets") || lowerTitle.includes("relations")) icon = "∪";
-                          else if (lowerTitle.includes("function")) icon = "ƒ(x)";
-                          else if (lowerTitle.includes("logarithm")) icon = "㏒";
-                          else if (lowerTitle.includes("trigonometr") || lowerTitle.includes("heights") || lowerTitle.includes("inverse")) icon = "θ";
-                          else if (lowerTitle.includes("quadratic")) icon = "x²";
-                          else if (lowerTitle.includes("complex")) icon = "𝑖";
-                          else if (lowerTitle.includes("permutation") || lowerTitle.includes("combination")) icon = "ⁿCₖ";
-                          else if (lowerTitle.includes("binomial")) icon = "(x+y)ⁿ";
-                          else if (lowerTitle.includes("sequence") || lowerTitle.includes("progression") || lowerTitle.includes("series")) icon = "∑";
-                          else if (lowerTitle.includes("straight line")) icon = "y=mx";
-                          else if (lowerTitle.includes("circle") || lowerTitle.includes("conic") || lowerTitle.includes("parabola") || lowerTitle.includes("ellipse") || lowerTitle.includes("hyperbola")) icon = "⦾";
-                          else if (lowerTitle.includes("limit") || lowerTitle.includes("continuity") || lowerTitle.includes("differentiability")) icon = "lim";
-                          else if (lowerTitle.includes("derivative") || lowerTitle.includes("differentiation")) icon = "dy/dx";
-                          else if (lowerTitle.includes("integral") || lowerTitle.includes("integration") || lowerTitle.includes("area")) icon = "∫";
-                          else if (lowerTitle.includes("differential equation")) icon = "∇";
-                          else if (lowerTitle.includes("vector") || lowerTitle.includes("3d")) icon = "v⃗";
-                          else if (lowerTitle.includes("matri") || lowerTitle.includes("determinant")) icon = "[ ]";
-                          else if (lowerTitle.includes("probability")) icon = "P(E)";
-                          else if (lowerTitle.includes("statistics")) icon = "σ";
-                          else if (lowerTitle.includes("mathematical reasoning")) icon = "p→q";
-
-                          return (
-                            <button
-                              key={ch.id}
-                              onClick={() => {
-                              setSelectedSyllabusChapterId(ch.id);
-                              setChapterTab('pyqs');
-                              
-                              setIsPyqLoading(true);
-                              setActivePyqData(null);
-
-                              const slug = (ch.url && ch.url !== '#') ? ch.url.split('/').pop() : (ch.id || '');
-                              let fetchSlug = String(slug || ch.id || 'unknown');
-                              if (selectedSyllabusClass === 'jee-advanced') {
-                                if (fetchSlug.startsWith('physics_')) fetchSlug = fetchSlug.replace('physics_', '');
-                                else if (fetchSlug.startsWith('chemistry_')) fetchSlug = fetchSlug.replace('chemistry_', '');
-                                else if (fetchSlug.startsWith('mathematics_')) fetchSlug = fetchSlug.replace('mathematics_', '');
-
-                                if (!fetchSlug.startsWith('adv-') && !fetchSlug.startsWith('ch_adv_math_')) {
-                                  fetchSlug = 'adv-' + fetchSlug;
-                                }
-                              }
-                              fetch(import.meta.env.BASE_URL + `data/questions/${fetchSlug}.json?_t=${Date.now()}`)
-                                .then(res => res.json())
-                                .then(data => {
-                                  if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
-                                    setActivePyqData(data);
-                                    return;
-                                  }
-                                  const topicsMap = {};
-                                  const topicsList = [];
-                                  const questionsArray = Array.isArray(data) ? data : (data.data || []);
-                                  if (questionsArray.length > 0) {
-                                    questionsArray.forEach(q => {
-                                      if (!q.id) q.id = q.question_id || q._id || `q_${Math.random().toString(36).slice(2)}`;
-                                      if (!q.correctAnswer && q.answer) q.correctAnswer = q.answer;
-                                      let tName = String(q.topic || 'General');
-                                      if (tName === slug || tName === ch.id) tName = 'All Questions';
-                                      const tId = tName.toLowerCase().replace(/\s+/g, '_');
-                                      if (!topicsMap[tId]) {
-                                        topicsMap[tId] = [];
-                                        topicsList.push({ id: tId, name: tName });
-                                      }
-                                      topicsMap[tId].push(q);
-                                    });
-                                  }
-                                  setActivePyqData({
-                                    topics: topicsList.length > 0 ? topicsList : [{ id: 'general', name: 'General Questions' }],
-                                    questions: Object.keys(topicsMap).length > 0 ? topicsMap : { 'general': [] }
-                                  });
-                                })
-                                .catch(err => {
-                                  console.error('Error fetching PYQs:', err);
-                                  setActivePyqData({ topics: [], questions: {} });
-                                })
-                                .finally(() => setIsPyqLoading(false));
-
-                              setExamGoalOverviewConfig({ id: ch.id, title: ch.title, startTab: 'topic' });
-                            }} className={`relative w-full p-3.5 pl-4 rounded-2xl text-[13px] text-left font-bold transition-all duration-300 flex items-center gap-3.5 overflow-hidden group border shadow-sm hover:-translate-y-0.5 ${
-                                isActive 
-                                  ? (isLight ? 'bg-blue-600 text-white border-transparent shadow-[0_4px_15px_rgba(37,99,235,0.25)]' : 'bg-[#13162b] text-white border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.5)]') 
-                                  : (isLight ? 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:border-slate-300' : 'bg-cyberdark/40 text-gray-300 border-white/5 hover:bg-[#1a1f3c] hover:border-white/10 hover:shadow-lg')
-                              }`}
-                            >
-                              {/* Active state animated background glow */}
-                              {isActive && (
-                                <div className={`absolute inset-0 bg-gradient-to-r ${colorTheme} opacity-10 pointer-events-none`} />
-                              )}
-                              
-                              {/* Colored left strip border indicator */}
-                              <div className={`absolute left-0 top-0 bottom-0 w-1.5 transition-all duration-300 ${isActive ? `bg-gradient-to-b ${colorTheme}` : 'bg-transparent group-hover:bg-white/10'}`} />
-                              
-                              {/* Sleek icon box */}
-                              <span className={`flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-[13px] font-black font-mono transition-all duration-300 shadow-inner ${
-                                isActive 
-                                  ? `bg-gradient-to-br ${colorTheme} text-white shadow-md` 
-                                  : (isLight 
-                                      ? 'bg-slate-100 text-slate-500 border border-slate-200 group-hover:text-white group-hover:bg-gradient-to-br group-hover:' + colorTheme + ' group-hover:shadow-[0_0_10px_rgba(37,99,235,0.2)]'
-                                      : 'bg-black/50 text-gray-400 border border-white/5 group-hover:text-white group-hover:bg-gradient-to-br group-hover:' + colorTheme + ' group-hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]')
-                              }`}>
-                                {icon}
-                              </span>
-                              <span className={`truncate flex-1 tracking-wide ${isActive ? 'drop-shadow-sm font-extrabold text-[13.5px]' : ''}`}>{ch.title}</span>
-                              
-                              {/* Tiny arrow indicator for active state */}
-                              {isActive && (
-                                <span className={`absolute right-3 opacity-80 flex items-center text-white drop-shadow-sm`}>
-                                  <ArrowRight className="w-4 h-4" />
+                          {/* Title and Subtitle */}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-3 flex-wrap">
+                              <h3 className={
+                                "text-lg font-black uppercase tracking-wider font-display transition-colors duration-300 " +
+                                (isOpen ? (isLight ? "text-slate-800" : "text-white") : (isLight ? "text-slate-700 group-hover:text-slate-800" : "text-gray-300 group-hover:text-white"))
+                              }>
+                                {exam.title}
+                              </h3>
+                              {isOpen && <div className="w-0.5 h-4 rounded-full opacity-40" style={{ backgroundColor: exam.color }} />}
+                              {isOpen && (
+                                <span className={
+                                  "px-2.5 py-0.5 rounded-full text-[10px] font-black tracking-widest uppercase border bg-opacity-10 shadow-sm animate-pulse " +
+                                  (hasContent
+                                    ? "bg-emerald-500 border-emerald-500 border-opacity-35 text-emerald-400"
+                                    : "bg-amber-500 border-amber-500 border-opacity-35 text-amber-400")
+                                }>
+                                  {hasContent ? 'Active Goal' : 'Coming Soon'}
                                 </span>
                               )}
-                            </button>
-                          );
-                        });
-                      })()}
-                  </div>
-
-                    <div className="md:col-span-3">
-                      {selectedSyllabusChapterId ? (
-                        (() => {
-                          const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
-                          const chapter = syllabus[actualClassKey]?.subjects?.[selectedSyllabusSubject]?.chapters?.find(ch => ch.id === selectedSyllabusChapterId);
-                          if (!chapter) return null;
-                          return (
-                            <div className="space-y-6 w-full animate-fade-in">
-                              <div className="flex items-center gap-3 mb-2">
-                                <div className="w-1.5 h-8 bg-gradient-to-b from-cyan-400 to-blue-600 rounded-full shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
-                                <h4 className={`font-black text-2xl uppercase tracking-widest drop-shadow-sm ${isLight ? 'text-slate-800' : 'text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400'}`}>
-                                  {chapter.title}
-                                </h4>
-                              </div>
-
-                              {/* Topics covered */}
-                              {chapter.topics && chapter.topics.length > 0 && (
-                                <div className={`p-5 rounded-2xl shadow-xl space-y-3 mb-6 border ${isLight ? 'bg-white border-slate-200' : 'bg-gradient-to-br from-[#1F2833]/80 to-[#0B0C10]/80 backdrop-blur-md border-white/10'}`}>
-                                  <span className={`text-[10px] uppercase font-black tracking-widest flex items-center gap-2 ${isLight ? 'text-blue-600' : 'text-cyan-400/80'}`}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
-                                    Topics Covered In This Chapter
-                                  </span>
-                                  <div className="flex flex-wrap gap-2.5">
-                                    {chapter.topics.map(t => (
-                                      <span key={t.id} className={`text-[11px] font-semibold px-3 py-1.5 rounded-lg border transition-all shadow-sm cursor-default ${
-                                        isLight 
-                                          ? 'text-slate-600 bg-slate-50 border-slate-200 hover:border-blue-500/50 hover:bg-blue-50 hover:text-blue-600' 
-                                          : 'text-gray-200 bg-white/5 border-white/10 hover:border-cyan-500/50 hover:bg-cyan-500/10 hover:text-cyan-300'
-                                      }`}>
-                                        {t.title}
-                                      </span>
-                                    ))}
-                                  </div>
-                                </div>
-                              )}
-
-                              {/* Premium Sub-tab selection */}
-                              <div className={`flex p-1.5 border rounded-xl justify-between gap-2 overflow-x-auto ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-cyberdark/50 border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.5)]'}`}>
-                                {[
-                                  { id: 'videos', label: 'Lectures', icon: '🎥' },
-                                  { id: 'pdfs', label: 'Notes/DPPs', icon: '📄' },
-                                  { id: 'formulas', label: 'Formulas', icon: '⚡' },
-                                  { id: 'pyqs', label: 'PYQs', icon: '📝' },
-                                  { id: 'mockTests', label: 'Chapter Tests', icon: '🏆' }
-                                ].map(subTab => {
-                                  const isActive = chapterTab === subTab.id;
+                            </div>
+                            <p className={
+                              "text-xs truncate transition-colors mt-0.5 font-medium " +
+                              (isOpen ? (isLight ? "text-slate-500" : "text-gray-400") : (isLight ? "text-slate-400 group-hover:text-slate-500" : "text-gray-500 group-hover:text-gray-400"))
+                            }>
+                              {exam.subText}
+                            </p>
+                          </div>
+                        </div>
+                        
+                        {/* Expand/Collapse Chevron Indicator */}
+                        <div className={
+                          "w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 " +
+                          (isOpen
+                            ? (isLight ? "border-slate-300 bg-slate-100 text-slate-800 rotate-90" : "border-white border-opacity-20 bg-white bg-opacity-10 text-white rotate-90")
+                            : (isLight ? "border-slate-200 text-slate-400 group-hover:border-slate-300 group-hover:text-slate-600" : "border-white border-opacity-5 text-gray-500 group-hover:border-opacity-15 group-hover:text-white"))
+                        }>
+                          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </button>
+                      
+                      {/* Accordion Content */}
+                      {isOpen && (
+                        <div className={
+                          "px-6 pb-6 pt-1 border-t transition-all duration-500 " +
+                          (isLight ? "border-slate-100 bg-white" : "border-white border-opacity-5 bg-[#0e121e] bg-opacity-40")
+                        }>
+                          {!hasContent ? (
+                            <p className="text-gray-500 italic text-center py-4">No content uploaded yet for this exam.</p>
+                          ) : (
+                            <div className="space-y-6">
+                              {/* Subject selection strips + Custom test button */}
+                              <div className="flex flex-wrap gap-2 items-center w-full">
+                                {Object.entries(subjects).map(([subjKey, subjVal]) => {
+                                  const isSubjActive = selectedSyllabusSubject === subjKey;
+                                  const colors = subjectColors[subjKey] || defaultColor;
                                   return (
                                     <button
-                                      key={subTab.id}
-                                      onClick={() => setChapterTab(subTab.id)}
-                                      className={`relative flex-1 flex flex-col sm:flex-row items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg transition-all duration-300 uppercase whitespace-nowrap overflow-hidden group border ${
-                                        isActive 
-                                          ? (isLight 
-                                              ? 'bg-blue-50 border-blue-200 text-blue-600 shadow-[0_4px_12px_rgba(37,99,235,0.08)] font-bold' 
-                                              : 'bg-gradient-to-r from-blue-600/20 to-cyan-500/20 border-cyan-400/30 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.15)] font-bold') 
-                                          : (isLight 
-                                              ? 'hover:bg-slate-50 border-transparent text-slate-500 hover:text-slate-700' 
-                                              : 'hover:bg-white/5 border-transparent text-gray-400 hover:text-gray-200')
-                                      }`}
+                                      key={subjKey}
+                                      onClick={() => {
+                                        setSelectedSyllabusSubject(subjKey);
+                                        setSelectedSyllabusChapterId('');
+                                        setChapterTab('videos');
+                                        setExamGoalOverviewConfig(null);
+                                        setActivePyqData(null);
+                                      }}
+                                      style={isSubjActive ? { borderLeftColor: colors.stripStyle, borderLeftWidth: '4px' } : { borderLeftColor: colors.stripStyle, borderLeftWidth: '3px' }}
+                                      className={
+                                        "relative flex items-center gap-2 py-1.5 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md " +
+                                        (isSubjActive
+                                          ? (isLight ? colors.active : colors.activeDark)
+                                          : (isLight ? "bg-white border-slate-200 text-slate-500 hover:border-slate-300" : "bg-white bg-opacity-10 border-white border-opacity-20 text-gray-300 hover:text-white"))
+                                      }
                                     >
-                                      {isActive && (
-                                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/10 to-transparent -translate-x-full group-hover:animate-sweep" />
-                                      )}
-                                      <span className="text-base sm:text-sm drop-shadow-md">{subTab.icon}</span>
-                                      <span className={`text-[10px] sm:text-xs font-bold tracking-wider ${isActive ? 'drop-shadow-[0_0_8px_rgba(6,182,212,0.5)]' : ''}`}>
-                                        {subTab.label}
-                                      </span>
+                                      <span className={"w-2.5 h-2.5 rounded-full flex-shrink-0 " + colors.dot + " " + (isSubjActive ? 'opacity-100' : 'opacity-60')} />
+                                      <span className="tracking-wider">{subjVal.label || subjKey}</span>
                                     </button>
                                   );
                                 })}
-                              </div>
-
-                              {/* Premium Tab Contents Panel */}
-                              <div className={`relative p-6 border rounded-2xl min-h-[35vh] overflow-hidden ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-gradient-to-b from-[#1F2833]/40 to-[#0B0C10]/40 backdrop-blur-md border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]'}`}>
-                                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[120px] bg-cyan-500/5 blur-[80px] pointer-events-none rounded-full" />
                                 
-                                {/* 1. Lectures */}
-                                {chapterTab === 'videos' && (
-                                  <div className="space-y-2">
-                                    {(!chapter.videos || chapter.videos.length === 0) ? (
-                                      <p className="text-gray-500 italic py-6 text-center">No video lectures uploaded yet for this chapter.</p>
-                                    ) : (
-                                      chapter.videos.map(v => {
-                                        const unlocked = isResourceUnlocked(v);
-                                        return (
-                                          <div key={v.id} className={`flex justify-between items-center p-3 rounded-lg border ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-cyberdark/60 border-white/5'}`}>
-                                            <div>
-                                              <div className="flex items-center gap-1.5">
-                                                <h5 className={`font-semibold text-xs ${isLight ? 'text-slate-800' : 'text-white'}`}>{v.title}</h5>
-                                                {v.isFree && <span className="text-[8px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-1.5 py-0.2 rounded font-bold">DEMO</span>}
-                                                {!unlocked && <span className="text-[8px] bg-red-500/10 text-red-400 border border-red-500/20 px-1.5 py-0.2 rounded font-bold">LOCKED</span>}
-                                              </div>
-                                              <span className={`text-[9px] block mt-0.5 ${isLight ? 'text-slate-400' : 'text-gray-500'}`}>Duration: {v.duration} {v.downloadBlocked && '• 🔒 Secured'}</span>
-                                            </div>
-                                            <button
-                                              onClick={() => {
-                                                if (!unlocked) {
-                                                  alert('Premium Course Video Locked. Please enroll in this course or contact A.K. Sir for permission clearance.');
-                                                  return;
-                                                }
-                                                setSelectedVideo(v); 
-                                                setPlayerTab('video'); 
-                                              }}
-                                              className={`px-3.5 py-1.5 font-bold text-[9px] uppercase rounded-lg flex items-center gap-1.5 transition-colors ${
-                                                unlocked 
-                                                  ? 'bg-electric hover:bg-cyan-400 text-obsidian shadow-md hover:shadow-cyan-500/10' 
-                                                  : 'bg-red-950/20 border border-red-900 text-red-400 cursor-not-allowed'
-                                              }`}
-                                            >
-                                              {unlocked ? <PlayCircle className="h-3.5 w-3.5" /> : <Lock className="h-3 w-3" />} 
-                                              {unlocked ? 'Play' : 'Locked'}
-                                            </button>
-                                          </div>
-                                        );
-                                      })
-                                    )}
-                                  </div>
-                                )}
-
-                                {/* 2. Notes & DPPs */}
-                                {chapterTab === 'pdfs' && (
-                                  <div className="space-y-3">
-                                    {(!chapter.pdfs || chapter.pdfs.length === 0) ? (
-                                      <p className="text-gray-500 italic py-6 text-center">No PDF notes or handouts available.</p>
-                                    ) : (
-                                      chapter.pdfs.map(p => {
-                                        const unlocked = isResourceUnlocked(p);
-                                        return (
-                                          <div key={p.id} className="space-y-2">
-                                            <div className={`flex justify-between items-center p-3 rounded-lg border ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-cyberdark/60 border-white/5'}`}>
-                                              <div>
-                                                <div className="flex items-center gap-1.5">
-                                                  <h5 className={`font-semibold text-xs ${isLight ? 'text-slate-800' : 'text-white'}`}>{p.title}</h5>
-                                                  {p.isFree && <span className="text-[8px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-1.5 py-0.2 rounded font-bold">FREE</span>}
-                                                  {!unlocked && <span className="text-[8px] bg-red-500/10 text-red-400 border border-red-500/20 px-1.5 py-0.2 rounded font-bold">LOCKED</span>}
-                                                </div>
-                                                <span className={`text-[9px] block mt-0.5 ${isLight ? 'text-slate-400' : 'text-gray-500'}`}>Size: {p.size || 'Unknown'}</span>
-                                              </div>
-                                              <button
-                                                onClick={() => {
-                                                  if (!unlocked) return;
-                                                  setSelectedPdf(p);
-                                                }}
-                                                className={`px-3.5 py-1.5 font-bold text-[9px] uppercase rounded-lg flex items-center gap-1.5 transition-colors ${
-                                                  unlocked 
-                                                    ? 'bg-blue-600/20 border border-blue-500 text-white'
-                                                    : 'bg-red-950/20 border border-red-900 text-red-400 cursor-not-allowed'
-                                                }`}
-                                              >
-                                                {unlocked ? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3 w-3"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>} 
-                                                {unlocked ? 'View' : 'Locked'}
-                                              </button>
-                                            </div>
-                                          </div>
-                                        );
-                                      })
-                                    )}
-                                  </div>
-                                )}
-
-                                {/* 3. Formulas & Tricks */}
-                                {chapterTab === 'formulas' && (
-                                  <div className="grid grid-cols-1 gap-3">
-                                    {(!chapter.formulas || chapter.formulas.length === 0) ? (
-                                      <p className="text-gray-500 italic py-6 text-center">No formulas sheet or shortcut tricks uploaded yet.</p>
-                                    ) : (
-                                      chapter.formulas.map(f => {
-                                         return (
-                                           <div key={f.id} className={`p-4 rounded-xl space-y-2 border ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-cyberdark/40 border-white/5'}`}>
-                                             <h5 className={`font-bold text-xs border-b pb-1 flex items-center justify-between gap-1.5 ${isLight ? 'text-blue-600 border-slate-200' : 'text-gold border-white/5'}`}>
-                                               <span className="flex items-center gap-1.5">
-                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`h-4 w-4 fill-current ${isLight ? 'text-blue-600' : 'text-gold'}`}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> {f.title}
-                                               </span>
-                                               {f.url && (
-                                                 <button
-                                                   onClick={() => setSelectedPdf({ id: `formula-${f.id}`, url: f.url, title: f.title })}
-                                                   className={`px-2.5 py-1 text-[9px] font-bold uppercase rounded-lg flex items-center gap-1 ${isLight ? 'bg-blue-50 text-blue-600 border border-blue-200 hover:bg-blue-100' : 'bg-electric/10 text-electric border border-electric/20 hover:bg-electric/20'}`}
-                                                 >
-                                                   📄 View File
-                                                 </button>
-                                               )}
-                                             </h5>
-                                           </div>
-                                         );
-                                      })
-                                    )}
-                                  </div>
-                                )}
-                                {/* 4. PYQs Tab */}
-                                {chapterTab === 'pyqs' && (() => {
-                                    const slug = (chapter.url && chapter.url !== '#') ? chapter.url.split('/').pop() : (chapter.id || '');
-                                    let fetchSlug = String(slug || chapter.id || 'unknown');
-                                    if (selectedSyllabusClass === 'jee-advanced') {
-                                      if (fetchSlug.startsWith('physics_')) fetchSlug = fetchSlug.replace('physics_', '');
-                                      else if (fetchSlug.startsWith('chemistry_')) fetchSlug = fetchSlug.replace('chemistry_', '');
-                                      else if (fetchSlug.startsWith('mathematics_')) fetchSlug = fetchSlug.replace('mathematics_', '');
-
-                                      if (!fetchSlug.startsWith('adv-') && !fetchSlug.startsWith('ch_adv_math_')) {
-                                        fetchSlug = 'adv-' + fetchSlug;
-                                      }
-                                    }
-                                  const qCount = chapterQuestionCounts[fetchSlug] || 0;
+                                {/* Custom Test Button */}
+                                {(() => {
+                                  const actualClassKey = selectedSyllabusClass;
+                                  const subjects = syllabus[actualClassKey]?.subjects || {};
+                                  const subjectKeys = Object.keys(subjects);
+                                  const hasAnyChapters = subjectKeys.some(subjKey => {
+                                    return (subjects[subjKey]?.chapters || []).length > 0;
+                                  });
+                                  if (!hasAnyChapters) return null;
                                   return (
-                                    <div className="space-y-4">
-                                       <div 
-                                        onClick={() => {
-                                          setIsPyqLoading(true);
-                                          setActivePyqData(null);
-                                          fetch(import.meta.env.BASE_URL + `data/questions/${fetchSlug}.json?_t=${Date.now()}`)
-                                            .then(res => res.json())
-                                            .then(data => {
-                                              if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
-                                                setActivePyqData(data);
-                                                return;
-                                              }
-                                              const topicsMap = {};
-                                              const topicsList = [];
-                                              const questionsArray = Array.isArray(data) ? data : (data.data || []);
-                                              if (questionsArray.length > 0) {
-                                                questionsArray.forEach(q => {
-                                                  if (!q.id) q.id = q.question_id || q._id || `q_${Math.random().toString(36).slice(2)}`;
-                                                  if (!q.correctAnswer && q.answer) q.correctAnswer = q.answer;
-                                                  let tName = String(q.topic || 'General');
-                                                  if (tName === slug || tName === chapter.id) tName = 'All Questions';
-                                                  const tId = tName.toLowerCase().replace(/\s+/g, '_');
-                                                  if (!topicsMap[tId]) { topicsMap[tId] = []; topicsList.push({ id: tId, name: tName }); }
-                                                  topicsMap[tId].push(q);
-                                                });
-                                              }
-                                              setActivePyqData({ topics: topicsList.length > 0 ? topicsList : [{ id: 'general', name: 'General Questions' }], questions: Object.keys(topicsMap).length > 0 ? topicsMap : { 'general': [] } });
-                                            })
-                                            .catch(err => { console.error('Error fetching PYQs:', err); setActivePyqData({ topics: [], questions: {} }); })
-                                            .finally(() => setIsPyqLoading(false));
-                                          setExamGoalOverviewConfig({ id: chapter.id, title: chapter.title, startTab: 'topic' });
-                                        }}
-                                         className={`border-l-4 border-electric rounded-lg p-4 flex items-center justify-between cursor-pointer hover:shadow-lg transition-all border ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-[#1e1e24] border-white/5 shadow-md'}`}
-                                       >
-                                         <div className="flex items-center gap-4">
-                                           <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-blue-600"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
-                                           </div>
-                                           <div>
-                                             <h4 className={`font-bold text-lg ${isLight ? 'text-slate-800' : 'text-white'}`}>{chapter.title || 'Chapter Questions'}</h4>
-                                             <p className={`text-sm font-medium ${isLight ? 'text-slate-400' : 'text-gray-400'}`}>Previous Year Questions</p>
-                                           </div>
-                                         </div>
-                                         <div className="flex items-center gap-3">
-                                           <span className={`px-3 py-1 rounded-md text-xs font-bold ${isLight ? 'bg-slate-100 text-slate-600' : 'bg-white/5 text-gray-300'}`}>{qCount} Questions</span>
-                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gray-400"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                         </div>
-                                       </div>
-                                       <div 
-                                            onClick={() => {
-                                              setIsPyqLoading(true);
-                                              setActivePyqData(null);
-                                              fetch(import.meta.env.BASE_URL + `data/questions/${fetchSlug}.json?_t=${Date.now()}`)
-                                                .then(res => res.json())
-                                                .then(data => {
-                                                  if (data && data.topics && data.questions && !Array.isArray(data.questions)) {
-                                                    setActivePyqData(data);
-                                                    return;
-                                                  }
-                                                  const topicsMap = {};
-                                                  const topicsList = [];
-                                                  const questionsArray = Array.isArray(data) ? data : (data.data || []);
-                                                  questionsArray.forEach(q => {
-                                                    if (!q.id) q.id = q.question_id || q._id || `q_${Math.random().toString(36).slice(2)}`;
-                                                    let tName = String(q.topic || 'General');
-                                                    if (tName === slug || tName === chapter.id) tName = 'All Questions';
-                                                    const tId = tName.toLowerCase().replace(/\s+/g, '_');
-                                                    if (!topicsMap[tId]) { topicsMap[tId] = []; topicsList.push({ id: tId, name: tName }); }
-                                                    topicsMap[tId].push(q);
-                                                  });
-                                                  setActivePyqData({ topics: topicsList.length > 0 ? topicsList : [{ id: 'general', name: 'General Questions' }], questions: Object.keys(topicsMap).length > 0 ? topicsMap : { 'general': [] } });
-                                                })
-                                                .catch(() => setActivePyqData({ topics: [], questions: {} }))
-                                                .finally(() => setIsPyqLoading(false));
-                                              setExamGoalOverviewConfig({ id: chapter.id, title: chapter.title, startTab: 'bookmarks' });
-                                            }}
-                                           className={`border-l-4 border-yellow-400 rounded-lg p-4 flex items-center justify-between cursor-pointer hover:shadow-lg transition-all border ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-[#1e1e24] border-white/5 shadow-md'}`}
-                                         >
-                                           <div className="flex items-center gap-4">
-                                             <div className="w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center">
-                                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-yellow-500"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
-                                             </div>
-                                             <div>
-                                               <h4 className={`font-bold text-lg ${isLight ? 'text-slate-800' : 'text-white'}`}>Bookmarks</h4>
-                                               <p className={`text-sm font-medium ${isLight ? 'text-slate-400' : 'text-gray-400'}`}>Saved Questions</p>
-                                             </div>
-                                           </div>
-                                           <div className="flex items-center gap-3">
-                                             <span className="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-md text-xs font-bold">
-                                               {(() => {
-                                                  try {
-                                                    const stored = localStorage.getItem(`quantrex_pyq_progress_${chapter.id}`);
-                                                    if (!stored) return 0;
-                                                    const parsed = JSON.parse(stored);
-                                                    let count = 0;
-                                                    Object.values(parsed).forEach(q => {
-                                                      if (q.bookmarkGroups && q.bookmarkGroups.length > 0) count++;
-                                                    });
-                                                    return count;
-                                                  } catch (e) {
-                                                    return 0;
-                                                  }
-                                                })()} Questions
-                                             </span>
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gray-400"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                           </div>
-                                          </div>
-                                     </div>
-                                   );
-                                 })()}
-
-                                {/* 5. Mock Tests */}
-                                {chapterTab === 'mockTests' && (
-                                  <div className="space-y-2">
-                                    {(!chapter.mockTests || chapter.mockTests.length === 0) ? (
-                                      <p className="text-gray-500 italic py-6 text-center">No mock exams uploaded yet.</p>
-                                    ) : (
-                                      chapter.mockTests.map(t => (
-                                        <div key={t.id} className={`p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4 border ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-cyberdark/60 border-white/5'}`}>
-                                          <div className="space-y-1">
-                                            <h5 className={`font-bold text-xs ${isLight ? 'text-slate-800' : 'text-white'}`}>{t.title}</h5>
-                                            <span className={`text-[9px] block ${isLight ? 'text-slate-400' : 'text-gray-500'}`}>
-                                              Duration: {t.durationMinutes} minutes • Type: {t.type === 'link' ? 'AI Quiz Embed Link' : 'Quantrex JEE Pattern'}
-                                            </span>
-                                          </div>
-                                          {t.type === 'link' ? (
-                                            <a
-                                              href={t.linkUrl}
-                                              target="_blank"
-                                              rel="noopener noreferrer"
-                                              className="px-4 py-2 bg-gradient-to-r from-gold to-yellow-600 text-obsidian font-bold text-[9px] uppercase rounded-lg hover:shadow-lg transition-all"
-                                            >
-                                              Take External AI Quiz
-                                            </a>
-                                          ) : (
-                                            <button
-                                              onClick={() => handleLaunchTest(t)}
-                                              className="px-4 py-2 bg-electric hover:bg-cyan-400 text-obsidian font-bold text-[9px] uppercase rounded-lg shadow-md hover:shadow-cyan-500/10 transition-colors"
-                                            >
-                                              Start JEE Mock Exam
-                                            </button>
-                                          )}
-                                        </div>
-                                      ))
-                                    )}
-                                  </div>
-                                )}
+                                    <button
+                                      onClick={() => {
+                                        setSelectedSyllabusSubject('custom_test');
+                                        setSelectedSyllabusChapterId('');
+                                        setChapterTab('videos');
+                                        setExamGoalOverviewConfig(null);
+                                        setActivePyqData(null);
+                                      }}
+                                      style={selectedSyllabusSubject === 'custom_test' ? { borderLeftColor: '#f59e0b', borderLeftWidth: '4px' } : { borderLeftColor: '#f59e0b', borderLeftWidth: '3px' }}
+                                      className={
+                                        "relative flex items-center gap-2 ml-auto py-1.5 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md " +
+                                        (selectedSyllabusSubject === 'custom_test'
+                                          ? (isLight ? "bg-amber-50 border-amber-500 text-amber-700" : "bg-amber-900 bg-opacity-40 border-amber-400 text-amber-300")
+                                          : (isLight ? "bg-white border-amber-200 text-amber-600 hover:border-amber-400" : "bg-amber-500 bg-opacity-10 border-amber-500 border-opacity-30 text-amber-500 hover:border-amber-400"))
+                                      }
+                                    >
+                                      <svg className={"w-3.5 h-3.5 " + (selectedSyllabusSubject === 'custom_test' ? 'opacity-100' : 'opacity-70')} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                      </svg>
+                                      <span className="tracking-wider">Create Custom Test</span>
+                                    </button>
+                                  );
+                                })()}
                               </div>
+                              
+                              {/* Render chapters grid or custom test builder */}
+                              {selectedSyllabusSubject && (
+                                selectedSyllabusSubject === 'custom_test' ? (
+                                  <div className="pt-2">
+                                    <CustomTestBuilder selectedSyllabusClass={selectedSyllabusClass} isLight={isLight} syllabus={syllabus} />
+                                  </div>
+                                ) : (
+                                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-2">
+                                    {/* Left side: Chapter List */}
+                                    <div className="md:col-span-1 space-y-2 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+                                      {(() => {
+                                        const actualClassKey = selectedSyllabusClass;
+                                        return syllabus[actualClassKey]?.subjects?.[selectedSyllabusSubject]?.chapters?.map((ch, index) => {
+                                          const isActive = selectedSyllabusChapterId === ch.id;
+                                          const premiumGradients = [
+                                            'from-[#FF416C] to-[#FF4B2B]', 'from-[#4776E6] to-[#8E54E9]', 'from-[#00B4DB] to-[#0083B0]',
+                                            'from-[#f12711] to-[#f5af19]', 'from-[#8E2DE2] to-[#4A00E0]', 'from-[#11998e] to-[#38ef7d]',
+                                            'from-[#FC466B] to-[#3F5EFB]', 'from-[#00c6ff] to-[#0072ff]', 'from-[#F09819] to-[#EDDE5D]'
+                                          ];
+                                          const colorTheme = premiumGradients[index % premiumGradients.length];
+                                          
+                                          let icon = "➗";
+                                          let lowerTitle = String(ch.title || '').toLowerCase();
+                                          if (lowerTitle.includes("sets") || lowerTitle.includes("relations")) icon = "∪";
+                                          else if (lowerTitle.includes("function")) icon = "ƒ(x)";
+                                          else if (lowerTitle.includes("logarithm")) icon = "㏒";
+                                          else if (lowerTitle.includes("trigonometr") || lowerTitle.includes("heights") || lowerTitle.includes("inverse")) icon = "θ";
+                                          else if (lowerTitle.includes("quadratic")) icon = "x²";
+                                          else if (lowerTitle.includes("complex")) icon = "𝑖";
+                                          else if (lowerTitle.includes("permutation") || lowerTitle.includes("combination")) icon = "ⁿCₖ";
+                                          else if (lowerTitle.includes("binomial")) icon = "(x+y)ⁿ";
+                                          else if (lowerTitle.includes("sequence") || lowerTitle.includes("progression") || lowerTitle.includes("series")) icon = "∑";
+                                          else if (lowerTitle.includes("straight line")) icon = "y=mx";
+                                          else if (lowerTitle.includes("circle") || lowerTitle.includes("conic") || lowerTitle.includes("parabola") || lowerTitle.includes("ellipse") || lowerTitle.includes("hyperbola")) icon = "⦾";
+                                          else if (lowerTitle.includes("limit") || lowerTitle.includes("continuity") || lowerTitle.includes("differentiability")) icon = "lim";
+                                          else if (lowerTitle.includes("derivative") || lowerTitle.includes("differentiation")) icon = "dy-dx";
+                                          else if (lowerTitle.includes("integral") || lowerTitle.includes("integration") || lowerTitle.includes("area")) icon = "∫";
+                                          else if (lowerTitle.includes("differential equation")) icon = "∇";
+                                          else if (lowerTitle.includes("vector") || lowerTitle.includes("3d")) icon = "v⃗";
+                                          else if (lowerTitle.includes("matri") || lowerTitle.includes("determinant")) icon = "[ ]";
+                                          else if (lowerTitle.includes("probability")) icon = "P(E)";
+                                          else if (lowerTitle.includes("statistics")) icon = "σ";
+                                          else if (lowerTitle.includes("mathematical reasoning")) icon = "p→q";
+                                          
+                                          return (
+                                            <button
+                                              key={ch.id}
+                                              onClick={() => {
+                                                setSelectedSyllabusChapterId(ch.id);
+                                                setChapterTab('videos');
+                                                setExamGoalOverviewConfig(null);
+                                                setActivePyqData(null);
+                                              }}
+                                              className={
+                                                "w-full text-left p-3.5 rounded-xl border transition-all duration-300 relative overflow-hidden group/item flex items-center gap-3 " +
+                                                (isActive
+                                                  ? (isLight ? "bg-white border-cyan-300 shadow-md text-cyan-600" : "bg-[#1f2833] border-cyan-500 border-opacity-50 text-cyan-400 font-extrabold shadow-[0_0_15px_rgba(6,182,212,0.15)]")
+                                                  : (isLight ? "bg-slate-50 border-slate-200 hover:bg-white hover:border-slate-300 text-slate-600 hover:text-slate-800" : "bg-[#111625] border-white border-opacity-5 hover:bg-[#161d2f] hover:border-opacity-10 text-gray-400 hover:text-white"))
+                                              }
+                                            >
+                                              {isActive && <div className={"absolute inset-0 bg-gradient-to-r " + colorTheme + " opacity-10 pointer-events-none"} />}
+                                              <div className={"absolute left-0 top-0 bottom-0 w-1.5 transition-all duration-300 " + (isActive ? "bg-gradient-to-b " + colorTheme : "bg-transparent group-hover/item:bg-white bg-opacity-10")} />
+                                              
+                                              <div className={
+                                                "w-8 h-8 rounded-lg flex items-center justify-center text-xs font-black shadow-sm shrink-0 transition-transform duration-300 group-hover/item:scale-110 " +
+                                                (isActive
+                                                  ? "bg-gradient-to-br " + colorTheme + " text-white"
+                                                  : (isLight ? "bg-slate-200 text-slate-600" : "bg-white bg-opacity-5 text-gray-400"))
+                                              }>
+                                                {icon}
+                                              </div>
+                                              
+                                              <span className={"truncate flex-1 tracking-wide " + (isActive ? 'drop-shadow-sm font-extrabold text-[13.5px]' : '')}>{ch.title}</span>
+                                              
+                                              {isActive && (
+                                                <span className="absolute right-3 opacity-80 flex items-center text-white drop-shadow-sm">
+                                                  <svg className="w-4 h-4 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
+                                                  </svg>
+                                                </span>
+                                              )}
+                                            </button>
+                                          );
+                                        });
+                                      })()}
+                                    </div>
+                                    
+                                    {/* Right side: Chapter Details */}
+                                    <div className="md:col-span-3">
+                                      {(() => {
+                                        const actualClassKey = selectedSyllabusClass;
+                                        const chapter = syllabus[actualClassKey]?.subjects?.[selectedSyllabusSubject]?.chapters?.find(c => c.id === selectedSyllabusChapterId);
+                                        
+                                        if (!chapter) {
+                                          return (
+                                            <div className={"flex flex-col items-center justify-center p-12 rounded-2xl min-h-[40vh] text-center space-y-3 border " + (isLight ? "bg-white border-slate-200 shadow-sm" : "bg-obsidian bg-opacity-30 border-white border-opacity-5")}>
+                                              <div className={"h-12 w-12 rounded-full flex items-center justify-center " + (isLight ? "bg-slate-100 text-slate-400" : "bg-white bg-opacity-5 text-gray-500")}>
+                                                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                                </svg>
+                                              </div>
+                                              <p className={"text-xs font-mono " + (isLight ? "text-slate-400" : "text-gray-500")}>Select a chapter from the left menu to view contents.</p>
+                                            </div>
+                                          );
+                                        }
+                                        
+                                        return (
+                                          <div className="space-y-6">
+                                            {/* Chapter Title Banner */}
+                                            <div className={"p-5 rounded-2xl shadow-xl space-y-3 mb-6 border " + (isLight ? "bg-white border-slate-200" : "bg-gradient-to-br from-[#1F2833] bg-opacity-80 to-[#0B0C10] bg-opacity-80 backdrop-blur-md border-white border-opacity-10")}>
+                                              <div className="flex items-center gap-3">
+                                                <div className="w-1.5 h-8 bg-gradient-to-b from-cyan-400 to-blue-600 rounded-full shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
+                                                <h4 className={"text-base font-black uppercase tracking-wider font-display " + (isLight ? "text-slate-800" : "text-white")}>
+                                                  {chapter.title}
+                                                </h4>
+                                              </div>
+                                            </div>
+                                            
+                                            {/* Content Tabs (Videos, PDFs, Formulas, PYQs, Mock Tests) */}
+                                            <div className="flex flex-wrap gap-1 bg-[#111625] bg-opacity-40 p-1.5 rounded-xl border border-white border-opacity-5">
+                                              {[
+                                                { id: 'videos', label: 'Video Lectures', icon: '🎥' },
+                                                { id: 'pdfs', label: 'Notes/DPPs', icon: '📄' },
+                                                { id: 'formulas', label: 'Formula Sheets', icon: '⚡' },
+                                                { id: 'pyqs', label: 'PYQs Arena', icon: '📝' },
+                                                { id: 'mockTests', label: 'Mock Exams', icon: '🏆' }
+                                              ].map((subTab) => {
+                                                const isActive = chapterTab === subTab.id;
+                                                return (
+                                                  <button
+                                                    key={subTab.id}
+                                                    onClick={() => {
+                                                      setChapterTab(subTab.id);
+                                                      setExamGoalOverviewConfig(null);
+                                                      setActivePyqData(null);
+                                                    }}
+                                                    className={
+                                                      "relative flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-black tracking-wider uppercase transition-all duration-300 overflow-hidden group " +
+                                                      (isActive
+                                                        ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md"
+                                                        : (isLight ? "text-slate-600 hover:text-slate-900 hover:bg-slate-100" : "text-gray-400 hover:text-white hover:bg-white hover:bg-opacity-5"))
+                                                    }
+                                                  >
+                                                    {isActive && <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 bg-opacity-10 to-transparent -translate-x-full group-hover:animate-sweep" />}
+                                                    <span className="text-base sm:text-sm drop-shadow-md">{subTab.icon}</span>
+                                                    <span className="relative z-10">{subTab.label}</span>
+                                                  </button>
+                                                );
+                                              })}
+                                            </div>
+                                            
+                                            {/* Tab Panels */}
+                                            <div className="mt-4">
+                                              {/* 1. Videos Tab */}
+                                              {chapterTab === 'videos' && (
+                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                  {(!chapter.videos || chapter.videos.length === 0) ? (
+                                                    <p className="text-gray-500 italic py-6 text-center col-span-2">No video lectures uploaded yet for this chapter.</p>
+                                                  ) : (
+                                                    chapter.videos.map((v) => {
+                                                      const unlocked = unlockedChapters[chapter.id] || v.isFree;
+                                                      return (
+                                                        <div key={v.id} className={"p-4 rounded-xl border flex flex-col justify-between gap-4 transition-all duration-300 hover:scale-[1.01] " + (isLight ? "bg-slate-50 border-slate-200 hover:shadow-md" : "bg-[#111625] bg-opacity-60 border-white border-opacity-5 hover:border-opacity-10 hover:shadow-cyan-950")}>
+                                                          <div>
+                                                            <div className="flex items-start justify-between gap-2">
+                                                              <h5 className={"font-bold text-xs " + (isLight ? "text-slate-800" : "text-white")}>{v.title}</h5>
+                                                              {v.isFree && <span className="text-[8px] bg-emerald-500 bg-opacity-10 text-emerald-400 border border-emerald-500 border-opacity-20 px-1.5 py-0.2 rounded font-bold">DEMO</span>}
+                                                              {!unlocked && <span className="text-[8px] bg-red-500 bg-opacity-10 text-red-400 border border-red-500 border-opacity-20 px-1.5 py-0.2 rounded font-bold">LOCKED</span>}
+                                                            </div>
+                                                            <span className={"text-[9px] block mt-0.5 " + (isLight ? "text-slate-400" : "text-gray-500")}>Duration: {v.duration} {v.downloadBlocked && '• 🔒 Secured'}</span>
+                                                          </div>
+                                                          <button
+                                                            onClick={() => {
+                                                              if (!unlocked) {
+                                                                alert('Video Lecture Locked. Please enroll to unlock.');
+                                                                return;
+                                                              }
+                                                              setSelectedVideo(v);
+                                                            }}
+                                                            className={"w-full py-2 text-[9px] font-black uppercase tracking-wider rounded-lg flex items-center justify-center gap-1.5 transition-colors " + (unlocked ? "bg-cyan-500 hover:bg-cyan-600 text-slate-900" : "bg-red-500 bg-opacity-10 text-red-400 border border-red-500 border-opacity-20 cursor-not-allowed")}
+                                                          >
+                                                            {unlocked ? 'Play Lecture' : 'Locked'}
+                                                          </button>
+                                                        </div>
+                                                      );
+                                                    })
+                                                  )}
+                                                </div>
+                                              )}
+                                              
+                                              {/* 2. Notes/DPPs Tab */}
+                                              {chapterTab === 'pdfs' && (
+                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                  {(!chapter.pdfs || chapter.pdfs.length === 0) ? (
+                                                    <p className="text-gray-500 italic py-6 text-center col-span-2">No PDF notes uploaded yet for this chapter.</p>
+                                                  ) : (
+                                                    chapter.pdfs.map((p) => {
+                                                      const unlocked = unlockedChapters[chapter.id] || p.isFree;
+                                                      return (
+                                                        <div key={p.id} className={"p-4 rounded-xl border flex flex-col justify-between gap-4 transition-all duration-300 hover:scale-[1.01] " + (isLight ? "bg-slate-50 border-slate-200 hover:shadow-md" : "bg-[#111625] bg-opacity-60 border-white border-opacity-5 hover:border-opacity-10 hover:shadow-cyan-950")}>
+                                                          <div>
+                                                            <div className="flex items-start justify-between gap-2">
+                                                              <h5 className={"font-semibold text-xs " + (isLight ? "text-slate-800" : "text-white")}>{p.title}</h5>
+                                                              {p.isFree && <span className="text-[8px] bg-emerald-500 bg-opacity-10 text-emerald-400 border border-emerald-500 border-opacity-20 px-1.5 py-0.2 rounded font-bold">DEMO</span>}
+                                                              {!unlocked && <span className="text-[8px] bg-red-500 bg-opacity-10 text-red-400 border border-red-500 border-opacity-20 px-1.5 py-0.2 rounded font-bold">LOCKED</span>}
+                                                            </div>
+                                                            <span className={"text-[9px] block mt-0.5 " + (isLight ? "text-slate-400" : "text-gray-500")}>{(p.downloadBlocked ? '🔒 View Only (Download Restricted)' : '🔓 Download Available')}</span>
+                                                          </div>
+                                                          <button
+                                                            onClick={() => {
+                                                              if (!unlocked) {
+                                                                alert('Handout Locked. Please enroll to unlock.');
+                                                                return;
+                                                              }
+                                                              setSelectedPdf(p);
+                                                            }}
+                                                            className={"w-full py-2 text-[9px] font-black uppercase tracking-wider rounded-lg flex items-center justify-center gap-1.5 transition-colors " + (unlocked ? "bg-cyan-500 hover:bg-cyan-600 text-slate-900" : "bg-red-500 bg-opacity-10 text-red-400 border border-red-500 border-opacity-20 cursor-not-allowed")}
+                                                          >
+                                                            {unlocked ? 'View Handout' : 'Locked'}
+                                                          </button>
+                                                        </div>
+                                                      );
+                                                    })
+                                                  )}
+                                                </div>
+                                              )}
+                                              
+                                              {/* 3. Formulas Tab */}
+                                              {chapterTab === 'formulas' && (
+                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                  {(!chapter.formulas || chapter.formulas.length === 0) ? (
+                                                    <p className="text-gray-500 italic py-6 text-center col-span-2">No formula sheets uploaded yet for this chapter.</p>
+                                                  ) : (
+                                                    chapter.formulas.map((f) => {
+                                                      return (
+                                                        <div key={f.id} className={"p-4 rounded-xl border flex flex-col justify-between gap-4 transition-all duration-300 hover:scale-[1.01] " + (isLight ? "bg-slate-50 border-slate-200 hover:shadow-md" : "bg-[#111625] bg-opacity-60 border-white border-opacity-5 hover:border-opacity-10 hover:shadow-cyan-950")}>
+                                                          <div>
+                                                            <h5 className={"font-semibold text-xs " + (isLight ? "text-slate-800" : "text-white")}>{f.title}</h5>
+                                                          </div>
+                                                          <button
+                                                            onClick={() => {
+                                                              setSelectedPdf(f);
+                                                            }}
+                                                            className="w-full py-2 text-[9px] font-black uppercase tracking-wider rounded-lg flex items-center justify-center gap-1.5 transition-colors bg-cyan-500 hover:bg-cyan-600 text-slate-900"
+                                                          >
+                                                            View Formulas
+                                                          </button>
+                                                        </div>
+                                                      );
+                                                    })
+                                                  )}
+                                                </div>
+                                              )}
+                                              
+                                              {/* 4. PYQs Tab */}
+                                              {chapterTab === 'pyqs' && (
+                                                <div className="space-y-3">
+                                                  {/* Solve Questions Button */}
+                                                  <div
+                                                    onClick={() => {
+                                                      setIsPyqLoading(true);
+                                                      axios.get("https:" + String.fromCharCode(47, 47) + "quantrex-backend.vercel.app" + String.fromCharCode(47) + "api" + String.fromCharCode(47) + "questions" + String.fromCharCode(47) + "chapter" + String.fromCharCode(47) + chapter.id)
+                                                        .then(res => {
+                                                          const questions = res.data;
+                                                          const topicsMap = {};
+                                                          const topicsList = [];
+                                                          
+                                                          questions.forEach(q => {
+                                                            const tId = q.topicId || 'general';
+                                                            const tName = q.topicName || 'General Questions';
+                                                            if (!topicsMap[tId]) {
+                                                              topicsMap[tId] = [];
+                                                              topicsList.push({ id: tId, name: tName });
+                                                            }
+                                                            topicsMap[tId].push(q);
+                                                          });
+                                                          setActivePyqData({ topics: topicsList.length > 0 ? topicsList : [{ id: 'general', name: 'General Questions' }], questions: Object.keys(topicsMap).length > 0 ? topicsMap : { 'general': [] } });
+                                                        })
+                                                        .catch(() => setActivePyqData({ topics: [], questions: {} }))
+                                                        .finally(() => setIsPyqLoading(false));
+                                                      setExamGoalOverviewConfig({ id: chapter.id, title: chapter.title, startTab: 'practice' });
+                                                    }}
+                                                    className={"border-l-4 border-cyan-500 rounded-xl p-4 flex items-center justify-between cursor-pointer hover:shadow-lg transition-all border " + (isLight ? "bg-white border-slate-200 shadow-sm" : "bg-[#111625] bg-opacity-60 border-white border-opacity-5 shadow-md hover:border-opacity-10")}
+                                                  >
+                                                    <div className="flex items-center gap-4">
+                                                      <div className="w-10 h-10 rounded-xl bg-cyan-500 bg-opacity-10 flex items-center justify-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-cyan-400"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                                                      </div>
+                                                      <div>
+                                                        <h4 className={"font-black text-sm " + (isLight ? "text-slate-800" : "text-white font-mono")}>PYQs Practice Arena</h4>
+                                                        <p className={"text-[10px] font-semibold mt-0.5 " + (isLight ? "text-slate-400" : "text-gray-400 font-mono")}>Chapterwise solved questions with complete explanation</p>
+                                                      </div>
+                                                    </div>
+                                                    <div className="flex items-center gap-3">
+                                                      <span className="px-3 py-1 bg-cyan-500 bg-opacity-10 text-cyan-400 border border-cyan-500 border-opacity-20 rounded-md text-[10px] font-black tracking-widest uppercase">
+                                                        Enter Arena
+                                                      </span>
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gray-400"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  {/* Bookmarked Questions Button */}
+                                                  <div
+                                                    onClick={() => {
+                                                      setIsPyqLoading(true);
+                                                      axios.get("https:" + String.fromCharCode(47, 47) + "quantrex-backend.vercel.app" + String.fromCharCode(47) + "api" + String.fromCharCode(47) + "questions" + String.fromCharCode(47) + "chapter" + String.fromCharCode(47) + chapter.id)
+                                                        .then(res => {
+                                                          const questions = res.data;
+                                                          const topicsMap = {};
+                                                          const topicsList = [];
+                                                          
+                                                          questions.forEach(q => {
+                                                            const tId = q.topicId || 'general';
+                                                            const tName = q.topicName || 'General Questions';
+                                                            if (!topicsMap[tId]) {
+                                                              topicsMap[tId] = [];
+                                                              topicsList.push({ id: tId, name: tName });
+                                                            }
+                                                            topicsMap[tId].push(q);
+                                                          });
+                                                          setActivePyqData({ topics: topicsList.length > 0 ? topicsList : [{ id: 'general', name: 'General Questions' }], questions: Object.keys(topicsMap).length > 0 ? topicsMap : { 'general': [] } });
+                                                        })
+                                                        .catch(() => setActivePyqData({ topics: [], questions: {} }))
+                                                        .finally(() => setIsPyqLoading(false));
+                                                      setExamGoalOverviewConfig({ id: chapter.id, title: chapter.title, startTab: 'bookmarks' });
+                                                    }}
+                                                    className={"border-l-4 border-yellow-500 rounded-xl p-4 flex items-center justify-between cursor-pointer hover:shadow-lg transition-all border " + (isLight ? "bg-white border-slate-200 shadow-sm" : "bg-[#111625] bg-opacity-60 border-white border-opacity-5 shadow-md hover:border-opacity-10")}
+                                                  >
+                                                    <div className="flex items-center gap-4">
+                                                      <div className="w-10 h-10 rounded-xl bg-yellow-500 bg-opacity-10 flex items-center justify-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-yellow-500"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+                                                      </div>
+                                                      <div>
+                                                        <h4 className={"font-bold text-sm " + (isLight ? "text-slate-800" : "text-white")}>Bookmarks</h4>
+                                                        <p className={"text-[10px] mt-0.5 " + (isLight ? "text-slate-400" : "text-gray-400")}>Saved Questions</p>
+                                                      </div>
+                                                    </div>
+                                                    <div className="flex items-center gap-3">
+                                                      <span className="px-3 py-1 bg-yellow-500 bg-opacity-10 text-yellow-400 border border-yellow-500 border-opacity-20 rounded-md text-[10px] font-black tracking-widest uppercase">
+                                                        {(() => {
+                                                          try {
+                                                            const stored = localStorage.getItem("quantrex_pyq_progress_" + chapter.id);
+                                                            if (!stored) return 0;
+                                                            const parsed = JSON.parse(stored);
+                                                            let count = 0;
+                                                            Object.values(parsed).forEach(q => {
+                                                              if (q.bookmarkGroups && q.bookmarkGroups.length > 0) count++;
+                                                            });
+                                                            return count;
+                                                          } catch (e) {
+                                                            return 0;
+                                                          }
+                                                        })()} Saved
+                                                      </span>
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gray-400"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              )}
+                                              
+                                              {/* 5. Mock Tests Tab */}
+                                              {chapterTab === 'mockTests' && (
+                                                <div className="space-y-3">
+                                                  {(!chapter.mockTests || chapter.mockTests.length === 0) ? (
+                                                    <p className="text-gray-500 italic py-6 text-center">No mock exams uploaded yet.</p>
+                                                  ) : (
+                                                    chapter.mockTests.map(t => (
+                                                      <div key={t.id} className={"p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4 border " + (isLight ? "bg-slate-50 border-slate-200" : "bg-[#111625] bg-opacity-60 border-white border-opacity-5 hover:border-opacity-10 hover:shadow-cyan-950")}>
+                                                        <div className="space-y-1">
+                                                          <h5 className={"font-bold text-xs " + (isLight ? "text-slate-800 font-mono" : "text-white font-mono")}>{t.title}</h5>
+                                                          <span className={"text-[9px] block " + (isLight ? "text-slate-400" : "text-gray-500 font-mono")}>
+                                                            Duration: {t.durationMinutes} minutes • Type: {t.type === 'link' ? 'AI Quiz Embed' : 'Quantrex Pattern'}
+                                                          </span>
+                                                        </div>
+                                                        {t.type === 'link' ? (
+                                                          <a
+                                                            href={t.linkUrl}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="px-4 py-2 bg-gradient-to-r from-amber-500 to-yellow-600 text-slate-900 font-black text-[9px] uppercase tracking-widest rounded-lg hover:shadow-lg transition-all text-center"
+                                                          >
+                                                            Take AI Quiz
+                                                          </a>
+                                                        ) : (
+                                                          <button
+                                                            onClick={() => handleLaunchTest(t)}
+                                                            className="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-slate-900 font-black text-[9px] uppercase tracking-widest rounded-lg shadow-md hover:shadow-cyan-500/10 transition-colors"
+                                                          >
+                                                            Start Exam
+                                                          </button>
+                                                        )}
+                                                      </div>
+                                                    ))
+                                                  )}
+                                                </div>
+                                              )}
+                                            </div>
+                                          </div>
+                                        );
+                                      })()}
+                                    </div>
+                                  </div>
+                                )
+                              )}
                             </div>
-                          );
-                        })()
-                      ) : (
-                        <div className={`flex flex-col items-center justify-center p-12 rounded-2xl min-h-[40vh] text-center space-y-3 border ${isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-obsidian/30 border-white/5'}`}>
-                          <div className={`h-12 w-12 rounded-full flex items-center justify-center ${isLight ? 'bg-slate-100 text-slate-400' : 'bg-white/5 text-gray-500'}`}>
-                            <BookOpen className="h-5 w-5" />
-                          </div>
-                          <p className={`text-xs font-mono ${isLight ? 'text-slate-400' : 'text-gray-500'}`}>Select a chapter from the left menu to view contents.</p>
+                          )}
                         </div>
                       )}
                     </div>
-                  </>
-                )}
+                  );
+                })}
               </div>
-            </div>
+
           )}
 
             {/* LIVE CLASSES TAB */}

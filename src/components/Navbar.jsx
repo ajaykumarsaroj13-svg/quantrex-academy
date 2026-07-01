@@ -12,7 +12,7 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
   const isLight = theme === 'light';
 
   return (
-    <nav className={`sticky top-0 z-50 w-full backdrop-blur-md border-b py-3.5 px-6 md:px-12 flex items-center justify-between transition-all duration-300 ${
+    <nav className={`relative z-50 w-full backdrop-blur-md border-b py-3.5 px-6 md:px-12 flex items-center justify-between transition-all duration-300 ${
       isLight
         ? 'bg-white/90 border-black/8 shadow-sm'
         : 'bg-obsidian/85 border-white/5'
