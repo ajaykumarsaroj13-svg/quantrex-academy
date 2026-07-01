@@ -1,4 +1,5 @@
 import React, { useMemo, useEffect, useRef } from 'react';
+import { fixExamGoalHtml } from '../utils/htmlCleaner';
 
 /**
  * TeacherSolution
@@ -9,12 +10,7 @@ export default function TeacherSolution({ html, isLight = true, correctOptionLab
   const containerRef = useRef(null);
 
   const content = useMemo(() => {
-    if (!html) return '<p class="text-gray-500 italic">Solution coming soon. Stay tuned!</p>';
-    
-    let text = html;
-    if (typeof text === 'object') {
-      text = text.en?.explanation || text.en?.solution || text.explanation || text.solution || '';
-    }
+    let text = fixExamGoalHtml(html);
     if (!text) return '<p class="text-gray-500 italic">Solution coming soon. Stay tuned!</p>';
     
     text = String(text);

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { generateSimilarQuestion } from '../utils/aiGenerator';
 import { Sparkles, Loader2, CheckCircle2, Target, XCircle, ChevronRight, Hash, Eye, RotateCcw } from 'lucide-react';
+import { fixExamGoalHtml } from '../utils/htmlCleaner';
 
 export default function MistakeBooster({ originalQuestion }) {
   const [loading, setLoading] = useState(false);
@@ -123,7 +124,7 @@ export default function MistakeBooster({ originalQuestion }) {
             )}
           </div>
           
-          <div className="text-slate-800 font-medium tex2jax_process text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: currentQ.questionText || currentQ.question }} />
+          <div className="text-slate-800 font-medium tex2jax_process text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(currentQ.questionText || currentQ.question) }} />
 
           {/* Options */}
           {currentQ.options && currentQ.options.length > 0 ? (
@@ -152,7 +153,7 @@ export default function MistakeBooster({ originalQuestion }) {
                     <div className={`w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center text-sm font-bold border-2 ${!isChecked && isSelected ? 'bg-indigo-600 text-white border-indigo-600' : isCorrect ? 'bg-emerald-500 text-white border-emerald-500' : isWrong ? 'bg-red-500 text-white border-red-500' : 'border-slate-300 text-slate-500'}`}>
                       {String.fromCharCode(65 + idx)}
                     </div>
-                    <div className="tex2jax_process text-sm text-slate-700 pt-0.5" dangerouslySetInnerHTML={{ __html: opt }} />
+                    <div className="tex2jax_process text-sm text-slate-700 pt-0.5" dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(opt) }} />
                   </button>
                 )
               })}
@@ -195,7 +196,7 @@ export default function MistakeBooster({ originalQuestion }) {
             <div className="mt-6 p-6 bg-white border border-indigo-100 rounded-2xl space-y-4 shadow-sm relative">
                <div className="absolute top-0 left-0 w-2 h-full bg-indigo-400 rounded-l-2xl"></div>
                <h5 className="font-bold text-indigo-900 text-lg flex items-center gap-2"><Eye className="w-5 h-5 text-indigo-500" /> Detailed Solution</h5>
-               <div className="text-slate-700 tex2jax_process leading-relaxed text-sm md:text-base bg-indigo-50/30 p-4 rounded-xl border border-indigo-50" dangerouslySetInnerHTML={{ __html: currentQ.explanation || currentQ.solution }} />
+               <div className="text-slate-700 tex2jax_process leading-relaxed text-sm md:text-base bg-indigo-50/30 p-4 rounded-xl border border-indigo-50" dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(currentQ.explanation || currentQ.solution) }} />
             </div>
           )}
         </div>
