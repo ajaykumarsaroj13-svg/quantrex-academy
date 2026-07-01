@@ -42,46 +42,20 @@ export const generateSimilarQuestion = async (originalQuestion, count = 1) => {
   }
 
   const prompt = `
-    You are an expert ${subject || 'academic'} examiner creating highly challenging test questions for students.
+    You are an expert ${subject || 'academic'} examiner. Generate ${count} NEW question(s) testing the SAME concept as the original.
     
-    I have a question that the student got wrong or skipped. I want you to create ${count} NEW question(s) that test the exact same concept.
+    Original Question: ${originalQuestion.questionText || originalQuestion.question || ''}
+    Options: ${(originalQuestion.options || []).map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join(', ')}
+    Difficulty: ${difficulty || 'Moderate'} | Topic: ${topic || 'General'}
     
-    Original Question:
-    ${originalQuestion.questionText || originalQuestion.question || ''}
-    
-    Options:
-    ${(originalQuestion.options || []).map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
-    
-    Original Solution/Explanation:
-    ${originalQuestion.explanation || originalQuestion.solution || ''}
-    
-    Difficulty: ${difficulty || 'Moderate'}
-    Topic: ${topic || 'General'}
-    
-    REQUIREMENTS:
+    RULES:
     1. ${specificInstructions}
-    2. Provide 4 options for each question (if the original was multiple choice).
-    3. Provide the correct option index (0 for A, 1 for B, 2 for C, 3 for D).
-    4. SOLUTION FORMAT (VERY IMPORTANT):
-       - Write the solution like a TEACHER writing on a BLACKBOARD — short, crisp, step-by-step.
-       - Use numbered steps: Step 1, Step 2, Step 3, etc.
-       - Each step should be ONE line only — no paragraphs, no long sentences.
-       - Use LaTeX with \\( \\) for inline math and \\[ \\] for display math. Do NOT use $ signs for math.
-       - Wrap the entire solution in HTML. Use <b> for labels, <br/> for line breaks between steps.
-       - Example format:
-         "<b>Step 1:</b> Given equation: \\(x^2 - 3x + r = 0\\)<br/><b>Step 2:</b> Sum of roots: \\(\\alpha + \\beta = 3\\)<br/><b>Step 3:</b> Product of roots: \\(\\alpha\\beta = r\\)<br/><b>Answer:</b> \\(\\boxed{-135}\\) → <b>Option A</b>"
-       - Keep total solution under 6-8 short steps. NO lengthy explanations.
-    5. For questionText, also use \\( \\) for inline math and \\[ \\] for display math. Do NOT use $ signs.
-    6. For options, also use \\( \\) for inline math. Do NOT use $ signs.
-    7. Output the result ONLY as a valid JSON ARRAY of objects, no markdown formatting outside the JSON. The array must contain exactly ${count} objects.
+    2. Provide exactly 4 options per question.
+    3. correctOption = index of correct answer (0=A, 1=B, 2=C, 3=D). MUST be accurate.
+    4. Do NOT include any explanation or solution. Only question, options, and correctOption.
+    5. Output ONLY a valid JSON array. No markdown, no extra text.
     
-    Structure for each object in the JSON array:
-    {
-      "questionText": "The new question text with \\( \\) for math",
-      "options": ["Option A", "Option B", "Option C", "Option D"],
-      "correctOption": 2,
-      "explanation": "<b>Step 1:</b> ... <br/><b>Step 2:</b> ... <br/><b>Answer:</b> \\(\\boxed{value}\\) → <b>Option X</b>"
-    }
+    JSON format: [{"questionText":"...","options":["A","B","C","D"],"correctOption":0}]
   `;
 
   let text = "";
@@ -107,8 +81,8 @@ export const generateSimilarQuestion = async (originalQuestion, count = 1) => {
       options: data.options || [],
       correctOption: data.correctOption,
       correctAnswer: data.correctAnswer,
-      explanation: data.explanation,
-      solution: data.explanation,
+      explanation: '',
+      solution: '',
       subject,
       type,
       questionType,
@@ -119,72 +93,28 @@ export const generateSimilarQuestion = async (originalQuestion, count = 1) => {
     }));
   };
 
-  // 1. Try Gemini first if key is present
-  if (geminiKey && geminiKey.trim()) {
-    try {
-      console.log('Attempting generation with Gemini Key...');
-      if (geminiKey.trim().startsWith('sk-')) {
-        console.log('Detected OpenAI key in Gemini slot. Routing to OpenAI...');
-        const response = await axios.post(
-          'https://api.openai.com/v1/chat/completions',
-          {
-            model: 'gpt-4o',
-            messages: [
-              {
-                role: 'system',
-                content: 'You are an expert academic examiner. Respond ONLY with a valid JSON array of objects, with no markdown formatting outside the JSON.'
-              },
-              {
-                role: 'user',
-                content: prompt
-              }
-            ],
-            temperature: 0.7
-          },
-          {
-            headers: {
-              'Authorization': `Bearer ${geminiKey.trim()}`,
-              'Content-Type': 'application/json'
-            }
-          }
-        );
-        text = response.data.choices[0].message.content;
-      } else {
-        const genAI = new GoogleGenerativeAI(geminiKey.trim());
-        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
-        const result = await model.generateContent(prompt);
-        const response = await result.response;
-        text = response.text();
-      }
-      return parseResponse(text);
-    } catch (err) {
-      console.error('Gemini/VITE_GEMINI_API_KEY generation failed:', err);
-    }
-  }
+  // Collect all available OpenAI keys (from both slots)
+  const allOpenAIKeys = [];
+  if (openaiKey && openaiKey.trim().startsWith('sk-')) allOpenAIKeys.push(openaiKey.trim());
+  if (geminiKey && geminiKey.trim().startsWith('sk-')) allOpenAIKeys.push(geminiKey.trim());
 
-  // 2. Try OpenAI if key is present
-  if (openaiKey && openaiKey.trim()) {
+  // 1. Try ChatGPT (OpenAI) FIRST — user preference
+  for (const key of allOpenAIKeys) {
     try {
-      console.log('Attempting generation with OpenAI Key...');
+      console.log('Attempting generation with ChatGPT (OpenAI)...');
       const response = await axios.post(
         'https://api.openai.com/v1/chat/completions',
         {
-          model: 'gpt-4o',
+          model: 'gpt-4o-mini',
           messages: [
-            {
-              role: 'system',
-              content: 'You are an expert academic examiner. Respond ONLY with a valid JSON array of objects, with no markdown formatting outside the JSON.'
-            },
-            {
-              role: 'user',
-              content: prompt
-            }
+            { role: 'system', content: 'You are an expert examiner. Respond ONLY with a valid JSON array. No markdown.' },
+            { role: 'user', content: prompt }
           ],
           temperature: 0.7
         },
         {
           headers: {
-            'Authorization': `Bearer ${openaiKey.trim()}`,
+            'Authorization': `Bearer ${key}`,
             'Content-Type': 'application/json'
           }
         }
@@ -192,7 +122,23 @@ export const generateSimilarQuestion = async (originalQuestion, count = 1) => {
       text = response.data.choices[0].message.content;
       return parseResponse(text);
     } catch (err) {
-      console.error('OpenAI/VITE_OPENAI_API_KEY generation failed:', err);
+      console.error('ChatGPT generation failed:', err?.response?.data || err.message);
+    }
+  }
+
+  // 2. Fallback to Gemini if ChatGPT failed
+  const pureGeminiKey = geminiKey && !geminiKey.trim().startsWith('sk-') ? geminiKey.trim() : null;
+  if (pureGeminiKey) {
+    try {
+      console.log('Attempting generation with Gemini...');
+      const genAI = new GoogleGenerativeAI(pureGeminiKey);
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      text = response.text();
+      return parseResponse(text);
+    } catch (err) {
+      console.error('Gemini generation failed:', err);
     }
   }
 
