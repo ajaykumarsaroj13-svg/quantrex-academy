@@ -116,6 +116,18 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
           Books
         </button>
 
+        {user && (
+          <button
+            onClick={() => setActivePage('my-dashboard')}
+            className={`uppercase transition-all duration-200 hover:scale-105 flex items-center gap-1 ${
+              activePage === 'my-dashboard'
+                ? 'text-emerald-500'
+                : (isLight ? 'text-gray-600 hover:text-emerald-600' : 'text-platinum hover:text-emerald-400')
+            }`}
+          >
+            📊 My Dashboard
+          </button>
+        )}
 
         {user && user.role === 'admin' && (
           <button

@@ -318,10 +318,14 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                        {activeQuestion.options.map((opt, oIdx) => {
                          const isCorrectOpt = activeQuestion.questionType === 'MULTI_CORRECT' || activeQuestion.questionType === 'MCQM'
                             ? (activeQuestion.correctOptionsArray || []).includes(oIdx)
-                            : Number(activeQuestion.correctOption) === oIdx;
+                            : (typeof activeQuestion.correctOption === 'string' && isNaN(Number(activeQuestion.correctOption))
+                                ? activeQuestion.correctOption.toUpperCase().charCodeAt(0) - 65 === oIdx
+                                : Number(activeQuestion.correctOption) === oIdx);
                          const isUserOpt = Array.isArray(activeQuestion.userAnswer)
                             ? activeQuestion.userAnswer.includes(oIdx)
-                            : Number(activeQuestion.userAnswer) === oIdx;
+                            : (typeof activeQuestion.userAnswer === 'string' && isNaN(Number(activeQuestion.userAnswer))
+                                ? activeQuestion.userAnswer.toUpperCase().charCodeAt(0) - 65 === oIdx
+                                : Number(activeQuestion.userAnswer) === oIdx);
                          
                          let borderClass = 'border-slate-200 hover:border-slate-300';
                          let bgClass = 'bg-white';
@@ -362,6 +366,21 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                    {activeQuestion.solution && (
                      <div className="mt-8 bg-[#f8fafc] rounded-2xl p-8 border border-slate-200 relative overflow-hidden">
                        <div className="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
+                       
+                       <div className="mb-6 p-4 rounded-xl border flex items-center gap-3 bg-emerald-100/50 border-emerald-200">
+                          <span className="text-xs font-black uppercase tracking-widest text-emerald-700">Correct Answer:</span>
+                          <span className="text-base font-black text-emerald-800">
+                            {activeQuestion.questionType === 'NUMERICAL' || activeQuestion.options?.length === 0 
+                              ? (activeQuestion.correctAnswer ?? activeQuestion.correctOption ?? 'N/A')
+                              : (
+                                  activeQuestion.questionType === 'MULTI_CORRECT' || activeQuestion.questionType === 'MCQM'
+                                    ? (activeQuestion.correctOptionsArray || []).map(idx => String.fromCharCode(65 + idx)).join(', ') || 'N/A'
+                                    : `Option ${typeof activeQuestion.correctOption === 'string' && isNaN(Number(activeQuestion.correctOption)) ? activeQuestion.correctOption.toUpperCase() : String.fromCharCode(65 + parseInt(activeQuestion.correctOption || 0))}`
+                                )
+                            }
+                          </span>
+                       </div>
+
                        <h3 className="font-bold text-xl mb-6 text-slate-800 flex items-center gap-2">
                          <FileText className="w-6 h-6 text-blue-500"/> Detailed Solution
                        </h3>

@@ -20,6 +20,7 @@ const BooksLibrary = React.lazy(() => import('./pages/BooksLibrary'));
 const BookReader = React.lazy(() => import('./pages/BookReader'));
 const BookChapterList = React.lazy(() => import('./pages/BookChapterList'));
 const BookPractice = React.lazy(() => import('./pages/BookPractice'));
+const StudentProgressDashboard = React.lazy(() => import('./pages/StudentProgressDashboard'));
 
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 import { DEFAULT_TESTS, DEFAULT_BOOKS, DEFAULT_HOME_CONTENT } from './utils/defaultData';
@@ -218,12 +219,31 @@ export default function App() {
     }
   }, []);
 
-  // Keep page and states persistent across browser refresh
+  // Keep page and states persistent across browser refresh and handle hardware back button
   useEffect(() => {
     try {
       localStorage.setItem('quantrex_active_page', activePage);
+      if (window.history.state?.page !== activePage) {
+         window.history.pushState({ page: activePage }, '', window.location.pathname);
+      }
     } catch(e) {}
   }, [activePage]);
+
+  useEffect(() => {
+    const handlePopState = (e) => {
+      if (e.state && e.state.page) {
+        setActivePage(e.state.page);
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    
+    // Replace initial state so the first back press doesn't immediately leave the app without a popstate event
+    if (!window.history.state?.page) {
+       window.history.replaceState({ page: activePage }, '', window.location.pathname);
+    }
+    
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   // Persist syllabus when updated (e.g. from Admin Dashboard)
   useEffect(() => {
@@ -499,6 +519,9 @@ export default function App() {
       case 'test-series-exam': return <TestSeriesExam testId={activeTestId} mode={activeTestMode} user={user} onSubmit={handleTestSubmit} onExit={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} />;
       case 'test-series-result': return <TestSeriesResult result={testResult} user={user} onBack={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')} onRetake={() => { if (activeTestId) handleStartTestSeries(activeTestId, activeTestMode, localStorage.getItem('quantrex_test_source')); }} />;
       case 'exam-mode': return <NtaTestInterface test={examTest} user={user} onBackToDashboard={() => setActivePage('student-dashboard')} setActivePage={setActivePage} mode="test" isLight={isLight} />;
+      case 'my-dashboard':
+        if (!user) return <RedirectToLogin />;
+        return <StudentProgressDashboard user={user} isLight={isLight} onBack={() => setActivePage('student-dashboard')} testsData={testsData} onStartTest={handleStartTestSeries} examTest={examTest} setExamTest={setExamTest} setActivePage={setActivePage} />;
       default: return null;
     }
   };

@@ -5,7 +5,8 @@ import {
 } from 'recharts';
 import { 
   Trophy, Target, Flame, Clock, Award, AlertTriangle, CheckCircle, 
-  XCircle, Filter, Sparkles, BookOpen, Layers, BarChart2, ShieldAlert
+  XCircle, Filter, Sparkles, BookOpen, Layers, BarChart2, ShieldAlert,
+  History, TrendingUp, TrendingDown, Minus
 } from 'lucide-react';
 
 export default function StudentAnalyticsDashboard({ user, syllabus, isLight }) {
@@ -82,6 +83,33 @@ export default function StudentAnalyticsDashboard({ user, syllabus, isLight }) {
       accuracy,
       timeSpentHours: (baseTime / 3600).toFixed(1)
     };
+  }, []);
+
+  // Load attempted tests from localStorage (master list + fallback scan)
+  const attemptedTests = useMemo(() => {
+    try {
+      // Primary: read from master list (most reliable, always in order)
+      const masterRaw = localStorage.getItem('quantrex_all_test_results');
+      if (masterRaw) {
+        const parsed = JSON.parse(masterRaw);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+
+      // Fallback: scan individual keys
+      const tests = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith('quantrex_test_result_')) {
+          const stored = localStorage.getItem(key);
+          if (stored) tests.push(JSON.parse(stored));
+        }
+      }
+      tests.sort((a, b) => new Date(b.submittedAt) - new Date(a.submittedAt));
+      return tests;
+    } catch (e) {
+      console.error('Error loading test history:', e);
+      return [];
+    }
   }, []);
 
   // Performance Over Time Charts (Daily, Weekly, Monthly)
@@ -522,6 +550,108 @@ export default function StudentAnalyticsDashboard({ user, syllabus, isLight }) {
           </div>
 
         </div>
+      </div>
+
+      {/* ===== ATTEMPTED TEST HISTORY ===== */}
+      <div className={`rounded-2xl border p-6 ${themeClasses.cardBg}`}>
+        <div className="flex items-center gap-3 mb-6">
+          <div className={`p-2.5 rounded-xl ${isLight ? 'bg-blue-50' : 'bg-blue-500/10'}`}>
+            <History className={`h-5 w-5 ${isLight ? 'text-blue-600' : 'text-blue-400'}`} />
+          </div>
+          <div>
+            <h3 className={`font-black text-base uppercase tracking-wider ${themeClasses.textMain}`}>Attempted Test History</h3>
+            <p className={`text-[10px] ${themeClasses.textMuted}`}>All your submitted mock exams and custom tests</p>
+          </div>
+          <span className={`ml-auto px-3 py-1 rounded-full text-xs font-bold ${
+            isLight ? 'bg-blue-100 text-blue-700' : 'bg-blue-500/10 text-blue-400'
+          }`}>{attemptedTests.length} Tests</span>
+        </div>
+
+        {attemptedTests.length === 0 ? (
+          <div className={`text-center py-12 rounded-xl border border-dashed ${
+            isLight ? 'border-slate-300 bg-slate-50' : 'border-white/10 bg-black/20'
+          }`}>
+            <History className={`h-10 w-10 mx-auto mb-3 ${ isLight ? 'text-slate-300' : 'text-gray-600'}`} />
+            <p className={`text-sm font-semibold ${themeClasses.textMuted}`}>No tests attempted yet</p>
+            <p className={`text-xs mt-1 ${themeClasses.textMuted}`}>Complete a mock exam to see your history here</p>
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className={`text-[10px] uppercase tracking-widest font-bold ${
+                  isLight ? 'text-slate-500' : 'text-gray-500'
+                }`}>
+                  <th className={`pb-3 pr-4 border-b ${ isLight ? 'border-slate-200' : 'border-white/5'}`}>#</th>
+                  <th className={`pb-3 pr-4 border-b ${ isLight ? 'border-slate-200' : 'border-white/5'}`}>Test Name</th>
+                  <th className={`pb-3 pr-4 border-b ${ isLight ? 'border-slate-200' : 'border-white/5'}`}>Type</th>
+                  <th className={`pb-3 pr-4 border-b ${ isLight ? 'border-slate-200' : 'border-white/5'}`}>Date</th>
+                  <th className={`pb-3 pr-4 border-b ${ isLight ? 'border-slate-200' : 'border-white/5'} text-center`}>Score</th>
+                  <th className={`pb-3 pr-4 border-b ${ isLight ? 'border-slate-200' : 'border-white/5'} text-center`}>Correct</th>
+                  <th className={`pb-3 pr-4 border-b ${ isLight ? 'border-slate-200' : 'border-white/5'} text-center`}>Wrong</th>
+                  <th className={`pb-3 border-b ${ isLight ? 'border-slate-200' : 'border-white/5'} text-center`}>Accuracy</th>
+                </tr>
+              </thead>
+              <tbody>
+                {attemptedTests.map((t, idx) => {
+                  const accuracy = t.totalQuestions > 0
+                    ? Math.round((t.correct / t.totalQuestions) * 100)
+                    : 0;
+                  const scorePercent = t.maxMarks > 0
+                    ? Math.round((t.score / t.maxMarks) * 100)
+                    : 0;
+                  const dateStr = t.submittedAt
+                    ? new Date(t.submittedAt).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+                    : '—';
+                  const isGoodScore = scorePercent >= 60;
+                  const isMidScore = scorePercent >= 35 && scorePercent < 60;
+
+                  return (
+                    <tr key={t.testId || idx} className={`text-xs transition-colors ${
+                      isLight ? 'hover:bg-slate-50' : 'hover:bg-white/3'
+                    }`}>
+                      <td className={`py-3.5 pr-4 font-bold ${ isLight ? 'text-slate-400' : 'text-gray-600'}`}>{idx + 1}</td>
+                      <td className={`py-3.5 pr-4 font-semibold max-w-[180px] truncate ${ themeClasses.textMain}`} title={t.testTitle}>
+                        {t.testTitle}
+                      </td>
+                      <td className={`py-3.5 pr-4`}>
+                        <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold uppercase ${
+                          isLight ? 'bg-purple-100 text-purple-700' : 'bg-purple-500/10 text-purple-400'
+                        }`}>{t.testType}</span>
+                      </td>
+                      <td className={`py-3.5 pr-4 whitespace-nowrap ${ themeClasses.textMuted}`}>{dateStr}</td>
+                      <td className={`py-3.5 pr-4 text-center font-black text-sm ${
+                        isGoodScore ? 'text-emerald-500' : isMidScore ? 'text-amber-500' : 'text-red-500'
+                      }`}>
+                        {t.score}/{t.maxMarks}
+                      </td>
+                      <td className="py-3.5 pr-4 text-center">
+                        <span className={`font-bold ${ isLight ? 'text-emerald-600' : 'text-emerald-400'}`}>{t.correct}</span>
+                      </td>
+                      <td className="py-3.5 pr-4 text-center">
+                        <span className={`font-bold ${ isLight ? 'text-red-600' : 'text-red-400'}`}>{t.incorrect}</span>
+                      </td>
+                      <td className="py-3.5 text-center">
+                        <div className="flex items-center justify-center gap-1">
+                          {accuracy >= 60 ? (
+                            <TrendingUp className="h-3 w-3 text-emerald-500" />
+                          ) : accuracy >= 35 ? (
+                            <Minus className="h-3 w-3 text-amber-500" />
+                          ) : (
+                            <TrendingDown className="h-3 w-3 text-red-500" />
+                          )}
+                          <span className={`font-black ${
+                            accuracy >= 60 ? 'text-emerald-500' : accuracy >= 35 ? 'text-amber-500' : 'text-red-500'
+                          }`}>{accuracy}%</span>
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
 
     </div>

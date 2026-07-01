@@ -40,7 +40,15 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
 
   useEffect(() => {
     if (test && test.questions) {
-      setQuestions(test.questions);
+      // Sort questions: MCQs first, Numericals second
+      const sorted = [...test.questions].sort((a, b) => {
+        const aIsMcq = Array.isArray(a.options) && a.options.length > 0;
+        const bIsMcq = Array.isArray(b.options) && b.options.length > 0;
+        if (aIsMcq && !bIsMcq) return -1;
+        if (!aIsMcq && bIsMcq) return 1;
+        return 0;
+      });
+      setQuestions(sorted);
       
       const savedData = localStorage.getItem(`nta_test_progress_${test.id}`);
       if (savedData) {
@@ -53,7 +61,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
       } else {
         setTimeLeft((test.durationMinutes || 180) * 60);
         const initialStatus = {};
-        test.questions.forEach((_, i) => initialStatus[i] = 'not_visited');
+        sorted.forEach((_, i) => initialStatus[i] = 'not_visited');
         initialStatus[0] = 'not_answered';
         setStatusMap(initialStatus);
       }
@@ -162,7 +170,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
       }
 
       return {
-        questionId: q.id || idx,
+        questionId: idx,  // Always use index for reliable lookup
         isAttempted,
         isCorrect,
         userAnswer: answers[idx],
@@ -175,6 +183,54 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
     setIsSubmitted(true);
     if (test && test.id) {
       localStorage.removeItem(`nta_test_progress_${test.id}`);
+
+      // Build full per-question data for reattempt feature
+      const perQuestionData = questions.map((q, idx) => {
+        const r = results[idx];
+        return {
+          idx,
+          questionId: q.id || idx,
+          questionText: q.questionText || q.question || '',
+          options: q.options || [],
+          type: q.type || (Array.isArray(q.options) && q.options.length > 0 ? 'mcq' : 'integer'),
+          correctOption: q.correctOption,
+          correctAnswer: q.correctAnswer,
+          correctOptionsArray: q.correctOptionsArray || [],
+          explanation: q.explanation || q.solution || '',
+          subject: q.subject || '',
+          chapter: q.chapter || '',
+          isAttempted: r?.isAttempted || false,
+          isCorrect: r?.isCorrect || false,
+          userAnswer: r?.userAnswer,
+          timeSpent: r?.timeSpent || 0,
+        };
+      });
+
+      const resultRecord = {
+        testId: test.id,
+        testTitle: test.title || 'Untitled Test',
+        testType: test.examType || test.type || 'JEE Main',
+        submittedAt: new Date().toISOString(),
+        score: finalScore,
+        maxMarks,
+        correct: correctCount,
+        incorrect: incorrectCount,
+        unattempted: unattemptedCount,
+        totalQuestions: totalQ,
+        questions: perQuestionData,  // Full question data for reattempt
+      };
+      try {
+        // Save individual result (always kept, never auto-deleted)
+        localStorage.setItem(`quantrex_test_result_${test.id}`, JSON.stringify(resultRecord));
+
+        // Also maintain a master list (summary only, no questions to keep it small)
+        const summaryRecord = { ...resultRecord, questions: undefined };
+        const masterRaw = localStorage.getItem('quantrex_all_test_results');
+        const masterList = masterRaw ? JSON.parse(masterRaw) : [];
+        const filtered = masterList.filter(r => r.testId !== test.id);
+        filtered.unshift(summaryRecord);
+        localStorage.setItem('quantrex_all_test_results', JSON.stringify(filtered));
+      } catch(e) { /* ignore quota errors */ }
     }
   };
 
@@ -307,7 +363,8 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
           <div className="space-y-6">
             <h2 className="text-xl font-bold uppercase tracking-wider mb-4 border-b border-gray-500/20 pb-2">Solutions & Explanations</h2>
             {questions.map((q, i) => {
-              const qr = questionResults.find(r => r.questionId === (q.id || i));
+              // Use direct index access — arrays are parallel and index-aligned
+              const qr = questionResults[i];
               const isAttempted = qr?.isAttempted;
               const isCorrect = qr?.isCorrect;
               const ua = qr?.userAnswer;
@@ -356,7 +413,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                            isCorrectOpt = (q.correctOptionsArray || []).includes(oIdx);
                         } else {
                            let cIdx = q.correctOption;
-                           if (typeof cIdx === 'string') cIdx = cIdx.charCodeAt(0) - 65;
+                           if (typeof cIdx === 'string') cIdx = cIdx.toUpperCase().charCodeAt(0) - 65;
                            isCorrectOpt = cIdx === oIdx;
                         }
                         
@@ -364,16 +421,34 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                         if (Array.isArray(ua)) isUserOpt = ua.includes(oIdx);
                         else isUserOpt = ua === oIdx;
 
-                        let borderClass = isLight ? 'border-slate-200' : 'border-white/10';
-                        if (isCorrectOpt) borderClass = 'border-emerald-500 ring-1 ring-emerald-500';
-                        else if (isUserOpt) borderClass = 'border-red-500';
+                        let borderClass = "";
+                        let bgClass = "";
+                        let textClass = "";
+                        let badgeBgClass = "";
+
+                        if (isCorrectOpt) {
+                          borderClass = 'border-emerald-500 ring-2 ring-emerald-500/30';
+                          bgClass = isLight ? 'bg-emerald-50/75' : 'bg-emerald-950/20';
+                          textClass = isLight ? 'text-emerald-900 font-semibold' : 'text-emerald-300 font-semibold';
+                          badgeBgClass = 'bg-emerald-500 text-white';
+                        } else if (isUserOpt) {
+                          borderClass = 'border-red-500 ring-2 ring-red-500/30';
+                          bgClass = isLight ? 'bg-red-50/75' : 'bg-red-950/20';
+                          textClass = isLight ? 'text-red-900 font-semibold' : 'text-red-300 font-semibold';
+                          badgeBgClass = 'bg-red-500 text-white';
+                        } else {
+                          borderClass = isLight ? 'border-slate-200' : 'border-white/5';
+                          bgClass = isLight ? 'bg-slate-50/50' : 'bg-black/10';
+                          textClass = isLight ? 'text-slate-700' : 'text-gray-400';
+                          badgeBgClass = isLight ? 'bg-slate-200 text-slate-700' : 'bg-[#222] text-gray-400 border border-white/5';
+                        }
 
                         return (
-                          <div key={oIdx} className={`p-4 rounded-xl border ${borderClass} flex gap-4 items-start ${isLight ? 'bg-slate-50' : 'bg-black/20'}`}>
-                            <div className={`w-6 h-6 rounded flex items-center justify-center flex-shrink-0 text-xs font-bold ${isCorrectOpt ? 'bg-emerald-500 text-white' : (isUserOpt ? 'bg-red-500 text-white' : 'bg-gray-500 text-white')}`}>
+                          <div key={oIdx} className={`p-4 rounded-xl border ${borderClass} ${bgClass} flex gap-4 items-start ${textClass}`}>
+                            <div className={`w-6 h-6 rounded flex items-center justify-center flex-shrink-0 text-xs font-bold ${badgeBgClass}`}>
                               {String.fromCharCode(65 + oIdx)}
                             </div>
-                            <div dangerouslySetInnerHTML={{ __html: opt }} className="tex2jax_process text-sm" />
+                            <div dangerouslySetInnerHTML={{ __html: opt }} className="tex2jax_process text-sm flex-1" />
                           </div>
                         );
                       })}
@@ -381,6 +456,22 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                   )}
 
                   <div className={`p-6 rounded-xl border ${isLight ? 'bg-blue-50 border-blue-100' : 'bg-blue-900/10 border-blue-500/20'}`}>
+                    
+                    {/* Explicit Correct Answer Banner */}
+                    <div className={`mb-5 p-3 rounded-xl border flex items-center gap-3 ${isLight ? 'bg-emerald-100/50 border-emerald-200' : 'bg-emerald-500/10 border-emerald-500/30'}`}>
+                      <span className={`text-xs font-black uppercase tracking-widest ${isLight ? 'text-emerald-700' : 'text-emerald-400'}`}>Correct Answer:</span>
+                      <span className={`text-base font-black ${isLight ? 'text-emerald-800' : 'text-emerald-300'}`}>
+                        {q.type === 'integer' || q.options?.length === 0 
+                          ? (q.correctAnswer ?? q.correctOption ?? 'N/A')
+                          : (
+                              q.questionType === 'MULTI_CORRECT' || q.questionType === 'MCQM'
+                                ? (q.correctOptionsArray || []).map(idx => String.fromCharCode(65 + idx)).join(', ') || 'N/A'
+                                : `Option ${typeof q.correctOption === 'string' ? q.correctOption.toUpperCase() : String.fromCharCode(65 + parseInt(q.correctOption || 0))}`
+                            )
+                        }
+                      </span>
+                    </div>
+
                     <h4 className="text-sm font-bold uppercase tracking-wider text-blue-500 mb-4 border-b border-blue-500/20 pb-2">Solution Explanation</h4>
                     {user ? (
                       <div dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(q.explanation || q.solution || "Solution not available.") }} className="tex2jax_process text-sm leading-relaxed" />
@@ -424,8 +515,18 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
       {/* Header */}
       <header className={`px-4 py-2.5 flex justify-between items-center text-sm shadow-md z-10 border-b-4 ${isLight ? 'bg-[#1a5b8c] text-white border-yellow-500' : 'bg-[#111] text-gray-200 border-yellow-600'}`}>
         <div className="font-bold text-lg tracking-wide uppercase flex items-center gap-4">
-          <button onClick={onBackToDashboard} className="px-3 py-1 bg-red-600 hover:bg-red-700 text-white text-xs rounded transition-colors shadow">
-            ← Exit Test
+          <button onClick={onBackToDashboard} className="px-3 py-1 bg-gray-600 hover:bg-gray-700 text-white text-xs rounded transition-colors shadow">
+            ← Pause & Exit
+          </button>
+          <button 
+            onClick={() => {
+               if (window.confirm('Are you sure you want to submit the test? You cannot resume after submitting.')) {
+                  handleSubmit();
+               }
+            }} 
+            className="px-3 py-1 bg-red-600 hover:bg-red-700 text-white text-xs rounded transition-colors shadow"
+          >
+            Submit Test
           </button>
           <span>JEE MAIN 2026 - COMPUTER BASED TEST {mode === 'practice' && '(PRACTICE MODE)'}</span>
         </div>
@@ -515,24 +616,58 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                       />
                     </div>
                   ) : (
-                    currentQ.options.map((opt, oIdx) => (
-                      <label key={oIdx} className={`flex items-start gap-3 cursor-pointer p-3 border rounded-lg transition-all duration-200 ${answers[currentIdx] === oIdx ? (isLight ? 'bg-blue-50 border-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.15)]' : 'bg-blue-900/30 border-blue-500 shadow-none') : (isLight ? 'border-gray-200 hover:bg-gray-50' : 'border-white/10 hover:bg-white/5')}`}>
-                        <input 
-                          type="radio" 
-                          name="q_option" 
-                          className="mt-1 w-4 h-4 cursor-pointer text-blue-600 focus:ring-blue-500"
-                          checked={answers[currentIdx] === oIdx}
-                          onChange={() => {
-                             setAnswers(prev => ({ ...prev, [currentIdx]: oIdx }));
-                             if (mode === 'practice') {
-                               if (!user) setShowAuthModal(true);
-                               else setShowExplanation(true);
-                             }
-                          }}
-                        />
-                        <span className="text-sm font-medium tex2jax_process flex-1" dangerouslySetInnerHTML={{ __html: opt }} />
-                      </label>
-                    ))
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                      {currentQ.options.map((opt, oIdx) => {
+                        const isSelected = answers[currentIdx] === oIdx;
+                        let isCorrect = false;
+                        let isWrong = false;
+                        if (mode === 'practice' && showExplanation) {
+                          isCorrect = currentQ.correctOption === oIdx || currentQ.correctOption === String(oIdx) || currentQ.correctOption === String.fromCharCode(65 + oIdx) || currentQ.correctOption === String.fromCharCode(97 + oIdx);
+                          isWrong = isSelected && !isCorrect;
+                        }
+
+                        return (
+                          <div
+                            key={oIdx}
+                            onClick={() => {
+                              if (mode === 'practice' && showExplanation) return; // Prevent changing answer after checking
+                              setAnswers(prev => ({ ...prev, [currentIdx]: oIdx }));
+                              if (mode === 'practice') {
+                                if (!user) setShowAuthModal(true);
+                                else setShowExplanation(true);
+                              }
+                            }}
+                            className={`flex gap-4 items-start p-4 border-2 rounded-xl cursor-pointer transition-all duration-200 ${
+                              isCorrect
+                                ? (isLight ? 'border-emerald-500 bg-emerald-50 shadow-[0_0_12px_rgba(16,185,129,0.15)] ring-2 ring-emerald-500/20' : 'border-emerald-500 bg-emerald-900/30 ring-2 ring-emerald-500/20')
+                                : isWrong
+                                ? (isLight ? 'border-red-400 bg-red-50' : 'border-red-500 bg-red-900/30')
+                                : isSelected
+                                ? (isLight ? 'border-blue-500 bg-blue-50 shadow-[0_0_12px_rgba(59,130,246,0.15)] ring-2 ring-blue-500/20' : 'border-blue-500 bg-blue-900/30 ring-2 ring-blue-500/20')
+                                : (isLight ? 'border-slate-200 bg-white hover:border-blue-300 hover:bg-slate-50' : 'border-white/10 bg-[#151515] hover:border-white/20 hover:bg-[#222]')
+                            }`}
+                          >
+                            <div className={`w-8 h-8 rounded-full flex flex-shrink-0 items-center justify-center font-bold text-sm transition-colors ${
+                              isCorrect
+                                ? 'bg-emerald-600 text-white shadow-md'
+                                : isWrong
+                                ? 'bg-red-500 text-white'
+                                : isSelected
+                                ? 'bg-blue-600 text-white shadow-md'
+                                : (isLight ? 'bg-slate-100 text-slate-600 border border-slate-200' : 'bg-black text-gray-400 border border-white/10')
+                            }`}>
+                              {String.fromCharCode(65 + oIdx)}
+                            </div>
+                            <div 
+                              className={`tex2jax_process pt-1 text-sm ${isCorrect ? (isLight ? 'text-emerald-900 font-bold' : 'text-emerald-400 font-bold') : isWrong ? (isLight ? 'text-red-900 font-bold' : 'text-red-400 font-bold') : isSelected ? (isLight ? 'text-blue-900 font-semibold' : 'text-blue-100 font-semibold') : (isLight ? 'text-slate-700' : 'text-gray-300')}`}
+                              dangerouslySetInnerHTML={{ __html: opt.replace(/<\/?(li|ul|ol)[^>]*>/gi, '') }} 
+                            />
+                            {isCorrect && <span className="ml-auto text-emerald-600 font-bold">✓</span>}
+                            {isWrong && <span className="ml-auto text-red-500 font-bold">✗</span>}
+                          </div>
+                        );
+                      })}
+                    </div>
                   )}
                 </div>
 

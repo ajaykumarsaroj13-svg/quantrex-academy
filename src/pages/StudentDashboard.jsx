@@ -593,6 +593,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
             { id: 'tests', icon: Target, label: 'Official Paper', isPage: true, pageId: 'test-series' },
             { id: 'ultimate-tests', icon: Target, label: 'Ultimate Test Series', isPage: true, pageId: 'ultimate-test-series' },
             { id: 'ai-analytics', icon: BrainCircuit, label: 'AI Analytics' },
+            { id: 'my-dashboard', icon: BarChart, label: 'My Dashboard', isPage: true, pageId: 'my-dashboard' },
             { id: 'doubts', icon: LogOut, label: '24/7 Doubts' }
           ].map((item) => (
               <button
