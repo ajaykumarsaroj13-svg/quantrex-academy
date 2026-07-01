@@ -62,15 +62,25 @@ export const generateSimilarQuestion = async (originalQuestion, count = 1) => {
     1. ${specificInstructions}
     2. Provide 4 options for each question (if the original was multiple choice).
     3. Provide the correct option index (0 for A, 1 for B, 2 for C, 3 for D).
-    4. Provide a HIGH-QUALITY, very detailed, step-by-step teacher-level solution/explanation for EACH new question.
-    5. Output the result ONLY as a valid JSON ARRAY of objects, no markdown formatting outside the JSON. The array must contain exactly ${count} objects.
+    4. SOLUTION FORMAT (VERY IMPORTANT):
+       - Write the solution like a TEACHER writing on a BLACKBOARD — short, crisp, step-by-step.
+       - Use numbered steps: Step 1, Step 2, Step 3, etc.
+       - Each step should be ONE line only — no paragraphs, no long sentences.
+       - Use LaTeX with \\( \\) for inline math and \\[ \\] for display math. Do NOT use $ signs for math.
+       - Wrap the entire solution in HTML. Use <b> for labels, <br/> for line breaks between steps.
+       - Example format:
+         "<b>Step 1:</b> Given equation: \\(x^2 - 3x + r = 0\\)<br/><b>Step 2:</b> Sum of roots: \\(\\alpha + \\beta = 3\\)<br/><b>Step 3:</b> Product of roots: \\(\\alpha\\beta = r\\)<br/><b>Answer:</b> \\(\\boxed{-135}\\) → <b>Option A</b>"
+       - Keep total solution under 6-8 short steps. NO lengthy explanations.
+    5. For questionText, also use \\( \\) for inline math and \\[ \\] for display math. Do NOT use $ signs.
+    6. For options, also use \\( \\) for inline math. Do NOT use $ signs.
+    7. Output the result ONLY as a valid JSON ARRAY of objects, no markdown formatting outside the JSON. The array must contain exactly ${count} objects.
     
     Structure for each object in the JSON array:
     {
-      "questionText": "The new challenging question text",
+      "questionText": "The new question text with \\( \\) for math",
       "options": ["Option A", "Option B", "Option C", "Option D"],
       "correctOption": 2,
-      "explanation": "Extremely detailed step-by-step solution"
+      "explanation": "<b>Step 1:</b> ... <br/><b>Step 2:</b> ... <br/><b>Answer:</b> \\(\\boxed{value}\\) → <b>Option X</b>"
     }
   `;
 
