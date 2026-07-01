@@ -129,29 +129,23 @@ const generateMockSimilarQuestion = async (originalQuestion, count = 1) => {
   const mockQuestions = [];
 
   for (let i = 0; i < count; i++) {
-    // Mock variation logic based on subject
     let newQuestionText = originalQuestion.questionText || originalQuestion.question || '';
     let newOptions = [...(originalQuestion.options || [])];
+    
+    // Convert correctOption safely
     let newCorrectOption = originalQuestion.correctOption;
-    let newCorrectAnswer = originalQuestion.correctAnswer;
-    let newExplanation = "This is a highly detailed mock step-by-step solution demonstrating the trick involved. (Fallback Mode)";
-
-    // Very simple mock variations
-    if (subject?.toLowerCase().includes('math')) {
-      newQuestionText = `[TRICKY VARIATION ${i+1}]: ` + newQuestionText.replace(/[0-9]+/g, (match) => {
-        const num = parseInt(match);
-        return (num + Math.floor(Math.random() * 5) + 1).toString();
-      });
-      if (newOptions.length > 0) {
-        newOptions = newOptions.map(opt => opt + ' (Similar)');
-        newCorrectOption = Math.floor(Math.random() * newOptions.length);
-      }
-    } else {
-      newQuestionText = `[TRICKY VARIATION ${i+1}]: ` + newQuestionText;
-      if (newOptions.length > 0) {
-        newCorrectOption = Math.floor(Math.random() * newOptions.length);
+    if (typeof newCorrectOption === 'string') {
+      const parsedOpt = newCorrectOption.toUpperCase().charCodeAt(0) - 65;
+      if (!isNaN(parsedOpt) && parsedOpt >= 0 && parsedOpt < 4) {
+        newCorrectOption = parsedOpt;
       }
     }
+    
+    let newCorrectAnswer = originalQuestion.correctAnswer || originalQuestion.correctOption;
+    let newExplanation = `⚠️ [DEMO MODE FALLBACK] Your Gemini API key is currently invalid or expired. To generate real, unique variations with detailed step-by-step solutions, please update your VITE_GEMINI_API_KEY environment variable.`;
+
+    // Prepend a warning tag to the question text
+    newQuestionText = `<div class="text-red-500 font-bold mb-2">⚠️ [DEMO MODE FALLBACK - Invalid Gemini API Key]</div>` + newQuestionText;
 
     mockQuestions.push({
       ...originalQuestion,
