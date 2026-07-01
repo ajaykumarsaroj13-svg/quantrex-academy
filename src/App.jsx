@@ -23,6 +23,7 @@ const BookPractice = React.lazy(() => import('./pages/BookPractice'));
 
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 import { DEFAULT_TESTS, DEFAULT_BOOKS, DEFAULT_HOME_CONTENT } from './utils/defaultData';
+import { generateCustomTest } from './utils/testGenerator';
 
 
 
@@ -167,6 +168,55 @@ export default function App() {
     });
   }, []);
 
+  // Handle custom test URL parameter
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+
+    // Handle resume
+    const resumeTestParam = searchParams.get('resume_custom_test');
+    if (resumeTestParam) {
+      window.history.replaceState({path: newUrl}, '', newUrl);
+      const activeTest = localStorage.getItem('quantrex_active_custom_test');
+      if (activeTest) {
+        setExamTest(JSON.parse(activeTest));
+        setActivePage('exam-mode');
+      }
+      return;
+    }
+
+    const customTestParam = searchParams.get('custom_test');
+    if (customTestParam) {
+      try {
+        const params = JSON.parse(decodeURIComponent(customTestParam));
+        window.history.replaceState({path: newUrl}, '', newUrl);
+
+        // Generate the test
+        generateCustomTest('/', params.chapters, params.types, params.count, params.years, params.seed).then(questions => {
+           if (questions && questions.length > 0) {
+              const customTestObj = {
+                 id: "custom_test_" + Date.now(),
+                 title: "Custom Practice Test",
+                 duration: params.duration,
+                 durationMinutes: params.duration,
+                 questions: questions,
+                 totalMarks: questions.length * 4
+              };
+              localStorage.setItem('quantrex_active_custom_test', JSON.stringify(customTestObj));
+              setExamTest(customTestObj);
+              setActivePage('exam-mode');
+           } else {
+              alert("Could not generate test. Please try again with different parameters.");
+           }
+        }).catch(err => {
+           console.error("Failed to generate test:", err);
+           alert("An error occurred while generating the test.");
+        });
+      } catch (e) {
+        console.error("Error parsing custom test params:", e);
+      }
+    }
+  }, []);
 
   // Keep page and states persistent across browser refresh
   useEffect(() => {
@@ -448,7 +498,7 @@ export default function App() {
       );
       case 'test-series-exam': return <TestSeriesExam testId={activeTestId} mode={activeTestMode} user={user} onSubmit={handleTestSubmit} onExit={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} />;
       case 'test-series-result': return <TestSeriesResult result={testResult} user={user} onBack={() => setActivePage(localStorage.getItem('quantrex_test_source') || 'test-series')} onRetake={() => { if (activeTestId) handleStartTestSeries(activeTestId, activeTestMode, localStorage.getItem('quantrex_test_source')); }} />;
-      case 'exam-mode': return <TestSystem test={examTest} user={user} onBackToDashboard={() => setActivePage('student-dashboard')} />;
+      case 'exam-mode': return <NtaTestInterface test={examTest} user={user} onBackToDashboard={() => setActivePage('student-dashboard')} mode="test" isLight={isLight} />;
       default: return null;
     }
   };

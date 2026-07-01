@@ -10,6 +10,7 @@ import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
 import Eye from 'lucide-react/dist/esm/icons/eye';
 import BookmarkGroupModal from './BookmarkGroupModal';
 import TeacherSolution from './TeacherSolution';
+import MistakeBooster from './MistakeBooster';
 import MathRenderer from '../utils/MathRenderer';
 
 // Helper to determine if an answer is correct
@@ -577,6 +578,11 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                  <div className="bg-transparent mt-4 flex justify-end">
                     <button className="text-[#1976d2] text-xs font-bold px-3 py-1 border border-[#1976d2] rounded hover:bg-[#e3f2fd] transition-colors">Add a Note</button>
                  </div>
+                 {!isCorrect && (
+                   <div className="mt-8">
+                     <MistakeBooster originalQuestion={currentQuestion} />
+                   </div>
+                 )}
               </div>
              )}
           </div>

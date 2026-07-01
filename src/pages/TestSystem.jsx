@@ -6,6 +6,7 @@ import FileText from 'lucide-react/dist/esm/icons/file-text';
 import ChevronLeft from 'lucide-react/dist/esm/icons/chevron-left';
 import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
 import HelpCircle from 'lucide-react/dist/esm/icons/help-circle';
+import MistakeBooster from '../components/MistakeBooster';
 
 export default function TestSystem({ test, user, onBackToDashboard }) {
   const [questions, setQuestions] = useState([]);
@@ -16,6 +17,27 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
   const [examSubmitted, setExamSubmitted] = useState(false);
   const [examResult, setExamResult] = useState(null);
   const [activeSubject, setActiveSubject] = useState('');
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
+  const enterFullscreen = () => {
+    const elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen().catch(err => {
+        console.warn('Fullscreen request failed:', err);
+        setIsFullscreen(true); // Fallback
+      });
+    } else {
+      setIsFullscreen(true); // Fallback for unsupported browsers
+    }
+  };
 
   useEffect(() => {
     if (!test) return;
@@ -54,15 +76,47 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
       }
     ];
 
-    setQuestions(mockQuestions);
-    setTimeLeft((test.durationMinutes || 30) * 60);
+    let initialTimeLeft = (test.durationMinutes || test.duration || 30) * 60;
+    let initialCurrentIdx = 0;
+    let initialSelectedAnswers = {};
+    let initialStatusMap = { 0: 'visited' };
+    let initialActiveSubject = '';
 
-    // Initial status for question 0
-    setStatusMap({ 0: 'visited' });
+    const savedProgress = localStorage.getItem(`quantrex_test_progress_${test.id}`);
+    if (savedProgress) {
+      try {
+        const parsed = JSON.parse(savedProgress);
+        if (parsed.timeLeft !== undefined) initialTimeLeft = parsed.timeLeft;
+        if (parsed.currentIdx !== undefined) initialCurrentIdx = parsed.currentIdx;
+        if (parsed.selectedAnswers) initialSelectedAnswers = parsed.selectedAnswers;
+        if (parsed.statusMap) initialStatusMap = parsed.statusMap;
+        if (parsed.activeSubject) initialActiveSubject = parsed.activeSubject;
+      } catch(e) {}
+    }
+
+    setQuestions(mockQuestions);
+    setTimeLeft(initialTimeLeft);
+    setCurrentIdx(initialCurrentIdx);
+    setSelectedAnswers(initialSelectedAnswers);
+    setStatusMap(initialStatusMap);
+    
     if (mockQuestions.length > 0) {
-      setActiveSubject(mockQuestions[0].subject || 'Mathematics');
+      setActiveSubject(initialActiveSubject || mockQuestions[0].subject || 'Mathematics');
     }
   }, [test]);
+
+  // Persist state
+  useEffect(() => {
+    if (!test || examSubmitted) return;
+    const saveState = {
+      selectedAnswers,
+      statusMap,
+      timeLeft,
+      currentIdx,
+      activeSubject
+    };
+    localStorage.setItem(`quantrex_test_progress_${test.id}`, JSON.stringify(saveState));
+  }, [selectedAnswers, statusMap, timeLeft, currentIdx, activeSubject, test, examSubmitted]);
 
   // Sync activeSubject when user navigates using Prev/Next or question palette
   useEffect(() => {
@@ -136,6 +190,10 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
 
   const handleSubmitExam = async () => {
     setExamSubmitted(true);
+    if (test?.id) {
+      localStorage.removeItem(`quantrex_test_progress_${test.id}`);
+      localStorage.removeItem('quantrex_active_custom_test');
+    }
     
     // Evaluate answers locally to make the sandbox fully responsive
     let score = 0;
@@ -329,6 +387,11 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
                             <span className="text-gold font-bold uppercase block mb-1">A.K. Sir Solution Strategy:</span>
                             {q.explanation}
                           </div>
+                          {!isCorrect && (
+                            <div className="mt-4">
+                              <MistakeBooster originalQuestion={q} />
+                            </div>
+                          )}
                         </div>
                       );
                     })}
@@ -350,11 +413,28 @@ export default function TestSystem({ test, user, onBackToDashboard }) {
   }
 
   // Active exam-taking mode layout
+  const availableSubjects = [...new Set(questions.map(q => q.subject || 'Mathematics'))];
   const currentQ = questions[currentIdx];
 
+  if (!isFullscreen && !examSubmitted) {
+    return (
+      <div className="fixed inset-0 z-50 bg-obsidian/95 backdrop-blur-md flex flex-col items-center justify-center p-6 text-center select-none">
+        <AlertCircle className="w-16 h-16 text-amber-500 mb-6 animate-pulse" />
+        <h2 className="text-3xl font-black text-white uppercase tracking-wider mb-2">Test Paused</h2>
+        <p className="text-gray-400 mb-8 max-w-md">For the best experience and to prevent cheating, the test must be taken in full screen mode.</p>
+        <button 
+          onClick={enterFullscreen}
+          className="bg-electric text-black font-black uppercase tracking-wider px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:bg-cyan-400 transition-colors"
+        >
+          Resume Test in Full Screen
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-[#08090C] text-white flex flex-col justify-between font-mono select-none">
-      {/* Header bar */}
+    <div className="flex flex-col h-screen bg-[#0a0a0c] text-white font-sans overflow-hidden select-none">
+      {/* Top Header Panel */}
       <header className="bg-obsidian border-b border-white/5 py-4 px-6 md:px-12 flex items-center justify-between">
         <div>
           <h3 className="text-sm font-bold text-white uppercase tracking-wider">{test?.title || 'JEE Test'}</h3>

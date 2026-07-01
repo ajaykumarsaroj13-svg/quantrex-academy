@@ -742,6 +742,8 @@ export default function BookPractice({ chapter, setActivePage, theme, user }) {
                 </div>
               )}
 
+              {/* Removed Mistake Booster as per request */}
+
             </div>
           </div>
 

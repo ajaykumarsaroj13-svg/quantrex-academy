@@ -13,6 +13,8 @@ const getExamLogo = (examId, className = "w-4 h-4 mr-1.5 rounded-full object-cov
   return null;
 };
 
+import MistakeBooster from '../components/MistakeBooster';
+import CustomTestBuilder from '../components/CustomTestBuilder';
 import VideoPlayer from '../components/VideoPlayer';
 import PdfViewer from '../components/PdfViewer';
 import ExamGoalPracticeInterface from '../components/ExamGoalPracticeInterface';
@@ -1674,15 +1676,42 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                             {subjVal.label || subjKey}
                           </button>
                         ))}
+                        <button
+                          onClick={() => {
+                            setSelectedSyllabusSubject('custom_test');
+                            setSelectedSyllabusChapterId('');
+                            setChapterTab('videos');
+                            setExamGoalOverviewConfig(null);
+                            setActivePyqData(null);
+                          }}
+                          className={`py-1.5 px-4 text-xs font-bold uppercase rounded-full border transition-all duration-300 ${
+                            selectedSyllabusSubject === 'custom_test'
+                              ? 'bg-amber-500/10 border-amber-500/50 text-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.2)]'
+                              : 'bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-400 hover:from-amber-500/30 hover:to-orange-500/30 hover:text-amber-300'
+                          }`}
+                        >
+                          <span className="flex items-center gap-1.5">
+                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                            Create Your Own Test
+                          </span>
+                        </button>
                       </div>
                     );
                   })()}
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-2">
-                  <div className={`md:col-span-1 space-y-3 pr-4 max-h-[70vh] overflow-y-auto custom-scrollbar border-r ${isLight ? 'border-slate-200' : 'border-white/5'}`}>
-                    <span className={`text-[10px] uppercase font-black tracking-widest block mb-4 border-b pb-2 ${isLight ? 'text-blue-600 border-slate-200' : 'text-cyan-400/80 border-white/10'}`}>Chapters List</span>
-                    {(() => {
+                  {selectedSyllabusSubject === 'custom_test' ? (
+                    <div className="col-span-1 md:col-span-4">
+                      <CustomTestBuilder selectedSyllabusClass={selectedSyllabusClass} isLight={isLight} syllabus={syllabus} />
+                    </div>
+                  ) : (
+                    <>
+                      <div className={`md:col-span-1 space-y-3 pr-4 max-h-[70vh] overflow-y-auto custom-scrollbar border-r ${isLight ? 'border-slate-200' : 'border-white/5'}`}>
+                        <span className={`text-[10px] uppercase font-black tracking-widest block mb-4 border-b pb-2 ${isLight ? 'text-blue-600 border-slate-200' : 'text-cyan-400/80 border-white/10'}`}>Chapters List</span>
+                        {(() => {
                         const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
                         return syllabus[actualClassKey]?.subjects?.[selectedSyllabusSubject]?.chapters?.map((ch, index) => {
                           const isActive = selectedSyllabusChapterId === ch.id;
@@ -2182,9 +2211,11 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                         </div>
                       )}
                     </div>
-                  </div>
+                  </>
+                )}
               </div>
-            )}
+            </div>
+          )}
 
             {/* LIVE CLASSES TAB */}
             {activeTab === 'live' && (

@@ -4,6 +4,7 @@ import {
   PieChart, Pie, Cell 
 } from 'recharts';
 import TeacherSolution from '../components/TeacherSolution';
+import MistakeBooster from '../components/MistakeBooster';
 import { 
   ChevronRight, PlayCircle, BarChart3, Clock, 
   CheckCircle2, Target, Download, Settings, FileText, Moon, Sun, Monitor, Trophy
@@ -366,6 +367,10 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                        </h3>
                        <TeacherSolution html={activeQuestion.solution} isLight={true} />
                      </div>
+                   )}
+                   
+                   {(!activeQuestion.isAttempted || !activeQuestion.isCorrect) && (
+                     <MistakeBooster originalQuestion={activeQuestion} />
                    )}
                  </div>
                ) : (
