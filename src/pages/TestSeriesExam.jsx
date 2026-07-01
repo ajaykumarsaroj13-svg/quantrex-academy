@@ -34,6 +34,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   const [answerChecked, setAnswerChecked] = useState(false); // practice mode: show answer after clicking button
   const startTimeRef = useRef(Date.now());
   const timerRef     = useRef(null);
+  const currentTestIdRef = useRef(null);
 
   // ── Fetch test data ──────────────────────────────────────────
   useEffect(() => {
@@ -77,6 +78,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
             setTimeLeft((data.durationMinutes || data.duration || 180) * 60);
         }
 
+        currentTestIdRef.current = testId;
         setLoading(false);
         setTimeout(() => { if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise(); }, 300);
       })
@@ -175,7 +177,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
 
   // ── Auto-save State ──────────────────────────────────────────
   useEffect(() => {
-    if (loading || mode === 'practice' || !testId || !testData) return;
+    if (loading || mode === 'practice' || !testId || !testData || currentTestIdRef.current !== testId) return;
     const stateToSave = {
       answers,
       statusMap,

@@ -32,6 +32,49 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
   const [activeCategory, setActiveCategory] = useState(null);
   const [activeGroup, setActiveGroup] = useState(null);
   const [activeSection, setActiveSection] = useState(null);
+
+  // Sync state with popstate for browser back button support inside folders
+  useEffect(() => {
+    const handlePopStateLocal = (e) => {
+      if (e.state && e.state.page === 'test-series') {
+        setActiveCategory(e.state.category || null);
+        setActiveGroup(e.state.group || null);
+        setActiveSection(e.state.section || null);
+        setActiveNdaFolder(e.state.ndaFolder || null);
+      }
+    };
+    window.addEventListener('popstate', handlePopStateLocal);
+    
+    // Replace initial state with page key so popstate works correctly
+    if (window.history.state && window.history.state.page === 'test-series') {
+      window.history.replaceState({
+        page: 'test-series',
+        category: activeCategory,
+        group: activeGroup,
+        section: activeSection,
+        ndaFolder: activeNdaFolder
+      }, '', window.location.pathname);
+    }
+    
+    return () => window.removeEventListener('popstate', handlePopStateLocal);
+  }, [activeCategory, activeGroup, activeSection, activeNdaFolder]);
+
+  const navigateToCategory = (cat) => {
+    setActiveCategory(cat);
+    window.history.pushState({ page: 'test-series', category: cat, group: null, section: null, ndaFolder: null }, '', window.location.pathname);
+  };
+  const navigateToGroup = (grp) => {
+    setActiveGroup(grp);
+    window.history.pushState({ page: 'test-series', category: activeCategory, group: grp, section: null, ndaFolder: null }, '', window.location.pathname);
+  };
+  const navigateToSection = (sec) => {
+    setActiveSection(sec);
+    window.history.pushState({ page: 'test-series', category: activeCategory, group: activeGroup, section: sec, ndaFolder: null }, '', window.location.pathname);
+  };
+  const navigateToNdaFolder = (fld) => {
+    setActiveNdaFolder(fld);
+    window.history.pushState({ page: 'test-series', category: null, group: null, section: null, ndaFolder: fld }, '', window.location.pathname);
+  };
   const [ultimateData, setUltimateData] = useState([]);
 
   useEffect(() => {
@@ -206,7 +249,23 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
       <div className="max-w-7xl mx-auto mb-12">
         <div className="flex items-center gap-4 mb-4">
           <button 
-            onClick={() => onBack ? onBack() : window.history.back()}
+            onClick={() => {
+              if (activeSection) {
+                setActiveSection(null);
+                window.history.back();
+              } else if (activeGroup) {
+                setActiveGroup(null);
+                window.history.back();
+              } else if (activeCategory) {
+                setActiveCategory(null);
+                window.history.back();
+              } else if (activeNdaFolder) {
+                setActiveNdaFolder(null);
+                window.history.back();
+              } else {
+                if (onBack) onBack();
+              }
+            }}
             className="p-2 rounded-xl transition-all hover:bg-white/10"
           >
             <ArrowLeft className="w-6 h-6 text-white" />
@@ -295,16 +354,28 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
             {/* Breadcrumbs for ultimate */}
             {(activeCategory || activeGroup || activeSection) && (
                <div className="flex items-center gap-2 text-gray-400 text-sm mb-6">
-                 <button onClick={() => { setActiveCategory(null); setActiveGroup(null); setActiveSection(null); }} className="hover:text-white">All</button>
-                 {activeCategory && <><ChevronRight className="w-4 h-4"/><button onClick={() => { setActiveGroup(null); setActiveSection(null); }} className="hover:text-white">{activeCategory}</button></>}
-                 {activeGroup && <><ChevronRight className="w-4 h-4"/><button onClick={() => setActiveSection(null)} className="hover:text-white">{activeGroup}</button></>}
-                 {activeSection && <><ChevronRight className="w-4 h-4"/><span className="text-white">{activeSection}</span></>}
+                  <button onClick={() => {
+                    setActiveCategory(null);
+                    setActiveGroup(null);
+                    setActiveSection(null);
+                    window.history.pushState({ page: 'test-series', category: null, group: null, section: null, ndaFolder: null }, '', window.location.pathname);
+                  }} className="hover:text-white">All</button>
+                  {activeCategory && <><ChevronRight className="w-4 h-4"/><button onClick={() => {
+                    setActiveGroup(null);
+                    setActiveSection(null);
+                    window.history.pushState({ page: 'test-series', category: activeCategory, group: null, section: null, ndaFolder: null }, '', window.location.pathname);
+                  }} className="hover:text-white">{activeCategory}</button></>}
+                  {activeGroup && <><ChevronRight className="w-4 h-4"/><button onClick={() => {
+                    setActiveSection(null);
+                    window.history.pushState({ page: 'test-series', category: activeCategory, group: activeGroup, section: null, ndaFolder: null }, '', window.location.pathname);
+                  }} className="hover:text-white">{activeGroup}</button></>}
+                  {activeSection && <><ChevronRight className="w-4 h-4"/><span className="text-white">{activeSection}</span></>}
                </div>
             )}
             
             {!activeCategory && (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {categories.map(cat => renderFolderCard(cat, undefined, () => setActiveCategory(cat), "text-emerald-400", "bg-emerald-500/20"))}
+                {categories.map(cat => renderFolderCard(cat, undefined, () => navigateToCategory(cat), "text-emerald-400", "bg-emerald-500/20"))}
               </div>
             )}
             
@@ -312,7 +383,7 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {groups.map(grp => {
                   const count = modeFilteredTests.filter(t => t.category === activeCategory && t.groupName === grp).length;
-                  return renderFolderCard(grp, count, () => setActiveGroup(grp), "text-blue-400", "bg-blue-500/20");
+                  return renderFolderCard(grp, count, () => navigateToGroup(grp), "text-blue-400", "bg-blue-500/20");
                 })}
               </div>
             )}
@@ -321,7 +392,7 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {sections.map(sec => {
                   const count = modeFilteredTests.filter(t => t.category === activeCategory && t.groupName === activeGroup && t.sectionName === sec).length;
-                  return renderFolderCard(sec || 'Tests', count, () => setActiveSection(sec), "text-purple-400", "bg-purple-500/20");
+                  return renderFolderCard(sec || 'Tests', count, () => navigateToSection(sec), "text-purple-400", "bg-purple-500/20");
                 })}
                 {/* if there are tests with NO section in this group */}
                 {sections.length === 0 && filtered.map(renderTestCard)}
@@ -465,8 +536,8 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
               </div>
             ) : activeTab === 'NDA' && !activeNdaFolder ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-10">
-                {renderFolderCard("Mathematics", filtered.filter(t => t.id && t.id.includes('math')).length, () => setActiveNdaFolder('Mathematics'), "text-blue-400", "bg-blue-500/20")}
-                {renderFolderCard("General Ability", filtered.filter(t => t.id && t.id.includes('gat')).length, () => setActiveNdaFolder('General Ability'), "text-purple-400", "bg-purple-500/20")}
+                {renderFolderCard("Mathematics", filtered.filter(t => t.id && t.id.includes('math')).length, () => navigateToNdaFolder('Mathematics'), "text-blue-400", "bg-blue-500/20")}
+                {renderFolderCard("General Ability", filtered.filter(t => t.id && t.id.includes('gat')).length, () => navigateToNdaFolder('General Ability'), "text-purple-400", "bg-purple-500/20")}
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

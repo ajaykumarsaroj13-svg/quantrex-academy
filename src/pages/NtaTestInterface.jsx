@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import MistakeBooster from '../components/MistakeBooster';
 import { fixExamGoalHtml } from '../utils/htmlCleaner';
 
@@ -14,6 +14,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
   const [questionResults, setQuestionResults] = useState([]);
   const [showExplanation, setShowExplanation] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
+  const currentTestIdRef = useRef(null);
 
   // Section Splitting Helpers
   const mcqIndices = questions.map((q, idx) => ({ q, idx })).filter(item => Array.isArray(item.q.options) && item.q.options.length > 0).map(item => item.idx);
@@ -65,12 +66,13 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
         initialStatus[0] = 'not_answered';
         setStatusMap(initialStatus);
       }
+      currentTestIdRef.current = test.id;
     }
   }, [test]);
 
   // Save progress on state changes
   useEffect(() => {
-    if (test && test.id && !isSubmitted) {
+    if (test && test.id && currentTestIdRef.current === test.id && !isSubmitted) {
       const progress = {
         answers,
         statusMap,
