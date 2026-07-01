@@ -654,74 +654,95 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   );
                 })()}
 
-                <div className="flex flex-col gap-4 mb-6">
-                  {/* Class/Exam Selection */}
-                  <div className={`flex flex-wrap p-1 border rounded-2xl w-fit shadow-md ${
-                    isLight ? 'bg-slate-100 border-slate-200' : 'bg-[#0f111a] border-white/5'
-                  }`}>
+                <div className="flex flex-col gap-5 mb-6">
+                  {/* Class/Exam Selection — Colorful Strips */}
+                  <div className="flex flex-wrap gap-2">
                     {[
-                      { id: 'jee-mains', label: 'JEE Mains' },
-                      { id: 'jee-advanced', label: 'JEE Advanced' },
-                      { id: 'nda', label: 'NDA' },
-                      { id: 'class-12', label: 'Class 12 Boards' },
-                      { id: 'class-11', label: 'Class 11 Foundation' }
-                    ].map(cls => (
-                      <button
-                        key={cls.id}
-                        onClick={() => {
-                          setSelectedSyllabusClass(cls.id);
-                          setSelectedSyllabusChapterId('');
-                          setChapterTab('pyqs');
-                          setPyqSubView('overview');
-                          setActivePyqData(null);
-                          
-                          const actualClassKey = cls.id === 'jee-mains' ? 'mains' : cls.id === 'jee-advanced' ? 'advanced' : cls.id;
-                          const subjects = syllabus[actualClassKey]?.subjects || {};
-                          const firstSubjectKey = Object.keys(subjects)[0];
-                          if (firstSubjectKey) {
-                            setSelectedSyllabusSubject(firstSubjectKey);
-                          } else {
-                            setSelectedSyllabusSubject('');
-                          }
-                        }}
-                        className={`flex items-center justify-center py-2 px-4 text-[10px] font-extrabold uppercase rounded-xl transition-all duration-300 ${
-                          selectedSyllabusClass === cls.id 
-                            ? 'bg-gradient-to-r from-amber-500 to-yellow-600 text-white shadow-md border border-amber-500/30' 
-                            : `${isLight ? 'text-slate-600 hover:text-slate-900' : 'text-gray-400 hover:text-white'} border border-transparent`
-                        }`}
-                      >
-                        {getExamLogo(cls.id, "w-4 h-4 mr-1.5 rounded-full object-cover")}
-                        {cls.label}
-                      </button>
-                    ))}
+                      { id: 'jee-mains', label: 'JEE Mains', strip: 'from-cyan-500 to-blue-600', stripLight: 'from-cyan-500 to-blue-600', badge: 'bg-cyan-500/10 text-cyan-600 border-cyan-400/40', badgeDark: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30', dot: 'bg-cyan-500' },
+                      { id: 'jee-advanced', label: 'JEE Advanced', strip: 'from-violet-500 to-purple-700', stripLight: 'from-violet-500 to-purple-700', badge: 'bg-purple-500/10 text-purple-700 border-purple-400/40', badgeDark: 'bg-purple-500/10 text-purple-400 border-purple-500/30', dot: 'bg-purple-500' },
+                      { id: 'nda', label: 'NDA', strip: 'from-emerald-500 to-teal-600', stripLight: 'from-emerald-500 to-teal-600', badge: 'bg-emerald-500/10 text-emerald-700 border-emerald-400/40', badgeDark: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30', dot: 'bg-emerald-500' },
+                      { id: 'class-12', label: 'Class 12', strip: 'from-orange-500 to-red-600', stripLight: 'from-orange-500 to-red-600', badge: 'bg-orange-500/10 text-orange-700 border-orange-400/40', badgeDark: 'bg-orange-500/10 text-orange-400 border-orange-500/30', dot: 'bg-orange-500' },
+                      { id: 'class-11', label: 'Class 11', strip: 'from-rose-500 to-pink-600', stripLight: 'from-rose-500 to-pink-600', badge: 'bg-pink-500/10 text-pink-700 border-pink-400/40', badgeDark: 'bg-pink-500/10 text-pink-400 border-pink-500/30', dot: 'bg-pink-500' },
+                    ].map(cls => {
+                      const isActive = selectedSyllabusClass === cls.id;
+                      return (
+                        <button
+                          key={cls.id}
+                          onClick={() => {
+                            setSelectedSyllabusClass(cls.id);
+                            setSelectedSyllabusChapterId('');
+                            setChapterTab('pyqs');
+                            setPyqSubView('overview');
+                            setActivePyqData(null);
+                            const actualClassKey = cls.id === 'jee-mains' ? 'mains' : cls.id === 'jee-advanced' ? 'advanced' : cls.id;
+                            const subjects = syllabus[actualClassKey]?.subjects || {};
+                            const firstSubjectKey = Object.keys(subjects)[0];
+                            if (firstSubjectKey) setSelectedSyllabusSubject(firstSubjectKey);
+                            else setSelectedSyllabusSubject('');
+                          }}
+                          className={`relative flex items-center gap-2 py-2 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 overflow-hidden hover:-translate-y-0.5 hover:shadow-lg ${
+                            isActive
+                              ? isLight
+                                ? `${cls.badge} shadow-md scale-[1.03]`
+                                : `${cls.badgeDark} shadow-lg shadow-black/30 scale-[1.03]`
+                              : isLight
+                                ? 'bg-white border-slate-200 text-slate-500 hover:border-slate-300'
+                                : 'bg-white/3 border-white/8 text-gray-400 hover:text-gray-200'
+                          }`}
+                        >
+                          {/* Left color strip */}
+                          <span className={`absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-gradient-to-b ${cls.strip} transition-all duration-300 ${isActive ? 'opacity-100' : 'opacity-30'}`} />
+                          {/* Colored dot indicator */}
+                          <span className={`w-2 h-2 rounded-full flex-shrink-0 ${cls.dot} ml-1 ${isActive ? 'shadow-sm' : 'opacity-50'}`} />
+                          {getExamLogo(cls.id, "w-4 h-4 rounded-full object-cover flex-shrink-0")}
+                          <span className="tracking-wider">{cls.label}</span>
+                          {isActive && <span className={`w-1.5 h-1.5 rounded-full bg-gradient-to-b ${cls.strip} animate-pulse ml-0.5`} />}
+                        </button>
+                      );
+                    })}
                   </div>
 
-                  {/* Subject Selection */}
+                  {/* Subject Selection — Colorful Strips */}
                   {(() => {
                     const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
                     const subjects = syllabus[actualClassKey]?.subjects || {};
                     if (Object.keys(subjects).length === 0) return null;
+                    const subjectColors = {
+                      mathematics: { strip: 'from-blue-500 to-indigo-600', dot: 'bg-blue-500', active: 'bg-blue-500/10 border-blue-400/50 text-blue-600', activeDark: 'bg-blue-500/10 border-blue-500/40 text-blue-400' },
+                      physics: { strip: 'from-amber-500 to-orange-600', dot: 'bg-amber-500', active: 'bg-amber-500/10 border-amber-400/50 text-amber-700', activeDark: 'bg-amber-500/10 border-amber-500/40 text-amber-400' },
+                      chemistry: { strip: 'from-emerald-500 to-green-600', dot: 'bg-emerald-500', active: 'bg-emerald-500/10 border-emerald-400/50 text-emerald-700', activeDark: 'bg-emerald-500/10 border-emerald-500/40 text-emerald-400' },
+                      biology: { strip: 'from-pink-500 to-rose-600', dot: 'bg-pink-500', active: 'bg-pink-500/10 border-pink-400/50 text-pink-700', activeDark: 'bg-pink-500/10 border-pink-500/40 text-pink-400' },
+                      english: { strip: 'from-violet-500 to-purple-600', dot: 'bg-violet-500', active: 'bg-violet-500/10 border-violet-400/50 text-violet-700', activeDark: 'bg-violet-500/10 border-violet-500/40 text-violet-400' },
+                    };
+                    const defaultColor = { strip: 'from-teal-500 to-cyan-600', dot: 'bg-teal-500', active: 'bg-teal-500/10 border-teal-400/50 text-teal-700', activeDark: 'bg-teal-500/10 border-teal-500/40 text-teal-400' };
                     return (
                       <div className="flex flex-wrap gap-2">
-                        {Object.entries(subjects).map(([subjKey, subjVal]) => (
-                          <button
-                            key={subjKey}
-                            onClick={() => {
-                              setSelectedSyllabusSubject(subjKey);
-                              setSelectedSyllabusChapterId('');
-                              setChapterTab('pyqs');
-                              setPyqSubView('overview');
-                              setActivePyqData(null);
-                            }}
-                            className={`py-1.5 px-4 text-[10px] font-extrabold uppercase rounded-full border transition-all duration-300 ${
-                              selectedSyllabusSubject === subjKey
-                                ? 'bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border-amber-500/40 text-amber-500 shadow-sm'
-                                : `${isLight ? 'bg-white border-slate-200 text-slate-500 hover:text-slate-800' : 'bg-white/5 border-white/5 text-gray-400 hover:text-white'}`
-                            }`}
-                          >
-                            {subjVal.label || subjKey}
-                          </button>
-                        ))}
+                        {Object.entries(subjects).map(([subjKey, subjVal]) => {
+                          const isSubjActive = selectedSyllabusSubject === subjKey;
+                          const colors = subjectColors[subjKey] || defaultColor;
+                          return (
+                            <button
+                              key={subjKey}
+                              onClick={() => {
+                                setSelectedSyllabusSubject(subjKey);
+                                setSelectedSyllabusChapterId('');
+                                setChapterTab('pyqs');
+                                setPyqSubView('overview');
+                                setActivePyqData(null);
+                              }}
+                              className={`relative flex items-center gap-2 py-1.5 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 overflow-hidden hover:-translate-y-0.5 hover:shadow-md ${
+                                isSubjActive
+                                  ? isLight ? colors.active : colors.activeDark
+                                  : isLight ? 'bg-white border-slate-200 text-slate-500 hover:border-slate-300' : 'bg-white/3 border-white/8 text-gray-400 hover:text-gray-200'
+                              }`}
+                            >
+                              {/* Left color strip */}
+                              <span className={`absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-gradient-to-b ${colors.strip} transition-all duration-300 ${isSubjActive ? 'opacity-100' : 'opacity-20'}`} />
+                              <span className={`w-2 h-2 rounded-full flex-shrink-0 ${colors.dot} ml-1 ${isSubjActive ? '' : 'opacity-40'}`} />
+                              <span className="tracking-wider">{subjVal.label || subjKey}</span>
+                            </button>
+                          );
+                        })}
                       </div>
                     );
                   })()}
@@ -1614,7 +1635,9 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
 
                 <div className="flex flex-col gap-4 mb-6">
                   {/* Class Selection */}
-                  <div className="flex flex-wrap bg-cyberdark/50 backdrop-blur-xl p-1.5 border border-white/10 rounded-xl w-fit shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+                  <div className={`flex flex-wrap p-1.5 border backdrop-blur-xl rounded-xl w-fit shadow-[0_4px_20px_rgba(0,0,0,0.25)] ${
+                    isLight ? 'bg-slate-100 border-slate-200' : 'bg-cyberdark/50 border-white/10'
+                  }`}>
                     {[
                       { id: 'jee-mains', label: 'JEE Mains' },
                       { id: 'jee-advanced', label: 'JEE Advanced' },
@@ -1643,8 +1666,12 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                         }}
                         className={`flex items-center justify-center flex-1 min-w-[120px] py-2 px-4 text-xs font-bold uppercase rounded-lg transition-all duration-300 ${
                           selectedSyllabusClass === cls.id 
-                            ? 'bg-gradient-to-r from-blue-600/30 to-cyan-500/30 text-cyan-300 border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.15)]' 
-                            : 'text-gray-400 hover:text-gray-200 hover:bg-white/5 border border-transparent'
+                            ? (isLight 
+                                ? 'bg-white border-2 border-blue-600 text-blue-600 shadow-[0_0_12px_rgba(37,99,235,0.15)] font-black' 
+                                : 'bg-[#0f1225] border border-cyan-500 text-cyan-300 shadow-[0_0_20px_rgba(6,182,212,0.35)] font-black')
+                            : (isLight 
+                                ? 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 border border-transparent' 
+                                : 'text-gray-400 hover:text-gray-200 hover:bg-white/5 border border-transparent')
                         }`}
                       >
                         {getExamLogo(cls.id)}
@@ -1670,8 +1697,12 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                             }}
                             className={`py-1.5 px-4 text-xs font-bold uppercase rounded-full border transition-all duration-300 ${
                               selectedSyllabusSubject === subjKey
-                                ? 'bg-cyan-500/10 border-cyan-500/30 text-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.1)]'
-                                : 'bg-white/5 border-white/5 text-gray-400 hover:text-gray-200 hover:bg-white/10'
+                                ? (isLight 
+                                    ? 'bg-blue-50 border border-blue-600 text-blue-600 shadow-[0_0_10px_rgba(37,99,235,0.15)] font-black' 
+                                    : 'bg-cyan-500/10 border border-cyan-500/50 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.25)] font-black')
+                                : (isLight 
+                                    ? 'bg-white border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-800' 
+                                    : 'bg-white/5 border-white/5 text-gray-400 hover:text-gray-200 hover:bg-white/10')
                             }`}
                           >
                             {subjVal.label || subjKey}
@@ -1687,8 +1718,12 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                           }}
                           className={`py-1.5 px-4 text-xs font-bold uppercase rounded-full border transition-all duration-300 ${
                             selectedSyllabusSubject === 'custom_test'
-                              ? 'bg-amber-500/10 border-amber-500/50 text-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.2)]'
-                              : 'bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-400 hover:from-amber-500/30 hover:to-orange-500/30 hover:text-amber-300'
+                              ? (isLight 
+                                  ? 'bg-amber-50 border border-amber-600 text-amber-700 shadow-[0_0_10px_rgba(245,158,11,0.15)] font-black' 
+                                  : 'bg-amber-500/10 border border-amber-500/50 text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.25)] font-black')
+                              : (isLight 
+                                  ? 'bg-amber-50 border border-amber-300/40 text-amber-600 hover:bg-amber-100 hover:text-amber-750 font-bold' 
+                                  : 'bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-400 hover:from-amber-500/30 hover:to-orange-500/30 hover:text-amber-300')
                           }`}
                         >
                           <span className="flex items-center gap-1.5">
@@ -1711,7 +1746,10 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   ) : (
                     <>
                       <div className={`md:col-span-1 space-y-3 pr-4 max-h-[70vh] overflow-y-auto custom-scrollbar border-r ${isLight ? 'border-slate-200' : 'border-white/5'}`}>
-                        <span className={`text-[10px] uppercase font-black tracking-widest block mb-4 border-b pb-2 ${isLight ? 'text-blue-600 border-slate-200' : 'text-cyan-400/80 border-white/10'}`}>Chapters List</span>
+                        <span className={`text-[10px] uppercase font-black tracking-widest flex items-center gap-2 mb-4 border-b pb-2 pl-2 border-l-4 ${isLight ? 'text-blue-700 border-slate-200 border-l-blue-600' : 'text-cyan-300 border-white/10 border-l-cyan-500'}`}>
+                          <span className={`w-1.5 h-1.5 rounded-full animate-ping ${isLight ? 'bg-blue-500' : 'bg-cyan-400'}`} />
+                          Chapters List
+                        </span>
                         {(() => {
                         const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
                         return syllabus[actualClassKey]?.subjects?.[selectedSyllabusSubject]?.chapters?.map((ch, index) => {
