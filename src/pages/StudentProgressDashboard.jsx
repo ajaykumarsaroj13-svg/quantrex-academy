@@ -399,29 +399,30 @@ export default function StudentProgressDashboard({ user, isLight, onBack, testsD
   }, [openTest]);
 
   const stats = useMemo(() => {
-    const totalCorrect = allTestResults.reduce((s, t) => s + (t.correct || 0), 0);
-    const totalWrong = allTestResults.reduce((s, t) => s + (t.incorrect || 0), 0);
-    const totalQ = allTestResults.reduce((s, t) => s + (t.totalQuestions || 0), 0);
-    const accuracy = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
-    const bestScore = allTestResults.length > 0
-      ? Math.max(...allTestResults.map(t => t.maxMarks > 0 ? Math.round((t.score / t.maxMarks) * 100) : 0)) : 0;
-    if (!allTestResults.length) return { total: 0, totalCorrect: 0, totalWrong: 0, accuracy: 0, bestScore: 0 };
+    const filteredResults = allTestResults.filter(t => {
+      const exam = t.examType || (String(t.testId || '').includes('advanced') ? 'JEE Advanced' : String(t.testId || '').includes('nda') ? 'NDA' : 'JEE Main');
+      return exam === activeTab;
+    });
+
+    if (!filteredResults.length) return { total: 0, totalCorrect: 0, totalWrong: 0, accuracy: 0, bestScore: 0 };
+
     let c = 0, w = 0, q = 0, best = 0;
-    allTestResults.forEach(t => {
+    filteredResults.forEach(t => {
       c += (t.correct || 0);
       w += (t.incorrect || 0);
       q += (t.totalQuestions || 0);
       const acc = t.totalQuestions ? ((t.correct || 0) / t.totalQuestions) * 100 : 0;
       if (acc > best) best = acc;
     });
+
     return {
-      total: allTestResults.length,
+      total: filteredResults.length,
       totalCorrect: c,
       totalWrong: w,
       accuracy: q ? Math.round((c / q) * 100) : 0,
       bestScore: Math.round(best)
     };
-  }, [allTestResults]);
+  }, [allTestResults, activeTab]);
 
   const themeCard = isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-[#141821] border-white/10';
   const themeMuted = isLight ? 'text-slate-500' : 'text-gray-500';
@@ -437,7 +438,11 @@ export default function StudentProgressDashboard({ user, isLight, onBack, testsD
     );
   }
 
-  const currentTests = allAvailableTests.filter(t => t.examType === activeTab && (activeCategory ? t.category === activeCategory : true));
+  const currentTests = allAvailableTests.filter(t => 
+    t.examType === activeTab && 
+    (activeCategory ? t.category === activeCategory : true) &&
+    testStates[t.id]
+  );
 
   return (
     <div className={`min-h-screen ${isLight ? 'bg-slate-50' : 'bg-[#0A0F1C]'}`}>
@@ -449,7 +454,7 @@ export default function StudentProgressDashboard({ user, isLight, onBack, testsD
             </button>
             <div>
               <h1 className={`text-xl font-black uppercase tracking-wide ${themeText}`}>My Dashboard</h1>
-              <p className={`text-xs ${themeMuted}`}>Central Hub for All Available Tests</p>
+              <p className={`text-xs ${themeMuted}`}>Central Hub for Your Test Progress & Analysis</p>
             </div>
           </div>
         </div>
@@ -527,7 +532,10 @@ export default function StudentProgressDashboard({ user, isLight, onBack, testsD
                   </div>
                 )}
                 <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${themeMuted}`}>Completed Custom Tests</p>
-                {allTestResults.filter(t => String(t.testType || '').includes('Custom') || String(t.testTitle || '').includes('Custom')).map((t, i) => <TestRow key={t.testId || i} t={t} isLight={isLight} onOpenTest={setOpenTest} />)}
+                {allTestResults.filter(t => 
+                  (String(t.testType || '').includes('Custom') || String(t.testTitle || '').includes('Custom')) &&
+                  (t.examType || (String(t.testId || '').includes('advanced') ? 'JEE Advanced' : String(t.testId || '').includes('nda') ? 'NDA' : 'JEE Main')) === activeTab
+                ).map((t, i) => <TestRow key={t.testId || i} t={t} isLight={isLight} onOpenTest={setOpenTest} />)}
               </div>
           )}
           {activeCategory !== 'PYQ Practice' && activeCategory !== 'Custom Tests' && (
@@ -561,7 +569,7 @@ export default function StudentProgressDashboard({ user, isLight, onBack, testsD
                      </div>
                    );
                 })}
-                {currentTests.length === 0 && <div className={`col-span-2 text-center py-10 rounded-xl border border-dashed ${isLight ? 'border-slate-300 text-slate-400' : 'border-white/10 text-gray-500'}`}>No tests available in this category for {activeTab}.</div>}
+                 {currentTests.length === 0 && <div className={`col-span-2 text-center py-10 rounded-xl border border-dashed ${isLight ? 'border-slate-300 text-slate-400' : 'border-white/10 text-gray-500'}`}>No tests attempted yet in this category for {activeTab}.</div>}
              </div>
           )}
         </div>
