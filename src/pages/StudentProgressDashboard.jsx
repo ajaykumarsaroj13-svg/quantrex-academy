@@ -3,6 +3,7 @@ import {
   Trophy, Target, CheckCircle, XCircle, ArrowLeft, Eye,
   History, Layers, BookOpen, FileText, AlertCircle
 } from 'lucide-react';
+import { fixExamGoalHtml } from '../utils/htmlCleaner';
 
 function MathHtml({ html, className = '' }) {
   return (
@@ -62,7 +63,7 @@ function QuestionReviewCard({ q, idx, isLight }) {
                   isUserOpt ? 'bg-red-500 text-white' :
                   isLight ? 'bg-slate-200 text-slate-600' : 'bg-gray-700 text-gray-500'
                 }`}>{optLabel(oIdx)}</span>
-                <MathHtml html={typeof opt === 'string' ? opt.replace(/<\/?(li|ul|ol)[^>]*>/gi, '') : opt} className="flex-1" />
+                <MathHtml html={fixExamGoalHtml(opt).replace(/<\/?(li|ul|ol)[^>]*>/gi, '')} className="flex-1" />
               </div>
             );
           })}

@@ -721,7 +721,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
                     <div className="nta-option-text tex2jax_process">
                       {isCorrect && <style>{`#opt-${idx} * { color: #064e3b !important; fill: #064e3b !important; font-weight: bold !important; }`}</style>}
                       {isWrong && <style>{`#opt-${idx} * { color: #7f1d1d !important; fill: #7f1d1d !important; font-weight: bold !important; }`}</style>}
-                      <div id={`opt-${idx}`} dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(typeof opt === 'string' ? opt.replace(/<\/?(li|ul|ol)[^>]*>/gi, '') : opt) }} />
+                      <div id={`opt-${idx}`} dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(opt).replace(/<\/?(li|ul|ol)[^>]*>/gi, '') }} />
                     </div>
                     {isCorrect && <span className="nta-correct-tick">✓</span>}
                     {isWrong && <span className="nta-wrong-cross">✗</span>}

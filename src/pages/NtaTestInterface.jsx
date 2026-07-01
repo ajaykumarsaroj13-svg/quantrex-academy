@@ -660,7 +660,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                             </div>
                             <div 
                               className={`tex2jax_process pt-1 text-sm ${isCorrect ? (isLight ? 'text-emerald-900 font-bold' : 'text-emerald-400 font-bold') : isWrong ? (isLight ? 'text-red-900 font-bold' : 'text-red-400 font-bold') : isSelected ? (isLight ? 'text-blue-900 font-semibold' : 'text-blue-100 font-semibold') : (isLight ? 'text-slate-700' : 'text-gray-300')}`}
-                              dangerouslySetInnerHTML={{ __html: opt.replace(/<\/?(li|ul|ol)[^>]*>/gi, '') }} 
+                              dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(opt).replace(/<\/?(li|ul|ol)[^>]*>/gi, '') }} 
                             />
                             {isCorrect && <span className="ml-auto text-emerald-600 font-bold">✓</span>}
                             {isWrong && <span className="ml-auto text-red-500 font-bold">✗</span>}
