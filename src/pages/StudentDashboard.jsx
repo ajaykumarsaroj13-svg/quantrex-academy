@@ -1632,80 +1632,92 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                 })()}
 
                 <div className="flex flex-col gap-4 mb-6">
-                  {/* Class Selection */}
-                  <div className={`flex flex-wrap p-1.5 border backdrop-blur-xl rounded-xl w-fit shadow-[0_4px_20px_rgba(0,0,0,0.25)] ${
-                    isLight ? 'bg-slate-100 border-slate-200' : 'bg-cyberdark/50 border-white/10'
-                  }`}>
+                  {/* Class/Exam Selection — Colorful Strips */}
+                  <div className="flex flex-wrap gap-2">
                     {[
-                      { id: 'jee-mains', label: 'JEE Mains' },
-                      { id: 'jee-advanced', label: 'JEE Advanced' },
-                      { id: 'nda', label: 'NDA' },
-                      { id: 'class-12', label: 'Class 12 Boards' },
-                      { id: 'class-11', label: 'Class 11 Foundation' }
-                    ].map(cls => (
-                      <button
-                        key={cls.id}
-                        onClick={() => {
-                          setSelectedSyllabusClass(cls.id);
-                          setSelectedSyllabusChapterId('');
-                          setChapterTab('videos');
-                          setExamGoalOverviewConfig(null);
-                          setActivePyqData(null);
-                          
-                          // Default to first subject when class changes
-                          const actualClassKey = cls.id === 'jee-mains' ? 'mains' : cls.id === 'jee-advanced' ? 'advanced' : cls.id;
-                          const subjects = syllabus[actualClassKey]?.subjects || {};
-                          const firstSubjectKey = Object.keys(subjects)[0];
-                          if (firstSubjectKey) {
-                            setSelectedSyllabusSubject(firstSubjectKey);
-                          } else {
-                            setSelectedSyllabusSubject('');
-                          }
-                        }}
-                        className={`flex items-center justify-center flex-1 min-w-[120px] py-2 px-4 text-xs font-bold uppercase rounded-lg transition-all duration-300 ${
-                          selectedSyllabusClass === cls.id 
-                            ? (isLight 
-                                ? 'bg-white border-2 border-blue-600 text-blue-600 shadow-[0_0_12px_rgba(37,99,235,0.15)] font-black' 
-                                : 'bg-[#0f1225] border border-cyan-500 text-cyan-300 shadow-[0_0_20px_rgba(6,182,212,0.35)] font-black')
-                            : (isLight 
-                                ? 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50 border border-transparent' 
-                                : 'text-gray-400 hover:text-gray-200 hover:bg-white/5 border border-transparent')
-                        }`}
-                      >
-                        {getExamLogo(cls.id)}
-                        {cls.label}
-                      </button>
-                    ))}
+                      { id: 'jee-mains', label: 'JEE Mains', strip: 'from-cyan-400 to-blue-600', badge: 'bg-cyan-50 text-cyan-700 border-cyan-400', badgeDark: 'bg-cyan-900/40 text-cyan-300 border-cyan-500', dot: 'bg-cyan-500', stripStyle: '#06b6d4' },
+                      { id: 'jee-advanced', label: 'JEE Advanced', strip: 'from-violet-400 to-purple-700', badge: 'bg-purple-50 text-purple-700 border-purple-400', badgeDark: 'bg-purple-900/40 text-purple-300 border-purple-500', dot: 'bg-purple-500', stripStyle: '#8b5cf6' },
+                      { id: 'nda', label: 'NDA', strip: 'from-emerald-400 to-teal-600', badge: 'bg-emerald-50 text-emerald-700 border-emerald-400', badgeDark: 'bg-emerald-900/40 text-emerald-300 border-emerald-500', dot: 'bg-emerald-500', stripStyle: '#10b981' },
+                      { id: 'class-12', label: 'Class 12', strip: 'from-orange-400 to-red-600', badge: 'bg-orange-50 text-orange-700 border-orange-400', badgeDark: 'bg-orange-900/40 text-orange-300 border-orange-500', dot: 'bg-orange-500', stripStyle: '#f97316' },
+                      { id: 'class-11', label: 'Class 11', strip: 'from-rose-400 to-pink-600', badge: 'bg-rose-50 text-rose-700 border-rose-400', badgeDark: 'bg-pink-900/40 text-pink-300 border-pink-500', dot: 'bg-rose-500', stripStyle: '#fb7185' },
+                    ].map(cls => {
+                      const isActive = selectedSyllabusClass === cls.id;
+                      return (
+                        <button
+                          key={cls.id}
+                          onClick={() => {
+                            setSelectedSyllabusClass(cls.id);
+                            setSelectedSyllabusChapterId('');
+                            setChapterTab('videos');
+                            setExamGoalOverviewConfig(null);
+                            setActivePyqData(null);
+                            const actualClassKey = cls.id === 'jee-mains' ? 'mains' : cls.id === 'jee-advanced' ? 'advanced' : cls.id;
+                            const subjects = syllabus[actualClassKey]?.subjects || {};
+                            const firstSubjectKey = Object.keys(subjects)[0];
+                            if (firstSubjectKey) setSelectedSyllabusSubject(firstSubjectKey);
+                            else setSelectedSyllabusSubject('');
+                          }}
+                          style={isActive ? { borderLeftColor: cls.stripStyle, borderLeftWidth: '4px' } : { borderLeftColor: cls.stripStyle, borderLeftWidth: '3px' }}
+                          className={`relative flex items-center gap-2 py-2 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg ${
+                            isActive
+                              ? isLight
+                                ? `${cls.badge} shadow-md scale-[1.03]`
+                                : `${cls.badgeDark} shadow-lg scale-[1.03]`
+                              : isLight
+                                ? 'bg-white border-slate-200 text-slate-500 hover:border-slate-300'
+                                : 'bg-white/10 border-white/20 text-gray-300 hover:text-white'
+                          }`}
+                        >
+                          <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${cls.dot} ${isActive ? 'opacity-100' : 'opacity-60'}`} />
+                          {getExamLogo(cls.id, "w-4 h-4 rounded-full object-cover flex-shrink-0")}
+                          <span className="tracking-wider">{cls.label}</span>
+                          {isActive && <span className={`w-1.5 h-1.5 rounded-full ${cls.dot} animate-pulse ml-0.5`} />}
+                        </button>
+                      );
+                    })}
                   </div>
 
-                  {/* Subject Selection */}
+                  {/* Subject Selection — Colorful Strips */}
                   {(() => {
-                      const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
-                      return Object.keys(syllabus[actualClassKey]?.subjects || {}).length > 0 && (
-                      <div className="flex flex-wrap gap-2">
-                        {Object.entries(syllabus[actualClassKey]?.subjects || {}).map(([subjKey, subjVal]) => (
-                          <button
-                            key={subjKey}
-                            onClick={() => {
-                              setSelectedSyllabusSubject(subjKey);
-                              setSelectedSyllabusChapterId('');
-                              setChapterTab('videos');
-                              setExamGoalOverviewConfig(null);
-                              setActivePyqData(null);
-                            }}
-                            className={`py-1.5 px-4 text-xs font-bold uppercase rounded-full border transition-all duration-300 ${
-                              selectedSyllabusSubject === subjKey
-                                ? (isLight 
-                                    ? 'bg-blue-50 border border-blue-600 text-blue-600 shadow-[0_0_10px_rgba(37,99,235,0.15)] font-black' 
-                                    : 'bg-cyan-500/10 border border-cyan-500/50 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.25)] font-black')
-                                : (isLight 
-                                    ? 'bg-white border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-800' 
-                                    : 'bg-white/5 border-white/5 text-gray-400 hover:text-gray-200 hover:bg-white/10')
-                            }`}
-                          >
-                            {subjVal.label || subjKey}
-                          </button>
-                        ))}
+                    const actualClassKey = selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass;
+                    const subjects = syllabus[actualClassKey]?.subjects || {};
+                    if (Object.keys(subjects).length === 0) return null;
+                    const subjectColors = {
+                      mathematics: { dot: 'bg-blue-500', active: 'bg-blue-50 border-blue-500 text-blue-700', activeDark: 'bg-blue-900/40 border-blue-400 text-blue-300', stripStyle: '#3b82f6' },
+                      physics:     { dot: 'bg-amber-500', active: 'bg-amber-50 border-amber-500 text-amber-700', activeDark: 'bg-amber-900/40 border-amber-400 text-amber-300', stripStyle: '#f59e0b' },
+                      chemistry:   { dot: 'bg-emerald-500', active: 'bg-emerald-50 border-emerald-500 text-emerald-700', activeDark: 'bg-emerald-900/40 border-emerald-400 text-emerald-300', stripStyle: '#10b981' },
+                      biology:     { dot: 'bg-pink-500', active: 'bg-pink-50 border-pink-500 text-pink-700', activeDark: 'bg-pink-900/40 border-pink-400 text-pink-300', stripStyle: '#ec4899' },
+                      english:     { dot: 'bg-violet-500', active: 'bg-violet-50 border-violet-500 text-violet-700', activeDark: 'bg-violet-900/40 border-violet-400 text-violet-300', stripStyle: '#8b5cf6' },
+                    };
+                    const defaultColor = { dot: 'bg-teal-500', active: 'bg-teal-50 border-teal-500 text-teal-700', activeDark: 'bg-teal-900/40 border-teal-400 text-teal-300', stripStyle: '#14b8a6' };
+                    return (
+                      <div className="flex flex-wrap gap-2 items-center">
+                        {Object.entries(subjects).map(([subjKey, subjVal]) => {
+                          const isSubjActive = selectedSyllabusSubject === subjKey;
+                          const colors = subjectColors[subjKey] || defaultColor;
+                          return (
+                            <button
+                              key={subjKey}
+                              onClick={() => {
+                                setSelectedSyllabusSubject(subjKey);
+                                setSelectedSyllabusChapterId('');
+                                setChapterTab('videos');
+                                setExamGoalOverviewConfig(null);
+                                setActivePyqData(null);
+                              }}
+                              style={isSubjActive ? { borderLeftColor: colors.stripStyle, borderLeftWidth: '4px' } : { borderLeftColor: colors.stripStyle, borderLeftWidth: '3px' }}
+                              className={`relative flex items-center gap-2 py-1.5 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md ${
+                                isSubjActive
+                                  ? isLight ? colors.active : colors.activeDark
+                                  : isLight ? 'bg-white border-slate-200 text-slate-500 hover:border-slate-300' : 'bg-white/10 border-white/20 text-gray-300 hover:text-white'
+                              }`}
+                            >
+                              <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${colors.dot} ${isSubjActive ? 'opacity-100' : 'opacity-60'}`} />
+                              <span className="tracking-wider">{subjVal.label || subjKey}</span>
+                            </button>
+                          );
+                        })}
+                        {/* Custom Test Button */}
                         <button
                           onClick={() => {
                             setSelectedSyllabusSubject('custom_test');
@@ -1714,22 +1726,17 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                             setExamGoalOverviewConfig(null);
                             setActivePyqData(null);
                           }}
-                          className={`py-1.5 px-4 text-xs font-bold uppercase rounded-full border transition-all duration-300 ${
+                          style={selectedSyllabusSubject === 'custom_test' ? { borderLeftColor: '#f59e0b', borderLeftWidth: '4px' } : { borderLeftColor: '#f59e0b', borderLeftWidth: '3px' }}
+                          className={`relative flex items-center gap-2 ml-auto py-1.5 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md ${
                             selectedSyllabusSubject === 'custom_test'
-                              ? (isLight 
-                                  ? 'bg-amber-50 border border-amber-600 text-amber-700 shadow-[0_0_10px_rgba(245,158,11,0.15)] font-black' 
-                                  : 'bg-amber-500/10 border border-amber-500/50 text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.25)] font-black')
-                              : (isLight 
-                                  ? 'bg-amber-50 border border-amber-300/40 text-amber-600 hover:bg-amber-100 hover:text-amber-750 font-bold' 
-                                  : 'bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-400 hover:from-amber-500/30 hover:to-orange-500/30 hover:text-amber-300')
+                              ? isLight ? 'bg-amber-50 border-amber-500 text-amber-700' : 'bg-amber-900/40 border-amber-400 text-amber-300'
+                              : isLight ? 'bg-white border-amber-200 text-amber-600 hover:border-amber-400' : 'bg-amber-500/10 border-amber-500/30 text-amber-500 hover:border-amber-400'
                           }`}
                         >
-                          <span className="flex items-center gap-1.5">
-                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                            </svg>
-                            Create Your Own Test
-                          </span>
+                          <svg className={`w-3.5 h-3.5 ${selectedSyllabusSubject === 'custom_test' ? 'opacity-100' : 'opacity-70'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                          </svg>
+                          <span className="tracking-wider">Create Custom Test</span>
                         </button>
                       </div>
                     );
