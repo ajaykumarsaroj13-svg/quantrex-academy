@@ -367,7 +367,16 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, mode =
                     </span>
                   )}
                 </div>
-                <div className={`text-base tex2jax_process ${isLight ? 'text-gray-800' : 'text-gray-200'}`} dangerouslySetInnerHTML={{ __html: currentQ.questionText }} />
+                <div className={`text-base tex2jax_process ${isLight ? 'text-gray-800' : 'text-gray-200'}`}
+              dangerouslySetInnerHTML={{ 
+                __html: fixExamGoalHtml(
+                  currentQ.questionText || 
+                  currentQ.question || 
+                  currentQ.text || 
+                  (currentQ.solution && currentQ.solution.includes('<img') ? (currentQ.solution.match(/<img[^>]+src="([^">]+)"[^>]*>/) ? `<img src="${currentQ.solution.match(/<img[^>]+src="([^">]+)"[^>]*>/)[1]}" alt="Question Image" style="max-width:100%; height:auto;" />` : '<i>Question text missing in database</i>') : '<i>Question text missing in database</i>')
+                ) 
+              }}
+            />
                 
                 <div className="space-y-4 mt-6">
                   {currentQ.type === 'integer' || currentQ.options.length === 0 ? (

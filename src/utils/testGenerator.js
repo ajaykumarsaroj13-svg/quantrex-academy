@@ -55,6 +55,18 @@ export const generateCustomTest = async (baseUrl, chapterSlugs, types, questionC
             throw new Error("No questions found for the selected chapters.");
         }
 
+        // Filter out completely broken questions that have no text and no image
+        allQuestions = allQuestions.filter(q => {
+            if (q.questionText || q.question || q.text) return true;
+            if (q.imageUrl || q.has_graph) return true;
+            if (q.solution && q.solution.includes('<img')) return true;
+            return false;
+        });
+
+        if (allQuestions.length === 0) {
+            throw new Error("No valid questions found (all were missing question text/image).");
+        }
+
         // Filter by Year
         const currentYear = new Date().getFullYear();
         let filteredQuestions = allQuestions;
@@ -95,9 +107,9 @@ export const generateCustomTest = async (baseUrl, chapterSlugs, types, questionC
                 const typeMatches = shuffled.filter(q => {
                     const qType = (q.type || q.questionType || '').toUpperCase().trim();
                     if (tk === 'MCQ' || tk === 'SINGLE_CORRECT') {
-                        return qType === 'SINGLE_CORRECT' || qType === 'MCQ' || qType === 'SINGLE CORRECT' || qType === '';
+                        return qType === 'SINGLE_CORRECT' || qType === 'MCQ' || qType === 'SINGLE CORRECT' || (qType === '' && Array.isArray(q.options) && q.options.length > 0);
                     } else if (tk === 'NUMERICAL') {
-                        return qType === 'NUMERICAL' || qType === 'INTEGER';
+                        return qType === 'NUMERICAL' || qType === 'INTEGER' || (qType === '' && Array.isArray(q.options) && q.options.length === 0);
                     } else if (tk === 'MULTI_CORRECT' || tk === 'MULTIPLE_CORRECT') {
                         return qType === 'MULTI_CORRECT' || qType === 'MCQM' || qType === 'MULTIPLE CORRECT' || qType === 'MULTIPLE_CORRECT';
                     } else if (tk === 'COMPREHENSION') {
