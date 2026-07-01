@@ -224,30 +224,60 @@ const CustomTestBuilder = ({ selectedSyllabusClass, isLight, syllabus = DEFAULT_
             )}
           </div>
           
-          <div className="flex flex-wrap gap-2 pt-2 border-t border-white/10">
+          <div className="flex flex-wrap gap-3 pt-2 border-t border-white/10">
             <button
               onClick={() => setSelectedSubjectTab('all')}
-              className={`py-1.5 px-4 text-[10px] font-extrabold uppercase rounded-full border transition-all duration-300 ${
+              className={`relative py-2.5 px-5 text-[11px] font-extrabold uppercase rounded-xl border transition-all duration-300 flex items-center gap-2 overflow-hidden ${
                 selectedSubjectTab === 'all'
-                  ? 'bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border-cyan-500/40 text-cyan-400 shadow-sm'
-                  : (isLight ? 'bg-white border-slate-200 text-slate-500 hover:text-slate-800' : 'bg-white/5 border-white/5 text-gray-400 hover:text-white')
+                  ? (isLight 
+                      ? 'bg-blue-50 border-blue-400 text-blue-700 shadow-md border-l-4 border-l-blue-600' 
+                      : 'bg-[#0f172a] border-cyan-500/50 text-cyan-400 shadow-[0_0_15px_rgba(6,182,212,0.2)] border-l-4 border-l-cyan-500')
+                  : (isLight 
+                      ? 'bg-white border-slate-200 text-slate-500 hover:text-slate-800 hover:border-slate-300 hover:shadow-sm border-l-4 border-l-transparent' 
+                      : 'bg-white/5 border-white/5 text-gray-400 hover:text-white hover:border-white/10 hover:bg-white/10 border-l-4 border-l-transparent')
               }`}
             >
+              {selectedSubjectTab === 'all' && (
+                <span className={`absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l ${isLight ? 'from-blue-200/50 to-transparent' : 'from-cyan-500/20 to-transparent'}`} />
+              )}
+              <div className={`w-2 h-2 rounded-full ${selectedSubjectTab === 'all' ? (isLight ? 'bg-blue-600' : 'bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)]') : (isLight ? 'bg-slate-300' : 'bg-gray-600')}`} />
               All Subjects
             </button>
-            {Object.entries(subjects).map(([subjKey, subjVal]) => (
-              <button
-                key={subjKey}
-                onClick={() => setSelectedSubjectTab(subjKey)}
-                className={`py-1.5 px-4 text-[10px] font-extrabold uppercase rounded-full border transition-all duration-300 ${
-                  selectedSubjectTab === subjKey
-                    ? 'bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border-cyan-500/40 text-cyan-400 shadow-sm'
-                    : (isLight ? 'bg-white border-slate-200 text-slate-500 hover:text-slate-800' : 'bg-white/5 border-white/5 text-gray-400 hover:text-white')
-                }`}
-              >
-                {subjVal.label || subjKey}
-              </button>
-            ))}
+            {Object.entries(subjects).map(([subjKey, subjVal]) => {
+              const isActive = selectedSubjectTab === subjKey;
+              // determine strip colors based on subject name
+              let stripColorClass = 'cyan';
+              let stripHex = '#06b6d4';
+              if (subjKey.toLowerCase().includes('phy')) { stripColorClass = 'violet'; stripHex = '#8b5cf6'; }
+              else if (subjKey.toLowerCase().includes('chem')) { stripColorClass = 'emerald'; stripHex = '#10b981'; }
+              else if (subjKey.toLowerCase().includes('math')) { stripColorClass = 'orange'; stripHex = '#f97316'; }
+              
+              return (
+                <button
+                  key={subjKey}
+                  onClick={() => setSelectedSubjectTab(subjKey)}
+                  className={`relative py-2.5 px-5 text-[11px] font-extrabold uppercase rounded-xl border transition-all duration-300 flex items-center gap-2 overflow-hidden ${
+                    isActive
+                      ? (isLight 
+                          ? `bg-${stripColorClass}-50 border-${stripColorClass}-400 text-${stripColorClass}-700 shadow-md` 
+                          : `bg-[#0f172a] border-${stripColorClass}-500/50 text-${stripColorClass}-400 shadow-[0_0_15px_${stripHex}33]`)
+                      : (isLight 
+                          ? 'bg-white border-slate-200 text-slate-500 hover:text-slate-800 hover:border-slate-300 hover:shadow-sm' 
+                          : 'bg-white/5 border-white/5 text-gray-400 hover:text-white hover:border-white/10 hover:bg-white/10')
+                  }`}
+                  style={{
+                    borderLeftWidth: '4px',
+                    borderLeftColor: isActive ? stripHex : 'transparent'
+                  }}
+                >
+                  {isActive && (
+                    <span className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l to-transparent pointer-events-none" style={{ backgroundImage: `linear-gradient(to left, ${stripHex}33, transparent)` }} />
+                  )}
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: isActive ? stripHex : (isLight ? '#cbd5e1' : '#475569'), boxShadow: isActive ? `0 0 8px ${stripHex}` : 'none' }} />
+                  {subjVal.label || subjKey}
+                </button>
+              );
+            })}
           </div>
         </div>
         
@@ -275,30 +305,69 @@ const CustomTestBuilder = ({ selectedSyllabusClass, isLight, syllabus = DEFAULT_
                   </button>
                 </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {subjVal.chapters?.map(ch => {
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {subjVal.chapters?.map((ch, index) => {
                   const fetchSlug = getFetchSlug(ch);
                   const isSelected = selectedChapters.includes(fetchSlug);
+                  
+                  // determine highlight color based on subject
+                  let themeHex = '#06b6d4'; // default cyan
+                  if (subjKey.toLowerCase().includes('phy')) { themeHex = '#8b5cf6'; }
+                  else if (subjKey.toLowerCase().includes('chem')) { themeHex = '#10b981'; }
+                  else if (subjKey.toLowerCase().includes('math')) { themeHex = '#f97316'; }
+
                   return (
                     <button
                       key={ch.id}
                       onClick={() => handleChapterToggle(fetchSlug)}
-                      className={`text-left p-3 rounded-lg border transition-all flex items-start gap-3 ${
+                      className={`group relative text-left p-4 rounded-xl border transition-all duration-300 flex items-center gap-4 overflow-hidden ${
                         isSelected 
-                        ? 'bg-cyan-500/10 border-cyan-500/50 shadow-[0_0_10px_rgba(6,182,212,0.1)]' 
-                        : (isLight ? 'bg-white border-slate-200 hover:border-slate-300' : 'bg-white/5 border-white/5 hover:bg-white/10')
+                        ? (isLight 
+                            ? 'bg-white border-blue-300 shadow-md ring-1 ring-blue-100' 
+                            : 'bg-[#0a0f1c] border-white/20 shadow-[0_4px_20px_rgba(0,0,0,0.5)]') 
+                        : (isLight 
+                            ? 'bg-slate-50 border-slate-200 hover:border-blue-200 hover:shadow-sm hover:bg-white' 
+                            : 'bg-white/[0.02] border-white/5 hover:border-white/10 hover:bg-white/[0.04]')
                       }`}
+                      style={{
+                        borderColor: isSelected ? themeHex : undefined,
+                        boxShadow: isSelected && !isLight ? `0 0 15px ${themeHex}22 inset, 0 4px 20px rgba(0,0,0,0.5)` : undefined
+                      }}
                     >
-                      <div className={`mt-0.5 w-4 h-4 rounded border flex items-center justify-center flex-shrink-0 ${
-                        isSelected 
-                        ? 'bg-cyan-500 border-cyan-500 text-[#0a0a0c]' 
-                        : (isLight ? 'border-slate-300' : 'border-gray-500')
-                      }`}>
-                        {isSelected && <svg viewBox="0 0 14 14" fill="none" className="w-3 h-3"><path d="M3 7.5L6 10.5L11 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>}
+                      {/* Animated background glow on select */}
+                      {isSelected && !isLight && (
+                        <div className="absolute inset-0 pointer-events-none opacity-20" style={{ backgroundImage: `linear-gradient(135deg, ${themeHex}44, transparent)` }} />
+                      )}
+
+                      {/* Number/Icon indicator */}
+                      <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+                        isSelected
+                          ? 'text-white shadow-lg scale-110'
+                          : (isLight ? 'bg-slate-200 text-slate-500' : 'bg-white/10 text-gray-400 group-hover:bg-white/15 group-hover:text-gray-300')
+                      }`}
+                      style={{ backgroundColor: isSelected ? themeHex : undefined, boxShadow: isSelected ? `0 4px 10px ${themeHex}66` : undefined }}
+                      >
+                        {isSelected ? (
+                          <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5"><path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                        ) : (
+                          <span className="font-mono text-sm font-bold opacity-70">
+                            {(index + 1).toString().padStart(2, '0')}
+                          </span>
+                        )}
                       </div>
-                      <span className={`text-sm font-semibold leading-tight ${isSelected ? (isLight ? 'text-slate-800' : 'text-white') : (isLight ? 'text-slate-600' : 'text-gray-300')}`}>
-                        {ch.title}
-                      </span>
+                      
+                      <div className="flex-1 min-w-0">
+                        <span className={`block truncate text-sm font-bold leading-tight transition-colors ${
+                          isSelected 
+                            ? (isLight ? 'text-slate-900' : 'text-white') 
+                            : (isLight ? 'text-slate-600 group-hover:text-slate-800' : 'text-gray-400 group-hover:text-gray-200')
+                        }`}>
+                          {ch.title}
+                        </span>
+                      </div>
+                      
+                      {/* Stylish right edge highlight for selected state */}
+                      <div className={`absolute right-0 top-0 bottom-0 w-1 transition-all duration-300 ${isSelected ? 'opacity-100' : 'opacity-0'}`} style={{ backgroundColor: themeHex }} />
                     </button>
                   );
                 })}

@@ -606,53 +606,54 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
               >
                 {activeTab === 'courses' && (
               <div className="space-y-6 font-sans text-xs">
-                {/* Coaching Header Banner */}
                 {(() => {
-                  let bannerLogo = null;
-                  let titleText = "";
-                  let subText = "";
-                  
-                  if (selectedSyllabusClass === 'jee-mains') {
-                    bannerLogo = logoMainsImg;
-                    titleText = "JEE MAIN";
-                    subText = "NATIONAL TESTING AGENCY";
-                  } else if (selectedSyllabusClass === 'jee-advanced') {
-                    bannerLogo = logoAdvancedImg;
-                    titleText = "JEE ADVANCED";
-                    subText = "INDIAN INSTITUTES OF TECHNOLOGY";
-                  } else if (selectedSyllabusClass === 'nda') {
-                    bannerLogo = logoNdaImg;
-                    titleText = "NDA";
-                    subText = "UNION PUBLIC SERVICE COMMISSION";
-                  } else {
-                    titleText = "BOARD EXAMS";
-                    subText = "QUANTREX ACADEMY";
-                  }
-                  
-                  return (
-                    <div className="flex flex-col items-center justify-center text-center py-4 mb-4 border-b border-white/5">
-                      {bannerLogo && (
-                        <div className={`relative h-16 w-16 rounded-full overflow-hidden border shadow-lg flex items-center justify-center p-1 mb-2 ${
-                          isLight ? 'border-slate-200 bg-white' : 'border-white/10 bg-[#0a0a0c]'
+                    let titleText = "";
+                    let subText = "";
+                    
+                    if (selectedSyllabusClass === 'jee-mains') {
+                      titleText = "JEE MAIN";
+                      subText = "National Testing Agency";
+                    } else if (selectedSyllabusClass === 'jee-advanced') {
+                      titleText = "JEE ADVANCED";
+                      subText = "Indian Institutes of Technology";
+                    } else if (selectedSyllabusClass === 'nda') {
+                      titleText = "NDA";
+                      subText = "Union Public Service Commission";
+                    } else {
+                      return null;
+                    }
+                    
+                    return (
+                      <div className="flex justify-center py-2 mb-2">
+                        <div className={`relative px-8 py-4 rounded-xl border flex flex-col items-center justify-center overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.3)] transition-all ${
+                          isLight 
+                            ? 'bg-gradient-to-r from-blue-50 via-white to-blue-50 border-blue-200' 
+                            : 'bg-gradient-to-r from-[#0f1225] via-cyberdark to-[#0f1225] border-cyan-500/30'
                         }`}>
-                          <img src={bannerLogo} alt={titleText} className="h-full w-full object-contain" />
+                          {/* Glowing background effect */}
+                          {!isLight && (
+                            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-electric/5 to-blue-500/10 pointer-events-none" />
+                          )}
+                          <h2 className={`relative font-logo font-black text-3xl md:text-4xl tracking-widest uppercase bg-gradient-to-r ${
+                            isLight
+                              ? 'from-blue-800 via-blue-600 to-amber-600'
+                              : 'from-cyan-300 via-electric to-blue-400'
+                          } bg-clip-text text-transparent leading-tight drop-shadow-sm`}>
+                            {titleText}
+                          </h2>
+                          <p className={`relative text-[10px] md:text-xs tracking-[0.3em] font-bold uppercase mt-1 font-logo ${
+                            isLight ? 'text-slate-500' : 'text-cyan-200/60'
+                          }`}>
+                            {subText}
+                          </p>
+                          
+                          {/* Decorative border highlights */}
+                          <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${isLight ? 'from-transparent via-blue-400 to-transparent' : 'from-transparent via-cyan-400 to-transparent'}`} />
+                          <div className={`absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r ${isLight ? 'from-transparent via-blue-200 to-transparent' : 'from-transparent via-cyan-500/50 to-transparent'}`} />
                         </div>
-                      )}
-                      <div>
-                        <h2 className={`font-black text-2xl tracking-wider uppercase bg-clip-text text-transparent bg-gradient-to-r ${
-                          isLight ? 'from-amber-600 via-amber-500 to-yellow-600' : 'from-gold via-yellow-400 to-amber-500'
-                        } leading-none`}>
-                          {titleText}
-                        </h2>
-                        <p className={`text-[9px] tracking-[0.25em] font-bold uppercase mt-1.5 ${
-                          isLight ? 'text-slate-500' : 'text-gray-400'
-                        }`}>
-                          {subText}
-                        </p>
                       </div>
-                    </div>
-                  );
-                })()}
+                    );
+                  })()}
 
                 <div className="flex flex-col gap-5 mb-6">
                   {/* Class/Exam Selection — Colorful Strips */}
@@ -1586,20 +1587,16 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
               <div className="space-y-6 font-mono text-xs">
                 {/* Coaching Header Banner */}
                 {(() => {
-                  let bannerLogo = null;
                   let titleText = "";
                   let subText = "";
                   
                   if (selectedSyllabusClass === 'jee-mains') {
-                    bannerLogo = logoMainsImg;
                     titleText = "JEE MAIN";
                     subText = "National Testing Agency";
                   } else if (selectedSyllabusClass === 'jee-advanced') {
-                    bannerLogo = logoAdvancedImg;
                     titleText = "JEE ADVANCED";
                     subText = "Indian Institutes of Technology";
                   } else if (selectedSyllabusClass === 'nda') {
-                    bannerLogo = logoNdaImg;
                     titleText = "NDA";
                     subText = "Union Public Service Commission";
                   } else {
@@ -1607,25 +1604,32 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   }
                   
                   return (
-                    <div className="flex flex-col items-center justify-center text-center py-6 mb-6 border-b border-white/5">
-                      <div className={`relative h-20 w-20 rounded-full overflow-hidden border shadow-lg flex items-center justify-center p-1 mb-2 ${
-                        isLight ? 'border-slate-200 shadow-slate-100/50' : 'border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.05)] bg-[#0a0a0c]'
+                    <div className="flex justify-center py-2 mb-2">
+                      <div className={`relative px-8 py-4 rounded-xl border flex flex-col items-center justify-center overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.3)] transition-all ${
+                        isLight 
+                          ? 'bg-gradient-to-r from-blue-50 via-white to-blue-50 border-blue-200' 
+                          : 'bg-gradient-to-r from-[#0f1225] via-cyberdark to-[#0f1225] border-cyan-500/30'
                       }`}>
-                        <img src={bannerLogo} alt={titleText} className="h-full w-full object-contain" />
-                      </div>
-                      <div>
-                        <h2 className={`font-logo font-black text-2xl tracking-wider uppercase bg-gradient-to-r ${
+                        {/* Glowing background effect */}
+                        {!isLight && (
+                          <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-electric/5 to-blue-500/10 pointer-events-none" />
+                        )}
+                        <h2 className={`relative font-logo font-black text-3xl md:text-4xl tracking-widest uppercase bg-gradient-to-r ${
                           isLight
-                            ? 'from-blue-700 via-blue-500 to-amber-500'
-                            : 'from-white via-electric to-gold'
-                        } bg-clip-text text-transparent leading-none`}>
+                            ? 'from-blue-800 via-blue-600 to-amber-600'
+                            : 'from-cyan-300 via-electric to-blue-400'
+                        } bg-clip-text text-transparent leading-tight drop-shadow-sm`}>
                           {titleText}
                         </h2>
-                        <p className={`text-[10px] tracking-[0.2em] font-bold uppercase mt-1 font-logo ${
-                          isLight ? 'text-slate-500' : 'text-gray-400'
+                        <p className={`relative text-[10px] md:text-xs tracking-[0.3em] font-bold uppercase mt-1 font-logo ${
+                          isLight ? 'text-slate-500' : 'text-cyan-200/60'
                         }`}>
                           {subText}
                         </p>
+                        
+                        {/* Decorative border highlights */}
+                        <div className={`absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r ${isLight ? 'from-transparent via-blue-400 to-transparent' : 'from-transparent via-cyan-400 to-transparent'}`} />
+                        <div className={`absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r ${isLight ? 'from-transparent via-blue-200 to-transparent' : 'from-transparent via-cyan-500/50 to-transparent'}`} />
                       </div>
                     </div>
                   );
