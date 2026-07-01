@@ -312,6 +312,8 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
     }
   };
 
+  const isCorrect = isAnswerCorrect(currentQuestion, { selectedOption });
+
   return (
     <div className={`fixed inset-0 z-[100] flex flex-col font-sans overflow-hidden ${isLight ? 'bg-[#f5f5f5]' : 'bg-[#0f172a]'}`}>
       
