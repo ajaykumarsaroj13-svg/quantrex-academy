@@ -658,11 +658,11 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   {/* Class/Exam Selection — Colorful Strips */}
                   <div className="flex flex-wrap gap-2">
                     {[
-                      { id: 'jee-mains', label: 'JEE Mains', strip: 'from-cyan-500 to-blue-600', stripLight: 'from-cyan-500 to-blue-600', badge: 'bg-cyan-500/10 text-cyan-600 border-cyan-400/40', badgeDark: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30', dot: 'bg-cyan-500' },
-                      { id: 'jee-advanced', label: 'JEE Advanced', strip: 'from-violet-500 to-purple-700', stripLight: 'from-violet-500 to-purple-700', badge: 'bg-purple-500/10 text-purple-700 border-purple-400/40', badgeDark: 'bg-purple-500/10 text-purple-400 border-purple-500/30', dot: 'bg-purple-500' },
-                      { id: 'nda', label: 'NDA', strip: 'from-emerald-500 to-teal-600', stripLight: 'from-emerald-500 to-teal-600', badge: 'bg-emerald-500/10 text-emerald-700 border-emerald-400/40', badgeDark: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30', dot: 'bg-emerald-500' },
-                      { id: 'class-12', label: 'Class 12', strip: 'from-orange-500 to-red-600', stripLight: 'from-orange-500 to-red-600', badge: 'bg-orange-500/10 text-orange-700 border-orange-400/40', badgeDark: 'bg-orange-500/10 text-orange-400 border-orange-500/30', dot: 'bg-orange-500' },
-                      { id: 'class-11', label: 'Class 11', strip: 'from-rose-500 to-pink-600', stripLight: 'from-rose-500 to-pink-600', badge: 'bg-pink-500/10 text-pink-700 border-pink-400/40', badgeDark: 'bg-pink-500/10 text-pink-400 border-pink-500/30', dot: 'bg-pink-500' },
+                      { id: 'jee-mains', label: 'JEE Mains', strip: 'from-cyan-400 to-blue-600', badge: 'bg-cyan-50 text-cyan-700 border-cyan-400', badgeDark: 'bg-cyan-900/40 text-cyan-300 border-cyan-500', dot: 'bg-cyan-500', stripStyle: '#06b6d4' },
+                      { id: 'jee-advanced', label: 'JEE Advanced', strip: 'from-violet-400 to-purple-700', badge: 'bg-purple-50 text-purple-700 border-purple-400', badgeDark: 'bg-purple-900/40 text-purple-300 border-purple-500', dot: 'bg-purple-500', stripStyle: '#8b5cf6' },
+                      { id: 'nda', label: 'NDA', strip: 'from-emerald-400 to-teal-600', badge: 'bg-emerald-50 text-emerald-700 border-emerald-400', badgeDark: 'bg-emerald-900/40 text-emerald-300 border-emerald-500', dot: 'bg-emerald-500', stripStyle: '#10b981' },
+                      { id: 'class-12', label: 'Class 12', strip: 'from-orange-400 to-red-600', badge: 'bg-orange-50 text-orange-700 border-orange-400', badgeDark: 'bg-orange-900/40 text-orange-300 border-orange-500', dot: 'bg-orange-500', stripStyle: '#f97316' },
+                      { id: 'class-11', label: 'Class 11', strip: 'from-rose-400 to-pink-600', badge: 'bg-rose-50 text-rose-700 border-rose-400', badgeDark: 'bg-pink-900/40 text-pink-300 border-pink-500', dot: 'bg-rose-500', stripStyle: '#fb7185' },
                     ].map(cls => {
                       const isActive = selectedSyllabusClass === cls.id;
                       return (
@@ -680,23 +680,22 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                             if (firstSubjectKey) setSelectedSyllabusSubject(firstSubjectKey);
                             else setSelectedSyllabusSubject('');
                           }}
-                          className={`relative flex items-center gap-2 py-2 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 overflow-hidden hover:-translate-y-0.5 hover:shadow-lg ${
+                          style={isActive ? { borderLeftColor: cls.stripStyle, borderLeftWidth: '4px' } : { borderLeftColor: cls.stripStyle, borderLeftWidth: '3px' }}
+                          className={`relative flex items-center gap-2 py-2 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg ${
                             isActive
                               ? isLight
                                 ? `${cls.badge} shadow-md scale-[1.03]`
-                                : `${cls.badgeDark} shadow-lg shadow-black/30 scale-[1.03]`
+                                : `${cls.badgeDark} shadow-lg scale-[1.03]`
                               : isLight
                                 ? 'bg-white border-slate-200 text-slate-500 hover:border-slate-300'
-                                : 'bg-white/3 border-white/8 text-gray-400 hover:text-gray-200'
+                                : 'bg-white/10 border-white/20 text-gray-300 hover:text-white'
                           }`}
                         >
-                          {/* Left color strip */}
-                          <span className={`absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-gradient-to-b ${cls.strip} transition-all duration-300 ${isActive ? 'opacity-100' : 'opacity-30'}`} />
                           {/* Colored dot indicator */}
-                          <span className={`w-2 h-2 rounded-full flex-shrink-0 ${cls.dot} ml-1 ${isActive ? 'shadow-sm' : 'opacity-50'}`} />
+                          <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${cls.dot} ${isActive ? 'opacity-100' : 'opacity-60'}`} />
                           {getExamLogo(cls.id, "w-4 h-4 rounded-full object-cover flex-shrink-0")}
                           <span className="tracking-wider">{cls.label}</span>
-                          {isActive && <span className={`w-1.5 h-1.5 rounded-full bg-gradient-to-b ${cls.strip} animate-pulse ml-0.5`} />}
+                          {isActive && <span className={`w-1.5 h-1.5 rounded-full ${cls.dot} animate-pulse ml-0.5`} />}
                         </button>
                       );
                     })}
@@ -708,13 +707,13 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                     const subjects = syllabus[actualClassKey]?.subjects || {};
                     if (Object.keys(subjects).length === 0) return null;
                     const subjectColors = {
-                      mathematics: { strip: 'from-blue-500 to-indigo-600', dot: 'bg-blue-500', active: 'bg-blue-500/10 border-blue-400/50 text-blue-600', activeDark: 'bg-blue-500/10 border-blue-500/40 text-blue-400' },
-                      physics: { strip: 'from-amber-500 to-orange-600', dot: 'bg-amber-500', active: 'bg-amber-500/10 border-amber-400/50 text-amber-700', activeDark: 'bg-amber-500/10 border-amber-500/40 text-amber-400' },
-                      chemistry: { strip: 'from-emerald-500 to-green-600', dot: 'bg-emerald-500', active: 'bg-emerald-500/10 border-emerald-400/50 text-emerald-700', activeDark: 'bg-emerald-500/10 border-emerald-500/40 text-emerald-400' },
-                      biology: { strip: 'from-pink-500 to-rose-600', dot: 'bg-pink-500', active: 'bg-pink-500/10 border-pink-400/50 text-pink-700', activeDark: 'bg-pink-500/10 border-pink-500/40 text-pink-400' },
-                      english: { strip: 'from-violet-500 to-purple-600', dot: 'bg-violet-500', active: 'bg-violet-500/10 border-violet-400/50 text-violet-700', activeDark: 'bg-violet-500/10 border-violet-500/40 text-violet-400' },
+                      mathematics: { dot: 'bg-blue-500', active: 'bg-blue-50 border-blue-500 text-blue-700', activeDark: 'bg-blue-900/40 border-blue-400 text-blue-300', stripStyle: '#3b82f6' },
+                      physics:     { dot: 'bg-amber-500', active: 'bg-amber-50 border-amber-500 text-amber-700', activeDark: 'bg-amber-900/40 border-amber-400 text-amber-300', stripStyle: '#f59e0b' },
+                      chemistry:   { dot: 'bg-emerald-500', active: 'bg-emerald-50 border-emerald-500 text-emerald-700', activeDark: 'bg-emerald-900/40 border-emerald-400 text-emerald-300', stripStyle: '#10b981' },
+                      biology:     { dot: 'bg-pink-500', active: 'bg-pink-50 border-pink-500 text-pink-700', activeDark: 'bg-pink-900/40 border-pink-400 text-pink-300', stripStyle: '#ec4899' },
+                      english:     { dot: 'bg-violet-500', active: 'bg-violet-50 border-violet-500 text-violet-700', activeDark: 'bg-violet-900/40 border-violet-400 text-violet-300', stripStyle: '#8b5cf6' },
                     };
-                    const defaultColor = { strip: 'from-teal-500 to-cyan-600', dot: 'bg-teal-500', active: 'bg-teal-500/10 border-teal-400/50 text-teal-700', activeDark: 'bg-teal-500/10 border-teal-500/40 text-teal-400' };
+                    const defaultColor = { dot: 'bg-teal-500', active: 'bg-teal-50 border-teal-500 text-teal-700', activeDark: 'bg-teal-900/40 border-teal-400 text-teal-300', stripStyle: '#14b8a6' };
                     return (
                       <div className="flex flex-wrap gap-2">
                         {Object.entries(subjects).map(([subjKey, subjVal]) => {
@@ -730,15 +729,14 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                 setPyqSubView('overview');
                                 setActivePyqData(null);
                               }}
-                              className={`relative flex items-center gap-2 py-1.5 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 overflow-hidden hover:-translate-y-0.5 hover:shadow-md ${
+                              style={isSubjActive ? { borderLeftColor: colors.stripStyle, borderLeftWidth: '4px' } : { borderLeftColor: colors.stripStyle, borderLeftWidth: '3px' }}
+                              className={`relative flex items-center gap-2 py-1.5 pl-3 pr-4 text-[11px] font-black uppercase rounded-xl border transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md ${
                                 isSubjActive
                                   ? isLight ? colors.active : colors.activeDark
-                                  : isLight ? 'bg-white border-slate-200 text-slate-500 hover:border-slate-300' : 'bg-white/3 border-white/8 text-gray-400 hover:text-gray-200'
+                                  : isLight ? 'bg-white border-slate-200 text-slate-500 hover:border-slate-300' : 'bg-white/10 border-white/20 text-gray-300 hover:text-white'
                               }`}
                             >
-                              {/* Left color strip */}
-                              <span className={`absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-gradient-to-b ${colors.strip} transition-all duration-300 ${isSubjActive ? 'opacity-100' : 'opacity-20'}`} />
-                              <span className={`w-2 h-2 rounded-full flex-shrink-0 ${colors.dot} ml-1 ${isSubjActive ? '' : 'opacity-40'}`} />
+                              <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${colors.dot} ${isSubjActive ? 'opacity-100' : 'opacity-60'}`} />
                               <span className="tracking-wider">{subjVal.label || subjKey}</span>
                             </button>
                           );
