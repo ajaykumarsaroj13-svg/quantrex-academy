@@ -9,6 +9,7 @@ import {
   ChevronRight, PlayCircle, BarChart3, Clock, 
   CheckCircle2, Target, Download, Settings, FileText, Moon, Sun, Monitor, Trophy
 } from 'lucide-react';
+import { fixExamGoalHtml } from '../utils/htmlCleaner';
 import useScrollReveal from '../hooks/useScrollReveal';
 
 const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
@@ -308,8 +309,8 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                      )}
                    </div>
                    
-                   <div className="prose max-w-none mb-8">
-                     <div dangerouslySetInnerHTML={{__html: activeQuestion.question || activeQuestion.questionText}} className="tex2jax_process text-lg text-slate-800" />
+                   <div className="prose max-w-none">
+                     <div dangerouslySetInnerHTML={{__html: fixExamGoalHtml(activeQuestion.question || activeQuestion.questionText)}} className="tex2jax_process text-lg text-slate-800" />
                    </div>
                    
                    {/* Options if MCQ */}
@@ -343,7 +344,9 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                              <div className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold ${isCorrectOpt ? 'bg-emerald-500 text-white' : (isUserOpt ? 'bg-red-500 text-white' : 'bg-slate-100 text-slate-600')}`}>
                                {String.fromCharCode(65 + oIdx)}
                              </div>
-                             <div dangerouslySetInnerHTML={{__html: opt}} className="tex2jax_process pt-0.5 text-slate-700" />
+                             <div className="flex-1">
+                               <div dangerouslySetInnerHTML={{__html: fixExamGoalHtml(opt).replace(/<\/?(li|ul|ol)[^>]*>/gi, '')}} className="tex2jax_process pt-0.5 text-slate-700" />
+                             </div>
                            </div>
                          );
                        })}

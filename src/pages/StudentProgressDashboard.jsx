@@ -8,7 +8,7 @@ import { fixExamGoalHtml } from '../utils/htmlCleaner';
 function MathHtml({ html, className = '' }) {
   return (
     <span
-      dangerouslySetInnerHTML={{ __html: html || '' }}
+      dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(html) || '' }}
       className={`tex2jax_process ${className}`}
     />
   );

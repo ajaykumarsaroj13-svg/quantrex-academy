@@ -610,7 +610,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
               fontFamily: '"Inter", "Segoe UI", sans-serif',
               lineHeight: '1.6'
             }}>
-              <div dangerouslySetInnerHTML={{ __html: question.instruction }} />
+              <div dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(question.instruction) }} />
             </div>
           )}
 

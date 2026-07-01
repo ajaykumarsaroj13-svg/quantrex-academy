@@ -389,7 +389,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                   </div>
                   
                   <div className="prose max-w-none mb-6">
-                    <div dangerouslySetInnerHTML={{ __html: q.questionText || q.question }} className="tex2jax_process text-base" />
+                    <div dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(q.questionText || q.question) }} className="tex2jax_process text-base" />
                   </div>
 
                   {q.type === 'integer' || q.options?.length === 0 ? (
@@ -448,7 +448,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                             <div className={`w-6 h-6 rounded flex items-center justify-center flex-shrink-0 text-xs font-bold ${badgeBgClass}`}>
                               {String.fromCharCode(65 + oIdx)}
                             </div>
-                            <div dangerouslySetInnerHTML={{ __html: opt }} className="tex2jax_process text-sm flex-1" />
+                            <div dangerouslySetInnerHTML={{ __html: fixExamGoalHtml(opt).replace(/<\/?(li|ul|ol)[^>]*>/gi, '') }} className="tex2jax_process text-sm flex-1" />
                           </div>
                         );
                       })}
@@ -591,7 +591,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                   currentQ.questionText || 
                   currentQ.question || 
                   currentQ.text || 
-                  (currentQ.solution && currentQ.solution.includes('<img') ? (currentQ.solution.match(/<img[^>]+src="([^">]+)"[^>]*>/) ? `<img src="${currentQ.solution.match(/<img[^>]+src="([^">]+)"[^>]*>/)[1]}" alt="Question Image" style="max-width:100%; height:auto;" />` : '<i>Question text missing in database</i>') : '<i>Question text missing in database</i>')
+                  (currentQ.solution && typeof currentQ.solution === 'string' && currentQ.solution.includes('<img') ? (currentQ.solution.match(/<img[^>]+src="([^">]+)"[^>]*>/) ? `<img src="${currentQ.solution.match(/<img[^>]+src="([^">]+)"[^>]*>/)[1]}" alt="Question Image" style="max-width:100%; height:auto;" />` : '<i>Question text missing in database</i>') : '<i>Question text missing in database</i>')
                 ) 
               }}
             />
