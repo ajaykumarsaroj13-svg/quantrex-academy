@@ -396,12 +396,12 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                     <div className="mb-6 flex flex-wrap gap-4">
                       <div className={`p-4 rounded-xl border flex-1 ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-black/30 border-white/10'}`}>
                         <span className="text-xs font-bold text-gray-500 block mb-1">Correct Answer</span>
-                        <span className="font-bold text-emerald-500">{q.correctAnswer || q.correctOption}</span>
+                        <span className="font-bold text-emerald-500">{typeof q.correctAnswer === 'object' && q.correctAnswer !== null ? (q.correctAnswer.en || JSON.stringify(q.correctAnswer)) : (q.correctAnswer || (typeof q.correctOption === 'object' && q.correctOption !== null ? (q.correctOption.en || JSON.stringify(q.correctOption)) : q.correctOption))}</span>
                       </div>
                       {isAttempted && (
                         <div className={`p-4 rounded-xl border flex-1 ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-black/30 border-white/10'}`}>
                           <span className="text-xs font-bold text-gray-500 block mb-1">Your Answer</span>
-                          <span className={`font-bold ${isCorrect ? 'text-emerald-500' : 'text-red-500'}`}>{ua}</span>
+                          <span className={`font-bold ${isCorrect ? 'text-emerald-500' : 'text-red-500'}`}>{typeof ua === 'object' && ua !== null ? (ua.en || JSON.stringify(ua)) : ua}</span>
                         </div>
                       )}
                     </div>
@@ -462,7 +462,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                       <span className={`text-xs font-black uppercase tracking-widest ${isLight ? 'text-emerald-700' : 'text-emerald-400'}`}>Correct Answer:</span>
                       <span className={`text-base font-black ${isLight ? 'text-emerald-800' : 'text-emerald-300'}`}>
                         {q.type === 'integer' || q.options?.length === 0 
-                          ? (q.correctAnswer ?? q.correctOption ?? 'N/A')
+                          ? (typeof q.correctAnswer === 'object' && q.correctAnswer !== null ? (q.correctAnswer.en || JSON.stringify(q.correctAnswer)) : (q.correctAnswer ?? (typeof q.correctOption === 'object' && q.correctOption !== null ? (q.correctOption.en || JSON.stringify(q.correctOption)) : q.correctOption) ?? 'N/A'))
                           : (
                               q.questionType === 'MULTI_CORRECT' || q.questionType === 'MCQM'
                                 ? (q.correctOptionsArray || []).map(idx => String.fromCharCode(65 + idx)).join(', ') || 'N/A'

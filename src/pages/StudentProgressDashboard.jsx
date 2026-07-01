@@ -72,7 +72,7 @@ function QuestionReviewCard({ q, idx, isLight }) {
         <div className="flex gap-3 mb-4 flex-wrap">
           <div className={`px-4 py-2.5 rounded-xl border text-sm flex-1 min-w-[120px] ${isLight ? 'bg-emerald-50 border-emerald-200' : 'bg-emerald-950/20 border-emerald-500/30'}`}>
             <span className={`text-[10px] font-bold uppercase block mb-0.5 ${isLight ? 'text-emerald-600' : 'text-emerald-400'}`}>Correct Answer</span>
-            <span className="font-bold text-emerald-500">{q.correctAnswer ?? q.correctOption ?? '—'}</span>
+            <span className="font-bold text-emerald-500">{typeof q.correctAnswer === 'object' && q.correctAnswer !== null ? (q.correctAnswer.en || JSON.stringify(q.correctAnswer)) : (q.correctAnswer ?? (typeof q.correctOption === 'object' && q.correctOption !== null ? (q.correctOption.en || JSON.stringify(q.correctOption)) : q.correctOption) ?? '—')}</span>
           </div>
           {q.isAttempted && (
             <div className={`px-4 py-2.5 rounded-xl border text-sm flex-1 min-w-[120px] ${
@@ -81,7 +81,7 @@ function QuestionReviewCard({ q, idx, isLight }) {
                 : isLight ? 'bg-red-50 border-red-200' : 'bg-red-950/20 border-red-500/30'
             }`}>
               <span className={`text-[10px] font-bold uppercase block mb-0.5 ${q.isCorrect ? (isLight ? 'text-emerald-600' : 'text-emerald-400') : (isLight ? 'text-red-600' : 'text-red-400')}`}>Your Answer</span>
-              <span className={`font-bold ${q.isCorrect ? 'text-emerald-500' : 'text-red-500'}`}>{q.userAnswer ?? '—'}</span>
+              <span className={`font-bold ${q.isCorrect ? 'text-emerald-500' : 'text-red-500'}`}>{typeof q.userAnswer === 'object' && q.userAnswer !== null ? (q.userAnswer.en || JSON.stringify(q.userAnswer)) : (q.userAnswer ?? '—')}</span>
             </div>
           )}
         </div>
@@ -104,7 +104,7 @@ function QuestionReviewCard({ q, idx, isLight }) {
             <span className={`text-xs font-black uppercase tracking-widest ${isLight ? 'text-emerald-700' : 'text-emerald-400'}`}>Correct Answer:</span>
             <span className={`text-sm font-black ${isLight ? 'text-emerald-800' : 'text-emerald-300'}`}>
               {q.type === 'integer' || q.options?.length === 0 
-                ? (q.correctAnswer ?? q.correctOption ?? 'N/A')
+                ? (typeof q.correctAnswer === 'object' && q.correctAnswer !== null ? (q.correctAnswer.en || JSON.stringify(q.correctAnswer)) : (q.correctAnswer ?? (typeof q.correctOption === 'object' && q.correctOption !== null ? (q.correctOption.en || JSON.stringify(q.correctOption)) : q.correctOption) ?? 'N/A'))
                 : (
                     q.questionType === 'MULTI_CORRECT' || q.questionType === 'MCQM'
                       ? (q.correctOptionsArray || []).map(idx => String.fromCharCode(65 + idx)).join(', ') || 'N/A'
@@ -359,7 +359,7 @@ export default function StudentProgressDashboard({ user, isLight, onBack, testsD
   const allAvailableTests = useMemo(() => {
     const arr = [];
     ultimateData.forEach(t => arr.push({...t, category: 'Ultimate Test Series', examType: 'JEE Main'}));
-    officialData.forEach(t => arr.push({...t, category: 'Official Papers', examType: t.examType || t.exam || (t.id?.includes('advanced') ? 'JEE Advanced' : 'JEE Main')}));
+    officialData.forEach(t => arr.push({...t, category: 'Official Papers', examType: t.examType || t.exam || (String(t.id || '').includes('advanced') ? 'JEE Advanced' : 'JEE Main')}));
     return arr;
   }, [ultimateData, officialData]);
 
@@ -384,7 +384,17 @@ export default function StudentProgressDashboard({ user, isLight, onBack, testsD
   useEffect(() => {
     try {
       const saved = localStorage.getItem('quantrex_all_test_results');
-      if (saved) setAllTestResults(JSON.parse(saved));
+      if (saved) {
+        let parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          parsed = parsed.map(t => ({
+            ...t,
+            testTitle: typeof t.testTitle === 'object' && t.testTitle !== null ? (t.testTitle.en?.content || t.testTitle.en?.questionText || t.testTitle.en || JSON.stringify(t.testTitle)) : String(t.testTitle || 'Untitled Test'),
+            testType: typeof t.testType === 'object' && t.testType !== null ? (t.testType.en?.content || t.testType.en || JSON.stringify(t.testType)) : String(t.testType || 'Practice')
+          }));
+          setAllTestResults(parsed);
+        }
+      }
     } catch (e) {}
   }, [openTest]);
 
@@ -517,7 +527,7 @@ export default function StudentProgressDashboard({ user, isLight, onBack, testsD
                   </div>
                 )}
                 <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${themeMuted}`}>Completed Custom Tests</p>
-                {allTestResults.filter(t => t.testType?.includes('Custom') || t.testTitle?.includes('Custom')).map((t, i) => <TestRow key={t.testId || i} t={t} isLight={isLight} onOpenTest={setOpenTest} />)}
+                {allTestResults.filter(t => String(t.testType || '').includes('Custom') || String(t.testTitle || '').includes('Custom')).map((t, i) => <TestRow key={t.testId || i} t={t} isLight={isLight} onOpenTest={setOpenTest} />)}
               </div>
           )}
           {activeCategory !== 'PYQ Practice' && activeCategory !== 'Custom Tests' && (

@@ -356,11 +356,11 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                    {activeQuestion.questionType === 'NUMERICAL' && (
                      <div className="mb-10 p-5 bg-slate-50 rounded-xl border border-slate-200 flex flex-col gap-3">
                         <div className="text-sm font-bold text-slate-500 flex items-center gap-2">
-                           Correct Answer: <span className="text-emerald-600 text-xl font-black bg-emerald-100 px-3 py-1 rounded-lg">{activeQuestion.correctAnswer}</span>
+                           Correct Answer: <span className="text-emerald-600 text-xl font-black bg-emerald-100 px-3 py-1 rounded-lg">{typeof activeQuestion.correctAnswer === 'object' && activeQuestion.correctAnswer !== null ? (activeQuestion.correctAnswer.en || JSON.stringify(activeQuestion.correctAnswer)) : activeQuestion.correctAnswer}</span>
                         </div>
                         {activeQuestion.isAttempted && (
                           <div className="text-sm font-bold text-slate-500 flex items-center gap-2">
-                             Your Answer: <span className={`text-xl font-black px-3 py-1 rounded-lg ${activeQuestion.isCorrect ? 'text-emerald-600 bg-emerald-100' : 'text-red-600 bg-red-100'}`}>{activeQuestion.userAnswer}</span>
+                             Your Answer: <span className={`text-xl font-black px-3 py-1 rounded-lg ${activeQuestion.isCorrect ? 'text-emerald-600 bg-emerald-100' : 'text-red-600 bg-red-100'}`}>{typeof activeQuestion.userAnswer === 'object' && activeQuestion.userAnswer !== null ? (activeQuestion.userAnswer.en || JSON.stringify(activeQuestion.userAnswer)) : activeQuestion.userAnswer}</span>
                           </div>
                         )}
                      </div>
@@ -374,7 +374,7 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                           <span className="text-xs font-black uppercase tracking-widest text-emerald-700">Correct Answer:</span>
                           <span className="text-base font-black text-emerald-800">
                             {activeQuestion.questionType === 'NUMERICAL' || activeQuestion.options?.length === 0 
-                              ? (activeQuestion.correctAnswer ?? activeQuestion.correctOption ?? 'N/A')
+                              ? (typeof activeQuestion.correctAnswer === 'object' && activeQuestion.correctAnswer !== null ? (activeQuestion.correctAnswer.en || JSON.stringify(activeQuestion.correctAnswer)) : (activeQuestion.correctAnswer ?? (typeof activeQuestion.correctOption === 'object' && activeQuestion.correctOption !== null ? (activeQuestion.correctOption.en || JSON.stringify(activeQuestion.correctOption)) : activeQuestion.correctOption) ?? 'N/A'))
                               : (
                                   activeQuestion.questionType === 'MULTI_CORRECT' || activeQuestion.questionType === 'MCQM'
                                     ? (activeQuestion.correctOptionsArray || []).map(idx => String.fromCharCode(65 + idx)).join(', ') || 'N/A'
