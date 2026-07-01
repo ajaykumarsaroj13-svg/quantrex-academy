@@ -16,7 +16,7 @@ export const generateSimilarQuestion = async (originalQuestion, count = 1) => {
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" }); // Using fast model for quick generation
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" }); // Using advanced reasoning model for NotebookLM-grade quality
 
     const isNDA = subject?.toLowerCase().includes('english') || subject?.toLowerCase().includes('general ability') || subject?.toLowerCase().includes('nda');
     const isMathScience = subject?.toLowerCase().includes('math') || subject?.toLowerCase().includes('physics') || subject?.toLowerCase().includes('chemistry');
