@@ -175,17 +175,17 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
             </div>
           </div>
 
-          {/* FEATURED TOPPERS (2024 & 2022) */}
+          {/* FEATURED TOPPERS (JEE Mains 2026 & JEE Advanced 2026) */}
           <div className="w-full max-w-5xl mx-auto mb-12 px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-              {/* Left: Dibyanshu 2024 */}
+              {/* Left: Dibyanshu 2026 JEE Main */}
               <div className="relative group bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-2xl hover:border-gold transition-all duration-500 hover:-translate-y-2">
-                <img src="/images/toppers/dibyanshu-2024.jpg" alt="Dibyanshu Sahoo 2024" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+                <img src="/images/toppers/top_1.png" alt="Dibyanshu Sahoo JEE Main 2026" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
               </div>
               
-              {/* Right: Rakshit 2022 */}
+              {/* Right: Dibyanshu 2026 JEE Advanced */}
               <div className="relative group bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-2xl hover:border-electric transition-all duration-500 hover:-translate-y-2">
-                <img src="/images/toppers/rakshit-2022.jpg" alt="Rakshit Aryan 2022" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+                <img src="/images/toppers/top_2.png" alt="Dibyanshu Sahoo JEE Advanced 2026" className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700" />
               </div>
             </div>
           </div>
@@ -193,39 +193,42 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
           {/* Sliding Infinite Marquee */}
           <div className="w-full overflow-hidden">
             <div className="animate-marquee gap-8 py-4 px-4 flex flex-row flex-nowrap">
-              {[...(toppers || []), ...(toppers || []), ...(toppers || []), ...(toppers || [])].map((t, idx) => (
-                <div
-                  key={idx}
-                  className="w-[300px] md:w-[400px] shrink-0 group relative bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-2xl hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 flex flex-col"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  
-                  {/* Image Container */}
-                  <div className="relative w-full aspect-[4/3] bg-cyberdark overflow-hidden">
-                    <img
-                      src={t.photo}
-                      alt={t.name}
-                      className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-700"
-                      onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80'; }}
-                    />
-                    <div className="absolute inset-0 border-[4px] border-obsidian/20 pointer-events-none mix-blend-overlay"></div>
-                  </div>
+              {(() => {
+                const marqueeToppers = (toppers || []).filter(t => (t.name || '').toUpperCase() !== 'DIBYANSHU SAHOO');
+                return [...marqueeToppers, ...marqueeToppers, ...marqueeToppers, ...marqueeToppers].map((t, idx) => (
+                  <div
+                    key={idx}
+                    className="w-[300px] md:w-[400px] shrink-0 group relative bg-obsidian border border-white/10 rounded-2xl overflow-hidden shadow-2xl hover:border-gold/50 transition-all duration-500 hover:-translate-y-2 flex flex-col"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    {/* Image Container */}
+                    <div className="relative w-full aspect-[4/3] bg-cyberdark overflow-hidden">
+                      <img
+                        src={t.photo}
+                        alt={t.name}
+                        className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-700"
+                        onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80'; }}
+                      />
+                      <div className="absolute inset-0 border-[4px] border-obsidian/20 pointer-events-none mix-blend-overlay"></div>
+                    </div>
 
-                  {/* Details Footer */}
-                  <div className="p-5 flex items-center justify-between bg-gradient-to-r from-obsidian to-cyberdark/80 border-t border-white/5 relative z-10">
-                    <div>
-                      <h4 className="text-white font-black text-lg tracking-wide group-hover:text-gold transition-colors">{t.name}</h4>
-                      <p className="text-[10px] text-gray-400 font-mono mt-1">{t.year}</p>
-                    </div>
-                    <div className="text-right">
-                      <span className="block text-xl font-black text-electric font-display">{t.rank}</span>
-                      <span className="text-[10px] bg-electric/10 text-electric border border-electric/20 px-2 py-0.5 rounded font-mono uppercase tracking-wider inline-block mt-1">
-                        {t.score || t.percent}
-                      </span>
+                    {/* Details Footer */}
+                    <div className="p-5 flex items-center justify-between bg-gradient-to-r from-obsidian to-cyberdark/80 border-t border-white/5 relative z-10">
+                      <div>
+                        <h4 className="text-white font-black text-lg tracking-wide group-hover:text-gold transition-colors">{t.name}</h4>
+                        <p className="text-[10px] text-gray-400 font-mono mt-1">{t.year}</p>
+                      </div>
+                      <div className="text-right">
+                        <span className="block text-xl font-black text-electric font-display">{t.rank}</span>
+                        <span className="text-[10px] bg-electric/10 text-electric border border-electric/20 px-2 py-0.5 rounded font-mono uppercase tracking-wider inline-block mt-1">
+                          {t.score || t.percent}
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ));
+              })()}
             </div>
           </div>
         </section>
