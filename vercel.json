@@ -74,7 +74,7 @@
       "destination": "/api/v2/admin?action=courses&id=:id"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ]
