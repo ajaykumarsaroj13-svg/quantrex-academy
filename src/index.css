@@ -517,18 +517,22 @@ html.light .bg-white\/5 { background-color: rgba(0,0,0,0.05) !important; border-
 /* Watermark remover filter removed */
 
 /* Normalize ExamGoal HTML Content */
-.exam-math-content *, .dashboard-preview-html * {
+.exam-math-content :not(mjx-container):not(mjx-container *), 
+.dashboard-preview-html :not(mjx-container):not(mjx-container *) {
   font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
   background-color: transparent !important;
 }
 
 /* Enforce dark black text for light mode Practice Interface */
-.bg-white .exam-math-content *, .bg-gray-50 .exam-math-content * {
+.bg-white .exam-math-content :not(mjx-container):not(mjx-container *), 
+.bg-gray-50 .exam-math-content :not(mjx-container):not(mjx-container *) {
   color: #202124 !important;
 }
 
 /* Enforce light text for dark mode / Dashboard preview cards */
-.bg-\[\#1e1e24\] .exam-math-content *, .bg-\[\#1e1e24\] .dashboard-preview-html *, .bg-\[\#111115\] .dashboard-preview-html * {
+.bg-\[\#1e1e24\] .exam-math-content :not(mjx-container):not(mjx-container *), 
+.bg-\[\#1e1e24\] .dashboard-preview-html :not(mjx-container):not(mjx-container *), 
+.bg-\[\#111115\] .dashboard-preview-html :not(mjx-container):not(mjx-container *) {
   color: #e5e7eb !important; /* gray-200 */
 }
 
@@ -716,18 +720,22 @@ span.inline-exam-p {
 /* Watermark remover filter removed */
 
 /* Normalize ExamGoal HTML Content */
-.exam-math-content *, .dashboard-preview-html * {
+.exam-math-content :not(mjx-container):not(mjx-container *), 
+.dashboard-preview-html :not(mjx-container):not(mjx-container *) {
   font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
   background-color: transparent !important;
 }
 
 /* Enforce dark black text for light mode Practice Interface */
-.bg-white .exam-math-content *, .bg-gray-50 .exam-math-content * {
+.bg-white .exam-math-content :not(mjx-container):not(mjx-container *), 
+.bg-gray-50 .exam-math-content :not(mjx-container):not(mjx-container *) {
   color: #202124 !important;
 }
 
 /* Enforce light text for dark mode / Dashboard preview cards */
-.bg-\[\#1e1e24\] .exam-math-content *, .bg-\[\#1e1e24\] .dashboard-preview-html *, .bg-\[\#111115\] .dashboard-preview-html * {
+.bg-\[\#1e1e24\] .exam-math-content :not(mjx-container):not(mjx-container *), 
+.bg-\[\#1e1e24\] .dashboard-preview-html :not(mjx-container):not(mjx-container *), 
+.bg-\[\#111115\] .dashboard-preview-html :not(mjx-container):not(mjx-container *) {
   color: #e5e7eb !important; /* gray-200 */
 }
 

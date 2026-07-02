@@ -447,7 +447,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
             {/* Question Text */}
               <div className="mb-6 select-text" style={{ fontSize: `${fontSize}px` }}>
                 <div 
-                className={`font-medium leading-relaxed exam-math-content ${isLight ? 'text-black' : 'text-gray-100'}`}
+                 className={`font-medium leading-relaxed exam-math-content tex2jax_process ${isLight ? 'text-black' : 'text-gray-100'}`}
                 dangerouslySetInnerHTML={{ __html: fixMathJax(currentQuestion.question) }}
                 />
               </div>
@@ -522,7 +522,7 @@ export default function ExamGoalPracticeInterface({ pyqData, topic, customQuesti
                         <div className={`w-[30px] h-[30px] shrink-0 ${isMultiCorrect ? 'rounded-md' : 'rounded-full'} flex items-center justify-center font-bold text-[13px] ${circleClass}`}>
                           {labelChar}
                         </div>
-                        <div className={`flex-1 mt-1 font-medium exam-math-content ${isLight ? 'text-black' : 'text-gray-100'}`} style={{ fontSize: `${Math.max(14, fontSize - 1)}px` }} dangerouslySetInnerHTML={{ __html: fixMathJax(optContent) }} />
+                        <div className={`flex-1 mt-1 font-medium exam-math-content tex2jax_process ${isLight ? 'text-black' : 'text-gray-100'}`} style={{ fontSize: `${Math.max(14, fontSize - 1)}px` }} dangerouslySetInnerHTML={{ __html: fixMathJax(optContent) }} />
                       </button>
                     );
                   })}
