@@ -146,6 +146,72 @@ export default function AdminDashboard({ user, courses, setCourses, setCustomLog
   const [importerTotal, setImporterTotal] = useState(0);
   const [importerLogs, setImporterLogs] = useState([]);
 
+  // Database Backup and Restore States & Handlers
+  const [backups, setBackups] = useState([]);
+  const [loadingBackups, setLoadingBackups] = useState(false);
+  const [backupDesc, setBackupDesc] = useState('');
+
+  const fetchBackups = async () => {
+    setLoadingBackups(true);
+    try {
+      const res = await fetch('/api/backup');
+      if (res.ok) {
+        const data = await res.json();
+        setBackups(data);
+      }
+    } catch (err) {
+      console.error("Failed to fetch backups:", err);
+    } finally {
+      setLoadingBackups(false);
+    }
+  };
+
+  useEffect(() => {
+    if (adminTab === 'database-backup') {
+      fetchBackups();
+    }
+  }, [adminTab]);
+
+  const handleCreateBackup = async () => {
+    try {
+      const res = await fetch('/api/backup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'create', description: backupDesc || 'Manual Backup' })
+      });
+      if (res.ok) {
+        alert("Backup snapshot created successfully!");
+        setBackupDesc('');
+        fetchBackups();
+      } else {
+        alert("Failed to create backup.");
+      }
+    } catch (e) {
+      alert("Error: " + e.message);
+    }
+  };
+
+  const handleRestoreBackup = async (backupId) => {
+    if (!confirm(`Are you absolutely sure you want to restore the database to backup snapshot [${backupId}]? This will restore syllabus, tests, topper profiles, books, and courses lists to that exact state.`)) {
+      return;
+    }
+    try {
+      const res = await fetch('/api/backup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'restore', backupId })
+      });
+      if (res.ok) {
+        alert("Database restored successfully! Reloading portal contents...");
+        window.location.reload();
+      } else {
+        alert("Failed to restore backup.");
+      }
+    } catch (e) {
+      alert("Error restoring database: " + e.message);
+    }
+  };
+
   // Syllabus resource management handlers
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
@@ -921,6 +987,7 @@ export default function AdminDashboard({ user, courses, setCourses, setCustomLog
               { id: 'security', label: 'Anti-Piracy Logs', icon: AlertOctagon },
               { id: 'notice', label: 'Broadcast Alerts', icon: Bell },
               { id: 'importer', label: 'Web Importer', icon: Cloud },
+              { id: 'database-backup', label: 'Database Backup', icon: Database },
               { id: 'settings', label: 'Platform Settings', icon: Sparkles }
             ].map((tab) => {
               const Icon = tab.icon;
@@ -2042,6 +2109,77 @@ export default function AdminDashboard({ user, courses, setCourses, setCustomLog
                     </div>
                   ))}
                   <button onClick={() => setTestsData({...testsData, advanced: [...(testsData?.advanced || []), { id: 'new_adv_'+Date.now(), title: 'New Test', exam: 'JEE Advanced' }]})} className="text-xs text-purple-400 mt-2">+ Add Advanced Test</button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* DATABASE BACKUP & RESTORE TAB */}
+          {adminTab === 'database-backup' && (
+            <div className="space-y-8 animate-fade-in font-mono text-xs">
+              <div className="p-6 bg-cyberdark/60 border border-white/5 rounded-xl space-y-6">
+                <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display border-b border-white/5 pb-2 text-glow-gold flex items-center gap-2">
+                  <Database className="h-5 w-5 text-gold" /> Database Safety Control Panel
+                </h3>
+                <p className="text-[10px] text-gray-400 leading-relaxed">
+                  Generate secure, automated backups of the live syllabus databases, toppers hall of fame, test series metadata, books data, and course libraries. Roll back or restore settings instantly in case of manual data corruption.
+                </p>
+
+                {/* Create Backup */}
+                <div className="flex flex-col sm:flex-row gap-4 items-end bg-[#131520] p-4 rounded-xl border border-white/5">
+                  <div className="flex-grow space-y-2">
+                    <label className="text-[10px] font-bold uppercase text-gray-400">Backup Description / Note</label>
+                    <input 
+                      type="text" 
+                      placeholder="e.g. Before updating physics chapter test questions" 
+                      value={backupDesc}
+                      onChange={e => setBackupDesc(e.target.value)}
+                      className="w-full p-2.5 bg-obsidian border border-white/5 rounded-lg text-xs text-white focus:outline-none focus:border-gold/50"
+                    />
+                  </div>
+                  <button 
+                    onClick={handleCreateBackup}
+                    className="w-full sm:w-auto px-6 py-2.5 bg-gradient-to-r from-gold to-yellow-600 hover:from-yellow-500 hover:to-amber-400 text-obsidian font-bold rounded-lg uppercase tracking-wider shadow-lg transition-all"
+                  >
+                    Create Snapshot
+                  </button>
+                </div>
+
+                {/* Backup Snapshots History */}
+                <div className="space-y-3">
+                  <h4 className="text-[11px] font-bold text-white uppercase tracking-wider border-b border-white/5 pb-1">Backup Restore Points</h4>
+                  
+                  {loadingBackups ? (
+                    <div className="flex justify-center items-center py-6 text-gray-500">
+                      <div className="h-5 w-5 border-2 border-gold border-t-transparent rounded-full animate-spin mr-2"></div>
+                      Loading restore points...
+                    </div>
+                  ) : backups.length === 0 ? (
+                    <div className="text-center py-6 text-gray-500 italic">
+                      No backups found. Create a snapshot to set a restore point.
+                    </div>
+                  ) : (
+                    <div className="space-y-2 max-h-[40vh] overflow-y-auto custom-scrollbar">
+                      {backups.map(b => (
+                        <div key={b.backupId} className="flex justify-between items-center p-3.5 bg-black/30 border border-white/5 rounded-lg hover:border-gold/20 transition-all gap-4">
+                          <div className="space-y-1">
+                            <div className="text-white font-bold text-[11px]">{b.key}</div>
+                            <div className="text-gray-500 text-[9px] flex gap-3">
+                              <span>ID: {b.backupId}</span>
+                              <span>•</span>
+                              <span>Date: {new Date(b.createdAt).toLocaleString()}</span>
+                            </div>
+                          </div>
+                          <button 
+                            onClick={() => handleRestoreBackup(b.backupId)}
+                            className="px-4 py-2 bg-blue-500/10 hover:bg-blue-500 text-blue-400 hover:text-white border border-blue-500/20 hover:border-transparent text-[9px] font-black uppercase rounded-lg transition-all"
+                          >
+                            Restore ↺
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

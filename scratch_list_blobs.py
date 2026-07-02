@@ -19,7 +19,8 @@ def list_blobs():
             data = json.loads(resp.read().decode('utf-8'))
             print("Blobs:")
             for b in data.get('blobs', []):
-                if b['pathname'] == 'db/homeData.json': print(f"{b['pathname']} (uploaded {b['uploadedAt']}) - {b['url']}")
+                if b['pathname'].startswith('db/'):
+                    print(f"{b['pathname']} - size: {b['size']} bytes - url: {b['url']}")
     except Exception as e:
         print(f"Error: {e}")
 

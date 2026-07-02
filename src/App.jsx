@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import MathCanvas from './components/MathCanvas';
 import Home from './pages/Home';
+import ErrorBoundary from './components/ErrorBoundary';
 import FloatingContact from './components/FloatingContact';
 import Auth from './pages/Auth';
 import Shield from 'lucide-react/dist/esm/icons/shield';
@@ -557,10 +558,12 @@ export default function App() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -15 }}
-                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                transition={{ duration: 0.15, ease: 'easeOut' }}
                 className="w-full flex-grow flex flex-col"
               >
-                {renderPage()}
+                <ErrorBoundary onReset={() => setActivePage('home')}>
+                  {renderPage()}
+                </ErrorBoundary>
               </motion.div>
             </AnimatePresence>
           </Suspense>

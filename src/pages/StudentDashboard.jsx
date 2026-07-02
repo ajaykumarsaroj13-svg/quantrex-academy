@@ -59,14 +59,37 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
 
   // Premium dashboard state declarations
   const [chapterSearchQuery, setChapterSearchQuery] = useState('');
+  const [chapterSearchInput, setChapterSearchInput] = useState('');
+  
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setChapterSearchQuery(chapterSearchInput);
+    }, 200);
+    return () => clearTimeout(handler);
+  }, [chapterSearchInput]);
+
   const [pyqSubView, setPyqSubView] = useState('overview'); // overview, all, bookmarks, mistakes, solved
   const [difficultyFilter, setDifficultyFilter] = useState('All');
   const [selectedYears, setSelectedYears] = useState([]);
   const [isYearDropdownOpen, setIsYearDropdownOpen] = useState(false);
   const [typeFilter, setTypeFilter] = useState('All');
+
   const [searchQuery, setSearchQuery] = useState('');
+  const [searchInput, setSearchInput] = useState('');
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setSearchQuery(searchInput);
+    }, 200);
+    return () => clearTimeout(handler);
+  }, [searchInput]);
   const [bookmarkModalOpen, setBookmarkModalOpen] = useState(false);
   const [bookmarkQuestionId, setBookmarkQuestionId] = useState(null);
+  const [visibleQuestionsCount, setVisibleQuestionsCount] = useState(15);
+
+  useEffect(() => {
+    setVisibleQuestionsCount(15);
+  }, [pyqSubView, selectedSyllabusChapterId, selectedYears, difficultyFilter, typeFilter, searchQuery]);
 
   // Handle hardware back button for mobile - close overlays step by step
   useEffect(() => {
@@ -742,8 +765,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                       <input
                         type="text"
                         placeholder="Search chapters..."
-                        value={chapterSearchQuery}
-                        onChange={e => setChapterSearchQuery(e.target.value)}
+                        value={chapterSearchInput}
+                        onChange={e => setChapterSearchInput(e.target.value)}
                         className={`w-full pl-9 pr-4 py-2.5 text-xs rounded-xl border focus:outline-none transition-all ${
                           isLight 
                             ? 'bg-slate-50 border-slate-200 text-slate-800 focus:border-amber-500/50' 
@@ -932,9 +955,37 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                               {chapterTab === 'pyqs' && (
                                 <>
                                   {isPyqLoading ? (
-                                    <div className="flex flex-col items-center justify-center py-16 space-y-3">
-                                      <div className="h-6 w-6 border-2 border-amber-500 border-t-transparent rounded-full animate-spin"></div>
-                                      <p className="text-xs text-gray-500 font-mono">Loading chapter analytics...</p>
+                                    <div className="space-y-6 animate-pulse">
+                                      {/* Skeleton Metric Cards Grid */}
+                                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                        {[1, 2, 3, 4].map(i => (
+                                          <div key={i} className={`rounded-2xl p-5 border min-h-[140px] flex flex-col justify-between ${
+                                            isLight ? 'bg-slate-100 border-slate-200' : 'bg-[#181a2b] border-white/5'
+                                          }`}>
+                                            <div className="w-10 h-10 rounded-xl bg-gray-400/10"></div>
+                                            <div className="space-y-2 mt-4">
+                                              <div className="h-4 w-3/4 bg-gray-400/20 rounded"></div>
+                                              <div className="h-3 w-1/2 bg-gray-400/10 rounded"></div>
+                                            </div>
+                                            <div className="h-5 w-1/3 bg-gray-400/25 rounded mt-2"></div>
+                                          </div>
+                                        ))}
+                                      </div>
+                                      {/* Skeleton Table / List */}
+                                      <div className={`p-5 rounded-2xl border ${isLight ? 'bg-slate-50 border-slate-200' : 'bg-[#121420] border-white/5'}`}>
+                                        <div className="h-4 w-40 bg-gray-400/20 rounded mb-4"></div>
+                                        <div className="space-y-3">
+                                          {[1, 2, 3].map(i => (
+                                            <div key={i} className="flex justify-between items-center py-2 border-b border-white/5">
+                                              <div className="space-y-1 w-[70%]">
+                                                <div className="h-3.5 w-full bg-gray-400/15 rounded"></div>
+                                                <div className="h-2.5 w-24 bg-gray-400/10 rounded"></div>
+                                              </div>
+                                              <div className="h-7 w-20 bg-gray-400/20 rounded-lg"></div>
+                                            </div>
+                                          ))}
+                                        </div>
+                                      </div>
                                     </div>
                                   ) : pyqSubView === 'overview' ? (
                                     <div className="space-y-6">
@@ -1284,8 +1335,8 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                             <input 
                                               type="text" 
                                               placeholder="Search questions by keyword..."
-                                              value={searchQuery} 
-                                              onChange={e => setSearchQuery(e.target.value)}
+                                              value={searchInput} 
+                                              onChange={e => setSearchInput(e.target.value)}
                                               className={`w-full pl-9 pr-4 py-2 text-xs rounded-xl border focus:outline-none transition-all ${
                                                 isLight 
                                                   ? 'bg-slate-50 border-slate-200 text-slate-800 focus:border-amber-500/50' 
@@ -1398,7 +1449,24 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                                 </div>
                                               ))}
 
-                                              {pyqSubView !== 'bookmarks' && filtered.map((q, idx) => renderQuestionItem(q, idx, false, filtered))}
+                                              {pyqSubView !== 'bookmarks' && (() => {
+                                                const sliced = filtered.slice(0, visibleQuestionsCount);
+                                                return (
+                                                  <>
+                                                    {sliced.map((q, idx) => renderQuestionItem(q, idx, false, filtered))}
+                                                    {filtered.length > visibleQuestionsCount && (
+                                                      <div className="flex justify-center mt-6">
+                                                        <button
+                                                          onClick={() => setVisibleQuestionsCount(prev => prev + 15)}
+                                                          className="px-6 py-2.5 rounded-xl border border-amber-500/20 bg-amber-500/10 hover:bg-amber-500/20 text-[10px] font-black uppercase tracking-wider text-amber-500 transition-all transform hover:-translate-y-0.5"
+                                                        >
+                                                          Load More Questions ({filtered.length - visibleQuestionsCount} Remaining)
+                                                        </button>
+                                                      </div>
+                                                    )}
+                                                  </>
+                                                );
+                                              })()}
                                             </>
                                           );
                                         })()}

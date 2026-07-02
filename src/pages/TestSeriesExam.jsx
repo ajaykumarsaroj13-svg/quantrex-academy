@@ -345,19 +345,62 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   })();
 
   // ── Submit ───────────────────────────────────────────────────
+  // Register online sync retry for offline submitted tests
+  useEffect(() => {
+    const handleOnlineSync = async () => {
+      console.log("Device is online. Syncing queued test submissions...");
+      const queueKey = 'quantrex_test_submissions_queue';
+      try {
+        const queue = JSON.parse(localStorage.getItem(queueKey) || '[]');
+        if (queue.length === 0) return;
+
+        const remainingQueue = [];
+        for (const payload of queue) {
+          try {
+            const res = await fetch('/api/tests', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+            if (!res.ok) throw new Error();
+          } catch (e) {
+            remainingQueue.push(payload);
+          }
+        }
+
+        if (remainingQueue.length > 0) {
+          localStorage.setItem(queueKey, JSON.stringify(remainingQueue));
+        } else {
+          localStorage.removeItem(queueKey);
+        }
+      } catch (err) {
+        console.error("Test submission sync error:", err);
+      }
+    };
+
+    window.addEventListener('online', handleOnlineSync);
+    return () => window.removeEventListener('online', handleOnlineSync);
+  }, []);
+
+  // ── Submit ───────────────────────────────────────────────────
   const doSubmit = (auto = false) => {
     clearInterval(timerRef.current);
     localStorage.removeItem(`quantrex_exam_state_${testId}`);
     const timeTaken = Math.floor((Date.now() - startTimeRef.current) / 1000);
     let score = 0, correct = 0, wrong = 0, attempted = 0;
+    
+    // Filter wrong questions for Mistake Booster
+    const wrongQuestions = [];
+    
     testData?.questions?.forEach(q => {
       const ua = answers[q.questionNumber];
       if (ua === undefined || ua === null || ua === '' || (Array.isArray(ua) && ua.length === 0)) return;
       attempted++;
       
+      let isCorrect = false;
       if (q.questionType === 'NUMERICAL') {
         if (String(ua).trim() === String(q.correctAnswer || '').trim()) {
-          score += (q.marks || 4); correct++;
+          score += (q.marks || 4); correct++; isCorrect = true;
         } else {
           score += (q.negativeMarks ?? 0); wrong++;
         }
@@ -369,7 +412,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
         const hasIncorrectSelection = userArr.some(val => !correctArr.includes(val));
         
         if (isFullCorrect) {
-          score += (q.marks || 4); correct++;
+          score += (q.marks || 4); correct++; isCorrect = true;
         } else if (hasIncorrectSelection) {
           score += (q.negativeMarks ?? -1); wrong++;
         } else {
@@ -378,16 +421,27 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           else if (correctArr.length >= 3 && userArr.length === 2) score += 2;
           else if (correctArr.length >= 2 && userArr.length === 1) score += 1;
           else score += userArr.length;
-          correct++;
+          correct++; isCorrect = true;
         }
       } else {
         if (Number(ua) === Number(q.correctOption)) {
-          score += (q.marks || 4); correct++;
+          score += (q.marks || 4); correct++; isCorrect = true;
         } else {
           score += (q.negativeMarks ?? -1); wrong++;
         }
       }
+
+      if (!isCorrect) {
+        wrongQuestions.push({
+          questionId: q.id || q.questionNumber,
+          questionText: q.questionText || q.question || '',
+          selectedOption: Array.isArray(ua) ? ua[0] : (isNaN(ua) ? 0 : Number(ua)),
+          correctOption: q.correctOption !== undefined ? Number(q.correctOption) : (q.correctOptionIndex !== undefined ? Number(q.correctOptionIndex) : 0),
+          options: q.options || []
+        });
+      }
     });
+
     const questionResults = testData?.questions?.map(q => {
       const ua = answers[q.questionNumber];
       const timeSpent = timeSpentMap[q.questionNumber] || 0;
@@ -418,6 +472,50 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
         subject: q.subject || 'Miscellaneous'
       };
     }) || [];
+
+    // POST test results to MongoDB if user is logged in
+    const userId = user?.id || user?._id;
+    if (userId) {
+      const payload = {
+        userId,
+        testId,
+        testTitle: testData?.title || 'Mock Test',
+        score,
+        correctCount: correct,
+        wrongCount: wrong,
+        timeSpent: timeTaken,
+        totalQuestions: testData?.questions?.length || 0,
+        totalMarks: (testData?.questions?.length || 0) * 4,
+        wrongQuestions
+      };
+
+      fetch('/api/tests', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).catch(() => {
+        // Queue submission locally if network fails
+        try {
+          const queueKey = 'quantrex_test_submissions_queue';
+          const queue = JSON.parse(localStorage.getItem(queueKey) || '[]');
+          queue.push(payload);
+          localStorage.setItem(queueKey, JSON.stringify(queue));
+        } catch (e) {
+          console.error("Failed to queue offline test submission:", e);
+        }
+      });
+      
+      // Save logs in activity logs
+      fetch('/api/progress', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId,
+          actionType: 'chapter_complete',
+          description: `Attempted test series: ${testData?.title || 'Mock Test'}. Score: ${score}/${(testData?.questions?.length || 0) * 4}`
+        })
+      }).catch(() => {});
+    }
 
     setShowSubmitModal(false);
     if (onSubmit) onSubmit({ 
