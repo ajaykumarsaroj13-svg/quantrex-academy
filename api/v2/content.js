@@ -3,7 +3,7 @@
  * Content API for Mobile App - Serves syllabus, chapters, tests data
  * Does NOT affect existing website API routes
  */
-import { connectToDatabase, BackupData } from '../utils/db.js';
+import { connectToDatabase } from '../utils/db.js';
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Credentials': 'true',
