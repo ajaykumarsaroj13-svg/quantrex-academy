@@ -17,9 +17,38 @@
           "value": "public, max-age=0, must-revalidate"
         }
       ]
+    },
+    {
+      "source": "/api/v2/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET,POST,PUT,DELETE,OPTIONS"
+        }
+      ]
     }
   ],
   "rewrites": [
+    {
+      "source": "/api/v2/content",
+      "destination": "/api/v2/content"
+    },
+    {
+      "source": "/api/v2/auth",
+      "destination": "/api/v2/auth"
+    },
+    {
+      "source": "/api/v2/progress",
+      "destination": "/api/v2/progress"
+    },
+    {
+      "source": "/api/v2/ai",
+      "destination": "/api/v2/ai"
+    },
     {
       "source": "/api/(.*)",
       "destination": "/api/index"
@@ -30,3 +59,4 @@
     }
   ]
 }
+
