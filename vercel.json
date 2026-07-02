@@ -58,9 +58,26 @@
       "destination": "/api/v2/notifications"
     },
     {
+      "source": "/api/admin/revenue",
+      "destination": "/api/v2/admin?action=revenue"
+    },
+    {
+      "source": "/api/admin/students",
+      "destination": "/api/v2/admin?action=students"
+    },
+    {
+      "source": "/api/admin/users/:id/ban",
+      "destination": "/api/v2/admin?action=ban&id=:id"
+    },
+    {
+      "source": "/api/admin/users/:id/courses",
+      "destination": "/api/v2/admin?action=courses&id=:id"
+    },
+    {
       "source": "/api/(.*)",
       "destination": "/api/index"
-    },
+    }
+,
     {
       "source": "/(.*)",
       "destination": "/index.html"

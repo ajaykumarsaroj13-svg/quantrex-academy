@@ -65,6 +65,7 @@ const UserSchema = new mongoose.Schema({
   purchasedCourses: { type: [String], default: [] },
   dailyStreak: { type: Number, default: 1 },
   attendance: { type: Number, default: 100 },
+  isBanned: { type: Boolean, default: false },
   lastActive: { type: Date, default: Date.now },
   createdAt: { type: Date, default: Date.now }
 });
