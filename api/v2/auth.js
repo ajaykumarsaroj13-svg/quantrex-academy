@@ -19,7 +19,7 @@ const CORS_HEADERS = {
 const JWT_SECRET = process.env.JWT_SECRET || 'quantrex_secret_2025_secure_key';
 
 function hashPassword(password) {
-  return crypto.createHash('sha256').update(password + JWT_SECRET).digest('hex');
+  return crypto.createHash('sha256').update(password).digest('hex');
 }
 
 function generateToken(userId) {
