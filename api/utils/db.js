@@ -125,3 +125,14 @@ const DbBackupSchema = new mongoose.Schema({
 });
 
 export const DbBackup = mongoose.models.DbBackup || mongoose.model('DbBackup', DbBackupSchema);
+
+// 7. Global Notifications Schema
+const NotificationSchema = new mongoose.Schema({
+  title: { type: String, required: true },
+  message: { type: String, required: true },
+  type: { type: String, default: 'general' },
+  createdAt: { type: Date, default: Date.now }
+});
+
+export const Notification = mongoose.models.Notification || mongoose.model('Notification', NotificationSchema);
+

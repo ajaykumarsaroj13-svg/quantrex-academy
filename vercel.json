@@ -50,6 +50,14 @@
       "destination": "/api/v2/ai"
     },
     {
+      "source": "/api/v2/notifications",
+      "destination": "/api/v2/notifications"
+    },
+    {
+      "source": "/api/admin/notifications",
+      "destination": "/api/v2/notifications"
+    },
+    {
       "source": "/api/(.*)",
       "destination": "/api/index"
     },
@@ -59,4 +67,5 @@
     }
   ]
 }
+
 
