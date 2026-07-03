@@ -69,7 +69,7 @@ function transformQuestion(rawQ, index, defaultSubject) {
 }
 
 async function main() {
-  let TESTS = getTestsToUpdate();
+  let TESTS = JSON.parse(fs.readFileSync('pyq_tests_to_fix.json', 'utf8'));
   // Ensure the target test from the user's screenshot is first so we see it fixed immediately
   const target = 'tst-19g61moahy6ef';
   if (TESTS.includes(target)) {

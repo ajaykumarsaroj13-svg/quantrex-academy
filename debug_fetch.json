@@ -1,21 +1,21 @@
 {
   "statusCode": 0,
   "data": {
-    "testId": "tst-19g61moahy6ef",
+    "testId": "tst-19g61mnpzhlyq",
     "defaultLanguage": "en",
-    "description": "Logarithmic Properties, Logarithmic Equations",
+    "description": "Units, Dimensions",
     "difficulty": null,
     "instructions": null,
     "isAnalysisDeletable": false,
-    "isPremium": false,
+    "isPremium": true,
     "keyValuePairs": {},
     "languages": [
       "en",
       "hi"
     ],
     "layout": "nta",
-    "liveAt": "2026-06-01T00:30:00.000Z",
-    "maxAttempt": 2,
+    "liveAt": "2026-05-31T01:00:00.000Z",
+    "maxAttempt": 3,
     "maxMarks": 60,
     "maxNegMarks": 15,
     "policy": "jee-main",
@@ -31,9 +31,76 @@
         "optional": [],
         "questions": [
           {
-            "questionId": "tq-mpwjmktt",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
+            "questionId": "tq-mpsxdme8",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
+            "country": "in",
+            "difficulty": "medium",
+            "exam": "jee-main",
+            "examGroup": "jee",
+            "languages": [
+              "en"
+            ],
+            "marks": 4,
+            "negMarks": 1,
+            "question": {
+              "en": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>Charge on the capacitor is given by $Q = I \\alpha e^{\\frac{tI}{\\Delta V \\epsilon_0 \\beta}}$ where $\\alpha$ and $\\beta$ are constants. $t =$ time, $I =$ current, $\\Delta V =$ potential difference.</p> <p>Then dimensions of $\\frac{\\beta}{\\alpha}$ is same as the dimensions of</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "<p>$\\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}$</p>"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "<p>$\\mu_0 \\epsilon_0$</p>"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "<p>$\\sqrt{\\mu_0 \\epsilon_0}$</p>"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "<p>$\\frac{1}{\\mu_0 \\epsilon_0}$</p>"
+                  }
+                ]
+              },
+              "hi": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>संधारित्र पर आवेश $Q = I \\alpha e^{\\frac{tI}{\\Delta V \\epsilon_0 \\beta}}$ द्वारा दिया गया है, जहाँ $\\alpha$ और $\\beta$ नियतांक हैं। $t =$ समय, $I =$ धारा, $\\Delta V =$ विभवांतर।</p> <p>तो $\\frac{\\beta}{\\alpha}$ की विमाएँ निम्न में से किसके विमाओं के समान हैं?</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "<p>$\\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}$</p>"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "<p>$\\mu_0 \\epsilon_0$</p>"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "<p>$\\sqrt{\\mu_0 \\epsilon_0}$</p>"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "<p>$\\frac{1}{\\mu_0 \\epsilon_0}$</p>"
+                  }
+                ]
+              }
+            },
+            "subTopic": null,
+            "subject": "physics",
+            "timeAllotted": 90000,
+            "topic": "dimensions-of-physical-quantities",
+            "type": "mcq"
+          },
+          {
+            "questionId": "tq-mpsy5ne3",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
             "country": "in",
             "difficulty": "easy",
             "exam": "jee-main",
@@ -47,60 +114,60 @@
               "en": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>$ \\frac{\\log_{2}(9 - 2^{x})}{x - 3} = 1 $. Then number of solution is</p>",
+                "content": "<p><b>Match the following</b></p><style>table {width: 100%;border-collapse: collapse;margin: 20px 0;}th {background-color: blue;color: white;border: 1px solid lightgrey;padding: 10px;}td {border: 1px solid lightgrey;padding: 10px;text-align: left;}</style><table><tr><th colspan=\"2\">Table-1</th><th colspan=\"2\">Table-2</th></tr><tr><td>(A)</td><td><div style=\"text-align: center;\"><span style=\"font-size:1.2em;\">$\\dfrac{R}{L}$</span></div></td><td>(P)</td><td><b>Time</b></td></tr><tr><td>(B)</td><td><span style=\"font-size:1.2em;\">CR</span></td><td>(Q)</td><td><b>Frequency</b></td></tr><tr><td>(C)</td><td><span style=\"font-size:1.2em;\">E/B</span></td><td>(R)</td><td><b>Speed</b></td></tr><tr><td>(D)</td><td><span style=\"font-size:1.2em;\">$\\sqrt{\\epsilon_0\\mu_0}$</span></td><td>(S)</td><td><b>None</b></td></tr></table><p>Match the items of Table-1 with the correct options from Table-2:</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "<p>3</p>"
+                    "content": "(A) $\\rightarrow$ (P); (B) $\\rightarrow$ (Q); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
                   },
                   {
                     "identifier": "B",
-                    "content": "<p>2</p>"
+                    "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
                   },
                   {
                     "identifier": "C",
-                    "content": "<p>1</p>"
+                    "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (R); (C) $\\rightarrow$ (P); (D) $\\rightarrow$ (S)"
                   },
                   {
                     "identifier": "D",
-                    "content": "<p>0</p>"
+                    "content": "(A) $\\rightarrow$ (S); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (Q)"
                   }
                 ]
               },
               "hi": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>$ \\frac{\\log_{2}(9 - 2^{x})}{x - 3} = 1 $ है। तो हलों की संख्या है</p>",
+                "content": "<p><b>निम्नलिखित का मिलान करें</b></p><style>table {width: 100%;border-collapse: collapse;margin: 20px 0;}th {background-color: blue;color: white;border: 1px solid lightgrey;padding: 10px;}td {border: 1px solid lightgrey;padding: 10px;text-align: left;}</style><table><tr><th colspan=\"2\">तालिका-1</th><th colspan=\"2\">तालिका-2</th></tr><tr><td>(A)</td><td><div style=\"text-align: center;\"><span style=\"font-size:1.2em;\">$\\dfrac{R}{L}$</span></div></td><td>(P)</td><td><b>समय</b></td></tr><tr><td>(B)</td><td><span style=\"font-size:1.2em;\">CR</span></td><td>(Q)</td><td><b>आवृत्ति</b></td></tr><tr><td>(C)</td><td><span style=\"font-size:1.2em;\">E/B</span></td><td>(R)</td><td><b>चाल</b></td></tr><tr><td>(D)</td><td><span style=\"font-size:1.2em;\">$\\sqrt{\\epsilon_0\\mu_0}$</span></td><td>(S)</td><td><b>कोई नहीं</b></td></tr></table><p>तालिका-1 के मदों का तालिका-2 के सही विकल्पों के साथ मिलान करें:</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "<p>3</p>"
+                    "content": "(A) $\\rightarrow$ (P); (B) $\\rightarrow$ (Q); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
                   },
                   {
                     "identifier": "B",
-                    "content": "<p>2</p>"
+                    "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
                   },
                   {
                     "identifier": "C",
-                    "content": "<p>1</p>"
+                    "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (R); (C) $\\rightarrow$ (P); (D) $\\rightarrow$ (S)"
                   },
                   {
                     "identifier": "D",
-                    "content": "<p>0</p>"
+                    "content": "(A) $\\rightarrow$ (S); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (Q)"
                   }
                 ]
               }
             },
             "subTopic": null,
-            "subject": "mathematics",
+            "subject": "physics",
             "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
+            "topic": "dimensions-of-physical-quantities",
             "type": "mcq"
           },
           {
-            "questionId": "tq-mpwkdqxi",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
+            "questionId": "tq-mpsxxdir",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
             "country": "in",
             "difficulty": "hard",
             "exam": "jee-main",
@@ -114,60 +181,261 @@
               "en": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>If $\\log_5(\\sqrt[x]{5} + 125) = \\log_5 6 + 1 + \\frac{1}{2x}$ then $x$ is</p>",
+                "content": "<p>An unknown quantity '<b>α</b>' is expressed as $\\alpha = \\dfrac{2ma}{\\beta} \\log\\left(1 + \\dfrac{2\\beta \\ell}{ma}\\right)$, where $m$ = mass, $a$ = acceleration, $\\ell$ = length. The unit of $\\alpha$ should be</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "<p>-1</p>"
+                    "content": "<p>s<sup>−1</sup></p>"
                   },
                   {
                     "identifier": "B",
-                    "content": "<p>1/2</p>"
+                    "content": "<p>m/s</p>"
                   },
                   {
                     "identifier": "C",
-                    "content": "<p>1/16</p>"
+                    "content": "<p>m/s<sup>2</sup></p>"
                   },
                   {
                     "identifier": "D",
-                    "content": "<p>No solution</p>"
+                    "content": "<p>meter</p>"
                   }
                 ]
               },
               "hi": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>यदि $\\log_5(\\sqrt[x]{5} + 125) = \\log_5 6 + 1 + \\frac{1}{2x}$ है, तो $x$ है</p>",
+                "content": "<p>एक अज्ञात राशि '<b>α</b>' को $\\alpha = \\dfrac{2ma}{\\beta} \\log\\left(1 + \\dfrac{2\\beta \\ell}{ma}\\right)$ के रूप में व्यक्त किया गया है, जहाँ $m$ = द्रव्यमान, $a$ = त्वरण, $\\ell$ = लंबाई। $\\alpha$ का मात्रक होना चाहिए</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "<p>-1</p>"
+                    "content": "<p>s<sup>−1</sup></p>"
                   },
                   {
                     "identifier": "B",
-                    "content": "<p>1/2</p>"
+                    "content": "<p>m/s</p>"
                   },
                   {
                     "identifier": "C",
-                    "content": "<p>1/16</p>"
+                    "content": "<p>m/s<sup>2</sup></p>"
                   },
                   {
                     "identifier": "D",
-                    "content": "<p>कोई हल नहीं</p>"
+                    "content": "<p>मीटर</p>"
                   }
                 ]
               }
             },
             "subTopic": null,
-            "subject": "mathematics",
+            "subject": "physics",
             "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
+            "topic": "dimensions-of-physical-quantities",
             "type": "mcq"
           },
           {
-            "questionId": "tq-mpwk1gtr",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
+            "questionId": "tq-mpsxt0o8",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
+            "country": "in",
+            "difficulty": "medium",
+            "exam": "jee-main",
+            "examGroup": "jee",
+            "languages": [
+              "en"
+            ],
+            "marks": 4,
+            "negMarks": 1,
+            "question": {
+              "en": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>Given that $y = A \\sin\\left[\\frac{2 \\pi}{\\lambda}(ct - x)\\right]$, where $y$ and $x$ are measured in metres. Which of the following statements is true?</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "<p>The unit of $\\lambda$ is same as that of $x$ and $A$</p>"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "<p>The unit of $\\lambda$ is same as that of $x$ but not of $A$</p>"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "<p>The unit of $c$ is same as that of $\\frac{2\\pi}{\\lambda}$</p>"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "<p>The unit of $(ct - x)$ is same as that of $\\frac{2\\pi}{\\lambda}$</p>"
+                  }
+                ]
+              },
+              "hi": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>दिया गया है कि $y = A \\sin\\left[\\frac{2 \\pi}{\\lambda}(ct - x)\\right]$, जहाँ $y$ और $x$ मीटर में मापे जाते हैं। निम्नलिखित में से कौन सा कथन सत्य है?</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "<p>$\\lambda$ की इकाई $x$ और $A$ की इकाई के समान है</p>"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "<p>$\\lambda$ की इकाई $x$ की इकाई के समान है परन्तु $A$ की नहीं</p>"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "<p>$c$ की इकाई $\\frac{2\\pi}{\\lambda}$ की इकाई के समान है</p>"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "<p>$(ct - x)$ की इकाई $\\frac{2\\pi}{\\lambda}$ की इकाई के समान है</p>"
+                  }
+                ]
+              }
+            },
+            "subTopic": null,
+            "subject": "physics",
+            "timeAllotted": 90000,
+            "topic": "unit-of-physical-quantities",
+            "type": "mcq"
+          },
+          {
+            "questionId": "tq-mpsyfn6u",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
+            "country": "in",
+            "difficulty": "hard",
+            "exam": "jee-main",
+            "examGroup": "jee",
+            "languages": [
+              "en"
+            ],
+            "marks": 4,
+            "negMarks": 1,
+            "question": {
+              "en": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>Match the following</p><style>table {width: 100%; border-collapse: collapse; margin: 20px 0;} th {background-color: blue; color: white; border: 1px solid lightgrey; padding: 10px;} td {border: 1px solid lightgrey; padding: 10px; text-align: left;} </style><table><tr><th colspan=\"2\">Table 1</th><th colspan=\"2\">Table 2</th></tr><tr><td><b>(A)</b></td><td><b>Stress</b></td><td><b>(P)</b></td><td><b>Pressure</b></td></tr><tr><td><b>(B)</b></td><td><b>Strain</b></td><td><b>(Q)</b></td><td><b>Energy density</b></td></tr><tr><td><b>(C)</b></td><td><b>Modulus of elasticity</b></td><td><b>(R)</b></td><td><b>Angle</b></td></tr><tr><td><b>(D)</b></td><td><b>Torque</b></td><td><b>(S)</b></td><td><b>Energy</b></td></tr></table><p>Select the correct matching from the options given below :</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{S}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{R})$"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P});(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                  }
+                ]
+              },
+              "hi": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>निम्नलिखित का मिलान करें</p><style>table {width: 100%; border-collapse: collapse; margin: 20px 0;} th {background-color: blue; color: white; border: 1px solid lightgrey; padding: 10px;} td {border: 1px solid lightgrey; padding: 10px; text-align: left;} </style><table><tr><th colspan=\"2\">तालिका 1</th><th colspan=\"2\">तालिका 2</th></tr><tr><td><b>(A)</b></td><td><b>प्रतिबल</b></td><td><b>(P)</b></td><td><b>दाब</b></td></tr><tr><td><b>(B)</b></td><td><b>विकृति</b></td><td><b>(Q)</b></td><td><b>ऊर्जा घनत्व</b></td></tr><tr><td><b>(C)</b></td><td><b>प्रत्यास्थता गुणांक</b></td><td><b>(R)</b></td><td><b>कोण</b></td></tr><tr><td><b>(D)</b></td><td><b>बल आघूर्ण</b></td><td><b>(S)</b></td><td><b>ऊर्जा</b></td></tr></table><p>नीचे दिए गए विकल्पों में से सही मिलान चुनें :</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{S}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{R})$"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P});(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                  }
+                ]
+              }
+            },
+            "subTopic": null,
+            "subject": "physics",
+            "timeAllotted": 90000,
+            "topic": "dimensions-of-physical-quantities",
+            "type": "mcq"
+          },
+          {
+            "questionId": "tq-mpsyo43w",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
+            "country": "in",
+            "difficulty": "medium",
+            "exam": "jee-main",
+            "examGroup": "jee",
+            "languages": [
+              "en"
+            ],
+            "marks": 4,
+            "negMarks": 1,
+            "question": {
+              "en": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>If speed of light <b>c</b>, Planck's constant <b>h</b> and gravitational constant <b>G</b> are chosen as fundamental quantities, dimensions of time in this system of units is</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "<p>ch<sup>3/2</sup>G<sup>&minus;3/2</sup></p>"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "<p>c<sup>-2</sup>G<sup>1/2</sup>h</p>"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "<p>c<sup>2</sup>G<sup>1/2</sup>h<sup>5/2</sup></p>"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "<p>c<sup>&minus;5/2</sup>G<sup>1/2</sup>h<sup>1/2</sup></p>"
+                  }
+                ]
+              },
+              "hi": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>यदि प्रकाश की चाल <b>c</b>, प्लांक स्थिरांक <b>h</b> और गुरुत्वाकर्षण स्थिरांक <b>G</b> को मूल राशियों के रूप में चुना जाए, तो इस मात्रक प्रणाली में समय की विमाएँ हैं</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "<p>ch<sup>3/2</sup>G<sup>&minus;3/2</sup></p>"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "<p>c<sup>-2</sup>G<sup>1/2</sup>h</p>"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "<p>c<sup>2</sup>G<sup>1/2</sup>h<sup>5/2</sup></p>"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "<p>c<sup>&minus;5/2</sup>G<sup>1/2</sup>h<sup>1/2</sup></p>"
+                  }
+                ]
+              }
+            },
+            "subTopic": null,
+            "subject": "physics",
+            "timeAllotted": 90000,
+            "topic": "dimensions-of-physical-quantities",
+            "type": "mcq"
+          },
+          {
+            "questionId": "tq-mpsznqy5",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
             "country": "in",
             "difficulty": "easy",
             "exam": "jee-main",
@@ -181,261 +449,60 @@
               "en": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>If $x^2 + 7^{\\log_7{x}} - 2 = 0$ then $x$ is</p>",
+                "content": "<p>$\\text{erg} \\, m^{-1}$ can be the unit of the measure of</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "<p>2</p>"
+                    "content": "<p>force</p>"
                   },
                   {
                     "identifier": "B",
-                    "content": "<p>-2</p>"
+                    "content": "<p>momentum</p>"
                   },
                   {
                     "identifier": "C",
-                    "content": "<p>-1</p>"
+                    "content": "<p>power</p>"
                   },
                   {
                     "identifier": "D",
-                    "content": "<p>1</p>"
+                    "content": "<p>acceleration</p>"
                   }
                 ]
               },
               "hi": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>यदि $x^2 + 7^{\\log_7{x}} - 2 = 0$ है, तो $x$ का मान है:</p>",
+                "content": "<p>$\\text{erg} \\, m^{-1}$ निम्न में से किसके मापन की इकाई हो सकती है</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "<p>2</p>"
+                    "content": "<p>बल</p>"
                   },
                   {
                     "identifier": "B",
-                    "content": "<p>-2</p>"
+                    "content": "<p>संवेग</p>"
                   },
                   {
                     "identifier": "C",
-                    "content": "<p>-1</p>"
+                    "content": "<p>शक्ति</p>"
                   },
                   {
                     "identifier": "D",
-                    "content": "<p>1</p>"
+                    "content": "<p>त्वरण</p>"
                   }
                 ]
               }
             },
             "subTopic": null,
-            "subject": "mathematics",
+            "subject": "physics",
             "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
+            "topic": "unit-of-physical-quantities",
             "type": "mcq"
           },
           {
-            "questionId": "tq-mpwmiqnr",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
-            "country": "in",
-            "difficulty": "medium",
-            "exam": "jee-main",
-            "examGroup": "jee",
-            "languages": [
-              "en"
-            ],
-            "marks": 4,
-            "negMarks": 1,
-            "question": {
-              "en": {
-                "comprehension": null,
-                "direction": null,
-                "content": "$5^{1+\\log _4 x}+5^{\\log _{\\frac{1}{4}} x-1}=\\frac{26}{5}$ then $x$ is",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "<p>1 Only</p>"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "<p>1/16 Only</p>"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "<p>1/2</p>"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "<p>1, 1/16</p>"
-                  }
-                ]
-              },
-              "hi": {
-                "comprehension": null,
-                "direction": null,
-                "content": "यदि $5^{1+\\log _4 x}+5^{\\log _{\\frac{1}{4}} x-1}=\\frac{26}{5}$ है, तो $x$ का मान है:",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "<p>केवल 1</p>"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "<p>केवल 1/16</p>"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "<p>1/2</p>"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "<p>1, 1/16</p>"
-                  }
-                ]
-              }
-            },
-            "subTopic": null,
-            "subject": "mathematics",
-            "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
-            "type": "mcq"
-          },
-          {
-            "questionId": "tq-mpwmt9c3",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
-            "country": "in",
-            "difficulty": "medium",
-            "exam": "jee-main",
-            "examGroup": "jee",
-            "languages": [
-              "en"
-            ],
-            "marks": 4,
-            "negMarks": 1,
-            "question": {
-              "en": {
-                "comprehension": null,
-                "direction": null,
-                "content": "Solve for $x: \\log ^2(4-x)+\\log (4-x) \\cdot \\log \\left(x+\\frac{1}{2}\\right)-2 \\log ^2\\left(x+\\frac{1}{2}\\right)=0$",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 \\pm  2\\sqrt{6}}{2}$$"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 + 2\\sqrt{6}}{2}$$"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 - 2\\sqrt{6}}{2}$$"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "$$x = 0, \\quad x = \\frac{7}{4}$$"
-                  }
-                ]
-              },
-              "hi": {
-                "comprehension": null,
-                "direction": null,
-                "content": "$x$ के लिए हल कीजिए: $\\log ^2(4-x)+\\log (4-x) \\cdot \\log \\left(x+\\frac{1}{2}\\right)-2 \\log ^2\\left(x+\\frac{1}{2}\\right)=0$",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 \\pm  2\\sqrt{6}}{2}$$"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 + 2\\sqrt{6}}{2}$$"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 - 2\\sqrt{6}}{2}$$"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "$$x = 0, \\quad x = \\frac{7}{4}$$"
-                  }
-                ]
-              }
-            },
-            "subTopic": null,
-            "subject": "mathematics",
-            "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
-            "type": "mcq"
-          },
-          {
-            "questionId": "tq-mpwn4bpy",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
-            "country": "in",
-            "difficulty": "medium",
-            "exam": "jee-main",
-            "examGroup": "jee",
-            "languages": [
-              "en"
-            ],
-            "marks": 4,
-            "negMarks": 1,
-            "question": {
-              "en": {
-                "comprehension": null,
-                "direction": null,
-                "content": "<p>Indicate all correct alternatives, where base of the $\\log$ is 2 .</p>\n<p>The equation $x^{\\frac{3}{4}}\\left(\\log _2 x\\right)^2+\\log _2 x-\\frac{5}{4}=\\sqrt{2}$ has :</p>\n<p>(A) At least one real solution</p>\n<p>(B) Exactly 3 real solutions</p>\n<p>(C) Exactly one irrational solution</p>\n<p>(D) Imaginary roots</p>",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "A Only"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "A, B and D Only"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "A, B and C Only"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "B and D Only"
-                  }
-                ]
-              },
-              "hi": {
-                "comprehension": null,
-                "direction": null,
-                "content": "<p>सभी सही विकल्पों को इंगित करें, जहाँ $\\log$ का आधार 2 है।</p>\n<p>समीकरण $x^{\\frac{3}{4}}\\left(\\log _2 x\\right)^2+\\log _2 x-\\frac{5}{4}=\\sqrt{2}$ के हैं :</p>\n<p>(A) कम से कम एक वास्तविक हल</p>\n<p>(B) ठीक 3 वास्तविक हल</p>\n<p>(C) ठीक एक अपरिमेय हल</p>\n<p>(D) काल्पनिक मूल</p>",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "केवल A"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "केवल A, B और D"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "केवल A, B और C"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "केवल B और D"
-                  }
-                ]
-              }
-            },
-            "subTopic": null,
-            "subject": "mathematics",
-            "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
-            "type": "mcq"
-          },
-          {
-            "questionId": "tq-mpwnofgh",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
+            "questionId": "tq-mpszqzfp",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
             "country": "in",
             "difficulty": "hard",
             "exam": "jee-main",
@@ -449,60 +516,127 @@
               "en": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>The equation $x^{\\left[\\left(\\log _3 x\\right)^2-(\\frac{9}{2} \\log _3 x)+5\\right]}=3 \\sqrt{3}$ has</p>\n<p>(A) Exactly 3 real solutions</p>\n<p>(B) At least one real solution</p>\n<p>(C) Exactly one irrational solution</p>\n<p>(D) Complex roots</p>",
+                "content": "<p>If the present units of length, time and mass (m, s, kg) are changed to 100 m, 100 s, and $\\frac{1}{10}$ kg, then</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "A, B and C Only"
+                    "content": "<p>the new unit of velocity is increased 10 times</p>"
                   },
                   {
                     "identifier": "B",
-                    "content": "A, B, C and D"
+                    "content": "<p>the new unit of force is decreased $\\frac{1}{1000}$ times</p>"
                   },
                   {
                     "identifier": "C",
-                    "content": "A, C Only"
+                    "content": "<p>the new unit of energy is increased 10 times</p>"
                   },
                   {
                     "identifier": "D",
-                    "content": "B, C Only"
+                    "content": "<p>the new unit of pressure is increased 1000 times</p>"
                   }
                 ]
               },
               "hi": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>समीकरण $x^{\\left[\\left(\\log _3 x\\right)^2-(\\frac{9}{2} \\log _3 x)+5\\right]}=3 \\sqrt{3}$ के</p>\n<p>(A) ठीक 3 वास्तविक हल हैं</p>\n<p>(B) कम से कम एक वास्तविक हल है</p>\n<p>(C) ठीक एक अपरिमेय हल है</p>\n<p>(D) सम्मिश्र मूल हैं</p>",
+                "content": "<p>यदि लंबाई, समय और द्रव्यमान (m, s, kg) के वर्तमान मात्रकों को बदलकर 100 m, 100 s और $\\frac{1}{10}$ kg कर दिया जाए, तो</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "केवल A, B और C"
+                    "content": "<p>वेग का नया मात्रक 10 गुना बढ़ जाता है</p>"
                   },
                   {
                     "identifier": "B",
-                    "content": "A, B, C और D"
+                    "content": "<p>बल का नया मात्रक $\\frac{1}{1000}$ गुना घट जाता है</p>"
                   },
                   {
                     "identifier": "C",
-                    "content": "केवल A, C"
+                    "content": "<p>ऊर्जा का नया मात्रक 10 गुना बढ़ जाता है</p>"
                   },
                   {
                     "identifier": "D",
-                    "content": "केवल B, C"
+                    "content": "<p>दाब का नया मात्रक 1000 गुना बढ़ जाता है</p>"
                   }
                 ]
               }
             },
             "subTopic": null,
-            "subject": "mathematics",
+            "subject": "physics",
             "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
+            "topic": "unit-of-physical-quantities",
             "type": "mcq"
           },
           {
-            "questionId": "tq-mpwv4ksq",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
+            "questionId": "tq-mpszvywd",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
+            "country": "in",
+            "difficulty": "easy",
+            "exam": "jee-main",
+            "examGroup": "jee",
+            "languages": [
+              "en"
+            ],
+            "marks": 4,
+            "negMarks": 1,
+            "question": {
+              "en": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>In C.G.S. system the magnitude of the force is 100 dyne.In another system where the fundamental physical quantities are kilogram, metre and minute, the magnitude of the force is :</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "<p>0.036</p>"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "<p>0.36</p>"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "<p>3.6</p>"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "<p>36</p>"
+                  }
+                ]
+              },
+              "hi": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>C.G.S. प्रणाली में बल का परिमाण 100 डाइन है। एक अन्य प्रणाली में जहाँ मूल भौतिक राशियाँ किलोग्राम, मीटर और मिनट हैं, बल का परिमाण है :</p>",
+                "options": [
+                  {
+                    "identifier": "A",
+                    "content": "<p>0.036</p>"
+                  },
+                  {
+                    "identifier": "B",
+                    "content": "<p>0.36</p>"
+                  },
+                  {
+                    "identifier": "C",
+                    "content": "<p>3.6</p>"
+                  },
+                  {
+                    "identifier": "D",
+                    "content": "<p>36</p>"
+                  }
+                ]
+              }
+            },
+            "subTopic": null,
+            "subject": "physics",
+            "timeAllotted": 90000,
+            "topic": "unit-of-physical-quantities",
+            "type": "mcq"
+          },
+          {
+            "questionId": "tq-mpt019fi",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
             "country": "in",
             "difficulty": "medium",
             "exam": "jee-main",
@@ -516,188 +650,54 @@
               "en": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>Positive integers <i>a</i> and <i>b</i> satisfy the condition $\\log _2\\left[\\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right)\\right]=0$. Then which can not be possible values of $a + b$ is :</p>",
+                "content": "<p>Suppose force (F), area (A) and time (T) are the fundamental units, then match the following:</p><style>  table {      width: 100%;      border-collapse: collapse;      margin: 20px 0;  }  th {      background-color: blue;      color: white;      border: 1px solid lightgrey;      padding: 10px;  }  td {      border: 1px solid lightgrey;      padding: 10px;      text-align: left;  }</style><table>  <tr>    <th colspan=\"2\">Table 1</th>    <th colspan=\"2\">Table 2</th>  </tr>  <tr>    <td>(A)</td>    <td><b>Work</b></td>    <td>(P)</td>    <td>$\\left[ A^{1/2}T^{-1} \\right]$</td>  </tr>  <tr>    <td>(B)</td>    <td><b>Moment of inertia</b></td>    <td>(Q)</td>    <td>$\\left[ FA^{1/2} \\right]$</td>  </tr>  <tr>    <td>(C)</td>    <td><b>Velocity</b></td>    <td>(R)</td>    <td>$\\left[ FA^{1/2}T^2 \\right]$</td>  </tr></table><p>Match the items in Table 1 with those in Table 2 :</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "<p>501</p>"
+                    "content": "<p>(A)-(Q), (B)-(R), (C)-(P)</p>"
                   },
                   {
                     "identifier": "B",
-                    "content": "<p>252</p>"
+                    "content": "<p>(A)-(R), (B)-(P), (C)-(Q)</p>"
                   },
                   {
                     "identifier": "C",
-                    "content": "<p>128</p>"
+                    "content": "<p>(A)-(P), (B)-(Q), (C)-(R)</p>"
                   },
                   {
                     "identifier": "D",
-                    "content": "<p>66</p>"
+                    "content": "<p>(A)-(P), (B)-(R), (C)-(Q)</p>"
                   }
                 ]
               },
               "hi": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>धनात्मक पूर्णांक <i>a</i> और <i>b</i> प्रतिबंध $\\log _2\\left[\\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right)\\right]=0$ को संतुष्ट करते हैं। तो $a + b$ का संभावित मान निम्न में से कौन सा नहीं हो सकता है :</p>",
+                "content": "<p>मान लीजिए बल (F), क्षेत्रफल (A) और समय (T) मूलभूत इकाइयाँ हैं, तो निम्नलिखित का मिलान कीजिए:</p><style>  table {      width: 100%;      border-collapse: collapse;      margin: 20px 0;  }  th {      background-color: blue;      color: white;      border: 1px solid lightgrey;      padding: 10px;  }  td {      border: 1px solid lightgrey;      padding: 10px;      text-align: left;  }</style><table>  <tr>    <th colspan=\"2\">सारणी 1</th>    <th colspan=\"2\">सारणी 2</th>  </tr>  <tr>    <td>(A)</td>    <td><b>कार्य</b></td>    <td>(P)</td>    <td>$\\left[ A^{1/2}T^{-1} \\right]$</td>  </tr>  <tr>    <td>(B)</td>    <td><b>जड़त्व आघूर्ण</b></td>    <td>(Q)</td>    <td>$\\left[ FA^{1/2} \\right]$</td>  </tr>  <tr>    <td>(C)</td>    <td><b>वेग</b></td>    <td>(R)</td>    <td>$\\left[ FA^{1/2}T^2 \\right]$</td>  </tr></table><p>सारणी 1 की वस्तुओं का सारणी 2 की वस्तुओं के साथ मिलान कीजिए:</p>",
                 "options": [
                   {
                     "identifier": "A",
-                    "content": "<p>501</p>"
+                    "content": "<p>(A)-(Q), (B)-(R), (C)-(P)</p>"
                   },
                   {
                     "identifier": "B",
-                    "content": "<p>252</p>"
+                    "content": "<p>(A)-(R), (B)-(P), (C)-(Q)</p>"
                   },
                   {
                     "identifier": "C",
-                    "content": "<p>128</p>"
+                    "content": "<p>(A)-(P), (B)-(Q), (C)-(R)</p>"
                   },
                   {
                     "identifier": "D",
-                    "content": "<p>66</p>"
+                    "content": "<p>(A)-(P), (B)-(R), (C)-(Q)</p>"
                   }
                 ]
               }
             },
             "subTopic": null,
-            "subject": "mathematics",
+            "subject": "physics",
             "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
-            "type": "mcq"
-          },
-          {
-            "questionId": "tq-mpwvegtr",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
-            "country": "in",
-            "difficulty": "medium",
-            "exam": "jee-main",
-            "examGroup": "jee",
-            "languages": [
-              "en"
-            ],
-            "marks": 4,
-            "negMarks": 1,
-            "question": {
-              "en": {
-                "comprehension": null,
-                "direction": null,
-                "content": "<p>If $\\log_{12}{27} = a$, then $\\log_{6}{16}$ is equal to</p>",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "<p>$4 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "<p>$4 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "<p>$2 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "<p>$2 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
-                  }
-                ]
-              },
-              "hi": {
-                "comprehension": null,
-                "direction": null,
-                "content": "<p>यदि $\\log_{12}{27} = a$ है, तो $\\log_{6}{16}$ बराबर है</p>",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "<p>$4 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "<p>$4 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "<p>$2 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "<p>$2 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
-                  }
-                ]
-              }
-            },
-            "subTopic": null,
-            "subject": "mathematics",
-            "timeAllotted": 90000,
-            "topic": "logarithmic-properties",
-            "type": "mcq"
-          },
-          {
-            "questionId": "tq-mpwvwzq2",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
-            "country": "in",
-            "difficulty": "medium",
-            "exam": "jee-main",
-            "examGroup": "jee",
-            "languages": [
-              "en"
-            ],
-            "marks": 4,
-            "negMarks": 1,
-            "question": {
-              "en": {
-                "comprehension": null,
-                "direction": null,
-                "content": "<p>$7 \\log \\left( \\frac{16}{15} \\right) + 5 \\log \\left( \\frac{25}{24} \\right) + 3 \\log \\left( \\frac{81}{80} \\right)$ is equal to</p>",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "<p>0</p>"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "<p>1</p>"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "<p>$\\log 2$</p>"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "<p>$\\log 3$</p>"
-                  }
-                ]
-              },
-              "hi": {
-                "comprehension": null,
-                "direction": null,
-                "content": "<p>$7 \\log \\left( \\frac{16}{15} \\right) + 5 \\log \\left( \\frac{25}{24} \\right) + 3 \\log \\left( \\frac{81}{80} \\right)$ बराबर है:</p>",
-                "options": [
-                  {
-                    "identifier": "A",
-                    "content": "<p>0</p>"
-                  },
-                  {
-                    "identifier": "B",
-                    "content": "<p>1</p>"
-                  },
-                  {
-                    "identifier": "C",
-                    "content": "<p>$\\log 2$</p>"
-                  },
-                  {
-                    "identifier": "D",
-                    "content": "<p>$\\log 3$</p>"
-                  }
-                ]
-              }
-            },
-            "subTopic": null,
-            "subject": "mathematics",
-            "timeAllotted": 90000,
-            "topic": "logarithmic-properties",
+            "topic": "dimensions-of-physical-quantities",
             "type": "mcq"
           }
         ],
@@ -714,75 +714,9 @@
         "optional": [],
         "questions": [
           {
-            "questionId": "tq-mpwhvzax",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
-            "country": "in",
-            "difficulty": "easy",
-            "exam": "jee-main",
-            "examGroup": "jee",
-            "languages": [
-              "en"
-            ],
-            "marks": 4,
-            "negMarks": 1,
-            "question": {
-              "en": {
-                "comprehension": null,
-                "direction": null,
-                "content": "<p>If $a, b$ and $c$ are positive real numbers such that $a^{\\log _3 7}=27 ; b^{\\log _7 11}=49$ and $c^{\\log _{11} 25}=\\sqrt{11}$.</p>\n<p>Find the value of $\\left(a^{\\left(\\log _3 7\\right)^2}+b^{\\left(\\log _7 11\\right)^2}+c^{\\left(\\log _{11} 25\\right)^2}\\right)$.</p>",
-                "options": []
-              },
-              "hi": {
-                "comprehension": null,
-                "direction": null,
-                "content": "<p>यदि $a, b$ और $c$ ऐसी धनात्मक वास्तविक संख्याएँ हैं कि $a^{\\log _3 7}=27 ; b^{\\log _7 11}=49$ और $c^{\\log _{11} 25}=\\sqrt{11}$ है।</p> <p>$\\left(a^{\\left(\\log _3 7\\right)^2}+b^{\\left(\\log _7 11\\right)^2}+c^{\\left(\\log _{11} 25\\right)^2}\\right)$ का मान ज्ञात कीजिए।</p>",
-                "options": []
-              }
-            },
-            "subTopic": null,
-            "subject": "mathematics",
-            "timeAllotted": 90000,
-            "topic": "logarithmic-properties",
-            "type": "integer"
-          },
-          {
-            "questionId": "tq-mpwi5eua",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
-            "country": "in",
-            "difficulty": "easy",
-            "exam": "jee-main",
-            "examGroup": "jee",
-            "languages": [
-              "en"
-            ],
-            "marks": 4,
-            "negMarks": 1,
-            "question": {
-              "en": {
-                "comprehension": null,
-                "direction": null,
-                "content": "Solve for $x: \\log _4\\left(2 \\log _3\\left(1+\\log _2\\left(1+3 \\log _3 x\\right)\\right)\\right)=1 / 2$",
-                "options": []
-              },
-              "hi": {
-                "comprehension": null,
-                "direction": null,
-                "content": "$x$ के लिए हल कीजिए: $\\log _4\\left(2 \\log _3\\left(1+\\log _2\\left(1+3 \\log _3 x\\right)\\right)\\right)=1 / 2$",
-                "options": []
-              }
-            },
-            "subTopic": null,
-            "subject": "mathematics",
-            "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
-            "type": "integer"
-          },
-          {
-            "questionId": "tq-mpwiqdgb",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
+            "questionId": "tq-mpsyymaw",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
             "country": "in",
             "difficulty": "medium",
             "exam": "jee-main",
@@ -796,26 +730,26 @@
               "en": {
                 "comprehension": null,
                 "direction": null,
-                "content": "Let $y=\\sqrt{\\log _2 3 \\cdot \\log _2 12 \\cdot \\log _2 48 \\cdot \\log _2 192+16}-\\log _2 12 \\cdot \\log _2 48+10$. Find $y$.",
+                "content": "Density of a material in the cgs system is $8 \\mathrm{gcc}^{-1}$. In a system of units in which the unit of mass is 20 g and that of length is 5 cm , what is the density of the material in this new system of units.",
                 "options": []
               },
               "hi": {
                 "comprehension": null,
                 "direction": null,
-                "content": "माना $y=\\sqrt{\\log _2 3 \\cdot \\log _2 12 \\cdot \\log _2 48 \\cdot \\log _2 192+16}-\\log _2 12 \\cdot \\log _2 48+10$ है। $y$ का मान ज्ञात कीजिए।",
+                "content": "cgs प्रणाली में किसी पदार्थ का घनत्व $8 \\mathrm{gcc}^{-1}$ है। मात्रकों की एक ऐसी प्रणाली में जिसमें द्रव्यमान का मात्रक 20 g और लंबाई का मात्रक 5 cm है, मात्रकों की इस नई प्रणाली में पदार्थ का घनत्व क्या होगा?",
                 "options": []
               }
             },
             "subTopic": null,
-            "subject": "mathematics",
+            "subject": "physics",
             "timeAllotted": 90000,
-            "topic": "logarithmic-properties",
+            "topic": "dimensions-of-physical-quantities",
             "type": "integer"
           },
           {
-            "questionId": "tq-mpwj3po4",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
+            "questionId": "tq-mpszfkfg",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
             "country": "in",
             "difficulty": "medium",
             "exam": "jee-main",
@@ -829,26 +763,26 @@
               "en": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>Find the square of the sum of the roots of the equation</p>\n<p>$$ \\log _3 x \\cdot \\log _4 x \\cdot \\log _5 x=\\log _3 x \\cdot \\log _4 x+\\log _4 x \\cdot \\log _5 x+\\log _5 x \\cdot \\log _3 x . $$</p>",
+                "content": "<p>Using Kepler’s laws of planetary motion, planets revolve around the Sun in almost circular paths. Suppose the time period of revolution depends on the orbital radius ( $r$ ), the Sun’s mass ( $M$ ) and the universal gravitational constant ( $G$ ) in the form</p>\n<p>$$ T^a=4 \\pi^2 \\frac{r^b}{M^c G^d} $$</p>\n<p>Determine the value of $a+b+c$ + $d$.</p>",
                 "options": []
               },
               "hi": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>समीकरण के मूलों के योग का वर्ग ज्ञात कीजिए:</p>\n<p>$$ \\log _3 x \\cdot \\log _4 x \\cdot \\log _5 x=\\log _3 x \\cdot \\log _4 x+\\log _4 x \\cdot \\log _5 x+\\log _5 x \\cdot \\log _3 x . $$</p>",
+                "content": "<p>केप्लर के ग्रहीय गति के नियमों के अनुसार, ग्रह सूर्य के चारों ओर लगभग वृत्ताकार पथों में परिक्रमा करते हैं। मान लीजिए कि परिक्रमण काल कक्षीय त्रिज्या ( $r$ ), सूर्य के द्रव्यमान ( $M$ ) और सार्वत्रिक गुरुत्वाकर्षण नियतांक ( $G$ ) पर निम्न रूप में निर्भर करता है:</p><p>$$ T^a=4 \\pi^2 \\frac{r^b}{M^c G^d} $$</p><p>$a+b+c+d$ का मान ज्ञात कीजिए।</p>",
                 "options": []
               }
             },
             "subTopic": null,
-            "subject": "mathematics",
+            "subject": "physics",
             "timeAllotted": 90000,
-            "topic": "logarithmic-equations",
+            "topic": "dimensions-of-physical-quantities",
             "type": "integer"
           },
           {
-            "questionId": "tq-mpwjf09v",
-            "chapter": "logarithm",
-            "chapterGroup": "algebra",
+            "questionId": "tq-mpsz1cxh",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
             "country": "in",
             "difficulty": "easy",
             "exam": "jee-main",
@@ -862,33 +796,99 @@
               "en": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>Simplify $: \\frac{81^{\\frac{1}{\\log _5 9}}+3^{\\frac{3}{\\log _{\\sqrt{6}} 3}}}{409} \\cdot\\left((\\sqrt{7})^{\\frac{2}{\\log _{25} 7}}-(125)^{\\log _{25} 6}\\right)$</p>",
+                "content": "A new unit of length is chosen such that the speed\nof light in vacuum is unity. What is the distance\nbetween the sun and earth in terms of the new unit\nif light take 8 min and 20 s to cover this distance.",
                 "options": []
               },
               "hi": {
                 "comprehension": null,
                 "direction": null,
-                "content": "<p>सरल कीजिए $: \\frac{81^{\\frac{1}{\\log _5 9}}+3^{\\frac{3}{\\log _{\\sqrt{6}} 3}}}{409} \\cdot\\left((\\sqrt{7})^{\\frac{2}{\\log _{25} 7}}-(125)^{\\log _{25} 6}\\right)$</p>",
+                "content": "लंबाई का एक नया मात्रक इस प्रकार चुना जाता है कि निर्वात में प्रकाश की चाल एकांक (एक) हो। यदि प्रकाश इस दूरी को तय करने में 8 मिनट और 20 सेकंड का समय लेता है, तो नए मात्रक के पदों में सूर्य और पृथ्वी के बीच की दूरी क्या है?",
                 "options": []
               }
             },
             "subTopic": null,
-            "subject": "mathematics",
+            "subject": "physics",
             "timeAllotted": 90000,
-            "topic": "logarithmic-properties",
+            "topic": "unit-of-physical-quantities",
+            "type": "integer"
+          },
+          {
+            "questionId": "tq-mpsz7wjy",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
+            "country": "in",
+            "difficulty": "medium",
+            "exam": "jee-main",
+            "examGroup": "jee",
+            "languages": [
+              "en"
+            ],
+            "marks": 4,
+            "negMarks": 1,
+            "question": {
+              "en": {
+                "comprehension": null,
+                "direction": null,
+                "content": "Consider a new system of units in which the unit of mass is $\\alpha \\mathrm{kg}$, unit of length is $\\beta \\mathrm{m}$ and that of time is $\\gamma \\mathrm{s}$. The value of calorie in the new system is calculated to be $4.2 \\alpha^{-x} \\beta^{-y} \\gamma^z$. Find the values of $x+y+z$.",
+                "options": []
+              },
+              "hi": {
+                "comprehension": null,
+                "direction": null,
+                "content": "मान लीजिए कि मात्रकों की एक नई प्रणाली है जिसमें द्रव्यमान का मात्रक $\\alpha \\mathrm{kg}$ है, लंबाई का मात्रक $\\beta \\mathrm{m}$ है और समय का मात्रक $\\gamma \\mathrm{s}$ है। नई प्रणाली में कैलोरी का मान $4.2 \\alpha^{-x} \\beta^{-y} \\gamma^z$ प्राप्त होता है। $x+y+z$ का मान ज्ञात कीजिए।",
+                "options": []
+              }
+            },
+            "subTopic": null,
+            "subject": "physics",
+            "timeAllotted": 90000,
+            "topic": "unit-of-physical-quantities",
+            "type": "integer"
+          },
+          {
+            "questionId": "tq-mpszjc5d",
+            "chapter": "units-and-measurements",
+            "chapterGroup": "mechanics",
+            "country": "in",
+            "difficulty": "medium",
+            "exam": "jee-main",
+            "examGroup": "jee",
+            "languages": [
+              "en"
+            ],
+            "marks": 4,
+            "negMarks": 1,
+            "question": {
+              "en": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>The quantity $\\frac{e^x}{2 h \\varepsilon_0 c}$ has dimensional formula $M^0 L^0 T^0$. Calculate $x$.</p>",
+                "options": []
+              },
+              "hi": {
+                "comprehension": null,
+                "direction": null,
+                "content": "<p>राशि $\\frac{e^x}{2 h \\varepsilon_0 c}$ का विमीय सूत्र $M^0 L^0 T^0$ है। $x$ की गणना कीजिए।</p>",
+                "options": []
+              }
+            },
+            "subTopic": null,
+            "subject": "physics",
+            "timeAllotted": 90000,
+            "topic": "dimensions-of-physical-quantities",
             "type": "integer"
           }
         ],
         "instructions": null
       }
     ],
-    "syllabus": "Logarithmic Properties, Logarithmic Equations",
+    "syllabus": "Units, Dimensions",
     "timeAllotted": 2160000,
-    "title": "Logarithm Test - 1 (Topic Test)",
+    "title": "Units and Measurement Test - 1 (Topic Test )",
     "totalQuestions": 15,
     "type": "topic",
     "isWatermarkEnabled": true,
-    "percentileId": "prc-19g61mlq40gq7",
+    "percentileId": null,
     "isUpcoming": false,
     "seriesId": "tsr-19g61mnpryz1v"
   }
