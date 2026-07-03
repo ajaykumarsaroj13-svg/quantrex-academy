@@ -44,7 +44,7 @@ function transformQuestion(rawQ, index, defaultSubject) {
 }
 
 const data = JSON.parse(fs.readFileSync('debug_fetch.json', 'utf8')).data;
-const qs = data.questions || (Array.isArray(data) ? data : null) || data.test?.questions || data.testSections?.flatMap(s => s.questions || []);
+const qs = data.questions || (Array.isArray(data) ? data : null) || data.test?.questions || data.sections?.flatMap(s => s.questions || []) || data.testSections?.flatMap(s => s.questions || []);
 
 const existing = JSON.parse(fs.readFileSync('public/data/tests/tst-19g61moahy6ef.json', 'utf8'));
 const defaultSubject = existing.questions?.[0]?.subject || 'Mathematics';
