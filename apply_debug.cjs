@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function cleanHtml(html) { return html ? html.trim() : ''; }
+function cleanHtml(html) { return typeof html === 'string' ? html.trim() : String(html || ''); }
 
 function transformQuestion(rawQ, index, defaultSubject) {
   const content = rawQ.questionText || rawQ.content || rawQ.text || rawQ.question || '';
